@@ -11,6 +11,10 @@ on:
         description: 'Catégories à extraire (séparées par des virgules, laisser vide pour toutes)'
         required: false
         default: ''
+      use_enhanced:
+        description: 'Utiliser le script amélioré (yes/no)'
+        required: false
+        default: 'yes'
 
 # Définition explicite des permissions
 permissions:
@@ -34,14 +38,40 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests beautifulsoup4
       
+      - name: Determine script to use
+        id: script-selection
+        run: |
+          if [[ "${{ github.event.inputs.use_enhanced }}" == "no" ]]; then
+            echo "script_name=scraper.py" >> $GITHUB_OUTPUT
+            echo "Using standard scraper script"
+          else
+            echo "script_name=scraper_enhanced.py" >> $GITHUB_OUTPUT
+            echo "Using enhanced scraper script"
+          fi
+      
       - name: Run extraction script
-        run: scraper_enhanced.py ${{ github.event.inputs.categories }}
+        run: python ${{ steps.script-selection.outputs.script_name }} ${{ github.event.inputs.categories }}
+      
+      - name: Prepare directories for commit
+        run: |
+          # Créer les dossiers s'ils n'existent pas encore pour éviter des erreurs de commit
+          mkdir -p data/raw_csv data/debug data/previous
+          touch data/.gitkeep data/raw_csv/.gitkeep data/debug/.gitkeep data/previous/.gitkeep
       
       - name: Commit and push if changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add data/*.json data/*.csv
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Update data - $(date)" && git push)
+          
+          # Ajouter tous les fichiers pertinents
+          git add data/*.json data/*.csv data/raw_csv/* 
+          
+          # Vérifier s'il y a des changements à committer
+          if git diff --cached --quiet; then
+            echo "Aucun changement détecté"
+          else
+            git commit -m "Update data - $(date)"
+            git push
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
