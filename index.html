@@ -8,36 +8,79 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
+        /* Palette de couleurs personnalisée */
+        :root {
+            --grass-green: #0b8043;  /* Vert gazon */
+            --dark-green: #085c2f;   /* Vert gazon foncé */
+            --gold: #d4af37;         /* Or */
+            --light-gold: #f6e9ba;   /* Or clair */
+            --black: #1a1a1a;        /* Noir légèrement atténué */
+        }
+        
+        body {
+            background-color: #f5f5f5;
+        }
+        
         .card-hover:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--gold);
         }
+        
         .gradient-background {
-            background: linear-gradient(to right, #1a365d, #2a4365);
+            background: linear-gradient(to right, var(--dark-green), var(--grass-green));
         }
+        
         .score-pill {
             transition: all 0.3s ease;
         }
+        
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 1rem;
         }
+        
         .horse-card {
             transition: all 0.3s ease;
+            border: 1px solid #eaeaea;
         }
+        
+        .horse-card:hover {
+            border-color: var(--gold);
+        }
+        
         .horse-card:hover .horse-image {
             transform: scale(1.05);
         }
+        
         .horse-image {
             transition: all 0.3s ease;
         }
+        
         .fade-in {
             animation: fadeIn 0.5s ease-in;
         }
+        
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
+        }
+        
+        .gold-text {
+            color: var(--gold);
+        }
+        
+        .simulation-badge {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            background-color: rgba(0,0,0,0.7);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            z-index: 1000;
         }
     </style>
 </head>
@@ -45,16 +88,16 @@
     <header class="gradient-background text-white py-6 shadow-lg">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
             <div class="flex items-center mb-4 md:mb-0">
-                <i class="fas fa-horse-head text-3xl mr-3"></i>
-                <h1 class="text-3xl font-bold">Analyse Hippique</h1>
+                <i class="fas fa-horse-head text-3xl mr-3" style="color: var(--gold);"></i>
+                <h1 class="text-3xl font-bold">Analyse <span style="color: var(--gold);">Hippique</span></h1>
             </div>
             <div class="flex flex-col md:flex-row items-center">
                 <div class="relative mb-4 md:mb-0 md:mr-4">
                     <input id="search" type="text" placeholder="Rechercher un cheval, jockey, entraîneur..." 
-                           class="bg-white bg-opacity-20 rounded-full py-2 px-4 pl-10 w-64 focus:outline-none focus:ring-2 focus:ring-blue-300 text-white placeholder-gray-300">
-                    <i class="fas fa-search absolute left-3 top-3 text-gray-300"></i>
+                           class="bg-black bg-opacity-20 rounded-full py-2 px-4 pl-10 w-64 focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white placeholder-gray-300">
+                    <i class="fas fa-search absolute left-3 top-3" style="color: var(--gold);"></i>
                 </div>
-                <select id="category-filter" class="bg-white bg-opacity-20 rounded-full py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-300 text-white">
+                <select id="category-filter" class="bg-black bg-opacity-20 rounded-full py-2 px-4 focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white" style="border: 1px solid var(--gold);">
                     <option value="all">Toutes les catégories</option>
                     <option value="chevaux">Chevaux</option>
                     <option value="jockeys">Jockeys</option>
@@ -66,55 +109,57 @@
         </div>
     </header>
 
+    <div class="simulation-badge">Données simulées pour démonstration</div>
+
     <div class="container mx-auto px-4 py-8">
         <!-- Dashboard Overview -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-            <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+            <div class="bg-white rounded-xl shadow-md p-6 card-hover border border-gray-200">
                 <div class="flex justify-between items-center">
                     <h3 class="text-lg font-semibold text-gray-700">Courses Analysées</h3>
-                    <i class="fas fa-flag-checkered text-blue-600 text-2xl"></i>
+                    <i class="fas fa-flag-checkered text-2xl" style="color: var(--grass-green);"></i>
                 </div>
                 <p class="text-3xl font-bold mt-2 text-gray-800">128</p>
                 <div class="flex items-center mt-1 text-sm">
-                    <span class="text-green-500 flex items-center">
+                    <span class="text-green-600 flex items-center">
                         <i class="fas fa-arrow-up mr-1"></i>12%
                     </span>
                     <span class="text-gray-500 ml-2">vs semaine précédente</span>
                 </div>
             </div>
             
-            <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+            <div class="bg-white rounded-xl shadow-md p-6 card-hover border border-gray-200">
                 <div class="flex justify-between items-center">
                     <h3 class="text-lg font-semibold text-gray-700">Chevaux</h3>
-                    <i class="fas fa-horse text-indigo-600 text-2xl"></i>
+                    <i class="fas fa-horse text-2xl" style="color: var(--grass-green);"></i>
                 </div>
                 <p class="text-3xl font-bold mt-2 text-gray-800">842</p>
                 <div class="flex items-center mt-1 text-sm">
-                    <span class="text-green-500 flex items-center">
+                    <span class="text-green-600 flex items-center">
                         <i class="fas fa-arrow-up mr-1"></i>8%
                     </span>
                     <span class="text-gray-500 ml-2">Nouvelles entrées</span>
                 </div>
             </div>
             
-            <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+            <div class="bg-white rounded-xl shadow-md p-6 card-hover border border-gray-200">
                 <div class="flex justify-between items-center">
                     <h3 class="text-lg font-semibold text-gray-700">Jockeys</h3>
-                    <i class="fas fa-user text-purple-600 text-2xl"></i>
+                    <i class="fas fa-user text-2xl" style="color: var(--grass-green);"></i>
                 </div>
                 <p class="text-3xl font-bold mt-2 text-gray-800">156</p>
                 <div class="flex items-center mt-1 text-sm">
                     <span class="text-gray-500">Performance moyenne:</span>
                     <div class="ml-2 w-24 bg-gray-200 rounded-full h-2">
-                        <div class="bg-purple-600 h-2 rounded-full" style="width: 75%"></div>
+                        <div class="h-2 rounded-full" style="width: 75%; background-color: var(--grass-green);"></div>
                     </div>
                 </div>
             </div>
             
-            <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+            <div class="bg-white rounded-xl shadow-md p-6 card-hover border border-gray-200">
                 <div class="flex justify-between items-center">
                     <h3 class="text-lg font-semibold text-gray-700">Gains Moyens</h3>
-                    <i class="fas fa-euro-sign text-green-600 text-2xl"></i>
+                    <i class="fas fa-euro-sign text-2xl" style="color: var(--gold);"></i>
                 </div>
                 <p class="text-3xl font-bold mt-2 text-gray-800">12 450€</p>
                 <div class="flex items-center mt-1 text-sm">
@@ -127,13 +172,13 @@
         </div>
         
         <!-- Course Selector -->
-        <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+        <div class="bg-white rounded-xl shadow-md p-6 mb-8 border border-gray-200">
             <h2 class="text-xl font-bold text-gray-800 mb-4">Sélectionner une course à analyser</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="col-span-2">
                     <div class="flex flex-col space-y-4">
                         <div class="flex space-x-4">
-                            <select id="hippodrome-select" class="bg-gray-100 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 flex-grow">
+                            <select id="hippodrome-select" class="bg-gray-100 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 border border-gray-300 flex-grow" style="border-color: var(--grass-green);">
                                 <option value="">Choisir un hippodrome</option>
                                 <option value="longchamp">ParisLongchamp</option>
                                 <option value="chantilly">Chantilly</option>
@@ -141,10 +186,10 @@
                                 <option value="saint-cloud">Saint-Cloud</option>
                                 <option value="auteuil">Auteuil</option>
                             </select>
-                            <input type="date" class="bg-gray-100 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 flex-grow" value="2025-04-15">
+                            <input type="date" class="bg-gray-100 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 border border-gray-300 flex-grow" style="border-color: var(--grass-green);" value="2025-04-15">
                         </div>
                         
-                        <select id="course-select" class="bg-gray-100 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <select id="course-select" class="bg-gray-100 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 border border-gray-300" style="border-color: var(--grass-green);">
                             <option value="">Sélectionner une course</option>
                             <option value="course1">Prix de la Porte Maillot - 16:25 - 1400m - Handicap</option>
                             <option value="course2">Prix du Bois de Boulogne - 17:00 - 2400m - Groupe 3</option>
@@ -154,7 +199,7 @@
                 </div>
                 
                 <div class="flex items-end">
-                    <button id="analyze-button" class="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
+                    <button id="analyze-button" class="w-full text-white font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center" style="background-color: var(--grass-green); box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
                         <i class="fas fa-chart-line mr-2"></i> Analyser la course
                     </button>
                 </div>
@@ -163,17 +208,17 @@
         
         <!-- Course Analysis Results -->
         <div id="analysis-results" class="mb-8 fade-in" style="display: none;">
-            <h2 class="text-2xl font-bold text-gray-800 mb-6">Résultats d'analyse: <span class="text-blue-700">Prix du Bois de Boulogne</span></h2>
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Résultats d'analyse: <span style="color: var(--gold);">Prix du Bois de Boulogne</span></h2>
             
             <!-- Score Formula Explanation -->
-            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6 rounded-r-lg">
+            <div class="p-4 mb-6 rounded-r-lg border-l-4" style="background-color: rgba(212, 175, 55, 0.1); border-color: var(--gold);">
                 <div class="flex">
                     <div class="flex-shrink-0">
-                        <i class="fas fa-info-circle text-blue-500 text-xl"></i>
+                        <i class="fas fa-info-circle text-xl" style="color: var(--gold);"></i>
                     </div>
                     <div class="ml-4">
-                        <p class="text-sm text-blue-700 font-medium">Formula de scoring</p>
-                        <p class="text-sm text-blue-600">Score = (0.4 × Performance Cheval) + (0.25 × Performance Jockey) + (0.2 × Performance Entraîneur) + (0.15 × Performance Propriétaire)</p>
+                        <p class="text-sm font-medium" style="color: var(--black);">Formula de scoring</p>
+                        <p class="text-sm" style="color: var(--black);">Score = (0.4 × Performance Cheval) + (0.25 × Performance Jockey) + (0.2 × Performance Entraîneur) + (0.15 × Performance Propriétaire)</p>
                     </div>
                 </div>
             </div>
@@ -181,14 +226,14 @@
             <!-- Horses Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                 <!-- Horse 1 -->
-                <div class="horse-card bg-white rounded-xl shadow-md overflow-hidden border-t-4 border-green-500">
+                <div class="horse-card bg-white rounded-xl shadow-md overflow-hidden border-t-4" style="border-top-color: var(--grass-green);">
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-4">
                             <div>
                                 <h3 class="text-xl font-bold text-gray-800">KING GEORGE</h3>
                                 <p class="text-gray-600 text-sm">Mâle bai - 5 ans</p>
                             </div>
-                            <div class="bg-green-500 text-white font-bold rounded-full h-12 w-12 flex items-center justify-center text-xl">
+                            <div class="text-white font-bold rounded-full h-12 w-12 flex items-center justify-center text-xl" style="background-color: var(--grass-green);">
                                 96
                             </div>
                         </div>
@@ -218,28 +263,28 @@
                                 <div class="flex items-center justify-between">
                                     <span class="text-xs text-gray-600">Cheval</span>
                                     <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="bg-blue-600 h-2 rounded-full" style="width: 92%"></div>
+                                        <div class="h-2 rounded-full" style="width: 92%; background-color: var(--grass-green);"></div>
                                     </div>
                                     <span class="text-xs font-semibold ml-2">92</span>
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <span class="text-xs text-gray-600">Jockey</span>
                                     <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="bg-purple-600 h-2 rounded-full" style="width: 88%"></div>
+                                        <div class="h-2 rounded-full" style="width: 88%; background-color: var(--black);"></div>
                                     </div>
                                     <span class="text-xs font-semibold ml-2">88</span>
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <span class="text-xs text-gray-600">Entraîneur</span>
                                     <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="bg-yellow-500 h-2 rounded-full" style="width: 95%"></div>
+                                        <div class="h-2 rounded-full" style="width: 95%; background-color: var(--gold);"></div>
                                     </div>
                                     <span class="text-xs font-semibold ml-2">95</span>
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <span class="text-xs text-gray-600">Propriétaire</span>
                                     <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="bg-green-500 h-2 rounded-full" style="width: 98%"></div>
+                                        <div class="h-2 rounded-full" style="width: 98%; background-color: var(--dark-green);"></div>
                                     </div>
                                     <span class="text-xs font-semibold ml-2">98</span>
                                 </div>
@@ -249,10 +294,10 @@
                         <div>
                             <h4 class="text-sm font-semibold text-gray-700 mb-2">Historique récent</h4>
                             <div class="flex space-x-2">
-                                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">1er</span>
-                                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">2e</span>
-                                <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-1 rounded">3e</span>
-                                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">1er</span>
+                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">1er</span>
+                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">2e</span>
+                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">3e</span>
+                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">1er</span>
                                 <span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-1 rounded">5e</span>
                             </div>
                         </div>
@@ -260,14 +305,14 @@
                 </div>
                 
                 <!-- Horse 2 -->
-                <div class="horse-card bg-white rounded-xl shadow-md overflow-hidden border-t-4 border-blue-500">
+                <div class="horse-card bg-white rounded-xl shadow-md overflow-hidden border-t-4" style="border-top-color: var(--grass-green);">
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-4">
                             <div>
                                 <h3 class="text-xl font-bold text-gray-800">ROYAL EAGLE</h3>
                                 <p class="text-gray-600 text-sm">Femelle alezane - 4 ans</p>
                             </div>
-                            <div class="bg-blue-500 text-white font-bold rounded-full h-12 w-12 flex items-center justify-center text-xl">
+                            <div class="text-white font-bold rounded-full h-12 w-12 flex items-center justify-center text-xl" style="background-color: var(--black);">
                                 88
                             </div>
                         </div>
@@ -297,28 +342,28 @@
                                 <div class="flex items-center justify-between">
                                     <span class="text-xs text-gray-600">Cheval</span>
                                     <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="bg-blue-600 h-2 rounded-full" style="width: 85%"></div>
+                                        <div class="h-2 rounded-full" style="width: 85%; background-color: var(--grass-green);"></div>
                                     </div>
                                     <span class="text-xs font-semibold ml-2">85</span>
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <span class="text-xs text-gray-600">Jockey</span>
                                     <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="bg-purple-600 h-2 rounded-full" style="width: 92%"></div>
+                                        <div class="h-2 rounded-full" style="width: 92%; background-color: var(--black);"></div>
                                     </div>
                                     <span class="text-xs font-semibold ml-2">92</span>
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <span class="text-xs text-gray-600">Entraîneur</span>
                                     <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="bg-yellow-500 h-2 rounded-full" style="width: 88%"></div>
+                                        <div class="h-2 rounded-full" style="width: 88%; background-color: var(--gold);"></div>
                                     </div>
                                     <span class="text-xs font-semibold ml-2">88</span>
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <span class="text-xs text-gray-600">Propriétaire</span>
                                     <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="bg-green-500 h-2 rounded-full" style="width: 90%"></div>
+                                        <div class="h-2 rounded-full" style="width: 90%; background-color: var(--dark-green);"></div>
                                     </div>
                                     <span class="text-xs font-semibold ml-2">90</span>
                                 </div>
@@ -328,10 +373,10 @@
                         <div>
                             <h4 class="text-sm font-semibold text-gray-700 mb-2">Historique récent</h4>
                             <div class="flex space-x-2">
-                                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">2e</span>
-                                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">1er</span>
-                                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">1er</span>
-                                <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-1 rounded">3e</span>
+                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">2e</span>
+                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">1er</span>
+                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">1er</span>
+                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">3e</span>
                                 <span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-1 rounded">6e</span>
                             </div>
                         </div>
@@ -339,14 +384,14 @@
                 </div>
                 
                 <!-- Horse 3 -->
-                <div class="horse-card bg-white rounded-xl shadow-md overflow-hidden border-t-4 border-yellow-500">
+                <div class="horse-card bg-white rounded-xl shadow-md overflow-hidden border-t-4" style="border-top-color: var(--grass-green);">
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-4">
                             <div>
                                 <h3 class="text-xl font-bold text-gray-800">SILVER STAR</h3>
                                 <p class="text-gray-600 text-sm">Hongre gris - 6 ans</p>
                             </div>
-                            <div class="bg-yellow-500 text-white font-bold rounded-full h-12 w-12 flex items-center justify-center text-xl">
+                            <div class="text-white font-bold rounded-full h-12 w-12 flex items-center justify-center text-xl" style="background-color: var(--gold);">
                                 82
                             </div>
                         </div>
@@ -376,28 +421,28 @@
                                 <div class="flex items-center justify-between">
                                     <span class="text-xs text-gray-600">Cheval</span>
                                     <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="bg-blue-600 h-2 rounded-full" style="width: 78%"></div>
+                                        <div class="h-2 rounded-full" style="width: 78%; background-color: var(--grass-green);"></div>
                                     </div>
                                     <span class="text-xs font-semibold ml-2">78</span>
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <span class="text-xs text-gray-600">Jockey</span>
                                     <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="bg-purple-600 h-2 rounded-full" style="width: 85%"></div>
+                                        <div class="h-2 rounded-full" style="width: 85%; background-color: var(--black);"></div>
                                     </div>
                                     <span class="text-xs font-semibold ml-2">85</span>
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <span class="text-xs text-gray-600">Entraîneur</span>
                                     <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="bg-yellow-500 h-2 rounded-full" style="width: 90%"></div>
+                                        <div class="h-2 rounded-full" style="width: 90%; background-color: var(--gold);"></div>
                                     </div>
                                     <span class="text-xs font-semibold ml-2">90</span>
                                 </div>
                                 <div class="flex items-center justify-between">
                                     <span class="text-xs text-gray-600">Propriétaire</span>
                                     <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="bg-green-500 h-2 rounded-full" style="width: 80%"></div>
+                                        <div class="h-2 rounded-full" style="width: 80%; background-color: var(--dark-green);"></div>
                                     </div>
                                     <span class="text-xs font-semibold ml-2">80</span>
                                 </div>
@@ -407,10 +452,10 @@
                         <div>
                             <h4 class="text-sm font-semibold text-gray-700 mb-2">Historique récent</h4>
                             <div class="flex space-x-2">
-                                <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-1 rounded">3e</span>
-                                <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-1 rounded">3e</span>
-                                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">2e</span>
-                                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">1er</span>
+                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">3e</span>
+                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">3e</span>
+                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">2e</span>
+                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">1er</span>
                                 <span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-1 rounded">4e</span>
                             </div>
                         </div>
@@ -420,12 +465,12 @@
             
             <!-- Detailed Stats Charts -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div class="bg-white rounded-xl shadow-md p-6">
+                <div class="bg-white rounded-xl shadow-md p-6 border border-gray-200">
                     <h3 class="text-xl font-bold text-gray-800 mb-4">Comparaison des scores</h3>
                     <canvas id="scoresChart" height="300"></canvas>
                 </div>
                 
-                <div class="bg-white rounded-xl shadow-md p-6">
+                <div class="bg-white rounded-xl shadow-md p-6 border border-gray-200">
                     <h3 class="text-xl font-bold text-gray-800 mb-4">Comparaison des performances</h3>
                     <canvas id="performanceChart" height="300"></canvas>
                 </div>
@@ -434,74 +479,74 @@
         
         <!-- Data Visualization Section -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
-            <div class="lg:col-span-2 bg-white rounded-xl shadow-md p-6">
+            <div class="lg:col-span-2 bg-white rounded-xl shadow-md p-6 border border-gray-200">
                 <h2 class="text-xl font-bold text-gray-800 mb-4">Tendances de performance</h2>
                 <canvas id="trendsChart" height="250"></canvas>
             </div>
             
-            <div class="bg-white rounded-xl shadow-md p-6">
+            <div class="bg-white rounded-xl shadow-md p-6 border border-gray-200">
                 <h2 class="text-xl font-bold text-gray-800 mb-4">Top Jockeys</h2>
                 <div class="space-y-4">
                     <div class="flex items-center">
-                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-                            <span class="font-bold text-blue-700">1</span>
+                        <div class="w-8 h-8 rounded-full flex items-center justify-center mr-3" style="background-color: var(--light-gold);">
+                            <span class="font-bold" style="color: var(--black);">1</span>
                         </div>
                         <div class="flex-grow">
                             <h3 class="font-semibold">MAXIME GUYON</h3>
                             <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-blue-600 h-2 rounded-full" style="width: 92%"></div>
+                                <div class="h-2 rounded-full" style="width: 92%; background-color: var(--grass-green);"></div>
                             </div>
                         </div>
                         <div class="ml-3 font-bold">92</div>
                     </div>
                     
                     <div class="flex items-center">
-                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-                            <span class="font-bold text-blue-700">2</span>
+                        <div class="w-8 h-8 rounded-full flex items-center justify-center mr-3" style="background-color: var(--light-gold);">
+                            <span class="font-bold" style="color: var(--black);">2</span>
                         </div>
                         <div class="flex-grow">
                             <h3 class="font-semibold">CHRISTOPHE SOUMILLON</h3>
                             <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-blue-600 h-2 rounded-full" style="width: 88%"></div>
+                                <div class="h-2 rounded-full" style="width: 88%; background-color: var(--grass-green);"></div>
                             </div>
                         </div>
                         <div class="ml-3 font-bold">88</div>
                     </div>
                     
                     <div class="flex items-center">
-                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-                            <span class="font-bold text-blue-700">3</span>
+                        <div class="w-8 h-8 rounded-full flex items-center justify-center mr-3" style="background-color: var(--light-gold);">
+                            <span class="font-bold" style="color: var(--black);">3</span>
                         </div>
                         <div class="flex-grow">
                             <h3 class="font-semibold">OLIVIER PESLIER</h3>
                             <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-blue-600 h-2 rounded-full" style="width: 85%"></div>
+                                <div class="h-2 rounded-full" style="width: 85%; background-color: var(--grass-green);"></div>
                             </div>
                         </div>
                         <div class="ml-3 font-bold">85</div>
                     </div>
                     
                     <div class="flex items-center">
-                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-                            <span class="font-bold text-blue-700">4</span>
+                        <div class="w-8 h-8 rounded-full flex items-center justify-center mr-3" style="background-color: var(--light-gold);">
+                            <span class="font-bold" style="color: var(--black);">4</span>
                         </div>
                         <div class="flex-grow">
                             <h3 class="font-semibold">MICKAEL BARZALONA</h3>
                             <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-blue-600 h-2 rounded-full" style="width: 82%"></div>
+                                <div class="h-2 rounded-full" style="width: 82%; background-color: var(--grass-green);"></div>
                             </div>
                         </div>
                         <div class="ml-3 font-bold">82</div>
                     </div>
                     
                     <div class="flex items-center">
-                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3">
-                            <span class="font-bold text-blue-700">5</span>
+                        <div class="w-8 h-8 rounded-full flex items-center justify-center mr-3" style="background-color: var(--light-gold);">
+                            <span class="font-bold" style="color: var(--black);">5</span>
                         </div>
                         <div class="flex-grow">
                             <h3 class="font-semibold">PIERRE-CHARLES BOUDOT</h3>
                             <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="bg-blue-600 h-2 rounded-full" style="width: 80%"></div>
+                                <div class="h-2 rounded-full" style="width: 80%; background-color: var(--grass-green);"></div>
                             </div>
                         </div>
                         <div class="ml-3 font-bold">80</div>
@@ -516,26 +561,26 @@
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-4 md:mb-0">
                     <div class="flex items-center">
-                        <i class="fas fa-horse-head text-2xl mr-3"></i>
-                        <h2 class="text-xl font-bold">Analyse Hippique</h2>
+                        <i class="fas fa-horse-head text-2xl mr-3" style="color: var(--gold);"></i>
+                        <h2 class="text-xl font-bold">Analyse <span style="color: var(--gold);">Hippique</span></h2>
                     </div>
                     <p class="text-sm mt-2">Système d'analyse de performances hippiques</p>
                 </div>
                 
                 <div class="flex space-x-4">
-                    <a href="#" class="text-white hover:text-blue-200 transition duration-300">
+                    <a href="#" class="text-white hover:text-yellow-400 transition duration-300">
                         <i class="fab fa-twitter text-xl"></i>
                     </a>
-                    <a href="#" class="text-white hover:text-blue-200 transition duration-300">
+                    <a href="#" class="text-white hover:text-yellow-400 transition duration-300">
                         <i class="fab fa-facebook text-xl"></i>
                     </a>
-                    <a href="#" class="text-white hover:text-blue-200 transition duration-300">
+                    <a href="#" class="text-white hover:text-yellow-400 transition duration-300">
                         <i class="fab fa-instagram text-xl"></i>
                     </a>
                 </div>
             </div>
             
-            <div class="border-t border-blue-800 mt-6 pt-6 text-sm text-center md:text-left">
+            <div class="border-t border-gray-800 mt-6 pt-6 text-sm text-center md:text-left">
                 <p>&copy; 2025 Analyse Hippique. Tous droits réservés.</p>
             </div>
         </div>
@@ -571,20 +616,20 @@
                         label: 'Score global',
                         data: [96, 88, 82, 78, 75, 72],
                         backgroundColor: [
-                            'rgba(59, 130, 246, 0.8)',
-                            'rgba(59, 130, 246, 0.8)',
-                            'rgba(59, 130, 246, 0.8)',
-                            'rgba(59, 130, 246, 0.8)',
-                            'rgba(59, 130, 246, 0.8)',
-                            'rgba(59, 130, 246, 0.8)'
+                            '#0b8043', // vert gazon
+                            '#0b8043',
+                            '#0b8043',
+                            '#0b8043',
+                            '#0b8043',
+                            '#0b8043'
                         ],
                         borderColor: [
-                            'rgb(59, 130, 246)',
-                            'rgb(59, 130, 246)',
-                            'rgb(59, 130, 246)',
-                            'rgb(59, 130, 246)',
-                            'rgb(59, 130, 246)',
-                            'rgb(59, 130, 246)'
+                            '#085c2f', // vert foncé
+                            '#085c2f',
+                            '#085c2f',
+                            '#085c2f',
+                            '#085c2f',
+                            '#085c2f'
                         ],
                         borderWidth: 1
                     }]
@@ -614,32 +659,32 @@
                         {
                             label: 'KING GEORGE',
                             data: [92, 88, 95, 98, 90, 85],
-                            backgroundColor: 'rgba(16, 185, 129, 0.2)',
-                            borderColor: 'rgb(16, 185, 129)',
-                            pointBackgroundColor: 'rgb(16, 185, 129)',
+                            backgroundColor: 'rgba(11, 128, 67, 0.2)',
+                            borderColor: '#0b8043', // vert gazon
+                            pointBackgroundColor: '#0b8043',
                             pointBorderColor: '#fff',
                             pointHoverBackgroundColor: '#fff',
-                            pointHoverBorderColor: 'rgb(16, 185, 129)'
+                            pointHoverBorderColor: '#0b8043'
                         },
                         {
                             label: 'ROYAL EAGLE',
                             data: [85, 92, 88, 90, 88, 90],
-                            backgroundColor: 'rgba(59, 130, 246, 0.2)',
-                            borderColor: 'rgb(59, 130, 246)',
-                            pointBackgroundColor: 'rgb(59, 130, 246)',
+                            backgroundColor: 'rgba(26, 26, 26, 0.2)',
+                            borderColor: '#1a1a1a', // noir
+                            pointBackgroundColor: '#1a1a1a',
                             pointBorderColor: '#fff',
                             pointHoverBackgroundColor: '#fff',
-                            pointHoverBorderColor: 'rgb(59, 130, 246)'
+                            pointHoverBorderColor: '#1a1a1a'
                         },
                         {
                             label: 'SILVER STAR',
                             data: [78, 85, 90, 80, 85, 82],
-                            backgroundColor: 'rgba(245, 158, 11, 0.2)',
-                            borderColor: 'rgb(245, 158, 11)',
-                            pointBackgroundColor: 'rgb(245, 158, 11)',
+                            backgroundColor: 'rgba(212, 175, 55, 0.2)',
+                            borderColor: '#d4af37', // or
+                            pointBackgroundColor: '#d4af37',
                             pointBorderColor: '#fff',
                             pointHoverBackgroundColor: '#fff',
-                            pointHoverBorderColor: 'rgb(245, 158, 11)'
+                            pointHoverBorderColor: '#d4af37'
                         }
                     ]
                 },
@@ -668,21 +713,21 @@
                             label: 'Taux de réussite prédictions',
                             data: [65, 68, 72, 75, 79, 82, 85],
                             fill: false,
-                            borderColor: 'rgb(59, 130, 246)',
+                            borderColor: '#0b8043', // vert gazon
                             tension: 0.1
                         },
                         {
                             label: 'Score moyen chevaux gagnants',
                             data: [82, 84, 85, 86, 88, 90, 92],
                             fill: false,
-                            borderColor: 'rgb(16, 185, 129)',
+                            borderColor: '#d4af37', // or
                             tension: 0.1
                         },
                         {
                             label: 'Score moyen chevaux perdants',
                             data: [70, 72, 71, 74, 73, 75, 76],
                             fill: false,
-                            borderColor: 'rgb(239, 68, 68)',
+                            borderColor: '#1a1a1a', // noir
                             tension: 0.1
                         }
                     ]
