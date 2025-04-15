@@ -82,6 +82,20 @@
             font-size: 12px;
             z-index: 1000;
         }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: var(--gold);
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
     </style>
 </head>
 <body class="bg-gray-100 min-h-screen">
@@ -109,7 +123,10 @@
         </div>
     </header>
 
-    <div class="simulation-badge">Données simulées pour démonstration</div>
+    <div id="status-indicator" class="fixed top-4 right-4 z-50 bg-black bg-opacity-80 text-white p-2 rounded-md flex items-center text-sm" style="display: none;">
+        <div class="loading mr-2"></div>
+        <span id="status-text">Chargement des données...</span>
+    </div>
 
     <div class="container mx-auto px-4 py-8">
         <!-- Dashboard Overview -->
@@ -119,7 +136,7 @@
                     <h3 class="text-lg font-semibold text-gray-700">Courses Analysées</h3>
                     <i class="fas fa-flag-checkered text-2xl" style="color: var(--grass-green);"></i>
                 </div>
-                <p class="text-3xl font-bold mt-2 text-gray-800">128</p>
+                <p id="courses-count" class="text-3xl font-bold mt-2 text-gray-800">--</p>
                 <div class="flex items-center mt-1 text-sm">
                     <span class="text-green-600 flex items-center">
                         <i class="fas fa-arrow-up mr-1"></i>12%
@@ -133,7 +150,7 @@
                     <h3 class="text-lg font-semibold text-gray-700">Chevaux</h3>
                     <i class="fas fa-horse text-2xl" style="color: var(--grass-green);"></i>
                 </div>
-                <p class="text-3xl font-bold mt-2 text-gray-800">842</p>
+                <p id="chevaux-count" class="text-3xl font-bold mt-2 text-gray-800">--</p>
                 <div class="flex items-center mt-1 text-sm">
                     <span class="text-green-600 flex items-center">
                         <i class="fas fa-arrow-up mr-1"></i>8%
@@ -147,7 +164,7 @@
                     <h3 class="text-lg font-semibold text-gray-700">Jockeys</h3>
                     <i class="fas fa-user text-2xl" style="color: var(--grass-green);"></i>
                 </div>
-                <p class="text-3xl font-bold mt-2 text-gray-800">156</p>
+                <p id="jockeys-count" class="text-3xl font-bold mt-2 text-gray-800">--</p>
                 <div class="flex items-center mt-1 text-sm">
                     <span class="text-gray-500">Performance moyenne:</span>
                     <div class="ml-2 w-24 bg-gray-200 rounded-full h-2">
@@ -161,7 +178,7 @@
                     <h3 class="text-lg font-semibold text-gray-700">Gains Moyens</h3>
                     <i class="fas fa-euro-sign text-2xl" style="color: var(--gold);"></i>
                 </div>
-                <p class="text-3xl font-bold mt-2 text-gray-800">12 450€</p>
+                <p id="gains-moyens" class="text-3xl font-bold mt-2 text-gray-800">--</p>
                 <div class="flex items-center mt-1 text-sm">
                     <span class="text-red-500 flex items-center">
                         <i class="fas fa-arrow-down mr-1"></i>3%
@@ -186,14 +203,11 @@
                                 <option value="saint-cloud">Saint-Cloud</option>
                                 <option value="auteuil">Auteuil</option>
                             </select>
-                            <input type="date" class="bg-gray-100 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 border border-gray-300 flex-grow" style="border-color: var(--grass-green);" value="2025-04-15">
+                            <input type="date" id="course-date" class="bg-gray-100 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 border border-gray-300 flex-grow" style="border-color: var(--grass-green);" value="2025-04-15">
                         </div>
                         
                         <select id="course-select" class="bg-gray-100 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 border border-gray-300" style="border-color: var(--grass-green);">
                             <option value="">Sélectionner une course</option>
-                            <option value="course1">Prix de la Porte Maillot - 16:25 - 1400m - Handicap</option>
-                            <option value="course2">Prix du Bois de Boulogne - 17:00 - 2400m - Groupe 3</option>
-                            <option value="course3">Grand Prix de Paris - 17:35 - 2100m - Groupe 1</option>
                         </select>
                     </div>
                 </div>
@@ -206,9 +220,49 @@
             </div>
         </div>
         
+        <!-- Selection des participants -->
+        <div id="selection-participants" class="bg-white rounded-xl shadow-md p-6 mb-8 border border-gray-200" style="display: none;">
+            <h2 class="text-xl font-bold text-gray-800 mb-4">Sélectionner les participants</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Sélection chevaux -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-700 mb-3">Chevaux</h3>
+                    <div id="chevaux-selection" class="space-y-2 max-h-48 overflow-y-auto p-2 border rounded-lg">
+                        <!-- Les chevaux seront ajoutés ici dynamiquement -->
+                        <div class="text-center text-gray-500 py-2">Chargement...</div>
+                    </div>
+                </div>
+                
+                <!-- Sélection jockeys et entraîneurs -->
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-700 mb-3">Jockeys</h3>
+                        <div id="jockeys-selection" class="space-y-2 max-h-24 overflow-y-auto p-2 border rounded-lg">
+                            <!-- Les jockeys seront ajoutés ici dynamiquement -->
+                            <div class="text-center text-gray-500 py-2">Chargement...</div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-700 mb-3">Entraîneurs</h3>
+                        <div id="entraineurs-selection" class="space-y-2 max-h-24 overflow-y-auto p-2 border rounded-lg">
+                            <!-- Les entraîneurs seront ajoutés ici dynamiquement -->
+                            <div class="text-center text-gray-500 py-2">Chargement...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex justify-center mt-6">
+                <button id="calculate-button" class="text-white font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center" style="background-color: var(--gold); box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                    <i class="fas fa-calculator mr-2"></i> Calculer les scores
+                </button>
+            </div>
+        </div>
+        
         <!-- Course Analysis Results -->
         <div id="analysis-results" class="mb-8 fade-in" style="display: none;">
-            <h2 class="text-2xl font-bold text-gray-800 mb-6">Résultats d'analyse: <span style="color: var(--gold);">Prix du Bois de Boulogne</span></h2>
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Résultats d'analyse: <span id="course-title" style="color: var(--gold);">Prix du Bois de Boulogne</span></h2>
             
             <!-- Score Formula Explanation -->
             <div class="p-4 mb-6 rounded-r-lg border-l-4" style="background-color: rgba(212, 175, 55, 0.1); border-color: var(--gold);">
@@ -224,243 +278,8 @@
             </div>
             
             <!-- Horses Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-                <!-- Horse 1 -->
-                <div class="horse-card bg-white rounded-xl shadow-md overflow-hidden border-t-4" style="border-top-color: var(--grass-green);">
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-xl font-bold text-gray-800">KING GEORGE</h3>
-                                <p class="text-gray-600 text-sm">Mâle bai - 5 ans</p>
-                            </div>
-                            <div class="text-white font-bold rounded-full h-12 w-12 flex items-center justify-center text-xl" style="background-color: var(--grass-green);">
-                                96
-                            </div>
-                        </div>
-                        
-                        <div class="grid grid-cols-2 gap-3 mb-4">
-                            <div class="text-sm">
-                                <p class="text-gray-500">Jockey</p>
-                                <p class="font-semibold text-gray-800">M. GUYON</p>
-                            </div>
-                            <div class="text-sm">
-                                <p class="text-gray-500">Entraîneur</p>
-                                <p class="font-semibold text-gray-800">A. FABRE</p>
-                            </div>
-                            <div class="text-sm">
-                                <p class="text-gray-500">Propriétaire</p>
-                                <p class="font-semibold text-gray-800">GODOLPHIN SNC</p>
-                            </div>
-                            <div class="text-sm">
-                                <p class="text-gray-500">Cote</p>
-                                <p class="font-semibold text-gray-800">2.8</p>
-                            </div>
-                        </div>
-                        
-                        <div class="mb-4">
-                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Composantes du score</h4>
-                            <div class="space-y-2">
-                                <div class="flex items-center justify-between">
-                                    <span class="text-xs text-gray-600">Cheval</span>
-                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="h-2 rounded-full" style="width: 92%; background-color: var(--grass-green);"></div>
-                                    </div>
-                                    <span class="text-xs font-semibold ml-2">92</span>
-                                </div>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-xs text-gray-600">Jockey</span>
-                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="h-2 rounded-full" style="width: 88%; background-color: var(--black);"></div>
-                                    </div>
-                                    <span class="text-xs font-semibold ml-2">88</span>
-                                </div>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-xs text-gray-600">Entraîneur</span>
-                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="h-2 rounded-full" style="width: 95%; background-color: var(--gold);"></div>
-                                    </div>
-                                    <span class="text-xs font-semibold ml-2">95</span>
-                                </div>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-xs text-gray-600">Propriétaire</span>
-                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="h-2 rounded-full" style="width: 98%; background-color: var(--dark-green);"></div>
-                                    </div>
-                                    <span class="text-xs font-semibold ml-2">98</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Historique récent</h4>
-                            <div class="flex space-x-2">
-                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">1er</span>
-                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">2e</span>
-                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">3e</span>
-                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">1er</span>
-                                <span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-1 rounded">5e</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Horse 2 -->
-                <div class="horse-card bg-white rounded-xl shadow-md overflow-hidden border-t-4" style="border-top-color: var(--grass-green);">
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-xl font-bold text-gray-800">ROYAL EAGLE</h3>
-                                <p class="text-gray-600 text-sm">Femelle alezane - 4 ans</p>
-                            </div>
-                            <div class="text-white font-bold rounded-full h-12 w-12 flex items-center justify-center text-xl" style="background-color: var(--black);">
-                                88
-                            </div>
-                        </div>
-                        
-                        <div class="grid grid-cols-2 gap-3 mb-4">
-                            <div class="text-sm">
-                                <p class="text-gray-500">Jockey</p>
-                                <p class="font-semibold text-gray-800">C. SOUMILLON</p>
-                            </div>
-                            <div class="text-sm">
-                                <p class="text-gray-500">Entraîneur</p>
-                                <p class="font-semibold text-gray-800">F. HEAD</p>
-                            </div>
-                            <div class="text-sm">
-                                <p class="text-gray-500">Propriétaire</p>
-                                <p class="font-semibold text-gray-800">WERTHEIMER & FRERE</p>
-                            </div>
-                            <div class="text-sm">
-                                <p class="text-gray-500">Cote</p>
-                                <p class="font-semibold text-gray-800">4.2</p>
-                            </div>
-                        </div>
-                        
-                        <div class="mb-4">
-                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Composantes du score</h4>
-                            <div class="space-y-2">
-                                <div class="flex items-center justify-between">
-                                    <span class="text-xs text-gray-600">Cheval</span>
-                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="h-2 rounded-full" style="width: 85%; background-color: var(--grass-green);"></div>
-                                    </div>
-                                    <span class="text-xs font-semibold ml-2">85</span>
-                                </div>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-xs text-gray-600">Jockey</span>
-                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="h-2 rounded-full" style="width: 92%; background-color: var(--black);"></div>
-                                    </div>
-                                    <span class="text-xs font-semibold ml-2">92</span>
-                                </div>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-xs text-gray-600">Entraîneur</span>
-                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="h-2 rounded-full" style="width: 88%; background-color: var(--gold);"></div>
-                                    </div>
-                                    <span class="text-xs font-semibold ml-2">88</span>
-                                </div>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-xs text-gray-600">Propriétaire</span>
-                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="h-2 rounded-full" style="width: 90%; background-color: var(--dark-green);"></div>
-                                    </div>
-                                    <span class="text-xs font-semibold ml-2">90</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Historique récent</h4>
-                            <div class="flex space-x-2">
-                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">2e</span>
-                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">1er</span>
-                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">1er</span>
-                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">3e</span>
-                                <span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-1 rounded">6e</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Horse 3 -->
-                <div class="horse-card bg-white rounded-xl shadow-md overflow-hidden border-t-4" style="border-top-color: var(--grass-green);">
-                    <div class="p-6">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-xl font-bold text-gray-800">SILVER STAR</h3>
-                                <p class="text-gray-600 text-sm">Hongre gris - 6 ans</p>
-                            </div>
-                            <div class="text-white font-bold rounded-full h-12 w-12 flex items-center justify-center text-xl" style="background-color: var(--gold);">
-                                82
-                            </div>
-                        </div>
-                        
-                        <div class="grid grid-cols-2 gap-3 mb-4">
-                            <div class="text-sm">
-                                <p class="text-gray-500">Jockey</p>
-                                <p class="font-semibold text-gray-800">O. PESLIER</p>
-                            </div>
-                            <div class="text-sm">
-                                <p class="text-gray-500">Entraîneur</p>
-                                <p class="font-semibold text-gray-800">J-C. ROUGET</p>
-                            </div>
-                            <div class="text-sm">
-                                <p class="text-gray-500">Propriétaire</p>
-                                <p class="font-semibold text-gray-800">AL SHAQAB RACING</p>
-                            </div>
-                            <div class="text-sm">
-                                <p class="text-gray-500">Cote</p>
-                                <p class="font-semibold text-gray-800">5.5</p>
-                            </div>
-                        </div>
-                        
-                        <div class="mb-4">
-                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Composantes du score</h4>
-                            <div class="space-y-2">
-                                <div class="flex items-center justify-between">
-                                    <span class="text-xs text-gray-600">Cheval</span>
-                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="h-2 rounded-full" style="width: 78%; background-color: var(--grass-green);"></div>
-                                    </div>
-                                    <span class="text-xs font-semibold ml-2">78</span>
-                                </div>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-xs text-gray-600">Jockey</span>
-                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="h-2 rounded-full" style="width: 85%; background-color: var(--black);"></div>
-                                    </div>
-                                    <span class="text-xs font-semibold ml-2">85</span>
-                                </div>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-xs text-gray-600">Entraîneur</span>
-                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="h-2 rounded-full" style="width: 90%; background-color: var(--gold);"></div>
-                                    </div>
-                                    <span class="text-xs font-semibold ml-2">90</span>
-                                </div>
-                                <div class="flex items-center justify-between">
-                                    <span class="text-xs text-gray-600">Propriétaire</span>
-                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
-                                        <div class="h-2 rounded-full" style="width: 80%; background-color: var(--dark-green);"></div>
-                                    </div>
-                                    <span class="text-xs font-semibold ml-2">80</span>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div>
-                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Historique récent</h4>
-                            <div class="flex space-x-2">
-                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">3e</span>
-                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">3e</span>
-                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">2e</span>
-                                <span class="text-xs font-semibold px-2 py-1 rounded" style="background-color: var(--light-gold); color: var(--black);">1er</span>
-                                <span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-1 rounded">4e</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div id="results-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                <!-- Les cartes de résultats seront ajoutées ici -->
             </div>
             
             <!-- Detailed Stats Charts -->
@@ -486,71 +305,9 @@
             
             <div class="bg-white rounded-xl shadow-md p-6 border border-gray-200">
                 <h2 class="text-xl font-bold text-gray-800 mb-4">Top Jockeys</h2>
-                <div class="space-y-4">
-                    <div class="flex items-center">
-                        <div class="w-8 h-8 rounded-full flex items-center justify-center mr-3" style="background-color: var(--light-gold);">
-                            <span class="font-bold" style="color: var(--black);">1</span>
-                        </div>
-                        <div class="flex-grow">
-                            <h3 class="font-semibold">MAXIME GUYON</h3>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="h-2 rounded-full" style="width: 92%; background-color: var(--grass-green);"></div>
-                            </div>
-                        </div>
-                        <div class="ml-3 font-bold">92</div>
-                    </div>
-                    
-                    <div class="flex items-center">
-                        <div class="w-8 h-8 rounded-full flex items-center justify-center mr-3" style="background-color: var(--light-gold);">
-                            <span class="font-bold" style="color: var(--black);">2</span>
-                        </div>
-                        <div class="flex-grow">
-                            <h3 class="font-semibold">CHRISTOPHE SOUMILLON</h3>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="h-2 rounded-full" style="width: 88%; background-color: var(--grass-green);"></div>
-                            </div>
-                        </div>
-                        <div class="ml-3 font-bold">88</div>
-                    </div>
-                    
-                    <div class="flex items-center">
-                        <div class="w-8 h-8 rounded-full flex items-center justify-center mr-3" style="background-color: var(--light-gold);">
-                            <span class="font-bold" style="color: var(--black);">3</span>
-                        </div>
-                        <div class="flex-grow">
-                            <h3 class="font-semibold">OLIVIER PESLIER</h3>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="h-2 rounded-full" style="width: 85%; background-color: var(--grass-green);"></div>
-                            </div>
-                        </div>
-                        <div class="ml-3 font-bold">85</div>
-                    </div>
-                    
-                    <div class="flex items-center">
-                        <div class="w-8 h-8 rounded-full flex items-center justify-center mr-3" style="background-color: var(--light-gold);">
-                            <span class="font-bold" style="color: var(--black);">4</span>
-                        </div>
-                        <div class="flex-grow">
-                            <h3 class="font-semibold">MICKAEL BARZALONA</h3>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="h-2 rounded-full" style="width: 82%; background-color: var(--grass-green);"></div>
-                            </div>
-                        </div>
-                        <div class="ml-3 font-bold">82</div>
-                    </div>
-                    
-                    <div class="flex items-center">
-                        <div class="w-8 h-8 rounded-full flex items-center justify-center mr-3" style="background-color: var(--light-gold);">
-                            <span class="font-bold" style="color: var(--black);">5</span>
-                        </div>
-                        <div class="flex-grow">
-                            <h3 class="font-semibold">PIERRE-CHARLES BOUDOT</h3>
-                            <div class="w-full bg-gray-200 rounded-full h-2">
-                                <div class="h-2 rounded-full" style="width: 80%; background-color: var(--grass-green);"></div>
-                            </div>
-                        </div>
-                        <div class="ml-3 font-bold">80</div>
-                    </div>
+                <div id="top-jockeys" class="space-y-4">
+                    <!-- Les jockeys seront ajoutés ici dynamiquement -->
+                    <div class="text-center text-gray-500 py-4">Chargement des données...</div>
                 </div>
             </div>
         </div>
@@ -587,50 +344,679 @@
     </footer>
     
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Show Analysis Results when Analyze button is clicked
-            document.getElementById('analyze-button').addEventListener('click', function() {
-                document.getElementById('analysis-results').style.display = 'block';
-                // Scroll to results
-                document.getElementById('analysis-results').scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
+        // Stockage de données globales
+        const appData = {
+            chevaux: [],
+            jockeys: [],
+            entraineurs: [],
+            proprietaires: [],
+            eleveurs: [],
+            selectedCourse: null,
+            selectedParticipants: [],
+            resultsData: []
+        };
+        
+        // Utilitaires
+        function showStatus(message) {
+            document.getElementById('status-text').textContent = message;
+            document.getElementById('status-indicator').style.display = 'flex';
+        }
+        
+        function hideStatus() {
+            document.getElementById('status-indicator').style.display = 'none';
+        }
+        
+        function formatNumber(num) {
+            return new Intl.NumberFormat('fr-FR').format(num);
+        }
+        
+        // Génère une valeur aléatoire entre min et max avec une tendance vers avg
+        function getRandomValue(min, max, avg) {
+            const rand = Math.random();
+            const weight = 0.7; // Plus la valeur est élevée, plus la tendance vers avg est forte
+            return Math.round(((1 - weight) * (min + rand * (max - min))) + (weight * avg));
+        }
+        
+        // Fonction pour charger les données JSON
+        async function loadData() {
+            showStatus('Chargement des données...');
+            
+            try {
+                // Charger les données pour chaque catégorie
+                const categories = ['chevaux', 'jockeys', 'entraineurs', 'proprietaires', 'eleveurs'];
+                const promises = categories.map(category => 
+                    fetch(`data/${category}.json`)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(`Erreur de chargement pour ${category}`);
+                        }
+                        return response.json();
+                    })
+                );
+                
+                const results = await Promise.all(promises);
+                
+                // Stocker les données
+                categories.forEach((category, index) => {
+                    appData[category] = results[index].resultats || [];
+                    console.log(`Chargé ${appData[category].length} ${category}`);
                 });
                 
-                // Initialize charts
-                initCharts();
+                // Mettre à jour l'interface
+                updateDashboardStats();
+                populateCourseSelector();
+                populateParticipantsSelection();
+                populateTopJockeys();
+                
+                hideStatus();
+                return true;
+            } catch (error) {
+                console.error("Erreur lors du chargement des données:", error);
+                showStatus(`Erreur: ${error.message}`);
+                
+                // En cas d'erreur, charger des données de démonstration
+                loadDemoData();
+                return false;
+            }
+        }
+        
+        // Fonction pour charger des données de démonstration si l'API échoue
+        function loadDemoData() {
+            console.log("Chargement des données de démonstration");
+            
+            // Génération de données de démonstration
+            appData.chevaux = generateDemoHorses(150);
+            appData.jockeys = generateDemoJockeys(30);
+            appData.entraineurs = generateDemoTrainers(25);
+            appData.proprietaires = generateDemoOwners(40);
+            
+            // Mettre à jour l'interface
+            updateDashboardStats();
+            populateCourseSelector();
+            populateParticipantsSelection();
+            populateTopJockeys();
+            
+            hideStatus();
+            
+            // Afficher un message indiquant que ce sont des données de démonstration
+            const demoIndicator = document.createElement('div');
+            demoIndicator.className = 'simulation-badge';
+            demoIndicator.textContent = 'Données de démonstration';
+            document.body.appendChild(demoIndicator);
+        }
+        
+        // Générer des données de démonstration
+        function generateDemoHorses(count) {
+            const names = ["Pegasus", "Thunder", "Eclipse", "Spirit", "Midnight", "Shadow", "Phoenix", "Blaze", "Arrow", "Comet", 
+                           "King George", "Royal Eagle", "Silver Star", "Storm Runner", "Golden Mile", "Dark Knight", "Diamond Dust", 
+                           "Lucky Strike", "Rapid Fire", "Wind Dancer", "Star Gazer", "Black Beauty", "Champion", "Victory Lap"];
+            const races = ["PUR SANG", "AQPS", "TROTTEUR FRANÇAIS"];
+            const sexes = ["M", "F", "H"];
+            
+            const horses = [];
+            for (let i = 0; i < count; i++) {
+                const firstName = names[Math.floor(Math.random() * names.length)];
+                const lastName = names[Math.floor(Math.random() * names.length)];
+                const name = Math.random() > 0.5 ? firstName : `${firstName} ${lastName}`;
+                
+                const nbVictoires = Math.floor(Math.random() * 10);
+                const nbPlaces = Math.floor(Math.random() * 15);
+                const nbCourses = nbVictoires + nbPlaces + Math.floor(Math.random() * 10);
+                
+                horses.push({
+                    LibelleCheval: name.toUpperCase(),
+                    Age: 3 + Math.floor(Math.random() * 8),
+                    Sexe: sexes[Math.floor(Math.random() * sexes.length)],
+                    Race: races[Math.floor(Math.random() * races.length)],
+                    NbCourses: nbCourses,
+                    NbVictoires: nbVictoires,
+                    NbPlace: nbPlaces,
+                    AllocTotale: Math.round(Math.random() * 100 * 100) / 100,
+                    Valeur: 30 + Math.floor(Math.random() * 30)
+                });
+            }
+            return horses;
+        }
+        
+        function generateDemoJockeys(count) {
+            const firstNames = ["Maxime", "Christophe", "Olivier", "Mickael", "Pierre-Charles", "Frankie", "Ryan", "Jean", "Thomas", "Vincent"];
+            const lastNames = ["Guyon", "Soumillon", "Peslier", "Barzalona", "Boudot", "Dettori", "Moore", "Martin", "Durand", "Leclerc"];
+            
+            const jockeys = [];
+            for (let i = 0; i < count; i++) {
+                const firstName = firstNames[Math.floor(Math.random() * firstNames.length)];
+                const lastName = lastNames[Math.floor(Math.random() * lastNames.length)];
+                
+                const nbVictoires = Math.floor(Math.random() * 100);
+                const nbPlaces = Math.floor(Math.random() * 150);
+                const nbCourses = nbVictoires + nbPlaces + Math.floor(Math.random() * 100);
+                
+                jockeys.push({
+                    Jockey: `${lastName.toUpperCase()} ${firstName}`,
+                    Courses: nbCourses,
+                    Victoires: nbVictoires,
+                    Places: nbPlaces,
+                    TotalAllocations: Math.round(Math.random() * 1000 * 100) / 100
+                });
+            }
+            return jockeys;
+        }
+        
+        function generateDemoTrainers(count) {
+            const firstNames = ["André", "Francis", "Jean-Claude", "Alain", "Freddy", "Carlos", "Yann", "Stephane", "Henri", "Guillaume"];
+            const lastNames = ["Fabre", "Head", "Rouget", "Royer-Dupré", "Lerner", "Laffon-Parias", "Clément", "Wattel", "Pantall", "Macaire"];
+            
+            const trainers = [];
+            for (let i = 0; i < count; i++) {
+                const firstName = firstNames[Math.floor(Math.random() * firstNames.length)];
+                const lastName = lastNames[Math.floor(Math.random() * lastNames.length)];
+                
+                const nbVictoires = Math.floor(Math.random() * 150);
+                const nbPlaces = Math.floor(Math.random() * 200);
+                const nbCourses = nbVictoires + nbPlaces + Math.floor(Math.random() * 150);
+                
+                trainers.push({
+                    Entraineur: `${lastName.toUpperCase()} ${firstName}`,
+                    Courses: nbCourses,
+                    Victoires: nbVictoires,
+                    Places: nbPlaces,
+                    TotalAllocations: Math.round(Math.random() * 2000 * 100) / 100
+                });
+            }
+            return trainers;
+        }
+        
+        function generateDemoOwners(count) {
+            const names = ["GODOLPHIN SNC", "WERTHEIMER & FRERE", "AL SHAQAB RACING", "JUDDMONTE FARMS", "OTI MANAGEMENT", 
+                          "ECURIE DES MONCEAUX", "COOLMORE", "SHEIKH MOHAMMED", "ECURIE ENDERS", "ECURIE VALOR"];
+            
+            const owners = [];
+            for (let i = 0; i < count; i++) {
+                let name;
+                if (i < names.length) {
+                    name = names[i];
+                } else {
+                    name = "ECURIE " + Math.random().toString(36).substring(2, 8).toUpperCase();
+                }
+                
+                const nbVictoires = Math.floor(Math.random() * 80);
+                const nbPlaces = Math.floor(Math.random() * 120);
+                const nbCourses = nbVictoires + nbPlaces + Math.floor(Math.random() * 100);
+                
+                owners.push({
+                    Proprietaire: name,
+                    Courses: nbCourses,
+                    Victoires: nbVictoires,
+                    Places: nbPlaces,
+                    TotalAllocations: Math.round(Math.random() * 3000 * 100) / 100
+                });
+            }
+            return owners;
+        }
+        
+        // Mise à jour des statistiques du tableau de bord
+        function updateDashboardStats() {
+            document.getElementById('chevaux-count').textContent = appData.chevaux.length;
+            document.getElementById('jockeys-count').textContent = appData.jockeys.length;
+            
+            // Calculer la moyenne des gains si disponible
+            if (appData.chevaux.length > 0 && appData.chevaux[0].AllocTotale) {
+                let totalAlloc = 0;
+                let count = 0;
+                
+                appData.chevaux.forEach(cheval => {
+                    if (cheval.AllocTotale) {
+                        totalAlloc += parseFloat(cheval.AllocTotale);
+                        count++;
+                    }
+                });
+                
+                const gainsMoyens = count > 0 ? totalAlloc / count : 0;
+                document.getElementById('gains-moyens').textContent = formatNumber(Math.round(gainsMoyens * 1000)) + ' €';
+            } else {
+                document.getElementById('gains-moyens').textContent = formatNumber(Math.round(Math.random() * 15000)) + ' €';
+            }
+            
+            // Nombre approximatif de courses basé sur le nombre total de participations
+            let totalCourses = 0;
+            if (appData.chevaux.length > 0 && appData.chevaux[0].NbCourses) {
+                totalCourses = appData.chevaux.reduce((sum, cheval) => sum + (parseInt(cheval.NbCourses) || 0), 0) / 8;
+            } else {
+                totalCourses = Math.floor(100 + Math.random() * 50);
+            }
+            
+            document.getElementById('courses-count').textContent = Math.round(totalCourses);
+        }
+        
+        // Remplir le sélecteur de course
+        function populateCourseSelector() {
+            const courseSelect = document.getElementById('course-select');
+            courseSelect.innerHTML = '<option value="">Sélectionner une course</option>';
+            
+            // Générer des courses fictives
+            const coursesData = [
+                { id: 'course1', name: 'Prix de la Porte Maillot', distance: 1400, type: 'Handicap', time: '16:25' },
+                { id: 'course2', name: 'Prix du Bois de Boulogne', distance: 2400, type: 'Groupe 3', time: '17:00' },
+                { id: 'course3', name: 'Grand Prix de Paris', distance: 2100, type: 'Groupe 1', time: '17:35' },
+                { id: 'course4', name: 'Prix de Diane', distance: 2100, type: 'Groupe 1', time: '15:15' },
+                { id: 'course5', name: 'Prix du Jockey Club', distance: 2100, type: 'Groupe 1', time: '14:50' },
+                { id: 'course6', name: 'Prix Niel', distance: 2400, type: 'Groupe 2', time: '16:45' }
+            ];
+            
+            // Ajouter chaque course au sélecteur
+            coursesData.forEach(course => {
+                const option = document.createElement('option');
+                option.value = course.id;
+                option.textContent = `${course.name} - ${course.time} - ${course.distance}m - ${course.type}`;
+                option.dataset.courseName = course.name;
+                courseSelect.appendChild(option);
             });
             
-            // Initialize trend chart on page load
-            initTrendsChart();
-        });
+            // Événement de changement pour afficher la section participants
+            courseSelect.addEventListener('change', function() {
+                if (this.value) {
+                    const selectedOption = this.options[this.selectedIndex];
+                    appData.selectedCourse = {
+                        id: this.value,
+                        name: selectedOption.dataset.courseName,
+                        full: selectedOption.textContent
+                    };
+                    document.getElementById('selection-participants').style.display = 'block';
+                } else {
+                    document.getElementById('selection-participants').style.display = 'none';
+                }
+            });
+        }
         
-        function initCharts() {
-            // Scores Comparison Chart
+        // Remplir la sélection des participants
+        function populateParticipantsSelection() {
+            const chevauxContainer = document.getElementById('chevaux-selection');
+            const jockeysContainer = document.getElementById('jockeys-selection');
+            const entraineursContainer = document.getElementById('entraineurs-selection');
+            
+            // Vider les conteneurs
+            chevauxContainer.innerHTML = '';
+            jockeysContainer.innerHTML = '';
+            entraineursContainer.innerHTML = '';
+            
+            // Limit to a reasonable number of items
+            const chevauxToShow = appData.chevaux.slice(0, 20);
+            const jockeysToShow = appData.jockeys.slice(0, 15);
+            const entraineursToShow = appData.entraineurs.slice(0, 15);
+            
+            // Ajouter les chevaux
+            chevauxToShow.forEach(cheval => {
+                const div = document.createElement('div');
+                div.className = 'flex items-center p-2 hover:bg-gray-100 rounded cursor-pointer';
+                div.innerHTML = `
+                    <input type="checkbox" class="cheval-checkbox mr-2" data-id="${cheval.LibelleCheval}" 
+                           data-valeur="${cheval.Valeur || Math.floor(30 + Math.random() * 30)}">
+                    <div>
+                        <div class="font-semibold">${cheval.LibelleCheval}</div>
+                        <div class="text-xs text-gray-500">${cheval.Sexe} - ${cheval.Age} ans</div>
+                    </div>
+                `;
+                chevauxContainer.appendChild(div);
+            });
+            
+            // Ajouter les jockeys
+            jockeysToShow.forEach(jockey => {
+                const div = document.createElement('div');
+                div.className = 'flex items-center p-2 hover:bg-gray-100 rounded cursor-pointer';
+                
+                // Calculer une valeur de performance basée sur les victoires/courses
+                const performance = jockey.Victoires && jockey.Courses 
+                    ? Math.round((jockey.Victoires / jockey.Courses) * 100 * 1.5) 
+                    : Math.floor(60 + Math.random() * 40);
+                
+                div.innerHTML = `
+                    <input type="checkbox" class="jockey-checkbox mr-2" data-id="${jockey.Jockey}" 
+                           data-performance="${performance}">
+                    <div class="font-semibold">${jockey.Jockey}</div>
+                `;
+                jockeysContainer.appendChild(div);
+            });
+            
+            // Ajouter les entraîneurs
+            entraineursToShow.forEach(entraineur => {
+                const div = document.createElement('div');
+                div.className = 'flex items-center p-2 hover:bg-gray-100 rounded cursor-pointer';
+                
+                // Calculer une valeur de performance basée sur les victoires/courses
+                const performance = entraineur.Victoires && entraineur.Courses 
+                    ? Math.round((entraineur.Victoires / entraineur.Courses) * 100 * 1.8) 
+                    : Math.floor(65 + Math.random() * 35);
+                
+                div.innerHTML = `
+                    <input type="checkbox" class="entraineur-checkbox mr-2" data-id="${entraineur.Entraineur}" 
+                           data-performance="${performance}">
+                    <div class="font-semibold">${entraineur.Entraineur}</div>
+                `;
+                entraineursContainer.appendChild(div);
+            });
+            
+            // Ajouter événement pour le bouton de calcul
+            document.getElementById('calculate-button').addEventListener('click', function() {
+                calculateAndDisplayResults();
+            });
+        }
+        
+        // Remplir le top des jockeys
+        function populateTopJockeys() {
+            const topJockeysContainer = document.getElementById('top-jockeys');
+            topJockeysContainer.innerHTML = '';
+            
+            // Trier les jockeys par performances (victoires/courses)
+            let sortedJockeys = [...appData.jockeys];
+            
+            if (sortedJockeys.length > 0 && sortedJockeys[0].Victoires) {
+                sortedJockeys.sort((a, b) => {
+                    const ratioA = a.Victoires / (a.Courses || 1);
+                    const ratioB = b.Victoires / (b.Courses || 1);
+                    return ratioB - ratioA;
+                });
+            } else {
+                // Données de démo
+                sortedJockeys = [
+                    { Jockey: "GUYON MAXIME", performance: 92 },
+                    { Jockey: "SOUMILLON CHRISTOPHE", performance: 88 },
+                    { Jockey: "PESLIER OLIVIER", performance: 85 },
+                    { Jockey: "BARZALONA MICKAEL", performance: 82 },
+                    { Jockey: "BOUDOT PIERRE-CHARLES", performance: 80 }
+                ];
+            }
+            
+            // Afficher les 5 premiers jockeys
+            const topJockeys = sortedJockeys.slice(0, 5);
+            
+            topJockeys.forEach((jockey, index) => {
+                // Calculer une performance entre 80 et 95
+                const performance = jockey.performance || 
+                    Math.round((jockey.Victoires / (jockey.Courses || 1)) * 100 * 1.5) || 
+                    (95 - index * 3);
+                
+                const div = document.createElement('div');
+                div.className = 'flex items-center';
+                div.innerHTML = `
+                    <div class="w-8 h-8 rounded-full flex items-center justify-center mr-3" style="background-color: var(--light-gold);">
+                        <span class="font-bold" style="color: var(--black);">${index + 1}</span>
+                    </div>
+                    <div class="flex-grow">
+                        <h3 class="font-semibold">${jockey.Jockey}</h3>
+                        <div class="w-full bg-gray-200 rounded-full h-2">
+                            <div class="h-2 rounded-full" style="width: ${performance}%; background-color: var(--grass-green);"></div>
+                        </div>
+                    </div>
+                    <div class="ml-3 font-bold">${performance}</div>
+                `;
+                topJockeysContainer.appendChild(div);
+            });
+        }
+        
+        // Calculer et afficher les résultats
+        function calculateAndDisplayResults() {
+            showStatus('Calcul des résultats...');
+            
+            // Récupérer les chevaux sélectionnés
+            const selectedChevauxElements = document.querySelectorAll('.cheval-checkbox:checked');
+            const selectedJockeysElements = document.querySelectorAll('.jockey-checkbox:checked');
+            const selectedEntraineursElements = document.querySelectorAll('.entraineur-checkbox:checked');
+            
+            if (selectedChevauxElements.length === 0) {
+                alert('Veuillez sélectionner au moins un cheval');
+                hideStatus();
+                return;
+            }
+            
+            // Réinitialiser les résultats
+            appData.resultsData = [];
+            
+            // Créer des paires cheval-jockey-entraineur
+            const selectedChevauxArray = Array.from(selectedChevauxElements);
+            const selectedJockeysArray = Array.from(selectedJockeysElements);
+            const selectedEntraineursArray = Array.from(selectedEntraineursElements);
+            
+            // Créer des combinaisons
+            selectedChevauxArray.forEach((chevalEl, index) => {
+                const chevalId = chevalEl.dataset.id;
+                const chevalValeur = parseInt(chevalEl.dataset.valeur);
+                
+                // Attribuer jockey et entraineur (cycliquement ou au hasard si pas assez)
+                const jockeyEl = selectedJockeysArray.length > 0 
+                    ? selectedJockeysArray[index % selectedJockeysArray.length] 
+                    : null;
+                    
+                const entraineurEl = selectedEntraineursArray.length > 0 
+                    ? selectedEntraineursArray[index % selectedEntraineursArray.length] 
+                    : null;
+                
+                // Générer un propriétaire aléatoire
+                const proprietaire = appData.proprietaires.length > 0 
+                    ? appData.proprietaires[Math.floor(Math.random() * appData.proprietaires.length)].Proprietaire
+                    : "ECURIE " + Math.random().toString(36).substring(2, 8).toUpperCase();
+                
+                // Calculer les performances et le score
+                const chevalPerformance = getRandomValue(65, 98, chevalValeur);
+                const jockeyPerformance = jockeyEl ? parseInt(jockeyEl.dataset.performance) : getRandomValue(70, 95, 85);
+                const entraineurPerformance = entraineurEl ? parseInt(entraineurEl.dataset.performance) : getRandomValue(70, 95, 85);
+                const proprietairePerformance = getRandomValue(70, 98, 85);
+                
+                // Formula: 0.4*cheval + 0.25*jockey + 0.2*entraineur + 0.15*proprietaire
+                const score = Math.round(
+                    (0.4 * chevalPerformance) + 
+                    (0.25 * jockeyPerformance) + 
+                    (0.2 * entraineurPerformance) + 
+                    (0.15 * proprietairePerformance)
+                );
+                
+                // Générer un historique aléatoire
+                const historique = [];
+                for (let i = 0; i < 5; i++) {
+                    const place = Math.floor(Math.random() * 10) + 1;
+                    historique.push(place);
+                }
+                
+                // Calculer la cote en fonction inverse du score
+                const cote = Math.round((110 - score) / 10 * 10) / 10;
+                
+                // Ajouter aux résultats
+                appData.resultsData.push({
+                    nom: chevalId,
+                    age: Math.floor(Math.random() * 6) + 3,
+                    sexe: ['M', 'F', 'H'][Math.floor(Math.random() * 3)],
+                    jockey: jockeyEl ? jockeyEl.dataset.id : "JOCKEY NON ASSIGNÉ",
+                    entraineur: entraineurEl ? entraineurEl.dataset.id : "ENTRAINEUR NON ASSIGNÉ",
+                    proprietaire: proprietaire,
+                    cote: cote,
+                    score: score,
+                    performances: {
+                        cheval: chevalPerformance,
+                        jockey: jockeyPerformance,
+                        entraineur: entraineurPerformance,
+                        proprietaire: proprietairePerformance
+                    },
+                    historique: historique
+                });
+            });
+            
+            // Trier par score
+            appData.resultsData.sort((a, b) => b.score - a.score);
+            
+            // Afficher les résultats
+            displayResults();
+            hideStatus();
+        }
+        
+        // Afficher les résultats
+        function displayResults() {
+            const resultsGrid = document.getElementById('results-grid');
+            resultsGrid.innerHTML = '';
+            
+            // Mettre à jour le titre de la course
+            document.getElementById('course-title').textContent = appData.selectedCourse.name;
+            
+            // Créer une carte pour chaque résultat
+            appData.resultsData.forEach((result, index) => {
+                // Choisir la couleur en fonction du classement
+                let scoreColor, borderColor;
+                if (index === 0) {
+                    scoreColor = 'var(--grass-green)';
+                    borderColor = 'var(--grass-green)';
+                } else if (index === 1) {
+                    scoreColor = 'var(--black)';
+                    borderColor = 'var(--grass-green)';
+                } else if (index === 2) {
+                    scoreColor = 'var(--gold)';
+                    borderColor = 'var(--grass-green)';
+                } else {
+                    scoreColor = '#777';
+                    borderColor = 'var(--grass-green)';
+                }
+                
+                // Déterminer le sexe en texte
+                let sexeText;
+                switch(result.sexe) {
+                    case 'M': sexeText = 'Mâle'; break;
+                    case 'F': sexeText = 'Femelle'; break;
+                    case 'H': sexeText = 'Hongre'; break;
+                    default: sexeText = 'Inconnu';
+                }
+                
+                // Générer une couleur de robe aléatoire
+                const robes = ['bai', 'alezan', 'gris', 'noir', 'bai-brun'];
+                const robe = robes[Math.floor(Math.random() * robes.length)];
+                
+                // Créer la carte
+                const card = document.createElement('div');
+                card.className = 'horse-card bg-white rounded-xl shadow-md overflow-hidden border-t-4';
+                card.style.borderTopColor = borderColor;
+                
+                card.innerHTML = `
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800">${result.nom}</h3>
+                                <p class="text-gray-600 text-sm">${sexeText} ${robe} - ${result.age} ans</p>
+                            </div>
+                            <div class="text-white font-bold rounded-full h-12 w-12 flex items-center justify-center text-xl" style="background-color: ${scoreColor};">
+                                ${result.score}
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-3 mb-4">
+                            <div class="text-sm">
+                                <p class="text-gray-500">Jockey</p>
+                                <p class="font-semibold text-gray-800">${result.jockey}</p>
+                            </div>
+                            <div class="text-sm">
+                                <p class="text-gray-500">Entraîneur</p>
+                                <p class="font-semibold text-gray-800">${result.entraineur}</p>
+                            </div>
+                            <div class="text-sm">
+                                <p class="text-gray-500">Propriétaire</p>
+                                <p class="font-semibold text-gray-800">${result.proprietaire}</p>
+                            </div>
+                            <div class="text-sm">
+                                <p class="text-gray-500">Cote</p>
+                                <p class="font-semibold text-gray-800">${result.cote}</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Composantes du score</h4>
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-600">Cheval</span>
+                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
+                                        <div class="h-2 rounded-full" style="width: ${result.performances.cheval}%; background-color: var(--grass-green);"></div>
+                                    </div>
+                                    <span class="text-xs font-semibold ml-2">${result.performances.cheval}</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-600">Jockey</span>
+                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
+                                        <div class="h-2 rounded-full" style="width: ${result.performances.jockey}%; background-color: var(--black);"></div>
+                                    </div>
+                                    <span class="text-xs font-semibold ml-2">${result.performances.jockey}</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-600">Entraîneur</span>
+                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
+                                        <div class="h-2 rounded-full" style="width: ${result.performances.entraineur}%; background-color: var(--gold);"></div>
+                                    </div>
+                                    <span class="text-xs font-semibold ml-2">${result.performances.entraineur}</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-600">Propriétaire</span>
+                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
+                                        <div class="h-2 rounded-full" style="width: ${result.performances.proprietaire}%; background-color: var(--dark-green);"></div>
+                                    </div>
+                                    <span class="text-xs font-semibold ml-2">${result.performances.proprietaire}</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Historique récent</h4>
+                            <div class="flex space-x-2">
+                                ${result.historique.map(place => {
+                                    let bgColor, textColor;
+                                    if (place === 1) {
+                                        bgColor = 'var(--light-gold)';
+                                        textColor = 'var(--black)';
+                                    } else if (place === 2 || place === 3) {
+                                        bgColor = 'var(--light-gold)';
+                                        textColor = 'var(--black)';
+                                    } else {
+                                        bgColor = '#f3f4f6';
+                                        textColor = '#4b5563';
+                                    }
+                                    
+                                    return `<span class="text-xs font-semibold px-2 py-1 rounded" 
+                                                  style="background-color: ${bgColor}; color: ${textColor};">${place}${place === 1 ? 'er' : 'e'}</span>`;
+                                }).join('')}
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                resultsGrid.appendChild(card);
+            });
+            
+            // Afficher la section des résultats
+            document.getElementById('analysis-results').style.display = 'block';
+            document.getElementById('analysis-results').scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+            
+            // Mettre à jour les graphiques
+            updateCharts();
+        }
+        
+        // Mettre à jour les graphiques
+        function updateCharts() {
+            // Récupérer les données pour les graphiques
+            const labels = appData.resultsData.map(result => result.nom);
+            const scores = appData.resultsData.map(result => result.score);
+            const chevaux = appData.resultsData.map(result => result.performances.cheval);
+            const jockeys = appData.resultsData.map(result => result.performances.jockey);
+            const entraineurs = appData.resultsData.map(result => result.performances.entraineur);
+            const proprietaires = appData.resultsData.map(result => result.performances.proprietaire);
+            
+            // Graphique de comparaison des scores
             const scoresCtx = document.getElementById('scoresChart').getContext('2d');
-            new Chart(scoresCtx, {
+            if (window.scoresChart) window.scoresChart.destroy();
+            
+            window.scoresChart = new Chart(scoresCtx, {
                 type: 'bar',
                 data: {
-                    labels: ['KING GEORGE', 'ROYAL EAGLE', 'SILVER STAR', 'FAST TRACK', 'GOLDEN MILE', 'DIAMOND DUST'],
+                    labels: labels,
                     datasets: [{
                         label: 'Score global',
-                        data: [96, 88, 82, 78, 75, 72],
-                        backgroundColor: [
-                            '#0b8043', // vert gazon
-                            '#0b8043',
-                            '#0b8043',
-                            '#0b8043',
-                            '#0b8043',
-                            '#0b8043'
-                        ],
-                        borderColor: [
-                            '#085c2f', // vert foncé
-                            '#085c2f',
-                            '#085c2f',
-                            '#085c2f',
-                            '#085c2f',
-                            '#085c2f'
-                        ],
+                        data: scores,
+                        backgroundColor: '#0b8043', // vert gazon
+                        borderColor: '#085c2f', // vert foncé
                         borderWidth: 1
                     }]
                 },
@@ -649,44 +1035,44 @@
                 }
             });
             
-            // Performance Radar Chart
+            // Graphique radar pour les top 3
             const performanceCtx = document.getElementById('performanceChart').getContext('2d');
-            new Chart(performanceCtx, {
+            if (window.performanceChart) window.performanceChart.destroy();
+            
+            // Limiter aux 3 premiers
+            const topResults = appData.resultsData.slice(0, 3);
+            
+            window.performanceChart = new Chart(performanceCtx, {
                 type: 'radar',
                 data: {
                     labels: ['Performance Cheval', 'Performance Jockey', 'Performance Entraîneur', 'Performance Propriétaire', 'Adaptation Distance', 'Adaptation Terrain'],
-                    datasets: [
-                        {
-                            label: 'KING GEORGE',
-                            data: [92, 88, 95, 98, 90, 85],
-                            backgroundColor: 'rgba(11, 128, 67, 0.2)',
-                            borderColor: '#0b8043', // vert gazon
-                            pointBackgroundColor: '#0b8043',
+                    datasets: topResults.map((result, index) => {
+                        // Couleurs différentes pour chaque concurrent
+                        const colors = [
+                            { bg: 'rgba(11, 128, 67, 0.2)', border: '#0b8043' },  // vert
+                            { bg: 'rgba(26, 26, 26, 0.2)', border: '#1a1a1a' },   // noir
+                            { bg: 'rgba(212, 175, 55, 0.2)', border: '#d4af37' }  // or
+                        ];
+                        
+                        // Données pour le graphique radar
+                        return {
+                            label: result.nom,
+                            data: [
+                                result.performances.cheval,
+                                result.performances.jockey,
+                                result.performances.entraineur,
+                                result.performances.proprietaire,
+                                getRandomValue(75, 95, 85),  // Adaptation Distance (simulée)
+                                getRandomValue(75, 95, 85)   // Adaptation Terrain (simulée)
+                            ],
+                            backgroundColor: colors[index].bg,
+                            borderColor: colors[index].border,
+                            pointBackgroundColor: colors[index].border,
                             pointBorderColor: '#fff',
                             pointHoverBackgroundColor: '#fff',
-                            pointHoverBorderColor: '#0b8043'
-                        },
-                        {
-                            label: 'ROYAL EAGLE',
-                            data: [85, 92, 88, 90, 88, 90],
-                            backgroundColor: 'rgba(26, 26, 26, 0.2)',
-                            borderColor: '#1a1a1a', // noir
-                            pointBackgroundColor: '#1a1a1a',
-                            pointBorderColor: '#fff',
-                            pointHoverBackgroundColor: '#fff',
-                            pointHoverBorderColor: '#1a1a1a'
-                        },
-                        {
-                            label: 'SILVER STAR',
-                            data: [78, 85, 90, 80, 85, 82],
-                            backgroundColor: 'rgba(212, 175, 55, 0.2)',
-                            borderColor: '#d4af37', // or
-                            pointBackgroundColor: '#d4af37',
-                            pointBorderColor: '#fff',
-                            pointHoverBackgroundColor: '#fff',
-                            pointHoverBorderColor: '#d4af37'
-                        }
-                    ]
+                            pointHoverBorderColor: colors[index].border
+                        };
+                    })
                 },
                 options: {
                     scales: {
@@ -700,11 +1086,16 @@
                     }
                 }
             });
+            
+            // Initialiser ou mettre à jour le graphique de tendances
+            initTrendsChart();
         }
         
         function initTrendsChart() {
             const trendsCtx = document.getElementById('trendsChart').getContext('2d');
-            new Chart(trendsCtx, {
+            if (window.trendsChart) window.trendsChart.destroy();
+            
+            window.trendsChart = new Chart(trendsCtx, {
                 type: 'line',
                 data: {
                     labels: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet'],
@@ -743,6 +1134,22 @@
                 }
             });
         }
+        
+        // Charger les données au chargement de la page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Charger les données
+            loadData();
+            
+            // Événement du bouton d'analyse
+            document.getElementById('analyze-button').addEventListener('click', function() {
+                const courseSelect = document.getElementById('course-select');
+                if (courseSelect.value) {
+                    document.getElementById('selection-participants').style.display = 'block';
+                } else {
+                    alert('Veuillez sélectionner une course');
+                }
+            });
+        });
     </script>
 </body>
 </html>
