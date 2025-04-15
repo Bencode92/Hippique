@@ -9,24 +9,19 @@ import sys
 # Configuration
 CATEGORIES = {
     "chevaux": {
-        "url": "https://www.france-galop.com/fr/hommes-chevaux/chevaux",
-        "table_id": "classement_chevaux"  # À ajuster si différent
+        "url": "https://www.france-galop.com/fr/hommes-chevaux/chevaux"
     },
     "proprietaires": {
-        "url": "https://www.france-galop.com/fr/hommes-chevaux/proprietaires",
-        "table_id": "classement_proprietaires"  # À ajuster si différent
+        "url": "https://www.france-galop.com/fr/hommes-chevaux/proprietaires"
     },
     "entraineurs": {
-        "url": "https://www.france-galop.com/fr/hommes-chevaux/entraineurs",
-        "table_id": "classement_entraineurs"  # À ajuster si différent
+        "url": "https://www.france-galop.com/fr/hommes-chevaux/entraineurs"
     },
     "eleveurs": {
-        "url": "https://www.france-galop.com/fr/hommes-chevaux/eleveurs",
-        "table_id": "classement_eleveurs"  # À ajuster si différent
+        "url": "https://www.france-galop.com/fr/hommes-chevaux/eleveurs"
     },
     "jockeys": {
-        "url": "https://www.france-galop.com/fr/hommes-chevaux/jockeys",
-        "table_id": "classement_jockeys"
+        "url": "https://www.france-galop.com/fr/hommes-chevaux/jockeys"
     }
 }
 
@@ -47,8 +42,8 @@ def ensure_data_dir():
         os.makedirs(DATA_DIR)
 
 
-def extract_table_data(url, table_id, category):
-    """Extrait les données d'une table spécifique"""
+def extract_data(url, category):
+    """Extrait les données de la page"""
     print(f"Extraction des données pour {category} depuis {url}")
     
     try:
@@ -57,10 +52,38 @@ def extract_table_data(url, table_id, category):
         
         soup = BeautifulSoup(response.text, 'html.parser')
         
-        # Trouver la table de classement
+        # Recherche de tables de classement par différentes méthodes
+        table = None
+        
+        # Méthode 1: Par ID spécifique (moins fiable)
+        table_id = f"classement_{category}"
         table = soup.find('table', id=table_id)
+        
+        # Méthode 2: Par classe (plus générique)
         if not table:
-            raise Exception(f"Table avec ID '{table_id}' non trouvée")
+            table = soup.find('table', class_='tablesorter')
+        
+        # Méthode 3: Par attribut role="grid" (plus précis pour les tableaux de données)
+        if not table:
+            table = soup.find('table', attrs={'role': 'grid'})
+            
+        # Méthode 4: Prendre la première table de la page
+        if not table:
+            table = soup.find('table')
+        
+        if not table:
+            # Si aucune table n'est trouvée, on crée un jeu de données vide mais valide
+            print(f"Aucune table trouvée pour {category}. Création d'un jeu de données vide.")
+            return {
+                "metadata": {
+                    "source": url,
+                    "date_extraction": datetime.now().isoformat(),
+                    "category": category,
+                    "erreur": "Aucune table de données trouvée"
+                },
+                "filters": {},
+                "resultats": []
+            }
         
         # Extraire les en-têtes de colonnes
         headers = []
@@ -165,10 +188,9 @@ def main():
     for category in selected_categories:
         config = CATEGORIES[category]
         url = config["url"]
-        table_id = config["table_id"]
         
         # Extraction des données
-        data = extract_table_data(url, table_id, category)
+        data = extract_data(url, category)
         
         # Sauvegarde des données
         save_to_json(data, category)
