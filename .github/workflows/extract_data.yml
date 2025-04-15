@@ -35,7 +35,7 @@ jobs:
           pip install requests beautifulsoup4
       
       - name: Run extraction script
-        run: python scraper.py ${{ github.event.inputs.categories }}
+        run: scraper_enhanced.py ${{ github.event.inputs.categories }}
       
       - name: Commit and push if changes
         run: |
