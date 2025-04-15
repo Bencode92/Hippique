@@ -9,50 +9,44 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Side Holographic Elements -->
-  <div class="side-hologram left"></div>
-  <div class="side-hologram right"></div>
-  
-  <!-- Horse Silhouettes -->
-  <div class="horse-hologram horse-left-top"></div>
-  <div class="horse-hologram horse-left-bottom"></div>
-  <div class="horse-hologram horse-right-top"></div>
-  <div class="horse-hologram horse-right-bottom"></div>
-  
-  <!-- Track Holograms -->
-  <div class="track-hologram track-left"></div>
-  <div class="track-hologram track-right"></div>
-  
-  <!-- Data Connections -->
-  <div class="data-connection data-left-1"></div>
-  <div class="data-connection data-left-2"></div>
-  <div class="data-connection data-right-1"></div>
-  <div class="data-connection data-right-2"></div>
-  
-  <!-- Data Dots -->
-  <div class="data-dots">
-    <div class="data-dot dot-1"></div>
-    <div class="data-dot dot-2"></div>
-    <div class="data-dot dot-3"></div>
-    <div class="data-dot dot-4"></div>
-    <div class="data-dot dot-5"></div>
-    <div class="data-dot dot-6"></div>
+  <!-- Geometric background elements -->
+  <div class="geometric-lines">
+    <div class="line line-1"></div>
+    <div class="line line-2"></div>
+    <div class="line line-3"></div>
+    <div class="line line-4"></div>
   </div>
+  
+  <!-- Curved paths -->
+  <div class="curved-path curve-1"></div>
+  <div class="curved-path curve-2"></div>
+  <div class="curved-path curve-3"></div>
+  <div class="curved-path curve-4"></div>
+  
+  <!-- Horse silhouettes -->
+  <div class="horse-silhouette horse-left"></div>
+  <div class="horse-silhouette horse-right"></div>
+  
+  <!-- Data points -->
+  <div class="data-point point-1"></div>
+  <div class="data-point point-2"></div>
+  <div class="data-point point-3"></div>
+  <div class="data-point point-4"></div>
+  <div class="data-point point-5"></div>
+  <div class="data-point point-6"></div>
+  <div class="data-point point-7"></div>
+  <div class="data-point point-8"></div>
+  <div class="data-point point-9"></div>
 
   <!-- Header -->
   <header>
     <div class="container">
       <div class="header-content">
         <a href="#" class="logo">
-          <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M80 35C77 25 70 20 60 20C50 20 45 25 40 30C35 35 30 40 20 42C10 44 5 50 5 60C5 70 10 75 20 75C30 75 40 70 45 65C50 60 55 55 60 55C65 55 70 60 70 65C70 70 65 75 60 75" stroke="#e6d58f" stroke-width="4"/>
-            <path d="M60 75C55 80 50 85 40 85C30 85 25 80 25 75" stroke="#e6d58f" stroke-width="4"/>
-            <path d="M80 35C85 40 90 45 95 55" stroke="#e6d58f" stroke-width="4"/>
-          </svg>
-          ANALYSE HIPPIQUE
+          <i class="fas fa-horse-head"></i>ANALYSE HIPPIQUE
         </a>
         <div class="search-bar">
-          <input type="text" placeholder="Rechercher un cheval, jockey..." id="searchInput" onkeyup="searchFilter()">
+          <input type="text" placeholder="Rechercher un cheval, jockey..." id="searchInput">
           <i class="fas fa-search"></i>
         </div>
       </div>
@@ -66,7 +60,7 @@
       <!-- Card 1 -->
       <div class="stat-card">
         <h3><i class="fas fa-flag-checkered"></i> Courses Analysées</h3>
-        <div class="number" data-target="73">0</div>
+        <div class="number" data-target="73">73</div>
         <div class="trend positive">
           <i class="fas fa-arrow-up"></i> +12%
         </div>
@@ -75,7 +69,7 @@
       <!-- Card 2 -->
       <div class="stat-card">
         <h3><i class="fas fa-horse"></i> Chevaux</h3>
-        <div class="number" data-target="150">0</div>
+        <div class="number" data-target="150">150</div>
         <div class="trend positive">
           <i class="fas fa-arrow-up"></i> +8%
         </div>
@@ -84,14 +78,14 @@
       <!-- Card 3 -->
       <div class="stat-card">
         <h3><i class="fas fa-user"></i> Jockeys</h3>
-        <div class="number" data-target="150">0</div>
+        <div class="number" data-target="150">150</div>
         <div class="sub-text">Performance moyenne</div>
       </div>
       
       <!-- Card 4 -->
       <div class="stat-card">
         <h3><i class="fas fa-euro-sign"></i> Gains Moyens</h3>
-        <div class="number" data-target="33143">0</div>
+        <div class="number" data-target="33143">33143</div>
         <div class="trend negative">
           <i class="fas fa-arrow-down"></i> -3%
         </div>
@@ -137,7 +131,7 @@
         <h2 class="section-header">Top Jockeys</h2>
         <div class="jockeys-grid">
           <!-- Jockey 1 -->
-          <div class="jockey-card searchable-item">
+          <div class="jockey-card">
             <div class="jockey-avatar">
               <img src="https://via.placeholder.com/50" alt="Jules Martin">
             </div>
@@ -150,7 +144,7 @@
           </div>
           
           <!-- Jockey 2 -->
-          <div class="jockey-card searchable-item">
+          <div class="jockey-card">
             <div class="jockey-avatar">
               <img src="https://via.placeholder.com/50" alt="Claire Durand">
             </div>
@@ -163,7 +157,7 @@
           </div>
           
           <!-- Jockey 3 -->
-          <div class="jockey-card searchable-item">
+          <div class="jockey-card">
             <div class="jockey-avatar">
               <img src="https://via.placeholder.com/50" alt="Maxime Lefèvre">
             </div>
@@ -176,7 +170,7 @@
           </div>
           
           <!-- Jockey 4 -->
-          <div class="jockey-card searchable-item">
+          <div class="jockey-card">
             <div class="jockey-avatar">
               <img src="https://via.placeholder.com/50" alt="Antoine Bernier">
             </div>
@@ -191,23 +185,6 @@
       </section>
     </div>
   </main>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div>
-          <a href="#" class="footer-logo">ANALYSE HIPPIQUE</a>
-          <div class="footer-tagline">Système d'analyse pour événements hippiques</div>
-        </div>
-        <div class="social-links">
-          <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
-          <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-    </div>
-  </footer>
 
   <!-- Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
