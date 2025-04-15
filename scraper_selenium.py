@@ -14,6 +14,7 @@ from datetime import datetime
 import logging
 import re
 import random
+import argparse
 
 # Dépendances externes
 from bs4 import BeautifulSoup
@@ -24,7 +25,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import TimeoutException, NoSuchElementException, ElementClickInterceptedException, StaleElementReferenceException
 
 # Configuration du logger
 logging.basicConfig(
@@ -110,7 +111,7 @@ def get_selenium_driver():
     
     return driver
 
-def extract_data_with_selenium(url, category):
+def extract_data_with_selenium(url, category, max_plus_clicks=None):
     """Extrait les données en utilisant Selenium pour exécuter le JavaScript"""
     logger.info(f"Extraction des données pour {category} depuis {url}")
     
@@ -132,6 +133,68 @@ def extract_data_with_selenium(url, category):
             logger.info(f"Tableau détecté pour {category}")
         except TimeoutException:
             logger.warning(f"Timeout en attendant le tableau pour {category}")
+            
+        # Cliquer sur "Plus" tant qu'il est présent pour charger toutes les données
+        click_count = 0
+        while max_plus_clicks is None or click_count < max_plus_clicks:
+            try:
+                # Essayer différents sélecteurs pour le bouton "Plus"
+                selectors = [
+                    "//button[contains(text(), 'Plus')]",  # Bouton avec texte "Plus"
+                    "//button[contains(@class, 'more')]",  # Bouton avec classe contenant "more"
+                    "//a[contains(text(), 'Plus')]",       # Lien avec texte "Plus"
+                    "//a[contains(@class, 'more')]",       # Lien avec classe contenant "more"
+                    "//button[contains(@class, 'load-more')]", # Bouton "load more"
+                    "//button[contains(@class, 'pagination')]" # Bouton de pagination
+                ]
+                
+                plus_button = None
+                for selector in selectors:
+                    try:
+                        plus_button = WebDriverWait(driver, 3).until(
+                            EC.element_to_be_clickable((By.XPATH, selector))
+                        )
+                        break
+                    except TimeoutException:
+                        continue
+                
+                if not plus_button:
+                    logger.info("Aucun bouton 'Plus' détecté, toutes les données sont chargées.")
+                    break
+                
+                logger.info(f"Bouton 'Plus' trouvé, clic #{click_count+1} pour charger plus de résultats...")
+                
+                # Faire défiler jusqu'au bouton pour s'assurer qu'il est visible
+                driver.execute_script("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", plus_button)
+                time.sleep(1)  # Attendre un peu que le défilement se termine
+                
+                # Cliquer sur le bouton avec JavaScript (plus fiable qu'un clic standard)
+                driver.execute_script("arguments[0].click();", plus_button)
+                click_count += 1
+                
+                # Attendre que de nouvelles données se chargent
+                time.sleep(2)
+                
+                # Vérifier si le tableau a changé/grandi
+                rows_before = len(driver.find_elements(By.CSS_SELECTOR, "table[role='grid'] tr, table.tablesorter tr"))
+                time.sleep(2)  # Attendre un peu pour le chargement
+                rows_after = len(driver.find_elements(By.CSS_SELECTOR, "table[role='grid'] tr, table.tablesorter tr"))
+                
+                logger.info(f"Nombre de lignes après clic: {rows_after} (avant: {rows_before})")
+                
+                # Si le nombre de lignes n'a pas changé après deux clics consécutifs, arrêter
+                if rows_before == rows_after and click_count > 1:
+                    logger.info("Le nombre de lignes n'a pas augmenté, plus de données à charger.")
+                    break
+                
+            except (TimeoutException, NoSuchElementException, ElementClickInterceptedException, StaleElementReferenceException):
+                logger.info("Aucun bouton 'Plus' détecté ou plus de données à charger.")
+                break
+        
+        logger.info(f"Total de {click_count} clics sur 'Plus' effectués")
+        
+        # Attendre un peu après le dernier clic pour s'assurer que toutes les données sont chargées
+        time.sleep(3)
         
         # Prendre le HTML complet de la page
         html = driver.page_source
@@ -147,6 +210,11 @@ def extract_data_with_selenium(url, category):
         
         if not table:
             logger.error(f"Aucun tableau trouvé pour {category} même après utilisation de Selenium")
+            # Sauvegarde le corps de la page pour analyse ultérieure
+            body_content = soup.find('body')
+            if body_content:
+                save_debug_html(str(body_content), category, "_selenium_body")
+                
             return {
                 "metadata": {
                     "source": url,
@@ -167,7 +235,8 @@ def extract_data_with_selenium(url, category):
                 "source": url,
                 "date_extraction": datetime.now().isoformat(),
                 "category": category,
-                "nombre_resultats": len(rows)
+                "nombre_resultats": len(rows),
+                "plus_clicks": click_count
             },
             "resultats": rows
         }
@@ -368,6 +437,18 @@ def save_to_json(data, category):
         logger.error(f"Erreur lors de la sauvegarde dans {filename}: {str(e)}")
         return False
 
+def parse_arguments():
+    """Parse les arguments de ligne de commande"""
+    parser = argparse.ArgumentParser(description="Extraction de données hippiques France Galop")
+    
+    parser.add_argument("categories", nargs="?", default="",
+                        help="Catégories à extraire séparées par virgule (ex: jockeys,chevaux)")
+    
+    parser.add_argument("--max-clicks", type=int, default=None,
+                        help="Nombre maximum de clics sur le bouton 'Plus' (par défaut: aucune limite)")
+    
+    return parser.parse_args()
+
 def main():
     """Fonction principale"""
     logger.info("Démarrage du script d'extraction France Galop avec Selenium")
@@ -375,10 +456,13 @@ def main():
     # S'assurer que les dossiers existent
     ensure_dirs()
     
-    # Vérifier si des catégories spécifiques sont demandées via les arguments
+    # Analyser les arguments
+    args = parse_arguments()
+    
+    # Vérifier si des catégories spécifiques sont demandées
     selected_categories = []
-    if len(sys.argv) > 1:
-        arg_categories = sys.argv[1].split(',')
+    if args.categories:
+        arg_categories = args.categories.split(',')
         selected_categories = [cat.strip() for cat in arg_categories if cat.strip() in CATEGORIES]
     
     # Si aucune catégorie spécifique n'est demandée, traiter toutes les catégories
@@ -386,6 +470,7 @@ def main():
         selected_categories = list(CATEGORIES.keys())
     
     logger.info(f"Catégories à extraire: {', '.join(selected_categories)}")
+    logger.info(f"Limite de clics 'Plus': {args.max_clicks if args.max_clicks is not None else 'Aucune'}")
     
     # Résultats globaux
     results = {}
@@ -396,7 +481,7 @@ def main():
         url = config["url"]
         
         # Extraction des données avec Selenium
-        data = extract_data_with_selenium(url, category)
+        data = extract_data_with_selenium(url, category, max_plus_clicks=args.max_clicks)
         
         # Sauvegarde des données
         if data:
