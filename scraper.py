@@ -6,6 +6,7 @@ import time
 from datetime import datetime
 import sys
 import logging
+import re
 
 # Configuration du logger
 logging.basicConfig(
@@ -55,42 +56,88 @@ def ensure_data_dir():
 def find_table(soup, category):
     """
     Trouve un tableau dans la page en utilisant plusieurs méthodes
-    pour une détection plus robuste
+    pour une détection plus robuste, spécifiquement adaptée pour France Galop
     """
-    table = None
+    # MÉTHODE SPÉCIFIQUE: Chercher div avec id="table.classement" 
+    # (observé dans la capture d'écran)
+    div_classement = soup.find('div', id='table.classement')
+    if div_classement:
+        # Chercher le tableau à l'intérieur de cette div
+        table = div_classement.find('table')
+        if table:
+            logger.info(f"Table trouvée via div#table.classement")
+            return table
     
-    # Méthode 1: Par ID spécifique (ça peut encore fonctionner dans certains cas)
-    table_id = f"classement_{category}"
-    table = soup.find('table', id=table_id)
-    if table:
-        logger.info(f"Table trouvée par ID: {table_id}")
-        return table
+    # MÉTHODE SPÉCIFIQUE: Chercher les tableaux avec classe qui contient "tablesorter"
+    tables_with_tablesorter = soup.find_all('table', class_=lambda c: c and 'tablesorter' in c)
+    if tables_with_tablesorter:
+        logger.info(f"Table trouvée via classe tablesorter")
+        return tables_with_tablesorter[0]
     
-    # Méthode 2: Par attribut role="grid" (souvent utilisé pour les tableaux de données)
+    # MÉTHODE SPÉCIFIQUE: Chercher avec le sélecteur CSS complexe observé
+    specific_table = soup.select_one('div[class*="table classement"] table')
+    if specific_table:
+        logger.info(f"Table trouvée via sélecteur CSS spécifique")
+        return specific_table
+    
+    # MÉTHODE SPÉCIFIQUE: Chercher n'importe quelle div contenant "classement" dans l'ID ou la classe
+    classement_divs = soup.find_all('div', id=lambda x: x and 'classement' in x.lower())
+    classement_divs.extend(soup.find_all('div', class_=lambda x: x and 'classement' in x.lower()))
+    
+    for div in classement_divs:
+        table = div.find('table')
+        if table:
+            logger.info(f"Table trouvée via div avec 'classement' dans l'id/classe")
+            return table
+            
+    # Si on arrive ici, on essaie les méthodes génériques
+    
+    # Méthode 1: Par attribut role="grid" (souvent utilisé pour les tableaux de données)
     table = soup.find('table', attrs={'role': 'grid'})
     if table:
         logger.info(f"Table trouvée par attribut role='grid'")
         return table
     
-    # Méthode 3: Par classe common pour tableaux
+    # Méthode 2: Par classe common pour tableaux
     for cls in ['tablesorter', 'table', 'data-table', 'c-table']:
-        table = soup.find('table', class_=cls)
+        table = soup.find('table', class_=lambda c: c and cls in c)
         if table:
             logger.info(f"Table trouvée par classe: {cls}")
             return table
     
-    # Méthode 4: Chercher le premier tableau de la page
+    # Méthode 3: Chercher le premier tableau de la page
     table = soup.find('table')
     if table:
         logger.info(f"Premier tableau de la page trouvé")
         return table
     
-    # Méthode 5: Chercher un élément div qui contient un tableau
-    for div_class in ['table-responsive', 'table-container', 'dataTables_wrapper']:
-        div = soup.find('div', class_=div_class)
-        if div and div.find('table'):
-            logger.info(f"Table trouvée dans div.{div_class}")
-            return div.find('table')
+    # Méthode 4: Chercher toutes les tables et prendre la plus grande
+    all_tables = soup.find_all('table')
+    if all_tables:
+        # Trouver la table avec le plus de lignes <tr>
+        max_rows = 0
+        largest_table = None
+        for t in all_tables:
+            rows = len(t.find_all('tr'))
+            if rows > max_rows:
+                max_rows = rows
+                largest_table = t
+        
+        if largest_table:
+            logger.info(f"Table la plus grande trouvée ({max_rows} lignes)")
+            return largest_table
+    
+    # Méthode 5: Enregistrer le HTML pour diagnostic
+    try:
+        debug_dir = os.path.join(DATA_DIR, "debug")
+        if not os.path.exists(debug_dir):
+            os.makedirs(debug_dir)
+        
+        with open(os.path.join(debug_dir, f"{category}_page.html"), "w", encoding="utf-8") as f:
+            f.write(str(soup))
+        logger.info(f"HTML sauvegardé pour diagnostic dans {debug_dir}/{category}_page.html")
+    except Exception as e:
+        logger.warning(f"Impossible de sauvegarder le HTML pour diagnostic: {e}")
     
     logger.warning(f"Aucun tableau trouvé pour {category}")
     return None
@@ -116,6 +163,12 @@ def extract_data(url, category):
         # Analyser la page HTML
         soup = BeautifulSoup(response.text, 'html.parser')
         
+        # Chercher le titre de la page ou de la section
+        title = None
+        page_title = soup.find('h1')
+        if page_title:
+            title = page_title.text.strip()
+        
         # Trouver le tableau en utilisant plusieurs méthodes
         table = find_table(soup, category)
         
@@ -127,6 +180,7 @@ def extract_data(url, category):
                     "source": url,
                     "date_extraction": datetime.now().isoformat(),
                     "category": category,
+                    "title": title,
                     "erreur": "Aucun tableau trouvé"
                 },
                 "filters": extract_filters(soup),
@@ -148,6 +202,7 @@ def extract_data(url, category):
                 "source": url,
                 "date_extraction": datetime.now().isoformat(),
                 "category": category,
+                "title": title,
                 "nombre_resultats": len(results)
             },
             "filters": filters,
@@ -183,14 +238,24 @@ def extract_headers(table):
             for th in header_row.find_all(['th', 'td']):
                 # Essayer plusieurs attributs pour trouver le nom de la colonne
                 header_name = None
-                for attr in ['data-label', 'data-col', 'aria-label']:
-                    if th.has_attr(attr):
+                
+                # Essayer data-label d'abord
+                if th.has_attr('data-label'):
+                    header_name = th['data-label']
+                
+                # Essayer autres attributs
+                for attr in ['data-col', 'aria-label']:
+                    if not header_name and th.has_attr(attr):
                         header_name = th[attr]
                         break
                 
-                # Si aucun attribut trouvé, utiliser le texte
+                # Si toujours pas trouvé, utiliser le texte
                 if not header_name:
                     header_name = th.text.strip()
+                
+                # Si l'en-tête est toujours vide, utiliser un nom générique
+                if not header_name:
+                    header_name = f"Column_{len(headers)+1}"
                 
                 headers.append(header_name)
                 
@@ -199,7 +264,11 @@ def extract_headers(table):
         first_row = table.find('tr')
         if first_row:
             for cell in first_row.find_all(['th', 'td']):
-                headers.append(cell.text.strip())
+                header_text = cell.text.strip()
+                if header_text:
+                    headers.append(header_text)
+                else:
+                    headers.append(f"Column_{len(headers)+1}")
     
     # Si toujours aucun en-tête, générer des en-têtes génériques
     if not headers:
@@ -252,8 +321,22 @@ def extract_rows(table, headers):
                 # Récupérer le nom de l'en-tête
                 header_name = headers[i]
                 
-                # Extraire la valeur de la cellule
-                value = cell.text.strip()
+                # Extraire la valeur de la cellule (prioriser data-title, data-text, puis innerText)
+                value = ""
+                
+                # Essayer l'attribut data-text ou data-title
+                for attr in ['data-text', 'data-title', 'data-value']:
+                    if cell.has_attr(attr) and cell[attr].strip():
+                        value = cell[attr].strip()
+                        break
+                
+                # Si aucun attribut n'est trouvé, utiliser le texte
+                if not value:
+                    value = cell.text.strip()
+                
+                # Si la valeur contient uniquement des espaces, continuer
+                if not value:
+                    continue
                 
                 # Convertir en nombre si possible (pour les cellules numériques)
                 if cell.get('data-type') == 'number' or header_name.lower() in ['rang', 'partants', 'victoires', 'places']:
@@ -263,21 +346,29 @@ def extract_rows(table, headers):
                         if '.' in clean_value:
                             value = float(clean_value)
                         else:
-                            value = int(clean_value)
-                    except ValueError:
+                            try:
+                                value = int(clean_value)
+                            except ValueError:
+                                pass  # Garder comme chaîne
+                    except (ValueError, TypeError):
                         # Garder comme chaîne si la conversion échoue
                         pass
                 
                 row_data[header_name] = value
                 
                 # Si c'est une colonne avec un lien (comme le nom), capturer également l'URL
-                if header_name.lower() in ['jockey', 'nom', 'nompostal', 'cheval', 'proprietaire', 'entraineur', 'eleveur']:
+                link_columns = ['jockey', 'nom', 'nompostal', 'cheval', 'proprietaire', 'entraineur', 'eleveur']
+                
+                # Vérifier si l'en-tête ressemble à une des colonnes d'intérêt
+                is_link_column = any(col.lower() in header_name.lower() for col in link_columns)
+                
+                if is_link_column or i == 0:  # Première colonne souvent un nom
                     link = cell.find('a')
                     if link and 'href' in link.attrs:
                         row_data[f"{header_name}_url"] = link.get('href')
         
-        # Ajouter les données de cette ligne aux résultats
-        if row_data:
+        # Ajouter les données de cette ligne aux résultats s'il y a au moins une clé autre que l'URL
+        if any(not k.endswith('_url') for k in row_data.keys()):
             results.append(row_data)
     
     return results
@@ -291,7 +382,12 @@ def extract_filters(soup):
     for select in selects:
         filter_name = select.get('name', '').strip()
         if not filter_name:
-            continue
+            # Essayer de récupérer le label si disponible
+            label = soup.find('label', {'for': select.get('id', '')})
+            if label:
+                filter_name = label.text.strip()
+            else:
+                continue
         
         # Chercher l'option sélectionnée
         selected_option = select.find('option', selected=True)
@@ -300,13 +396,31 @@ def extract_filters(soup):
             filters[filter_name] = filter_value
     
     # Chercher aussi les filtres dans les éléments input (type=radio, checkbox)
-    inputs = soup.find_all('input', {'type': ['radio', 'checkbox'], 'checked': True})
-    for input_elem in inputs:
+    inputs = soup.find_all('input', {'type': ['radio', 'checkbox']})
+    checked_inputs = [inp for inp in inputs if inp.get('checked') == True or inp.has_attr('checked')]
+    
+    for input_elem in checked_inputs:
         filter_name = input_elem.get('name', '').strip()
         if filter_name:
             filter_value = input_elem.get('value', '')
             # Pour les cases à cocher, la valeur peut être simplement "on"
             if filter_value and filter_value != 'on':
+                filters[filter_name] = filter_value
+            elif filter_value == 'on':
+                # Essayer de récupérer le texte du label
+                label = soup.find('label', {'for': input_elem.get('id', '')})
+                if label:
+                    filters[filter_name] = label.text.strip()
+                else:
+                    filters[filter_name] = "Activé"
+    
+    # Récupérer les filtres actifs dans les boutons ou spans avec classe "active" ou "selected"
+    filter_elements = soup.select('.filter.active, .filter.selected, .tab.active, .btn.active')
+    for elem in filter_elements:
+        filter_name = elem.get('data-filter', '') or elem.get('data-type', '') or 'filtre'
+        if filter_name:
+            filter_value = elem.text.strip()
+            if filter_value:
                 filters[filter_name] = filter_value
     
     return filters
