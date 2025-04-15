@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Ajouter des événements aux éléments interactifs
   setupEventListeners();
+  
+  // Animer les hologrammes
+  animateHolograms();
 });
 
 // Fonction pour initialiser le graphique de tendances
@@ -20,8 +23,8 @@ function initTrendsChart() {
     datasets: [{
       label: 'Performance',
       data: [65, 59, 80, 81, 56, 55, 72, 60, 65, 70, 85, 90],
-      borderColor: '#e6d58f',
-      backgroundColor: 'rgba(230, 213, 143, 0.1)',
+      borderColor: '#7effce',
+      backgroundColor: 'rgba(126, 255, 206, 0.1)',
       tension: 0.4,
       pointBackgroundColor: '#e6d58f',
       pointBorderColor: '#0a2718',
@@ -113,7 +116,7 @@ function setupEventListeners() {
   // Effet hover sur les cartes de statistiques
   document.querySelectorAll('.stat-card').forEach(card => {
     card.addEventListener('mouseenter', function() {
-      this.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3)';
+      this.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.3), 0 0 20px rgba(126, 255, 212, 0.1)';
     });
     
     card.addEventListener('mouseleave', function() {
@@ -128,9 +131,55 @@ function setupEventListeners() {
     
     setTimeout(() => {
       this.innerHTML = '<i class="fas fa-chart-line"></i> Analyser la course';
-      alert('Analyse terminée !');
+      showHologramPulse();
     }, 1500);
   });
+}
+
+// Fonction pour animer les hologrammes de façon dynamique
+function animateHolograms() {
+  const holograms = document.querySelectorAll('.hologram');
+  
+  // Ajout d'animation dynamique pour chaque hologramme
+  holograms.forEach(hologram => {
+    // Ajout d'une animation de pulse
+    hologram.style.animation = `${hologram.style.animation || ''}, pulse 4s infinite ease-in-out`;
+    
+    // Animation aléatoire pour les positions
+    setInterval(() => {
+      const randomX = Math.random() * 10 - 5; // valeur entre -5 et 5
+      const randomY = Math.random() * 10 - 5; // valeur entre -5 et 5
+      hologram.style.transform = `translate(${randomX}px, ${randomY}px)`;
+    }, 5000);
+  });
+}
+
+// Fonction pour créer un effet de pulse holographique temporaire
+function showHologramPulse() {
+  // Créer un élément d'effet holographique pulse
+  const pulse = document.createElement('div');
+  pulse.classList.add('hologram', 'track');
+  pulse.style.position = 'fixed';
+  pulse.style.top = '50%';
+  pulse.style.left = '50%';
+  pulse.style.transform = 'translate(-50%, -50%) scale(0.1)';
+  pulse.style.opacity = '0.2';
+  pulse.style.zIndex = '10';
+  pulse.style.transition = 'transform 2s ease-out, opacity 2s ease-out';
+  
+  // Ajouter l'élément à la page
+  document.querySelector('.hologram-container').appendChild(pulse);
+  
+  // Démarrer l'animation
+  setTimeout(() => {
+    pulse.style.transform = 'translate(-50%, -50%) scale(2)';
+    pulse.style.opacity = '0';
+  }, 100);
+  
+  // Supprimer l'élément après l'animation
+  setTimeout(() => {
+    pulse.remove();
+  }, 2000);
 }
 
 // Fonction pour la recherche
