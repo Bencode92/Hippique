@@ -1,0 +1,72 @@
+name: Extraction des courses France Galop
+
+on:
+  schedule:
+    # Exécution quotidienne à 6h du matin
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    # Permet l'exécution manuelle depuis l'interface GitHub
+    inputs:
+      type_course:
+        description: 'Type de course (Plat, Obstacle, Trot)'
+        required: true
+        default: 'Plat'
+      jours:
+        description: 'Nombre de jours à extraire'
+        required: true
+        default: '3'
+
+permissions:
+  contents: write
+
+jobs:
+  extract_courses:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@latest
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 selenium webdriver-manager
+      
+      - name: Run extraction script
+        run: |
+          python scraper_courses.py
+        env:
+          TYPE_COURSE: ${{ github.event.inputs.type_course || 'Plat' }}
+          JOURS: ${{ github.event.inputs.jours || '3' }}
+      
+      - name: Prepare directories for commit
+        run: |
+          # Créer les dossiers si nécessaire pour éviter des erreurs de commit
+          mkdir -p data/courses
+          touch data/courses/.gitkeep
+      
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # Ajouter les fichiers pertinents
+          git add data/courses/*.json
+          
+          # Vérifier s'il y a des changements à committer
+          if git diff --cached --quiet; then
+            echo "Aucun changement détecté"
+          else
+            git commit -m "Mise à jour des courses - $(date +'%Y-%m-%d')"
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
