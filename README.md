@@ -1,14 +1,17 @@
 # Projet d'extraction de données hippiques
 
-Ce projet extrait automatiquement les données des chevaux, jockeys, entraîneurs, propriétaires et éleveurs depuis le site France Galop. Les données sont stockées dans des fichiers JSON structurés.
+Ce projet extrait automatiquement les données des chevaux, jockeys, entraîneurs, propriétaires et éleveurs depuis le site France Galop. Les données sont téléchargées au format CSV puis converties et stockées en JSON.
 
 ## Fonctionnalités
 
 - Extraction automatique quotidienne via GitHub Actions
-- Données stockées au format JSON dans le dossier `data/`
+- Téléchargement direct des fichiers CSV de France Galop
+- Conversion et stockage en JSON dans le dossier `data/`
+- Conservation des fichiers CSV bruts pour référence
 - Extraction de 5 catégories : chevaux, jockeys, entraîneurs, propriétaires et éleveurs
-- Détection des filtres appliqués (année, spécialité, etc.)
-- Sauvegarde des métadonnées (date d'extraction, source, etc.)
+- Détection automatique des URL de téléchargement
+- Support de différents encodages (UTF-8, Latin-1)
+- Gestion robuste des erreurs
 
 ## Structure des données
 
@@ -18,16 +21,13 @@ Chaque fichier JSON contient :
 {
   "metadata": {
     "source": "URL source",
+    "download_url": "URL de téléchargement du CSV",
     "date_extraction": "Date et heure",
     "category": "Catégorie",
     "nombre_resultats": "Nombre d'entrées"
   },
-  "filters": {
-    "année": "2025",
-    "spécialité": "Tout"
-  },
   "resultats": [
-    // Données extraites
+    // Données extraites du CSV
   ]
 }
 ```
@@ -39,7 +39,7 @@ Chaque fichier JSON contient :
 Pour lancer l'extraction manuellement :
 
 1. Cloner le dépôt
-2. Installer les dépendances : `pip install requests beautifulsoup4`
+2. Installer les dépendances : `pip install -r requirements.txt`
 3. Exécuter le script : `python scraper.py`
 
 Pour extraire seulement certaines catégories :
@@ -57,6 +57,25 @@ Vous pouvez également lancer l'extraction manuellement depuis l'interface GitHu
 2. Sélectionner le workflow "France Galop Data Extraction"
 3. Cliquer sur "Run workflow"
 4. Optionnellement spécifier les catégories à extraire
+
+## Comment ça fonctionne
+
+Le script utilise une approche en plusieurs étapes :
+
+1. Visite la page de la catégorie sur France Galop
+2. Détecte le lien de téléchargement CSV (bouton "Télécharger")
+3. Télécharge le fichier CSV directement
+4. Parse le CSV et le convertit en structure JSON
+5. Sauvegarde à la fois le CSV brut et le fichier JSON traité
+
+Cette méthode est plus fiable que le scraping HTML car elle utilise le format d'export officiel du site.
+
+## Dépannage
+
+Si l'extraction échoue, le script tente plusieurs méthodes alternatives pour trouver le lien de téléchargement :
+- Recherche de boutons ou liens contenant "télécharger" ou "CSV"
+- Test de plusieurs URL potentielles
+- Sauvegarde des erreurs dans un dossier de debug pour analyse
 
 ## Licence
 
