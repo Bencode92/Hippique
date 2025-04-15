@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyse Hippique - Système de Scoring</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .gradient-background {
+            background: linear-gradient(to right, #1a365d, #2a4365);
+        }
+        .score-pill {
+            transition: all 0.3s ease;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+        .horse-card {
+            transition: all 0.3s ease;
+        }
+        .horse-card:hover .horse-image {
+            transform: scale(1.05);
+        }
+        .horse-image {
+            transition: all 0.3s ease;
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <header class="gradient-background text-white py-6 shadow-lg">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center mb-4 md:mb-0">
+                <i class="fas fa-horse-head text-3xl mr-3"></i>
+                <h1 class="text-3xl font-bold">Analyse Hippique</h1>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="relative mb-4 md:mb-0 md:mr-4">
+                    <input id="search" type="text" placeholder="Rechercher un cheval, jockey, entraîneur..." 
+                           class="bg-white bg-opacity-20 rounded-full py-2 px-4 pl-10 w-64 focus:outline-none focus:ring-2 focus:ring-blue-300 text-white placeholder-gray-300">
+                    <i class="fas fa-search absolute left-3 top-3 text-gray-300"></i>
+                </div>
+                <select id="category-filter" class="bg-white bg-opacity-20 rounded-full py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-300 text-white">
+                    <option value="all">Toutes les catégories</option>
+                    <option value="chevaux">Chevaux</option>
+                    <option value="jockeys">Jockeys</option>
+                    <option value="entraineurs">Entraîneurs</option>
+                    <option value="proprietaires">Propriétaires</option>
+                    <option value="eleveurs">Éleveurs</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-4 py-8">
+        <!-- Dashboard Overview -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-lg font-semibold text-gray-700">Courses Analysées</h3>
+                    <i class="fas fa-flag-checkered text-blue-600 text-2xl"></i>
+                </div>
+                <p class="text-3xl font-bold mt-2 text-gray-800">128</p>
+                <div class="flex items-center mt-1 text-sm">
+                    <span class="text-green-500 flex items-center">
+                        <i class="fas fa-arrow-up mr-1"></i>12%
+                    </span>
+                    <span class="text-gray-500 ml-2">vs semaine précédente</span>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-lg font-semibold text-gray-700">Chevaux</h3>
+                    <i class="fas fa-horse text-indigo-600 text-2xl"></i>
+                </div>
+                <p class="text-3xl font-bold mt-2 text-gray-800">842</p>
+                <div class="flex items-center mt-1 text-sm">
+                    <span class="text-green-500 flex items-center">
+                        <i class="fas fa-arrow-up mr-1"></i>8%
+                    </span>
+                    <span class="text-gray-500 ml-2">Nouvelles entrées</span>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-lg font-semibold text-gray-700">Jockeys</h3>
+                    <i class="fas fa-user text-purple-600 text-2xl"></i>
+                </div>
+                <p class="text-3xl font-bold mt-2 text-gray-800">156</p>
+                <div class="flex items-center mt-1 text-sm">
+                    <span class="text-gray-500">Performance moyenne:</span>
+                    <div class="ml-2 w-24 bg-gray-200 rounded-full h-2">
+                        <div class="bg-purple-600 h-2 rounded-full" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-lg font-semibold text-gray-700">Gains Moyens</h3>
+                    <i class="fas fa-euro-sign text-green-600 text-2xl"></i>
+                </div>
+                <p class="text-3xl font-bold mt-2 text-gray-800">12 450€</p>
+                <div class="flex items-center mt-1 text-sm">
+                    <span class="text-red-500 flex items-center">
+                        <i class="fas fa-arrow-down mr-1"></i>3%
+                    </span>
+                    <span class="text-gray-500 ml-2">Par course gagnée</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Course Selector -->
+        <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+            <h2 class="text-xl font-bold text-gray-800 mb-4">Sélectionner une course à analyser</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="col-span-2">
+                    <div class="flex flex-col space-y-4">
+                        <div class="flex space-x-4">
+                            <select id="hippodrome-select" class="bg-gray-100 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 flex-grow">
+                                <option value="">Choisir un hippodrome</option>
+                                <option value="longchamp">ParisLongchamp</option>
+                                <option value="chantilly">Chantilly</option>
+                                <option value="deauville">Deauville</option>
+                                <option value="saint-cloud">Saint-Cloud</option>
+                                <option value="auteuil">Auteuil</option>
+                            </select>
+                            <input type="date" class="bg-gray-100 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500 flex-grow" value="2025-04-15">
+                        </div>
+                        
+                        <select id="course-select" class="bg-gray-100 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option value="">Sélectionner une course</option>
+                            <option value="course1">Prix de la Porte Maillot - 16:25 - 1400m - Handicap</option>
+                            <option value="course2">Prix du Bois de Boulogne - 17:00 - 2400m - Groupe 3</option>
+                            <option value="course3">Grand Prix de Paris - 17:35 - 2100m - Groupe 1</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="flex items-end">
+                    <button id="analyze-button" class="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
+                        <i class="fas fa-chart-line mr-2"></i> Analyser la course
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Course Analysis Results -->
+        <div id="analysis-results" class="mb-8 fade-in" style="display: none;">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Résultats d'analyse: <span class="text-blue-700">Prix du Bois de Boulogne</span></h2>
+            
+            <!-- Score Formula Explanation -->
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6 rounded-r-lg">
+                <div class="flex">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-info-circle text-blue-500 text-xl"></i>
+                    </div>
+                    <div class="ml-4">
+                        <p class="text-sm text-blue-700 font-medium">Formula de scoring</p>
+                        <p class="text-sm text-blue-600">Score = (0.4 × Performance Cheval) + (0.25 × Performance Jockey) + (0.2 × Performance Entraîneur) + (0.15 × Performance Propriétaire)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Horses Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                <!-- Horse 1 -->
+                <div class="horse-card bg-white rounded-xl shadow-md overflow-hidden border-t-4 border-green-500">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800">KING GEORGE</h3>
+                                <p class="text-gray-600 text-sm">Mâle bai - 5 ans</p>
+                            </div>
+                            <div class="bg-green-500 text-white font-bold rounded-full h-12 w-12 flex items-center justify-center text-xl">
+                                96
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-3 mb-4">
+                            <div class="text-sm">
+                                <p class="text-gray-500">Jockey</p>
+                                <p class="font-semibold text-gray-800">M. GUYON</p>
+                            </div>
+                            <div class="text-sm">
+                                <p class="text-gray-500">Entraîneur</p>
+                                <p class="font-semibold text-gray-800">A. FABRE</p>
+                            </div>
+                            <div class="text-sm">
+                                <p class="text-gray-500">Propriétaire</p>
+                                <p class="font-semibold text-gray-800">GODOLPHIN SNC</p>
+                            </div>
+                            <div class="text-sm">
+                                <p class="text-gray-500">Cote</p>
+                                <p class="font-semibold text-gray-800">2.8</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Composantes du score</h4>
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-600">Cheval</span>
+                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-blue-600 h-2 rounded-full" style="width: 92%"></div>
+                                    </div>
+                                    <span class="text-xs font-semibold ml-2">92</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-600">Jockey</span>
+                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-purple-600 h-2 rounded-full" style="width: 88%"></div>
+                                    </div>
+                                    <span class="text-xs font-semibold ml-2">88</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-600">Entraîneur</span>
+                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-yellow-500 h-2 rounded-full" style="width: 95%"></div>
+                                    </div>
+                                    <span class="text-xs font-semibold ml-2">95</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-600">Propriétaire</span>
+                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-green-500 h-2 rounded-full" style="width: 98%"></div>
+                                    </div>
+                                    <span class="text-xs font-semibold ml-2">98</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Historique récent</h4>
+                            <div class="flex space-x-2">
+                                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">1er</span>
+                                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">2e</span>
+                                <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-1 rounded">3e</span>
+                                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">1er</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-1 rounded">5e</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Horse 2 -->
+                <div class="horse-card bg-white rounded-xl shadow-md overflow-hidden border-t-4 border-blue-500">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800">ROYAL EAGLE</h3>
+                                <p class="text-gray-600 text-sm">Femelle alezane - 4 ans</p>
+                            </div>
+                            <div class="bg-blue-500 text-white font-bold rounded-full h-12 w-12 flex items-center justify-center text-xl">
+                                88
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-3 mb-4">
+                            <div class="text-sm">
+                                <p class="text-gray-500">Jockey</p>
+                                <p class="font-semibold text-gray-800">C. SOUMILLON</p>
+                            </div>
+                            <div class="text-sm">
+                                <p class="text-gray-500">Entraîneur</p>
+                                <p class="font-semibold text-gray-800">F. HEAD</p>
+                            </div>
+                            <div class="text-sm">
+                                <p class="text-gray-500">Propriétaire</p>
+                                <p class="font-semibold text-gray-800">WERTHEIMER & FRERE</p>
+                            </div>
+                            <div class="text-sm">
+                                <p class="text-gray-500">Cote</p>
+                                <p class="font-semibold text-gray-800">4.2</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Composantes du score</h4>
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-600">Cheval</span>
+                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-blue-600 h-2 rounded-full" style="width: 85%"></div>
+                                    </div>
+                                    <span class="text-xs font-semibold ml-2">85</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-600">Jockey</span>
+                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-purple-600 h-2 rounded-full" style="width: 92%"></div>
+                                    </div>
+                                    <span class="text-xs font-semibold ml-2">92</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-600">Entraîneur</span>
+                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-yellow-500 h-2 rounded-full" style="width: 88%"></div>
+                                    </div>
+                                    <span class="text-xs font-semibold ml-2">88</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-600">Propriétaire</span>
+                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-green-500 h-2 rounded-full" style="width: 90%"></div>
+                                    </div>
+                                    <span class="text-xs font-semibold ml-2">90</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Historique récent</h4>
+                            <div class="flex space-x-2">
+                                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">2e</span>
+                                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">1er</span>
+                                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">1er</span>
+                                <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-1 rounded">3e</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-1 rounded">6e</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Horse 3 -->
+                <div class="horse-card bg-white rounded-xl shadow-md overflow-hidden border-t-4 border-yellow-500">
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-800">SILVER STAR</h3>
+                                <p class="text-gray-600 text-sm">Hongre gris - 6 ans</p>
+                            </div>
+                            <div class="bg-yellow-500 text-white font-bold rounded-full h-12 w-12 flex items-center justify-center text-xl">
+                                82
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-3 mb-4">
+                            <div class="text-sm">
+                                <p class="text-gray-500">Jockey</p>
+                                <p class="font-semibold text-gray-800">O. PESLIER</p>
+                            </div>
+                            <div class="text-sm">
+                                <p class="text-gray-500">Entraîneur</p>
+                                <p class="font-semibold text-gray-800">J-C. ROUGET</p>
+                            </div>
+                            <div class="text-sm">
+                                <p class="text-gray-500">Propriétaire</p>
+                                <p class="font-semibold text-gray-800">AL SHAQAB RACING</p>
+                            </div>
+                            <div class="text-sm">
+                                <p class="text-gray-500">Cote</p>
+                                <p class="font-semibold text-gray-800">5.5</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Composantes du score</h4>
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-600">Cheval</span>
+                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-blue-600 h-2 rounded-full" style="width: 78%"></div>
+                                    </div>
+                                    <span class="text-xs font-semibold ml-2">78</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-600">Jockey</span>
+                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-purple-600 h-2 rounded-full" style="width: 85%"></div>
+                                    </div>
+                                    <span class="text-xs font-semibold ml-2">85</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-600">Entraîneur</span>
+                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-yellow-500 h-2 rounded-full" style="width: 90%"></div>
+                                    </div>
+                                    <span class="text-xs font-semibold ml-2">90</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-xs text-gray-600">Propriétaire</span>
+                                    <div class="w-3/4 bg-gray-200 rounded-full h-2">
+                                        <div class="bg-green-500 h-2 rounded-full" style="width: 80%"></div>
+                                    </div>
+                                    <span class="text-xs font-semibold ml-2">80</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-sm font-semibold text-gray-700 mb-2">Historique récent</h4>
+                            <div class="flex space-x-2">
+                                <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-1 rounded">3e</span>
+                                <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2 py-1 rounded">3e</span>
+                                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">2e</span>
+                                <span class="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">1er</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-semibold px-2 py-1 rounded">4e</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Detailed Stats Charts -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Comparaison des scores</h3>
+                    <canvas id="scoresChart" height="300"></canvas>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Comparaison des performances</h3>
+                    <canvas id="performanceChart" height="300"></canvas>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Data Visualization Section -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+            <div class="lg:col-span-2 bg-white rounded-xl shadow-md p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Tendances de performance</h2>
+                <canvas id="trendsChart" height="250"></canvas>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-md p-6">
+                <h2 class="text-xl font-bold text-gray-800 mb-4">Top Jockeys</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                            <span class="font-bold text-blue-700">1</span>
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="font-semibold">MAXIME GUYON</h3>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="ml-3 font-bold">92</div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                            <span class="font-bold text-blue-700">2</span>
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="font-semibold">CHRISTOPHE SOUMILLON</h3>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="ml-3 font-bold">88</div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                            <span class="font-bold text-blue-700">3</span>
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="font-semibold">OLIVIER PESLIER</h3>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="ml-3 font-bold">85</div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                            <span class="font-bold text-blue-700">4</span>
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="font-semibold">MICKAEL BARZALONA</h3>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="ml-3 font-bold">82</div>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                            <span class="font-bold text-blue-700">5</span>
+                        </div>
+                        <div class="flex-grow">
+                            <h3 class="font-semibold">PIERRE-CHARLES BOUDOT</h3>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="ml-3 font-bold">80</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="gradient-background text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <i class="fas fa-horse-head text-2xl mr-3"></i>
+                        <h2 class="text-xl font-bold">Analyse Hippique</h2>
+                    </div>
+                    <p class="text-sm mt-2">Système d'analyse de performances hippiques</p>
+                </div>
+                
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-blue-200 transition duration-300">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-blue-200 transition duration-300">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                    <a href="#" class="text-white hover:text-blue-200 transition duration-300">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 mt-6 pt-6 text-sm text-center md:text-left">
+                <p>&copy; 2025 Analyse Hippique. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show Analysis Results when Analyze button is clicked
+            document.getElementById('analyze-button').addEventListener('click', function() {
+                document.getElementById('analysis-results').style.display = 'block';
+                // Scroll to results
+                document.getElementById('analysis-results').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+                
+                // Initialize charts
+                initCharts();
+            });
+            
+            // Initialize trend chart on page load
+            initTrendsChart();
+        });
+        
+        function initCharts() {
+            // Scores Comparison Chart
+            const scoresCtx = document.getElementById('scoresChart').getContext('2d');
+            new Chart(scoresCtx, {
+                type: 'bar',
+                data: {
+                    labels: ['KING GEORGE', 'ROYAL EAGLE', 'SILVER STAR', 'FAST TRACK', 'GOLDEN MILE', 'DIAMOND DUST'],
+                    datasets: [{
+                        label: 'Score global',
+                        data: [96, 88, 82, 78, 75, 72],
+                        backgroundColor: [
+                            'rgba(59, 130, 246, 0.8)',
+                            'rgba(59, 130, 246, 0.8)',
+                            'rgba(59, 130, 246, 0.8)',
+                            'rgba(59, 130, 246, 0.8)',
+                            'rgba(59, 130, 246, 0.8)',
+                            'rgba(59, 130, 246, 0.8)'
+                        ],
+                        borderColor: [
+                            'rgb(59, 130, 246)',
+                            'rgb(59, 130, 246)',
+                            'rgb(59, 130, 246)',
+                            'rgb(59, 130, 246)',
+                            'rgb(59, 130, 246)',
+                            'rgb(59, 130, 246)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 100
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            });
+            
+            // Performance Radar Chart
+            const performanceCtx = document.getElementById('performanceChart').getContext('2d');
+            new Chart(performanceCtx, {
+                type: 'radar',
+                data: {
+                    labels: ['Performance Cheval', 'Performance Jockey', 'Performance Entraîneur', 'Performance Propriétaire', 'Adaptation Distance', 'Adaptation Terrain'],
+                    datasets: [
+                        {
+                            label: 'KING GEORGE',
+                            data: [92, 88, 95, 98, 90, 85],
+                            backgroundColor: 'rgba(16, 185, 129, 0.2)',
+                            borderColor: 'rgb(16, 185, 129)',
+                            pointBackgroundColor: 'rgb(16, 185, 129)',
+                            pointBorderColor: '#fff',
+                            pointHoverBackgroundColor: '#fff',
+                            pointHoverBorderColor: 'rgb(16, 185, 129)'
+                        },
+                        {
+                            label: 'ROYAL EAGLE',
+                            data: [85, 92, 88, 90, 88, 90],
+                            backgroundColor: 'rgba(59, 130, 246, 0.2)',
+                            borderColor: 'rgb(59, 130, 246)',
+                            pointBackgroundColor: 'rgb(59, 130, 246)',
+                            pointBorderColor: '#fff',
+                            pointHoverBackgroundColor: '#fff',
+                            pointHoverBorderColor: 'rgb(59, 130, 246)'
+                        },
+                        {
+                            label: 'SILVER STAR',
+                            data: [78, 85, 90, 80, 85, 82],
+                            backgroundColor: 'rgba(245, 158, 11, 0.2)',
+                            borderColor: 'rgb(245, 158, 11)',
+                            pointBackgroundColor: 'rgb(245, 158, 11)',
+                            pointBorderColor: '#fff',
+                            pointHoverBackgroundColor: '#fff',
+                            pointHoverBorderColor: 'rgb(245, 158, 11)'
+                        }
+                    ]
+                },
+                options: {
+                    scales: {
+                        r: {
+                            angleLines: {
+                                display: true
+                            },
+                            suggestedMin: 50,
+                            suggestedMax: 100
+                        }
+                    }
+                }
+            });
+        }
+        
+        function initTrendsChart() {
+            const trendsCtx = document.getElementById('trendsChart').getContext('2d');
+            new Chart(trendsCtx, {
+                type: 'line',
+                data: {
+                    labels: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet'],
+                    datasets: [
+                        {
+                            label: 'Taux de réussite prédictions',
+                            data: [65, 68, 72, 75, 79, 82, 85],
+                            fill: false,
+                            borderColor: 'rgb(59, 130, 246)',
+                            tension: 0.1
+                        },
+                        {
+                            label: 'Score moyen chevaux gagnants',
+                            data: [82, 84, 85, 86, 88, 90, 92],
+                            fill: false,
+                            borderColor: 'rgb(16, 185, 129)',
+                            tension: 0.1
+                        },
+                        {
+                            label: 'Score moyen chevaux perdants',
+                            data: [70, 72, 71, 74, 73, 75, 76],
+                            fill: false,
+                            borderColor: 'rgb(239, 68, 68)',
+                            tension: 0.1
+                        }
+                    ]
+                },
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: false,
+                            min: 60,
+                            max: 100
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
