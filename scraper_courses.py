@@ -150,6 +150,11 @@ class ScraperCoursesFG:
                         value = value_element.text.strip()
                         course_data[key.lower().replace(' ', '_')] = value
                 
+                # Horaire de la course (généralement en haut de la page)
+                horaire_element = course_soup.select_one(".horaire")
+                if horaire_element:
+                    course_data["horaire"] = horaire_element.text.strip()
+                
                 # PDF Programme
                 pdf_link = course_soup.select_one("a[href*='.pdf']")
                 if pdf_link:
@@ -199,6 +204,34 @@ class ScraperCoursesFG:
             json.dump(data, f, ensure_ascii=False, indent=2)
         print(f"💾 Données sauvegardées dans {filepath}")
     
+    def enrich_existing_json_files(self):
+        """Parcourt tous les fichiers JSON de course existants pour les enrichir avec les détails"""
+        files = [f for f in os.listdir(self.output_dir) if f.endswith(".json")]
+        
+        print(f"🔄 Enrichissement de {len(files)} fichiers JSON existants...")
+        
+        for filename in files:
+            filepath = os.path.join(self.output_dir, filename)
+            with open(filepath, "r", encoding="utf-8") as f:
+                data = json.load(f)
+
+            url = data.get("url_source")
+            hippodrome = data.get("hippodrome", filename.replace(".json", ""))
+            
+            if not url:
+                print(f"⚠️ Pas d'URL source dans {filename}, fichier ignoré.")
+                continue
+            
+            print(f"🔍 Re-scraping de {hippodrome} depuis {url}")
+            driver = self.get_driver()
+            try:
+                enriched_data = self.extract_course_details(driver, url, hippodrome)
+                self.save_json(enriched_data, filename)
+            except Exception as e:
+                print(f"❌ Erreur sur {filename}: {e}")
+            finally:
+                driver.quit()
+    
     def run(self, filtre_type="Plat", jours=1):
         """Exécute le scraper complet"""
         print(f"🏇 Début du scraping des courses de {filtre_type} pour les {jours} prochains jours")
@@ -234,6 +267,15 @@ if __name__ == "__main__":
     # Obtenir les variables d'environnement (utile pour GitHub Actions)
     type_course = os.environ.get("TYPE_COURSE", "Plat")
     jours = int(os.environ.get("JOURS", "3"))
+    mode = os.environ.get("MODE", "all")  # "all", "new", "enrich"
     
     scraper = ScraperCoursesFG()
-    scraper.run(filtre_type=type_course, jours=jours)
+    
+    # Mode selon l'environnement ou valeur par défaut
+    if mode == "all" or mode == "new":
+        # Étape 1 : Scraper les nouvelles courses
+        scraper.run(filtre_type=type_course, jours=jours)
+    
+    if mode == "all" or mode == "enrich":
+        # Étape 2 : Enrichir les JSON avec les détails internes
+        scraper.enrich_existing_json_files()
