@@ -38,159 +38,395 @@ CATEGORIES = {
 
 # Headers pour simuler un navigateur
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Accept-Language": "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
     "Cache-Control": "no-cache",
     "Pragma": "no-cache",
-    "Referer": "https://www.google.com/"
+    "Referer": "https://www.france-galop.com/",
+    "sec-ch-ua": '"Not_A Brand";v="8", "Chromium";v="120", "Google Chrome";v="120"',
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": '"Windows"',
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "same-origin",
+    "Sec-Fetch-User": "?1",
+    "Upgrade-Insecure-Requests": "1"
 }
 
 # Dossier pour stocker les données
 DATA_DIR = "data"
+DEBUG_DIR = os.path.join(DATA_DIR, "debug")
 
 def ensure_data_dir():
-    """Crée le dossier de données s'il n'existe pas"""
-    if not os.path.exists(DATA_DIR):
-        os.makedirs(DATA_DIR)
-        logger.info(f"Dossier de données créé: {DATA_DIR}")
+    """Crée les dossiers nécessaires s'ils n'existent pas"""
+    for directory in [DATA_DIR, DEBUG_DIR]:
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+            logger.info(f"Dossier créé: {directory}")
+
+def extract_redirect_url(html_content, base_url="https://www.france-galop.com"):
+    """Extrait l'URL de redirection depuis un script JavaScript"""
+    try:
+        # Chercher le pattern de redirection dans le script JavaScript
+        redirect_match = re.search(r"window\.location\.href\s*=\s*['\"](.*?)['\"]", html_content)
+        if redirect_match:
+            redirect_path = redirect_match.group(1)
+            # Construire l'URL complète si c'est un chemin relatif
+            if redirect_path.startswith('/'):
+                return f"{base_url}{redirect_path}"
+            else:
+                return redirect_path
+    except Exception as e:
+        logger.error(f"Erreur lors de l'extraction de l'URL de redirection: {str(e)}")
+    return None
+
+def download_with_javascript_handling(session, url, category, headers=None):
+    """Télécharge une ressource en gérant les redirections JavaScript"""
+    if headers is None:
+        headers = HEADERS
+    
+    logger.info(f"Tentative de téléchargement depuis {url}")
+    
+    try:
+        # Première requête pour obtenir la page
+        response = session.get(url, headers=headers, timeout=30)
+        response.raise_for_status()
+        
+        content_type = response.headers.get('Content-Type', '')
+        logger.info(f"Content-Type reçu: {content_type}")
+        
+        # Si c'est du HTML et qu'il pourrait contenir une redirection JavaScript
+        if 'text/html' in content_type and 'window.location' in response.text:
+            logger.info("Détection d'une redirection JavaScript")
+            
+            # Sauvegarder le HTML pour diagnostic
+            with open(os.path.join(DEBUG_DIR, f"{category}_redirect.html"), "wb") as f:
+                f.write(response.content)
+            
+            # Extraire l'URL de redirection
+            redirect_url = extract_redirect_url(response.text)
+            if redirect_url:
+                logger.info(f"URL de redirection extraite: {redirect_url}")
+                
+                # Attendre un peu pour simuler un comportement humain
+                time.sleep(2)
+                
+                # Effectuer une nouvelle requête vers l'URL de redirection
+                redirect_headers = headers.copy()
+                redirect_headers['Referer'] = url  # Mettre à jour le Referer
+                
+                logger.info(f"Suivi de la redirection vers: {redirect_url}")
+                redirect_response = session.get(redirect_url, headers=redirect_headers, timeout=30)
+                redirect_response.raise_for_status()
+                
+                # Vérifier le type de contenu de la réponse après redirection
+                redirect_content_type = redirect_response.headers.get('Content-Type', '')
+                logger.info(f"Content-Type après redirection: {redirect_content_type}")
+                
+                # Si c'est encore du HTML et contient une autre redirection, aller plus loin
+                if 'text/html' in redirect_content_type and 'window.location' in redirect_response.text:
+                    logger.info("Détection d'une seconde redirection JavaScript")
+                    
+                    # Sauvegarder le HTML pour diagnostic
+                    with open(os.path.join(DEBUG_DIR, f"{category}_redirect2.html"), "wb") as f:
+                        f.write(redirect_response.content)
+                    
+                    # Extraire la seconde URL de redirection
+                    second_redirect_url = extract_redirect_url(redirect_response.text)
+                    if second_redirect_url:
+                        logger.info(f"Seconde URL de redirection extraite: {second_redirect_url}")
+                        
+                        # Attendre un peu pour simuler un comportement humain
+                        time.sleep(2)
+                        
+                        # Effectuer une nouvelle requête vers la seconde URL de redirection
+                        redirect_headers['Referer'] = redirect_url  # Mettre à jour le Referer
+                        
+                        logger.info(f"Suivi de la seconde redirection vers: {second_redirect_url}")
+                        second_redirect_response = session.get(second_redirect_url, headers=redirect_headers, timeout=30)
+                        second_redirect_response.raise_for_status()
+                        
+                        return second_redirect_response
+                
+                return redirect_response
+        
+        # Si c'est déjà un CSV ou si aucune redirection n'a été trouvée, retourner la réponse originale
+        return response
+        
+    except Exception as e:
+        logger.error(f"Erreur lors du téléchargement avec gestion JavaScript: {str(e)}")
+        import traceback
+        logger.error(traceback.format_exc())
+        return None
+
+def find_download_url(soup, category, base_url):
+    """Cherche l'URL de téléchargement du CSV dans la page"""
+    download_link = None
+    
+    # Méthode 1: Chercher un bouton/lien avec le texte "télécharger" ou "exporter"
+    keywords = ['télécharger', 'telecharger', 'exporter', 'export', 'csv', 'excel', 'download']
+    for link in soup.find_all('a', href=True):
+        link_text = link.text.lower()
+        if any(keyword in link_text for keyword in keywords):
+            download_link = link['href']
+            logger.info(f"Lien de téléchargement trouvé via texte: {download_link}")
+            break
+
+    # Méthode 2: Chercher un bouton avec des classes spécifiques
+    if not download_link:
+        css_selectors = [
+            'a.download', 'a.export', 'a.csv', 
+            'button.download', 'button.export', 'button.csv',
+            'a[download]', 'a[title*="télécharger"]', 'a[title*="export"]'
+        ]
+        for selector in css_selectors:
+            elements = soup.select(selector)
+            for element in elements:
+                if element.name == 'a' and element.has_attr('href'):
+                    download_link = element['href']
+                    logger.info(f"Lien de téléchargement trouvé via sélecteur CSS {selector}: {download_link}")
+                    break
+                elif element.name == 'button' and element.find_parent('a', href=True):
+                    download_link = element.find_parent('a')['href']
+                    logger.info(f"Lien de téléchargement trouvé via parent de bouton: {download_link}")
+                    break
+            if download_link:
+                break
+    
+    # Méthode 3: Chercher des attributs de données spécifiques
+    if not download_link:
+        data_attrs = [
+            {'data-print-chevaux': True}, {'data-export': True}, {'data-csv': True},
+            {'data-download': True}, {'data-action': 'export'}
+        ]
+        for attrs in data_attrs:
+            elements = soup.find_all(attrs=attrs)
+            for element in elements:
+                if 'data-url' in element.attrs:
+                    download_link = element['data-url']
+                    logger.info(f"Lien de téléchargement trouvé via attribut de données: {download_link}")
+                    break
+                elif element.has_attr('href'):
+                    download_link = element['href']
+                    logger.info(f"Lien de téléchargement trouvé via élément avec attributs: {download_link}")
+                    break
+            if download_link:
+                break
+
+    # Méthode 4: Chercher des URLs spécifiques aux fichiers CSV dans les scripts JavaScript
+    if not download_link:
+        script_patterns = [
+            r'["\'](?:https?:)?//[^"\']*export[^"\']*\.csv["\']',
+            r'["\'](?:https?:)?//[^"\']*download[^"\']*\.csv["\']',
+            r'["\'](?:/[^"\']*export[^"\']*\.csv)["\']',
+            r'["\'](?:/[^"\']*download[^"\']*\.csv)["\']',
+            r'["\'](?:/fr/export/csv/[^"\']*)["\']'
+        ]
+        
+        for script in soup.find_all('script'):
+            script_text = script.string if script.string else ""
+            for pattern in script_patterns:
+                matches = re.findall(pattern, script_text)
+                if matches:
+                    # Prendre le premier match
+                    download_link = matches[0].strip('"\'')
+                    logger.info(f"Lien de téléchargement trouvé dans script JS: {download_link}")
+                    break
+            if download_link:
+                break
+    
+    # Si on ne trouve toujours pas, utiliser des URLs probables basées sur la catégorie
+    if not download_link:
+        # Construire différentes formes d'URL possibles
+        possible_paths = [
+            f"/fr/export/csv/{category}",
+            f"/fr/hommes-chevaux/{category}/export/csv",
+            f"/export/{category}.csv",
+            f"/fr/export-classement/{category}"
+        ]
+        download_link = possible_paths[0]  # Prendre la première possibilité
+        logger.info(f"Utilisation d'une URL probable: {download_link}")
+    
+    # Construire l'URL complète si nécessaire
+    if download_link.startswith('http'):
+        return download_link
+    elif download_link.startswith('/'):
+        return f"{base_url}{download_link}"
+    else:
+        return f"{base_url}/{download_link}"
 
 def download_csv(url_base, category):
     """
     Télécharge directement le CSV depuis le bouton de téléchargement
     et le convertit en format JSON
     """
-    logger.info(f"Tentative de téléchargement CSV pour {category} depuis {url_base}")
+    logger.info(f"Début du téléchargement CSV pour {category} depuis {url_base}")
+    
+    # Créer une session pour maintenir les cookies et l'état entre les requêtes
+    session = requests.Session()
     
     try:
-        # Première étape: visiter la page pour obtenir les cookies/session et trouver l'URL de téléchargement
-        session = requests.Session()
+        # Première étape: visiter la page pour obtenir les cookies/session
         response = session.get(url_base, headers=HEADERS, timeout=30)
         response.raise_for_status()
         
         # Analyser la page pour trouver le bouton de téléchargement
         soup = BeautifulSoup(response.text, 'html.parser')
         
-        # Chercher le lien de téléchargement CSV
-        download_link = None
-        
-        # Méthode 1: Chercher un bouton/lien avec le texte "télécharger" ou "exporter"
-        for link in soup.find_all('a', href=True):
-            link_text = link.text.lower()
-            if 'télécharger' in link_text or 'exporter' in link_text or 'csv' in link_text:
-                download_link = link['href']
-                break
-
-        # Méthode 2: Chercher un bouton avec la classe "download" ou similaire
-        if not download_link:
-            download_button = soup.find('button', class_=lambda c: c and ('download' in c.lower() or 'telecharger' in c.lower()))
-            if download_button and download_button.find_parent('a', href=True):
-                download_link = download_button.find_parent('a')['href']
-        
-        # Méthode 3: Chercher des éléments spécifiques au site France Galop
-        if not download_link:
-            download_element = soup.find(attrs={"data-print-chevaux": True})
-            if download_element and 'data-url' in download_element.attrs:
-                download_link = download_element['data-url']
-
-        # Si on ne trouve toujours pas, utiliser un format d'URL probable
-        if not download_link:
-            # Tenter différents formats possibles d'URL
-            possible_paths = [
-                f"/fr/export/csv/{category}",
-                f"/fr/hommes-chevaux/{category}/export/csv",
-                f"/export/{category}.csv",
-                f"/fr/export-classement/{category}"
-            ]
-            
-            for path in possible_paths:
-                test_url = f"https://www.france-galop.com{path}"
-                logger.info(f"Tentative avec URL générée: {test_url}")
-                try:
-                    test_response = session.head(test_url, headers=HEADERS, timeout=10)
-                    if test_response.status_code == 200:
-                        download_link = path
-                        logger.info(f"URL de téléchargement trouvée: {test_url}")
-                        break
-                except Exception as e:
-                    logger.warning(f"URL {test_url} non disponible: {str(e)}")
-        
-        if not download_link:
-            logger.warning(f"Impossible de trouver le lien de téléchargement pour {category}")
-            return None
-        
-        # Construire l'URL complète si nécessaire
-        if download_link.startswith('http'):
-            download_url = download_link
-        else:
-            # Gérer les chemins relatifs
-            if download_link.startswith('/'):
-                download_url = f"https://www.france-galop.com{download_link}"
-            else:
-                download_url = f"{url_base}/{download_link}"
-        
+        # Trouver l'URL de téléchargement
+        download_url = find_download_url(soup, category, "https://www.france-galop.com")
         logger.info(f"URL de téléchargement: {download_url}")
         
-        # Télécharger le fichier CSV
-        csv_response = session.get(download_url, headers=HEADERS, timeout=30)
-        csv_response.raise_for_status()
+        # Ajouter un delai avant la prochaine requête pour simuler un comportement humain
+        time.sleep(2)
         
-        # Vérifier si nous avons bien reçu un CSV (vérification de l'en-tête Content-Type)
+        # Télécharger le fichier CSV en gérant les redirections JavaScript
+        csv_response = download_with_javascript_handling(session, download_url, category)
+        
+        if not csv_response:
+            logger.error(f"Échec du téléchargement pour {category}")
+            return None
+        
+        # Vérifier si nous avons bien reçu un CSV ou du HTML
         content_type = csv_response.headers.get('Content-Type', '')
-        if 'text/csv' in content_type or 'application/csv' in content_type:
-            logger.info(f"Téléchargement réussi: Content-Type: {content_type}")
-        elif 'text/html' in content_type:
-            logger.warning(f"Le serveur a renvoyé du HTML au lieu d'un CSV. Content-Type: {content_type}")
-            # Sauvegarde du HTML pour diagnostic
-            debug_dir = os.path.join(DATA_DIR, "debug")
-            if not os.path.exists(debug_dir):
-                os.makedirs(debug_dir)
-            with open(os.path.join(debug_dir, f"{category}_download_error.html"), "wb") as f:
-                f.write(csv_response.content)
-            logger.info(f"HTML sauvegardé pour diagnostic dans {debug_dir}/{category}_download_error.html")
-            # Continuer quand même - parfois le Content-Type est incorrect mais les données sont bonnes
-        else:
-            logger.warning(f"Type de contenu inattendu: {content_type}")
+        logger.info(f"Type de contenu reçu: {content_type}")
         
+        # Sauvegarder la réponse pour diagnostic
+        with open(os.path.join(DEBUG_DIR, f"{category}_raw_response.txt"), "wb") as f:
+            f.write(csv_response.content)
+            
+        # Tenter de déterminer si c'est un CSV ou du HTML
+        content_start = csv_response.content[:100].decode('utf-8', errors='ignore').strip()
+        logger.info(f"Début du contenu: {content_start[:50]}...")
+        
+        is_html = content_start.startswith('<!DOCTYPE html>') or content_start.startswith('<html')
+        
+        if is_html:
+            logger.warning(f"Le serveur a renvoyé du HTML au lieu d'un CSV")
+            # Sauvegarder le HTML pour diagnostic
+            with open(os.path.join(DEBUG_DIR, f"{category}_download_error.html"), "w", encoding='utf-8') as f:
+                f.write(csv_response.text)
+                
+            # Essayer d'extraire une autre URL de redirection et faire une nouvelle tentative
+            redirect_url = extract_redirect_url(csv_response.text)
+            if redirect_url:
+                logger.info(f"Nouvel essai avec URL extraite: {redirect_url}")
+                time.sleep(2)
+                
+                # Mise à jour du Referer
+                headers_copy = HEADERS.copy()
+                headers_copy['Referer'] = download_url
+                
+                second_attempt = download_with_javascript_handling(session, redirect_url, category, headers_copy)
+                if second_attempt:
+                    csv_response = second_attempt
+                    
+                    # Vérifier à nouveau si c'est du HTML
+                    content_start = csv_response.content[:100].decode('utf-8', errors='ignore').strip()
+                    is_html = content_start.startswith('<!DOCTYPE html>') or content_start.startswith('<html')
+                    
+                    if is_html:
+                        logger.warning("La deuxième tentative a aussi renvoyé du HTML")
+                        with open(os.path.join(DEBUG_DIR, f"{category}_download_error2.html"), "w", encoding='utf-8') as f:
+                            f.write(csv_response.text)
+        
+        # Si nous avons toujours du HTML malgré toutes les tentatives, retourner une erreur
+        if is_html:
+            logger.error(f"Impossible d'obtenir un CSV pour {category}, toutes les tentatives retournent du HTML")
+            return {
+                "metadata": {
+                    "source": url_base,
+                    "download_url": download_url,
+                    "date_extraction": datetime.now().isoformat(),
+                    "category": category,
+                    "erreur": "Le serveur a renvoyé du HTML au lieu d'un CSV"
+                },
+                "resultats": []
+            }
+        
+        # Si nous sommes arrivés ici, nous avons probablement un CSV
         # Détecter l'encodage - tenter UTF-8 d'abord, puis Latin-1 (ISO-8859-1) si ça échoue
-        encoding = 'utf-8'
-        try:
-            csv_content = csv_response.content.decode(encoding)
-        except UnicodeDecodeError:
-            encoding = 'latin-1'
-            csv_content = csv_response.content.decode(encoding)
-            logger.info(f"Utilisation de l'encodage {encoding} pour le décodage du CSV")
+        encodings_to_try = ['utf-8', 'latin-1', 'cp1252']
+        csv_content = None
+        
+        for encoding in encodings_to_try:
+            try:
+                csv_content = csv_response.content.decode(encoding)
+                logger.info(f"Décodage réussi avec l'encodage {encoding}")
+                break
+            except UnicodeDecodeError:
+                logger.warning(f"Échec du décodage avec l'encodage {encoding}")
+        
+        if not csv_content:
+            logger.error(f"Impossible de décoder le contenu avec aucun des encodages essayés")
+            return {
+                "metadata": {
+                    "source": url_base,
+                    "download_url": download_url,
+                    "date_extraction": datetime.now().isoformat(),
+                    "category": category,
+                    "erreur": "Impossible de décoder le contenu du CSV"
+                },
+                "resultats": []
+            }
+        
+        # Sauvegarder le CSV brut pour référence
+        csv_save_path = os.path.join(DATA_DIR, f"{category}.csv")
+        with open(csv_save_path, 'w', encoding='utf-8') as f:
+            f.write(csv_content)
+        logger.info(f"CSV original sauvegardé dans {csv_save_path}")
         
         # Analyser le CSV pour le convertir en JSON
-        csv_lines = csv_content.splitlines()
-        csv_reader = csv.DictReader(csv_lines, delimiter=',')
-        
-        # Extraire les en-têtes
-        headers = csv_reader.fieldnames if csv_reader.fieldnames else []
-        logger.info(f"En-têtes CSV trouvés: {headers}")
-        
-        # Convertir les lignes CSV en structure JSON
+        # Essayons différents délimiteurs
+        delimiters = [',', ';', '\t']
         results = []
-        for row in csv_reader:
-            # Nettoyer les valeurs (supprimer les espaces inutiles, convertir en nombres quand c'est possible)
-            cleaned_row = {}
-            for key, value in row.items():
-                if key is None:  # Ignorer les clés None qui peuvent apparaître avec un CSV mal formé
-                    continue
-                    
-                # Nettoyer la clé et la valeur
-                clean_key = key.strip() if key else f"Column_{len(cleaned_row)}"
-                clean_value = value.strip() if value else ""
+        headers = None
+        
+        for delimiter in delimiters:
+            try:
+                # Réinitialiser le lecteur CSV avec le nouveau délimiteur
+                csv_lines = csv_content.splitlines()
+                csv_reader = csv.DictReader(csv_lines, delimiter=delimiter)
                 
-                # Convertir en nombre si possible
-                if re.match(r'^-?\d+$', clean_value):
-                    cleaned_row[clean_key] = int(clean_value)
-                elif re.match(r'^-?\d+[.,]\d+$', clean_value):
-                    cleaned_row[clean_key] = float(clean_value.replace(',', '.'))
-                else:
-                    cleaned_row[clean_key] = clean_value
-            
-            results.append(cleaned_row)
+                # Extraire les en-têtes
+                headers = csv_reader.fieldnames
+                if not headers:
+                    logger.warning(f"Pas d'en-têtes trouvés avec délimiteur '{delimiter}'")
+                    continue
+                
+                logger.info(f"En-têtes CSV trouvés avec délimiteur '{delimiter}': {headers}")
+                
+                # Convertir les lignes CSV en structure JSON
+                results = []
+                for row in csv_reader:
+                    # Nettoyer les valeurs
+                    cleaned_row = {}
+                    for key, value in row.items():
+                        if key is None:  # Ignorer les clés None
+                            continue
+                            
+                        # Nettoyer la clé et la valeur
+                        clean_key = key.strip() if key else f"Column_{len(cleaned_row)}"
+                        clean_value = value.strip() if value else ""
+                        
+                        # Convertir en nombre si possible
+                        if re.match(r'^-?\d+$', clean_value):
+                            cleaned_row[clean_key] = int(clean_value)
+                        elif re.match(r'^-?\d+[.,]\d+$', clean_value):
+                            cleaned_row[clean_key] = float(clean_value.replace(',', '.'))
+                        else:
+                            cleaned_row[clean_key] = clean_value
+                    
+                    results.append(cleaned_row)
+                
+                # Si nous avons des résultats, nous avons trouvé le bon délimiteur
+                if results:
+                    logger.info(f"CSV analysé avec succès en utilisant le délimiteur '{delimiter}'")
+                    break
+                    
+            except Exception as e:
+                logger.warning(f"Erreur avec délimiteur '{delimiter}': {str(e)}")
         
         # Construire l'objet de réponse
         result_data = {
@@ -199,16 +435,11 @@ def download_csv(url_base, category):
                 "download_url": download_url,
                 "date_extraction": datetime.now().isoformat(),
                 "category": category,
+                "delimiter": delimiter if results else None,
                 "nombre_resultats": len(results)
             },
             "resultats": results
         }
-        
-        # Sauvegarder aussi le CSV original pour référence
-        csv_save_path = os.path.join(DATA_DIR, f"{category}.csv")
-        with open(csv_save_path, 'w', encoding='utf-8') as f:
-            f.write(csv_content)
-        logger.info(f"CSV original sauvegardé dans {csv_save_path}")
         
         logger.info(f"Extraction CSV réussie pour {category}: {len(results)} résultats")
         return result_data
@@ -245,7 +476,7 @@ def main():
     """Fonction principale"""
     logger.info("Démarrage du script d'extraction France Galop")
     
-    # S'assurer que le dossier de données existe
+    # S'assurer que les dossiers nécessaires existent
     ensure_data_dir()
     
     # Vérifier si des catégories spécifiques sont demandées via les arguments
@@ -279,9 +510,15 @@ def main():
                 "count": len(data.get("resultats", [])),
                 "error": data.get("metadata", {}).get("erreur", None)
             }
+        else:
+            results[category] = {
+                "success": False,
+                "count": 0,
+                "error": "Échec du téléchargement"
+            }
         
         # Pause pour éviter de surcharger le serveur
-        time.sleep(2)
+        time.sleep(3)
     
     # Résumé de l'extraction
     logger.info("Résumé de l'extraction:")
@@ -291,7 +528,7 @@ def main():
         error = result.get("error", "")
         logger.info(f"{category}: {status}, {count} résultats" + (f", Erreur: {error}" if error else ""))
     
-    logger.info("Extraction terminée avec succès!")
+    logger.info("Extraction terminée!")
 
 if __name__ == "__main__":
     main()
