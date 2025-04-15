@@ -15,6 +15,15 @@ on:
         description: 'Nombre de jours à extraire'
         required: true
         default: '3'
+      mode:
+        description: 'Mode d''exécution (all, new, enrich)'
+        required: true
+        default: 'all'
+        type: choice
+        options:
+          - all
+          - new
+          - enrich
 
 permissions:
   contents: write
@@ -46,6 +55,7 @@ jobs:
         env:
           TYPE_COURSE: ${{ github.event.inputs.type_course || 'Plat' }}
           JOURS: ${{ github.event.inputs.jours || '3' }}
+          MODE: ${{ github.event.inputs.mode || 'all' }}
       
       - name: Prepare directories for commit
         run: |
