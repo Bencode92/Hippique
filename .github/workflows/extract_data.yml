@@ -1,0 +1,48 @@
+name: France Galop Data Extraction
+
+on:
+  schedule:
+    # Exécution quotidienne à 2h du matin
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    # Permet l'exécution manuelle depuis l'interface GitHub
+    inputs:
+      categories:
+        description: 'Catégories à extraire (séparées par des virgules, laisser vide pour toutes)'
+        required: false
+        default: ''
+
+jobs:
+  extract_data:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4
+      
+      - name: Run extraction script
+        run: python scraper.py ${{ github.event.inputs.categories }}
+      
+      - name: Commit and push if changes
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'actions@github.com'
+          git add data/*.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update data - $(date)" && git push)
+      
+      - name: Archive data as artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: france-galop-data
+          path: data/*.json
+          retention-days: 7
