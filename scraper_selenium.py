@@ -1,0 +1,424 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+"""
+Script d'extraction des données hippiques depuis France Galop
+Utilise Selenium pour supporter le contenu chargé dynamiquement via JavaScript
+"""
+
+import os
+import json
+import sys
+import time
+from datetime import datetime
+import logging
+import re
+import random
+
+# Dépendances externes
+from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
+from selenium.common.exceptions import TimeoutException
+
+# Configuration du logger
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
+
+# Configuration
+CATEGORIES = {
+    "chevaux": {
+        "url": "https://www.france-galop.com/fr/hommes-chevaux/chevaux"
+    },
+    "proprietaires": {
+        "url": "https://www.france-galop.com/fr/hommes-chevaux/proprietaires"
+    },
+    "entraineurs": {
+        "url": "https://www.france-galop.com/fr/hommes-chevaux/entraineurs"
+    },
+    "eleveurs": {
+        "url": "https://www.france-galop.com/fr/hommes-chevaux/eleveurs"
+    },
+    "jockeys": {
+        "url": "https://www.france-galop.com/fr/hommes-chevaux/jockeys"
+    }
+}
+
+# Dossier pour stocker les données
+DATA_DIR = "data"
+DEBUG_DIR = os.path.join(DATA_DIR, "debug")
+
+def ensure_dirs():
+    """Crée les dossiers nécessaires s'ils n'existent pas"""
+    for directory in [DATA_DIR, DEBUG_DIR]:
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+            logger.info(f"Dossier créé: {directory}")
+
+def save_debug_html(html, category, suffix=""):
+    """Sauvegarde le HTML pour diagnostic"""
+    try:
+        if not os.path.exists(DEBUG_DIR):
+            os.makedirs(DEBUG_DIR)
+        
+        filename = os.path.join(DEBUG_DIR, f"{category}{suffix}.html")
+        with open(filename, "w", encoding="utf-8") as f:
+            f.write(html)
+        logger.info(f"HTML sauvegardé pour diagnostic: {filename}")
+    except Exception as e:
+        logger.warning(f"Impossible de sauvegarder le HTML pour diagnostic: {e}")
+
+def get_selenium_driver():
+    """Configure et retourne un driver Selenium Chrome"""
+    options = Options()
+    
+    # Options communes pour headless
+    options.add_argument("--headless=new")  # nouveau mode headless
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+    options.add_argument("--disable-gpu")
+    
+    # Window size
+    options.add_argument("--window-size=1920,1080")
+    
+    # User agent
+    user_agents = [
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Safari/605.1.15",
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    ]
+    options.add_argument(f"user-agent={random.choice(user_agents)}")
+    
+    # Améliorer la performance
+    options.add_argument("--disable-extensions")
+    options.add_argument("--disable-infobars")
+    options.add_argument("--disable-notifications")
+    
+    # Configurer le service
+    service = Service(ChromeDriverManager().install())
+    
+    # Créer et retourner le driver
+    driver = webdriver.Chrome(service=service, options=options)
+    
+    return driver
+
+def extract_data_with_selenium(url, category):
+    """Extrait les données en utilisant Selenium pour exécuter le JavaScript"""
+    logger.info(f"Extraction des données pour {category} depuis {url}")
+    
+    driver = None
+    try:
+        # Initialiser Selenium
+        driver = get_selenium_driver()
+        logger.info(f"Ouverture de la page {url}")
+        driver.get(url)
+        
+        # Attendre que la page charge complètement
+        time.sleep(3)  # Attendez d'abord un temps fixe
+        
+        # Tenter d'attendre que le tableau soit présent (max 10 secondes)
+        try:
+            WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, "table[role='grid'], table.tablesorter"))
+            )
+            logger.info(f"Tableau détecté pour {category}")
+        except TimeoutException:
+            logger.warning(f"Timeout en attendant le tableau pour {category}")
+        
+        # Prendre le HTML complet de la page
+        html = driver.page_source
+        
+        # Sauvegarder le HTML pour debug
+        save_debug_html(html, category, "_selenium")
+        
+        # Analyser le HTML
+        soup = BeautifulSoup(html, 'html.parser')
+        
+        # Trouver le tableau
+        table = find_table(soup, category)
+        
+        if not table:
+            logger.error(f"Aucun tableau trouvé pour {category} même après utilisation de Selenium")
+            return {
+                "metadata": {
+                    "source": url,
+                    "date_extraction": datetime.now().isoformat(),
+                    "category": category,
+                    "erreur": "Aucun tableau trouvé avec Selenium"
+                },
+                "resultats": []
+            }
+        
+        # Extraire les données du tableau
+        headers = extract_headers(table)
+        rows = extract_rows(table, headers)
+        
+        # Créer l'objet de données
+        data = {
+            "metadata": {
+                "source": url,
+                "date_extraction": datetime.now().isoformat(),
+                "category": category,
+                "nombre_resultats": len(rows)
+            },
+            "resultats": rows
+        }
+        
+        logger.info(f"Extraction réussie pour {category}: {len(rows)} résultats")
+        return data
+        
+    except Exception as e:
+        logger.error(f"Erreur lors de l'extraction pour {category}: {str(e)}")
+        import traceback
+        logger.error(traceback.format_exc())
+        
+        return {
+            "metadata": {
+                "source": url,
+                "date_extraction": datetime.now().isoformat(),
+                "category": category,
+                "erreur": str(e)
+            },
+            "resultats": []
+        }
+    
+    finally:
+        # Fermer le driver Selenium
+        if driver:
+            driver.quit()
+            logger.info("Driver Selenium fermé")
+
+def find_table(soup, category):
+    """Trouve le tableau dans la page"""
+    # Stratégie 1: Chercher table avec role=grid (plus spécifique au site France Galop)
+    table = soup.find("table", {"role": "grid"})
+    if table:
+        logger.info(f"Table trouvée via role='grid'")
+        return table
+    
+    # Stratégie 2: Chercher table avec classe contenant tablesorter
+    table = soup.find("table", class_=lambda c: c and "tablesorter" in c)
+    if table:
+        logger.info(f"Table trouvée via classe 'tablesorter'")
+        return table
+    
+    # Stratégie 3: Chercher dans div.classement
+    div_classement = soup.find("div", class_=lambda c: c and "classement" in c.lower())
+    if div_classement:
+        table = div_classement.find("table")
+        if table:
+            logger.info(f"Table trouvée via div.classement")
+            return table
+    
+    # Stratégie 4: Chercher n'importe quelle table
+    tables = soup.find_all("table")
+    if tables:
+        # Prendre la table avec le plus de lignes
+        best_table = max(tables, key=lambda t: len(t.find_all("tr")))
+        logger.info(f"Table trouvée (table avec le plus de lignes)")
+        return best_table
+    
+    logger.warning(f"Aucun tableau trouvé pour {category}")
+    return None
+
+def extract_headers(table):
+    """Extrait les en-têtes d'un tableau"""
+    headers = []
+    
+    # Chercher les en-têtes dans <thead>
+    thead = table.find("thead")
+    if thead:
+        for th in thead.find_all("th"):
+            header = None
+            
+            # Essayer d'abord les attributs data-*
+            for attr in ["data-label", "aria-label"]:
+                if th.has_attr(attr) and th[attr].strip():
+                    header = th[attr].strip()
+                    break
+            
+            # Si pas trouvé, utiliser le texte
+            if not header:
+                header = th.text.strip()
+            
+            # Si toujours pas d'en-tête, générer un nom
+            if not header:
+                header = f"Column_{len(headers)+1}"
+            
+            headers.append(header)
+    
+    # Si pas de <thead>, prendre la première ligne
+    if not headers:
+        first_row = table.find("tr")
+        if first_row:
+            for cell in first_row.find_all(["th", "td"]):
+                header = cell.text.strip()
+                if not header:
+                    header = f"Column_{len(headers)+1}"
+                headers.append(header)
+    
+    # Si toujours pas d'en-têtes, générer des en-têtes génériques
+    if not headers:
+        # Trouver le nombre maximum de cellules dans une ligne
+        max_cells = 0
+        for row in table.find_all("tr"):
+            cells_count = len(row.find_all(["td", "th"]))
+            max_cells = max(max_cells, cells_count)
+        
+        headers = [f"Column_{i+1}" for i in range(max_cells)]
+    
+    logger.info(f"En-têtes extraits: {headers}")
+    return headers
+
+def extract_rows(table, headers):
+    """Extrait les données des lignes du tableau"""
+    results = []
+    
+    # Trouver les lignes de données (dans tbody ou toutes sauf la première)
+    tbody = table.find("tbody")
+    if tbody:
+        rows = tbody.find_all("tr")
+    else:
+        all_rows = table.find_all("tr")
+        rows = all_rows[1:] if len(all_rows) > 1 else all_rows
+    
+    # Extraire les données de chaque ligne
+    for row in rows:
+        cells = row.find_all(["td", "th"])
+        
+        # Ignorer les lignes vides ou trop courtes
+        if len(cells) < 2:
+            continue
+        
+        row_data = {}
+        
+        # Extraire les données de chaque cellule
+        for idx, cell in enumerate(cells):
+            if idx >= len(headers):
+                continue
+                
+            # Obtenir la valeur
+            value = None
+            
+            # Essayer d'abord les attributs data-*
+            for attr in ["data-text", "data-value"]:
+                if cell.has_attr(attr) and cell[attr].strip():
+                    value = cell[attr].strip()
+                    break
+            
+            # Si pas trouvé, utiliser le texte
+            if value is None:
+                value = cell.text.strip()
+            
+            # Ignorer les cellules vides
+            if not value:
+                continue
+            
+            # Convertir en nombre si possible
+            if re.match(r'^[\d\s.,]+$', value):
+                try:
+                    # Nettoyer et convertir
+                    clean_value = value.replace(' ', '').replace(',', '.')
+                    if '.' in clean_value:
+                        value = float(clean_value)
+                    else:
+                        value = int(clean_value)
+                except (ValueError, TypeError):
+                    pass
+            
+            # Stocker la valeur
+            row_data[headers[idx]] = value
+            
+            # Capturer aussi l'URL si présente
+            link = cell.find("a")
+            if link and link.has_attr("href"):
+                url = link["href"]
+                
+                # Rendre l'URL absolue si nécessaire
+                if not url.startswith("http"):
+                    url = f"https://www.france-galop.com{url}" if not url.startswith("/") else f"https://www.france-galop.com{url}"
+                
+                row_data[f"{headers[idx]}_url"] = url
+        
+        # Ajouter la ligne aux résultats si non vide
+        if row_data:
+            results.append(row_data)
+    
+    return results
+
+def save_to_json(data, category):
+    """Sauvegarde les données dans un fichier JSON"""
+    filename = os.path.join(DATA_DIR, f"{category}.json")
+    
+    try:
+        with open(filename, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+        
+        logger.info(f"Données sauvegardées dans {filename}")
+        return True
+    except Exception as e:
+        logger.error(f"Erreur lors de la sauvegarde dans {filename}: {str(e)}")
+        return False
+
+def main():
+    """Fonction principale"""
+    logger.info("Démarrage du script d'extraction France Galop avec Selenium")
+    
+    # S'assurer que les dossiers existent
+    ensure_dirs()
+    
+    # Vérifier si des catégories spécifiques sont demandées via les arguments
+    selected_categories = []
+    if len(sys.argv) > 1:
+        arg_categories = sys.argv[1].split(',')
+        selected_categories = [cat.strip() for cat in arg_categories if cat.strip() in CATEGORIES]
+    
+    # Si aucune catégorie spécifique n'est demandée, traiter toutes les catégories
+    if not selected_categories:
+        selected_categories = list(CATEGORIES.keys())
+    
+    logger.info(f"Catégories à extraire: {', '.join(selected_categories)}")
+    
+    # Résultats globaux
+    results = {}
+    
+    # Parcourir chaque catégorie sélectionnée
+    for category in selected_categories:
+        config = CATEGORIES[category]
+        url = config["url"]
+        
+        # Extraction des données avec Selenium
+        data = extract_data_with_selenium(url, category)
+        
+        # Sauvegarde des données
+        if data:
+            success = save_to_json(data, category)
+            results[category] = {
+                "success": success,
+                "count": len(data.get("resultats", [])),
+                "error": data.get("metadata", {}).get("erreur", None)
+            }
+        
+        # Pause pour éviter de surcharger le serveur
+        time.sleep(2)
+    
+    # Résumé de l'extraction
+    logger.info("Résumé de l'extraction:")
+    for category, result in results.items():
+        status = "✅ Succès" if result["success"] and not result.get("error") else "❌ Échec"
+        count = result["count"]
+        error = result.get("error", "")
+        logger.info(f"{category}: {status}, {count} résultats" + (f", Erreur: {error}" if error else ""))
+    
+    logger.info("Extraction terminée!")
+
+if __name__ == "__main__":
+    main()
