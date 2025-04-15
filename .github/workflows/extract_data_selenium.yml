@@ -11,6 +11,10 @@ on:
         description: 'Catégories à extraire (séparées par des virgules, laisser vide pour toutes)'
         required: false
         default: ''
+      max_clicks:
+        description: 'Nombre maximum de clics sur le bouton "Plus" (laisser vide pour aucune limite)'
+        required: false
+        default: ''
 
 # Définition explicite des permissions
 permissions:
@@ -37,8 +41,26 @@ jobs:
       - name: Set up Chrome
         uses: browser-actions/setup-chrome@latest
         
+      - name: Prepare command parameters
+        id: params
+        run: |
+          CATEGORIES="${{ github.event.inputs.categories }}"
+          MAX_CLICKS="${{ github.event.inputs.max_clicks }}"
+          
+          CMD_ARGS=""
+          
+          if [ ! -z "$CATEGORIES" ]; then
+            CMD_ARGS="$CATEGORIES"
+          fi
+          
+          if [ ! -z "$MAX_CLICKS" ]; then
+            CMD_ARGS="$CMD_ARGS --max-clicks $MAX_CLICKS"
+          fi
+          
+          echo "cmd_args=$CMD_ARGS" >> $GITHUB_OUTPUT
+      
       - name: Run Selenium extraction script
-        run: python scraper_selenium.py ${{ github.event.inputs.categories }}
+        run: python scraper_selenium.py ${{ steps.params.outputs.cmd_args }}
       
       - name: Commit and push if changes
         run: |
