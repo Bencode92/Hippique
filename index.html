@@ -9,12 +9,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Holographic Elements -->
+  <div class="hologram-container">
+    <div class="hologram horse" style="top: 15%; left: 5%; animation-duration: 25s;"></div>
+    <div class="hologram horse" style="top: 70%; left: 80%; animation-duration: 20s; animation-delay: 2s;"></div>
+    <div class="hologram track" style="top: 30%; left: 20%; animation-duration: 35s;"></div>
+    <div class="hologram track" style="top: 60%; left: 50%; animation-duration: 40s; animation-delay: 5s;"></div>
+    <div class="hologram horse-silhouette" style="top: 45%; left: 75%; animation-duration: 30s;"></div>
+    <div class="hologram horseshoe" style="top: 20%; left: 85%; animation-duration: 15s;"></div>
+    <div class="hologram horseshoe" style="top: 75%; left: 15%; animation-duration: 18s; animation-delay: 3s;"></div>
+  </div>
+
   <!-- Header -->
   <header>
     <div class="container">
       <div class="header-content">
         <a href="#" class="logo">
-          <i class="fas fa-horse-head"></i> ANALYSE HIPPIQUE
+          <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M80 35C77 25 70 20 60 20C50 20 45 25 40 30C35 35 30 40 20 42C10 44 5 50 5 60C5 70 10 75 20 75C30 75 40 70 45 65C50 60 55 55 60 55C65 55 70 60 70 65C70 70 65 75 60 75" stroke="#e6d58f" stroke-width="4"/>
+            <path d="M60 75C55 80 50 85 40 85C30 85 25 80 25 75" stroke="#e6d58f" stroke-width="4"/>
+            <path d="M80 35C85 40 90 45 95 55" stroke="#e6d58f" stroke-width="4"/>
+          </svg>
+          ANALYSE HIPPIQUE
         </a>
         <div class="search-bar">
           <input type="text" placeholder="Rechercher un cheval, jockey..." id="searchInput" onkeyup="searchFilter()">
