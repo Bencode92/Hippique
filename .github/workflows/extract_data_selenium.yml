@@ -1,0 +1,59 @@
+name: France Galop Selenium Extraction
+
+on:
+  schedule:
+    # Exécution quotidienne à 4h du matin
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+    # Permet l'exécution manuelle depuis l'interface GitHub
+    inputs:
+      categories:
+        description: 'Catégories à extraire (séparées par des virgules, laisser vide pour toutes)'
+        required: false
+        default: ''
+
+# Définition explicite des permissions
+permissions:
+  contents: write
+
+jobs:
+  extract_data:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 selenium webdriver-manager
+      
+      - name: Set up Chrome
+        uses: browser-actions/setup-chrome@latest
+        
+      - name: Run Selenium extraction script
+        run: python scraper_selenium.py ${{ github.event.inputs.categories }}
+      
+      - name: Commit and push if changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # Ajouter les fichiers JSON
+          git add data/*.json
+          
+          # Vérifier s'il y a des changements à committer
+          if git diff --cached --quiet; then
+            echo "Aucun changement détecté dans les données"
+          else
+            git commit -m "Update data (Selenium method) - $(date)"
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
