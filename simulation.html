@@ -431,20 +431,13 @@
         }
         
         .strategy-toggle-container .toggle-description {
-            font-size: 0.9rem;
-            color: var(--light-gold);
-            margin-left: 10px;
-            transition: all 0.3s ease;
-        }
-        
-        body.ev-mode .strategy-toggle-container .toggle-description {
-            color: #e6f2ff;
+            display: none; /* Masque les descriptions */
         }
         
         .strategy-toggle-container .toggle-label {
             position: relative;
             display: inline-block;
-            width: 80px;
+            width: 180px;
             height: 34px;
             margin: 0 15px;
         }
@@ -488,7 +481,7 @@
         }
         
         .strategy-toggle-container input:checked + .slider:before {
-            transform: translateX(45px);
+            transform: translateX(145px);
             background-color: #1E90FF; /* Bleu royal */
         }
         
@@ -517,20 +510,46 @@
             font-size: 0.8rem;
             position: absolute;
             top: 50%;
-            left: 5px;
+            left: 55px;
             transform: translateY(-50%);
             pointer-events: none;
+            width: 80%;
         }
         
         .strategy-icons span {
             opacity: 0.7;
             transition: all 0.3s ease;
+            color: white;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        
+        .strategy-icons span:first-child {
+            margin-left: 0;
+        }
+        
+        .strategy-icons span:last-child {
+            margin-right: 0;
         }
         
         .strategy-toggle-container input:not(:checked) ~ .toggle-label .strategy-icons span:first-child,
         .strategy-toggle-container input:checked ~ .toggle-label .strategy-icons span:last-child {
             opacity: 1;
             font-weight: bold;
+            font-size: 1rem;
+        }
+        
+        /* Onglets dorés */
+        .main-nav li a {
+            color: var(--gold) !important;
+        }
+        
+        .main-nav li.active {
+            border-bottom-color: var(--gold) !important;
+        }
+        
+        .main-nav li:hover {
+            background-color: rgba(233, 209, 140, 0.1) !important;
         }
         
         @media (max-width: 768px) {
@@ -591,21 +610,18 @@
                 <div class="strategy-toggle-container">
                     <label for="strategyToggle">
                         <span class="toggle-title">🎯 Dutch Betting</span>
-                        <span class="toggle-description">Gain identique pour tous les chevaux</span>
                     </label>
                     
                     <label class="toggle-label">
                         <input type="checkbox" id="strategyToggle">
                         <span class="slider"></span>
                         <div class="strategy-icons">
-                            <span>D</span>
                             <span>EV</span>
                         </div>
                     </label>
                     
                     <label for="strategyToggle">
                         <span class="toggle-title">💰 Optimisation EV</span>
-                        <span class="toggle-description">Maximise le gain moyen attendu</span>
                     </label>
                 </div>
                 
