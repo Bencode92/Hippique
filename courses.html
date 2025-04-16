@@ -602,29 +602,89 @@
             // Fonction pour charger tous les fichiers JSON des courses
             async function loadAllCourses() {
                 try {
-                    // Liste de tous les fichiers JSON dans le dossier /data/courses
-                    const courseFiles = [
-                        '2025-04-15_albany.json',
-                        '2025-04-15_arg.palermo.json',
-                        '2025-04-15_concepcion.json',
-                        '2025-04-15_evreux.json',
-                        '2025-04-15_fairyhouse.json',
-                        '2025-04-15_fougeres.json',
-                        '2025-04-15_gulfstream_park.json',
-                        '2025-04-15_happy_valley.json',
-                        '2025-04-15_hoppegarten.json',
-                        '2025-04-15_hyeres.json',
-                        '2025-04-15_la_martinique.json',
-                        '2025-04-15_langon-libourne.json',
-                        '2025-04-15_lion_d\'angers.json',
-                        '2025-04-15_loudeac.json',
-                        '2025-04-15_lyon_parilly.json',
-                        '2025-04-15_machecoul.json',
-                        '2025-04-15_maronas.json',
-                        '2025-04-15_montilucon.json',
-                        '2025-04-15_munich-riem.json',
-                        '2025-04-15_newcastle.json'
-                    ];
+                    // Obtenir la date du jour au format YYYY-MM-DD
+                    const today = new Date();
+                    const dateStr = today.toISOString().split('T')[0]; // Format YYYY-MM-DD
+                    
+                    // Pour les tests, on utilise une date fixe (à retirer en production)
+                    const testDateStr = "2025-04-16";  // Date fixe pour les tests
+                    const currentDateStr = testDateStr; // Utiliser la date de test
+                    
+                    console.log(`Chargement des courses pour la date: ${currentDateStr}`);
+                    
+                    // Lister tous les fichiers JSON dans le dossier /data/courses qui commencent par la date du jour
+                    const courseFiles = [];
+                    
+                    // Essayer d'obtenir la liste des fichiers disponibles
+                    try {
+                        const listResponse = await fetch(`${basePath}/data/courses/index.txt`).catch(() => null);
+                        
+                        if (listResponse && listResponse.ok) {
+                            // Si on a un index des fichiers, l'utiliser
+                            const fileList = await listResponse.text();
+                            const allFiles = fileList.split('\n').filter(f => f.trim() !== '');
+                            
+                            // Filtrer les fichiers qui commencent par la date recherchée
+                            const todayFiles = allFiles.filter(file => file.startsWith(currentDateStr));
+                            todayFiles.forEach(file => courseFiles.push(file));
+                        } else {
+                            // Si pas d'index, on utilise une liste prédéfinie
+                            const possibleFiles = [
+                                `${currentDateStr}_happy_valley.json`,
+                                `${currentDateStr}_lyon_parilly.json`,
+                                `${currentDateStr}_newmarket.json`,
+                                `${currentDateStr}_plus.json`,
+                                `${currentDateStr}_reunion_ew1mwlu3.json`,
+                                `${currentDateStr}_reunion_lzlhrwdj.json`,
+                                `${currentDateStr}_reunion_nmo0chn5.json`,
+                                `${currentDateStr}_reunion_v0xot0zq.json`,
+                                `${currentDateStr}_reunion_vjnqtc9l.json`,
+                                `${currentDateStr}_reunion_ykfyqtdz.json`,
+                                `${currentDateStr}_san_isidro.json`,
+                                `${currentDateStr}_valparaiso.json`
+                            ];
+                            
+                            // Vérifier chaque fichier
+                            for (const file of possibleFiles) {
+                                try {
+                                    const checkResponse = await fetch(`${basePath}/data/courses/${file}`, {
+                                        method: 'HEAD'
+                                    });
+                                    if (checkResponse.ok) {
+                                        courseFiles.push(file);
+                                    }
+                                } catch (e) {
+                                    // Ignorer les erreurs pour les fichiers qui n'existent pas
+                                }
+                            }
+                        }
+                    } catch (e) {
+                        console.warn("Erreur lors de l'obtention de la liste des fichiers:", e);
+                        // Utiliser une liste prédéfinie en cas d'erreur
+                        const defaultFiles = [
+                            `${currentDateStr}_happy_valley.json`,
+                            `${currentDateStr}_lyon_parilly.json`,
+                            `${currentDateStr}_newmarket.json`,
+                            `${currentDateStr}_plus.json`,
+                            `${currentDateStr}_reunion_ew1mwlu3.json`,
+                            `${currentDateStr}_reunion_lzlhrwdj.json`,
+                            `${currentDateStr}_reunion_nmo0chn5.json`,
+                            `${currentDateStr}_reunion_v0xot0zq.json`,
+                            `${currentDateStr}_reunion_vjnqtc9l.json`,
+                            `${currentDateStr}_reunion_ykfyqtdz.json`,
+                            `${currentDateStr}_san_isidro.json`,
+                            `${currentDateStr}_valparaiso.json`
+                        ];
+                        defaultFiles.forEach(file => courseFiles.push(file));
+                    }
+                    
+                    console.log(`Fichiers trouvés pour ${currentDateStr}:`, courseFiles);
+                    
+                    if (courseFiles.length === 0) {
+                        console.warn("Aucun fichier trouvé pour la date:", currentDateStr);
+                        showError(`Aucune course disponible pour le ${currentDateStr.split('-').reverse().join('/')}`);
+                        return;
+                    }
                     
                     // Charger tous les fichiers en parallèle
                     const promises = courseFiles.map(file => 
@@ -650,6 +710,13 @@
                     results
                         .filter(data => data !== null)
                         .forEach(data => {
+                            // Vérifier si c'est une réunion de type "plat"
+                            const typeReunion = data.type_reunion || "";
+                            if (typeReunion && typeReunion.toLowerCase() !== "plat") {
+                                console.log(`Ignoré: Réunion de type ${typeReunion} à ${data.hippodrome || "inconnu"}`);
+                                return;
+                            }
+                            
                             // Extraire l'hippodrome et la date
                             const hippodrome = data.hippodrome || "Inconnu";
                             const dateStr = data.date_extraction || "";
@@ -667,16 +734,38 @@
                             
                             // Pour chaque course dans ce fichier
                             (data.courses || []).forEach(course => {
-                                // Ne traiter que les courses qui ont des participants
-                                if (course.participants && Array.isArray(course.participants) && course.participants.length > 0) {
-                                    processedCourses.push({
-                                        hippodrome: hippodrome,
-                                        date: formattedDate,
-                                        nom: course.nom || "Course sans nom",
-                                        url: course.url || "",
-                                        participants: course.participants || []
-                                    });
+                                // Vérifier si c'est une course de type "plat"
+                                const typeCourse = course.type || "";
+                                if (typeCourse && typeCourse.toLowerCase() !== "plat") {
+                                    console.log(`Ignoré: Course de type ${typeCourse}: ${course.nom || "sans nom"}`);
+                                    return;
                                 }
+                                
+                                // Vérifier s'il y a des participants
+                                if (!course.participants || !Array.isArray(course.participants) || course.participants.length === 0) {
+                                    console.log(`Ignoré: Course sans participants: ${course.nom || "sans nom"}`);
+                                    return;
+                                }
+                                
+                                // Vérifier si cette course n'est pas déjà dans les résultats (éviter les doublons)
+                                const isDuplicate = processedCourses.some(existingCourse => 
+                                    existingCourse.nom === (course.nom || "Course sans nom") && 
+                                    existingCourse.hippodrome === hippodrome
+                                );
+                                
+                                if (isDuplicate) {
+                                    console.log(`Ignoré: Doublon de course: ${course.nom || "sans nom"} à ${hippodrome}`);
+                                    return;
+                                }
+                                
+                                // Ajouter la course aux résultats
+                                processedCourses.push({
+                                    hippodrome: hippodrome,
+                                    date: formattedDate,
+                                    nom: course.nom || "Course sans nom",
+                                    url: course.url || "",
+                                    participants: course.participants || []
+                                });
                             });
                         });
                     
@@ -698,6 +787,10 @@
                     // Mettre à jour la date si disponible
                     if (allCourses.length > 0 && allCourses[0].date) {
                         lastUpdateEl.textContent = allCourses[0].date;
+                    } else {
+                        // Afficher la date du jour si pas de date dans les courses
+                        const todayFormatted = today.toLocaleDateString('fr-FR');
+                        lastUpdateEl.textContent = todayFormatted;
                     }
                     
                 } catch (error) {
