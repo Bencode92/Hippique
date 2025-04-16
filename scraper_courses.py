@@ -324,12 +324,23 @@ class ScraperCoursesFG:
                                 
                                 course_data["participants"].append(participant)
                     
-                    courses_data["courses"].append(course_data)
+                    # MODIFICATION: Ne garder que les courses avec des participants réels
+                    if course_data.get("participants") and len(course_data["participants"]) >= 2 and \
+                       any(p.get("cheval") or p.get("n") or p.get("n°") or p.get("jockey") or p.get("poids") for p in course_data["participants"]):
+                        courses_data["courses"].append(course_data)
+                        print(f"✅ Course ajoutée avec {len(course_data['participants'])} participants: {course_name}")
+                    else:
+                        print(f"⚠️ Course ignorée car trop peu de données: {course_name}")
                     
                 except Exception as e:
                     print(f"❌ Erreur lors du traitement de la course {course_name}: {str(e)}")
                     traceback.print_exc()
                     # Continuer avec la course suivante malgré l'erreur
+            
+            # MODIFICATION: Marquer si le fichier est vide
+            if not courses_data["courses"]:
+                print(f"⚠️ Aucune course valide trouvée pour {hippodrome}, le fichier sera vide")
+                courses_data["empty"] = True
                 
             return courses_data
             
@@ -397,6 +408,12 @@ class ScraperCoursesFG:
                 
                 # Sauvegarder les données
                 self.save_json(course_data, filename)
+                
+                # MODIFICATION: Supprimer les fichiers vides
+                if not course_data.get("courses"):
+                    filepath = os.path.join(self.output_dir, filename)
+                    print(f"🗑️ Suppression du fichier JSON vide pour {course['hippodrome']}")
+                    os.remove(filepath)
             
             print(f"🎉 Scraping terminé! {len(course_links)} hippodromes traités.")
             
@@ -425,6 +442,12 @@ class ScraperCoursesFG:
             
             # Sauvegarder les données
             self.save_json(course_data, filename)
+            
+            # MODIFICATION: Supprimer si vide
+            if not course_data.get("courses"):
+                filepath = os.path.join(self.output_dir, filename)
+                print(f"🗑️ Suppression du fichier JSON vide pour le scraping direct")
+                os.remove(filepath)
             
             print(f"✅ Scraping direct terminé pour {url}")
             
