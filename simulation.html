@@ -7,6 +7,66 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
+        :root {
+            --dark-teal: #0f2a28;
+            --medium-teal: #163e3c;
+            --light-teal: #1a514e;
+            --gold: #e9d18c;
+            --light-gold: #f5e9c9;
+            --accent: #22c7b8;
+            
+            /* Couleurs pour le mode EV */
+            --ev-dark: #0a1a35;
+            --ev-medium: #15294e;
+            --ev-light: #1e3a70;
+            --ev-accent: #3498db;
+            --ev-highlight: #5dade2;
+        }
+        
+        body.ev-mode {
+            background-color: var(--ev-dark);
+        }
+        
+        body.ev-mode .app-container {
+            background-color: var(--ev-dark);
+        }
+        
+        body.ev-mode .section-container {
+            background-color: rgba(20, 40, 80, 0.5);
+            border-color: rgba(84, 153, 199, 0.2);
+        }
+        
+        body.ev-mode .sim-form {
+            background-color: rgba(30, 58, 112, 0.5);
+            border-color: rgba(84, 153, 199, 0.2);
+        }
+        
+        body.ev-mode .help-text {
+            border-left-color: var(--ev-accent);
+        }
+        
+        body.ev-mode .help-text h4 {
+            color: var(--ev-highlight);
+        }
+        
+        body.ev-mode .section-container h2 {
+            color: var(--ev-highlight);
+        }
+        
+        body.ev-mode .sim-form h3 {
+            color: var(--ev-highlight);
+        }
+        
+        body.ev-mode .action-btn.primary {
+            background: linear-gradient(to right, var(--ev-accent), #2980b9);
+            color: white;
+        }
+        
+        body.ev-mode .action-btn.primary:hover {
+            background: linear-gradient(to right, #2980b9, var(--ev-accent));
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+        
         .sim-form {
             background-color: rgba(22, 62, 60, 0.5);
             border: 1px solid rgba(233, 209, 140, 0.2);
@@ -38,6 +98,13 @@
             border: 1px solid rgba(233, 209, 140, 0.3);
             border-radius: 4px;
             color: var(--light-gold);
+        }
+        
+        body.ev-mode .input-group input, 
+        body.ev-mode .input-group select {
+            background-color: rgba(10, 30, 60, 0.5);
+            border-color: rgba(84, 153, 199, 0.3);
+            color: #e6f2ff;
         }
         
         .input-group input[type="number"] {
@@ -76,6 +143,11 @@
             font-weight: bold;
         }
         
+        body.ev-mode .horse-number {
+            background-color: var(--ev-accent);
+            color: white;
+        }
+        
         .horse-entry input {
             flex: 1;
         }
@@ -109,6 +181,12 @@
             border: 1px solid rgba(233, 209, 140, 0.3);
         }
         
+        body.ev-mode .action-btn.secondary {
+            background-color: rgba(84, 153, 199, 0.1);
+            color: #e6f2ff;
+            border-color: rgba(84, 153, 199, 0.3);
+        }
+        
         .action-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -123,16 +201,29 @@
             display: none;
         }
         
+        body.ev-mode .result-container {
+            background-color: rgba(30, 58, 112, 0.5);
+            border-color: rgba(84, 153, 199, 0.2);
+        }
+        
         .result-container h3 {
             color: var(--gold);
             margin-bottom: 1rem;
             font-weight: 400;
         }
         
+        body.ev-mode .result-container h3 {
+            color: var(--ev-highlight);
+        }
+        
         .result-header {
             margin-bottom: 1rem;
             padding-bottom: 0.5rem;
             border-bottom: 1px solid rgba(233, 209, 140, 0.2);
+        }
+        
+        body.ev-mode .result-header {
+            border-bottom-color: rgba(84, 153, 199, 0.2);
         }
         
         .result-summary {
@@ -150,10 +241,18 @@
             min-width: 200px;
         }
         
+        body.ev-mode .result-item {
+            background-color: rgba(10, 30, 60, 0.5);
+        }
+        
         .result-item .label {
             font-size: 0.9rem;
             color: var(--light-gold);
             margin-bottom: 0.5rem;
+        }
+        
+        body.ev-mode .result-item .label {
+            color: #e6f2ff;
         }
         
         .result-item .value {
@@ -161,8 +260,16 @@
             color: var(--gold);
         }
         
+        body.ev-mode .result-item .value {
+            color: var(--ev-highlight);
+        }
+        
         .result-item .value.positive {
             color: #22c7b8;
+        }
+        
+        body.ev-mode .result-item .value.positive {
+            color: #4fc3f7;
         }
         
         .result-item .value.negative {
@@ -181,17 +288,34 @@
             border-bottom: 1px solid rgba(233, 209, 140, 0.1);
         }
         
+        body.ev-mode .bets-table th, 
+        body.ev-mode .bets-table td {
+            border-bottom-color: rgba(84, 153, 199, 0.1);
+        }
+        
         .bets-table th {
             color: var(--gold);
             font-weight: 400;
+        }
+        
+        body.ev-mode .bets-table th {
+            color: var(--ev-highlight);
         }
         
         .bets-table td {
             color: var(--light-gold);
         }
         
+        body.ev-mode .bets-table td {
+            color: #e6f2ff;
+        }
+        
         .bets-table .positive {
             color: #22c7b8;
+        }
+        
+        body.ev-mode .bets-table .positive {
+            color: #4fc3f7;
         }
         
         .bets-table .negative {
@@ -205,6 +329,12 @@
             padding: 0.75rem !important;
             margin-top: 1rem;
             border-left: 3px solid var(--gold) !important;
+        }
+        
+        body.ev-mode .section-header {
+            background-color: rgba(84, 153, 199, 0.1);
+            color: var(--ev-highlight) !important;
+            border-left-color: var(--ev-accent) !important;
         }
         
         .section-header.non-rentable-simple, 
@@ -225,10 +355,19 @@
             border-left: 3px solid var(--gold);
         }
         
+        body.ev-mode .help-text {
+            background-color: rgba(10, 30, 60, 0.5);
+            border-left-color: var(--ev-accent);
+        }
+        
         .help-text h4 {
             color: var(--gold);
             margin-bottom: 0.5rem;
             font-weight: 400;
+        }
+        
+        body.ev-mode .help-text h4 {
+            color: var(--ev-highlight);
         }
         
         .help-text p {
@@ -237,6 +376,10 @@
             margin-bottom: 0.5rem;
             font-size: 0.9rem;
             line-height: 1.4;
+        }
+        
+        body.ev-mode .help-text p {
+            color: #e6f2ff;
         }
         
         .error-message {
@@ -261,6 +404,12 @@
             transition: all 0.4s ease;
         }
         
+        body.ev-mode .strategy-toggle-container {
+            background-color: rgba(10, 30, 60, 0.7);
+            border-color: rgba(84, 153, 199, 0.2);
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2);
+        }
+        
         .strategy-toggle-container label {
             display: flex;
             align-items: center;
@@ -277,6 +426,10 @@
             font-size: 1.1rem;
         }
         
+        body.ev-mode .strategy-toggle-container .toggle-title:last-of-type {
+            color: var(--ev-accent);
+        }
+        
         .strategy-toggle-container .toggle-description {
             font-size: 0.9rem;
             color: var(--light-gold);
@@ -284,10 +437,14 @@
             transition: all 0.3s ease;
         }
         
+        body.ev-mode .strategy-toggle-container .toggle-description {
+            color: #e6f2ff;
+        }
+        
         .strategy-toggle-container .toggle-label {
             position: relative;
             display: inline-block;
-            width: 70px;
+            width: 80px;
             height: 34px;
             margin: 0 15px;
         }
@@ -331,7 +488,7 @@
         }
         
         .strategy-toggle-container input:checked + .slider:before {
-            transform: translateX(35px);
+            transform: translateX(45px);
             background-color: #1E90FF; /* Bleu royal */
         }
         
@@ -355,12 +512,12 @@
             display: flex;
             justify-content: space-between;
             width: 70px;
-            padding: 0 8px;
+            padding: 0 15px;
             color: var(--light-gold);
             font-size: 0.8rem;
             position: absolute;
             top: 50%;
-            left: 0;
+            left: 5px;
             transform: translateY(-50%);
             pointer-events: none;
         }
@@ -548,13 +705,16 @@
         document.addEventListener('DOMContentLoaded', function() {
             const strategyToggle = document.getElementById('strategyToggle');
             const maxPerHorseGroup = document.getElementById('maxPerHorseGroup');
+            const body = document.body;
             
             // Mettre à jour l'affichage initial
             updateMaxPerHorseVisibility(strategyToggle.checked);
+            updateTheme(strategyToggle.checked);
             
             // Ajouter un écouteur d'événements pour les changements de stratégie
             strategyToggle.addEventListener('change', function() {
                 updateMaxPerHorseVisibility(this.checked);
+                updateTheme(this.checked);
             });
             
             function updateMaxPerHorseVisibility(isEVStrategy) {
@@ -569,6 +729,15 @@
                     // Mode Dutch: montrer que c'est désactivé mais visible
                     maxPerHorseGroup.style.opacity = '0.6';
                     maxPerHorseGroup.style.pointerEvents = 'none';
+                }
+            }
+            
+            function updateTheme(isEVStrategy) {
+                // Ajouter/enlever la classe ev-mode pour changer le thème
+                if (isEVStrategy) {
+                    body.classList.add('ev-mode');
+                } else {
+                    body.classList.remove('ev-mode');
                 }
             }
         });
