@@ -21,33 +21,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const totalStakeElement = document.getElementById('totalStake');
     const betsTableBody = document.getElementById('betsTableBody');
     
-    // État pour la stratégie
+    // État global pour la stratégie
     let currentStrategy = 'dutch'; // 'dutch' ou 'ev'
     
     // Initialiser le toggle avec vérification de console pour débogage
     console.log("Toggle element:", strategyToggle);
     
     if (strategyToggle) {
+        // Initialiser la stratégie en fonction de l'état actuel du toggle
+        currentStrategy = strategyToggle.checked ? 'ev' : 'dutch';
+        console.log("Stratégie initiale:", currentStrategy);
+        
         // Ajouter un gestionnaire pour le changement du toggle
         strategyToggle.addEventListener('change', function() {
             console.log("Toggle changed, checked:", this.checked);
             currentStrategy = this.checked ? 'ev' : 'dutch';
-            
-            // Mettre à jour l'interface pour montrer la stratégie active
-            const dutchLabel = document.querySelector('.dutch-label');
-            const evLabel = document.querySelector('.ev-label');
-            
-            if (dutchLabel && evLabel) {
-                if (this.checked) {
-                    // Mode EV
-                    dutchLabel.classList.remove('active-strategy');
-                    evLabel.classList.add('active-strategy');
-                } else {
-                    // Mode Dutch
-                    dutchLabel.classList.add('active-strategy');
-                    evLabel.classList.remove('active-strategy');
-                }
-            }
+            console.log("Nouvelle stratégie:", currentStrategy);
             
             // Recalculer si des résultats sont déjà affichés
             if (resultContainer.style.display === 'block') {
@@ -57,22 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         console.error("Toggle element not found!");
     }
-    
-    // Ajouter une option pour cliquer sur les labels également
-    const strategyLabels = document.querySelectorAll('.strategy-label');
-    strategyLabels.forEach(label => {
-        label.addEventListener('click', function() {
-            if (strategyToggle) {
-                // Déterminer quelle stratégie a été cliquée
-                const isEV = this.classList.contains('ev-label');
-                strategyToggle.checked = isEV;
-                
-                // Déclencher l'événement change manuellement
-                const event = new Event('change');
-                strategyToggle.dispatchEvent(event);
-            }
-        });
-    });
     
     // Exemple de données
     const exampleData = {
@@ -185,6 +158,8 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Calculer les stratégies pour 2, 3, 4 et 5 favoris (si possible)
             let allCombos;
+            
+            console.log("Calcul avec stratégie:", currentStrategy);
             
             if (currentStrategy === 'dutch') {
                 allCombos = findAllCombosForSizesDutch(horsesRaw, totalBet, [2, 3, 4, 5]);
