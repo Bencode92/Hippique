@@ -70,10 +70,16 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
-          # Synchroniser avec le dépôt distant avant de committer
+          # Stasher tous les changements potentiels avant de pull
+          git stash -u || true
+          
+          # Synchroniser avec le dépôt distant
           git pull origin main --rebase
           
-          # Ajouter les fichiers pertinents
+          # Réappliquer les changements stashés
+          git stash pop || true
+          
+          # Ajouter tous les fichiers JSON dans data/courses
           git add data/courses/*.json
           
           # Vérifier s'il y a des changements à committer
