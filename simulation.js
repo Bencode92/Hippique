@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (minGainLabel && avgGainLabel) {
             if (strategy === 'ev') {
-                minGainLabel.textContent = "Gain net minimum possible";
+                minGainLabel.textContent = "Gain net minimum garanti";
                 avgGainLabel.innerHTML = "Gain net moyen attendu (EV) 🔥";
                 avgGainLabel.style.fontWeight = "bold";
                 avgGainLabel.style.color = "var(--gold)";
@@ -334,8 +334,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     const gainsBruts = finalStakes.map((stake, i) => stake * odds[i]);
                     const gainsNets = gainsBruts.map(g => g - totalBet);
                     
+                    // Vérifier que tous les gains nets sont positifs
+                    if (!gainsNets.every(g => g > 0)) {
+                        return; // Sauter cette combinaison si un gain net est négatif
+                    }
+                    
                     // Calculer le gain moyen (moyenne simple)
-                    // Note: on pourrait aussi faire une moyenne pondérée par les probabilités si souhaité
                     const gainMoyen = gainsNets.reduce((sum, g) => sum + g, 0) / horseCount;
                     
                     // Si c'est le meilleur gain moyen jusqu'à présent, le sauvegarder
@@ -363,23 +367,33 @@ document.addEventListener('DOMContentLoaded', function() {
             console.timeEnd('OptimizationTime');
             console.log(`Iterations: ${iterations}`);
             
+            // Vérifier si une solution a été trouvée
+            const isRentable = bestGainMoyen > 0 && bestStakes.length > 0;
+            
+            if (!isRentable) {
+                return {
+                    chevaux: combo,
+                    mises: [],
+                    cotes: odds,
+                    gains_bruts: [],
+                    gains_net: [],
+                    gain_minimum: 0,
+                    gain_moyen: 0,
+                    gain_maximum: 0,
+                    rentable: false,
+                    available: true,
+                    approche: "EV (Optimisé)"
+                };
+            }
+            
             // Calculer les autres métriques basées sur le meilleur résultat
             const gainMax = Math.max(...bestGainsNets);
             const gainMin = Math.min(...bestGainsNets);
-            const isRentable = bestGainMoyen > 0;
-            
-            // Calculer les probabilités implicites pour l'affichage
-            const probs = odds.map(o => 1 / o);
-            const totalProb = probs.reduce((a, b) => a + b, 0);
-            const normProbs = probs.map(p => p / totalProb);
-            const proba_display = normProbs.map(p => (p * 100).toFixed(1) + "%");
             
             return {
                 chevaux: combo,
                 mises: bestStakes,
                 cotes: odds,
-                probas: proba_display,
-                probas_raw: normProbs,
                 gains_bruts: bestGainsBruts,
                 gains_net: bestGainsNets,
                 gain_minimum: gainMin,
@@ -465,7 +479,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (strategy === 'dutch') {
             explanationText = `<td colspan="5" class="method-explanation">🎯 <strong>Mode DUTCH BETTING</strong> : Cette stratégie garantit un gain identique quel que soit le cheval gagnant parmi votre sélection.</td>`;
         } else {
-            explanationText = `<td colspan="5" class="method-explanation">💰 <strong>Mode OPTIMISATION EV</strong> : Cette stratégie trouve la répartition des mises qui maximise votre gain moyen, sans contraindre les mises à être proportionnelles aux probabilités. Les gains varient selon le cheval gagnant.</td>`;
+            explanationText = `<td colspan="5" class="method-explanation">💰 <strong>Mode OPTIMISATION EV</strong> : Cette stratégie trouve la répartition des mises qui maximise votre gain moyen, avec un gain net positif garanti pour chaque cheval.</td>`;
         }
         methodExplanation.innerHTML = explanationText;
         betsTableBody.appendChild(methodExplanation);
@@ -506,8 +520,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 headersHTML = `
                     <th>Cheval</th>
                     <th>Cote</th>
-                    <th>Proba</th>
                     <th>Mise (€)</th>
+                    <th>Gain brut (€)</th>
                     <th>Gain net (€)</th>
                 `;
             } else {
@@ -528,23 +542,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 const gainNet = combo.gains_net[i];
                 const gainClass = gainNet > 0 ? 'positive' : 'negative';
 
-                if (strategy === 'ev') {
-                    row.innerHTML = `
-                        <td>${cheval}</td>
-                        <td>${combo.cotes[i].toFixed(2)}</td>
-                        <td>${combo.probas[i]}</td>
-                        <td>${combo.mises[i].toFixed(2)} €</td>
-                        <td class="${gainClass}">${gainNet > 0 ? '+' : ''}${gainNet.toFixed(2)} €</td>
-                    `;
-                } else {
-                    row.innerHTML = `
-                        <td>${cheval}</td>
-                        <td>${combo.cotes[i].toFixed(2)}</td>
-                        <td>${combo.mises[i].toFixed(2)} €</td>
-                        <td>${combo.gains_bruts[i].toFixed(2)} €</td>
-                        <td class="${gainClass}">${gainNet > 0 ? '+' : ''}${gainNet.toFixed(2)} €</td>
-                    `;
-                }
+                row.innerHTML = `
+                    <td>${cheval}</td>
+                    <td>${combo.cotes[i].toFixed(2)}</td>
+                    <td>${combo.mises[i].toFixed(2)} €</td>
+                    <td>${combo.gains_bruts[i].toFixed(2)} €</td>
+                    <td class="${gainClass}">${gainNet > 0 ? '+' : ''}${gainNet.toFixed(2)} €</td>
+                `;
                 betsTableBody.appendChild(row);
             });
 
@@ -557,7 +561,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <td colspan="5" class="formula-explanation">
                         <p><strong>Formule du gain moyen optimisé</strong> = Moyenne des gains nets avec la meilleure répartition de mises</p>
                         <p>EV = (${combo.gains_net.map(g => g > 0 ? '+' : '' + g.toFixed(2) + ' €').join(' + ')}) / ${combo.chevaux.length} = <strong>+${combo.gain_moyen.toFixed(2)} €</strong></p>
-                        <p><em>Note: Cette répartition a été trouvée par optimisation complète, pas simplement en misant proportionnellement aux probabilités.</em></p>
+                        <p><em>Note: Cette répartition a été trouvée par optimisation complète en garantissant que chaque gain net est positif.</em></p>
                     </td>
                 `;
                 
