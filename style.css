@@ -74,7 +74,7 @@ header {
 }
 
 main {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
 }
@@ -190,30 +190,34 @@ select {
   box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
 }
 
-.dashboard-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 1.5rem;
-}
-
-.performance-chart, .top-jockeys {
+.jockeys-section {
   background-color: rgba(22, 62, 60, 0.5);
   border: 1px solid rgba(233, 209, 140, 0.2);
   border-radius: 8px;
   padding: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
 }
 
-.performance-chart h2, .top-jockeys h2 {
+.jockeys-section h2 {
   color: var(--gold);
   margin-bottom: 1.5rem;
   font-weight: 400;
   font-size: 1.5rem;
 }
 
+.jockey-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
 .jockey-item {
   display: flex;
   align-items: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(233, 209, 140, 0.1);
 }
 
 .jockey-img {
@@ -284,7 +288,7 @@ footer p {
     grid-template-columns: repeat(2, 1fr);
   }
   
-  .dashboard-grid {
+  .jockey-list {
     grid-template-columns: 1fr;
   }
 }
@@ -302,5 +306,9 @@ footer p {
   
   .analyze-controls {
     flex-direction: column;
+  }
+  
+  .search {
+    width: 100%;
   }
 }
