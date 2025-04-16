@@ -15,6 +15,11 @@
             --light-gold: #f5e9c9;
             --accent: #22c7b8;
             
+            /* Couleurs pour le mode Dutch */
+            --dutch-color: #66bb6a;
+            --dutch-light: #98ee99;
+            --dutch-dark: #338a3e;
+            
             /* Couleurs pour le mode EV */
             --ev-dark: #101a2b;
             --ev-medium: #152442;
@@ -149,7 +154,7 @@
             font-size: 1.1rem;
             font-weight: bold;
             color: white;
-            background-color: #3498db;
+            background-color: var(--dutch-color);
             border-radius: 0;
         }
         
@@ -173,7 +178,7 @@
         }
         
         body.ev-mode .horse-entry .horse-number {
-            background-color: #3498db;
+            background-color: var(--ev-accent);
         }
         
         .action-buttons {
@@ -289,11 +294,11 @@
         }
         
         .result-item .value.positive {
-            color: #22c7b8;
+            color: var(--dutch-color);
         }
         
         body.ev-mode .result-item .value.positive {
-            color: #4fc3f7;
+            color: var(--ev-highlight);
         }
         
         .result-item .value.negative {
@@ -335,11 +340,11 @@
         }
         
         .bets-table .positive {
-            color: #22c7b8;
+            color: var(--dutch-color);
         }
         
         body.ev-mode .bets-table .positive {
-            color: #4fc3f7;
+            color: var(--ev-highlight);
         }
         
         .bets-table .negative {
@@ -427,7 +432,7 @@
         }
         
         .dutch-betting-label {
-            color: #66bbff;
+            color: var(--dutch-color);
             font-weight: bold;
             font-size: 1.1rem;
         }
@@ -534,13 +539,13 @@
         }
         
         .btn-calculate {
-            background-color: #66bb6a;
+            background-color: var(--dutch-color);
             color: white;
             flex: 1;
         }
         
         body.ev-mode .btn-calculate {
-            background-color: #3498db;
+            background-color: var(--ev-accent);
         }
         
         .btn-action:hover {
@@ -549,6 +554,11 @@
         
         .btn-action i {
             margin-right: 8px;
+        }
+        
+        /* Cacher la formule du gain moyen optimisé */
+        .formula-explanation {
+            display: none !important;
         }
         
         @media (max-width: 768px) {
@@ -854,6 +864,24 @@
                 document.getElementById('resultContainer').style.display = 'none';
                 document.getElementById('errorMessage').style.display = 'none';
             });
+            
+            // Observer mutation sur la table pour supprimer automatiquement la formule
+            const observer = new MutationObserver(function(mutations) {
+                // Chercher et supprimer les formules EV qui pourraient être ajoutées
+                const formulas = document.querySelectorAll('.formula-explanation');
+                formulas.forEach(formula => {
+                    formula.style.display = 'none';
+                });
+            });
+            
+            // Observer le tbody des résultats pour détecter quand des résultats sont ajoutés
+            const betsTableBody = document.getElementById('betsTableBody');
+            if (betsTableBody) {
+                observer.observe(betsTableBody, { 
+                    childList: true, 
+                    subtree: true 
+                });
+            }
         });
     </script>
 </body>
