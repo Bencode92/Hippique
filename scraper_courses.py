@@ -445,6 +445,8 @@ class ScraperCoursesFG:
                         if participants:
                             course_data["participants"] = participants
                             print(f"  ✅ Extrait {len(participants)} participants pour {course_name}")
+                            # Ajouter cette course uniquement si elle a des participants
+                            courses_data["courses"].append(course_data)
                         else:
                             print(f"  ⚠️ Aucun participant trouvé pour {course_name}")
                             
@@ -460,9 +462,6 @@ class ScraperCoursesFG:
                             time.sleep(2)
                         except:
                             pass
-                
-                # Ajouter cette course à notre collection
-                courses_data["courses"].append(course_data)
                 
             # Si pas de courses détectées par le tableau, essayer une autre approche
             if not courses_data["courses"]:
@@ -513,6 +512,10 @@ class ScraperCoursesFG:
                                 if participants:
                                     course_data["participants"] = participants
                                     print(f"✅ Alternative: Extrait {len(participants)} participants pour {course_name}")
+                                    # Ajouter cette course uniquement si elle a des participants
+                                    courses_data["courses"].append(course_data)
+                                else:
+                                    print(f"⚠️ Aucun participant trouvé pour {course_name}")
                                 
                                 driver.back()
                                 time.sleep(2)
@@ -524,14 +527,7 @@ class ScraperCoursesFG:
                                     time.sleep(2)
                                 except:
                                     pass
-                        
-                        courses_data["courses"].append(course_data)
             
-            # MODIFICATION: Marquer si le fichier est vide
-            if not courses_data["courses"]:
-                print(f"⚠️ Aucune course valide trouvée pour {hippodrome}, le fichier sera vide")
-                courses_data["empty"] = True
-                
             return courses_data
             
         except Exception as e:
@@ -588,30 +584,49 @@ class ScraperCoursesFG:
                 print("⚠️ Aucune réunion trouvée pour aujourd'hui")
                 return
 
+            # Dictionnaire pour stocker les réunions par nom d'hippodrome
+            hippodromes_processed = {}
+
             for i, course in enumerate(courses_today):
-                print(f"⏳ Traitement {i+1}/{len(courses_today)}: {course['hippodrome']}")
+                hippodrome_name = course["hippodrome"]
+                
+                # Si l'hippodrome est "Plus", lui attribuer un identifiant unique
+                if hippodrome_name == "Plus":
+                    # Créer un nom unique en fonction de l'URL
+                    unique_id = str(i+1)
+                    url_parts = course["url"].split("/")
+                    if len(url_parts) > 5:  # S'assurer qu'il y a assez de parties
+                        # Utiliser la dernière partie de l'URL comme identifiant unique
+                        unique_id = url_parts[-1][:8]  # Prendre les 8 premiers caractères
+                    
+                    # S'assurer que l'identifiant est sûr pour un nom de fichier
+                    unique_id = "".join(c for c in unique_id if c.isalnum())
+                    
+                    # Créer un nom d'hippodrome unique
+                    hippodrome_name = f"Reunion_{unique_id}"
+                
+                print(f"⏳ Traitement {i+1}/{len(courses_today)}: {hippodrome_name}")
                 
                 # Extraire les détails des courses
                 is_course = course.get("is_course", False)
-                course_data = self.extract_course_details(driver, course["url"], course["hippodrome"], is_course)
+                course_data = self.extract_course_details(driver, course["url"], hippodrome_name, is_course)
                 
-                # Générer un nom de fichier basé sur l'hippodrome et la date
-                date_str = datetime.now().strftime("%Y-%m-%d")
-                safe_name = course["hippodrome"].replace(" ", "_").replace("/", "-").lower()
-                filename = f"{date_str}_{safe_name}.json"
-                
-                # Sauvegarder les données
-                self.save_json(course_data, filename)
-                
-                # Commenté: Ne plus supprimer les fichiers vides
-                # if not course_data.get("courses"):
-                #     filepath = os.path.join(self.output_dir, filename)
-                #     print(f"🗑️ Suppression du fichier JSON vide pour {course['hippodrome']}")
-                #     os.remove(filepath)
-                
-                # À la place, on ajoute un message indiquant que le fichier est conservé même s'il est vide
-                if not course_data.get("courses"):
-                    print(f"⚠️ Fichier JSON vide pour {course['hippodrome']} mais conservé pour analyse")
+                # Ne sauvegarder que s'il y a des courses avec des participants
+                if course_data.get("courses"):
+                    # Générer un nom de fichier basé sur l'hippodrome et la date
+                    date_str = datetime.now().strftime("%Y-%m-%d")
+                    safe_name = hippodrome_name.replace(" ", "_").replace("/", "-").lower()
+                    
+                    # S'assurer que le nom de fichier est unique si plusieurs réunions portent le même nom
+                    count = hippodromes_processed.get(hippodrome_name, 0)
+                    filename = f"{date_str}_{safe_name}.json" if count == 0 else f"{date_str}_{safe_name}_{count+1}.json"
+                    hippodromes_processed[hippodrome_name] = count + 1
+                    
+                    # Sauvegarder les données
+                    self.save_json(course_data, filename)
+                    print(f"✅ Données sauvegardées pour {hippodrome_name} avec {len(course_data['courses'])} courses")
+                else:
+                    print(f"⚠️ Aucune course avec participants trouvée pour {hippodrome_name}, fichier non sauvegardé")
             
             print(f"🎉 Scraping terminé! {len(courses_today)} hippodromes traités.")
             
@@ -638,18 +653,12 @@ class ScraperCoursesFG:
                 date_str = datetime.now().strftime("%Y-%m-%d")
                 filename = f"{date_str}_direct_scrape.json"
             
-            # Sauvegarder les données
-            self.save_json(course_data, filename)
-            
-            # Commenté: Ne plus supprimer les fichiers vides
-            # if not course_data.get("courses"):
-            #     filepath = os.path.join(self.output_dir, filename)
-            #     print(f"🗑️ Suppression du fichier JSON vide pour le scraping direct")
-            #     os.remove(filepath)
-            
-            # À la place, on ajoute un message indiquant que le fichier est conservé même s'il est vide
-            if not course_data.get("courses"):
-                print(f"⚠️ Fichier JSON vide pour le scraping direct mais conservé pour analyse")
+            # Sauvegarder les données seulement s'il y a des courses avec participants
+            if course_data.get("courses"):
+                self.save_json(course_data, filename)
+                print(f"✅ Données sauvegardées pour le scraping direct avec {len(course_data['courses'])} courses")
+            else:
+                print(f"⚠️ Aucune course avec participants trouvée pour le scraping direct, fichier non sauvegardé")
             
             print(f"✅ Scraping direct terminé pour {url}")
             
