@@ -16,7 +16,7 @@ from datetime import datetime, timedelta
 class ScraperCoursesFG:
     def __init__(self):
         self.base_url = "https://www.france-galop.com"
-        self.courses_url = f"{self.base_url}/fr/courses/toutes-les-courses"
+        self.courses_aujourdhui_url = f"{self.base_url}/fr/courses/aujourdhui"
         self.output_dir = "data/courses"
         os.makedirs(self.output_dir, exist_ok=True)
         
@@ -41,10 +41,68 @@ class ScraperCoursesFG:
             print(f"⚠️ Timeout en attendant l'élément {by}={value}: {str(e)}")
             return driver.page_source
     
+    def extract_participants_table(self, course_soup):
+        """Extrait les participants depuis le tableau de partants de la page de course"""
+        table = course_soup.find("table")
+        if not table:
+            return []
+
+        headers = []
+        thead = table.find("thead")
+        if thead:
+            headers = [th.get_text(strip=True) for th in thead.find_all("th")]
+        else:
+            # Si pas de thead, prendre la première ligne comme en-têtes
+            first_row = table.find("tr")
+            if first_row:
+                headers = [th.get_text(strip=True) for th in first_row.find_all("th") or first_row.find_all("td")]
+        
+        if not headers:
+            print("⚠️ Aucun en-tête trouvé dans le tableau des partants")
+            return []
+            
+        print(f"📊 En-têtes trouvés: {headers}")
+
+        body_rows = table.find("tbody").find_all("tr") if table.find("tbody") else table.find_all("tr")[1:] if len(table.find_all("tr")) > 1 else []
+        participants = []
+        
+        print(f"📋 Trouvé {len(body_rows)} lignes de participants")
+
+        for row in body_rows:
+            cells = row.find_all("td")
+            if len(cells) < 3:  # Un participant valide doit avoir au moins quelques cellules
+                continue
+
+            participant = {}
+            for i, cell in enumerate(cells):
+                if i >= len(headers):
+                    key = f"column_{i+1}"
+                else:
+                    key = headers[i].lower().replace(" ", "_").replace(".", "").replace("/", "_")
+                
+                value = cell.get_text(strip=True)
+                participant[key] = value
+
+                # Cherche lien
+                link = cell.find("a")
+                if link and link.get("href"):
+                    href = link["href"]
+                    if not href.startswith("http"):
+                        if not href.startswith("/"):
+                            href = "/" + href
+                        href = self.base_url + href
+                    participant[f"{key}_url"] = href
+
+            # Ne conserver que les participants avec des données significatives
+            if participant:
+                participants.append(participant)
+
+        return participants
+    
     def get_links_from_aujourdhui_page(self, driver):
         """Récupère les liens des réunions de type Plat pour aujourd'hui"""
-        url = "https://www.france-galop.com/fr/courses/aujourdhui"
-        driver.get(url)
+        print(f"📅 Accès à la page des courses du jour: {self.courses_aujourdhui_url}")
+        driver.get(self.courses_aujourdhui_url)
         time.sleep(5)
 
         print("🔍 Scraping des courses du jour (page 'aujourdhui')...")
@@ -89,83 +147,6 @@ class ScraperCoursesFG:
 
         print(f"🏁 Total: {len(links)} réunions Plat trouvées aujourd'hui")
         return links
-    
-    def get_course_links(self, driver, filtre_type="Plat", jours=1):
-        """Récupère les liens des courses selon le filtre et la période"""
-        print(f"🔍 Recherche des courses de {filtre_type} pour les {jours} prochains jours...")
-        
-        driver.get(self.courses_url)
-        time.sleep(5)  # Augmentation du délai pour s'assurer que la page est chargée
-        
-        # Liste pour stocker les liens des courses
-        links_courses = []
-        
-        # Date d'aujourd'hui et période
-        today = datetime.now()
-        end_date = today + timedelta(days=jours)
-        
-        try:
-            # Vérifions d'abord si la page a bien chargé
-            print(f"🌐 URL actuelle: {driver.current_url}")
-            
-            # Prenons une capture d'écran pour le débogage
-            screenshot_dir = os.path.join(self.output_dir, "debug")
-            os.makedirs(screenshot_dir, exist_ok=True)
-            screenshot_path = os.path.join(screenshot_dir, "courses_list.png")
-            driver.save_screenshot(screenshot_path)
-            print(f"📸 Capture d'écran sauvegardée: {screenshot_path}")
-            
-            html = self.wait_and_get_html(driver, By.CSS_SELECTOR, "table")
-            
-            # Sauvegardons le HTML pour le débogage
-            with open(os.path.join(screenshot_dir, "courses_list.html"), "w", encoding="utf-8") as f:
-                f.write(html)
-            
-            soup = BeautifulSoup(html, "html.parser")
-            
-            # Vérifions si nous avons bien trouvé le tableau
-            tables = soup.find_all("table")
-            print(f"📊 Trouvé {len(tables)} tableaux sur la page")
-            
-            rows = soup.select("table tbody tr")
-            print(f"📋 Trouvé {len(rows)} lignes dans le tableau")
-            
-            for row in rows:
-                # Vérifier le type de course
-                type_cell = row.select_one("td:nth-of-type(4)")
-                if not type_cell or filtre_type not in type_cell.text:
-                    continue
-                
-                # Vérifier la date
-                date_cell = row.select_one("td:nth-of-type(1)")
-                if date_cell:
-                    try:
-                        # Format de date attendu: "16/04/2025"
-                        date_text = date_cell.text.strip()
-                        date_parts = date_text.split('/')
-                        if len(date_parts) == 3:
-                            course_date = datetime(int(date_parts[2]), int(date_parts[1]), int(date_parts[0]))
-                            if course_date < today or course_date > end_date:
-                                continue
-                    except (ValueError, IndexError):
-                        # En cas d'erreur dans le parsing de date, on continue quand même
-                        pass
-                
-                # Extraire le lien de la course
-                link_tag = row.select_one("td a")
-                if link_tag and link_tag.get("href"):
-                    full_url = f"{self.base_url}{link_tag['href']}"
-                    hippodrome = link_tag.text.strip()
-                    print(f"🏁 Trouvé course: {hippodrome} - {full_url}")
-                    links_courses.append({"url": full_url, "hippodrome": hippodrome})
-            
-            print(f"✅ Trouvé {len(links_courses)} courses de {filtre_type}")
-            return links_courses
-            
-        except Exception as e:
-            print(f"❌ Erreur lors de la recherche des courses: {str(e)}")
-            traceback.print_exc()
-            return []
     
     def extract_course_details(self, driver, course_url, hippodrome):
         """Extrait les détails de toutes les courses d'un hippodrome"""
@@ -309,69 +290,14 @@ class ScraperCoursesFG:
                         video_href = video_link.get('href')
                         course_data["video_replay"] = f"{self.base_url}{video_href}" if video_href.startswith('/') else video_href
                     
-                    # Extraire les partants (participants)
-                    table = course_soup.find("table", class_="tableaupartants")
+                    # Extraire les partants avec la fonction dédiée
+                    participants = self.extract_participants_table(course_soup)
                     
-                    # Si nous ne trouvons pas la table avec la classe spécifique, essayons de trouver n'importe quelle table
-                    if not table:
-                        print(f"⚠️ Table des partants non trouvée pour {course_name}, essai de sélecteurs alternatifs")
-                        tables = course_soup.select("table")
-                        if tables:
-                            table = tables[0]  # Prendre la première table disponible
-                    
-                    if table:
-                        # Essayer de trouver les en-têtes dans le thead
-                        thead = table.select_one("thead")
-                        if thead:
-                            headers = [th.text.strip() for th in thead.select("th")]
-                        else:
-                            # Sinon, utiliser la première ligne comme en-têtes
-                            first_row = table.select_one("tr")
-                            if first_row:
-                                headers = [th.text.strip() for th in first_row.select("th")] or [td.text.strip() for td in first_row.select("td")]
-                            else:
-                                headers = []
-                        
-                        print(f"📊 En-têtes trouvés: {headers}")
-                        
-                        # Sélectionner les lignes du corps du tableau
-                        body_rows = table.select("tbody tr") if table.select_one("tbody") else table.select("tr")[1:] if table.select("tr") else []
-                        
-                        print(f"📋 Trouvé {len(body_rows)} lignes de participants")
-                        
-                        for tr in body_rows:
-                            cells = tr.find_all("td")
-                            if len(cells) >= min(1, len(headers)):  # Au moins une cellule
-                                participant = {}
-                                
-                                # Si nous avons des en-têtes, les utiliser pour nommer les colonnes
-                                if headers:
-                                    for i, header in enumerate(headers):
-                                        if i < len(cells):  # Éviter l'index out of range
-                                            key = header.lower().replace(' ', '_') if header else f"column_{i+1}"
-                                            # Récupérer le texte et supprimer les espaces superflus
-                                            value = cells[i].text.strip()
-                                            participant[key] = value
-                                            
-                                            # Si c'est une cellule avec un lien (comme le nom du cheval)
-                                            link = cells[i].find("a")
-                                            if link and link.get("href"):
-                                                url = f"{self.base_url}{link['href']}" if link['href'].startswith('/') else link['href']
-                                                participant[f"{key}_url"] = url
-                                else:
-                                    # Sans en-têtes, utiliser des noms génériques
-                                    for i, cell in enumerate(cells):
-                                        key = f"column_{i+1}"
-                                        value = cell.text.strip()
-                                        participant[key] = value
-                                        
-                                        # Chercher les liens
-                                        link = cell.find("a")
-                                        if link and link.get("href"):
-                                            url = f"{self.base_url}{link['href']}" if link['href'].startswith('/') else link['href']
-                                            participant[f"{key}_url"] = url
-                                
-                                course_data["participants"].append(participant)
+                    if participants:
+                        course_data["participants"] = participants
+                        print(f"✅ Extrait {len(participants)} participants pour {course_name}")
+                    else:
+                        print(f"⚠️ Aucun participant extrait pour {course_name}")
                     
                     # MODIFICATION: Ne garder que les courses avec des participants réels
                     if course_data.get("participants") and len(course_data["participants"]) >= 2 and \
@@ -475,43 +401,6 @@ class ScraperCoursesFG:
         finally:
             driver.quit()
     
-    def run(self, filtre_type="Plat", jours=1):
-        """Exécute le scraper complet"""
-        print(f"🏇 Début du scraping des courses de {filtre_type} pour les {jours} prochains jours")
-        
-        driver = self.get_driver()
-        try:
-            # Récupérer les liens des courses
-            course_links = self.get_course_links(driver, filtre_type, jours)
-            
-            for i, course in enumerate(course_links):
-                print(f"⏳ Traitement {i+1}/{len(course_links)}: {course['hippodrome']}")
-                
-                # Extraire les détails des courses
-                course_data = self.extract_course_details(driver, course["url"], course["hippodrome"])
-                
-                # Générer un nom de fichier basé sur l'hippodrome et la date
-                date_str = datetime.now().strftime("%Y-%m-%d")
-                safe_name = course["hippodrome"].replace(" ", "_").replace("/", "-").lower()
-                filename = f"{date_str}_{safe_name}.json"
-                
-                # Sauvegarder les données
-                self.save_json(course_data, filename)
-                
-                # MODIFICATION: Supprimer les fichiers vides
-                if not course_data.get("courses"):
-                    filepath = os.path.join(self.output_dir, filename)
-                    print(f"🗑️ Suppression du fichier JSON vide pour {course['hippodrome']}")
-                    os.remove(filepath)
-            
-            print(f"🎉 Scraping terminé! {len(course_links)} hippodromes traités.")
-            
-        except Exception as e:
-            print(f"❌ Erreur générale: {str(e)}")
-            traceback.print_exc()
-        finally:
-            driver.quit()
-    
     def direct_scrape_url(self, url, filename=None):
         """Scrape directement une URL spécifique de course"""
         print(f"🔍 Scraping direct de l'URL: {url}")
@@ -551,9 +440,7 @@ if __name__ == "__main__":
     import sys
     
     # Obtenir les variables d'environnement (utile pour GitHub Actions)
-    type_course = os.environ.get("TYPE_COURSE", "Plat")
-    jours = int(os.environ.get("JOURS", "3"))
-    mode = os.environ.get("MODE", "all")  # "all", "new", "enrich", "direct", "today"
+    mode = os.environ.get("MODE", "today")  # "today", "enrich", "direct"
     direct_url = os.environ.get("URL", "")
     
     scraper = ScraperCoursesFG()
@@ -568,17 +455,16 @@ if __name__ == "__main__":
         else:
             mode = sys.argv[1]
     
+    # Afficher le mode d'exécution pour débogage
+    print(f"🚀 Exécution du scraper en mode: {mode}")
+    
     # Mode selon l'environnement ou valeur par défaut
     if mode == "direct" and direct_url:
         # Scraping direct d'une URL
         scraper.direct_scrape_url(direct_url)
-    elif mode == "today":
-        # Scraping uniquement des courses Plat d'aujourd'hui
-        scraper.run_today_only()
-    elif mode == "all" or mode == "new":
-        # Étape 1 : Scraper les nouvelles courses
-        scraper.run(filtre_type=type_course, jours=jours)
-    
-    if mode == "all" or mode == "enrich":
-        # Étape 2 : Enrichir les JSON avec les détails internes
+    elif mode == "enrich":
+        # Enrichir les JSON avec les détails internes
         scraper.enrich_existing_json_files()
+    else:
+        # Mode par défaut: scraper uniquement les courses du jour
+        scraper.run_today_only()
