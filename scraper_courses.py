@@ -16,7 +16,7 @@ from datetime import datetime, timedelta
 class ScraperCoursesFG:
     def __init__(self):
         self.base_url = "https://www.france-galop.com"
-        self.courses_url = f"{self.base_url}/fr/courses/toutes-les-courses"
+        self.courses_url = f"{self.base_url}/fr/courses/aujourdhui"
         self.output_dir = "data/courses"
         os.makedirs(self.output_dir, exist_ok=True)
         
