@@ -817,6 +817,13 @@
                 const searchTerm = searchInput.value.trim().toLowerCase();
                 let filteredHippodromes = Object.keys(hippodromeCourses);
                 
+                // Filtrer pour ne garder que les hippodromes avec plus d'une course
+                filteredHippodromes = filteredHippodromes.filter(hippodrome => 
+                    hippodromeCourses[hippodrome].length > 1
+                );
+                
+                console.log("Hippodromes avec plus d'une course:", filteredHippodromes);
+                
                 if (searchTerm) {
                     // Filtrer les hippodromes dont le nom ou une course correspond à la recherche
                     filteredHippodromes = filteredHippodromes.filter(hippodrome => {
@@ -841,7 +848,7 @@
                         <div class="no-results">
                             <i class="fas fa-search"></i>
                             <h3>Aucun résultat trouvé</h3>
-                            <p>Essayez de modifier votre recherche</p>
+                            <p>Essayez de modifier votre recherche ou une autre date</p>
                         </div>
                     `;
                     return;
