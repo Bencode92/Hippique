@@ -38,13 +38,41 @@ document.addEventListener('DOMContentLoaded', function() {
             currentStrategy = this.checked ? 'ev' : 'dutch';
             console.log("Nouvelle stratégie:", currentStrategy);
             
+            // Mettre à jour les labels dans l'interface selon la stratégie
+            updateStrategyLabels(currentStrategy);
+            
             // Recalculer si des résultats sont déjà affichés
             if (resultContainer.style.display === 'block') {
                 calculateButton.click();
             }
         });
+        
+        // Initialiser les labels au chargement
+        updateStrategyLabels(currentStrategy);
     } else {
         console.error("Toggle element not found!");
+    }
+    
+    // Fonction pour mettre à jour les labels dans l'interface selon la stratégie active
+    function updateStrategyLabels(strategy) {
+        const minGainLabel = document.querySelector('.label:nth-child(1)');
+        const avgGainLabel = document.querySelector('.label:nth-child(2)');
+        
+        if (minGainLabel && avgGainLabel) {
+            if (strategy === 'ev') {
+                minGainLabel.textContent = "Gain net minimum possible";
+                avgGainLabel.innerHTML = "Gain net moyen attendu (EV) 🔥";
+                avgGainLabel.style.fontWeight = "bold";
+                avgGainLabel.style.color = "var(--gold)";
+            } else {
+                minGainLabel.textContent = "Gain net minimum garanti";
+                minGainLabel.style.fontWeight = "bold";
+                minGainLabel.style.color = "var(--gold)";
+                avgGainLabel.textContent = "Gain net moyen attendu";
+                avgGainLabel.style.fontWeight = "normal";
+                avgGainLabel.style.color = "var(--light-gold)";
+            }
+        }
     }
     
     // Exemple de données
@@ -277,10 +305,14 @@ document.addEventListener('DOMContentLoaded', function() {
             const gainMin = Math.min(...gainsNet);
             const isRentable = gainMin > 0;
 
+            // Stocker les probabilités normalisées pour l'affichage
+            const proba_display = normProbs.map(p => (p * 100).toFixed(1) + "%");
+
             return {
                 chevaux: combo,
                 mises: mises,
                 cotes: odds,
+                probas: proba_display,
                 gains_bruts: gainsBruts,
                 gains_net: gainsNet,
                 gain_minimum: gainMin,
@@ -342,6 +374,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 ? `+${bestCombo.gain_moyen.toFixed(2)} €`
                 : `${bestCombo.gain_moyen.toFixed(2)} €`;
             selectedHorsesElement.textContent = bestCombo.chevaux.length;
+            
+            // Ajouter une classe spéciale pour différencier les stratégies
+            if (strategy === 'ev') {
+                avgGainElement.className = 'value positive highlight';
+                minGainElement.className = 'value positive';
+            } else {
+                avgGainElement.className = 'value positive';
+                minGainElement.className = 'value positive highlight';
+            }
         } else {
             minGainElement.textContent = "N/A";
             avgGainElement.textContent = "N/A";
@@ -349,34 +390,108 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         totalStakeElement.textContent = `${totalBet.toFixed(2)} €`;
 
+        // Ajouter un en-tête explicatif pour la méthode
+        const methodExplanation = document.createElement('tr');
+        let explanationText = "";
+        if (strategy === 'dutch') {
+            explanationText = `<td colspan="5" class="method-explanation">🎯 <strong>Mode DUTCH BETTING</strong> : Cette stratégie garantit un gain identique quel que soit le cheval gagnant parmi votre sélection.</td>`;
+        } else {
+            explanationText = `<td colspan="5" class="method-explanation">💰 <strong>Mode OPTIMISATION EV</strong> : Cette stratégie maximise votre gain moyen attendu (EV) basé sur les probabilités implicites des cotes. Les gains peuvent varier selon le cheval gagnant.</td>`;
+        }
+        methodExplanation.innerHTML = explanationText;
+        betsTableBody.appendChild(methodExplanation);
+
         // Afficher tous les combos rentables triés par gain net moyen
         sortedCombos.forEach((combo, index) => {
             // Ajouter une indication spéciale pour le meilleur combo
             const isBest = index === 0;
-            const bestBadge = isBest ? "🔥 MEILLEUR COMBO - " : "";
+            
+            // Badge différent selon la stratégie
+            let bestBadge = "";
+            if (isBest) {
+                if (strategy === 'dutch') {
+                    bestBadge = "🔥 MEILLEUR COMBO DUTCH - ";
+                } else {
+                    bestBadge = "🔥 MEILLEUR COMBO EV - ";
+                }
+            }
             
             const headerClass = "section-header";
             const strategyBadge = strategy === 'dutch' ? "🎯 DUTCH : " : "💰 OPTIMISATION EV : ";
-            const headerText = `${bestBadge}${strategyBadge}Combo avec ${combo.taille} favoris | Gain net moyen : +${combo.gain_moyen.toFixed(2)} € | Gain min/max : +${combo.gain_minimum.toFixed(2)} €/+${combo.gain_maximum.toFixed(2)} €`;
+            
+            let headerText = "";
+            if (strategy === 'dutch') {
+                headerText = `${bestBadge}${strategyBadge}Combo avec ${combo.taille} favoris | Gain garanti : +${combo.gain_minimum.toFixed(2)} € | Gain net moyen : +${combo.gain_moyen.toFixed(2)} €`;
+            } else {
+                headerText = `${bestBadge}${strategyBadge}Combo avec ${combo.taille} favoris | Gain net moyen (EV) : +${combo.gain_moyen.toFixed(2)} € | Gain min/max : +${combo.gain_minimum.toFixed(2)} €/+${combo.gain_maximum.toFixed(2)} €`;
+            }
             
             const title = document.createElement('tr');
-            title.innerHTML = `<td colspan="5" class="${headerClass}">${headerText}</td>`;
+            title.innerHTML = `<td colspan="5" class="${headerClass}${isBest ? ' best-combo' : ''}">${headerText}</td>`;
             betsTableBody.appendChild(title);
 
+            // Ajouter des en-têtes de colonne spécifiques selon la stratégie
+            const columnHeaders = document.createElement('tr');
+            let headersHTML = "";
+            if (strategy === 'ev') {
+                headersHTML = `
+                    <th>Cheval</th>
+                    <th>Cote</th>
+                    <th>Proba</th>
+                    <th>Mise (€)</th>
+                    <th>Gain net (€)</th>
+                `;
+            } else {
+                headersHTML = `
+                    <th>Cheval</th>
+                    <th>Cote</th>
+                    <th>Mise (€)</th>
+                    <th>Gain brut (€)</th>
+                    <th>Gain net (€)</th>
+                `;
+            }
+            columnHeaders.innerHTML = headersHTML;
+            betsTableBody.appendChild(columnHeaders);
+
+            // Afficher les chevaux et leurs détails
             combo.chevaux.forEach((cheval, i) => {
                 const row = document.createElement('tr');
                 const gainNet = combo.gains_net[i];
                 const gainClass = gainNet > 0 ? 'positive' : 'negative';
 
-                row.innerHTML = `
-                    <td>${cheval}</td>
-                    <td>${combo.cotes[i].toFixed(2)}</td>
-                    <td>${combo.mises[i].toFixed(2)} €</td>
-                    <td>${combo.gains_bruts[i].toFixed(2)} €</td>
-                    <td class="${gainClass}">${gainNet > 0 ? '+' : ''}${gainNet.toFixed(2)} €</td>
-                `;
+                if (strategy === 'ev') {
+                    row.innerHTML = `
+                        <td>${cheval}</td>
+                        <td>${combo.cotes[i].toFixed(2)}</td>
+                        <td>${combo.probas[i]}</td>
+                        <td>${combo.mises[i].toFixed(2)} €</td>
+                        <td class="${gainClass}">${gainNet > 0 ? '+' : ''}${gainNet.toFixed(2)} €</td>
+                    `;
+                } else {
+                    row.innerHTML = `
+                        <td>${cheval}</td>
+                        <td>${combo.cotes[i].toFixed(2)}</td>
+                        <td>${combo.mises[i].toFixed(2)} €</td>
+                        <td>${combo.gains_bruts[i].toFixed(2)} €</td>
+                        <td class="${gainClass}">${gainNet > 0 ? '+' : ''}${gainNet.toFixed(2)} €</td>
+                    `;
+                }
                 betsTableBody.appendChild(row);
             });
+
+            // Ajouter une explication de calcul pour EV si c'est le meilleur combo
+            if (isBest && strategy === 'ev') {
+                const formulaRow = document.createElement('tr');
+                formulaRow.innerHTML = `
+                    <td colspan="5" class="formula-explanation">
+                        <p><strong>Formule du gain moyen (EV)</strong> = Somme(Probabilité × Gain net pour chaque cheval)</p>
+                        <p>EV = ${combo.chevaux.map((cheval, i) => 
+                            `(${combo.probas[i]} × ${combo.gains_net[i] > 0 ? '+' : ''}${combo.gains_net[i].toFixed(2)} €)`
+                        ).join(' + ')} = <strong>+${combo.gain_moyen.toFixed(2)} €</strong></p>
+                    </td>
+                `;
+                betsTableBody.appendChild(formulaRow);
+            }
         });
 
         // Ajouter les combos non rentables ou non disponibles à la fin
@@ -396,8 +511,38 @@ document.addEventListener('DOMContentLoaded', function() {
                 title.innerHTML = `<td colspan="5" class="${headerClass}">${headerMessage}</td>`;
                 betsTableBody.appendChild(title);
             });
+            
+        // Ajouter du CSS dynamique pour les nouveaux éléments
+        const style = document.createElement('style');
+        style.textContent = `
+            .highlight {
+                color: #22c7b8 !important;
+                font-weight: bold;
+                font-size: 2.7rem !important;
+            }
+            .best-combo {
+                background-color: rgba(34, 199, 184, 0.15) !important;
+                font-weight: bold;
+            }
+            .method-explanation {
+                background-color: rgba(233, 209, 140, 0.15);
+                padding: 10px;
+                border-left: 3px solid var(--gold);
+                margin-bottom: 15px;
+                font-size: 0.95rem;
+            }
+            .formula-explanation {
+                background-color: rgba(34, 199, 184, 0.05);
+                padding: 8px;
+                font-size: 0.85rem;
+                color: rgba(245, 233, 201, 0.9);
+                border-top: 1px dashed rgba(34, 199, 184, 0.3);
+                margin-bottom: 20px;
+            }
+        `;
+        document.head.appendChild(style);
     }
     
     // Générer les chevaux initiaux au chargement de la page
-    generateHorseEntries(parseInt(horseCountInput.value) || 5);
+    generateHorseEntries(parseInt(horseCountInput.value) ||.0);
 });
