@@ -289,23 +289,39 @@ document.addEventListener('DOMContentLoaded', function() {
             }, {});
 
         function computeComboEV(combo, totalBet) {
+            // Récupérer les cotes pour les chevaux du combo
             const odds = combo.map(h => sortedHorses[h]);
+            
+            // Calculer les probabilités implicites (1/cote)
             const probs = odds.map(o => 1 / o);
+            
+            // Somme des probabilités pour normalisation
             const totalProb = probs.reduce((a, b) => a + b, 0);
-            const normProbs = probs.map(p => p / totalProb); // pour lisser
-
-            // On mise plus sur les chevaux avec la meilleure proba
+            
+            // Normaliser les probabilités pour qu'elles somment à 1
+            const normProbs = probs.map(p => p / totalProb);
+            
+            // Miser proportionnellement aux probabilités normalisées
             const mises = normProbs.map(p => p * totalBet);
+            
+            // Calculer les gains bruts (mise * cote)
             const gainsBruts = mises.map((m, i) => m * odds[i]);
+            
+            // Calculer les gains nets (gain brut - mise totale)
             const gainsNet = gainsBruts.map(g => g - totalBet);
-
-            // EV = somme(probabilité * gain)
+            
+            // *** CORRECTION ICI: Calcul du gain moyen avec les probabilités normalisées ***
+            // EV = somme(probabilité normalisée * gain net pour chaque cheval)
             const gainMoyen = normProbs.reduce((sum, p, i) => sum + p * gainsNet[i], 0);
+            
             const gainMax = Math.max(...gainsNet);
             const gainMin = Math.min(...gainsNet);
-            const isRentable = gainMin > 0;
-
-            // Stocker les probabilités normalisées pour l'affichage
+            
+            // Une stratégie est rentable si le gain moyen est positif (pas le gain min comme en Dutch)
+            // Mais on garde quand même l'information sur gainMin > 0 pour l'UI
+            const isRentable = gainMoyen > 0;
+            
+            // Probabilités pour affichage (en pourcentage)
             const proba_display = normProbs.map(p => (p * 100).toFixed(1) + "%");
 
             return {
@@ -313,6 +329,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 mises: mises,
                 cotes: odds,
                 probas: proba_display,
+                probas_raw: normProbs,  // Pour les calculs
                 gains_bruts: gainsBruts,
                 gains_net: gainsNet,
                 gain_minimum: gainMin,
@@ -482,14 +499,23 @@ document.addEventListener('DOMContentLoaded', function() {
             // Ajouter une explication de calcul pour EV si c'est le meilleur combo
             if (isBest && strategy === 'ev') {
                 const formulaRow = document.createElement('tr');
-                formulaRow.innerHTML = `
+                
+                // Créer une explication détaillée de la formule EV
+                let formulaHTML = `
                     <td colspan="5" class="formula-explanation">
                         <p><strong>Formule du gain moyen (EV)</strong> = Somme(Probabilité × Gain net pour chaque cheval)</p>
-                        <p>EV = ${combo.chevaux.map((cheval, i) => 
-                            `(${combo.probas[i]} × ${combo.gains_net[i] > 0 ? '+' : ''}${combo.gains_net[i].toFixed(2)} €)`
-                        ).join(' + ')} = <strong>+${combo.gain_moyen.toFixed(2)} €</strong></p>
+                        <p>EV = `;
+                
+                // Construction détaillée du calcul EV
+                const calculations = combo.chevaux.map((cheval, i) => {
+                    return `(${combo.probas[i]} × ${combo.gains_net[i] > 0 ? '+' : ''}${combo.gains_net[i].toFixed(2)} €)`;
+                }).join(' + ');
+                
+                formulaHTML += `${calculations} = <strong>+${combo.gain_moyen.toFixed(2)} €</strong></p>
                     </td>
                 `;
+                
+                formulaRow.innerHTML = formulaHTML;
                 betsTableBody.appendChild(formulaRow);
             }
         });
@@ -544,5 +570,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Générer les chevaux initiaux au chargement de la page
-    generateHorseEntries(parseInt(horseCountInput.value) ||.0);
+    generateHorseEntries(parseInt(horseCountInput.value) || 5);
 });
