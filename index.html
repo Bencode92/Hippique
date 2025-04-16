@@ -114,6 +114,14 @@
             border-bottom: 3px solid var(--gold);
         }
         
+        .main-nav li a {
+            text-decoration: none;
+            color: var(--light-gold);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
         main {
             flex: 1;
             padding: 2rem;
@@ -356,9 +364,9 @@
         
         <nav class="main-nav">
             <ul>
-                <li class="active" data-section="accueil"><i class="fas fa-home"></i> Accueil</li>
-                <li data-section="courses"><i class="fas fa-flag-checkered"></i> Courses</li>
-                <li data-section="classement"><i class="fas fa-list-ol"></i> Classement</li>
+                <li class="active"><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="courses.html"><i class="fas fa-flag-checkered"></i> Courses</a></li>
+                <li><a href="classement.html"><i class="fas fa-list-ol"></i> Classement</a></li>
             </ul>
         </nav>
         
@@ -403,7 +411,7 @@
                         16/04/2025
                     </div>
                 </div>
-                <a href="classement.html" class="btn-primary"><i class="fas fa-chart-line"></i> Analyser les données</a>
+                <a href="courses.html" class="btn-primary"><i class="fas fa-chart-line"></i> Analyser les données</a>
             </div>
             
             <div class="section-container">
@@ -544,24 +552,6 @@
                 });
             });
             
-            // Navigation
-            document.querySelectorAll('.main-nav li').forEach(item => {
-                item.addEventListener('click', function() {
-                    const section = this.dataset.section;
-                    
-                    // Rediriger vers la page classement
-                    if (section === 'classement') {
-                        window.location.href = 'classement.html';
-                        return;
-                    }
-                    
-                    document.querySelectorAll('.main-nav li').forEach(li => {
-                        li.classList.remove('active');
-                    });
-                    this.classList.add('active');
-                });
-            });
-            
             // Recherche
             const searchInput = document.querySelector('.search input');
             if (searchInput) {
@@ -580,19 +570,6 @@
                         window.location.href = `classement.html?search=${encodeURIComponent(query)}`;
                     }
                 });
-            }
-            
-            // Vérifier si un paramètre URL a été passé pour ouvrir une section spécifique
-            const urlParams = new URLSearchParams(window.location.search);
-            const category = urlParams.get('category');
-            if (category) {
-                const categoryElement = document.querySelector(`.main-nav li[data-section="${category}"]`);
-                if (categoryElement) {
-                    document.querySelectorAll('.main-nav li').forEach(li => {
-                        li.classList.remove('active');
-                    });
-                    categoryElement.classList.add('active');
-                }
             }
         });
     </script>
