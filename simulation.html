@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation de Paris - Analyse Hippique</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .sim-form {
+            background-color: rgba(22, 62, 60, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .sim-form h3 {
+            color: var(--gold);
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+        
+        .input-group {
+            margin-bottom: 1rem;
+        }
+        
+        .input-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--light-gold);
+        }
+        
+        .input-group input, .input-group select {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: rgba(10, 30, 30, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.3);
+            border-radius: 4px;
+            color: var(--light-gold);
+        }
+        
+        .input-group input[type="number"] {
+            -moz-appearance: textfield;
+        }
+        
+        .input-group input[type="number"]::-webkit-inner-spin-button, 
+        .input-group input[type="number"]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+        }
+        
+        .horse-entries {
+            max-height: 400px;
+            overflow-y: auto;
+            padding-right: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .horse-entry {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            align-items: center;
+        }
+        
+        .horse-entry input {
+            flex: 1;
+        }
+        
+        .horse-entry .remove-horse {
+            background: none;
+            border: none;
+            color: tomato;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .action-btn {
+            padding: 0.75rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .action-btn.primary {
+            background: linear-gradient(to right, var(--gold), #d4af37);
+            color: var(--dark-teal);
+        }
+        
+        .action-btn.secondary {
+            background-color: rgba(245, 233, 201, 0.1);
+            color: var(--light-gold);
+            border: 1px solid rgba(233, 209, 140, 0.3);
+        }
+        
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .result-container {
+            background-color: rgba(22, 62, 60, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            display: none;
+        }
+        
+        .result-container h3 {
+            color: var(--gold);
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+        
+        .result-header {
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
+        }
+        
+        .result-summary {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .result-item {
+            padding: 1rem;
+            background-color: rgba(10, 30, 30, 0.5);
+            border-radius: 8px;
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .result-item .label {
+            font-size: 0.9rem;
+            color: var(--light-gold);
+            margin-bottom: 0.5rem;
+        }
+        
+        .result-item .value {
+            font-size: 1.5rem;
+            color: var(--gold);
+        }
+        
+        .result-item .value.positive {
+            color: #22c7b8;
+        }
+        
+        .result-item .value.negative {
+            color: tomato;
+        }
+        
+        .bets-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        
+        .bets-table th, .bets-table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(233, 209, 140, 0.1);
+        }
+        
+        .bets-table th {
+            color: var(--gold);
+            font-weight: 400;
+        }
+        
+        .bets-table td {
+            color: var(--light-gold);
+        }
+        
+        .bets-table .positive {
+            color: #22c7b8;
+        }
+        
+        .bets-table .negative {
+            color: tomato;
+        }
+        
+        .help-text {
+            margin: 1rem 0;
+            padding: 1rem;
+            background-color: rgba(10, 30, 30, 0.5);
+            border-radius: 8px;
+            border-left: 3px solid var(--gold);
+        }
+        
+        .help-text h4 {
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+        }
+        
+        .help-text p {
+            color: var(--light-gold);
+            opacity: 0.8;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        
+        .error-message {
+            margin-top: 1rem;
+            padding: 0.75rem;
+            background-color: rgba(255, 99, 71, 0.1);
+            border-radius: 4px;
+            color: tomato;
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .action-buttons {
+                flex-direction: column;
+            }
+            
+            .result-summary {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-horse-head" style="font-size: 2rem; color: var(--gold);"></i>
+                <h1>ANALYSE HIPPIQUE</h1>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Rechercher un cheval, jockey...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </header>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="courses.html"><i class="fas fa-flag-checkered"></i> Courses</a></li>
+                <li><a href="classement.html"><i class="fas fa-list-ol"></i> Classement</a></li>
+                <li class="active"><a href="simulation.html"><i class="fas fa-calculator"></i> Simulation</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <div class="section-container">
+                <h2><i class="fas fa-calculator"></i> Simulateur de Paris Optimaux</h2>
+                <p>Cet outil vous permet de calculer la meilleure stratégie de paris pour garantir un profit, quelle que soit l'issue de la course.</p>
+                
+                <div class="help-text">
+                    <h4><i class="fas fa-info-circle"></i> Comment ça fonctionne</h4>
+                    <p>La stratégie du "dutching" consiste à parier sur plusieurs chevaux en répartissant vos mises de manière proportionnelle pour garantir un profit, quel que soit le vainqueur parmi votre sélection.</p>
+                    <p>Notre algorithme recherche la combinaison de favoris (chevaux avec les cotes les plus basses) qui maximise votre gain minimum garanti.</p>
+                </div>
+                
+                <div class="sim-form">
+                    <h3>Paramètres de la simulation</h3>
+                    
+                    <div class="input-group">
+                        <label for="totalBet">Montant total à miser (€)</label>
+                        <input type="number" id="totalBet" value="50" min="1" step="1">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="maxHorses">Nombre max de favoris à tester (2-10)</label>
+                        <input type="number" id="maxHorses" value="5" min="2" max="10" step="1">
+                    </div>
+                    
+                    <h3>Liste des chevaux et leurs cotes</h3>
+                    <div class="horse-entries" id="horseEntries">
+                        <div class="horse-entry">
+                            <input type="text" placeholder="Nom du cheval" class="horse-name">
+                            <input type="number" placeholder="Cote" class="horse-odds" min="1.01" step="0.01">
+                            <button class="remove-horse"><i class="fas fa-times"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <button class="action-btn secondary" id="addHorse">
+                            <i class="fas fa-plus"></i> Ajouter un cheval
+                        </button>
+                        <button class="action-btn secondary" id="clearForm">
+                            <i class="fas fa-trash"></i> Vider le formulaire
+                        </button>
+                        <button class="action-btn secondary" id="loadExample">
+                            <i class="fas fa-lightbulb"></i> Charger un exemple
+                        </button>
+                        <button class="action-btn primary" id="calculateBets">
+                            <i class="fas fa-calculator"></i> Calculer la stratégie optimale
+                        </button>
+                    </div>
+                    
+                    <div class="error-message" id="errorMessage"></div>
+                </div>
+                
+                <div class="result-container" id="resultContainer">
+                    <div class="result-header">
+                        <h3><i class="fas fa-check-circle"></i> Stratégie de paris optimale</h3>
+                    </div>
+                    
+                    <div class="result-summary">
+                        <div class="result-item">
+                            <div class="label">Gain net minimum garanti</div>
+                            <div class="value positive" id="minGain">+5.18 €</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="label">Gain net moyen attendu</div>
+                            <div class="value positive" id="avgGain">+14.79 €</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="label">Chevaux sélectionnés</div>
+                            <div class="value" id="selectedHorses">3</div>
+                        </div>
+                        <div class="result-item">
+                            <div class="label">Montant total misé</div>
+                            <div class="value" id="totalStake">50.00 €</div>
+                        </div>
+                    </div>
+                    
+                    <h3>Détail des paris</h3>
+                    <div class="table-container">
+                        <table class="bets-table">
+                            <thead>
+                                <tr>
+                                    <th>Cheval</th>
+                                    <th>Cote</th>
+                                    <th>Mise (€)</th>
+                                    <th>Gain brut (€)</th>
+                                    <th>Gain net (€)</th>
+                                </tr>
+                            </thead>
+                            <tbody id="betsTableBody">
+                                <!-- Les lignes seront ajoutées dynamiquement -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <h1>ANALYSE HIPPIQUE</h1>
+            <p>Système d'analyse pour événements hippiques - Dernière mise à jour: 16/04/2025</p>
+        </footer>
+    </div>
+
+    <script src="simulation.js"></script>
+</body>
+</html>
