@@ -622,7 +622,7 @@
         <div class="sort-options">
             <span>Trier par : </span>
             <button class="sort-btn active" data-sort="default">
-                <i class="fas fa-list-ol"></i> Classement par défaut
+                <i class="fas fa-trophy"></i> Classement par victoires
             </button>
             <button class="sort-btn" data-sort="taux-victoire">
                 <i class="fas fa-trophy"></i> Taux de victoire
@@ -1032,8 +1032,20 @@
                 const sortedData = [...data];
                 
                 if (sortKey === 'default') {
-                    // Tri par défaut (par rang)
-                    sortedData.sort((a, b) => a.Rang - b.Rang);
+                    // Tri par défaut (par nombre de victoires)
+                    if (currentCategory === 'chevaux') {
+                        sortedData.sort((a, b) => {
+                            const valA = parseInt(a.NbVictoires);
+                            const valB = parseInt(b.NbVictoires);
+                            return sortDirection === 'desc' ? valB - valA : valA - valB;
+                        });
+                    } else {
+                        sortedData.sort((a, b) => {
+                            const valA = parseInt(a.Victoires);
+                            const valB = parseInt(b.Victoires);
+                            return sortDirection === 'desc' ? valB - valA : valA - valB;
+                        });
+                    }
                 } else if (sortKey === 'taux-victoire') {
                     // Tri par taux de victoire
                     sortedData.sort((a, b) => {
@@ -1226,7 +1238,7 @@
                 if (endPage < totalPages) {
                     paginationHTML += `
                         ${endPage < totalPages - 1 ? '<span class="page-btn" style="cursor: default; background: transparent;">...</span>' : ''}
-                        <button class="page-btn" onclick="changePage(${totalPages})">${totalPages}</button>
+                        <button class="page-btn" onclick="changePage(${totalPages})\">${totalPages}</button>
                     `;
                 }
                 
