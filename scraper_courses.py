@@ -310,174 +310,222 @@ class ScraperCoursesFG:
             
             soup = BeautifulSoup(html, "html.parser")
             
-            # Récupérer la date de la réunion
-            date_element = soup.select_one(".event-date")
-            if date_element:
-                courses_data["date_reunion"] = date_element.text.strip()
-                print(f"📅 Date de réunion: {courses_data['date_reunion']}")
-            else:
-                print("⚠️ Date de réunion non trouvée")
-                # Essayons un autre sélecteur
-                date_elements = soup.select(".date, time, [class*='date']")
-                if date_elements:
-                    courses_data["date_reunion"] = date_elements[0].text.strip()
-                    print(f"📅 Date de réunion (alt): {courses_data['date_reunion']}")
-                else:
-                    # Utiliser la date du jour si on ne trouve pas de date
-                    courses_data["date_reunion"] = datetime.now().strftime("%d/%m/%Y")
-                    print(f"📅 Date de réunion (par défaut): {courses_data['date_reunion']}")
-            
-            # Récupérer les informations de terrain
-            terrain_element = soup.select_one(".field-terrain")
-            if terrain_element:
-                courses_data["terrain"] = terrain_element.text.strip()
-                print(f"🌱 Terrain: {courses_data['terrain']}")
-            else:
-                print("⚠️ Information de terrain non trouvée")
-                # Essayons d'autres sélecteurs
-                terrain_elements = soup.select(".terrain, [class*='terrain'], .field-state, .state, .piste")
-                if terrain_elements:
-                    courses_data["terrain"] = terrain_elements[0].text.strip()
-                    print(f"🌱 Terrain (alt): {courses_data['terrain']}")
-                else:
-                    courses_data["terrain"] = "Information non disponible"
-            
-            # Si l'URL fournie est déjà une page de course, directement l'analyser
-            if is_course:
-                print("ℹ️ URL directe d'une course détectée, analyse directe...")
-                course_name = soup.select_one("h1, .course-title, .event-title, .title")
-                course_name = course_name.text.strip() if course_name else "Course sans nom"
+            # NOUVELLE APPROCHE: Trouver le tableau des courses sur la page de réunion
+            course_table = soup.select_one("table")
+            if not course_table:
+                print("⚠️ Aucun tableau de courses trouvé sur la page de réunion")
                 
+                # Si pas de tableau, essayer de trouver des liens directs vers les courses
+                course_links = soup.select("a[href*='fiche-course']")
+                if course_links:
+                    print(f"🔄 Alternative: trouvé {len(course_links)} liens directs vers des courses")
+                    
+                    for index, link in enumerate(course_links):
+                        course_name = link.get_text(strip=True)
+                        href = link.get("href")
+                        course_url = self.base_url + href if href.startswith("/") else href
+                        
+                        print(f"🔍 Course {index+1}/{len(course_links)}: {course_name}")
+                        
+                        try:
+                            driver.get(course_url)
+                            time.sleep(3)
+                            
+                            course_html = driver.page_source
+                            course_soup = BeautifulSoup(course_html, "html.parser")
+                            
+                            # Extraire les détails de la course
+                            horaire = ""
+                            horaire_element = course_soup.select_one(".horaire, .time, [class*='horaire']")
+                            if horaire_element:
+                                horaire = horaire_element.get_text(strip=True)
+                            
+                            numero = f"{index+1}"
+                            numero_element = course_soup.select_one(".numero, .course-number, [class*='numero']")
+                            if numero_element:
+                                numero = numero_element.get_text(strip=True)
+                            
+                            course_data = {
+                                "nom": course_name,
+                                "horaire": horaire,
+                                "numero": numero,
+                                "url": course_url,
+                                "participants": []
+                            }
+                            
+                            # Extraire les participants
+                            participants = self.extract_participants_table(course_soup)
+                            if participants:
+                                course_data["participants"] = participants
+                                print(f"✅ Extrait {len(participants)} participants pour {course_name}")
+                                courses_data["courses"].append(course_data)
+                                print(f"✅ Course ajoutée: {course_name}")
+                            else:
+                                print(f"⚠️ Aucun participant trouvé pour {course_name}")
+                        
+                        except Exception as e:
+                            print(f"❌ Erreur lors du traitement de la course {course_name}: {str(e)}")
+                            traceback.print_exc()
+                    
+                    return courses_data
+                    
+                return courses_data
+                
+            # Extraire les lignes du tableau (chaque ligne = une course)
+            course_rows = course_table.select("tbody tr")
+            if not course_rows:
+                course_rows = course_table.select("tr")[1:] if len(course_table.select("tr")) > 1 else []
+                
+            print(f"🔎 Trouvé {len(course_rows)} courses dans la réunion")
+            
+            # Parcourir chaque ligne (course) dans le tableau
+            for index, row in enumerate(course_rows):
+                # Extraire les informations basiques de la course depuis le tableau
+                cells = row.select("td")
+                if len(cells) < 2:  # Vérifier si la ligne a suffisamment de cellules
+                    continue
+                    
+                # Extraire l'horaire (première cellule généralement)
+                horaire = cells[0].get_text(strip=True)
+                
+                # Extraire le numéro/ordre de la course
+                numero = cells[1].get_text(strip=True) if len(cells) > 1 else ""
+                
+                # Extraire le nom de la course - chercher un lien dans une des cellules
+                course_name = ""
+                course_link = None
+                
+                for cell in cells:
+                    link = cell.select_one("a")
+                    if link:
+                        course_name = link.get_text(strip=True)
+                        href = link.get("href")
+                        if href:
+                            course_link = self.base_url + href if href.startswith("/") else href
+                        break
+                
+                # Si on n'a pas trouvé de lien, prendre le texte de la 3ème cellule comme nom
+                if not course_name and len(cells) > 2:
+                    course_name = cells[2].get_text(strip=True)
+                    
+                # Si toujours pas de nom, générer un nom générique
+                if not course_name:
+                    course_name = f"Course {index+1}"
+                
+                print(f"✅ Course identifiée: {horaire} - {numero} - {course_name}")
+                
+                # Créer l'objet de données de base pour cette course
                 course_data = {
                     "nom": course_name,
-                    "url": course_url,
+                    "horaire": horaire,
+                    "numero": numero,
+                    "url": course_link,
                     "participants": []
                 }
                 
-                # Extraire les infos complémentaires
-                infos = soup.select(".infos-complementaires li, .course-info li, .details li")
-                for info in infos:
-                    key_element = info.select_one("span.label, .key, .info-label")
-                    value_element = info.select_one("span.value, .value, .info-value")
-                    if key_element and value_element:
-                        key = key_element.text.strip().rstrip(':')
-                        value = value_element.text.strip()
-                        course_data[key.lower().replace(' ', '_')] = value
+                # Si nous avons un lien vers la page détaillée et que nous voulons les participants
+                if course_link:
+                    print(f"  ⏳ Navigation vers la page de détails: {course_link}")
+                    
+                    try:
+                        # Ouvrir la page de la course pour extraire les participants
+                        driver.get(course_link)
+                        time.sleep(3)
+                        
+                        # Capture d'écran pour débogage
+                        course_screenshot_path = os.path.join(screenshot_dir, f"{hippodrome.lower().replace(' ', '_')}_course_{index+1}.png")
+                        driver.save_screenshot(course_screenshot_path)
+                        
+                        course_html = driver.page_source
+                        course_soup = BeautifulSoup(course_html, "html.parser")
+                        
+                        # Extraire le tableau des participants
+                        participants = self.extract_participants_table(course_soup)
+                        
+                        if participants:
+                            course_data["participants"] = participants
+                            print(f"  ✅ Extrait {len(participants)} participants pour {course_name}")
+                        else:
+                            print(f"  ⚠️ Aucun participant trouvé pour {course_name}")
+                            
+                        # Revenir à la page de réunion pour continuer
+                        driver.back()
+                        time.sleep(2)
+                    
+                    except Exception as e:
+                        print(f"❌ Erreur lors de l'accès aux détails de {course_name}: {str(e)}")
+                        # Essayer de revenir à la page de réunion même en cas d'erreur
+                        try:
+                            driver.get(course_url)
+                            time.sleep(2)
+                        except:
+                            pass
                 
-                # Extraire les partants avec la fonction dédiée
-                participants = self.extract_participants_table(soup)
+                # Ajouter cette course à notre collection
+                courses_data["courses"].append(course_data)
                 
-                if participants:
-                    course_data["participants"] = participants
-                    print(f"✅ Extrait {len(participants)} participants pour {course_name}")
-                    courses_data["courses"].append(course_data)
-                    print(f"✅ Course ajoutée avec {len(course_data['participants'])} participants: {course_name}")
-                else:
-                    print(f"⚠️ Aucun participant extrait pour {course_name}")
+            # Si pas de courses détectées par le tableau, essayer une autre approche
+            if not courses_data["courses"]:
+                print("⚠️ Aucune course détectée via le tableau, tentative d'approche alternative")
                 
-                return courses_data
-            
-            # Sinon, récupérer les liens vers chaque course
-            course_links = soup.select("table a[href*='/courses/fiche-course']")
-            print(f"🔗 Trouvé {len(course_links)} liens de courses")
-            
-            # Si nous n'avons pas trouvé de liens avec le sélecteur précis, essayons plus général
-            if not course_links:
-                print("⚠️ Aucun lien de course trouvé, essai de sélecteurs alternatifs")
-                course_links = soup.select("a[href*='fiche-course']") or soup.select("table a")
-                print(f"🔗 Trouvé {len(course_links)} liens de courses (alt)")
-            
-            for index, link in enumerate(course_links):
-                # Vérifier si l'attribut href existe et s'il est valide
-                href = link.get("href")
-                if not href or href == "#" or not href.startswith(("/", "http")):
-                    print(f"⚠️ Lien invalide trouvé: {repr(href)}, ignoré.")
-                    continue
-                
-                course_name = link.text.strip()
-                print(f"🔎 Nom de course: {repr(course_name)}")
-                
-                # Ignorer les liens avec des noms vides ou suspects
-                if not course_name or course_name == "-":
-                    print("⚠️ Nom de course vide ou invalide, ignoré.")
-                    continue
-                
-                # Construire l'URL complète
-                course_url = f"{self.base_url}{href}" if href.startswith('/') else href
-                
-                print(f"  ⏳ Course {index+1}/{len(course_links)}: {course_name} - {course_url}")
-                
-                try:
-                    # Aller sur la page de détail de la course
-                    driver.get(course_url)
-                    time.sleep(3)
+                # Approche alternative: chercher des cartes ou éléments contenant des infos de course
+                course_elements = soup.select(".course-card, .race-card, [class*='course'], [class*='race']")
+                if course_elements:
+                    print(f"🔄 Alternative: trouvé {len(course_elements)} éléments de course")
                     
-                    # Prenons une capture d'écran pour le débogage
-                    screenshot_path = os.path.join(screenshot_dir, f"{hippodrome.lower().replace(' ', '_')}_course_{index+1}.png")
-                    driver.save_screenshot(screenshot_path)
-                    
-                    course_html = driver.page_source
-                    
-                    # Sauvegardons le HTML pour le débogage
-                    with open(os.path.join(screenshot_dir, f"{hippodrome.lower().replace(' ', '_')}_course_{index+1}.html"), "w", encoding="utf-8") as f:
-                        f.write(course_html)
-                    
-                    course_soup = BeautifulSoup(course_html, "html.parser")
-                    
-                    # Extraire les détails de la course
-                    course_data = {
-                        "nom": course_name,
-                        "url": course_url,
-                        "participants": []
-                    }
-                    
-                    # Extraire les infos complémentaires
-                    infos = course_soup.select(".infos-complementaires li, .course-info li, .details li")
-                    for info in infos:
-                        key_element = info.select_one("span.label, .key, .info-label")
-                        value_element = info.select_one("span.value, .value, .info-value")
-                        if key_element and value_element:
-                            key = key_element.text.strip().rstrip(':')
-                            value = value_element.text.strip()
-                            course_data[key.lower().replace(' ', '_')] = value
-                    
-                    # Horaire de la course (généralement en haut de la page)
-                    horaire_element = course_soup.select_one(".horaire, .time, .heure, [class*='horaire']")
-                    if horaire_element:
-                        course_data["horaire"] = horaire_element.text.strip()
-                    
-                    # PDF Programme
-                    pdf_link = course_soup.select_one("a[href*='.pdf']")
-                    if pdf_link and pdf_link.get('href'):
-                        pdf_href = pdf_link.get('href')
-                        course_data["pdf_programme"] = f"{self.base_url}{pdf_href}" if pdf_href.startswith('/') else pdf_href
-                    
-                    # Vidéo replay
-                    video_link = course_soup.select_one("a.video-link, a[href*='video'], .replay a")
-                    if video_link and video_link.get('href'):
-                        video_href = video_link.get('href')
-                        course_data["video_replay"] = f"{self.base_url}{video_href}" if video_href.startswith('/') else video_href
-                    
-                    # Extraire les partants avec la fonction dédiée
-                    participants = self.extract_participants_table(course_soup)
-                    
-                    if participants:
-                        course_data["participants"] = participants
-                        print(f"✅ Extrait {len(participants)} participants pour {course_name}")
-                    else:
-                        print(f"⚠️ Aucun participant extrait pour {course_name}")
-                    
-                    # MODIFICATION: Ne garder que les courses avec des participants réels
-                    if course_data.get("participants") and len(course_data["participants"]) >= 1:
+                    for index, elem in enumerate(course_elements):
+                        # Extraire les infos disponibles
+                        horaire = ""
+                        horaire_elem = elem.select_one(".horaire, .time, [class*='time'], [class*='horaire']")
+                        if horaire_elem:
+                            horaire = horaire_elem.get_text(strip=True)
+                            
+                        course_name = f"Course {index+1}"
+                        name_elem = elem.select_one("h2, h3, .title, [class*='title']")
+                        if name_elem:
+                            course_name = name_elem.get_text(strip=True)
+                            
+                        # Chercher un lien
+                        course_link = None
+                        link = elem.select_one("a")
+                        if link and link.get("href"):
+                            href = link.get("href")
+                            course_link = self.base_url + href if href.startswith("/") else href
+                            
+                        course_data = {
+                            "nom": course_name,
+                            "horaire": horaire,
+                            "numero": str(index+1),
+                            "url": course_link,
+                            "participants": []
+                        }
+                        
+                        # Si on a un lien, visiter la page détaillée
+                        if course_link:
+                            try:
+                                driver.get(course_link)
+                                time.sleep(3)
+                                
+                                course_html = driver.page_source
+                                course_soup = BeautifulSoup(course_html, "html.parser")
+                                
+                                participants = self.extract_participants_table(course_soup)
+                                if participants:
+                                    course_data["participants"] = participants
+                                    print(f"✅ Alternative: Extrait {len(participants)} participants pour {course_name}")
+                                
+                                driver.back()
+                                time.sleep(2)
+                                
+                            except Exception as e:
+                                print(f"❌ Erreur lors de l'accès à la course alternative {course_name}: {str(e)}")
+                                try:
+                                    driver.get(course_url)
+                                    time.sleep(2)
+                                except:
+                                    pass
+                        
                         courses_data["courses"].append(course_data)
-                        print(f"✅ Course ajoutée avec {len(course_data['participants'])} participants: {course_name}")
-                    else:
-                        print(f"⚠️ Course ignorée car trop peu de données: {course_name}")
-                    
-                except Exception as e:
-                    print(f"❌ Erreur lors du traitement de la course {course_name}: {str(e)}")
-                    traceback.print_exc()
-                    # Continuer avec la course suivante malgré l'erreur
             
             # MODIFICATION: Marquer si le fichier est vide
             if not courses_data["courses"]:
