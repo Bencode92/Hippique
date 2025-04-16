@@ -41,6 +41,55 @@ class ScraperCoursesFG:
             print(f"⚠️ Timeout en attendant l'élément {by}={value}: {str(e)}")
             return driver.page_source
     
+    def get_links_from_aujourdhui_page(self, driver):
+        """Récupère les liens des réunions de type Plat pour aujourd'hui"""
+        url = "https://www.france-galop.com/fr/courses/aujourdhui"
+        driver.get(url)
+        time.sleep(5)
+
+        print("🔍 Scraping des courses du jour (page 'aujourdhui')...")
+        links = []
+
+        # Prenons une capture d'écran pour le débogage
+        screenshot_dir = os.path.join(self.output_dir, "debug")
+        os.makedirs(screenshot_dir, exist_ok=True)
+        screenshot_path = os.path.join(screenshot_dir, "aujourdhui_page.png")
+        driver.save_screenshot(screenshot_path)
+        print(f"📸 Capture d'écran sauvegardée: {screenshot_path}")
+        
+        # Sauvegardons le HTML pour le débogage
+        html = driver.page_source
+        with open(os.path.join(screenshot_dir, "aujourdhui_page.html"), "w", encoding="utf-8") as f:
+            f.write(html)
+
+        soup = BeautifulSoup(html, "html.parser")
+        cards = soup.select("a.reunion-card")
+        
+        print(f"📊 Trouvé {len(cards)} cartes de réunion")
+        
+        if not cards:
+            # Si le sélecteur spécifique ne fonctionne pas, essayons une approche plus générale
+            cards = soup.select("a[href*='fiche-reunion']")
+            print(f"📊 Approche alternative: trouvé {len(cards)} liens de réunion")
+
+        for card in cards:
+            lieu = card.select_one("h2")
+            type_course_element = card.select_one(".discipline") or card.select_one("[class*='discipline']")
+            type_course = type_course_element.text.strip().lower() if type_course_element else card.text.lower()
+
+            if ("plat" in type_course) and lieu:
+                url_reunion = self.base_url + card.get("href") if card.get("href").startswith("/") else card.get("href")
+                hippodrome = lieu.text.strip()
+                print(f"✅ Réunion plat trouvée : {hippodrome} - {url_reunion}")
+                links.append({"hippodrome": hippodrome, "url": url_reunion})
+            else:
+                type_info = type_course_element.text.strip() if type_course_element else "type inconnu"
+                hippodrome_info = lieu.text.strip() if lieu else "lieu inconnu"
+                print(f"⏭️ Réunion ignorée (non-plat): {hippodrome_info} - {type_info}")
+
+        print(f"🏁 Total: {len(links)} réunions Plat trouvées aujourd'hui")
+        return links
+    
     def get_course_links(self, driver, filtre_type="Plat", jours=1):
         """Récupère les liens des courses selon le filtre et la période"""
         print(f"🔍 Recherche des courses de {filtre_type} pour les {jours} prochains jours...")
@@ -386,6 +435,46 @@ class ScraperCoursesFG:
             finally:
                 driver.quit()
     
+    def run_today_only(self):
+        """Exécute le scraper uniquement pour les courses de Plat du jour actuel"""
+        print("📆 Scraping uniquement des réunions 'Plat' d'aujourd'hui")
+        driver = self.get_driver()
+
+        try:
+            courses_today = self.get_links_from_aujourdhui_page(driver)
+            
+            if not courses_today:
+                print("⚠️ Aucune réunion Plat trouvée pour aujourd'hui")
+                return
+
+            for i, course in enumerate(courses_today):
+                print(f"⏳ Traitement {i+1}/{len(courses_today)}: {course['hippodrome']}")
+                
+                # Extraire les détails des courses
+                course_data = self.extract_course_details(driver, course["url"], course["hippodrome"])
+                
+                # Générer un nom de fichier basé sur l'hippodrome et la date
+                date_str = datetime.now().strftime("%Y-%m-%d")
+                safe_name = course["hippodrome"].replace(" ", "_").replace("/", "-").lower()
+                filename = f"{date_str}_{safe_name}.json"
+                
+                # Sauvegarder les données
+                self.save_json(course_data, filename)
+                
+                # Supprimer les fichiers vides
+                if not course_data.get("courses"):
+                    filepath = os.path.join(self.output_dir, filename)
+                    print(f"🗑️ Suppression du fichier JSON vide pour {course['hippodrome']}")
+                    os.remove(filepath)
+            
+            print(f"🎉 Scraping terminé! {len(courses_today)} hippodromes traités.")
+            
+        except Exception as e:
+            print(f"❌ Erreur lors du scraping des courses du jour: {str(e)}")
+            traceback.print_exc()
+        finally:
+            driver.quit()
+    
     def run(self, filtre_type="Plat", jours=1):
         """Exécute le scraper complet"""
         print(f"🏇 Début du scraping des courses de {filtre_type} pour les {jours} prochains jours")
@@ -464,7 +553,7 @@ if __name__ == "__main__":
     # Obtenir les variables d'environnement (utile pour GitHub Actions)
     type_course = os.environ.get("TYPE_COURSE", "Plat")
     jours = int(os.environ.get("JOURS", "3"))
-    mode = os.environ.get("MODE", "all")  # "all", "new", "enrich", "direct"
+    mode = os.environ.get("MODE", "all")  # "all", "new", "enrich", "direct", "today"
     direct_url = os.environ.get("URL", "")
     
     scraper = ScraperCoursesFG()
@@ -483,6 +572,9 @@ if __name__ == "__main__":
     if mode == "direct" and direct_url:
         # Scraping direct d'une URL
         scraper.direct_scrape_url(direct_url)
+    elif mode == "today":
+        # Scraping uniquement des courses Plat d'aujourd'hui
+        scraper.run_today_only()
     elif mode == "all" or mode == "new":
         # Étape 1 : Scraper les nouvelles courses
         scraper.run(filtre_type=type_course, jours=jours)
