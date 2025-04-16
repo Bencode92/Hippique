@@ -121,6 +121,7 @@ document.addEventListener('DOMContentLoaded', function() {
     clearFormButton.addEventListener('click', function() {
         // Réinitialiser les valeurs par défaut
         document.getElementById('totalBet').value = 50;
+        document.getElementById('maxPerHorse').value = 30;
         horseCountInput.value = 5;
         
         // Régénérer les entrées
@@ -158,10 +159,16 @@ document.addEventListener('DOMContentLoaded', function() {
         try {
             // Récupérer les valeurs du formulaire
             const totalBet = parseFloat(document.getElementById('totalBet').value);
+            const maxPerHorse = parseFloat(document.getElementById('maxPerHorse').value) || 999;
             
             // Validation de base
             if (isNaN(totalBet) || totalBet <= 0) {
                 throw new Error('Le montant total doit être un nombre positif');
+            }
+            
+            // Validation pour maxPerHorse
+            if (isNaN(maxPerHorse) || maxPerHorse <= 0) {
+                throw new Error('La mise maximale par cheval doit être un nombre positif');
             }
             
             // Récupérer les chevaux et leurs cotes
@@ -200,7 +207,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (currentStrategy === 'dutch') {
                         allCombos = findAllCombosForSizesDutch(horsesRaw, totalBet, [2, 3, 4, 5]);
                     } else {
-                        allCombos = findAllCombosForSizesEV(horsesRaw, totalBet, [2, 3, 4, 5]);
+                        allCombos = findAllCombosForSizesEV(horsesRaw, totalBet, [2, 3, 4, 5], maxPerHorse);
                     }
                     
                     if (allCombos.filter(combo => combo.available && combo.rentable).length === 0) {
@@ -208,7 +215,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                     
                     // Afficher les résultats
-                    displayResults(allCombos, totalBet, currentStrategy);
+                    displayResults(allCombos, totalBet, currentStrategy, maxPerHorse);
                     
                     // Cacher le message d'erreur et afficher les résultats
                     errorMessage.style.display = 'none';
@@ -295,7 +302,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Fonction pour la stratégie d'optimisation EV
-    function findAllCombosForSizesEV(horsesRaw, totalBet, sizes) {
+    function findAllCombosForSizesEV(horsesRaw, totalBet, sizes, maxStakePerHorse = 999) {
         const sortedHorses = Object.entries(horsesRaw)
             .sort((a, b) => a[1] - b[1])
             .reduce((obj, [key, value]) => {
@@ -304,7 +311,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }, {});
 
         // Nouvelle fonction d'optimisation par force brute pour EV
-        function computeComboEV_BruteForce(combo, totalBet) {
+        function computeComboEV_BruteForce(combo, totalBet, maxStakePerHorse) {
             const odds = combo.map(h => sortedHorses[h]);
             const horseCount = combo.length;
             
@@ -327,6 +334,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Si on a atteint le dernier cheval, lui affecter le reste
                 if (currentHorse === horseCount - 1) {
+                    // Vérifier si la mise du dernier cheval respecte la limite max
+                    if (remainingStake > maxStakePerHorse) return;
+                    
                     // La mise du dernier cheval est le reste du budget
                     const finalStakes = [...currentStakes, remainingStake];
                     
@@ -354,7 +364,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Pour les autres chevaux, tester différentes mises possibles
                 // Avec un pas fixe, et une mise minimale
-                const maxStake = remainingStake - MIN_STAKE * (horseCount - currentHorse - 1);
+                let maxStake = remainingStake - MIN_STAKE * (horseCount - currentHorse - 1);
+                // NOUVEAU: Limiter la mise maximale par cheval
+                maxStake = Math.min(maxStake, maxStakePerHorse);
                 
                 for (let stake = MIN_STAKE; stake <= maxStake; stake += STEP_SIZE) {
                     findBestStakes(currentHorse + 1, remainingStake - stake, [...currentStakes, stake]);
@@ -390,6 +402,9 @@ document.addEventListener('DOMContentLoaded', function() {
             const gainMax = Math.max(...bestGainsNets);
             const gainMin = Math.min(...bestGainsNets);
             
+            // Vérifier si des mises atteignent la limite max
+            const limitesAtteintes = bestStakes.some(stake => Math.abs(stake - maxStakePerHorse) < 0.01);
+            
             return {
                 chevaux: combo,
                 mises: bestStakes,
@@ -401,7 +416,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 gain_maximum: gainMax,
                 rentable: isRentable,
                 available: true,
-                approche: "EV (Optimisé)"
+                approche: "EV (Optimisé)",
+                limitesAtteintes: limitesAtteintes
             };
         }
 
@@ -414,8 +430,8 @@ document.addEventListener('DOMContentLoaded', function() {
             if (size <= horseNames.length) {
                 const subset = horseNames.slice(0, size); // top "size" favoris
                 
-                // Utiliser l'optimisation par force brute pour l'EV
-                const result = computeComboEV_BruteForce(subset, totalBet);
+                // Utiliser l'optimisation par force brute pour l'EV avec limite max par cheval
+                const result = computeComboEV_BruteForce(subset, totalBet, maxStakePerHorse);
                 result.taille = size;
                 allCombos.push(result);
             } else {
@@ -435,7 +451,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Fonction pour afficher les résultats
-    function displayResults(comboList, totalBet, strategy) {
+    function displayResults(comboList, totalBet, strategy, maxStakePerHorse) {
         resultContainer.style.display = 'block';
         betsTableBody.innerHTML = ''; // Réinitialiser
 
@@ -541,16 +557,33 @@ document.addEventListener('DOMContentLoaded', function() {
                 const row = document.createElement('tr');
                 const gainNet = combo.gains_net[i];
                 const gainClass = gainNet > 0 ? 'positive' : 'negative';
+                
+                // Vérifier si cette mise est à la limite
+                const isAtLimit = strategy === 'ev' && Math.abs(combo.mises[i] - maxStakePerHorse) < 0.01;
+                const miseClass = isAtLimit ? 'at-limit' : '';
+                const limitWarning = isAtLimit ? ' ⚠️' : '';
 
                 row.innerHTML = `
                     <td>${cheval}</td>
                     <td>${combo.cotes[i].toFixed(2)}</td>
-                    <td>${combo.mises[i].toFixed(2)} €</td>
+                    <td class="${miseClass}">${combo.mises[i].toFixed(2)} €${limitWarning}</td>
                     <td>${combo.gains_bruts[i].toFixed(2)} €</td>
                     <td class="${gainClass}">${gainNet > 0 ? '+' : ''}${gainNet.toFixed(2)} €</td>
                 `;
                 betsTableBody.appendChild(row);
             });
+
+            // Ajouter un avertissement si des limites sont atteintes
+            if (combo.limitesAtteintes && strategy === 'ev') {
+                const warningRow = document.createElement('tr');
+                warningRow.innerHTML = `
+                    <td colspan="5" class="limit-warning">
+                        ⚠️ Au moins une mise a atteint la limite maximale par cheval (${maxStakePerHorse} €). 
+                        Sans cette contrainte, le gain moyen pourrait être plus élevé.
+                    </td>
+                `;
+                betsTableBody.appendChild(warningRow);
+            }
 
             // Ajouter une explication de calcul pour EV si c'est le meilleur combo
             if (isBest && strategy === 'ev') {
@@ -614,6 +647,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 color: rgba(245, 233, 201, 0.9);
                 border-top: 1px dashed rgba(34, 199, 184, 0.3);
                 margin-bottom: 20px;
+            }
+            .at-limit {
+                color: #ff8c8c;
+                font-weight: bold;
+            }
+            .limit-warning {
+                background-color: rgba(255, 140, 140, 0.1);
+                padding: 8px;
+                font-size: 0.85rem;
+                color: #ff8c8c;
+                border-left: 3px solid #ff8c8c;
+                margin-top: 5px;
             }
         `;
         document.head.appendChild(style);
