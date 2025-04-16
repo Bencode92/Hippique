@@ -64,16 +64,19 @@
             align-items: center;
         }
         
-        .horse-entry input {
-            flex: 1;
+        .horse-number {
+            min-width: 60px;
+            padding: 0.75rem;
+            background-color: rgba(10, 30, 30, 0.7);
+            border: 1px solid rgba(233, 209, 140, 0.3);
+            border-radius: 4px;
+            color: var(--gold);
+            text-align: center;
+            font-weight: 600;
         }
         
-        .horse-entry .remove-horse {
-            background: none;
-            border: none;
-            color: tomato;
-            cursor: pointer;
-            font-size: 1.2rem;
+        .horse-entry input {
+            flex: 1;
         }
         
         .action-buttons {
@@ -279,22 +282,18 @@
                     </div>
                     
                     <div class="input-group">
-                        <label for="maxHorses">Nombre max de favoris à tester (2-10)</label>
-                        <input type="number" id="maxHorses" value="5" min="2" max="10" step="1">
+                        <label for="horseCount">Nombre de chevaux dans la course</label>
+                        <input type="number" id="horseCount" value="10" min="2" max="30" step="1">
                     </div>
                     
                     <h3>Liste des chevaux et leurs cotes</h3>
                     <div class="horse-entries" id="horseEntries">
-                        <div class="horse-entry">
-                            <input type="text" placeholder="Nom du cheval" class="horse-name">
-                            <input type="number" placeholder="Cote" class="horse-odds" min="1.01" step="0.01">
-                            <button class="remove-horse"><i class="fas fa-times"></i></button>
-                        </div>
+                        <!-- Les lignes de chevaux seront générées dynamiquement -->
                     </div>
                     
                     <div class="action-buttons">
-                        <button class="action-btn secondary" id="addHorse">
-                            <i class="fas fa-plus"></i> Ajouter un cheval
+                        <button class="action-btn secondary" id="generateHorses">
+                            <i class="fas fa-sync"></i> Générer les numéros
                         </button>
                         <button class="action-btn secondary" id="clearForm">
                             <i class="fas fa-trash"></i> Vider le formulaire
