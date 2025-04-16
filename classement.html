@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classement Hippique</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --dark-teal: #0f2a28;
+            --medium-teal: #163e3c;
+            --light-teal: #1a514e;
+            --gold: #e9d18c;
+            --light-gold: #f5e9c9;
+            --accent: #22c7b8;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-teal);
+            color: var(--light-gold);
+            min-height: 100vh;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: var(--medium-teal);
+            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo h1 {
+            font-size: 1.8rem;
+            color: var(--gold);
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+        
+        .page-title {
+            color: var(--gold);
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        
+        .page-subtitle {
+            color: var(--light-gold);
+            margin-bottom: 2rem;
+            text-align: center;
+            opacity: 0.8;
+        }
+        
+        .search-container {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .search-container input {
+            width: 100%;
+            padding: 1rem;
+            background-color: rgba(10, 30, 30, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.3);
+            border-radius: 8px;
+            color: var(--light-gold);
+            font-size: 1.1rem;
+            padding-left: 3rem;
+        }
+        
+        .search-container i {
+            position: absolute;
+            left: 1rem;
+            top: 1rem;
+            color: var(--gold);
+            font-size: 1.1rem;
+        }
+        
+        .search-container input:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 2px rgba(34, 199, 184, 0.2);
+        }
+        
+        .search-clear {
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            color: var(--light-gold);
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            opacity: 0.7;
+        }
+        
+        .search-clear:hover {
+            opacity: 1;
+        }
+        
+        .tabs {
+            display: flex;
+            margin-bottom: 2rem;
+            overflow-x: auto;
+            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
+        }
+        
+        .tab {
+            padding: 1rem 2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: var(--light-gold);
+            text-align: center;
+            white-space: nowrap;
+        }
+        
+        .tab:hover {
+            background-color: rgba(26, 81, 78, 0.5);
+        }
+        
+        .tab.active {
+            background-color: var(--light-teal);
+            color: var(--gold);
+            border-bottom: 3px solid var(--gold);
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 2rem;
+            background-color: rgba(22, 62, 60, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.2);
+        }
+        
+        .data-table th {
+            background-color: rgba(10, 30, 30, 0.7);
+            color: var(--gold);
+            padding: 1rem;
+            text-align: left;
+            font-weight: 500;
+            position: sticky;
+            top: 0;
+        }
+        
+        .data-table td {
+            padding: 1rem;
+            border-top: 1px solid rgba(233, 209, 140, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        
+        .data-table tr:hover td {
+            background-color: rgba(26, 81, 78, 0.5);
+        }
+        
+        .data-table a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        .data-table a:hover {
+            text-decoration: underline;
+        }
+        
+        .rank {
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        .rank-1, .rank-2, .rank-3 {
+            font-weight: bold;
+        }
+        
+        .rank-1 {
+            color: gold;
+        }
+        
+        .rank-2 {
+            color: silver;
+        }
+        
+        .rank-3 {
+            color: #cd7f32; /* Bronze */
+        }
+        
+        .stats {
+            color: var(--accent);
+            font-weight: 500;
+            text-align: right;
+        }
+        
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            gap: 0.5rem;
+        }
+        
+        .page-btn {
+            padding: 0.5rem 1rem;
+            background-color: rgba(22, 62, 60, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.2);
+            border-radius: 4px;
+            color: var(--light-gold);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .page-btn:hover {
+            background-color: var(--light-teal);
+        }
+        
+        .page-btn.active {
+            background-color: var(--light-teal);
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: var(--light-gold);
+        }
+        
+        .loading .spinner {
+            border: 4px solid rgba(233, 209, 140, 0.3);
+            border-radius: 50%;
+            border-top: 4px solid var(--gold);
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 3rem;
+            color: var(--light-gold);
+            background-color: rgba(22, 62, 60, 0.3);
+            border-radius: 8px;
+            border: 1px solid rgba(233, 209, 140, 0.2);
+        }
+        
+        .no-results i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--gold);
+        }
+        
+        .home-link {
+            display: block;
+            text-align: center;
+            margin-top: 2rem;
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        .home-link:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            padding: 2rem;
+            border-top: 1px solid rgba(233, 209, 140, 0.2);
+            color: var(--light-gold);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .data-table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+            
+            .tab {
+                padding: 0.8rem 1.2rem;
+                font-size: 0.9rem;
+            }
+            
+            .logo h1 {
+                font-size: 1.4rem;
+            }
+        }
+
+        /* Table de données responsive */
+        .table-responsive {
+            overflow-x: auto;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-horse-head" style="font-size: 2rem; color: var(--gold);"></i>
+            <h1>ANALYSE HIPPIQUE</h1>
+        </div>
+        <a href="index.html" style="color: var(--accent); text-decoration: none;">
+            <i class="fas fa-home"></i> Accueil
+        </a>
+    </header>
+
+    <div class="container">
+        <h1 class="page-title">Classement Hippique</h1>
+        <p class="page-subtitle">Consultez et recherchez parmi les meilleurs jockeys, chevaux, entraineurs, éleveurs et propriétaires</p>
+        
+        <div class="tabs">
+            <div class="tab active" data-category="jockeys">Jockeys</div>
+            <div class="tab" data-category="chevaux">Chevaux</div>
+            <div class="tab" data-category="entraineurs">Entraineurs</div>
+            <div class="tab" data-category="eleveurs">Eleveurs</div>
+            <div class="tab" data-category="proprietaires">Propriétaires</div>
+        </div>
+        
+        <div class="search-container">
+            <i class="fas fa-search"></i>
+            <input type="text" id="search-input" placeholder="Rechercher par nom...">
+            <button class="search-clear" id="search-clear"><i class="fas fa-times"></i></button>
+        </div>
+        
+        <div id="results-container">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>Chargement des données...</p>
+            </div>
+        </div>
+        
+        <div class="pagination" id="pagination">
+            <!-- Les boutons de pagination seront générés par JavaScript -->
+        </div>
+        
+        <a href="index.html" class="home-link"><i class="fas fa-arrow-left"></i> Retour à l'accueil</a>
+    </div>
+    
+    <footer>
+        <p>ANALYSE HIPPIQUE - Système d'analyse pour événements hippiques</p>
+        <p>Dernière mise à jour des données: <span id="last-update">16/04/2025</span></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Variables globales
+            let currentCategory = 'jockeys';
+            let currentPage = 1;
+            const itemsPerPage = 20;
+            let allData = {};
+            let filteredData = [];
+            
+            // Éléments DOM
+            const resultsContainer = document.getElementById('results-container');
+            const searchInput = document.getElementById('search-input');
+            const searchClear = document.getElementById('search-clear');
+            const tabs = document.querySelectorAll('.tab');
+            const pagination = document.getElementById('pagination');
+            const lastUpdateEl = document.getElementById('last-update');
+            
+            // Déterminer si nous sommes sur GitHub Pages ou en local
+            const isGitHubPages = window.location.hostname.includes('github.io');
+            const basePath = isGitHubPages ? '/Hippique' : '';
+            
+            // Configuration des chemins vers les fichiers de données
+            const DATA_PATHS = {
+                jockeys: `${basePath}/data/jockeys.json`,
+                chevaux: `${basePath}/data/chevaux.json`,
+                entraineurs: `${basePath}/data/entraineurs.json`,
+                eleveurs: `${basePath}/data/eleveurs.json`,
+                proprietaires: `${basePath}/data/proprietaires.json`
+            };
+            
+            // Configuration des colonnes pour chaque catégorie
+            const COLUMNS = {
+                jockeys: [
+                    { key: 'Rang', label: '#', class: 'rank' },
+                    { key: 'NomPostal', label: 'Nom', renderer: (value, item) => {
+                        if (item.NomPostal_url) {
+                            return `<a href="${item.NomPostal_url}" target="_blank">${value}</a>`;
+                        }
+                        return value;
+                    }},
+                    { key: 'Victoires', label: 'Victoires', class: 'stats' },
+                    { key: 'Place', label: 'Places', class: 'stats' },
+                    { key: 'GainPart', label: 'Gain/Part (€)', class: 'stats' }
+                ],
+                chevaux: [
+                    { key: 'Rang', label: '#', class: 'rank' },
+                    { key: 'Nom', label: 'Nom', renderer: (value, item) => {
+                        if (item.LibelleCheval_url) {
+                            return `<a href="${item.LibelleCheval_url}" target="_blank">${value}</a>`;
+                        }
+                        return value;
+                    }},
+                    { key: 'NbCourses', label: 'Courses', class: 'stats' },
+                    { key: 'NbVictoires', label: 'Victoires', class: 'stats' },
+                    { key: 'NbPlace', label: 'Places', class: 'stats' },
+                    { key: 'AllocTotale', label: 'Gains (€)', class: 'stats' }
+                ],
+                entraineurs: [
+                    { key: 'Rang', label: '#', class: 'rank' },
+                    { key: 'NomPostal', label: 'Nom', renderer: (value, item) => {
+                        if (item.NomPostal_url) {
+                            return `<a href="${item.NomPostal_url}" target="_blank">${value}</a>`;
+                        }
+                        return value;
+                    }},
+                    { key: 'Victoires', label: 'Victoires', class: 'stats' },
+                    { key: 'Place', label: 'Places', class: 'stats' },
+                    { key: 'GainPart', label: 'Gain Total (€)', class: 'stats' }
+                ],
+                eleveurs: [
+                    { key: 'Rang', label: '#', class: 'rank' },
+                    { key: 'NomPostal', label: 'Nom', renderer: (value, item) => {
+                        if (item.NomPostal_url) {
+                            return `<a href="${item.NomPostal_url}" target="_blank">${value}</a>`;
+                        }
+                        return value;
+                    }},
+                    { key: 'Victoires', label: 'Victoires', class: 'stats' },
+                    { key: 'Place', label: 'Places', class: 'stats' },
+                    { key: 'GainPart', label: 'Gain Total (€)', class: 'stats' }
+                ],
+                proprietaires: [
+                    { key: 'Rang', label: '#', class: 'rank' },
+                    { key: 'NomPostal', label: 'Nom', renderer: (value, item) => {
+                        if (item.NomPostal_url) {
+                            return `<a href="${item.NomPostal_url}" target="_blank">${value}</a>`;
+                        }
+                        return value;
+                    }},
+                    { key: 'Victoires', label: 'Victoires', class: 'stats' },
+                    { key: 'Place', label: 'Places', class: 'stats' },
+                    { key: 'GainPart', label: 'Gain Total (€)', class: 'stats' }
+                ]
+            };
+            
+            // Fonction pour charger les données d'une catégorie
+            async function loadData(category) {
+                // Si les données sont déjà en cache, les retourner directement
+                if (allData[category]) {
+                    return allData[category];
+                }
+                
+                // Afficher l'indicateur de chargement
+                resultsContainer.innerHTML = `
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        <p>Chargement des données ${category}...</p>
+                    </div>
+                `;
+                
+                try {
+                    // Charger les données depuis le fichier JSON
+                    const response = await fetch(DATA_PATHS[category]);
+                    
+                    if (!response.ok) {
+                        throw new Error(`Erreur HTTP ${response.status}: ${response.statusText}`);
+                    }
+                    
+                    const data = await response.json();
+                    
+                    // Mettre à jour la date de dernière mise à jour
+                    if (data.metadata && data.metadata.date_extraction) {
+                        try {
+                            const date = new Date(data.metadata.date_extraction);
+                            lastUpdateEl.textContent = date.toLocaleDateString('fr-FR');
+                        } catch (e) {
+                            lastUpdateEl.textContent = data.metadata.date_extraction;
+                        }
+                    }
+                    
+                    // Transformer les données pour le format d'affichage
+                    const formattedData = processData(data, category);
+                    
+                    // Mettre en cache les données
+                    allData[category] = formattedData;
+                    
+                    return formattedData;
+                } catch (error) {
+                    console.error(`Erreur lors du chargement des données ${category}:`, error);
+                    
+                    // Si les données ne peuvent pas être chargées, utiliser des données de démonstration
+                    return getDemoData(category);
+                }
+            }
+            
+            // Fonction pour transformer les données en format d'affichage
+            function processData(data, category) {
+                if (!data.resultats || !Array.isArray(data.resultats)) {
+                    return [];
+                }
+                
+                // Adapter les clés pour les chevaux qui ont une structure différente
+                if (category === 'chevaux') {
+                    return data.resultats.map((item, index) => {
+                        return {
+                            Rang: index + 1,
+                            Nom: item.LibelleCheval || item.Nom || "Inconnu",
+                            LibelleCheval_url: item.LibelleCheval_url,
+                            NbCourses: item.NbCourses || 0,
+                            NbVictoires: item.NbVictoires || 0,
+                            NbPlace: item.NbPlace || 0,
+                            AllocTotale: formatNumber(item.AllocTotale || item.AllocTot || 0)
+                        };
+                    });
+                }
+                
+                // Pour les autres catégories (structure standard)
+                return data.resultats.map((item, index) => {
+                    return {
+                        ...item,
+                        Rang: index + 1,
+                        GainPart: formatNumber(item.GainPart || 0)
+                    };
+                });
+            }
+            
+            // Fonction pour obtenir des données de démonstration si le chargement échoue
+            function getDemoData(category) {
+                let demoData = [];
+                
+                // Générer des données de démonstration pour chaque catégorie
+                if (category === 'jockeys') {
+                    demoData = [
+                        { Rang: 1, NomPostal: "CRISTIAN DEMURO", Victoires: 63, Place: 188, GainPart: "3 851" },
+                        { Rang: 2, NomPostal: "MAXIME GUYON", Victoires: 52, Place: 187, GainPart: "3 886" },
+                        { Rang: 3, NomPostal: "DELPHINE SANTIAGO", Victoires: 31, Place: 81, GainPart: "1 909" },
+                        { Rang: 4, NomPostal: "AUGUSTIN MADAMET", Victoires: 29, Place: 164, GainPart: "2 146" },
+                        { Rang: 5, NomPostal: "STEPHANE PASQUIER", Victoires: 26, Place: 97, GainPart: "3 236" }
+                    ];
+                } else if (category === 'chevaux') {
+                    demoData = [
+                        { Rang: 1, Nom: "MAP OF STARS", NbCourses: 3, NbVictoires: 2, NbPlace: 0, AllocTotale: "114 100" },
+                        { Rang: 2, Nom: "LANZELOT GOLD", NbCourses: 4, NbVictoires: 2, NbPlace: 2, AllocTotale: "88 160" },
+                        { Rang: 3, Nom: "SAINT ETIENNE", NbCourses: 4, NbVictoires: 4, NbPlace: 9, AllocTotale: "109 500" },
+                        { Rang: 4, Nom: "AMERICAN FLAG", NbCourses: 3, NbVictoires: 3, NbPlace: 7, AllocTotale: "149 125" },
+                        { Rang: 5, Nom: "HYPERCORE", NbCourses: 5, NbVictoires: 5, NbPlace: 8, AllocTotale: "49 250" }
+                    ];
+                } else {
+                    // Pour les autres catégories
+                    demoData = [
+                        { Rang: 1, NomPostal: "Y. BARBEROT", Victoires: 32, Place: 67, GainPart: "432 000" },
+                        { Rang: 2, NomPostal: "P. GROUALLE", Victoires: 27, Place: 63, GainPart: "387 500" },
+                        { Rang: 3, NomPostal: "M. RULEC", Victoires: 24, Place: 56, GainPart: "356 200" },
+                        { Rang: 4, NomPostal: "G. MOSSE", Victoires: 21, Place: 51, GainPart: "312 450" },
+                        { Rang: 5, NomPostal: "S. JESUS", Victoires: 19, Place: 47, GainPart: "298 700" }
+                    ];
+                }
+                
+                for (let i = 6; i <= 50; i++) {
+                    demoData.push({
+                        Rang: i,
+                        NomPostal: category === 'chevaux' ? `Cheval Test ${i}` : `Nom Test ${i}`,
+                        Nom: category === 'chevaux' ? `Cheval Test ${i}` : undefined,
+                        Victoires: Math.floor(Math.random() * 20),
+                        Place: Math.floor(Math.random() * 50),
+                        NbCourses: category === 'chevaux' ? Math.floor(Math.random() * 30) : undefined,
+                        NbVictoires: category === 'chevaux' ? Math.floor(Math.random() * 15) : undefined,
+                        NbPlace: category === 'chevaux' ? Math.floor(Math.random() * 30) : undefined,
+                        GainPart: formatNumber(Math.floor(Math.random() * 500000)),
+                        AllocTotale: category === 'chevaux' ? formatNumber(Math.floor(Math.random() * 500000)) : undefined
+                    });
+                }
+                
+                return demoData;
+            }
+            
+            // Fonction pour formater les nombres
+            function formatNumber(number) {
+                if (typeof number === 'string') {
+                    // Supprimer les espaces et remplacer la virgule par un point
+                    number = parseFloat(number.replace(/\s+/g, '').replace(',', '.'));
+                }
+                
+                if (isNaN(number)) {
+                    return "0";
+                }
+                
+                // Formater le nombre avec des séparateurs de milliers
+                return number.toLocaleString('fr-FR');
+            }
+            
+            // Fonction pour afficher les données dans un tableau
+            function displayResults(data, page = 1) {
+                const startIndex = (page - 1) * itemsPerPage;
+                const endIndex = startIndex + itemsPerPage;
+                const pageData = data.slice(startIndex, endIndex);
+                
+                if (data.length === 0) {
+                    resultsContainer.innerHTML = `
+                        <div class="no-results">
+                            <i class="fas fa-search"></i>
+                            <h3>Aucun résultat trouvé</h3>
+                            <p>Essayez de modifier votre recherche</p>
+                        </div>
+                    `;
+                    pagination.innerHTML = '';
+                    return;
+                }
+                
+                const columns = COLUMNS[currentCategory];
+                
+                let tableHTML = `
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                `;
+                
+                // Générer les en-têtes du tableau
+                columns.forEach(column => {
+                    tableHTML += `<th>${column.label}</th>`;
+                });
+                
+                tableHTML += `
+                                </tr>
+                            </thead>
+                            <tbody>
+                `;
+                
+                // Générer les lignes du tableau
+                pageData.forEach(item => {
+                    tableHTML += `<tr>`;
+                    
+                    columns.forEach(column => {
+                        const value = item[column.key];
+                        const cellClass = column.class || '';
+                        
+                        // Appliquer le renderer s'il existe, sinon utiliser la valeur telle quelle
+                        const cellContent = column.renderer 
+                            ? column.renderer(value, item) 
+                            : value;
+                        
+                        // Ajouter des classes spéciales pour les rangs
+                        const rankClass = column.key === 'Rang' ? ` rank-${value}` : '';
+                        
+                        tableHTML += `<td class="${cellClass}${rankClass}">${cellContent}</td>`;
+                    });
+                    
+                    tableHTML += `</tr>`;
+                });
+                
+                tableHTML += `
+                            </tbody>
+                        </table>
+                    </div>
+                `;
+                
+                resultsContainer.innerHTML = tableHTML;
+                
+                // Mettre à jour la pagination
+                updatePagination(data.length);
+            }
+            
+            // Fonction pour mettre à jour la pagination
+            function updatePagination(totalItems) {
+                const totalPages = Math.ceil(totalItems / itemsPerPage);
+                
+                if (totalPages <= 1) {
+                    pagination.innerHTML = '';
+                    return;
+                }
+                
+                let paginationHTML = '';
+                
+                // Bouton précédent
+                paginationHTML += `
+                    <button class="page-btn" 
+                            ${currentPage === 1 ? 'disabled' : ''} 
+                            onclick="changePage(${currentPage - 1})">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                `;
+                
+                // Limiter le nombre de boutons de page affichés
+                const maxButtons = 5;
+                let startPage = Math.max(1, currentPage - Math.floor(maxButtons / 2));
+                let endPage = Math.min(totalPages, startPage + maxButtons - 1);
+                
+                if (endPage - startPage + 1 < maxButtons) {
+                    startPage = Math.max(1, endPage - maxButtons + 1);
+                }
+                
+                // Première page
+                if (startPage > 1) {
+                    paginationHTML += `
+                        <button class="page-btn" onclick="changePage(1)">1</button>
+                        ${startPage > 2 ? '<span class="page-btn" style="cursor: default;">...</span>' : ''}
+                    `;
+                }
+                
+                // Pages intermédiaires
+                for (let i = startPage; i <= endPage; i++) {
+                    paginationHTML += `
+                        <button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">
+                            ${i}
+                        </button>
+                    `;
+                }
+                
+                // Dernière page
+                if (endPage < totalPages) {
+                    paginationHTML += `
+                        ${endPage < totalPages - 1 ? '<span class="page-btn" style="cursor: default;">...</span>' : ''}
+                        <button class="page-btn" onclick="changePage(${totalPages})">${totalPages}</button>
+                    `;
+                }
+                
+                // Bouton suivant
+                paginationHTML += `
+                    <button class="page-btn" 
+                            ${currentPage === totalPages ? 'disabled' : ''} 
+                            onclick="changePage(${currentPage + 1})">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                `;
+                
+                pagination.innerHTML = paginationHTML;
+                
+                // Définir la fonction changePage dans le scope global
+                window.changePage = function(page) {
+                    if (page < 1 || page > totalPages) {
+                        return;
+                    }
+                    
+                    currentPage = page;
+                    displayResults(filteredData, currentPage);
+                    
+                    // Faire défiler vers le haut du tableau
+                    resultsContainer.scrollIntoView({ behavior: 'smooth' });
+                };
+            }
+            
+            // Fonction pour filtrer les données en fonction de la recherche
+            function filterData(data, searchTerm) {
+                if (!searchTerm) {
+                    return data;
+                }
+                
+                searchTerm = searchTerm.toLowerCase();
+                
+                return data.filter(item => {
+                    // Pour les chevaux, chercher dans Nom
+                    if (currentCategory === 'chevaux') {
+                        return item.Nom && item.Nom.toLowerCase().includes(searchTerm);
+                    }
+                    
+                    // Pour les autres catégories, chercher dans NomPostal
+                    return item.NomPostal && item.NomPostal.toLowerCase().includes(searchTerm);
+                });
+            }
+            
+            // Fonction pour charger et afficher les données d'une catégorie
+            async function loadCategory(category) {
+                currentCategory = category;
+                currentPage = 1;
+                
+                // Mettre à jour les onglets actifs
+                tabs.forEach(tab => {
+                    if (tab.dataset.category === category) {
+                        tab.classList.add('active');
+                    } else {
+                        tab.classList.remove('active');
+                    }
+                });
+                
+                // Charger les données
+                const data = await loadData(category);
+                
+                // Filtrer les données si nécessaire
+                const searchTerm = searchInput.value.trim();
+                filteredData = filterData(data, searchTerm);
+                
+                // Afficher les résultats
+                displayResults(filteredData, currentPage);
+            }
+            
+            // Événements
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const category = this.dataset.category;
+                    loadCategory(category);
+                });
+            });
+            
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.trim();
+                
+                // Afficher/masquer le bouton d'effacement
+                searchClear.style.display = searchTerm ? 'block' : 'none';
+                
+                // Filtrer les données
+                filteredData = filterData(allData[currentCategory] || [], searchTerm);
+                currentPage = 1;
+                displayResults(filteredData, currentPage);
+            });
+            
+            searchClear.addEventListener('click', function() {
+                searchInput.value = '';
+                searchInput.focus();
+                this.style.display = 'none';
+                
+                // Réinitialiser le filtre
+                filteredData = allData[currentCategory] || [];
+                currentPage = 1;
+                displayResults(filteredData, currentPage);
+            });
+            
+            // Masquer le bouton d'effacement au chargement
+            searchClear.style.display = 'none';
+            
+            // Charger la catégorie initiale
+            loadCategory(currentCategory);
+        });
+    </script>
+</body>
+</html>
