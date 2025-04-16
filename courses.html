@@ -200,12 +200,31 @@
             z-index: 10;
         }
         
-        .data-table tr:nth-child(even) {
+        .data-table tr.hippodrome-row {
             background-color: rgba(22, 62, 60, 0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
         }
         
-        .data-table tr:nth-child(odd) {
-            background-color: rgba(22, 62, 60, 0.2);
+        .data-table tr.hippodrome-row:hover {
+            background-color: rgba(26, 81, 78, 0.6);
+        }
+        
+        .data-table tr.hippodrome-row.active {
+            background-color: var(--light-teal);
+        }
+        
+        .data-table tr.course-row {
+            background-color: rgba(10, 30, 30, 0.2);
+            display: none;
+        }
+        
+        .data-table tr.course-row.visible {
+            display: table-row;
+        }
+        
+        .data-table tr.course-row:hover {
+            background-color: rgba(26, 81, 78, 0.4);
         }
         
         .data-table td {
@@ -214,9 +233,8 @@
             transition: all 0.3s ease;
         }
         
-        .data-table tr:hover td {
-            background-color: rgba(26, 81, 78, 0.7);
-            transform: translateX(5px);
+        .data-table td.course-indent {
+            padding-left: 3rem;
         }
         
         .data-table a {
@@ -354,49 +372,6 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         
-        .pagination {
-            display: flex;
-            gap: 6px;
-            justify-content: center;
-            margin-top: 2rem;
-        }
-        
-        .page-btn {
-            min-width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 8px;
-            border: none;
-            background: rgba(22, 62, 60, 0.4);
-            color: var(--light-gold);
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            font-family: 'Montserrat', sans-serif;
-        }
-        
-        .page-btn:hover {
-            background: rgba(26, 81, 78, 0.7);
-            transform: translateY(-2px);
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-        }
-        
-        .page-btn.active {
-            background: linear-gradient(145deg, var(--gold), #b19030);
-            color: var(--dark-teal);
-            font-weight: 600;
-            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
-        }
-        
-        .page-btn:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
-            transform: none;
-            box-shadow: none;
-        }
-        
         .course-details {
             background-color: rgba(22, 62, 60, 0.5);
             border: 1px solid rgba(233, 209, 140, 0.2);
@@ -511,6 +486,14 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         
+        .toggle-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .toggle-icon.open {
+            transform: rotate(90deg);
+        }
+        
         @media (max-width: 768px) {
             .container {
                 padding: 1rem;
@@ -563,13 +546,12 @@
         
         <div class="search-container">
             <i class="fas fa-search"></i>
-            <input type="text" id="search-input" placeholder="Rechercher une course...">
+            <input type="text" id="search-input" placeholder="Rechercher une course ou un hippodrome...">
             <button class="search-clear" id="search-clear"><i class="fas fa-times"></i></button>
         </div>
         
-        <div class="tabs" id="hippodrome-tabs">
-            <!-- Les onglets d'hippodromes seront générés par JavaScript -->
-            <div class="tab active" data-hippodrome="all">Tous les hippodromes</div>
+        <div class="tabs">
+            <div class="tab active">Tous les hippodromes</div>
         </div>
         
         <div id="results-container">
@@ -581,10 +563,6 @@
         
         <div id="course-details" class="course-details" style="display: none;">
             <!-- Les détails d'une course spécifique (participants) -->
-        </div>
-        
-        <div class="pagination" id="pagination">
-            <!-- Les boutons de pagination seront générés par JavaScript -->
         </div>
         
         <a href="index.html" class="home-link">
@@ -601,19 +579,13 @@
         document.addEventListener('DOMContentLoaded', function() {
             // Variables globales
             let allCourses = [];
-            let hippodromes = [];
-            let currentHippodrome = 'all';
-            let currentPage = 1;
-            const itemsPerPage = 15;
-            let filteredCourses = [];
+            let hippodromeCourses = {}; // Objet pour stocker les courses par hippodrome
             
             // Éléments DOM
             const resultsContainer = document.getElementById('results-container');
             const searchInput = document.getElementById('search-input');
             const searchClear = document.getElementById('search-clear');
-            const hippodromeTabs = document.getElementById('hippodrome-tabs');
             const courseDetails = document.getElementById('course-details');
-            const pagination = document.getElementById('pagination');
             const lastUpdateEl = document.getElementById('last-update');
             
             // Déterminer si nous sommes sur GitHub Pages ou en local
@@ -704,12 +676,17 @@
                     // Stocker toutes les courses traitées
                     allCourses = processedCourses;
                     
-                    // Extraire la liste des hippodromes uniques
-                    hippodromes = [...new Set(allCourses.map(course => course.hippodrome))].sort();
+                    // Regrouper les courses par hippodrome
+                    hippodromeCourses = {};
+                    allCourses.forEach(course => {
+                        if (!hippodromeCourses[course.hippodrome]) {
+                            hippodromeCourses[course.hippodrome] = [];
+                        }
+                        hippodromeCourses[course.hippodrome].push(course);
+                    });
                     
-                    // Mettre à jour l'interface
-                    updateHippodromeTabs();
-                    filterAndDisplayCourses();
+                    // Afficher les hippodromes
+                    displayHippodromes();
                     
                     // Mettre à jour la date si disponible
                     if (allCourses.length > 0 && allCourses[0].date) {
@@ -722,90 +699,53 @@
                 }
             }
             
-            // Fonction pour mettre à jour les onglets d'hippodromes
-            function updateHippodromeTabs() {
-                if (hippodromes.length === 0) return;
-                
-                let tabsHTML = `<div class="tab ${currentHippodrome === 'all' ? 'active' : ''}" data-hippodrome="all">Tous les hippodromes</div>`;
-                
-                hippodromes.forEach(hippodrome => {
-                    tabsHTML += `
-                        <div class="tab ${currentHippodrome === hippodrome ? 'active' : ''}" data-hippodrome="${hippodrome}">
-                            ${hippodrome}
-                        </div>
-                    `;
-                });
-                
-                hippodromeTabs.innerHTML = tabsHTML;
-                
-                // Ajouter des événements de clic aux onglets
-                document.querySelectorAll('.tab').forEach(tab => {
-                    tab.addEventListener('click', function() {
-                        currentHippodrome = this.dataset.hippodrome;
-                        currentPage = 1;
-                        
-                        // Masquer les détails d'une course précédemment sélectionnée
-                        courseDetails.style.display = 'none';
-                        
-                        // Mettre à jour les onglets actifs
-                        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-                        this.classList.add('active');
-                        
-                        // Filtrer et afficher les courses
-                        filterAndDisplayCourses();
-                    });
-                });
-            }
-            
-            // Fonction pour filtrer et afficher les courses
-            function filterAndDisplayCourses() {
-                // Filtrer par hippodrome
-                filteredCourses = allCourses;
-                if (currentHippodrome !== 'all') {
-                    filteredCourses = allCourses.filter(course => course.hippodrome === currentHippodrome);
-                }
-                
-                // Filtrer par recherche
-                const searchTerm = searchInput.value.trim().toLowerCase();
-                if (searchTerm) {
-                    filteredCourses = filteredCourses.filter(course => {
-                        // Vérifier le nom de la course
-                        if (course.nom.toLowerCase().includes(searchTerm)) return true;
-                        
-                        // Vérifier le nom des participants
-                        return course.participants.some(p => 
-                            (p.cheval && p.cheval.toLowerCase().includes(searchTerm)) ||
-                            (p.entraineur && p.entraineur.toLowerCase().includes(searchTerm)) ||
-                            (p.proprietaire && p.proprietaire.toLowerCase().includes(searchTerm))
-                        );
-                    });
-                }
-                
-                // Afficher les courses filtrées
-                displayCourses(filteredCourses, currentPage);
-                
-                // Mettre à jour la pagination
-                updatePagination(filteredCourses.length);
-            }
-            
-            // Fonction pour afficher les courses dans un format tabulaire
-            function displayCourses(courses, page) {
-                // Si aucune course n'est trouvée
-                if (courses.length === 0) {
+            // Fonction pour afficher les hippodromes avec leurs courses
+            function displayHippodromes() {
+                // Si aucun hippodrome n'est trouvé
+                if (Object.keys(hippodromeCourses).length === 0) {
                     resultsContainer.innerHTML = `
                         <div class="no-results">
                             <i class="fas fa-search"></i>
                             <h3>Aucune course trouvée</h3>
-                            <p>Essayez de modifier votre recherche ou sélectionnez un autre hippodrome</p>
+                            <p>Essayez de modifier votre recherche</p>
                         </div>
                     `;
                     return;
                 }
                 
-                // Calculer les indices pour la pagination
-                const startIndex = (page - 1) * itemsPerPage;
-                const endIndex = Math.min(startIndex + itemsPerPage, courses.length);
-                const pageData = courses.slice(startIndex, endIndex);
+                // Filtrer les hippodromes par recherche
+                const searchTerm = searchInput.value.trim().toLowerCase();
+                let filteredHippodromes = Object.keys(hippodromeCourses);
+                
+                if (searchTerm) {
+                    // Filtrer les hippodromes dont le nom ou une course correspond à la recherche
+                    filteredHippodromes = filteredHippodromes.filter(hippodrome => {
+                        // Vérifier si le nom de l'hippodrome correspond
+                        if (hippodrome.toLowerCase().includes(searchTerm)) return true;
+                        
+                        // Vérifier si une des courses correspond
+                        return hippodromeCourses[hippodrome].some(course => 
+                            course.nom.toLowerCase().includes(searchTerm) ||
+                            course.participants.some(p => 
+                                (p.cheval && p.cheval.toLowerCase().includes(searchTerm)) ||
+                                (p.entraineur && p.entraineur.toLowerCase().includes(searchTerm)) ||
+                                (p.proprietaire && p.proprietaire.toLowerCase().includes(searchTerm))
+                            )
+                        );
+                    });
+                }
+                
+                // Si aucun hippodrome ne correspond à la recherche
+                if (filteredHippodromes.length === 0) {
+                    resultsContainer.innerHTML = `
+                        <div class="no-results">
+                            <i class="fas fa-search"></i>
+                            <h3>Aucun résultat trouvé</h3>
+                            <p>Essayez de modifier votre recherche</p>
+                        </div>
+                    `;
+                    return;
+                }
                 
                 // Construire le tableau HTML
                 let tableHTML = `
@@ -814,30 +754,44 @@
                             <thead>
                                 <tr>
                                     <th>Hippodrome</th>
-                                    <th>Course</th>
+                                    <th>Nombre de courses</th>
                                     <th>Date</th>
-                                    <th>Participants</th>
-                                    <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
                 `;
                 
-                // Ajouter chaque course au tableau
-                pageData.forEach(course => {
+                // Trier les hippodromes par ordre alphabétique
+                filteredHippodromes.sort();
+                
+                // Ajouter chaque hippodrome et ses courses
+                filteredHippodromes.forEach(hippodrome => {
+                    const courses = hippodromeCourses[hippodrome];
+                    const hippodromeId = hippodrome.replace(/\s+/g, '-').toLowerCase();
+                    
+                    // Ligne de l'hippodrome
                     tableHTML += `
-                        <tr>
-                            <td>${course.hippodrome}</td>
-                            <td>${course.nom}</td>
-                            <td>${course.date}</td>
-                            <td>${course.participants.length}</td>
-                            <td>
-                                <button class="action-button" onclick="showCourseDetails('${encodeURIComponent(JSON.stringify(course))}')">
-                                    <i class="fas fa-info-circle"></i> Détails
-                                </button>
-                            </td>
+                        <tr class="hippodrome-row" data-hippodrome="${hippodromeId}">
+                            <td><i class="fas fa-chevron-right toggle-icon" id="toggle-${hippodromeId}"></i> ${hippodrome}</td>
+                            <td>${courses.length}</td>
+                            <td>${courses[0].date}</td>
                         </tr>
                     `;
+                    
+                    // Lignes des courses (initialement masquées)
+                    courses.forEach((course, index) => {
+                        tableHTML += `
+                            <tr class="course-row" data-hippodrome="${hippodromeId}">
+                                <td class="course-indent">${course.nom}</td>
+                                <td>${course.participants.length} participants</td>
+                                <td>
+                                    <button class="action-button" onclick="showCourseDetails('${encodeURIComponent(JSON.stringify(course))}')">
+                                        <i class="fas fa-info-circle"></i> Détails
+                                    </button>
+                                </td>
+                            </tr>
+                        `;
+                    });
                 });
                 
                 tableHTML += `
@@ -847,100 +801,24 @@
                 `;
                 
                 resultsContainer.innerHTML = tableHTML;
-            }
-            
-            // Fonction pour mettre à jour la pagination
-            function updatePagination(totalItems) {
-                const totalPages = Math.ceil(totalItems / itemsPerPage);
                 
-                if (totalPages <= 1) {
-                    pagination.innerHTML = '';
-                    return;
-                }
-                
-                let paginationHTML = '';
-                
-                // Bouton précédent
-                paginationHTML += `
-                    <button class="page-btn" 
-                            ${currentPage === 1 ? 'disabled' : ''} 
-                            onclick="changePage(${currentPage - 1})">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                `;
-                
-                // Limiter le nombre de boutons de page affichés
-                const maxButtons = 5;
-                let startPage = Math.max(1, currentPage - Math.floor(maxButtons / 2));
-                let endPage = Math.min(totalPages, startPage + maxButtons - 1);
-                
-                if (endPage - startPage + 1 < maxButtons) {
-                    startPage = Math.max(1, endPage - maxButtons + 1);
-                }
-                
-                // Première page
-                if (startPage > 1) {
-                    paginationHTML += `
-                        <button class="page-btn" onclick="changePage(1)">1</button>
-                        ${startPage > 2 ? '<span class="page-btn" style="cursor: default; background: transparent;">...</span>' : ''}
-                    `;
-                }
-                
-                // Pages intermédiaires
-                for (let i = startPage; i <= endPage; i++) {
-                    paginationHTML += `
-                        <button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">
-                            ${i}
-                        </button>
-                    `;
-                }
-                
-                // Dernière page
-                if (endPage < totalPages) {
-                    paginationHTML += `
-                        ${endPage < totalPages - 1 ? '<span class="page-btn" style="cursor: default; background: transparent;">...</span>' : ''}
-                        <button class="page-btn" onclick="changePage(${totalPages})\">${totalPages}</button>
-                    `;
-                }
-                
-                // Bouton suivant
-                paginationHTML += `
-                    <button class="page-btn" 
-                            ${currentPage === totalPages ? 'disabled' : ''} 
-                            onclick="changePage(${currentPage + 1})">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                `;
-                
-                pagination.innerHTML = paginationHTML;
-                
-                // Définir la fonction changePage dans le scope global
-                window.changePage = function(page) {
-                    if (page < 1 || page > totalPages || page === currentPage) {
-                        return;
-                    }
-                    
-                    currentPage = page;
-                    
-                    // Masquer les détails d'une course précédemment sélectionnée
-                    courseDetails.style.display = 'none';
-                    
-                    // Afficher un indicateur de chargement
-                    resultsContainer.innerHTML = `
-                        <div class="loading">
-                            <div class="spinner"></div>
-                            <p>Chargement des données...</p>
-                        </div>
-                    `;
-                    
-                    // Décaler l'affichage pour montrer l'animation
-                    setTimeout(() => {
-                        displayCourses(filteredCourses, currentPage);
+                // Ajouter des événements de clic aux lignes d'hippodromes
+                document.querySelectorAll('.hippodrome-row').forEach(row => {
+                    row.addEventListener('click', function() {
+                        const hippodromeId = this.dataset.hippodrome;
+                        const courses = document.querySelectorAll(`.course-row[data-hippodrome="${hippodromeId}"]`);
+                        const toggleIcon = document.getElementById(`toggle-${hippodromeId}`);
                         
-                        // Faire défiler vers le haut des résultats
-                        resultsContainer.scrollIntoView({ behavior: 'smooth' });
-                    }, 300);
-                };
+                        // Ouvrir/fermer les lignes de courses
+                        const isOpen = this.classList.toggle('active');
+                        courses.forEach(course => {
+                            course.classList.toggle('visible', isOpen);
+                        });
+                        
+                        // Animer l'icône
+                        toggleIcon.classList.toggle('open', isOpen);
+                    });
+                });
             }
             
             // Fonction pour afficher les détails d'une course
@@ -1038,8 +916,7 @@
             
             // Événement de recherche
             searchInput.addEventListener('input', function() {
-                currentPage = 1;
-                filterAndDisplayCourses();
+                displayHippodromes();
                 
                 // Afficher/masquer le bouton d'effacement
                 searchClear.style.display = this.value.trim() ? 'block' : 'none';
@@ -1050,8 +927,7 @@
                 searchInput.value = '';
                 searchInput.focus();
                 this.style.display = 'none';
-                currentPage = 1;
-                filterAndDisplayCourses();
+                displayHippodromes();
             });
             
             // Masquer le bouton d'effacement au chargement
