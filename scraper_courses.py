@@ -41,6 +41,64 @@ class ScraperCoursesFG:
             print(f"⚠️ Timeout en attendant l'élément {by}={value}: {str(e)}")
             return driver.page_source
     
+    def extract_participants_table(self, course_soup):
+        """Extrait les participants depuis le tableau de partants de la page de course"""
+        table = course_soup.find("table")
+        if not table:
+            return []
+
+        headers = []
+        thead = table.find("thead")
+        if thead:
+            headers = [th.get_text(strip=True) for th in thead.find_all("th")]
+        else:
+            # Si pas de thead, prendre la première ligne comme en-têtes
+            first_row = table.find("tr")
+            if first_row:
+                headers = [th.get_text(strip=True) for th in first_row.find_all("th") or first_row.find_all("td")]
+        
+        if not headers:
+            print("⚠️ Aucun en-tête trouvé dans le tableau des partants")
+            return []
+            
+        print(f"📊 En-têtes trouvés: {headers}")
+
+        body_rows = table.find("tbody").find_all("tr") if table.find("tbody") else table.find_all("tr")[1:] if len(table.find_all("tr")) > 1 else []
+        participants = []
+        
+        print(f"📋 Trouvé {len(body_rows)} lignes de participants")
+
+        for row in body_rows:
+            cells = row.find_all("td")
+            if len(cells) < 3:  # Un participant valide doit avoir au moins quelques cellules
+                continue
+
+            participant = {}
+            for i, cell in enumerate(cells):
+                if i >= len(headers):
+                    key = f"column_{i+1}"
+                else:
+                    key = headers[i].lower().replace(" ", "_").replace(".", "").replace("/", "_")
+                
+                value = cell.get_text(strip=True)
+                participant[key] = value
+
+                # Cherche lien
+                link = cell.find("a")
+                if link and link.get("href"):
+                    href = link["href"]
+                    if not href.startswith("http"):
+                        if not href.startswith("/"):
+                            href = "/" + href
+                        href = self.base_url + href
+                    participant[f"{key}_url"] = href
+
+            # Ne conserver que les participants avec des données significatives
+            if participant:
+                participants.append(participant)
+
+        return participants
+    
     def get_links_from_aujourdhui_page(self, driver):
         """Récupère les liens des réunions de type Plat pour aujourd'hui"""
         url = "https://www.france-galop.com/fr/courses/aujourdhui"
@@ -309,69 +367,14 @@ class ScraperCoursesFG:
                         video_href = video_link.get('href')
                         course_data["video_replay"] = f"{self.base_url}{video_href}" if video_href.startswith('/') else video_href
                     
-                    # Extraire les partants (participants)
-                    table = course_soup.find("table", class_="tableaupartants")
+                    # Extraire les partants avec la fonction dédiée
+                    participants = self.extract_participants_table(course_soup)
                     
-                    # Si nous ne trouvons pas la table avec la classe spécifique, essayons de trouver n'importe quelle table
-                    if not table:
-                        print(f"⚠️ Table des partants non trouvée pour {course_name}, essai de sélecteurs alternatifs")
-                        tables = course_soup.select("table")
-                        if tables:
-                            table = tables[0]  # Prendre la première table disponible
-                    
-                    if table:
-                        # Essayer de trouver les en-têtes dans le thead
-                        thead = table.select_one("thead")
-                        if thead:
-                            headers = [th.text.strip() for th in thead.select("th")]
-                        else:
-                            # Sinon, utiliser la première ligne comme en-têtes
-                            first_row = table.select_one("tr")
-                            if first_row:
-                                headers = [th.text.strip() for th in first_row.select("th")] or [td.text.strip() for td in first_row.select("td")]
-                            else:
-                                headers = []
-                        
-                        print(f"📊 En-têtes trouvés: {headers}")
-                        
-                        # Sélectionner les lignes du corps du tableau
-                        body_rows = table.select("tbody tr") if table.select_one("tbody") else table.select("tr")[1:] if table.select("tr") else []
-                        
-                        print(f"📋 Trouvé {len(body_rows)} lignes de participants")
-                        
-                        for tr in body_rows:
-                            cells = tr.find_all("td")
-                            if len(cells) >= min(1, len(headers)):  # Au moins une cellule
-                                participant = {}
-                                
-                                # Si nous avons des en-têtes, les utiliser pour nommer les colonnes
-                                if headers:
-                                    for i, header in enumerate(headers):
-                                        if i < len(cells):  # Éviter l'index out of range
-                                            key = header.lower().replace(' ', '_') if header else f"column_{i+1}"
-                                            # Récupérer le texte et supprimer les espaces superflus
-                                            value = cells[i].text.strip()
-                                            participant[key] = value
-                                            
-                                            # Si c'est une cellule avec un lien (comme le nom du cheval)
-                                            link = cells[i].find("a")
-                                            if link and link.get("href"):
-                                                url = f"{self.base_url}{link['href']}" if link['href'].startswith('/') else link['href']
-                                                participant[f"{key}_url"] = url
-                                else:
-                                    # Sans en-têtes, utiliser des noms génériques
-                                    for i, cell in enumerate(cells):
-                                        key = f"column_{i+1}"
-                                        value = cell.text.strip()
-                                        participant[key] = value
-                                        
-                                        # Chercher les liens
-                                        link = cell.find("a")
-                                        if link and link.get("href"):
-                                            url = f"{self.base_url}{link['href']}" if link['href'].startswith('/') else link['href']
-                                            participant[f"{key}_url"] = url
-                                
-                                course_data["participants"].append(participant)
+                    if participants:
+                        course_data["participants"] = participants
+                        print(f"✅ Extrait {len(participants)} participants pour {course_name}")
+                    else:
+                        print(f"⚠️ Aucun participant extrait pour {course_name}")
                     
                     # MODIFICATION: Ne garder que les courses avec des participants réels
                     if course_data.get("participants") and len(course_data["participants"]) >= 2 and \
