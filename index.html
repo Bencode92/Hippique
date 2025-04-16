@@ -301,6 +301,19 @@
             box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
         }
         
+        .viewall-link {
+            display: block;
+            text-align: right;
+            margin-top: 1rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        
+        .viewall-link:hover {
+            text-decoration: underline;
+        }
+        
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
@@ -343,11 +356,11 @@
         
         <nav class="main-nav">
             <ul>
-                <li class="active"><i class="fas fa-home"></i> Accueil</li>
-                <li><i class="fas fa-flag-checkered"></i> Courses</li>
-                <li><i class="fas fa-user"></i> Jockeys</li>
-                <li><i class="fas fa-horse"></i> Chevaux</li>
-                <li><i class="fas fa-users"></i> Entraîneurs</li>
+                <li class="active" data-section="accueil"><i class="fas fa-home"></i> Accueil</li>
+                <li data-section="courses"><i class="fas fa-flag-checkered"></i> Courses</li>
+                <li data-section="jockeys"><i class="fas fa-user"></i> Jockeys</li>
+                <li data-section="chevaux"><i class="fas fa-horse"></i> Chevaux</li>
+                <li data-section="entraineurs"><i class="fas fa-users"></i> Entraîneurs</li>
             </ul>
         </nav>
         
@@ -392,11 +405,11 @@
                         16/04/2025
                     </div>
                 </div>
-                <a href="#" class="btn-primary"><i class="fas fa-chart-line"></i> Analyser la course</a>
+                <a href="classement.html" class="btn-primary"><i class="fas fa-chart-line"></i> Analyser les données</a>
             </div>
             
             <div class="section-container">
-                <h2>Top Jockeys</h2>
+                <h2>Top Jockeys <a href="classement.html?category=jockeys" class="viewall-link">Voir tout <i class="fas fa-chevron-right"></i></a></h2>
                 <div class="jockey-list">
                     <div class="jockey-item">
                         <div class="jockey-img">
@@ -451,11 +464,69 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="section-container">
+                <h2>Top Chevaux <a href="classement.html?category=chevaux" class="viewall-link">Voir tout <i class="fas fa-chevron-right"></i></a></h2>
+                <div class="jockey-list">
+                    <div class="jockey-item">
+                        <div class="jockey-img">
+                            <i class="fas fa-horse"></i>
+                        </div>
+                        <div class="jockey-info">
+                            <h3>MAP OF STARS</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 92%;"></div>
+                            </div>
+                            <span class="score">114100 €</span>
+                        </div>
+                    </div>
+                    
+                    <div class="jockey-item">
+                        <div class="jockey-img">
+                            <i class="fas fa-horse"></i>
+                        </div>
+                        <div class="jockey-info">
+                            <h3>LANZELOT GOLD</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 77%;"></div>
+                            </div>
+                            <span class="score">88160 €</span>
+                        </div>
+                    </div>
+                    
+                    <div class="jockey-item">
+                        <div class="jockey-img">
+                            <i class="fas fa-horse"></i>
+                        </div>
+                        <div class="jockey-info">
+                            <h3>SAINT ETIENNE</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 82%;"></div>
+                            </div>
+                            <span class="score">109500 €</span>
+                        </div>
+                    </div>
+                    
+                    <div class="jockey-item">
+                        <div class="jockey-img">
+                            <i class="fas fa-horse"></i>
+                        </div>
+                        <div class="jockey-info">
+                            <h3>AMERICAN FLAG</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 89%;"></div>
+                            </div>
+                            <span class="score">149125 €</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         
         <footer>
             <h1>ANALYSE HIPPIQUE</h1>
             <p>Système d'analyse pour événements hippiques - Dernière mise à jour: 16/04/2025</p>
+            <p><a href="classement.html" style="color: var(--accent); text-decoration: none;">Classements complets</a></p>
         </footer>
     </div>
 
@@ -478,6 +549,14 @@
             // Navigation
             document.querySelectorAll('.main-nav li').forEach(item => {
                 item.addEventListener('click', function() {
+                    const section = this.dataset.section;
+                    
+                    // Si la section est jockeys, chevaux ou entraineurs, rediriger vers la page classement
+                    if (['jockeys', 'chevaux', 'entraineurs'].includes(section)) {
+                        window.location.href = `classement.html?category=${section}`;
+                        return;
+                    }
+                    
                     document.querySelectorAll('.main-nav li').forEach(li => {
                         li.classList.remove('active');
                     });
@@ -488,20 +567,34 @@
             // Recherche
             const searchInput = document.querySelector('.search input');
             if (searchInput) {
-                searchInput.addEventListener('input', function() {
-                    const searchTerm = this.value.toLowerCase();
-                    
-                    // Filtrer les jockeys en fonction du terme de recherche
-                    document.querySelectorAll('.jockey-item').forEach(item => {
-                        const jockeyName = item.querySelector('h3').textContent.toLowerCase();
-                        
-                        if (jockeyName.includes(searchTerm)) {
-                            item.style.display = 'flex';
-                        } else {
-                            item.style.display = 'none';
+                searchInput.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        const query = this.value.trim();
+                        if (query) {
+                            window.location.href = `classement.html?search=${encodeURIComponent(query)}`;
                         }
-                    });
+                    }
                 });
+                
+                document.querySelector('.search button').addEventListener('click', function() {
+                    const query = searchInput.value.trim();
+                    if (query) {
+                        window.location.href = `classement.html?search=${encodeURIComponent(query)}`;
+                    }
+                });
+            }
+            
+            // Vérifier si un paramètre URL a été passé pour ouvrir une section spécifique
+            const urlParams = new URLSearchParams(window.location.search);
+            const category = urlParams.get('category');
+            if (category) {
+                const categoryElement = document.querySelector(`.main-nav li[data-section="${category}"]`);
+                if (categoryElement) {
+                    document.querySelectorAll('.main-nav li').forEach(li => {
+                        li.classList.remove('active');
+                    });
+                    categoryElement.classList.add('active');
+                }
             }
         });
     </script>
