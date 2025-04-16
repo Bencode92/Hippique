@@ -35,6 +35,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Récupérer tout l'historique pour éviter les problèmes de fusion
       
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -67,6 +69,9 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          
+          # Synchroniser avec le dépôt distant avant de committer
+          git pull origin main --rebase
           
           # Ajouter les fichiers pertinents
           git add data/courses/*.json
