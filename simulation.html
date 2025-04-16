@@ -124,32 +124,74 @@
             margin-bottom: 1rem;
         }
         
+        /* Nouveau style moderne pour les entrées de chevaux */
         .horse-entry {
             display: flex;
-            gap: 0.5rem;
-            margin-bottom: 0.5rem;
             align-items: center;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: rgba(16, 40, 60, 0.4);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
         }
         
-        .horse-number {
-            background-color: var(--gold);
-            color: var(--dark-teal);
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
+        .horse-entry:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .horse-entry .horse-number {
             display: flex;
             align-items: center;
             justify-content: center;
+            width: 40px;
+            height: 40px;
+            font-size: 1.1rem;
             font-weight: bold;
-        }
-        
-        body.ev-mode .horse-number {
-            background-color: var(--ev-accent);
-            color: white;
+            color: #fff;
+            background-color: #3498db;
+            border-radius: 0;
         }
         
         .horse-entry input {
             flex: 1;
+            padding: 12px 15px;
+            border: none;
+            background-color: transparent;
+            color: var(--light-gold);
+            font-size: 1rem;
+            outline: none;
+            transition: background-color 0.3s;
+        }
+        
+        .horse-entry input:focus {
+            background-color: rgba(10, 30, 60, 0.6);
+        }
+        
+        .horse-entry input::placeholder {
+            color: rgba(233, 209, 140, 0.5);
+        }
+        
+        body.ev-mode .horse-entry {
+            background-color: rgba(30, 58, 112, 0.4);
+        }
+        
+        body.ev-mode .horse-entry .horse-number {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        body.ev-mode .horse-entry input {
+            color: #e6f2ff;
+        }
+        
+        body.ev-mode .horse-entry input:focus {
+            background-color: rgba(30, 58, 112, 0.6);
+        }
+        
+        body.ev-mode .horse-entry input::placeholder {
+            color: rgba(230, 242, 255, 0.5);
         }
         
         .action-buttons {
@@ -486,6 +528,48 @@
             background-color: rgba(233, 209, 140, 0.1) !important;
         }
         
+        /* Styles pour les boutons d'action du bas */
+        .form-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        
+        .btn-action {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            color: white;
+        }
+        
+        .btn-clear {
+            background-color: #455a64;
+        }
+        
+        .btn-load {
+            background-color: #546e7a;
+        }
+        
+        .btn-calculate {
+            background-color: #3498db;
+            flex: 1;
+        }
+        
+        .btn-action:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-action i {
+            margin-right: 8px;
+        }
+        
         @media (max-width: 768px) {
             .action-buttons {
                 flex-direction: column;
@@ -574,17 +658,17 @@
                     
                     <h3>Entrez les cotes des chevaux</h3>
                     <div class="horse-entries" id="horseEntries">
-                        <!-- Les entrées seront générées automatiquement en fonction du nombre de chevaux -->
+                        <!-- Les entrées seront générées dynamiquement par le JavaScript -->
                     </div>
                     
-                    <div class="action-buttons">
-                        <button class="action-btn secondary" id="clearForm">
+                    <div class="form-actions">
+                        <button class="btn-action btn-clear" id="clearForm">
                             <i class="fas fa-trash"></i> Vider le formulaire
                         </button>
-                        <button class="action-btn secondary" id="loadExample">
+                        <button class="btn-action btn-load" id="loadExample">
                             <i class="fas fa-lightbulb"></i> Charger un exemple
                         </button>
-                        <button class="action-btn primary" id="calculateBets">
+                        <button class="btn-action btn-calculate" id="calculateBets">
                             <i class="fas fa-calculator"></i> Calculer les stratégies optimales
                         </button>
                     </div>
@@ -652,6 +736,8 @@
             const body = document.body;
             const toggleBackground = document.getElementById('toggleBackground');
             const toggleButton = document.getElementById('toggleButton');
+            const horseEntriesContainer = document.getElementById('horseEntries');
+            const horseCountInput = document.getElementById('horseCount');
             
             // État initial
             let isEVMode = false;
@@ -675,6 +761,42 @@
                     window.onStrategyToggleChange(isEVMode);
                 }
             });
+            
+            // Fonction pour générer les entrées de chevaux basées sur le nombre spécifié
+            function generateHorseEntries(count) {
+                // Vider le conteneur d'abord
+                horseEntriesContainer.innerHTML = '';
+                
+                // Générer les entrées
+                for (let i = 1; i <= count; i++) {
+                    addHorseEntry(i);
+                }
+            }
+            
+            // Fonction pour ajouter une ligne de cheval
+            function addHorseEntry(number, odds = '') {
+                const entry = document.createElement('div');
+                entry.className = 'horse-entry';
+                
+                entry.innerHTML = `
+                    <div class="horse-number">${number}</div>
+                    <input type="number" placeholder="Cote du cheval ${number}" class="horse-odds" min="1.01" step="0.01" value="${odds}">
+                `;
+                
+                horseEntriesContainer.appendChild(entry);
+                return entry;
+            }
+            
+            // Événement pour détecter le changement du nombre de chevaux
+            horseCountInput.addEventListener('change', function() {
+                const count = parseInt(this.value);
+                if (!isNaN(count) && count >= 2 && count <= 20) {
+                    generateHorseEntries(count);
+                }
+            });
+            
+            // Initialiser les entrées de chevaux
+            generateHorseEntries(parseInt(horseCountInput.value) || 5);
             
             function updateMaxPerHorseVisibility(isEVStrategy) {
                 // Ajouter une transition fluide
@@ -722,6 +844,53 @@
                 };
             `;
             document.head.appendChild(originalScript);
+            
+            // Connecter les boutons d'action
+            document.getElementById('clearForm').addEventListener('click', function() {
+                // Réinitialiser les valeurs par défaut
+                document.getElementById('totalBet').value = 50;
+                document.getElementById('maxPerHorse').value = 30;
+                horseCountInput.value = 5;
+                
+                // Régénérer les entrées
+                generateHorseEntries(5);
+                
+                // Cacher les résultats et l'erreur
+                document.getElementById('resultContainer').style.display = 'none';
+                document.getElementById('errorMessage').style.display = 'none';
+            });
+            
+            // Exemple de données (à connecter au script original si nécessaire)
+            const exampleData = {
+                "SUENA EL DEMBOW": 3,
+                "JOUMA": 7.8,
+                "ALCAZAR DE SEGOVIA": 4.5,
+                "GANO Y VUELVO": 6.1,
+                "WHITE SPIRIT": 3
+            };
+            
+            document.getElementById('loadExample').addEventListener('click', function() {
+                // Mettre à jour le nombre de chevaux
+                const exampleCount = Object.keys(exampleData).length;
+                horseCountInput.value = exampleCount;
+                
+                // Vider et régénérer le formulaire
+                generateHorseEntries(exampleCount);
+                
+                // Charger l'exemple
+                let i = 1;
+                for (const odds of Object.values(exampleData)) {
+                    const entry = horseEntriesContainer.children[i - 1];
+                    if (entry) {
+                        entry.querySelector('.horse-odds').value = odds;
+                    }
+                    i++;
+                }
+                
+                // Cacher les résultats et l'erreur
+                document.getElementById('resultContainer').style.display = 'none';
+                document.getElementById('errorMessage').style.display = 'none';
+            });
         });
     </script>
 </body>
