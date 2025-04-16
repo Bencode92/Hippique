@@ -1,193 +1,125 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Analyse Hippique</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyse Hippique</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-  <!-- Geometric background elements -->
-  <div class="geometric-lines">
-    <div class="line line-1"></div>
-    <div class="line line-2"></div>
-    <div class="line line-3"></div>
-    <div class="line line-4"></div>
-  </div>
-  
-  <!-- Curved paths -->
-  <div class="curved-path curve-1"></div>
-  <div class="curved-path curve-2"></div>
-  <div class="curved-path curve-3"></div>
-  <div class="curved-path curve-4"></div>
-  
-  <!-- Horse silhouettes -->
-  <div class="horse-silhouette horse-left"></div>
-  <div class="horse-silhouette horse-right"></div>
-  
-  <!-- Data points -->
-  <div class="data-point point-1"></div>
-  <div class="data-point point-2"></div>
-  <div class="data-point point-3"></div>
-  <div class="data-point point-4"></div>
-  <div class="data-point point-5"></div>
-  <div class="data-point point-6"></div>
-  <div class="data-point point-7"></div>
-  <div class="data-point point-8"></div>
-  <div class="data-point point-9"></div>
+    <header>
+        <div class="logo">
+            <i class="fas fa-horse-head" style="font-size: 2rem; color: var(--gold);"></i>
+            <h1>ANALYSE HIPPIQUE</h1>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Rechercher un cheval, jockey...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </header>
 
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <div class="header-content">
-        <a href="#" class="logo">
-          <i class="fas fa-horse-head"></i>ANALYSE HIPPIQUE
-        </a>
-        <div class="search-bar">
-          <input type="text" placeholder="Rechercher un cheval, jockey..." id="searchInput">
-          <i class="fas fa-search"></i>
+    <main>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3><i class="fas fa-flag-checkered"></i> Courses Analysées</h3>
+                <div class="value">73</div>
+                <div class="trend positive">+12%</div>
+            </div>
+            <div class="stat-card">
+                <h3><i class="fas fa-horse"></i> Chevaux</h3>
+                <div class="value">150</div>
+                <div class="metric">Performance moyenne</div>
+            </div>
+            <div class="stat-card">
+                <h3><i class="fas fa-user"></i> Jockeys</h3>
+                <div class="value">150</div>
+                <div class="metric">Performance moyenne</div>
+            </div>
+            <div class="stat-card">
+                <h3><i class="fas fa-euro-sign"></i> Gains Moyens</h3>
+                <div class="value">33143 €</div>
+                <div class="trend positive">+82%</div>
+            </div>
         </div>
-      </div>
-    </div>
-  </header>
 
-  <!-- Main Content -->
-  <main class="container">
-    <!-- Stats Grid -->
-    <section class="stats-grid">
-      <!-- Card 1 -->
-      <div class="stat-card">
-        <h3><i class="fas fa-flag-checkered"></i> Courses Analysées</h3>
-        <div class="number" data-target="73">73</div>
-        <div class="trend positive">
-          <i class="fas fa-arrow-up"></i> +12%
+        <div class="analyze-section">
+            <h2>Sélectionner une course à analyser</h2>
+            <div class="analyze-controls">
+                <div class="select-wrapper">
+                    <select>
+                        <option>Choisir la population</option>
+                        <option>ParisLongchamp</option>
+                        <option>Chantilly</option>
+                        <option>Deauville</option>
+                        <option>Saint-Cloud</option>
+                    </select>
+                </div>
+                <div class="date-picker">16/04/2025</div>
+            </div>
+            <button class="analyze-btn"><i class="fas fa-chart-line"></i> Analyser la course</button>
         </div>
-      </div>
-      
-      <!-- Card 2 -->
-      <div class="stat-card">
-        <h3><i class="fas fa-horse"></i> Chevaux</h3>
-        <div class="number" data-target="150">150</div>
-        <div class="trend positive">
-          <i class="fas fa-arrow-up"></i> +8%
-        </div>
-      </div>
-      
-      <!-- Card 3 -->
-      <div class="stat-card">
-        <h3><i class="fas fa-user"></i> Jockeys</h3>
-        <div class="number" data-target="150">150</div>
-        <div class="sub-text">Performance moyenne</div>
-      </div>
-      
-      <!-- Card 4 -->
-      <div class="stat-card">
-        <h3><i class="fas fa-euro-sign"></i> Gains Moyens</h3>
-        <div class="number" data-target="33143">33143</div>
-        <div class="trend negative">
-          <i class="fas fa-arrow-down"></i> -3%
-        </div>
-      </div>
-    </section>
 
-    <!-- Analysis Section -->
-    <section class="analysis-section">
-      <h2 class="section-header">Sélectionner une course à analyser</h2>
-      <div class="analysis-form">
-        <div class="form-group">
-          <select class="form-control">
-            <option>Choisir la population</option>
-            <option>ParisLongchamp</option>
-            <option>Chantilly</option>
-            <option>Deauville</option>
-            <option>Saint-Cloud</option>
-            <option>Auteuil</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <input type="date" class="form-control" value="2025-04-16">
-        </div>
-        <div class="btn-analyze">
-          <button class="btn btn-primary">
-            <i class="fas fa-chart-line"></i> Analyser la course
-          </button>
-        </div>
-      </div>
-    </section>
+        <div class="dashboard-grid">
+            <div class="performance-chart">
+                <h2>Tendances de performance</h2>
+                <canvas id="performanceChart"></canvas>
+            </div>
 
-    <!-- Trends & Jockeys Sections -->
-    <div class="layout-grid">
-      <section class="trends-section">
-        <h2 class="section-header">Tendances de performance</h2>
-        <div class="chart-container">
-          <canvas id="trendsChart"></canvas>
+            <div class="top-jockeys">
+                <h2>Top Jockeys</h2>
+                <div class="jockey-list">
+                    <div class="jockey-item">
+                        <div class="jockey-img">
+                            <img src="https://via.placeholder.com/50" alt="Jules Martin">
+                        </div>
+                        <div class="jockey-info">
+                            <h3>Jules Martin</h3>
+                            <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+                            <span class="score">9450</span>
+                        </div>
+                    </div>
+                    <div class="jockey-item">
+                        <div class="jockey-img">
+                            <img src="https://via.placeholder.com/50" alt="Claire Durand">
+                        </div>
+                        <div class="jockey-info">
+                            <h3>Claire Durand</h3>
+                            <div class="progress-bar"><div class="progress" style="width: 72%;"></div></div>
+                            <span class="score">7230</span>
+                        </div>
+                    </div>
+                    <div class="jockey-item">
+                        <div class="jockey-img">
+                            <img src="https://via.placeholder.com/50" alt="Maxime Lefèvre">
+                        </div>
+                        <div class="jockey-info">
+                            <h3>Maxime Lefèvre</h3>
+                            <div class="progress-bar"><div class="progress" style="width: 59%;"></div></div>
+                            <span class="score">5900</span>
+                        </div>
+                    </div>
+                    <div class="jockey-item">
+                        <div class="jockey-img">
+                            <img src="https://via.placeholder.com/50" alt="Antoine Bernier">
+                        </div>
+                        <div class="jockey-info">
+                            <h3>Antoine Bernier</h3>
+                            <div class="progress-bar"><div class="progress" style="width: 62%;"></div></div>
+                            <span class="score">6200</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
+    </main>
 
-      <!-- Top Jockeys Section -->
-      <section class="jockeys-section">
-        <h2 class="section-header">Top Jockeys</h2>
-        <div class="jockeys-grid">
-          <!-- Jockey 1 -->
-          <div class="jockey-card">
-            <div class="jockey-avatar">
-              <img src="https://via.placeholder.com/50" alt="Jules Martin">
-            </div>
-            <div class="jockey-info">
-              <div class="jockey-name">Jules Martin</div>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 85%;"></div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Jockey 2 -->
-          <div class="jockey-card">
-            <div class="jockey-avatar">
-              <img src="https://via.placeholder.com/50" alt="Claire Durand">
-            </div>
-            <div class="jockey-info">
-              <div class="jockey-name">Claire Durand</div>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 75%;"></div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Jockey 3 -->
-          <div class="jockey-card">
-            <div class="jockey-avatar">
-              <img src="https://via.placeholder.com/50" alt="Maxime Lefèvre">
-            </div>
-            <div class="jockey-info">
-              <div class="jockey-name">Maxime Lefèvre</div>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 70%;"></div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Jockey 4 -->
-          <div class="jockey-card">
-            <div class="jockey-avatar">
-              <img src="https://via.placeholder.com/50" alt="Antoine Bernier">
-            </div>
-            <div class="jockey-info">
-              <div class="jockey-name">Antoine Bernier</div>
-              <div class="progress-bar">
-                <div class="progress-fill" style="width: 65%;"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  </main>
+    <footer>
+        <h1>ANALYSE HIPPIQUE</h1>
+        <p>Système d'analyse pour événements hippiques</p>
+    </footer>
 
-  <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
