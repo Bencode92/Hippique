@@ -7,233 +7,502 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Styles fallback pour assurer l'affichage minimal */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0f2a28;
-            color: #f5e9c9;
+        :root {
+            --dark-teal: #0f2a28;
+            --medium-teal: #163e3c;
+            --light-teal: #1a514e;
+            --gold: #e9d18c;
+            --light-gold: #f5e9c9;
+            --accent: #22c7b8;
+        }
+        
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-teal);
+            background-image: url('horse-pattern.svg');
+            background-blend-mode: overlay;
+            background-size: cover;
+            color: var(--light-gold);
+            min-height: 100vh;
+        }
+        
         .app-container {
             min-height: 100vh;
             display: flex;
             flex-direction: column;
         }
+        
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 2rem;
+            padding: 1.5rem 2rem;
             border-bottom: 1px solid rgba(233, 209, 140, 0.2);
-            background-color: #0f2a28;
         }
+        
         .logo {
             display: flex;
             align-items: center;
             gap: 1rem;
         }
+        
         .logo h1 {
-            font-size: 1.5rem;
-            color: #e9d18c;
+            font-size: 1.8rem;
+            color: var(--gold);
             font-weight: 400;
+            letter-spacing: 2px;
         }
+        
+        .search {
+            display: flex;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid rgba(233, 209, 140, 0.3);
+            width: 300px;
+        }
+        
+        .search input {
+            background: transparent;
+            border: none;
+            padding: 8px 16px;
+            color: var(--light-gold);
+            width: 100%;
+        }
+        
+        .search button {
+            background: transparent;
+            border: none;
+            color: var(--gold);
+            padding: 0 16px;
+            cursor: pointer;
+        }
+        
+        .main-nav {
+            background-color: var(--medium-teal);
+            padding: 0;
+        }
+        
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .main-nav li {
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .main-nav li:hover {
+            background-color: var(--light-teal);
+        }
+        
+        .main-nav li.active {
+            background-color: var(--light-teal);
+            border-bottom: 3px solid var(--gold);
+        }
+        
         main {
             flex: 1;
-            padding: 1rem;
+            padding: 2rem;
             max-width: 1200px;
             margin: 0 auto;
-        }
-        .loading-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
             width: 100%;
-            height: 100%;
-            background-color: rgba(15, 42, 40, 0.9);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
         }
-        .spinner {
-            width: 60px;
-            height: 60px;
-            border: 5px solid rgba(233, 209, 140, 0.3);
-            border-radius: 50%;
-            border-top-color: #e9d18c;
-            animation: spin 1s ease-in-out infinite;
-            margin-bottom: 20px;
-        }
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-        .fallback-content {
+        
+        footer {
             text-align: center;
             padding: 2rem;
+            border-top: 1px solid rgba(233, 209, 140, 0.2);
+            margin-top: auto;
         }
-        .fallback-content h1 {
-            color: #e9d18c;
-            margin-bottom: 1rem;
+        
+        footer h1 {
+            color: var(--gold);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+            letter-spacing: 2px;
         }
-        .fallback-content p {
-            margin-bottom: 1rem;
+        
+        footer p {
+            color: rgba(245, 233, 201, 0.7);
+            font-size: 0.9rem;
         }
-        .fallback-btn {
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-card {
+            background-color: rgba(22, 62, 60, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            background-color: var(--light-teal);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .stat-card h3 {
+            font-size: 1rem;
+            color: var(--light-gold);
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+        }
+        
+        .stat-card .value {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+        }
+        
+        .trend {
+            font-size: 0.9rem;
             display: inline-block;
-            background-color: #1a514e;
-            color: #e9d18c;
-            padding: 0.75rem 1.5rem;
+            padding: 3px 8px;
             border-radius: 4px;
-            text-decoration: none;
-            margin-top: 1rem;
+        }
+        
+        .trend.positive {
+            background-color: rgba(0, 255, 127, 0.1);
+            color: #00ff7f;
+        }
+        
+        .trend.negative {
+            background-color: rgba(255, 99, 71, 0.1);
+            color: tomato;
+        }
+        
+        .metric {
+            font-size: 0.9rem;
+            color: rgba(245, 233, 201, 0.7);
+        }
+        
+        .section-container {
+            background-color: rgba(22, 62, 60, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-container h2 {
+            color: var(--gold);
+            margin-bottom: 1rem;
+            font-weight: 400;
+            font-size: 1.5rem;
+        }
+        
+        .chart-placeholder {
+            height: 300px;
+            background-color: rgba(34, 199, 184, 0.1);
+            border: 1px dashed var(--accent);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .jockey-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .jockey-item {
+            display: flex;
+            align-items: center;
+            background-color: rgba(10, 30, 30, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+        
+        .jockey-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--medium-teal);
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-size: 1.5rem;
+        }
+        
+        .jockey-info {
+            flex: 1;
+        }
+        
+        .jockey-info h3 {
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+        }
+        
+        .progress-bar {
+            height: 6px;
+            background-color: rgba(10, 30, 30, 0.5);
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 0.25rem;
+        }
+        
+        .progress {
+            height: 100%;
+            background: linear-gradient(to right, var(--accent), #5aebe0);
+        }
+        
+        .score {
+            font-size: 0.9rem;
+            color: var(--light-gold);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(to right, var(--gold), #d4af37);
+            color: var(--dark-teal);
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 4px;
+            font-weight: 600;
             cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(to right, #d4af37, var(--gold));
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .search {
+                width: 100%;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .main-nav ul {
+                flex-wrap: wrap;
+            }
+            
+            .main-nav li {
+                flex: 1;
+                justify-content: center;
+                padding: 0.75rem 0.5rem;
+                font-size: 0.9rem;
+            }
         }
     </style>
 </head>
 <body>
-    <div id="app-root">
-        <!-- Contenu de secours si le JavaScript ne se charge pas -->
-        <div class="app-container">
-            <header>
-                <div class="logo">
-                    <i class="fas fa-horse-head" style="font-size: 2rem; color: #e9d18c;"></i>
-                    <h1>ANALYSE HIPPIQUE</h1>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-horse-head" style="font-size: 2rem; color: var(--gold);"></i>
+                <h1>ANALYSE HIPPIQUE</h1>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Rechercher un cheval, jockey...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </header>
+        
+        <nav class="main-nav">
+            <ul>
+                <li class="active"><i class="fas fa-home"></i> Accueil</li>
+                <li><i class="fas fa-flag-checkered"></i> Courses</li>
+                <li><i class="fas fa-user"></i> Jockeys</li>
+                <li><i class="fas fa-horse"></i> Chevaux</li>
+                <li><i class="fas fa-users"></i> Entraîneurs</li>
+            </ul>
+        </nav>
+        
+        <main>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3><i class="fas fa-flag-checkered"></i> Courses Analysées</h3>
+                    <div class="value">73</div>
+                    <div class="trend positive">+12%</div>
                 </div>
-            </header>
+                <div class="stat-card">
+                    <h3><i class="fas fa-horse"></i> Chevaux</h3>
+                    <div class="value">150</div>
+                    <div class="metric">Performance moyenne</div>
+                </div>
+                <div class="stat-card">
+                    <h3><i class="fas fa-user"></i> Jockeys</h3>
+                    <div class="value">150</div>
+                    <div class="metric">Performance moyenne</div>
+                </div>
+                <div class="stat-card">
+                    <h3><i class="fas fa-euro-sign"></i> Gains Moyens</h3>
+                    <div class="value">33143 €</div>
+                    <div class="trend positive">+82%</div>
+                </div>
+            </div>
             
-            <main>
-                <div class="fallback-content">
-                    <h1>Analyse Hippique</h1>
-                    <p>Bienvenue sur la plateforme d'analyse hippique. Ce site vous permet d'analyser les performances des chevaux, jockeys et entraîneurs.</p>
-                    <p>Le contenu dynamique est en cours de chargement...</p>
-                    <div class="spinner"></div>
-                    <p id="loading-message">Initialisation de l'application...</p>
+            <div class="section-container">
+                <h2>Performances Mensuelles</h2>
+                <div class="chart-placeholder">
+                    <p><i class="fas fa-chart-bar" style="font-size: 2rem; margin-bottom: 0.5rem;"></i><br>Graphique des performances mensuelles</p>
+                </div>
+            </div>
+            
+            <div class="section-container">
+                <h2>Sélectionner une course à analyser</h2>
+                <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
+                    <div style="flex: 1; background-color: rgba(10, 30, 30, 0.5); border: 1px solid rgba(233, 209, 140, 0.3); border-radius: 4px; padding: 0.75rem 1rem;">
+                        Choisir l'hippodrome
+                    </div>
+                    <div style="flex: 1; background-color: rgba(10, 30, 30, 0.5); border: 1px solid rgba(233, 209, 140, 0.3); border-radius: 4px; padding: 0.75rem 1rem;">
+                        16/04/2025
+                    </div>
+                </div>
+                <a href="#" class="btn-primary"><i class="fas fa-chart-line"></i> Analyser la course</a>
+            </div>
+            
+            <div class="section-container">
+                <h2>Top Jockeys</h2>
+                <div class="jockey-list">
+                    <div class="jockey-item">
+                        <div class="jockey-img">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="jockey-info">
+                            <h3>CRISTIAN DEMURO</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 95%;"></div>
+                            </div>
+                            <span class="score">9450 pts</span>
+                        </div>
+                    </div>
                     
-                    <a href="/" class="fallback-btn" onclick="window.location.reload(); return false;">Rafraîchir la page</a>
+                    <div class="jockey-item">
+                        <div class="jockey-img">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="jockey-info">
+                            <h3>MAXIME GUYON</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 72%;"></div>
+                            </div>
+                            <span class="score">7230 pts</span>
+                        </div>
+                    </div>
+                    
+                    <div class="jockey-item">
+                        <div class="jockey-img">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="jockey-info">
+                            <h3>STEPHANE PASQUIER</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 59%;"></div>
+                            </div>
+                            <span class="score">5900 pts</span>
+                        </div>
+                    </div>
+                    
+                    <div class="jockey-item">
+                        <div class="jockey-img">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="jockey-info">
+                            <h3>AUGUSTIN MADAMET</h3>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 62%;"></div>
+                            </div>
+                            <span class="score">6200 pts</span>
+                        </div>
+                    </div>
                 </div>
-            </main>
-            
-            <footer style="text-align: center; padding: 1rem; border-top: 1px solid rgba(233, 209, 140, 0.2);">
-                <h1 style="color: #e9d18c; font-size: 1.2rem; margin-bottom: 0.5rem;">ANALYSE HIPPIQUE</h1>
-                <p style="color: rgba(245, 233, 201, 0.7); font-size: 0.9rem;">Système d'analyse pour événements hippiques</p>
-            </footer>
-        </div>
+            </div>
+        </main>
+        
+        <footer>
+            <h1>ANALYSE HIPPIQUE</h1>
+            <p>Système d'analyse pour événements hippiques - Dernière mise à jour: 16/04/2025</p>
+        </footer>
     </div>
 
-    <!-- Scripts -->
     <script>
-        // Fonction pour afficher un message de chargement
-        function updateLoadingMessage(message) {
-            const loadingMessage = document.getElementById('loading-message');
-            if (loadingMessage) {
-                loadingMessage.textContent = message;
-                console.log(message);
+        // Script pour rendre les éléments interactifs
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animation pour les cartes statistiques
+            document.querySelectorAll('.stat-card').forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                    this.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.2)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                    this.style.boxShadow = 'none';
+                });
+            });
+            
+            // Navigation
+            document.querySelectorAll('.main-nav li').forEach(item => {
+                item.addEventListener('click', function() {
+                    document.querySelectorAll('.main-nav li').forEach(li => {
+                        li.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                });
+            });
+            
+            // Recherche
+            const searchInput = document.querySelector('.search input');
+            if (searchInput) {
+                searchInput.addEventListener('input', function() {
+                    const searchTerm = this.value.toLowerCase();
+                    
+                    // Filtrer les jockeys en fonction du terme de recherche
+                    document.querySelectorAll('.jockey-item').forEach(item => {
+                        const jockeyName = item.querySelector('h3').textContent.toLowerCase();
+                        
+                        if (jockeyName.includes(searchTerm)) {
+                            item.style.display = 'flex';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
             }
-        }
-
-        // Vérifier si les scripts sont bien chargés
-        window.addEventListener('DOMContentLoaded', function() {
-            updateLoadingMessage("DOM chargé. Chargement des ressources externes...");
-            
-            // Charger React
-            const reactScript = document.createElement('script');
-            reactScript.src = "https://unpkg.com/react@18/umd/react.production.min.js";
-            reactScript.crossOrigin = "";
-            
-            reactScript.onload = function() {
-                updateLoadingMessage("React chargé. Chargement de ReactDOM...");
-                
-                // Charger ReactDOM
-                const reactDomScript = document.createElement('script');
-                reactDomScript.src = "https://unpkg.com/react-dom@18/umd/react-dom.production.min.js";
-                reactDomScript.crossOrigin = "";
-                
-                reactDomScript.onload = function() {
-                    updateLoadingMessage("ReactDOM chargé. Chargement de Recharts...");
-                    
-                    // Charger Recharts
-                    const rechartsScript = document.createElement('script');
-                    rechartsScript.src = "https://unpkg.com/recharts@2.5.0/umd/Recharts.min.js";
-                    
-                    rechartsScript.onload = function() {
-                        updateLoadingMessage("Recharts chargé. Chargement de Babel...");
-                        
-                        // Charger Babel
-                        const babelScript = document.createElement('script');
-                        babelScript.src = "https://unpkg.com/@babel/standalone@7.21.2/babel.min.js";
-                        
-                        babelScript.onload = function() {
-                            updateLoadingMessage("Babel chargé. Initialisation de l'application...");
-                            
-                            // Simuler les données minimales
-                            window.dataManager = {
-                                initialize: function() {
-                                    return Promise.resolve({
-                                        jockeys: { resultats: [] },
-                                        chevaux: { resultats: [] }
-                                    });
-                                },
-                                onReady: function(callback) { callback(); },
-                                getTopJockeys: function() { 
-                                    return [
-                                        { NomPostal: "CRISTIAN DEMURO", Victoires: 63, Place: 188, GainPart: 3851 },
-                                        { NomPostal: "MAXIME GUYON", Victoires: 52, Place: 187, GainPart: 3886 },
-                                        { NomPostal: "DELPHINE SANTIAGO", Victoires: 31, Place: 81, GainPart: 1909 },
-                                        { NomPostal: "AUGUSTIN MADAMET", Victoires: 29, Place: 164, GainPart: 2146 },
-                                        { NomPostal: "STEPHANE PASQUIER", Victoires: 26, Place: 97, GainPart: 3236 }
-                                    ];
-                                },
-                                getTopChevaux: function() { 
-                                    return [
-                                        { Nom: "SAINT ETIENNE", Victoires: 4, Place: 9, AllocTot: "109500" },
-                                        { Nom: "AMERICAN FLAG", Victoires: 3, Place: 7, AllocTot: "149125" }
-                                    ];
-                                },
-                                getHippodromesForDate: function() { 
-                                    return Promise.resolve(['ParisLongchamp', 'Chantilly', 'Deauville']); 
-                                },
-                                getCoursesData: function() {
-                                    return Promise.resolve({
-                                        courses: [
-                                            { nom: "PRIX DE LA FONTAINE CARPEAUX", participants: Array(12).fill(0) },
-                                            { nom: "PRIX DU LOUVRE", participants: Array(10).fill(0) }
-                                        ]
-                                    });
-                                },
-                                getGlobalStats: function() {
-                                    return {
-                                        coursesCount: 73,
-                                        chevauxCount: 150,
-                                        jockeysCount: 150,
-                                        gainsMoyens: 33143
-                                    };
-                                }
-                            };
-                            
-                            // Charger notre application
-                            const appScript = document.createElement('script');
-                            appScript.type = "text/babel";
-                            appScript.src = "app.js";
-                            
-                            appScript.onload = function() {
-                                updateLoadingMessage("Application chargée avec succès!");
-                            };
-                            
-                            document.body.appendChild(appScript);
-                        };
-                        
-                        document.body.appendChild(babelScript);
-                    };
-                    
-                    document.body.appendChild(rechartsScript);
-                };
-                
-                document.body.appendChild(reactDomScript);
-            };
-            
-            document.body.appendChild(reactScript);
         });
     </script>
 </body>
