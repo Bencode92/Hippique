@@ -1,6 +1,6 @@
 /**
  * Simulateur de paris optimaux pour les courses hippiques
- * Implémente l'algorithme de "dutch betting" pour trouver la stratégie optimale
+ * Implémente deux algorithmes : Dutch betting classique et optimisation EV
  */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const calculateButton = document.getElementById('calculateBets');
     const resultContainer = document.getElementById('resultContainer');
     const errorMessage = document.getElementById('errorMessage');
+    const strategyToggle = document.getElementById('strategyToggle');
     
     // Éléments de résultat
     const minGainElement = document.getElementById('minGain');
@@ -19,6 +20,21 @@ document.addEventListener('DOMContentLoaded', function() {
     const selectedHorsesElement = document.getElementById('selectedHorses');
     const totalStakeElement = document.getElementById('totalStake');
     const betsTableBody = document.getElementById('betsTableBody');
+    
+    // État pour la stratégie
+    let currentStrategy = 'dutch'; // 'dutch' ou 'ev'
+    
+    // Initialiser le toggle
+    if (strategyToggle) {
+        strategyToggle.addEventListener('change', function() {
+            currentStrategy = this.checked ? 'ev' : 'dutch';
+            
+            // Recalculer si des résultats sont déjà affichés
+            if (resultContainer.style.display === 'block') {
+                calculateButton.click();
+            }
+        });
+    }
     
     // Exemple de données
     const exampleData = {
@@ -130,14 +146,20 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             // Calculer les stratégies pour 2, 3, 4 et 5 favoris (si possible)
-            const allCombos = findAllCombosForSizes(horsesRaw, totalBet, [2, 3, 4, 5]);
+            let allCombos;
+            
+            if (currentStrategy === 'dutch') {
+                allCombos = findAllCombosForSizesDutch(horsesRaw, totalBet, [2, 3, 4, 5]);
+            } else {
+                allCombos = findAllCombosForSizesEV(horsesRaw, totalBet, [2, 3, 4, 5]);
+            }
             
             if (allCombos.filter(combo => combo.available && combo.rentable).length === 0) {
                 throw new Error('Aucune combinaison rentable trouvée. Essayez de modifier les cotes ou d\'augmenter le montant total.');
             }
             
             // Afficher les résultats
-            displayResults(allCombos, totalBet);
+            displayResults(allCombos, totalBet, currentStrategy);
             
             // Cacher le message d'erreur et afficher les résultats
             errorMessage.style.display = 'none';
@@ -154,8 +176,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Fonction pour trouver les combos de tailles spécifiées (2, 3, 4, 5)
-    function findAllCombosForSizes(horsesRaw, totalBet, sizes) {
+    // Fonction pour le Dutch betting classique
+    function findAllCombosForSizesDutch(horsesRaw, totalBet, sizes) {
         const sortedHorses = Object.entries(horsesRaw)
             .sort((a, b) => a[1] - b[1])
             .reduce((obj, [key, value]) => {
@@ -163,20 +185,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 return obj;
             }, {});
 
-        function computeCombo(combo, totalBet) {
+        function computeComboDutch(combo, totalBet) {
             const odds = combo.map(h => sortedHorses[h]);
-            
-            // Nouvelle méthode de répartition des mises pour avoir des gains nets différents
-            // Nous calculons les mises selon une répartition simple basée sur la valeur des cotes
-            const totalOdds = odds.reduce((a, b) => a + b, 0);
-            const stakeDistributionFactor = totalOdds / odds.length;
-            
-            // Calcul des mises : plus la cote est faible, plus la mise est élevée
-            const stakesRatio = odds.map(odd => stakeDistributionFactor / odd);
-            const totalStakesRatio = stakesRatio.reduce((a, b) => a + b, 0);
-            const stakes = stakesRatio.map(ratio => (ratio / totalStakesRatio) * totalBet);
-            
-            // Calculer les gains
+            const invOdds = odds.map(o => 1/o);
+            const totalInv = invOdds.reduce((a, b) => a + b, 0);
+            const stakes = invOdds.map(inv => (inv / totalInv) * totalBet);
             const gainsNet = stakes.map((stake, i) => (stake * odds[i]) - totalBet);
             const gainMax = Math.max(...gainsNet);
             const gainMin = Math.min(...gainsNet);
@@ -193,7 +206,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 gain_moyen: gainAvg,
                 gain_maximum: gainMax,
                 rentable: isRentable,
-                available: true
+                available: true,
+                approche: "Dutch"
             };
         }
 
@@ -205,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Vérifier si nous avons assez de chevaux pour cette taille
             if (size <= horseNames.length) {
                 const subset = horseNames.slice(0, size); // top "size" favoris
-                const result = computeCombo(subset, totalBet);
+                const result = computeComboDutch(subset, totalBet);
                 result.taille = size;
                 allCombos.push(result);
             } else {
@@ -215,7 +229,76 @@ document.addEventListener('DOMContentLoaded', function() {
                     available: false,
                     rentable: false,
                     gain_moyen: 0,
-                    gain_maximum: 0
+                    gain_maximum: 0,
+                    approche: "Dutch"
+                });
+            }
+        }
+
+        return allCombos;
+    }
+    
+    // Fonction pour la stratégie d'optimisation EV
+    function findAllCombosForSizesEV(horsesRaw, totalBet, sizes) {
+        const sortedHorses = Object.entries(horsesRaw)
+            .sort((a, b) => a[1] - b[1])
+            .reduce((obj, [key, value]) => {
+                obj[key] = value;
+                return obj;
+            }, {});
+
+        function computeComboEV(combo, totalBet) {
+            const odds = combo.map(h => sortedHorses[h]);
+            const probs = odds.map(o => 1 / o);
+            const totalProb = probs.reduce((a, b) => a + b, 0);
+            const normProbs = probs.map(p => p / totalProb); // pour lisser
+
+            // On mise plus sur les chevaux avec la meilleure proba
+            const mises = normProbs.map(p => p * totalBet);
+            const gainsBruts = mises.map((m, i) => m * odds[i]);
+            const gainsNet = gainsBruts.map(g => g - totalBet);
+
+            // EV = somme(probabilité * gain)
+            const gainMoyen = normProbs.reduce((sum, p, i) => sum + p * gainsNet[i], 0);
+            const gainMax = Math.max(...gainsNet);
+            const gainMin = Math.min(...gainsNet);
+            const isRentable = gainMin > 0;
+
+            return {
+                chevaux: combo,
+                mises: mises,
+                cotes: odds,
+                gains_bruts: gainsBruts,
+                gains_net: gainsNet,
+                gain_minimum: gainMin,
+                gain_moyen: gainMoyen,
+                gain_maximum: gainMax,
+                rentable: isRentable,
+                available: true,
+                approche: "EV"
+            };
+        }
+
+        const horseNames = Object.keys(sortedHorses);
+        const allCombos = [];
+
+        // Générer toutes les combinaisons demandées (2, 3, 4, 5)
+        for (const size of sizes) {
+            // Vérifier si nous avons assez de chevaux pour cette taille
+            if (size <= horseNames.length) {
+                const subset = horseNames.slice(0, size); // top "size" favoris
+                const result = computeComboEV(subset, totalBet);
+                result.taille = size;
+                allCombos.push(result);
+            } else {
+                // Pas assez de chevaux, ajouter un combo "non disponible"
+                allCombos.push({
+                    taille: size,
+                    available: false,
+                    rentable: false,
+                    gain_moyen: 0,
+                    gain_maximum: 0,
+                    approche: "EV"
                 });
             }
         }
@@ -224,7 +307,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Fonction pour afficher les résultats
-    function displayResults(comboList, totalBet) {
+    function displayResults(comboList, totalBet, strategy) {
         resultContainer.style.display = 'block';
         betsTableBody.innerHTML = ''; // Réinitialiser
 
@@ -260,7 +343,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const bestBadge = isBest ? "🔥 MEILLEUR COMBO - " : "";
             
             const headerClass = "section-header";
-            const headerText = `${bestBadge}💡 Combo avec ${combo.taille} favoris | Gain net moyen : +${combo.gain_moyen.toFixed(2)} € | Gain max : +${combo.gain_maximum.toFixed(2)} €`;
+            const strategyBadge = strategy === 'dutch' ? "🎯 DUTCH : " : "💰 OPTIMISATION EV : ";
+            const headerText = `${bestBadge}${strategyBadge}Combo avec ${combo.taille} favoris | Gain net moyen : +${combo.gain_moyen.toFixed(2)} € | Gain min/max : +${combo.gain_minimum.toFixed(2)} €/+${combo.gain_maximum.toFixed(2)} €`;
             
             const title = document.createElement('tr');
             title.innerHTML = `<td colspan="5" class="${headerClass}">${headerText}</td>`;
@@ -290,9 +374,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     ? "section-header non-rentable-simple"
                     : "section-header non-available-simple";
                 const headerIcon = combo.available ? "⚠️" : "ℹ️";
+                const strategyBadge = strategy === 'dutch' ? "🎯 DUTCH : " : "💰 OPTIMISATION EV : ";
                 const headerMessage = combo.available
-                    ? `${headerIcon} Combo avec ${combo.taille} favoris : Aucune solution rentable`
-                    : `${headerIcon} Combo avec ${combo.taille} favoris : Pas assez de chevaux`;
+                    ? `${headerIcon} ${strategyBadge}Combo avec ${combo.taille} favoris : Aucune solution rentable`
+                    : `${headerIcon} ${strategyBadge}Combo avec ${combo.taille} favoris : Pas assez de chevaux`;
                 
                 const title = document.createElement('tr');
                 title.innerHTML = `<td colspan="5" class="${headerClass}">${headerMessage}</td>`;
