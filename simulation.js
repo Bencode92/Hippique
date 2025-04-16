@@ -184,30 +184,45 @@ document.addEventListener('DOMContentLoaded', function() {
                 horsesRaw[`Cheval ${number}`] = odds;
             }
             
-            // Calculer les stratégies pour 2, 3, 4 et 5 favoris (si possible)
-            let allCombos;
+            // Ajouter un message de calcul en cours pour les grandes optimisations
+            errorMessage.textContent = "Calcul en cours, veuillez patienter...";
+            errorMessage.style.display = 'block';
+            resultContainer.style.display = 'none';
             
-            console.log("Calcul avec stratégie:", currentStrategy);
-            
-            if (currentStrategy === 'dutch') {
-                allCombos = findAllCombosForSizesDutch(horsesRaw, totalBet, [2, 3, 4, 5]);
-            } else {
-                allCombos = findAllCombosForSizesEV(horsesRaw, totalBet, [2, 3, 4, 5]);
-            }
-            
-            if (allCombos.filter(combo => combo.available && combo.rentable).length === 0) {
-                throw new Error('Aucune combinaison rentable trouvée. Essayez de modifier les cotes ou d\'augmenter le montant total.');
-            }
-            
-            // Afficher les résultats
-            displayResults(allCombos, totalBet, currentStrategy);
-            
-            // Cacher le message d'erreur et afficher les résultats
-            errorMessage.style.display = 'none';
-            resultContainer.style.display = 'block';
-            
-            // Scroll jusqu'aux résultats
-            resultContainer.scrollIntoView({ behavior: 'smooth' });
+            // Différer le calcul pour que le message s'affiche
+            setTimeout(() => {
+                try {
+                    // Calculer les stratégies pour 2, 3, 4 et 5 favoris (si possible)
+                    let allCombos;
+                    
+                    console.log("Calcul avec stratégie:", currentStrategy);
+                    
+                    if (currentStrategy === 'dutch') {
+                        allCombos = findAllCombosForSizesDutch(horsesRaw, totalBet, [2, 3, 4, 5]);
+                    } else {
+                        allCombos = findAllCombosForSizesEV(horsesRaw, totalBet, [2, 3, 4, 5]);
+                    }
+                    
+                    if (allCombos.filter(combo => combo.available && combo.rentable).length === 0) {
+                        throw new Error('Aucune combinaison rentable trouvée. Essayez de modifier les cotes ou d\'augmenter le montant total.');
+                    }
+                    
+                    // Afficher les résultats
+                    displayResults(allCombos, totalBet, currentStrategy);
+                    
+                    // Cacher le message d'erreur et afficher les résultats
+                    errorMessage.style.display = 'none';
+                    resultContainer.style.display = 'block';
+                    
+                    // Scroll jusqu'aux résultats
+                    resultContainer.scrollIntoView({ behavior: 'smooth' });
+                } catch (error) {
+                    // Afficher l'erreur
+                    errorMessage.textContent = error.message;
+                    errorMessage.style.display = 'block';
+                    resultContainer.style.display = 'none';
+                }
+            }, 50); // Délai court pour que l'UI se mette à jour
             
         } catch (error) {
             // Afficher l'erreur
@@ -288,56 +303,91 @@ document.addEventListener('DOMContentLoaded', function() {
                 return obj;
             }, {});
 
-        function computeComboEV(combo, totalBet) {
-            // Récupérer les cotes pour les chevaux du combo
+        // Nouvelle fonction d'optimisation par force brute pour EV
+        function computeComboEV_BruteForce(combo, totalBet) {
             const odds = combo.map(h => sortedHorses[h]);
+            const horseCount = combo.length;
             
-            // Calculer les probabilités implicites (1/cote)
+            // Paramètres pour l'optimisation
+            const STEP_SIZE = horseCount <= 2 ? 0.5 : (horseCount <= 3 ? 1 : 2); // Pas en € (plus petit = plus précis mais plus lent)
+            const MIN_STAKE = 1; // Mise minimale par cheval en €
+            
+            // Stocker le meilleur résultat
+            let bestGainMoyen = -Infinity;
+            let bestStakes = [];
+            let bestGainsBruts = [];
+            let bestGainsNets = [];
+            let iterations = 0;
+            const MAX_ITERATIONS = 1000000; // Limite le nombre d'itérations pour éviter les boucles infinies
+            
+            // Fonction récursive pour tester toutes les combinaisons de mises
+            function findBestStakes(currentHorse, remainingStake, currentStakes) {
+                iterations++;
+                if (iterations > MAX_ITERATIONS) return;
+                
+                // Si on a atteint le dernier cheval, lui affecter le reste
+                if (currentHorse === horseCount - 1) {
+                    // La mise du dernier cheval est le reste du budget
+                    const finalStakes = [...currentStakes, remainingStake];
+                    
+                    // Calculer les gains pour cette distribution de mises
+                    const gainsBruts = finalStakes.map((stake, i) => stake * odds[i]);
+                    const gainsNets = gainsBruts.map(g => g - totalBet);
+                    
+                    // Calculer le gain moyen (moyenne simple)
+                    // Note: on pourrait aussi faire une moyenne pondérée par les probabilités si souhaité
+                    const gainMoyen = gainsNets.reduce((sum, g) => sum + g, 0) / horseCount;
+                    
+                    // Si c'est le meilleur gain moyen jusqu'à présent, le sauvegarder
+                    if (gainMoyen > bestGainMoyen) {
+                        bestGainMoyen = gainMoyen;
+                        bestStakes = finalStakes;
+                        bestGainsBruts = gainsBruts;
+                        bestGainsNets = gainsNets;
+                    }
+                    return;
+                }
+                
+                // Pour les autres chevaux, tester différentes mises possibles
+                // Avec un pas fixe, et une mise minimale
+                const maxStake = remainingStake - MIN_STAKE * (horseCount - currentHorse - 1);
+                
+                for (let stake = MIN_STAKE; stake <= maxStake; stake += STEP_SIZE) {
+                    findBestStakes(currentHorse + 1, remainingStake - stake, [...currentStakes, stake]);
+                }
+            }
+            
+            // Lancer la recherche
+            console.time('OptimizationTime');
+            findBestStakes(0, totalBet, []);
+            console.timeEnd('OptimizationTime');
+            console.log(`Iterations: ${iterations}`);
+            
+            // Calculer les autres métriques basées sur le meilleur résultat
+            const gainMax = Math.max(...bestGainsNets);
+            const gainMin = Math.min(...bestGainsNets);
+            const isRentable = bestGainMoyen > 0;
+            
+            // Calculer les probabilités implicites pour l'affichage
             const probs = odds.map(o => 1 / o);
-            
-            // Somme des probabilités pour normalisation
             const totalProb = probs.reduce((a, b) => a + b, 0);
-            
-            // Normaliser les probabilités pour qu'elles somment à 1
             const normProbs = probs.map(p => p / totalProb);
-            
-            // Miser proportionnellement aux probabilités normalisées
-            const mises = normProbs.map(p => p * totalBet);
-            
-            // Calculer les gains bruts (mise * cote)
-            const gainsBruts = mises.map((m, i) => m * odds[i]);
-            
-            // Calculer les gains nets (gain brut - mise totale)
-            const gainsNet = gainsBruts.map(g => g - totalBet);
-            
-            // *** CORRECTION ICI: Calcul du gain moyen avec les probabilités normalisées ***
-            // EV = somme(probabilité normalisée * gain net pour chaque cheval)
-            const gainMoyen = normProbs.reduce((sum, p, i) => sum + p * gainsNet[i], 0);
-            
-            const gainMax = Math.max(...gainsNet);
-            const gainMin = Math.min(...gainsNet);
-            
-            // Une stratégie est rentable si le gain moyen est positif (pas le gain min comme en Dutch)
-            // Mais on garde quand même l'information sur gainMin > 0 pour l'UI
-            const isRentable = gainMoyen > 0;
-            
-            // Probabilités pour affichage (en pourcentage)
             const proba_display = normProbs.map(p => (p * 100).toFixed(1) + "%");
-
+            
             return {
                 chevaux: combo,
-                mises: mises,
+                mises: bestStakes,
                 cotes: odds,
                 probas: proba_display,
-                probas_raw: normProbs,  // Pour les calculs
-                gains_bruts: gainsBruts,
-                gains_net: gainsNet,
+                probas_raw: normProbs,
+                gains_bruts: bestGainsBruts,
+                gains_net: bestGainsNets,
                 gain_minimum: gainMin,
-                gain_moyen: gainMoyen,
+                gain_moyen: bestGainMoyen,
                 gain_maximum: gainMax,
                 rentable: isRentable,
                 available: true,
-                approche: "EV"
+                approche: "EV (Optimisé)"
             };
         }
 
@@ -349,7 +399,9 @@ document.addEventListener('DOMContentLoaded', function() {
             // Vérifier si nous avons assez de chevaux pour cette taille
             if (size <= horseNames.length) {
                 const subset = horseNames.slice(0, size); // top "size" favoris
-                const result = computeComboEV(subset, totalBet);
+                
+                // Utiliser l'optimisation par force brute pour l'EV
+                const result = computeComboEV_BruteForce(subset, totalBet);
                 result.taille = size;
                 allCombos.push(result);
             } else {
@@ -413,7 +465,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (strategy === 'dutch') {
             explanationText = `<td colspan="5" class="method-explanation">🎯 <strong>Mode DUTCH BETTING</strong> : Cette stratégie garantit un gain identique quel que soit le cheval gagnant parmi votre sélection.</td>`;
         } else {
-            explanationText = `<td colspan="5" class="method-explanation">💰 <strong>Mode OPTIMISATION EV</strong> : Cette stratégie maximise votre gain moyen attendu (EV) basé sur les probabilités implicites des cotes. Les gains peuvent varier selon le cheval gagnant.</td>`;
+            explanationText = `<td colspan="5" class="method-explanation">💰 <strong>Mode OPTIMISATION EV</strong> : Cette stratégie trouve la répartition des mises qui maximise votre gain moyen, sans contraindre les mises à être proportionnelles aux probabilités. Les gains varient selon le cheval gagnant.</td>`;
         }
         methodExplanation.innerHTML = explanationText;
         betsTableBody.appendChild(methodExplanation);
@@ -503,15 +555,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Créer une explication détaillée de la formule EV
                 let formulaHTML = `
                     <td colspan="5" class="formula-explanation">
-                        <p><strong>Formule du gain moyen (EV)</strong> = Somme(Probabilité × Gain net pour chaque cheval)</p>
-                        <p>EV = `;
-                
-                // Construction détaillée du calcul EV
-                const calculations = combo.chevaux.map((cheval, i) => {
-                    return `(${combo.probas[i]} × ${combo.gains_net[i] > 0 ? '+' : ''}${combo.gains_net[i].toFixed(2)} €)`;
-                }).join(' + ');
-                
-                formulaHTML += `${calculations} = <strong>+${combo.gain_moyen.toFixed(2)} €</strong></p>
+                        <p><strong>Formule du gain moyen optimisé</strong> = Moyenne des gains nets avec la meilleure répartition de mises</p>
+                        <p>EV = (${combo.gains_net.map(g => g > 0 ? '+' : '' + g.toFixed(2) + ' €').join(' + ')}) / ${combo.chevaux.length} = <strong>+${combo.gain_moyen.toFixed(2)} €</strong></p>
+                        <p><em>Note: Cette répartition a été trouvée par optimisation complète, pas simplement en misant proportionnellement aux probabilités.</em></p>
                     </td>
                 `;
                 
