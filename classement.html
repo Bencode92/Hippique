@@ -165,6 +165,20 @@
             font-weight: 500;
             position: sticky;
             top: 0;
+            cursor: pointer;
+        }
+        
+        .data-table th:hover {
+            background-color: rgba(10, 30, 30, 0.9);
+        }
+        
+        .data-table th .sort-icon {
+            margin-left: 5px;
+            opacity: 0.5;
+        }
+        
+        .data-table th.sorted .sort-icon {
+            opacity: 1;
         }
         
         .data-table td {
@@ -209,6 +223,12 @@
         
         .stats {
             color: var(--accent);
+            font-weight: 500;
+            text-align: right;
+        }
+        
+        .percentage {
+            color: var(--gold);
             font-weight: 500;
             text-align: right;
         }
@@ -288,6 +308,36 @@
             text-decoration: underline;
         }
         
+        .sort-options {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .sort-btn {
+            padding: 0.5rem 1rem;
+            background-color: rgba(22, 62, 60, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.2);
+            border-radius: 4px;
+            color: var(--light-gold);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .sort-btn:hover {
+            background-color: var(--light-teal);
+        }
+        
+        .sort-btn.active {
+            background-color: var(--light-teal);
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+        
         footer {
             margin-top: 3rem;
             text-align: center;
@@ -355,6 +405,13 @@
             <button class="search-clear" id="search-clear"><i class="fas fa-times"></i></button>
         </div>
         
+        <div class="sort-options">
+            <span>Trier par : </span>
+            <button class="sort-btn active" data-sort="default"><i class="fas fa-list-ol"></i> Classement par défaut</button>
+            <button class="sort-btn" data-sort="taux-victoire"><i class="fas fa-trophy"></i> Taux de victoire</button>
+            <button class="sort-btn" data-sort="taux-place"><i class="fas fa-medal"></i> Taux de place</button>
+        </div>
+        
         <div id="results-container">
             <div class="loading">
                 <div class="spinner"></div>
@@ -379,6 +436,8 @@
             // Variables globales
             let currentCategory = 'jockeys';
             let currentPage = 1;
+            let currentSort = 'default';  // default, taux-victoire, taux-place
+            let sortDirection = 'desc';   // asc, desc
             const itemsPerPage = 20;
             let allData = {};
             let filteredData = [];
@@ -388,6 +447,7 @@
             const searchInput = document.getElementById('search-input');
             const searchClear = document.getElementById('search-clear');
             const tabs = document.querySelectorAll('.tab');
+            const sortButtons = document.querySelectorAll('.sort-btn');
             const pagination = document.getElementById('pagination');
             const lastUpdateEl = document.getElementById('last-update');
             
@@ -418,6 +478,8 @@
                     { key: 'Partants', label: 'Partants', class: 'stats' },
                     { key: 'Victoires', label: 'Victoires', class: 'stats' },
                     { key: 'Place', label: 'Places', class: 'stats' },
+                    { key: 'TauxVictoire', label: 'Taux de victoire', class: 'percentage', renderer: (value) => `${value}%` },
+                    { key: 'TauxPlace', label: 'Taux de place', class: 'percentage', renderer: (value) => `${value}%` },
                     { key: 'GainPart', label: 'Gain/Part (€)', class: 'stats' }
                 ],
                 chevaux: [
@@ -431,6 +493,8 @@
                     { key: 'NbCourses', label: 'Courses', class: 'stats' },
                     { key: 'NbVictoires', label: 'Victoires', class: 'stats' },
                     { key: 'NbPlace', label: 'Places', class: 'stats' },
+                    { key: 'TauxVictoire', label: 'Taux de victoire', class: 'percentage', renderer: (value) => `${value}%` },
+                    { key: 'TauxPlace', label: 'Taux de place', class: 'percentage', renderer: (value) => `${value}%` },
                     { key: 'AllocTotale', label: 'Gains (€)', class: 'stats' }
                 ],
                 entraineurs: [
@@ -445,6 +509,8 @@
                     { key: 'Partants', label: 'Partants', class: 'stats' },
                     { key: 'Victoires', label: 'Victoires', class: 'stats' },
                     { key: 'Place', label: 'Places', class: 'stats' },
+                    { key: 'TauxVictoire', label: 'Taux de victoire', class: 'percentage', renderer: (value) => `${value}%` },
+                    { key: 'TauxPlace', label: 'Taux de place', class: 'percentage', renderer: (value) => `${value}%` },
                     { key: 'GainPart', label: 'Gain Total (€)', class: 'stats' }
                 ],
                 eleveurs: [
@@ -459,6 +525,8 @@
                     { key: 'Partants', label: 'Partants', class: 'stats' },
                     { key: 'Victoires', label: 'Victoires', class: 'stats' },
                     { key: 'Place', label: 'Places', class: 'stats' },
+                    { key: 'TauxVictoire', label: 'Taux de victoire', class: 'percentage', renderer: (value) => `${value}%` },
+                    { key: 'TauxPlace', label: 'Taux de place', class: 'percentage', renderer: (value) => `${value}%` },
                     { key: 'GainPart', label: 'Gain Total (€)', class: 'stats' }
                 ],
                 proprietaires: [
@@ -473,6 +541,8 @@
                     { key: 'Partants', label: 'Partants', class: 'stats' },
                     { key: 'Victoires', label: 'Victoires', class: 'stats' },
                     { key: 'Place', label: 'Places', class: 'stats' },
+                    { key: 'TauxVictoire', label: 'Taux de victoire', class: 'percentage', renderer: (value) => `${value}%` },
+                    { key: 'TauxPlace', label: 'Taux de place', class: 'percentage', renderer: (value) => `${value}%` },
                     { key: 'GainPart', label: 'Gain Total (€)', class: 'stats' }
                 ]
             };
@@ -536,13 +606,23 @@
                 // Adapter les clés pour les chevaux qui ont une structure différente
                 if (category === 'chevaux') {
                     return data.resultats.map((item, index) => {
+                        const nbCourses = parseInt(item.NbCourses || 0);
+                        const nbVictoires = parseInt(item.NbVictoires || 0);
+                        const nbPlace = parseInt(item.NbPlace || 0);
+                        
+                        // Calculer les taux
+                        const tauxVictoire = nbCourses > 0 ? ((nbVictoires / nbCourses) * 100).toFixed(1) : "0.0";
+                        const tauxPlace = nbCourses > 0 ? (((nbVictoires + nbPlace) / nbCourses) * 100).toFixed(1) : "0.0";
+                        
                         return {
                             Rang: index + 1,
                             Nom: item.LibelleCheval || item.Nom || "Inconnu",
                             LibelleCheval_url: item.LibelleCheval_url,
-                            NbCourses: item.NbCourses || 0,
-                            NbVictoires: item.NbVictoires || 0,
-                            NbPlace: item.NbPlace || 0,
+                            NbCourses: nbCourses,
+                            NbVictoires: nbVictoires,
+                            NbPlace: nbPlace,
+                            TauxVictoire: tauxVictoire,
+                            TauxPlace: tauxPlace,
                             AllocTotale: formatNumber(item.AllocTotale || item.AllocTot || 0)
                         };
                     });
@@ -550,9 +630,22 @@
                 
                 // Pour les autres catégories (structure standard)
                 return data.resultats.map((item, index) => {
+                    const partants = parseInt(item.Partants || 0);
+                    const victoires = parseInt(item.Victoires || 0);
+                    const place = parseInt(item.Place || 0);
+                    
+                    // Calculer les taux
+                    const tauxVictoire = partants > 0 ? ((victoires / partants) * 100).toFixed(1) : "0.0";
+                    const tauxPlace = partants > 0 ? (((victoires + place) / partants) * 100).toFixed(1) : "0.0";
+                    
                     return {
                         ...item,
                         Rang: index + 1,
+                        Partants: partants,
+                        Victoires: victoires,
+                        Place: place,
+                        TauxVictoire: tauxVictoire,
+                        TauxPlace: tauxPlace,
                         GainPart: formatNumber(item.GainPart || 0)
                     };
                 });
@@ -565,43 +658,43 @@
                 // Générer des données de démonstration pour chaque catégorie
                 if (category === 'jockeys') {
                     demoData = [
-                        { Rang: 1, NomPostal: "CRISTIAN DEMURO", Chevaux: 275, Partants: 381, Victoires: 63, Place: 188, GainPart: "3 851" },
-                        { Rang: 2, NomPostal: "MAXIME GUYON", Chevaux: 247, Partants: 348, Victoires: 52, Place: 187, GainPart: "3 886" },
-                        { Rang: 3, NomPostal: "DELPHINE SANTIAGO", Chevaux: 159, Partants: 235, Victoires: 31, Place: 81, GainPart: "1 909" },
-                        { Rang: 4, NomPostal: "AUGUSTIN MADAMET", Chevaux: 180, Partants: 285, Victoires: 29, Place: 164, GainPart: "2 146" },
-                        { Rang: 5, NomPostal: "STEPHANE PASQUIER", Chevaux: 175, Partants: 241, Victoires: 26, Place: 97, GainPart: "3 236" }
+                        { Rang: 1, NomPostal: "CRISTIAN DEMURO", Chevaux: 275, Partants: 381, Victoires: 63, Place: 188, TauxVictoire: "16.5", TauxPlace: "65.9", GainPart: "3 851" },
+                        { Rang: 2, NomPostal: "MAXIME GUYON", Chevaux: 247, Partants: 348, Victoires: 52, Place: 187, TauxVictoire: "14.9", TauxPlace: "68.7", GainPart: "3 886" },
+                        { Rang: 3, NomPostal: "DELPHINE SANTIAGO", Chevaux: 159, Partants: 235, Victoires: 31, Place: 81, TauxVictoire: "13.2", TauxPlace: "47.7", GainPart: "1 909" },
+                        { Rang: 4, NomPostal: "AUGUSTIN MADAMET", Chevaux: 180, Partants: 285, Victoires: 29, Place: 164, TauxVictoire: "10.2", TauxPlace: "67.7", GainPart: "2 146" },
+                        { Rang: 5, NomPostal: "STEPHANE PASQUIER", Chevaux: 175, Partants: 241, Victoires: 26, Place: 97, TauxVictoire: "10.8", TauxPlace: "51.0", GainPart: "3 236" }
                     ];
                 } else if (category === 'chevaux') {
                     demoData = [
-                        { Rang: 1, Nom: "MAP OF STARS", NbCourses: 2, NbVictoires: 2, NbPlace: 0, AllocTotale: "114 100" },
-                        { Rang: 2, Nom: "LANZELOT GOLD", NbCourses: 4, NbVictoires: 2, NbPlace: 2, AllocTotale: "88 160" },
-                        { Rang: 3, Nom: "SAINT ETIENNE", NbCourses: 4, NbVictoires: 4, NbPlace: 9, AllocTotale: "109 500" },
-                        { Rang: 4, Nom: "AMERICAN FLAG", NbCourses: 3, NbVictoires: 3, NbPlace: 7, AllocTotale: "149 125" },
-                        { Rang: 5, Nom: "HYPERCORE", NbCourses: 5, NbVictoires: 5, NbPlace: 8, AllocTotale: "49 250" }
+                        { Rang: 1, Nom: "MAP OF STARS", NbCourses: 2, NbVictoires: 2, NbPlace: 0, TauxVictoire: "100.0", TauxPlace: "100.0", AllocTotale: "114 100" },
+                        { Rang: 2, Nom: "LANZELOT GOLD", NbCourses: 4, NbVictoires: 2, NbPlace: 2, TauxVictoire: "50.0", TauxPlace: "100.0", AllocTotale: "88 160" },
+                        { Rang: 3, Nom: "SAINT ETIENNE", NbCourses: 4, NbVictoires: 4, NbPlace: 9, TauxVictoire: "100.0", TauxPlace: "100.0", AllocTotale: "109 500" },
+                        { Rang: 4, Nom: "AMERICAN FLAG", NbCourses: 3, NbVictoires: 3, NbPlace: 7, TauxVictoire: "100.0", TauxPlace: "100.0", AllocTotale: "149 125" },
+                        { Rang: 5, Nom: "HYPERCORE", NbCourses: 5, NbVictoires: 5, NbPlace: 8, TauxVictoire: "100.0", TauxPlace: "100.0", AllocTotale: "49 250" }
                     ];
                 } else if (category === 'entraineurs') {
                     demoData = [
-                        { Rang: 1, NomPostal: "FH. GRAFFARD (S)", Chevaux: 78, Partants: 113, Victoires: 35, Place: 53, GainPart: "8 387" },
-                        { Rang: 2, NomPostal: "F. ROHAUT (S)", Chevaux: 68, Partants: 93, Victoires: 28, Place: 42, GainPart: "6 782" },
-                        { Rang: 3, NomPostal: "Y. BARBEROT (S)", Chevaux: 63, Partants: 87, Victoires: 24, Place: 38, GainPart: "5 934" },
-                        { Rang: 4, NomPostal: "P. BARY (S)", Chevaux: 57, Partants: 78, Victoires: 21, Place: 35, GainPart: "5 312" },
-                        { Rang: 5, NomPostal: "A. FABRE (S)", Chevaux: 52, Partants: 72, Victoires: 19, Place: 33, GainPart: "4 987" }
+                        { Rang: 1, NomPostal: "FH. GRAFFARD (S)", Chevaux: 78, Partants: 113, Victoires: 35, Place: 53, TauxVictoire: "31.0", TauxPlace: "78.0", GainPart: "8 387" },
+                        { Rang: 2, NomPostal: "F. ROHAUT (S)", Chevaux: 68, Partants: 93, Victoires: 28, Place: 42, TauxVictoire: "30.1", TauxPlace: "75.3", GainPart: "6 782" },
+                        { Rang: 3, NomPostal: "Y. BARBEROT (S)", Chevaux: 63, Partants: 87, Victoires: 24, Place: 38, TauxVictoire: "27.6", TauxPlace: "71.3", GainPart: "5 934" },
+                        { Rang: 4, NomPostal: "P. BARY (S)", Chevaux: 57, Partants: 78, Victoires: 21, Place: 35, TauxVictoire: "26.9", TauxPlace: "71.8", GainPart: "5 312" },
+                        { Rang: 5, NomPostal: "A. FABRE (S)", Chevaux: 52, Partants: 72, Victoires: 19, Place: 33, TauxVictoire: "26.4", TauxPlace: "72.2", GainPart: "4 987" }
                     ];
                 } else if (category === 'eleveurs') {
                     demoData = [
-                        { Rang: 1, NomPostal: "WERTHEIMER & FRERE", Chevaux: 73, Partants: 208, Victoires: 35, Place: 97, GainPart: "3 928" },
-                        { Rang: 2, NomPostal: "GODOLPHIN", Chevaux: 67, Partants: 192, Victoires: 31, Place: 89, GainPart: "3 547" },
-                        { Rang: 3, NomPostal: "H.H. THE AGA KHAN", Chevaux: 61, Partants: 175, Victoires: 28, Place: 81, GainPart: "3 245" },
-                        { Rang: 4, NomPostal: "JUDDMONTE FARMS", Chevaux: 55, Partants: 158, Victoires: 25, Place: 74, GainPart: "2 987" },
-                        { Rang: 5, NomPostal: "HARAS DE LA PERELLE", Chevaux: 49, Partants: 142, Victoires: 22, Place: 67, GainPart: "2 765" }
+                        { Rang: 1, NomPostal: "WERTHEIMER & FRERE", Chevaux: 73, Partants: 208, Victoires: 35, Place: 97, TauxVictoire: "16.8", TauxPlace: "63.5", GainPart: "3 928" },
+                        { Rang: 2, NomPostal: "GODOLPHIN", Chevaux: 67, Partants: 192, Victoires: 31, Place: 89, TauxVictoire: "16.1", TauxPlace: "62.5", GainPart: "3 547" },
+                        { Rang: 3, NomPostal: "H.H. THE AGA KHAN", Chevaux: 61, Partants: 175, Victoires: 28, Place: 81, TauxVictoire: "16.0", TauxPlace: "62.3", GainPart: "3 245" },
+                        { Rang: 4, NomPostal: "JUDDMONTE FARMS", Chevaux: 55, Partants: 158, Victoires: 25, Place: 74, TauxVictoire: "15.8", TauxPlace: "62.7", GainPart: "2 987" },
+                        { Rang: 5, NomPostal: "HARAS DE LA PERELLE", Chevaux: 49, Partants: 142, Victoires: 22, Place: 67, TauxVictoire: "15.5", TauxPlace: "62.7", GainPart: "2 765" }
                     ];
                 } else if (category === 'proprietaires') {
                     demoData = [
-                        { Rang: 1, NomPostal: "WERTHEIMER & FRERE", Chevaux: 49, Partants: 86, Victoires: 18, Place: 38, GainPart: "5.9" },
-                        { Rang: 2, NomPostal: "GODOLPHIN", Chevaux: 45, Partants: 79, Victoires: 16, Place: 35, GainPart: "5.3" },
-                        { Rang: 3, NomPostal: "H.H. THE AGA KHAN", Chevaux: 41, Partants: 72, Victoires: 14, Place: 32, GainPart: "4.8" },
-                        { Rang: 4, NomPostal: "ECURIE JEAN-LOUIS BOUCHARD", Chevaux: 37, Partants: 65, Victoires: 12, Place: 29, GainPart: "4.3" },
-                        { Rang: 5, NomPostal: "MME ISABELLE CORBANI", Chevaux: 33, Partants: 58, Victoires: 10, Place: 26, GainPart: "3.9" }
+                        { Rang: 1, NomPostal: "WERTHEIMER & FRERE", Chevaux: 49, Partants: 86, Victoires: 18, Place: 38, TauxVictoire: "20.9", TauxPlace: "65.1", GainPart: "5.9" },
+                        { Rang: 2, NomPostal: "GODOLPHIN", Chevaux: 45, Partants: 79, Victoires: 16, Place: 35, TauxVictoire: "20.3", TauxPlace: "64.6", GainPart: "5.3" },
+                        { Rang: 3, NomPostal: "H.H. THE AGA KHAN", Chevaux: 41, Partants: 72, Victoires: 14, Place: 32, TauxVictoire: "19.4", TauxPlace: "63.9", GainPart: "4.8" },
+                        { Rang: 4, NomPostal: "ECURIE JEAN-LOUIS BOUCHARD", Chevaux: 37, Partants: 65, Victoires: 12, Place: 29, TauxVictoire: "18.5", TauxPlace: "63.1", GainPart: "4.3" },
+                        { Rang: 5, NomPostal: "MME ISABELLE CORBANI", Chevaux: 33, Partants: 58, Victoires: 10, Place: 26, TauxVictoire: "17.2", TauxPlace: "62.1", GainPart: "3.9" }
                     ];
                 }
                 
@@ -611,14 +704,24 @@
                     const randomPartants = Math.floor(Math.random() * 150) + 30;
                     const randomVictoires = Math.floor(Math.random() * 20);
                     const randomPlace = Math.floor(Math.random() * 50);
+                    const tauxVictoire = ((randomVictoires / randomPartants) * 100).toFixed(1);
+                    const tauxPlace = (((randomVictoires + randomPlace) / randomPartants) * 100).toFixed(1);
                     
                     if (category === 'chevaux') {
+                        const nbCourses = Math.floor(Math.random() * 15) + 1;
+                        const nbVictoires = Math.floor(Math.random() * 5);
+                        const nbPlace = Math.floor(Math.random() * 10);
+                        const tauxVictoireCheval = ((nbVictoires / nbCourses) * 100).toFixed(1);
+                        const tauxPlaceCheval = (((nbVictoires + nbPlace) / nbCourses) * 100).toFixed(1);
+                        
                         demoData.push({
                             Rang: i,
                             Nom: `Cheval Test ${i}`,
-                            NbCourses: Math.floor(Math.random() * 15) + 1,
-                            NbVictoires: Math.floor(Math.random() * 5),
-                            NbPlace: Math.floor(Math.random() * 10),
+                            NbCourses: nbCourses,
+                            NbVictoires: nbVictoires,
+                            NbPlace: nbPlace,
+                            TauxVictoire: tauxVictoireCheval,
+                            TauxPlace: tauxPlaceCheval,
                             AllocTotale: formatNumber(Math.floor(Math.random() * 100000) + 10000)
                         });
                     } else {
@@ -629,6 +732,8 @@
                             Partants: randomPartants,
                             Victoires: randomVictoires,
                             Place: randomPlace,
+                            TauxVictoire: tauxVictoire,
+                            TauxPlace: tauxPlace,
                             GainPart: formatNumber(Math.floor(Math.random() * 5000) / 1000)
                         });
                     }
@@ -650,6 +755,39 @@
                 
                 // Formater le nombre avec des séparateurs de milliers
                 return number.toLocaleString('fr-FR');
+            }
+            
+            // Fonction pour trier les données
+            function sortData(data, sortKey) {
+                if (!data || !data.length) return [];
+                
+                // Clone les données pour ne pas modifier l'original
+                const sortedData = [...data];
+                
+                if (sortKey === 'default') {
+                    // Tri par défaut (par rang)
+                    sortedData.sort((a, b) => a.Rang - b.Rang);
+                } else if (sortKey === 'taux-victoire') {
+                    // Tri par taux de victoire
+                    sortedData.sort((a, b) => {
+                        const valA = parseFloat(a.TauxVictoire);
+                        const valB = parseFloat(b.TauxVictoire);
+                        return sortDirection === 'desc' ? valB - valA : valA - valB;
+                    });
+                } else if (sortKey === 'taux-place') {
+                    // Tri par taux de place
+                    sortedData.sort((a, b) => {
+                        const valA = parseFloat(a.TauxPlace);
+                        const valB = parseFloat(b.TauxPlace);
+                        return sortDirection === 'desc' ? valB - valA : valA - valB;
+                    });
+                }
+                
+                // Mise à jour des rangs après le tri
+                return sortedData.map((item, index) => ({
+                    ...item,
+                    Rang: index + 1
+                }));
             }
             
             // Fonction pour afficher les données dans un tableau
@@ -836,6 +974,11 @@
                     }
                 });
                 
+                // Réinitialiser le tri
+                currentSort = 'default';
+                sortDirection = 'desc';
+                updateSortButtons();
+                
                 // Charger les données
                 const data = await loadData(category);
                 
@@ -843,8 +986,22 @@
                 const searchTerm = searchInput.value.trim();
                 filteredData = filterData(data, searchTerm);
                 
+                // Trier les données
+                filteredData = sortData(filteredData, currentSort);
+                
                 // Afficher les résultats
                 displayResults(filteredData, currentPage);
+            }
+            
+            // Mise à jour visuelle des boutons de tri
+            function updateSortButtons() {
+                sortButtons.forEach(btn => {
+                    if (btn.dataset.sort === currentSort) {
+                        btn.classList.add('active');
+                    } else {
+                        btn.classList.remove('active');
+                    }
+                });
             }
             
             // Événements
@@ -852,6 +1009,28 @@
                 tab.addEventListener('click', function() {
                     const category = this.dataset.category;
                     loadCategory(category);
+                });
+            });
+            
+            sortButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const sortType = this.dataset.sort;
+                    
+                    // Si on clique sur le même bouton, on inverse la direction
+                    if (currentSort === sortType) {
+                        sortDirection = sortDirection === 'desc' ? 'asc' : 'desc';
+                    } else {
+                        currentSort = sortType;
+                        sortDirection = 'desc'; // Par défaut, tri décroissant
+                    }
+                    
+                    // Mettre à jour l'état visuel des boutons
+                    updateSortButtons();
+                    
+                    // Trier et afficher les données
+                    filteredData = sortData(filteredData, currentSort);
+                    currentPage = 1;
+                    displayResults(filteredData, currentPage);
                 });
             });
             
@@ -863,6 +1042,10 @@
                 
                 // Filtrer les données
                 filteredData = filterData(allData[currentCategory] || [], searchTerm);
+                
+                // Trier les données filtrées
+                filteredData = sortData(filteredData, currentSort);
+                
                 currentPage = 1;
                 displayResults(filteredData, currentPage);
             });
@@ -873,7 +1056,11 @@
                 this.style.display = 'none';
                 
                 // Réinitialiser le filtre
-                filteredData = allData[currentCategory] || [];
+                filteredData = [...allData[currentCategory]] || [];
+                
+                // Trier les données
+                filteredData = sortData(filteredData, currentSort);
+                
                 currentPage = 1;
                 displayResults(filteredData, currentPage);
             });
@@ -885,10 +1072,18 @@
             const urlParams = new URLSearchParams(window.location.search);
             const categoryParam = urlParams.get('category');
             const searchParam = urlParams.get('search');
+            const sortParam = urlParams.get('sort');
             
             // Appliquer la catégorie si fournie dans l'URL
             if (categoryParam && ['jockeys', 'chevaux', 'entraineurs', 'eleveurs', 'proprietaires'].includes(categoryParam)) {
                 currentCategory = categoryParam;
+            }
+            
+            // Définir le tri si fourni dans l'URL
+            if (sortParam && ['default', 'taux-victoire', 'taux-place'].includes(sortParam)) {
+                currentSort = sortParam;
+                // Mettre à jour l'affichage des boutons de tri
+                updateSortButtons();
             }
             
             // Définir la recherche si fournie dans l'URL
