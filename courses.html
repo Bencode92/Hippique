@@ -100,9 +100,6 @@
             padding: 1rem 1.5rem;
             cursor: pointer;
             transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
         }
         
         .nav-main li:hover {
@@ -155,202 +152,94 @@
             transform: translateY(-2px);
         }
         
-        .section-container {
-            background-color: rgba(22, 62, 60, 0.5);
-            border: 1px solid rgba(233, 209, 140, 0.2);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .section-container h2 {
-            color: var(--gold);
-            margin-bottom: 1rem;
-            font-weight: 400;
-            font-size: 1.5rem;
-            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
-            padding-bottom: 0.5rem;
-        }
-        
-        .course-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-        
-        .course-card {
-            background-color: rgba(10, 30, 30, 0.5);
-            border: 1px solid rgba(233, 209, 140, 0.3);
-            border-radius: 12px;
-            padding: 1.5rem;
-            transition: all 0.3s ease;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .course-card:hover {
-            background-color: rgba(27, 90, 86, 0.5);
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-        
-        .course-card h3 {
-            color: var(--gold);
-            margin-bottom: 1rem;
-            font-size: 1.3rem;
-            font-weight: 500;
-        }
-        
-        .course-card .course-info {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-            margin-bottom: 1rem;
-            flex: 1;
-        }
-        
-        .course-info-item {
-            display: flex;
-            align-items: flex-start;
-            gap: 0.5rem;
-        }
-        
-        .course-info-item i {
-            color: var(--accent);
-            margin-top: 3px;
-        }
-        
-        .course-info-label {
-            font-weight: 500;
-            color: var(--accent);
-            margin-right: 0.5rem;
-        }
-        
-        .course-action {
-            margin-top: auto;
-            text-align: right;
-        }
-        
-        .btn-details {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background-color: rgba(64, 224, 208, 0.1);
-            color: var(--accent);
-            border: 1px solid rgba(64, 224, 208, 0.3);
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-        
-        .btn-details:hover {
-            background-color: rgba(64, 224, 208, 0.2);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        .course-details {
-            display: none;
-            background-color: rgba(22, 62, 60, 0.5);
-            border: 1px solid rgba(233, 209, 140, 0.2);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-top: 1.5rem;
-            animation: fadeIn 0.5s ease;
-        }
-        
-        .participants-list {
-            margin-top: 1rem;
-        }
-        
-        .participant-card {
-            background-color: rgba(10, 30, 30, 0.5);
-            border: 1px solid rgba(233, 209, 140, 0.1);
-            border-radius: 8px;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            display: flex;
-            gap: 1rem;
-        }
-        
-        .participant-number {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: var(--medium-teal);
-            border-radius: 50%;
-            color: var(--gold);
-            font-weight: 600;
-        }
-        
-        .participant-info {
-            flex: 1;
-        }
-        
-        .participant-name {
-            font-weight: 500;
-            color: var(--gold);
-            margin-bottom: 0.3rem;
-            font-size: 1.1rem;
-        }
-        
-        .participant-details {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 0.5rem;
-        }
-        
-        .participant-detail {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .detail-label {
-            color: var(--accent);
-            font-size: 0.9rem;
-        }
-        
-        .detail-value {
-            font-size: 0.9rem;
-        }
-        
-        .loading {
-            text-align: center;
-            padding: 3rem;
+        .search-clear {
+            position: absolute;
+            right: 1.2rem;
+            top: 1.2rem;
             color: var(--light-gold);
-            background-color: rgba(22, 62, 60, 0.2);
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            opacity: 0.7;
+            transition: all 0.2s ease;
+        }
+        
+        .search-clear:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
             border-radius: 12px;
-            border: 1px solid rgba(233, 209, 140, 0.1);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-        }
-        
-        .loading .spinner {
-            border: 4px solid rgba(233, 209, 140, 0.1);
-            border-radius: 50%;
-            border-top: 4px solid var(--gold);
-            border-left: 4px solid var(--gold);
-            width: 50px;
-            height: 50px;
-            animation: spin 1s linear infinite;
-            margin: 0 auto 1.5rem;
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+            margin-bottom: 2rem;
+            background-color: rgba(22, 62, 60, 0.2);
+            border: 1px solid rgba(233, 209, 140, 0.2);
+            animation: fadeIn 0.5s ease;
         }
         
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .data-table th {
+            background-color: rgba(5, 25, 25, 0.9);
+            color: var(--gold);
+            padding: 1.2rem 1.5rem;
+            text-align: left;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .data-table tr:nth-child(even) {
+            background-color: rgba(22, 62, 60, 0.4);
+        }
+        
+        .data-table tr:nth-child(odd) {
+            background-color: rgba(22, 62, 60, 0.2);
+        }
+        
+        .data-table td {
+            padding: 1.2rem 1.5rem;
+            border-bottom: 1px solid rgba(233, 209, 140, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .data-table tr:hover td {
+            background-color: rgba(26, 81, 78, 0.7);
+            transform: translateX(5px);
+        }
+        
+        .data-table a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            transition: all 0.2s ease;
+        }
+        
+        .data-table a:after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent);
+            transition: width 0.3s ease;
+        }
+        
+        .data-table a:hover:after {
+            width: 100%;
         }
         
         .tabs {
@@ -363,7 +252,7 @@
         }
         
         .tab {
-            padding: 1.2rem 2rem;
+            padding: 1.2rem 2.5rem;
             cursor: pointer;
             transition: all 0.3s ease;
             color: var(--light-gold);
@@ -397,6 +286,55 @@
             border-bottom: 8px solid var(--gold);
         }
         
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: var(--light-gold);
+            background-color: rgba(22, 62, 60, 0.2);
+            border-radius: 12px;
+            border: 1px solid rgba(233, 209, 140, 0.1);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+        
+        .loading .spinner {
+            border: 4px solid rgba(233, 209, 140, 0.1);
+            border-radius: 50%;
+            border-top: 4px solid var(--gold);
+            border-left: 4px solid var(--gold);
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1.5rem;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 3rem;
+            color: var(--light-gold);
+            background-color: rgba(22, 62, 60, 0.3);
+            border-radius: 12px;
+            border: 1px solid rgba(233, 209, 140, 0.2);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+        
+        .no-results i {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--gold);
+            opacity: 0.8;
+        }
+        
+        .no-results h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
         .home-link {
             display: inline-block;
             text-align: center;
@@ -416,37 +354,119 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         
-        .date-info {
+        .pagination {
+            display: flex;
+            gap: 6px;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        
+        .page-btn {
+            min-width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            border: none;
+            background: rgba(22, 62, 60, 0.4);
+            color: var(--light-gold);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .page-btn:hover {
+            background: rgba(26, 81, 78, 0.7);
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        
+        .page-btn.active {
+            background: linear-gradient(145deg, var(--gold), #b19030);
+            color: var(--dark-teal);
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+        }
+        
+        .page-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .course-details {
+            background-color: rgba(22, 62, 60, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .course-details h2 {
+            color: var(--gold);
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
+            padding-bottom: 0.5rem;
+        }
+        
+        .course-info {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+        
+        .course-info p {
+            margin-bottom: 0.5rem;
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            color: var(--light-gold);
-            margin-bottom: 1rem;
-            font-size: 0.9rem;
-            opacity: 0.8;
         }
         
-        .no-data {
+        .course-info i {
+            color: var(--accent);
+            width: 20px;
             text-align: center;
-            padding: 3rem;
-            color: var(--light-gold);
-            background-color: rgba(22, 62, 60, 0.3);
-            border-radius: 12px;
-            border: 1px solid rgba(233, 209, 140, 0.2);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
         }
         
-        .no-data i {
-            font-size: 3.5rem;
-            margin-bottom: 1.5rem;
-            color: var(--gold);
-            opacity: 0.8;
-        }
-        
-        .no-data h3 {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
+        .participants-title {
+            color: var(--accent);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
             font-weight: 500;
+        }
+        
+        .participants-table {
+            width: 100%;
+        }
+        
+        .participants-table td, 
+        .participants-table th {
+            padding: 1rem;
+        }
+        
+        .participant-number {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--medium-teal);
+            color: var(--gold);
+            border-radius: 50%;
+            font-weight: 600;
+            margin-right: 0.5rem;
+        }
+        
+        .table-responsive {
+            overflow-x: auto;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
         }
         
         footer {
@@ -469,17 +489,37 @@
             font-weight: 400;
         }
         
+        .action-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: rgba(64, 224, 208, 0.1);
+            color: var(--accent);
+            border: 1px solid rgba(64, 224, 208, 0.3);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .action-button:hover {
+            background-color: rgba(64, 224, 208, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
         @media (max-width: 768px) {
             .container {
                 padding: 1rem;
             }
             
-            .course-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .participant-details {
-                grid-template-columns: 1fr;
+            .data-table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
             }
             
             .tab {
@@ -488,7 +528,12 @@
             }
             
             .nav-main li {
-                padding: 0.5rem 1rem;
+                padding: 0.75rem 1rem;
+                font-size: 0.9rem;
+            }
+            
+            .course-details {
+                padding: 1rem;
             }
         }
     </style>
@@ -518,7 +563,8 @@
         
         <div class="search-container">
             <i class="fas fa-search"></i>
-            <input type="text" id="search-input" placeholder="Rechercher une course ou un hippodrome...">
+            <input type="text" id="search-input" placeholder="Rechercher une course...">
+            <button class="search-clear" id="search-clear"><i class="fas fa-times"></i></button>
         </div>
         
         <div class="tabs" id="hippodrome-tabs">
@@ -526,23 +572,19 @@
             <div class="tab active" data-hippodrome="all">Tous les hippodromes</div>
         </div>
         
-        <div class="section-container">
-            <h2 id="courses-title">Toutes les courses</h2>
-            <div class="date-info" id="date-info">
-                <i class="fas fa-calendar"></i> 
-                <span id="courses-date">16/04/2025</span>
-            </div>
-            
-            <div id="courses-container">
-                <div class="loading">
-                    <div class="spinner"></div>
-                    <p>Chargement des courses...</p>
-                </div>
+        <div id="results-container">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>Chargement des courses...</p>
             </div>
         </div>
         
-        <div id="course-details" class="course-details">
+        <div id="course-details" class="course-details" style="display: none;">
             <!-- Les détails d'une course spécifique (participants) -->
+        </div>
+        
+        <div class="pagination" id="pagination">
+            <!-- Les boutons de pagination seront générés par JavaScript -->
         </div>
         
         <a href="index.html" class="home-link">
@@ -561,12 +603,17 @@
             let allCourses = [];
             let hippodromes = [];
             let currentHippodrome = 'all';
-            const coursesContainer = document.getElementById('courses-container');
-            const courseDetails = document.getElementById('course-details');
-            const hippodromeTabs = document.getElementById('hippodrome-tabs');
-            const coursesTitle = document.getElementById('courses-title');
-            const coursesDate = document.getElementById('courses-date');
+            let currentPage = 1;
+            const itemsPerPage = 15;
+            let filteredCourses = [];
+            
+            // Éléments DOM
+            const resultsContainer = document.getElementById('results-container');
             const searchInput = document.getElementById('search-input');
+            const searchClear = document.getElementById('search-clear');
+            const hippodromeTabs = document.getElementById('hippodrome-tabs');
+            const courseDetails = document.getElementById('course-details');
+            const pagination = document.getElementById('pagination');
             const lastUpdateEl = document.getElementById('last-update');
             
             // Déterminer si nous sommes sur GitHub Pages ou en local
@@ -619,9 +666,11 @@
                     const results = await Promise.all(promises);
                     
                     // Filtrer les résultats nuls (erreurs) et traiter les données
-                    allCourses = results
+                    let processedCourses = [];
+                    
+                    results
                         .filter(data => data !== null)
-                        .map(data => {
+                        .forEach(data => {
                             // Extraire l'hippodrome et la date
                             const hippodrome = data.hippodrome || "Inconnu";
                             const dateStr = data.date_extraction || "";
@@ -637,31 +686,34 @@
                                 console.error("Erreur de formatage de date:", e);
                             }
                             
-                            // Filtrer les courses qui n'ont pas de participants ou dont le tableau est vide
-                            const filteredCourses = (data.courses || []).filter(course => {
-                                return course.participants && Array.isArray(course.participants) && course.participants.length > 0;
+                            // Pour chaque course dans ce fichier
+                            (data.courses || []).forEach(course => {
+                                // Ne traiter que les courses qui ont des participants
+                                if (course.participants && Array.isArray(course.participants) && course.participants.length > 0) {
+                                    processedCourses.push({
+                                        hippodrome: hippodrome,
+                                        date: formattedDate,
+                                        nom: course.nom || "Course sans nom",
+                                        url: course.url || "",
+                                        participants: course.participants || []
+                                    });
+                                }
                             });
-                            
-                            return {
-                                hippodrome,
-                                date: formattedDate,
-                                rawDate: dateStr,
-                                courses: filteredCourses,
-                                url_source: data.url_source || ""
-                            };
                         });
                     
+                    // Stocker toutes les courses traitées
+                    allCourses = processedCourses;
+                    
                     // Extraire la liste des hippodromes uniques
-                    hippodromes = [...new Set(allCourses.map(item => item.hippodrome))];
+                    hippodromes = [...new Set(allCourses.map(course => course.hippodrome))].sort();
                     
                     // Mettre à jour l'interface
                     updateHippodromeTabs();
-                    displayCourses();
+                    filterAndDisplayCourses();
                     
-                    // Mettre à jour la date
+                    // Mettre à jour la date si disponible
                     if (allCourses.length > 0 && allCourses[0].date) {
                         lastUpdateEl.textContent = allCourses[0].date;
-                        coursesDate.textContent = allCourses[0].date;
                     }
                     
                 } catch (error) {
@@ -690,55 +742,58 @@
                 document.querySelectorAll('.tab').forEach(tab => {
                     tab.addEventListener('click', function() {
                         currentHippodrome = this.dataset.hippodrome;
+                        currentPage = 1;
+                        
+                        // Masquer les détails d'une course précédemment sélectionnée
+                        courseDetails.style.display = 'none';
                         
                         // Mettre à jour les onglets actifs
                         document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
                         this.classList.add('active');
                         
-                        // Mettre à jour le titre
-                        updateCoursesTitle();
-                        
-                        // Afficher les courses pour cet hippodrome
-                        displayCourses();
+                        // Filtrer et afficher les courses
+                        filterAndDisplayCourses();
                     });
                 });
             }
             
-            // Fonction pour mettre à jour le titre des courses
-            function updateCoursesTitle() {
-                if (currentHippodrome === 'all') {
-                    coursesTitle.textContent = 'Toutes les courses';
-                } else {
-                    coursesTitle.textContent = `Courses à ${currentHippodrome}`;
-                }
-            }
-            
-            // Fonction pour afficher les courses
-            function displayCourses() {
-                // Filtrer les courses par hippodrome si nécessaire
-                let filteredCourses = allCourses;
+            // Fonction pour filtrer et afficher les courses
+            function filterAndDisplayCourses() {
+                // Filtrer par hippodrome
+                filteredCourses = allCourses;
                 if (currentHippodrome !== 'all') {
-                    filteredCourses = allCourses.filter(item => item.hippodrome === currentHippodrome);
+                    filteredCourses = allCourses.filter(course => course.hippodrome === currentHippodrome);
                 }
                 
-                // Filtrer par recherche si une valeur est saisie
+                // Filtrer par recherche
                 const searchTerm = searchInput.value.trim().toLowerCase();
                 if (searchTerm) {
-                    filteredCourses = filteredCourses.filter(item => {
-                        // Vérifier si l'hippodrome correspond
-                        if (item.hippodrome.toLowerCase().includes(searchTerm)) return true;
+                    filteredCourses = filteredCourses.filter(course => {
+                        // Vérifier le nom de la course
+                        if (course.nom.toLowerCase().includes(searchTerm)) return true;
                         
-                        // Vérifier si l'une des courses correspond
-                        return item.courses.some(course => 
-                            course.nom && course.nom.toLowerCase().includes(searchTerm)
+                        // Vérifier le nom des participants
+                        return course.participants.some(p => 
+                            (p.cheval && p.cheval.toLowerCase().includes(searchTerm)) ||
+                            (p.entraineur && p.entraineur.toLowerCase().includes(searchTerm)) ||
+                            (p.proprietaire && p.proprietaire.toLowerCase().includes(searchTerm))
                         );
                     });
                 }
                 
+                // Afficher les courses filtrées
+                displayCourses(filteredCourses, currentPage);
+                
+                // Mettre à jour la pagination
+                updatePagination(filteredCourses.length);
+            }
+            
+            // Fonction pour afficher les courses dans un format tabulaire
+            function displayCourses(courses, page) {
                 // Si aucune course n'est trouvée
-                if (filteredCourses.length === 0) {
-                    coursesContainer.innerHTML = `
-                        <div class="no-data">
+                if (courses.length === 0) {
+                    resultsContainer.innerHTML = `
+                        <div class="no-results">
                             <i class="fas fa-search"></i>
                             <h3>Aucune course trouvée</h3>
                             <p>Essayez de modifier votre recherche ou sélectionnez un autre hippodrome</p>
@@ -747,134 +802,209 @@
                     return;
                 }
                 
-                let coursesHTML = '';
+                // Calculer les indices pour la pagination
+                const startIndex = (page - 1) * itemsPerPage;
+                const endIndex = Math.min(startIndex + itemsPerPage, courses.length);
+                const pageData = courses.slice(startIndex, endIndex);
                 
-                // Pour chaque hippodrome, afficher ses courses
-                filteredCourses.forEach(item => {
-                    // Ne montrer que les courses qui ont des participants
-                    const validCourses = item.courses.filter(course => 
-                        course.participants && 
-                        Array.isArray(course.participants) && 
-                        course.participants.length > 0
-                    );
-                    
-                    if (validCourses.length === 0) return;
-                    
-                    coursesHTML += `
-                        <div class="section-container">
-                            <h2>${item.hippodrome}</h2>
-                            <div class="date-info">
-                                <i class="fas fa-calendar"></i> ${item.date}
-                            </div>
-                            <div class="course-grid">
-                    `;
-                    
-                    validCourses.forEach(course => {
-                        coursesHTML += `
-                            <div class="course-card" data-course-id="${encodeURIComponent(course.nom)}">
-                                <h3>${course.nom}</h3>
-                                <div class="course-info">
-                                    <div class="course-info-item">
-                                        <i class="fas fa-users"></i>
-                                        <span><span class="course-info-label">Participants:</span> ${course.participants.length}</span>
-                                    </div>
-                                </div>
-                                <div class="course-action">
-                                    <button class="btn-details" onclick="showCourseDetails('${encodeURIComponent(JSON.stringify(course))}', '${item.hippodrome}')">
-                                        <i class="fas fa-info-circle"></i> Voir les détails
-                                    </button>
-                                </div>
-                            </div>
-                        `;
-                    });
-                    
-                    coursesHTML += `
-                            </div>
-                        </div>
+                // Construire le tableau HTML
+                let tableHTML = `
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Hippodrome</th>
+                                    <th>Course</th>
+                                    <th>Date</th>
+                                    <th>Participants</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                `;
+                
+                // Ajouter chaque course au tableau
+                pageData.forEach(course => {
+                    tableHTML += `
+                        <tr>
+                            <td>${course.hippodrome}</td>
+                            <td>${course.nom}</td>
+                            <td>${course.date}</td>
+                            <td>${course.participants.length}</td>
+                            <td>
+                                <button class="action-button" onclick="showCourseDetails('${encodeURIComponent(JSON.stringify(course))}')">
+                                    <i class="fas fa-info-circle"></i> Détails
+                                </button>
+                            </td>
+                        </tr>
                     `;
                 });
                 
-                coursesContainer.innerHTML = coursesHTML;
+                tableHTML += `
+                            </tbody>
+                        </table>
+                    </div>
+                `;
+                
+                resultsContainer.innerHTML = tableHTML;
             }
             
-            // Fonction pour afficher les détails d'une course (participants)
-            window.showCourseDetails = function(courseJSON, hippodrome) {
+            // Fonction pour mettre à jour la pagination
+            function updatePagination(totalItems) {
+                const totalPages = Math.ceil(totalItems / itemsPerPage);
+                
+                if (totalPages <= 1) {
+                    pagination.innerHTML = '';
+                    return;
+                }
+                
+                let paginationHTML = '';
+                
+                // Bouton précédent
+                paginationHTML += `
+                    <button class="page-btn" 
+                            ${currentPage === 1 ? 'disabled' : ''} 
+                            onclick="changePage(${currentPage - 1})">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                `;
+                
+                // Limiter le nombre de boutons de page affichés
+                const maxButtons = 5;
+                let startPage = Math.max(1, currentPage - Math.floor(maxButtons / 2));
+                let endPage = Math.min(totalPages, startPage + maxButtons - 1);
+                
+                if (endPage - startPage + 1 < maxButtons) {
+                    startPage = Math.max(1, endPage - maxButtons + 1);
+                }
+                
+                // Première page
+                if (startPage > 1) {
+                    paginationHTML += `
+                        <button class="page-btn" onclick="changePage(1)">1</button>
+                        ${startPage > 2 ? '<span class="page-btn" style="cursor: default; background: transparent;">...</span>' : ''}
+                    `;
+                }
+                
+                // Pages intermédiaires
+                for (let i = startPage; i <= endPage; i++) {
+                    paginationHTML += `
+                        <button class="page-btn ${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">
+                            ${i}
+                        </button>
+                    `;
+                }
+                
+                // Dernière page
+                if (endPage < totalPages) {
+                    paginationHTML += `
+                        ${endPage < totalPages - 1 ? '<span class="page-btn" style="cursor: default; background: transparent;">...</span>' : ''}
+                        <button class="page-btn" onclick="changePage(${totalPages})\">${totalPages}</button>
+                    `;
+                }
+                
+                // Bouton suivant
+                paginationHTML += `
+                    <button class="page-btn" 
+                            ${currentPage === totalPages ? 'disabled' : ''} 
+                            onclick="changePage(${currentPage + 1})">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                `;
+                
+                pagination.innerHTML = paginationHTML;
+                
+                // Définir la fonction changePage dans le scope global
+                window.changePage = function(page) {
+                    if (page < 1 || page > totalPages || page === currentPage) {
+                        return;
+                    }
+                    
+                    currentPage = page;
+                    
+                    // Masquer les détails d'une course précédemment sélectionnée
+                    courseDetails.style.display = 'none';
+                    
+                    // Afficher un indicateur de chargement
+                    resultsContainer.innerHTML = `
+                        <div class="loading">
+                            <div class="spinner"></div>
+                            <p>Chargement des données...</p>
+                        </div>
+                    `;
+                    
+                    // Décaler l'affichage pour montrer l'animation
+                    setTimeout(() => {
+                        displayCourses(filteredCourses, currentPage);
+                        
+                        // Faire défiler vers le haut des résultats
+                        resultsContainer.scrollIntoView({ behavior: 'smooth' });
+                    }, 300);
+                };
+            }
+            
+            // Fonction pour afficher les détails d'une course
+            window.showCourseDetails = function(courseJSON) {
                 try {
                     const course = JSON.parse(decodeURIComponent(courseJSON));
                     
                     let detailsHTML = `
                         <h2><i class="fas fa-flag-checkered"></i> ${course.nom}</h2>
-                        <p><i class="fas fa-map-marker-alt"></i> ${hippodrome}</p>
-                        <h3>Participants</h3>
-                        <div class="participants-list">
+                        <div class="course-info">
+                            <p><i class="fas fa-map-marker-alt"></i> <strong>Hippodrome:</strong> ${course.hippodrome}</p>
+                            <p><i class="fas fa-calendar"></i> <strong>Date:</strong> ${course.date}</p>
+                            <p><i class="fas fa-users"></i> <strong>Nombre de participants:</strong> ${course.participants.length}</p>
+                        </div>
+                        
+                        <h3 class="participants-title">Liste des participants</h3>
                     `;
                     
                     if (!course.participants || course.participants.length === 0) {
                         detailsHTML += `
-                            <div class="no-data">
+                            <div class="no-results">
                                 <i class="fas fa-exclamation-circle"></i>
                                 <h3>Aucun participant</h3>
                                 <p>Il n'y a pas de participants pour cette course</p>
                             </div>
                         `;
                     } else {
+                        detailsHTML += `
+                            <div class="table-responsive">
+                                <table class="data-table participants-table">
+                                    <thead>
+                                        <tr>
+                                            <th>N°</th>
+                                            <th>Cheval</th>
+                                            <th>Poids</th>
+                                            <th>Propriétaire</th>
+                                            <th>Entraîneur</th>
+                                            <th>Gains</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                        `;
+                        
                         course.participants.forEach(participant => {
                             detailsHTML += `
-                                <div class="participant-card">
-                                    <div class="participant-number">${participant.n || '-'}</div>
-                                    <div class="participant-info">
-                                        <div class="participant-name">${participant.cheval || 'Cheval inconnu'}</div>
-                                        <div class="participant-details">
-                            `;
-                            
-                            // Ajouter les détails du participant s'ils existent
-                            if (participant.poids) {
-                                detailsHTML += `
-                                    <div class="participant-detail">
-                                        <span class="detail-label">Poids:</span>
-                                        <span class="detail-value">${participant.poids}</span>
-                                    </div>
-                                `;
-                            }
-                            
-                            if (participant.proprietaire) {
-                                detailsHTML += `
-                                    <div class="participant-detail">
-                                        <span class="detail-label">Propriétaire:</span>
-                                        <span class="detail-value">${participant.proprietaire}</span>
-                                    </div>
-                                `;
-                            }
-                            
-                            if (participant.entraineur) {
-                                detailsHTML += `
-                                    <div class="participant-detail">
-                                        <span class="detail-label">Entraîneur:</span>
-                                        <span class="detail-value">${participant.entraineur}</span>
-                                    </div>
-                                `;
-                            }
-                            
-                            if (participant.gains) {
-                                detailsHTML += `
-                                    <div class="participant-detail">
-                                        <span class="detail-label">Gains:</span>
-                                        <span class="detail-value">${participant.gains}</span>
-                                    </div>
-                                `;
-                            }
-                            
-                            detailsHTML += `
-                                        </div>
-                                    </div>
-                                </div>
+                                <tr>
+                                    <td>
+                                        <div class="participant-number">${participant.n || '-'}</div>
+                                    </td>
+                                    <td>${participant.cheval || 'Non spécifié'}</td>
+                                    <td>${participant.poids || '-'}</td>
+                                    <td>${participant.proprietaire || '-'}</td>
+                                    <td>${participant.entraineur || '-'}</td>
+                                    <td>${participant.gains || '-'}</td>
+                                </tr>
                             `;
                         });
+                        
+                        detailsHTML += `
+                                    </tbody>
+                                </table>
+                            </div>
+                        `;
                     }
-                    
-                    detailsHTML += `
-                        </div>
-                    `;
                     
                     courseDetails.innerHTML = detailsHTML;
                     courseDetails.style.display = 'block';
@@ -885,7 +1015,7 @@
                 } catch (error) {
                     console.error('Erreur lors de l\'affichage des détails:', error);
                     courseDetails.innerHTML = `
-                        <div class="no-data">
+                        <div class="no-results">
                             <i class="fas fa-exclamation-circle"></i>
                             <h3>Erreur</h3>
                             <p>Impossible d'afficher les détails de cette course</p>
@@ -897,8 +1027,8 @@
             
             // Fonction pour afficher une erreur
             function showError(message) {
-                coursesContainer.innerHTML = `
-                    <div class="no-data">
+                resultsContainer.innerHTML = `
+                    <div class="no-results">
                         <i class="fas fa-exclamation-circle"></i>
                         <h3>Erreur</h3>
                         <p>${message}</p>
@@ -908,8 +1038,24 @@
             
             // Événement de recherche
             searchInput.addEventListener('input', function() {
-                displayCourses();
+                currentPage = 1;
+                filterAndDisplayCourses();
+                
+                // Afficher/masquer le bouton d'effacement
+                searchClear.style.display = this.value.trim() ? 'block' : 'none';
             });
+            
+            // Événement d'effacement de la recherche
+            searchClear.addEventListener('click', function() {
+                searchInput.value = '';
+                searchInput.focus();
+                this.style.display = 'none';
+                currentPage = 1;
+                filterAndDisplayCourses();
+            });
+            
+            // Masquer le bouton d'effacement au chargement
+            searchClear.style.display = 'none';
             
             // Charger toutes les courses au démarrage
             loadAllCourses();
