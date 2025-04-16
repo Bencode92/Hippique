@@ -17,6 +17,7 @@ class ScraperCoursesFG:
     def __init__(self):
         self.base_url = "https://www.france-galop.com"
         self.courses_url = f"{self.base_url}/fr/courses/toutes-les-courses"
+        self.courses_aujourdhui_url = f"{self.base_url}/fr/courses/aujourdhui"
         self.output_dir = "data/courses"
         os.makedirs(self.output_dir, exist_ok=True)
         
@@ -101,8 +102,8 @@ class ScraperCoursesFG:
     
     def get_links_from_aujourdhui_page(self, driver):
         """Récupère les liens des réunions de type Plat pour aujourd'hui"""
-        url = "https://www.france-galop.com/fr/courses/aujourdhui"
-        driver.get(url)
+        print(f"📅 Accès à la page des courses du jour: {self.courses_aujourdhui_url}")
+        driver.get(self.courses_aujourdhui_url)
         time.sleep(5)
 
         print("🔍 Scraping des courses du jour (page 'aujourdhui')...")
@@ -152,6 +153,7 @@ class ScraperCoursesFG:
         """Récupère les liens des courses selon le filtre et la période"""
         print(f"🔍 Recherche des courses de {filtre_type} pour les {jours} prochains jours...")
         
+        print(f"🌐 Accès à la page toutes les courses: {self.courses_url}")
         driver.get(self.courses_url)
         time.sleep(5)  # Augmentation du délai pour s'assurer que la page est chargée
         
@@ -556,7 +558,8 @@ if __name__ == "__main__":
     # Obtenir les variables d'environnement (utile pour GitHub Actions)
     type_course = os.environ.get("TYPE_COURSE", "Plat")
     jours = int(os.environ.get("JOURS", "3"))
-    mode = os.environ.get("MODE", "all")  # "all", "new", "enrich", "direct", "today"
+    # Changer la valeur par défaut à "today" au lieu de "all"
+    mode = os.environ.get("MODE", "today")  # "all", "new", "enrich", "direct", "today"
     direct_url = os.environ.get("URL", "")
     
     scraper = ScraperCoursesFG()
@@ -570,6 +573,9 @@ if __name__ == "__main__":
         # Sinon considérer que c'est le mode
         else:
             mode = sys.argv[1]
+    
+    # Afficher le mode d'exécution pour débogage
+    print(f"🚀 Exécution du scraper en mode: {mode}")
     
     # Mode selon l'environnement ou valeur par défaut
     if mode == "direct" and direct_url:
