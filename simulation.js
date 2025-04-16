@@ -165,9 +165,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
         function computeCombo(combo, totalBet) {
             const odds = combo.map(h => sortedHorses[h]);
-            const invOdds = odds.map(o => 1 / o);
-            const totalInv = invOdds.reduce((a, b) => a + b, 0);
-            const stakes = invOdds.map(inv => (inv / totalInv) * totalBet);
+            
+            // Nouvelle méthode de répartition des mises pour avoir des gains nets différents
+            // Nous calculons les mises selon une répartition simple basée sur la valeur des cotes
+            const totalOdds = odds.reduce((a, b) => a + b, 0);
+            const stakeDistributionFactor = totalOdds / odds.length;
+            
+            // Calcul des mises : plus la cote est faible, plus la mise est élevée
+            const stakesRatio = odds.map(odd => stakeDistributionFactor / odd);
+            const totalStakesRatio = stakesRatio.reduce((a, b) => a + b, 0);
+            const stakes = stakesRatio.map(ratio => (ratio / totalStakesRatio) * totalBet);
+            
+            // Calculer les gains
             const gainsNet = stakes.map((stake, i) => (stake * odds[i]) - totalBet);
             const gainMax = Math.max(...gainsNet);
             const gainMin = Math.min(...gainsNet);
