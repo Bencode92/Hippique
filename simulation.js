@@ -6,7 +6,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Éléments DOM
     const horseEntriesContainer = document.getElementById('horseEntries');
-    const addHorseButton = document.getElementById('addHorse');
+    const horseCountInput = document.getElementById('horseCount');
     const clearFormButton = document.getElementById('clearForm');
     const loadExampleButton = document.getElementById('loadExample');
     const calculateButton = document.getElementById('calculateBets');
@@ -29,50 +29,47 @@ document.addEventListener('DOMContentLoaded', function() {
         "WHITE SPIRIT": 3
     };
     
+    // Fonction pour générer les entrées de chevaux basées sur le nombre spécifié
+    function generateHorseEntries(count) {
+        // Vider le conteneur d'abord
+        horseEntriesContainer.innerHTML = '';
+        
+        // Générer les entrées
+        for (let i = 1; i <= count; i++) {
+            addHorseEntry(i);
+        }
+    }
+    
     // Fonction pour ajouter une ligne de cheval
-    function addHorseEntry(name = '', odds = '') {
+    function addHorseEntry(number, odds = '') {
         const entry = document.createElement('div');
         entry.className = 'horse-entry';
         
         entry.innerHTML = `
-            <input type="text" placeholder="Nom du cheval" class="horse-name" value="${name}">
-            <input type="number" placeholder="Cote" class="horse-odds" min="1.01" step="0.01" value="${odds}">
-            <button class="remove-horse"><i class="fas fa-times"></i></button>
+            <div class="horse-number">${number}</div>
+            <input type="number" placeholder="Cote du cheval ${number}" class="horse-odds" min="1.01" step="0.01" value="${odds}">
         `;
-        
-        // Ajout de l'événement pour supprimer la ligne
-        const removeButton = entry.querySelector('.remove-horse');
-        removeButton.addEventListener('click', function() {
-            entry.remove();
-        });
         
         horseEntriesContainer.appendChild(entry);
         return entry;
     }
     
-    // Ajouter les événements aux boutons
-    addHorseButton.addEventListener('click', function() {
-        addHorseEntry();
+    // Événement pour détecter le changement du nombre de chevaux
+    horseCountInput.addEventListener('change', function() {
+        const count = parseInt(this.value);
+        if (!isNaN(count) && count >= 2 && count <= 20) {
+            generateHorseEntries(count);
+        }
     });
     
+    // Ajouter les événements aux boutons
     clearFormButton.addEventListener('click', function() {
-        // Vider toutes les lignes sauf la première
-        while (horseEntriesContainer.children.length > 1) {
-            horseEntriesContainer.removeChild(horseEntriesContainer.lastChild);
-        }
-        
-        // Réinitialiser la première ligne
-        const firstEntry = horseEntriesContainer.firstChild;
-        if (firstEntry) {
-            firstEntry.querySelector('.horse-name').value = '';
-            firstEntry.querySelector('.horse-odds').value = '';
-        } else {
-            addHorseEntry();
-        }
-        
         // Réinitialiser les valeurs par défaut
         document.getElementById('totalBet').value = 50;
-        document.getElementById('maxHorses').value = 5;
+        horseCountInput.value = 5;
+        
+        // Régénérer les entrées
+        generateHorseEntries(5);
         
         // Cacher les résultats et l'erreur
         resultContainer.style.display = 'none';
@@ -80,14 +77,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     loadExampleButton.addEventListener('click', function() {
-        // Vider le formulaire d'abord
-        while (horseEntriesContainer.children.length > 0) {
-            horseEntriesContainer.removeChild(horseEntriesContainer.lastChild);
-        }
+        // Mettre à jour le nombre de chevaux
+        const exampleCount = Object.keys(exampleData).length;
+        horseCountInput.value = exampleCount;
+        
+        // Vider et régénérer le formulaire
+        generateHorseEntries(exampleCount);
         
         // Charger l'exemple
-        for (const [horseName, odds] of Object.entries(exampleData)) {
-            addHorseEntry(horseName, odds);
+        let i = 1;
+        for (const odds of Object.values(exampleData)) {
+            const entry = horseEntriesContainer.children[i - 1];
+            if (entry) {
+                entry.querySelector('.horse-odds').value = odds;
+            }
+            i++;
         }
         
         // Cacher les résultats et l'erreur
@@ -99,15 +103,10 @@ document.addEventListener('DOMContentLoaded', function() {
         try {
             // Récupérer les valeurs du formulaire
             const totalBet = parseFloat(document.getElementById('totalBet').value);
-            const maxHorses = parseInt(document.getElementById('maxHorses').value);
             
             // Validation de base
             if (isNaN(totalBet) || totalBet <= 0) {
                 throw new Error('Le montant total doit être un nombre positif');
-            }
-            
-            if (isNaN(maxHorses) || maxHorses < 2 || maxHorses > 10) {
-                throw new Error('Le nombre max de favoris doit être entre 2 et 10');
             }
             
             // Récupérer les chevaux et leurs cotes
@@ -115,26 +114,23 @@ document.addEventListener('DOMContentLoaded', function() {
             const horseEntries = horseEntriesContainer.children;
             
             if (horseEntries.length < 2) {
-                throw new Error('Vous devez ajouter au moins 2 chevaux');
+                throw new Error('Vous devez avoir au moins 2 chevaux');
             }
             
-            for (const entry of horseEntries) {
-                const name = entry.querySelector('.horse-name').value.trim();
+            for (let i = 0; i < horseEntries.length; i++) {
+                const entry = horseEntries[i];
+                const number = i + 1;
                 const odds = parseFloat(entry.querySelector('.horse-odds').value);
                 
-                if (!name) {
-                    throw new Error('Tous les chevaux doivent avoir un nom');
-                }
-                
                 if (isNaN(odds) || odds < 1.01) {
-                    throw new Error(`La cote pour ${name} doit être un nombre supérieur à 1.01`);
+                    throw new Error(`La cote pour le cheval ${number} doit être un nombre supérieur à 1.01`);
                 }
                 
-                horsesRaw[name] = odds;
+                horsesRaw[`Cheval ${number}`] = odds;
             }
             
-            // Calculer la stratégie optimale
-            const bestCombo = findOptimalBets(horsesRaw, totalBet, maxHorses);
+            // Calculer la stratégie optimale - utiliser tous les chevaux disponibles
+            const bestCombo = findOptimalBets(horsesRaw, totalBet, horseEntries.length);
             
             if (!bestCombo) {
                 throw new Error('Aucune combinaison rentable trouvée. Essayez de modifier les cotes ou d\'augmenter le montant total.');
@@ -241,8 +237,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Ajouter une première ligne vide au chargement de la page
-    if (horseEntriesContainer.children.length === 0) {
-        addHorseEntry();
-    }
+    // Générer les chevaux initiaux au chargement de la page
+    generateHorseEntries(parseInt(horseCountInput.value) || 5);
 });
