@@ -16,7 +16,7 @@ from datetime import datetime, timedelta
 class ScraperCoursesFG:
     def __init__(self):
         self.base_url = "https://www.france-galop.com"
-        self.courses_url = f"{self.base_url}/fr/courses/toutes-les-courses"
+        self.courses_url = f"{self.base_url}/fr/courses/aujourd'hui"  # URL modifiée pour la page des courses du jour
         self.output_dir = "data/courses"
         os.makedirs(self.output_dir, exist_ok=True)
         
@@ -53,7 +53,6 @@ class ScraperCoursesFG:
         
         # Date d'aujourd'hui et période
         today = datetime.now()
-        end_date = today + timedelta(days=jours)
         
         try:
             # Vérifions d'abord si la page a bien chargé
@@ -66,7 +65,7 @@ class ScraperCoursesFG:
             driver.save_screenshot(screenshot_path)
             print(f"📸 Capture d'écran sauvegardée: {screenshot_path}")
             
-            html = self.wait_and_get_html(driver, By.CSS_SELECTOR, "table")
+            html = driver.page_source
             
             # Sauvegardons le HTML pour le débogage
             with open(os.path.join(screenshot_dir, "courses_list.html"), "w", encoding="utf-8") as f:
@@ -74,41 +73,54 @@ class ScraperCoursesFG:
             
             soup = BeautifulSoup(html, "html.parser")
             
-            # Vérifions si nous avons bien trouvé le tableau
-            tables = soup.find_all("table")
-            print(f"📊 Trouvé {len(tables)} tableaux sur la page")
+            # Nouveau code pour extraire les cartes des hippodromes
+            cards = soup.select(".card-panel, [class*='card']")  # Sélecteur CSS plus inclusif
+            print(f"🎴 Trouvé {len(cards)} cartes d'hippodromes sur la page")
             
-            rows = soup.select("table tbody tr")
-            print(f"📋 Trouvé {len(rows)} lignes dans le tableau")
-            
-            for row in rows:
-                # Vérifier le type de course
-                type_cell = row.select_one("td:nth-of-type(4)")
-                if not type_cell or filtre_type not in type_cell.text:
-                    continue
+            for card in cards:
+                # Chercher si cette carte contient une indication "Plat : X"
+                card_text = card.get_text().strip()
                 
-                # Vérifier la date
-                date_cell = row.select_one("td:nth-of-type(1)")
-                if date_cell:
-                    try:
-                        # Format de date attendu: "16/04/2025"
-                        date_text = date_cell.text.strip()
-                        date_parts = date_text.split('/')
-                        if len(date_parts) == 3:
-                            course_date = datetime(int(date_parts[2]), int(date_parts[1]), int(date_parts[0]))
-                            if course_date < today or course_date > end_date:
-                                continue
-                    except (ValueError, IndexError):
-                        # En cas d'erreur dans le parsing de date, on continue quand même
-                        pass
+                # Vérifier si c'est une course de plat (la mention "Plat : X" doit apparaître)
+                plat_indicator = False
+                if "Plat :" in card_text or "Plat:" in card_text:
+                    plat_indicator = True
+                    print(f"✅ Trouvé une carte pour courses de Plat: {card_text[:50]}...")
+                else:
+                    print(f"❌ Ignoré une carte non-Plat: {card_text[:50]}...")
+                    continue  # Passer à la carte suivante si ce n'est pas une course de plat
                 
-                # Extraire le lien de la course
-                link_tag = row.select_one("td a")
-                if link_tag and link_tag.get("href"):
-                    full_url = f"{self.base_url}{link_tag['href']}"
-                    hippodrome = link_tag.text.strip()
-                    print(f"🏁 Trouvé course: {hippodrome} - {full_url}")
+                # Extraire le nom de l'hippodrome
+                hippodrome_element = card.select_one("h3, h2, [class*='title'], strong, b")
+                hippodrome = hippodrome_element.text.strip() if hippodrome_element else "Hippodrome inconnu"
+                
+                # Extraire l'URL
+                link = card.select_one("a[href*='courses']")
+                if link and link.get("href"):
+                    href = link.get("href")
+                    full_url = f"{self.base_url}{href}" if href.startswith('/') else href
+                    print(f"🏁 Trouvé course de Plat: {hippodrome} - {full_url}")
                     links_courses.append({"url": full_url, "hippodrome": hippodrome})
+            
+            # Si on ne trouve rien avec la nouvelle méthode, essayer l'ancienne approche
+            if not links_courses:
+                print("⚠️ Aucune course trouvée avec la méthode principale, essai de la méthode alternative...")
+                
+                # Méthode alternative pour le cas où la structure de la page serait différente
+                rows = soup.select("table tbody tr")
+                print(f"📋 Trouvé {len(rows)} lignes dans le tableau (méthode alternative)")
+                
+                for row in rows:
+                    # Chercher un indicateur de type de course (Plat vs Obstacle)
+                    row_text = row.get_text().strip()
+                    if "Plat" in row_text and "Obstacle" not in row_text:
+                        # Extraire le lien de la course
+                        link_tag = row.select_one("td a")
+                        if link_tag and link_tag.get("href"):
+                            full_url = f"{self.base_url}{link_tag['href']}" if link_tag['href'].startswith('/') else link_tag['href']
+                            hippodrome = link_tag.text.strip()
+                            print(f"🏁 Trouvé course (alt): {hippodrome} - {full_url}")
+                            links_courses.append({"url": full_url, "hippodrome": hippodrome})
             
             print(f"✅ Trouvé {len(links_courses)} courses de {filtre_type}")
             return links_courses
@@ -149,40 +161,25 @@ class ScraperCoursesFG:
             soup = BeautifulSoup(html, "html.parser")
             
             # Récupérer la date de la réunion
-            date_element = soup.select_one(".event-date")
+            date_element = soup.select_one(".event-date, .date, [class*='date']")
             if date_element:
                 courses_data["date_reunion"] = date_element.text.strip()
                 print(f"📅 Date de réunion: {courses_data['date_reunion']}")
             else:
                 print("⚠️ Date de réunion non trouvée")
-                # Essayons un autre sélecteur
-                date_elements = soup.select(".date")
-                if date_elements:
-                    courses_data["date_reunion"] = date_elements[0].text.strip()
-                    print(f"📅 Date de réunion (alt): {courses_data['date_reunion']}")
+                # Essayons de récupérer la date d'aujourd'hui
+                courses_data["date_reunion"] = datetime.now().strftime("%d/%m/%Y")
+                print(f"📅 Date de réunion (par défaut): {courses_data['date_reunion']}")
             
             # Récupérer les informations de terrain
-            terrain_element = soup.select_one(".field-terrain")
+            terrain_element = soup.select_one(".field-terrain, .terrain, [class*='terrain']")
             if terrain_element:
                 courses_data["terrain"] = terrain_element.text.strip()
                 print(f"🌱 Terrain: {courses_data['terrain']}")
-            else:
-                print("⚠️ Information de terrain non trouvée")
-                # Essayons d'autres sélecteurs
-                terrain_elements = soup.select(".terrain") + soup.select("[class*='terrain']")
-                if terrain_elements:
-                    courses_data["terrain"] = terrain_elements[0].text.strip()
-                    print(f"🌱 Terrain (alt): {courses_data['terrain']}")
             
-            # Récupérer les liens vers chaque course
-            course_links = soup.select("table a[href*='/courses/fiche-course']")
+            # Récupérer les liens vers chaque course (essayer plusieurs sélecteurs)
+            course_links = soup.select("a[href*='/courses/fiche-course'], a[href*='fiche-course'], table a")
             print(f"🔗 Trouvé {len(course_links)} liens de courses")
-            
-            # Si nous n'avons pas trouvé de liens avec le sélecteur précis, essayons plus général
-            if not course_links:
-                print("⚠️ Aucun lien de course trouvé, essai de sélecteurs alternatifs")
-                course_links = soup.select("a[href*='fiche-course']") or soup.select("table a")
-                print(f"🔗 Trouvé {len(course_links)} liens de courses (alt)")
             
             for index, link in enumerate(course_links):
                 # Vérifier si l'attribut href existe et s'il est valide
@@ -198,6 +195,15 @@ class ScraperCoursesFG:
                 if not course_name or course_name == "-":
                     print("⚠️ Nom de course vide ou invalide, ignoré.")
                     continue
+                
+                # S'assurer que c'est bien une course de plat
+                parent_element = link.parent.parent if link.parent else None
+                if parent_element:
+                    parent_text = parent_element.get_text().strip()
+                    # Si on trouve "Obstacle" dans le texte parent, c'est une course d'obstacles
+                    if "Obstacle" in parent_text and "Plat" not in parent_text:
+                        print(f"⚠️ Course d'obstacles détectée, ignorée: {course_name}")
+                        continue
                 
                 # Construire l'URL complète
                 course_url = f"{self.base_url}{href}" if href.startswith('/') else href
@@ -221,6 +227,12 @@ class ScraperCoursesFG:
                     
                     course_soup = BeautifulSoup(course_html, "html.parser")
                     
+                    # Vérifier une dernière fois si c'est une course de plat
+                    page_text = course_soup.get_text().strip()
+                    if "Obstacle" in page_text and "Plat" not in page_text:
+                        print(f"⚠️ Page de course d'obstacles détectée, ignorée: {course_name}")
+                        continue
+                    
                     # Extraire les détails de la course
                     course_data = {
                         "nom": course_name,
@@ -229,24 +241,27 @@ class ScraperCoursesFG:
                     }
                     
                     # Extraire les infos complémentaires
-                    infos = course_soup.select(".infos-complementaires li")
+                    infos = course_soup.select(".infos-complementaires li, .infos li, [class*='infos'] li")
                     for info in infos:
-                        key_element = info.select_one("span.label")
-                        value_element = info.select_one("span.value")
+                        key_element = info.select_one("span.label, .label, strong, b")
+                        value_element = info.select_one("span.value, .value")
+                        
                         if key_element and value_element:
                             key = key_element.text.strip().rstrip(':')
                             value = value_element.text.strip()
                             course_data[key.lower().replace(' ', '_')] = value
+                        elif key_element:
+                            # Si on a seulement la clé, essayer d'extraire la valeur du reste du texte
+                            info_text = info.get_text().strip()
+                            key = key_element.text.strip().rstrip(':')
+                            value = info_text.replace(key, '').strip(' :')
+                            if value:
+                                course_data[key.lower().replace(' ', '_')] = value
                     
                     # Horaire de la course (généralement en haut de la page)
-                    horaire_element = course_soup.select_one(".horaire")
+                    horaire_element = course_soup.select_one(".horaire, .time, .heure, [class*='horaire'], [class*='time']")
                     if horaire_element:
                         course_data["horaire"] = horaire_element.text.strip()
-                    else:
-                        # Essayons d'autres sélecteurs
-                        horaire_elements = course_soup.select("[class*='horaire']") or course_soup.select(".time") or course_soup.select(".heure")
-                        if horaire_elements:
-                            course_data["horaire"] = horaire_elements[0].text.strip()
                     
                     # PDF Programme
                     pdf_link = course_soup.select_one("a[href*='.pdf']")
@@ -255,20 +270,13 @@ class ScraperCoursesFG:
                         course_data["pdf_programme"] = f"{self.base_url}{pdf_href}" if pdf_href.startswith('/') else pdf_href
                     
                     # Vidéo replay
-                    video_link = course_soup.select_one("a.video-link") or course_soup.select_one("a[href*='video']")
+                    video_link = course_soup.select_one("a.video-link, a[href*='video'], [class*='video']")
                     if video_link and video_link.get('href'):
                         video_href = video_link.get('href')
                         course_data["video_replay"] = f"{self.base_url}{video_href}" if video_href.startswith('/') else video_href
                     
                     # Extraire les partants (participants)
-                    table = course_soup.find("table", class_="tableaupartants")
-                    
-                    # Si nous ne trouvons pas la table avec la classe spécifique, essayons de trouver n'importe quelle table
-                    if not table:
-                        print(f"⚠️ Table des partants non trouvée pour {course_name}, essai de sélecteurs alternatifs")
-                        tables = course_soup.select("table")
-                        if tables:
-                            table = tables[0]  # Prendre la première table disponible
+                    table = course_soup.find("table", class_="tableaupartants") or course_soup.select_one("table")
                     
                     if table:
                         # Essayer de trouver les en-têtes dans le thead
