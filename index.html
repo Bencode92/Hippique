@@ -358,9 +358,7 @@
             <ul>
                 <li class="active" data-section="accueil"><i class="fas fa-home"></i> Accueil</li>
                 <li data-section="courses"><i class="fas fa-flag-checkered"></i> Courses</li>
-                <li data-section="jockeys"><i class="fas fa-user"></i> Jockeys</li>
-                <li data-section="chevaux"><i class="fas fa-horse"></i> Chevaux</li>
-                <li data-section="entraineurs"><i class="fas fa-users"></i> Entraîneurs</li>
+                <li data-section="classement"><i class="fas fa-list-ol"></i> Classement</li>
             </ul>
         </nav>
         
@@ -551,9 +549,9 @@
                 item.addEventListener('click', function() {
                     const section = this.dataset.section;
                     
-                    // Si la section est jockeys, chevaux ou entraineurs, rediriger vers la page classement
-                    if (['jockeys', 'chevaux', 'entraineurs'].includes(section)) {
-                        window.location.href = `classement.html?category=${section}`;
+                    // Rediriger vers la page classement
+                    if (section === 'classement') {
+                        window.location.href = 'classement.html';
                         return;
                     }
                     
