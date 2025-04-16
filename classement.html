@@ -414,6 +414,8 @@
                         }
                         return value;
                     }},
+                    { key: 'Chevaux', label: 'Chevaux', class: 'stats' },
+                    { key: 'Partants', label: 'Partants', class: 'stats' },
                     { key: 'Victoires', label: 'Victoires', class: 'stats' },
                     { key: 'Place', label: 'Places', class: 'stats' },
                     { key: 'GainPart', label: 'Gain/Part (€)', class: 'stats' }
@@ -439,6 +441,8 @@
                         }
                         return value;
                     }},
+                    { key: 'Chevaux', label: 'Chevaux', class: 'stats' },
+                    { key: 'Partants', label: 'Partants', class: 'stats' },
                     { key: 'Victoires', label: 'Victoires', class: 'stats' },
                     { key: 'Place', label: 'Places', class: 'stats' },
                     { key: 'GainPart', label: 'Gain Total (€)', class: 'stats' }
@@ -451,6 +455,8 @@
                         }
                         return value;
                     }},
+                    { key: 'Chevaux', label: 'Chevaux', class: 'stats' },
+                    { key: 'Partants', label: 'Partants', class: 'stats' },
                     { key: 'Victoires', label: 'Victoires', class: 'stats' },
                     { key: 'Place', label: 'Places', class: 'stats' },
                     { key: 'GainPart', label: 'Gain Total (€)', class: 'stats' }
@@ -463,6 +469,8 @@
                         }
                         return value;
                     }},
+                    { key: 'Chevaux', label: 'Chevaux', class: 'stats' },
+                    { key: 'Partants', label: 'Partants', class: 'stats' },
                     { key: 'Victoires', label: 'Victoires', class: 'stats' },
                     { key: 'Place', label: 'Places', class: 'stats' },
                     { key: 'GainPart', label: 'Gain Total (€)', class: 'stats' }
@@ -557,44 +565,73 @@
                 // Générer des données de démonstration pour chaque catégorie
                 if (category === 'jockeys') {
                     demoData = [
-                        { Rang: 1, NomPostal: "CRISTIAN DEMURO", Victoires: 63, Place: 188, GainPart: "3 851" },
-                        { Rang: 2, NomPostal: "MAXIME GUYON", Victoires: 52, Place: 187, GainPart: "3 886" },
-                        { Rang: 3, NomPostal: "DELPHINE SANTIAGO", Victoires: 31, Place: 81, GainPart: "1 909" },
-                        { Rang: 4, NomPostal: "AUGUSTIN MADAMET", Victoires: 29, Place: 164, GainPart: "2 146" },
-                        { Rang: 5, NomPostal: "STEPHANE PASQUIER", Victoires: 26, Place: 97, GainPart: "3 236" }
+                        { Rang: 1, NomPostal: "CRISTIAN DEMURO", Chevaux: 275, Partants: 381, Victoires: 63, Place: 188, GainPart: "3 851" },
+                        { Rang: 2, NomPostal: "MAXIME GUYON", Chevaux: 247, Partants: 348, Victoires: 52, Place: 187, GainPart: "3 886" },
+                        { Rang: 3, NomPostal: "DELPHINE SANTIAGO", Chevaux: 159, Partants: 235, Victoires: 31, Place: 81, GainPart: "1 909" },
+                        { Rang: 4, NomPostal: "AUGUSTIN MADAMET", Chevaux: 180, Partants: 285, Victoires: 29, Place: 164, GainPart: "2 146" },
+                        { Rang: 5, NomPostal: "STEPHANE PASQUIER", Chevaux: 175, Partants: 241, Victoires: 26, Place: 97, GainPart: "3 236" }
                     ];
                 } else if (category === 'chevaux') {
                     demoData = [
-                        { Rang: 1, Nom: "MAP OF STARS", NbCourses: 3, NbVictoires: 2, NbPlace: 0, AllocTotale: "114 100" },
+                        { Rang: 1, Nom: "MAP OF STARS", NbCourses: 2, NbVictoires: 2, NbPlace: 0, AllocTotale: "114 100" },
                         { Rang: 2, Nom: "LANZELOT GOLD", NbCourses: 4, NbVictoires: 2, NbPlace: 2, AllocTotale: "88 160" },
                         { Rang: 3, Nom: "SAINT ETIENNE", NbCourses: 4, NbVictoires: 4, NbPlace: 9, AllocTotale: "109 500" },
                         { Rang: 4, Nom: "AMERICAN FLAG", NbCourses: 3, NbVictoires: 3, NbPlace: 7, AllocTotale: "149 125" },
                         { Rang: 5, Nom: "HYPERCORE", NbCourses: 5, NbVictoires: 5, NbPlace: 8, AllocTotale: "49 250" }
                     ];
-                } else {
-                    // Pour les autres catégories
+                } else if (category === 'entraineurs') {
                     demoData = [
-                        { Rang: 1, NomPostal: "Y. BARBEROT", Victoires: 32, Place: 67, GainPart: "432 000" },
-                        { Rang: 2, NomPostal: "P. GROUALLE", Victoires: 27, Place: 63, GainPart: "387 500" },
-                        { Rang: 3, NomPostal: "M. RULEC", Victoires: 24, Place: 56, GainPart: "356 200" },
-                        { Rang: 4, NomPostal: "G. MOSSE", Victoires: 21, Place: 51, GainPart: "312 450" },
-                        { Rang: 5, NomPostal: "S. JESUS", Victoires: 19, Place: 47, GainPart: "298 700" }
+                        { Rang: 1, NomPostal: "FH. GRAFFARD (S)", Chevaux: 78, Partants: 113, Victoires: 35, Place: 53, GainPart: "8 387" },
+                        { Rang: 2, NomPostal: "F. ROHAUT (S)", Chevaux: 68, Partants: 93, Victoires: 28, Place: 42, GainPart: "6 782" },
+                        { Rang: 3, NomPostal: "Y. BARBEROT (S)", Chevaux: 63, Partants: 87, Victoires: 24, Place: 38, GainPart: "5 934" },
+                        { Rang: 4, NomPostal: "P. BARY (S)", Chevaux: 57, Partants: 78, Victoires: 21, Place: 35, GainPart: "5 312" },
+                        { Rang: 5, NomPostal: "A. FABRE (S)", Chevaux: 52, Partants: 72, Victoires: 19, Place: 33, GainPart: "4 987" }
+                    ];
+                } else if (category === 'eleveurs') {
+                    demoData = [
+                        { Rang: 1, NomPostal: "WERTHEIMER & FRERE", Chevaux: 73, Partants: 208, Victoires: 35, Place: 97, GainPart: "3 928" },
+                        { Rang: 2, NomPostal: "GODOLPHIN", Chevaux: 67, Partants: 192, Victoires: 31, Place: 89, GainPart: "3 547" },
+                        { Rang: 3, NomPostal: "H.H. THE AGA KHAN", Chevaux: 61, Partants: 175, Victoires: 28, Place: 81, GainPart: "3 245" },
+                        { Rang: 4, NomPostal: "JUDDMONTE FARMS", Chevaux: 55, Partants: 158, Victoires: 25, Place: 74, GainPart: "2 987" },
+                        { Rang: 5, NomPostal: "HARAS DE LA PERELLE", Chevaux: 49, Partants: 142, Victoires: 22, Place: 67, GainPart: "2 765" }
+                    ];
+                } else if (category === 'proprietaires') {
+                    demoData = [
+                        { Rang: 1, NomPostal: "WERTHEIMER & FRERE", Chevaux: 49, Partants: 86, Victoires: 18, Place: 38, GainPart: "5.9" },
+                        { Rang: 2, NomPostal: "GODOLPHIN", Chevaux: 45, Partants: 79, Victoires: 16, Place: 35, GainPart: "5.3" },
+                        { Rang: 3, NomPostal: "H.H. THE AGA KHAN", Chevaux: 41, Partants: 72, Victoires: 14, Place: 32, GainPart: "4.8" },
+                        { Rang: 4, NomPostal: "ECURIE JEAN-LOUIS BOUCHARD", Chevaux: 37, Partants: 65, Victoires: 12, Place: 29, GainPart: "4.3" },
+                        { Rang: 5, NomPostal: "MME ISABELLE CORBANI", Chevaux: 33, Partants: 58, Victoires: 10, Place: 26, GainPart: "3.9" }
                     ];
                 }
                 
+                // Ajouter plus de données simulées
                 for (let i = 6; i <= 50; i++) {
-                    demoData.push({
-                        Rang: i,
-                        NomPostal: category === 'chevaux' ? `Cheval Test ${i}` : `Nom Test ${i}`,
-                        Nom: category === 'chevaux' ? `Cheval Test ${i}` : undefined,
-                        Victoires: Math.floor(Math.random() * 20),
-                        Place: Math.floor(Math.random() * 50),
-                        NbCourses: category === 'chevaux' ? Math.floor(Math.random() * 30) : undefined,
-                        NbVictoires: category === 'chevaux' ? Math.floor(Math.random() * 15) : undefined,
-                        NbPlace: category === 'chevaux' ? Math.floor(Math.random() * 30) : undefined,
-                        GainPart: formatNumber(Math.floor(Math.random() * 500000)),
-                        AllocTotale: category === 'chevaux' ? formatNumber(Math.floor(Math.random() * 500000)) : undefined
-                    });
+                    const randomChevaux = Math.floor(Math.random() * 100) + 20;
+                    const randomPartants = Math.floor(Math.random() * 150) + 30;
+                    const randomVictoires = Math.floor(Math.random() * 20);
+                    const randomPlace = Math.floor(Math.random() * 50);
+                    
+                    if (category === 'chevaux') {
+                        demoData.push({
+                            Rang: i,
+                            Nom: `Cheval Test ${i}`,
+                            NbCourses: Math.floor(Math.random() * 15) + 1,
+                            NbVictoires: Math.floor(Math.random() * 5),
+                            NbPlace: Math.floor(Math.random() * 10),
+                            AllocTotale: formatNumber(Math.floor(Math.random() * 100000) + 10000)
+                        });
+                    } else {
+                        demoData.push({
+                            Rang: i,
+                            NomPostal: `Nom Test ${i}`,
+                            Chevaux: randomChevaux,
+                            Partants: randomPartants,
+                            Victoires: randomVictoires,
+                            Place: randomPlace,
+                            GainPart: formatNumber(Math.floor(Math.random() * 5000) / 1000)
+                        });
+                    }
                 }
                 
                 return demoData;
@@ -843,6 +880,22 @@
             
             // Masquer le bouton d'effacement au chargement
             searchClear.style.display = 'none';
+            
+            // Vérifier si un paramètre d'URL spécifie une catégorie ou une recherche
+            const urlParams = new URLSearchParams(window.location.search);
+            const categoryParam = urlParams.get('category');
+            const searchParam = urlParams.get('search');
+            
+            // Appliquer la catégorie si fournie dans l'URL
+            if (categoryParam && ['jockeys', 'chevaux', 'entraineurs', 'eleveurs', 'proprietaires'].includes(categoryParam)) {
+                currentCategory = categoryParam;
+            }
+            
+            // Définir la recherche si fournie dans l'URL
+            if (searchParam) {
+                searchInput.value = searchParam;
+                searchClear.style.display = 'block';
+            }
             
             // Charger la catégorie initiale
             loadCategory(currentCategory);
