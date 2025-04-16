@@ -833,28 +833,50 @@
                 ]
             };
             
-            // Fonction pour calculer le classement pondéré
+            // Fonction pour calculer le classement pondéré - CORRIGÉE
             function calculateCompositeRanking(data) {
                 if (!data || !data.length) return data;
                 
-                // Copier les données pour ne pas modifier l'original
-                const dataCopy = [...data];
+                // IMPORTANT: Cloner les données pour ne pas modifier les originales
+                const dataCopy = JSON.parse(JSON.stringify(data));
                 
-                // Créer des tableaux de valeurs à classer
+                // Fonction helper pour comparer les noms (départage)
+                function compareNoms(a, b) {
+                    const nameA = currentCategory === 'chevaux' ? (a.Nom || '') : (a.NomPostal || '');
+                    const nameB = currentCategory === 'chevaux' ? (b.Nom || '') : (b.NomPostal || '');
+                    return nameA.localeCompare(nameB);
+                }
+
+                // Créer des tableaux de valeurs triés de manière stable
                 const ranks = {
                     Victoires: [...dataCopy].sort((a, b) => {
-                        const victA = currentCategory === 'chevaux' ? parseInt(b.NbVictoires) : parseInt(b.Victoires);
-                        const victB = currentCategory === 'chevaux' ? parseInt(a.NbVictoires) : parseInt(a.Victoires);
-                        return victA - victB;
+                        const victA = currentCategory === 'chevaux' ? parseInt(b.NbVictoires || 0) : parseInt(b.Victoires || 0);
+                        const victB = currentCategory === 'chevaux' ? parseInt(a.NbVictoires || 0) : parseInt(a.Victoires || 0);
+                        const diff = victA - victB;
+                        // Ajouter un départage par nom pour les égalités
+                        return diff !== 0 ? diff : compareNoms(a, b);
                     }),
-                    TauxVictoire: [...dataCopy].sort((a, b) => parseFloat(b.TauxVictoire) - parseFloat(a.TauxVictoire)),
-                    TauxPlace: [...dataCopy].sort((a, b) => parseFloat(b.TauxPlace) - parseFloat(a.TauxPlace))
+                    TauxVictoire: [...dataCopy].sort((a, b) => {
+                        const diff = parseFloat(b.TauxVictoire || 0) - parseFloat(a.TauxVictoire || 0);
+                        return diff !== 0 ? diff : compareNoms(a, b);
+                    }),
+                    TauxPlace: [...dataCopy].sort((a, b) => {
+                        const diff = parseFloat(b.TauxPlace || 0) - parseFloat(a.TauxPlace || 0);
+                        return diff !== 0 ? diff : compareNoms(a, b);
+                    })
                 };
-                
+
                 // Attribuer les rangs et calculer le score combiné
                 dataCopy.forEach(item => {
                     // Adaptez cette partie pour gérer à la fois les chevaux et les autres catégories
                     const itemKey = currentCategory === 'chevaux' ? 'Nom' : 'NomPostal';
+                    
+                    // S'assurer que l'élément a une clé valide pour le tri
+                    if (!item[itemKey]) {
+                        item.ScoreMixte = 999; // Valeur par défaut pour les items mal formés
+                        return;
+                    }
+                    
                     const rangVictoires = ranks.Victoires.findIndex(d => d[itemKey] === item[itemKey]) + 1;
                     const rangTauxVictoire = ranks.TauxVictoire.findIndex(d => d[itemKey] === item[itemKey]) + 1;
                     const rangTauxPlace = ranks.TauxPlace.findIndex(d => d[itemKey] === item[itemKey]) + 1;
@@ -868,8 +890,10 @@
                 });
                 
                 // Retourner les données triées par score croissant (meilleur en haut)
-                return dataCopy.sort((a, b) => parseFloat(a.ScoreMixte) - parseFloat(b.ScoreMixte))
-                    .map((item, index) => ({ ...item, Rang: index + 1 })); // Mettre à jour les rangs
+                return dataCopy.sort((a, b) => {
+                    const diff = parseFloat(a.ScoreMixte || 999) - parseFloat(b.ScoreMixte || 999);
+                    return diff !== 0 ? diff : compareNoms(a, b);
+                }).map((item, index) => ({ ...item, Rang: index + 1 })); // Mettre à jour les rangs
             }
             
             // Afficher un squelette de chargement
@@ -1112,14 +1136,22 @@
                 return number.toLocaleString('fr-FR');
             }
             
-            // Fonction pour trier les données
+            // Fonction pour trier les données - CORRIGÉE
             function sortData(data, sortKey) {
                 if (!data || !data.length) return [];
                 
                 // Clone les données pour ne pas modifier l'original
-                const sortedData = [...data];
+                const sortedData = JSON.parse(JSON.stringify(data));
                 
-                // Nouveau cas pour le classement pondéré
+                // TOUJOURS calculer les scores pondérés, quel que soit le tri
+                sortedData.forEach(item => {
+                    if (!item.ScoreMixte) {
+                        // Assigner une valeur temporaire qui sera remplacée plus tard
+                        item.ScoreMixte = "0.00";
+                    }
+                });
+                
+                // Cas spécial pour le classement mixte
                 if (sortKey === 'mixte') {
                     return calculateCompositeRanking(sortedData);
                 }
@@ -1128,38 +1160,82 @@
                     // Tri par défaut (par nombre de victoires)
                     if (currentCategory === 'chevaux') {
                         sortedData.sort((a, b) => {
-                            const valA = parseInt(a.NbVictoires);
-                            const valB = parseInt(b.NbVictoires);
+                            const valA = parseInt(a.NbVictoires || 0);
+                            const valB = parseInt(b.NbVictoires || 0);
+                            // Départage par nom alphabétique en cas d'égalité
+                            if (valA === valB) {
+                                return (a.Nom || '').localeCompare(b.Nom || '');
+                            }
                             return sortDirection === 'desc' ? valB - valA : valA - valB;
                         });
                     } else {
                         sortedData.sort((a, b) => {
-                            const valA = parseInt(a.Victoires);
-                            const valB = parseInt(b.Victoires);
+                            const valA = parseInt(a.Victoires || 0);
+                            const valB = parseInt(b.Victoires || 0);
+                            // Départage par nom alphabétique en cas d'égalité
+                            if (valA === valB) {
+                                return (a.NomPostal || '').localeCompare(b.NomPostal || '');
+                            }
                             return sortDirection === 'desc' ? valB - valA : valA - valB;
                         });
                     }
                 } else if (sortKey === 'taux-victoire') {
                     // Tri par taux de victoire
                     sortedData.sort((a, b) => {
-                        const valA = parseFloat(a.TauxVictoire);
-                        const valB = parseFloat(b.TauxVictoire);
+                        const valA = parseFloat(a.TauxVictoire || 0);
+                        const valB = parseFloat(b.TauxVictoire || 0);
+                        // Départage par nom alphabétique en cas d'égalité
+                        if (valA === valB) {
+                            const nameA = currentCategory === 'chevaux' ? (a.Nom || '') : (a.NomPostal || '');
+                            const nameB = currentCategory === 'chevaux' ? (b.Nom || '') : (b.NomPostal || '');
+                            return nameA.localeCompare(nameB);
+                        }
                         return sortDirection === 'desc' ? valB - valA : valA - valB;
                     });
                 } else if (sortKey === 'taux-place') {
                     // Tri par taux de place
                     sortedData.sort((a, b) => {
-                        const valA = parseFloat(a.TauxPlace);
-                        const valB = parseFloat(b.TauxPlace);
+                        const valA = parseFloat(a.TauxPlace || 0);
+                        const valB = parseFloat(b.TauxPlace || 0);
+                        // Départage par nom alphabétique en cas d'égalité
+                        if (valA === valB) {
+                            const nameA = currentCategory === 'chevaux' ? (a.Nom || '') : (a.NomPostal || '');
+                            const nameB = currentCategory === 'chevaux' ? (b.Nom || '') : (b.NomPostal || '');
+                            return nameA.localeCompare(nameB);
+                        }
                         return sortDirection === 'desc' ? valB - valA : valA - valB;
                     });
                 }
                 
                 // Mise à jour des rangs après le tri
-                return sortedData.map((item, index) => ({
+                const result = sortedData.map((item, index) => ({
                     ...item,
                     Rang: index + 1
                 }));
+                
+                // Mise à jour des scores pondérés si pas déjà calculés par le tri mixte
+                if (sortKey !== 'mixte') {
+                    const withScores = calculateCompositeRanking(result);
+                    
+                    // On copie juste les scores pondérés sans changer l'ordre des données
+                    const scoreMap = new Map();
+                    withScores.forEach(item => {
+                        const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
+                        if (key) {
+                            scoreMap.set(key, item.ScoreMixte);
+                        }
+                    });
+                    
+                    // Appliquer les scores aux données triées
+                    result.forEach(item => {
+                        const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
+                        if (key && scoreMap.has(key)) {
+                            item.ScoreMixte = scoreMap.get(key);
+                        }
+                    });
+                }
+                
+                return result;
             }
             
             // Fonction pour afficher les données dans un tableau
@@ -1270,7 +1346,8 @@
                             sortDirection = sortDirection === 'desc' ? 'asc' : 'desc';
                         } else {
                             currentSort = newSortKey;
-                            sortDirection = 'desc'; // Par défaut, tri décroissant
+                            // Pour le tri mixte, utiliser l'ordre croissant par défaut (plus petit score = meilleur)
+                            sortDirection = newSortKey === 'mixte' ? 'asc' : 'desc';
                         }
                         
                         // Mettre à jour l'état visuel des boutons
@@ -1389,7 +1466,7 @@
                 });
             }
             
-            // Fonction pour charger et afficher les données d'une catégorie
+            // Fonction pour charger et afficher les données d'une catégorie - CORRIGÉE
             async function loadCategory(category) {
                 currentCategory = category;
                 currentPage = 1;
@@ -1416,10 +1493,11 @@
                 
                 // Filtrer les données si nécessaire
                 const searchTerm = searchInput.value.trim();
-                filteredData = filterData(data, searchTerm);
                 
-                // Trier les données
-                filteredData = sortData(filteredData, currentSort);
+                // IMPORTANT : Toujours calculer les scores pondérés même si on utilise le tri par défaut
+                const processedData = sortData(data, currentSort);
+                
+                filteredData = filterData(processedData, searchTerm);
                 
                 // Afficher les résultats
                 displayResults(filteredData, currentPage);
