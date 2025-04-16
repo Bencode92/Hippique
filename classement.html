@@ -591,6 +591,31 @@
         </a>
     </header>
 
+    <nav class="nav-main" style="background-color: var(--medium-teal); padding: 0;">
+        <ul style="display: flex; list-style: none; padding: 0; margin: 0;">
+            <li style="padding: 1rem 1.5rem; cursor: pointer; transition: all 0.3s ease;">
+                <a href="index.html" style="text-decoration: none; color: var(--light-gold); display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="fas fa-home"></i> Accueil
+                </a>
+            </li>
+            <li style="padding: 1rem 1.5rem; cursor: pointer; transition: all 0.3s ease;">
+                <a href="courses.html" style="text-decoration: none; color: var(--light-gold); display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="fas fa-flag-checkered"></i> Courses
+                </a>
+            </li>
+            <li style="padding: 1rem 1.5rem; cursor: pointer; transition: all 0.3s ease; background-color: var(--light-teal); border-bottom: 3px solid var(--gold);">
+                <a href="classement.html" style="text-decoration: none; color: var(--light-gold); display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="fas fa-list-ol"></i> Classement
+                </a>
+            </li>
+            <li style="padding: 1rem 1.5rem; cursor: pointer; transition: all 0.3s ease;">
+                <a href="simulation.html" style="text-decoration: none; color: var(--light-gold); display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="fas fa-calculator"></i> Simulation
+                </a>
+            </li>
+        </ul>
+    </nav>
+
     <div class="container">
         <h1 class="page-title">Classement Hippique</h1>
         <p class="page-subtitle">Consultez et recherchez parmi les meilleurs jockeys, chevaux, entraineurs, éleveurs et propriétaires</p>
@@ -643,14 +668,20 @@
             <!-- Les boutons de pagination seront générés par JavaScript -->
         </div>
         
-        <a href="index.html" class="home-link">
-            <i class="fas fa-arrow-left"></i> Retour à l'accueil
-        </a>
+        <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+            <a href="index.html" class="home-link" style="flex: 1;">
+                <i class="fas fa-arrow-left"></i> Retour à l'accueil
+            </a>
+            <a href="simulation.html" class="home-link" style="flex: 1; background-color: rgba(212, 175, 55, 0.1); border-color: rgba(212, 175, 55, 0.3); color: var(--gold);">
+                <i class="fas fa-calculator"></i> Simuler des paris
+            </a>
+        </div>
     </div>
     
     <footer>
         <p>ANALYSE HIPPIQUE - Système d'analyse pour événements hippiques</p>
         <p>Dernière mise à jour des données: <span id="last-update">16/04/2025</span></p>
+        <p><a href="simulation.html" style="color: var(--accent); text-decoration: none;">Simulateur de paris optimaux</a></p>
     </footer>
 
     <script>
@@ -1238,7 +1269,7 @@
                 if (endPage < totalPages) {
                     paginationHTML += `
                         ${endPage < totalPages - 1 ? '<span class="page-btn" style="cursor: default; background: transparent;">...</span>' : ''}
-                        <button class="page-btn" onclick="changePage(${totalPages})\">${totalPages}</button>
+                        <button class="page-btn" onclick="changePage(${totalPages})">${totalPages}</button>
                     `;
                 }
                 
