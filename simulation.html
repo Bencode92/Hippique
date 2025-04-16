@@ -619,6 +619,9 @@
                     </div>
                 </div>
                 
+                <!-- Élément checkbox caché qui sera connecté au script original -->
+                <input type="checkbox" id="strategyToggle" style="display: none;">
+                
                 <div class="sim-form">
                     <h3>Paramètres de la simulation</h3>
                     
@@ -720,6 +723,9 @@
             const horseEntriesContainer = document.getElementById('horseEntries');
             const horseCountInput = document.getElementById('horseCount');
             
+            // Trouver le vrai toggle (checkbox) utilisé par le script original
+            const realToggle = document.getElementById('strategyToggle');
+            
             // État initial
             let isEVMode = false;
             updateMaxPerHorseVisibility(isEVMode);
@@ -731,16 +737,15 @@
                 updateMaxPerHorseVisibility(isEVMode);
                 updateTheme(isEVMode);
                 
-                // Simuler un clic sur le checkbox d'origine pour la logique métier
-                const event = new Event('change');
-                const originalToggle = document.createElement('input');
-                originalToggle.checked = isEVMode;
-                window.strategyToggleState = isEVMode; // Stocker l'état global
+                // L'élément clé: mettre à jour le vrai checkbox utilisé par le script original
+                // et déclencher l'événement change
+                realToggle.checked = isEVMode;
                 
-                // Déclencher la logique métier si nécessaire
-                if (typeof window.onStrategyToggleChange === 'function') {
-                    window.onStrategyToggleChange(isEVMode);
-                }
+                // Créer et déclencher un événement change pour que le script original réagisse
+                const event = new Event('change');
+                realToggle.dispatchEvent(event);
+                
+                console.log("Toggle cliqué, mode EV:", isEVMode, "Checkbox modifié:", realToggle.checked);
             });
             
             // Fonction pour générer les entrées de chevaux basées sur le nombre spécifié
@@ -802,29 +807,6 @@
                     body.classList.remove('ev-mode');
                 }
             }
-            
-            // Exposer l'état du toggle et un gestionnaire pour les autres scripts
-            window.strategyToggleState = isEVMode;
-            window.onStrategyToggleChange = null;
-            
-            // Connecter avec le script original si nécessaire
-            const originalScript = document.createElement('script');
-            originalScript.textContent = `
-                // Intégration avec le script original
-                window.onStrategyToggleChange = function(isEVMode) {
-                    // Ici, vous pouvez appeler les fonctions de votre script original
-                    console.log("Mode EV:", isEVMode);
-                    // Par exemple: updateStrategyLabels(isEVMode ? 'ev' : 'dutch');
-                    
-                    // Recalculer si des résultats sont déjà affichés
-                    const resultContainer = document.getElementById('resultContainer');
-                    if (resultContainer && resultContainer.style.display === 'block') {
-                        const calculateButton = document.getElementById('calculateBets');
-                        if (calculateButton) calculateButton.click();
-                    }
-                };
-            `;
-            document.head.appendChild(originalScript);
             
             // Connecter les boutons d'action
             document.getElementById('clearForm').addEventListener('click', function() {
