@@ -248,15 +248,17 @@
             display: none;
         }
         
-        /* Style pour le toggle switch */
+        /* Style pour le toggle switch - Amélioré */
         .strategy-toggle-container {
             display: flex;
             align-items: center;
-            background-color: rgba(10, 30, 30, 0.5);
-            border-radius: 8px;
-            padding: 1rem;
+            background-color: rgba(10, 30, 30, 0.7);
+            border-radius: 12px;
+            padding: 1.5rem;
             margin-bottom: 1.5rem;
             border: 1px solid rgba(233, 209, 140, 0.2);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s ease;
         }
         
         .strategy-toggle-container label {
@@ -264,25 +266,30 @@
             align-items: center;
             cursor: pointer;
             flex: 1;
+            transition: all 0.3s ease;
         }
         
         .strategy-toggle-container .toggle-title {
             font-weight: bold;
             color: var(--gold);
             margin-right: 10px;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
         }
         
         .strategy-toggle-container .toggle-description {
             font-size: 0.9rem;
             color: var(--light-gold);
             margin-left: 10px;
+            transition: all 0.3s ease;
         }
         
         .strategy-toggle-container .toggle-label {
             position: relative;
             display: inline-block;
-            width: 60px;
-            height: 30px;
+            width: 70px;
+            height: 34px;
+            margin: 0 15px;
         }
         
         .strategy-toggle-container .toggle-label input {
@@ -299,39 +306,74 @@
             right: 0;
             bottom: 0;
             background-color: rgba(10, 30, 30, 0.8);
-            transition: .4s;
+            transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             border-radius: 34px;
             border: 1px solid rgba(233, 209, 140, 0.3);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
         }
         
         .strategy-toggle-container .slider:before {
             position: absolute;
             content: "";
-            height: 22px;
-            width: 22px;
+            height: 26px;
+            width: 26px;
             left: 4px;
             bottom: 3px;
             background-color: var(--gold);
-            transition: .4s;
+            transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
         
+        /* Nouvelle couleur bleue pour le mode EV */
         .strategy-toggle-container input:checked + .slider {
-            background-color: rgba(34, 199, 184, 0.3);
+            background-color: rgba(30, 144, 255, 0.3); /* Bleu royal avec transparence */
         }
         
         .strategy-toggle-container input:checked + .slider:before {
-            transform: translateX(29px);
-            background-color: #22c7b8;
+            transform: translateX(35px);
+            background-color: #1E90FF; /* Bleu royal */
+        }
+        
+        /* Effet de focus amélioré */
+        .strategy-toggle-container input:focus + .slider {
+            box-shadow: 0 0 3px var(--gold);
+        }
+        
+        /* Styles actifs pour mettre en évidence l'option sélectionnée */
+        .strategy-toggle-container input:not(:checked) ~ label:first-of-type .toggle-title,
+        .strategy-toggle-container input:checked ~ label:last-of-type .toggle-title {
+            text-shadow: 0 0 10px rgba(233, 209, 140, 0.5);
+            transform: scale(1.05);
+        }
+        
+        .strategy-toggle-container input:checked ~ label:last-of-type .toggle-title {
+            color: #1E90FF; /* Bleu royal */
         }
         
         .strategy-icons {
             display: flex;
             justify-content: space-between;
-            width: 60px;
-            padding: 0 5px;
+            width: 70px;
+            padding: 0 8px;
             color: var(--light-gold);
             font-size: 0.8rem;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+        
+        .strategy-icons span {
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        
+        .strategy-toggle-container input:not(:checked) ~ .toggle-label .strategy-icons span:first-child,
+        .strategy-toggle-container input:checked ~ .toggle-label .strategy-icons span:last-child {
+            opacity: 1;
+            font-weight: bold;
         }
         
         @media (max-width: 768px) {
@@ -390,7 +432,7 @@
                 </div>
                 
                 <div class="strategy-toggle-container">
-                    <label>
+                    <label for="strategyToggle">
                         <span class="toggle-title">🎯 Dutch Betting</span>
                         <span class="toggle-description">Gain identique pour tous les chevaux</span>
                     </label>
@@ -404,7 +446,7 @@
                         </div>
                     </label>
                     
-                    <label>
+                    <label for="strategyToggle">
                         <span class="toggle-title">💰 Optimisation EV</span>
                         <span class="toggle-description">Maximise le gain moyen attendu</span>
                     </label>
@@ -418,8 +460,8 @@
                         <input type="number" id="totalBet" value="50" min="1" step="1">
                     </div>
                     
-                    <div class="input-group">
-                        <label for="maxPerHorse">Mise maximale par cheval (€)</label>
+                    <div class="input-group" id="maxPerHorseGroup">
+                        <label for="maxPerHorse">Mise maximale par cheval (€) - <small><i>uniquement pour l'Optimisation EV</i></small></label>
                         <input type="number" id="maxPerHorse" value="30" min="1" step="1">
                     </div>
                     
@@ -500,5 +542,36 @@
     </div>
 
     <script src="simulation.js"></script>
+    
+    <script>
+        // Script pour gérer l'affichage du champ de mise maximale par cheval
+        document.addEventListener('DOMContentLoaded', function() {
+            const strategyToggle = document.getElementById('strategyToggle');
+            const maxPerHorseGroup = document.getElementById('maxPerHorseGroup');
+            
+            // Mettre à jour l'affichage initial
+            updateMaxPerHorseVisibility(strategyToggle.checked);
+            
+            // Ajouter un écouteur d'événements pour les changements de stratégie
+            strategyToggle.addEventListener('change', function() {
+                updateMaxPerHorseVisibility(this.checked);
+            });
+            
+            function updateMaxPerHorseVisibility(isEVStrategy) {
+                // Ajouter une transition fluide
+                maxPerHorseGroup.style.transition = 'opacity 0.3s ease';
+                
+                if (isEVStrategy) {
+                    // Mode EV: montrer clairement que c'est actif
+                    maxPerHorseGroup.style.opacity = '1';
+                    maxPerHorseGroup.style.pointerEvents = 'all';
+                } else {
+                    // Mode Dutch: montrer que c'est désactivé mais visible
+                    maxPerHorseGroup.style.opacity = '0.6';
+                    maxPerHorseGroup.style.pointerEvents = 'none';
+                }
+            }
+        });
+    </script>
 </body>
 </html>
