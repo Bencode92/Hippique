@@ -16,8 +16,8 @@
             --accent: #22c7b8;
             
             /* Couleurs pour le mode EV */
-            --ev-dark: #0a1a35;
-            --ev-medium: #15294e;
+            --ev-dark: #101a2b;
+            --ev-medium: #152442;
             --ev-light: #1e3a70;
             --ev-accent: #3498db;
             --ev-highlight: #5dade2;
@@ -391,152 +391,86 @@
             display: none;
         }
         
-        /* Style pour le toggle switch - Amélioré */
+        /* Style pour le toggle switch - Version finale */
         .strategy-toggle-container {
             display: flex;
             align-items: center;
             background-color: rgba(10, 30, 30, 0.7);
             border-radius: 12px;
-            padding: 1.5rem;
+            padding: 1.2rem;
             margin-bottom: 1.5rem;
-            border: 1px solid rgba(233, 209, 140, 0.2);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            transition: all 0.4s ease;
+            justify-content: space-between;
         }
         
         body.ev-mode .strategy-toggle-container {
             background-color: rgba(10, 30, 60, 0.7);
-            border-color: rgba(84, 153, 199, 0.2);
-            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2);
         }
         
-        .strategy-toggle-container label {
-            display: flex;
-            align-items: center;
-            cursor: pointer;
-            flex: 1;
-            transition: all 0.3s ease;
-        }
-        
-        .strategy-toggle-container .toggle-title {
+        .dutch-betting-label {
+            color: #66bbff;
             font-weight: bold;
-            color: var(--gold);
-            margin-right: 10px;
-            transition: all 0.3s ease;
             font-size: 1.1rem;
+            margin-left: 10px;
         }
         
-        body.ev-mode .strategy-toggle-container .toggle-title:last-of-type {
-            color: var(--ev-accent);
+        .optimisation-ev-label {
+            color: #65aaff;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-right: 10px;
+            text-align: right;
         }
         
-        .strategy-toggle-container .toggle-description {
-            display: none; /* Masque les descriptions */
+        body.ev-mode .optimisation-ev-label {
+            color: #65aaff;
         }
         
-        .strategy-toggle-container .toggle-label {
+        /* Le slider principal */
+        .slider-container {
             position: relative;
-            display: inline-block;
-            width: 180px;
+            width: 100%;
+            max-width: 600px;
             height: 34px;
             margin: 0 15px;
         }
         
-        .strategy-toggle-container .toggle-label input {
-            opacity: 0;
-            width: 0;
-            height: 0;
-        }
-        
-        .strategy-toggle-container .slider {
+        .toggle-background {
             position: absolute;
-            cursor: pointer;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(10, 30, 30, 0.8);
-            transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            background-color: #195694;
             border-radius: 34px;
-            border: 1px solid rgba(233, 209, 140, 0.3);
-            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
         }
         
-        .strategy-toggle-container .slider:before {
+        .toggle-button {
             position: absolute;
-            content: "";
             height: 26px;
             width: 26px;
             left: 4px;
-            bottom: 3px;
-            background-color: var(--gold);
-            transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            bottom: 4px;
+            background-color: white;
             border-radius: 50%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: 0.4s;
+            cursor: pointer;
         }
         
-        /* Nouvelle couleur bleue pour le mode EV */
-        .strategy-toggle-container input:checked + .slider {
-            background-color: rgba(30, 144, 255, 0.3); /* Bleu royal avec transparence */
+        body.ev-mode .toggle-button {
+            transform: translateX(calc(100% - 26px - 8px));
         }
         
-        .strategy-toggle-container input:checked + .slider:before {
-            transform: translateX(145px);
-            background-color: #1E90FF; /* Bleu royal */
-        }
-        
-        /* Effet de focus amélioré */
-        .strategy-toggle-container input:focus + .slider {
-            box-shadow: 0 0 3px var(--gold);
-        }
-        
-        /* Styles actifs pour mettre en évidence l'option sélectionnée */
-        .strategy-toggle-container input:not(:checked) ~ label:first-of-type .toggle-title,
-        .strategy-toggle-container input:checked ~ label:last-of-type .toggle-title {
-            text-shadow: 0 0 10px rgba(233, 209, 140, 0.5);
-            transform: scale(1.05);
-        }
-        
-        .strategy-toggle-container input:checked ~ label:last-of-type .toggle-title {
-            color: #1E90FF; /* Bleu royal */
-        }
-        
-        .strategy-icons {
-            display: flex;
-            justify-content: space-between;
-            width: 70px;
-            padding: 0 15px;
-            color: var(--light-gold);
-            font-size: 0.8rem;
+        .toggle-text {
             position: absolute;
+            width: 100%;
+            text-align: center;
             top: 50%;
-            left: 55px;
             transform: translateY(-50%);
-            pointer-events: none;
-            width: 80%;
-        }
-        
-        .strategy-icons span {
-            opacity: 0.7;
-            transition: all 0.3s ease;
             color: white;
             font-weight: bold;
             font-size: 0.9rem;
-        }
-        
-        .strategy-icons span:first-child {
-            margin-left: 0;
-        }
-        
-        .strategy-icons span:last-child {
-            margin-right: 0;
-        }
-        
-        .strategy-toggle-container input:not(:checked) ~ .toggle-label .strategy-icons span:first-child,
-        .strategy-toggle-container input:checked ~ .toggle-label .strategy-icons span:last-child {
-            opacity: 1;
-            font-weight: bold;
-            font-size: 1rem;
+            pointer-events: none;
         }
         
         /* Onglets dorés */
@@ -565,10 +499,6 @@
             .strategy-toggle-container {
                 flex-direction: column;
                 text-align: center;
-            }
-            
-            .strategy-toggle-container label {
-                margin-bottom: 1rem;
             }
         }
     </style>
@@ -608,21 +538,20 @@
                 </div>
                 
                 <div class="strategy-toggle-container">
-                    <label for="strategyToggle">
-                        <span class="toggle-title">🎯 Dutch Betting</span>
-                    </label>
+                    <div class="dutch-betting-label">
+                        🎯 Dutch Betting
+                    </div>
                     
-                    <label class="toggle-label">
-                        <input type="checkbox" id="strategyToggle">
-                        <span class="slider"></span>
-                        <div class="strategy-icons">
-                            <span>EV</span>
+                    <div class="slider-container">
+                        <div class="toggle-background" id="toggleBackground">
+                            <div class="toggle-button" id="toggleButton"></div>
+                            <div class="toggle-text">EV</div>
                         </div>
-                    </label>
+                    </div>
                     
-                    <label for="strategyToggle">
-                        <span class="toggle-title">💰 Optimisation EV</span>
-                    </label>
+                    <div class="optimisation-ev-label">
+                        💰 Optimisation EV
+                    </div>
                 </div>
                 
                 <div class="sim-form">
@@ -717,20 +646,34 @@
     <script src="simulation.js"></script>
     
     <script>
-        // Script pour gérer l'affichage du champ de mise maximale par cheval
+        // Script pour gérer l'affichage du champ de mise maximale par cheval et le toggle
         document.addEventListener('DOMContentLoaded', function() {
-            const strategyToggle = document.getElementById('strategyToggle');
             const maxPerHorseGroup = document.getElementById('maxPerHorseGroup');
             const body = document.body;
+            const toggleBackground = document.getElementById('toggleBackground');
+            const toggleButton = document.getElementById('toggleButton');
             
-            // Mettre à jour l'affichage initial
-            updateMaxPerHorseVisibility(strategyToggle.checked);
-            updateTheme(strategyToggle.checked);
+            // État initial
+            let isEVMode = false;
+            updateMaxPerHorseVisibility(isEVMode);
+            updateTheme(isEVMode);
             
-            // Ajouter un écouteur d'événements pour les changements de stratégie
-            strategyToggle.addEventListener('change', function() {
-                updateMaxPerHorseVisibility(this.checked);
-                updateTheme(this.checked);
+            // Ajouter l'écouteur d'événements pour le toggle
+            toggleBackground.addEventListener('click', function() {
+                isEVMode = !isEVMode;
+                updateMaxPerHorseVisibility(isEVMode);
+                updateTheme(isEVMode);
+                
+                // Simuler un clic sur le checkbox d'origine pour la logique métier
+                const event = new Event('change');
+                const originalToggle = document.createElement('input');
+                originalToggle.checked = isEVMode;
+                window.strategyToggleState = isEVMode; // Stocker l'état global
+                
+                // Déclencher la logique métier si nécessaire
+                if (typeof window.onStrategyToggleChange === 'function') {
+                    window.onStrategyToggleChange(isEVMode);
+                }
             });
             
             function updateMaxPerHorseVisibility(isEVStrategy) {
@@ -756,6 +699,29 @@
                     body.classList.remove('ev-mode');
                 }
             }
+            
+            // Exposer l'état du toggle et un gestionnaire pour les autres scripts
+            window.strategyToggleState = isEVMode;
+            window.onStrategyToggleChange = null;
+            
+            // Connecter avec le script original si nécessaire
+            const originalScript = document.createElement('script');
+            originalScript.textContent = `
+                // Intégration avec le script original
+                window.onStrategyToggleChange = function(isEVMode) {
+                    // Ici, vous pouvez appeler les fonctions de votre script original
+                    console.log("Mode EV:", isEVMode);
+                    // Par exemple: updateStrategyLabels(isEVMode ? 'ev' : 'dutch');
+                    
+                    // Recalculer si des résultats sont déjà affichés
+                    const resultContainer = document.getElementById('resultContainer');
+                    if (resultContainer && resultContainer.style.display === 'block') {
+                        const calculateButton = document.getElementById('calculateBets');
+                        if (calculateButton) calculateButton.click();
+                    }
+                };
+            `;
+            document.head.appendChild(originalScript);
         });
     </script>
 </body>
