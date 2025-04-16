@@ -29,24 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
         "WHITE SPIRIT": 3
     };
     
-    // Fonction utilitaire pour générer toutes les combinaisons possibles
-    function getCombinations(arr, r) {
-        const results = [];
-
-        function combine(temp, start, depth) {
-            if (depth === 0) {
-                results.push(temp);
-                return;
-            }
-            for (let i = start; i <= arr.length - depth; i++) {
-                combine(temp.concat(arr[i]), i + 1, depth - 1);
-            }
-        }
-
-        combine([], 0, r);
-        return results;
-    }
-    
     // Fonction pour générer les entrées de chevaux basées sur le nombre spécifié
     function generateHorseEntries(count) {
         // Vider le conteneur d'abord
@@ -182,11 +164,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 return obj;
             }, {});
         
-        const horseNames = Object.keys(sortedHorses);
-        
-        // Limiter aux maxN favoris (cotes les plus basses)
-        const favoritesNames = horseNames.slice(0, maxN);
-        
         // Calculer la combinaison
         function computeCombo(combo, totalBet) {
             const odds = combo.map(h => sortedHorses[h]);
@@ -211,21 +188,20 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Recherche de la meilleure combinaison
         let bestCombo = null;
+        const horseNames = Object.keys(sortedHorses);
         
-        // Pour chaque taille de combo possible (de 2 à maxN)
-        for (let r = 2; r <= Math.min(maxN, favoritesNames.length); r++) {
-            // Générer toutes les combinaisons possibles de taille r parmi les favoris
-            const combos = getCombinations(favoritesNames, r);
+        // Tester chaque taille de combo possible (de 2 à maxN)
+        for (let r = 2; r <= Math.min(maxN, horseNames.length); r++) {
+            // Prendre UNIQUEMENT les r premiers chevaux (favoris avec meilleures cotes)
+            const subset = horseNames.slice(0, r);
             
-            // Tester chaque combinaison
-            combos.forEach(combo => {
-                const result = computeCombo(combo, totalBet);
-                if (result) {
-                    if (!bestCombo || result.gain_minimum > bestCombo.gain_minimum) {
-                        bestCombo = result;
-                    }
+            // Calculer avec cette combinaison
+            const result = computeCombo(subset, totalBet);
+            if (result) {
+                if (!bestCombo || result.gain_minimum > bestCombo.gain_minimum) {
+                    bestCombo = result;
                 }
-            });
+            }
         }
         
         return bestCombo;
