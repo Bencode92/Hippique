@@ -243,13 +243,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Afficher chaque combo dans l'ordre des tailles
         comboList.forEach(combo => {
-            if (combo.available) {
-                // Combo disponible
-                const headerClass = combo.rentable ? "section-header" : "section-header non-rentable";
-                const headerIcon = combo.rentable ? "💡" : "⚠️";
-                const headerText = combo.rentable ? 
-                    `${headerIcon} Combo avec ${combo.taille} favoris | Gain net moyen : +${combo.gain_moyen.toFixed(2)} € | Gain max : +${combo.gain_maximum.toFixed(2)} €` :
-                    `${headerIcon} Combo avec ${combo.taille} favoris | NON RENTABLE | Gain net moyen : ${combo.gain_moyen.toFixed(2)} €`;
+            if (combo.available && combo.rentable) {
+                // Afficher uniquement les combos disponibles et rentables en détail
+                const headerClass = "section-header";
+                const headerText = `💡 Combo avec ${combo.taille} favoris | Gain net moyen : +${combo.gain_moyen.toFixed(2)} € | Gain max : +${combo.gain_maximum.toFixed(2)} €`;
                 
                 const title = document.createElement('tr');
                 title.innerHTML = `<td colspan="5" class="${headerClass}">${headerText}</td>`;
@@ -270,9 +267,15 @@ document.addEventListener('DOMContentLoaded', function() {
                     betsTableBody.appendChild(row);
                 });
             } else {
-                // Combo non disponible (pas assez de chevaux)
+                // Notification simplifiée pour les combos non disponibles ou non rentables
+                const headerClass = combo.available ? "section-header non-rentable-simple" : "section-header non-available-simple";
+                const headerIcon = combo.available ? "⚠️" : "ℹ️";
+                const headerMessage = combo.available 
+                    ? `${headerIcon} Combo avec ${combo.taille} favoris : Aucune solution rentable` 
+                    : `${headerIcon} Combo avec ${combo.taille} favoris : Pas assez de chevaux`;
+                
                 const title = document.createElement('tr');
-                title.innerHTML = `<td colspan="5" class="section-header non-available">ℹ️ Combo avec ${combo.taille} favoris | Non disponible (pas assez de chevaux)</td>`;
+                title.innerHTML = `<td colspan="5" class="${headerClass}">${headerMessage}</td>`;
                 betsTableBody.appendChild(title);
             }
         });
