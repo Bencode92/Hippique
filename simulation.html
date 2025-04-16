@@ -207,14 +207,8 @@
             border-left: 3px solid var(--gold) !important;
         }
         
-        .section-header.non-rentable {
-            background-color: rgba(255, 99, 71, 0.1);
-            border-left: 3px solid tomato !important;
-            color: tomato !important;
-        }
-        
-        .section-header.non-available-simple, 
-        .section-header.non-rentable-simple {
+        .section-header.non-rentable-simple, 
+        .section-header.non-available-simple {
             background-color: rgba(100, 100, 100, 0.1);
             border-left: 3px solid #999 !important;
             color: #ccc !important;
@@ -254,6 +248,92 @@
             display: none;
         }
         
+        /* Style pour le toggle switch */
+        .strategy-toggle-container {
+            display: flex;
+            align-items: center;
+            background-color: rgba(10, 30, 30, 0.5);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(233, 209, 140, 0.2);
+        }
+        
+        .strategy-toggle-container label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            flex: 1;
+        }
+        
+        .strategy-toggle-container .toggle-title {
+            font-weight: bold;
+            color: var(--gold);
+            margin-right: 10px;
+        }
+        
+        .strategy-toggle-container .toggle-description {
+            font-size: 0.9rem;
+            color: var(--light-gold);
+            margin-left: 10px;
+        }
+        
+        .strategy-toggle-container .toggle-label {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+        }
+        
+        .strategy-toggle-container .toggle-label input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        
+        .strategy-toggle-container .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(10, 30, 30, 0.8);
+            transition: .4s;
+            border-radius: 34px;
+            border: 1px solid rgba(233, 209, 140, 0.3);
+        }
+        
+        .strategy-toggle-container .slider:before {
+            position: absolute;
+            content: "";
+            height: 22px;
+            width: 22px;
+            left: 4px;
+            bottom: 3px;
+            background-color: var(--gold);
+            transition: .4s;
+            border-radius: 50%;
+        }
+        
+        .strategy-toggle-container input:checked + .slider {
+            background-color: rgba(34, 199, 184, 0.3);
+        }
+        
+        .strategy-toggle-container input:checked + .slider:before {
+            transform: translateX(29px);
+            background-color: #22c7b8;
+        }
+        
+        .strategy-icons {
+            display: flex;
+            justify-content: space-between;
+            width: 60px;
+            padding: 0 5px;
+            color: var(--light-gold);
+            font-size: 0.8rem;
+        }
+        
         @media (max-width: 768px) {
             .action-buttons {
                 flex-direction: column;
@@ -262,6 +342,15 @@
             .result-summary {
                 flex-direction: column;
                 gap: 0.75rem;
+            }
+            
+            .strategy-toggle-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .strategy-toggle-container label {
+                margin-bottom: 1rem;
             }
         }
     </style>
@@ -291,12 +380,34 @@
         <main>
             <div class="section-container">
                 <h2><i class="fas fa-calculator"></i> Simulateur de Paris Optimaux</h2>
-                <p>Cet outil vous permet de calculer la meilleure stratégie de paris pour garantir un profit, quelle que soit l'issue de la course.</p>
+                <p>Cet outil vous permet de calculer la meilleure stratégie de paris pour maximiser vos gains, quelle que soit l'issue de la course.</p>
                 
                 <div class="help-text">
                     <h4><i class="fas fa-info-circle"></i> Comment ça fonctionne</h4>
-                    <p>La stratégie du "dutching" consiste à parier sur plusieurs chevaux en répartissant vos mises de manière proportionnelle pour garantir un profit, quel que soit le vainqueur parmi votre sélection.</p>
-                    <p>Notre algorithme recherche les meilleures combinaisons de favoris (chevaux avec les cotes les plus basses) qui maximisent votre gain net.</p>
+                    <p>Deux stratégies de paris sont disponibles :</p>
+                    <p><strong>🎯 Dutch Betting :</strong> La stratégie du "dutching" traditionnelle garantit un gain net identique quel que soit le cheval gagnant parmi votre sélection.</p>
+                    <p><strong>💰 Optimisation EV :</strong> L'approche d'espérance de gain maximise le gain moyen attendu, mais les gains diffèrent selon le cheval gagnant.</p>
+                </div>
+                
+                <div class="strategy-toggle-container">
+                    <label>
+                        <span class="toggle-title">🎯 Dutch Betting</span>
+                        <span class="toggle-description">Gain identique pour tous les chevaux</span>
+                    </label>
+                    
+                    <label class="toggle-label">
+                        <input type="checkbox" id="strategyToggle">
+                        <span class="slider"></span>
+                        <div class="strategy-icons">
+                            <span>D</span>
+                            <span>EV</span>
+                        </div>
+                    </label>
+                    
+                    <label>
+                        <span class="toggle-title">💰 Optimisation EV</span>
+                        <span class="toggle-description">Maximise le gain moyen attendu</span>
+                    </label>
                 </div>
                 
                 <div class="sim-form">
