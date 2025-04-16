@@ -655,6 +655,9 @@
             <button class="sort-btn" data-sort="taux-place">
                 <i class="fas fa-medal"></i> Taux de place
             </button>
+            <button class="sort-btn" data-sort="mixte">
+                <i class="fas fa-chart-line"></i> Classement pondéré
+            </button>
         </div>
         
         <div id="results-container">
@@ -689,7 +692,7 @@
             // Variables globales
             let currentCategory = 'jockeys';
             let currentPage = 1;
-            let currentSort = 'default';  // default, taux-victoire, taux-place
+            let currentSort = 'default';  // default, taux-victoire, taux-place, mixte
             let sortDirection = 'desc';   // asc, desc
             const itemsPerPage = 20;
             let allData = {};
@@ -736,6 +739,9 @@
                     }},
                     { key: 'TauxPlace', label: 'Taux de place', class: 'percentage', renderer: (value, item) => {
                         return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
+                    }},
+                    { key: 'ScoreMixte', label: 'Score pondéré', class: 'stats', renderer: (value, item) => {
+                        return `<span title="50% victoires, 30% taux de victoire, 20% taux de place">${value}</span>`;
                     }}
                 ],
                 chevaux: [
@@ -754,6 +760,9 @@
                     }},
                     { key: 'TauxPlace', label: 'Taux de place', class: 'percentage', renderer: (value, item) => {
                         return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
+                    }},
+                    { key: 'ScoreMixte', label: 'Score pondéré', class: 'stats', renderer: (value, item) => {
+                        return `<span title="50% victoires, 30% taux de victoire, 20% taux de place">${value}</span>`;
                     }}
                 ],
                 entraineurs: [
@@ -773,6 +782,9 @@
                     }},
                     { key: 'TauxPlace', label: 'Taux de place', class: 'percentage', renderer: (value, item) => {
                         return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
+                    }},
+                    { key: 'ScoreMixte', label: 'Score pondéré', class: 'stats', renderer: (value, item) => {
+                        return `<span title="50% victoires, 30% taux de victoire, 20% taux de place">${value}</span>`;
                     }}
                 ],
                 eleveurs: [
@@ -792,6 +804,9 @@
                     }},
                     { key: 'TauxPlace', label: 'Taux de place', class: 'percentage', renderer: (value, item) => {
                         return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
+                    }},
+                    { key: 'ScoreMixte', label: 'Score pondéré', class: 'stats', renderer: (value, item) => {
+                        return `<span title="50% victoires, 30% taux de victoire, 20% taux de place">${value}</span>`;
                     }}
                 ],
                 proprietaires: [
@@ -811,9 +826,51 @@
                     }},
                     { key: 'TauxPlace', label: 'Taux de place', class: 'percentage', renderer: (value, item) => {
                         return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
+                    }},
+                    { key: 'ScoreMixte', label: 'Score pondéré', class: 'stats', renderer: (value, item) => {
+                        return `<span title="50% victoires, 30% taux de victoire, 20% taux de place">${value}</span>`;
                     }}
                 ]
             };
+            
+            // Fonction pour calculer le classement pondéré
+            function calculateCompositeRanking(data) {
+                if (!data || !data.length) return data;
+                
+                // Copier les données pour ne pas modifier l'original
+                const dataCopy = [...data];
+                
+                // Créer des tableaux de valeurs à classer
+                const ranks = {
+                    Victoires: [...dataCopy].sort((a, b) => {
+                        const victA = currentCategory === 'chevaux' ? parseInt(b.NbVictoires) : parseInt(b.Victoires);
+                        const victB = currentCategory === 'chevaux' ? parseInt(a.NbVictoires) : parseInt(a.Victoires);
+                        return victA - victB;
+                    }),
+                    TauxVictoire: [...dataCopy].sort((a, b) => parseFloat(b.TauxVictoire) - parseFloat(a.TauxVictoire)),
+                    TauxPlace: [...dataCopy].sort((a, b) => parseFloat(b.TauxPlace) - parseFloat(a.TauxPlace))
+                };
+                
+                // Attribuer les rangs et calculer le score combiné
+                dataCopy.forEach(item => {
+                    // Adaptez cette partie pour gérer à la fois les chevaux et les autres catégories
+                    const itemKey = currentCategory === 'chevaux' ? 'Nom' : 'NomPostal';
+                    const rangVictoires = ranks.Victoires.findIndex(d => d[itemKey] === item[itemKey]) + 1;
+                    const rangTauxVictoire = ranks.TauxVictoire.findIndex(d => d[itemKey] === item[itemKey]) + 1;
+                    const rangTauxPlace = ranks.TauxPlace.findIndex(d => d[itemKey] === item[itemKey]) + 1;
+                    
+                    // Calcul du score pondéré (valeur plus petite = meilleur classement)
+                    item.ScoreMixte = (
+                        0.5 * rangVictoires +
+                        0.3 * rangTauxVictoire +
+                        0.2 * rangTauxPlace
+                    ).toFixed(2);
+                });
+                
+                // Retourner les données triées par score croissant (meilleur en haut)
+                return dataCopy.sort((a, b) => parseFloat(a.ScoreMixte) - parseFloat(b.ScoreMixte))
+                    .map((item, index) => ({ ...item, Rang: index + 1 })); // Mettre à jour les rangs
+            }
             
             // Afficher un squelette de chargement
             function showSkeletonLoading() {
@@ -1062,6 +1119,11 @@
                 // Clone les données pour ne pas modifier l'original
                 const sortedData = [...data];
                 
+                // Nouveau cas pour le classement pondéré
+                if (sortKey === 'mixte') {
+                    return calculateCompositeRanking(sortedData);
+                }
+                
                 if (sortKey === 'default') {
                     // Tri par défaut (par nombre de victoires)
                     if (currentCategory === 'chevaux') {
@@ -1131,10 +1193,11 @@
                 columns.forEach(column => {
                     // Ajouter une icône de tri si c'est une colonne triable
                     let sortIcon = '';
-                    if (column.key === 'TauxVictoire' || column.key === 'TauxPlace' || column.key === 'Rang') {
+                    if (column.key === 'TauxVictoire' || column.key === 'TauxPlace' || column.key === 'Rang' || column.key === 'ScoreMixte') {
                         const isActive = (column.key === 'TauxVictoire' && currentSort === 'taux-victoire') || 
                                         (column.key === 'TauxPlace' && currentSort === 'taux-place') ||
-                                        (column.key === 'Rang' && currentSort === 'default');
+                                        (column.key === 'Rang' && currentSort === 'default') ||
+                                        (column.key === 'ScoreMixte' && currentSort === 'mixte');
                         const direction = sortDirection === 'desc' ? 'down' : 'up';
                         
                         sortIcon = isActive ? `<i class="fas fa-sort-${direction} sort-icon"></i>` : '<i class="fas fa-sort sort-icon"></i>';
@@ -1196,6 +1259,8 @@
                             newSortKey = 'taux-place';
                         } else if (column.key === 'Rang') {
                             newSortKey = 'default';
+                        } else if (column.key === 'ScoreMixte') {
+                            newSortKey = 'mixte';
                         } else {
                             return; // Ne pas trier sur les autres colonnes
                         }
@@ -1403,7 +1468,8 @@
                         sortDirection = sortDirection === 'desc' ? 'asc' : 'desc';
                     } else {
                         currentSort = sortType;
-                        sortDirection = 'desc'; // Par défaut, tri décroissant
+                        // Pour le classement pondéré, on force l'ordre croissant (meilleur score = plus petit)
+                        sortDirection = sortType === 'mixte' ? 'asc' : 'desc';
                     }
                     
                     // Mettre à jour l'état visuel des boutons
@@ -1482,7 +1548,7 @@
             }
             
             // Définir le tri si fourni dans l'URL
-            if (sortParam && ['default', 'taux-victoire', 'taux-place'].includes(sortParam)) {
+            if (sortParam && ['default', 'taux-victoire', 'taux-place', 'mixte'].includes(sortParam)) {
                 currentSort = sortParam;
             }
             
