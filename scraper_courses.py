@@ -394,18 +394,19 @@ class ScraperCoursesFG:
                     print(f"⚠️ Lien invalide trouvé: {repr(href)}, ignoré.")
                     continue
                 
-                course_name = link.text.strip()
-                print(f"🔎 Nom de course: {repr(course_name)}")
+                # Sauvegarder le texte du lien original pour diagnostic
+                link_text_original = link.text.strip()
+                print(f"🔎 Texte du lien original: {repr(link_text_original)}")
                 
-                # Ignorer les liens avec des noms vides ou suspects
-                if not course_name or course_name == "-":
-                    print("⚠️ Nom de course vide ou invalide, ignoré.")
+                # Ignorer les liens avec des textes vides
+                if not link_text_original:
+                    print("⚠️ Texte du lien vide, ignoré.")
                     continue
                 
                 # Construire l'URL complète
                 course_url = f"{self.base_url}{href}" if href.startswith('/') else href
                 
-                print(f"  ⏳ Course {index+1}/{len(course_links)}: {course_name} - {course_url}")
+                print(f"  ⏳ Course {index+1}/{len(course_links)}: lien {link_text_original} - {course_url}")
                 
                 try:
                     # Aller sur la page de détail de la course
@@ -424,9 +425,16 @@ class ScraperCoursesFG:
                     
                     course_soup = BeautifulSoup(course_html, "html.parser")
                     
+                    # Extraire le vrai nom de la course depuis la page de détail
+                    course_name_element = course_soup.select_one("h1, .course-title, .event-title, .title")
+                    course_name = course_name_element.text.strip() if course_name_element else "Course sans nom"
+                    
+                    print(f"  📝 Nom de course extrait de la page: {repr(course_name)}")
+                    
                     # Extraire les détails de la course
                     course_data = {
                         "nom": course_name,
+                        "nom_lien_original": link_text_original,  # Garder trace du nom original du lien
                         "url": course_url,
                         "participants": []
                     }
@@ -475,7 +483,7 @@ class ScraperCoursesFG:
                         print(f"⚠️ Course ignorée car trop peu de données: {course_name}")
                     
                 except Exception as e:
-                    print(f"❌ Erreur lors du traitement de la course {course_name}: {str(e)}")
+                    print(f"❌ Erreur lors du traitement de la course {link_text_original}: {str(e)}")
                     traceback.print_exc()
                     # Continuer avec la course suivante malgré l'erreur
             
