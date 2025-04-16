@@ -5,14 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classement Hippique</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --dark-teal: #0f2a28;
-            --medium-teal: #163e3c;
-            --light-teal: #1a514e;
-            --gold: #e9d18c;
-            --light-gold: #f5e9c9;
-            --accent: #22c7b8;
+            /* Nouvelle palette de couleurs plus moderne */
+            --dark-bg: #0A2E2A;
+            --medium-bg: #0E3B36;
+            --light-bg: #165853;
+            --gold: #D4AF37;
+            --light-gold: #F0E6C9;
+            --accent: #40E0D0;
+            --accent-dark: #2AA198;
+            --text-light: #F5F5F5;
+            --text-muted: #A0AEC0;
+            --success: #48BB78;
+            --warning: #ECC94B;
+            --danger: #F56565;
+            --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            --transition-normal: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
         
         * {
@@ -22,12 +34,18 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--dark-teal);
-            color: var(--light-gold);
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            background: linear-gradient(135deg, var(--dark-bg), #051a18);
+            color: var(--text-light);
             min-height: 100vh;
-            padding: 0;
-            margin: 0;
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 600;
+            color: var(--light-gold);
         }
         
         .container {
@@ -36,13 +54,17 @@
             padding: 2rem;
         }
         
+        /* Header modernisé */
         header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 2rem;
-            background-color: var(--medium-teal);
-            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
+            padding: 1.5rem 2rem;
+            background: linear-gradient(to right, var(--dark-bg), var(--medium-bg));
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            position: relative;
+            z-index: 10;
         }
         
         .logo {
@@ -54,226 +76,452 @@
         .logo h1 {
             font-size: 1.8rem;
             color: var(--gold);
-            font-weight: 400;
+            font-weight: 600;
             letter-spacing: 2px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
         
+        .logo-icon {
+            font-size: 2.2rem;
+            color: var(--gold);
+            filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.3));
+        }
+        
+        .home-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: 8px;
+            background-color: rgba(64, 224, 208, 0.1);
+            transition: var(--transition-normal);
+            font-weight: 500;
+        }
+        
+        .home-link:hover {
+            background-color: rgba(64, 224, 208, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        /* Titres et sous-titres */
         .page-title {
             color: var(--gold);
-            margin-bottom: 1rem;
-            font-size: 2rem;
-            font-weight: 400;
+            margin: 2rem 0 0.5rem;
+            font-size: 2.5rem;
+            font-weight: 700;
             letter-spacing: 2px;
             text-align: center;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
         
         .page-subtitle {
-            color: var(--light-gold);
-            margin-bottom: 2rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
             text-align: center;
-            opacity: 0.8;
+            font-size: 1.1rem;
         }
         
+        /* Tabs modernisés */
+        .tabs {
+            display: flex;
+            margin-bottom: 2.5rem;
+            overflow-x: auto;
+            gap: 0.25rem;
+            background-color: rgba(10, 46, 42, 0.4);
+            border-radius: 12px;
+            padding: 0.5rem;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tab {
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            transition: var(--transition-normal);
+            color: var(--text-light);
+            text-align: center;
+            white-space: nowrap;
+            border-radius: 8px;
+            font-weight: 500;
+            position: relative;
+            flex: 1;
+        }
+        
+        .tab:hover {
+            background-color: rgba(26, 81, 78, 0.5);
+            color: var(--light-gold);
+        }
+        
+        .tab.active {
+            background: linear-gradient(to bottom, var(--light-bg), var(--medium-bg));
+            color: var(--gold);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        .tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 3px;
+            background-color: var(--gold);
+            border-radius: 3px;
+        }
+        
+        /* Recherche modernisée */
         .search-container {
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
             position: relative;
         }
         
         .search-container input {
             width: 100%;
-            padding: 1rem;
-            background-color: rgba(10, 30, 30, 0.5);
-            border: 1px solid rgba(233, 209, 140, 0.3);
-            border-radius: 8px;
-            color: var(--light-gold);
+            padding: 1.2rem;
+            background: linear-gradient(to right, rgba(10, 30, 30, 0.7), rgba(14, 59, 54, 0.7));
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 12px;
+            color: var(--text-light);
             font-size: 1.1rem;
-            padding-left: 3rem;
+            padding-left: 3.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: var(--transition-normal);
         }
         
         .search-container i {
             position: absolute;
-            left: 1rem;
-            top: 1rem;
+            left: 1.2rem;
+            top: 1.2rem;
             color: var(--gold);
-            font-size: 1.1rem;
+            font-size: 1.2rem;
+            opacity: 0.8;
+            transition: var(--transition-normal);
         }
         
         .search-container input:focus {
             outline: none;
             border-color: var(--accent);
-            box-shadow: 0 0 0 2px rgba(34, 199, 184, 0.2);
+            box-shadow: 0 0 0 4px rgba(64, 224, 208, 0.15);
+            transform: translateY(-2px);
+        }
+        
+        .search-container input:focus + i {
+            color: var(--accent);
+            opacity: 1;
         }
         
         .search-clear {
             position: absolute;
-            right: 1rem;
-            top: 1rem;
-            color: var(--light-gold);
+            right: 1.2rem;
+            top: 1.2rem;
+            color: var(--text-muted);
             background: none;
             border: none;
             cursor: pointer;
             font-size: 1.1rem;
             opacity: 0.7;
+            transition: var(--transition-normal);
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
         }
         
         .search-clear:hover {
             opacity: 1;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--text-light);
         }
         
-        .tabs {
+        /* Options de tri modernisées */
+        .sort-options {
             display: flex;
-            margin-bottom: 2rem;
-            overflow-x: auto;
-            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            background-color: rgba(14, 59, 54, 0.3);
+            border-radius: 12px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
         }
         
-        .tab {
-            padding: 1rem 2rem;
+        .sort-label {
+            color: var(--text-muted);
+            font-weight: 400;
+            margin-right: 0.5rem;
+        }
+        
+        .sort-btn {
+            padding: 0.7rem 1.2rem;
+            background: linear-gradient(to bottom, rgba(22, 88, 83, 0.5), rgba(10, 46, 42, 0.5));
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            border-radius: 8px;
+            color: var(--text-light);
             cursor: pointer;
-            transition: all 0.3s ease;
-            color: var(--light-gold);
-            text-align: center;
-            white-space: nowrap;
+            transition: var(--transition-normal);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+            font-size: 0.95rem;
         }
         
-        .tab:hover {
-            background-color: rgba(26, 81, 78, 0.5);
+        .sort-btn:hover {
+            background: linear-gradient(to bottom, rgba(22, 88, 83, 0.8), rgba(10, 46, 42, 0.8));
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
         
-        .tab.active {
-            background-color: var(--light-teal);
+        .sort-btn.active {
+            background: linear-gradient(to bottom, var(--light-bg), var(--medium-bg));
+            border-color: var(--gold);
             color: var(--gold);
-            border-bottom: 3px solid var(--gold);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Affichage par cartes au lieu de tableau */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+        
+        .competitor-card {
+            background: linear-gradient(145deg, #0E3B36, #0A2E2A);
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            padding: 1.5rem;
+            transition: var(--transition-normal);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .competitor-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+        
+        .competitor-rank {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: linear-gradient(to bottom right, var(--gold), #BF953F);
+            color: var(--dark-bg);
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .rank-1 {
+            background: linear-gradient(to bottom right, #FFD700, #BF953F);
+        }
+        
+        .rank-2 {
+            background: linear-gradient(to bottom right, #C0C0C0, #A0A0A0);
+        }
+        
+        .rank-3 {
+            background: linear-gradient(to bottom right, #CD7F32, #A05A2C);
+        }
+        
+        .competitor-name {
+            font-size: 1.3rem;
+            color: var(--gold);
+            margin-bottom: 1rem;
+            font-weight: 600;
+            padding-right: 3rem;
+        }
+        
+        .competitor-name a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: var(--transition-normal);
+        }
+        
+        .competitor-name a:hover {
+            color: var(--light-gold);
+            text-decoration: underline;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+        }
+        
+        .stat-value {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        
+        .percentage-value {
+            color: var(--accent);
+            font-weight: 600;
+        }
+        
+        .performance-bar {
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+            margin-top: 0.5rem;
+            overflow: hidden;
+        }
+        
+        .performance-fill {
+            height: 100%;
+            border-radius: 3px;
+            transition: width 1s ease-out;
+        }
+        
+        .performance-fill.victory {
+            background: linear-gradient(to right, var(--accent-dark), var(--accent));
+        }
+        
+        .performance-fill.place {
+            background: linear-gradient(to right, var(--gold), var(--light-gold));
+        }
+        
+        /* Table responsive modernisée pour l'affichage alternatif */
+        .table-view {
+            margin-bottom: 2.5rem;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
         }
         
         .data-table {
             width: 100%;
             border-collapse: collapse;
-            border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            margin-bottom: 2rem;
-            background-color: rgba(22, 62, 60, 0.5);
-            border: 1px solid rgba(233, 209, 140, 0.2);
+            background: linear-gradient(145deg, #0E3B36, #0A2E2A);
         }
         
         .data-table th {
-            background-color: rgba(10, 30, 30, 0.7);
+            background: linear-gradient(to bottom, var(--medium-bg), var(--dark-bg));
             color: var(--gold);
-            padding: 1rem;
+            padding: 1.2rem 1.5rem;
             text-align: left;
-            font-weight: 500;
+            font-weight: 600;
             position: sticky;
             top: 0;
             cursor: pointer;
+            letter-spacing: 0.5px;
+            font-size: 0.95rem;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
         }
         
         .data-table th:hover {
-            background-color: rgba(10, 30, 30, 0.9);
-        }
-        
-        .data-table th .sort-icon {
-            margin-left: 5px;
-            opacity: 0.5;
-        }
-        
-        .data-table th.sorted .sort-icon {
-            opacity: 1;
+            background: linear-gradient(to bottom, var(--light-bg), var(--medium-bg));
         }
         
         .data-table td {
-            padding: 1rem;
-            border-top: 1px solid rgba(233, 209, 140, 0.1);
-            transition: background-color 0.3s ease;
+            padding: 1.2rem 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            transition: var(--transition-normal);
+            font-size: 0.95rem;
+        }
+        
+        .data-table tr {
+            transition: var(--transition-normal);
+        }
+        
+        .data-table tr:hover {
+            background-color: rgba(22, 88, 83, 0.3);
         }
         
         .data-table tr:hover td {
-            background-color: rgba(26, 81, 78, 0.5);
+            transform: translateY(-1px);
         }
         
-        .data-table a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-        
-        .data-table a:hover {
-            text-decoration: underline;
-        }
-        
-        .rank {
-            font-weight: 600;
-            text-align: center;
-        }
-        
-        .rank-1, .rank-2, .rank-3 {
-            font-weight: bold;
-        }
-        
-        .rank-1 {
-            color: gold;
-        }
-        
-        .rank-2 {
-            color: silver;
-        }
-        
-        .rank-3 {
-            color: #cd7f32; /* Bronze */
-        }
-        
-        .stats {
-            color: var(--accent);
-            font-weight: 500;
-            text-align: right;
-        }
-        
-        .percentage {
-            color: var(--gold);
-            font-weight: 500;
-            text-align: right;
-        }
-        
+        /* Pagination modernisée */
         .pagination {
             display: flex;
             justify-content: center;
-            margin-top: 2rem;
+            align-items: center;
+            margin: 2.5rem 0;
             gap: 0.5rem;
         }
         
         .page-btn {
-            padding: 0.5rem 1rem;
-            background-color: rgba(22, 62, 60, 0.5);
-            border: 1px solid rgba(233, 209, 140, 0.2);
-            border-radius: 4px;
-            color: var(--light-gold);
+            min-width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to bottom, rgba(22, 88, 83, 0.5), rgba(10, 46, 42, 0.5));
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            border-radius: 8px;
+            color: var(--text-light);
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: var(--transition-normal);
+            font-weight: 500;
+            padding: 0 0.8rem;
         }
         
-        .page-btn:hover {
-            background-color: var(--light-teal);
+        .page-btn:hover:not(:disabled) {
+            background: linear-gradient(to bottom, rgba(22, 88, 83, 0.8), rgba(10, 46, 42, 0.8));
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
         
         .page-btn.active {
-            background-color: var(--light-teal);
+            background: linear-gradient(to bottom, var(--light-bg), var(--medium-bg));
             border-color: var(--gold);
             color: var(--gold);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
         
+        .page-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        /* États de chargement et d'erreur */
         .loading {
             text-align: center;
-            padding: 2rem;
+            padding: 3rem;
             color: var(--light-gold);
+            background: linear-gradient(145deg, #0E3B36, #0A2E2A);
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            border: 1px solid rgba(212, 175, 55, 0.1);
         }
         
         .loading .spinner {
-            border: 4px solid rgba(233, 209, 140, 0.3);
+            border: 4px solid rgba(212, 175, 55, 0.1);
             border-radius: 50%;
             border-top: 4px solid var(--gold);
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
             animation: spin 1s linear infinite;
-            margin: 0 auto 1rem;
+            margin: 0 auto 1.5rem;
         }
         
         @keyframes spin {
@@ -285,76 +533,116 @@
             text-align: center;
             padding: 3rem;
             color: var(--light-gold);
-            background-color: rgba(22, 62, 60, 0.3);
-            border-radius: 8px;
-            border: 1px solid rgba(233, 209, 140, 0.2);
+            background: linear-gradient(145deg, #0E3B36, #0A2E2A);
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            border: 1px solid rgba(212, 175, 55, 0.1);
         }
         
         .no-results i {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
             color: var(--gold);
+            opacity: 0.7;
         }
         
-        .home-link {
-            display: block;
+        .no-results h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Footer moderne */
+        footer {
+            margin-top: 4rem;
             text-align: center;
-            margin-top: 2rem;
-            color: var(--accent);
-            text-decoration: none;
+            padding: 2.5rem;
+            background: linear-gradient(to bottom, var(--medium-bg), var(--dark-bg));
+            border-top: 1px solid rgba(212, 175, 55, 0.1);
+            color: var(--text-muted);
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
         }
         
-        .home-link:hover {
-            text-decoration: underline;
+        footer p {
+            margin-bottom: 0.5rem;
         }
         
-        .sort-options {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            flex-wrap: wrap;
-        }
-        
-        .sort-btn {
-            padding: 0.5rem 1rem;
-            background-color: rgba(22, 62, 60, 0.5);
-            border: 1px solid rgba(233, 209, 140, 0.2);
-            border-radius: 4px;
+        footer p:first-child {
             color: var(--light-gold);
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+        
+        #last-update {
+            color: var(--accent);
+            font-weight: 500;
+        }
+        
+        /* Boutons d'affichage */
+        .view-toggle {
+            display: flex;
+            margin-bottom: 1.5rem;
+            gap: 0.5rem;
+            justify-content: flex-end;
+        }
+        
+        .view-btn {
+            padding: 0.6rem 1rem;
+            background: linear-gradient(to bottom, rgba(22, 88, 83, 0.5), rgba(10, 46, 42, 0.5));
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            border-radius: 8px;
+            color: var(--text-light);
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: var(--transition-normal);
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            font-weight: 500;
+            font-size: 0.9rem;
         }
         
-        .sort-btn:hover {
-            background-color: var(--light-teal);
+        .view-btn:hover {
+            background: linear-gradient(to bottom, rgba(22, 88, 83, 0.8), rgba(10, 46, 42, 0.8));
         }
         
-        .sort-btn.active {
-            background-color: var(--light-teal);
-            border-color: var(--gold);
-            color: var(--gold);
+        .view-btn.active {
+            background: linear-gradient(to bottom, var(--light-bg), var(--medium-bg));
+            border-color: var(--accent);
+            color: var(--accent);
         }
         
-        footer {
-            margin-top: 3rem;
-            text-align: center;
-            padding: 2rem;
-            border-top: 1px solid rgba(233, 209, 140, 0.2);
-            color: var(--light-gold);
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            background-color: rgba(64, 224, 208, 0.1);
+            transition: var(--transition-normal);
+            font-weight: 500;
+            margin: 1rem auto;
+            width: fit-content;
         }
         
+        .back-link:hover {
+            background-color: rgba(64, 224, 208, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Responsiveness */
         @media (max-width: 768px) {
             .container {
                 padding: 1rem;
             }
             
-            .data-table {
-                display: block;
-                overflow-x: auto;
-                white-space: nowrap;
+            .page-title {
+                font-size: 2rem;
+            }
+            
+            .card-grid {
+                grid-template-columns: 1fr;
             }
             
             .tab {
@@ -365,24 +653,20 @@
             .logo h1 {
                 font-size: 1.4rem;
             }
-        }
-
-        /* Table de données responsive */
-        .table-responsive {
-            overflow-x: auto;
-            border-radius: 8px;
-            margin-bottom: 2rem;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <i class="fas fa-horse-head" style="font-size: 2rem; color: var(--gold);"></i>
+            <i class="fas fa-horse-head logo-icon"></i>
             <h1>ANALYSE HIPPIQUE</h1>
         </div>
-        <a href="index.html" style="color: var(--accent); text-decoration: none;">
+        <a href="index.html" class="home-link">
             <i class="fas fa-home"></i> Accueil
         </a>
     </header>
@@ -392,24 +676,49 @@
         <p class="page-subtitle">Consultez et recherchez parmi les meilleurs jockeys, chevaux, entraineurs, éleveurs et propriétaires</p>
         
         <div class="tabs">
-            <div class="tab active" data-category="jockeys">Jockeys</div>
-            <div class="tab" data-category="chevaux">Chevaux</div>
-            <div class="tab" data-category="entraineurs">Entraineurs</div>
-            <div class="tab" data-category="eleveurs">Eleveurs</div>
-            <div class="tab" data-category="proprietaires">Propriétaires</div>
+            <div class="tab active" data-category="jockeys">
+                <i class="fas fa-user"></i> Jockeys
+            </div>
+            <div class="tab" data-category="chevaux">
+                <i class="fas fa-horse"></i> Chevaux
+            </div>
+            <div class="tab" data-category="entraineurs">
+                <i class="fas fa-users"></i> Entraineurs
+            </div>
+            <div class="tab" data-category="eleveurs">
+                <i class="fas fa-seedling"></i> Eleveurs
+            </div>
+            <div class="tab" data-category="proprietaires">
+                <i class="fas fa-user-tie"></i> Propriétaires
+            </div>
         </div>
         
         <div class="search-container">
+            <input type="text" id="search-input" placeholder="Rechercher un nom...">
             <i class="fas fa-search"></i>
-            <input type="text" id="search-input" placeholder="Rechercher par nom...">
             <button class="search-clear" id="search-clear"><i class="fas fa-times"></i></button>
         </div>
         
         <div class="sort-options">
-            <span>Trier par : </span>
-            <button class="sort-btn active" data-sort="default"><i class="fas fa-list-ol"></i> Classement par défaut</button>
-            <button class="sort-btn" data-sort="taux-victoire"><i class="fas fa-trophy"></i> Taux de victoire</button>
-            <button class="sort-btn" data-sort="taux-place"><i class="fas fa-medal"></i> Taux de place</button>
+            <span class="sort-label">Trier par : </span>
+            <button class="sort-btn active" data-sort="default">
+                <i class="fas fa-list-ol"></i> Classement
+            </button>
+            <button class="sort-btn" data-sort="taux-victoire">
+                <i class="fas fa-trophy"></i> Taux de victoire
+            </button>
+            <button class="sort-btn" data-sort="taux-place">
+                <i class="fas fa-medal"></i> Taux de place
+            </button>
+        </div>
+        
+        <div class="view-toggle">
+            <button class="view-btn active" id="card-view-btn">
+                <i class="fas fa-th"></i> Cartes
+            </button>
+            <button class="view-btn" id="table-view-btn">
+                <i class="fas fa-table"></i> Tableau
+            </button>
         </div>
         
         <div id="results-container">
@@ -423,7 +732,9 @@
             <!-- Les boutons de pagination seront générés par JavaScript -->
         </div>
         
-        <a href="index.html" class="home-link"><i class="fas fa-arrow-left"></i> Retour à l'accueil</a>
+        <a href="index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i> Retour à l'accueil
+        </a>
     </div>
     
     <footer>
@@ -438,7 +749,8 @@
             let currentPage = 1;
             let currentSort = 'default';  // default, taux-victoire, taux-place
             let sortDirection = 'desc';   // asc, desc
-            const itemsPerPage = 20;
+            let currentView = 'card';     // card, table
+            const itemsPerPage = 12;      // Moins d'éléments par page pour l'affichage en cartes
             let allData = {};
             let filteredData = [];
             
@@ -450,6 +762,8 @@
             const sortButtons = document.querySelectorAll('.sort-btn');
             const pagination = document.getElementById('pagination');
             const lastUpdateEl = document.getElementById('last-update');
+            const cardViewBtn = document.getElementById('card-view-btn');
+            const tableViewBtn = document.getElementById('table-view-btn');
             
             // Déterminer si nous sommes sur GitHub Pages ou en local
             const isGitHubPages = window.location.hostname.includes('github.io');
@@ -661,9 +975,9 @@
                     demoData = [
                         { Rang: 1, Nom: "MAP OF STARS", NbCourses: 2, NbVictoires: 2, NbPlace: 0, TauxVictoire: "100.0", TauxPlace: "0.0" },
                         { Rang: 2, Nom: "LANZELOT GOLD", NbCourses: 4, NbVictoires: 2, NbPlace: 2, TauxVictoire: "50.0", TauxPlace: "50.0" },
-                        { Rang: 3, Nom: "SAINT ETIENNE", NbCourses: 4, NbVictoires: 4, NbPlace: 9, TauxVictoire: "100.0", TauxPlace: "0.0" },
-                        { Rang: 4, Nom: "AMERICAN FLAG", NbCourses: 3, NbVictoires: 3, NbPlace: 7, TauxVictoire: "100.0", TauxPlace: "0.0" },
-                        { Rang: 5, Nom: "HYPERCORE", NbCourses: 5, NbVictoires: 5, NbPlace: 8, TauxVictoire: "100.0", TauxPlace: "0.0" }
+                        { Rang: 3, Nom: "SAINT ETIENNE", NbCourses: 4, NbVictoires: 4, NbPlace: 0, TauxVictoire: "100.0", TauxPlace: "0.0" },
+                        { Rang: 4, Nom: "AMERICAN FLAG", NbCourses: 3, NbVictoires: 3, NbPlace: 0, TauxVictoire: "100.0", TauxPlace: "0.0" },
+                        { Rang: 5, Nom: "HYPERCORE", NbCourses: 5, NbVictoires: 5, NbPlace: 0, TauxVictoire: "100.0", TauxPlace: "0.0" }
                     ];
                 } else if (category === 'entraineurs') {
                     demoData = [
@@ -781,8 +1095,121 @@
                 }));
             }
             
-            // Fonction pour afficher les données dans un tableau
-            function displayResults(data, page = 1) {
+            // Fonction pour afficher les données en vue carte
+            function displayCardView(data, page = 1) {
+                const startIndex = (page - 1) * itemsPerPage;
+                const endIndex = startIndex + itemsPerPage;
+                const pageData = data.slice(startIndex, endIndex);
+                
+                if (data.length === 0) {
+                    resultsContainer.innerHTML = `
+                        <div class="no-results">
+                            <i class="fas fa-search"></i>
+                            <h3>Aucun résultat trouvé</h3>
+                            <p>Essayez de modifier votre recherche</p>
+                        </div>
+                    `;
+                    pagination.innerHTML = '';
+                    return;
+                }
+                
+                // Créer la grille de cartes
+                let cardHTML = `<div class="card-grid">`;
+                
+                pageData.forEach(item => {
+                    const rankClass = item.Rang <= 3 ? `rank-${item.Rang}` : '';
+                    let nameKey = currentCategory === 'chevaux' ? 'Nom' : 'NomPostal';
+                    let nameUrl = currentCategory === 'chevaux' ? 'LibelleCheval_url' : 'NomPostal_url';
+                    
+                    // Calculer les pourcentages pour les barres de progression
+                    const victoryPercentage = parseFloat(item.TauxVictoire);
+                    const placePercentage = parseFloat(item.TauxPlace);
+                    
+                    // Construire le contenu de la carte
+                    cardHTML += `
+                        <div class="competitor-card">
+                            <div class="competitor-rank ${rankClass}">${item.Rang}</div>
+                            <h3 class="competitor-name">
+                                ${item[nameUrl] ? `<a href="${item[nameUrl]}" target="_blank">${item[nameKey]}</a>` : item[nameKey]}
+                            </h3>
+                            
+                            <div class="stats-grid">
+                    `;
+                    
+                    // Ajouter les statistiques spécifiques à chaque catégorie
+                    if (currentCategory === 'chevaux') {
+                        cardHTML += `
+                            <div class="stat-item">
+                                <span class="stat-label">Courses</span>
+                                <span class="stat-value">${item.NbCourses}</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Victoires</span>
+                                <span class="stat-value">${item.NbVictoires}</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Places</span>
+                                <span class="stat-value">${item.NbPlace}</span>
+                            </div>
+                        `;
+                    } else {
+                        cardHTML += `
+                            <div class="stat-item">
+                                <span class="stat-label">Chevaux</span>
+                                <span class="stat-value">${item.Chevaux}</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Partants</span>
+                                <span class="stat-value">${item.Partants}</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Victoires</span>
+                                <span class="stat-value">${item.Victoires}</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">Places</span>
+                                <span class="stat-value">${item.Place}</span>
+                            </div>
+                        `;
+                    }
+                    
+                    // Ajouter les taux avec des barres de progression
+                    cardHTML += `
+                            <div class="stat-item" style="grid-column: 1 / -1;">
+                                <span class="stat-label">Taux de victoire</span>
+                                <span class="stat-value percentage-value">${item.TauxVictoire}%</span>
+                                <div class="performance-bar">
+                                    <div class="performance-fill victory" style="width: ${Math.min(victoryPercentage, 100)}%;"></div>
+                                </div>
+                            </div>
+                            <div class="stat-item" style="grid-column: 1 / -1;">
+                                <span class="stat-label">Taux de place</span>
+                                <span class="stat-value percentage-value">${item.TauxPlace}%</span>
+                                <div class="performance-bar">
+                                    <div class="performance-fill place" style="width: ${Math.min(placePercentage, 100)}%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    `;
+                });
+                
+                cardHTML += `</div>`;
+                resultsContainer.innerHTML = cardHTML;
+                
+                // Animation des barres de progression
+                setTimeout(() => {
+                    document.querySelectorAll('.performance-fill').forEach(bar => {
+                        bar.style.transition = 'width 1s ease-out';
+                    });
+                }, 100);
+                
+                // Mettre à jour la pagination
+                updatePagination(data.length);
+            }
+            
+            // Fonction pour afficher les données en tableau
+            function displayTableView(data, page = 1) {
                 const startIndex = (page - 1) * itemsPerPage;
                 const endIndex = startIndex + itemsPerPage;
                 const pageData = data.slice(startIndex, endIndex);
@@ -802,7 +1229,7 @@
                 const columns = COLUMNS[currentCategory];
                 
                 let tableHTML = `
-                    <div class="table-responsive">
+                    <div class="table-view">
                         <table class="data-table">
                             <thead>
                                 <tr>
@@ -851,6 +1278,15 @@
                 
                 // Mettre à jour la pagination
                 updatePagination(data.length);
+            }
+            
+            // Fonction pour afficher les résultats selon la vue active
+            function displayResults(data, page = 1) {
+                if (currentView === 'card') {
+                    displayCardView(data, page);
+                } else {
+                    displayTableView(data, page);
+                }
             }
             
             // Fonction pour mettre à jour la pagination
@@ -927,8 +1363,8 @@
                     currentPage = page;
                     displayResults(filteredData, currentPage);
                     
-                    // Faire défiler vers le haut du tableau
-                    resultsContainer.scrollIntoView({ behavior: 'smooth' });
+                    // Faire défiler vers le haut du conteneur
+                    resultsContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 };
             }
             
@@ -980,7 +1416,7 @@
                 // Trier les données
                 filteredData = sortData(filteredData, currentSort);
                 
-                // Afficher les résultats
+                // Afficher les résultats selon la vue active
                 displayResults(filteredData, currentPage);
             }
             
@@ -993,6 +1429,17 @@
                         btn.classList.remove('active');
                     }
                 });
+            }
+            
+            // Mise à jour visuelle des boutons de vue
+            function updateViewButtons() {
+                if (currentView === 'card') {
+                    cardViewBtn.classList.add('active');
+                    tableViewBtn.classList.remove('active');
+                } else {
+                    cardViewBtn.classList.remove('active');
+                    tableViewBtn.classList.add('active');
+                }
             }
             
             // Événements
@@ -1023,6 +1470,23 @@
                     currentPage = 1;
                     displayResults(filteredData, currentPage);
                 });
+            });
+            
+            // Événements pour les boutons de vue
+            cardViewBtn.addEventListener('click', function() {
+                if (currentView !== 'card') {
+                    currentView = 'card';
+                    updateViewButtons();
+                    displayResults(filteredData, currentPage);
+                }
+            });
+            
+            tableViewBtn.addEventListener('click', function() {
+                if (currentView !== 'table') {
+                    currentView = 'table';
+                    updateViewButtons();
+                    displayResults(filteredData, currentPage);
+                }
             });
             
             searchInput.addEventListener('input', function() {
@@ -1064,6 +1528,7 @@
             const categoryParam = urlParams.get('category');
             const searchParam = urlParams.get('search');
             const sortParam = urlParams.get('sort');
+            const viewParam = urlParams.get('view');
             
             // Appliquer la catégorie si fournie dans l'URL
             if (categoryParam && ['jockeys', 'chevaux', 'entraineurs', 'eleveurs', 'proprietaires'].includes(categoryParam)) {
@@ -1075,6 +1540,12 @@
                 currentSort = sortParam;
                 // Mettre à jour l'affichage des boutons de tri
                 updateSortButtons();
+            }
+            
+            // Définir la vue si fournie dans l'URL
+            if (viewParam && ['card', 'table'].includes(viewParam)) {
+                currentView = viewParam;
+                updateViewButtons();
             }
             
             // Définir la recherche si fournie dans l'URL
