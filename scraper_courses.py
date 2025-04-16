@@ -555,11 +555,15 @@ class ScraperCoursesFG:
                 # Sauvegarder les données
                 self.save_json(course_data, filename)
                 
-                # Supprimer les fichiers vides
+                # Commenté: Ne plus supprimer les fichiers vides
+                # if not course_data.get("courses"):
+                #     filepath = os.path.join(self.output_dir, filename)
+                #     print(f"🗑️ Suppression du fichier JSON vide pour {course['hippodrome']}")
+                #     os.remove(filepath)
+                
+                # À la place, on ajoute un message indiquant que le fichier est conservé même s'il est vide
                 if not course_data.get("courses"):
-                    filepath = os.path.join(self.output_dir, filename)
-                    print(f"🗑️ Suppression du fichier JSON vide pour {course['hippodrome']}")
-                    os.remove(filepath)
+                    print(f"⚠️ Fichier JSON vide pour {course['hippodrome']} mais conservé pour analyse")
             
             print(f"🎉 Scraping terminé! {len(courses_today)} hippodromes traités.")
             
@@ -589,11 +593,15 @@ class ScraperCoursesFG:
             # Sauvegarder les données
             self.save_json(course_data, filename)
             
-            # MODIFICATION: Supprimer si vide
+            # Commenté: Ne plus supprimer les fichiers vides
+            # if not course_data.get("courses"):
+            #     filepath = os.path.join(self.output_dir, filename)
+            #     print(f"🗑️ Suppression du fichier JSON vide pour le scraping direct")
+            #     os.remove(filepath)
+            
+            # À la place, on ajoute un message indiquant que le fichier est conservé même s'il est vide
             if not course_data.get("courses"):
-                filepath = os.path.join(self.output_dir, filename)
-                print(f"🗑️ Suppression du fichier JSON vide pour le scraping direct")
-                os.remove(filepath)
+                print(f"⚠️ Fichier JSON vide pour le scraping direct mais conservé pour analyse")
             
             print(f"✅ Scraping direct terminé pour {url}")
             
