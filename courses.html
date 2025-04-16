@@ -424,6 +424,19 @@
             padding: 1rem;
         }
         
+        .participants-table .small {
+            font-size: 0.85em;
+            opacity: 0.8;
+        }
+        
+        .participants-table td {
+            vertical-align: middle;
+        }
+        
+        .participants-table tr:hover {
+            background-color: rgba(26, 81, 78, 0.4);
+        }
+        
         .participant-number {
             width: 40px;
             height: 40px;
@@ -435,6 +448,25 @@
             border-radius: 50%;
             font-weight: 600;
             margin-right: 0.5rem;
+        }
+        
+        .badge {
+            padding: 0.25em 0.5em;
+            border-radius: 0.25rem;
+            font-size: 0.75em;
+            font-weight: 500;
+        }
+        
+        .bg-info {
+            background-color: var(--accent) !important;
+        }
+        
+        .text-white {
+            color: #fff !important;
+        }
+        
+        .ms-2 {
+            margin-left: 0.5rem !important;
         }
         
         .table-responsive {
@@ -660,8 +692,10 @@
                             
                             // Pour chaque course dans ce fichier
                             (data.courses || []).forEach(course => {
-                                // Ne traiter que les courses qui ont des participants
-                                if (course.participants && Array.isArray(course.participants) && course.participants.length > 0) {
+                                // Ne traiter que les courses qui ont des participants réels
+                                if (course.participants && Array.isArray(course.participants) && course.participants.length > 0 && 
+                                    // Vérifier aussi que les participants ont des données pertinentes
+                                    course.participants.some(p => p.cheval || p.n || p.n° || p.jockey || p.poids)) {
                                     processedCourses.push({
                                         hippodrome: hippodrome,
                                         date: formattedDate,
@@ -729,11 +763,21 @@
                             course.participants.some(p => 
                                 (p.cheval && p.cheval.toLowerCase().includes(searchTerm)) ||
                                 (p.entraineur && p.entraineur.toLowerCase().includes(searchTerm)) ||
-                                (p.proprietaire && p.proprietaire.toLowerCase().includes(searchTerm))
+                                (p.propriétaire && p.propriétaire.toLowerCase().includes(searchTerm))
                             )
                         );
                     });
                 }
+                
+                // Filtrer les hippodromes qui n'ont pas de courses valides
+                filteredHippodromes = filteredHippodromes.filter(hippodrome => {
+                    // Vérifier si l'hippodrome a au moins une course avec des participants réels
+                    return hippodromeCourses[hippodrome].some(course => 
+                        course.participants && 
+                        course.participants.length > 0 && 
+                        course.participants.some(p => p.cheval || p.n || p.n° || p.jockey || p.poids)
+                    );
+                });
                 
                 // Si aucun hippodrome ne correspond à la recherche
                 if (filteredHippodromes.length === 0) {
@@ -863,16 +907,50 @@
                         `;
                         
                         course.participants.forEach(participant => {
+                            // Éviter d'afficher les participants sans informations
+                            if (!participant.cheval && !participant.n && !participant.n° && !participant.jockey && !participant.poids) {
+                                return; // Ignorer ce participant
+                            }
+                            
+                            // Préparer les informations complémentaires
+                            let performanceHtml = participant.performances ? 
+                                `<div class="small text-muted">${participant.performances}</div>` : '';
+                            
+                            let origineHtml = participant.père_mère ? 
+                                `<div class="small text-muted">${participant.père_mère}</div>` : '';
+                            
+                            let equipementHtml = participant.equipement ? 
+                                `<span class="badge bg-info text-white ms-2">${participant.equipement}</span>` : '';
+                            
                             detailsHTML += `
                                 <tr>
                                     <td>
-                                        <div class="participant-number">${participant.n || '-'}</div>
+                                        <div class="participant-number">${participant.n || participant.n° || '-'}</div>
                                     </td>
-                                    <td>${participant.cheval || 'Non spécifié'}</td>
+                                    <td>
+                                        ${participant.cheval ? 
+                                            `<strong>${participant.cheval}</strong>` + 
+                                            (participant.cheval_url ? 
+                                                ` <a href="${participant.cheval_url}" target="_blank"><i class="fas fa-external-link-alt small"></i></a>` : '') 
+                                            : 'Non spécifié'}
+                                        ${performanceHtml}
+                                        ${origineHtml}
+                                    </td>
                                     <td>${participant.poids || '-'}</td>
-                                    <td>${participant.proprietaire || '-'}</td>
-                                    <td>${participant.entraineur || '-'}</td>
-                                    <td>${participant.gains || '-'}</td>
+                                    <td>
+                                        ${participant.propriétaire || '-'}
+                                        ${participant.corde ? `<div class="small text-muted">${participant.corde}</div>` : ''}
+                                    </td>
+                                    <td>
+                                        ${participant.entraineur || '-'}
+                                        ${participant.jockey ? `<div class="small text-muted">Jockey: ${participant.jockey}</div>` : ''}
+                                        ${participant.éleveurs ? `<div class="small text-muted">Éleveur: ${participant.éleveurs}</div>` : ''}
+                                    </td>
+                                    <td>
+                                        ${participant.gains ? `${participant.gains}` : '-'}
+                                        ${participant.valeur ? `<div class="small">Valeur: ${participant.valeur}</div>` : ''}
+                                        ${equipementHtml}
+                                    </td>
                                 </tr>
                             `;
                         });
