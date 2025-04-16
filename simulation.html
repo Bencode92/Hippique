@@ -198,6 +198,15 @@
             color: tomato;
         }
         
+        .section-header {
+            background-color: rgba(233, 209, 140, 0.1);
+            color: var(--gold) !important;
+            font-weight: bold;
+            padding: 0.75rem !important;
+            margin-top: 1rem;
+            border-left: 3px solid var(--gold) !important;
+        }
+        
         .help-text {
             margin: 1rem 0;
             padding: 1rem;
@@ -271,7 +280,7 @@
                 <div class="help-text">
                     <h4><i class="fas fa-info-circle"></i> Comment ça fonctionne</h4>
                     <p>La stratégie du "dutching" consiste à parier sur plusieurs chevaux en répartissant vos mises de manière proportionnelle pour garantir un profit, quel que soit le vainqueur parmi votre sélection.</p>
-                    <p>Notre algorithme recherche la combinaison de favoris (chevaux avec les cotes les plus basses) qui maximise votre gain minimum garanti.</p>
+                    <p>Notre algorithme recherche les meilleures combinaisons de favoris (chevaux avec les cotes les plus basses) qui maximisent votre gain net.</p>
                 </div>
                 
                 <div class="sim-form">
@@ -300,7 +309,7 @@
                             <i class="fas fa-lightbulb"></i> Charger un exemple
                         </button>
                         <button class="action-btn primary" id="calculateBets">
-                            <i class="fas fa-calculator"></i> Calculer la stratégie optimale
+                            <i class="fas fa-calculator"></i> Calculer les stratégies optimales
                         </button>
                     </div>
                     
@@ -309,7 +318,7 @@
                 
                 <div class="result-container" id="resultContainer">
                     <div class="result-header">
-                        <h3><i class="fas fa-check-circle"></i> Stratégie de paris optimale</h3>
+                        <h3><i class="fas fa-check-circle"></i> Meilleures stratégies de paris</h3>
                     </div>
                     
                     <div class="result-summary">
@@ -331,7 +340,7 @@
                         </div>
                     </div>
                     
-                    <h3>Détail des paris</h3>
+                    <h3>Détail des stratégies</h3>
                     <div class="table-container">
                         <table class="bets-table">
                             <thead>
