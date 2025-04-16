@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Hippiques</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --dark-teal: #0A2E2A;
+            --medium-teal: #134542;
+            --light-teal: #1B5A56;
+            --gold: #D4AF37;
+            --light-gold: #F1E6C8;
+            --accent: #40E0D0;
+            --red: #e05a40;
+            --green: #40e05a;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark-teal);
+            color: var(--light-gold);
+            min-height: 100vh;
+            padding: 0;
+            margin: 0;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            background: linear-gradient(to right, var(--dark-teal), var(--medium-teal));
+            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo h1 {
+            font-size: 1.8rem;
+            color: var(--gold);
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+        
+        .page-title {
+            color: var(--gold);
+            margin-bottom: 1rem;
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-align: center;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .page-subtitle {
+            color: var(--light-gold);
+            margin-bottom: 2.5rem;
+            text-align: center;
+            opacity: 0.8;
+            font-weight: 300;
+            font-size: 1.1rem;
+        }
+        
+        .nav-main {
+            background-color: var(--medium-teal);
+            padding: 0;
+        }
+        
+        .nav-main ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .nav-main li {
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .nav-main li:hover {
+            background-color: var(--light-teal);
+        }
+        
+        .nav-main li.active {
+            background-color: var(--light-teal);
+            border-bottom: 3px solid var(--gold);
+        }
+        
+        .nav-main a {
+            text-decoration: none;
+            color: var(--light-gold);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .search-container {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .search-container input {
+            width: 100%;
+            padding: 1.2rem;
+            background-color: rgba(10, 30, 30, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.3);
+            border-radius: 12px;
+            color: var(--light-gold);
+            font-size: 1.1rem;
+            padding-left: 3.5rem;
+            transition: all 0.3s ease;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .search-container i {
+            position: absolute;
+            left: 1.2rem;
+            top: 1.2rem;
+            color: var(--gold);
+            font-size: 1.2rem;
+        }
+        
+        .search-container input:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 2px rgba(64, 224, 208, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        .section-container {
+            background-color: rgba(22, 62, 60, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-container h2 {
+            color: var(--gold);
+            margin-bottom: 1rem;
+            font-weight: 400;
+            font-size: 1.5rem;
+            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
+            padding-bottom: 0.5rem;
+        }
+        
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .course-card {
+            background-color: rgba(10, 30, 30, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .course-card:hover {
+            background-color: rgba(27, 90, 86, 0.5);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .course-card h3 {
+            color: var(--gold);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+        
+        .course-card .course-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+            flex: 1;
+        }
+        
+        .course-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+        }
+        
+        .course-info-item i {
+            color: var(--accent);
+            margin-top: 3px;
+        }
+        
+        .course-info-label {
+            font-weight: 500;
+            color: var(--accent);
+            margin-right: 0.5rem;
+        }
+        
+        .course-action {
+            margin-top: auto;
+            text-align: right;
+        }
+        
+        .btn-details {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: rgba(64, 224, 208, 0.1);
+            color: var(--accent);
+            border: 1px solid rgba(64, 224, 208, 0.3);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .btn-details:hover {
+            background-color: rgba(64, 224, 208, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .course-details {
+            display: none;
+            background-color: rgba(22, 62, 60, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .participants-list {
+            margin-top: 1rem;
+        }
+        
+        .participant-card {
+            background-color: rgba(10, 30, 30, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.1);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .participant-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: var(--medium-teal);
+            border-radius: 50%;
+            color: var(--gold);
+            font-weight: 600;
+        }
+        
+        .participant-info {
+            flex: 1;
+        }
+        
+        .participant-name {
+            font-weight: 500;
+            color: var(--gold);
+            margin-bottom: 0.3rem;
+            font-size: 1.1rem;
+        }
+        
+        .participant-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 0.5rem;
+        }
+        
+        .participant-detail {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .detail-label {
+            color: var(--accent);
+            font-size: 0.9rem;
+        }
+        
+        .detail-value {
+            font-size: 0.9rem;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: var(--light-gold);
+            background-color: rgba(22, 62, 60, 0.2);
+            border-radius: 12px;
+            border: 1px solid rgba(233, 209, 140, 0.1);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+        
+        .loading .spinner {
+            border: 4px solid rgba(233, 209, 140, 0.1);
+            border-radius: 50%;
+            border-top: 4px solid var(--gold);
+            border-left: 4px solid var(--gold);
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1.5rem;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .tabs {
+            display: flex;
+            margin-bottom: 2rem;
+            overflow-x: auto;
+            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
+            border-radius: 8px 8px 0 0;
+            background: rgba(22, 62, 60, 0.2);
+        }
+        
+        .tab {
+            padding: 1.2rem 2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: var(--light-gold);
+            text-align: center;
+            white-space: nowrap;
+            font-weight: 500;
+            position: relative;
+        }
+        
+        .tab:hover {
+            background-color: rgba(26, 81, 78, 0.5);
+        }
+        
+        .tab.active {
+            background: linear-gradient(to bottom, var(--light-teal), var(--medium-teal));
+            color: var(--gold);
+            border-bottom: 3px solid var(--gold);
+            font-weight: 600;
+        }
+        
+        .tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid var(--gold);
+        }
+        
+        .home-link {
+            display: inline-block;
+            text-align: center;
+            margin-top: 2rem;
+            color: var(--accent);
+            text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            background-color: rgba(64, 224, 208, 0.1);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(64, 224, 208, 0.2);
+        }
+        
+        .home-link:hover {
+            background-color: rgba(64, 224, 208, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .date-info {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--light-gold);
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .no-data {
+            text-align: center;
+            padding: 3rem;
+            color: var(--light-gold);
+            background-color: rgba(22, 62, 60, 0.3);
+            border-radius: 12px;
+            border: 1px solid rgba(233, 209, 140, 0.2);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        }
+        
+        .no-data i {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--gold);
+            opacity: 0.8;
+        }
+        
+        .no-data h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        footer {
+            margin-top: 4rem;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(to right, var(--dark-teal), var(--medium-teal));
+            border-top: 1px solid rgba(233, 209, 140, 0.1);
+            color: var(--light-gold);
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        footer p {
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+        }
+        
+        footer span {
+            color: var(--gold);
+            font-weight: 400;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .course-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .participant-details {
+                grid-template-columns: 1fr;
+            }
+            
+            .tab {
+                padding: 1rem 1.5rem;
+                font-size: 0.9rem;
+            }
+            
+            .nav-main li {
+                padding: 0.5rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-horse-head" style="font-size: 2.2rem; color: var(--gold);"></i>
+            <h1>ANALYSE HIPPIQUE</h1>
+        </div>
+        <a href="index.html" style="color: var(--accent); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; font-weight: 500; padding: 0.5rem 1rem; border-radius: 8px; background: rgba(64, 224, 208, 0.1); transition: all 0.3s ease;">
+            <i class="fas fa-home"></i> Accueil
+        </a>
+    </header>
+
+    <nav class="nav-main">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+            <li class="active"><a href="courses.html"><i class="fas fa-flag-checkered"></i> Courses</a></li>
+            <li><a href="classement.html"><i class="fas fa-list-ol"></i> Classement</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 class="page-title">Courses Hippiques</h1>
+        <p class="page-subtitle">Consultez les courses, hippodromes et participants</p>
+        
+        <div class="search-container">
+            <i class="fas fa-search"></i>
+            <input type="text" id="search-input" placeholder="Rechercher une course ou un hippodrome...">
+        </div>
+        
+        <div class="tabs" id="hippodrome-tabs">
+            <!-- Les onglets d'hippodromes seront générés par JavaScript -->
+            <div class="tab active" data-hippodrome="all">Tous les hippodromes</div>
+        </div>
+        
+        <div class="section-container">
+            <h2 id="courses-title">Toutes les courses</h2>
+            <div class="date-info" id="date-info">
+                <i class="fas fa-calendar"></i> 
+                <span id="courses-date">16/04/2025</span>
+            </div>
+            
+            <div id="courses-container">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Chargement des courses...</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="course-details" class="course-details">
+            <!-- Les détails d'une course spécifique (participants) -->
+        </div>
+        
+        <a href="index.html" class="home-link">
+            <i class="fas fa-arrow-left"></i> Retour à l'accueil
+        </a>
+    </div>
+    
+    <footer>
+        <p>ANALYSE HIPPIQUE - Système d'analyse pour événements hippiques</p>
+        <p>Dernière mise à jour des données: <span id="last-update">16/04/2025</span></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Variables globales
+            let allCourses = [];
+            let hippodromes = [];
+            let currentHippodrome = 'all';
+            const coursesContainer = document.getElementById('courses-container');
+            const courseDetails = document.getElementById('course-details');
+            const hippodromeTabs = document.getElementById('hippodrome-tabs');
+            const coursesTitle = document.getElementById('courses-title');
+            const coursesDate = document.getElementById('courses-date');
+            const searchInput = document.getElementById('search-input');
+            const lastUpdateEl = document.getElementById('last-update');
+            
+            // Déterminer si nous sommes sur GitHub Pages ou en local
+            const isGitHubPages = window.location.hostname.includes('github.io');
+            const basePath = isGitHubPages ? '/Hippique' : '';
+            
+            // Fonction pour charger tous les fichiers JSON des courses
+            async function loadAllCourses() {
+                try {
+                    // Liste de tous les fichiers JSON dans le dossier /data/courses
+                    const courseFiles = [
+                        '2025-04-15_albany.json',
+                        '2025-04-15_arg.palermo.json',
+                        '2025-04-15_concepcion.json',
+                        '2025-04-15_evreux.json',
+                        '2025-04-15_fairyhouse.json',
+                        '2025-04-15_fougeres.json',
+                        '2025-04-15_gulfstream_park.json',
+                        '2025-04-15_happy_valley.json',
+                        '2025-04-15_hoppegarten.json',
+                        '2025-04-15_hyeres.json',
+                        '2025-04-15_la_martinique.json',
+                        '2025-04-15_langon-libourne.json',
+                        '2025-04-15_lion_d\'angers.json',
+                        '2025-04-15_loudeac.json',
+                        '2025-04-15_lyon_parilly.json',
+                        '2025-04-15_machecoul.json',
+                        '2025-04-15_maronas.json',
+                        '2025-04-15_montilucon.json',
+                        '2025-04-15_munich-riem.json',
+                        '2025-04-15_newcastle.json'
+                    ];
+                    
+                    // Charger tous les fichiers en parallèle
+                    const promises = courseFiles.map(file => 
+                        fetch(`${basePath}/data/courses/${file}`)
+                            .then(response => {
+                                if (!response.ok) {
+                                    throw new Error(`Erreur HTTP ${response.status}: ${response.statusText}`);
+                                }
+                                return response.json();
+                            })
+                            .catch(error => {
+                                console.error(`Erreur lors du chargement de ${file}:`, error);
+                                return null; // Retourner null en cas d'erreur
+                            })
+                    );
+                    
+                    // Attendre que tous les fichiers soient chargés
+                    const results = await Promise.all(promises);
+                    
+                    // Filtrer les résultats nuls (erreurs) et traiter les données
+                    allCourses = results
+                        .filter(data => data !== null)
+                        .map(data => {
+                            // Extraire l'hippodrome et la date
+                            const hippodrome = data.hippodrome || "Inconnu";
+                            const dateStr = data.date_extraction || "";
+                            
+                            // Formater la date
+                            let formattedDate = dateStr;
+                            try {
+                                if (dateStr) {
+                                    const date = new Date(dateStr);
+                                    formattedDate = date.toLocaleDateString('fr-FR');
+                                }
+                            } catch (e) {
+                                console.error("Erreur de formatage de date:", e);
+                            }
+                            
+                            // Filtrer les courses qui n'ont pas de participants ou dont le tableau est vide
+                            const filteredCourses = (data.courses || []).filter(course => {
+                                return course.participants && Array.isArray(course.participants) && course.participants.length > 0;
+                            });
+                            
+                            return {
+                                hippodrome,
+                                date: formattedDate,
+                                rawDate: dateStr,
+                                courses: filteredCourses,
+                                url_source: data.url_source || ""
+                            };
+                        });
+                    
+                    // Extraire la liste des hippodromes uniques
+                    hippodromes = [...new Set(allCourses.map(item => item.hippodrome))];
+                    
+                    // Mettre à jour l'interface
+                    updateHippodromeTabs();
+                    displayCourses();
+                    
+                    // Mettre à jour la date
+                    if (allCourses.length > 0 && allCourses[0].date) {
+                        lastUpdateEl.textContent = allCourses[0].date;
+                        coursesDate.textContent = allCourses[0].date;
+                    }
+                    
+                } catch (error) {
+                    console.error("Erreur lors du chargement des courses:", error);
+                    showError("Impossible de charger les données des courses.");
+                }
+            }
+            
+            // Fonction pour mettre à jour les onglets d'hippodromes
+            function updateHippodromeTabs() {
+                if (hippodromes.length === 0) return;
+                
+                let tabsHTML = `<div class="tab ${currentHippodrome === 'all' ? 'active' : ''}" data-hippodrome="all">Tous les hippodromes</div>`;
+                
+                hippodromes.forEach(hippodrome => {
+                    tabsHTML += `
+                        <div class="tab ${currentHippodrome === hippodrome ? 'active' : ''}" data-hippodrome="${hippodrome}">
+                            ${hippodrome}
+                        </div>
+                    `;
+                });
+                
+                hippodromeTabs.innerHTML = tabsHTML;
+                
+                // Ajouter des événements de clic aux onglets
+                document.querySelectorAll('.tab').forEach(tab => {
+                    tab.addEventListener('click', function() {
+                        currentHippodrome = this.dataset.hippodrome;
+                        
+                        // Mettre à jour les onglets actifs
+                        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                        this.classList.add('active');
+                        
+                        // Mettre à jour le titre
+                        updateCoursesTitle();
+                        
+                        // Afficher les courses pour cet hippodrome
+                        displayCourses();
+                    });
+                });
+            }
+            
+            // Fonction pour mettre à jour le titre des courses
+            function updateCoursesTitle() {
+                if (currentHippodrome === 'all') {
+                    coursesTitle.textContent = 'Toutes les courses';
+                } else {
+                    coursesTitle.textContent = `Courses à ${currentHippodrome}`;
+                }
+            }
+            
+            // Fonction pour afficher les courses
+            function displayCourses() {
+                // Filtrer les courses par hippodrome si nécessaire
+                let filteredCourses = allCourses;
+                if (currentHippodrome !== 'all') {
+                    filteredCourses = allCourses.filter(item => item.hippodrome === currentHippodrome);
+                }
+                
+                // Filtrer par recherche si une valeur est saisie
+                const searchTerm = searchInput.value.trim().toLowerCase();
+                if (searchTerm) {
+                    filteredCourses = filteredCourses.filter(item => {
+                        // Vérifier si l'hippodrome correspond
+                        if (item.hippodrome.toLowerCase().includes(searchTerm)) return true;
+                        
+                        // Vérifier si l'une des courses correspond
+                        return item.courses.some(course => 
+                            course.nom && course.nom.toLowerCase().includes(searchTerm)
+                        );
+                    });
+                }
+                
+                // Si aucune course n'est trouvée
+                if (filteredCourses.length === 0) {
+                    coursesContainer.innerHTML = `
+                        <div class="no-data">
+                            <i class="fas fa-search"></i>
+                            <h3>Aucune course trouvée</h3>
+                            <p>Essayez de modifier votre recherche ou sélectionnez un autre hippodrome</p>
+                        </div>
+                    `;
+                    return;
+                }
+                
+                let coursesHTML = '';
+                
+                // Pour chaque hippodrome, afficher ses courses
+                filteredCourses.forEach(item => {
+                    // Ne montrer que les courses qui ont des participants
+                    const validCourses = item.courses.filter(course => 
+                        course.participants && 
+                        Array.isArray(course.participants) && 
+                        course.participants.length > 0
+                    );
+                    
+                    if (validCourses.length === 0) return;
+                    
+                    coursesHTML += `
+                        <div class="section-container">
+                            <h2>${item.hippodrome}</h2>
+                            <div class="date-info">
+                                <i class="fas fa-calendar"></i> ${item.date}
+                            </div>
+                            <div class="course-grid">
+                    `;
+                    
+                    validCourses.forEach(course => {
+                        coursesHTML += `
+                            <div class="course-card" data-course-id="${encodeURIComponent(course.nom)}">
+                                <h3>${course.nom}</h3>
+                                <div class="course-info">
+                                    <div class="course-info-item">
+                                        <i class="fas fa-users"></i>
+                                        <span><span class="course-info-label">Participants:</span> ${course.participants.length}</span>
+                                    </div>
+                                </div>
+                                <div class="course-action">
+                                    <button class="btn-details" onclick="showCourseDetails('${encodeURIComponent(JSON.stringify(course))}', '${item.hippodrome}')">
+                                        <i class="fas fa-info-circle"></i> Voir les détails
+                                    </button>
+                                </div>
+                            </div>
+                        `;
+                    });
+                    
+                    coursesHTML += `
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                coursesContainer.innerHTML = coursesHTML;
+            }
+            
+            // Fonction pour afficher les détails d'une course (participants)
+            window.showCourseDetails = function(courseJSON, hippodrome) {
+                try {
+                    const course = JSON.parse(decodeURIComponent(courseJSON));
+                    
+                    let detailsHTML = `
+                        <h2><i class="fas fa-flag-checkered"></i> ${course.nom}</h2>
+                        <p><i class="fas fa-map-marker-alt"></i> ${hippodrome}</p>
+                        <h3>Participants</h3>
+                        <div class="participants-list">
+                    `;
+                    
+                    if (!course.participants || course.participants.length === 0) {
+                        detailsHTML += `
+                            <div class="no-data">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <h3>Aucun participant</h3>
+                                <p>Il n'y a pas de participants pour cette course</p>
+                            </div>
+                        `;
+                    } else {
+                        course.participants.forEach(participant => {
+                            detailsHTML += `
+                                <div class="participant-card">
+                                    <div class="participant-number">${participant.n || '-'}</div>
+                                    <div class="participant-info">
+                                        <div class="participant-name">${participant.cheval || 'Cheval inconnu'}</div>
+                                        <div class="participant-details">
+                            `;
+                            
+                            // Ajouter les détails du participant s'ils existent
+                            if (participant.poids) {
+                                detailsHTML += `
+                                    <div class="participant-detail">
+                                        <span class="detail-label">Poids:</span>
+                                        <span class="detail-value">${participant.poids}</span>
+                                    </div>
+                                `;
+                            }
+                            
+                            if (participant.proprietaire) {
+                                detailsHTML += `
+                                    <div class="participant-detail">
+                                        <span class="detail-label">Propriétaire:</span>
+                                        <span class="detail-value">${participant.proprietaire}</span>
+                                    </div>
+                                `;
+                            }
+                            
+                            if (participant.entraineur) {
+                                detailsHTML += `
+                                    <div class="participant-detail">
+                                        <span class="detail-label">Entraîneur:</span>
+                                        <span class="detail-value">${participant.entraineur}</span>
+                                    </div>
+                                `;
+                            }
+                            
+                            if (participant.gains) {
+                                detailsHTML += `
+                                    <div class="participant-detail">
+                                        <span class="detail-label">Gains:</span>
+                                        <span class="detail-value">${participant.gains}</span>
+                                    </div>
+                                `;
+                            }
+                            
+                            detailsHTML += `
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                        });
+                    }
+                    
+                    detailsHTML += `
+                        </div>
+                    `;
+                    
+                    courseDetails.innerHTML = detailsHTML;
+                    courseDetails.style.display = 'block';
+                    
+                    // Faire défiler vers les détails
+                    courseDetails.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    
+                } catch (error) {
+                    console.error('Erreur lors de l\'affichage des détails:', error);
+                    courseDetails.innerHTML = `
+                        <div class="no-data">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <h3>Erreur</h3>
+                            <p>Impossible d'afficher les détails de cette course</p>
+                        </div>
+                    `;
+                    courseDetails.style.display = 'block';
+                }
+            };
+            
+            // Fonction pour afficher une erreur
+            function showError(message) {
+                coursesContainer.innerHTML = `
+                    <div class="no-data">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <h3>Erreur</h3>
+                        <p>${message}</p>
+                    </div>
+                `;
+            }
+            
+            // Événement de recherche
+            searchInput.addEventListener('input', function() {
+                displayCourses();
+            });
+            
+            // Charger toutes les courses au démarrage
+            loadAllCourses();
+        });
+    </script>
+</body>
+</html>
