@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classement Hippique</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --dark-teal: #0f2a28;
-            --medium-teal: #163e3c;
-            --light-teal: #1a514e;
-            --gold: #e9d18c;
-            --light-gold: #f5e9c9;
-            --accent: #22c7b8;
+            --dark-teal: #0A2E2A;
+            --medium-teal: #134542;
+            --light-teal: #1B5A56;
+            --gold: #D4AF37;
+            --light-gold: #F1E6C8;
+            --accent: #40E0D0;
+            --red: #e05a40;
+            --green: #40e05a;
         }
         
         * {
@@ -22,12 +27,13 @@
         }
         
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             background-color: var(--dark-teal);
             color: var(--light-gold);
             min-height: 100vh;
             padding: 0;
             margin: 0;
+            line-height: 1.6;
         }
         
         .container {
@@ -40,9 +46,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 2rem;
-            background-color: var(--medium-teal);
+            padding: 1.5rem 2rem;
+            background: linear-gradient(to right, var(--dark-teal), var(--medium-teal));
             border-bottom: 1px solid rgba(233, 209, 140, 0.2);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         
         .logo {
@@ -54,24 +61,27 @@
         .logo h1 {
             font-size: 1.8rem;
             color: var(--gold);
-            font-weight: 400;
+            font-weight: 500;
             letter-spacing: 2px;
         }
         
         .page-title {
             color: var(--gold);
             margin-bottom: 1rem;
-            font-size: 2rem;
-            font-weight: 400;
+            font-size: 2.2rem;
+            font-weight: 600;
             letter-spacing: 2px;
             text-align: center;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         }
         
         .page-subtitle {
             color: var(--light-gold);
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
             text-align: center;
             opacity: 0.8;
+            font-weight: 300;
+            font-size: 1.1rem;
         }
         
         .search-container {
@@ -81,43 +91,48 @@
         
         .search-container input {
             width: 100%;
-            padding: 1rem;
+            padding: 1.2rem;
             background-color: rgba(10, 30, 30, 0.5);
             border: 1px solid rgba(233, 209, 140, 0.3);
-            border-radius: 8px;
+            border-radius: 12px;
             color: var(--light-gold);
             font-size: 1.1rem;
-            padding-left: 3rem;
+            padding-left: 3.5rem;
+            transition: all 0.3s ease;
+            font-family: 'Montserrat', sans-serif;
         }
         
         .search-container i {
             position: absolute;
-            left: 1rem;
-            top: 1rem;
+            left: 1.2rem;
+            top: 1.2rem;
             color: var(--gold);
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
         
         .search-container input:focus {
             outline: none;
             border-color: var(--accent);
-            box-shadow: 0 0 0 2px rgba(34, 199, 184, 0.2);
+            box-shadow: 0 0 0 2px rgba(64, 224, 208, 0.2);
+            transform: translateY(-2px);
         }
         
         .search-clear {
             position: absolute;
-            right: 1rem;
-            top: 1rem;
+            right: 1.2rem;
+            top: 1.2rem;
             color: var(--light-gold);
             background: none;
             border: none;
             cursor: pointer;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             opacity: 0.7;
+            transition: all 0.2s ease;
         }
         
         .search-clear:hover {
             opacity: 1;
+            transform: scale(1.1);
         }
         
         .tabs {
@@ -125,15 +140,19 @@
             margin-bottom: 2rem;
             overflow-x: auto;
             border-bottom: 1px solid rgba(233, 209, 140, 0.2);
+            border-radius: 8px 8px 0 0;
+            background: rgba(22, 62, 60, 0.2);
         }
         
         .tab {
-            padding: 1rem 2rem;
+            padding: 1.2rem 2.5rem;
             cursor: pointer;
             transition: all 0.3s ease;
             color: var(--light-gold);
             text-align: center;
             white-space: nowrap;
+            font-weight: 500;
+            position: relative;
         }
         
         .tab:hover {
@@ -141,63 +160,111 @@
         }
         
         .tab.active {
-            background-color: var(--light-teal);
+            background: linear-gradient(to bottom, var(--light-teal), var(--medium-teal));
             color: var(--gold);
             border-bottom: 3px solid var(--gold);
+            font-weight: 600;
+        }
+        
+        .tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid var(--gold);
         }
         
         .data-table {
             width: 100%;
-            border-collapse: collapse;
-            border-radius: 8px;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
             margin-bottom: 2rem;
-            background-color: rgba(22, 62, 60, 0.5);
+            background-color: rgba(22, 62, 60, 0.2);
             border: 1px solid rgba(233, 209, 140, 0.2);
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         
         .data-table th {
-            background-color: rgba(10, 30, 30, 0.7);
+            background-color: rgba(5, 25, 25, 0.9);
             color: var(--gold);
-            padding: 1rem;
+            padding: 1.2rem 1.5rem;
             text-align: left;
             font-weight: 500;
+            letter-spacing: 0.5px;
             position: sticky;
             top: 0;
             cursor: pointer;
+            transition: all 0.2s ease;
+            z-index: 10;
         }
         
         .data-table th:hover {
-            background-color: rgba(10, 30, 30, 0.9);
+            background-color: rgba(10, 35, 35, 0.9);
         }
         
         .data-table th .sort-icon {
             margin-left: 5px;
             opacity: 0.5;
+            transition: transform 0.3s ease;
         }
         
         .data-table th.sorted .sort-icon {
             opacity: 1;
         }
         
+        .data-table tr:nth-child(even) {
+            background-color: rgba(22, 62, 60, 0.4);
+        }
+        
+        .data-table tr:nth-child(odd) {
+            background-color: rgba(22, 62, 60, 0.2);
+        }
+        
         .data-table td {
-            padding: 1rem;
-            border-top: 1px solid rgba(233, 209, 140, 0.1);
-            transition: background-color 0.3s ease;
+            padding: 1.2rem 1.5rem;
+            border-bottom: 1px solid rgba(233, 209, 140, 0.08);
+            transition: all 0.3s ease;
         }
         
         .data-table tr:hover td {
-            background-color: rgba(26, 81, 78, 0.5);
+            background-color: rgba(26, 81, 78, 0.7);
+            transform: translateX(5px);
         }
         
         .data-table a {
             color: var(--accent);
             text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            transition: all 0.2s ease;
         }
         
-        .data-table a:hover {
-            text-decoration: underline;
+        .data-table a:after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent);
+            transition: width 0.3s ease;
+        }
+        
+        .data-table a:hover:after {
+            width: 100%;
         }
         
         .rank {
@@ -207,18 +274,37 @@
         
         .rank-1, .rank-2, .rank-3 {
             font-weight: bold;
+            position: relative;
         }
         
         .rank-1 {
             color: gold;
+            text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+        }
+        
+        .rank-1:before {
+            content: '🥇';
+            margin-right: 5px;
         }
         
         .rank-2 {
             color: silver;
+            text-shadow: 0 0 5px rgba(192, 192, 192, 0.5);
+        }
+        
+        .rank-2:before {
+            content: '🥈';
+            margin-right: 5px;
         }
         
         .rank-3 {
             color: #cd7f32; /* Bronze */
+            text-shadow: 0 0 5px rgba(205, 127, 50, 0.5);
+        }
+        
+        .rank-3:before {
+            content: '🥉';
+            margin-right: 5px;
         }
         
         .stats {
@@ -228,52 +314,95 @@
         }
         
         .percentage {
+            position: relative;
             color: var(--gold);
-            font-weight: 500;
+            font-weight: 600;
             text-align: right;
+        }
+        
+        .percentage-bar {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 3px;
+            margin-left: 10px;
+            overflow: hidden;
+            vertical-align: middle;
+        }
+        
+        .percentage-fill {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent), var(--gold));
+            border-radius: 3px;
         }
         
         .pagination {
             display: flex;
+            gap: 6px;
             justify-content: center;
             margin-top: 2rem;
-            gap: 0.5rem;
         }
         
         .page-btn {
-            padding: 0.5rem 1rem;
-            background-color: rgba(22, 62, 60, 0.5);
-            border: 1px solid rgba(233, 209, 140, 0.2);
-            border-radius: 4px;
+            min-width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            border: none;
+            background: rgba(22, 62, 60, 0.4);
             color: var(--light-gold);
+            font-weight: 500;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
+            font-family: 'Montserrat', sans-serif;
         }
         
         .page-btn:hover {
-            background-color: var(--light-teal);
+            background: rgba(26, 81, 78, 0.7);
+            transform: translateY(-2px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
         }
         
         .page-btn.active {
-            background-color: var(--light-teal);
-            border-color: var(--gold);
-            color: var(--gold);
+            background: linear-gradient(145deg, var(--gold), #b19030);
+            color: var(--dark-teal);
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+        }
+        
+        .page-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
         }
         
         .loading {
             text-align: center;
-            padding: 2rem;
+            padding: 3rem;
             color: var(--light-gold);
+            background-color: rgba(22, 62, 60, 0.2);
+            border-radius: 12px;
+            border: 1px solid rgba(233, 209, 140, 0.1);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
         }
         
         .loading .spinner {
-            border: 4px solid rgba(233, 209, 140, 0.3);
+            border: 4px solid rgba(233, 209, 140, 0.1);
             border-radius: 50%;
             border-top: 4px solid var(--gold);
-            width: 40px;
-            height: 40px;
+            border-left: 4px solid var(--gold);
+            width: 50px;
+            height: 50px;
             animation: spin 1s linear infinite;
-            margin: 0 auto 1rem;
+            margin: 0 auto 1.5rem;
         }
         
         @keyframes spin {
@@ -286,64 +415,112 @@
             padding: 3rem;
             color: var(--light-gold);
             background-color: rgba(22, 62, 60, 0.3);
-            border-radius: 8px;
+            border-radius: 12px;
             border: 1px solid rgba(233, 209, 140, 0.2);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
         }
         
         .no-results i {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
             color: var(--gold);
+            opacity: 0.8;
+        }
+        
+        .no-results h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
         }
         
         .home-link {
-            display: block;
+            display: inline-block;
             text-align: center;
             margin-top: 2rem;
             color: var(--accent);
             text-decoration: none;
+            padding: 0.75rem 1.5rem;
+            background-color: rgba(64, 224, 208, 0.1);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(64, 224, 208, 0.2);
         }
         
         .home-link:hover {
-            text-decoration: underline;
+            background-color: rgba(64, 224, 208, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         
         .sort-options {
             display: flex;
             gap: 1rem;
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .sort-options span {
+            font-weight: 500;
+            color: var(--light-gold);
+            opacity: 0.9;
         }
         
         .sort-btn {
-            padding: 0.5rem 1rem;
-            background-color: rgba(22, 62, 60, 0.5);
-            border: 1px solid rgba(233, 209, 140, 0.2);
-            border-radius: 4px;
+            background: rgba(22, 62, 60, 0.4);
+            border: none;
+            border-radius: 8px;
+            padding: 0.7rem 1.2rem;
             color: var(--light-gold);
+            font-weight: 500;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 8px;
+            font-family: 'Montserrat', sans-serif;
         }
         
         .sort-btn:hover {
-            background-color: var(--light-teal);
+            background: rgba(26, 81, 78, 0.6);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
         }
         
         .sort-btn.active {
-            background-color: var(--light-teal);
-            border-color: var(--gold);
+            background: linear-gradient(145deg, var(--light-teal), var(--medium-teal));
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
             color: var(--gold);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        
+        .sort-btn i {
+            font-size: 0.85rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .sort-btn.desc i {
+            transform: rotate(180deg);
         }
         
         footer {
-            margin-top: 3rem;
+            margin-top: 4rem;
             text-align: center;
             padding: 2rem;
-            border-top: 1px solid rgba(233, 209, 140, 0.2);
+            background: linear-gradient(to right, var(--dark-teal), var(--medium-teal));
+            border-top: 1px solid rgba(233, 209, 140, 0.1);
             color: var(--light-gold);
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        footer p {
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+        }
+        
+        footer span {
+            color: var(--gold);
+            font-weight: 400;
         }
         
         @media (max-width: 768px) {
@@ -358,31 +535,58 @@
             }
             
             .tab {
-                padding: 0.8rem 1.2rem;
+                padding: 1rem 1.5rem;
                 font-size: 0.9rem;
             }
             
             .logo h1 {
                 font-size: 1.4rem;
             }
+            
+            .sort-options {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+            
+            .sort-btn {
+                width: 100%;
+                justify-content: center;
+            }
         }
 
         /* Table de données responsive */
         .table-responsive {
             overflow-x: auto;
-            border-radius: 8px;
+            border-radius: 12px;
             margin-bottom: 2rem;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Skeleton loading effect */
+        .skeleton-loading {
+            animation: skeleton-loading 1.5s infinite;
+            background: linear-gradient(90deg, 
+                rgba(255, 255, 255, 0.05) 25%, 
+                rgba(255, 255, 255, 0.1) 50%, 
+                rgba(255, 255, 255, 0.05) 75%);
+            background-size: 200% 100%;
+            border-radius: 4px;
+        }
+        
+        @keyframes skeleton-loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
         }
     </style>
 </head>
 <body>
     <header>
         <div class="logo">
-            <i class="fas fa-horse-head" style="font-size: 2rem; color: var(--gold);"></i>
+            <i class="fas fa-horse-head" style="font-size: 2.2rem; color: var(--gold);"></i>
             <h1>ANALYSE HIPPIQUE</h1>
         </div>
-        <a href="index.html" style="color: var(--accent); text-decoration: none;">
+        <a href="index.html" style="color: var(--accent); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; font-weight: 500; padding: 0.5rem 1rem; border-radius: 8px; background: rgba(64, 224, 208, 0.1); transition: all 0.3s ease;">
             <i class="fas fa-home"></i> Accueil
         </a>
     </header>
@@ -392,11 +596,21 @@
         <p class="page-subtitle">Consultez et recherchez parmi les meilleurs jockeys, chevaux, entraineurs, éleveurs et propriétaires</p>
         
         <div class="tabs">
-            <div class="tab active" data-category="jockeys">Jockeys</div>
-            <div class="tab" data-category="chevaux">Chevaux</div>
-            <div class="tab" data-category="entraineurs">Entraineurs</div>
-            <div class="tab" data-category="eleveurs">Eleveurs</div>
-            <div class="tab" data-category="proprietaires">Propriétaires</div>
+            <div class="tab active" data-category="jockeys">
+                <i class="fas fa-user-tie"></i> Jockeys
+            </div>
+            <div class="tab" data-category="chevaux">
+                <i class="fas fa-horse"></i> Chevaux
+            </div>
+            <div class="tab" data-category="entraineurs">
+                <i class="fas fa-users"></i> Entraineurs
+            </div>
+            <div class="tab" data-category="eleveurs">
+                <i class="fas fa-seedling"></i> Eleveurs
+            </div>
+            <div class="tab" data-category="proprietaires">
+                <i class="fas fa-user-tie"></i> Propriétaires
+            </div>
         </div>
         
         <div class="search-container">
@@ -407,9 +621,15 @@
         
         <div class="sort-options">
             <span>Trier par : </span>
-            <button class="sort-btn active" data-sort="default"><i class="fas fa-list-ol"></i> Classement par défaut</button>
-            <button class="sort-btn" data-sort="taux-victoire"><i class="fas fa-trophy"></i> Taux de victoire</button>
-            <button class="sort-btn" data-sort="taux-place"><i class="fas fa-medal"></i> Taux de place</button>
+            <button class="sort-btn active" data-sort="default">
+                <i class="fas fa-list-ol"></i> Classement par défaut
+            </button>
+            <button class="sort-btn" data-sort="taux-victoire">
+                <i class="fas fa-trophy"></i> Taux de victoire
+            </button>
+            <button class="sort-btn" data-sort="taux-place">
+                <i class="fas fa-medal"></i> Taux de place
+            </button>
         </div>
         
         <div id="results-container">
@@ -423,7 +643,9 @@
             <!-- Les boutons de pagination seront générés par JavaScript -->
         </div>
         
-        <a href="index.html" class="home-link"><i class="fas fa-arrow-left"></i> Retour à l'accueil</a>
+        <a href="index.html" class="home-link">
+            <i class="fas fa-arrow-left"></i> Retour à l'accueil
+        </a>
     </div>
     
     <footer>
@@ -478,8 +700,12 @@
                     { key: 'Partants', label: 'Partants', class: 'stats' },
                     { key: 'Victoires', label: 'Victoires', class: 'stats' },
                     { key: 'Place', label: 'Places', class: 'stats' },
-                    { key: 'TauxVictoire', label: 'Taux de victoire', class: 'percentage', renderer: (value) => `${value}%` },
-                    { key: 'TauxPlace', label: 'Taux de place', class: 'percentage', renderer: (value) => `${value}%` }
+                    { key: 'TauxVictoire', label: 'Taux de victoire', class: 'percentage', renderer: (value, item) => {
+                        return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
+                    }},
+                    { key: 'TauxPlace', label: 'Taux de place', class: 'percentage', renderer: (value, item) => {
+                        return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
+                    }}
                 ],
                 chevaux: [
                     { key: 'Rang', label: '#', class: 'rank' },
@@ -492,8 +718,12 @@
                     { key: 'NbCourses', label: 'Courses', class: 'stats' },
                     { key: 'NbVictoires', label: 'Victoires', class: 'stats' },
                     { key: 'NbPlace', label: 'Places', class: 'stats' },
-                    { key: 'TauxVictoire', label: 'Taux de victoire', class: 'percentage', renderer: (value) => `${value}%` },
-                    { key: 'TauxPlace', label: 'Taux de place', class: 'percentage', renderer: (value) => `${value}%` }
+                    { key: 'TauxVictoire', label: 'Taux de victoire', class: 'percentage', renderer: (value, item) => {
+                        return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
+                    }},
+                    { key: 'TauxPlace', label: 'Taux de place', class: 'percentage', renderer: (value, item) => {
+                        return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
+                    }}
                 ],
                 entraineurs: [
                     { key: 'Rang', label: '#', class: 'rank' },
@@ -507,8 +737,12 @@
                     { key: 'Partants', label: 'Partants', class: 'stats' },
                     { key: 'Victoires', label: 'Victoires', class: 'stats' },
                     { key: 'Place', label: 'Places', class: 'stats' },
-                    { key: 'TauxVictoire', label: 'Taux de victoire', class: 'percentage', renderer: (value) => `${value}%` },
-                    { key: 'TauxPlace', label: 'Taux de place', class: 'percentage', renderer: (value) => `${value}%` }
+                    { key: 'TauxVictoire', label: 'Taux de victoire', class: 'percentage', renderer: (value, item) => {
+                        return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
+                    }},
+                    { key: 'TauxPlace', label: 'Taux de place', class: 'percentage', renderer: (value, item) => {
+                        return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
+                    }}
                 ],
                 eleveurs: [
                     { key: 'Rang', label: '#', class: 'rank' },
@@ -522,8 +756,12 @@
                     { key: 'Partants', label: 'Partants', class: 'stats' },
                     { key: 'Victoires', label: 'Victoires', class: 'stats' },
                     { key: 'Place', label: 'Places', class: 'stats' },
-                    { key: 'TauxVictoire', label: 'Taux de victoire', class: 'percentage', renderer: (value) => `${value}%` },
-                    { key: 'TauxPlace', label: 'Taux de place', class: 'percentage', renderer: (value) => `${value}%` }
+                    { key: 'TauxVictoire', label: 'Taux de victoire', class: 'percentage', renderer: (value, item) => {
+                        return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
+                    }},
+                    { key: 'TauxPlace', label: 'Taux de place', class: 'percentage', renderer: (value, item) => {
+                        return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
+                    }}
                 ],
                 proprietaires: [
                     { key: 'Rang', label: '#', class: 'rank' },
@@ -537,10 +775,53 @@
                     { key: 'Partants', label: 'Partants', class: 'stats' },
                     { key: 'Victoires', label: 'Victoires', class: 'stats' },
                     { key: 'Place', label: 'Places', class: 'stats' },
-                    { key: 'TauxVictoire', label: 'Taux de victoire', class: 'percentage', renderer: (value) => `${value}%` },
-                    { key: 'TauxPlace', label: 'Taux de place', class: 'percentage', renderer: (value) => `${value}%` }
+                    { key: 'TauxVictoire', label: 'Taux de victoire', class: 'percentage', renderer: (value, item) => {
+                        return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
+                    }},
+                    { key: 'TauxPlace', label: 'Taux de place', class: 'percentage', renderer: (value, item) => {
+                        return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
+                    }}
                 ]
             };
+            
+            // Afficher un squelette de chargement
+            function showSkeletonLoading() {
+                let skeletonHTML = `
+                    <div class="table-responsive">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                `;
+                
+                // Générer les en-têtes du squelette
+                const columnCount = COLUMNS[currentCategory].length;
+                for (let i = 0; i < columnCount; i++) {
+                    skeletonHTML += `<th class="skeleton-loading" style="height: 24px; width: ${i === 0 ? '50px' : '120px'}"></th>`;
+                }
+                
+                skeletonHTML += `
+                                </tr>
+                            </thead>
+                            <tbody>
+                `;
+                
+                // Générer 10 lignes de squelette
+                for (let i = 0; i < 10; i++) {
+                    skeletonHTML += `<tr>`;
+                    for (let j = 0; j < columnCount; j++) {
+                        skeletonHTML += `<td><div class="skeleton-loading" style="height: 20px; width: ${j === 0 ? '30px' : '90px'}"></div></td>`;
+                    }
+                    skeletonHTML += `</tr>`;
+                }
+                
+                skeletonHTML += `
+                            </tbody>
+                        </table>
+                    </div>
+                `;
+                
+                resultsContainer.innerHTML = skeletonHTML;
+            }
             
             // Fonction pour charger les données d'une catégorie
             async function loadData(category) {
@@ -549,13 +830,8 @@
                     return allData[category];
                 }
                 
-                // Afficher l'indicateur de chargement
-                resultsContainer.innerHTML = `
-                    <div class="loading">
-                        <div class="spinner"></div>
-                        <p>Chargement des données ${category}...</p>
-                    </div>
-                `;
+                // Afficher le squelette de chargement
+                showSkeletonLoading();
                 
                 try {
                     // Charger les données depuis le fichier JSON
@@ -810,7 +1086,18 @@
                 
                 // Générer les en-têtes du tableau
                 columns.forEach(column => {
-                    tableHTML += `<th>${column.label}</th>`;
+                    // Ajouter une icône de tri si c'est une colonne triable
+                    let sortIcon = '';
+                    if (column.key === 'TauxVictoire' || column.key === 'TauxPlace' || column.key === 'Rang') {
+                        const isActive = (column.key === 'TauxVictoire' && currentSort === 'taux-victoire') || 
+                                        (column.key === 'TauxPlace' && currentSort === 'taux-place') ||
+                                        (column.key === 'Rang' && currentSort === 'default');
+                        const direction = sortDirection === 'desc' ? 'down' : 'up';
+                        
+                        sortIcon = isActive ? `<i class="fas fa-sort-${direction} sort-icon"></i>` : '<i class="fas fa-sort sort-icon"></i>';
+                    }
+                    
+                    tableHTML += `<th>${column.label} ${sortIcon}</th>`;
                 });
                 
                 tableHTML += `
@@ -851,6 +1138,42 @@
                 
                 // Mettre à jour la pagination
                 updatePagination(data.length);
+                
+                // Ajouter des listeners pour les en-têtes de colonne
+                const tableHeaders = document.querySelectorAll('.data-table th');
+                tableHeaders.forEach((header, index) => {
+                    header.addEventListener('click', function() {
+                        let newSortKey = 'default';
+                        
+                        // Déterminer quelle colonne a été cliquée
+                        const column = columns[index];
+                        if (column.key === 'TauxVictoire') {
+                            newSortKey = 'taux-victoire';
+                        } else if (column.key === 'TauxPlace') {
+                            newSortKey = 'taux-place';
+                        } else if (column.key === 'Rang') {
+                            newSortKey = 'default';
+                        } else {
+                            return; // Ne pas trier sur les autres colonnes
+                        }
+                        
+                        // Si on clique sur la même colonne, inverser la direction
+                        if (currentSort === newSortKey) {
+                            sortDirection = sortDirection === 'desc' ? 'asc' : 'desc';
+                        } else {
+                            currentSort = newSortKey;
+                            sortDirection = 'desc'; // Par défaut, tri décroissant
+                        }
+                        
+                        // Mettre à jour l'état visuel des boutons
+                        updateSortButtons();
+                        
+                        // Trier et afficher les données
+                        filteredData = sortData(filteredData, currentSort);
+                        currentPage = 1;
+                        displayResults(filteredData, currentPage);
+                    });
+                });
             }
             
             // Fonction pour mettre à jour la pagination
@@ -886,7 +1209,7 @@
                 if (startPage > 1) {
                     paginationHTML += `
                         <button class="page-btn" onclick="changePage(1)">1</button>
-                        ${startPage > 2 ? '<span class="page-btn" style="cursor: default;">...</span>' : ''}
+                        ${startPage > 2 ? '<span class="page-btn" style="cursor: default; background: transparent;">...</span>' : ''}
                     `;
                 }
                 
@@ -902,7 +1225,7 @@
                 // Dernière page
                 if (endPage < totalPages) {
                     paginationHTML += `
-                        ${endPage < totalPages - 1 ? '<span class="page-btn" style="cursor: default;">...</span>' : ''}
+                        ${endPage < totalPages - 1 ? '<span class="page-btn" style="cursor: default; background: transparent;">...</span>' : ''}
                         <button class="page-btn" onclick="changePage(${totalPages})">${totalPages}</button>
                     `;
                 }
@@ -920,15 +1243,22 @@
                 
                 // Définir la fonction changePage dans le scope global
                 window.changePage = function(page) {
-                    if (page < 1 || page > totalPages) {
+                    if (page < 1 || page > totalPages || page === currentPage) {
                         return;
                     }
                     
                     currentPage = page;
-                    displayResults(filteredData, currentPage);
                     
-                    // Faire défiler vers le haut du tableau
-                    resultsContainer.scrollIntoView({ behavior: 'smooth' });
+                    // Afficher un squelette pendant le chargement
+                    showSkeletonLoading();
+                    
+                    // Attendre un court moment pour que le squelette s'affiche
+                    setTimeout(() => {
+                        displayResults(filteredData, currentPage);
+                        
+                        // Faire défiler vers le haut du tableau
+                        resultsContainer.scrollIntoView({ behavior: 'smooth' });
+                    }, 300);
                 };
             }
             
@@ -970,6 +1300,9 @@
                 sortDirection = 'desc';
                 updateSortButtons();
                 
+                // Montrer le squelette de chargement
+                showSkeletonLoading();
+                
                 // Charger les données
                 const data = await loadData(category);
                 
@@ -987,10 +1320,21 @@
             // Mise à jour visuelle des boutons de tri
             function updateSortButtons() {
                 sortButtons.forEach(btn => {
-                    if (btn.dataset.sort === currentSort) {
+                    const sortType = btn.dataset.sort;
+                    
+                    if (sortType === currentSort) {
                         btn.classList.add('active');
+                        
+                        // Ajouter une classe pour la direction
+                        if (sortDirection === 'desc') {
+                            btn.classList.add('desc');
+                            btn.classList.remove('asc');
+                        } else {
+                            btn.classList.add('asc');
+                            btn.classList.remove('desc');
+                        }
                     } else {
-                        btn.classList.remove('active');
+                        btn.classList.remove('active', 'asc', 'desc');
                     }
                 });
             }
@@ -999,6 +1343,10 @@
             tabs.forEach(tab => {
                 tab.addEventListener('click', function() {
                     const category = this.dataset.category;
+                    
+                    // Ne pas recharger si déjà actif
+                    if (category === currentCategory) return;
+                    
                     loadCategory(category);
                 });
             });
@@ -1018,10 +1366,16 @@
                     // Mettre à jour l'état visuel des boutons
                     updateSortButtons();
                     
-                    // Trier et afficher les données
-                    filteredData = sortData(filteredData, currentSort);
-                    currentPage = 1;
-                    displayResults(filteredData, currentPage);
+                    // Afficher le squelette pendant le tri
+                    showSkeletonLoading();
+                    
+                    // Attendre un moment pour l'effet visuel
+                    setTimeout(() => {
+                        // Trier et afficher les données
+                        filteredData = sortData(filteredData, currentSort);
+                        currentPage = 1;
+                        displayResults(filteredData, currentPage);
+                    }, 300);
                 });
             });
             
@@ -1031,14 +1385,24 @@
                 // Afficher/masquer le bouton d'effacement
                 searchClear.style.display = searchTerm ? 'block' : 'none';
                 
-                // Filtrer les données
-                filteredData = filterData(allData[currentCategory] || [], searchTerm);
+                // Ne pas lancer la recherche immédiatement pour éviter trop de calculs
+                clearTimeout(this.debounceTimer);
                 
-                // Trier les données filtrées
-                filteredData = sortData(filteredData, currentSort);
-                
-                currentPage = 1;
-                displayResults(filteredData, currentPage);
+                this.debounceTimer = setTimeout(() => {
+                    // Montrer le squelette pendant la recherche
+                    if (searchTerm) {
+                        showSkeletonLoading();
+                    }
+                    
+                    // Filtrer les données
+                    filteredData = filterData(allData[currentCategory] || [], searchTerm);
+                    
+                    // Trier les données filtrées
+                    filteredData = sortData(filteredData, currentSort);
+                    
+                    currentPage = 1;
+                    displayResults(filteredData, currentPage);
+                }, 300);
             });
             
             searchClear.addEventListener('click', function() {
@@ -1046,14 +1410,18 @@
                 searchInput.focus();
                 this.style.display = 'none';
                 
-                // Réinitialiser le filtre
-                filteredData = [...allData[currentCategory]] || [];
+                showSkeletonLoading();
                 
-                // Trier les données
-                filteredData = sortData(filteredData, currentSort);
-                
-                currentPage = 1;
-                displayResults(filteredData, currentPage);
+                setTimeout(() => {
+                    // Réinitialiser le filtre
+                    filteredData = [...allData[currentCategory]] || [];
+                    
+                    // Trier les données
+                    filteredData = sortData(filteredData, currentSort);
+                    
+                    currentPage = 1;
+                    displayResults(filteredData, currentPage);
+                }, 300);
             });
             
             // Masquer le bouton d'effacement au chargement
@@ -1073,8 +1441,6 @@
             // Définir le tri si fourni dans l'URL
             if (sortParam && ['default', 'taux-victoire', 'taux-place'].includes(sortParam)) {
                 currentSort = sortParam;
-                // Mettre à jour l'affichage des boutons de tri
-                updateSortButtons();
             }
             
             // Définir la recherche si fournie dans l'URL
@@ -1083,8 +1449,16 @@
                 searchClear.style.display = 'block';
             }
             
-            // Charger la catégorie initiale
-            loadCategory(currentCategory);
+            // Ajouter un effet d'animation au chargement initial
+            document.body.style.opacity = '0';
+            document.body.style.transition = 'opacity 0.5s ease';
+            
+            setTimeout(() => {
+                document.body.style.opacity = '1';
+                
+                // Charger la catégorie initiale
+                loadCategory(currentCategory);
+            }, 100);
         });
     </script>
 </body>
