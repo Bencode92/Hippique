@@ -129,8 +129,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 horsesRaw[`Cheval ${number}`] = odds;
             }
             
-            // Calculer les stratégies optimales
-            const allCombos = findOptimalBets(horsesRaw, totalBet, horseEntries.length);
+            // Calculer les stratégies pour 2, 3, 4 et 5 favoris (si possible)
+            const allCombos = findAllCombosForSizes(horsesRaw, totalBet, [2, 3, 4, 5]);
             
             if (allCombos.length === 0) {
                 throw new Error('Aucune combinaison rentable trouvée. Essayez de modifier les cotes ou d\'augmenter le montant total.');
@@ -154,8 +154,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Fonction pour calculer les paris optimaux
-    function findOptimalBets(horsesRaw, totalBet, maxN) {
+    // Fonction pour trouver les combos de tailles spécifiées (2, 3, 4, 5)
+    function findAllCombosForSizes(horsesRaw, totalBet, sizes) {
         const sortedHorses = Object.entries(horsesRaw)
             .sort((a, b) => a[1] - b[1])
             .reduce((obj, [key, value]) => {
@@ -172,33 +172,40 @@ document.addEventListener('DOMContentLoaded', function() {
             const gainMax = Math.max(...gainsNet);
             const gainMin = Math.min(...gainsNet);
             const gainAvg = gainsNet.reduce((a, b) => a + b, 0) / gainsNet.length;
+            const isRentable = gainsNet.every(g => g > 0);
 
-            if (gainsNet.every(g => g > 0)) {
-                return {
-                    chevaux: combo,
-                    mises: stakes,
-                    cotes: odds,
-                    gains_bruts: stakes.map((stake, i) => stake * odds[i]),
-                    gains_net: gainsNet,
-                    gain_minimum: gainMin,
-                    gain_moyen: gainAvg,
-                    gain_maximum: gainMax
-                };
-            }
-            return null;
+            return {
+                chevaux: combo,
+                mises: stakes,
+                cotes: odds,
+                gains_bruts: stakes.map((stake, i) => stake * odds[i]),
+                gains_net: gainsNet,
+                gain_minimum: gainMin,
+                gain_moyen: gainAvg,
+                gain_maximum: gainMax,
+                rentable: isRentable
+            };
         }
 
         const horseNames = Object.keys(sortedHorses);
         const allCombos = [];
 
-        for (let r = 2; r <= Math.min(maxN, horseNames.length); r++) {
-            const subset = horseNames.slice(0, r); // top r favoris
-            const result = computeCombo(subset, totalBet);
-            if (result) {
-                result.taille = r;
+        // Générer les combinaisons pour chaque taille spécifiée
+        sizes.forEach(size => {
+            if (size <= horseNames.length) {
+                const subset = horseNames.slice(0, size); // top "size" favoris
+                const result = computeCombo(subset, totalBet);
+                result.taille = size;
                 allCombos.push(result);
             }
-        }
+        });
+
+        // Trier les combos par gain moyen décroissant, mais mettre les rentables en premier
+        allCombos.sort((a, b) => {
+            if (a.rentable && !b.rentable) return -1;
+            if (!a.rentable && b.rentable) return 1;
+            return b.gain_moyen - a.gain_moyen;
+        });
 
         return allCombos;
     }
@@ -208,11 +215,38 @@ document.addEventListener('DOMContentLoaded', function() {
         resultContainer.style.display = 'block';
         betsTableBody.innerHTML = ''; // Réinitialiser
 
-        comboList.sort((a, b) => b.gain_moyen - a.gain_moyen); // Tri par gain moyen décroissant
+        // Trouver le meilleur combo (premier combo rentable)
+        const bestCombo = comboList.find(combo => combo.rentable) || comboList[0];
 
-        comboList.forEach((combo, index) => {
+        // Mettre à jour l'en-tête avec les meilleurs chiffres (top combo rentable)
+        minGainElement.textContent = bestCombo.rentable ? 
+            `+${bestCombo.gain_minimum.toFixed(2)} €` : 
+            `${bestCombo.gain_minimum.toFixed(2)} €`;
+        avgGainElement.textContent = bestCombo.rentable ? 
+            `+${bestCombo.gain_moyen.toFixed(2)} €` : 
+            `${bestCombo.gain_moyen.toFixed(2)} €`;
+        selectedHorsesElement.textContent = bestCombo.chevaux.length;
+        totalStakeElement.textContent = `${totalBet.toFixed(2)} €`;
+
+        // Afficher chaque combo dans l'ordre des tailles demandées
+        const orderedSizes = [2, 3, 4, 5];
+        const sortedCombos = [];
+        
+        // Réorganiser les combos par taille croissante
+        orderedSizes.forEach(size => {
+            const combo = comboList.find(c => c.taille === size);
+            if (combo) sortedCombos.push(combo);
+        });
+
+        sortedCombos.forEach(combo => {
+            const headerClass = combo.rentable ? "section-header" : "section-header non-rentable";
+            const headerIcon = combo.rentable ? "💡" : "⚠️";
+            const headerText = combo.rentable ? 
+                `${headerIcon} Combo avec ${combo.chevaux.length} favoris | Gain net moyen : +${combo.gain_moyen.toFixed(2)} € | Gain max : +${combo.gain_maximum.toFixed(2)} €` :
+                `${headerIcon} Combo avec ${combo.chevaux.length} favoris | NON RENTABLE | Gain net moyen : ${combo.gain_moyen.toFixed(2)} €`;
+            
             const title = document.createElement('tr');
-            title.innerHTML = `<td colspan="5" class="section-header">💡 Combo avec ${combo.chevaux.length} favoris | Gain net moyen : +${combo.gain_moyen.toFixed(2)} € | Gain max : +${combo.gain_maximum.toFixed(2)} €</td>`;
+            title.innerHTML = `<td colspan="5" class="${headerClass}">${headerText}</td>`;
             betsTableBody.appendChild(title);
 
             combo.chevaux.forEach((cheval, i) => {
@@ -230,13 +264,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 betsTableBody.appendChild(row);
             });
         });
-
-        // Mettre à jour l'en-tête avec les meilleurs chiffres (top combo)
-        const topCombo = comboList[0];
-        minGainElement.textContent = `+${topCombo.gain_minimum.toFixed(2)} €`;
-        avgGainElement.textContent = `+${topCombo.gain_moyen.toFixed(2)} €`;
-        selectedHorsesElement.textContent = topCombo.chevaux.length;
-        totalStakeElement.textContent = `${totalBet.toFixed(2)} €`;
     }
     
     // Générer les chevaux initiaux au chargement de la page
