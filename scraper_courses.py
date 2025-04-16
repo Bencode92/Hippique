@@ -12,7 +12,6 @@ import json
 import os
 import traceback
 from datetime import datetime, timedelta
-import re
 
 class ScraperCoursesFG:
     def __init__(self):
@@ -234,20 +233,12 @@ class ScraperCoursesFG:
             if not href or href == "#":
                 continue
                 
-            # Trouver le nom de l'hippodrome - Utiliser le sélecteur précis comme suggéré par l'expert
-            lieu = card.select_one("div.card-content h2")
+            # Trouver le nom de l'hippodrome
+            lieu = card.select_one("h2, .title, .hippodrome, .reunion-title")
             if not lieu:
-                # Si pas trouvé, utiliser des sélecteurs plus génériques
-                lieu = card.select_one("h2, .title, .hippodrome, .reunion-title")
-                
-            if not lieu:
-                # Si toujours pas trouvé, utiliser le texte du lien lui-même
+                # Si pas de titre standard, utiliser le texte du lien lui-même
                 lieu_text = card.get_text(strip=True)
                 if lieu_text:
-                    # Éviter que le texte "Plus" soit pris comme nom d'hippodrome
-                    if lieu_text == "Plus" or lieu_text.endswith("Plus"):
-                        print("⚠️ Texte 'Plus' détecté, ignoré comme nom d'hippodrome")
-                        continue
                     lieu = type('obj', (object,), {'text': lieu_text})
             
             # Vérifier si c'est une course de Plat
@@ -260,18 +251,30 @@ class ScraperCoursesFG:
             if lieu:
                 url_reunion = self.base_url + href if href.startswith("/") else href
                 hippodrome = lieu.text.strip()
-                
-                # Nettoyage supplémentaire pour éviter le texte "Plus" à la fin
-                if hippodrome.endswith("Plus"):
-                    hippodrome = hippodrome[:-4].strip()
-                    
-                print(f"✅ Réunion trouvée : {hippodrome} - {url_reunion}")
-                links.append({"hippodrome": hippodrome, "url": url_reunion})
+                if is_plat:
+                    print(f"✅ Réunion plat trouvée : {hippodrome} - {url_reunion}")
+                    links.append({"hippodrome": hippodrome, "url": url_reunion})
+                else:
+                    print(f"⏭️ Réunion ignorée (non-plat): {hippodrome} - {type_course}")
             elif href:
                 # Si on n'a pas pu déterminer le lieu mais qu'on a un lien, l'utiliser quand même
                 url_reunion = self.base_url + href if href.startswith("/") else href
                 hippodrome = "Hippodrome non identifié"
                 print(f"⚠️ Réunion sans nom trouvée - {url_reunion}")
+                links.append({"hippodrome": hippodrome, "url": url_reunion})
+
+        # Si aucune réunion n'est trouvée, considérer toutes les réunions (même les non-Plat)
+        if not links:
+            print("⚠️ Aucune réunion de type Plat trouvée. Inclusion de toutes les réunions...")
+            for card in cards:
+                href = card.get("href")
+                if not href or href == "#":
+                    continue
+                    
+                lieu = card.select_one("h2, .title, .hippodrome, .reunion-title")
+                hippodrome = lieu.text.strip() if lieu else "Hippodrome inconnu"
+                url_reunion = self.base_url + href if href.startswith("/") else href
+                print(f"🔄 Inclusion réunion alternative : {hippodrome} - {url_reunion}")
                 links.append({"hippodrome": hippodrome, "url": url_reunion})
 
         print(f"🏁 Total: {len(links)} réunions trouvées aujourd'hui")
@@ -374,58 +377,15 @@ class ScraperCoursesFG:
                 
                 return courses_data
             
-            # Récupérer les liens vers chaque course
+            # Sinon, récupérer les liens vers chaque course
             course_links = soup.select("table a[href*='/courses/fiche-course']")
             print(f"🔗 Trouvé {len(course_links)} liens de courses")
             
             # Si nous n'avons pas trouvé de liens avec le sélecteur précis, essayons plus général
             if not course_links:
                 print("⚠️ Aucun lien de course trouvé, essai de sélecteurs alternatifs")
-                # Exclure les liens vers les pages de chevaux
-                all_links = soup.select("a[href*='fiche-course']") 
-                course_links = [link for link in all_links if "/cheval/" not in link.get("href", "")]
-                
-                if not course_links:
-                    all_table_links = soup.select("table a")
-                    course_links = [link for link in all_table_links if "/cheval/" not in link.get("href", "")]
-                
+                course_links = soup.select("a[href*='fiche-course']") or soup.select("table a")
                 print(f"🔗 Trouvé {len(course_links)} liens de courses (alt)")
-            
-            # Dédupliquer les liens pour éviter les doublons
-            unique_urls = set()
-            filtered_links = []
-            for link in course_links:
-                href = link.get("href", "")
-                # Exclure les liens vers les pages de chevaux
-                if href and href not in unique_urls and "/cheval/" not in href:
-                    unique_urls.add(href)
-                    filtered_links.append(link)
-            
-            course_links = filtered_links
-            print(f"🔗 Après déduplication: {len(course_links)} liens uniques")
-            
-            # Vérification de la première course pour savoir si on doit ignorer cette réunion
-            if course_links:
-                # Vérifions la première course pour décider si on traite toute la réunion
-                first_link = course_links[0]
-                href = first_link.get("href")
-                if href and href != "#" and href.startswith(("/", "http")):
-                    full_course_url = f"{self.base_url}{href}" if href.startswith('/') else href
-                    print(f"🔍 Vérification de la première course: {full_course_url}")
-                    
-                    driver.get(full_course_url)
-                    time.sleep(3)
-                    html_first = driver.page_source
-                    soup_first = BeautifulSoup(html_first, "html.parser")
-                    
-                    # Vérifier si c'est une course étrangère sans partants
-                    no_participants_text = soup_first.find(string=lambda t: t and "partants et arrivées sont diffusés" in t.lower())
-                    no_table = soup_first.find("table") is None
-                    
-                    if no_participants_text or no_table:
-                        print(f"⛔ Première course sans partants ou course étrangère. On passe à une autre réunion.")
-                        courses_data["note"] = "Réunion ignorée car étrangère ou sans partants"
-                        return courses_data
             
             for index, link in enumerate(course_links):
                 # Vérifier si l'attribut href existe et s'il est valide
@@ -434,22 +394,12 @@ class ScraperCoursesFG:
                     print(f"⚠️ Lien invalide trouvé: {repr(href)}, ignoré.")
                     continue
                 
-                # Si le lien contient "/cheval/", l'ignorer
-                if "/cheval/" in href:
-                    print(f"⏭️ Lien ignoré car correspond à un cheval: {href}")
-                    continue
-                
                 course_name = link.text.strip()
-                print(f"🔎 Nom de course initial: {repr(course_name)}")
+                print(f"🔎 Nom de course: {repr(course_name)}")
                 
                 # Ignorer les liens avec des noms vides ou suspects
                 if not course_name or course_name == "-":
                     print("⚠️ Nom de course vide ou invalide, ignoré.")
-                    continue
-                
-                # Ignorer les liens qui semblent être des résultats (ex: "6-7-1-3-9")
-                if re.match(r'^[\d\-]+$', course_name):
-                    print(f"⏭️ Lien ignoré car semble être un résultat: {course_name}")
                     continue
                 
                 # Construire l'URL complète
@@ -474,58 +424,12 @@ class ScraperCoursesFG:
                     
                     course_soup = BeautifulSoup(course_html, "html.parser")
                     
-                    # Vérifier si c'est une course étrangère sans partants
-                    no_partants_text = course_soup.find(string=lambda t: t and "partants et arrivées sont diffusés" in t.lower())
-                    if no_partants_text:
-                        print(f"⚠️ Course étrangère sans partants détectée, ignorée: {course_name}")
-                        continue
-                    
-                    # Vérifier le type de course (spécialité)
-                    specialite = course_soup.select_one(".specialite")
-                    if specialite and "plat" not in specialite.text.lower():
-                        print(f"⏭️ Course ignorée car non Plat: {course_name}")
-                        continue
-                    
                     # Extraire les détails de la course
                     course_data = {
-                        "nom": course_name,  # Nom initial (sera remplacé si on trouve mieux)
+                        "nom": course_name,
                         "url": course_url,
                         "participants": []
                     }
-                    
-                    # Recherche du nom de la course (souvent dans un h1 ou élément avec une classe spécifique)
-                    course_name_el = course_soup.select_one("h1, .course-title, .title")
-                    if course_name_el:
-                        course_data["nom"] = course_name_el.text.strip()
-                        print(f"🏆 Nom de course amélioré: {course_data['nom']}")
-                    
-                    # Recherche du numéro de course et de l'horaire
-                    # Pattern: "1ère(13)", "2ème(13)" suivi de l'horaire
-                    numero_raw = course_soup.find(string=lambda t: t and (re.search(r'(\d+)[èe]re\s*\(', t) or re.search(r'(\d+)[èe]me\s*\(', t)))
-                    if numero_raw:
-                        # Extrait le numéro de course
-                        match_numero = re.search(r'(\d+)[èe][mr]e\s*\(', numero_raw)
-                        if match_numero:
-                            numero = match_numero.group(1)
-                            suffixe = "ère" if numero == "1" else "ème"
-                            course_data["ordre"] = f"{numero}{suffixe}"
-                            print(f"🔢 Ordre de course: {course_data['ordre']}")
-                        
-                        # Cherche l'horaire dans la même chaîne
-                        match_horaire = re.search(r'—\s*(\d{1,2}[h:]\d{2})', numero_raw)
-                        if match_horaire:
-                            course_data["horaire"] = match_horaire.group(1)
-                            print(f"⏰ Horaire: {course_data['horaire']}")
-                    
-                    # Si on n'a pas trouvé l'horaire, essayons d'autres sélecteurs
-                    if "horaire" not in course_data:
-                        horaire_element = course_soup.select_one(".horaire, .time, .heure")
-                        if horaire_element:
-                            horaire_text = horaire_element.text.strip()
-                            match_heure = re.search(r'(\d{1,2}[h:]\d{2})', horaire_text)
-                            if match_heure:
-                                course_data["horaire"] = match_heure.group(1)
-                                print(f"⏰ Horaire (alt): {course_data['horaire']}")
                     
                     # Extraire les infos complémentaires
                     infos = course_soup.select(".infos-complementaires li, .course-info li, .details li")
@@ -536,6 +440,11 @@ class ScraperCoursesFG:
                             key = key_element.text.strip().rstrip(':')
                             value = value_element.text.strip()
                             course_data[key.lower().replace(' ', '_')] = value
+                    
+                    # Horaire de la course (généralement en haut de la page)
+                    horaire_element = course_soup.select_one(".horaire, .time, .heure, [class*='horaire']")
+                    if horaire_element:
+                        course_data["horaire"] = horaire_element.text.strip()
                     
                     # PDF Programme
                     pdf_link = course_soup.select_one("a[href*='.pdf']")
@@ -549,21 +458,32 @@ class ScraperCoursesFG:
                         video_href = video_link.get('href')
                         course_data["video_replay"] = f"{self.base_url}{video_href}" if video_href.startswith('/') else video_href
                     
-                    # Extraire les partants (participants)
+                    # Extraire les partants avec la fonction dédiée
                     participants = self.extract_participants_table(course_soup)
                     
                     if participants:
                         course_data["participants"] = participants
-                        courses_data["courses"].append(course_data)
-                        print(f"✅ Course ajoutée avec {len(participants)} participants: {course_data['nom']}")
+                        print(f"✅ Extrait {len(participants)} participants pour {course_name}")
                     else:
-                        print(f"⚠️ Aucun participant extrait pour {course_data['nom']}")
+                        print(f"⚠️ Aucun participant extrait pour {course_name}")
+                    
+                    # MODIFICATION: Ne garder que les courses avec des participants réels
+                    if course_data.get("participants") and len(course_data["participants"]) >= 1:
+                        courses_data["courses"].append(course_data)
+                        print(f"✅ Course ajoutée avec {len(course_data['participants'])} participants: {course_name}")
+                    else:
+                        print(f"⚠️ Course ignorée car trop peu de données: {course_name}")
                     
                 except Exception as e:
                     print(f"❌ Erreur lors du traitement de la course {course_name}: {str(e)}")
                     traceback.print_exc()
                     # Continuer avec la course suivante malgré l'erreur
             
+            # MODIFICATION: Marquer si le fichier est vide
+            if not courses_data["courses"]:
+                print(f"⚠️ Aucune course valide trouvée pour {hippodrome}, le fichier sera vide")
+                courses_data["empty"] = True
+                
             return courses_data
             
         except Exception as e:
@@ -627,10 +547,6 @@ class ScraperCoursesFG:
                 is_course = course.get("is_course", False)
                 course_data = self.extract_course_details(driver, course["url"], course["hippodrome"], is_course)
                 
-                if not course_data.get("courses") and course_data.get("note"):
-                    print(f"⚠️ Hippodrome ignoré: {course['hippodrome']} - {course_data.get('note')}")
-                    continue
-                
                 # Générer un nom de fichier basé sur l'hippodrome et la date
                 date_str = datetime.now().strftime("%Y-%m-%d")
                 safe_name = course["hippodrome"].replace(" ", "_").replace("/", "-").lower()
@@ -639,8 +555,15 @@ class ScraperCoursesFG:
                 # Sauvegarder les données
                 self.save_json(course_data, filename)
                 
+                # Commenté: Ne plus supprimer les fichiers vides
+                # if not course_data.get("courses"):
+                #     filepath = os.path.join(self.output_dir, filename)
+                #     print(f"🗑️ Suppression du fichier JSON vide pour {course['hippodrome']}")
+                #     os.remove(filepath)
+                
+                # À la place, on ajoute un message indiquant que le fichier est conservé même s'il est vide
                 if not course_data.get("courses"):
-                    print(f"⚠️ Fichier JSON sans courses pour {course['hippodrome']} mais conservé pour analyse")
+                    print(f"⚠️ Fichier JSON vide pour {course['hippodrome']} mais conservé pour analyse")
             
             print(f"🎉 Scraping terminé! {len(courses_today)} hippodromes traités.")
             
@@ -670,8 +593,15 @@ class ScraperCoursesFG:
             # Sauvegarder les données
             self.save_json(course_data, filename)
             
+            # Commenté: Ne plus supprimer les fichiers vides
+            # if not course_data.get("courses"):
+            #     filepath = os.path.join(self.output_dir, filename)
+            #     print(f"🗑️ Suppression du fichier JSON vide pour le scraping direct")
+            #     os.remove(filepath)
+            
+            # À la place, on ajoute un message indiquant que le fichier est conservé même s'il est vide
             if not course_data.get("courses"):
-                print(f"⚠️ Fichier JSON sans courses pour le scraping direct mais conservé pour analyse")
+                print(f"⚠️ Fichier JSON vide pour le scraping direct mais conservé pour analyse")
             
             print(f"✅ Scraping direct terminé pour {url}")
             
