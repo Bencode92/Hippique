@@ -100,10 +100,10 @@ class ScraperCoursesFG:
         return participants
     
     def get_links_from_aujourdhui_page(self, driver):
-        """Récupère les liens des réunions de type Plat pour aujourd'hui"""
+        """Récupère les liens des réunions pour aujourd'hui, toutes disciplines confondues"""
         print(f"📅 Accès à la page des courses du jour: {self.courses_aujourdhui_url}")
         driver.get(self.courses_aujourdhui_url)
-        time.sleep(5)
+        time.sleep(5)  # Attendre que la page se charge
 
         print("🔍 Scraping des courses du jour (page 'aujourdhui')...")
         links = []
@@ -121,34 +121,166 @@ class ScraperCoursesFG:
             f.write(html)
 
         soup = BeautifulSoup(html, "html.parser")
+        
+        # Méthode 1: Cartes de réunion standard
         cards = soup.select("a.reunion-card")
+        print(f"📊 Méthode 1: Trouvé {len(cards)} cartes de réunion")
         
-        print(f"📊 Trouvé {len(cards)} cartes de réunion")
-        
+        # Méthode 2: Approche plus générale - liens de réunion
         if not cards:
-            # Si le sélecteur spécifique ne fonctionne pas, essayons une approche plus générale
             cards = soup.select("a[href*='fiche-reunion']")
-            print(f"📊 Approche alternative: trouvé {len(cards)} liens de réunion")
-
+            print(f"📊 Méthode 2: Trouvé {len(cards)} liens de réunion")
+        
+        # Méthode 3: Chercher tous les liens qui pourraient être des réunions
+        if not cards:
+            cards = soup.select("a[href*='reunion']")
+            print(f"📊 Méthode 3: Trouvé {len(cards)} liens contenant 'reunion'")
+        
+        # Méthode 4: Chercher dans les tableaux
+        if not cards:
+            tables = soup.select("table")
+            for table in tables:
+                links_in_table = table.select("a")
+                if links_in_table:
+                    print(f"📊 Méthode 4: Trouvé {len(links_in_table)} liens dans un tableau")
+                    cards.extend(links_in_table)
+        
+        # Méthode 5: Dernier recours - tous les liens
+        if not cards:
+            # Analyse de la structure de la page pour comprendre
+            sections = soup.select("section, div.main-content, div.content")
+            if sections:
+                print(f"🔍 Structure de la page: trouvé {len(sections)} sections principales")
+                for section in sections:
+                    links_in_section = section.select("a")
+                    if links_in_section:
+                        likely_reunion_links = [a for a in links_in_section if "reunion" in a.get("href", "").lower()]
+                        if likely_reunion_links:
+                            print(f"🔍 Trouvé {len(likely_reunion_links)} liens probables de réunion dans une section")
+                            cards.extend(likely_reunion_links)
+        
+        # IMPORTANTE MODIFICATION: Si après toutes ces méthodes nous n'avons trouvé aucune réunion,
+        # nous considérons toutes les réunions comme incluant du "Plat" pour éviter de manquer des données
+        if not cards:
+            print("⚠️ Aucune réunion trouvée avec les méthodes de détection standard.")
+            print("ℹ️ Nous allons utiliser une stratégie de récupération avec les liens directs de courses")
+            
+            # Chercher tous les liens qui pourraient mener à des fiches de courses
+            course_links = soup.select("a[href*='fiche-course']")
+            if course_links:
+                print(f"🔄 Stratégie de récupération: trouvé {len(course_links)} liens directs vers des courses")
+                # Nous allons extraire les hippodromes directement des noms de courses
+                for link in course_links:
+                    # Essayer d'extraire l'hippodrome du texte du lien ou d'un parent proche
+                    course_name = link.get_text(strip=True)
+                    hippodrome_text = None
+                    
+                    # Remonter dans l'arbre DOM pour trouver un élément avec le nom de l'hippodrome
+                    parent = link.parent
+                    for _ in range(3):  # Remonter jusqu'à 3 niveaux
+                        if parent:
+                            headers = parent.select("h1, h2, h3, h4, .title, .hippodrome")
+                            if headers:
+                                hippodrome_text = headers[0].get_text(strip=True)
+                                break
+                            parent = parent.parent
+                    
+                    # Si on n'a pas trouvé d'hippodrome, utiliser un nom générique
+                    if not hippodrome_text:
+                        hippodrome_text = "Hippodrome inconnu"
+                    
+                    href = link.get("href")
+                    if href:
+                        full_url = self.base_url + href if href.startswith("/") else href
+                        print(f"✅ Course directe trouvée : {course_name} à {hippodrome_text} - {full_url}")
+                        
+                        # Extraire l'URL de la réunion à partir de l'URL de la course
+                        # Exemple: /fr/courses/fiche-course/2025/04/16/reunion1 -> /fr/courses/reunion/2025/04/16/reunion1
+                        reunion_url = None
+                        if "fiche-course" in href:
+                            parts = href.split("/")
+                            if len(parts) >= 6:  # Assez de parties pour reconstituer
+                                reunion_parts = []
+                                for part in parts:
+                                    reunion_parts.append(part)
+                                    if "reunion" in part.lower():
+                                        break
+                                if reunion_parts:
+                                    reunion_url = "/".join(reunion_parts)
+                                    reunion_url = reunion_url.replace("fiche-course", "reunion")
+                                    reunion_url = self.base_url + reunion_url if reunion_url.startswith("/") else reunion_url
+                                    
+                        if reunion_url:
+                            links.append({"hippodrome": hippodrome_text, "url": reunion_url})
+                        else:
+                            # Dernier recours: utiliser directement la page de la course
+                            links.append({"hippodrome": hippodrome_text, "url": full_url, "is_course": True})
+                
+                # Déduplicaton des liens
+                unique_links = []
+                urls_seen = set()
+                for link in links:
+                    if link["url"] not in urls_seen:
+                        urls_seen.add(link["url"])
+                        unique_links.append(link)
+                
+                links = unique_links
+                return links  # Retourner les liens directs
+        
+        # Traitement standard des cartes de réunion trouvées
         for card in cards:
-            lieu = card.select_one("h2")
-            type_course_element = card.select_one(".discipline") or card.select_one("[class*='discipline']")
+            href = card.get("href")
+            if not href or href == "#":
+                continue
+                
+            # Trouver le nom de l'hippodrome
+            lieu = card.select_one("h2, .title, .hippodrome, .reunion-title")
+            if not lieu:
+                # Si pas de titre standard, utiliser le texte du lien lui-même
+                lieu_text = card.get_text(strip=True)
+                if lieu_text:
+                    lieu = type('obj', (object,), {'text': lieu_text})
+            
+            # Vérifier si c'est une course de Plat
+            type_course_element = card.select_one(".discipline, [class*='discipline'], .type-course, [class*='type']")
             type_course = type_course_element.text.strip().lower() if type_course_element else card.text.lower()
-
-            if ("plat" in type_course) and lieu:
-                url_reunion = self.base_url + card.get("href") if card.get("href").startswith("/") else card.get("href")
+            
+            # Si aucune information sur le type n'est trouvée, on considère toutes les réunions
+            is_plat = True if not type_course_element else "plat" in type_course
+            
+            if lieu:
+                url_reunion = self.base_url + href if href.startswith("/") else href
                 hippodrome = lieu.text.strip()
-                print(f"✅ Réunion plat trouvée : {hippodrome} - {url_reunion}")
+                if is_plat:
+                    print(f"✅ Réunion plat trouvée : {hippodrome} - {url_reunion}")
+                    links.append({"hippodrome": hippodrome, "url": url_reunion})
+                else:
+                    print(f"⏭️ Réunion ignorée (non-plat): {hippodrome} - {type_course}")
+            elif href:
+                # Si on n'a pas pu déterminer le lieu mais qu'on a un lien, l'utiliser quand même
+                url_reunion = self.base_url + href if href.startswith("/") else href
+                hippodrome = "Hippodrome non identifié"
+                print(f"⚠️ Réunion sans nom trouvée - {url_reunion}")
                 links.append({"hippodrome": hippodrome, "url": url_reunion})
-            else:
-                type_info = type_course_element.text.strip() if type_course_element else "type inconnu"
-                hippodrome_info = lieu.text.strip() if lieu else "lieu inconnu"
-                print(f"⏭️ Réunion ignorée (non-plat): {hippodrome_info} - {type_info}")
 
-        print(f"🏁 Total: {len(links)} réunions Plat trouvées aujourd'hui")
+        # Si aucune réunion n'est trouvée, considérer toutes les réunions (même les non-Plat)
+        if not links:
+            print("⚠️ Aucune réunion de type Plat trouvée. Inclusion de toutes les réunions...")
+            for card in cards:
+                href = card.get("href")
+                if not href or href == "#":
+                    continue
+                    
+                lieu = card.select_one("h2, .title, .hippodrome, .reunion-title")
+                hippodrome = lieu.text.strip() if lieu else "Hippodrome inconnu"
+                url_reunion = self.base_url + href if href.startswith("/") else href
+                print(f"🔄 Inclusion réunion alternative : {hippodrome} - {url_reunion}")
+                links.append({"hippodrome": hippodrome, "url": url_reunion})
+
+        print(f"🏁 Total: {len(links)} réunions trouvées aujourd'hui")
         return links
     
-    def extract_course_details(self, driver, course_url, hippodrome):
+    def extract_course_details(self, driver, course_url, hippodrome, is_course=False):
         """Extrait les détails de toutes les courses d'un hippodrome"""
         print(f"📍 Scraping des courses à {hippodrome}...")
         
@@ -186,10 +318,14 @@ class ScraperCoursesFG:
             else:
                 print("⚠️ Date de réunion non trouvée")
                 # Essayons un autre sélecteur
-                date_elements = soup.select(".date")
+                date_elements = soup.select(".date, time, [class*='date']")
                 if date_elements:
                     courses_data["date_reunion"] = date_elements[0].text.strip()
                     print(f"📅 Date de réunion (alt): {courses_data['date_reunion']}")
+                else:
+                    # Utiliser la date du jour si on ne trouve pas de date
+                    courses_data["date_reunion"] = datetime.now().strftime("%d/%m/%Y")
+                    print(f"📅 Date de réunion (par défaut): {courses_data['date_reunion']}")
             
             # Récupérer les informations de terrain
             terrain_element = soup.select_one(".field-terrain")
@@ -199,12 +335,49 @@ class ScraperCoursesFG:
             else:
                 print("⚠️ Information de terrain non trouvée")
                 # Essayons d'autres sélecteurs
-                terrain_elements = soup.select(".terrain") + soup.select("[class*='terrain']")
+                terrain_elements = soup.select(".terrain, [class*='terrain'], .field-state, .state, .piste")
                 if terrain_elements:
                     courses_data["terrain"] = terrain_elements[0].text.strip()
                     print(f"🌱 Terrain (alt): {courses_data['terrain']}")
+                else:
+                    courses_data["terrain"] = "Information non disponible"
             
-            # Récupérer les liens vers chaque course
+            # Si l'URL fournie est déjà une page de course, directement l'analyser
+            if is_course:
+                print("ℹ️ URL directe d'une course détectée, analyse directe...")
+                course_name = soup.select_one("h1, .course-title, .event-title, .title")
+                course_name = course_name.text.strip() if course_name else "Course sans nom"
+                
+                course_data = {
+                    "nom": course_name,
+                    "url": course_url,
+                    "participants": []
+                }
+                
+                # Extraire les infos complémentaires
+                infos = soup.select(".infos-complementaires li, .course-info li, .details li")
+                for info in infos:
+                    key_element = info.select_one("span.label, .key, .info-label")
+                    value_element = info.select_one("span.value, .value, .info-value")
+                    if key_element and value_element:
+                        key = key_element.text.strip().rstrip(':')
+                        value = value_element.text.strip()
+                        course_data[key.lower().replace(' ', '_')] = value
+                
+                # Extraire les partants avec la fonction dédiée
+                participants = self.extract_participants_table(soup)
+                
+                if participants:
+                    course_data["participants"] = participants
+                    print(f"✅ Extrait {len(participants)} participants pour {course_name}")
+                    courses_data["courses"].append(course_data)
+                    print(f"✅ Course ajoutée avec {len(course_data['participants'])} participants: {course_name}")
+                else:
+                    print(f"⚠️ Aucun participant extrait pour {course_name}")
+                
+                return courses_data
+            
+            # Sinon, récupérer les liens vers chaque course
             course_links = soup.select("table a[href*='/courses/fiche-course']")
             print(f"🔗 Trouvé {len(course_links)} liens de courses")
             
@@ -259,24 +432,19 @@ class ScraperCoursesFG:
                     }
                     
                     # Extraire les infos complémentaires
-                    infos = course_soup.select(".infos-complementaires li")
+                    infos = course_soup.select(".infos-complementaires li, .course-info li, .details li")
                     for info in infos:
-                        key_element = info.select_one("span.label")
-                        value_element = info.select_one("span.value")
+                        key_element = info.select_one("span.label, .key, .info-label")
+                        value_element = info.select_one("span.value, .value, .info-value")
                         if key_element and value_element:
                             key = key_element.text.strip().rstrip(':')
                             value = value_element.text.strip()
                             course_data[key.lower().replace(' ', '_')] = value
                     
                     # Horaire de la course (généralement en haut de la page)
-                    horaire_element = course_soup.select_one(".horaire")
+                    horaire_element = course_soup.select_one(".horaire, .time, .heure, [class*='horaire']")
                     if horaire_element:
                         course_data["horaire"] = horaire_element.text.strip()
-                    else:
-                        # Essayons d'autres sélecteurs
-                        horaire_elements = course_soup.select("[class*='horaire']") or course_soup.select(".time") or course_soup.select(".heure")
-                        if horaire_elements:
-                            course_data["horaire"] = horaire_elements[0].text.strip()
                     
                     # PDF Programme
                     pdf_link = course_soup.select_one("a[href*='.pdf']")
@@ -285,7 +453,7 @@ class ScraperCoursesFG:
                         course_data["pdf_programme"] = f"{self.base_url}{pdf_href}" if pdf_href.startswith('/') else pdf_href
                     
                     # Vidéo replay
-                    video_link = course_soup.select_one("a.video-link") or course_soup.select_one("a[href*='video']")
+                    video_link = course_soup.select_one("a.video-link, a[href*='video'], .replay a")
                     if video_link and video_link.get('href'):
                         video_href = video_link.get('href')
                         course_data["video_replay"] = f"{self.base_url}{video_href}" if video_href.startswith('/') else video_href
@@ -300,8 +468,7 @@ class ScraperCoursesFG:
                         print(f"⚠️ Aucun participant extrait pour {course_name}")
                     
                     # MODIFICATION: Ne garder que les courses avec des participants réels
-                    if course_data.get("participants") and len(course_data["participants"]) >= 2 and \
-                       any(p.get("cheval") or p.get("n") or p.get("n°") or p.get("jockey") or p.get("poids") for p in course_data["participants"]):
+                    if course_data.get("participants") and len(course_data["participants"]) >= 1:
                         courses_data["courses"].append(course_data)
                         print(f"✅ Course ajoutée avec {len(course_data['participants'])} participants: {course_name}")
                     else:
@@ -362,22 +529,23 @@ class ScraperCoursesFG:
                 driver.quit()
     
     def run_today_only(self):
-        """Exécute le scraper uniquement pour les courses de Plat du jour actuel"""
-        print("📆 Scraping uniquement des réunions 'Plat' d'aujourd'hui")
+        """Exécute le scraper uniquement pour les courses du jour"""
+        print("📆 Scraping uniquement des réunions d'aujourd'hui")
         driver = self.get_driver()
 
         try:
             courses_today = self.get_links_from_aujourdhui_page(driver)
             
             if not courses_today:
-                print("⚠️ Aucune réunion Plat trouvée pour aujourd'hui")
+                print("⚠️ Aucune réunion trouvée pour aujourd'hui")
                 return
 
             for i, course in enumerate(courses_today):
                 print(f"⏳ Traitement {i+1}/{len(courses_today)}: {course['hippodrome']}")
                 
                 # Extraire les détails des courses
-                course_data = self.extract_course_details(driver, course["url"], course["hippodrome"])
+                is_course = course.get("is_course", False)
+                course_data = self.extract_course_details(driver, course["url"], course["hippodrome"], is_course)
                 
                 # Générer un nom de fichier basé sur l'hippodrome et la date
                 date_str = datetime.now().strftime("%Y-%m-%d")
