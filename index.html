@@ -6,48 +6,44 @@
     <title>Analyse Hippique</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="app-root">
-        <!-- L'application React sera montée ici -->
-        <div class="loading-overlay">
-            <div class="spinner"></div>
-            <p>Chargement des données hippiques...</p>
-        </div>
-    </div>
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/recharts/2.5.0/Recharts.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.21.2/babel.min.js"></script>
-    
-    <!-- Charger le gestionnaire de données -->
-    <script type="module">
-        import dataManager from './dataManager.js';
-        
-        // Exposer le gestionnaire de données à l'application React
-        window.dataManager = dataManager;
-        
-        // Initialiser le chargement des données
-        dataManager.initialize()
-            .then(() => {
-                console.log('Données chargées avec succès');
-                // Masquer l'overlay de chargement
-                document.querySelector('.loading-overlay').style.display = 'none';
-            })
-            .catch(error => {
-                console.error('Erreur lors du chargement des données:', error);
-                // Masquer quand même l'overlay, car nous avons des données de démonstration
-                document.querySelector('.loading-overlay').style.display = 'none';
-                // Pas d'alerte, car géré dans le dataManager avec les données de démo
-            });
-    </script>
-    
-    <!-- Application React principale -->
-    <script type="text/babel" src="app.js"></script>
-    
     <style>
-        /* Styles pour l'overlay de chargement */
+        /* Styles fallback pour assurer l'affichage minimal */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f2a28;
+            color: #f5e9c9;
+            margin: 0;
+            padding: 0;
+        }
+        .app-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
+            background-color: #0f2a28;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .logo h1 {
+            font-size: 1.5rem;
+            color: #e9d18c;
+            font-weight: 400;
+        }
+        main {
+            flex: 1;
+            padding: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
         .loading-overlay {
             position: fixed;
             top: 0;
@@ -61,7 +57,6 @@
             align-items: center;
             z-index: 9999;
         }
-        
         .spinner {
             width: 60px;
             height: 60px;
@@ -71,93 +66,175 @@
             animation: spin 1s ease-in-out infinite;
             margin-bottom: 20px;
         }
-        
         @keyframes spin {
             to { transform: rotate(360deg); }
         }
-        
-        .loading-overlay p {
+        .fallback-content {
+            text-align: center;
+            padding: 2rem;
+        }
+        .fallback-content h1 {
             color: #e9d18c;
-            font-size: 1.2rem;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 1rem;
         }
-        
-        /* Ajouter des styles pour les éléments manquants */
-        .loading-indicator {
-            text-align: center;
-            padding: 2rem;
-            color: var(--gold);
+        .fallback-content p {
+            margin-bottom: 1rem;
         }
-        
-        .error-message {
-            color: #ff6b6b;
-            background-color: rgba(255, 107, 107, 0.1);
-            padding: 1rem;
-            border-radius: 8px;
-            margin: 1rem 0;
-            text-align: center;
-        }
-        
-        .no-data {
-            padding: 2rem;
-            text-align: center;
-            color: var(--light-gold);
-        }
-        
-        .no-results {
-            text-align: center;
-            padding: 1rem;
-            color: var(--light-gold);
-            font-style: italic;
-        }
-        
-        .main-nav {
-            background-color: var(--medium-teal);
-            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
-        }
-        
-        .main-nav ul {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        .main-nav li {
-            padding: 1rem 1.5rem;
+        .fallback-btn {
+            display: inline-block;
+            background-color: #1a514e;
+            color: #e9d18c;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 1rem;
             cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .main-nav li:hover {
-            background-color: var(--light-teal);
-        }
-        
-        .main-nav li.active {
-            background-color: var(--light-teal);
-            border-bottom: 3px solid var(--gold);
-        }
-        
-        /* Styles de base pour éviter les problèmes avant le chargement de style.css */
-        :root {
-            --dark-teal: #0f2a28;
-            --medium-teal: #163e3c;
-            --light-teal: #1a514e;
-            --gold: #e9d18c;
-            --light-gold: #f5e9c9;
-            --accent: #22c7b8;
-        }
-        
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--dark-teal);
-            color: var(--light-gold);
         }
     </style>
+</head>
+<body>
+    <div id="app-root">
+        <!-- Contenu de secours si le JavaScript ne se charge pas -->
+        <div class="app-container">
+            <header>
+                <div class="logo">
+                    <i class="fas fa-horse-head" style="font-size: 2rem; color: #e9d18c;"></i>
+                    <h1>ANALYSE HIPPIQUE</h1>
+                </div>
+            </header>
+            
+            <main>
+                <div class="fallback-content">
+                    <h1>Analyse Hippique</h1>
+                    <p>Bienvenue sur la plateforme d'analyse hippique. Ce site vous permet d'analyser les performances des chevaux, jockeys et entraîneurs.</p>
+                    <p>Le contenu dynamique est en cours de chargement...</p>
+                    <div class="spinner"></div>
+                    <p id="loading-message">Initialisation de l'application...</p>
+                    
+                    <a href="/" class="fallback-btn" onclick="window.location.reload(); return false;">Rafraîchir la page</a>
+                </div>
+            </main>
+            
+            <footer style="text-align: center; padding: 1rem; border-top: 1px solid rgba(233, 209, 140, 0.2);">
+                <h1 style="color: #e9d18c; font-size: 1.2rem; margin-bottom: 0.5rem;">ANALYSE HIPPIQUE</h1>
+                <p style="color: rgba(245, 233, 201, 0.7); font-size: 0.9rem;">Système d'analyse pour événements hippiques</p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Fonction pour afficher un message de chargement
+        function updateLoadingMessage(message) {
+            const loadingMessage = document.getElementById('loading-message');
+            if (loadingMessage) {
+                loadingMessage.textContent = message;
+                console.log(message);
+            }
+        }
+
+        // Vérifier si les scripts sont bien chargés
+        window.addEventListener('DOMContentLoaded', function() {
+            updateLoadingMessage("DOM chargé. Chargement des ressources externes...");
+            
+            // Charger React
+            const reactScript = document.createElement('script');
+            reactScript.src = "https://unpkg.com/react@18/umd/react.production.min.js";
+            reactScript.crossOrigin = "";
+            
+            reactScript.onload = function() {
+                updateLoadingMessage("React chargé. Chargement de ReactDOM...");
+                
+                // Charger ReactDOM
+                const reactDomScript = document.createElement('script');
+                reactDomScript.src = "https://unpkg.com/react-dom@18/umd/react-dom.production.min.js";
+                reactDomScript.crossOrigin = "";
+                
+                reactDomScript.onload = function() {
+                    updateLoadingMessage("ReactDOM chargé. Chargement de Recharts...");
+                    
+                    // Charger Recharts
+                    const rechartsScript = document.createElement('script');
+                    rechartsScript.src = "https://unpkg.com/recharts@2.5.0/umd/Recharts.min.js";
+                    
+                    rechartsScript.onload = function() {
+                        updateLoadingMessage("Recharts chargé. Chargement de Babel...");
+                        
+                        // Charger Babel
+                        const babelScript = document.createElement('script');
+                        babelScript.src = "https://unpkg.com/@babel/standalone@7.21.2/babel.min.js";
+                        
+                        babelScript.onload = function() {
+                            updateLoadingMessage("Babel chargé. Initialisation de l'application...");
+                            
+                            // Simuler les données minimales
+                            window.dataManager = {
+                                initialize: function() {
+                                    return Promise.resolve({
+                                        jockeys: { resultats: [] },
+                                        chevaux: { resultats: [] }
+                                    });
+                                },
+                                onReady: function(callback) { callback(); },
+                                getTopJockeys: function() { 
+                                    return [
+                                        { NomPostal: "CRISTIAN DEMURO", Victoires: 63, Place: 188, GainPart: 3851 },
+                                        { NomPostal: "MAXIME GUYON", Victoires: 52, Place: 187, GainPart: 3886 },
+                                        { NomPostal: "DELPHINE SANTIAGO", Victoires: 31, Place: 81, GainPart: 1909 },
+                                        { NomPostal: "AUGUSTIN MADAMET", Victoires: 29, Place: 164, GainPart: 2146 },
+                                        { NomPostal: "STEPHANE PASQUIER", Victoires: 26, Place: 97, GainPart: 3236 }
+                                    ];
+                                },
+                                getTopChevaux: function() { 
+                                    return [
+                                        { Nom: "SAINT ETIENNE", Victoires: 4, Place: 9, AllocTot: "109500" },
+                                        { Nom: "AMERICAN FLAG", Victoires: 3, Place: 7, AllocTot: "149125" }
+                                    ];
+                                },
+                                getHippodromesForDate: function() { 
+                                    return Promise.resolve(['ParisLongchamp', 'Chantilly', 'Deauville']); 
+                                },
+                                getCoursesData: function() {
+                                    return Promise.resolve({
+                                        courses: [
+                                            { nom: "PRIX DE LA FONTAINE CARPEAUX", participants: Array(12).fill(0) },
+                                            { nom: "PRIX DU LOUVRE", participants: Array(10).fill(0) }
+                                        ]
+                                    });
+                                },
+                                getGlobalStats: function() {
+                                    return {
+                                        coursesCount: 73,
+                                        chevauxCount: 150,
+                                        jockeysCount: 150,
+                                        gainsMoyens: 33143
+                                    };
+                                }
+                            };
+                            
+                            // Charger notre application
+                            const appScript = document.createElement('script');
+                            appScript.type = "text/babel";
+                            appScript.src = "app.js";
+                            
+                            appScript.onload = function() {
+                                updateLoadingMessage("Application chargée avec succès!");
+                            };
+                            
+                            document.body.appendChild(appScript);
+                        };
+                        
+                        document.body.appendChild(babelScript);
+                    };
+                    
+                    document.body.appendChild(rechartsScript);
+                };
+                
+                document.body.appendChild(reactDomScript);
+            };
+            
+            document.body.appendChild(reactScript);
+        });
+    </script>
 </body>
 </html>
