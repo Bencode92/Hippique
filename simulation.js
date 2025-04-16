@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Calculer les stratégies pour 2, 3, 4 et 5 favoris (si possible)
             const allCombos = findAllCombosForSizes(horsesRaw, totalBet, [2, 3, 4, 5]);
             
-            if (allCombos.length === 0) {
+            if (allCombos.filter(combo => combo.available && combo.rentable).length === 0) {
                 throw new Error('Aucune combinaison rentable trouvée. Essayez de modifier les cotes ou d\'augmenter le montant total.');
             }
             
@@ -183,29 +183,36 @@ document.addEventListener('DOMContentLoaded', function() {
                 gain_minimum: gainMin,
                 gain_moyen: gainAvg,
                 gain_maximum: gainMax,
-                rentable: isRentable
+                rentable: isRentable,
+                available: true
             };
         }
 
         const horseNames = Object.keys(sortedHorses);
         const allCombos = [];
 
-        // Générer les combinaisons pour chaque taille spécifiée
-        sizes.forEach(size => {
+        // Générer toutes les combinaisons demandées (2, 3, 4, 5)
+        for (const size of sizes) {
+            // Vérifier si nous avons assez de chevaux pour cette taille
             if (size <= horseNames.length) {
                 const subset = horseNames.slice(0, size); // top "size" favoris
                 const result = computeCombo(subset, totalBet);
                 result.taille = size;
                 allCombos.push(result);
+            } else {
+                // Pas assez de chevaux, ajouter un combo "non disponible"
+                allCombos.push({
+                    taille: size,
+                    available: false,
+                    rentable: false,
+                    gain_moyen: 0,
+                    gain_maximum: 0
+                });
             }
-        });
+        }
 
-        // Trier les combos par gain moyen décroissant, mais mettre les rentables en premier
-        allCombos.sort((a, b) => {
-            if (a.rentable && !b.rentable) return -1;
-            if (!a.rentable && b.rentable) return 1;
-            return b.gain_moyen - a.gain_moyen;
-        });
+        // Trier les combos par ordre croissant de taille
+        allCombos.sort((a, b) => a.taille - b.taille);
 
         return allCombos;
     }
@@ -215,54 +222,59 @@ document.addEventListener('DOMContentLoaded', function() {
         resultContainer.style.display = 'block';
         betsTableBody.innerHTML = ''; // Réinitialiser
 
-        // Trouver le meilleur combo (premier combo rentable)
-        const bestCombo = comboList.find(combo => combo.rentable) || comboList[0];
+        // Trouver le meilleur combo (premier combo rentable et disponible)
+        const bestCombo = comboList.find(combo => combo.available && combo.rentable) || comboList.find(combo => combo.available) || comboList[0];
 
         // Mettre à jour l'en-tête avec les meilleurs chiffres (top combo rentable)
-        minGainElement.textContent = bestCombo.rentable ? 
-            `+${bestCombo.gain_minimum.toFixed(2)} €` : 
-            `${bestCombo.gain_minimum.toFixed(2)} €`;
-        avgGainElement.textContent = bestCombo.rentable ? 
-            `+${bestCombo.gain_moyen.toFixed(2)} €` : 
-            `${bestCombo.gain_moyen.toFixed(2)} €`;
-        selectedHorsesElement.textContent = bestCombo.chevaux.length;
+        if (bestCombo.available) {
+            minGainElement.textContent = bestCombo.rentable ? 
+                `+${bestCombo.gain_minimum.toFixed(2)} €` : 
+                `${bestCombo.gain_minimum.toFixed(2)} €`;
+            avgGainElement.textContent = bestCombo.rentable ? 
+                `+${bestCombo.gain_moyen.toFixed(2)} €` : 
+                `${bestCombo.gain_moyen.toFixed(2)} €`;
+            selectedHorsesElement.textContent = bestCombo.chevaux.length;
+        } else {
+            minGainElement.textContent = "N/A";
+            avgGainElement.textContent = "N/A";
+            selectedHorsesElement.textContent = "N/A";
+        }
         totalStakeElement.textContent = `${totalBet.toFixed(2)} €`;
 
-        // Afficher chaque combo dans l'ordre des tailles demandées
-        const orderedSizes = [2, 3, 4, 5];
-        const sortedCombos = [];
-        
-        // Réorganiser les combos par taille croissante
-        orderedSizes.forEach(size => {
-            const combo = comboList.find(c => c.taille === size);
-            if (combo) sortedCombos.push(combo);
-        });
+        // Afficher chaque combo dans l'ordre des tailles
+        comboList.forEach(combo => {
+            if (combo.available) {
+                // Combo disponible
+                const headerClass = combo.rentable ? "section-header" : "section-header non-rentable";
+                const headerIcon = combo.rentable ? "💡" : "⚠️";
+                const headerText = combo.rentable ? 
+                    `${headerIcon} Combo avec ${combo.taille} favoris | Gain net moyen : +${combo.gain_moyen.toFixed(2)} € | Gain max : +${combo.gain_maximum.toFixed(2)} €` :
+                    `${headerIcon} Combo avec ${combo.taille} favoris | NON RENTABLE | Gain net moyen : ${combo.gain_moyen.toFixed(2)} €`;
+                
+                const title = document.createElement('tr');
+                title.innerHTML = `<td colspan="5" class="${headerClass}">${headerText}</td>`;
+                betsTableBody.appendChild(title);
 
-        sortedCombos.forEach(combo => {
-            const headerClass = combo.rentable ? "section-header" : "section-header non-rentable";
-            const headerIcon = combo.rentable ? "💡" : "⚠️";
-            const headerText = combo.rentable ? 
-                `${headerIcon} Combo avec ${combo.chevaux.length} favoris | Gain net moyen : +${combo.gain_moyen.toFixed(2)} € | Gain max : +${combo.gain_maximum.toFixed(2)} €` :
-                `${headerIcon} Combo avec ${combo.chevaux.length} favoris | NON RENTABLE | Gain net moyen : ${combo.gain_moyen.toFixed(2)} €`;
-            
-            const title = document.createElement('tr');
-            title.innerHTML = `<td colspan="5" class="${headerClass}">${headerText}</td>`;
-            betsTableBody.appendChild(title);
+                combo.chevaux.forEach((cheval, i) => {
+                    const row = document.createElement('tr');
+                    const gainNet = combo.gains_net[i];
+                    const gainClass = gainNet > 0 ? 'positive' : 'negative';
 
-            combo.chevaux.forEach((cheval, i) => {
-                const row = document.createElement('tr');
-                const gainNet = combo.gains_net[i];
-                const gainClass = gainNet > 0 ? 'positive' : 'negative';
-
-                row.innerHTML = `
-                    <td>${cheval}</td>
-                    <td>${combo.cotes[i].toFixed(2)}</td>
-                    <td>${combo.mises[i].toFixed(2)} €</td>
-                    <td>${combo.gains_bruts[i].toFixed(2)} €</td>
-                    <td class="${gainClass}">${gainNet > 0 ? '+' : ''}${gainNet.toFixed(2)} €</td>
-                `;
-                betsTableBody.appendChild(row);
-            });
+                    row.innerHTML = `
+                        <td>${cheval}</td>
+                        <td>${combo.cotes[i].toFixed(2)}</td>
+                        <td>${combo.mises[i].toFixed(2)} €</td>
+                        <td>${combo.gains_bruts[i].toFixed(2)} €</td>
+                        <td class="${gainClass}">${gainNet > 0 ? '+' : ''}${gainNet.toFixed(2)} €</td>
+                    `;
+                    betsTableBody.appendChild(row);
+                });
+            } else {
+                // Combo non disponible (pas assez de chevaux)
+                const title = document.createElement('tr');
+                title.innerHTML = `<td colspan="5" class="section-header non-available">ℹ️ Combo avec ${combo.taille} favoris | Non disponible (pas assez de chevaux)</td>`;
+                betsTableBody.appendChild(title);
+            }
         });
     }
     
