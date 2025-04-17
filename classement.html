@@ -585,6 +585,13 @@
             margin-left: 5px;
             font-size: 0.9em;
         }
+        
+        /* Style pour les rangs ex-aequo */
+        .tied-rank {
+            background-color: rgba(64, 224, 208, 0.1);
+            border-radius: 4px;
+            padding: 2px 5px;
+        }
     </style>
 </head>
 <body>
@@ -866,49 +873,49 @@
                 ]
             };
             
-            // Fonction pour calculer le classement pondéré - NOUVELLE VERSION AVEC GESTION DES ÉGALITÉS
+            // Fonction globale pour la gestion des égalités dans les classements
+            function rankWithTies(items, valueGetter) {
+                // Trier d'abord par la valeur (décroissante)
+                const sorted = [...items].sort((a, b) => {
+                    const valA = valueGetter(a);
+                    const valB = valueGetter(b);
+                    const diff = valB - valA;
+                    // En cas d'égalité, trier par nom pour garantir la stabilité
+                    if (diff === 0) {
+                        const nameA = currentCategory === 'chevaux' ? a.Nom : a.NomPostal;
+                        const nameB = currentCategory === 'chevaux' ? b.Nom : b.NomPostal;
+                        return nameA.localeCompare(nameB);
+                    }
+                    return diff;
+                });
+                
+                // Assigner les rangs avec gestion des égalités
+                const ranks = new Map();
+                let currentRank = 1;
+                let currentValue = null;
+                
+                sorted.forEach((item, index) => {
+                    const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
+                    const value = valueGetter(item);
+                    
+                    // Si c'est la première itération ou si la valeur est différente
+                    if (index === 0 || value !== currentValue) {
+                        currentRank = index + 1;
+                        currentValue = value;
+                    }
+                    
+                    ranks.set(key, currentRank);
+                });
+                
+                return ranks;
+            }
+            
+            // Fonction pour calculer le classement pondéré avec gestion des égalités
             function calculateCompositeRanking(data) {
                 if (!data || !data.length) return data;
                 
                 // IMPORTANT: Cloner les données pour ne pas modifier les originales
                 const dataCopy = JSON.parse(JSON.stringify(data));
-                
-                // Fonction pour attribuer des rangs avec gestion d'égalités (méthode min)
-                function rankWithTies(items, valueGetter) {
-                    // Trier d'abord par la valeur (décroissante)
-                    const sorted = [...items].sort((a, b) => {
-                        const valA = valueGetter(a);
-                        const valB = valueGetter(b);
-                        const diff = valB - valA;
-                        // En cas d'égalité, trier par nom pour garantir la stabilité
-                        if (diff === 0) {
-                            const nameA = currentCategory === 'chevaux' ? a.Nom : a.NomPostal;
-                            const nameB = currentCategory === 'chevaux' ? b.Nom : b.NomPostal;
-                            return nameA.localeCompare(nameB);
-                        }
-                        return diff;
-                    });
-                    
-                    // Assigner les rangs avec gestion des égalités
-                    const ranks = new Map();
-                    let currentRank = 1;
-                    let currentValue = null;
-                    
-                    sorted.forEach((item, index) => {
-                        const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
-                        const value = valueGetter(item);
-                        
-                        // Si c'est la première itération ou si la valeur est différente
-                        if (index === 0 || value !== currentValue) {
-                            currentRank = index + 1;
-                            currentValue = value;
-                        }
-                        
-                        ranks.set(key, currentRank);
-                    });
-                    
-                    return ranks;
-                }
                 
                 // Fonctions d'accès aux différentes métriques selon la catégorie
                 const victoryGetter = item => {
@@ -978,7 +985,7 @@
                 });
                 
                 // Tri final par score mixte croissant (meilleur score = plus petit)
-                return dataCopy.sort((a, b) => {
+                const sortedData = dataCopy.sort((a, b) => {
                     const diff = parseFloat(a.ScoreMixte || 999) - parseFloat(b.ScoreMixte || 999);
                     if (diff !== 0) return diff;
                     
@@ -986,7 +993,32 @@
                     const nameA = currentCategory === 'chevaux' ? a.Nom : a.NomPostal;
                     const nameB = currentCategory === 'chevaux' ? b.Nom : b.NomPostal;
                     return nameA.localeCompare(nameB);
-                }).map((item, index) => ({ ...item, Rang: index + 1 }));
+                });
+                
+                // Assigner les rangs avec gestion des égalités pour le score pondéré
+                const scoreMixteRanks = new Map();
+                let currentRank = 1;
+                let currentScore = null;
+                
+                sortedData.forEach((item, index) => {
+                    const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
+                    const score = parseFloat(item.ScoreMixte);
+                    
+                    if (index === 0 || score !== currentScore) {
+                        currentRank = index + 1;
+                        currentScore = score;
+                    }
+                    
+                    scoreMixteRanks.set(key, currentRank);
+                });
+                
+                // Mettre à jour les rangs finaux
+                sortedData.forEach((item) => {
+                    const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
+                    item.Rang = scoreMixteRanks.get(key) || (index + 1);
+                });
+                
+                return sortedData;
             }
             
             // Afficher un squelette de chargement
@@ -1229,106 +1261,76 @@
                 return number.toLocaleString('fr-FR');
             }
             
-            // Fonction pour trier les données - CORRIGÉE
+            // Fonction pour trier les données avec gestion des égalités pour tous les types de tri
             function sortData(data, sortKey) {
                 if (!data || !data.length) return [];
                 
                 // Clone les données pour ne pas modifier l'original
                 const sortedData = JSON.parse(JSON.stringify(data));
                 
-                // TOUJOURS calculer les scores pondérés, quel que soit le tri
-                sortedData.forEach(item => {
-                    if (!item.ScoreMixte) {
-                        // Assigner une valeur temporaire qui sera remplacée plus tard
-                        item.ScoreMixte = "0.00";
-                    }
-                });
-                
-                // Cas spécial pour le classement mixte
+                // Pour le tri mixte (score pondéré), on utilise directement la fonction spécialisée
                 if (sortKey === 'mixte') {
                     return calculateCompositeRanking(sortedData);
                 }
                 
+                // Définir le getter approprié selon le type de tri
+                let valueGetter;
                 if (sortKey === 'default') {
-                    // Tri par défaut (par nombre de victoires)
-                    if (currentCategory === 'chevaux') {
-                        sortedData.sort((a, b) => {
-                            const valA = parseInt(a.NbVictoires || 0);
-                            const valB = parseInt(b.NbVictoires || 0);
-                            // Départage par nom alphabétique en cas d'égalité
-                            if (valA === valB) {
-                                return (a.Nom || '').localeCompare(b.Nom || '');
-                            }
-                            return sortDirection === 'desc' ? valB - valA : valA - valB;
-                        });
-                    } else {
-                        sortedData.sort((a, b) => {
-                            const valA = parseInt(a.Victoires || 0);
-                            const valB = parseInt(b.Victoires || 0);
-                            // Départage par nom alphabétique en cas d'égalité
-                            if (valA === valB) {
-                                return (a.NomPostal || '').localeCompare(b.NomPostal || '');
-                            }
-                            return sortDirection === 'desc' ? valB - valA : valA - valB;
-                        });
-                    }
+                    // Tri par nombre de victoires
+                    valueGetter = item => {
+                        return currentCategory === 'chevaux' ? 
+                            parseInt(item.NbVictoires || 0) : 
+                            parseInt(item.Victoires || 0);
+                    };
                 } else if (sortKey === 'taux-victoire') {
                     // Tri par taux de victoire
-                    sortedData.sort((a, b) => {
-                        const valA = parseFloat(a.TauxVictoire || 0);
-                        const valB = parseFloat(b.TauxVictoire || 0);
-                        // Départage par nom alphabétique en cas d'égalité
-                        if (valA === valB) {
-                            const nameA = currentCategory === 'chevaux' ? (a.Nom || '') : (a.NomPostal || '');
-                            const nameB = currentCategory === 'chevaux' ? (b.Nom || '') : (b.NomPostal || '');
-                            return nameA.localeCompare(nameB);
-                        }
-                        return sortDirection === 'desc' ? valB - valA : valA - valB;
-                    });
+                    valueGetter = item => parseFloat(item.TauxVictoire || 0);
                 } else if (sortKey === 'taux-place') {
                     // Tri par taux de place
-                    sortedData.sort((a, b) => {
-                        const valA = parseFloat(a.TauxPlace || 0);
-                        const valB = parseFloat(b.TauxPlace || 0);
-                        // Départage par nom alphabétique en cas d'égalité
-                        if (valA === valB) {
-                            const nameA = currentCategory === 'chevaux' ? (a.Nom || '') : (a.NomPostal || '');
-                            const nameB = currentCategory === 'chevaux' ? (b.Nom || '') : (b.NomPostal || '');
-                            return nameA.localeCompare(nameB);
-                        }
-                        return sortDirection === 'desc' ? valB - valA : valA - valB;
-                    });
+                    valueGetter = item => parseFloat(item.TauxPlace || 0);
                 }
                 
-                // Mise à jour des rangs après le tri
-                const result = sortedData.map((item, index) => ({
-                    ...item,
-                    Rang: index + 1
-                }));
+                // Utiliser rankWithTies pour générer les rangs avec gestion des égalités
+                const ranks = rankWithTies(sortedData, valueGetter);
                 
-                // Appliquer les scores originaux pondérés aux données
-                result.forEach(item => {
-                    // Identifier l'item par son nom
-                    const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
+                // Trier les données en fonction du critère sélectionné
+                const compareFunction = (a, b) => {
+                    const keyA = currentCategory === 'chevaux' ? a.Nom : a.NomPostal;
+                    const keyB = currentCategory === 'chevaux' ? b.Nom : b.NomPostal;
                     
-                    // Si on a un score original pour cet item, l'utiliser
-                    if (key && originalScores[currentCategory] && originalScores[currentCategory][key]) {
+                    // Obtenir les rangs avec égalités
+                    const rankA = ranks.get(keyA) || 999;
+                    const rankB = ranks.get(keyB) || 999;
+                    
+                    // Par défaut, tri croissant (le plus petit rang en premier)
+                    let direction = sortDirection === 'desc' ? -1 : 1;
+                    
+                    // Si les rangs sont différents, trier par rang
+                    const diff = (rankA - rankB) * direction;
+                    if (diff !== 0) return diff;
+                    
+                    // En cas d'égalité, tri alphabétique pour stabilité
+                    return keyA.localeCompare(keyB);
+                };
+                
+                // Trier les données
+                sortedData.sort(compareFunction);
+                
+                // Assigner les rangs finaux
+                sortedData.forEach((item, index) => {
+                    const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
+                    // Utiliser le rang calculé par rankWithTies pour ce type de tri
+                    item.Rang = ranks.get(key) || (index + 1);
+                    
+                    // Récupérer le score pondéré depuis originalScores si disponible
+                    if (originalScores[currentCategory] && originalScores[currentCategory][key]) {
                         item.ScoreMixte = originalScores[currentCategory][key];
-                    } 
-                    // Sinon, si c'est la première fois qu'on voit cet item et que le tri n'est pas mixte
-                    else if (sortKey !== 'mixte') {
-                        // Calculer le score pour cet item isolément si on n'a pas encore de scores
-                        const withScores = calculateCompositeRanking([...allData[currentCategory]]);
-                        result.forEach(item => {
-                            const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
-                            if (key && originalScores[currentCategory] && originalScores[currentCategory][key]) {
-                                item.ScoreMixte = originalScores[currentCategory][key];
-                            }
-                        });
+                    } else if (!item.ScoreMixte) {
+                        item.ScoreMixte = "0.00";
                     }
                 });
                 
-                return result;
+                return sortedData;
             }
             
             // Fonction pour afficher les données dans un tableau
@@ -1381,6 +1383,13 @@
                             <tbody>
                 `;
                 
+                // Créer un Map pour suivre les rangs et marquer les égalités
+                const rankCounts = new Map();
+                pageData.forEach(item => {
+                    const rank = item.Rang;
+                    rankCounts.set(rank, (rankCounts.get(rank) || 0) + 1);
+                });
+                
                 // Générer les lignes du tableau
                 pageData.forEach(item => {
                     tableHTML += `<tr>`;
@@ -1390,12 +1399,23 @@
                         const cellClass = column.class || '';
                         
                         // Appliquer le renderer s'il existe, sinon utiliser la valeur telle quelle
-                        const cellContent = column.renderer 
+                        let cellContent = column.renderer 
                             ? column.renderer(value, item) 
                             : value;
                         
                         // Ajouter des classes spéciales pour les rangs
-                        const rankClass = column.key === 'Rang' ? ` rank-${value}` : '';
+                        let rankClass = '';
+                        if (column.key === 'Rang') {
+                            // Si ce rang a plusieurs occurrences, ajouter la classe 'tied-rank'
+                            if (rankCounts.get(value) > 1) {
+                                rankClass = ` tied-rank`;
+                            }
+                            
+                            // Ajouter les classes spéciales pour les trois premiers rangs
+                            if (value <= 3) {
+                                rankClass += ` rank-${value}`;
+                            }
+                        }
                         
                         tableHTML += `<td class="${cellClass}${rankClass}">${cellContent}</td>`;
                     });
@@ -1560,7 +1580,7 @@
                 });
             }
             
-            // Fonction pour charger et afficher les données d'une catégorie - CORRIGÉE
+            // Fonction pour charger et afficher les données d'une catégorie
             async function loadCategory(category) {
                 currentCategory = category;
                 currentPage = 1;
@@ -1585,11 +1605,8 @@
                 // Charger les données
                 const data = await loadData(category);
                 
-                // Calculer les scores pondérés pour toutes les données une seule fois
-                const processedData = calculateCompositeRanking(data);
-
-                // Appliquer le tri par défaut aux données
-                const sortedData = sortData(processedData, currentSort);
+                // Appliquer le tri par défaut aux données avec gestion des égalités
+                const sortedData = sortData(data, currentSort);
                 
                 // Filtrer les données si nécessaire
                 const searchTerm = searchInput.value.trim();
