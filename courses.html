@@ -367,94 +367,84 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        /* Styles pour la section de détails de course */
-        .course-details-container {
-            background-color: rgba(10, 30, 30, 0.7);
-            border: 1px solid rgba(233, 209, 140, 0.3);
-            border-top: none;
-            padding: 1.5rem;
-            display: none;
-            animation: slideDown 0.4s ease;
+        /* Styles pour la fenêtre modale de détails */
+        .course-modal {
+            display: none; 
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            animation: fadeIn 0.3s ease;
         }
 
-        @keyframes slideDown {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .course-details-container.visible {
+        .course-modal.visible {
             display: block;
-            margin-top: -1px;
         }
 
-        .course-details-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .modal-content {
+            background-color: var(--dark-teal);
+            margin: 5% auto;
+            padding: 2rem;
+            border: 1px solid var(--gold);
+            border-radius: 12px;
+            width: 90%;
+            max-width: 1000px;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .close-modal {
+            color: var(--light-gold);
+            position: absolute;
+            right: 1.5rem;
+            top: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .close-modal:hover {
+            color: var(--accent);
+            transform: scale(1.1);
+        }
+
+        .modal-title {
+            color: var(--gold);
             margin-bottom: 1.5rem;
+            font-size: 1.8rem;
             border-bottom: 1px solid rgba(233, 209, 140, 0.2);
             padding-bottom: 0.8rem;
         }
 
-        .course-details-title {
-            color: var(--gold);
-            font-size: 1.5rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-        }
-
-        .course-details-meta {
+        .course-meta {
             display: flex;
             flex-wrap: wrap;
             gap: 1.5rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
 
         .meta-item {
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            font-size: 0.95rem;
         }
 
         .meta-item i {
             color: var(--accent);
         }
 
-        .course-details-close {
-            color: var(--light-gold);
-            background: none;
-            border: none;
-            font-size: 1.2rem;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-
-        .course-details-close:hover {
-            color: var(--accent);
-            transform: scale(1.1);
-        }
-
-        .participants-title {
-            color: var(--accent);
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-            font-weight: 500;
-        }
-
-        .participants-table-container {
-            overflow-x: auto;
-            margin-bottom: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
         .participants-table {
             width: 100%;
             border-collapse: separate;
             border-spacing: 0;
+            margin-bottom: 1.5rem;
         }
 
         .participants-table th {
@@ -465,7 +455,6 @@
             font-weight: 500;
             position: sticky;
             top: 0;
-            font-size: 0.9rem;
         }
 
         .participants-table tr {
@@ -487,7 +476,6 @@
         .participants-table td {
             padding: 0.8rem 1rem;
             border-bottom: 1px solid rgba(233, 209, 140, 0.1);
-            font-size: 0.9rem;
         }
 
         .horse-number {
@@ -563,7 +551,6 @@
             font-weight: 500;
             cursor: pointer;
             transition: all 0.3s ease;
-            text-decoration: none;
         }
 
         .action-btn.primary {
@@ -591,6 +578,140 @@
             background-color: rgba(212, 175, 55, 0.2);
         }
         
+        .data-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+            margin-bottom: 2rem;
+            background-color: rgba(22, 62, 60, 0.2);
+            border: 1px solid rgba(233, 209, 140, 0.2);
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .data-table th {
+            background-color: rgba(5, 25, 25, 0.9);
+            color: var(--gold);
+            padding: 1.2rem 1.5rem;
+            text-align: left;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        
+        .data-table tr.hippodrome-row {
+            background-color: rgba(22, 62, 60, 0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .data-table tr.hippodrome-row:hover {
+            background-color: rgba(26, 81, 78, 0.6);
+        }
+        
+        .data-table tr.hippodrome-row.active {
+            background-color: var(--light-teal);
+        }
+        
+        .data-table tr.course-row {
+            background-color: rgba(10, 30, 30, 0.2);
+            display: none;
+        }
+        
+        .data-table tr.course-row.visible {
+            display: table-row;
+        }
+        
+        .data-table tr.course-row:hover {
+            background-color: rgba(26, 81, 78, 0.4);
+        }
+        
+        .data-table td {
+            padding: 1.2rem 1.5rem;
+            border-bottom: 1px solid rgba(233, 209, 140, 0.08);
+            transition: all 0.3s ease;
+        }
+        
+        .data-table td.course-indent {
+            padding-left: 3rem;
+        }
+        
+        .data-table a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            transition: all 0.2s ease;
+        }
+        
+        .data-table a:after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent);
+            transition: width 0.3s ease;
+        }
+        
+        .data-table a:hover:after {
+            width: 100%;
+        }
+        
+        .tabs {
+            display: flex;
+            margin-bottom: 2rem;
+            overflow-x: auto;
+            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
+            border-radius: 8px 8px 0 0;
+            background: rgba(22, 62, 60, 0.2);
+        }
+        
+        .tab {
+            padding: 1.2rem 2.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: var(--light-gold);
+            text-align: center;
+            white-space: nowrap;
+            font-weight: 500;
+            position: relative;
+        }
+        
+        .tab:hover {
+            background-color: rgba(26, 81, 78, 0.5);
+        }
+        
+        .tab.active {
+            background: linear-gradient(to bottom, var(--light-teal), var(--medium-teal));
+            color: var(--gold);
+            border-bottom: 3px solid var(--gold);
+            font-weight: 600;
+        }
+        
+        .tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid var(--gold);
+        }
+        
         .loading {
             text-align: center;
             padding: 3rem;
@@ -615,11 +736,6 @@
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
         }
         
         .no-results {
@@ -664,6 +780,120 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         
+        .course-details {
+            background-color: rgba(22, 62, 60, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .course-details h2 {
+            color: var(--gold);
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
+            padding-bottom: 0.5rem;
+        }
+        
+        .course-info {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+        
+        .course-info p {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .course-info i {
+            color: var(--accent);
+            width: 20px;
+            text-align: center;
+        }
+        
+        .participants-title {
+            color: var(--accent);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+        
+        .participants-table {
+            width: 100%;
+        }
+        
+        .participants-table td, 
+        .participants-table th {
+            padding: 1rem;
+        }
+        
+        .participant-number {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--medium-teal);
+            color: var(--gold);
+            border-radius: 50%;
+            font-weight: 600;
+            margin-right: 0.5rem;
+        }
+        
+        .table-responsive {
+            overflow-x: auto;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        footer {
+            margin-top: 4rem;
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(to right, var(--dark-teal), var(--medium-teal));
+            border-top: 1px solid rgba(233, 209, 140, 0.1);
+            color: var(--light-gold);
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        footer p {
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+        }
+        
+        footer span {
+            color: var(--gold);
+            font-weight: 400;
+        }
+        
+        .action-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: rgba(64, 224, 208, 0.1);
+            color: var(--accent);
+            border: 1px solid rgba(64, 224, 208, 0.3);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .action-button:hover {
+            background-color: rgba(64, 224, 208, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
         .toggle-icon {
             transition: transform 0.3s ease;
         }
@@ -677,12 +907,7 @@
                 padding: 1rem;
             }
             
-            .course-details-meta {
-                flex-direction: column;
-                gap: 0.7rem;
-            }
-            
-            .participants-table {
+            .data-table {
                 display: block;
                 overflow-x: auto;
                 white-space: nowrap;
@@ -696,6 +921,10 @@
             .nav-main li {
                 padding: 0.75rem 1rem;
                 font-size: 0.9rem;
+            }
+            
+            .course-details {
+                padding: 1rem;
             }
         }
 
@@ -730,26 +959,6 @@
 
         .date-button:hover i {
             transform: translateX(5px);
-        }
-        
-        footer {
-            margin-top: 4rem;
-            text-align: center;
-            padding: 2rem;
-            background: linear-gradient(to right, var(--dark-teal), var(--medium-teal));
-            border-top: 1px solid rgba(233, 209, 140, 0.1);
-            color: var(--light-gold);
-            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.05);
-        }
-        
-        footer p {
-            margin-bottom: 0.5rem;
-            font-weight: 300;
-        }
-        
-        footer span {
-            color: var(--gold);
-            font-weight: 400;
         }
     </style>
 </head>
@@ -799,6 +1008,45 @@
             </div>
         </div>
         
+        <div id="course-modal" class="course-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2 class="modal-title" id="modal-title">Détails de la course</h2>
+                
+                <div class="course-meta" id="course-meta">
+                    <!-- Métadonnées de la course -->
+                </div>
+                
+                <h3 class="participants-title">Liste des participants</h3>
+                
+                <div class="table-responsive">
+                    <table class="participants-table" id="participants-table">
+                        <thead>
+                            <tr>
+                                <th>N°</th>
+                                <th>Cheval</th>
+                                <th>Jockey</th>
+                                <th>Entraîneur</th>
+                                <th>Propriétaire</th>
+                                <th>Éleveurs</th>
+                                <th>Poids</th>
+                                <th>Performances</th>
+                            </tr>
+                        </thead>
+                        <tbody id="participants-tbody">
+                            <!-- Participants de la course -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="action-buttons">
+                    <a href="simulation.html" class="action-btn secondary">
+                        <i class="fas fa-calculator"></i> Simuler des paris sur cette course
+                    </a>
+                </div>
+            </div>
+        </div>
+        
         <div class="action-buttons">
             <a href="index.html" class="action-btn primary">
                 <i class="fas fa-arrow-left"></i> Retour à l'accueil
@@ -822,6 +1070,11 @@
             const searchInput = document.getElementById('search-input');
             const searchClear = document.getElementById('search-clear');
             const lastUpdateEl = document.getElementById('last-update');
+            const courseModal = document.getElementById('course-modal');
+            const closeModal = document.querySelector('.close-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const courseMeta = document.getElementById('course-meta');
+            const participantsTable = document.getElementById('participants-tbody');
             
             // Données des courses - Ces données seraient normalement chargées dynamiquement
             const coursesData = {
@@ -832,15 +1085,15 @@
                         numero: "1",
                         type: "Plat",
                         participants: [
-                            { n: "1", cheval: "CHARMING CAT", jockey: "HUGO BESNIER", entraineur: "P. COTTIER", proprietaire: "GOUSSERIE RACING", eleveurs: "X. RICHARD", poids: "58 kg" },
-                            { n: "2", cheval: "THE BLACK STONE", jockey: "ALEJANDRO GUTIERREZ VAL", entraineur: "MME J. SOUBAGNE", proprietaire: "TAKE FIVE SAS", eleveurs: "TAKE FIVE SAS, MME J. SOUBAGNE", poids: "58 kg" },
-                            { n: "3", cheval: "HELLO SPRING", jockey: "DAVID BREUX", entraineur: "T. RICHARD (S)", proprietaire: "H.MONCHAUX/MME K.RICHARD", eleveurs: "H. MONCHAUX", poids: "54,5 kg" },
-                            { n: "4", cheval: "FRAGANCE", jockey: "MME MICKAELLE MICHEL", entraineur: "JPJ. DUBOIS", proprietaire: "MR JEAN-PIERRE-JOSEPH DUBOIS", eleveurs: "JPJ. DUBOIS", poids: "52,5 kg(54 kg)" },
-                            { n: "5", cheval: "WHITE NIGHT", jockey: "MME MANON GERMAIN", entraineur: "JPJ. DUBOIS", proprietaire: "MR JEAN-PIERRE-JOSEPH DUBOIS", eleveurs: "JPJ. DUBOIS", poids: "52,5 kg(54 kg)" },
-                            { n: "6", cheval: "CLEA CHOPE", jockey: "ANTONIO ORANI", entraineur: "C. ESCUDER", proprietaire: "EC.PUGLIA/EC.J.PIASCO/EC.METAL", eleveurs: "A. CHOPARD", poids: "54 kg" },
-                            { n: "7", cheval: "REMENBER CHOPE", jockey: "IORITZ MENDIZABAL", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "R.CAPOZZI/MME M.BLANC", eleveurs: "A. CHOPARD, MME R. KHADDAM, LEMZAR SARL", poids: "54 kg" },
-                            { n: "8", cheval: "ILE AUX ROSES", jockey: "MME CORALIE PACAUT", entraineur: "C. ESCUDER", proprietaire: "MR BERNARD GIRAUDON", eleveurs: "GUY PARIENTE HOLDING", poids: "51,5 kg(53 kg)" },
-                            { n: "9", cheval: "PINK ROCHE", jockey: "SYLVAIN RUIS", entraineur: "C. ESCUDER", proprietaire: "MME CRISTEL MARTINA", eleveurs: "SCEA MARMION VAUVILLE", poids: "53 kg" }
+                            { n: "1", cheval: "CHARMING CAT", jockey: "HUGO BESNIER", entraineur: "P. COTTIER", proprietaire: "GOUSSERIE RACING", eleveurs: "X. RICHARD", poids: "58 kg", performances: "1p" },
+                            { n: "2", cheval: "THE BLACK STONE", jockey: "ALEJANDRO GUTIERREZ VAL", entraineur: "MME J. SOUBAGNE", proprietaire: "TAKE FIVE SAS", eleveurs: "TAKE FIVE SAS, MME J. SOUBAGNE", poids: "58 kg", performances: "1p" },
+                            { n: "3", cheval: "HELLO SPRING", jockey: "DAVID BREUX", entraineur: "T. RICHARD (S)", proprietaire: "H.MONCHAUX/MME K.RICHARD", eleveurs: "H. MONCHAUX", poids: "54,5 kg", performances: "" },
+                            { n: "4", cheval: "FRAGANCE", jockey: "MME MICKAELLE MICHEL", entraineur: "JPJ. DUBOIS", proprietaire: "MR JEAN-PIERRE-JOSEPH DUBOIS", eleveurs: "JPJ. DUBOIS", poids: "52,5 kg(54 kg)", performances: "6p" },
+                            { n: "5", cheval: "WHITE NIGHT", jockey: "MME MANON GERMAIN", entraineur: "JPJ. DUBOIS", proprietaire: "MR JEAN-PIERRE-JOSEPH DUBOIS", eleveurs: "JPJ. DUBOIS", poids: "52,5 kg(54 kg)", performances: "8p" },
+                            { n: "6", cheval: "CLEA CHOPE", jockey: "ANTONIO ORANI", entraineur: "C. ESCUDER", proprietaire: "EC.PUGLIA/EC.J.PIASCO/EC.METAL", eleveurs: "A. CHOPARD", poids: "54 kg", performances: "6p" },
+                            { n: "7", cheval: "REMENBER CHOPE", jockey: "IORITZ MENDIZABAL", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "R.CAPOZZI/MME M.BLANC", eleveurs: "A. CHOPARD, MME R. KHADDAM, LEMZAR SARL", poids: "54 kg", performances: "3p" },
+                            { n: "8", cheval: "ILE AUX ROSES", jockey: "MME CORALIE PACAUT", entraineur: "C. ESCUDER", proprietaire: "MR BERNARD GIRAUDON", eleveurs: "GUY PARIENTE HOLDING", poids: "51,5 kg(53 kg)", performances: "" },
+                            { n: "9", cheval: "PINK ROCHE", jockey: "SYLVAIN RUIS", entraineur: "C. ESCUDER", proprietaire: "MME CRISTEL MARTINA", eleveurs: "SCEA MARMION VAUVILLE", poids: "53 kg", performances: "" }
                         ]
                     },
                     {
@@ -849,17 +1102,17 @@
                         numero: "2",
                         type: "Plat",
                         participants: [
-                            { n: "1", cheval: "FINK PLOYD", jockey: "VALENTIN SEGUY", entraineur: "J. REYNIER (S)", proprietaire: "G.AUGUSTIN-NORMAND", eleveurs: "P. JABOT", poids: "58 kg" },
-                            { n: "2", cheval: "BLACK TIE", jockey: "JEAN-BERNARD EYQUEM", entraineur: "JC. ROUGET (S)", proprietaire: "ECURIE D.LAYANI/GOUSSERIE RACING", eleveurs: "E. PUERARI, ECURIE DU PARC MONCEAU, MME A. GRAVEREAUX, OCEANIC BLOODSTOCK INC", poids: "58 kg" },
-                            { n: "3", cheval: "NELLO", jockey: "HUGO BESNIER", entraineur: "P. COTTIER", proprietaire: "ECURIE DU SUD", eleveurs: "T.DE LA HERONNIERE", poids: "58 kg" },
-                            { n: "4", cheval: "UNFURLED", jockey: "ANTHONY CRASTUS", entraineur: "N. PERRET (S)", proprietaire: "ECURIE THOMAS SIVADIER", eleveurs: "E.A.R.L. ELEVAGE DES LOGES", poids: "58 kg" },
-                            { n: "5", cheval: "SAINT FLORENT", jockey: "MARVIN GRANDIN", entraineur: "J. REYNIER (S)", proprietaire: "LE MARAIS SAS", eleveurs: "HARAS DU LOGIS SAINT GERMAIN", poids: "58 kg" },
-                            { n: "6", cheval: "THE MOON'S ANGEL", jockey: "GUILLAUME MILLET", entraineur: "R. FRADET (S)", proprietaire: "MR MICHEL NIKITAS", eleveurs: "MME R. DWEK, MME C. SIMON, MME T.DE BEAUREGARD, D. SOURDEAU DE BEAUREGARD", poids: "58 kg" },
-                            { n: "7", cheval: "ZELKOVA (IRE)", jockey: "MME CORALIE PACAUT", entraineur: "JC. ROUGET (S)", proprietaire: "AL SHAQAB RACING", eleveurs: "AL SHAQAB RACING", poids: "55 kg(56,5 kg)" },
-                            { n: "8", cheval: "RUGLES", jockey: "NON PARTANT", entraineur: "J. REYNIER (S)", proprietaire: "MR GERARD AUGUSTIN-NORMAND", eleveurs: "FRANKLIN FINANCE S.A.", poids: "56,5 kg" },
-                            { n: "9", cheval: "DENGIE", jockey: "SYLVAIN RUIS", entraineur: "N. PERRET (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "56,5 kg" },
-                            { n: "10", cheval: "DISBAY", jockey: "IORITZ MENDIZABAL", entraineur: "J. ANDREU (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "56,5 kg" },
-                            { n: "11", cheval: "HOODWINK", jockey: "MME MANON GERMAIN", entraineur: "J. REYNIER (S)", proprietaire: "MR JAMES WIGAN", eleveurs: "LONDON THOROUGHBRED SERVICES", poids: "55 kg(56,5 kg)" }
+                            { n: "1", cheval: "FINK PLOYD", jockey: "VALENTIN SEGUY", entraineur: "J. REYNIER (S)", proprietaire: "G.AUGUSTIN-NORMAND", eleveurs: "P. JABOT", poids: "58 kg", performances: "" },
+                            { n: "2", cheval: "BLACK TIE", jockey: "JEAN-BERNARD EYQUEM", entraineur: "JC. ROUGET (S)", proprietaire: "ECURIE D.LAYANI/GOUSSERIE RACING", eleveurs: "E. PUERARI, ECURIE DU PARC MONCEAU, MME A. GRAVEREAUX, OCEANIC BLOODSTOCK INC", poids: "58 kg", performances: "" },
+                            { n: "3", cheval: "NELLO", jockey: "HUGO BESNIER", entraineur: "P. COTTIER", proprietaire: "ECURIE DU SUD", eleveurs: "T.DE LA HERONNIERE", poids: "58 kg", performances: "" },
+                            { n: "4", cheval: "UNFURLED", jockey: "ANTHONY CRASTUS", entraineur: "N. PERRET (S)", proprietaire: "ECURIE THOMAS SIVADIER", eleveurs: "E.A.R.L. ELEVAGE DES LOGES", poids: "58 kg", performances: "" },
+                            { n: "5", cheval: "SAINT FLORENT", jockey: "MARVIN GRANDIN", entraineur: "J. REYNIER (S)", proprietaire: "LE MARAIS SAS", eleveurs: "HARAS DU LOGIS SAINT GERMAIN", poids: "58 kg", performances: "" },
+                            { n: "6", cheval: "THE MOON'S ANGEL", jockey: "GUILLAUME MILLET", entraineur: "R. FRADET (S)", proprietaire: "MR MICHEL NIKITAS", eleveurs: "MME R. DWEK, MME C. SIMON, MME T.DE BEAUREGARD, D. SOURDEAU DE BEAUREGARD", poids: "58 kg", performances: "" },
+                            { n: "7", cheval: "ZELKOVA (IRE)", jockey: "MME CORALIE PACAUT", entraineur: "JC. ROUGET (S)", proprietaire: "AL SHAQAB RACING", eleveurs: "AL SHAQAB RACING", poids: "55 kg(56,5 kg)", performances: "" },
+                            { n: "8", cheval: "RUGLES", jockey: "NON PARTANT", entraineur: "J. REYNIER (S)", proprietaire: "MR GERARD AUGUSTIN-NORMAND", eleveurs: "FRANKLIN FINANCE S.A.", poids: "56,5 kg", performances: "" },
+                            { n: "9", cheval: "DENGIE", jockey: "SYLVAIN RUIS", entraineur: "N. PERRET (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "56,5 kg", performances: "" },
+                            { n: "10", cheval: "DISBAY", jockey: "IORITZ MENDIZABAL", entraineur: "J. ANDREU (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "56,5 kg", performances: "" },
+                            { n: "11", cheval: "HOODWINK", jockey: "MME MANON GERMAIN", entraineur: "J. REYNIER (S)", proprietaire: "MR JAMES WIGAN", eleveurs: "LONDON THOROUGHBRED SERVICES", poids: "55 kg(56,5 kg)", performances: "" }
                         ]
                     },
                     {
@@ -868,15 +1121,15 @@
                         numero: "3",
                         type: "Plat",
                         participants: [
-                            { n: "1", cheval: "FIUMICCINO", jockey: "HUGO BESNIER", entraineur: "P. COTTIER", proprietaire: "MR JEAN-PIERRE-JOSEPH DUBOIS", eleveurs: "MME L. LEMIERE DUBOIS", poids: "58 kg" },
-                            { n: "2", cheval: "GREEN HEAD", jockey: "MICKAEL FOREST", entraineur: "Y. BONNEFOY (S)", proprietaire: "ECURIE BERTRAND MILLIERE", eleveurs: "ECURIE BERTRAND MILLIERE, C. MILLIERE", poids: "58 kg" },
-                            { n: "3", cheval: "GOLDEN BROWN", jockey: "JEAN-BERNARD EYQUEM", entraineur: "JC. ROUGET (S)", proprietaire: "ECURIE VIVALDI", eleveurs: "HARAS DE GRANDCAMP EARL", poids: "58 kg" },
-                            { n: "4", cheval: "BLACK BOSS", jockey: "GUILLAUME MILLET", entraineur: "R. FRADET (S)", proprietaire: "MR FABRICE FANTAUZZA", eleveurs: "SUC. D.DE LA HERONNIERE", poids: "58 kg" },
-                            { n: "5", cheval: "CANNOLO (IRE)", jockey: "ANTHONY CRASTUS", entraineur: "C. ESCUDER", proprietaire: "N.RICIGNUOLO/EQUUS RACING/MEKKI", eleveurs: "MME P. CARPENTIER, SCEA JLC, SCEA L'AUBAY", poids: "58 kg" },
-                            { n: "6", cheval: "IL BIONDINO", jockey: "MME CORALIE PACAUT", entraineur: "C. ESCUDER", proprietaire: "N.RICIGNUOLO/F.GRIMA/B.MEKKI", eleveurs: "HARAS DES TROIS CHAPELLES", poids: "56,5 kg(58 kg)" },
-                            { n: "7", cheval: "C'EST VRAI", jockey: "SYLVAIN RUIS", entraineur: "N. PERRET (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "58 kg" },
-                            { n: "8", cheval: "DREAM IN BROOKE", jockey: "MME MARINA BRUNELLI", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "V.GUEDJ/P.GUEDJ/JL.MEDINA STUD", eleveurs: "P. GUEDJ, V. GUEDJ, JL. MEDINA", poids: "53 kg(56,5 kg)" },
-                            { n: "9", cheval: "ALMERIA", jockey: "MME MANON GERMAIN", entraineur: "J. REYNIER (S)", proprietaire: "MR JAMES WIGAN", eleveurs: "LONDON THOROUGHBRED SERVICES", poids: "55 kg(56,5 kg)" }
+                            { n: "1", cheval: "FIUMICCINO", jockey: "HUGO BESNIER", entraineur: "P. COTTIER", proprietaire: "MR JEAN-PIERRE-JOSEPH DUBOIS", eleveurs: "MME L. LEMIERE DUBOIS", poids: "58 kg", performances: "0p5p2p4p" },
+                            { n: "2", cheval: "GREEN HEAD", jockey: "MICKAEL FOREST", entraineur: "Y. BONNEFOY (S)", proprietaire: "ECURIE BERTRAND MILLIERE", eleveurs: "ECURIE BERTRAND MILLIERE, C. MILLIERE", poids: "58 kg", performances: "(24)0p" },
+                            { n: "3", cheval: "GOLDEN BROWN", jockey: "JEAN-BERNARD EYQUEM", entraineur: "JC. ROUGET (S)", proprietaire: "ECURIE VIVALDI", eleveurs: "HARAS DE GRANDCAMP EARL", poids: "58 kg", performances: "3p 2p(24)4p3p2p3p" },
+                            { n: "4", cheval: "BLACK BOSS", jockey: "GUILLAUME MILLET", entraineur: "R. FRADET (S)", proprietaire: "MR FABRICE FANTAUZZA", eleveurs: "SUC. D.DE LA HERONNIERE", poids: "58 kg", performances: "2p2p" },
+                            { n: "5", cheval: "CANNOLO (IRE)", jockey: "ANTHONY CRASTUS", entraineur: "C. ESCUDER", proprietaire: "N.RICIGNUOLO/EQUUS RACING/MEKKI", eleveurs: "MME P. CARPENTIER, SCEA JLC, SCEA L'AUBAY", poids: "58 kg", performances: "4p9p" },
+                            { n: "6", cheval: "IL BIONDINO", jockey: "MME CORALIE PACAUT", entraineur: "C. ESCUDER", proprietaire: "N.RICIGNUOLO/F.GRIMA/B.MEKKI", eleveurs: "HARAS DES TROIS CHAPELLES", poids: "56,5 kg(58 kg)", performances: "0p" },
+                            { n: "7", cheval: "C'EST VRAI", jockey: "SYLVAIN RUIS", entraineur: "N. PERRET (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "58 kg", performances: "5p" },
+                            { n: "8", cheval: "DREAM IN BROOKE", jockey: "MME MARINA BRUNELLI", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "V.GUEDJ/P.GUEDJ/JL.MEDINA STUD", eleveurs: "P. GUEDJ, V. GUEDJ, JL. MEDINA", poids: "53 kg(56,5 kg)", performances: "4p 6p" },
+                            { n: "9", cheval: "ALMERIA", jockey: "MME MANON GERMAIN", entraineur: "J. REYNIER (S)", proprietaire: "MR JAMES WIGAN", eleveurs: "LONDON THOROUGHBRED SERVICES", poids: "55 kg(56,5 kg)", performances: "4p" }
                         ]
                     },
                     {
@@ -885,13 +1138,13 @@
                         numero: "4",
                         type: "Plat",
                         participants: [
-                            { n: "1", cheval: "PRADO", jockey: "ANTHONY CRASTUS", entraineur: "P. COTTIER", proprietaire: "MR JEAN-PIERRE-JOSEPH DUBOIS", eleveurs: "JPJ. DUBOIS", poids: "57 kg" },
-                            { n: "2", cheval: "MONDO", jockey: "JEAN-BERNARD EYQUEM", entraineur: "JC. ROUGET (S)", proprietaire: "ECURIE C. MARZOCCO", eleveurs: "HARAS D'ETREHAM, RIVIERA EQUINE S.A.R.L", poids: "57 kg" },
-                            { n: "3", cheval: "ZARAKCHIC", jockey: "ANTONIO ORANI", entraineur: "J. REYNIER (S)", proprietaire: "G.PARIENTE/JC.SEROUL/AUGUSTIN-N.", eleveurs: "GUY PARIENTE HOLDING", poids: "57 kg" },
-                            { n: "4", cheval: "MARCHEMALO", jockey: "HUGO BESNIER", entraineur: "P. COTTIER", proprietaire: "JF.GRIBOMONT/EC.SUD/D.DUMOULIN", eleveurs: "JF. GRIBOMONT", poids: "57 kg" },
-                            { n: "5", cheval: "DIOPTASE (IRE)", jockey: "MARVIN GRANDIN", entraineur: "JC. ROUGET (S)", proprietaire: "LE MARAIS/EC.STEMPNIAK/PARIENTE", eleveurs: "SCEA MARMION VAUVILLE, ECURIE SKYMARC FARM, NIGHTCHILL LLC", poids: "57 kg" },
-                            { n: "6", cheval: "STEF LE MAGNIFIQUE", jockey: "GUILLAUME MILLET", entraineur: "R. FRADET (S)", proprietaire: "MR MICHEL NIKITAS", eleveurs: "W. NEUMANN, EARL HARAS DU LOGIS, J. INCE", poids: "57 kg" },
-                            { n: "7", cheval: "KLYCOT", jockey: "SYLVAIN RUIS", entraineur: "N. PERRET (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "57 kg" }
+                            { n: "1", cheval: "PRADO", jockey: "ANTHONY CRASTUS", entraineur: "P. COTTIER", proprietaire: "MR JEAN-PIERRE-JOSEPH DUBOIS", eleveurs: "JPJ. DUBOIS", poids: "57 kg", performances: "4p3p3p1p3p(24)3p2p7p" },
+                            { n: "2", cheval: "MONDO", jockey: "JEAN-BERNARD EYQUEM", entraineur: "JC. ROUGET (S)", proprietaire: "ECURIE C. MARZOCCO", eleveurs: "HARAS D'ETREHAM, RIVIERA EQUINE S.A.R.L", poids: "57 kg", performances: "4p(24)7p1p3p" },
+                            { n: "3", cheval: "ZARAKCHIC", jockey: "ANTONIO ORANI", entraineur: "J. REYNIER (S)", proprietaire: "G.PARIENTE/JC.SEROUL/AUGUSTIN-N.", eleveurs: "GUY PARIENTE HOLDING", poids: "57 kg", performances: "4p(24)1p3p" },
+                            { n: "4", cheval: "MARCHEMALO", jockey: "HUGO BESNIER", entraineur: "P. COTTIER", proprietaire: "JF.GRIBOMONT/EC.SUD/D.DUMOULIN", eleveurs: "JF. GRIBOMONT", poids: "57 kg", performances: "1p" },
+                            { n: "5", cheval: "DIOPTASE (IRE)", jockey: "MARVIN GRANDIN", entraineur: "JC. ROUGET (S)", proprietaire: "LE MARAIS/EC.STEMPNIAK/PARIENTE", eleveurs: "SCEA MARMION VAUVILLE, ECURIE SKYMARC FARM, NIGHTCHILL LLC", poids: "57 kg", performances: "2p5p1p" },
+                            { n: "6", cheval: "STEF LE MAGNIFIQUE", jockey: "GUILLAUME MILLET", entraineur: "R. FRADET (S)", proprietaire: "MR MICHEL NIKITAS", eleveurs: "W. NEUMANN, EARL HARAS DU LOGIS, J. INCE", poids: "57 kg", performances: "6p2p(24)2p1p" },
+                            { n: "7", cheval: "KLYCOT", jockey: "SYLVAIN RUIS", entraineur: "N. PERRET (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "57 kg", performances: "1p6p" }
                         ]
                     },
                     {
@@ -900,15 +1153,15 @@
                         numero: "5",
                         type: "Plat",
                         participants: [
-                            { n: "1", cheval: "BOOGIE", jockey: "ANTHONY CRASTUS", entraineur: "N. PERRET (S)", proprietaire: "MR HERVE GUILLET", eleveurs: "RY. SIMON, N. SIMON, MME V. SIMON, MME C. SIMON", poids: "59 kg" },
-                            { n: "2", cheval: "INTERSTELLA GER", jockey: "MME MARINA BRUNELLI", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "ECURIE JOYA RACING SAS", eleveurs: "MME U. IMM, J. IMM", poids: "54 kg(57,5 kg)" },
-                            { n: "3", cheval: "ZLARA", jockey: "IORITZ MENDIZABAL", entraineur: "M. CESANDRI (S)", proprietaire: "MR JEAN-CLAUDE RAVIER", eleveurs: "BLOODSTOCK AGENCY LTD, MME M. RISI", poids: "57,5 kg" },
-                            { n: "4", cheval: "POLYSPEED (IRE)", jockey: "ANTONIO ORANI", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "AA.AMELINE/AGV KARWIN/EC.EQUUS", eleveurs: "WERTHEIMER & FRERE", poids: "57 kg" },
-                            { n: "5", cheval: "BACK TO BLACK", jockey: "MARVIN GRANDIN", entraineur: "J. REYNIER (S)", proprietaire: "ECURIE MG", eleveurs: "F. VERMEULEN", poids: "56 kg" },
-                            { n: "6", cheval: "MY CHARMING PRINCE", jockey: "GUILLAUME MILLET", entraineur: "E. MIKHALIDES (S)", proprietaire: "MR STEPHANE GRANDIN", eleveurs: "EARL HARAS DU CAMP BENARD", poids: "56 kg" },
-                            { n: "7", cheval: "BLACK SAXON", jockey: "HUGO BESNIER", entraineur: "N. BELLANGER (S)", proprietaire: "MR DIDIER MARS", eleveurs: "LE THENNEY", poids: "56 kg" },
-                            { n: "8", cheval: "LADY MANA", jockey: "MME MANON GERMAIN", entraineur: "F. FORESI", proprietaire: "MR GUILLAUME DUROT", eleveurs: "HARAS DU HOGUENET, P. NATAF", poids: "53 kg(54,5 kg)" },
-                            { n: "9", cheval: "AMELIELYMPIQUE (IRE)", jockey: "SYLVAIN RUIS", entraineur: "N. PERRET (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "54,5 kg" }
+                            { n: "1", cheval: "BOOGIE", jockey: "ANTHONY CRASTUS", entraineur: "N. PERRET (S)", proprietaire: "MR HERVE GUILLET", eleveurs: "RY. SIMON, N. SIMON, MME V. SIMON, MME C. SIMON", poids: "59 kg", performances: "1p1p2p 0p1p(24)2p1p9p2p" },
+                            { n: "2", cheval: "INTERSTELLA GER", jockey: "MME MARINA BRUNELLI", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "ECURIE JOYA RACING SAS", eleveurs: "MME U. IMM, J. IMM", poids: "54 kg(57,5 kg)", performances: "1p4p 6p7p9p(24)4p1p6p5p" },
+                            { n: "3", cheval: "ZLARA", jockey: "IORITZ MENDIZABAL", entraineur: "M. CESANDRI (S)", proprietaire: "MR JEAN-CLAUDE RAVIER", eleveurs: "BLOODSTOCK AGENCY LTD, MME M. RISI", poids: "57,5 kg", performances: "(24)1p8p8p4p 4p0p1p1p2p" },
+                            { n: "4", cheval: "POLYSPEED (IRE)", jockey: "ANTONIO ORANI", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "AA.AMELINE/AGV KARWIN/EC.EQUUS", eleveurs: "WERTHEIMER & FRERE", poids: "57 kg", performances: "1p2p2p(24)5p" },
+                            { n: "5", cheval: "BACK TO BLACK", jockey: "MARVIN GRANDIN", entraineur: "J. REYNIER (S)", proprietaire: "ECURIE MG", eleveurs: "F. VERMEULEN", poids: "56 kg", performances: "7p(24)3p4p5p(23)5p6p5p4p" },
+                            { n: "6", cheval: "MY CHARMING PRINCE", jockey: "GUILLAUME MILLET", entraineur: "E. MIKHALIDES (S)", proprietaire: "MR STEPHANE GRANDIN", eleveurs: "EARL HARAS DU CAMP BENARD", poids: "56 kg", performances: "0p7p(23)3p1p9p9p 2p6p3p" },
+                            { n: "7", cheval: "BLACK SAXON", jockey: "HUGO BESNIER", entraineur: "N. BELLANGER (S)", proprietaire: "MR DIDIER MARS", eleveurs: "LE THENNEY", poids: "56 kg", performances: "6p(24)7p1p3p4p" },
+                            { n: "8", cheval: "LADY MANA", jockey: "MME MANON GERMAIN", entraineur: "F. FORESI", proprietaire: "MR GUILLAUME DUROT", eleveurs: "HARAS DU HOGUENET, P. NATAF", poids: "53 kg(54,5 kg)", performances: "9p(24)0p2p4p3p 7p1p0p3p" },
+                            { n: "9", cheval: "AMELIELYMPIQUE (IRE)", jockey: "SYLVAIN RUIS", entraineur: "N. PERRET (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "54,5 kg", performances: "0p(24)Tp3p5p8p 4p(23)3p5p" }
                         ]
                     },
                     {
@@ -917,17 +1170,17 @@
                         numero: "6",
                         type: "Plat",
                         participants: [
-                            { n: "1", cheval: "SHAMSABAD", jockey: "ANTONIO ORANI", entraineur: "C. MARTINON", proprietaire: "ECURIE DU PERROQUET SAUVAGE", eleveurs: "SUC. S.A. AGA KHAN", poids: "60 kg" },
-                            { n: "2", cheval: "ALROMY", jockey: "MME MANON GERMAIN", entraineur: "MME L. SALTON", proprietaire: "MME LAURA SALTON", eleveurs: "SCA ELEVAGE DE TOURGEVILLE, MME H. ERCULIANI", poids: "58,5 kg(60 kg)" },
-                            { n: "3", cheval: "TIGRE ROUGE", jockey: "MICKAEL FOREST", entraineur: "RC. MONTENEGRO", proprietaire: "MME SUSANNE RITSON", eleveurs: "MME S. RITSON", poids: "58,5 kg" },
-                            { n: "4", cheval: "DREAM OF EMERAUDE", jockey: "GUILLAUME MILLET", entraineur: "J. VAN HANDENHOVE", proprietaire: "ECURIE DE LA VERTE VALLEE", eleveurs: "MME A. DELARUE", poids: "58,5 kg" },
-                            { n: "5", cheval: "MOUTRAKI IRE", jockey: "HUGO BESNIER", entraineur: "N. PERRET (S)", proprietaire: "MR ERIC D' ANGELO", eleveurs: "LIMESTONE STUD, TARA STUD", poids: "58 kg" },
-                            { n: "6", cheval: "BUSINESS PLAN", jockey: "MARVIN GRANDIN", entraineur: "S. LABATE (S)", proprietaire: "P.FAUCAMPRE/B.ROTGER/N.MICHELOTT", eleveurs: "V. BUKHTOYAROV, E. KAPPUSHEV", poids: "57 kg" },
-                            { n: "7", cheval: "FOR BETTY", jockey: "GREGOIRE LEGRAS", entraineur: "N. PERRET (S)", proprietaire: "MME CRISTEL MARTINA", eleveurs: "THOUSAND DREAMS", poids: "57 kg" },
-                            { n: "8", cheval: "HADLEIGH", jockey: "IORITZ MENDIZABAL", entraineur: "J. ANDREU (S)", proprietaire: "MR ROBERT MINICHIELLO", eleveurs: "ECURIE KURA", poids: "56 kg" },
-                            { n: "9", cheval: "HASHTAG JOA", jockey: "DAVID BREUX", entraineur: "M. PLANARD", proprietaire: "MR ALESSANDRO RENATO PAVESI", eleveurs: "J.DE CHEFFONTAINES", poids: "56 kg" },
-                            { n: "10", cheval: "KALEOBAYANE", jockey: "MME MICKAELLE MICHEL", entraineur: "MME R. PHILIPPON", proprietaire: "MR ROLAND PHILIPPON", eleveurs: "MME E. LAFEU", poids: "53,5 kg(55 kg)" },
-                            { n: "11", cheval: "MAVALA", jockey: "MME MAELLE MORCEL", entraineur: "N. PERRET (S)", proprietaire: "N.PERRET (S)", eleveurs: "BOUTIN (S)", poids: "50 kg(53,5 kg)" }
+                            { n: "1", cheval: "SHAMSABAD", jockey: "ANTONIO ORANI", entraineur: "C. MARTINON", proprietaire: "ECURIE DU PERROQUET SAUVAGE", eleveurs: "SUC. S.A. AGA KHAN", poids: "60 kg", performances: "2p9p6p 6p6p3p8p(24)0p0p" },
+                            { n: "2", cheval: "ALROMY", jockey: "MME MANON GERMAIN", entraineur: "MME L. SALTON", proprietaire: "MME LAURA SALTON", eleveurs: "SCA ELEVAGE DE TOURGEVILLE, MME H. ERCULIANI", poids: "58,5 kg(60 kg)", performances: "1p9p0p(24)0p3p9p1p 7p1p" },
+                            { n: "3", cheval: "TIGRE ROUGE", jockey: "MICKAEL FOREST", entraineur: "RC. MONTENEGRO", proprietaire: "MME SUSANNE RITSON", eleveurs: "MME S. RITSON", poids: "58,5 kg", performances: "4p3p2p(24)8p2p1p1p 4p1p" },
+                            { n: "4", cheval: "DREAM OF EMERAUDE", jockey: "GUILLAUME MILLET", entraineur: "J. VAN HANDENHOVE", proprietaire: "ECURIE DE LA VERTE VALLEE", eleveurs: "MME A. DELARUE", poids: "58,5 kg", performances: "5p0p0p5p(24)1p9p6p3p 6p" },
+                            { n: "5", cheval: "MOUTRAKI IRE", jockey: "HUGO BESNIER", entraineur: "N. PERRET (S)", proprietaire: "MR ERIC D' ANGELO", eleveurs: "LIMESTONE STUD, TARA STUD", poids: "58 kg", performances: "6p9p4p(24)8p2p6p7p 0p8p" },
+                            { n: "6", cheval: "BUSINESS PLAN", jockey: "MARVIN GRANDIN", entraineur: "S. LABATE (S)", proprietaire: "P.FAUCAMPRE/B.ROTGER/N.MICHELOTT", eleveurs: "V. BUKHTOYAROV, E. KAPPUSHEV", poids: "57 kg", performances: "9p8p9p6p6p(24)4p4p4p6p" },
+                            { n: "7", cheval: "FOR BETTY", jockey: "GREGOIRE LEGRAS", entraineur: "N. PERRET (S)", proprietaire: "MME CRISTEL MARTINA", eleveurs: "THOUSAND DREAMS", poids: "57 kg", performances: "2p(24)0p6p" },
+                            { n: "8", cheval: "HADLEIGH", jockey: "IORITZ MENDIZABAL", entraineur: "J. ANDREU (S)", proprietaire: "MR ROBERT MINICHIELLO", eleveurs: "ECURIE KURA", poids: "56 kg", performances: "4p0p4p7p 5p(24)0p0p4p4p" },
+                            { n: "9", cheval: "HASHTAG JOA", jockey: "DAVID BREUX", entraineur: "M. PLANARD", proprietaire: "MR ALESSANDRO RENATO PAVESI", eleveurs: "J.DE CHEFFONTAINES", poids: "56 kg", performances: "5p0p 9p0p(24)9p0p6p2p 0p" },
+                            { n: "10", cheval: "KALEOBAYANE", jockey: "MME MICKAELLE MICHEL", entraineur: "MME R. PHILIPPON", proprietaire: "MR ROLAND PHILIPPON", eleveurs: "MME E. LAFEU", poids: "53,5 kg(55 kg)", performances: "6p9p(24)3p4p5p6p 1p5p9p" },
+                            { n: "11", cheval: "MAVALA", jockey: "MME MAELLE MORCEL", entraineur: "N. PERRET (S)", proprietaire: "N.PERRET (S)", eleveurs: "BOUTIN (S)", poids: "50 kg(53,5 kg)", performances: "3p9p 6p0p0p(24)0p3p9p0p" }
                         ]
                     },
                     {
@@ -936,17 +1189,17 @@
                         numero: "7",
                         type: "Plat",
                         participants: [
-                            { n: "1", cheval: "COTE JARDIN", jockey: "JIRI CHALOUPKA", entraineur: "J. CHALOUPKA", proprietaire: "CAJDASROT S.R.O.", eleveurs: "F. BOZO, SUC. P. BOZO, MME MC. BOZO, JC. BOZO", poids: "60 kg" },
-                            { n: "2", cheval: "AL HABISSET", jockey: "HUGO BESNIER", entraineur: "F. BOUALEM", proprietaire: "MR FAOUZI BOUALEM", eleveurs: "HARAS DU GRAND COURGEON", poids: "59,5 kg" },
-                            { n: "3", cheval: "ASPEN", jockey: "ANTONIO ORANI", entraineur: "R. FRADET (S)", proprietaire: "MR MICHEL NIKITAS", eleveurs: "ALEYRION BLOODSTOCK LTD", poids: "59,5 kg" },
-                            { n: "4", cheval: "GAMECHANGER", jockey: "EMILIEN PUILLET-RODA", entraineur: "JC. SARAIS", proprietaire: "MR DANIEL ORTU", eleveurs: "ECURIE SKYMARC FARM", poids: "58 kg(59,5 kg)" },
-                            { n: "5", cheval: "INTO FAITH", jockey: "MME CORALIE PACAUT", entraineur: "C. ESCUDER", proprietaire: "MR ALEXANDRE DE LANFRANCHI", eleveurs: "THE KATHRYN STUD", poids: "58 kg(59,5 kg)" },
-                            { n: "6", cheval: "LESSARD", jockey: "MME MICKAELLE MICHEL", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "MR GERARD AUGUSTIN-NORMAND", eleveurs: "FRANKLIN FINANCE S.A.", poids: "58 kg(59,5 kg)" },
-                            { n: "7", cheval: "EXHIT", jockey: "RUDY PIMBONNET", entraineur: "M. PIMBONNET", proprietaire: "B.BIMOZ/ECURIE SAINT-HILAIRE", eleveurs: "WERTHEIMER & FRERE", poids: "58 kg" },
-                            { n: "8", cheval: "JAGDA", jockey: "VALENTIN SEGUY", entraineur: "M. CESANDRI (S)", proprietaire: "MR LAURENT GIREL", eleveurs: "HARAS DE LA PERELLE", poids: "58 kg" },
-                            { n: "9", cheval: "DOCTEUR TOURNESOL", jockey: "MME MARINA BRUNELLI", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "MME HENRI DEVIN", eleveurs: "MME H. DEVIN", poids: "55 kg(57,5 kg)" },
-                            { n: "10", cheval: "SANCHO", jockey: "GUILLAUME MILLET", entraineur: "J. ANDREU (S)", proprietaire: "MME LAETITIA MILLET", eleveurs: "MERIDIAN INTERNATIONAL SARL, LEMZAR SARL", poids: "56,5 kg" },
-                            { n: "11", cheval: "AVERNES (IRE)", jockey: "IORITZ MENDIZABAL", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "ECURIE JOYA RACING SAS", eleveurs: "FRANKLIN FINANCE S.A.", poids: "56,5 kg" }
+                            { n: "1", cheval: "COTE JARDIN", jockey: "JIRI CHALOUPKA", entraineur: "J. CHALOUPKA", proprietaire: "CAJDASROT S.R.O.", eleveurs: "F. BOZO, SUC. P. BOZO, MME MC. BOZO, JC. BOZO", poids: "60 kg", performances: "(24)6p0p0p5p(23)0p6p8p6p" },
+                            { n: "2", cheval: "AL HABISSET", jockey: "HUGO BESNIER", entraineur: "F. BOUALEM", proprietaire: "MR FAOUZI BOUALEM", eleveurs: "HARAS DU GRAND COURGEON", poids: "59,5 kg", performances: "5p6p 6p3p8p(24)2p3p3p3p" },
+                            { n: "3", cheval: "ASPEN", jockey: "ANTONIO ORANI", entraineur: "R. FRADET (S)", proprietaire: "MR MICHEL NIKITAS", eleveurs: "ALEYRION BLOODSTOCK LTD", poids: "59,5 kg", performances: "3p0p0p 0p7p(24)8p1p0p4p" },
+                            { n: "4", cheval: "GAMECHANGER", jockey: "EMILIEN PUILLET-RODA", entraineur: "JC. SARAIS", proprietaire: "MR DANIEL ORTU", eleveurs: "ECURIE SKYMARC FARM", poids: "58 kg(59,5 kg)", performances: "1p0p1p9p 5p4p(24)6p7p6p" },
+                            { n: "5", cheval: "INTO FAITH", jockey: "MME CORALIE PACAUT", entraineur: "C. ESCUDER", proprietaire: "MR ALEXANDRE DE LANFRANCHI", eleveurs: "THE KATHRYN STUD", poids: "58 kg(59,5 kg)", performances: "4p1p7p6p6p(24)5p2p2p1p" },
+                            { n: "6", cheval: "LESSARD", jockey: "MME MICKAELLE MICHEL", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "MR GERARD AUGUSTIN-NORMAND", eleveurs: "FRANKLIN FINANCE S.A.", poids: "58 kg(59,5 kg)", performances: "2p0p9p9p2p(24)5p1p1p2p" },
+                            { n: "7", cheval: "EXHIT", jockey: "RUDY PIMBONNET", entraineur: "M. PIMBONNET", proprietaire: "B.BIMOZ/ECURIE SAINT-HILAIRE", eleveurs: "WERTHEIMER & FRERE", poids: "58 kg", performances: "8p0p1p1p 2p7p(24)0p2p6p" },
+                            { n: "8", cheval: "JAGDA", jockey: "VALENTIN SEGUY", entraineur: "M. CESANDRI (S)", proprietaire: "MR LAURENT GIREL", eleveurs: "HARAS DE LA PERELLE", poids: "58 kg", performances: "2p5p0p(24)9p0p6p5p 8p4p" },
+                            { n: "9", cheval: "DOCTEUR TOURNESOL", jockey: "MME MARINA BRUNELLI", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "MME HENRI DEVIN", eleveurs: "MME H. DEVIN", poids: "55 kg(57,5 kg)", performances: "6p2p 5p5p7p(24)6p1p2p6p" },
+                            { n: "10", cheval: "SANCHO", jockey: "GUILLAUME MILLET", entraineur: "J. ANDREU (S)", proprietaire: "MME LAETITIA MILLET", eleveurs: "MERIDIAN INTERNATIONAL SARL, LEMZAR SARL", poids: "56,5 kg", performances: "3p0p(24)5p4p2p7p 4p2p8p" },
+                            { n: "11", cheval: "AVERNES (IRE)", jockey: "IORITZ MENDIZABAL", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "ECURIE JOYA RACING SAS", eleveurs: "FRANKLIN FINANCE S.A.", poids: "56,5 kg", performances: "4p 5p2p7p6p(24)7p0p(23)Ah" }
                         ]
                     },
                     {
@@ -955,18 +1208,18 @@
                         numero: "8",
                         type: "Plat",
                         participants: [
-                            { n: "1", cheval: "LOU MAN", jockey: "GREG BENOIST", entraineur: "P. DAULIER", proprietaire: "MME SYLVIE DAULIER", eleveurs: "K. RHATIGAN", poids: "60 kg" },
-                            { n: "2", cheval: "ROSEDALE", jockey: "SYLVAIN RUIS", entraineur: "P. COTTIER", proprietaire: "MR JEAN-PIERRE-JOSEPH DUBOIS", eleveurs: "JPJ. DUBOIS", poids: "60 kg" },
-                            { n: "3", cheval: "YATT", jockey: "MARVIN GRANDIN", entraineur: "J. REYNIER (S)", proprietaire: "ECURIE NICOLAS", eleveurs: "HARAS DE LA PERELLE", poids: "59 kg" },
-                            { n: "4", cheval: "ACCLAM", jockey: "ANTHONY CRASTUS", entraineur: "P. COTTIER", proprietaire: "EC.DES CHARMES/MR R.TALBOT", eleveurs: "THE ACCLAMATION SYNDICATE", poids: "58,5 kg" },
-                            { n: "5", cheval: "BELLAGIO", jockey: "HUGO BESNIER", entraineur: "N. PERRET (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "58,5 kg" },
-                            { n: "6", cheval: "BONS BAISERS", jockey: "ANTONIO ORANI", entraineur: "P. COTTIER", proprietaire: "EC.DES CHARMES/MME V.FAVE", eleveurs: "LA TOUQUES BLOODSTOCK", poids: "57,5 kg" },
-                            { n: "7", cheval: "LYKION", jockey: "MICKAEL FOREST", entraineur: "RC. MONTENEGRO", proprietaire: "E.BUCHER/J.SCHOENENBERGER", eleveurs: "G. KERN, E. BUCHER", poids: "57,5 kg" },
-                            { n: "8", cheval: "STAR VICTORY", jockey: "IORITZ MENDIZABAL", entraineur: "M. CESANDRI (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "57,5 kg" },
-                            { n: "9", cheval: "KILIMANDJARO", jockey: "ROMAIN FRADET", entraineur: "R. FRADET (S)", proprietaire: "EC.CARRE MAGIQUE SARL", eleveurs: "SE. HINDERFELD", poids: "56,5 kg" },
-                            { n: "10", cheval: "LAUTREC", jockey: "MME CORALIE PACAUT", entraineur: "L. BOISSAUX", proprietaire: "BOISSAUX (S)", eleveurs: "BOISSAUX (S)", poids: "55,5 kg(57 kg)" },
-                            { n: "11", cheval: "MACHO MAN", jockey: "JEAN-BERNARD EYQUEM", entraineur: "L. BAUDRON (S)", proprietaire: "BAUDRON (S)", eleveurs: "ELISE ET GERARD HENOCHSBERG", poids: "57 kg" },
-                            { n: "12", cheval: "FLASHING MOON", jockey: "MME MANON GERMAIN", entraineur: "C. ESCUDER", proprietaire: "MR ALEXANDRE DE LANFRANCHI", eleveurs: "HARAS DU GRAND CHESNAIE, A. DE LANFRANCHI", poids: "53 kg(55 kg)" }
+                            { n: "1", cheval: "LOU MAN", jockey: "GREG BENOIST", entraineur: "P. DAULIER", proprietaire: "MME SYLVIE DAULIER", eleveurs: "K. RHATIGAN", poids: "60 kg", performances: "4p 0p0p(24)7p6p0p0p0p0p" },
+                            { n: "2", cheval: "ROSEDALE", jockey: "SYLVAIN RUIS", entraineur: "P. COTTIER", proprietaire: "MR JEAN-PIERRE-JOSEPH DUBOIS", eleveurs: "JPJ. DUBOIS", poids: "60 kg", performances: "2p(24)2p4p 2p1p3p 5p7p" },
+                            { n: "3", cheval: "YATT", jockey: "MARVIN GRANDIN", entraineur: "J. REYNIER (S)", proprietaire: "ECURIE NICOLAS", eleveurs: "HARAS DE LA PERELLE", poids: "59 kg", performances: "(24)3p1p4p5p(23)5p1p2p4p" },
+                            { n: "4", cheval: "ACCLAM", jockey: "ANTHONY CRASTUS", entraineur: "P. COTTIER", proprietaire: "EC.DES CHARMES/MR R.TALBOT", eleveurs: "THE ACCLAMATION SYNDICATE", poids: "58,5 kg", performances: "0p 1p(24)0p8p6p(23)6p(22)" },
+                            { n: "5", cheval: "BELLAGIO", jockey: "HUGO BESNIER", entraineur: "N. PERRET (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "58,5 kg", performances: "9p4p(24)1p8p1p2p 7p2p6p" },
+                            { n: "6", cheval: "BONS BAISERS", jockey: "ANTONIO ORANI", entraineur: "P. COTTIER", proprietaire: "EC.DES CHARMES/MME V.FAVE", eleveurs: "LA TOUQUES BLOODSTOCK", poids: "57,5 kg", performances: "6p(24)9p0p3p0p 2p(23)3p" },
+                            { n: "7", cheval: "LYKION", jockey: "MICKAEL FOREST", entraineur: "RC. MONTENEGRO", proprietaire: "E.BUCHER/J.SCHOENENBERGER", eleveurs: "G. KERN, E. BUCHER", poids: "57,5 kg", performances: "1p(24)9p5p0p 5p4p8p0p0p" },
+                            { n: "8", cheval: "STAR VICTORY", jockey: "IORITZ MENDIZABAL", entraineur: "M. CESANDRI (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "57,5 kg", performances: "9p5p(24)0p0p1p5p3p 0p3p" },
+                            { n: "9", cheval: "KILIMANDJARO", jockey: "ROMAIN FRADET", entraineur: "R. FRADET (S)", proprietaire: "EC.CARRE MAGIQUE SARL", eleveurs: "SE. HINDERFELD", poids: "56,5 kg", performances: "1p(24)2p4p 9p6p7p(23)4p" },
+                            { n: "10", cheval: "LAUTREC", jockey: "MME CORALIE PACAUT", entraineur: "L. BOISSAUX", proprietaire: "BOISSAUX (S)", eleveurs: "BOISSAUX (S)", poids: "55,5 kg(57 kg)", performances: "0p6p9p 4p5p(24)9p0p2p1p" },
+                            { n: "11", cheval: "MACHO MAN", jockey: "JEAN-BERNARD EYQUEM", entraineur: "L. BAUDRON (S)", proprietaire: "BAUDRON (S)", eleveurs: "ELISE ET GERARD HENOCHSBERG", poids: "57 kg", performances: "0p1p3p9p7p(24)0p(23)7p" },
+                            { n: "12", cheval: "FLASHING MOON", jockey: "MME MANON GERMAIN", entraineur: "C. ESCUDER", proprietaire: "MR ALEXANDRE DE LANFRANCHI", eleveurs: "HARAS DU GRAND CHESNAIE, A. DE LANFRANCHI", poids: "53 kg(55 kg)", performances: "5p2p1p3p0p(24)0p4p0p0p" }
                         ]
                     }
                 ]
@@ -999,11 +1252,6 @@
                 } else {
                     return formatDateLocal(date);
                 }
-            }
-            
-            // Fonction pour générer un identifiant unique pour une course
-            function getCourseId(hippodrome, courseName) {
-                return `${hippodrome.replace(/\s+/g, '-').toLowerCase()}_${courseName.replace(/\s+/g, '-').toLowerCase()}`;
             }
             
             // Fonction pour afficher les hippodromes et leurs courses
@@ -1060,7 +1308,6 @@
                     
                     // Ajouter chaque course
                     filteredCourses.forEach(course => {
-                        const courseId = getCourseId(hippodrome, course.nom);
                         html += `
                             <div class="course-item">
                                 <div class="course-name">
@@ -1071,13 +1318,10 @@
                                     <div class="participants-count">
                                         ${course.participants.length} participant${course.participants.length > 1 ? 's' : ''}
                                     </div>
-                                    <button class="detail-btn" data-hippodrome="${hippodrome}" data-course="${course.nom}" data-id="${courseId}">
+                                    <button class="detail-btn" data-hippodrome="${hippodrome}" data-course="${course.nom}">
                                         <i class="fas fa-info-circle"></i> Détails
                                     </button>
                                 </div>
-                            </div>
-                            <div class="course-details-container" id="${courseId}">
-                                <!-- Le contenu des détails sera ajouté dynamiquement -->
                             </div>
                         `;
                     });
@@ -1114,92 +1358,49 @@
                     document.querySelectorAll('.detail-btn').forEach(btn => {
                         btn.addEventListener('click', function(e) {
                             e.stopPropagation(); // Empêcher la propagation vers le parent
-                            
                             const hippodrome = this.dataset.hippodrome;
                             const courseName = this.dataset.course;
-                            const courseId = this.dataset.id;
-                            
-                            // Récupérer le conteneur de détails de la course
-                            const detailsContainer = document.getElementById(courseId);
-                            
-                            // Si le conteneur est déjà visible, le masquer et sortir
-                            if (detailsContainer.classList.contains('visible')) {
-                                detailsContainer.classList.remove('visible');
-                                return;
-                            }
-                            
-                            // Masquer tous les autres conteneurs de détails
-                            document.querySelectorAll('.course-details-container.visible').forEach(container => {
-                                container.classList.remove('visible');
-                            });
-                            
-                            // Générer et afficher les détails de la course
-                            showCourseDetails(hippodrome, courseName, courseId);
+                            showCourseDetails(hippodrome, courseName);
                         });
                     });
                 }
             }
             
-            // Fonction pour afficher les détails d'une course 
-            function showCourseDetails(hippodrome, courseName, courseId) {
+            // Fonction pour afficher les détails d'une course dans la fenêtre modale
+            function showCourseDetails(hippodrome, courseName) {
                 // Trouver la course correspondante
                 const course = coursesData[hippodrome].find(c => c.nom === courseName);
                 if (!course) return;
                 
-                // Récupérer le conteneur de détails
-                const detailsContainer = document.getElementById(courseId);
-                
-                // Générer le HTML des détails
-                let detailsHtml = `
-                    <div class="course-details-header">
-                        <h3 class="course-details-title"><i class="fas fa-flag-checkered"></i> ${course.nom}</h3>
-                        <button class="course-details-close" data-id="${courseId}"><i class="fas fa-times"></i></button>
+                // Mettre à jour le titre et les métadonnées
+                modalTitle.textContent = course.nom;
+                courseMeta.innerHTML = `
+                    <div class="meta-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <strong>Hippodrome:</strong> ${hippodrome}
                     </div>
-                    
-                    <div class="course-details-meta">
-                        <div class="meta-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <strong>Hippodrome:</strong> ${hippodrome}
-                        </div>
-                        <div class="meta-item">
-                            <i class="fas fa-clock"></i>
-                            <strong>Horaire:</strong> ${course.horaire}
-                        </div>
-                        <div class="meta-item">
-                            <i class="fas fa-calendar"></i>
-                            <strong>Date:</strong> 17/04/2025
-                        </div>
-                        <div class="meta-item">
-                            <i class="fas fa-users"></i>
-                            <strong>Participants:</strong> ${course.participants.length}
-                        </div>
-                        <div class="meta-item">
-                            <i class="fas fa-info-circle"></i>
-                            <strong>Type:</strong> ${course.type}
-                        </div>
+                    <div class="meta-item">
+                        <i class="fas fa-clock"></i>
+                        <strong>Horaire:</strong> ${course.horaire}
                     </div>
-                    
-                    <h4 class="participants-title">Liste des participants</h4>
-                    
-                    <div class="participants-table-container">
-                        <table class="participants-table">
-                            <thead>
-                                <tr>
-                                    <th>N°</th>
-                                    <th>Cheval</th>
-                                    <th>Jockey</th>
-                                    <th>Entraîneur</th>
-                                    <th>Propriétaire</th>
-                                    <th>Éleveurs</th>
-                                    <th>Poids</th>
-                                </tr>
-                            </thead>
-                            <tbody>
+                    <div class="meta-item">
+                        <i class="fas fa-calendar"></i>
+                        <strong>Date:</strong> 17/04/2025
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-users"></i>
+                        <strong>Participants:</strong> ${course.participants.length}
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-info-circle"></i>
+                        <strong>Type:</strong> ${course.type}
+                    </div>
                 `;
                 
-                // Ajouter chaque participant
+                // Mettre à jour le tableau des participants
+                let participantsHtml = '';
                 course.participants.forEach(participant => {
-                    detailsHtml += `
+                    participantsHtml += `
                         <tr>
                             <td><div class="horse-number">${participant.n}</div></td>
                             <td>${participant.cheval}</td>
@@ -1208,38 +1409,26 @@
                             <td>${participant.proprietaire}</td>
                             <td>${participant.eleveurs}</td>
                             <td>${participant.poids}</td>
+                            <td>${participant.performances || "-"}</td>
                         </tr>
                     `;
                 });
+                participantsTable.innerHTML = participantsHtml;
                 
-                detailsHtml += `
-                            </tbody>
-                        </table>
-                    </div>
-                    
-                    <div class="action-buttons">
-                        <a href="simulation.html" class="action-btn secondary">
-                            <i class="fas fa-calculator"></i> Simuler des paris sur cette course
-                        </a>
-                    </div>
-                `;
-                
-                // Insérer le HTML dans le conteneur
-                detailsContainer.innerHTML = detailsHtml;
-                
-                // Afficher le conteneur
-                detailsContainer.classList.add('visible');
-                
-                // Faire défiler vers les détails
-                detailsContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                
-                // Ajouter un événement pour fermer les détails
-                detailsContainer.querySelector('.course-details-close').addEventListener('click', function(e) {
-                    e.stopPropagation();
-                    const containerId = this.dataset.id;
-                    document.getElementById(containerId).classList.remove('visible');
-                });
+                // Afficher la fenêtre modale
+                courseModal.classList.add('visible');
             }
+            
+            // Événements pour fermer la fenêtre modale
+            closeModal.addEventListener('click', () => {
+                courseModal.classList.remove('visible');
+            });
+            
+            window.addEventListener('click', (e) => {
+                if (e.target === courseModal) {
+                    courseModal.classList.remove('visible');
+                }
+            });
             
             // Événement de recherche
             searchInput.addEventListener('input', function() {
