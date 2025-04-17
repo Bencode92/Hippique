@@ -994,7 +994,7 @@
         
         <button class="date-button" id="date-button">
             <i class="fas fa-calendar-alt"></i>
-            <span id="current-date">Aujourd'hui (17/04/2025)</span>
+            <span id="current-date">Chargement...</span>
         </button>
         
         <div class="tabs">
@@ -1059,9 +1059,12 @@
     
     <footer>
         <p>ANALYSE HIPPIQUE - Système d'analyse pour événements hippiques</p>
-        <p>Dernière mise à jour des données: <span id="last-update">17/04/2025</span></p>
+        <p>Dernière mise à jour des données: <span id="last-update">Chargement...</span></p>
         <p><a href="simulation.html" style="color: var(--accent); text-decoration: none;">Simulateur de paris optimaux</a></p>
     </footer>
+
+    <!-- Ajouter le script de chargement des données -->
+    <script src="data-loader.js"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -1075,194 +1078,31 @@
             const modalTitle = document.getElementById('modal-title');
             const courseMeta = document.getElementById('course-meta');
             const participantsTable = document.getElementById('participants-tbody');
+            const dateButton = document.getElementById('date-button');
+            const currentDateSpan = document.getElementById('current-date');
             
-            // Données des courses - Ces données seraient normalement chargées dynamiquement
-            const coursesData = {
-                "SALON PROVENCE": [
-                    {
-                        nom: "PRIX DE LA COTE BLEUE",
-                        horaire: "11h51",
-                        numero: "1",
-                        type: "Plat",
-                        participants: [
-                            { n: "1", cheval: "CHARMING CAT", jockey: "HUGO BESNIER", entraineur: "P. COTTIER", proprietaire: "GOUSSERIE RACING", eleveurs: "X. RICHARD", poids: "58 kg", performances: "1p" },
-                            { n: "2", cheval: "THE BLACK STONE", jockey: "ALEJANDRO GUTIERREZ VAL", entraineur: "MME J. SOUBAGNE", proprietaire: "TAKE FIVE SAS", eleveurs: "TAKE FIVE SAS, MME J. SOUBAGNE", poids: "58 kg", performances: "1p" },
-                            { n: "3", cheval: "HELLO SPRING", jockey: "DAVID BREUX", entraineur: "T. RICHARD (S)", proprietaire: "H.MONCHAUX/MME K.RICHARD", eleveurs: "H. MONCHAUX", poids: "54,5 kg", performances: "" },
-                            { n: "4", cheval: "FRAGANCE", jockey: "MME MICKAELLE MICHEL", entraineur: "JPJ. DUBOIS", proprietaire: "MR JEAN-PIERRE-JOSEPH DUBOIS", eleveurs: "JPJ. DUBOIS", poids: "52,5 kg(54 kg)", performances: "6p" },
-                            { n: "5", cheval: "WHITE NIGHT", jockey: "MME MANON GERMAIN", entraineur: "JPJ. DUBOIS", proprietaire: "MR JEAN-PIERRE-JOSEPH DUBOIS", eleveurs: "JPJ. DUBOIS", poids: "52,5 kg(54 kg)", performances: "8p" },
-                            { n: "6", cheval: "CLEA CHOPE", jockey: "ANTONIO ORANI", entraineur: "C. ESCUDER", proprietaire: "EC.PUGLIA/EC.J.PIASCO/EC.METAL", eleveurs: "A. CHOPARD", poids: "54 kg", performances: "6p" },
-                            { n: "7", cheval: "REMENBER CHOPE", jockey: "IORITZ MENDIZABAL", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "R.CAPOZZI/MME M.BLANC", eleveurs: "A. CHOPARD, MME R. KHADDAM, LEMZAR SARL", poids: "54 kg", performances: "3p" },
-                            { n: "8", cheval: "ILE AUX ROSES", jockey: "MME CORALIE PACAUT", entraineur: "C. ESCUDER", proprietaire: "MR BERNARD GIRAUDON", eleveurs: "GUY PARIENTE HOLDING", poids: "51,5 kg(53 kg)", performances: "" },
-                            { n: "9", cheval: "PINK ROCHE", jockey: "SYLVAIN RUIS", entraineur: "C. ESCUDER", proprietaire: "MME CRISTEL MARTINA", eleveurs: "SCEA MARMION VAUVILLE", poids: "53 kg", performances: "" }
-                        ]
-                    },
-                    {
-                        nom: "PRIX D'EYGUIERES",
-                        horaire: "12h23",
-                        numero: "2",
-                        type: "Plat",
-                        participants: [
-                            { n: "1", cheval: "FINK PLOYD", jockey: "VALENTIN SEGUY", entraineur: "J. REYNIER (S)", proprietaire: "G.AUGUSTIN-NORMAND", eleveurs: "P. JABOT", poids: "58 kg", performances: "" },
-                            { n: "2", cheval: "BLACK TIE", jockey: "JEAN-BERNARD EYQUEM", entraineur: "JC. ROUGET (S)", proprietaire: "ECURIE D.LAYANI/GOUSSERIE RACING", eleveurs: "E. PUERARI, ECURIE DU PARC MONCEAU, MME A. GRAVEREAUX, OCEANIC BLOODSTOCK INC", poids: "58 kg", performances: "" },
-                            { n: "3", cheval: "NELLO", jockey: "HUGO BESNIER", entraineur: "P. COTTIER", proprietaire: "ECURIE DU SUD", eleveurs: "T.DE LA HERONNIERE", poids: "58 kg", performances: "" },
-                            { n: "4", cheval: "UNFURLED", jockey: "ANTHONY CRASTUS", entraineur: "N. PERRET (S)", proprietaire: "ECURIE THOMAS SIVADIER", eleveurs: "E.A.R.L. ELEVAGE DES LOGES", poids: "58 kg", performances: "" },
-                            { n: "5", cheval: "SAINT FLORENT", jockey: "MARVIN GRANDIN", entraineur: "J. REYNIER (S)", proprietaire: "LE MARAIS SAS", eleveurs: "HARAS DU LOGIS SAINT GERMAIN", poids: "58 kg", performances: "" },
-                            { n: "6", cheval: "THE MOON'S ANGEL", jockey: "GUILLAUME MILLET", entraineur: "R. FRADET (S)", proprietaire: "MR MICHEL NIKITAS", eleveurs: "MME R. DWEK, MME C. SIMON, MME T.DE BEAUREGARD, D. SOURDEAU DE BEAUREGARD", poids: "58 kg", performances: "" },
-                            { n: "7", cheval: "ZELKOVA (IRE)", jockey: "MME CORALIE PACAUT", entraineur: "JC. ROUGET (S)", proprietaire: "AL SHAQAB RACING", eleveurs: "AL SHAQAB RACING", poids: "55 kg(56,5 kg)", performances: "" },
-                            { n: "8", cheval: "RUGLES", jockey: "NON PARTANT", entraineur: "J. REYNIER (S)", proprietaire: "MR GERARD AUGUSTIN-NORMAND", eleveurs: "FRANKLIN FINANCE S.A.", poids: "56,5 kg", performances: "" },
-                            { n: "9", cheval: "DENGIE", jockey: "SYLVAIN RUIS", entraineur: "N. PERRET (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "56,5 kg", performances: "" },
-                            { n: "10", cheval: "DISBAY", jockey: "IORITZ MENDIZABAL", entraineur: "J. ANDREU (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "56,5 kg", performances: "" },
-                            { n: "11", cheval: "HOODWINK", jockey: "MME MANON GERMAIN", entraineur: "J. REYNIER (S)", proprietaire: "MR JAMES WIGAN", eleveurs: "LONDON THOROUGHBRED SERVICES", poids: "55 kg(56,5 kg)", performances: "" }
-                        ]
-                    },
-                    {
-                        nom: "PRIX D'ARLES",
-                        horaire: "12h55",
-                        numero: "3",
-                        type: "Plat",
-                        participants: [
-                            { n: "1", cheval: "FIUMICCINO", jockey: "HUGO BESNIER", entraineur: "P. COTTIER", proprietaire: "MR JEAN-PIERRE-JOSEPH DUBOIS", eleveurs: "MME L. LEMIERE DUBOIS", poids: "58 kg", performances: "0p5p2p4p" },
-                            { n: "2", cheval: "GREEN HEAD", jockey: "MICKAEL FOREST", entraineur: "Y. BONNEFOY (S)", proprietaire: "ECURIE BERTRAND MILLIERE", eleveurs: "ECURIE BERTRAND MILLIERE, C. MILLIERE", poids: "58 kg", performances: "(24)0p" },
-                            { n: "3", cheval: "GOLDEN BROWN", jockey: "JEAN-BERNARD EYQUEM", entraineur: "JC. ROUGET (S)", proprietaire: "ECURIE VIVALDI", eleveurs: "HARAS DE GRANDCAMP EARL", poids: "58 kg", performances: "3p 2p(24)4p3p2p3p" },
-                            { n: "4", cheval: "BLACK BOSS", jockey: "GUILLAUME MILLET", entraineur: "R. FRADET (S)", proprietaire: "MR FABRICE FANTAUZZA", eleveurs: "SUC. D.DE LA HERONNIERE", poids: "58 kg", performances: "2p2p" },
-                            { n: "5", cheval: "CANNOLO (IRE)", jockey: "ANTHONY CRASTUS", entraineur: "C. ESCUDER", proprietaire: "N.RICIGNUOLO/EQUUS RACING/MEKKI", eleveurs: "MME P. CARPENTIER, SCEA JLC, SCEA L'AUBAY", poids: "58 kg", performances: "4p9p" },
-                            { n: "6", cheval: "IL BIONDINO", jockey: "MME CORALIE PACAUT", entraineur: "C. ESCUDER", proprietaire: "N.RICIGNUOLO/F.GRIMA/B.MEKKI", eleveurs: "HARAS DES TROIS CHAPELLES", poids: "56,5 kg(58 kg)", performances: "0p" },
-                            { n: "7", cheval: "C'EST VRAI", jockey: "SYLVAIN RUIS", entraineur: "N. PERRET (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "58 kg", performances: "5p" },
-                            { n: "8", cheval: "DREAM IN BROOKE", jockey: "MME MARINA BRUNELLI", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "V.GUEDJ/P.GUEDJ/JL.MEDINA STUD", eleveurs: "P. GUEDJ, V. GUEDJ, JL. MEDINA", poids: "53 kg(56,5 kg)", performances: "4p 6p" },
-                            { n: "9", cheval: "ALMERIA", jockey: "MME MANON GERMAIN", entraineur: "J. REYNIER (S)", proprietaire: "MR JAMES WIGAN", eleveurs: "LONDON THOROUGHBRED SERVICES", poids: "55 kg(56,5 kg)", performances: "4p" }
-                        ]
-                    },
-                    {
-                        nom: "PRIX DE LA SOCIETE DES COURSES DE SALON-DE-PROVENCE",
-                        horaire: "13h27",
-                        numero: "4",
-                        type: "Plat",
-                        participants: [
-                            { n: "1", cheval: "PRADO", jockey: "ANTHONY CRASTUS", entraineur: "P. COTTIER", proprietaire: "MR JEAN-PIERRE-JOSEPH DUBOIS", eleveurs: "JPJ. DUBOIS", poids: "57 kg", performances: "4p3p3p1p3p(24)3p2p7p" },
-                            { n: "2", cheval: "MONDO", jockey: "JEAN-BERNARD EYQUEM", entraineur: "JC. ROUGET (S)", proprietaire: "ECURIE C. MARZOCCO", eleveurs: "HARAS D'ETREHAM, RIVIERA EQUINE S.A.R.L", poids: "57 kg", performances: "4p(24)7p1p3p" },
-                            { n: "3", cheval: "ZARAKCHIC", jockey: "ANTONIO ORANI", entraineur: "J. REYNIER (S)", proprietaire: "G.PARIENTE/JC.SEROUL/AUGUSTIN-N.", eleveurs: "GUY PARIENTE HOLDING", poids: "57 kg", performances: "4p(24)1p3p" },
-                            { n: "4", cheval: "MARCHEMALO", jockey: "HUGO BESNIER", entraineur: "P. COTTIER", proprietaire: "JF.GRIBOMONT/EC.SUD/D.DUMOULIN", eleveurs: "JF. GRIBOMONT", poids: "57 kg", performances: "1p" },
-                            { n: "5", cheval: "DIOPTASE (IRE)", jockey: "MARVIN GRANDIN", entraineur: "JC. ROUGET (S)", proprietaire: "LE MARAIS/EC.STEMPNIAK/PARIENTE", eleveurs: "SCEA MARMION VAUVILLE, ECURIE SKYMARC FARM, NIGHTCHILL LLC", poids: "57 kg", performances: "2p5p1p" },
-                            { n: "6", cheval: "STEF LE MAGNIFIQUE", jockey: "GUILLAUME MILLET", entraineur: "R. FRADET (S)", proprietaire: "MR MICHEL NIKITAS", eleveurs: "W. NEUMANN, EARL HARAS DU LOGIS, J. INCE", poids: "57 kg", performances: "6p2p(24)2p1p" },
-                            { n: "7", cheval: "KLYCOT", jockey: "SYLVAIN RUIS", entraineur: "N. PERRET (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "57 kg", performances: "1p6p" }
-                        ]
-                    },
-                    {
-                        nom: "PRIX DU CENTRE D'ENTRAINEMENT DE CALAS",
-                        horaire: "14h12",
-                        numero: "5",
-                        type: "Plat",
-                        participants: [
-                            { n: "1", cheval: "BOOGIE", jockey: "ANTHONY CRASTUS", entraineur: "N. PERRET (S)", proprietaire: "MR HERVE GUILLET", eleveurs: "RY. SIMON, N. SIMON, MME V. SIMON, MME C. SIMON", poids: "59 kg", performances: "1p1p2p 0p1p(24)2p1p9p2p" },
-                            { n: "2", cheval: "INTERSTELLA GER", jockey: "MME MARINA BRUNELLI", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "ECURIE JOYA RACING SAS", eleveurs: "MME U. IMM, J. IMM", poids: "54 kg(57,5 kg)", performances: "1p4p 6p7p9p(24)4p1p6p5p" },
-                            { n: "3", cheval: "ZLARA", jockey: "IORITZ MENDIZABAL", entraineur: "M. CESANDRI (S)", proprietaire: "MR JEAN-CLAUDE RAVIER", eleveurs: "BLOODSTOCK AGENCY LTD, MME M. RISI", poids: "57,5 kg", performances: "(24)1p8p8p4p 4p0p1p1p2p" },
-                            { n: "4", cheval: "POLYSPEED (IRE)", jockey: "ANTONIO ORANI", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "AA.AMELINE/AGV KARWIN/EC.EQUUS", eleveurs: "WERTHEIMER & FRERE", poids: "57 kg", performances: "1p2p2p(24)5p" },
-                            { n: "5", cheval: "BACK TO BLACK", jockey: "MARVIN GRANDIN", entraineur: "J. REYNIER (S)", proprietaire: "ECURIE MG", eleveurs: "F. VERMEULEN", poids: "56 kg", performances: "7p(24)3p4p5p(23)5p6p5p4p" },
-                            { n: "6", cheval: "MY CHARMING PRINCE", jockey: "GUILLAUME MILLET", entraineur: "E. MIKHALIDES (S)", proprietaire: "MR STEPHANE GRANDIN", eleveurs: "EARL HARAS DU CAMP BENARD", poids: "56 kg", performances: "0p7p(23)3p1p9p9p 2p6p3p" },
-                            { n: "7", cheval: "BLACK SAXON", jockey: "HUGO BESNIER", entraineur: "N. BELLANGER (S)", proprietaire: "MR DIDIER MARS", eleveurs: "LE THENNEY", poids: "56 kg", performances: "6p(24)7p1p3p4p" },
-                            { n: "8", cheval: "LADY MANA", jockey: "MME MANON GERMAIN", entraineur: "F. FORESI", proprietaire: "MR GUILLAUME DUROT", eleveurs: "HARAS DU HOGUENET, P. NATAF", poids: "53 kg(54,5 kg)", performances: "9p(24)0p2p4p3p 7p1p0p3p" },
-                            { n: "9", cheval: "AMELIELYMPIQUE (IRE)", jockey: "SYLVAIN RUIS", entraineur: "N. PERRET (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "54,5 kg", performances: "0p(24)Tp3p5p8p 4p(23)3p5p" }
-                        ]
-                    },
-                    {
-                        nom: "PRIX JEAN-JACQUES NAPOLI",
-                        horaire: "14h47",
-                        numero: "6",
-                        type: "Plat",
-                        participants: [
-                            { n: "1", cheval: "SHAMSABAD", jockey: "ANTONIO ORANI", entraineur: "C. MARTINON", proprietaire: "ECURIE DU PERROQUET SAUVAGE", eleveurs: "SUC. S.A. AGA KHAN", poids: "60 kg", performances: "2p9p6p 6p6p3p8p(24)0p0p" },
-                            { n: "2", cheval: "ALROMY", jockey: "MME MANON GERMAIN", entraineur: "MME L. SALTON", proprietaire: "MME LAURA SALTON", eleveurs: "SCA ELEVAGE DE TOURGEVILLE, MME H. ERCULIANI", poids: "58,5 kg(60 kg)", performances: "1p9p0p(24)0p3p9p1p 7p1p" },
-                            { n: "3", cheval: "TIGRE ROUGE", jockey: "MICKAEL FOREST", entraineur: "RC. MONTENEGRO", proprietaire: "MME SUSANNE RITSON", eleveurs: "MME S. RITSON", poids: "58,5 kg", performances: "4p3p2p(24)8p2p1p1p 4p1p" },
-                            { n: "4", cheval: "DREAM OF EMERAUDE", jockey: "GUILLAUME MILLET", entraineur: "J. VAN HANDENHOVE", proprietaire: "ECURIE DE LA VERTE VALLEE", eleveurs: "MME A. DELARUE", poids: "58,5 kg", performances: "5p0p0p5p(24)1p9p6p3p 6p" },
-                            { n: "5", cheval: "MOUTRAKI IRE", jockey: "HUGO BESNIER", entraineur: "N. PERRET (S)", proprietaire: "MR ERIC D' ANGELO", eleveurs: "LIMESTONE STUD, TARA STUD", poids: "58 kg", performances: "6p9p4p(24)8p2p6p7p 0p8p" },
-                            { n: "6", cheval: "BUSINESS PLAN", jockey: "MARVIN GRANDIN", entraineur: "S. LABATE (S)", proprietaire: "P.FAUCAMPRE/B.ROTGER/N.MICHELOTT", eleveurs: "V. BUKHTOYAROV, E. KAPPUSHEV", poids: "57 kg", performances: "9p8p9p6p6p(24)4p4p4p6p" },
-                            { n: "7", cheval: "FOR BETTY", jockey: "GREGOIRE LEGRAS", entraineur: "N. PERRET (S)", proprietaire: "MME CRISTEL MARTINA", eleveurs: "THOUSAND DREAMS", poids: "57 kg", performances: "2p(24)0p6p" },
-                            { n: "8", cheval: "HADLEIGH", jockey: "IORITZ MENDIZABAL", entraineur: "J. ANDREU (S)", proprietaire: "MR ROBERT MINICHIELLO", eleveurs: "ECURIE KURA", poids: "56 kg", performances: "4p0p4p7p 5p(24)0p0p4p4p" },
-                            { n: "9", cheval: "HASHTAG JOA", jockey: "DAVID BREUX", entraineur: "M. PLANARD", proprietaire: "MR ALESSANDRO RENATO PAVESI", eleveurs: "J.DE CHEFFONTAINES", poids: "56 kg", performances: "5p0p 9p0p(24)9p0p6p2p 0p" },
-                            { n: "10", cheval: "KALEOBAYANE", jockey: "MME MICKAELLE MICHEL", entraineur: "MME R. PHILIPPON", proprietaire: "MR ROLAND PHILIPPON", eleveurs: "MME E. LAFEU", poids: "53,5 kg(55 kg)", performances: "6p9p(24)3p4p5p6p 1p5p9p" },
-                            { n: "11", cheval: "MAVALA", jockey: "MME MAELLE MORCEL", entraineur: "N. PERRET (S)", proprietaire: "N.PERRET (S)", eleveurs: "BOUTIN (S)", poids: "50 kg(53,5 kg)", performances: "3p9p 6p0p0p(24)0p3p9p0p" }
-                        ]
-                    },
-                    {
-                        nom: "PRIX DE MIRAMAS",
-                        horaire: "15h22",
-                        numero: "7",
-                        type: "Plat",
-                        participants: [
-                            { n: "1", cheval: "COTE JARDIN", jockey: "JIRI CHALOUPKA", entraineur: "J. CHALOUPKA", proprietaire: "CAJDASROT S.R.O.", eleveurs: "F. BOZO, SUC. P. BOZO, MME MC. BOZO, JC. BOZO", poids: "60 kg", performances: "(24)6p0p0p5p(23)0p6p8p6p" },
-                            { n: "2", cheval: "AL HABISSET", jockey: "HUGO BESNIER", entraineur: "F. BOUALEM", proprietaire: "MR FAOUZI BOUALEM", eleveurs: "HARAS DU GRAND COURGEON", poids: "59,5 kg", performances: "5p6p 6p3p8p(24)2p3p3p3p" },
-                            { n: "3", cheval: "ASPEN", jockey: "ANTONIO ORANI", entraineur: "R. FRADET (S)", proprietaire: "MR MICHEL NIKITAS", eleveurs: "ALEYRION BLOODSTOCK LTD", poids: "59,5 kg", performances: "3p0p0p 0p7p(24)8p1p0p4p" },
-                            { n: "4", cheval: "GAMECHANGER", jockey: "EMILIEN PUILLET-RODA", entraineur: "JC. SARAIS", proprietaire: "MR DANIEL ORTU", eleveurs: "ECURIE SKYMARC FARM", poids: "58 kg(59,5 kg)", performances: "1p0p1p9p 5p4p(24)6p7p6p" },
-                            { n: "5", cheval: "INTO FAITH", jockey: "MME CORALIE PACAUT", entraineur: "C. ESCUDER", proprietaire: "MR ALEXANDRE DE LANFRANCHI", eleveurs: "THE KATHRYN STUD", poids: "58 kg(59,5 kg)", performances: "4p1p7p6p6p(24)5p2p2p1p" },
-                            { n: "6", cheval: "LESSARD", jockey: "MME MICKAELLE MICHEL", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "MR GERARD AUGUSTIN-NORMAND", eleveurs: "FRANKLIN FINANCE S.A.", poids: "58 kg(59,5 kg)", performances: "2p0p9p9p2p(24)5p1p1p2p" },
-                            { n: "7", cheval: "EXHIT", jockey: "RUDY PIMBONNET", entraineur: "M. PIMBONNET", proprietaire: "B.BIMOZ/ECURIE SAINT-HILAIRE", eleveurs: "WERTHEIMER & FRERE", poids: "58 kg", performances: "8p0p1p1p 2p7p(24)0p2p6p" },
-                            { n: "8", cheval: "JAGDA", jockey: "VALENTIN SEGUY", entraineur: "M. CESANDRI (S)", proprietaire: "MR LAURENT GIREL", eleveurs: "HARAS DE LA PERELLE", poids: "58 kg", performances: "2p5p0p(24)9p0p6p5p 8p4p" },
-                            { n: "9", cheval: "DOCTEUR TOURNESOL", jockey: "MME MARINA BRUNELLI", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "MME HENRI DEVIN", eleveurs: "MME H. DEVIN", poids: "55 kg(57,5 kg)", performances: "6p2p 5p5p7p(24)6p1p2p6p" },
-                            { n: "10", cheval: "SANCHO", jockey: "GUILLAUME MILLET", entraineur: "J. ANDREU (S)", proprietaire: "MME LAETITIA MILLET", eleveurs: "MERIDIAN INTERNATIONAL SARL, LEMZAR SARL", poids: "56,5 kg", performances: "3p0p(24)5p4p2p7p 4p2p8p" },
-                            { n: "11", cheval: "AVERNES (IRE)", jockey: "IORITZ MENDIZABAL", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "ECURIE JOYA RACING SAS", eleveurs: "FRANKLIN FINANCE S.A.", poids: "56,5 kg", performances: "4p 5p2p7p6p(24)7p0p(23)Ah" }
-                        ]
-                    },
-                    {
-                        nom: "PRIX CHRISTIAN FORNAROLI",
-                        horaire: "15h57",
-                        numero: "8",
-                        type: "Plat",
-                        participants: [
-                            { n: "1", cheval: "LOU MAN", jockey: "GREG BENOIST", entraineur: "P. DAULIER", proprietaire: "MME SYLVIE DAULIER", eleveurs: "K. RHATIGAN", poids: "60 kg", performances: "4p 0p0p(24)7p6p0p0p0p0p" },
-                            { n: "2", cheval: "ROSEDALE", jockey: "SYLVAIN RUIS", entraineur: "P. COTTIER", proprietaire: "MR JEAN-PIERRE-JOSEPH DUBOIS", eleveurs: "JPJ. DUBOIS", poids: "60 kg", performances: "2p(24)2p4p 2p1p3p 5p7p" },
-                            { n: "3", cheval: "YATT", jockey: "MARVIN GRANDIN", entraineur: "J. REYNIER (S)", proprietaire: "ECURIE NICOLAS", eleveurs: "HARAS DE LA PERELLE", poids: "59 kg", performances: "(24)3p1p4p5p(23)5p1p2p4p" },
-                            { n: "4", cheval: "ACCLAM", jockey: "ANTHONY CRASTUS", entraineur: "P. COTTIER", proprietaire: "EC.DES CHARMES/MR R.TALBOT", eleveurs: "THE ACCLAMATION SYNDICATE", poids: "58,5 kg", performances: "0p 1p(24)0p8p6p(23)6p(22)" },
-                            { n: "5", cheval: "BELLAGIO", jockey: "HUGO BESNIER", entraineur: "N. PERRET (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "58,5 kg", performances: "9p4p(24)1p8p1p2p 7p2p6p" },
-                            { n: "6", cheval: "BONS BAISERS", jockey: "ANTONIO ORANI", entraineur: "P. COTTIER", proprietaire: "EC.DES CHARMES/MME V.FAVE", eleveurs: "LA TOUQUES BLOODSTOCK", poids: "57,5 kg", performances: "6p(24)9p0p3p0p 2p(23)3p" },
-                            { n: "7", cheval: "LYKION", jockey: "MICKAEL FOREST", entraineur: "RC. MONTENEGRO", proprietaire: "E.BUCHER/J.SCHOENENBERGER", eleveurs: "G. KERN, E. BUCHER", poids: "57,5 kg", performances: "1p(24)9p5p0p 5p4p8p0p0p" },
-                            { n: "8", cheval: "STAR VICTORY", jockey: "IORITZ MENDIZABAL", entraineur: "M. CESANDRI (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "57,5 kg", performances: "9p5p(24)0p0p1p5p3p 0p3p" },
-                            { n: "9", cheval: "KILIMANDJARO", jockey: "ROMAIN FRADET", entraineur: "R. FRADET (S)", proprietaire: "EC.CARRE MAGIQUE SARL", eleveurs: "SE. HINDERFELD", poids: "56,5 kg", performances: "1p(24)2p4p 9p6p7p(23)4p" },
-                            { n: "10", cheval: "LAUTREC", jockey: "MME CORALIE PACAUT", entraineur: "L. BOISSAUX", proprietaire: "BOISSAUX (S)", eleveurs: "BOISSAUX (S)", poids: "55,5 kg(57 kg)", performances: "0p6p9p 4p5p(24)9p0p2p1p" },
-                            { n: "11", cheval: "MACHO MAN", jockey: "JEAN-BERNARD EYQUEM", entraineur: "L. BAUDRON (S)", proprietaire: "BAUDRON (S)", eleveurs: "ELISE ET GERARD HENOCHSBERG", poids: "57 kg", performances: "0p1p3p9p7p(24)0p(23)7p" },
-                            { n: "12", cheval: "FLASHING MOON", jockey: "MME MANON GERMAIN", entraineur: "C. ESCUDER", proprietaire: "MR ALEXANDRE DE LANFRANCHI", eleveurs: "HARAS DU GRAND CHESNAIE, A. DE LANFRANCHI", poids: "53 kg(55 kg)", performances: "5p2p1p3p0p(24)0p4p0p0p" }
-                        ]
-                    }
-                ]
-            };
+            // Variable pour stocker les données des courses
+            let coursesData = {};
             
             // Fonction pour formater une date au format local (DD/MM/YYYY)
             function formatDateLocal(date) {
-                return date.toLocaleDateString('fr-FR');
-            }
-            
-            // Fonction pour obtenir une date lisible (aujourd'hui, demain, etc.)
-            function getReadableDate(date) {
-                const today = new Date();
-                const tomorrow = new Date();
-                tomorrow.setDate(tomorrow.getDate() + 1);
-                
-                // Comparer les dates (ignorer l'heure)
-                const isToday = date.getDate() === today.getDate() && 
-                                 date.getMonth() === today.getMonth() && 
-                                 date.getFullYear() === today.getFullYear();
-                
-                const isTomorrow = date.getDate() === tomorrow.getDate() && 
-                                   date.getMonth() === tomorrow.getMonth() && 
-                                   date.getFullYear() === tomorrow.getFullYear();
-                        
-                if (isToday) {
-                    return `Aujourd'hui (${formatDateLocal(date)})`;
-                } else if (isTomorrow) {
-                    return `Demain (${formatDateLocal(date)})`;
-                } else {
-                    return formatDateLocal(date);
-                }
+                const day = String(date.getDate()).padStart(2, '0');
+                const month = String(date.getMonth() + 1).padStart(2, '0');
+                const year = date.getFullYear();
+                return `${day}/${month}/${year}`;
             }
             
             // Fonction pour afficher les hippodromes et leurs courses
             function displayHippodromes() {
+                console.log("Affichage des hippodromes avec données:", coursesData);
+                
                 // Si aucune donnée n'est disponible
                 if (Object.keys(coursesData).length === 0) {
                     resultsContainer.innerHTML = `
                         <div class="no-results">
                             <i class="fas fa-search"></i>
                             <h3>Aucune course trouvée</h3>
-                            <p>Essayez de modifier votre recherche</p>
+                            <p>Essayez de modifier votre recherche ou changer de date</p>
                         </div>
                     `;
                     return;
@@ -1354,6 +1194,17 @@
                         });
                     });
                     
+                    // Ouvrir automatiquement le premier hippodrome si pas de recherche
+                    if (!searchTerm) {
+                        const firstHeader = document.querySelector('.hippodrome-header');
+                        if (firstHeader) {
+                            const targetId = firstHeader.dataset.target;
+                            const coursesList = document.getElementById(targetId);
+                            coursesList.classList.add('visible');
+                            firstHeader.querySelector('.toggle-icon').classList.add('open');
+                        }
+                    }
+                    
                     // Ajouter les événements click aux boutons de détails
                     document.querySelectorAll('.detail-btn').forEach(btn => {
                         btn.addEventListener('click', function(e) {
@@ -1368,9 +1219,14 @@
             
             // Fonction pour afficher les détails d'une course dans la fenêtre modale
             function showCourseDetails(hippodrome, courseName) {
+                console.log(`Affichage des détails pour: ${hippodrome} - ${courseName}`);
+                
                 // Trouver la course correspondante
                 const course = coursesData[hippodrome].find(c => c.nom === courseName);
-                if (!course) return;
+                if (!course) {
+                    console.error(`Course non trouvée: ${courseName}`);
+                    return;
+                }
                 
                 // Mettre à jour le titre et les métadonnées
                 modalTitle.textContent = course.nom;
@@ -1385,7 +1241,7 @@
                     </div>
                     <div class="meta-item">
                         <i class="fas fa-calendar"></i>
-                        <strong>Date:</strong> 17/04/2025
+                        <strong>Date:</strong> ${currentDateSpan.textContent.replace('Aujourd\'hui (', '').replace('Demain (', '').replace(')', '')}
                     </div>
                     <div class="meta-item">
                         <i class="fas fa-users"></i>
@@ -1393,7 +1249,7 @@
                     </div>
                     <div class="meta-item">
                         <i class="fas fa-info-circle"></i>
-                        <strong>Type:</strong> ${course.type}
+                        <strong>Type:</strong> ${course.type || 'Plat'}
                     </div>
                 `;
                 
@@ -1447,33 +1303,66 @@
             });
             
             // Bouton de changement de date
-            const dateButton = document.getElementById('date-button');
-            const currentDateSpan = document.getElementById('current-date');
-            
             dateButton.addEventListener('click', function() {
-                // Dans une version complète, ceci ouvrirait un sélecteur de date
-                // Pour cette démo, on simule un basculement entre aujourd'hui et demain
+                // Récupérer la date actuelle
                 const today = new Date();
-                const tomorrow = new Date();
+                const tomorrow = new Date(today);
                 tomorrow.setDate(tomorrow.getDate() + 1);
                 
-                if (currentDateSpan.textContent.includes('Aujourd')) {
-                    currentDateSpan.textContent = `Demain (${formatDateLocal(tomorrow)})`;
+                // Format pour l'API: YYYY-MM-DD
+                let targetDate;
+                
+                // Basculer entre aujourd'hui et demain
+                if (currentDateSpan.textContent.includes('Aujourd\'hui')) {
+                    // Si on affiche aujourd'hui, passer à demain
+                    const year = tomorrow.getFullYear();
+                    const month = String(tomorrow.getMonth() + 1).padStart(2, '0');
+                    const day = String(tomorrow.getDate()).padStart(2, '0');
+                    targetDate = `${year}-${month}-${day}`;
                 } else {
-                    currentDateSpan.textContent = `Aujourd'hui (${formatDateLocal(today)})`;
+                    // Sinon, revenir à aujourd'hui
+                    const year = today.getFullYear();
+                    const month = String(today.getMonth() + 1).padStart(2, '0');
+                    const day = String(today.getDate()).padStart(2, '0');
+                    targetDate = `${year}-${month}-${day}`;
                 }
                 
-                // On pourrait charger d'autres données ici
+                console.log(`Changement de date vers: ${targetDate}`);
+                loadCoursesForDate(targetDate);
             });
+            
+            // Fonction pour charger les courses d'une date spécifique
+            function loadCoursesForDate(date) {
+                console.log(`Chargement des courses pour la date: ${date}`);
+                
+                // Utiliser le module de chargement de données
+                window.hippique.loadAndDisplayRaces(date, 
+                    // Callback de succès
+                    function(data) {
+                        console.log("Données chargées avec succès:", Object.keys(data));
+                        coursesData = data;
+                        displayHippodromes();
+                    }, 
+                    // Callback d'erreur
+                    function(error) {
+                        console.error("Erreur lors du chargement des courses:", error);
+                        resultsContainer.innerHTML = `
+                            <div class="no-results">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <h3>Erreur lors du chargement des courses</h3>
+                                <p>${error}</p>
+                            </div>
+                        `;
+                    }
+                );
+            }
             
             // Masquer le bouton d'effacement au chargement
             searchClear.style.display = 'none';
             
-            // Afficher les hippodromes au chargement initial
-            displayHippodromes();
-            
-            // Mise à jour de la date
-            lastUpdateEl.textContent = formatDateLocal(new Date());
+            // Charger les courses du jour au démarrage
+            const today = window.hippique.getTodayDateFormatted();
+            loadCoursesForDate(today);
         });
     </script>
 </body>
