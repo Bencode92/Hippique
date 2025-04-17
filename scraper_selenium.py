@@ -505,8 +505,8 @@ def parse_arguments():
     parser.add_argument("categories", nargs="?", default="",
                         help="Catégories à extraire séparées par virgule (ex: jockeys,chevaux)")
     
-    parser.add_argument("--max-clicks", type=int, default=200,
-                        help="Nombre maximum de clics sur le bouton 'Plus' (par défaut: 200)")
+    parser.add_argument("--max-clicks", type=int, default=100,
+                        help="Nombre maximum de clics sur le bouton 'Plus' (par défaut: 100)")
     
     parser.add_argument("--wait-time", type=float, default=3.0,
                         help="Temps d'attente de base entre les actions (par défaut: 3.0 secondes)")
