@@ -123,11 +123,11 @@ def extract_data_with_selenium(url, category, max_plus_clicks=None):
         driver.get(url)
         
         # Attendre que la page charge complètement
-        time.sleep(3)  # Attendez d'abord un temps fixe
+        time.sleep(5)  # Augmenté à 5 secondes pour un chargement initial complet
         
-        # Tenter d'attendre que le tableau soit présent (max 10 secondes)
+        # Tenter d'attendre que le tableau soit présent (max 15 secondes)
         try:
-            WebDriverWait(driver, 10).until(
+            WebDriverWait(driver, 15).until(  # Augmenté à 15 secondes
                 EC.presence_of_element_located((By.CSS_SELECTOR, "table[role='grid'], table.tablesorter"))
             )
             logger.info(f"Tableau détecté pour {category}")
@@ -136,6 +136,8 @@ def extract_data_with_selenium(url, category, max_plus_clicks=None):
             
         # Cliquer sur "Plus" tant qu'il est présent pour charger toutes les données
         click_count = 0
+        consecutive_failures = 0
+        
         while max_plus_clicks is None or click_count < max_plus_clicks:
             try:
                 # Essayer différents sélecteurs pour le bouton "Plus"
@@ -151,7 +153,7 @@ def extract_data_with_selenium(url, category, max_plus_clicks=None):
                 plus_button = None
                 for selector in selectors:
                     try:
-                        plus_button = WebDriverWait(driver, 3).until(
+                        plus_button = WebDriverWait(driver, 5).until(  # Augmenté à 5 secondes
                             EC.element_to_be_clickable((By.XPATH, selector))
                         )
                         break
@@ -166,35 +168,42 @@ def extract_data_with_selenium(url, category, max_plus_clicks=None):
                 
                 # Faire défiler jusqu'au bouton pour s'assurer qu'il est visible
                 driver.execute_script("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", plus_button)
-                time.sleep(1)  # Attendre un peu que le défilement se termine
+                time.sleep(2)  # Attendre un peu que le défilement se termine
                 
                 # Cliquer sur le bouton avec JavaScript (plus fiable qu'un clic standard)
                 driver.execute_script("arguments[0].click();", plus_button)
                 click_count += 1
                 
-                # Attendre que de nouvelles données se chargent
-                time.sleep(2)
+                # Attendre que de nouvelles données se chargent avec délai aléatoire
+                time.sleep(random.uniform(3.0, 5.0))  # Attente aléatoire entre 3 et 5 secondes
                 
                 # Vérifier si le tableau a changé/grandi
                 rows_before = len(driver.find_elements(By.CSS_SELECTOR, "table[role='grid'] tr, table.tablesorter tr"))
-                time.sleep(2)  # Attendre un peu pour le chargement
+                time.sleep(3)  # Augmenté à 3 secondes pour donner plus de temps au chargement
                 rows_after = len(driver.find_elements(By.CSS_SELECTOR, "table[role='grid'] tr, table.tablesorter tr"))
                 
                 logger.info(f"Nombre de lignes après clic: {rows_after} (avant: {rows_before})")
                 
-                # Si le nombre de lignes n'a pas changé après deux clics consécutifs, arrêter
-                if rows_before == rows_after and click_count > 1:
-                    logger.info("Le nombre de lignes n'a pas augmenté, plus de données à charger.")
-                    break
+                # Si le nombre de lignes n'a pas changé après plusieurs clics consécutifs, arrêter
+                if rows_before == rows_after:
+                    consecutive_failures += 1
+                    if consecutive_failures >= 3:  # Essayer 3 fois avant d'abandonner
+                        logger.info("Le nombre de lignes n'a pas augmenté après plusieurs tentatives, plus de données à charger.")
+                        break
+                else:
+                    consecutive_failures = 0  # Réinitialiser le compteur d'échecs
                 
-            except (TimeoutException, NoSuchElementException, ElementClickInterceptedException, StaleElementReferenceException):
-                logger.info("Aucun bouton 'Plus' détecté ou plus de données à charger.")
-                break
+            except (TimeoutException, NoSuchElementException, ElementClickInterceptedException, StaleElementReferenceException) as e:
+                logger.info(f"Exception lors du clic: {str(e)}")
+                consecutive_failures += 1
+                if consecutive_failures >= 3:
+                    logger.info("Trop d'exceptions consécutives, arrêt du chargement.")
+                    break
         
         logger.info(f"Total de {click_count} clics sur 'Plus' effectués")
         
         # Attendre un peu après le dernier clic pour s'assurer que toutes les données sont chargées
-        time.sleep(3)
+        time.sleep(5)  # Augmenté à 5 secondes
         
         # Prendre le HTML complet de la page
         html = driver.page_source
@@ -447,6 +456,9 @@ def parse_arguments():
     parser.add_argument("--max-clicks", type=int, default=None,
                         help="Nombre maximum de clics sur le bouton 'Plus' (par défaut: aucune limite)")
     
+    parser.add_argument("--wait-time", type=float, default=3.0,
+                        help="Temps d'attente de base entre les actions (par défaut: 3.0 secondes)")
+    
     return parser.parse_args()
 
 def main():
@@ -471,6 +483,7 @@ def main():
     
     logger.info(f"Catégories à extraire: {', '.join(selected_categories)}")
     logger.info(f"Limite de clics 'Plus': {args.max_clicks if args.max_clicks is not None else 'Aucune'}")
+    logger.info(f"Temps d'attente de base: {args.wait_time} secondes")
     
     # Résultats globaux
     results = {}
@@ -493,7 +506,7 @@ def main():
             }
         
         # Pause pour éviter de surcharger le serveur
-        time.sleep(2)
+        time.sleep(random.uniform(2.0, 5.0))  # Délai aléatoire entre 2 et 5 secondes
     
     # Résumé de l'extraction
     logger.info("Résumé de l'extraction:")
