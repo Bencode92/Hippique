@@ -322,8 +322,8 @@
             padding: 2rem;
             border: 1px solid var(--gold);
             border-radius: 12px;
-            width: 90%;
-            max-width: 1000px;
+            width: 95%;
+            max-width: 1200px;
             max-height: 85vh;
             overflow-y: auto;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
@@ -371,6 +371,13 @@
             color: var(--accent);
         }
 
+        .participants-title {
+            color: var(--accent);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+
         .participants-table {
             width: 100%;
             border-collapse: separate;
@@ -386,6 +393,8 @@
             font-weight: 500;
             position: sticky;
             top: 0;
+            z-index: 10;
+            font-size: 0.9rem;
         }
 
         .participants-table tr {
@@ -407,20 +416,84 @@
         .participants-table td {
             padding: 0.8rem 1rem;
             border-bottom: 1px solid rgba(233, 209, 140, 0.1);
+            vertical-align: middle;
+            line-height: 1.4;
+            font-size: 0.95rem;
         }
 
         .horse-number {
             background-color: var(--medium-teal);
             color: var(--gold);
-            width: 30px;
-            height: 30px;
+            width: 32px;
+            height: 32px;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 50%;
             font-weight: 600;
+            margin: 0 auto;
         }
-
+        
+        .horse-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+        
+        .horse-name {
+            font-weight: 500;
+            color: var(--gold);
+        }
+        
+        .horse-details {
+            font-size: 0.85rem;
+            color: rgba(245, 233, 201, 0.8);
+        }
+        
+        .pedigree {
+            font-size: 0.85rem;
+            font-style: italic;
+            color: rgba(245, 233, 201, 0.7);
+        }
+        
+        .corde-number {
+            font-size: 0.85rem;
+            background-color: rgba(64, 224, 208, 0.1);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        
+        .performance-data {
+            font-family: monospace;
+            letter-spacing: 1px;
+            background-color: rgba(22, 62, 60, 0.5);
+            padding: 0.3rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+        
+        .gains-value {
+            font-weight: 500;
+            color: var(--accent);
+        }
+        
+        .valeur-section span {
+            background-color: rgba(212, 175, 55, 0.2);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+        }
+        
+        .equipement-tag {
+            display: inline-block;
+            background-color: rgba(64, 224, 208, 0.15);
+            color: var(--accent);
+            padding: 0.1rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-right: 0.3rem;
+        }
+        
         .tabs-container {
             margin-bottom: 2rem;
         }
@@ -450,63 +523,6 @@
 
         .tab:hover:not(.active) {
             background-color: rgba(22, 62, 60, 0.8);
-        }
-
-        .hippodrome-card {
-            border-radius: 8px;
-            overflow: hidden;
-            margin-bottom: 1.5rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .hippodrome-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        .action-buttons {
-            display: flex;
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-
-        .action-btn {
-            flex: 1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.7rem;
-            padding: 1rem;
-            border-radius: 8px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .action-btn.primary {
-            background-color: rgba(64, 224, 208, 0.1);
-            color: var(--accent);
-            border: 1px solid rgba(64, 224, 208, 0.3);
-        }
-
-        .action-btn.secondary {
-            background-color: rgba(212, 175, 55, 0.1);
-            color: var(--gold);
-            border: 1px solid rgba(212, 175, 55, 0.3);
-        }
-
-        .action-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .action-btn.primary:hover {
-            background-color: rgba(64, 224, 208, 0.2);
-        }
-
-        .action-btn.secondary:hover {
-            background-color: rgba(212, 175, 55, 0.2);
         }
         
         .loading {
@@ -616,6 +632,50 @@
             transform: translateY(-2px);
         }
         
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .action-btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.7rem;
+            padding: 1rem;
+            border-radius: 8px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .action-btn.primary {
+            background-color: rgba(64, 224, 208, 0.1);
+            color: var(--accent);
+            border: 1px solid rgba(64, 224, 208, 0.3);
+        }
+
+        .action-btn.secondary {
+            background-color: rgba(212, 175, 55, 0.1);
+            color: var(--gold);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .action-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .action-btn.primary:hover {
+            background-color: rgba(64, 224, 208, 0.2);
+        }
+
+        .action-btn.secondary:hover {
+            background-color: rgba(212, 175, 55, 0.2);
+        }
+        
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
@@ -647,6 +707,17 @@
             
             .course-details {
                 padding: 1rem;
+            }
+            
+            .modal-content {
+                width: 95%;
+                margin: 5% auto;
+                padding: 1rem;
+            }
+            
+            .participants-table {
+                display: block;
+                overflow-x: auto;
             }
         }
     </style>
@@ -718,14 +789,17 @@
                     <table class="participants-table" id="participants-table">
                         <thead>
                             <tr>
-                                <th>N°</th>
-                                <th>Cheval</th>
+                                <th style="width: 50px;">N°</th>
+                                <th style="width: 250px;">Cheval</th>
                                 <th>Jockey</th>
                                 <th>Entraîneur</th>
                                 <th>Propriétaire</th>
                                 <th>Éleveurs</th>
-                                <th>Poids</th>
+                                <th style="width: 80px;">Poids</th>
                                 <th>Performances</th>
+                                <th>Gains</th>
+                                <th>Valeur</th>
+                                <th>Équip.</th>
                             </tr>
                         </thead>
                         <tbody id="participants-tbody">
@@ -1012,23 +1086,72 @@
                 
                 if (course.participants && Array.isArray(course.participants) && course.participants.length > 0) {
                     course.participants.forEach(participant => {
+                        // Formatage des données amélioré pour une meilleure lisibilité
+                        
+                        // Extraction des informations du cheval
+                        const chevalNom = participant.cheval || "";
+                        const chevalUrl = participant.cheval_url || "";
+                        
+                        // Pedigree (père et mère)
+                        const pereMere = participant.pere_mere || "";
+                        
+                        // Numéro de corde
+                        const corde = participant.corde || "";
+                        
+                        // Autres informations
+                        const gains = participant.gains || "";
+                        const valeur = participant.valeur || "";
+                        const equipement = participant.equipement || participant['equipement(s)'] || "";
+                        
+                        // Création de la cellule cheval avec toutes les informations
+                        const chevalCell = `
+                            <div class="horse-info">
+                                <div class="horse-name">${chevalNom}</div>
+                                ${pereMere ? `<div class="pedigree">${pereMere}</div>` : ''}
+                                ${corde ? `<div class="corde-number">${corde}</div>` : ''}
+                            </div>
+                        `;
+                        
+                        // Cellule performances formatée
+                        const performancesCell = participant.performances ? 
+                            `<span class="performance-data">${participant.performances}</span>` : 
+                            "-";
+                        
+                        // Cellule gains formatée
+                        const gainsCell = gains ? 
+                            `<span class="gains-value">${gains}</span>` : 
+                            "-";
+                        
+                        // Cellule valeur formatée
+                        const valeurCell = valeur ? 
+                            `<div class="valeur-section"><span>${valeur}</span></div>` : 
+                            "-";
+                        
+                        // Cellule équipement formatée
+                        const equipementCell = equipement ? 
+                            `<span class="equipement-tag">${equipement}</span>` : 
+                            "-";
+                        
                         participantsHtml += `
                             <tr>
                                 <td><div class="horse-number">${participant.n || ""}</div></td>
-                                <td>${participant.cheval || ""}</td>
+                                <td>${chevalCell}</td>
                                 <td>${participant.jockey || ""}</td>
                                 <td>${participant.entraineur || ""}</td>
                                 <td>${participant.proprietaire || ""}</td>
                                 <td>${participant.eleveurs || ""}</td>
                                 <td>${participant.poids || ""}</td>
-                                <td>${participant.performances || "-"}</td>
+                                <td>${performancesCell}</td>
+                                <td>${gainsCell}</td>
+                                <td>${valeurCell}</td>
+                                <td>${equipementCell}</td>
                             </tr>
                         `;
                     });
                 } else {
                     participantsHtml = `
                         <tr>
-                            <td colspan="8" style="text-align: center;">Aucun participant disponible</td>
+                            <td colspan="11" style="text-align: center;">Aucun participant disponible</td>
                         </tr>
                     `;
                 }
