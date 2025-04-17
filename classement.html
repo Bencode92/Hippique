@@ -1262,7 +1262,9 @@
             }
             
             // Fonction pour trier les données avec gestion des égalités pour tous les types de tri
-            function sortData(data, sortKey) {
+            function sortData(data, sortKey, direction = sortDirection) {
+                console.log(`Tri appliqué: ${sortKey}, direction: ${direction}`); // Ajout de log pour debug
+                
                 if (!data || !data.length) return [];
                 
                 // Clone les données pour ne pas modifier l'original
@@ -1293,33 +1295,51 @@
                 // Utiliser rankWithTies pour générer les rangs avec gestion des égalités
                 const ranks = rankWithTies(sortedData, valueGetter);
                 
-                // Forcer un nouveau tri pour s'assurer que l'ordre est appliqué
-                sortedData.sort((a, b) => {
-                    const keyA = currentCategory === 'chevaux' ? a.Nom : a.NomPostal;
-                    const keyB = currentCategory === 'chevaux' ? b.Nom : b.NomPostal;
+                // Inverser tous les rangs si la direction est ascendante
+                const finalRanks = new Map();
+                if (direction === 'asc') {
+                    const totalItems = sortedData.length;
+                    ranks.forEach((rank, key) => {
+                        finalRanks.set(key, totalItems - rank + 1);
+                    });
+                } else {
+                    // Si direction est descendante, utiliser les rangs originaux
+                    ranks.forEach((rank, key) => {
+                        finalRanks.set(key, rank);
+                    });
+                }
+                
+                // Important: Nouvelle approche pour trier correctement les données
+                // Trier d'abord par la valeur (en tenant compte de la direction)
+                const sortedByValue = [...sortedData].sort((a, b) => {
+                    const valA = valueGetter(a);
+                    const valB = valueGetter(b);
                     
-                    // Obtenir les rangs avec égalités
-                    const rankA = ranks.get(keyA) || 999;
-                    const rankB = ranks.get(keyB) || 999;
+                    // Ordre en fonction de la direction
+                    const diff = direction === 'desc' ? valB - valA : valA - valB;
                     
-                    // Appliquer la direction de tri
-                    let direction = sortDirection === 'desc' ? -1 : 1;
+                    // En cas d'égalité, trier par nom
+                    if (diff === 0) {
+                        const nameA = currentCategory === 'chevaux' ? a.Nom : a.NomPostal;
+                        const nameB = currentCategory === 'chevaux' ? b.Nom : b.NomPostal;
+                        return nameA.localeCompare(nameB);
+                    }
                     
-                    // Si les rangs sont différents, trier par rang
-                    const diff = (rankA - rankB) * direction;
-                    if (diff !== 0) return diff;
-                    
-                    // En cas d'égalité, tri alphabétique pour stabilité
-                    return keyA.localeCompare(keyB);
+                    return diff;
                 });
                 
-                // Assigner les rangs finaux visibles
-                sortedData.forEach((item, index) => {
+                // Assigner les rangs finaux
+                sortedByValue.forEach((item, index) => {
                     const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
-                    // Utiliser le rang calculé par rankWithTies pour ce type de tri
-                    item.Rang = ranks.get(key) || (index + 1);
                     
-                    // Récupérer le score pondéré depuis originalScores si disponible
+                    // 1. Fixer le rang en fonction de nos calculs d'égalité
+                    if (direction === 'desc') {
+                        item.Rang = finalRanks.get(key) || (index + 1);
+                    } else {
+                        item.Rang = finalRanks.get(key) || (sortedByValue.length - index);
+                    }
+                    
+                    // 2. Récupérer le score mixte si disponible
                     if (originalScores[currentCategory] && originalScores[currentCategory][key]) {
                         item.ScoreMixte = originalScores[currentCategory][key];
                     } else if (!item.ScoreMixte) {
@@ -1327,7 +1347,7 @@
                     }
                 });
                 
-                return sortedData;
+                return sortedByValue;
             }
             
             // Fonction pour afficher les données dans un tableau
@@ -1471,7 +1491,7 @@
                         showSkeletonLoading(); // Optionnel - donne un feedback visuel
                         
                         // Traitement immédiat sans setTimeout
-                        filteredData = sortData(filteredData, currentSort);
+                        filteredData = sortData(filteredData, currentSort, sortDirection);
                         currentPage = 1;
                         displayResults(filteredData, currentPage);
                     });
@@ -1528,7 +1548,7 @@
                 if (endPage < totalPages) {
                     paginationHTML += `
                         ${endPage < totalPages - 1 ? '<span class="page-btn" style="cursor: default; background: transparent;">...</span>' : ''}
-                        <button class="page-btn" onclick="changePage(${totalPages})}">${totalPages}</button>
+                        <button class="page-btn" onclick="changePage(${totalPages})">${totalPages}</button>
                     `;
                 }
                 
@@ -1610,7 +1630,8 @@
                 const data = await loadData(category);
                 
                 // Appliquer le tri par défaut aux données avec gestion des égalités
-                const sortedData = sortData(data, currentSort);
+                // Toujours utiliser la direction descendante (du plus grand au plus petit) pour le tri par défaut
+                const sortedData = sortData(data, currentSort, 'desc');
                 
                 // Filtrer les données si nécessaire
                 const searchTerm = searchInput.value.trim();
@@ -1664,18 +1685,20 @@
                     
                     // Gérer la direction du tri
                     if (wasSameSort) {
-                        // Si même colonne, inverser la direction
+                        // Si même bouton, inverser la direction
                         sortDirection = sortDirection === 'desc' ? 'asc' : 'desc';
                     } else {
                         // Pour les nouveaux types de tri, définir la direction par défaut
                         sortDirection = sortType === 'mixte' ? 'asc' : 'desc';
                     }
                     
+                    console.log(`Bouton cliqué: ${sortType}, direction: ${sortDirection}`); // Log de debug
+                    
                     // Mettre à jour l'état visuel des boutons immédiatement
                     updateSortButtons();
                     
                     // Forcer l'affichage immédiat sans timeout
-                    filteredData = sortData(filteredData, currentSort);
+                    filteredData = sortData(filteredData, currentSort, sortDirection);
                     currentPage = 1;
                     displayResults(filteredData, currentPage);
                 });
@@ -1700,7 +1723,7 @@
                     filteredData = filterData(allData[currentCategory] || [], searchTerm);
                     
                     // Appliquer le tri courant tout en préservant les scores originaux
-                    filteredData = sortData(filteredData, currentSort);
+                    filteredData = sortData(filteredData, currentSort, sortDirection);
                     
                     currentPage = 1;
                     displayResults(filteredData, currentPage);
@@ -1714,16 +1737,14 @@
                 
                 showSkeletonLoading();
                 
-                setTimeout(() => {
-                    // Réinitialiser le filtre
-                    filteredData = [...allData[currentCategory]] || [];
-                    
-                    // Trier les données tout en préservant les scores originaux
-                    filteredData = sortData(filteredData, currentSort);
-                    
-                    currentPage = 1;
-                    displayResults(filteredData, currentPage);
-                }, 300);
+                // Réinitialiser le filtre
+                filteredData = [...allData[currentCategory]] || [];
+                
+                // Trier les données tout en préservant les scores originaux
+                filteredData = sortData(filteredData, currentSort, sortDirection);
+                
+                currentPage = 1;
+                displayResults(filteredData, currentPage);
             });
             
             // Masquer le bouton d'effacement au chargement
