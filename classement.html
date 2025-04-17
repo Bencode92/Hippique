@@ -578,6 +578,13 @@
             0% { background-position: 200% 0; }
             100% { background-position: -200% 0; }
         }
+        
+        /* Icône pour les participants avec score parfait */
+        .perfect-score::after {
+            content: '⭐';
+            margin-left: 5px;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
@@ -726,10 +733,11 @@
                 jockeys: [
                     { key: 'Rang', label: '#', class: 'rank' },
                     { key: 'NomPostal', label: 'Nom', renderer: (value, item) => {
+                        const hasPerfectScore = item.TauxVictoire === "100.0" && item.TauxPlace === "0.0";
                         if (item.NomPostal_url) {
-                            return `<a href="${item.NomPostal_url}" target="_blank">${value}</a>`;
+                            return `<a href="${item.NomPostal_url}" target="_blank" class="${hasPerfectScore ? 'perfect-score' : ''}">${value}</a>`;
                         }
-                        return value;
+                        return hasPerfectScore ? `<span class="perfect-score">${value}</span>` : value;
                     }},
                     { key: 'Chevaux', label: 'Chevaux', class: 'stats' },
                     { key: 'Partants', label: 'Partants', class: 'stats' },
@@ -742,16 +750,21 @@
                         return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
                     }},
                     { key: 'ScoreMixte', label: 'Score pondéré', class: 'stats', renderer: (value, item) => {
-                        return `<span title="50% victoires, 30% taux de victoire, 20% taux de place">${value}</span>`;
+                        let tooltip = "50% victoires, 30% taux de victoire, 20% taux de place";
+                        if (item.TauxVictoire === "100.0" && item.TauxPlace === "0.0") {
+                            tooltip = "70% victoires, 30% taux de victoire (taux de place ignoré)";
+                        }
+                        return `<span title="${tooltip}">${value}</span>`;
                     }}
                 ],
                 chevaux: [
                     { key: 'Rang', label: '#', class: 'rank' },
                     { key: 'Nom', label: 'Nom', renderer: (value, item) => {
+                        const hasPerfectScore = item.TauxVictoire === "100.0" && item.TauxPlace === "0.0";
                         if (item.LibelleCheval_url) {
-                            return `<a href="${item.LibelleCheval_url}" target="_blank">${value}</a>`;
+                            return `<a href="${item.LibelleCheval_url}" target="_blank" class="${hasPerfectScore ? 'perfect-score' : ''}">${value}</a>`;
                         }
-                        return value;
+                        return hasPerfectScore ? `<span class="perfect-score">${value}</span>` : value;
                     }},
                     { key: 'NbCourses', label: 'Courses', class: 'stats' },
                     { key: 'NbVictoires', label: 'Victoires', class: 'stats' },
@@ -763,16 +776,21 @@
                         return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
                     }},
                     { key: 'ScoreMixte', label: 'Score pondéré', class: 'stats', renderer: (value, item) => {
-                        return `<span title="50% victoires, 30% taux de victoire, 20% taux de place">${value}</span>`;
+                        let tooltip = "50% victoires, 30% taux de victoire, 20% taux de place";
+                        if (item.TauxVictoire === "100.0" && item.TauxPlace === "0.0") {
+                            tooltip = "70% victoires, 30% taux de victoire (taux de place ignoré)";
+                        }
+                        return `<span title="${tooltip}">${value}</span>`;
                     }}
                 ],
                 entraineurs: [
                     { key: 'Rang', label: '#', class: 'rank' },
                     { key: 'NomPostal', label: 'Nom', renderer: (value, item) => {
+                        const hasPerfectScore = item.TauxVictoire === "100.0" && item.TauxPlace === "0.0";
                         if (item.NomPostal_url) {
-                            return `<a href="${item.NomPostal_url}" target="_blank">${value}</a>`;
+                            return `<a href="${item.NomPostal_url}" target="_blank" class="${hasPerfectScore ? 'perfect-score' : ''}">${value}</a>`;
                         }
-                        return value;
+                        return hasPerfectScore ? `<span class="perfect-score">${value}</span>` : value;
                     }},
                     { key: 'Chevaux', label: 'Chevaux', class: 'stats' },
                     { key: 'Partants', label: 'Partants', class: 'stats' },
@@ -785,16 +803,21 @@
                         return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
                     }},
                     { key: 'ScoreMixte', label: 'Score pondéré', class: 'stats', renderer: (value, item) => {
-                        return `<span title="50% victoires, 30% taux de victoire, 20% taux de place">${value}</span>`;
+                        let tooltip = "50% victoires, 30% taux de victoire, 20% taux de place";
+                        if (item.TauxVictoire === "100.0" && item.TauxPlace === "0.0") {
+                            tooltip = "70% victoires, 30% taux de victoire (taux de place ignoré)";
+                        }
+                        return `<span title="${tooltip}">${value}</span>`;
                     }}
                 ],
                 eleveurs: [
                     { key: 'Rang', label: '#', class: 'rank' },
                     { key: 'NomPostal', label: 'Nom', renderer: (value, item) => {
+                        const hasPerfectScore = item.TauxVictoire === "100.0" && item.TauxPlace === "0.0";
                         if (item.NomPostal_url) {
-                            return `<a href="${item.NomPostal_url}" target="_blank">${value}</a>`;
+                            return `<a href="${item.NomPostal_url}" target="_blank" class="${hasPerfectScore ? 'perfect-score' : ''}">${value}</a>`;
                         }
-                        return value;
+                        return hasPerfectScore ? `<span class="perfect-score">${value}</span>` : value;
                     }},
                     { key: 'Chevaux', label: 'Chevaux', class: 'stats' },
                     { key: 'Partants', label: 'Partants', class: 'stats' },
@@ -807,16 +830,21 @@
                         return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
                     }},
                     { key: 'ScoreMixte', label: 'Score pondéré', class: 'stats', renderer: (value, item) => {
-                        return `<span title="50% victoires, 30% taux de victoire, 20% taux de place">${value}</span>`;
+                        let tooltip = "50% victoires, 30% taux de victoire, 20% taux de place";
+                        if (item.TauxVictoire === "100.0" && item.TauxPlace === "0.0") {
+                            tooltip = "70% victoires, 30% taux de victoire (taux de place ignoré)";
+                        }
+                        return `<span title="${tooltip}">${value}</span>`;
                     }}
                 ],
                 proprietaires: [
                     { key: 'Rang', label: '#', class: 'rank' },
                     { key: 'NomPostal', label: 'Nom', renderer: (value, item) => {
+                        const hasPerfectScore = item.TauxVictoire === "100.0" && item.TauxPlace === "0.0";
                         if (item.NomPostal_url) {
-                            return `<a href="${item.NomPostal_url}" target="_blank">${value}</a>`;
+                            return `<a href="${item.NomPostal_url}" target="_blank" class="${hasPerfectScore ? 'perfect-score' : ''}">${value}</a>`;
                         }
-                        return value;
+                        return hasPerfectScore ? `<span class="perfect-score">${value}</span>` : value;
                     }},
                     { key: 'Chevaux', label: 'Chevaux', class: 'stats' },
                     { key: 'Partants', label: 'Partants', class: 'stats' },
@@ -829,12 +857,16 @@
                         return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
                     }},
                     { key: 'ScoreMixte', label: 'Score pondéré', class: 'stats', renderer: (value, item) => {
-                        return `<span title="50% victoires, 30% taux de victoire, 20% taux de place">${value}</span>`;
+                        let tooltip = "50% victoires, 30% taux de victoire, 20% taux de place";
+                        if (item.TauxVictoire === "100.0" && item.TauxPlace === "0.0") {
+                            tooltip = "70% victoires, 30% taux de victoire (taux de place ignoré)";
+                        }
+                        return `<span title="${tooltip}">${value}</span>`;
                     }}
                 ]
             };
             
-            // Fonction pour calculer le classement pondéré - CORRIGÉE
+            // Fonction pour calculer le classement pondéré - CORRIGÉE AVEC PONDÉRATION ADAPTATIVE
             function calculateCompositeRanking(data) {
                 if (!data || !data.length) return data;
                 
@@ -867,7 +899,7 @@
                     })
                 };
 
-                // Attribuer les rangs et calculer le score combiné
+                // Attribuer les rangs et calculer le score combiné avec pondération adaptative
                 dataCopy.forEach(item => {
                     // Adaptez cette partie pour gérer à la fois les chevaux et les autres catégories
                     const itemKey = currentCategory === 'chevaux' ? 'Nom' : 'NomPostal';
@@ -882,11 +914,30 @@
                     const rangTauxVictoire = ranks.TauxVictoire.findIndex(d => d[itemKey] === item[itemKey]) + 1;
                     const rangTauxPlace = ranks.TauxPlace.findIndex(d => d[itemKey] === item[itemKey]) + 1;
                     
+                    // Déterminer si l'élément a un taux de victoire parfait (100%) et un taux de place de 0%
+                    // Ce qui signifie qu'il a gagné toutes ses courses et n'est jamais arrivé 2e ou 3e
+                    const nbCourses = currentCategory === 'chevaux' ? parseInt(item.NbCourses || 0) : parseInt(item.Partants || 0);
+                    const nbVictoires = currentCategory === 'chevaux' ? parseInt(item.NbVictoires || 0) : parseInt(item.Victoires || 0);
+                    const nbPlaces = currentCategory === 'chevaux' ? parseInt(item.NbPlace || 0) : parseInt(item.Place || 0);
+                    
+                    const hasPerfectWinRate = nbCourses > 0 && nbVictoires === nbCourses && nbPlaces === 0;
+                    
+                    // Pondération adaptative
+                    let poidsV = 0.5;  // Poids par défaut pour les victoires
+                    let poidsTV = 0.3; // Poids par défaut pour le taux de victoire
+                    let poidsTP = 0.2; // Poids par défaut pour le taux de place
+                    
+                    // Si taux de victoire parfait, redistribuer le poids du taux de place
+                    if (hasPerfectWinRate) {
+                        poidsV += poidsTP; // Redistribuer le poids du taux de place vers les victoires
+                        poidsTP = 0;       // Ignorer le taux de place
+                    }
+                    
                     // Calcul du score pondéré (valeur plus petite = meilleur classement)
                     item.ScoreMixte = (
-                        0.5 * rangVictoires +
-                        0.3 * rangTauxVictoire +
-                        0.2 * rangTauxPlace
+                        poidsV * rangVictoires +
+                        poidsTV * rangTauxVictoire +
+                        poidsTP * rangTauxPlace
                     ).toFixed(2);
 
                     // Stocker le score dans notre dictionnaire de scores originaux
