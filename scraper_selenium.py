@@ -133,35 +133,46 @@ def extract_data_with_selenium(url, category, max_plus_clicks=None):
             logger.info(f"Tableau détecté pour {category}")
         except TimeoutException:
             logger.warning(f"Timeout en attendant le tableau pour {category}")
-            
+        
         # Cliquer sur "Plus" tant qu'il est présent pour charger toutes les données
         click_count = 0
-        consecutive_failures = 0
+        working_selector = None
         
-        while max_plus_clicks is None or click_count < max_plus_clicks:
+        # Sélecteurs pour le bouton "Plus"
+        selectors = [
+            "//button[contains(text(), 'Plus')]",  # Bouton avec texte "Plus"
+            "//button[contains(@class, 'more')]",  # Bouton avec classe contenant "more"
+            "//a[contains(text(), 'Plus')]",       # Lien avec texte "Plus"
+            "//a[contains(@class, 'more')]",       # Lien avec classe contenant "more"
+            "//button[contains(@class, 'load-more')]", # Bouton "load more"
+            "//button[contains(@class, 'pagination')]" # Bouton de pagination
+        ]
+        
+        # Trouver le premier sélecteur qui fonctionne
+        for selector in selectors:
             try:
-                # Essayer différents sélecteurs pour le bouton "Plus"
-                selectors = [
-                    "//button[contains(text(), 'Plus')]",  # Bouton avec texte "Plus"
-                    "//button[contains(@class, 'more')]",  # Bouton avec classe contenant "more"
-                    "//a[contains(text(), 'Plus')]",       # Lien avec texte "Plus"
-                    "//a[contains(@class, 'more')]",       # Lien avec classe contenant "more"
-                    "//button[contains(@class, 'load-more')]", # Bouton "load more"
-                    "//button[contains(@class, 'pagination')]" # Bouton de pagination
-                ]
-                
-                plus_button = None
-                for selector in selectors:
-                    try:
-                        plus_button = WebDriverWait(driver, 5).until(  # Augmenté à 5 secondes
-                            EC.element_to_be_clickable((By.XPATH, selector))
-                        )
-                        break
-                    except TimeoutException:
-                        continue
+                plus_button = WebDriverWait(driver, 5).until(
+                    EC.element_to_be_clickable((By.XPATH, selector))
+                )
+                if plus_button:
+                    working_selector = selector
+                    logger.info(f"Sélecteur '{selector}' trouvé pour le bouton Plus")
+                    break
+            except TimeoutException:
+                continue
+        
+        if not working_selector:
+            logger.warning("Aucun bouton 'Plus' détecté initialement")
+        
+        while (max_plus_clicks is None or click_count < max_plus_clicks) and working_selector:
+            try:
+                # Rechercher le bouton "Plus" avec le sélecteur qui fonctionne
+                plus_button = WebDriverWait(driver, 5).until(
+                    EC.element_to_be_clickable((By.XPATH, working_selector))
+                )
                 
                 if not plus_button:
-                    logger.info("Aucun bouton 'Plus' détecté, toutes les données sont chargées.")
+                    logger.info("Bouton 'Plus' non trouvé, toutes les données sont chargées.")
                     break
                 
                 logger.info(f"Bouton 'Plus' trouvé, clic #{click_count+1} pour charger plus de résultats...")
@@ -170,34 +181,75 @@ def extract_data_with_selenium(url, category, max_plus_clicks=None):
                 driver.execute_script("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", plus_button)
                 time.sleep(2)  # Attendre un peu que le défilement se termine
                 
+                # Capturer le nombre de lignes avant clic pour validation
+                rows_before = len(driver.find_elements(By.CSS_SELECTOR, "table[role='grid'] tr, table.tablesorter tr"))
+                
                 # Cliquer sur le bouton avec JavaScript (plus fiable qu'un clic standard)
                 driver.execute_script("arguments[0].click();", plus_button)
                 click_count += 1
                 
-                # Attendre que de nouvelles données se chargent avec délai aléatoire
-                time.sleep(random.uniform(3.0, 5.0))  # Attente aléatoire entre 3 et 5 secondes
+                # Scroll en bas de la page après le clic pour forcer le chargement DOM complet
+                driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                time.sleep(4)  # Attendre que ça charge bien
                 
-                # Vérifier si le tableau a changé/grandi
-                rows_before = len(driver.find_elements(By.CSS_SELECTOR, "table[role='grid'] tr, table.tablesorter tr"))
-                time.sleep(3)  # Augmenté à 3 secondes pour donner plus de temps au chargement
+                # Scroll revenir au milieu pour trouver le bouton Plus
+                driver.execute_script("window.scrollTo(0, document.body.scrollHeight/2);")
+                time.sleep(1)
+                
+                # Vérifier si des nouvelles lignes ont été ajoutées (juste pour le log)
                 rows_after = len(driver.find_elements(By.CSS_SELECTOR, "table[role='grid'] tr, table.tablesorter tr"))
+                logger.info(f"Nombre de lignes après clic: {rows_after} (avant: {rows_before}, différence: {rows_after-rows_before})")
                 
-                logger.info(f"Nombre de lignes après clic: {rows_after} (avant: {rows_before})")
+                # Vérifier si le bouton est encore cliquable (mais ne pas sortir de la boucle ici,
+                # on laissera la prochaine itération vérifier avec WebDriverWait)
                 
-                # Si le nombre de lignes n'a pas changé après plusieurs clics consécutifs, arrêter
-                if rows_before == rows_after:
-                    consecutive_failures += 1
-                    if consecutive_failures >= 3:  # Essayer 3 fois avant d'abandonner
-                        logger.info("Le nombre de lignes n'a pas augmenté après plusieurs tentatives, plus de données à charger.")
-                        break
-                else:
-                    consecutive_failures = 0  # Réinitialiser le compteur d'échecs
+            except (TimeoutException, NoSuchElementException, StaleElementReferenceException) as e:
+                logger.info(f"Exception lors de la recherche du bouton 'Plus': {str(e)}")
                 
-            except (TimeoutException, NoSuchElementException, ElementClickInterceptedException, StaleElementReferenceException) as e:
-                logger.info(f"Exception lors du clic: {str(e)}")
-                consecutive_failures += 1
-                if consecutive_failures >= 3:
-                    logger.info("Trop d'exceptions consécutives, arrêt du chargement.")
+                # Vérifier à nouveau tous les sélecteurs au cas où le DOM aurait changé
+                selector_found = False
+                for selector in selectors:
+                    try:
+                        plus_button = WebDriverWait(driver, 3).until(
+                            EC.element_to_be_clickable((By.XPATH, selector))
+                        )
+                        if plus_button:
+                            working_selector = selector
+                            selector_found = True
+                            logger.info(f"Nouveau sélecteur '{selector}' trouvé pour le bouton Plus")
+                            break
+                    except TimeoutException:
+                        continue
+                
+                if not selector_found:
+                    logger.info("Aucun bouton 'Plus' détecté, toutes les données semblent chargées.")
+                    break
+                
+            except ElementClickInterceptedException as e:
+                logger.warning(f"Erreur lors du clic: {str(e)}")
+                
+                # Essayer de faire défiler pour éviter les popups ou bannières
+                try:
+                    driver.execute_script("window.scrollBy(0, 100);")
+                    time.sleep(1)
+                    
+                    # Essayer à nouveau de trouver le bouton
+                    plus_button = WebDriverWait(driver, 3).until(
+                        EC.element_to_be_clickable((By.XPATH, working_selector))
+                    )
+                    
+                    if plus_button:
+                        # Essayer de fermer les popups ou bannières qui pourraient interférer
+                        for close_selector in ["//button[contains(@class, 'close')]", "//div[contains(@class, 'cookie')]//button"]:
+                            try:
+                                close_buttons = driver.find_elements(By.XPATH, close_selector)
+                                for btn in close_buttons:
+                                    driver.execute_script("arguments[0].click();", btn)
+                                    time.sleep(0.5)
+                            except:
+                                pass
+                except:
+                    logger.warning("Impossible de récupérer après l'erreur de clic")
                     break
         
         logger.info(f"Total de {click_count} clics sur 'Plus' effectués")
@@ -453,8 +505,8 @@ def parse_arguments():
     parser.add_argument("categories", nargs="?", default="",
                         help="Catégories à extraire séparées par virgule (ex: jockeys,chevaux)")
     
-    parser.add_argument("--max-clicks", type=int, default=None,
-                        help="Nombre maximum de clics sur le bouton 'Plus' (par défaut: aucune limite)")
+    parser.add_argument("--max-clicks", type=int, default=200,
+                        help="Nombre maximum de clics sur le bouton 'Plus' (par défaut: 200)")
     
     parser.add_argument("--wait-time", type=float, default=3.0,
                         help="Temps d'attente de base entre les actions (par défaut: 3.0 secondes)")
