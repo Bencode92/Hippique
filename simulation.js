@@ -595,15 +595,24 @@ document.addEventListener('DOMContentLoaded', function() {
         const sortedEntries = Object.entries(horsesRaw).sort((a, b) => a[1] - b[1]);
         const total = sortedEntries.length;
         
-        // Calculer les indices de filtre (maintenant avec un nombre fixe)
-        const lowCut = Math.min(excludeLow, total - 2);
-        const highCut = Math.max(0, total - excludeHigh);
+        // AMÉLIORATION DU FILTRAGE
+        // Au lieu d'utiliser des indices fixes, utiliser les valeurs de cotes comme points de coupure
+        const oddsSorted = sortedEntries.map(([_, c]) => c);
+        const minCutoff = oddsSorted[excludeLow] || oddsSorted[excludeLow - 1];
+        const maxCutoff = oddsSorted[total - excludeHigh - 1] || oddsSorted.at(-1);
         
-        // Filtrer les chevaux pour ne garder que la zone médiane
-        const midRangeEntries = sortedEntries.slice(lowCut, highCut);
+        // Filtrer les chevaux avec cotes dans la plage intermédiaire
+        let midRangeEntries = sortedEntries.filter(([_, odds]) => {
+            return odds >= minCutoff && odds <= maxCutoff;
+        });
+        
+        // Trier les restants par cote croissante (du plus probable au moins probable)
+        midRangeEntries = midRangeEntries.sort((a, b) => a[1] - b[1]);
+        
         const midRangeHorses = Object.fromEntries(midRangeEntries);
         
-        console.log(`Mid Range: Gardé ${midRangeEntries.length}/${total} chevaux (exclu ${lowCut} bas, ${total-highCut} haut)`);
+        console.log(`Mid Range: Gardé ${midRangeEntries.length}/${total} chevaux (cotes entre ${minCutoff} et ${maxCutoff})`);
+        console.log("Chevaux médians:", Object.entries(midRangeHorses).map(([name, odds]) => `${name}: ${odds}`));
         
         if (midRangeEntries.length < 2) {
             return sizes.map(size => ({
