@@ -403,17 +403,91 @@
             </div>
             
             <div class="section-container">
-                <h2>Sélectionner une course à analyser</h2>
-                <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
-                    <div style="flex: 1; background-color: rgba(10, 30, 30, 0.5); border: 1px solid rgba(233, 209, 140, 0.3); border-radius: 4px; padding: 0.75rem 1rem;">
-                        Choisir l'hippodrome
+                <h2><i class="fas fa-search"></i> Sélectionner une course à analyser</h2>
+                
+                <div id="course-selector" class="course-selector">
+                    <div class="selector-row">
+                        <div class="selector-item">
+                            <label for="hippodrome-select">Hippodrome</label>
+                            <select id="hippodrome-select">
+                                <option value="">Choisir l'hippodrome</option>
+                                <!-- Options ajoutées dynamiquement -->
+                            </select>
+                        </div>
+                        <div class="selector-item">
+                            <label for="course-date">Date</label>
+                            <div class="date-selector">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>16/04/2025</span>
+                            </div>
+                        </div>
                     </div>
-                    <div style="flex: 1; background-color: rgba(10, 30, 30, 0.5); border: 1px solid rgba(233, 209, 140, 0.3); border-radius: 4px; padding: 0.75rem 1rem;">
-                        16/04/2025
+                    
+                    <div class="selector-row" id="course-select-container" style="display: none;">
+                        <div class="selector-item">
+                            <label for="course-select">Course</label>
+                            <select id="course-select">
+                                <option value="">Choisir une course</option>
+                                <!-- Options ajoutées dynamiquement -->
+                            </select>
+                        </div>
                     </div>
                 </div>
-                <div style="display: flex; gap: 1rem;">
-                    <a href="courses.html" class="btn-primary" style="flex: 1;"><i class="fas fa-chart-line"></i> Analyser les données</a>
+                
+                <!-- Détails de la course et classement théorique -->
+                <div id="course-details" class="course-details" style="display: none;">
+                    <h3 id="course-name">Nom de la course</h3>
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span id="meta-hippodrome">Hippodrome</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span id="meta-horaire">Horaire</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-horse"></i>
+                            <span id="meta-type">Type</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-users"></i>
+                            <span id="meta-participants">Participants</span>
+                        </div>
+                    </div>
+
+                    <div class="theoretical-ranking">
+                        <h3><i class="fas fa-trophy"></i> Classement théorique</h3>
+                        <div class="info-box">
+                            <p><i class="fas fa-info-circle"></i> Ce classement est basé sur notre modèle statistique qui pondère les performances de chaque acteur comme suit: Cheval (55%), Jockey (15%), Entraîneur (12%), Éleveur (10%), Propriétaire (8%).</p>
+                        </div>
+                        
+                        <div class="participants-table-wrapper">
+                            <table class="participants-table" id="ranking-table">
+                                <thead>
+                                    <tr>
+                                        <th width="60">Position</th>
+                                        <th>Cheval</th>
+                                        <th>Jockey</th>
+                                        <th>Score</th>
+                                        <th width="80">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="ranking-table-body">
+                                    <!-- Contenu généré dynamiquement -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+                        <a href="courses.html" class="btn-primary" style="flex: 1;"><i class="fas fa-chart-line"></i> Analyser les données</a>
+                        <a href="simulation.html" class="btn-primary" style="flex: 1;"><i class="fas fa-calculator"></i> Simuler des paris</a>
+                    </div>
+                </div>
+                
+                <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+                    <a href="courses.html" class="btn-primary" style="flex: 1;"><i class="fas fa-chart-line"></i> Voir toutes les courses</a>
                     <a href="simulation.html" class="btn-primary" style="flex: 1;"><i class="fas fa-calculator"></i> Simuler des paris</a>
                 </div>
             </div>
@@ -540,6 +614,10 @@
         </footer>
     </div>
 
+    <!-- Ajout des scripts pour la nouvelle fonctionnalité -->
+    <script src="data.js"></script>
+    <script src="course-analysis.js"></script>
+    
     <script>
         // Script pour rendre les éléments interactifs
         document.addEventListener('DOMContentLoaded', function() {
