@@ -1,8 +1,5 @@
 // Chargeur dynamique des données de courses
 const coursesLoader = {
-    // URL de base pour les fichiers de courses
-    baseUrl: 'https://raw.githubusercontent.com/bencode92/Hippique/main/data/courses/',
-    
     // Récupérer la liste des courses pour une date spécifique
     async loadCoursesForDate(dateStr) {
         console.log(`Chargement des courses pour la date ${dateStr}`);
@@ -17,19 +14,54 @@ const coursesLoader = {
             // Initialiser l'objet courseData
             const courseData = {};
             
-            // Requête pour récupérer la liste des fichiers qui commencent par la date
-            const response = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/data`);
+            // Tester d'abord si le répertoire 'data' existe
+            console.log("Tentative de récupération des fichiers dans le répertoire 'data'");
+            let response = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/data`);
+            
+            // Si le répertoire 'data' n'existe pas, essayer directement à la racine
             if (!response.ok) {
-                throw new Error(`Erreur lors de la récupération des fichiers: ${response.status}`);
+                console.log("Le répertoire 'data' n'existe pas, tentative de récupération à la racine");
+                response = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/`);
+                
+                if (!response.ok) {
+                    throw new Error(`Erreur lors de la récupération des fichiers: ${response.status}`);
+                }
             }
             
             const files = await response.json();
+            console.log("Fichiers trouvés:", files);
             
             // Filtrer pour trouver tous les fichiers JSON correspondant à la date
             const courseFiles = files.filter(file => 
                 file.name.startsWith(dateStr) && 
                 file.name.endsWith('.json')
             );
+            
+            // Si aucun fichier trouvé avec le format exact, essayer avec un format moins strict
+            if (courseFiles.length === 0) {
+                console.log("Aucun fichier trouvé avec le format exact, essai avec un format moins strict");
+                // Extraire seulement l'année et le mois (2025-04)
+                const yearMonth = dateStr.substring(0, 7);
+                const looseMatchFiles = files.filter(file => 
+                    file.name.includes(yearMonth) && 
+                    file.name.endsWith('.json')
+                );
+                
+                // Si des fichiers sont trouvés avec le format moins strict, les utiliser
+                if (looseMatchFiles.length > 0) {
+                    console.log(`Fichiers trouvés avec le format moins strict (${yearMonth}):`, looseMatchFiles);
+                    
+                    for (const file of looseMatchFiles) {
+                        try {
+                            await this.processFile(file, courseData);
+                        } catch (fileError) {
+                            console.error(`Erreur lors du traitement du fichier ${file.name}:`, fileError);
+                        }
+                    }
+                    
+                    return courseData;
+                }
+            }
             
             console.log(`Fichiers de courses trouvés pour ${dateStr}:`, courseFiles);
             
@@ -42,27 +74,7 @@ const coursesLoader = {
             // Charger les données de chaque fichier
             for (const file of courseFiles) {
                 try {
-                    const fileResponse = await fetch(file.download_url);
-                    if (!fileResponse.ok) {
-                        console.error(`Erreur lors du chargement du fichier ${file.name}: ${fileResponse.status}`);
-                        continue;
-                    }
-                    
-                    const fileData = await fileResponse.json();
-                    
-                    // Vérifier si le fichier contient un hippodrome 
-                    // et des courses de type "plat" seulement
-                    if (fileData.hippodrome && fileData.courses) {
-                        // Filtrer pour n'inclure que les courses de type "plat" (insensible à la casse)
-                        const platCourses = fileData.courses.filter(course => 
-                            course.type && course.type.toLowerCase() === "plat"
-                        );
-                        
-                        // N'ajouter l'hippodrome que s'il a des courses de type "plat"
-                        if (platCourses.length > 0) {
-                            courseData[fileData.hippodrome] = platCourses;
-                        }
-                    }
+                    await this.processFile(file, courseData);
                 } catch (fileError) {
                     console.error(`Erreur lors du traitement du fichier ${file.name}:`, fileError);
                 }
@@ -74,6 +86,62 @@ const coursesLoader = {
         } catch (error) {
             console.error("Erreur lors du chargement des courses:", error);
             return {};
+        }
+    },
+    
+    // Traiter un fichier JSON
+    async processFile(file, courseData) {
+        console.log(`Traitement du fichier: ${file.name}, URL: ${file.download_url}`);
+        
+        const fileResponse = await fetch(file.download_url);
+        if (!fileResponse.ok) {
+            console.error(`Erreur lors du chargement du fichier ${file.name}: ${fileResponse.status}`);
+            return;
+        }
+        
+        try {
+            const fileData = await fileResponse.json();
+            console.log(`Structure du fichier ${file.name}:`, Object.keys(fileData));
+            
+            // Détecter automatiquement la structure du fichier
+            if (fileData.hippodrome) {
+                // Format standard avec hippodrome et courses
+                console.log(`Fichier ${file.name} contient l'hippodrome: ${fileData.hippodrome}`);
+                
+                // Vérifier si 'courses' existe et est un tableau
+                if (fileData.courses && Array.isArray(fileData.courses)) {
+                    // Ajouter les courses (sans filtrage par type)
+                    courseData[fileData.hippodrome] = fileData.courses;
+                    console.log(`Ajout de ${fileData.courses.length} courses pour l'hippodrome ${fileData.hippodrome}`);
+                }
+            } else {
+                // Essayer de déterminer dynamiquement le nom de l'hippodrome depuis le nom du fichier
+                const filename = file.name;
+                // Extraire le nom de l'hippodrome du nom de fichier (après la date)
+                const match = filename.match(/\d{4}-\d{2}-\d{2}_(.+)\.json$/);
+                
+                if (match && match[1]) {
+                    const hippodromeName = match[1].toUpperCase().replace(/_/g, ' ');
+                    console.log(`Nom d'hippodrome extrait du fichier: ${hippodromeName}`);
+                    
+                    // Vérifier si le contenu est déjà un tableau
+                    if (Array.isArray(fileData)) {
+                        courseData[hippodromeName] = fileData;
+                        console.log(`Ajout de ${fileData.length} courses pour l'hippodrome ${hippodromeName}`);
+                    } else {
+                        // Si le contenu est directement l'objet de course individuel
+                        courseData[hippodromeName] = [fileData];
+                        console.log(`Ajout d'une course pour l'hippodrome ${hippodromeName}`);
+                    }
+                } else {
+                    console.warn(`Impossible de déterminer l'hippodrome pour le fichier ${filename}`);
+                }
+            }
+        } catch (jsonError) {
+            console.error(`Erreur lors de l'analyse JSON du fichier ${file.name}:`, jsonError);
+            // Essayer de charger le contenu en texte brut pour déboguer
+            const textContent = await fileResponse.text();
+            console.log(`Contenu brut du fichier ${file.name} (premiers 200 caractères):`, textContent.substring(0, 200));
         }
     },
     
