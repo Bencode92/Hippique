@@ -2,115 +2,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log("Course analysis script loaded");
     
-    // Données statiques directement dans le script pour éviter les problèmes de chargement
-    const coursesData = {
-        "SALON PROVENCE": [
-            {
-                nom: "PRIX DE LA COTE BLEUE",
-                horaire: "11h51",
-                numero: "1",
-                type: "Plat",
-                participants: [
-                    { n: "1", cheval: "CHARMING CAT", jockey: "HUGO BESNIER", entraineur: "P. COTTIER", proprietaire: "GOUSSERIE RACING", eleveurs: "X. RICHARD", poids: "58 kg", performances: "1p" },
-                    { n: "2", cheval: "THE BLACK STONE", jockey: "ALEJANDRO GUTIERREZ VAL", entraineur: "MME J. SOUBAGNE", proprietaire: "TAKE FIVE SAS", eleveurs: "TAKE FIVE SAS, MME J. SOUBAGNE", poids: "58 kg", performances: "1p" },
-                    { n: "3", cheval: "HELLO SPRING", jockey: "DAVID BREUX", entraineur: "T. RICHARD (S)", proprietaire: "H.MONCHAUX/MME K.RICHARD", eleveurs: "H. MONCHAUX", poids: "54,5 kg", performances: "" },
-                    { n: "4", cheval: "FRAGANCE", jockey: "MME MICKAELLE MICHEL", entraineur: "JPJ. DUBOIS", proprietaire: "MR JEAN-PIERRE-JOSEPH DUBOIS", eleveurs: "JPJ. DUBOIS", poids: "52,5 kg(54 kg)", performances: "6p" }
-                ]
-            },
-            {
-                nom: "PRIX D'EYGUIERES",
-                horaire: "12h23",
-                numero: "2",
-                type: "Plat",
-                participants: [
-                    { n: "1", cheval: "FINK PLOYD", jockey: "VALENTIN SEGUY", entraineur: "J. REYNIER (S)", proprietaire: "G.AUGUSTIN-NORMAND", eleveurs: "P. JABOT", poids: "58 kg", performances: "" },
-                    { n: "2", cheval: "BLACK TIE", jockey: "JEAN-BERNARD EYQUEM", entraineur: "JC. ROUGET (S)", proprietaire: "ECURIE D.LAYANI/GOUSSERIE RACING", eleveurs: "E. PUERARI, ECURIE DU PARC MONCEAU, MME A. GRAVEREAUX, OCEANIC BLOODSTOCK INC", poids: "58 kg", performances: "" },
-                    { n: "3", cheval: "NELLO", jockey: "HUGO BESNIER", entraineur: "P. COTTIER", proprietaire: "ECURIE DU SUD", eleveurs: "T.DE LA HERONNIERE", poids: "58 kg", performances: "" }
-                ]
-            }
-        ],
-        "LONGCHAMP": [
-            {
-                nom: "PRIX DE PARIS",
-                horaire: "14h20",
-                numero: "1",
-                type: "Plat",
-                participants: [
-                    { n: "1", cheval: "GALACTIC STAR", jockey: "CHRISTOPHE SOUMILLON", entraineur: "A. FABRE (S)", proprietaire: "GODOLPHIN SNC", eleveurs: "DARLEY", poids: "58 kg", performances: "1p1p2p" },
-                    { n: "2", cheval: "SWIFT VICTORY", jockey: "MAXIME GUYON", entraineur: "F. HEAD (S)", proprietaire: "WERTHEIMER & FRERE", eleveurs: "WERTHEIMER ET FRERE", poids: "58 kg", performances: "2p1p3p" }
-                ]
-            }
-        ],
-        "SAINT-CLOUD": [
-            {
-                nom: "PRIX DE LA SEINE",
-                horaire: "15h15",
-                numero: "1",
-                type: "Plat",
-                participants: [
-                    { n: "1", cheval: "ROYAL DESTINY", jockey: "STEPHANE PASQUIER", entraineur: "C. LAFFON-PARIAS", proprietaire: "WERTHEIMER & FRERE", eleveurs: "WERTHEIMER ET FRERE", poids: "58 kg", performances: "2p1p" },
-                    { n: "2", cheval: "DIAMOND LIGHT", jockey: "PIERRE-CHARLES BOUDOT", entraineur: "A. FABRE (S)", proprietaire: "GODOLPHIN SNC", eleveurs: "DARLEY", poids: "58 kg", performances: "1p2p" }
-                ]
-            }
-        ]
-    };
-
-    // Données de classement pour le calcul des scores théoriques - Valeurs moyennes pour chaque acteur
-    const scoresMoyens = {
-        chevaux: 75,
-        jockeys: 70,
-        entraineurs: 72,
-        eleveurs: 68,
-        proprietaires: 65
-    };
-
-    // Scores spécifiques pour quelques acteurs clés
-    const scoresSpecifiques = {
-        chevaux: {
-            "CHARMING CAT": 85,
-            "THE BLACK STONE": 82,
-            "HELLO SPRING": 79,
-            "FRAGANCE": 76,
-            "FINK PLOYD": 84,
-            "BLACK TIE": 86,
-            "NELLO": 77,
-            "GALACTIC STAR": 92, 
-            "SWIFT VICTORY": 90,
-            "ROYAL DESTINY": 91,
-            "DIAMOND LIGHT": 89
-        },
-        jockeys: {
-            "HUGO BESNIER": 78,
-            "ALEJANDRO GUTIERREZ VAL": 72,
-            "DAVID BREUX": 70,
-            "MME MICKAELLE MICHEL": 82,
-            "VALENTIN SEGUY": 75,
-            "JEAN-BERNARD EYQUEM": 84,
-            "CHRISTOPHE SOUMILLON": 92,
-            "MAXIME GUYON": 90,
-            "STEPHANE PASQUIER": 85,
-            "PIERRE-CHARLES BOUDOT": 89
-        },
-        entraineurs: {
-            "P. COTTIER": 75,
-            "MME J. SOUBAGNE": 72,
-            "T. RICHARD (S)": 76,
-            "JPJ. DUBOIS": 84,
-            "J. REYNIER (S)": 82,
-            "JC. ROUGET (S)": 88,
-            "A. FABRE (S)": 92,
-            "F. HEAD (S)": 86,
-            "C. LAFFON-PARIAS": 83
-        }
-    };
-
     // Éléments DOM
     const hippodromeSelect = document.getElementById('hippodrome-select');
     const courseSelectContainer = document.getElementById('course-select-container');
     const courseSelect = document.getElementById('course-select');
     const courseDetails = document.getElementById('course-details');
+    const currentDateElement = document.querySelector('.date-selector span');
     
-    console.log("Elements DOM récupérés:", {hippodromeSelect, courseSelectContainer, courseSelect, courseDetails});
+    console.log("Éléments DOM récupérés:", {hippodromeSelect, courseSelectContainer, courseSelect, courseDetails});
 
     // Vérifier si les éléments DOM ont été trouvés
     if (!hippodromeSelect || !courseSelectContainer || !courseSelect || !courseDetails) {
@@ -118,6 +17,24 @@ document.addEventListener('DOMContentLoaded', function() {
         return; // Sortir de la fonction si des éléments essentiels manquent
     }
 
+    // Mettre à jour la date avec la date du jour
+    function updateCurrentDate() {
+        const now = new Date();
+        const day = String(now.getDate()).padStart(2, '0');
+        const month = String(now.getMonth() + 1).padStart(2, '0');
+        const year = now.getFullYear();
+        
+        if (currentDateElement) {
+            currentDateElement.textContent = `${day}/${month}/${year}`;
+        }
+        
+        // Mettre à jour également la date dans le footer
+        const footerDateElement = document.querySelector('footer p');
+        if (footerDateElement) {
+            footerDateElement.innerHTML = footerDateElement.innerHTML.replace(/\d{2}\/\d{2}\/\d{4}/, `${day}/${month}/${year}`);
+        }
+    }
+    
     // Initialisation - Peupler le sélecteur d'hippodromes
     function initHippodromeSelect() {
         console.log("Initialisation du sélecteur d'hippodromes");
@@ -126,18 +43,73 @@ document.addEventListener('DOMContentLoaded', function() {
         hippodromeSelect.innerHTML = '<option value="">Choisir l\'hippodrome</option>';
         
         // Ajouter les options
-        Object.keys(coursesData).forEach(hippodrome => {
+        Object.keys(courseData).forEach(hippodrome => {
             const option = document.createElement('option');
             option.value = hippodrome;
             option.textContent = hippodrome;
             hippodromeSelect.appendChild(option);
         });
         
-        console.log("Sélecteur d'hippodromes initialisé avec", Object.keys(coursesData).length, "options");
+        console.log("Sélecteur d'hippodromes initialisé avec", Object.keys(courseData).length, "options");
     }
     
     // Fonction pour calculer le score théorique d'un participant
     function calculerScoreTheorique(cheval, jockey, entraineur, eleveur, proprietaire) {
+        // Récupérer les scores des acteurs ou utiliser la fonction depuis data.js si disponible
+        if (window.calculerScoreTheorique) {
+            return window.calculerScoreTheorique(cheval, jockey, entraineur, eleveur, proprietaire);
+        }
+        
+        // Version de secours si la fonction n'est pas disponible dans data.js
+        // Scores moyens pour chaque catégorie
+        const scoresMoyens = {
+            chevaux: 75,
+            jockeys: 70,
+            entraineurs: 72,
+            eleveurs: 68,
+            proprietaires: 65
+        };
+        
+        // Scores pour quelques acteurs connus
+        const scoresSpecifiques = {
+            chevaux: {
+                "CHARMING CAT": 85,
+                "THE BLACK STONE": 82,
+                "HELLO SPRING": 79,
+                "FRAGANCE": 76,
+                "FINK PLOYD": 84,
+                "BLACK TIE": 86,
+                "NELLO": 77,
+                "GALACTIC STAR": 92, 
+                "SWIFT VICTORY": 90,
+                "ROYAL DESTINY": 91,
+                "DIAMOND LIGHT": 89
+            },
+            jockeys: {
+                "HUGO BESNIER": 78,
+                "ALEJANDRO GUTIERREZ VAL": 72,
+                "DAVID BREUX": 70,
+                "MME MICKAELLE MICHEL": 82,
+                "VALENTIN SEGUY": 75,
+                "JEAN-BERNARD EYQUEM": 84,
+                "CHRISTOPHE SOUMILLON": 92,
+                "MAXIME GUYON": 90,
+                "STEPHANE PASQUIER": 85,
+                "PIERRE-CHARLES BOUDOT": 89
+            },
+            entraineurs: {
+                "P. COTTIER": 75,
+                "MME J. SOUBAGNE": 72,
+                "T. RICHARD (S)": 76,
+                "JPJ. DUBOIS": 84,
+                "J. REYNIER (S)": 82,
+                "JC. ROUGET (S)": 88,
+                "A. FABRE (S)": 92,
+                "F. HEAD (S)": 86,
+                "C. LAFFON-PARIAS": 83
+            }
+        };
+        
         // Récupérer les scores des acteurs
         const scoreCheval = scoresSpecifiques.chevaux[cheval] || scoresMoyens.chevaux;
         const scoreJockey = scoresSpecifiques.jockeys[jockey] || scoresMoyens.jockeys;
@@ -183,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
         courseSelect.innerHTML = '<option value="">Choisir une course</option>';
         
         // Récupérer les courses pour cet hippodrome
-        const courses = coursesData[hippodrome];
+        const courses = courseData[hippodrome];
         if (!courses || courses.length === 0) {
             console.warn("Aucune course trouvée pour cet hippodrome");
             return;
@@ -221,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log("Affichage des détails pour", courseName, "à", hippodrome);
         
         // Trouver la course dans les données
-        const course = coursesData[hippodrome].find(c => c.nom === courseName);
+        const course = courseData[hippodrome].find(c => c.nom === courseName);
         
         if (!course) {
             console.error("Course non trouvée");
@@ -232,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('course-name').textContent = course.nom;
         document.getElementById('meta-hippodrome').textContent = hippodrome;
         document.getElementById('meta-horaire').textContent = course.horaire;
-        document.getElementById('meta-type').textContent = course.type;
+        document.getElementById('meta-type').textContent = course.type || "Plat";
         document.getElementById('meta-participants').textContent = course.participants.length;
         
         // Calculer les scores théoriques pour chaque participant
@@ -268,12 +240,78 @@ document.addEventListener('DOMContentLoaded', function() {
         // Récupérer le tbody du tableau
         const rankingTableBody = document.getElementById('ranking-table-body');
         if (!rankingTableBody) {
-            console.error("Elément ranking-table-body non trouvé");
+            console.error("Élément ranking-table-body non trouvé");
             return;
         }
         
         // Vider le tableau
         rankingTableBody.innerHTML = '';
+        
+        // Styles CSS pour les badges de position et barres de score
+        if (!document.getElementById('ranking-styles')) {
+            const styleSheet = document.createElement('style');
+            styleSheet.id = 'ranking-styles';
+            styleSheet.innerHTML = `
+                .position-badge {
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    background-color: var(--medium-teal);
+                    color: var(--light-gold);
+                    font-weight: 600;
+                    margin: 0 auto;
+                }
+                
+                .position-badge.top-1 {
+                    background-color: gold;
+                    color: var(--dark-teal);
+                    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+                }
+                
+                .position-badge.top-2 {
+                    background-color: silver;
+                    color: var(--dark-teal);
+                    box-shadow: 0 0 8px rgba(192, 192, 192, 0.5);
+                }
+                
+                .position-badge.top-3 {
+                    background-color: #cd7f32; /* Bronze */
+                    color: var(--dark-teal);
+                    box-shadow: 0 0 8px rgba(205, 127, 50, 0.5);
+                }
+                
+                .score-display {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                }
+                
+                .score-bar {
+                    flex: 1;
+                    height: 8px;
+                    background-color: rgba(255, 255, 255, 0.1);
+                    border-radius: 4px;
+                    overflow: hidden;
+                }
+                
+                .score-fill {
+                    height: 100%;
+                    background: linear-gradient(to right, var(--accent), var(--gold));
+                    border-radius: 4px;
+                }
+                
+                .score-value {
+                    font-weight: 600;
+                    color: var(--accent);
+                    min-width: 40px;
+                    text-align: right;
+                }
+            `;
+            document.head.appendChild(styleSheet);
+        }
         
         // Ajouter les participants
         participants.forEach((p, index) => {
@@ -316,7 +354,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Initialiser les sélecteurs
+    // Initialiser les sélecteurs et la date
+    updateCurrentDate();
     initHippodromeSelect();
     console.log("Initialisation terminée");
 });
