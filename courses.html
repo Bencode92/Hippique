@@ -241,6 +241,343 @@
             }
         }
         
+        /* Styles pour le nouvel affichage des courses */
+        .courses-container {
+            margin-bottom: 2rem;
+        }
+
+        .hippodrome-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 1.5rem;
+            background-color: var(--medium-teal);
+            border-radius: 8px 8px 0 0;
+            border: 1px solid rgba(233, 209, 140, 0.2);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .hippodrome-header:hover {
+            background-color: var(--light-teal);
+        }
+
+        .hippodrome-header h2 {
+            color: var(--gold);
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .hippodrome-header .toggle-icon {
+            color: var(--gold);
+            transition: transform 0.3s ease;
+        }
+
+        .hippodrome-header.active .toggle-icon {
+            transform: rotate(90deg);
+        }
+
+        .hippodrome-info {
+            display: flex;
+            gap: 2rem;
+            color: var(--light-gold);
+            font-size: 0.9rem;
+        }
+
+        .courses-list {
+            display: none;
+            border: 1px solid rgba(233, 209, 140, 0.2);
+            border-top: none;
+            border-radius: 0 0 8px 8px;
+            overflow: hidden;
+            background-color: rgba(22, 62, 60, 0.2);
+            margin-bottom: 1rem;
+        }
+
+        .courses-list.visible {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .course-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            border-bottom: 1px solid rgba(233, 209, 140, 0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .course-item:last-child {
+            border-bottom: none;
+        }
+
+        .course-item:hover {
+            background-color: rgba(26, 81, 78, 0.4);
+        }
+
+        .course-name {
+            color: var(--light-gold);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .course-name i {
+            color: var(--accent);
+            font-size: 0.9rem;
+        }
+
+        .course-info {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .participants-count {
+            color: var(--light-gold);
+            background-color: rgba(64, 224, 208, 0.1);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .detail-btn {
+            background-color: rgba(64, 224, 208, 0.1);
+            color: var(--accent);
+            border: 1px solid rgba(64, 224, 208, 0.3);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .detail-btn:hover {
+            background-color: rgba(64, 224, 208, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styles pour la fenêtre modale de détails */
+        .course-modal {
+            display: none; 
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .course-modal.visible {
+            display: block;
+        }
+
+        .modal-content {
+            background-color: var(--dark-teal);
+            margin: 5% auto;
+            padding: 2rem;
+            border: 1px solid var(--gold);
+            border-radius: 12px;
+            width: 90%;
+            max-width: 1000px;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .close-modal {
+            color: var(--light-gold);
+            position: absolute;
+            right: 1.5rem;
+            top: 1.5rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .close-modal:hover {
+            color: var(--accent);
+            transform: scale(1.1);
+        }
+
+        .modal-title {
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
+            padding-bottom: 0.8rem;
+        }
+
+        .course-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .meta-item i {
+            color: var(--accent);
+        }
+
+        .participants-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        .participants-table th {
+            background-color: rgba(5, 25, 25, 0.9);
+            color: var(--gold);
+            text-align: left;
+            padding: 1rem;
+            font-weight: 500;
+            position: sticky;
+            top: 0;
+        }
+
+        .participants-table tr {
+            transition: background-color 0.3s ease;
+        }
+
+        .participants-table tr:nth-child(odd) {
+            background-color: rgba(22, 62, 60, 0.4);
+        }
+
+        .participants-table tr:nth-child(even) {
+            background-color: rgba(19, 54, 52, 0.4);
+        }
+
+        .participants-table tr:hover {
+            background-color: rgba(26, 81, 78, 0.6);
+        }
+
+        .participants-table td {
+            padding: 0.8rem 1rem;
+            border-bottom: 1px solid rgba(233, 209, 140, 0.1);
+        }
+
+        .horse-number {
+            background-color: var(--medium-teal);
+            color: var(--gold);
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: 600;
+        }
+
+        .tabs-container {
+            margin-bottom: 2rem;
+        }
+
+        .tabs {
+            display: flex;
+            background: rgba(22, 62, 60, 0.2);
+            border-radius: 8px 8px 0 0;
+            overflow: hidden;
+        }
+
+        .tab {
+            padding: 1rem 2rem;
+            background-color: rgba(10, 30, 30, 0.5);
+            color: var(--light-gold);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            border-bottom: 3px solid transparent;
+        }
+
+        .tab.active {
+            background-color: var(--medium-teal);
+            color: var(--gold);
+            border-bottom: 3px solid var(--gold);
+        }
+
+        .tab:hover:not(.active) {
+            background-color: rgba(22, 62, 60, 0.8);
+        }
+
+        .hippodrome-card {
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .hippodrome-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .action-btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.7rem;
+            padding: 1rem;
+            border-radius: 8px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .action-btn.primary {
+            background-color: rgba(64, 224, 208, 0.1);
+            color: var(--accent);
+            border: 1px solid rgba(64, 224, 208, 0.3);
+        }
+
+        .action-btn.secondary {
+            background-color: rgba(212, 175, 55, 0.1);
+            color: var(--gold);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .action-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .action-btn.primary:hover {
+            background-color: rgba(64, 224, 208, 0.2);
+        }
+
+        .action-btn.secondary:hover {
+            background-color: rgba(212, 175, 55, 0.2);
+        }
+        
         .data-table {
             width: 100%;
             border-collapse: separate;
@@ -590,6 +927,39 @@
                 padding: 1rem;
             }
         }
+
+        .date-button {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: rgba(10, 30, 30, 0.5);
+            color: var(--gold);
+            border: 1px solid rgba(233, 209, 140, 0.3);
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            width: 100%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-align: left;
+        }
+
+        .date-button:hover {
+            background-color: rgba(22, 62, 60, 0.8);
+            border-color: var(--accent);
+            box-shadow: 0 0 0 2px rgba(64, 224, 208, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .date-button i {
+            transition: transform 0.3s ease;
+        }
+
+        .date-button:hover i {
+            transform: translateX(5px);
+        }
     </style>
 </head>
 <body>
@@ -622,12 +992,10 @@
             <button class="search-clear" id="search-clear"><i class="fas fa-times"></i></button>
         </div>
         
-        <div class="date-selector-container">
-            <i class="fas fa-calendar"></i>
-            <select id="date-selector" class="date-selector">
-                <!-- Les options seront générées dynamiquement par JavaScript -->
-            </select>
-        </div>
+        <button class="date-button" id="date-button">
+            <i class="fas fa-calendar-alt"></i>
+            <span id="current-date">Aujourd'hui (17/04/2025)</span>
+        </button>
         
         <div class="tabs">
             <div class="tab active">Tous les hippodromes</div>
@@ -640,15 +1008,49 @@
             </div>
         </div>
         
-        <div id="course-details" class="course-details" style="display: none;">
-            <!-- Les détails d'une course spécifique (participants) -->
+        <div id="course-modal" class="course-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2 class="modal-title" id="modal-title">Détails de la course</h2>
+                
+                <div class="course-meta" id="course-meta">
+                    <!-- Métadonnées de la course -->
+                </div>
+                
+                <h3 class="participants-title">Liste des participants</h3>
+                
+                <div class="table-responsive">
+                    <table class="participants-table" id="participants-table">
+                        <thead>
+                            <tr>
+                                <th>N°</th>
+                                <th>Cheval</th>
+                                <th>Jockey</th>
+                                <th>Entraîneur</th>
+                                <th>Propriétaire</th>
+                                <th>Éleveurs</th>
+                                <th>Poids</th>
+                            </tr>
+                        </thead>
+                        <tbody id="participants-tbody">
+                            <!-- Participants de la course -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="action-buttons">
+                    <a href="simulation.html" class="action-btn secondary">
+                        <i class="fas fa-calculator"></i> Simuler des paris sur cette course
+                    </a>
+                </div>
+            </div>
         </div>
         
-        <div style="display: flex; gap: 1rem; margin-top: 2rem;">
-            <a href="index.html" class="home-link" style="flex: 1;">
+        <div class="action-buttons">
+            <a href="index.html" class="action-btn primary">
                 <i class="fas fa-arrow-left"></i> Retour à l'accueil
             </a>
-            <a href="simulation.html" class="home-link" style="flex: 1; background-color: rgba(212, 175, 55, 0.1); border-color: rgba(212, 175, 55, 0.3); color: var(--gold);">
+            <a href="simulation.html" class="action-btn secondary">
                 <i class="fas fa-calculator"></i> Simuler des paris
             </a>
         </div>
@@ -663,27 +1065,164 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Variables globales
-            let allCourses = [];
-            let hippodromeCourses = {}; // Objet pour stocker les courses par hippodrome
-            
-            // Éléments DOM
             const resultsContainer = document.getElementById('results-container');
             const searchInput = document.getElementById('search-input');
             const searchClear = document.getElementById('search-clear');
-            const courseDetails = document.getElementById('course-details');
             const lastUpdateEl = document.getElementById('last-update');
+            const courseModal = document.getElementById('course-modal');
+            const closeModal = document.querySelector('.close-modal');
+            const modalTitle = document.getElementById('modal-title');
+            const courseMeta = document.getElementById('course-meta');
+            const participantsTable = document.getElementById('participants-tbody');
             
-            // Déterminer si nous sommes sur GitHub Pages ou en local
-            const isGitHubPages = window.location.hostname.includes('github.io');
-            const basePath = isGitHubPages ? '/Hippique' : '';
-            
-            // Fonction pour formater une date au format YYYY-MM-DD
-            function formatDateYYYYMMDD(date) {
-                const year = date.getFullYear();
-                const month = String(date.getMonth() + 1).padStart(2, '0');
-                const day = String(date.getDate()).padStart(2, '0');
-                return `${year}-${month}-${day}`;
-            }
+            // Données des courses - Ces données seraient normalement chargées dynamiquement
+            const coursesData = {
+                "SALON PROVENCE": [
+                    {
+                        nom: "PRIX DE LA COTE BLEUE",
+                        horaire: "11h51",
+                        numero: "1",
+                        type: "Plat",
+                        participants: [
+                            { n: "1", cheval: "CHARMING CAT", jockey: "HUGO BESNIER", entraineur: "P. COTTIER", proprietaire: "GOUSSERIE RACING", eleveurs: "X. RICHARD", poids: "58 kg" },
+                            { n: "2", cheval: "THE BLACK STONE", jockey: "ALEJANDRO GUTIERREZ VAL", entraineur: "MME J. SOUBAGNE", proprietaire: "TAKE FIVE SAS", eleveurs: "TAKE FIVE SAS, MME J. SOUBAGNE", poids: "58 kg" },
+                            { n: "3", cheval: "HELLO SPRING", jockey: "DAVID BREUX", entraineur: "T. RICHARD (S)", proprietaire: "H.MONCHAUX/MME K.RICHARD", eleveurs: "H. MONCHAUX", poids: "54,5 kg" },
+                            { n: "4", cheval: "FRAGANCE", jockey: "MME MICKAELLE MICHEL", entraineur: "JPJ. DUBOIS", proprietaire: "MR JEAN-PIERRE-JOSEPH DUBOIS", eleveurs: "JPJ. DUBOIS", poids: "52,5 kg(54 kg)" },
+                            { n: "5", cheval: "WHITE NIGHT", jockey: "MME MANON GERMAIN", entraineur: "JPJ. DUBOIS", proprietaire: "MR JEAN-PIERRE-JOSEPH DUBOIS", eleveurs: "JPJ. DUBOIS", poids: "52,5 kg(54 kg)" },
+                            { n: "6", cheval: "CLEA CHOPE", jockey: "ANTONIO ORANI", entraineur: "C. ESCUDER", proprietaire: "EC.PUGLIA/EC.J.PIASCO/EC.METAL", eleveurs: "A. CHOPARD", poids: "54 kg" },
+                            { n: "7", cheval: "REMENBER CHOPE", jockey: "IORITZ MENDIZABAL", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "R.CAPOZZI/MME M.BLANC", eleveurs: "A. CHOPARD, MME R. KHADDAM, LEMZAR SARL", poids: "54 kg" },
+                            { n: "8", cheval: "ILE AUX ROSES", jockey: "MME CORALIE PACAUT", entraineur: "C. ESCUDER", proprietaire: "MR BERNARD GIRAUDON", eleveurs: "GUY PARIENTE HOLDING", poids: "51,5 kg(53 kg)" },
+                            { n: "9", cheval: "PINK ROCHE", jockey: "SYLVAIN RUIS", entraineur: "C. ESCUDER", proprietaire: "MME CRISTEL MARTINA", eleveurs: "SCEA MARMION VAUVILLE", poids: "53 kg" }
+                        ]
+                    },
+                    {
+                        nom: "PRIX D'EYGUIERES",
+                        horaire: "12h23",
+                        numero: "2",
+                        type: "Plat",
+                        participants: [
+                            { n: "1", cheval: "FINK PLOYD", jockey: "VALENTIN SEGUY", entraineur: "J. REYNIER (S)", proprietaire: "G.AUGUSTIN-NORMAND", eleveurs: "P. JABOT", poids: "58 kg" },
+                            { n: "2", cheval: "BLACK TIE", jockey: "JEAN-BERNARD EYQUEM", entraineur: "JC. ROUGET (S)", proprietaire: "ECURIE D.LAYANI/GOUSSERIE RACING", eleveurs: "E. PUERARI, ECURIE DU PARC MONCEAU, MME A. GRAVEREAUX, OCEANIC BLOODSTOCK INC", poids: "58 kg" },
+                            { n: "3", cheval: "NELLO", jockey: "HUGO BESNIER", entraineur: "P. COTTIER", proprietaire: "ECURIE DU SUD", eleveurs: "T.DE LA HERONNIERE", poids: "58 kg" },
+                            { n: "4", cheval: "UNFURLED", jockey: "ANTHONY CRASTUS", entraineur: "N. PERRET (S)", proprietaire: "ECURIE THOMAS SIVADIER", eleveurs: "E.A.R.L. ELEVAGE DES LOGES", poids: "58 kg" },
+                            { n: "5", cheval: "SAINT FLORENT", jockey: "MARVIN GRANDIN", entraineur: "J. REYNIER (S)", proprietaire: "LE MARAIS SAS", eleveurs: "HARAS DU LOGIS SAINT GERMAIN", poids: "58 kg" },
+                            { n: "6", cheval: "THE MOON'S ANGEL", jockey: "GUILLAUME MILLET", entraineur: "R. FRADET (S)", proprietaire: "MR MICHEL NIKITAS", eleveurs: "MME R. DWEK, MME C. SIMON, MME T.DE BEAUREGARD, D. SOURDEAU DE BEAUREGARD", poids: "58 kg" },
+                            { n: "7", cheval: "ZELKOVA (IRE)", jockey: "MME CORALIE PACAUT", entraineur: "JC. ROUGET (S)", proprietaire: "AL SHAQAB RACING", eleveurs: "AL SHAQAB RACING", poids: "55 kg(56,5 kg)" },
+                            { n: "8", cheval: "RUGLES", jockey: "NON PARTANT", entraineur: "J. REYNIER (S)", proprietaire: "MR GERARD AUGUSTIN-NORMAND", eleveurs: "FRANKLIN FINANCE S.A.", poids: "56,5 kg" },
+                            { n: "9", cheval: "DENGIE", jockey: "SYLVAIN RUIS", entraineur: "N. PERRET (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "56,5 kg" },
+                            { n: "10", cheval: "DISBAY", jockey: "IORITZ MENDIZABAL", entraineur: "J. ANDREU (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "56,5 kg" },
+                            { n: "11", cheval: "HOODWINK", jockey: "MME MANON GERMAIN", entraineur: "J. REYNIER (S)", proprietaire: "MR JAMES WIGAN", eleveurs: "LONDON THOROUGHBRED SERVICES", poids: "55 kg(56,5 kg)" }
+                        ]
+                    },
+                    {
+                        nom: "PRIX D'ARLES",
+                        horaire: "12h55",
+                        numero: "3",
+                        type: "Plat",
+                        participants: [
+                            { n: "1", cheval: "FIUMICCINO", jockey: "HUGO BESNIER", entraineur: "P. COTTIER", proprietaire: "MR JEAN-PIERRE-JOSEPH DUBOIS", eleveurs: "MME L. LEMIERE DUBOIS", poids: "58 kg" },
+                            { n: "2", cheval: "GREEN HEAD", jockey: "MICKAEL FOREST", entraineur: "Y. BONNEFOY (S)", proprietaire: "ECURIE BERTRAND MILLIERE", eleveurs: "ECURIE BERTRAND MILLIERE, C. MILLIERE", poids: "58 kg" },
+                            { n: "3", cheval: "GOLDEN BROWN", jockey: "JEAN-BERNARD EYQUEM", entraineur: "JC. ROUGET (S)", proprietaire: "ECURIE VIVALDI", eleveurs: "HARAS DE GRANDCAMP EARL", poids: "58 kg" },
+                            { n: "4", cheval: "BLACK BOSS", jockey: "GUILLAUME MILLET", entraineur: "R. FRADET (S)", proprietaire: "MR FABRICE FANTAUZZA", eleveurs: "SUC. D.DE LA HERONNIERE", poids: "58 kg" },
+                            { n: "5", cheval: "CANNOLO (IRE)", jockey: "ANTHONY CRASTUS", entraineur: "C. ESCUDER", proprietaire: "N.RICIGNUOLO/EQUUS RACING/MEKKI", eleveurs: "MME P. CARPENTIER, SCEA JLC, SCEA L'AUBAY", poids: "58 kg" },
+                            { n: "6", cheval: "IL BIONDINO", jockey: "MME CORALIE PACAUT", entraineur: "C. ESCUDER", proprietaire: "N.RICIGNUOLO/F.GRIMA/B.MEKKI", eleveurs: "HARAS DES TROIS CHAPELLES", poids: "56,5 kg(58 kg)" },
+                            { n: "7", cheval: "C'EST VRAI", jockey: "SYLVAIN RUIS", entraineur: "N. PERRET (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "58 kg" },
+                            { n: "8", cheval: "DREAM IN BROOKE", jockey: "MME MARINA BRUNELLI", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "V.GUEDJ/P.GUEDJ/JL.MEDINA STUD", eleveurs: "P. GUEDJ, V. GUEDJ, JL. MEDINA", poids: "53 kg(56,5 kg)" },
+                            { n: "9", cheval: "ALMERIA", jockey: "MME MANON GERMAIN", entraineur: "J. REYNIER (S)", proprietaire: "MR JAMES WIGAN", eleveurs: "LONDON THOROUGHBRED SERVICES", poids: "55 kg(56,5 kg)" }
+                        ]
+                    },
+                    {
+                        nom: "PRIX DE LA SOCIETE DES COURSES DE SALON-DE-PROVENCE",
+                        horaire: "13h27",
+                        numero: "4",
+                        type: "Plat",
+                        participants: [
+                            { n: "1", cheval: "PRADO", jockey: "ANTHONY CRASTUS", entraineur: "P. COTTIER", proprietaire: "MR JEAN-PIERRE-JOSEPH DUBOIS", eleveurs: "JPJ. DUBOIS", poids: "57 kg" },
+                            { n: "2", cheval: "MONDO", jockey: "JEAN-BERNARD EYQUEM", entraineur: "JC. ROUGET (S)", proprietaire: "ECURIE C. MARZOCCO", eleveurs: "HARAS D'ETREHAM, RIVIERA EQUINE S.A.R.L", poids: "57 kg" },
+                            { n: "3", cheval: "ZARAKCHIC", jockey: "ANTONIO ORANI", entraineur: "J. REYNIER (S)", proprietaire: "G.PARIENTE/JC.SEROUL/AUGUSTIN-N.", eleveurs: "GUY PARIENTE HOLDING", poids: "57 kg" },
+                            { n: "4", cheval: "MARCHEMALO", jockey: "HUGO BESNIER", entraineur: "P. COTTIER", proprietaire: "JF.GRIBOMONT/EC.SUD/D.DUMOULIN", eleveurs: "JF. GRIBOMONT", poids: "57 kg" },
+                            { n: "5", cheval: "DIOPTASE (IRE)", jockey: "MARVIN GRANDIN", entraineur: "JC. ROUGET (S)", proprietaire: "LE MARAIS/EC.STEMPNIAK/PARIENTE", eleveurs: "SCEA MARMION VAUVILLE, ECURIE SKYMARC FARM, NIGHTCHILL LLC", poids: "57 kg" },
+                            { n: "6", cheval: "STEF LE MAGNIFIQUE", jockey: "GUILLAUME MILLET", entraineur: "R. FRADET (S)", proprietaire: "MR MICHEL NIKITAS", eleveurs: "W. NEUMANN, EARL HARAS DU LOGIS, J. INCE", poids: "57 kg" },
+                            { n: "7", cheval: "KLYCOT", jockey: "SYLVAIN RUIS", entraineur: "N. PERRET (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "57 kg" }
+                        ]
+                    },
+                    {
+                        nom: "PRIX DU CENTRE D'ENTRAINEMENT DE CALAS",
+                        horaire: "14h12",
+                        numero: "5",
+                        type: "Plat",
+                        participants: [
+                            { n: "1", cheval: "BOOGIE", jockey: "ANTHONY CRASTUS", entraineur: "N. PERRET (S)", proprietaire: "MR HERVE GUILLET", eleveurs: "RY. SIMON, N. SIMON, MME V. SIMON, MME C. SIMON", poids: "59 kg" },
+                            { n: "2", cheval: "INTERSTELLA GER", jockey: "MME MARINA BRUNELLI", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "ECURIE JOYA RACING SAS", eleveurs: "MME U. IMM, J. IMM", poids: "54 kg(57,5 kg)" },
+                            { n: "3", cheval: "ZLARA", jockey: "IORITZ MENDIZABAL", entraineur: "M. CESANDRI (S)", proprietaire: "MR JEAN-CLAUDE RAVIER", eleveurs: "BLOODSTOCK AGENCY LTD, MME M. RISI", poids: "57,5 kg" },
+                            { n: "4", cheval: "POLYSPEED (IRE)", jockey: "ANTONIO ORANI", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "AA.AMELINE/AGV KARWIN/EC.EQUUS", eleveurs: "WERTHEIMER & FRERE", poids: "57 kg" },
+                            { n: "5", cheval: "BACK TO BLACK", jockey: "MARVIN GRANDIN", entraineur: "J. REYNIER (S)", proprietaire: "ECURIE MG", eleveurs: "F. VERMEULEN", poids: "56 kg" },
+                            { n: "6", cheval: "MY CHARMING PRINCE", jockey: "GUILLAUME MILLET", entraineur: "E. MIKHALIDES (S)", proprietaire: "MR STEPHANE GRANDIN", eleveurs: "EARL HARAS DU CAMP BENARD", poids: "56 kg" },
+                            { n: "7", cheval: "BLACK SAXON", jockey: "HUGO BESNIER", entraineur: "N. BELLANGER (S)", proprietaire: "MR DIDIER MARS", eleveurs: "LE THENNEY", poids: "56 kg" },
+                            { n: "8", cheval: "LADY MANA", jockey: "MME MANON GERMAIN", entraineur: "F. FORESI", proprietaire: "MR GUILLAUME DUROT", eleveurs: "HARAS DU HOGUENET, P. NATAF", poids: "53 kg(54,5 kg)" },
+                            { n: "9", cheval: "AMELIELYMPIQUE (IRE)", jockey: "SYLVAIN RUIS", entraineur: "N. PERRET (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "54,5 kg" }
+                        ]
+                    },
+                    {
+                        nom: "PRIX JEAN-JACQUES NAPOLI",
+                        horaire: "14h47",
+                        numero: "6",
+                        type: "Plat",
+                        participants: [
+                            { n: "1", cheval: "SHAMSABAD", jockey: "ANTONIO ORANI", entraineur: "C. MARTINON", proprietaire: "ECURIE DU PERROQUET SAUVAGE", eleveurs: "SUC. S.A. AGA KHAN", poids: "60 kg" },
+                            { n: "2", cheval: "ALROMY", jockey: "MME MANON GERMAIN", entraineur: "MME L. SALTON", proprietaire: "MME LAURA SALTON", eleveurs: "SCA ELEVAGE DE TOURGEVILLE, MME H. ERCULIANI", poids: "58,5 kg(60 kg)" },
+                            { n: "3", cheval: "TIGRE ROUGE", jockey: "MICKAEL FOREST", entraineur: "RC. MONTENEGRO", proprietaire: "MME SUSANNE RITSON", eleveurs: "MME S. RITSON", poids: "58,5 kg" },
+                            { n: "4", cheval: "DREAM OF EMERAUDE", jockey: "GUILLAUME MILLET", entraineur: "J. VAN HANDENHOVE", proprietaire: "ECURIE DE LA VERTE VALLEE", eleveurs: "MME A. DELARUE", poids: "58,5 kg" },
+                            { n: "5", cheval: "MOUTRAKI IRE", jockey: "HUGO BESNIER", entraineur: "N. PERRET (S)", proprietaire: "MR ERIC D' ANGELO", eleveurs: "LIMESTONE STUD, TARA STUD", poids: "58 kg" },
+                            { n: "6", cheval: "BUSINESS PLAN", jockey: "MARVIN GRANDIN", entraineur: "S. LABATE (S)", proprietaire: "P.FAUCAMPRE/B.ROTGER/N.MICHELOTT", eleveurs: "V. BUKHTOYAROV, E. KAPPUSHEV", poids: "57 kg" },
+                            { n: "7", cheval: "FOR BETTY", jockey: "GREGOIRE LEGRAS", entraineur: "N. PERRET (S)", proprietaire: "MME CRISTEL MARTINA", eleveurs: "THOUSAND DREAMS", poids: "57 kg" },
+                            { n: "8", cheval: "HADLEIGH", jockey: "IORITZ MENDIZABAL", entraineur: "J. ANDREU (S)", proprietaire: "MR ROBERT MINICHIELLO", eleveurs: "ECURIE KURA", poids: "56 kg" },
+                            { n: "9", cheval: "HASHTAG JOA", jockey: "DAVID BREUX", entraineur: "M. PLANARD", proprietaire: "MR ALESSANDRO RENATO PAVESI", eleveurs: "J.DE CHEFFONTAINES", poids: "56 kg" },
+                            { n: "10", cheval: "KALEOBAYANE", jockey: "MME MICKAELLE MICHEL", entraineur: "MME R. PHILIPPON", proprietaire: "MR ROLAND PHILIPPON", eleveurs: "MME E. LAFEU", poids: "53,5 kg(55 kg)" },
+                            { n: "11", cheval: "MAVALA", jockey: "MME MAELLE MORCEL", entraineur: "N. PERRET (S)", proprietaire: "N.PERRET (S)", eleveurs: "BOUTIN (S)", poids: "50 kg(53,5 kg)" }
+                        ]
+                    },
+                    {
+                        nom: "PRIX DE MIRAMAS",
+                        horaire: "15h22",
+                        numero: "7",
+                        type: "Plat",
+                        participants: [
+                            { n: "1", cheval: "COTE JARDIN", jockey: "JIRI CHALOUPKA", entraineur: "J. CHALOUPKA", proprietaire: "CAJDASROT S.R.O.", eleveurs: "F. BOZO, SUC. P. BOZO, MME MC. BOZO, JC. BOZO", poids: "60 kg" },
+                            { n: "2", cheval: "AL HABISSET", jockey: "HUGO BESNIER", entraineur: "F. BOUALEM", proprietaire: "MR FAOUZI BOUALEM", eleveurs: "HARAS DU GRAND COURGEON", poids: "59,5 kg" },
+                            { n: "3", cheval: "ASPEN", jockey: "ANTONIO ORANI", entraineur: "R. FRADET (S)", proprietaire: "MR MICHEL NIKITAS", eleveurs: "ALEYRION BLOODSTOCK LTD", poids: "59,5 kg" },
+                            { n: "4", cheval: "GAMECHANGER", jockey: "EMILIEN PUILLET-RODA", entraineur: "JC. SARAIS", proprietaire: "MR DANIEL ORTU", eleveurs: "ECURIE SKYMARC FARM", poids: "58 kg(59,5 kg)" },
+                            { n: "5", cheval: "INTO FAITH", jockey: "MME CORALIE PACAUT", entraineur: "C. ESCUDER", proprietaire: "MR ALEXANDRE DE LANFRANCHI", eleveurs: "THE KATHRYN STUD", poids: "58 kg(59,5 kg)" },
+                            { n: "6", cheval: "LESSARD", jockey: "MME MICKAELLE MICHEL", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "MR GERARD AUGUSTIN-NORMAND", eleveurs: "FRANKLIN FINANCE S.A.", poids: "58 kg(59,5 kg)" },
+                            { n: "7", cheval: "EXHIT", jockey: "RUDY PIMBONNET", entraineur: "M. PIMBONNET", proprietaire: "B.BIMOZ/ECURIE SAINT-HILAIRE", eleveurs: "WERTHEIMER & FRERE", poids: "58 kg" },
+                            { n: "8", cheval: "JAGDA", jockey: "VALENTIN SEGUY", entraineur: "M. CESANDRI (S)", proprietaire: "MR LAURENT GIREL", eleveurs: "HARAS DE LA PERELLE", poids: "58 kg" },
+                            { n: "9", cheval: "DOCTEUR TOURNESOL", jockey: "MME MARINA BRUNELLI", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "MME HENRI DEVIN", eleveurs: "MME H. DEVIN", poids: "55 kg(57,5 kg)" },
+                            { n: "10", cheval: "SANCHO", jockey: "GUILLAUME MILLET", entraineur: "J. ANDREU (S)", proprietaire: "MME LAETITIA MILLET", eleveurs: "MERIDIAN INTERNATIONAL SARL, LEMZAR SARL", poids: "56,5 kg" },
+                            { n: "11", cheval: "AVERNES (IRE)", jockey: "IORITZ MENDIZABAL", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "ECURIE JOYA RACING SAS", eleveurs: "FRANKLIN FINANCE S.A.", poids: "56,5 kg" }
+                        ]
+                    },
+                    {
+                        nom: "PRIX CHRISTIAN FORNAROLI",
+                        horaire: "15h57",
+                        numero: "8",
+                        type: "Plat",
+                        participants: [
+                            { n: "1", cheval: "LOU MAN", jockey: "GREG BENOIST", entraineur: "P. DAULIER", proprietaire: "MME SYLVIE DAULIER", eleveurs: "K. RHATIGAN", poids: "60 kg" },
+                            { n: "2", cheval: "ROSEDALE", jockey: "SYLVAIN RUIS", entraineur: "P. COTTIER", proprietaire: "MR JEAN-PIERRE-JOSEPH DUBOIS", eleveurs: "JPJ. DUBOIS", poids: "60 kg" },
+                            { n: "3", cheval: "YATT", jockey: "MARVIN GRANDIN", entraineur: "J. REYNIER (S)", proprietaire: "ECURIE NICOLAS", eleveurs: "HARAS DE LA PERELLE", poids: "59 kg" },
+                            { n: "4", cheval: "ACCLAM", jockey: "ANTHONY CRASTUS", entraineur: "P. COTTIER", proprietaire: "EC.DES CHARMES/MR R.TALBOT", eleveurs: "THE ACCLAMATION SYNDICATE", poids: "58,5 kg" },
+                            { n: "5", cheval: "BELLAGIO", jockey: "HUGO BESNIER", entraineur: "N. PERRET (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "58,5 kg" },
+                            { n: "6", cheval: "BONS BAISERS", jockey: "ANTONIO ORANI", entraineur: "P. COTTIER", proprietaire: "EC.DES CHARMES/MME V.FAVE", eleveurs: "LA TOUQUES BLOODSTOCK", poids: "57,5 kg" },
+                            { n: "7", cheval: "LYKION", jockey: "MICKAEL FOREST", entraineur: "RC. MONTENEGRO", proprietaire: "E.BUCHER/J.SCHOENENBERGER", eleveurs: "G. KERN, E. BUCHER", poids: "57,5 kg" },
+                            { n: "8", cheval: "STAR VICTORY", jockey: "IORITZ MENDIZABAL", entraineur: "M. CESANDRI (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "57,5 kg" },
+                            { n: "9", cheval: "KILIMANDJARO", jockey: "ROMAIN FRADET", entraineur: "R. FRADET (S)", proprietaire: "EC.CARRE MAGIQUE SARL", eleveurs: "SE. HINDERFELD", poids: "56,5 kg" },
+                            { n: "10", cheval: "LAUTREC", jockey: "MME CORALIE PACAUT", entraineur: "L. BOISSAUX", proprietaire: "BOISSAUX (S)", eleveurs: "BOISSAUX (S)", poids: "55,5 kg(57 kg)" },
+                            { n: "11", cheval: "MACHO MAN", jockey: "JEAN-BERNARD EYQUEM", entraineur: "L. BAUDRON (S)", proprietaire: "BAUDRON (S)", eleveurs: "ELISE ET GERARD HENOCHSBERG", poids: "57 kg" },
+                            { n: "12", cheval: "FLASHING MOON", jockey: "MME MANON GERMAIN", entraineur: "C. ESCUDER", proprietaire: "MR ALEXANDRE DE LANFRANCHI", eleveurs: "HARAS DU GRAND CHESNAIE, A. DE LANFRANCHI", poids: "53 kg(55 kg)" }
+                        ]
+                    }
+                ]
+            };
             
             // Fonction pour formater une date au format local (DD/MM/YYYY)
             function formatDateLocal(date) {
@@ -714,247 +1253,10 @@
                 }
             }
             
-            // Fonction pour charger tous les fichiers JSON des courses
-            async function loadAllCourses() {
-                try {
-                    // Obtenir les dates pertinentes
-                    const today = new Date();
-                    const tomorrow = new Date(today);
-                    tomorrow.setDate(tomorrow.getDate() + 1);
-                    
-                    // Formater les dates pour la recherche de fichiers
-                    const todayStr = formatDateYYYYMMDD(today);
-                    const tomorrowStr = formatDateYYYYMMDD(tomorrow);
-                    
-                    // Créer le sélecteur de date (aujourd'hui et demain)
-                    const dateSelector = document.getElementById('date-selector');
-                    if (dateSelector) {
-                        dateSelector.innerHTML = `
-                            <option value="${todayStr}">${getReadableDate(today)}</option>
-                            <option value="${tomorrowStr}">${getReadableDate(tomorrow)}</option>
-                        `;
-                        
-                        // Écouter les changements de date
-                        dateSelector.addEventListener('change', function() {
-                            const selectedDate = this.value;
-                            loadCoursesForDate(selectedDate);
-                            
-                            // Mettre à jour la date d'affichage
-                            const selectedDateObj = new Date(selectedDate);
-                            lastUpdateEl.textContent = formatDateLocal(selectedDateObj);
-                        });
-                    }
-                    
-                    // Charger les courses pour la date d'aujourd'hui
-                    await loadCoursesForDate(todayStr);
-                    
-                    // Mettre à jour la date d'affichage
-                    lastUpdateEl.textContent = formatDateLocal(today);
-                    
-                } catch (error) {
-                    console.error("Erreur lors du chargement des courses:", error);
-                    showError("Impossible de charger les données des courses.");
-                }
-            }
-            
-            // Fonction pour charger les courses d'une date spécifique
-            async function loadCoursesForDate(dateStr) {
-                try {
-                    // Convertir la date pour l'affichage
-                    const dateObj = new Date(dateStr);
-                    const formattedDisplayDate = formatDateLocal(dateObj);
-                    
-                    // Afficher le chargement
-                    resultsContainer.innerHTML = `
-                        <div class="loading">
-                            <div class="spinner"></div>
-                            <p>Chargement des courses du ${formattedDisplayDate}...</p>
-                        </div>
-                    `;
-                    
-                    // Lister tous les fichiers JSON dans le dossier /data/courses qui commencent par la date demandée
-                    const courseFiles = [];
-                    
-                    // Essayer d'obtenir la liste des fichiers disponibles
-                    try {
-                        const listResponse = await fetch(`${basePath}/data/courses/index.txt`).catch(() => null);
-                        
-                        if (listResponse && listResponse.ok) {
-                            // Si un index des fichiers est disponible, l'utiliser
-                            const fileList = await listResponse.text();
-                            const allFiles = fileList.split('\n').filter(f => f.trim() !== '');
-                            
-                            // Filtrer les fichiers qui commencent par la date recherchée
-                            const dateFiles = allFiles.filter(file => file.startsWith(dateStr));
-                            dateFiles.forEach(file => courseFiles.push(file));
-                        } else {
-                            // Si pas d'index, tester une liste de noms possibles
-                            const possibleHippodromes = [
-                                'arg.palermo',
-                                'salon_provence',
-                                'san_sebastian',
-                                'happy_valley',
-                                'lyon_parilly',
-                                'newmarket',
-                                'parislongchamp',
-                                'prunelli',
-                                'saint-cloud',
-                                'san_isidro',
-                                'santiago',
-                                'sha_tin',
-                                'strasbourg',
-                                'tarbes',
-                                'toulouse',
-                                'valparaiso',
-                                'plus',
-                                'reunion_ew1mwlu3',
-                                'reunion_lzlhrwdj',
-                                'reunion_nmo0chn5',
-                                'reunion_v0xot0zq',
-                                'reunion_vjnqtc9l',
-                                'reunion_ykfyqtdz'
-                            ];
-                            
-                            // Créer les noms de fichiers possibles
-                            const possibleFiles = possibleHippodromes.map(hippodrome => `${dateStr}_${hippodrome}.json`);
-                            
-                            // Vérifier chaque fichier
-                            for (const file of possibleFiles) {
-                                try {
-                                    const checkResponse = await fetch(`${basePath}/data/courses/${file}`, {
-                                        method: 'HEAD'
-                                    });
-                                    if (checkResponse.ok) {
-                                        courseFiles.push(file);
-                                    }
-                                } catch (e) {
-                                    // Ignorer les erreurs pour les fichiers qui n'existent pas
-                                }
-                            }
-                        }
-                    } catch (e) {
-                        console.warn("Erreur lors de l'obtention de la liste des fichiers:", e);
-                        // En cas d'erreur, on ne peut pas déterminer les fichiers disponibles
-                    }
-                    
-                    console.log(`Fichiers trouvés pour ${dateStr}:`, courseFiles);
-                    
-                    if (courseFiles.length === 0) {
-                        console.warn("Aucun fichier trouvé pour la date:", dateStr);
-                        showError(`Aucune course disponible pour le ${formattedDisplayDate}`);
-                        return;
-                    }
-                    
-                    // Charger tous les fichiers en parallèle
-                    const promises = courseFiles.map(file => 
-                        fetch(`${basePath}/data/courses/${file}`)
-                            .then(response => {
-                                if (!response.ok) {
-                                    throw new Error(`Erreur HTTP ${response.status}: ${response.statusText}`);
-                                }
-                                return response.json();
-                            })
-                            .catch(error => {
-                                console.error(`Erreur lors du chargement de ${file}:`, error);
-                                return null; // Retourner null en cas d'erreur
-                            })
-                    );
-                    
-                    // Attendre que tous les fichiers soient chargés
-                    const results = await Promise.all(promises);
-                    
-                    // Filtrer les résultats nuls (erreurs) et traiter les données
-                    let processedCourses = [];
-                    
-                    results
-                        .filter(data => data !== null)
-                        .forEach(data => {
-                            // Vérifier si c'est une réunion de type "plat"
-                            const typeReunion = data.type_reunion || "";
-                            if (typeReunion && typeReunion.toLowerCase() !== "plat") {
-                                console.log(`Ignoré: Réunion de type ${typeReunion} à ${data.hippodrome || "inconnu"}`);
-                                return;
-                            }
-                            
-                            // Extraire l'hippodrome et la date
-                            const hippodrome = data.hippodrome || "Inconnu";
-                            const extractionDate = data.date_extraction || "";
-                            
-                            // Formater la date
-                            let formattedDate = formattedDisplayDate; // Utiliser la date du fichier par défaut
-                            if (extractionDate) {
-                                try {
-                                    const date = new Date(extractionDate);
-                                    formattedDate = formatDateLocal(date);
-                                } catch (e) {
-                                    console.error("Erreur de formatage de date:", e);
-                                }
-                            }
-                            
-                            // Pour chaque course dans ce fichier
-                            (data.courses || []).forEach(course => {
-                                // Vérifier si c'est une course de type "plat"
-                                const typeCourse = course.type || "";
-                                if (typeCourse && typeCourse.toLowerCase() !== "plat") {
-                                    console.log(`Ignoré: Course de type ${typeCourse}: ${course.nom || "sans nom"}`);
-                                    return;
-                                }
-                                
-                                // Vérifier s'il y a des participants
-                                if (!course.participants || !Array.isArray(course.participants) || course.participants.length === 0) {
-                                    console.log(`Ignoré: Course sans participants: ${course.nom || "sans nom"}`);
-                                    return;
-                                }
-                                
-                                // Vérifier si cette course n'est pas déjà dans les résultats (éviter les doublons)
-                                const isDuplicate = processedCourses.some(existingCourse => 
-                                    existingCourse.nom === (course.nom || "Course sans nom") && 
-                                    existingCourse.hippodrome === hippodrome
-                                );
-                                
-                                if (isDuplicate) {
-                                    console.log(`Ignoré: Doublon de course: ${course.nom || "sans nom"} à ${hippodrome}`);
-                                    return;
-                                }
-                                
-                                // Ajouter la course aux résultats
-                                processedCourses.push({
-                                    hippodrome: hippodrome,
-                                    date: formattedDate,
-                                    nom: course.nom || "Course sans nom",
-                                    url: course.url || "",
-                                    participants: course.participants || []
-                                });
-                            });
-                        });
-                    
-                    // Stocker toutes les courses traitées
-                    allCourses = processedCourses;
-                    
-                    // Regrouper les courses par hippodrome
-                    hippodromeCourses = {};
-                    allCourses.forEach(course => {
-                        if (!hippodromeCourses[course.hippodrome]) {
-                            hippodromeCourses[course.hippodrome] = [];
-                        }
-                        hippodromeCourses[course.hippodrome].push(course);
-                    });
-                    
-                    // Afficher les hippodromes
-                    displayHippodromes();
-                    
-                } catch (error) {
-                    console.error(`Erreur lors du chargement des courses pour ${dateStr}:`, error);
-                    const dateObj = new Date(dateStr);
-                    const formattedDisplayDate = formatDateLocal(dateObj);
-                    showError(`Impossible de charger les données des courses pour le ${formattedDisplayDate}.`);
-                }
-            }
-            
-            // Fonction pour afficher les hippodromes avec leurs courses
+            // Fonction pour afficher les hippodromes et leurs courses
             function displayHippodromes() {
-                // Si aucun hippodrome n'est trouvé
-                if (Object.keys(hippodromeCourses).length === 0) {
+                // Si aucune donnée n'est disponible
+                if (Object.keys(coursesData).length === 0) {
                     resultsContainer.innerHTML = `
                         <div class="no-results">
                             <i class="fas fa-search"></i>
@@ -967,219 +1269,164 @@
                 
                 // Filtrer les hippodromes par recherche
                 const searchTerm = searchInput.value.trim().toLowerCase();
-                let filteredHippodromes = Object.keys(hippodromeCourses);
+                let html = '';
                 
-                // Filtrer pour ne garder que les hippodromes avec plus d'une course
-                filteredHippodromes = filteredHippodromes.filter(hippodrome => 
-                    hippodromeCourses[hippodrome].length > 1
-                );
-                
-                console.log("Hippodromes avec plus d'une course:", filteredHippodromes);
-                
-                if (searchTerm) {
-                    // Filtrer les hippodromes dont le nom ou une course correspond à la recherche
-                    filteredHippodromes = filteredHippodromes.filter(hippodrome => {
-                        // Vérifier si le nom de l'hippodrome correspond
-                        if (hippodrome.toLowerCase().includes(searchTerm)) return true;
-                        
-                        // Vérifier si une des courses correspond
-                        return hippodromeCourses[hippodrome].some(course => 
-                            course.nom.toLowerCase().includes(searchTerm) ||
+                // Parcourir les hippodromes
+                for (const [hippodrome, courses] of Object.entries(coursesData)) {
+                    // Filtrer les courses si un terme de recherche est spécifié
+                    let filteredCourses = courses;
+                    if (searchTerm) {
+                        filteredCourses = courses.filter(course => 
+                            course.nom.toLowerCase().includes(searchTerm) || 
+                            hippodrome.toLowerCase().includes(searchTerm) ||
                             course.participants.some(p => 
-                                (p.cheval && p.cheval.toLowerCase().includes(searchTerm)) ||
-                                (p.entraineur && p.entraineur.toLowerCase().includes(searchTerm)) ||
-                                (p.proprietaire && p.proprietaire.toLowerCase().includes(searchTerm))
+                                p.cheval.toLowerCase().includes(searchTerm) ||
+                                p.jockey.toLowerCase().includes(searchTerm) ||
+                                p.entraineur.toLowerCase().includes(searchTerm) ||
+                                p.proprietaire.toLowerCase().includes(searchTerm)
                             )
                         );
+                    }
+                    
+                    // Si aucune course ne correspond, passer à l'hippodrome suivant
+                    if (filteredCourses.length === 0) continue;
+                    
+                    // Créer le conteneur pour cet hippodrome
+                    const hippodromeId = hippodrome.replace(/\s+/g, '-').toLowerCase();
+                    html += `
+                        <div class="courses-container">
+                            <div class="hippodrome-header" data-target="${hippodromeId}">
+                                <h2><i class="fas fa-horse-head"></i> ${hippodrome}</h2>
+                                <div class="hippodrome-info">
+                                    <span>${filteredCourses.length} course${filteredCourses.length > 1 ? 's' : ''}</span>
+                                    <span><i class="fas fa-chevron-right toggle-icon"></i></span>
+                                </div>
+                            </div>
+                            <div class="courses-list" id="${hippodromeId}">
+                    `;
+                    
+                    // Ajouter chaque course
+                    filteredCourses.forEach(course => {
+                        html += `
+                            <div class="course-item">
+                                <div class="course-name">
+                                    <i class="fas fa-flag-checkered"></i>
+                                    ${course.horaire} - ${course.nom}
+                                </div>
+                                <div class="course-info">
+                                    <div class="participants-count">
+                                        ${course.participants.length} participant${course.participants.length > 1 ? 's' : ''}
+                                    </div>
+                                    <button class="detail-btn" data-hippodrome="${hippodrome}" data-course="${course.nom}">
+                                        <i class="fas fa-info-circle"></i> Détails
+                                    </button>
+                                </div>
+                            </div>
+                        `;
                     });
+                    
+                    html += `
+                            </div>
+                        </div>
+                    `;
                 }
                 
-                // Si aucun hippodrome ne correspond à la recherche
-                if (filteredHippodromes.length === 0) {
+                // Si aucun résultat après filtrage
+                if (html === '') {
                     resultsContainer.innerHTML = `
                         <div class="no-results">
                             <i class="fas fa-search"></i>
                             <h3>Aucun résultat trouvé</h3>
-                            <p>Essayez de modifier votre recherche ou une autre date</p>
+                            <p>Essayez de modifier votre recherche</p>
                         </div>
                     `;
-                    return;
+                } else {
+                    resultsContainer.innerHTML = html;
+                    
+                    // Ajouter les événements click aux en-têtes d'hippodromes
+                    document.querySelectorAll('.hippodrome-header').forEach(header => {
+                        header.addEventListener('click', function() {
+                            const targetId = this.dataset.target;
+                            const coursesList = document.getElementById(targetId);
+                            coursesList.classList.toggle('visible');
+                            this.querySelector('.toggle-icon').classList.toggle('open');
+                        });
+                    });
+                    
+                    // Ajouter les événements click aux boutons de détails
+                    document.querySelectorAll('.detail-btn').forEach(btn => {
+                        btn.addEventListener('click', function(e) {
+                            e.stopPropagation(); // Empêcher la propagation vers le parent
+                            const hippodrome = this.dataset.hippodrome;
+                            const courseName = this.dataset.course;
+                            showCourseDetails(hippodrome, courseName);
+                        });
+                    });
                 }
+            }
+            
+            // Fonction pour afficher les détails d'une course dans la fenêtre modale
+            function showCourseDetails(hippodrome, courseName) {
+                // Trouver la course correspondante
+                const course = coursesData[hippodrome].find(c => c.nom === courseName);
+                if (!course) return;
                 
-                // Construire le tableau HTML
-                let tableHTML = `
-                    <div class="table-responsive">
-                        <table class="data-table">
-                            <thead>
-                                <tr>
-                                    <th>Hippodrome</th>
-                                    <th>Nombre de courses</th>
-                                    <th>Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
+                // Mettre à jour le titre et les métadonnées
+                modalTitle.textContent = course.nom;
+                courseMeta.innerHTML = `
+                    <div class="meta-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <strong>Hippodrome:</strong> ${hippodrome}
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-clock"></i>
+                        <strong>Horaire:</strong> ${course.horaire}
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-calendar"></i>
+                        <strong>Date:</strong> 17/04/2025
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-users"></i>
+                        <strong>Participants:</strong> ${course.participants.length}
+                    </div>
+                    <div class="meta-item">
+                        <i class="fas fa-info-circle"></i>
+                        <strong>Type:</strong> ${course.type}
+                    </div>
                 `;
                 
-                // Trier les hippodromes par ordre alphabétique
-                filteredHippodromes.sort();
-                
-                // Ajouter chaque hippodrome et ses courses
-                filteredHippodromes.forEach(hippodrome => {
-                    const courses = hippodromeCourses[hippodrome];
-                    const hippodromeId = hippodrome.replace(/\s+/g, '-').toLowerCase();
-                    
-                    // Ligne de l'hippodrome
-                    tableHTML += `
-                        <tr class="hippodrome-row" data-hippodrome="${hippodromeId}">
-                            <td><i class="fas fa-chevron-right toggle-icon" id="toggle-${hippodromeId}"></i> ${hippodrome}</td>
-                            <td>${courses.length}</td>
-                            <td>${courses[0].date}</td>
+                // Mettre à jour le tableau des participants
+                let participantsHtml = '';
+                course.participants.forEach(participant => {
+                    participantsHtml += `
+                        <tr>
+                            <td><div class="horse-number">${participant.n}</div></td>
+                            <td>${participant.cheval}</td>
+                            <td>${participant.jockey}</td>
+                            <td>${participant.entraineur}</td>
+                            <td>${participant.proprietaire}</td>
+                            <td>${participant.eleveurs}</td>
+                            <td>${participant.poids}</td>
                         </tr>
                     `;
-                    
-                    // Lignes des courses (initialement masquées)
-                    courses.forEach((course, index) => {
-                        tableHTML += `
-                            <tr class="course-row" data-hippodrome="${hippodromeId}">
-                                <td class="course-indent">${course.nom}</td>
-                                <td>${course.participants.length} participants</td>
-                                <td>
-                                    <button class="action-button" onclick="showCourseDetails('${encodeURIComponent(JSON.stringify(course))}')">
-                                        <i class="fas fa-info-circle"></i> Détails
-                                    </button>
-                                </td>
-                            </tr>
-                        `;
-                    });
                 });
+                participantsTable.innerHTML = participantsHtml;
                 
-                tableHTML += `
-                            </tbody>
-                        </table>
-                    </div>
-                `;
-                
-                resultsContainer.innerHTML = tableHTML;
-                
-                // Ajouter des événements de clic aux lignes d'hippodromes
-                document.querySelectorAll('.hippodrome-row').forEach(row => {
-                    row.addEventListener('click', function() {
-                        const hippodromeId = this.dataset.hippodrome;
-                        const courses = document.querySelectorAll(`.course-row[data-hippodrome="${hippodromeId}"]`);
-                        const toggleIcon = document.getElementById(`toggle-${hippodromeId}`);
-                        
-                        // Ouvrir/fermer les lignes de courses
-                        const isOpen = this.classList.toggle('active');
-                        courses.forEach(course => {
-                            course.classList.toggle('visible', isOpen);
-                        });
-                        
-                        // Animer l'icône
-                        toggleIcon.classList.toggle('open', isOpen);
-                    });
-                });
+                // Afficher la fenêtre modale
+                courseModal.classList.add('visible');
             }
             
-            // Fonction pour afficher les détails d'une course
-            window.showCourseDetails = function(courseJSON) {
-                try {
-                    const course = JSON.parse(decodeURIComponent(courseJSON));
-                    
-                    let detailsHTML = `
-                        <h2><i class="fas fa-flag-checkered"></i> ${course.nom}</h2>
-                        <div class="course-info">
-                            <p><i class="fas fa-map-marker-alt"></i> <strong>Hippodrome:</strong> ${course.hippodrome}</p>
-                            <p><i class="fas fa-calendar"></i> <strong>Date:</strong> ${course.date}</p>
-                            <p><i class="fas fa-users"></i> <strong>Nombre de participants:</strong> ${course.participants.length}</p>
-                        </div>
-                        
-                        <h3 class="participants-title">Liste des participants</h3>
-                    `;
-                    
-                    if (!course.participants || course.participants.length === 0) {
-                        detailsHTML += `
-                            <div class="no-results">
-                                <i class="fas fa-exclamation-circle"></i>
-                                <h3>Aucun participant</h3>
-                                <p>Il n'y a pas de participants pour cette course</p>
-                            </div>
-                        `;
-                    } else {
-                        detailsHTML += `
-                            <div class="table-responsive">
-                                <table class="data-table participants-table">
-                                    <thead>
-                                        <tr>
-                                            <th>N°</th>
-                                            <th>Cheval</th>
-                                            <th>Poids</th>
-                                            <th>Propriétaire</th>
-                                            <th>Entraîneur</th>
-                                            <th>Gains</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                        `;
-                        
-                        course.participants.forEach(participant => {
-                            detailsHTML += `
-                                <tr>
-                                    <td>
-                                        <div class="participant-number">${participant.n || '-'}</div>
-                                    </td>
-                                    <td>${participant.cheval || 'Non spécifié'}</td>
-                                    <td>${participant.poids || '-'}</td>
-                                    <td>${participant.proprietaire || '-'}</td>
-                                    <td>${participant.entraineur || '-'}</td>
-                                    <td>${participant.gains || '-'}</td>
-                                </tr>
-                            `;
-                        });
-                        
-                        detailsHTML += `
-                                    </tbody>
-                                </table>
-                            </div>
-                        `;
-                    }
-                    
-                    detailsHTML += `
-                        <div style="margin-top: 1.5rem; text-align: right;">
-                            <a href="simulation.html" class="action-button" style="background-color: rgba(212, 175, 55, 0.1); border-color: rgba(212, 175, 55, 0.3); color: var(--gold);">
-                                <i class="fas fa-calculator"></i> Simuler des paris sur cette course
-                            </a>
-                        </div>
-                    `;
-                    
-                    courseDetails.innerHTML = detailsHTML;
-                    courseDetails.style.display = 'block';
-                    
-                    // Faire défiler vers les détails
-                    courseDetails.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    
-                } catch (error) {
-                    console.error('Erreur lors de l\'affichage des détails:', error);
-                    courseDetails.innerHTML = `
-                        <div class="no-results">
-                            <i class="fas fa-exclamation-circle"></i>
-                            <h3>Erreur</h3>
-                            <p>Impossible d'afficher les détails de cette course</p>
-                        </div>
-                    `;
-                    courseDetails.style.display = 'block';
+            // Événements pour fermer la fenêtre modale
+            closeModal.addEventListener('click', () => {
+                courseModal.classList.remove('visible');
+            });
+            
+            window.addEventListener('click', (e) => {
+                if (e.target === courseModal) {
+                    courseModal.classList.remove('visible');
                 }
-            };
-            
-            // Fonction pour afficher une erreur
-            function showError(message) {
-                resultsContainer.innerHTML = `
-                    <div class="no-results">
-                        <i class="fas fa-exclamation-circle"></i>
-                        <h3>Erreur</h3>
-                        <p>${message}</p>
-                    </div>
-                `;
-            }
+            });
             
             // Événement de recherche
             searchInput.addEventListener('input', function() {
@@ -1197,11 +1444,34 @@
                 displayHippodromes();
             });
             
+            // Bouton de changement de date
+            const dateButton = document.getElementById('date-button');
+            const currentDateSpan = document.getElementById('current-date');
+            
+            dateButton.addEventListener('click', function() {
+                // Dans une version complète, ceci ouvrirait un sélecteur de date
+                // Pour cette démo, on simule un basculement entre aujourd'hui et demain
+                const today = new Date();
+                const tomorrow = new Date();
+                tomorrow.setDate(tomorrow.getDate() + 1);
+                
+                if (currentDateSpan.textContent.includes('Aujourd')) {
+                    currentDateSpan.textContent = `Demain (${formatDateLocal(tomorrow)})`;
+                } else {
+                    currentDateSpan.textContent = `Aujourd'hui (${formatDateLocal(today)})`;
+                }
+                
+                // On pourrait charger d'autres données ici
+            });
+            
             // Masquer le bouton d'effacement au chargement
             searchClear.style.display = 'none';
             
-            // Charger toutes les courses au démarrage
-            loadAllCourses();
+            // Afficher les hippodromes au chargement initial
+            displayHippodromes();
+            
+            // Mise à jour de la date
+            lastUpdateEl.textContent = formatDateLocal(new Date());
         });
     </script>
 </body>
