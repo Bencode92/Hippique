@@ -100,6 +100,8 @@
             list-style: none;
             padding: 0;
             margin: 0;
+            max-width: 94%;
+            margin: 0 auto;
         }
         
         .main-nav li {
@@ -127,7 +129,7 @@
         
         main {
             flex: 1;
-            max-width: 1200px;
+            max-width: 94%;
             margin: 0 auto;
             width: 100%;
             padding: 2rem;
@@ -246,7 +248,7 @@
         
         .jockey-list {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 1.5rem;
         }
         
@@ -526,6 +528,7 @@
             margin-bottom: 0;
             transform: translateY(-10px);
             display: none;
+            width: 100%;
         }
 
         .course-details.visible {
@@ -612,6 +615,7 @@
             border-radius: 10px;
             overflow: hidden;
             margin-bottom: 1.5rem;
+            table-layout: auto;
         }
 
         .participants-table th {
@@ -639,6 +643,8 @@
         .participants-table td {
             padding: 0.9rem 1rem;
             border-bottom: 1px solid rgba(233, 209, 140, 0.1);
+            white-space: normal;
+            word-break: break-word;
         }
 
         .horse-number {
@@ -659,6 +665,7 @@
             border-radius: 12px;
             margin-bottom: 2rem;
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+            width: 100%;
         }
 
         .action-buttons {
@@ -755,6 +762,26 @@
             to { opacity: 1; transform: translateY(0); }
         }
         
+        /* Styles pour les grands écrans */
+        @media (min-width: 1600px) {
+            .stats-grid {
+                grid-template-columns: repeat(5, 1fr);
+            }
+            
+            .course-grid {
+                grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+                gap: 1.5rem;
+            }
+            
+            .jockey-list {
+                grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            }
+            
+            .course-info-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+        
         /* Styles pour la mise en page responsive */
         @media (max-width: 768px) {
             header {
@@ -772,6 +799,7 @@
             
             .main-nav ul {
                 flex-wrap: wrap;
+                max-width: 100%;
             }
             
             .main-nav li {
@@ -787,6 +815,11 @@
             
             .course-info-grid {
                 grid-template-columns: 1fr 1fr;
+            }
+            
+            main {
+                max-width: 100%;
+                padding: 1rem;
             }
         }
     </style>
