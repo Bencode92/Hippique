@@ -592,6 +592,22 @@
             border-radius: 4px;
             padding: 2px 5px;
         }
+
+        /* Nouveau style: Indicateur de recherche active */
+        .search-active-indicator {
+            background-color: rgba(212, 175, 55, 0.15);
+            padding: 8px 16px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        
+        .search-active-indicator i {
+            color: var(--gold);
+        }
     </style>
 </head>
 <body>
@@ -674,6 +690,10 @@
             </button>
         </div>
         
+        <div id="search-indicator" style="display: none;" class="search-active-indicator">
+            <i class="fas fa-filter"></i> Résultats filtrés par recherche (les rangs affichés correspondent au classement général)
+        </div>
+        
         <div id="results-container">
             <div class="loading">
                 <div class="spinner"></div>
@@ -712,11 +732,13 @@
             let allData = {};
             let originalScores = {};  // Stockage pour les scores pondérés originaux
             let filteredData = [];
+            let isSearchActive = false; // Nouvelle variable pour suivre l'état de la recherche
             
             // Éléments DOM
             const resultsContainer = document.getElementById('results-container');
             const searchInput = document.getElementById('search-input');
             const searchClear = document.getElementById('search-clear');
+            const searchIndicator = document.getElementById('search-indicator');
             const tabs = document.querySelectorAll('.tab');
             const sortButtons = document.querySelectorAll('.sort-btn');
             const pagination = document.getElementById('pagination');
@@ -1135,15 +1157,20 @@
                     // Transformer les données pour le format d'affichage
                     const formattedData = processData(data, category);
                     
-                    // Mettre en cache les données
-                    allData[category] = formattedData;
+                    // MODIFICATION: Calculer le score pondéré dès le chargement initial
+                    const scoredData = calculateCompositeRanking(formattedData);
                     
-                    return formattedData;
+                    // Mettre en cache les données
+                    allData[category] = scoredData;
+                    
+                    return scoredData;
                 } catch (error) {
                     console.error(`Erreur lors du chargement des données ${category}:`, error);
                     
                     // Si les données ne peuvent pas être chargées, utiliser des données de démonstration
-                    return getDemoData(category);
+                    const demoData = getDemoData(category);
+                    // Calculer également le score pondéré pour les données de démo
+                    return calculateCompositeRanking(demoData);
                 }
             }
             
@@ -1629,12 +1656,16 @@
             // Fonction pour filtrer les données en fonction de la recherche
             function filterData(data, searchTerm) {
                 if (!searchTerm) {
+                    isSearchActive = false;
+                    searchIndicator.style.display = 'none';
                     return data;
                 }
                 
                 searchTerm = searchTerm.toLowerCase();
+                isSearchActive = true;
+                searchIndicator.style.display = 'block';
                 
-                // Filtrer les données sans recalculer les scores pondérés
+                // MODIFICATION: Filtrer les données SANS réattribuer des rangs
                 return data.filter(item => {
                     // Pour les chevaux, chercher dans Nom
                     if (currentCategory === 'chevaux') {
@@ -1677,7 +1708,11 @@
                 
                 // Filtrer les données si nécessaire
                 const searchTerm = searchInput.value.trim();
+                // MODIFICATION: simplement filtrer les données sans trier
                 filteredData = filterData(sortedData, searchTerm);
+                
+                // Mettre à jour l'indicateur de recherche
+                searchIndicator.style.display = searchTerm ? 'block' : 'none';
                 
                 // Afficher les résultats
                 displayResults(filteredData, currentPage);
@@ -1761,11 +1796,8 @@
                         showSkeletonLoading();
                     }
                     
-                    // Filtrer les données SANS recalculer les scores
+                    // MODIFICATION: Filtrer directement sans recalculer les rangs
                     filteredData = filterData(allData[currentCategory] || [], searchTerm);
-                    
-                    // Appliquer le tri courant tout en préservant les scores originaux
-                    filteredData = sortData(filteredData, currentSort, sortDirection);
                     
                     currentPage = 1;
                     displayResults(filteredData, currentPage);
@@ -1776,14 +1808,13 @@
                 searchInput.value = '';
                 searchInput.focus();
                 this.style.display = 'none';
+                searchIndicator.style.display = 'none';
+                isSearchActive = false;
                 
                 showSkeletonLoading();
                 
                 // Réinitialiser le filtre
                 filteredData = [...allData[currentCategory]] || [];
-                
-                // Trier les données tout en préservant les scores originaux
-                filteredData = sortData(filteredData, currentSort, sortDirection);
                 
                 currentPage = 1;
                 displayResults(filteredData, currentPage);
