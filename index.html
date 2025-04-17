@@ -449,7 +449,7 @@
 
         .course-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 1rem;
             padding: 1rem;
         }
@@ -461,6 +461,7 @@
             padding: 1rem;
             transition: all 0.3s ease;
             cursor: pointer;
+            position: relative;
         }
 
         .course-card:hover {
@@ -509,61 +510,56 @@
             opacity: 0.8;
         }
         
-        /* Styles pour la fenêtre modale de détails AMÉLIORÉS */
-        .course-modal {
-            display: none; 
-            position: fixed;
-            z-index: 100;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.7);
-            animation: fadeIn 0.3s ease;
-        }
-
-        .course-modal.visible {
-            display: block;
-        }
-
-        .modal-content {
-            background: linear-gradient(to bottom, rgba(19, 69, 66, 0.98), rgba(10, 46, 42, 0.98));
-            margin: 5% auto;
-            padding: 2rem;
+        /* Styles pour les détails de la course intégrés (au lieu du modal) */
+        .course-details {
+            background: linear-gradient(to bottom, rgba(19, 69, 66, 0.95), rgba(10, 46, 42, 0.95));
             border: 1px solid var(--gold);
-            border-radius: 16px;
-            width: 90%;
-            max-width: 1000px;
-            max-height: 85vh;
-            overflow-y: auto;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease, opacity 0.4s ease, margin 0.4s ease, padding 0.4s ease;
+            opacity: 0;
+            grid-column: 1 / -1;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            margin-bottom: 0;
+            transform: translateY(-10px);
+            display: none;
+        }
+
+        .course-details.visible {
+            display: block;
+            max-height: 2000px;
+            opacity: 1;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            transform: translateY(0);
+        }
+
+        .course-details-title {
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            font-size: 1.6rem;
+            text-align: center;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
             position: relative;
         }
 
-        .close-modal {
-            color: var(--light-gold);
+        .course-details-title .close-details {
             position: absolute;
-            right: 1.5rem;
-            top: 1.5rem;
-            font-size: 1.5rem;
-            font-weight: bold;
+            right: 0;
+            top: 0;
+            color: var(--light-gold);
+            font-size: 1.2rem;
             cursor: pointer;
             transition: all 0.3s ease;
         }
 
-        .close-modal:hover {
+        .course-details-title .close-details:hover {
             color: var(--accent);
             transform: scale(1.1);
-        }
-
-        .modal-title {
-            color: var(--gold);
-            margin-bottom: 1.5rem;
-            font-size: 1.8rem;
-            text-align: center;
-            padding-bottom: 0.8rem;
-            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
         }
 
         .course-info-grid {
@@ -881,45 +877,6 @@
                     <a href="simulation.html" class="action-btn secondary">
                         <i class="fas fa-calculator"></i> Simuler des paris
                     </a>
-                </div>
-            </div>
-            
-            <div id="course-modal" class="course-modal">
-                <div class="modal-content">
-                    <span class="close-modal">&times;</span>
-                    <h2 class="modal-title" id="modal-title">Détails de la course</h2>
-                    
-                    <div class="course-info-grid" id="course-meta">
-                        <!-- Métadonnées améliorées de la course -->
-                    </div>
-                    
-                    <h3 class="participants-title">Liste des participants</h3>
-                    
-                    <div class="table-responsive">
-                        <table class="participants-table" id="participants-table">
-                            <thead>
-                                <tr>
-                                    <th>N°</th>
-                                    <th>Cheval</th>
-                                    <th>Jockey</th>
-                                    <th>Entraîneur</th>
-                                    <th>Propriétaire</th>
-                                    <th>Éleveurs</th>
-                                    <th>Poids</th>
-                                    <th>Performances</th>
-                                </tr>
-                            </thead>
-                            <tbody id="participants-tbody">
-                                <!-- Participants de la course -->
-                            </tbody>
-                        </table>
-                    </div>
-                    
-                    <div class="action-buttons">
-                        <a href="simulation.html" class="action-btn secondary">
-                            <i class="fas fa-calculator"></i> Simuler des paris sur cette course
-                        </a>
-                    </div>
                 </div>
             </div>
             
@@ -1267,19 +1224,15 @@
             const resultsContainer = document.getElementById('results-container');
             const searchInput = document.getElementById('search-input');
             const searchClear = document.getElementById('search-clear');
-            const courseModal = document.getElementById('course-modal');
-            const closeModal = document.querySelector('.close-modal');
-            const modalTitle = document.getElementById('modal-title');
-            const courseMeta = document.getElementById('course-meta');
-            const participantsTable = document.getElementById('participants-tbody');
             const lastUpdateEl = document.getElementById('last-update');
             const currentDateSpan = document.getElementById('current-date');
             const dateButton = document.getElementById('date-button');
             const dateInput = document.getElementById('date-input');
             
-            // Variable pour stocker les données de courses
+            // Variable pour stocker les données de courses et l'état de l'application
             let courseData = {};
             let currentDate = new Date();
+            let activeDetailSection = null;
             
             // Mise à jour de la date affichée
             currentDateSpan.textContent = coursesLoader.getReadableDate(currentDate);
@@ -1328,6 +1281,11 @@
                     }
                 }
                 return null;
+            }
+            
+            // Fonction pour créer un ID unique pour les détails d'une course
+            function createCourseDetailId(hippodrome, courseName) {
+                return `details-${hippodrome.replace(/\s+/g, '-').toLowerCase()}-${courseName.replace(/\s+/g, '-').toLowerCase()}`;
             }
             
             // Fonction pour afficher les hippodromes et leurs courses
@@ -1382,7 +1340,7 @@
                                 <h3><i class="fas fa-horse-head"></i> ${hippodrome}</h3>
                                 <span>${filteredCourses.length} course${filteredCourses.length > 1 ? 's' : ''}</span>
                             </div>
-                            <div class="course-grid">
+                            <div class="course-grid" id="grid-${hippodromeId}">
                     `;
                     
                     // Ajouter chaque course comme une carte
@@ -1393,8 +1351,10 @@
                             ? course.participants.length 
                             : 0;
                         
+                        const courseDetailId = createCourseDetailId(hippodrome, course.nom);
+                        
                         html += `
-                            <div class="course-card" data-hippodrome="${hippodrome}" data-course="${course.nom}">
+                            <div class="course-card" data-hippodrome="${hippodrome}" data-course="${course.nom}" data-detail-id="${courseDetailId}">
                                 <div class="course-time">${course.horaire || ""}</div>
                                 <div class="course-name">${course.nom || ""}</div>
                                 <div class="course-meta">
@@ -1428,14 +1388,15 @@
                         card.addEventListener('click', function() {
                             const hippodrome = this.dataset.hippodrome;
                             const courseName = this.dataset.course;
-                            showCourseDetails(hippodrome, courseName);
+                            const detailId = this.dataset.detailId;
+                            toggleCourseDetails(hippodrome, courseName, detailId, this);
                         });
                     });
                 }
             }
             
-            // Fonction pour afficher les détails d'une course dans la fenêtre modale
-            function showCourseDetails(hippodrome, courseName) {
+            // Fonction pour afficher/masquer les détails d'une course sous la carte
+            function toggleCourseDetails(hippodrome, courseName, detailId, courseCard) {
                 // Trouver la course correspondante
                 const course = courseData[hippodrome] && Array.isArray(courseData[hippodrome])
                     ? courseData[hippodrome].find(c => c && c.nom === courseName)
@@ -1446,102 +1407,196 @@
                     return;
                 }
                 
-                // Mettre à jour le titre
-                modalTitle.textContent = course.nom || "";
+                // Vérifier si les détails sont déjà affichés
+                let detailsElement = document.getElementById(detailId);
                 
-                // Nouveau format de métadonnées pour le modal
-                courseMeta.innerHTML = `
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="info-label">Hippodrome</div>
-                        <div class="info-value">${hippodrome}</div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-clock"></i>
-                        <div class="info-label">Horaire</div>
-                        <div class="info-value">${course.horaire || ""}</div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-calendar-alt"></i>
-                        <div class="info-label">Date</div>
-                        <div class="info-value">${coursesLoader.formatDateDMY(currentDate)}</div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-users"></i>
-                        <div class="info-label">Participants</div>
-                        <div class="info-value">${course.participants ? course.participants.length : 0}</div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-running"></i>
-                        <div class="info-label">Type</div>
-                        <div class="info-value">${course.type || "Plat"}</div>
-                    </div>
-                `;
-                
-                // Mettre à jour le tableau des participants
-                let participantsHtml = '';
-                
-                if (course.participants && Array.isArray(course.participants) && course.participants.length > 0) {
-                    course.participants.forEach(participant => {
-                        // Récupérer les valeurs de propriétaire avec différentes orthographes possibles
-                        const proprioValue = getPropertyValue(participant, [
-                            "proprietaire", "propriétaire", 
-                            "proprio", "owner", "owner_name"
-                        ]);
+                // Si la section de détails n'existe pas, la créer
+                if (!detailsElement) {
+                    // Fermer d'abord la section active si elle existe
+                    if (activeDetailSection) {
+                        activeDetailSection.classList.remove('visible');
+                        setTimeout(() => {
+                            if (activeDetailSection.parentNode) {
+                                activeDetailSection.parentNode.removeChild(activeDetailSection);
+                            }
+                        }, 300);
+                    }
+                    
+                    // Créer la nouvelle section de détails
+                    detailsElement = document.createElement('div');
+                    detailsElement.id = detailId;
+                    detailsElement.className = 'course-details';
+                    
+                    // Préparer le contenu des détails
+                    const participantsCount = course.participants && Array.isArray(course.participants) ? course.participants.length : 0;
+                    
+                    detailsElement.innerHTML = `
+                        <div class="course-details-title">
+                            ${course.nom || ""}
+                            <span class="close-details">&times;</span>
+                        </div>
                         
-                        // Récupérer les valeurs d'éleveurs avec différentes orthographes possibles
-                        const eleveurValue = getPropertyValue(participant, [
-                            "eleveurs", "éleveurs", 
-                            "eleveur", "éleveur", 
-                            "breeder", "breeder_name"
-                        ]);
+                        <div class="course-info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="info-label">Hippodrome</div>
+                                <div class="info-value">${hippodrome}</div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div class="info-label">Horaire</div>
+                                <div class="info-value">${course.horaire || ""}</div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <div class="info-label">Date</div>
+                                <div class="info-value">${coursesLoader.formatDateDMY(currentDate)}</div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-users"></i>
+                                <div class="info-label">Participants</div>
+                                <div class="info-value">${participantsCount}</div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-running"></i>
+                                <div class="info-label">Type</div>
+                                <div class="info-value">${course.type || "Plat"}</div>
+                            </div>
+                        </div>
                         
-                        // Performances
-                        const performancesValue = getPropertyValue(participant, [
-                            "performances", "perf", "form"
-                        ]);
+                        <h3 class="participants-title">Liste des participants</h3>
                         
-                        participantsHtml += `
+                        <div class="table-responsive">
+                            <table class="participants-table">
+                                <thead>
+                                    <tr>
+                                        <th>N°</th>
+                                        <th>Cheval</th>
+                                        <th>Jockey</th>
+                                        <th>Entraîneur</th>
+                                        <th>Propriétaire</th>
+                                        <th>Éleveurs</th>
+                                        <th>Poids</th>
+                                        <th>Performances</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="participants-${detailId}">
+                                    <!-- Participants de la course -->
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="action-buttons">
+                            <a href="simulation.html?course=${encodeURIComponent(courseName)}&hippodrome=${encodeURIComponent(hippodrome)}" class="action-btn secondary">
+                                <i class="fas fa-calculator"></i> Simuler des paris sur cette course
+                            </a>
+                        </div>
+                    `;
+                    
+                    // Trouver la grille contenant la carte
+                    const gridContainer = courseCard.parentNode;
+                    
+                    // Insérer les détails après la dernière carte ou après la carte cliquée
+                    gridContainer.appendChild(detailsElement);
+                    
+                    // Ajouter les participants au tableau
+                    let participantsHtml = '';
+                    const participantsTable = document.getElementById(`participants-${detailId}`);
+                    
+                    if (course.participants && Array.isArray(course.participants) && course.participants.length > 0) {
+                        course.participants.forEach(participant => {
+                            // Récupérer les valeurs de propriétaire avec différentes orthographes possibles
+                            const proprioValue = getPropertyValue(participant, [
+                                "proprietaire", "propriétaire", 
+                                "proprio", "owner", "owner_name"
+                            ]);
+                            
+                            // Récupérer les valeurs d'éleveurs avec différentes orthographes possibles
+                            const eleveurValue = getPropertyValue(participant, [
+                                "eleveurs", "éleveurs", 
+                                "eleveur", "éleveur", 
+                                "breeder", "breeder_name"
+                            ]);
+                            
+                            // Performances
+                            const performancesValue = getPropertyValue(participant, [
+                                "performances", "perf", "form"
+                            ]);
+                            
+                            participantsHtml += `
+                                <tr>
+                                    <td><div class="horse-number">${participant.n || participant["n°"] || participant.num || ""}</div></td>
+                                    <td>${participant.cheval || ""}</td>
+                                    <td>${participant.jockey || ""}</td>
+                                    <td>${participant.entraineur || ""}</td>
+                                    <td>${proprioValue || "-"}</td>
+                                    <td>${eleveurValue || "-"}</td>
+                                    <td>${participant.poids || ""}</td>
+                                    <td>${performancesValue || "-"}</td>
+                                </tr>
+                            `;
+                        });
+                    } else {
+                        participantsHtml = `
                             <tr>
-                                <td><div class="horse-number">${participant.n || participant["n°"] || participant.num || ""}</div></td>
-                                <td>${participant.cheval || ""}</td>
-                                <td>${participant.jockey || ""}</td>
-                                <td>${participant.entraineur || ""}</td>
-                                <td>${proprioValue || "-"}</td>
-                                <td>${eleveurValue || "-"}</td>
-                                <td>${participant.poids || ""}</td>
-                                <td>${performancesValue || "-"}</td>
+                                <td colspan="8" style="text-align: center;">Aucun participant disponible</td>
                             </tr>
                         `;
+                    }
+                    
+                    participantsTable.innerHTML = participantsHtml;
+                    
+                    // Ajouter l'événement au bouton de fermeture
+                    detailsElement.querySelector('.close-details').addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        detailsElement.classList.remove('visible');
+                        setTimeout(() => {
+                            if (detailsElement.parentNode) {
+                                detailsElement.parentNode.removeChild(detailsElement);
+                                activeDetailSection = null;
+                            }
+                        }, 300);
                     });
+                    
+                    // Animation pour afficher la section
+                    setTimeout(() => {
+                        detailsElement.classList.add('visible');
+                    }, 10);
+                    
+                    // Mettre à jour la section active
+                    activeDetailSection = detailsElement;
+                    
+                    // Faire défiler vers la section visible
+                    setTimeout(() => {
+                        detailsElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
                 } else {
-                    participantsHtml = `
-                        <tr>
-                            <td colspan="8" style="text-align: center;">Aucun participant disponible</td>
-                        </tr>
-                    `;
+                    // Si la section existe déjà, la fermer
+                    detailsElement.classList.remove('visible');
+                    setTimeout(() => {
+                        if (detailsElement.parentNode) {
+                            detailsElement.parentNode.removeChild(detailsElement);
+                            activeDetailSection = null;
+                        }
+                    }, 300);
                 }
-                
-                participantsTable.innerHTML = participantsHtml;
-                
-                // Afficher la fenêtre modale
-                courseModal.classList.add('visible');
             }
-            
-            // Événements pour fermer la fenêtre modale
-            closeModal.addEventListener('click', () => {
-                courseModal.classList.remove('visible');
-            });
-            
-            window.addEventListener('click', (e) => {
-                if (e.target === courseModal) {
-                    courseModal.classList.remove('visible');
-                }
-            });
             
             // Événement de recherche
             searchInput.addEventListener('input', function() {
-                displayHippodromes();
+                // Fermer les détails actifs avant de mettre à jour l'affichage
+                if (activeDetailSection) {
+                    activeDetailSection.classList.remove('visible');
+                    setTimeout(() => {
+                        if (activeDetailSection.parentNode) {
+                            activeDetailSection.parentNode.removeChild(activeDetailSection);
+                            activeDetailSection = null;
+                        }
+                        displayHippodromes();
+                    }, 300);
+                } else {
+                    displayHippodromes();
+                }
                 
                 // Afficher/masquer le bouton d'effacement
                 searchClear.style.display = this.value.trim() ? 'block' : 'none';
@@ -1552,7 +1607,19 @@
                 searchInput.value = '';
                 searchInput.focus();
                 this.style.display = 'none';
-                displayHippodromes();
+                // Fermer les détails actifs avant de mettre à jour l'affichage
+                if (activeDetailSection) {
+                    activeDetailSection.classList.remove('visible');
+                    setTimeout(() => {
+                        if (activeDetailSection.parentNode) {
+                            activeDetailSection.parentNode.removeChild(activeDetailSection);
+                            activeDetailSection = null;
+                        }
+                        displayHippodromes();
+                    }, 300);
+                } else {
+                    displayHippodromes();
+                }
             });
             
             // Bouton de changement de date
@@ -1564,7 +1631,19 @@
                 if (this.value) {
                     currentDate = new Date(this.value);
                     currentDateSpan.textContent = coursesLoader.getReadableDate(currentDate);
-                    loadCoursesForCurrentDate();
+                    // Fermer les détails actifs avant de charger les nouvelles courses
+                    if (activeDetailSection) {
+                        activeDetailSection.classList.remove('visible');
+                        setTimeout(() => {
+                            if (activeDetailSection.parentNode) {
+                                activeDetailSection.parentNode.removeChild(activeDetailSection);
+                                activeDetailSection = null;
+                            }
+                            loadCoursesForCurrentDate();
+                        }, 300);
+                    } else {
+                        loadCoursesForCurrentDate();
+                    }
                 }
             });
             
