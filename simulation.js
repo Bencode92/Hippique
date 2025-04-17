@@ -1,6 +1,6 @@
 /**
  * Simulateur de paris optimaux pour les courses hippiques
- * Implémente deux algorithmes : Dutch betting classique et optimisation EV
+ * Implémente trois algorithmes : Dutch betting classique, optimisation EV et Mid Range
  */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -14,6 +14,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const errorMessage = document.getElementById('errorMessage');
     const strategyToggle = document.getElementById('strategyToggle');
     
+    // Nouveaux éléments pour Mid Range
+    const strategyOptions = document.querySelectorAll('.strategy-option');
+    const strategyTypeInput = document.getElementById('strategyType');
+    const midrangeParams = document.getElementById('midrangeParams');
+    const lowRangeSlider = document.getElementById('lowRangeSlider');
+    const highRangeSlider = document.getElementById('highRangeSlider');
+    const lowRangeValue = document.getElementById('lowRangeValue');
+    const highRangeValue = document.getElementById('highRangeValue');
+    
     // Éléments de résultat
     const minGainElement = document.getElementById('minGain');
     const avgGainElement = document.getElementById('avgGain');
@@ -22,7 +31,74 @@ document.addEventListener('DOMContentLoaded', function() {
     const betsTableBody = document.getElementById('betsTableBody');
     
     // État global pour la stratégie
-    let currentStrategy = 'dutch'; // 'dutch' ou 'ev'
+    let currentStrategy = 'dutch'; // 'dutch', 'ev' ou 'midrange'
+    
+    // Paramètres Mid Range
+    let lowPercent = 0.2;
+    let highPercent = 0.2;
+    
+    // Initialiser les contrôles Mid Range s'ils existent
+    if (lowRangeSlider && highRangeSlider) {
+        lowRangeSlider.addEventListener('input', function() {
+            lowPercent = this.value / 100;
+            lowRangeValue.textContent = `${this.value}%`;
+            
+            // Recalculer si des résultats sont déjà affichés
+            if (resultContainer.style.display === 'block' && strategyTypeInput.value === 'midrange') {
+                calculateButton.click();
+            }
+        });
+        
+        highRangeSlider.addEventListener('input', function() {
+            highPercent = this.value / 100;
+            highRangeValue.textContent = `${this.value}%`;
+            
+            // Recalculer si des résultats sont déjà affichés
+            if (resultContainer.style.display === 'block' && strategyTypeInput.value === 'midrange') {
+                calculateButton.click();
+            }
+        });
+    }
+    
+    // Gérer le changement de stratégie
+    if (strategyOptions) {
+        strategyOptions.forEach(option => {
+            option.addEventListener('click', function() {
+                const strategy = this.dataset.strategy;
+                
+                // Mettre à jour l'apparence
+                strategyOptions.forEach(opt => opt.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Mettre à jour le type de stratégie
+                if (strategyTypeInput) {
+                    strategyTypeInput.value = strategy;
+                }
+                currentStrategy = strategy;
+                
+                // Mettre à jour le toggle pour la compatibilité
+                if (strategyToggle) {
+                    strategyToggle.checked = (strategy === 'ev' || strategy === 'midrange');
+                }
+                
+                // Mettre à jour les classes du body
+                document.body.classList.remove('ev-mode', 'midrange-mode');
+                if (strategy === 'ev') {
+                    document.body.classList.add('ev-mode');
+                } else if (strategy === 'midrange') {
+                    document.body.classList.add('midrange-mode');
+                }
+                
+                // Mettre à jour les labels dans l'interface selon la stratégie
+                updateStrategyLabels(strategy);
+                
+                // Recalculer si des résultats sont déjà affichés
+                if (resultContainer.style.display === 'block') {
+                    calculateButton.click();
+                }
+            });
+        });
+    }
     
     // Initialiser le toggle avec vérification de console pour débogage
     console.log("Toggle element:", strategyToggle);
@@ -55,15 +131,15 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Fonction pour mettre à jour les labels dans l'interface selon la stratégie active
     function updateStrategyLabels(strategy) {
-        const minGainLabel = document.querySelector('.label:nth-child(1)');
-        const avgGainLabel = document.querySelector('.label:nth-child(2)');
+        const minGainLabel = document.querySelector('.result-item:nth-child(1) .label');
+        const avgGainLabel = document.querySelector('.result-item:nth-child(2) .label');
         
         if (minGainLabel && avgGainLabel) {
-            if (strategy === 'ev') {
+            if (strategy === 'ev' || strategy === 'midrange') {
                 minGainLabel.textContent = "Gain net minimum garanti";
-                avgGainLabel.innerHTML = "Gain net moyen attendu (EV) 🔥";
+                avgGainLabel.innerHTML = `Gain net moyen attendu ${strategy === 'midrange' ? '(Mid Range)' : '(EV)'} 🔥`;
                 avgGainLabel.style.fontWeight = "bold";
-                avgGainLabel.style.color = "var(--gold)";
+                avgGainLabel.style.color = strategy === 'midrange' ? "var(--midrange-highlight)" : "var(--gold)";
             } else {
                 minGainLabel.textContent = "Gain net minimum garanti";
                 minGainLabel.style.fontWeight = "bold";
@@ -199,15 +275,25 @@ document.addEventListener('DOMContentLoaded', function() {
             // Différer le calcul pour que le message s'affiche
             setTimeout(() => {
                 try {
-                    // Calculer les stratégies pour 2, 3, 4 et 5 favoris (si possible)
+                    // Détecter la stratégie active
+                    const activeStrategy = strategyTypeInput ? strategyTypeInput.value : currentStrategy;
                     let allCombos;
                     
-                    console.log("Calcul avec stratégie:", currentStrategy);
+                    console.log("Calcul avec stratégie:", activeStrategy);
                     
-                    if (currentStrategy === 'dutch') {
+                    if (activeStrategy === 'dutch') {
                         allCombos = findAllCombosForSizesDutch(horsesRaw, totalBet, [2, 3, 4, 5]);
-                    } else {
+                    } else if (activeStrategy === 'ev') {
                         allCombos = findAllCombosForSizesEV(horsesRaw, totalBet, [2, 3, 4, 5], maxPerHorse);
+                    } else if (activeStrategy === 'midrange') {
+                        allCombos = findMidRangeOptimalBets(
+                            horsesRaw, 
+                            totalBet, 
+                            [2, 3, 4, 5], 
+                            maxPerHorse,
+                            lowPercent,
+                            highPercent
+                        );
                     }
                     
                     if (allCombos.filter(combo => combo.available && combo.rentable).length === 0) {
@@ -215,7 +301,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                     
                     // Afficher les résultats
-                    displayResults(allCombos, totalBet, currentStrategy, maxPerHorse);
+                    displayResults(allCombos, totalBet, activeStrategy, maxPerHorse);
                     
                     // Cacher le message d'erreur et afficher les résultats
                     errorMessage.style.display = 'none';
@@ -450,6 +536,160 @@ document.addEventListener('DOMContentLoaded', function() {
         return allCombos;
     }
     
+    /**
+     * Stratégie Mid Range - Filtre les cotes médianes et optimise l'EV
+     */
+    function findMidRangeOptimalBets(horsesRaw, totalBet, sizes, maxStakePerHorse = 999, lowPercent = 0.2, highPercent = 0.2) {
+        // Trier les chevaux par cote croissante
+        const sortedEntries = Object.entries(horsesRaw).sort((a, b) => a[1] - b[1]);
+        const total = sortedEntries.length;
+        
+        // Calculer les indices de filtre
+        const lowCut = Math.floor(total * lowPercent);
+        const highCut = total - Math.floor(total * highPercent);
+        
+        // Filtrer les chevaux pour ne garder que la zone médiane
+        const midRangeEntries = sortedEntries.slice(lowCut, highCut);
+        const midRangeHorses = Object.fromEntries(midRangeEntries);
+        
+        console.log(`Mid Range: Gardé ${midRangeEntries.length}/${total} chevaux (coupé ${lowCut} bas, ${total-highCut} haut)`);
+        
+        if (midRangeEntries.length < 2) {
+            return sizes.map(size => ({
+                taille: size,
+                available: false,
+                rentable: false,
+                gain_moyen: 0,
+                gain_maximum: 0,
+                approche: "Mid Range",
+                filtrage: `Exclu: ${lowPercent*100}% bas + ${highPercent*100}% haut`
+            }));
+        }
+        
+        // Fonction d'optimisation similaire à EV mais adaptée pour Mid Range
+        function optimizeMidRange(combo, totalBet, maxStakePerHorse) {
+            const odds = combo.map(h => midRangeHorses[h]);
+            const horseCount = combo.length;
+            
+            // Paramètres d'optimisation
+            const STEP_SIZE = horseCount <= 2 ? 0.5 : (horseCount <= 3 ? 1 : 2);
+            const MIN_STAKE = 1;
+            
+            // Variables pour stocker le meilleur résultat
+            let bestGainMoyen = -Infinity;
+            let bestStakes = [];
+            let bestGainsBruts = [];
+            let bestGainsNets = [];
+            let iterations = 0;
+            const MAX_ITERATIONS = 1000000;
+            
+            // Fonction récursive de recherche
+            function findBestStakes(currentHorse, remainingStake, currentStakes) {
+                iterations++;
+                if (iterations > MAX_ITERATIONS) return;
+                
+                if (currentHorse === horseCount - 1) {
+                    if (remainingStake > maxStakePerHorse) return;
+                    
+                    const finalStakes = [...currentStakes, remainingStake];
+                    const gainsBruts = finalStakes.map((stake, i) => stake * odds[i]);
+                    const gainsNets = gainsBruts.map(g => g - totalBet);
+                    
+                    if (!gainsNets.every(g => g > 0)) return;
+                    
+                    const gainMoyen = gainsNets.reduce((sum, g) => sum + g, 0) / horseCount;
+                    
+                    if (gainMoyen > bestGainMoyen) {
+                        bestGainMoyen = gainMoyen;
+                        bestStakes = finalStakes;
+                        bestGainsBruts = gainsBruts;
+                        bestGainsNets = gainsNets;
+                    }
+                    return;
+                }
+                
+                let maxStake = remainingStake - MIN_STAKE * (horseCount - currentHorse - 1);
+                maxStake = Math.min(maxStake, maxStakePerHorse);
+                
+                for (let stake = MIN_STAKE; stake <= maxStake; stake += STEP_SIZE) {
+                    findBestStakes(currentHorse + 1, remainingStake - stake, [...currentStakes, stake]);
+                }
+            }
+            
+            // Lancer l'optimisation
+            console.time('MidRangeOptimizationTime');
+            findBestStakes(0, totalBet, []);
+            console.timeEnd('MidRangeOptimizationTime');
+            console.log(`Mid Range Iterations: ${iterations}`);
+            
+            // Vérifier si une solution a été trouvée
+            const isRentable = bestGainMoyen > 0 && bestStakes.length > 0;
+            
+            if (!isRentable) {
+                return {
+                    chevaux: combo,
+                    mises: [],
+                    cotes: odds,
+                    gains_bruts: [],
+                    gains_net: [],
+                    gain_minimum: 0,
+                    gain_moyen: 0,
+                    gain_maximum: 0,
+                    rentable: false,
+                    available: true,
+                    approche: "Mid Range",
+                    filtrage: `Exclu: ${lowPercent*100}% bas + ${highPercent*100}% haut`
+                };
+            }
+            
+            // Calculer les autres métriques
+            const gainMax = Math.max(...bestGainsNets);
+            const gainMin = Math.min(...bestGainsNets);
+            const limitesAtteintes = bestStakes.some(stake => Math.abs(stake - maxStakePerHorse) < 0.01);
+            
+            return {
+                chevaux: combo,
+                mises: bestStakes,
+                cotes: odds,
+                gains_bruts: bestGainsBruts,
+                gains_net: bestGainsNets,
+                gain_minimum: gainMin,
+                gain_moyen: bestGainMoyen,
+                gain_maximum: gainMax,
+                rentable: isRentable,
+                available: true,
+                approche: "Mid Range",
+                filtrage: `Exclu: ${lowPercent*100}% bas + ${highPercent*100}% haut`,
+                limitesAtteintes: limitesAtteintes
+            };
+        }
+        
+        // Générer les combos pour chaque taille demandée
+        const horseNames = Object.keys(midRangeHorses);
+        const allCombos = [];
+        
+        for (const size of sizes) {
+            if (size <= horseNames.length) {
+                const subset = horseNames.slice(0, size);
+                const result = optimizeMidRange(subset, totalBet, maxStakePerHorse);
+                result.taille = size;
+                allCombos.push(result);
+            } else {
+                allCombos.push({
+                    taille: size,
+                    available: false,
+                    rentable: false,
+                    gain_moyen: 0,
+                    gain_maximum: 0,
+                    approche: "Mid Range",
+                    filtrage: `Exclu: ${lowPercent*100}% bas + ${highPercent*100}% haut`
+                });
+            }
+        }
+        
+        return allCombos;
+    }
+    
     // Fonction pour afficher les résultats
     function displayResults(comboList, totalBet, strategy, maxStakePerHorse) {
         resultContainer.style.display = 'block';
@@ -475,7 +715,7 @@ document.addEventListener('DOMContentLoaded', function() {
             selectedHorsesElement.textContent = bestCombo.chevaux.length;
             
             // Ajouter une classe spéciale pour différencier les stratégies
-            if (strategy === 'ev') {
+            if (strategy === 'ev' || strategy === 'midrange') {
                 avgGainElement.className = 'value positive highlight';
                 minGainElement.className = 'value positive';
             } else {
@@ -492,11 +732,15 @@ document.addEventListener('DOMContentLoaded', function() {
         // Ajouter un en-tête explicatif pour la méthode
         const methodExplanation = document.createElement('tr');
         let explanationText = "";
+        
         if (strategy === 'dutch') {
             explanationText = `<td colspan="5" class="method-explanation">🎯 <strong>Mode DUTCH BETTING</strong> : Cette stratégie garantit un gain identique quel que soit le cheval gagnant parmi votre sélection.</td>`;
-        } else {
+        } else if (strategy === 'ev') {
             explanationText = `<td colspan="5" class="method-explanation">💰 <strong>Mode OPTIMISATION EV</strong> : Cette stratégie trouve la répartition des mises qui maximise votre gain moyen, avec un gain net positif garanti pour chaque cheval.</td>`;
+        } else if (strategy === 'midrange') {
+            explanationText = `<td colspan="5" class="method-explanation">⚖️ <strong>Mode MID RANGE</strong> : Cette stratégie se concentre sur les cotes médianes en excluant ${lowPercent*100}% des plus basses et ${highPercent*100}% des plus hautes, puis optimise le gain moyen.</td>`;
         }
+        
         methodExplanation.innerHTML = explanationText;
         betsTableBody.appendChild(methodExplanation);
 
@@ -510,19 +754,31 @@ document.addEventListener('DOMContentLoaded', function() {
             if (isBest) {
                 if (strategy === 'dutch') {
                     bestBadge = "🔥 MEILLEUR COMBO DUTCH - ";
-                } else {
+                } else if (strategy === 'ev') {
                     bestBadge = "🔥 MEILLEUR COMBO EV - ";
+                } else if (strategy === 'midrange') {
+                    bestBadge = "🔥 MEILLEUR COMBO MID RANGE - ";
                 }
             }
             
             const headerClass = "section-header";
-            const strategyBadge = strategy === 'dutch' ? "🎯 DUTCH : " : "💰 OPTIMISATION EV : ";
+            let strategyBadge = "";
+            
+            if (strategy === 'dutch') {
+                strategyBadge = "🎯 DUTCH : ";
+            } else if (strategy === 'ev') {
+                strategyBadge = "💰 OPTIMISATION EV : ";
+            } else if (strategy === 'midrange') {
+                strategyBadge = "⚖️ MID RANGE : ";
+            }
             
             let headerText = "";
             if (strategy === 'dutch') {
                 headerText = `${bestBadge}${strategyBadge}Combo avec ${combo.taille} favoris | Gain garanti : +${combo.gain_minimum.toFixed(2)} € | Gain net moyen : +${combo.gain_moyen.toFixed(2)} €`;
-            } else {
+            } else if (strategy === 'ev') {
                 headerText = `${bestBadge}${strategyBadge}Combo avec ${combo.taille} favoris | Gain net moyen (EV) : +${combo.gain_moyen.toFixed(2)} € | Gain min/max : +${combo.gain_minimum.toFixed(2)} €/+${combo.gain_maximum.toFixed(2)} €`;
+            } else if (strategy === 'midrange') {
+                headerText = `${bestBadge}${strategyBadge}Combo avec ${combo.taille} favoris | Gain net moyen : +${combo.gain_moyen.toFixed(2)} € | ${combo.filtrage}`;
             }
             
             const title = document.createElement('tr');
@@ -531,24 +787,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Ajouter des en-têtes de colonne spécifiques selon la stratégie
             const columnHeaders = document.createElement('tr');
-            let headersHTML = "";
-            if (strategy === 'ev') {
-                headersHTML = `
-                    <th>Cheval</th>
-                    <th>Cote</th>
-                    <th>Mise (€)</th>
-                    <th>Gain brut (€)</th>
-                    <th>Gain net (€)</th>
-                `;
-            } else {
-                headersHTML = `
-                    <th>Cheval</th>
-                    <th>Cote</th>
-                    <th>Mise (€)</th>
-                    <th>Gain brut (€)</th>
-                    <th>Gain net (€)</th>
-                `;
-            }
+            let headersHTML = `
+                <th>Cheval</th>
+                <th>Cote</th>
+                <th>Mise (€)</th>
+                <th>Gain brut (€)</th>
+                <th>Gain net (€)</th>
+            `;
             columnHeaders.innerHTML = headersHTML;
             betsTableBody.appendChild(columnHeaders);
 
@@ -559,7 +804,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 const gainClass = gainNet > 0 ? 'positive' : 'negative';
                 
                 // Vérifier si cette mise est à la limite
-                const isAtLimit = strategy === 'ev' && Math.abs(combo.mises[i] - maxStakePerHorse) < 0.01;
+                const isAtLimit = (strategy === 'ev' || strategy === 'midrange') && 
+                                 Math.abs(combo.mises[i] - maxStakePerHorse) < 0.01;
                 const miseClass = isAtLimit ? 'at-limit' : '';
                 const limitWarning = isAtLimit ? ' ⚠️' : '';
 
@@ -574,7 +820,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
             // Ajouter un avertissement si des limites sont atteintes
-            if (combo.limitesAtteintes && strategy === 'ev') {
+            if (combo.limitesAtteintes && (strategy === 'ev' || strategy === 'midrange')) {
                 const warningRow = document.createElement('tr');
                 warningRow.innerHTML = `
                     <td colspan="5" class="limit-warning">
@@ -586,7 +832,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             // Ajouter une explication de calcul pour EV si c'est le meilleur combo
-            if (isBest && strategy === 'ev') {
+            if (isBest && (strategy === 'ev' || strategy === 'midrange')) {
                 const formulaRow = document.createElement('tr');
                 
                 // Créer une explication détaillée de la formule EV
@@ -611,7 +857,16 @@ document.addEventListener('DOMContentLoaded', function() {
                     ? "section-header non-rentable-simple"
                     : "section-header non-available-simple";
                 const headerIcon = combo.available ? "⚠️" : "ℹ️";
-                const strategyBadge = strategy === 'dutch' ? "🎯 DUTCH : " : "💰 OPTIMISATION EV : ";
+                
+                let strategyBadge = "";
+                if (strategy === 'dutch') {
+                    strategyBadge = "🎯 DUTCH : ";
+                } else if (strategy === 'ev') {
+                    strategyBadge = "💰 OPTIMISATION EV : ";
+                } else if (strategy === 'midrange') {
+                    strategyBadge = "⚖️ MID RANGE : ";
+                }
+                
                 const headerMessage = combo.available
                     ? `${headerIcon} ${strategyBadge}Combo avec ${combo.taille} favoris : Aucune solution rentable`
                     : `${headerIcon} ${strategyBadge}Combo avec ${combo.taille} favoris : Pas assez de chevaux`;
@@ -625,18 +880,18 @@ document.addEventListener('DOMContentLoaded', function() {
         const style = document.createElement('style');
         style.textContent = `
             .highlight {
-                color: #22c7b8 !important;
+                color: ${strategy === 'midrange' ? 'var(--midrange-highlight)' : (strategy === 'ev' ? 'var(--ev-highlight)' : 'var(--gold)')} !important;
                 font-weight: bold;
                 font-size: 2.7rem !important;
             }
             .best-combo {
-                background-color: rgba(34, 199, 184, 0.15) !important;
+                background-color: ${strategy === 'midrange' ? 'rgba(214, 120, 211, 0.15)' : (strategy === 'ev' ? 'rgba(34, 199, 184, 0.15)' : 'rgba(233, 209, 140, 0.15)')} !important;
                 font-weight: bold;
             }
             .method-explanation {
-                background-color: rgba(233, 209, 140, 0.15);
+                background-color: ${strategy === 'midrange' ? 'rgba(214, 120, 211, 0.15)' : (strategy === 'ev' ? 'rgba(34, 199, 184, 0.15)' : 'rgba(233, 209, 140, 0.15)')};
                 padding: 10px;
-                border-left: 3px solid var(--gold);
+                border-left: 3px solid ${strategy === 'midrange' ? 'var(--midrange-highlight)' : (strategy === 'ev' ? 'var(--ev-accent)' : 'var(--gold)')};
                 margin-bottom: 15px;
                 font-size: 0.95rem;
             }
