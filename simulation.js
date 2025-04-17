@@ -18,10 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const strategyOptions = document.querySelectorAll('.strategy-option');
     const strategyTypeInput = document.getElementById('strategyType');
     const midrangeParams = document.getElementById('midrangeParams');
-    const lowRangeSlider = document.getElementById('lowRangeSlider');
-    const highRangeSlider = document.getElementById('highRangeSlider');
-    const lowRangeValue = document.getElementById('lowRangeValue');
-    const highRangeValue = document.getElementById('highRangeValue');
+    const excludeLowInput = document.getElementById('excludeLow');
+    const excludeHighInput = document.getElementById('excludeHigh');
+    const comboSizesContainer = document.getElementById('comboSizes');
     
     // Éléments de résultat
     const minGainElement = document.getElementById('minGain');
@@ -34,29 +33,61 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentStrategy = 'dutch'; // 'dutch', 'ev' ou 'midrange'
     
     // Paramètres Mid Range
-    let lowPercent = 0.2;
-    let highPercent = 0.2;
+    let excludeLow = 1;
+    let excludeHigh = 1;
+    let selectedComboSizes = [2, 3, 4, 5]; // Tailles de combinaison sélectionnées par défaut
     
     // Initialiser les contrôles Mid Range s'ils existent
-    if (lowRangeSlider && highRangeSlider) {
-        lowRangeSlider.addEventListener('input', function() {
-            lowPercent = this.value / 100;
-            lowRangeValue.textContent = `${this.value}%`;
+    if (excludeLowInput && excludeHighInput) {
+        excludeLowInput.addEventListener('change', function() {
+            excludeLow = parseInt(this.value) || 0;
             
             // Recalculer si des résultats sont déjà affichés
-            if (resultContainer.style.display === 'block' && strategyTypeInput.value === 'midrange') {
+            if (resultContainer.style.display === 'block' && currentStrategy === 'midrange') {
                 calculateButton.click();
             }
         });
         
-        highRangeSlider.addEventListener('input', function() {
-            highPercent = this.value / 100;
-            highRangeValue.textContent = `${this.value}%`;
+        excludeHighInput.addEventListener('change', function() {
+            excludeHigh = parseInt(this.value) || 0;
             
             // Recalculer si des résultats sont déjà affichés
-            if (resultContainer.style.display === 'block' && strategyTypeInput.value === 'midrange') {
+            if (resultContainer.style.display === 'block' && currentStrategy === 'midrange') {
                 calculateButton.click();
             }
+        });
+    }
+    
+    // Initialiser le sélecteur de tailles de combinaison
+    if (comboSizesContainer) {
+        const comboSizeElements = comboSizesContainer.querySelectorAll('.combo-size');
+        
+        comboSizeElements.forEach(element => {
+            element.addEventListener('click', function() {
+                const size = parseInt(this.dataset.size);
+                
+                // Basculer l'état actif
+                this.classList.toggle('active');
+                
+                // Mettre à jour la liste des tailles sélectionnées
+                if (this.classList.contains('active')) {
+                    if (!selectedComboSizes.includes(size)) {
+                        selectedComboSizes.push(size);
+                    }
+                } else {
+                    selectedComboSizes = selectedComboSizes.filter(s => s !== size);
+                }
+                
+                // Trier les tailles dans l'ordre croissant
+                selectedComboSizes.sort((a, b) => a - b);
+                
+                console.log("Tailles de combinaison sélectionnées:", selectedComboSizes);
+                
+                // Recalculer si des résultats sont déjà affichés
+                if (resultContainer.style.display === 'block' && currentStrategy === 'midrange') {
+                    calculateButton.click();
+                }
+            });
         });
     }
     
@@ -247,6 +278,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 throw new Error('La mise maximale par cheval doit être un nombre positif');
             }
             
+            // Validation des tailles de combinaison pour Mid Range
+            if (currentStrategy === 'midrange' && selectedComboSizes.length === 0) {
+                throw new Error('Vous devez sélectionner au moins une taille de combinaison à tester.');
+            }
+            
             // Récupérer les chevaux et leurs cotes
             const horsesRaw = {};
             const horseEntries = horseEntriesContainer.children;
@@ -265,6 +301,21 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 
                 horsesRaw[`Cheval ${number}`] = odds;
+            }
+            
+            // Vérification pour Mid Range
+            if (currentStrategy === 'midrange') {
+                const totalHorses = Object.keys(horsesRaw).length;
+                if (excludeLow + excludeHigh >= totalHorses) {
+                    throw new Error(`Vous excluez ${excludeLow + excludeHigh} chevaux sur ${totalHorses}. Il doit rester au moins 2 chevaux pour les combinaisons.`);
+                }
+                
+                // Vérifier que la plus grande taille de combinaison ne dépasse pas le nombre de chevaux restants
+                const remainingHorses = totalHorses - excludeLow - excludeHigh;
+                const maxSize = Math.max(...selectedComboSizes);
+                if (maxSize > remainingHorses) {
+                    throw new Error(`La taille de combinaison ${maxSize} est trop grande pour le nombre de chevaux restants (${remainingHorses}).`);
+                }
             }
             
             // Ajouter un message de calcul en cours pour les grandes optimisations
@@ -289,10 +340,10 @@ document.addEventListener('DOMContentLoaded', function() {
                         allCombos = findMidRangeOptimalBets(
                             horsesRaw, 
                             totalBet, 
-                            [2, 3, 4, 5], 
+                            selectedComboSizes, 
                             maxPerHorse,
-                            lowPercent,
-                            highPercent
+                            excludeLow,
+                            excludeHigh
                         );
                     }
                     
@@ -537,22 +588,22 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     /**
-     * Stratégie Mid Range - Filtre les cotes médianes et optimise l'EV
+     * Stratégie Mid Range améliorée - Filtre les cotes extrêmes et teste toutes les combinaisons possibles
      */
-    function findMidRangeOptimalBets(horsesRaw, totalBet, sizes, maxStakePerHorse = 999, lowPercent = 0.2, highPercent = 0.2) {
+    function findMidRangeOptimalBets(horsesRaw, totalBet, sizes, maxStakePerHorse = 999, excludeLow = 1, excludeHigh = 1) {
         // Trier les chevaux par cote croissante
         const sortedEntries = Object.entries(horsesRaw).sort((a, b) => a[1] - b[1]);
         const total = sortedEntries.length;
         
-        // Calculer les indices de filtre
-        const lowCut = Math.floor(total * lowPercent);
-        const highCut = total - Math.floor(total * highPercent);
+        // Calculer les indices de filtre (maintenant avec un nombre fixe)
+        const lowCut = Math.min(excludeLow, total - 2);
+        const highCut = Math.max(0, total - excludeHigh);
         
         // Filtrer les chevaux pour ne garder que la zone médiane
         const midRangeEntries = sortedEntries.slice(lowCut, highCut);
         const midRangeHorses = Object.fromEntries(midRangeEntries);
         
-        console.log(`Mid Range: Gardé ${midRangeEntries.length}/${total} chevaux (coupé ${lowCut} bas, ${total-highCut} haut)`);
+        console.log(`Mid Range: Gardé ${midRangeEntries.length}/${total} chevaux (exclu ${lowCut} bas, ${total-highCut} haut)`);
         
         if (midRangeEntries.length < 2) {
             return sizes.map(size => ({
@@ -562,11 +613,23 @@ document.addEventListener('DOMContentLoaded', function() {
                 gain_moyen: 0,
                 gain_maximum: 0,
                 approche: "Mid Range",
-                filtrage: `Exclu: ${lowPercent*100}% bas + ${highPercent*100}% haut`
+                filtrage: `Exclu: ${excludeLow} favoris + ${excludeHigh} outsiders`
             }));
         }
         
-        // Fonction d'optimisation similaire à EV mais adaptée pour Mid Range
+        // Fonction pour générer toutes les combinaisons possibles de taille donnée
+        function getAllCombos(array, size) {
+            if (size === 1) return array.map(e => [e]);
+            const combos = [];
+            array.forEach((current, index) => {
+                const rest = array.slice(index + 1);
+                const smallerCombos = getAllCombos(rest, size - 1);
+                smallerCombos.forEach(combo => combos.push([current, ...combo]));
+            });
+            return combos;
+        }
+        
+        // Fonction d'optimisation pour une combinaison donnée
         function optimizeMidRange(combo, totalBet, maxStakePerHorse) {
             const odds = combo.map(h => midRangeHorses[h]);
             const horseCount = combo.length;
@@ -638,7 +701,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     rentable: false,
                     available: true,
                     approche: "Mid Range",
-                    filtrage: `Exclu: ${lowPercent*100}% bas + ${highPercent*100}% haut`
+                    filtrage: `Exclu: ${excludeLow} favoris + ${excludeHigh} outsiders`
                 };
             }
             
@@ -659,7 +722,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 rentable: isRentable,
                 available: true,
                 approche: "Mid Range",
-                filtrage: `Exclu: ${lowPercent*100}% bas + ${highPercent*100}% haut`,
+                filtrage: `Exclu: ${excludeLow} favoris + ${excludeHigh} outsiders`,
                 limitesAtteintes: limitesAtteintes
             };
         }
@@ -670,11 +733,47 @@ document.addEventListener('DOMContentLoaded', function() {
         
         for (const size of sizes) {
             if (size <= horseNames.length) {
-                const subset = horseNames.slice(0, size);
-                const result = optimizeMidRange(subset, totalBet, maxStakePerHorse);
-                result.taille = size;
-                allCombos.push(result);
+                // AMÉLIORATION : Générer toutes les combinaisons possibles de taille 'size'
+                const allPossibleCombos = getAllCombos(horseNames, size);
+                
+                // Limiter le nombre de combinaisons à tester pour des performances raisonnables
+                const MAX_COMBOS_TO_TEST = 100;
+                const combosToTest = allPossibleCombos.length > MAX_COMBOS_TO_TEST 
+                    ? allPossibleCombos.slice(0, MAX_COMBOS_TO_TEST) 
+                    : allPossibleCombos;
+                
+                console.log(`Testant ${combosToTest.length}/${allPossibleCombos.length} combinaisons possibles de taille ${size}`);
+                
+                // Tester toutes les combinaisons et trouver la meilleure
+                let bestCombo = null;
+                let bestGainMoyen = -Infinity;
+                
+                for (const combo of combosToTest) {
+                    const result = optimizeMidRange(combo, totalBet, maxStakePerHorse);
+                    
+                    if (result.rentable && result.gain_moyen > bestGainMoyen) {
+                        bestGainMoyen = result.gain_moyen;
+                        bestCombo = result;
+                    }
+                }
+                
+                if (bestCombo) {
+                    bestCombo.taille = size;
+                    allCombos.push(bestCombo);
+                } else {
+                    // Aucune combinaison rentable trouvée pour cette taille
+                    allCombos.push({
+                        taille: size,
+                        available: true,
+                        rentable: false,
+                        gain_moyen: 0,
+                        gain_maximum: 0,
+                        approche: "Mid Range",
+                        filtrage: `Exclu: ${excludeLow} favoris + ${excludeHigh} outsiders`
+                    });
+                }
             } else {
+                // Pas assez de chevaux après filtrage
                 allCombos.push({
                     taille: size,
                     available: false,
@@ -682,7 +781,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     gain_moyen: 0,
                     gain_maximum: 0,
                     approche: "Mid Range",
-                    filtrage: `Exclu: ${lowPercent*100}% bas + ${highPercent*100}% haut`
+                    filtrage: `Exclu: ${excludeLow} favoris + ${excludeHigh} outsiders`
                 });
             }
         }
@@ -738,7 +837,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (strategy === 'ev') {
             explanationText = `<td colspan="5" class="method-explanation">💰 <strong>Mode OPTIMISATION EV</strong> : Cette stratégie trouve la répartition des mises qui maximise votre gain moyen, avec un gain net positif garanti pour chaque cheval.</td>`;
         } else if (strategy === 'midrange') {
-            explanationText = `<td colspan="5" class="method-explanation">⚖️ <strong>Mode MID RANGE</strong> : Cette stratégie se concentre sur les cotes médianes en excluant ${lowPercent*100}% des plus basses et ${highPercent*100}% des plus hautes, puis optimise le gain moyen.</td>`;
+            explanationText = `<td colspan="5" class="method-explanation">⚖️ <strong>Mode MID RANGE</strong> : Cette stratégie trouve les meilleures combinaisons parmi les cotes médianes en excluant ${excludeLow} favoris et ${excludeHigh} outsiders, puis optimise les mises.</td>`;
         }
         
         methodExplanation.innerHTML = explanationText;
@@ -778,7 +877,7 @@ document.addEventListener('DOMContentLoaded', function() {
             } else if (strategy === 'ev') {
                 headerText = `${bestBadge}${strategyBadge}Combo avec ${combo.taille} favoris | Gain net moyen (EV) : +${combo.gain_moyen.toFixed(2)} € | Gain min/max : +${combo.gain_minimum.toFixed(2)} €/+${combo.gain_maximum.toFixed(2)} €`;
             } else if (strategy === 'midrange') {
-                headerText = `${bestBadge}${strategyBadge}Combo avec ${combo.taille} favoris | Gain net moyen : +${combo.gain_moyen.toFixed(2)} € | ${combo.filtrage}`;
+                headerText = `${bestBadge}${strategyBadge}Combo avec ${combo.taille} chevaux | Gain net moyen : +${combo.gain_moyen.toFixed(2)} € | ${combo.filtrage}`;
             }
             
             const title = document.createElement('tr');
@@ -868,8 +967,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
                 
                 const headerMessage = combo.available
-                    ? `${headerIcon} ${strategyBadge}Combo avec ${combo.taille} favoris : Aucune solution rentable`
-                    : `${headerIcon} ${strategyBadge}Combo avec ${combo.taille} favoris : Pas assez de chevaux`;
+                    ? `${headerIcon} ${strategyBadge}Combo avec ${combo.taille} chevaux : Aucune solution rentable`
+                    : `${headerIcon} ${strategyBadge}Combo avec ${combo.taille} chevaux : Pas assez de chevaux`;
                 
                 const title = document.createElement('tr');
                 title.innerHTML = `<td colspan="5" class="${headerClass}">${headerMessage}</td>`;
