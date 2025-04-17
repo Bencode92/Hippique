@@ -1293,8 +1293,8 @@
                 // Utiliser rankWithTies pour générer les rangs avec gestion des égalités
                 const ranks = rankWithTies(sortedData, valueGetter);
                 
-                // Trier les données en fonction du critère sélectionné
-                const compareFunction = (a, b) => {
+                // Forcer un nouveau tri pour s'assurer que l'ordre est appliqué
+                sortedData.sort((a, b) => {
                     const keyA = currentCategory === 'chevaux' ? a.Nom : a.NomPostal;
                     const keyB = currentCategory === 'chevaux' ? b.Nom : b.NomPostal;
                     
@@ -1302,7 +1302,7 @@
                     const rankA = ranks.get(keyA) || 999;
                     const rankB = ranks.get(keyB) || 999;
                     
-                    // Par défaut, tri croissant (le plus petit rang en premier)
+                    // Appliquer la direction de tri
                     let direction = sortDirection === 'desc' ? -1 : 1;
                     
                     // Si les rangs sont différents, trier par rang
@@ -1311,12 +1311,9 @@
                     
                     // En cas d'égalité, tri alphabétique pour stabilité
                     return keyA.localeCompare(keyB);
-                };
+                });
                 
-                // Trier les données
-                sortedData.sort(compareFunction);
-                
-                // Assigner les rangs finaux
+                // Assigner les rangs finaux visibles
                 sortedData.forEach((item, index) => {
                     const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
                     // Utiliser le rang calculé par rankWithTies pour ce type de tri
@@ -1454,19 +1451,26 @@
                             return; // Ne pas trier sur les autres colonnes
                         }
                         
+                        const wasSameSort = currentSort === newSortKey;
+                        
+                        // Toujours mettre à jour le type de tri
+                        currentSort = newSortKey;
+                        
                         // Si on clique sur la même colonne, inverser la direction
-                        if (currentSort === newSortKey) {
+                        if (wasSameSort) {
                             sortDirection = sortDirection === 'desc' ? 'asc' : 'desc';
                         } else {
-                            currentSort = newSortKey;
                             // Pour le tri mixte, utiliser l'ordre croissant par défaut (plus petit score = meilleur)
                             sortDirection = newSortKey === 'mixte' ? 'asc' : 'desc';
                         }
                         
-                        // Mettre à jour l'état visuel des boutons
+                        // Mettre à jour l'état visuel des boutons immédiatement
                         updateSortButtons();
                         
-                        // Trier et afficher les données
+                        // Force à recalculer le tri et rafraîchir l'affichage
+                        showSkeletonLoading(); // Optionnel - donne un feedback visuel
+                        
+                        // Traitement immédiat sans setTimeout
                         filteredData = sortData(filteredData, currentSort);
                         currentPage = 1;
                         displayResults(filteredData, currentPage);
@@ -1524,7 +1528,7 @@
                 if (endPage < totalPages) {
                     paginationHTML += `
                         ${endPage < totalPages - 1 ? '<span class="page-btn" style="cursor: default; background: transparent;">...</span>' : ''}
-                        <button class="page-btn" onclick="changePage(${totalPages})">${totalPages}</button>
+                        <button class="page-btn" onclick="changePage(${totalPages})}">${totalPages}</button>
                     `;
                 }
                 
@@ -1653,29 +1657,27 @@
             sortButtons.forEach(btn => {
                 btn.addEventListener('click', function() {
                     const sortType = this.dataset.sort;
+                    const wasSameSort = currentSort === sortType;
                     
-                    // Si on clique sur le même bouton, on inverse la direction
-                    if (currentSort === sortType) {
+                    // Important: mettre à jour le type de tri avant la logique directionnelle
+                    currentSort = sortType;
+                    
+                    // Gérer la direction du tri
+                    if (wasSameSort) {
+                        // Si même colonne, inverser la direction
                         sortDirection = sortDirection === 'desc' ? 'asc' : 'desc';
                     } else {
-                        currentSort = sortType;
-                        // Pour le classement pondéré, on force l'ordre croissant (meilleur score = plus petit)
+                        // Pour les nouveaux types de tri, définir la direction par défaut
                         sortDirection = sortType === 'mixte' ? 'asc' : 'desc';
                     }
                     
-                    // Mettre à jour l'état visuel des boutons
+                    // Mettre à jour l'état visuel des boutons immédiatement
                     updateSortButtons();
                     
-                    // Afficher le squelette pendant le tri
-                    showSkeletonLoading();
-                    
-                    // Attendre un moment pour l'effet visuel
-                    setTimeout(() => {
-                        // Trier et afficher les données
-                        filteredData = sortData(filteredData, currentSort);
-                        currentPage = 1;
-                        displayResults(filteredData, currentPage);
-                    }, 300);
+                    // Forcer l'affichage immédiat sans timeout
+                    filteredData = sortData(filteredData, currentSort);
+                    currentPage = 1;
+                    displayResults(filteredData, currentPage);
                 });
             });
             
