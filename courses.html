@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Chargement direct des données -->
-    <script src="data.js"></script>
+    <!-- Chargement des données dynamiques -->
+    <script src="courses-loader.js"></script>
     <style>
         :root {
             --dark-teal: #0A2E2A;
@@ -509,140 +509,6 @@
             background-color: rgba(212, 175, 55, 0.2);
         }
         
-        .data-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-            margin-bottom: 2rem;
-            background-color: rgba(22, 62, 60, 0.2);
-            border: 1px solid rgba(233, 209, 140, 0.2);
-            animation: fadeIn 0.5s ease;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        
-        .data-table th {
-            background-color: rgba(5, 25, 25, 0.9);
-            color: var(--gold);
-            padding: 1.2rem 1.5rem;
-            text-align: left;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-        
-        .data-table tr.hippodrome-row {
-            background-color: rgba(22, 62, 60, 0.4);
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .data-table tr.hippodrome-row:hover {
-            background-color: rgba(26, 81, 78, 0.6);
-        }
-        
-        .data-table tr.hippodrome-row.active {
-            background-color: var(--light-teal);
-        }
-        
-        .data-table tr.course-row {
-            background-color: rgba(10, 30, 30, 0.2);
-            display: none;
-        }
-        
-        .data-table tr.course-row.visible {
-            display: table-row;
-        }
-        
-        .data-table tr.course-row:hover {
-            background-color: rgba(26, 81, 78, 0.4);
-        }
-        
-        .data-table td {
-            padding: 1.2rem 1.5rem;
-            border-bottom: 1px solid rgba(233, 209, 140, 0.08);
-            transition: all 0.3s ease;
-        }
-        
-        .data-table td.course-indent {
-            padding-left: 3rem;
-        }
-        
-        .data-table a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 500;
-            position: relative;
-            transition: all 0.2s ease;
-        }
-        
-        .data-table a:after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: var(--accent);
-            transition: width 0.3s ease;
-        }
-        
-        .data-table a:hover:after {
-            width: 100%;
-        }
-        
-        .tabs {
-            display: flex;
-            margin-bottom: 2rem;
-            overflow-x: auto;
-            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
-            border-radius: 8px 8px 0 0;
-            background: rgba(22, 62, 60, 0.2);
-        }
-        
-        .tab {
-            padding: 1.2rem 2.5rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            color: var(--light-gold);
-            text-align: center;
-            white-space: nowrap;
-            font-weight: 500;
-            position: relative;
-        }
-        
-        .tab:hover {
-            background-color: rgba(26, 81, 78, 0.5);
-        }
-        
-        .tab.active {
-            background: linear-gradient(to bottom, var(--light-teal), var(--medium-teal));
-            color: var(--gold);
-            border-bottom: 3px solid var(--gold);
-            font-weight: 600;
-        }
-        
-        .tab.active::after {
-            content: '';
-            position: absolute;
-            bottom: -3px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0;
-            height: 0;
-            border-left: 8px solid transparent;
-            border-right: 8px solid transparent;
-            border-bottom: 8px solid var(--gold);
-        }
-        
         .loading {
             text-align: center;
             padding: 3rem;
@@ -692,145 +558,67 @@
             font-weight: 500;
         }
         
-        .home-link {
-            display: inline-block;
-            text-align: center;
-            margin-top: 2rem;
-            color: var(--accent);
-            text-decoration: none;
-            padding: 0.75rem 1.5rem;
-            background-color: rgba(64, 224, 208, 0.1);
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(64, 224, 208, 0.2);
-        }
-        
-        .home-link:hover {
-            background-color: rgba(64, 224, 208, 0.2);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        .course-details {
-            background-color: rgba(22, 62, 60, 0.5);
-            border: 1px solid rgba(233, 209, 140, 0.2);
-            border-radius: 8px;
-            padding: 1.5rem;
-            margin-top: 2rem;
-            animation: fadeIn 0.5s ease;
-        }
-        
-        .course-details h2 {
-            color: var(--gold);
-            margin-bottom: 1rem;
-            font-size: 1.8rem;
-            font-weight: 600;
-            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
-            padding-bottom: 0.5rem;
-        }
-        
-        .course-info {
-            margin-bottom: 2rem;
-            font-size: 1.1rem;
-        }
-        
-        .course-info p {
-            margin-bottom: 0.5rem;
+        .filter-container {
             display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .course-info i {
-            color: var(--accent);
-            width: 20px;
-            text-align: center;
-        }
-        
-        .participants-title {
-            color: var(--accent);
-            margin: 1.5rem 0 1rem;
-            font-size: 1.3rem;
-            font-weight: 500;
-        }
-        
-        .participants-table {
-            width: 100%;
-        }
-        
-        .participants-table td, 
-        .participants-table th {
-            padding: 1rem;
-        }
-        
-        .participant-number {
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: var(--medium-teal);
-            color: var(--gold);
-            border-radius: 50%;
-            font-weight: 600;
-            margin-right: 0.5rem;
-        }
-        
-        .table-responsive {
-            overflow-x: auto;
-            border-radius: 12px;
+            gap: 1rem;
             margin-bottom: 2rem;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
         }
         
-        footer {
-            margin-top: 4rem;
-            text-align: center;
-            padding: 2rem;
-            background: linear-gradient(to right, var(--dark-teal), var(--medium-teal));
-            border-top: 1px solid rgba(233, 209, 140, 0.1);
+        .filter-btn {
+            background-color: rgba(10, 30, 30, 0.5);
             color: var(--light-gold);
-            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.05);
-        }
-        
-        footer p {
-            margin-bottom: 0.5rem;
-            font-weight: 300;
-        }
-        
-        footer span {
-            color: var(--gold);
-            font-weight: 400;
-        }
-        
-        .action-button {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background-color: rgba(64, 224, 208, 0.1);
-            color: var(--accent);
-            border: 1px solid rgba(64, 224, 208, 0.3);
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
-            transition: all 0.3s ease;
+            border: 1px solid rgba(233, 209, 140, 0.3);
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
             cursor: pointer;
             font-family: 'Montserrat', sans-serif;
             font-size: 0.9rem;
             font-weight: 500;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
         
-        .action-button:hover {
-            background-color: rgba(64, 224, 208, 0.2);
+        .filter-btn.active {
+            background-color: var(--light-teal);
+            color: var(--gold);
+            border-color: var(--gold);
+        }
+        
+        .filter-btn:hover:not(.active) {
+            background-color: rgba(22, 62, 60, 0.8);
+        }
+        
+        .date-selector {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: rgba(10, 30, 30, 0.5);
+            color: var(--gold);
+            border: 1px solid rgba(233, 209, 140, 0.3);
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            width: 100%;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-align: left;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .date-selector:hover {
+            background-color: rgba(22, 62, 60, 0.8);
+            border-color: var(--accent);
+            box-shadow: 0 0 0 2px rgba(64, 224, 208, 0.2);
             transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         
-        .toggle-icon {
-            transition: transform 0.3s ease;
-        }
-        
-        .toggle-icon.open {
-            transform: rotate(90deg);
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         
         @media (max-width: 768px) {
@@ -838,10 +626,13 @@
                 padding: 1rem;
             }
             
-            .data-table {
-                display: block;
-                overflow-x: auto;
-                white-space: nowrap;
+            .filter-container {
+                flex-wrap: wrap;
+            }
+            
+            .filter-btn {
+                flex: 1;
+                min-width: 120px;
             }
             
             .tab {
@@ -857,23 +648,6 @@
             .course-details {
                 padding: 1rem;
             }
-        }
-
-        .date-display {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            background-color: rgba(10, 30, 30, 0.5);
-            color: var(--gold);
-            border: 1px solid rgba(233, 209, 140, 0.3);
-            border-radius: 12px;
-            padding: 1rem 1.5rem;
-            width: 100%;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.1rem;
-            font-weight: 500;
-            text-align: left;
-            margin-bottom: 2rem;
         }
     </style>
 </head>
@@ -907,13 +681,19 @@
             <button class="search-clear" id="search-clear"><i class="fas fa-times"></i></button>
         </div>
         
-        <div class="date-display">
+        <button class="date-selector" id="date-selector">
             <i class="fas fa-calendar-alt"></i>
             <span id="current-date">Aujourd'hui (17/04/2025)</span>
-        </div>
+            <input type="date" id="date-input" style="display: none;">
+        </button>
         
-        <div class="tabs">
-            <div class="tab active">Tous les hippodromes</div>
+        <div class="filter-container">
+            <button class="filter-btn active" data-type="all">
+                <i class="fas fa-globe"></i> Tous les hippodromes
+            </button>
+            <button class="filter-btn" data-type="plat">
+                <i class="fas fa-running"></i> Plat uniquement
+            </button>
         </div>
         
         <div id="results-container">
@@ -991,27 +771,18 @@
             const courseMeta = document.getElementById('course-meta');
             const participantsTable = document.getElementById('participants-tbody');
             const currentDateSpan = document.getElementById('current-date');
+            const dateSelector = document.getElementById('date-selector');
+            const dateInput = document.getElementById('date-input');
+            const filterButtons = document.querySelectorAll('.filter-btn');
             
-            // Formatter la date au format DD/MM/YYYY
-            function formatDateDMY(date) {
-                const day = String(date.getDate()).padStart(2, '0');
-                const month = String(date.getMonth() + 1).padStart(2, '0');
-                const year = date.getFullYear();
-                return `${day}/${month}/${year}`;
-            }
+            // Variable pour stocker les données des courses
+            let courseData = {};
+            let currentDate = new Date();
+            let currentFilter = "all";
             
-            // Vérifier si le variable courseData existe
-            if (typeof courseData === 'undefined') {
-                console.error("La variable courseData n'est pas définie. Assurez-vous que data.js est correctement chargé.");
-                resultsContainer.innerHTML = `
-                    <div class="no-results">
-                        <i class="fas fa-exclamation-triangle"></i>
-                        <h3>Erreur de chargement des données</h3>
-                        <p>Impossible de charger les données des courses.</p>
-                    </div>
-                `;
-                return;
-            }
+            // Mise à jour de la date affichée
+            currentDateSpan.textContent = coursesLoader.getReadableDate(currentDate);
+            lastUpdateEl.textContent = coursesLoader.formatDateDMY(currentDate);
             
             // Afficher l'indicateur de chargement initial
             resultsContainer.innerHTML = `
@@ -1021,10 +792,40 @@
                 </div>
             `;
             
-            // Mettre à jour la date affichée
-            const today = new Date();
-            currentDateSpan.textContent = `Aujourd'hui (${formatDateDMY(today)})`;
-            lastUpdateEl.textContent = formatDateDMY(today);
+            // Charger les courses pour la date actuelle
+            loadCoursesForCurrentDate();
+            
+            // Fonction pour charger les courses pour la date actuelle
+            async function loadCoursesForCurrentDate() {
+                const dateStr = coursesLoader.formatDateYMD(currentDate);
+                console.log(`Chargement des courses pour: ${dateStr}`);
+                
+                try {
+                    // Afficher l'indicateur de chargement
+                    resultsContainer.innerHTML = `
+                        <div class="loading">
+                            <div class="spinner"></div>
+                            <p>Chargement des courses pour ${coursesLoader.formatDateDMY(currentDate)}...</p>
+                        </div>
+                    `;
+                    
+                    // Charger les données
+                    courseData = await coursesLoader.loadCoursesForDate(dateStr);
+                    
+                    // Mettre à jour l'affichage
+                    displayHippodromes();
+                    
+                } catch (error) {
+                    console.error("Erreur lors du chargement des courses:", error);
+                    resultsContainer.innerHTML = `
+                        <div class="no-results">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <h3>Erreur de chargement</h3>
+                            <p>Impossible de charger les données des courses: ${error.message}</p>
+                        </div>
+                    `;
+                }
+            }
             
             // Fonction pour afficher les hippodromes et leurs courses
             function displayHippodromes() {
@@ -1034,14 +835,11 @@
                         <div class="no-results">
                             <i class="fas fa-search"></i>
                             <h3>Aucune course trouvée</h3>
-                            <p>Essayez de modifier votre recherche</p>
+                            <p>Aucune course n'est disponible pour cette date ou ce filtre</p>
                         </div>
                     `;
                     return;
                 }
-                
-                // Afficher les données dans la console pour le débogage
-                console.log("Données des courses:", courseData);
                 
                 // Filtrer les hippodromes par recherche
                 const searchTerm = searchInput.value.trim().toLowerCase();
@@ -1055,10 +853,17 @@
                         continue;
                     }
                     
-                    // Filtrer les courses si un terme de recherche est spécifié
+                    // Filtrer les courses selon le type sélectionné
                     let filteredCourses = courses;
-                    if (searchTerm) {
+                    if (currentFilter === "plat") {
                         filteredCourses = courses.filter(course => 
+                            course.type && course.type.toLowerCase() === "plat"
+                        );
+                    }
+                    
+                    // Filtrer les courses si un terme de recherche est spécifié
+                    if (searchTerm) {
+                        filteredCourses = filteredCourses.filter(course => 
                             (course.nom && course.nom.toLowerCase().includes(searchTerm)) || 
                             hippodrome.toLowerCase().includes(searchTerm) ||
                             (course.participants && Array.isArray(course.participants) && course.participants.some(p => 
@@ -1125,7 +930,7 @@
                         <div class="no-results">
                             <i class="fas fa-search"></i>
                             <h3>Aucun résultat trouvé</h3>
-                            <p>Essayez de modifier votre recherche</p>
+                            <p>Essayez de modifier votre recherche ou de changer de date</p>
                         </div>
                     `;
                 } else {
@@ -1190,7 +995,7 @@
                     </div>
                     <div class="meta-item">
                         <i class="fas fa-calendar"></i>
-                        <strong>Date:</strong> ${formatDateDMY(new Date())}
+                        <strong>Date:</strong> ${coursesLoader.formatDateDMY(currentDate)}
                     </div>
                     <div class="meta-item">
                         <i class="fas fa-users"></i>
@@ -1261,13 +1066,38 @@
                 displayHippodromes();
             });
             
+            // Événement de sélection de date
+            dateSelector.addEventListener('click', function() {
+                dateInput.click();
+            });
+            
+            dateInput.addEventListener('change', function() {
+                if (this.value) {
+                    currentDate = new Date(this.value);
+                    currentDateSpan.textContent = coursesLoader.getReadableDate(currentDate);
+                    loadCoursesForCurrentDate();
+                }
+            });
+            
+            // Événements pour les boutons de filtre
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Retirer la classe active de tous les boutons
+                    filterButtons.forEach(b => b.classList.remove('active'));
+                    
+                    // Ajouter la classe active au bouton cliqué
+                    this.classList.add('active');
+                    
+                    // Mettre à jour le filtre actuel
+                    currentFilter = this.dataset.type;
+                    
+                    // Mettre à jour l'affichage
+                    displayHippodromes();
+                });
+            });
+            
             // Masquer le bouton d'effacement au chargement
             searchClear.style.display = 'none';
-            
-            // Charger les courses avec un petit délai pour afficher le spinner
-            setTimeout(() => {
-                displayHippodromes();
-            }, 500); 
         });
     </script>
 </body>
