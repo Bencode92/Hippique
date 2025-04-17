@@ -757,9 +757,9 @@
                         return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
                     }},
                     { key: 'ScoreMixte', label: 'Score pondéré', class: 'stats', renderer: (value, item) => {
-                        let tooltip = "50% victoires, 30% taux de victoire, 20% taux de place";
+                        let tooltip = "Utilise un système de classement dense (sans saut)\n50% victoires, 30% taux de victoire, 20% taux de place";
                         if (item.TauxVictoire === "100.0" && item.TauxPlace === "0.0") {
-                            tooltip = "70% victoires, 30% taux de victoire (taux de place ignoré)";
+                            tooltip = "Utilise un système de classement dense (sans saut)\n70% victoires, 30% taux de victoire (taux de place ignoré)";
                         }
                         return `<span title="${tooltip}">${value}</span>`;
                     }}
@@ -783,9 +783,9 @@
                         return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
                     }},
                     { key: 'ScoreMixte', label: 'Score pondéré', class: 'stats', renderer: (value, item) => {
-                        let tooltip = "50% victoires, 30% taux de victoire, 20% taux de place";
+                        let tooltip = "Utilise un système de classement dense (sans saut)\n50% victoires, 30% taux de victoire, 20% taux de place";
                         if (item.TauxVictoire === "100.0" && item.TauxPlace === "0.0") {
-                            tooltip = "70% victoires, 30% taux de victoire (taux de place ignoré)";
+                            tooltip = "Utilise un système de classement dense (sans saut)\n70% victoires, 30% taux de victoire (taux de place ignoré)";
                         }
                         return `<span title="${tooltip}">${value}</span>`;
                     }}
@@ -810,9 +810,9 @@
                         return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
                     }},
                     { key: 'ScoreMixte', label: 'Score pondéré', class: 'stats', renderer: (value, item) => {
-                        let tooltip = "50% victoires, 30% taux de victoire, 20% taux de place";
+                        let tooltip = "Utilise un système de classement dense (sans saut)\n50% victoires, 30% taux de victoire, 20% taux de place";
                         if (item.TauxVictoire === "100.0" && item.TauxPlace === "0.0") {
-                            tooltip = "70% victoires, 30% taux de victoire (taux de place ignoré)";
+                            tooltip = "Utilise un système de classement dense (sans saut)\n70% victoires, 30% taux de victoire (taux de place ignoré)";
                         }
                         return `<span title="${tooltip}">${value}</span>`;
                     }}
@@ -837,9 +837,9 @@
                         return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
                     }},
                     { key: 'ScoreMixte', label: 'Score pondéré', class: 'stats', renderer: (value, item) => {
-                        let tooltip = "50% victoires, 30% taux de victoire, 20% taux de place";
+                        let tooltip = "Utilise un système de classement dense (sans saut)\n50% victoires, 30% taux de victoire, 20% taux de place";
                         if (item.TauxVictoire === "100.0" && item.TauxPlace === "0.0") {
-                            tooltip = "70% victoires, 30% taux de victoire (taux de place ignoré)";
+                            tooltip = "Utilise un système de classement dense (sans saut)\n70% victoires, 30% taux de victoire (taux de place ignoré)";
                         }
                         return `<span title="${tooltip}">${value}</span>`;
                     }}
@@ -864,16 +864,16 @@
                         return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
                     }},
                     { key: 'ScoreMixte', label: 'Score pondéré', class: 'stats', renderer: (value, item) => {
-                        let tooltip = "50% victoires, 30% taux de victoire, 20% taux de place";
+                        let tooltip = "Utilise un système de classement dense (sans saut)\n50% victoires, 30% taux de victoire, 20% taux de place";
                         if (item.TauxVictoire === "100.0" && item.TauxPlace === "0.0") {
-                            tooltip = "70% victoires, 30% taux de victoire (taux de place ignoré)";
+                            tooltip = "Utilise un système de classement dense (sans saut)\n70% victoires, 30% taux de victoire (taux de place ignoré)";
                         }
                         return `<span title="${tooltip}">${value}</span>`;
                     }}
                 ]
             };
             
-            // Fonction globale pour la gestion des égalités dans les classements
+            // Fonction pour le classement standard avec sauts de rang - pour l'affichage visuel
             function rankWithTies(items, valueGetter) {
                 // Trier d'abord par la valeur (décroissante)
                 const sorted = [...items].sort((a, b) => {
@@ -889,7 +889,7 @@
                     return diff;
                 });
                 
-                // Assigner les rangs avec gestion des égalités
+                // Assigner les rangs avec gestion des égalités (avec sauts)
                 const ranks = new Map();
                 let currentRank = 1;
                 let currentValue = null;
@@ -902,6 +902,48 @@
                     if (index === 0 || value !== currentValue) {
                         currentRank = index + 1;
                         currentValue = value;
+                    }
+                    
+                    ranks.set(key, currentRank);
+                });
+                
+                return ranks;
+            }
+            
+            // NOUVELLE FONCTION: Classement dense sans sauts - pour le calcul du score pondéré
+            function rankWithTiesDense(items, valueGetter) {
+                // Trier d'abord par la valeur (décroissante)
+                const sorted = [...items].sort((a, b) => {
+                    const valA = valueGetter(a);
+                    const valB = valueGetter(b);
+                    const diff = valB - valA;
+                    // En cas d'égalité, trier par nom pour garantir la stabilité
+                    if (diff === 0) {
+                        const nameA = currentCategory === 'chevaux' ? a.Nom : a.NomPostal;
+                        const nameB = currentCategory === 'chevaux' ? b.Nom : b.NomPostal;
+                        return nameA.localeCompare(nameB);
+                    }
+                    return diff;
+                });
+                
+                // Assigner les rangs sans sauts (classement dense)
+                const ranks = new Map();
+                let currentRank = 1;
+                let currentValue = null;
+                let sameRankCount = 0;
+                
+                sorted.forEach((item, index) => {
+                    const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
+                    const value = valueGetter(item);
+                    
+                    if (index === 0 || value !== currentValue) {
+                        // Nouvelle valeur = nouveau rang, mais sans saut
+                        currentRank = index + 1 - sameRankCount;
+                        currentValue = value;
+                        sameRankCount = 0;
+                    } else {
+                        // Même valeur = même rang
+                        sameRankCount++;
                     }
                     
                     ranks.set(key, currentRank);
@@ -927,10 +969,11 @@
                 const victoryRateGetter = item => parseFloat(item.TauxVictoire || 0);
                 const placeRateGetter = item => parseFloat(item.TauxPlace || 0);
                 
-                // Calcul des rangs pour chaque métrique avec gestion des égalités
-                const victoryRanks = rankWithTies(dataCopy, victoryGetter);
-                const victoryRateRanks = rankWithTies(dataCopy, victoryRateGetter);
-                const placeRateRanks = rankWithTies(dataCopy, placeRateGetter);
+                // Calcul des rangs pour chaque métrique avec gestion des égalités DENSE
+                // Utiliser rankWithTiesDense au lieu de rankWithTies pour une pondération plus équilibrée
+                const victoryRanks = rankWithTiesDense(dataCopy, victoryGetter);
+                const victoryRateRanks = rankWithTiesDense(dataCopy, victoryRateGetter);
+                const placeRateRanks = rankWithTiesDense(dataCopy, placeRateGetter);
                 
                 // Calcul du score pondéré pour chaque participant
                 dataCopy.forEach(item => {
@@ -941,7 +984,7 @@
                         return;
                     }
                     
-                    // Récupérer les rangs avec égalités gérées
+                    // Récupérer les rangs avec égalités DENSES
                     const rangVictoires = victoryRanks.get(key) || 999;
                     const rangTauxVictoire = victoryRateRanks.get(key) || 999;
                     const rangTauxPlace = placeRateRanks.get(key) || 999;
@@ -970,7 +1013,7 @@
                         poidsTP = 0;       // Ignorer le taux de place
                     }
                     
-                    // Calcul du score pondéré
+                    // Calcul du score pondéré avec rangs DENSES
                     item.ScoreMixte = (
                         poidsV * rangVictoires +
                         poidsTV * rangTauxVictoire +
@@ -995,27 +1038,26 @@
                     return nameA.localeCompare(nameB);
                 });
                 
-                // Assigner les rangs avec gestion des égalités pour le score pondéré
-                const scoreMixteRanks = new Map();
-                let currentRank = 1;
-                let currentScore = null;
-                
+                // Assigner les rangs AVEC SAUTS pour l'affichage (pour conserver l'apparence visuelle actuelle)
+                // Mais notez que ceci est uniquement pour l'affichage, les calculs ont été faits avec des rangs denses
                 sortedData.forEach((item, index) => {
                     const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
-                    const score = parseFloat(item.ScoreMixte);
                     
-                    if (index === 0 || score !== currentScore) {
-                        currentRank = index + 1;
-                        currentScore = score;
+                    // Pour la cohérence visuelle, on utilise des rangs avec sauts pour l'affichage
+                    if (index === 0) {
+                        item.Rang = 1;
+                    } else {
+                        const prevItem = sortedData[index - 1];
+                        const prevScore = parseFloat(prevItem.ScoreMixte);
+                        const currentScore = parseFloat(item.ScoreMixte);
+                        
+                        // Même score = même rang
+                        if (Math.abs(currentScore - prevScore) < 0.001) {
+                            item.Rang = prevItem.Rang;
+                        } else {
+                            item.Rang = index + 1;
+                        }
                     }
-                    
-                    scoreMixteRanks.set(key, currentRank);
-                });
-                
-                // Mettre à jour les rangs finaux
-                sortedData.forEach((item) => {
-                    const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
-                    item.Rang = scoreMixteRanks.get(key) || (index + 1);
                 });
                 
                 return sortedData;
