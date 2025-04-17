@@ -220,6 +220,9 @@
             margin-bottom: 1rem;
             font-weight: 400;
             font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
         
         .chart-placeholder {
@@ -322,6 +325,192 @@
             text-decoration: underline;
         }
         
+        /* Styles pour le sélecteur de course */
+        .course-selector {
+            background-color: rgba(10, 30, 30, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .selector-row {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .selector-item {
+            flex: 1;
+        }
+        
+        .selector-item label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--gold);
+            font-weight: 500;
+        }
+        
+        .selector-item select {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background-color: rgba(10, 30, 30, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.3);
+            border-radius: 6px;
+            color: var(--light-gold);
+            font-family: inherit;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .selector-item select:hover, .selector-item select:focus {
+            border-color: var(--accent);
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(34, 199, 184, 0.2);
+        }
+        
+        .date-selector {
+            background-color: rgba(10, 30, 30, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.3);
+            border-radius: 6px;
+            padding: 0.75rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            transition: all 0.3s ease;
+        }
+        
+        .date-selector i {
+            color: var(--gold);
+        }
+        
+        .date-selector:hover {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 2px rgba(34, 199, 184, 0.2);
+        }
+        
+        /* Styles pour les détails de course */
+        .course-details {
+            background-color: rgba(10, 30, 30, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            border: 1px solid rgba(233, 209, 140, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: slideIn 0.5s ease;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .course-details h3 {
+            color: var(--gold);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        .course-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            background-color: rgba(10, 30, 30, 0.3);
+            border-radius: 6px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            justify-content: center;
+        }
+        
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .meta-item i {
+            color: var(--accent);
+        }
+        
+        .theoretical-ranking {
+            margin-top: 1.5rem;
+        }
+        
+        .info-box {
+            background-color: rgba(34, 199, 184, 0.1);
+            border: 1px solid rgba(34, 199, 184, 0.3);
+            border-radius: 6px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+        
+        .info-box i {
+            color: var(--accent);
+        }
+        
+        .participants-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin-top: 1rem;
+        }
+        
+        .participants-table th {
+            background-color: rgba(10, 30, 30, 0.5);
+            color: var(--gold);
+            padding: 0.75rem 1rem;
+            text-align: left;
+            font-weight: 500;
+        }
+        
+        .participants-table td {
+            padding: 0.75rem 1rem;
+            border-top: 1px solid rgba(233, 209, 140, 0.1);
+        }
+        
+        .participants-table tr:nth-child(even) {
+            background-color: rgba(10, 30, 30, 0.2);
+        }
+        
+        .participants-table tr:hover {
+            background-color: rgba(10, 30, 30, 0.4);
+        }
+        
+        .detail-btn {
+            background-color: rgba(34, 199, 184, 0.2);
+            border: none;
+            border-radius: 4px;
+            width: 30px;
+            height: 30px;
+            color: var(--accent);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .detail-btn:hover {
+            background-color: rgba(34, 199, 184, 0.4);
+            transform: scale(1.1);
+        }
+        
+        .participants-table-wrapper {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Styles pour la mise en page responsive */
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
@@ -345,6 +534,11 @@
                 justify-content: center;
                 padding: 0.75rem 0.5rem;
                 font-size: 0.9rem;
+            }
+            
+            .selector-row {
+                flex-direction: column;
+                gap: 1rem;
             }
         }
     </style>
@@ -418,7 +612,7 @@
                             <label for="course-date">Date</label>
                             <div class="date-selector">
                                 <i class="fas fa-calendar-alt"></i>
-                                <span>16/04/2025</span>
+                                <span id="current-date"><!-- Date générée dynamiquement --></span>
                             </div>
                         </div>
                     </div>
@@ -609,7 +803,7 @@
         
         <footer>
             <h1>ANALYSE HIPPIQUE</h1>
-            <p>Système d'analyse pour événements hippiques - Dernière mise à jour: 16/04/2025</p>
+            <p>Système d'analyse pour événements hippiques - Dernière mise à jour: <span id="footer-date">16/04/2025</span></p>
             <p><a href="classement.html" style="color: var(--accent); text-decoration: none;">Classements complets</a> | <a href="simulation.html" style="color: var(--accent); text-decoration: none;">Simulateur de paris</a></p>
         </footer>
     </div>
@@ -621,6 +815,18 @@
     <script>
         // Script pour rendre les éléments interactifs
         document.addEventListener('DOMContentLoaded', function() {
+            // Mise à jour de la date du jour dans le footer
+            const now = new Date();
+            const day = String(now.getDate()).padStart(2, '0');
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const year = now.getFullYear();
+            const today = `${day}/${month}/${year}`;
+            
+            const footerDateElement = document.getElementById('footer-date');
+            if (footerDateElement) {
+                footerDateElement.textContent = today;
+            }
+            
             // Animation pour les cartes statistiques
             document.querySelectorAll('.stat-card').forEach(card => {
                 card.addEventListener('mouseenter', function() {
