@@ -170,6 +170,77 @@
             transform: scale(1.1);
         }
         
+        /* Styles pour le sélecteur de date */
+        .date-selector-container {
+            display: flex;
+            align-items: center;
+            background-color: rgba(10, 30, 30, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.3);
+            border-radius: 12px;
+            padding: 0.8rem 1.2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .date-selector-container:hover {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 2px rgba(64, 224, 208, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        .date-selector-container i {
+            color: var(--gold);
+            font-size: 1.2rem;
+            margin-right: 1rem;
+        }
+        
+        .date-selector {
+            width: 100%;
+            background: transparent;
+            border: none;
+            color: var(--light-gold);
+            font-size: 1.1rem;
+            font-family: 'Montserrat', sans-serif;
+            cursor: pointer;
+            outline: none;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            padding-right: 2rem;
+        }
+        
+        .date-selector-container::after {
+            content: '\f0d7';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            right: 1.2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--gold);
+            pointer-events: none;
+        }
+        
+        .date-selector:focus {
+            outline: none;
+        }
+        
+        .date-selector option {
+            background-color: var(--medium-teal);
+            color: var(--light-gold);
+        }
+        
+        @media (max-width: 768px) {
+            .date-selector-container {
+                padding: 0.7rem 1rem;
+            }
+            
+            .date-selector {
+                font-size: 0.95rem;
+            }
+        }
+        
         .data-table {
             width: 100%;
             border-collapse: separate;
@@ -551,6 +622,13 @@
             <button class="search-clear" id="search-clear"><i class="fas fa-times"></i></button>
         </div>
         
+        <div class="date-selector-container">
+            <i class="fas fa-calendar"></i>
+            <select id="date-selector" class="date-selector">
+                <!-- Les options seront générées dynamiquement par JavaScript -->
+            </select>
+        </div>
+        
         <div class="tabs">
             <div class="tab active">Tous les hippodromes</div>
         </div>
@@ -578,7 +656,7 @@
     
     <footer>
         <p>ANALYSE HIPPIQUE - Système d'analyse pour événements hippiques</p>
-        <p>Dernière mise à jour des données: <span id="last-update">16/04/2025</span></p>
+        <p>Dernière mise à jour des données: <span id="last-update">17/04/2025</span></p>
         <p><a href="simulation.html" style="color: var(--accent); text-decoration: none;">Simulateur de paris optimaux</a></p>
     </footer>
 
@@ -599,20 +677,102 @@
             const isGitHubPages = window.location.hostname.includes('github.io');
             const basePath = isGitHubPages ? '/Hippique' : '';
             
+            // Fonction pour formater une date au format YYYY-MM-DD
+            function formatDateYYYYMMDD(date) {
+                const year = date.getFullYear();
+                const month = String(date.getMonth() + 1).padStart(2, '0');
+                const day = String(date.getDate()).padStart(2, '0');
+                return `${year}-${month}-${day}`;
+            }
+            
+            // Fonction pour formater une date au format local (DD/MM/YYYY)
+            function formatDateLocal(date) {
+                return date.toLocaleDateString('fr-FR');
+            }
+            
+            // Fonction pour obtenir une date lisible (aujourd'hui, demain, etc.)
+            function getReadableDate(date) {
+                const today = new Date();
+                const tomorrow = new Date();
+                tomorrow.setDate(tomorrow.getDate() + 1);
+                
+                // Comparer les dates (ignorer l'heure)
+                const isToday = date.getDate() === today.getDate() && 
+                                 date.getMonth() === today.getMonth() && 
+                                 date.getFullYear() === today.getFullYear();
+                
+                const isTomorrow = date.getDate() === tomorrow.getDate() && 
+                                   date.getMonth() === tomorrow.getMonth() && 
+                                   date.getFullYear() === tomorrow.getFullYear();
+                        
+                if (isToday) {
+                    return `Aujourd'hui (${formatDateLocal(date)})`;
+                } else if (isTomorrow) {
+                    return `Demain (${formatDateLocal(date)})`;
+                } else {
+                    return formatDateLocal(date);
+                }
+            }
+            
             // Fonction pour charger tous les fichiers JSON des courses
             async function loadAllCourses() {
                 try {
-                    // Obtenir la date du jour au format YYYY-MM-DD
+                    // Obtenir les dates pertinentes
                     const today = new Date();
-                    const dateStr = today.toISOString().split('T')[0]; // Format YYYY-MM-DD
+                    const tomorrow = new Date(today);
+                    tomorrow.setDate(tomorrow.getDate() + 1);
                     
-                    // Pour les tests, on utilise une date fixe (à retirer en production)
-                    const testDateStr = "2025-04-16";  // Date fixe pour les tests
-                    const currentDateStr = testDateStr; // Utiliser la date de test
+                    // Formater les dates pour la recherche de fichiers
+                    const todayStr = formatDateYYYYMMDD(today);
+                    const tomorrowStr = formatDateYYYYMMDD(tomorrow);
                     
-                    console.log(`Chargement des courses pour la date: ${currentDateStr}`);
+                    // Créer le sélecteur de date (aujourd'hui et demain)
+                    const dateSelector = document.getElementById('date-selector');
+                    if (dateSelector) {
+                        dateSelector.innerHTML = `
+                            <option value="${todayStr}">${getReadableDate(today)}</option>
+                            <option value="${tomorrowStr}">${getReadableDate(tomorrow)}</option>
+                        `;
+                        
+                        // Écouter les changements de date
+                        dateSelector.addEventListener('change', function() {
+                            const selectedDate = this.value;
+                            loadCoursesForDate(selectedDate);
+                            
+                            // Mettre à jour la date d'affichage
+                            const selectedDateObj = new Date(selectedDate);
+                            lastUpdateEl.textContent = formatDateLocal(selectedDateObj);
+                        });
+                    }
                     
-                    // Lister tous les fichiers JSON dans le dossier /data/courses qui commencent par la date du jour
+                    // Charger les courses pour la date d'aujourd'hui
+                    await loadCoursesForDate(todayStr);
+                    
+                    // Mettre à jour la date d'affichage
+                    lastUpdateEl.textContent = formatDateLocal(today);
+                    
+                } catch (error) {
+                    console.error("Erreur lors du chargement des courses:", error);
+                    showError("Impossible de charger les données des courses.");
+                }
+            }
+            
+            // Fonction pour charger les courses d'une date spécifique
+            async function loadCoursesForDate(dateStr) {
+                try {
+                    // Convertir la date pour l'affichage
+                    const dateObj = new Date(dateStr);
+                    const formattedDisplayDate = formatDateLocal(dateObj);
+                    
+                    // Afficher le chargement
+                    resultsContainer.innerHTML = `
+                        <div class="loading">
+                            <div class="spinner"></div>
+                            <p>Chargement des courses du ${formattedDisplayDate}...</p>
+                        </div>
+                    `;
+                    
+                    // Lister tous les fichiers JSON dans le dossier /data/courses qui commencent par la date demandée
                     const courseFiles = [];
                     
                     // Essayer d'obtenir la liste des fichiers disponibles
@@ -620,29 +780,43 @@
                         const listResponse = await fetch(`${basePath}/data/courses/index.txt`).catch(() => null);
                         
                         if (listResponse && listResponse.ok) {
-                            // Si on a un index des fichiers, l'utiliser
+                            // Si un index des fichiers est disponible, l'utiliser
                             const fileList = await listResponse.text();
                             const allFiles = fileList.split('\n').filter(f => f.trim() !== '');
                             
                             // Filtrer les fichiers qui commencent par la date recherchée
-                            const todayFiles = allFiles.filter(file => file.startsWith(currentDateStr));
-                            todayFiles.forEach(file => courseFiles.push(file));
+                            const dateFiles = allFiles.filter(file => file.startsWith(dateStr));
+                            dateFiles.forEach(file => courseFiles.push(file));
                         } else {
-                            // Si pas d'index, on utilise une liste prédéfinie
-                            const possibleFiles = [
-                                `${currentDateStr}_happy_valley.json`,
-                                `${currentDateStr}_lyon_parilly.json`,
-                                `${currentDateStr}_newmarket.json`,
-                                `${currentDateStr}_plus.json`,
-                                `${currentDateStr}_reunion_ew1mwlu3.json`,
-                                `${currentDateStr}_reunion_lzlhrwdj.json`,
-                                `${currentDateStr}_reunion_nmo0chn5.json`,
-                                `${currentDateStr}_reunion_v0xot0zq.json`,
-                                `${currentDateStr}_reunion_vjnqtc9l.json`,
-                                `${currentDateStr}_reunion_ykfyqtdz.json`,
-                                `${currentDateStr}_san_isidro.json`,
-                                `${currentDateStr}_valparaiso.json`
+                            // Si pas d'index, tester une liste de noms possibles
+                            const possibleHippodromes = [
+                                'arg.palermo',
+                                'salon_provence',
+                                'san_sebastian',
+                                'happy_valley',
+                                'lyon_parilly',
+                                'newmarket',
+                                'parislongchamp',
+                                'prunelli',
+                                'saint-cloud',
+                                'san_isidro',
+                                'santiago',
+                                'sha_tin',
+                                'strasbourg',
+                                'tarbes',
+                                'toulouse',
+                                'valparaiso',
+                                'plus',
+                                'reunion_ew1mwlu3',
+                                'reunion_lzlhrwdj',
+                                'reunion_nmo0chn5',
+                                'reunion_v0xot0zq',
+                                'reunion_vjnqtc9l',
+                                'reunion_ykfyqtdz'
                             ];
+                            
+                            // Créer les noms de fichiers possibles
+                            const possibleFiles = possibleHippodromes.map(hippodrome => `${dateStr}_${hippodrome}.json`);
                             
                             // Vérifier chaque fichier
                             for (const file of possibleFiles) {
@@ -660,29 +834,14 @@
                         }
                     } catch (e) {
                         console.warn("Erreur lors de l'obtention de la liste des fichiers:", e);
-                        // Utiliser une liste prédéfinie en cas d'erreur
-                        const defaultFiles = [
-                            `${currentDateStr}_happy_valley.json`,
-                            `${currentDateStr}_lyon_parilly.json`,
-                            `${currentDateStr}_newmarket.json`,
-                            `${currentDateStr}_plus.json`,
-                            `${currentDateStr}_reunion_ew1mwlu3.json`,
-                            `${currentDateStr}_reunion_lzlhrwdj.json`,
-                            `${currentDateStr}_reunion_nmo0chn5.json`,
-                            `${currentDateStr}_reunion_v0xot0zq.json`,
-                            `${currentDateStr}_reunion_vjnqtc9l.json`,
-                            `${currentDateStr}_reunion_ykfyqtdz.json`,
-                            `${currentDateStr}_san_isidro.json`,
-                            `${currentDateStr}_valparaiso.json`
-                        ];
-                        defaultFiles.forEach(file => courseFiles.push(file));
+                        // En cas d'erreur, on ne peut pas déterminer les fichiers disponibles
                     }
                     
-                    console.log(`Fichiers trouvés pour ${currentDateStr}:`, courseFiles);
+                    console.log(`Fichiers trouvés pour ${dateStr}:`, courseFiles);
                     
                     if (courseFiles.length === 0) {
-                        console.warn("Aucun fichier trouvé pour la date:", currentDateStr);
-                        showError(`Aucune course disponible pour le ${currentDateStr.split('-').reverse().join('/')}`);
+                        console.warn("Aucun fichier trouvé pour la date:", dateStr);
+                        showError(`Aucune course disponible pour le ${formattedDisplayDate}`);
                         return;
                     }
                     
@@ -719,17 +878,17 @@
                             
                             // Extraire l'hippodrome et la date
                             const hippodrome = data.hippodrome || "Inconnu";
-                            const dateStr = data.date_extraction || "";
+                            const extractionDate = data.date_extraction || "";
                             
                             // Formater la date
-                            let formattedDate = dateStr;
-                            try {
-                                if (dateStr) {
-                                    const date = new Date(dateStr);
-                                    formattedDate = date.toLocaleDateString('fr-FR');
+                            let formattedDate = formattedDisplayDate; // Utiliser la date du fichier par défaut
+                            if (extractionDate) {
+                                try {
+                                    const date = new Date(extractionDate);
+                                    formattedDate = formatDateLocal(date);
+                                } catch (e) {
+                                    console.error("Erreur de formatage de date:", e);
                                 }
-                            } catch (e) {
-                                console.error("Erreur de formatage de date:", e);
                             }
                             
                             // Pour chaque course dans ce fichier
@@ -784,18 +943,11 @@
                     // Afficher les hippodromes
                     displayHippodromes();
                     
-                    // Mettre à jour la date si disponible
-                    if (allCourses.length > 0 && allCourses[0].date) {
-                        lastUpdateEl.textContent = allCourses[0].date;
-                    } else {
-                        // Afficher la date du jour si pas de date dans les courses
-                        const todayFormatted = today.toLocaleDateString('fr-FR');
-                        lastUpdateEl.textContent = todayFormatted;
-                    }
-                    
                 } catch (error) {
-                    console.error("Erreur lors du chargement des courses:", error);
-                    showError("Impossible de charger les données des courses.");
+                    console.error(`Erreur lors du chargement des courses pour ${dateStr}:`, error);
+                    const dateObj = new Date(dateStr);
+                    const formattedDisplayDate = formatDateLocal(dateObj);
+                    showError(`Impossible de charger les données des courses pour le ${formattedDisplayDate}.`);
                 }
             }
             
