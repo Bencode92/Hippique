@@ -696,6 +696,7 @@
             let sortDirection = 'desc';   // asc, desc
             const itemsPerPage = 20;
             let allData = {};
+            let originalScores = {};  // Stockage pour les scores pondérés originaux
             let filteredData = [];
             
             // Éléments DOM
@@ -887,6 +888,15 @@
                         0.3 * rangTauxVictoire +
                         0.2 * rangTauxPlace
                     ).toFixed(2);
+
+                    // Stocker le score dans notre dictionnaire de scores originaux
+                    const key = item[itemKey];
+                    if (key) {
+                        if (!originalScores[currentCategory]) {
+                            originalScores[currentCategory] = {};
+                        }
+                        originalScores[currentCategory][key] = item.ScoreMixte;
+                    }
                 });
                 
                 // Retourner les données triées par score croissant (meilleur en haut)
@@ -1213,27 +1223,27 @@
                     Rang: index + 1
                 }));
                 
-                // Mise à jour des scores pondérés si pas déjà calculés par le tri mixte
-                if (sortKey !== 'mixte') {
-                    const withScores = calculateCompositeRanking(result);
+                // Appliquer les scores originaux pondérés aux données
+                result.forEach(item => {
+                    // Identifier l'item par son nom
+                    const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
                     
-                    // On copie juste les scores pondérés sans changer l'ordre des données
-                    const scoreMap = new Map();
-                    withScores.forEach(item => {
-                        const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
-                        if (key) {
-                            scoreMap.set(key, item.ScoreMixte);
-                        }
-                    });
-                    
-                    // Appliquer les scores aux données triées
-                    result.forEach(item => {
-                        const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
-                        if (key && scoreMap.has(key)) {
-                            item.ScoreMixte = scoreMap.get(key);
-                        }
-                    });
-                }
+                    // Si on a un score original pour cet item, l'utiliser
+                    if (key && originalScores[currentCategory] && originalScores[currentCategory][key]) {
+                        item.ScoreMixte = originalScores[currentCategory][key];
+                    } 
+                    // Sinon, si c'est la première fois qu'on voit cet item et que le tri n'est pas mixte
+                    else if (sortKey !== 'mixte') {
+                        // Calculer le score pour cet item isolément si on n'a pas encore de scores
+                        const withScores = calculateCompositeRanking([...allData[currentCategory]]);
+                        result.forEach(item => {
+                            const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
+                            if (key && originalScores[currentCategory] && originalScores[currentCategory][key]) {
+                                item.ScoreMixte = originalScores[currentCategory][key];
+                            }
+                        });
+                    }
+                });
                 
                 return result;
             }
@@ -1455,6 +1465,7 @@
                 
                 searchTerm = searchTerm.toLowerCase();
                 
+                // Filtrer les données sans recalculer les scores pondérés
                 return data.filter(item => {
                     // Pour les chevaux, chercher dans Nom
                     if (currentCategory === 'chevaux') {
@@ -1491,13 +1502,15 @@
                 // Charger les données
                 const data = await loadData(category);
                 
+                // Calculer les scores pondérés pour toutes les données une seule fois
+                const processedData = calculateCompositeRanking(data);
+
+                // Appliquer le tri par défaut aux données
+                const sortedData = sortData(processedData, currentSort);
+                
                 // Filtrer les données si nécessaire
                 const searchTerm = searchInput.value.trim();
-                
-                // IMPORTANT : Toujours calculer les scores pondérés même si on utilise le tri par défaut
-                const processedData = sortData(data, currentSort);
-                
-                filteredData = filterData(processedData, searchTerm);
+                filteredData = filterData(sortedData, searchTerm);
                 
                 // Afficher les résultats
                 displayResults(filteredData, currentPage);
@@ -1581,10 +1594,10 @@
                         showSkeletonLoading();
                     }
                     
-                    // Filtrer les données
+                    // Filtrer les données SANS recalculer les scores
                     filteredData = filterData(allData[currentCategory] || [], searchTerm);
                     
-                    // Trier les données filtrées
+                    // Appliquer le tri courant tout en préservant les scores originaux
                     filteredData = sortData(filteredData, currentSort);
                     
                     currentPage = 1;
@@ -1603,7 +1616,7 @@
                     // Réinitialiser le filtre
                     filteredData = [...allData[currentCategory]] || [];
                     
-                    // Trier les données
+                    // Trier les données tout en préservant les scores originaux
                     filteredData = sortData(filteredData, currentSort);
                     
                     currentPage = 1;
