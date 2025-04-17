@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Ajouter ces scripts avant la balise de fermeture </head> -->
-    <script src="data-loader.js"></script>
+    <!-- Chargement des scripts nécessaires -->
+    <script src="data.js"></script>
     <style>
         :root {
             --dark-teal: #0A2E2A;
@@ -1082,17 +1082,7 @@
             
             // Variable pour stocker les données des courses
             let coursesData = {};
-            
-            // Date actuelle (initialement aujourd'hui)
-            let currentDate = new Date();
-            
-            // Formatter la date au format YYYY-MM-DD
-            function formatDateYMD(date) {
-                const year = date.getFullYear();
-                const month = String(date.getMonth() + 1).padStart(2, '0');
-                const day = String(date.getDate()).padStart(2, '0');
-                return `${year}-${month}-${day}`;
-            }
+            let isToday = true; // Par défaut, nous sommes sur "aujourd'hui"
             
             // Formatter la date au format DD/MM/YYYY
             function formatDateDMY(date) {
@@ -1100,30 +1090,6 @@
                 const month = String(date.getMonth() + 1).padStart(2, '0');
                 const year = date.getFullYear();
                 return `${day}/${month}/${year}`;
-            }
-            
-            // Obtenir une date lisible (aujourd'hui, demain, etc.)
-            function getReadableDate(date) {
-                const today = new Date();
-                const tomorrow = new Date();
-                tomorrow.setDate(tomorrow.getDate() + 1);
-                
-                // Comparer les dates (ignorer l'heure)
-                const isToday = date.getDate() === today.getDate() && 
-                                 date.getMonth() === today.getMonth() && 
-                                 date.getFullYear() === today.getFullYear();
-                
-                const isTomorrow = date.getDate() === tomorrow.getDate() && 
-                                   date.getMonth() === tomorrow.getMonth() && 
-                                   date.getFullYear() === tomorrow.getFullYear();
-                        
-                if (isToday) {
-                    return `Aujourd'hui (${formatDateDMY(date)})`;
-                } else if (isTomorrow) {
-                    return `Demain (${formatDateDMY(date)})`;
-                } else {
-                    return formatDateDMY(date);
-                }
             }
             
             // Fonction pour charger les courses
@@ -1136,36 +1102,68 @@
                     </div>
                 `;
                 
-                // Mettre à jour l'affichage de la date
-                currentDateSpan.textContent = getReadableDate(currentDate);
-                
-                // Formater la date pour le chargement des données
-                const dateStr = formatDateYMD(currentDate);
-                
-                // Utiliser la fonction de data-loader.js pour charger les données
-                window.hippique.loadAndDisplayRaces(dateStr, 
-                    // Callback de succès
-                    function(data) {
-                        coursesData = data;
+                // Simuler un chargement avec un délai court
+                setTimeout(() => {
+                    // Si nous sommes sur "aujourd'hui", utiliser les données disponibles
+                    if (isToday) {
+                        // Utiliser directement les données de courseData depuis data.js
+                        coursesData = courseData; // courseData est défini dans data.js
                         displayHippodromes();
-                    },
-                    // Callback d'erreur
-                    function(error) {
-                        resultsContainer.innerHTML = `
-                            <div class="no-results">
-                                <i class="fas fa-exclamation-circle"></i>
-                                <h3>Erreur de chargement</h3>
-                                <p>${error}</p>
-                            </div>
-                        `;
+                        
+                        // Mettre à jour la date affichée
+                        const today = new Date();
+                        currentDateSpan.textContent = `Aujourd'hui (${formatDateDMY(today)})`;
                     }
-                );
+                    else {
+                        // Si nous sommes sur "demain", simuler une autre date
+                        const tomorrow = new Date();
+                        tomorrow.setDate(tomorrow.getDate() + 1);
+                        
+                        // Pour l'exemple, nous allons utiliser un autre jeu de données prédéfini
+                        // Dans une version réelle, vous chargeriez les données depuis un autre fichier
+                        coursesData = {
+                            "PARISLONGCHAMP": [
+                                {
+                                    nom: "GRAND PRIX DE PARIS",
+                                    horaire: "13h15",
+                                    numero: "1",
+                                    type: "Plat",
+                                    participants: [
+                                        { n: "1", cheval: "ROYAL DESTINY", jockey: "STEPHANE PASQUIER", entraineur: "C. LAFFON-PARIAS", proprietaire: "WERTHEIMER & FRERE", eleveurs: "WERTHEIMER ET FRERE", poids: "58 kg", performances: "2p1p" },
+                                        { n: "2", cheval: "DIAMOND LIGHT", jockey: "PIERRE-CHARLES BOUDOT", entraineur: "A. FABRE (S)", proprietaire: "GODOLPHIN SNC", eleveurs: "DARLEY", poids: "58 kg", performances: "1p2p" },
+                                        { n: "3", cheval: "ASTRAL KING", jockey: "MAXIME GUYON", entraineur: "F. HEAD (S)", proprietaire: "ECURIE SKYMARC FARM", eleveurs: "ECURIE SKYMARC FARM", poids: "58 kg", performances: "3p1p4p" }
+                                    ]
+                                }
+                            ],
+                            "CHANTILLY": [
+                                {
+                                    nom: "PRIX DU JOCKEY CLUB",
+                                    horaire: "14h20",
+                                    numero: "1",
+                                    type: "Plat",
+                                    participants: [
+                                        { n: "1", cheval: "GOLDEN RULER", jockey: "CHRISTOPHE SOUMILLON", entraineur: "A. FABRE (S)", proprietaire: "GODOLPHIN SNC", eleveurs: "DARLEY", poids: "58 kg", performances: "1p1p2p" },
+                                        { n: "2", cheval: "SILVER PRINCE", jockey: "IORITZ MENDIZABAL", entraineur: "JC. ROUGET (S)", proprietaire: "AL SHAQAB RACING", eleveurs: "AL SHAQAB RACING", poids: "58 kg", performances: "2p1p3p" }
+                                    ]
+                                }
+                            ]
+                        };
+                        
+                        displayHippodromes();
+                        
+                        // Mettre à jour la date affichée
+                        currentDateSpan.textContent = `Demain (${formatDateDMY(tomorrow)})`;
+                    }
+                    
+                    // Mettre à jour la date dans le footer
+                    lastUpdateEl.textContent = formatDateDMY(new Date());
+                }, 800); // Petit délai pour simuler le chargement
             }
             
             // Fonction pour afficher les hippodromes et leurs courses
             function displayHippodromes() {
                 // Si aucune donnée n'est disponible
-                if (Object.keys(coursesData).length === 0) {
+                if (!coursesData || Object.keys(coursesData).length === 0) {
                     resultsContainer.innerHTML = `
                         <div class="no-results">
                             <i class="fas fa-search"></i>
@@ -1182,18 +1180,21 @@
                 
                 // Parcourir les hippodromes
                 for (const [hippodrome, courses] of Object.entries(coursesData)) {
+                    // Vérifier que courses est un array
+                    if (!Array.isArray(courses)) continue;
+                    
                     // Filtrer les courses si un terme de recherche est spécifié
                     let filteredCourses = courses;
                     if (searchTerm) {
                         filteredCourses = courses.filter(course => 
                             course.nom.toLowerCase().includes(searchTerm) || 
                             hippodrome.toLowerCase().includes(searchTerm) ||
-                            course.participants.some(p => 
-                                p.cheval.toLowerCase().includes(searchTerm) ||
-                                p.jockey.toLowerCase().includes(searchTerm) ||
-                                p.entraineur.toLowerCase().includes(searchTerm) ||
-                                p.proprietaire.toLowerCase().includes(searchTerm)
-                            )
+                            (course.participants && course.participants.some(p => 
+                                p.cheval && p.cheval.toLowerCase().includes(searchTerm) ||
+                                p.jockey && p.jockey.toLowerCase().includes(searchTerm) ||
+                                p.entraineur && p.entraineur.toLowerCase().includes(searchTerm) ||
+                                p.proprietaire && p.proprietaire.toLowerCase().includes(searchTerm)
+                            ))
                         );
                     }
                     
@@ -1224,7 +1225,7 @@
                                 </div>
                                 <div class="course-info">
                                     <div class="participants-count">
-                                        ${course.participants.length} participant${course.participants.length > 1 ? 's' : ''}
+                                        ${course.participants ? course.participants.length : 0} participant${(course.participants && course.participants.length > 1) ? 's' : ''}
                                     </div>
                                     <button class="detail-btn" data-hippodrome="${hippodrome}" data-course="${course.nom}">
                                         <i class="fas fa-info-circle"></i> Détails
@@ -1271,6 +1272,15 @@
                             showCourseDetails(hippodrome, courseName);
                         });
                     });
+                    
+                    // Ouvrir le premier hippodrome automatiquement
+                    const firstHippodromeHeader = document.querySelector('.hippodrome-header');
+                    if (firstHippodromeHeader) {
+                        const targetId = firstHippodromeHeader.dataset.target;
+                        const coursesList = document.getElementById(targetId);
+                        coursesList.classList.add('visible');
+                        firstHippodromeHeader.querySelector('.toggle-icon').classList.add('open');
+                    }
                 }
             }
             
@@ -1293,11 +1303,11 @@
                     </div>
                     <div class="meta-item">
                         <i class="fas fa-calendar"></i>
-                        <strong>Date:</strong> ${formatDateDMY(currentDate)}
+                        <strong>Date:</strong> ${formatDateDMY(new Date())}
                     </div>
                     <div class="meta-item">
                         <i class="fas fa-users"></i>
-                        <strong>Participants:</strong> ${course.participants.length}
+                        <strong>Participants:</strong> ${course.participants ? course.participants.length : 0}
                     </div>
                     <div class="meta-item">
                         <i class="fas fa-info-circle"></i>
@@ -1307,20 +1317,30 @@
                 
                 // Mettre à jour le tableau des participants
                 let participantsHtml = '';
-                course.participants.forEach(participant => {
-                    participantsHtml += `
+                
+                if (course.participants && course.participants.length > 0) {
+                    course.participants.forEach(participant => {
+                        participantsHtml += `
+                            <tr>
+                                <td><div class="horse-number">${participant.n || ""}</div></td>
+                                <td>${participant.cheval || ""}</td>
+                                <td>${participant.jockey || ""}</td>
+                                <td>${participant.entraineur || ""}</td>
+                                <td>${participant.proprietaire || ""}</td>
+                                <td>${participant.eleveurs || ""}</td>
+                                <td>${participant.poids || ""}</td>
+                                <td>${participant.performances || "-"}</td>
+                            </tr>
+                        `;
+                    });
+                } else {
+                    participantsHtml = `
                         <tr>
-                            <td><div class="horse-number">${participant.n}</div></td>
-                            <td>${participant.cheval}</td>
-                            <td>${participant.jockey}</td>
-                            <td>${participant.entraineur}</td>
-                            <td>${participant.proprietaire}</td>
-                            <td>${participant.eleveurs}</td>
-                            <td>${participant.poids}</td>
-                            <td>${participant.performances || "-"}</td>
+                            <td colspan="8" style="text-align: center;">Aucun participant disponible</td>
                         </tr>
                     `;
-                });
+                }
+                
                 participantsTable.innerHTML = participantsHtml;
                 
                 // Afficher la fenêtre modale
@@ -1357,18 +1377,7 @@
             // Bouton de changement de date
             dateButton.addEventListener('click', function() {
                 // Basculer entre aujourd'hui et demain
-                const today = new Date();
-                const tomorrow = new Date(today);
-                tomorrow.setDate(tomorrow.getDate() + 1);
-                
-                // Si on est sur aujourd'hui, on passe à demain, sinon on revient à aujourd'hui
-                if (currentDate.getDate() === today.getDate() && 
-                    currentDate.getMonth() === today.getMonth() && 
-                    currentDate.getFullYear() === today.getFullYear()) {
-                    currentDate = new Date(tomorrow);
-                } else {
-                    currentDate = new Date(today);
-                }
+                isToday = !isToday;
                 
                 // Charger les courses pour la nouvelle date
                 loadCoursesData();
@@ -1376,9 +1385,6 @@
             
             // Masquer le bouton d'effacement au chargement
             searchClear.style.display = 'none';
-            
-            // Mettre à jour la date dans le footer
-            lastUpdateEl.textContent = formatDateDMY(new Date());
             
             // Charger les courses au chargement initial
             loadCoursesData();
