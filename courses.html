@@ -895,7 +895,7 @@
                                 (p.cheval && p.cheval.toLowerCase().includes(searchTerm)) ||
                                 (p.jockey && p.jockey.toLowerCase().includes(searchTerm)) ||
                                 (p.entraineur && p.entraineur.toLowerCase().includes(searchTerm)) ||
-                                (p.proprietaire && p.proprietaire.toLowerCase().includes(searchTerm))
+                                (getPropertyValue(p, ["proprietaire", "propriétaire"]) && getPropertyValue(p, ["proprietaire", "propriétaire"]).toLowerCase().includes(searchTerm))
                             ))
                         );
                     }
@@ -995,6 +995,16 @@
                 }
             }
             
+            // Fonction utilitaire pour obtenir la valeur d'une propriété avec plusieurs noms possibles
+            function getPropertyValue(obj, propertyNames) {
+                for (const name of propertyNames) {
+                    if (obj[name] !== undefined) {
+                        return obj[name];
+                    }
+                }
+                return null;
+            }
+            
             // Fonction pour afficher les détails d'une course dans la fenêtre modale
             function showCourseDetails(hippodrome, courseName) {
                 // Trouver la course correspondante
@@ -1036,39 +1046,61 @@
                 let participantsHtml = '';
                 
                 if (course.participants && Array.isArray(course.participants) && course.participants.length > 0) {
+                    // Pour le débogage - afficher la structure du premier participant
+                    console.log("Structure du premier participant:", course.participants[0]);
+                    
                     course.participants.forEach(participant => {
                         // Formatage des données amélioré pour une meilleure lisibilité
                         
                         // Information sur le cheval et sa corde
+                        const cordeValue = getPropertyValue(participant, ["corde", "corde_value", "corde_number"]);
+                        
                         const chevalElement = `
                             <div class="horse-info">
                                 <div class="horse-name">${participant.cheval || ""}</div>
-                                ${participant.corde ? `<div class="corde">${participant.corde}</div>` : ''}
+                                ${cordeValue ? `<div class="corde">${cordeValue}</div>` : ''}
                             </div>
                         `;
                         
+                        // Récupérer les valeurs de propriétaire avec différentes orthographes possibles
+                        const proprioValue = getPropertyValue(participant, [
+                            "proprietaire", "propriétaire", 
+                            "proprio", "owner", "owner_name"
+                        ]);
+                        
                         // Informations sur le propriétaire
-                        const proprietaireElement = participant.proprietaire ? 
+                        const proprietaireElement = proprioValue ? 
                             `<div class="pro-ele-info">
-                                <div class="pro-ele-name">${participant.proprietaire}</div>
+                                <div class="pro-ele-name">${proprioValue}</div>
                              </div>` : 
                             "-";
                         
+                        // Récupérer les valeurs d'éleveurs avec différentes orthographes possibles
+                        const eleveurValue = getPropertyValue(participant, [
+                            "eleveurs", "éleveurs", 
+                            "eleveur", "éleveur", 
+                            "breeder", "breeder_name"
+                        ]);
+                        
                         // Informations sur l'éleveur
-                        const eleveurElement = participant.eleveurs ? 
+                        const eleveurElement = eleveurValue ? 
                             `<div class="pro-ele-info">
-                                <div class="pro-ele-name">${participant.eleveurs}</div>
+                                <div class="pro-ele-name">${eleveurValue}</div>
                              </div>` : 
                             "-";
                         
                         // Performances
-                        const performancesElement = participant.performances ? 
-                            `<span class="performances">${participant.performances}</span>` : 
+                        const performancesValue = getPropertyValue(participant, [
+                            "performances", "perf", "form"
+                        ]);
+                        
+                        const performancesElement = performancesValue ? 
+                            `<span class="performances">${performancesValue}</span>` : 
                             "-";
                         
                         participantsHtml += `
                             <tr>
-                                <td><div class="horse-number">${participant.n || ""}</div></td>
+                                <td><div class="horse-number">${participant.n || participant["n°"] || participant.num || ""}</div></td>
                                 <td>${chevalElement}</td>
                                 <td>${participant.jockey || ""}</td>
                                 <td>${participant.entraineur || ""}</td>
