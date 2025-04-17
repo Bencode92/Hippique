@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- Chargement des scripts nécessaires -->
+    <!-- Chargement direct des données -->
     <script src="data.js"></script>
     <style>
         :root {
@@ -170,77 +170,6 @@
         .search-clear:hover {
             opacity: 1;
             transform: scale(1.1);
-        }
-        
-        /* Styles pour le sélecteur de date */
-        .date-selector-container {
-            display: flex;
-            align-items: center;
-            background-color: rgba(10, 30, 30, 0.5);
-            border: 1px solid rgba(233, 209, 140, 0.3);
-            border-radius: 12px;
-            padding: 0.8rem 1.2rem;
-            margin-bottom: 2rem;
-            position: relative;
-            transition: all 0.3s ease;
-        }
-        
-        .date-selector-container:hover {
-            border-color: var(--accent);
-            box-shadow: 0 0 0 2px rgba(64, 224, 208, 0.2);
-            transform: translateY(-2px);
-        }
-        
-        .date-selector-container i {
-            color: var(--gold);
-            font-size: 1.2rem;
-            margin-right: 1rem;
-        }
-        
-        .date-selector {
-            width: 100%;
-            background: transparent;
-            border: none;
-            color: var(--light-gold);
-            font-size: 1.1rem;
-            font-family: 'Montserrat', sans-serif;
-            cursor: pointer;
-            outline: none;
-            appearance: none;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            padding-right: 2rem;
-        }
-        
-        .date-selector-container::after {
-            content: '\f0d7';
-            font-family: 'Font Awesome 5 Free';
-            font-weight: 900;
-            position: absolute;
-            right: 1.2rem;
-            top: 50%;
-            transform: translateY(-50%);
-            color: var(--gold);
-            pointer-events: none;
-        }
-        
-        .date-selector:focus {
-            outline: none;
-        }
-        
-        .date-selector option {
-            background-color: var(--medium-teal);
-            color: var(--light-gold);
-        }
-        
-        @media (max-width: 768px) {
-            .date-selector-container {
-                padding: 0.7rem 1rem;
-            }
-            
-            .date-selector {
-                font-size: 0.95rem;
-            }
         }
         
         /* Styles pour le nouvel affichage des courses */
@@ -930,7 +859,7 @@
             }
         }
 
-        .date-button {
+        .date-display {
             display: flex;
             align-items: center;
             gap: 0.5rem;
@@ -940,27 +869,11 @@
             border-radius: 12px;
             padding: 1rem 1.5rem;
             width: 100%;
-            cursor: pointer;
-            transition: all 0.3s ease;
             font-family: 'Montserrat', sans-serif;
             font-size: 1.1rem;
             font-weight: 500;
             text-align: left;
-        }
-
-        .date-button:hover {
-            background-color: rgba(22, 62, 60, 0.8);
-            border-color: var(--accent);
-            box-shadow: 0 0 0 2px rgba(64, 224, 208, 0.2);
-            transform: translateY(-2px);
-        }
-
-        .date-button i {
-            transition: transform 0.3s ease;
-        }
-
-        .date-button:hover i {
-            transform: translateX(5px);
+            margin-bottom: 2rem;
         }
     </style>
 </head>
@@ -994,10 +907,10 @@
             <button class="search-clear" id="search-clear"><i class="fas fa-times"></i></button>
         </div>
         
-        <button class="date-button" id="date-button">
+        <div class="date-display">
             <i class="fas fa-calendar-alt"></i>
             <span id="current-date">Aujourd'hui (17/04/2025)</span>
-        </button>
+        </div>
         
         <div class="tabs">
             <div class="tab active">Tous les hippodromes</div>
@@ -1078,11 +991,6 @@
             const courseMeta = document.getElementById('course-meta');
             const participantsTable = document.getElementById('participants-tbody');
             const currentDateSpan = document.getElementById('current-date');
-            const dateButton = document.getElementById('date-button');
-            
-            // Variable pour stocker les données des courses
-            let coursesData = {};
-            let isToday = true; // Par défaut, nous sommes sur "aujourd'hui"
             
             // Formatter la date au format DD/MM/YYYY
             function formatDateDMY(date) {
@@ -1092,108 +1000,72 @@
                 return `${day}/${month}/${year}`;
             }
             
-            // Fonction pour charger les courses
-            function loadCoursesData() {
-                // Afficher l'indicateur de chargement
+            // Vérifier si le variable courseData existe
+            if (typeof courseData === 'undefined') {
+                console.error("La variable courseData n'est pas définie. Assurez-vous que data.js est correctement chargé.");
                 resultsContainer.innerHTML = `
-                    <div class="loading">
-                        <div class="spinner"></div>
-                        <p>Chargement des courses...</p>
+                    <div class="no-results">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h3>Erreur de chargement des données</h3>
+                        <p>Impossible de charger les données des courses.</p>
                     </div>
                 `;
-                
-                // Simuler un chargement avec un délai court
-                setTimeout(() => {
-                    // Si nous sommes sur "aujourd'hui", utiliser les données disponibles
-                    if (isToday) {
-                        // Utiliser directement les données de courseData depuis data.js
-                        coursesData = courseData; // courseData est défini dans data.js
-                        displayHippodromes();
-                        
-                        // Mettre à jour la date affichée
-                        const today = new Date();
-                        currentDateSpan.textContent = `Aujourd'hui (${formatDateDMY(today)})`;
-                    }
-                    else {
-                        // Si nous sommes sur "demain", simuler une autre date
-                        const tomorrow = new Date();
-                        tomorrow.setDate(tomorrow.getDate() + 1);
-                        
-                        // Pour l'exemple, nous allons utiliser un autre jeu de données prédéfini
-                        // Dans une version réelle, vous chargeriez les données depuis un autre fichier
-                        coursesData = {
-                            "PARISLONGCHAMP": [
-                                {
-                                    nom: "GRAND PRIX DE PARIS",
-                                    horaire: "13h15",
-                                    numero: "1",
-                                    type: "Plat",
-                                    participants: [
-                                        { n: "1", cheval: "ROYAL DESTINY", jockey: "STEPHANE PASQUIER", entraineur: "C. LAFFON-PARIAS", proprietaire: "WERTHEIMER & FRERE", eleveurs: "WERTHEIMER ET FRERE", poids: "58 kg", performances: "2p1p" },
-                                        { n: "2", cheval: "DIAMOND LIGHT", jockey: "PIERRE-CHARLES BOUDOT", entraineur: "A. FABRE (S)", proprietaire: "GODOLPHIN SNC", eleveurs: "DARLEY", poids: "58 kg", performances: "1p2p" },
-                                        { n: "3", cheval: "ASTRAL KING", jockey: "MAXIME GUYON", entraineur: "F. HEAD (S)", proprietaire: "ECURIE SKYMARC FARM", eleveurs: "ECURIE SKYMARC FARM", poids: "58 kg", performances: "3p1p4p" }
-                                    ]
-                                }
-                            ],
-                            "CHANTILLY": [
-                                {
-                                    nom: "PRIX DU JOCKEY CLUB",
-                                    horaire: "14h20",
-                                    numero: "1",
-                                    type: "Plat",
-                                    participants: [
-                                        { n: "1", cheval: "GOLDEN RULER", jockey: "CHRISTOPHE SOUMILLON", entraineur: "A. FABRE (S)", proprietaire: "GODOLPHIN SNC", eleveurs: "DARLEY", poids: "58 kg", performances: "1p1p2p" },
-                                        { n: "2", cheval: "SILVER PRINCE", jockey: "IORITZ MENDIZABAL", entraineur: "JC. ROUGET (S)", proprietaire: "AL SHAQAB RACING", eleveurs: "AL SHAQAB RACING", poids: "58 kg", performances: "2p1p3p" }
-                                    ]
-                                }
-                            ]
-                        };
-                        
-                        displayHippodromes();
-                        
-                        // Mettre à jour la date affichée
-                        currentDateSpan.textContent = `Demain (${formatDateDMY(tomorrow)})`;
-                    }
-                    
-                    // Mettre à jour la date dans le footer
-                    lastUpdateEl.textContent = formatDateDMY(new Date());
-                }, 800); // Petit délai pour simuler le chargement
+                return;
             }
+            
+            // Afficher l'indicateur de chargement initial
+            resultsContainer.innerHTML = `
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Chargement des courses...</p>
+                </div>
+            `;
+            
+            // Mettre à jour la date affichée
+            const today = new Date();
+            currentDateSpan.textContent = `Aujourd'hui (${formatDateDMY(today)})`;
+            lastUpdateEl.textContent = formatDateDMY(today);
             
             // Fonction pour afficher les hippodromes et leurs courses
             function displayHippodromes() {
                 // Si aucune donnée n'est disponible
-                if (!coursesData || Object.keys(coursesData).length === 0) {
+                if (Object.keys(courseData).length === 0) {
                     resultsContainer.innerHTML = `
                         <div class="no-results">
                             <i class="fas fa-search"></i>
                             <h3>Aucune course trouvée</h3>
-                            <p>Essayez de modifier votre recherche ou la date</p>
+                            <p>Essayez de modifier votre recherche</p>
                         </div>
                     `;
                     return;
                 }
+                
+                // Afficher les données dans la console pour le débogage
+                console.log("Données des courses:", courseData);
                 
                 // Filtrer les hippodromes par recherche
                 const searchTerm = searchInput.value.trim().toLowerCase();
                 let html = '';
                 
                 // Parcourir les hippodromes
-                for (const [hippodrome, courses] of Object.entries(coursesData)) {
+                for (const [hippodrome, courses] of Object.entries(courseData)) {
                     // Vérifier que courses est un array
-                    if (!Array.isArray(courses)) continue;
+                    if (!Array.isArray(courses)) {
+                        console.error(`Les courses pour l'hippodrome "${hippodrome}" ne sont pas un tableau.`);
+                        continue;
+                    }
                     
                     // Filtrer les courses si un terme de recherche est spécifié
                     let filteredCourses = courses;
                     if (searchTerm) {
                         filteredCourses = courses.filter(course => 
-                            course.nom.toLowerCase().includes(searchTerm) || 
+                            (course.nom && course.nom.toLowerCase().includes(searchTerm)) || 
                             hippodrome.toLowerCase().includes(searchTerm) ||
-                            (course.participants && course.participants.some(p => 
-                                p.cheval && p.cheval.toLowerCase().includes(searchTerm) ||
-                                p.jockey && p.jockey.toLowerCase().includes(searchTerm) ||
-                                p.entraineur && p.entraineur.toLowerCase().includes(searchTerm) ||
-                                p.proprietaire && p.proprietaire.toLowerCase().includes(searchTerm)
+                            (course.participants && Array.isArray(course.participants) && course.participants.some(p => 
+                                (p.cheval && p.cheval.toLowerCase().includes(searchTerm)) ||
+                                (p.jockey && p.jockey.toLowerCase().includes(searchTerm)) ||
+                                (p.entraineur && p.entraineur.toLowerCase().includes(searchTerm)) ||
+                                (p.proprietaire && p.proprietaire.toLowerCase().includes(searchTerm))
                             ))
                         );
                     }
@@ -1217,15 +1089,21 @@
                     
                     // Ajouter chaque course
                     filteredCourses.forEach(course => {
+                        if (!course) return; // Ignorer les courses nulles ou undefined
+                        
+                        const participantsCount = course.participants && Array.isArray(course.participants) 
+                            ? course.participants.length 
+                            : 0;
+                        
                         html += `
                             <div class="course-item">
                                 <div class="course-name">
                                     <i class="fas fa-flag-checkered"></i>
-                                    ${course.horaire} - ${course.nom}
+                                    ${course.horaire || ""} - ${course.nom || ""}
                                 </div>
                                 <div class="course-info">
                                     <div class="participants-count">
-                                        ${course.participants ? course.participants.length : 0} participant${(course.participants && course.participants.length > 1) ? 's' : ''}
+                                        ${participantsCount} participant${participantsCount > 1 ? 's' : ''}
                                     </div>
                                     <button class="detail-btn" data-hippodrome="${hippodrome}" data-course="${course.nom}">
                                         <i class="fas fa-info-circle"></i> Détails
@@ -1258,8 +1136,10 @@
                         header.addEventListener('click', function() {
                             const targetId = this.dataset.target;
                             const coursesList = document.getElementById(targetId);
-                            coursesList.classList.toggle('visible');
-                            this.querySelector('.toggle-icon').classList.toggle('open');
+                            if (coursesList) {
+                                coursesList.classList.toggle('visible');
+                                this.querySelector('.toggle-icon').classList.toggle('open');
+                            }
                         });
                     });
                     
@@ -1273,25 +1153,32 @@
                         });
                     });
                     
-                    // Ouvrir le premier hippodrome automatiquement
-                    const firstHippodromeHeader = document.querySelector('.hippodrome-header');
-                    if (firstHippodromeHeader) {
-                        const targetId = firstHippodromeHeader.dataset.target;
+                    // Ouvrir automatiquement tous les hippodromes
+                    document.querySelectorAll('.hippodrome-header').forEach(header => {
+                        const targetId = header.dataset.target;
                         const coursesList = document.getElementById(targetId);
-                        coursesList.classList.add('visible');
-                        firstHippodromeHeader.querySelector('.toggle-icon').classList.add('open');
-                    }
+                        if (coursesList) {
+                            coursesList.classList.add('visible');
+                            header.querySelector('.toggle-icon').classList.add('open');
+                        }
+                    });
                 }
             }
             
             // Fonction pour afficher les détails d'une course dans la fenêtre modale
             function showCourseDetails(hippodrome, courseName) {
                 // Trouver la course correspondante
-                const course = coursesData[hippodrome].find(c => c.nom === courseName);
-                if (!course) return;
+                const course = courseData[hippodrome] && Array.isArray(courseData[hippodrome])
+                    ? courseData[hippodrome].find(c => c && c.nom === courseName)
+                    : null;
+                
+                if (!course) {
+                    console.error(`Course "${courseName}" non trouvée pour l'hippodrome "${hippodrome}"`);
+                    return;
+                }
                 
                 // Mettre à jour le titre et les métadonnées
-                modalTitle.textContent = course.nom;
+                modalTitle.textContent = course.nom || "";
                 courseMeta.innerHTML = `
                     <div class="meta-item">
                         <i class="fas fa-map-marker-alt"></i>
@@ -1299,7 +1186,7 @@
                     </div>
                     <div class="meta-item">
                         <i class="fas fa-clock"></i>
-                        <strong>Horaire:</strong> ${course.horaire}
+                        <strong>Horaire:</strong> ${course.horaire || ""}
                     </div>
                     <div class="meta-item">
                         <i class="fas fa-calendar"></i>
@@ -1318,7 +1205,7 @@
                 // Mettre à jour le tableau des participants
                 let participantsHtml = '';
                 
-                if (course.participants && course.participants.length > 0) {
+                if (course.participants && Array.isArray(course.participants) && course.participants.length > 0) {
                     course.participants.forEach(participant => {
                         participantsHtml += `
                             <tr>
@@ -1374,20 +1261,13 @@
                 displayHippodromes();
             });
             
-            // Bouton de changement de date
-            dateButton.addEventListener('click', function() {
-                // Basculer entre aujourd'hui et demain
-                isToday = !isToday;
-                
-                // Charger les courses pour la nouvelle date
-                loadCoursesData();
-            });
-            
             // Masquer le bouton d'effacement au chargement
             searchClear.style.display = 'none';
             
-            // Charger les courses au chargement initial
-            loadCoursesData();
+            // Charger les courses avec un petit délai pour afficher le spinner
+            setTimeout(() => {
+                displayHippodromes();
+            }, 500); 
         });
     </script>
 </body>
