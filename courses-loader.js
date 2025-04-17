@@ -14,54 +14,32 @@ const coursesLoader = {
             // Initialiser l'objet courseData
             const courseData = {};
             
-            // Tester d'abord si le répertoire 'data' existe
-            console.log("Tentative de récupération des fichiers dans le répertoire 'data'");
-            let response = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/data`);
+            // Chemin correct vers les fichiers de courses
+            console.log("Tentative de récupération des fichiers dans le répertoire 'data/courses'");
+            let response = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/data/courses`);
             
-            // Si le répertoire 'data' n'existe pas, essayer directement à la racine
             if (!response.ok) {
-                console.log("Le répertoire 'data' n'existe pas, tentative de récupération à la racine");
-                response = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/`);
+                console.error(`Erreur lors de la récupération des fichiers: ${response.status}`);
+                console.error(`Essai de déboguer: récupération du contenu du répertoire 'data'`);
                 
-                if (!response.ok) {
-                    throw new Error(`Erreur lors de la récupération des fichiers: ${response.status}`);
+                // Essayer de lister le contenu du répertoire parent
+                const dataResponse = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/data`);
+                if (dataResponse.ok) {
+                    const dataContent = await dataResponse.json();
+                    console.log("Contenu du répertoire 'data':", dataContent);
                 }
+                
+                throw new Error(`Impossible d'accéder au répertoire data/courses: ${response.status}`);
             }
             
             const files = await response.json();
-            console.log("Fichiers trouvés:", files);
+            console.log("Fichiers trouvés dans data/courses:", files);
             
             // Filtrer pour trouver tous les fichiers JSON correspondant à la date
             const courseFiles = files.filter(file => 
                 file.name.startsWith(dateStr) && 
                 file.name.endsWith('.json')
             );
-            
-            // Si aucun fichier trouvé avec le format exact, essayer avec un format moins strict
-            if (courseFiles.length === 0) {
-                console.log("Aucun fichier trouvé avec le format exact, essai avec un format moins strict");
-                // Extraire seulement l'année et le mois (2025-04)
-                const yearMonth = dateStr.substring(0, 7);
-                const looseMatchFiles = files.filter(file => 
-                    file.name.includes(yearMonth) && 
-                    file.name.endsWith('.json')
-                );
-                
-                // Si des fichiers sont trouvés avec le format moins strict, les utiliser
-                if (looseMatchFiles.length > 0) {
-                    console.log(`Fichiers trouvés avec le format moins strict (${yearMonth}):`, looseMatchFiles);
-                    
-                    for (const file of looseMatchFiles) {
-                        try {
-                            await this.processFile(file, courseData);
-                        } catch (fileError) {
-                            console.error(`Erreur lors du traitement du fichier ${file.name}:`, fileError);
-                        }
-                    }
-                    
-                    return courseData;
-                }
-            }
             
             console.log(`Fichiers de courses trouvés pour ${dateStr}:`, courseFiles);
             
@@ -85,6 +63,8 @@ const coursesLoader = {
             
         } catch (error) {
             console.error("Erreur lors du chargement des courses:", error);
+            // Afficher une erreur utilisateur
+            alert(`Erreur lors du chargement des courses: ${error.message}. Vérifiez la console pour plus de détails.`);
             return {};
         }
     },
@@ -110,9 +90,15 @@ const coursesLoader = {
                 
                 // Vérifier si 'courses' existe et est un tableau
                 if (fileData.courses && Array.isArray(fileData.courses)) {
-                    // Ajouter les courses (sans filtrage par type)
-                    courseData[fileData.hippodrome] = fileData.courses;
-                    console.log(`Ajout de ${fileData.courses.length} courses pour l'hippodrome ${fileData.hippodrome}`);
+                    // Filtrer pour ne garder que les courses de type "plat" (insensible à la casse)
+                    const platCourses = fileData.courses.filter(course => 
+                        !course.type || course.type.toLowerCase() === "plat"
+                    );
+                    
+                    if (platCourses.length > 0) {
+                        courseData[fileData.hippodrome] = platCourses;
+                        console.log(`Ajout de ${platCourses.length} courses pour l'hippodrome ${fileData.hippodrome}`);
+                    }
                 }
             } else {
                 // Essayer de déterminer dynamiquement le nom de l'hippodrome depuis le nom du fichier
@@ -126,12 +112,20 @@ const coursesLoader = {
                     
                     // Vérifier si le contenu est déjà un tableau
                     if (Array.isArray(fileData)) {
-                        courseData[hippodromeName] = fileData;
-                        console.log(`Ajout de ${fileData.length} courses pour l'hippodrome ${hippodromeName}`);
+                        const platCourses = fileData.filter(course => 
+                            !course.type || course.type.toLowerCase() === "plat"
+                        );
+                        
+                        if (platCourses.length > 0) {
+                            courseData[hippodromeName] = platCourses;
+                            console.log(`Ajout de ${platCourses.length} courses pour l'hippodrome ${hippodromeName}`);
+                        }
                     } else {
                         // Si le contenu est directement l'objet de course individuel
-                        courseData[hippodromeName] = [fileData];
-                        console.log(`Ajout d'une course pour l'hippodrome ${hippodromeName}`);
+                        if (!fileData.type || fileData.type.toLowerCase() === "plat") {
+                            courseData[hippodromeName] = [fileData];
+                            console.log(`Ajout d'une course pour l'hippodrome ${hippodromeName}`);
+                        }
                     }
                 } else {
                     console.warn(`Impossible de déterminer l'hippodrome pour le fichier ${filename}`);
