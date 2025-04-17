@@ -68,7 +68,11 @@ const FALLBACK_DATA = {
                 { n: "4", cheval: "UNFURLED", jockey: "ANTHONY CRASTUS", entraineur: "N. PERRET (S)", proprietaire: "ECURIE THOMAS SIVADIER", eleveurs: "E.A.R.L. ELEVAGE DES LOGES", poids: "58 kg", performances: "" },
                 { n: "5", cheval: "SAINT FLORENT", jockey: "MARVIN GRANDIN", entraineur: "J. REYNIER (S)", proprietaire: "LE MARAIS SAS", eleveurs: "HARAS DU LOGIS SAINT GERMAIN", poids: "58 kg", performances: "" },
                 { n: "6", cheval: "THE MOON'S ANGEL", jockey: "GUILLAUME MILLET", entraineur: "R. FRADET (S)", proprietaire: "MR MICHEL NIKITAS", eleveurs: "MME R. DWEK, MME C. SIMON, MME T.DE BEAUREGARD, D. SOURDEAU DE BEAUREGARD", poids: "58 kg", performances: "" },
-                { n: "7", cheval: "ZELKOVA (IRE)", jockey: "MME CORALIE PACAUT", entraineur: "JC. ROUGET (S)", proprietaire: "AL SHAQAB RACING", eleveurs: "AL SHAQAB RACING", poids: "55 kg(56,5 kg)", performances: "" }
+                { n: "7", cheval: "ZELKOVA (IRE)", jockey: "MME CORALIE PACAUT", entraineur: "JC. ROUGET (S)", proprietaire: "AL SHAQAB RACING", eleveurs: "AL SHAQAB RACING", poids: "55 kg(56,5 kg)", performances: "" },
+                { n: "8", cheval: "RUGLES", jockey: "NON PARTANT", entraineur: "J. REYNIER (S)", proprietaire: "MR GERARD AUGUSTIN-NORMAND", eleveurs: "FRANKLIN FINANCE S.A.", poids: "56,5 kg", performances: "" },
+                { n: "9", cheval: "DENGIE", jockey: "SYLVAIN RUIS", entraineur: "N. PERRET (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "56,5 kg", performances: "" },
+                { n: "10", cheval: "DISBAY", jockey: "IORITZ MENDIZABAL", entraineur: "J. ANDREU (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "56,5 kg", performances: "" },
+                { n: "11", cheval: "HOODWINK", jockey: "MME MANON GERMAIN", entraineur: "J. REYNIER (S)", proprietaire: "MR JAMES WIGAN", eleveurs: "LONDON THOROUGHBRED SERVICES", poids: "55 kg(56,5 kg)", performances: "" }
             ]
         },
         {
@@ -80,7 +84,12 @@ const FALLBACK_DATA = {
                 { n: "1", cheval: "FIUMICCINO", jockey: "HUGO BESNIER", entraineur: "P. COTTIER", proprietaire: "MR JEAN-PIERRE-JOSEPH DUBOIS", eleveurs: "MME L. LEMIERE DUBOIS", poids: "58 kg", performances: "0p5p2p4p" },
                 { n: "2", cheval: "GREEN HEAD", jockey: "MICKAEL FOREST", entraineur: "Y. BONNEFOY (S)", proprietaire: "ECURIE BERTRAND MILLIERE", eleveurs: "ECURIE BERTRAND MILLIERE, C. MILLIERE", poids: "58 kg", performances: "(24)0p" },
                 { n: "3", cheval: "GOLDEN BROWN", jockey: "JEAN-BERNARD EYQUEM", entraineur: "JC. ROUGET (S)", proprietaire: "ECURIE VIVALDI", eleveurs: "HARAS DE GRANDCAMP EARL", poids: "58 kg", performances: "3p 2p(24)4p3p2p3p" },
-                { n: "4", cheval: "BLACK BOSS", jockey: "GUILLAUME MILLET", entraineur: "R. FRADET (S)", proprietaire: "MR FABRICE FANTAUZZA", eleveurs: "SUC. D.DE LA HERONNIERE", poids: "58 kg", performances: "2p2p" }
+                { n: "4", cheval: "BLACK BOSS", jockey: "GUILLAUME MILLET", entraineur: "R. FRADET (S)", proprietaire: "MR FABRICE FANTAUZZA", eleveurs: "SUC. D.DE LA HERONNIERE", poids: "58 kg", performances: "2p2p" },
+                { n: "5", cheval: "CANNOLO (IRE)", jockey: "ANTHONY CRASTUS", entraineur: "C. ESCUDER", proprietaire: "N.RICIGNUOLO/EQUUS RACING/MEKKI", eleveurs: "MME P. CARPENTIER, SCEA JLC, SCEA L'AUBAY", poids: "58 kg", performances: "4p9p" },
+                { n: "6", cheval: "IL BIONDINO", jockey: "MME CORALIE PACAUT", entraineur: "C. ESCUDER", proprietaire: "N.RICIGNUOLO/F.GRIMA/B.MEKKI", eleveurs: "HARAS DES TROIS CHAPELLES", poids: "56,5 kg(58 kg)", performances: "0p" },
+                { n: "7", cheval: "C'EST VRAI", jockey: "SYLVAIN RUIS", entraineur: "N. PERRET (S)", proprietaire: "MR JEAN-CLAUDE SEROUL", eleveurs: "JC. SEROUL", poids: "58 kg", performances: "5p" },
+                { n: "8", cheval: "DREAM IN BROOKE", jockey: "MME MARINA BRUNELLI", entraineur: "MME M. SCANDELLA-LACAILLE", proprietaire: "V.GUEDJ/P.GUEDJ/JL.MEDINA STUD", eleveurs: "P. GUEDJ, V. GUEDJ, JL. MEDINA", poids: "53 kg(56,5 kg)", performances: "4p 6p" },
+                { n: "9", cheval: "ALMERIA", jockey: "MME MANON GERMAIN", entraineur: "J. REYNIER (S)", proprietaire: "MR JAMES WIGAN", eleveurs: "LONDON THOROUGHBRED SERVICES", poids: "55 kg(56,5 kg)", performances: "4p" }
             ]
         },
         {
@@ -303,6 +312,52 @@ async function loadJsonFile(filename) {
 }
 
 /**
+ * Convertit les données JSON au format attendu par l'interface
+ * @param {Object} rawData - Données brutes du fichier JSON
+ * @returns {Array} Données formatées pour l'interface
+ */
+function convertRawData(rawData) {
+    if (!rawData || !rawData.courses || !Array.isArray(rawData.courses)) {
+        console.error("Format de données JSON invalide:", rawData);
+        return [];
+    }
+
+    // Formatage des données pour l'interface
+    return rawData.courses.map(course => {
+        // Formatage des participants
+        const participants = Array.isArray(course.participants) ? course.participants.map(p => {
+            // Récupération du numéro (n°, n ou place)
+            const numero = p.n || p.n° || p.place || "";
+            
+            // Nettoyer le nom du cheval (enlever les caractères après le premier espace si besoin)
+            let cheval = p.cheval || "";
+            if (cheval.includes("  ")) {
+                cheval = cheval.split("  ")[0];
+            }
+            
+            return {
+                n: numero,
+                cheval: cheval,
+                jockey: p.jockey || "",
+                entraineur: p.entraineur || p.entraîneur || "",
+                proprietaire: p.proprietaire || "",
+                eleveurs: p.eleveurs || p.éleveurs || "",
+                poids: p.poids || "",
+                performances: p.performances || ""
+            };
+        }) : [];
+
+        return {
+            nom: course.nom || "",
+            horaire: course.horaire || "",
+            numero: course.numero || "",
+            type: course.type || "Plat",
+            participants: participants
+        };
+    });
+}
+
+/**
  * Charge les données de courses pour une date spécifique
  * @param {string} date - Date au format YYYY-MM-DD
  * @param {string} typeFilter - Filtre optionnel par type de course (ex: 'Plat')
@@ -330,13 +385,16 @@ async function loadRacesData(date, typeFilter = DEFAULT_TYPE_FILTER) {
             const hippodromeName = extractHippodromeName(file);
             
             // Charger les données
-            const data = await loadJsonFile(file);
+            const rawData = await loadJsonFile(file);
             
-            if (data && data.courses && Array.isArray(data.courses)) {
+            if (rawData) {
+                // Convertir les données brutes au format attendu par l'interface
+                const formattedCourses = convertRawData(rawData);
+                
                 // Appliquer le filtre par type si spécifié
-                let filteredCourses = data.courses;
+                let filteredCourses = formattedCourses;
                 if (typeFilter) {
-                    filteredCourses = data.courses.filter(course => 
+                    filteredCourses = formattedCourses.filter(course => 
                         course.type && course.type.toLowerCase() === typeFilter.toLowerCase()
                     );
                 }
@@ -348,8 +406,6 @@ async function loadRacesData(date, typeFilter = DEFAULT_TYPE_FILTER) {
                 } else {
                     console.log(`❌ Aucune course correspondant au filtre pour ${hippodromeName}`);
                 }
-            } else {
-                console.log(`❌ Données invalides ou pas de courses dans le fichier: ${file}`);
             }
         }
         
