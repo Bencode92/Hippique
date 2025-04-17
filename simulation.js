@@ -598,21 +598,15 @@ document.addEventListener('DOMContentLoaded', function() {
         // Exclure les N favoris (les N plus petites cotes) et N outsiders (les N plus hautes cotes)
         const filteredEntries = sortedEntries.slice(excludeLow, total - excludeHigh);
         
-        // Limitation du nombre maximum de chevaux pour les performances
-        const MAX_HORSES_TO_CONSIDER = 8; // Limiter à 8 chevaux maximum
-        let midRangeEntries = filteredEntries;
-        
-        // Si on a beaucoup de chevaux et aucune exclusion, on limite aux favoris
-        if (filteredEntries.length > MAX_HORSES_TO_CONSIDER && excludeLow === 0 && excludeHigh === 0) {
-            midRangeEntries = filteredEntries.slice(0, MAX_HORSES_TO_CONSIDER);
-            console.log(`Trop de chevaux (${filteredEntries.length}), limitation aux ${MAX_HORSES_TO_CONSIDER} favoris`);
-        }
+        // IMPORTANT: toujours re-trier les chevaux restants par cote croissante
+        // (Nécessaire pour garantir l'ordre même quand excludeLow et excludeHigh = 0)
+        const midRangeEntries = filteredEntries.sort((a, b) => a[1] - b[1]);
         
         // Convertir en objet
         const midRangeHorses = Object.fromEntries(midRangeEntries);
         
         console.log(`Mid Range: Gardé ${midRangeEntries.length}/${total} chevaux après exclusion de ${excludeLow} favoris et ${excludeHigh} outsiders`);
-        console.log("Chevaux médians:", Object.entries(midRangeHorses).map(([name, odds]) => `${name}: ${odds}`));
+        console.log("Chevaux médians (triés par cote):", Object.entries(midRangeHorses).map(([name, odds]) => `${name}: ${odds}`));
         
         if (midRangeEntries.length < 2) {
             return sizes.map(size => ({
@@ -624,18 +618,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 approche: "Mid Range",
                 filtrage: `Exclu: ${excludeLow} favoris + ${excludeHigh} outsiders`
             }));
-        }
-        
-        // Fonction pour générer toutes les combinaisons possibles de taille donnée
-        function getAllCombos(array, size) {
-            if (size === 1) return array.map(e => [e]);
-            const combos = [];
-            array.forEach((current, index) => {
-                const rest = array.slice(index + 1);
-                const smallerCombos = getAllCombos(rest, size - 1);
-                smallerCombos.forEach(combo => combos.push([current, ...combo]));
-            });
-            return combos;
         }
         
         // Fonction d'optimisation pour une combinaison donnée
@@ -742,40 +724,63 @@ document.addEventListener('DOMContentLoaded', function() {
         
         for (const size of sizes) {
             if (size <= horseNames.length) {
-                // AMÉLIORATION : Générer toutes les combinaisons possibles de taille 'size'
-                const allPossibleCombos = getAllCombos(horseNames, size);
+                // IMPORTANT: Tester d'abord la combinaison des N chevaux avec les plus petites cotes
+                // pour garantir qu'elle est toujours testée
+                const topFavoris = horseNames.slice(0, size);
+                console.log(`Mid Range: Testant d'abord la combinaison des ${size} chevaux avec les plus petites cotes`, topFavoris);
                 
-                // Trier les combinaisons par la somme des cotes (préférer les plus petites sommes)
-                allPossibleCombos.sort((a, b) => {
-                    const sumA = a.reduce((sum, horseName) => sum + midRangeHorses[horseName], 0);
-                    const sumB = b.reduce((sum, horseName) => sum + midRangeHorses[horseName], 0);
-                    return sumA - sumB; // Trier par ordre croissant de cotes
-                });
+                // Tester d'abord la combinaison optimale (les N chevaux avec les plus petites cotes)
+                const bestComboResult = optimizeMidRange(topFavoris, totalBet, maxStakePerHorse);
                 
-                // Limiter le nombre de combinaisons à tester pour des performances raisonnables
-                const MAX_COMBOS_TO_TEST = 100;
-                const combosToTest = allPossibleCombos.length > MAX_COMBOS_TO_TEST 
-                    ? allPossibleCombos.slice(0, MAX_COMBOS_TO_TEST) 
-                    : allPossibleCombos;
+                // Si cette combinaison est rentable, l'utiliser directement
+                if (bestComboResult.rentable) {
+                    bestComboResult.taille = size;
+                    bestComboResult.approche = "Mid Range - Favoris";
+                    allCombos.push(bestComboResult);
+                    console.log(`Mid Range: Combinaison des ${size} chevaux avec les plus petites cotes est rentable. Utilisée directement.`);
+                    continue; // Passer à la taille suivante
+                }
                 
-                console.log(`Testant ${combosToTest.length}/${allPossibleCombos.length} combinaisons possibles de taille ${size}`);
+                // Si la combinaison des meilleurs chevaux n'est pas rentable, 
+                // on peut essayer d'autres combinaisons mais on limite à un petit nombre pour les performances
+                console.log(`Mid Range: La combinaison des ${size} chevaux avec les plus petites cotes n'est pas rentable. Recherche d'autres combinaisons.`);
                 
-                // Tester toutes les combinaisons et trouver la meilleure
-                let bestCombo = null;
+                // Limiter le nombre de combinaisons à tester aux premières combinaisons (performances)
+                const MAX_COMBOS_TO_TEST = 20; // Réduire à 20 pour être plus efficace
+                
+                // Fonction pour générer les combinaisons possibles
+                function getAllCombos(array, k) {
+                    if (k === 1) return array.map(e => [e]);
+                    return array.flatMap((v, i) => 
+                        getAllCombos(array.slice(i + 1), k - 1).map(comb => [v, ...comb])
+                    ).slice(0, MAX_COMBOS_TO_TEST); // Limiter directement ici
+                }
+                
+                // Générer quelques combinaisons alternatives
+                const otherCombos = getAllCombos(horseNames, size).filter(combo => 
+                    // Exclure la combinaison des favoris déjà testée
+                    !(combo.length === topFavoris.length && 
+                    combo.every((value, index) => value === topFavoris[index]))
+                );
+                
+                console.log(`Mid Range: Testant ${Math.min(otherCombos.length, MAX_COMBOS_TO_TEST)} combinaisons alternatives`);
+                
+                // Tester ces combinaisons alternatives
+                let bestAlternativeCombo = null;
                 let bestGainMoyen = -Infinity;
                 
-                for (const combo of combosToTest) {
+                for (const combo of otherCombos.slice(0, MAX_COMBOS_TO_TEST)) {
                     const result = optimizeMidRange(combo, totalBet, maxStakePerHorse);
                     
                     if (result.rentable && result.gain_moyen > bestGainMoyen) {
                         bestGainMoyen = result.gain_moyen;
-                        bestCombo = result;
+                        bestAlternativeCombo = result;
                     }
                 }
                 
-                if (bestCombo) {
-                    bestCombo.taille = size;
-                    allCombos.push(bestCombo);
+                if (bestAlternativeCombo) {
+                    bestAlternativeCombo.taille = size;
+                    allCombos.push(bestAlternativeCombo);
                 } else {
                     // Aucune combinaison rentable trouvée pour cette taille
                     allCombos.push({
