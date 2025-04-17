@@ -58,6 +58,14 @@ const coursesLoader = {
                 }
             }
             
+            // Filtrer les hippodromes qui n'ont pas de courses (après tous les traitements)
+            Object.keys(courseData).forEach(hippodrome => {
+                if (!courseData[hippodrome] || courseData[hippodrome].length === 0) {
+                    console.log(`Suppression de l'hippodrome ${hippodrome} car il n'a pas de courses valides`);
+                    delete courseData[hippodrome];
+                }
+            });
+            
             console.log("Données de courses chargées avec succès:", courseData);
             return courseData;
             
@@ -83,6 +91,13 @@ const coursesLoader = {
             const fileData = await fileResponse.json();
             console.log(`Structure du fichier ${file.name}:`, Object.keys(fileData));
             
+            // ÉTAPE 1: Vérifier si c'est une réunion de type PLAT
+            // Si type_reunion existe et n'est pas "Plat", ignorer ce fichier
+            if (fileData.type_reunion && fileData.type_reunion.toLowerCase() !== "plat") {
+                console.log(`Fichier ${file.name} ignoré car type_reunion = ${fileData.type_reunion} (pas Plat)`);
+                return;
+            }
+            
             // Détecter automatiquement la structure du fichier
             if (fileData.hippodrome) {
                 // Format standard avec hippodrome et courses
@@ -91,13 +106,26 @@ const coursesLoader = {
                 // Vérifier si 'courses' existe et est un tableau
                 if (fileData.courses && Array.isArray(fileData.courses)) {
                     // Filtrer pour ne garder que les courses de type "plat" (insensible à la casse)
-                    const platCourses = fileData.courses.filter(course => 
-                        !course.type || course.type.toLowerCase() === "plat"
-                    );
+                    // ET qui ont des participants valides
+                    const validCourses = fileData.courses.filter(course => {
+                        // Vérifier si le type de course est plat
+                        const isPlat = !course.type || course.type.toLowerCase() === "plat";
+                        
+                        // Vérifier si la course a des participants valides
+                        const hasParticipants = course.participants && 
+                                              Array.isArray(course.participants) && 
+                                              course.participants.length > 0 &&
+                                              // Vérifier que les participants ont des attributs cheval ou jockey pour s'assurer que ce sont des vrais participants
+                                              course.participants.some(p => p.cheval || p.jockey);
+                        
+                        return isPlat && hasParticipants;
+                    });
                     
-                    if (platCourses.length > 0) {
-                        courseData[fileData.hippodrome] = platCourses;
-                        console.log(`Ajout de ${platCourses.length} courses pour l'hippodrome ${fileData.hippodrome}`);
+                    if (validCourses.length > 0) {
+                        courseData[fileData.hippodrome] = validCourses;
+                        console.log(`Ajout de ${validCourses.length} courses valides pour l'hippodrome ${fileData.hippodrome}`);
+                    } else {
+                        console.log(`Aucune course valide trouvée pour l'hippodrome ${fileData.hippodrome}`);
                     }
                 }
             } else {
@@ -112,19 +140,30 @@ const coursesLoader = {
                     
                     // Vérifier si le contenu est déjà un tableau
                     if (Array.isArray(fileData)) {
-                        const platCourses = fileData.filter(course => 
-                            !course.type || course.type.toLowerCase() === "plat"
-                        );
+                        const validCourses = fileData.filter(course => {
+                            const isPlat = !course.type || course.type.toLowerCase() === "plat";
+                            const hasParticipants = course.participants && 
+                                                  Array.isArray(course.participants) && 
+                                                  course.participants.length > 0 &&
+                                                  course.participants.some(p => p.cheval || p.jockey);
+                            return isPlat && hasParticipants;
+                        });
                         
-                        if (platCourses.length > 0) {
-                            courseData[hippodromeName] = platCourses;
-                            console.log(`Ajout de ${platCourses.length} courses pour l'hippodrome ${hippodromeName}`);
+                        if (validCourses.length > 0) {
+                            courseData[hippodromeName] = validCourses;
+                            console.log(`Ajout de ${validCourses.length} courses valides pour l'hippodrome ${hippodromeName}`);
                         }
                     } else {
                         // Si le contenu est directement l'objet de course individuel
-                        if (!fileData.type || fileData.type.toLowerCase() === "plat") {
+                        const isPlat = !fileData.type || fileData.type.toLowerCase() === "plat";
+                        const hasParticipants = fileData.participants && 
+                                              Array.isArray(fileData.participants) && 
+                                              fileData.participants.length > 0 &&
+                                              fileData.participants.some(p => p.cheval || p.jockey);
+                        
+                        if (isPlat && hasParticipants) {
                             courseData[hippodromeName] = [fileData];
-                            console.log(`Ajout d'une course pour l'hippodrome ${hippodromeName}`);
+                            console.log(`Ajout d'une course valide pour l'hippodrome ${hippodromeName}`);
                         }
                     }
                 } else {
