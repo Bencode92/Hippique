@@ -26,14 +26,29 @@
             --ev-light: #1e3a70;
             --ev-accent: #3498db;
             --ev-highlight: #5dade2;
+            
+            /* Nouvelles couleurs pour le mode Mid Range */
+            --midrange-dark: #1a0f1e;
+            --midrange-medium: #321c39;
+            --midrange-light: #502d59;
+            --midrange-accent: #9b59b6;
+            --midrange-highlight: #d678d3;
         }
         
         body.ev-mode {
             background-color: var(--ev-dark);
         }
         
+        body.midrange-mode {
+            background-color: var(--midrange-dark);
+        }
+        
         body.ev-mode .app-container {
             background-color: var(--ev-dark);
+        }
+        
+        body.midrange-mode .app-container {
+            background-color: var(--midrange-dark);
         }
         
         body.ev-mode .section-container {
@@ -41,25 +56,51 @@
             border-color: rgba(84, 153, 199, 0.2);
         }
         
+        body.midrange-mode .section-container {
+            background-color: rgba(50, 25, 60, 0.5);
+            border-color: rgba(214, 120, 211, 0.2);
+        }
+        
         body.ev-mode .sim-form {
             background-color: rgba(30, 58, 112, 0.5);
             border-color: rgba(84, 153, 199, 0.2);
+        }
+        
+        body.midrange-mode .sim-form {
+            background-color: rgba(50, 25, 60, 0.5);
+            border-color: rgba(214, 120, 211, 0.2);
         }
         
         body.ev-mode .help-text {
             border-left-color: var(--ev-accent);
         }
         
+        body.midrange-mode .help-text {
+            border-left-color: var(--midrange-accent);
+        }
+        
         body.ev-mode .help-text h4 {
             color: var(--ev-highlight);
+        }
+        
+        body.midrange-mode .help-text h4 {
+            color: var(--midrange-highlight);
         }
         
         body.ev-mode .section-container h2 {
             color: var(--ev-highlight);
         }
         
+        body.midrange-mode .section-container h2 {
+            color: var(--midrange-highlight);
+        }
+        
         body.ev-mode .sim-form h3 {
             color: var(--ev-highlight);
+        }
+        
+        body.midrange-mode .sim-form h3 {
+            color: var(--midrange-highlight);
         }
         
         body.ev-mode .action-btn.primary {
@@ -67,9 +108,19 @@
             color: white;
         }
         
+        body.midrange-mode .action-btn.primary {
+            background: linear-gradient(to right, var(--midrange-accent), #8e44ad);
+            color: white;
+        }
+        
         body.ev-mode .action-btn.primary:hover {
             background: linear-gradient(to right, #2980b9, var(--ev-accent));
             box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+        
+        body.midrange-mode .action-btn.primary:hover {
+            background: linear-gradient(to right, #8e44ad, var(--midrange-accent));
+            box-shadow: 0 5px 15px rgba(155, 89, 182, 0.3);
         }
         
         .sim-form {
@@ -110,6 +161,13 @@
             background-color: rgba(10, 30, 60, 0.5);
             border-color: rgba(84, 153, 199, 0.3);
             color: #e6f2ff;
+        }
+        
+        body.midrange-mode .input-group input, 
+        body.midrange-mode .input-group select {
+            background-color: rgba(30, 15, 35, 0.5);
+            border-color: rgba(214, 120, 211, 0.3);
+            color: #f2e6ff;
         }
         
         .input-group input[type="number"] {
@@ -181,6 +239,10 @@
             background-color: var(--ev-accent);
         }
         
+        body.midrange-mode .horse-entry .horse-number {
+            background-color: var(--midrange-accent);
+        }
+        
         .action-buttons {
             display: flex;
             gap: 1rem;
@@ -216,6 +278,12 @@
             border-color: rgba(84, 153, 199, 0.3);
         }
         
+        body.midrange-mode .action-btn.secondary {
+            background-color: rgba(214, 120, 211, 0.1);
+            color: #f2e6ff;
+            border-color: rgba(214, 120, 211, 0.3);
+        }
+        
         .action-btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -235,6 +303,11 @@
             border-color: rgba(84, 153, 199, 0.2);
         }
         
+        body.midrange-mode .result-container {
+            background-color: rgba(50, 25, 60, 0.5);
+            border-color: rgba(214, 120, 211, 0.2);
+        }
+        
         .result-container h3 {
             color: var(--gold);
             margin-bottom: 1rem;
@@ -245,6 +318,10 @@
             color: var(--ev-highlight);
         }
         
+        body.midrange-mode .result-container h3 {
+            color: var(--midrange-highlight);
+        }
+        
         .result-header {
             margin-bottom: 1rem;
             padding-bottom: 0.5rem;
@@ -253,6 +330,10 @@
         
         body.ev-mode .result-header {
             border-bottom-color: rgba(84, 153, 199, 0.2);
+        }
+        
+        body.midrange-mode .result-header {
+            border-bottom-color: rgba(214, 120, 211, 0.2);
         }
         
         .result-summary {
@@ -274,6 +355,10 @@
             background-color: rgba(10, 30, 60, 0.5);
         }
         
+        body.midrange-mode .result-item {
+            background-color: rgba(30, 15, 35, 0.5);
+        }
+        
         .result-item .label {
             font-size: 0.9rem;
             color: var(--light-gold);
@@ -282,6 +367,10 @@
         
         body.ev-mode .result-item .label {
             color: #e6f2ff;
+        }
+        
+        body.midrange-mode .result-item .label {
+            color: #f2e6ff;
         }
         
         .result-item .value {
@@ -293,12 +382,20 @@
             color: var(--ev-highlight);
         }
         
+        body.midrange-mode .result-item .value {
+            color: var(--midrange-highlight);
+        }
+        
         .result-item .value.positive {
             color: var(--dutch-color);
         }
         
         body.ev-mode .result-item .value.positive {
             color: var(--ev-highlight);
+        }
+        
+        body.midrange-mode .result-item .value.positive {
+            color: var(--midrange-highlight);
         }
         
         .result-item .value.negative {
@@ -322,6 +419,11 @@
             border-bottom-color: rgba(84, 153, 199, 0.1);
         }
         
+        body.midrange-mode .bets-table th, 
+        body.midrange-mode .bets-table td {
+            border-bottom-color: rgba(214, 120, 211, 0.1);
+        }
+        
         .bets-table th {
             color: var(--gold);
             font-weight: 400;
@@ -329,6 +431,10 @@
         
         body.ev-mode .bets-table th {
             color: var(--ev-highlight);
+        }
+        
+        body.midrange-mode .bets-table th {
+            color: var(--midrange-highlight);
         }
         
         .bets-table td {
@@ -339,12 +445,20 @@
             color: #e6f2ff;
         }
         
+        body.midrange-mode .bets-table td {
+            color: #f2e6ff;
+        }
+        
         .bets-table .positive {
             color: var(--dutch-color);
         }
         
         body.ev-mode .bets-table .positive {
             color: var(--ev-highlight);
+        }
+        
+        body.midrange-mode .bets-table .positive {
+            color: var(--midrange-highlight);
         }
         
         .bets-table .negative {
@@ -364,6 +478,12 @@
             background-color: rgba(84, 153, 199, 0.1);
             color: var(--ev-highlight) !important;
             border-left-color: var(--ev-accent) !important;
+        }
+        
+        body.midrange-mode .section-header {
+            background-color: rgba(214, 120, 211, 0.1);
+            color: var(--midrange-highlight) !important;
+            border-left-color: var(--midrange-accent) !important;
         }
         
         .section-header.non-rentable-simple, 
@@ -389,6 +509,11 @@
             border-left-color: var(--ev-accent);
         }
         
+        body.midrange-mode .help-text {
+            background-color: rgba(30, 15, 35, 0.5);
+            border-left-color: var(--midrange-accent);
+        }
+        
         .help-text h4 {
             color: var(--gold);
             margin-bottom: 0.5rem;
@@ -397,6 +522,10 @@
         
         body.ev-mode .help-text h4 {
             color: var(--ev-highlight);
+        }
+        
+        body.midrange-mode .help-text h4 {
+            color: var(--midrange-highlight);
         }
         
         .help-text p {
@@ -411,6 +540,10 @@
             color: #e6f2ff;
         }
         
+        body.midrange-mode .help-text p {
+            color: #f2e6ff;
+        }
+        
         .error-message {
             margin-top: 1rem;
             padding: 0.75rem;
@@ -420,39 +553,122 @@
             display: none;
         }
         
-        /* Style pour le toggle switch - Version finale */
+        /* Styles pour les options de stratégie */
         .strategy-toggle-container {
             display: flex;
-            align-items: center;
             justify-content: space-between;
-            padding: 1.2rem;
             margin-bottom: 1.5rem;
-            background-color: #0f212b;
+            gap: 1rem;
+        }
+        
+        .strategy-option {
+            flex: 1;
+            background-color: rgba(10, 30, 30, 0.5);
+            padding: 1.2rem;
             border-radius: 8px;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(233, 209, 140, 0.2);
         }
         
-        .dutch-betting-label {
+        .strategy-option.active {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+        .strategy-option[data-strategy="dutch"].active {
+            background-color: rgba(22, 62, 60, 0.8);
+            border: 1px solid var(--gold);
+        }
+        
+        .strategy-option[data-strategy="ev"].active {
+            background-color: rgba(30, 58, 112, 0.8);
+            border: 1px solid var(--ev-accent);
+        }
+        
+        .strategy-option[data-strategy="midrange"].active {
+            background-color: rgba(50, 25, 60, 0.8);
+            border: 1px solid var(--midrange-highlight);
+        }
+        
+        .strategy-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .strategy-option[data-strategy="dutch"] .strategy-icon {
             color: var(--dutch-color);
-            font-weight: bold;
-            font-size: 1.1rem;
         }
         
-        .optimisation-ev-label {
-            color: #65aaff;
-            font-weight: bold;
-            font-size: 1.1rem;
-            text-align: right;
+        .strategy-option[data-strategy="ev"] .strategy-icon {
+            color: var(--ev-accent);
         }
         
-        /* Le slider principal */
-        .slider-container {
-            position: relative;
+        .strategy-option[data-strategy="midrange"] .strategy-icon {
+            color: var(--midrange-highlight);
+        }
+        
+        .strategy-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+        
+        .strategy-desc {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+        
+        /* Paramètres Mid Range */
+        .midrange-params {
+            background-color: rgba(50, 25, 60, 0.2);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(214, 120, 211, 0.2);
+            display: none;
+        }
+        
+        body.midrange-mode .midrange-params {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+        
+        .param-sliders {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .slider-group {
+            flex: 1;
+        }
+        
+        .slider-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--midrange-highlight);
+        }
+        
+        .slider-group input[type="range"] {
             width: 100%;
-            max-width: 600px;
-            height: 34px;
-            margin: 0 15px;
+            height: 6px;
+            -webkit-appearance: none;
+            background: rgba(50, 25, 60, 0.5);
+            outline: none;
+            border-radius: 3px;
         }
         
+        .slider-group input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: var(--midrange-highlight);
+            cursor: pointer;
+        }
+        
+        /* Style pour le toggle switch - Version finale */
         .toggle-background {
             position: absolute;
             top: 0;
@@ -548,6 +764,10 @@
             background-color: var(--ev-accent);
         }
         
+        body.midrange-mode .btn-calculate {
+            background-color: var(--midrange-accent);
+        }
+        
         .btn-action:hover {
             opacity: 0.9;
         }
@@ -559,6 +779,11 @@
         /* Cacher la formule du gain moyen optimisé */
         .formula-explanation {
             display: none !important;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         
         @media (max-width: 768px) {
@@ -574,6 +799,11 @@
             .strategy-toggle-container {
                 flex-direction: column;
                 text-align: center;
+            }
+            
+            .param-sliders {
+                flex-direction: column;
+                gap: 1rem;
             }
         }
     </style>
@@ -607,30 +837,48 @@
                 
                 <div class="help-text">
                     <h4><i class="fas fa-info-circle"></i> Comment ça fonctionne</h4>
-                    <p>Deux stratégies de paris sont disponibles :</p>
-                    <p><strong>🎯 Dutch Betting :</strong> La stratégie du "dutching" traditionnelle garantit un gain net identique quel que soit le cheval gagnant parmi votre sélection.</p>
-                    <p><strong>💰 Optimisation EV :</strong> L'approche d'espérance de gain maximise le gain moyen attendu, mais les gains diffèrent selon le cheval gagnant.</p>
+                    <p>Trois stratégies de paris sont disponibles :</p>
+                    <p><strong>🎯 Dutch Betting :</strong> Garantit un gain net identique quel que soit le cheval gagnant parmi votre sélection.</p>
+                    <p><strong>💰 Optimisation EV :</strong> Maximise le gain moyen attendu, mais les gains diffèrent selon le cheval gagnant.</p>
+                    <p><strong>⚖️ Mid Range :</strong> Se concentre sur les cotes médianes en excluant les extrêmes, puis optimise le gain moyen sur cette sélection.</p>
                 </div>
                 
                 <div class="strategy-toggle-container">
-                    <div class="dutch-betting-label">
-                        🎯 Dutch Betting
+                    <div class="strategy-option active" data-strategy="dutch">
+                        <div class="strategy-icon">🎯</div>
+                        <div class="strategy-name">Dutch Betting</div>
+                        <div class="strategy-desc">Gain identique garanti</div>
                     </div>
                     
-                    <div class="slider-container">
-                        <div class="toggle-background" id="toggleBackground">
-                            <div class="toggle-button" id="toggleButton"></div>
-                            <div class="toggle-text">EV</div>
+                    <div class="strategy-option" data-strategy="ev">
+                        <div class="strategy-icon">💰</div>
+                        <div class="strategy-name">Optimisation EV</div>
+                        <div class="strategy-desc">Gain moyen maximisé</div>
+                    </div>
+                    
+                    <div class="strategy-option" data-strategy="midrange">
+                        <div class="strategy-icon">⚖️</div>
+                        <div class="strategy-name">Mid Range</div>
+                        <div class="strategy-desc">Filtrage cotes médianes</div>
+                    </div>
+                </div>
+                
+                <div class="midrange-params" id="midrangeParams">
+                    <div class="param-sliders">
+                        <div class="slider-group">
+                            <label>Exclure bas <span id="lowRangeValue">20%</span></label>
+                            <input type="range" id="lowRangeSlider" min="0" max="40" value="20" step="5">
                         </div>
-                    </div>
-                    
-                    <div class="optimisation-ev-label">
-                        💰 Optimisation EV
+                        <div class="slider-group">
+                            <label>Exclure haut <span id="highRangeValue">20%</span></label>
+                            <input type="range" id="highRangeSlider" min="0" max="40" value="20" step="5">
+                        </div>
                     </div>
                 </div>
                 
                 <!-- Élément checkbox caché qui sera connecté au script original -->
                 <input type="checkbox" id="strategyToggle" style="display: none;">
+                <input type="hidden" id="strategyType" value="dutch">
                 
                 <div class="sim-form">
                     <h3>Paramètres de la simulation</h3>
@@ -641,7 +889,7 @@
                     </div>
                     
                     <div class="input-group" id="maxPerHorseGroup">
-                        <label for="maxPerHorse">Mise maximale par cheval (€) - <small><i>uniquement pour l'Optimisation EV</i></small></label>
+                        <label for="maxPerHorse">Mise maximale par cheval (€) - <small><i>uniquement pour Optimisation EV et Mid Range</i></small></label>
                         <input type="number" id="maxPerHorse" value="30" min="1" step="1">
                     </div>
                     
@@ -717,172 +965,10 @@
         
         <footer>
             <h1>ANALYSE HIPPIQUE</h1>
-            <p>Système d'analyse pour événements hippiques - Dernière mise à jour: 16/04/2025</p>
+            <p>Système d'analyse pour événements hippiques - Dernière mise à jour: 17/04/2025</p>
         </footer>
     </div>
 
     <script src="simulation.js"></script>
-    
-    <script>
-        // Script pour gérer l'affichage du champ de mise maximale par cheval et le toggle
-        document.addEventListener('DOMContentLoaded', function() {
-            const maxPerHorseGroup = document.getElementById('maxPerHorseGroup');
-            const body = document.body;
-            const toggleBackground = document.getElementById('toggleBackground');
-            const toggleButton = document.getElementById('toggleButton');
-            const horseEntriesContainer = document.getElementById('horseEntries');
-            const horseCountInput = document.getElementById('horseCount');
-            
-            // Trouver le vrai toggle (checkbox) utilisé par le script original
-            const realToggle = document.getElementById('strategyToggle');
-            
-            // État initial
-            let isEVMode = false;
-            updateMaxPerHorseVisibility(isEVMode);
-            updateTheme(isEVMode);
-            
-            // Ajouter l'écouteur d'événements pour le toggle
-            toggleBackground.addEventListener('click', function() {
-                isEVMode = !isEVMode;
-                updateMaxPerHorseVisibility(isEVMode);
-                updateTheme(isEVMode);
-                
-                // L'élément clé: mettre à jour le vrai checkbox utilisé par le script original
-                // et déclencher l'événement change
-                realToggle.checked = isEVMode;
-                
-                // Créer et déclencher un événement change pour que le script original réagisse
-                const event = new Event('change');
-                realToggle.dispatchEvent(event);
-                
-                console.log("Toggle cliqué, mode EV:", isEVMode, "Checkbox modifié:", realToggle.checked);
-            });
-            
-            // Fonction pour générer les entrées de chevaux basées sur le nombre spécifié
-            function generateHorseEntries(count) {
-                // Vider le conteneur d'abord
-                horseEntriesContainer.innerHTML = '';
-                
-                // Générer les entrées
-                for (let i = 1; i <= count; i++) {
-                    addHorseEntry(i);
-                }
-            }
-            
-            // Fonction pour ajouter une ligne de cheval
-            function addHorseEntry(number, odds = '') {
-                const entry = document.createElement('div');
-                entry.className = 'horse-entry';
-                
-                entry.innerHTML = `
-                    <div class="horse-number">${number}</div>
-                    <input type="text" placeholder="Cote du cheval ${number}" class="horse-odds" value="${odds}">
-                `;
-                
-                horseEntriesContainer.appendChild(entry);
-                return entry;
-            }
-            
-            // Événement pour détecter le changement du nombre de chevaux
-            horseCountInput.addEventListener('change', function() {
-                const count = parseInt(this.value);
-                if (!isNaN(count) && count >= 2 && count <= 20) {
-                    generateHorseEntries(count);
-                }
-            });
-            
-            // Initialiser les entrées de chevaux
-            generateHorseEntries(parseInt(horseCountInput.value) || 5);
-            
-            function updateMaxPerHorseVisibility(isEVStrategy) {
-                // Ajouter une transition fluide
-                maxPerHorseGroup.style.transition = 'opacity 0.3s ease';
-                
-                if (isEVStrategy) {
-                    // Mode EV: montrer clairement que c'est actif
-                    maxPerHorseGroup.style.opacity = '1';
-                    maxPerHorseGroup.style.pointerEvents = 'all';
-                } else {
-                    // Mode Dutch: montrer que c'est désactivé mais visible
-                    maxPerHorseGroup.style.opacity = '0.6';
-                    maxPerHorseGroup.style.pointerEvents = 'none';
-                }
-            }
-            
-            function updateTheme(isEVStrategy) {
-                // Ajouter/enlever la classe ev-mode pour changer le thème
-                if (isEVStrategy) {
-                    body.classList.add('ev-mode');
-                } else {
-                    body.classList.remove('ev-mode');
-                }
-            }
-            
-            // Connecter les boutons d'action
-            document.getElementById('clearForm').addEventListener('click', function() {
-                // Réinitialiser les valeurs par défaut
-                document.getElementById('totalBet').value = 50;
-                document.getElementById('maxPerHorse').value = 30;
-                horseCountInput.value = 5;
-                
-                // Régénérer les entrées
-                generateHorseEntries(5);
-                
-                // Cacher les résultats et l'erreur
-                document.getElementById('resultContainer').style.display = 'none';
-                document.getElementById('errorMessage').style.display = 'none';
-            });
-            
-            // Exemple de données (à connecter au script original si nécessaire)
-            const exampleData = {
-                "SUENA EL DEMBOW": 3,
-                "JOUMA": 7.8,
-                "ALCAZAR DE SEGOVIA": 4.5,
-                "GANO Y VUELVO": 6.1,
-                "WHITE SPIRIT": 3
-            };
-            
-            document.getElementById('loadExample').addEventListener('click', function() {
-                // Mettre à jour le nombre de chevaux
-                const exampleCount = Object.keys(exampleData).length;
-                horseCountInput.value = exampleCount;
-                
-                // Vider et régénérer le formulaire
-                generateHorseEntries(exampleCount);
-                
-                // Charger l'exemple
-                let i = 1;
-                for (const odds of Object.values(exampleData)) {
-                    const entry = horseEntriesContainer.children[i - 1];
-                    if (entry) {
-                        entry.querySelector('.horse-odds').value = odds;
-                    }
-                    i++;
-                }
-                
-                // Cacher les résultats et l'erreur
-                document.getElementById('resultContainer').style.display = 'none';
-                document.getElementById('errorMessage').style.display = 'none';
-            });
-            
-            // Observer mutation sur la table pour supprimer automatiquement la formule
-            const observer = new MutationObserver(function(mutations) {
-                // Chercher et supprimer les formules EV qui pourraient être ajoutées
-                const formulas = document.querySelectorAll('.formula-explanation');
-                formulas.forEach(formula => {
-                    formula.style.display = 'none';
-                });
-            });
-            
-            // Observer le tbody des résultats pour détecter quand des résultats sont ajoutés
-            const betsTableBody = document.getElementById('betsTableBody');
-            if (betsTableBody) {
-                observer.observe(betsTableBody, { 
-                    childList: true, 
-                    subtree: true 
-                });
-            }
-        });
-    </script>
 </body>
 </html>
