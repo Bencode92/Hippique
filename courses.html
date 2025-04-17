@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Ajouter le script de chargement des données avant tout autre script -->
+    <script src="data-loader.js"></script>
+    
     <style>
         :root {
             --dark-teal: #0A2E2A;
@@ -994,7 +998,7 @@
         
         <button class="date-button" id="date-button">
             <i class="fas fa-calendar-alt"></i>
-            <span id="current-date">Chargement...</span>
+            <span id="current-date">Aujourd'hui (17/04/2025)</span>
         </button>
         
         <div class="tabs">
@@ -1059,12 +1063,9 @@
     
     <footer>
         <p>ANALYSE HIPPIQUE - Système d'analyse pour événements hippiques</p>
-        <p>Dernière mise à jour des données: <span id="last-update">Chargement...</span></p>
+        <p>Dernière mise à jour des données: <span id="last-update">17/04/2025</span></p>
         <p><a href="simulation.html" style="color: var(--accent); text-decoration: none;">Simulateur de paris optimaux</a></p>
     </footer>
-
-    <!-- Ajouter le script de chargement des données -->
-    <script src="data-loader.js"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -1152,7 +1153,7 @@
                             <div class="course-item">
                                 <div class="course-name">
                                     <i class="fas fa-flag-checkered"></i>
-                                    ${course.horaire} - ${course.nom}
+                                    ${course.horaire || '12h00'} - ${course.nom}
                                 </div>
                                 <div class="course-info">
                                     <div class="participants-count">
@@ -1200,8 +1201,10 @@
                         if (firstHeader) {
                             const targetId = firstHeader.dataset.target;
                             const coursesList = document.getElementById(targetId);
-                            coursesList.classList.add('visible');
-                            firstHeader.querySelector('.toggle-icon').classList.add('open');
+                            if (coursesList) {
+                                coursesList.classList.add('visible');
+                                firstHeader.querySelector('.toggle-icon').classList.add('open');
+                            }
                         }
                     }
                     
@@ -1237,7 +1240,7 @@
                     </div>
                     <div class="meta-item">
                         <i class="fas fa-clock"></i>
-                        <strong>Horaire:</strong> ${course.horaire}
+                        <strong>Horaire:</strong> ${course.horaire || '12h00'}
                     </div>
                     <div class="meta-item">
                         <i class="fas fa-calendar"></i>
@@ -1335,6 +1338,14 @@
             function loadCoursesForDate(date) {
                 console.log(`Chargement des courses pour la date: ${date}`);
                 
+                // Afficher l'indicateur de chargement
+                resultsContainer.innerHTML = `
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        <p>Chargement des courses...</p>
+                    </div>
+                `;
+                
                 // Utiliser le module de chargement de données
                 window.hippique.loadAndDisplayRaces(date, 
                     // Callback de succès
@@ -1360,8 +1371,15 @@
             // Masquer le bouton d'effacement au chargement
             searchClear.style.display = 'none';
             
-            // Charger les courses du jour au démarrage
+            // Initialiser avec la date du jour au chargement initial de la page
             const today = window.hippique.getTodayDateFormatted();
+            
+            // Mettre à jour l'affichage de la date
+            const now = new Date();
+            currentDateSpan.textContent = `Aujourd'hui (${formatDateLocal(now)})`;
+            lastUpdateEl.textContent = formatDateLocal(now);
+            
+            // Charger les courses immédiatement au chargement
             loadCoursesForDate(today);
         });
     </script>
