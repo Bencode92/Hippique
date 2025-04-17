@@ -608,6 +608,45 @@
         .search-active-indicator i {
             color: var(--gold);
         }
+
+        /* Tooltip d'information sur le classement dense */
+        .ranking-info {
+            position: relative;
+            display: inline-block;
+            margin-left: 10px;
+            cursor: help;
+        }
+
+        .ranking-info i {
+            color: var(--gold);
+            font-size: 0.9rem;
+        }
+
+        .ranking-info-tooltip {
+            visibility: hidden;
+            width: 300px;
+            background-color: rgba(10, 35, 35, 0.95);
+            color: var(--light-gold);
+            text-align: left;
+            border-radius: 8px;
+            padding: 12px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -150px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(64, 224, 208, 0.3);
+            font-weight: normal;
+            font-size: 0.9rem;
+        }
+
+        .ranking-info:hover .ranking-info-tooltip {
+            visibility: visible;
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
@@ -688,6 +727,12 @@
             <button class="sort-btn" data-sort="mixte">
                 <i class="fas fa-chart-line"></i> Classement pondéré
             </button>
+            <div class="ranking-info">
+                <i class="fas fa-info-circle"></i>
+                <div class="ranking-info-tooltip">
+                    Ce classement utilise un système de rangs "dense" sans sauts pour les ex-aequo. Par exemple, si trois participants sont à égalité au rang 4, le suivant sera au rang 5 (et non 7). Ce système est optimal pour la pondération et la comparaison entre différents critères.
+                </div>
+            </div>
         </div>
         
         <div id="search-indicator" style="display: none;" class="search-active-indicator">
@@ -895,44 +940,9 @@
                 ]
             };
             
-            // Fonction pour le classement standard avec sauts de rang - pour l'affichage visuel
-            function rankWithTies(items, valueGetter) {
-                // Trier d'abord par la valeur (décroissante)
-                const sorted = [...items].sort((a, b) => {
-                    const valA = valueGetter(a);
-                    const valB = valueGetter(b);
-                    const diff = valB - valA;
-                    // En cas d'égalité, trier par nom pour garantir la stabilité
-                    if (diff === 0) {
-                        const nameA = currentCategory === 'chevaux' ? a.Nom : a.NomPostal;
-                        const nameB = currentCategory === 'chevaux' ? b.Nom : b.NomPostal;
-                        return nameA.localeCompare(nameB);
-                    }
-                    return diff;
-                });
-                
-                // Assigner les rangs avec gestion des égalités (avec sauts)
-                const ranks = new Map();
-                let currentRank = 1;
-                let currentValue = null;
-                
-                sorted.forEach((item, index) => {
-                    const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
-                    const value = valueGetter(item);
-                    
-                    // Si c'est la première itération ou si la valeur est différente
-                    if (index === 0 || value !== currentValue) {
-                        currentRank = index + 1;
-                        currentValue = value;
-                    }
-                    
-                    ranks.set(key, currentRank);
-                });
-                
-                return ranks;
-            }
+            // SUPPRESSION : Nous n'utilisons plus la fonction rankWithTies avec sauts de rang
             
-            // NOUVELLE FONCTION: Classement dense sans sauts - pour le calcul du score pondéré
+            // Fonction de classement dense (sans sauts) pour tous les types de tri
             function rankWithTiesDense(items, valueGetter) {
                 // Trier d'abord par la valeur (décroissante)
                 const sorted = [...items].sort((a, b) => {
@@ -992,7 +1002,6 @@
                 const placeRateGetter = item => parseFloat(item.TauxPlace || 0);
                 
                 // Calcul des rangs pour chaque métrique avec gestion des égalités DENSE
-                // Utiliser rankWithTiesDense au lieu de rankWithTies pour une pondération plus équilibrée
                 const victoryRanks = rankWithTiesDense(dataCopy, victoryGetter);
                 const victoryRateRanks = rankWithTiesDense(dataCopy, victoryRateGetter);
                 const placeRateRanks = rankWithTiesDense(dataCopy, placeRateGetter);
@@ -1060,26 +1069,25 @@
                     return nameA.localeCompare(nameB);
                 });
                 
-                // Assigner les rangs AVEC SAUTS pour l'affichage (pour conserver l'apparence visuelle actuelle)
-                // Mais notez que ceci est uniquement pour l'affichage, les calculs ont été faits avec des rangs denses
+                // MODIFICATION: Assigner les rangs SANS SAUTS pour l'affichage (classement dense)
+                let currentRank = 1;
+                let currentScore = null;
+                let sameRankCount = 0;
+                
                 sortedData.forEach((item, index) => {
-                    const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
+                    const score = parseFloat(item.ScoreMixte || 999);
                     
-                    // Pour la cohérence visuelle, on utilise des rangs avec sauts pour l'affichage
-                    if (index === 0) {
-                        item.Rang = 1;
+                    if (index === 0 || Math.abs(score - currentScore) > 0.001) {
+                        // Nouvelle valeur = nouveau rang, mais sans saut
+                        currentRank = index + 1 - sameRankCount;
+                        currentScore = score;
+                        sameRankCount = 0;
                     } else {
-                        const prevItem = sortedData[index - 1];
-                        const prevScore = parseFloat(prevItem.ScoreMixte);
-                        const currentScore = parseFloat(item.ScoreMixte);
-                        
                         // Même score = même rang
-                        if (Math.abs(currentScore - prevScore) < 0.001) {
-                            item.Rang = prevItem.Rang;
-                        } else {
-                            item.Rang = index + 1;
-                        }
+                        sameRankCount++;
                     }
+                    
+                    item.Rang = currentRank;
                 });
                 
                 return sortedData;
@@ -1330,7 +1338,7 @@
                 return number.toLocaleString('fr-FR');
             }
             
-            // Fonction pour trier les données avec gestion des égalités pour tous les types de tri
+            // MODIFICATION: Fonction pour trier les données avec le classement dense uniquement
             function sortData(data, sortKey, direction = sortDirection) {
                 console.log(`Tri appliqué: ${sortKey}, direction: ${direction}`); // Ajout de log pour debug
                 
@@ -1361,15 +1369,19 @@
                     valueGetter = item => parseFloat(item.TauxPlace || 0);
                 }
                 
-                // Utiliser rankWithTies pour générer les rangs avec gestion des égalités
-                const ranks = rankWithTies(sortedData, valueGetter);
+                // MODIFICATION: Utiliser le classement dense (sans sauts) pour tous les types de tri
+                const ranks = rankWithTiesDense(sortedData, valueGetter);
                 
                 // Inverser tous les rangs si la direction est ascendante
                 const finalRanks = new Map();
                 if (direction === 'asc') {
                     const totalItems = sortedData.length;
+                    const maxRank = Math.max(...Array.from(ranks.values()));
                     ranks.forEach((rank, key) => {
-                        finalRanks.set(key, totalItems - rank + 1);
+                        // MODIFICATION: Calculer le rang inversé en préservant les ex-aequo
+                        const groupSize = Array.from(ranks.values()).filter(r => r === rank).length;
+                        const inverseRank = maxRank - rank + 1;
+                        finalRanks.set(key, inverseRank);
                     });
                 } else {
                     // Si direction est descendante, utiliser les rangs originaux
@@ -1378,8 +1390,7 @@
                     });
                 }
                 
-                // Important: Nouvelle approche pour trier correctement les données
-                // Trier d'abord par la valeur (en tenant compte de la direction)
+                // Important: Trier par la valeur (en tenant compte de la direction)
                 const sortedByValue = [...sortedData].sort((a, b) => {
                     const valA = valueGetter(a);
                     const valB = valueGetter(b);
@@ -1397,18 +1408,30 @@
                     return diff;
                 });
                 
-                // Assigner les rangs finaux
+                // Assigner les rangs finaux avec le classement dense
+                // MODIFICATION: Utiliser directement le classement dense
+                let currentRank = 1;
+                let prevValue = null;
+                let sameCount = 0;
+                
                 sortedByValue.forEach((item, index) => {
                     const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
+                    const value = valueGetter(item);
                     
-                    // 1. Fixer le rang en fonction de nos calculs d'égalité
-                    if (direction === 'desc') {
-                        item.Rang = finalRanks.get(key) || (index + 1);
+                    // Assigner les rangs selon le classement dense (sans sauts)
+                    if (index === 0) {
+                        currentRank = 1;
+                        prevValue = value;
+                    } else if (value !== prevValue) {
+                        currentRank = index + 1 - sameCount;
+                        prevValue = value;
                     } else {
-                        item.Rang = finalRanks.get(key) || (sortedByValue.length - index);
+                        sameCount++;
                     }
                     
-                    // 2. Récupérer le score mixte si disponible
+                    item.Rang = currentRank;
+                    
+                    // Récupérer le score mixte si disponible
                     if (originalScores[currentCategory] && originalScores[currentCategory][key]) {
                         item.ScoreMixte = originalScores[currentCategory][key];
                     } else if (!item.ScoreMixte) {
