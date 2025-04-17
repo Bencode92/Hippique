@@ -598,8 +598,15 @@ document.addEventListener('DOMContentLoaded', function() {
         // Exclure les N favoris (les N plus petites cotes) et N outsiders (les N plus hautes cotes)
         const filteredEntries = sortedEntries.slice(excludeLow, total - excludeHigh);
         
-        // Trier ce qu'il reste (mid range) par cote croissante : les plus probables en premier
-        const midRangeEntries = filteredEntries.sort((a, b) => a[1] - b[1]);
+        // Limitation du nombre maximum de chevaux pour les performances
+        const MAX_HORSES_TO_CONSIDER = 8; // Limiter à 8 chevaux maximum
+        let midRangeEntries = filteredEntries;
+        
+        // Si on a beaucoup de chevaux et aucune exclusion, on limite aux favoris
+        if (filteredEntries.length > MAX_HORSES_TO_CONSIDER && excludeLow === 0 && excludeHigh === 0) {
+            midRangeEntries = filteredEntries.slice(0, MAX_HORSES_TO_CONSIDER);
+            console.log(`Trop de chevaux (${filteredEntries.length}), limitation aux ${MAX_HORSES_TO_CONSIDER} favoris`);
+        }
         
         // Convertir en objet
         const midRangeHorses = Object.fromEntries(midRangeEntries);
@@ -737,6 +744,13 @@ document.addEventListener('DOMContentLoaded', function() {
             if (size <= horseNames.length) {
                 // AMÉLIORATION : Générer toutes les combinaisons possibles de taille 'size'
                 const allPossibleCombos = getAllCombos(horseNames, size);
+                
+                // Trier les combinaisons par la somme des cotes (préférer les plus petites sommes)
+                allPossibleCombos.sort((a, b) => {
+                    const sumA = a.reduce((sum, horseName) => sum + midRangeHorses[horseName], 0);
+                    const sumB = b.reduce((sum, horseName) => sum + midRangeHorses[horseName], 0);
+                    return sumA - sumB; // Trier par ordre croissant de cotes
+                });
                 
                 // Limiter le nombre de combinaisons à tester pour des performances raisonnables
                 const MAX_COMBOS_TO_TEST = 100;
