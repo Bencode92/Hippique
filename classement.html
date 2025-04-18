@@ -771,8 +771,8 @@
             // Variables globales
             let currentCategory = 'jockeys';
             let currentPage = 1;
-            let currentSort = 'mixte';  // MODIFIÉ: Utiliser 'mixte' (classement pondéré) par défaut au lieu de 'default'
-            let sortDirection = 'asc';   // MODIFIÉ: 'asc' par défaut pour le score pondéré (plus bas = meilleur)
+            let currentSort = 'default';  // default, taux-victoire, taux-place, mixte
+            let sortDirection = 'desc';   // asc, desc
             const itemsPerPage = 20;
             let allData = {};
             let originalScores = {};  // Stockage pour les scores pondérés originaux
@@ -1045,7 +1045,7 @@
                     }
                     
                     // Calcul du score pondéré avec rangs DENSES
-                    item.ScoreMixte = (\
+                    item.ScoreMixte = (
                         poidsV * rangVictoires +
                         poidsTV * rangTauxVictoire +
                         poidsTP * rangTauxPlace
@@ -1695,11 +1695,6 @@
                 currentCategory = category;
                 currentPage = 1;
                 
-                // MODIFICATION: Définir les valeurs par défaut pour chaque catégorie
-                // Par défaut tri par classement pondéré (mixte) avec direction ascendante (plus petit = meilleur)
-                currentSort = 'mixte';
-                sortDirection = 'asc';
-                
                 // Mettre à jour les onglets actifs
                 tabs.forEach(tab => {
                     if (tab.dataset.category === category) {
@@ -1709,7 +1704,9 @@
                     }
                 });
                 
-                // Mettre à jour visuellement les boutons de tri
+                // Réinitialiser le tri
+                currentSort = 'default';
+                sortDirection = 'desc';
                 updateSortButtons();
                 
                 // Montrer le squelette de chargement
@@ -1719,8 +1716,8 @@
                 const data = await loadData(category);
                 
                 // Appliquer le tri par défaut aux données avec gestion des égalités
-                // Direction ascendante pour le score pondéré (plus petit = meilleur)
-                const sortedData = sortData(data, currentSort, sortDirection);
+                // Toujours utiliser la direction descendante (du plus grand au plus petit) pour le tri par défaut
+                const sortedData = sortData(data, currentSort, 'desc');
                 
                 // Filtrer les données si nécessaire
                 const searchTerm = searchInput.value.trim();
@@ -1853,8 +1850,6 @@
             // Définir le tri si fourni dans l'URL
             if (sortParam && ['default', 'taux-victoire', 'taux-place', 'mixte'].includes(sortParam)) {
                 currentSort = sortParam;
-                // Si tri mixte, utiliser ascendant, sinon descendant
-                sortDirection = sortParam === 'mixte' ? 'asc' : 'desc';
             }
             
             // Définir la recherche si fournie dans l'URL
@@ -1870,7 +1865,7 @@
             setTimeout(() => {
                 document.body.style.opacity = '1';
                 
-                // Charger la catégorie initiale avec le tri et la direction définis
+                // Charger la catégorie initiale
                 loadCategory(currentCategory);
             }, 100);
         });
