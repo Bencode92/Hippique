@@ -1786,6 +1786,9 @@
                                 confidenceClass = 'confidence-medium';
                             }
                             
+                            // Calculer le score NC basé sur l'indice de confiance pour l'affichage
+                            const ncScore = (15 * (1 + confidence)).toFixed(1);
+                            
                             participantsHTML += `
                                 <tr data-score="${scorePredictif.score}" data-numero="${participant.numero || 0}">
                                     <td style="text-align: center;">
@@ -1802,7 +1805,7 @@
                                             <div class="prediction-bar" style="width: ${normalizedScore * 100}%;"></div>
                                             <div class="prediction-value">
                                                 ${participant.status === 'NC' ? 
-                                                    `${(15 * (1 + confidence)).toFixed(1)} pts` : 
+                                                    `${ncScore} pts` : 
                                                     scorePredictif.score}
                                             </div>
                                         </div>
@@ -1814,7 +1817,7 @@
                                                     ''}
                                             </small>
                                             <div class="tooltip-content">
-                                                <p>Cheval: Rang #${scorePredictif.details.cheval.rang} (${scorePredictif.details.cheval.score} pts)</p>
+                                                <p>Cheval: Rang #${scorePredictif.details.cheval.rang} (${participant.status === 'NC' && scorePredictif.details.cheval.rang === 'NC' ? ncScore : scorePredictif.details.cheval.score} pts)</p>
                                                 <p>Jockey: Rang #${scorePredictif.details.jockey.rang} (${scorePredictif.details.jockey.score} pts)</p>
                                                 <p>Entraîneur: Rang #${scorePredictif.details.entraineur.rang} (${scorePredictif.details.entraineur.score} pts)</p>
                                                 <p>Éleveur: Rang #${scorePredictif.details.eleveur.rang} (${scorePredictif.details.eleveur.score} pts)</p>
