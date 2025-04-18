@@ -7,12 +7,10 @@ on:
   
   # Permet aussi de déclencher manuellement
   workflow_dispatch:
-    
-  # Exécuter après chaque push sur main
-  push:
-    branches: [main]
-    paths:
-      - 'data/*.json' # Uniquement si les données sources sont modifiées
+
+# Permissions nécessaires pour pousser des modifications
+permissions:
+  contents: write
 
 jobs:
   generate-rankings:
@@ -27,14 +25,40 @@ jobs:
         with:
           node-version: '18'
       
-      - name: Generate rankings
-        run: node extract-pondered-rankings.js
+      - name: List files in repository
+        run: ls -la
+      
+      - name: Create data directory if it doesn't exist
+        run: mkdir -p data
+      
+      - name: Modify script to ensure it works in GitHub Actions
+        run: |
+          # Modifier le script pour s'assurer qu'il crée des fichiers dans le bon répertoire
+          sed -i 's|const OUTPUT_DIR = \x27\./data\x27;|const OUTPUT_DIR = \x27data\x27;|g' extract-pondered-rankings.js
+      
+      - name: Generate rankings with debug output
+        run: |
+          # Afficher le contenu du script pour débogage
+          echo "===== SCRIPT CONTENT ====="
+          cat extract-pondered-rankings.js
+          echo "=========================="
+          
+          # Exécuter le script avec des logs détaillés
+          node --trace-warnings extract-pondered-rankings.js
+      
+      - name: Check if files were generated
+        run: |
+          echo "===== DIRECTORY CONTENT AFTER SCRIPT ====="
+          ls -la
+          echo "===== DATA DIRECTORY CONTENT ====="
+          ls -la data || echo "Data directory not found"
       
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data/*ponderated*.json
+          git add data || echo "No data directory to add"
+          git status
           # Ne pas générer d'erreur si aucun changement à committer
           git commit -m "Mise à jour automatique des classements pondérés" || echo "No changes to commit"
-          git push
+          git push || echo "Push failed, possibly no changes"
