@@ -1800,7 +1800,11 @@
                                     <td class="prediction-cell">
                                         <div class="prediction-bar-container">
                                             <div class="prediction-bar" style="width: ${normalizedScore * 100}%;"></div>
-                                            <div class="prediction-value">${scorePredictif.score}</div>
+                                            <div class="prediction-value">
+                                                ${participant.status === 'NC' ? 
+                                                    `${(15 * (1 + confidence)).toFixed(1)} pts` : 
+                                                    scorePredictif.score}
+                                            </div>
                                         </div>
                                         <div class="score-details">
                                             <small>
