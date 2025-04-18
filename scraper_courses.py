@@ -23,8 +23,7 @@ class ScraperCoursesFG:
     def get_driver(self):
         """Initialise et retourne un driver Selenium"""
         options = Options()
-        # Commenté temporairement pour déboguer Saint-Cloud
-        # options.add_argument("--headless=new")
+        options.add_argument("--headless=new")
         options.add_argument("--window-size=1920,1080")
         options.add_argument("--disable-gpu")
         options.add_argument("--no-sandbox")
@@ -44,46 +43,8 @@ class ScraperCoursesFG:
     
     def extract_participants_table(self, course_soup):
         """Extrait les participants depuis le tableau de partants de la page de course"""
-        # Recherche plus précise des tableaux de participants
-        table = None
-        
-        # Essayer d'abord les sélecteurs spécifiques aux tableaux de partants
-        for selector in ["table.tableau-partants", "table.partants", "[class*='tableau-partants']", 
-                        ".partants-table", "#partants", ".partants", "[id*='partants']", 
-                        ".table-responsive table"]:
-            table_candidate = course_soup.select_one(selector)
-            if table_candidate:
-                print(f"🎯 Tableau de partants trouvé avec le sélecteur: {selector}")
-                table = table_candidate
-                break
-        
-        # Si aucun tableau spécifique n'est trouvé, essayer tous les tableaux
+        table = course_soup.find("table")
         if not table:
-            # Obtenir tous les tableaux de la page
-            all_tables = course_soup.find_all("table")
-            
-            if all_tables:
-                print(f"📊 {len(all_tables)} tableaux trouvés sur la page")
-                
-                # Essayer de trouver le tableau qui semble être celui des partants (avec le plus de lignes ou certains en-têtes spécifiques)
-                max_rows = 0
-                for candidate in all_tables:
-                    rows = candidate.find_all("tr")
-                    if len(rows) > max_rows:
-                        # Vérifier si ce tableau a des en-têtes qui pourraient indiquer des partants
-                        headers = [th.get_text(strip=True).lower() for th in candidate.find_all("th")]
-                        if any(keyword in " ".join(headers) for keyword in ["cheval", "jockey", "entraineur", "corde", "poids"]):
-                            table = candidate
-                            max_rows = len(rows)
-                            print(f"📑 Tableau de partants probable trouvé avec {max_rows} lignes")
-                
-                # Si toujours pas de tableau identifié, prendre le plus grand
-                if not table and all_tables:
-                    table = all_tables[0]  # Prendre le premier tableau par défaut
-                    print(f"⚠️ Aucun tableau de partants spécifique identifié, utilisation du premier tableau ({len(table.find_all('tr'))} lignes)")
-        
-        if not table:
-            print("⚠️ Aucun tableau trouvé sur la page")
             return []
 
         headers = []
@@ -208,14 +169,7 @@ class ScraperCoursesFG:
         """Récupère les liens des réunions pour aujourd'hui, toutes disciplines confondues"""
         print(f"📅 Accès à la page des courses du jour: {self.courses_aujourdhui_url}")
         driver.get(self.courses_aujourdhui_url)
-        
-        # Utiliser WebDriverWait au lieu de time.sleep
-        try:
-            WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, ".card, .reunion-card, [class*='hippodrome-card'], [class*='reunion'], a[href*='reunion']"))
-            )
-        except Exception as e:
-            print(f"⚠️ Timeout en attendant les cartes d'hippodromes: {str(e)}")
+        time.sleep(5)  # Attendre que la page se charge
 
         print("🔍 Scraping des courses du jour (page 'aujourdhui')...")
         links = []
@@ -349,56 +303,34 @@ class ScraperCoursesFG:
         """Extrait les détails de toutes les courses d'un hippodrome"""
         print(f"📍 Scraping des courses à {hippodrome}...")
         
-        # Gestion spécifique pour SAINT-CLOUD
-        is_saint_cloud = 'SAINT-CLOUD' in hippodrome.upper()
+        driver.get(course_url)
+        time.sleep(5)  # Augmentation du délai
+        
+        # Vérifier si la page a été correctement chargée
+        html = driver.page_source
+        soup = BeautifulSoup(html, "html.parser")
+        
+        # Essayer d'extraire le vrai nom de l'hippodrome depuis la page
+        real_hippodrome_name = self.get_real_hippodrome_name(soup, hippodrome)
+        if real_hippodrome_name and real_hippodrome_name != hippodrome:
+            print(f"🏇 Nom réel de l'hippodrome trouvé: {real_hippodrome_name}")
+            hippodrome = real_hippodrome_name
+        
+        # Extraire le type de réunion (Plat/Obstacle) si pas déjà déterminé
+        if reunion_type == "Indéterminé":
+            reunion_info = self.extract_reunion_type(soup)
+            reunion_type = reunion_info["type"]
+            print(f"🏇 Type de réunion détecté: {reunion_type}")
+        
+        courses_data = {
+            "hippodrome": hippodrome,
+            "type_reunion": reunion_type,
+            "date_extraction": datetime.now().isoformat(),
+            "url_source": course_url,
+            "courses": []
+        }
         
         try:
-            # Naviguer vers l'URL et attendre le chargement
-            print(f"  🌐 Navigation vers: {course_url}")
-            driver.get(course_url)
-            
-            # Attente plus longue pour Saint-Cloud
-            wait_time = 10 if is_saint_cloud else 5
-            
-            try:
-                # Attendre que la page se charge complètement
-                WebDriverWait(driver, wait_time).until(
-                    EC.presence_of_element_located((By.CSS_SELECTOR, "table, .table-responsive, [class*='course'], .content-block"))
-                )
-                print("  ✅ Page chargée avec succès")
-            except Exception as e:
-                print(f"  ⚠️ Timeout en attendant le chargement de la page: {str(e)}")
-            
-            # Vérifier la redirection
-            current_url = driver.current_url
-            if current_url != course_url:
-                print(f"  ℹ️ Redirection détectée: {course_url} -> {current_url}")
-                course_url = current_url
-            
-            # Extraire le HTML de la page
-            html = driver.page_source
-            soup = BeautifulSoup(html, "html.parser")
-            
-            # Essayer d'extraire le vrai nom de l'hippodrome depuis la page
-            real_hippodrome_name = self.get_real_hippodrome_name(soup, hippodrome)
-            if real_hippodrome_name and real_hippodrome_name != hippodrome:
-                print(f"🏇 Nom réel de l'hippodrome trouvé: {real_hippodrome_name}")
-                hippodrome = real_hippodrome_name
-            
-            # Extraire le type de réunion (Plat/Obstacle) si pas déjà déterminé
-            if reunion_type == "Indéterminé":
-                reunion_info = self.extract_reunion_type(soup)
-                reunion_type = reunion_info["type"]
-                print(f"🏇 Type de réunion détecté: {reunion_type}")
-            
-            courses_data = {
-                "hippodrome": hippodrome,
-                "type_reunion": reunion_type,
-                "date_extraction": datetime.now().isoformat(),
-                "url_source": course_url,
-                "courses": []
-            }
-            
             # Prenons une capture d'écran pour le débogage
             screenshot_dir = os.path.join(self.output_dir, "debug")
             os.makedirs(screenshot_dir, exist_ok=True)
@@ -415,22 +347,12 @@ class ScraperCoursesFG:
                 f.write(html)
             
             # NOUVELLE APPROCHE: Trouver le tableau des courses sur la page de réunion
-            table_selectors = ["table", "table.courses-table", "table.programme", ".programme table", 
-                              ".table-responsive table", ".content-block table"]
-            
-            course_table = None
-            for selector in table_selectors:
-                table = soup.select_one(selector)
-                if table:
-                    course_table = table
-                    print(f"  ✅ Tableau trouvé avec le sélecteur: {selector}")
-                    break
-            
+            course_table = soup.select_one("table")
             if not course_table:
                 print("⚠️ Aucun tableau de courses trouvé sur la page de réunion")
                 
                 # Si pas de tableau, essayer de trouver des liens directs vers les courses
-                course_links = soup.select("a[href*='fiche-course'], a[href*='programme'], a.course-link, a[href*='PRIX']")
+                course_links = soup.select("a[href*='fiche-course']")
                 if course_links:
                     print(f"🔄 Alternative: trouvé {len(course_links)} liens directs vers des courses")
                     
@@ -442,27 +364,10 @@ class ScraperCoursesFG:
                         print(f"🔍 Course {index+1}/{len(course_links)}: {course_name}")
                         
                         try:
-                            # Ouvrir la page de la course pour extraire les participants
                             driver.get(course_url)
-                            
-                            # Attendre spécifiquement l'apparition du tableau des participants
-                            try:
-                                WebDriverWait(driver, 15).until(
-                                    EC.presence_of_element_located((By.CSS_SELECTOR, "table"))
-                                )
-                                print("  ✅ Tableau de participants trouvé")
-                            except Exception as e:
-                                print(f"  ⚠️ Timeout en attendant le tableau de participants: {str(e)}")
-                            
-                            # Prendre une capture d'écran pour débogage
-                            course_screenshot_path = os.path.join(screenshot_dir, f"{safe_hippodrome}_course_{index+1}.png")
-                            driver.save_screenshot(course_screenshot_path)
+                            time.sleep(3)
                             
                             course_html = driver.page_source
-                            # Sauvegarder le HTML pour débogage
-                            with open(os.path.join(screenshot_dir, f"{safe_hippodrome}_course_{index+1}.html"), "w", encoding="utf-8") as f:
-                                f.write(course_html)
-                                
                             course_soup = BeautifulSoup(course_html, "html.parser")
                             
                             # Extraire les détails de la course
@@ -582,25 +487,13 @@ class ScraperCoursesFG:
                     try:
                         # Ouvrir la page de la course pour extraire les participants
                         driver.get(course_link)
-                        
-                        # Attendre spécifiquement l'apparition du tableau des participants
-                        try:
-                            WebDriverWait(driver, 15).until(
-                                EC.presence_of_element_located((By.CSS_SELECTOR, "table"))
-                            )
-                            print("  ✅ Tableau de participants trouvé")
-                        except Exception as e:
-                            print(f"  ⚠️ Timeout en attendant le tableau de participants: {str(e)}")
+                        time.sleep(3)
                         
                         # Capture d'écran pour débogage
                         course_screenshot_path = os.path.join(screenshot_dir, f"{safe_hippodrome}_course_{index+1}.png")
                         driver.save_screenshot(course_screenshot_path)
                         
                         course_html = driver.page_source
-                        # Sauvegarder le HTML pour débogage
-                        with open(os.path.join(screenshot_dir, f"{safe_hippodrome}_course_{index+1}.html"), "w", encoding="utf-8") as f:
-                            f.write(course_html)
-                            
                         course_soup = BeautifulSoup(course_html, "html.parser")
                         
                         # Essayer de déterminer le type de course plus précisément
@@ -643,7 +536,7 @@ class ScraperCoursesFG:
                 print("⚠️ Aucune course détectée via le tableau, tentative d'approche alternative")
                 
                 # Approche alternative: chercher des cartes ou éléments contenant des infos de course
-                course_elements = soup.select(".course-card, .race-card, [class*='course'], [class*='race'], [class*='prix']")
+                course_elements = soup.select(".course-card, .race-card, [class*='course'], [class*='race']")
                 if course_elements:
                     print(f"🔄 Alternative: trouvé {len(course_elements)} éléments de course")
                     
@@ -658,9 +551,6 @@ class ScraperCoursesFG:
                         name_elem = elem.select_one("h2, h3, .title, [class*='title']")
                         if name_elem:
                             course_name = name_elem.get_text(strip=True)
-                        elif elem.get_text(strip=True):
-                            # Si pas d'élément titre, utiliser le texte de l'élément lui-même
-                            course_name = elem.get_text(strip=True)
                             
                         # Chercher un lien
                         course_link = None
@@ -692,15 +582,7 @@ class ScraperCoursesFG:
                         if course_link:
                             try:
                                 driver.get(course_link)
-                                
-                                # Attendre spécifiquement l'apparition du tableau des participants
-                                try:
-                                    WebDriverWait(driver, 15).until(
-                                        EC.presence_of_element_located((By.CSS_SELECTOR, "table"))
-                                    )
-                                    print("  ✅ Tableau de participants trouvé")
-                                except Exception as e:
-                                    print(f"  ⚠️ Timeout en attendant le tableau de participants: {str(e)}")
+                                time.sleep(3)
                                 
                                 course_html = driver.page_source
                                 course_soup = BeautifulSoup(course_html, "html.parser")
@@ -730,14 +612,7 @@ class ScraperCoursesFG:
         except Exception as e:
             print(f"❌ Erreur lors de l'extraction des courses à {hippodrome}: {str(e)}")
             traceback.print_exc()
-            courses_data = {
-                "hippodrome": hippodrome,
-                "type_reunion": reunion_type,
-                "date_extraction": datetime.now().isoformat(),
-                "url_source": course_url,
-                "error": str(e),
-                "courses": []
-            }
+            courses_data["error"] = str(e)
             return courses_data
     
     def save_json(self, data, filename):
@@ -804,13 +679,7 @@ class ScraperCoursesFG:
                     # Visiter la page pour essayer d'extraire le vrai nom
                     print(f"🔍 Tentative d'extraction du vrai nom pour: {hippodrome_name}")
                     driver.get(course["url"])
-                    try:
-                        WebDriverWait(driver, 10).until(
-                            EC.presence_of_element_located((By.CSS_SELECTOR, "h1, h2, .title"))
-                        )
-                    except:
-                        pass
-                    
+                    time.sleep(3)
                     html = driver.page_source
                     soup = BeautifulSoup(html, "html.parser")
                     real_name = self.get_real_hippodrome_name(soup, hippodrome_name)
@@ -857,15 +726,7 @@ class ScraperCoursesFG:
         try:
             # Visiter d'abord l'URL pour essayer d'extraire le vrai nom d'hippodrome
             driver.get(url)
-            
-            # Attendre spécifiquement que la page se charge
-            try:
-                WebDriverWait(driver, 15).until(
-                    EC.presence_of_element_located((By.CSS_SELECTOR, "h1, h2, table, .content-block"))
-                )
-            except Exception as e:
-                print(f"⚠️ Timeout en attendant le chargement de la page: {str(e)}")
-            
+            time.sleep(3)
             html = driver.page_source
             soup = BeautifulSoup(html, "html.parser")
             hippodrome = self.get_real_hippodrome_name(soup, "Hippodrome_Direct")
