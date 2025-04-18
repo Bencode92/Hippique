@@ -165,20 +165,28 @@ const rankingLoader = {
         return Promise.all(promises);
     },
     
-    // Fonction pour normaliser et nettoyer un nom (améliorée pour les écuries)
+    // Fonction pour normaliser et nettoyer un nom (améliorée pour les chevaux et écuries)
     normaliserNom(nom) {
         if (!nom) return "";
         
         // Convertir en majuscules et supprimer les espaces superflus
         let nomNormalise = nom.toUpperCase().trim();
         
-        // Supprimer les suffixes techniques pour les chevaux
-        nomNormalise = nomNormalise.replace(/\s+[FM]\.P\.S\..*$/i, "")
-                                .replace(/\s+GB\s+F\.P\.S\..*$/i, "")
-                                .replace(/\s+\d+A\..*$/i, "")
-                                .replace(/\s+\(SUP\)$/i, "");
+        // AMÉLIORATION: Traitement des noms de chevaux avec parenthèses et suffixes
+        // Exemple: "tajlina (gb) f.ps. 3 a." -> "TAJLINA (GB)"
+        const matchCheval = nomNormalise.match(/^([A-Za-zÀ-ÖØ-öø-ÿ\s\-']+)(\s*\(([A-Za-z]+)\))?((\s+[FM]\.P\.S\.[^)]*)|(\s+F\.?P\.?S\.?\s+\d+\s*[aA]\.?)|\s+\d+[aA]\.?|(\s+GB\s+F\.P\.S\.)|\s+\(SUP\).*)?$/i);
         
-        // Standardiser les préfixes
+        if (matchCheval) {
+            const nomBase = matchCheval[1].trim();
+            const origine = matchCheval[3] ? `(${matchCheval[3].trim()})` : "";
+            
+            // Reconstruire le nom standardisé (avec parenthèses si présentes, sans les suffixes)
+            nomNormalise = nomBase + (origine ? ` ${origine}` : "");
+            
+            console.log(`Nom cheval normalisé: "${nom}" -> "${nomNormalise}"`);
+        }
+        
+        // Standardiser les préfixes pour personnes
         nomNormalise = nomNormalise.replace(/^M\.\s*/i, "MR ")
                                 .replace(/^MME\.\s*/i, "MME ")
                                 .replace(/^MLLE\.\s*/i, "MLLE ");
@@ -579,19 +587,26 @@ const rankingLoader = {
             return meilleurItem;
         }
         
-        // Pour les autres catégories
+        // Pour les chevaux et autres catégories
         const nomNormalise = this.normaliserNom(nom);
+        console.log(`Recherche de "${nom}" normalisé en "${nomNormalise}" dans la catégorie ${categorie}`);
         
         // Rechercher une correspondance exacte d'abord
         for (const item of donneesClassement) {
             const nomItem = categorie === 'chevaux' ? item.Nom : item.NomPostal;
-            if (this.normaliserNom(nomItem) === nomNormalise) {
+            const nomItemNormalise = this.normaliserNom(nomItem);
+            
+            if (nomItemNormalise === nomNormalise) {
+                console.log(`Correspondance exacte trouvée pour "${nom}": "${nomItem}"`);
                 return item;
             }
         }
         
         // Si pas de correspondance exacte, rechercher une correspondance approximative
         const resultat = this.trouverMeilleurScore(donneesClassement, nom);
+        if (resultat.item) {
+            console.log(`Correspondance approximative trouvée pour "${nom}": "${resultat.item.Nom || resultat.item.NomPostal}" (similarité: ${resultat.similarite}%)`);
+        }
         return resultat.item;
     },
     
