@@ -757,101 +757,35 @@
             border-bottom: 8px solid var(--gold);
         }
         
-        /* Styles améliorés pour le score prédictif */
+        /* Styles pour le score prédictif */
         .prediction-cell {
-            min-width: 130px;
-            width: 130px;
+            min-width: 120px;
         }
         
-        .prediction-cell.best-chance {
-            background-color: rgba(64, 224, 208, 0.15);
-        }
-        
-        .prediction-score-container {
+        .prediction-bar-container {
             position: relative;
-            background-color: rgba(19, 69, 66, 0.8);
-            border-radius: 8px;
-            padding: 6px 8px;
-            border: 1px solid rgba(64, 224, 208, 0.3);
-            display: flex;
-            align-items: center;
-            gap: 8px;
+            width: 100%;
+            height: 20px;
+            background: rgba(10, 30, 30, 0.4);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .prediction-bar {
+            height: 100%;
+            background: linear-gradient(to right, var(--accent), var(--gold));
+            border-radius: 10px;
+            transition: width 0.3s ease;
         }
         
         .prediction-value {
-            font-weight: 700;
-            font-size: 1.1rem;
-            color: var(--gold);
-            letter-spacing: 0.5px;
-            flex: 1;
-            text-align: center;
-        }
-        
-        .prediction-icon {
-            color: var(--accent);
-            font-size: 1rem;
-            cursor: help;
-        }
-        
-        .tooltip-content {
-            display: none;
             position: absolute;
-            z-index: 100;
-            bottom: calc(100% + 10px);
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: rgba(10, 46, 42, 0.95);
-            border: 1px solid var(--accent);
-            border-radius: 8px;
-            padding: 12px;
-            width: 220px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        }
-        
-        .tooltip-content:after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0;
-            height: 0;
-            border-left: 8px solid transparent;
-            border-right: 8px solid transparent;
-            border-top: 8px solid var(--accent);
-        }
-        
-        .prediction-icon:hover + .tooltip-content {
-            display: block;
-        }
-        
-        .tooltip-content .detail-row {
-            display: flex;
-            justify-content: space-between;
-            padding: 4px 0;
-            border-bottom: 1px dotted rgba(64, 224, 208, 0.2);
-        }
-        
-        .tooltip-content .detail-row:last-child {
-            border-bottom: none;
-        }
-        
-        .tooltip-content .detail-label {
+            right: 8px;
+            top: 0;
+            line-height: 20px;
+            font-weight: bold;
             color: var(--light-gold);
-            font-size: 0.8rem;
-        }
-        
-        .tooltip-content .detail-value {
-            color: var(--gold);
-            font-weight: 600;
-            font-size: 0.8rem;
-        }
-        
-        .tooltip-content .detail-title {
-            color: var(--accent);
-            text-align: center;
-            margin-bottom: 8px;
-            font-size: 0.9rem;
+            text-shadow: 0 0 3px rgba(0,0,0,0.7);
         }
         
         .loading-indicator {
@@ -861,33 +795,34 @@
             margin-bottom: 0.5rem;
         }
         
-        .top-score .prediction-score-container {
-            border-color: var(--gold);
-            background-color: rgba(212, 175, 55, 0.2);
+        .score-details {
+            cursor: help;
+            position: relative;
         }
         
-        tr.top-score td {
-            background-color: rgba(212, 175, 55, 0.05);
+        .score-details i {
+            color: var(--gold);
+            margin-left: 5px;
+            font-size: 0.9rem;
         }
         
-        .chance-indicator {
-            display: inline-block;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            margin-right: 5px;
+        .tooltip-content {
+            display: none;
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            background: rgba(10, 46, 42, 0.95);
+            border: 1px solid var(--accent);
+            border-radius: 6px;
+            padding: 0.8rem;
+            width: 220px;
+            font-size: 0.8rem;
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
         
-        .high-chance {
-            background-color: #00E676;
-        }
-        
-        .medium-chance {
-            background-color: #FFEB3B;
-        }
-        
-        .low-chance {
-            background-color: #FF5252;
+        .score-details:hover .tooltip-content {
+            display: block;
         }
         
         @keyframes fadeIn {
@@ -1478,7 +1413,7 @@
             // Fonction spéciale pour les éleveurs et propriétaires avec initiales
             trouverPersonneParInitiale(donneesClassement, nomAvecInitiale, categorie) {
                 if (!nomAvecInitiale || !donneesClassement || !donneesClassement.length) {
-                    return { score: null, rang: null };
+                    return { score: 50, rang: null };
                 }
                 
                 // Ne s'applique qu'aux éleveurs et propriétaires
@@ -1517,7 +1452,7 @@
                     // Si on a trouvé exactement une correspondance, c'est probablement la bonne
                     if (correspondances.length === 1) {
                         return {
-                            score: parseFloat(correspondances[0].ScoreMixte || 500),
+                            score: this.normaliserScore(correspondances[0].ScoreMixte, correspondances[0].Rang),
                             rang: correspondances[0].Rang,
                             nomTrouve: correspondances[0].Nom || correspondances[0].NomPostal
                         };
@@ -1536,7 +1471,7 @@
                         
                         if (meilleure) {
                             return {
-                                score: parseFloat(meilleure.ScoreMixte || 500),
+                                score: this.normaliserScore(meilleure.ScoreMixte, meilleure.Rang),
                                 rang: meilleure.Rang,
                                 nomTrouve: meilleure.Nom || meilleure.NomPostal
                             };
@@ -1551,7 +1486,7 @@
             // Trouver le meilleur score pour un nom dans les données de classement
             trouverMeilleurScore(donneesClassement, nom) {
                 if (!nom || !donneesClassement || !donneesClassement.length) {
-                    return { score: null, rang: null };
+                    return { score: 50, rang: null };
                 }
                 
                 const nomNormalise = this.normaliserNom(nom);
@@ -1590,9 +1525,7 @@
                     if (score > 50) { // Seuil minimum de similarité
                         correspondances.push({
                             item: item,
-                            similarite: score,
-                            scoreMixte: parseFloat(item.ScoreMixte || 500),
-                            rang: parseInt(item.Rang || 9999)
+                            similarite: score
                         });
                     }
                 });
@@ -1603,13 +1536,31 @@
                 // Si on a trouvé des correspondances, retourner la meilleure
                 if (correspondances.length > 0) {
                     return {
-                        score: correspondances[0].scoreMixte,
-                        rang: correspondances[0].rang,
+                        score: this.normaliserScore(correspondances[0].item.ScoreMixte, correspondances[0].item.Rang),
+                        rang: correspondances[0].item.Rang,
                         similarite: correspondances[0].similarite
                     };
                 }
                 
-                return { score: null, rang: null }; // Valeur par défaut si non trouvé
+                return { score: 50, rang: null }; // Valeur par défaut si non trouvé
+            },
+            
+            // Normaliser le score pour qu'il soit sur 100 (où 100 est le meilleur)
+            normaliserScore(scoreMixte, rang) {
+                // Si nous avons le score mixte, l'utiliser (inverser car plus petit = meilleur)
+                if (scoreMixte !== undefined) {
+                    const score = parseFloat(scoreMixte);
+                    // Inverser et normaliser entre 0 et 100
+                    return Math.max(0, Math.min(100, 100 - (score / 10)));
+                }
+                
+                // Sinon, utiliser le rang (moins bon mais mieux que rien)
+                if (rang !== undefined && rang !== null) {
+                    // Plus le rang est petit, meilleur est le score (max 100)
+                    return Math.max(0, 100 - (rang * 0.5));
+                }
+                
+                return 50; // Score moyen par défaut
             },
             
             // Calculer le score moyen pour une liste de noms (propriétaires, éleveurs)
@@ -1620,7 +1571,7 @@
                     : [listeNoms];
                 
                 if (noms.length === 0 || !noms[0]) {
-                    return { score: 500, rang: 9999 }; // Valeur par défaut haute (moins bon)
+                    return { score: 50, rang: null };
                 }
                 
                 // Calculer le score pour chaque nom
@@ -1631,17 +1582,14 @@
                     } else {
                         return this.trouverMeilleurScore(donneesClassement, nom);
                     }
-                }).filter(s => s.score !== null); // Filtrer les scores non trouvés
+                });
                 
-                if (scores.length === 0) {
-                    return { score: 500, rang: 9999 }; // Valeur par défaut si aucun score valide
-                }
-                
-                // Calculer la moyenne (ou utiliser le meilleur score)
+                // Calculer la moyenne
                 const scoreMoyen = scores.reduce((sum, s) => sum + s.score, 0) / scores.length;
                 
                 // Prendre le meilleur rang (le plus petit numériquement)
                 const meilleurRang = scores
+                    .filter(s => s.rang !== null)
                     .reduce((best, s) => (best === null || s.rang < best) ? s.rang : best, null);
                 
                 // Pour le débogage, collecter les noms trouvés
@@ -1651,19 +1599,23 @@
                 
                 return { 
                     score: scoreMoyen, 
-                    rang: meilleurRang || 9999,
+                    rang: meilleurRang,
                     nomsTrouves: nomsTrouves.length > 0 ? nomsTrouves : null
                 };
             },
             
             // Calculer le score prédictif pour un participant
-            // Important: plus le score est bas, meilleur est le participant (système de rang)
             calculerScoreParticipant(participant) {
                 // 1. Récupérer les scores par catégorie
-                const resultCheval = this.calculerScoreMoyen(this.data.chevaux, participant.cheval, 'chevaux');
-                const resultJockey = this.trouverMeilleurScore(this.data.jockeys, participant.jockey);
-                const resultEntraineur = this.trouverMeilleurScore(this.data.entraineurs, participant.entraineur);
+                const scoreCheval = this.calculerScoreMoyen(this.data.chevaux, participant.cheval, 'chevaux').score;
                 
+                // 2. Pour le jockey, utiliser directement le nom
+                const scoreJockey = this.trouverMeilleurScore(this.data.jockeys, participant.jockey).score;
+                
+                // 3. Pour l'entraineur, gestion simple car généralement un seul
+                const scoreEntraineur = this.trouverMeilleurScore(this.data.entraineurs, participant.entraineur).score;
+                
+                // 4. Pour les éleveurs et propriétaires, qui peuvent être multiples
                 // Récupérer les valeurs avec différentes orthographes possibles
                 const proprioValue = this.getPropertyValue(participant, [
                     "proprietaire", "propriétaire", 
@@ -1679,15 +1631,10 @@
                 const resultEleveur = this.calculerScoreMoyen(this.data.eleveurs, eleveurValue, 'eleveurs');
                 const resultProprio = this.calculerScoreMoyen(this.data.proprietaires, proprioValue, 'proprietaires');
                 
-                // Assigner des valeurs par défaut si nécessaire
-                const scoreCheval = resultCheval.score !== null ? resultCheval.score : 500;
-                const scoreJockey = resultJockey.score !== null ? resultJockey.score : 500;
-                const scoreEntraineur = resultEntraineur.score !== null ? resultEntraineur.score : 500;
-                const scoreEleveur = resultEleveur.score !== null ? resultEleveur.score : 500;
-                const scoreProprio = resultProprio.score !== null ? resultProprio.score : 500;
+                const scoreEleveur = resultEleveur.score;
+                const scoreProprio = resultProprio.score;
                 
                 // 5. Appliquer la formule de pondération
-                // Plus le score est bas, meilleur est le résultat (comme dans le classement)
                 const scorePredictif = (
                     0.55 * scoreCheval +
                     0.15 * scoreJockey +
@@ -1696,19 +1643,8 @@
                     0.08 * scoreProprio
                 );
                 
-                // Catégoriser le score (faible est meilleur)
-                let categorie = "moyen";
-                if (scorePredictif < 350) {
-                    categorie = "excellent";
-                } else if (scorePredictif < 500) {
-                    categorie = "bon";
-                } else if (scorePredictif > 600) {
-                    categorie = "faible";
-                }
-                
                 return {
                     score: scorePredictif.toFixed(1),
-                    categorie: categorie,
                     details: {
                         cheval: scoreCheval.toFixed(1),
                         jockey: scoreJockey.toFixed(1),
@@ -1753,8 +1689,8 @@
                     };
                 });
                 
-                // Trier par score croissant (plus petit = meilleur)
-                return resultats.sort((a, b) => parseFloat(a.scorePredictif.score) - parseFloat(b.scorePredictif.score));
+                // Trier par score décroissant
+                return resultats.sort((a, b) => parseFloat(b.scorePredictif.score) - parseFloat(a.scorePredictif.score));
             }
         };
 
@@ -2038,7 +1974,7 @@
                         
                         <div class="action-buttons">
                             <button class="action-btn primary" id="sort-by-score-${detailId}">
-                                <i class="fas fa-sort-amount-up"></i> Trier par score prédictif
+                                <i class="fas fa-sort-amount-down"></i> Trier par score prédictif
                             </button>
                             <a href="simulation.html?course=${encodeURIComponent(courseName)}&hippodrome=${encodeURIComponent(hippodrome)}" class="action-btn secondary">
                                 <i class="fas fa-calculator"></i> Simuler des paris sur cette course
@@ -2089,13 +2025,16 @@
                                     "breeder", "breeder_name"
                                 ]);
                                 
-                                // Catégoriser le score
-                                let chanceClass = "medium-chance";
-                                if (scorePredictif.categorie === "excellent") {
-                                    chanceClass = "high-chance";
-                                } else if (scorePredictif.categorie === "faible") {
-                                    chanceClass = "low-chance";
-                                }
+                                // Créer un tooltip avec les détails du score
+                                const tooltipContent = `
+                                    <div class="tooltip-content">
+                                        <div><strong>Cheval:</strong> ${scorePredictif.details.cheval}</div>
+                                        <div><strong>Jockey:</strong> ${scorePredictif.details.jockey}</div>
+                                        <div><strong>Entraîneur:</strong> ${scorePredictif.details.entraineur}</div>
+                                        <div><strong>Éleveur:</strong> ${scorePredictif.details.eleveur.score}</div>
+                                        <div><strong>Propriétaire:</strong> ${scorePredictif.details.proprietaire.score}</div>
+                                    </div>
+                                `;
                                 
                                 // Formater le HTML pour ce participant
                                 participantsHtml += `
@@ -2108,36 +2047,13 @@
                                         <td>${eleveurValue || "-"}</td>
                                         <td>${participant.poids || ""}</td>
                                         <td class="prediction-cell">
-                                            <div class="prediction-score-container">
-                                                <span class="chance-indicator ${chanceClass}"></span>
-                                                <span class="prediction-value">${scorePredictif.score}</span>
-                                                <span class="prediction-icon"><i class="fas fa-info-circle"></i></span>
-                                                <div class="tooltip-content">
-                                                    <div class="detail-title">Détails du score</div>
-                                                    <div class="detail-row">
-                                                        <span class="detail-label">Cheval (55%):</span>
-                                                        <span class="detail-value">${scorePredictif.details.cheval}</span>
-                                                    </div>
-                                                    <div class="detail-row">
-                                                        <span class="detail-label">Jockey (15%):</span>
-                                                        <span class="detail-value">${scorePredictif.details.jockey}</span>
-                                                    </div>
-                                                    <div class="detail-row">
-                                                        <span class="detail-label">Entraîneur (12%):</span>
-                                                        <span class="detail-value">${scorePredictif.details.entraineur}</span>
-                                                    </div>
-                                                    <div class="detail-row">
-                                                        <span class="detail-label">Éleveur (10%):</span>
-                                                        <span class="detail-value">${scorePredictif.details.eleveur.score}</span>
-                                                    </div>
-                                                    <div class="detail-row">
-                                                        <span class="detail-label">Propriétaire (8%):</span>
-                                                        <span class="detail-value">${scorePredictif.details.proprietaire.score}</span>
-                                                    </div>
-                                                    <div style="margin-top:5px; font-size:0.75rem; opacity:0.8; text-align:center">
-                                                        Score plus bas = meilleur pronostic
-                                                    </div>
+                                            <div class="score-details">
+                                                <div class="prediction-bar-container">
+                                                    <div class="prediction-bar" style="width: ${scorePredictif.score}%;"></div>
+                                                    <span class="prediction-value">${scorePredictif.score}</span>
                                                 </div>
+                                                <i class="fas fa-info-circle"></i>
+                                                ${tooltipContent}
                                             </div>
                                         </td>
                                     </tr>
@@ -2161,28 +2077,12 @@
                                 const tbody = participantsTable;
                                 const rows = Array.from(tbody.querySelectorAll('tr'));
                                 
-                                // Si le bouton affiche actuellement "Trier par score prédictif", trier par score croissant
-                                if (this.innerHTML.includes('fa-sort-amount-up')) {
-                                    // Trier par score croissant (plus petit = meilleur)
-                                    rows.sort((a, b) => {
-                                        const scoreA = parseFloat(a.dataset.score || 999);
-                                        const scoreB = parseFloat(b.dataset.score || 999);
-                                        return scoreA - scoreB;
-                                    });
-                                    
-                                    // Mettre à jour l'icône et le texte du bouton
-                                    this.innerHTML = '<i class="fas fa-sort-amount-down"></i> Trier par numéro';
-                                } else {
-                                    // Trier par numéro de participant
-                                    rows.sort((a, b) => {
-                                        const numA = parseInt(a.querySelector('.horse-number').textContent || 999);
-                                        const numB = parseInt(b.querySelector('.horse-number').textContent || 999);
-                                        return numA - numB;
-                                    });
-                                    
-                                    // Mettre à jour l'icône et le texte du bouton
-                                    this.innerHTML = '<i class="fas fa-sort-amount-up"></i> Trier par score prédictif';
-                                }
+                                // Trier les lignes par score décroissant
+                                rows.sort((a, b) => {
+                                    const scoreA = parseFloat(a.dataset.score || 0);
+                                    const scoreB = parseFloat(b.dataset.score || 0);
+                                    return scoreB - scoreA;
+                                });
                                 
                                 // Réinsérer les lignes dans le bon ordre
                                 rows.forEach(row => {
