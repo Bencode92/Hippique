@@ -1069,25 +1069,21 @@
                     return nameA.localeCompare(nameB);
                 });
                 
-                // MODIFICATION: Assigner les rangs SANS SAUTS pour l'affichage (classement dense)
-                let currentRank = 1;
+                // MODIFICATION POUR CORRIGER LE PROBLÈME DES SAUTS DE RANG
+                // Utiliser une approche plus simple et directe pour le classement dense
+                let distinctRank = 0;
                 let currentScore = null;
-                let sameRankCount = 0;
                 
                 sortedData.forEach((item, index) => {
                     const score = parseFloat(item.ScoreMixte || 999);
                     
+                    // Si nouveau score, incrémenter le rang distinct
                     if (index === 0 || Math.abs(score - currentScore) > 0.001) {
-                        // Nouvelle valeur = nouveau rang, mais sans saut
-                        currentRank = index + 1 - sameRankCount;
+                        distinctRank++;
                         currentScore = score;
-                        sameRankCount = 0;
-                    } else {
-                        // Même score = même rang
-                        sameRankCount++;
                     }
                     
-                    item.Rang = currentRank;
+                    item.Rang = distinctRank;
                 });
                 
                 return sortedData;
@@ -1408,30 +1404,24 @@
                     return diff;
                 });
                 
-                // Assigner les rangs finaux avec le classement dense
-                // MODIFICATION: Utiliser directement le classement dense
-                let currentRank = 1;
+                // MODIFICATION POUR CORRIGER LE PROBLÈME DES SAUTS DE RANG
+                // Utiliser une approche plus simple pour le classement dense
+                let distinctRank = 0;
                 let prevValue = null;
-                let sameCount = 0;
                 
                 sortedByValue.forEach((item, index) => {
-                    const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
                     const value = valueGetter(item);
                     
-                    // Assigner les rangs selon le classement dense (sans sauts)
-                    if (index === 0) {
-                        currentRank = 1;
+                    // Si nouvelle valeur, incrémenter le rang
+                    if (index === 0 || value !== prevValue) {
+                        distinctRank++;
                         prevValue = value;
-                    } else if (value !== prevValue) {
-                        currentRank = index + 1 - sameCount;
-                        prevValue = value;
-                    } else {
-                        sameCount++;
                     }
                     
-                    item.Rang = currentRank;
+                    item.Rang = distinctRank;
                     
                     // Récupérer le score mixte si disponible
+                    const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
                     if (originalScores[currentCategory] && originalScores[currentCategory][key]) {
                         item.ScoreMixte = originalScores[currentCategory][key];
                     } else if (!item.ScoreMixte) {
