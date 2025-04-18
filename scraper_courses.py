@@ -32,7 +32,7 @@ class ScraperCoursesFG:
         options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36")
         return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
     
-    def wait_and_get_html(self, driver, by, value, timeout=15):
+    def wait_and_get_html(self, driver, by, value, timeout=30):
         """Attend l'apparition d'un élément et retourne le HTML"""
         try:
             WebDriverWait(driver, timeout).until(EC.presence_of_element_located((by, value)))
