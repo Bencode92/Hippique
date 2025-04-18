@@ -1,0 +1,37 @@
+name: Extract Pondered Rankings
+
+on:
+  schedule:
+    - cron: '0 6 * * *' # Exécution à 6h00 du matin
+  workflow_dispatch: # Permet l'exécution manuelle
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      
+      - name: Create scripts directory if not exists
+        run: mkdir -p scripts
+      
+      - name: Install dependencies
+        run: npm install node-fetch@2
+      
+      - name: Extract rankings
+        run: node scripts/extract-pondered-rankings.js
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add data/ranking-*.json
+          git commit -m "Mise à jour des classements pondérés ($(date +'%Y-%m-%d'))" || echo "No changes to commit"
+          git push
