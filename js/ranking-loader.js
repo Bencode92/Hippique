@@ -75,7 +75,7 @@ const rankingLoader = {
         return Promise.all(promises);
     },
     
-    // Fonction pour normaliser et nettoyer un nom (inchangée)
+    // Fonction pour normaliser et nettoyer un nom (améliorée pour les écuries)
     normaliserNom(nom) {
         if (!nom) return "";
         
@@ -92,6 +92,11 @@ const rankingLoader = {
         nomNormalise = nomNormalise.replace(/^M\.\s*/i, "MR ")
                                 .replace(/^MME\.\s*/i, "MME ")
                                 .replace(/^MLLE\.\s*/i, "MLLE ");
+        
+        // Standardiser les préfixes pour écuries (EC, ECURIE, etc.)
+        nomNormalise = nomNormalise.replace(/^EC\./i, "ECURIE ")
+                                .replace(/^EC\s+/i, "ECURIE ")
+                                .replace(/^ECURIES?\s+/i, "ECURIE ");
         
         // Standardiser les abréviations connues
         const abreviations = {
@@ -269,6 +274,45 @@ const rankingLoader = {
         // Normaliser le nom avec l'initiale
         const nomNormalise = this.normaliserNom(nomAvecInitiale);
         
+        // Vérifier si c'est une écurie avec préfixe EC.
+        if (nomNormalise.startsWith('ECURIE') || nomAvecInitiale.toUpperCase().startsWith('EC.')) {
+            // Recherche d'écurie - traitement spécial
+            const nomEcurie = nomNormalise.replace(/^ECURIE\s+/i, '').trim();
+            
+            console.log(`Recherche d'écurie pour: "${nomEcurie}"`);
+            
+            // Chercher les correspondances avec les écuries
+            const correspondances = donneesClassement.filter(item => {
+                const nomItem = this.normaliserNom(item.Nom || item.NomPostal || "");
+                
+                // Vérifier si c'est une écurie
+                if (nomItem.startsWith('ECURIE')) {
+                    const nomEcurieItem = nomItem.replace(/^ECURIE\s+/i, '').trim();
+                    return nomEcurieItem.includes(nomEcurie) || nomEcurie.includes(nomEcurieItem);
+                }
+                
+                return false;
+            });
+            
+            if (correspondances.length >= 1) {
+                // Trier par rang (prendre le meilleur)
+                const meilleure = correspondances.reduce((best, current) => {
+                    if (!best) return current;
+                    const rangCurrent = parseInt(current.Rang) || 999;
+                    const rangBest = parseInt(best.Rang) || 999;
+                    return rangCurrent < rangBest ? current : best;
+                }, correspondances[0]);
+                
+                console.log(`Écurie trouvée: ${meilleure.Nom || meilleure.NomPostal}, Rang: ${meilleure.Rang}`);
+                
+                return {
+                    score: 0,
+                    rang: meilleure.Rang,
+                    nomTrouve: meilleure.Nom || meilleure.NomPostal
+                };
+            }
+        }
+        
         // Extraire le préfixe, l'initiale et le nom de famille
         // Nouvelle expression régulière qui gère mieux les préfixes et initiales
         const match = nomNormalise.match(/^(MME|MR|M)?\s*([A-Z])\.?\s*([A-Z\s]+)$/i);
@@ -329,6 +373,24 @@ const rankingLoader = {
         }
         
         const nomNormalise = this.normaliserNom(nom);
+        
+        // Traitement spécial pour les écuries
+        if (nomNormalise.startsWith('ECURIE') || nom.toUpperCase().startsWith('EC.')) {
+            const nomEcurie = nomNormalise.replace(/^ECURIE\s+/i, '').trim();
+            
+            // Recherche d'écurie simplifiée
+            for (const item of donneesClassement) {
+                const nomItem = this.normaliserNom(item.Nom || item.NomPostal || "");
+                if (nomItem.startsWith('ECURIE') && 
+                    (nomItem.includes(nomEcurie) || nomEcurie.includes(nomItem.replace(/^ECURIE\s+/i, '').trim()))) {
+                    return {
+                        score: 0,
+                        rang: item.Rang,
+                        similarite: 90
+                    };
+                }
+            }
+        }
         
         // Tableau pour stocker les correspondances possibles avec leurs scores de similarité
         const correspondances = [];
@@ -405,11 +467,15 @@ const rankingLoader = {
             let meilleurRang = null;
             
             for (const nomIndividuel of noms) {
+                if (!nomIndividuel.trim()) continue;
+                
+                console.log(`Traitement du propriétaire/éleveur: "${nomIndividuel}"`);
                 const resultat = this.trouverPersonneParInitiale(donneesClassement, nomIndividuel, categorie);
                 if (resultat.rang !== null) {
                     const rang = parseInt(resultat.rang);
                     if (meilleurRang === null || rang < meilleurRang) {
                         meilleurRang = rang;
+                        console.log(`Nouveau meilleur rang trouvé: ${rang} pour "${nomIndividuel}"`);
                     }
                 }
             }
