@@ -1338,8 +1338,11 @@
                     
                     const data = await response.json();
                     if (data && data.resultats) {
-                        this.data[category] = data.resultats;
-                        return data.resultats;
+                        // IMPORTANT: Calculer le classement pondéré directement lors du chargement des données
+                        console.log(`Calcul du classement pondéré pour ${category}...`);
+                        const resultatsAvecRangPondere = this.calculateCompositeRanking(data.resultats, category);
+                        this.data[category] = resultatsAvecRangPondere;
+                        return resultatsAvecRangPondere;
                     }
                     
                     return [];
@@ -1397,6 +1400,149 @@
                 }
                 
                 return nomNormalise;
+            },
+            
+            // Fonction de classement dense (sans sauts) pour tous les types de tri
+            rankWithTiesDense(items, valueGetter) {
+                // Trier d'abord par la valeur (décroissante)
+                const sorted = [...items].sort((a, b) => {
+                    const valA = valueGetter(a);
+                    const valB = valueGetter(b);
+                    const diff = valB - valA;
+                    // En cas d'égalité, trier par nom pour garantir la stabilité
+                    if (diff === 0) {
+                        const nameA = this.currentCategory === 'chevaux' ? a.Nom : a.NomPostal;
+                        const nameB = this.currentCategory === 'chevaux' ? b.Nom : b.NomPostal;
+                        return nameA.localeCompare(nameB);
+                    }
+                    return diff;
+                });
+                
+                // Assigner les rangs sans sauts (classement dense)
+                const ranks = new Map();
+                let currentRank = 1;
+                let currentValue = null;
+                let sameRankCount = 0;
+                
+                sorted.forEach((item, index) => {
+                    const key = this.currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
+                    const value = valueGetter(item);
+                    
+                    if (index === 0 || value !== currentValue) {
+                        // Nouvelle valeur = nouveau rang, mais sans saut
+                        currentRank = index + 1 - sameRankCount;
+                        currentValue = value;
+                        sameRankCount = 0;
+                    } else {
+                        // Même valeur = même rang
+                        sameRankCount++;
+                    }
+                    
+                    ranks.set(key, currentRank);
+                });
+                
+                return ranks;
+            },
+            
+            // Fonction pour calculer le classement pondéré avec gestion des égalités
+            calculateCompositeRanking(data, category) {
+                if (!data || !data.length) return data;
+                
+                // Stocker la catégorie actuelle pour utilisation dans les fonctions internes
+                this.currentCategory = category;
+                
+                // Cloner les données pour ne pas modifier les originales
+                const dataCopy = JSON.parse(JSON.stringify(data));
+                
+                // Fonctions d'accès aux différentes métriques selon la catégorie
+                const victoryGetter = item => {
+                    return category === 'chevaux' ? 
+                        parseInt(item.NbVictoires || 0) : 
+                        parseInt(item.Victoires || 0);
+                };
+                
+                const victoryRateGetter = item => parseFloat(item.TauxVictoire || 0);
+                const placeRateGetter = item => parseFloat(item.TauxPlace || 0);
+                
+                // Calcul des rangs pour chaque métrique avec gestion des égalités DENSE
+                const victoryRanks = this.rankWithTiesDense(dataCopy, victoryGetter);
+                const victoryRateRanks = this.rankWithTiesDense(dataCopy, victoryRateGetter);
+                const placeRateRanks = this.rankWithTiesDense(dataCopy, placeRateGetter);
+                
+                // Calcul du score pondéré pour chaque participant
+                dataCopy.forEach(item => {
+                    const key = category === 'chevaux' ? item.Nom : item.NomPostal;
+                    
+                    if (!key) {
+                        item.ScoreMixte = 999; // Valeur par défaut pour les items mal formés
+                        return;
+                    }
+                    
+                    // Récupérer les rangs avec égalités DENSES
+                    const rangVictoires = victoryRanks.get(key) || 999;
+                    const rangTauxVictoire = victoryRateRanks.get(key) || 999;
+                    const rangTauxPlace = placeRateRanks.get(key) || 999;
+                    
+                    // Déterminer si l'élément a un taux de victoire parfait
+                    const nbCourses = category === 'chevaux' ? 
+                        parseInt(item.NbCourses || 0) : 
+                        parseInt(item.Partants || 0);
+                    const nbVictoires = category === 'chevaux' ? 
+                        parseInt(item.NbVictoires || 0) : 
+                        parseInt(item.Victoires || 0);
+                    const nbPlaces = category === 'chevaux' ? 
+                        parseInt(item.NbPlace || 0) : 
+                        parseInt(item.Place || 0);
+                    
+                    const hasPerfectWinRate = nbCourses > 0 && nbVictoires === nbCourses && nbPlaces === 0;
+                    
+                    // Pondération adaptative
+                    let poidsV = 0.5;  // Poids par défaut pour les victoires
+                    let poidsTV = 0.3; // Poids par défaut pour le taux de victoire
+                    let poidsTP = 0.2; // Poids par défaut pour le taux de place
+                    
+                    // Si taux de victoire parfait, redistribuer le poids du taux de place
+                    if (hasPerfectWinRate) {
+                        poidsV += poidsTP; // Redistribuer le poids du taux de place vers les victoires
+                        poidsTP = 0;       // Ignorer le taux de place
+                    }
+                    
+                    // Calcul du score pondéré avec rangs DENSES
+                    item.ScoreMixte = (
+                        poidsV * rangVictoires +
+                        poidsTV * rangTauxVictoire +
+                        poidsTP * rangTauxPlace
+                    ).toFixed(2);
+                });
+                
+                // Tri final par score mixte croissant (meilleur score = plus petit)
+                const sortedData = dataCopy.sort((a, b) => {
+                    const diff = parseFloat(a.ScoreMixte || 999) - parseFloat(b.ScoreMixte || 999);
+                    if (diff !== 0) return diff;
+                    
+                    // Départage par nom en cas d'égalité
+                    const nameA = category === 'chevaux' ? a.Nom : a.NomPostal;
+                    const nameB = category === 'chevaux' ? b.Nom : b.NomPostal;
+                    return nameA.localeCompare(nameB);
+                });
+                
+                // Utiliser une approche plus simple et directe pour le classement dense
+                let distinctRank = 0;
+                let currentScore = null;
+                
+                sortedData.forEach((item, index) => {
+                    const score = parseFloat(item.ScoreMixte || 999);
+                    
+                    // Si nouveau score, incrémenter le rang distinct
+                    if (index === 0 || Math.abs(score - currentScore) > 0.001) {
+                        distinctRank++;
+                        currentScore = score;
+                    }
+                    
+                    item.Rang = distinctRank;
+                });
+                
+                return sortedData;
             },
             
             // Fonction spéciale pour les éleveurs et propriétaires avec initiales
@@ -1574,6 +1720,7 @@
                 for (const item of donneesClassement) {
                     const nomItem = categorie === 'chevaux' ? item.Nom : item.NomPostal;
                     if (this.normaliserNom(nomItem) === nomNormalise) {
+                        // Utiliser le rang calculé par calculateCompositeRanking (classement pondéré)
                         return parseInt(item.Rang);
                     }
                 }
@@ -1619,6 +1766,11 @@
                 const rangJockey = this.trouverRangDansClassement(this.data.jockeys, participant.jockey, 'jockeys');
                 const rangEntraineur = this.trouverRangDansClassement(this.data.entraineurs, participant.entraineur, 'entraineurs');
                 
+                // DEBUG: Logs pour vérifier les rangs
+                console.log(`Cheval: ${participant.cheval}, Rang pondéré: ${rangCheval}`);
+                console.log(`Jockey: ${participant.jockey}, Rang pondéré: ${rangJockey}`);
+                console.log(`Entraineur: ${participant.entraineur}, Rang pondéré: ${rangEntraineur}`);
+                
                 // Pour les éleveurs et propriétaires, qui peuvent être multiples
                 const proprioValue = this.getPropertyValue(participant, [
                     "proprietaire", "propriétaire", 
@@ -1633,6 +1785,9 @@
                 
                 const rangEleveur = this.trouverRangDansClassement(this.data.eleveurs, eleveurValue, 'eleveurs');
                 const rangProprio = this.trouverRangDansClassement(this.data.proprietaires, proprioValue, 'proprietaires');
+
+                console.log(`Eleveur: ${eleveurValue}, Rang pondéré: ${rangEleveur}`);
+                console.log(`Propriétaire: ${proprioValue}, Rang pondéré: ${rangProprio}`);
 
                 // Inverser les rangs pour obtenir un score (plus le rang est bas, meilleur est le score)
                 // Nous limitons à un maximum de 100 pour éviter des valeurs extrêmes
@@ -2245,47 +2400,21 @@
                 }
             }
             
-            // Événement de recherche
+            // Événements
             searchInput.addEventListener('input', function() {
-                // Fermer les détails actifs avant de mettre à jour l'affichage
-                if (activeDetailSection) {
-                    activeDetailSection.classList.remove('visible');
-                    setTimeout(() => {
-                        if (activeDetailSection.parentNode) {
-                            activeDetailSection.parentNode.removeChild(activeDetailSection);
-                            activeDetailSection = null;
-                        }
-                        displayHippodromes();
-                    }, 300);
-                } else {
-                    displayHippodromes();
-                }
+                displayHippodromes();
                 
                 // Afficher/masquer le bouton d'effacement
                 searchClear.style.display = this.value.trim() ? 'block' : 'none';
             });
             
-            // Événement d'effacement de la recherche
             searchClear.addEventListener('click', function() {
                 searchInput.value = '';
                 searchInput.focus();
                 this.style.display = 'none';
-                // Fermer les détails actifs avant de mettre à jour l'affichage
-                if (activeDetailSection) {
-                    activeDetailSection.classList.remove('visible');
-                    setTimeout(() => {
-                        if (activeDetailSection.parentNode) {
-                            activeDetailSection.parentNode.removeChild(activeDetailSection);
-                            activeDetailSection = null;
-                        }
-                        displayHippodromes();
-                    }, 300);
-                } else {
-                    displayHippodromes();
-                }
+                displayHippodromes();
             });
             
-            // Bouton de changement de date
             dateButton.addEventListener('click', function() {
                 dateInput.click();
             });
@@ -2294,19 +2423,7 @@
                 if (this.value) {
                     currentDate = new Date(this.value);
                     currentDateSpan.textContent = coursesLoader.getReadableDate(currentDate);
-                    // Fermer les détails actifs avant de charger les nouvelles courses
-                    if (activeDetailSection) {
-                        activeDetailSection.classList.remove('visible');
-                        setTimeout(() => {
-                            if (activeDetailSection.parentNode) {
-                                activeDetailSection.parentNode.removeChild(activeDetailSection);
-                                activeDetailSection = null;
-                            }
-                            loadCoursesForCurrentDate();
-                        }, 300);
-                    } else {
-                        loadCoursesForCurrentDate();
-                    }
+                    loadCoursesForCurrentDate();
                 }
             });
             
