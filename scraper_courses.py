@@ -367,6 +367,14 @@ class ScraperCoursesFG:
                             driver.get(course_url)
                             time.sleep(3)
                             
+                            # AJOUT: Attendre explicitement le tableau des participants
+                            try:
+                                WebDriverWait(driver, 10).until(
+                                    EC.presence_of_element_located((By.TAG_NAME, "table"))
+                                )
+                            except Exception as e:
+                                print(f"⏳ Table non chargée à temps : {e}")
+                            
                             course_html = driver.page_source
                             course_soup = BeautifulSoup(course_html, "html.parser")
                             
@@ -489,6 +497,14 @@ class ScraperCoursesFG:
                         driver.get(course_link)
                         time.sleep(3)
                         
+                        # AJOUT: Attendre explicitement le tableau des participants
+                        try:
+                            WebDriverWait(driver, 10).until(
+                                EC.presence_of_element_located((By.TAG_NAME, "table"))
+                            )
+                        except Exception as e:
+                            print(f"⏳ Table non chargée à temps : {e}")
+                        
                         # Capture d'écran pour débogage
                         course_screenshot_path = os.path.join(screenshot_dir, f"{safe_hippodrome}_course_{index+1}.png")
                         driver.save_screenshot(course_screenshot_path)
@@ -583,6 +599,14 @@ class ScraperCoursesFG:
                             try:
                                 driver.get(course_link)
                                 time.sleep(3)
+                                
+                                # AJOUT: Attendre explicitement le tableau des participants
+                                try:
+                                    WebDriverWait(driver, 10).until(
+                                        EC.presence_of_element_located((By.TAG_NAME, "table"))
+                                    )
+                                except Exception as e:
+                                    print(f"⏳ Table non chargée à temps : {e}")
                                 
                                 course_html = driver.page_source
                                 course_soup = BeautifulSoup(course_html, "html.parser")
