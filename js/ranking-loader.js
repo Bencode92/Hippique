@@ -9,6 +9,15 @@ const rankingLoader = {
         proprietaires: null
     },
     
+    // Cache des statistiques pour la normalisation
+    statsCache: {
+        chevaux: null,
+        jockeys: null,
+        entraineurs: null,
+        eleveurs: null,
+        proprietaires: null
+    },
+    
     // Charger les données d'une catégorie avec priorité aux classements pondérés
     async loadCategoryData(category) {
         if (this.data[category]) {
@@ -31,6 +40,10 @@ const rankingLoader = {
                     if (ponderedData && ponderedData.resultats) {
                         console.log(`✅ Classement pondéré pour ${category} chargé avec succès`);
                         this.data[category] = ponderedData.resultats;
+                        
+                        // Calculer les statistiques pour la normalisation
+                        this.calculateCategoryStats(category, ponderedData.resultats);
+                        
                         return ponderedData.resultats;
                     }
                 }
@@ -52,6 +65,10 @@ const rankingLoader = {
                 console.log(`Calcul du classement pondéré pour ${category}...`);
                 const resultatsAvecRangPondere = this.calculateCompositeRanking(data.resultats, category);
                 this.data[category] = resultatsAvecRangPondere;
+                
+                // Calculer les statistiques pour la normalisation
+                this.calculateCategoryStats(category, resultatsAvecRangPondere);
+                
                 return resultatsAvecRangPondere;
             }
             
@@ -60,6 +77,79 @@ const rankingLoader = {
             console.error(`Erreur lors du chargement des données ${category}:`, error);
             return [];
         }
+    },
+    
+    // Calculer les statistiques pour la normalisation min-max
+    calculateCategoryStats(category, data) {
+        if (!data || !data.length) {
+            this.statsCache[category] = {
+                victoires: { min: 0, max: 1 },        // Éviter division par zéro 
+                tauxVictoire: { min: 0, max: 1 },     // Éviter division par zéro
+                tauxPlace: { min: 0, max: 1 },        // Éviter division par zéro
+                partants: { min: 0, max: 1 }          // Éviter division par zéro
+            };
+            return;
+        }
+        
+        // Initialiser les statistiques
+        const stats = {
+            victoires: { min: Number.MAX_VALUE, max: 0 },
+            tauxVictoire: { min: Number.MAX_VALUE, max: 0 },
+            tauxPlace: { min: Number.MAX_VALUE, max: 0 },
+            partants: { min: Number.MAX_VALUE, max: 0 }
+        };
+        
+        // Parcourir les données pour trouver min/max
+        data.forEach(item => {
+            // Victoires
+            const victoires = category === 'chevaux' ? 
+                parseInt(item.NbVictoires || 0) : 
+                parseInt(item.Victoires || 0);
+            stats.victoires.min = Math.min(stats.victoires.min, victoires);
+            stats.victoires.max = Math.max(stats.victoires.max, victoires);
+            
+            // Taux de victoire
+            const tauxVictoire = parseFloat(item.TauxVictoire || 0);
+            stats.tauxVictoire.min = Math.min(stats.tauxVictoire.min, tauxVictoire);
+            stats.tauxVictoire.max = Math.max(stats.tauxVictoire.max, tauxVictoire);
+            
+            // Taux de place
+            const tauxPlace = parseFloat(item.TauxPlace || 0);
+            stats.tauxPlace.min = Math.min(stats.tauxPlace.min, tauxPlace);
+            stats.tauxPlace.max = Math.max(stats.tauxPlace.max, tauxPlace);
+            
+            // Partants
+            const partants = category === 'chevaux' ? 
+                parseInt(item.NbCourses || 0) : 
+                parseInt(item.Partants || 0);
+            stats.partants.min = Math.min(stats.partants.min, partants);
+            stats.partants.max = Math.max(stats.partants.max, partants);
+        });
+        
+        // Éviter les divisions par zéro si min==max
+        if (stats.victoires.min === stats.victoires.max) {
+            stats.victoires.min = Math.max(0, stats.victoires.max - 1);
+        }
+        if (stats.tauxVictoire.min === stats.tauxVictoire.max) {
+            stats.tauxVictoire.min = Math.max(0, stats.tauxVictoire.max - 0.1);
+        }
+        if (stats.tauxPlace.min === stats.tauxPlace.max) {
+            stats.tauxPlace.min = Math.max(0, stats.tauxPlace.max - 0.1);
+        }
+        if (stats.partants.min === stats.partants.max) {
+            stats.partants.min = Math.max(0, stats.partants.max - 1);
+        }
+        
+        // Stocker les statistiques dans le cache
+        this.statsCache[category] = stats;
+        
+        console.log(`Statistiques calculées pour ${category}:`, stats);
+    },
+    
+    // Normaliser une valeur avec min-max scaling (0-1)
+    normalizeMinMax(value, min, max) {
+        if (min === max) return 0.5; // Éviter division par zéro
+        return (value - min) / (max - min);
     },
     
     // Charger toutes les données nécessaires
@@ -263,7 +353,7 @@ const rankingLoader = {
     // Fonction spéciale améliorée pour les éleveurs et propriétaires avec initiales
     trouverPersonneParInitiale(donneesClassement, nomAvecInitiale, categorie) {
         if (!nomAvecInitiale || !donneesClassement || !donneesClassement.length) {
-            return { score: 50, rang: null };
+            return { score: 50, rang: null, item: null };
         }
         
         // Ne s'applique qu'aux éleveurs et propriétaires
@@ -308,7 +398,8 @@ const rankingLoader = {
                 return {
                     score: 0,
                     rang: meilleure.Rang,
-                    nomTrouve: meilleure.Nom || meilleure.NomPostal
+                    nomTrouve: meilleure.Nom || meilleure.NomPostal,
+                    item: meilleure
                 };
             }
         }
@@ -357,7 +448,8 @@ const rankingLoader = {
                 return {
                     score: 0,
                     rang: meilleure.Rang,
-                    nomTrouve: meilleure.Nom || meilleure.NomPostal
+                    nomTrouve: meilleure.Nom || meilleure.NomPostal,
+                    item: meilleure
                 };
             }
         }
@@ -369,7 +461,7 @@ const rankingLoader = {
     // Trouver le meilleur score pour un nom dans les données de classement
     trouverMeilleurScore(donneesClassement, nom) {
         if (!nom || !donneesClassement || !donneesClassement.length) {
-            return { score: 0, rang: null };
+            return { score: 0, rang: null, item: null };
         }
         
         const nomNormalise = this.normaliserNom(nom);
@@ -386,7 +478,8 @@ const rankingLoader = {
                     return {
                         score: 0,
                         rang: item.Rang,
-                        similarite: 90
+                        similarite: 90,
+                        item: item
                     };
                 }
             }
@@ -439,11 +532,67 @@ const rankingLoader = {
             return {
                 score: 0, // Plus utilisé, maintenant on utilise le rang
                 rang: correspondances[0].item.Rang,
-                similarite: correspondances[0].similarite
+                similarite: correspondances[0].similarite,
+                item: correspondances[0].item
             };
         }
         
-        return { score: 0, rang: null }; // Valeur par défaut si non trouvé
+        return { score: 0, rang: null, item: null }; // Valeur par défaut si non trouvé
+    },
+    
+    // Trouver l'item correspondant à un nom dans un classement
+    trouverItemDansClassement(donneesClassement, nom, categorie) {
+        if (!nom || !donneesClassement || !donneesClassement.length) {
+            return null;
+        }
+        
+        // Pour les éleveurs et propriétaires qui peuvent être multiples
+        if (categorie === 'eleveurs' || categorie === 'proprietaires') {
+            // Si c'est une chaîne, la diviser sur les virgules et autres séparateurs
+            const noms = typeof nom === 'string' 
+                ? nom.split(/\s*[,&\/]\s*/) 
+                : [nom];
+            
+            if (noms.length === 0 || !noms[0]) {
+                return null;
+            }
+            
+            // Chercher le meilleur item parmi tous les noms
+            let meilleurItem = null;
+            let meilleurRang = null;
+            
+            for (const nomIndividuel of noms) {
+                if (!nomIndividuel.trim()) continue;
+                
+                console.log(`Traitement du propriétaire/éleveur: "${nomIndividuel}"`);
+                const resultat = this.trouverPersonneParInitiale(donneesClassement, nomIndividuel, categorie);
+                if (resultat.item && resultat.rang !== null) {
+                    const rang = parseInt(resultat.rang);
+                    if (meilleurRang === null || rang < meilleurRang) {
+                        meilleurRang = rang;
+                        meilleurItem = resultat.item;
+                        console.log(`Nouveau meilleur élément trouvé: ${meilleurItem.Nom || meilleurItem.NomPostal} (rang ${rang}) pour "${nomIndividuel}"`);
+                    }
+                }
+            }
+            
+            return meilleurItem;
+        }
+        
+        // Pour les autres catégories
+        const nomNormalise = this.normaliserNom(nom);
+        
+        // Rechercher une correspondance exacte d'abord
+        for (const item of donneesClassement) {
+            const nomItem = categorie === 'chevaux' ? item.Nom : item.NomPostal;
+            if (this.normaliserNom(nomItem) === nomNormalise) {
+                return item;
+            }
+        }
+        
+        // Si pas de correspondance exacte, rechercher une correspondance approximative
+        const resultat = this.trouverMeilleurScore(donneesClassement, nom);
+        return resultat.item;
     },
     
     // Trouver le rang d'un acteur dans son classement pondéré
@@ -539,17 +688,12 @@ const rankingLoader = {
         return null;
     },
     
-    // Calculer le score prédictif pour un participant
+    // Calculer le score prédictif normalisé pour un participant
     calculerScoreParticipant(participant) {
-        // Récupérer les rangs pour chaque acteur
-        const rangCheval = this.trouverRangDansClassement(this.data.chevaux, participant.cheval, 'chevaux');
-        const rangJockey = this.trouverRangDansClassement(this.data.jockeys, participant.jockey, 'jockeys');
-        const rangEntraineur = this.trouverRangDansClassement(this.data.entraineurs, participant.entraineur, 'entraineurs');
-        
-        // DEBUG: Logs pour vérifier les rangs
-        console.log(`Cheval: ${participant.cheval}, Rang pondéré: ${rangCheval}`);
-        console.log(`Jockey: ${participant.jockey}, Rang pondéré: ${rangJockey}`);
-        console.log(`Entraineur: ${participant.entraineur}, Rang pondéré: ${rangEntraineur}`);
+        // Récupérer les items pour chaque acteur
+        const itemCheval = this.trouverItemDansClassement(this.data.chevaux, participant.cheval, 'chevaux');
+        const itemJockey = this.trouverItemDansClassement(this.data.jockeys, participant.jockey, 'jockeys');
+        const itemEntraineur = this.trouverItemDansClassement(this.data.entraineurs, participant.entraineur, 'entraineurs');
         
         // Pour les éleveurs et propriétaires, qui peuvent être multiples
         const proprioValue = this.getPropertyValue(participant, [
@@ -563,53 +707,322 @@ const rankingLoader = {
             "breeder", "breeder_name"
         ]);
         
-        const rangEleveur = this.trouverRangDansClassement(this.data.eleveurs, eleveurValue, 'eleveurs');
-        const rangProprio = this.trouverRangDansClassement(this.data.proprietaires, proprioValue, 'proprietaires');
-
+        const itemEleveur = this.trouverItemDansClassement(this.data.eleveurs, eleveurValue, 'eleveurs');
+        const itemProprio = this.trouverItemDansClassement(this.data.proprietaires, proprioValue, 'proprietaires');
+        
+        // Récupérer les rangs pour le système de secours et l'affichage
+        const rangCheval = itemCheval ? parseInt(itemCheval.Rang) : null;
+        const rangJockey = itemJockey ? parseInt(itemJockey.Rang) : null;
+        const rangEntraineur = itemEntraineur ? parseInt(itemEntraineur.Rang) : null;
+        const rangEleveur = itemEleveur ? parseInt(itemEleveur.Rang) : null;
+        const rangProprio = itemProprio ? parseInt(itemProprio.Rang) : null;
+        
+        // DEBUG: Logs pour vérifier les rangs
+        console.log(`Cheval: ${participant.cheval}, Rang pondéré: ${rangCheval}`);
+        console.log(`Jockey: ${participant.jockey}, Rang pondéré: ${rangJockey}`);
+        console.log(`Entraineur: ${participant.entraineur}, Rang pondéré: ${rangEntraineur}`);
         console.log(`Eleveur: ${eleveurValue}, Rang pondéré: ${rangEleveur}`);
         console.log(`Propriétaire: ${proprioValue}, Rang pondéré: ${rangProprio}`);
-
-        // Inverser les rangs pour obtenir un score (plus le rang est bas, meilleur est le score)
-        // Nous limitons à un maximum de 100 pour éviter des valeurs extrêmes
-        const maxRang = 100;
-        const scoreCheval = rangCheval ? Math.max(0, maxRang - rangCheval) : 30; // valeur par défaut si non trouvé
-        const scoreJockey = rangJockey ? Math.max(0, maxRang - rangJockey) : 30;
-        const scoreEntraineur = rangEntraineur ? Math.max(0, maxRang - rangEntraineur) : 30;
-        const scoreEleveur = rangEleveur ? Math.max(0, maxRang - rangEleveur) : 30;
-        const scoreProprio = rangProprio ? Math.max(0, maxRang - rangProprio) : 30;
         
-        // Appliquer la formule de pondération, mais avec les rangs inversés
-        // Plus le rang est bas, plus le score inversé est élevé
+        // NOUVELLE APPROCHE: Calcul avec normalisation des métriques réelles
+        // Préparation des scores normalisés par défaut
+        const scores = {
+            cheval: { score: 0.3, rang: "NC" },       // Valeur par défaut si non trouvé (milieu de l'échelle)
+            jockey: { score: 0.3, rang: "NC" },       // Valeur par défaut si non trouvé (milieu de l'échelle)
+            entraineur: { score: 0.3, rang: "NC" },   // Valeur par défaut si non trouvé (milieu de l'échelle)
+            eleveur: { score: 0.3, rang: "NC" },      // Valeur par défaut si non trouvé (milieu de l'échelle)
+            proprietaire: { score: 0.3, rang: "NC" }  // Valeur par défaut si non trouvé (milieu de l'échelle)
+        };
+        
+        // Calcul du score normalisé pour le cheval
+        if (itemCheval && this.statsCache.chevaux) {
+            const nbVictoires = parseInt(itemCheval.NbVictoires || 0);
+            const tauxVictoire = parseFloat(itemCheval.TauxVictoire || 0);
+            const tauxPlace = parseFloat(itemCheval.TauxPlace || 0);
+            
+            // Normalisation min-max
+            const scoreVictoires = this.normalizeMinMax(
+                nbVictoires, 
+                this.statsCache.chevaux.victoires.min, 
+                this.statsCache.chevaux.victoires.max
+            );
+            
+            const scoreTauxVictoire = this.normalizeMinMax(
+                tauxVictoire, 
+                this.statsCache.chevaux.tauxVictoire.min, 
+                this.statsCache.chevaux.tauxVictoire.max
+            );
+            
+            const scoreTauxPlace = this.normalizeMinMax(
+                tauxPlace, 
+                this.statsCache.chevaux.tauxPlace.min, 
+                this.statsCache.chevaux.tauxPlace.max
+            );
+            
+            // Pondération adaptive des métriques (similaire à l'ancien système)
+            let poidsV = 0.5;   // Victoires
+            let poidsTV = 0.3;  // Taux de victoire
+            let poidsTP = 0.2;  // Taux de place
+            
+            // Si taux de victoire parfait, favoriser encore plus
+            if (tauxVictoire === 1.0) {
+                poidsV += poidsTP; // Redistribuer le poids du taux de place vers les victoires
+                poidsTP = 0;       // Ignorer le taux de place
+            }
+            
+            // Score final pondéré pour le cheval
+            const scoreCheval = (
+                poidsV * scoreVictoires +
+                poidsTV * scoreTauxVictoire +
+                poidsTP * scoreTauxPlace
+            );
+            
+            // Conserver le score et le rang pour l'affichage
+            scores.cheval = {
+                score: scoreCheval,
+                victoires: scoreVictoires, 
+                tauxVictoire: scoreTauxVictoire,
+                tauxPlace: scoreTauxPlace,
+                rang: rangCheval
+            };
+        }
+        
+        // Calcul du score normalisé pour le jockey
+        if (itemJockey && this.statsCache.jockeys) {
+            const nbVictoires = parseInt(itemJockey.Victoires || 0);
+            const tauxVictoire = parseFloat(itemJockey.TauxVictoire || 0);
+            const tauxPlace = parseFloat(itemJockey.TauxPlace || 0);
+            
+            // Normalisation min-max
+            const scoreVictoires = this.normalizeMinMax(
+                nbVictoires, 
+                this.statsCache.jockeys.victoires.min, 
+                this.statsCache.jockeys.victoires.max
+            );
+            
+            const scoreTauxVictoire = this.normalizeMinMax(
+                tauxVictoire, 
+                this.statsCache.jockeys.tauxVictoire.min, 
+                this.statsCache.jockeys.tauxVictoire.max
+            );
+            
+            const scoreTauxPlace = this.normalizeMinMax(
+                tauxPlace, 
+                this.statsCache.jockeys.tauxPlace.min, 
+                this.statsCache.jockeys.tauxPlace.max
+            );
+            
+            // Pondération
+            const scoreJockey = (
+                0.4 * scoreVictoires +
+                0.4 * scoreTauxVictoire +
+                0.2 * scoreTauxPlace
+            );
+            
+            scores.jockey = {
+                score: scoreJockey,
+                rang: rangJockey
+            };
+        }
+        
+        // Calcul du score normalisé pour l'entraineur
+        if (itemEntraineur && this.statsCache.entraineurs) {
+            const nbVictoires = parseInt(itemEntraineur.Victoires || 0);
+            const tauxVictoire = parseFloat(itemEntraineur.TauxVictoire || 0);
+            const tauxPlace = parseFloat(itemEntraineur.TauxPlace || 0);
+            
+            // Normalisation min-max
+            const scoreVictoires = this.normalizeMinMax(
+                nbVictoires, 
+                this.statsCache.entraineurs.victoires.min, 
+                this.statsCache.entraineurs.victoires.max
+            );
+            
+            const scoreTauxVictoire = this.normalizeMinMax(
+                tauxVictoire, 
+                this.statsCache.entraineurs.tauxVictoire.min, 
+                this.statsCache.entraineurs.tauxVictoire.max
+            );
+            
+            const scoreTauxPlace = this.normalizeMinMax(
+                tauxPlace, 
+                this.statsCache.entraineurs.tauxPlace.min, 
+                this.statsCache.entraineurs.tauxPlace.max
+            );
+            
+            // Pondération
+            const scoreEntraineur = (
+                0.4 * scoreVictoires +
+                0.4 * scoreTauxVictoire +
+                0.2 * scoreTauxPlace
+            );
+            
+            scores.entraineur = {
+                score: scoreEntraineur,
+                rang: rangEntraineur
+            };
+        }
+        
+        // Calcul du score normalisé pour l'éleveur
+        if (itemEleveur && this.statsCache.eleveurs) {
+            const nbVictoires = parseInt(itemEleveur.Victoires || 0);
+            const tauxVictoire = parseFloat(itemEleveur.TauxVictoire || 0);
+            const tauxPlace = parseFloat(itemEleveur.TauxPlace || 0);
+            
+            // Normalisation min-max
+            const scoreVictoires = this.normalizeMinMax(
+                nbVictoires, 
+                this.statsCache.eleveurs.victoires.min, 
+                this.statsCache.eleveurs.victoires.max
+            );
+            
+            const scoreTauxVictoire = this.normalizeMinMax(
+                tauxVictoire, 
+                this.statsCache.eleveurs.tauxVictoire.min, 
+                this.statsCache.eleveurs.tauxVictoire.max
+            );
+            
+            const scoreTauxPlace = this.normalizeMinMax(
+                tauxPlace, 
+                this.statsCache.eleveurs.tauxPlace.min, 
+                this.statsCache.eleveurs.tauxPlace.max
+            );
+            
+            // Pondération
+            const scoreEleveur = (
+                0.4 * scoreVictoires +
+                0.4 * scoreTauxVictoire +
+                0.2 * scoreTauxPlace
+            );
+            
+            scores.eleveur = {
+                score: scoreEleveur,
+                rang: rangEleveur
+            };
+        }
+        
+        // Calcul du score normalisé pour le propriétaire
+        if (itemProprio && this.statsCache.proprietaires) {
+            const nbVictoires = parseInt(itemProprio.Victoires || 0);
+            const tauxVictoire = parseFloat(itemProprio.TauxVictoire || 0);
+            const tauxPlace = parseFloat(itemProprio.TauxPlace || 0);
+            
+            // Normalisation min-max
+            const scoreVictoires = this.normalizeMinMax(
+                nbVictoires, 
+                this.statsCache.proprietaires.victoires.min, 
+                this.statsCache.proprietaires.victoires.max
+            );
+            
+            const scoreTauxVictoire = this.normalizeMinMax(
+                tauxVictoire, 
+                this.statsCache.proprietaires.tauxVictoire.min, 
+                this.statsCache.proprietaires.tauxVictoire.max
+            );
+            
+            const scoreTauxPlace = this.normalizeMinMax(
+                tauxPlace, 
+                this.statsCache.proprietaires.tauxPlace.min, 
+                this.statsCache.proprietaires.tauxPlace.max
+            );
+            
+            // Pondération
+            const scoreProprio = (
+                0.4 * scoreVictoires +
+                0.4 * scoreTauxVictoire +
+                0.2 * scoreTauxPlace
+            );
+            
+            scores.proprietaire = {
+                score: scoreProprio,
+                rang: rangProprio
+            };
+        }
+        
+        // Appliquer la formule de pondération finale du score prédictif
+        // avec les scores normalisés (entre 0 et 1)
         const scorePredictif = (
-            0.55 * scoreCheval +
-            0.15 * scoreJockey +
-            0.12 * scoreEntraineur +
-            0.10 * scoreEleveur +
-            0.08 * scoreProprio
+            0.55 * scores.cheval.score +
+            0.15 * scores.jockey.score +
+            0.12 * scores.entraineur.score +
+            0.10 * scores.eleveur.score +
+            0.08 * scores.proprietaire.score
         );
         
+        // Conversion du score en échelle 0-100 pour plus de lisibilité
+        const scoreFinal = (scorePredictif * 100).toFixed(1);
+        
+        // FALLBACK: si les statistiques ne sont pas disponibles,
+        // utiliser l'ancien système d'inversion de rangs
+        if (scoreFinal <= 0) {
+            console.log(`Utilisation du système de secours basé sur les rangs pour ${participant.cheval}`);
+            // Inverser les rangs pour obtenir un score (plus le rang est bas, meilleur est le score)
+            const maxRang = 100;
+            const scoreCheval = rangCheval ? Math.max(0, maxRang - rangCheval) : 30;
+            const scoreJockey = rangJockey ? Math.max(0, maxRang - rangJockey) : 30;
+            const scoreEntraineur = rangEntraineur ? Math.max(0, maxRang - rangEntraineur) : 30;
+            const scoreEleveur = rangEleveur ? Math.max(0, maxRang - rangEleveur) : 30;
+            const scoreProprio = rangProprio ? Math.max(0, maxRang - rangProprio) : 30;
+            
+            // Appliquer la formule de pondération, mais avec les rangs inversés
+            const scoreSecours = (
+                0.55 * scoreCheval +
+                0.15 * scoreJockey +
+                0.12 * scoreEntraineur +
+                0.10 * scoreEleveur +
+                0.08 * scoreProprio
+            );
+            
+            return {
+                score: scoreSecours.toFixed(1),
+                details: {
+                    cheval: {
+                        rang: rangCheval || "NC",
+                        score: scoreCheval.toFixed(1)
+                    },
+                    jockey: {
+                        rang: rangJockey || "NC",
+                        score: scoreJockey.toFixed(1)
+                    },
+                    entraineur: {
+                        rang: rangEntraineur || "NC",
+                        score: scoreEntraineur.toFixed(1)
+                    },
+                    eleveur: {
+                        rang: rangEleveur || "NC",
+                        score: scoreEleveur.toFixed(1)
+                    },
+                    proprietaire: {
+                        rang: rangProprio || "NC",
+                        score: scoreProprio.toFixed(1)
+                    }
+                }
+            };
+        }
+        
+        // Retourner le score et les détails
         return {
-            score: scorePredictif.toFixed(1),
+            score: scoreFinal,
             details: {
                 cheval: {
                     rang: rangCheval || "NC",
-                    score: scoreCheval.toFixed(1)
+                    score: (scores.cheval.score * 100).toFixed(1)
                 },
                 jockey: {
                     rang: rangJockey || "NC",
-                    score: scoreJockey.toFixed(1)
+                    score: (scores.jockey.score * 100).toFixed(1)
                 },
                 entraineur: {
                     rang: rangEntraineur || "NC",
-                    score: scoreEntraineur.toFixed(1)
+                    score: (scores.entraineur.score * 100).toFixed(1)
                 },
                 eleveur: {
                     rang: rangEleveur || "NC",
-                    score: scoreEleveur.toFixed(1)
+                    score: (scores.eleveur.score * 100).toFixed(1)
                 },
                 proprietaire: {
                     rang: rangProprio || "NC",
-                    score: scoreProprio.toFixed(1)
+                    score: (scores.proprietaire.score * 100).toFixed(1)
                 }
             }
         };
