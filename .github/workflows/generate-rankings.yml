@@ -1,0 +1,40 @@
+name: Generate Pondered Rankings
+
+on:
+  # Exécuter automatiquement toutes les 24 heures
+  schedule:
+    - cron: '0 */24 * * *'
+  
+  # Permet aussi de déclencher manuellement
+  workflow_dispatch:
+    
+  # Exécuter après chaque push sur main
+  push:
+    branches: [main]
+    paths:
+      - 'data/*.json' # Uniquement si les données sources sont modifiées
+
+jobs:
+  generate-rankings:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Generate rankings
+        run: node extract-pondered-rankings.js
+      
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add data/*ponderated*.json
+          # Ne pas générer d'erreur si aucun changement à committer
+          git commit -m "Mise à jour automatique des classements pondérés" || echo "No changes to commit"
+          git push
