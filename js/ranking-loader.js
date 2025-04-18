@@ -255,7 +255,7 @@ const rankingLoader = {
         return sortedData;
     },
     
-    // Fonction spéciale pour les éleveurs et propriétaires avec initiales
+    // Fonction spéciale améliorée pour les éleveurs et propriétaires avec initiales
     trouverPersonneParInitiale(donneesClassement, nomAvecInitiale, categorie) {
         if (!nomAvecInitiale || !donneesClassement || !donneesClassement.length) {
             return { score: 50, rang: null };
@@ -269,62 +269,56 @@ const rankingLoader = {
         // Normaliser le nom avec l'initiale
         const nomNormalise = this.normaliserNom(nomAvecInitiale);
         
-        // Extraire l'initiale et le nom de famille
-        const match = nomNormalise.match(/^([A-Z])(?:\\.\\s*|\\s+)([A-Z\\s]+)$/i);
+        // Extraire le préfixe, l'initiale et le nom de famille
+        // Nouvelle expression régulière qui gère mieux les préfixes et initiales
+        const match = nomNormalise.match(/^(MME|MR|M)?\s*([A-Z])\.?\s*([A-Z\s]+)$/i);
         
         if (match) {
-            const initiale = match[1].toUpperCase();
-            const nomFamille = match[2].trim().toUpperCase();
+            const prefixe = match[1] ? match[1].toUpperCase() : '';
+            const initiale = match[2].toUpperCase();
+            const nomFamille = match[3].trim().toUpperCase();
+            
+            console.log(`Recherche pour: Préfixe="${prefixe}", Initiale="${initiale}", Nom="${nomFamille}"`);
             
             // Chercher tous les noms qui correspondent au nom de famille et dont le prénom commence par l'initiale
             const correspondances = donneesClassement.filter(item => {
                 const nomComplet = this.normaliserNom(item.Nom || item.NomPostal || "");
                 
-                // Décomposer le nom complet en prénom + nom de famille
-                const parties = nomComplet.split(/\\s+/);
+                // Extraire le préfixe, le prénom et le nom de famille du nom complet
+                const matchComplet = nomComplet.match(/^(MME|MR|M)?\s*([A-Z]+)(?:\s+([A-Z\s]+))?$/i);
                 
-                if (parties.length < 2) return false;
+                if (!matchComplet) return false;
                 
-                // Le premier élément est généralement le prénom
-                const prenom = parties[0];
-                // Le reste forme le nom de famille
-                const nom = parties.slice(1).join(" ");
+                const prefixeComplet = matchComplet[1] ? matchComplet[1].toUpperCase() : '';
+                const prenomComplet = matchComplet[2].toUpperCase();
+                const nomFamilleComplet = matchComplet[3] ? matchComplet[3].trim().toUpperCase() : '';
                 
                 // Vérifier si le prénom commence par l'initiale et si le nom de famille correspond
-                return prenom.startsWith(initiale) && nom.includes(nomFamille);
+                const initialeMatch = prenomComplet.startsWith(initiale);
+                const nomMatch = nomFamilleComplet.includes(nomFamille) || nomFamille.includes(nomFamilleComplet);
+                
+                return initialeMatch && nomMatch;
             });
             
-            // Si on a trouvé exactement une correspondance, c'est probablement la bonne
-            if (correspondances.length === 1) {
-                return {
-                    score: 0, // Plus utilisé, maintenant on utilise le rang
-                    rang: correspondances[0].Rang,
-                    nomTrouve: correspondances[0].Nom || correspondances[0].NomPostal
-                };
-            }
-            
-            // Si on a plusieurs correspondances, prendre celle avec le meilleur rang
-            if (correspondances.length > 1) {
+            // Si on a trouvé des correspondances, utiliser la meilleure
+            if (correspondances.length >= 1) {
+                // Prendre celle avec le meilleur rang en cas de plusieurs correspondances
                 const meilleure = correspondances.reduce((best, current) => {
                     if (!best) return current;
-                    
                     const rangCurrent = parseInt(current.Rang) || 999;
                     const rangBest = parseInt(best.Rang) || 999;
-                    
                     return rangCurrent < rangBest ? current : best;
-                }, null);
+                }, correspondances[0]);
                 
-                if (meilleure) {
-                    return {
-                        score: 0, // Plus utilisé, maintenant on utilise le rang
-                        rang: meilleure.Rang,
-                        nomTrouve: meilleure.Nom || meilleure.NomPostal
-                    };
-                }
+                return {
+                    score: 0,
+                    rang: meilleure.Rang,
+                    nomTrouve: meilleure.Nom || meilleure.NomPostal
+                };
             }
         }
         
-        // Si on n'a pas trouvé avec l'approche des initiales, essayer avec l'approche standard
+        // Si pas de correspondance avec les initiales, essayer l'approche standard
         return this.trouverMeilleurScore(donneesClassement, nomAvecInitiale);
     },
     
@@ -355,8 +349,8 @@ const rankingLoader = {
             } 
             // 3. Correspondance partielle de mots
             else {
-                const motsRef = nomReference.split(/\\s+/);
-                const motsNom = nomNormalise.split(/\\s+/);
+                const motsRef = nomReference.split(/\s+/);
+                const motsNom = nomNormalise.split(/\s+/);
                 
                 // Compter les mots en commun
                 const motsCommuns = motsRef.filter(mot => motsNom.includes(mot)).length;
