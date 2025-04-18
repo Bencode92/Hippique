@@ -24,3 +24,7 @@ env/
 
 # Local configuration
 .env
+
+# Ne pas ignorer les captures d'écran de débogage
+!data/debug_captures/*.png
+!data/debug_captures/*.html
