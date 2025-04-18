@@ -174,7 +174,7 @@ const rankingLoader = {
         
         // AMÉLIORATION: Traitement des noms de chevaux avec parenthèses et suffixes
         // Exemple: "tajlina (gb) f.ps. 3 a." -> "TAJLINA (GB)"
-        const matchCheval = nomNormalise.match(/^([A-Za-zÀ-ÖØ-öø-ÿ\s\-']+)(\s*\(([A-Za-z]+)\))?((\s+[FM]\.P\.S\.[^)]*)|(\s+F\.?P\.?S\.?\s+\d+\s*[aA]\.?)|\s+\d+[aA]\.?|(\s+GB\s+F\.P\.S\.)|\s+\(SUP\).*)?$/i);
+        const matchCheval = nomNormalise.match(/^([A-Za-zÀ-ÖØ-öø-ÿ\s\-']+)(\s*\(([A-Za-z]+)\))?((\\s+[FM]\.P\.S\.[^)]*)|(\\s+F\.?P\.?S\.?\\s+\d+\\s*[aA]\.?)|\s+\d+[aA]\.?|(\s+GB\s+F\.P\.S\.)|\\s+\\(SUP\\).*)?$/i);
         
         if (matchCheval) {
             const nomBase = matchCheval[1].trim();
@@ -971,13 +971,29 @@ const rankingLoader = {
         // utiliser l'ancien système d'inversion de rangs
         if (scoreFinal <= 0) {
             console.log(`Utilisation du système de secours basé sur les rangs pour ${participant.cheval}`);
+            
             // Inverser les rangs pour obtenir un score (plus le rang est bas, meilleur est le score)
             const maxRang = 100;
-            const scoreCheval = rangCheval ? Math.max(0, maxRang - rangCheval) : 30;
-            const scoreJockey = rangJockey ? Math.max(0, maxRang - rangJockey) : 30;
-            const scoreEntraineur = rangEntraineur ? Math.max(0, maxRang - rangEntraineur) : 30;
-            const scoreEleveur = rangEleveur ? Math.max(0, maxRang - rangEleveur) : 30;
-            const scoreProprio = rangProprio ? Math.max(0, maxRang - rangProprio) : 30;
+            
+            // MODIFICATION: Valeur dynamique pour les NC au lieu de 30 fixe
+            const moyenneSecours = Math.max(10, maxRang * 0.15); // 15% du rang max avec minimum de 10
+            
+            const scoreCheval = rangCheval ? Math.max(0, maxRang - rangCheval) : moyenneSecours;
+            const scoreJockey = rangJockey ? Math.max(0, maxRang - rangJockey) : moyenneSecours;
+            const scoreEntraineur = rangEntraineur ? Math.max(0, maxRang - rangEntraineur) : moyenneSecours;
+            const scoreEleveur = rangEleveur ? Math.max(0, maxRang - rangEleveur) : moyenneSecours;
+            const scoreProprio = rangProprio ? Math.max(0, maxRang - rangProprio) : moyenneSecours;
+            
+            // Calculer l'indice de confiance basé sur le nombre d'éléments NC
+            const elementsPresents = [
+                !!rangCheval, 
+                !!rangJockey,
+                !!rangEntraineur, 
+                !!rangEleveur,
+                !!rangProprio
+            ].filter(Boolean).length;
+            
+            const indiceConfiance = elementsPresents / 5;
             
             // Appliquer la formule de pondération, mais avec les rangs inversés
             const scoreSecours = (
@@ -990,6 +1006,7 @@ const rankingLoader = {
             
             return {
                 score: scoreSecours.toFixed(1),
+                indiceConfiance: indiceConfiance.toFixed(2),
                 details: {
                     cheval: {
                         rang: rangCheval || "NC",
@@ -1015,9 +1032,21 @@ const rankingLoader = {
             };
         }
         
+        // Calculer l'indice de confiance
+        const elementsPresents = [
+            !!itemCheval, 
+            !!itemJockey,
+            !!itemEntraineur, 
+            !!itemEleveur,
+            !!itemProprio
+        ].filter(Boolean).length;
+        
+        const indiceConfiance = elementsPresents / 5;
+        
         // Retourner le score et les détails
         return {
             score: scoreFinal,
+            indiceConfiance: indiceConfiance.toFixed(2),
             details: {
                 cheval: {
                     rang: rangCheval || "NC",
