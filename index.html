@@ -1441,7 +1441,7 @@
                     // Si on a trouvé exactement une correspondance, c'est probablement la bonne
                     if (correspondances.length === 1) {
                         return {
-                            score: this.normaliserScore(correspondances[0].ScoreMixte, correspondances[0].Rang),
+                            score: 0, // Plus utilisé, maintenant on utilise le rang
                             rang: correspondances[0].Rang,
                             nomTrouve: correspondances[0].Nom || correspondances[0].NomPostal
                         };
@@ -1460,7 +1460,7 @@
                         
                         if (meilleure) {
                             return {
-                                score: this.normaliserScore(meilleure.ScoreMixte, meilleure.Rang),
+                                score: 0, // Plus utilisé, maintenant on utilise le rang
                                 rang: meilleure.Rang,
                                 nomTrouve: meilleure.Nom || meilleure.NomPostal
                             };
@@ -1475,7 +1475,7 @@
             // Trouver le meilleur score pour un nom dans les données de classement
             trouverMeilleurScore(donneesClassement, nom) {
                 if (!nom || !donneesClassement || !donneesClassement.length) {
-                    return { score: 50, rang: null };
+                    return { score: 0, rang: null };
                 }
                 
                 const nomNormalise = this.normaliserNom(nom);
@@ -1487,15 +1487,15 @@
                     const nomReference = this.normaliserNom(item.Nom || item.NomPostal || "");
                     
                     // Calculer différents types de correspondance
-                    let score = 0;
+                    let similarite = 0;
                     
                     // 1. Correspondance exacte
                     if (nomReference === nomNormalise) {
-                        score = 100;
+                        similarite = 100;
                     } 
                     // 2. L'un contient l'autre intégralement
                     else if (nomReference.includes(nomNormalise) || nomNormalise.includes(nomReference)) {
-                        score = 90;
+                        similarite = 90;
                     } 
                     // 3. Correspondance partielle de mots
                     else {
@@ -1507,14 +1507,14 @@
                         
                         if (motsCommuns > 0) {
                             // Score basé sur le pourcentage de mots en commun
-                            score = Math.min(80, (motsCommuns / Math.max(motsRef.length, motsNom.length)) * 100);
+                            similarite = Math.min(80, (motsCommuns / Math.max(motsRef.length, motsNom.length)) * 100);
                         }
                     }
                     
-                    if (score > 50) { // Seuil minimum de similarité
+                    if (similarite > 50) { // Seuil minimum de similarité
                         correspondances.push({
                             item: item,
-                            similarite: score
+                            similarite: similarite
                         });
                     }
                 });
@@ -1525,31 +1525,62 @@
                 // Si on a trouvé des correspondances, retourner la meilleure
                 if (correspondances.length > 0) {
                     return {
-                        score: this.normaliserScore(correspondances[0].item.ScoreMixte, correspondances[0].item.Rang),
+                        score: 0, // Plus utilisé, maintenant on utilise le rang
                         rang: correspondances[0].item.Rang,
                         similarite: correspondances[0].similarite
                     };
                 }
                 
-                return { score: 50, rang: null }; // Valeur par défaut si non trouvé
+                return { score: 0, rang: null }; // Valeur par défaut si non trouvé
             },
             
-            // Normaliser le score pour qu'il soit sur 100 (où 100 est le meilleur)
-            normaliserScore(scoreMixte, rang) {
-                // Si nous avons le score mixte, l'utiliser (inverser car plus petit = meilleur)
-                if (scoreMixte !== undefined) {
-                    const score = parseFloat(scoreMixte);
-                    // Inverser et normaliser entre 0 et 100
-                    return Math.max(0, Math.min(100, 100 - (score / 10)));
+            // Trouver le rang d'un acteur dans son classement pondéré
+            trouverRangDansClassement(donneesClassement, nom, categorie) {
+                if (!nom || !donneesClassement || !donneesClassement.length) {
+                    return null;
                 }
                 
-                // Sinon, utiliser le rang (moins bon mais mieux que rien)
-                if (rang !== undefined && rang !== null) {
-                    // Plus le rang est petit, meilleur est le score (max 100)
-                    return Math.max(0, 100 - (rang * 0.5));
+                // Pour les éleveurs et propriétaires qui peuvent être multiples
+                if (categorie === 'eleveurs' || categorie === 'proprietaires') {
+                    // Si c'est une chaîne, la diviser sur les virgules et autres séparateurs
+                    const noms = typeof nom === 'string' 
+                        ? nom.split(/\s*[,&\/]\s*/) 
+                        : [nom];
+                    
+                    if (noms.length === 0 || !noms[0]) {
+                        return null;
+                    }
+                    
+                    // Chercher le meilleur rang parmi tous les noms
+                    let meilleurRang = null;
+                    
+                    for (const nomIndividuel of noms) {
+                        const resultat = this.trouverPersonneParInitiale(donneesClassement, nomIndividuel, categorie);
+                        if (resultat.rang !== null) {
+                            const rang = parseInt(resultat.rang);
+                            if (meilleurRang === null || rang < meilleurRang) {
+                                meilleurRang = rang;
+                            }
+                        }
+                    }
+                    
+                    return meilleurRang;
                 }
                 
-                return 50; // Score moyen par défaut
+                // Pour les autres catégories
+                const nomNormalise = this.normaliserNom(nom);
+                
+                // Rechercher une correspondance exacte d'abord
+                for (const item of donneesClassement) {
+                    const nomItem = categorie === 'chevaux' ? item.Nom : item.NomPostal;
+                    if (this.normaliserNom(nomItem) === nomNormalise) {
+                        return parseInt(item.Rang);
+                    }
+                }
+                
+                // Si pas de correspondance exacte, rechercher une correspondance approximative
+                const resultat = this.trouverMeilleurScore(donneesClassement, nom);
+                return resultat.rang ? parseInt(resultat.rang) : null;
             },
             
             // Calculer le score moyen pour une liste de noms (propriétaires, éleveurs)
@@ -1560,52 +1591,35 @@
                     : [listeNoms];
                 
                 if (noms.length === 0 || !noms[0]) {
-                    return { score: 50, rang: null };
+                    return { rang: null };
                 }
                 
-                // Calculer le score pour chaque nom
-                const scores = noms.map(nom => {
-                    // Utiliser la fonction spéciale pour les éleveurs et propriétaires
-                    if (categorie === 'eleveurs' || categorie === 'proprietaires') {
-                        return this.trouverPersonneParInitiale(donneesClassement, nom, categorie);
-                    } else {
-                        return this.trouverMeilleurScore(donneesClassement, nom);
+                // Trouver le meilleur rang (le plus petit numériquement)
+                let meilleurRang = null;
+                
+                // Parcourir tous les noms et trouver le meilleur rang
+                for (const nom of noms) {
+                    if (!nom) continue;
+                    
+                    const rang = this.trouverRangDansClassement(donneesClassement, nom, categorie);
+                    if (rang !== null) {
+                        if (meilleurRang === null || rang < meilleurRang) {
+                            meilleurRang = rang;
+                        }
                     }
-                });
+                }
                 
-                // Calculer la moyenne
-                const scoreMoyen = scores.reduce((sum, s) => sum + s.score, 0) / scores.length;
-                
-                // Prendre le meilleur rang (le plus petit numériquement)
-                const meilleurRang = scores
-                    .filter(s => s.rang !== null)
-                    .reduce((best, s) => (best === null || s.rang < best) ? s.rang : best, null);
-                
-                // Pour le débogage, collecter les noms trouvés
-                const nomsTrouves = scores
-                    .filter(s => s.nomTrouve)
-                    .map(s => s.nomTrouve);
-                
-                return { 
-                    score: scoreMoyen, 
-                    rang: meilleurRang,
-                    nomsTrouves: nomsTrouves.length > 0 ? nomsTrouves : null
-                };
+                return { rang: meilleurRang };
             },
             
             // Calculer le score prédictif pour un participant
             calculerScoreParticipant(participant) {
-                // 1. Récupérer les scores par catégorie
-                const scoreCheval = this.calculerScoreMoyen(this.data.chevaux, participant.cheval, 'chevaux').score;
+                // Récupérer les rangs pour chaque acteur
+                const rangCheval = this.trouverRangDansClassement(this.data.chevaux, participant.cheval, 'chevaux');
+                const rangJockey = this.trouverRangDansClassement(this.data.jockeys, participant.jockey, 'jockeys');
+                const rangEntraineur = this.trouverRangDansClassement(this.data.entraineurs, participant.entraineur, 'entraineurs');
                 
-                // 2. Pour le jockey, utiliser directement le nom
-                const scoreJockey = this.trouverMeilleurScore(this.data.jockeys, participant.jockey).score;
-                
-                // 3. Pour l'entraineur, gestion simple car généralement un seul
-                const scoreEntraineur = this.trouverMeilleurScore(this.data.entraineurs, participant.entraineur).score;
-                
-                // 4. Pour les éleveurs et propriétaires, qui peuvent être multiples
-                // Récupérer les valeurs avec différentes orthographes possibles
+                // Pour les éleveurs et propriétaires, qui peuvent être multiples
                 const proprioValue = this.getPropertyValue(participant, [
                     "proprietaire", "propriétaire", 
                     "proprio", "owner", "owner_name"
@@ -1617,13 +1631,20 @@
                     "breeder", "breeder_name"
                 ]);
                 
-                const resultEleveur = this.calculerScoreMoyen(this.data.eleveurs, eleveurValue, 'eleveurs');
-                const resultProprio = this.calculerScoreMoyen(this.data.proprietaires, proprioValue, 'proprietaires');
+                const rangEleveur = this.trouverRangDansClassement(this.data.eleveurs, eleveurValue, 'eleveurs');
+                const rangProprio = this.trouverRangDansClassement(this.data.proprietaires, proprioValue, 'proprietaires');
+
+                // Inverser les rangs pour obtenir un score (plus le rang est bas, meilleur est le score)
+                // Nous limitons à un maximum de 100 pour éviter des valeurs extrêmes
+                const maxRang = 100;
+                const scoreCheval = rangCheval ? Math.max(0, maxRang - rangCheval) : 30; // valeur par défaut si non trouvé
+                const scoreJockey = rangJockey ? Math.max(0, maxRang - rangJockey) : 30;
+                const scoreEntraineur = rangEntraineur ? Math.max(0, maxRang - rangEntraineur) : 30;
+                const scoreEleveur = rangEleveur ? Math.max(0, maxRang - rangEleveur) : 30;
+                const scoreProprio = rangProprio ? Math.max(0, maxRang - rangProprio) : 30;
                 
-                const scoreEleveur = resultEleveur.score;
-                const scoreProprio = resultProprio.score;
-                
-                // 5. Appliquer la formule de pondération
+                // Appliquer la formule de pondération, mais avec les rangs inversés
+                // Plus le rang est bas, plus le score inversé est élevé
                 const scorePredictif = (
                     0.55 * scoreCheval +
                     0.15 * scoreJockey +
@@ -1635,16 +1656,25 @@
                 return {
                     score: scorePredictif.toFixed(1),
                     details: {
-                        cheval: scoreCheval.toFixed(1),
-                        jockey: scoreJockey.toFixed(1),
-                        entraineur: scoreEntraineur.toFixed(1),
+                        cheval: {
+                            rang: rangCheval || "NC",
+                            score: scoreCheval.toFixed(1)
+                        },
+                        jockey: {
+                            rang: rangJockey || "NC",
+                            score: scoreJockey.toFixed(1)
+                        },
+                        entraineur: {
+                            rang: rangEntraineur || "NC",
+                            score: scoreEntraineur.toFixed(1)
+                        },
                         eleveur: {
-                            score: scoreEleveur.toFixed(1),
-                            nomsTrouves: resultEleveur.nomsTrouves
+                            rang: rangEleveur || "NC",
+                            score: scoreEleveur.toFixed(1)
                         },
                         proprietaire: {
-                            score: scoreProprio.toFixed(1),
-                            nomsTrouves: resultProprio.nomsTrouves
+                            rang: rangProprio || "NC",
+                            score: scoreProprio.toFixed(1)
                         }
                     }
                 };
@@ -1679,7 +1709,24 @@
                 });
                 
                 // Trier par score décroissant
-                return resultats.sort((a, b) => parseFloat(b.scorePredictif.score) - parseFloat(a.scorePredictif.score));
+                const resultatsTries = resultats.sort((a, b) => 
+                    parseFloat(b.scorePredictif.score) - parseFloat(a.scorePredictif.score)
+                );
+                
+                // Attribuer les rangs en tenant compte des ex-aequo
+                let rang = 1;
+                let scorePrec = null;
+                
+                resultatsTries.forEach((resultat, index) => {
+                    const score = parseFloat(resultat.scorePredictif.score);
+                    if (index > 0 && score !== scorePrec) {
+                        rang = index + 1; // Nouveau rang si le score est différent
+                    }
+                    resultat.rang = rang;
+                    scorePrec = score;
+                });
+                
+                return resultatsTries;
             }
         };
 
@@ -2074,6 +2121,7 @@
                             resultatsScores.forEach((resultat, index) => {
                                 const participant = resultat.participant;
                                 const scorePredictif = resultat.scorePredictif;
+                                const rang = resultat.rang; // Rang dans les résultats triés
                                 
                                 // Récupérer les valeurs de propriétaire avec différentes orthographes possibles
                                 const proprioValue = getPropertyValue(participant, [
@@ -2091,11 +2139,11 @@
                                 // Créer un tooltip avec les détails du score
                                 const tooltipContent = `
                                     <div class="tooltip-content">
-                                        <div><strong>Cheval:</strong> ${scorePredictif.details.cheval}</div>
-                                        <div><strong>Jockey:</strong> ${scorePredictif.details.jockey}</div>
-                                        <div><strong>Entraîneur:</strong> ${scorePredictif.details.entraineur}</div>
-                                        <div><strong>Éleveur:</strong> ${scorePredictif.details.eleveur.score}</div>
-                                        <div><strong>Propriétaire:</strong> ${scorePredictif.details.proprietaire.score}</div>
+                                        <div><strong>Cheval:</strong> Rang #${scorePredictif.details.cheval.rang || 'NC'}</div>
+                                        <div><strong>Jockey:</strong> Rang #${scorePredictif.details.jockey.rang || 'NC'}</div>
+                                        <div><strong>Entraîneur:</strong> Rang #${scorePredictif.details.entraineur.rang || 'NC'}</div>
+                                        <div><strong>Éleveur:</strong> Rang #${scorePredictif.details.eleveur.rang || 'NC'}</div>
+                                        <div><strong>Propriétaire:</strong> Rang #${scorePredictif.details.proprietaire.rang || 'NC'}</div>
                                     </div>
                                 `;
                                 
@@ -2111,9 +2159,10 @@
                                         <td>${participant.poids || ""}</td>
                                         <td class="prediction-cell">
                                             <div class="score-details">
-                                                <div class="prediction-bar-container">
+                                                <span class="rang-badge ${rang <= 3 ? 'rang-' + rang : ''}">#${rang}</span>
+                                                <div class="prediction-bar-container" style="margin-top: 5px;">
                                                     <div class="prediction-bar" style="width: ${scorePredictif.score}%;"></div>
-                                                    <span class="prediction-value">${scorePredictif.score}</span>
+                                                    <span class="prediction-value" style="font-size: 0.8rem;">${scorePredictif.score}</span>
                                                 </div>
                                                 <i class="fas fa-info-circle"></i>
                                                 ${tooltipContent}
@@ -2261,31 +2310,8 @@
                 }
             });
             
-            // Animation pour les cartes statistiques
-            document.querySelectorAll('.stat-card').forEach(card => {
-                card.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-5px)';
-                    this.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.2)';
-                });
-                
-                card.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0)';
-                    this.style.boxShadow = 'none';
-                });
-            });
-            
             // Masquer le bouton d'effacement au chargement
             searchClear.style.display = 'none';
-            
-            // Ajouter keyframes pour l'animation spin
-            const style = document.createElement('style');
-            style.textContent = `
-                @keyframes spin {
-                    0% { transform: rotate(0deg); }
-                    100% { transform: rotate(360deg); }
-                }
-            `;
-            document.head.appendChild(style);
         });
     </script>
 </body>
