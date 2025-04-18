@@ -796,6 +796,30 @@
             color: var(--light-gold);
             text-shadow: 0 0 3px rgba(0,0,0,0.7);
         }
+
+        .confidence-indicator {
+            display: inline-block;
+            font-size: 0.8rem;
+            margin-left: 5px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            background-color: rgba(64, 224, 208, 0.1);
+            color: var(--accent);
+        }
+
+        .confidence-high {
+            background-color: rgba(64, 224, 208, 0.2);
+        }
+
+        .confidence-medium {
+            background-color: rgba(212, 175, 55, 0.2);
+            color: var(--gold);
+        }
+
+        .confidence-low {
+            background-color: rgba(224, 90, 64, 0.2);
+            color: var(--red);
+        }
         
         .loading-indicator {
             text-align: center;
@@ -1753,6 +1777,15 @@
                             const score = parseFloat(scorePredictif.score);
                             const normalizedScore = Math.min(Math.max(0, score), 100) / 100; // 0 à 1
                             
+                            // Indice de confiance avec classe de style
+                            const confidence = scorePredictif.indiceConfiance ? parseFloat(scorePredictif.indiceConfiance) : 0;
+                            let confidenceClass = 'confidence-low';
+                            if (confidence >= 0.8) {
+                                confidenceClass = 'confidence-high';
+                            } else if (confidence >= 0.5) {
+                                confidenceClass = 'confidence-medium';
+                            }
+                            
                             participantsHTML += `
                                 <tr data-score="${scorePredictif.score}" data-numero="${participant.numero || 0}">
                                     <td style="text-align: center;">
@@ -1770,13 +1803,21 @@
                                             <div class="prediction-value">${scorePredictif.score}</div>
                                         </div>
                                         <div class="score-details">
-                                            <small>Détails <i class="fas fa-info-circle"></i></small>
+                                            <small>
+                                                Détails <i class="fas fa-info-circle"></i>
+                                                ${scorePredictif.indiceConfiance ? 
+                                                    `<span class="confidence-indicator ${confidenceClass}">${parseFloat(scorePredictif.indiceConfiance) * 100}% fiable</span>` : 
+                                                    ''}
+                                            </small>
                                             <div class="tooltip-content">
                                                 <p>Cheval: Rang #${scorePredictif.details.cheval.rang} (${scorePredictif.details.cheval.score} pts)</p>
                                                 <p>Jockey: Rang #${scorePredictif.details.jockey.rang} (${scorePredictif.details.jockey.score} pts)</p>
                                                 <p>Entraîneur: Rang #${scorePredictif.details.entraineur.rang} (${scorePredictif.details.entraineur.score} pts)</p>
                                                 <p>Éleveur: Rang #${scorePredictif.details.eleveur.rang} (${scorePredictif.details.eleveur.score} pts)</p>
                                                 <p>Propriétaire: Rang #${scorePredictif.details.proprietaire.rang} (${scorePredictif.details.proprietaire.score} pts)</p>
+                                                ${scorePredictif.indiceConfiance ? 
+                                                  `<p><strong>Fiabilité: ${parseFloat(scorePredictif.indiceConfiance) * 100}%</strong> (${getConfidenceDescription(parseFloat(scorePredictif.indiceConfiance))})</p>` : 
+                                                  ''}
                                             </div>
                                         </div>
                                     </td>
@@ -1848,6 +1889,19 @@
                 }
             }
             
+            // Fonction utilitaire pour obtenir une description de l'indice de confiance
+            function getConfidenceDescription(confidence) {
+                if (confidence >= 0.8) {
+                    return "Prédiction très fiable";
+                } else if (confidence >= 0.6) {
+                    return "Prédiction fiable";
+                } else if (confidence >= 0.4) {
+                    return "Prédiction moyennement fiable";
+                } else {
+                    return "Prédiction peu fiable, données manquantes";
+                }
+            }
+            
             // Événement pour le sélecteur de date
             dateButton.addEventListener('click', function() {
                 // Si l'input date est déjà visible, le cacher
@@ -1911,6 +1965,6 @@
     </script>
     
     <!-- Ajout du nouveau module ranking-loader.js -->
-    <script src="js/ranking-loader.js"></script>
+    <script src="js/ranking-loader.js?v=1"></script>
 </body>
 </html>
