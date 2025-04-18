@@ -174,8 +174,8 @@ class ScraperCoursesFG:
         print("🔍 Scraping des courses du jour (page 'aujourdhui')...")
         links = []
 
-        # Prenons une capture d'écran pour le débogage
-        screenshot_dir = os.path.join(self.output_dir, "debug")
+        # MODIFICATION: Changement du chemin pour les captures d'écran de débogage
+        screenshot_dir = os.path.join("data", "debug_captures")
         os.makedirs(screenshot_dir, exist_ok=True)
         screenshot_path = os.path.join(screenshot_dir, "aujourdhui_page.png")
         driver.save_screenshot(screenshot_path)
@@ -331,8 +331,8 @@ class ScraperCoursesFG:
         }
         
         try:
-            # Prenons une capture d'écran pour le débogage
-            screenshot_dir = os.path.join(self.output_dir, "debug")
+            # MODIFICATION: Changement du chemin pour les captures d'écran de débogage
+            screenshot_dir = os.path.join("data", "debug_captures")
             os.makedirs(screenshot_dir, exist_ok=True)
             
             # Créer un nom de fichier sécurisé pour l'hippodrome
