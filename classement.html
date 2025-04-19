@@ -647,6 +647,32 @@
             visibility: visible;
             opacity: 1;
         }
+        
+        /* Icône perfectScore avec effet plus marqué */
+        .perfect-cheval::after {
+            content: '⭐';
+            margin-left: 5px;
+            font-size: 1em;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 0.7; }
+            50% { opacity: 1; }
+            100% { opacity: 0.7; }
+        }
+        
+        /* Badge pour taux élevé */
+        .high-rate {
+            display: inline-block;
+            background-color: rgba(64, 224, 208, 0.2);
+            color: var(--accent);
+            border-radius: 8px;
+            padding: 1px 5px;
+            font-size: 0.75em;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
     </style>
 </head>
 <body>
@@ -850,11 +876,20 @@
                 chevaux: [
                     { key: 'Rang', label: '#', class: 'rank' },
                     { key: 'Nom', label: 'Nom', renderer: (value, item) => {
-                        const hasPerfectScore = item.TauxVictoire === "100.0" && item.TauxPlace === "0.0";
-                        if (item.LibelleCheval_url) {
-                            return `<a href="${item.LibelleCheval_url}" target="_blank" class="${hasPerfectScore ? 'perfect-score' : ''}">${value}</a>`;
+                        const hasPerfectScore = parseFloat(item.TauxVictoire) === 100.0;
+                        const highScore = parseFloat(item.TauxVictoire) >= 80.0;
+                        
+                        let className = hasPerfectScore ? 'perfect-cheval' : (highScore ? 'high-rate' : '');
+                        let badgeText = '';
+                        
+                        if (highScore && !hasPerfectScore) {
+                            badgeText = `<span class="high-rate">${item.TauxVictoire}%</span>`;
                         }
-                        return hasPerfectScore ? `<span class="perfect-score">${value}</span>` : value;
+                        
+                        if (item.LibelleCheval_url) {
+                            return `<a href="${item.LibelleCheval_url}" target="_blank" class="${className}">${value}${badgeText}</a>`;
+                        }
+                        return `<span class="${className}">${value}${badgeText}</span>`;
                     }},
                     { key: 'NbCourses', label: 'Courses', class: 'stats' },
                     { key: 'NbVictoires', label: 'Victoires', class: 'stats' },
@@ -887,11 +922,13 @@
                         return `<span style="color: ${color}; font-weight: 600;"><i class="fas fa-euro-sign" style="font-size: 0.8em; margin-right: 3px;"></i>${formattedValue} €</span>`;
                     }},
                     { key: 'ScoreMixte', label: 'Score pondéré', class: 'stats', renderer: (value, item) => {
-                        // Mettre à jour les tooltips avec la nouvelle pondération incluant le gain moyen
-                        let tooltip = "Utilise un système de classement dense (sans saut)\n40% victoires, 25% taux de victoire, 15% taux de place, 20% gain moyen";
-                        if (item.TauxVictoire === "100.0" && item.TauxPlace === "0.0") {
-                            tooltip = "Utilise un système de classement dense (sans saut)\n55% victoires, 25% taux de victoire, 20% gain moyen (taux de place ignoré)";
+                        // Mettre à jour les tooltips avec la nouvelle formule plus avancée
+                        let tooltip = "Score pondéré intelligent:\n30% régularité (victoires+places/courses)\n30% taux de victoire\n15% bonus taux de victoire élevé\n15% régularité\n10% gain moyen";
+                        
+                        if (parseFloat(item.TauxVictoire) === 100.0) {
+                            tooltip = "Score pondéré avec bonus performance parfaite:\n40% régularité\n30% taux de victoire\n20% bonus performance parfaite\n10% gain moyen";
                         }
+                        
                         return `<span title="${tooltip}"><i class="fas fa-chart-line" style="color: var(--accent); font-size: 0.8em; margin-right: 5px;"></i>${value}</span>`;
                     }}
                 ],
@@ -977,6 +1014,11 @@
                     }}
                 ]
             };
+            
+            // Fonction sigmoïde pour bonus de taux de victoire
+            function sigmoid(x, midpoint = 0.8, steepness = 10) {
+                return 1 / (1 + Math.exp(-steepness * (x - midpoint)));
+            }
             
             // Fonction de classement dense (sans sauts) pour tous les types de tri
             function rankWithTiesDense(items, valueGetter) {
@@ -1076,42 +1118,71 @@
                     const rangGainMoyen = currentCategory === 'chevaux' ? 
                         gainMoyenRanks.get(key) || 999 : 0;
                     
-                    // Déterminer si l'élément a un taux de victoire parfait
-                    const nbCourses = currentCategory === 'chevaux' ? 
-                        parseInt(item.NbCourses || 0) : 
-                        parseInt(item.Partants || 0);
-                    const nbVictoires = currentCategory === 'chevaux' ? 
-                        parseInt(item.NbVictoires || 0) : 
-                        parseInt(item.Victoires || 0);
-                    const nbPlaces = currentCategory === 'chevaux' ? 
-                        parseInt(item.NbPlace || 0) : 
-                        parseInt(item.Place || 0);
-                    
-                    const hasPerfectWinRate = nbCourses > 0 && nbVictoires === nbCourses && nbPlaces === 0;
-                    
-                    // MODIFICATION: Pondération différente pour les chevaux (avec gain moyen)
+                    // NOUVELLE APPROCHE: Pour les chevaux, utiliser une formule plus sophistiquée
                     if (currentCategory === 'chevaux') {
-                        // Pondération adaptative avec gain moyen pour les chevaux
-                        let poidsV = 0.40;   // Poids des victoires: 40%
-                        let poidsTV = 0.25;  // Poids du taux de victoire: 25%
-                        let poidsTP = 0.15;  // Poids du taux de place: 15%
-                        let poidsGM = 0.20;  // Poids du gain moyen: 20%
+                        // Récupérer les données brutes pour les calculs
+                        const nbCourses = parseInt(item.NbCourses || 0);
+                        const nbVictoires = parseInt(item.NbVictoires || 0);
+                        const nbPlaces = parseInt(item.NbPlace || 0);
+                        const tauxVictoire = parseFloat(item.TauxVictoire || 0) / 100; // Normaliser entre 0 et 1
+                        const tauxPlace = parseFloat(item.TauxPlace || 0) / 100; // Normaliser entre 0 et 1
                         
-                        // Si taux de victoire parfait, redistribuer le poids du taux de place
-                        if (hasPerfectWinRate) {
-                            poidsV += poidsTP; // Redistribuer vers les victoires
-                            poidsTP = 0;       // Ignorer le taux de place
+                        // Récupérer le gain moyen normalisé (0-1)
+                        let gainMoyen = 0;
+                        if (item.GainMoyen) {
+                            const gainValue = typeof item.GainMoyen === 'number' ? 
+                                item.GainMoyen : 
+                                parseFloat(item.GainMoyen.toString().replace(/\s+/g, '').replace(',', '.')) || 0;
+                            
+                            // Normaliser le gain entre 0 et 1 en utilisant les statistiques
+                            const stats = window.chevauxStats || { gainMoyen: { min: 0, max: 100000 } };
+                            const min = stats.gainMoyen.min;
+                            const max = stats.gainMoyen.max;
+                            gainMoyen = (max > min) ? (gainValue - min) / (max - min) : 0.5;
                         }
                         
-                        // Calcul du score pondéré incluant le gain moyen
-                        item.ScoreMixte = (
-                            poidsV * rangVictoires +
-                            poidsTV * rangTauxVictoire +
-                            poidsTP * rangTauxPlace +
-                            poidsGM * rangGainMoyen
-                        ).toFixed(2);
+                        // 1. Calculer la régularité (victoires + places)/courses
+                        const regularite = nbCourses > 0 ? (nbVictoires + nbPlaces) / nbCourses : 0;
+                        
+                        // 2. Bonus pour taux de victoire parfait ou élevé
+                        let bonusPerfect = 0;
+                        if (tauxVictoire === 1) {
+                            bonusPerfect = 1; // 100% de victoire
+                        } else if (tauxVictoire >= 0.8) {
+                            bonusPerfect = 0.5; // 80%+ de victoire
+                        }
+                        
+                        // 3. Bonus dynamique avec fonction sigmoïde pour les taux élevés
+                        const bonus = sigmoid(tauxVictoire, 0.8, 10);
+                        
+                        // 4. Score final avec les nouvelles pondérations
+                        const scoreFinal = (
+                            0.1 * (1 - (rangGainMoyen / 1000)) +     // Gain moyen (10%) - inversé pour que meilleur rang = meilleur score
+                            0.3 * regularite +                       // Régularité (30%)
+                            0.3 * tauxVictoire +                     // Taux de victoire (30%)
+                            0.15 * bonusPerfect +                    // Bonus pour palmarès parfait (15%)
+                            0.15 * bonus                             // Bonus dynamique sigmoid (15%)
+                        );
+                        
+                        // Inverser le score pour que 0 soit le meilleur (comme les rangs)
+                        // et le normaliser pour avoir une échelle similaire aux rangs
+                        item.RawScore = scoreFinal; // Garder le score brut pour le tri
+                        item.ScoreMixte = (1000 * (1 - scoreFinal)).toFixed(2);
                     } else {
                         // Pour les autres catégories, conserver la pondération existante
+                        // Déterminer si l'élément a un taux de victoire parfait
+                        const nbCourses = currentCategory === 'chevaux' ? 
+                            parseInt(item.NbCourses || 0) : 
+                            parseInt(item.Partants || 0);
+                        const nbVictoires = currentCategory === 'chevaux' ? 
+                            parseInt(item.NbVictoires || 0) : 
+                            parseInt(item.Victoires || 0);
+                        const nbPlaces = currentCategory === 'chevaux' ? 
+                            parseInt(item.NbPlace || 0) : 
+                            parseInt(item.Place || 0);
+                        
+                        const hasPerfectWinRate = nbCourses > 0 && nbVictoires === nbCourses && nbPlaces === 0;
+                        
                         let poidsV = 0.5;  // Poids par défaut pour les victoires
                         let poidsTV = 0.3; // Poids par défaut pour le taux de victoire
                         let poidsTP = 0.2; // Poids par défaut pour le taux de place
@@ -1137,16 +1208,30 @@
                     originalScores[currentCategory][key] = item.ScoreMixte;
                 });
                 
-                // Tri final par score mixte croissant (meilleur score = plus petit)
-                const sortedData = dataCopy.sort((a, b) => {
-                    const diff = parseFloat(a.ScoreMixte || 999) - parseFloat(b.ScoreMixte || 999);
-                    if (diff !== 0) return diff;
-                    
-                    // Départage par nom en cas d'égalité
-                    const nameA = currentCategory === 'chevaux' ? a.Nom : a.NomPostal;
-                    const nameB = currentCategory === 'chevaux' ? b.Nom : b.NomPostal;
-                    return nameA.localeCompare(nameB);
-                });
+                // Tri final par score mixte
+                let sortedData;
+                
+                if (currentCategory === 'chevaux') {
+                    // Pour les chevaux, trier par score brut décroissant (meilleur score = plus grand)
+                    sortedData = dataCopy.sort((a, b) => {
+                        const diff = (b.RawScore || 0) - (a.RawScore || 0);
+                        if (diff !== 0) return diff;
+                        
+                        // Départage par nom en cas d'égalité
+                        return a.Nom.localeCompare(b.Nom);
+                    });
+                } else {
+                    // Pour les autres catégories, trier par score mixte croissant (meilleur score = plus petit)
+                    sortedData = dataCopy.sort((a, b) => {
+                        const diff = parseFloat(a.ScoreMixte || 999) - parseFloat(b.ScoreMixte || 999);
+                        if (diff !== 0) return diff;
+                        
+                        // Départage par nom en cas d'égalité
+                        const nameA = currentCategory === 'chevaux' ? a.Nom : a.NomPostal;
+                        const nameB = currentCategory === 'chevaux' ? b.Nom : b.NomPostal;
+                        return nameA.localeCompare(nameB);
+                    });
+                }
                 
                 // MODIFICATION POUR CORRIGER LE PROBLÈME DES SAUTS DE RANG
                 // Utiliser une approche plus simple et directe pour le classement dense
@@ -1154,10 +1239,14 @@
                 let currentScore = null;
                 
                 sortedData.forEach((item, index) => {
-                    const score = parseFloat(item.ScoreMixte || 999);
+                    // Pour les chevaux nous utilisons le score brut, pour les autres le ScoreMixte
+                    const score = currentCategory === 'chevaux' ? 
+                        (item.RawScore || 0) : parseFloat(item.ScoreMixte || 999);
                     
                     // Si nouveau score, incrémenter le rang distinct
-                    if (index === 0 || Math.abs(score - currentScore) > 0.001) {
+                    if (index === 0 || (currentCategory === 'chevaux' ? 
+                                        Math.abs(score - currentScore) > 0.001 : 
+                                        Math.abs(score - currentScore) > 0.001)) {
                         distinctRank++;
                         currentScore = score;
                     }
