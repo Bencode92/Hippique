@@ -844,7 +844,7 @@
                         if (item.TauxVictoire === "100.0" && item.TauxPlace === "0.0") {
                             tooltip = "Utilise un système de classement dense (sans saut)\n70% victoires, 30% taux de victoire (taux de place ignoré)";
                         }
-                        return `<span title="${tooltip}">${value}</span>`;
+                        return `<span title="${tooltip}"><i class="fas fa-chart-line" style="color: var(--accent); font-size: 0.8em; margin-right: 5px;"></i>${value}</span>`;
                     }}
                 ],
                 chevaux: [
@@ -884,14 +884,15 @@
                         // Formater avec séparateur de milliers
                         const formattedValue = new Intl.NumberFormat('fr-FR').format(numericValue);
                         
-                        return `<span style="color: ${color}; font-weight: 600;">${formattedValue} €</span>`;
+                        return `<span style="color: ${color}; font-weight: 600;"><i class="fas fa-euro-sign" style="font-size: 0.8em; margin-right: 3px;"></i>${formattedValue} €</span>`;
                     }},
                     { key: 'ScoreMixte', label: 'Score pondéré', class: 'stats', renderer: (value, item) => {
-                        let tooltip = "Utilise un système de classement dense (sans saut)\n50% victoires, 30% taux de victoire, 20% taux de place";
+                        // Mettre à jour les tooltips avec la nouvelle pondération incluant le gain moyen
+                        let tooltip = "Utilise un système de classement dense (sans saut)\n40% victoires, 25% taux de victoire, 15% taux de place, 20% gain moyen";
                         if (item.TauxVictoire === "100.0" && item.TauxPlace === "0.0") {
-                            tooltip = "Utilise un système de classement dense (sans saut)\n70% victoires, 30% taux de victoire (taux de place ignoré)";
+                            tooltip = "Utilise un système de classement dense (sans saut)\n55% victoires, 25% taux de victoire, 20% gain moyen (taux de place ignoré)";
                         }
-                        return `<span title="${tooltip}">${value}</span>`;
+                        return `<span title="${tooltip}"><i class="fas fa-chart-line" style="color: var(--accent); font-size: 0.8em; margin-right: 5px;"></i>${value}</span>`;
                     }}
                 ],
                 entraineurs: [
@@ -918,7 +919,7 @@
                         if (item.TauxVictoire === "100.0" && item.TauxPlace === "0.0") {
                             tooltip = "Utilise un système de classement dense (sans saut)\n70% victoires, 30% taux de victoire (taux de place ignoré)";
                         }
-                        return `<span title="${tooltip}">${value}</span>`;
+                        return `<span title="${tooltip}"><i class="fas fa-chart-line" style="color: var(--accent); font-size: 0.8em; margin-right: 5px;"></i>${value}</span>`;
                     }}
                 ],
                 eleveurs: [
@@ -945,7 +946,7 @@
                         if (item.TauxVictoire === "100.0" && item.TauxPlace === "0.0") {
                             tooltip = "Utilise un système de classement dense (sans saut)\n70% victoires, 30% taux de victoire (taux de place ignoré)";
                         }
-                        return `<span title="${tooltip}">${value}</span>`;
+                        return `<span title="${tooltip}"><i class="fas fa-chart-line" style="color: var(--accent); font-size: 0.8em; margin-right: 5px;"></i>${value}</span>`;
                     }}
                 ],
                 proprietaires: [
@@ -972,7 +973,7 @@
                         if (item.TauxVictoire === "100.0" && item.TauxPlace === "0.0") {
                             tooltip = "Utilise un système de classement dense (sans saut)\n70% victoires, 30% taux de victoire (taux de place ignoré)";
                         }
-                        return `<span title="${tooltip}">${value}</span>`;
+                        return `<span title="${tooltip}"><i class="fas fa-chart-line" style="color: var(--accent); font-size: 0.8em; margin-right: 5px;"></i>${value}</span>`;
                     }}
                 ]
             };
@@ -1036,10 +1037,26 @@
                 const victoryRateGetter = item => parseFloat(item.TauxVictoire || 0);
                 const placeRateGetter = item => parseFloat(item.TauxPlace || 0);
                 
+                // NOUVEAU: Ajout du gain moyen getter pour les chevaux
+                const gainMoyenGetter = item => {
+                    if (currentCategory !== 'chevaux') return 0;
+                    
+                    if (!item.GainMoyen) return 0;
+                    // Gérer à la fois les valeurs numériques et les chaînes
+                    if (typeof item.GainMoyen === 'number') {
+                        return item.GainMoyen;
+                    }
+                    return parseFloat(item.GainMoyen.toString().replace(/\s+/g, '').replace(',', '.')) || 0;
+                };
+                
                 // Calcul des rangs pour chaque métrique avec gestion des égalités DENSE
                 const victoryRanks = rankWithTiesDense(dataCopy, victoryGetter);
                 const victoryRateRanks = rankWithTiesDense(dataCopy, victoryRateGetter);
                 const placeRateRanks = rankWithTiesDense(dataCopy, placeRateGetter);
+                
+                // NOUVEAU: Ajouter le calcul des rangs pour les gains moyens (seulement pour les chevaux)
+                const gainMoyenRanks = currentCategory === 'chevaux' ? 
+                    rankWithTiesDense(dataCopy, gainMoyenGetter) : new Map();
                 
                 // Calcul du score pondéré pour chaque participant
                 dataCopy.forEach(item => {
@@ -1055,6 +1072,10 @@
                     const rangTauxVictoire = victoryRateRanks.get(key) || 999;
                     const rangTauxPlace = placeRateRanks.get(key) || 999;
                     
+                    // NOUVEAU: Récupérer aussi le rang du gain moyen pour les chevaux
+                    const rangGainMoyen = currentCategory === 'chevaux' ? 
+                        gainMoyenRanks.get(key) || 999 : 0;
+                    
                     // Déterminer si l'élément a un taux de victoire parfait
                     const nbCourses = currentCategory === 'chevaux' ? 
                         parseInt(item.NbCourses || 0) : 
@@ -1068,23 +1089,46 @@
                     
                     const hasPerfectWinRate = nbCourses > 0 && nbVictoires === nbCourses && nbPlaces === 0;
                     
-                    // Pondération adaptative
-                    let poidsV = 0.5;  // Poids par défaut pour les victoires
-                    let poidsTV = 0.3; // Poids par défaut pour le taux de victoire
-                    let poidsTP = 0.2; // Poids par défaut pour le taux de place
-                    
-                    // Si taux de victoire parfait, redistribuer le poids du taux de place
-                    if (hasPerfectWinRate) {
-                        poidsV += poidsTP; // Redistribuer le poids du taux de place vers les victoires
-                        poidsTP = 0;       // Ignorer le taux de place
+                    // MODIFICATION: Pondération différente pour les chevaux (avec gain moyen)
+                    if (currentCategory === 'chevaux') {
+                        // Pondération adaptative avec gain moyen pour les chevaux
+                        let poidsV = 0.40;   // Poids des victoires: 40%
+                        let poidsTV = 0.25;  // Poids du taux de victoire: 25%
+                        let poidsTP = 0.15;  // Poids du taux de place: 15%
+                        let poidsGM = 0.20;  // Poids du gain moyen: 20%
+                        
+                        // Si taux de victoire parfait, redistribuer le poids du taux de place
+                        if (hasPerfectWinRate) {
+                            poidsV += poidsTP; // Redistribuer vers les victoires
+                            poidsTP = 0;       // Ignorer le taux de place
+                        }
+                        
+                        // Calcul du score pondéré incluant le gain moyen
+                        item.ScoreMixte = (
+                            poidsV * rangVictoires +
+                            poidsTV * rangTauxVictoire +
+                            poidsTP * rangTauxPlace +
+                            poidsGM * rangGainMoyen
+                        ).toFixed(2);
+                    } else {
+                        // Pour les autres catégories, conserver la pondération existante
+                        let poidsV = 0.5;  // Poids par défaut pour les victoires
+                        let poidsTV = 0.3; // Poids par défaut pour le taux de victoire
+                        let poidsTP = 0.2; // Poids par défaut pour le taux de place
+                        
+                        // Si taux de victoire parfait, redistribuer le poids du taux de place
+                        if (hasPerfectWinRate) {
+                            poidsV += poidsTP; // Redistribuer le poids du taux de place vers les victoires
+                            poidsTP = 0;       // Ignorer le taux de place
+                        }
+                        
+                        // Calcul du score pondéré avec rangs DENSES (formule originale)
+                        item.ScoreMixte = (
+                            poidsV * rangVictoires +
+                            poidsTV * rangTauxVictoire +
+                            poidsTP * rangTauxPlace
+                        ).toFixed(2);
                     }
-                    
-                    // Calcul du score pondéré avec rangs DENSES
-                    item.ScoreMixte = (
-                        poidsV * rangVictoires +
-                        poidsTV * rangTauxVictoire +
-                        poidsTP * rangTauxPlace
-                    ).toFixed(2);
                     
                     // Stocker le score original
                     if (!originalScores[currentCategory]) {
