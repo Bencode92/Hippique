@@ -849,11 +849,11 @@
                 jockeys: [
                     { key: 'Rang', label: '#', class: 'rank' },
                     { key: 'NomPostal', label: 'Nom', renderer: (value, item) => {
-                        const hasPerfectScore = item.TauxVictoire === "100.0" && item.TauxPlace === "0.0";
+                        // Suppression du traitement spécial pour 100% de victoires
                         if (item.NomPostal_url) {
-                            return `<a href="${item.NomPostal_url}" target="_blank" class="${hasPerfectScore ? 'perfect-score' : ''}">${value}</a>`;
+                            return `<a href="${item.NomPostal_url}" target="_blank">${value}</a>`;
                         }
-                        return hasPerfectScore ? `<span class="perfect-score">${value}</span>` : value;
+                        return value;
                     }},
                     { key: 'Chevaux', label: 'Chevaux', class: 'stats' },
                     { key: 'Partants', label: 'Partants', class: 'stats' },
@@ -866,30 +866,22 @@
                         return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
                     }},
                     { key: 'ScoreMixte', label: 'Score pondéré', class: 'stats', renderer: (value, item) => {
+                        // Suppression des tooltips différents pour 100% de victoires
                         let tooltip = "Utilise un système de classement dense (sans saut)\n50% victoires, 30% taux de victoire, 20% taux de place";
-                        if (item.TauxVictoire === "100.0" && item.TauxPlace === "0.0") {
-                            tooltip = "Utilise un système de classement dense (sans saut)\n70% victoires, 30% taux de victoire (taux de place ignoré)";
-                        }
                         return `<span title="${tooltip}"><i class="fas fa-chart-line" style="color: var(--accent); font-size: 0.8em; margin-right: 5px;"></i>${value}</span>`;
                     }}
                 ],
                 chevaux: [
                     { key: 'Rang', label: '#', class: 'rank' },
                     { key: 'Nom', label: 'Nom', renderer: (value, item) => {
-                        const hasPerfectScore = parseFloat(item.TauxVictoire) === 100.0;
+                        // On conserve seulement l'indicateur visuel sans traitement spécial pour le rang
                         const highScore = parseFloat(item.TauxVictoire) >= 80.0;
-                        
-                        let className = hasPerfectScore ? 'perfect-cheval' : (highScore ? 'high-rate' : '');
-                        let badgeText = '';
-                        
-                        if (highScore && !hasPerfectScore) {
-                            badgeText = `<span class="high-rate">${item.TauxVictoire}%</span>`;
-                        }
+                        let badgeText = highScore ? `<span class="high-rate">${item.TauxVictoire}%</span>` : '';
                         
                         if (item.LibelleCheval_url) {
-                            return `<a href="${item.LibelleCheval_url}" target="_blank" class="${className}">${value}${badgeText}</a>`;
+                            return `<a href="${item.LibelleCheval_url}" target="_blank">${value} ${badgeText}</a>`;
                         }
-                        return `<span class="${className}">${value}${badgeText}</span>`;
+                        return `<span>${value} ${badgeText}</span>`;
                     }},
                     { key: 'NbCourses', label: 'Courses', class: 'stats' },
                     { key: 'NbVictoires', label: 'Victoires', class: 'stats' },
@@ -922,12 +914,8 @@
                         return `<span style="color: ${color}; font-weight: 600;"><i class="fas fa-euro-sign" style="font-size: 0.8em; margin-right: 3px;"></i>${formattedValue} €</span>`;
                     }},
                     { key: 'ScoreMixte', label: 'Score pondéré', class: 'stats', renderer: (value, item) => {
-                        // Mettre à jour les tooltips avec la nouvelle formule plus avancée
-                        let tooltip = "Score pondéré intelligent:\n30% régularité (victoires+places/courses)\n30% taux de victoire\n15% bonus taux de victoire élevé\n15% régularité\n10% gain moyen";
-                        
-                        if (parseFloat(item.TauxVictoire) === 100.0) {
-                            tooltip = "Score pondéré avec bonus performance parfaite:\n40% régularité\n30% taux de victoire\n20% bonus performance parfaite\n10% gain moyen";
-                        }
+                        // Un seul tooltip uniforme pour tous les chevaux
+                        let tooltip = "Score pondéré standard: 40% régularité, 30% taux de victoire, 20% rangs de victoires, 10% gain moyen";
                         
                         return `<span title="${tooltip}"><i class="fas fa-chart-line" style="color: var(--accent); font-size: 0.8em; margin-right: 5px;"></i>${value}</span>`;
                     }}
@@ -935,11 +923,11 @@
                 entraineurs: [
                     { key: 'Rang', label: '#', class: 'rank' },
                     { key: 'NomPostal', label: 'Nom', renderer: (value, item) => {
-                        const hasPerfectScore = item.TauxVictoire === "100.0" && item.TauxPlace === "0.0";
+                        // Suppression du traitement spécial pour 100% de victoires
                         if (item.NomPostal_url) {
-                            return `<a href="${item.NomPostal_url}" target="_blank" class="${hasPerfectScore ? 'perfect-score' : ''}">${value}</a>`;
+                            return `<a href="${item.NomPostal_url}" target="_blank">${value}</a>`;
                         }
-                        return hasPerfectScore ? `<span class="perfect-score">${value}</span>` : value;
+                        return value;
                     }},
                     { key: 'Chevaux', label: 'Chevaux', class: 'stats' },
                     { key: 'Partants', label: 'Partants', class: 'stats' },
@@ -952,21 +940,19 @@
                         return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
                     }},
                     { key: 'ScoreMixte', label: 'Score pondéré', class: 'stats', renderer: (value, item) => {
+                        // Suppression des tooltips différents pour 100% de victoires
                         let tooltip = "Utilise un système de classement dense (sans saut)\n50% victoires, 30% taux de victoire, 20% taux de place";
-                        if (item.TauxVictoire === "100.0" && item.TauxPlace === "0.0") {
-                            tooltip = "Utilise un système de classement dense (sans saut)\n70% victoires, 30% taux de victoire (taux de place ignoré)";
-                        }
                         return `<span title="${tooltip}"><i class="fas fa-chart-line" style="color: var(--accent); font-size: 0.8em; margin-right: 5px;"></i>${value}</span>`;
                     }}
                 ],
                 eleveurs: [
                     { key: 'Rang', label: '#', class: 'rank' },
                     { key: 'NomPostal', label: 'Nom', renderer: (value, item) => {
-                        const hasPerfectScore = item.TauxVictoire === "100.0" && item.TauxPlace === "0.0";
+                        // Suppression du traitement spécial pour 100% de victoires
                         if (item.NomPostal_url) {
-                            return `<a href="${item.NomPostal_url}" target="_blank" class="${hasPerfectScore ? 'perfect-score' : ''}">${value}</a>`;
+                            return `<a href="${item.NomPostal_url}" target="_blank">${value}</a>`;
                         }
-                        return hasPerfectScore ? `<span class="perfect-score">${value}</span>` : value;
+                        return value;
                     }},
                     { key: 'Chevaux', label: 'Chevaux', class: 'stats' },
                     { key: 'Partants', label: 'Partants', class: 'stats' },
@@ -979,21 +965,19 @@
                         return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
                     }},
                     { key: 'ScoreMixte', label: 'Score pondéré', class: 'stats', renderer: (value, item) => {
+                        // Suppression des tooltips différents pour 100% de victoires
                         let tooltip = "Utilise un système de classement dense (sans saut)\n50% victoires, 30% taux de victoire, 20% taux de place";
-                        if (item.TauxVictoire === "100.0" && item.TauxPlace === "0.0") {
-                            tooltip = "Utilise un système de classement dense (sans saut)\n70% victoires, 30% taux de victoire (taux de place ignoré)";
-                        }
                         return `<span title="${tooltip}"><i class="fas fa-chart-line" style="color: var(--accent); font-size: 0.8em; margin-right: 5px;"></i>${value}</span>`;
                     }}
                 ],
                 proprietaires: [
                     { key: 'Rang', label: '#', class: 'rank' },
                     { key: 'NomPostal', label: 'Nom', renderer: (value, item) => {
-                        const hasPerfectScore = item.TauxVictoire === "100.0" && item.TauxPlace === "0.0";
+                        // Suppression du traitement spécial pour 100% de victoires
                         if (item.NomPostal_url) {
-                            return `<a href="${item.NomPostal_url}" target="_blank" class="${hasPerfectScore ? 'perfect-score' : ''}">${value}</a>`;
+                            return `<a href="${item.NomPostal_url}" target="_blank">${value}</a>`;
                         }
-                        return hasPerfectScore ? `<span class="perfect-score">${value}</span>` : value;
+                        return value;
                     }},
                     { key: 'Chevaux', label: 'Chevaux', class: 'stats' },
                     { key: 'Partants', label: 'Partants', class: 'stats' },
@@ -1006,10 +990,8 @@
                         return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
                     }},
                     { key: 'ScoreMixte', label: 'Score pondéré', class: 'stats', renderer: (value, item) => {
+                        // Suppression des tooltips différents pour 100% de victoires
                         let tooltip = "Utilise un système de classement dense (sans saut)\n50% victoires, 30% taux de victoire, 20% taux de place";
-                        if (item.TauxVictoire === "100.0" && item.TauxPlace === "0.0") {
-                            tooltip = "Utilise un système de classement dense (sans saut)\n70% victoires, 30% taux de victoire (taux de place ignoré)";
-                        }
                         return `<span title="${tooltip}"><i class="fas fa-chart-line" style="color: var(--accent); font-size: 0.8em; margin-right: 5px;"></i>${value}</span>`;
                     }}
                 ]
@@ -1079,7 +1061,7 @@
                 const victoryRateGetter = item => parseFloat(item.TauxVictoire || 0);
                 const placeRateGetter = item => parseFloat(item.TauxPlace || 0);
                 
-                // NOUVEAU: Ajout du gain moyen getter pour les chevaux
+                // Ajout du gain moyen getter pour les chevaux
                 const gainMoyenGetter = item => {
                     if (currentCategory !== 'chevaux') return 0;
                     
@@ -1096,7 +1078,7 @@
                 const victoryRateRanks = rankWithTiesDense(dataCopy, victoryRateGetter);
                 const placeRateRanks = rankWithTiesDense(dataCopy, placeRateGetter);
                 
-                // NOUVEAU: Ajouter le calcul des rangs pour les gains moyens (seulement pour les chevaux)
+                // Ajouter le calcul des rangs pour les gains moyens (seulement pour les chevaux)
                 const gainMoyenRanks = currentCategory === 'chevaux' ? 
                     rankWithTiesDense(dataCopy, gainMoyenGetter) : new Map();
                 
@@ -1114,20 +1096,20 @@
                     const rangTauxVictoire = victoryRateRanks.get(key) || 999;
                     const rangTauxPlace = placeRateRanks.get(key) || 999;
                     
-                    // NOUVEAU: Récupérer aussi le rang du gain moyen pour les chevaux
+                    // Récupérer aussi le rang du gain moyen pour les chevaux
                     const rangGainMoyen = currentCategory === 'chevaux' ? 
                         gainMoyenRanks.get(key) || 999 : 0;
                     
-                    // NOUVELLE APPROCHE: Pour les chevaux, utiliser une formule plus sophistiquée
+                    // Pour les chevaux, formule standardisée (sans traitement spécial)
                     if (currentCategory === 'chevaux') {
                         // Récupérer les données brutes pour les calculs
                         const nbCourses = parseInt(item.NbCourses || 0);
                         const nbVictoires = parseInt(item.NbVictoires || 0);
                         const nbPlaces = parseInt(item.NbPlace || 0);
-                        const tauxVictoire = parseFloat(item.TauxVictoire || 0) / 100; // Normaliser entre 0 et 1
-                        const tauxPlace = parseFloat(item.TauxPlace || 0) / 100; // Normaliser entre 0 et 1
+                        const tauxVictoire = parseFloat(item.TauxVictoire || 0) / 100; 
+                        const tauxPlace = parseFloat(item.TauxPlace || 0) / 100;
                         
-                        // Récupérer le gain moyen normalisé (0-1)
+                        // Récupérer le gain moyen normalisé
                         let gainMoyen = 0;
                         if (item.GainMoyen) {
                             const gainValue = typeof item.GainMoyen === 'number' ? 
@@ -1141,59 +1123,27 @@
                             gainMoyen = (max > min) ? (gainValue - min) / (max - min) : 0.5;
                         }
                         
-                        // 1. Calculer la régularité (victoires + places)/courses
+                        // Calculer la régularité (victoires + places)/courses
                         const regularite = nbCourses > 0 ? (nbVictoires + nbPlaces) / nbCourses : 0;
                         
-                        // 2. Bonus pour taux de victoire parfait ou élevé
-                        let bonusPerfect = 0;
-                        if (tauxVictoire === 1) {
-                            bonusPerfect = 1; // 100% de victoire
-                        } else if (tauxVictoire >= 0.8) {
-                            bonusPerfect = 0.5; // 80%+ de victoire
-                        }
-                        
-                        // 3. Bonus dynamique avec fonction sigmoïde pour les taux élevés
-                        const bonus = sigmoid(tauxVictoire, 0.8, 10);
-                        
-                        // 4. Score final avec les nouvelles pondérations
+                        // Formule standardisée pour tous les chevaux, sans bonus spécial pour 100%
                         const scoreFinal = (
-                            0.1 * (1 - (rangGainMoyen / 1000)) +     // Gain moyen (10%) - inversé pour que meilleur rang = meilleur score
-                            0.3 * regularite +                       // Régularité (30%)
+                            0.1 * (1 - (rangGainMoyen / 1000)) +    // Gain moyen (10%)
+                            0.4 * regularite +                       // Régularité (40%)
                             0.3 * tauxVictoire +                     // Taux de victoire (30%)
-                            0.15 * bonusPerfect +                    // Bonus pour palmarès parfait (15%)
-                            0.15 * bonus                             // Bonus dynamique sigmoid (15%)
+                            0.2 * (1 - (rangVictoires / 1000))       // Rangs victoires inversé (20%)
                         );
                         
-                        // Inverser le score pour que 0 soit le meilleur (comme les rangs)
-                        // et le normaliser pour avoir une échelle similaire aux rangs
+                        // Inverser le score pour que 0 soit le meilleur
                         item.RawScore = scoreFinal; // Garder le score brut pour le tri
                         item.ScoreMixte = (1000 * (1 - scoreFinal)).toFixed(2);
                     } else {
-                        // Pour les autres catégories, conserver la pondération existante
-                        // Déterminer si l'élément a un taux de victoire parfait
-                        const nbCourses = currentCategory === 'chevaux' ? 
-                            parseInt(item.NbCourses || 0) : 
-                            parseInt(item.Partants || 0);
-                        const nbVictoires = currentCategory === 'chevaux' ? 
-                            parseInt(item.NbVictoires || 0) : 
-                            parseInt(item.Victoires || 0);
-                        const nbPlaces = currentCategory === 'chevaux' ? 
-                            parseInt(item.NbPlace || 0) : 
-                            parseInt(item.Place || 0);
+                        // Pour les autres catégories, pondération standard sans traitement spécial
+                        const poidsV = 0.5;  // Poids pour les victoires (50%)
+                        const poidsTV = 0.3; // Poids pour le taux de victoire (30%)
+                        const poidsTP = 0.2; // Poids pour le taux de place (20%)
                         
-                        const hasPerfectWinRate = nbCourses > 0 && nbVictoires === nbCourses && nbPlaces === 0;
-                        
-                        let poidsV = 0.5;  // Poids par défaut pour les victoires
-                        let poidsTV = 0.3; // Poids par défaut pour le taux de victoire
-                        let poidsTP = 0.2; // Poids par défaut pour le taux de place
-                        
-                        // Si taux de victoire parfait, redistribuer le poids du taux de place
-                        if (hasPerfectWinRate) {
-                            poidsV += poidsTP; // Redistribuer le poids du taux de place vers les victoires
-                            poidsTP = 0;       // Ignorer le taux de place
-                        }
-                        
-                        // Calcul du score pondéré avec rangs DENSES (formule originale)
+                        // Calcul du score pondéré avec rangs DENSES (formule standard)
                         item.ScoreMixte = (
                             poidsV * rangVictoires +
                             poidsTV * rangTauxVictoire +
@@ -1208,11 +1158,11 @@
                     originalScores[currentCategory][key] = item.ScoreMixte;
                 });
                 
-                // Tri final par score mixte
+                // Tri final par score
                 let sortedData;
                 
                 if (currentCategory === 'chevaux') {
-                    // Pour les chevaux, trier par score brut décroissant (meilleur score = plus grand)
+                    // Pour les chevaux, trier par score brut décroissant
                     sortedData = dataCopy.sort((a, b) => {
                         const diff = (b.RawScore || 0) - (a.RawScore || 0);
                         if (diff !== 0) return diff;
@@ -1221,7 +1171,7 @@
                         return a.Nom.localeCompare(b.Nom);
                     });
                 } else {
-                    // Pour les autres catégories, trier par score mixte croissant (meilleur score = plus petit)
+                    // Pour les autres catégories, trier par score mixte croissant
                     sortedData = dataCopy.sort((a, b) => {
                         const diff = parseFloat(a.ScoreMixte || 999) - parseFloat(b.ScoreMixte || 999);
                         if (diff !== 0) return diff;
@@ -1233,25 +1183,10 @@
                     });
                 }
                 
-                // MODIFICATION POUR CORRIGER LE PROBLÈME DES SAUTS DE RANG
-                // Utiliser une approche plus simple et directe pour le classement dense
-                let distinctRank = 0;
-                let currentScore = null;
-                
+                // Attribution des rangs strictement par position dans le classement trié
                 sortedData.forEach((item, index) => {
-                    // Pour les chevaux nous utilisons le score brut, pour les autres le ScoreMixte
-                    const score = currentCategory === 'chevaux' ? 
-                        (item.RawScore || 0) : parseFloat(item.ScoreMixte || 999);
-                    
-                    // Si nouveau score, incrémenter le rang distinct
-                    if (index === 0 || (currentCategory === 'chevaux' ? 
-                                        Math.abs(score - currentScore) > 0.001 : 
-                                        Math.abs(score - currentScore) > 0.001)) {
-                        distinctRank++;
-                        currentScore = score;
-                    }
-                    
-                    item.Rang = distinctRank;
+                    // Utilisation directe de l'index pour le rang (sans traitement spécial)
+                    item.Rang = index + 1;
                 });
                 
                 return sortedData;
@@ -1647,21 +1582,9 @@
                     return diff;
                 });
                 
-                // MODIFICATION POUR CORRIGER LE PROBLÈME DES SAUTS DE RANG
-                // Utiliser une approche plus simple pour le classement dense
-                let distinctRank = 0;
-                let prevValue = null;
-                
+                // Attribution des rangs par position dans l'array trié (sans traitement spécial)
                 sortedByValue.forEach((item, index) => {
-                    const value = valueGetter(item);
-                    
-                    // Si nouvelle valeur, incrémenter le rang
-                    if (index === 0 || value !== prevValue) {
-                        distinctRank++;
-                        prevValue = value;
-                    }
-                    
-                    item.Rang = distinctRank;
+                    item.Rang = index + 1;
                     
                     // Récupérer le score mixte si disponible
                     const key = currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
@@ -2082,38 +2005,8 @@
             // Masquer le bouton d'effacement au chargement
             searchClear.style.display = 'none';
             
-            // Vérifier si un paramètre d'URL spécifie une catégorie ou une recherche
-            const urlParams = new URLSearchParams(window.location.search);
-            const categoryParam = urlParams.get('category');
-            const searchParam = urlParams.get('search');
-            const sortParam = urlParams.get('sort');
-            
-            // Appliquer la catégorie si fournie dans l'URL
-            if (categoryParam && ['jockeys', 'chevaux', 'entraineurs', 'eleveurs', 'proprietaires'].includes(categoryParam)) {
-                currentCategory = categoryParam;
-            }
-            
-            // Définir le tri si fourni dans l'URL
-            if (sortParam && ['default', 'taux-victoire', 'taux-place', 'mixte', 'gain-moyen'].includes(sortParam)) {
-                currentSort = sortParam;
-            }
-            
-            // Définir la recherche si fournie dans l'URL
-            if (searchParam) {
-                searchInput.value = searchParam;
-                searchClear.style.display = 'block';
-            }
-            
-            // Ajouter un effet d'animation au chargement initial
-            document.body.style.opacity = '0';
-            document.body.style.transition = 'opacity 0.5s ease';
-            
-            setTimeout(() => {
-                document.body.style.opacity = '1';
-                
-                // Charger la catégorie initiale
-                loadCategory(currentCategory);
-            }, 100);
+            // Charger la catégorie par défaut
+            loadCategory(currentCategory);
         });
     </script>
 </body>
