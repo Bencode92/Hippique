@@ -727,6 +727,9 @@
             <button class="sort-btn" data-sort="mixte">
                 <i class="fas fa-chart-line"></i> Classement pondéré
             </button>
+            <button class="sort-btn" data-sort="gain-moyen">
+                <i class="fas fa-euro-sign"></i> Gain moyen
+            </button>
             <div class="ranking-info">
                 <i class="fas fa-info-circle"></i>
                 <div class="ranking-info-tooltip">
@@ -771,7 +774,7 @@
             // Variables globales
             let currentCategory = 'jockeys';
             let currentPage = 1;
-            let currentSort = 'default';  // default, taux-victoire, taux-place, mixte
+            let currentSort = 'default';  // default, taux-victoire, taux-place, mixte, gain-moyen
             let sortDirection = 'desc';   // asc, desc
             const itemsPerPage = 20;
             let allData = {};
@@ -788,6 +791,19 @@
             const sortButtons = document.querySelectorAll('.sort-btn');
             const pagination = document.getElementById('pagination');
             const lastUpdateEl = document.getElementById('last-update');
+            
+            // Fonction pour déterminer la couleur selon le quartile
+            function getQuartileColor(value, min, max) {
+                const range = max - min;
+                const q1 = min + range * 0.25;
+                const q2 = min + range * 0.5;
+                const q3 = min + range * 0.75;
+
+                if (value <= q1) return 'var(--red)';           // Rouge
+                if (value <= q2) return '#e0b040';              // Orange
+                if (value <= q3) return 'var(--green)';         // Vert clair
+                return '#1bd17a';                               // Vert foncé
+            }
             
             // Déterminer si nous sommes sur GitHub Pages ou en local
             const isGitHubPages = window.location.hostname.includes('github.io');
@@ -844,10 +860,28 @@
                     { key: 'NbVictoires', label: 'Victoires', class: 'stats' },
                     { key: 'NbPlace', label: 'Places', class: 'stats' },
                     { key: 'TauxVictoire', label: 'Taux de victoire', class: 'percentage', renderer: (value, item) => {
-                        return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
+                        // Appliquer le code couleur par quartile au taux de victoire
+                        const numericValue = parseFloat(value);
+                        const min = 0; // Minimum logique pour un taux
+                        const max = 100; // Maximum logique pour un taux
+                        const color = getQuartileColor(numericValue, min, max);
+                        
+                        return `<span style="color: ${color};">${value}%</span> <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%; background: linear-gradient(90deg, ${color}, ${color})"></div></div>`;
                     }},
                     { key: 'TauxPlace', label: 'Taux de place', class: 'percentage', renderer: (value, item) => {
                         return `${value}% <div class="percentage-bar"><div class="percentage-fill" style="width: ${value}%"></div></div>`;
+                    }},
+                    { key: 'GainMoyen', label: 'Gain moyen', class: 'stats', renderer: (value, item) => {
+                        if (!value || value === "0.0") return "N/A";
+                        
+                        const numericValue = parseFloat(value.replace(/\s+/g, '').replace(',', '.'));
+                        const stats = window.chevauxStats || { gainMoyen: { min: 0, max: 100000 } };
+                        const color = getQuartileColor(numericValue, stats.gainMoyen.min, stats.gainMoyen.max);
+                        
+                        // Formater avec séparateur de milliers
+                        const formattedValue = new Intl.NumberFormat('fr-FR').format(numericValue);
+                        
+                        return `<span style="color: ${color}; font-weight: 600;">${formattedValue} €</span>`;
                     }},
                     { key: 'ScoreMixte', label: 'Score pondéré', class: 'stats', renderer: (value, item) => {
                         let tooltip = "Utilise un système de classement dense (sans saut)\n50% victoires, 30% taux de victoire, 20% taux de place";
@@ -939,8 +973,6 @@
                     }}
                 ]
             };
-            
-            // SUPPRESSION : Nous n'utilisons plus la fonction rankWithTies avec sauts de rang
             
             // Fonction de classement dense (sans sauts) pour tous les types de tri
             function rankWithTiesDense(items, valueGetter) {
@@ -1186,7 +1218,11 @@
                 
                 // Adapter les clés pour les chevaux qui ont une structure différente
                 if (category === 'chevaux') {
-                    return data.resultats.map((item, index) => {
+                    // Stocker les statistiques min/max pour les gains moyens
+                    let minGain = Number.MAX_VALUE;
+                    let maxGain = 0;
+                    
+                    const formattedData = data.resultats.map((item, index) => {
                         const nbCourses = parseInt(item.NbCourses || 0);
                         const nbVictoires = parseInt(item.NbVictoires || 0);
                         const nbPlace = parseInt(item.NbPlace || 0);
@@ -1194,6 +1230,16 @@
                         // Calculer les taux
                         const tauxVictoire = nbCourses > 0 ? ((nbVictoires / nbCourses) * 100).toFixed(1) : "0.0";
                         const tauxPlace = nbCourses > 0 ? ((nbPlace / nbCourses) * 100).toFixed(1) : "0.0";
+                        
+                        // Ajouter les gains si disponibles
+                        const gainMoyen = item.GainMoyen || item.Allocation || "0.0";
+                        
+                        // Calculer les stats min/max pour les gains
+                        const gainValue = parseFloat(gainMoyen.replace(/\s+/g, '').replace(',', '.')) || 0;
+                        if (gainValue > 0) {
+                            minGain = Math.min(minGain, gainValue);
+                            maxGain = Math.max(maxGain, gainValue);
+                        }
                         
                         return {
                             Rang: index + 1,
@@ -1203,9 +1249,20 @@
                             NbVictoires: nbVictoires,
                             NbPlace: nbPlace,
                             TauxVictoire: tauxVictoire,
-                            TauxPlace: tauxPlace
+                            TauxPlace: tauxPlace,
+                            GainMoyen: gainMoyen
                         };
                     });
+                    
+                    // Stocker les statistiques globalement pour le rendu
+                    window.chevauxStats = {
+                        gainMoyen: { 
+                            min: minGain !== Number.MAX_VALUE ? minGain : 0,
+                            max: maxGain > 0 ? maxGain : 100000
+                        }
+                    };
+                    
+                    return formattedData;
                 }
                 
                 // Pour les autres catégories (structure standard)
@@ -1245,11 +1302,11 @@
                     ];
                 } else if (category === 'chevaux') {
                     demoData = [
-                        { Rang: 1, Nom: "MAP OF STARS", NbCourses: 2, NbVictoires: 2, NbPlace: 0, TauxVictoire: "100.0", TauxPlace: "0.0" },
-                        { Rang: 2, Nom: "LANZELOT GOLD", NbCourses: 4, NbVictoires: 2, NbPlace: 2, TauxVictoire: "50.0", TauxPlace: "50.0" },
-                        { Rang: 3, Nom: "SAINT ETIENNE", NbCourses: 4, NbVictoires: 4, NbPlace: 9, TauxVictoire: "100.0", TauxPlace: "0.0" },
-                        { Rang: 4, Nom: "AMERICAN FLAG", NbCourses: 3, NbVictoires: 3, NbPlace: 7, TauxVictoire: "100.0", TauxPlace: "0.0" },
-                        { Rang: 5, Nom: "HYPERCORE", NbCourses: 5, NbVictoires: 5, NbPlace: 8, TauxVictoire: "100.0", TauxPlace: "0.0" }
+                        { Rang: 1, Nom: "MAP OF STARS", NbCourses: 2, NbVictoires: 2, NbPlace: 0, TauxVictoire: "100.0", TauxPlace: "0.0", GainMoyen: "15000" },
+                        { Rang: 2, Nom: "LANZELOT GOLD", NbCourses: 4, NbVictoires: 2, NbPlace: 2, TauxVictoire: "50.0", TauxPlace: "50.0", GainMoyen: "8500" },
+                        { Rang: 3, Nom: "SAINT ETIENNE", NbCourses: 4, NbVictoires: 4, NbPlace: 9, TauxVictoire: "100.0", TauxPlace: "0.0", GainMoyen: "12300" },
+                        { Rang: 4, Nom: "AMERICAN FLAG", NbCourses: 3, NbVictoires: 3, NbPlace: 7, TauxVictoire: "100.0", TauxPlace: "0.0", GainMoyen: "10800" },
+                        { Rang: 5, Nom: "HYPERCORE", NbCourses: 5, NbVictoires: 5, NbPlace: 8, TauxVictoire: "100.0", TauxPlace: "0.0", GainMoyen: "9200" }
                     ];
                 } else if (category === 'entraineurs') {
                     demoData = [
@@ -1292,6 +1349,7 @@
                         const nbPlace = Math.floor(Math.random() * 10);
                         const tauxVictoireCheval = ((nbVictoires / nbCourses) * 100).toFixed(1);
                         const tauxPlaceCheval = ((nbPlace / nbCourses) * 100).toFixed(1);
+                        const gainMoyen = (Math.random() * 15000 + 500).toFixed(2);
                         
                         demoData.push({
                             Rang: i,
@@ -1300,7 +1358,8 @@
                             NbVictoires: nbVictoires,
                             NbPlace: nbPlace,
                             TauxVictoire: tauxVictoireCheval,
-                            TauxPlace: tauxPlaceCheval
+                            TauxPlace: tauxPlaceCheval,
+                            GainMoyen: gainMoyen
                         });
                     } else {
                         demoData.push({
@@ -1314,6 +1373,27 @@
                             TauxPlace: tauxPlace
                         });
                     }
+                }
+                
+                // Si c'est la catégorie chevaux, calculer les statistiques min/max pour les gains
+                if (category === 'chevaux') {
+                    let minGain = Number.MAX_VALUE;
+                    let maxGain = 0;
+                    
+                    demoData.forEach(item => {
+                        const gainValue = parseFloat(item.GainMoyen.replace(/\s+/g, '').replace(',', '.')) || 0;
+                        if (gainValue > 0) {
+                            minGain = Math.min(minGain, gainValue);
+                            maxGain = Math.max(maxGain, gainValue);
+                        }
+                    });
+                    
+                    window.chevauxStats = {
+                        gainMoyen: { 
+                            min: minGain !== Number.MAX_VALUE ? minGain : 0,
+                            max: maxGain > 0 ? maxGain : 100000
+                        }
+                    };
                 }
                 
                 return demoData;
@@ -1363,6 +1443,12 @@
                 } else if (sortKey === 'taux-place') {
                     // Tri par taux de place
                     valueGetter = item => parseFloat(item.TauxPlace || 0);
+                } else if (sortKey === 'gain-moyen' && currentCategory === 'chevaux') {
+                    // Tri par gain moyen (seulement pour les chevaux)
+                    valueGetter = item => {
+                        if (!item.GainMoyen) return 0;
+                        return parseFloat(item.GainMoyen.replace(/\s+/g, '').replace(',', '.')) || 0;
+                    };
                 }
                 
                 // MODIFICATION: Utiliser le classement dense (sans sauts) pour tous les types de tri
@@ -1463,11 +1549,12 @@
                 columns.forEach(column => {
                     // Ajouter une icône de tri si c'est une colonne triable
                     let sortIcon = '';
-                    if (column.key === 'TauxVictoire' || column.key === 'TauxPlace' || column.key === 'Rang' || column.key === 'ScoreMixte') {
+                    if (column.key === 'TauxVictoire' || column.key === 'TauxPlace' || column.key === 'Rang' || column.key === 'ScoreMixte' || (column.key === 'GainMoyen' && currentCategory === 'chevaux')) {
                         const isActive = (column.key === 'TauxVictoire' && currentSort === 'taux-victoire') || 
                                         (column.key === 'TauxPlace' && currentSort === 'taux-place') ||
                                         (column.key === 'Rang' && currentSort === 'default') ||
-                                        (column.key === 'ScoreMixte' && currentSort === 'mixte');
+                                        (column.key === 'ScoreMixte' && currentSort === 'mixte') ||
+                                        (column.key === 'GainMoyen' && currentSort === 'gain-moyen');
                         const direction = sortDirection === 'desc' ? 'down' : 'up';
                         
                         sortIcon = isActive ? `<i class="fas fa-sort-${direction} sort-icon"></i>` : '<i class="fas fa-sort sort-icon"></i>';
@@ -1549,6 +1636,8 @@
                             newSortKey = 'default';
                         } else if (column.key === 'ScoreMixte') {
                             newSortKey = 'mixte';
+                        } else if (column.key === 'GainMoyen' && currentCategory === 'chevaux') {
+                            newSortKey = 'gain-moyen';
                         } else {
                             return; // Ne pas trier sur les autres colonnes
                         }
@@ -1848,7 +1937,7 @@
             }
             
             // Définir le tri si fourni dans l'URL
-            if (sortParam && ['default', 'taux-victoire', 'taux-place', 'mixte'].includes(sortParam)) {
+            if (sortParam && ['default', 'taux-victoire', 'taux-place', 'mixte', 'gain-moyen'].includes(sortParam)) {
                 currentSort = sortParam;
             }
             
