@@ -457,11 +457,35 @@ def extract_rows(table, headers):
                 try:
                     # Nettoyer et convertir
                     clean_value = value.replace(' ', '').replace(',', '.')
-                    if '.' in clean_value:
-                        value = float(clean_value)
+                    
+                    # Déterminer si c'est un montant financier (gain, allocation, etc.)
+                    column_lower = headers[idx].lower()
+                    is_amount = any(term in column_lower for term in [
+                        'gain', 'alloc', 'prime', 'valeur', 'prix'
+                    ])
+                    
+                    # Si c'est un montant, standardiser en milliers d'euros
+                    if is_amount:
+                        # Si la valeur contient déjà un point décimal
+                        if '.' in clean_value:
+                            float_value = float(clean_value)
+                            # Si c'est un petit nombre comme 57.05, le convertir en milliers
+                            if float_value < 1000:
+                                value = int(round(float_value * 1000))
+                            else:
+                                # Sinon garder le nombre tel quel (probablement déjà en milliers)
+                                value = int(round(float_value))
+                        else:
+                            # Si pas de décimale, c'est probablement déjà en milliers
+                            value = int(clean_value)
                     else:
-                        value = int(clean_value)
-                except (ValueError, TypeError):
+                        # Pour les autres valeurs numériques (non financières)
+                        if '.' in clean_value:
+                            value = float(clean_value)
+                        else:
+                            value = int(clean_value)
+                except (ValueError, TypeError) as e:
+                    logger.debug(f"Erreur lors de la conversion de '{value}': {str(e)}")
                     pass
             
             # Stocker la valeur
