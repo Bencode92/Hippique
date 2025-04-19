@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="input-group">
                         <label>Participants (classés par score prédictif)</label>
                         <div class="simulation-info">
-                            <i class="fas fa-info-circle"></i> Les participants sont triés par leur score prédictif. Vous pouvez voir ces scores dans le tableau principal.
+                            <i class="fas fa-info-circle"></i> Les participants sont triés par leur score prédictif. Vous pouvez ajuster manuellement les cotes pour chaque cheval.
                         </div>
                     </div>
                     
@@ -387,7 +387,13 @@ document.addEventListener('DOMContentLoaded', function() {
                         <strong>${participant.cheval}</strong> (${participant.numero})
                         <div class="horse-select-meta">
                             <span class="score-badge">Score: ${participant.score.toFixed(1)}</span>
-                            <span class="cote-badge">Cote: ${participant.cote.toFixed(2)}</span>
+                            <div class="cote-input-container">
+                                <span>Cote:</span>
+                                <input type="number" class="manual-odds-input" 
+                                      data-index="${index}" 
+                                      value="${participant.cote.toFixed(2)}" 
+                                      min="1.01" step="0.01">
+                            </div>
                         </div>
                     </label>
                 </div>
@@ -395,6 +401,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         selectionContainer.innerHTML = html;
+        
+        // Ajouter les écouteurs d'événements pour les inputs de cotes
+        document.querySelectorAll('.manual-odds-input').forEach(input => {
+            input.addEventListener('change', function() {
+                const index = parseInt(this.dataset.index);
+                const newOdds = parseFloat(this.value);
+                
+                // Valider la cote (minimum 1.01)
+                if (isNaN(newOdds) || newOdds < 1.01) {
+                    this.value = "1.01";
+                    window.currentSimulationData.participants[index].cote = 1.01;
+                } else {
+                    window.currentSimulationData.participants[index].cote = newOdds;
+                }
+            });
+        });
     }
     
     // Fonction pour fermer la popup
@@ -422,6 +444,16 @@ document.addEventListener('DOMContentLoaded', function() {
             if (isNaN(maxPerHorse) || maxPerHorse <= 0) {
                 throw new Error('La mise maximale par cheval doit être un nombre positif');
             }
+            
+            // Récupérer les cotes mises à jour manuellement
+            const manualOddsInputs = document.querySelectorAll('.manual-odds-input');
+            manualOddsInputs.forEach(input => {
+                const index = parseInt(input.dataset.index);
+                const newOdds = parseFloat(input.value);
+                if (!isNaN(newOdds) && newOdds >= 1.01) {
+                    window.currentSimulationData.participants[index].cote = newOdds;
+                }
+            });
             
             // Récupérer les chevaux sélectionnés
             const checkboxes = document.querySelectorAll('.horse-select-checkbox:checked');
