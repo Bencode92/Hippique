@@ -874,7 +874,10 @@
                     { key: 'GainMoyen', label: 'Gain moyen', class: 'stats', renderer: (value, item) => {
                         if (!value || value === "0.0") return "N/A";
                         
-                        const numericValue = parseFloat(value.replace(/\s+/g, '').replace(',', '.'));
+                        // Traiter à la fois les valeurs numériques et les chaînes de caractères
+                        const numericValue = typeof value === 'number' ? 
+                            value : parseFloat(value.toString().replace(/\s+/g, '').replace(',', '.'));
+                        
                         const stats = window.chevauxStats || { gainMoyen: { min: 0, max: 100000 } };
                         const color = getQuartileColor(numericValue, stats.gainMoyen.min, stats.gainMoyen.max);
                         
@@ -1231,11 +1234,25 @@
                         const tauxVictoire = nbCourses > 0 ? ((nbVictoires / nbCourses) * 100).toFixed(1) : "0.0";
                         const tauxPlace = nbCourses > 0 ? ((nbPlace / nbCourses) * 100).toFixed(1) : "0.0";
                         
-                        // Ajouter les gains si disponibles
-                        const gainMoyen = item.GainMoyen || item.Allocation || "0.0";
+                        // AMÉLIORATION: Traitement du gain moyen pour accepter à la fois les valeurs numériques et chaînes
+                        let gainMoyen;
+                        if (typeof item.GainMoyen === 'number') {
+                            gainMoyen = item.GainMoyen;
+                        } else if (item.GainMoyen) {
+                            gainMoyen = item.GainMoyen;
+                        } else if (typeof item.Allocation === 'number') {
+                            gainMoyen = item.Allocation;
+                        } else if (item.Allocation) {
+                            gainMoyen = item.Allocation;
+                        } else {
+                            gainMoyen = 0;
+                        }
                         
                         // Calculer les stats min/max pour les gains
-                        const gainValue = parseFloat(gainMoyen.replace(/\s+/g, '').replace(',', '.')) || 0;
+                        const gainValue = typeof gainMoyen === 'number' ? 
+                            gainMoyen : 
+                            parseFloat(gainMoyen.toString().replace(/\s+/g, '').replace(',', '.')) || 0;
+                        
                         if (gainValue > 0) {
                             minGain = Math.min(minGain, gainValue);
                             maxGain = Math.max(maxGain, gainValue);
@@ -1302,11 +1319,11 @@
                     ];
                 } else if (category === 'chevaux') {
                     demoData = [
-                        { Rang: 1, Nom: "MAP OF STARS", NbCourses: 2, NbVictoires: 2, NbPlace: 0, TauxVictoire: "100.0", TauxPlace: "0.0", GainMoyen: "15000" },
-                        { Rang: 2, Nom: "LANZELOT GOLD", NbCourses: 4, NbVictoires: 2, NbPlace: 2, TauxVictoire: "50.0", TauxPlace: "50.0", GainMoyen: "8500" },
-                        { Rang: 3, Nom: "SAINT ETIENNE", NbCourses: 4, NbVictoires: 4, NbPlace: 9, TauxVictoire: "100.0", TauxPlace: "0.0", GainMoyen: "12300" },
-                        { Rang: 4, Nom: "AMERICAN FLAG", NbCourses: 3, NbVictoires: 3, NbPlace: 7, TauxVictoire: "100.0", TauxPlace: "0.0", GainMoyen: "10800" },
-                        { Rang: 5, Nom: "HYPERCORE", NbCourses: 5, NbVictoires: 5, NbPlace: 8, TauxVictoire: "100.0", TauxPlace: "0.0", GainMoyen: "9200" }
+                        { Rang: 1, Nom: "MAP OF STARS", NbCourses: 2, NbVictoires: 2, NbPlace: 0, TauxVictoire: "100.0", TauxPlace: "0.0", GainMoyen: 15000 },
+                        { Rang: 2, Nom: "LANZELOT GOLD", NbCourses: 4, NbVictoires: 2, NbPlace: 2, TauxVictoire: "50.0", TauxPlace: "50.0", GainMoyen: 8500 },
+                        { Rang: 3, Nom: "SAINT ETIENNE", NbCourses: 4, NbVictoires: 4, NbPlace: 9, TauxVictoire: "100.0", TauxPlace: "0.0", GainMoyen: 12300 },
+                        { Rang: 4, Nom: "AMERICAN FLAG", NbCourses: 3, NbVictoires: 3, NbPlace: 7, TauxVictoire: "100.0", TauxPlace: "0.0", GainMoyen: 10800 },
+                        { Rang: 5, Nom: "HYPERCORE", NbCourses: 5, NbVictoires: 5, NbPlace: 8, TauxVictoire: "100.0", TauxPlace: "0.0", GainMoyen: 9200 }
                     ];
                 } else if (category === 'entraineurs') {
                     demoData = [
@@ -1349,7 +1366,7 @@
                         const nbPlace = Math.floor(Math.random() * 10);
                         const tauxVictoireCheval = ((nbVictoires / nbCourses) * 100).toFixed(1);
                         const tauxPlaceCheval = ((nbPlace / nbCourses) * 100).toFixed(1);
-                        const gainMoyen = (Math.random() * 15000 + 500).toFixed(2);
+                        const gainMoyen = Math.floor(Math.random() * 15000 + 500);
                         
                         demoData.push({
                             Rang: i,
@@ -1381,7 +1398,10 @@
                     let maxGain = 0;
                     
                     demoData.forEach(item => {
-                        const gainValue = parseFloat(item.GainMoyen.replace(/\s+/g, '').replace(',', '.')) || 0;
+                        const gainValue = typeof item.GainMoyen === 'number' ? 
+                            item.GainMoyen : 
+                            parseFloat(item.GainMoyen.toString().replace(/\s+/g, '').replace(',', '.')) || 0;
+                        
                         if (gainValue > 0) {
                             minGain = Math.min(minGain, gainValue);
                             maxGain = Math.max(maxGain, gainValue);
@@ -1444,10 +1464,15 @@
                     // Tri par taux de place
                     valueGetter = item => parseFloat(item.TauxPlace || 0);
                 } else if (sortKey === 'gain-moyen' && currentCategory === 'chevaux') {
-                    // Tri par gain moyen (seulement pour les chevaux)
+                    // AMÉLIORATION: Tri par gain moyen avec gestion des types de données
                     valueGetter = item => {
                         if (!item.GainMoyen) return 0;
-                        return parseFloat(item.GainMoyen.replace(/\s+/g, '').replace(',', '.')) || 0;
+                        
+                        // Gérer à la fois les valeurs numériques et les chaînes de caractères
+                        if (typeof item.GainMoyen === 'number') {
+                            return item.GainMoyen;
+                        }
+                        return parseFloat(item.GainMoyen.toString().replace(/\s+/g, '').replace(',', '.')) || 0;
                     };
                 }
                 
@@ -1461,7 +1486,6 @@
                     const maxRank = Math.max(...Array.from(ranks.values()));
                     ranks.forEach((rank, key) => {
                         // MODIFICATION: Calculer le rang inversé en préservant les ex-aequo
-                        const groupSize = Array.from(ranks.values()).filter(r => r === rank).length;
                         const inverseRank = maxRank - rank + 1;
                         finalRanks.set(key, inverseRank);
                     });
