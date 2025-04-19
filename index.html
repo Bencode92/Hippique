@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/simulation-inline.css">
     <style>
         :root {
             --dark-teal: #0A2E2A;
@@ -1709,9 +1710,9 @@
                             <button class="action-btn primary" id="sort-by-score-${detailId}">
                                 <i class="fas fa-sort-amount-down"></i> Trier par score prédictif
                             </button>
-                            <a href="simulation.html?course=${encodeURIComponent(courseName)}&hippodrome=${encodeURIComponent(hippodrome)}" class="action-btn secondary">
+                            <button class="action-btn secondary" id="simulate-bets-${detailId}">
                                 <i class="fas fa-calculator"></i> Simuler des paris sur cette course
-                            </a>
+                            </button>
                         </div>
                     `;
                     
@@ -1805,7 +1806,7 @@
                             const jockeyNumberDisplay = jockeyNumber ? `<span class="jockey-number">${jockeyNumber}</span>` : '';
                             
                             participantsHTML += `
-                                <tr data-score="${scorePredictif.score}" data-numero="${participant.numero || 0}">
+                                <tr data-score="${scorePredictif.score}" data-numero="${participant.numero || 0}" data-cheval="${participant.cheval}" data-cote="${participant.cote || 0}">
                                     <td style="text-align: center;">
                                         <div class="horse-number">${participant.numero || '-'}</div>
                                     </td>
@@ -1884,6 +1885,14 @@
                                     participantsContainer.appendChild(row);
                                 });
                             }
+                        });
+                        
+                        // Ajouter l'événement pour ouvrir la simulation intégrée
+                        const simulateButton = document.getElementById(`simulate-bets-${detailId}`);
+                        simulateButton.addEventListener('click', function() {
+                            // Ouvrir la popup de simulation avec les données de cette course
+                            const participantsTable = document.getElementById(`participants-${detailId}`);
+                            openSimulationPopup(hippodrome, courseName, participantsTable, detailId);
                         });
                         
                     } catch (error) {
@@ -1986,5 +1995,8 @@
     
     <!-- Ajout du nouveau module ranking-loader.js -->
     <script src="js/ranking-loader.js?v=1"></script>
+    
+    <!-- Ajout du nouveau module de simulation intégrée -->
+    <script src="js/simulation-inline.js?v=1"></script>
 </body>
 </html>
