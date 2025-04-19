@@ -668,6 +668,20 @@
             font-weight: 600;
             margin: 0 auto;
         }
+        
+        .jockey-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background-color: var(--gold);
+            color: var(--dark-teal);
+            border-radius: 4px;
+            font-weight: 600;
+            margin-left: 8px;
+            font-size: 0.85rem;
+        }
 
         .table-responsive {
             overflow-x: auto;
@@ -1786,13 +1800,17 @@
                                 confidenceClass = 'confidence-medium';
                             }
                             
+                            // Extraire le numéro du jockey (n) si disponible
+                            const jockeyNumber = participant.n || "";
+                            const jockeyNumberDisplay = jockeyNumber ? `<span class="jockey-number">${jockeyNumber}</span>` : '';
+                            
                             participantsHTML += `
                                 <tr data-score="${scorePredictif.score}" data-numero="${participant.numero || 0}">
                                     <td style="text-align: center;">
                                         <div class="horse-number">${participant.numero || '-'}</div>
                                     </td>
                                     <td>${participant.cheval || 'N/A'}</td>
-                                    <td>${participant.jockey || 'N/A'}</td>
+                                    <td>${participant.jockey || 'N/A'}${jockeyNumberDisplay}</td>
                                     <td>${participant.entraineur || 'N/A'}</td>
                                     <td>${propietaire.length > 20 ? propietaire.slice(0, 20) + '...' : propietaire}</td>
                                     <td>${eleveurs.length > 20 ? eleveurs.slice(0, 20) + '...' : eleveurs}</td>
