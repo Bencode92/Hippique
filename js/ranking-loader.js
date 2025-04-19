@@ -703,7 +703,7 @@ const rankingLoader = {
         return null;
     },
     
-    // Calculer le score prédictif normalisé pour un participant
+    // NOUVELLE VERSION: Calculer le score prédictif pour un participant avec NC dynamique
     calculerScoreParticipant(participant) {
         // Récupérer les items pour chaque acteur
         const itemCheval = this.trouverItemDansClassement(this.data.chevaux, participant.cheval, 'chevaux');
@@ -725,348 +725,112 @@ const rankingLoader = {
         const itemEleveur = this.trouverItemDansClassement(this.data.eleveurs, eleveurValue, 'eleveurs');
         const itemProprio = this.trouverItemDansClassement(this.data.proprietaires, proprioValue, 'proprietaires');
         
-        // Récupérer les rangs pour le système de secours et l'affichage
+        // Récupérer les rangs pour le calcul de score
         const rangCheval = itemCheval ? parseInt(itemCheval.Rang) : null;
         const rangJockey = itemJockey ? parseInt(itemJockey.Rang) : null;
         const rangEntraineur = itemEntraineur ? parseInt(itemEntraineur.Rang) : null;
         const rangEleveur = itemEleveur ? parseInt(itemEleveur.Rang) : null;
         const rangProprio = itemProprio ? parseInt(itemProprio.Rang) : null;
         
-        // DEBUG: Logs pour vérifier les rangs
-        console.log(`Cheval: ${participant.cheval}, Rang pondéré: ${rangCheval}`);
-        console.log(`Jockey: ${participant.jockey}, Rang pondéré: ${rangJockey}`);
-        console.log(`Entraineur: ${participant.entraineur}, Rang pondéré: ${rangEntraineur}`);
-        console.log(`Eleveur: ${eleveurValue}, Rang pondéré: ${rangEleveur}`);
-        console.log(`Propriétaire: ${proprioValue}, Rang pondéré: ${rangProprio}`);
+        // Logs pour debug
+        console.log(`Rangs récupérés pour ${participant.cheval}: `, {
+            cheval: rangCheval,
+            jockey: rangJockey,
+            entraineur: rangEntraineur,
+            eleveur: rangEleveur,
+            proprietaire: rangProprio
+        });
         
-        // NOUVELLE APPROCHE: Calcul avec normalisation des métriques réelles
-        // Préparation des scores normalisés par défaut
-        const scores = {
-            cheval: { score: 0.3, rang: "NC" },       // Valeur par défaut si non trouvé (milieu de l'échelle)
-            jockey: { score: 0.3, rang: "NC" },       // Valeur par défaut si non trouvé (milieu de l'échelle)
-            entraineur: { score: 0.3, rang: "NC" },   // Valeur par défaut si non trouvé (milieu de l'échelle)
-            eleveur: { score: 0.3, rang: "NC" },      // Valeur par défaut si non trouvé (milieu de l'échelle)
-            proprietaire: { score: 0.3, rang: "NC" }  // Valeur par défaut si non trouvé (milieu de l'échelle)
-        };
+        // Paramètres du système
+        const maxRang = 100; // Rang maximal pour la normalisation
         
-        // Calcul du score normalisé pour le cheval
-        if (itemCheval && this.statsCache.chevaux) {
-            const nbVictoires = parseInt(itemCheval.NbVictoires || 0);
-            const tauxVictoire = parseFloat(itemCheval.TauxVictoire || 0);
-            const tauxPlace = parseFloat(itemCheval.TauxPlace || 0);
-            
-            // Normalisation min-max
-            const scoreVictoires = this.normalizeMinMax(
-                nbVictoires, 
-                this.statsCache.chevaux.victoires.min, 
-                this.statsCache.chevaux.victoires.max
-            );
-            
-            const scoreTauxVictoire = this.normalizeMinMax(
-                tauxVictoire, 
-                this.statsCache.chevaux.tauxVictoire.min, 
-                this.statsCache.chevaux.tauxVictoire.max
-            );
-            
-            const scoreTauxPlace = this.normalizeMinMax(
-                tauxPlace, 
-                this.statsCache.chevaux.tauxPlace.min, 
-                this.statsCache.chevaux.tauxPlace.max
-            );
-            
-            // Pondération adaptive des métriques (similaire à l'ancien système)
-            let poidsV = 0.5;   // Victoires
-            let poidsTV = 0.3;  // Taux de victoire
-            let poidsTP = 0.2;  // Taux de place
-            
-            // Si taux de victoire parfait, favoriser encore plus
-            if (tauxVictoire === 1.0) {
-                poidsV += poidsTP; // Redistribuer le poids du taux de place vers les victoires
-                poidsTP = 0;       // Ignorer le taux de place
-            }
-            
-            // Score final pondéré pour le cheval
-            const scoreCheval = (
-                poidsV * scoreVictoires +
-                poidsTV * scoreTauxVictoire +
-                poidsTP * scoreTauxPlace
-            );
-            
-            // Conserver le score et le rang pour l'affichage
-            scores.cheval = {
-                score: scoreCheval,
-                victoires: scoreVictoires, 
-                tauxVictoire: scoreTauxVictoire,
-                tauxPlace: scoreTauxPlace,
-                rang: rangCheval
-            };
-        }
+        // NOUVEAU: Calcul dynamique de la valeur par défaut pour les NC
+        const rangsPresents = [rangCheval, rangJockey, rangEntraineur, rangEleveur, rangProprio]
+            .filter(rang => rang !== null);
         
-        // Calcul du score normalisé pour le jockey
-        if (itemJockey && this.statsCache.jockeys) {
-            const nbVictoires = parseInt(itemJockey.Victoires || 0);
-            const tauxVictoire = parseFloat(itemJockey.TauxVictoire || 0);
-            const tauxPlace = parseFloat(itemJockey.TauxPlace || 0);
-            
-            // Normalisation min-max
-            const scoreVictoires = this.normalizeMinMax(
-                nbVictoires, 
-                this.statsCache.jockeys.victoires.min, 
-                this.statsCache.jockeys.victoires.max
-            );
-            
-            const scoreTauxVictoire = this.normalizeMinMax(
-                tauxVictoire, 
-                this.statsCache.jockeys.tauxVictoire.min, 
-                this.statsCache.jockeys.tauxVictoire.max
-            );
-            
-            const scoreTauxPlace = this.normalizeMinMax(
-                tauxPlace, 
-                this.statsCache.jockeys.tauxPlace.min, 
-                this.statsCache.jockeys.tauxPlace.max
-            );
-            
-            // Pondération
-            const scoreJockey = (
-                0.4 * scoreVictoires +
-                0.4 * scoreTauxVictoire +
-                0.2 * scoreTauxPlace
-            );
-            
-            scores.jockey = {
-                score: scoreJockey,
-                rang: rangJockey
-            };
-        }
-        
-        // Calcul du score normalisé pour l'entraineur
-        if (itemEntraineur && this.statsCache.entraineurs) {
-            const nbVictoires = parseInt(itemEntraineur.Victoires || 0);
-            const tauxVictoire = parseFloat(itemEntraineur.TauxVictoire || 0);
-            const tauxPlace = parseFloat(itemEntraineur.TauxPlace || 0);
-            
-            // Normalisation min-max
-            const scoreVictoires = this.normalizeMinMax(
-                nbVictoires, 
-                this.statsCache.entraineurs.victoires.min, 
-                this.statsCache.entraineurs.victoires.max
-            );
-            
-            const scoreTauxVictoire = this.normalizeMinMax(
-                tauxVictoire, 
-                this.statsCache.entraineurs.tauxVictoire.min, 
-                this.statsCache.entraineurs.tauxVictoire.max
-            );
-            
-            const scoreTauxPlace = this.normalizeMinMax(
-                tauxPlace, 
-                this.statsCache.entraineurs.tauxPlace.min, 
-                this.statsCache.entraineurs.tauxPlace.max
-            );
-            
-            // Pondération
-            const scoreEntraineur = (
-                0.4 * scoreVictoires +
-                0.4 * scoreTauxVictoire +
-                0.2 * scoreTauxPlace
-            );
-            
-            scores.entraineur = {
-                score: scoreEntraineur,
-                rang: rangEntraineur
-            };
-        }
-        
-        // Calcul du score normalisé pour l'éleveur
-        if (itemEleveur && this.statsCache.eleveurs) {
-            const nbVictoires = parseInt(itemEleveur.Victoires || 0);
-            const tauxVictoire = parseFloat(itemEleveur.TauxVictoire || 0);
-            const tauxPlace = parseFloat(itemEleveur.TauxPlace || 0);
-            
-            // Normalisation min-max
-            const scoreVictoires = this.normalizeMinMax(
-                nbVictoires, 
-                this.statsCache.eleveurs.victoires.min, 
-                this.statsCache.eleveurs.victoires.max
-            );
-            
-            const scoreTauxVictoire = this.normalizeMinMax(
-                tauxVictoire, 
-                this.statsCache.eleveurs.tauxVictoire.min, 
-                this.statsCache.eleveurs.tauxVictoire.max
-            );
-            
-            const scoreTauxPlace = this.normalizeMinMax(
-                tauxPlace, 
-                this.statsCache.eleveurs.tauxPlace.min, 
-                this.statsCache.eleveurs.tauxPlace.max
-            );
-            
-            // Pondération
-            const scoreEleveur = (
-                0.4 * scoreVictoires +
-                0.4 * scoreTauxVictoire +
-                0.2 * scoreTauxPlace
-            );
-            
-            scores.eleveur = {
-                score: scoreEleveur,
-                rang: rangEleveur
-            };
-        }
-        
-        // Calcul du score normalisé pour le propriétaire
-        if (itemProprio && this.statsCache.proprietaires) {
-            const nbVictoires = parseInt(itemProprio.Victoires || 0);
-            const tauxVictoire = parseFloat(itemProprio.TauxVictoire || 0);
-            const tauxPlace = parseFloat(itemProprio.TauxPlace || 0);
-            
-            // Normalisation min-max
-            const scoreVictoires = this.normalizeMinMax(
-                nbVictoires, 
-                this.statsCache.proprietaires.victoires.min, 
-                this.statsCache.proprietaires.victoires.max
-            );
-            
-            const scoreTauxVictoire = this.normalizeMinMax(
-                tauxVictoire, 
-                this.statsCache.proprietaires.tauxVictoire.min, 
-                this.statsCache.proprietaires.tauxVictoire.max
-            );
-            
-            const scoreTauxPlace = this.normalizeMinMax(
-                tauxPlace, 
-                this.statsCache.proprietaires.tauxPlace.min, 
-                this.statsCache.proprietaires.tauxPlace.max
-            );
-            
-            // Pondération
-            const scoreProprio = (
-                0.4 * scoreVictoires +
-                0.4 * scoreTauxVictoire +
-                0.2 * scoreTauxPlace
-            );
-            
-            scores.proprietaire = {
-                score: scoreProprio,
-                rang: rangProprio
-            };
-        }
-        
-        // Appliquer la formule de pondération finale du score prédictif
-        // avec les scores normalisés (entre 0 et 1)
-        const scorePredictif = (
-            0.55 * scores.cheval.score +
-            0.15 * scores.jockey.score +
-            0.12 * scores.entraineur.score +
-            0.10 * scores.eleveur.score +
-            0.08 * scores.proprietaire.score
-        );
-        
-        // Conversion du score en échelle 0-100 pour plus de lisibilité
-        const scoreFinal = (scorePredictif * 100).toFixed(1);
-        
-        // FALLBACK: si les statistiques ne sont pas disponibles,
-        // utiliser l'ancien système d'inversion de rangs
-        if (scoreFinal <= 0) {
-            console.log(`Utilisation du système de secours basé sur les rangs pour ${participant.cheval}`);
-            
-            // Inverser les rangs pour obtenir un score (plus le rang est bas, meilleur est le score)
-            const maxRang = 100;
-            
-            // MODIFICATION: Valeur dynamique pour les NC au lieu de 30 fixe
-            const moyenneSecours = Math.max(10, maxRang * 0.15); // 15% du rang max avec minimum de 10
-            
-            const scoreCheval = rangCheval ? Math.max(0, maxRang - rangCheval) : moyenneSecours;
-            const scoreJockey = rangJockey ? Math.max(0, maxRang - rangJockey) : moyenneSecours;
-            const scoreEntraineur = rangEntraineur ? Math.max(0, maxRang - rangEntraineur) : moyenneSecours;
-            const scoreEleveur = rangEleveur ? Math.max(0, maxRang - rangEleveur) : moyenneSecours;
-            const scoreProprio = rangProprio ? Math.max(0, maxRang - rangProprio) : moyenneSecours;
-            
-            // Calculer l'indice de confiance basé sur le nombre d'éléments NC
-            const elementsPresents = [
-                !!rangCheval, 
-                !!rangJockey,
-                !!rangEntraineur, 
-                !!rangEleveur,
-                !!rangProprio
-            ].filter(Boolean).length;
-            
-            const indiceConfiance = elementsPresents / 5;
-            
-            // Appliquer la formule de pondération, mais avec les rangs inversés
-            const scoreSecours = (
-                0.55 * scoreCheval +
-                0.15 * scoreJockey +
-                0.12 * scoreEntraineur +
-                0.10 * scoreEleveur +
-                0.08 * scoreProprio
-            );
-            
-            return {
-                score: scoreSecours.toFixed(1),
-                indiceConfiance: indiceConfiance.toFixed(2),
-                details: {
-                    cheval: {
-                        rang: rangCheval || "NC",
-                        score: scoreCheval.toFixed(1)
-                    },
-                    jockey: {
-                        rang: rangJockey || "NC",
-                        score: scoreJockey.toFixed(1)
-                    },
-                    entraineur: {
-                        rang: rangEntraineur || "NC",
-                        score: scoreEntraineur.toFixed(1)
-                    },
-                    eleveur: {
-                        rang: rangEleveur || "NC",
-                        score: scoreEleveur.toFixed(1)
-                    },
-                    proprietaire: {
-                        rang: rangProprio || "NC",
-                        score: scoreProprio.toFixed(1)
-                    }
-                }
-            };
-        }
-        
-        // Calculer l'indice de confiance
+        // Calcul de l'indice de confiance
         const elementsPresents = [
-            !!itemCheval, 
-            !!itemJockey,
-            !!itemEntraineur, 
-            !!itemEleveur,
-            !!itemProprio
+            !!rangCheval, 
+            !!rangJockey,
+            !!rangEntraineur, 
+            !!rangEleveur,
+            !!rangProprio
         ].filter(Boolean).length;
         
         const indiceConfiance = elementsPresents / 5;
         
-        // Retourner le score et les détails
+        // NOUVEAU: Valeur par défaut dynamique basée sur la moyenne des éléments présents
+        let valeurNC;
+        
+        if (rangsPresents.length > 0) {
+            // Calculer la moyenne des rangs présents
+            const moyenneRangs = rangsPresents.reduce((sum, rang) => sum + rang, 0) / rangsPresents.length;
+            
+            // Convertir en score (inverser et ajuster)
+            const scoreBaseSurMoyenne = Math.max(0, maxRang - moyenneRangs);
+            
+            // Atténuer le score selon l'indice de confiance
+            // Plus il y a d'éléments manquants, plus on atténue la moyenne
+            valeurNC = scoreBaseSurMoyenne * Math.max(0.5, indiceConfiance);
+            
+            // Garantir une valeur minimale et maximale raisonnable
+            valeurNC = Math.max(10, Math.min(valeurNC, maxRang * 0.4));
+            
+            console.log(`Valeur NC dynamique calculée: ${valeurNC} (basée sur moyenne des rangs: ${moyenneRangs})`);
+        } else {
+            // Si aucun élément présent, utiliser une valeur par défaut modérée
+            valeurNC = maxRang * 0.15; // 15% du maximum
+            console.log(`Aucun élément présent, valeur NC par défaut: ${valeurNC}`);
+        }
+        
+        // Inverser les rangs pour obtenir des scores
+        const scoreCheval = rangCheval ? Math.max(0, maxRang - rangCheval) : valeurNC;
+        const scoreJockey = rangJockey ? Math.max(0, maxRang - rangJockey) : valeurNC;
+        const scoreEntraineur = rangEntraineur ? Math.max(0, maxRang - rangEntraineur) : valeurNC;
+        const scoreEleveur = rangEleveur ? Math.max(0, maxRang - rangEleveur) : valeurNC;
+        const scoreProprio = rangProprio ? Math.max(0, maxRang - rangProprio) : valeurNC;
+        
+        // AMÉLIORATION: Ajuster l'indice de confiance selon l'importance des éléments manquants
+        let indiceConfianceAjuste = indiceConfiance;
+        
+        // Si le cheval est manquant, c'est plus problématique
+        if (!rangCheval) {
+            indiceConfianceAjuste *= 0.8; // Pénalité plus forte si le cheval est manquant
+        }
+        
+        // Appliquer la formule de pondération avec les rangs inversés
+        const scoreFinal = (
+            0.55 * scoreCheval +
+            0.15 * scoreJockey +
+            0.12 * scoreEntraineur +
+            0.10 * scoreEleveur +
+            0.08 * scoreProprio
+        );
+        
+        // Retourner le résultat
         return {
-            score: scoreFinal,
-            indiceConfiance: indiceConfiance.toFixed(2),
+            score: scoreFinal.toFixed(1),
+            indiceConfiance: indiceConfianceAjuste.toFixed(2),
             details: {
                 cheval: {
                     rang: rangCheval || "NC",
-                    score: (scores.cheval.score * 100).toFixed(1)
+                    score: scoreCheval.toFixed(1)
                 },
                 jockey: {
                     rang: rangJockey || "NC",
-                    score: (scores.jockey.score * 100).toFixed(1)
+                    score: scoreJockey.toFixed(1)
                 },
                 entraineur: {
                     rang: rangEntraineur || "NC",
-                    score: (scores.entraineur.score * 100).toFixed(1)
+                    score: scoreEntraineur.toFixed(1)
                 },
                 eleveur: {
                     rang: rangEleveur || "NC",
-                    score: (scores.eleveur.score * 100).toFixed(1)
+                    score: scoreEleveur.toFixed(1)
                 },
                 proprietaire: {
                     rang: rangProprio || "NC",
-                    score: (scores.proprietaire.score * 100).toFixed(1)
+                    score: scoreProprio.toFixed(1)
                 }
             }
         };
