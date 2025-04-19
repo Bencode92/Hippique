@@ -95,10 +95,46 @@ function calculateCompositeRanking(data, category) {
   const victoryRateGetter = item => parseFloat(item.TauxVictoire || 0);
   const placeRateGetter = item => parseFloat(item.TauxPlace || 0);
   
+  // Ajout du getter pour le gain moyen
+  const gainMoyenGetter = item => {
+    if (category !== 'chevaux') return 0;
+    
+    if (!item.GainMoyen) return 0;
+    // Gérer à la fois les valeurs numériques et les chaînes
+    if (typeof item.GainMoyen === 'number') {
+      return item.GainMoyen;
+    }
+    return parseFloat(item.GainMoyen.toString().replace(/\s+/g, '').replace(',', '.')) || 0;
+  };
+  
   // Calcul des rangs pour chaque métrique avec gestion des égalités DENSE
   const victoryRanks = rankWithTiesDense(dataCopy, victoryGetter, category);
   const victoryRateRanks = rankWithTiesDense(dataCopy, victoryRateGetter, category);
   const placeRateRanks = rankWithTiesDense(dataCopy, placeRateGetter, category);
+  
+  // Ajouter le calcul des rangs pour les gains moyens (seulement pour les chevaux)
+  const gainMoyenRanks = category === 'chevaux' ? 
+    rankWithTiesDense(dataCopy, gainMoyenGetter, category) : new Map();
+  
+  // Calculer les statistiques min/max pour les gains moyens
+  let minGain = Number.MAX_VALUE;
+  let maxGain = 0;
+  
+  if (category === 'chevaux') {
+    dataCopy.forEach(item => {
+      const gainValue = gainMoyenGetter(item);
+      if (gainValue > 0) {
+        minGain = Math.min(minGain, gainValue);
+        maxGain = Math.max(maxGain, gainValue);
+      }
+    });
+    
+    // Éviter les divisions par zéro
+    if (minGain === maxGain || minGain === Number.MAX_VALUE) {
+      minGain = 0;
+      maxGain = maxGain > 0 ? maxGain : 100000;
+    }
+  }
   
   // Calcul du score pondéré pour chaque participant
   dataCopy.forEach(item => {
@@ -109,68 +145,83 @@ function calculateCompositeRanking(data, category) {
       return;
     }
     
-    // Récupérer les rangs avec égalités DENSES
-    const rangVictoires = victoryRanks.get(key) || 999;
-    const rangTauxVictoire = victoryRateRanks.get(key) || 999;
-    const rangTauxPlace = placeRateRanks.get(key) || 999;
-    
-    // Déterminer si l'élément a un taux de victoire parfait
-    const nbCourses = category === 'chevaux' ? 
-      parseInt(item.NbCourses || 0) : 
-      parseInt(item.Partants || 0);
-    const nbVictoires = category === 'chevaux' ? 
-      parseInt(item.NbVictoires || 0) : 
-      parseInt(item.Victoires || 0);
-    const nbPlaces = category === 'chevaux' ? 
-      parseInt(item.NbPlace || 0) : 
-      parseInt(item.Place || 0);
-    
-    const hasPerfectWinRate = nbCourses > 0 && nbVictoires === nbCourses && nbPlaces === 0;
-    
-    // Pondération adaptative
-    let poidsV = 0.5;  // Poids par défaut pour les victoires
-    let poidsTV = 0.3; // Poids par défaut pour le taux de victoire
-    let poidsTP = 0.2; // Poids par défaut pour le taux de place
-    
-    // Si taux de victoire parfait, redistribuer le poids du taux de place
-    if (hasPerfectWinRate) {
-      poidsV += poidsTP; // Redistribuer le poids du taux de place vers les victoires
-      poidsTP = 0;       // Ignorer le taux de place
+    // NOUVELLE LOGIQUE POUR LES CHEVAUX
+    if (category === 'chevaux') {
+      // Récupérer les rangs avec égalités DENSES
+      const rangVictoires = victoryRanks.get(key) || 999;
+      const rangTauxVictoire = victoryRateRanks.get(key) || 999;
+      const rangTauxPlace = placeRateRanks.get(key) || 999;
+      const rangGainMoyen = gainMoyenRanks.get(key) || 999;
+      
+      // Récupérer les données brutes pour les calculs
+      const nbCourses = parseInt(item.NbCourses || 0);
+      const nbVictoires = parseInt(item.NbVictoires || 0);
+      const nbPlaces = parseInt(item.NbPlace || 0);
+      const tauxVictoire = parseFloat(item.TauxVictoire || 0) / 100;
+      
+      // Calculer la régularité (victoires + places)/courses
+      const regularite = nbCourses > 0 ? (nbVictoires + nbPlaces) / nbCourses : 0;
+      
+      // Formule standardisée pour tous les chevaux, sans bonus spécial pour 100%
+      const scoreFinal = (
+        0.1 * (1 - (rangGainMoyen / 1000)) +    // Gain moyen (10%)
+        0.4 * regularite +                       // Régularité (40%)
+        0.3 * tauxVictoire +                     // Taux de victoire (30%)
+        0.2 * (1 - (rangVictoires / 1000))       // Rangs victoires inversé (20%)
+      );
+      
+      // Inverser le score pour que 0 soit le meilleur
+      item.RawScore = scoreFinal;
+      item.ScoreMixte = (1000 * (1 - scoreFinal)).toFixed(2);
+    } else {
+      // Pour les autres catégories, logique inchangée
+      // Récupérer les rangs avec égalités DENSES
+      const rangVictoires = victoryRanks.get(key) || 999;
+      const rangTauxVictoire = victoryRateRanks.get(key) || 999;
+      const rangTauxPlace = placeRateRanks.get(key) || 999;
+      
+      // Pondération adaptative
+      let poidsV = 0.5;  // Poids par défaut pour les victoires
+      let poidsTV = 0.3; // Poids par défaut pour le taux de victoire
+      let poidsTP = 0.2; // Poids par défaut pour le taux de place
+      
+      // Calcul du score pondéré avec rangs DENSES
+      item.ScoreMixte = (
+        poidsV * rangVictoires +
+        poidsTV * rangTauxVictoire +
+        poidsTP * rangTauxPlace
+      ).toFixed(2);
     }
-    
-    // Calcul du score pondéré avec rangs DENSES
-    item.ScoreMixte = (
-      poidsV * rangVictoires +
-      poidsTV * rangTauxVictoire +
-      poidsTP * rangTauxPlace
-    ).toFixed(2);
   });
   
-  // Tri final par score mixte croissant (meilleur score = plus petit)
-  const sortedData = dataCopy.sort((a, b) => {
-    const diff = parseFloat(a.ScoreMixte || 999) - parseFloat(b.ScoreMixte || 999);
-    if (diff !== 0) return diff;
-    
-    // Départage par nom en cas d'égalité
-    const nameA = category === 'chevaux' ? a.Nom : a.NomPostal;
-    const nameB = category === 'chevaux' ? b.Nom : b.NomPostal;
-    return nameA.localeCompare(nameB);
-  });
+  // Tri final par score
+  let sortedData;
+  
+  if (category === 'chevaux') {
+    // Pour les chevaux, trier par score brut décroissant
+    sortedData = dataCopy.sort((a, b) => {
+      const diff = (b.RawScore || 0) - (a.RawScore || 0);
+      if (diff !== 0) return diff;
+      
+      // Départage par nom en cas d'égalité
+      return a.Nom.localeCompare(b.Nom);
+    });
+  } else {
+    // Pour les autres catégories, trier par score mixte croissant
+    sortedData = dataCopy.sort((a, b) => {
+      const diff = parseFloat(a.ScoreMixte || 999) - parseFloat(b.ScoreMixte || 999);
+      if (diff !== 0) return diff;
+      
+      // Départage par nom en cas d'égalité
+      const nameA = category === 'chevaux' ? a.Nom : a.NomPostal;
+      const nameB = category === 'chevaux' ? b.Nom : b.NomPostal;
+      return nameA.localeCompare(nameB);
+    });
+  }
   
   // Assigner les rangs finaux
-  let distinctRank = 0;
-  let currentScore = null;
-  
   sortedData.forEach((item, index) => {
-    const score = parseFloat(item.ScoreMixte || 999);
-    
-    // Si nouveau score, incrémenter le rang distinct
-    if (index === 0 || Math.abs(score - currentScore) > 0.001) {
-      distinctRank++;
-      currentScore = score;
-    }
-    
-    item.Rang = distinctRank;
+    item.Rang = index + 1;
   });
   
   return sortedData;
@@ -194,6 +245,20 @@ function preprocessData(data, category) {
       const tauxVictoire = nbCourses > 0 ? ((nbVictoires / nbCourses) * 100).toFixed(1) : "0.0";
       const tauxPlace = nbCourses > 0 ? ((nbPlace / nbCourses) * 100).toFixed(1) : "0.0";
       
+      // Traitement du gain moyen pour qu'il soit disponible
+      let gainMoyen;
+      if (typeof item.GainMoyen === 'number') {
+        gainMoyen = item.GainMoyen;
+      } else if (item.GainMoyen) {
+        gainMoyen = item.GainMoyen;
+      } else if (typeof item.Allocation === 'number') {
+        gainMoyen = item.Allocation;
+      } else if (item.Allocation) {
+        gainMoyen = item.Allocation;
+      } else {
+        gainMoyen = 0;
+      }
+      
       return {
         Nom: item.LibelleCheval || item.Nom || "Inconnu",
         LibelleCheval_url: item.LibelleCheval_url,
@@ -201,7 +266,8 @@ function preprocessData(data, category) {
         NbVictoires: nbVictoires,
         NbPlace: nbPlace,
         TauxVictoire: tauxVictoire,
-        TauxPlace: tauxPlace
+        TauxPlace: tauxPlace,
+        GainMoyen: gainMoyen
       };
     });
   } else {
@@ -248,7 +314,8 @@ async function processCategory(category) {
         category: category.id,
         extraction_date: new Date().toISOString(),
         extraction_method: "pondered_ranking",
-        source_file: category.file
+        source_file: category.file,
+        version: "2.0" // Mise à jour pour refléter l'ajout du gain moyen
       },
       resultats: rankedData
     };
@@ -274,6 +341,7 @@ async function processCategory(category) {
 async function main() {
   console.log("=== EXTRACTION DES CLASSEMENTS PONDÉRÉS ===");
   console.log(`Date: ${new Date().toLocaleString()}`);
+  console.log("Version: 2.0 - Intégration du gain moyen pour les chevaux");
   
   try {
     // Créer le dossier de sortie s'il n'existe pas
@@ -297,6 +365,8 @@ async function main() {
     const reportPath = path.join(OUTPUT_DIR, `extraction_report_${new Date().toISOString().replace(/:/g, '-').split('.')[0]}.json`);
     await fs.writeFile(reportPath, JSON.stringify({
       date: new Date().toISOString(),
+      version: "2.0",
+      changes: "Ajout du gain moyen dans le calcul de score pour les chevaux",
       results: results,
       summary: {
         total: CATEGORIES.length,
