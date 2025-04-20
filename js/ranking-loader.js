@@ -18,6 +18,15 @@ const rankingLoader = {
         proprietaires: null
     },
     
+    // Table de correspondance manuelle pour les cas problématiques
+    correspondanceManuelle: {
+        // Format: "Nom dans la course": "Nom dans le classement"
+        "CORTEZ BANK H.PS. 6 A.": "CORTEZ BANK (GB)",
+        "CORTEZ BANK H.P.S. 6 A.": "CORTEZ BANK (GB)",
+        "CORTEZ BANK": "CORTEZ BANK (GB)"
+        // Ajoutez d'autres cas problématiques au besoin
+    },
+    
     // Charger les données d'une catégorie avec priorité aux classements pondérés
     async loadCategoryData(category) {
         if (this.data[category]) {
@@ -169,48 +178,38 @@ const rankingLoader = {
     normaliserNom(nom) {
         if (!nom) return "";
         
-        // Convertir en majuscules et supprimer les espaces superflus
-        let nomNormalise = nom.toUpperCase().trim();
+        // Vérifier d'abord la table de correspondance manuelle
+        const nomUpper = nom.toUpperCase().trim();
+        if (this.correspondanceManuelle[nomUpper]) {
+            console.log(`Correspondance manuelle trouvée: "${nomUpper}" -> "${this.correspondanceManuelle[nomUpper]}"`);
+            return this.correspondanceManuelle[nomUpper];
+        }
         
-        // AMÉLIORATION: Traitement des noms de chevaux avec parenthèses et suffixes
-        // Exemple: "tajlina (gb) f.ps. 3 a." -> "TAJLINA (GB)"
-        const matchCheval = nomNormalise.match(/^([A-Za-zÀ-ÖØ-öø-ÿ\s\-']+)(\s*\(([A-Za-z]+)\))?((\\s+[FM]\.P\.S\.[^)]*)|(\\s+F\.?P\.?S\.?\\s+\d+\\s*[aA]\.?)|\s+\d+[aA]\.?|(\s+GB\s+F\.P\.S\.)|\\s+\\(SUP\\).*)?$/i);
+        // Convertir en majuscules et supprimer les espaces superflus
+        let nomNormalise = nomUpper;
+        
+        // AMÉLIORATION: Expression régulière simplifiée pour les noms de chevaux
+        // Format: NOM (ORIGINE) [Suffixes éventuels comme H.PS. 5 a.]
+        const matchCheval = nomNormalise.match(/^([A-Za-zÀ-ÖØ-öø-ÿ\s\-']+?)(\s*\(([A-Za-z]+)\))?(\s+[HF]\.?P\.?S\.?.*)?$/i);
         
         if (matchCheval) {
             const nomBase = matchCheval[1].trim();
             const origine = matchCheval[3] ? `(${matchCheval[3].trim()})` : "";
             
-            // Reconstruire le nom standardisé (avec parenthèses si présentes, sans les suffixes)
+            // Reconstruire le nom standardisé
             nomNormalise = nomBase + (origine ? ` ${origine}` : "");
-            
             console.log(`Nom cheval normalisé: "${nom}" -> "${nomNormalise}"`);
         }
         
         // Standardiser les préfixes pour personnes
-        nomNormalise = nomNormalise.replace(/^M\.\s*/i, "MR ")
-                                .replace(/^MME\.\s*/i, "MME ")
-                                .replace(/^MLLE\.\s*/i, "MLLE ");
+        nomNormalise = nomNormalise.replace(/^M\\.\\s*/i, "MR ")
+                                .replace(/^MME\\.\\s*/i, "MME ")
+                                .replace(/^MLLE\\.\\s*/i, "MLLE ");
         
         // Standardiser les préfixes pour écuries (EC, ECURIE, etc.)
-        nomNormalise = nomNormalise.replace(/^EC\./i, "ECURIE ")
-                                .replace(/^EC\s+/i, "ECURIE ")
-                                .replace(/^ECURIES?\s+/i, "ECURIE ");
-        
-        // Standardiser les abréviations connues
-        const abreviations = {
-            "RY": "ROGER-YVES",
-            "JC": "JEAN-CLAUDE",
-            "MT": "MARIE-THERESE",
-            "P DE": "PRUDENCE DE",
-            "C.": "CHLOE"
-        };
-        
-        // Remplacer les abréviations connues
-        for (const [abrev, complet] of Object.entries(abreviations)) {
-            // Recherche avec limites de mots pour éviter les faux positifs
-            const regex = new RegExp(`\\b${abrev}\\b`, 'g');
-            nomNormalise = nomNormalise.replace(regex, complet);
-        }
+        nomNormalise = nomNormalise.replace(/^EC\\./i, "ECURIE ")
+                                .replace(/^EC\\s+/i, "ECURIE ")
+                                .replace(/^ECURIES?\\s+/i, "ECURIE ");
         
         return nomNormalise;
     },
@@ -375,7 +374,7 @@ const rankingLoader = {
         // Vérifier si c'est une écurie avec préfixe EC.
         if (nomNormalise.startsWith('ECURIE') || nomAvecInitiale.toUpperCase().startsWith('EC.')) {
             // Recherche d'écurie - traitement spécial
-            const nomEcurie = nomNormalise.replace(/^ECURIE\s+/i, '').trim();
+            const nomEcurie = nomNormalise.replace(/^ECURIE\\s+/i, '').trim();
             
             console.log(`Recherche d'écurie pour: "${nomEcurie}"`);
             
@@ -385,7 +384,7 @@ const rankingLoader = {
                 
                 // Vérifier si c'est une écurie
                 if (nomItem.startsWith('ECURIE')) {
-                    const nomEcurieItem = nomItem.replace(/^ECURIE\s+/i, '').trim();
+                    const nomEcurieItem = nomItem.replace(/^ECURIE\\s+/i, '').trim();
                     return nomEcurieItem.includes(nomEcurie) || nomEcurie.includes(nomEcurieItem);
                 }
                 
@@ -414,7 +413,7 @@ const rankingLoader = {
         
         // Extraire le préfixe, l'initiale et le nom de famille
         // Nouvelle expression régulière qui gère mieux les préfixes et initiales
-        const match = nomNormalise.match(/^(MME|MR|M)?\s*([A-Z])\.?\s*([A-Z\s]+)$/i);
+        const match = nomNormalise.match(/^(MME|MR|M)?\\s*([A-Z])\\.?\\s*([A-Z\\s]+)$/i);
         
         if (match) {
             const prefixe = match[1] ? match[1].toUpperCase() : '';
@@ -428,7 +427,7 @@ const rankingLoader = {
                 const nomComplet = this.normaliserNom(item.Nom || item.NomPostal || "");
                 
                 // Extraire le préfixe, le prénom et le nom de famille du nom complet
-                const matchComplet = nomComplet.match(/^(MME|MR|M)?\s*([A-Z]+)(?:\s+([A-Z\s]+))?$/i);
+                const matchComplet = nomComplet.match(/^(MME|MR|M)?\\s*([A-Z]+)(?:\\s+([A-Z\\s]+))?$/i);
                 
                 if (!matchComplet) return false;
                 
@@ -467,14 +466,91 @@ const rankingLoader = {
     },
     
     // Trouver le meilleur score pour un nom dans les données de classement
+    // FONCTION AMÉLIORÉE AVEC RECHERCHE PROGRESSIVE
     trouverMeilleurScore(donneesClassement, nom) {
         if (!nom || !donneesClassement || !donneesClassement.length) {
             return { score: 0, rang: null, item: null };
         }
         
-        const nomNormalise = this.normaliserNom(nom);
+        // Vérifier d'abord la table de correspondance manuelle
+        const nomUpper = nom.toUpperCase().trim();
+        if (this.correspondanceManuelle[nomUpper]) {
+            const nomCorrespondance = this.correspondanceManuelle[nomUpper];
+            console.log(`Correspondance manuelle trouvée: "${nomUpper}" -> "${nomCorrespondance}"`);
+            
+            // Rechercher la correspondance dans les données de classement
+            for (const item of donneesClassement) {
+                const nomItem = item.Nom || item.NomPostal || "";
+                if (this.normaliserNom(nomItem) === this.normaliserNom(nomCorrespondance)) {
+                    return {
+                        score: 0,
+                        rang: item.Rang,
+                        similarite: 100,
+                        item: item
+                    };
+                }
+            }
+        }
         
-        // Traitement spécial pour les écuries
+        const nomNormalise = this.normaliserNom(nom);
+        console.log(`Recherche pour: "${nom}" normalisé en "${nomNormalise}"`);
+        
+        // STRATÉGIE 1: Correspondance exacte
+        for (const item of donneesClassement) {
+            const nomItem = item.Nom || item.NomPostal || "";
+            const nomItemNormalise = this.normaliserNom(nomItem);
+            
+            if (nomItemNormalise === nomNormalise) {
+                console.log(`Correspondance exacte trouvée: "${nomItem}"`);
+                return {
+                    score: 0,
+                    rang: item.Rang,
+                    similarite: 100,
+                    item: item
+                };
+            }
+        }
+        
+        // STRATÉGIE 2: Extraire le nom sans suffixes ni origines pour les chevaux
+        // Par exemple: "CORTEZ BANK (GB) H.PS. 6 a." -> "CORTEZ BANK"
+        const nomSansSuffixe = nomNormalise.replace(/\s*\([^)]+\)|\s+[HF]\.?P\.?S\.?.*/gi, "").trim();
+        if (nomSansSuffixe !== nomNormalise) {
+            console.log(`Recherche sans suffixe: "${nomSansSuffixe}"`);
+            
+            for (const item of donneesClassement) {
+                const nomItem = item.Nom || item.NomPostal || "";
+                const nomItemSansSuffixe = this.normaliserNom(nomItem).replace(/\s*\([^)]+\)|\s+[HF]\.?P\.?S\.?.*/gi, "").trim();
+                
+                if (nomItemSansSuffixe === nomSansSuffixe) {
+                    console.log(`Correspondance sans suffixe trouvée: "${nomItem}"`);
+                    return {
+                        score: 0,
+                        rang: item.Rang,
+                        similarite: 95,
+                        item: item
+                    };
+                }
+            }
+        }
+        
+        // STRATÉGIE 3: Vérifier si le nom est contenu dans l'autre
+        for (const item of donneesClassement) {
+            const nomItem = item.Nom || item.NomPostal || "";
+            const nomItemNormalise = this.normaliserNom(nomItem);
+            
+            // Si l'un contient l'autre (par exemple "CORTEZ BANK" dans "CORTEZ BANK (GB)")
+            if (nomItemNormalise.includes(nomSansSuffixe) || nomSansSuffixe.includes(nomItemNormalise)) {
+                console.log(`Correspondance par inclusion trouvée: "${nom}" avec "${nomItem}"`);
+                return {
+                    score: 0,
+                    rang: item.Rang,
+                    similarite: 90,
+                    item: item
+                };
+            }
+        }
+        
+        // STRATÉGIE 4: Écuries (cas spécial)
         if (nomNormalise.startsWith('ECURIE') || nom.toUpperCase().startsWith('EC.')) {
             const nomEcurie = nomNormalise.replace(/^ECURIE\s+/i, '').trim();
             
@@ -493,42 +569,28 @@ const rankingLoader = {
             }
         }
         
-        // Tableau pour stocker les correspondances possibles avec leurs scores de similarité
+        // STRATÉGIE 5: Correspondance partielle par mots communs
         const correspondances = [];
+        const motsNomOriginal = nomSansSuffixe.split(/\s+/).filter(m => m.length > 1);
         
         donneesClassement.forEach(item => {
             const nomReference = this.normaliserNom(item.Nom || item.NomPostal || "");
+            const nomReferenceSansSuffixe = nomReference.replace(/\s*\([^)]+\)|\s+[HF]\.?P\.?S\.?.*/gi, "").trim();
+            const motsRef = nomReferenceSansSuffixe.split(/\s+/).filter(m => m.length > 1);
             
-            // Calculer différents types de correspondance
-            let similarite = 0;
+            // Compter les mots en commun
+            const motsCommuns = motsRef.filter(mot => motsNomOriginal.includes(mot)).length;
             
-            // 1. Correspondance exacte
-            if (nomReference === nomNormalise) {
-                similarite = 100;
-            } 
-            // 2. L'un contient l'autre intégralement
-            else if (nomReference.includes(nomNormalise) || nomNormalise.includes(nomReference)) {
-                similarite = 90;
-            } 
-            // 3. Correspondance partielle de mots
-            else {
-                const motsRef = nomReference.split(/\s+/);
-                const motsNom = nomNormalise.split(/\s+/);
+            if (motsCommuns > 0) {
+                // Score basé sur le pourcentage de mots en commun
+                const similarite = Math.min(80, (motsCommuns / Math.max(motsRef.length, motsNomOriginal.length)) * 100);
                 
-                // Compter les mots en commun
-                const motsCommuns = motsRef.filter(mot => motsNom.includes(mot)).length;
-                
-                if (motsCommuns > 0) {
-                    // Score basé sur le pourcentage de mots en commun
-                    similarite = Math.min(80, (motsCommuns / Math.max(motsRef.length, motsNom.length)) * 100);
+                if (similarite > 50) { // Seuil minimum de similarité
+                    correspondances.push({
+                        item: item,
+                        similarite: similarite
+                    });
                 }
-            }
-            
-            if (similarite > 50) { // Seuil minimum de similarité
-                correspondances.push({
-                    item: item,
-                    similarite: similarite
-                });
             }
         });
         
@@ -537,15 +599,18 @@ const rankingLoader = {
         
         // Si on a trouvé des correspondances, retourner la meilleure
         if (correspondances.length > 0) {
+            console.log(`Meilleure correspondance partielle: "${correspondances[0].item.Nom || correspondances[0].item.NomPostal}" (similarité: ${correspondances[0].similarite}%)`);
             return {
-                score: 0, // Plus utilisé, maintenant on utilise le rang
+                score: 0,
                 rang: correspondances[0].item.Rang,
                 similarite: correspondances[0].similarite,
                 item: correspondances[0].item
             };
         }
         
-        return { score: 0, rang: null, item: null }; // Valeur par défaut si non trouvé
+        // Aucune correspondance trouvée
+        console.log(`Aucune correspondance trouvée pour "${nom}"`);
+        return { score: 0, rang: null, item: null };
     },
     
     // Trouver l'item correspondant à un nom dans un classement
@@ -558,7 +623,7 @@ const rankingLoader = {
         if (categorie === 'eleveurs' || categorie === 'proprietaires') {
             // Si c'est une chaîne, la diviser sur les virgules et autres séparateurs
             const noms = typeof nom === 'string' 
-                ? nom.split(/\s*[,&\/]\s*/) 
+                ? nom.split(/\s*[,&\/]\s*|\set\s|\sand\s/i).filter(n => n.trim())
                 : [nom];
             
             if (noms.length === 0 || !noms[0]) {
@@ -588,24 +653,22 @@ const rankingLoader = {
         }
         
         // Pour les chevaux et autres catégories
+        // Vérifier d'abord la table de correspondance manuelle
+        const nomUpper = (nom || "").toUpperCase().trim();
+        if (this.correspondanceManuelle[nomUpper]) {
+            nom = this.correspondanceManuelle[nomUpper];
+            console.log(`Correspondance manuelle utilisée: "${nomUpper}" -> "${nom}"`);
+        }
+        
         const nomNormalise = this.normaliserNom(nom);
         console.log(`Recherche de "${nom}" normalisé en "${nomNormalise}" dans la catégorie ${categorie}`);
         
-        // Rechercher une correspondance exacte d'abord
-        for (const item of donneesClassement) {
-            const nomItem = categorie === 'chevaux' ? item.Nom : item.NomPostal;
-            const nomItemNormalise = this.normaliserNom(nomItem);
-            
-            if (nomItemNormalise === nomNormalise) {
-                console.log(`Correspondance exacte trouvée pour "${nom}": "${nomItem}"`);
-                return item;
-            }
-        }
-        
-        // Si pas de correspondance exacte, rechercher une correspondance approximative
+        // Amélioré - utiliser toute la stratégie de recherche progressive
         const resultat = this.trouverMeilleurScore(donneesClassement, nom);
         if (resultat.item) {
-            console.log(`Correspondance approximative trouvée pour "${nom}": "${resultat.item.Nom || resultat.item.NomPostal}" (similarité: ${resultat.similarite}%)`);
+            console.log(`Correspondance trouvée pour "${nom}": "${resultat.item.Nom || resultat.item.NomPostal}" (similarité: ${resultat.similarite || 'N/A'}%)`);
+        } else {
+            console.log(`⚠️ Aucune correspondance trouvée pour "${nom}" dans ${categorie}`);
         }
         return resultat.item;
     },
@@ -620,7 +683,7 @@ const rankingLoader = {
         if (categorie === 'eleveurs' || categorie === 'proprietaires') {
             // Si c'est une chaîne, la diviser sur les virgules et autres séparateurs
             const noms = typeof nom === 'string' 
-                ? nom.split(/\s*[,&\/]\s*/) 
+                ? nom.split(/\s*[,&\/]\s*|\set\s|\sand\s/i).filter(n => n.trim())
                 : [nom];
             
             if (noms.length === 0 || !noms[0]) {
@@ -647,19 +710,14 @@ const rankingLoader = {
             return meilleurRang;
         }
         
-        // Pour les autres catégories
-        const nomNormalise = this.normaliserNom(nom);
-        
-        // Rechercher une correspondance exacte d'abord
-        for (const item of donneesClassement) {
-            const nomItem = categorie === 'chevaux' ? item.Nom : item.NomPostal;
-            if (this.normaliserNom(nomItem) === nomNormalise) {
-                // Utiliser le rang calculé par calculateCompositeRanking (classement pondéré)
-                return parseInt(item.Rang);
-            }
+        // Pour les autres catégories - utiliser la fonction complète de recherche
+        // Vérifier d'abord la table de correspondance manuelle
+        const nomUpper = (nom || "").toUpperCase().trim();
+        if (this.correspondanceManuelle[nomUpper]) {
+            nom = this.correspondanceManuelle[nomUpper];
+            console.log(`Correspondance manuelle utilisée: "${nomUpper}" -> "${nom}"`);
         }
         
-        // Si pas de correspondance exacte, rechercher une correspondance approximative
         const resultat = this.trouverMeilleurScore(donneesClassement, nom);
         return resultat.rang ? parseInt(resultat.rang) : null;
     },
@@ -668,7 +726,7 @@ const rankingLoader = {
     calculerScoreMoyen(donneesClassement, listeNoms, categorie) {
         // Si c'est une chaîne, la diviser sur les virgules et autres séparateurs possibles
         const noms = typeof listeNoms === 'string' 
-            ? listeNoms.split(/\s*[,&\/]\s*/) 
+            ? listeNoms.split(/\s*[,&\/]\s*|\set\s|\sand\s/i).filter(n => n.trim())
             : [listeNoms];
         
         if (noms.length === 0 || !noms[0]) {
