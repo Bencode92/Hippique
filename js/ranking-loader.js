@@ -23,7 +23,14 @@ const rankingLoader = {
         // Format: "Nom dans la course": "Nom dans le classement"
         "CORTEZ BANK H.PS. 6 A.": "CORTEZ BANK (GB)",
         "CORTEZ BANK H.P.S. 6 A.": "CORTEZ BANK (GB)",
-        "CORTEZ BANK": "CORTEZ BANK (GB)"
+        "CORTEZ BANK": "CORTEZ BANK (GB)",
+        "LEHMAN (GB) M.PS. 6 A.": "LEHMAN (GB)",
+        "LEHMAN M.PS. 6 A.": "LEHMAN (GB)",
+        "LEHMAN H.PS. 6 A.": "LEHMAN (GB)",
+        "BENI KHIAR M.PS. 7 A.": "BENI KHIAR",
+        "RONNIE ROCKET H.PS. 5 A.": "RONNIE ROCKET",
+        "LADY MADININA F.PS. 5 A.": "LADY MADININA",
+        "DADIDOM H.PS. 7 A.": "DADIDOM"
         // Ajoutez d'autres cas problématiques au besoin
     },
     
@@ -190,7 +197,7 @@ const rankingLoader = {
         
         // AMÉLIORATION: Expression régulière simplifiée pour les noms de chevaux
         // Format: NOM (ORIGINE) [Suffixes éventuels comme H.PS. 5 a.]
-        const matchCheval = nomNormalise.match(/^([A-Za-zÀ-ÖØ-öø-ÿ\s\-']+?)(\s*\(([A-Za-z]+)\))?(\s+[HF]\.?P\.?S\.?.*)?$/i);
+        const matchCheval = nomNormalise.match(/^([A-Za-zÀ-ÖØ-öø-ÿ\s\-']+?)(\s*\(([A-Za-z]+)\))?(\s+[HFM]\.?P\.?S\.?.*)?$/i);
         
         if (matchCheval) {
             const nomBase = matchCheval[1].trim();
@@ -513,13 +520,13 @@ const rankingLoader = {
         
         // STRATÉGIE 2: Extraire le nom sans suffixes ni origines pour les chevaux
         // Par exemple: "CORTEZ BANK (GB) H.PS. 6 a." -> "CORTEZ BANK"
-        const nomSansSuffixe = nomNormalise.replace(/\s*\([^)]+\)|\s+[HF]\.?P\.?S\.?.*/gi, "").trim();
+        const nomSansSuffixe = nomNormalise.replace(/\s*\([^)]+\)|\s+[HFM]\.?P\.?S\.?.*/gi, "").trim();
         if (nomSansSuffixe !== nomNormalise) {
             console.log(`Recherche sans suffixe: "${nomSansSuffixe}"`);
             
             for (const item of donneesClassement) {
                 const nomItem = item.Nom || item.NomPostal || "";
-                const nomItemSansSuffixe = this.normaliserNom(nomItem).replace(/\s*\([^)]+\)|\s+[HF]\.?P\.?S\.?.*/gi, "").trim();
+                const nomItemSansSuffixe = this.normaliserNom(nomItem).replace(/\s*\([^)]+\)|\s+[HFM]\.?P\.?S\.?.*/gi, "").trim();
                 
                 if (nomItemSansSuffixe === nomSansSuffixe) {
                     console.log(`Correspondance sans suffixe trouvée: "${nomItem}"`);
@@ -575,7 +582,7 @@ const rankingLoader = {
         
         donneesClassement.forEach(item => {
             const nomReference = this.normaliserNom(item.Nom || item.NomPostal || "");
-            const nomReferenceSansSuffixe = nomReference.replace(/\s*\([^)]+\)|\s+[HF]\.?P\.?S\.?.*/gi, "").trim();
+            const nomReferenceSansSuffixe = nomReference.replace(/\s*\([^)]+\)|\s+[HFM]\.?P\.?S\.?.*/gi, "").trim();
             const motsRef = nomReferenceSansSuffixe.split(/\s+/).filter(m => m.length > 1);
             
             // Compter les mots en commun
@@ -761,6 +768,32 @@ const rankingLoader = {
         return null;
     },
     
+    // Fonction pour générer automatiquement la table de correspondance pour les chevaux dans une course
+    // NOUVELLE FONCTION: Ajouter des entrées à la table de correspondance en fonction des cas rencontrés
+    ajouterCorrespondanceAutomatique(nomCourse, nomClassement) {
+        if (!nomCourse || !nomClassement) return;
+        
+        // Standardiser les deux noms pour la comparaison
+        const nomCourseTrim = nomCourse.toUpperCase().trim();
+        const nomClassementTrim = nomClassement.toUpperCase().trim();
+        
+        // Ne pas ajouter si c'est déjà identique ou déjà dans la table
+        if (nomCourseTrim === nomClassementTrim || this.correspondanceManuelle[nomCourseTrim]) {
+            return;
+        }
+        
+        // Ajouter à la table de correspondance
+        this.correspondanceManuelle[nomCourseTrim] = nomClassementTrim;
+        console.log(`✅ Nouvelle correspondance ajoutée: "${nomCourseTrim}" -> "${nomClassementTrim}"`);
+        
+        // Ajouter aussi des variantes sans suffixes
+        const nomCourseSansSuffixe = nomCourseTrim.replace(/\s+[HFM]\.?P\.?S\.?.*/gi, "").trim();
+        if (nomCourseSansSuffixe !== nomCourseTrim) {
+            this.correspondanceManuelle[nomCourseSansSuffixe] = nomClassementTrim;
+            console.log(`✅ Variante sans suffixe ajoutée: "${nomCourseSansSuffixe}" -> "${nomClassementTrim}"`);
+        }
+    },
+    
     // NOUVELLE VERSION: Calculer le score prédictif pour un participant avec NC dynamique
     calculerScoreParticipant(participant) {
         // Récupérer les items pour chaque acteur
@@ -789,6 +822,11 @@ const rankingLoader = {
         const rangEntraineur = itemEntraineur ? parseInt(itemEntraineur.Rang) : null;
         const rangEleveur = itemEleveur ? parseInt(itemEleveur.Rang) : null;
         const rangProprio = itemProprio ? parseInt(itemProprio.Rang) : null;
+        
+        // Si on a trouvé un cheval dans le classement, ajouter automatiquement à la table de correspondance
+        if (itemCheval && participant.cheval) {
+            this.ajouterCorrespondanceAutomatique(participant.cheval, itemCheval.Nom);
+        }
         
         // Logs pour debug
         console.log(`Rangs récupérés pour ${participant.cheval}: `, {
