@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 </div>
                 
-                <div class="midrange-params" id="midrangeParams">
+                <div class="midrange-params" id="midrangeParams" style="display: none;">
                     <div class="filter-controls">
                         <div class="filter-group">
                             <label>Nombre de favoris à exclure</label>
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         </button>
                     </div>
                     
-                    <div class="error-message" id="inlineErrorMessage"></div>
+                    <div class="error-message" id="inlineErrorMessage" style="display: none;"></div>
                 </div>
                 
                 <div class="result-container" id="inlineResultContainer" style="display: none;">
@@ -122,8 +122,19 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
     `;
     
-    // Ajouter la popup au body
-    document.body.insertAdjacentHTML('beforeend', simulationPopupHTML);
+    // Ajouter la popup au body s'elle n'existe pas déjà
+    if (!document.getElementById('simulationPopup')) {
+        document.body.insertAdjacentHTML('beforeend', simulationPopupHTML);
+    }
+    
+    // Définir les variables root pour les couleurs des différentes stratégies
+    const rootStyles = document.documentElement.style;
+    if (!rootStyles.getPropertyValue('--ev-accent')) {
+        rootStyles.setProperty('--ev-accent', '#3498db');
+        rootStyles.setProperty('--ev-highlight', '#5dade2');
+        rootStyles.setProperty('--midrange-accent', '#9b59b6');
+        rootStyles.setProperty('--midrange-highlight', '#d678d3');
+    }
     
     // Variables globales pour la simulation
     window.currentSimulationData = {
@@ -134,6 +145,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Algorithme Dutch Betting
     function calculateDutchBetting(horsesInput, totalBet, selectedHorses) {
+        console.log("Exécution de l'algorithme Dutch Betting");
         const odds = selectedHorses.map(horseName => horsesInput[horseName]);
         
         // Calcul Dutch classique
@@ -161,6 +173,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Algorithme d'optimisation EV
     function calculateEVOptimization(horsesInput, totalBet, maxPerHorse, selectedHorses) {
+        console.log("Exécution de l'algorithme EV Optimization");
         const odds = selectedHorses.map(horseName => horsesInput[horseName]);
         const numHorses = selectedHorses.length;
         
@@ -216,6 +229,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const isRentable = bestGainMoyen > 0 && bestStakes.length > 0;
         
         if (!isRentable) {
+            console.log("Aucune solution rentable trouvée avec EV Optimization");
             return {
                 chevaux: selectedHorses,
                 mises: [],
@@ -233,6 +247,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Calculer les métriques
         const gainMin = Math.min(...bestGainsNets);
         const gainMax = Math.max(...bestGainsNets);
+        console.log("Solution EV trouvée, gain moyen:", bestGainMoyen);
         
         return {
             chevaux: selectedHorses,
@@ -250,16 +265,21 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Algorithme Mid Range
     function calculateMidRange(horsesInput, totalBet, maxPerHorse, selectedHorses, excludeLow, excludeHigh) {
+        console.log("Exécution de l'algorithme Mid Range avec", excludeLow, "favoris et", excludeHigh, "outsiders exclus");
         // Trier les chevaux par cote
         const sortedHorses = Object.entries(horsesInput)
             .sort(([, coteA], [, coteB]) => coteA - coteB)
             .map(([name]) => name);
         
+        console.log("Chevaux triés par cote:", sortedHorses);
+        
         // Exclure les favoris et outsiders
         const filteredHorses = sortedHorses.slice(excludeLow, sortedHorses.length - excludeHigh);
+        console.log("Chevaux retenus après filtrage:", filteredHorses);
         
         // Si pas assez de chevaux après filtrage
         if (filteredHorses.length < 2) {
+            console.log("Pas assez de chevaux après filtrage Mid Range");
             return {
                 chevaux: [],
                 mises: [],
@@ -294,7 +314,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Fonction pour ouvrir la popup de simulation
     function openSimulationPopup(hippodrome, courseName, participantsContainer, detailId) {
         const popup = document.getElementById('simulationPopup');
-        if (!popup) return;
+        if (!popup) {
+            console.error("Popup de simulation non trouvée");
+            return;
+        }
         
         // Récupérer les données des participants et leurs scores prédictifs
         const rows = participantsContainer.querySelectorAll('tr');
@@ -354,12 +377,31 @@ document.addEventListener('DOMContentLoaded', function() {
             detailId: detailId
         };
         
+        console.log("Données de simulation préparées:", window.currentSimulationData);
+        
         // Générer la liste des participants sélectionnables
         generateHorseSelection(participants);
         
+        // Réinitialiser la stratégie à Dutch (par défaut)
+        document.querySelectorAll('.strategy-option').forEach(opt => {
+            opt.classList.remove('active');
+        });
+        document.querySelector('.strategy-option[data-strategy="dutch"]').classList.add('active');
+        
+        // Réinitialiser les styles de la popup
+        popup.className = 'simulation-popup';
+        
+        // Masquer les paramètres Mid Range par défaut
+        const midrangeParams = document.getElementById('midrangeParams');
+        if (midrangeParams) {
+            midrangeParams.style.display = 'none';
+        }
+        
         // Réinitialiser l'affichage des résultats
-        document.getElementById('inlineResultContainer').style.display = 'none';
-        document.getElementById('inlineErrorMessage').style.display = 'none';
+        const resultContainer = document.getElementById('inlineResultContainer');
+        const errorMessage = document.getElementById('inlineErrorMessage');
+        if (resultContainer) resultContainer.style.display = 'none';
+        if (errorMessage) errorMessage.style.display = 'none';
         
         // Afficher la popup
         popup.style.display = 'block';
@@ -374,7 +416,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Fonction pour générer la liste des participants sélectionnables
     function generateHorseSelection(participants) {
         const selectionContainer = document.getElementById('horseSelection');
-        if (!selectionContainer) return;
+        if (!selectionContainer) {
+            console.error("Conteneur de sélection des chevaux non trouvé");
+            return;
+        }
         
         let html = '';
         
@@ -429,8 +474,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Fonction pour calculer les paris
     function calculateBets() {
+        console.log("Lancement du calcul des paris");
         const errorMessage = document.getElementById('inlineErrorMessage');
         const resultContainer = document.getElementById('inlineResultContainer');
+        
+        if (!errorMessage || !resultContainer) {
+            console.error("Éléments d'UI manquants pour afficher les résultats");
+            return;
+        }
         
         try {
             // Récupérer les paramètres
@@ -481,15 +532,28 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Obtenir la stratégie sélectionnée
             const strategyOption = document.querySelector('.strategy-option.active');
+            if (!strategyOption) {
+                throw new Error('Aucune stratégie sélectionnée');
+            }
+            
             const strategy = strategyOption.dataset.strategy;
+            console.log(`Stratégie sélectionnée: ${strategy}`);
             
             // Variables pour Mid Range
             let excludeLow = 0;
             let excludeHigh = 0;
             
             if (strategy === 'midrange') {
-                excludeLow = parseInt(document.getElementById('inlineExcludeLow').value) || 0;
-                excludeHigh = parseInt(document.getElementById('inlineExcludeHigh').value) || 0;
+                const excludeLowInput = document.getElementById('inlineExcludeLow');
+                const excludeHighInput = document.getElementById('inlineExcludeHigh');
+                
+                if (!excludeLowInput || !excludeHighInput) {
+                    console.error("Champs de filtrage Mid Range non trouvés");
+                    throw new Error("Configuration Mid Range incomplète");
+                }
+                
+                excludeLow = parseInt(excludeLowInput.value) || 0;
+                excludeHigh = parseInt(excludeHighInput.value) || 0;
                 
                 // Vérifier que les exclusions sont valides
                 if (excludeLow + excludeHigh >= selectedHorses.length) {
@@ -506,6 +570,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 result = calculateEVOptimization(horsesInput, totalBet, maxPerHorse, selectedHorses);
             } else if (strategy === 'midrange') {
                 result = calculateMidRange(horsesInput, totalBet, maxPerHorse, selectedHorses, excludeLow, excludeHigh);
+            } else {
+                throw new Error(`Stratégie non reconnue: ${strategy}`);
             }
             
             // Vérifier si une solution rentable a été trouvée
@@ -525,6 +591,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
         } catch (error) {
             // Afficher l'erreur
+            console.error("Erreur lors du calcul:", error);
             errorMessage.textContent = error.message;
             errorMessage.style.display = 'block';
             resultContainer.style.display = 'none';
@@ -547,6 +614,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Remplir le tableau des paris
         const betsTableBody = document.getElementById('inlineBetsTableBody');
+        if (!betsTableBody) {
+            console.error("Conteneur de tableau des paris non trouvé");
+            return;
+        }
+        
         betsTableBody.innerHTML = '';
         
         result.chevaux.forEach((cheval, i) => {
@@ -565,6 +637,16 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
             betsTableBody.appendChild(row);
         });
+        
+        // Ajouter le nom de l'approche au titre
+        const resultHeader = document.querySelector('.result-header h4');
+        if (resultHeader) {
+            let titre = `<i class="fas fa-check-circle"></i> Meilleure stratégie de paris - ${result.approche}`;
+            if (result.filtrage) {
+                titre += ` (${result.filtrage})`;
+            }
+            resultHeader.innerHTML = titre;
+        }
     }
     
     // Fonction pour intercepter les boutons "Simuler des paris"
@@ -679,24 +761,30 @@ document.addEventListener('DOMContentLoaded', function() {
         const strategyOptions = document.querySelectorAll('.strategy-option');
         strategyOptions.forEach(option => {
             option.addEventListener('click', function() {
+                console.log(`Changement de stratégie pour: ${this.dataset.strategy}`);
+                
                 // Mettre à jour l'apparence
                 strategyOptions.forEach(opt => opt.classList.remove('active'));
                 this.classList.add('active');
                 
                 // Mettre à jour le style de la popup
                 const popup = document.getElementById('simulationPopup');
+                if (!popup) return;
+                
                 popup.className = 'simulation-popup';
                 
                 // Vérifier quelle stratégie est active
                 const strategy = this.dataset.strategy;
+                const midrangeParams = document.getElementById('midrangeParams');
+                
                 if (strategy === 'ev') {
                     popup.classList.add('ev-mode');
-                    document.getElementById('midrangeParams').style.display = 'none';
+                    if (midrangeParams) midrangeParams.style.display = 'none';
                 } else if (strategy === 'midrange') {
                     popup.classList.add('midrange-mode');
-                    document.getElementById('midrangeParams').style.display = 'block';
+                    if (midrangeParams) midrangeParams.style.display = 'block';
                 } else {
-                    document.getElementById('midrangeParams').style.display = 'none';
+                    if (midrangeParams) midrangeParams.style.display = 'none';
                 }
             });
         });
@@ -707,4 +795,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initialiser les gestionnaires d'événements
     initEventHandlers();
+    
+    // Ajouter un indicateur que le module est bien chargé
+    console.log("Module de simulation inline chargé avec succès");
 });
