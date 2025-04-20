@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/simulation-inline.css">
+    <link rel="stylesheet" href="css/date-navigation.css">
     <style>
         :root {
             --dark-teal: #0A2E2A;
@@ -414,6 +415,7 @@
             font-weight: 500;
             text-align: left;
             margin-bottom: 1.5rem;
+            position: relative;
         }
 
         .date-button:hover {
@@ -1054,7 +1056,7 @@
                 
                 <button class="date-button" id="date-button">
                     <i class="fas fa-calendar-alt"></i>
-                    <span id="current-date">Aujourd'hui (17/04/2025)</span>
+                    <span id="current-date">Aujourd'hui (20/04/2025)</span>
                     <input type="date" id="date-input" style="display: none;">
                 </button>
                 
@@ -1132,7 +1134,7 @@
         
         <footer>
             <h1>ANALYSE HIPPIQUE</h1>
-            <p>Système d'analyse pour événements hippiques - Dernière mise à jour: <span id="last-update">17/04/2025</span></p>
+            <p>Système d'analyse pour événements hippiques - Dernière mise à jour: <span id="last-update">20/04/2025</span></p>
             <p><a href="classement.html" style="color: var(--accent); text-decoration: none;">Classements complets</a> | <a href="simulation.html" style="color: var(--accent); text-decoration: none;">Simulateur de paris</a></p>
         </footer>
     </div>
@@ -1145,7 +1147,7 @@
             async loadCoursesForDate(dateStr) {
                 console.log(`Chargement des courses pour la date ${dateStr}`);
                 
-                // Format de date attendu: YYYY-MM-DD (ex: 2025-04-17)
+                // Format de date attendu: YYYY-MM-DD (ex: 2025-04-20)
                 if (!dateStr) {
                     const today = new Date();
                     dateStr = this.formatDateYMD(today);
@@ -1341,6 +1343,9 @@
                 const tomorrow = new Date(today);
                 tomorrow.setDate(tomorrow.getDate() + 1);
                 
+                const yesterday = new Date(today);
+                yesterday.setDate(yesterday.getDate() - 1);
+                
                 const dateToCheck = new Date(date);
                 dateToCheck.setHours(0, 0, 0, 0);
                 
@@ -1348,6 +1353,8 @@
                     return `Aujourd'hui (${this.formatDateDMY(date)})`;
                 } else if (dateToCheck.getTime() === tomorrow.getTime()) {
                     return `Demain (${this.formatDateDMY(date)})`;
+                } else if (dateToCheck.getTime() === yesterday.getTime()) {
+                    return `Hier (${this.formatDateDMY(date)})`;
                 } else {
                     return this.formatDateDMY(date);
                 }
@@ -1366,12 +1373,12 @@
             
             // Variable pour stocker les données de courses et l'état de l'application
             let courseData = {};
-            let currentDate = new Date();
+            window.currentDate = new Date();
             let activeDetailSection = null;
             
             // Mise à jour de la date affichée
-            currentDateSpan.textContent = coursesLoader.getReadableDate(currentDate);
-            lastUpdateEl.textContent = coursesLoader.formatDateDMY(currentDate);
+            currentDateSpan.textContent = coursesLoader.getReadableDate(window.currentDate);
+            lastUpdateEl.textContent = coursesLoader.formatDateDMY(window.currentDate);
             
             // Charger les courses pour la date actuelle
             loadCoursesForCurrentDate();
@@ -1448,7 +1455,7 @@
             
             // Fonction pour charger les courses pour la date actuelle
             async function loadCoursesForCurrentDate() {
-                const dateStr = coursesLoader.formatDateYMD(currentDate);
+                const dateStr = coursesLoader.formatDateYMD(window.currentDate);
                 console.log(`Chargement des courses pour: ${dateStr}`);
                 
                 try {
@@ -1456,7 +1463,7 @@
                     resultsContainer.innerHTML = `
                         <div class="loading">
                             <div class="spinner" style="border: 4px solid rgba(233, 209, 140, 0.1); border-radius: 50%; border-top: 4px solid var(--gold); border-left: 4px solid var(--gold); width: 50px; height: 50px; animation: spin 1s linear infinite; margin: 0 auto 1.5rem;"></div>
-                            <p>Chargement des courses pour ${coursesLoader.formatDateDMY(currentDate)}...</p>
+                            <p>Chargement des courses pour ${coursesLoader.formatDateDMY(window.currentDate)}...</p>
                         </div>
                     `;
                     
@@ -1666,7 +1673,7 @@
                             <div class="info-item">
                                 <i class="fas fa-calendar-alt"></i>
                                 <div class="info-label">Date</div>
-                                <div class="info-value">${coursesLoader.formatDateDMY(currentDate)}</div>
+                                <div class="info-value">${coursesLoader.formatDateDMY(window.currentDate)}</div>
                             </div>
                             <div class="info-item">
                                 <i class="fas fa-users"></i>
@@ -1944,7 +1951,7 @@
                 dateInput.focus();
                 
                 // Définir la valeur initiale sur la date actuelle
-                const formattedDate = coursesLoader.formatDateYMD(currentDate);
+                const formattedDate = coursesLoader.formatDateYMD(window.currentDate);
                 dateInput.value = formattedDate;
                 
                 // Positionner l'input date
@@ -1968,10 +1975,10 @@
                 }
                 
                 // Mettre à jour la date courante
-                currentDate = newDate;
+                window.currentDate = newDate;
                 
                 // Mettre à jour l'affichage
-                currentDateSpan.textContent = coursesLoader.getReadableDate(currentDate);
+                currentDateSpan.textContent = coursesLoader.getReadableDate(window.currentDate);
                 
                 // Masquer l'input date
                 dateInput.style.display = 'none';
@@ -1995,6 +2002,9 @@
     
     <!-- Ajout du nouveau module ranking-loader.js -->
     <script src="js/ranking-loader.js?v=1"></script>
+    
+    <!-- Ajout du module de navigation entre dates -->
+    <script src="js/date-navigation.js?v=1"></script>
     
     <!-- Ajout du nouveau module de simulation intégrée -->
     <script src="js/simulation-inline.js?v=1"></script>
