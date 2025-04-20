@@ -21,6 +21,7 @@ const rankingLoader = {
     // Table de correspondance manuelle pour les cas problématiques
     correspondanceManuelle: {
         // Format: "Nom dans la course": "Nom dans le classement"
+        // Chevaux des captures d'écran précédentes
         "CORTEZ BANK H.PS. 6 A.": "CORTEZ BANK (GB)",
         "CORTEZ BANK H.P.S. 6 A.": "CORTEZ BANK (GB)",
         "CORTEZ BANK": "CORTEZ BANK (GB)",
@@ -30,8 +31,16 @@ const rankingLoader = {
         "BENI KHIAR M.PS. 7 A.": "BENI KHIAR",
         "RONNIE ROCKET H.PS. 5 A.": "RONNIE ROCKET",
         "LADY MADININA F.PS. 5 A.": "LADY MADININA",
-        "DADIDOM H.PS. 7 A.": "DADIDOM"
-        // Ajoutez d'autres cas problématiques au besoin
+        "DADIDOM H.PS. 7 A.": "DADIDOM",
+        
+        // Nouveaux chevaux des captures d'écran récentes
+        "BAK'S WOOD H.PS. 4 A.": "BAK'S WOOD",
+        "BAK S WOOD H.PS. 4 A.": "BAK'S WOOD",
+        "BAKS WOOD H.PS. 4 A.": "BAK'S WOOD",
+        "MISS ESTRELLA F.PS. 5 A.": "MISS ESTRELLA",
+        "NUIT CHOPE F.PS. 4 A.": "NUIT CHOPE",
+        "ALITA F.PS. 5 A.": "ALITA",
+        "BEL TI BOUG H.PS. 6 A.": "BEL TI BOUG"
     },
     
     // Charger les données d'une catégorie avec priorité aux classements pondérés
@@ -181,9 +190,28 @@ const rankingLoader = {
         return Promise.all(promises);
     },
     
+    // Fonction pour normaliser un nom avec apostrophe
+    normaliserNomAvecApostrophe(nom) {
+        if (!nom) return "";
+        
+        // Standardiser les apostrophes (remplacer par apostrophe simple)
+        let nomStandard = nom.replace(/['´`']/g, "'");
+        
+        // Si BAK S WOOD, transformer en BAK'S WOOD
+        nomStandard = nomStandard.replace(/\bBAK\s+S\s+WOOD\b/i, "BAK'S WOOD");
+        
+        // Si BAKS WOOD, transformer en BAK'S WOOD
+        nomStandard = nomStandard.replace(/\bBAKS\s+WOOD\b/i, "BAK'S WOOD");
+        
+        return nomStandard;
+    },
+    
     // Fonction pour normaliser et nettoyer un nom (améliorée pour les chevaux et écuries)
     normaliserNom(nom) {
         if (!nom) return "";
+        
+        // Appliquer les corrections pour les apostrophes
+        nom = this.normaliserNomAvecApostrophe(nom);
         
         // Vérifier d'abord la table de correspondance manuelle
         const nomUpper = nom.toUpperCase().trim();
@@ -479,6 +507,9 @@ const rankingLoader = {
             return { score: 0, rang: null, item: null };
         }
         
+        // Standardiser les apostrophes et autres cas spéciaux
+        nom = this.normaliserNomAvecApostrophe(nom);
+        
         // Vérifier d'abord la table de correspondance manuelle
         const nomUpper = nom.toUpperCase().trim();
         if (this.correspondanceManuelle[nomUpper]) {
@@ -660,6 +691,9 @@ const rankingLoader = {
         }
         
         // Pour les chevaux et autres catégories
+        // Standardiser les apostrophes et autres cas spéciaux
+        nom = this.normaliserNomAvecApostrophe(nom);
+        
         // Vérifier d'abord la table de correspondance manuelle
         const nomUpper = (nom || "").toUpperCase().trim();
         if (this.correspondanceManuelle[nomUpper]) {
@@ -718,6 +752,9 @@ const rankingLoader = {
         }
         
         // Pour les autres catégories - utiliser la fonction complète de recherche
+        // Standardiser les apostrophes et autres cas spéciaux
+        nom = this.normaliserNomAvecApostrophe(nom);
+        
         // Vérifier d'abord la table de correspondance manuelle
         const nomUpper = (nom || "").toUpperCase().trim();
         if (this.correspondanceManuelle[nomUpper]) {
