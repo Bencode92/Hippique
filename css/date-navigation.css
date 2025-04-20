@@ -1,0 +1,72 @@
+/* Styles pour la navigation entre les dates */
+
+.date-navigation {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    justify-content: space-between;
+}
+
+.date-nav-button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: rgba(10, 30, 30, 0.5);
+    color: var(--light-gold);
+    border: 1px solid rgba(233, 209, 140, 0.3);
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.date-nav-button:hover {
+    background-color: rgba(22, 62, 60, 0.8);
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(64, 224, 208, 0.2);
+    transform: translateY(-2px);
+}
+
+.date-nav-button.today {
+    background-color: rgba(212, 175, 55, 0.1);
+    color: var(--gold);
+    border-color: rgba(212, 175, 55, 0.4);
+}
+
+.date-nav-button.today:hover {
+    background-color: rgba(212, 175, 55, 0.2);
+    border-color: var(--gold);
+    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}
+
+.date-nav-button i {
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
+}
+
+.date-nav-button:hover i.fa-chevron-left {
+    transform: translateX(-3px);
+}
+
+.date-nav-button:hover i.fa-chevron-right {
+    transform: translateX(3px);
+}
+
+/* Styles responsifs */
+@media (max-width: 768px) {
+    .date-navigation {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .date-nav-button {
+        width: 100%;
+        padding: 0.6rem;
+        font-size: 0.9rem;
+    }
+}
