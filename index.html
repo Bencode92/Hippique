@@ -9,7 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/simulation-inline.css">
-    <link rel="stylesheet" href="css/date-navigation.css">
     <style>
         :root {
             --dark-teal: #0A2E2A;
@@ -431,6 +430,55 @@
 
         .date-button:hover i {
             transform: translateX(5px);
+        }
+        
+        /* Style des boutons pour naviguer entre les dates */
+        .date-navigation {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .nav-date-btn {
+            flex: 1;
+            padding: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        
+        .today-btn {
+            background-color: rgba(212, 175, 55, 0.15);
+            color: var(--gold);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        
+        .yesterday-btn {
+            background-color: rgba(64, 224, 208, 0.15);
+            color: var(--accent);
+            border: 1px solid rgba(64, 224, 208, 0.3);
+        }
+        
+        .nav-date-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .today-btn:hover {
+            background-color: rgba(212, 175, 55, 0.25);
+        }
+        
+        .yesterday-btn:hover {
+            background-color: rgba(64, 224, 208, 0.25);
         }
         
         /* Styles AMÉLIORÉS pour l'affichage des courses */
@@ -939,6 +987,11 @@
                 max-width: 100%;
                 padding: 1rem;
             }
+            
+            .date-navigation {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
         }
         
         /* Style pour les badges de rang */
@@ -1052,6 +1105,15 @@
                     <i class="fas fa-search"></i>
                     <input type="text" id="search-input" placeholder="Rechercher une course ou un hippodrome...">
                     <button class="search-clear" id="search-clear"><i class="fas fa-times"></i></button>
+                </div>
+                
+                <div class="date-navigation">
+                    <button id="yesterdayBtn" class="nav-date-btn yesterday-btn">
+                        <i class="fas fa-chevron-left"></i> Courses d'hier
+                    </button>
+                    <button id="todayBtn" class="nav-date-btn today-btn">
+                        <i class="fas fa-calendar-day"></i> Courses d'aujourd'hui
+                    </button>
                 </div>
                 
                 <button class="date-button" id="date-button">
@@ -1370,6 +1432,8 @@
             const currentDateSpan = document.getElementById('current-date');
             const dateButton = document.getElementById('date-button');
             const dateInput = document.getElementById('date-input');
+            const yesterdayBtn = document.getElementById('yesterdayBtn');
+            const todayBtn = document.getElementById('todayBtn');
             
             // Variable pour stocker les données de courses et l'état de l'application
             let courseData = {};
@@ -1382,6 +1446,31 @@
             
             // Charger les courses pour la date actuelle
             loadCoursesForCurrentDate();
+            
+            // Boutons pour naviguer entre aujourd'hui et hier
+            yesterdayBtn.addEventListener('click', function() {
+                const yesterday = new Date(window.currentDate);
+                yesterday.setDate(yesterday.getDate() - 1);
+                window.currentDate = yesterday;
+                
+                // Mettre à jour l'affichage de la date
+                currentDateSpan.textContent = coursesLoader.getReadableDate(window.currentDate);
+                lastUpdateEl.textContent = coursesLoader.formatDateDMY(window.currentDate);
+                
+                // Recharger les courses
+                loadCoursesForCurrentDate();
+            });
+            
+            todayBtn.addEventListener('click', function() {
+                window.currentDate = new Date();
+                
+                // Mettre à jour l'affichage de la date
+                currentDateSpan.textContent = coursesLoader.getReadableDate(window.currentDate);
+                lastUpdateEl.textContent = coursesLoader.formatDateDMY(window.currentDate);
+                
+                // Recharger les courses
+                loadCoursesForCurrentDate();
+            });
             
             // Fonction pour charger et afficher les top performers pour chaque catégorie
             async function loadTopPerformers() {
@@ -2002,9 +2091,6 @@
     
     <!-- Ajout du nouveau module ranking-loader.js -->
     <script src="js/ranking-loader.js?v=1"></script>
-    
-    <!-- Ajout du module de navigation entre dates -->
-    <script src="js/date-navigation.js?v=1"></script>
     
     <!-- Ajout du nouveau module de simulation intégrée -->
     <script src="js/simulation-inline.js?v=1"></script>
