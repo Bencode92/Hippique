@@ -57,6 +57,173 @@ const rankingLoader = {
         "MAT. DAGUZAN-GARROS": "MR MATHIEU DAGUZAN-GARROS"
     },
     
+    // NOUVELLES FONCTIONS POUR FUZZY MATCHING
+    
+    // Algorithme de distance de Levenshtein pour mesurer la similarité entre deux chaînes
+    levenshteinDistance(a, b) {
+        if (a.length === 0) return b.length;
+        if (b.length === 0) return a.length;
+        
+        const matrix = [];
+        
+        // Initialiser la matrice
+        for (let i = 0; i <= b.length; i++) {
+            matrix[i] = [i];
+        }
+        for (let j = 0; j <= a.length; j++) {
+            matrix[0][j] = j;
+        }
+        
+        // Remplir la matrice
+        for (let i = 1; i <= b.length; i++) {
+            for (let j = 1; j <= a.length; j++) {
+                if (b.charAt(i-1) === a.charAt(j-1)) {
+                    matrix[i][j] = matrix[i-1][j-1];
+                } else {
+                    matrix[i][j] = Math.min(
+                        matrix[i-1][j-1] + 1, // substitution
+                        matrix[i][j-1] + 1,   // insertion
+                        matrix[i-1][j] + 1    // suppression
+                    );
+                }
+            }
+        }
+        
+        return matrix[b.length][a.length];
+    },
+    
+    // Extraire le nom principal (nom de famille) d'une chaîne
+    extractMainName(name) {
+        if (!name) return "";
+        
+        // Nettoyer la chaîne
+        let clean = name.toUpperCase()
+            .replace(/^(MR|MME|MLLE|M|SUC\.|ECURIE)\s+/i, '')
+            .replace(/^([A-Z]+)\.\s+/i, '') // Supprimer les initiales
+            .trim();
+            
+        // Diviser en mots et prendre le dernier pour le nom de famille
+        // Mais tenir compte des noms composés avec tirets ou particules
+        const parts = clean.split(/\s+/);
+        
+        if (parts.length > 1) {
+            // Vérifier les cas spéciaux
+            if (parts.some(p => p.match(/^(DE|DU|DES|LA|LE)$/i))) {
+                // S'il y a une particule, prendre tout après le premier mot (qui est souvent un prénom)
+                return parts.slice(1).join(' ');
+            } else if (parts[parts.length - 1].includes('-')) {
+                // Pour les noms comme "TALHOUET-ROY", prendre la première partie avant le tiret
+                const hyphenParts = parts[parts.length - 1].split('-');
+                return hyphenParts[0];
+            } else {
+                // Sinon, prendre le dernier mot comme nom de famille
+                return parts[parts.length - 1];
+            }
+        }
+        
+        return clean;
+    },
+    
+    // Fonction pour trouver le meilleur match flou
+    findBestFuzzyMatch(input, candidates, categorie, threshold = 0.6) {
+        if (!input || !candidates || candidates.length === 0) return null;
+        
+        // Nettoyer l'entrée
+        const cleanInput = input.toUpperCase().trim();
+        
+        // Extraire le nom principal (probablement le nom de famille)
+        const mainName = this.extractMainName(cleanInput);
+        
+        console.log(`🔍 Fuzzy matching pour "${cleanInput}" - nom principal: "${mainName}"`);
+        
+        let bestMatch = null;
+        let bestScore = 0;
+        let bestSimilarity = 0;
+        
+        // Préfiltrer les candidats qui contiennent au moins partiellement le nom principal
+        // pour éviter de calculer la distance sur tous les candidats (optimisation)
+        let relevantCandidates = candidates;
+        
+        if (mainName.length > 3) {
+            relevantCandidates = candidates.filter(candidate => {
+                const candidateName = (candidate.Nom || candidate.NomPostal || "").toUpperCase();
+                return candidateName.includes(mainName.substring(0, mainName.length > 3 ? 3 : mainName.length));
+            });
+            
+            console.log(`Candidats préfiltrés: ${relevantCandidates.length} (sur ${candidates.length})`);
+            
+            // Si aucun candidat pertinent après préfiltrage, utiliser tous les candidats
+            if (relevantCandidates.length === 0) {
+                relevantCandidates = candidates;
+            }
+        }
+        
+        // Pour les éleveurs et propriétaires: donner plus d'importance aux haras/écuries 
+        // si le nom d'entrée commence par ces mots
+        const isOrganization = cleanInput.startsWith('ECURIE') || 
+                               cleanInput.startsWith('HARAS') || 
+                               cleanInput.startsWith('STUD') ||
+                               cleanInput.startsWith('ELEVAGE');
+                               
+        // Parcourir tous les candidats pertinents
+        relevantCandidates.forEach(candidate => {
+            const candidateName = (candidate.Nom || candidate.NomPostal || "").toUpperCase();
+            const candidateMainName = this.extractMainName(candidateName);
+            
+            // Calculer la similarité primaire avec les noms principaux
+            const mainNameMaxLength = Math.max(mainName.length, candidateMainName.length);
+            const mainNameDistance = this.levenshteinDistance(mainName, candidateMainName);
+            const mainNameSimilarity = mainNameMaxLength > 0 ? 
+                                      (mainNameMaxLength - mainNameDistance) / mainNameMaxLength : 0;
+            
+            // Calculer la similarité globale
+            const maxLength = Math.max(cleanInput.length, candidateName.length);
+            const distance = this.levenshteinDistance(cleanInput, candidateName);
+            const similarity = maxLength > 0 ? (maxLength - distance) / maxLength : 0;
+            
+            // Score combiné
+            let score = (mainNameSimilarity * 0.7) + (similarity * 0.3);
+            
+            // Bonus pour les correspondances exactes du nom principal
+            if (candidateMainName === mainName) {
+                score += 0.2;
+            }
+            
+            // Bonus/malus pour les organisations
+            if (isOrganization) {
+                if (candidateName.startsWith('ECURIE') || 
+                    candidateName.startsWith('HARAS') || 
+                    candidateName.startsWith('STUD') ||
+                    candidateName.startsWith('ELEVAGE')) {
+                    score += 0.15; // Bonus pour org-to-org match
+                } else {
+                    score -= 0.1; // Malus pour org-to-person mismatch
+                }
+            }
+            
+            // Threshold minimum
+            if (score > bestScore && score >= threshold) {
+                bestScore = score;
+                bestSimilarity = similarity;
+                bestMatch = candidate;
+            }
+        });
+        
+        if (bestMatch) {
+            console.log(`✅ Meilleur match fuzzy: "${bestMatch.Nom || bestMatch.NomPostal}" (score: ${bestScore.toFixed(2)}, similarité: ${bestSimilarity.toFixed(2)})`);
+            return {
+                score: 0, // Score 0 pour la compatibilité avec le système existant
+                rang: bestMatch.Rang,
+                similarite: bestScore * 100,
+                nomTrouve: bestMatch.Nom || bestMatch.NomPostal,
+                item: bestMatch
+            };
+        }
+        
+        console.log(`❌ Aucun match fuzzy trouvé pour "${cleanInput}" (seuil: ${threshold})`);
+        return null;
+    },
+    
     // Charger les données d'une catégorie avec priorité aux classements pondérés
     async loadCategoryData(category) {
         if (this.data[category]) {
@@ -624,6 +791,45 @@ const rankingLoader = {
         // Normaliser le nom avec l'initiale et nettoyer les ellipses
         const nomNormalise = this.normaliserNom(nomAvecInitiale);
         
+        // Vérifier d'abord la table de correspondance manuelle
+        const nomUpper = nomAvecInitiale.toUpperCase().trim();
+        if (this.correspondanceManuelle[nomUpper]) {
+            const nomCorrespondance = this.correspondanceManuelle[nomUpper];
+            console.log(`Correspondance manuelle trouvée: "${nomUpper}" -> "${nomCorrespondance}"`);
+            
+            // Rechercher la correspondance dans les données de classement
+            for (const item of donneesClassement) {
+                const nomItem = item.Nom || item.NomPostal || "";
+                if (this.normaliserNom(nomItem) === this.normaliserNom(nomCorrespondance)) {
+                    return {
+                        score: 0,
+                        rang: item.Rang,
+                        similarite: 100,
+                        item: item
+                    };
+                }
+            }
+        }
+        
+        // Vérifier aussi dans les correspondances découvertes
+        if (this.correspondancesDecouvertes[nomUpper]) {
+            const nomCorrespondance = this.correspondancesDecouvertes[nomUpper];
+            console.log(`Correspondance découverte précédemment: "${nomUpper}" -> "${nomCorrespondance}"`);
+            
+            // Rechercher la correspondance dans les données de classement
+            for (const item of donneesClassement) {
+                const nomItem = item.Nom || item.NomPostal || "";
+                if (this.normaliserNom(nomItem) === this.normaliserNom(nomCorrespondance)) {
+                    return {
+                        score: 0,
+                        rang: item.Rang,
+                        similarite: 100,
+                        item: item
+                    };
+                }
+            }
+        }
+        
         // *** NOUVEAU CODE POUR STEMPNIAK ***
         // Cas spécifique pour S.STEMPNIAK -> ECURIES SERGE STEMPNIAK
         if (nomAvecInitiale.match(/^S\.STEMPNIAK$/i) || nomAvecInitiale.match(/^S\s*STEMPNIAK$/i)) {
@@ -691,6 +897,18 @@ const rankingLoader = {
                 console.log(`🏆 Correspondance par initiale trouvée: "${nomAvecInitiale}" → "${resultatInitiale.nomTrouve}"`);
                 return resultatInitiale;
             }
+        }
+        
+        // NOUVELLE FONCTIONNALITÉ: fuzzy matching pour les propriétaires et éleveurs
+        // Application du fuzzy matching avec un seuil de 0.62 (62% de similarité)
+        const fuzzyResult = this.findBestFuzzyMatch(nomAvecInitiale, donneesClassement, categorie, 0.62);
+        if (fuzzyResult) {
+            console.log(`🧩 Correspondance par fuzzy matching trouvée: "${nomAvecInitiale}" → "${fuzzyResult.nomTrouve}" (similarité: ${fuzzyResult.similarite.toFixed(1)}%)`);
+            
+            // Mémoriser cette correspondance pour les recherches futures
+            this.correspondancesDecouvertes[nomAvecInitiale.toUpperCase().trim()] = fuzzyResult.nomTrouve;
+            
+            return fuzzyResult;
         }
         
         // Vérifier si c'est une écurie avec préfixe EC. ou ECURIE/ECURIES
