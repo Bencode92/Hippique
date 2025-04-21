@@ -53,7 +53,8 @@ const rankingLoader = {
         "JP. CAYROUZE": "MR JEAN-PAUL CAYROUZE",
         "JP.CAYROUZE": "MR JEAN-PAUL CAYROUZE",
         "J.P. CAYROUZE": "MR JEAN-PAUL CAYROUZE",
-        "HATIM H.PS. 4 a.": "HATIM"
+        "HATIM H.PS. 4 a.": "HATIM",
+        "MAT. DAGUZAN-GARROS": "MR MATHIEU DAGUZAN-GARROS"
     },
     
     // Charger les données d'une catégorie avec priorité aux classements pondérés
@@ -492,6 +493,122 @@ const rankingLoader = {
         
         return sortedData;
     },
+
+    // NOUVELLE FONCTION: Chercher un éleveur/personne avec initiale de prénom
+    chercherPersonneAvecInitiale(nomAvecInitiale, donneesClassement) {
+        // Capture les formats comme "MAT. DURAND", "M. DURAND", "JPJ. DUBOIS", "AT. AL-MEHSHADI"
+        const match = nomAvecInitiale.match(/^([A-Z]+)\.?\s*(.+?)(?:\s+\([^)]+\))?$/i);
+        if (!match) return null;
+
+        const initialePrenom = match[1].toUpperCase(); // ex: MAT, AT
+        const nomFamille = match[2].toUpperCase();     // ex: DURAND, AL-MEHSHADI
+
+        console.log(`🔎 Recherche personne: initiale="${initialePrenom}" et nom="${nomFamille}"`);
+
+        // Filtrer les candidats potentiels par nom de famille
+        const candidats = donneesClassement.filter(entry => {
+            const nomComplet = (entry.Nom || entry.NomPostal || "").toUpperCase();
+            
+            // Pour les noms composés comme "AL-MEHSHADI"
+            if (nomFamille.includes('-')) {
+                const partiesNom = nomFamille.split('-');
+                // Si toutes les parties du nom sont incluses dans le nom complet
+                return partiesNom.every(partie => nomComplet.includes(partie));
+            }
+            
+            return nomComplet.includes(nomFamille);
+        });
+
+        if (candidats.length === 0) {
+            console.log(`⚠️ Aucune personne trouvée avec le nom "${nomFamille}"`);
+            return null;
+        }
+
+        console.log(`📊 ${candidats.length} personnes potentielles trouvées avec le nom "${nomFamille}"`);
+
+        // Cas spécial pour les haras et écuries
+        const candidatsOrganisation = candidats.filter(entry => {
+            const nomComplet = (entry.Nom || entry.NomPostal || "").toUpperCase();
+            return nomComplet.includes("HARAS") || nomComplet.includes("ELEVAGE") || 
+                nomComplet.includes("STUD") || nomComplet.includes("BREEDING") ||
+                nomComplet.includes("ECURIE");
+        });
+        
+        // Si on a des organisations dans les candidats et que ce n'est pas une personne, privilégier les organisations
+        if (candidatsOrganisation.length > 0 && !nomAvecInitiale.toUpperCase().includes("MR") && 
+            !nomAvecInitiale.toUpperCase().includes("MME")) {
+            // Trier par rang et prendre le meilleur
+            const meilleure = candidatsOrganisation.sort((a, b) => 
+                parseInt(a.Rang || 999) - parseInt(b.Rang || 999))[0];
+            
+            console.log(`✅ Organisation trouvée: "${meilleure.Nom || meilleure.NomPostal}"`);
+            return {
+                score: 0,
+                rang: meilleure.Rang,
+                nomTrouve: meilleure.Nom || meilleure.NomPostal,
+                item: meilleure
+            };
+        }
+
+        // Parmi les candidats, trouver celui dont le prénom commence par l'initiale
+        for (const candidat of candidats) {
+            const nomComplet = (candidat.Nom || candidat.NomPostal || "").toUpperCase();
+            
+            // Extraire le prénom - cas complexe avec différents formats possibles
+            const mots = nomComplet.split(/\s+/);
+            let prenom = "";
+            
+            // Traiter les cas où le premier élément est MR, MME, M., etc.
+            let startIndex = 0;
+            if (mots[0] === "MR" || mots[0] === "MME" || mots[0] === "MLLE" || mots[0] === "M") {
+                startIndex = 1;
+            }
+            
+            // Vérifier s'il reste des mots pour le prénom
+            if (mots.length <= startIndex) continue;
+            
+            // Prendre le prénom (potentiellement composé)
+            prenom = mots[startIndex];
+            
+            // Si c'est un prénom composé (avec tiret)
+            if (prenom.includes('-')) {
+                // Pour les noms arabes comme "AL-MEHSHADI", considérer le nom complet
+                if (prenom.startsWith("AL-")) {
+                    prenom = prenom;
+                } else {
+                    // Sinon prendre la première partie pour l'initiale
+                    prenom = prenom.split('-')[0];
+                }
+            }
+            
+            // Vérifier si le prénom commence par l'initiale
+            if (prenom.startsWith(initialePrenom)) {
+                console.log(`✅ Personne trouvée: "${nomComplet}" (prénom "${prenom}" commence par "${initialePrenom}")`);
+                return {
+                    score: 0,
+                    rang: candidat.Rang,
+                    nomTrouve: nomComplet,
+                    item: candidat
+                };
+            }
+        }
+
+        // Si on n'a pas trouvé par prénom, prendre le meilleur rang
+        if (candidats.length > 0) {
+            const meilleurCandidat = candidats.sort((a, b) => 
+                parseInt(a.Rang || 999) - parseInt(b.Rang || 999))[0];
+            
+            console.log(`⚠️ Aucune personne avec prénom correspondant trouvé, utilisation du meilleur rang: "${meilleurCandidat.Nom || meilleurCandidat.NomPostal}"`);
+            return {
+                score: 0,
+                rang: meilleurCandidat.Rang,
+                nomTrouve: meilleurCandidat.Nom || meilleurCandidat.NomPostal,
+                item: meilleurCandidat
+            };
+        }
+
+        return null;
+    },
     
     // Fonction spéciale améliorée pour les éleveurs et propriétaires avec initiales
     trouverPersonneParInitiale(donneesClassement, nomAvecInitiale, categorie) {
@@ -564,6 +681,18 @@ const rankingLoader = {
             }
         }
         
+        // NOUVELLE FONCTIONNALITÉ: détection automatique des abréviations de prénom
+        // Vérifier si le format correspond à une abréviation de prénom: "MAT. DAGUZAN-GARROS"
+        if (nomAvecInitiale.match(/^[A-Z]+\.\s*.+$/i)) {
+            const resultatInitiale = this.chercherPersonneAvecInitiale(nomAvecInitiale, donneesClassement);
+            if (resultatInitiale) {
+                // Mémoriser cette correspondance pour les recherches futures
+                this.correspondancesDecouvertes[nomAvecInitiale.toUpperCase().trim()] = resultatInitiale.nomTrouve;
+                console.log(`🏆 Correspondance par initiale trouvée: "${nomAvecInitiale}" → "${resultatInitiale.nomTrouve}"`);
+                return resultatInitiale;
+            }
+        }
+        
         // Vérifier si c'est une écurie avec préfixe EC. ou ECURIE/ECURIES
         if (nomNormalise.startsWith('ECURIE') || nomAvecInitiale.toUpperCase().startsWith('EC.')) {
             // Recherche d'écurie - traitement spécial
@@ -628,7 +757,8 @@ const rankingLoader = {
                 "A": ["ALAIN", "ANDRE", "ANTOINE"],
                 "D": ["DANIEL", "DENIS", "DIDIER"],
                 "C": ["CHRISTIAN", "CHRISTOPHE", "CLAUDE"],
-                "G": ["GERARD", "GILBERT", "GUILLAUME"] // Ajout de G pour G.AUGU
+                "G": ["GERARD", "GILBERT", "GUILLAUME"], // Ajout de G pour G.AUGU
+                "MAT": ["MATHIEU", "MATTHIEU"]  // Ajout de MAT pour MAT. DAGUZAN-GARROS
             };
             
             // Rechercher les correspondances potentielles
@@ -682,7 +812,7 @@ const rankingLoader = {
         }
         
         // Format traditionnel avec l'expression régulière originale
-        const match = nomNormalise.match(/^(MME|MR|M)?\s*([A-Z])\.?\s*([A-Z\s]+)$/i);
+        const match = nomNormalise.match(/^(MME|MR|M)?\\s*([A-Z])\\.?\\s*([A-Z\\s]+)$/i);
         
         if (match) {
             const prefixe = match[1] ? match[1].toUpperCase() : '';
@@ -696,7 +826,7 @@ const rankingLoader = {
                 const nomComplet = this.normaliserNom(item.Nom || item.NomPostal || "");
                 
                 // Extraire le préfixe, le prénom et le nom de famille du nom complet
-                const matchComplet = nomComplet.match(/^(MME|MR|M)?\s*([A-Z]+)(?:\s+([A-Z\s]+))?$/i);
+                const matchComplet = nomComplet.match(/^(MME|MR|M)?\\s*([A-Z]+)(?:\\s+([A-Z\\s]+))?$/i);
                 
                 if (!matchComplet) return false;
                 
@@ -1365,7 +1495,9 @@ const rankingLoader = {
         
         resultatsTries.forEach((resultat, index) => {
             const score = parseFloat(resultat.scorePredictif.score);
-            if (index > 0 && score !== scorePrec) {
+            
+            // Si nouveau score, incrémenter le rang distinct
+            if (index === 0 || Math.abs(score - scorePrec) > 0.001) {
                 rang = index + 1; // Nouveau rang si le score est différent
             }
             resultat.rang = rang;
