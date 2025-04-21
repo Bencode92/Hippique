@@ -54,7 +54,27 @@ const rankingLoader = {
         "JP.CAYROUZE": "MR JEAN-PAUL CAYROUZE",
         "J.P. CAYROUZE": "MR JEAN-PAUL CAYROUZE",
         "HATIM H.PS. 4 a.": "HATIM",
-        "MAT. DAGUZAN-GARROS": "MR MATHIEU DAGUZAN-GARROS"
+        "MAT. DAGUZAN-GARROS": "MR MATHIEU DAGUZAN-GARROS",
+        
+        // Nouvelles entrées pour les propriétaires/éleveurs des captures d'écran
+        "ECURIE JEAN-LOUIS BO...": "ECURIE JEAN-LOUIS BOUCHARD",
+        "ECURIE JEAN-LOUIS BO": "ECURIE JEAN-LOUIS BOUCHARD",
+        "E. LEMAITRE": "MME LISA LEMIERE DUBOIS",
+        "E.LEMAITRE": "MME LISA LEMIERE DUBOIS",
+        "SUC. S.A. AGA KHAN": "SUCCESSION AGA KHAN",
+        "SUC.S.A. AGA KHAN": "SUCCESSION AGA KHAN",
+        "SUC S.A. AGA KHAN": "SUCCESSION AGA KHAN",
+        "PAT. CHEDEVILLE": "PATRICK CHEDEVILLE",
+        "PAT.CHEDEVILLE": "PATRICK CHEDEVILLE",
+        "PAT CHEDEVILLE": "PATRICK CHEDEVILLE",
+        "MME K. MORICE": "MME KARINE MORICE",
+        "MME K.MORICE": "MME KARINE MORICE",
+        "JPJ. DUBOIS": "MR JEAN-PIERRE-JOSEPH DUBOIS",
+        "JPJ.DUBOIS": "MR JEAN-PIERRE-JOSEPH DUBOIS",
+        "T.DE LA HERONNIERE": "THIERRY DE LA HERONNIERE",
+        "T. DE LA HERONNIERE": "THIERRY DE LA HERONNIERE",
+        "ECURIE ARTU SNC": "ECURIE ARTU",
+        "D. BOUQ...": "DOMINIQUE BOUQUETOT"
     },
     
     // NOUVELLES FONCTIONS POUR FUZZY MATCHING
@@ -125,11 +145,33 @@ const rankingLoader = {
     },
     
     // Fonction pour trouver le meilleur match flou
-    findBestFuzzyMatch(input, candidates, categorie, threshold = 0.6) {
+    findBestFuzzyMatch(input, candidates, categorie, threshold = 0.58) { // Seuil abaissé pour plus de résultats
         if (!input || !candidates || candidates.length === 0) return null;
         
-        // Nettoyer l'entrée
-        const cleanInput = input.toUpperCase().trim();
+        // Nettoyer l'entrée et gérer les noms tronqués
+        let cleanInput = input.toUpperCase().trim();
+        cleanInput = cleanInput.replace(/\s*\.\.\.$/g, ""); // supprimer les ellipses en fin de chaîne
+        
+        // Gérer les noms tronqués (se terminant par ...) ou abrégés (comme "BO...")
+        if (cleanInput.includes('...')) {
+            const basePart = cleanInput.split('...')[0].trim();
+            console.log(`🔍 Nom tronqué détecté: "${input}" -> base: "${basePart}"`);
+            
+            // Rechercher des candidats dont le début correspond à cette base
+            for (const candidate of candidates) {
+                const candidateName = (candidate.Nom || candidate.NomPostal || "").toUpperCase();
+                if (candidateName.startsWith(basePart)) {
+                    console.log(`✅ Correspondance pour nom tronqué: "${candidateName}"`);
+                    return {
+                        score: 0,
+                        rang: candidate.Rang,
+                        similarite: 95,
+                        nomTrouve: candidate.Nom || candidate.NomPostal,
+                        item: candidate
+                    };
+                }
+            }
+        }
         
         // Extraire le nom principal (probablement le nom de famille)
         const mainName = this.extractMainName(cleanInput);
@@ -144,10 +186,10 @@ const rankingLoader = {
         // pour éviter de calculer la distance sur tous les candidats (optimisation)
         let relevantCandidates = candidates;
         
-        if (mainName.length > 3) {
+        if (mainName.length > 2) {
             relevantCandidates = candidates.filter(candidate => {
                 const candidateName = (candidate.Nom || candidate.NomPostal || "").toUpperCase();
-                return candidateName.includes(mainName.substring(0, mainName.length > 3 ? 3 : mainName.length));
+                return candidateName.includes(mainName.substring(0, Math.min(mainName.length, 3)));
             });
             
             console.log(`Candidats préfiltrés: ${relevantCandidates.length} (sur ${candidates.length})`);
@@ -189,6 +231,18 @@ const rankingLoader = {
                 score += 0.2;
             }
             
+            // Vérifier si le nom principal est contenu dans le nom du candidat
+            if (candidateName.includes(mainName) && mainName.length > 2) {
+                score += 0.15;
+                console.log(`Bonus inclusion: ${candidateName} contient ${mainName}`);
+            }
+            
+            // Vérifier les débuts de noms (particulièrement utile pour les noms tronqués)
+            if (cleanInput.length > 3 && candidateName.startsWith(cleanInput.substring(0, cleanInput.length - 1))) {
+                score += 0.15;
+                console.log(`Bonus préfixe: ${candidateName} commence par ${cleanInput.substring(0, cleanInput.length - 1)}`);
+            }
+            
             // Bonus/malus pour les organisations
             if (isOrganization) {
                 if (candidateName.startsWith('ECURIE') || 
@@ -198,6 +252,22 @@ const rankingLoader = {
                     score += 0.15; // Bonus pour org-to-org match
                 } else {
                     score -= 0.1; // Malus pour org-to-person mismatch
+                }
+            }
+            
+            // Traitement spécial pour les successions (SUC.)
+            if (cleanInput.startsWith('SUC.') || cleanInput.startsWith('SUC ')) {
+                if (candidateName.includes('SUCCESSION') || candidateName.includes('SUC.')) {
+                    score += 0.2; // Bonus important pour les successions
+                }
+            }
+            
+            // Traitement des abréviations comme "PAT." pour "PATRICK"
+            if (cleanInput.match(/^([A-Z]{2,3})\./)) {
+                const abrev = RegExp.$1;
+                if (candidateName.startsWith(abrev)) {
+                    score += 0.15;
+                    console.log(`Bonus abréviation: ${abrev} -> ${candidateName}`);
                 }
             }
             
@@ -900,8 +970,8 @@ const rankingLoader = {
         }
         
         // NOUVELLE FONCTIONNALITÉ: fuzzy matching pour les propriétaires et éleveurs
-        // Application du fuzzy matching avec un seuil de 0.62 (62% de similarité)
-        const fuzzyResult = this.findBestFuzzyMatch(nomAvecInitiale, donneesClassement, categorie, 0.62);
+        // Application du fuzzy matching avec un seuil de 0.58 (58% de similarité) - abaissé pour plus de résultats
+        const fuzzyResult = this.findBestFuzzyMatch(nomAvecInitiale, donneesClassement, categorie, 0.58);
         if (fuzzyResult) {
             console.log(`🧩 Correspondance par fuzzy matching trouvée: "${nomAvecInitiale}" → "${fuzzyResult.nomTrouve}" (similarité: ${fuzzyResult.similarite.toFixed(1)}%)`);
             
@@ -976,7 +1046,11 @@ const rankingLoader = {
                 "D": ["DANIEL", "DENIS", "DIDIER"],
                 "C": ["CHRISTIAN", "CHRISTOPHE", "CLAUDE"],
                 "G": ["GERARD", "GILBERT", "GUILLAUME"], // Ajout de G pour G.AUGU
-                "MAT": ["MATHIEU", "MATTHIEU"]  // Ajout de MAT pour MAT. DAGUZAN-GARROS
+                "MAT": ["MATHIEU", "MATTHIEU"],  // Ajout de MAT pour MAT. DAGUZAN-GARROS
+                "E": ["ERIC", "EMMANUEL", "ETIENNE"],  // Ajout pour E. LEMAITRE
+                "T": ["THIERRY", "THOMAS", "TONY"],     // Ajout pour T.DE LA HERONNIERE
+                "JPJ": ["JEAN-PIERRE-JOSEPH", "JEAN PIERRE JOSEPH"], // Ajout pour JPJ. DUBOIS
+                "PAT": ["PATRICK", "PATRICIA"]         // Ajout pour PAT. CHEDEVILLE
             };
             
             // Rechercher les correspondances potentielles
