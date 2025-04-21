@@ -48,6 +48,8 @@ const rankingLoader = {
         // Nouveaux cas spéciaux pour propriétaires/éleveurs avec initiales
         "S.STEMPNIAK": "ECURIES SERGE STEMPNIAK",
         "S. STEMPNIAK": "ECURIES SERGE STEMPNIAK",
+        "G.AUGU": "GERARD AUGUSTIN-NORMAND", // Nouveau: correspondance pour G.AUGU
+        "G. AUGU": "GERARD AUGUSTIN-NORMAND", // Nouveau: avec espace
         "JP. CAYROUZE": "MR JEAN-PAUL CAYROUZE",
         "JP.CAYROUZE": "MR JEAN-PAUL CAYROUZE",
         "J.P. CAYROUZE": "MR JEAN-PAUL CAYROUZE",
@@ -221,6 +223,14 @@ const rankingLoader = {
         return nom;
     },
     
+    // Fonction pour nettoyer les noms tronqués avec "..."
+    nettoyerNomTronque(nom) {
+        if (!nom) return "";
+        
+        // Nettoyer les ellipses en fin de chaîne
+        return nom.replace(/\s*\.\.\.$/g, "").trim();
+    },
+    
     // Fonction pour normaliser un nom avec apostrophe
     normaliserNomAvecApostrophe(nom) {
         if (!nom) return "";
@@ -249,6 +259,9 @@ const rankingLoader = {
     // Fonction pour normaliser et nettoyer un nom (améliorée pour les chevaux et écuries)
     normaliserNom(nom) {
         if (!nom) return "";
+        
+        // Nettoyer les noms tronqués (avec ...)
+        nom = this.nettoyerNomTronque(nom);
         
         // Appliquer les corrections pour les apostrophes
         nom = this.normaliserNomAvecApostrophe(nom);
@@ -491,7 +504,7 @@ const rankingLoader = {
             return this.trouverMeilleurScore(donneesClassement, nomAvecInitiale);
         }
         
-        // Normaliser le nom avec l'initiale
+        // Normaliser le nom avec l'initiale et nettoyer les ellipses
         const nomNormalise = this.normaliserNom(nomAvecInitiale);
         
         // *** NOUVEAU CODE POUR STEMPNIAK ***
@@ -514,6 +527,34 @@ const rankingLoader = {
                 }, correspondancesEcurie[0]);
                 
                 console.log(`Correspondance écurie spéciale trouvée: ${meilleure.Nom || meilleure.NomPostal}`);
+                return {
+                    score: 0,
+                    rang: meilleure.Rang,
+                    nomTrouve: meilleure.Nom || meilleure.NomPostal,
+                    item: meilleure
+                };
+            }
+        }
+        
+        // *** NOUVEAU POUR G.AUGU -> GERARD AUGUSTIN-NORMAND ***
+        if (nomAvecInitiale.match(/^G\.AUGU/i) || nomAvecInitiale.match(/^G\s*AUGU/i)) {
+            console.log("Cas spécial détecté: G.AUGU -> GERARD AUGUSTIN-NORMAND");
+            
+            // Rechercher spécifiquement AUGUSTIN-NORMAND dans les données
+            const correspondancesPersonne = donneesClassement.filter(item => {
+                const nomItem = (item.Nom || item.NomPostal || "").toUpperCase();
+                return nomItem.includes('AUGUSTIN') || nomItem.includes('NORMAND');
+            });
+            
+            if (correspondancesPersonne.length > 0) {
+                // Trier par rang pour prendre le meilleur
+                const meilleure = correspondancesPersonne.reduce((best, current) => {
+                    const rangCurrent = parseInt(current.Rang) || 999;
+                    const rangBest = parseInt(best.Rang) || 999;
+                    return rangCurrent < rangBest ? current : best;
+                }, correspondancesPersonne[0]);
+                
+                console.log(`Correspondance spéciale G.AUGU trouvée: ${meilleure.Nom || meilleure.NomPostal}`);
                 return {
                     score: 0,
                     rang: meilleure.Rang,
@@ -586,7 +627,8 @@ const rankingLoader = {
                 "P": ["PIERRE", "PATRICK", "PHILIPPE"],
                 "A": ["ALAIN", "ANDRE", "ANTOINE"],
                 "D": ["DANIEL", "DENIS", "DIDIER"],
-                "C": ["CHRISTIAN", "CHRISTOPHE", "CLAUDE"]
+                "C": ["CHRISTIAN", "CHRISTOPHE", "CLAUDE"],
+                "G": ["GERARD", "GILBERT", "GUILLAUME"] // Ajout de G pour G.AUGU
             };
             
             // Rechercher les correspondances potentielles
@@ -701,6 +743,9 @@ const rankingLoader = {
         if (!nom || !donneesClassement || !donneesClassement.length) {
             return { score: 0, rang: null, item: null };
         }
+        
+        // Nettoyer les noms tronqués (avec ...)
+        nom = this.nettoyerNomTronque(nom);
         
         // Standardiser les apostrophes et autres cas spéciaux
         nom = this.normaliserNomAvecApostrophe(nom);
@@ -922,14 +967,21 @@ const rankingLoader = {
         // Pour les éleveurs et propriétaires qui peuvent être multiples
         if (categorie === 'eleveurs' || categorie === 'proprietaires') {
             // Si c'est une chaîne, la diviser sur les virgules et autres séparateurs
-            // AMÉLIORÉ: meilleure prise en charge des séparateurs
-            const noms = typeof nom === 'string' 
-                ? nom.split(/\s*[,&\/+]\s*|\s+et\s+|\s+and\s+/i).filter(n => n.trim())
-                : [nom];
+            // AMÉLIORÉ: meilleure prise en charge des séparateurs et nettoyage de l'ellipse finale
+            let noms = [];
+            if (typeof nom === 'string') {
+                // Nettoyer d'abord l'ellipse en fin de chaîne s'il y en a une
+                const nomSansEllipse = this.nettoyerNomTronque(nom);
+                noms = nomSansEllipse.split(/\s*[,&\/+]\s*|\s+et\s+|\s+and\s+/i).filter(n => n.trim());
+            } else {
+                noms = [nom];
+            }
             
             if (noms.length === 0 || !noms[0]) {
                 return null;
             }
+            
+            console.log(`Propriétaire/éleveur séparé en ${noms.length} noms individuels:`, noms);
             
             // Chercher le meilleur item parmi tous les noms
             let meilleurItem = null;
@@ -995,14 +1047,21 @@ const rankingLoader = {
         // Pour les éleveurs et propriétaires qui peuvent être multiples
         if (categorie === 'eleveurs' || categorie === 'proprietaires') {
             // Si c'est une chaîne, la diviser sur les virgules et autres séparateurs
-            // AMÉLIORÉ: meilleure prise en charge des séparateurs
-            const noms = typeof nom === 'string' 
-                ? nom.split(/\s*[,&\/+]\s*|\s+et\s+|\s+and\s+/i).filter(n => n.trim())
-                : [nom];
+            // AMÉLIORÉ: meilleure prise en charge des séparateurs et nettoyage de l'ellipse finale
+            let noms = [];
+            if (typeof nom === 'string') {
+                // Nettoyer d'abord l'ellipse en fin de chaîne s'il y en a une
+                const nomSansEllipse = this.nettoyerNomTronque(nom);
+                noms = nomSansEllipse.split(/\s*[,&\/+]\s*|\s+et\s+|\s+and\s+/i).filter(n => n.trim());
+            } else {
+                noms = [nom];
+            }
             
             if (noms.length === 0 || !noms[0]) {
                 return null;
             }
+            
+            console.log(`Propriétaire/éleveur séparé en ${noms.length} noms individuels:`, noms);
             
             // Chercher le meilleur rang parmi tous les noms
             let meilleurRang = null;
@@ -1051,10 +1110,15 @@ const rankingLoader = {
     // Calculer le score moyen pour une liste de noms (propriétaires, éleveurs)
     calculerScoreMoyen(donneesClassement, listeNoms, categorie) {
         // Si c'est une chaîne, la diviser sur les virgules et autres séparateurs possibles
-        // AMÉLIORÉ: meilleure prise en charge des séparateurs
-        const noms = typeof listeNoms === 'string' 
-            ? listeNoms.split(/\s*[,&\/+]\s*|\s+et\s+|\s+and\s+/i).filter(n => n.trim())
-            : [listeNoms];
+        // AMÉLIORÉ: meilleure prise en charge des séparateurs et nettoyage de l'ellipse finale
+        let noms = [];
+        if (typeof listeNoms === 'string') {
+            // Nettoyer d'abord l'ellipse en fin de chaîne s'il y en a une
+            const nomSansEllipse = this.nettoyerNomTronque(listeNoms);
+            noms = nomSansEllipse.split(/\s*[,&\/+]\s*|\s+et\s+|\s+and\s+/i).filter(n => n.trim());
+        } else {
+            noms = [listeNoms];
+        }
         
         if (noms.length === 0 || !noms[0]) {
             return { rang: null };
