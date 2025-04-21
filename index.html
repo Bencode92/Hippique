@@ -1722,288 +1722,127 @@
                 // Vérifier si les détails sont déjà affichés
                 let detailsElement = document.getElementById(detailId);
                 
-                // Si la section de détails n'existe pas, la créer
-                if (!detailsElement) {
-                    // Fermer d'abord la section active si elle existe
-                    if (activeDetailSection) {
-                        activeDetailSection.classList.remove('visible');
+                // Fermer d'abord la section active si elle existe, quelle que soit la section que l'on va ouvrir
+                if (activeDetailSection) {
+                    activeDetailSection.classList.remove('visible');
+                    
+                    // Attendre que l'animation de fermeture soit terminée avant de continuer
+                    await new Promise(resolve => {
                         setTimeout(() => {
-                            if (activeDetailSection.parentNode) {
+                            if (activeDetailSection && activeDetailSection.parentNode) {
                                 activeDetailSection.parentNode.removeChild(activeDetailSection);
                             }
-                        }, 300);
-                    }
-                    
-                    // Créer la nouvelle section de détails
-                    detailsElement = document.createElement('div');
-                    detailsElement.id = detailId;
-                    detailsElement.className = 'course-details';
-                    
-                    // Préparer le contenu des détails
-                    const participantsCount = course.participants && Array.isArray(course.participants) ? course.participants.length : 0;
-                    
-                    detailsElement.innerHTML = `
-                        <div class="course-details-title">
-                            ${course.nom || ""}
-                            <span class="close-details">&times;</span>
-                        </div>
-                        
-                        <div class="course-info-grid">
-                            <div class="info-item">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <div class="info-label">Hippodrome</div>
-                                <div class="info-value">${hippodrome}</div>
-                            </div>
-                            <div class="info-item">
-                                <i class="fas fa-clock"></i>
-                                <div class="info-label">Horaire</div>
-                                <div class="info-value">${course.horaire || ""}</div>
-                            </div>
-                            <div class="info-item">
-                                <i class="fas fa-calendar-alt"></i>
-                                <div class="info-label">Date</div>
-                                <div class="info-value">${coursesLoader.formatDateDMY(window.currentDate)}</div>
-                            </div>
-                            <div class="info-item">
-                                <i class="fas fa-users"></i>
-                                <div class="info-label">Participants</div>
-                                <div class="info-value">${participantsCount}</div>
-                            </div>
-                            <div class="info-item">
-                                <i class="fas fa-running"></i>
-                                <div class="info-label">Type</div>
-                                <div class="info-value">${course.type || "Plat"}</div>
-                            </div>
-                        </div>
-                        
-                        <h3 class="participants-title">Liste des participants</h3>
-                        
-                        <div class="table-responsive">
-                            <table class="participants-table">
-                                <thead>
-                                    <tr>
-                                        <th>N°</th>
-                                        <th>Cheval</th>
-                                        <th>Jockey</th>
-                                        <th>Entraîneur</th>
-                                        <th>Propriétaire</th>
-                                        <th>Éleveurs</th>
-                                        <th>Poids</th>
-                                        <th>Score prédictif</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="participants-${detailId}">
-                                    <tr>
-                                        <td colspan="8" class="loading-indicator">
-                                            <i class="fas fa-spinner fa-spin"></i> Calcul des scores prédictifs...
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        
-                        <div class="action-buttons">
-                            <button class="action-btn primary" id="sort-by-score-${detailId}">
-                                <i class="fas fa-sort-amount-down"></i> Trier par score prédictif
-                            </button>
-                            <button class="action-btn secondary" id="simulate-bets-${detailId}">
-                                <i class="fas fa-calculator"></i> Simuler des paris sur cette course
-                            </button>
-                        </div>
-                    `;
-                    
-                    // Trouver la grille contenant la carte
-                    const gridContainer = courseCard.parentNode;
-                    
-                    // Insérer les détails après la dernière carte ou après la carte cliquée
-                    gridContainer.appendChild(detailsElement);
-                    
-                    // Animation pour afficher la section
-                    setTimeout(() => {
-                        detailsElement.classList.add('visible');
-                    }, 10);
-                    
-                    // Mettre à jour la section active
-                    activeDetailSection = detailsElement;
-                    
-                    // Faire défiler vers la section visible
-                    setTimeout(() => {
-                        detailsElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }, 100);
-                    
-                    // Ajouter l'événement pour fermer les détails
-                    detailsElement.querySelector('.close-details').addEventListener('click', function(event) {
-                        event.stopPropagation();
-                        detailsElement.classList.remove('visible');
-                        setTimeout(() => {
-                            if (detailsElement.parentNode) {
-                                detailsElement.parentNode.removeChild(detailsElement);
-                                activeDetailSection = null;
-                            }
+                            activeDetailSection = null;
+                            resolve();
                         }, 300);
                     });
+                }
+                
+                // Si c'était le même élément qui était déjà ouvert, on s'arrête là (toggle off)
+                if (detailsElement && detailsElement === activeDetailSection) {
+                    return;
+                }
+                
+                // Créer la nouvelle section de détails
+                detailsElement = document.createElement('div');
+                detailsElement.id = detailId;
+                detailsElement.className = 'course-details';
+                
+                // Préparer le contenu des détails
+                const participantsCount = course.participants && Array.isArray(course.participants) ? course.participants.length : 0;
+                
+                detailsElement.innerHTML = `
+                    <div class="course-details-title">
+                        ${course.nom || ""}
+                        <span class="close-details">&times;</span>
+                    </div>
                     
-                    // Récupérer des scores prédictifs pour les participants
-                    const participantsContainer = document.getElementById(`participants-${detailId}`);
+                    <div class="course-info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info-label">Hippodrome</div>
+                            <div class="info-value">${hippodrome}</div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="info-label">Horaire</div>
+                            <div class="info-value">${course.horaire || ""}</div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div class="info-label">Date</div>
+                            <div class="info-value">${coursesLoader.formatDateDMY(window.currentDate)}</div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <div class="info-label">Participants</div>
+                            <div class="info-value">${participantsCount}</div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-running"></i>
+                            <div class="info-label">Type</div>
+                            <div class="info-value">${course.type || "Plat"}</div>
+                        </div>
+                    </div>
                     
-                    try {
-                        // MODIFICATION: Utiliser rankingLoader au lieu de scorePredictor
-                        const scoresPredictifs = await rankingLoader.calculerScoresCourse(course);
-                        
-                        if (scoresPredictifs.length === 0) {
-                            participantsContainer.innerHTML = `
+                    <h3 class="participants-title">Liste des participants</h3>
+                    
+                    <div class="table-responsive">
+                        <table class="participants-table">
+                            <thead>
                                 <tr>
-                                    <td colspan="8" style="text-align: center;">
-                                        <i class="fas fa-exclamation-circle" style="color: var(--gold);"></i> 
-                                        Impossible de calculer les scores prédictifs pour cette course.
+                                    <th>N°</th>
+                                    <th>Cheval</th>
+                                    <th>Jockey</th>
+                                    <th>Entraîneur</th>
+                                    <th>Propriétaire</th>
+                                    <th>Éleveurs</th>
+                                    <th>Poids</th>
+                                    <th>Score prédictif</th>
+                                </tr>
+                            </thead>
+                            <tbody id="participants-${detailId}">
+                                <tr>
+                                    <td colspan="8" class="loading-indicator">
+                                        <i class="fas fa-spinner fa-spin"></i> Calcul des scores prédictifs...
                                     </td>
                                 </tr>
-                            `;
-                            return;
-                        }
-                        
-                        let participantsHTML = '';
-                        
-                        // Trier par numéro de participant (ordre initial)
-                        const participantsTries = [...scoresPredictifs].sort((a, b) => {
-                            const numA = parseInt(a.participant.numero || 0);
-                            const numB = parseInt(b.participant.numero || 0);
-                            return numA - numB;
-                        });
-                        
-                        participantsTries.forEach((resultat, index) => {
-                            const participant = resultat.participant;
-                            const scorePredictif = resultat.scorePredictif;
-                            
-                            // Réduire la taille de certaines colonnes si le texte est trop long
-                            const propietaire = getPropertyValue(participant, [
-                                "proprietaire", "propriétaire", "proprio", "owner", "owner_name"
-                            ]) || "N/A";
-                            
-                            const eleveurs = getPropertyValue(participant, [
-                                "eleveurs", "éleveurs", "eleveur", "éleveur", "breeder", "breeder_name"
-                            ]) || "N/A";
-                            
-                            // Calculer une couleur de fond pour la barre de score entre rouge et vert en fonction du score
-                            const score = parseFloat(scorePredictif.score);
-                            const normalizedScore = Math.min(Math.max(0, score), 100) / 100; // 0 à 1
-                            
-                            // Indice de confiance avec classe de style
-                            const confidence = scorePredictif.indiceConfiance ? parseFloat(scorePredictif.indiceConfiance) : 0;
-                            let confidenceClass = 'confidence-low';
-                            if (confidence >= 0.8) {
-                                confidenceClass = 'confidence-high';
-                            } else if (confidence >= 0.5) {
-                                confidenceClass = 'confidence-medium';
-                            }
-                            
-                            // Extraire le numéro du jockey (n) si disponible
-                            const jockeyNumber = participant.n || "";
-                            const jockeyNumberDisplay = jockeyNumber ? `<span class="jockey-number">${jockeyNumber}</span>` : '';
-                            
-                            participantsHTML += `
-                                <tr data-score="${scorePredictif.score}" data-numero="${participant.numero || 0}" data-cheval="${participant.cheval}" data-cote="${participant.cote || 0}">
-                                    <td style="text-align: center;">
-                                        <div class="horse-number">${participant.numero || '-'}</div>
-                                    </td>
-                                    <td>${participant.cheval || 'N/A'}</td>
-                                    <td>${participant.jockey || 'N/A'}${jockeyNumberDisplay}</td>
-                                    <td>${participant.entraineur || 'N/A'}</td>
-                                    <td>${propietaire.length > 20 ? propietaire.slice(0, 20) + '...' : propietaire}</td>
-                                    <td>${eleveurs.length > 20 ? eleveurs.slice(0, 20) + '...' : eleveurs}</td>
-                                    <td>${participant.poids || 'N/A'}</td>
-                                    <td class="prediction-cell">
-                                        <div class="prediction-bar-container">
-                                            <div class="prediction-bar" style="width: ${normalizedScore * 100}%;"></div>
-                                            <div class="prediction-value">
-                                                ${scorePredictif.score}
-                                            </div>
-                                        </div>
-                                        <div class="score-details">
-                                            <small>
-                                                Détails <i class="fas fa-info-circle"></i>
-                                                ${scorePredictif.indiceConfiance ? 
-                                                    `<span class="confidence-indicator ${confidenceClass}">${parseFloat(scorePredictif.indiceConfiance) * 100}% fiable</span>` : 
-                                                    ''}
-                                            </small>
-                                            <div class="tooltip-content">
-                                                <p>Cheval: Rang #${scorePredictif.details.cheval.rang} (${scorePredictif.details.cheval.score} pts)</p>
-                                                <p>Jockey: Rang #${scorePredictif.details.jockey.rang} (${scorePredictif.details.jockey.score} pts)</p>
-                                                <p>Entraîneur: Rang #${scorePredictif.details.entraineur.rang} (${scorePredictif.details.entraineur.score} pts)</p>
-                                                <p>Éleveur: Rang #${scorePredictif.details.eleveur.rang} (${scorePredictif.details.eleveur.score} pts)</p>
-                                                <p>Propriétaire: Rang #${scorePredictif.details.proprietaire.rang} (${scorePredictif.details.proprietaire.score} pts)</p>
-                                                ${scorePredictif.indiceConfiance ? 
-                                                  `<p><strong>Fiabilité: ${parseFloat(scorePredictif.indiceConfiance) * 100}%</strong> (${getConfidenceDescription(parseFloat(scorePredictif.indiceConfiance))})</p>` : 
-                                                  ''}
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            `;
-                        });
-                        
-                        participantsContainer.innerHTML = participantsHTML;
-                        
-                        // Ajouter l'événement de tri au bouton
-                        const sortButton = document.getElementById(`sort-by-score-${detailId}`);
-                        sortButton.addEventListener('click', function() {
-                            const rows = Array.from(participantsContainer.querySelectorAll('tr'));
-                            const sortedRows = rows.sort((a, b) => {
-                                const scoreA = parseFloat(a.dataset.score || 0);
-                                const scoreB = parseFloat(b.dataset.score || 0);
-                                return scoreB - scoreA; // Décroissant
-                            });
-                            
-                            // Effacer le contenu actuel et réinsérer dans le nouvel ordre
-                            participantsContainer.innerHTML = '';
-                            sortedRows.forEach(row => {
-                                participantsContainer.appendChild(row);
-                            });
-                            
-                            // Mettre à jour le texte du bouton
-                            if (this.querySelector('i').classList.contains('fa-sort-amount-down')) {
-                                this.innerHTML = '<i class="fas fa-sort-amount-up"></i> Trier par numéro';
-                                this.title = 'Cliquez pour trier par numéro de participant';
-                            } else {
-                                this.innerHTML = '<i class="fas fa-sort-amount-down"></i> Trier par score prédictif';
-                                this.title = 'Cliquez pour trier par score prédictif';
-                                
-                                // Trier par numéro au lieu de par score
-                                const rowsByNumber = Array.from(participantsContainer.querySelectorAll('tr'));
-                                const sortedByNumber = rowsByNumber.sort((a, b) => {
-                                    const numA = parseInt(a.dataset.numero || 0);
-                                    const numB = parseInt(b.dataset.numero || 0);
-                                    return numA - numB;
-                                });
-                                
-                                participantsContainer.innerHTML = '';
-                                sortedByNumber.forEach(row => {
-                                    participantsContainer.appendChild(row);
-                                });
-                            }
-                        });
-                        
-                        // Ajouter l'événement pour ouvrir la simulation intégrée
-                        const simulateButton = document.getElementById(`simulate-bets-${detailId}`);
-                        simulateButton.addEventListener('click', function() {
-                            // Ouvrir la popup de simulation avec les données de cette course
-                            const participantsTable = document.getElementById(`participants-${detailId}`);
-                            openSimulationPopup(hippodrome, courseName, participantsTable, detailId);
-                        });
-                        
-                    } catch (error) {
-                        console.error("Erreur lors du calcul des scores prédictifs:", error);
-                        participantsContainer.innerHTML = `
-                            <tr>
-                                <td colspan="8" style="text-align: center; color: var(--red);">
-                                    <i class="fas fa-exclamation-triangle"></i> 
-                                    Erreur lors du calcul des scores prédictifs. Veuillez réessayer plus tard.
-                                </td>
-                            </tr>
-                        `;
-                    }
-                } else {
-                    // Si déjà visible, la cacher
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <button class="action-btn primary" id="sort-by-score-${detailId}">
+                            <i class="fas fa-sort-amount-down"></i> Trier par score prédictif
+                        </button>
+                        <button class="action-btn secondary" id="simulate-bets-${detailId}">
+                            <i class="fas fa-calculator"></i> Simuler des paris sur cette course
+                        </button>
+                    </div>
+                `;
+                
+                // Trouver la grille contenant la carte
+                const gridContainer = courseCard.parentNode;
+                
+                // Insérer les détails après la dernière carte ou après la carte cliquée
+                gridContainer.appendChild(detailsElement);
+                
+                // Animation pour afficher la section
+                setTimeout(() => {
+                    detailsElement.classList.add('visible');
+                }, 10);
+                
+                // Mettre à jour la section active
+                activeDetailSection = detailsElement;
+                
+                // Faire défiler vers la section visible
+                setTimeout(() => {
+                    detailsElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+                
+                // Ajouter l'événement pour fermer les détails
+                detailsElement.querySelector('.close-details').addEventListener('click', function(event) {
+                    event.stopPropagation();
                     detailsElement.classList.remove('visible');
                     setTimeout(() => {
                         if (detailsElement.parentNode) {
@@ -2011,6 +1850,166 @@
                             activeDetailSection = null;
                         }
                     }, 300);
+                });
+                
+                // Récupérer des scores prédictifs pour les participants
+                const participantsContainer = document.getElementById(`participants-${detailId}`);
+                
+                try {
+                    // MODIFICATION: Utiliser rankingLoader au lieu de scorePredictor
+                    const scoresPredictifs = await rankingLoader.calculerScoresCourse(course);
+                    
+                    if (scoresPredictifs.length === 0) {
+                        participantsContainer.innerHTML = `
+                            <tr>
+                                <td colspan="8" style="text-align: center;">
+                                    <i class="fas fa-exclamation-circle" style="color: var(--gold);"></i> 
+                                    Impossible de calculer les scores prédictifs pour cette course.
+                                </td>
+                            </tr>
+                        `;
+                        return;
+                    }
+                    
+                    let participantsHTML = '';
+                    
+                    // Trier par numéro de participant (ordre initial)
+                    const participantsTries = [...scoresPredictifs].sort((a, b) => {
+                        const numA = parseInt(a.participant.numero || 0);
+                        const numB = parseInt(b.participant.numero || 0);
+                        return numA - numB;
+                    });
+                    
+                    participantsTries.forEach((resultat, index) => {
+                        const participant = resultat.participant;
+                        const scorePredictif = resultat.scorePredictif;
+                        
+                        // Réduire la taille de certaines colonnes si le texte est trop long
+                        const propietaire = getPropertyValue(participant, [
+                            "proprietaire", "propriétaire", "proprio", "owner", "owner_name"
+                        ]) || "N/A";
+                        
+                        const eleveurs = getPropertyValue(participant, [
+                            "eleveurs", "éleveurs", "eleveur", "éleveur", "breeder", "breeder_name"
+                        ]) || "N/A";
+                        
+                        // Calculer une couleur de fond pour la barre de score entre rouge et vert en fonction du score
+                        const score = parseFloat(scorePredictif.score);
+                        const normalizedScore = Math.min(Math.max(0, score), 100) / 100; // 0 à 1
+                        
+                        // Indice de confiance avec classe de style
+                        const confidence = scorePredictif.indiceConfiance ? parseFloat(scorePredictif.indiceConfiance) : 0;
+                        let confidenceClass = 'confidence-low';
+                        if (confidence >= 0.8) {
+                            confidenceClass = 'confidence-high';
+                        } else if (confidence >= 0.5) {
+                            confidenceClass = 'confidence-medium';
+                        }
+                        
+                        // Extraire le numéro du jockey (n) si disponible
+                        const jockeyNumber = participant.n || "";
+                        const jockeyNumberDisplay = jockeyNumber ? `<span class="jockey-number">${jockeyNumber}</span>` : '';
+                        
+                        participantsHTML += `
+                            <tr data-score="${scorePredictif.score}" data-numero="${participant.numero || 0}" data-cheval="${participant.cheval}" data-cote="${participant.cote || 0}">
+                                <td style="text-align: center;">
+                                    <div class="horse-number">${participant.numero || '-'}</div>
+                                </td>
+                                <td>${participant.cheval || 'N/A'}</td>
+                                <td>${participant.jockey || 'N/A'}${jockeyNumberDisplay}</td>
+                                <td>${participant.entraineur || 'N/A'}</td>
+                                <td>${propietaire.length > 20 ? propietaire.slice(0, 20) + '...' : propietaire}</td>
+                                <td>${eleveurs.length > 20 ? eleveurs.slice(0, 20) + '...' : eleveurs}</td>
+                                <td>${participant.poids || 'N/A'}</td>
+                                <td class="prediction-cell">
+                                    <div class="prediction-bar-container">
+                                        <div class="prediction-bar" style="width: ${normalizedScore * 100}%;"></div>
+                                        <div class="prediction-value">
+                                            ${scorePredictif.score}
+                                        </div>
+                                    </div>
+                                    <div class="score-details">
+                                        <small>
+                                            Détails <i class="fas fa-info-circle"></i>
+                                            ${scorePredictif.indiceConfiance ? 
+                                                `<span class="confidence-indicator ${confidenceClass}">${parseFloat(scorePredictif.indiceConfiance) * 100}% fiable</span>` : 
+                                                ''}
+                                        </small>
+                                        <div class="tooltip-content">
+                                            <p>Cheval: Rang #${scorePredictif.details.cheval.rang} (${scorePredictif.details.cheval.score} pts)</p>
+                                            <p>Jockey: Rang #${scorePredictif.details.jockey.rang} (${scorePredictif.details.jockey.score} pts)</p>
+                                            <p>Entraîneur: Rang #${scorePredictif.details.entraineur.rang} (${scorePredictif.details.entraineur.score} pts)</p>
+                                            <p>Éleveur: Rang #${scorePredictif.details.eleveur.rang} (${scorePredictif.details.eleveur.score} pts)</p>
+                                            <p>Propriétaire: Rang #${scorePredictif.details.proprietaire.rang} (${scorePredictif.details.proprietaire.score} pts)</p>
+                                            ${scorePredictif.indiceConfiance ? 
+                                              `<p><strong>Fiabilité: ${parseFloat(scorePredictif.indiceConfiance) * 100}%</strong> (${getConfidenceDescription(parseFloat(scorePredictif.indiceConfiance))})</p>` : 
+                                              ''}
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        `;
+                    });
+                    
+                    participantsContainer.innerHTML = participantsHTML;
+                    
+                    // Ajouter l'événement de tri au bouton
+                    const sortButton = document.getElementById(`sort-by-score-${detailId}`);
+                    sortButton.addEventListener('click', function() {
+                        const rows = Array.from(participantsContainer.querySelectorAll('tr'));
+                        const sortedRows = rows.sort((a, b) => {
+                            const scoreA = parseFloat(a.dataset.score || 0);
+                            const scoreB = parseFloat(b.dataset.score || 0);
+                            return scoreB - scoreA; // Décroissant
+                        });
+                        
+                        // Effacer le contenu actuel et réinsérer dans le nouvel ordre
+                        participantsContainer.innerHTML = '';
+                        sortedRows.forEach(row => {
+                            participantsContainer.appendChild(row);
+                        });
+                        
+                        // Mettre à jour le texte du bouton
+                        if (this.querySelector('i').classList.contains('fa-sort-amount-down')) {
+                            this.innerHTML = '<i class="fas fa-sort-amount-up"></i> Trier par numéro';
+                            this.title = 'Cliquez pour trier par numéro de participant';
+                        } else {
+                            this.innerHTML = '<i class="fas fa-sort-amount-down"></i> Trier par score prédictif';
+                            this.title = 'Cliquez pour trier par score prédictif';
+                            
+                            // Trier par numéro au lieu de par score
+                            const rowsByNumber = Array.from(participantsContainer.querySelectorAll('tr'));
+                            const sortedByNumber = rowsByNumber.sort((a, b) => {
+                                const numA = parseInt(a.dataset.numero || 0);
+                                const numB = parseInt(b.dataset.numero || 0);
+                                return numA - numB;
+                            });
+                            
+                            participantsContainer.innerHTML = '';
+                            sortedByNumber.forEach(row => {
+                                participantsContainer.appendChild(row);
+                            });
+                        }
+                    });
+                    
+                    // Ajouter l'événement pour ouvrir la simulation intégrée
+                    const simulateButton = document.getElementById(`simulate-bets-${detailId}`);
+                    simulateButton.addEventListener('click', function() {
+                        // Ouvrir la popup de simulation avec les données de cette course
+                        const participantsTable = document.getElementById(`participants-${detailId}`);
+                        openSimulationPopup(hippodrome, courseName, participantsTable, detailId);
+                    });
+                    
+                } catch (error) {
+                    console.error("Erreur lors du calcul des scores prédictifs:", error);
+                    participantsContainer.innerHTML = `
+                        <tr>
+                            <td colspan="8" style="text-align: center; color: var(--red);">
+                                <i class="fas fa-exclamation-triangle"></i> 
+                                Erreur lors du calcul des scores prédictifs. Veuillez réessayer plus tard.
+                            </td>
+                        </tr>
+                    `;
                 }
             }
             
