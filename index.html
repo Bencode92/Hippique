@@ -1716,6 +1716,39 @@
                 }
             }
             
+            // Déterminer la position de la course dans la journée
+            function getCoursePosition(horaire) {
+                if (!horaire) return 1;
+                
+                // Collecter tous les horaires de courses visibles
+                const courses = document.querySelectorAll('.course-card');
+                const horaires = Array.from(courses)
+                    .map(c => c.querySelector('.course-time')?.textContent)
+                    .filter(h => h); // Filtrer les valeurs null/undefined
+                
+                // Trier les horaires chronologiquement
+                horaires.sort((a, b) => {
+                    // Convertir en minutes depuis minuit pour comparer
+                    const toMinutes = (timeStr) => {
+                        const [hours, minutes] = timeStr.split(':').map(Number);
+                        return hours * 60 + minutes;
+                    };
+                    
+                    return toMinutes(a) - toMinutes(b);
+                });
+                
+                // Trouver la position de l'horaire actuel (indexée à 1)
+                const position = horaires.indexOf(horaire) + 1;
+                return position > 0 ? position : 1;
+            }
+
+            // Obtenir le nombre total de courses dans la journée
+            function getCoursesInDay() {
+                // Compter toutes les cards de courses
+                const cards = document.querySelectorAll('.course-card');
+                return cards.length || 1; // Au moins 1 pour éviter division par zéro
+            }
+            
             // Fonction pour afficher/masquer les détails d'une course sous la carte
             async function toggleCourseDetails(hippodrome, courseName, detailId, courseCard) {
                 // Trouver la course correspondante
@@ -1870,8 +1903,30 @@
                 const participantsContainer = document.getElementById(`participants-${detailId}`);
                 
                 try {
-                    // MODIFICATION: Utiliser rankingLoader au lieu de scorePredictor
-                    const scoresPredictifs = await rankingLoader.calculerScoresCourse(course);
+                    // Préparer les données de contexte pour le score prédictif
+                    const courseContext = {
+                        distance: parseInt(course.distance ? course.distance.match(/\d+/)[0] : 0),
+                        type: course.type ? course.type.toLowerCase() : "plat",
+                        position: getCoursePosition(course.horaire),
+                        totalRacesInDay: getCoursesInDay(),
+                        participants: course.participants || [],
+                        hippodrome: hippodrome
+                    };
+                    
+                    console.log("Contexte course pour pondération:", courseContext);
+                    
+                    // Utiliser le contexte pour le calcul des scores
+                    const scoresPredictifs = await rankingLoader.calculerScoresCourse(courseContext);
+                    
+                    // Obtenir et afficher les poids utilisés
+                    const weights = rankingLoader.getWeights(courseContext);
+                    console.log(`Poids utilisés pour ${courseName}:`, weights);
+                    
+                    // Ajouter un indicateur visuel des poids utilisés
+                    const weightsInfo = document.createElement('p');
+                    weightsInfo.className = 'loading-indicator';
+                    weightsInfo.innerHTML = `<i class="fas fa-balance-scale"></i> Pondération: Cheval ${Math.round(weights.cheval*100)}%, Jockey ${Math.round(weights.jockey*100)}%, Entraîneur ${Math.round(weights.entraineur*100)}%`;
+                    participantsContainer.parentNode.insertBefore(weightsInfo, participantsContainer);
                     
                     if (scoresPredictifs.length === 0) {
                         participantsContainer.innerHTML = `
@@ -1950,6 +2005,7 @@
                                                 ''}
                                         </small>
                                         <div class="tooltip-content">
+                                            <p><strong>Poids:</strong> Ch ${Math.round(scorePredictif.poidsUtilises.cheval*100)}%, Jock ${Math.round(scorePredictif.poidsUtilises.jockey*100)}%, Entr ${Math.round(scorePredictif.poidsUtilises.entraineur*100)}%</p>
                                             <p>Cheval: Rang #${scorePredictif.details.cheval.rang} (${scorePredictif.details.cheval.score} pts)</p>
                                             <p>Jockey: Rang #${scorePredictif.details.jockey.rang} (${scorePredictif.details.jockey.score} pts)</p>
                                             <p>Entraîneur: Rang #${scorePredictif.details.entraineur.rang} (${scorePredictif.details.entraineur.score} pts)</p>
@@ -2099,6 +2155,24 @@
                 searchInput.value = '';
                 displayHippodromes();
             });
+            
+            // Fonction de test pour vérifier les variations de poids
+            function testWeightVariations() {
+              const testCases = [
+                {name: "Sprint/Small/First", distance: 1200, participants: Array(7).fill({}), position: 1, totalRacesInDay: 8},
+                {name: "Mile/Medium/Middle", distance: 1600, participants: Array(12).fill({}), position: 4, totalRacesInDay: 8},
+                {name: "Staying/Large/Last", distance: 2500, participants: Array(18).fill({}), position: 8, totalRacesInDay: 8}
+              ];
+              
+              console.log("=== TEST DES VARIATIONS DE POIDS ===");
+              testCases.forEach(test => {
+                const weights = rankingLoader.getWeights(test);
+                console.log(`${test.name}: `, weights);
+              });
+            }
+
+            // Exécuter le test des poids (décommenter pour tester)
+            // setTimeout(testWeightVariations, 3000);
         });
     </script>
     
