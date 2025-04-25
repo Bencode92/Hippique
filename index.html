@@ -1927,7 +1927,7 @@
                         participantsHTML += `
                             <tr data-score="${scorePredictif.score}" data-numero="${participant.numero || 0}" data-cheval="${participant.cheval}" data-cote="${participant.cote || 0}">
                                 <td style="text-align: center;">
-                                    <div class="horse-number">${participant.numero || '-'}</div>
+                                    <div class="horse-number">${participant.n || participant.numero || '-'}</div>
                                 </td>
                                 <td>${participant.cheval || 'N/A'}</td>
                                 <td>${participant.jockey || 'N/A'}${jockeyNumberDisplay}</td>
