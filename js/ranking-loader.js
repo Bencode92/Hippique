@@ -263,7 +263,7 @@ const rankingLoader = {
             }
             
             // Traitement des abréviations comme "PAT." pour "PATRICK"
-            if (cleanInput.match(/^([A-Z]{2,3})\./, )) {
+            if (cleanInput.match(/^([A-Z]{2,3})\./)) {
                 const abrev = RegExp.$1;
                 if (candidateName.startsWith(abrev)) {
                     score += 0.15;
@@ -522,13 +522,13 @@ const rankingLoader = {
         
         // AMÉLIORATION: Expression régulière pour supprimer les suffixes des chevaux
         // Supprimer d'abord les suffixes H.PS., F.PS., M.PS. avec âge
-        const matchSuffixeCheval = nomNormalise.match(/^([A-Za-zÀ-ÖØ-öø-ÿ\s\-']+?)(\s+[HFM]\.?P\.?S\.?.*)/i);
+        const matchSuffixeCheval = nomNormalise.match(/^([A-Za-zÀ-ÖØ-öø-ÿ\s\-']+?)(\s+[HFM]\.?P\.?S\.?.*)$/i);
         if (matchSuffixeCheval) {
             nomNormalise = matchSuffixeCheval[1].trim();
             console.log(`Nom cheval normalisé (suffixe supprimé): "${nom}" -> "${nomNormalise}"`);
         } else {
             // Si pas de suffixe, utiliser l'ancienne méthode pour l'origine (GB), etc.
-            const matchCheval = nomNormalise.match(/^([A-Za-zÀ-ÖØ-öø-ÿ\s\-']+?)(\s*\(([A-Za-z]+)\))?(\s+[HFM]\.?P\.?S\.?.*)?/i);
+            const matchCheval = nomNormalise.match(/^([A-Za-zÀ-ÖØ-öø-ÿ\s\-']+?)(\s*\(([A-Za-z]+)\))?(\s+[HFM]\.?P\.?S\.?.*)?$/i);
             
             if (matchCheval) {
                 const nomBase = matchCheval[1].trim();
@@ -1602,10 +1602,6 @@ const rankingLoader = {
     
     // NOUVELLE VERSION: Calculer le score prédictif pour un participant avec NC dynamique
     calculerScoreParticipant(participant) {
-        // AMÉLIORATION: S'assurer que le numéro du cheval est correctement extrait
-        // Prendre en priorité la propriété "n°" si présente
-        participant.numero = participant["n°"] || participant.n || participant.numero || "";
-        
         // NOUVEAU: Utiliser le nom de base pour les chevaux
         const nomChevalBase = this.extraireNomBaseCheval(participant.cheval);
         console.log(`Nom cheval normalisé pour scoring: "${participant.cheval}" -> "${nomChevalBase}"`);
