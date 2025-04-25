@@ -566,6 +566,14 @@
             font-weight: 500;
         }
 
+        .course-distance {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            font-size: 0.85rem;
+        }
+
         .course-type {
             font-size: 0.85rem;
             color: var(--light-gold);
@@ -1671,6 +1679,7 @@
                                 <div class="course-name">${course.nom || ""}</div>
                                 <div class="course-meta">
                                     <div class="participant-count">${participantsCount} participant${participantsCount > 1 ? 's' : ''}</div>
+                                    <div class="course-distance"><i class="fas fa-route"></i> ${course.distance || ""}</div>
                                     <div class="course-type">${course.type || "Plat"}</div>
                                 </div>
                             </div>
@@ -1772,6 +1781,11 @@
                             <i class="fas fa-calendar-alt"></i>
                             <div class="info-label">Date</div>
                             <div class="info-value">${coursesLoader.formatDateDMY(window.currentDate)}</div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-route"></i>
+                            <div class="info-label">Distance</div>
+                            <div class="info-value">${course.distance || "Non spécifiée"}</div>
                         </div>
                         <div class="info-item">
                             <i class="fas fa-users"></i>
