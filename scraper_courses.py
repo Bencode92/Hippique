@@ -364,6 +364,7 @@ class ScraperCoursesFG:
                         print(f"🔍 Course {index+1}/{len(course_links)}: {course_name}")
                         
                         try:
+                            # Ouvrir la page de la course pour extraire les participants
                             driver.get(course_url)
                             time.sleep(3)
                             
@@ -397,11 +398,18 @@ class ScraperCoursesFG:
                             if course_type == "Indéterminé":
                                 course_type = reunion_type
                             
+                            # Extraire la distance
+                            distance = ""
+                            distance_element = course_soup.select_one(".distance")
+                            if distance_element:
+                                distance = distance_element.get_text(strip=True)
+                            
                             course_data = {
                                 "nom": course_name,
                                 "horaire": horaire,
                                 "numero": numero,
                                 "type": course_type,
+                                "distance": distance,  # Ajout de la distance ici
                                 "url": course_url,
                                 "participants": []
                             }
@@ -465,7 +473,23 @@ class ScraperCoursesFG:
                 if not course_name:
                     course_name = f"Course {index+1}"
                 
-                print(f"✅ Course identifiée: {horaire} - {numero} - {course_name}")
+                # Extraire la distance si disponible
+                distance = ""
+                # Chercher une cellule avec la classe "distance" ou qui contient "m" (mètres)
+                for i, cell in enumerate(cells):
+                    if "distance" in cell.get("class", []) or (cell.get_text(strip=True).endswith("m") and cell.get_text(strip=True).replace("m", "").isdigit()):
+                        distance = cell.get_text(strip=True)
+                        break
+                    # Si pas de classe spécifique, chercher dans les valeurs numériques suivies de "m"
+                    if cell.get_text(strip=True).isdigit() and i+1 < len(cells) and cells[i+1].get_text(strip=True).lower() == "m":
+                        distance = cell.get_text(strip=True) + "m"
+                        break
+                    # En dernier recours, chercher dans les colonnes où pourrait figurer la distance
+                    if i >= 3 and i <= 5 and cell.get_text(strip=True).isdigit():  # Les colonnes 3, 4, 5 sont souvent des distances
+                        distance = cell.get_text(strip=True)
+                        break
+                
+                print(f"✅ Course identifiée: {horaire} - {numero} - {course_name} - Distance: {distance}")
                 
                 # Déterminer le type de course
                 course_type = reunion_type  # Par défaut, même type que la réunion
@@ -476,6 +500,7 @@ class ScraperCoursesFG:
                     "horaire": horaire,
                     "numero": numero,
                     "type": course_type,
+                    "distance": distance,  # Ajout de la distance ici
                     "url": course_link,
                     "participants": []
                 }
@@ -506,6 +531,12 @@ class ScraperCoursesFG:
                             elif "obstacle" in text:
                                 course_data["type"] = "Obstacle"
                                 break
+                        
+                        # Vérifier si on peut trouver une distance plus précise sur la page détaillée
+                        if not distance:
+                            distance_element = course_soup.select_one(".distance, [class*='distance']")
+                            if distance_element:
+                                course_data["distance"] = distance_element.get_text(strip=True)
                         
                         # Extraire le tableau des participants
                         participants = self.extract_participants_table(course_soup)
@@ -568,12 +599,19 @@ class ScraperCoursesFG:
                                 course_type = "Plat"
                             elif "obstacle" in text:
                                 course_type = "Obstacle"
+                        
+                        # Extraire la distance si disponible
+                        distance = ""
+                        distance_elem = elem.select_one(".distance, [class*='distance']")
+                        if distance_elem:
+                            distance = distance_elem.get_text(strip=True)
                             
                         course_data = {
                             "nom": course_name,
                             "horaire": horaire,
                             "numero": str(index+1),
                             "type": course_type,
+                            "distance": distance,  # Ajout de la distance ici
                             "url": course_link,
                             "participants": []
                         }
@@ -586,6 +624,12 @@ class ScraperCoursesFG:
                                 
                                 course_html = driver.page_source
                                 course_soup = BeautifulSoup(course_html, "html.parser")
+                                
+                                # Vérifier si on peut trouver une distance plus précise sur la page détaillée
+                                if not distance:
+                                    distance_element = course_soup.select_one(".distance, [class*='distance']")
+                                    if distance_element:
+                                        course_data["distance"] = distance_element.get_text(strip=True)
                                 
                                 participants = self.extract_participants_table(course_soup)
                                 if participants:
