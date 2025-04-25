@@ -77,6 +77,100 @@ const rankingLoader = {
         "D. BOUQ...": "DOMINIQUE BOUQUETOT"
     },
     
+    // Configuration des poids selon différents facteurs contextuels
+    TYPE_WEIGHTS: {
+        "plat": { cheval: 0.55, jockey: 0.15, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
+        "obstacle": { cheval: 0.45, jockey: 0.25, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
+        "default": { cheval: 0.55, jockey: 0.15, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 }
+    },
+
+    DIST_WEIGHTS: {
+        "sprint": { cheval: 0.50, jockey: 0.20, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
+        "mile": { cheval: 0.55, jockey: 0.15, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
+        "middle": { cheval: 0.58, jockey: 0.12, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
+        "staying": { cheval: 0.60, jockey: 0.10, entraineur: 0.10, eleveur: 0.12, proprietaire: 0.08 }
+    },
+
+    FIELD_SIZE_WEIGHTS: {
+        "small": { cheval: 0.50, jockey: 0.20, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
+        "medium": { cheval: 0.55, jockey: 0.15, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
+        "large": { cheval: 0.60, jockey: 0.10, entraineur: 0.10, eleveur: 0.12, proprietaire: 0.08 }
+    },
+
+    POSITION_WEIGHTS: {
+        "first": { cheval: 0.53, jockey: 0.17, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
+        "middle": { cheval: 0.55, jockey: 0.15, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
+        "last": { cheval: 0.57, jockey: 0.13, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 }
+    },
+
+    // Fonctions helper pour déterminer les buckets
+    getDistanceBucket: function(distance) {
+        if (!distance || isNaN(distance)) return "mile";
+        
+        if (distance < 1400) return "sprint";
+        if (distance < 1900) return "mile";
+        if (distance < 2400) return "middle";
+        return "staying";
+    },
+
+    getFieldSizeBucket: function(participants) {
+        const count = Array.isArray(participants) ? participants.length : 0;
+        
+        if (count < 9) return "small";
+        if (count < 14) return "medium";
+        return "large";
+    },
+
+    getPositionBucket: function(position, total) {
+        if (!position || !total || position > total) return "middle";
+        
+        if (position <= Math.ceil(total * 0.3)) return "first";
+        if (position >= Math.floor(total * 0.7)) return "last";
+        return "middle";
+    },
+
+    // Fonction principale pour calculer les poids dynamiques
+    getWeights: function(course) {
+        // Poids par défaut
+        const defaultWeights = { 
+            cheval: 0.55, jockey: 0.15, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 
+        };
+        
+        if (!course) return defaultWeights;
+        
+        // Récupérer le type de course (plat/obstacle)
+        const type = (course.type || 'plat').toLowerCase();
+        const tw = this.TYPE_WEIGHTS[type] || this.TYPE_WEIGHTS.default;
+        
+        // Poids par distance
+        const distanceBucket = this.getDistanceBucket(course.distance);
+        const dw = this.DIST_WEIGHTS[distanceBucket];
+        
+        // Poids par taille du peloton
+        const fieldSizeBucket = this.getFieldSizeBucket(course.participants);
+        const sw = this.FIELD_SIZE_WEIGHTS[fieldSizeBucket];
+        
+        // Poids par position dans la journée
+        const positionBucket = this.getPositionBucket(course.position, course.totalRacesInDay);
+        const pw = this.POSITION_WEIGHTS[positionBucket];
+        
+        // Log pour débogage
+        console.log(`Contexte course: distance=${course.distance}m (${distanceBucket}), participants=${course.participants?.length || 0} (${fieldSizeBucket}), position=${course.position}/${course.totalRacesInDay} (${positionBucket})`);
+        
+        // Fusion des poids avec priorités: Distance (40%) + Taille (30%) + Position (20%) + Type (10%)
+        const result = {};
+        const keys = ['cheval', 'jockey', 'entraineur', 'eleveur', 'proprietaire'];
+        
+        keys.forEach(k => {
+            // Calculer la moyenne pondérée
+            result[k] = (dw[k] * 0.4) + (sw[k] * 0.3) + (pw[k] * 0.2) + (tw[k] * 0.1);
+            // Arrondir à 2 décimales
+            result[k] = Math.round(result[k] * 100) / 100;
+        });
+        
+        return result;
+    },
+    
     // NOUVELLES FONCTIONS POUR FUZZY MATCHING
     
     // Algorithme de distance de Levenshtein pour mesurer la similarité entre deux chaînes
@@ -263,7 +357,7 @@ const rankingLoader = {
             }
             
             // Traitement des abréviations comme "PAT." pour "PATRICK"
-            if (cleanInput.match(/^([A-Z]{2,3})\./)) {
+            if (cleanInput.match(/^([A-Z]{2,3})\./) ) {
                 const abrev = RegExp.$1;
                 if (candidateName.startsWith(abrev)) {
                     score += 0.15;
@@ -522,7 +616,7 @@ const rankingLoader = {
         
         // AMÉLIORATION: Expression régulière pour supprimer les suffixes des chevaux
         // Supprimer d'abord les suffixes H.PS., F.PS., M.PS. avec âge
-        const matchSuffixeCheval = nomNormalise.match(/^([A-Za-zÀ-ÖØ-öø-ÿ\s\-']+?)(\s+[HFM]\.?P\.?S\.?.*)$/i);
+        const matchSuffixeCheval = nomNormalise.match(/^([A-Za-zÀ-ÖØ-öø-ÿ\s\-']+?)(\s+[HFM]\.?P\.?S\.?.*$)/i);
         if (matchSuffixeCheval) {
             nomNormalise = matchSuffixeCheval[1].trim();
             console.log(`Nom cheval normalisé (suffixe supprimé): "${nom}" -> "${nomNormalise}"`);
@@ -1104,7 +1198,7 @@ const rankingLoader = {
         }
         
         // Format traditionnel avec l'expression régulière originale
-        const match = nomNormalise.match(/^(MME|MR|M)?\\s*([A-Z])\\.?\\s*([A-Z\\s]+)$/i);
+        const match = nomNormalise.match(/^(MME|MR|M)?\\\s*([A-Z])\\\.\?\\\s*([A-Z\\\s]+)$/i);
         
         if (match) {
             const prefixe = match[1] ? match[1].toUpperCase() : '';
@@ -1118,7 +1212,7 @@ const rankingLoader = {
                 const nomComplet = this.normaliserNom(item.Nom || item.NomPostal || "");
                 
                 // Extraire le préfixe, le prénom et le nom de famille du nom complet
-                const matchComplet = nomComplet.match(/^(MME|MR|M)?\\s*([A-Z]+)(?:\\s+([A-Z\\s]+))?$/i);
+                const matchComplet = nomComplet.match(/^(MME|MR|M)?\\\s*([A-Z]+)(?:\\\s+([A-Z\\\s]+))?$/i);
                 
                 if (!matchComplet) return false;
                 
@@ -1600,8 +1694,13 @@ const rankingLoader = {
         }
     },
     
-    // NOUVELLE VERSION: Calculer le score prédictif pour un participant avec NC dynamique
-    calculerScoreParticipant(participant) {
+    // NOUVELLE VERSION: Calculer le score prédictif pour un participant avec poids dynamiques
+    calculerScoreParticipant(participant, courseContext) {
+        // Récupérer les poids dynamiques selon le contexte de la course
+        const poids = courseContext ? this.getWeights(courseContext) : {
+            cheval: 0.55, jockey: 0.15, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08
+        };
+        
         // NOUVEAU: Utiliser le nom de base pour les chevaux
         const nomChevalBase = this.extraireNomBaseCheval(participant.cheval);
         console.log(`Nom cheval normalisé pour scoring: "${participant.cheval}" -> "${nomChevalBase}"`);
@@ -1652,13 +1751,6 @@ const rankingLoader = {
         
         // AMÉLIORATION: Calcul dynamique de la valeur par défaut pour les NC avec pondération
         const rangsPresents = [];
-        const poids = {
-            cheval: 0.55,
-            jockey: 0.15,
-            entraineur: 0.12,
-            eleveur: 0.10,
-            proprietaire: 0.08
-        };
         
         // Collecter les rangs présents avec leurs poids
         if (rangCheval !== null) rangsPresents.push({ rang: rangCheval, poids: poids.cheval });
@@ -1720,19 +1812,20 @@ const rankingLoader = {
             indiceConfianceAjuste *= 0.8; // Pénalité plus forte si le cheval est manquant
         }
         
-        // Appliquer la formule de pondération avec les rangs inversés
+        // Appliquer la formule de pondération avec les poids dynamiques et les rangs inversés
         const scoreFinal = (
-            0.55 * scoreCheval +
-            0.15 * scoreJockey +
-            0.12 * scoreEntraineur +
-            0.10 * scoreEleveur +
-            0.08 * scoreProprio
+            poids.cheval * scoreCheval +
+            poids.jockey * scoreJockey +
+            poids.entraineur * scoreEntraineur +
+            poids.eleveur * scoreEleveur +
+            poids.proprietaire * scoreProprio
         );
         
         // Retourner le résultat
         return {
             score: scoreFinal.toFixed(1),
             indiceConfiance: indiceConfianceAjuste.toFixed(2),
+            poidsUtilises: poids,
             details: {
                 cheval: {
                     rang: rangCheval || "NC",
@@ -1769,7 +1862,7 @@ const rankingLoader = {
         
         // Calculer le score pour chaque participant
         const resultats = course.participants.map(participant => {
-            const scorePredictif = this.calculerScoreParticipant(participant);
+            const scorePredictif = this.calculerScoreParticipant(participant, course);
             return {
                 participant: participant,
                 scorePredictif: scorePredictif
