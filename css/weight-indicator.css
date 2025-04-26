@@ -1,0 +1,130 @@
+/* Styles pour les indicateurs de poids */
+
+.weight-indicator {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.weight-heavy-minus {
+    background-color: rgba(64, 224, 208, 0.25);
+    color: var(--accent);
+    border: 1px solid rgba(64, 224, 208, 0.4);
+}
+
+.weight-light-minus {
+    background-color: rgba(64, 224, 208, 0.15);
+    color: var(--accent);
+    border: 1px solid rgba(64, 224, 208, 0.3);
+}
+
+.weight-neutral {
+    background-color: rgba(212, 175, 55, 0.15);
+    color: var(--gold);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.weight-light-plus {
+    background-color: rgba(255, 99, 71, 0.15);
+    color: tomato;
+    border: 1px solid rgba(255, 99, 71, 0.3);
+}
+
+.weight-heavy-plus {
+    background-color: rgba(255, 99, 71, 0.25);
+    color: tomato;
+    border: 1px solid rgba(255, 99, 71, 0.4);
+}
+
+/* Badges pour le détail des scores avec poids */
+.weight-detail {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.weight-score-badge {
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    background-color: rgba(212, 175, 55, 0.1);
+    color: var(--light-gold);
+}
+
+.weight-factor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.5rem;
+    margin-top: 0.7rem;
+    background-color: rgba(10, 30, 30, 0.3);
+    border-radius: 6px;
+    padding: 0.7rem;
+}
+
+.weight-factor {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.weight-factor-name {
+    color: var(--gold);
+    margin-bottom: 0.2rem;
+    font-weight: 500;
+}
+
+.weight-factor-value {
+    color: var(--light-gold);
+}
+
+.weight-detail-container {
+    margin-top: 0.5rem;
+    background-color: rgba(10, 30, 30, 0.4);
+    border-radius: 6px;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.weight-detail-header {
+    color: var(--accent);
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+.weight-detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 0;
+    border-bottom: 1px solid rgba(233, 209, 140, 0.1);
+}
+
+.weight-detail-label {
+    color: var(--light-gold);
+    opacity: 0.9;
+}
+
+.weight-detail-value {
+    color: var(--gold);
+}
+
+/* Animation pour l'affichage des indicateurs */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.weight-indicator {
+    animation: fadeInScale 0.3s ease forwards;
+}
