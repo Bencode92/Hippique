@@ -742,6 +742,21 @@
             font-size: 0.85rem;
         }
 
+        /* Nouveau style pour le numéro de corde */
+        .corde-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background-color: #e67e22;
+            color: white;
+            border-radius: 4px;
+            font-weight: 600;
+            margin-left: 8px;
+            font-size: 0.85rem;
+        }
+
         .table-responsive {
             overflow-x: auto;
             border-radius: 12px;
@@ -1749,6 +1764,15 @@
                 return cards.length || 1; // Au moins 1 pour éviter division par zéro
             }
             
+            // Fonction pour extraire le numéro de corde d'un texte format "(Corde:04)"
+            function extraireNumeroCorde(cordeTexte) {
+                if (!cordeTexte) return null;
+                
+                // Utiliser une expression régulière pour extraire uniquement les chiffres
+                const match = cordeTexte.match(/\d+/);
+                return match ? match[0] : null;
+            }
+            
             // Fonction pour afficher/masquer les détails d'une course sous la carte
             async function toggleCourseDetails(hippodrome, courseName, detailId, courseCard) {
                 // Trouver la course correspondante
@@ -1979,10 +2003,15 @@
                         const jockeyNumber = participant.n || "";
                         const jockeyNumberDisplay = jockeyNumber ? `<span class="jockey-number">${jockeyNumber}</span>` : '';
                         
+                        // Extraction et affichage du numéro de corde
+                        const numeroCorde = extraireNumeroCorde(participant.corde);
+                        const cordeDisplay = numeroCorde ? `<span class="corde-number">${numeroCorde}</span>` : '';
+                        
                         participantsHTML += `
                             <tr data-score="${scorePredictif.score}" data-numero="${participant.numero || 0}" data-cheval="${participant.cheval}" data-cote="${participant.cote || 0}">
                                 <td style="text-align: center;">
                                     <div class="horse-number">${participant.n || participant.numero || '-'}</div>
+                                    ${cordeDisplay}
                                 </td>
                                 <td>${participant.cheval || 'N/A'}</td>
                                 <td>${participant.jockey || 'N/A'}${jockeyNumberDisplay}</td>
