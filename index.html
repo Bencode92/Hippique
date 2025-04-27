@@ -1051,6 +1051,62 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        
+        /* Styles pour la position à la corde */
+        .corde-position {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            color: var(--dark-teal);
+            font-weight: bold;
+        }
+        
+        .corde-good {
+            background-color: rgba(64, 224, 90, 0.7);
+            color: #013220;
+        }
+        
+        .corde-neutral {
+            background-color: var(--light-gold);
+            color: var(--dark-teal);
+        }
+        
+        .corde-bad {
+            background-color: rgba(255, 110, 90, 0.7);
+            color: #3a0000;
+        }
+        
+        /* Style pour la section info-course qui explique l'impact de la corde */
+        .corde-info {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: rgba(64, 224, 208, 0.1);
+            border-radius: 6px;
+            border-left: 3px solid var(--accent);
+        }
+        
+        .corde-info h4 {
+            margin-top: 0;
+            color: var(--gold);
+            font-size: 1rem;
+        }
+        
+        .corde-impact-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 5px;
+        }
+        
+        .corde-impact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.85rem;
+        }
     </style>
 </head>
 <body>
@@ -1749,6 +1805,32 @@
                 return cards.length || 1; // Au moins 1 pour éviter division par zéro
             }
             
+            // Fonction pour extraire le numéro de corde
+            function extractCordeNumber(cordeString) {
+                if (!cordeString) return 'N/A';
+                
+                const cordeMatch = cordeString.match(/\(Corde:(\d+)\)/);
+                if (cordeMatch) {
+                    return cordeMatch[1];
+                }
+                return 'N/A';
+            }
+            
+            // Fonction pour déterminer la classe CSS en fonction de la position de corde
+            function getCordPositionClass(cordeString, courseContext) {
+                if (!cordeString || !courseContext) return '';
+                
+                const cordeNumber = extractCordeNumber(cordeString);
+                if (cordeNumber === 'N/A') return '';
+                
+                const fieldSize = Array.isArray(courseContext.participants) ? courseContext.participants.length : 0;
+                const cordCategory = rankingLoader.getCordPositionBucket(parseInt(cordeNumber), fieldSize);
+                
+                if (cordCategory === 'low') return 'corde-good';
+                if (cordCategory === 'high') return 'corde-bad';
+                return 'corde-neutral';
+            }
+            
             // Fonction pour afficher/masquer les détails d'une course sous la carte
             async function toggleCourseDetails(hippodrome, courseName, detailId, courseCard) {
                 // Trouver la course correspondante
@@ -1832,6 +1914,26 @@
                         </div>
                     </div>
                     
+                    <div class="corde-info">
+                        <h4><i class="fas fa-info-circle"></i> Impact de la position à la corde</h4>
+                        <p>La position à la corde a un impact variable selon le type de course et la taille du peloton :</p>
+                        <div class="corde-impact-list">
+                            <div class="corde-impact-item">
+                                <div class="corde-position corde-good" style="width: 20px; height: 20px; font-size: 0.8rem;">1</div>
+                                <span>Position intérieure (favorable)</span>
+                            </div>
+                            <div class="corde-impact-item">
+                                <div class="corde-position corde-neutral" style="width: 20px; height: 20px; font-size: 0.8rem;">5</div>
+                                <span>Position médiane (neutre)</span>
+                            </div>
+                            <div class="corde-impact-item">
+                                <div class="corde-position corde-bad" style="width: 20px; height: 20px; font-size: 0.8rem;">9</div>
+                                <span>Position extérieure (défavorable)</span>
+                            </div>
+                        </div>
+                        <p style="margin-top: 5px; font-size: 0.85rem;">Impact plus important sur les sprints (<1400m) et les grands pelotons.</p>
+                    </div>
+                    
                     <h3 class="participants-title">Liste des participants</h3>
                     
                     <div class="table-responsive">
@@ -1845,12 +1947,13 @@
                                     <th>Propriétaire</th>
                                     <th>Éleveurs</th>
                                     <th>Poids</th>
+                                    <th>Corde</th>
                                     <th>Score prédictif</th>
                                 </tr>
                             </thead>
                             <tbody id="participants-${detailId}">
                                 <tr>
-                                    <td colspan="8" class="loading-indicator">
+                                    <td colspan="9" class="loading-indicator">
                                         <i class="fas fa-spinner fa-spin"></i> Calcul des scores prédictifs...
                                     </td>
                                 </tr>
@@ -1931,7 +2034,7 @@
                     if (scoresPredictifs.length === 0) {
                         participantsContainer.innerHTML = `
                             <tr>
-                                <td colspan="8" style="text-align: center;">
+                                <td colspan="9" style="text-align: center;">
                                     <i class="fas fa-exclamation-circle" style="color: var(--gold);"></i> 
                                     Impossible de calculer les scores prédictifs pour cette course.
                                 </td>
@@ -1979,6 +2082,13 @@
                         const jockeyNumber = participant.n || "";
                         const jockeyNumberDisplay = jockeyNumber ? `<span class="jockey-number">${jockeyNumber}</span>` : '';
                         
+                        // Affichage de la position à la corde
+                        const cordeDisplay = participant.corde ? 
+                            `<div class="corde-position ${getCordPositionClass(participant.corde, courseContext)}">
+                                ${extractCordeNumber(participant.corde)}
+                            </div>` : 
+                            'N/A';
+                        
                         participantsHTML += `
                             <tr data-score="${scorePredictif.score}" data-numero="${participant.numero || 0}" data-cheval="${participant.cheval}" data-cote="${participant.cote || 0}">
                                 <td style="text-align: center;">
@@ -1990,6 +2100,7 @@
                                 <td>${propietaire.length > 20 ? propietaire.slice(0, 20) + '...' : propietaire}</td>
                                 <td>${eleveurs.length > 20 ? eleveurs.slice(0, 20) + '...' : eleveurs}</td>
                                 <td>${participant.poids || 'N/A'}</td>
+                                <td style="text-align: center;">${cordeDisplay}</td>
                                 <td class="prediction-cell">
                                     <div class="prediction-bar-container">
                                         <div class="prediction-bar" style="width: ${normalizedScore * 100}%;"></div>
@@ -2011,6 +2122,9 @@
                                             <p>Entraîneur: Rang #${scorePredictif.details.entraineur.rang} (${scorePredictif.details.entraineur.score} pts)</p>
                                             <p>Éleveur: Rang #${scorePredictif.details.eleveur.rang} (${scorePredictif.details.eleveur.score} pts)</p>
                                             <p>Propriétaire: Rang #${scorePredictif.details.proprietaire.rang} (${scorePredictif.details.proprietaire.score} pts)</p>
+                                            <p>Corde: ${scorePredictif.details.corde.valeur !== "NC" ? 
+                                                `Position ${scorePredictif.details.corde.valeur} (impact: ${scorePredictif.details.corde.ajustement})` : 
+                                                "Non spécifiée"}</p>
                                             ${scorePredictif.indiceConfiance ? 
                                               `<p><strong>Fiabilité: ${parseFloat(scorePredictif.indiceConfiance) * 100}%</strong> (${getConfidenceDescription(parseFloat(scorePredictif.indiceConfiance))})</p>` : 
                                               ''}
@@ -2074,7 +2188,7 @@
                     console.error("Erreur lors du calcul des scores prédictifs:", error);
                     participantsContainer.innerHTML = `
                         <tr>
-                            <td colspan="8" style="text-align: center; color: var(--red);">
+                            <td colspan="9" style="text-align: center; color: var(--red);">
                                 <i class="fas fa-exclamation-triangle"></i> 
                                 Erreur lors du calcul des scores prédictifs. Veuillez réessayer plus tard.
                             </td>
