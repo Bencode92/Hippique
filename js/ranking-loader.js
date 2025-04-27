@@ -120,6 +120,22 @@ const rankingLoader = {
         "staying": 1.3,  // Impact accentué pour longue distance (>2400m)
     },
 
+    // NOUVEAU: Configuration des poids pour la corde
+    CORDE_WEIGHTS: {
+        // Pour les pistes en ligne droite
+        "ligne_droite": {
+            "interieur": 0.02,    // Cordes 1-3
+            "milieu": 0.00,       // Cordes 4-10 (neutre)
+            "exterieur": -0.01    // Cordes 11+
+        },
+        // Pour les pistes avec virages
+        "virage": {
+            "interieur": 0.03,    // Cordes 1-3 (avantage plus important)
+            "milieu": 0.00,       // Cordes 4-8 (neutre)
+            "exterieur": -0.02    // Cordes 9+
+        }
+    },
+
     // Fonctions helper pour déterminer les buckets
     getDistanceBucket: function(distance) {
         if (!distance || isNaN(distance)) return "mile";
@@ -144,6 +160,47 @@ const rankingLoader = {
         if (position <= Math.ceil(total * 0.3)) return "first";
         if (position >= Math.floor(total * 0.7)) return "last";
         return "middle";
+    },
+    
+    // NOUVEAU: Fonction pour déterminer la catégorie de corde
+    getCordeBucket: function(cordeNum, typePiste = "virage") {
+        if (!cordeNum || isNaN(parseInt(cordeNum))) return "milieu";
+        
+        const corde = parseInt(cordeNum);
+        
+        if (typePiste === "ligne_droite") {
+            if (corde <= 3) return "interieur";
+            if (corde <= 10) return "milieu";
+            return "exterieur";
+        } else { // virage par défaut
+            if (corde <= 3) return "interieur";
+            if (corde <= 8) return "milieu";
+            return "exterieur";
+        }
+    },
+    
+    // NOUVEAU: Fonction pour déterminer le type de piste en fonction de l'hippodrome et de la distance
+    getTypePiste: function(hippodrome, distance) {
+        // Hippodromes connus pour être en ligne droite
+        const hippodromesLigneDroite = [
+            "CHANTILLY", "DEAUVILLE", "MAISONS-LAFFITTE",
+            "STRAIGHT COURSE", "LIGNE DROITE"
+        ];
+        
+        // Vérifier si l'hippodrome est en ligne droite
+        if (hippodrome && hippodromesLigneDroite.some(h => 
+            hippodrome.toUpperCase().includes(h))) {
+            return "ligne_droite";
+        }
+        
+        // Par défaut, utiliser la distance comme critère
+        // Les courses courtes sont plus susceptibles d'être en ligne droite
+        if (distance && distance < 1200) {
+            return "ligne_droite";
+        }
+        
+        // Par défaut, on suppose que c'est une piste avec virages
+        return "virage";
     },
     
     // NOUVEAU: Fonction pour déterminer la catégorie de poids
@@ -200,11 +257,21 @@ const rankingLoader = {
         return null;
     },
 
+    // NOUVEAU: Fonction pour extraire le numéro de corde d'un texte
+    extraireNumeroCorde: function(cordeTexte) {
+        if (!cordeTexte) return null;
+        
+        // Utiliser une expression régulière pour extraire uniquement les chiffres
+        const match = cordeTexte.match(/\d+/);
+        return match ? match[0] : null;
+    },
+
     // Fonction principale pour calculer les poids dynamiques
     getWeights: function(course) {
-        // Poids par défaut (mis à jour pour inclure le poids porté)
+        // Poids par défaut (mis à jour pour inclure le poids porté et la corde)
         const defaultWeights = { 
-            cheval: 0.495, jockey: 0.135, entraineur: 0.108, eleveur: 0.09, proprietaire: 0.072, poids_porte: 0.10
+            cheval: 0.47, jockey: 0.128, entraineur: 0.102, eleveur: 0.085, proprietaire: 0.068, 
+            poids_porte: 0.10, corde: 0.05
         };
         
         if (!course) return defaultWeights;
@@ -229,21 +296,24 @@ const rankingLoader = {
         console.log(`Contexte course: distance=${course.distance}m (${distanceBucket}), participants=${course.participants?.length || 0} (${fieldSizeBucket}), position=${course.position}/${course.totalRacesInDay} (${positionBucket})`);
         
         // Fusion des poids avec priorités MODIFIÉES: 
-        // Distance (36%) + Taille (27%) + Position (18%) + Type (9%) + Poids porté (10%)
+        // Distance (36%) + Taille (27%) + Position (18%) + Type (9%) + Poids porté (10%) + Corde (5%)
         const result = {};
         const keys = ['cheval', 'jockey', 'entraineur', 'eleveur', 'proprietaire'];
         
         keys.forEach(k => {
             // Calculer la moyenne pondérée avec les nouveaux coefficients
             result[k] = (dw[k] * 0.36) + (sw[k] * 0.27) + (pw[k] * 0.18) + (tw[k] * 0.09);
-            // Réduire de 10% pour faire place au poids porté
-            result[k] = result[k] * 0.9;
+            // Réduire de 15% pour faire place au poids porté (10%) et à la corde (5%)
+            result[k] = result[k] * 0.85;
             // Arrondir à 3 décimales
             result[k] = Math.round(result[k] * 1000) / 1000;
         });
         
-        // Ajouter le poids porté comme nouveau facteur (10%)
+        // Ajouter le poids porté comme facteur
         result.poids_porte = 0.10;
+        
+        // Ajouter la corde comme nouveau facteur (5%)
+        result.corde = 0.05;
         
         return result;
     },
@@ -1273,7 +1343,7 @@ const rankingLoader = {
         }
         
         // Format traditionnel avec l'expression régulière originale
-        const match = nomNormalise.match(/^(MME|MR|M)?\\s*([A-Z])\\\.\\?\\s*([A-Z\\s]+)$/i);
+        const match = nomNormalise.match(/^(MME|MR|M)?\\s*([A-Z])\\\.\\\?\\\s*([A-Z\\s]+)$/i);
         
         if (match) {
             const prefixe = match[1] ? match[1].toUpperCase() : '';
@@ -1773,7 +1843,8 @@ const rankingLoader = {
     calculerScoreParticipant(participant, courseContext) {
         // Récupérer les poids dynamiques selon le contexte de la course
         const poids = courseContext ? this.getWeights(courseContext) : {
-            cheval: 0.495, jockey: 0.135, entraineur: 0.108, eleveur: 0.09, proprietaire: 0.072, poids_porte: 0.10
+            cheval: 0.47, jockey: 0.128, entraineur: 0.102, eleveur: 0.085, proprietaire: 0.068, 
+            poids_porte: 0.10, corde: 0.05
         };
         
         // NOUVEAU: Utiliser le nom de base pour les chevaux
@@ -1853,6 +1924,24 @@ const rankingLoader = {
             console.log("Données de poids insuffisantes - poids porté non pris en compte");
         }
         
+        // NOUVEAU: Calculer le score de la corde
+        let cordeScore = 0;
+        const numeroCorde = this.extraireNumeroCorde(participant.corde);
+        if (numeroCorde) {
+            // Déterminer le type de piste en fonction de l'hippodrome et de la distance
+            const typePiste = this.getTypePiste(courseContext.hippodrome, courseContext.distance);
+            
+            // Obtenir la catégorie de corde
+            const cordeBucket = this.getCordeBucket(numeroCorde, typePiste);
+            
+            // Appliquer l'ajustement correspondant
+            cordeScore = this.CORDE_WEIGHTS[typePiste][cordeBucket] * 100;
+            
+            console.log(`Corde: ${numeroCorde}, Type piste: ${typePiste}, Bucket: ${cordeBucket}, Score: ${cordeScore}`);
+        } else {
+            console.log("Pas de numéro de corde trouvé pour ce participant");
+        }
+        
         // Logs pour debug
         console.log(`Rangs récupérés pour ${participant.cheval}: `, {
             cheval: rangCheval,
@@ -1860,7 +1949,8 @@ const rankingLoader = {
             entraineur: rangEntraineur,
             eleveur: rangEleveur,
             proprietaire: rangProprio,
-            poids_porte_score: poidsPorteScore
+            poids_porte_score: poidsPorteScore,
+            corde_score: cordeScore
         });
         
         // Paramètres du système
@@ -1876,18 +1966,19 @@ const rankingLoader = {
         if (rangEleveur !== null) rangsPresents.push({ rang: rangEleveur, poids: poids.eleveur });
         if (rangProprio !== null) rangsPresents.push({ rang: rangProprio, poids: poids.proprietaire });
         
-        // Calcul de l'indice de confiance (mis à jour avec poids porté)
+        // Calcul de l'indice de confiance (mis à jour avec poids porté et corde)
         const elementsPresents = [
             !!rangCheval, 
             !!rangJockey,
             !!rangEntraineur, 
             !!rangEleveur,
             !!rangProprio,
-            (poidsPorteScore !== 0) // Le poids porté compte comme un élément présent uniquement s'il a une valeur
+            (poidsPorteScore !== 0), // Le poids porté compte comme un élément présent uniquement s'il a une valeur
+            (cordeScore !== 0)       // La corde compte comme un élément présent uniquement si elle a une valeur
         ].filter(Boolean).length;
         
-        // Nombre total d'éléments (y compris poids porté)
-        const nombreTotalElements = 6;
+        // Nombre total d'éléments (y compris poids porté et corde)
+        const nombreTotalElements = 7;
         
         const indiceConfiance = elementsPresents / nombreTotalElements;
         
@@ -1933,14 +2024,15 @@ const rankingLoader = {
             indiceConfianceAjuste *= 0.8; // Pénalité plus forte si le cheval est manquant
         }
         
-        // Appliquer la formule de pondération avec les poids dynamiques, les rangs inversés, et le poids porté
+        // Appliquer la formule de pondération avec les poids dynamiques, les rangs inversés, le poids porté et la corde
         const scoreFinal = (
             poids.cheval * scoreCheval +
             poids.jockey * scoreJockey +
             poids.entraineur * scoreEntraineur +
             poids.eleveur * scoreEleveur +
             poids.proprietaire * scoreProprio +
-            poids.poids_porte * poidsPorteScore
+            poids.poids_porte * poidsPorteScore +
+            poids.corde * cordeScore         // Ajouter la corde ici
         );
         
         // Retourner le résultat
@@ -1972,6 +2064,10 @@ const rankingLoader = {
                 poids_porte: {
                     valeur: (participant.poids || "NC"),
                     score: poidsPorteScore.toFixed(1)
+                },
+                corde: {
+                    valeur: numeroCorde || "NC",
+                    score: cordeScore.toFixed(1)
                 }
             }
         };
