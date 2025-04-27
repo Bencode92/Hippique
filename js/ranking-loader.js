@@ -1,2023 +1,2185 @@
-// Module amélioré pour le chargement des classements pondérés
-const rankingLoader = {
-    // Cache des données de classement
-    data: {
-        chevaux: null,
-        jockeys: null,
-        entraineurs: null,
-        eleveurs: null,
-        proprietaires: null
-    },
-    
-    // Cache des statistiques pour la normalisation
-    statsCache: {
-        chevaux: null,
-        jockeys: null,
-        entraineurs: null,
-        eleveurs: null,
-        proprietaires: null
-    },
-    
-    // Cache des correspondances découvertes pour améliorer les performances
-    correspondancesDecouvertes: {},
-    
-    // Table de correspondance manuelle pour les cas problématiques
-    correspondanceManuelle: {
-        // Format: "Nom dans la course": "Nom dans le classement"
-        // Chevaux des captures d'écran précédentes
-        "CORTEZ BANK H.PS. 6 A.": "CORTEZ BANK (GB)",
-        "CORTEZ BANK H.P.S. 6 A.": "CORTEZ BANK (GB)",
-        "CORTEZ BANK": "CORTEZ BANK (GB)",
-        "LEHMAN (GB) M.PS. 6 A.": "LEHMAN (GB)",
-        "LEHMAN M.PS. 6 A.": "LEHMAN (GB)",
-        "LEHMAN H.PS. 6 A.": "LEHMAN (GB)",
-        "BENI KHIAR M.PS. 7 A.": "BENI KHIAR",
-        "RONNIE ROCKET H.PS. 5 A.": "RONNIE ROCKET",
-        "LADY MADININA F.PS. 5 A.": "LADY MADININA",
-        "DADIDOM H.PS. 7 A.": "DADIDOM",
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analyse Hippique</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/simulation-inline.css?v=2">
+    <style>
+        :root {
+            --dark-teal: #0A2E2A;
+            --medium-teal: #134542;
+            --light-teal: #1B5A56;
+            --gold: #D4AF37;
+            --light-gold: #F1E6C8;
+            --accent: #40E0D0;
+            --red: #e05a40;
+            --green: #40e05a;
+        }
         
-        // Nouveaux chevaux des captures d'écran récentes
-        "BAK'S WOOD H.PS. 4 A.": "BAK'S WOOD",
-        "BAK S WOOD H.PS. 4 A.": "BAK'S WOOD",
-        "BAKS WOOD H.PS. 4 A.": "BAK'S WOOD",
-        "MISS ESTRELLA F.PS. 5 A.": "MISS ESTRELLA",
-        "NUIT CHOPE F.PS. 4 A.": "NUIT CHOPE",
-        "ALITA F.PS. 5 A.": "ALITA",
-        "BEL TI BOUG H.PS. 6 A.": "BEL TI BOUG",
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         
-        // Nouveaux cas spéciaux pour propriétaires/éleveurs avec initiales
-        "S.STEMPNIAK": "ECURIES SERGE STEMPNIAK",
-        "S. STEMPNIAK": "ECURIES SERGE STEMPNIAK",
-        "G.AUGU": "GERARD AUGUSTIN-NORMAND", // Nouveau: correspondance pour G.AUGU
-        "G. AUGU": "GERARD AUGUSTIN-NORMAND", // Nouveau: avec espace
-        "JP. CAYROUZE": "MR JEAN-PAUL CAYROUZE",
-        "JP.CAYROUZE": "MR JEAN-PAUL CAYROUZE",
-        "J.P. CAYROUZE": "MR JEAN-PAUL CAYROUZE",
-        "HATIM H.PS. 4 a.": "HATIM",
-        "MAT. DAGUZAN-GARROS": "MR MATHIEU DAGUZAN-GARROS",
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark-teal);
+            color: var(--light-gold);
+            min-height: 100vh;
+            padding: 0;
+            margin: 0;
+            line-height: 1.6;
+        }
         
-        // Nouvelles entrées pour les propriétaires/éleveurs des captures d'écran
-        "ECURIE JEAN-LOUIS BO...": "ECURIE JEAN-LOUIS BOUCHARD",
-        "ECURIE JEAN-LOUIS BO": "ECURIE JEAN-LOUIS BOUCHARD",
-        "E. LEMAITRE": "MME LISA LEMIERE DUBOIS",
-        "E.LEMAITRE": "MME LISA LEMIERE DUBOIS",
-        "SUC. S.A. AGA KHAN": "SUCCESSION AGA KHAN",
-        "SUC.S.A. AGA KHAN": "SUCCESSION AGA KHAN",
-        "SUC S.A. AGA KHAN": "SUCCESSION AGA KHAN",
-        "PAT. CHEDEVILLE": "PATRICK CHEDEVILLE",
-        "PAT.CHEDEVILLE": "PATRICK CHEDEVILLE",
-        "PAT CHEDEVILLE": "PATRICK CHEDEVILLE",
-        "MME K. MORICE": "MME KARINE MORICE",
-        "MME K.MORICE": "MME KARINE MORICE",
-        "JPJ. DUBOIS": "MR JEAN-PIERRE-JOSEPH DUBOIS",
-        "JPJ.DUBOIS": "MR JEAN-PIERRE-JOSEPH DUBOIS",
-        "T.DE LA HERONNIERE": "THIERRY DE LA HERONNIERE",
-        "T. DE LA HERONNIERE": "THIERRY DE LA HERONNIERE",
-        "ECURIE ARTU SNC": "ECURIE ARTU",
-        "D. BOUQ...": "DOMINIQUE BOUQUETOT"
-    },
-    
-    // Configuration des poids selon différents facteurs contextuels
-    TYPE_WEIGHTS: {
-        "plat": { cheval: 0.55, jockey: 0.15, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
-        "obstacle": { cheval: 0.45, jockey: 0.25, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
-        "default": { cheval: 0.55, jockey: 0.15, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 }
-    },
+        .app-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            background: linear-gradient(to right, var(--dark-teal), var(--medium-teal));
+            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo h1 {
+            font-size: 1.8rem;
+            color: var(--gold);
+            font-weight: 500;
+            letter-spacing: 2px;
+        }
+        
+        .search {
+            display: flex;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid rgba(233, 209, 140, 0.3);
+            width: 300px;
+        }
+        
+        .search input {
+            background: transparent;
+            border: none;
+            padding: 8px 16px;
+            color: var(--light-gold);
+            width: 100%;
+        }
+        
+        .search button {
+            background: transparent;
+            border: none;
+            color: var(--gold);
+            padding: 0 16px;
+            cursor: pointer;
+        }
+        
+        .main-nav {
+            background-color: var(--medium-teal);
+            padding: 0;
+        }
+        
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            max-width: 94%;
+            margin: 0 auto;
+        }
+        
+        .main-nav li {
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .main-nav li:hover {
+            background-color: var(--light-teal);
+        }
+        
+        .main-nav li.active {
+            background-color: var(--light-teal);
+            border-bottom: 3px solid var(--gold);
+        }
+        
+        .main-nav a {
+            text-decoration: none;
+            color: var(--light-gold);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        main {
+            flex: 1;
+            max-width: 94%;
+            margin: 0 auto;
+            width: 100%;
+            padding: 2rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+            background: linear-gradient(to right, var(--dark-teal), var(--medium-teal));
+            border-top: 1px solid rgba(233, 209, 140, 0.1);
+            color: var(--light-gold);
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        footer h1 {
+            color: var(--gold);
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+        }
+        
+        footer p {
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+            color: rgba(245, 233, 201, 0.7);
+            font-size: 0.9rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-card {
+            background-color: rgba(22, 62, 60, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            background-color: var(--light-teal);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .stat-card h3 {
+            font-size: 1rem;
+            color: var(--light-gold);
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+        }
+        
+        .stat-card .value {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+            font-weight: 300;
+        }
+        
+        .trend {
+            font-size: 0.9rem;
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+        }
+        
+        .trend.positive {
+            background-color: rgba(0, 255, 127, 0.1);
+            color: #00ff7f;
+        }
+        
+        .trend.negative {
+            background-color: rgba(255, 99, 71, 0.1);
+            color: tomato;
+        }
+        
+        .metric {
+            font-size: 0.9rem;
+            color: rgba(245, 233, 201, 0.7);
+        }
+        
+        .section-container {
+            background-color: rgba(22, 62, 60, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.2);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .section-container h2 {
+            color: var(--gold);
+            margin-bottom: 1rem;
+            font-weight: 400;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .chart-placeholder {
+            height: 300px;
+            background-color: rgba(34, 199, 184, 0.1);
+            border: 1px dashed var(--accent);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .jockey-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .jockey-item {
+            display: flex;
+            align-items: center;
+            background-color: rgba(10, 30, 30, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+        
+        .jockey-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--medium-teal);
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-size: 1.5rem;
+        }
+        
+        .jockey-info {
+            flex: 1;
+        }
+        
+        .jockey-info h3 {
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+        }
+        
+        .progress-bar {
+            height: 6px;
+            background-color: rgba(10, 30, 30, 0.5);
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 0.25rem;
+        }
+        
+        .progress {
+            height: 100%;
+            background: linear-gradient(to right, var(--accent), #5aebe0);
+        }
+        
+        .score {
+            font-size: 0.9rem;
+            color: var(--light-gold);
+        }
+        
+        .rang-display {
+            display: inline-block;
+            padding: 2px 8px;
+            background-color: rgba(212, 175, 55, 0.1);
+            border-radius: 4px;
+            color: var(--gold);
+            font-weight: 600;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(to right, var(--gold), #d4af37);
+            color: var(--dark-teal);
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(to right, #d4af37, var(--gold));
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+        }
+        
+        .viewall-link {
+            display: block;
+            text-align: right;
+            margin-top: 1rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        
+        .viewall-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Styles pour le sélecteur de date depuis courses.html */
+        .search-container {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .search-container input {
+            width: 100%;
+            padding: 1.2rem;
+            background-color: rgba(10, 30, 30, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.3);
+            border-radius: 12px;
+            color: var(--light-gold);
+            font-size: 1.1rem;
+            padding-left: 3.5rem;
+            transition: all 0.3s ease;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .search-container i {
+            position: absolute;
+            left: 1.2rem;
+            top: 1.2rem;
+            color: var(--gold);
+            font-size: 1.2rem;
+        }
+        
+        .search-container input:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 2px rgba(64, 224, 208, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        .search-clear {
+            position: absolute;
+            right: 1.2rem;
+            top: 1.2rem;
+            color: var(--light-gold);
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            opacity: 0.7;
+            transition: all 0.2s ease;
+        }
+        
+        .search-clear:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        
+        .date-button {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: rgba(10, 30, 30, 0.5);
+            color: var(--gold);
+            border: 1px solid rgba(233, 209, 140, 0.3);
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            width: 100%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-align: left;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
 
-    DIST_WEIGHTS: {
-        "sprint": { cheval: 0.50, jockey: 0.20, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
-        "mile": { cheval: 0.55, jockey: 0.15, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
-        "middle": { cheval: 0.58, jockey: 0.12, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
-        "staying": { cheval: 0.60, jockey: 0.10, entraineur: 0.10, eleveur: 0.12, proprietaire: 0.08 }
-    },
+        .date-button:hover {
+            background-color: rgba(22, 62, 60, 0.8);
+            border-color: var(--accent);
+            box-shadow: 0 0 0 2px rgba(64, 224, 208, 0.2);
+            transform: translateY(-2px);
+        }
 
-    FIELD_SIZE_WEIGHTS: {
-        "small": { cheval: 0.50, jockey: 0.20, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
-        "medium": { cheval: 0.55, jockey: 0.15, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
-        "large": { cheval: 0.60, jockey: 0.10, entraineur: 0.10, eleveur: 0.12, proprietaire: 0.08 }
-    },
+        .date-button i {
+            transition: transform 0.3s ease;
+        }
 
-    POSITION_WEIGHTS: {
-        "first": { cheval: 0.53, jockey: 0.17, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
-        "middle": { cheval: 0.55, jockey: 0.15, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
-        "last": { cheval: 0.57, jockey: 0.13, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 }
-    },
-    
-    // NOUVEAU: Configuration des poids pour le facteur poids porté
-    WEIGHT_ADJUSTMENTS: {
-        "heavy_minus": { adjustment: 0.02 },  // Pour -2kg ou plus
-        "light_minus": { adjustment: 0.01 },  // Pour -1kg à -2kg
-        "neutral": { adjustment: 0.00 },      // Pour poids neutres (-1kg à +1kg)
-        "light_plus": { adjustment: -0.01 },  // Pour +1kg à +2kg
-        "heavy_plus": { adjustment: -0.02 },  // Pour +2kg ou plus
-    },
-    
-    // NOUVEAU: Multiplicateurs d'impact du poids selon la distance
-    WEIGHT_DISTANCE_MULTIPLIERS: {
-        "sprint": 0.7,   // Impact réduit pour les sprints (<1400m)
-        "mile": 1.0,     // Impact standard pour mile (1400-1900m)
-        "middle": 1.0,   // Impact standard pour moyenne distance (1900-2400m)
-        "staying": 1.3,  // Impact accentué pour longue distance (>2400m)
-    },
+        .date-button:hover i {
+            transform: translateX(5px);
+        }
+        
+        /* Style des boutons pour naviguer entre les dates */
+        .date-navigation {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .nav-date-btn {
+            flex: 1;
+            padding: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        
+        .today-btn {
+            background-color: rgba(212, 175, 55, 0.15);
+            color: var(--gold);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        
+        .yesterday-btn {
+            background-color: rgba(64, 224, 208, 0.15);
+            color: var(--accent);
+            border: 1px solid rgba(64, 224, 208, 0.3);
+        }
+        
+        .nav-date-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .today-btn:hover {
+            background-color: rgba(212, 175, 55, 0.25);
+        }
+        
+        .yesterday-btn:hover {
+            background-color: rgba(64, 224, 208, 0.25);
+        }
+        
+        /* Styles AMÉLIORÉS pour l'affichage des courses */
+        .hippodrome-card {
+            background: linear-gradient(to right, rgba(19, 69, 66, 0.9), rgba(27, 90, 86, 0.8));
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
 
-    // Fonctions helper pour déterminer les buckets
-    getDistanceBucket: function(distance) {
-        if (!distance || isNaN(distance)) return "mile";
-        
-        if (distance < 1400) return "sprint";
-        if (distance < 1900) return "mile";
-        if (distance < 2400) return "middle";
-        return "staying";
-    },
+        .hippodrome-title {
+            padding: 1.2rem;
+            background-color: rgba(10, 46, 42, 0.7);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
 
-    getFieldSizeBucket: function(participants) {
-        const count = Array.isArray(participants) ? participants.length : 0;
-        
-        if (count < 9) return "small";
-        if (count < 14) return "medium";
-        return "large";
-    },
+        .hippodrome-title h3 {
+            color: var(--gold);
+            margin: 0;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
 
-    getPositionBucket: function(position, total) {
-        if (!position || !total || position > total) return "middle";
-        
-        if (position <= Math.ceil(total * 0.3)) return "first";
-        if (position >= Math.floor(total * 0.7)) return "last";
-        return "middle";
-    },
-    
-    // NOUVEAU: Fonction pour déterminer la catégorie de poids
-    getWeightBucket: function(weight, averageWeight) {
-        if (!weight || !averageWeight) return "neutral";
-        
-        const diff = weight - averageWeight;
-        
-        if (diff <= -2) return "heavy_minus";
-        if (diff <= -1) return "light_minus";
-        if (diff >= 2) return "heavy_plus";
-        if (diff >= 1) return "light_plus";
-        return "neutral";
-    },
-    
-    // NOUVEAU: Fonction pour calculer le poids moyen du peloton
-    calculateAverageWeight: function(participants) {
-        if (!participants || !Array.isArray(participants) || participants.length === 0) {
-            return null;
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
         }
-        
-        // Filtrer les participants qui ont un poids spécifié
-        const participantsWithWeight = participants.filter(p => p.poids && !isNaN(parseInt(p.poids)));
-        
-        if (participantsWithWeight.length === 0) {
-            return null;
-        }
-        
-        // Calculer la somme des poids
-        const weightSum = participantsWithWeight.reduce((sum, p) => {
-            // Extraire le nombre du format potentiel "xx kg" ou similaire
-            const weightMatch = String(p.poids).match(/(\d+)/);
-            const weight = weightMatch ? parseInt(weightMatch[1]) : 0;
-            return sum + weight;
-        }, 0);
-        
-        // Retourner la moyenne arrondie à l'entier le plus proche
-        return Math.round(weightSum / participantsWithWeight.length);
-    },
-    
-    // NOUVEAU: Fonction pour extraire la valeur numérique du poids
-    extractWeight: function(weightStr) {
-        if (!weightStr) return null;
-        
-        // Convertir en chaîne au cas où
-        const str = String(weightStr);
-        
-        // Extraire les nombres de formats comme "54 kg", "54kg", "54"
-        const weightMatch = str.match(/(\d+)/);
-        if (weightMatch) {
-            return parseInt(weightMatch[1]);
-        }
-        
-        return null;
-    },
 
-    // Fonction principale pour calculer les poids dynamiques
-    getWeights: function(course) {
-        // Poids par défaut (mis à jour pour inclure le poids porté)
-        const defaultWeights = { 
-            cheval: 0.495, jockey: 0.135, entraineur: 0.108, eleveur: 0.09, proprietaire: 0.072, poids_porte: 0.10
-        };
-        
-        if (!course) return defaultWeights;
-        
-        // Récupérer le type de course (plat/obstacle)
-        const type = (course.type || 'plat').toLowerCase();
-        const tw = this.TYPE_WEIGHTS[type] || this.TYPE_WEIGHTS.default;
-        
-        // Poids par distance
-        const distanceBucket = this.getDistanceBucket(course.distance);
-        const dw = this.DIST_WEIGHTS[distanceBucket];
-        
-        // Poids par taille du peloton
-        const fieldSizeBucket = this.getFieldSizeBucket(course.participants);
-        const sw = this.FIELD_SIZE_WEIGHTS[fieldSizeBucket];
-        
-        // Poids par position dans la journée
-        const positionBucket = this.getPositionBucket(course.position, course.totalRacesInDay);
-        const pw = this.POSITION_WEIGHTS[positionBucket];
-        
-        // Log pour débogage
-        console.log(`Contexte course: distance=${course.distance}m (${distanceBucket}), participants=${course.participants?.length || 0} (${fieldSizeBucket}), position=${course.position}/${course.totalRacesInDay} (${positionBucket})`);
-        
-        // Fusion des poids avec priorités MODIFIÉES: 
-        // Distance (36%) + Taille (27%) + Position (18%) + Type (9%) + Poids porté (10%)
-        const result = {};
-        const keys = ['cheval', 'jockey', 'entraineur', 'eleveur', 'proprietaire'];
-        
-        keys.forEach(k => {
-            // Calculer la moyenne pondérée avec les nouveaux coefficients
-            result[k] = (dw[k] * 0.36) + (sw[k] * 0.27) + (pw[k] * 0.18) + (tw[k] * 0.09);
-            // Réduire de 10% pour faire place au poids porté
-            result[k] = result[k] * 0.9;
-            // Arrondir à 3 décimales
-            result[k] = Math.round(result[k] * 1000) / 1000;
-        });
-        
-        // Ajouter le poids porté comme nouveau facteur (10%)
-        result.poids_porte = 0.10;
-        
-        return result;
-    },
-    
-    // Algorithme de distance de Levenshtein pour mesurer la similarité entre deux chaînes
-    levenshteinDistance(a, b) {
-        if (a.length === 0) return b.length;
-        if (b.length === 0) return a.length;
-        
-        const matrix = [];
-        
-        // Initialiser la matrice
-        for (let i = 0; i <= b.length; i++) {
-            matrix[i] = [i];
+        .course-card {
+            background-color: rgba(19, 69, 66, 0.7);
+            border: 1px solid rgba(64, 224, 208, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
         }
-        for (let j = 0; j <= a.length; j++) {
-            matrix[0][j] = j;
+
+        .course-card:hover {
+            transform: translateY(-4px);
+            background-color: rgba(27, 90, 86, 0.9);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            border-color: var(--accent);
         }
-        
-        // Remplir la matrice
-        for (let i = 1; i <= b.length; i++) {
-            for (let j = 1; j <= a.length; j++) {
-                if (b.charAt(i-1) === a.charAt(j-1)) {
-                    matrix[i][j] = matrix[i-1][j-1];
-                } else {
-                    matrix[i][j] = Math.min(
-                        matrix[i-1][j-1] + 1, // substitution
-                        matrix[i][j-1] + 1,   // insertion
-                        matrix[i-1][j] + 1    // suppression
-                    );
-                }
-            }
+
+        .course-time {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .course-name {
+            color: var(--light-gold);
+            font-weight: 500;
+            margin-bottom: 1rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .course-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(64, 224, 208, 0.1);
+            padding-top: 0.8rem;
+        }
+
+        .participant-count {
+            background-color: rgba(212, 175, 55, 0.2);
+            color: var(--gold);
+            padding: 0.3rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .course-distance {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            font-size: 0.85rem;
+        }
+
+        .course-type {
+            font-size: 0.85rem;
+            color: var(--light-gold);
+            opacity: 0.8;
         }
         
-        return matrix[b.length][a.length];
-    },
-    
-    // Extraire le nom principal (nom de famille) d'une chaîne
-    extractMainName(name) {
-        if (!name) return "";
+        /* Styles pour les détails de la course intégrés (au lieu du modal) */
+        .course-details {
+            background: linear-gradient(to bottom, rgba(19, 69, 66, 0.95), rgba(10, 46, 42, 0.95));
+            border: 1px solid var(--gold);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease, opacity 0.4s ease, margin 0.4s ease, padding 0.4s ease;
+            opacity: 0;
+            grid-column: 1 / -1;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            margin-bottom: 0;
+            transform: translateY(-10px);
+            display: none;
+            width: 100%;
+        }
+
+        .course-details.visible {
+            display: block;
+            max-height: 2000px;
+            opacity: 1;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            transform: translateY(0);
+        }
+
+        .course-details-title {
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            font-size: 1.6rem;
+            text-align: center;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
+            position: relative;
+        }
+
+        .course-details-title .close-details {
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: var(--light-gold);
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .course-details-title .close-details:hover {
+            color: var(--accent);
+            transform: scale(1.1);
+        }
+
+        .course-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            background-color: rgba(10, 30, 30, 0.5);
+            border-radius: 10px;
+            padding: 1.5rem;
+        }
+
+        .info-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .info-item i {
+            color: var(--accent);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-label {
+            color: var(--light-gold);
+            font-size: 0.85rem;
+            opacity: 0.8;
+            margin-bottom: 0.2rem;
+        }
+
+        .info-value {
+            color: var(--gold);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .participants-title {
+            color: var(--accent);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+
+        .participants-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+            table-layout: auto;
+        }
+
+        .participants-table th {
+            background-color: rgba(19, 69, 66, 0.9);
+            color: var(--gold);
+            text-align: left;
+            padding: 1rem;
+            font-weight: 500;
+            position: sticky;
+            top: 0;
+        }
+
+        .participants-table tr:nth-child(odd) {
+            background-color: rgba(10, 30, 30, 0.5);
+        }
+
+        .participants-table tr:nth-child(even) {
+            background-color: rgba(19, 54, 52, 0.4);
+        }
+
+        .participants-table tr:hover {
+            background-color: rgba(26, 81, 78, 0.6);
+        }
+
+        .participants-table td {
+            padding: 0.9rem 1rem;
+            border-bottom: 1px solid rgba(233, 209, 140, 0.1);
+            white-space: normal;
+            word-break: break-word;
+        }
+
+        .horse-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background-color: var(--medium-teal);
+            color: var(--gold);
+            border-radius: 50%;
+            font-weight: 600;
+            margin: 0 auto;
+        }
         
-        // Nettoyer la chaîne
-        let clean = name.toUpperCase()
-            .replace(/^(MR|MME|MLLE|M|SUC\.)\s+/i, '')
-            .replace(/^([A-Z]+)\.?\s+/i, '') // Supprimer les initiales
-            .trim();
+        .jockey-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background-color: var(--gold);
+            color: var(--dark-teal);
+            border-radius: 4px;
+            font-weight: 600;
+            margin-left: 8px;
+            font-size: 0.85rem;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+            width: 100%;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .action-btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.7rem;
+            padding: 1rem;
+            border-radius: 8px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .action-btn.primary {
+            background-color: rgba(64, 224, 208, 0.1);
+            color: var(--accent);
+            border: 1px solid rgba(64, 224, 208, 0.3);
+        }
+
+        .action-btn.secondary {
+            background-color: rgba(212, 175, 55, 0.1);
+            color: var(--gold);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .action-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .action-btn.primary:hover {
+            background-color: rgba(64, 224, 208, 0.2);
+        }
+
+        .action-btn.secondary:hover {
+            background-color: rgba(212, 175, 55, 0.2);
+        }
+        
+        /* Styles pour les onglets */
+        .tabs {
+            display: flex;
+            margin-bottom: 2rem;
+            overflow-x: auto;
+            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
+            border-radius: 8px 8px 0 0;
+            background: rgba(22, 62, 60, 0.2);
+        }
+        
+        .tab {
+            padding: 1.2rem 2.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: var(--light-gold);
+            text-align: center;
+            white-space: nowrap;
+            font-weight: 500;
+            position: relative;
+        }
+        
+        .tab:hover {
+            background-color: rgba(26, 81, 78, 0.5);
+        }
+        
+        .tab.active {
+            background: linear-gradient(to bottom, var(--light-teal), var(--medium-teal));
+            color: var(--gold);
+            border-bottom: 3px solid var(--gold);
+            font-weight: 600;
+        }
+        
+        .tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid var(--gold);
+        }
+        
+        /* Styles pour le score prédictif */
+        .prediction-cell {
+            min-width: 120px;
+        }
+        
+        .prediction-bar-container {
+            position: relative;
+            width: 100%;
+            height: 20px;
+            background: rgba(10, 30, 30, 0.4);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .prediction-bar {
+            height: 100%;
+            background: linear-gradient(to right, var(--accent), var(--gold));
+            border-radius: 10px;
+            transition: width 0.3s ease;
+        }
+        
+        .prediction-value {
+            position: absolute;
+            right: 8px;
+            top: 0;
+            line-height: 20px;
+            font-weight: bold;
+            color: var(--light-gold);
+            text-shadow: 0 0 3px rgba(0,0,0,0.7);
+        }
+
+        .confidence-indicator {
+            display: inline-block;
+            font-size: 0.8rem;
+            margin-left: 5px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            background-color: rgba(64, 224, 208, 0.1);
+            color: var(--accent);
+        }
+
+        .confidence-high {
+            background-color: rgba(64, 224, 208, 0.2);
+        }
+
+        .confidence-medium {
+            background-color: rgba(212, 175, 55, 0.2);
+            color: var(--gold);
+        }
+
+        .confidence-low {
+            background-color: rgba(224, 90, 64, 0.2);
+            color: var(--red);
+        }
+        
+        .loading-indicator {
+            text-align: center;
+            color: var(--accent);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .score-details {
+            cursor: help;
+            position: relative;
+        }
+        
+        .score-details i {
+            color: var(--gold);
+            margin-left: 5px;
+            font-size: 0.9rem;
+        }
+        
+        .tooltip-content {
+            display: none;
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            background: rgba(10, 46, 42, 0.95);
+            border: 1px solid var(--accent);
+            border-radius: 6px;
+            padding: 0.8rem;
+            width: 220px;
+            font-size: 0.8rem;
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .score-details:hover .tooltip-content {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Styles pour les grands écrans */
+        @media (min-width: 1600px) {
+            .stats-grid {
+                grid-template-columns: repeat(5, 1fr);
+            }
             
-        // Diviser en mots et prendre le dernier pour le nom de famille
-        // Mais tenir compte des noms composés avec tirets ou particules
-        const parts = clean.split(/\s+/);
-        
-        if (parts.length > 1) {
-            // Vérifier les cas spéciaux
-            if (parts.some(p => p.match(/^(DE|DU|DES|LA|LE)$/i))) {
-                // S'il y a une particule, prendre tout après le premier mot (qui est souvent un prénom)
-                return parts.slice(1).join(' ');
-            } else if (parts[parts.length - 1].includes('-')) {
-                // Pour les noms comme "TALHOUET-ROY", prendre la première partie avant le tiret
-                const hyphenParts = parts[parts.length - 1].split('-');
-                return hyphenParts[0];
-            } else {
-                // Sinon, prendre le dernier mot comme nom de famille
-                return parts[parts.length - 1];
+            .course-grid {
+                grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+                gap: 1.5rem;
+            }
+            
+            .jockey-list {
+                grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            }
+            
+            .course-info-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             }
         }
         
-        return clean;
-    },
-    
-    // Fonction pour trouver le meilleur match flou
-    findBestFuzzyMatch(input, candidates, categorie, threshold = 0.58) { // Seuil abaissé pour plus de résultats
-        if (!input || !candidates || candidates.length === 0) return null;
-        
-        // Nettoyer l'entrée et gérer les noms tronqués
-        let cleanInput = input.toUpperCase().trim();
-        cleanInput = cleanInput.replace(/\s*\.\.\.$/g, ""); // supprimer les ellipses en fin de chaîne
-        
-        // Gérer les noms tronqués (se terminant par ...) ou abrégés (comme "BO...")
-        if (cleanInput.includes('...')) {
-            const basePart = cleanInput.split('...')[0].trim();
-            console.log(`🔍 Nom tronqué détecté: "${input}" -> base: "${basePart}"`);
+        /* Styles pour la mise en page responsive */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 1rem;
+            }
             
-            // Rechercher des candidats dont le début correspond à cette base
-            for (const candidate of candidates) {
-                const candidateName = (candidate.Nom || candidate.NomPostal || "").toUpperCase();
-                if (candidateName.startsWith(basePart)) {
-                    console.log(`✅ Correspondance pour nom tronqué: "${candidateName}"`);
-                    return {
-                        score: 0,
-                        rang: candidate.Rang,
-                        similarite: 95,
-                        nomTrouve: candidate.Nom || candidate.NomPostal,
-                        item: candidate
-                    };
-                }
+            .search {
+                width: 100%;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .main-nav ul {
+                flex-wrap: wrap;
+                max-width: 100%;
+            }
+            
+            .main-nav li {
+                flex: 1;
+                justify-content: center;
+                padding: 0.75rem 0.5rem;
+                font-size: 0.9rem;
+            }
+            
+            .course-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .course-info-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            main {
+                max-width: 100%;
+                padding: 1rem;
+            }
+            
+            .date-navigation {
+                flex-direction: column;
+                gap: 0.5rem;
             }
         }
         
-        // Extraire le nom principal (probablement le nom de famille)
-        const mainName = this.extractMainName(cleanInput);
-        
-        console.log(`🔍 Fuzzy matching pour "${cleanInput}" - nom principal: "${mainName}"`);
-        
-        let bestMatch = null;
-        let bestScore = 0;
-        let bestSimilarity = 0;
-        
-        // Préfiltrer les candidats qui contiennent au moins partiellement le nom principal
-        // pour éviter de calculer la distance sur tous les candidats (optimisation)
-        let relevantCandidates = candidates;
-        
-        if (mainName.length > 2) {
-            relevantCandidates = candidates.filter(candidate => {
-                const candidateName = (candidate.Nom || candidate.NomPostal || "").toUpperCase();
-                return candidateName.includes(mainName.substring(0, Math.min(mainName.length, 3)));
-            });
-            
-            console.log(`Candidats préfiltrés: ${relevantCandidates.length} (sur ${candidates.length})`);
-            
-            // Si aucun candidat pertinent après préfiltrage, utiliser tous les candidats
-            if (relevantCandidates.length === 0) {
-                relevantCandidates = candidates;
-            }
+        /* Style pour les badges de rang */
+        .rang-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px 10px;
+            background-color: rgba(212, 175, 55, 0.15);
+            border-radius: 4px;
+            color: var(--gold);
+            font-weight: 600;
         }
         
-        // Pour les éleveurs et propriétaires: donner plus d'importance aux haras/écuries 
-        // si le nom d'entrée commence par ces mots
-        const isOrganization = cleanInput.startsWith('ECURIE') || 
-                               cleanInput.startsWith('HARAS') || 
-                               cleanInput.startsWith('STUD') ||
-                               cleanInput.startsWith('ELEVAGE');
-                               
-        // Parcourir tous les candidats pertinents
-        relevantCandidates.forEach(candidate => {
-            const candidateName = (candidate.Nom || candidate.NomPostal || "").toUpperCase();
-            const candidateMainName = this.extractMainName(candidateName);
-            
-            // Calculer la similarité primaire avec les noms principaux
-            const mainNameMaxLength = Math.max(mainName.length, candidateMainName.length);
-            const mainNameDistance = this.levenshteinDistance(mainName, candidateMainName);
-            const mainNameSimilarity = mainNameMaxLength > 0 ? 
-                                      (mainNameMaxLength - mainNameDistance) / mainNameMaxLength : 0;
-            
-            // Calculer la similarité globale
-            const maxLength = Math.max(cleanInput.length, candidateName.length);
-            const distance = this.levenshteinDistance(cleanInput, candidateName);
-            const similarity = maxLength > 0 ? (maxLength - distance) / maxLength : 0;
-            
-            // Score combiné
-            let score = (mainNameSimilarity * 0.7) + (similarity * 0.3);
-            
-            // Bonus pour les correspondances exactes du nom principal
-            if (candidateMainName === mainName) {
-                score += 0.2;
-            }
-            
-            // Vérifier si le nom principal est contenu dans le nom du candidat
-            if (candidateName.includes(mainName) && mainName.length > 2) {
-                score += 0.15;
-                console.log(`Bonus inclusion: ${candidateName} contient ${mainName}`);
-            }
-            
-            // Vérifier les débuts de noms (particulièrement utile pour les noms tronqués)
-            if (cleanInput.length > 3 && candidateName.startsWith(cleanInput.substring(0, cleanInput.length - 1))) {
-                score += 0.15;
-                console.log(`Bonus préfixe: ${candidateName} commence par ${cleanInput.substring(0, cleanInput.length - 1)}`);
-            }
-            
-            // Bonus/malus pour les organisations
-            if (isOrganization) {
-                if (candidateName.startsWith('ECURIE') || 
-                    candidateName.startsWith('HARAS') || 
-                    candidateName.startsWith('STUD') ||
-                    candidateName.startsWith('ELEVAGE')) {
-                    score += 0.15; // Bonus pour org-to-org match
-                } else {
-                    score -= 0.1; // Malus pour org-to-person mismatch
-                }
-            }
-            
-            // Traitement spécial pour les successions (SUC.)
-            if (cleanInput.startsWith('SUC.') || cleanInput.startsWith('SUC ')) {
-                if (candidateName.includes('SUCCESSION') || candidateName.includes('SUC.')) {
-                    score += 0.2; // Bonus important pour les successions
-                }
-            }
-            
-            // Traitement des abréviations comme "PAT." pour "PATRICK"
-            if (cleanInput.match(/^([A-Z]{2,3})\./) ) {
-                const abrev = RegExp.$1;
-                if (candidateName.startsWith(abrev)) {
-                    score += 0.15;
-                    console.log(`Bonus abréviation: ${abrev} -> ${candidateName}`);
-                }
-            }
-            
-            // Threshold minimum
-            if (score > bestScore && score >= threshold) {
-                bestScore = score;
-                bestSimilarity = similarity;
-                bestMatch = candidate;
-            }
-        });
-        
-        if (bestMatch) {
-            console.log(`✅ Meilleur match fuzzy: "${bestMatch.Nom || bestMatch.NomPostal}" (score: ${bestScore.toFixed(2)}, similarité: ${bestSimilarity.toFixed(2)})`);
-            return {
-                score: 0, // Score 0 pour la compatibilité avec le système existant
-                rang: bestMatch.Rang,
-                similarite: bestScore * 100,
-                nomTrouve: bestMatch.Nom || bestMatch.NomPostal,
-                item: bestMatch
-            };
+        /* Style pour les médailles (top 3) */
+        .rang-badge.rang-1::before {
+            content: "🥇";
+            margin-right: 5px;
         }
         
-        console.log(`❌ Aucun match fuzzy trouvé pour "${cleanInput}" (seuil: ${threshold})`);
-        return null;
-    },
-    
-    // Charger les données d'une catégorie avec priorité aux classements pondérés
-    async loadCategoryData(category) {
-        if (this.data[category]) {
-            return this.data[category];
+        .rang-badge.rang-2::before {
+            content: "🥈";
+            margin-right: 5px;
         }
         
-        try {
-            // Déterminer si nous sommes sur GitHub Pages ou en local
-            const isGitHubPages = window.location.hostname.includes('github.io');
-            const basePath = isGitHubPages ? '/Hippique' : '';
+        .rang-badge.rang-3::before {
+            content: "🥉";
+            margin-right: 5px;
+        }
+        
+        /* Style pour les conteneurs de chargement */
+        .loading-container {
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        .loading-spinner {
+            border: 3px solid rgba(233, 209, 140, 0.1);
+            border-radius: 50%;
+            border-top: 3px solid var(--gold);
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 0.5rem;
+        }
+        
+        /* Animation pour les spinners */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-horse-head" style="font-size: 2rem; color: var(--gold);"></i>
+                <h1>ANALYSE HIPPIQUE</h1>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Rechercher un cheval, jockey...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </header>
+        
+        <nav class="main-nav">
+            <ul>
+                <li class="active"><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="courses.html"><i class="fas fa-flag-checkered"></i> Courses</a></li>
+                <li><a href="classement.html"><i class="fas fa-list-ol"></i> Classement</a></li>
+                <li><a href="simulation.html"><i class="fas fa-calculator"></i> Simulation</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3><i class="fas fa-flag-checkered"></i> Courses Analysées</h3>
+                    <div class="value">73</div>
+                    <div class="trend positive">+12%</div>
+                </div>
+                <div class="stat-card">
+                    <h3><i class="fas fa-horse"></i> Chevaux</h3>
+                    <div class="value">150</div>
+                    <div class="metric">Performance moyenne</div>
+                </div>
+                <div class="stat-card">
+                    <h3><i class="fas fa-user"></i> Jockeys</h3>
+                    <div class="value">150</div>
+                    <div class="metric">Performance moyenne</div>
+                </div>
+                <div class="stat-card">
+                    <h3><i class="fas fa-euro-sign"></i> Gains Moyens</h3>
+                    <div class="value">33143 €</div>
+                    <div class="trend positive">+82%</div>
+                </div>
+            </div>
             
-            // AMÉLIORATION: Essayer d'abord de charger les fichiers pondérés pré-calculés
-            try {
-                const ponderedUrl = `${basePath}/data/${category}_ponderated_latest.json`;
-                console.log(`Tentative de chargement du classement pondéré: ${ponderedUrl}`);
+            <div class="section-container">
+                <h2>Performances Mensuelles</h2>
+                <div class="chart-placeholder">
+                    <p><i class="fas fa-chart-bar" style="font-size: 2rem; margin-bottom: 0.5rem;"></i><br>Graphique des performances mensuelles</p>
+                </div>
+            </div>
+            
+            <div class="section-container">
+                <h2><i class="fas fa-flag-checkered"></i> Courses du jour</h2>
                 
-                const ponderedResponse = await fetch(ponderedUrl);
-                if (ponderedResponse.ok) {
-                    const ponderedData = await ponderedResponse.json();
-                    if (ponderedData && ponderedData.resultats) {
-                        console.log(`✅ Classement pondéré pour ${category} chargé avec succès`);
-                        this.data[category] = ponderedData.resultats;
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="Rechercher une course ou un hippodrome...">
+                    <button class="search-clear" id="search-clear"><i class="fas fa-times"></i></button>
+                </div>
+                
+                <div class="date-navigation">
+                    <button id="yesterdayBtn" class="nav-date-btn yesterday-btn">
+                        <i class="fas fa-chevron-left"></i> Courses d'hier
+                    </button>
+                    <button id="todayBtn" class="nav-date-btn today-btn">
+                        <i class="fas fa-calendar-day"></i> Courses d'aujourd'hui
+                    </button>
+                </div>
+                
+                <button class="date-button" id="date-button">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span id="current-date">Aujourd'hui (20/04/2025)</span>
+                    <input type="date" id="date-input" style="display: none;">
+                </button>
+                
+                <div class="tabs">
+                    <div class="tab active">Tous les hippodromes</div>
+                </div>
+                
+                <div id="results-container">
+                    <div class="loading">
+                        <div class="spinner" style="border: 4px solid rgba(233, 209, 140, 0.1); border-radius: 50%; border-top: 4px solid var(--gold); border-left: 4px solid var(--gold); width: 50px; height: 50px; animation: spin 1s linear infinite; margin: 0 auto 1.5rem;"></div>
+                        <p>Chargement des courses...</p>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <a href="courses.html" class="action-btn primary">
+                        <i class="fas fa-chart-line"></i> Voir toutes les courses
+                    </a>
+                    <a href="simulation.html" class="action-btn secondary">
+                        <i class="fas fa-calculator"></i> Simuler des paris
+                    </a>
+                </div>
+            </div>
+            
+            <div class="section-container">
+                <h2>Top Jockeys <a href="classement.html?category=jockeys" class="viewall-link">Voir tout <i class="fas fa-chevron-right"></i></a></h2>
+                <div class="jockey-list" id="top-jockeys">
+                    <div class="loading-container">
+                        <div class="loading-spinner"></div>
+                        <p>Chargement des meilleurs jockeys...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-container">
+                <h2>Top Chevaux <a href="classement.html?category=chevaux" class="viewall-link">Voir tout <i class="fas fa-chevron-right"></i></a></h2>
+                <div class="jockey-list" id="top-chevaux">
+                    <div class="loading-container">
+                        <div class="loading-spinner"></div>
+                        <p>Chargement des meilleurs chevaux...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-container">
+                <h2>Top Entraineurs <a href="classement.html?category=entraineurs" class="viewall-link">Voir tout <i class="fas fa-chevron-right"></i></a></h2>
+                <div class="jockey-list" id="top-entraineurs">
+                    <div class="loading-container">
+                        <div class="loading-spinner"></div>
+                        <p>Chargement des meilleurs entraineurs...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-container">
+                <h2>Top Éleveurs <a href="classement.html?category=eleveurs" class="viewall-link">Voir tout <i class="fas fa-chevron-right"></i></a></h2>
+                <div class="jockey-list" id="top-eleveurs">
+                    <div class="loading-container">
+                        <div class="loading-spinner"></div>
+                        <p>Chargement des meilleurs éleveurs...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-container">
+                <h2>Top Propriétaires <a href="classement.html?category=proprietaires" class="viewall-link">Voir tout <i class="fas fa-chevron-right"></i></a></h2>
+                <div class="jockey-list" id="top-proprietaires">
+                    <div class="loading-container">
+                        <div class="loading-spinner"></div>
+                        <p>Chargement des meilleurs propriétaires...</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <h1>ANALYSE HIPPIQUE</h1>
+            <p>Système d'analyse pour événements hippiques - Dernière mise à jour: <span id="last-update">20/04/2025</span></p>
+            <p><a href="classement.html" style="color: var(--accent); text-decoration: none;">Classements complets</a> | <a href="simulation.html" style="color: var(--accent); text-decoration: none;">Simulateur de paris</a></p>
+        </footer>
+    </div>
+
+    <!-- Module de chargement des courses -->
+    <script>
+        // Module de chargement des courses
+        const coursesLoader = {
+            // Récupérer la liste des courses pour une date spécifique
+            async loadCoursesForDate(dateStr) {
+                console.log(`Chargement des courses pour la date ${dateStr}`);
+                
+                // Format de date attendu: YYYY-MM-DD (ex: 2025-04-20)
+                if (!dateStr) {
+                    const today = new Date();
+                    dateStr = this.formatDateYMD(today);
+                }
+                
+                try {
+                    // Initialiser l'objet courseData
+                    const courseData = {};
+                    
+                    // Chemin correct vers les fichiers de courses
+                    console.log("Tentative de récupération des fichiers dans le répertoire 'data/courses'");
+                    let response = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/data/courses`);
+                    
+                    if (!response.ok) {
+                        console.error(`Erreur lors de la récupération des fichiers: ${response.status}`);
+                        console.error(`Essai de déboguer: récupération du contenu du répertoire 'data'`);
                         
-                        // Calculer les statistiques pour la normalisation
-                        this.calculateCategoryStats(category, ponderedData.resultats);
+                        // Essayer de lister le contenu du répertoire parent
+                        const dataResponse = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/data`);
+                        if (dataResponse.ok) {
+                            const dataContent = await dataResponse.json();
+                            console.log("Contenu du répertoire 'data':", dataContent);
+                        }
                         
-                        return ponderedData.resultats;
+                        throw new Error(`Impossible d'accéder au répertoire data/courses: ${response.status}`);
                     }
-                }
-            } catch (ponderedError) {
-                console.warn(`Impossible de charger le classement pondéré pour ${category}:`, ponderedError);
-            }
-            
-            // Fallback: charger les données brutes et calculer le classement
-            console.log(`Fallback: utilisation des données brutes pour ${category}`);
-            const response = await fetch(`${basePath}/data/${category}.json`);
-            
-            if (!response.ok) {
-                throw new Error(`Erreur HTTP ${response.status}`);
-            }
-            
-            const data = await response.json();
-            if (data && data.resultats) {
-                // Calculer le classement pondéré sur place (comme avant)
-                console.log(`Calcul du classement pondéré pour ${category}...`);
-                const resultatsAvecRangPondere = this.calculateCompositeRanking(data.resultats, category);
-                this.data[category] = resultatsAvecRangPondere;
-                
-                // Calculer les statistiques pour la normalisation
-                this.calculateCategoryStats(category, resultatsAvecRangPondere);
-                
-                return resultatsAvecRangPondere;
-            }
-            
-            // Si on arrive ici, créer un ensemble de données vide mais valide
-            console.warn(`Aucune donnée valide trouvée pour ${category}, utilisation d'un ensemble vide`);
-            this.data[category] = [];
-            this.calculateCategoryStats(category, []);
-            return [];
-            
-        } catch (error) {
-            console.error(`Erreur lors du chargement des données ${category}:`, error);
-            return [];
-        }
-    },
-    
-    // Calculer les statistiques pour la normalisation min-max
-    calculateCategoryStats(category, data) {
-        if (!data || !data.length) {
-            this.statsCache[category] = {
-                victoires: { min: 0, max: 1 },        // Éviter division par zéro 
-                tauxVictoire: { min: 0, max: 1 },     // Éviter division par zéro
-                tauxPlace: { min: 0, max: 1 },        // Éviter division par zéro
-                partants: { min: 0, max: 1 }          // Éviter division par zéro
-            };
-            return;
-        }
-        
-        // Initialiser les statistiques
-        const stats = {
-            victoires: { min: Number.MAX_VALUE, max: 0 },
-            tauxVictoire: { min: Number.MAX_VALUE, max: 0 },
-            tauxPlace: { min: Number.MAX_VALUE, max: 0 },
-            partants: { min: Number.MAX_VALUE, max: 0 }
-        };
-        
-        // Parcourir les données pour trouver min/max
-        data.forEach(item => {
-            // Victoires
-            const victoires = category === 'chevaux' ? 
-                parseInt(item.NbVictoires || 0) : 
-                parseInt(item.Victoires || 0);
-            stats.victoires.min = Math.min(stats.victoires.min, victoires);
-            stats.victoires.max = Math.max(stats.victoires.max, victoires);
-            
-            // Taux de victoire
-            const tauxVictoire = parseFloat(item.TauxVictoire || 0);
-            stats.tauxVictoire.min = Math.min(stats.tauxVictoire.min, tauxVictoire);
-            stats.tauxVictoire.max = Math.max(stats.tauxVictoire.max, tauxVictoire);
-            
-            // Taux de place
-            const tauxPlace = parseFloat(item.TauxPlace || 0);
-            stats.tauxPlace.min = Math.min(stats.tauxPlace.min, tauxPlace);
-            stats.tauxPlace.max = Math.max(stats.tauxPlace.max, tauxPlace);
-            
-            // Partants
-            const partants = category === 'chevaux' ? 
-                parseInt(item.NbCourses || 0) : 
-                parseInt(item.Partants || 0);
-            stats.partants.min = Math.min(stats.partants.min, partants);
-            stats.partants.max = Math.max(stats.partants.max, partants);
-        });
-        
-        // Éviter les divisions par zéro si min==max
-        if (stats.victoires.min === stats.victoires.max) {
-            stats.victoires.min = Math.max(0, stats.victoires.max - 1);
-        }
-        if (stats.tauxVictoire.min === stats.tauxVictoire.max) {
-            stats.tauxVictoire.min = Math.max(0, stats.tauxVictoire.max - 0.1);
-        }
-        if (stats.tauxPlace.min === stats.tauxPlace.max) {
-            stats.tauxPlace.min = Math.max(0, stats.tauxPlace.max - 0.1);
-        }
-        if (stats.partants.min === stats.partants.max) {
-            stats.partants.min = Math.max(0, stats.partants.max - 1);
-        }
-        
-        // Stocker les statistiques dans le cache
-        this.statsCache[category] = stats;
-        
-        console.log(`Statistiques calculées pour ${category}:`, stats);
-    },
-    
-    // Normaliser une valeur avec min-max scaling (0-1)
-    normalizeMinMax(value, min, max) {
-        if (min === max) return 0.5; // Éviter division par zéro
-        return (value - min) / (max - min);
-    },
-    
-    // Charger toutes les données nécessaires
-    async loadAllData() {
-        const promises = [
-            this.loadCategoryData('chevaux'),
-            this.loadCategoryData('jockeys'),
-            this.loadCategoryData('entraineurs'),
-            this.loadCategoryData('eleveurs'),
-            this.loadCategoryData('proprietaires')
-        ];
-        
-        return Promise.all(promises);
-    },
-    
-    // Nouvelle fonction pour extraire le nom de base d'un cheval
-    extraireNomBaseCheval(nom) {
-        if (!nom) return "";
-        
-        // Supprimer les suffixes H.PS, F.PS, M.PS avec leur âge
-        const regex = /^(.+?)(?:\s+[HFM]\.?P\.?S\.?\s+\d+\s*a\.?.*)?$/i;
-        const match = nom.match(regex);
-        
-        if (match) {
-            return match[1].trim();
-        }
-        
-        return nom;
-    },
-    
-    // Fonction pour nettoyer les noms tronqués avec "..."
-    nettoyerNomTronque(nom) {
-        if (!nom) return "";
-        
-        // Nettoyer les ellipses en fin de chaîne
-        return nom.replace(/\s*\.\.\.$/g, "").trim();
-    },
-    
-    // Fonction pour normaliser un nom avec apostrophe
-    normaliserNomAvecApostrophe(nom) {
-        if (!nom) return "";
-        
-        // Standardiser les apostrophes (remplacer par apostrophe simple)
-        let nomStandard = nom.replace(/['´`']/g, "'");
-        
-        // Supprimer les accents
-        nomStandard = nomStandard.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-        
-        // Standardiser les ligatures
-        nomStandard = nomStandard.replace(/[œŒ]/g, 'oe');
-        
-        // Si BAK S WOOD, transformer en BAK'S WOOD
-        nomStandard = nomStandard.replace(/\bBAK\s+S\s+WOOD\b/i, "BAK'S WOOD");
-        
-        // Si BAKS WOOD, transformer en BAK'S WOOD
-        nomStandard = nomStandard.replace(/\bBAKS\s+WOOD\b/i, "BAK'S WOOD");
-        
-        // Plus génériquement, détecter les cas comme "X S Y" -> "X'S Y"
-        nomStandard = nomStandard.replace(/\b(\w+)\s+S\s+(\w+)\b/i, "$1'S $2");
-        
-        return nomStandard;
-    },
-    
-    // Fonction pour normaliser et nettoyer un nom (améliorée pour les chevaux et écuries)
-    normaliserNom(nom) {
-        if (!nom) return "";
-        
-        // Nettoyer les noms tronqués (avec ...)
-        nom = this.nettoyerNomTronque(nom);
-        
-        // Appliquer les corrections pour les apostrophes
-        nom = this.normaliserNomAvecApostrophe(nom);
-        
-        // Vérifier d'abord la table de correspondance manuelle
-        const nomUpper = nom.toUpperCase().trim();
-        if (this.correspondanceManuelle[nomUpper]) {
-            console.log(`Correspondance manuelle trouvée: "${nomUpper}" -> "${this.correspondanceManuelle[nomUpper]}"`);
-            return this.correspondanceManuelle[nomUpper];
-        }
-        
-        // Vérifier aussi les correspondances découvertes
-        if (this.correspondancesDecouvertes[nomUpper]) {
-            console.log(`Correspondance découverte précédemment: "${nomUpper}" -> "${this.correspondancesDecouvertes[nomUpper]}"`);
-            return this.correspondancesDecouvertes[nomUpper];
-        }
-        
-        // Convertir en majuscules et supprimer les espaces superflus
-        let nomNormalise = nomUpper;
-        
-        // AMÉLIORATION: Expression régulière pour supprimer les suffixes des chevaux
-        // Supprimer d'abord les suffixes H.PS., F.PS., M.PS. avec âge
-        const matchSuffixeCheval = nomNormalise.match(/^([A-Za-zÀ-ÖØ-öø-ÿ\s\-']+?)(\s+[HFM]\.?P\.?S\.?.*$)/i);
-        if (matchSuffixeCheval) {
-            nomNormalise = matchSuffixeCheval[1].trim();
-            console.log(`Nom cheval normalisé (suffixe supprimé): "${nom}" -> "${nomNormalise}"`);
-        } else {
-            // Si pas de suffixe, utiliser l'ancienne méthode pour l'origine (GB), etc.
-            const matchCheval = nomNormalise.match(/^([A-Za-zÀ-ÖØ-öø-ÿ\s\-']+?)(\s*\(([A-Za-z]+)\))?(\s+[HFM]\.?P\.?S\.?.*)?$/i);
-            
-            if (matchCheval) {
-                const nomBase = matchCheval[1].trim();
-                const origine = matchCheval[3] ? `(${matchCheval[3].trim()})` : "";
-                
-                // Reconstruire le nom standardisé
-                nomNormalise = nomBase + (origine ? ` ${origine}` : "");
-                console.log(`Nom cheval normalisé (avec origine): "${nom}" -> "${nomNormalise}"`);
-            }
-        }
-        
-        // Standardiser les préfixes pour personnes
-        nomNormalise = nomNormalise.replace(/^M\.\s*/i, "MR ")
-                                .replace(/^MME\.\s*/i, "MME ")
-                                .replace(/^MLLE\.\s*/i, "MLLE ");
-        
-        // Standardiser les préfixes pour écuries (EC, ECURIE, ECURIES)
-        nomNormalise = nomNormalise.replace(/^EC\./i, "ECURIE ")
-                                .replace(/^EC\s+/i, "ECURIE ")
-                                .replace(/^ECURIES\s+/i, "ECURIE ");
-        
-        return nomNormalise;
-    },
-    
-    // Fonction de segmentation des noms composés
-    segmenterNom(nom) {
-        if (!nom) return {};
-        
-        const mots = nom.split(/\s+/);
-        const segments = {
-            prefixe: null,
-            prenom: null,
-            particule: null,
-            nomFamille: null
-        };
-        
-        // Détecter les préfixes (M., MME, etc.)
-        if (mots[0].match(/^(M|MR|MME|MLLE)\.?$/i)) {
-            segments.prefixe = mots.shift();
-        }
-        
-        // Si le nom a au moins 2 mots après le préfixe
-        if (mots.length >= 2) {
-            segments.prenom = mots[0];
-            
-            // Détecter les particules (DE, DU, etc.)
-            if (mots[1].match(/^(DE|DU|DES|LA|LE)$/i)) {
-                segments.particule = mots[1];
-                segments.nomFamille = mots.slice(2).join(' ');
-            } else {
-                segments.nomFamille = mots.slice(1).join(' ');
-            }
-        } else if (mots.length === 1) {
-            segments.nomFamille = mots[0];
-        }
-        
-        return segments;
-    },
-    
-    // Fonction de classement dense (sans sauts) pour tous les types de tri
-    rankWithTiesDense(items, valueGetter) {
-        // Trier d'abord par la valeur (décroissante)
-        const sorted = [...items].sort((a, b) => {
-            const valA = valueGetter(a);
-            const valB = valueGetter(b);
-            const diff = valB - valA;
-            // En cas d'égalité, trier par nom pour garantir la stabilité
-            if (diff === 0) {
-                const nameA = this.currentCategory === 'chevaux' ? a.Nom : a.NomPostal;
-                const nameB = this.currentCategory === 'chevaux' ? b.Nom : b.NomPostal;
-                return nameA.localeCompare(nameB);
-            }
-            return diff;
-        });
-        
-        // Assigner les rangs sans sauts (classement dense)
-        const ranks = new Map();
-        let currentRank = 1;
-        let currentValue = null;
-        let sameRankCount = 0;
-        
-        sorted.forEach((item, index) => {
-            const key = this.currentCategory === 'chevaux' ? item.Nom : item.NomPostal;
-            const value = valueGetter(item);
-            
-            if (index === 0 || value !== currentValue) {
-                // Nouvelle valeur = nouveau rang, mais sans saut
-                currentRank = index + 1 - sameRankCount;
-                currentValue = value;
-                sameRankCount = 0;
-            } else {
-                // Même valeur = même rang
-                sameRankCount++;
-            }
-            
-            ranks.set(key, currentRank);
-        });
-        
-        return ranks;
-    },
-    
-    // Fonction pour calculer le classement pondéré (conservée pour fallback)
-    calculateCompositeRanking(data, category) {
-        if (!data || !data.length) return data;
-        
-        // Stocker la catégorie actuelle pour utilisation dans les fonctions internes
-        this.currentCategory = category;
-        
-        // Cloner les données pour ne pas modifier les originales
-        const dataCopy = JSON.parse(JSON.stringify(data));
-        
-        // Fonctions d'accès aux différentes métriques selon la catégorie
-        const victoryGetter = item => {
-            return category === 'chevaux' ? 
-                parseInt(item.NbVictoires || 0) : 
-                parseInt(item.Victoires || 0);
-        };
-        
-        const victoryRateGetter = item => parseFloat(item.TauxVictoire || 0);
-        const placeRateGetter = item => parseFloat(item.TauxPlace || 0);
-        
-        // Calcul des rangs pour chaque métrique avec gestion des égalités DENSE
-        const victoryRanks = this.rankWithTiesDense(dataCopy, victoryGetter);
-        const victoryRateRanks = this.rankWithTiesDense(dataCopy, victoryRateGetter);
-        const placeRateRanks = this.rankWithTiesDense(dataCopy, placeRateGetter);
-        
-        // Calcul du score pondéré pour chaque participant
-        dataCopy.forEach(item => {
-            const key = category === 'chevaux' ? item.Nom : item.NomPostal;
-            
-            if (!key) {
-                item.ScoreMixte = 999; // Valeur par défaut pour les items mal formés
-                return;
-            }
-            
-            // Récupérer les rangs avec égalités DENSES
-            const rangVictoires = victoryRanks.get(key) || 999;
-            const rangTauxVictoire = victoryRateRanks.get(key) || 999;
-            const rangTauxPlace = placeRateRanks.get(key) || 999;
-            
-            // Déterminer si l'élément a un taux de victoire parfait
-            const nbCourses = category === 'chevaux' ? 
-                parseInt(item.NbCourses || 0) : 
-                parseInt(item.Partants || 0);
-            const nbVictoires = category === 'chevaux' ? 
-                parseInt(item.NbVictoires || 0) : 
-                parseInt(item.Victoires || 0);
-            const nbPlaces = category === 'chevaux' ? 
-                parseInt(item.NbPlace || 0) : 
-                parseInt(item.Place || 0);
-            
-            const hasPerfectWinRate = nbCourses > 0 && nbVictoires === nbCourses && nbPlaces === 0;
-            
-            // Pondération adaptative
-            let poidsV = 0.5;  // Poids par défaut pour les victoires
-            let poidsTV = 0.3; // Poids par défaut pour le taux de victoire
-            let poidsTP = 0.2; // Poids par défaut pour le taux de place
-            
-            // Si taux de victoire parfait, redistribuer le poids du taux de place
-            if (hasPerfectWinRate) {
-                poidsV += poidsTP; // Redistribuer le poids du taux de place vers les victoires
-                poidsTP = 0;       // Ignorer le taux de place
-            }
-            
-            // Calcul du score pondéré avec rangs DENSES
-            item.ScoreMixte = (
-                poidsV * rangVictoires +
-                poidsTV * rangTauxVictoire +
-                poidsTP * rangTauxPlace
-            ).toFixed(2);
-        });
-        
-        // Tri final par score mixte croissant (meilleur score = plus petit)
-        const sortedData = dataCopy.sort((a, b) => {
-            const diff = parseFloat(a.ScoreMixte || 999) - parseFloat(b.ScoreMixte || 999);
-            if (diff !== 0) return diff;
-            
-            // Départage par nom en cas d'égalité
-            const nameA = category === 'chevaux' ? a.Nom : a.NomPostal;
-            const nameB = category === 'chevaux' ? b.Nom : b.NomPostal;
-            return nameA.localeCompare(nameB);
-        });
-        
-        // Utiliser une approche plus simple et directe pour le classement dense
-        let distinctRank = 0;
-        let currentScore = null;
-        
-        sortedData.forEach((item, index) => {
-            const score = parseFloat(item.ScoreMixte || 999);
-            
-            // Si nouveau score, incrémenter le rang distinct
-            if (index === 0 || Math.abs(score - currentScore) > 0.001) {
-                distinctRank++;
-                currentScore = score;
-            }
-            
-            item.Rang = distinctRank;
-        });
-        
-        return sortedData;
-    },
-
-    // NOUVELLE FONCTION: Chercher un éleveur/personne avec initiale de prénom
-    chercherPersonneAvecInitiale(nomAvecInitiale, donneesClassement) {
-        // Capture les formats comme "MAT. DURAND", "M. DURAND", "JPJ. DUBOIS", "AT. AL-MEHSHADI"
-        const match = nomAvecInitiale.match(/^([A-Z]+)\.?\s*(.+?)(?:\s+\([^)]+\))?$/i);
-        if (!match) return null;
-
-        const initialePrenom = match[1].toUpperCase(); // ex: MAT, AT
-        const nomFamille = match[2].toUpperCase();     // ex: DURAND, AL-MEHSHADI
-
-        console.log(`🔎 Recherche personne: initiale="${initialePrenom}" et nom="${nomFamille}"`);
-
-        // Filtrer les candidats potentiels par nom de famille
-        const candidats = donneesClassement.filter(entry => {
-            const nomComplet = (entry.Nom || entry.NomPostal || "").toUpperCase();
-            
-            // Pour les noms composés comme "AL-MEHSHADI"
-            if (nomFamille.includes('-')) {
-                const partiesNom = nomFamille.split('-');
-                // Si toutes les parties du nom sont incluses dans le nom complet
-                return partiesNom.every(partie => nomComplet.includes(partie));
-            }
-            
-            return nomComplet.includes(nomFamille);
-        });
-
-        if (candidats.length === 0) {
-            console.log(`⚠️ Aucune personne trouvée avec le nom "${nomFamille}"`);
-            return null;
-        }
-
-        console.log(`📊 ${candidats.length} personnes potentielles trouvées avec le nom "${nomFamille}"`);
-
-        // Cas spécial pour les haras et écuries
-        const candidatsOrganisation = candidats.filter(entry => {
-            const nomComplet = (entry.Nom || entry.NomPostal || "").toUpperCase();
-            return nomComplet.includes("HARAS") || nomComplet.includes("ELEVAGE") || 
-                nomComplet.includes("STUD") || nomComplet.includes("BREEDING") ||
-                nomComplet.includes("ECURIE");
-        });
-        
-        // Si on a des organisations dans les candidats et que ce n'est pas une personne, privilégier les organisations
-        if (candidatsOrganisation.length > 0 && !nomAvecInitiale.toUpperCase().includes("MR") && 
-            !nomAvecInitiale.toUpperCase().includes("MME")) {
-            // Trier par rang et prendre le meilleur
-            const meilleure = candidatsOrganisation.sort((a, b) => 
-                parseInt(a.Rang || 999) - parseInt(b.Rang || 999))[0];
-            
-            console.log(`✅ Organisation trouvée: "${meilleure.Nom || meilleure.NomPostal}"`);
-            return {
-                score: 0,
-                rang: meilleure.Rang,
-                nomTrouve: meilleure.Nom || meilleure.NomPostal,
-                item: meilleure
-            };
-        }
-
-        // Parmi les candidats, trouver celui dont le prénom commence par l'initiale
-        for (const candidat of candidats) {
-            const nomComplet = (candidat.Nom || candidat.NomPostal || "").toUpperCase();
-            
-            // Extraire le prénom - cas complexe avec différents formats possibles
-            const mots = nomComplet.split(/\s+/);
-            let prenom = "";
-            
-            // Traiter les cas où le premier élément est MR, MME, M., etc.
-            let startIndex = 0;
-            if (mots[0] === "MR" || mots[0] === "MME" || mots[0] === "MLLE" || mots[0] === "M") {
-                startIndex = 1;
-            }
-            
-            // Vérifier s'il reste des mots pour le prénom
-            if (mots.length <= startIndex) continue;
-            
-            // Prendre le prénom (potentiellement composé)
-            prenom = mots[startIndex];
-            
-            // Si c'est un prénom composé (avec tiret)
-            if (prenom.includes('-')) {
-                // Pour les noms arabes comme "AL-MEHSHADI", considérer le nom complet
-                if (prenom.startsWith("AL-")) {
-                    prenom = prenom;
-                } else {
-                    // Sinon prendre la première partie pour l'initiale
-                    prenom = prenom.split('-')[0];
-                }
-            }
-            
-            // Vérifier si le prénom commence par l'initiale
-            if (prenom.startsWith(initialePrenom)) {
-                console.log(`✅ Personne trouvée: "${nomComplet}" (prénom "${prenom}" commence par "${initialePrenom}")`);
-                return {
-                    score: 0,
-                    rang: candidat.Rang,
-                    nomTrouve: nomComplet,
-                    item: candidat
-                };
-            }
-        }
-
-        // Si on n'a pas trouvé par prénom, prendre le meilleur rang
-        if (candidats.length > 0) {
-            const meilleurCandidat = candidats.sort((a, b) => 
-                parseInt(a.Rang || 999) - parseInt(b.Rang || 999))[0];
-            
-            console.log(`⚠️ Aucune personne avec prénom correspondant trouvé, utilisation du meilleur rang: "${meilleurCandidat.Nom || meilleurCandidat.NomPostal}"`);
-            return {
-                score: 0,
-                rang: meilleurCandidat.Rang,
-                nomTrouve: meilleurCandidat.Nom || meilleurCandidat.NomPostal,
-                item: meilleurCandidat
-            };
-        }
-
-        return null;
-    },
-    
-    // Fonction spéciale améliorée pour les éleveurs et propriétaires avec initiales
-    trouverPersonneParInitiale(donneesClassement, nomAvecInitiale, categorie) {
-        if (!nomAvecInitiale || !donneesClassement || !donneesClassement.length) {
-            return { score: 50, rang: null, item: null };
-        }
-        
-        // Ne s'applique qu'aux éleveurs et propriétaires
-        if (categorie !== 'eleveurs' && categorie !== 'proprietaires') {
-            return this.trouverMeilleurScore(donneesClassement, nomAvecInitiale);
-        }
-        
-        // Normaliser le nom avec l'initiale et nettoyer les ellipses
-        const nomNormalise = this.normaliserNom(nomAvecInitiale);
-        
-        // Vérifier d'abord la table de correspondance manuelle
-        const nomUpper = nomAvecInitiale.toUpperCase().trim();
-        if (this.correspondanceManuelle[nomUpper]) {
-            const nomCorrespondance = this.correspondanceManuelle[nomUpper];
-            console.log(`Correspondance manuelle trouvée: "${nomUpper}" -> "${nomCorrespondance}"`);
-            
-            // Rechercher la correspondance dans les données de classement
-            for (const item of donneesClassement) {
-                const nomItem = item.Nom || item.NomPostal || "";
-                if (this.normaliserNom(nomItem) === this.normaliserNom(nomCorrespondance)) {
-                    return {
-                        score: 0,
-                        rang: item.Rang,
-                        similarite: 100,
-                        item: item
-                    };
-                }
-            }
-        }
-        
-        // Vérifier aussi dans les correspondances découvertes
-        if (this.correspondancesDecouvertes[nomUpper]) {
-            const nomCorrespondance = this.correspondancesDecouvertes[nomUpper];
-            console.log(`Correspondance découverte précédemment: "${nomUpper}" -> "${nomCorrespondance}"`);
-            
-            // Rechercher la correspondance dans les données de classement
-            for (const item of donneesClassement) {
-                const nomItem = item.Nom || item.NomPostal || "";
-                if (this.normaliserNom(nomItem) === this.normaliserNom(nomCorrespondance)) {
-                    return {
-                        score: 0,
-                        rang: item.Rang,
-                        similarite: 100,
-                        item: item
-                    };
-                }
-            }
-        }
-        
-        // *** NOUVEAU CODE POUR STEMPNIAK ***
-        // Cas spécifique pour S.STEMPNIAK -> ECURIES SERGE STEMPNIAK
-        if (nomAvecInitiale.match(/^S\.STEMPNIAK$/i) || nomAvecInitiale.match(/^S\s*STEMPNIAK$/i)) {
-            console.log("Cas spécial détecté: S.STEMPNIAK -> ECURIES SERGE STEMPNIAK");
-            
-            // Rechercher spécifiquement STEMPNIAK dans les données
-            const correspondancesEcurie = donneesClassement.filter(item => {
-                const nomItem = (item.Nom || item.NomPostal || "").toUpperCase();
-                return nomItem.includes('STEMPNIAK');
-            });
-            
-            if (correspondancesEcurie.length > 0) {
-                // Trier par rang pour prendre le meilleur
-                const meilleure = correspondancesEcurie.reduce((best, current) => {
-                    const rangCurrent = parseInt(current.Rang) || 999;
-                    const rangBest = parseInt(best.Rang) || 999;
-                    return rangCurrent < rangBest ? current : best;
-                }, correspondancesEcurie[0]);
-                
-                console.log(`Correspondance écurie spéciale trouvée: ${meilleure.Nom || meilleure.NomPostal}`);
-                return {
-                    score: 0,
-                    rang: meilleure.Rang,
-                    nomTrouve: meilleure.Nom || meilleure.NomPostal,
-                    item: meilleure
-                };
-            }
-        }
-        
-        // *** NOUVEAU POUR G.AUGU -> GERARD AUGUSTIN-NORMAND ***
-        if (nomAvecInitiale.match(/^G\.AUGU/i) || nomAvecInitiale.match(/^G\s*AUGU/i)) {
-            console.log("Cas spécial détecté: G.AUGU -> GERARD AUGUSTIN-NORMAND");
-            
-            // Rechercher spécifiquement AUGUSTIN-NORMAND dans les données
-            const correspondancesPersonne = donneesClassement.filter(item => {
-                const nomItem = (item.Nom || item.NomPostal || "").toUpperCase();
-                return nomItem.includes('AUGUSTIN') || nomItem.includes('NORMAND');
-            });
-            
-            if (correspondancesPersonne.length > 0) {
-                // Trier par rang pour prendre le meilleur
-                const meilleure = correspondancesPersonne.reduce((best, current) => {
-                    const rangCurrent = parseInt(current.Rang) || 999;
-                    const rangBest = parseInt(best.Rang) || 999;
-                    return rangCurrent < rangBest ? current : best;
-                }, correspondancesPersonne[0]);
-                
-                console.log(`Correspondance spéciale G.AUGU trouvée: ${meilleure.Nom || meilleure.NomPostal}`);
-                return {
-                    score: 0,
-                    rang: meilleure.Rang,
-                    nomTrouve: meilleure.Nom || meilleure.NomPostal,
-                    item: meilleure
-                };
-            }
-        }
-        
-        // NOUVELLE FONCTIONNALITÉ: détection automatique des abréviations de prénom
-        // Vérifier si le format correspond à une abréviation de prénom: "MAT. DAGUZAN-GARROS"
-        if (nomAvecInitiale.match(/^[A-Z]+\.\s*.+$/i)) {
-            const resultatInitiale = this.chercherPersonneAvecInitiale(nomAvecInitiale, donneesClassement);
-            if (resultatInitiale) {
-                // Mémoriser cette correspondance pour les recherches futures
-                this.correspondancesDecouvertes[nomAvecInitiale.toUpperCase().trim()] = resultatInitiale.nomTrouve;
-                console.log(`🏆 Correspondance par initiale trouvée: "${nomAvecInitiale}" → "${resultatInitiale.nomTrouve}"`);
-                return resultatInitiale;
-            }
-        }
-        
-        // NOUVELLE FONCTIONNALITÉ: fuzzy matching pour les propriétaires et éleveurs
-        // Application du fuzzy matching avec un seuil de 0.58 (58% de similarité) - abaissé pour plus de résultats
-        const fuzzyResult = this.findBestFuzzyMatch(nomAvecInitiale, donneesClassement, categorie, 0.58);
-        if (fuzzyResult) {
-            console.log(`🧩 Correspondance par fuzzy matching trouvée: "${nomAvecInitiale}" → "${fuzzyResult.nomTrouve}" (similarité: ${fuzzyResult.similarite.toFixed(1)}%)`);
-            
-            // Mémoriser cette correspondance pour les recherches futures
-            this.correspondancesDecouvertes[nomAvecInitiale.toUpperCase().trim()] = fuzzyResult.nomTrouve;
-            
-            return fuzzyResult;
-        }
-        
-        // Vérifier si c'est une écurie avec préfixe EC. ou ECURIE/ECURIES
-        if (nomNormalise.startsWith('ECURIE') || nomAvecInitiale.toUpperCase().startsWith('EC.')) {
-            // Recherche d'écurie - traitement spécial
-            const nomEcurie = nomNormalise.replace(/^ECURIE\s+/i, '').trim();
-            
-            console.log(`Recherche d'écurie pour: "${nomEcurie}"`);
-            
-            // Chercher les correspondances avec les écuries
-            const correspondances = donneesClassement.filter(item => {
-                const nomItem = this.normaliserNom(item.Nom || item.NomPostal || "");
-                
-                // Vérifier si c'est une écurie (ECURIE/ECURIES)
-                if (nomItem.startsWith('ECURIE')) {
-                    const nomEcurieItem = nomItem.replace(/^ECURIE\s+/i, '').trim();
-                    return nomEcurieItem.includes(nomEcurie) || nomEcurie.includes(nomEcurieItem);
-                }
-                
-                return false;
-            });
-            
-            if (correspondances.length >= 1) {
-                // Trier par rang (prendre le meilleur)
-                const meilleure = correspondances.reduce((best, current) => {
-                    if (!best) return current;
-                    const rangCurrent = parseInt(current.Rang) || 999;
-                    const rangBest = parseInt(best.Rang) || 999;
-                    return rangCurrent < rangBest ? current : best;
-                }, correspondances[0]);
-                
-                console.log(`Écurie trouvée: ${meilleure.Nom || meilleure.NomPostal}, Rang: ${meilleure.Rang}`);
-                
-                // Ajouter à la correspondance découverte
-                this.correspondancesDecouvertes[nomAvecInitiale.toUpperCase().trim()] = meilleure.Nom || meilleure.NomPostal;
-                
-                return {
-                    score: 0,
-                    rang: meilleure.Rang,
-                    nomTrouve: meilleure.Nom || meilleure.NomPostal,
-                    item: meilleure
-                };
-            }
-        }
-        
-        // *** NOUVEAU CODE POUR INITIALES ***
-        // Détecter les formats d'initiales : JP. CAYROUZE, S. NOM, etc.
-        const matchInitiales = nomAvecInitiale.match(/^([A-Z]+)\.?\s*([A-Z][A-Za-z\s\-]+)$/i);
-        
-        if (matchInitiales) {
-            const initiales = matchInitiales[1].toUpperCase();
-            const nomFamille = matchInitiales[2].trim().toUpperCase();
-            
-            console.log(`Recherche avec initiales: "${initiales}" pour "${nomFamille}"`);
-            
-            // Mapper les initiales aux prénoms possibles
-            const prenomsConnus = {
-                "JP": ["JEAN-PAUL", "JEAN PAUL"],
-                "J": ["JEAN", "JACQUES", "JEROME"],
-                "S": ["SERGE", "STEPHANE", "SEBASTIEN"],
-                "F": ["FRANCOIS", "FREDERIC", "FRANCK"],
-                "M": ["MICHEL", "MARC", "MATHIEU"],
-                "P": ["PIERRE", "PATRICK", "PHILIPPE"],
-                "A": ["ALAIN", "ANDRE", "ANTOINE"],
-                "D": ["DANIEL", "DENIS", "DIDIER"],
-                "C": ["CHRISTIAN", "CHRISTOPHE", "CLAUDE"],
-                "G": ["GERARD", "GILBERT", "GUILLAUME"], // Ajout de G pour G.AUGU
-                "MAT": ["MATHIEU", "MATTHIEU"],  // Ajout de MAT pour MAT. DAGUZAN-GARROS
-                "E": ["ERIC", "EMMANUEL", "ETIENNE"],  // Ajout pour E. LEMAITRE
-                "T": ["THIERRY", "THOMAS", "TONY"],     // Ajout pour T.DE LA HERONNIERE
-                "JPJ": ["JEAN-PIERRE-JOSEPH", "JEAN PIERRE JOSEPH"], // Ajout pour JPJ. DUBOIS
-                "PAT": ["PATRICK", "PATRICIA"]         // Ajout pour PAT. CHEDEVILLE
-            };
-            
-            // Rechercher les correspondances potentielles
-            let correspondances = [];
-            
-            // Si on a des prénoms associés aux initiales
-            if (prenomsConnus[initiales]) {
-                for (const prenom of prenomsConnus[initiales]) {
-                    // Rechercher les noms qui contiennent le prénom et le nom de famille
-                    const matches = donneesClassement.filter(item => {
-                        const nomComplet = (item.Nom || item.NomPostal || "").toUpperCase();
-                        return nomComplet.includes(prenom) && nomComplet.includes(nomFamille);
+                    
+                    const files = await response.json();
+                    console.log("Fichiers trouvés dans data/courses:", files);
+                    
+                    // Filtrer pour trouver tous les fichiers JSON correspondant à la date
+                    const courseFiles = files.filter(file => 
+                        file.name.startsWith(dateStr) && 
+                        file.name.endsWith('.json')
+                    );
+                    
+                    console.log(`Fichiers de courses trouvés pour ${dateStr}:`, courseFiles);
+                    
+                    // Si aucun fichier trouvé, retourner objet vide
+                    if (courseFiles.length === 0) {
+                        console.warn(`Aucun fichier de course trouvé pour la date ${dateStr}`);
+                        return courseData;
+                    }
+                    
+                    // Charger les données de chaque fichier
+                    for (const file of courseFiles) {
+                        try {
+                            await this.processFile(file, courseData);
+                        } catch (fileError) {
+                            console.error(`Erreur lors du traitement du fichier ${file.name}:`, fileError);
+                        }
+                    }
+                    
+                    // Filtrer les hippodromes qui n'ont pas de courses (après tous les traitements)
+                    Object.keys(courseData).forEach(hippodrome => {
+                        if (!courseData[hippodrome] || courseData[hippodrome].length === 0) {
+                            console.log(`Suppression de l'hippodrome ${hippodrome} car il n'a pas de courses valides`);
+                            delete courseData[hippodrome];
+                        }
                     });
                     
-                    correspondances = [...correspondances, ...matches];
-                }
-            } else {
-                // Si on n'a pas de mapping pour ces initiales, chercher n'importe quel prénom commençant par ces initiales
-                correspondances = donneesClassement.filter(item => {
-                    const nomComplet = (item.Nom || item.NomPostal || "").toUpperCase();
-                    const mots = nomComplet.split(/\s+/);
+                    console.log("Données de courses chargées avec succès:", courseData);
+                    return courseData;
                     
-                    // Vérifier si le premier mot commence par l'initiale et si le nom complet contient le nom de famille
-                    return mots.length > 0 && 
-                           mots[0].startsWith(initiales) && 
-                           nomComplet.includes(nomFamille);
+                } catch (error) {
+                    console.error("Erreur lors du chargement des courses:", error);
+                    return {};
+                }
+            },
+            
+            // Traiter un fichier JSON
+            async processFile(file, courseData) {
+                console.log(`Traitement du fichier: ${file.name}, URL: ${file.download_url}`);
+                
+                const fileResponse = await fetch(file.download_url);
+                if (!fileResponse.ok) {
+                    console.error(`Erreur lors du chargement du fichier ${file.name}: ${fileResponse.status}`);
+                    return;
+                }
+                
+                try {
+                    const fileData = await fileResponse.json();
+                    console.log(`Structure du fichier ${file.name}:`, Object.keys(fileData));
+                    
+                    // ÉTAPE 1: Vérifier si c'est une réunion de type PLAT
+                    // Si type_reunion existe et n'est pas "Plat", ignorer ce fichier
+                    if (fileData.type_reunion && fileData.type_reunion.toLowerCase() !== "plat") {
+                        console.log(`Fichier ${file.name} ignoré car type_reunion = ${fileData.type_reunion} (pas Plat)`);
+                        return;
+                    }
+                    
+                    // Détecter automatiquement la structure du fichier
+                    if (fileData.hippodrome) {
+                        // Format standard avec hippodrome et courses
+                        console.log(`Fichier ${file.name} contient l'hippodrome: ${fileData.hippodrome}`);
+                        
+                        // Vérifier si 'courses' existe et est un tableau
+                        if (fileData.courses && Array.isArray(fileData.courses)) {
+                            // Filtrer pour ne garder que les courses de type "plat" (insensible à la casse)
+                            // ET qui ont des participants valides
+                            const validCourses = fileData.courses.filter(course => {
+                                // Vérifier si le type de course est plat
+                                const isPlat = !course.type || course.type.toLowerCase() === "plat";
+                                
+                                // Vérifier si la course a des participants valides
+                                const hasParticipants = course.participants && 
+                                                        Array.isArray(course.participants) && 
+                                                        course.participants.length > 0 &&
+                                                        // Vérifier que les participants ont des attributs cheval ou jockey pour s'assurer que ce sont des vrais participants
+                                                        course.participants.some(p => p.cheval || p.jockey);
+                                
+                                return isPlat && hasParticipants;
+                            });
+                            
+                            if (validCourses.length > 0) {
+                                courseData[fileData.hippodrome] = validCourses;
+                                console.log(`Ajout de ${validCourses.length} courses valides pour l'hippodrome ${fileData.hippodrome}`);
+                            } else {
+                                console.log(`Aucune course valide trouvée pour l'hippodrome ${fileData.hippodrome}`);
+                            }
+                        }
+                    } else {
+                        // Essayer de déterminer dynamiquement le nom de l'hippodrome depuis le nom du fichier
+                        const filename = file.name;
+                        // Extraire le nom de l'hippodrome du nom de fichier (après la date)
+                        const match = filename.match(/\d{4}-\d{2}-\d{2}_(.+)\.json$/);
+                        
+                        if (match && match[1]) {
+                            const hippodromeName = match[1].toUpperCase().replace(/_/g, ' ');
+                            console.log(`Nom d'hippodrome extrait du fichier: ${hippodromeName}`);
+                            
+                            // Vérifier si le contenu est déjà un tableau
+                            if (Array.isArray(fileData)) {
+                                const validCourses = fileData.filter(course => {
+                                    const isPlat = !course.type || course.type.toLowerCase() === "plat";
+                                    const hasParticipants = course.participants && 
+                                                          Array.isArray(course.participants) && 
+                                                          course.participants.length > 0 &&
+                                                          course.participants.some(p => p.cheval || p.jockey);
+                                    return isPlat && hasParticipants;
+                                });
+                                
+                                if (validCourses.length > 0) {
+                                    courseData[hippodromeName] = validCourses;
+                                    console.log(`Ajout de ${validCourses.length} courses valides pour l'hippodrome ${hippodromeName}`);
+                                }
+                            } else {
+                                // Si le contenu est directement l'objet de course individuel
+                                const isPlat = !fileData.type || fileData.type.toLowerCase() === "plat";
+                                const hasParticipants = fileData.participants && 
+                                                      Array.isArray(fileData.participants) && 
+                                                      fileData.participants.length > 0 &&
+                                                      fileData.participants.some(p => p.cheval || p.jockey);
+                                
+                                if (isPlat && hasParticipants) {
+                                    courseData[hippodromeName] = [fileData];
+                                    console.log(`Ajout d'une course valide pour l'hippodrome ${hippodromeName}`);
+                                }
+                            }
+                        } else {
+                            console.warn(`Impossible de déterminer l'hippodrome pour le fichier ${filename}`);
+                        }
+                    }
+                } catch (jsonError) {
+                    console.error(`Erreur lors de l'analyse JSON du fichier ${file.name}:`, jsonError);
+                    // Essayer de charger le contenu en texte brut pour déboguer
+                    const textContent = await fileResponse.text();
+                    console.log(`Contenu brut du fichier ${file.name} (premiers 200 caractères):`, textContent.substring(0, 200));
+                }
+            },
+            
+            // Formater une date au format YYYY-MM-DD
+            formatDateYMD(date) {
+                const year = date.getFullYear();
+                const month = String(date.getMonth() + 1).padStart(2, '0');
+                const day = String(date.getDate()).padStart(2, '0');
+                return `${year}-${month}-${day}`;
+            },
+            
+            // Formatter la date au format affichable (DD/MM/YYYY)
+            formatDateDMY(date) {
+                const day = String(date.getDate()).padStart(2, '0');
+                const month = String(date.getMonth() + 1).padStart(2, '0');
+                const year = date.getFullYear();
+                return `${day}/${month}/${year}`;
+            },
+            
+            // Obtenir une date lisible (aujourd'hui, demain, etc.)
+            getReadableDate(date) {
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                
+                const tomorrow = new Date(today);
+                tomorrow.setDate(tomorrow.getDate() + 1);
+                
+                const yesterday = new Date(today);
+                yesterday.setDate(yesterday.getDate() - 1);
+                
+                const dateToCheck = new Date(date);
+                dateToCheck.setHours(0, 0, 0, 0);
+                
+                if (dateToCheck.getTime() === today.getTime()) {
+                    return `Aujourd'hui (${this.formatDateDMY(date)})`;
+                } else if (dateToCheck.getTime() === tomorrow.getTime()) {
+                    return `Demain (${this.formatDateDMY(date)})`;
+                } else if (dateToCheck.getTime() === yesterday.getTime()) {
+                    return `Hier (${this.formatDateDMY(date)})`;
+                } else {
+                    return this.formatDateDMY(date);
+                }
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Variables globales
+            const resultsContainer = document.getElementById('results-container');
+            const searchInput = document.getElementById('search-input');
+            const searchClear = document.getElementById('search-clear');
+            const lastUpdateEl = document.getElementById('last-update');
+            const currentDateSpan = document.getElementById('current-date');
+            const dateButton = document.getElementById('date-button');
+            const dateInput = document.getElementById('date-input');
+            const yesterdayBtn = document.getElementById('yesterdayBtn');
+            const todayBtn = document.getElementById('todayBtn');
+            
+            // Variable pour stocker les données de courses et l'état de l'application
+            let courseData = {};
+            window.currentDate = new Date();
+            let activeDetailSection = null;
+            
+            // Mise à jour de la date affichée
+            currentDateSpan.textContent = coursesLoader.getReadableDate(window.currentDate);
+            lastUpdateEl.textContent = coursesLoader.formatDateDMY(window.currentDate);
+            
+            // Charger les courses pour la date actuelle
+            loadCoursesForCurrentDate();
+            
+            // Boutons pour naviguer entre aujourd'hui et hier
+            yesterdayBtn.addEventListener('click', function() {
+                const yesterday = new Date(window.currentDate);
+                yesterday.setDate(yesterday.getDate() - 1);
+                window.currentDate = yesterday;
+                
+                // Mettre à jour l'affichage de la date
+                currentDateSpan.textContent = coursesLoader.getReadableDate(window.currentDate);
+                lastUpdateEl.textContent = coursesLoader.formatDateDMY(window.currentDate);
+                
+                // Recharger les courses
+                loadCoursesForCurrentDate();
+            });
+            
+            todayBtn.addEventListener('click', function() {
+                window.currentDate = new Date();
+                
+                // Mettre à jour l'affichage de la date
+                currentDateSpan.textContent = coursesLoader.getReadableDate(window.currentDate);
+                lastUpdateEl.textContent = coursesLoader.formatDateDMY(window.currentDate);
+                
+                // Recharger les courses
+                loadCoursesForCurrentDate();
+            });
+            
+            // Fonction pour charger et afficher les top performers pour chaque catégorie
+            async function loadTopPerformers() {
+                // Précharger toutes les données de classement
+                await rankingLoader.loadAllData();
+                
+                // Liste des catégories à afficher
+                const categories = [
+                    {id: 'jockeys', icon: 'fa-user', container: 'top-jockeys'},
+                    {id: 'chevaux', icon: 'fa-horse', container: 'top-chevaux'},
+                    {id: 'entraineurs', icon: 'fa-users', container: 'top-entraineurs'},
+                    {id: 'eleveurs', icon: 'fa-seedling', container: 'top-eleveurs'},
+                    {id: 'proprietaires', icon: 'fa-user-tie', container: 'top-proprietaires'}
+                ];
+                
+                // Traiter chaque catégorie
+                categories.forEach(category => {
+                    // Vérifier si le container existe (pour les sections présentes sur la page)
+                    const container = document.getElementById(category.container);
+                    if (!container) return;
+                    
+                    // Récupérer les données de cette catégorie (déjà triées par le rang mixte)
+                    const data = rankingLoader.data[category.id] || [];
+                    
+                    // Si aucune donnée, afficher un message
+                    if (!data.length) {
+                        container.innerHTML = `
+                            <div style="text-align: center; padding: 1rem;">
+                                <p>Aucune donnée disponible pour cette catégorie</p>
+                            </div>
+                        `;
+                        return;
+                    }
+                    
+                    // Prendre les 4 premiers éléments
+                    const topItems = data.slice(0, 4);
+                    
+                    // Générer le HTML pour cette catégorie
+                    let html = '';
+                    topItems.forEach(item => {
+                        // Récupérer le nom selon la catégorie
+                        const name = category.id === 'chevaux' ? item.Nom : item.NomPostal;
+                        const rang = item.Rang; // Utiliser le rang directement
+                        
+                        // Calculer la largeur de la barre de progression basée sur le rang
+                        // (95% pour #1, 85% pour #2, etc.)
+                        const progressWidth = Math.max(40, 100 - ((rang - 1) * 15));
+                        
+                        // Déterminer la classe pour la médaille (top 3)
+                        const rangClass = rang <= 3 ? `rang-${rang}` : '';
+                        
+                        html += `
+                            <div class="jockey-item">
+                                <div class="jockey-img">
+                                    <i class="fas ${category.icon}"></i>
+                                </div>
+                                <div class="jockey-info">
+                                    <h3>${name || 'Inconnu'}</h3>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: ${progressWidth}%;"></div>
+                                    </div>
+                                    <span class="score">Rang <span class="rang-badge ${rangClass}">#${rang}</span></span>
+                                </div>
+                            </div>
+                        `;
+                    });
+                    
+                    container.innerHTML = html;
                 });
             }
             
-            // Si on a trouvé des correspondances
-            if (correspondances.length > 0) {
-                // Trier par rang et prendre la meilleure
-                const meilleure = correspondances.sort((a, b) => {
-                    const rangA = parseInt(a.Rang) || 999;
-                    const rangB = parseInt(b.Rang) || 999;
-                    return rangA - rangB;
-                })[0];
+            // Fonction pour charger les courses pour la date actuelle
+            async function loadCoursesForCurrentDate() {
+                const dateStr = coursesLoader.formatDateYMD(window.currentDate);
+                console.log(`Chargement des courses pour: ${dateStr}`);
                 
-                console.log(`Correspondance trouvée via initiales: ${meilleure.Nom || meilleure.NomPostal}, Rang: ${meilleure.Rang}`);
-                
-                // Ajouter à la correspondance découverte
-                this.correspondancesDecouvertes[nomAvecInitiale.toUpperCase().trim()] = meilleure.Nom || meilleure.NomPostal;
-                
-                return {
-                    score: 0,
-                    rang: meilleure.Rang,
-                    nomTrouve: meilleure.Nom || meilleure.NomPostal,
-                    item: meilleure
-                };
-            }
-        }
-        
-        // Format traditionnel avec l'expression régulière originale
-        const match = nomNormalise.match(/^(MME|MR|M)?\\s*([A-Z])\\\.\\?\\s*([A-Z\\s]+)$/i);
-        
-        if (match) {
-            const prefixe = match[1] ? match[1].toUpperCase() : '';
-            const initiale = match[2].toUpperCase();
-            const nomFamille = match[3].trim().toUpperCase();
-            
-            console.log(`Recherche pour: Préfixe="${prefixe}", Initiale="${initiale}", Nom="${nomFamille}"`);
-            
-            // Chercher tous les noms qui correspondent au nom de famille et dont le prénom commence par l'initiale
-            const correspondances = donneesClassement.filter(item => {
-                const nomComplet = this.normaliserNom(item.Nom || item.NomPostal || "");
-                
-                // Extraire le préfixe, le prénom et le nom de famille du nom complet
-                const matchComplet = nomComplet.match(/^(MME|MR|M)?\\s*([A-Z]+)(?:\\s+([A-Z\\s]+))?$/i);
-                
-                if (!matchComplet) return false;
-                
-                const prefixeComplet = matchComplet[1] ? matchComplet[1].toUpperCase() : '';
-                const prenomComplet = matchComplet[2].toUpperCase();
-                const nomFamilleComplet = matchComplet[3] ? matchComplet[3].trim().toUpperCase() : '';
-                
-                // Vérifier si le prénom commence par l'initiale et si le nom de famille correspond
-                const initialeMatch = prenomComplet.startsWith(initiale);
-                const nomMatch = nomFamilleComplet.includes(nomFamille) || nomFamille.includes(nomFamilleComplet);
-                
-                return initialeMatch && nomMatch;
-            });
-            
-            // Si on a trouvé des correspondances, utiliser la meilleure
-            if (correspondances.length >= 1) {
-                // Prendre celle avec le meilleur rang en cas de plusieurs correspondances
-                const meilleure = correspondances.reduce((best, current) => {
-                    if (!best) return current;
-                    const rangCurrent = parseInt(current.Rang) || 999;
-                    const rangBest = parseInt(best.Rang) || 999;
-                    return rangCurrent < rangBest ? current : best;
-                }, correspondances[0]);
-                
-                // Ajouter à la correspondance découverte
-                this.correspondancesDecouvertes[nomAvecInitiale.toUpperCase().trim()] = meilleure.Nom || meilleure.NomPostal;
-                
-                return {
-                    score: 0,
-                    rang: meilleure.Rang,
-                    nomTrouve: meilleure.Nom || meilleure.NomPostal,
-                    item: meilleure
-                };
-            }
-        }
-        
-        // Si pas de correspondance avec les initiales, essayer l'approche standard
-        return this.trouverMeilleurScore(donneesClassement, nomAvecInitiale);
-    },
-    
-    // Trouver le meilleur score pour un nom dans les données de classement
-    // FONCTION AMÉLIORÉE AVEC RECHERCHE PROGRESSIVE
-    trouverMeilleurScore(donneesClassement, nom) {
-        if (!nom || !donneesClassement || !donneesClassement.length) {
-            return { score: 0, rang: null, item: null };
-        }
-        
-        // Nettoyer les noms tronqués (avec ...)
-        nom = this.nettoyerNomTronque(nom);
-        
-        // Standardiser les apostrophes et autres cas spéciaux
-        nom = this.normaliserNomAvecApostrophe(nom);
-        
-        // Vérifier d'abord la table de correspondance manuelle
-        const nomUpper = nom.toUpperCase().trim();
-        if (this.correspondanceManuelle[nomUpper]) {
-            const nomCorrespondance = this.correspondanceManuelle[nomUpper];
-            console.log(`Correspondance manuelle trouvée: "${nomUpper}" -> "${nomCorrespondance}"`);
-            
-            // Rechercher la correspondance dans les données de classement
-            for (const item of donneesClassement) {
-                const nomItem = item.Nom || item.NomPostal || "";
-                if (this.normaliserNom(nomItem) === this.normaliserNom(nomCorrespondance)) {
-                    return {
-                        score: 0,
-                        rang: item.Rang,
-                        similarite: 100,
-                        item: item
-                    };
+                try {
+                    // Afficher l'indicateur de chargement
+                    resultsContainer.innerHTML = `
+                        <div class="loading">
+                            <div class="spinner" style="border: 4px solid rgba(233, 209, 140, 0.1); border-radius: 50%; border-top: 4px solid var(--gold); border-left: 4px solid var(--gold); width: 50px; height: 50px; animation: spin 1s linear infinite; margin: 0 auto 1.5rem;"></div>
+                            <p>Chargement des courses pour ${coursesLoader.formatDateDMY(window.currentDate)}...</p>
+                        </div>
+                    `;
+                    
+                    // Charger les données
+                    courseData = await coursesLoader.loadCoursesForDate(dateStr);
+                    
+                    // Précharger les données de classement en arrière-plan
+                    rankingLoader.loadAllData().then(() => {
+                        console.log("Données de classement préchargées avec succès");
+                        // Charger les top performers des différentes catégories
+                        loadTopPerformers().catch(error => {
+                            console.error("Erreur lors du chargement des top performers:", error);
+                        });
+                    }).catch(error => {
+                        console.error("Erreur lors du préchargement des données de classement:", error);
+                    });
+                    
+                    // Mettre à jour l'affichage
+                    displayHippodromes();
+                    
+                } catch (error) {
+                    console.error("Erreur lors du chargement des courses:", error);
+                    resultsContainer.innerHTML = `
+                        <div class="no-results" style="text-align: center; padding: 3rem; color: var(--light-gold); background-color: rgba(22, 62, 60, 0.3); border-radius: 12px; border: 1px solid rgba(233, 209, 140, 0.2); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);">
+                            <i class="fas fa-exclamation-triangle" style="font-size: 3.5rem; margin-bottom: 1.5rem; color: var(--gold); opacity: 0.8;"></i>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; font-weight: 500;">Erreur de chargement</h3>
+                            <p>Impossible de charger les données des courses.</p>
+                        </div>
+                    `;
                 }
             }
-        }
-        
-        // Vérifier aussi dans les correspondances découvertes
-        if (this.correspondancesDecouvertes[nomUpper]) {
-            const nomCorrespondance = this.correspondancesDecouvertes[nomUpper];
-            console.log(`Correspondance découverte précédemment: "${nomUpper}" -> "${nomCorrespondance}"`);
             
-            // Rechercher la correspondance dans les données de classement
-            for (const item of donneesClassement) {
-                const nomItem = item.Nom || item.NomPostal || "";
-                if (this.normaliserNom(nomItem) === this.normaliserNom(nomCorrespondance)) {
-                    return {
-                        score: 0,
-                        rang: item.Rang,
-                        similarite: 100,
-                        item: item
-                    };
+            // Fonction utilitaire pour obtenir la valeur d'une propriété avec plusieurs noms possibles
+            function getPropertyValue(obj, propertyNames) {
+                for (const name of propertyNames) {
+                    if (obj[name] !== undefined) {
+                        return obj[name];
+                    }
                 }
+                return null;
             }
-        }
-        
-        // *** NOUVEAU CODE POUR CHEVAUX ***
-        // Vérifier s'il s'agit d'un nom de cheval avec suffixe (H.PS, F.PS, etc.)
-        const matchSuffixeCheval = nom.match(/^(.+?)\s+[HFM]\.?P\.?S\.?.*/i);
-        if (matchSuffixeCheval) {
-            const nomSansSuffixe = matchSuffixeCheval[1].trim();
-            console.log(`Recherche sans suffixe: "${nomSansSuffixe}"`);
             
-            // Rechercher le nom sans suffixe dans les données
-            for (const item of donneesClassement) {
-                const nomItem = item.Nom || item.NomPostal || "";
-                if (this.normaliserNom(nomItem) === this.normaliserNom(nomSansSuffixe)) {
-                    console.log(`Correspondance sans suffixe trouvée: "${nomItem}"`);
-                    
-                    // Mémoriser cette correspondance pour l'avenir
-                    this.correspondancesDecouvertes[nomUpper] = nomItem;
-                    
-                    return {
-                        score: 0,
-                        rang: item.Rang,
-                        similarite: 100,
-                        item: item
-                    };
+            // Fonction pour créer un ID unique pour les détails d'une course
+            function createCourseDetailId(hippodrome, courseName) {
+                return `details-${hippodrome.replace(/\s+/g, '-').toLowerCase()}-${courseName.replace(/\s+/g, '-').toLowerCase()}`;
+            }
+            
+            // Fonction pour afficher les hippodromes et leurs courses
+            function displayHippodromes() {
+                // Si aucune donnée n'est disponible
+                if (Object.keys(courseData).length === 0) {
+                    resultsContainer.innerHTML = `
+                        <div class="no-results" style="text-align: center; padding: 3rem; color: var(--light-gold); background-color: rgba(22, 62, 60, 0.3); border-radius: 12px; border: 1px solid rgba(233, 209, 140, 0.2); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);">
+                            <i class="fas fa-search" style="font-size: 3.5rem; margin-bottom: 1.5rem; color: var(--gold); opacity: 0.8;"></i>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; font-weight: 500;">Aucune course trouvée</h3>
+                            <p>Aucune course n'est disponible pour cette date</p>
+                        </div>
+                    `;
+                    return;
                 }
-            }
-        }
-        
-        const nomNormalise = this.normaliserNom(nom);
-        console.log(`Recherche pour: "${nom}" normalisé en "${nomNormalise}"`);
-        
-        // STRATÉGIE 1: Correspondance exacte
-        for (const item of donneesClassement) {
-            const nomItem = item.Nom || item.NomPostal || "";
-            const nomItemNormalise = this.normaliserNom(nomItem);
-            
-            if (nomItemNormalise === nomNormalise) {
-                console.log(`Correspondance exacte trouvée: "${nomItem}"`);
                 
-                // Mémoriser cette correspondance
-                this.correspondancesDecouvertes[nomUpper] = nomItem;
+                // Filtrer les hippodromes par recherche
+                const searchTerm = searchInput.value.trim().toLowerCase();
+                let html = '';
                 
-                return {
-                    score: 0,
-                    rang: item.Rang,
-                    similarite: 100,
-                    item: item
-                };
-            }
-        }
-        
-        // STRATÉGIE 2: Extraire le nom sans suffixes ni origines pour les chevaux
-        // Par exemple: "CORTEZ BANK (GB) H.PS. 6 a." -> "CORTEZ BANK"
-        const nomSansSuffixe = nomNormalise.replace(/\s*\([^)]+\)|\s+[HFM]\.?P\.?S\.?.*/gi, "").trim();
-        if (nomSansSuffixe !== nomNormalise) {
-            console.log(`Recherche sans suffixe: "${nomSansSuffixe}"`);
-            
-            for (const item of donneesClassement) {
-                const nomItem = item.Nom || item.NomPostal || "";
-                const nomItemSansSuffixe = this.normaliserNom(nomItem).replace(/\s*\([^)]+\)|\s+[HFM]\.?P\.?S\.?.*/gi, "").trim();
-                
-                if (nomItemSansSuffixe === nomSansSuffixe) {
-                    console.log(`Correspondance sans suffixe trouvée: "${nomItem}"`);
+                // Parcourir les hippodromes
+                for (const [hippodrome, courses] of Object.entries(courseData)) {
+                    // Vérifier que courses est un array
+                    if (!Array.isArray(courses)) {
+                        console.error(`Les courses pour l'hippodrome "${hippodrome}" ne sont pas un tableau.`);
+                        continue;
+                    }
                     
-                    // Mémoriser cette correspondance
-                    this.correspondancesDecouvertes[nomUpper] = nomItem;
+                    // Filtrer les courses si un terme de recherche est spécifié
+                    let filteredCourses = courses;
+                    if (searchTerm) {
+                        filteredCourses = courses.filter(course => 
+                            (course.nom && course.nom.toLowerCase().includes(searchTerm)) || 
+                            hippodrome.toLowerCase().includes(searchTerm) ||
+                            (course.participants && Array.isArray(course.participants) && course.participants.some(p => 
+                                (p.cheval && p.cheval.toLowerCase().includes(searchTerm)) ||
+                                (p.jockey && p.jockey.toLowerCase().includes(searchTerm)) ||
+                                (p.entraineur && p.entraineur.toLowerCase().includes(searchTerm)) ||
+                                (getPropertyValue(p, ["proprietaire", "propriétaire"]) && getPropertyValue(p, ["proprietaire", "propriétaire"]).toLowerCase().includes(searchTerm))
+                            ))
+                        );
+                    }
                     
-                    return {
-                        score: 0,
-                        rang: item.Rang,
-                        similarite: 95,
-                        item: item
-                    };
+                    // Si aucune course ne correspond, passer à l'hippodrome suivant
+                    if (filteredCourses.length === 0) continue;
+                    
+                    // Nouveau format d'affichage avec des cartes
+                    const hippodromeId = hippodrome.replace(/\s+/g, '-').toLowerCase();
+                    html += `
+                        <div class="hippodrome-card">
+                            <div class="hippodrome-title">
+                                <h3><i class="fas fa-horse-head"></i> ${hippodrome}</h3>
+                                <span>${filteredCourses.length} course${filteredCourses.length > 1 ? 's' : ''}</span>
+                            </div>
+                            <div class="course-grid" id="grid-${hippodromeId}">
+                    `;
+                    
+                    // Ajouter chaque course comme une carte
+                    filteredCourses.forEach(course => {
+                        if (!course) return; // Ignorer les courses nulles ou undefined
+                        
+                        const participantsCount = course.participants && Array.isArray(course.participants) 
+                            ? course.participants.length 
+                            : 0;
+                        
+                        const courseDetailId = createCourseDetailId(hippodrome, course.nom);
+                        
+                        html += `
+                            <div class="course-card" data-hippodrome="${hippodrome}" data-course="${course.nom}" data-detail-id="${courseDetailId}">
+                                <div class="course-time">${course.horaire || ""}</div>
+                                <div class="course-name">${course.nom || ""}</div>
+                                <div class="course-meta">
+                                    <div class="participant-count">${participantsCount} participant${participantsCount > 1 ? 's' : ''}</div>
+                                    <div class="course-distance"><i class="fas fa-route"></i> ${course.distance || ""}</div>
+                                    <div class="course-type">${course.type || "Plat"}</div>
+                                </div>
+                            </div>
+                        `;
+                    });
+                    
+                    html += `
+                            </div>
+                        </div>
+                    `;
                 }
-            }
-        }
-        
-        // STRATÉGIE 3: Vérifier si le nom est contenu dans l'autre
-        for (const item of donneesClassement) {
-            const nomItem = item.Nom || item.NomPostal || "";
-            const nomItemNormalise = this.normaliserNom(nomItem);
-            
-            // Si l'un contient l'autre (par exemple "CORTEZ BANK" dans "CORTEZ BANK (GB)")
-            if (nomItemNormalise.includes(nomSansSuffixe) || nomSansSuffixe.includes(nomItemNormalise)) {
-                console.log(`Correspondance par inclusion trouvée: "${nom}" avec "${nomItem}"`);
                 
-                // Mémoriser cette correspondance
-                this.correspondancesDecouvertes[nomUpper] = nomItem;
-                
-                return {
-                    score: 0,
-                    rang: item.Rang,
-                    similarite: 90,
-                    item: item
-                };
-            }
-        }
-        
-        // STRATÉGIE 4: Écuries (cas spécial)
-        if (nomNormalise.startsWith('ECURIE') || nom.toUpperCase().startsWith('EC.')) {
-            const nomEcurie = nomNormalise.replace(/^ECURIE\s+/i, '').trim();
-            
-            // Recherche d'écurie simplifiée
-            for (const item of donneesClassement) {
-                const nomItem = this.normaliserNom(item.Nom || item.NomPostal || "");
-                if (nomItem.startsWith('ECURIE') && 
-                    (nomItem.includes(nomEcurie) || nomEcurie.includes(nomItem.replace(/^ECURIE\s+/i, '').trim()))) {
+                // Si aucun résultat après filtrage
+                if (html === '') {
+                    resultsContainer.innerHTML = `
+                        <div class="no-results" style="text-align: center; padding: 3rem; color: var(--light-gold); background-color: rgba(22, 62, 60, 0.3); border-radius: 12px; border: 1px solid rgba(233, 209, 140, 0.2); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);">
+                            <i class="fas fa-search" style="font-size: 3.5rem; margin-bottom: 1.5rem; color: var(--gold); opacity: 0.8;"></i>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; font-weight: 500;">Aucun résultat trouvé</h3>
+                            <p>Essayez de modifier votre recherche</p>
+                        </div>
+                    `;
+                } else {
+                    resultsContainer.innerHTML = html;
                     
-                    // Mémoriser cette correspondance
-                    this.correspondancesDecouvertes[nomUpper] = item.Nom || item.NomPostal;
-                    
-                    return {
-                        score: 0,
-                        rang: item.Rang,
-                        similarite: 90,
-                        item: item
-                    };
-                }
-            }
-        }
-        
-        // STRATÉGIE 5: Correspondance partielle par mots communs
-        const correspondances = [];
-        const motsNomOriginal = nomSansSuffixe.split(/\s+/).filter(m => m.length > 1);
-        
-        donneesClassement.forEach(item => {
-            const nomReference = this.normaliserNom(item.Nom || item.NomPostal || "");
-            const nomReferenceSansSuffixe = nomReference.replace(/\s*\([^)]+\)|\s+[HFM]\.?P\.?S\.?.*/gi, "").trim();
-            const motsRef = nomReferenceSansSuffixe.split(/\s+/).filter(m => m.length > 1);
-            
-            // Compter les mots en commun
-            const motsCommuns = motsRef.filter(mot => motsNomOriginal.includes(mot)).length;
-            
-            if (motsCommuns > 0) {
-                // Score basé sur le pourcentage de mots en commun
-                const similarite = Math.min(80, (motsCommuns / Math.max(motsRef.length, motsNomOriginal.length)) * 100);
-                
-                if (similarite > 50) { // Seuil minimum de similarité
-                    correspondances.push({
-                        item: item,
-                        similarite: similarite
+                    // Ajouter les événements click aux cartes de course
+                    document.querySelectorAll('.course-card').forEach(card => {
+                        card.addEventListener('click', function() {
+                            const hippodrome = this.dataset.hippodrome;
+                            const courseName = this.dataset.course;
+                            const detailId = this.dataset.detailId;
+                            toggleCourseDetails(hippodrome, courseName, detailId, this);
+                        });
                     });
                 }
             }
-        });
-        
-        // Trier par similarité décroissante
-        correspondances.sort((a, b) => b.similarite - a.similarite);
-        
-        // Si on a trouvé des correspondances, retourner la meilleure
-        if (correspondances.length > 0) {
-            console.log(`Meilleure correspondance partielle: "${correspondances[0].item.Nom || correspondances[0].item.NomPostal}" (similarité: ${correspondances[0].similarite}%)`);
             
-            // Mémoriser cette correspondance si similarité > 70%
-            if (correspondances[0].similarite > 70) {
-                this.correspondancesDecouvertes[nomUpper] = correspondances[0].item.Nom || correspondances[0].item.NomPostal;
-            }
-            
-            return {
-                score: 0,
-                rang: correspondances[0].item.Rang,
-                similarite: correspondances[0].similarite,
-                item: correspondances[0].item
-            };
-        }
-        
-        // Aucune correspondance trouvée
-        console.log(`Aucune correspondance trouvée pour "${nom}"`);
-        return { score: 0, rang: null, item: null };
-    },
-    
-    // Trouver l'item correspondant à un nom dans un classement
-    trouverItemDansClassement(donneesClassement, nom, categorie) {
-        if (!nom || !donneesClassement || !donneesClassement.length) {
-            return null;
-        }
-        
-        // Pour les éleveurs et propriétaires qui peuvent être multiples
-        if (categorie === 'eleveurs' || categorie === 'proprietaires') {
-            // Si c'est une chaîne, la diviser sur les virgules et autres séparateurs
-            // AMÉLIORÉ: meilleure prise en charge des séparateurs et nettoyage de l'ellipse finale
-            let noms = [];
-            if (typeof nom === 'string') {
-                // Nettoyer d'abord l'ellipse en fin de chaîne s'il y en a une
-                const nomSansEllipse = this.nettoyerNomTronque(nom);
-                noms = nomSansEllipse.split(/\s*[,&\/+]\s*|\s+et\s+|\s+and\s+/i).filter(n => n.trim());
-            } else {
-                noms = [nom];
-            }
-            
-            if (noms.length === 0 || !noms[0]) {
-                return null;
-            }
-            
-            console.log(`Propriétaire/éleveur séparé en ${noms.length} noms individuels:`, noms);
-            
-            // Chercher le meilleur item parmi tous les noms
-            let meilleurItem = null;
-            let meilleurRang = null;
-            
-            for (const nomIndividuel of noms) {
-                if (!nomIndividuel.trim()) continue;
+            // Déterminer la position de la course dans la journée
+            function getCoursePosition(horaire) {
+                if (!horaire) return 1;
                 
-                console.log(`Traitement du propriétaire/éleveur: "${nomIndividuel}"`);
-                const resultat = this.trouverPersonneParInitiale(donneesClassement, nomIndividuel, categorie);
-                if (resultat.item && resultat.rang !== null) {
-                    const rang = parseInt(resultat.rang);
-                    if (meilleurRang === null || rang < meilleurRang) {
-                        meilleurRang = rang;
-                        meilleurItem = resultat.item;
-                        console.log(`Nouveau meilleur élément trouvé: ${meilleurItem.Nom || meilleurItem.NomPostal} (rang ${rang}) pour "${nomIndividuel}"`);
+                // Collecter tous les horaires de courses visibles
+                const courses = document.querySelectorAll('.course-card');
+                const horaires = Array.from(courses)
+                    .map(c => c.querySelector('.course-time')?.textContent)
+                    .filter(h => h); // Filtrer les valeurs null/undefined
+                
+                // Trier les horaires chronologiquement
+                horaires.sort((a, b) => {
+                    // Convertir en minutes depuis minuit pour comparer
+                    const toMinutes = (timeStr) => {
+                        const [hours, minutes] = timeStr.split(':').map(Number);
+                        return hours * 60 + minutes;
+                    };
+                    
+                    return toMinutes(a) - toMinutes(b);
+                });
+                
+                // Trouver la position de l'horaire actuel (indexée à 1)
+                const position = horaires.indexOf(horaire) + 1;
+                return position > 0 ? position : 1;
+            }
+
+            // Obtenir le nombre total de courses dans la journée
+            function getCoursesInDay() {
+                // Compter toutes les cards de courses
+                const cards = document.querySelectorAll('.course-card');
+                return cards.length || 1; // Au moins 1 pour éviter division par zéro
+            }
+            
+            // Fonction pour afficher/masquer les détails d'une course sous la carte
+            async function toggleCourseDetails(hippodrome, courseName, detailId, courseCard) {
+                // Trouver la course correspondante
+                const course = courseData[hippodrome] && Array.isArray(courseData[hippodrome])
+                    ? courseData[hippodrome].find(c => c && c.nom === courseName)
+                    : null;
+                
+                if (!course) {
+                    console.error(`Course "${courseName}" non trouvée pour l'hippodrome "${hippodrome}"`);
+                    return;
+                }
+                
+                // Vérifier si les détails sont déjà affichés
+                let detailsElement = document.getElementById(detailId);
+                
+                // Fermer d'abord la section active si elle existe, quelle que soit la section que l'on va ouvrir
+                if (activeDetailSection) {
+                    activeDetailSection.classList.remove('visible');
+                    
+                    // Attendre que l'animation de fermeture soit terminée avant de continuer
+                    await new Promise(resolve => {
+                        setTimeout(() => {
+                            if (activeDetailSection && activeDetailSection.parentNode) {
+                                activeDetailSection.parentNode.removeChild(activeDetailSection);
+                            }
+                            activeDetailSection = null;
+                            resolve();
+                        }, 300);
+                    });
+                }
+                
+                // Si c'était le même élément qui était déjà ouvert, on s'arrête là (toggle off)
+                if (detailsElement && detailsElement === activeDetailSection) {
+                    return;
+                }
+                
+                // Créer la nouvelle section de détails
+                detailsElement = document.createElement('div');
+                detailsElement.id = detailId;
+                detailsElement.className = 'course-details';
+                
+                // Préparer le contenu des détails
+                const participantsCount = course.participants && Array.isArray(course.participants) ? course.participants.length : 0;
+                
+                detailsElement.innerHTML = `
+                    <div class="course-details-title">
+                        ${course.nom || ""}
+                        <span class="close-details">&times;</span>
+                    </div>
+                    
+                    <div class="course-info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info-label">Hippodrome</div>
+                            <div class="info-value">${hippodrome}</div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="info-label">Horaire</div>
+                            <div class="info-value">${course.horaire || ""}</div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div class="info-label">Date</div>
+                            <div class="info-value">${coursesLoader.formatDateDMY(window.currentDate)}</div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-route"></i>
+                            <div class="info-label">Distance</div>
+                            <div class="info-value">${course.distance || "Non spécifiée"}</div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <div class="info-label">Participants</div>
+                            <div class="info-value">${participantsCount}</div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-running"></i>
+                            <div class="info-label">Type</div>
+                            <div class="info-value">${course.type || "Plat"}</div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="participants-title">Liste des participants</h3>
+                    
+                    <div class="table-responsive">
+                        <table class="participants-table">
+                            <thead>
+                                <tr>
+                                    <th>N°</th>
+                                    <th>Cheval</th>
+                                    <th>Jockey</th>
+                                    <th>Entraîneur</th>
+                                    <th>Propriétaire</th>
+                                    <th>Éleveurs</th>
+                                    <th>Poids</th>
+                                    <th>Score prédictif</th>
+                                </tr>
+                            </thead>
+                            <tbody id="participants-${detailId}">
+                                <tr>
+                                    <td colspan="8" class="loading-indicator">
+                                        <i class="fas fa-spinner fa-spin"></i> Calcul des scores prédictifs...
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <button class="action-btn primary" id="sort-by-score-${detailId}">
+                            <i class="fas fa-sort-amount-down"></i> Trier par score prédictif
+                        </button>
+                        <button class="action-btn secondary" id="simulate-bets-${detailId}">
+                            <i class="fas fa-calculator"></i> Simuler des paris sur cette course
+                        </button>
+                    </div>
+                `;
+                
+                // Trouver la grille contenant la carte
+                const gridContainer = courseCard.parentNode;
+                
+                // Insérer les détails après la dernière carte ou après la carte cliquée
+                gridContainer.appendChild(detailsElement);
+                
+                // Animation pour afficher la section
+                setTimeout(() => {
+                    detailsElement.classList.add('visible');
+                }, 10);
+                
+                // Mettre à jour la section active
+                activeDetailSection = detailsElement;
+                
+                // Faire défiler vers la section visible
+                setTimeout(() => {
+                    detailsElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+                
+                // Ajouter l'événement pour fermer les détails
+                detailsElement.querySelector('.close-details').addEventListener('click', function(event) {
+                    event.stopPropagation();
+                    detailsElement.classList.remove('visible');
+                    setTimeout(() => {
+                        if (detailsElement.parentNode) {
+                            detailsElement.parentNode.removeChild(detailsElement);
+                            activeDetailSection = null;
+                        }
+                    }, 300);
+                });
+                
+                // Récupérer des scores prédictifs pour les participants
+                const participantsContainer = document.getElementById(`participants-${detailId}`);
+                
+                try {
+                    // Préparer les données de contexte pour le score prédictif
+                    const courseContext = {
+                        distance: parseInt(course.distance ? course.distance.match(/\d+/)[0] : 0),
+                        type: course.type ? course.type.toLowerCase() : "plat",
+                        position: getCoursePosition(course.horaire),
+                        totalRacesInDay: getCoursesInDay(),
+                        participants: course.participants || [],
+                        hippodrome: hippodrome
+                    };
+                    
+                    console.log("Contexte course pour pondération:", courseContext);
+                    
+                    // Utiliser le contexte pour le calcul des scores
+                    const scoresPredictifs = await rankingLoader.calculerScoresCourse(courseContext);
+                    
+                    // Obtenir et afficher les poids utilisés
+                    const weights = rankingLoader.getWeights(courseContext);
+                    console.log(`Poids utilisés pour ${courseName}:`, weights);
+                    
+                    // Ajouter un indicateur visuel des poids utilisés
+                    const weightsInfo = document.createElement('p');
+                    weightsInfo.className = 'loading-indicator';
+                    weightsInfo.innerHTML = `<i class="fas fa-balance-scale"></i> Pondération: Cheval ${Math.round(weights.cheval*100)}%, Jockey ${Math.round(weights.jockey*100)}%, Entraîneur ${Math.round(weights.entraineur*100)}%`;
+                    participantsContainer.parentNode.insertBefore(weightsInfo, participantsContainer);
+                    
+                    if (scoresPredictifs.length === 0) {
+                        participantsContainer.innerHTML = `
+                            <tr>
+                                <td colspan="8" style="text-align: center;">
+                                    <i class="fas fa-exclamation-circle" style="color: var(--gold);"></i> 
+                                    Impossible de calculer les scores prédictifs pour cette course.
+                                </td>
+                            </tr>
+                        `;
+                        return;
                     }
+                    
+                    let participantsHTML = '';
+                    
+                    // Trier par numéro de participant (ordre initial)
+                    const participantsTries = [...scoresPredictifs].sort((a, b) => {
+                        const numA = parseInt(a.participant.numero || 0);
+                        const numB = parseInt(b.participant.numero || 0);
+                        return numA - numB;
+                    });
+                    
+                    participantsTries.forEach((resultat, index) => {
+                        const participant = resultat.participant;
+                        const scorePredictif = resultat.scorePredictif;
+                        
+                        // Réduire la taille de certaines colonnes si le texte est trop long
+                        const propietaire = getPropertyValue(participant, [
+                            "proprietaire", "propriétaire", "proprio", "owner", "owner_name"
+                        ]) || "N/A";
+                        
+                        const eleveurs = getPropertyValue(participant, [
+                            "eleveurs", "éleveurs", "eleveur", "éleveur", "breeder", "breeder_name"
+                        ]) || "N/A";
+                        
+                        // Calculer une couleur de fond pour la barre de score entre rouge et vert en fonction du score
+                        const score = parseFloat(scorePredictif.score);
+                        const normalizedScore = Math.min(Math.max(0, score), 100) / 100; // 0 à 1
+                        
+                        // Indice de confiance avec classe de style
+                        const confidence = scorePredictif.indiceConfiance ? parseFloat(scorePredictif.indiceConfiance) : 0;
+                        let confidenceClass = 'confidence-low';
+                        if (confidence >= 0.8) {
+                            confidenceClass = 'confidence-high';
+                        } else if (confidence >= 0.5) {
+                            confidenceClass = 'confidence-medium';
+                        }
+                        
+                        // Extraire le numéro du jockey (n) si disponible
+                        const jockeyNumber = participant.n || "";
+                        const jockeyNumberDisplay = jockeyNumber ? `<span class="jockey-number">${jockeyNumber}</span>` : '';
+                        
+                        participantsHTML += `
+                            <tr data-score="${scorePredictif.score}" data-numero="${participant.numero || 0}" data-cheval="${participant.cheval}" data-cote="${participant.cote || 0}">
+                                <td style="text-align: center;">
+                                    <div class="horse-number">${participant.n || participant.numero || '-'}</div>
+                                </td>
+                                <td>${participant.cheval || 'N/A'}</td>
+                                <td>${participant.jockey || 'N/A'}${jockeyNumberDisplay}</td>
+                                <td>${participant.entraineur || 'N/A'}</td>
+                                <td>${propietaire.length > 20 ? propietaire.slice(0, 20) + '...' : propietaire}</td>
+                                <td>${eleveurs.length > 20 ? eleveurs.slice(0, 20) + '...' : eleveurs}</td>
+                                <td>${participant.poids || 'N/A'}</td>
+                                <td class="prediction-cell">
+                                    <div class="prediction-bar-container">
+                                        <div class="prediction-bar" style="width: ${normalizedScore * 100}%;"></div>
+                                        <div class="prediction-value">
+                                            ${scorePredictif.score}
+                                        </div>
+                                    </div>
+                                    <div class="score-details">
+                                        <small>
+                                            Détails <i class="fas fa-info-circle"></i>
+                                            ${scorePredictif.indiceConfiance ? 
+                                                `<span class="confidence-indicator ${confidenceClass}">${parseFloat(scorePredictif.indiceConfiance) * 100}% fiable</span>` : 
+                                                ''}
+                                        </small>
+                                        <div class="tooltip-content">
+                                            <p><strong>Poids:</strong> Ch ${Math.round(scorePredictif.poidsUtilises.cheval*100)}%, Jock ${Math.round(scorePredictif.poidsUtilises.jockey*100)}%, Entr ${Math.round(scorePredictif.poidsUtilises.entraineur*100)}%</p>
+                                            <p>Cheval: Rang #${scorePredictif.details.cheval.rang} (${scorePredictif.details.cheval.score} pts)</p>
+                                            <p>Jockey: Rang #${scorePredictif.details.jockey.rang} (${scorePredictif.details.jockey.score} pts)</p>
+                                            <p>Entraîneur: Rang #${scorePredictif.details.entraineur.rang} (${scorePredictif.details.entraineur.score} pts)</p>
+                                            <p>Éleveur: Rang #${scorePredictif.details.eleveur.rang} (${scorePredictif.details.eleveur.score} pts)</p>
+                                            <p>Propriétaire: Rang #${scorePredictif.details.proprietaire.rang} (${scorePredictif.details.proprietaire.score} pts)</p>
+                                            ${scorePredictif.indiceConfiance ? 
+                                              `<p><strong>Fiabilité: ${parseFloat(scorePredictif.indiceConfiance) * 100}%</strong> (${getConfidenceDescription(parseFloat(scorePredictif.indiceConfiance))})</p>` : 
+                                              ''}
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        `;
+                    });
+                    
+                    participantsContainer.innerHTML = participantsHTML;
+                    
+                    // Ajouter l'événement de tri au bouton
+                    const sortButton = document.getElementById(`sort-by-score-${detailId}`);
+                    sortButton.addEventListener('click', function() {
+                        const rows = Array.from(participantsContainer.querySelectorAll('tr'));
+                        const sortedRows = rows.sort((a, b) => {
+                            const scoreA = parseFloat(a.dataset.score || 0);
+                            const scoreB = parseFloat(b.dataset.score || 0);
+                            return scoreB - scoreA; // Décroissant
+                        });
+                        
+                        // Effacer le contenu actuel et réinsérer dans le nouvel ordre
+                        participantsContainer.innerHTML = '';
+                        sortedRows.forEach(row => {
+                            participantsContainer.appendChild(row);
+                        });
+                        
+                        // Mettre à jour le texte du bouton
+                        if (this.querySelector('i').classList.contains('fa-sort-amount-down')) {
+                            this.innerHTML = '<i class="fas fa-sort-amount-up"></i> Trier par numéro';
+                            this.title = 'Cliquez pour trier par numéro de participant';
+                        } else {
+                            this.innerHTML = '<i class="fas fa-sort-amount-down"></i> Trier par score prédictif';
+                            this.title = 'Cliquez pour trier par score prédictif';
+                            
+                            // Trier par numéro au lieu de par score
+                            const rowsByNumber = Array.from(participantsContainer.querySelectorAll('tr'));
+                            const sortedByNumber = rowsByNumber.sort((a, b) => {
+                                const numA = parseInt(a.dataset.numero || 0);
+                                const numB = parseInt(b.dataset.numero || 0);
+                                return numA - numB;
+                            });
+                            
+                            participantsContainer.innerHTML = '';
+                            sortedByNumber.forEach(row => {
+                                participantsContainer.appendChild(row);
+                            });
+                        }
+                    });
+                    
+                    // Ajouter l'événement pour ouvrir la simulation intégrée
+                    const simulateButton = document.getElementById(`simulate-bets-${detailId}`);
+                    simulateButton.addEventListener('click', function() {
+                        // Ouvrir la popup de simulation avec les données de cette course
+                        const participantsTable = document.getElementById(`participants-${detailId}`);
+                        openSimulationPopup(hippodrome, courseName, participantsTable, detailId);
+                    });
+                    
+                } catch (error) {
+                    console.error("Erreur lors du calcul des scores prédictifs:", error);
+                    participantsContainer.innerHTML = `
+                        <tr>
+                            <td colspan="8" style="text-align: center; color: var(--red);">
+                                <i class="fas fa-exclamation-triangle"></i> 
+                                Erreur lors du calcul des scores prédictifs. Veuillez réessayer plus tard.
+                            </td>
+                        </tr>
+                    `;
                 }
             }
             
-            return meilleurItem;
-        }
-        
-        // Pour les chevaux et autres catégories
-        // Standardiser les apostrophes et autres cas spéciaux
-        nom = this.normaliserNomAvecApostrophe(nom);
-        
-        // Vérifier d'abord la table de correspondance manuelle
-        const nomUpper = (nom || "").toUpperCase().trim();
-        if (this.correspondanceManuelle[nomUpper]) {
-            nom = this.correspondanceManuelle[nomUpper];
-            console.log(`Correspondance manuelle utilisée: "${nomUpper}" -> "${nom}"`);
-        }
-        
-        // NOUVEAU: utiliser extraireNomBaseCheval pour les chevaux
-        if (categorie === 'chevaux') {
-            const nomBase = this.extraireNomBaseCheval(nom);
-            if (nomBase !== nom) {
-                console.log(`Nom cheval simplifié pour recherche: "${nom}" -> "${nomBase}"`);
-                nom = nomBase;
-            }
-        }
-        
-        const nomNormalise = this.normaliserNom(nom);
-        console.log(`Recherche de "${nom}" normalisé en "${nomNormalise}" dans la catégorie ${categorie}`);
-        
-        // Amélioré - utiliser toute la stratégie de recherche progressive
-        const resultat = this.trouverMeilleurScore(donneesClassement, nom);
-        if (resultat.item) {
-            console.log(`Correspondance trouvée pour "${nom}": "${resultat.item.Nom || resultat.item.NomPostal}" (similarité: ${resultat.similarite || 'N/A'}%)`);
-        } else {
-            console.log(`⚠️ Aucune correspondance trouvée pour "${nom}" dans ${categorie}`);
-        }
-        return resultat.item;
-    },
-    
-    // Trouver le rang d'un acteur dans son classement pondéré
-    trouverRangDansClassement(donneesClassement, nom, categorie) {
-        if (!nom || !donneesClassement || !donneesClassement.length) {
-            return null;
-        }
-        
-        // Pour les éleveurs et propriétaires qui peuvent être multiples
-        if (categorie === 'eleveurs' || categorie === 'proprietaires') {
-            // Si c'est une chaîne, la diviser sur les virgules et autres séparateurs
-            // AMÉLIORÉ: meilleure prise en charge des séparateurs et nettoyage de l'ellipse finale
-            let noms = [];
-            if (typeof nom === 'string') {
-                // Nettoyer d'abord l'ellipse en fin de chaîne s'il y en a une
-                const nomSansEllipse = this.nettoyerNomTronque(nom);
-                noms = nomSansEllipse.split(/\s*[,&\/+]\s*|\s+et\s+|\s+and\s+/i).filter(n => n.trim());
-            } else {
-                noms = [nom];
-            }
-            
-            if (noms.length === 0 || !noms[0]) {
-                return null;
-            }
-            
-            console.log(`Propriétaire/éleveur séparé en ${noms.length} noms individuels:`, noms);
-            
-            // Chercher le meilleur rang parmi tous les noms
-            let meilleurRang = null;
-            
-            for (const nomIndividuel of noms) {
-                if (!nomIndividuel.trim()) continue;
-                
-                console.log(`Traitement du propriétaire/éleveur: "${nomIndividuel}"`);
-                const resultat = this.trouverPersonneParInitiale(donneesClassement, nomIndividuel, categorie);
-                if (resultat.rang !== null) {
-                    const rang = parseInt(resultat.rang);
-                    if (meilleurRang === null || rang < meilleurRang) {
-                        meilleurRang = rang;
-                        console.log(`Nouveau meilleur rang trouvé: ${rang} pour "${nomIndividuel}"`);
-                    }
+            // Fonction utilitaire pour obtenir une description de l'indice de confiance
+            function getConfidenceDescription(confidence) {
+                if (confidence >= 0.8) {
+                    return "Prédiction très fiable";
+                } else if (confidence >= 0.6) {
+                    return "Prédiction fiable";
+                } else if (confidence >= 0.4) {
+                    return "Prédiction moyennement fiable";
+                } else {
+                    return "Prédiction peu fiable, données manquantes";
                 }
             }
             
-            return meilleurRang;
-        }
-        
-        // Pour les autres catégories - utiliser la fonction complète de recherche
-        // Standardiser les apostrophes et autres cas spéciaux
-        nom = this.normaliserNomAvecApostrophe(nom);
-        
-        // Vérifier d'abord la table de correspondance manuelle
-        const nomUpper = (nom || "").toUpperCase().trim();
-        if (this.correspondanceManuelle[nomUpper]) {
-            nom = this.correspondanceManuelle[nomUpper];
-            console.log(`Correspondance manuelle utilisée: "${nomUpper}" -> "${nom}"`);
-        }
-        
-        // NOUVEAU: utiliser extraireNomBaseCheval pour les chevaux
-        if (categorie === 'chevaux') {
-            const nomBase = this.extraireNomBaseCheval(nom);
-            if (nomBase !== nom) {
-                console.log(`Nom cheval simplifié pour recherche: "${nom}" -> "${nomBase}"`);
-                nom = nomBase;
-            }
-        }
-        
-        const resultat = this.trouverMeilleurScore(donneesClassement, nom);
-        return resultat.rang ? parseInt(resultat.rang) : null;
-    },
-    
-    // Calculer le score moyen pour une liste de noms (propriétaires, éleveurs)
-    calculerScoreMoyen(donneesClassement, listeNoms, categorie) {
-        // Si c'est une chaîne, la diviser sur les virgules et autres séparateurs possibles
-        // AMÉLIORÉ: meilleure prise en charge des séparateurs et nettoyage de l'ellipse finale
-        let noms = [];
-        if (typeof listeNoms === 'string') {
-            // Nettoyer d'abord l'ellipse en fin de chaîne s'il y en a une
-            const nomSansEllipse = this.nettoyerNomTronque(listeNoms);
-            noms = nomSansEllipse.split(/\s*[,&\/+]\s*|\s+et\s+|\s+and\s+/i).filter(n => n.trim());
-        } else {
-            noms = [listeNoms];
-        }
-        
-        if (noms.length === 0 || !noms[0]) {
-            return { rang: null };
-        }
-        
-        // Trouver le meilleur rang (le plus petit numériquement)
-        let meilleurRang = null;
-        
-        // Parcourir tous les noms et trouver le meilleur rang
-        for (const nom of noms) {
-            if (!nom) continue;
-            
-            const rang = this.trouverRangDansClassement(donneesClassement, nom, categorie);
-            if (rang !== null) {
-                if (meilleurRang === null || rang < meilleurRang) {
-                    meilleurRang = rang;
+            // Événement pour le sélecteur de date
+            dateButton.addEventListener('click', function() {
+                // Si l'input date est déjà visible, le cacher
+                if (dateInput.style.display === 'block') {
+                    dateInput.style.display = 'none';
+                    return;
                 }
-            }
-        }
-        
-        return { rang: meilleurRang };
-    },
-    
-    // Fonction utilitaire pour obtenir la valeur d'une propriété avec plusieurs noms possibles
-    getPropertyValue(obj, propertyNames) {
-        for (const name of propertyNames) {
-            if (obj && obj[name] !== undefined) {
-                return obj[name];
-            }
-        }
-        return null;
-    },
-    
-    // Fonction pour générer automatiquement la table de correspondance pour les chevaux dans une course
-    // NOUVELLE FONCTION: Ajouter des entrées à la table de correspondance en fonction des cas rencontrés
-    ajouterCorrespondanceAutomatique(nomCourse, nomClassement) {
-        if (!nomCourse || !nomClassement) return;
-        
-        // Standardiser les deux noms pour la comparaison
-        const nomCourseTrim = nomCourse.toUpperCase().trim();
-        const nomClassementTrim = nomClassement.toUpperCase().trim();
-        
-        // Ne pas ajouter si c'est déjà identique ou déjà dans la table
-        if (nomCourseTrim === nomClassementTrim || this.correspondanceManuelle[nomCourseTrim]) {
-            return;
-        }
-        
-        // Ajouter à la table de correspondance
-        this.correspondanceManuelle[nomCourseTrim] = nomClassementTrim;
-        console.log(`✅ Nouvelle correspondance ajoutée: "${nomCourseTrim}" -> "${nomClassementTrim}"`);
-        
-        // Ajouter aussi des variantes sans suffixes
-        const nomCourseSansSuffixe = nomCourseTrim.replace(/\s+[HFM]\.?P\.?S\.?.*/gi, "").trim();
-        if (nomCourseSansSuffixe !== nomCourseTrim) {
-            this.correspondanceManuelle[nomCourseSansSuffixe] = nomClassementTrim;
-            console.log(`✅ Variante sans suffixe ajoutée: "${nomCourseSansSuffixe}" -> "${nomClassementTrim}"`);
-        }
-    },
-    
-    // NOUVELLE VERSION: Calculer le score prédictif pour un participant avec poids dynamiques
-    calculerScoreParticipant(participant, courseContext) {
-        // Récupérer les poids dynamiques selon le contexte de la course
-        const poids = courseContext ? this.getWeights(courseContext) : {
-            cheval: 0.495, jockey: 0.135, entraineur: 0.108, eleveur: 0.09, proprietaire: 0.072, poids_porte: 0.10
-        };
-        
-        // NOUVEAU: Utiliser le nom de base pour les chevaux
-        const nomChevalBase = this.extraireNomBaseCheval(participant.cheval);
-        console.log(`Nom cheval normalisé pour scoring: "${participant.cheval}" -> "${nomChevalBase}"`);
-        
-        // Récupérer les items pour chaque acteur avec le nom normalisé
-        const itemCheval = this.trouverItemDansClassement(this.data.chevaux, nomChevalBase, 'chevaux');
-        const itemJockey = this.trouverItemDansClassement(this.data.jockeys, participant.jockey, 'jockeys');
-        const itemEntraineur = this.trouverItemDansClassement(this.data.entraineurs, participant.entraineur, 'entraineurs');
-        
-        // Pour les éleveurs et propriétaires, qui peuvent être multiples
-        const proprioValue = this.getPropertyValue(participant, [
-            "proprietaire", "propriétaire", 
-            "proprio", "owner", "owner_name"
-        ]);
-        
-        const eleveurValue = this.getPropertyValue(participant, [
-            "eleveurs", "éleveurs", 
-            "eleveur", "éleveur", 
-            "breeder", "breeder_name"
-        ]);
-        
-        const itemEleveur = this.trouverItemDansClassement(this.data.eleveurs, eleveurValue, 'eleveurs');
-        const itemProprio = this.trouverItemDansClassement(this.data.proprietaires, proprioValue, 'proprietaires');
-        
-        // Récupérer les rangs pour le calcul de score
-        const rangCheval = itemCheval ? parseInt(itemCheval.Rang) : null;
-        const rangJockey = itemJockey ? parseInt(itemJockey.Rang) : null;
-        const rangEntraineur = itemEntraineur ? parseInt(itemEntraineur.Rang) : null;
-        const rangEleveur = itemEleveur ? parseInt(itemEleveur.Rang) : null;
-        const rangProprio = itemProprio ? parseInt(itemProprio.Rang) : null;
-        
-        // Si on a trouvé un cheval dans le classement, ajouter automatiquement à la table de correspondance
-        if (itemCheval && participant.cheval) {
-            this.ajouterCorrespondanceAutomatique(participant.cheval, itemCheval.Nom);
-        }
-        
-        // NOUVEAU: Calculer le score du poids porté
-        let poidsPorteScore = 0;
-        
-        // 1. Calculer le poids moyen du peloton
-        const poidsPorteValue = this.extractWeight(participant.poids);
-        if (poidsPorteValue !== null && courseContext && courseContext.participants) {
-            const moyennePoids = this.calculateAverageWeight(courseContext.participants);
-            
-            if (moyennePoids) {
-                // 2. Déterminer l'écart de poids
-                const ecartPoids = poidsPorteValue - moyennePoids;
                 
-                // 3. Déterminer la catégorie de poids
-                const poidsCategory = this.getWeightBucket(poidsPorteValue, moyennePoids);
+                // Afficher l'input date
+                dateInput.style.display = 'block';
+                dateInput.focus();
                 
-                // 4. Récupérer l'ajustement de base selon la catégorie
-                let ajustementBase = this.WEIGHT_ADJUSTMENTS[poidsCategory].adjustment;
+                // Définir la valeur initiale sur la date actuelle
+                const formattedDate = coursesLoader.formatDateYMD(window.currentDate);
+                dateInput.value = formattedDate;
                 
-                // 5. Moduler l'ajustement en fonction de la distance
-                const distanceBucket = this.getDistanceBucket(courseContext.distance);
-                const distanceMultiplier = this.WEIGHT_DISTANCE_MULTIPLIERS[distanceBucket];
-                
-                // 6. Calculer l'ajustement final
-                const ajustementFinal = ajustementBase * distanceMultiplier;
-                
-                // Logs pour le débogage
-                console.log(`Poids porté: ${poidsPorteValue}kg, Moyenne: ${moyennePoids}kg, Écart: ${ecartPoids}kg`);
-                console.log(`Catégorie de poids: ${poidsCategory}, Ajustement de base: ${ajustementBase}`);
-                console.log(`Distance: ${courseContext.distance}m, Bucket: ${distanceBucket}, Multiplicateur: ${distanceMultiplier}`);
-                console.log(`Ajustement final pour le poids porté: ${ajustementFinal}`);
-                
-                // 7. Convertir en score (échelle 0-100)
-                // On utilise une échelle où l'ajustement max +2% = +2 points sur 100
-                poidsPorteScore = (ajustementFinal * 100);
-            } else {
-                console.log("Impossible de calculer le poids moyen du peloton - poids porté non pris en compte");
-            }
-        } else {
-            console.log("Données de poids insuffisantes - poids porté non pris en compte");
-        }
-        
-        // Logs pour debug
-        console.log(`Rangs récupérés pour ${participant.cheval}: `, {
-            cheval: rangCheval,
-            jockey: rangJockey,
-            entraineur: rangEntraineur,
-            eleveur: rangEleveur,
-            proprietaire: rangProprio,
-            poids_porte_score: poidsPorteScore
-        });
-        
-        // Paramètres du système
-        const maxRang = 100; // Rang maximal pour la normalisation
-        
-        // AMÉLIORATION: Calcul dynamique de la valeur par défaut pour les NC avec pondération
-        const rangsPresents = [];
-        
-        // Collecter les rangs présents avec leurs poids
-        if (rangCheval !== null) rangsPresents.push({ rang: rangCheval, poids: poids.cheval });
-        if (rangJockey !== null) rangsPresents.push({ rang: rangJockey, poids: poids.jockey });
-        if (rangEntraineur !== null) rangsPresents.push({ rang: rangEntraineur, poids: poids.entraineur });
-        if (rangEleveur !== null) rangsPresents.push({ rang: rangEleveur, poids: poids.eleveur });
-        if (rangProprio !== null) rangsPresents.push({ rang: rangProprio, poids: poids.proprietaire });
-        
-        // Calcul de l'indice de confiance (mis à jour avec poids porté)
-        const elementsPresents = [
-            !!rangCheval, 
-            !!rangJockey,
-            !!rangEntraineur, 
-            !!rangEleveur,
-            !!rangProprio,
-            (poidsPorteScore !== 0) // Le poids porté compte comme un élément présent uniquement s'il a une valeur
-        ].filter(Boolean).length;
-        
-        // Nombre total d'éléments (y compris poids porté)
-        const nombreTotalElements = 6;
-        
-        const indiceConfiance = elementsPresents / nombreTotalElements;
-        
-        // AMÉLIORATION: Valeur par défaut dynamique basée sur une moyenne pondérée
-        let valeurNC;
-        
-        if (rangsPresents.length > 0) {
-            // Calculer une moyenne pondérée des rangs présents
-            let somme = 0;
-            let poidsTotal = 0;
-            
-            rangsPresents.forEach(item => {
-                somme += item.rang * item.poids;
-                poidsTotal += item.poids;
+                // Positionner l'input date
+                dateInput.style.position = 'absolute';
+                dateInput.style.top = '0';
+                dateInput.style.left = '0';
+                dateInput.style.width = '100%';
+                dateInput.style.height = '100%';
+                dateInput.style.opacity = '0';
+                dateInput.style.cursor = 'pointer';
             });
             
-            // Moyenne pondérée
-            const moyenneRangs = poidsTotal > 0 ? somme / poidsTotal : maxRang / 2;
-            
-            // Convertir en score avec ajustement pour l'incertitude
-            valeurNC = Math.max(0, maxRang - moyenneRangs) * (0.5 + (indiceConfiance / 2));
-            valeurNC = Math.max(5, Math.min(valeurNC, maxRang * 0.5));
-            
-            console.log(`Valeur NC dynamique calculée: ${valeurNC} (basée sur moyenne pondérée des rangs: ${moyenneRangs})`);
-        } else {
-            // Valeur par défaut plus conservatrice
-            valeurNC = maxRang * 0.2;
-            console.log(`Aucun élément présent, valeur NC par défaut: ${valeurNC}`);
-        }
-        
-        // Inverser les rangs pour obtenir des scores
-        const scoreCheval = rangCheval ? Math.max(0, maxRang - rangCheval) : valeurNC;
-        const scoreJockey = rangJockey ? Math.max(0, maxRang - rangJockey) : valeurNC;
-        const scoreEntraineur = rangEntraineur ? Math.max(0, maxRang - rangEntraineur) : valeurNC;
-        const scoreEleveur = rangEleveur ? Math.max(0, maxRang - rangEleveur) : valeurNC;
-        const scoreProprio = rangProprio ? Math.max(0, maxRang - rangProprio) : valeurNC;
-        
-        // AMÉLIORATION: Ajuster l'indice de confiance selon l'importance des éléments manquants
-        let indiceConfianceAjuste = indiceConfiance;
-        
-        // Si le cheval est manquant, c'est plus problématique
-        if (!rangCheval) {
-            indiceConfianceAjuste *= 0.8; // Pénalité plus forte si le cheval est manquant
-        }
-        
-        // Appliquer la formule de pondération avec les poids dynamiques, les rangs inversés, et le poids porté
-        const scoreFinal = (
-            poids.cheval * scoreCheval +
-            poids.jockey * scoreJockey +
-            poids.entraineur * scoreEntraineur +
-            poids.eleveur * scoreEleveur +
-            poids.proprietaire * scoreProprio +
-            poids.poids_porte * poidsPorteScore
-        );
-        
-        // Retourner le résultat
-        return {
-            score: scoreFinal.toFixed(1),
-            indiceConfiance: indiceConfianceAjuste.toFixed(2),
-            poidsUtilises: poids,
-            details: {
-                cheval: {
-                    rang: rangCheval || "NC",
-                    score: scoreCheval.toFixed(1)
-                },
-                jockey: {
-                    rang: rangJockey || "NC",
-                    score: scoreJockey.toFixed(1)
-                },
-                entraineur: {
-                    rang: rangEntraineur || "NC",
-                    score: scoreEntraineur.toFixed(1)
-                },
-                eleveur: {
-                    rang: rangEleveur || "NC",
-                    score: scoreEleveur.toFixed(1)
-                },
-                proprietaire: {
-                    rang: rangProprio || "NC",
-                    score: scoreProprio.toFixed(1)
-                },
-                poids_porte: {
-                    valeur: (participant.poids || "NC"),
-                    score: poidsPorteScore.toFixed(1)
+            // Écouter les changements de date
+            dateInput.addEventListener('change', function() {
+                const newDate = new Date(this.value);
+                
+                // Vérifier si c'est une date valide
+                if (isNaN(newDate.getTime())) {
+                    console.error("Date invalide:", this.value);
+                    return;
                 }
-            }
-        };
-    },
-    
-    // Calculer les scores prédictifs pour tous les participants d'une course
-    async calculerScoresCourse(course) {
-        // S'assurer que toutes les données sont chargées
-        await this.loadAllData();
-        
-        if (!course || !course.participants || !Array.isArray(course.participants)) {
-            return [];
-        }
-        
-        // Calculer le score pour chaque participant
-        const resultats = course.participants.map(participant => {
-            const scorePredictif = this.calculerScoreParticipant(participant, course);
-            return {
-                participant: participant,
-                scorePredictif: scorePredictif
-            };
-        });
-        
-        // Trier par score décroissant
-        const resultatsTries = resultats.sort((a, b) => 
-            parseFloat(b.scorePredictif.score) - parseFloat(a.scorePredictif.score)
-        );
-        
-        // Attribuer les rangs en tenant compte des ex-aequo
-        let rang = 1;
-        let scorePrec = null;
-        
-        resultatsTries.forEach((resultat, index) => {
-            const score = parseFloat(resultat.scorePredictif.score);
+                
+                // Mettre à jour la date courante
+                window.currentDate = newDate;
+                
+                // Mettre à jour l'affichage
+                currentDateSpan.textContent = coursesLoader.getReadableDate(window.currentDate);
+                
+                // Masquer l'input date
+                dateInput.style.display = 'none';
+                
+                // Recharger les données
+                loadCoursesForCurrentDate();
+            });
             
-            // Si nouveau score, incrémenter le rang distinct
-            if (index === 0 || Math.abs(score - scorePrec) > 0.001) {
-                rang = index + 1; // Nouveau rang si le score est différent
+            // Gérer la recherche
+            searchInput.addEventListener('input', function() {
+                displayHippodromes();
+            });
+            
+            // Gérer le bouton pour effacer la recherche
+            searchClear.addEventListener('click', function() {
+                searchInput.value = '';
+                displayHippodromes();
+            });
+            
+            // Fonction de test pour vérifier les variations de poids
+            function testWeightVariations() {
+              const testCases = [
+                {name: "Sprint/Small/First", distance: 1200, participants: Array(7).fill({}), position: 1, totalRacesInDay: 8},
+                {name: "Mile/Medium/Middle", distance: 1600, participants: Array(12).fill({}), position: 4, totalRacesInDay: 8},
+                {name: "Staying/Large/Last", distance: 2500, participants: Array(18).fill({}), position: 8, totalRacesInDay: 8}
+              ];
+              
+              console.log("=== TEST DES VARIATIONS DE POIDS ===");
+              testCases.forEach(test => {
+                const weights = rankingLoader.getWeights(test);
+                console.log(`${test.name}: `, weights);
+              });
             }
-            resultat.rang = rang;
-            scorePrec = score;
-        });
-        
-        return resultatsTries;
-    }
-};
 
-// Exporter le module pour le rendre disponible globalement
-window.rankingLoader = rankingLoader;
+            // Exécuter le test des poids (décommenter pour tester)
+            // setTimeout(testWeightVariations, 3000);
+        });
+    </script>
+    
+    <!-- Ajout du nouveau module ranking-loader.js -->
+    <script src="js/ranking-loader.js?v=2"></script>
+    
+    <!-- Ajout du nouveau module de simulation intégrée -->
+    <script src="js/simulation-inline.js?v=2"></script>
+</body>
+</html>
