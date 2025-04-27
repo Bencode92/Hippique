@@ -1051,6 +1051,33 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+
+        /* Style pour les badges de corde */
+        .corde-badge {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 5px;
+            background-color: rgba(64, 224, 208, 0.15);
+            color: var(--accent);
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .corde-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            background-color: var(--accent);
+            color: var(--dark-teal);
+            border-radius: 50%;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-left: 4px;
+        }
     </style>
 </head>
 <body>
@@ -1607,6 +1634,25 @@
             function createCourseDetailId(hippodrome, courseName) {
                 return `details-${hippodrome.replace(/\s+/g, '-').toLowerCase()}-${courseName.replace(/\s+/g, '-').toLowerCase()}`;
             }
+
+            // Fonction pour extraire le numéro de corde
+            function extractCordeNumber(cordeString) {
+                if (!cordeString) return null;
+                
+                // Gérer le format "(Corde:04)"
+                const match = cordeString.match(/\(Corde:(\d+)\)/i);
+                if (match && match[1]) {
+                    return parseInt(match[1], 10);
+                }
+                
+                // Autres formats possibles: "4" ou "corde 4"
+                const altMatch = cordeString.match(/(\d+)/);
+                if (altMatch && altMatch[1]) {
+                    return parseInt(altMatch[1], 10);
+                }
+                
+                return null;
+            }
             
             // Fonction pour afficher les hippodromes et leurs courses
             function displayHippodromes() {
@@ -1978,11 +2024,23 @@
                         // Extraire le numéro du jockey (n) si disponible
                         const jockeyNumber = participant.n || "";
                         const jockeyNumberDisplay = jockeyNumber ? `<span class="jockey-number">${jockeyNumber}</span>` : '';
+
+                        // Générer l'affichage de la corde s'il existe
+                        let cordeHTML = '';
+                        if (participant.corde) {
+                            const cordeNumber = extractCordeNumber(participant.corde);
+                            if (cordeNumber !== null) {
+                                cordeHTML = `<div class="corde-badge">Corde <span class="corde-number">${cordeNumber}</span></div>`;
+                            } else {
+                                cordeHTML = `<div class="corde-badge">${participant.corde}</div>`;
+                            }
+                        }
                         
                         participantsHTML += `
                             <tr data-score="${scorePredictif.score}" data-numero="${participant.numero || 0}" data-cheval="${participant.cheval}" data-cote="${participant.cote || 0}">
                                 <td style="text-align: center;">
                                     <div class="horse-number">${participant.n || participant.numero || '-'}</div>
+                                    ${cordeHTML}
                                 </td>
                                 <td>${participant.cheval || 'N/A'}</td>
                                 <td>${participant.jockey || 'N/A'}${jockeyNumberDisplay}</td>
