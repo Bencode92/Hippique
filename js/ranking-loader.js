@@ -103,6 +103,13 @@ const rankingLoader = {
         "last": { cheval: 0.57, jockey: 0.13, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 }
     },
     
+    // NOUVEAU: Impact de la corde
+    CORDE_WEIGHTS: {
+        "ideal": 0.02,    // Bonus léger pour les meilleures cordes
+        "neutral": 0.00,  // Pas d'effet
+        "poor": -0.02     // Malus léger pour les mauvaises cordes
+    },
+    
     // NOUVEAU: Configuration des poids pour le facteur poids porté
     WEIGHT_ADJUSTMENTS: {
         "heavy_minus": { adjustment: 0.02 },  // Pour -2kg ou plus
@@ -144,6 +151,31 @@ const rankingLoader = {
         if (position <= Math.ceil(total * 0.3)) return "first";
         if (position >= Math.floor(total * 0.7)) return "last";
         return "middle";
+    },
+    
+    // NOUVEAU: Déterminer le bucket de la corde
+    getCordeBucket: function(cordeTexte, participants) {
+        if (!participants || !Array.isArray(participants) || participants.length === 0 || !cordeTexte) {
+            return "neutral";
+        }
+        
+        // Extraire le numéro de corde à partir du texte "(Corde:04)"
+        const match = cordeTexte.match(/\d+/);
+        if (!match) return "neutral";
+        
+        const cordeNum = parseInt(match[0]);
+        if (isNaN(cordeNum)) return "neutral";
+        
+        const fieldSize = participants.length;
+        
+        // Logique de catégorisation de la corde selon la taille du peloton
+        if (cordeNum === 1 || cordeNum === 2) {
+            return "ideal"; // Les meilleures cordes (ex: n°1 ou 2)
+        }
+        if (cordeNum >= fieldSize - 1) {
+            return "poor"; // Très mauvais numéro de corde
+        }
+        return "neutral"; // Sinon corde moyenne
     },
     
     // NOUVEAU: Fonction pour déterminer la catégorie de poids
@@ -287,13 +319,13 @@ const rankingLoader = {
         
         // Nettoyer la chaîne
         let clean = name.toUpperCase()
-            .replace(/^(MR|MME|MLLE|M|SUC\.)\s+/i, '')
-            .replace(/^([A-Z]+)\.?\s+/i, '') // Supprimer les initiales
+            .replace(/^(MR|MME|MLLE|M|SUC\.)\\s+/i, '')
+            .replace(/^([A-Z]+)\.?\\s+/i, '') // Supprimer les initiales
             .trim();
             
         // Diviser en mots et prendre le dernier pour le nom de famille
         // Mais tenir compte des noms composés avec tirets ou particules
-        const parts = clean.split(/\s+/);
+        const parts = clean.split(/\\s+/);
         
         if (parts.length > 1) {
             // Vérifier les cas spéciaux
@@ -319,7 +351,7 @@ const rankingLoader = {
         
         // Nettoyer l'entrée et gérer les noms tronqués
         let cleanInput = input.toUpperCase().trim();
-        cleanInput = cleanInput.replace(/\s*\.\.\.$/g, ""); // supprimer les ellipses en fin de chaîne
+        cleanInput = cleanInput.replace(/\\s*\\.\\.\\.$/g, ""); // supprimer les ellipses en fin de chaîne
         
         // Gérer les noms tronqués (se terminant par ...) ou abrégés (comme "BO...")
         if (cleanInput.includes('...')) {
@@ -620,7 +652,7 @@ const rankingLoader = {
         if (!nom) return "";
         
         // Supprimer les suffixes H.PS, F.PS, M.PS avec leur âge
-        const regex = /^(.+?)(?:\s+[HFM]\.?P\.?S\.?\s+\d+\s*a\.?.*)?$/i;
+        const regex = /^(.+?)(?:\\s+[HFM]\\.?P\\.?S\\.?\\s+\\d+\\s*a\\.?.*)?$/i;
         const match = nom.match(regex);
         
         if (match) {
@@ -635,7 +667,7 @@ const rankingLoader = {
         if (!nom) return "";
         
         // Nettoyer les ellipses en fin de chaîne
-        return nom.replace(/\s*\.\.\.$/g, "").trim();
+        return nom.replace(/\\s*\\.\\.\\.$/g, "").trim();
     },
     
     // Fonction pour normaliser un nom avec apostrophe
@@ -646,19 +678,19 @@ const rankingLoader = {
         let nomStandard = nom.replace(/['´`']/g, "'");
         
         // Supprimer les accents
-        nomStandard = nomStandard.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        nomStandard = nomStandard.normalize('NFD').replace(/[\\u0300-\\u036f]/g, '');
         
         // Standardiser les ligatures
         nomStandard = nomStandard.replace(/[œŒ]/g, 'oe');
         
         // Si BAK S WOOD, transformer en BAK'S WOOD
-        nomStandard = nomStandard.replace(/\bBAK\s+S\s+WOOD\b/i, "BAK'S WOOD");
+        nomStandard = nomStandard.replace(/\\bBAK\\s+S\\s+WOOD\\b/i, "BAK'S WOOD");
         
         // Si BAKS WOOD, transformer en BAK'S WOOD
-        nomStandard = nomStandard.replace(/\bBAKS\s+WOOD\b/i, "BAK'S WOOD");
+        nomStandard = nomStandard.replace(/\\bBAKS\\s+WOOD\\b/i, "BAK'S WOOD");
         
         // Plus génériquement, détecter les cas comme "X S Y" -> "X'S Y"
-        nomStandard = nomStandard.replace(/\b(\w+)\s+S\s+(\w+)\b/i, "$1'S $2");
+        nomStandard = nomStandard.replace(/\\b(\\w+)\\s+S\\s+(\\w+)\\b/i, "$1'S $2");
         
         return nomStandard;
     },
@@ -691,13 +723,13 @@ const rankingLoader = {
         
         // AMÉLIORATION: Expression régulière pour supprimer les suffixes des chevaux
         // Supprimer d'abord les suffixes H.PS., F.PS., M.PS. avec âge
-        const matchSuffixeCheval = nomNormalise.match(/^([A-Za-zÀ-ÖØ-öø-ÿ\s\-']+?)(\s+[HFM]\.?P\.?S\.?.*$)/i);
+        const matchSuffixeCheval = nomNormalise.match(/^([A-Za-zÀ-ÖØ-öø-ÿ\\s\\-']+?)(\\s+[HFM]\\.?P\\.?S\\.?.*$)/i);
         if (matchSuffixeCheval) {
             nomNormalise = matchSuffixeCheval[1].trim();
             console.log(`Nom cheval normalisé (suffixe supprimé): "${nom}" -> "${nomNormalise}"`);
         } else {
             // Si pas de suffixe, utiliser l'ancienne méthode pour l'origine (GB), etc.
-            const matchCheval = nomNormalise.match(/^([A-Za-zÀ-ÖØ-öø-ÿ\s\-']+?)(\s*\(([A-Za-z]+)\))?(\s+[HFM]\.?P\.?S\.?.*)?$/i);
+            const matchCheval = nomNormalise.match(/^([A-Za-zÀ-ÖØ-öø-ÿ\\s\\-']+?)(\\s*\\(([A-Za-z]+)\\))?(\\s+[HFM]\\.?P\\.?S\\.?.*)?$/i);
             
             if (matchCheval) {
                 const nomBase = matchCheval[1].trim();
@@ -710,14 +742,14 @@ const rankingLoader = {
         }
         
         // Standardiser les préfixes pour personnes
-        nomNormalise = nomNormalise.replace(/^M\.\s*/i, "MR ")
-                                .replace(/^MME\.\s*/i, "MME ")
-                                .replace(/^MLLE\.\s*/i, "MLLE ");
+        nomNormalise = nomNormalise.replace(/^M\\.\\s*/i, "MR ")
+                                .replace(/^MME\\.\\s*/i, "MME ")
+                                .replace(/^MLLE\\.\\s*/i, "MLLE ");
         
         // Standardiser les préfixes pour écuries (EC, ECURIE, ECURIES)
-        nomNormalise = nomNormalise.replace(/^EC\./i, "ECURIE ")
-                                .replace(/^EC\s+/i, "ECURIE ")
-                                .replace(/^ECURIES\s+/i, "ECURIE ");
+        nomNormalise = nomNormalise.replace(/^EC\\./i, "ECURIE ")
+                                .replace(/^EC\\s+/i, "ECURIE ")
+                                .replace(/^ECURIES\\s+/i, "ECURIE ");
         
         return nomNormalise;
     },
@@ -726,7 +758,7 @@ const rankingLoader = {
     segmenterNom(nom) {
         if (!nom) return {};
         
-        const mots = nom.split(/\s+/);
+        const mots = nom.split(/\\s+/);
         const segments = {
             prefixe: null,
             prenom: null,
@@ -735,7 +767,7 @@ const rankingLoader = {
         };
         
         // Détecter les préfixes (M., MME, etc.)
-        if (mots[0].match(/^(M|MR|MME|MLLE)\.?$/i)) {
+        if (mots[0].match(/^(M|MR|MME|MLLE)\\.?$/i)) {
             segments.prefixe = mots.shift();
         }
         
@@ -903,7 +935,7 @@ const rankingLoader = {
     // NOUVELLE FONCTION: Chercher un éleveur/personne avec initiale de prénom
     chercherPersonneAvecInitiale(nomAvecInitiale, donneesClassement) {
         // Capture les formats comme "MAT. DURAND", "M. DURAND", "JPJ. DUBOIS", "AT. AL-MEHSHADI"
-        const match = nomAvecInitiale.match(/^([A-Z]+)\.?\s*(.+?)(?:\s+\([^)]+\))?$/i);
+        const match = nomAvecInitiale.match(/^([A-Z]+)\\.?\\s*(.+?)(?:\\s+\\([^)]+\\))?$/i);
         if (!match) return null;
 
         const initialePrenom = match[1].toUpperCase(); // ex: MAT, AT
@@ -961,7 +993,7 @@ const rankingLoader = {
             const nomComplet = (candidat.Nom || candidat.NomPostal || "").toUpperCase();
             
             // Extraire le prénom - cas complexe avec différents formats possibles
-            const mots = nomComplet.split(/\s+/);
+            const mots = nomComplet.split(/\\s+/);
             let prenom = "";
             
             // Traiter les cas où le premier élément est MR, MME, M., etc.
@@ -1071,7 +1103,7 @@ const rankingLoader = {
         
         // *** NOUVEAU CODE POUR STEMPNIAK ***
         // Cas spécifique pour S.STEMPNIAK -> ECURIES SERGE STEMPNIAK
-        if (nomAvecInitiale.match(/^S\.STEMPNIAK$/i) || nomAvecInitiale.match(/^S\s*STEMPNIAK$/i)) {
+        if (nomAvecInitiale.match(/^S\\.STEMPNIAK$/i) || nomAvecInitiale.match(/^S\\s*STEMPNIAK$/i)) {
             console.log("Cas spécial détecté: S.STEMPNIAK -> ECURIES SERGE STEMPNIAK");
             
             // Rechercher spécifiquement STEMPNIAK dans les données
@@ -1099,7 +1131,7 @@ const rankingLoader = {
         }
         
         // *** NOUVEAU POUR G.AUGU -> GERARD AUGUSTIN-NORMAND ***
-        if (nomAvecInitiale.match(/^G\.AUGU/i) || nomAvecInitiale.match(/^G\s*AUGU/i)) {
+        if (nomAvecInitiale.match(/^G\\.AUGU/i) || nomAvecInitiale.match(/^G\\s*AUGU/i)) {
             console.log("Cas spécial détecté: G.AUGU -> GERARD AUGUSTIN-NORMAND");
             
             // Rechercher spécifiquement AUGUSTIN-NORMAND dans les données
@@ -1128,7 +1160,7 @@ const rankingLoader = {
         
         // NOUVELLE FONCTIONNALITÉ: détection automatique des abréviations de prénom
         // Vérifier si le format correspond à une abréviation de prénom: "MAT. DAGUZAN-GARROS"
-        if (nomAvecInitiale.match(/^[A-Z]+\.\s*.+$/i)) {
+        if (nomAvecInitiale.match(/^[A-Z]+\\.\\s*.+$/i)) {
             const resultatInitiale = this.chercherPersonneAvecInitiale(nomAvecInitiale, donneesClassement);
             if (resultatInitiale) {
                 // Mémoriser cette correspondance pour les recherches futures
@@ -1153,7 +1185,7 @@ const rankingLoader = {
         // Vérifier si c'est une écurie avec préfixe EC. ou ECURIE/ECURIES
         if (nomNormalise.startsWith('ECURIE') || nomAvecInitiale.toUpperCase().startsWith('EC.')) {
             // Recherche d'écurie - traitement spécial
-            const nomEcurie = nomNormalise.replace(/^ECURIE\s+/i, '').trim();
+            const nomEcurie = nomNormalise.replace(/^ECURIE\\s+/i, '').trim();
             
             console.log(`Recherche d'écurie pour: "${nomEcurie}"`);
             
@@ -1163,7 +1195,7 @@ const rankingLoader = {
                 
                 // Vérifier si c'est une écurie (ECURIE/ECURIES)
                 if (nomItem.startsWith('ECURIE')) {
-                    const nomEcurieItem = nomItem.replace(/^ECURIE\s+/i, '').trim();
+                    const nomEcurieItem = nomItem.replace(/^ECURIE\\s+/i, '').trim();
                     return nomEcurieItem.includes(nomEcurie) || nomEcurie.includes(nomEcurieItem);
                 }
                 
@@ -1195,7 +1227,7 @@ const rankingLoader = {
         
         // *** NOUVEAU CODE POUR INITIALES ***
         // Détecter les formats d'initiales : JP. CAYROUZE, S. NOM, etc.
-        const matchInitiales = nomAvecInitiale.match(/^([A-Z]+)\.?\s*([A-Z][A-Za-z\s\-]+)$/i);
+        const matchInitiales = nomAvecInitiale.match(/^([A-Z]+)\\.?\\s*([A-Z][A-Za-z\\s\\-]+)$/i);
         
         if (matchInitiales) {
             const initiales = matchInitiales[1].toUpperCase();
@@ -1240,7 +1272,7 @@ const rankingLoader = {
                 // Si on n'a pas de mapping pour ces initiales, chercher n'importe quel prénom commençant par ces initiales
                 correspondances = donneesClassement.filter(item => {
                     const nomComplet = (item.Nom || item.NomPostal || "").toUpperCase();
-                    const mots = nomComplet.split(/\s+/);
+                    const mots = nomComplet.split(/\\s+/);
                     
                     // Vérifier si le premier mot commence par l'initiale et si le nom complet contient le nom de famille
                     return mots.length > 0 && 
@@ -1273,7 +1305,7 @@ const rankingLoader = {
         }
         
         // Format traditionnel avec l'expression régulière originale
-        const match = nomNormalise.match(/^(MME|MR|M)?\\s*([A-Z])\\\.\\?\\s*([A-Z\\s]+)$/i);
+        const match = nomNormalise.match(/^(MME|MR|M)?\\\\s*([A-Z])\\\\\\.\\\\?\\\\s*([A-Z\\\\s]+)$/i);
         
         if (match) {
             const prefixe = match[1] ? match[1].toUpperCase() : '';
@@ -1287,7 +1319,7 @@ const rankingLoader = {
                 const nomComplet = this.normaliserNom(item.Nom || item.NomPostal || "");
                 
                 // Extraire le préfixe, le prénom et le nom de famille du nom complet
-                const matchComplet = nomComplet.match(/^(MME|MR|M)?\\s*([A-Z]+)(?:\\s+([A-Z\\s]+))?$/i);
+                const matchComplet = nomComplet.match(/^(MME|MR|M)?\\\\s*([A-Z]+)(?:\\\\s+([A-Z\\\\s]+))?$/i);
                 
                 if (!matchComplet) return false;
                 
@@ -1382,7 +1414,7 @@ const rankingLoader = {
         
         // *** NOUVEAU CODE POUR CHEVAUX ***
         // Vérifier s'il s'agit d'un nom de cheval avec suffixe (H.PS, F.PS, etc.)
-        const matchSuffixeCheval = nom.match(/^(.+?)\s+[HFM]\.?P\.?S\.?.*/i);
+        const matchSuffixeCheval = nom.match(/^(.+?)\\s+[HFM]\\.?P\\.?S\\.?.*/i);
         if (matchSuffixeCheval) {
             const nomSansSuffixe = matchSuffixeCheval[1].trim();
             console.log(`Recherche sans suffixe: "${nomSansSuffixe}"`);
@@ -1431,13 +1463,13 @@ const rankingLoader = {
         
         // STRATÉGIE 2: Extraire le nom sans suffixes ni origines pour les chevaux
         // Par exemple: "CORTEZ BANK (GB) H.PS. 6 a." -> "CORTEZ BANK"
-        const nomSansSuffixe = nomNormalise.replace(/\s*\([^)]+\)|\s+[HFM]\.?P\.?S\.?.*/gi, "").trim();
+        const nomSansSuffixe = nomNormalise.replace(/\\s*\\([^)]+\\)|\\s+[HFM]\\.?P\\.?S\\.?.*/gi, "").trim();
         if (nomSansSuffixe !== nomNormalise) {
             console.log(`Recherche sans suffixe: "${nomSansSuffixe}"`);
             
             for (const item of donneesClassement) {
                 const nomItem = item.Nom || item.NomPostal || "";
-                const nomItemSansSuffixe = this.normaliserNom(nomItem).replace(/\s*\([^)]+\)|\s+[HFM]\.?P\.?S\.?.*/gi, "").trim();
+                const nomItemSansSuffixe = this.normaliserNom(nomItem).replace(/\\s*\\([^)]+\\)|\\s+[HFM]\\.?P\\.?S\\.?.*/gi, "").trim();
                 
                 if (nomItemSansSuffixe === nomSansSuffixe) {
                     console.log(`Correspondance sans suffixe trouvée: "${nomItem}"`);
@@ -1478,13 +1510,13 @@ const rankingLoader = {
         
         // STRATÉGIE 4: Écuries (cas spécial)
         if (nomNormalise.startsWith('ECURIE') || nom.toUpperCase().startsWith('EC.')) {
-            const nomEcurie = nomNormalise.replace(/^ECURIE\s+/i, '').trim();
+            const nomEcurie = nomNormalise.replace(/^ECURIE\\s+/i, '').trim();
             
             // Recherche d'écurie simplifiée
             for (const item of donneesClassement) {
                 const nomItem = this.normaliserNom(item.Nom || item.NomPostal || "");
                 if (nomItem.startsWith('ECURIE') && 
-                    (nomItem.includes(nomEcurie) || nomEcurie.includes(nomItem.replace(/^ECURIE\s+/i, '').trim()))) {
+                    (nomItem.includes(nomEcurie) || nomEcurie.includes(nomItem.replace(/^ECURIE\\s+/i, '').trim()))) {
                     
                     // Mémoriser cette correspondance
                     this.correspondancesDecouvertes[nomUpper] = item.Nom || item.NomPostal;
@@ -1501,12 +1533,12 @@ const rankingLoader = {
         
         // STRATÉGIE 5: Correspondance partielle par mots communs
         const correspondances = [];
-        const motsNomOriginal = nomSansSuffixe.split(/\s+/).filter(m => m.length > 1);
+        const motsNomOriginal = nomSansSuffixe.split(/\\s+/).filter(m => m.length > 1);
         
         donneesClassement.forEach(item => {
             const nomReference = this.normaliserNom(item.Nom || item.NomPostal || "");
-            const nomReferenceSansSuffixe = nomReference.replace(/\s*\([^)]+\)|\s+[HFM]\.?P\.?S\.?.*/gi, "").trim();
-            const motsRef = nomReferenceSansSuffixe.split(/\s+/).filter(m => m.length > 1);
+            const nomReferenceSansSuffixe = nomReference.replace(/\\s*\\([^)]+\\)|\\s+[HFM]\\.?P\\.?S\\.?.*/gi, "").trim();
+            const motsRef = nomReferenceSansSuffixe.split(/\\s+/).filter(m => m.length > 1);
             
             // Compter les mots en commun
             const motsCommuns = motsRef.filter(mot => motsNomOriginal.includes(mot)).length;
@@ -1563,7 +1595,7 @@ const rankingLoader = {
             if (typeof nom === 'string') {
                 // Nettoyer d'abord l'ellipse en fin de chaîne s'il y en a une
                 const nomSansEllipse = this.nettoyerNomTronque(nom);
-                noms = nomSansEllipse.split(/\s*[,&\/+]\s*|\s+et\s+|\s+and\s+/i).filter(n => n.trim());
+                noms = nomSansEllipse.split(/\\s*[,&\\/+]\\s*|\\s+et\\s+|\\s+and\\s+/i).filter(n => n.trim());
             } else {
                 noms = [nom];
             }
@@ -1643,7 +1675,7 @@ const rankingLoader = {
             if (typeof nom === 'string') {
                 // Nettoyer d'abord l'ellipse en fin de chaîne s'il y en a une
                 const nomSansEllipse = this.nettoyerNomTronque(nom);
-                noms = nomSansEllipse.split(/\s*[,&\/+]\s*|\s+et\s+|\s+and\s+/i).filter(n => n.trim());
+                noms = nomSansEllipse.split(/\\s*[,&\\/+]\\s*|\\s+et\\s+|\\s+and\\s+/i).filter(n => n.trim());
             } else {
                 noms = [nom];
             }
@@ -1706,7 +1738,7 @@ const rankingLoader = {
         if (typeof listeNoms === 'string') {
             // Nettoyer d'abord l'ellipse en fin de chaîne s'il y en a une
             const nomSansEllipse = this.nettoyerNomTronque(listeNoms);
-            noms = nomSansEllipse.split(/\s*[,&\/+]\s*|\s+et\s+|\s+and\s+/i).filter(n => n.trim());
+            noms = nomSansEllipse.split(/\\s*[,&\\/+]\\s*|\\s+et\\s+|\\s+and\\s+/i).filter(n => n.trim());
         } else {
             noms = [listeNoms];
         }
@@ -1762,7 +1794,7 @@ const rankingLoader = {
         console.log(`✅ Nouvelle correspondance ajoutée: "${nomCourseTrim}" -> "${nomClassementTrim}"`);
         
         // Ajouter aussi des variantes sans suffixes
-        const nomCourseSansSuffixe = nomCourseTrim.replace(/\s+[HFM]\.?P\.?S\.?.*/gi, "").trim();
+        const nomCourseSansSuffixe = nomCourseTrim.replace(/\\s+[HFM]\\.?P\\.?S\\.?.*/gi, "").trim();
         if (nomCourseSansSuffixe !== nomCourseTrim) {
             this.correspondanceManuelle[nomCourseSansSuffixe] = nomClassementTrim;
             console.log(`✅ Variante sans suffixe ajoutée: "${nomCourseSansSuffixe}" -> "${nomClassementTrim}"`);
@@ -1853,6 +1885,15 @@ const rankingLoader = {
             console.log("Données de poids insuffisantes - poids porté non pris en compte");
         }
         
+        // NOUVEAU: Calculer le score lié à la corde
+        let cordeScore = 0;
+        if (participant.corde && courseContext && courseContext.participants) {
+            const cordeBucket = this.getCordeBucket(participant.corde, courseContext.participants);
+            cordeScore = this.CORDE_WEIGHTS[cordeBucket] * 100 || 0; // Convertir le modificateur en points (échelle 0-100)
+            
+            console.log(`Corde: ${participant.corde}, Bucket: ${cordeBucket}, Score corde: ${cordeScore}`);
+        }
+        
         // Logs pour debug
         console.log(`Rangs récupérés pour ${participant.cheval}: `, {
             cheval: rangCheval,
@@ -1860,7 +1901,8 @@ const rankingLoader = {
             entraineur: rangEntraineur,
             eleveur: rangEleveur,
             proprietaire: rangProprio,
-            poids_porte_score: poidsPorteScore
+            poids_porte_score: poidsPorteScore,
+            corde_score: cordeScore
         });
         
         // Paramètres du système
@@ -1933,14 +1975,15 @@ const rankingLoader = {
             indiceConfianceAjuste *= 0.8; // Pénalité plus forte si le cheval est manquant
         }
         
-        // Appliquer la formule de pondération avec les poids dynamiques, les rangs inversés, et le poids porté
+        // Appliquer la formule de pondération avec les poids dynamiques, les rangs inversés, poids porté et corde
         const scoreFinal = (
             poids.cheval * scoreCheval +
             poids.jockey * scoreJockey +
             poids.entraineur * scoreEntraineur +
             poids.eleveur * scoreEleveur +
             poids.proprietaire * scoreProprio +
-            poids.poids_porte * poidsPorteScore
+            poids.poids_porte * poidsPorteScore +
+            cordeScore // Ajout du bonus/malus de corde
         );
         
         // Retourner le résultat
@@ -1972,6 +2015,10 @@ const rankingLoader = {
                 poids_porte: {
                     valeur: (participant.poids || "NC"),
                     score: poidsPorteScore.toFixed(1)
+                },
+                corde: {
+                    valeur: (participant.corde || "NC"),
+                    score: cordeScore.toFixed(1)
                 }
             }
         };
