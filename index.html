@@ -250,4 +250,1936 @@
         .jockey-list {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 1.5rem
+            gap: 1.5rem;
+        }
+        
+        .jockey-item {
+            display: flex;
+            align-items: center;
+            background-color: rgba(10, 30, 30, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+        }
+        
+        .jockey-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--medium-teal);
+            margin-right: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-size: 1.5rem;
+        }
+        
+        .jockey-info {
+            flex: 1;
+        }
+        
+        .jockey-info h3 {
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+        }
+        
+        .progress-bar {
+            height: 6px;
+            background-color: rgba(10, 30, 30, 0.5);
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 0.25rem;
+        }
+        
+        .progress {
+            height: 100%;
+            background: linear-gradient(to right, var(--accent), #5aebe0);
+        }
+        
+        .score {
+            font-size: 0.9rem;
+            color: var(--light-gold);
+        }
+        
+        .rang-display {
+            display: inline-block;
+            padding: 2px 8px;
+            background-color: rgba(212, 175, 55, 0.1);
+            border-radius: 4px;
+            color: var(--gold);
+            font-weight: 600;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(to right, var(--gold), #d4af37);
+            color: var(--dark-teal);
+            border: none;
+            padding: 0.75rem 2rem;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(to right, #d4af37, var(--gold));
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+        }
+        
+        .viewall-link {
+            display: block;
+            text-align: right;
+            margin-top: 1rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        
+        .viewall-link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Styles pour le sélecteur de date depuis courses.html */
+        .search-container {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        .search-container input {
+            width: 100%;
+            padding: 1.2rem;
+            background-color: rgba(10, 30, 30, 0.5);
+            border: 1px solid rgba(233, 209, 140, 0.3);
+            border-radius: 12px;
+            color: var(--light-gold);
+            font-size: 1.1rem;
+            padding-left: 3.5rem;
+            transition: all 0.3s ease;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .search-container i {
+            position: absolute;
+            left: 1.2rem;
+            top: 1.2rem;
+            color: var(--gold);
+            font-size: 1.2rem;
+        }
+        
+        .search-container input:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 2px rgba(64, 224, 208, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        .search-clear {
+            position: absolute;
+            right: 1.2rem;
+            top: 1.2rem;
+            color: var(--light-gold);
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            opacity: 0.7;
+            transition: all 0.2s ease;
+        }
+        
+        .search-clear:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+        
+        .date-button {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: rgba(10, 30, 30, 0.5);
+            color: var(--gold);
+            border: 1px solid rgba(233, 209, 140, 0.3);
+            border-radius: 12px;
+            padding: 1rem 1.5rem;
+            width: 100%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-align: left;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .date-button:hover {
+            background-color: rgba(22, 62, 60, 0.8);
+            border-color: var(--accent);
+            box-shadow: 0 0 0 2px rgba(64, 224, 208, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .date-button i {
+            transition: transform 0.3s ease;
+        }
+
+        .date-button:hover i {
+            transform: translateX(5px);
+        }
+        
+        /* Style des boutons pour naviguer entre les dates */
+        .date-navigation {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .nav-date-btn {
+            flex: 1;
+            padding: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+        
+        .today-btn {
+            background-color: rgba(212, 175, 55, 0.15);
+            color: var(--gold);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        
+        .yesterday-btn {
+            background-color: rgba(64, 224, 208, 0.15);
+            color: var(--accent);
+            border: 1px solid rgba(64, 224, 208, 0.3);
+        }
+        
+        .nav-date-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .today-btn:hover {
+            background-color: rgba(212, 175, 55, 0.25);
+        }
+        
+        .yesterday-btn:hover {
+            background-color: rgba(64, 224, 208, 0.25);
+        }
+        
+        /* Styles AMÉLIORÉS pour l'affichage des courses */
+        .hippodrome-card {
+            background: linear-gradient(to right, rgba(19, 69, 66, 0.9), rgba(27, 90, 86, 0.8));
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+
+        .hippodrome-title {
+            padding: 1.2rem;
+            background-color: rgba(10, 46, 42, 0.7);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .hippodrome-title h3 {
+            color: var(--gold);
+            margin: 0;
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .course-card {
+            background-color: rgba(19, 69, 66, 0.7);
+            border: 1px solid rgba(64, 224, 208, 0.2);
+            border-radius: 8px;
+            padding: 1rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .course-card:hover {
+            transform: translateY(-4px);
+            background-color: rgba(27, 90, 86, 0.9);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            border-color: var(--accent);
+        }
+
+        .course-time {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .course-name {
+            color: var(--light-gold);
+            font-weight: 500;
+            margin-bottom: 1rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .course-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid rgba(64, 224, 208, 0.1);
+            padding-top: 0.8rem;
+        }
+
+        .participant-count {
+            background-color: rgba(212, 175, 55, 0.2);
+            color: var(--gold);
+            padding: 0.3rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .course-distance {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            font-size: 0.85rem;
+        }
+
+        .course-type {
+            font-size: 0.85rem;
+            color: var(--light-gold);
+            opacity: 0.8;
+        }
+        
+        /* Styles pour les détails de la course intégrés (au lieu du modal) */
+        .course-details {
+            background: linear-gradient(to bottom, rgba(19, 69, 66, 0.95), rgba(10, 46, 42, 0.95));
+            border: 1px solid var(--gold);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease, opacity 0.4s ease, margin 0.4s ease, padding 0.4s ease;
+            opacity: 0;
+            grid-column: 1 / -1;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            margin-bottom: 0;
+            transform: translateY(-10px);
+            display: none;
+            width: 100%;
+        }
+
+        .course-details.visible {
+            display: block;
+            max-height: 2000px;
+            opacity: 1;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            transform: translateY(0);
+        }
+
+        .course-details-title {
+            color: var(--gold);
+            margin-bottom: 1.5rem;
+            font-size: 1.6rem;
+            text-align: center;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
+            position: relative;
+        }
+
+        .course-details-title .close-details {
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: var(--light-gold);
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .course-details-title .close-details:hover {
+            color: var(--accent);
+            transform: scale(1.1);
+        }
+
+        .course-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            background-color: rgba(10, 30, 30, 0.5);
+            border-radius: 10px;
+            padding: 1.5rem;
+        }
+
+        .info-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .info-item i {
+            color: var(--accent);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-label {
+            color: var(--light-gold);
+            font-size: 0.85rem;
+            opacity: 0.8;
+            margin-bottom: 0.2rem;
+        }
+
+        .info-value {
+            color: var(--gold);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .participants-title {
+            color: var(--accent);
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+
+        .participants-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+            table-layout: auto;
+        }
+
+        .participants-table th {
+            background-color: rgba(19, 69, 66, 0.9);
+            color: var(--gold);
+            text-align: left;
+            padding: 1rem;
+            font-weight: 500;
+            position: sticky;
+            top: 0;
+        }
+
+        .participants-table tr:nth-child(odd) {
+            background-color: rgba(10, 30, 30, 0.5);
+        }
+
+        .participants-table tr:nth-child(even) {
+            background-color: rgba(19, 54, 52, 0.4);
+        }
+
+        .participants-table tr:hover {
+            background-color: rgba(26, 81, 78, 0.6);
+        }
+
+        .participants-table td {
+            padding: 0.9rem 1rem;
+            border-bottom: 1px solid rgba(233, 209, 140, 0.1);
+            white-space: normal;
+            word-break: break-word;
+        }
+
+        .horse-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background-color: var(--medium-teal);
+            color: var(--gold);
+            border-radius: 50%;
+            font-weight: 600;
+            margin: 0 auto;
+        }
+        
+        .jockey-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background-color: var(--gold);
+            color: var(--dark-teal);
+            border-radius: 4px;
+            font-weight: 600;
+            margin-left: 8px;
+            font-size: 0.85rem;
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+            width: 100%;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .action-btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.7rem;
+            padding: 1rem;
+            border-radius: 8px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .action-btn.primary {
+            background-color: rgba(64, 224, 208, 0.1);
+            color: var(--accent);
+            border: 1px solid rgba(64, 224, 208, 0.3);
+        }
+
+        .action-btn.secondary {
+            background-color: rgba(212, 175, 55, 0.1);
+            color: var(--gold);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .action-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .action-btn.primary:hover {
+            background-color: rgba(64, 224, 208, 0.2);
+        }
+
+        .action-btn.secondary:hover {
+            background-color: rgba(212, 175, 55, 0.2);
+        }
+        
+        /* Styles pour les onglets */
+        .tabs {
+            display: flex;
+            margin-bottom: 2rem;
+            overflow-x: auto;
+            border-bottom: 1px solid rgba(233, 209, 140, 0.2);
+            border-radius: 8px 8px 0 0;
+            background: rgba(22, 62, 60, 0.2);
+        }
+        
+        .tab {
+            padding: 1.2rem 2.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: var(--light-gold);
+            text-align: center;
+            white-space: nowrap;
+            font-weight: 500;
+            position: relative;
+        }
+        
+        .tab:hover {
+            background-color: rgba(26, 81, 78, 0.5);
+        }
+        
+        .tab.active {
+            background: linear-gradient(to bottom, var(--light-teal), var(--medium-teal));
+            color: var(--gold);
+            border-bottom: 3px solid var(--gold);
+            font-weight: 600;
+        }
+        
+        .tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid var(--gold);
+        }
+        
+        /* Styles pour le score prédictif */
+        .prediction-cell {
+            min-width: 120px;
+        }
+        
+        .prediction-bar-container {
+            position: relative;
+            width: 100%;
+            height: 20px;
+            background: rgba(10, 30, 30, 0.4);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .prediction-bar {
+            height: 100%;
+            background: linear-gradient(to right, var(--accent), var(--gold));
+            border-radius: 10px;
+            transition: width 0.3s ease;
+        }
+        
+        .prediction-value {
+            position: absolute;
+            right: 8px;
+            top: 0;
+            line-height: 20px;
+            font-weight: bold;
+            color: var(--light-gold);
+            text-shadow: 0 0 3px rgba(0,0,0,0.7);
+        }
+
+        .confidence-indicator {
+            display: inline-block;
+            font-size: 0.8rem;
+            margin-left: 5px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            background-color: rgba(64, 224, 208, 0.1);
+            color: var(--accent);
+        }
+
+        .confidence-high {
+            background-color: rgba(64, 224, 208, 0.2);
+        }
+
+        .confidence-medium {
+            background-color: rgba(212, 175, 55, 0.2);
+            color: var(--gold);
+        }
+
+        .confidence-low {
+            background-color: rgba(224, 90, 64, 0.2);
+            color: var(--red);
+        }
+        
+        .loading-indicator {
+            text-align: center;
+            color: var(--accent);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .score-details {
+            cursor: help;
+            position: relative;
+        }
+        
+        .score-details i {
+            color: var(--gold);
+            margin-left: 5px;
+            font-size: 0.9rem;
+        }
+        
+        .tooltip-content {
+            display: none;
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            background: rgba(10, 46, 42, 0.95);
+            border: 1px solid var(--accent);
+            border-radius: 6px;
+            padding: 0.8rem;
+            width: 220px;
+            font-size: 0.8rem;
+            z-index: 100;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .score-details:hover .tooltip-content {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        /* Styles pour les grands écrans */
+        @media (min-width: 1600px) {
+            .stats-grid {
+                grid-template-columns: repeat(5, 1fr);
+            }
+            
+            .course-grid {
+                grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+                gap: 1.5rem;
+            }
+            
+            .jockey-list {
+                grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            }
+            
+            .course-info-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+        
+        /* Styles pour la mise en page responsive */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .search {
+                width: 100%;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .main-nav ul {
+                flex-wrap: wrap;
+                max-width: 100%;
+            }
+            
+            .main-nav li {
+                flex: 1;
+                justify-content: center;
+                padding: 0.75rem 0.5rem;
+                font-size: 0.9rem;
+            }
+            
+            .course-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .course-info-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            main {
+                max-width: 100%;
+                padding: 1rem;
+            }
+            
+            .date-navigation {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+        }
+        
+        /* Style pour les badges de rang */
+        .rang-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2px 10px;
+            background-color: rgba(212, 175, 55, 0.15);
+            border-radius: 4px;
+            color: var(--gold);
+            font-weight: 600;
+        }
+        
+        /* Style pour les médailles (top 3) */
+        .rang-badge.rang-1::before {
+            content: "🥇";
+            margin-right: 5px;
+        }
+        
+        .rang-badge.rang-2::before {
+            content: "🥈";
+            margin-right: 5px;
+        }
+        
+        .rang-badge.rang-3::before {
+            content: "🥉";
+            margin-right: 5px;
+        }
+        
+        /* Style pour les conteneurs de chargement */
+        .loading-container {
+            text-align: center;
+            padding: 1rem;
+        }
+        
+        .loading-spinner {
+            border: 3px solid rgba(233, 209, 140, 0.1);
+            border-radius: 50%;
+            border-top: 3px solid var(--gold);
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 0.5rem;
+        }
+        
+        /* Animation pour les spinners */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-horse-head" style="font-size: 2rem; color: var(--gold);"></i>
+                <h1>ANALYSE HIPPIQUE</h1>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Rechercher un cheval, jockey...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </header>
+        
+        <nav class="main-nav">
+            <ul>
+                <li class="active"><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+                <li><a href="courses.html"><i class="fas fa-flag-checkered"></i> Courses</a></li>
+                <li><a href="classement.html"><i class="fas fa-list-ol"></i> Classement</a></li>
+                <li><a href="simulation.html"><i class="fas fa-calculator"></i> Simulation</a></li>
+            </ul>
+        </nav>
+        
+        <main>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3><i class="fas fa-flag-checkered"></i> Courses Analysées</h3>
+                    <div class="value">73</div>
+                    <div class="trend positive">+12%</div>
+                </div>
+                <div class="stat-card">
+                    <h3><i class="fas fa-horse"></i> Chevaux</h3>
+                    <div class="value">150</div>
+                    <div class="metric">Performance moyenne</div>
+                </div>
+                <div class="stat-card">
+                    <h3><i class="fas fa-user"></i> Jockeys</h3>
+                    <div class="value">150</div>
+                    <div class="metric">Performance moyenne</div>
+                </div>
+                <div class="stat-card">
+                    <h3><i class="fas fa-euro-sign"></i> Gains Moyens</h3>
+                    <div class="value">33143 €</div>
+                    <div class="trend positive">+82%</div>
+                </div>
+            </div>
+            
+            <div class="section-container">
+                <h2>Performances Mensuelles</h2>
+                <div class="chart-placeholder">
+                    <p><i class="fas fa-chart-bar" style="font-size: 2rem; margin-bottom: 0.5rem;"></i><br>Graphique des performances mensuelles</p>
+                </div>
+            </div>
+            
+            <div class="section-container">
+                <h2><i class="fas fa-flag-checkered"></i> Courses du jour</h2>
+                
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="search-input" placeholder="Rechercher une course ou un hippodrome...">
+                    <button class="search-clear" id="search-clear"><i class="fas fa-times"></i></button>
+                </div>
+                
+                <div class="date-navigation">
+                    <button id="yesterdayBtn" class="nav-date-btn yesterday-btn">
+                        <i class="fas fa-chevron-left"></i> Courses d'hier
+                    </button>
+                    <button id="todayBtn" class="nav-date-btn today-btn">
+                        <i class="fas fa-calendar-day"></i> Courses d'aujourd'hui
+                    </button>
+                </div>
+                
+                <button class="date-button" id="date-button">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span id="current-date">Aujourd'hui (20/04/2025)</span>
+                    <input type="date" id="date-input" style="display: none;">
+                </button>
+                
+                <div class="tabs">
+                    <div class="tab active">Tous les hippodromes</div>
+                </div>
+                
+                <div id="results-container">
+                    <div class="loading">
+                        <div class="spinner" style="border: 4px solid rgba(233, 209, 140, 0.1); border-radius: 50%; border-top: 4px solid var(--gold); border-left: 4px solid var(--gold); width: 50px; height: 50px; animation: spin 1s linear infinite; margin: 0 auto 1.5rem;"></div>
+                        <p>Chargement des courses...</p>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <a href="courses.html" class="action-btn primary">
+                        <i class="fas fa-chart-line"></i> Voir toutes les courses
+                    </a>
+                    <a href="simulation.html" class="action-btn secondary">
+                        <i class="fas fa-calculator"></i> Simuler des paris
+                    </a>
+                </div>
+            </div>
+            
+            <div class="section-container">
+                <h2>Top Jockeys <a href="classement.html?category=jockeys" class="viewall-link">Voir tout <i class="fas fa-chevron-right"></i></a></h2>
+                <div class="jockey-list" id="top-jockeys">
+                    <div class="loading-container">
+                        <div class="loading-spinner"></div>
+                        <p>Chargement des meilleurs jockeys...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-container">
+                <h2>Top Chevaux <a href="classement.html?category=chevaux" class="viewall-link">Voir tout <i class="fas fa-chevron-right"></i></a></h2>
+                <div class="jockey-list" id="top-chevaux">
+                    <div class="loading-container">
+                        <div class="loading-spinner"></div>
+                        <p>Chargement des meilleurs chevaux...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-container">
+                <h2>Top Entraineurs <a href="classement.html?category=entraineurs" class="viewall-link">Voir tout <i class="fas fa-chevron-right"></i></a></h2>
+                <div class="jockey-list" id="top-entraineurs">
+                    <div class="loading-container">
+                        <div class="loading-spinner"></div>
+                        <p>Chargement des meilleurs entraineurs...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-container">
+                <h2>Top Éleveurs <a href="classement.html?category=eleveurs" class="viewall-link">Voir tout <i class="fas fa-chevron-right"></i></a></h2>
+                <div class="jockey-list" id="top-eleveurs">
+                    <div class="loading-container">
+                        <div class="loading-spinner"></div>
+                        <p>Chargement des meilleurs éleveurs...</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-container">
+                <h2>Top Propriétaires <a href="classement.html?category=proprietaires" class="viewall-link">Voir tout <i class="fas fa-chevron-right"></i></a></h2>
+                <div class="jockey-list" id="top-proprietaires">
+                    <div class="loading-container">
+                        <div class="loading-spinner"></div>
+                        <p>Chargement des meilleurs propriétaires...</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <h1>ANALYSE HIPPIQUE</h1>
+            <p>Système d'analyse pour événements hippiques - Dernière mise à jour: <span id="last-update">20/04/2025</span></p>
+            <p><a href="classement.html" style="color: var(--accent); text-decoration: none;">Classements complets</a> | <a href="simulation.html" style="color: var(--accent); text-decoration: none;">Simulateur de paris</a></p>
+        </footer>
+    </div>
+
+    <!-- Module de chargement des courses -->
+    <script>
+        // Module de chargement des courses
+        const coursesLoader = {
+            // Récupérer la liste des courses pour une date spécifique
+            async loadCoursesForDate(dateStr) {
+                console.log(`Chargement des courses pour la date ${dateStr}`);
+                
+                // Format de date attendu: YYYY-MM-DD (ex: 2025-04-20)
+                if (!dateStr) {
+                    const today = new Date();
+                    dateStr = this.formatDateYMD(today);
+                }
+                
+                try {
+                    // Initialiser l'objet courseData
+                    const courseData = {};
+                    
+                    // Chemin correct vers les fichiers de courses
+                    console.log("Tentative de récupération des fichiers dans le répertoire 'data/courses'");
+                    let response = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/data/courses`);
+                    
+                    if (!response.ok) {
+                        console.error(`Erreur lors de la récupération des fichiers: ${response.status}`);
+                        console.error(`Essai de déboguer: récupération du contenu du répertoire 'data'`);
+                        
+                        // Essayer de lister le contenu du répertoire parent
+                        const dataResponse = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/data`);
+                        if (dataResponse.ok) {
+                            const dataContent = await dataResponse.json();
+                            console.log("Contenu du répertoire 'data':", dataContent);
+                        }
+                        
+                        throw new Error(`Impossible d'accéder au répertoire data/courses: ${response.status}`);
+                    }
+                    
+                    const files = await response.json();
+                    console.log("Fichiers trouvés dans data/courses:", files);
+                    
+                    // Filtrer pour trouver tous les fichiers JSON correspondant à la date
+                    const courseFiles = files.filter(file => 
+                        file.name.startsWith(dateStr) && 
+                        file.name.endsWith('.json')
+                    );
+                    
+                    console.log(`Fichiers de courses trouvés pour ${dateStr}:`, courseFiles);
+                    
+                    // Si aucun fichier trouvé, retourner objet vide
+                    if (courseFiles.length === 0) {
+                        console.warn(`Aucun fichier de course trouvé pour la date ${dateStr}`);
+                        return courseData;
+                    }
+                    
+                    // Charger les données de chaque fichier
+                    for (const file of courseFiles) {
+                        try {
+                            await this.processFile(file, courseData);
+                        } catch (fileError) {
+                            console.error(`Erreur lors du traitement du fichier ${file.name}:`, fileError);
+                        }
+                    }
+                    
+                    // Filtrer les hippodromes qui n'ont pas de courses (après tous les traitements)
+                    Object.keys(courseData).forEach(hippodrome => {
+                        if (!courseData[hippodrome] || courseData[hippodrome].length === 0) {
+                            console.log(`Suppression de l'hippodrome ${hippodrome} car il n'a pas de courses valides`);
+                            delete courseData[hippodrome];
+                        }
+                    });
+                    
+                    console.log("Données de courses chargées avec succès:", courseData);
+                    return courseData;
+                    
+                } catch (error) {
+                    console.error("Erreur lors du chargement des courses:", error);
+                    return {};
+                }
+            },
+            
+            // Traiter un fichier JSON
+            async processFile(file, courseData) {
+                console.log(`Traitement du fichier: ${file.name}, URL: ${file.download_url}`);
+                
+                const fileResponse = await fetch(file.download_url);
+                if (!fileResponse.ok) {
+                    console.error(`Erreur lors du chargement du fichier ${file.name}: ${fileResponse.status}`);
+                    return;
+                }
+                
+                try {
+                    const fileData = await fileResponse.json();
+                    console.log(`Structure du fichier ${file.name}:`, Object.keys(fileData));
+                    
+                    // ÉTAPE 1: Vérifier si c'est une réunion de type PLAT
+                    // Si type_reunion existe et n'est pas "Plat", ignorer ce fichier
+                    if (fileData.type_reunion && fileData.type_reunion.toLowerCase() !== "plat") {
+                        console.log(`Fichier ${file.name} ignoré car type_reunion = ${fileData.type_reunion} (pas Plat)`);
+                        return;
+                    }
+                    
+                    // Détecter automatiquement la structure du fichier
+                    if (fileData.hippodrome) {
+                        // Format standard avec hippodrome et courses
+                        console.log(`Fichier ${file.name} contient l'hippodrome: ${fileData.hippodrome}`);
+                        
+                        // Vérifier si 'courses' existe et est un tableau
+                        if (fileData.courses && Array.isArray(fileData.courses)) {
+                            // Filtrer pour ne garder que les courses de type "plat" (insensible à la casse)
+                            // ET qui ont des participants valides
+                            const validCourses = fileData.courses.filter(course => {
+                                // Vérifier si le type de course est plat
+                                const isPlat = !course.type || course.type.toLowerCase() === "plat";
+                                
+                                // Vérifier si la course a des participants valides
+                                const hasParticipants = course.participants && 
+                                                        Array.isArray(course.participants) && 
+                                                        course.participants.length > 0 &&
+                                                        // Vérifier que les participants ont des attributs cheval ou jockey pour s'assurer que ce sont des vrais participants
+                                                        course.participants.some(p => p.cheval || p.jockey);
+                                
+                                return isPlat && hasParticipants;
+                            });
+                            
+                            if (validCourses.length > 0) {
+                                courseData[fileData.hippodrome] = validCourses;
+                                console.log(`Ajout de ${validCourses.length} courses valides pour l'hippodrome ${fileData.hippodrome}`);
+                            } else {
+                                console.log(`Aucune course valide trouvée pour l'hippodrome ${fileData.hippodrome}`);
+                            }
+                        }
+                    } else {
+                        // Essayer de déterminer dynamiquement le nom de l'hippodrome depuis le nom du fichier
+                        const filename = file.name;
+                        // Extraire le nom de l'hippodrome du nom de fichier (après la date)
+                        const match = filename.match(/\d{4}-\d{2}-\d{2}_(.+)\.json$/);
+                        
+                        if (match && match[1]) {
+                            const hippodromeName = match[1].toUpperCase().replace(/_/g, ' ');
+                            console.log(`Nom d'hippodrome extrait du fichier: ${hippodromeName}`);
+                            
+                            // Vérifier si le contenu est déjà un tableau
+                            if (Array.isArray(fileData)) {
+                                const validCourses = fileData.filter(course => {
+                                    const isPlat = !course.type || course.type.toLowerCase() === "plat";
+                                    const hasParticipants = course.participants && 
+                                                          Array.isArray(course.participants) && 
+                                                          course.participants.length > 0 &&
+                                                          course.participants.some(p => p.cheval || p.jockey);
+                                    return isPlat && hasParticipants;
+                                });
+                                
+                                if (validCourses.length > 0) {
+                                    courseData[hippodromeName] = validCourses;
+                                    console.log(`Ajout de ${validCourses.length} courses valides pour l'hippodrome ${hippodromeName}`);
+                                }
+                            } else {
+                                // Si le contenu est directement l'objet de course individuel
+                                const isPlat = !fileData.type || fileData.type.toLowerCase() === "plat";
+                                const hasParticipants = fileData.participants && 
+                                                      Array.isArray(fileData.participants) && 
+                                                      fileData.participants.length > 0 &&
+                                                      fileData.participants.some(p => p.cheval || p.jockey);
+                                
+                                if (isPlat && hasParticipants) {
+                                    courseData[hippodromeName] = [fileData];
+                                    console.log(`Ajout d'une course valide pour l'hippodrome ${hippodromeName}`);
+                                }
+                            }
+                        } else {
+                            console.warn(`Impossible de déterminer l'hippodrome pour le fichier ${filename}`);
+                        }
+                    }
+                } catch (jsonError) {
+                    console.error(`Erreur lors de l'analyse JSON du fichier ${file.name}:`, jsonError);
+                    // Essayer de charger le contenu en texte brut pour déboguer
+                    const textContent = await fileResponse.text();
+                    console.log(`Contenu brut du fichier ${file.name} (premiers 200 caractères):`, textContent.substring(0, 200));
+                }
+            },
+            
+            // Formater une date au format YYYY-MM-DD
+            formatDateYMD(date) {
+                const year = date.getFullYear();
+                const month = String(date.getMonth() + 1).padStart(2, '0');
+                const day = String(date.getDate()).padStart(2, '0');
+                return `${year}-${month}-${day}`;
+            },
+            
+            // Formatter la date au format affichable (DD/MM/YYYY)
+            formatDateDMY(date) {
+                const day = String(date.getDate()).padStart(2, '0');
+                const month = String(date.getMonth() + 1).padStart(2, '0');
+                const year = date.getFullYear();
+                return `${day}/${month}/${year}`;
+            },
+            
+            // Obtenir une date lisible (aujourd'hui, demain, etc.)
+            getReadableDate(date) {
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                
+                const tomorrow = new Date(today);
+                tomorrow.setDate(tomorrow.getDate() + 1);
+                
+                const yesterday = new Date(today);
+                yesterday.setDate(yesterday.getDate() - 1);
+                
+                const dateToCheck = new Date(date);
+                dateToCheck.setHours(0, 0, 0, 0);
+                
+                if (dateToCheck.getTime() === today.getTime()) {
+                    return `Aujourd'hui (${this.formatDateDMY(date)})`;
+                } else if (dateToCheck.getTime() === tomorrow.getTime()) {
+                    return `Demain (${this.formatDateDMY(date)})`;
+                } else if (dateToCheck.getTime() === yesterday.getTime()) {
+                    return `Hier (${this.formatDateDMY(date)})`;
+                } else {
+                    return this.formatDateDMY(date);
+                }
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Variables globales
+            const resultsContainer = document.getElementById('results-container');
+            const searchInput = document.getElementById('search-input');
+            const searchClear = document.getElementById('search-clear');
+            const lastUpdateEl = document.getElementById('last-update');
+            const currentDateSpan = document.getElementById('current-date');
+            const dateButton = document.getElementById('date-button');
+            const dateInput = document.getElementById('date-input');
+            const yesterdayBtn = document.getElementById('yesterdayBtn');
+            const todayBtn = document.getElementById('todayBtn');
+            
+            // Variable pour stocker les données de courses et l'état de l'application
+            let courseData = {};
+            window.currentDate = new Date();
+            let activeDetailSection = null;
+            
+            // Mise à jour de la date affichée
+            currentDateSpan.textContent = coursesLoader.getReadableDate(window.currentDate);
+            lastUpdateEl.textContent = coursesLoader.formatDateDMY(window.currentDate);
+            
+            // Charger les courses pour la date actuelle
+            loadCoursesForCurrentDate();
+            
+            // Boutons pour naviguer entre aujourd'hui et hier
+            yesterdayBtn.addEventListener('click', function() {
+                const yesterday = new Date(window.currentDate);
+                yesterday.setDate(yesterday.getDate() - 1);
+                window.currentDate = yesterday;
+                
+                // Mettre à jour l'affichage de la date
+                currentDateSpan.textContent = coursesLoader.getReadableDate(window.currentDate);
+                lastUpdateEl.textContent = coursesLoader.formatDateDMY(window.currentDate);
+                
+                // Recharger les courses
+                loadCoursesForCurrentDate();
+            });
+            
+            todayBtn.addEventListener('click', function() {
+                window.currentDate = new Date();
+                
+                // Mettre à jour l'affichage de la date
+                currentDateSpan.textContent = coursesLoader.getReadableDate(window.currentDate);
+                lastUpdateEl.textContent = coursesLoader.formatDateDMY(window.currentDate);
+                
+                // Recharger les courses
+                loadCoursesForCurrentDate();
+            });
+            
+            // Fonction pour charger et afficher les top performers pour chaque catégorie
+            async function loadTopPerformers() {
+                // Précharger toutes les données de classement
+                await rankingLoader.loadAllData();
+                
+                // Liste des catégories à afficher
+                const categories = [
+                    {id: 'jockeys', icon: 'fa-user', container: 'top-jockeys'},
+                    {id: 'chevaux', icon: 'fa-horse', container: 'top-chevaux'},
+                    {id: 'entraineurs', icon: 'fa-users', container: 'top-entraineurs'},
+                    {id: 'eleveurs', icon: 'fa-seedling', container: 'top-eleveurs'},
+                    {id: 'proprietaires', icon: 'fa-user-tie', container: 'top-proprietaires'}
+                ];
+                
+                // Traiter chaque catégorie
+                categories.forEach(category => {
+                    // Vérifier si le container existe (pour les sections présentes sur la page)
+                    const container = document.getElementById(category.container);
+                    if (!container) return;
+                    
+                    // Récupérer les données de cette catégorie (déjà triées par le rang mixte)
+                    const data = rankingLoader.data[category.id] || [];
+                    
+                    // Si aucune donnée, afficher un message
+                    if (!data.length) {
+                        container.innerHTML = `
+                            <div style="text-align: center; padding: 1rem;">
+                                <p>Aucune donnée disponible pour cette catégorie</p>
+                            </div>
+                        `;
+                        return;
+                    }
+                    
+                    // Prendre les 4 premiers éléments
+                    const topItems = data.slice(0, 4);
+                    
+                    // Générer le HTML pour cette catégorie
+                    let html = '';
+                    topItems.forEach(item => {
+                        // Récupérer le nom selon la catégorie
+                        const name = category.id === 'chevaux' ? item.Nom : item.NomPostal;
+                        const rang = item.Rang; // Utiliser le rang directement
+                        
+                        // Calculer la largeur de la barre de progression basée sur le rang
+                        // (95% pour #1, 85% pour #2, etc.)
+                        const progressWidth = Math.max(40, 100 - ((rang - 1) * 15));
+                        
+                        // Déterminer la classe pour la médaille (top 3)
+                        const rangClass = rang <= 3 ? `rang-${rang}` : '';
+                        
+                        html += `
+                            <div class="jockey-item">
+                                <div class="jockey-img">
+                                    <i class="fas ${category.icon}"></i>
+                                </div>
+                                <div class="jockey-info">
+                                    <h3>${name || 'Inconnu'}</h3>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: ${progressWidth}%;"></div>
+                                    </div>
+                                    <span class="score">Rang <span class="rang-badge ${rangClass}">#${rang}</span></span>
+                                </div>
+                            </div>
+                        `;
+                    });
+                    
+                    container.innerHTML = html;
+                });
+            }
+            
+            // Fonction pour charger les courses pour la date actuelle
+            async function loadCoursesForCurrentDate() {
+                const dateStr = coursesLoader.formatDateYMD(window.currentDate);
+                console.log(`Chargement des courses pour: ${dateStr}`);
+                
+                try {
+                    // Afficher l'indicateur de chargement
+                    resultsContainer.innerHTML = `
+                        <div class="loading">
+                            <div class="spinner" style="border: 4px solid rgba(233, 209, 140, 0.1); border-radius: 50%; border-top: 4px solid var(--gold); border-left: 4px solid var(--gold); width: 50px; height: 50px; animation: spin 1s linear infinite; margin: 0 auto 1.5rem;"></div>
+                            <p>Chargement des courses pour ${coursesLoader.formatDateDMY(window.currentDate)}...</p>
+                        </div>
+                    `;
+                    
+                    // Charger les données
+                    courseData = await coursesLoader.loadCoursesForDate(dateStr);
+                    
+                    // Précharger les données de classement en arrière-plan
+                    rankingLoader.loadAllData().then(() => {
+                        console.log("Données de classement préchargées avec succès");
+                        // Charger les top performers des différentes catégories
+                        loadTopPerformers().catch(error => {
+                            console.error("Erreur lors du chargement des top performers:", error);
+                        });
+                    }).catch(error => {
+                        console.error("Erreur lors du préchargement des données de classement:", error);
+                    });
+                    
+                    // Mettre à jour l'affichage
+                    displayHippodromes();
+                    
+                } catch (error) {
+                    console.error("Erreur lors du chargement des courses:", error);
+                    resultsContainer.innerHTML = `
+                        <div class="no-results" style="text-align: center; padding: 3rem; color: var(--light-gold); background-color: rgba(22, 62, 60, 0.3); border-radius: 12px; border: 1px solid rgba(233, 209, 140, 0.2); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);">
+                            <i class="fas fa-exclamation-triangle" style="font-size: 3.5rem; margin-bottom: 1.5rem; color: var(--gold); opacity: 0.8;"></i>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; font-weight: 500;">Erreur de chargement</h3>
+                            <p>Impossible de charger les données des courses.</p>
+                        </div>
+                    `;
+                }
+            }
+            
+            // Fonction utilitaire pour obtenir la valeur d'une propriété avec plusieurs noms possibles
+            function getPropertyValue(obj, propertyNames) {
+                for (const name of propertyNames) {
+                    if (obj[name] !== undefined) {
+                        return obj[name];
+                    }
+                }
+                return null;
+            }
+            
+            // Fonction pour créer un ID unique pour les détails d'une course
+            function createCourseDetailId(hippodrome, courseName) {
+                return `details-${hippodrome.replace(/\s+/g, '-').toLowerCase()}-${courseName.replace(/\s+/g, '-').toLowerCase()}`;
+            }
+            
+            // Fonction pour afficher les hippodromes et leurs courses
+            function displayHippodromes() {
+                // Si aucune donnée n'est disponible
+                if (Object.keys(courseData).length === 0) {
+                    resultsContainer.innerHTML = `
+                        <div class="no-results" style="text-align: center; padding: 3rem; color: var(--light-gold); background-color: rgba(22, 62, 60, 0.3); border-radius: 12px; border: 1px solid rgba(233, 209, 140, 0.2); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);">
+                            <i class="fas fa-search" style="font-size: 3.5rem; margin-bottom: 1.5rem; color: var(--gold); opacity: 0.8;"></i>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; font-weight: 500;">Aucune course trouvée</h3>
+                            <p>Aucune course n'est disponible pour cette date</p>
+                        </div>
+                    `;
+                    return;
+                }
+                
+                // Filtrer les hippodromes par recherche
+                const searchTerm = searchInput.value.trim().toLowerCase();
+                let html = '';
+                
+                // Parcourir les hippodromes
+                for (const [hippodrome, courses] of Object.entries(courseData)) {
+                    // Vérifier que courses est un array
+                    if (!Array.isArray(courses)) {
+                        console.error(`Les courses pour l'hippodrome "${hippodrome}" ne sont pas un tableau.`);
+                        continue;
+                    }
+                    
+                    // Filtrer les courses si un terme de recherche est spécifié
+                    let filteredCourses = courses;
+                    if (searchTerm) {
+                        filteredCourses = courses.filter(course => 
+                            (course.nom && course.nom.toLowerCase().includes(searchTerm)) || 
+                            hippodrome.toLowerCase().includes(searchTerm) ||
+                            (course.participants && Array.isArray(course.participants) && course.participants.some(p => 
+                                (p.cheval && p.cheval.toLowerCase().includes(searchTerm)) ||
+                                (p.jockey && p.jockey.toLowerCase().includes(searchTerm)) ||
+                                (p.entraineur && p.entraineur.toLowerCase().includes(searchTerm)) ||
+                                (getPropertyValue(p, ["proprietaire", "propriétaire"]) && getPropertyValue(p, ["proprietaire", "propriétaire"]).toLowerCase().includes(searchTerm))
+                            ))
+                        );
+                    }
+                    
+                    // Si aucune course ne correspond, passer à l'hippodrome suivant
+                    if (filteredCourses.length === 0) continue;
+                    
+                    // Nouveau format d'affichage avec des cartes
+                    const hippodromeId = hippodrome.replace(/\s+/g, '-').toLowerCase();
+                    html += `
+                        <div class="hippodrome-card">
+                            <div class="hippodrome-title">
+                                <h3><i class="fas fa-horse-head"></i> ${hippodrome}</h3>
+                                <span>${filteredCourses.length} course${filteredCourses.length > 1 ? 's' : ''}</span>
+                            </div>
+                            <div class="course-grid" id="grid-${hippodromeId}">
+                    `;
+                    
+                    // Ajouter chaque course comme une carte
+                    filteredCourses.forEach(course => {
+                        if (!course) return; // Ignorer les courses nulles ou undefined
+                        
+                        const participantsCount = course.participants && Array.isArray(course.participants) 
+                            ? course.participants.length 
+                            : 0;
+                        
+                        const courseDetailId = createCourseDetailId(hippodrome, course.nom);
+                        
+                        html += `
+                            <div class="course-card" data-hippodrome="${hippodrome}" data-course="${course.nom}" data-detail-id="${courseDetailId}">
+                                <div class="course-time">${course.horaire || ""}</div>
+                                <div class="course-name">${course.nom || ""}</div>
+                                <div class="course-meta">
+                                    <div class="participant-count">${participantsCount} participant${participantsCount > 1 ? 's' : ''}</div>
+                                    <div class="course-distance"><i class="fas fa-route"></i> ${course.distance || ""}</div>
+                                    <div class="course-type">${course.type || "Plat"}</div>
+                                </div>
+                            </div>
+                        `;
+                    });
+                    
+                    html += `
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                // Si aucun résultat après filtrage
+                if (html === '') {
+                    resultsContainer.innerHTML = `
+                        <div class="no-results" style="text-align: center; padding: 3rem; color: var(--light-gold); background-color: rgba(22, 62, 60, 0.3); border-radius: 12px; border: 1px solid rgba(233, 209, 140, 0.2); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);">
+                            <i class="fas fa-search" style="font-size: 3.5rem; margin-bottom: 1.5rem; color: var(--gold); opacity: 0.8;"></i>
+                            <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem; font-weight: 500;">Aucun résultat trouvé</h3>
+                            <p>Essayez de modifier votre recherche</p>
+                        </div>
+                    `;
+                } else {
+                    resultsContainer.innerHTML = html;
+                    
+                    // Ajouter les événements click aux cartes de course
+                    document.querySelectorAll('.course-card').forEach(card => {
+                        card.addEventListener('click', function() {
+                            const hippodrome = this.dataset.hippodrome;
+                            const courseName = this.dataset.course;
+                            const detailId = this.dataset.detailId;
+                            toggleCourseDetails(hippodrome, courseName, detailId, this);
+                        });
+                    });
+                }
+            }
+            
+            // Déterminer la position de la course dans la journée
+            function getCoursePosition(horaire) {
+                if (!horaire) return 1;
+                
+                // Collecter tous les horaires de courses visibles
+                const courses = document.querySelectorAll('.course-card');
+                const horaires = Array.from(courses)
+                    .map(c => c.querySelector('.course-time')?.textContent)
+                    .filter(h => h); // Filtrer les valeurs null/undefined
+                
+                // Trier les horaires chronologiquement
+                horaires.sort((a, b) => {
+                    // Convertir en minutes depuis minuit pour comparer
+                    const toMinutes = (timeStr) => {
+                        const [hours, minutes] = timeStr.split(':').map(Number);
+                        return hours * 60 + minutes;
+                    };
+                    
+                    return toMinutes(a) - toMinutes(b);
+                });
+                
+                // Trouver la position de l'horaire actuel (indexée à 1)
+                const position = horaires.indexOf(horaire) + 1;
+                return position > 0 ? position : 1;
+            }
+
+            // Obtenir le nombre total de courses dans la journée
+            function getCoursesInDay() {
+                // Compter toutes les cards de courses
+                const cards = document.querySelectorAll('.course-card');
+                return cards.length || 1; // Au moins 1 pour éviter division par zéro
+            }
+            
+            // Fonction pour afficher/masquer les détails d'une course sous la carte
+            async function toggleCourseDetails(hippodrome, courseName, detailId, courseCard) {
+                // Trouver la course correspondante
+                const course = courseData[hippodrome] && Array.isArray(courseData[hippodrome])
+                    ? courseData[hippodrome].find(c => c && c.nom === courseName)
+                    : null;
+                
+                if (!course) {
+                    console.error(`Course "${courseName}" non trouvée pour l'hippodrome "${hippodrome}"`);
+                    return;
+                }
+                
+                // Vérifier si les détails sont déjà affichés
+                let detailsElement = document.getElementById(detailId);
+                
+                // Fermer d'abord la section active si elle existe, quelle que soit la section que l'on va ouvrir
+                if (activeDetailSection) {
+                    activeDetailSection.classList.remove('visible');
+                    
+                    // Attendre que l'animation de fermeture soit terminée avant de continuer
+                    await new Promise(resolve => {
+                        setTimeout(() => {
+                            if (activeDetailSection && activeDetailSection.parentNode) {
+                                activeDetailSection.parentNode.removeChild(activeDetailSection);
+                            }
+                            activeDetailSection = null;
+                            resolve();
+                        }, 300);
+                    });
+                }
+                
+                // Si c'était le même élément qui était déjà ouvert, on s'arrête là (toggle off)
+                if (detailsElement && detailsElement === activeDetailSection) {
+                    return;
+                }
+                
+                // Créer la nouvelle section de détails
+                detailsElement = document.createElement('div');
+                detailsElement.id = detailId;
+                detailsElement.className = 'course-details';
+                
+                // Préparer le contenu des détails
+                const participantsCount = course.participants && Array.isArray(course.participants) ? course.participants.length : 0;
+                
+                detailsElement.innerHTML = `
+                    <div class="course-details-title">
+                        ${course.nom || ""}
+                        <span class="close-details">&times;</span>
+                    </div>
+                    
+                    <div class="course-info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info-label">Hippodrome</div>
+                            <div class="info-value">${hippodrome}</div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="info-label">Horaire</div>
+                            <div class="info-value">${course.horaire || ""}</div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div class="info-label">Date</div>
+                            <div class="info-value">${coursesLoader.formatDateDMY(window.currentDate)}</div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-route"></i>
+                            <div class="info-label">Distance</div>
+                            <div class="info-value">${course.distance || "Non spécifiée"}</div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <div class="info-label">Participants</div>
+                            <div class="info-value">${participantsCount}</div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-running"></i>
+                            <div class="info-label">Type</div>
+                            <div class="info-value">${course.type || "Plat"}</div>
+                        </div>
+                    </div>
+                    
+                    <h3 class="participants-title">Liste des participants</h3>
+                    
+                    <div class="table-responsive">
+                        <table class="participants-table">
+                            <thead>
+                                <tr>
+                                    <th>N°</th>
+                                    <th>Cheval</th>
+                                    <th>Jockey</th>
+                                    <th>Entraîneur</th>
+                                    <th>Propriétaire</th>
+                                    <th>Éleveurs</th>
+                                    <th>Poids</th>
+                                    <th>Score prédictif</th>
+                                </tr>
+                            </thead>
+                            <tbody id="participants-${detailId}">
+                                <tr>
+                                    <td colspan="8" class="loading-indicator">
+                                        <i class="fas fa-spinner fa-spin"></i> Calcul des scores prédictifs...
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <button class="action-btn primary" id="sort-by-score-${detailId}">
+                            <i class="fas fa-sort-amount-down"></i> Trier par score prédictif
+                        </button>
+                        <button class="action-btn secondary" id="simulate-bets-${detailId}">
+                            <i class="fas fa-calculator"></i> Simuler des paris sur cette course
+                        </button>
+                    </div>
+                `;
+                
+                // Trouver la grille contenant la carte
+                const gridContainer = courseCard.parentNode;
+                
+                // Insérer les détails après la dernière carte ou après la carte cliquée
+                gridContainer.appendChild(detailsElement);
+                
+                // Animation pour afficher la section
+                setTimeout(() => {
+                    detailsElement.classList.add('visible');
+                }, 10);
+                
+                // Mettre à jour la section active
+                activeDetailSection = detailsElement;
+                
+                // Faire défiler vers la section visible
+                setTimeout(() => {
+                    detailsElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+                
+                // Ajouter l'événement pour fermer les détails
+                detailsElement.querySelector('.close-details').addEventListener('click', function(event) {
+                    event.stopPropagation();
+                    detailsElement.classList.remove('visible');
+                    setTimeout(() => {
+                        if (detailsElement.parentNode) {
+                            detailsElement.parentNode.removeChild(detailsElement);
+                            activeDetailSection = null;
+                        }
+                    }, 300);
+                });
+                
+                // Récupérer des scores prédictifs pour les participants
+                const participantsContainer = document.getElementById(`participants-${detailId}`);
+                
+                try {
+                    // Préparer les données de contexte pour le score prédictif
+                    const courseContext = {
+                        distance: parseInt(course.distance ? course.distance.match(/\d+/)[0] : 0),
+                        type: course.type ? course.type.toLowerCase() : "plat",
+                        position: getCoursePosition(course.horaire),
+                        totalRacesInDay: getCoursesInDay(),
+                        participants: course.participants || [],
+                        hippodrome: hippodrome
+                    };
+                    
+                    console.log("Contexte course pour pondération:", courseContext);
+                    
+                    // Utiliser le contexte pour le calcul des scores
+                    const scoresPredictifs = await rankingLoader.calculerScoresCourse(courseContext);
+                    
+                    // Obtenir et afficher les poids utilisés
+                    const weights = rankingLoader.getWeights(courseContext);
+                    console.log(`Poids utilisés pour ${courseName}:`, weights);
+                    
+                    // Ajouter un indicateur visuel des poids utilisés
+                    const weightsInfo = document.createElement('p');
+                    weightsInfo.className = 'loading-indicator';
+                    weightsInfo.innerHTML = `<i class="fas fa-balance-scale"></i> Pondération: Cheval ${Math.round(weights.cheval*100)}%, Jockey ${Math.round(weights.jockey*100)}%, Entraîneur ${Math.round(weights.entraineur*100)}%`;
+                    participantsContainer.parentNode.insertBefore(weightsInfo, participantsContainer);
+                    
+                    if (scoresPredictifs.length === 0) {
+                        participantsContainer.innerHTML = `
+                            <tr>
+                                <td colspan="8" style="text-align: center;">
+                                    <i class="fas fa-exclamation-circle" style="color: var(--gold);"></i> 
+                                    Impossible de calculer les scores prédictifs pour cette course.
+                                </td>
+                            </tr>
+                        `;
+                        return;
+                    }
+                    
+                    let participantsHTML = '';
+                    
+                    // Trier par numéro de participant (ordre initial)
+                    const participantsTries = [...scoresPredictifs].sort((a, b) => {
+                        const numA = parseInt(a.participant.numero || 0);
+                        const numB = parseInt(b.participant.numero || 0);
+                        return numA - numB;
+                    });
+                    
+                    participantsTries.forEach((resultat, index) => {
+                        const participant = resultat.participant;
+                        const scorePredictif = resultat.scorePredictif;
+                        
+                        // Réduire la taille de certaines colonnes si le texte est trop long
+                        const propietaire = getPropertyValue(participant, [
+                            "proprietaire", "propriétaire", "proprio", "owner", "owner_name"
+                        ]) || "N/A";
+                        
+                        const eleveurs = getPropertyValue(participant, [
+                            "eleveurs", "éleveurs", "eleveur", "éleveur", "breeder", "breeder_name"
+                        ]) || "N/A";
+                        
+                        // Calculer une couleur de fond pour la barre de score entre rouge et vert en fonction du score
+                        const score = parseFloat(scorePredictif.score);
+                        const normalizedScore = Math.min(Math.max(0, score), 100) / 100; // 0 à 1
+                        
+                        // Indice de confiance avec classe de style
+                        const confidence = scorePredictif.indiceConfiance ? parseFloat(scorePredictif.indiceConfiance) : 0;
+                        let confidenceClass = 'confidence-low';
+                        if (confidence >= 0.8) {
+                            confidenceClass = 'confidence-high';
+                        } else if (confidence >= 0.5) {
+                            confidenceClass = 'confidence-medium';
+                        }
+                        
+                        // Extraire le numéro du jockey (n) si disponible
+                        const jockeyNumber = participant.n || "";
+                        const jockeyNumberDisplay = jockeyNumber ? `<span class="jockey-number">${jockeyNumber}</span>` : '';
+                        
+                        participantsHTML += `
+                            <tr data-score="${scorePredictif.score}" data-numero="${participant.numero || 0}" data-cheval="${participant.cheval}" data-cote="${participant.cote || 0}">
+                                <td style="text-align: center;">
+                                    <div class="horse-number">${participant.n || participant.numero || '-'}</div>
+                                </td>
+                                <td>${participant.cheval || 'N/A'}</td>
+                                <td>${participant.jockey || 'N/A'}${jockeyNumberDisplay}</td>
+                                <td>${participant.entraineur || 'N/A'}</td>
+                                <td>${propietaire.length > 20 ? propietaire.slice(0, 20) + '...' : propietaire}</td>
+                                <td>${eleveurs.length > 20 ? eleveurs.slice(0, 20) + '...' : eleveurs}</td>
+                                <td>${participant.poids || 'N/A'}</td>
+                                <td class="prediction-cell">
+                                    <div class="prediction-bar-container">
+                                        <div class="prediction-bar" style="width: ${normalizedScore * 100}%;"></div>
+                                        <div class="prediction-value">
+                                            ${scorePredictif.score}
+                                        </div>
+                                    </div>
+                                    <div class="score-details">
+                                        <small>
+                                            Détails <i class="fas fa-info-circle"></i>
+                                            ${scorePredictif.indiceConfiance ? 
+                                                `<span class="confidence-indicator ${confidenceClass}">${parseFloat(scorePredictif.indiceConfiance) * 100}% fiable</span>` : 
+                                                ''}
+                                        </small>
+                                        <div class="tooltip-content">
+                                            <p><strong>Poids:</strong> Ch ${Math.round(scorePredictif.poidsUtilises.cheval*100)}%, Jock ${Math.round(scorePredictif.poidsUtilises.jockey*100)}%, Entr ${Math.round(scorePredictif.poidsUtilises.entraineur*100)}%</p>
+                                            <p>Cheval: Rang #${scorePredictif.details.cheval.rang} (${scorePredictif.details.cheval.score} pts)</p>
+                                            <p>Jockey: Rang #${scorePredictif.details.jockey.rang} (${scorePredictif.details.jockey.score} pts)</p>
+                                            <p>Entraîneur: Rang #${scorePredictif.details.entraineur.rang} (${scorePredictif.details.entraineur.score} pts)</p>
+                                            <p>Éleveur: Rang #${scorePredictif.details.eleveur.rang} (${scorePredictif.details.eleveur.score} pts)</p>
+                                            <p>Propriétaire: Rang #${scorePredictif.details.proprietaire.rang} (${scorePredictif.details.proprietaire.score} pts)</p>
+                                            ${scorePredictif.indiceConfiance ? 
+                                              `<p><strong>Fiabilité: ${parseFloat(scorePredictif.indiceConfiance) * 100}%</strong> (${getConfidenceDescription(parseFloat(scorePredictif.indiceConfiance))})</p>` : 
+                                              ''}
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        `;
+                    });
+                    
+                    participantsContainer.innerHTML = participantsHTML;
+                    
+                    // Ajouter l'événement de tri au bouton
+                    const sortButton = document.getElementById(`sort-by-score-${detailId}`);
+                    sortButton.addEventListener('click', function() {
+                        const rows = Array.from(participantsContainer.querySelectorAll('tr'));
+                        const sortedRows = rows.sort((a, b) => {
+                            const scoreA = parseFloat(a.dataset.score || 0);
+                            const scoreB = parseFloat(b.dataset.score || 0);
+                            return scoreB - scoreA; // Décroissant
+                        });
+                        
+                        // Effacer le contenu actuel et réinsérer dans le nouvel ordre
+                        participantsContainer.innerHTML = '';
+                        sortedRows.forEach(row => {
+                            participantsContainer.appendChild(row);
+                        });
+                        
+                        // Mettre à jour le texte du bouton
+                        if (this.querySelector('i').classList.contains('fa-sort-amount-down')) {
+                            this.innerHTML = '<i class="fas fa-sort-amount-up"></i> Trier par numéro';
+                            this.title = 'Cliquez pour trier par numéro de participant';
+                        } else {
+                            this.innerHTML = '<i class="fas fa-sort-amount-down"></i> Trier par score prédictif';
+                            this.title = 'Cliquez pour trier par score prédictif';
+                            
+                            // Trier par numéro au lieu de par score
+                            const rowsByNumber = Array.from(participantsContainer.querySelectorAll('tr'));
+                            const sortedByNumber = rowsByNumber.sort((a, b) => {
+                                const numA = parseInt(a.dataset.numero || 0);
+                                const numB = parseInt(b.dataset.numero || 0);
+                                return numA - numB;
+                            });
+                            
+                            participantsContainer.innerHTML = '';
+                            sortedByNumber.forEach(row => {
+                                participantsContainer.appendChild(row);
+                            });
+                        }
+                    });
+                    
+                    // Ajouter l'événement pour ouvrir la simulation intégrée
+                    const simulateButton = document.getElementById(`simulate-bets-${detailId}`);
+                    simulateButton.addEventListener('click', function() {
+                        // Ouvrir la popup de simulation avec les données de cette course
+                        const participantsTable = document.getElementById(`participants-${detailId}`);
+                        openSimulationPopup(hippodrome, courseName, participantsTable, detailId);
+                    });
+                    
+                } catch (error) {
+                    console.error("Erreur lors du calcul des scores prédictifs:", error);
+                    participantsContainer.innerHTML = `
+                        <tr>
+                            <td colspan="8" style="text-align: center; color: var(--red);">
+                                <i class="fas fa-exclamation-triangle"></i> 
+                                Erreur lors du calcul des scores prédictifs. Veuillez réessayer plus tard.
+                            </td>
+                        </tr>
+                    `;
+                }
+            }
+            
+            // Fonction utilitaire pour obtenir une description de l'indice de confiance
+            function getConfidenceDescription(confidence) {
+                if (confidence >= 0.8) {
+                    return "Prédiction très fiable";
+                } else if (confidence >= 0.6) {
+                    return "Prédiction fiable";
+                } else if (confidence >= 0.4) {
+                    return "Prédiction moyennement fiable";
+                } else {
+                    return "Prédiction peu fiable, données manquantes";
+                }
+            }
+            
+            // Événement pour le sélecteur de date
+            dateButton.addEventListener('click', function() {
+                // Si l'input date est déjà visible, le cacher
+                if (dateInput.style.display === 'block') {
+                    dateInput.style.display = 'none';
+                    return;
+                }
+                
+                // Afficher l'input date
+                dateInput.style.display = 'block';
+                dateInput.focus();
+                
+                // Définir la valeur initiale sur la date actuelle
+                const formattedDate = coursesLoader.formatDateYMD(window.currentDate);
+                dateInput.value = formattedDate;
+                
+                // Positionner l'input date
+                dateInput.style.position = 'absolute';
+                dateInput.style.top = '0';
+                dateInput.style.left = '0';
+                dateInput.style.width = '100%';
+                dateInput.style.height = '100%';
+                dateInput.style.opacity = '0';
+                dateInput.style.cursor = 'pointer';
+            });
+            
+            // Écouter les changements de date
+            dateInput.addEventListener('change', function() {
+                const newDate = new Date(this.value);
+                
+                // Vérifier si c'est une date valide
+                if (isNaN(newDate.getTime())) {
+                    console.error("Date invalide:", this.value);
+                    return;
+                }
+                
+                // Mettre à jour la date courante
+                window.currentDate = newDate;
+                
+                // Mettre à jour l'affichage
+                currentDateSpan.textContent = coursesLoader.getReadableDate(window.currentDate);
+                
+                // Masquer l'input date
+                dateInput.style.display = 'none';
+                
+                // Recharger les données
+                loadCoursesForCurrentDate();
+            });
+            
+            // Gérer la recherche
+            searchInput.addEventListener('input', function() {
+                displayHippodromes();
+            });
+            
+            // Gérer le bouton pour effacer la recherche
+            searchClear.addEventListener('click', function() {
+                searchInput.value = '';
+                displayHippodromes();
+            });
+            
+            // Fonction de test pour vérifier les variations de poids
+            function testWeightVariations() {
+              const testCases = [
+                {name: "Sprint/Small/First", distance: 1200, participants: Array(7).fill({}), position: 1, totalRacesInDay: 8},
+                {name: "Mile/Medium/Middle", distance: 1600, participants: Array(12).fill({}), position: 4, totalRacesInDay: 8},
+                {name: "Staying/Large/Last", distance: 2500, participants: Array(18).fill({}), position: 8, totalRacesInDay: 8}
+              ];
+              
+              console.log("=== TEST DES VARIATIONS DE POIDS ===");
+              testCases.forEach(test => {
+                const weights = rankingLoader.getWeights(test);
+                console.log(`${test.name}: `, weights);
+              });
+            }
+
+            // Exécuter le test des poids (décommenter pour tester)
+            // setTimeout(testWeightVariations, 3000);
+        });
+    </script>
+    
+    <!-- Ajout du nouveau module ranking-loader.js -->
+    <script src="js/ranking-loader.js?v=2"></script>
+    
+    <!-- Ajout du nouveau module de simulation intégrée -->
+    <script src="js/simulation-inline.js?v=2"></script>
+</body>
+</html>
