@@ -1,0 +1,31 @@
+{
+  "date": "2025-05-17T02:02:11.612Z",
+  "results": [
+    {
+      "category": "jockeys",
+      "success": true
+    },
+    {
+      "category": "chevaux",
+      "success": true
+    },
+    {
+      "category": "entraineurs",
+      "success": true
+    },
+    {
+      "category": "eleveurs",
+      "success": true
+    },
+    {
+      "category": "proprietaires",
+      "success": false,
+      "error": "Erreur HTTP 429 pour https://raw.githubusercontent.com/bencode92/Hippique/main/data/proprietaires.json"
+    }
+  ],
+  "summary": {
+    "total": 5,
+    "successful": 4,
+    "failed": 1
+  }
+}
