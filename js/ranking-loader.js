@@ -270,9 +270,10 @@ const rankingLoader = {
     getWeights: function(course) {
         // Poids par défaut (mis à jour pour inclure le poids porté et la corde)
         const defaultWeights = { 
-            cheval: 0.47, jockey: 0.128, entraineur: 0.102, eleveur: 0.085, proprietaire: 0.068, 
-            poids_porte: 0.10, corde: 0.05
-        };
+  const poids = courseContext ? this.getWeights(courseContext) : {
+    cheval: 0.40, jockey: 0.20, entraineur: 0.15, eleveur: 0.10, proprietaire: 0.10, 
+    poids_porte: 0.03, corde: 0.02
+};
         
         if (!course) return defaultWeights;
         
@@ -300,22 +301,38 @@ const rankingLoader = {
         const result = {};
         const keys = ['cheval', 'jockey', 'entraineur', 'eleveur', 'proprietaire'];
         
-        keys.forEach(k => {
-            // Calculer la moyenne pondérée avec les nouveaux coefficients
-            result[k] = (dw[k] * 0.36) + (sw[k] * 0.27) + (pw[k] * 0.18) + (tw[k] * 0.09);
-            // Réduire de 15% pour faire place au poids porté (10%) et à la corde (5%)
-            result[k] = result[k] * 0.85;
-            // Arrondir à 3 décimales
-            result[k] = Math.round(result[k] * 1000) / 1000;
-        });
-        
-        // Ajouter le poids porté comme facteur
-        result.poids_porte = 0.10;
-        
-        // Ajouter la corde comme nouveau facteur (5%)
-        result.corde = 0.05;
-        
-        return result;
+keys.forEach(k => {
+    // Calculer la moyenne pondérée avec les nouveaux coefficients
+    result[k] = (dw[k] * 0.36) + (sw[k] * 0.27) + (pw[k] * 0.18) + (tw[k] * 0.09);
+    // SUPPRIMÉ: result[k] = result[k] * 0.85;
+    // Ne PAS arrondir ici, on le fera après la normalisation
+});
+
+// Ajouter le poids porté comme facteur
+result.poids_porte = 0.10;
+
+// Ajouter la corde comme nouveau facteur (5%)
+result.corde = 0.05;
+
+// NOUVEAU: Normaliser pour que la somme = 1.000
+const total = Object.values(result).reduce((sum, w) => sum + w, 0);
+Object.keys(result).forEach(key => {
+    result[key] = result[key] / total;
+    // Arrondir à 3 décimales APRÈS la normalisation
+    result[key] = Math.round(result[key] * 1000) / 1000;
+});
+
+// OPTIONNEL: Vérification en mode debug
+if (this.debug) {
+    const finalSum = Object.values(result).reduce((sum, w) => sum + w, 0);
+    console.log('🔍 Poids finaux:', {
+        poids: result,
+        somme: finalSum.toFixed(6),
+        check: Math.abs(finalSum - 1) < 0.001 ? '✅' : '❌'
+    });
+}
+
+return result;
     },
     
     // Algorithme de distance de Levenshtein pour mesurer la similarité entre deux chaînes
@@ -1842,10 +1859,10 @@ const rankingLoader = {
     // NOUVELLE VERSION: Calculer le score prédictif pour un participant avec poids dynamiques
     calculerScoreParticipant(participant, courseContext) {
         // Récupérer les poids dynamiques selon le contexte de la course
-        const poids = courseContext ? this.getWeights(courseContext) : {
-            cheval: 0.47, jockey: 0.128, entraineur: 0.102, eleveur: 0.085, proprietaire: 0.068, 
-            poids_porte: 0.10, corde: 0.05
-        };
+  const poids = courseContext ? this.getWeights(courseContext) : {
+    cheval: 0.40, jockey: 0.20, entraineur: 0.15, eleveur: 0.10, proprietaire: 0.10, 
+    poids_porte: 0.03, corde: 0.02
+};
         
         // NOUVEAU: Utiliser le nom de base pour les chevaux
         const nomChevalBase = this.extraireNomBaseCheval(participant.cheval);
@@ -1954,7 +1971,58 @@ const rankingLoader = {
         });
         
         // Paramètres du système
-        const maxRang = 100; // Rang maximal pour la normalisation
+      getRangMax(categorie) {
+    // Protection contre l'asynchronisme
+    if (!this.data || !this.data[categorie] || !this.data[categorie].length) {
+        return 100; // Valeur par défaut
+    }
+    return this.data[categorie].length;
+},
+        // Paramètres du système
+getRangMax(categorie) {
+    // Protection contre l'asynchronisme
+    if (!this.data || !this.data[categorie] || !this.data[categorie].length) {
+        return 100; // Valeur par défaut
+    }
+    return this.data[categorie].length;
+},
+
+// Normalise un rang sur échelle 0-1
+normalizeRang(rang, maxRang) {
+    if (!rang || rang === 'NC') {
+        return 0; // Retourner 0 au lieu de null pour éviter les problèmes
+    }
+    return Math.max(0, 1 - (rang - 1) / (maxRang - 1));
+},
+
+// Normalise le score poids porté (-2 à +2) vers 0-1
+normalizePoids(poidsScore) {
+    return Math.max(0, Math.min(1, (poidsScore + 2) / 4));
+},
+
+// Normalise le score de corde (-2 à +3) vers 0-1
+normalizeCorde(cordeScore) {
+    return Math.max(0, Math.min(1, (cordeScore + 2) / 5));
+},
+    calculateNCValue(rangsPresents) {
+    if (!rangsPresents || !rangsPresents.length) {
+        return 0.20;
+    }
+
+    const totalPoids = rangsPresents.reduce((sum, item) => sum + item.poids, 0);
+    if (totalPoids === 0) return 0.20;
+
+    const moyenneRang = rangsPresents.reduce((sum, item) => sum + item.rang * item.poids, 0) / totalPoids;
+    const maxRang = this.getRangMax('chevaux');
+    
+    let ncValue = 1 - (moyenneRang - 1) / (maxRang - 1);
+    
+    if (ncValue > 1) {
+        ncValue = ncValue / 100;
+    }
+    
+    return Math.max(0, Math.min(1, ncValue));
+},
         
         // AMÉLIORATION: Calcul dynamique de la valeur par défaut pour les NC avec pondération
         const rangsPresents = [];
@@ -1983,31 +2051,7 @@ const rankingLoader = {
         const indiceConfiance = elementsPresents / nombreTotalElements;
         
         // AMÉLIORATION: Valeur par défaut dynamique basée sur une moyenne pondérée
-        let valeurNC;
-        
-        if (rangsPresents.length > 0) {
-            // Calculer une moyenne pondérée des rangs présents
-            let somme = 0;
-            let poidsTotal = 0;
-            
-            rangsPresents.forEach(item => {
-                somme += item.rang * item.poids;
-                poidsTotal += item.poids;
-            });
-            
-            // Moyenne pondérée
-            const moyenneRangs = poidsTotal > 0 ? somme / poidsTotal : maxRang / 2;
-            
-            // Convertir en score avec ajustement pour l'incertitude
-            valeurNC = Math.max(0, maxRang - moyenneRangs) * (0.5 + (indiceConfiance / 2));
-            valeurNC = Math.max(5, Math.min(valeurNC, maxRang * 0.5));
-            
-            console.log(`Valeur NC dynamique calculée: ${valeurNC} (basée sur moyenne pondérée des rangs: ${moyenneRangs})`);
-        } else {
-            // Valeur par défaut plus conservatrice
-            valeurNC = maxRang * 0.2;
-            console.log(`Aucun élément présent, valeur NC par défaut: ${valeurNC}`);
-        }
+const valeurNC = this.calculateNCValue(rangsPresents);
         
         // Inverser les rangs pour obtenir des scores
         const scoreCheval = rangCheval ? Math.max(0, maxRang - rangCheval) : valeurNC;
