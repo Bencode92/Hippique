@@ -711,7 +711,7 @@ const rankingLoader = {
         if (!nom) return "";
         
         // Supprimer les suffixes H.PS, F.PS, M.PS avec leur âge
-      const regex = /^(.+?)(?:\s+[HFM]\.?P\.?S\.?\s+\d+\s*a\.?.*)?$/i;
+     const regex = /^(.+?)(?:\s+[HFM]\.?P\.?S\.?\s+\d+\s*a\.?.*)?$/i;
         const match = nom.match(regex);
         
         if (match) {
@@ -782,13 +782,13 @@ const rankingLoader = {
         
         // AMÉLIORATION: Expression régulière pour supprimer les suffixes des chevaux
         // Supprimer d'abord les suffixes H.PS., F.PS., M.PS. avec âge
-        const matchSuffixeCheval = nomNormalise.match(/^([\p{L}\s'-]+?)(\s+[HFM]\.?P\.?S\.?.*$)/ui);
+        const matchSuffixeCheval = nomNormalise.match(/^([A-Za-zÀ-ÖØ-öø-ÿ\s\-']+?)(\s+[HFM]\.?P\.?S\.?.*$)/i);
         if (matchSuffixeCheval) {
             nomNormalise = matchSuffixeCheval[1].trim();
             console.log(`Nom cheval normalisé (suffixe supprimé): "${nom}" -> "${nomNormalise}"`);
         } else {
             // Si pas de suffixe, utiliser l'ancienne méthode pour l'origine (GB), etc.
-            const matchCheval = nomNormalise.match(/^([\p{L}\s'-]+?)(\s*\(([\p{L}]+)\))?(\s+[HFM]\.?P\.?S\.?.*)?$/ui);
+            const matchCheval = nomNormalise.match(/^([A-Za-zÀ-ÖØ-öø-ÿ\s\-']+?)(\s*\(([A-Za-z]+)\))?(\s+[HFM]\.?P\.?S\.?.*)?$/i);
             
             if (matchCheval) {
                 const nomBase = matchCheval[1].trim();
