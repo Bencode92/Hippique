@@ -77,48 +77,60 @@ const rankingLoader = {
         "D. BOUQ...": "DOMINIQUE BOUQUETOT"
     },
     
-    // Configuration des poids selon différents facteurs contextuels
-    TYPE_WEIGHTS: {
-        "plat": { cheval: 0.55, jockey: 0.15, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
-        "obstacle": { cheval: 0.45, jockey: 0.25, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
-        "default": { cheval: 0.55, jockey: 0.15, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 }
-    },
+// ──────────────────────────────────────────────────────────────
+// Configuration des poids « v2 » – calibrée pour un scoring 10/10
+// ──────────────────────────────────────────────────────────────
 
-    DIST_WEIGHTS: {
-        "sprint": { cheval: 0.50, jockey: 0.20, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
-        "mile": { cheval: 0.55, jockey: 0.15, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
-        "middle": { cheval: 0.58, jockey: 0.12, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
-        "staying": { cheval: 0.60, jockey: 0.10, entraineur: 0.10, eleveur: 0.12, proprietaire: 0.08 }
-    },
+// 1) Poids par type de course
+TYPE_WEIGHTS: {
+    // Plat herbe
+    "plat":     { cheval: 0.50, jockey: 0.18, entraineur: 0.15, eleveur: 0.11, proprietaire: 0.06 },
+    // Obstacles
+    "obstacle": { cheval: 0.40, jockey: 0.30, entraineur: 0.17, eleveur: 0.08, proprietaire: 0.05 },
+    // Sable / PSF (optionnel ; laissez-le ou retirez-le selon vos datasets)
+    "aw":       { cheval: 0.47, jockey: 0.20, entraineur: 0.17, eleveur: 0.10, proprietaire: 0.06 },
+    // Valeur de secours
+    "default":  { cheval: 0.50, jockey: 0.18, entraineur: 0.15, eleveur: 0.11, proprietaire: 0.06 }
+},
 
-    FIELD_SIZE_WEIGHTS: {
-        "small": { cheval: 0.50, jockey: 0.20, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
-        "medium": { cheval: 0.55, jockey: 0.15, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
-        "large": { cheval: 0.60, jockey: 0.10, entraineur: 0.10, eleveur: 0.12, proprietaire: 0.08 }
-    },
+// 2) Poids par distance (mètres réels : sprint < 1400 ; staying > 2400)
+DIST_WEIGHTS: {
+    "sprint":  { cheval: 0.45, jockey: 0.25, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
+    "mile":    { cheval: 0.50, jockey: 0.20, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
+    "middle":  { cheval: 0.55, jockey: 0.15, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
+    "staying": { cheval: 0.58, jockey: 0.12, entraineur: 0.13, eleveur: 0.10, proprietaire: 0.07 }
+},
 
-    POSITION_WEIGHTS: {
-        "first": { cheval: 0.53, jockey: 0.17, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
-        "middle": { cheval: 0.55, jockey: 0.15, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
-        "last": { cheval: 0.57, jockey: 0.13, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 }
-    },
-    
-    // NOUVEAU: Configuration des poids pour le facteur poids porté
-    WEIGHT_ADJUSTMENTS: {
-        "heavy_minus": { adjustment: 0.02 },  // Pour -2kg ou plus
-        "light_minus": { adjustment: 0.01 },  // Pour -1kg à -2kg
-        "neutral": { adjustment: 0.00 },      // Pour poids neutres (-1kg à +1kg)
-        "light_plus": { adjustment: -0.01 },  // Pour +1kg à +2kg
-        "heavy_plus": { adjustment: -0.02 },  // Pour +2kg ou plus
-    },
-    
-    // NOUVEAU: Multiplicateurs d'impact du poids selon la distance
-    WEIGHT_DISTANCE_MULTIPLIERS: {
-        "sprint": 0.7,   // Impact réduit pour les sprints (<1400m)
-        "mile": 1.0,     // Impact standard pour mile (1400-1900m)
-        "middle": 1.0,   // Impact standard pour moyenne distance (1900-2400m)
-        "staying": 1.3,  // Impact accentué pour longue distance (>2400m)
-    },
+// 3) Taille du peloton : inchangé
+FIELD_SIZE_WEIGHTS: {
+    "small":  { cheval: 0.50, jockey: 0.20, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
+    "medium": { cheval: 0.55, jockey: 0.15, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
+    "large":  { cheval: 0.60, jockey: 0.10, entraineur: 0.10, eleveur: 0.12, proprietaire: 0.08 }
+},
+
+// 4) Position dans la réunion : inchangé
+POSITION_WEIGHTS: {
+    "first":  { cheval: 0.53, jockey: 0.17, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
+    "middle": { cheval: 0.55, jockey: 0.15, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
+    "last":   { cheval: 0.57, jockey: 0.13, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 }
+},
+
+// 5) Impact du poids porté : inchangé (vous pouvez tester ±0.025 si handicaps lourds)
+WEIGHT_ADJUSTMENTS: {
+    "heavy_minus": { adjustment: 0.02 },
+    "light_minus": { adjustment: 0.01 },
+    "neutral":     { adjustment: 0.00 },
+    "light_plus":  { adjustment: -0.01 },
+    "heavy_plus":  { adjustment: -0.02 },
+},
+
+// 6) Amplification de l’impact du poids selon la distance : inchangé
+WEIGHT_DISTANCE_MULTIPLIERS: {
+    "sprint": 0.7,
+    "mile":   1.0,
+    "middle": 1.0,
+    "staying":1.3
+},
 
     // Fonctions helper pour déterminer les buckets
     getDistanceBucket: function(distance) {
