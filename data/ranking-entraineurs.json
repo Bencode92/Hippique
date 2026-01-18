@@ -1,9 +1,1354 @@
 {
   "metadata": {
     "category": "entraineurs",
-    "date_extraction": "2026-01-17",
+    "date_extraction": "2026-01-18",
     "description": "Classement pondéré entraineurs pour score prédictif",
-    "nombre_items": 0
+    "nombre_items": 336
   },
-  "rangs": []
+  "rangs": [
+    {
+      "nom": "C. ESCUDER",
+      "rang": 1
+    },
+    {
+      "nom": "J. REYNIER (S)",
+      "rang": 2
+    },
+    {
+      "nom": "P. COTTIER",
+      "rang": 3
+    },
+    {
+      "nom": "Y. BARBEROT (S)",
+      "rang": 4
+    },
+    {
+      "nom": "MME M. SCANDELLA-LACAILLE",
+      "rang": 5
+    },
+    {
+      "nom": "N. PERRET (S)",
+      "rang": 6
+    },
+    {
+      "nom": "JC. ROUGET (S)",
+      "rang": 7
+    },
+    {
+      "nom": "JUL. PHELIPPON",
+      "rang": 8
+    },
+    {
+      "nom": "M. BOUTIN (S)",
+      "rang": 9
+    },
+    {
+      "nom": "HA. PANTALL (S)",
+      "rang": 10
+    },
+    {
+      "nom": "C. BOUTIN (S)",
+      "rang": 11
+    },
+    {
+      "nom": "FR. MONFORT (S)",
+      "rang": 12
+    },
+    {
+      "nom": "G. BIETOLINI",
+      "rang": 13
+    },
+    {
+      "nom": "J. ANDREU (S)",
+      "rang": 14
+    },
+    {
+      "nom": "A. FOUASSIER",
+      "rang": 15
+    },
+    {
+      "nom": "PE. DUBOIS (S)",
+      "rang": 16
+    },
+    {
+      "nom": "S. GOUVAZE (S)",
+      "rang": 17
+    },
+    {
+      "nom": "T. SPEICHER",
+      "rang": 18
+    },
+    {
+      "nom": "M. BRASME (S)",
+      "rang": 19
+    },
+    {
+      "nom": "N. CAULLERY",
+      "rang": 20
+    },
+    {
+      "nom": "T. POCHE",
+      "rang": 21
+    },
+    {
+      "nom": "S. WATTEL (S)",
+      "rang": 22
+    },
+    {
+      "nom": "CH. PLISSON (S)",
+      "rang": 23
+    },
+    {
+      "nom": "FH. GRAFFARD (S)",
+      "rang": 24
+    },
+    {
+      "nom": "X. BLANCHET (S)",
+      "rang": 25
+    },
+    {
+      "nom": "M. BARATTI (S)",
+      "rang": 26
+    },
+    {
+      "nom": "R. FRADET (S)",
+      "rang": 27
+    },
+    {
+      "nom": "RC. MONTENEGRO",
+      "rang": 28
+    },
+    {
+      "nom": "M. RULEC (S)",
+      "rang": 29
+    },
+    {
+      "nom": "A. BARON",
+      "rang": 30
+    },
+    {
+      "nom": "M. PITART",
+      "rang": 31
+    },
+    {
+      "nom": "A. MURPHY (S)",
+      "rang": 32
+    },
+    {
+      "nom": "M. PELLETAN",
+      "rang": 33
+    },
+    {
+      "nom": "MME L. DUPELIN LALUNG",
+      "rang": 34
+    },
+    {
+      "nom": "F. FORESI",
+      "rang": 35
+    },
+    {
+      "nom": "Y. BONNEFOY (S)",
+      "rang": 36
+    },
+    {
+      "nom": "J. PARIZE",
+      "rang": 37
+    },
+    {
+      "nom": "A. FABRE (S)",
+      "rang": 38
+    },
+    {
+      "nom": "P&J. BRANDT (S)",
+      "rang": 39
+    },
+    {
+      "nom": "CH. GOURDAIN (S)",
+      "rang": 40
+    },
+    {
+      "nom": "N. PAYSAN",
+      "rang": 41
+    },
+    {
+      "nom": "M. GUARNIERI",
+      "rang": 42
+    },
+    {
+      "nom": "S. KOBAYASHI (S)",
+      "rang": 43
+    },
+    {
+      "nom": "J. BOISNARD (S)",
+      "rang": 44
+    },
+    {
+      "nom": "L. BAUDRON (S)",
+      "rang": 45
+    },
+    {
+      "nom": "JP. GAUVIN (S)",
+      "rang": 46
+    },
+    {
+      "nom": "A. BOTTI (S)",
+      "rang": 47
+    },
+    {
+      "nom": "D. ARTU (S)",
+      "rang": 48
+    },
+    {
+      "nom": "B. LEGROS (S)",
+      "rang": 49
+    },
+    {
+      "nom": "G. ARIZKORRETA ELOSEGUI",
+      "rang": 50
+    },
+    {
+      "nom": "L. GADBIN (S)",
+      "rang": 51
+    },
+    {
+      "nom": "E. MIKHALIDES (S)",
+      "rang": 52
+    },
+    {
+      "nom": "TIM. DONWORTH (S)",
+      "rang": 53
+    },
+    {
+      "nom": "MME L. LE GEAY",
+      "rang": 54
+    },
+    {
+      "nom": "HF. DEVIN (S)",
+      "rang": 55
+    },
+    {
+      "nom": "G. DOLEUZE",
+      "rang": 56
+    },
+    {
+      "nom": "S. JESUS",
+      "rang": 57
+    },
+    {
+      "nom": "K. TAVARES (S)",
+      "rang": 58
+    },
+    {
+      "nom": "MME C. HERISSON DE BEAUVOIR",
+      "rang": 59
+    },
+    {
+      "nom": "M. DELZANGLES",
+      "rang": 60
+    },
+    {
+      "nom": "MME S. PENOT",
+      "rang": 61
+    },
+    {
+      "nom": "ED. MONFORT (S)",
+      "rang": 62
+    },
+    {
+      "nom": "JM. OSORIO BERTRAN DE LIS",
+      "rang": 63
+    },
+    {
+      "nom": "S. CERULIS",
+      "rang": 64
+    },
+    {
+      "nom": "F. PARDON",
+      "rang": 65
+    },
+    {
+      "nom": "F. ROHAUT (S)",
+      "rang": 66
+    },
+    {
+      "nom": "C. LOTOUX (S)",
+      "rang": 67
+    },
+    {
+      "nom": "A. SCHUTZ (S)",
+      "rang": 68
+    },
+    {
+      "nom": "JV. TOUX",
+      "rang": 69
+    },
+    {
+      "nom": "S. MORINEAU",
+      "rang": 70
+    },
+    {
+      "nom": "K. PLISSON",
+      "rang": 71
+    },
+    {
+      "nom": "I. RAYBOULD",
+      "rang": 72
+    },
+    {
+      "nom": "L. CADOT",
+      "rang": 73
+    },
+    {
+      "nom": "N. BELLANGER (S)",
+      "rang": 74
+    },
+    {
+      "nom": "MME G. GADBLED",
+      "rang": 75
+    },
+    {
+      "nom": "C. FERLAND (S)",
+      "rang": 76
+    },
+    {
+      "nom": "D. MELE (S)",
+      "rang": 77
+    },
+    {
+      "nom": "F. CHAPPET (S)",
+      "rang": 78
+    },
+    {
+      "nom": "R. AVIAL LOPEZ",
+      "rang": 79
+    },
+    {
+      "nom": "P. MONFORT (S)",
+      "rang": 80
+    },
+    {
+      "nom": "R. CHOTARD",
+      "rang": 81
+    },
+    {
+      "nom": "H. TABET",
+      "rang": 82
+    },
+    {
+      "nom": "MME N. GARDE DUBORD",
+      "rang": 83
+    },
+    {
+      "nom": "H. GREWE",
+      "rang": 84
+    },
+    {
+      "nom": "P. OLAVE VALDIVIELSO",
+      "rang": 85
+    },
+    {
+      "nom": "F. BOUALEM",
+      "rang": 86
+    },
+    {
+      "nom": "M. ALONSO ROLDAN",
+      "rang": 87
+    },
+    {
+      "nom": "J. PLANQUE (S)",
+      "rang": 88
+    },
+    {
+      "nom": "D. BONILLA (S)",
+      "rang": 89
+    },
+    {
+      "nom": "P. SOGORB",
+      "rang": 90
+    },
+    {
+      "nom": "T. MAUDET",
+      "rang": 91
+    },
+    {
+      "nom": "MME Y. VOLLMER",
+      "rang": 92
+    },
+    {
+      "nom": "J. PIEDNOEL",
+      "rang": 93
+    },
+    {
+      "nom": "MLG. DE CARVALHO",
+      "rang": 94
+    },
+    {
+      "nom": "MME C. BERTIN",
+      "rang": 95
+    },
+    {
+      "nom": "D. MAHE",
+      "rang": 96
+    },
+    {
+      "nom": "MME A. TINCHON",
+      "rang": 97
+    },
+    {
+      "nom": "MME B. SABLON",
+      "rang": 98
+    },
+    {
+      "nom": "SM. AGUINSACA ARMIJOS",
+      "rang": 99
+    },
+    {
+      "nom": "F. MONNIER (S)",
+      "rang": 100
+    },
+    {
+      "nom": "MME S. GAVILAN",
+      "rang": 101
+    },
+    {
+      "nom": "FX. WEISSMEIER",
+      "rang": 102
+    },
+    {
+      "nom": "W. WALTON",
+      "rang": 103
+    },
+    {
+      "nom": "D. MORISSON (S)",
+      "rang": 104
+    },
+    {
+      "nom": "P. DECOUZ (S)",
+      "rang": 105
+    },
+    {
+      "nom": "D. CHENU",
+      "rang": 106
+    },
+    {
+      "nom": "P. DOLLE",
+      "rang": 107
+    },
+    {
+      "nom": "MME A. THIBAUT",
+      "rang": 108
+    },
+    {
+      "nom": "M. NIGGE (S)",
+      "rang": 109
+    },
+    {
+      "nom": "P. GROUALLE (S)",
+      "rang": 110
+    },
+    {
+      "nom": "M. GEISLER",
+      "rang": 111
+    },
+    {
+      "nom": "D&P. PROD'HOMME (S)",
+      "rang": 112
+    },
+    {
+      "nom": "A. SANCHEZ-MARTIN",
+      "rang": 113
+    },
+    {
+      "nom": "G. PANNIER",
+      "rang": 114
+    },
+    {
+      "nom": "G. HERNON (S)",
+      "rang": 115
+    },
+    {
+      "nom": "MME J. DUPONT-FAHN",
+      "rang": 116
+    },
+    {
+      "nom": "M. JUSTUM",
+      "rang": 117
+    },
+    {
+      "nom": "MME N. SIGAUD",
+      "rang": 118
+    },
+    {
+      "nom": "L. VITABILE",
+      "rang": 119
+    },
+    {
+      "nom": "M. KREBS (S)",
+      "rang": 120
+    },
+    {
+      "nom": "P.DE CHEVIGNY",
+      "rang": 121
+    },
+    {
+      "nom": "A. VIGREUX (S)",
+      "rang": 122
+    },
+    {
+      "nom": "A. LOTOUT",
+      "rang": 123
+    },
+    {
+      "nom": "J. LEROY",
+      "rang": 124
+    },
+    {
+      "nom": "S. NIGGE (S)",
+      "rang": 125
+    },
+    {
+      "nom": "M. BAUDY",
+      "rang": 126
+    },
+    {
+      "nom": "MME V. HEAD",
+      "rang": 127
+    },
+    {
+      "nom": "OA. ANAYA",
+      "rang": 128
+    },
+    {
+      "nom": "E. LIBAUD (S)",
+      "rang": 129
+    },
+    {
+      "nom": "MME J. LE STANG",
+      "rang": 130
+    },
+    {
+      "nom": "A. LARTIGAU",
+      "rang": 131
+    },
+    {
+      "nom": "MME C. AUVRAY",
+      "rang": 132
+    },
+    {
+      "nom": "E. BERNHARDT",
+      "rang": 133
+    },
+    {
+      "nom": "C&Y. LERNER (S)",
+      "rang": 134
+    },
+    {
+      "nom": "N. LEENDERS",
+      "rang": 135
+    },
+    {
+      "nom": "X. THOMAS-DEMEAULTE (S)",
+      "rang": 136
+    },
+    {
+      "nom": "R. AVIAL SANCHEZ",
+      "rang": 137
+    },
+    {
+      "nom": "D. ZARROLI",
+      "rang": 138
+    },
+    {
+      "nom": "A. TSERETELI",
+      "rang": 139
+    },
+    {
+      "nom": "M. WEISS",
+      "rang": 140
+    },
+    {
+      "nom": "C. FEY (S)",
+      "rang": 141
+    },
+    {
+      "nom": "MME AA. GAY",
+      "rang": 142
+    },
+    {
+      "nom": "LD. RACCO",
+      "rang": 143
+    },
+    {
+      "nom": "CLEMENT & HERMANS (S)",
+      "rang": 144
+    },
+    {
+      "nom": "L&M. VIEL (S)",
+      "rang": 145
+    },
+    {
+      "nom": "Y. DAUCE",
+      "rang": 146
+    },
+    {
+      "nom": "F. BELLEMERE",
+      "rang": 147
+    },
+    {
+      "nom": "D. LENFANT",
+      "rang": 148
+    },
+    {
+      "nom": "AJ. BAPTISTA RIBEIRO DE ABREU",
+      "rang": 149
+    },
+    {
+      "nom": "C. TOLAINI",
+      "rang": 150
+    },
+    {
+      "nom": "S. JOUSSELIN",
+      "rang": 151
+    },
+    {
+      "nom": "MME M. DESVAUX",
+      "rang": 152
+    },
+    {
+      "nom": "L. CENDRA",
+      "rang": 153
+    },
+    {
+      "nom": "G. SOULIE",
+      "rang": 154
+    },
+    {
+      "nom": "C. RESTOUT",
+      "rang": 155
+    },
+    {
+      "nom": "MME AL. GUILDOUX",
+      "rang": 156
+    },
+    {
+      "nom": "B. MONTZEY (S)",
+      "rang": 157
+    },
+    {
+      "nom": "MME G. RARICK",
+      "rang": 158
+    },
+    {
+      "nom": "P. ADDA (S)",
+      "rang": 159
+    },
+    {
+      "nom": "S. SMRCZEK",
+      "rang": 160
+    },
+    {
+      "nom": "L. HERVO",
+      "rang": 161
+    },
+    {
+      "nom": "V. TORLAY",
+      "rang": 162
+    },
+    {
+      "nom": "MME A. BAUDRON",
+      "rang": 163
+    },
+    {
+      "nom": "PIER. MENARD",
+      "rang": 164
+    },
+    {
+      "nom": "MME J. HIERGENS",
+      "rang": 165
+    },
+    {
+      "nom": "M. DAOUGABEL",
+      "rang": 166
+    },
+    {
+      "nom": "MME J. SOUDAN",
+      "rang": 167
+    },
+    {
+      "nom": "B. BOSSERT",
+      "rang": 168
+    },
+    {
+      "nom": "P. VENTENA ALVES",
+      "rang": 169
+    },
+    {
+      "nom": "MME A. BUDKA",
+      "rang": 170
+    },
+    {
+      "nom": "S. LABATE (S)",
+      "rang": 171
+    },
+    {
+      "nom": "JC. BERTIN",
+      "rang": 172
+    },
+    {
+      "nom": "MME V. DISSAUX",
+      "rang": 173
+    },
+    {
+      "nom": "B. AUDOUIN (S)",
+      "rang": 174
+    },
+    {
+      "nom": "G. NICOT",
+      "rang": 175
+    },
+    {
+      "nom": "MME C. ERNI",
+      "rang": 176
+    },
+    {
+      "nom": "A. SPANU",
+      "rang": 177
+    },
+    {
+      "nom": "R. SAINTE ROSE",
+      "rang": 178
+    },
+    {
+      "nom": "O. TRIGODET (S)",
+      "rang": 179
+    },
+    {
+      "nom": "HJ. FARIA PEREIRA",
+      "rang": 180
+    },
+    {
+      "nom": "S. MAURER",
+      "rang": 181
+    },
+    {
+      "nom": "L. LEMIERE (S)",
+      "rang": 182
+    },
+    {
+      "nom": "L. GUERIN",
+      "rang": 183
+    },
+    {
+      "nom": "MME Y. LUCE",
+      "rang": 184
+    },
+    {
+      "nom": "JL. PELLETAN",
+      "rang": 185
+    },
+    {
+      "nom": "A. VERMEIRE",
+      "rang": 186
+    },
+    {
+      "nom": "J. BOURGEAIS",
+      "rang": 187
+    },
+    {
+      "nom": "G. JUILLET",
+      "rang": 188
+    },
+    {
+      "nom": "G. ORTIZ",
+      "rang": 189
+    },
+    {
+      "nom": "MME A. WATTEL",
+      "rang": 190
+    },
+    {
+      "nom": "T. FOURCY (S)",
+      "rang": 191
+    },
+    {
+      "nom": "M. BARBA",
+      "rang": 192
+    },
+    {
+      "nom": "H. BLUME",
+      "rang": 193
+    },
+    {
+      "nom": "C. ALONSO PENA",
+      "rang": 194
+    },
+    {
+      "nom": "C. MARTINON",
+      "rang": 195
+    },
+    {
+      "nom": "E. PUENTE SIMON",
+      "rang": 196
+    },
+    {
+      "nom": "M. ROLLAND (S)",
+      "rang": 197
+    },
+    {
+      "nom": "M. DELCHER SANCHEZ",
+      "rang": 198
+    },
+    {
+      "nom": "MME S. COURTES",
+      "rang": 199
+    },
+    {
+      "nom": "D. WATRIGANT (S)",
+      "rang": 200
+    },
+    {
+      "nom": "M. PLANARD",
+      "rang": 201
+    },
+    {
+      "nom": "A. COUETIL (S)",
+      "rang": 202
+    },
+    {
+      "nom": "J. DA SILVA",
+      "rang": 203
+    },
+    {
+      "nom": "JL. FOURSANS-BOURDETTE",
+      "rang": 204
+    },
+    {
+      "nom": "L. BERNHARDT",
+      "rang": 205
+    },
+    {
+      "nom": "T. BOKORI",
+      "rang": 206
+    },
+    {
+      "nom": "MME N. MOONS",
+      "rang": 207
+    },
+    {
+      "nom": "G. FOURRIER",
+      "rang": 208
+    },
+    {
+      "nom": "A. JACOBY-KOALY",
+      "rang": 209
+    },
+    {
+      "nom": "MME C. NICOT",
+      "rang": 210
+    },
+    {
+      "nom": "E. ZAHARIEV",
+      "rang": 211
+    },
+    {
+      "nom": "MME J. SOUBAGNE",
+      "rang": 212
+    },
+    {
+      "nom": "D. GUILLEMIN (S)",
+      "rang": 213
+    },
+    {
+      "nom": "G. MOSSE (S)",
+      "rang": 214
+    },
+    {
+      "nom": "C. PENELOPE",
+      "rang": 215
+    },
+    {
+      "nom": "H. JEAN LOUIS",
+      "rang": 216
+    },
+    {
+      "nom": "G. HEURTAULT",
+      "rang": 217
+    },
+    {
+      "nom": "MME D. PIGEARD",
+      "rang": 218
+    },
+    {
+      "nom": "H. GHABRI",
+      "rang": 219
+    },
+    {
+      "nom": "C&G. HUE & TAUPIN (S)",
+      "rang": 220
+    },
+    {
+      "nom": "T. RICHARD (S)",
+      "rang": 221
+    },
+    {
+      "nom": "C. LEQUIEN (S)",
+      "rang": 222
+    },
+    {
+      "nom": "MME A. KARKOSA",
+      "rang": 223
+    },
+    {
+      "nom": "MME E. CURY",
+      "rang": 224
+    },
+    {
+      "nom": "G. ADREA",
+      "rang": 225
+    },
+    {
+      "nom": "K. KEREKES",
+      "rang": 226
+    },
+    {
+      "nom": "M. BLANCPAIN (S)",
+      "rang": 227
+    },
+    {
+      "nom": "MME S. LESAGE DE LA HAYE",
+      "rang": 228
+    },
+    {
+      "nom": "V. DEVILLARS",
+      "rang": 229
+    },
+    {
+      "nom": "MME C. BARANDE BARBE",
+      "rang": 230
+    },
+    {
+      "nom": "X. RICHARD",
+      "rang": 231
+    },
+    {
+      "nom": "A. CARRASCO SANCHEZ",
+      "rang": 232
+    },
+    {
+      "nom": "A. WEST",
+      "rang": 233
+    },
+    {
+      "nom": "A. JUNK (S)",
+      "rang": 234
+    },
+    {
+      "nom": "MME M. SOLIGNAC",
+      "rang": 235
+    },
+    {
+      "nom": "P. VOVCENKO",
+      "rang": 236
+    },
+    {
+      "nom": "M. FIGGE",
+      "rang": 237
+    },
+    {
+      "nom": "Y. MARIE",
+      "rang": 238
+    },
+    {
+      "nom": "S. RICHTER",
+      "rang": 239
+    },
+    {
+      "nom": "CHR. HEAD (S)",
+      "rang": 240
+    },
+    {
+      "nom": "AS&D. ALLARD (S)",
+      "rang": 241
+    },
+    {
+      "nom": "L. PONTOIR (S)",
+      "rang": 242
+    },
+    {
+      "nom": "D. LIMOUSY",
+      "rang": 243
+    },
+    {
+      "nom": "P. PENELOPE",
+      "rang": 244
+    },
+    {
+      "nom": "J. GRASSICK",
+      "rang": 245
+    },
+    {
+      "nom": "A. MONTAUBAN VAN SWIJNDREGT (S)",
+      "rang": 246
+    },
+    {
+      "nom": "MME L. HEBRARD DE VEYRINAS",
+      "rang": 247
+    },
+    {
+      "nom": "MME S. GEFFRIAUD",
+      "rang": 248
+    },
+    {
+      "nom": "MME C. BUESA ZUBIRIA",
+      "rang": 249
+    },
+    {
+      "nom": "P. SIGAUD",
+      "rang": 250
+    },
+    {
+      "nom": "F. ZIGLIOLI",
+      "rang": 251
+    },
+    {
+      "nom": "JA. FERREIRA DE OLIVEIRA",
+      "rang": 252
+    },
+    {
+      "nom": "A. SANGLARD (S)",
+      "rang": 253
+    },
+    {
+      "nom": "D. DA COSTA PEDROSA",
+      "rang": 254
+    },
+    {
+      "nom": "MME C. JANSSEN",
+      "rang": 255
+    },
+    {
+      "nom": "S. CHEVALIER",
+      "rang": 256
+    },
+    {
+      "nom": "MME JF. BERNARD",
+      "rang": 257
+    },
+    {
+      "nom": "A. WOHLER",
+      "rang": 258
+    },
+    {
+      "nom": "M. WEBER",
+      "rang": 259
+    },
+    {
+      "nom": "B. GOUDOT (S)",
+      "rang": 260
+    },
+    {
+      "nom": "F. BELMONT",
+      "rang": 261
+    },
+    {
+      "nom": "T. VIEL",
+      "rang": 262
+    },
+    {
+      "nom": "B. LE REGENT",
+      "rang": 263
+    },
+    {
+      "nom": "M. ANDRIANTSOA RATSIMIHAH",
+      "rang": 264
+    },
+    {
+      "nom": "M. BERTO",
+      "rang": 265
+    },
+    {
+      "nom": "A. FOUCHET (S)",
+      "rang": 266
+    },
+    {
+      "nom": "C. BAUER",
+      "rang": 267
+    },
+    {
+      "nom": "P. DUFRECHE",
+      "rang": 268
+    },
+    {
+      "nom": "S. FOUCHER",
+      "rang": 269
+    },
+    {
+      "nom": "G. RIVASES",
+      "rang": 270
+    },
+    {
+      "nom": "A. TATARD",
+      "rang": 271
+    },
+    {
+      "nom": "P. LACROIX",
+      "rang": 272
+    },
+    {
+      "nom": "MME B. RE-SCANDELLA",
+      "rang": 273
+    },
+    {
+      "nom": "D. SMAGA",
+      "rang": 274
+    },
+    {
+      "nom": "L. GUILLOUX",
+      "rang": 275
+    },
+    {
+      "nom": "E. LECOIFFIER",
+      "rang": 276
+    },
+    {
+      "nom": "B. RECHER",
+      "rang": 277
+    },
+    {
+      "nom": "MME V. DEISS",
+      "rang": 278
+    },
+    {
+      "nom": "A. BRENCKLE",
+      "rang": 279
+    },
+    {
+      "nom": "F. SANCHEZ",
+      "rang": 280
+    },
+    {
+      "nom": "L. GIREL",
+      "rang": 281
+    },
+    {
+      "nom": "J. ZULIANI",
+      "rang": 282
+    },
+    {
+      "nom": "P. NICOT (S)",
+      "rang": 283
+    },
+    {
+      "nom": "F. JIMENEZ ALVAREZ",
+      "rang": 284
+    },
+    {
+      "nom": "JC. ROSELL AVILA",
+      "rang": 285
+    },
+    {
+      "nom": "L. PROIETTI",
+      "rang": 286
+    },
+    {
+      "nom": "B. DE KONINCK",
+      "rang": 287
+    },
+    {
+      "nom": "MME C. WHITFIELD",
+      "rang": 288
+    },
+    {
+      "nom": "A. RENAULT",
+      "rang": 289
+    },
+    {
+      "nom": "V. LUKA",
+      "rang": 290
+    },
+    {
+      "nom": "J. CARAYON",
+      "rang": 291
+    },
+    {
+      "nom": "C. CORDUAN",
+      "rang": 292
+    },
+    {
+      "nom": "MME B. VALENTI",
+      "rang": 293
+    },
+    {
+      "nom": "MME S. WEIS",
+      "rang": 294
+    },
+    {
+      "nom": "J. BOSSERT",
+      "rang": 295
+    },
+    {
+      "nom": "F. HAYERES (S)",
+      "rang": 296
+    },
+    {
+      "nom": "G. VERHEYE",
+      "rang": 297
+    },
+    {
+      "nom": "NSL. WILLIAMS",
+      "rang": 298
+    },
+    {
+      "nom": "MME D. SCHOENHERR",
+      "rang": 299
+    },
+    {
+      "nom": "MME M. BRUERE",
+      "rang": 300
+    },
+    {
+      "nom": "B. LEVESQUE",
+      "rang": 301
+    },
+    {
+      "nom": "A. LEZAMA MENENDEZ",
+      "rang": 302
+    },
+    {
+      "nom": "MME N. MURE-RAVAUD",
+      "rang": 303
+    },
+    {
+      "nom": "A. LE CLERC (S)",
+      "rang": 304
+    },
+    {
+      "nom": "MF. WEISSMEIER",
+      "rang": 305
+    },
+    {
+      "nom": "ROB. COLLET (S)",
+      "rang": 306
+    },
+    {
+      "nom": "MME T. PUITG",
+      "rang": 307
+    },
+    {
+      "nom": "P. AUCHERE",
+      "rang": 308
+    },
+    {
+      "nom": "MME A. MCMAHON-REIDY",
+      "rang": 309
+    },
+    {
+      "nom": "F. SANTELLA",
+      "rang": 310
+    },
+    {
+      "nom": "MME H. MENNESSIER MARTINEZ",
+      "rang": 311
+    },
+    {
+      "nom": "C. PAUTIER",
+      "rang": 312
+    },
+    {
+      "nom": "MME G. GERNAY",
+      "rang": 313
+    },
+    {
+      "nom": "N. TERRASSIN",
+      "rang": 314
+    },
+    {
+      "nom": "MME V. MERCADER",
+      "rang": 315
+    },
+    {
+      "nom": "G. LUISI",
+      "rang": 316
+    },
+    {
+      "nom": "A. WATRIGANT (S)",
+      "rang": 317
+    },
+    {
+      "nom": "O.DE MONTZEY",
+      "rang": 318
+    },
+    {
+      "nom": "A. ESTRABOL",
+      "rang": 319
+    },
+    {
+      "nom": "E. LEMAITRE",
+      "rang": 320
+    },
+    {
+      "nom": "MME P. DEMORISE",
+      "rang": 321
+    },
+    {
+      "nom": "A. SCHEPENS",
+      "rang": 322
+    },
+    {
+      "nom": "MME F. CHENU",
+      "rang": 323
+    },
+    {
+      "nom": "BUTEL & BEAUNEZ (S)",
+      "rang": 324
+    },
+    {
+      "nom": "MME M. GILET",
+      "rang": 325
+    },
+    {
+      "nom": "MME N. BENTLEY",
+      "rang": 326
+    },
+    {
+      "nom": "S. GHYS",
+      "rang": 327
+    },
+    {
+      "nom": "L. BOUALEM",
+      "rang": 328
+    },
+    {
+      "nom": "C. BONIN (S)",
+      "rang": 329
+    },
+    {
+      "nom": "S. GOUYETTE (S)",
+      "rang": 330
+    },
+    {
+      "nom": "F. GUYADER (S)",
+      "rang": 331
+    },
+    {
+      "nom": "MME W. SZCZESNIAK",
+      "rang": 332
+    },
+    {
+      "nom": "MME P. MADIOT",
+      "rang": 333
+    },
+    {
+      "nom": "M. ALIKER",
+      "rang": 334
+    },
+    {
+      "nom": "A. MACEDO DA SILVA",
+      "rang": 335
+    },
+    {
+      "nom": "P. VAN DE WEIJER",
+      "rang": 336
+    }
+  ]
 }

@@ -1,9 +1,4558 @@
 {
   "metadata": {
     "category": "eleveurs",
-    "date_extraction": "2026-01-17",
+    "date_extraction": "2026-01-18",
     "description": "Classement pondéré eleveurs pour score prédictif",
-    "nombre_items": 0
+    "nombre_items": 1137
   },
-  "rangs": []
+  "rangs": [
+    {
+      "nom": "GUY PARIENTE HOLDING",
+      "rang": 1
+    },
+    {
+      "nom": "MR ALAIN CHOPARD",
+      "rang": 2
+    },
+    {
+      "nom": "MR JEAN-PIERRE-JOSEPH DUBOIS",
+      "rang": 3
+    },
+    {
+      "nom": "MR JEAN-CLAUDE SEROUL",
+      "rang": 4
+    },
+    {
+      "nom": "MR CHRISTOPHE JOUANDOU",
+      "rang": 5
+    },
+    {
+      "nom": "FRANKLIN FINANCE S.A.",
+      "rang": 6
+    },
+    {
+      "nom": "MR JEAN-PHILIPPE DUBOIS",
+      "rang": 7
+    },
+    {
+      "nom": "MR THIERRY DE LA HERONNIERE",
+      "rang": 8
+    },
+    {
+      "nom": "M.BOUTIN (S)",
+      "rang": 9
+    },
+    {
+      "nom": "HARAS DE SAINT-VOIR",
+      "rang": 10
+    },
+    {
+      "nom": "MR PIERRE LAMY",
+      "rang": 11
+    },
+    {
+      "nom": "WERTHEIMER & FRERE",
+      "rang": 12
+    },
+    {
+      "nom": "SCUDERIA MICOLO SNC",
+      "rang": 13
+    },
+    {
+      "nom": "HARAS D'ETREHAM",
+      "rang": 14
+    },
+    {
+      "nom": "J.B.S. INVEST N.V.",
+      "rang": 15
+    },
+    {
+      "nom": "MR ROBERT NG",
+      "rang": 16
+    },
+    {
+      "nom": "AL SHAQAB RACING",
+      "rang": 17
+    },
+    {
+      "nom": "SARL  DARPAT FRANCE",
+      "rang": 18
+    },
+    {
+      "nom": "ECURIE LA VALLEE MARTIGNY EARL",
+      "rang": 19
+    },
+    {
+      "nom": "MR HERMES VIGNA",
+      "rang": 20
+    },
+    {
+      "nom": "MR RASHIT SHAYKHUTDINOV",
+      "rang": 21
+    },
+    {
+      "nom": "MR YANNICK FOUIN",
+      "rang": 22
+    },
+    {
+      "nom": "MR PETER-DAVID SAVILL",
+      "rang": 23
+    },
+    {
+      "nom": "SARL  JEDBURGH STUD",
+      "rang": 24
+    },
+    {
+      "nom": "ECURIE PEREGRINE SAS",
+      "rang": 25
+    },
+    {
+      "nom": "CHEVOTEL DE LA HAUQUERIE",
+      "rang": 26
+    },
+    {
+      "nom": "FRAMONT LIMITED",
+      "rang": 27
+    },
+    {
+      "nom": "GOUSSERIE RACING",
+      "rang": 28
+    },
+    {
+      "nom": "AVATARA S.A.",
+      "rang": 29
+    },
+    {
+      "nom": "ECURIE HARAS DES SENORA",
+      "rang": 30
+    },
+    {
+      "nom": "AL SHAHANIA STUD",
+      "rang": 31
+    },
+    {
+      "nom": "HARAS DE LA MERCERIE",
+      "rang": 32
+    },
+    {
+      "nom": "HERALD BLOODSTOCK LTD",
+      "rang": 33
+    },
+    {
+      "nom": "HARAS DE MAGOUET",
+      "rang": 34
+    },
+    {
+      "nom": "SCEA  BARBOTTIERE",
+      "rang": 35
+    },
+    {
+      "nom": "MME STEPHANIE CASTANHEIRA",
+      "rang": 36
+    },
+    {
+      "nom": "HARAS DE MONTAIGU",
+      "rang": 37
+    },
+    {
+      "nom": "MR PETER RECHSTEINER",
+      "rang": 38
+    },
+    {
+      "nom": "ECURIE NORMANDIE PUR SANG",
+      "rang": 39
+    },
+    {
+      "nom": "GESTUT ZUR KUSTE AG",
+      "rang": 40
+    },
+    {
+      "nom": "ECURIE HARAS DU CADRAN",
+      "rang": 41
+    },
+    {
+      "nom": "MR BEREND VAN DALFSEN",
+      "rang": 42
+    },
+    {
+      "nom": "MR HUGUES ROUSSEAU",
+      "rang": 43
+    },
+    {
+      "nom": "HARAS D'HASPEL",
+      "rang": 44
+    },
+    {
+      "nom": "SCEA DU HARAS DE VICTOT",
+      "rang": 45
+    },
+    {
+      "nom": "AL ASAYL FRANCE",
+      "rang": 46
+    },
+    {
+      "nom": "MME SARAH DUPRAY",
+      "rang": 47
+    },
+    {
+      "nom": "AL ASAYL BLOODSTOCK LTD",
+      "rang": 48
+    },
+    {
+      "nom": "ECURIE JEAN-LOUIS BOUCHARD",
+      "rang": 49
+    },
+    {
+      "nom": "MME MICHEL DAUGREILH",
+      "rang": 50
+    },
+    {
+      "nom": "MME PIA BRANDT",
+      "rang": 51
+    },
+    {
+      "nom": "ECURIE PLESSIS",
+      "rang": 52
+    },
+    {
+      "nom": "MR OLIVIER JOSEPH MCDOWELL",
+      "rang": 53
+    },
+    {
+      "nom": "MR MANFRED WURTENBERGER",
+      "rang": 54
+    },
+    {
+      "nom": "MR PATRICK CHEDEVILLE",
+      "rang": 55
+    },
+    {
+      "nom": "MR ERIC FEURTET",
+      "rang": 56
+    },
+    {
+      "nom": "ECURIE DE CASTILLON",
+      "rang": 57
+    },
+    {
+      "nom": "MR MOHAMMAD AL-NAJAFI",
+      "rang": 58
+    },
+    {
+      "nom": "MR ANTOINE BARDINI",
+      "rang": 59
+    },
+    {
+      "nom": "MR PHILIPPE DECOUZ",
+      "rang": 60
+    },
+    {
+      "nom": "HARAS DU MONT DIT MONT",
+      "rang": 61
+    },
+    {
+      "nom": "EARL HARAS DE CISAI",
+      "rang": 62
+    },
+    {
+      "nom": "EURL FREDDY HEAD",
+      "rang": 63
+    },
+    {
+      "nom": "MME ERIKA MULLER",
+      "rang": 64
+    },
+    {
+      "nom": "MR FRIEDER BAUMANN",
+      "rang": 65
+    },
+    {
+      "nom": "HARAS D'LA RIVIERE",
+      "rang": 66
+    },
+    {
+      "nom": "HARAS DE GRANDCAMP EARL",
+      "rang": 67
+    },
+    {
+      "nom": "MR JEAN-CLAUDE OLLIVIER",
+      "rang": 68
+    },
+    {
+      "nom": "MR PASCAL COTTRET",
+      "rang": 69
+    },
+    {
+      "nom": "SCEA MARMION VAUVILLE",
+      "rang": 70
+    },
+    {
+      "nom": "MR JEAN-RAYMOND PAILHES",
+      "rang": 71
+    },
+    {
+      "nom": "MR FERDINANDO FRATINI",
+      "rang": 72
+    },
+    {
+      "nom": "MME DOMINIQUE BESSET",
+      "rang": 73
+    },
+    {
+      "nom": "MR JEREMY CHAMPAGNE",
+      "rang": 74
+    },
+    {
+      "nom": "MME FRANCOISE PERREE",
+      "rang": 75
+    },
+    {
+      "nom": "HARAS DU LOGIS SAINT GERMAIN",
+      "rang": 76
+    },
+    {
+      "nom": "LJ NEGOCE",
+      "rang": 77
+    },
+    {
+      "nom": "MME ISABELLE CORBANI",
+      "rang": 78
+    },
+    {
+      "nom": "GESTUT FAHRHOF",
+      "rang": 79
+    },
+    {
+      "nom": "HARAS DE TRELI",
+      "rang": 80
+    },
+    {
+      "nom": "MR CHRISTOPHE MOYER",
+      "rang": 81
+    },
+    {
+      "nom": "ECURIE A.B.U.",
+      "rang": 82
+    },
+    {
+      "nom": "LG BLOODSTOCK",
+      "rang": 83
+    },
+    {
+      "nom": "HARAS DE LA HUDERIE",
+      "rang": 84
+    },
+    {
+      "nom": "MR CHRISTIAN VALLEE",
+      "rang": 85
+    },
+    {
+      "nom": "MR OLIVIER QUINIOU",
+      "rang": 86
+    },
+    {
+      "nom": "SASU  ECURIE PASCALE MENARD",
+      "rang": 87
+    },
+    {
+      "nom": "SUMBE",
+      "rang": 88
+    },
+    {
+      "nom": "AGA KHAN STUDS SC",
+      "rang": 89
+    },
+    {
+      "nom": "MR DENIS LEMARIE",
+      "rang": 90
+    },
+    {
+      "nom": "MME ANNIE LEMARIE",
+      "rang": 91
+    },
+    {
+      "nom": "HARAS DES EVEES",
+      "rang": 92
+    },
+    {
+      "nom": "HARAS D'ECOUVES",
+      "rang": 93
+    },
+    {
+      "nom": "MR ANTON KRAULIGER",
+      "rang": 94
+    },
+    {
+      "nom": "ECURIE DES MONCEAUX",
+      "rang": 95
+    },
+    {
+      "nom": "YEGUADA CENTURION SLU",
+      "rang": 96
+    },
+    {
+      "nom": "MR ALI THAMER AL-MEHSHADI",
+      "rang": 97
+    },
+    {
+      "nom": "MR ALAIN CLAVIER",
+      "rang": 98
+    },
+    {
+      "nom": "ECURIE GRIBOMONT",
+      "rang": 99
+    },
+    {
+      "nom": "HARAS DE BEAUMONT",
+      "rang": 100
+    },
+    {
+      "nom": "WOODPARK BLOODSTOCK LTD",
+      "rang": 101
+    },
+    {
+      "nom": "SARL  ECURIE J.L. TEPPER",
+      "rang": 102
+    },
+    {
+      "nom": "FREE MAN RACING",
+      "rang": 103
+    },
+    {
+      "nom": "MME CLAIRE STEPHENSON",
+      "rang": 104
+    },
+    {
+      "nom": "MR MICHEL OHANESSIAN",
+      "rang": 105
+    },
+    {
+      "nom": "HARAS DE DODVILLE",
+      "rang": 106
+    },
+    {
+      "nom": "MR BRUNO BERTIN",
+      "rang": 107
+    },
+    {
+      "nom": "MR PIERRE-YVES JUILLARD",
+      "rang": 108
+    },
+    {
+      "nom": "MR ALAIN MAUBERT",
+      "rang": 109
+    },
+    {
+      "nom": "MR MASAAKI MATSUSHIMA",
+      "rang": 110
+    },
+    {
+      "nom": "MME MARIE-LAURE BESNOUIN",
+      "rang": 111
+    },
+    {
+      "nom": "S.C.E.A. DES PRAIRIES",
+      "rang": 112
+    },
+    {
+      "nom": "FAL STUD SAS",
+      "rang": 113
+    },
+    {
+      "nom": "MR GILLES TRUPHEMUS",
+      "rang": 114
+    },
+    {
+      "nom": "MR ALAIN PRUDENT",
+      "rang": 115
+    },
+    {
+      "nom": "MR GUILLAUME VITSE",
+      "rang": 116
+    },
+    {
+      "nom": "MME CAMILLE VITSE",
+      "rang": 117
+    },
+    {
+      "nom": "MME CATHERINE KAIRIS",
+      "rang": 118
+    },
+    {
+      "nom": "HARAS DU QUESNAY",
+      "rang": 119
+    },
+    {
+      "nom": "MR DANIEL DUMOULIN",
+      "rang": 120
+    },
+    {
+      "nom": "MR MATHIEU DAGUZAN-GARROS",
+      "rang": 121
+    },
+    {
+      "nom": "MR WERNER NEUMANN",
+      "rang": 122
+    },
+    {
+      "nom": "ELEVAGE HARAS DE BOURGEAUVILLE",
+      "rang": 123
+    },
+    {
+      "nom": "FINANZA LOCALE CONSULTING SRL",
+      "rang": 124
+    },
+    {
+      "nom": "MR XAVIER MOYER",
+      "rang": 125
+    },
+    {
+      "nom": "MME ANNABELLE MOYER",
+      "rang": 126
+    },
+    {
+      "nom": "MR HENRI DE PRACOMTAL",
+      "rang": 127
+    },
+    {
+      "nom": "MR SAM SANGSTER",
+      "rang": 128
+    },
+    {
+      "nom": "MR PIERRE PASQUET",
+      "rang": 129
+    },
+    {
+      "nom": "RUNNYMEDE FARM LLC",
+      "rang": 130
+    },
+    {
+      "nom": "MR JOUBRANE OUECHEC",
+      "rang": 131
+    },
+    {
+      "nom": "MME MELANIE AUSTIN",
+      "rang": 132
+    },
+    {
+      "nom": "ELMINA",
+      "rang": 133
+    },
+    {
+      "nom": "BUTEL & BEAUNEZ (S)",
+      "rang": 134
+    },
+    {
+      "nom": "EARL  HARAS DU LOGIS",
+      "rang": 135
+    },
+    {
+      "nom": "MR ALAIN JATHIERE",
+      "rang": 136
+    },
+    {
+      "nom": "MR ERWAN ROBIN",
+      "rang": 137
+    },
+    {
+      "nom": "SULTAN SAEED MOHAMMED HARIB ALFALAHI",
+      "rang": 138
+    },
+    {
+      "nom": "SAS I.E.I.",
+      "rang": 139
+    },
+    {
+      "nom": "MR ALI HAKAM",
+      "rang": 140
+    },
+    {
+      "nom": "MME AMINA HAKAM",
+      "rang": 141
+    },
+    {
+      "nom": "MR ATHANASE POULOPOULOS",
+      "rang": 142
+    },
+    {
+      "nom": "MME CHRISTA ZASS",
+      "rang": 143
+    },
+    {
+      "nom": "ECURIE SKYMARC FARM",
+      "rang": 144
+    },
+    {
+      "nom": "HARAS DES PYRENEES",
+      "rang": 145
+    },
+    {
+      "nom": "MME MARIE-LAURE COLLET",
+      "rang": 146
+    },
+    {
+      "nom": "ECURIE DESJARDINS",
+      "rang": 147
+    },
+    {
+      "nom": "MR SIMON URIZZI",
+      "rang": 148
+    },
+    {
+      "nom": "HARAS D'IDERNES",
+      "rang": 149
+    },
+    {
+      "nom": "Y.BARBEROT (S)",
+      "rang": 150
+    },
+    {
+      "nom": "MR RONALD HUGGINS",
+      "rang": 151
+    },
+    {
+      "nom": "SUC. FRANCIS JOSEPH GILLESPIE",
+      "rang": 152
+    },
+    {
+      "nom": "INDIVISION N. TERRICHANG 2023",
+      "rang": 153
+    },
+    {
+      "nom": "LONDON THOROUGHBRED SERVICES",
+      "rang": 154
+    },
+    {
+      "nom": "MME CATHERINE TAMAGNI",
+      "rang": 155
+    },
+    {
+      "nom": "SARONA FARM",
+      "rang": 156
+    },
+    {
+      "nom": "HARAS DE LA PERELLE",
+      "rang": 157
+    },
+    {
+      "nom": "APPAPAYS RACING CLUB",
+      "rang": 158
+    },
+    {
+      "nom": "MR ARNAUD DE SEYSSEL",
+      "rang": 159
+    },
+    {
+      "nom": "MME VIRGINIA FRAGISKOS",
+      "rang": 160
+    },
+    {
+      "nom": "MME DANIELE KINDLER",
+      "rang": 161
+    },
+    {
+      "nom": "MME CARINE ROBIN",
+      "rang": 162
+    },
+    {
+      "nom": "MR NASSER ABDULLA A.A. AL-MESNED",
+      "rang": 163
+    },
+    {
+      "nom": "MME LINE-ROSE RUSTER",
+      "rang": 164
+    },
+    {
+      "nom": "MR JACQUES-FRANCIS BOUDET",
+      "rang": 165
+    },
+    {
+      "nom": "MME LEA JEFFROY",
+      "rang": 166
+    },
+    {
+      "nom": "MR MARTIN JEFFROY",
+      "rang": 167
+    },
+    {
+      "nom": "MR MARCELLO RANDELLI",
+      "rang": 168
+    },
+    {
+      "nom": "MR JACKY DAVID",
+      "rang": 169
+    },
+    {
+      "nom": "MR GUY AMSALEG",
+      "rang": 170
+    },
+    {
+      "nom": "MR ZALIM BIFOV",
+      "rang": 171
+    },
+    {
+      "nom": "SUC. JEAN-LOUIS VALERIEN-PERRIN",
+      "rang": 172
+    },
+    {
+      "nom": "ECURIE HARAS DE SAINT VINCENT",
+      "rang": 173
+    },
+    {
+      "nom": "MR PIERRE CORNOU",
+      "rang": 174
+    },
+    {
+      "nom": "SUC. DANIELLE DE LA HERONNIERE",
+      "rang": 175
+    },
+    {
+      "nom": "MR SYLVAIN WUILLAUME",
+      "rang": 176
+    },
+    {
+      "nom": "MR AMAURY DE LA HERONNIERE",
+      "rang": 177
+    },
+    {
+      "nom": "MR NICOLAS BELLANGER",
+      "rang": 178
+    },
+    {
+      "nom": "MR PIERRE NOIROT",
+      "rang": 179
+    },
+    {
+      "nom": "MR DIDIER MARS",
+      "rang": 180
+    },
+    {
+      "nom": "ECURIE DES CHARMES",
+      "rang": 181
+    },
+    {
+      "nom": "SELECT BLOODSTOCK LTD",
+      "rang": 182
+    },
+    {
+      "nom": "ECURIE HUGO ET PIERRE PILARSKI",
+      "rang": 183
+    },
+    {
+      "nom": "MR THIERRY TRIPET",
+      "rang": 184
+    },
+    {
+      "nom": "MR SAMUEL BLANCHARD",
+      "rang": 185
+    },
+    {
+      "nom": "LORD WILLIAM HUNTINGDON",
+      "rang": 186
+    },
+    {
+      "nom": "MR CHARLES BAREL",
+      "rang": 187
+    },
+    {
+      "nom": "MR JOEL LERAY",
+      "rang": 188
+    },
+    {
+      "nom": "MR MICHEL LOTOUT",
+      "rang": 189
+    },
+    {
+      "nom": "MR THIERRY STORME",
+      "rang": 190
+    },
+    {
+      "nom": "MR THIERRY LOHEST",
+      "rang": 191
+    },
+    {
+      "nom": "ECURIE SABA",
+      "rang": 192
+    },
+    {
+      "nom": "MR CHRISTIAN LOQUET",
+      "rang": 193
+    },
+    {
+      "nom": "MR STUART MCPHEE",
+      "rang": 194
+    },
+    {
+      "nom": "SUC. RIDHA SAIDI",
+      "rang": 195
+    },
+    {
+      "nom": "MR PHILIPPE HAVARD",
+      "rang": 196
+    },
+    {
+      "nom": "MR ANDRE COUSIN",
+      "rang": 197
+    },
+    {
+      "nom": "MR JEAN MARC NEMORIN",
+      "rang": 198
+    },
+    {
+      "nom": "UNITED BREEDERS",
+      "rang": 199
+    },
+    {
+      "nom": "MME HENRI DEVIN",
+      "rang": 200
+    },
+    {
+      "nom": "MR MARC LEONETTI",
+      "rang": 201
+    },
+    {
+      "nom": "MR JACQUES LASTRAJOLI",
+      "rang": 202
+    },
+    {
+      "nom": "SUC. PETER CALLAHAN",
+      "rang": 203
+    },
+    {
+      "nom": "MR HUBERT MAZEAUD",
+      "rang": 204
+    },
+    {
+      "nom": "MR JEAN-PIERRE GAUVIN",
+      "rang": 205
+    },
+    {
+      "nom": "SCEA CHATEAU MONTLANDRIE",
+      "rang": 206
+    },
+    {
+      "nom": "MR CYRIL HUMPHRIS",
+      "rang": 207
+    },
+    {
+      "nom": "MR GEORGE STRAWBRIDGE",
+      "rang": 208
+    },
+    {
+      "nom": "MR CHRISTOPHE CERTAIN",
+      "rang": 209
+    },
+    {
+      "nom": "MR RENAUD BAGUENAULT DE PUCHESSE",
+      "rang": 210
+    },
+    {
+      "nom": "EARL  CHAMP GIGNOUX",
+      "rang": 211
+    },
+    {
+      "nom": "MME MIREILLE DESVAUX",
+      "rang": 212
+    },
+    {
+      "nom": "MR ROGER-YVES SIMON",
+      "rang": 213
+    },
+    {
+      "nom": "STALL EOS",
+      "rang": 214
+    },
+    {
+      "nom": "SUC. YOLANDE SEYDOUX DE CLAUSONNE",
+      "rang": 215
+    },
+    {
+      "nom": "MME LAETITIA LOUIS",
+      "rang": 216
+    },
+    {
+      "nom": "ECURIE CERDEVAL",
+      "rang": 217
+    },
+    {
+      "nom": "MR NICK DEPAPE",
+      "rang": 218
+    },
+    {
+      "nom": "ECURIE DIBAH",
+      "rang": 219
+    },
+    {
+      "nom": "MR SERGE FRANCOIS",
+      "rang": 220
+    },
+    {
+      "nom": "MME CHRISTINE CHORIN",
+      "rang": 221
+    },
+    {
+      "nom": "MR IVANO RICCI",
+      "rang": 222
+    },
+    {
+      "nom": "MME LISA LEMIERE DUBOIS",
+      "rang": 223
+    },
+    {
+      "nom": "MME LAURA VITTECOQ",
+      "rang": 224
+    },
+    {
+      "nom": "ECURIE MELANIE",
+      "rang": 225
+    },
+    {
+      "nom": "EARL HARAS DE L'HOTELLERIE",
+      "rang": 226
+    },
+    {
+      "nom": "MR TEDDY POIRIER",
+      "rang": 227
+    },
+    {
+      "nom": "COMTE GUILLAUME DE SAINT-SEINE",
+      "rang": 228
+    },
+    {
+      "nom": "MR SERGE BOUVIER",
+      "rang": 229
+    },
+    {
+      "nom": "MR BENJAMIN BOITEZ",
+      "rang": 230
+    },
+    {
+      "nom": "MR SAMUEL DE BARROS",
+      "rang": 231
+    },
+    {
+      "nom": "NOIR ET OR ELEVAGE S.A.",
+      "rang": 232
+    },
+    {
+      "nom": "SCEA ECURIE DE VILLENEUVE",
+      "rang": 233
+    },
+    {
+      "nom": "HYPERION SARL",
+      "rang": 234
+    },
+    {
+      "nom": "MR FLORENT PICARD",
+      "rang": 235
+    },
+    {
+      "nom": "MR JEAN-PAUL CAYROUZE",
+      "rang": 236
+    },
+    {
+      "nom": "MR FABRICE VERMEULEN",
+      "rang": 237
+    },
+    {
+      "nom": "SCEA ELEVAGE CVL",
+      "rang": 238
+    },
+    {
+      "nom": "RIVIERA EQUINE S.A.R.L",
+      "rang": 239
+    },
+    {
+      "nom": "ECURIE SAINT LOUIS",
+      "rang": 240
+    },
+    {
+      "nom": "MR PHILIPPE DELAEY",
+      "rang": 241
+    },
+    {
+      "nom": "HARAS DE BEAUVOIR",
+      "rang": 242
+    },
+    {
+      "nom": "MME ISABELLE MAGNE-CERTAIN",
+      "rang": 243
+    },
+    {
+      "nom": "MR NICOLAS SIMON",
+      "rang": 244
+    },
+    {
+      "nom": "LANGLAIS BLOODSTOCK",
+      "rang": 245
+    },
+    {
+      "nom": "MME GILLES FORIEN",
+      "rang": 246
+    },
+    {
+      "nom": "GESTUT HACHTSEE",
+      "rang": 247
+    },
+    {
+      "nom": "SC  ECURIE DE MEAUTRY",
+      "rang": 248
+    },
+    {
+      "nom": "HARAS DES TROIS CHAPELLES",
+      "rang": 249
+    },
+    {
+      "nom": "MR ABDULLATIF YOUSFI",
+      "rang": 250
+    },
+    {
+      "nom": "MR DIETER BURKLE",
+      "rang": 251
+    },
+    {
+      "nom": "HARAS DE ULIA SL",
+      "rang": 252
+    },
+    {
+      "nom": "MME LAURA LEMIERE",
+      "rang": 253
+    },
+    {
+      "nom": "HARAS GARMAR",
+      "rang": 254
+    },
+    {
+      "nom": "MR ALBAN CHEVALIER DU FAU",
+      "rang": 255
+    },
+    {
+      "nom": "MR LAURENT BENOIT",
+      "rang": 256
+    },
+    {
+      "nom": "MME DELPHINE CHAVANAZ",
+      "rang": 257
+    },
+    {
+      "nom": "EARL HARAS DE L'ETRE",
+      "rang": 258
+    },
+    {
+      "nom": "MR MICKAEL DOLLION",
+      "rang": 259
+    },
+    {
+      "nom": "SUC. CATESBY W. CLAY",
+      "rang": 260
+    },
+    {
+      "nom": "MR JEREMY PARA",
+      "rang": 261
+    },
+    {
+      "nom": "ECURIE DES MONNAIES",
+      "rang": 262
+    },
+    {
+      "nom": "MR BENOIT JEFFROY",
+      "rang": 263
+    },
+    {
+      "nom": "MR OLIVIER NEMORIN",
+      "rang": 264
+    },
+    {
+      "nom": "ECURIE BRILLANTISSIME",
+      "rang": 265
+    },
+    {
+      "nom": "INDIVISION N. PERTINENCE 2022",
+      "rang": 266
+    },
+    {
+      "nom": "MR TERUYA YOSHIDA",
+      "rang": 267
+    },
+    {
+      "nom": "MME KARINE BELLUTEAU",
+      "rang": 268
+    },
+    {
+      "nom": "MME PATRICIA MUSIAL",
+      "rang": 269
+    },
+    {
+      "nom": "EUROPEAN BLOODSTOCK MANAGEMENT",
+      "rang": 270
+    },
+    {
+      "nom": "SRL PROBIOS",
+      "rang": 271
+    },
+    {
+      "nom": "MME INES DE MIEULLE",
+      "rang": 272
+    },
+    {
+      "nom": "MR THIERRY ABADIE",
+      "rang": 273
+    },
+    {
+      "nom": "MR CHRISTOPHE PIERROU",
+      "rang": 274
+    },
+    {
+      "nom": "ECURIE OLIVIER MOREL",
+      "rang": 275
+    },
+    {
+      "nom": "ECURIE DU SUD",
+      "rang": 276
+    },
+    {
+      "nom": "MR ANOJ DON",
+      "rang": 277
+    },
+    {
+      "nom": "MR DANIEL MACAULIFFE",
+      "rang": 278
+    },
+    {
+      "nom": "MME ELISABETH FERRON",
+      "rang": 279
+    },
+    {
+      "nom": "MME ANNE CLAVIER",
+      "rang": 280
+    },
+    {
+      "nom": "MR THOMAS JEFFROY",
+      "rang": 281
+    },
+    {
+      "nom": "MR ERIC GEORGET",
+      "rang": 282
+    },
+    {
+      "nom": "MR JACQUES SEROR",
+      "rang": 283
+    },
+    {
+      "nom": "MME VALERIE DECOUZ",
+      "rang": 284
+    },
+    {
+      "nom": "INDIVISION N. TIRESIAS 2023",
+      "rang": 285
+    },
+    {
+      "nom": "MME JULIE MESTRALLET",
+      "rang": 286
+    },
+    {
+      "nom": "MR MAXIME MOCZULSKI",
+      "rang": 287
+    },
+    {
+      "nom": "MR FREDERIC BELLANGER",
+      "rang": 288
+    },
+    {
+      "nom": "MR LUC MIRTO",
+      "rang": 289
+    },
+    {
+      "nom": "MR CHRISTIAN PORTE",
+      "rang": 290
+    },
+    {
+      "nom": "SARL AL SAFINATE",
+      "rang": 291
+    },
+    {
+      "nom": "MR HERVE DEVILLAIRS",
+      "rang": 292
+    },
+    {
+      "nom": "MR JEAN-LOUIS LENOURY",
+      "rang": 293
+    },
+    {
+      "nom": "LION ROCK BLOODSTOCK",
+      "rang": 294
+    },
+    {
+      "nom": "HARAS DE SAINT JULIEN",
+      "rang": 295
+    },
+    {
+      "nom": "MR GILLES FORIEN",
+      "rang": 296
+    },
+    {
+      "nom": "MR ERIC DE CHAMBURE",
+      "rang": 297
+    },
+    {
+      "nom": "MR JEAN-LOUIS LAIR",
+      "rang": 298
+    },
+    {
+      "nom": "MR HERVE LAIR",
+      "rang": 299
+    },
+    {
+      "nom": "MR ARNAUD NICOLAS",
+      "rang": 300
+    },
+    {
+      "nom": "MR VINCENT MOREAU",
+      "rang": 301
+    },
+    {
+      "nom": "MR MICHEL MELIN",
+      "rang": 302
+    },
+    {
+      "nom": "MR MATHIEU MELIN",
+      "rang": 303
+    },
+    {
+      "nom": "I.G.E.P.",
+      "rang": 304
+    },
+    {
+      "nom": "MR ANDREAS HERR",
+      "rang": 305
+    },
+    {
+      "nom": "MR LIONEL HERVO",
+      "rang": 306
+    },
+    {
+      "nom": "MME ROMANE HERVO",
+      "rang": 307
+    },
+    {
+      "nom": "HARAS VOLTAIRE",
+      "rang": 308
+    },
+    {
+      "nom": "ELEVAGE PIERRE LEVESQUE",
+      "rang": 309
+    },
+    {
+      "nom": "ELEVAGE THOMAS LEVESQUE",
+      "rang": 310
+    },
+    {
+      "nom": "MME VALENTINE VITSE",
+      "rang": 311
+    },
+    {
+      "nom": "MME AXELLE VITSE",
+      "rang": 312
+    },
+    {
+      "nom": "SIGMA AGENCY",
+      "rang": 313
+    },
+    {
+      "nom": "MR MOUSSA MBACKE",
+      "rang": 314
+    },
+    {
+      "nom": "MR ANTON DOERNER",
+      "rang": 315
+    },
+    {
+      "nom": "HARAS DE LA HAIE NEUVE",
+      "rang": 316
+    },
+    {
+      "nom": "MR JACQUES LAPORTE",
+      "rang": 317
+    },
+    {
+      "nom": "MR HERVE MONFORT",
+      "rang": 318
+    },
+    {
+      "nom": "MR YVES DERRIEN-MILIN",
+      "rang": 319
+    },
+    {
+      "nom": "MME MARIE DELABAYS",
+      "rang": 320
+    },
+    {
+      "nom": "MME HILARY ERCULIANI",
+      "rang": 321
+    },
+    {
+      "nom": "SCA  ELEVAGE DE TOURGEVILLE",
+      "rang": 322
+    },
+    {
+      "nom": "MR GILBERT SAUDRAIS",
+      "rang": 323
+    },
+    {
+      "nom": "MR JEAN-MICHEL FEUILLET-BESNOUIN",
+      "rang": 324
+    },
+    {
+      "nom": "SCEA  HARAS DE GRATTE PANCHE",
+      "rang": 325
+    },
+    {
+      "nom": "MR JEAN BONICHE",
+      "rang": 326
+    },
+    {
+      "nom": "GEMINI STUD",
+      "rang": 327
+    },
+    {
+      "nom": "MR FREDERIC BIANCO",
+      "rang": 328
+    },
+    {
+      "nom": "MME JENNIFER BIANCO",
+      "rang": 329
+    },
+    {
+      "nom": "TEAM HOGDALA FRANCE",
+      "rang": 330
+    },
+    {
+      "nom": "MME OLIVIA GOUPIL",
+      "rang": 331
+    },
+    {
+      "nom": "MR NICOLAS PAYSAN",
+      "rang": 332
+    },
+    {
+      "nom": "MME BRIGITTE PAYSAN",
+      "rang": 333
+    },
+    {
+      "nom": "MR STEPHANE GILIBERT",
+      "rang": 334
+    },
+    {
+      "nom": "MR MOHSEN BEN HAMOUDA",
+      "rang": 335
+    },
+    {
+      "nom": "MME EMILIE LAFEU",
+      "rang": 336
+    },
+    {
+      "nom": "MR HUGUES JEAN LOUIS",
+      "rang": 337
+    },
+    {
+      "nom": "MME PIERRE LEPEUDRY",
+      "rang": 338
+    },
+    {
+      "nom": "MME ALIX ELKOUBY",
+      "rang": 339
+    },
+    {
+      "nom": "ECURIE PANDORA RACING",
+      "rang": 340
+    },
+    {
+      "nom": "MR SAMUEL BOISTEAU",
+      "rang": 341
+    },
+    {
+      "nom": "PETRA BLOODSTOCK AGENCY LTD",
+      "rang": 342
+    },
+    {
+      "nom": "SAN GABRIEL INV. INC.",
+      "rang": 343
+    },
+    {
+      "nom": "HARAS DE PLASENCE",
+      "rang": 344
+    },
+    {
+      "nom": "MME VALERIE SAINT-PALAIS",
+      "rang": 345
+    },
+    {
+      "nom": "DAYTON INVESTMENTS LTD",
+      "rang": 346
+    },
+    {
+      "nom": "MR FRANCOIS ROHAUT",
+      "rang": 347
+    },
+    {
+      "nom": "SUC. HANNELORE KNEIP",
+      "rang": 348
+    },
+    {
+      "nom": "BLOODSTOCK AGENCY LTD",
+      "rang": 349
+    },
+    {
+      "nom": "MR DOMINIQUE GUINDON",
+      "rang": 350
+    },
+    {
+      "nom": "C&Y.LERNER (S)",
+      "rang": 351
+    },
+    {
+      "nom": "ECURIE DIMONGO",
+      "rang": 352
+    },
+    {
+      "nom": "ROYAL OATS",
+      "rang": 353
+    },
+    {
+      "nom": "NBH RACING",
+      "rang": 354
+    },
+    {
+      "nom": "EARL DE LA BELLE AUMONE",
+      "rang": 355
+    },
+    {
+      "nom": "MR CLAUDIO MARZOCCO",
+      "rang": 356
+    },
+    {
+      "nom": "S.A.S. HARAS LE GUE",
+      "rang": 357
+    },
+    {
+      "nom": "MR MICHEL GUILLOIS",
+      "rang": 358
+    },
+    {
+      "nom": "MME REYNALD JEANNE",
+      "rang": 359
+    },
+    {
+      "nom": "SCEA  L'AUBAY",
+      "rang": 360
+    },
+    {
+      "nom": "CHAUVIGNY GLOBAL EQUINE SASU",
+      "rang": 361
+    },
+    {
+      "nom": "SALABI RACING",
+      "rang": 362
+    },
+    {
+      "nom": "ECURIES ROYALES D'OMAN",
+      "rang": 363
+    },
+    {
+      "nom": "ALLEVAMENTO IL GRIFONE SRL",
+      "rang": 364
+    },
+    {
+      "nom": "MR CLAUDE P GAUTIER",
+      "rang": 365
+    },
+    {
+      "nom": "MME MARIE-LAURE GAUTIER",
+      "rang": 366
+    },
+    {
+      "nom": "MR FRANCESCO LOI",
+      "rang": 367
+    },
+    {
+      "nom": "MR GUILLAUME GARCON",
+      "rang": 368
+    },
+    {
+      "nom": "M.L.P. CONSULTANCY",
+      "rang": 369
+    },
+    {
+      "nom": "MR ROGER BRUGEL",
+      "rang": 370
+    },
+    {
+      "nom": "MR JOHN COLLINSON",
+      "rang": 371
+    },
+    {
+      "nom": "MME TRACEY FLOOKS",
+      "rang": 372
+    },
+    {
+      "nom": "HARAS DU HOGUENET",
+      "rang": 373
+    },
+    {
+      "nom": "MR GILLES LE BARON",
+      "rang": 374
+    },
+    {
+      "nom": "E.A.R.L. ELEVAGE DES LOGES",
+      "rang": 375
+    },
+    {
+      "nom": "MR SAMY TORGEMAN",
+      "rang": 376
+    },
+    {
+      "nom": "MR JEAN-PIERRE GARCON",
+      "rang": 377
+    },
+    {
+      "nom": "MME ISABELLE GARCON",
+      "rang": 378
+    },
+    {
+      "nom": "MR OLIVIER TRIBOIRE",
+      "rang": 379
+    },
+    {
+      "nom": "MR ERIC LEMAITRE",
+      "rang": 380
+    },
+    {
+      "nom": "MME LAURE GODET",
+      "rang": 381
+    },
+    {
+      "nom": "MME GERALDINE LIBESSART",
+      "rang": 382
+    },
+    {
+      "nom": "MME ELISA PRUDENT",
+      "rang": 383
+    },
+    {
+      "nom": "CHAREL BLOODSTOCK",
+      "rang": 384
+    },
+    {
+      "nom": "ECURIE DE LAUNAY",
+      "rang": 385
+    },
+    {
+      "nom": "MME SARAH LALANNE",
+      "rang": 386
+    },
+    {
+      "nom": "ECURIE DE CACHENE",
+      "rang": 387
+    },
+    {
+      "nom": "MME EVELYNE POITEVIN",
+      "rang": 388
+    },
+    {
+      "nom": "MME PAULINE CHEHBOUB",
+      "rang": 389
+    },
+    {
+      "nom": "MR JEAN-CHRISTOPHE DAOUDAL",
+      "rang": 390
+    },
+    {
+      "nom": "MR MICHEL PEHU",
+      "rang": 391
+    },
+    {
+      "nom": "MERIDIAN INTERNATIONAL SAS",
+      "rang": 392
+    },
+    {
+      "nom": "MME ELISABETH RIBARD",
+      "rang": 393
+    },
+    {
+      "nom": "MR JEAN-PAUL LEMELLETIER",
+      "rang": 394
+    },
+    {
+      "nom": "MR HARALD GRITSCHER",
+      "rang": 395
+    },
+    {
+      "nom": "S.A.R.L. CGFA",
+      "rang": 396
+    },
+    {
+      "nom": "PCSSE ZAHRA AGA KHAN",
+      "rang": 397
+    },
+    {
+      "nom": "MR FREDDY HERBERT",
+      "rang": 398
+    },
+    {
+      "nom": "MR XAVIER FORGET",
+      "rang": 399
+    },
+    {
+      "nom": "SUC. JEAN COLLET",
+      "rang": 400
+    },
+    {
+      "nom": "MME MARYLENE COLLET",
+      "rang": 401
+    },
+    {
+      "nom": "NIGHTCHILL LLC",
+      "rang": 402
+    },
+    {
+      "nom": "MR MAX BARBA",
+      "rang": 403
+    },
+    {
+      "nom": "MR PHILIPPE ARTIGUES",
+      "rang": 404
+    },
+    {
+      "nom": "MR LAURENT DUHARD",
+      "rang": 405
+    },
+    {
+      "nom": "INFINITY NINE HORSES",
+      "rang": 406
+    },
+    {
+      "nom": "MME THIERRY LEMER",
+      "rang": 407
+    },
+    {
+      "nom": "MME CATHERINE BREAND",
+      "rang": 408
+    },
+    {
+      "nom": "MR BERNARD HENSELER-CAMPANA",
+      "rang": 409
+    },
+    {
+      "nom": "MME MELINE MECHINEAU",
+      "rang": 410
+    },
+    {
+      "nom": "MR ERIC CHEVRIER",
+      "rang": 411
+    },
+    {
+      "nom": "CHINA HORSE CLUB INTERNATIONAL",
+      "rang": 412
+    },
+    {
+      "nom": "MR XAVIER GOUPIL",
+      "rang": 413
+    },
+    {
+      "nom": "MR LUCIEN NEMORIN",
+      "rang": 414
+    },
+    {
+      "nom": "ECURIE ARTU SNC",
+      "rang": 415
+    },
+    {
+      "nom": "IRISH NATIONAL STUD CY LTD",
+      "rang": 416
+    },
+    {
+      "nom": "MME WALTRAUT SPANNER",
+      "rang": 417
+    },
+    {
+      "nom": "MR FREDERIC FOUCHER",
+      "rang": 418
+    },
+    {
+      "nom": "SCEA DU MOULIN DE BEL OEUVRE",
+      "rang": 419
+    },
+    {
+      "nom": "MME ROBERT MONGIN",
+      "rang": 420
+    },
+    {
+      "nom": "MME JEAN-LOUIS GIRAL",
+      "rang": 421
+    },
+    {
+      "nom": "MR MICHEL GAINCHE",
+      "rang": 422
+    },
+    {
+      "nom": "MME CAMILLE DEMERCASTEL",
+      "rang": 423
+    },
+    {
+      "nom": "MME OPHELIE DEMERCASTEL",
+      "rang": 424
+    },
+    {
+      "nom": "MME BENEDICTE FERRY ABITBOL",
+      "rang": 425
+    },
+    {
+      "nom": "MR PHILIP MAHLER",
+      "rang": 426
+    },
+    {
+      "nom": "SUC. LYLIA CADET",
+      "rang": 427
+    },
+    {
+      "nom": "MR ULF SJOBERG",
+      "rang": 428
+    },
+    {
+      "nom": "MR JEAN-PHILIPPE LALANNE",
+      "rang": 429
+    },
+    {
+      "nom": "MME JULIE LALANNE",
+      "rang": 430
+    },
+    {
+      "nom": "OCEANIC BLOODSTOCK SARL",
+      "rang": 431
+    },
+    {
+      "nom": "MME CHRISTINE PANTET",
+      "rang": 432
+    },
+    {
+      "nom": "MR CRAIG BERNICK",
+      "rang": 433
+    },
+    {
+      "nom": "MR NICOLAS SOUCHON",
+      "rang": 434
+    },
+    {
+      "nom": "MME SEVERINE LEAUNES",
+      "rang": 435
+    },
+    {
+      "nom": "MME MARINA DANIN",
+      "rang": 436
+    },
+    {
+      "nom": "MR PATRICK BARBE",
+      "rang": 437
+    },
+    {
+      "nom": "MR JEAN-FRANCOIS GRIBOMONT",
+      "rang": 438
+    },
+    {
+      "nom": "MR UMBERTO SAINI-FASANOTTI",
+      "rang": 439
+    },
+    {
+      "nom": "MR CHRISTOPHE PLISSON",
+      "rang": 440
+    },
+    {
+      "nom": "MME MARTINA STADELMANN",
+      "rang": 441
+    },
+    {
+      "nom": "MR ANTOINE SAUTY DE CHALON",
+      "rang": 442
+    },
+    {
+      "nom": "MME ODETTE FAU",
+      "rang": 443
+    },
+    {
+      "nom": "BEAUREGARD BLOODSTOCK",
+      "rang": 444
+    },
+    {
+      "nom": "ECURIE BILLON",
+      "rang": 445
+    },
+    {
+      "nom": "MME HERVE GEERLANDT",
+      "rang": 446
+    },
+    {
+      "nom": "MR CON MARNANE",
+      "rang": 447
+    },
+    {
+      "nom": "L.BAUDRON (S)",
+      "rang": 448
+    },
+    {
+      "nom": "MR LOUIS CLAIR CRANE",
+      "rang": 449
+    },
+    {
+      "nom": "MR VICTOR DECOUZ",
+      "rang": 450
+    },
+    {
+      "nom": "MR CLEMENT DECOUZ",
+      "rang": 451
+    },
+    {
+      "nom": "MME FLORENTINE DECOUZ",
+      "rang": 452
+    },
+    {
+      "nom": "MME PRISCILLE DECOUZ",
+      "rang": 453
+    },
+    {
+      "nom": "SCEA  BISSONS",
+      "rang": 454
+    },
+    {
+      "nom": "MR CLAUDE PENELOPE",
+      "rang": 455
+    },
+    {
+      "nom": "MR ANTHONY FREMONT",
+      "rang": 456
+    },
+    {
+      "nom": "MR JEROME BOURGEAIS",
+      "rang": 457
+    },
+    {
+      "nom": "MR DAVY BONILLA",
+      "rang": 458
+    },
+    {
+      "nom": "ECURIE JUPITER",
+      "rang": 459
+    },
+    {
+      "nom": "MR XAVIER RICHARD",
+      "rang": 460
+    },
+    {
+      "nom": "MR SVEN GOLDMANN",
+      "rang": 461
+    },
+    {
+      "nom": "MR LAURENT DULONG",
+      "rang": 462
+    },
+    {
+      "nom": "MME YVETTE PANTALL",
+      "rang": 463
+    },
+    {
+      "nom": "DUC  D' ALBURQUERQUE",
+      "rang": 464
+    },
+    {
+      "nom": "MR CARLOS LAFFON-PARIAS",
+      "rang": 465
+    },
+    {
+      "nom": "S.A.R.L. DE LA COTE",
+      "rang": 466
+    },
+    {
+      "nom": "MR ALBERT RIVETTI",
+      "rang": 467
+    },
+    {
+      "nom": "MR DANIEL COLE",
+      "rang": 468
+    },
+    {
+      "nom": "MR ALDO VOLO",
+      "rang": 469
+    },
+    {
+      "nom": "MME INES HOVELACQUE",
+      "rang": 470
+    },
+    {
+      "nom": "MR BENJAMIN HOVELACQUE",
+      "rang": 471
+    },
+    {
+      "nom": "MR SYLVAIN JULIEN MARTIN",
+      "rang": 472
+    },
+    {
+      "nom": "MME AMELIE MARTIN",
+      "rang": 473
+    },
+    {
+      "nom": "SOCIETA AGRICOLA CORTE BACCOLI",
+      "rang": 474
+    },
+    {
+      "nom": "MR GUY CHEREL",
+      "rang": 475
+    },
+    {
+      "nom": "MME VICTORIA DEVIN",
+      "rang": 476
+    },
+    {
+      "nom": "LA FLECHE RACING",
+      "rang": 477
+    },
+    {
+      "nom": "MR SYLVAIN VIDAL",
+      "rang": 478
+    },
+    {
+      "nom": "POULINIERES.COM",
+      "rang": 479
+    },
+    {
+      "nom": "DOMAINE DE LA CORNILLIERE",
+      "rang": 480
+    },
+    {
+      "nom": "MR JEREMY ROUX",
+      "rang": 481
+    },
+    {
+      "nom": "MR JOHN KILPATRICK",
+      "rang": 482
+    },
+    {
+      "nom": "MR BENOIT GIRRES",
+      "rang": 483
+    },
+    {
+      "nom": "MR GREGOIRE GOUPIL",
+      "rang": 484
+    },
+    {
+      "nom": "ECURIE AUDOY CHRISTIAN",
+      "rang": 485
+    },
+    {
+      "nom": "MR OLIVIER FOUILLET",
+      "rang": 486
+    },
+    {
+      "nom": "MR JULIEN LEBOUCHER",
+      "rang": 487
+    },
+    {
+      "nom": "ELEVAGE DU LUOT",
+      "rang": 488
+    },
+    {
+      "nom": "MME VALENTINE TAPIS",
+      "rang": 489
+    },
+    {
+      "nom": "ECURIE NORMANDY SPIRIT",
+      "rang": 490
+    },
+    {
+      "nom": "MR FLAVIEN GARNIER",
+      "rang": 491
+    },
+    {
+      "nom": "MR CLAUDE BENEL",
+      "rang": 492
+    },
+    {
+      "nom": "UMA RACING",
+      "rang": 493
+    },
+    {
+      "nom": "MME ALBANE ROBIN",
+      "rang": 494
+    },
+    {
+      "nom": "MR AYMERIC ROBIN",
+      "rang": 495
+    },
+    {
+      "nom": "MR GERARD L. FERRON",
+      "rang": 496
+    },
+    {
+      "nom": "MR JACKY THOMAS",
+      "rang": 497
+    },
+    {
+      "nom": "ECURIE R.E.",
+      "rang": 498
+    },
+    {
+      "nom": "OTI MANAGEMENT PTY LTD",
+      "rang": 499
+    },
+    {
+      "nom": "MME DELPHINE FRUHAUFF",
+      "rang": 500
+    },
+    {
+      "nom": "FTP EQUINE HOLDINGS LTD",
+      "rang": 501
+    },
+    {
+      "nom": "MME PHILIPPE DESBOIS",
+      "rang": 502
+    },
+    {
+      "nom": "MR JEAN-MARIE PLASSAN",
+      "rang": 503
+    },
+    {
+      "nom": "MME CORINE BARANDE BARBE",
+      "rang": 504
+    },
+    {
+      "nom": "MR JEAN-CLAUDE SARAIS",
+      "rang": 505
+    },
+    {
+      "nom": "MR LUDOVIC FLEURY",
+      "rang": 506
+    },
+    {
+      "nom": "MR BERNARD GIRAUDON",
+      "rang": 507
+    },
+    {
+      "nom": "MR MELCHIOR-FRANCOIS MATHET",
+      "rang": 508
+    },
+    {
+      "nom": "MR FREDERIC BRAGATO",
+      "rang": 509
+    },
+    {
+      "nom": "EARL  DETOUILLON RAPHAEL FREDERIQUE",
+      "rang": 510
+    },
+    {
+      "nom": "MR DANIEL TIMMERS",
+      "rang": 511
+    },
+    {
+      "nom": "MR ROLAND LEPEAU",
+      "rang": 512
+    },
+    {
+      "nom": "J.BOISNARD (S)",
+      "rang": 513
+    },
+    {
+      "nom": "MR EDDY PETIT",
+      "rang": 514
+    },
+    {
+      "nom": "MME SARAH BREL",
+      "rang": 515
+    },
+    {
+      "nom": "AL SHIRA'AA RACING",
+      "rang": 516
+    },
+    {
+      "nom": "MR WILFRID CONART",
+      "rang": 517
+    },
+    {
+      "nom": "SUC. LARISSA KNEIP",
+      "rang": 518
+    },
+    {
+      "nom": "MR JEAN-PAUL CHUZEVILLE",
+      "rang": 519
+    },
+    {
+      "nom": "MME STEPHANIE COIFFARD",
+      "rang": 520
+    },
+    {
+      "nom": "MME GENEVIEVE NEVEUX",
+      "rang": 521
+    },
+    {
+      "nom": "MME CHARLOTTE DEMAILLY",
+      "rang": 522
+    },
+    {
+      "nom": "MR THOMAS MICHENOT",
+      "rang": 523
+    },
+    {
+      "nom": "ECURIE DES MOTTES",
+      "rang": 524
+    },
+    {
+      "nom": "MME FATOU MICHENOT",
+      "rang": 525
+    },
+    {
+      "nom": "MR JULIEN BOUTILLIER",
+      "rang": 526
+    },
+    {
+      "nom": "MME JILL BROCHARD",
+      "rang": 527
+    },
+    {
+      "nom": "SCEA ECURIE DOUGHTY",
+      "rang": 528
+    },
+    {
+      "nom": "MR JEAN-PIERRE VANDEN HEEDE",
+      "rang": 529
+    },
+    {
+      "nom": "MR PASCAL GUIGNAND",
+      "rang": 530
+    },
+    {
+      "nom": "MR ADRIAN VON GUNTEN",
+      "rang": 531
+    },
+    {
+      "nom": "ECURIE BRED TO WIN SC",
+      "rang": 532
+    },
+    {
+      "nom": "MME DANIELLE XOUAL",
+      "rang": 533
+    },
+    {
+      "nom": "MR HENRI SOLER",
+      "rang": 534
+    },
+    {
+      "nom": "MR CESARE SIRLETTI",
+      "rang": 535
+    },
+    {
+      "nom": "MAG HORSE RACING SRL",
+      "rang": 536
+    },
+    {
+      "nom": "MR EMILE EYVASO",
+      "rang": 537
+    },
+    {
+      "nom": "MR PATRICE BOUREAU",
+      "rang": 538
+    },
+    {
+      "nom": "MR BERNHARD WENGER",
+      "rang": 539
+    },
+    {
+      "nom": "MR MICHEL SERRE",
+      "rang": 540
+    },
+    {
+      "nom": "MR JEAN-MARIE RIVIERE",
+      "rang": 541
+    },
+    {
+      "nom": "MME ANNE-YVONNE LOTOUT",
+      "rang": 542
+    },
+    {
+      "nom": "MR PIERRE CAROSSO",
+      "rang": 543
+    },
+    {
+      "nom": "NORMANDIE BREEDING",
+      "rang": 544
+    },
+    {
+      "nom": "MR JEAN-LUC RIVETTI",
+      "rang": 545
+    },
+    {
+      "nom": "MR NICOLAS LAYE",
+      "rang": 546
+    },
+    {
+      "nom": "BERING SL",
+      "rang": 547
+    },
+    {
+      "nom": "ELEVAGE LA TOUR DE VANDEL",
+      "rang": 548
+    },
+    {
+      "nom": "MR ALEXANDRE PRUDENT",
+      "rang": 549
+    },
+    {
+      "nom": "SUC.  DE MORATALLA",
+      "rang": 550
+    },
+    {
+      "nom": "MR DIDIER BOUQUIL",
+      "rang": 551
+    },
+    {
+      "nom": "MR ANDRE LADEVEZE",
+      "rang": 552
+    },
+    {
+      "nom": "MME HELENE PACINI",
+      "rang": 553
+    },
+    {
+      "nom": "MR BERNARD JEFFROY",
+      "rang": 554
+    },
+    {
+      "nom": "MR OLIVIER COUFFON",
+      "rang": 555
+    },
+    {
+      "nom": "MR DAVID TOAL",
+      "rang": 556
+    },
+    {
+      "nom": "MME SANDRA PENELOPE",
+      "rang": 557
+    },
+    {
+      "nom": "MME ALLAN PENELOPE",
+      "rang": 558
+    },
+    {
+      "nom": "MR JEAN-CLAUDE CAMPOS",
+      "rang": 559
+    },
+    {
+      "nom": "MR NICOLAS CAMPOS",
+      "rang": 560
+    },
+    {
+      "nom": "ECURIE EUROLING",
+      "rang": 561
+    },
+    {
+      "nom": "MR SERGE S. MASTEY",
+      "rang": 562
+    },
+    {
+      "nom": "G.B. PARTNERSHIP",
+      "rang": 563
+    },
+    {
+      "nom": "MR RAYMOND CAMPOS",
+      "rang": 564
+    },
+    {
+      "nom": "AL AMRIYAH BLOODSTOCK",
+      "rang": 565
+    },
+    {
+      "nom": "MR DIDIER VIDAL",
+      "rang": 566
+    },
+    {
+      "nom": "SUC. HERVE DE TALHOUET-ROY",
+      "rang": 567
+    },
+    {
+      "nom": "SUC. BRUNO CAMUS-DENAIS",
+      "rang": 568
+    },
+    {
+      "nom": "MR EMMANUEL LE ROUX",
+      "rang": 569
+    },
+    {
+      "nom": "MR STEPHEN ANTHONY QUIRKE",
+      "rang": 570
+    },
+    {
+      "nom": "ECURIE X",
+      "rang": 571
+    },
+    {
+      "nom": "MME DIANE MONFORT",
+      "rang": 572
+    },
+    {
+      "nom": "MME HELENE LEMOINE",
+      "rang": 573
+    },
+    {
+      "nom": "MR JEAN-CHARLES LEFORESTIER",
+      "rang": 574
+    },
+    {
+      "nom": "MR ROMAIN LE DREN DOLEUZE",
+      "rang": 575
+    },
+    {
+      "nom": "NEARCO PRODUCCIONES S.L.",
+      "rang": 576
+    },
+    {
+      "nom": "MR HENRI ABADIE",
+      "rang": 577
+    },
+    {
+      "nom": "SUC. MAURICE LE FLOCH",
+      "rang": 578
+    },
+    {
+      "nom": "MR JEAN-VINCENT TOUX",
+      "rang": 579
+    },
+    {
+      "nom": "MR THOMAS BEDON",
+      "rang": 580
+    },
+    {
+      "nom": "HARAS DU LIEU DES CHAMPS",
+      "rang": 581
+    },
+    {
+      "nom": "MR CLEMENT ABADIE",
+      "rang": 582
+    },
+    {
+      "nom": "ECURIE ADES HAZAN",
+      "rang": 583
+    },
+    {
+      "nom": "LE HARAS DES SENS",
+      "rang": 584
+    },
+    {
+      "nom": "KLEBER",
+      "rang": 585
+    },
+    {
+      "nom": "MR ROLAND JOHANSON",
+      "rang": 586
+    },
+    {
+      "nom": "ECURIE DE ROEBECK",
+      "rang": 587
+    },
+    {
+      "nom": "MR THOMAS BRETZGER",
+      "rang": 588
+    },
+    {
+      "nom": "MR ERIC JOUBIN",
+      "rang": 589
+    },
+    {
+      "nom": "MR LOUIS-RENE KAMBRUN-HERVE",
+      "rang": 590
+    },
+    {
+      "nom": "EARL  LA FERME D'AUGE",
+      "rang": 591
+    },
+    {
+      "nom": "MR HENRI-ALEX PANTALL",
+      "rang": 592
+    },
+    {
+      "nom": "MR GUY-ROGER PETIT",
+      "rang": 593
+    },
+    {
+      "nom": "MME BARBARA MOSER",
+      "rang": 594
+    },
+    {
+      "nom": "MR RANDOLF PETERS",
+      "rang": 595
+    },
+    {
+      "nom": "ECURIE BERTRAND MILLIERE",
+      "rang": 596
+    },
+    {
+      "nom": "MR ALEXI MACHAUX",
+      "rang": 597
+    },
+    {
+      "nom": "MR JEAN-PAUL MARCHAND",
+      "rang": 598
+    },
+    {
+      "nom": "MR PATRICK PERROUD",
+      "rang": 599
+    },
+    {
+      "nom": "SAS HARAS DE FLIGNY",
+      "rang": 600
+    },
+    {
+      "nom": "MR PATRICK BONNIFAIT",
+      "rang": 601
+    },
+    {
+      "nom": "MR DENIS PENELOPE",
+      "rang": 602
+    },
+    {
+      "nom": "MR JEAN-PHILIPPE DUGUEY",
+      "rang": 603
+    },
+    {
+      "nom": "MME CATHERINE DUGUEY",
+      "rang": 604
+    },
+    {
+      "nom": "MME MICHELINE PENELOPE",
+      "rang": 605
+    },
+    {
+      "nom": "MR TIMOTHY LLOYD",
+      "rang": 606
+    },
+    {
+      "nom": "MME KARIN MAIRAMHOF",
+      "rang": 607
+    },
+    {
+      "nom": "MME CHRISTIANE HEAD",
+      "rang": 608
+    },
+    {
+      "nom": "MR JEREMIE BOSSERT",
+      "rang": 609
+    },
+    {
+      "nom": "MME SOLENE PACH",
+      "rang": 610
+    },
+    {
+      "nom": "MME YANICE LUCE",
+      "rang": 611
+    },
+    {
+      "nom": "MME VALERIE BOSSERT",
+      "rang": 612
+    },
+    {
+      "nom": "MR FERNANDO LAFFON LOMBA",
+      "rang": 613
+    },
+    {
+      "nom": "MR MARCO BOZZI",
+      "rang": 614
+    },
+    {
+      "nom": "MME ANNE-SOPHIE PACAULT",
+      "rang": 615
+    },
+    {
+      "nom": "MME SYLVIANE JEFFROY",
+      "rang": 616
+    },
+    {
+      "nom": "MR DENIS LOTOUT",
+      "rang": 617
+    },
+    {
+      "nom": "MR NEBOJSA PETROVIC",
+      "rang": 618
+    },
+    {
+      "nom": "MME VALERIE DISSAUX",
+      "rang": 619
+    },
+    {
+      "nom": "SCEA HARAS DE L'ETOILE",
+      "rang": 620
+    },
+    {
+      "nom": "ECURIE HARAS DU CHATEAU",
+      "rang": 621
+    },
+    {
+      "nom": "HA.PANTALL (S)",
+      "rang": 622
+    },
+    {
+      "nom": "MR NORBERT LEENDERS",
+      "rang": 623
+    },
+    {
+      "nom": "MME MARIE ARTU",
+      "rang": 624
+    },
+    {
+      "nom": "MR DAMIEN ARTU",
+      "rang": 625
+    },
+    {
+      "nom": "MME SYBILLE GIBSON",
+      "rang": 626
+    },
+    {
+      "nom": "MR FRANCISCO PEREZ GONZALEZ",
+      "rang": 627
+    },
+    {
+      "nom": "MME CHRISTINE PRECY-BARONI",
+      "rang": 628
+    },
+    {
+      "nom": "MR JEAN GILBERT",
+      "rang": 629
+    },
+    {
+      "nom": "MR SIMONE BROGI",
+      "rang": 630
+    },
+    {
+      "nom": "MR GUY MARTINEAU",
+      "rang": 631
+    },
+    {
+      "nom": "MR ROMAIN BARONI",
+      "rang": 632
+    },
+    {
+      "nom": "MME VALERIE VATEL",
+      "rang": 633
+    },
+    {
+      "nom": "ELEVAGE DES VALLONS",
+      "rang": 634
+    },
+    {
+      "nom": "MME ARIANE GRAVEREAUX",
+      "rang": 635
+    },
+    {
+      "nom": "ECURIE VIVALDI",
+      "rang": 636
+    },
+    {
+      "nom": "MR VALENTIN MOUSSAY",
+      "rang": 637
+    },
+    {
+      "nom": "MR PIERRE-ALAIN TOUCHARD",
+      "rang": 638
+    },
+    {
+      "nom": "MR ZIED BEN M'RAD",
+      "rang": 639
+    },
+    {
+      "nom": "MME MARTINE KOHAIZA",
+      "rang": 640
+    },
+    {
+      "nom": "MR BRUNO MORQUE",
+      "rang": 641
+    },
+    {
+      "nom": "ECURIE DU PARC MONCEAU",
+      "rang": 642
+    },
+    {
+      "nom": "MR CHRISTOPHER STOCKWELL",
+      "rang": 643
+    },
+    {
+      "nom": "MME FLORENCE DIANE STOCKWELL",
+      "rang": 644
+    },
+    {
+      "nom": "HARAS DE LA MORSANGLIERE",
+      "rang": 645
+    },
+    {
+      "nom": "DEVERON LIMITED",
+      "rang": 646
+    },
+    {
+      "nom": "MME EVELYNE MARIE",
+      "rang": 647
+    },
+    {
+      "nom": "MME CHLOE SIMON",
+      "rang": 648
+    },
+    {
+      "nom": "MR ROBERT ALBIGOT",
+      "rang": 649
+    },
+    {
+      "nom": "MME SANDIE DOUSSOT BILLOT",
+      "rang": 650
+    },
+    {
+      "nom": "MR MATHIEU BRASME",
+      "rang": 651
+    },
+    {
+      "nom": "MR CEDRIC MILLIERE",
+      "rang": 652
+    },
+    {
+      "nom": "TERRAINS D'AVILLY ST LEONARD",
+      "rang": 653
+    },
+    {
+      "nom": "MR P.A. LEONARD",
+      "rang": 654
+    },
+    {
+      "nom": "HARAS DES SABLONNETS",
+      "rang": 655
+    },
+    {
+      "nom": "MR SERGE DUCHENE",
+      "rang": 656
+    },
+    {
+      "nom": "L.PONTOIR (S)",
+      "rang": 657
+    },
+    {
+      "nom": "MR PAUL GOURRAUD",
+      "rang": 658
+    },
+    {
+      "nom": "MR RICHARD MARK VENN",
+      "rang": 659
+    },
+    {
+      "nom": "MME RENEE DWEK",
+      "rang": 660
+    },
+    {
+      "nom": "MME EVELYNE DEMELT",
+      "rang": 661
+    },
+    {
+      "nom": "MR HENRY ROUSSIGNHOL",
+      "rang": 662
+    },
+    {
+      "nom": "MR JEAN-PAUL LUPFER",
+      "rang": 663
+    },
+    {
+      "nom": "MR HASSAN MOUSLI",
+      "rang": 664
+    },
+    {
+      "nom": "MR CHRISTIAN CAMUS-DENAIS",
+      "rang": 665
+    },
+    {
+      "nom": "SOCIETE PASCAL ADDA",
+      "rang": 666
+    },
+    {
+      "nom": "MME VALERIE SIMON",
+      "rang": 667
+    },
+    {
+      "nom": "MR QUENTIN MARCHAND",
+      "rang": 668
+    },
+    {
+      "nom": "MR ZAYED MUHSEN Z A AL-KHAYARIN",
+      "rang": 669
+    },
+    {
+      "nom": "MR HAMED NASSER F N AL-HABABI",
+      "rang": 670
+    },
+    {
+      "nom": "MME SOPHIA KOHAIZA",
+      "rang": 671
+    },
+    {
+      "nom": "MR MICKAEL DULONG",
+      "rang": 672
+    },
+    {
+      "nom": "THOUSAND DREAMS",
+      "rang": 673
+    },
+    {
+      "nom": "MME DOMINIQUE DWEK",
+      "rang": 674
+    },
+    {
+      "nom": "MR CYPRIEN LEMAITRE",
+      "rang": 675
+    },
+    {
+      "nom": "MME CONSTANCE LEMAITRE",
+      "rang": 676
+    },
+    {
+      "nom": "MME FRANCOISE DUPRE",
+      "rang": 677
+    },
+    {
+      "nom": "MME AUDREY LEYVAL",
+      "rang": 678
+    },
+    {
+      "nom": "MME JACQUELINE MATHIS",
+      "rang": 679
+    },
+    {
+      "nom": "MR JULIAN INCE",
+      "rang": 680
+    },
+    {
+      "nom": "EARL  HARAS DU TAILLIS",
+      "rang": 681
+    },
+    {
+      "nom": "ELEVAGE DU SARAI",
+      "rang": 682
+    },
+    {
+      "nom": "COFINVEST",
+      "rang": 683
+    },
+    {
+      "nom": "MR CLAUDE DAVID",
+      "rang": 684
+    },
+    {
+      "nom": "MR ALEXIS COUFFON",
+      "rang": 685
+    },
+    {
+      "nom": "MR ANTOINE COUFFON",
+      "rang": 686
+    },
+    {
+      "nom": "MR ROMAIN GRIGNON",
+      "rang": 687
+    },
+    {
+      "nom": "MME MANUELLA VAUCHER-GRIGNON",
+      "rang": 688
+    },
+    {
+      "nom": "MR PETER T. TELLWRIGHT",
+      "rang": 689
+    },
+    {
+      "nom": "JUDDMONTE FARMS IRELAND LTD",
+      "rang": 690
+    },
+    {
+      "nom": "STETCHWORTH PARK STUD",
+      "rang": 691
+    },
+    {
+      "nom": "STOWELL HILL LTD",
+      "rang": 692
+    },
+    {
+      "nom": "KILCARN STUD",
+      "rang": 693
+    },
+    {
+      "nom": "GODOLPHIN",
+      "rang": 694
+    },
+    {
+      "nom": "NEW ENGLAND STUD FARM LTD",
+      "rang": 695
+    },
+    {
+      "nom": "MIDDLE PARK STUD LTD",
+      "rang": 696
+    },
+    {
+      "nom": "MR JUERGEN IMM",
+      "rang": 697
+    },
+    {
+      "nom": "COMTE PHILIPP VON STAUFFENBERG",
+      "rang": 698
+    },
+    {
+      "nom": "CTSSE MARION VON STAUFFENBERG",
+      "rang": 699
+    },
+    {
+      "nom": "LYNCH-BAGES LTD",
+      "rang": 700
+    },
+    {
+      "nom": "MYRIAD B/S & COMMUNICATIONS",
+      "rang": 701
+    },
+    {
+      "nom": "OVERBURY STALLIONS LTD",
+      "rang": 702
+    },
+    {
+      "nom": "QUEENSWAY S.A.",
+      "rang": 703
+    },
+    {
+      "nom": "C&S BLOODSTOCK LIMITED",
+      "rang": 704
+    },
+    {
+      "nom": "MME URSULA IMM",
+      "rang": 705
+    },
+    {
+      "nom": "NASEBY BLOODSTOCK",
+      "rang": 706
+    },
+    {
+      "nom": "NICE GUYS STABLES",
+      "rang": 707
+    },
+    {
+      "nom": "COVERDALE STUD",
+      "rang": 708
+    },
+    {
+      "nom": "MR DIARMUID MURPHY",
+      "rang": 709
+    },
+    {
+      "nom": "BLUE HEAVEN FARM",
+      "rang": 710
+    },
+    {
+      "nom": "MR DENIS CHACHIGNON",
+      "rang": 711
+    },
+    {
+      "nom": "MR FREDERIC EHLINGER",
+      "rang": 712
+    },
+    {
+      "nom": "MR DAVID LUMET",
+      "rang": 713
+    },
+    {
+      "nom": "MR JEAN-MARIE BEGUIGNE",
+      "rang": 714
+    },
+    {
+      "nom": "MR YVES BOROTRA",
+      "rang": 715
+    },
+    {
+      "nom": "MR MICHEL DARGENT",
+      "rang": 716
+    },
+    {
+      "nom": "MR EDOUARD DECOSTER",
+      "rang": 717
+    },
+    {
+      "nom": "MR RENE E. LECOMTE",
+      "rang": 718
+    },
+    {
+      "nom": "MR MAURICE PROD'HOMME",
+      "rang": 719
+    },
+    {
+      "nom": "MR GERARD RIVASES",
+      "rang": 720
+    },
+    {
+      "nom": "SUC. GEORGES SANDOR",
+      "rang": 721
+    },
+    {
+      "nom": "MME EVA OLSSON",
+      "rang": 722
+    },
+    {
+      "nom": "MR ROBERT BONAVENTURE",
+      "rang": 723
+    },
+    {
+      "nom": "LE THENNEY",
+      "rang": 724
+    },
+    {
+      "nom": "SUC. S. NIARCHOS",
+      "rang": 725
+    },
+    {
+      "nom": "MR HUBERT GUY",
+      "rang": 726
+    },
+    {
+      "nom": "MR HUBERT HONORE",
+      "rang": 727
+    },
+    {
+      "nom": "MME JEAN BIRABEN",
+      "rang": 728
+    },
+    {
+      "nom": "MR MICHEL AGELOU",
+      "rang": 729
+    },
+    {
+      "nom": "MR ERIC PUERARI",
+      "rang": 730
+    },
+    {
+      "nom": "MR PATRICK FELLOUS",
+      "rang": 731
+    },
+    {
+      "nom": "SUC. LUC DUVERGER",
+      "rang": 732
+    },
+    {
+      "nom": "MR YANNICK FERTILLET",
+      "rang": 733
+    },
+    {
+      "nom": "MR DAVID SMAGA",
+      "rang": 734
+    },
+    {
+      "nom": "S.C.E.A. DE LA FONTAINE",
+      "rang": 735
+    },
+    {
+      "nom": "GESTUT ITTLINGEN",
+      "rang": 736
+    },
+    {
+      "nom": "MR DANIEL CHERDO",
+      "rang": 737
+    },
+    {
+      "nom": "MR PATRICK JEANNERET",
+      "rang": 738
+    },
+    {
+      "nom": "MR CHRISTIAN CHORIER",
+      "rang": 739
+    },
+    {
+      "nom": "MR CLAUDE MAYNARD",
+      "rang": 740
+    },
+    {
+      "nom": "MR PAUL NATAF",
+      "rang": 741
+    },
+    {
+      "nom": "MR PATRICK-GEORGES ROULOIS",
+      "rang": 742
+    },
+    {
+      "nom": "MR BRERETON C. JONES",
+      "rang": 743
+    },
+    {
+      "nom": "MME CHRISTIAN WINGTANS",
+      "rang": 744
+    },
+    {
+      "nom": "ECURIE ROETTGEN",
+      "rang": 745
+    },
+    {
+      "nom": "MR CHRISTIAN PRESSE",
+      "rang": 746
+    },
+    {
+      "nom": "MR MICHEL HASKI",
+      "rang": 747
+    },
+    {
+      "nom": "MR JEAN-MICHEL APPRIOU",
+      "rang": 748
+    },
+    {
+      "nom": "MR JEAN DE CHEFFONTAINES",
+      "rang": 749
+    },
+    {
+      "nom": "MR ALBAN DE MIEULLE",
+      "rang": 750
+    },
+    {
+      "nom": "LA TESA S.P.A.",
+      "rang": 751
+    },
+    {
+      "nom": "MME DENIS CHACHIGNON",
+      "rang": 752
+    },
+    {
+      "nom": "MR THIERRY PARIS",
+      "rang": 753
+    },
+    {
+      "nom": "MR LAURENT CENDRA",
+      "rang": 754
+    },
+    {
+      "nom": "MR GERARD LABOUREAU",
+      "rang": 755
+    },
+    {
+      "nom": "MR DOMINIQUE LE BRETON",
+      "rang": 756
+    },
+    {
+      "nom": "MR ANTOINE GILIBERT",
+      "rang": 757
+    },
+    {
+      "nom": "MR PHILIPPE DESMARD",
+      "rang": 758
+    },
+    {
+      "nom": "MR PHILIPPE ALLAIRE",
+      "rang": 759
+    },
+    {
+      "nom": "STALL SOHRENHOF",
+      "rang": 760
+    },
+    {
+      "nom": "MR FRANCOIS-MARIE COTTIN",
+      "rang": 761
+    },
+    {
+      "nom": "MR MICHEL CAPDEPON",
+      "rang": 762
+    },
+    {
+      "nom": "ECURIE RIBESTAING",
+      "rang": 763
+    },
+    {
+      "nom": "MR JEAN-YVES SEROUX",
+      "rang": 764
+    },
+    {
+      "nom": "MME MARIE-BENEDICTE FOUGY-SMAGA",
+      "rang": 765
+    },
+    {
+      "nom": "MR JACQUES SIMONGIOVANNI",
+      "rang": 766
+    },
+    {
+      "nom": "MR OLIVIER VARIN",
+      "rang": 767
+    },
+    {
+      "nom": "THEAKSTON STUD",
+      "rang": 768
+    },
+    {
+      "nom": "SCEA  ECURIE BADER",
+      "rang": 769
+    },
+    {
+      "nom": "MR BERNARD FERNAND LECLERE",
+      "rang": 770
+    },
+    {
+      "nom": "MR PIERRIC ROUXEL",
+      "rang": 771
+    },
+    {
+      "nom": "MME CHRISTINE PASTOR",
+      "rang": 772
+    },
+    {
+      "nom": "GESTUT AUENQUELLE",
+      "rang": 773
+    },
+    {
+      "nom": "ECURIE BIRABEN",
+      "rang": 774
+    },
+    {
+      "nom": "MME CHRISTIAN CHORIER",
+      "rang": 775
+    },
+    {
+      "nom": "MR PHILIPPE MEHAT",
+      "rang": 776
+    },
+    {
+      "nom": "GESTUT BRUMMERHOF",
+      "rang": 777
+    },
+    {
+      "nom": "BALLYLINCH STUD",
+      "rang": 778
+    },
+    {
+      "nom": "RABBAH BLOODSTOCK LIMITED",
+      "rang": 779
+    },
+    {
+      "nom": "BARRONSTOWN STUD",
+      "rang": 780
+    },
+    {
+      "nom": "GAINESWAY THOROUGHBREDS LTD",
+      "rang": 781
+    },
+    {
+      "nom": "MR LUTZ BONGEN",
+      "rang": 782
+    },
+    {
+      "nom": "MR JOHN D. GUNTHER",
+      "rang": 783
+    },
+    {
+      "nom": "LIMESTONE STUD",
+      "rang": 784
+    },
+    {
+      "nom": "MR GUY BENACHOUR",
+      "rang": 785
+    },
+    {
+      "nom": "MR LAURENT JAMAULT",
+      "rang": 786
+    },
+    {
+      "nom": "ENNISTOWN STUD",
+      "rang": 787
+    },
+    {
+      "nom": "EARL  BOIS HUE",
+      "rang": 788
+    },
+    {
+      "nom": "GENESIS GREEN STUD",
+      "rang": 789
+    },
+    {
+      "nom": "MR FRANCOIS-ALAIN GIRAUD",
+      "rang": 790
+    },
+    {
+      "nom": "ECURIE KURA",
+      "rang": 791
+    },
+    {
+      "nom": "MR ALEXANDRE MICELI",
+      "rang": 792
+    },
+    {
+      "nom": "MR JAVIER PARDO DE SANTAYANA DUBOIS",
+      "rang": 793
+    },
+    {
+      "nom": "GESTUT AMMERLAND",
+      "rang": 794
+    },
+    {
+      "nom": "MR EMMANUEL CLAYEUX",
+      "rang": 795
+    },
+    {
+      "nom": "MR RENE-MARC GIRAUD",
+      "rang": 796
+    },
+    {
+      "nom": "MR JEAN-CLAUDE-LOUIS FOURNIER",
+      "rang": 797
+    },
+    {
+      "nom": "MR AZEDDINE SEDRATI",
+      "rang": 798
+    },
+    {
+      "nom": "MR JEAN-SEBASTIEN CAMPOS",
+      "rang": 799
+    },
+    {
+      "nom": "MR GARY MIDDLEBROOK",
+      "rang": 800
+    },
+    {
+      "nom": "MR MEHDI BENMESSAOUD",
+      "rang": 801
+    },
+    {
+      "nom": "SOCIETE D'ELEVAGE F. OUVRY",
+      "rang": 802
+    },
+    {
+      "nom": "MR OLIVIER FOUCHER",
+      "rang": 803
+    },
+    {
+      "nom": "MR RICHARD CORVELLER",
+      "rang": 804
+    },
+    {
+      "nom": "MR MAURIZIO GUARNIERI",
+      "rang": 805
+    },
+    {
+      "nom": "MR JEAN-MICHEL CAMPOS",
+      "rang": 806
+    },
+    {
+      "nom": "GESTUT KARLSHOF",
+      "rang": 807
+    },
+    {
+      "nom": "MR JEAN-ETIENNE DUBOIS",
+      "rang": 808
+    },
+    {
+      "nom": "MME AXELLE NEGRE DE WATRIGANT",
+      "rang": 809
+    },
+    {
+      "nom": "SAS REGNIER",
+      "rang": 810
+    },
+    {
+      "nom": "MR PHILIPPE GIRAUD",
+      "rang": 811
+    },
+    {
+      "nom": "MR VINCENT GIRAUD",
+      "rang": 812
+    },
+    {
+      "nom": "BAROUCHE STUD (IRELAND) LTD",
+      "rang": 813
+    },
+    {
+      "nom": "LORDSHIP STUD",
+      "rang": 814
+    },
+    {
+      "nom": "MR ANDRE HEBERT",
+      "rang": 815
+    },
+    {
+      "nom": "MME RAYMONDE LECLERE",
+      "rang": 816
+    },
+    {
+      "nom": "KILDARAGH STUD",
+      "rang": 817
+    },
+    {
+      "nom": "MR ALAIN GIAOUI",
+      "rang": 818
+    },
+    {
+      "nom": "MR JEAN HENRI MICHEL",
+      "rang": 819
+    },
+    {
+      "nom": "MR ROBERT G. SCHAEDLE",
+      "rang": 820
+    },
+    {
+      "nom": "SCEA  HARAS DE SAINT PAIR",
+      "rang": 821
+    },
+    {
+      "nom": "COMTE ANTOINE-AUDOIN MAGGIAR",
+      "rang": 822
+    },
+    {
+      "nom": "MR RICHARD LECLERE",
+      "rang": 823
+    },
+    {
+      "nom": "MME GITTE POULSEN-ALLAIRE",
+      "rang": 824
+    },
+    {
+      "nom": "SILFIELD BLOODSTOCK",
+      "rang": 825
+    },
+    {
+      "nom": "NEWBYTH STUD",
+      "rang": 826
+    },
+    {
+      "nom": "SCA  BOURGFONTAINE",
+      "rang": 827
+    },
+    {
+      "nom": "ORPENDALE",
+      "rang": 828
+    },
+    {
+      "nom": "MME ANGELA KURTH",
+      "rang": 829
+    },
+    {
+      "nom": "MR JACQUES VAYSSIER",
+      "rang": 830
+    },
+    {
+      "nom": "GAEC DE LA SEGUEGNE",
+      "rang": 831
+    },
+    {
+      "nom": "MME ALEXANDRINE BERGER",
+      "rang": 832
+    },
+    {
+      "nom": "MR MICHEL MEHAT",
+      "rang": 833
+    },
+    {
+      "nom": "MR MATTHIEU DUVERGER",
+      "rang": 834
+    },
+    {
+      "nom": "MME AURELIE DUVERGER",
+      "rang": 835
+    },
+    {
+      "nom": "MME GARY MIDDLEBROOK",
+      "rang": 836
+    },
+    {
+      "nom": "MME MARIE-PIERRE LEJEUNE",
+      "rang": 837
+    },
+    {
+      "nom": "MME BRIGITTE SALAHA",
+      "rang": 838
+    },
+    {
+      "nom": "WEST STOW STUD LTD",
+      "rang": 839
+    },
+    {
+      "nom": "SUNDERLAND HOLDING INC.",
+      "rang": 840
+    },
+    {
+      "nom": "MR JOHN LYONS",
+      "rang": 841
+    },
+    {
+      "nom": "MR PATRICK VILEY",
+      "rang": 842
+    },
+    {
+      "nom": "MME MARIE-CHRISTINE MICELI",
+      "rang": 843
+    },
+    {
+      "nom": "MR WILLIAM WALTON",
+      "rang": 844
+    },
+    {
+      "nom": "NEWSELLS PARK STUD",
+      "rang": 845
+    },
+    {
+      "nom": "GESTUT HONY-HOF",
+      "rang": 846
+    },
+    {
+      "nom": "MR PASCAL BEYER",
+      "rang": 847
+    },
+    {
+      "nom": "GESTUT PARK WIEDINGEN",
+      "rang": 848
+    },
+    {
+      "nom": "MR KLEBER QUELLARD",
+      "rang": 849
+    },
+    {
+      "nom": "AB ASCOT",
+      "rang": 850
+    },
+    {
+      "nom": "MME NATHALIE MILHAS",
+      "rang": 851
+    },
+    {
+      "nom": "MME CHRISTINA JUNG",
+      "rang": 852
+    },
+    {
+      "nom": "NORMANDIE STUD LIMITED",
+      "rang": 853
+    },
+    {
+      "nom": "M.L. BLOODSTOCK LTD",
+      "rang": 854
+    },
+    {
+      "nom": "MR JAMES DONNARY",
+      "rang": 855
+    },
+    {
+      "nom": "MR VALENTIN BEROUARD",
+      "rang": 856
+    },
+    {
+      "nom": "GESTUT KUSSABURG",
+      "rang": 857
+    },
+    {
+      "nom": "MR MATHIEU PITART",
+      "rang": 858
+    },
+    {
+      "nom": "ECURIE ASCOT",
+      "rang": 859
+    },
+    {
+      "nom": "MR DOMINIQUE AVIEZ",
+      "rang": 860
+    },
+    {
+      "nom": "LADY  HARDY",
+      "rang": 861
+    },
+    {
+      "nom": "MR CHRISTOPHE MARTINON",
+      "rang": 862
+    },
+    {
+      "nom": "CHELSTON (IRELAND)",
+      "rang": 863
+    },
+    {
+      "nom": "MR JEAN-LOUIS FABRE",
+      "rang": 864
+    },
+    {
+      "nom": "TEAM HOGDALA A.B.",
+      "rang": 865
+    },
+    {
+      "nom": "MME CATHERINE LARRIEU",
+      "rang": 866
+    },
+    {
+      "nom": "MME DANIEL BUHMANN",
+      "rang": 867
+    },
+    {
+      "nom": "BS RACING SARL",
+      "rang": 868
+    },
+    {
+      "nom": "MR NICHOLAS HARTERY",
+      "rang": 869
+    },
+    {
+      "nom": "MR LOUIS BAUDRON",
+      "rang": 870
+    },
+    {
+      "nom": "MME KARINE MORICE",
+      "rang": 871
+    },
+    {
+      "nom": "NORTHMORE STUD",
+      "rang": 872
+    },
+    {
+      "nom": "PAGET BLOODSTOCK",
+      "rang": 873
+    },
+    {
+      "nom": "MR VIKTOR TYMOSHENKO",
+      "rang": 874
+    },
+    {
+      "nom": "MME VICTORIA GADBIN",
+      "rang": 875
+    },
+    {
+      "nom": "MME ELZA PETIT",
+      "rang": 876
+    },
+    {
+      "nom": "MR PIERRE-HUGUES HENRY",
+      "rang": 877
+    },
+    {
+      "nom": "MR PHILIP MOSBEUX",
+      "rang": 878
+    },
+    {
+      "nom": "MR REGIS BESSE",
+      "rang": 879
+    },
+    {
+      "nom": "WYNATT",
+      "rang": 880
+    },
+    {
+      "nom": "MR MICHAEL O'MAHONY",
+      "rang": 881
+    },
+    {
+      "nom": "MME CAROLE GEORGEAULT",
+      "rang": 882
+    },
+    {
+      "nom": "SUC. ERICH SCHMID",
+      "rang": 883
+    },
+    {
+      "nom": "MR JEAN-MARC VAUX",
+      "rang": 884
+    },
+    {
+      "nom": "MR VALENTIN BUKHTOYAROV",
+      "rang": 885
+    },
+    {
+      "nom": "MME CLARENCE SIGNOL",
+      "rang": 886
+    },
+    {
+      "nom": "STAR POINTE LTD",
+      "rang": 887
+    },
+    {
+      "nom": "MR KEVIN QUINN",
+      "rang": 888
+    },
+    {
+      "nom": "MR JOCELYN TARGETT",
+      "rang": 889
+    },
+    {
+      "nom": "SUC. BERT MAES",
+      "rang": 890
+    },
+    {
+      "nom": "DEERFOREST STUD",
+      "rang": 891
+    },
+    {
+      "nom": "MME CHRISTINE EHLINGER",
+      "rang": 892
+    },
+    {
+      "nom": "SNIG ELEVAGE",
+      "rang": 893
+    },
+    {
+      "nom": "HYDE PARK STUD",
+      "rang": 894
+    },
+    {
+      "nom": "GESTUT PASCHBERG",
+      "rang": 895
+    },
+    {
+      "nom": "MR MARK H. DIXON",
+      "rang": 896
+    },
+    {
+      "nom": "MR JOHN YARR",
+      "rang": 897
+    },
+    {
+      "nom": "YEGUADA KANTAURI",
+      "rang": 898
+    },
+    {
+      "nom": "MME CLARA BIRABEN-LOUSTAU",
+      "rang": 899
+    },
+    {
+      "nom": "LITEX COMMERCE AD",
+      "rang": 900
+    },
+    {
+      "nom": "MR KARL JORG",
+      "rang": 901
+    },
+    {
+      "nom": "MME CATHERINE VILLETTE",
+      "rang": 902
+    },
+    {
+      "nom": "MR KLAUS HOFMANN",
+      "rang": 903
+    },
+    {
+      "nom": "MME CLAUDIE CHERDO",
+      "rang": 904
+    },
+    {
+      "nom": "GESTUT HACHETAL",
+      "rang": 905
+    },
+    {
+      "nom": "MME MAGALY JOMAIN",
+      "rang": 906
+    },
+    {
+      "nom": "ECURIE CAMACHO COURSES",
+      "rang": 907
+    },
+    {
+      "nom": "ECURIES DIANE",
+      "rang": 908
+    },
+    {
+      "nom": "MME ANTONIA MAGGIAR",
+      "rang": 909
+    },
+    {
+      "nom": "ECURIE MAJESTIC RACING EURL",
+      "rang": 910
+    },
+    {
+      "nom": "TALLYHO STUD",
+      "rang": 911
+    },
+    {
+      "nom": "MR ANATOLE MAGGIAR",
+      "rang": 912
+    },
+    {
+      "nom": "MR ARISTIDE MAGGIAR",
+      "rang": 913
+    },
+    {
+      "nom": "MME ANITA LOUBOUTIN",
+      "rang": 914
+    },
+    {
+      "nom": "ASHBRITTLE STUD",
+      "rang": 915
+    },
+    {
+      "nom": "MR PATRICK GUEDJ",
+      "rang": 916
+    },
+    {
+      "nom": "GESTUT ELSETAL",
+      "rang": 917
+    },
+    {
+      "nom": "MR EVGENY KAPPUSHEV",
+      "rang": 918
+    },
+    {
+      "nom": "MR OLIVIER CARLI",
+      "rang": 919
+    },
+    {
+      "nom": "MR JOSE LARDOT",
+      "rang": 920
+    },
+    {
+      "nom": "TARA STUD",
+      "rang": 921
+    },
+    {
+      "nom": "MR ALAIN LEBRET",
+      "rang": 922
+    },
+    {
+      "nom": "MME CAROLINE KLUS",
+      "rang": 923
+    },
+    {
+      "nom": "STRATFIN SAS",
+      "rang": 924
+    },
+    {
+      "nom": "GENETS SRL",
+      "rang": 925
+    },
+    {
+      "nom": "MR FREDERIC LANDAIS",
+      "rang": 926
+    },
+    {
+      "nom": "MME BRUNEHILDE HERMANGE",
+      "rang": 927
+    },
+    {
+      "nom": "MR JAN KRAUZE",
+      "rang": 928
+    },
+    {
+      "nom": "MME ERIKA GILLIAR",
+      "rang": 929
+    },
+    {
+      "nom": "MR PHILIPPE THIRIET",
+      "rang": 930
+    },
+    {
+      "nom": "SCEA DE MARANCOURT",
+      "rang": 931
+    },
+    {
+      "nom": "MME HANNAH PETIT",
+      "rang": 932
+    },
+    {
+      "nom": "MR B. DOYLE",
+      "rang": 933
+    },
+    {
+      "nom": "MR SEBASTIEN DESMONTILS",
+      "rang": 934
+    },
+    {
+      "nom": "AGENCE CABALLIS",
+      "rang": 935
+    },
+    {
+      "nom": "MR PHILIPPE STIVAL",
+      "rang": 936
+    },
+    {
+      "nom": "MME DANIELA AIRALDI",
+      "rang": 937
+    },
+    {
+      "nom": "MR STEPHANE PROVOST",
+      "rang": 938
+    },
+    {
+      "nom": "MR KHALIFA MOHAMMED AL ATTIYAH",
+      "rang": 939
+    },
+    {
+      "nom": "MR RUDY SINGARIN",
+      "rang": 940
+    },
+    {
+      "nom": "MR MARC VERSIN",
+      "rang": 941
+    },
+    {
+      "nom": "MME HELENE MENNESSIER MARTINEZ",
+      "rang": 942
+    },
+    {
+      "nom": "MR NICHOLAS HUGHES",
+      "rang": 943
+    },
+    {
+      "nom": "MR ROGER MEYZINDI",
+      "rang": 944
+    },
+    {
+      "nom": "MR RAYMOND SAINTE ROSE",
+      "rang": 945
+    },
+    {
+      "nom": "MR JEAN-CHARLES DELASSE",
+      "rang": 946
+    },
+    {
+      "nom": "MME ELISABETH ALLAIRE",
+      "rang": 947
+    },
+    {
+      "nom": "DIOMED BLOODSTOCK LTD",
+      "rang": 948
+    },
+    {
+      "nom": "SUC. CHRISTELLE REBILLON",
+      "rang": 949
+    },
+    {
+      "nom": "MME ISABELLE MONNIER",
+      "rang": 950
+    },
+    {
+      "nom": "MME CATHERINE BODIN",
+      "rang": 951
+    },
+    {
+      "nom": "MR JOEL BODIN",
+      "rang": 952
+    },
+    {
+      "nom": "MR MANUEL DELGADO-SANCHEZ ARJONA",
+      "rang": 953
+    },
+    {
+      "nom": "MR ABDELHAFIDH DRIDI",
+      "rang": 954
+    },
+    {
+      "nom": "MR DANIEL ALEXANDRE",
+      "rang": 955
+    },
+    {
+      "nom": "MANDORE INTERNATIONAL AGENCY",
+      "rang": 956
+    },
+    {
+      "nom": "MR PATRICE NICOLET",
+      "rang": 957
+    },
+    {
+      "nom": "MR PIERRE CADEC",
+      "rang": 958
+    },
+    {
+      "nom": "MME ILSE SMITS",
+      "rang": 959
+    },
+    {
+      "nom": "MR EDDIR LOUNGAR",
+      "rang": 960
+    },
+    {
+      "nom": "MR DOMINIQUE FOURNIER",
+      "rang": 961
+    },
+    {
+      "nom": "MR T.A. RAHMAN",
+      "rang": 962
+    },
+    {
+      "nom": "MR PIERRE DESPOUY",
+      "rang": 963
+    },
+    {
+      "nom": "PLASMAN-PVP RACING",
+      "rang": 964
+    },
+    {
+      "nom": "NATALMA BLOODSTOCK",
+      "rang": 965
+    },
+    {
+      "nom": "MME SYLVIE GERARD",
+      "rang": 966
+    },
+    {
+      "nom": "MME ISABELLE MAUGER",
+      "rang": 967
+    },
+    {
+      "nom": "MR PETER ANASTASIOU",
+      "rang": 968
+    },
+    {
+      "nom": "WESTMINSTER RACE HORSES GMBH",
+      "rang": 969
+    },
+    {
+      "nom": "AZ. AGR. GENNARO STIMOLA",
+      "rang": 970
+    },
+    {
+      "nom": "ROCKCLIFFE STUD",
+      "rang": 971
+    },
+    {
+      "nom": "YEOMANSTOWN STUD",
+      "rang": 972
+    },
+    {
+      "nom": "MR BENJAMIN TEBOUL",
+      "rang": 973
+    },
+    {
+      "nom": "MR FLORIAN ROBERT",
+      "rang": 974
+    },
+    {
+      "nom": "ATACAMA BLOODSTOCK LTD",
+      "rang": 975
+    },
+    {
+      "nom": "CUADRA MEDITERRANEO",
+      "rang": 976
+    },
+    {
+      "nom": "MME MELANIE MULLIER",
+      "rang": 977
+    },
+    {
+      "nom": "MR ANDRIY MILOVANOV",
+      "rang": 978
+    },
+    {
+      "nom": "MME SONIA GROSSO",
+      "rang": 979
+    },
+    {
+      "nom": "MR BRIAN DUNN",
+      "rang": 980
+    },
+    {
+      "nom": "MME DEBRA HOOPER",
+      "rang": 981
+    },
+    {
+      "nom": "S.C.E.A. ECURIE DE MONTFORT",
+      "rang": 982
+    },
+    {
+      "nom": "MME STEPHANIE PERRIER",
+      "rang": 983
+    },
+    {
+      "nom": "ELEVAGE DE LA CROIX DE PLACE",
+      "rang": 984
+    },
+    {
+      "nom": "FELDSTEIN SL",
+      "rang": 985
+    },
+    {
+      "nom": "MME NADINE FABRE",
+      "rang": 986
+    },
+    {
+      "nom": "MME HARRIET LODER",
+      "rang": 987
+    },
+    {
+      "nom": "ECURIE NICOLAS TAUDON",
+      "rang": 988
+    },
+    {
+      "nom": "MR YANN VARIN",
+      "rang": 989
+    },
+    {
+      "nom": "LADY JANET BROOKEBOROUGH",
+      "rang": 990
+    },
+    {
+      "nom": "MR ANTHONY HUBERT",
+      "rang": 991
+    },
+    {
+      "nom": "MR CLEMENT THOMAS",
+      "rang": 992
+    },
+    {
+      "nom": "MR GUNTER KRAHFORST",
+      "rang": 993
+    },
+    {
+      "nom": "MME JACKIE CORNWELL",
+      "rang": 994
+    },
+    {
+      "nom": "MR DENIS PICAT",
+      "rang": 995
+    },
+    {
+      "nom": "ECURIE VAPORETTO",
+      "rang": 996
+    },
+    {
+      "nom": "FLAXMAN STABLES IRELAND L.T.D",
+      "rang": 997
+    },
+    {
+      "nom": "AL SHAHANIA STUD FRANCE SARL",
+      "rang": 998
+    },
+    {
+      "nom": "HARAS DU GRAND COURGEON",
+      "rang": 999
+    },
+    {
+      "nom": "MR SEBASTIEN VARIN",
+      "rang": 1000
+    },
+    {
+      "nom": "MME LOUISE QUINN",
+      "rang": 1001
+    },
+    {
+      "nom": "HARAS D'OMBREVILLE",
+      "rang": 1002
+    },
+    {
+      "nom": "MR FRANCOIS BUZON",
+      "rang": 1003
+    },
+    {
+      "nom": "MR GEORG KERN",
+      "rang": 1004
+    },
+    {
+      "nom": "ARDRUMS HOUSE STUD",
+      "rang": 1005
+    },
+    {
+      "nom": "ECURIE LAFEU",
+      "rang": 1006
+    },
+    {
+      "nom": "MR FRANCOIS MASSOT",
+      "rang": 1007
+    },
+    {
+      "nom": "MR OLIVIER PRUVOST",
+      "rang": 1008
+    },
+    {
+      "nom": "ECURIE DE LA VERTE VALLEE",
+      "rang": 1009
+    },
+    {
+      "nom": "MME SANDRINE TIAN-SIO-PO",
+      "rang": 1010
+    },
+    {
+      "nom": "MR REUBEN SAMI SOLOMON",
+      "rang": 1011
+    },
+    {
+      "nom": "MME BRIGITTE CHARTIER LEMOINE",
+      "rang": 1012
+    },
+    {
+      "nom": "MME SARA CENDRA",
+      "rang": 1013
+    },
+    {
+      "nom": "LOPE DE VEGA SYNDICATE",
+      "rang": 1014
+    },
+    {
+      "nom": "PROSPECT STABLES",
+      "rang": 1015
+    },
+    {
+      "nom": "SUC. PHILIPPE RIPERT",
+      "rang": 1016
+    },
+    {
+      "nom": "MR GEORGES BOULARD",
+      "rang": 1017
+    },
+    {
+      "nom": "MR DOMINIQUE SALLE",
+      "rang": 1018
+    },
+    {
+      "nom": "MR ALAIN BELLANGER",
+      "rang": 1019
+    },
+    {
+      "nom": "STALL DEIN-RENNPFERD.DE",
+      "rang": 1020
+    },
+    {
+      "nom": "HARAS DU MONDANT",
+      "rang": 1021
+    },
+    {
+      "nom": "MME SONIA THOMAS",
+      "rang": 1022
+    },
+    {
+      "nom": "ND BLOODSTOCK LTD",
+      "rang": 1023
+    },
+    {
+      "nom": "MR PHILIP ROLLS",
+      "rang": 1024
+    },
+    {
+      "nom": "MR JEAN-MARIE BASTIN",
+      "rang": 1025
+    },
+    {
+      "nom": "HARAS DES ROCS",
+      "rang": 1026
+    },
+    {
+      "nom": "MME AMELIE CATRYSSE",
+      "rang": 1027
+    },
+    {
+      "nom": "MME ELODIE RIVET",
+      "rang": 1028
+    },
+    {
+      "nom": "MR MICHEL GOUPIL",
+      "rang": 1029
+    },
+    {
+      "nom": "ROY RACING LTD",
+      "rang": 1030
+    },
+    {
+      "nom": "MR NICOLAS BAUDRON",
+      "rang": 1031
+    },
+    {
+      "nom": "MME CORNELIA MASSOT",
+      "rang": 1032
+    },
+    {
+      "nom": "BARTON STUD",
+      "rang": 1033
+    },
+    {
+      "nom": "LNJ FOXWOODS LLC",
+      "rang": 1034
+    },
+    {
+      "nom": "STALL ELEKTROWELT24.DE",
+      "rang": 1035
+    },
+    {
+      "nom": "EUROPEANSTAYERS.COM",
+      "rang": 1036
+    },
+    {
+      "nom": "MR BRUNO ADERNO",
+      "rang": 1037
+    },
+    {
+      "nom": "PETCHES FARM LTD",
+      "rang": 1038
+    },
+    {
+      "nom": "MME MELANIE LECUONA",
+      "rang": 1039
+    },
+    {
+      "nom": "MME LAURA CENDRA",
+      "rang": 1040
+    },
+    {
+      "nom": "COSEDA LTD",
+      "rang": 1041
+    },
+    {
+      "nom": "D&P.PROD'HOMME (S)",
+      "rang": 1042
+    },
+    {
+      "nom": "P & B BLOODSTOCK",
+      "rang": 1043
+    },
+    {
+      "nom": "WHITE BIRCH FARM",
+      "rang": 1044
+    },
+    {
+      "nom": "NEWSTEAD BREEDING LLC",
+      "rang": 1045
+    },
+    {
+      "nom": "L.GADBIN (S)",
+      "rang": 1046
+    },
+    {
+      "nom": "EARL LE GOFF",
+      "rang": 1047
+    },
+    {
+      "nom": "SCEA ERIC FEURTET",
+      "rang": 1048
+    },
+    {
+      "nom": "BESHELLSTOWN TRADING CO",
+      "rang": 1049
+    },
+    {
+      "nom": "MME BERNADETTE MEHAT",
+      "rang": 1050
+    },
+    {
+      "nom": "RAFFLES DANCERS",
+      "rang": 1051
+    },
+    {
+      "nom": "S.A.R.L. KARIMINE STUD",
+      "rang": 1052
+    },
+    {
+      "nom": "MR JEAN LUC FAOTTO",
+      "rang": 1053
+    },
+    {
+      "nom": "MR CLEMENT TROPRES",
+      "rang": 1054
+    },
+    {
+      "nom": "COTTON HOUSE BLOODSTOCK",
+      "rang": 1055
+    },
+    {
+      "nom": "MR TUGAY AKMAN",
+      "rang": 1056
+    },
+    {
+      "nom": "MR PETER SCHURR",
+      "rang": 1057
+    },
+    {
+      "nom": "MR FRANCOIS POULLAIN",
+      "rang": 1058
+    },
+    {
+      "nom": "LA MOTTERAYE ELEVAGE SCEA",
+      "rang": 1059
+    },
+    {
+      "nom": "ECURIE VIVALDI ROCK",
+      "rang": 1060
+    },
+    {
+      "nom": "ECURIE THOMAS LEVESQUE",
+      "rang": 1061
+    },
+    {
+      "nom": "MR WILLIAM DAVID",
+      "rang": 1062
+    },
+    {
+      "nom": "ECURIE RENK",
+      "rang": 1063
+    },
+    {
+      "nom": "MR LAURENT BILLOUX",
+      "rang": 1064
+    },
+    {
+      "nom": "MR JEAN-JACQUES BILLOUX",
+      "rang": 1065
+    },
+    {
+      "nom": "MME CLEMENCE VANDEL",
+      "rang": 1066
+    },
+    {
+      "nom": "MR CYRILLE DAVID",
+      "rang": 1067
+    },
+    {
+      "nom": "WESTERBERG",
+      "rang": 1068
+    },
+    {
+      "nom": "MR JANICK GIGOU",
+      "rang": 1069
+    },
+    {
+      "nom": "MAKE BELIEVE SYNDICATE",
+      "rang": 1070
+    },
+    {
+      "nom": "MME ANA ZUBIRIA AZNAR",
+      "rang": 1071
+    },
+    {
+      "nom": "MR JOSE GAVILAN",
+      "rang": 1072
+    },
+    {
+      "nom": "SAS MATA HORSE",
+      "rang": 1073
+    },
+    {
+      "nom": "AL MOHAMEDIYA BREEDING",
+      "rang": 1074
+    },
+    {
+      "nom": "SCEA DU DOMAINE DE MALERAI",
+      "rang": 1075
+    },
+    {
+      "nom": "MR THOMAS LINES",
+      "rang": 1076
+    },
+    {
+      "nom": "MR PHILIPPE GERBIER",
+      "rang": 1077
+    },
+    {
+      "nom": "THOMASTOWN FARM STUD",
+      "rang": 1078
+    },
+    {
+      "nom": "RATHBODY STUD",
+      "rang": 1079
+    },
+    {
+      "nom": "MME B. SCHMAKE",
+      "rang": 1080
+    },
+    {
+      "nom": "PIMPICKS SRL",
+      "rang": 1081
+    },
+    {
+      "nom": "MR ALEXANDRE DABBOU",
+      "rang": 1082
+    },
+    {
+      "nom": "KERETIO LTD",
+      "rang": 1083
+    },
+    {
+      "nom": "MME ESTHEL CHOMARD",
+      "rang": 1084
+    },
+    {
+      "nom": "CORPS COMMERCE LTD",
+      "rang": 1085
+    },
+    {
+      "nom": "S.A.S. HAUTE VALLEE",
+      "rang": 1086
+    },
+    {
+      "nom": "MME HELENE DARGENT",
+      "rang": 1087
+    },
+    {
+      "nom": "MR FRANCOIS JEAN-LOUIS BRANERE",
+      "rang": 1088
+    },
+    {
+      "nom": "MME BEATRICE RICHARD",
+      "rang": 1089
+    },
+    {
+      "nom": "MOUNT COOTE ESTATES",
+      "rang": 1090
+    },
+    {
+      "nom": "EARL HARAS DES TARTASSES",
+      "rang": 1091
+    },
+    {
+      "nom": "ECURIE DE CHANLECY",
+      "rang": 1092
+    },
+    {
+      "nom": "MR MATHEO BEAUNEZ",
+      "rang": 1093
+    },
+    {
+      "nom": "KATELANIS BLOODSTOCK",
+      "rang": 1094
+    },
+    {
+      "nom": "MR IGNACIO SORRIBAS",
+      "rang": 1095
+    },
+    {
+      "nom": "BLUE DIAMOND STUD FARM (UK)LTD",
+      "rang": 1096
+    },
+    {
+      "nom": "MR FABRICE CARLE",
+      "rang": 1097
+    },
+    {
+      "nom": "AL SHIRA'AA RACING LTD",
+      "rang": 1098
+    },
+    {
+      "nom": "MME TRACEY KEARNEY",
+      "rang": 1099
+    },
+    {
+      "nom": "MME GWENDOLINE LE GAFFRIC",
+      "rang": 1100
+    },
+    {
+      "nom": "MME CAROLINE PANSIN",
+      "rang": 1101
+    },
+    {
+      "nom": "MR CEDRIC PANSIN",
+      "rang": 1102
+    },
+    {
+      "nom": "MLLE LOUISE GADBIN",
+      "rang": 1103
+    },
+    {
+      "nom": "MR CHARLES GADBIN",
+      "rang": 1104
+    },
+    {
+      "nom": "DE KERBIONO",
+      "rang": 1105
+    },
+    {
+      "nom": "MME CECILE GIRON",
+      "rang": 1106
+    },
+    {
+      "nom": "TAKE FIVE SAS",
+      "rang": 1107
+    },
+    {
+      "nom": "KILMOON SYNDICATE",
+      "rang": 1108
+    },
+    {
+      "nom": "SCEA RIO",
+      "rang": 1109
+    },
+    {
+      "nom": "ELODIE CHENET RACING",
+      "rang": 1110
+    },
+    {
+      "nom": "MR JEAN-PAUL BRUNET",
+      "rang": 1111
+    },
+    {
+      "nom": "MR FREDERIC KOENIG",
+      "rang": 1112
+    },
+    {
+      "nom": "MR GUILLAUME LAMBERTZ",
+      "rang": 1113
+    },
+    {
+      "nom": "MME CHRISTINE LAMBERTZ",
+      "rang": 1114
+    },
+    {
+      "nom": "MR ANTHONY WAREHAM HOLT",
+      "rang": 1115
+    },
+    {
+      "nom": "INDIVISION LAILOMA 2021",
+      "rang": 1116
+    },
+    {
+      "nom": "MME MARION DE FRESSANGES",
+      "rang": 1117
+    },
+    {
+      "nom": "DOUGHTY INVESTISSMENTS LTD",
+      "rang": 1118
+    },
+    {
+      "nom": "MR JULIAN VAUGEOIS",
+      "rang": 1119
+    },
+    {
+      "nom": "MME CEMILE BOS",
+      "rang": 1120
+    },
+    {
+      "nom": "CHERRYVALLEY FARM",
+      "rang": 1121
+    },
+    {
+      "nom": "SKYFALL THOROUGHBREDS LLC",
+      "rang": 1122
+    },
+    {
+      "nom": "INDIVISION N. LALA DANCE 2022",
+      "rang": 1123
+    },
+    {
+      "nom": "CASTLEHYDE STUD",
+      "rang": 1124
+    },
+    {
+      "nom": "MR RAPHAEL NAQUET",
+      "rang": 1125
+    },
+    {
+      "nom": "MME MORGANE MARTINON",
+      "rang": 1126
+    },
+    {
+      "nom": "MR LUCAS MARTINON",
+      "rang": 1127
+    },
+    {
+      "nom": "MR MICHEL FOURAGE",
+      "rang": 1128
+    },
+    {
+      "nom": "OWASEYF SYNDICATE",
+      "rang": 1129
+    },
+    {
+      "nom": "HIDDEN BROOK FARM",
+      "rang": 1130
+    },
+    {
+      "nom": "RUMINYAHUI PARTNERSHIP",
+      "rang": 1131
+    },
+    {
+      "nom": "MME LIZ PERSSE",
+      "rang": 1132
+    },
+    {
+      "nom": "MME SANDY PERSSE",
+      "rang": 1133
+    },
+    {
+      "nom": "CEDAR HILL LLC",
+      "rang": 1134
+    },
+    {
+      "nom": "BIG BROTHERS PRIDE SYNDICATE",
+      "rang": 1135
+    },
+    {
+      "nom": "MR JOHN FRANCES KEEGAN",
+      "rang": 1136
+    },
+    {
+      "nom": "MR CIARAN PATERSON",
+      "rang": 1137
+    }
+  ]
 }
