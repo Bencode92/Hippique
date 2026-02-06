@@ -28,3 +28,12 @@ env/
 # Ne pas ignorer les captures d'écran de débogage
 !data/debug_captures/*.png
 !data/debug_captures/*.html
+
+# ============================================================
+# DONNÉES PONDÉRÉES DATÉES — ne garder que *_latest.json
+# Les fichiers horodatés sont générés quotidiennement par les
+# workflows mais NE DOIVENT PAS être committés dans Git.
+# Seul le fichier *_latest.json est versionné.
+# ============================================================
+data/*_ponderated_20*.json
+data/extraction_report_20*.json
