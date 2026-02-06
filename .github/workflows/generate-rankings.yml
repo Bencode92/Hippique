@@ -33,32 +33,40 @@ jobs:
       
       - name: Modify script to ensure it works in GitHub Actions
         run: |
-          # Modifier le script pour s'assurer qu'il crée des fichiers dans le bon répertoire
           sed -i 's|const OUTPUT_DIR = \x27\./data\x27;|const OUTPUT_DIR = \x27data\x27;|g' extract-pondered-rankings.js
       
       - name: Generate rankings with debug output
         run: |
-          # Afficher le contenu du script pour débogage
           echo "===== SCRIPT CONTENT ====="
           cat extract-pondered-rankings.js
           echo "=========================="
-          
-          # Exécuter le script avec des logs détaillés
           node --trace-warnings extract-pondered-rankings.js
       
-      - name: Check if files were generated
+      - name: Validate generated files
         run: |
-          echo "===== DIRECTORY CONTENT AFTER SCRIPT ====="
-          ls -la
           echo "===== DATA DIRECTORY CONTENT ====="
-          ls -la data || echo "Data directory not found"
+          ls -la data/*_latest.json 2>/dev/null || echo "⚠️ Aucun fichier _latest.json trouvé"
+          
+          # Vérifier que les fichiers latest ne sont pas vides ou trop petits
+          for f in data/*_ponderated_latest.json; do
+            if [ -f "$f" ]; then
+              SIZE=$(stat -c%s "$f" 2>/dev/null || stat -f%z "$f" 2>/dev/null)
+              if [ "$SIZE" -lt 1000 ]; then
+                echo "⚠️ ALERTE: $f ne fait que ${SIZE} octets (extraction probablement ratée)"
+              else
+                echo "✅ $f — ${SIZE} octets"
+              fi
+            fi
+          done
       
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add data || echo "No data directory to add"
+          
+          # N'ajouter QUE les fichiers *_latest.json (pas les datés)
+          git add data/*_ponderated_latest.json 2>/dev/null || echo "No latest files to add"
+          
           git status
-          # Ne pas générer d'erreur si aucun changement à committer
-          git commit -m "Mise à jour automatique des classements pondérés" || echo "No changes to commit"
+          git diff --cached --quiet || git commit -m "Mise à jour des classements pondérés ($(date +%Y-%m-%d))"
           git push || echo "Push failed, possibly no changes"
