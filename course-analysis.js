@@ -1,4 +1,5 @@
 // Script pour la gestion du sélecteur de course et l'affichage du classement théorique
+// v3.0 — Quick wins: forme récente, poids porté, percentile, corde, population
 // v2.0 — Branchement pipeline rankings pondérés + fixes P0-P5
 
 // ─── Rankings data (chargé au démarrage via loadRankings) ───
@@ -9,6 +10,7 @@ let rankingsData = {
     eleveurs: {},
     proprietaires: {}
 };
+let rankingsPopulation = {}; // { chevaux: 1234, jockeys: 567, ... } pour normalisation percentile
 let rankingsLoaded = false;
 
 // ─── P0: Canoniser les clés accentuées des participants JSON ───
@@ -46,6 +48,20 @@ function escapeHtml(str) {
     return div.innerHTML;
 }
 
+// ─── Fallback getDistanceBucket si absent de ranking-loader.js ───
+if (typeof window.rankingLoader === 'undefined') {
+    window.rankingLoader = {};
+}
+if (!window.rankingLoader.getDistanceBucket) {
+    window.rankingLoader.getDistanceBucket = function(distance) {
+        const d = parseInt(distance) || 2000;
+        if (d < 1400) return 'sprint';
+        if (d < 1900) return 'mile';
+        if (d < 2400) return 'middle';
+        return 'staying';
+    };
+}
+
 // ─── P2: Charger les rankings pondérés depuis le pipeline ───
 async function loadRankings() {
     const categories = ['chevaux', 'jockeys', 'entraineurs', 'eleveurs', 'proprietaires'];
@@ -71,7 +87,9 @@ async function loadRankings() {
                 };
             });
             rankingsData[cat] = map;
-            console.log(`✅ Rankings ${cat}: ${Object.keys(map).length} entrées`);
+            // Stocker la population totale pour normalisation percentile
+            rankingsPopulation[cat] = (json.metadata && json.metadata.totalPopulation) || Object.keys(map).length;
+            console.log(`✅ Rankings ${cat}: ${Object.keys(map).length} entrées (pop: ${rankingsPopulation[cat]})`);
         } catch (e) {
             console.warn(`⚠️ Rankings ${cat} indisponibles:`, e.message);
         }
@@ -79,12 +97,43 @@ async function loadRankings() {
     await Promise.all(promises);
     rankingsLoaded = true;
     console.log('Rankings chargés:', Object.entries(rankingsData).map(([k,v]) => `${k}:${Object.keys(v).length}`).join(', '));
+    console.log('Populations:', JSON.stringify(rankingsPopulation));
+}
+
+// ─── Score de forme récente (basé sur les dernières performances) ───
+// Parse "1p 3p 0p 2p 5p" → score pondéré avec décroissance exponentielle
+function calculerScoreForme(performances) {
+    if (!performances || typeof performances !== 'string') return null;
+
+    // Parser "1p 3p 0p 2p 5p" → [1, 3, 0, 2, 5]
+    const results = performances.match(/(\d+)p/g);
+    if (!results || results.length === 0) return null;
+
+    const positions = results.map(r => parseInt(r.replace('p', ''), 10));
+
+    // Barème : 1er=10, 2e=7, 3e=5, 4e=3, 5e=1, reste/0=0
+    const POINTS = { 1: 10, 2: 7, 3: 5, 4: 3, 5: 1 };
+
+    // Décroissance exponentielle : course la plus récente pèse le plus
+    const DECAY = 0.7;
+    let weightedSum = 0;
+    let totalWeight = 0;
+
+    positions.forEach((pos, i) => {
+        const weight = Math.pow(DECAY, i); // i=0 → 1.0, i=1 → 0.7, i=2 → 0.49...
+        const points = (pos > 0 && pos <= 5) ? (POINTS[pos] || 0) : 0;
+        weightedSum += weight * points;
+        totalWeight += weight;
+    });
+
+    if (totalWeight === 0) return null;
+
+    // Normaliser sur 0-100 : max théorique = 10 (toujours 1er)
+    return Math.min(100, (weightedSum / totalWeight) * 10);
 }
 
 // ─── P2: Scoring basé sur les rankings pipeline (remplace l'ancien hardcodé) ───
 // Pondération inter-catégories: cheval 50%, jockey 30%, entraîneur 10%, éleveur 5%, propriétaire 5%
-// Note: le pipeline utilise 50/30/20 (victoires/tauxV/tauxP) INTRA-catégorie pour construire ScoreMixte.
-// Ici on pondère l'importance relative des catégories pour le scoring d'un participant.
 const CATEGORY_WEIGHTS = {
     cheval: 0.50,
     jockey: 0.30,
@@ -93,7 +142,16 @@ const CATEGORY_WEIGHTS = {
     proprietaire: 0.05
 };
 
-function calculerScoreTheorique(p) {
+// Map catégorie scoring → catégorie rankings
+const CATEGORY_TO_RANKINGS_KEY = {
+    cheval: 'chevaux',
+    jockey: 'jockeys',
+    entraineur: 'entraineurs',
+    eleveur: 'eleveurs',
+    proprietaire: 'proprietaires'
+};
+
+function calculerScoreTheorique(p, poidsMoyen) {
     // Normaliser les noms pour lookup
     // Cheval: retirer suffixes type "F.PS. 5 a." → garder le nom avant
     const chevalNom = (p.cheval || '').replace(/\s+[A-Z]\.\w+\.?\s*\d*\s*[a-z]?\.?$/i, '').trim().toUpperCase();
@@ -119,15 +177,24 @@ function calculerScoreTheorique(p) {
     if (hits === 0) {
         const fallbackScore = parseFloat(p.valeur) || 0;
         // Convertir valeur handicap en score 0-100 (valeur typique: 15-60, centrer sur 50)
-        const normalizedFallback = Math.min(100, Math.max(0, 50 + (fallbackScore - 30) * 1.5));
-        return { score: normalizedFallback, confidence: 0, hits: 0 };
+        let normalizedFallback = Math.min(100, Math.max(0, 50 + (fallbackScore - 30) * 1.5));
+
+        // Même en fallback, intégrer la forme si disponible
+        const scoreForme = calculerScoreForme(p.performances);
+        if (scoreForme !== null) {
+            normalizedFallback = normalizedFallback * 0.85 + scoreForme * 0.15;
+        }
+
+        return { score: normalizedFallback, confidence: 0, hits: 0, forme: scoreForme };
     }
 
-    // Calculer score par catégorie: inversé du rang (plus petit rang = meilleur)
-    // On normalise: score = max(0, 100 - (rang - 1) * 0.5)
-    // Cela donne ~100 pour rang 1, ~75 pour rang 50, ~50 pour rang 100
-    function rangToScore(rang) {
-        return Math.max(0, Math.min(100, 100 - (rang - 1) * 0.5));
+    // Normalisation percentile : score = 100 × (1 - (rang-1) / (population-1))
+    // Rang 1 → 100, dernier rang → 0. Tient compte de la taille réelle de chaque catégorie.
+    function rangToScore(rang, category) {
+        const catKey = CATEGORY_TO_RANKINGS_KEY[category] || category;
+        const pop = rankingsPopulation[catKey] || 200; // fallback conservateur
+        if (pop <= 1) return 100; // un seul acteur = score max
+        return Math.max(0, Math.min(100, 100 * (1 - (rang - 1) / (pop - 1))));
     }
 
     // Pondération dynamique: ne compter que les composantes trouvées
@@ -136,19 +203,41 @@ function calculerScoreTheorique(p) {
 
     for (const [key, lookup] of Object.entries(lookups)) {
         if (lookup !== null) {
-            const catScore = rangToScore(lookup.rang);
+            const catScore = rangToScore(lookup.rang, key);
             const weight = CATEGORY_WEIGHTS[key] || 0;
             totalWeight += weight;
             weightedSum += weight * catScore;
         }
     }
 
-    const finalScore = totalWeight > 0 ? weightedSum / totalWeight : 50;
+    let finalScore = totalWeight > 0 ? weightedSum / totalWeight : 50;
+
+    // ─── Intégrer la forme récente (15% du score si disponible) ───
+    const scoreForme = calculerScoreForme(p.performances);
+    if (scoreForme !== null) {
+        finalScore = finalScore * 0.85 + scoreForme * 0.15;
+    }
+
+    // ─── Intégrer le poids porté (bonus/malus ±10%) ───
+    // Un cheval plus léger que la moyenne a un avantage
+    if (poidsMoyen && p.poids) {
+        const poidsNum = parseFloat((p.poids || '').replace(',', '.'));
+        if (!isNaN(poidsNum) && poidsNum > 0 && poidsMoyen > 0) {
+            const ecartPoids = (poidsMoyen - poidsNum) / poidsMoyen;
+            // Clamp l'écart pour éviter des scores aberrants (±15% max d'écart)
+            const ecartClamp = Math.max(-0.15, Math.min(0.15, ecartPoids));
+            finalScore *= (1 + 0.10 * ecartClamp);
+        }
+    }
+
+    // Clamp final 0-100
+    finalScore = Math.max(0, Math.min(100, finalScore));
 
     return {
         score: finalScore,
         confidence: hits / 5, // 0.0 → 1.0
-        hits: hits
+        hits: hits,
+        forme: scoreForme
     };
 }
 
@@ -163,9 +252,23 @@ function getConfidenceBadge(confidence) {
     return '<span class="confidence-badge confidence-low" title="Score estimé (0-1 acteur trouvé)">●○○</span>';
 }
 
+// ─── Indicateur de forme visuel ───
+function getFormeBadge(forme) {
+    if (forme === null || forme === undefined) {
+        return '<span class="forme-badge" title="Forme inconnue">—</span>';
+    }
+    if (forme >= 70) {
+        return '<span class="forme-badge forme-hot" title="En grande forme (score ' + forme.toFixed(0) + ')">🔥</span>';
+    }
+    if (forme >= 40) {
+        return '<span class="forme-badge forme-ok" title="Forme correcte (score ' + forme.toFixed(0) + ')">👍</span>';
+    }
+    return '<span class="forme-badge forme-cold" title="Forme faible (score ' + forme.toFixed(0) + ')">❄️</span>';
+}
+
 // ─── Main ───
 document.addEventListener('DOMContentLoaded', async function() {
-    console.log("Course analysis script v2.0 loaded");
+    console.log("Course analysis script v3.0 loaded");
 
     // Éléments DOM
     const hippodromeSelect = document.getElementById('hippodrome-select');
@@ -308,11 +411,52 @@ document.addEventListener('DOMContentLoaded', async function() {
         document.getElementById('meta-type').textContent = course.type || "Plat";
         document.getElementById('meta-participants').textContent = course.participants.length;
 
-        // P0: Canoniser les participants + P2: Scoring pipeline
+        // ─── Calculer le poids moyen du peloton ───
+        const poidsValues = course.participants
+            .map(rawP => parseFloat((canonicalizeParticipant(rawP).poids || '').replace(',', '.')))
+            .filter(v => !isNaN(v) && v > 0);
+        const poidsMoyen = poidsValues.length > 0
+            ? poidsValues.reduce((a, b) => a + b, 0) / poidsValues.length
+            : null;
+
+        if (poidsMoyen) {
+            console.log(`Poids moyen du peloton: ${poidsMoyen.toFixed(1)} kg (${poidsValues.length} valeurs)`);
+        }
+
+        // ─── Contexte course pour la corde ───
+        const courseContext = {
+            distance: parseInt(course.distance) || 2000,
+            hippodrome: hippodrome
+        };
+
+        // P0: Canoniser les participants + P2: Scoring pipeline + Quick wins
         const participantsWithScores = course.participants.map(rawP => {
             const p = canonicalizeParticipant(rawP); // P0
-            const result = calculerScoreTheorique(p); // P2
-            return { ...p, score: result.score, confidence: result.confidence, hits: result.hits };
+            const result = calculerScoreTheorique(p, poidsMoyen); // P2 + forme + poids
+
+            // ─── Corde : ajustement post-scoring ───
+            let cordeAjust = 0;
+            let cordeDetail = null;
+            if (p.corde && window.rankingLoader && window.rankingLoader.cordeHandler) {
+                const cordeNum = window.rankingLoader.cordeHandler.extractCordeNumber(p.corde);
+                if (cordeNum !== null) {
+                    const cordeImpact = window.rankingLoader.cordeHandler.calculateCordeImpact(cordeNum, courseContext);
+                    cordeAjust = cordeImpact.score || 0;
+                    cordeDetail = cordeImpact.explication || null;
+                }
+            }
+
+            const scoreFinal = Math.max(0, Math.min(100, result.score + cordeAjust));
+
+            return {
+                ...p,
+                score: scoreFinal,
+                confidence: result.confidence,
+                hits: result.hits,
+                forme: result.forme,
+                cordeAjust: cordeAjust,
+                cordeDetail: cordeDetail
+            };
         });
 
         // Trier par score décroissant
@@ -401,6 +545,11 @@ document.addEventListener('DOMContentLoaded', async function() {
                 .confidence-high { color: #4caf50; }
                 .confidence-mid  { color: #ff9800; }
                 .confidence-low  { color: #f44336; }
+                .forme-badge {
+                    font-size: 0.85rem;
+                    margin-left: 4px;
+                    cursor: help;
+                }
             `;
             document.head.appendChild(styleSheet);
         }
@@ -412,7 +561,7 @@ document.addEventListener('DOMContentLoaded', async function() {
             const positionClass = position <= 3 ? `top-${position}` : '';
             const normalizedScore = Math.min(100, Math.max(0, p.score));
 
-            // P3+P4: innerHTML avec données échappées + badge confiance
+            // P3+P4: innerHTML avec données échappées + badge confiance + forme
             row.innerHTML = `
                 <td><div class="position-badge ${positionClass}">${position}</div></td>
                 <td>${escapeHtml(p.cheval)}</td>
@@ -424,10 +573,11 @@ document.addEventListener('DOMContentLoaded', async function() {
                         </div>
                         <span class="score-value">${p.score.toFixed(1)}</span>
                         ${getConfidenceBadge(p.confidence)}
+                        ${getFormeBadge(p.forme)}
                     </div>
                 </td>
                 <td>
-                    <button class="detail-btn" data-cheval="${escapeHtml(p.cheval)}" data-jockey="${escapeHtml(p.jockey)}" data-entraineur="${escapeHtml(p.entraineur)}" data-hits="${p.hits}" data-confidence="${(p.confidence * 100).toFixed(0)}">
+                    <button class="detail-btn" data-cheval="${escapeHtml(p.cheval)}" data-jockey="${escapeHtml(p.jockey)}" data-entraineur="${escapeHtml(p.entraineur)}" data-hits="${p.hits}" data-confidence="${(p.confidence * 100).toFixed(0)}" data-forme="${p.forme !== null ? p.forme.toFixed(0) : 'N/A'}" data-corde="${p.cordeDetail || 'Non disponible'}" data-poids="${escapeHtml(p.poids)}">
                         <i class="fas fa-info-circle"></i>
                     </button>
                 </td>
@@ -441,12 +591,18 @@ document.addEventListener('DOMContentLoaded', async function() {
             btn.addEventListener('click', function() {
                 const hits = this.dataset.hits;
                 const confidence = this.dataset.confidence;
+                const forme = this.dataset.forme;
+                const corde = this.dataset.corde;
+                const poids = this.dataset.poids;
                 alert(
                     `Détails pour ${this.dataset.cheval}\n` +
                     `Jockey: ${this.dataset.jockey}\n` +
                     `Entraîneur: ${this.dataset.entraineur}\n` +
                     `─────────────────\n` +
-                    `Confiance: ${confidence}% (${hits}/5 acteurs trouvés dans les rankings)`
+                    `Confiance: ${confidence}% (${hits}/5 acteurs trouvés)\n` +
+                    `Forme récente: ${forme}\n` +
+                    `Poids: ${poids}\n` +
+                    `Corde: ${corde}`
                 );
             });
         });
