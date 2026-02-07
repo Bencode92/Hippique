@@ -248,7 +248,8 @@ async function processCategory(category) {
         category: category.id,
         extraction_date: new Date().toISOString(),
         extraction_method: "pondered_ranking",
-        source_file: category.file
+        source_file: category.file,
+        totalPopulation: rankedData.length
       },
       resultats: rankedData
     };
