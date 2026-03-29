@@ -6,12 +6,6 @@ Remplace le scraping Selenium de france-galop.com.
 RÉTROCOMPATIBLE: produit exactement le même format JSON que l'ancien scraper
 (un fichier par hippodrome: {date}_{hippodrome}.json dans data/courses/)
 
-Avantages vs Selenium:
-- Pas de Chrome/Selenium nécessaire → workflow 10x plus rapide
-- Données JSON structurées nativement (pas de parsing HTML fragile)
-- Pas d'authentification requise
-- Plus robuste (API versionnée vs HTML qui change)
-
 Usage:
     python scraper_courses_pmu.py              # Courses du jour
     python scraper_courses_pmu.py 2026-03-29   # Date spécifique
@@ -27,7 +21,6 @@ import logging
 import re
 from datetime import datetime, timedelta
 
-# Configuration du logging
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 logger = logging.getLogger(__name__)
 
@@ -41,15 +34,14 @@ HEADERS = {
     'Accept-Language': 'fr-FR,fr;q=0.9',
 }
 OUTPUT_DIR = "data/courses"
-REQUEST_DELAY = 0.3  # secondes entre les requêtes
+REQUEST_DELAY = 0.3
 
 
 # ============================================================
-# Fonctions API
+# Helpers
 # ============================================================
 
 def api_get(endpoint, max_retries=3):
-    """Appel GET à l'API PMU avec retry."""
     url = f"{BASE_URL}/{endpoint}"
     for attempt in range(max_retries):
         try:
@@ -70,12 +62,10 @@ def api_get(endpoint, max_retries=3):
 
 
 def format_date_pmu(date_obj):
-    """Convertit une date au format PMU (DDMMYYYY)."""
     return date_obj.strftime("%d%m%Y")
 
 
 def format_heure(timestamp_ms):
-    """Convertit un timestamp millisecondes en heure lisible (ex: '14h30')."""
     if not timestamp_ms:
         return ""
     try:
@@ -86,18 +76,32 @@ def format_heure(timestamp_ms):
 
 
 def safe_str(val, default=""):
-    """Convertit en string de manière sûre."""
     if val is None:
         return default
     return str(val).strip()
 
 
+def get_nom(field):
+    """
+    Extrait le nom d'un champ PMU qui peut être:
+    - un dict {"nom": "..."} 
+    - une simple string "..."
+    - None
+    """
+    if field is None:
+        return ""
+    if isinstance(field, str):
+        return field.strip()
+    if isinstance(field, dict):
+        return safe_str(field.get("nom", ""))
+    return safe_str(field)
+
+
 # ============================================================
-# Mapping PMU → Format rétrocompatible France Galop
+# Mapping PMU → Format rétrocompatible
 # ============================================================
 
 def map_specialite(code):
-    """Convertit le code spécialité PMU en type lisible."""
     mapping = {
         "PLAT": "Plat",
         "OBSTACLE": "Obstacle",
@@ -111,10 +115,6 @@ def map_specialite(code):
 
 
 def build_cheval_label(participant):
-    """
-    Reconstruit le label cheval au format France Galop.
-    Ex: "MODELE ABSOLU M.PS. 3 a. 100%"
-    """
     nom = safe_str(participant.get("nom", "")).upper()
     sexe = safe_str(participant.get("sexe", ""))
     race = safe_str(participant.get("race", ""))
@@ -141,10 +141,9 @@ def build_cheval_label(participant):
 
 
 def build_pere_mere(participant):
-    """Reconstruit la ligne père/mère."""
-    pere = safe_str(participant.get("pere", {}).get("nom", "")) if participant.get("pere") else ""
-    mere = safe_str(participant.get("mere", {}).get("nom", "")) if participant.get("mere") else ""
-    pere_mere_mere = safe_str(participant.get("pereMere", {}).get("nom", "")) if participant.get("pereMere") else ""
+    pere = get_nom(participant.get("pere"))
+    mere = get_nom(participant.get("mere"))
+    pere_mere_mere = get_nom(participant.get("pereMere"))
 
     if pere and mere:
         result = f"Par: {pere} et {mere}"
@@ -157,7 +156,6 @@ def build_pere_mere(participant):
 
 
 def format_poids(poids_val):
-    """Formate le poids PMU (en dixièmes de kg) au format lisible."""
     if not poids_val:
         return ""
     if isinstance(poids_val, (int, float)) and poids_val > 100:
@@ -170,7 +168,6 @@ def format_poids(poids_val):
 
 
 def map_participant(p):
-    """Convertit un participant PMU au format rétrocompatible France Galop."""
     result = {}
 
     result["n°"] = safe_str(p.get("numPmu", ""))
@@ -185,18 +182,22 @@ def map_participant(p):
     result["corde"] = f"(Corde:{place_corde.zfill(2)})" if place_corde else ""
     result["couleurs"] = ""
 
-    result["propriétaire"] = safe_str(p.get("proprietaire", {}).get("nom", "")) if p.get("proprietaire") else ""
-    result["entraineur"] = safe_str(p.get("entraineur", {}).get("nom", "")) if p.get("entraineur") else ""
-    result["jockey"] = safe_str(p.get("jockey", {}).get("nom", "")) if p.get("jockey") else ""
+    # Utiliser get_nom() pour gérer string OU dict
+    result["propriétaire"] = get_nom(p.get("proprietaire"))
+    result["entraineur"] = get_nom(p.get("entraineur"))
+    result["jockey"] = get_nom(p.get("jockey"))
 
     result["poids"] = format_poids(p.get("poidsConditionMonte"))
 
     # Gains
-    gains_data = p.get("gainsParticipant", {})
-    if gains_data:
-        gains_carriere = gains_data.get("gainsCarriere", {})
-        somme = gains_carriere.get("somme", 0) if gains_carriere else 0
-        result["gains"] = safe_str(somme) if somme else ""
+    gains_data = p.get("gainsParticipant")
+    if gains_data and isinstance(gains_data, dict):
+        gains_carriere = gains_data.get("gainsCarriere")
+        if gains_carriere and isinstance(gains_carriere, dict):
+            somme = gains_carriere.get("somme", 0)
+            result["gains"] = safe_str(somme) if somme else ""
+        else:
+            result["gains"] = ""
     else:
         result["gains"] = ""
 
@@ -229,7 +230,7 @@ def map_participant(p):
     equip += ferrage_map.get(ferrage, "")
     result["equipement(s)"] = equip
 
-    result["éleveurs"] = safe_str(p.get("eleveur", {}).get("nom", "")) if p.get("eleveur") else ""
+    result["éleveurs"] = get_nom(p.get("eleveur"))
 
     return result
 
@@ -239,7 +240,6 @@ def map_participant(p):
 # ============================================================
 
 def scrape_courses(date_obj=None):
-    """Pipeline principal d'extraction."""
     if date_obj is None:
         date_obj = datetime.now()
 
@@ -251,7 +251,6 @@ def scrape_courses(date_obj=None):
     logger.info(f"🏇 Extraction des courses du {date_iso}")
     logger.info(f"🔗 API PMU - Date: {date_pmu}")
 
-    # 1. Récupérer le programme du jour
     logger.info(f"\n📋 Récupération du programme du jour...")
     programme = api_get(f"programme/{date_pmu}?specialisation=INTERNET")
 
@@ -267,18 +266,19 @@ def scrape_courses(date_obj=None):
     logger.info(f"✅ {len(reunions_data)} réunion(s) trouvée(s)")
     files_saved = 0
 
-    # 2. Traiter chaque réunion
     for reunion_raw in reunions_data:
         reunion_num = reunion_raw.get("numOfficiel", 0)
         hippodrome_data = reunion_raw.get("hippodrome", {})
-        hippodrome_nom = safe_str(hippodrome_data.get("libelleCourt", "INCONNU")).upper()
+        if isinstance(hippodrome_data, str):
+            hippodrome_nom = hippodrome_data.upper()
+        else:
+            hippodrome_nom = safe_str(hippodrome_data.get("libelleCourt", "INCONNU")).upper()
 
         specialite = reunion_raw.get("specialite", "")
         reunion_type = map_specialite(specialite)
 
         logger.info(f"\n🏟️  R{reunion_num} - {hippodrome_nom} ({reunion_type})")
 
-        # Construire l'objet au format rétrocompatible
         reunion_output = {
             "hippodrome": hippodrome_nom,
             "type_reunion": reunion_type,
@@ -310,7 +310,6 @@ def scrape_courses(date_obj=None):
                 "participants": []
             }
 
-            # Récupérer les participants
             time.sleep(REQUEST_DELAY)
             participants_raw = api_get(
                 f"programme/{date_pmu}/R{reunion_num}/C{course_num}/participants?specialisation=INTERNET"
@@ -321,11 +320,15 @@ def scrape_courses(date_obj=None):
                 mapped_participants = []
 
                 for p in participants_list:
-                    if p.get("estNonPartant", False):
+                    try:
+                        if p.get("estNonPartant", False):
+                            continue
+                        mapped_p = map_participant(p)
+                        if mapped_p.get("cheval") or mapped_p.get("jockey"):
+                            mapped_participants.append(mapped_p)
+                    except Exception as e:
+                        logger.warning(f"    ⚠️  Erreur mapping participant: {e}")
                         continue
-                    mapped_p = map_participant(p)
-                    if mapped_p.get("cheval") or mapped_p.get("jockey"):
-                        mapped_participants.append(mapped_p)
 
                 if mapped_participants:
                     course_mapped["participants"] = mapped_participants
@@ -336,7 +339,6 @@ def scrape_courses(date_obj=None):
             else:
                 logger.info(f"    ⚠️  Pas de données participants")
 
-        # 3. Sauvegarder
         if reunion_output["courses"]:
             safe_name = hippodrome_nom.lower()
             safe_name = safe_name.replace(" ", "_").replace("/", "-").replace("\\", "-")
@@ -355,7 +357,6 @@ def scrape_courses(date_obj=None):
         else:
             logger.info(f"  ⚠️  Aucune course valide pour {hippodrome_nom}")
 
-    # 4. Résumé
     logger.info(f"\n{'='*60}")
     logger.info(f"📊 RÉSUMÉ - {date_iso}")
     logger.info(f"  Réunions: {len(reunions_data)} | Fichiers: {files_saved}")
