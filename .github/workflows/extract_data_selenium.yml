@@ -1,17 +1,13 @@
-name: France Galop Selenium Extraction
+name: France Galop Rankings (backup - requests)
 
+# Désactivé: les rankings sont maintenant gérés via CSV manuels
+# → Workflow "Convert Rankings CSV to JSON" 
+# Ce workflow reste disponible en backup via lancement manuel
 on:
-  schedule:
-    # Exécution quotidienne à 4h du matin
-    - cron: '0 4 * * *'
   workflow_dispatch:
     inputs:
       categories:
-        description: 'Catégories à extraire (séparées par des virgules, laisser vide pour toutes)'
-        required: false
-        default: ''
-      max_clicks:
-        description: 'Ignoré (compatibilité) - le nouveau scraper utilise requests'
+        description: 'Catégories (séparées par virgules, vide = toutes)'
         required: false
         default: ''
 
@@ -34,8 +30,7 @@ jobs:
           python-version: '3.11'
       
       - name: Install dependencies
-        run: |
-          pip install requests beautifulsoup4
+        run: pip install requests beautifulsoup4
       
       - name: Run extraction script
         run: |
@@ -58,9 +53,9 @@ jobs:
           git add data/*.json
           
           if git diff --cached --quiet; then
-            echo "Aucun changement détecté dans les données"
+            echo "Aucun changement"
           else
-            git commit -m "📊 Update rankings - $(date +'%Y-%m-%d')"
+            git commit -m "📊 Update rankings (scraper) - $(date +'%Y-%m-%d')"
             git push
           fi
         env:
