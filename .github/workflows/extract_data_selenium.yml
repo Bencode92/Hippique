@@ -5,18 +5,16 @@ on:
     # Exécution quotidienne à 4h du matin
     - cron: '0 4 * * *'
   workflow_dispatch:
-    # Permet l'exécution manuelle depuis l'interface GitHub
     inputs:
       categories:
         description: 'Catégories à extraire (séparées par des virgules, laisser vide pour toutes)'
         required: false
         default: ''
       max_clicks:
-        description: 'Nombre maximum de clics sur le bouton "Plus" (laisser vide pour aucune limite)'
+        description: 'Ignoré (compatibilité) - le nouveau scraper utilise requests'
         required: false
         default: ''
 
-# Définition explicite des permissions
 permissions:
   contents: write
 
@@ -28,64 +26,41 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Récupérer tout l'historique pour éviter les problèmes de fusion
+          fetch-depth: 0
       
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.11'
       
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install requests beautifulsoup4 selenium webdriver-manager
+          pip install requests beautifulsoup4
       
-      - name: Set up Chrome
-        uses: browser-actions/setup-chrome@latest
-        
-      - name: Prepare command parameters
-        id: params
+      - name: Run extraction script
         run: |
           CATEGORIES="${{ github.event.inputs.categories }}"
-          MAX_CLICKS="${{ github.event.inputs.max_clicks }}"
-          
-          CMD_ARGS=""
-          
-          if [ ! -z "$CATEGORIES" ]; then
-            CMD_ARGS="$CATEGORIES"
+          if [ -z "$CATEGORIES" ]; then
+            python scraper_rankings.py
+          else
+            python scraper_rankings.py "$CATEGORIES"
           fi
-          
-          if [ ! -z "$MAX_CLICKS" ]; then
-            CMD_ARGS="$CMD_ARGS --max-clicks $MAX_CLICKS"
-          fi
-          
-          echo "cmd_args=$CMD_ARGS" >> $GITHUB_OUTPUT
-      
-      - name: Run Selenium extraction script
-        run: python scraper_selenium.py ${{ steps.params.outputs.cmd_args }}
       
       - name: Commit and push if changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           
-          # Stasher tous les changements potentiels avant de pull
           git stash -u || true
-          
-          # Synchroniser avec le dépôt distant
           git pull origin main --rebase
-          
-          # Réappliquer les changements stashés
           git stash pop || true
           
-          # Ajouter les fichiers JSON
           git add data/*.json
           
-          # Vérifier s'il y a des changements à committer
           if git diff --cached --quiet; then
             echo "Aucun changement détecté dans les données"
           else
-            git commit -m "Update data (Selenium method) - $(date)"
+            git commit -m "📊 Update rankings - $(date +'%Y-%m-%d')"
             git push
           fi
         env:
