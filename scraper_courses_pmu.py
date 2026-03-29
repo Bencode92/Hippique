@@ -1,15 +1,7 @@
 #!/usr/bin/env python3
 """
 Scraper des courses hippiques via l'API PMU Turfinfo.
-Remplace le scraping Selenium de france-galop.com.
-
-RÉTROCOMPATIBLE: produit exactement le même format JSON que l'ancien scraper
-(un fichier par hippodrome: {date}_{hippodrome}.json dans data/courses/)
-
-Usage:
-    python scraper_courses_pmu.py              # Courses du jour
-    python scraper_courses_pmu.py 2026-03-29   # Date spécifique
-    python scraper_courses_pmu.py today        # Explicitement aujourd'hui
+Version avec DEBUG pour identifier les vrais noms de champs de l'API.
 """
 
 import requests
@@ -24,9 +16,6 @@ from datetime import datetime, timedelta
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 logger = logging.getLogger(__name__)
 
-# ============================================================
-# Configuration
-# ============================================================
 BASE_URL = "https://online.turfinfo.api.pmu.fr/rest/client/61"
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -34,12 +23,10 @@ HEADERS = {
     'Accept-Language': 'fr-FR,fr;q=0.9',
 }
 OUTPUT_DIR = "data/courses"
+DEBUG_DIR = "data/debug_captures"
 REQUEST_DELAY = 0.3
+DEBUG_LOGGED = False  # Pour ne logger qu'une fois
 
-
-# ============================================================
-# Helpers
-# ============================================================
 
 def api_get(endpoint, max_retries=3):
     url = f"{BASE_URL}/{endpoint}"
@@ -49,45 +36,33 @@ def api_get(endpoint, max_retries=3):
             if response.status_code == 200:
                 return response.json()
             elif response.status_code == 404:
-                logger.warning(f"  ⚠️  404 pour: {endpoint}")
                 return None
             else:
-                logger.warning(f"  ⚠️  HTTP {response.status_code} pour {endpoint} (tentative {attempt+1}/{max_retries})")
+                logger.warning(f"  ⚠️  HTTP {response.status_code} (tentative {attempt+1})")
         except requests.exceptions.RequestException as e:
-            logger.warning(f"  ⚠️  Erreur réseau: {e} (tentative {attempt+1}/{max_retries})")
+            logger.warning(f"  ⚠️  Réseau: {e} (tentative {attempt+1})")
         if attempt < max_retries - 1:
             time.sleep(REQUEST_DELAY * (attempt + 1))
-    logger.error(f"❌ Échec après {max_retries} tentatives pour {endpoint}")
     return None
 
 
-def format_date_pmu(date_obj):
-    return date_obj.strftime("%d%m%Y")
+def format_date_pmu(d):
+    return d.strftime("%d%m%Y")
 
-
-def format_heure(timestamp_ms):
-    if not timestamp_ms:
+def format_heure(ts):
+    if not ts:
         return ""
     try:
-        dt = datetime.fromtimestamp(timestamp_ms / 1000)
-        return dt.strftime("%Hh%M")
-    except (ValueError, OSError):
+        return datetime.fromtimestamp(ts / 1000).strftime("%Hh%M")
+    except:
         return ""
-
 
 def safe_str(val, default=""):
     if val is None:
         return default
     return str(val).strip()
 
-
 def get_nom(field):
-    """
-    Extrait le nom d'un champ PMU qui peut être:
-    - un dict {"nom": "..."} 
-    - une simple string "..."
-    - None
-    """
     if field is None:
         return ""
     if isinstance(field, str):
@@ -96,12 +71,23 @@ def get_nom(field):
         return safe_str(field.get("nom", ""))
     return safe_str(field)
 
+def try_get(d, *keys):
+    """Essaie plusieurs clés et retourne la première valeur non-None."""
+    for k in keys:
+        v = d.get(k)
+        if v is not None:
+            return v
+    return None
+
 
 # ============================================================
-# Mapping PMU → Format rétrocompatible
+# Mapping
 # ============================================================
 
 def map_specialite(code):
+    if not code:
+        return "Indéterminé"
+    code_upper = code.upper() if isinstance(code, str) else code
     mapping = {
         "PLAT": "Plat",
         "OBSTACLE": "Obstacle",
@@ -111,22 +97,21 @@ def map_specialite(code):
         "TROT_ATTELE": "Trot",
         "TROT_MONTE": "Trot",
     }
-    return mapping.get(code, code if code else "Indéterminé")
+    return mapping.get(code_upper, mapping.get(code, code if code else "Indéterminé"))
 
 
-def build_cheval_label(participant):
-    nom = safe_str(participant.get("nom", "")).upper()
-    sexe = safe_str(participant.get("sexe", ""))
-    race = safe_str(participant.get("race", ""))
-    age = safe_str(participant.get("age", ""))
+def build_cheval_label(p):
+    nom = safe_str(p.get("nom", "")).upper()
+    sexe = safe_str(p.get("sexe", "")).upper()
+    race = safe_str(p.get("race", "")).upper()
+    age = safe_str(p.get("age", ""))
 
-    sexe_map = {
-        "MALES": "M.", "FEMELLES": "F.", "HONGRES": "H.",
-        "MALE": "M.", "FEMELLE": "F.", "HONGRE": "H."
-    }
+    sexe_map = {"MALES": "M.", "FEMELLES": "F.", "HONGRES": "H.",
+                "MALE": "M.", "FEMELLE": "F.", "HONGRE": "H."}
     sexe_label = sexe_map.get(sexe, sexe[:1] + "." if sexe else "")
 
-    race_map = {"PUR_SANG": "PS.", "AQPS": "AQPS.", "ARABE": "AR."}
+    race_map = {"PUR_SANG": "PS.", "PURSANG": "PS.", "AQPS": "AQPS.", 
+                "ARABE": "AR.", "AUTRE_QUE_PUR_SANG": "AQPS."}
     race_label = race_map.get(race, race[:2] + "." if race else "")
 
     age_label = f"{age} a." if age else ""
@@ -136,19 +121,19 @@ def build_cheval_label(participant):
         parts.append(f"{sexe_label}{race_label}")
     if age_label:
         parts.append(age_label)
-
     return " ".join(parts)
 
 
-def build_pere_mere(participant):
-    pere = get_nom(participant.get("pere"))
-    mere = get_nom(participant.get("mere"))
-    pere_mere_mere = get_nom(participant.get("pereMere"))
-
+def build_pere_mere(p):
+    # Essayer plusieurs structures possibles
+    pere = get_nom(try_get(p, "pere", "father", "sire"))
+    mere = get_nom(try_get(p, "mere", "mother", "dam"))
+    pmm = get_nom(try_get(p, "pereMere", "grandsire", "damSire"))
+    
     if pere and mere:
         result = f"Par: {pere} et {mere}"
-        if pere_mere_mere:
-            result += f" ({pere_mere_mere})"
+        if pmm:
+            result += f" ({pmm})"
         return result
     elif pere:
         return f"Par: {pere}"
@@ -158,18 +143,17 @@ def build_pere_mere(participant):
 def format_poids(poids_val):
     if not poids_val:
         return ""
-    if isinstance(poids_val, (int, float)) and poids_val > 100:
-        kg = poids_val / 10
-        if kg == int(kg):
-            return f"{int(kg)} kg"
+    if isinstance(poids_val, (int, float)):
+        if poids_val > 100:
+            kg = poids_val / 10
+            return f"{int(kg)} kg" if kg == int(kg) else f"{kg} kg"
         else:
-            return f"{kg} kg"
+            return f"{poids_val} kg" if poids_val > 0 else ""
     return f"{poids_val} kg"
 
 
 def map_participant(p):
     result = {}
-
     result["n°"] = safe_str(p.get("numPmu", ""))
     result["cheval"] = build_cheval_label(p)
     result["cheval_url"] = ""
@@ -182,29 +166,36 @@ def map_participant(p):
     result["corde"] = f"(Corde:{place_corde.zfill(2)})" if place_corde else ""
     result["couleurs"] = ""
 
-    # Utiliser get_nom() pour gérer string OU dict
-    result["propriétaire"] = get_nom(p.get("proprietaire"))
-    result["entraineur"] = get_nom(p.get("entraineur"))
-    result["jockey"] = get_nom(p.get("jockey"))
+    result["propriétaire"] = get_nom(try_get(p, "proprietaire", "owner"))
+    result["entraineur"] = get_nom(try_get(p, "entraineur", "trainer"))
+    
+    # Jockey: essayer plusieurs champs
+    jockey_val = try_get(p, "jockey", "driver", "monteur", "cavalier")
+    result["jockey"] = get_nom(jockey_val)
 
-    result["poids"] = format_poids(p.get("poidsConditionMonte"))
+    # Poids: essayer plusieurs champs
+    poids_val = try_get(p, "poidsConditionMonte", "poidsMonte", 
+                        "poidsJockey", "handicapValeur", "poidsReel")
+    result["poids"] = format_poids(poids_val)
 
-    # Gains
-    gains_data = p.get("gainsParticipant")
+    # Gains: essayer plusieurs structures
+    gains_str = ""
+    gains_data = try_get(p, "gainsParticipant", "gains")
     if gains_data and isinstance(gains_data, dict):
-        gains_carriere = gains_data.get("gainsCarriere")
-        if gains_carriere and isinstance(gains_carriere, dict):
-            somme = gains_carriere.get("somme", 0)
-            result["gains"] = safe_str(somme) if somme else ""
-        else:
-            result["gains"] = ""
-    else:
-        result["gains"] = ""
+        gc = try_get(gains_data, "gainsCarriere", "gainsAnneeEnCours", "total")
+        if gc and isinstance(gc, dict):
+            somme = gc.get("somme", 0)
+            gains_str = safe_str(somme) if somme else ""
+        elif isinstance(gc, (int, float)):
+            gains_str = safe_str(gc) if gc else ""
+    elif isinstance(gains_data, (int, float)):
+        gains_str = safe_str(gains_data) if gains_data else ""
+    result["gains"] = gains_str
 
     result["musique"] = safe_str(p.get("musique", ""))
 
     # Valeur handicap
-    handicap = p.get("handicapPoids")
+    handicap = try_get(p, "handicapPoids", "handicapValeur", "valeurHandicap")
     if handicap:
         if isinstance(handicap, (int, float)) and handicap > 100:
             result["valeur"] = safe_str(handicap / 10)
@@ -214,32 +205,25 @@ def map_participant(p):
         result["valeur"] = ""
 
     # Équipement
-    oeilleres = safe_str(p.get("oeilleres", ""))
-    equip_map = {
-        "OEILLERES_PLATES": "0",
-        "OEILLERES_AUSTRALIENNES": "A",
-        "OEIL_PLEIN": "O",
-    }
+    oeilleres = safe_str(p.get("oeilleres", "")).upper()
+    equip_map = {"OEILLERES_PLATES": "0", "OEILLERES_AUSTRALIENNES": "A", "OEIL_PLEIN": "O"}
     equip = equip_map.get(oeilleres, "")
-    ferrage = safe_str(p.get("defFerrage", ""))
-    ferrage_map = {
-        "DEFERRES_ANTERIEURS": "da",
-        "DEFERRES_POSTERIEURS": "dp",
-        "DEFERRES_4_PIEDS": "d4",
-    }
+    ferrage = safe_str(p.get("defFerrage", "")).upper()
+    ferrage_map = {"DEFERRES_ANTERIEURS": "da", "DEFERRES_POSTERIEURS": "dp", "DEFERRES_4_PIEDS": "d4"}
     equip += ferrage_map.get(ferrage, "")
     result["equipement(s)"] = equip
 
-    result["éleveurs"] = get_nom(p.get("eleveur"))
+    result["éleveurs"] = get_nom(try_get(p, "eleveur", "breeder"))
 
     return result
 
 
 # ============================================================
-# Pipeline principal
+# Pipeline
 # ============================================================
 
 def scrape_courses(date_obj=None):
+    global DEBUG_LOGGED
     if date_obj is None:
         date_obj = datetime.now()
 
@@ -247,23 +231,36 @@ def scrape_courses(date_obj=None):
     date_iso = date_obj.strftime("%Y-%m-%d")
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
+    os.makedirs(DEBUG_DIR, exist_ok=True)
 
     logger.info(f"🏇 Extraction des courses du {date_iso}")
     logger.info(f"🔗 API PMU - Date: {date_pmu}")
 
-    logger.info(f"\n📋 Récupération du programme du jour...")
     programme = api_get(f"programme/{date_pmu}?specialisation=INTERNET")
-
     if not programme:
         logger.error(f"❌ Impossible de récupérer le programme pour {date_iso}")
         return False
+
+    # DEBUG: sauvegarder le programme complet
+    with open(os.path.join(DEBUG_DIR, "raw_programme.json"), 'w', encoding='utf-8') as f:
+        json.dump(programme, f, ensure_ascii=False, indent=2)
+    logger.info(f"🔍 DEBUG: Programme brut sauvegardé dans {DEBUG_DIR}/raw_programme.json")
 
     reunions_data = programme.get("programme", {}).get("reunions", [])
     if not reunions_data:
         logger.warning(f"⚠️  Aucune réunion trouvée pour {date_iso}")
         return False
 
-    logger.info(f"✅ {len(reunions_data)} réunion(s) trouvée(s)")
+    # DEBUG: afficher les clés de la première réunion
+    first_reunion = reunions_data[0]
+    logger.info(f"\n🔍 DEBUG REUNION R1 - Clés disponibles: {list(first_reunion.keys())}")
+    logger.info(f"🔍 DEBUG REUNION R1 - specialite: {first_reunion.get('specialite')}")
+    logger.info(f"🔍 DEBUG REUNION R1 - discipline: {first_reunion.get('discipline')}")
+    logger.info(f"🔍 DEBUG REUNION R1 - typePiste: {first_reunion.get('typePiste')}")
+    logger.info(f"🔍 DEBUG REUNION R1 - audience: {first_reunion.get('audience')}")
+    logger.info(f"🔍 DEBUG REUNION R1 - hippodrome: {first_reunion.get('hippodrome')}")
+
+    logger.info(f"\n✅ {len(reunions_data)} réunion(s) trouvée(s)")
     files_saved = 0
 
     for reunion_raw in reunions_data:
@@ -274,8 +271,20 @@ def scrape_courses(date_obj=None):
         else:
             hippodrome_nom = safe_str(hippodrome_data.get("libelleCourt", "INCONNU")).upper()
 
-        specialite = reunion_raw.get("specialite", "")
+        # Essayer plusieurs champs pour la spécialité
+        specialite = (reunion_raw.get("specialite") 
+                     or reunion_raw.get("discipline")
+                     or reunion_raw.get("typePiste")
+                     or "")
         reunion_type = map_specialite(specialite)
+        
+        # Si toujours indéterminé, regarder les courses
+        if reunion_type == "Indéterminé":
+            courses = reunion_raw.get("courses", [])
+            if courses:
+                first_course_spec = courses[0].get("specialite", "") or courses[0].get("discipline", "")
+                if first_course_spec:
+                    reunion_type = map_specialite(first_course_spec)
 
         logger.info(f"\n🏟️  R{reunion_num} - {hippodrome_nom} ({reunion_type})")
 
@@ -283,17 +292,25 @@ def scrape_courses(date_obj=None):
             "hippodrome": hippodrome_nom,
             "type_reunion": reunion_type,
             "date_extraction": datetime.now().isoformat(),
-            "url_source": f"https://online.turfinfo.api.pmu.fr/rest/client/61/programme/{date_pmu}/R{reunion_num}",
+            "url_source": f"{BASE_URL}/programme/{date_pmu}/R{reunion_num}",
             "courses": []
         }
 
         courses_data = reunion_raw.get("courses", [])
 
+        # DEBUG: première course
+        if courses_data and not DEBUG_LOGGED:
+            first_course = courses_data[0]
+            logger.info(f"🔍 DEBUG COURSE C1 - Clés: {list(first_course.keys())}")
+            logger.info(f"🔍 DEBUG COURSE C1 - specialite: {first_course.get('specialite')}")
+            logger.info(f"🔍 DEBUG COURSE C1 - discipline: {first_course.get('discipline')}")
+
         for course_raw in courses_data:
             course_num = course_raw.get("numOrdre", 0)
             course_nom = safe_str(course_raw.get("libelle", "")).upper()
             course_horaire = format_heure(course_raw.get("heureDepart"))
-            course_specialite = course_raw.get("specialite", "")
+            course_specialite = (course_raw.get("specialite") 
+                                or course_raw.get("discipline") or "")
             course_type = map_specialite(course_specialite) if course_specialite else reunion_type
             distance = course_raw.get("distance")
             distance_str = f"{distance}m" if distance else ""
@@ -317,8 +334,34 @@ def scrape_courses(date_obj=None):
 
             if participants_raw:
                 participants_list = participants_raw.get("participants", [])
-                mapped_participants = []
 
+                # DEBUG: premier participant - sauvegarder TOUT
+                if participants_list and not DEBUG_LOGGED:
+                    first_p = participants_list[0]
+                    logger.info(f"\n🔍 DEBUG PARTICIPANT #1 - Toutes les clés:")
+                    logger.info(f"    Clés: {sorted(first_p.keys())}")
+                    
+                    # Logger chaque champ important
+                    for key in sorted(first_p.keys()):
+                        val = first_p[key]
+                        val_str = str(val)[:100]  # Tronquer
+                        logger.info(f"    {key}: {val_str}")
+                    
+                    # Sauvegarder le JSON brut
+                    debug_path = os.path.join(DEBUG_DIR, "raw_first_participant.json")
+                    with open(debug_path, 'w', encoding='utf-8') as f:
+                        json.dump(first_p, f, ensure_ascii=False, indent=2)
+                    logger.info(f"    💾 Sauvegardé dans {debug_path}")
+                    
+                    # Sauvegarder toute la réponse participants
+                    debug_path2 = os.path.join(DEBUG_DIR, "raw_participants_response.json")
+                    with open(debug_path2, 'w', encoding='utf-8') as f:
+                        json.dump(participants_raw, f, ensure_ascii=False, indent=2)
+                    logger.info(f"    💾 Réponse complète dans {debug_path2}")
+                    
+                    DEBUG_LOGGED = True
+
+                mapped_participants = []
                 for p in participants_list:
                     try:
                         if p.get("estNonPartant", False):
@@ -327,7 +370,7 @@ def scrape_courses(date_obj=None):
                         if mapped_p.get("cheval") or mapped_p.get("jockey"):
                             mapped_participants.append(mapped_p)
                     except Exception as e:
-                        logger.warning(f"    ⚠️  Erreur mapping participant: {e}")
+                        logger.warning(f"    ⚠️  Erreur mapping: {e}")
                         continue
 
                 if mapped_participants:
@@ -354,8 +397,6 @@ def scrape_courses(date_obj=None):
 
             logger.info(f"  💾 {filepath} ({len(reunion_output['courses'])} courses)")
             files_saved += 1
-        else:
-            logger.info(f"  ⚠️  Aucune course valide pour {hippodrome_nom}")
 
     logger.info(f"\n{'='*60}")
     logger.info(f"📊 RÉSUMÉ - {date_iso}")
@@ -364,10 +405,6 @@ def scrape_courses(date_obj=None):
 
     return files_saved > 0
 
-
-# ============================================================
-# Point d'entrée
-# ============================================================
 
 if __name__ == "__main__":
     date_obj = datetime.now()
@@ -386,7 +423,7 @@ if __name__ == "__main__":
                 logger.error(f"❌ Format invalide: {arg} (utiliser YYYY-MM-DD)")
                 sys.exit(1)
 
-    logger.info("🚀 Scraper Courses Hippiques - API PMU (rétrocompatible)")
+    logger.info("🚀 Scraper PMU - Version DEBUG")
     logger.info(f"📅 Date: {date_obj.strftime('%Y-%m-%d')}")
     logger.info("")
 
