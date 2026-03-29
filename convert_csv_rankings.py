@@ -2,13 +2,13 @@
 """
 Convertit les CSV de classements France Galop en JSON.
 
-Workflow:
-1. Télécharger les CSV depuis france-galop.com (bouton ".csv")
-2. Les mettre dans data/raw_csv/ (nommer: chevaux.csv, jockeys.csv, etc.)
-3. Lancer ce script
+IMPORTANT: Ajoute des alias de champs pour la compatibilité avec les scripts JS
+(extract-pondered-rankings.js, generate-rankings) qui attendent des noms spécifiques.
 
-Le script produit les mêmes fichiers data/{categorie}.json
-que l'ancien scraper Selenium.
+Mapping CSV France Galop → champs JS:
+  chevaux:  Cheval→LibelleCheval, Courses→NbCourses, Victoires→NbVictoires, Places→NbPlace
+  autres:   Nom→NomPostal, Partants→Partants, Places→Place
+  tous:     position → Rang
 
 Usage:
     python convert_csv_rankings.py              # Tous les CSV trouvés
@@ -29,7 +29,6 @@ logger = logging.getLogger(__name__)
 RAW_CSV_DIR = "data/raw_csv"
 DATA_DIR = "data"
 
-# Catégories et leurs URLs sources
 CATEGORIES = {
     "chevaux": "https://www.france-galop.com/fr/hommes-chevaux/chevaux",
     "jockeys": "https://www.france-galop.com/fr/hommes-chevaux/jockeys",
@@ -38,9 +37,39 @@ CATEGORIES = {
     "eleveurs": "https://www.france-galop.com/fr/hommes-chevaux/eleveurs",
 }
 
+# Alias de champs pour compatibilité avec les scripts JS
+# Format: { catégorie: { champ_csv: champ_alias_js } }
+FIELD_ALIASES = {
+    "chevaux": {
+        "Cheval": "LibelleCheval",
+        "Courses": "NbCourses",
+        "Victoires": "NbVictoires",
+        "Places": "NbPlace",
+    },
+    "jockeys": {
+        "Nom": "NomPostal",
+        "Partants": "Partants",
+        "Places": "Place",
+    },
+    "entraineurs": {
+        "Nom": "NomPostal",
+        "Partants": "Partants",
+        "Places": "Place",
+    },
+    "proprietaires": {
+        "Nom": "NomPostal",
+        "Partants": "Partants",
+        "Places": "Place",
+    },
+    "eleveurs": {
+        "Nom": "NomPostal",
+        "Partants": "Partants",
+        "Places": "Place",
+    },
+}
+
 
 def detect_encoding(filepath):
-    """Détecte l'encoding du fichier CSV."""
     encodings = ['utf-8-sig', 'utf-8', 'latin-1', 'cp1252', 'iso-8859-1']
     for enc in encodings:
         try:
@@ -53,20 +82,24 @@ def detect_encoding(filepath):
 
 
 def detect_delimiter(filepath, encoding):
-    """Détecte le délimiteur du CSV."""
     with open(filepath, 'r', encoding=encoding) as f:
         first_line = f.readline()
     
-    for delim in [';', ',', '\t', '|']:
-        if delim in first_line:
-            count = first_line.count(delim)
-            if count >= 2:  # Au moins 3 colonnes
-                return delim
-    return ';'  # France Galop utilise généralement ';'
+    # Compter les occurrences de chaque délimiteur possible
+    candidates = [
+        ('\t', first_line.count('\t')),
+        (';', first_line.count(';')),
+        (',', first_line.count(',')),
+        ('|', first_line.count('|')),
+    ]
+    # Prendre celui avec le plus d'occurrences (min 2)
+    candidates.sort(key=lambda x: x[1], reverse=True)
+    if candidates[0][1] >= 2:
+        return candidates[0][0]
+    return ';'
 
 
 def clean_value(val):
-    """Nettoie une valeur CSV."""
     if val is None:
         return ""
     val = val.strip().strip('"').strip()
@@ -76,19 +109,17 @@ def clean_value(val):
 
 
 def to_number(val):
-    """Convertit en nombre si possible."""
     val = clean_value(val)
     if not val:
         return val
     
-    # Retirer les espaces dans les nombres (ex: "1 234 567")
     clean = val.replace('\xa0', '').replace(' ', '')
     
-    # Gestion virgule vs point décimal
+    # Virgule décimale française (ex: "597039,00")
     if ',' in clean and '.' not in clean:
         clean = clean.replace(',', '.')
     elif ',' in clean and '.' in clean:
-        clean = clean.replace(',', '')  # 1,234.56 format
+        clean = clean.replace(',', '')
     
     try:
         if '.' in clean:
@@ -101,30 +132,27 @@ def to_number(val):
 
 
 def convert_csv_to_json(csv_path, category):
-    """Convertit un fichier CSV en structure JSON."""
     logger.info(f"\n{'='*50}")
     logger.info(f"📊 Conversion: {category.upper()}")
     logger.info(f"📄 Fichier: {csv_path}")
     
     encoding = detect_encoding(csv_path)
     delimiter = detect_delimiter(csv_path, encoding)
-    logger.info(f"   Encoding: {encoding}, Délimiteur: '{delimiter}'")
+    logger.info(f"   Encoding: {encoding}, Délimiteur: {'TAB' if delimiter == chr(9) else repr(delimiter)}")
     
     results = []
     headers = []
+    aliases = FIELD_ALIASES.get(category, {})
     
     with open(csv_path, 'r', encoding=encoding, newline='') as f:
         reader = csv.reader(f, delimiter=delimiter)
         
         # Lire les en-têtes
         for row in reader:
-            # Ignorer les lignes vides ou de commentaire
             if not row or all(not cell.strip() for cell in row):
                 continue
-            
-            # Première ligne non-vide = en-têtes
             headers = [clean_value(h) for h in row]
-            logger.info(f"   En-têtes: {headers}")
+            logger.info(f"   En-têtes CSV: {headers}")
             break
         
         if not headers:
@@ -139,11 +167,17 @@ def convert_csv_to_json(csv_path, category):
                 financial_cols.add(i)
         
         # Lire les données
+        row_num = 0
         for row in reader:
             if not row or all(not cell.strip() for cell in row):
                 continue
             
+            row_num += 1
             row_data = {}
+            
+            # Ajouter le Rang (= position dans le CSV)
+            row_data["Rang"] = row_num
+            
             for i, cell in enumerate(row):
                 if i >= len(headers):
                     continue
@@ -160,14 +194,43 @@ def convert_csv_to_json(csv_path, category):
                 elif re.match(r'^[\d\s.,]+$', value.replace('\xa0', '')):
                     value = to_number(value)
                 
+                # Stocker avec le nom d'en-tête original
                 row_data[header] = value
+                
+                # Ajouter les alias JS si nécessaire
+                if header in aliases:
+                    alias = aliases[header]
+                    if alias != header:  # Éviter les doublons
+                        row_data[alias] = value
+            
+            # Pour chevaux: copier aussi Cheval → Nom (utilisé par le JS)
+            if category == "chevaux":
+                if "Cheval" in row_data and "Nom" not in row_data:
+                    row_data["Nom"] = row_data["Cheval"]
             
             if row_data:
                 results.append(row_data)
     
     logger.info(f"✅ {len(results)} entrées converties")
     
-    # Construire le JSON de sortie
+    # Log les alias ajoutés
+    if aliases:
+        logger.info(f"   Alias JS ajoutés: {dict(aliases)}")
+    
+    # Vérifier les champs attendus par les scripts JS
+    if results:
+        sample = results[0]
+        if category == "chevaux":
+            expected = ["LibelleCheval", "NbCourses", "NbVictoires", "NbPlace", "Rang"]
+        else:
+            expected = ["NomPostal", "Partants", "Victoires", "Place", "Rang"]
+        
+        missing = [f for f in expected if f not in sample]
+        present = [f for f in expected if f in sample]
+        logger.info(f"   ✅ Champs JS présents: {present}")
+        if missing:
+            logger.warning(f"   ⚠️  Champs JS manquants: {missing}")
+    
     source_url = CATEGORIES.get(category, f"CSV upload: {category}")
     
     data = {
@@ -176,7 +239,8 @@ def convert_csv_to_json(csv_path, category):
             "date_extraction": datetime.now().isoformat(),
             "category": category,
             "nombre_resultats": len(results),
-            "methode": "csv_upload"
+            "methode": "csv_upload",
+            "field_aliases": aliases
         },
         "resultats": results
     }
@@ -185,7 +249,6 @@ def convert_csv_to_json(csv_path, category):
 
 
 def save_json(data, category):
-    """Sauvegarde en JSON."""
     os.makedirs(DATA_DIR, exist_ok=True)
     filepath = os.path.join(DATA_DIR, f"{category}.json")
     
@@ -196,7 +259,6 @@ def save_json(data, category):
 
 
 def find_csv_files(filter_categories=None):
-    """Trouve les fichiers CSV dans le dossier raw_csv."""
     if not os.path.exists(RAW_CSV_DIR):
         logger.error(f"❌ Dossier {RAW_CSV_DIR} introuvable")
         return {}
@@ -209,7 +271,12 @@ def find_csv_files(filter_categories=None):
         
         filepath = os.path.join(RAW_CSV_DIR, filename)
         
-        # Déterminer la catégorie depuis le nom du fichier
+        # Vérifier que le fichier n'est pas un template vide
+        file_size = os.path.getsize(filepath)
+        if file_size < 200:
+            logger.warning(f"⚠️  {filename} trop petit ({file_size} octets) — template vide?")
+            continue
+        
         name_lower = filename.lower().replace('.csv', '').replace('-', '_')
         
         category = None
@@ -219,11 +286,9 @@ def find_csv_files(filter_categories=None):
                 break
         
         if not category:
-            # Essayer le nom exact
             category = name_lower.split('_')[0] if '_' in name_lower else name_lower
             if category not in CATEGORIES:
                 logger.warning(f"⚠️  Impossible d'identifier la catégorie pour {filename}")
-                logger.info(f"   Noms attendus: {', '.join(CATEGORIES.keys())}")
                 continue
         
         if filter_categories and category not in filter_categories:
@@ -237,30 +302,22 @@ def find_csv_files(filter_categories=None):
 def main():
     logger.info("🚀 Convertisseur CSV → JSON (classements France Galop)")
     logger.info(f"📅 {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    logger.info(f"   Avec mapping de champs pour compatibilité JS")
     
-    # Filtre optionnel
     filter_cats = None
     if len(sys.argv) > 1:
         filter_cats = [c.strip() for c in sys.argv[1].split(',')]
         logger.info(f"🎯 Filtre: {filter_cats}")
     
-    # Trouver les CSV
     csv_files = find_csv_files(filter_cats)
     
     if not csv_files:
-        logger.warning(f"\n⚠️  Aucun fichier CSV trouvé dans {RAW_CSV_DIR}/")
-        logger.info(f"")
-        logger.info(f"Pour utiliser ce script:")
-        logger.info(f"1. Va sur france-galop.com/fr/hommes-chevaux/chevaux")
-        logger.info(f"2. Clique le bouton '.csv' pour télécharger")
-        logger.info(f"3. Mets le fichier dans {RAW_CSV_DIR}/chevaux.csv")
-        logger.info(f"4. Répète pour: jockeys, entraineurs, proprietaires, eleveurs")
-        logger.info(f"5. Relance: python convert_csv_rankings.py")
+        logger.warning(f"\n⚠️  Aucun fichier CSV valide dans {RAW_CSV_DIR}/")
+        logger.info(f"Mets les CSV France Galop dans {RAW_CSV_DIR}/")
         return False
     
     logger.info(f"\n📂 CSV trouvés: {', '.join(csv_files.keys())}")
     
-    # Convertir chaque CSV
     success_count = 0
     for category, filepath in csv_files.items():
         try:
@@ -275,7 +332,6 @@ def main():
             import traceback
             traceback.print_exc()
     
-    # Résumé
     logger.info(f"\n{'='*50}")
     logger.info(f"📊 RÉSUMÉ: {success_count}/{len(csv_files)} catégories converties")
     logger.info(f"✅ Terminé!")
