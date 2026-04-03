@@ -1,9 +1,5 @@
 name: Extraction des courses France Galop
-
 on:
-  schedule:
-    # Exécution quotidienne à 6h du matin (UTC) = 8h heure de Paris
-    - cron: '0 6 * * *'
   workflow_dispatch:
     inputs:
       date:
@@ -17,43 +13,43 @@ permissions:
 jobs:
   extract_courses:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      
+
       - name: Install dependencies
         run: |
           pip install requests
-      
+
       - name: Run extraction script
         run: |
           DATE_ARG="${{ github.event.inputs.date || 'today' }}"
           python scraper_courses_pmu.py ${DATE_ARG}
-      
+
       - name: Prepare directories for commit
         run: |
           mkdir -p data/courses
           touch data/courses/.gitkeep
-      
+
       - name: Commit and push changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          
+
           git stash -u || true
           git pull origin main --rebase
           git stash pop || true
-          
+
           git add data/courses/*.json
-          
+
           if git diff --cached --quiet; then
             echo "Aucun changement détecté"
           else
