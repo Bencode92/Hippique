@@ -94,11 +94,13 @@ function calculateCompositeRanking(data, category) {
   
   const victoryRateGetter = item => parseFloat(item.TauxVictoire || 0);
   const placeRateGetter = item => parseFloat(item.TauxPlace || 0);
-  
+  const gainMoyenGetter = item => parseFloat(item.GainMoyen || 0);
+
   // Calcul des rangs pour chaque métrique avec gestion des égalités DENSE
   const victoryRanks = rankWithTiesDense(dataCopy, victoryGetter, category);
   const victoryRateRanks = rankWithTiesDense(dataCopy, victoryRateGetter, category);
   const placeRateRanks = rankWithTiesDense(dataCopy, placeRateGetter, category);
+  const gainMoyenRanks = rankWithTiesDense(dataCopy, gainMoyenGetter, category);
   
   // Calcul du score pondéré pour chaque participant
   dataCopy.forEach(item => {
@@ -113,36 +115,39 @@ function calculateCompositeRanking(data, category) {
     const rangVictoires = victoryRanks.get(key) || 999;
     const rangTauxVictoire = victoryRateRanks.get(key) || 999;
     const rangTauxPlace = placeRateRanks.get(key) || 999;
-    
+    const rangGainMoyen = gainMoyenRanks.get(key) || 999;
+
     // Déterminer si l'élément a un taux de victoire parfait
-    const nbCourses = category === 'chevaux' ? 
-      parseInt(item.NbCourses || 0) : 
+    const nbCourses = category === 'chevaux' ?
+      parseInt(item.NbCourses || 0) :
       parseInt(item.Partants || 0);
-    const nbVictoires = category === 'chevaux' ? 
-      parseInt(item.NbVictoires || 0) : 
+    const nbVictoires = category === 'chevaux' ?
+      parseInt(item.NbVictoires || 0) :
       parseInt(item.Victoires || 0);
-    const nbPlaces = category === 'chevaux' ? 
-      parseInt(item.NbPlace || 0) : 
+    const nbPlaces = category === 'chevaux' ?
+      parseInt(item.NbPlace || 0) :
       parseInt(item.Place || 0);
-    
+
     const hasPerfectWinRate = nbCourses > 0 && nbVictoires === nbCourses && nbPlaces === 0;
-    
-    // Pondération adaptative
-    let poidsV = 0.5;  // Poids par défaut pour les victoires
-    let poidsTV = 0.3; // Poids par défaut pour le taux de victoire
-    let poidsTP = 0.2; // Poids par défaut pour le taux de place
-    
+
+    // Pondération adaptative avec gain moyen (niveau des courses)
+    let poidsV = 0.40;   // Poids pour les victoires
+    let poidsTV = 0.25;  // Poids pour le taux de victoire
+    let poidsTP = 0.15;  // Poids pour le taux de place
+    let poidsGM = 0.20;  // Poids pour le gain moyen (niveau de course)
+
     // Si taux de victoire parfait, redistribuer le poids du taux de place
     if (hasPerfectWinRate) {
       poidsV += poidsTP; // Redistribuer le poids du taux de place vers les victoires
       poidsTP = 0;       // Ignorer le taux de place
     }
-    
-    // Calcul du score pondéré avec rangs DENSES
+
+    // Calcul du score pondéré avec rangs DENSES (inclut le gain moyen)
     item.ScoreMixte = (
       poidsV * rangVictoires +
       poidsTV * rangTauxVictoire +
-      poidsTP * rangTauxPlace
+      poidsTP * rangTauxPlace +
+      poidsGM * rangGainMoyen
     ).toFixed(2);
   });
   
@@ -194,6 +199,11 @@ function preprocessData(data, category) {
       const tauxVictoire = nbCourses > 0 ? ((nbVictoires / nbCourses) * 100).toFixed(1) : "0.0";
       const tauxPlace = nbCourses > 0 ? ((nbPlace / nbCourses) * 100).toFixed(1) : "0.0";
       
+      // Récupérer le gain moyen par course (indicateur du niveau des courses)
+      const gainMoyen = parseFloat(
+        String(item['Gain moyen'] || 0).replace(/\s/g, '').replace(',', '.')
+      ) || 0;
+
       return {
         Nom: item.LibelleCheval || item.Nom || "Inconnu",
         LibelleCheval_url: item.LibelleCheval_url,
@@ -201,7 +211,8 @@ function preprocessData(data, category) {
         NbVictoires: nbVictoires,
         NbPlace: nbPlace,
         TauxVictoire: tauxVictoire,
-        TauxPlace: tauxPlace
+        TauxPlace: tauxPlace,
+        GainMoyen: gainMoyen
       };
     });
   } else {
@@ -215,13 +226,19 @@ function preprocessData(data, category) {
       const tauxVictoire = partants > 0 ? ((victoires / partants) * 100).toFixed(1) : "0.0";
       const tauxPlace = partants > 0 ? ((place / partants) * 100).toFixed(1) : "0.0";
       
+      // Récupérer le gain par partant (indicateur du niveau des courses)
+      const gainMoyen = parseFloat(
+        String(item['Gain/Part.'] || 0).replace(/\s/g, '').replace(',', '.')
+      ) || 0;
+
       return {
         ...item,
         Partants: partants,
         Victoires: victoires,
         Place: place,
         TauxVictoire: tauxVictoire,
-        TauxPlace: tauxPlace
+        TauxPlace: tauxPlace,
+        GainMoyen: gainMoyen
       };
     });
   }
