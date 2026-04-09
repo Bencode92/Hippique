@@ -148,21 +148,24 @@ POSITION_WEIGHTS: {
     "last":   { cheval: 0.57, jockey: 0.13, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 }
 },
 
-// 5) Impact du poids porté : inchangé (vous pouvez tester ±0.025 si handicaps lourds)
+// 5) Impact du poids porté — recalibré expert
+// Dans un handicap, 1kg = ~1 longueur sur 2400m. La différence entre 54kg et 62kg est ÉNORME
+// heavy_minus = cheval léger (avantage), heavy_plus = cheval lourd (désavantage)
 WEIGHT_ADJUSTMENTS: {
-    "heavy_minus": { adjustment: 0.02 },
-    "light_minus": { adjustment: 0.01 },
-    "neutral":     { adjustment: 0.00 },
-    "light_plus":  { adjustment: -0.01 },
-    "heavy_plus":  { adjustment: -0.02 },
+    "heavy_minus": { adjustment: 0.06 },   // -3kg+ sous la moyenne = gros avantage
+    "light_minus": { adjustment: 0.03 },   // -1 à -2kg
+    "neutral":     { adjustment: 0.00 },   // ±0.5kg
+    "light_plus":  { adjustment: -0.03 },  // +1 à +2kg
+    "heavy_plus":  { adjustment: -0.06 },  // +3kg+ au-dessus = gros handicap
 },
 
-// 6) Amplification de l’impact du poids selon la distance : inchangé
+// 6) Amplification de l’impact du poids selon la distance
+// Plus la course est longue, plus le poids pèse (fatigue accumulée)
 WEIGHT_DISTANCE_MULTIPLIERS: {
-    "sprint": 0.7,
-    "mile":   1.0,
-    "middle": 1.0,
-    "staying":1.3
+    "sprint": 0.5,    // Sprint : le poids compte moins (course courte)
+    "mile":   1.0,    // Mile : impact standard
+    "middle": 1.3,    // Intermédiaire : le poids commence à peser
+    "staying": 1.8    // Staying : le poids est CRITIQUE (fatigue sur la durée)
 },
 
     // Fonctions helper pour déterminer les buckets
@@ -191,17 +194,17 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         return "middle";
     },
     
-    // NOUVEAU: Fonction pour déterminer la catégorie de poids
+    // Catégorie de poids — seuils ajustés (1.5kg = significatif en course)
     getWeightBucket: function(weight, averageWeight) {
         if (!weight || !averageWeight) return "neutral";
-        
+
         const diff = weight - averageWeight;
-        
-        if (diff <= -2) return "heavy_minus";
-        if (diff <= -1) return "light_minus";
-        if (diff >= 2) return "heavy_plus";
-        if (diff >= 1) return "light_plus";
-        return "neutral";
+
+        if (diff <= -2.5) return "heavy_minus";   // 2.5kg+ sous la moyenne
+        if (diff <= -1) return "light_minus";      // 1-2.5kg sous
+        if (diff >= 2.5) return "heavy_plus";      // 2.5kg+ au-dessus
+        if (diff >= 1) return "light_plus";        // 1-2.5kg au-dessus
+        return "neutral";                          // ±1kg
     },
     
     // NOUVEAU: Fonction pour calculer le poids moyen du peloton

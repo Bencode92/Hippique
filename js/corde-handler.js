@@ -11,59 +11,57 @@ if (typeof window.rankingLoader === 'undefined') {
 
 // Ajouter les méthodes de gestion des cordes
 window.rankingLoader.cordeHandler = {
-    // Poids d'impact de la corde par type de distance
-    // L'impact de la corde est plus important dans les sprints que sur les longues distances
+    // Impact de la corde par distance — recalibré expert hippique
+    // Sprint : la corde est CRUCIALE (parcours court, pas le temps de se replacer)
+    // Staying : quasi négligeable (plusieurs virages, le jockey se replace)
     CORDE_IMPACT: {
-        "sprint": 0.08,     // Impact fort pour les sprints (<1400m)
-        "mile": 0.05,       // Impact moyen pour le mile (1400-1900m)
-        "middle": 0.03,     // Impact faible pour moyenne distance (1900-2400m)
-        "staying": 0.01     // Impact très faible pour longue distance (>2400m)
+        "sprint": 1.0,      // Impact MAXIMUM en sprint (<1400m)
+        "mile": 0.6,        // Impact fort pour le mile (1400-1900m)
+        "middle": 0.3,      // Impact modéré pour moyenne distance (1900-2400m)
+        "staying": 0.1      // Impact quasi nul pour longue distance (>2400m)
     },
 
-    // Avantage des cordes en fonction du type de parcours (général)
-    // Pour la plupart des hippodromes, les cordes basses (1-3) sont avantageuses
+    // Avantage des cordes — calibré pour donner ±8 pts en sprint, ±0.8 pts en staying
     CORDE_ADVANTAGE: {
         "default": {
-            // Format: numéro de corde => modificateur de score
-            1: +3.0,  // Forte influence positive pour corde 1
-            2: +2.0,  // Influence positive pour corde 2
-            3: +1.0,  // Légère influence positive pour corde 3
-            4: 0,     // Neutre
-            5: 0,
-            6: -0.5,  // Légère influence négative
-            7: -0.5,
-            8: -1.0,  // Influence négative 
-            9: -1.0,
-            // Plus la corde est haute, plus c'est désavantageux
-            10: -1.5,
-            11: -1.5,
-            12: -2.0,
-            13: -2.0,
-            14: -2.5,
-            15: -2.5,
-            16: -3.0,
-            17: -3.0,
-            18: -3.0,
-            19: -3.0,
-            20: -3.0
-        },
-        // Configurations spécifiques pour certains hippodromes
-        // À remplir au besoin avec des données précises
-        "PARISLONGCHAMP": {
-            // Légèrement différent du schéma par défaut
-            1: +3.5,  // Plus avantageux
-            2: +2.5,
-            3: +1.5,
-            4: +0.5,
-            5: 0,
-            6: -0.5,
+            1: +8.0,   // Corde au rail = parcours le plus court
+            2: +6.0,   // Très bon
+            3: +4.0,   // Bon
+            4: +2.0,   // Léger avantage
+            5: +1.0,
+            6: 0,      // Neutre
             7: -1.0,
-            8: -1.5,
-            9: -2.0,
-            10: -2.5,
-            11: -3.0,
-            12: -3.0,
-            // etc.
+            8: -2.0,
+            9: -3.0,
+            10: -4.0,
+            11: -5.0,
+            12: -6.0,  // À partir de 12 c'est un vrai handicap
+            13: -6.5,
+            14: -7.0,
+            15: -7.5,
+            16: -8.0,
+            17: -8.0,
+            18: -8.0,
+            19: -8.0,
+            20: -8.0
+        },
+        // Longchamp : virage serré, corde encore plus importante
+        "PARISLONGCHAMP": {
+            1: +10.0, 2: +7.0, 3: +5.0, 4: +3.0, 5: +1.0,
+            6: 0, 7: -1.0, 8: -3.0, 9: -4.0, 10: -6.0,
+            11: -7.0, 12: -8.0, 13: -9.0, 14: -10.0
+        },
+        // Chantilly ligne droite 1000m : corde quasi sans impact (pas de virage)
+        "CHANTILLY": {
+            1: +1.0, 2: +0.5, 3: 0, 4: 0, 5: 0,
+            6: 0, 7: 0, 8: -0.5, 9: -0.5, 10: -1.0,
+            11: -1.0, 12: -1.0, 13: -1.0, 14: -1.0
+        },
+        // Deauville : piste large, corde moins importante
+        "DEAUVILLE": {
+            1: +5.0, 2: +3.0, 3: +2.0, 4: +1.0, 5: 0,
+            6: 0, 7: -1.0, 8: -2.0, 9: -3.0, 10: -4.0,
+            11: -5.0, 12: -5.0, 13: -5.0, 14: -5.0
         }
     },
 
