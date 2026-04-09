@@ -55,8 +55,14 @@ jobs:
       # Étape 4 : Calculer les combos jockey × entraîneur
       - name: Calculer les combos jockey x entraineur
         run: |
-          echo "=== ÉTAPE 4/4 : Combos jockey × entraîneur ==="
+          echo "=== ÉTAPE 4/5 : Combos jockey × entraîneur ==="
           node build-combo-stats.js
+
+      # Étape 5 : Forme stable + intervalle courses
+      - name: Calculer forme stable et intervalle
+        run: |
+          echo "=== ÉTAPE 5/5 : Forme stable + intervalle ==="
+          node build-stable-form.js
 
       # Validation des fichiers générés
       - name: Valider les fichiers générés
@@ -94,6 +100,8 @@ jobs:
           git add data/*_distance_stats.json 2>/dev/null || true
           git add data/*_forme_recente.json 2>/dev/null || true
           git add data/combo_jockey_entraineur.json 2>/dev/null || true
+          git add data/stable_form.json 2>/dev/null || true
+          git add data/intervalle_courses.json 2>/dev/null || true
 
           git status
 

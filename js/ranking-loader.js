@@ -30,6 +30,10 @@ const rankingLoader = {
     // Cache des combos jockey × entraîneur
     comboStats: null,
 
+    // Cache forme stable entraîneur + intervalle courses cheval
+    stableForm: null,
+    intervalleCourses: null,
+
     // Cache des données historiques (année précédente) pour enrichir le scoring
     dataHistorique: {
         chevaux_2025: null,
@@ -663,10 +667,33 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             this.loadDistanceStats(),
             this.loadFormeRecente(),
             this.loadClaudeCorrespondances(),
-            this.loadComboStats()
+            this.loadComboStats(),
+            this.loadStableFormAndIntervalle()
         ];
 
         return Promise.all(promises);
+    },
+
+    // Charger forme stable + intervalle courses
+    async loadStableFormAndIntervalle() {
+        const baseUrl = 'https://raw.githubusercontent.com/Bencode92/Hippique/main/data/';
+        try {
+            const [r1, r2] = await Promise.all([
+                fetch(baseUrl + 'stable_form.json'),
+                fetch(baseUrl + 'intervalle_courses.json')
+            ]);
+            if (r1.ok) {
+                this.stableForm = (await r1.json()).resultats || {};
+                console.log(`✅ Forme stable: ${Object.keys(this.stableForm).length} entraîneurs`);
+            }
+            if (r2.ok) {
+                this.intervalleCourses = (await r2.json()).resultats || {};
+                console.log(`✅ Intervalle courses: ${Object.keys(this.intervalleCourses).length} chevaux`);
+            }
+        } catch (err) {
+            this.stableForm = {};
+            this.intervalleCourses = {};
+        }
     },
 
     // Charger les stats combos jockey × entraîneur
@@ -2374,6 +2401,56 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             }
         }
 
+        // NOUVEAU: Forme stable de l'écurie (entraîneur)
+        const entraineurName = (participant.entraineur || participant['entraîneur'] || '').toUpperCase().trim();
+        let stableBonus = 0;
+        if (this.stableForm && entraineurName) {
+            // Chercher avec matching par initiale aussi
+            let sf = this.stableForm[entraineurName];
+            if (!sf) {
+                const cleaned = entraineurName.replace(/^[A-Z]{1,3}\.?\s*/, '').replace(/\s*\([A-Z]\)\s*$/, '').trim();
+                for (const [k, v] of Object.entries(this.stableForm)) {
+                    if (k.includes(cleaned) || cleaned.includes(k.replace(/^[A-Z]{1,3}\.?\s*/, '').replace(/\s*\([A-Z]\)\s*$/, '').trim())) {
+                        sf = v; break;
+                    }
+                }
+            }
+            if (sf) {
+                // Forme stable 0-100 → bonus ±8 pts
+                stableBonus = (sf.formeStable - 50) * 0.16;
+                stableBonus = Math.max(-8, Math.min(8, stableBonus));
+                scoreEntraineur = Math.max(0, Math.min(maxScore, scoreEntraineur + stableBonus));
+                if (Math.abs(stableBonus) > 1) {
+                    console.log(`  🏠 Écurie ${entraineurName}: ${sf.victoires30j}V/${sf.courses30j}c (${sf.tauxVictoire30j}%) → bonus ${stableBonus > 0 ? '+' : ''}${stableBonus.toFixed(1)} pts`);
+                }
+            }
+        }
+
+        // NOUVEAU: Intervalle entre courses du cheval
+        const nomChevalIntervalle = this.extraireNomBaseCheval(participant.cheval);
+        let intervalleBonus = 0;
+        let intervalleInfo = null;
+        if (this.intervalleCourses && nomChevalIntervalle) {
+            const ic = this.intervalleCourses[nomChevalIntervalle.toUpperCase()];
+            if (ic) {
+                intervalleInfo = ic;
+                // Bonus selon la catégorie d'intervalle
+                const bonusMap = {
+                    'tres_frais': -6,      // <7j : trop serré, cheval fatigué
+                    'frais': -2,           // 7-14j : un peu juste
+                    'ideal': +4,           // 15-25j : intervalle parfait
+                    'repos': +1,           // 25-45j : ok
+                    'long_repos': -3,      // 45-90j : manque de compétition
+                    'tres_long_repos': -6  // >90j : rouille, forme inconnue
+                };
+                intervalleBonus = bonusMap[ic.categorie] || 0;
+                scoreCheval = Math.max(0, Math.min(maxScore, scoreCheval + intervalleBonus));
+                if (Math.abs(intervalleBonus) > 1) {
+                    console.log(`  ⏱️ Intervalle ${nomChevalIntervalle}: ${ic.joursDepuis}j (${ic.categorie}) → ${intervalleBonus > 0 ? '+' : ''}${intervalleBonus} pts`);
+                }
+            }
+        }
+
         // NOUVEAU: Ajustement par spécialisation distance
         // Un jockey/cheval/entraîneur qui performe mieux à cette distance reçoit un bonus
         const distanceBucket = courseContext ? this.getDistanceBucket(courseContext.distance) : null;
@@ -2463,7 +2540,9 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
                     rang: rangJockey || "NC",
                     score: scoreJockey.toFixed(1),
                     cravacheOr: rangCravacheOr ? { rang: rangCravacheOr, bonus: cravacheOrBonus.toFixed(1) } : null,
-                    combo: comboData ? { courses: comboData.courses, tauxVictoire: comboData.tauxVictoire, bonus: comboBonus.toFixed(1) } : null
+                    combo: comboData ? { courses: comboData.courses, tauxVictoire: comboData.tauxVictoire, bonus: comboBonus.toFixed(1) } : null,
+                    stableForm: stableBonus !== 0 ? { bonus: stableBonus.toFixed(1) } : null,
+                    intervalle: intervalleInfo ? { jours: intervalleInfo.joursDepuis, categorie: intervalleInfo.categorie, bonus: intervalleBonus } : null
                 },
                 entraineur: {
                     rang: rangEntraineur || "NC",
