@@ -17,6 +17,13 @@ const rankingLoader = {
         eleveurs: null,
         proprietaires: null
     },
+
+    // Cache des stats par distance (taux victoire/place par bucket de distance)
+    distanceStats: {
+        chevaux: null,
+        jockeys: null,
+        entraineurs: null
+    },
     
     // Cache des correspondances découvertes pour améliorer les performances
     correspondancesDecouvertes: {},
@@ -621,10 +628,70 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             this.loadCategoryData('jockeys'),
             this.loadCategoryData('entraineurs'),
             this.loadCategoryData('eleveurs'),
-            this.loadCategoryData('proprietaires')
+            this.loadCategoryData('proprietaires'),
+            this.loadDistanceStats()
         ];
-        
+
         return Promise.all(promises);
+    },
+
+    // Charger les stats par distance (taux victoire/place par bucket)
+    async loadDistanceStats() {
+        const categories = ['chevaux', 'jockeys', 'entraineurs'];
+        const baseUrl = 'https://raw.githubusercontent.com/Bencode92/Hippique/main/data/';
+
+        for (const cat of categories) {
+            if (this.distanceStats[cat]) continue; // Déjà chargé
+
+            try {
+                const url = `${baseUrl}${cat}_distance_stats.json`;
+                const response = await fetch(url);
+                if (response.ok) {
+                    const data = await response.json();
+                    this.distanceStats[cat] = data.resultats || {};
+                    console.log(`✅ Stats distance chargées pour ${cat}: ${Object.keys(this.distanceStats[cat]).length} entrées`);
+                } else {
+                    console.warn(`⚠️ Stats distance non trouvées pour ${cat}`);
+                    this.distanceStats[cat] = {};
+                }
+            } catch (err) {
+                console.warn(`⚠️ Erreur chargement stats distance ${cat}:`, err.message);
+                this.distanceStats[cat] = {};
+            }
+        }
+    },
+
+    // Récupérer le bonus/malus distance pour un acteur
+    getDistanceBonus(category, name, distanceBucket) {
+        if (!name || !this.distanceStats[category]) return null;
+
+        const nameUpper = name.toUpperCase().trim();
+        const stats = this.distanceStats[category][nameUpper];
+        if (!stats) return null;
+
+        // Mapper les buckets (ranking-loader utilise "middle", build-distance-stats utilise "intermediaire")
+        const bucketMap = { 'sprint': 'sprint', 'mile': 'mile', 'middle': 'intermediaire', 'staying': 'staying' };
+        const mappedBucket = bucketMap[distanceBucket] || distanceBucket;
+
+        const bucketStats = stats[mappedBucket];
+        if (!bucketStats || bucketStats.courses < 2) return null; // Minimum 2 courses pour être significatif
+
+        const globalStats = stats.global;
+        if (!globalStats || globalStats.courses < 3) return null;
+
+        // Calculer le delta : taux victoire à cette distance vs taux global
+        const tauxDistVictoire = bucketStats.tauxVictoire;
+        const tauxGlobalVictoire = globalStats.tauxVictoire;
+        const delta = tauxDistVictoire - tauxGlobalVictoire;
+
+        return {
+            tauxVictoireDistance: tauxDistVictoire,
+            tauxVictoireGlobal: tauxGlobalVictoire,
+            tauxPlaceDistance: bucketStats.tauxPlace,
+            coursesDistance: bucketStats.courses,
+            delta: delta, // positif = meilleur à cette distance, négatif = moins bon
+            label: bucketStats.label
+        };
     },
     
     // Nouvelle fonction pour extraire le nom de base d'un cheval
@@ -1931,11 +1998,45 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         }
         
         // Inverser les rangs pour obtenir des scores
-        const scoreCheval = rangCheval ? Math.max(0, maxRang - rangCheval) : valeurNC;
-        const scoreJockey = rangJockey ? Math.max(0, maxRang - rangJockey) : valeurNC;
-        const scoreEntraineur = rangEntraineur ? Math.max(0, maxRang - rangEntraineur) : valeurNC;
+        let scoreCheval = rangCheval ? Math.max(0, maxRang - rangCheval) : valeurNC;
+        let scoreJockey = rangJockey ? Math.max(0, maxRang - rangJockey) : valeurNC;
+        let scoreEntraineur = rangEntraineur ? Math.max(0, maxRang - rangEntraineur) : valeurNC;
         const scoreEleveur = rangEleveur ? Math.max(0, maxRang - rangEleveur) : valeurNC;
         const scoreProprio = rangProprio ? Math.max(0, maxRang - rangProprio) : valeurNC;
+
+        // NOUVEAU: Ajustement par spécialisation distance
+        // Un jockey/cheval/entraîneur qui performe mieux à cette distance reçoit un bonus
+        const distanceBucket = courseContext ? this.getDistanceBucket(courseContext.distance) : null;
+        let distanceDetails = {};
+
+        if (distanceBucket) {
+            const nomChevalBase = this.extraireNomBaseCheval(participant.cheval);
+            const bonusCheval = this.getDistanceBonus('chevaux', nomChevalBase, distanceBucket);
+            const bonusJockey = this.getDistanceBonus('jockeys', participant.jockey, distanceBucket);
+            const bonusEntraineur = this.getDistanceBonus('entraineurs', participant.entraineur || participant['entraîneur'], distanceBucket);
+
+            // Appliquer le bonus/malus (max ±15 points sur 100)
+            const applyBonus = (score, bonus, label) => {
+                if (!bonus) return score;
+                // delta = différence taux victoire distance vs global
+                // Clamp à ±15 points, proportionnel au delta
+                const ajustement = Math.max(-15, Math.min(15, bonus.delta * 0.5));
+                const newScore = Math.max(0, Math.min(maxRang, score + ajustement));
+                console.log(`  📊 Distance ${bonus.label} - ${label}: taux ${bonus.tauxVictoireDistance}% vs global ${bonus.tauxVictoireGlobal}% (delta ${bonus.delta > 0 ? '+' : ''}${bonus.delta.toFixed(1)}%) → ajustement ${ajustement > 0 ? '+' : ''}${ajustement.toFixed(1)} pts`);
+                return newScore;
+            };
+
+            scoreCheval = applyBonus(scoreCheval, bonusCheval, 'cheval');
+            scoreJockey = applyBonus(scoreJockey, bonusJockey, 'jockey');
+            scoreEntraineur = applyBonus(scoreEntraineur, bonusEntraineur, 'entraîneur');
+
+            distanceDetails = {
+                bucket: distanceBucket,
+                cheval: bonusCheval,
+                jockey: bonusJockey,
+                entraineur: bonusEntraineur
+            };
+        }
         
         // AMÉLIORATION: Ajuster l'indice de confiance selon l'importance des éléments manquants
         let indiceConfianceAjuste = indiceConfiance;
@@ -1984,7 +2085,8 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
                 poids_porte: {
                     valeur: (participant.poids || "NC"),
                     score: poidsPorteScore.toFixed(1)
-                }
+                },
+                distance: distanceDetails
             }
         };
     },
