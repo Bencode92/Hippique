@@ -99,27 +99,31 @@ const rankingLoader = {
 TYPE_WEIGHTS: {
     // Plat herbe
     "plat":     { cheval: 0.50, jockey: 0.18, entraineur: 0.15, eleveur: 0.11, proprietaire: 0.06 },
-    // Obstacles
-    "obstacle": { cheval: 0.40, jockey: 0.30, entraineur: 0.17, eleveur: 0.08, proprietaire: 0.05 },
-    // Sable / PSF (optionnel ; laissez-le ou retirez-le selon vos datasets)
-    "aw":       { cheval: 0.47, jockey: 0.20, entraineur: 0.17, eleveur: 0.10, proprietaire: 0.06 },
+    // Obstacles – jockey crucial (gestion rythme + sauts + placement tactique)
+    "obstacle": { cheval: 0.35, jockey: 0.32, entraineur: 0.18, eleveur: 0.08, proprietaire: 0.07 },
+    // Sable / PSF – terrain spécifique, entraîneur plus important (préparation spéciale)
+    "aw":       { cheval: 0.45, jockey: 0.20, entraineur: 0.19, eleveur: 0.10, proprietaire: 0.06 },
     // Valeur de secours
     "default":  { cheval: 0.50, jockey: 0.18, entraineur: 0.15, eleveur: 0.11, proprietaire: 0.06 }
 },
 
-// 2) Poids par distance (mètres réels : sprint < 1400 ; staying > 2400)
+// 2) Poids par distance – recalibré expert hippique
+// Sprint : vitesse brute du cheval domine, jockey = départ + positionnement
+// Staying : course stratégique, le jockey gère le rythme et le timing d'effort
 DIST_WEIGHTS: {
-    "sprint":  { cheval: 0.45, jockey: 0.25, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
+    "sprint":  { cheval: 0.55, jockey: 0.15, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
     "mile":    { cheval: 0.50, jockey: 0.20, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
-    "middle":  { cheval: 0.55, jockey: 0.15, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
-    "staying": { cheval: 0.58, jockey: 0.12, entraineur: 0.13, eleveur: 0.10, proprietaire: 0.07 }
+    "middle":  { cheval: 0.48, jockey: 0.22, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
+    "staying": { cheval: 0.42, jockey: 0.28, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 }
 },
 
-// 3) Taille du peloton : inchangé
+// 3) Taille du peloton – recalibré
+// Grand peloton = plus tactique, jockey gère le trafic et le placement
+// Petit peloton = moins d'aléas, qualité brute du cheval prédomine
 FIELD_SIZE_WEIGHTS: {
-    "small":  { cheval: 0.50, jockey: 0.20, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
-    "medium": { cheval: 0.55, jockey: 0.15, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
-    "large":  { cheval: 0.60, jockey: 0.10, entraineur: 0.10, eleveur: 0.12, proprietaire: 0.08 }
+    "small":  { cheval: 0.55, jockey: 0.15, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
+    "medium": { cheval: 0.50, jockey: 0.20, entraineur: 0.13, eleveur: 0.10, proprietaire: 0.07 },
+    "large":  { cheval: 0.45, jockey: 0.25, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 }
 },
 
 // 4) Position dans la réunion : inchangé
