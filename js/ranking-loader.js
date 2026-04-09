@@ -24,6 +24,13 @@ const rankingLoader = {
         jockeys: null,
         entraineurs: null
     },
+
+    // Cache des indices de forme récente (decay temporel)
+    formeRecente: {
+        chevaux: null,
+        jockeys: null,
+        entraineurs: null
+    },
     
     // Cache des correspondances découvertes pour améliorer les performances
     correspondancesDecouvertes: {},
@@ -629,7 +636,8 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             this.loadCategoryData('entraineurs'),
             this.loadCategoryData('eleveurs'),
             this.loadCategoryData('proprietaires'),
-            this.loadDistanceStats()
+            this.loadDistanceStats(),
+            this.loadFormeRecente()
         ];
 
         return Promise.all(promises);
@@ -694,6 +702,71 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         };
     },
     
+    // Charger les indices de forme récente
+    async loadFormeRecente() {
+        const categories = ['chevaux', 'jockeys', 'entraineurs'];
+        const baseUrl = 'https://raw.githubusercontent.com/Bencode92/Hippique/main/data/';
+
+        for (const cat of categories) {
+            if (this.formeRecente[cat]) continue;
+
+            try {
+                const url = `${baseUrl}${cat}_forme_recente.json`;
+                const response = await fetch(url);
+                if (response.ok) {
+                    const data = await response.json();
+                    this.formeRecente[cat] = data.resultats || {};
+                    console.log(`✅ Forme récente chargée pour ${cat}: ${Object.keys(this.formeRecente[cat]).length} entrées`);
+                } else {
+                    console.warn(`⚠️ Forme récente non trouvée pour ${cat}`);
+                    this.formeRecente[cat] = {};
+                }
+            } catch (err) {
+                console.warn(`⚠️ Erreur chargement forme récente ${cat}:`, err.message);
+                this.formeRecente[cat] = {};
+            }
+        }
+    },
+
+    // Récupérer l'indice de forme récente pour un acteur
+    getFormeRecente(category, name) {
+        if (!name || !this.formeRecente[category]) return null;
+
+        const nameUpper = name.toUpperCase().trim();
+        const forme = this.formeRecente[category][nameUpper];
+        if (!forme) return null;
+
+        return {
+            score: forme.formeScore,           // 0-100, score pondéré par temps
+            tendance: forme.tendance,           // forte_hausse, hausse, stable, baisse, forte_baisse
+            regularite: forme.regularite,       // 0-100, régularité des performances
+            victoiresRecentes: forme.victoiresRecentes,
+            derniereCourse: forme.derniereCourse,
+            dernieres5: forme.dernieres5
+        };
+    },
+
+    // Calculer le bonus/malus de forme récente (échelle -20 à +20 points)
+    computeFormeBonus(formeData) {
+        if (!formeData) return 0;
+
+        // Score de forme centré sur 50 (neutre), plafonné à ±20 pts
+        let bonus = (formeData.score - 50) * 0.4; // Max théorique ±20
+
+        // Bonus supplémentaire pour tendance
+        const tendanceBonus = {
+            'forte_hausse': 5,
+            'hausse': 2,
+            'stable': 0,
+            'baisse': -2,
+            'forte_baisse': -5
+        };
+        bonus += tendanceBonus[formeData.tendance] || 0;
+
+        // Plafonner à ±20
+        return Math.max(-20, Math.min(20, bonus));
+    },
+
     // Nouvelle fonction pour extraire le nom de base d'un cheval
     extraireNomBaseCheval(nom) {
         if (!nom) return "";
@@ -2037,6 +2110,29 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
                 entraineur: bonusEntraineur
             };
         }
+
+        // NOUVEAU: Ajustement par forme récente (decay temporel)
+        const nomChevalForme = this.extraireNomBaseCheval(participant.cheval);
+        const formeChevalData = this.getFormeRecente('chevaux', nomChevalForme);
+        const formeJockeyData = this.getFormeRecente('jockeys', participant.jockey);
+        const formeEntraineurData = this.getFormeRecente('entraineurs', participant.entraineur || participant['entraîneur']);
+
+        const formeBonusCheval = this.computeFormeBonus(formeChevalData);
+        const formeBonusJockey = this.computeFormeBonus(formeJockeyData);
+        const formeBonusEntraineur = this.computeFormeBonus(formeEntraineurData);
+
+        // Appliquer le bonus forme (poids : cheval 70%, jockey 20%, entraîneur 10%)
+        const formeBonusTotal = formeBonusCheval * 0.7 + formeBonusJockey * 0.2 + formeBonusEntraineur * 0.1;
+        scoreCheval = Math.max(0, Math.min(maxRang, scoreCheval + formeBonusCheval));
+        scoreJockey = Math.max(0, Math.min(maxRang, scoreJockey + formeBonusJockey));
+        scoreEntraineur = Math.max(0, Math.min(maxRang, scoreEntraineur + formeBonusEntraineur));
+
+        if (formeChevalData) {
+            console.log(`  🔥 Forme ${nomChevalForme}: ${formeChevalData.score}/100 (${formeChevalData.tendance}) → bonus ${formeBonusCheval > 0 ? '+' : ''}${formeBonusCheval.toFixed(1)} pts`);
+        }
+        if (formeJockeyData) {
+            console.log(`  🔥 Forme jockey ${participant.jockey}: ${formeJockeyData.score}/100 (${formeJockeyData.tendance}) → bonus ${formeBonusJockey > 0 ? '+' : ''}${formeBonusJockey.toFixed(1)} pts`);
+        }
         
         // AMÉLIORATION: Ajuster l'indice de confiance selon l'importance des éléments manquants
         let indiceConfianceAjuste = indiceConfiance;
@@ -2086,7 +2182,25 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
                     valeur: (participant.poids || "NC"),
                     score: poidsPorteScore.toFixed(1)
                 },
-                distance: distanceDetails
+                distance: distanceDetails,
+                forme: {
+                    cheval: formeChevalData ? {
+                        score: formeChevalData.score,
+                        tendance: formeChevalData.tendance,
+                        bonus: formeBonusCheval.toFixed(1),
+                        dernieres5: formeChevalData.dernieres5
+                    } : null,
+                    jockey: formeJockeyData ? {
+                        score: formeJockeyData.score,
+                        tendance: formeJockeyData.tendance,
+                        bonus: formeBonusJockey.toFixed(1)
+                    } : null,
+                    entraineur: formeEntraineurData ? {
+                        score: formeEntraineurData.score,
+                        tendance: formeEntraineurData.tendance,
+                        bonus: formeBonusEntraineur.toFixed(1)
+                    } : null
+                }
             }
         };
     },
