@@ -36,5 +36,43 @@
         "proprietaire": 0.07
       }
     }
+  },
+  {
+    "date": "2026-04-09T22:52:37.855Z",
+    "reportsUsed": 31,
+    "totalCourses": 576,
+    "globalWinRate": 57.8,
+    "globalTop3Rate": 90.6,
+    "adjustments": [],
+    "newWeights": {
+      "sprint": {
+        "cheval": 0.55,
+        "jockey": 0.15,
+        "entraineur": 0.15,
+        "eleveur": 0.08,
+        "proprietaire": 0.07
+      },
+      "mile": {
+        "cheval": 0.5,
+        "jockey": 0.2,
+        "entraineur": 0.15,
+        "eleveur": 0.08,
+        "proprietaire": 0.07
+      },
+      "middle": {
+        "cheval": 0.48,
+        "jockey": 0.22,
+        "entraineur": 0.15,
+        "eleveur": 0.08,
+        "proprietaire": 0.07
+      },
+      "staying": {
+        "cheval": 0.42,
+        "jockey": 0.28,
+        "entraineur": 0.15,
+        "eleveur": 0.08,
+        "proprietaire": 0.07
+      }
+    }
   }
 ]
