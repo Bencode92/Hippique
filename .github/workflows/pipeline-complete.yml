@@ -49,8 +49,14 @@ jobs:
       # Étape 3 : Calculer la forme récente
       - name: Calculer la forme récente
         run: |
-          echo "=== ÉTAPE 3/3 : Forme récente ==="
+          echo "=== ÉTAPE 3/4 : Forme récente ==="
           node build-recent-form.js
+
+      # Étape 4 : Calculer les combos jockey × entraîneur
+      - name: Calculer les combos jockey x entraineur
+        run: |
+          echo "=== ÉTAPE 4/4 : Combos jockey × entraîneur ==="
+          node build-combo-stats.js
 
       # Validation des fichiers générés
       - name: Valider les fichiers générés
@@ -87,6 +93,7 @@ jobs:
           git add data/*_ponderated_latest.json 2>/dev/null || true
           git add data/*_distance_stats.json 2>/dev/null || true
           git add data/*_forme_recente.json 2>/dev/null || true
+          git add data/combo_jockey_entraineur.json 2>/dev/null || true
 
           git status
 

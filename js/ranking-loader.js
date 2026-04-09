@@ -27,6 +27,9 @@ const rankingLoader = {
         entraineurs: null
     },
 
+    // Cache des combos jockey × entraîneur
+    comboStats: null,
+
     // Cache des données historiques (année précédente) pour enrichir le scoring
     dataHistorique: {
         chevaux_2025: null,
@@ -656,10 +659,63 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             this.loadHistoricalData(),
             this.loadDistanceStats(),
             this.loadFormeRecente(),
-            this.loadClaudeCorrespondances()
+            this.loadClaudeCorrespondances(),
+            this.loadComboStats()
         ];
 
         return Promise.all(promises);
+    },
+
+    // Charger les stats combos jockey × entraîneur
+    async loadComboStats() {
+        try {
+            const url = 'https://raw.githubusercontent.com/Bencode92/Hippique/main/data/combo_jockey_entraineur.json';
+            const response = await fetch(url);
+            if (response.ok) {
+                const data = await response.json();
+                this.comboStats = data.resultats || {};
+                console.log(`✅ Combos jockey×entraîneur chargés: ${Object.keys(this.comboStats).length} combos`);
+            }
+        } catch (err) {
+            this.comboStats = {};
+        }
+    },
+
+    // Récupérer le bonus combo jockey × entraîneur
+    getComboBonus(jockeyName, entraineurName) {
+        if (!this.comboStats || !jockeyName || !entraineurName) return null;
+
+        const jUp = jockeyName.toUpperCase().trim();
+        const eUp = entraineurName.toUpperCase().trim();
+
+        // Chercher le combo exact d'abord
+        let combo = this.comboStats[`${jUp}|||${eUp}`];
+
+        // Si pas trouvé, essayer avec matching par initiale pour le jockey
+        if (!combo) {
+            for (const [key, val] of Object.entries(this.comboStats)) {
+                const [cj, ce] = key.split('|||');
+                // Matcher le jockey par nom de famille
+                const jFam = jUp.replace(/^[A-Z]{1,3}\.?\s*/, '').trim();
+                const cjFam = cj.replace(/^[A-Z]{1,3}\.?\s*/, '').trim();
+                if (jFam.length >= 3 && cjFam.length >= 3 &&
+                    (cj.endsWith(jFam) || jFam.endsWith(cjFam)) &&
+                    ce === eUp) {
+                    combo = val;
+                    break;
+                }
+            }
+        }
+
+        if (!combo || combo.courses < 3) return null;
+
+        return {
+            courses: combo.courses,
+            victoires: combo.victoires,
+            tauxVictoire: combo.tauxVictoire,
+            tauxPlace: combo.tauxPlace,
+            byDistance: combo.byDistance
+        };
     },
 
     // Charger les correspondances découvertes par Claude (fuzzy matching IA)
@@ -2297,6 +2353,24 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             console.log(`  🏆 Cravache d'or: rang #${rangCravacheOr} → bonus +${cravacheOrBonus.toFixed(1)} pts jockey`);
         }
 
+        // NOUVEAU: Bonus combo jockey × entraîneur
+        const comboData = this.getComboBonus(
+            participant.jockey,
+            participant.entraineur || participant['entraîneur']
+        );
+        let comboBonus = 0;
+        if (comboData && comboData.courses >= 5) {
+            // Un duo avec 30%+ de victoires ensemble = bonus significatif
+            // Comparer au taux moyen attendu (~10%)
+            const delta = comboData.tauxVictoire - 10;
+            comboBonus = Math.max(-10, Math.min(15, delta * 0.4));
+            scoreJockey = Math.max(0, Math.min(maxScore, scoreJockey + comboBonus * 0.5));
+            scoreEntraineur = Math.max(0, Math.min(maxScore, scoreEntraineur + comboBonus * 0.5));
+            if (Math.abs(comboBonus) > 1) {
+                console.log(`  🤝 Combo ${participant.jockey} × ${participant.entraineur}: ${comboData.courses}c, ${comboData.tauxVictoire}% vict → bonus ${comboBonus > 0 ? '+' : ''}${comboBonus.toFixed(1)} pts`);
+            }
+        }
+
         // NOUVEAU: Ajustement par spécialisation distance
         // Un jockey/cheval/entraîneur qui performe mieux à cette distance reçoit un bonus
         const distanceBucket = courseContext ? this.getDistanceBucket(courseContext.distance) : null;
@@ -2385,7 +2459,8 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
                 jockey: {
                     rang: rangJockey || "NC",
                     score: scoreJockey.toFixed(1),
-                    cravacheOr: rangCravacheOr ? { rang: rangCravacheOr, bonus: cravacheOrBonus.toFixed(1) } : null
+                    cravacheOr: rangCravacheOr ? { rang: rangCravacheOr, bonus: cravacheOrBonus.toFixed(1) } : null,
+                    combo: comboData ? { courses: comboData.courses, tauxVictoire: comboData.tauxVictoire, bonus: comboBonus.toFixed(1) } : null
                 },
                 entraineur: {
                     rang: rangEntraineur || "NC",
