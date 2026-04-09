@@ -6,7 +6,7 @@ const path = require('path');
 
 // URL du proxy Cloudflare (utilisé depuis le navigateur)
 // En mode Node.js, utilise directement l'API Anthropic avec la clé
-const PROXY_URL = process.env.PROXY_URL || 'https://structboard-proxy.bfrmusic92.workers.dev';
+const PROXY_URL = process.env.PROXY_URL || 'https://studyforge-proxy.benoit-comas.workers.dev';
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY || null;
 const DATA_DIR = './data';
 const MATCHER_FILE = './data/claude_correspondances.json';
