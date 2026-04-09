@@ -1,0 +1,49 @@
+name: Claude Matcher - Résolution IA des noms
+
+on:
+  # Après le pipeline complet (nouvelles courses = nouveaux noms à matcher)
+  workflow_run:
+    workflows: ["Pipeline Complet - Extraction → Rankings → Stats → Forme"]
+    types: [completed]
+  # Manuel aussi
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  match:
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Lancer Claude Matcher
+        run: node claude-matcher.js run
+        env:
+          PROXY_URL: https://studyforge-proxy.benoit-comas.workers.dev
+
+      - name: Commit résultats
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action - Claude Matcher"
+
+          git add data/claude_correspondances.json 2>/dev/null || true
+
+          if git diff --cached --quiet; then
+            echo "Pas de nouvelles correspondances"
+          else
+            git commit -m "🤖 Claude Matcher - nouvelles correspondances $(date +%Y-%m-%d)"
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
