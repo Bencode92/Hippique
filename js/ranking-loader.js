@@ -858,16 +858,15 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
     // Nouvelle fonction pour extraire le nom de base d'un cheval
     extraireNomBaseCheval(nom) {
         if (!nom) return "";
-        
+
         // Supprimer les suffixes H.PS, F.PS, M.PS avec leur âge
-        const regex = /^(.+?)(?:\s+[HFM]\.?P\.?S\.?\s+\d+\s*a\.?.*)?$/i;
-        const match = nom.match(regex);
-        
-        if (match) {
-            return match[1].trim();
-        }
-        
-        return nom;
+        let cleaned = nom.replace(/\s+[HFM]\.?P\.?[US]?\.?\s+\d+\s*a\.?.*/i, '').trim();
+
+        // Supprimer les suffixes de pays : (IRE), (GB), (GER), (FR), (USA), IRE, GB, GER
+        cleaned = cleaned.replace(/\s*\((IRE|GB|GER|FR|USA|ITY|JPN|AUS|NZ|BRZ|ARG|CAN|SAF|SPA|SWE|DEN|NOR|HOL|BEL|CZE|HUN|POL|TUR|CHI|URU|PER)\)\s*$/i, '').trim();
+        cleaned = cleaned.replace(/\s+(IRE|GB|GER|FR|USA|ITY|JPN|AUS)\s*$/i, '').trim();
+
+        return cleaned || nom;
     },
     
     // Fonction pour nettoyer les noms tronqués avec "..."
@@ -1867,11 +1866,16 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
 
             // Nettoyer les noms de société : STE ENTR., SARL, SAS, S.C.E.A., etc.
             noms = noms.map(n => {
-                return n.replace(/\b(STE|SOCIETE|SOCIÉTÉ)\s*(ENTR\.?|D'ENTRAINEMENT)?\s*/gi, '')
-                        .replace(/S\.?A\.?R\.?L\.?\s*/gi, '')
-                        .replace(/S\.?C\.?E\.?A\.?\s*/gi, '')
-                        .replace(/S\.?A\.?S\.?\s*/gi, '')
-                        .replace(/\b(SNC|EARL|GAEC|GIE|BVBA|HOLDING|LTD)\b/gi, '')
+                return n.replace(/\b(SOCIETE|SOCIÉTÉ)\s*(ENTR\.?|D'ENTRAINEMENT)?\s*/gi, '')
+                        .replace(/\bSTE[\s.]+(?:ENTR\.?\s*)?/gi, '')
+                        .replace(/\bS\.A\.R\.L\.?\s*/g, '')
+                        .replace(/\bSARL\b/gi, '')
+                        .replace(/\bS\.C\.E\.A\.?\s*/g, '')
+                        .replace(/\bSCEA\b/gi, '')
+                        .replace(/\bE\.A\.R\.L\.?\s*/g, '')
+                        .replace(/\bEARL\b/gi, '')
+                        .replace(/(?:^|\s)SAS(?:\s|$)/gi, ' ')
+                        .replace(/\b(SNC|GAEC|GIE|BVBA|HOLDING|LTD)\b/gi, '')
                         .replace(/\bHARAS\s+(DU|DE|DES|D')\s*/gi, 'HARAS ')
                         .replace(/\s*\(S\)\s*/g, '')
                         .replace(/\s+/g, ' ')
@@ -1957,11 +1961,16 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
 
             // Nettoyer les noms de société : STE ENTR., SARL, SAS, S.C.E.A., etc.
             noms = noms.map(n => {
-                return n.replace(/\b(STE|SOCIETE|SOCIÉTÉ)\s*(ENTR\.?|D'ENTRAINEMENT)?\s*/gi, '')
-                        .replace(/S\.?A\.?R\.?L\.?\s*/gi, '')
-                        .replace(/S\.?C\.?E\.?A\.?\s*/gi, '')
-                        .replace(/S\.?A\.?S\.?\s*/gi, '')
-                        .replace(/\b(SNC|EARL|GAEC|GIE|BVBA|HOLDING|LTD)\b/gi, '')
+                return n.replace(/\b(SOCIETE|SOCIÉTÉ)\s*(ENTR\.?|D'ENTRAINEMENT)?\s*/gi, '')
+                        .replace(/\bSTE[\s.]+(?:ENTR\.?\s*)?/gi, '')
+                        .replace(/\bS\.A\.R\.L\.?\s*/g, '')
+                        .replace(/\bSARL\b/gi, '')
+                        .replace(/\bS\.C\.E\.A\.?\s*/g, '')
+                        .replace(/\bSCEA\b/gi, '')
+                        .replace(/\bE\.A\.R\.L\.?\s*/g, '')
+                        .replace(/\bEARL\b/gi, '')
+                        .replace(/(?:^|\s)SAS(?:\s|$)/gi, ' ')
+                        .replace(/\b(SNC|GAEC|GIE|BVBA|HOLDING|LTD)\b/gi, '')
                         .replace(/\bHARAS\s+(DU|DE|DES|D')\s*/gi, 'HARAS ')
                         .replace(/\s*\(S\)\s*/g, '')
                         .replace(/\s+/g, ' ')
