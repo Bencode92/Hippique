@@ -2451,6 +2451,57 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             }
         }
 
+        // NOUVEAU: Stats individuelles du participant (nb_courses, nb_victoires, gains)
+        // Ces données viennent directement de la course PMU, pas du classement
+        const nbCoursesIndiv = parseInt(participant.nb_courses) || 0;
+        const nbVictoiresIndiv = parseInt(participant.nb_victoires) || 0;
+        const nbPlacesIndiv = parseInt(participant.nb_places) || 0;
+        const gainsIndiv = parseInt(participant.gains) || 0;
+        let statsIndivBonus = 0;
+
+        if (nbCoursesIndiv >= 3) {
+            const tauxVIndiv = nbVictoiresIndiv / nbCoursesIndiv;
+            const tauxPIndiv = nbPlacesIndiv / nbCoursesIndiv;
+            const gainParCourse = gainsIndiv / nbCoursesIndiv;
+
+            // 1. Taux de victoire individuel (médiane = 8.4%, P90 = 22%)
+            // Un cheval à 20%+ de victoires = très bon → bonus
+            // Un cheval à 0% = jamais gagné → malus
+            const bonusTauxV = (tauxVIndiv - 0.084) * 40; // Centré sur la médiane
+            statsIndivBonus += Math.max(-8, Math.min(8, bonusTauxV));
+
+            // 2. Taux de place (médiane = 45.7%, P90 = 82%)
+            // Un cheval qui place souvent = régulier → bonus modéré
+            const bonusTauxP = (tauxPIndiv - 0.457) * 15;
+            statsIndivBonus += Math.max(-4, Math.min(4, bonusTauxP));
+
+            // 3. Gain par course (indicateur du niveau de course disputé)
+            // Médiane = 242500 centimes = 2425€/course
+            // P90 = 38M centimes = 386K€/course (gros chevaux Groupe)
+            if (gainParCourse > 5000000) {        // >50K€/course = cheval de Groupe
+                statsIndivBonus += 6;
+            } else if (gainParCourse > 1000000) {  // >10K€/course = bon niveau
+                statsIndivBonus += 3;
+            } else if (gainParCourse > 300000) {   // >3K€/course = correct
+                statsIndivBonus += 1;
+            } else if (gainParCourse < 100000) {   // <1K€/course = petit niveau
+                statsIndivBonus -= 3;
+            }
+
+            // 4. Expérience (nb courses) — bonus léger pour les chevaux expérimentés
+            if (nbCoursesIndiv >= 30) statsIndivBonus += 2;  // Routier
+            else if (nbCoursesIndiv >= 15) statsIndivBonus += 1;
+            else if (nbCoursesIndiv <= 3) statsIndivBonus -= 2;  // Débutant = incertain
+
+            // Appliquer au score cheval (plafonné ±15 pts)
+            statsIndivBonus = Math.max(-15, Math.min(15, statsIndivBonus));
+            scoreCheval = Math.max(0, Math.min(maxScore, scoreCheval + statsIndivBonus));
+
+            if (Math.abs(statsIndivBonus) > 2) {
+                console.log(`  📈 Stats indiv ${participant.cheval}: ${nbVictoiresIndiv}V/${nbCoursesIndiv}c (${(tauxVIndiv*100).toFixed(1)}%), ${nbPlacesIndiv}P (${(tauxPIndiv*100).toFixed(1)}%), gains ${(gainsIndiv/100).toFixed(0)}€ → ${statsIndivBonus > 0 ? '+' : ''}${statsIndivBonus.toFixed(1)} pts`);
+            }
+        }
+
         // NOUVEAU: Ajustement par spécialisation distance
         // Un jockey/cheval/entraîneur qui performe mieux à cette distance reçoit un bonus
         const distanceBucket = courseContext ? this.getDistanceBucket(courseContext.distance) : null;
@@ -2542,7 +2593,16 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
                     cravacheOr: rangCravacheOr ? { rang: rangCravacheOr, bonus: cravacheOrBonus.toFixed(1) } : null,
                     combo: comboData ? { courses: comboData.courses, tauxVictoire: comboData.tauxVictoire, bonus: comboBonus.toFixed(1) } : null,
                     stableForm: stableBonus !== 0 ? { bonus: stableBonus.toFixed(1) } : null,
-                    intervalle: intervalleInfo ? { jours: intervalleInfo.joursDepuis, categorie: intervalleInfo.categorie, bonus: intervalleBonus } : null
+                    intervalle: intervalleInfo ? { jours: intervalleInfo.joursDepuis, categorie: intervalleInfo.categorie, bonus: intervalleBonus } : null,
+                    statsIndiv: nbCoursesIndiv >= 3 ? {
+                        nbCourses: nbCoursesIndiv,
+                        nbVictoires: nbVictoiresIndiv,
+                        tauxVictoire: +(nbVictoiresIndiv / nbCoursesIndiv * 100).toFixed(1),
+                        nbPlaces: nbPlacesIndiv,
+                        tauxPlace: +(nbPlacesIndiv / nbCoursesIndiv * 100).toFixed(1),
+                        gains: Math.round(gainsIndiv / 100),
+                        bonus: statsIndivBonus.toFixed(1)
+                    } : null
                 },
                 entraineur: {
                     rang: rangEntraineur || "NC",
