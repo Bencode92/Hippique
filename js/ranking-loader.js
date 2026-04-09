@@ -27,6 +27,16 @@ const rankingLoader = {
         entraineurs: null
     },
 
+    // Cache des données historiques (année précédente) pour enrichir le scoring
+    dataHistorique: {
+        chevaux_2025: null,
+        jockeys_2025: null,
+        entraineurs_2025: null,
+        eleveurs_2025: null,
+        proprietaires_2025: null,
+        cravache_or_2025: null
+    },
+
     // Cache des indices de forme récente (decay temporel)
     formeRecente: {
         chevaux: null,
@@ -643,6 +653,7 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             this.loadCategoryData('eleveurs'),
             this.loadCategoryData('proprietaires'),
             this.loadCategoryData('cravache_or'),
+            this.loadHistoricalData(),
             this.loadDistanceStats(),
             this.loadFormeRecente()
         ];
@@ -651,6 +662,48 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
     },
 
     // Charger les stats par distance (taux victoire/place par bucket)
+    // Charger les données historiques (2025) pour les catégories qui en ont
+    async loadHistoricalData() {
+        const categories = ['chevaux', 'jockeys', 'entraineurs', 'eleveurs', 'proprietaires', 'cravache_or'];
+        const baseUrl = 'https://raw.githubusercontent.com/Bencode92/Hippique/main/data/';
+
+        for (const cat of categories) {
+            const key = `${cat}_2025`;
+            if (this.dataHistorique[key]) continue;
+
+            try {
+                // Essayer le fichier pondéré d'abord, puis le brut
+                let url = `${baseUrl}${key}_ponderated_latest.json`;
+                let response = await fetch(url);
+
+                if (!response.ok) {
+                    url = `${baseUrl}${key}.json`;
+                    response = await fetch(url);
+                }
+
+                if (response.ok) {
+                    const data = await response.json();
+                    this.dataHistorique[key] = data.resultats || [];
+                    console.log(`✅ Données 2025 chargées pour ${cat}: ${this.dataHistorique[key].length} entrées`);
+                } else {
+                    this.dataHistorique[key] = [];
+                }
+            } catch (err) {
+                this.dataHistorique[key] = [];
+            }
+        }
+    },
+
+    // Récupérer le rang 2025 d'un acteur (pour bonus historique)
+    getHistoricalRang(category, name) {
+        const key = `${category}_2025`;
+        const data = this.dataHistorique[key];
+        if (!data || !data.length || !name) return null;
+
+        const item = this.trouverItemDansClassement(data, name, category);
+        return item ? parseInt(item.Rang) : null;
+    },
+
     async loadDistanceStats() {
         const categories = ['chevaux', 'jockeys', 'entraineurs'];
         const baseUrl = 'https://raw.githubusercontent.com/Bencode92/Hippique/main/data/';
@@ -2087,6 +2140,28 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         let scoreEntraineur = rangEntraineur ? Math.max(0, maxRang - rangEntraineur) : valeurNC;
         const scoreEleveur = rangEleveur ? Math.max(0, maxRang - rangEleveur) : valeurNC;
         const scoreProprio = rangProprio ? Math.max(0, maxRang - rangProprio) : valeurNC;
+
+        // NOUVEAU: Bonus historique 2025 — confirme la qualité sur une année complète
+        // Poids léger (max ±10 pts) car 2026 prime, mais donne de la profondeur
+        const applyHistoricalBonus = (currentScore, category, name) => {
+            const rang2025 = this.getHistoricalRang(category, name);
+            if (!rang2025) return currentScore;
+
+            // Score historique : rang bas (bon) = bonus, rang haut = rien
+            const score2025 = Math.max(0, maxRang - rang2025);
+            // Différence entre score actuel et historique, plafonné à ±10
+            const delta = (score2025 - currentScore) * 0.3; // 30% de l'écart
+            const bonus = Math.max(-10, Math.min(10, delta));
+
+            if (Math.abs(bonus) > 1) {
+                console.log(`  📜 Historique 2025 ${category}: rang #${rang2025} → ajustement ${bonus > 0 ? '+' : ''}${bonus.toFixed(1)} pts`);
+            }
+            return Math.max(0, Math.min(maxRang, currentScore + bonus));
+        };
+
+        scoreCheval = applyHistoricalBonus(scoreCheval, 'chevaux', this.extraireNomBaseCheval(participant.cheval));
+        scoreJockey = applyHistoricalBonus(scoreJockey, 'jockeys', participant.jockey);
+        scoreEntraineur = applyHistoricalBonus(scoreEntraineur, 'entraineurs', participant.entraineur || participant['entraîneur']);
 
         // NOUVEAU: Bonus Cravache d'or pour le jockey
         // Un jockey classé dans la Cravache d'or reçoit un bonus proportionnel à son rang

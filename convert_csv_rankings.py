@@ -29,6 +29,10 @@ logger = logging.getLogger(__name__)
 RAW_CSV_DIR = "data/raw_csv"
 DATA_DIR = "data"
 
+# Support multi-années : les fichiers CSV peuvent être nommés
+# categorie.csv (année courante) ou categorie_2025.csv (année spécifique)
+# Exemples : entraineurs.csv, entraineurs_2025.csv, cravache_or.csv, cravache_or_2025.csv
+
 CATEGORIES = {
     "chevaux": "https://www.france-galop.com/fr/hommes-chevaux/chevaux",
     "jockeys": "https://www.france-galop.com/fr/hommes-chevaux/jockeys",
@@ -270,40 +274,47 @@ def find_csv_files(filter_categories=None):
     if not os.path.exists(RAW_CSV_DIR):
         logger.error(f"❌ Dossier {RAW_CSV_DIR} introuvable")
         return {}
-    
+
     found = {}
-    
-    for filename in os.listdir(RAW_CSV_DIR):
+
+    for filename in sorted(os.listdir(RAW_CSV_DIR)):
         if not filename.lower().endswith('.csv'):
             continue
-        
+
         filepath = os.path.join(RAW_CSV_DIR, filename)
-        
+
         # Vérifier que le fichier n'est pas un template vide
         file_size = os.path.getsize(filepath)
         if file_size < 200:
             logger.warning(f"⚠️  {filename} trop petit ({file_size} octets) — template vide?")
             continue
-        
+
         name_lower = filename.lower().replace('.csv', '').replace('-', '_')
-        
+
+        # Détecter l'année dans le nom du fichier (ex: entraineurs_2025.csv)
+        year_match = re.search(r'_(\d{4})$', name_lower)
+        year_suffix = f"_{year_match.group(1)}" if year_match else ""
+        name_without_year = re.sub(r'_\d{4}$', '', name_lower)
+
         category = None
         for cat in CATEGORIES:
-            if cat in name_lower:
+            if cat in name_without_year:
                 category = cat
                 break
-        
+
         if not category:
-            category = name_lower.split('_')[0] if '_' in name_lower else name_lower
+            category = name_without_year.split('_')[0] if '_' in name_without_year else name_without_year
             if category not in CATEGORIES:
                 logger.warning(f"⚠️  Impossible d'identifier la catégorie pour {filename}")
                 continue
-        
+
         if filter_categories and category not in filter_categories:
             continue
-        
-        found[category] = filepath
-    
+
+        # Clé de sortie : categorie ou categorie_2025
+        output_key = f"{category}{year_suffix}"
+        found[output_key] = (filepath, category, year_match.group(1) if year_match else None)
+
     return found
 
 
@@ -325,18 +336,22 @@ def main():
         return False
     
     logger.info(f"\n📂 CSV trouvés: {', '.join(csv_files.keys())}")
-    
+
     success_count = 0
-    for category, filepath in csv_files.items():
+    for output_key, (filepath, category, year) in csv_files.items():
         try:
             data = convert_csv_to_json(filepath, category)
             if data and data['resultats']:
-                save_json(data, category)
+                # Mettre à jour l'année dans les metadata
+                if year:
+                    data['metadata']['annee'] = int(year)
+                    logger.info(f"   📅 Année: {year}")
+                save_json(data, output_key)
                 success_count += 1
             else:
                 logger.warning(f"⚠️  Aucune donnée valide dans {filepath}")
         except Exception as e:
-            logger.error(f"❌ Erreur pour {category}: {e}")
+            logger.error(f"❌ Erreur pour {output_key}: {e}")
             import traceback
             traceback.print_exc()
     

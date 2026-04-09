@@ -6,13 +6,21 @@ const https = require('https');
 // Configuration
 const GITHUB_BASE_URL = 'https://raw.githubusercontent.com/bencode92/Hippique/main/';
 const OUTPUT_DIR = './data';
+// Catégories à traiter — inclut 2025 si les fichiers existent
 const CATEGORIES = [
   { id: 'jockeys', file: 'data/jockeys.json' },
   { id: 'chevaux', file: 'data/chevaux.json' },
   { id: 'entraineurs', file: 'data/entraineurs.json' },
   { id: 'eleveurs', file: 'data/eleveurs.json' },
   { id: 'proprietaires', file: 'data/proprietaires.json' },
-  { id: 'cravache_or', file: 'data/cravache_or.json' }
+  { id: 'cravache_or', file: 'data/cravache_or.json' },
+  // Données historiques 2025 (année complète = stats plus fiables)
+  { id: 'jockeys_2025', file: 'data/jockeys_2025.json' },
+  { id: 'chevaux_2025', file: 'data/chevaux_2025.json' },
+  { id: 'entraineurs_2025', file: 'data/entraineurs_2025.json' },
+  { id: 'eleveurs_2025', file: 'data/eleveurs_2025.json' },
+  { id: 'proprietaires_2025', file: 'data/proprietaires_2025.json' },
+  { id: 'cravache_or_2025', file: 'data/cravache_or_2025.json' }
 ];
 
 // Télécharger un fichier JSON depuis GitHub
@@ -82,14 +90,17 @@ function rankWithTiesDense(items, valueGetter, category) {
 // Calculer le classement pondéré pour les données d'une catégorie
 function calculateCompositeRanking(data, category) {
   if (!data || !data.length) return data;
-  
+
+  // Normaliser la catégorie (chevaux_2025 → chevaux pour le traitement)
+  const baseCategory = category.replace(/_\d{4}$/, '');
+
   // Cloner les données pour ne pas modifier les originales
   const dataCopy = JSON.parse(JSON.stringify(data));
-  
+
   // Fonctions d'accès aux différentes métriques selon la catégorie
   const victoryGetter = item => {
-    return category === 'chevaux' ? 
-      parseInt(item.NbVictoires || 0) : 
+    return baseCategory === 'chevaux' ?
+      parseInt(item.NbVictoires || 0) :
       parseInt(item.Victoires || 0);
   };
   
@@ -98,14 +109,14 @@ function calculateCompositeRanking(data, category) {
   const gainMoyenGetter = item => parseFloat(item.GainMoyen || 0);
 
   // Calcul des rangs pour chaque métrique avec gestion des égalités DENSE
-  const victoryRanks = rankWithTiesDense(dataCopy, victoryGetter, category);
-  const victoryRateRanks = rankWithTiesDense(dataCopy, victoryRateGetter, category);
-  const placeRateRanks = rankWithTiesDense(dataCopy, placeRateGetter, category);
-  const gainMoyenRanks = rankWithTiesDense(dataCopy, gainMoyenGetter, category);
-  
+  const victoryRanks = rankWithTiesDense(dataCopy, victoryGetter, baseCategory);
+  const victoryRateRanks = rankWithTiesDense(dataCopy, victoryRateGetter, baseCategory);
+  const placeRateRanks = rankWithTiesDense(dataCopy, placeRateGetter, baseCategory);
+  const gainMoyenRanks = rankWithTiesDense(dataCopy, gainMoyenGetter, baseCategory);
+
   // Calcul du score pondéré pour chaque participant
   dataCopy.forEach(item => {
-    const key = category === 'chevaux' ? item.Nom : item.NomPostal;
+    const key = baseCategory === 'chevaux' ? item.Nom : item.NomPostal;
     
     if (!key) {
       item.ScoreMixte = 999; // Valeur par défaut pour les items mal formés
@@ -119,13 +130,13 @@ function calculateCompositeRanking(data, category) {
     const rangGainMoyen = gainMoyenRanks.get(key) || 999;
 
     // Déterminer si l'élément a un taux de victoire parfait
-    const nbCourses = category === 'chevaux' ?
+    const nbCourses = baseCategory === 'chevaux' ?
       parseInt(item.NbCourses || 0) :
       parseInt(item.Partants || 0);
-    const nbVictoires = category === 'chevaux' ?
+    const nbVictoires = baseCategory === 'chevaux' ?
       parseInt(item.NbVictoires || 0) :
       parseInt(item.Victoires || 0);
-    const nbPlaces = category === 'chevaux' ?
+    const nbPlaces = baseCategory === 'chevaux' ?
       parseInt(item.NbPlace || 0) :
       parseInt(item.Place || 0);
 
@@ -158,8 +169,8 @@ function calculateCompositeRanking(data, category) {
     if (diff !== 0) return diff;
     
     // Départage par nom en cas d'égalité
-    const nameA = category === 'chevaux' ? a.Nom : a.NomPostal;
-    const nameB = category === 'chevaux' ? b.Nom : b.NomPostal;
+    const nameA = baseCategory === 'chevaux' ? a.Nom : a.NomPostal;
+    const nameB = baseCategory === 'chevaux' ? b.Nom : b.NomPostal;
     return nameA.localeCompare(nameB);
   });
   
@@ -188,9 +199,12 @@ function preprocessData(data, category) {
     console.error(`Données invalides pour ${category}: pas de resultats ou pas un tableau`);
     return [];
   }
-  
+
+  // Normaliser la catégorie (chevaux_2025 → chevaux pour le traitement)
+  const baseCategory = category.replace(/_\d{4}$/, '');
+
   // Pour les chevaux, structure différente
-  if (category === 'chevaux') {
+  if (baseCategory === 'chevaux') {
     return data.resultats.map(item => {
       const nbCourses = parseInt(item.NbCourses || 0);
       const nbVictoires = parseInt(item.NbVictoires || 0);
