@@ -6,7 +6,8 @@ const rankingLoader = {
         jockeys: null,
         entraineurs: null,
         eleveurs: null,
-        proprietaires: null
+        proprietaires: null,
+        cravache_or: null
     },
     
     // Cache des statistiques pour la normalisation
@@ -15,7 +16,8 @@ const rankingLoader = {
         jockeys: null,
         entraineurs: null,
         eleveurs: null,
-        proprietaires: null
+        proprietaires: null,
+        cravache_or: null
     },
 
     // Cache des stats par distance (taux victoire/place par bucket de distance)
@@ -640,6 +642,7 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             this.loadCategoryData('entraineurs'),
             this.loadCategoryData('eleveurs'),
             this.loadCategoryData('proprietaires'),
+            this.loadCategoryData('cravache_or'),
             this.loadDistanceStats(),
             this.loadFormeRecente()
         ];
@@ -1956,13 +1959,17 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         const itemEleveur = this.trouverItemDansClassement(this.data.eleveurs, eleveurValue, 'eleveurs');
         const itemProprio = this.trouverItemDansClassement(this.data.proprietaires, proprioValue, 'proprietaires');
         
+        // Chercher aussi le rang Cravache d'or pour le jockey
+        const itemCravacheOr = this.trouverItemDansClassement(this.data.cravache_or, participant.jockey, 'cravache_or');
+
         // Récupérer les rangs pour le calcul de score
         const rangCheval = itemCheval ? parseInt(itemCheval.Rang) : null;
         const rangJockey = itemJockey ? parseInt(itemJockey.Rang) : null;
+        const rangCravacheOr = itemCravacheOr ? parseInt(itemCravacheOr.Rang) : null;
         const rangEntraineur = itemEntraineur ? parseInt(itemEntraineur.Rang) : null;
         const rangEleveur = itemEleveur ? parseInt(itemEleveur.Rang) : null;
         const rangProprio = itemProprio ? parseInt(itemProprio.Rang) : null;
-        
+
         // Si on a trouvé un cheval dans le classement, ajouter automatiquement à la table de correspondance
         if (itemCheval && participant.cheval) {
             this.ajouterCorrespondanceAutomatique(participant.cheval, itemCheval.Nom);
@@ -2081,6 +2088,16 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         const scoreEleveur = rangEleveur ? Math.max(0, maxRang - rangEleveur) : valeurNC;
         const scoreProprio = rangProprio ? Math.max(0, maxRang - rangProprio) : valeurNC;
 
+        // NOUVEAU: Bonus Cravache d'or pour le jockey
+        // Un jockey classé dans la Cravache d'or reçoit un bonus proportionnel à son rang
+        let cravacheOrBonus = 0;
+        if (rangCravacheOr) {
+            // Top 5 = gros bonus, top 10 = moyen, top 20 = petit
+            cravacheOrBonus = Math.max(0, Math.min(15, (21 - rangCravacheOr) * 0.75));
+            scoreJockey = Math.min(maxRang, scoreJockey + cravacheOrBonus);
+            console.log(`  🏆 Cravache d'or: rang #${rangCravacheOr} → bonus +${cravacheOrBonus.toFixed(1)} pts jockey`);
+        }
+
         // NOUVEAU: Ajustement par spécialisation distance
         // Un jockey/cheval/entraîneur qui performe mieux à cette distance reçoit un bonus
         const distanceBucket = courseContext ? this.getDistanceBucket(courseContext.distance) : null;
@@ -2168,7 +2185,8 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
                 },
                 jockey: {
                     rang: rangJockey || "NC",
-                    score: scoreJockey.toFixed(1)
+                    score: scoreJockey.toFixed(1),
+                    cravacheOr: rangCravacheOr ? { rang: rangCravacheOr, bonus: cravacheOrBonus.toFixed(1) } : null
                 },
                 entraineur: {
                     rang: rangEntraineur || "NC",

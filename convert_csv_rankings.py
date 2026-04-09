@@ -35,6 +35,7 @@ CATEGORIES = {
     "entraineurs": "https://www.france-galop.com/fr/hommes-chevaux/entraineurs",
     "proprietaires": "https://www.france-galop.com/fr/hommes-chevaux/proprietaires",
     "eleveurs": "https://www.france-galop.com/fr/hommes-chevaux/eleveurs",
+    "cravache_or": "https://www.france-galop.com/fr/hommes-chevaux/cravache-d-or-jockeys",
 }
 
 # Alias de champs pour compatibilité avec les scripts JS
@@ -62,6 +63,12 @@ FIELD_ALIASES = {
         "Places": "Place",
     },
     "eleveurs": {
+        "Nom": "NomPostal",
+        "Partants": "Partants",
+        "Places": "Place",
+    },
+    "cravache_or": {
+        "Jockey": "NomPostal",
         "Nom": "NomPostal",
         "Partants": "Partants",
         "Places": "Place",
@@ -238,6 +245,7 @@ def convert_csv_to_json(csv_path, category):
             "source": source_url,
             "date_extraction": datetime.now().isoformat(),
             "category": category,
+            "annee": datetime.now().year,
             "nombre_resultats": len(results),
             "methode": "csv_upload",
             "field_aliases": aliases

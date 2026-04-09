@@ -11,7 +11,8 @@ const CATEGORIES = [
   { id: 'chevaux', file: 'data/chevaux.json' },
   { id: 'entraineurs', file: 'data/entraineurs.json' },
   { id: 'eleveurs', file: 'data/eleveurs.json' },
-  { id: 'proprietaires', file: 'data/proprietaires.json' }
+  { id: 'proprietaires', file: 'data/proprietaires.json' },
+  { id: 'cravache_or', file: 'data/cravache_or.json' }
 ];
 
 // Télécharger un fichier JSON depuis GitHub
