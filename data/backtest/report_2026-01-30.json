@@ -1,0 +1,36 @@
+{
+  "date": "2026-01-30",
+  "totalCourses": 9,
+  "accuracy": {
+    "top1WinRate": 22.2,
+    "top1InTop3Rate": 44.4,
+    "top3InTop3Rate": 88.9,
+    "meanPositionError": 2.54
+  },
+  "byDistance": {
+    "staying": {
+      "courses": 6,
+      "top1WinRate": 16.7,
+      "top3InTop3Rate": 100,
+      "meanError": 1.97
+    },
+    "middle": {
+      "courses": 1,
+      "top1WinRate": 0,
+      "top3InTop3Rate": 0,
+      "meanError": 4.17
+    },
+    "sprint": {
+      "courses": 1,
+      "top1WinRate": 0,
+      "top3InTop3Rate": 100,
+      "meanError": 5.25
+    },
+    "mile": {
+      "courses": 1,
+      "top1WinRate": 100,
+      "top3InTop3Rate": 100,
+      "meanError": 1.67
+    }
+  }
+}

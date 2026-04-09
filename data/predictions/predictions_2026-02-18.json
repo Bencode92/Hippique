@@ -1,0 +1,2827 @@
+{
+  "date": "2026-02-18",
+  "timestamp": "2026-04-09T15:07:02.266Z",
+  "nbCourses": 16,
+  "predictions": [
+    {
+      "hippodrome": "CAGNES-SUR-MER",
+      "course": "PRIX DU LAUTIN",
+      "distance": 2000,
+      "distBucket": "middle",
+      "type": "plat",
+      "nbPartants": 6,
+      "weightsUsed": {
+        "cheval": 0.48,
+        "jockey": 0.22,
+        "entraineur": 0.15,
+        "eleveur": 0.08,
+        "proprietaire": 0.07
+      },
+      "participants": [
+        {
+          "position": 1,
+          "cheval": "MODELE ABSOLU",
+          "jockey": "MARVIN GRANDIN",
+          "entraineur": "C. ESCUDER",
+          "scorePredictif": 65.93,
+          "rangs": {
+            "cheval": 22,
+            "jockey": 8,
+            "entraineur": 45
+          },
+          "rangPredit": 1
+        },
+        {
+          "position": 3,
+          "cheval": "UTXA IRE",
+          "jockey": "AURELIEN LEMAITRE",
+          "entraineur": "MME I. JANACKOVA KOPLIKOVA",
+          "scorePredictif": 31.78,
+          "rangs": {
+            "cheval": null,
+            "jockey": 21,
+            "entraineur": 129
+          },
+          "rangPredit": 2
+        },
+        {
+          "position": 4,
+          "cheval": "JOHNNY DRIVE",
+          "jockey": "ANTONIO ORANI",
+          "entraineur": "MME M. SCANDELLA-LACAILLE",
+          "scorePredictif": 27.11,
+          "rangs": {
+            "cheval": 878,
+            "jockey": 2,
+            "entraineur": 63
+          },
+          "rangPredit": 3
+        },
+        {
+          "position": 2,
+          "cheval": "DAMABIAH ANGEL",
+          "jockey": "CRISTIAN DEMURO",
+          "entraineur": "M. PITART",
+          "scorePredictif": 25.1,
+          "rangs": {
+            "cheval": 203,
+            "jockey": 5,
+            "entraineur": 72
+          },
+          "rangPredit": 4
+        },
+        {
+          "position": 5,
+          "cheval": "EL PROFESSOR",
+          "jockey": "MME AMBRE MOLINS",
+          "entraineur": "J. PARIZE",
+          "scorePredictif": 1.98,
+          "rangs": {
+            "cheval": 2240,
+            "jockey": 91,
+            "entraineur": 237
+          },
+          "rangPredit": 5
+        },
+        {
+          "position": 6,
+          "cheval": "ROSE PRAIRIE",
+          "jockey": "MME MANON FLEURY",
+          "entraineur": "B. AUDOUIN (S)",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 1577,
+            "jockey": 141,
+            "entraineur": 152
+          },
+          "rangPredit": 6
+        }
+      ]
+    },
+    {
+      "hippodrome": "CAGNES-SUR-MER",
+      "course": "PRIX ANTOINE CAPOZZI",
+      "distance": 2150,
+      "distBucket": "middle",
+      "type": "plat",
+      "nbPartants": 10,
+      "weightsUsed": {
+        "cheval": 0.48,
+        "jockey": 0.22,
+        "entraineur": 0.15,
+        "eleveur": 0.08,
+        "proprietaire": 0.07
+      },
+      "participants": [
+        {
+          "position": 5,
+          "cheval": "THE FIST",
+          "jockey": "CRISTIAN DEMURO",
+          "entraineur": "E. MIKHALIDES (S)",
+          "scorePredictif": 30.2,
+          "rangs": {
+            "cheval": 645,
+            "jockey": 5,
+            "entraineur": 38
+          },
+          "rangPredit": 1
+        },
+        {
+          "position": 1,
+          "cheval": "HEPBURN",
+          "jockey": "MARVIN GRANDIN",
+          "entraineur": "C. ESCUDER",
+          "scorePredictif": 28.49,
+          "rangs": {
+            "cheval": 300,
+            "jockey": 8,
+            "entraineur": 45
+          },
+          "rangPredit": 2
+        },
+        {
+          "position": 2,
+          "cheval": "PERSIANA",
+          "jockey": "ANTHONY CRASTUS",
+          "entraineur": "MME M. SCANDELLA-LACAILLE",
+          "scorePredictif": 20.51,
+          "rangs": {
+            "cheval": 810,
+            "jockey": 32,
+            "entraineur": 63
+          },
+          "rangPredit": 3
+        },
+        {
+          "position": 9,
+          "cheval": "LA GRANDE JOA",
+          "jockey": "THOMAS TRULLIER",
+          "entraineur": "C. ESCUDER",
+          "scorePredictif": 19.47,
+          "rangs": {
+            "cheval": 2199,
+            "jockey": 49,
+            "entraineur": 45
+          },
+          "rangPredit": 4
+        },
+        {
+          "position": 6,
+          "cheval": "BAVAROIS",
+          "jockey": "STEPHANE PASQUIER",
+          "entraineur": "D&P. PROD'HOMME (S)",
+          "scorePredictif": 18.7,
+          "rangs": {
+            "cheval": 1715,
+            "jockey": 15,
+            "entraineur": 163
+          },
+          "rangPredit": 5
+        },
+        {
+          "position": 3,
+          "cheval": "RISING WATER",
+          "jockey": "MME CORALIE PACAUT",
+          "entraineur": "D. ARTU (S)",
+          "scorePredictif": 17.35,
+          "rangs": {
+            "cheval": 472,
+            "jockey": 60,
+            "entraineur": 43
+          },
+          "rangPredit": 6
+        },
+        {
+          "position": 4,
+          "cheval": "NEW PEARL",
+          "jockey": "MME MARIE WALDHAUSER",
+          "entraineur": "D. CHENU",
+          "scorePredictif": 16.72,
+          "rangs": {
+            "cheval": 1420,
+            "jockey": 24,
+            "entraineur": 259
+          },
+          "rangPredit": 7
+        },
+        {
+          "position": 10,
+          "cheval": "AEIH IRE",
+          "jockey": "JACKY NICOLEAU",
+          "entraineur": "A. WEST",
+          "scorePredictif": 14.4,
+          "rangs": {
+            "cheval": null,
+            "jockey": 148,
+            "entraineur": 404
+          },
+          "rangPredit": 8
+        },
+        {
+          "position": 7,
+          "cheval": "GOLDENPALM",
+          "jockey": "BENJAMIN MARIE",
+          "entraineur": "S. RICHTER",
+          "scorePredictif": 8.85,
+          "rangs": {
+            "cheval": 535,
+            "jockey": 106,
+            "entraineur": 41
+          },
+          "rangPredit": 9
+        },
+        {
+          "position": 8,
+          "cheval": "VOYAGE OLYMPIQUE",
+          "jockey": "MME AMBRE MOLINS",
+          "entraineur": "MME G. RARICK",
+          "scorePredictif": 1.98,
+          "rangs": {
+            "cheval": 1339,
+            "jockey": 91,
+            "entraineur": 443
+          },
+          "rangPredit": 10
+        }
+      ]
+    },
+    {
+      "hippodrome": "CAGNES-SUR-MER",
+      "course": "PRIX DE VICHY",
+      "distance": 1600,
+      "distBucket": "mile",
+      "type": "plat",
+      "nbPartants": 10,
+      "weightsUsed": {
+        "cheval": 0.5,
+        "jockey": 0.2,
+        "entraineur": 0.15,
+        "eleveur": 0.08,
+        "proprietaire": 0.07
+      },
+      "participants": [
+        {
+          "position": 3,
+          "cheval": "DADDY'S HEART",
+          "jockey": "ANTONIO ORANI",
+          "entraineur": "G. GEISLER",
+          "scorePredictif": 34.6,
+          "rangs": {
+            "cheval": null,
+            "jockey": 2,
+            "entraineur": 218
+          },
+          "rangPredit": 1
+        },
+        {
+          "position": 1,
+          "cheval": "AGRI",
+          "jockey": "CRISTIAN DEMURO",
+          "entraineur": "S. RICHTER",
+          "scorePredictif": 27.85,
+          "rangs": {
+            "cheval": 1190,
+            "jockey": 5,
+            "entraineur": 41
+          },
+          "rangPredit": 2
+        },
+        {
+          "position": 8,
+          "cheval": "GRIGNETTE",
+          "jockey": "AUGUSTIN MADAMET",
+          "entraineur": "P. DECOUZ (S)",
+          "scorePredictif": 23.2,
+          "rangs": {
+            "cheval": 1636,
+            "jockey": 23,
+            "entraineur": 48
+          },
+          "rangPredit": 3
+        },
+        {
+          "position": 4,
+          "cheval": "COPAN",
+          "jockey": "MARVIN GRANDIN",
+          "entraineur": "S. LABATE (S)",
+          "scorePredictif": 18.4,
+          "rangs": {
+            "cheval": 1331,
+            "jockey": 8,
+            "entraineur": 295
+          },
+          "rangPredit": 4
+        },
+        {
+          "position": 10,
+          "cheval": "EKTORIA",
+          "jockey": "IORITZ MENDIZABAL",
+          "entraineur": "P. MONFORT (S)",
+          "scorePredictif": 18.25,
+          "rangs": {
+            "cheval": 971,
+            "jockey": 44,
+            "entraineur": 53
+          },
+          "rangPredit": 5
+        },
+        {
+          "position": 5,
+          "cheval": "REUX",
+          "jockey": "HUGO BOUTIN",
+          "entraineur": "M. BOUTIN (S)",
+          "scorePredictif": 17.6,
+          "rangs": {
+            "cheval": 1221,
+            "jockey": 12,
+            "entraineur": 102
+          },
+          "rangPredit": 6
+        },
+        {
+          "position": 2,
+          "cheval": "INTUITION",
+          "jockey": "MME LORETTE GALLO",
+          "entraineur": "M. BOUTIN (S)",
+          "scorePredictif": 13,
+          "rangs": {
+            "cheval": 1654,
+            "jockey": 35,
+            "entraineur": 102
+          },
+          "rangPredit": 7
+        },
+        {
+          "position": 7,
+          "cheval": "CHANEL GOLD",
+          "jockey": "MME SIBYLLE VOGT (DEU)",
+          "entraineur": "FX. WEISSMEIER",
+          "scorePredictif": 6,
+          "rangs": {
+            "cheval": 2012,
+            "jockey": null,
+            "entraineur": 196
+          },
+          "rangPredit": 8
+        },
+        {
+          "position": 9,
+          "cheval": "T'ES CHIC",
+          "jockey": "EDDY HARDOUIN",
+          "entraineur": "M. BOUTIN (S)",
+          "scorePredictif": 4.4,
+          "rangs": {
+            "cheval": 2154,
+            "jockey": 78,
+            "entraineur": 102
+          },
+          "rangPredit": 9
+        },
+        {
+          "position": 6,
+          "cheval": "WHY CHOPE",
+          "jockey": "MME AMBRE MOLINS",
+          "entraineur": "J. PARIZE",
+          "scorePredictif": 1.8,
+          "rangs": {
+            "cheval": 1839,
+            "jockey": 91,
+            "entraineur": 237
+          },
+          "rangPredit": 10
+        }
+      ]
+    },
+    {
+      "hippodrome": "CAGNES-SUR-MER",
+      "course": "PRIX HENRI ROSSI",
+      "distance": 2000,
+      "distBucket": "middle",
+      "type": "plat",
+      "nbPartants": 16,
+      "weightsUsed": {
+        "cheval": 0.48,
+        "jockey": 0.22,
+        "entraineur": 0.15,
+        "eleveur": 0.08,
+        "proprietaire": 0.07
+      },
+      "participants": [
+        {
+          "position": 4,
+          "cheval": "WATCH HIM M.PS. 8 A.",
+          "jockey": "ANTONIO ORANI",
+          "entraineur": "J. REYNIER (S)",
+          "scorePredictif": 50.21,
+          "rangs": {
+            "cheval": null,
+            "jockey": 2,
+            "entraineur": 5
+          },
+          "rangPredit": 1
+        },
+        {
+          "position": 2,
+          "cheval": "OLYMPIC MESSAGE (IRE)",
+          "jockey": "AURELIEN LEMAITRE",
+          "entraineur": "N. PERRET (S)",
+          "scorePredictif": 34.78,
+          "rangs": {
+            "cheval": null,
+            "jockey": 21,
+            "entraineur": 80
+          },
+          "rangPredit": 2
+        },
+        {
+          "position": 11,
+          "cheval": "MILLAR (GB)",
+          "jockey": "STEPHANE PASQUIER",
+          "entraineur": "ED. MONFORT (S)",
+          "scorePredictif": 33.1,
+          "rangs": {
+            "cheval": null,
+            "jockey": 15,
+            "entraineur": 116
+          },
+          "rangPredit": 3
+        },
+        {
+          "position": 12,
+          "cheval": "CASARES",
+          "jockey": "TONY PICCONE",
+          "entraineur": "D&P. PROD'HOMME (S)",
+          "scorePredictif": 32.66,
+          "rangs": {
+            "cheval": null,
+            "jockey": 17,
+            "entraineur": 163
+          },
+          "rangPredit": 4
+        },
+        {
+          "position": 15,
+          "cheval": "CAMPELO GB",
+          "jockey": "AUGUSTIN MADAMET",
+          "entraineur": "JM. OSORIO BERTRAN DE LIS",
+          "scorePredictif": 31.34,
+          "rangs": {
+            "cheval": null,
+            "jockey": 23,
+            "entraineur": 203
+          },
+          "rangPredit": 5
+        },
+        {
+          "position": 6,
+          "cheval": "MAX VERST",
+          "jockey": "HUGO BOUTIN",
+          "entraineur": "R. FRADET (S)",
+          "scorePredictif": 30.76,
+          "rangs": {
+            "cheval": 1551,
+            "jockey": 12,
+            "entraineur": 24
+          },
+          "rangPredit": 6
+        },
+        {
+          "position": 16,
+          "cheval": "AL ALMARCHAL IRE",
+          "jockey": "MME MARIE VELON",
+          "entraineur": "JM. OSORIO BERTRAN DE LIS",
+          "scorePredictif": 30.46,
+          "rangs": {
+            "cheval": null,
+            "jockey": 27,
+            "entraineur": 203
+          },
+          "rangPredit": 7
+        },
+        {
+          "position": 1,
+          "cheval": "KOURPLUVIX",
+          "jockey": "ANTHONY CRASTUS",
+          "entraineur": "J. REYNIER (S)",
+          "scorePredictif": 29.21,
+          "rangs": {
+            "cheval": 1452,
+            "jockey": 32,
+            "entraineur": 5
+          },
+          "rangPredit": 8
+        },
+        {
+          "position": 14,
+          "cheval": "LINFASOMMER",
+          "jockey": "CRISTIAN DEMURO",
+          "entraineur": "M. PITART",
+          "scorePredictif": 25.1,
+          "rangs": {
+            "cheval": 317,
+            "jockey": 5,
+            "entraineur": 72
+          },
+          "rangPredit": 9
+        },
+        {
+          "position": 8,
+          "cheval": "EUSKADI",
+          "jockey": "CLEMENT LECOEUVRE",
+          "entraineur": "CH. GOURDAIN (S)",
+          "scorePredictif": 20.02,
+          "rangs": {
+            "cheval": 318,
+            "jockey": 9,
+            "entraineur": 101
+          },
+          "rangPredit": 10
+        },
+        {
+          "position": 3,
+          "cheval": "KAHUNA",
+          "jockey": "JEAN-BERNARD EYQUEM",
+          "entraineur": "L. CADOT",
+          "scorePredictif": 19.58,
+          "rangs": {
+            "cheval": 1609,
+            "jockey": 11,
+            "entraineur": 209
+          },
+          "rangPredit": 11
+        },
+        {
+          "position": 9,
+          "cheval": "ALPAGE",
+          "jockey": "THEO BACHELOT",
+          "entraineur": "F. JIMENEZ ALVAREZ",
+          "scorePredictif": 18.92,
+          "rangs": {
+            "cheval": 2162,
+            "jockey": 14,
+            "entraineur": 469
+          },
+          "rangPredit": 12
+        },
+        {
+          "position": 5,
+          "cheval": "GOWAY",
+          "jockey": "THOMAS TRULLIER",
+          "entraineur": "L. BERNHARDT",
+          "scorePredictif": 11.22,
+          "rangs": {
+            "cheval": 1712,
+            "jockey": 49,
+            "entraineur": 235
+          },
+          "rangPredit": 13
+        },
+        {
+          "position": 13,
+          "cheval": "BIG LOG",
+          "jockey": "ANTOINE HAMELIN",
+          "entraineur": "D&P. PROD'HOMME (S)",
+          "scorePredictif": 8.14,
+          "rangs": {
+            "cheval": 579,
+            "jockey": 63,
+            "entraineur": 163
+          },
+          "rangPredit": 14
+        },
+        {
+          "position": 10,
+          "cheval": "CLEOD'OR",
+          "jockey": "EMILIEN PUILLET-RODA",
+          "entraineur": "M. PITART",
+          "scorePredictif": 6.4,
+          "rangs": {
+            "cheval": 1563,
+            "jockey": 90,
+            "entraineur": 72
+          },
+          "rangPredit": 15
+        },
+        {
+          "position": 7,
+          "cheval": "ZIGGY STAR",
+          "jockey": "DORIAN PROVOST",
+          "entraineur": "M. CESANDRI (S)",
+          "scorePredictif": 1.1,
+          "rangs": {
+            "cheval": 1224,
+            "jockey": 95,
+            "entraineur": 276
+          },
+          "rangPredit": 16
+        }
+      ]
+    },
+    {
+      "hippodrome": "CAGNES-SUR-MER",
+      "course": "PRIX DE LA MENTHE POIVREE",
+      "distance": 2400,
+      "distBucket": "staying",
+      "type": "plat",
+      "nbPartants": 9,
+      "weightsUsed": {
+        "cheval": 0.42,
+        "jockey": 0.28,
+        "entraineur": 0.15,
+        "eleveur": 0.08,
+        "proprietaire": 0.07
+      },
+      "participants": [
+        {
+          "position": 3,
+          "cheval": "MORSAN (IRE)",
+          "jockey": "HUGO BOUTIN",
+          "entraineur": "C. BOUTIN (S)",
+          "scorePredictif": 49.09,
+          "rangs": {
+            "cheval": null,
+            "jockey": 12,
+            "entraineur": 21
+          },
+          "rangPredit": 1
+        },
+        {
+          "position": 5,
+          "cheval": "USER KINDLY GB",
+          "jockey": "CRISTIAN DEMURO",
+          "entraineur": "C. ESCUDER",
+          "scorePredictif": 47.45,
+          "rangs": {
+            "cheval": null,
+            "jockey": 5,
+            "entraineur": 45
+          },
+          "rangPredit": 2
+        },
+        {
+          "position": 8,
+          "cheval": "INDIAN PACIFIC",
+          "jockey": "HUGO BESNIER",
+          "entraineur": "P. COTTIER",
+          "scorePredictif": 40.14,
+          "rangs": {
+            "cheval": 835,
+            "jockey": 7,
+            "entraineur": 6
+          },
+          "rangPredit": 3
+        },
+        {
+          "position": 6,
+          "cheval": "PUMP PUMP CITY",
+          "jockey": "ANTONIO ORANI",
+          "entraineur": "N. PERRET (S)",
+          "scorePredictif": 30.44,
+          "rangs": {
+            "cheval": 2225,
+            "jockey": 2,
+            "entraineur": 80
+          },
+          "rangPredit": 4
+        },
+        {
+          "position": 4,
+          "cheval": "BOSIOH",
+          "jockey": "ANTHONY CRASTUS",
+          "entraineur": "N. PERRET (S)",
+          "scorePredictif": 22.04,
+          "rangs": {
+            "cheval": 689,
+            "jockey": 32,
+            "entraineur": 80
+          },
+          "rangPredit": 5
+        },
+        {
+          "position": 2,
+          "cheval": "RIYAK",
+          "jockey": "MME MARIE VELON",
+          "entraineur": "J. PARIZE",
+          "scorePredictif": 20.44,
+          "rangs": {
+            "cheval": 1424,
+            "jockey": 27,
+            "entraineur": 237
+          },
+          "rangPredit": 6
+        },
+        {
+          "position": 7,
+          "cheval": "SHALAA DANCER",
+          "jockey": "JEROME CLAUDIC",
+          "entraineur": "M. PITART",
+          "scorePredictif": 14,
+          "rangs": {
+            "cheval": 2258,
+            "jockey": 65,
+            "entraineur": 72
+          },
+          "rangPredit": 7
+        },
+        {
+          "position": 1,
+          "cheval": "LUCERO",
+          "jockey": "MME AXELLE DUQUESNOY",
+          "entraineur": "C. BOUTIN (S)",
+          "scorePredictif": 11.85,
+          "rangs": {
+            "cheval": 1693,
+            "jockey": 114,
+            "entraineur": 21
+          },
+          "rangPredit": 8
+        },
+        {
+          "position": 9,
+          "cheval": "MONA TREZY",
+          "jockey": "MME SIBYLLE VOGT (DEU)",
+          "entraineur": "G. GEISLER",
+          "scorePredictif": 8.4,
+          "rangs": {
+            "cheval": 974,
+            "jockey": null,
+            "entraineur": 218
+          },
+          "rangPredit": 9
+        }
+      ]
+    },
+    {
+      "hippodrome": "CAGNES-SUR-MER",
+      "course": "PRIX DU CHEIRON",
+      "distance": 3200,
+      "distBucket": "staying",
+      "type": "plat",
+      "nbPartants": 11,
+      "weightsUsed": {
+        "cheval": 0.42,
+        "jockey": 0.28,
+        "entraineur": 0.15,
+        "eleveur": 0.08,
+        "proprietaire": 0.07
+      },
+      "participants": [
+        {
+          "position": 1,
+          "cheval": "EL CANEY GB H.PS. 8 A.",
+          "jockey": "THEO BACHELOT",
+          "entraineur": "JM. OSORIO BERTRAN DE LIS",
+          "scorePredictif": 36.68,
+          "rangs": {
+            "cheval": null,
+            "jockey": 14,
+            "entraineur": 203
+          },
+          "rangPredit": 1
+        },
+        {
+          "position": 5,
+          "cheval": "PORTUCALE",
+          "jockey": "CRISTIAN DEMURO",
+          "entraineur": "C. ESCUDER",
+          "scorePredictif": 34.85,
+          "rangs": {
+            "cheval": 1416,
+            "jockey": 5,
+            "entraineur": 45
+          },
+          "rangPredit": 2
+        },
+        {
+          "position": 7,
+          "cheval": "GOLDEN BLUSH",
+          "jockey": "MARVIN GRANDIN",
+          "entraineur": "C. ESCUDER",
+          "scorePredictif": 34.01,
+          "rangs": {
+            "cheval": 1415,
+            "jockey": 8,
+            "entraineur": 45
+          },
+          "rangPredit": 3
+        },
+        {
+          "position": 2,
+          "cheval": "TIAMOWAY",
+          "jockey": "ANTONIO ORANI",
+          "entraineur": "MME M. SCANDELLA-LACAILLE",
+          "scorePredictif": 32.99,
+          "rangs": {
+            "cheval": 629,
+            "jockey": 2,
+            "entraineur": 63
+          },
+          "rangPredit": 4
+        },
+        {
+          "position": 6,
+          "cheval": "AUTEUR (GB)",
+          "jockey": "MME SIBYLLE VOGT (DEU)",
+          "entraineur": "R. FRADET (S)",
+          "scorePredictif": 32.4,
+          "rangs": {
+            "cheval": null,
+            "jockey": null,
+            "entraineur": 24
+          },
+          "rangPredit": 5
+        },
+        {
+          "position": 8,
+          "cheval": "BARBADIN (GB)",
+          "jockey": "MME CORALIE PACAUT",
+          "entraineur": "D&P. PROD'HOMME (S)",
+          "scorePredictif": 23.8,
+          "rangs": {
+            "cheval": null,
+            "jockey": 60,
+            "entraineur": 163
+          },
+          "rangPredit": 6
+        },
+        {
+          "position": 10,
+          "cheval": "BONNY WAY",
+          "jockey": "ANTHONY CRASTUS",
+          "entraineur": "N. PERRET (S)",
+          "scorePredictif": 22.04,
+          "rangs": {
+            "cheval": 572,
+            "jockey": 32,
+            "entraineur": 80
+          },
+          "rangPredit": 7
+        },
+        {
+          "position": 11,
+          "cheval": "AMOR A MANI",
+          "jockey": "EDDY HARDOUIN",
+          "entraineur": "D. ARTU (S)",
+          "scorePredictif": 14.71,
+          "rangs": {
+            "cheval": 1253,
+            "jockey": 78,
+            "entraineur": 43
+          },
+          "rangPredit": 8
+        },
+        {
+          "position": 9,
+          "cheval": "LE ROUGE CHINOIS DEN",
+          "jockey": "JACKY NICOLEAU",
+          "entraineur": "A. WEST",
+          "scorePredictif": 12.6,
+          "rangs": {
+            "cheval": null,
+            "jockey": 148,
+            "entraineur": 404
+          },
+          "rangPredit": 9
+        },
+        {
+          "position": 4,
+          "cheval": "EXCELSIOR",
+          "jockey": "JEROME CLAUDIC",
+          "entraineur": "F. BRESSON (S)",
+          "scorePredictif": 9.8,
+          "rangs": {
+            "cheval": 1948,
+            "jockey": 65,
+            "entraineur": 133
+          },
+          "rangPredit": 10
+        },
+        {
+          "position": 3,
+          "cheval": "MOZART DES BRIERES",
+          "jockey": "MME MANON GERMAIN",
+          "entraineur": "C. ESCUDER",
+          "scorePredictif": 8.25,
+          "rangs": {
+            "cheval": 1646,
+            "jockey": 109,
+            "entraineur": 45
+          },
+          "rangPredit": 11
+        }
+      ]
+    },
+    {
+      "hippodrome": "CAGNES-SUR-MER",
+      "course": "PRIX DU QUEYRAS",
+      "distance": 2000,
+      "distBucket": "middle",
+      "type": "plat",
+      "nbPartants": 11,
+      "weightsUsed": {
+        "cheval": 0.48,
+        "jockey": 0.22,
+        "entraineur": 0.15,
+        "eleveur": 0.08,
+        "proprietaire": 0.07
+      },
+      "participants": [
+        {
+          "position": 2,
+          "cheval": "NARCOS M.PS. 9 A. ... (SUP.)",
+          "jockey": "MARVIN GRANDIN",
+          "entraineur": "MME A. BUDKA",
+          "scorePredictif": 34.64,
+          "rangs": {
+            "cheval": null,
+            "jockey": 8,
+            "entraineur": 324
+          },
+          "rangPredit": 1
+        },
+        {
+          "position": 8,
+          "cheval": "ROYAL ENCLOSURE GB",
+          "jockey": "HUGO BOUTIN",
+          "entraineur": "M. BOUTIN (S)",
+          "scorePredictif": 33.76,
+          "rangs": {
+            "cheval": null,
+            "jockey": 12,
+            "entraineur": 102
+          },
+          "rangPredit": 2
+        },
+        {
+          "position": 6,
+          "cheval": "DON NIKOLAOS GR",
+          "jockey": "THEO BACHELOT",
+          "entraineur": "S. JESUS",
+          "scorePredictif": 33.32,
+          "rangs": {
+            "cheval": null,
+            "jockey": 14,
+            "entraineur": 279
+          },
+          "rangPredit": 3
+        },
+        {
+          "position": 1,
+          "cheval": "MELANIES JOY GB",
+          "jockey": "STEPHANE PASQUIER",
+          "entraineur": "N. CAULLERY",
+          "scorePredictif": 33.1,
+          "rangs": {
+            "cheval": null,
+            "jockey": 15,
+            "entraineur": 140
+          },
+          "rangPredit": 4
+        },
+        {
+          "position": 3,
+          "cheval": "ATAMAK",
+          "jockey": "TONY PICCONE",
+          "entraineur": "F. JIMENEZ ALVAREZ",
+          "scorePredictif": 32.66,
+          "rangs": {
+            "cheval": null,
+            "jockey": 17,
+            "entraineur": 469
+          },
+          "rangPredit": 5
+        },
+        {
+          "position": 5,
+          "cheval": "LAMIRAL DARHAAN",
+          "jockey": "AURELIEN LEMAITRE",
+          "entraineur": "D. CHENU",
+          "scorePredictif": 17.38,
+          "rangs": {
+            "cheval": 1312,
+            "jockey": 21,
+            "entraineur": 259
+          },
+          "rangPredit": 6
+        },
+        {
+          "position": 10,
+          "cheval": "DREAM WUKAIR",
+          "jockey": "BENJAMIN MARIE",
+          "entraineur": "S. RICHTER",
+          "scorePredictif": 8.85,
+          "rangs": {
+            "cheval": 1514,
+            "jockey": 106,
+            "entraineur": 41
+          },
+          "rangPredit": 7
+        },
+        {
+          "position": 9,
+          "cheval": "VIZINDI",
+          "jockey": "MME SIBYLLE VOGT (DEU)",
+          "entraineur": "G. GEISLER",
+          "scorePredictif": 6.6,
+          "rangs": {
+            "cheval": 805,
+            "jockey": null,
+            "entraineur": 218
+          },
+          "rangPredit": 8
+        },
+        {
+          "position": 4,
+          "cheval": "MADOUSS",
+          "jockey": "DAVID BREUX",
+          "entraineur": "F. ZIGLIOLI",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 2287,
+            "jockey": 153,
+            "entraineur": 489
+          },
+          "rangPredit": 9
+        },
+        {
+          "position": 7,
+          "cheval": "HAUTE GAMME",
+          "jockey": "MME ANAELLE MEKOUCHE",
+          "entraineur": "R. AVIAL SANCHEZ",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 313,
+            "jockey": 141,
+            "entraineur": 137
+          },
+          "rangPredit": 10
+        },
+        {
+          "position": 11,
+          "cheval": "MOUDIR",
+          "jockey": "MME MANON GERMAIN",
+          "entraineur": "JC. SARAIS",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 624,
+            "jockey": 109,
+            "entraineur": 285
+          },
+          "rangPredit": 11
+        }
+      ]
+    },
+    {
+      "hippodrome": "CAGNES-SUR-MER",
+      "course": "PRIX DE LA NAPOULE",
+      "distance": 2000,
+      "distBucket": "middle",
+      "type": "plat",
+      "nbPartants": 12,
+      "weightsUsed": {
+        "cheval": 0.48,
+        "jockey": 0.22,
+        "entraineur": 0.15,
+        "eleveur": 0.08,
+        "proprietaire": 0.07
+      },
+      "participants": [
+        {
+          "position": 9,
+          "cheval": "PACO (IRE) M.PS. 8 A.",
+          "jockey": "MARVIN GRANDIN",
+          "entraineur": "C. BOUTIN (S)",
+          "scorePredictif": 46.49,
+          "rangs": {
+            "cheval": null,
+            "jockey": 8,
+            "entraineur": 21
+          },
+          "rangPredit": 1
+        },
+        {
+          "position": 1,
+          "cheval": "GRAN HABANO IRE",
+          "jockey": "TONY PICCONE",
+          "entraineur": "A. MURPHY (S)",
+          "scorePredictif": 35.96,
+          "rangs": {
+            "cheval": null,
+            "jockey": 17,
+            "entraineur": 78
+          },
+          "rangPredit": 2
+        },
+        {
+          "position": 4,
+          "cheval": "USER AMISTOSO",
+          "jockey": "CRISTIAN DEMURO",
+          "entraineur": "S. PECORARO",
+          "scorePredictif": 33.5,
+          "rangs": {
+            "cheval": 267,
+            "jockey": 5,
+            "entraineur": 16
+          },
+          "rangPredit": 3
+        },
+        {
+          "position": 2,
+          "cheval": "MOPSO IRE",
+          "jockey": "THEO BACHELOT",
+          "entraineur": "JM. OSORIO BERTRAN DE LIS",
+          "scorePredictif": 33.32,
+          "rangs": {
+            "cheval": null,
+            "jockey": 14,
+            "entraineur": 203
+          },
+          "rangPredit": 4
+        },
+        {
+          "position": 11,
+          "cheval": "MOKKA LATTE",
+          "jockey": "HUGO BESNIER",
+          "entraineur": "R. FRADET (S)",
+          "scorePredictif": 31.86,
+          "rangs": {
+            "cheval": 1918,
+            "jockey": 7,
+            "entraineur": 24
+          },
+          "rangPredit": 5
+        },
+        {
+          "position": 6,
+          "cheval": "BLUFF",
+          "jockey": "HUGO BOUTIN",
+          "entraineur": "C. BOUTIN (S)",
+          "scorePredictif": 31.21,
+          "rangs": {
+            "cheval": 967,
+            "jockey": 12,
+            "entraineur": 21
+          },
+          "rangPredit": 6
+        },
+        {
+          "position": 8,
+          "cheval": "CHARLESQUINT (IRE) H.PS. 9 A.",
+          "jockey": "MME LORETTE GALLO",
+          "entraineur": "M. BOUTIN (S)",
+          "scorePredictif": 28.7,
+          "rangs": {
+            "cheval": null,
+            "jockey": 35,
+            "entraineur": 102
+          },
+          "rangPredit": 7
+        },
+        {
+          "position": 7,
+          "cheval": "DENIA (IRE)",
+          "jockey": "THOMAS TRULLIER",
+          "entraineur": "L. BERNHARDT",
+          "scorePredictif": 25.62,
+          "rangs": {
+            "cheval": null,
+            "jockey": 49,
+            "entraineur": 235
+          },
+          "rangPredit": 8
+        },
+        {
+          "position": 3,
+          "cheval": "GO LOVE",
+          "jockey": "ANTHONY CRASTUS",
+          "entraineur": "N. PERRET (S)",
+          "scorePredictif": 17.96,
+          "rangs": {
+            "cheval": 289,
+            "jockey": 32,
+            "entraineur": 80
+          },
+          "rangPredit": 9
+        },
+        {
+          "position": 12,
+          "cheval": "RUE DE L'ODEON",
+          "jockey": "EDDY HARDOUIN",
+          "entraineur": "D. ARTU (S)",
+          "scorePredictif": 13.39,
+          "rangs": {
+            "cheval": 895,
+            "jockey": 78,
+            "entraineur": 43
+          },
+          "rangPredit": 10
+        },
+        {
+          "position": 10,
+          "cheval": "GOLDENSIM",
+          "jockey": "IORITZ MENDIZABAL",
+          "entraineur": "R. AVIAL LOPEZ",
+          "scorePredictif": 12.32,
+          "rangs": {
+            "cheval": 791,
+            "jockey": 44,
+            "entraineur": 242
+          },
+          "rangPredit": 11
+        },
+        {
+          "position": 5,
+          "cheval": "LINARIA",
+          "jockey": "DORIAN PROVOST",
+          "entraineur": "M. CESANDRI (S)",
+          "scorePredictif": 1.1,
+          "rangs": {
+            "cheval": 1578,
+            "jockey": 95,
+            "entraineur": 276
+          },
+          "rangPredit": 12
+        }
+      ]
+    },
+    {
+      "hippodrome": "PORNICHET",
+      "course": "PRIX DE LA STATICE",
+      "distance": 2100,
+      "distBucket": "middle",
+      "type": "plat",
+      "nbPartants": 16,
+      "weightsUsed": {
+        "cheval": 0.48,
+        "jockey": 0.22,
+        "entraineur": 0.15,
+        "eleveur": 0.08,
+        "proprietaire": 0.07
+      },
+      "participants": [
+        {
+          "position": 1,
+          "cheval": "DRIP (GB)",
+          "jockey": "ENZO CORALLO",
+          "entraineur": "T. MAUDET",
+          "scorePredictif": 38.76,
+          "rangs": {
+            "cheval": null,
+            "jockey": 37,
+            "entraineur": 30
+          },
+          "rangPredit": 1
+        },
+        {
+          "position": 3,
+          "cheval": "CHESTER SKY (GB)",
+          "jockey": "ARNAUD BOURGEAIS",
+          "entraineur": "N. LEENDERS",
+          "scorePredictif": 25.84,
+          "rangs": {
+            "cheval": null,
+            "jockey": 48,
+            "entraineur": 337
+          },
+          "rangPredit": 2
+        },
+        {
+          "position": 5,
+          "cheval": "WAY TO MARBELLA GER",
+          "jockey": "CHRISTOPHER GROSBOIS",
+          "entraineur": "D. MESLIN",
+          "scorePredictif": 20.34,
+          "rangs": {
+            "cheval": null,
+            "jockey": 73,
+            "entraineur": 464
+          },
+          "rangPredit": 3
+        },
+        {
+          "position": 10,
+          "cheval": "CANNELLO",
+          "jockey": "LEONARD PLOMMEE",
+          "entraineur": "T. POCHE",
+          "scorePredictif": 17.6,
+          "rangs": {
+            "cheval": 748,
+            "jockey": 20,
+            "entraineur": 199
+          },
+          "rangPredit": 4
+        },
+        {
+          "position": 13,
+          "cheval": "GREAT CHARLIE",
+          "jockey": "HUGO LEBOUC",
+          "entraineur": "J. BOURGEAIS",
+          "scorePredictif": 16.5,
+          "rangs": {
+            "cheval": 767,
+            "jockey": 25,
+            "entraineur": 263
+          },
+          "rangPredit": 5
+        },
+        {
+          "position": 7,
+          "cheval": "AROWN",
+          "jockey": "AXEL BARON",
+          "entraineur": "L. EDON",
+          "scorePredictif": 16.28,
+          "rangs": {
+            "cheval": 784,
+            "jockey": 26,
+            "entraineur": 191
+          },
+          "rangPredit": 6
+        },
+        {
+          "position": 11,
+          "cheval": "KAPTAIN NORDIK",
+          "jockey": "LUDOVIC BOISSEAU",
+          "entraineur": "N. LEENDERS",
+          "scorePredictif": 10.12,
+          "rangs": {
+            "cheval": 1952,
+            "jockey": 54,
+            "entraineur": 337
+          },
+          "rangPredit": 7
+        },
+        {
+          "position": 12,
+          "cheval": "SCAT LADY",
+          "jockey": "NON PARTANT",
+          "entraineur": "N. PAYSAN",
+          "scorePredictif": 9.15,
+          "rangs": {
+            "cheval": 2038,
+            "jockey": null,
+            "entraineur": 83
+          },
+          "rangPredit": 8
+        },
+        {
+          "position": 2,
+          "cheval": "JUDICIOUS GAME",
+          "jockey": "FABRICE VERON",
+          "entraineur": "GAB. LEENDERS (S)",
+          "scorePredictif": 8.8,
+          "rangs": {
+            "cheval": 1104,
+            "jockey": 60,
+            "entraineur": 103
+          },
+          "rangPredit": 9
+        },
+        {
+          "position": 6,
+          "cheval": "NICE RULER",
+          "jockey": "LEO ROUSSEL",
+          "entraineur": "F. MONNIER (S)",
+          "scorePredictif": 7.48,
+          "rangs": {
+            "cheval": 1259,
+            "jockey": 66,
+            "entraineur": 240
+          },
+          "rangPredit": 10
+        },
+        {
+          "position": 15,
+          "cheval": "ANNA MANDARA",
+          "jockey": "JULIEN GUILLOCHON",
+          "entraineur": "E. MICHOT",
+          "scorePredictif": 7.26,
+          "rangs": {
+            "cheval": 2270,
+            "jockey": 67,
+            "entraineur": 448
+          },
+          "rangPredit": 11
+        },
+        {
+          "position": 4,
+          "cheval": "LUNATICOS",
+          "jockey": "WARREN LEVESQUE",
+          "entraineur": "T. MERCIER",
+          "scorePredictif": 4.4,
+          "rangs": {
+            "cheval": 1550,
+            "jockey": 80,
+            "entraineur": 167
+          },
+          "rangPredit": 12
+        },
+        {
+          "position": 8,
+          "cheval": "NEKOLETO",
+          "jockey": "NUNO MANUEL LOPES DUARTE",
+          "entraineur": "TJ. MARTINS NOVAIS",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 2287,
+            "jockey": 162,
+            "entraineur": 349
+          },
+          "rangPredit": 13
+        },
+        {
+          "position": 9,
+          "cheval": "AINTREEGIRL",
+          "jockey": "OLIVIER D' ANDIGNE",
+          "entraineur": "F. FOUCHER",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 1732,
+            "jockey": 159,
+            "entraineur": 398
+          },
+          "rangPredit": 14
+        },
+        {
+          "position": 14,
+          "cheval": "GOLDEN RIVER",
+          "jockey": "SEBASTIEN JUST",
+          "entraineur": "T. POCHE",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 1757,
+            "jockey": 199,
+            "entraineur": 199
+          },
+          "rangPredit": 15
+        },
+        {
+          "position": 16,
+          "cheval": "L'ETOILE DE FRANCE",
+          "jockey": "ANTHONY BERNARD",
+          "entraineur": "F. FOUCHER",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 1981,
+            "jockey": 120,
+            "entraineur": 398
+          },
+          "rangPredit": 16
+        }
+      ]
+    },
+    {
+      "hippodrome": "PORNICHET",
+      "course": "PRIX DES COQUILLAGES",
+      "distance": 2100,
+      "distBucket": "middle",
+      "type": "plat",
+      "nbPartants": 16,
+      "weightsUsed": {
+        "cheval": 0.48,
+        "jockey": 0.22,
+        "entraineur": 0.15,
+        "eleveur": 0.08,
+        "proprietaire": 0.07
+      },
+      "participants": [
+        {
+          "position": 3,
+          "cheval": "TERFAAS DESERT USA",
+          "jockey": "ADRIAN LE LAY MARTIN",
+          "entraineur": "FH. GRAFFARD (S)",
+          "scorePredictif": 43.55,
+          "rangs": {
+            "cheval": null,
+            "jockey": 35,
+            "entraineur": 1
+          },
+          "rangPredit": 1
+        },
+        {
+          "position": 5,
+          "cheval": "REVEUR (IRE)",
+          "jockey": "ENZO CORALLO",
+          "entraineur": "CHR. HEAD (S)",
+          "scorePredictif": 40.41,
+          "rangs": {
+            "cheval": null,
+            "jockey": 37,
+            "entraineur": 19
+          },
+          "rangPredit": 2
+        },
+        {
+          "position": 10,
+          "cheval": "CYMOPHANE (IRE)",
+          "jockey": "HUGO JOURNIAC",
+          "entraineur": "Y. BARBEROT (S)",
+          "scorePredictif": 25.95,
+          "rangs": {
+            "cheval": null,
+            "jockey": 101,
+            "entraineur": 23
+          },
+          "rangPredit": 3
+        },
+        {
+          "position": 11,
+          "cheval": "KECH IRE",
+          "jockey": "FABRICE VERON",
+          "entraineur": "J. BOISNARD (S)",
+          "scorePredictif": 23.2,
+          "rangs": {
+            "cheval": null,
+            "jockey": 60,
+            "entraineur": 184
+          },
+          "rangPredit": 4
+        },
+        {
+          "position": 16,
+          "cheval": "BANDAGIRL",
+          "jockey": "MAXIMILIEN JUSTUM",
+          "entraineur": "A. BARON",
+          "scorePredictif": 20.55,
+          "rangs": {
+            "cheval": null,
+            "jockey": 137,
+            "entraineur": 59
+          },
+          "rangPredit": 5
+        },
+        {
+          "position": 9,
+          "cheval": "PLENTY BLACK (IRE)",
+          "jockey": "PIERRE REMOUE",
+          "entraineur": "N. LE ROCH",
+          "scorePredictif": 20.28,
+          "rangs": {
+            "cheval": null,
+            "jockey": 76,
+            "entraineur": 96
+          },
+          "rangPredit": 6
+        },
+        {
+          "position": 4,
+          "cheval": "VARESI GB",
+          "jockey": "ENZO CRUBLET",
+          "entraineur": "M. BRASME (S)",
+          "scorePredictif": 17.26,
+          "rangs": {
+            "cheval": null,
+            "jockey": 87,
+            "entraineur": 172
+          },
+          "rangPredit": 7
+        },
+        {
+          "position": 2,
+          "cheval": "SANJI FAL",
+          "jockey": "HUGO LEBOUC",
+          "entraineur": "J. BOISNARD (S)",
+          "scorePredictif": 16.5,
+          "rangs": {
+            "cheval": 2229,
+            "jockey": 25,
+            "entraineur": 184
+          },
+          "rangPredit": 8
+        },
+        {
+          "position": 14,
+          "cheval": "DALERIYAN",
+          "jockey": "NUNO MANUEL LOPES DUARTE",
+          "entraineur": "S. PARADES (S)",
+          "scorePredictif": 14.4,
+          "rangs": {
+            "cheval": null,
+            "jockey": 162,
+            "entraineur": 524
+          },
+          "rangPredit": 9
+        },
+        {
+          "position": 15,
+          "cheval": "UNEHISTOIREANODINE",
+          "jockey": "ANTHONY BERNARD",
+          "entraineur": "N. LEENDERS",
+          "scorePredictif": 14.4,
+          "rangs": {
+            "cheval": null,
+            "jockey": 120,
+            "entraineur": 337
+          },
+          "rangPredit": 10
+        },
+        {
+          "position": 1,
+          "cheval": "PERCEVAL",
+          "jockey": "MAXENCE MARQUETTE",
+          "entraineur": "HA. PANTALL (S)",
+          "scorePredictif": 12.52,
+          "rangs": {
+            "cheval": 320,
+            "jockey": 69,
+            "entraineur": 62
+          },
+          "rangPredit": 11
+        },
+        {
+          "position": 7,
+          "cheval": "ADVENTURA",
+          "jockey": "LUDOVIC BOISSEAU",
+          "entraineur": "JPH. DUBOIS",
+          "scorePredictif": 10.12,
+          "rangs": {
+            "cheval": 2023,
+            "jockey": 54,
+            "entraineur": 304
+          },
+          "rangPredit": 12
+        },
+        {
+          "position": 12,
+          "cheval": "GOOD BYE DAVIER",
+          "jockey": "LEO ROUSSEL",
+          "entraineur": "ED. MONFORT (S)",
+          "scorePredictif": 7.48,
+          "rangs": {
+            "cheval": 1421,
+            "jockey": 66,
+            "entraineur": 116
+          },
+          "rangPredit": 13
+        },
+        {
+          "position": 8,
+          "cheval": "LA GENETTE",
+          "jockey": "JULIEN GUILLOCHON",
+          "entraineur": "FR. MONFORT (S)",
+          "scorePredictif": 7.26,
+          "rangs": {
+            "cheval": 1984,
+            "jockey": 67,
+            "entraineur": 106
+          },
+          "rangPredit": 14
+        },
+        {
+          "position": 6,
+          "cheval": "MERVEILLE",
+          "jockey": "MME FRIDA VALLE SKAR",
+          "entraineur": "G. BIETOLINI",
+          "scorePredictif": 7.04,
+          "rangs": {
+            "cheval": 357,
+            "jockey": 98,
+            "entraineur": 56
+          },
+          "rangPredit": 15
+        },
+        {
+          "position": 13,
+          "cheval": "PURPLE POWER",
+          "jockey": "OLIVIER D' ANDIGNE",
+          "entraineur": "J. BOISNARD (S)",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 2214,
+            "jockey": 159,
+            "entraineur": 184
+          },
+          "rangPredit": 16
+        }
+      ]
+    },
+    {
+      "hippodrome": "PORNICHET",
+      "course": "PRIX DE L'OBIONE",
+      "distance": 2100,
+      "distBucket": "middle",
+      "type": "plat",
+      "nbPartants": 16,
+      "weightsUsed": {
+        "cheval": 0.48,
+        "jockey": 0.22,
+        "entraineur": 0.15,
+        "eleveur": 0.08,
+        "proprietaire": 0.07
+      },
+      "participants": [
+        {
+          "position": 8,
+          "cheval": "SUPER CUTE (IRE)",
+          "jockey": "HUGO LEBOUC",
+          "entraineur": "F. PARDON",
+          "scorePredictif": 30.9,
+          "rangs": {
+            "cheval": null,
+            "jockey": 25,
+            "entraineur": 162
+          },
+          "rangPredit": 1
+        },
+        {
+          "position": 6,
+          "cheval": "DARIYANGEL",
+          "jockey": "LEONARD PLOMMEE",
+          "entraineur": "T. POCHE",
+          "scorePredictif": 17.6,
+          "rangs": {
+            "cheval": 1725,
+            "jockey": 20,
+            "entraineur": 199
+          },
+          "rangPredit": 2
+        },
+        {
+          "position": 10,
+          "cheval": "MEARAS STYLE",
+          "jockey": "AXEL BARON",
+          "entraineur": "B. LEGROS (S)",
+          "scorePredictif": 16.28,
+          "rangs": {
+            "cheval": 1363,
+            "jockey": 26,
+            "entraineur": 274
+          },
+          "rangPredit": 3
+        },
+        {
+          "position": 11,
+          "cheval": "SPINNING MIST GB",
+          "jockey": "RICHARD JUTEAU",
+          "entraineur": "T. POCHE",
+          "scorePredictif": 14.4,
+          "rangs": {
+            "cheval": null,
+            "jockey": 150,
+            "entraineur": 199
+          },
+          "rangPredit": 4
+        },
+        {
+          "position": 9,
+          "cheval": "LUCAS TREZY",
+          "jockey": "FABRICE VERON",
+          "entraineur": "A. FOUASSIER",
+          "scorePredictif": 14.2,
+          "rangs": {
+            "cheval": 1893,
+            "jockey": 60,
+            "entraineur": 64
+          },
+          "rangPredit": 5
+        },
+        {
+          "position": 14,
+          "cheval": "ALGOT",
+          "jockey": "JULIEN GUILLOCHON",
+          "entraineur": "B. LEVESQUE",
+          "scorePredictif": 11.76,
+          "rangs": {
+            "cheval": 2282,
+            "jockey": 67,
+            "entraineur": null
+          },
+          "rangPredit": 6
+        },
+        {
+          "position": 13,
+          "cheval": "IN THE ARMY NOW",
+          "jockey": "LUDOVIC BOISSEAU",
+          "entraineur": "S. GOUYETTE (S)",
+          "scorePredictif": 10.12,
+          "rangs": {
+            "cheval": 480,
+            "jockey": 54,
+            "entraineur": 161
+          },
+          "rangPredit": 7
+        },
+        {
+          "position": 12,
+          "cheval": "PALMEIRA EMERY",
+          "jockey": "LEO ROUSSEL",
+          "entraineur": "J. PLANQUE (S)",
+          "scorePredictif": 7.48,
+          "rangs": {
+            "cheval": 2142,
+            "jockey": 66,
+            "entraineur": 342
+          },
+          "rangPredit": 8
+        },
+        {
+          "position": 4,
+          "cheval": "ESKANDANI",
+          "jockey": "CHRISTOPHER GROSBOIS",
+          "entraineur": "CH. PLISSON (S)",
+          "scorePredictif": 5.94,
+          "rangs": {
+            "cheval": 1240,
+            "jockey": 73,
+            "entraineur": 244
+          },
+          "rangPredit": 9
+        },
+        {
+          "position": 16,
+          "cheval": "LADIVA",
+          "jockey": "PIERRE REMOUE",
+          "entraineur": "O. REGLEY",
+          "scorePredictif": 5.28,
+          "rangs": {
+            "cheval": 2287,
+            "jockey": 76,
+            "entraineur": 384
+          },
+          "rangPredit": 10
+        },
+        {
+          "position": 15,
+          "cheval": "FIRST DREM",
+          "jockey": "WARREN LEVESQUE",
+          "entraineur": "G. JUILLET",
+          "scorePredictif": 4.4,
+          "rangs": {
+            "cheval": 2030,
+            "jockey": 80,
+            "entraineur": 397
+          },
+          "rangPredit": 11
+        },
+        {
+          "position": 1,
+          "cheval": "GWENN HA DU",
+          "jockey": "ENZO CRUBLET",
+          "entraineur": "F. HAYERES (S)",
+          "scorePredictif": 2.86,
+          "rangs": {
+            "cheval": 2287,
+            "jockey": 87,
+            "entraineur": 173
+          },
+          "rangPredit": 12
+        },
+        {
+          "position": 2,
+          "cheval": "MURANO",
+          "jockey": "MME JULIA LACROIX",
+          "entraineur": "B. LEGROS (S)",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 340,
+            "jockey": 123,
+            "entraineur": 274
+          },
+          "rangPredit": 13
+        },
+        {
+          "position": 3,
+          "cheval": "ALREADY QUEEN",
+          "jockey": "MAXIMILIEN JUSTUM",
+          "entraineur": "A. LOTOUT",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 1418,
+            "jockey": 137,
+            "entraineur": 223
+          },
+          "rangPredit": 14
+        },
+        {
+          "position": 5,
+          "cheval": "LOVECAYAN",
+          "jockey": "ANTHONY BERNARD",
+          "entraineur": "A. LOTOUT",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 1359,
+            "jockey": 120,
+            "entraineur": 223
+          },
+          "rangPredit": 15
+        },
+        {
+          "position": 7,
+          "cheval": "SEMEUR",
+          "jockey": "SEBASTIEN JUST",
+          "entraineur": "T. POCHE",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 1534,
+            "jockey": 199,
+            "entraineur": 199
+          },
+          "rangPredit": 16
+        }
+      ]
+    },
+    {
+      "hippodrome": "PORNICHET",
+      "course": "PRIX ALEXANDRE ROUSSEL",
+      "distance": 3100,
+      "distBucket": "staying",
+      "type": "plat",
+      "nbPartants": 14,
+      "weightsUsed": {
+        "cheval": 0.42,
+        "jockey": 0.28,
+        "entraineur": 0.15,
+        "eleveur": 0.08,
+        "proprietaire": 0.07
+      },
+      "participants": [
+        {
+          "position": 6,
+          "cheval": "PLATEADO",
+          "jockey": "ANTOINE WERLE",
+          "entraineur": "MME S. GAVILAN",
+          "scorePredictif": 24.36,
+          "rangs": {
+            "cheval": 2287,
+            "jockey": 13,
+            "entraineur": 108
+          },
+          "rangPredit": 1
+        },
+        {
+          "position": 8,
+          "cheval": "MEXICAN DREAM",
+          "jockey": "HUGO LEBOUC",
+          "entraineur": "F. PARDON",
+          "scorePredictif": 21,
+          "rangs": {
+            "cheval": 913,
+            "jockey": 25,
+            "entraineur": 162
+          },
+          "rangPredit": 2
+        },
+        {
+          "position": 2,
+          "cheval": "HUCHENANE",
+          "jockey": "LEO ROUSSEL",
+          "entraineur": "C. LOTOUX (S)",
+          "scorePredictif": 18.67,
+          "rangs": {
+            "cheval": 905,
+            "jockey": 66,
+            "entraineur": 39
+          },
+          "rangPredit": 3
+        },
+        {
+          "position": 10,
+          "cheval": "LA TORNADE",
+          "jockey": "LUDOVIC BOISSEAU",
+          "entraineur": "A. FOUASSIER",
+          "scorePredictif": 18.28,
+          "rangs": {
+            "cheval": 950,
+            "jockey": 54,
+            "entraineur": 64
+          },
+          "rangPredit": 4
+        },
+        {
+          "position": 4,
+          "cheval": "KER STORMY",
+          "jockey": "ARNAUD BOURGEAIS",
+          "entraineur": "N. LEENDERS",
+          "scorePredictif": 14.56,
+          "rangs": {
+            "cheval": 1968,
+            "jockey": 48,
+            "entraineur": 337
+          },
+          "rangPredit": 5
+        },
+        {
+          "position": 12,
+          "cheval": "SPIRIT OF DANCE (IRE)",
+          "jockey": "MAXIMILIEN JUSTUM",
+          "entraineur": "T. MERCIER",
+          "scorePredictif": 12.6,
+          "rangs": {
+            "cheval": null,
+            "jockey": 137,
+            "entraineur": 167
+          },
+          "rangPredit": 6
+        },
+        {
+          "position": 13,
+          "cheval": "RIGEL",
+          "jockey": "FABRICE VERON",
+          "entraineur": "ED. MONFORT (S)",
+          "scorePredictif": 11.2,
+          "rangs": {
+            "cheval": 1295,
+            "jockey": 60,
+            "entraineur": 116
+          },
+          "rangPredit": 7
+        },
+        {
+          "position": 9,
+          "cheval": "YEMASKA",
+          "jockey": "JULIEN GUILLOCHON",
+          "entraineur": "G. JUILLET",
+          "scorePredictif": 9.24,
+          "rangs": {
+            "cheval": 2197,
+            "jockey": 67,
+            "entraineur": 397
+          },
+          "rangPredit": 8
+        },
+        {
+          "position": 11,
+          "cheval": "BY FAR",
+          "jockey": "CHRISTOPHER GROSBOIS",
+          "entraineur": "P. LERAY",
+          "scorePredictif": 7.56,
+          "rangs": {
+            "cheval": 932,
+            "jockey": 73,
+            "entraineur": 111
+          },
+          "rangPredit": 9
+        },
+        {
+          "position": 1,
+          "cheval": "LA GUERCHE",
+          "jockey": "WARREN LEVESQUE",
+          "entraineur": "FR. MONFORT (S)",
+          "scorePredictif": 5.6,
+          "rangs": {
+            "cheval": 306,
+            "jockey": 80,
+            "entraineur": 106
+          },
+          "rangPredit": 10
+        },
+        {
+          "position": 3,
+          "cheval": "KAMAKURA ONE",
+          "jockey": "GLEN MEURY",
+          "entraineur": "A. FOUASSIER",
+          "scorePredictif": 5.4,
+          "rangs": {
+            "cheval": 2016,
+            "jockey": 118,
+            "entraineur": 64
+          },
+          "rangPredit": 11
+        },
+        {
+          "position": 7,
+          "cheval": "ODIN NORMANDY",
+          "jockey": "ENZO CRUBLET",
+          "entraineur": "M. BRASME (S)",
+          "scorePredictif": 3.64,
+          "rangs": {
+            "cheval": 765,
+            "jockey": 87,
+            "entraineur": 172
+          },
+          "rangPredit": 12
+        },
+        {
+          "position": 5,
+          "cheval": "FORZA SEDACA",
+          "jockey": "MME SOPHIE TISON",
+          "entraineur": "I. RAYBOULD",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 985,
+            "jockey": 122,
+            "entraineur": 337
+          },
+          "rangPredit": 13
+        },
+        {
+          "position": 14,
+          "cheval": "CAPTAIN EAGLE",
+          "jockey": "NICOLAS BAUDET",
+          "entraineur": "MME S. GEFFRIAUD",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 1804,
+            "jockey": 167,
+            "entraineur": 408
+          },
+          "rangPredit": 14
+        }
+      ]
+    },
+    {
+      "hippodrome": "PORNICHET",
+      "course": "PRIX DE L'AMANDE DE MER",
+      "distance": 3100,
+      "distBucket": "staying",
+      "type": "plat",
+      "nbPartants": 12,
+      "weightsUsed": {
+        "cheval": 0.42,
+        "jockey": 0.28,
+        "entraineur": 0.15,
+        "eleveur": 0.08,
+        "proprietaire": 0.07
+      },
+      "participants": [
+        {
+          "position": 6,
+          "cheval": "MARACAMAYA",
+          "jockey": "HUGO LEBOUC",
+          "entraineur": "V. CHATELLIER",
+          "scorePredictif": 32.7,
+          "rangs": {
+            "cheval": 890,
+            "jockey": 25,
+            "entraineur": 22
+          },
+          "rangPredit": 1
+        },
+        {
+          "position": 7,
+          "cheval": "ANGLESEA",
+          "jockey": "MME ALISON MASSIN",
+          "entraineur": "Y. BARBEROT (S)",
+          "scorePredictif": 27.51,
+          "rangs": {
+            "cheval": null,
+            "jockey": 88,
+            "entraineur": 23
+          },
+          "rangPredit": 2
+        },
+        {
+          "position": 5,
+          "cheval": "WESTMINSTER PILOT GB",
+          "jockey": "MAXENCE MARQUETTE",
+          "entraineur": "HA. PANTALL (S)",
+          "scorePredictif": 26.98,
+          "rangs": {
+            "cheval": null,
+            "jockey": 69,
+            "entraineur": 62
+          },
+          "rangPredit": 3
+        },
+        {
+          "position": 10,
+          "cheval": "KEEN LADY",
+          "jockey": "AXEL BARON",
+          "entraineur": "JPH. DUBOIS",
+          "scorePredictif": 20.72,
+          "rangs": {
+            "cheval": 468,
+            "jockey": 26,
+            "entraineur": 304
+          },
+          "rangPredit": 4
+        },
+        {
+          "position": 9,
+          "cheval": "LEONA REGINA",
+          "jockey": "LUDOVIC BOISSEAU",
+          "entraineur": "S. GOUYETTE (S)",
+          "scorePredictif": 12.88,
+          "rangs": {
+            "cheval": 1740,
+            "jockey": 54,
+            "entraineur": 161
+          },
+          "rangPredit": 5
+        },
+        {
+          "position": 4,
+          "cheval": "LIGHT KING",
+          "jockey": "ANTHONY BERNARD",
+          "entraineur": "S. MORINEAU",
+          "scorePredictif": 12.6,
+          "rangs": {
+            "cheval": null,
+            "jockey": 120,
+            "entraineur": 437
+          },
+          "rangPredit": 6
+        },
+        {
+          "position": 11,
+          "cheval": "MISS ELORZ (FR)",
+          "jockey": "NUNO MANUEL LOPES DUARTE",
+          "entraineur": "TJ. MARTINS NOVAIS",
+          "scorePredictif": 12.6,
+          "rangs": {
+            "cheval": null,
+            "jockey": 162,
+            "entraineur": 349
+          },
+          "rangPredit": 7
+        },
+        {
+          "position": 8,
+          "cheval": "CAMELARUA",
+          "jockey": "HUGO JOURNIAC",
+          "entraineur": "Y. BARBEROT (S)",
+          "scorePredictif": 11.55,
+          "rangs": {
+            "cheval": 1298,
+            "jockey": 101,
+            "entraineur": 23
+          },
+          "rangPredit": 8
+        },
+        {
+          "position": 2,
+          "cheval": "ZYMEK",
+          "jockey": "MME LAURA POGGIONOVO",
+          "entraineur": "J. JOUIN",
+          "scorePredictif": 5.88,
+          "rangs": {
+            "cheval": 2232,
+            "jockey": 79,
+            "entraineur": 516
+          },
+          "rangPredit": 9
+        },
+        {
+          "position": 1,
+          "cheval": "PAGAN SUN",
+          "jockey": "WARREN LEVESQUE",
+          "entraineur": "FR. MONFORT (S)",
+          "scorePredictif": 5.6,
+          "rangs": {
+            "cheval": 2246,
+            "jockey": 80,
+            "entraineur": 106
+          },
+          "rangPredit": 10
+        },
+        {
+          "position": 3,
+          "cheval": "HARTMAN",
+          "jockey": "OLIVIER D' ANDIGNE",
+          "entraineur": "A. COUETIL (S)",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 2069,
+            "jockey": 159,
+            "entraineur": 231
+          },
+          "rangPredit": 11
+        },
+        {
+          "position": 12,
+          "cheval": "TOUZ DREAM",
+          "jockey": "NICOLAS BAUDET",
+          "entraineur": "D. BERNIER",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 2109,
+            "jockey": 167,
+            "entraineur": 459
+          },
+          "rangPredit": 12
+        }
+      ]
+    },
+    {
+      "hippodrome": "PORNICHET",
+      "course": "PRIX DES CEPHALOPODES",
+      "distance": 3100,
+      "distBucket": "staying",
+      "type": "plat",
+      "nbPartants": 16,
+      "weightsUsed": {
+        "cheval": 0.42,
+        "jockey": 0.28,
+        "entraineur": 0.15,
+        "eleveur": 0.08,
+        "proprietaire": 0.07
+      },
+      "participants": [
+        {
+          "position": 3,
+          "cheval": "JORIS",
+          "jockey": "FABIEN LEFEBVRE",
+          "entraineur": "M. NEY",
+          "scorePredictif": 24.08,
+          "rangs": {
+            "cheval": 2258,
+            "jockey": 14,
+            "entraineur": 315
+          },
+          "rangPredit": 1
+        },
+        {
+          "position": 14,
+          "cheval": "DSCHINGIS ANGEL",
+          "jockey": "HUGO LEBOUC",
+          "entraineur": "T. POCHE",
+          "scorePredictif": 21,
+          "rangs": {
+            "cheval": 1330,
+            "jockey": 25,
+            "entraineur": 199
+          },
+          "rangPredit": 2
+        },
+        {
+          "position": 6,
+          "cheval": "MY DARLING",
+          "jockey": "AXEL BARON",
+          "entraineur": "MME S. LESAGE DE LA HAYE",
+          "scorePredictif": 20.72,
+          "rangs": {
+            "cheval": 1223,
+            "jockey": 26,
+            "entraineur": 326
+          },
+          "rangPredit": 3
+        },
+        {
+          "position": 10,
+          "cheval": "JOURDEGLOIREDARMOR",
+          "jockey": "CHRISTOPHER GROSBOIS",
+          "entraineur": "L. HERVO",
+          "scorePredictif": 15.96,
+          "rangs": {
+            "cheval": 254,
+            "jockey": 73,
+            "entraineur": 44
+          },
+          "rangPredit": 4
+        },
+        {
+          "position": 11,
+          "cheval": "RUE DES ORTEAUX",
+          "jockey": "FABRICE VERON",
+          "entraineur": "B. LEGROS (S)",
+          "scorePredictif": 11.2,
+          "rangs": {
+            "cheval": 1997,
+            "jockey": 60,
+            "entraineur": 274
+          },
+          "rangPredit": 5
+        },
+        {
+          "position": 8,
+          "cheval": "VIANETA",
+          "jockey": "LEO ROUSSEL",
+          "entraineur": "E. LECOIFFIER",
+          "scorePredictif": 9.52,
+          "rangs": {
+            "cheval": 976,
+            "jockey": 66,
+            "entraineur": 132
+          },
+          "rangPredit": 6
+        },
+        {
+          "position": 12,
+          "cheval": "JOLEK LISES",
+          "jockey": "JULIEN GUILLOCHON",
+          "entraineur": "MME V. SEIGNOUX",
+          "scorePredictif": 9.24,
+          "rangs": {
+            "cheval": 2287,
+            "jockey": 67,
+            "entraineur": 524
+          },
+          "rangPredit": 7
+        },
+        {
+          "position": 4,
+          "cheval": "EASY ON ME",
+          "jockey": "MME LAURA POGGIONOVO",
+          "entraineur": "G. FOURRIER",
+          "scorePredictif": 5.88,
+          "rangs": {
+            "cheval": 1713,
+            "jockey": 79,
+            "entraineur": 283
+          },
+          "rangPredit": 8
+        },
+        {
+          "position": 15,
+          "cheval": "FIVE BY FIVE",
+          "jockey": "MME ALISON MASSIN",
+          "entraineur": "S. MORINEAU",
+          "scorePredictif": 3.36,
+          "rangs": {
+            "cheval": 2203,
+            "jockey": 88,
+            "entraineur": 437
+          },
+          "rangPredit": 9
+        },
+        {
+          "position": 1,
+          "cheval": "LELLA DESJY",
+          "jockey": "SEBASTIEN JUST",
+          "entraineur": "T. POCHE",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 2287,
+            "jockey": 199,
+            "entraineur": 199
+          },
+          "rangPredit": 10
+        },
+        {
+          "position": 2,
+          "cheval": "LADY DU SAPHIR",
+          "jockey": "MAXIMILIEN JUSTUM",
+          "entraineur": "M. JUSTUM",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 1006,
+            "jockey": 137,
+            "entraineur": 339
+          },
+          "rangPredit": 11
+        },
+        {
+          "position": 5,
+          "cheval": "PLUIE D'ARAIZE",
+          "jockey": "RICHARD JUTEAU",
+          "entraineur": "T. POCHE",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 2110,
+            "jockey": 150,
+            "entraineur": 199
+          },
+          "rangPredit": 12
+        },
+        {
+          "position": 7,
+          "cheval": "MORNING FIVE",
+          "jockey": "OLIVIER D' ANDIGNE",
+          "entraineur": "GER. LECOMTE",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 1052,
+            "jockey": 159,
+            "entraineur": 305
+          },
+          "rangPredit": 13
+        },
+        {
+          "position": 9,
+          "cheval": "MAGIC VATI",
+          "jockey": "MME JULIA LACROIX",
+          "entraineur": "B. LEGROS (S)",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 1986,
+            "jockey": 123,
+            "entraineur": 274
+          },
+          "rangPredit": 14
+        },
+        {
+          "position": 13,
+          "cheval": "MONT STEELE",
+          "jockey": "ANTHONY BERNARD",
+          "entraineur": "S. MORINEAU",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 1743,
+            "jockey": 120,
+            "entraineur": 437
+          },
+          "rangPredit": 15
+        },
+        {
+          "position": 16,
+          "cheval": "PONTD'YEU",
+          "jockey": "GLEN MEURY",
+          "entraineur": "M. NEY",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 1642,
+            "jockey": 118,
+            "entraineur": 315
+          },
+          "rangPredit": 16
+        }
+      ]
+    },
+    {
+      "hippodrome": "PORNICHET",
+      "course": "PRIX DE L'ETOILE DE MER",
+      "distance": 1700,
+      "distBucket": "mile",
+      "type": "plat",
+      "nbPartants": 13,
+      "weightsUsed": {
+        "cheval": 0.5,
+        "jockey": 0.2,
+        "entraineur": 0.15,
+        "eleveur": 0.08,
+        "proprietaire": 0.07
+      },
+      "participants": [
+        {
+          "position": 3,
+          "cheval": "TOIMY SON H.PS. 7 A. 100%",
+          "jockey": "ANTOINE WERLE",
+          "entraineur": "MME C. HERISSON DE BEAUVOIR",
+          "scorePredictif": 32.4,
+          "rangs": {
+            "cheval": null,
+            "jockey": 13,
+            "entraineur": 250
+          },
+          "rangPredit": 1
+        },
+        {
+          "position": 1,
+          "cheval": "DAPANGO GER H.PS. 7 A. 85%",
+          "jockey": "PIERRE REMOUE",
+          "entraineur": "ED. MONFORT (S)",
+          "scorePredictif": 19.8,
+          "rangs": {
+            "cheval": null,
+            "jockey": 76,
+            "entraineur": 116
+          },
+          "rangPredit": 2
+        },
+        {
+          "position": 13,
+          "cheval": "MISS JANG",
+          "jockey": "TIMOTHE BREBION",
+          "entraineur": "E. LERAY (S)",
+          "scorePredictif": 17.8,
+          "rangs": {
+            "cheval": null,
+            "jockey": 86,
+            "entraineur": 134
+          },
+          "rangPredit": 3
+        },
+        {
+          "position": 5,
+          "cheval": "MRS HOLIDAY",
+          "jockey": "MAXIMILIEN JUSTUM",
+          "entraineur": "M. JUSTUM",
+          "scorePredictif": 15,
+          "rangs": {
+            "cheval": null,
+            "jockey": 137,
+            "entraineur": 339
+          },
+          "rangPredit": 4
+        },
+        {
+          "position": 9,
+          "cheval": "GREAT ART",
+          "jockey": "HUGO LEBOUC",
+          "entraineur": "J. BOISNARD (S)",
+          "scorePredictif": 15,
+          "rangs": {
+            "cheval": 1702,
+            "jockey": 25,
+            "entraineur": 184
+          },
+          "rangPredit": 5
+        },
+        {
+          "position": 10,
+          "cheval": "KEREMET",
+          "jockey": "AXEL BARON",
+          "entraineur": "L. EDON",
+          "scorePredictif": 14.8,
+          "rangs": {
+            "cheval": 2132,
+            "jockey": 26,
+            "entraineur": 191
+          },
+          "rangPredit": 6
+        },
+        {
+          "position": 4,
+          "cheval": "BONNY GLITTERS",
+          "jockey": "FABRICE VERON",
+          "entraineur": "A. FOUASSIER",
+          "scorePredictif": 13.4,
+          "rangs": {
+            "cheval": 246,
+            "jockey": 60,
+            "entraineur": 64
+          },
+          "rangPredit": 7
+        },
+        {
+          "position": 12,
+          "cheval": "BLOWN BY THE WIND",
+          "jockey": "MAXENCE MARQUETTE",
+          "entraineur": "HA. PANTALL (S)",
+          "scorePredictif": 11.9,
+          "rangs": {
+            "cheval": 2190,
+            "jockey": 69,
+            "entraineur": 62
+          },
+          "rangPredit": 8
+        },
+        {
+          "position": 2,
+          "cheval": "GOGUEN SPAISE",
+          "jockey": "LEO ROUSSEL",
+          "entraineur": "ED. MONFORT (S)",
+          "scorePredictif": 6.8,
+          "rangs": {
+            "cheval": 1656,
+            "jockey": 66,
+            "entraineur": 116
+          },
+          "rangPredit": 9
+        },
+        {
+          "position": 6,
+          "cheval": "NEYSHAPUR",
+          "jockey": "GLEN MEURY",
+          "entraineur": "H. GREWE",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 1891,
+            "jockey": 118,
+            "entraineur": 105
+          },
+          "rangPredit": 10
+        },
+        {
+          "position": 7,
+          "cheval": "BAILEYS TOPAZE",
+          "jockey": "HUGO JOURNIAC",
+          "entraineur": "J. BOISNARD (S)",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 2049,
+            "jockey": 101,
+            "entraineur": 184
+          },
+          "rangPredit": 11
+        },
+        {
+          "position": 8,
+          "cheval": "CICCIO BOY",
+          "jockey": "MME JULIA LACROIX",
+          "entraineur": "M. JUSTUM",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 933,
+            "jockey": 123,
+            "entraineur": 339
+          },
+          "rangPredit": 12
+        },
+        {
+          "position": 11,
+          "cheval": "BAY MOON",
+          "jockey": "ANTHONY BERNARD",
+          "entraineur": "N. LEENDERS",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 2079,
+            "jockey": 120,
+            "entraineur": 337
+          },
+          "rangPredit": 13
+        }
+      ]
+    },
+    {
+      "hippodrome": "PORNICHET",
+      "course": "PRIX DES DAUPHINS",
+      "distance": 2400,
+      "distBucket": "staying",
+      "type": "plat",
+      "nbPartants": 8,
+      "weightsUsed": {
+        "cheval": 0.42,
+        "jockey": 0.28,
+        "entraineur": 0.15,
+        "eleveur": 0.08,
+        "proprietaire": 0.07
+      },
+      "participants": [
+        {
+          "position": 1,
+          "cheval": "DIXMUDE (IRE)",
+          "jockey": "ADRIAN LE LAY MARTIN",
+          "entraineur": "FH. GRAFFARD (S)",
+          "scorePredictif": 45.65,
+          "rangs": {
+            "cheval": null,
+            "jockey": 35,
+            "entraineur": 1
+          },
+          "rangPredit": 1
+        },
+        {
+          "position": 7,
+          "cheval": "HEMATITE IRE",
+          "jockey": "MME JULIA LACROIX",
+          "entraineur": "B. LEGROS (S)",
+          "scorePredictif": 12.6,
+          "rangs": {
+            "cheval": null,
+            "jockey": 123,
+            "entraineur": 274
+          },
+          "rangPredit": 2
+        },
+        {
+          "position": 8,
+          "cheval": "SANDON",
+          "jockey": "JULIEN GUILLOCHON",
+          "entraineur": "E. MICHOT",
+          "scorePredictif": 9.24,
+          "rangs": {
+            "cheval": 1523,
+            "jockey": 67,
+            "entraineur": 448
+          },
+          "rangPredit": 3
+        },
+        {
+          "position": 6,
+          "cheval": "ELFENN",
+          "jockey": "NON PARTANT",
+          "entraineur": "J. BOISNARD (S)",
+          "scorePredictif": 8.4,
+          "rangs": {
+            "cheval": 1334,
+            "jockey": null,
+            "entraineur": 184
+          },
+          "rangPredit": 4
+        },
+        {
+          "position": 2,
+          "cheval": "GABYLOU",
+          "jockey": "MME LAURA POGGIONOVO",
+          "entraineur": "G. FOURRIER",
+          "scorePredictif": 5.88,
+          "rangs": {
+            "cheval": 2280,
+            "jockey": 79,
+            "entraineur": 283
+          },
+          "rangPredit": 5
+        },
+        {
+          "position": 3,
+          "cheval": "SYNERGETIC",
+          "jockey": "OLIVIER D' ANDIGNE",
+          "entraineur": "A. COUETIL (S)",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 1995,
+            "jockey": 159,
+            "entraineur": 231
+          },
+          "rangPredit": 6
+        },
+        {
+          "position": 4,
+          "cheval": "LARLIB",
+          "jockey": "HUGO JOURNIAC",
+          "entraineur": "M. DELZANGLES",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 1898,
+            "jockey": 101,
+            "entraineur": 143
+          },
+          "rangPredit": 7
+        },
+        {
+          "position": 5,
+          "cheval": "MERRY BLUES",
+          "jockey": "NUNO MANUEL LOPES DUARTE",
+          "entraineur": "Y. DAUCE",
+          "scorePredictif": 0,
+          "rangs": {
+            "cheval": 2271,
+            "jockey": 162,
+            "entraineur": 247
+          },
+          "rangPredit": 8
+        }
+      ]
+    }
+  ]
+}

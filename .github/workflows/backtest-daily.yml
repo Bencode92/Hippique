@@ -1,0 +1,67 @@
+name: Backtest quotidien - Prédictions vs Résultats
+
+on:
+  # Tous les soirs à 22h UTC (minuit en France) après les courses
+  schedule:
+    - cron: '0 22 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: pip install requests
+
+      - name: Créer les dossiers
+        run: mkdir -p data/predictions data/backtest data/courses
+
+      # Étape 1 : Récupérer les courses du jour via API PMU
+      - name: Extraire les courses du jour
+        run: python scraper_courses_pmu.py
+
+      # Étape 2 : Sauvegarder les prédictions et comparer aux résultats
+      - name: Backtesting du jour
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          echo "=== Backtesting pour $TODAY ==="
+          node backtesting.js save $TODAY
+          node backtesting.js compare $TODAY
+
+      # Étape 3 : Optimiser les poids si assez de données
+      - name: Optimisation des poids
+        run: node backtesting.js optimize
+
+      # Étape 4 : Commit les résultats
+      - name: Commit et push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action - Backtest"
+
+          git add data/predictions/ data/backtest/ data/courses/ 2>/dev/null || true
+
+          if git diff --cached --quiet; then
+            echo "Aucun changement"
+          else
+            git commit -m "📊 Backtest $(date +%Y-%m-%d) - prédictions vs résultats"
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
