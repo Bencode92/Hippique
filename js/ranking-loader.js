@@ -1857,16 +1857,26 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         
         // Pour les éleveurs et propriétaires qui peuvent être multiples
         if (categorie === 'eleveurs' || categorie === 'proprietaires') {
-            // Si c'est une chaîne, la diviser sur les virgules et autres séparateurs
-            // AMÉLIORÉ: meilleure prise en charge des séparateurs et nettoyage de l'ellipse finale
             let noms = [];
             if (typeof nom === 'string') {
-                // Nettoyer d'abord l'ellipse en fin de chaîne s'il y en a une
                 const nomSansEllipse = this.nettoyerNomTronque(nom);
                 noms = nomSansEllipse.split(/\s*[,&\/+]\s*|\s+et\s+|\s+and\s+/i).filter(n => n.trim());
             } else {
                 noms = [nom];
             }
+
+            // Nettoyer les noms de société : STE ENTR., SARL, SAS, S.C.E.A., etc.
+            noms = noms.map(n => {
+                return n.replace(/\b(STE|SOCIETE|SOCIÉTÉ)\s*(ENTR\.?|D'ENTRAINEMENT)?\s*/gi, '')
+                        .replace(/S\.?A\.?R\.?L\.?\s*/gi, '')
+                        .replace(/S\.?C\.?E\.?A\.?\s*/gi, '')
+                        .replace(/S\.?A\.?S\.?\s*/gi, '')
+                        .replace(/\b(SNC|EARL|GAEC|GIE|BVBA|HOLDING|LTD)\b/gi, '')
+                        .replace(/\bHARAS\s+(DU|DE|DES|D')\s*/gi, 'HARAS ')
+                        .replace(/\s*\(S\)\s*/g, '')
+                        .replace(/\s+/g, ' ')
+                        .trim();
+            }).filter(n => n.length >= 3);
             
             if (noms.length === 0 || !noms[0]) {
                 return null;
@@ -1937,16 +1947,26 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         
         // Pour les éleveurs et propriétaires qui peuvent être multiples
         if (categorie === 'eleveurs' || categorie === 'proprietaires') {
-            // Si c'est une chaîne, la diviser sur les virgules et autres séparateurs
-            // AMÉLIORÉ: meilleure prise en charge des séparateurs et nettoyage de l'ellipse finale
             let noms = [];
             if (typeof nom === 'string') {
-                // Nettoyer d'abord l'ellipse en fin de chaîne s'il y en a une
                 const nomSansEllipse = this.nettoyerNomTronque(nom);
                 noms = nomSansEllipse.split(/\s*[,&\/+]\s*|\s+et\s+|\s+and\s+/i).filter(n => n.trim());
             } else {
                 noms = [nom];
             }
+
+            // Nettoyer les noms de société : STE ENTR., SARL, SAS, S.C.E.A., etc.
+            noms = noms.map(n => {
+                return n.replace(/\b(STE|SOCIETE|SOCIÉTÉ)\s*(ENTR\.?|D'ENTRAINEMENT)?\s*/gi, '')
+                        .replace(/S\.?A\.?R\.?L\.?\s*/gi, '')
+                        .replace(/S\.?C\.?E\.?A\.?\s*/gi, '')
+                        .replace(/S\.?A\.?S\.?\s*/gi, '')
+                        .replace(/\b(SNC|EARL|GAEC|GIE|BVBA|HOLDING|LTD)\b/gi, '')
+                        .replace(/\bHARAS\s+(DU|DE|DES|D')\s*/gi, 'HARAS ')
+                        .replace(/\s*\(S\)\s*/g, '')
+                        .replace(/\s+/g, ' ')
+                        .trim();
+            }).filter(n => n.length >= 3);
             
             if (noms.length === 0 || !noms[0]) {
                 return null;
