@@ -655,10 +655,38 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             this.loadCategoryData('cravache_or'),
             this.loadHistoricalData(),
             this.loadDistanceStats(),
-            this.loadFormeRecente()
+            this.loadFormeRecente(),
+            this.loadClaudeCorrespondances()
         ];
 
         return Promise.all(promises);
+    },
+
+    // Charger les correspondances découvertes par Claude (fuzzy matching IA)
+    async loadClaudeCorrespondances() {
+        try {
+            const url = 'https://raw.githubusercontent.com/Bencode92/Hippique/main/data/claude_correspondances.json';
+            const response = await fetch(url);
+            if (!response.ok) return;
+
+            const data = await response.json();
+            let added = 0;
+
+            // Ajouter les correspondances à la table manuelle
+            for (const [source, info] of Object.entries(data.correspondances || {})) {
+                if (info.confiance >= 80 && info.match) {
+                    this.correspondanceManuelle[source] = info.match;
+                    added++;
+                }
+            }
+
+            // Marquer les étrangers pour ne pas les chercher (économise du temps)
+            this._etrangers = new Set(data.etrangers || []);
+
+            console.log(`✅ Correspondances Claude chargées: ${added} matchs, ${this._etrangers.size} étrangers`);
+        } catch (err) {
+            // Fichier pas encore créé, pas grave
+        }
     },
 
     // Charger les stats par distance (taux victoire/place par bucket)
@@ -1547,9 +1575,14 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             return { score: 0, rang: null, item: null };
         }
         
+        // Court-circuit : si le nom est marqué étranger par Claude, ne pas chercher
+        if (this._etrangers && this._etrangers.has(nom.toUpperCase().trim())) {
+            return { score: 0, rang: null, item: null };
+        }
+
         // Nettoyer les noms tronqués (avec ...)
         nom = this.nettoyerNomTronque(nom);
-        
+
         // Standardiser les apostrophes et autres cas spéciaux
         nom = this.normaliserNomAvecApostrophe(nom);
         
