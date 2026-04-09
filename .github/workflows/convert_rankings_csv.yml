@@ -1,6 +1,12 @@
 name: Convert Rankings CSV to JSON
+
 on:
-  workflow_dispatch: # Exécution manuelle uniquement
+  # Se déclenche automatiquement quand des CSV sont modifiés dans data/raw_csv/
+  push:
+    paths:
+      - 'data/raw_csv/*.csv'
+  # Permet aussi l'exécution manuelle
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -33,7 +39,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "Aucun changement"
           else
-            git commit -m "📊 Rankings CSV → JSON - $(date +'%Y-%m-%d')"
+            git commit -m "CSV → JSON - $(date +'%Y-%m-%d')"
             git push
           fi
         env:

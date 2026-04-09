@@ -1,9 +1,11 @@
 name: Pipeline Complet - Extraction → Rankings → Stats → Forme
 
 on:
-  # Se déclenche automatiquement après l'extraction des données
+  # Se déclenche automatiquement après l'extraction OU après conversion CSV
   workflow_run:
-    workflows: ["France Galop Data Extraction"]
+    workflows:
+      - "France Galop Data Extraction"
+      - "Convert Rankings CSV to JSON"
     types: [completed]
   # Permet aussi l'exécution manuelle
   workflow_dispatch:
