@@ -2013,8 +2013,18 @@
                                     <div class="horse-number">${participant.n || participant.numero || '-'}</div>
                                     ${cordeDisplay}
                                 </td>
-                                <td>${participant.cheval || 'N/A'}</td>
-                                <td>${participant.jockey || 'N/A'}${jockeyNumberDisplay}</td>
+                                <td>${participant.cheval || 'N/A'}${scorePredictif.details.forme && scorePredictif.details.forme.cheval ?
+                                    (scorePredictif.details.forme.cheval.tendance === 'forte_hausse' ? ' <span title="En forte hausse" style="color:#40e05a;font-size:0.8em">▲▲</span>' :
+                                     scorePredictif.details.forme.cheval.tendance === 'hausse' ? ' <span title="En hausse" style="color:#40e05a;font-size:0.8em">▲</span>' :
+                                     scorePredictif.details.forme.cheval.tendance === 'forte_baisse' ? ' <span title="En forte baisse" style="color:#e05a40;font-size:0.8em">▼▼</span>' :
+                                     scorePredictif.details.forme.cheval.tendance === 'baisse' ? ' <span title="En baisse" style="color:#e05a40;font-size:0.8em">▼</span>' :
+                                     '') : ''}</td>
+                                <td>${participant.jockey || 'N/A'}${jockeyNumberDisplay}${scorePredictif.details.forme && scorePredictif.details.forme.jockey ?
+                                    (scorePredictif.details.forme.jockey.tendance === 'forte_hausse' ? ' <span title="Jockey en forte hausse" style="color:#40e05a;font-size:0.8em">▲▲</span>' :
+                                     scorePredictif.details.forme.jockey.tendance === 'hausse' ? ' <span title="Jockey en hausse" style="color:#40e05a;font-size:0.8em">▲</span>' :
+                                     scorePredictif.details.forme.jockey.tendance === 'forte_baisse' ? ' <span title="Jockey en forte baisse" style="color:#e05a40;font-size:0.8em">▼▼</span>' :
+                                     scorePredictif.details.forme.jockey.tendance === 'baisse' ? ' <span title="Jockey en baisse" style="color:#e05a40;font-size:0.8em">▼</span>' :
+                                     '') : ''}</td>
                                 <td>${participant.entraineur || 'N/A'}</td>
                                 <td>${propietaire.length > 20 ? propietaire.slice(0, 20) + '...' : propietaire}</td>
                                 <td>${eleveurs.length > 20 ? eleveurs.slice(0, 20) + '...' : eleveurs}</td>
@@ -2040,8 +2050,42 @@
                                             <p>Entraîneur: Rang #${scorePredictif.details.entraineur.rang} (${scorePredictif.details.entraineur.score} pts)</p>
                                             <p>Éleveur: Rang #${scorePredictif.details.eleveur.rang} (${scorePredictif.details.eleveur.score} pts)</p>
                                             <p>Propriétaire: Rang #${scorePredictif.details.proprietaire.rang} (${scorePredictif.details.proprietaire.score} pts)</p>
-                                            ${scorePredictif.indiceConfiance ? 
-                                              `<p><strong>Fiabilité: ${parseFloat(scorePredictif.indiceConfiance) * 100}%</strong> (${getConfidenceDescription(parseFloat(scorePredictif.indiceConfiance))})</p>` : 
+                                            ${scorePredictif.details.forme && scorePredictif.details.forme.cheval ?
+                                              `<p style="margin-top:4px;border-top:1px solid rgba(255,255,255,0.1);padding-top:4px;">
+                                                <strong>Forme cheval:</strong> ${scorePredictif.details.forme.cheval.score}/100
+                                                ${scorePredictif.details.forme.cheval.tendance === 'forte_hausse' ? '<span style="color:#40e05a">▲▲</span>' :
+                                                  scorePredictif.details.forme.cheval.tendance === 'hausse' ? '<span style="color:#40e05a">▲</span>' :
+                                                  scorePredictif.details.forme.cheval.tendance === 'forte_baisse' ? '<span style="color:#e05a40">▼▼</span>' :
+                                                  scorePredictif.details.forme.cheval.tendance === 'baisse' ? '<span style="color:#e05a40">▼</span>' :
+                                                  '<span style="color:#D4AF37">●</span>'}
+                                                (${scorePredictif.details.forme.cheval.bonus > 0 ? '+' : ''}${scorePredictif.details.forme.cheval.bonus} pts)
+                                              </p>
+                                              ${scorePredictif.details.forme.cheval.dernieres5 ?
+                                                `<p style="font-size:0.85em;opacity:0.8">Dernières: ${scorePredictif.details.forme.cheval.dernieres5.map(c => c.position + '/' + c.nbPartants).join(', ')}</p>` : ''}` : ''}
+                                            ${scorePredictif.details.forme && scorePredictif.details.forme.jockey ?
+                                              `<p><strong>Forme jockey:</strong> ${scorePredictif.details.forme.jockey.score}/100
+                                                ${scorePredictif.details.forme.jockey.tendance === 'forte_hausse' ? '<span style="color:#40e05a">▲▲</span>' :
+                                                  scorePredictif.details.forme.jockey.tendance === 'hausse' ? '<span style="color:#40e05a">▲</span>' :
+                                                  scorePredictif.details.forme.jockey.tendance === 'forte_baisse' ? '<span style="color:#e05a40">▼▼</span>' :
+                                                  scorePredictif.details.forme.jockey.tendance === 'baisse' ? '<span style="color:#e05a40">▼</span>' :
+                                                  '<span style="color:#D4AF37">●</span>'}
+                                              </p>` : ''}
+                                            ${scorePredictif.details.distance && scorePredictif.details.distance.cheval ?
+                                              `<p style="margin-top:4px;border-top:1px solid rgba(255,255,255,0.1);padding-top:4px;">
+                                                <strong>Spé. distance (${scorePredictif.details.distance.cheval.label}):</strong>
+                                                Victoire ${scorePredictif.details.distance.cheval.tauxVictoireDistance}%
+                                                (vs ${scorePredictif.details.distance.cheval.tauxVictoireGlobal}% global)
+                                                ${scorePredictif.details.distance.cheval.delta > 0 ? '<span style="color:#40e05a">+</span>' : '<span style="color:#e05a40">-</span>'}
+                                              </p>` : ''}
+                                            ${scorePredictif.details.distance && scorePredictif.details.distance.jockey ?
+                                              `<p>
+                                                <strong>Jockey à cette dist.:</strong>
+                                                Victoire ${scorePredictif.details.distance.jockey.tauxVictoireDistance}%
+                                                (vs ${scorePredictif.details.distance.jockey.tauxVictoireGlobal}% global)
+                                                ${scorePredictif.details.distance.jockey.delta > 0 ? '<span style="color:#40e05a">+</span>' : '<span style="color:#e05a40">-</span>'}
+                                              </p>` : ''}
+                                            ${scorePredictif.indiceConfiance ?
+                                              `<p><strong>Fiabilité: ${parseFloat(scorePredictif.indiceConfiance) * 100}%</strong> (${getConfidenceDescription(parseFloat(scorePredictif.indiceConfiance))})</p>` :
                                               ''}
                                         </div>
                                     </div>

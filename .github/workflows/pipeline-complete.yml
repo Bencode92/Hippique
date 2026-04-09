@@ -1,0 +1,98 @@
+name: Pipeline Complet - Extraction → Rankings → Stats → Forme
+
+on:
+  # Se déclenche automatiquement après l'extraction des données
+  workflow_run:
+    workflows: ["France Galop Data Extraction"]
+    types: [completed]
+  # Permet aussi l'exécution manuelle
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-all:
+    runs-on: ubuntu-latest
+    # Ne s'exécuter que si l'extraction a réussi (ou si déclenché manuellement)
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Récupérer les dernières données (l'extraction vient de push)
+          ref: main
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Créer le dossier data si nécessaire
+        run: mkdir -p data
+
+      # Étape 1 : Générer les classements pondérés (avec gain moyen)
+      - name: Générer les classements pondérés
+        run: |
+          echo "=== ÉTAPE 1/3 : Classements pondérés ==="
+          node extract-pondered-rankings.js
+
+      # Étape 2 : Calculer les stats par distance
+      - name: Calculer les stats par distance
+        run: |
+          echo "=== ÉTAPE 2/3 : Stats par distance ==="
+          node build-distance-stats.js
+
+      # Étape 3 : Calculer la forme récente
+      - name: Calculer la forme récente
+        run: |
+          echo "=== ÉTAPE 3/3 : Forme récente ==="
+          node build-recent-form.js
+
+      # Validation des fichiers générés
+      - name: Valider les fichiers générés
+        run: |
+          echo "=== VALIDATION ==="
+          ERRORS=0
+
+          for pattern in "*_ponderated_latest.json" "*_distance_stats.json" "*_forme_recente.json"; do
+            for f in data/$pattern; do
+              if [ -f "$f" ]; then
+                SIZE=$(stat -c%s "$f" 2>/dev/null || stat -f%z "$f" 2>/dev/null)
+                if [ "$SIZE" -lt 500 ]; then
+                  echo "❌ $f — ${SIZE} octets (trop petit, probablement vide)"
+                  ERRORS=$((ERRORS+1))
+                else
+                  echo "✅ $f — ${SIZE} octets"
+                fi
+              fi
+            done
+          done
+
+          if [ $ERRORS -gt 0 ]; then
+            echo "⚠️ ${ERRORS} fichier(s) semblent vides ou invalides"
+          else
+            echo "✅ Tous les fichiers sont valides"
+          fi
+
+      # Commit et push de tous les fichiers générés
+      - name: Commit et push des résultats
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action - Pipeline Complet"
+
+          git add data/*_ponderated_latest.json 2>/dev/null || true
+          git add data/*_distance_stats.json 2>/dev/null || true
+          git add data/*_forme_recente.json 2>/dev/null || true
+
+          git status
+
+          if git diff --cached --quiet; then
+            echo "Aucun changement à committer"
+          else
+            git commit -m "🔄 Pipeline complet - rankings + distance + forme ($(date +%Y-%m-%d))"
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
