@@ -1641,6 +1641,61 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             }
         }
         
+        // STRATÉGIE 1b: Initiale.Nom → Prénom Nom (jockeys, entraîneurs, propriétaires)
+        // "T.BACHELOT" → chercher "*BACHELOT" → match "THEO BACHELOT"
+        // "M.BOUTIN (S)" → chercher "*BOUTIN" → match "HUGO BOUTIN"
+        // Gère aussi "MME K. MORICE" → "MME KARINE MORICE"
+        const initialeMatch = nomNormalise.match(/^(?:MME\s+)?([A-Z]{1,3})\.?\s*(.+?)(?:\s*\(.*\))?$/);
+        if (initialeMatch && !nomNormalise.includes('ECURIE')) {
+            const initiale = initialeMatch[1];
+            let nomFamille = initialeMatch[2].trim();
+            // Enlever suffixes comme (S), (Q), etc.
+            nomFamille = nomFamille.replace(/\s*\([A-Z]\)\s*$/, '').trim();
+
+            if (nomFamille.length >= 3) {
+                let bestMatch = null;
+                let bestSimilarity = 0;
+
+                for (const item of donneesClassement) {
+                    const nomItem = (item.Nom || item.NomPostal || '').toUpperCase().trim();
+
+                    // Le nom de famille doit être à la fin du nom dans le classement
+                    if (nomItem.endsWith(nomFamille) || nomItem.includes(' ' + nomFamille)) {
+                        // Vérifier que l'initiale correspond au prénom
+                        const parts = nomItem.split(/\s+/);
+                        // Chercher la partie qui est le prénom (avant le nom de famille)
+                        const prenomPart = nomItem.replace(nomFamille, '').replace(/^MME\s+/i, '').trim();
+
+                        if (prenomPart && prenomPart.charAt(0) === initiale.charAt(0)) {
+                            // Match parfait : initiale + nom de famille
+                            console.log(`✅ Initiale match: "${nom}" → "${nomItem}" (${initiale}. = ${prenomPart})`);
+                            this.correspondancesDecouvertes[nomUpper] = nomItem;
+                            bestMatch = item;
+                            bestSimilarity = 95;
+                            break;
+                        } else if (!bestMatch) {
+                            // Match partiel : juste le nom de famille (initiale différente possible - ex: erreur dans les données)
+                            bestMatch = item;
+                            bestSimilarity = 80;
+                        }
+                    }
+                }
+
+                if (bestMatch) {
+                    if (bestSimilarity < 95) {
+                        console.log(`⚡ Nom de famille match: "${nom}" → "${bestMatch.Nom || bestMatch.NomPostal}" (similarité: ${bestSimilarity}%)`);
+                    }
+                    this.correspondancesDecouvertes[nomUpper] = bestMatch.Nom || bestMatch.NomPostal;
+                    return {
+                        score: 0,
+                        rang: bestMatch.Rang,
+                        similarite: bestSimilarity,
+                        item: bestMatch
+                    };
+                }
+            }
+        }
+
         // STRATÉGIE 2: Extraire le nom sans suffixes ni origines pour les chevaux
         // Par exemple: "CORTEZ BANK (GB) H.PS. 6 a." -> "CORTEZ BANK"
         const nomSansSuffixe = nomNormalise.replace(/\s*\([^)]+\)|\s+[HFM]\.?P\.?S\.?.*/gi, "").trim();
