@@ -114,62 +114,53 @@ const rankingLoader = {
 // Configuration des poids « v2 » – calibrée pour un scoring 10/10
 // ──────────────────────────────────────────────────────────────
 
-// 1) Poids par type de course
+// 1) Poids par type — aligné sur l'optimisation (cheval+jockey = 95%)
 TYPE_WEIGHTS: {
-    // Plat herbe
-    "plat":     { cheval: 0.50, jockey: 0.18, entraineur: 0.15, eleveur: 0.11, proprietaire: 0.06 },
-    // Obstacles – jockey crucial (gestion rythme + sauts + placement tactique)
-    "obstacle": { cheval: 0.35, jockey: 0.32, entraineur: 0.18, eleveur: 0.08, proprietaire: 0.07 },
-    // Sable / PSF – terrain spécifique, entraîneur plus important (préparation spéciale)
-    "aw":       { cheval: 0.45, jockey: 0.20, entraineur: 0.19, eleveur: 0.10, proprietaire: 0.06 },
-    // Valeur de secours
-    "default":  { cheval: 0.50, jockey: 0.18, entraineur: 0.15, eleveur: 0.11, proprietaire: 0.06 }
+    "plat":     { cheval: 0.65, jockey: 0.30, entraineur: 0.02, eleveur: 0.02, proprietaire: 0.01 },
+    "obstacle": { cheval: 0.55, jockey: 0.40, entraineur: 0.02, eleveur: 0.02, proprietaire: 0.01 },
+    "aw":       { cheval: 0.63, jockey: 0.32, entraineur: 0.02, eleveur: 0.02, proprietaire: 0.01 },
+    "default":  { cheval: 0.65, jockey: 0.30, entraineur: 0.02, eleveur: 0.02, proprietaire: 0.01 }
 },
 
-// 2) Poids par distance – recalibré expert hippique
-// Sprint : vitesse brute du cheval domine, jockey = départ + positionnement
-// Staying : course stratégique, le jockey gère le rythme et le timing d'effort
+// 2) Poids par distance — OPTIMISÉ par grid search (32.5% top1 walk-forward)
+// Cheval 65% + Jockey 30% = 95% du signal. Entraîneur quasi nul.
 DIST_WEIGHTS: {
-    "sprint":  { cheval: 0.55, jockey: 0.15, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
-    "mile":    { cheval: 0.50, jockey: 0.20, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
-    "middle":  { cheval: 0.48, jockey: 0.22, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
-    "staying": { cheval: 0.42, jockey: 0.28, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 }
+    "sprint":  { cheval: 0.70, jockey: 0.25, entraineur: 0.02, eleveur: 0.02, proprietaire: 0.01 },
+    "mile":    { cheval: 0.65, jockey: 0.30, entraineur: 0.02, eleveur: 0.02, proprietaire: 0.01 },
+    "middle":  { cheval: 0.63, jockey: 0.32, entraineur: 0.02, eleveur: 0.02, proprietaire: 0.01 },
+    "staying": { cheval: 0.57, jockey: 0.38, entraineur: 0.02, eleveur: 0.02, proprietaire: 0.01 }
 },
 
-// 3) Taille du peloton – recalibré
-// Grand peloton = plus tactique, jockey gère le trafic et le placement
-// Petit peloton = moins d'aléas, qualité brute du cheval prédomine
+// 3) Taille du peloton — aligné sur l'optimisation (cheval+jockey dominent)
 FIELD_SIZE_WEIGHTS: {
-    "small":  { cheval: 0.55, jockey: 0.15, entraineur: 0.15, eleveur: 0.08, proprietaire: 0.07 },
-    "medium": { cheval: 0.50, jockey: 0.20, entraineur: 0.13, eleveur: 0.10, proprietaire: 0.07 },
-    "large":  { cheval: 0.45, jockey: 0.25, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 }
+    "small":  { cheval: 0.68, jockey: 0.27, entraineur: 0.02, eleveur: 0.02, proprietaire: 0.01 },
+    "medium": { cheval: 0.65, jockey: 0.30, entraineur: 0.02, eleveur: 0.02, proprietaire: 0.01 },
+    "large":  { cheval: 0.60, jockey: 0.35, entraineur: 0.02, eleveur: 0.02, proprietaire: 0.01 }
 },
 
-// 4) Position dans la réunion : inchangé
+// 4) Position dans la réunion — simplifié
 POSITION_WEIGHTS: {
-    "first":  { cheval: 0.53, jockey: 0.17, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
-    "middle": { cheval: 0.55, jockey: 0.15, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 },
-    "last":   { cheval: 0.57, jockey: 0.13, entraineur: 0.12, eleveur: 0.10, proprietaire: 0.08 }
+    "first":  { cheval: 0.65, jockey: 0.30, entraineur: 0.02, eleveur: 0.02, proprietaire: 0.01 },
+    "middle": { cheval: 0.65, jockey: 0.30, entraineur: 0.02, eleveur: 0.02, proprietaire: 0.01 },
+    "last":   { cheval: 0.65, jockey: 0.30, entraineur: 0.02, eleveur: 0.02, proprietaire: 0.01 }
 },
 
-// 5) Impact du poids porté — recalibré expert
-// Dans un handicap, 1kg = ~1 longueur sur 2400m. La différence entre 54kg et 62kg est ÉNORME
-// heavy_minus = cheval léger (avantage), heavy_plus = cheval lourd (désavantage)
+// 5) Impact du poids porté — réduit (optimisation montre impact nul)
+// Gardé mais avec impact faible, en attente de plus de données
 WEIGHT_ADJUSTMENTS: {
-    "heavy_minus": { adjustment: 0.06 },   // -3kg+ sous la moyenne = gros avantage
-    "light_minus": { adjustment: 0.03 },   // -1 à -2kg
-    "neutral":     { adjustment: 0.00 },   // ±0.5kg
-    "light_plus":  { adjustment: -0.03 },  // +1 à +2kg
-    "heavy_plus":  { adjustment: -0.06 },  // +3kg+ au-dessus = gros handicap
+    "heavy_minus": { adjustment: 0.01 },
+    "light_minus": { adjustment: 0.005 },
+    "neutral":     { adjustment: 0.00 },
+    "light_plus":  { adjustment: -0.005 },
+    "heavy_plus":  { adjustment: -0.01 },
 },
 
-// 6) Amplification de l’impact du poids selon la distance
-// Plus la course est longue, plus le poids pèse (fatigue accumulée)
+// 6) Multiplicateur distance pour poids — réduit
 WEIGHT_DISTANCE_MULTIPLIERS: {
-    "sprint": 0.5,    // Sprint : le poids compte moins (course courte)
-    "mile":   1.0,    // Mile : impact standard
-    "middle": 1.3,    // Intermédiaire : le poids commence à peser
-    "staying": 1.8    // Staying : le poids est CRITIQUE (fatigue sur la durée)
+    "sprint": 0.3,
+    "mile":   0.5,
+    "middle": 0.7,
+    "staying": 1.0
 },
 
     // Fonctions helper pour déterminer les buckets
@@ -2493,8 +2484,8 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             else if (nbCoursesIndiv >= 15) statsIndivBonus += 1;
             else if (nbCoursesIndiv <= 3) statsIndivBonus -= 2;  // Débutant = incertain
 
-            // Appliquer au score cheval (plafonné ±15 pts)
-            statsIndivBonus = Math.max(-15, Math.min(15, statsIndivBonus));
+            // Appliquer au score cheval — réduit ÷5 (optimisation montre impact quasi nul)
+            statsIndivBonus = Math.max(-3, Math.min(3, statsIndivBonus * 0.2));
             scoreCheval = Math.max(0, Math.min(maxScore, scoreCheval + statsIndivBonus));
 
             if (Math.abs(statsIndivBonus) > 2) {

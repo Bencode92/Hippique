@@ -11,14 +11,12 @@ if (typeof window.rankingLoader === 'undefined') {
 
 // Ajouter les méthodes de gestion des cordes
 window.rankingLoader.cordeHandler = {
-    // Impact de la corde par distance — recalibré expert hippique
-    // Sprint : la corde est CRUCIALE (parcours court, pas le temps de se replacer)
-    // Staying : quasi négligeable (plusieurs virages, le jockey se replace)
+    // Impact de la corde — réduit ×0.5 (optimisation grid search)
     CORDE_IMPACT: {
-        "sprint": 1.0,      // Impact MAXIMUM en sprint (<1400m)
-        "mile": 0.6,        // Impact fort pour le mile (1400-1900m)
-        "middle": 0.3,      // Impact modéré pour moyenne distance (1900-2400m)
-        "staying": 0.1      // Impact quasi nul pour longue distance (>2400m)
+        "sprint": 0.5,      // Impact modéré en sprint
+        "mile": 0.3,        // Impact léger pour le mile
+        "middle": 0.15,     // Impact faible
+        "staying": 0.05     // Quasi nul
     },
 
     // Avantage des cordes — calibré pour donner ±8 pts en sprint, ±0.8 pts en staying
