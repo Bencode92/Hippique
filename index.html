@@ -1865,19 +1865,18 @@
                         <table class="participants-table">
                             <thead>
                                 <tr>
-                                    <th>N°</th>
+                                    <th style="width:40px">N°</th>
                                     <th>Cheval</th>
                                     <th>Jockey</th>
                                     <th>Entraîneur</th>
-                                    <th>Propriétaire</th>
-                                    <th>Éleveurs</th>
-                                    <th>Poids</th>
-                                    <th>Score prédictif</th>
+                                    <th style="width:50px">Poids</th>
+                                    <th style="width:50px">Cote</th>
+                                    <th style="width:140px">Score</th>
                                 </tr>
                             </thead>
                             <tbody id="participants-${detailId}">
                                 <tr>
-                                    <td colspan="8" class="loading-indicator">
+                                    <td colspan="7" class="loading-indicator">
                                         <i class="fas fa-spinner fa-spin"></i> Calcul des scores prédictifs...
                                     </td>
                                 </tr>
@@ -1958,8 +1957,8 @@
                     if (scoresPredictifs.length === 0) {
                         participantsContainer.innerHTML = `
                             <tr>
-                                <td colspan="8" style="text-align: center;">
-                                    <i class="fas fa-exclamation-circle" style="color: var(--gold);"></i> 
+                                <td colspan="7" style="text-align: center;">
+                                    <i class="fas fa-exclamation-circle" style="color: var(--gold);"></i>
                                     Impossible de calculer les scores prédictifs pour cette course.
                                 </td>
                             </tr>
@@ -2010,33 +2009,38 @@
                         const numeroCorde = extraireNumeroCorde(participant.corde);
                         const cordeDisplay = numeroCorde ? `<span class="corde-number">${numeroCorde}</span>` : '';
                         
+                        // Forme indicators
+                        const formeCheval = scorePredictif.details.forme?.cheval;
+                        const formeJockey = scorePredictif.details.forme?.jockey;
+                        const fch = formeCheval ? ({forte_hausse:'▲▲',hausse:'▲',forte_baisse:'▼▼',baisse:'▼'}[formeCheval.tendance]||'') : '';
+                        const fcj = formeJockey ? ({forte_hausse:'▲▲',hausse:'▲',forte_baisse:'▼▼',baisse:'▼'}[formeJockey.tendance]||'') : '';
+                        const fchColor = fch.includes('▲') ? '#40e05a' : fch.includes('▼') ? '#e05a40' : '#D4AF37';
+                        const fcjColor = fcj.includes('▲') ? '#40e05a' : fcj.includes('▼') ? '#e05a40' : '#D4AF37';
+
+                        // Cote PMU
+                        const coteValue = participant.cote ? parseFloat(participant.cote).toFixed(1) : '-';
+                        const coteTendance = participant.cote_tendance === '+' ? '↑' : participant.cote_tendance === '-' ? '↓' : '';
+
+                        // Score color (vert=bon, rouge=mauvais)
+                        const scoreVal = parseFloat(scorePredictif.score);
+                        const scoreColor = scoreVal > 70 ? '#40e05a' : scoreVal > 50 ? '#D4AF37' : scoreVal > 30 ? '#e0a040' : '#e05a40';
+
                         participantsHTML += `
                             <tr data-score="${scorePredictif.score}" data-numero="${participant.numero || 0}" data-cheval="${participant.cheval}" data-cote="${participant.cote || 0}">
                                 <td style="text-align: center;">
                                     <div class="horse-number">${participant.n || participant.numero || '-'}</div>
                                     ${cordeDisplay}
                                 </td>
-                                <td>${participant.cheval || 'N/A'}${scorePredictif.details.forme && scorePredictif.details.forme.cheval ?
-                                    (scorePredictif.details.forme.cheval.tendance === 'forte_hausse' ? ' <span title="En forte hausse" style="color:#40e05a;font-size:0.8em">▲▲</span>' :
-                                     scorePredictif.details.forme.cheval.tendance === 'hausse' ? ' <span title="En hausse" style="color:#40e05a;font-size:0.8em">▲</span>' :
-                                     scorePredictif.details.forme.cheval.tendance === 'forte_baisse' ? ' <span title="En forte baisse" style="color:#e05a40;font-size:0.8em">▼▼</span>' :
-                                     scorePredictif.details.forme.cheval.tendance === 'baisse' ? ' <span title="En baisse" style="color:#e05a40;font-size:0.8em">▼</span>' :
-                                     '') : ''}</td>
-                                <td>${participant.jockey || 'N/A'}${jockeyNumberDisplay}${scorePredictif.details.forme && scorePredictif.details.forme.jockey ?
-                                    (scorePredictif.details.forme.jockey.tendance === 'forte_hausse' ? ' <span title="Jockey en forte hausse" style="color:#40e05a;font-size:0.8em">▲▲</span>' :
-                                     scorePredictif.details.forme.jockey.tendance === 'hausse' ? ' <span title="Jockey en hausse" style="color:#40e05a;font-size:0.8em">▲</span>' :
-                                     scorePredictif.details.forme.jockey.tendance === 'forte_baisse' ? ' <span title="Jockey en forte baisse" style="color:#e05a40;font-size:0.8em">▼▼</span>' :
-                                     scorePredictif.details.forme.jockey.tendance === 'baisse' ? ' <span title="Jockey en baisse" style="color:#e05a40;font-size:0.8em">▼</span>' :
-                                     '') : ''}</td>
+                                <td>${participant.cheval || 'N/A'}${fch ? ` <span title="Forme cheval" style="color:${fchColor};font-size:0.8em">${fch}</span>` : ''}</td>
+                                <td>${participant.jockey || 'N/A'}${fcj ? ` <span title="Forme jockey" style="color:${fcjColor};font-size:0.8em">${fcj}</span>` : ''}</td>
                                 <td>${participant.entraineur || 'N/A'}</td>
-                                <td>${propietaire.length > 20 ? propietaire.slice(0, 20) + '...' : propietaire}</td>
-                                <td>${eleveurs.length > 20 ? eleveurs.slice(0, 20) + '...' : eleveurs}</td>
-                                <td>${participant.poids || 'N/A'}</td>
+                                <td>${participant.poids || '-'}</td>
+                                <td style="text-align:center;font-weight:600;${coteValue !== '-' ? 'color:#40E0D0' : ''}">${coteValue}${coteTendance ? `<span style="font-size:0.7em">${coteTendance}</span>` : ''}</td>
                                 <td class="prediction-cell">
-                                    <div class="prediction-bar-container">
-                                        <div class="prediction-bar" style="width: ${normalizedScore * 100}%;"></div>
-                                        <div class="prediction-value">
-                                            ${scorePredictif.score}
+                                    <div style="display:flex;align-items:center;gap:6px">
+                                        <span style="font-weight:700;font-size:1.1em;color:${scoreColor};min-width:35px">${scorePredictif.score}</span>
+                                        <div class="prediction-bar-container" style="flex:1">
+                                            <div class="prediction-bar" style="width:${normalizedScore * 100}%;background:${scoreColor}"></div>
                                         </div>
                                     </div>
                                     <div class="score-details">
