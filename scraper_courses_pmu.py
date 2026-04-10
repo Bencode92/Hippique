@@ -314,6 +314,24 @@ def scrape_courses(date_obj=None):
                 "participants": []
             }
 
+            # Récupérer les détails de la course (arrivée + participants)
+            time.sleep(REQUEST_DELAY)
+            course_detail = api_get(
+                f"programme/{date_pmu}/R{reunion_num}/C{course_num}"
+            )
+
+            # Extraire l'ordre d'arrivée si disponible
+            ordre_arrivee = {}
+            if course_detail and course_detail.get("ordreArrivee"):
+                for place, nums in enumerate(course_detail["ordreArrivee"], 1):
+                    if isinstance(nums, list):
+                        for num in nums:
+                            ordre_arrivee[num] = place
+                    else:
+                        ordre_arrivee[nums] = place
+                if ordre_arrivee:
+                    course_mapped["arrivee_definitive"] = course_detail.get("arriveeDefinitive", False)
+
             time.sleep(REQUEST_DELAY)
             participants_raw = api_get(
                 f"programme/{date_pmu}/R{reunion_num}/C{course_num}/participants?specialisation=INTERNET"
@@ -330,12 +348,19 @@ def scrape_courses(date_obj=None):
                             continue
                         mp = map_participant(p)
                         if mp.get("cheval") or mp.get("jockey"):
+                            # Ajouter la place d'arrivée si disponible
+                            num_pmu = int(p.get("numPmu", 0))
+                            if num_pmu in ordre_arrivee:
+                                mp["arrivee"] = ordre_arrivee[num_pmu]
                             mapped.append(mp)
                     except Exception as e:
                         logger.warning(f"    ⚠️  Erreur mapping: {e}")
                         continue
 
                 if mapped:
+                    # Trier par arrivée si disponible
+                    if ordre_arrivee:
+                        mapped.sort(key=lambda x: x.get("arrivee", 999))
                     course_mapped["participants"] = mapped
                     reunion_output["courses"].append(course_mapped)
                     logger.info(f"    👤 {len(mapped)} participants")
