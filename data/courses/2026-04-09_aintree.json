@@ -1,12 +1,12 @@
 {
   "hippodrome": "AINTREE",
   "type_reunion": "HAIE",
-  "date_extraction": "2026-04-09T22:52:32.470647",
+  "date_extraction": "2026-04-10T10:47:27.353710",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/09042026/R6",
   "courses": [
     {
       "nom": "BOODLES ANNIVERSARY 4-Y-O JUVENILE HURDLE (CLASS 1) (GRADE 1)",
-      "horaire": "12h45",
+      "horaire": "14h45",
       "numero": "1",
       "type": "HAIE",
       "distance": "3400m",
@@ -30,7 +30,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 2,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 60.0,
+          "cote_tendance": "+",
+          "cote_reference": 21.0
         },
         {
           "n°": "2",
@@ -50,7 +53,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 3,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 13.0,
+          "cote_tendance": "+",
+          "cote_reference": 9.7
         },
         {
           "n°": "3",
@@ -70,7 +76,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 3,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 34.0,
+          "cote_tendance": "+",
+          "cote_reference": 16.0
         },
         {
           "n°": "4",
@@ -90,7 +99,10 @@
           "equipement(s)": "A",
           "nb_courses": 7,
           "nb_victoires": 4,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 47.0,
+          "cote_tendance": "+",
+          "cote_reference": 17.0
         },
         {
           "n°": "5",
@@ -110,7 +122,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 3,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 3.9,
+          "cote_tendance": "",
+          "cote_reference": 3.7
         },
         {
           "n°": "6",
@@ -130,7 +145,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 3,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 6.3,
+          "cote_tendance": "-",
+          "cote_reference": 11.0
         },
         {
           "n°": "7",
@@ -150,7 +168,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 1,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 8.9,
+          "cote_tendance": "+",
+          "cote_reference": 9.7
         },
         {
           "n°": "8",
@@ -170,7 +191,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 95.0,
+          "cote_tendance": "+",
+          "cote_reference": 24.0
         },
         {
           "n°": "9",
@@ -190,7 +214,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 3,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 7.1,
+          "cote_tendance": "",
+          "cote_reference": 7.2
         },
         {
           "n°": "10",
@@ -210,13 +237,16 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 3.1,
+          "cote_tendance": "+",
+          "cote_reference": 4.2
         }
       ]
     },
     {
       "nom": "MANIFESTO NOVICES' CHASE (CLASS 1) (GRADE 1)",
-      "horaire": "13h20",
+      "horaire": "15h20",
       "numero": "2",
       "type": "STEEPLECHASE",
       "distance": "4000m",
@@ -240,7 +270,10 @@
           "equipement(s)": "A",
           "nb_courses": 20,
           "nb_victoires": 6,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 16.0,
+          "cote_tendance": "",
+          "cote_reference": 18.0
         },
         {
           "n°": "2",
@@ -260,7 +293,10 @@
           "equipement(s)": "",
           "nb_courses": 15,
           "nb_victoires": 6,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 21.0
         },
         {
           "n°": "3",
@@ -280,7 +316,10 @@
           "equipement(s)": "",
           "nb_courses": 11,
           "nb_victoires": 4,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 4.3,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         },
         {
           "n°": "4",
@@ -300,7 +339,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 6,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 1.5,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         },
         {
           "n°": "5",
@@ -320,13 +362,16 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 4,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 10.0,
+          "cote_tendance": "-",
+          "cote_reference": 15.0
         }
       ]
     },
     {
       "nom": "RACING WELFARE BOWL CHASE (CLASS 1) (GRADE 1)",
-      "horaire": "13h55",
+      "horaire": "15h55",
       "numero": "3",
       "type": "STEEPLECHASE",
       "distance": "5020m",
@@ -350,7 +395,10 @@
           "equipement(s)": "A",
           "nb_courses": 17,
           "nb_victoires": 11,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 5.3,
+          "cote_tendance": "",
+          "cote_reference": 2.0
         },
         {
           "n°": "2",
@@ -370,7 +418,10 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 5,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 1.8,
+          "cote_tendance": "",
+          "cote_reference": 3.4
         },
         {
           "n°": "3",
@@ -390,7 +441,10 @@
           "equipement(s)": "",
           "nb_courses": 37,
           "nb_victoires": 15,
-          "nb_places": 11
+          "nb_places": 11,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 9.6
         },
         {
           "n°": "4",
@@ -410,7 +464,10 @@
           "equipement(s)": "",
           "nb_courses": 35,
           "nb_victoires": 10,
-          "nb_places": 15
+          "nb_places": 15,
+          "cote": 5.9,
+          "cote_tendance": "",
+          "cote_reference": 7.6
         },
         {
           "n°": "5",
@@ -430,13 +487,16 @@
           "equipement(s)": "",
           "nb_courses": 18,
           "nb_victoires": 6,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 5.8,
+          "cote_tendance": "",
+          "cote_reference": 7.6
         }
       ]
     },
     {
       "nom": "AINTREE HURDLE (CLASS 1) (GRADE 1)",
-      "horaire": "15h05",
+      "horaire": "17h05",
       "numero": "5",
       "type": "HAIE",
       "distance": "4020m",
@@ -460,7 +520,10 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 5,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 5.8
         },
         {
           "n°": "2",
@@ -480,7 +543,10 @@
           "equipement(s)": "",
           "nb_courses": 19,
           "nb_victoires": 10,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 5.7,
+          "cote_tendance": "",
+          "cote_reference": 6.9
         },
         {
           "n°": "4",
@@ -500,7 +566,10 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 8,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 8.3
         },
         {
           "n°": "5",
@@ -520,7 +589,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 6,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 3.2,
+          "cote_tendance": "",
+          "cote_reference": 3.1
         },
         {
           "n°": "6",
@@ -540,7 +612,10 @@
           "equipement(s)": "",
           "nb_courses": 15,
           "nb_victoires": 10,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 2.5,
+          "cote_tendance": "",
+          "cote_reference": 3.8
         },
         {
           "n°": "7",
@@ -560,7 +635,10 @@
           "equipement(s)": "",
           "nb_courses": 16,
           "nb_victoires": 8,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 9.9,
+          "cote_tendance": "-",
+          "cote_reference": 9.0
         }
       ]
     }

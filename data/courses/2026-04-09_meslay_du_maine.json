@@ -1,12 +1,12 @@
 {
   "hippodrome": "MESLAY DU MAINE",
   "type_reunion": "MONTE",
-  "date_extraction": "2026-04-09T22:52:17.697664",
+  "date_extraction": "2026-04-10T10:47:17.547785",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/09042026/R3",
   "courses": [
     {
       "nom": "PRIX FRAGONARD",
-      "horaire": "09h53",
+      "horaire": "11h53",
       "numero": "1",
       "type": "MONTE",
       "distance": "2875m",
@@ -30,7 +30,11 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 0,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 15.0,
+          "cote_tendance": "+",
+          "cote_reference": 15.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "2",
@@ -50,7 +54,11 @@
           "equipement(s)": "",
           "nb_courses": 24,
           "nb_victoires": 2,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 30.0,
+          "cote_tendance": "+",
+          "cote_reference": 15.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "3",
@@ -70,7 +78,11 @@
           "equipement(s)": "",
           "nb_courses": 32,
           "nb_victoires": 3,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 21.0,
+          "cote_tendance": "+",
+          "cote_reference": 16.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "4",
@@ -90,7 +102,11 @@
           "equipement(s)": "",
           "nb_courses": 27,
           "nb_victoires": 2,
-          "nb_places": 11
+          "nb_places": 11,
+          "cote": 12.0,
+          "cote_tendance": "-",
+          "cote_reference": 14.0,
+          "avis_entraineur": "POSITIF"
         },
         {
           "n°": "5",
@@ -110,7 +126,11 @@
           "equipement(s)": "",
           "nb_courses": 52,
           "nb_victoires": 0,
-          "nb_places": 25
+          "nb_places": 25,
+          "cote": 39.0,
+          "cote_tendance": "+",
+          "cote_reference": 34.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "6",
@@ -130,7 +150,11 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 2,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 123.0,
+          "cote_tendance": "+",
+          "cote_reference": 70.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "7",
@@ -150,7 +174,11 @@
           "equipement(s)": "",
           "nb_courses": 23,
           "nb_victoires": 0,
-          "nb_places": 18
+          "nb_places": 18,
+          "cote": 14.0,
+          "cote_tendance": "+",
+          "cote_reference": 10.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "8",
@@ -170,7 +198,11 @@
           "equipement(s)": "",
           "nb_courses": 33,
           "nb_victoires": 4,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 91.0,
+          "cote_tendance": "+",
+          "cote_reference": 53.0,
+          "avis_entraineur": "NEGATIF"
         },
         {
           "n°": "9",
@@ -190,7 +222,11 @@
           "equipement(s)": "",
           "nb_courses": 22,
           "nb_victoires": 3,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 8.4,
+          "cote_tendance": "-",
+          "cote_reference": 7.2,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "10",
@@ -210,7 +246,11 @@
           "equipement(s)": "",
           "nb_courses": 34,
           "nb_victoires": 3,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 5.5,
+          "cote_tendance": "+",
+          "cote_reference": 7.1,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "11",
@@ -230,7 +270,11 @@
           "equipement(s)": "",
           "nb_courses": 19,
           "nb_victoires": 0,
-          "nb_places": 17
+          "nb_places": 17,
+          "cote": 24.0,
+          "cote_tendance": "+",
+          "cote_reference": 18.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "12",
@@ -250,7 +294,11 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 3,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 2.2,
+          "cote_tendance": "",
+          "cote_reference": 2.7,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "13",
@@ -270,13 +318,17 @@
           "equipement(s)": "",
           "nb_courses": 30,
           "nb_victoires": 2,
-          "nb_places": 15
+          "nb_places": 15,
+          "cote": 92.0,
+          "cote_tendance": "+",
+          "cote_reference": 64.0,
+          "avis_entraineur": "NEUTRE"
         }
       ]
     },
     {
       "nom": "PRIX RENOIR",
-      "horaire": "10h23",
+      "horaire": "12h23",
       "numero": "2",
       "type": "ATTELE",
       "distance": "2875m",
@@ -300,7 +352,11 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 13.0,
+          "cote_tendance": "+",
+          "cote_reference": 24.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "2",
@@ -320,7 +376,11 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 28.0,
+          "cote_tendance": "-",
+          "cote_reference": 31.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "3",
@@ -340,7 +400,11 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 0,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 109.0,
+          "cote_tendance": "+",
+          "cote_reference": 148.0,
+          "avis_entraineur": "NEGATIF"
         },
         {
           "n°": "4",
@@ -360,7 +424,11 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 43.0,
+          "cote_tendance": "+",
+          "cote_reference": 69.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "5",
@@ -380,7 +448,11 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 20.0,
+          "cote_tendance": "-",
+          "cote_reference": 42.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "6",
@@ -400,7 +472,11 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 35.0,
+          "cote_tendance": "-",
+          "cote_reference": 57.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "7",
@@ -420,7 +496,11 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 6.5,
+          "cote_tendance": "-",
+          "cote_reference": 4.2,
+          "avis_entraineur": "POSITIF"
         },
         {
           "n°": "8",
@@ -440,7 +520,11 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 25.0,
+          "cote_tendance": "+",
+          "cote_reference": 39.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "9",
@@ -460,7 +544,11 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 0,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 12.0,
+          "cote_tendance": "+",
+          "cote_reference": 14.0,
+          "avis_entraineur": "POSITIF"
         },
         {
           "n°": "10",
@@ -480,7 +568,11 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 4.2,
+          "cote_tendance": "+",
+          "cote_reference": 5.6,
+          "avis_entraineur": "POSITIF"
         },
         {
           "n°": "11",
@@ -500,13 +592,17 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 2.4,
+          "cote_tendance": "",
+          "cote_reference": 2.0,
+          "avis_entraineur": "NEUTRE"
         }
       ]
     },
     {
       "nom": "PRIX VAN GOGH",
-      "horaire": "10h55",
+      "horaire": "12h55",
       "numero": "3",
       "type": "ATTELE",
       "distance": "2875m",
@@ -530,7 +626,11 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 2,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 63.0,
+          "cote_tendance": "",
+          "cote_reference": 33.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "2",
@@ -550,7 +650,11 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 2,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 16.0,
+          "cote_tendance": "",
+          "cote_reference": 9.7,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "3",
@@ -570,7 +674,11 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 2,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 2.4,
+          "cote_tendance": "",
+          "cote_reference": 3.4,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "4",
@@ -590,7 +698,11 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 0,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 32.0,
+          "cote_tendance": "",
+          "cote_reference": 18.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "5",
@@ -610,7 +722,11 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 1,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 64.0,
+          "cote_tendance": "",
+          "cote_reference": 26.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "6",
@@ -630,7 +746,11 @@
           "equipement(s)": "",
           "nb_courses": 11,
           "nb_victoires": 1,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 7.4,
+          "cote_tendance": "",
+          "cote_reference": 14.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "7",
@@ -650,7 +770,11 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 2,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 143.0,
+          "cote_tendance": "",
+          "cote_reference": 51.0,
+          "avis_entraineur": "NEGATIF"
         },
         {
           "n°": "8",
@@ -670,7 +794,11 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 2,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 45.0,
+          "cote_tendance": "",
+          "cote_reference": 26.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "9",
@@ -690,7 +818,11 @@
           "equipement(s)": "",
           "nb_courses": 17,
           "nb_victoires": 1,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 79.0,
+          "cote_tendance": "",
+          "cote_reference": 31.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "10",
@@ -710,7 +842,11 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 2,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "11",
@@ -730,7 +866,11 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 2,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 107.0,
+          "cote_tendance": "",
+          "cote_reference": 51.0,
+          "avis_entraineur": "NEGATIF"
         },
         {
           "n°": "12",
@@ -750,7 +890,11 @@
           "equipement(s)": "",
           "nb_courses": 11,
           "nb_victoires": 0,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 16.0,
+          "cote_tendance": "",
+          "cote_reference": 21.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "13",
@@ -770,7 +914,11 @@
           "equipement(s)": "",
           "nb_courses": 16,
           "nb_victoires": 1,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 33.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "14",
@@ -790,7 +938,11 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 3,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 60.0,
+          "cote_tendance": "-",
+          "cote_reference": 36.0,
+          "avis_entraineur": "NEGATIF"
         },
         {
           "n°": "15",
@@ -810,7 +962,11 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 2,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "16",
@@ -830,13 +986,17 @@
           "equipement(s)": "",
           "nb_courses": 20,
           "nb_victoires": 1,
-          "nb_places": 14
+          "nb_places": 14,
+          "cote": 6.5,
+          "cote_tendance": "",
+          "cote_reference": 6.7,
+          "avis_entraineur": "POSITIF"
         }
       ]
     },
     {
       "nom": "PRIX MANET",
-      "horaire": "11h27",
+      "horaire": "13h27",
       "numero": "4",
       "type": "ATTELE",
       "distance": "2875m",
@@ -860,7 +1020,11 @@
           "equipement(s)": "",
           "nb_courses": 17,
           "nb_victoires": 4,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 8.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "2",
@@ -880,7 +1044,11 @@
           "equipement(s)": "",
           "nb_courses": 23,
           "nb_victoires": 2,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 55.0,
+          "cote_tendance": "+",
+          "cote_reference": 34.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "3",
@@ -900,7 +1068,11 @@
           "equipement(s)": "",
           "nb_courses": 41,
           "nb_victoires": 0,
-          "nb_places": 21
+          "nb_places": 21,
+          "cote": 9.8,
+          "cote_tendance": "+",
+          "cote_reference": 4.6,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "4",
@@ -920,7 +1092,11 @@
           "equipement(s)": "",
           "nb_courses": 33,
           "nb_victoires": 1,
-          "nb_places": 14
+          "nb_places": 14,
+          "cote": 30.0,
+          "cote_tendance": "+",
+          "cote_reference": 28.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "5",
@@ -940,7 +1116,11 @@
           "equipement(s)": "",
           "nb_courses": 30,
           "nb_victoires": 2,
-          "nb_places": 19
+          "nb_places": 19,
+          "cote": 9.8,
+          "cote_tendance": "+",
+          "cote_reference": 10.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "6",
@@ -960,7 +1140,11 @@
           "equipement(s)": "",
           "nb_courses": 22,
           "nb_victoires": 0,
-          "nb_places": 15
+          "nb_places": 15,
+          "cote": 20.0,
+          "cote_tendance": "-",
+          "cote_reference": 18.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "7",
@@ -980,7 +1164,11 @@
           "equipement(s)": "",
           "nb_courses": 21,
           "nb_victoires": 3,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 22.0,
+          "cote_tendance": "+",
+          "cote_reference": 20.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "8",
@@ -1000,7 +1188,11 @@
           "equipement(s)": "",
           "nb_courses": 15,
           "nb_victoires": 2,
-          "nb_places": 11
+          "nb_places": 11,
+          "cote": 5.2,
+          "cote_tendance": "",
+          "cote_reference": 5.5,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "9",
@@ -1020,7 +1212,11 @@
           "equipement(s)": "",
           "nb_courses": 19,
           "nb_victoires": 4,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 25.0,
+          "cote_tendance": "+",
+          "cote_reference": 28.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "10",
@@ -1040,7 +1236,11 @@
           "equipement(s)": "",
           "nb_courses": 16,
           "nb_victoires": 2,
-          "nb_places": 11
+          "nb_places": 11,
+          "cote": 14.0,
+          "cote_tendance": "+",
+          "cote_reference": 12.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "11",
@@ -1060,7 +1260,11 @@
           "equipement(s)": "",
           "nb_courses": 22,
           "nb_victoires": 2,
-          "nb_places": 14
+          "nb_places": 14,
+          "cote": 10.0,
+          "cote_tendance": "+",
+          "cote_reference": 6.7,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "12",
@@ -1080,7 +1284,11 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 2,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 6.0,
+          "cote_tendance": "-",
+          "cote_reference": 15.0,
+          "avis_entraineur": "POSITIF"
         },
         {
           "n°": "13",
@@ -1100,13 +1308,17 @@
           "equipement(s)": "",
           "nb_courses": 28,
           "nb_victoires": 2,
-          "nb_places": 14
+          "nb_places": 14,
+          "cote": 9.6,
+          "cote_tendance": "-",
+          "cote_reference": 17.0,
+          "avis_entraineur": "NEGATIF"
         }
       ]
     },
     {
       "nom": "PRIX DEGAS",
-      "horaire": "12h12",
+      "horaire": "14h12",
       "numero": "5",
       "type": "ATTELE",
       "distance": "2875m",
@@ -1130,7 +1342,11 @@
           "equipement(s)": "",
           "nb_courses": 18,
           "nb_victoires": 3,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 7.5,
+          "cote_tendance": "-",
+          "cote_reference": 7.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "2",
@@ -1150,7 +1366,11 @@
           "equipement(s)": "",
           "nb_courses": 20,
           "nb_victoires": 4,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 50.0,
+          "cote_tendance": "-",
+          "cote_reference": 50.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "3",
@@ -1170,7 +1390,11 @@
           "equipement(s)": "",
           "nb_courses": 28,
           "nb_victoires": 1,
-          "nb_places": 11
+          "nb_places": 11,
+          "cote": 44.0,
+          "cote_tendance": "+",
+          "cote_reference": 38.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "4",
@@ -1190,7 +1414,11 @@
           "equipement(s)": "",
           "nb_courses": 24,
           "nb_victoires": 1,
-          "nb_places": 16
+          "nb_places": 16,
+          "cote": 38.0,
+          "cote_tendance": "-",
+          "cote_reference": 30.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "5",
@@ -1210,7 +1438,11 @@
           "equipement(s)": "",
           "nb_courses": 16,
           "nb_victoires": 4,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 9.5,
+          "cote_tendance": "-",
+          "cote_reference": 10.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "6",
@@ -1230,7 +1462,11 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 2,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 1.7,
+          "cote_tendance": "",
+          "cote_reference": 1.8,
+          "avis_entraineur": "POSITIF"
         },
         {
           "n°": "7",
@@ -1250,7 +1486,11 @@
           "equipement(s)": "",
           "nb_courses": 25,
           "nb_victoires": 2,
-          "nb_places": 15
+          "nb_places": 15,
+          "cote": 56.0,
+          "cote_tendance": "-",
+          "cote_reference": 65.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "8",
@@ -1270,7 +1510,11 @@
           "equipement(s)": "",
           "nb_courses": 15,
           "nb_victoires": 2,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 19.0,
+          "cote_tendance": "+",
+          "cote_reference": 16.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "9",
@@ -1290,7 +1534,11 @@
           "equipement(s)": "",
           "nb_courses": 25,
           "nb_victoires": 1,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 65.0,
+          "cote_tendance": "-",
+          "cote_reference": 74.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "10",
@@ -1310,7 +1558,11 @@
           "equipement(s)": "",
           "nb_courses": 18,
           "nb_victoires": 4,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 10.0,
+          "cote_tendance": "-",
+          "cote_reference": 9.7,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "11",
@@ -1330,13 +1582,17 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 3,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 13.0,
+          "cote_tendance": "+",
+          "cote_reference": 13.0,
+          "avis_entraineur": "NEUTRE"
         }
       ]
     },
     {
       "nom": "PRIX UTRILLO",
-      "horaire": "12h47",
+      "horaire": "14h47",
       "numero": "6",
       "type": "MONTE",
       "distance": "2875m",
@@ -1360,7 +1616,11 @@
           "equipement(s)": "",
           "nb_courses": 33,
           "nb_victoires": 4,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 18.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "2",
@@ -1380,7 +1640,11 @@
           "equipement(s)": "",
           "nb_courses": 16,
           "nb_victoires": 4,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 3.4,
+          "cote_tendance": "",
+          "cote_reference": 7.6,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "3",
@@ -1400,7 +1664,11 @@
           "equipement(s)": "",
           "nb_courses": 20,
           "nb_victoires": 4,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 4.6,
+          "cote_tendance": "",
+          "cote_reference": 4.1,
+          "avis_entraineur": "POSITIF"
         },
         {
           "n°": "4",
@@ -1420,7 +1688,11 @@
           "equipement(s)": "",
           "nb_courses": 27,
           "nb_victoires": 6,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 19.0,
+          "cote_tendance": "",
+          "cote_reference": 9.9,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "5",
@@ -1440,7 +1712,11 @@
           "equipement(s)": "",
           "nb_courses": 44,
           "nb_victoires": 2,
-          "nb_places": 26
+          "nb_places": 26,
+          "cote": 75.0,
+          "cote_tendance": "",
+          "cote_reference": 55.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "6",
@@ -1460,7 +1736,11 @@
           "equipement(s)": "",
           "nb_courses": 22,
           "nb_victoires": 6,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 23.0,
+          "cote_tendance": "",
+          "cote_reference": 12.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "7",
@@ -1480,7 +1760,11 @@
           "equipement(s)": "",
           "nb_courses": 31,
           "nb_victoires": 5,
-          "nb_places": 15
+          "nb_places": 15,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 12.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "8",
@@ -1500,7 +1784,11 @@
           "equipement(s)": "",
           "nb_courses": 86,
           "nb_victoires": 2,
-          "nb_places": 61
+          "nb_places": 61,
+          "cote": 61.0,
+          "cote_tendance": "",
+          "cote_reference": 42.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "9",
@@ -1520,7 +1808,11 @@
           "equipement(s)": "",
           "nb_courses": 72,
           "nb_victoires": 3,
-          "nb_places": 28
+          "nb_places": 28,
+          "cote": 5.9,
+          "cote_tendance": "",
+          "cote_reference": 6.1,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "10",
@@ -1540,7 +1832,11 @@
           "equipement(s)": "",
           "nb_courses": 56,
           "nb_victoires": 7,
-          "nb_places": 18
+          "nb_places": 18,
+          "cote": 25.0,
+          "cote_tendance": "",
+          "cote_reference": 17.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "11",
@@ -1560,7 +1856,11 @@
           "equipement(s)": "",
           "nb_courses": 49,
           "nb_victoires": 11,
-          "nb_places": 23
+          "nb_places": 23,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 12.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "12",
@@ -1580,13 +1880,17 @@
           "equipement(s)": "",
           "nb_courses": 33,
           "nb_victoires": 6,
-          "nb_places": 16
+          "nb_places": 16,
+          "cote": 17.0,
+          "cote_tendance": "",
+          "cote_reference": 9.6,
+          "avis_entraineur": "NEUTRE"
         }
       ]
     },
     {
       "nom": "PRIX CEZANNE",
-      "horaire": "13h22",
+      "horaire": "15h22",
       "numero": "7",
       "type": "ATTELE",
       "distance": "2875m",
@@ -1610,7 +1914,11 @@
           "equipement(s)": "",
           "nb_courses": 18,
           "nb_victoires": 2,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 167.0,
+          "cote_tendance": "+",
+          "cote_reference": 100.0,
+          "avis_entraineur": "NEGATIF"
         },
         {
           "n°": "2",
@@ -1630,7 +1938,11 @@
           "equipement(s)": "",
           "nb_courses": 30,
           "nb_victoires": 1,
-          "nb_places": 18
+          "nb_places": 18,
+          "cote": 191.0,
+          "cote_tendance": "+",
+          "cote_reference": 128.0,
+          "avis_entraineur": "NEGATIF"
         },
         {
           "n°": "3",
@@ -1650,7 +1962,11 @@
           "equipement(s)": "",
           "nb_courses": 24,
           "nb_victoires": 1,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 135.0,
+          "cote_tendance": "+",
+          "cote_reference": 85.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "4",
@@ -1670,7 +1986,11 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 3,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 9.6,
+          "cote_tendance": "",
+          "cote_reference": 6.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "5",
@@ -1690,7 +2010,11 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 4,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 29.0,
+          "cote_tendance": "-",
+          "cote_reference": 27.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "6",
@@ -1710,7 +2034,11 @@
           "equipement(s)": "",
           "nb_courses": 36,
           "nb_victoires": 2,
-          "nb_places": 17
+          "nb_places": 17,
+          "cote": 42.0,
+          "cote_tendance": "+",
+          "cote_reference": 65.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "7",
@@ -1730,7 +2058,11 @@
           "equipement(s)": "",
           "nb_courses": 28,
           "nb_victoires": 5,
-          "nb_places": 17
+          "nb_places": 17,
+          "cote": 27.0,
+          "cote_tendance": "+",
+          "cote_reference": 18.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "8",
@@ -1750,7 +2082,11 @@
           "equipement(s)": "",
           "nb_courses": 18,
           "nb_victoires": 3,
-          "nb_places": 14
+          "nb_places": 14,
+          "cote": 7.3,
+          "cote_tendance": "+",
+          "cote_reference": 6.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "9",
@@ -1770,7 +2106,11 @@
           "equipement(s)": "",
           "nb_courses": 36,
           "nb_victoires": 2,
-          "nb_places": 17
+          "nb_places": 17,
+          "cote": 72.0,
+          "cote_tendance": "+",
+          "cote_reference": 79.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "10",
@@ -1790,7 +2130,11 @@
           "equipement(s)": "",
           "nb_courses": 27,
           "nb_victoires": 4,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 23.0,
+          "cote_tendance": "+",
+          "cote_reference": 9.2,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "11",
@@ -1810,7 +2154,11 @@
           "equipement(s)": "",
           "nb_courses": 26,
           "nb_victoires": 4,
-          "nb_places": 16
+          "nb_places": 16,
+          "cote": 8.0,
+          "cote_tendance": "",
+          "cote_reference": 8.6,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "12",
@@ -1830,7 +2178,11 @@
           "equipement(s)": "",
           "nb_courses": 26,
           "nb_victoires": 1,
-          "nb_places": 17
+          "nb_places": 17,
+          "cote": 8.3,
+          "cote_tendance": "-",
+          "cote_reference": 10.0,
+          "avis_entraineur": "POSITIF"
         },
         {
           "n°": "13",
@@ -1850,7 +2202,11 @@
           "equipement(s)": "",
           "nb_courses": 28,
           "nb_victoires": 4,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 18.0,
+          "cote_tendance": "+",
+          "cote_reference": 21.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "14",
@@ -1870,7 +2226,11 @@
           "equipement(s)": "",
           "nb_courses": 19,
           "nb_victoires": 2,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 35.0,
+          "cote_tendance": "+",
+          "cote_reference": 25.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "15",
@@ -1890,7 +2250,11 @@
           "equipement(s)": "",
           "nb_courses": 20,
           "nb_victoires": 3,
-          "nb_places": 11
+          "nb_places": 11,
+          "cote": 75.0,
+          "cote_tendance": "+",
+          "cote_reference": 82.0,
+          "avis_entraineur": "NEGATIF"
         },
         {
           "n°": "16",
@@ -1910,7 +2274,11 @@
           "equipement(s)": "",
           "nb_courses": 24,
           "nb_victoires": 5,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 86.0,
+          "cote_tendance": "+",
+          "cote_reference": 67.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "17",
@@ -1930,7 +2298,11 @@
           "equipement(s)": "",
           "nb_courses": 17,
           "nb_victoires": 5,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 151.0,
+          "cote_tendance": "+",
+          "cote_reference": 128.0,
+          "avis_entraineur": "NEGATIF"
         },
         {
           "n°": "18",
@@ -1950,13 +2322,17 @@
           "equipement(s)": "",
           "nb_courses": 19,
           "nb_victoires": 3,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 2.7,
+          "cote_tendance": "",
+          "cote_reference": 4.7,
+          "avis_entraineur": "NEUTRE"
         }
       ]
     },
     {
       "nom": "PRIX DALI",
-      "horaire": "13h57",
+      "horaire": "15h57",
       "numero": "8",
       "type": "ATTELE",
       "distance": "2875m",
@@ -1980,7 +2356,11 @@
           "equipement(s)": "",
           "nb_courses": 38,
           "nb_victoires": 7,
-          "nb_places": 17
+          "nb_places": 17,
+          "cote": 177.0,
+          "cote_tendance": "+",
+          "cote_reference": 205.0,
+          "avis_entraineur": "NEGATIF"
         },
         {
           "n°": "2",
@@ -2000,7 +2380,11 @@
           "equipement(s)": "",
           "nb_courses": 77,
           "nb_victoires": 2,
-          "nb_places": 39
+          "nb_places": 39,
+          "cote": 102.0,
+          "cote_tendance": "-",
+          "cote_reference": 139.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "3",
@@ -2020,7 +2404,11 @@
           "equipement(s)": "",
           "nb_courses": 43,
           "nb_victoires": 3,
-          "nb_places": 26
+          "nb_places": 26,
+          "cote": 130.0,
+          "cote_tendance": "-",
+          "cote_reference": 139.0,
+          "avis_entraineur": "NEGATIF"
         },
         {
           "n°": "4",
@@ -2040,7 +2428,11 @@
           "equipement(s)": "",
           "nb_courses": 41,
           "nb_victoires": 2,
-          "nb_places": 20
+          "nb_places": 20,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 10.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "5",
@@ -2060,7 +2452,11 @@
           "equipement(s)": "",
           "nb_courses": 26,
           "nb_victoires": 8,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 47.0,
+          "cote_tendance": "+",
+          "cote_reference": 36.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "6",
@@ -2080,7 +2476,11 @@
           "equipement(s)": "",
           "nb_courses": 40,
           "nb_victoires": 3,
-          "nb_places": 24
+          "nb_places": 24,
+          "cote": 5.3,
+          "cote_tendance": "",
+          "cote_reference": 8.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "7",
@@ -2100,7 +2500,11 @@
           "equipement(s)": "",
           "nb_courses": 39,
           "nb_victoires": 6,
-          "nb_places": 19
+          "nb_places": 19,
+          "cote": 98.0,
+          "cote_tendance": "+",
+          "cote_reference": 66.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "8",
@@ -2120,7 +2524,11 @@
           "equipement(s)": "",
           "nb_courses": 28,
           "nb_victoires": 6,
-          "nb_places": 15
+          "nb_places": 15,
+          "cote": 12.0,
+          "cote_tendance": "-",
+          "cote_reference": 18.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "9",
@@ -2140,7 +2548,11 @@
           "equipement(s)": "",
           "nb_courses": 40,
           "nb_victoires": 3,
-          "nb_places": 18
+          "nb_places": 18,
+          "cote": 172.0,
+          "cote_tendance": "+",
+          "cote_reference": 130.0,
+          "avis_entraineur": "NEGATIF"
         },
         {
           "n°": "10",
@@ -2160,7 +2572,11 @@
           "equipement(s)": "",
           "nb_courses": 57,
           "nb_victoires": 5,
-          "nb_places": 29
+          "nb_places": 29,
+          "cote": 26.0,
+          "cote_tendance": "-",
+          "cote_reference": 24.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "11",
@@ -2180,7 +2596,11 @@
           "equipement(s)": "",
           "nb_courses": 40,
           "nb_victoires": 2,
-          "nb_places": 29
+          "nb_places": 29,
+          "cote": 9.0,
+          "cote_tendance": "",
+          "cote_reference": 7.1,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "12",
@@ -2200,7 +2620,11 @@
           "equipement(s)": "",
           "nb_courses": 31,
           "nb_victoires": 6,
-          "nb_places": 19
+          "nb_places": 19,
+          "cote": 93.0,
+          "cote_tendance": "-",
+          "cote_reference": 56.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "13",
@@ -2220,7 +2644,11 @@
           "equipement(s)": "",
           "nb_courses": 32,
           "nb_victoires": 5,
-          "nb_places": 21
+          "nb_places": 21,
+          "cote": 5.4,
+          "cote_tendance": "",
+          "cote_reference": 6.3,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "14",
@@ -2240,7 +2668,11 @@
           "equipement(s)": "",
           "nb_courses": 26,
           "nb_victoires": 8,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 5.1,
+          "cote_tendance": "",
+          "cote_reference": 4.9,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "15",
@@ -2260,7 +2692,11 @@
           "equipement(s)": "",
           "nb_courses": 48,
           "nb_victoires": 9,
-          "nb_places": 25
+          "nb_places": 25,
+          "cote": 196.0,
+          "cote_tendance": "+",
+          "cote_reference": 195.0,
+          "avis_entraineur": "NEGATIF"
         },
         {
           "n°": "16",
@@ -2280,7 +2716,11 @@
           "equipement(s)": "",
           "nb_courses": 34,
           "nb_victoires": 7,
-          "nb_places": 14
+          "nb_places": 14,
+          "cote": 7.6,
+          "cote_tendance": "-",
+          "cote_reference": 5.9,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "17",
@@ -2300,7 +2740,11 @@
           "equipement(s)": "",
           "nb_courses": 42,
           "nb_victoires": 11,
-          "nb_places": 21
+          "nb_places": 21,
+          "cote": 25.0,
+          "cote_tendance": "+",
+          "cote_reference": 19.0,
+          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "18",
@@ -2320,7 +2764,11 @@
           "equipement(s)": "",
           "nb_courses": 42,
           "nb_victoires": 7,
-          "nb_places": 14
+          "nb_places": 14,
+          "cote": 152.0,
+          "cote_tendance": "+",
+          "cote_reference": 118.0,
+          "avis_entraineur": "NEGATIF"
         }
       ]
     }
