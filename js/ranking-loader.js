@@ -2656,34 +2656,37 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         let scoreFinal;
         let formuleUsed = '';
 
-        // Saint-Cloud / Longchamp : Valeur FG domine
+        // === FORMULES PAR TYPE — COTE TOUJOURS INCLUSE ===
+        // La cote = signal marché = toujours pertinent
+
+        // Saint-Cloud / Longchamp
         if (hippo.includes('SAINT-CLOUD') || hippo.includes('LONGCHAMP') || hippo.includes('SAINT CLOUD')) {
             scoreFinal = scoreValeur * 0.5 + scoreCote * 0.3 + scoreJockey25 * 0.005;
             formuleUsed = 'Saint-Cloud: Valeur×0.5 + Cote×0.3';
         }
-        // SPRINT : cote + jockey rang 2025 (le jockey fait la diff en sprint)
+        // SPRINT : cote + jockey (le jockey fait la diff)
         else if (distBucket === 'sprint') {
-            scoreFinal = scoreCote * 0.3 + scoreJockey25 * 0.3;
-            formuleUsed = 'Sprint: Cote×0.3 + J25rang×0.3';
+            scoreFinal = scoreCote * 0.4 + scoreJockey25 * 0.3 + tauxVCh25 * 0.3;
+            formuleUsed = 'Sprint: Cote×0.4 + J25×0.3 + Ch25×0.3';
         }
-        // MILE : cheval tauxV 2025 domine
+        // MILE : cheval domine + cote
         else if (distBucket === 'mile') {
-            scoreFinal = tauxVCh25 * 1.0;
-            formuleUsed = 'Mile: ChTauxV25×1';
+            scoreFinal = tauxVCh25 * 0.6 + scoreCote * 0.4;
+            formuleUsed = 'Mile: Ch25×0.6 + Cote×0.4';
         }
-        // MIDDLE : cheval tauxV 2025 domine
+        // MIDDLE : cheval domine + cote
         else if (distBucket === 'middle') {
-            scoreFinal = tauxVCh25 * 1.0;
-            formuleUsed = 'Middle: ChTauxV25×1';
+            scoreFinal = tauxVCh25 * 0.5 + scoreCote * 0.4 + scoreJockey25 * 0.005;
+            formuleUsed = 'Middle: Ch25×0.5 + Cote×0.4';
         }
-        // STAYING : corde (position de départ)
+        // STAYING : cheval + corde + cote
         else if (distBucket === 'staying') {
-            scoreFinal = scoreCorde * 0.2;
-            formuleUsed = 'Staying: Corde×0.2';
+            scoreFinal = tauxVCh25 * 0.4 + scoreCote * 0.3 + scoreCorde * 0.15;
+            formuleUsed = 'Staying: Ch25×0.4 + Cote×0.3 + Corde×0.15';
         }
         // Fallback
         else {
-            scoreFinal = tauxVCh25 * 1.0 + scoreCote * 0.3 + scoreJockey25 * 0.005;
+            scoreFinal = tauxVCh25 * 0.5 + scoreCote * 0.3 + scoreJockey25 * 0.005;
             formuleUsed = 'Standard: Ch25×1 + Cote×0.3';
         }
 
