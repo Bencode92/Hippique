@@ -220,14 +220,14 @@ def map_participant(p):
     result["nb_victoires"] = p.get("nombreVictoires", 0)
     result["nb_places"] = p.get("nombrePlaces", 0)
 
-    # COTES PMU (dernierRapportDirect = cote en direct, en dixièmes)
+    # COTES PMU (dernierRapportDirect = cote pour 1€ misé)
     rapport_direct = p.get("dernierRapportDirect", {})
     rapport_ref = p.get("dernierRapportReference", {})
     if isinstance(rapport_direct, dict) and rapport_direct.get("rapport"):
-        result["cote"] = rapport_direct["rapport"] / 10  # Ex: 53 → 5.3
+        result["cote"] = rapport_direct["rapport"]  # Ex: 4 = cote 4.0
         result["cote_tendance"] = safe_str(rapport_direct.get("indicateurTendance", ""))
     if isinstance(rapport_ref, dict) and rapport_ref.get("rapport"):
-        result["cote_reference"] = rapport_ref["rapport"] / 10
+        result["cote_reference"] = rapport_ref["rapport"]
 
     # Avis entraîneur (POSITIF, NEGATIF, NEUTRE)
     avis = p.get("avisEntraineur", "")
