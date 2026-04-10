@@ -2605,9 +2605,24 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             }
         }
 
-        // Score final = formule à 3 critères (backtestée comme meilleure)
-        // Valeur FG et musique calculées mais en info seulement (affichage tooltip)
-        const scoreFinal = tauxVCh25 * 1.0 + scoreCote * 0.3 + scoreJockey25 * 0.005;
+        // Score final — adapté par hippodrome
+        // Saint-Cloud/Longchamp : Valeur FG domine (50% top1 backtesté sur 16 courses)
+        // Autres : formule standard à 3 critères
+        const hippo = (courseContext?.hippodrome || '').toUpperCase();
+        const isSaintCloudLongchamp = hippo.includes('SAINT-CLOUD') || hippo.includes('LONGCHAMP') || hippo.includes('SAINT CLOUD');
+
+        let scoreFinal;
+        if (isSaintCloudLongchamp) {
+            // Formule Saint-Cloud : Valeur FG × 0.5 + indivTauxV × 0.3 + tauxVCh25 × 0.2 + cote × 0.15
+            const indivTauxV = (parseInt(participant.nb_courses) >= 2)
+                ? (parseInt(participant.nb_victoires) / parseInt(participant.nb_courses)) * 100
+                : 8;
+            scoreFinal = scoreValeur * 0.5 + indivTauxV * 0.3 + tauxVCh25 * 0.2 + scoreCote * 0.15;
+            console.log(`  🏟️ Saint-Cloud/Longchamp: Valeur ${scoreValeur} × 0.5 + IndivV ${indivTauxV.toFixed(1)} × 0.3`);
+        } else {
+            // Formule standard
+            scoreFinal = tauxVCh25 * 1.0 + scoreCote * 0.3 + scoreJockey25 * 0.005;
+        }
 
         // Confiance
         const hasMusique = musique.length > 3;
