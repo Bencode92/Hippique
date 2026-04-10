@@ -1955,7 +1955,7 @@
                     // Ajouter un indicateur visuel des poids utilisés
                     const weightsInfo = document.createElement('p');
                     weightsInfo.className = 'loading-indicator';
-                    weightsInfo.innerHTML = `<i class="fas fa-balance-scale"></i> Pondération: Cheval ${Math.round(weights.cheval*100)}%, Jockey ${Math.round(weights.jockey*100)}%, Entraîneur ${Math.round(weights.entraineur*100)}%`;
+                    weightsInfo.innerHTML = `<i class="fas fa-balance-scale"></i> Formule optimisée: TauxV cheval 2025 × 1.0 + Cote marché × 0.3 + Rang jockey 2025 × 0.005`;
                     participantsContainer.parentNode.insertBefore(weightsInfo, participantsContainer);
                     
                     if (scoresPredictifs.length === 0) {
@@ -2076,7 +2076,7 @@
                                             ${scorePredictif.details.jockey.combo ? `<div style="color:#40E0D0;font-size:0.85em">&#129309; Duo: ${scorePredictif.details.jockey.combo.courses}c, ${scorePredictif.details.jockey.combo.tauxVictoire}% vict</div>` : ''}
                                             ${scorePredictif.details.forme?.cheval ? `<div style="margin-top:4px;padding-top:4px;border-top:1px solid rgba(255,255,255,0.1)"><strong>Forme</strong> ${scorePredictif.details.forme.cheval.score}/100 ${({forte_hausse:'<span style="color:#40e05a">&#9650;&#9650;</span>',hausse:'<span style="color:#40e05a">&#9650;</span>',forte_baisse:'<span style="color:#e05a40">&#9660;&#9660;</span>',baisse:'<span style="color:#e05a40">&#9660;</span>'})[scorePredictif.details.forme.cheval.tendance] || ''}${scorePredictif.details.forme.cheval.dernieres5 ? `<div style="font-size:0.85em;opacity:0.8">Positions: ${scorePredictif.details.forme.cheval.dernieres5.map(c=>c.position).join('-')}</div>` : ''}</div>` : ''}
                                             ${scorePredictif.details.distance?.cheval ? `<div style="margin-top:4px;padding-top:4px;border-top:1px solid rgba(255,255,255,0.1)"><strong>Distance</strong> ${scorePredictif.details.distance.cheval.tauxVictoireDistance}% vict <span style="opacity:0.7">(vs ${scorePredictif.details.distance.cheval.tauxVictoireGlobal}% global)</span></div>` : ''}
-                                            <div style="margin-top:4px;padding-top:4px;border-top:1px solid rgba(255,255,255,0.1);font-size:0.85em;opacity:0.7">Pond: Ch ${Math.round(scorePredictif.poidsUtilises.cheval*100)}% J ${Math.round(scorePredictif.poidsUtilises.jockey*100)}% | Fiab: ${Math.round(parseFloat(scorePredictif.indiceConfiance||0)*100)}%</div>
+                                            <div style="margin-top:4px;padding-top:4px;border-top:1px solid rgba(255,255,255,0.1);font-size:0.85em;opacity:0.7">Formule: TauxV cheval×1 + Cote×0.3 + Jockey×0.005 | Fiab: ${Math.round(parseFloat(scorePredictif.indiceConfiance||0)*100)}%</div>
                                         </div>
                                     </div>
                                 </td>
