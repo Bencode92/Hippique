@@ -37,17 +37,9 @@ jobs:
       - name: Extraire les courses du jour
         run: python scraper_courses_pmu.py
 
-      # Étape 2 : Sauvegarder les prédictions et comparer aux résultats
-      - name: Backtesting du jour
-        run: |
-          TODAY=$(date +%Y-%m-%d)
-          echo "=== Backtesting pour $TODAY ==="
-          node backtesting.js save $TODAY
-          node backtesting.js compare $TODAY
-
-      # Étape 3 : Optimiser les poids si assez de données
-      - name: Optimisation des poids
-        run: node backtesting.js optimize
+      # Étape 2 : Walk-forward backtest clean (ZERO leakage)
+      - name: Backtest walk-forward
+        run: node mega-optimize-clean.js
 
       # Étape 4 : Commit les résultats
       - name: Commit et push
@@ -55,7 +47,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action - Backtest"
 
-          git add data/predictions/ data/backtest/ data/courses/ 2>/dev/null || true
+          git add data/backtest/ data/courses/ 2>/dev/null || true
 
           if git diff --cached --quiet; then
             echo "Aucun changement"
