@@ -2576,12 +2576,43 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         const coteVal = parseFloat(participant.cote) || 0;
         const scoreCote = coteVal > 1 ? (1 / coteVal) * 100 : 50;
 
-        // Score final = tauxVCh25 (poids 1) + cote (0.3) + jockey25 (0.3)
-        const scoreFinal = tauxVCh25 * 1.0 + scoreCote * 0.3 + scoreJockey25 * 0.005;
-        
-        // Confiance basée sur le matching 2025
+        // LEVIER 2 : Valeur France Galop (rating officiel handicapeur)
+        const valeurFG = parseFloat(participant.valeur) || 0;
+        const scoreValeur = valeurFG > 0 ? valeurFG : 50; // Déjà sur échelle ~40-70
+
+        // LEVIER 3 : Musique (dernières positions, pas de leakage)
+        let scoreMusique = 50;
+        const musique = participant.musique || '';
+        if (musique) {
+            const positions = musique.replace(/\(\d+\)/g, '').match(/(\d+|[DRT])[a-z]/gi);
+            if (positions && positions.length >= 2) {
+                // Prendre les 5 dernières courses (les plus récentes en premier)
+                const last5 = positions.slice(0, 5).map(p => {
+                    const val = p.slice(0, -1);
+                    if (val === 'D' || val === 'T' || val === 'R') return 0; // Disqualifié/tombé/retiré
+                    const pos = parseInt(val);
+                    return pos === 0 ? 12 : pos; // 0 = au-delà du 9ème → on met 12
+                });
+                // Score pondéré (plus récent = plus de poids)
+                let sc = 0, w = 0;
+                last5.forEach((pos, i) => {
+                    const wt = (last5.length - i) / last5.length; // Récent = poids fort
+                    const ps = pos === 1 ? 100 : pos === 2 ? 80 : pos === 3 ? 65 : pos <= 5 ? 45 : pos <= 8 ? 25 : 10;
+                    sc += ps * wt;
+                    w += wt;
+                });
+                scoreMusique = w > 0 ? sc / w : 50;
+            }
+        }
+
+        // Score final = tauxVCh25 + cote + jockey25 + valeur + musique
+        const scoreFinal = tauxVCh25 * 1.0 + scoreCote * 0.3 + scoreJockey25 * 0.005 + scoreValeur * 0.15 + scoreMusique * 0.2;
+
+        // Confiance basée sur le matching
+        const hasMusique = musique.length > 3;
+        const hasValeur = valeurFG > 0;
         const found25 = [!!itemCheval25, !!itemJockey25].filter(Boolean).length;
-        const indiceConfianceFinal = (found25 + (coteVal > 1 ? 1 : 0)) / 3;
+        const indiceConfianceFinal = (found25 + (coteVal > 1 ? 1 : 0) + (hasMusique ? 1 : 0) + (hasValeur ? 1 : 0)) / 5;
 
         // Retourner le résultat
         return {
@@ -2619,6 +2650,14 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
                 cote: {
                     valeur: coteVal || "N/A",
                     scoreCote: scoreCote.toFixed(1)
+                },
+                valeurFG: {
+                    valeur: valeurFG || "N/A",
+                    score: scoreValeur.toFixed(1)
+                },
+                musique: {
+                    raw: musique || "N/A",
+                    score: scoreMusique.toFixed(1)
                 },
                 distance: distanceDetails || {},
                 forme: {
