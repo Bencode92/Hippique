@@ -320,6 +320,21 @@ def scrape_courses(date_obj=None):
                 f"programme/{date_pmu}/R{reunion_num}/C{course_num}"
             )
 
+            # Extraire terrain + type de piste
+            if course_detail:
+                type_piste = safe_str(course_detail.get("typePiste", ""))
+                if type_piste:
+                    course_mapped["typePiste"] = type_piste
+
+                penetro = course_detail.get("penetrometre")
+                if penetro and isinstance(penetro, dict):
+                    course_mapped["terrain"] = safe_str(penetro.get("intitule", ""))
+                    course_mapped["penetrometre"] = safe_str(penetro.get("valeurMesure", ""))
+
+                corde_course = safe_str(course_detail.get("corde", ""))
+                if corde_course:
+                    course_mapped["cordeCourse"] = corde_course
+
             # Extraire l'ordre d'arrivée si disponible
             ordre_arrivee = {}
             if course_detail and course_detail.get("ordreArrivee"):
