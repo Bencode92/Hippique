@@ -2762,9 +2762,21 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
                 scorePredictif: scorePredictif
             };
         });
-        
+
+        // Normaliser les scores 0-100 par course (min-max scaling)
+        const scores = resultats.map(r => parseFloat(r.scorePredictif.score));
+        const minScore = Math.min(...scores);
+        const maxScore = Math.max(...scores);
+        const range = maxScore - minScore || 1;
+
+        resultats.forEach(r => {
+            const raw = parseFloat(r.scorePredictif.score);
+            r.scorePredictif.scoreRaw = raw;
+            r.scorePredictif.score = ((raw - minScore) / range * 80 + 10).toFixed(1); // 10-90
+        });
+
         // Trier par score décroissant
-        const resultatsTries = resultats.sort((a, b) => 
+        const resultatsTries = resultats.sort((a, b) =>
             parseFloat(b.scorePredictif.score) - parseFloat(a.scorePredictif.score)
         );
         
