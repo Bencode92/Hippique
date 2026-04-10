@@ -1,0 +1,51 @@
+{
+  "method": "walk_forward_strict",
+  "date": "2026-04-10T07:12:15.327Z",
+  "coursesPredites": 1122,
+  "coursesEntrainement": 1226,
+  "accuracy": {
+    "top1WinRate": 10,
+    "top1InTop3": 22.4,
+    "top3InTop3": 47.8,
+    "logLoss": 2.949
+  },
+  "byDistance": {
+    "mile": {
+      "courses": 325,
+      "top1": 41,
+      "top3in3": 181
+    },
+    "middle": {
+      "courses": 255,
+      "top1": 24,
+      "top3in3": 117
+    },
+    "sprint": {
+      "courses": 116,
+      "top1": 34,
+      "top3in3": 90
+    },
+    "staying": {
+      "courses": 426,
+      "top1": 13,
+      "top3in3": 148
+    }
+  },
+  "byFieldSize": {
+    "medium": {
+      "courses": 570,
+      "top1": 54,
+      "avgPartants": 6214
+    },
+    "large": {
+      "courses": 330,
+      "top1": 21,
+      "avgPartants": 5012
+    },
+    "small": {
+      "courses": 222,
+      "top1": 37,
+      "avgPartants": 1516
+    }
+  }
+}
