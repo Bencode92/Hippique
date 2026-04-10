@@ -1,0 +1,58 @@
+{
+  "date": "2026-04-10T07:25:31.517Z",
+  "tested_configs": 1944,
+  "best_params": {
+    "wCheval": {
+      "sprint": 0.7000000000000001,
+      "mile": 0.65,
+      "middle": 0.63,
+      "staying": 0.5700000000000001
+    },
+    "wJockey": {
+      "sprint": 0.25,
+      "mile": 0.3,
+      "middle": 0.32,
+      "staying": 0.38
+    },
+    "wEntraineur": {
+      "sprint": 0.05,
+      "mile": 0.05,
+      "middle": 0.05,
+      "staying": 0.05
+    },
+    "wIndiv": 0,
+    "wCorde": {
+      "sprint": 0.5,
+      "mile": 0.3,
+      "middle": 0.15,
+      "staying": 0.05
+    },
+    "wPoids": {
+      "sprint": 0,
+      "mile": 0,
+      "middle": 0,
+      "staying": 0
+    },
+    "alpha": 20,
+    "temperature": 8
+  },
+  "validation_result": {
+    "total": 245,
+    "top1Rate": 20.4,
+    "top3In3Rate": 77.6,
+    "logLoss": 2.325
+  },
+  "test_result": {
+    "total": 246,
+    "top1Rate": 32.5,
+    "top3In3Rate": 82.9,
+    "logLoss": 2.222
+  },
+  "default_result": {
+    "total": 246,
+    "top1Rate": 19.5,
+    "top3In3Rate": 66.3,
+    "logLoss": 2.501
+  },
+  "baseline_random": 9.1
+}
