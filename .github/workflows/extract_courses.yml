@@ -1,5 +1,11 @@
 name: Extraction des courses France Galop
+
 on:
+  schedule:
+    # Matin 10h UTC (12h France) — cotes d'ouverture + programme
+    - cron: '0 10 * * *'
+    # Soir 20h UTC (22h France) — résultats + cotes finales
+    - cron: '0 20 * * *'
   workflow_dispatch:
     inputs:
       date:
@@ -26,18 +32,12 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: |
-          pip install requests
+        run: pip install requests
 
       - name: Run extraction script
         run: |
           DATE_ARG="${{ github.event.inputs.date || 'today' }}"
           python scraper_courses_pmu.py ${DATE_ARG}
-
-      - name: Prepare directories for commit
-        run: |
-          mkdir -p data/courses
-          touch data/courses/.gitkeep
 
       - name: Commit and push changes
         run: |
@@ -48,12 +48,13 @@ jobs:
           git pull origin main --rebase
           git stash pop || true
 
+          mkdir -p data/courses
           git add data/courses/*.json
 
           if git diff --cached --quiet; then
             echo "Aucun changement détecté"
           else
-            git commit -m "📊 Mise à jour des courses - $(date +'%Y-%m-%d')"
+            git commit -m "📊 Courses + cotes PMU - $(date +'%Y-%m-%d %H:%M')"
             git push
           fi
         env:
