@@ -2605,10 +2605,11 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             }
         }
 
-        // Score final = tauxVCh25 + cote + jockey25 + valeur + musique
-        const scoreFinal = tauxVCh25 * 1.0 + scoreCote * 0.3 + scoreJockey25 * 0.005 + scoreValeur * 0.15 + scoreMusique * 0.2;
+        // Score final = formule à 3 critères (backtestée comme meilleure)
+        // Valeur FG et musique calculées mais en info seulement (affichage tooltip)
+        const scoreFinal = tauxVCh25 * 1.0 + scoreCote * 0.3 + scoreJockey25 * 0.005;
 
-        // Confiance basée sur le matching
+        // Confiance
         const hasMusique = musique.length > 3;
         const hasValeur = valeurFG > 0;
         const found25 = [!!itemCheval25, !!itemJockey25].filter(Boolean).length;
