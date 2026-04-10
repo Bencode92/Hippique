@@ -1875,11 +1875,12 @@
                                     <th style="width:50px">Poids</th>
                                     <th style="width:50px">Cote</th>
                                     <th style="width:140px">Score</th>
+                                    <th style="width:55px">Arrivée</th>
                                 </tr>
                             </thead>
                             <tbody id="participants-${detailId}">
                                 <tr>
-                                    <td colspan="7" class="loading-indicator">
+                                    <td colspan="8" class="loading-indicator">
                                         <i class="fas fa-spinner fa-spin"></i> Calcul des scores prédictifs...
                                     </td>
                                 </tr>
@@ -1960,7 +1961,7 @@
                     if (scoresPredictifs.length === 0) {
                         participantsContainer.innerHTML = `
                             <tr>
-                                <td colspan="7" style="text-align: center;">
+                                <td colspan="8" style="text-align: center;">
                                     <i class="fas fa-exclamation-circle" style="color: var(--gold);"></i>
                                     Impossible de calculer les scores prédictifs pour cette course.
                                 </td>
@@ -2028,6 +2029,19 @@
                         const scoreVal = parseFloat(scorePredictif.score);
                         const scoreColor = scoreVal > 70 ? '#40e05a' : scoreVal > 50 ? '#D4AF37' : scoreVal > 30 ? '#e0a040' : '#e05a40';
 
+                        // Arrivée réelle (si course terminée)
+                        const arrivee = participant.arrivee;
+                        const rangPredit = index + 1; // position dans notre classement trié par score
+                        let arriveeHTML = '';
+                        if (arrivee) {
+                            const arriveeColor = arrivee === 1 ? '#FFD700' : arrivee === 2 ? '#C0C0C0' : arrivee === 3 ? '#CD7F32' : arrivee <= 5 ? '#40E0D0' : 'rgba(255,255,255,0.4)';
+                            const match = arrivee <= 3 && rangPredit <= 3;
+                            const exactMatch = arrivee === rangPredit;
+                            arriveeHTML = `<span style="font-weight:700;font-size:1.1em;color:${arriveeColor}">${arrivee}${arrivee===1?'er':'e'}</span>${exactMatch ? ' <span style="color:#40e05a;font-size:0.7em">✓</span>' : match ? ' <span style="color:#D4AF37;font-size:0.7em">~</span>' : ''}`;
+                        } else {
+                            arriveeHTML = '<span style="opacity:0.3">-</span>';
+                        }
+
                         participantsHTML += `
                             <tr data-score="${scorePredictif.score}" data-numero="${participant.numero || 0}" data-cheval="${participant.cheval}" data-cote="${participant.cote || 0}">
                                 <td style="text-align: center;">
@@ -2066,12 +2080,41 @@
                                         </div>
                                     </div>
                                 </td>
+                                <td style="text-align:center">${arriveeHTML}</td>
                             </tr>
                         `;
                     });
-                    
+
+                    // Ajouter un résumé si des arrivées sont disponibles
+                    const hasArrivees = participantsTries.some(r => r.participant.arrivee);
+                    if (hasArrivees) {
+                        const sorted = [...participantsTries].sort((a,b) => parseFloat(b.scorePredictif.score) - parseFloat(a.scorePredictif.score));
+                        const notre1 = sorted[0];
+                        const gagnant = participantsTries.find(r => r.participant.arrivee === 1);
+                        const notre3 = sorted.slice(0,3);
+                        const top3reel = participantsTries.filter(r => r.participant.arrivee && r.participant.arrivee <= 3);
+                        const top3match = notre3.some(r => r.participant.arrivee && r.participant.arrivee <= 3);
+
+                        let resumeClass = top3match ? 'color:#40e05a' : 'color:#e05a40';
+                        let resumeText = '';
+                        if (notre1.participant.arrivee === 1) {
+                            resumeText = '✅ Notre #1 a GAGNÉ !';
+                            resumeClass = 'color:#FFD700;font-weight:700';
+                        } else if (notre1.participant.arrivee && notre1.participant.arrivee <= 3) {
+                            resumeText = '✅ Notre #1 est ' + notre1.participant.arrivee + (notre1.participant.arrivee===2?'ème':'ème');
+                        } else if (top3match) {
+                            resumeText = '~ Un de nos top 3 dans le vrai top 3';
+                        } else {
+                            resumeText = '❌ Aucun de nos top 3 dans le top 3 réel';
+                        }
+                        if (gagnant) {
+                            resumeText += ' | Gagnant: ' + (gagnant.participant.cheval||'').split(' ')[0] + ' (cote ' + (gagnant.participant.cote||'-') + ')';
+                        }
+                        participantsHTML += '<tr><td colspan="8" style="text-align:center;padding:8px;' + resumeClass + ';font-size:0.9em;border-top:2px solid rgba(255,255,255,0.1)">' + resumeText + '</td></tr>';
+                    }
+
                     participantsContainer.innerHTML = participantsHTML;
-                    
+
                     // Ajouter l'événement de tri au bouton
                     const sortButton = document.getElementById(`sort-by-score-${detailId}`);
                     sortButton.addEventListener('click', function() {
