@@ -1955,7 +1955,9 @@
                     // Ajouter un indicateur visuel des poids utilisés
                     const weightsInfo = document.createElement('p');
                     weightsInfo.className = 'loading-indicator';
-                    weightsInfo.innerHTML = `<i class="fas fa-balance-scale"></i> TauxV 2025 + Cote + Jockey 2025 + Valeur FG + Musique`;
+                    const distLabel = courseContext.distance < 1400 ? 'Sprint' : courseContext.distance < 1900 ? 'Mile' : courseContext.distance < 2400 ? 'Middle' : 'Staying';
+                    const fieldLabel = courseContext.participants?.length < 9 ? 'petit champ' : courseContext.participants?.length < 14 ? 'moyen' : 'grand champ';
+                    weightsInfo.innerHTML = `<i class="fas fa-balance-scale"></i> Formule adaptée : ${distLabel} (${courseContext.distance}m) + ${fieldLabel} (${courseContext.participants?.length || '?'} partants)`;
                     participantsContainer.parentNode.insertBefore(weightsInfo, participantsContainer);
                     
                     if (scoresPredictifs.length === 0) {

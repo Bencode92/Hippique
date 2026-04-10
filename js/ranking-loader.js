@@ -2605,24 +2605,71 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             }
         }
 
-        // Score final — adapté par hippodrome
-        // Saint-Cloud/Longchamp : Valeur FG domine (50% top1 backtesté sur 16 courses)
-        // Autres : formule standard à 3 critères
+        // === FORMULE ADAPTATIVE PAR TYPE DE COURSE ===
+        // Backtestée par segment : val jan-fév → holdout mars+
+        const courseDistance = courseContext?.distance || 0;
+        const distBucket = this.getDistanceBucket(courseDistance);
+        const nbPartants = courseContext?.participants?.length || 10;
+        const fieldBucket = nbPartants < 9 ? 'small' : nbPartants < 14 ? 'medium' : 'large';
         const hippo = (courseContext?.hippodrome || '').toUpperCase();
-        const isSaintCloudLongchamp = hippo.includes('SAINT-CLOUD') || hippo.includes('LONGCHAMP') || hippo.includes('SAINT CLOUD');
+
+        // Jockey taux victoire 2025
+        const j25tauxV = itemJockey25 ? parseFloat(itemJockey25.TauxVictoire || 0) : 8;
+
+        // Combo jockey × entraîneur
+        let comboScore = 10;
+        if (this.comboStats) {
+            const comboKey = (participant.jockey || '').toUpperCase() + '|||' + (participant.entraineur || participant['entraîneur'] || '').toUpperCase();
+            const co = this.comboStats[comboKey];
+            if (co && co.courses >= 3) comboScore = co.tauxVictoire;
+        }
 
         let scoreFinal;
-        if (isSaintCloudLongchamp) {
-            // Formule Saint-Cloud : Valeur FG × 0.5 + indivTauxV × 0.3 + tauxVCh25 × 0.2 + cote × 0.15
-            const indivTauxV = (parseInt(participant.nb_courses) >= 2)
-                ? (parseInt(participant.nb_victoires) / parseInt(participant.nb_courses)) * 100
-                : 8;
-            scoreFinal = scoreValeur * 0.5 + indivTauxV * 0.3 + tauxVCh25 * 0.2 + scoreCote * 0.15;
-            console.log(`  🏟️ Saint-Cloud/Longchamp: Valeur ${scoreValeur} × 0.5 + IndivV ${indivTauxV.toFixed(1)} × 0.3`);
-        } else {
-            // Formule standard
-            scoreFinal = tauxVCh25 * 1.0 + scoreCote * 0.3 + scoreJockey25 * 0.005;
+        let formuleUsed = '';
+
+        // Saint-Cloud / Longchamp : Valeur FG domine
+        if (hippo.includes('SAINT-CLOUD') || hippo.includes('LONGCHAMP') || hippo.includes('SAINT CLOUD')) {
+            scoreFinal = scoreValeur * 0.5 + scoreCote * 0.3 + scoreJockey25 * 0.005;
+            formuleUsed = 'Saint-Cloud: Valeur×0.5 + Cote×0.3';
         }
+        // SPRINT : cheval 2025 + cote + jockey rang 2025
+        else if (distBucket === 'sprint') {
+            scoreFinal = tauxVCh25 * 1.0 + scoreCote * 0.3 + scoreJockey25 * 0.01;
+            formuleUsed = 'Sprint: Ch25×1 + Cote×0.3 + J25×0.01';
+        }
+        // MILE : cote domine
+        else if (distBucket === 'mile') {
+            scoreFinal = scoreCote * 1.0 + j25tauxV * 0.3;
+            formuleUsed = 'Mile: Cote×1 + J25tV×0.3';
+        }
+        // MIDDLE : cote domine
+        else if (distBucket === 'middle') {
+            scoreFinal = scoreCote * 1.0 + j25tauxV * 0.3;
+            formuleUsed = 'Middle: Cote×1 + J25tV×0.3';
+        }
+        // STAYING : cheval 2025 domine
+        else if (distBucket === 'staying') {
+            scoreFinal = tauxVCh25 * 1.0;
+            formuleUsed = 'Staying: Ch25tauxV×1';
+        }
+        // Fallback
+        else {
+            scoreFinal = tauxVCh25 * 1.0 + scoreCote * 0.3 + scoreJockey25 * 0.005;
+            formuleUsed = 'Standard: Ch25×1 + Cote×0.3';
+        }
+
+        // Ajustement par taille de peloton
+        if (fieldBucket === 'small') {
+            // Petit champ : boost valeur FG
+            scoreFinal += scoreValeur * 0.1;
+            formuleUsed += ' +Valeur(petit)';
+        } else if (fieldBucket === 'large') {
+            // Grand champ : boost jockey
+            scoreFinal += j25tauxV * 0.15;
+            formuleUsed += ' +J25tV(grand)';
+        }
+
+        console.log(`  📊 ${formuleUsed} → ${scoreFinal.toFixed(1)}`);
 
         // Confiance
         const hasMusique = musique.length > 3;
