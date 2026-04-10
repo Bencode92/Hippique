@@ -2562,15 +2562,39 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         // 3 critères : tauxVictoire cheval 2025 + cote marché + rang jockey 2025
         // Les classements 2025 = année fermée, zéro leakage
 
-        // Chercher le cheval dans le classement 2025
+        // Chercher le cheval dans 2025 ET 2026 (le meilleur des deux)
         const itemCheval25 = this.trouverItemDansClassement(this.dataHistorique?.chevaux_2025 || [], nomChevalBase, 'chevaux');
-        const tauxVCh25 = itemCheval25 ? parseFloat(itemCheval25.TauxVictoire || 0) : 8; // médiane si non trouvé
+        const itemCheval26 = this.trouverItemDansClassement(this.data.chevaux || [], nomChevalBase, 'chevaux');
+        // Prendre le meilleur tauxV entre 2025 et 2026, ou la médiane si aucun
+        const tauxV25 = itemCheval25 ? parseFloat(itemCheval25.TauxVictoire || 0) : null;
+        const tauxV26 = itemCheval26 ? parseFloat(itemCheval26.TauxVictoire || 0) : null;
+        const tauxVCh25 = tauxV25 !== null && tauxV26 !== null ? Math.max(tauxV25, tauxV26)
+                        : tauxV25 !== null ? tauxV25
+                        : tauxV26 !== null ? tauxV26
+                        : 8; // médiane si aucun trouvé
+        const chevalSource = tauxV25 !== null && tauxV26 !== null ? '2025+2026'
+                           : tauxV25 !== null ? '2025'
+                           : tauxV26 !== null ? '2026'
+                           : 'NC';
 
-        // Chercher le jockey dans le classement 2025
+        // Chercher le jockey dans 2025 ET 2026
         const itemJockey25 = this.trouverItemDansClassement(this.dataHistorique?.jockeys_2025 || [], participant.jockey, 'jockeys');
+        const itemJockey26 = this.trouverItemDansClassement(this.data.jockeys || [], participant.jockey, 'jockeys');
         const popJ25 = (this.dataHistorique?.jockeys_2025 || []).length || 500;
+        const popJ26 = (this.data.jockeys || []).length || 266;
+        // Prendre le meilleur rang entre 2025 et 2026
         const rangJ25 = itemJockey25 ? parseInt(itemJockey25.Rang) : null;
-        const scoreJockey25 = rangJ25 ? maxScore * (1 - (rangJ25 - 1) / Math.max(popJ25, 1)) : 50;
+        const rangJ26 = itemJockey26 ? parseInt(itemJockey26.Rang) : null;
+        const scoreJ25 = rangJ25 ? maxScore * (1 - (rangJ25 - 1) / Math.max(popJ25, 1)) : null;
+        const scoreJ26 = rangJ26 ? maxScore * (1 - (rangJ26 - 1) / Math.max(popJ26, 1)) : null;
+        const scoreJockey25 = scoreJ25 !== null && scoreJ26 !== null ? Math.max(scoreJ25, scoreJ26)
+                            : scoreJ25 !== null ? scoreJ25
+                            : scoreJ26 !== null ? scoreJ26
+                            : 50;
+        const jockeySource = scoreJ25 !== null && scoreJ26 !== null ? '2025+2026'
+                           : scoreJ25 !== null ? '2025'
+                           : scoreJ26 !== null ? '2026'
+                           : 'NC';
 
         // Cote marché (proba implicite)
         const coteVal = parseFloat(participant.cote) || 0;
@@ -2679,7 +2703,7 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         // Confiance
         const hasMusique = musique.length > 3;
         const hasValeur = valeurFG > 0;
-        const found25 = [!!itemCheval25, !!itemJockey25].filter(Boolean).length;
+        const found25 = [!!(itemCheval25 || itemCheval26), !!(itemJockey25 || itemJockey26)].filter(Boolean).length;
         const indiceConfianceFinal = (found25 + (coteVal > 1 ? 1 : 0) + (hasMusique ? 1 : 0) + (hasValeur ? 1 : 0)) / 5;
 
         // Retourner le résultat
@@ -2689,12 +2713,13 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             poidsUtilises: { cheval: 0.65, jockey: 0.30, entraineur: 0.02, eleveur: 0.02, proprietaire: 0.01 },
             details: {
                 cheval: {
-                    rang: itemCheval25 ? itemCheval25.Rang + " (2025)" : "NC",
+                    rang: (itemCheval25 || itemCheval26) ? (itemCheval25?.Rang || itemCheval26?.Rang) + " (" + chevalSource + ")" : "NC",
                     score: tauxVCh25.toFixed(1),
-                    tauxV2025: tauxVCh25
+                    tauxV2025: tauxVCh25,
+                    source: chevalSource
                 },
                 jockey: {
-                    rang: rangJ25 ? rangJ25 + " (2025)" : (rangJockey || "NC"),
+                    rang: (rangJ25 || rangJ26) ? (rangJ25 || rangJ26) + " (" + jockeySource + ")" : (rangJockey || "NC"),
                     score: scoreJockey25.toFixed(1),
                     cravacheOr: rangCravacheOr ? { rang: rangCravacheOr, bonus: cravacheOrBonus.toFixed(1) } : null,
                     combo: comboData ? { courses: comboData.courses, tauxVictoire: comboData.tauxVictoire, bonus: comboBonus.toFixed(1) } : null,
