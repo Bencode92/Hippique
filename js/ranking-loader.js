@@ -2624,6 +2624,11 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             if (co && co.courses >= 3) comboScore = co.tauxVictoire;
         }
 
+        // Corde score
+        const cordeNum = parseInt(String(participant.corde || '').match(/(\d+)/)?.[1] || 0);
+        const cordeImpact = {sprint:0.5, mile:0.3, middle:0.15, staying:0.05};
+        const scoreCorde = cordeNum > 0 ? 50 + (50 - (cordeNum - 1) * 8) * (cordeImpact[distBucket] || 0.2) : 50;
+
         let scoreFinal;
         let formuleUsed = '';
 
@@ -2632,25 +2637,25 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             scoreFinal = scoreValeur * 0.5 + scoreCote * 0.3 + scoreJockey25 * 0.005;
             formuleUsed = 'Saint-Cloud: Valeur×0.5 + Cote×0.3';
         }
-        // SPRINT : cheval 2025 + cote + jockey rang 2025
+        // SPRINT : cote + jockey rang 2025 (le jockey fait la diff en sprint)
         else if (distBucket === 'sprint') {
-            scoreFinal = tauxVCh25 * 1.0 + scoreCote * 0.3 + scoreJockey25 * 0.01;
-            formuleUsed = 'Sprint: Ch25×1 + Cote×0.3 + J25×0.01';
+            scoreFinal = scoreCote * 0.3 + scoreJockey25 * 0.3;
+            formuleUsed = 'Sprint: Cote×0.3 + J25rang×0.3';
         }
-        // MILE : cote domine
+        // MILE : cheval tauxV 2025 domine
         else if (distBucket === 'mile') {
-            scoreFinal = scoreCote * 1.0 + j25tauxV * 0.3;
-            formuleUsed = 'Mile: Cote×1 + J25tV×0.3';
-        }
-        // MIDDLE : cote domine
-        else if (distBucket === 'middle') {
-            scoreFinal = scoreCote * 1.0 + j25tauxV * 0.3;
-            formuleUsed = 'Middle: Cote×1 + J25tV×0.3';
-        }
-        // STAYING : cheval 2025 domine
-        else if (distBucket === 'staying') {
             scoreFinal = tauxVCh25 * 1.0;
-            formuleUsed = 'Staying: Ch25tauxV×1';
+            formuleUsed = 'Mile: ChTauxV25×1';
+        }
+        // MIDDLE : cheval tauxV 2025 domine
+        else if (distBucket === 'middle') {
+            scoreFinal = tauxVCh25 * 1.0;
+            formuleUsed = 'Middle: ChTauxV25×1';
+        }
+        // STAYING : corde (position de départ)
+        else if (distBucket === 'staying') {
+            scoreFinal = scoreCorde * 0.2;
+            formuleUsed = 'Staying: Corde×0.2';
         }
         // Fallback
         else {
@@ -2658,15 +2663,15 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             formuleUsed = 'Standard: Ch25×1 + Cote×0.3';
         }
 
-        // Ajustement par taille de peloton
+        // Ajustement par taille de peloton (backtesté 2025→2026)
         if (fieldBucket === 'small') {
-            // Petit champ : boost valeur FG
-            scoreFinal += scoreValeur * 0.1;
+            // Petit champ : valeur FG domine (+28 pts vs favori)
+            scoreFinal += scoreValeur * 0.15;
             formuleUsed += ' +Valeur(petit)';
         } else if (fieldBucket === 'large') {
-            // Grand champ : boost jockey
-            scoreFinal += j25tauxV * 0.15;
-            formuleUsed += ' +J25tV(grand)';
+            // Grand champ : chTauxV domine (+49 pts vs favori)
+            scoreFinal += tauxVCh25 * 0.3;
+            formuleUsed += ' +ChTauxV(grand)';
         }
 
         console.log(`  📊 ${formuleUsed} → ${scoreFinal.toFixed(1)}`);
