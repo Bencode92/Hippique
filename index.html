@@ -1228,7 +1228,7 @@
     </div>
 
     <!-- Module ranking-loader (doit être chargé avant le script principal) -->
-    <script src="js/ranking-loader.js?v=5"></script>
+    <script src="js/ranking-loader.js?v=6"></script>
 
     <!-- Module de chargement des courses -->
     <script>
@@ -2069,16 +2069,25 @@
                                             <i class="fas fa-info-circle"></i>
                                         </small>
                                         <div class="tooltip-content">
-                                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px 12px;margin-bottom:6px">
-                                              <span style="opacity:0.7">Cheval #${scorePredictif.details.cheval.rang}</span>
-                                              <span style="font-weight:600">${scorePredictif.details.cheval.score} pts</span>
-                                              <span style="opacity:0.7">Jockey #${scorePredictif.details.jockey.rang}</span>
-                                              <span style="font-weight:600">${scorePredictif.details.jockey.score} pts${scorePredictif.details.jockey.cravacheOr ? ' <span style="color:#D4AF37">&#127942;</span>' : ''}</span>
+                                            <div style="font-weight:600;margin-bottom:6px;color:#40E0D0;font-size:0.9em">Score brut: ${scorePredictif.scoreRaw || scorePredictif.score}</div>
+                                            <div style="display:grid;grid-template-columns:auto 1fr;gap:3px 10px;font-size:0.85em">
+                                              <span style="opacity:0.7">Cheval 2025</span>
+                                              <span>#${scorePredictif.details.cheval.rang} | TauxV: ${scorePredictif.details.cheval.tauxV2025 || '-'}%</span>
+                                              <span style="opacity:0.7">Jockey 2025</span>
+                                              <span>#${scorePredictif.details.jockey.rang} | ${scorePredictif.details.jockey.score} pts${scorePredictif.details.jockey.cravacheOr ? ' &#127942;' : ''}</span>
+                                              <span style="opacity:0.7">Valeur FG</span>
+                                              <span style="font-weight:600">${scorePredictif.details.valeurFG?.valeur || '-'}</span>
+                                              <span style="opacity:0.7">Cote PMU</span>
+                                              <span>${scorePredictif.details.cote?.valeur || '-'}</span>
+                                              <span style="opacity:0.7">Corde</span>
+                                              <span>${participant.corde || '-'}</span>
+                                              <span style="opacity:0.7">Musique</span>
+                                              <span>${scorePredictif.details.musique?.score || '-'}/100</span>
                                             </div>
-                                            ${scorePredictif.details.jockey.combo ? `<div style="color:#40E0D0;font-size:0.85em">&#129309; Duo: ${scorePredictif.details.jockey.combo.courses}c, ${scorePredictif.details.jockey.combo.tauxVictoire}% vict</div>` : ''}
-                                            ${scorePredictif.details.forme?.cheval ? `<div style="margin-top:4px;padding-top:4px;border-top:1px solid rgba(255,255,255,0.1)"><strong>Forme</strong> ${scorePredictif.details.forme.cheval.score}/100 ${({forte_hausse:'<span style="color:#40e05a">&#9650;&#9650;</span>',hausse:'<span style="color:#40e05a">&#9650;</span>',forte_baisse:'<span style="color:#e05a40">&#9660;&#9660;</span>',baisse:'<span style="color:#e05a40">&#9660;</span>'})[scorePredictif.details.forme.cheval.tendance] || ''}${scorePredictif.details.forme.cheval.dernieres5 ? `<div style="font-size:0.85em;opacity:0.8">Positions: ${scorePredictif.details.forme.cheval.dernieres5.map(c=>c.position).join('-')}</div>` : ''}</div>` : ''}
-                                            ${scorePredictif.details.distance?.cheval ? `<div style="margin-top:4px;padding-top:4px;border-top:1px solid rgba(255,255,255,0.1)"><strong>Distance</strong> ${scorePredictif.details.distance.cheval.tauxVictoireDistance}% vict <span style="opacity:0.7">(vs ${scorePredictif.details.distance.cheval.tauxVictoireGlobal}% global)</span></div>` : ''}
-                                            <div style="margin-top:4px;padding-top:4px;border-top:1px solid rgba(255,255,255,0.1);font-size:0.85em;opacity:0.7">Valeur FG: ${scorePredictif.details.valeurFG?.valeur || '-'} | Musique: ${scorePredictif.details.musique?.score || '-'}/100 | Fiab: ${Math.round(parseFloat(scorePredictif.indiceConfiance||0)*100)}%</div>
+                                            ${scorePredictif.details.jockey.combo ? `<div style="margin-top:4px;padding-top:4px;border-top:1px solid rgba(255,255,255,0.1);color:#40E0D0;font-size:0.85em">&#129309; Duo J×E: ${scorePredictif.details.jockey.combo.courses}c, ${scorePredictif.details.jockey.combo.tauxVictoire}% vict</div>` : ''}
+                                            ${scorePredictif.details.forme?.cheval ? `<div style="margin-top:4px;padding-top:4px;border-top:1px solid rgba(255,255,255,0.1);font-size:0.85em"><strong>Forme</strong> ${scorePredictif.details.forme.cheval.score}/100 ${({forte_hausse:'<span style="color:#40e05a">&#9650;&#9650;</span>',hausse:'<span style="color:#40e05a">&#9650;</span>',forte_baisse:'<span style="color:#e05a40">&#9660;&#9660;</span>',baisse:'<span style="color:#e05a40">&#9660;</span>'})[scorePredictif.details.forme.cheval.tendance] || ''}${scorePredictif.details.forme.cheval.dernieres5 ? ` <span style="opacity:0.7">${scorePredictif.details.forme.cheval.dernieres5.map(c=>c.position).join('-')}</span>` : ''}</div>` : ''}
+                                            ${scorePredictif.details.distance?.cheval ? `<div style="font-size:0.85em"><strong>Spé dist.</strong> ${scorePredictif.details.distance.cheval.tauxVictoireDistance}% <span style="opacity:0.7">(vs ${scorePredictif.details.distance.cheval.tauxVictoireGlobal}% global)</span></div>` : ''}
+                                            <div style="margin-top:4px;padding-top:4px;border-top:1px solid rgba(255,255,255,0.1);font-size:0.8em;opacity:0.6">Fiab: ${Math.round(parseFloat(scorePredictif.indiceConfiance||0)*100)}%</div>
                                         </div>
                                     </div>
                                 </td>
