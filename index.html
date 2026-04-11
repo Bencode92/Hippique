@@ -1228,7 +1228,7 @@
     </div>
 
     <!-- Module ranking-loader (doit être chargé avant le script principal) -->
-    <script src="js/ranking-loader.js?v=8"></script>
+    <script src="js/ranking-loader.js?v=9"></script>
 
     <!-- Module de chargement des courses -->
     <script>
@@ -2101,27 +2101,68 @@
                     if (hasArrivees) {
                         const sorted = [...participantsTries].sort((a,b) => parseFloat(b.scorePredictif.score) - parseFloat(a.scorePredictif.score));
                         const notre1 = sorted[0];
+                        const notre2 = sorted.slice(0, 2);
                         const gagnant = participantsTries.find(r => r.participant.arrivee === 1);
-                        const notre3 = sorted.slice(0,3);
-                        const top3reel = participantsTries.filter(r => r.participant.arrivee && r.participant.arrivee <= 3);
-                        const top3match = notre3.some(r => r.participant.arrivee && r.participant.arrivee <= 3);
 
-                        let resumeClass = top3match ? 'color:#40e05a' : 'color:#e05a40';
+                        // Favori marché (2 meilleures cotes)
+                        const avecCotes = participantsTries.filter(r => r.participant.cote > 1);
+                        const parCote = [...avecCotes].sort((a,b) => a.participant.cote - b.participant.cote);
+                        const fav1 = parCote[0];
+                        const fav2 = parCote.slice(0, 2);
+
+                        const notre1Gagne = notre1.participant.arrivee === 1;
+                        const fav1Gagne = fav1 && fav1.participant.arrivee === 1;
+                        const notre2Gagne = notre2.some(r => r.participant.arrivee === 1);
+                        const fav2Gagne = fav2.some(r => r.participant.arrivee === 1);
+
+                        // Accumuler stats réunion
+                        if (!window.reunionStats) window.reunionStats = {};
+                        const hippoKey = hippodrome || 'GLOBAL';
+                        if (!window.reunionStats[hippoKey]) window.reunionStats[hippoKey] = {total:0, notre1:0, fav1:0, notre2:0, fav2:0};
+                        const rs = window.reunionStats[hippoKey];
+                        rs.total++;
+                        if (notre1Gagne) rs.notre1++;
+                        if (fav1Gagne) rs.fav1++;
+                        if (notre2Gagne) rs.notre2++;
+                        if (fav2Gagne) rs.fav2++;
+
+                        // Ligne résultat course
                         let resumeText = '';
-                        if (notre1.participant.arrivee === 1) {
+                        let resumeClass = '';
+                        if (notre1Gagne) {
                             resumeText = '✅ Notre #1 a GAGNÉ !';
                             resumeClass = 'color:#FFD700;font-weight:700';
-                        } else if (notre1.participant.arrivee && notre1.participant.arrivee <= 3) {
-                            resumeText = '✅ Notre #1 est ' + notre1.participant.arrivee + (notre1.participant.arrivee===2?'ème':'ème');
-                        } else if (top3match) {
-                            resumeText = '~ Un de nos top 3 dans le vrai top 3';
+                        } else if (fav1Gagne) {
+                            resumeText = '⭐ Favori cote a gagné';
+                            resumeClass = 'color:#40E0D0';
+                        } else if (notre2Gagne) {
+                            resumeText = '✅ Gagnant dans notre Top 2';
+                            resumeClass = 'color:#40e05a';
+                        } else if (fav2Gagne) {
+                            resumeText = '⭐ Gagnant dans les 2 meilleures cotes';
+                            resumeClass = 'color:#40E0D0';
                         } else {
-                            resumeText = '❌ Aucun de nos top 3 dans le top 3 réel';
+                            resumeText = '❌ Surprise !';
+                            resumeClass = 'color:#e05a40';
                         }
                         if (gagnant) {
-                            resumeText += ' | Gagnant: ' + (gagnant.participant.cheval||'').split(' ')[0] + ' (cote ' + (gagnant.participant.cote||'-') + ')';
+                            resumeText += ' | ' + (gagnant.participant.cheval||'').split(' ')[0] + ' (cote ' + (gagnant.participant.cote||'-') + ')';
                         }
-                        participantsHTML += '<tr><td colspan="8" style="text-align:center;padding:8px;' + resumeClass + ';font-size:0.9em;border-top:2px solid rgba(255,255,255,0.1)">' + resumeText + '</td></tr>';
+
+                        // Stats réunion cumulées
+                        const pctN1 = rs.total > 0 ? Math.round(rs.notre1/rs.total*100) : 0;
+                        const pctF1 = rs.total > 0 ? Math.round(rs.fav1/rs.total*100) : 0;
+                        const pctN2 = rs.total > 0 ? Math.round(rs.notre2/rs.total*100) : 0;
+                        const pctF2 = rs.total > 0 ? Math.round(rs.fav2/rs.total*100) : 0;
+
+                        participantsHTML += '<tr><td colspan="8" style="text-align:center;padding:6px;' + resumeClass + ';font-size:0.85em;border-top:2px solid rgba(255,255,255,0.1)">' + resumeText + '</td></tr>';
+                        participantsHTML += '<tr><td colspan="8" style="text-align:center;padding:4px;font-size:0.8em;opacity:0.8;background:rgba(0,0,0,0.15)">'
+                            + '📊 Réunion ' + hippoKey + ' (' + rs.total + 'c) : '
+                            + 'Notre #1 gagne <strong style="color:' + (pctN1 >= pctF1 ? '#40e05a' : '#e05a40') + '">' + pctN1 + '%</strong>'
+                            + ' vs Favori <strong style="color:' + (pctF1 >= pctN1 ? '#40e05a' : '#e05a40') + '">' + pctF1 + '%</strong>'
+                            + ' | Notre Top2 <strong style="color:' + (pctN2 >= pctF2 ? '#40e05a' : '#e05a40') + '">' + pctN2 + '%</strong>'
+                            + ' vs 2 meilleures cotes <strong style="color:' + (pctF2 >= pctN2 ? '#40e05a' : '#e05a40') + '">' + pctF2 + '%</strong>'
+                            + '</td></tr>';
                     }
 
                     participantsContainer.innerHTML = participantsHTML;
