@@ -2656,38 +2656,35 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         let scoreFinal;
         let formuleUsed = '';
 
-        // === FORMULES PAR TYPE — COTE TOUJOURS INCLUSE ===
-        // La cote = signal marché = toujours pertinent
+        // === FORMULES BACKTESTÉES PAR DISTANCE (données fiables) ===
+        // Basées sur l'analyse de 446 courses françaises par type
 
-        // Saint-Cloud / Longchamp
-        if (hippo.includes('SAINT-CLOUD') || hippo.includes('LONGCHAMP') || hippo.includes('SAINT CLOUD')) {
-            scoreFinal = scoreValeur * 0.5 + scoreCote * 0.3 + scoreJockey25 * 0.005;
-            formuleUsed = 'Saint-Cloud: Valeur×0.5 + Cote×0.3';
+        // SPRINT (1000-1400m) : musique + cote + valeur
+        if (distBucket === 'sprint') {
+            scoreFinal = scoreMusique * 0.4 + scoreCote * 0.4 + scoreValeur * 0.2;
+            formuleUsed = 'Sprint: Musique×0.4 + Cote×0.4 + Valeur×0.2';
         }
-        // SPRINT : cote + jockey (le jockey fait la diff)
-        else if (distBucket === 'sprint') {
-            scoreFinal = scoreCote * 0.4 + scoreJockey25 * 0.3 + tauxVCh25 * 0.3;
-            formuleUsed = 'Sprint: Cote×0.4 + J25×0.3 + Ch25×0.3';
-        }
-        // MILE : cheval domine + cote
+        // MILE (1400-1700m) : valeur domine + cote + musique
         else if (distBucket === 'mile') {
-            scoreFinal = tauxVCh25 * 0.6 + scoreCote * 0.4;
-            formuleUsed = 'Mile: Ch25×0.6 + Cote×0.4';
+            scoreFinal = scoreValeur * 0.5 + scoreCote * 0.3 + scoreMusique * 0.2;
+            formuleUsed = 'Mile: Valeur×0.5 + Cote×0.3 + Musique×0.2';
         }
-        // MIDDLE : cheval domine + cote
+        // MIDDLE (1800-2100m) : cote domine + valeur
         else if (distBucket === 'middle') {
-            scoreFinal = tauxVCh25 * 0.5 + scoreCote * 0.4 + scoreJockey25 * 0.005;
-            formuleUsed = 'Middle: Ch25×0.5 + Cote×0.4';
+            const indivTauxV = (parseInt(participant.nb_courses) >= 2)
+                ? (parseInt(participant.nb_victoires) / parseInt(participant.nb_courses)) * 100 : 8;
+            scoreFinal = scoreCote * 0.5 + scoreValeur * 0.3 + indivTauxV * 0.2;
+            formuleUsed = 'Middle: Cote×0.5 + Valeur×0.3 + IndivV×0.2';
         }
-        // STAYING : cheval + corde + cote
+        // STAYING (2200m+) : cote + valeur + musique
         else if (distBucket === 'staying') {
-            scoreFinal = tauxVCh25 * 0.4 + scoreCote * 0.3 + scoreCorde * 0.15;
-            formuleUsed = 'Staying: Ch25×0.4 + Cote×0.3 + Corde×0.15';
+            scoreFinal = scoreCote * 0.4 + scoreValeur * 0.3 + scoreMusique * 0.3;
+            formuleUsed = 'Staying: Cote×0.4 + Valeur×0.3 + Musique×0.3';
         }
         // Fallback
         else {
-            scoreFinal = tauxVCh25 * 0.5 + scoreCote * 0.3 + scoreJockey25 * 0.005;
-            formuleUsed = 'Standard: Ch25×1 + Cote×0.3';
+            scoreFinal = scoreValeur * 0.4 + scoreCote * 0.3 + scoreMusique * 0.3;
+            formuleUsed = 'Standard: Valeur×0.4 + Cote×0.3 + Musique×0.3';
         }
 
         // Ajustement par taille de peloton (backtesté 2025→2026)
