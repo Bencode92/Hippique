@@ -1,17 +1,41 @@
 {
   "hippodrome": "FONTAINEBLEAU",
   "type_reunion": "Plat",
-  "date_extraction": "2026-04-11T10:30:57.061470",
+  "date_extraction": "2026-04-11T14:38:36.946914",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/11042026/R4",
   "courses": [
     {
       "nom": "PRIX TOYOTA TEAM COLIN (PRIX DES SAULES)",
-      "horaire": "14h07",
+      "horaire": "14h11",
       "numero": "1",
       "type": "Plat",
       "distance": "2600m",
       "url": "",
       "participants": [
+        {
+          "n°": "10",
+          "cheval": "ASTROPARK H.PU. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: SEA THE STARS et BALLADEUSE (SINGSPIEL)",
+          "corde": "(Corde:05)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/11042026/R4/C1/P10.png",
+          "propriétaire": "WERTHEIMER & FRERE",
+          "entraineur": "A.FABRE (S)",
+          "éleveurs": "WERTHEIMER & FRERE",
+          "jockey": "M.GUYON",
+          "poids": "56 kg",
+          "gains": "",
+          "musique": "CoUrU AfAsEc",
+          "valeur": "56.0",
+          "equipement(s)": "",
+          "nb_courses": 0,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 1.5,
+          "cote_tendance": "",
+          "cote_reference": 1.5,
+          "arrivee": 1
+        },
         {
           "n°": "1",
           "cheval": "RINASCERO H.PU. 4 a.",
@@ -31,124 +55,10 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 30.0,
+          "cote": 8.8,
           "cote_tendance": "-",
-          "cote_reference": 30.0
-        },
-        {
-          "n°": "2",
-          "cheval": "GOOD TO SEE YOU H.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: RULER OF THE WORLD et POLYCHROME (BERING)",
-          "corde": "(Corde:11)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/11042026/R4/C1/P2.png",
-          "propriétaire": "ECURIE MADRIPOLE/HYPERION SARL",
-          "entraineur": "E.LIBAUD (S)",
-          "éleveurs": "HYPERION SARL",
-          "jockey": "A.POUCHIN",
-          "poids": "58 kg",
-          "gains": "315000",
-          "musique": "(25)3p",
-          "valeur": "58.0",
-          "equipement(s)": "",
-          "nb_courses": 1,
-          "nb_victoires": 0,
-          "nb_places": 1,
-          "cote": 4.5,
-          "cote_tendance": "+",
-          "cote_reference": 4.5
-        },
-        {
-          "n°": "3",
-          "cheval": "LIBYAN KNIGHT H.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: KINGMAN et NADIA PROMISE (GALILEO)",
-          "corde": "(Corde:02)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/11042026/R4/C1/P3.png",
-          "propriétaire": "H.GHABRI",
-          "entraineur": "H.GHABRI",
-          "éleveurs": "BLUE DIAMOND STUD FARM (UK)LTD",
-          "jockey": "B.MARIE",
-          "poids": "58 kg",
-          "gains": "3514500",
-          "musique": "6p2p3p(25)5p3p8p4p6p8p",
-          "valeur": "58.0",
-          "equipement(s)": "A",
-          "nb_courses": 17,
-          "nb_victoires": 0,
-          "nb_places": 11,
-          "cote": 26.0,
-          "cote_tendance": "+",
-          "cote_reference": 26.0
-        },
-        {
-          "n°": "4",
-          "cheval": "DRAGONS BLOOD H.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: WIRELESS et DALLY HIT (AD VALOREM)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/11042026/R4/C1/P4.png",
-          "propriétaire": "T.JANDA",
-          "entraineur": "V.LUKA",
-          "éleveurs": "SYGNUM S.R.O",
-          "jockey": "M.FAVRIAUX",
-          "poids": "58 kg",
-          "gains": "392800",
-          "musique": "3p2p(25)8p",
-          "valeur": "58.0",
-          "equipement(s)": "",
-          "nb_courses": 3,
-          "nb_victoires": 0,
-          "nb_places": 2,
-          "cote": 10.0,
-          "cote_tendance": "+",
-          "cote_reference": 10.0
-        },
-        {
-          "n°": "5",
-          "cheval": "KENPIC H.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: PENNY'S PICNIC et LAKENA (KENDARGENT)",
-          "corde": "(Corde:06)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/11042026/R4/C1/P5.png",
-          "propriétaire": "CH.CH.PLISSON (S)",
-          "entraineur": "CH.PLISSON (S)",
-          "éleveurs": "MR SERGE CHATEAU",
-          "jockey": "L.GROSSO",
-          "poids": "58 kg",
-          "gains": "142500",
-          "musique": "0p(25)AhAh0p(24)0p8p0p6p",
-          "valeur": "58.0",
-          "equipement(s)": "",
-          "nb_courses": 17,
-          "nb_victoires": 0,
-          "nb_places": 2,
-          "cote": 117.0,
-          "cote_tendance": "+",
-          "cote_reference": 117.0
-        },
-        {
-          "n°": "6",
-          "cheval": "QUEEN D'AUNOU F.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: KING EDWARD et OSSUN (ANABAA)",
-          "corde": "(Corde:07)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/11042026/R4/C1/P6.png",
-          "propriétaire": "MME C.CONDE FERREIRA",
-          "entraineur": "L.BAUDRON (S)",
-          "éleveurs": "MR FREDERIC FOUCHER",
-          "jockey": "C.PACAUT",
-          "poids": "56.5 kg",
-          "gains": "1374400",
-          "musique": "0h8p7p4p(25)3p6p2p3p3p",
-          "valeur": "56.5",
-          "equipement(s)": "",
-          "nb_courses": 9,
-          "nb_victoires": 0,
-          "nb_places": 8,
-          "cote": 34.0,
-          "cote_tendance": "-",
-          "cote_reference": 34.0
+          "cote_reference": 17.0,
+          "arrivee": 2
         },
         {
           "n°": "7",
@@ -169,9 +79,106 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 22.0,
+          "cote": 12.0,
           "cote_tendance": "+",
-          "cote_reference": 22.0
+          "cote_reference": 19.0,
+          "arrivee": 3
+        },
+        {
+          "n°": "2",
+          "cheval": "GOOD TO SEE YOU H.PU. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: RULER OF THE WORLD et POLYCHROME (BERING)",
+          "corde": "(Corde:11)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/11042026/R4/C1/P2.png",
+          "propriétaire": "ECURIE MADRIPOLE/HYPERION SARL",
+          "entraineur": "E.LIBAUD (S)",
+          "éleveurs": "HYPERION SARL",
+          "jockey": "A.POUCHIN",
+          "poids": "58 kg",
+          "gains": "315000",
+          "musique": "(25)3p",
+          "valeur": "58.0",
+          "equipement(s)": "",
+          "nb_courses": 1,
+          "nb_victoires": 0,
+          "nb_places": 1,
+          "cote": 10.0,
+          "cote_tendance": "+",
+          "cote_reference": 7.8,
+          "arrivee": 4
+        },
+        {
+          "n°": "6",
+          "cheval": "QUEEN D'AUNOU F.PU. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: KING EDWARD et OSSUN (ANABAA)",
+          "corde": "(Corde:07)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/11042026/R4/C1/P6.png",
+          "propriétaire": "MME C.CONDE FERREIRA",
+          "entraineur": "L.BAUDRON (S)",
+          "éleveurs": "MR FREDERIC FOUCHER",
+          "jockey": "C.PACAUT",
+          "poids": "56.5 kg",
+          "gains": "1374400",
+          "musique": "0h8p7p4p(25)3p6p2p3p3p",
+          "valeur": "56.5",
+          "equipement(s)": "",
+          "nb_courses": 9,
+          "nb_victoires": 0,
+          "nb_places": 8,
+          "cote": 41.0,
+          "cote_tendance": "+",
+          "cote_reference": 23.0,
+          "arrivee": 5
+        },
+        {
+          "n°": "4",
+          "cheval": "DRAGONS BLOOD H.PU. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: WIRELESS et DALLY HIT (AD VALOREM)",
+          "corde": "(Corde:01)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/11042026/R4/C1/P4.png",
+          "propriétaire": "T.JANDA",
+          "entraineur": "V.LUKA",
+          "éleveurs": "SYGNUM S.R.O",
+          "jockey": "M.FAVRIAUX",
+          "poids": "58 kg",
+          "gains": "392800",
+          "musique": "3p2p(25)8p",
+          "valeur": "58.0",
+          "equipement(s)": "",
+          "nb_courses": 3,
+          "nb_victoires": 0,
+          "nb_places": 2,
+          "cote": 14.0,
+          "cote_tendance": "+",
+          "cote_reference": 11.0,
+          "arrivee": 6
+        },
+        {
+          "n°": "3",
+          "cheval": "LIBYAN KNIGHT H.PU. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: KINGMAN et NADIA PROMISE (GALILEO)",
+          "corde": "(Corde:02)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/11042026/R4/C1/P3.png",
+          "propriétaire": "H.GHABRI",
+          "entraineur": "H.GHABRI",
+          "éleveurs": "BLUE DIAMOND STUD FARM (UK)LTD",
+          "jockey": "B.MARIE",
+          "poids": "58 kg",
+          "gains": "3514500",
+          "musique": "6p2p3p(25)5p3p8p4p6p8p",
+          "valeur": "58.0",
+          "equipement(s)": "A",
+          "nb_courses": 17,
+          "nb_victoires": 0,
+          "nb_places": 11,
+          "cote": 16.0,
+          "cote_tendance": "+",
+          "cote_reference": 24.0,
+          "arrivee": 7
         },
         {
           "n°": "8",
@@ -192,55 +199,34 @@
           "nb_courses": 17,
           "nb_victoires": 0,
           "nb_places": 8,
-          "cote": 39.0,
-          "cote_tendance": "-",
-          "cote_reference": 39.0
-        },
-        {
-          "n°": "9",
-          "cheval": "DSCHINGIS RUN F.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: DSCHINGIS SECRET et SOLUGAZONIA (YOUMZAIN)",
-          "corde": "(Corde:09)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/11042026/R4/C1/P9.png",
-          "propriétaire": "M.M.MUNCH (S)",
-          "entraineur": "M.MUNCH (S)",
-          "éleveurs": "STE D'ENTR. MARKUS MUNCH",
-          "jockey": "J.CLAUDIC",
-          "poids": "56.5 kg",
-          "gains": "",
-          "musique": "(25)0p9p6p",
-          "valeur": "56.5",
-          "equipement(s)": "",
-          "nb_courses": 3,
-          "nb_victoires": 0,
-          "nb_places": 0,
-          "cote": 83.0,
+          "cote": 59.0,
           "cote_tendance": "+",
-          "cote_reference": 83.0
+          "cote_reference": 32.0,
+          "arrivee": 8
         },
         {
-          "n°": "10",
-          "cheval": "ASTROPARK H.PU. 4 a.",
+          "n°": "5",
+          "cheval": "KENPIC H.PU. 5 a.",
           "cheval_url": "",
-          "père_mère": "Par: SEA THE STARS et BALLADEUSE (SINGSPIEL)",
-          "corde": "(Corde:05)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/11042026/R4/C1/P10.png",
-          "propriétaire": "WERTHEIMER & FRERE",
-          "entraineur": "A.FABRE (S)",
-          "éleveurs": "WERTHEIMER & FRERE",
-          "jockey": "M.GUYON",
-          "poids": "56 kg",
-          "gains": "",
-          "musique": "CoUrU AfAsEc",
-          "valeur": "56.0",
+          "père_mère": "Par: PENNY'S PICNIC et LAKENA (KENDARGENT)",
+          "corde": "(Corde:06)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/11042026/R4/C1/P5.png",
+          "propriétaire": "CH.CH.PLISSON (S)",
+          "entraineur": "CH.PLISSON (S)",
+          "éleveurs": "MR SERGE CHATEAU",
+          "jockey": "L.GROSSO",
+          "poids": "58 kg",
+          "gains": "142500",
+          "musique": "0p(25)AhAh0p(24)0p8p0p6p",
+          "valeur": "58.0",
           "equipement(s)": "",
-          "nb_courses": 0,
+          "nb_courses": 17,
           "nb_victoires": 0,
-          "nb_places": 0,
-          "cote": 1.6,
-          "cote_tendance": "-",
-          "cote_reference": 1.6
+          "nb_places": 2,
+          "cote": 135.0,
+          "cote_tendance": "+",
+          "cote_reference": 43.0,
+          "arrivee": 9
         },
         {
           "n°": "11",
@@ -261,17 +247,45 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 26.0,
+          "cote": 93.0,
           "cote_tendance": "+",
-          "cote_reference": 26.0
+          "cote_reference": 45.0,
+          "arrivee": 10
+        },
+        {
+          "n°": "9",
+          "cheval": "DSCHINGIS RUN F.PU. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: DSCHINGIS SECRET et SOLUGAZONIA (YOUMZAIN)",
+          "corde": "(Corde:09)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/11042026/R4/C1/P9.png",
+          "propriétaire": "M.M.MUNCH (S)",
+          "entraineur": "M.MUNCH (S)",
+          "éleveurs": "STE D'ENTR. MARKUS MUNCH",
+          "jockey": "J.CLAUDIC",
+          "poids": "56.5 kg",
+          "gains": "",
+          "musique": "(25)0p9p6p",
+          "valeur": "56.5",
+          "equipement(s)": "",
+          "nb_courses": 3,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 180.0,
+          "cote_tendance": "+",
+          "cote_reference": 72.0,
+          "arrivee": 11
         }
       ],
       "typePiste": "HERBE",
-      "cordeCourse": "CORDE_GAUCHE"
+      "terrain": "Bon souple",
+      "penetrometre": "3,4",
+      "cordeCourse": "CORDE_GAUCHE",
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX LEXUS TEAM COLIN (PRIX DES HETRES)",
-      "horaire": "14h42",
+      "horaire": "14h44",
       "numero": "2",
       "type": "Plat",
       "distance": "2200m",
@@ -296,9 +310,9 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 31.0,
-          "cote_tendance": "-",
-          "cote_reference": 31.0
+          "cote": 13.0,
+          "cote_tendance": "+",
+          "cote_reference": 15.0
         },
         {
           "n°": "2",
@@ -319,9 +333,9 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 8.4,
-          "cote_tendance": "+",
-          "cote_reference": 8.4
+          "cote": 4.1,
+          "cote_tendance": "-",
+          "cote_reference": 9.1
         },
         {
           "n°": "3",
@@ -344,7 +358,7 @@
           "nb_places": 2,
           "cote": 13.0,
           "cote_tendance": "+",
-          "cote_reference": 13.0
+          "cote_reference": 24.0
         },
         {
           "n°": "5",
@@ -365,9 +379,9 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 9.3,
+          "cote": 26.0,
           "cote_tendance": "+",
-          "cote_reference": 9.3
+          "cote_reference": 11.0
         },
         {
           "n°": "6",
@@ -388,9 +402,9 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 11.0,
-          "cote_tendance": "-",
-          "cote_reference": 11.0
+          "cote": 7.2,
+          "cote_tendance": "+",
+          "cote_reference": 8.4
         },
         {
           "n°": "7",
@@ -411,9 +425,9 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 39.0,
+          "cote": 23.0,
           "cote_tendance": "+",
-          "cote_reference": 39.0
+          "cote_reference": 18.0
         },
         {
           "n°": "8",
@@ -434,9 +448,9 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 106.0,
-          "cote_tendance": "+",
-          "cote_reference": 106.0
+          "cote": 9.9,
+          "cote_tendance": "-",
+          "cote_reference": 4.1
         },
         {
           "n°": "9",
@@ -457,9 +471,9 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 9.3,
+          "cote": 20.0,
           "cote_tendance": "+",
-          "cote_reference": 9.3
+          "cote_reference": 14.0
         },
         {
           "n°": "10",
@@ -480,9 +494,9 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 45.0,
+          "cote": 30.0,
           "cote_tendance": "+",
-          "cote_reference": 45.0
+          "cote_reference": 33.0
         },
         {
           "n°": "11",
@@ -503,12 +517,14 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 1.8,
+          "cote": 2.9,
           "cote_tendance": "+",
-          "cote_reference": 1.8
+          "cote_reference": 3.1
         }
       ],
       "typePiste": "HERBE",
+      "terrain": "Bon souple",
+      "penetrometre": "3,4",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -538,8 +554,8 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 19.0,
-          "cote_tendance": "-",
+          "cote": 18.0,
+          "cote_tendance": "+",
           "cote_reference": 19.0
         },
         {
@@ -561,8 +577,8 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 6.6,
-          "cote_tendance": "-",
+          "cote": 14.0,
+          "cote_tendance": "+",
           "cote_reference": 6.6
         },
         {
@@ -584,7 +600,7 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 23.0,
+          "cote": 37.0,
           "cote_tendance": "+",
           "cote_reference": 23.0
         },
@@ -607,7 +623,7 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 9.0,
+          "cote": 8.7,
           "cote_tendance": "+",
           "cote_reference": 9.0
         },
@@ -630,8 +646,8 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 3.2,
-          "cote_tendance": "+",
+          "cote": 2.3,
+          "cote_tendance": "-",
           "cote_reference": 3.2
         },
         {
@@ -653,7 +669,7 @@
           "nb_courses": 7,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 28.0,
+          "cote": 27.0,
           "cote_tendance": "+",
           "cote_reference": 28.0
         },
@@ -676,8 +692,8 @@
           "nb_courses": 6,
           "nb_victoires": 0,
           "nb_places": 6,
-          "cote": 5.6,
-          "cote_tendance": "-",
+          "cote": 7.0,
+          "cote_tendance": "+",
           "cote_reference": 5.6
         },
         {
@@ -699,7 +715,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 31.0,
+          "cote": 43.0,
           "cote_tendance": "+",
           "cote_reference": 31.0
         },
@@ -722,8 +738,8 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 5.2,
-          "cote_tendance": "+",
+          "cote": 5.0,
+          "cote_tendance": "-",
           "cote_reference": 5.2
         },
         {
@@ -745,7 +761,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 50.0,
+          "cote": 48.0,
           "cote_tendance": "+",
           "cote_reference": 50.0
         },
@@ -768,12 +784,14 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 42.0,
-          "cote_tendance": "+",
+          "cote": 54.0,
+          "cote_tendance": "-",
           "cote_reference": 42.0
         }
       ],
       "typePiste": "HERBE",
+      "terrain": "Bon souple",
+      "penetrometre": "3,4",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -803,7 +821,7 @@
           "nb_courses": 27,
           "nb_victoires": 3,
           "nb_places": 14,
-          "cote": 20.0,
+          "cote": 12.0,
           "cote_tendance": "+",
           "cote_reference": 20.0
         },
@@ -826,8 +844,8 @@
           "nb_courses": 16,
           "nb_victoires": 3,
           "nb_places": 8,
-          "cote": 12.0,
-          "cote_tendance": "-",
+          "cote": 15.0,
+          "cote_tendance": "",
           "cote_reference": 12.0
         },
         {
@@ -849,8 +867,8 @@
           "nb_courses": 7,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 6.9,
-          "cote_tendance": "",
+          "cote": 8.5,
+          "cote_tendance": "+",
           "cote_reference": 6.9
         },
         {
@@ -872,7 +890,7 @@
           "nb_courses": 15,
           "nb_victoires": 2,
           "nb_places": 5,
-          "cote": 20.0,
+          "cote": 12.0,
           "cote_tendance": "-",
           "cote_reference": 20.0
         },
@@ -895,8 +913,8 @@
           "nb_courses": 19,
           "nb_victoires": 3,
           "nb_places": 12,
-          "cote": 30.0,
-          "cote_tendance": "+",
+          "cote": 16.0,
+          "cote_tendance": "-",
           "cote_reference": 30.0
         },
         {
@@ -918,8 +936,8 @@
           "nb_courses": 18,
           "nb_victoires": 4,
           "nb_places": 9,
-          "cote": 16.0,
-          "cote_tendance": "+",
+          "cote": 17.0,
+          "cote_tendance": "-",
           "cote_reference": 16.0
         },
         {
@@ -941,8 +959,8 @@
           "nb_courses": 9,
           "nb_victoires": 3,
           "nb_places": 2,
-          "cote": 56.0,
-          "cote_tendance": "+",
+          "cote": 26.0,
+          "cote_tendance": "-",
           "cote_reference": 56.0
         },
         {
@@ -964,8 +982,8 @@
           "nb_courses": 17,
           "nb_victoires": 3,
           "nb_places": 7,
-          "cote": 56.0,
-          "cote_tendance": "+",
+          "cote": 21.0,
+          "cote_tendance": "-",
           "cote_reference": 56.0
         },
         {
@@ -987,7 +1005,7 @@
           "nb_courses": 12,
           "nb_victoires": 1,
           "nb_places": 9,
-          "cote": 9.8,
+          "cote": 4.5,
           "cote_tendance": "+",
           "cote_reference": 9.8
         },
@@ -1010,8 +1028,8 @@
           "nb_courses": 9,
           "nb_victoires": 2,
           "nb_places": 1,
-          "cote": 11.0,
-          "cote_tendance": "+",
+          "cote": 16.0,
+          "cote_tendance": "-",
           "cote_reference": 11.0
         },
         {
@@ -1033,7 +1051,7 @@
           "nb_courses": 24,
           "nb_victoires": 3,
           "nb_places": 12,
-          "cote": 23.0,
+          "cote": 37.0,
           "cote_tendance": "+",
           "cote_reference": 23.0
         },
@@ -1056,7 +1074,7 @@
           "nb_courses": 16,
           "nb_victoires": 4,
           "nb_places": 8,
-          "cote": 10.0,
+          "cote": 12.0,
           "cote_tendance": "+",
           "cote_reference": 10.0
         },
@@ -1079,7 +1097,7 @@
           "nb_courses": 12,
           "nb_victoires": 2,
           "nb_places": 3,
-          "cote": 56.0,
+          "cote": 75.0,
           "cote_tendance": "+",
           "cote_reference": 56.0
         },
@@ -1102,8 +1120,8 @@
           "nb_courses": 15,
           "nb_victoires": 1,
           "nb_places": 10,
-          "cote": 3.5,
-          "cote_tendance": "",
+          "cote": 6.9,
+          "cote_tendance": "+",
           "cote_reference": 3.5
         },
         {
@@ -1125,12 +1143,14 @@
           "nb_courses": 7,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 16.0,
+          "cote": 21.0,
           "cote_tendance": "+",
           "cote_reference": 16.0
         }
       ],
       "typePiste": "HERBE",
+      "terrain": "Bon souple",
+      "penetrometre": "3,4",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1159,7 +1179,9 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 1,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 34.0,
+          "cote_tendance": "-"
         },
         {
           "n°": "2",
@@ -1180,7 +1202,7 @@
           "nb_courses": 9,
           "nb_victoires": 1,
           "nb_places": 2,
-          "cote": 49.0,
+          "cote": 37.0,
           "cote_tendance": "+",
           "cote_reference": 48.0
         },
@@ -1203,7 +1225,7 @@
           "nb_courses": 12,
           "nb_victoires": 1,
           "nb_places": 6,
-          "cote": 7.2,
+          "cote": 12.0,
           "cote_tendance": "+",
           "cote_reference": 7.0
         },
@@ -1226,7 +1248,7 @@
           "nb_courses": 13,
           "nb_victoires": 1,
           "nb_places": 8,
-          "cote": 8.2,
+          "cote": 10.0,
           "cote_tendance": "+",
           "cote_reference": 8.0
         },
@@ -1249,8 +1271,8 @@
           "nb_courses": 11,
           "nb_victoires": 1,
           "nb_places": 7,
-          "cote": 5.1,
-          "cote_tendance": "",
+          "cote": 10.0,
+          "cote_tendance": "+",
           "cote_reference": 4.9
         },
         {
@@ -1272,8 +1294,8 @@
           "nb_courses": 15,
           "nb_victoires": 1,
           "nb_places": 7,
-          "cote": 19.0,
-          "cote_tendance": "-",
+          "cote": 18.0,
+          "cote_tendance": "+",
           "cote_reference": 32.0
         },
         {
@@ -1295,7 +1317,7 @@
           "nb_courses": 13,
           "nb_victoires": 0,
           "nb_places": 11,
-          "cote": 7.5,
+          "cote": 10.0,
           "cote_tendance": "+",
           "cote_reference": 7.4
         },
@@ -1318,7 +1340,7 @@
           "nb_courses": 10,
           "nb_victoires": 2,
           "nb_places": 5,
-          "cote": 42.0,
+          "cote": 18.0,
           "cote_tendance": "+",
           "cote_reference": 41.0
         },
@@ -1341,8 +1363,8 @@
           "nb_courses": 26,
           "nb_victoires": 2,
           "nb_places": 8,
-          "cote": 10.0,
-          "cote_tendance": "-",
+          "cote": 6.8,
+          "cote_tendance": "+",
           "cote_reference": 10.0
         },
         {
@@ -1364,8 +1386,8 @@
           "nb_courses": 17,
           "nb_victoires": 1,
           "nb_places": 6,
-          "cote": 32.0,
-          "cote_tendance": "+",
+          "cote": 11.0,
+          "cote_tendance": "-",
           "cote_reference": 32.0
         },
         {
@@ -1387,7 +1409,7 @@
           "nb_courses": 17,
           "nb_victoires": 1,
           "nb_places": 8,
-          "cote": 5.1,
+          "cote": 5.0,
           "cote_tendance": "-",
           "cote_reference": 5.1
         },
@@ -1410,7 +1432,7 @@
           "nb_courses": 17,
           "nb_victoires": 2,
           "nb_places": 7,
-          "cote": 24.0,
+          "cote": 15.0,
           "cote_tendance": "+",
           "cote_reference": 24.0
         },
@@ -1433,8 +1455,8 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 49.0,
-          "cote_tendance": "+",
+          "cote": 30.0,
+          "cote_tendance": "-",
           "cote_reference": 48.0
         },
         {
@@ -1457,11 +1479,13 @@
           "nb_victoires": 1,
           "nb_places": 8,
           "cote": 13.0,
-          "cote_tendance": "+",
+          "cote_tendance": "-",
           "cote_reference": 13.0
         }
       ],
       "typePiste": "HERBE",
+      "terrain": "Bon souple",
+      "penetrometre": "3,4",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1491,8 +1515,8 @@
           "nb_courses": 26,
           "nb_victoires": 0,
           "nb_places": 16,
-          "cote": 3.7,
-          "cote_tendance": "-",
+          "cote": 4.1,
+          "cote_tendance": "+",
           "cote_reference": 3.7
         },
         {
@@ -1514,8 +1538,8 @@
           "nb_courses": 7,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 3.5,
-          "cote_tendance": "-",
+          "cote": 4.1,
+          "cote_tendance": "",
           "cote_reference": 3.5
         },
         {
@@ -1537,8 +1561,8 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 13.0,
-          "cote_tendance": "+",
+          "cote": 19.0,
+          "cote_tendance": "-",
           "cote_reference": 13.0
         },
         {
@@ -1560,7 +1584,7 @@
           "nb_courses": 7,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 12.0,
+          "cote": 9.5,
           "cote_tendance": "+",
           "cote_reference": 12.0
         },
@@ -1583,8 +1607,8 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 3.1,
-          "cote_tendance": "-",
+          "cote": 2.4,
+          "cote_tendance": "+",
           "cote_reference": 3.1
         },
         {
@@ -1606,7 +1630,7 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 42.0,
+          "cote": 49.0,
           "cote_tendance": "+",
           "cote_reference": 42.0
         },
@@ -1629,8 +1653,8 @@
           "nb_courses": 10,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 57.0,
-          "cote_tendance": "+",
+          "cote": 53.0,
+          "cote_tendance": "-",
           "cote_reference": 57.0
         },
         {
@@ -1652,12 +1676,14 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 15.0,
+          "cote": 26.0,
           "cote_tendance": "+",
           "cote_reference": 15.0
         }
       ],
       "typePiste": "HERBE",
+      "terrain": "Bon souple",
+      "penetrometre": "3,4",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1687,7 +1713,7 @@
           "nb_courses": 44,
           "nb_victoires": 7,
           "nb_places": 20,
-          "cote": 11.0,
+          "cote": 17.0,
           "cote_tendance": "-",
           "cote_reference": 11.0
         },
@@ -1710,8 +1736,8 @@
           "nb_courses": 29,
           "nb_victoires": 3,
           "nb_places": 12,
-          "cote": 15.0,
-          "cote_tendance": "+",
+          "cote": 30.0,
+          "cote_tendance": "-",
           "cote_reference": 15.0
         },
         {
@@ -1733,8 +1759,8 @@
           "nb_courses": 82,
           "nb_victoires": 14,
           "nb_places": 43,
-          "cote": 3.4,
-          "cote_tendance": "-",
+          "cote": 3.3,
+          "cote_tendance": "",
           "cote_reference": 3.4
         },
         {
@@ -1756,7 +1782,7 @@
           "nb_courses": 22,
           "nb_victoires": 3,
           "nb_places": 16,
-          "cote": 4.2,
+          "cote": 4.7,
           "cote_tendance": "-",
           "cote_reference": 4.2
         },
@@ -1779,8 +1805,8 @@
           "nb_courses": 63,
           "nb_victoires": 7,
           "nb_places": 34,
-          "cote": 4.5,
-          "cote_tendance": "-",
+          "cote": 2.8,
+          "cote_tendance": "+",
           "cote_reference": 4.5
         },
         {
@@ -1802,7 +1828,7 @@
           "nb_courses": 102,
           "nb_victoires": 14,
           "nb_places": 43,
-          "cote": 7.9,
+          "cote": 9.2,
           "cote_tendance": "+",
           "cote_reference": 7.9
         },
@@ -1825,12 +1851,14 @@
           "nb_courses": 16,
           "nb_victoires": 1,
           "nb_places": 9,
-          "cote": 14.0,
-          "cote_tendance": "+",
+          "cote": 18.0,
+          "cote_tendance": "-",
           "cote_reference": 14.0
         }
       ],
       "typePiste": "HERBE",
+      "terrain": "Bon souple",
+      "penetrometre": "3,4",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1860,8 +1888,8 @@
           "nb_courses": 41,
           "nb_victoires": 6,
           "nb_places": 13,
-          "cote": 17.0,
-          "cote_tendance": "+",
+          "cote": 21.0,
+          "cote_tendance": "-",
           "cote_reference": 17.0
         },
         {
@@ -1883,7 +1911,7 @@
           "nb_courses": 53,
           "nb_victoires": 6,
           "nb_places": 24,
-          "cote": 6.2,
+          "cote": 4.0,
           "cote_tendance": "-",
           "cote_reference": 6.3
         },
@@ -1906,8 +1934,8 @@
           "nb_courses": 37,
           "nb_victoires": 3,
           "nb_places": 20,
-          "cote": 11.0,
-          "cote_tendance": "+",
+          "cote": 18.0,
+          "cote_tendance": "-",
           "cote_reference": 11.0
         },
         {
@@ -1929,8 +1957,8 @@
           "nb_courses": 29,
           "nb_victoires": 4,
           "nb_places": 14,
-          "cote": 5.7,
-          "cote_tendance": "-",
+          "cote": 4.0,
+          "cote_tendance": "",
           "cote_reference": 5.8
         },
         {
@@ -1952,8 +1980,8 @@
           "nb_courses": 62,
           "nb_victoires": 7,
           "nb_places": 33,
-          "cote": 7.1,
-          "cote_tendance": "+",
+          "cote": 16.0,
+          "cote_tendance": "-",
           "cote_reference": 7.0
         },
         {
@@ -1975,8 +2003,8 @@
           "nb_courses": 22,
           "nb_victoires": 3,
           "nb_places": 15,
-          "cote": 2.9,
-          "cote_tendance": "-",
+          "cote": 2.7,
+          "cote_tendance": "",
           "cote_reference": 2.9
         },
         {
@@ -1998,8 +2026,8 @@
           "nb_courses": 23,
           "nb_victoires": 1,
           "nb_places": 9,
-          "cote": 20.0,
-          "cote_tendance": "+",
+          "cote": 29.0,
+          "cote_tendance": "-",
           "cote_reference": 20.0
         },
         {
@@ -2021,7 +2049,7 @@
           "nb_courses": 28,
           "nb_victoires": 5,
           "nb_places": 8,
-          "cote": 12.0,
+          "cote": 20.0,
           "cote_tendance": "+",
           "cote_reference": 12.0
         },
@@ -2044,12 +2072,14 @@
           "nb_courses": 8,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 17.0,
+          "cote": 25.0,
           "cote_tendance": "+",
           "cote_reference": 17.0
         }
       ],
       "typePiste": "HERBE",
+      "terrain": "Bon souple",
+      "penetrometre": "3,4",
       "cordeCourse": "CORDE_GAUCHE"
     }
   ]
