@@ -1,7 +1,7 @@
 {
   "hippodrome": "MONT DE MARSAN",
   "type_reunion": "HAIE",
-  "date_extraction": "2026-04-12T15:33:56.479446",
+  "date_extraction": "2026-04-12T15:55:58.534580",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/12042026/R13",
   "courses": [
     {
@@ -1041,11 +1041,11 @@
       "typePiste": "HERBE",
       "terrain": "Bon",
       "penetrometre": "3,2",
-      "arrivee_definitive": false
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX ASSOCIATION DES COURSES DE LUXE",
-      "horaire": "15h45",
+      "horaire": "15h50",
       "numero": "7",
       "type": "HAIE",
       "distance": "3650m",
@@ -1070,7 +1070,7 @@
           "nb_courses": 25,
           "nb_victoires": 3,
           "nb_places": 19,
-          "cote": 5.6,
+          "cote": 6.6,
           "cote_tendance": "",
           "cote_reference": 5.0
         },
@@ -1093,7 +1093,7 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 5.3,
+          "cote": 2.7,
           "cote_tendance": "",
           "cote_reference": 5.5
         },
@@ -1116,7 +1116,7 @@
           "nb_courses": 21,
           "nb_victoires": 1,
           "nb_places": 15,
-          "cote": 2.9,
+          "cote": 4.7,
           "cote_tendance": "",
           "cote_reference": 2.7
         },
@@ -1139,8 +1139,8 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 24.0,
-          "cote_tendance": "",
+          "cote": 21.0,
+          "cote_tendance": "+",
           "cote_reference": 53.0
         },
         {
@@ -1162,7 +1162,7 @@
           "nb_courses": 6,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 7.8,
+          "cote": 7.0,
           "cote_tendance": "",
           "cote_reference": 5.5
         },
@@ -1185,31 +1185,9 @@
           "nb_courses": 10,
           "nb_victoires": 0,
           "nb_places": 5,
-          "cote": 12.0,
-          "cote_tendance": "",
+          "cote": 18.0,
+          "cote_tendance": "+",
           "cote_reference": 11.0
-        },
-        {
-          "n°": "7",
-          "cheval": "CAMELIA DU LAUZIT F.PU. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: ALANADI et GANGNAM STYLE (NAAQOOS)",
-          "corde": "",
-          "couleurs": "",
-          "propriétaire": "J.BARRAO",
-          "entraineur": "J.BARRAO",
-          "éleveurs": "MR JOEL BARRAO",
-          "jockey": "P.PHOKAEW",
-          "poids": "66 kg",
-          "gains": "",
-          "musique": "(25)6p(23)8p",
-          "valeur": "66.0",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0,
-          "cote": 22.0,
-          "cote_tendance": ""
         },
         {
           "n°": "8",
@@ -1230,7 +1208,7 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 6.9,
+          "cote": 6.2,
           "cote_tendance": "",
           "cote_reference": 8.9
         }
