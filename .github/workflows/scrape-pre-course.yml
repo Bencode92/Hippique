@@ -1,0 +1,51 @@
+name: Scrape cotes live pré-course
+
+on:
+  schedule:
+    # Toutes les 15 minutes entre 11h et 17h UTC (13h-19h France)
+    # Couvre les heures de courses françaises
+    - cron: '*/15 11-17 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Scraper cotes live pré-course
+        run: python scraper_pre_course.py
+
+      - name: Commit si nouvelles cotes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action - Cotes Live"
+
+          mkdir -p data/cotes_live
+          git add data/cotes_live/ 2>/dev/null || true
+
+          if git diff --cached --quiet; then
+            echo "Pas de nouvelles cotes"
+          else
+            git stash -u || true
+            git pull origin main --rebase || true
+            git stash pop || true
+            git add data/cotes_live/
+            git commit -m "⏱️ Cotes live pré-course $(date +'%Y-%m-%d %H:%M')"
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
