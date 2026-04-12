@@ -1,7 +1,7 @@
 {
   "hippodrome": "AGEN LA GARENNE",
   "type_reunion": "ATTELE",
-  "date_extraction": "2026-04-12T14:50:27.670780",
+  "date_extraction": "2026-04-12T14:58:02.852716",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/12042026/R9",
   "courses": [
     {
@@ -2233,30 +2233,6 @@
       "url": "",
       "participants": [
         {
-          "n°": "1",
-          "cheval": "HIDALGO PLANCHETTE H.TR. 9 a.",
-          "cheval_url": "",
-          "père_mère": "Par: RIESLING et UNIQUE PLANCHETTE",
-          "corde": "(Corde:01)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/12042026/R9/C7/P1.png",
-          "propriétaire": "Q. FLEURY",
-          "entraineur": "Q. FLEURY",
-          "éleveurs": "M. Philippe HUBERSON",
-          "jockey": "Mlle ADELINE HARET",
-          "poids": "",
-          "gains": "7468000",
-          "musique": "8a(25)4a6a2a3a5a0a5a3a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 85,
-          "nb_victoires": 6,
-          "nb_places": 45,
-          "cote": 14.0,
-          "cote_tendance": "+",
-          "cote_reference": 8.7,
-          "avis_entraineur": "NEUTRE"
-        },
-        {
           "n°": "2",
           "cheval": "IMPEC DE BERTRANGE H.TR. 8 a.",
           "cheval_url": "",
@@ -2275,10 +2251,61 @@
           "nb_courses": 76,
           "nb_victoires": 4,
           "nb_places": 49,
-          "cote": 13.0,
+          "cote": 10.0,
           "cote_tendance": "-",
           "cote_reference": 17.0,
-          "avis_entraineur": "NEUTRE"
+          "avis_entraineur": "NEUTRE",
+          "arrivee": 1
+        },
+        {
+          "n°": "1",
+          "cheval": "HIDALGO PLANCHETTE H.TR. 9 a.",
+          "cheval_url": "",
+          "père_mère": "Par: RIESLING et UNIQUE PLANCHETTE",
+          "corde": "(Corde:01)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/12042026/R9/C7/P1.png",
+          "propriétaire": "Q. FLEURY",
+          "entraineur": "Q. FLEURY",
+          "éleveurs": "M. Philippe HUBERSON",
+          "jockey": "Mlle ADELINE HARET",
+          "poids": "",
+          "gains": "7468000",
+          "musique": "8a(25)4a6a2a3a5a0a5a3a",
+          "valeur": "",
+          "equipement(s)": "",
+          "nb_courses": 85,
+          "nb_victoires": 6,
+          "nb_places": 45,
+          "cote": 16.0,
+          "cote_tendance": "-",
+          "cote_reference": 8.7,
+          "avis_entraineur": "NEUTRE",
+          "arrivee": 2
+        },
+        {
+          "n°": "12",
+          "cheval": "KING DE BOUTEAU H.TR. 6 a.",
+          "cheval_url": "",
+          "père_mère": "Par: NI HO PED D'OMBREE et NIKITA DE BOUTEAU",
+          "corde": "(Corde:12)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/12042026/R9/C7/P12.png",
+          "propriétaire": "Antoine LERAILLE",
+          "entraineur": "R.W. DENECHERRE",
+          "éleveurs": "M. Antoine LERAILLE",
+          "jockey": "C. BATY",
+          "poids": "",
+          "gains": "6788000",
+          "musique": "6a2m0a8a(25)4a1a7aDa5a",
+          "valeur": "",
+          "equipement(s)": "",
+          "nb_courses": 46,
+          "nb_victoires": 3,
+          "nb_places": 30,
+          "cote": 4.4,
+          "cote_tendance": "",
+          "cote_reference": 3.8,
+          "avis_entraineur": "NEUTRE",
+          "arrivee": 3
         },
         {
           "n°": "3",
@@ -2300,7 +2327,7 @@
           "nb_victoires": 7,
           "nb_places": 47,
           "cote": 11.0,
-          "cote_tendance": "-",
+          "cote_tendance": "+",
           "cote_reference": 19.0,
           "avis_entraineur": "NEUTRE"
         },
@@ -2323,8 +2350,8 @@
           "nb_courses": 35,
           "nb_victoires": 3,
           "nb_places": 23,
-          "cote": 7.9,
-          "cote_tendance": "+",
+          "cote": 7.4,
+          "cote_tendance": "-",
           "cote_reference": 7.5,
           "avis_entraineur": "NEUTRE"
         },
@@ -2347,8 +2374,8 @@
           "nb_courses": 82,
           "nb_victoires": 7,
           "nb_places": 44,
-          "cote": 16.0,
-          "cote_tendance": "+",
+          "cote": 18.0,
+          "cote_tendance": "-",
           "cote_reference": 10.0,
           "avis_entraineur": "NEUTRE"
         },
@@ -2371,8 +2398,8 @@
           "nb_courses": 54,
           "nb_victoires": 5,
           "nb_places": 29,
-          "cote": 9.3,
-          "cote_tendance": "-",
+          "cote": 10.0,
+          "cote_tendance": "+",
           "cote_reference": 10.0,
           "avis_entraineur": "NEUTRE"
         },
@@ -2395,7 +2422,7 @@
           "nb_courses": 51,
           "nb_victoires": 2,
           "nb_places": 36,
-          "cote": 43.0,
+          "cote": 50.0,
           "cote_tendance": "+",
           "cote_reference": 43.0,
           "avis_entraineur": "NEUTRE"
@@ -2419,7 +2446,7 @@
           "nb_courses": 89,
           "nb_victoires": 4,
           "nb_places": 53,
-          "cote": 30.0,
+          "cote": 35.0,
           "cote_tendance": "+",
           "cote_reference": 153.0,
           "avis_entraineur": "NEUTRE"
@@ -2443,7 +2470,7 @@
           "nb_courses": 68,
           "nb_victoires": 3,
           "nb_places": 43,
-          "cote": 16.0,
+          "cote": 13.0,
           "cote_tendance": "+",
           "cote_reference": 9.0,
           "avis_entraineur": "NEUTRE"
@@ -2467,7 +2494,7 @@
           "nb_courses": 55,
           "nb_victoires": 3,
           "nb_places": 23,
-          "cote": 54.0,
+          "cote": 53.0,
           "cote_tendance": "+",
           "cote_reference": 76.0,
           "avis_entraineur": "NEUTRE"
@@ -2496,30 +2523,6 @@
           "avis_entraineur": "NEUTRE"
         },
         {
-          "n°": "12",
-          "cheval": "KING DE BOUTEAU H.TR. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: NI HO PED D'OMBREE et NIKITA DE BOUTEAU",
-          "corde": "(Corde:12)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/12042026/R9/C7/P12.png",
-          "propriétaire": "Antoine LERAILLE",
-          "entraineur": "R.W. DENECHERRE",
-          "éleveurs": "M. Antoine LERAILLE",
-          "jockey": "C. BATY",
-          "poids": "",
-          "gains": "6788000",
-          "musique": "6a2m0a8a(25)4a1a7aDa5a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 46,
-          "nb_victoires": 3,
-          "nb_places": 30,
-          "cote": 4.5,
-          "cote_tendance": "-",
-          "cote_reference": 3.8,
-          "avis_entraineur": "NEUTRE"
-        },
-        {
           "n°": "13",
           "cheval": "KARNAC DU VIVIER H.TR. 6 a.",
           "cheval_url": "",
@@ -2538,7 +2541,7 @@
           "nb_courses": 34,
           "nb_victoires": 3,
           "nb_places": 21,
-          "cote": 46.0,
+          "cote": 55.0,
           "cote_tendance": "+",
           "cote_reference": 25.0,
           "avis_entraineur": "NEUTRE"
@@ -2562,8 +2565,8 @@
           "nb_courses": 67,
           "nb_victoires": 2,
           "nb_places": 40,
-          "cote": 31.0,
-          "cote_tendance": "+",
+          "cote": 30.0,
+          "cote_tendance": "-",
           "cote_reference": 102.0,
           "avis_entraineur": "NEUTRE"
         },
@@ -2586,7 +2589,7 @@
           "nb_courses": 53,
           "nb_victoires": 3,
           "nb_places": 33,
-          "cote": 16.0,
+          "cote": 18.0,
           "cote_tendance": "+",
           "cote_reference": 23.0,
           "avis_entraineur": "NEUTRE"
@@ -2610,13 +2613,14 @@
           "nb_courses": 34,
           "nb_victoires": 5,
           "nb_places": 15,
-          "cote": 9.8,
+          "cote": 10.0,
           "cote_tendance": "+",
           "cote_reference": 10.0,
           "avis_entraineur": "NEUTRE"
         }
       ],
-      "cordeCourse": "CORDE_DROITE"
+      "cordeCourse": "CORDE_DROITE",
+      "arrivee_definitive": false
     },
     {
       "nom": "PRIX BERNARD VILLES",
@@ -2645,7 +2649,7 @@
           "nb_courses": 71,
           "nb_victoires": 6,
           "nb_places": 36,
-          "cote": 6.4,
+          "cote": 7.2,
           "cote_tendance": "",
           "cote_reference": 6.4,
           "avis_entraineur": "NEUTRE"
@@ -2669,8 +2673,8 @@
           "nb_courses": 88,
           "nb_victoires": 8,
           "nb_places": 48,
-          "cote": 47.0,
-          "cote_tendance": "",
+          "cote": 52.0,
+          "cote_tendance": "+",
           "cote_reference": 47.0,
           "avis_entraineur": "NEUTRE"
         },
@@ -2693,8 +2697,8 @@
           "nb_courses": 66,
           "nb_victoires": 5,
           "nb_places": 38,
-          "cote": 6.9,
-          "cote_tendance": "",
+          "cote": 5.9,
+          "cote_tendance": "-",
           "cote_reference": 6.9,
           "avis_entraineur": "NEUTRE"
         },
@@ -2717,7 +2721,7 @@
           "nb_courses": 56,
           "nb_victoires": 4,
           "nb_places": 28,
-          "cote": 8.5,
+          "cote": 6.2,
           "cote_tendance": "",
           "cote_reference": 8.5,
           "avis_entraineur": "NEUTRE"
@@ -2741,7 +2745,7 @@
           "nb_courses": 91,
           "nb_victoires": 4,
           "nb_places": 61,
-          "cote": 5.8,
+          "cote": 6.8,
           "cote_tendance": "",
           "cote_reference": 5.8,
           "avis_entraineur": "NEUTRE"
@@ -2765,7 +2769,7 @@
           "nb_courses": 65,
           "nb_victoires": 9,
           "nb_places": 35,
-          "cote": 14.0,
+          "cote": 12.0,
           "cote_tendance": "",
           "cote_reference": 14.0,
           "avis_entraineur": "NEUTRE"
@@ -2813,8 +2817,8 @@
           "nb_courses": 87,
           "nb_victoires": 3,
           "nb_places": 53,
-          "cote": 61.0,
-          "cote_tendance": "",
+          "cote": 29.0,
+          "cote_tendance": "+",
           "cote_reference": 61.0,
           "avis_entraineur": "NEUTRE"
         },
@@ -2837,7 +2841,7 @@
           "nb_courses": 93,
           "nb_victoires": 8,
           "nb_places": 35,
-          "cote": 15.0,
+          "cote": 16.0,
           "cote_tendance": "",
           "cote_reference": 15.0,
           "avis_entraineur": "NEUTRE"
@@ -2861,7 +2865,7 @@
           "nb_courses": 69,
           "nb_victoires": 6,
           "nb_places": 46,
-          "cote": 3.7,
+          "cote": 4.3,
           "cote_tendance": "",
           "cote_reference": 3.7,
           "avis_entraineur": "NEUTRE"
@@ -2885,7 +2889,7 @@
           "nb_courses": 63,
           "nb_victoires": 6,
           "nb_places": 38,
-          "cote": 15.0,
+          "cote": 18.0,
           "cote_tendance": "",
           "cote_reference": 15.0,
           "avis_entraineur": "NEUTRE"
@@ -2909,8 +2913,8 @@
           "nb_courses": 78,
           "nb_victoires": 6,
           "nb_places": 55,
-          "cote": 429.0,
-          "cote_tendance": "",
+          "cote": 263.0,
+          "cote_tendance": "+",
           "cote_reference": 429.0,
           "avis_entraineur": "NEGATIF"
         }
