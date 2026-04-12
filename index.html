@@ -1228,7 +1228,7 @@
     </div>
 
     <!-- Module ranking-loader (doit être chargé avant le script principal) -->
-    <script src="js/ranking-loader.js?v=11"></script>
+    <script src="js/ranking-loader.js?v=12"></script>
 
     <!-- Module de chargement des courses -->
     <script>
@@ -2067,9 +2067,17 @@
                         const fchColor = fch.includes('▲') ? '#40e05a' : fch.includes('▼') ? '#e05a40' : '#D4AF37';
                         const fcjColor = fcj.includes('▲') ? '#40e05a' : fcj.includes('▼') ? '#e05a40' : '#D4AF37';
 
-                        // Cote PMU
+                        // Cote PMU + dérive
                         const coteValue = participant.cote ? parseFloat(participant.cote).toFixed(1) : '-';
-                        const coteTendance = participant.cote_tendance === '+' ? '↑' : participant.cote_tendance === '-' ? '↓' : '';
+                        const coteRefValue = participant.cote_reference ? parseFloat(participant.cote_reference).toFixed(1) : null;
+                        let coteDisplay = coteValue;
+                        if (coteRefValue && coteValue !== '-' && coteRefValue !== coteValue) {
+                            const diff = parseFloat(coteValue) - parseFloat(coteRefValue);
+                            const pct = ((parseFloat(coteValue) / parseFloat(coteRefValue) - 1) * 100).toFixed(0);
+                            const color = diff < 0 ? '#40e05a' : diff > 0 ? '#e05a40' : '';
+                            const arrow = diff < 0 ? '↓' : diff > 0 ? '↑' : '';
+                            coteDisplay = `<span title="Réf: ${coteRefValue} → Actuelle: ${coteValue} (${pct > 0 ? '+' : ''}${pct}%)">${coteValue}<span style="font-size:0.7em;color:${color}">${arrow}${pct}%</span></span>`;
+                        }
 
                         // Score color (vert=bon, rouge=mauvais)
                         const scoreVal = parseFloat(scorePredictif.score);
@@ -2098,7 +2106,7 @@
                                 <td>${participant.jockey || 'N/A'}${fcj ? ` <span title="Forme jockey" style="color:${fcjColor};font-size:0.8em">${fcj}</span>` : ''}</td>
                                 <td>${participant.entraineur || 'N/A'}</td>
                                 <td>${participant.poids || '-'}</td>
-                                <td style="text-align:center;font-weight:600;${coteValue !== '-' ? 'color:#40E0D0' : ''}">${coteValue}${coteTendance ? `<span style="font-size:0.7em">${coteTendance}</span>` : ''}</td>
+                                <td style="text-align:center;font-weight:600;${coteValue !== '-' ? 'color:#40E0D0' : ''}">${coteDisplay}</td>
                                 <td class="prediction-cell">
                                     <div style="display:flex;align-items:center;gap:6px">
                                         <span style="font-weight:700;font-size:1.1em;color:${scoreColor};min-width:35px">${scorePredictif.score}</span>
