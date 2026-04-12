@@ -169,10 +169,14 @@ def main():
                 if result:
                     result["hippodrome"] = hippo_nom.upper()
 
-                    # Sauvegarder dans un fichier par course
+                    # Sauvegarder — NE PAS écraser si déjà capté (1ère capture = la bonne)
                     safe_hippo = hippo_nom.lower().replace(" ", "_").replace("/", "-")
                     filename = f"{date_iso}_{safe_hippo}_R{reunion_num}C{course_num}_live.json"
                     filepath = os.path.join(OUTPUT_DIR, filename)
+
+                    if os.path.exists(filepath):
+                        logger.info(f"   ⏭️  Déjà capté, skip")
+                        continue
 
                     with open(filepath, 'w', encoding='utf-8') as f:
                         json.dump(result, f, ensure_ascii=False, indent=2)

@@ -4,7 +4,7 @@ on:
   schedule:
     # Toutes les 15 minutes entre 11h et 17h UTC (13h-19h France)
     # Couvre les heures de courses françaises
-    - cron: '*/15 11-17 * * *'
+    - cron: '*/15 10-18 * * *'
   workflow_dispatch:
 
 permissions:
