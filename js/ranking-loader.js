@@ -2600,6 +2600,19 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         const coteVal = parseFloat(participant.cote) || 0;
         const scoreCote = coteVal > 1 ? (1 / coteVal) * 100 : 50;
 
+        // DÉRIVE DE COTE (signal orthogonal validé : coeff -0.258, z=-3.22, p<0.001)
+        // Cote qui monte fort = marché abandonne ce cheval = PÉNALITÉ
+        // Seuil : log(cote/ref) > 0.3 = hausse > 35%
+        const coteRef = parseFloat(participant.cote_reference) || 0;
+        let penaliteDerive = 0;
+        if (coteVal > 1 && coteRef > 1) {
+            const derive = Math.log(coteVal / coteRef);
+            if (derive > 0.3) {
+                // Pénalité proportionnelle : -5 à -15 pts selon l'amplitude
+                penaliteDerive = -Math.min(15, (derive - 0.3) * 20);
+            }
+        }
+
         // LEVIER 2 : Valeur France Galop (rating officiel handicapeur)
         const valeurFG = parseFloat(participant.valeur) || 0;
         const scoreValeur = valeurFG > 0 ? valeurFG : 50; // Déjà sur échelle ~40-70
@@ -2698,6 +2711,13 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             formuleUsed += ' +ChTauxV(grand)';
         }
 
+        // Appliquer la pénalité dérive (signal validé out-of-sample)
+        if (penaliteDerive < 0) {
+            scoreFinal += penaliteDerive;
+            formuleUsed += ` DÉRIVE ${penaliteDerive.toFixed(0)}`;
+            console.log(`  ⚠️ Dérive cote: ${coteRef} → ${coteVal} = pénalité ${penaliteDerive.toFixed(1)} pts`);
+        }
+
         console.log(`  📊 ${formuleUsed} → ${scoreFinal.toFixed(1)}`);
 
         // Confiance
@@ -2742,7 +2762,10 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
                 },
                 cote: {
                     valeur: coteVal || "N/A",
-                    scoreCote: scoreCote.toFixed(1)
+                    reference: coteRef || "N/A",
+                    scoreCote: scoreCote.toFixed(1),
+                    derive: (coteVal > 1 && coteRef > 1) ? ((coteVal / coteRef - 1) * 100).toFixed(0) + '%' : 'N/A',
+                    penalite: penaliteDerive < 0 ? penaliteDerive.toFixed(1) : null
                 },
                 valeurFG: {
                     valeur: valeurFG || "N/A",

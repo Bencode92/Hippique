@@ -1228,7 +1228,7 @@
     </div>
 
     <!-- Module ranking-loader (doit être chargé avant le script principal) -->
-    <script src="js/ranking-loader.js?v=10"></script>
+    <script src="js/ranking-loader.js?v=11"></script>
 
     <!-- Module de chargement des courses -->
     <script>
@@ -2122,7 +2122,7 @@
                                               <span style="opacity:0.7">Valeur FG</span>
                                               <span style="font-weight:600">${scorePredictif.details.valeurFG?.valeur || '-'}</span>
                                               <span style="opacity:0.7">Cote PMU</span>
-                                              <span>${scorePredictif.details.cote?.valeur || '-'}</span>
+                                              <span>${scorePredictif.details.cote?.valeur || '-'}${scorePredictif.details.cote?.penalite ? ' <span style="color:#e05a40">⚠️'+scorePredictif.details.cote.derive+'</span>' : (scorePredictif.details.cote?.derive && scorePredictif.details.cote.derive !== 'N/A' ? ' <span style="opacity:0.6">('+scorePredictif.details.cote.derive+')</span>' : '')}</span>
                                               <span style="opacity:0.7">Corde</span>
                                               <span>${participant.corde || '-'}</span>
                                               <span style="opacity:0.7">Musique</span>
