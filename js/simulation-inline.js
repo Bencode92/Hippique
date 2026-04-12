@@ -17,20 +17,38 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="strategy-toggle-container">
                     <div class="strategy-option active" data-strategy="dutch">
                         <div class="strategy-icon">🎯</div>
-                        <div class="strategy-name">Dutch Betting</div>
-                        <div class="strategy-desc">Gain identique garanti</div>
+                        <div class="strategy-name">Dutch</div>
+                        <div class="strategy-desc">Gain identique</div>
                     </div>
-                    
+
                     <div class="strategy-option" data-strategy="ev">
                         <div class="strategy-icon">💰</div>
-                        <div class="strategy-name">Optimisation EV</div>
-                        <div class="strategy-desc">Gain moyen maximisé</div>
+                        <div class="strategy-name">EV</div>
+                        <div class="strategy-desc">Gain maximisé</div>
                     </div>
-                    
+
                     <div class="strategy-option" data-strategy="midrange">
                         <div class="strategy-icon">⚖️</div>
                         <div class="strategy-name">Mid Range</div>
-                        <div class="strategy-desc">Filtrage cotes médianes</div>
+                        <div class="strategy-desc">Cotes médianes</div>
+                    </div>
+
+                    <div class="strategy-option" data-strategy="couple">
+                        <div class="strategy-icon">2️⃣</div>
+                        <div class="strategy-name">Couplé</div>
+                        <div class="strategy-desc">Top 2 ordre/désordre</div>
+                    </div>
+
+                    <div class="strategy-option" data-strategy="tierce">
+                        <div class="strategy-icon">3️⃣</div>
+                        <div class="strategy-name">Tiercé</div>
+                        <div class="strategy-desc">Top 3 ordre/désordre</div>
+                    </div>
+
+                    <div class="strategy-option" data-strategy="quinte">
+                        <div class="strategy-icon">5️⃣</div>
+                        <div class="strategy-name">Quinté+</div>
+                        <div class="strategy-desc">Top 5</div>
                     </div>
                 </div>
                 
@@ -480,6 +498,86 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Fonction pour calculer les paris
+    // Paris français : Couplé (2), Tiercé (3), Quinté+ (5)
+    function calculateParisFrancais(type, participants, totalBet) {
+        const nbPicks = type === 'couple' ? 2 : type === 'tierce' ? 3 : 5;
+        const typeName = type === 'couple' ? 'Couplé' : type === 'tierce' ? 'Tiercé' : 'Quinté+';
+
+        if (participants.length < nbPicks) {
+            return { rentable: false };
+        }
+
+        // Trier par score (nos meilleurs picks)
+        const sorted = [...participants].sort((a, b) => b.score - a.score);
+        const picks = sorted.slice(0, nbPicks);
+
+        // Calculer les probas approximatives (basées sur 1/cote normalisé)
+        const totalProba = participants.reduce((s, p) => s + (p.cote > 1 ? 1/p.cote : 0), 0);
+        picks.forEach(p => {
+            p.probaWin = p.cote > 1 ? (1/p.cote) / totalProba : 0.05;
+        });
+
+        // Estimation gains pour chaque type
+        let gainEstime, miseParCombi;
+        const nbCombisOrdre = factorial(nbPicks);
+        const nbCombisDesordre = 1;
+
+        if (type === 'couple') {
+            // Couplé ordre : mise de base × (cote1 × cote2)
+            // Couplé désordre : mise de base × (cote1 × cote2 / 2)
+            const rapportOrdre = picks[0].cote * picks[1].cote * 0.7; // PMU prélève ~30%
+            const rapportDesordre = rapportOrdre / 2;
+            miseParCombi = Math.round(totalBet / 3 * 100) / 100; // 1/3 ordre, 2/3 désordre
+            gainEstime = {
+                ordre: miseParCombi * rapportOrdre,
+                desordre: miseParCombi * 2 * rapportDesordre,
+            };
+        } else if (type === 'tierce') {
+            const rapportOrdre = picks[0].cote * picks[1].cote * picks[2].cote * 0.6;
+            const rapportDesordre = rapportOrdre / 6;
+            miseParCombi = Math.round(totalBet / 4 * 100) / 100;
+            gainEstime = {
+                ordre: miseParCombi * rapportOrdre,
+                desordre: miseParCombi * 3 * rapportDesordre,
+            };
+        } else {
+            // Quinté+
+            const rapportOrdre = picks.reduce((p, h) => p * h.cote, 1) * 0.5;
+            const rapportDesordre = rapportOrdre / 120;
+            miseParCombi = Math.round(totalBet / 2 * 100) / 100;
+            gainEstime = {
+                ordre: miseParCombi * rapportOrdre,
+                desordre: miseParCombi * rapportDesordre,
+            };
+        }
+
+        // Proba de réussite approximative
+        const probaOrdre = picks.reduce((p, h) => p * h.probaWin, 1);
+        const probaDesordre = probaOrdre * factorial(nbPicks);
+
+        return {
+            rentable: true,
+            strategy: typeName,
+            picks: picks,
+            nbPicks: nbPicks,
+            totalStake: totalBet,
+            gainEstime: gainEstime,
+            probaOrdre: (probaOrdre * 100).toFixed(2),
+            probaDesordre: (probaDesordre * 100).toFixed(1),
+            bestStakes: picks.map(p => ({
+                horse: p.cheval,
+                odds: p.cote,
+                score: p.score,
+                stake: Math.round(totalBet / nbPicks * 100) / 100,
+                gain_net: 0
+            })),
+            gain_minimum: 0,
+            gain_moyen: (gainEstime.desordre * probaDesordre - totalBet).toFixed(0),
+        };
+    }
+
+    function factorial(n) { return n <= 1 ? 1 : n * factorial(n - 1); }
+
     function calculateBets() {
         console.log("Lancement du calcul des paris");
         const errorMessage = document.getElementById('inlineErrorMessage');
@@ -577,6 +675,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 result = calculateEVOptimization(horsesInput, totalBet, maxPerHorse, selectedHorses);
             } else if (strategy === 'midrange') {
                 result = calculateMidRange(horsesInput, totalBet, maxPerHorse, selectedHorses, excludeLow, excludeHigh);
+            } else if (strategy === 'couple' || strategy === 'tierce' || strategy === 'quinte') {
+                result = calculateParisFrancais(strategy, selectedParticipants, totalBet);
             } else {
                 throw new Error(`Stratégie non reconnue: ${strategy}`);
             }
@@ -585,9 +685,13 @@ document.addEventListener('DOMContentLoaded', function() {
             if (!result.rentable) {
                 throw new Error(`Aucune combinaison rentable trouvée avec la stratégie ${strategy}. Essayez d'augmenter le montant total ou de changer de stratégie.`);
             }
-            
+
             // Afficher les résultats
-            displayResults(result, totalBet, selectedParticipants);
+            if (strategy === 'couple' || strategy === 'tierce' || strategy === 'quinte') {
+                displayResultsParisFrancais(result, totalBet);
+            } else {
+                displayResults(result, totalBet, selectedParticipants);
+            }
             
             // Cacher le message d'erreur et afficher les résultats
             errorMessage.style.display = 'none';
@@ -606,6 +710,74 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Fonction pour afficher les résultats
+    function displayResultsParisFrancais(result, totalBet) {
+        const resultContainer = document.getElementById('inlineResultContainer');
+        if (!resultContainer) return;
+
+        const picks = result.picks;
+        const picksHTML = picks.map((p, i) => `
+            <tr>
+                <td style="font-weight:600">${i + 1}</td>
+                <td>${p.cheval}</td>
+                <td style="color:#40E0D0;font-weight:600">${p.cote}</td>
+                <td>${p.score?.toFixed(1) || '-'}</td>
+            </tr>
+        `).join('');
+
+        resultContainer.innerHTML = `
+            <div style="background:rgba(0,0,0,0.2);border-radius:10px;padding:16px;margin-top:12px">
+                <h4 style="color:var(--gold);margin-bottom:12px">
+                    ${result.strategy} — Nos ${result.nbPicks} meilleurs
+                </h4>
+
+                <table style="width:100%;border-collapse:collapse;font-size:0.9em">
+                    <thead>
+                        <tr style="opacity:0.7">
+                            <th style="text-align:left;padding:4px">#</th>
+                            <th style="text-align:left;padding:4px">Cheval</th>
+                            <th style="text-align:left;padding:4px">Cote</th>
+                            <th style="text-align:left;padding:4px">Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>${picksHTML}</tbody>
+                </table>
+
+                <div style="margin-top:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.1)">
+                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:0.85em">
+                        <div>
+                            <span style="opacity:0.7">Mise totale</span><br>
+                            <strong>${totalBet.toFixed(2)} €</strong>
+                        </div>
+                        <div>
+                            <span style="opacity:0.7">Proba dans l'ordre</span><br>
+                            <strong style="color:#e05a40">${result.probaOrdre}%</strong>
+                        </div>
+                        <div>
+                            <span style="opacity:0.7">Gain estimé (ordre)</span><br>
+                            <strong style="color:#40e05a">${result.gainEstime.ordre.toFixed(0)} €</strong>
+                        </div>
+                        <div>
+                            <span style="opacity:0.7">Gain estimé (désordre)</span><br>
+                            <strong style="color:#D4AF37">${result.gainEstime.desordre.toFixed(0)} €</strong>
+                        </div>
+                        <div>
+                            <span style="opacity:0.7">Proba désordre</span><br>
+                            <strong style="color:#40E0D0">${result.probaDesordre}%</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top:12px;font-size:0.8em;opacity:0.6">
+                    Estimation basée sur les cotes actuelles. Prélèvement PMU inclus (~30%).
+                    Les gains réels dépendent des rapports définitifs au départ.
+                </div>
+            </div>
+        `;
+
+        resultContainer.style.display = 'block';
+        resultContainer.scrollIntoView({ behavior: 'smooth' });
+    }
+
     function displayResults(result, totalBet, selectedParticipants) {
         // Mettre à jour les valeurs de résumé
         document.getElementById('inlineMinGain').textContent = `+${result.gain_minimum.toFixed(2)} €`;
