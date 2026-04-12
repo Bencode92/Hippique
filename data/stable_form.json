@@ -1,18 +1,27 @@
 {
   "metadata": {
-    "extraction_date": "2026-04-12T09:06:12.396Z",
+    "extraction_date": "2026-04-12T09:12:24.219Z",
     "method": "stable_form_30days",
-    "entraineurs": 627
+    "entraineurs": 732
   },
   "resultats": {
     "C.BONIN (S)": {
+      "courses30j": 5,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 20,
+      "nbChevaux": 5,
+      "formeStable": 10
+    },
+    "D.MORISSON (S)": {
       "courses30j": 3,
       "victoires30j": 0,
-      "places30j": 0,
+      "places30j": 2,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 0,
+      "tauxPlace30j": 66.7,
       "nbChevaux": 3,
-      "formeStable": 0
+      "formeStable": 33.3
     },
     "CH.GOURDAIN (S)": {
       "courses30j": 9,
@@ -22,6 +31,15 @@
       "tauxPlace30j": 77.8,
       "nbChevaux": 8,
       "formeStable": 83.3
+    },
+    "B.GOURDON (S)": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 3,
+      "formeStable": 0
     },
     "J.PIEDNOEL": {
       "courses30j": 5,
@@ -105,13 +123,13 @@
       "formeStable": 0
     },
     "MME S.MESTRIES": {
-      "courses30j": 5,
+      "courses30j": 9,
       "victoires30j": 1,
-      "places30j": 1,
-      "tauxVictoire30j": 20,
-      "tauxPlace30j": 20,
-      "nbChevaux": 5,
-      "formeStable": 50
+      "places30j": 2,
+      "tauxVictoire30j": 11.1,
+      "tauxPlace30j": 22.2,
+      "nbChevaux": 7,
+      "formeStable": 33.3
     },
     "MME AL.GUILDOUX": {
       "courses30j": 6,
@@ -123,67 +141,76 @@
       "formeStable": 41.7
     },
     "F.LAGARDE": {
-      "courses30j": 4,
-      "victoires30j": 0,
-      "places30j": 0,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 0,
-      "nbChevaux": 4,
-      "formeStable": 0
-    },
-    "A.BOISBRUNET (S)": {
       "courses30j": 6,
       "victoires30j": 0,
-      "places30j": 2,
+      "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 33.3,
-      "nbChevaux": 6,
-      "formeStable": 16.7
+      "tauxPlace30j": 16.7,
+      "nbChevaux": 4,
+      "formeStable": 8.3
     },
-    "CHAILLE-CHAILLE & PAMART": {
-      "courses30j": 12,
-      "victoires30j": 1,
-      "places30j": 1,
-      "tauxVictoire30j": 8.3,
-      "tauxPlace30j": 8.3,
-      "nbChevaux": 12,
-      "formeStable": 20.8
-    },
-    "F.NICOLLE": {
-      "courses30j": 26,
-      "victoires30j": 5,
-      "places30j": 10,
-      "tauxVictoire30j": 19.2,
-      "tauxPlace30j": 38.5,
-      "nbChevaux": 26,
-      "formeStable": 57.7
-    },
-    "F.SANCHEZ": {
-      "courses30j": 3,
-      "victoires30j": 1,
-      "places30j": 1,
-      "tauxVictoire30j": 33.3,
-      "tauxPlace30j": 33.3,
-      "nbChevaux": 3,
-      "formeStable": 83.3
-    },
-    "L.CADOT": {
-      "courses30j": 5,
-      "victoires30j": 1,
-      "places30j": 1,
-      "tauxVictoire30j": 20,
-      "tauxPlace30j": 20,
-      "nbChevaux": 5,
-      "formeStable": 50
-    },
-    "JP.DAIREAUX (S)": {
-      "courses30j": 4,
+    "A.BOISBRUNET (S)": {
+      "courses30j": 10,
       "victoires30j": 0,
       "places30j": 2,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 50,
+      "tauxPlace30j": 20,
+      "nbChevaux": 9,
+      "formeStable": 10
+    },
+    "CHAILLE-CHAILLE & PAMART": {
+      "courses30j": 14,
+      "victoires30j": 1,
+      "places30j": 2,
+      "tauxVictoire30j": 7.1,
+      "tauxPlace30j": 14.3,
+      "nbChevaux": 14,
+      "formeStable": 21.4
+    },
+    "F.NICOLLE": {
+      "courses30j": 28,
+      "victoires30j": 5,
+      "places30j": 11,
+      "tauxVictoire30j": 17.9,
+      "tauxPlace30j": 39.3,
+      "nbChevaux": 27,
+      "formeStable": 55.4
+    },
+    "F.SANCHEZ": {
+      "courses30j": 4,
+      "victoires30j": 1,
+      "places30j": 1,
+      "tauxVictoire30j": 25,
+      "tauxPlace30j": 25,
       "nbChevaux": 4,
-      "formeStable": 25
+      "formeStable": 62.5
+    },
+    "L.CADOT": {
+      "courses30j": 8,
+      "victoires30j": 1,
+      "places30j": 2,
+      "tauxVictoire30j": 12.5,
+      "tauxPlace30j": 25,
+      "nbChevaux": 6,
+      "formeStable": 37.5
+    },
+    "J.BARRAO": {
+      "courses30j": 5,
+      "victoires30j": 1,
+      "places30j": 2,
+      "tauxVictoire30j": 20,
+      "tauxPlace30j": 40,
+      "nbChevaux": 4,
+      "formeStable": 60
+    },
+    "JP.DAIREAUX (S)": {
+      "courses30j": 7,
+      "victoires30j": 1,
+      "places30j": 5,
+      "tauxVictoire30j": 14.3,
+      "tauxPlace30j": 71.4,
+      "nbChevaux": 4,
+      "formeStable": 64.3
     },
     "N.PERRET (S)": {
       "courses30j": 21,
@@ -195,13 +222,13 @@
       "formeStable": 31
     },
     "C.ESCUDER": {
-      "courses30j": 43,
+      "courses30j": 45,
       "victoires30j": 6,
       "places30j": 15,
-      "tauxVictoire30j": 14,
-      "tauxPlace30j": 34.9,
-      "nbChevaux": 42,
-      "formeStable": 45.3
+      "tauxVictoire30j": 13.3,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 44,
+      "formeStable": 43.3
     },
     "L.BERNHARDT": {
       "courses30j": 9,
@@ -256,6 +283,15 @@
       "tauxPlace30j": 37.5,
       "nbChevaux": 8,
       "formeStable": 43.8
+    },
+    "MME E.CURY": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 3,
+      "formeStable": 0
     },
     "D. CINIER": {
       "courses30j": 4,
@@ -329,6 +365,15 @@
       "nbChevaux": 7,
       "formeStable": 14.3
     },
+    "M. DAOUGABEL": {
+      "courses30j": 4,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 4,
+      "formeStable": 0
+    },
     "B. RUET": {
       "courses30j": 5,
       "victoires30j": 0,
@@ -339,22 +384,22 @@
       "formeStable": 20
     },
     "CH. CUILLER": {
-      "courses30j": 7,
+      "courses30j": 10,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 7,
+      "nbChevaux": 10,
       "formeStable": 0
     },
     "S. BOUISSON": {
-      "courses30j": 8,
+      "courses30j": 11,
       "victoires30j": 0,
       "places30j": 2,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 25,
-      "nbChevaux": 8,
-      "formeStable": 12.5
+      "tauxPlace30j": 18.2,
+      "nbChevaux": 11,
+      "formeStable": 9.1
     },
     "J. UROZ": {
       "courses30j": 3,
@@ -401,6 +446,15 @@
       "nbChevaux": 3,
       "formeStable": 16.7
     },
+    "MARTIAL GAUVIN": {
+      "courses30j": 3,
+      "victoires30j": 1,
+      "places30j": 1,
+      "tauxVictoire30j": 33.3,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 3,
+      "formeStable": 83.3
+    },
     "A.P. GIRAUD": {
       "courses30j": 3,
       "victoires30j": 0,
@@ -411,31 +465,31 @@
       "formeStable": 0
     },
     "TH. DUVALDESTIN": {
-      "courses30j": 17,
+      "courses30j": 19,
       "victoires30j": 1,
-      "places30j": 2,
-      "tauxVictoire30j": 5.9,
-      "tauxPlace30j": 11.8,
-      "nbChevaux": 17,
-      "formeStable": 17.6
+      "places30j": 3,
+      "tauxVictoire30j": 5.3,
+      "tauxPlace30j": 15.8,
+      "nbChevaux": 19,
+      "formeStable": 18.4
     },
     "A. CHAVATTE": {
-      "courses30j": 8,
+      "courses30j": 14,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 8,
+      "nbChevaux": 13,
       "formeStable": 0
     },
     "N. LANGLOIS": {
-      "courses30j": 10,
+      "courses30j": 12,
       "victoires30j": 3,
       "places30j": 4,
-      "tauxVictoire30j": 30,
-      "tauxPlace30j": 40,
-      "nbChevaux": 9,
-      "formeStable": 80
+      "tauxVictoire30j": 25,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 11,
+      "formeStable": 66.7
     },
     "CH.A. MARY": {
       "courses30j": 17,
@@ -446,14 +500,32 @@
       "nbChevaux": 17,
       "formeStable": 17.6
     },
+    "O. POTIER": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 3,
+      "formeStable": 0
+    },
+    "CL. FRECELLE": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 3,
+      "formeStable": 0
+    },
     "J. PAILLE": {
-      "courses30j": 10,
+      "courses30j": 15,
       "victoires30j": 0,
       "places30j": 2,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 20,
-      "nbChevaux": 9,
-      "formeStable": 10
+      "tauxPlace30j": 13.3,
+      "nbChevaux": 13,
+      "formeStable": 6.7
     },
     "V. SEGUIN": {
       "courses30j": 4,
@@ -483,22 +555,22 @@
       "formeStable": 2.9
     },
     "NICOLAS RICHARD BROSSARD": {
-      "courses30j": 9,
-      "victoires30j": 0,
-      "places30j": 0,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 0,
-      "nbChevaux": 9,
-      "formeStable": 0
+      "courses30j": 10,
+      "victoires30j": 1,
+      "places30j": 1,
+      "tauxVictoire30j": 10,
+      "tauxPlace30j": 10,
+      "nbChevaux": 10,
+      "formeStable": 25
     },
     "RENAUD JULIEN": {
-      "courses30j": 3,
+      "courses30j": 4,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 33.3,
+      "tauxPlace30j": 25,
       "nbChevaux": 3,
-      "formeStable": 16.7
+      "formeStable": 12.5
     },
     "R. JOLY": {
       "courses30j": 4,
@@ -537,39 +609,39 @@
       "formeStable": 12.5
     },
     "S.G. DUPONT": {
-      "courses30j": 3,
+      "courses30j": 7,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 33.3,
-      "nbChevaux": 3,
-      "formeStable": 16.7
+      "tauxPlace30j": 14.3,
+      "nbChevaux": 7,
+      "formeStable": 7.1
     },
     "D. DELAROCHE": {
-      "courses30j": 5,
+      "courses30j": 6,
       "victoires30j": 0,
       "places30j": 2,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 40,
-      "nbChevaux": 5,
-      "formeStable": 20
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 6,
+      "formeStable": 16.7
     },
     "F. TERRY": {
-      "courses30j": 28,
-      "victoires30j": 1,
-      "places30j": 3,
-      "tauxVictoire30j": 3.6,
-      "tauxPlace30j": 10.7,
-      "nbChevaux": 25,
-      "formeStable": 12.5
+      "courses30j": 51,
+      "victoires30j": 4,
+      "places30j": 6,
+      "tauxVictoire30j": 7.8,
+      "tauxPlace30j": 11.8,
+      "nbChevaux": 44,
+      "formeStable": 21.6
     },
     "N. CATHERINE": {
-      "courses30j": 5,
-      "victoires30j": 2,
-      "places30j": 3,
-      "tauxVictoire30j": 40,
-      "tauxPlace30j": 60,
-      "nbChevaux": 5,
+      "courses30j": 7,
+      "victoires30j": 3,
+      "places30j": 4,
+      "tauxVictoire30j": 42.9,
+      "tauxPlace30j": 57.1,
+      "nbChevaux": 6,
       "formeStable": 100
     },
     "G. CASTEL": {
@@ -582,13 +654,13 @@
       "formeStable": 16.7
     },
     "J.PH. MONCLIN": {
-      "courses30j": 13,
+      "courses30j": 16,
       "victoires30j": 0,
-      "places30j": 0,
+      "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 0,
-      "nbChevaux": 12,
-      "formeStable": 0
+      "tauxPlace30j": 6.3,
+      "nbChevaux": 15,
+      "formeStable": 3.1
     },
     "F. JOSEPH": {
       "courses30j": 5,
@@ -617,16 +689,52 @@
       "nbChevaux": 10,
       "formeStable": 10
     },
-    "B. OLICARD": {
+    "W. DAVID": {
+      "courses30j": 3,
+      "victoires30j": 2,
+      "places30j": 3,
+      "tauxVictoire30j": 66.7,
+      "tauxPlace30j": 100,
+      "nbChevaux": 2,
+      "formeStable": 100
+    },
+    "PH. MARIE": {
       "courses30j": 5,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 4,
+      "formeStable": 0
+    },
+    "B. OLICARD": {
+      "courses30j": 11,
       "victoires30j": 0,
       "places30j": 2,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 40,
-      "nbChevaux": 5,
-      "formeStable": 20
+      "tauxPlace30j": 18.2,
+      "nbChevaux": 11,
+      "formeStable": 9.1
+    },
+    "CH. HENRY": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 3,
+      "formeStable": 0
     },
     "O. RAFFIN": {
+      "courses30j": 4,
+      "victoires30j": 0,
+      "places30j": 2,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 50,
+      "nbChevaux": 3,
+      "formeStable": 25
+    },
+    "J.F. MARY": {
       "courses30j": 3,
       "victoires30j": 0,
       "places30j": 1,
@@ -699,13 +807,13 @@
       "formeStable": 26.9
     },
     "P.ADDA (S)": {
-      "courses30j": 6,
+      "courses30j": 7,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 16.7,
-      "nbChevaux": 6,
-      "formeStable": 8.3
+      "tauxPlace30j": 14.3,
+      "nbChevaux": 7,
+      "formeStable": 7.1
     },
     "MME J.LE STANG": {
       "courses30j": 6,
@@ -735,31 +843,31 @@
       "formeStable": 0
     },
     "LAGENESTE & MACAIRE (S)": {
-      "courses30j": 19,
+      "courses30j": 22,
       "victoires30j": 3,
-      "places30j": 6,
-      "tauxVictoire30j": 15.8,
-      "tauxPlace30j": 31.6,
-      "nbChevaux": 19,
-      "formeStable": 47.4
+      "places30j": 8,
+      "tauxVictoire30j": 13.6,
+      "tauxPlace30j": 36.4,
+      "nbChevaux": 22,
+      "formeStable": 45.5
     },
     "D.COTTIN (S)": {
-      "courses30j": 11,
+      "courses30j": 12,
       "victoires30j": 1,
       "places30j": 5,
-      "tauxVictoire30j": 9.1,
-      "tauxPlace30j": 45.5,
-      "nbChevaux": 10,
-      "formeStable": 40.9
+      "tauxVictoire30j": 8.3,
+      "tauxPlace30j": 41.7,
+      "nbChevaux": 11,
+      "formeStable": 37.5
     },
     "BUTEL & BEAUNEZ (S)": {
-      "courses30j": 6,
+      "courses30j": 7,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 16.7,
+      "tauxPlace30j": 14.3,
       "nbChevaux": 5,
-      "formeStable": 8.3
+      "formeStable": 7.1
     },
     "F.BELLEMERE": {
       "courses30j": 10,
@@ -861,13 +969,13 @@
       "formeStable": 16.7
     },
     "M.PITART": {
-      "courses30j": 22,
+      "courses30j": 24,
       "victoires30j": 2,
       "places30j": 5,
-      "tauxVictoire30j": 9.1,
-      "tauxPlace30j": 22.7,
-      "nbChevaux": 20,
-      "formeStable": 29.5
+      "tauxVictoire30j": 8.3,
+      "tauxPlace30j": 20.8,
+      "nbChevaux": 22,
+      "formeStable": 27.1
     },
     "HF.DEVIN (S)": {
       "courses30j": 8,
@@ -888,13 +996,13 @@
       "formeStable": 36.7
     },
     "FH.GRAFFARD (S)": {
-      "courses30j": 18,
-      "victoires30j": 0,
-      "places30j": 4,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 22.2,
-      "nbChevaux": 18,
-      "formeStable": 11.1
+      "courses30j": 24,
+      "victoires30j": 2,
+      "places30j": 6,
+      "tauxVictoire30j": 8.3,
+      "tauxPlace30j": 25,
+      "nbChevaux": 24,
+      "formeStable": 29.2
     },
     "N.BELLANGER (S)": {
       "courses30j": 10,
@@ -915,13 +1023,13 @@
       "formeStable": 57.7
     },
     "Y.BONNEFOY (S)": {
-      "courses30j": 11,
+      "courses30j": 12,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 9.1,
-      "nbChevaux": 10,
-      "formeStable": 4.5
+      "tauxPlace30j": 8.3,
+      "nbChevaux": 11,
+      "formeStable": 4.2
     },
     "FX.WEISSMEIER": {
       "courses30j": 5,
@@ -969,40 +1077,40 @@
       "formeStable": 71.4
     },
     "A.FABRE (S)": {
-      "courses30j": 27,
-      "victoires30j": 3,
-      "places30j": 10,
-      "tauxVictoire30j": 11.1,
-      "tauxPlace30j": 37,
-      "nbChevaux": 27,
-      "formeStable": 40.7
+      "courses30j": 34,
+      "victoires30j": 4,
+      "places30j": 14,
+      "tauxVictoire30j": 11.8,
+      "tauxPlace30j": 41.2,
+      "nbChevaux": 34,
+      "formeStable": 44.1
     },
     "M.DELZANGLES": {
-      "courses30j": 9,
+      "courses30j": 11,
       "victoires30j": 3,
       "places30j": 4,
-      "tauxVictoire30j": 33.3,
-      "tauxPlace30j": 44.4,
-      "nbChevaux": 9,
-      "formeStable": 88.9
+      "tauxVictoire30j": 27.3,
+      "tauxPlace30j": 36.4,
+      "nbChevaux": 11,
+      "formeStable": 72.7
     },
     "HA.PANTALL (S)": {
-      "courses30j": 20,
-      "victoires30j": 2,
-      "places30j": 5,
-      "tauxVictoire30j": 10,
-      "tauxPlace30j": 25,
-      "nbChevaux": 20,
-      "formeStable": 32.5
+      "courses30j": 23,
+      "victoires30j": 3,
+      "places30j": 8,
+      "tauxVictoire30j": 13,
+      "tauxPlace30j": 34.8,
+      "nbChevaux": 23,
+      "formeStable": 43.5
     },
     "F.CHAPPET (S)": {
-      "courses30j": 7,
+      "courses30j": 9,
       "victoires30j": 0,
       "places30j": 2,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 28.6,
-      "nbChevaux": 7,
-      "formeStable": 14.3
+      "tauxPlace30j": 22.2,
+      "nbChevaux": 9,
+      "formeStable": 11.1
     },
     "MME R.PHILIPPON": {
       "courses30j": 4,
@@ -1077,31 +1185,31 @@
       "formeStable": 100
     },
     "JC.ROUGET (S)": {
-      "courses30j": 10,
-      "victoires30j": 1,
-      "places30j": 4,
-      "tauxVictoire30j": 10,
-      "tauxPlace30j": 40,
-      "nbChevaux": 10,
-      "formeStable": 40
-    },
-    "S.WATTEL (S)": {
-      "courses30j": 15,
+      "courses30j": 11,
       "victoires30j": 1,
       "places30j": 5,
-      "tauxVictoire30j": 6.7,
-      "tauxPlace30j": 33.3,
-      "nbChevaux": 15,
-      "formeStable": 30
+      "tauxVictoire30j": 9.1,
+      "tauxPlace30j": 45.5,
+      "nbChevaux": 11,
+      "formeStable": 40.9
+    },
+    "S.WATTEL (S)": {
+      "courses30j": 16,
+      "victoires30j": 1,
+      "places30j": 5,
+      "tauxVictoire30j": 6.3,
+      "tauxPlace30j": 31.3,
+      "nbChevaux": 16,
+      "formeStable": 28.1
     },
     "CLEMENT & HERMANS (S)": {
-      "courses30j": 5,
+      "courses30j": 8,
       "victoires30j": 0,
-      "places30j": 0,
+      "places30j": 2,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 0,
-      "nbChevaux": 5,
-      "formeStable": 0
+      "tauxPlace30j": 25,
+      "nbChevaux": 8,
+      "formeStable": 12.5
     },
     "S.KOBAYASHI (S)": {
       "courses30j": 4,
@@ -1130,14 +1238,23 @@
       "nbChevaux": 2,
       "formeStable": 33.3
     },
+    "LUIS ANTONIO SINGNORETTI": {
+      "courses30j": 3,
+      "victoires30j": 2,
+      "places30j": 2,
+      "tauxVictoire30j": 66.7,
+      "tauxPlace30j": 66.7,
+      "nbChevaux": 3,
+      "formeStable": 100
+    },
     "PABLO GERMAN GONZALEZ": {
-      "courses30j": 8,
-      "victoires30j": 1,
-      "places30j": 3,
-      "tauxVictoire30j": 12.5,
-      "tauxPlace30j": 37.5,
-      "nbChevaux": 8,
-      "formeStable": 43.8
+      "courses30j": 11,
+      "victoires30j": 3,
+      "places30j": 5,
+      "tauxVictoire30j": 27.3,
+      "tauxPlace30j": 45.5,
+      "nbChevaux": 11,
+      "formeStable": 77.3
     },
     "JOSE PABLO GARCIA": {
       "courses30j": 4,
@@ -1149,13 +1266,13 @@
       "formeStable": 62.5
     },
     "JORGE JAVIER REY": {
-      "courses30j": 17,
+      "courses30j": 25,
       "victoires30j": 1,
-      "places30j": 3,
-      "tauxVictoire30j": 5.9,
-      "tauxPlace30j": 17.6,
-      "nbChevaux": 17,
-      "formeStable": 20.6
+      "places30j": 5,
+      "tauxVictoire30j": 4,
+      "tauxPlace30j": 20,
+      "nbChevaux": 25,
+      "formeStable": 18
     },
     "MARIA XIMENA MARRERO": {
       "courses30j": 4,
@@ -1167,76 +1284,103 @@
       "formeStable": 0
     },
     "JUAN PABLO GONZALEZ": {
-      "courses30j": 3,
+      "courses30j": 4,
       "victoires30j": 1,
       "places30j": 2,
-      "tauxVictoire30j": 33.3,
-      "tauxPlace30j": 66.7,
-      "nbChevaux": 3,
-      "formeStable": 100
+      "tauxVictoire30j": 25,
+      "tauxPlace30j": 50,
+      "nbChevaux": 4,
+      "formeStable": 75
+    },
+    "MARTIN MARTINEZ": {
+      "courses30j": 4,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 25,
+      "nbChevaux": 4,
+      "formeStable": 12.5
     },
     "RICARDO COLOMBO": {
-      "courses30j": 3,
+      "courses30j": 4,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 33.3,
-      "nbChevaux": 3,
-      "formeStable": 16.7
+      "tauxPlace30j": 25,
+      "nbChevaux": 4,
+      "formeStable": 12.5
     },
-    "WILLIAMS MATTOS": {
+    "DARCIANO TERRES MINETTO": {
       "courses30j": 3,
-      "victoires30j": 0,
-      "places30j": 1,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 33.3,
-      "nbChevaux": 3,
-      "formeStable": 16.7
-    },
-    "WASHINGTON RAUL BONACCI": {
-      "courses30j": 3,
-      "victoires30j": 1,
-      "places30j": 1,
-      "tauxVictoire30j": 33.3,
-      "tauxPlace30j": 33.3,
-      "nbChevaux": 3,
-      "formeStable": 83.3
-    },
-    "RAIMUNDO SOARES": {
-      "courses30j": 5,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 5,
+      "nbChevaux": 3,
       "formeStable": 0
     },
-    "ROBERTO SOLANES": {
-      "courses30j": 9,
+    "VICTOR TOMAS TABAREZ": {
+      "courses30j": 3,
       "victoires30j": 0,
       "places30j": 3,
       "tauxVictoire30j": 0,
+      "tauxPlace30j": 100,
+      "nbChevaux": 3,
+      "formeStable": 50
+    },
+    "WILLIAMS MATTOS": {
+      "courses30j": 4,
+      "victoires30j": 0,
+      "places30j": 2,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 50,
+      "nbChevaux": 4,
+      "formeStable": 25
+    },
+    "WASHINGTON RAUL BONACCI": {
+      "courses30j": 5,
+      "victoires30j": 1,
+      "places30j": 2,
+      "tauxVictoire30j": 20,
+      "tauxPlace30j": 40,
+      "nbChevaux": 5,
+      "formeStable": 60
+    },
+    "RAIMUNDO SOARES": {
+      "courses30j": 8,
+      "victoires30j": 1,
+      "places30j": 1,
+      "tauxVictoire30j": 12.5,
+      "tauxPlace30j": 12.5,
+      "nbChevaux": 8,
+      "formeStable": 31.3
+    },
+    "ROBERTO SOLANES": {
+      "courses30j": 12,
+      "victoires30j": 0,
+      "places30j": 4,
+      "tauxVictoire30j": 0,
       "tauxPlace30j": 33.3,
-      "nbChevaux": 9,
+      "nbChevaux": 12,
       "formeStable": 16.7
     },
     "FACUNDO SANTESTEBAN": {
-      "courses30j": 12,
-      "victoires30j": 1,
-      "places30j": 2,
-      "tauxVictoire30j": 8.3,
-      "tauxPlace30j": 16.7,
-      "nbChevaux": 12,
-      "formeStable": 25
+      "courses30j": 16,
+      "victoires30j": 2,
+      "places30j": 4,
+      "tauxVictoire30j": 12.5,
+      "tauxPlace30j": 25,
+      "nbChevaux": 16,
+      "formeStable": 37.5
     },
     "JOSIANE GULART": {
-      "courses30j": 3,
+      "courses30j": 5,
       "victoires30j": 1,
       "places30j": 1,
-      "tauxVictoire30j": 33.3,
-      "tauxPlace30j": 33.3,
-      "nbChevaux": 3,
-      "formeStable": 83.3
+      "tauxVictoire30j": 20,
+      "tauxPlace30j": 20,
+      "nbChevaux": 5,
+      "formeStable": 50
     },
     "GONZALO AGUSTIN RODRIGUEZ": {
       "courses30j": 3,
@@ -1247,6 +1391,51 @@
       "nbChevaux": 3,
       "formeStable": 0
     },
+    "SERGIO PELUFFO": {
+      "courses30j": 6,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 16.7,
+      "nbChevaux": 6,
+      "formeStable": 8.3
+    },
+    "GABRIEL ADRIAN GIOVANETTI": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 3,
+      "formeStable": 0
+    },
+    "JOSE GONZALO MENCHACA": {
+      "courses30j": 3,
+      "victoires30j": 1,
+      "places30j": 1,
+      "tauxVictoire30j": 33.3,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 3,
+      "formeStable": 83.3
+    },
+    "GUSTAVO CARLOS VERGARA": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 2,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 66.7,
+      "nbChevaux": 3,
+      "formeStable": 33.3
+    },
+    "JORGE AVELINO PIRIZ": {
+      "courses30j": 4,
+      "victoires30j": 0,
+      "places30j": 4,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 100,
+      "nbChevaux": 4,
+      "formeStable": 50
+    },
     "MACK HALL": {
       "courses30j": 3,
       "victoires30j": 1,
@@ -1255,6 +1444,15 @@
       "tauxPlace30j": 66.7,
       "nbChevaux": 3,
       "formeStable": 100
+    },
+    "JOANNA OFFEN": {
+      "courses30j": 4,
+      "victoires30j": 1,
+      "places30j": 2,
+      "tauxVictoire30j": 25,
+      "tauxPlace30j": 50,
+      "nbChevaux": 4,
+      "formeStable": 75
     },
     "JUAN CARLOS GODOY": {
       "courses30j": 3,
@@ -1329,31 +1527,31 @@
       "formeStable": 75
     },
     "STÉ. ENT. GRÉGORY THOREL": {
-      "courses30j": 11,
+      "courses30j": 14,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 9.1,
-      "nbChevaux": 10,
-      "formeStable": 4.5
+      "tauxPlace30j": 7.1,
+      "nbChevaux": 13,
+      "formeStable": 3.6
     },
     "GUILLAUME JOUVE": {
-      "courses30j": 3,
+      "courses30j": 7,
       "victoires30j": 2,
       "places30j": 2,
-      "tauxVictoire30j": 66.7,
-      "tauxPlace30j": 66.7,
-      "nbChevaux": 3,
-      "formeStable": 100
+      "tauxVictoire30j": 28.6,
+      "tauxPlace30j": 28.6,
+      "nbChevaux": 6,
+      "formeStable": 71.4
     },
     "J.M. BAUDOUIN": {
-      "courses30j": 12,
+      "courses30j": 13,
       "victoires30j": 3,
       "places30j": 3,
-      "tauxVictoire30j": 25,
-      "tauxPlace30j": 25,
+      "tauxVictoire30j": 23.1,
+      "tauxPlace30j": 23.1,
       "nbChevaux": 10,
-      "formeStable": 62.5
+      "formeStable": 57.7
     },
     "F. GENCE": {
       "courses30j": 5,
@@ -1365,31 +1563,31 @@
       "formeStable": 0
     },
     "CH. DREUX": {
-      "courses30j": 6,
+      "courses30j": 9,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 16.7,
-      "nbChevaux": 6,
-      "formeStable": 8.3
+      "tauxPlace30j": 11.1,
+      "nbChevaux": 9,
+      "formeStable": 5.6
     },
     "A.PH. GRIMAULT": {
-      "courses30j": 4,
+      "courses30j": 5,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 4,
+      "nbChevaux": 5,
       "formeStable": 0
     },
     "S. BOURLIER": {
-      "courses30j": 13,
+      "courses30j": 16,
       "victoires30j": 1,
       "places30j": 4,
-      "tauxVictoire30j": 7.7,
-      "tauxPlace30j": 30.8,
-      "nbChevaux": 12,
-      "formeStable": 30.8
+      "tauxVictoire30j": 6.3,
+      "tauxPlace30j": 25,
+      "nbChevaux": 13,
+      "formeStable": 25
     },
     "ET. LEFRANC": {
       "courses30j": 4,
@@ -1401,22 +1599,22 @@
       "formeStable": 0
     },
     "J.P. MARMION": {
-      "courses30j": 6,
+      "courses30j": 8,
       "victoires30j": 0,
-      "places30j": 1,
+      "places30j": 2,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 16.7,
-      "nbChevaux": 6,
-      "formeStable": 8.3
+      "tauxPlace30j": 25,
+      "nbChevaux": 8,
+      "formeStable": 12.5
     },
     "A. THOMAS": {
-      "courses30j": 3,
-      "victoires30j": 0,
-      "places30j": 1,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 33.3,
-      "nbChevaux": 3,
-      "formeStable": 16.7
+      "courses30j": 8,
+      "victoires30j": 1,
+      "places30j": 4,
+      "tauxVictoire30j": 12.5,
+      "tauxPlace30j": 50,
+      "nbChevaux": 7,
+      "formeStable": 50
     },
     "M. SASSIER": {
       "courses30j": 18,
@@ -1428,12 +1626,12 @@
       "formeStable": 30.6
     },
     "S. HARDY": {
-      "courses30j": 12,
-      "victoires30j": 1,
-      "places30j": 4,
-      "tauxVictoire30j": 8.3,
-      "tauxPlace30j": 33.3,
-      "nbChevaux": 12,
+      "courses30j": 27,
+      "victoires30j": 3,
+      "places30j": 6,
+      "tauxVictoire30j": 11.1,
+      "tauxPlace30j": 22.2,
+      "nbChevaux": 26,
       "formeStable": 33.3
     },
     "Y. DOUSSET": {
@@ -1446,76 +1644,85 @@
       "formeStable": 16.7
     },
     "M. DONIO": {
-      "courses30j": 6,
+      "courses30j": 7,
       "victoires30j": 0,
       "places30j": 2,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 33.3,
-      "nbChevaux": 6,
-      "formeStable": 16.7
+      "tauxPlace30j": 28.6,
+      "nbChevaux": 7,
+      "formeStable": 14.3
     },
     "J.B. LEMOINE": {
-      "courses30j": 4,
+      "courses30j": 6,
       "victoires30j": 2,
-      "places30j": 3,
-      "tauxVictoire30j": 50,
-      "tauxPlace30j": 75,
-      "nbChevaux": 3,
+      "places30j": 4,
+      "tauxVictoire30j": 33.3,
+      "tauxPlace30j": 66.7,
+      "nbChevaux": 5,
       "formeStable": 100
     },
     "CH. CHALON": {
-      "courses30j": 5,
+      "courses30j": 7,
       "victoires30j": 0,
       "places30j": 2,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 40,
-      "nbChevaux": 5,
-      "formeStable": 20
+      "tauxPlace30j": 28.6,
+      "nbChevaux": 6,
+      "formeStable": 14.3
     },
     "V. LEBARQUE": {
-      "courses30j": 8,
+      "courses30j": 10,
       "victoires30j": 1,
-      "places30j": 1,
-      "tauxVictoire30j": 12.5,
-      "tauxPlace30j": 12.5,
-      "nbChevaux": 7,
-      "formeStable": 31.3
+      "places30j": 2,
+      "tauxVictoire30j": 10,
+      "tauxPlace30j": 20,
+      "nbChevaux": 9,
+      "formeStable": 30
     },
     "K. LEBLANC": {
-      "courses30j": 7,
+      "courses30j": 9,
       "victoires30j": 1,
       "places30j": 1,
-      "tauxVictoire30j": 14.3,
-      "tauxPlace30j": 14.3,
-      "nbChevaux": 7,
-      "formeStable": 35.7
+      "tauxVictoire30j": 11.1,
+      "tauxPlace30j": 11.1,
+      "nbChevaux": 9,
+      "formeStable": 27.8
+    },
+    "MME E. PRIVAT": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 3,
+      "formeStable": 16.7
     },
     "S. ROGER": {
-      "courses30j": 17,
-      "victoires30j": 0,
-      "places30j": 4,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 23.5,
-      "nbChevaux": 16,
-      "formeStable": 11.8
+      "courses30j": 28,
+      "victoires30j": 1,
+      "places30j": 8,
+      "tauxVictoire30j": 3.6,
+      "tauxPlace30j": 28.6,
+      "nbChevaux": 25,
+      "formeStable": 21.4
     },
     "V. RAIMBAULT": {
-      "courses30j": 3,
+      "courses30j": 4,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 3,
+      "nbChevaux": 4,
       "formeStable": 0
     },
     "P.L. DESAUNETTE": {
-      "courses30j": 6,
+      "courses30j": 10,
       "victoires30j": 0,
-      "places30j": 0,
+      "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 0,
-      "nbChevaux": 6,
-      "formeStable": 0
+      "tauxPlace30j": 10,
+      "nbChevaux": 9,
+      "formeStable": 5
     },
     "TH. RAFFEGEAU": {
       "courses30j": 7,
@@ -1553,14 +1760,32 @@
       "nbChevaux": 10,
       "formeStable": 25
     },
+    "J. DUBREIL": {
+      "courses30j": 6,
+      "victoires30j": 1,
+      "places30j": 2,
+      "tauxVictoire30j": 16.7,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 6,
+      "formeStable": 50
+    },
     "S. MARMION": {
-      "courses30j": 5,
+      "courses30j": 7,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 20,
-      "nbChevaux": 5,
-      "formeStable": 10
+      "tauxPlace30j": 14.3,
+      "nbChevaux": 6,
+      "formeStable": 7.1
+    },
+    "B. GROULT": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 2,
+      "formeStable": 0
     },
     "PH. BOUTIN": {
       "courses30j": 4,
@@ -1571,8 +1796,17 @@
       "nbChevaux": 4,
       "formeStable": 0
     },
+    "J. BESCHER": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 3,
+      "formeStable": 16.7
+    },
     "H. SIONNEAU": {
-      "courses30j": 4,
+      "courses30j": 5,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
@@ -1581,13 +1815,22 @@
       "formeStable": 0
     },
     "E. LELIEVRE": {
-      "courses30j": 7,
+      "courses30j": 8,
       "victoires30j": 0,
       "places30j": 3,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 42.9,
+      "tauxPlace30j": 37.5,
       "nbChevaux": 6,
-      "formeStable": 21.4
+      "formeStable": 18.8
+    },
+    "Y. DOCQUIN": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 3,
+      "formeStable": 0
     },
     "W. BIGEON": {
       "courses30j": 7,
@@ -1599,30 +1842,30 @@
       "formeStable": 7.1
     },
     "B. CARPENTIER": {
-      "courses30j": 6,
+      "courses30j": 8,
       "victoires30j": 2,
-      "places30j": 2,
-      "tauxVictoire30j": 33.3,
-      "tauxPlace30j": 33.3,
+      "places30j": 3,
+      "tauxVictoire30j": 25,
+      "tauxPlace30j": 37.5,
       "nbChevaux": 6,
-      "formeStable": 83.3
+      "formeStable": 68.8
     },
     "E.G. BLOT": {
-      "courses30j": 5,
+      "courses30j": 8,
       "victoires30j": 1,
       "places30j": 1,
-      "tauxVictoire30j": 20,
-      "tauxPlace30j": 20,
-      "nbChevaux": 5,
-      "formeStable": 50
+      "tauxVictoire30j": 12.5,
+      "tauxPlace30j": 12.5,
+      "nbChevaux": 8,
+      "formeStable": 31.3
     },
     "J.L. BIGEON": {
-      "courses30j": 3,
+      "courses30j": 6,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 3,
+      "nbChevaux": 5,
       "formeStable": 0
     },
     "L.B. MARTIN": {
@@ -1635,22 +1878,22 @@
       "formeStable": 0
     },
     "M. MOTTIER": {
-      "courses30j": 15,
+      "courses30j": 17,
       "victoires30j": 3,
       "places30j": 8,
-      "tauxVictoire30j": 20,
-      "tauxPlace30j": 53.3,
-      "nbChevaux": 15,
-      "formeStable": 66.7
+      "tauxVictoire30j": 17.6,
+      "tauxPlace30j": 47.1,
+      "nbChevaux": 17,
+      "formeStable": 58.8
     },
     "STÉ. ENT. ETIENNE DUBOIS": {
-      "courses30j": 6,
+      "courses30j": 7,
       "victoires30j": 1,
       "places30j": 3,
-      "tauxVictoire30j": 16.7,
-      "tauxPlace30j": 50,
+      "tauxVictoire30j": 14.3,
+      "tauxPlace30j": 42.9,
       "nbChevaux": 6,
-      "formeStable": 58.3
+      "formeStable": 50
     },
     "J. LE MER": {
       "courses30j": 7,
@@ -1680,21 +1923,21 @@
       "formeStable": 0
     },
     "L. BAUDRON": {
-      "courses30j": 6,
+      "courses30j": 7,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 16.7,
-      "nbChevaux": 6,
-      "formeStable": 8.3
+      "tauxPlace30j": 14.3,
+      "nbChevaux": 7,
+      "formeStable": 7.1
     },
     "N. BRIDAULT": {
-      "courses30j": 12,
+      "courses30j": 13,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 11,
+      "nbChevaux": 12,
       "formeStable": 0
     },
     "G.A. POU POU": {
@@ -1707,6 +1950,15 @@
       "formeStable": 60
     },
     "S. PRIOUL": {
+      "courses30j": 4,
+      "victoires30j": 0,
+      "places30j": 2,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 50,
+      "nbChevaux": 4,
+      "formeStable": 25
+    },
+    "TH. LAMARE": {
       "courses30j": 3,
       "victoires30j": 0,
       "places30j": 2,
@@ -1714,6 +1966,15 @@
       "tauxPlace30j": 66.7,
       "nbChevaux": 3,
       "formeStable": 33.3
+    },
+    "B. GOGLIN": {
+      "courses30j": 6,
+      "victoires30j": 1,
+      "places30j": 2,
+      "tauxVictoire30j": 16.7,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 6,
+      "formeStable": 50
     },
     "B. ROBIN": {
       "courses30j": 5,
@@ -1734,66 +1995,66 @@
       "formeStable": 16.7
     },
     "S. GUARATO": {
-      "courses30j": 15,
+      "courses30j": 17,
       "victoires30j": 2,
-      "places30j": 2,
-      "tauxVictoire30j": 13.3,
-      "tauxPlace30j": 13.3,
-      "nbChevaux": 15,
-      "formeStable": 33.3
+      "places30j": 3,
+      "tauxVictoire30j": 11.8,
+      "tauxPlace30j": 17.6,
+      "nbChevaux": 17,
+      "formeStable": 32.4
     },
     "ANTONIN ANDRE": {
+      "courses30j": 13,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 7.7,
+      "nbChevaux": 11,
+      "formeStable": 3.8
+    },
+    "B. BOURGOIN": {
+      "courses30j": 13,
+      "victoires30j": 0,
+      "places30j": 3,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 23.1,
+      "nbChevaux": 10,
+      "formeStable": 11.5
+    },
+    "E. PLANCHENAULT": {
+      "courses30j": 6,
+      "victoires30j": 1,
+      "places30j": 1,
+      "tauxVictoire30j": 16.7,
+      "tauxPlace30j": 16.7,
+      "nbChevaux": 5,
+      "formeStable": 41.7
+    },
+    "ARNAUD DESMOTTES": {
       "courses30j": 12,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 8.3,
-      "nbChevaux": 10,
+      "nbChevaux": 11,
       "formeStable": 4.2
     },
-    "B. BOURGOIN": {
-      "courses30j": 11,
-      "victoires30j": 0,
-      "places30j": 3,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 27.3,
-      "nbChevaux": 10,
-      "formeStable": 13.6
+    "STÉ. ENT. JONATHAN VANMEERBECK": {
+      "courses30j": 14,
+      "victoires30j": 2,
+      "places30j": 4,
+      "tauxVictoire30j": 14.3,
+      "tauxPlace30j": 28.6,
+      "nbChevaux": 12,
+      "formeStable": 42.9
     },
-    "E. PLANCHENAULT": {
-      "courses30j": 5,
-      "victoires30j": 1,
-      "places30j": 1,
-      "tauxVictoire30j": 20,
-      "tauxPlace30j": 20,
-      "nbChevaux": 5,
-      "formeStable": 50
-    },
-    "ARNAUD DESMOTTES": {
+    "B. LE BELLER": {
       "courses30j": 10,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
       "nbChevaux": 10,
-      "formeStable": 0
-    },
-    "STÉ. ENT. JONATHAN VANMEERBECK": {
-      "courses30j": 9,
-      "victoires30j": 2,
-      "places30j": 3,
-      "tauxVictoire30j": 22.2,
-      "tauxPlace30j": 33.3,
-      "nbChevaux": 9,
-      "formeStable": 61.1
-    },
-    "B. LE BELLER": {
-      "courses30j": 8,
-      "victoires30j": 0,
-      "places30j": 0,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 0,
-      "nbChevaux": 8,
       "formeStable": 0
     },
     "B. PITON": {
@@ -1806,40 +2067,49 @@
       "formeStable": 100
     },
     "M. VARIN": {
-      "courses30j": 4,
-      "victoires30j": 0,
-      "places30j": 0,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 0,
-      "nbChevaux": 3,
-      "formeStable": 0
-    },
-    "J.M. LEGROS": {
-      "courses30j": 4,
+      "courses30j": 8,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 25,
-      "nbChevaux": 4,
-      "formeStable": 12.5
+      "tauxPlace30j": 12.5,
+      "nbChevaux": 6,
+      "formeStable": 6.3
+    },
+    "J.M. LEGROS": {
+      "courses30j": 7,
+      "victoires30j": 2,
+      "places30j": 4,
+      "tauxVictoire30j": 28.6,
+      "tauxPlace30j": 57.1,
+      "nbChevaux": 6,
+      "formeStable": 85.7
     },
     "R. DERIEUX": {
+      "courses30j": 7,
+      "victoires30j": 1,
+      "places30j": 1,
+      "tauxVictoire30j": 14.3,
+      "tauxPlace30j": 14.3,
+      "nbChevaux": 6,
+      "formeStable": 35.7
+    },
+    "A. DE JESUS": {
+      "courses30j": 11,
+      "victoires30j": 2,
+      "places30j": 2,
+      "tauxVictoire30j": 18.2,
+      "tauxPlace30j": 18.2,
+      "nbChevaux": 10,
+      "formeStable": 45.5
+    },
+    "MLLE AUDE LEMOINE": {
       "courses30j": 3,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 3,
+      "nbChevaux": 2,
       "formeStable": 0
-    },
-    "A. DE JESUS": {
-      "courses30j": 8,
-      "victoires30j": 2,
-      "places30j": 2,
-      "tauxVictoire30j": 25,
-      "tauxPlace30j": 25,
-      "nbChevaux": 8,
-      "formeStable": 62.5
     },
     "J.F. SENET": {
       "courses30j": 9,
@@ -1860,22 +2130,22 @@
       "formeStable": 33.3
     },
     "MME V. MOQUET": {
-      "courses30j": 4,
-      "victoires30j": 1,
-      "places30j": 2,
+      "courses30j": 8,
+      "victoires30j": 2,
+      "places30j": 4,
       "tauxVictoire30j": 25,
       "tauxPlace30j": 50,
-      "nbChevaux": 4,
+      "nbChevaux": 7,
       "formeStable": 75
     },
     "B. MARIE": {
-      "courses30j": 10,
+      "courses30j": 13,
       "victoires30j": 0,
       "places30j": 2,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 20,
-      "nbChevaux": 9,
-      "formeStable": 10
+      "tauxPlace30j": 15.4,
+      "nbChevaux": 11,
+      "formeStable": 7.7
     },
     "TH. COULON": {
       "courses30j": 3,
@@ -1887,13 +2157,13 @@
       "formeStable": 83.3
     },
     "A. HENARD": {
-      "courses30j": 3,
+      "courses30j": 5,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 33.3,
-      "nbChevaux": 2,
-      "formeStable": 16.7
+      "tauxPlace30j": 20,
+      "nbChevaux": 4,
+      "formeStable": 10
     },
     "ALEXANDRE CHEVRIER": {
       "courses30j": 4,
@@ -1905,30 +2175,30 @@
       "formeStable": 12.5
     },
     "A. HUBERT": {
-      "courses30j": 3,
+      "courses30j": 4,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 3,
+      "nbChevaux": 4,
       "formeStable": 0
     },
     "ANTHONY DOLLION": {
-      "courses30j": 8,
+      "courses30j": 9,
       "victoires30j": 1,
       "places30j": 2,
-      "tauxVictoire30j": 12.5,
-      "tauxPlace30j": 25,
-      "nbChevaux": 8,
-      "formeStable": 37.5
+      "tauxVictoire30j": 11.1,
+      "tauxPlace30j": 22.2,
+      "nbChevaux": 9,
+      "formeStable": 33.3
     },
     "R.CH. LARUE": {
-      "courses30j": 6,
+      "courses30j": 7,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 6,
+      "nbChevaux": 7,
       "formeStable": 0
     },
     "CH. HESLOUIN": {
@@ -1941,21 +2211,21 @@
       "formeStable": 0
     },
     "J.P. FICHAUX": {
-      "courses30j": 4,
+      "courses30j": 5,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 4,
+      "nbChevaux": 5,
       "formeStable": 0
     },
     "P. GODEY": {
-      "courses30j": 4,
+      "courses30j": 6,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 4,
+      "nbChevaux": 5,
       "formeStable": 0
     },
     "L.CL. ABRIVARD": {
@@ -1967,6 +2237,24 @@
       "nbChevaux": 19,
       "formeStable": 29.5
     },
+    "A. PLARD": {
+      "courses30j": 4,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 25,
+      "nbChevaux": 4,
+      "formeStable": 12.5
+    },
+    "A. WISSOCQ": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 3,
+      "formeStable": 0
+    },
     "G.HERNON (S)": {
       "courses30j": 6,
       "victoires30j": 1,
@@ -1977,22 +2265,22 @@
       "formeStable": 41.7
     },
     "M.BARATTI (S)": {
-      "courses30j": 12,
-      "victoires30j": 1,
-      "places30j": 3,
-      "tauxVictoire30j": 8.3,
-      "tauxPlace30j": 25,
-      "nbChevaux": 12,
-      "formeStable": 29.2
-    },
-    "P&J.BRANDT (S)": {
-      "courses30j": 7,
+      "courses30j": 13,
       "victoires30j": 1,
       "places30j": 4,
-      "tauxVictoire30j": 14.3,
-      "tauxPlace30j": 57.1,
-      "nbChevaux": 7,
-      "formeStable": 57.1
+      "tauxVictoire30j": 7.7,
+      "tauxPlace30j": 30.8,
+      "nbChevaux": 13,
+      "formeStable": 30.8
+    },
+    "P&J.BRANDT (S)": {
+      "courses30j": 10,
+      "victoires30j": 1,
+      "places30j": 5,
+      "tauxVictoire30j": 10,
+      "tauxPlace30j": 50,
+      "nbChevaux": 10,
+      "formeStable": 45
     },
     "A.SCHUTZ (S)": {
       "courses30j": 4,
@@ -2004,22 +2292,22 @@
       "formeStable": 100
     },
     "MME V.HEAD": {
-      "courses30j": 8,
+      "courses30j": 9,
       "victoires30j": 2,
       "places30j": 2,
-      "tauxVictoire30j": 25,
-      "tauxPlace30j": 25,
-      "nbChevaux": 8,
-      "formeStable": 62.5
+      "tauxVictoire30j": 22.2,
+      "tauxPlace30j": 22.2,
+      "nbChevaux": 9,
+      "formeStable": 55.6
     },
     "MME A.KARKOSA": {
-      "courses30j": 13,
+      "courses30j": 14,
       "victoires30j": 0,
       "places30j": 3,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 23.1,
-      "nbChevaux": 13,
-      "formeStable": 11.5
+      "tauxPlace30j": 21.4,
+      "nbChevaux": 14,
+      "formeStable": 10.7
     },
     "G.BIETOLINI": {
       "courses30j": 7,
@@ -2049,22 +2337,22 @@
       "formeStable": 10
     },
     "M.DELCHER SANCHEZ": {
-      "courses30j": 11,
+      "courses30j": 12,
       "victoires30j": 1,
       "places30j": 4,
-      "tauxVictoire30j": 9.1,
-      "tauxPlace30j": 36.4,
-      "nbChevaux": 11,
-      "formeStable": 36.4
+      "tauxVictoire30j": 8.3,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 12,
+      "formeStable": 33.3
     },
     "C&Y.LERNER (S)": {
-      "courses30j": 17,
-      "victoires30j": 1,
-      "places30j": 2,
-      "tauxVictoire30j": 5.9,
-      "tauxPlace30j": 11.8,
-      "nbChevaux": 17,
-      "formeStable": 17.6
+      "courses30j": 20,
+      "victoires30j": 2,
+      "places30j": 4,
+      "tauxVictoire30j": 10,
+      "tauxPlace30j": 20,
+      "nbChevaux": 20,
+      "formeStable": 30
     },
     "E.LIBAUD (S)": {
       "courses30j": 12,
@@ -2085,13 +2373,13 @@
       "formeStable": 41.7
     },
     "D&P.PROD'HOMME (S)": {
-      "courses30j": 5,
+      "courses30j": 6,
       "victoires30j": 1,
       "places30j": 1,
-      "tauxVictoire30j": 20,
-      "tauxPlace30j": 20,
-      "nbChevaux": 5,
-      "formeStable": 50
+      "tauxVictoire30j": 16.7,
+      "tauxPlace30j": 16.7,
+      "nbChevaux": 6,
+      "formeStable": 41.7
     },
     "MME C.BARANDE BARBE": {
       "courses30j": 5,
@@ -2147,32 +2435,50 @@
       "nbChevaux": 10,
       "formeStable": 22.7
     },
-    "C.FERLAND (S)": {
-      "courses30j": 6,
+    "CHR.HEAD (S)": {
+      "courses30j": 5,
       "victoires30j": 1,
       "places30j": 1,
-      "tauxVictoire30j": 16.7,
-      "tauxPlace30j": 16.7,
-      "nbChevaux": 6,
-      "formeStable": 41.7
+      "tauxVictoire30j": 20,
+      "tauxPlace30j": 20,
+      "nbChevaux": 5,
+      "formeStable": 50
+    },
+    "KR.BURKE": {
+      "courses30j": 3,
+      "victoires30j": 1,
+      "places30j": 2,
+      "tauxVictoire30j": 33.3,
+      "tauxPlace30j": 66.7,
+      "nbChevaux": 3,
+      "formeStable": 100
+    },
+    "C.FERLAND (S)": {
+      "courses30j": 9,
+      "victoires30j": 1,
+      "places30j": 1,
+      "tauxVictoire30j": 11.1,
+      "tauxPlace30j": 11.1,
+      "nbChevaux": 9,
+      "formeStable": 27.8
     },
     "G.MOSSE (S)": {
-      "courses30j": 6,
+      "courses30j": 7,
       "victoires30j": 1,
-      "places30j": 1,
-      "tauxVictoire30j": 16.7,
-      "tauxPlace30j": 16.7,
-      "nbChevaux": 6,
-      "formeStable": 41.7
+      "places30j": 2,
+      "tauxVictoire30j": 14.3,
+      "tauxPlace30j": 28.6,
+      "nbChevaux": 7,
+      "formeStable": 42.9
     },
     "D.ARTU (S)": {
-      "courses30j": 12,
+      "courses30j": 13,
       "victoires30j": 1,
       "places30j": 1,
-      "tauxVictoire30j": 8.3,
-      "tauxPlace30j": 8.3,
+      "tauxVictoire30j": 7.7,
+      "tauxPlace30j": 7.7,
       "nbChevaux": 12,
-      "formeStable": 20.8
+      "formeStable": 19.2
     },
     "M.NIGGE (S)": {
       "courses30j": 6,
@@ -2229,13 +2535,13 @@
       "formeStable": 57.1
     },
     "G.PANNIER": {
-      "courses30j": 8,
+      "courses30j": 9,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 12.5,
-      "nbChevaux": 7,
-      "formeStable": 6.3
+      "tauxPlace30j": 11.1,
+      "nbChevaux": 8,
+      "formeStable": 5.6
     },
     "MME Y.VOLLMER": {
       "courses30j": 6,
@@ -2264,133 +2570,16 @@
       "nbChevaux": 4,
       "formeStable": 75
     },
-    "N.CAULLERY": {
-      "courses30j": 9,
+    "A.SUBORICS": {
+      "courses30j": 3,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 11.1,
-      "nbChevaux": 9,
-      "formeStable": 5.6
-    },
-    "NEWNHAM M.": {
-      "courses30j": 8,
-      "victoires30j": 2,
-      "places30j": 5,
-      "tauxVictoire30j": 25,
-      "tauxPlace30j": 62.5,
-      "nbChevaux": 8,
-      "formeStable": 81.3
-    },
-    "LOR F.C.": {
-      "courses30j": 11,
-      "victoires30j": 2,
-      "places30j": 3,
-      "tauxVictoire30j": 18.2,
-      "tauxPlace30j": 27.3,
-      "nbChevaux": 11,
-      "formeStable": 50
-    },
-    "NG P.C.": {
-      "courses30j": 9,
-      "victoires30j": 1,
-      "places30j": 1,
-      "tauxVictoire30j": 11.1,
-      "tauxPlace30j": 11.1,
-      "nbChevaux": 9,
-      "formeStable": 27.8
-    },
-    "FOWNES C.": {
-      "courses30j": 8,
-      "victoires30j": 0,
-      "places30j": 1,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 12.5,
-      "nbChevaux": 8,
-      "formeStable": 6.3
-    },
-    "CHANG C.W.": {
-      "courses30j": 7,
-      "victoires30j": 0,
-      "places30j": 0,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 0,
-      "nbChevaux": 7,
-      "formeStable": 0
-    },
-    "CRUZ A.S.": {
-      "courses30j": 9,
-      "victoires30j": 1,
-      "places30j": 4,
-      "tauxVictoire30j": 11.1,
-      "tauxPlace30j": 44.4,
-      "nbChevaux": 9,
-      "formeStable": 44.4
-    },
-    "HAYES D.A.": {
-      "courses30j": 11,
-      "victoires30j": 1,
-      "places30j": 1,
-      "tauxVictoire30j": 9.1,
-      "tauxPlace30j": 9.1,
-      "nbChevaux": 11,
-      "formeStable": 22.7
-    },
-    "CRAWFORD B.": {
-      "courses30j": 7,
-      "victoires30j": 1,
-      "places30j": 4,
-      "tauxVictoire30j": 14.3,
-      "tauxPlace30j": 57.1,
-      "nbChevaux": 7,
-      "formeStable": 57.1
-    },
-    "LUI K.W.": {
-      "courses30j": 5,
-      "victoires30j": 1,
-      "places30j": 2,
-      "tauxVictoire30j": 20,
-      "tauxPlace30j": 40,
-      "nbChevaux": 5,
-      "formeStable": 60
-    },
-    "SIZE J.": {
-      "courses30j": 8,
-      "victoires30j": 0,
-      "places30j": 1,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 12.5,
-      "nbChevaux": 8,
-      "formeStable": 6.3
-    },
-    "SO W.Y.": {
-      "courses30j": 9,
-      "victoires30j": 1,
-      "places30j": 2,
-      "tauxVictoire30j": 11.1,
-      "tauxPlace30j": 22.2,
-      "nbChevaux": 9,
-      "formeStable": 33.3
-    },
-    "YIP C.H.": {
-      "courses30j": 9,
-      "victoires30j": 1,
-      "places30j": 3,
-      "tauxVictoire30j": 11.1,
       "tauxPlace30j": 33.3,
-      "nbChevaux": 9,
-      "formeStable": 38.9
+      "nbChevaux": 2,
+      "formeStable": 16.7
     },
-    "TING K.H.": {
-      "courses30j": 5,
-      "victoires30j": 0,
-      "places30j": 2,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 40,
-      "nbChevaux": 5,
-      "formeStable": 20
-    },
-    "EUSTACE D.": {
+    "N.CAULLERY": {
       "courses30j": 10,
       "victoires30j": 0,
       "places30j": 1,
@@ -2399,25 +2588,115 @@
       "nbChevaux": 10,
       "formeStable": 5
     },
-    "MO W.K.": {
-      "courses30j": 6,
+    "NEWNHAM M.": {
+      "courses30j": 11,
+      "victoires30j": 2,
+      "places30j": 5,
+      "tauxVictoire30j": 18.2,
+      "tauxPlace30j": 45.5,
+      "nbChevaux": 11,
+      "formeStable": 59.1
+    },
+    "LOR F.C.": {
+      "courses30j": 12,
+      "victoires30j": 2,
+      "places30j": 4,
+      "tauxVictoire30j": 16.7,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 12,
+      "formeStable": 50
+    },
+    "NG P.C.": {
+      "courses30j": 10,
+      "victoires30j": 1,
+      "places30j": 1,
+      "tauxVictoire30j": 10,
+      "tauxPlace30j": 10,
+      "nbChevaux": 10,
+      "formeStable": 25
+    },
+    "FOWNES C.": {
+      "courses30j": 11,
+      "victoires30j": 0,
+      "places30j": 3,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 27.3,
+      "nbChevaux": 11,
+      "formeStable": 13.6
+    },
+    "CHANG C.W.": {
+      "courses30j": 9,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 6,
+      "nbChevaux": 9,
       "formeStable": 0
     },
-    "HALL D.J.": {
-      "courses30j": 8,
-      "victoires30j": 0,
-      "places30j": 1,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 12.5,
-      "nbChevaux": 8,
-      "formeStable": 6.3
+    "CRUZ A.S.": {
+      "courses30j": 11,
+      "victoires30j": 1,
+      "places30j": 4,
+      "tauxVictoire30j": 9.1,
+      "tauxPlace30j": 36.4,
+      "nbChevaux": 11,
+      "formeStable": 36.4
     },
-    "WHYTE D.J.": {
+    "HAYES D.A.": {
+      "courses30j": 15,
+      "victoires30j": 1,
+      "places30j": 1,
+      "tauxVictoire30j": 6.7,
+      "tauxPlace30j": 6.7,
+      "nbChevaux": 15,
+      "formeStable": 16.7
+    },
+    "CRAWFORD B.": {
+      "courses30j": 10,
+      "victoires30j": 1,
+      "places30j": 4,
+      "tauxVictoire30j": 10,
+      "tauxPlace30j": 40,
+      "nbChevaux": 10,
+      "formeStable": 40
+    },
+    "LUI K.W.": {
+      "courses30j": 7,
+      "victoires30j": 1,
+      "places30j": 2,
+      "tauxVictoire30j": 14.3,
+      "tauxPlace30j": 28.6,
+      "nbChevaux": 7,
+      "formeStable": 42.9
+    },
+    "SIZE J.": {
+      "courses30j": 12,
+      "victoires30j": 2,
+      "places30j": 3,
+      "tauxVictoire30j": 16.7,
+      "tauxPlace30j": 25,
+      "nbChevaux": 10,
+      "formeStable": 45.8
+    },
+    "SO W.Y.": {
+      "courses30j": 10,
+      "victoires30j": 1,
+      "places30j": 2,
+      "tauxVictoire30j": 10,
+      "tauxPlace30j": 20,
+      "nbChevaux": 10,
+      "formeStable": 30
+    },
+    "YIP C.H.": {
+      "courses30j": 10,
+      "victoires30j": 1,
+      "places30j": 3,
+      "tauxVictoire30j": 10,
+      "tauxPlace30j": 30,
+      "nbChevaux": 9,
+      "formeStable": 35
+    },
+    "TING K.H.": {
       "courses30j": 7,
       "victoires30j": 0,
       "places30j": 2,
@@ -2426,32 +2705,68 @@
       "nbChevaux": 7,
       "formeStable": 14.3
     },
-    "MAN K.L.": {
-      "courses30j": 9,
+    "EUSTACE D.": {
+      "courses30j": 15,
+      "victoires30j": 1,
+      "places30j": 4,
+      "tauxVictoire30j": 6.7,
+      "tauxPlace30j": 26.7,
+      "nbChevaux": 15,
+      "formeStable": 26.7
+    },
+    "MO W.K.": {
+      "courses30j": 10,
       "victoires30j": 1,
       "places30j": 2,
-      "tauxVictoire30j": 11.1,
+      "tauxVictoire30j": 10,
+      "tauxPlace30j": 20,
+      "nbChevaux": 10,
+      "formeStable": 30
+    },
+    "HALL D.J.": {
+      "courses30j": 10,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 10,
+      "nbChevaux": 10,
+      "formeStable": 5
+    },
+    "WHYTE D.J.": {
+      "courses30j": 9,
+      "victoires30j": 0,
+      "places30j": 2,
+      "tauxVictoire30j": 0,
       "tauxPlace30j": 22.2,
       "nbChevaux": 9,
-      "formeStable": 33.3
+      "formeStable": 11.1
+    },
+    "MAN K.L.": {
+      "courses30j": 11,
+      "victoires30j": 1,
+      "places30j": 2,
+      "tauxVictoire30j": 9.1,
+      "tauxPlace30j": 18.2,
+      "nbChevaux": 11,
+      "formeStable": 27.3
     },
     "RICHARDS J.": {
-      "courses30j": 3,
+      "courses30j": 4,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 3,
+      "nbChevaux": 4,
       "formeStable": 0
     },
     "YIU P.F.": {
-      "courses30j": 5,
+      "courses30j": 8,
       "victoires30j": 1,
-      "places30j": 2,
-      "tauxVictoire30j": 20,
-      "tauxPlace30j": 40,
-      "nbChevaux": 5,
-      "formeStable": 60
+      "places30j": 3,
+      "tauxVictoire30j": 12.5,
+      "tauxPlace30j": 37.5,
+      "nbChevaux": 8,
+      "formeStable": 43.8
     },
     "TSUI Y.S.": {
       "courses30j": 6,
@@ -2463,31 +2778,31 @@
       "formeStable": 8.3
     },
     "SHUM C.S.": {
-      "courses30j": 8,
+      "courses30j": 9,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 12.5,
-      "nbChevaux": 8,
-      "formeStable": 6.3
+      "tauxPlace30j": 11.1,
+      "nbChevaux": 9,
+      "formeStable": 5.6
     },
     "CL. THOMAIN": {
-      "courses30j": 5,
-      "victoires30j": 0,
-      "places30j": 0,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 0,
-      "nbChevaux": 5,
-      "formeStable": 0
-    },
-    "A. PILLON": {
-      "courses30j": 4,
+      "courses30j": 11,
       "victoires30j": 0,
       "places30j": 2,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 50,
-      "nbChevaux": 4,
-      "formeStable": 25
+      "tauxPlace30j": 18.2,
+      "nbChevaux": 9,
+      "formeStable": 9.1
+    },
+    "A. PILLON": {
+      "courses30j": 7,
+      "victoires30j": 1,
+      "places30j": 4,
+      "tauxVictoire30j": 14.3,
+      "tauxPlace30j": 57.1,
+      "nbChevaux": 7,
+      "formeStable": 57.1
     },
     "L. LERENARD": {
       "courses30j": 7,
@@ -2498,31 +2813,49 @@
       "nbChevaux": 7,
       "formeStable": 42.9
     },
+    "J. VILAULT": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 2,
+      "formeStable": 0
+    },
+    "S. LEBLOND": {
+      "courses30j": 7,
+      "victoires30j": 1,
+      "places30j": 3,
+      "tauxVictoire30j": 14.3,
+      "tauxPlace30j": 42.9,
+      "nbChevaux": 6,
+      "formeStable": 50
+    },
     "STÉ. ENT. FABRICE SOULOY": {
-      "courses30j": 5,
+      "courses30j": 6,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 20,
-      "nbChevaux": 5,
-      "formeStable": 10
+      "tauxPlace30j": 16.7,
+      "nbChevaux": 6,
+      "formeStable": 8.3
     },
     "F. BLANDIN": {
-      "courses30j": 7,
+      "courses30j": 11,
       "victoires30j": 0,
-      "places30j": 0,
+      "places30j": 2,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 0,
-      "nbChevaux": 7,
-      "formeStable": 0
+      "tauxPlace30j": 18.2,
+      "nbChevaux": 11,
+      "formeStable": 9.1
     },
     "A. BUISSON": {
-      "courses30j": 5,
+      "courses30j": 6,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 5,
+      "nbChevaux": 6,
       "formeStable": 0
     },
     "P. LEVESQUE": {
@@ -2535,22 +2868,31 @@
       "formeStable": 16.7
     },
     "M. IZAAC": {
-      "courses30j": 4,
+      "courses30j": 7,
       "victoires30j": 0,
       "places30j": 2,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 50,
+      "tauxPlace30j": 28.6,
+      "nbChevaux": 7,
+      "formeStable": 14.3
+    },
+    "F. HAREL": {
+      "courses30j": 5,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
       "nbChevaux": 4,
-      "formeStable": 25
+      "formeStable": 0
     },
     "A.G. MAILLARD": {
-      "courses30j": 9,
+      "courses30j": 10,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 11.1,
+      "tauxPlace30j": 10,
       "nbChevaux": 8,
-      "formeStable": 5.6
+      "formeStable": 5
     },
     "ANTOINE LHERETE": {
       "courses30j": 4,
@@ -2562,13 +2904,13 @@
       "formeStable": 0
     },
     "F. NIVARD": {
-      "courses30j": 4,
+      "courses30j": 7,
       "victoires30j": 0,
-      "places30j": 1,
+      "places30j": 3,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 25,
-      "nbChevaux": 4,
-      "formeStable": 12.5
+      "tauxPlace30j": 42.9,
+      "nbChevaux": 5,
+      "formeStable": 21.4
     },
     "S. ROUSSELLE": {
       "courses30j": 5,
@@ -2579,25 +2921,7 @@
       "nbChevaux": 5,
       "formeStable": 0
     },
-    "TH. LEVESQUE": {
-      "courses30j": 4,
-      "victoires30j": 0,
-      "places30j": 0,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 0,
-      "nbChevaux": 4,
-      "formeStable": 0
-    },
-    "J.M. GUILLOTTE": {
-      "courses30j": 3,
-      "victoires30j": 1,
-      "places30j": 2,
-      "tauxVictoire30j": 33.3,
-      "tauxPlace30j": 66.7,
-      "nbChevaux": 3,
-      "formeStable": 100
-    },
-    "V. MARQUEZ": {
+    "S. DIEUDONNE": {
       "courses30j": 3,
       "victoires30j": 0,
       "places30j": 1,
@@ -2606,23 +2930,86 @@
       "nbChevaux": 2,
       "formeStable": 16.7
     },
+    "M. DABOUIS": {
+      "courses30j": 5,
+      "victoires30j": 1,
+      "places30j": 2,
+      "tauxVictoire30j": 20,
+      "tauxPlace30j": 40,
+      "nbChevaux": 5,
+      "formeStable": 60
+    },
+    "J. HERARD": {
+      "courses30j": 3,
+      "victoires30j": 1,
+      "places30j": 3,
+      "tauxVictoire30j": 33.3,
+      "tauxPlace30j": 100,
+      "nbChevaux": 3,
+      "formeStable": 100
+    },
+    "TH. LEVESQUE": {
+      "courses30j": 5,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 5,
+      "formeStable": 0
+    },
+    "J.M. GUILLOTTE": {
+      "courses30j": 4,
+      "victoires30j": 1,
+      "places30j": 3,
+      "tauxVictoire30j": 25,
+      "tauxPlace30j": 75,
+      "nbChevaux": 4,
+      "formeStable": 87.5
+    },
+    "R. LAGADEUC": {
+      "courses30j": 4,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 4,
+      "formeStable": 0
+    },
+    "V. MARQUEZ": {
+      "courses30j": 4,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 25,
+      "nbChevaux": 3,
+      "formeStable": 12.5
+    },
+    "D. STOEHR": {
+      "courses30j": 3,
+      "victoires30j": 1,
+      "places30j": 2,
+      "tauxVictoire30j": 33.3,
+      "tauxPlace30j": 66.7,
+      "nbChevaux": 2,
+      "formeStable": 100
+    },
     "N. LEMETAYER": {
+      "courses30j": 10,
+      "victoires30j": 0,
+      "places30j": 2,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 20,
+      "nbChevaux": 10,
+      "formeStable": 10
+    },
+    "ST. MEUNIER": {
       "courses30j": 9,
       "victoires30j": 0,
       "places30j": 2,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 22.2,
-      "nbChevaux": 9,
+      "nbChevaux": 8,
       "formeStable": 11.1
-    },
-    "ST. MEUNIER": {
-      "courses30j": 7,
-      "victoires30j": 0,
-      "places30j": 2,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 28.6,
-      "nbChevaux": 7,
-      "formeStable": 14.3
     },
     "CH. NICOLE": {
       "courses30j": 9,
@@ -2633,14 +3020,32 @@
       "nbChevaux": 8,
       "formeStable": 5.6
     },
-    "ST. PROVOOST": {
-      "courses30j": 6,
+    "ANTHONIN FAVRIS": {
+      "courses30j": 3,
       "victoires30j": 0,
-      "places30j": 1,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 3,
+      "formeStable": 0
+    },
+    "ST. PROVOOST": {
+      "courses30j": 12,
+      "victoires30j": 0,
+      "places30j": 2,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 16.7,
-      "nbChevaux": 5,
+      "nbChevaux": 11,
       "formeStable": 8.3
+    },
+    "R. JAJOLET": {
+      "courses30j": 4,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 4,
+      "formeStable": 0
     },
     "BAATI MOHAMMED": {
       "courses30j": 3,
@@ -2706,13 +3111,13 @@
       "formeStable": 12.5
     },
     "H.GHABRI": {
-      "courses30j": 5,
+      "courses30j": 7,
       "victoires30j": 0,
       "places30j": 4,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 80,
-      "nbChevaux": 5,
-      "formeStable": 40
+      "tauxPlace30j": 57.1,
+      "nbChevaux": 7,
+      "formeStable": 28.6
     },
     "D.WATRIGANT (S)": {
       "courses30j": 4,
@@ -2742,13 +3147,13 @@
       "formeStable": 7.1
     },
     "A.FOUASSIER": {
-      "courses30j": 13,
+      "courses30j": 15,
       "victoires30j": 2,
-      "places30j": 3,
-      "tauxVictoire30j": 15.4,
-      "tauxPlace30j": 23.1,
-      "nbChevaux": 11,
-      "formeStable": 42.3
+      "places30j": 4,
+      "tauxVictoire30j": 13.3,
+      "tauxPlace30j": 26.7,
+      "nbChevaux": 13,
+      "formeStable": 40
     },
     "B.DE KONINCK": {
       "courses30j": 3,
@@ -2769,13 +3174,13 @@
       "formeStable": 65
     },
     "L.PONTOIR (S)": {
-      "courses30j": 5,
+      "courses30j": 6,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 20,
-      "nbChevaux": 5,
-      "formeStable": 10
+      "tauxPlace30j": 16.7,
+      "nbChevaux": 6,
+      "formeStable": 8.3
     },
     "F.GUYADER (S)": {
       "courses30j": 5,
@@ -2832,13 +3237,13 @@
       "formeStable": 0
     },
     "CH.PLISSON (S)": {
-      "courses30j": 9,
+      "courses30j": 10,
       "victoires30j": 3,
       "places30j": 5,
-      "tauxVictoire30j": 33.3,
-      "tauxPlace30j": 55.6,
-      "nbChevaux": 9,
-      "formeStable": 94.4
+      "tauxVictoire30j": 30,
+      "tauxPlace30j": 50,
+      "nbChevaux": 10,
+      "formeStable": 85
     },
     "FX.BELVISI": {
       "courses30j": 3,
@@ -2877,13 +3282,13 @@
       "formeStable": 14.3
     },
     "JESUS": {
-      "courses30j": 3,
+      "courses30j": 4,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 33.3,
-      "nbChevaux": 3,
-      "formeStable": 16.7
+      "tauxPlace30j": 25,
+      "nbChevaux": 4,
+      "formeStable": 12.5
     },
     "A.WEST": {
       "courses30j": 4,
@@ -2922,22 +3327,22 @@
       "formeStable": 0
     },
     "G. BEAUFILS": {
-      "courses30j": 5,
+      "courses30j": 6,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 5,
+      "nbChevaux": 6,
       "formeStable": 0
     },
     "JULIEN RAFFESTIN": {
-      "courses30j": 9,
-      "victoires30j": 0,
-      "places30j": 1,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 11.1,
-      "nbChevaux": 9,
-      "formeStable": 5.6
+      "courses30j": 10,
+      "victoires30j": 1,
+      "places30j": 2,
+      "tauxVictoire30j": 10,
+      "tauxPlace30j": 20,
+      "nbChevaux": 10,
+      "formeStable": 30
     },
     "J. KOUBICHE": {
       "courses30j": 8,
@@ -2958,22 +3363,22 @@
       "formeStable": 0
     },
     "J.G. VAN EECKHAUTE": {
-      "courses30j": 5,
+      "courses30j": 6,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 5,
+      "nbChevaux": 6,
       "formeStable": 0
     },
     "L. FERRO": {
-      "courses30j": 3,
+      "courses30j": 4,
       "victoires30j": 1,
       "places30j": 2,
-      "tauxVictoire30j": 33.3,
-      "tauxPlace30j": 66.7,
-      "nbChevaux": 3,
-      "formeStable": 100
+      "tauxVictoire30j": 25,
+      "tauxPlace30j": 50,
+      "nbChevaux": 4,
+      "formeStable": 75
     },
     "A. LAURENT": {
       "courses30j": 7,
@@ -2985,13 +3390,13 @@
       "formeStable": 0
     },
     "J.M. CHAINEUX": {
-      "courses30j": 7,
+      "courses30j": 8,
       "victoires30j": 1,
       "places30j": 3,
-      "tauxVictoire30j": 14.3,
-      "tauxPlace30j": 42.9,
-      "nbChevaux": 7,
-      "formeStable": 50
+      "tauxVictoire30j": 12.5,
+      "tauxPlace30j": 37.5,
+      "nbChevaux": 8,
+      "formeStable": 43.8
     },
     "G. ROIG-BALAGUER": {
       "courses30j": 3,
@@ -3021,13 +3426,13 @@
       "formeStable": 25
     },
     "V. RENAULT": {
-      "courses30j": 5,
-      "victoires30j": 1,
-      "places30j": 1,
-      "tauxVictoire30j": 20,
-      "tauxPlace30j": 20,
-      "nbChevaux": 3,
-      "formeStable": 50
+      "courses30j": 8,
+      "victoires30j": 2,
+      "places30j": 2,
+      "tauxVictoire30j": 25,
+      "tauxPlace30j": 25,
+      "nbChevaux": 6,
+      "formeStable": 62.5
     },
     "PAVEL TAMSIN": {
       "courses30j": 8,
@@ -3047,14 +3452,32 @@
       "nbChevaux": 11,
       "formeStable": 54.5
     },
+    "G. LIZEE": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 2,
+      "formeStable": 0
+    },
     "S. ERNAULT": {
-      "courses30j": 4,
+      "courses30j": 5,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 25,
-      "nbChevaux": 4,
-      "formeStable": 12.5
+      "tauxPlace30j": 20,
+      "nbChevaux": 5,
+      "formeStable": 10
+    },
+    "V. VIEL": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 3,
+      "formeStable": 16.7
     },
     "CH. MIRANDEL": {
       "courses30j": 8,
@@ -3102,13 +3525,13 @@
       "formeStable": 8.3
     },
     "G. GILLOT": {
-      "courses30j": 6,
+      "courses30j": 9,
       "victoires30j": 0,
       "places30j": 3,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 50,
-      "nbChevaux": 6,
-      "formeStable": 25
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 9,
+      "formeStable": 16.7
     },
     "O. BIZOUX": {
       "courses30j": 3,
@@ -3137,6 +3560,15 @@
       "nbChevaux": 3,
       "formeStable": 16.7
     },
+    "ALEXIS PRAT": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 3,
+      "formeStable": 0
+    },
     "L. VERVA": {
       "courses30j": 3,
       "victoires30j": 1,
@@ -3145,6 +3577,15 @@
       "tauxPlace30j": 33.3,
       "nbChevaux": 3,
       "formeStable": 83.3
+    },
+    "M. IZZO": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 3,
+      "formeStable": 0
     },
     "GERMAN JOSE KNUTTSEN": {
       "courses30j": 3,
@@ -3244,6 +3685,15 @@
       "tauxPlace30j": 50,
       "nbChevaux": 5,
       "formeStable": 58.3
+    },
+    "OSCAR LUIS SILVA SEPULVEDA": {
+      "courses30j": 4,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 4,
+      "formeStable": 0
     },
     "XIMENO FRANCISCO URENDA": {
       "courses30j": 3,
@@ -3543,13 +3993,13 @@
       "formeStable": 12.5
     },
     "M.RULEC (S)": {
-      "courses30j": 4,
+      "courses30j": 5,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 25,
-      "nbChevaux": 4,
-      "formeStable": 12.5
+      "tauxPlace30j": 20,
+      "nbChevaux": 5,
+      "formeStable": 10
     },
     "MME S.LANSLOTS": {
       "courses30j": 5,
@@ -3568,6 +4018,15 @@
       "tauxPlace30j": 33.3,
       "nbChevaux": 3,
       "formeStable": 16.7
+    },
+    "B.AUDOUIN (S)": {
+      "courses30j": 4,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 25,
+      "nbChevaux": 4,
+      "formeStable": 12.5
     },
     "V.DEVILLARS": {
       "courses30j": 3,
@@ -3641,6 +4100,15 @@
       "nbChevaux": 5,
       "formeStable": 20
     },
+    "C.FEY (S)": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 3,
+      "formeStable": 16.7
+    },
     "MICKAEL CORMY": {
       "courses30j": 8,
       "victoires30j": 2,
@@ -3675,6 +4143,15 @@
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
       "nbChevaux": 3,
+      "formeStable": 0
+    },
+    "Y. VIDAL": {
+      "courses30j": 4,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 4,
       "formeStable": 0
     },
     "STÉ. ENT. ANTHONY TINTILLIER": {
@@ -3750,12 +4227,12 @@
       "formeStable": 16.7
     },
     "D. LECROQ": {
-      "courses30j": 4,
+      "courses30j": 6,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 4,
+      "nbChevaux": 5,
       "formeStable": 0
     },
     "M. DUPUIS": {
@@ -3768,15 +4245,24 @@
       "formeStable": 100
     },
     "L.M. DAVID": {
-      "courses30j": 7,
+      "courses30j": 8,
       "victoires30j": 1,
       "places30j": 1,
-      "tauxVictoire30j": 14.3,
-      "tauxPlace30j": 14.3,
-      "nbChevaux": 6,
-      "formeStable": 35.7
+      "tauxVictoire30j": 12.5,
+      "tauxPlace30j": 12.5,
+      "nbChevaux": 7,
+      "formeStable": 31.3
     },
     "TH. BONNARDEL": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 3,
+      "formeStable": 16.7
+    },
+    "CH. MOTTIER": {
       "courses30j": 3,
       "victoires30j": 0,
       "places30j": 1,
@@ -3948,13 +4434,22 @@
       "formeStable": 83.3
     },
     "FR.MONFORT (S)": {
-      "courses30j": 8,
+      "courses30j": 9,
       "victoires30j": 0,
       "places30j": 3,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 37.5,
-      "nbChevaux": 8,
-      "formeStable": 18.8
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 9,
+      "formeStable": 16.7
+    },
+    "J.MARION (S)": {
+      "courses30j": 4,
+      "victoires30j": 2,
+      "places30j": 2,
+      "tauxVictoire30j": 50,
+      "tauxPlace30j": 50,
+      "nbChevaux": 4,
+      "formeStable": 100
     },
     "MME L.RENAUD": {
       "courses30j": 3,
@@ -4046,16 +4541,7 @@
       "nbChevaux": 5,
       "formeStable": 10
     },
-    "STÉ. ENT. R. ET D. HUE": {
-      "courses30j": 5,
-      "victoires30j": 0,
-      "places30j": 2,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 40,
-      "nbChevaux": 5,
-      "formeStable": 20
-    },
-    "J.PH. DUBOIS": {
+    "J. ROBERT": {
       "courses30j": 3,
       "victoires30j": 0,
       "places30j": 0,
@@ -4064,23 +4550,41 @@
       "nbChevaux": 3,
       "formeStable": 0
     },
+    "STÉ. ENT. R. ET D. HUE": {
+      "courses30j": 6,
+      "victoires30j": 0,
+      "places30j": 2,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 6,
+      "formeStable": 16.7
+    },
+    "J.PH. DUBOIS": {
+      "courses30j": 5,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 5,
+      "formeStable": 0
+    },
     "P. BELLOCHE": {
-      "courses30j": 10,
+      "courses30j": 12,
       "victoires30j": 0,
       "places30j": 3,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 30,
-      "nbChevaux": 10,
-      "formeStable": 15
+      "tauxPlace30j": 25,
+      "nbChevaux": 12,
+      "formeStable": 12.5
     },
     "PIERRICK LE MOEL": {
-      "courses30j": 8,
+      "courses30j": 11,
       "victoires30j": 1,
-      "places30j": 1,
-      "tauxVictoire30j": 12.5,
-      "tauxPlace30j": 12.5,
-      "nbChevaux": 8,
-      "formeStable": 31.3
+      "places30j": 2,
+      "tauxVictoire30j": 9.1,
+      "tauxPlace30j": 18.2,
+      "nbChevaux": 11,
+      "formeStable": 27.3
     },
     "P. PLOQUIN": {
       "courses30j": 3,
@@ -4092,13 +4596,13 @@
       "formeStable": 16.7
     },
     "H.E. BONDO": {
-      "courses30j": 7,
+      "courses30j": 8,
       "victoires30j": 2,
       "places30j": 3,
-      "tauxVictoire30j": 28.6,
-      "tauxPlace30j": 42.9,
-      "nbChevaux": 7,
-      "formeStable": 78.6
+      "tauxVictoire30j": 25,
+      "tauxPlace30j": 37.5,
+      "nbChevaux": 8,
+      "formeStable": 68.8
     },
     "OLIVIER TOUVAIS": {
       "courses30j": 5,
@@ -4108,6 +4612,15 @@
       "tauxPlace30j": 40,
       "nbChevaux": 5,
       "formeStable": 20
+    },
+    "D. BROHIER": {
+      "courses30j": 4,
+      "victoires30j": 1,
+      "places30j": 1,
+      "tauxVictoire30j": 25,
+      "tauxPlace30j": 25,
+      "nbChevaux": 4,
+      "formeStable": 62.5
     },
     "J.L. DERSOIR": {
       "courses30j": 6,
@@ -4164,22 +4677,31 @@
       "formeStable": 25
     },
     "R. WESTERINK": {
-      "courses30j": 7,
+      "courses30j": 8,
       "victoires30j": 1,
       "places30j": 4,
-      "tauxVictoire30j": 14.3,
-      "tauxPlace30j": 57.1,
+      "tauxVictoire30j": 12.5,
+      "tauxPlace30j": 50,
       "nbChevaux": 7,
-      "formeStable": 57.1
+      "formeStable": 50
     },
     "D. CHERADAME": {
-      "courses30j": 3,
+      "courses30j": 4,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 33.3,
-      "nbChevaux": 2,
-      "formeStable": 16.7
+      "tauxPlace30j": 25,
+      "nbChevaux": 3,
+      "formeStable": 12.5
+    },
+    "A. RANDON": {
+      "courses30j": 4,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 25,
+      "nbChevaux": 4,
+      "formeStable": 12.5
     },
     "J.PH. RAFFEGEAU": {
       "courses30j": 8,
@@ -4191,31 +4713,31 @@
       "formeStable": 0
     },
     "MLLE A. MICHEL": {
-      "courses30j": 3,
+      "courses30j": 4,
       "victoires30j": 2,
       "places30j": 2,
-      "tauxVictoire30j": 66.7,
-      "tauxPlace30j": 66.7,
-      "nbChevaux": 3,
+      "tauxVictoire30j": 50,
+      "tauxPlace30j": 50,
+      "nbChevaux": 4,
       "formeStable": 100
     },
     "P.EDOUARD MARY": {
-      "courses30j": 3,
+      "courses30j": 4,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 33.3,
-      "nbChevaux": 3,
-      "formeStable": 16.7
+      "tauxPlace30j": 25,
+      "nbChevaux": 4,
+      "formeStable": 12.5
     },
     "E. VARIN": {
-      "courses30j": 3,
+      "courses30j": 10,
       "victoires30j": 1,
-      "places30j": 2,
-      "tauxVictoire30j": 33.3,
-      "tauxPlace30j": 66.7,
-      "nbChevaux": 3,
-      "formeStable": 100
+      "places30j": 3,
+      "tauxVictoire30j": 10,
+      "tauxPlace30j": 30,
+      "nbChevaux": 10,
+      "formeStable": 35
     },
     "ANTOINE TRIHOLLET": {
       "courses30j": 4,
@@ -4236,15 +4758,42 @@
       "formeStable": 100
     },
     "D. BETHOUART": {
-      "courses30j": 4,
+      "courses30j": 5,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 3,
+      "nbChevaux": 4,
       "formeStable": 0
     },
+    "F. HEON": {
+      "courses30j": 4,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 25,
+      "nbChevaux": 3,
+      "formeStable": 12.5
+    },
     "JOEL HALLAIS": {
+      "courses30j": 5,
+      "victoires30j": 0,
+      "places30j": 2,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 40,
+      "nbChevaux": 5,
+      "formeStable": 20
+    },
+    "G. DELACOUR": {
+      "courses30j": 6,
+      "victoires30j": 0,
+      "places30j": 2,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 6,
+      "formeStable": 16.7
+    },
+    "Y. DREUX": {
       "courses30j": 3,
       "victoires30j": 0,
       "places30j": 1,
@@ -4263,12 +4812,12 @@
       "formeStable": 41.7
     },
     "THÉO RADOUX": {
-      "courses30j": 3,
+      "courses30j": 4,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 2,
+      "nbChevaux": 3,
       "formeStable": 0
     },
     "Y.FOUIN (S)": {
@@ -4334,6 +4883,15 @@
       "nbChevaux": 3,
       "formeStable": 100
     },
+    "A.ESTRABOL": {
+      "courses30j": 3,
+      "victoires30j": 2,
+      "places30j": 2,
+      "tauxVictoire30j": 66.7,
+      "tauxPlace30j": 66.7,
+      "nbChevaux": 3,
+      "formeStable": 100
+    },
     "TJ.MARTINS NOVAIS": {
       "courses30j": 8,
       "victoires30j": 0,
@@ -4378,6 +4936,15 @@
       "tauxPlace30j": 14.3,
       "nbChevaux": 5,
       "formeStable": 7.1
+    },
+    "M.NICOLAU": {
+      "courses30j": 4,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 25,
+      "nbChevaux": 4,
+      "formeStable": 12.5
     },
     "M.ALONSO ROLDAN": {
       "courses30j": 6,
@@ -4604,7 +5171,43 @@
       "nbChevaux": 3,
       "formeStable": 16.7
     },
+    "R.W. DENECHERRE": {
+      "courses30j": 4,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 25,
+      "nbChevaux": 3,
+      "formeStable": 12.5
+    },
     "G. MARTY": {
+      "courses30j": 5,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 5,
+      "formeStable": 0
+    },
+    "C. GAZENGEL": {
+      "courses30j": 8,
+      "victoires30j": 2,
+      "places30j": 3,
+      "tauxVictoire30j": 25,
+      "tauxPlace30j": 37.5,
+      "nbChevaux": 7,
+      "formeStable": 68.8
+    },
+    "T. BORD": {
+      "courses30j": 7,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 14.3,
+      "nbChevaux": 7,
+      "formeStable": 7.1
+    },
+    "J.M. GODARD": {
       "courses30j": 3,
       "victoires30j": 0,
       "places30j": 0,
@@ -4612,24 +5215,6 @@
       "tauxPlace30j": 0,
       "nbChevaux": 3,
       "formeStable": 0
-    },
-    "C. GAZENGEL": {
-      "courses30j": 6,
-      "victoires30j": 2,
-      "places30j": 3,
-      "tauxVictoire30j": 33.3,
-      "tauxPlace30j": 50,
-      "nbChevaux": 6,
-      "formeStable": 91.7
-    },
-    "T. BORD": {
-      "courses30j": 4,
-      "victoires30j": 0,
-      "places30j": 1,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 25,
-      "nbChevaux": 4,
-      "formeStable": 12.5
     },
     "E. PRUDHON": {
       "courses30j": 4,
@@ -4650,22 +5235,58 @@
       "formeStable": 0
     },
     "L. LALANDE": {
-      "courses30j": 3,
+      "courses30j": 4,
       "victoires30j": 1,
-      "places30j": 2,
-      "tauxVictoire30j": 33.3,
-      "tauxPlace30j": 66.7,
+      "places30j": 3,
+      "tauxVictoire30j": 25,
+      "tauxPlace30j": 75,
       "nbChevaux": 3,
-      "formeStable": 100
+      "formeStable": 87.5
     },
     "J.M. LOURTET": {
-      "courses30j": 6,
+      "courses30j": 9,
       "victoires30j": 1,
-      "places30j": 4,
-      "tauxVictoire30j": 16.7,
-      "tauxPlace30j": 66.7,
+      "places30j": 5,
+      "tauxVictoire30j": 11.1,
+      "tauxPlace30j": 55.6,
+      "nbChevaux": 7,
+      "formeStable": 50
+    },
+    "D. CANNILLO": {
+      "courses30j": 6,
+      "victoires30j": 0,
+      "places30j": 2,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 33.3,
       "nbChevaux": 6,
-      "formeStable": 66.7
+      "formeStable": 16.7
+    },
+    "F. CLOZIER": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 2,
+      "formeStable": 0
+    },
+    "G. METZLER": {
+      "courses30j": 7,
+      "victoires30j": 1,
+      "places30j": 1,
+      "tauxVictoire30j": 14.3,
+      "tauxPlace30j": 14.3,
+      "nbChevaux": 6,
+      "formeStable": 35.7
+    },
+    "ET. CLOZIER": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 3,
+      "formeStable": 0
     },
     "CH. FLIRDEN": {
       "courses30j": 3,
@@ -4677,12 +5298,12 @@
       "formeStable": 0
     },
     "M. HANQUIER": {
-      "courses30j": 3,
+      "courses30j": 6,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 3,
+      "nbChevaux": 6,
       "formeStable": 0
     },
     "MATTHIAS CHOLLOUX": {
@@ -4695,33 +5316,60 @@
       "formeStable": 16.7
     },
     "M.X. CHARLOT": {
-      "courses30j": 5,
+      "courses30j": 6,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 20,
-      "nbChevaux": 5,
-      "formeStable": 10
+      "tauxPlace30j": 16.7,
+      "nbChevaux": 6,
+      "formeStable": 8.3
     },
     "D. CRESPEL": {
-      "courses30j": 8,
+      "courses30j": 11,
       "victoires30j": 2,
       "places30j": 3,
-      "tauxVictoire30j": 25,
-      "tauxPlace30j": 37.5,
-      "nbChevaux": 6,
-      "formeStable": 68.8
+      "tauxVictoire30j": 18.2,
+      "tauxPlace30j": 27.3,
+      "nbChevaux": 9,
+      "formeStable": 50
     },
     "D. LEBOIS": {
-      "courses30j": 4,
+      "courses30j": 8,
       "victoires30j": 0,
       "places30j": 2,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 50,
-      "nbChevaux": 4,
-      "formeStable": 25
+      "tauxPlace30j": 25,
+      "nbChevaux": 6,
+      "formeStable": 12.5
+    },
+    "M. AUVRAY": {
+      "courses30j": 4,
+      "victoires30j": 1,
+      "places30j": 3,
+      "tauxVictoire30j": 25,
+      "tauxPlace30j": 75,
+      "nbChevaux": 3,
+      "formeStable": 87.5
     },
     "CHARLES BOUVIER": {
+      "courses30j": 9,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 11.1,
+      "nbChevaux": 9,
+      "formeStable": 5.6
+    },
+    "R. DEBUE": {
+      "courses30j": 7,
+      "victoires30j": 1,
+      "places30j": 3,
+      "tauxVictoire30j": 14.3,
+      "tauxPlace30j": 42.9,
+      "nbChevaux": 6,
+      "formeStable": 50
+    },
+    "J. FOIN": {
       "courses30j": 7,
       "victoires30j": 0,
       "places30j": 1,
@@ -4730,14 +5378,14 @@
       "nbChevaux": 7,
       "formeStable": 7.1
     },
-    "J. FOIN": {
-      "courses30j": 6,
-      "victoires30j": 0,
-      "places30j": 1,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 16.7,
-      "nbChevaux": 6,
-      "formeStable": 8.3
+    "M. CRIADO": {
+      "courses30j": 4,
+      "victoires30j": 1,
+      "places30j": 3,
+      "tauxVictoire30j": 25,
+      "tauxPlace30j": 75,
+      "nbChevaux": 4,
+      "formeStable": 87.5
     },
     "B. GOETZ": {
       "courses30j": 9,
@@ -4749,22 +5397,31 @@
       "formeStable": 0
     },
     "Y. HUREL": {
-      "courses30j": 8,
+      "courses30j": 11,
       "victoires30j": 2,
-      "places30j": 3,
-      "tauxVictoire30j": 25,
-      "tauxPlace30j": 37.5,
-      "nbChevaux": 6,
-      "formeStable": 68.8
+      "places30j": 4,
+      "tauxVictoire30j": 18.2,
+      "tauxPlace30j": 36.4,
+      "nbChevaux": 7,
+      "formeStable": 54.5
     },
     "X. DECAUDIN": {
-      "courses30j": 7,
+      "courses30j": 9,
       "victoires30j": 1,
-      "places30j": 2,
-      "tauxVictoire30j": 14.3,
-      "tauxPlace30j": 28.6,
-      "nbChevaux": 6,
-      "formeStable": 42.9
+      "places30j": 3,
+      "tauxVictoire30j": 11.1,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 7,
+      "formeStable": 38.9
+    },
+    "PIERRE GERAY": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 3,
+      "formeStable": 0
     },
     "B. VANACKER": {
       "courses30j": 3,
@@ -4928,7 +5585,25 @@
       "nbChevaux": 4,
       "formeStable": 0
     },
+    "F. LAGADEUC": {
+      "courses30j": 4,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 4,
+      "formeStable": 0
+    },
     "MME BETTY REMY": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 2,
+      "formeStable": 0
+    },
+    "J.PH. GUIBOUT": {
       "courses30j": 3,
       "victoires30j": 0,
       "places30j": 0,
@@ -4955,6 +5630,24 @@
       "nbChevaux": 3,
       "formeStable": 0
     },
+    "L. PESCHET": {
+      "courses30j": 3,
+      "victoires30j": 1,
+      "places30j": 1,
+      "tauxVictoire30j": 33.3,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 3,
+      "formeStable": 83.3
+    },
+    "R. BRETON": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 3,
+      "formeStable": 0
+    },
     "STÉ. ENT. EMMANUEL ALLARD": {
       "courses30j": 4,
       "victoires30j": 0,
@@ -4965,69 +5658,87 @@
       "formeStable": 12.5
     },
     "PH. ALLAIRE": {
-      "courses30j": 3,
+      "courses30j": 5,
       "victoires30j": 0,
       "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 33.3,
-      "nbChevaux": 3,
-      "formeStable": 16.7
+      "tauxPlace30j": 20,
+      "nbChevaux": 4,
+      "formeStable": 10
     },
     "RAUL ANDRES MONTESINO SERRANO": {
-      "courses30j": 5,
+      "courses30j": 8,
       "victoires30j": 1,
-      "places30j": 3,
-      "tauxVictoire30j": 20,
-      "tauxPlace30j": 60,
-      "nbChevaux": 5,
-      "formeStable": 70
+      "places30j": 4,
+      "tauxVictoire30j": 12.5,
+      "tauxPlace30j": 50,
+      "nbChevaux": 8,
+      "formeStable": 50
     },
     "JOSE ARAYA BAHAMONDES": {
-      "courses30j": 6,
-      "victoires30j": 1,
-      "places30j": 3,
-      "tauxVictoire30j": 16.7,
-      "tauxPlace30j": 50,
-      "nbChevaux": 5,
-      "formeStable": 58.3
+      "courses30j": 18,
+      "victoires30j": 2,
+      "places30j": 8,
+      "tauxVictoire30j": 11.1,
+      "tauxPlace30j": 44.4,
+      "nbChevaux": 16,
+      "formeStable": 44.4
     },
     "ROBERTO CARLOS TOLEDO": {
-      "courses30j": 3,
+      "courses30j": 5,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 3,
+      "nbChevaux": 5,
       "formeStable": 0
     },
     "CRISTOBAL SEBASTIAN GONZALEZ MOR": {
-      "courses30j": 4,
-      "victoires30j": 0,
-      "places30j": 0,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 0,
-      "nbChevaux": 4,
-      "formeStable": 0
+      "courses30j": 9,
+      "victoires30j": 1,
+      "places30j": 1,
+      "tauxVictoire30j": 11.1,
+      "tauxPlace30j": 11.1,
+      "nbChevaux": 8,
+      "formeStable": 27.8
     },
     "ANDRES DELFIN BERNAL GONZALEZ": {
-      "courses30j": 3,
-      "victoires30j": 0,
-      "places30j": 1,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 33.3,
-      "nbChevaux": 3,
-      "formeStable": 16.7
+      "courses30j": 5,
+      "victoires30j": 1,
+      "places30j": 2,
+      "tauxVictoire30j": 20,
+      "tauxPlace30j": 40,
+      "nbChevaux": 5,
+      "formeStable": 60
     },
     "ALBERTO OSCAR GONZALEZ ROJAS": {
-      "courses30j": 4,
+      "courses30j": 5,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 4,
+      "nbChevaux": 5,
       "formeStable": 0
     },
     "HECTOR GUILLERMO MANRIQUEZ FERNA": {
+      "courses30j": 5,
+      "victoires30j": 0,
+      "places30j": 2,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 40,
+      "nbChevaux": 4,
+      "formeStable": 20
+    },
+    "CLAUDIO MARCELO NAVARRO ARROYO": {
+      "courses30j": 5,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 5,
+      "formeStable": 0
+    },
+    "OSCAR JAVIER DONATE SILVERA": {
       "courses30j": 3,
       "victoires30j": 0,
       "places30j": 1,
@@ -5046,13 +5757,22 @@
       "formeStable": 100
     },
     "JOSE MIGUEL ALVAREZ DONOSO": {
-      "courses30j": 5,
+      "courses30j": 6,
       "victoires30j": 0,
-      "places30j": 0,
+      "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 0,
+      "tauxPlace30j": 16.7,
+      "nbChevaux": 6,
+      "formeStable": 8.3
+    },
+    "OSCAR FELIPE GONZALEZ SOBARZO": {
+      "courses30j": 5,
+      "victoires30j": 1,
+      "places30j": 1,
+      "tauxVictoire30j": 20,
+      "tauxPlace30j": 20,
       "nbChevaux": 5,
-      "formeStable": 0
+      "formeStable": 50
     },
     "MANUEL ALBERTO VELARDE": {
       "courses30j": 6,
@@ -5063,31 +5783,40 @@
       "nbChevaux": 5,
       "formeStable": 16.7
     },
+    "ALEXIS RAMON PEREZ DUARTE": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 3,
+      "formeStable": 16.7
+    },
     "ALDO RODOLFO PARRA": {
+      "courses30j": 11,
+      "victoires30j": 0,
+      "places30j": 2,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 18.2,
+      "nbChevaux": 9,
+      "formeStable": 9.1
+    },
+    "JOHN RICARDO PINOCHET PONCE": {
+      "courses30j": 5,
+      "victoires30j": 1,
+      "places30j": 1,
+      "tauxVictoire30j": 20,
+      "tauxPlace30j": 20,
+      "nbChevaux": 5,
+      "formeStable": 50
+    },
+    "DOMINGO ENRIQUE MATTE": {
       "courses30j": 5,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 4,
-      "formeStable": 0
-    },
-    "JOHN RICARDO PINOCHET PONCE": {
-      "courses30j": 4,
-      "victoires30j": 1,
-      "places30j": 1,
-      "tauxVictoire30j": 25,
-      "tauxPlace30j": 25,
-      "nbChevaux": 4,
-      "formeStable": 62.5
-    },
-    "DOMINGO ENRIQUE MATTE": {
-      "courses30j": 3,
-      "victoires30j": 0,
-      "places30j": 0,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 0,
-      "nbChevaux": 3,
+      "nbChevaux": 5,
       "formeStable": 0
     },
     "THEODORE CACHELY": {
@@ -5100,22 +5829,22 @@
       "formeStable": 50
     },
     "PATRICIO BAEZA ALAMOS": {
-      "courses30j": 14,
-      "victoires30j": 1,
-      "places30j": 4,
-      "tauxVictoire30j": 7.1,
-      "tauxPlace30j": 28.6,
-      "nbChevaux": 14,
-      "formeStable": 28.6
+      "courses30j": 30,
+      "victoires30j": 2,
+      "places30j": 11,
+      "tauxVictoire30j": 6.7,
+      "tauxPlace30j": 36.7,
+      "nbChevaux": 30,
+      "formeStable": 31.7
     },
     "CLAUDIO ALAMIRO BERNAL GONZALEZ": {
-      "courses30j": 4,
+      "courses30j": 7,
       "victoires30j": 0,
-      "places30j": 0,
+      "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 0,
-      "nbChevaux": 3,
-      "formeStable": 0
+      "tauxPlace30j": 14.3,
+      "nbChevaux": 6,
+      "formeStable": 7.1
     },
     "MARIO ALBANO APABLAZA GAVILAN": {
       "courses30j": 3,
@@ -5127,22 +5856,31 @@
       "formeStable": 100
     },
     "CRISTIAN ANTONIO URBINA ROJAS": {
-      "courses30j": 3,
-      "victoires30j": 0,
-      "places30j": 2,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 66.7,
-      "nbChevaux": 3,
-      "formeStable": 33.3
+      "courses30j": 7,
+      "victoires30j": 1,
+      "places30j": 3,
+      "tauxVictoire30j": 14.3,
+      "tauxPlace30j": 42.9,
+      "nbChevaux": 7,
+      "formeStable": 50
     },
     "RODRIGO ANDRES SANCHEZ QUINTEROS": {
-      "courses30j": 3,
+      "courses30j": 6,
       "victoires30j": 0,
-      "places30j": 0,
+      "places30j": 1,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 0,
-      "nbChevaux": 3,
-      "formeStable": 0
+      "tauxPlace30j": 16.7,
+      "nbChevaux": 6,
+      "formeStable": 8.3
+    },
+    "SERGIO EDUARDO MORALES": {
+      "courses30j": 5,
+      "victoires30j": 1,
+      "places30j": 1,
+      "tauxVictoire30j": 20,
+      "tauxPlace30j": 20,
+      "nbChevaux": 5,
+      "formeStable": 50
     },
     "M.PLANARD": {
       "courses30j": 5,
@@ -5152,6 +5890,15 @@
       "tauxPlace30j": 0,
       "nbChevaux": 4,
       "formeStable": 0
+    },
+    "Q. FLEURY": {
+      "courses30j": 3,
+      "victoires30j": 1,
+      "places30j": 2,
+      "tauxVictoire30j": 33.3,
+      "tauxPlace30j": 66.7,
+      "nbChevaux": 2,
+      "formeStable": 100
     },
     "J.ET. THUET": {
       "courses30j": 3,
@@ -5163,13 +5910,13 @@
       "formeStable": 83.3
     },
     "I.P. BLANCHON": {
-      "courses30j": 3,
+      "courses30j": 5,
       "victoires30j": 1,
       "places30j": 1,
-      "tauxVictoire30j": 33.3,
-      "tauxPlace30j": 33.3,
-      "nbChevaux": 2,
-      "formeStable": 83.3
+      "tauxVictoire30j": 20,
+      "tauxPlace30j": 20,
+      "nbChevaux": 4,
+      "formeStable": 50
     },
     "F. MARTY": {
       "courses30j": 5,
@@ -5179,6 +5926,15 @@
       "tauxPlace30j": 20,
       "nbChevaux": 5,
       "formeStable": 10
+    },
+    "F. RODES": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 3,
+      "formeStable": 16.7
     },
     "MME G.RARICK": {
       "courses30j": 4,
@@ -5190,13 +5946,13 @@
       "formeStable": 0
     },
     "F.BRESSON (S)": {
-      "courses30j": 4,
+      "courses30j": 5,
       "victoires30j": 0,
       "places30j": 2,
       "tauxVictoire30j": 0,
-      "tauxPlace30j": 50,
-      "nbChevaux": 4,
-      "formeStable": 25
+      "tauxPlace30j": 40,
+      "nbChevaux": 5,
+      "formeStable": 20
     },
     "ADRIAN EMILIO REISENAUER": {
       "courses30j": 3,
@@ -5225,6 +5981,15 @@
       "nbChevaux": 3,
       "formeStable": 16.7
     },
+    "JULES LEROULLEY": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 3,
+      "formeStable": 0
+    },
     "F. SENET": {
       "courses30j": 3,
       "victoires30j": 0,
@@ -5234,13 +5999,22 @@
       "nbChevaux": 3,
       "formeStable": 0
     },
-    "D. BONNE": {
+    "CH.A. MALLET": {
       "courses30j": 3,
+      "victoires30j": 1,
+      "places30j": 2,
+      "tauxVictoire30j": 33.3,
+      "tauxPlace30j": 66.7,
+      "nbChevaux": 3,
+      "formeStable": 100
+    },
+    "D. BONNE": {
+      "courses30j": 5,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
-      "nbChevaux": 3,
+      "nbChevaux": 5,
       "formeStable": 0
     },
     "V. MARTENS": {
@@ -5251,6 +6025,15 @@
       "tauxPlace30j": 20,
       "nbChevaux": 5,
       "formeStable": 50
+    },
+    "L. CHARBONNEL": {
+      "courses30j": 4,
+      "victoires30j": 1,
+      "places30j": 1,
+      "tauxVictoire30j": 25,
+      "tauxPlace30j": 25,
+      "nbChevaux": 4,
+      "formeStable": 62.5
     },
     "D.P. TESSELAAR": {
       "courses30j": 5,
@@ -5432,6 +6215,15 @@
       "nbChevaux": 4,
       "formeStable": 0
     },
+    "S.ZULIANI (S)": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 3,
+      "formeStable": 16.7
+    },
     "R G CRICHTON": {
       "courses30j": 3,
       "victoires30j": 2,
@@ -5440,6 +6232,15 @@
       "tauxPlace30j": 66.7,
       "nbChevaux": 3,
       "formeStable": 100
+    },
+    "G. CURENS": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 3,
+      "formeStable": 16.7
     },
     "F.HAYERES (S)": {
       "courses30j": 3,
@@ -5486,6 +6287,33 @@
       "nbChevaux": 4,
       "formeStable": 62.5
     },
+    "J. CHAVATTE": {
+      "courses30j": 4,
+      "victoires30j": 1,
+      "places30j": 1,
+      "tauxVictoire30j": 25,
+      "tauxPlace30j": 25,
+      "nbChevaux": 4,
+      "formeStable": 62.5
+    },
+    "A. BARRE": {
+      "courses30j": 4,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 25,
+      "nbChevaux": 4,
+      "formeStable": 12.5
+    },
+    "CH. FEYTE": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 3,
+      "formeStable": 0
+    },
     "T. LE BELLER": {
       "courses30j": 3,
       "victoires30j": 0,
@@ -5505,31 +6333,31 @@
       "formeStable": 42.9
     },
     "CARLOS AUGUSTO RABY VARGAS": {
-      "courses30j": 3,
-      "victoires30j": 0,
-      "places30j": 2,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 66.7,
-      "nbChevaux": 3,
-      "formeStable": 33.3
+      "courses30j": 5,
+      "victoires30j": 1,
+      "places30j": 3,
+      "tauxVictoire30j": 20,
+      "tauxPlace30j": 60,
+      "nbChevaux": 5,
+      "formeStable": 70
     },
     "JULIO CESAR ORELLANA RODRIGUEZ": {
-      "courses30j": 4,
-      "victoires30j": 0,
-      "places30j": 0,
-      "tauxVictoire30j": 0,
-      "tauxPlace30j": 0,
-      "nbChevaux": 4,
-      "formeStable": 0
+      "courses30j": 8,
+      "victoires30j": 1,
+      "places30j": 3,
+      "tauxVictoire30j": 12.5,
+      "tauxPlace30j": 37.5,
+      "nbChevaux": 8,
+      "formeStable": 43.8
     },
     "HERNAN EDUARDO ULLOA PEREZ": {
-      "courses30j": 3,
-      "victoires30j": 0,
-      "places30j": 1,
-      "tauxVictoire30j": 0,
+      "courses30j": 9,
+      "victoires30j": 1,
+      "places30j": 3,
+      "tauxVictoire30j": 11.1,
       "tauxPlace30j": 33.3,
-      "nbChevaux": 3,
-      "formeStable": 16.7
+      "nbChevaux": 9,
+      "formeStable": 38.9
     },
     "B.J. CREBAS": {
       "courses30j": 3,
@@ -5540,13 +6368,22 @@
       "nbChevaux": 3,
       "formeStable": 16.7
     },
-    "JEROME DAVID": {
+    "MLLE CH. DELAMARE": {
       "courses30j": 3,
       "victoires30j": 0,
       "places30j": 0,
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
       "nbChevaux": 3,
+      "formeStable": 0
+    },
+    "JEROME DAVID": {
+      "courses30j": 5,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 5,
       "formeStable": 0
     },
     "G. LEFEBVRE": {
@@ -5557,6 +6394,24 @@
       "tauxPlace30j": 0,
       "nbChevaux": 4,
       "formeStable": 0
+    },
+    "G. MOINON": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 3,
+      "formeStable": 16.7
+    },
+    "B. BLACHET": {
+      "courses30j": 6,
+      "victoires30j": 0,
+      "places30j": 3,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 50,
+      "nbChevaux": 6,
+      "formeStable": 25
     },
     "S KLESARIS": {
       "courses30j": 3,
@@ -5646,6 +6501,96 @@
       "tauxVictoire30j": 0,
       "tauxPlace30j": 0,
       "nbChevaux": 3,
+      "formeStable": 0
+    },
+    "ANDREAS SUBORICS": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 3,
+      "formeStable": 16.7
+    },
+    "ANDREAS WOEHLER": {
+      "courses30j": 4,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 25,
+      "nbChevaux": 4,
+      "formeStable": 12.5
+    },
+    "KATJA GERNREICH": {
+      "courses30j": 4,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 25,
+      "nbChevaux": 4,
+      "formeStable": 12.5
+    },
+    "C. CHENU": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 1,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 3,
+      "formeStable": 16.7
+    },
+    "PETER FERNIE": {
+      "courses30j": 6,
+      "victoires30j": 1,
+      "places30j": 2,
+      "tauxVictoire30j": 16.7,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 6,
+      "formeStable": 50
+    },
+    "BROCK LEWTHWAITE": {
+      "courses30j": 3,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 3,
+      "formeStable": 0
+    },
+    "PAUL TAPPER": {
+      "courses30j": 6,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 6,
+      "formeStable": 0
+    },
+    "HELEN HARDING": {
+      "courses30j": 4,
+      "victoires30j": 1,
+      "places30j": 1,
+      "tauxVictoire30j": 25,
+      "tauxPlace30j": 25,
+      "nbChevaux": 4,
+      "formeStable": 62.5
+    },
+    "A. TESSANDIER": {
+      "courses30j": 3,
+      "victoires30j": 1,
+      "places30j": 1,
+      "tauxVictoire30j": 33.3,
+      "tauxPlace30j": 33.3,
+      "nbChevaux": 3,
+      "formeStable": 83.3
+    },
+    "ALEJANDRO PATRICIO PADOVANI ESTA": {
+      "courses30j": 4,
+      "victoires30j": 0,
+      "places30j": 0,
+      "tauxVictoire30j": 0,
+      "tauxPlace30j": 0,
+      "nbChevaux": 4,
       "formeStable": 0
     }
   }
