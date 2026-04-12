@@ -1,7 +1,7 @@
 {
   "hippodrome": "MONT DE MARSAN",
   "type_reunion": "HAIE",
-  "date_extraction": "2026-04-12T14:21:19.157317",
+  "date_extraction": "2026-04-12T14:25:33.183269",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/12042026/R13",
   "courses": [
     {
@@ -554,7 +554,56 @@
           "nb_places": 9,
           "cote": 5.6,
           "cote_tendance": "+",
-          "cote_reference": 4.2
+          "cote_reference": 4.2,
+          "arrivee": 1
+        },
+        {
+          "n°": "6",
+          "cheval": "BENI GODS H.PU. 10 a.",
+          "cheval_url": "",
+          "père_mère": "Par: SPIRIT ONE et BRIERE (KAHYASI)",
+          "corde": "",
+          "couleurs": "",
+          "propriétaire": "MME H.CADOT",
+          "entraineur": "L.CADOT",
+          "éleveurs": "MR OLIVIER TRIBOIRE",
+          "jockey": "A.GLEYROUX",
+          "poids": "67 kg",
+          "gains": "7826500",
+          "musique": "3cAs(25)Ac8c4s2s3c1c5s",
+          "valeur": "67.0",
+          "equipement(s)": "A",
+          "nb_courses": 45,
+          "nb_victoires": 3,
+          "nb_places": 28,
+          "cote": 6.8,
+          "cote_tendance": "+",
+          "cote_reference": 15.0,
+          "arrivee": 2
+        },
+        {
+          "n°": "7",
+          "cheval": "GESKO H.PU. 10 a.",
+          "cheval_url": "",
+          "père_mère": "Par: BALKO et ALVINA (SUNDAY BREAK)",
+          "corde": "",
+          "couleurs": "",
+          "propriétaire": "MME S.MESTRIES",
+          "entraineur": "MME S.MESTRIES",
+          "éleveurs": "MR JEAN-ANDRE QUESNY",
+          "jockey": "G.RICHARD",
+          "poids": "67 kg",
+          "gains": "4830200",
+          "musique": "4s0h(25)3s2s5s7h(24)5s2s",
+          "valeur": "67.0",
+          "equipement(s)": "",
+          "nb_courses": 39,
+          "nb_victoires": 1,
+          "nb_places": 25,
+          "cote": 12.0,
+          "cote_tendance": "+",
+          "cote_reference": 11.0,
+          "arrivee": 3
         },
         {
           "n°": "2",
@@ -647,57 +696,12 @@
           "cote": 5.2,
           "cote_tendance": "",
           "cote_reference": 8.4
-        },
-        {
-          "n°": "6",
-          "cheval": "BENI GODS H.PU. 10 a.",
-          "cheval_url": "",
-          "père_mère": "Par: SPIRIT ONE et BRIERE (KAHYASI)",
-          "corde": "",
-          "couleurs": "",
-          "propriétaire": "MME H.CADOT",
-          "entraineur": "L.CADOT",
-          "éleveurs": "MR OLIVIER TRIBOIRE",
-          "jockey": "A.GLEYROUX",
-          "poids": "67 kg",
-          "gains": "7826500",
-          "musique": "3cAs(25)Ac8c4s2s3c1c5s",
-          "valeur": "67.0",
-          "equipement(s)": "A",
-          "nb_courses": 45,
-          "nb_victoires": 3,
-          "nb_places": 28,
-          "cote": 6.8,
-          "cote_tendance": "+",
-          "cote_reference": 15.0
-        },
-        {
-          "n°": "7",
-          "cheval": "GESKO H.PU. 10 a.",
-          "cheval_url": "",
-          "père_mère": "Par: BALKO et ALVINA (SUNDAY BREAK)",
-          "corde": "",
-          "couleurs": "",
-          "propriétaire": "MME S.MESTRIES",
-          "entraineur": "MME S.MESTRIES",
-          "éleveurs": "MR JEAN-ANDRE QUESNY",
-          "jockey": "G.RICHARD",
-          "poids": "67 kg",
-          "gains": "4830200",
-          "musique": "4s0h(25)3s2s5s7h(24)5s2s",
-          "valeur": "67.0",
-          "equipement(s)": "",
-          "nb_courses": 39,
-          "nb_victoires": 1,
-          "nb_places": 25,
-          "cote": 12.0,
-          "cote_tendance": "+",
-          "cote_reference": 11.0
         }
       ],
       "typePiste": "HERBE",
       "terrain": "Bon",
-      "penetrometre": "3,2"
+      "penetrometre": "3,2",
+      "arrivee_definitive": false
     },
     {
       "nom": "PRIX ASSOCIATION DES COURSES DE MONTIGNAC",
@@ -726,8 +730,8 @@
           "nb_courses": 13,
           "nb_victoires": 3,
           "nb_places": 5,
-          "cote": 4.2,
-          "cote_tendance": "",
+          "cote": 3.5,
+          "cote_tendance": "-",
           "cote_reference": 3.9
         },
         {
@@ -749,8 +753,8 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 2.8,
-          "cote_tendance": "",
+          "cote": 3.5,
+          "cote_tendance": "+",
           "cote_reference": 2.3
         },
         {
@@ -772,8 +776,8 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 12.0,
-          "cote_tendance": "",
+          "cote": 11.0,
+          "cote_tendance": "+",
           "cote_reference": 18.0
         },
         {
@@ -795,8 +799,8 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 10.0,
-          "cote_tendance": "",
+          "cote": 11.0,
+          "cote_tendance": "-",
           "cote_reference": 27.0
         },
         {
@@ -818,8 +822,8 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 5.4,
-          "cote_tendance": "",
+          "cote": 7.0,
+          "cote_tendance": "+",
           "cote_reference": 6.1
         },
         {
@@ -841,8 +845,8 @@
           "nb_courses": 7,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 12.0,
-          "cote_tendance": "",
+          "cote": 14.0,
+          "cote_tendance": "+",
           "cote_reference": 18.0
         },
         {
@@ -864,8 +868,8 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 8.5,
-          "cote_tendance": "",
+          "cote": 5.8,
+          "cote_tendance": "+",
           "cote_reference": 6.9
         }
       ],
