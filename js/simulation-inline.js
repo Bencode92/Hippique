@@ -641,8 +641,9 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Récupérer les chevaux sélectionnés
             const checkboxes = document.querySelectorAll('.horse-select-checkbox:checked');
-            if (checkboxes.length < 2) {
-                throw new Error('Vous devez sélectionner au moins 2 chevaux');
+            const minChevaux = (strategy === 'couple') ? 2 : (strategy === 'tierce') ? 3 : (strategy === 'quinte') ? 5 : 2;
+            if (checkboxes.length < minChevaux) {
+                throw new Error(`Vous devez sélectionner au moins ${minChevaux} chevaux pour ${strategy}`);
             }
             
             // Récupérer les indices des chevaux sélectionnés
@@ -807,11 +808,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function displayResults(result, totalBet, selectedParticipants) {
-        // Mettre à jour les valeurs de résumé
-        document.getElementById('inlineMinGain').textContent = `+${result.gain_minimum.toFixed(2)} €`;
-        document.getElementById('inlineAvgGain').textContent = `+${result.gain_moyen.toFixed(2)} €`;
-        document.getElementById('inlineSelectedHorses').textContent = result.chevaux.length;
-        document.getElementById('inlineTotalStake').textContent = `${totalBet.toFixed(2)} €`;
+        // Mettre à jour les valeurs de résumé (avec checks null)
+        const elMinGain = document.getElementById('inlineMinGain');
+        const elAvgGain = document.getElementById('inlineAvgGain');
+        const elSelected = document.getElementById('inlineSelectedHorses');
+        const elStake = document.getElementById('inlineTotalStake');
+        if (elMinGain) elMinGain.textContent = `+${(result.gain_minimum || 0).toFixed(2)} €`;
+        if (elAvgGain) elAvgGain.textContent = `+${(result.gain_moyen || 0).toFixed(2)} €`;
+        if (elSelected) elSelected.textContent = result.chevaux?.length || 0;
+        if (elStake) elStake.textContent = `${totalBet.toFixed(2)} €`;
         
         // Créer une map des participants par nom de cheval pour un accès facile
         const participantsMap = {};
