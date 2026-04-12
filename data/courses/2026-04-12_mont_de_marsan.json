@@ -1,7 +1,7 @@
 {
   "hippodrome": "MONT DE MARSAN",
   "type_reunion": "HAIE",
-  "date_extraction": "2026-04-12T14:58:18.278290",
+  "date_extraction": "2026-04-12T15:01:59.843584",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/12042026/R13",
   "courses": [
     {
@@ -787,6 +787,30 @@
           "arrivee": 3
         },
         {
+          "n°": "6",
+          "cheval": "LA LETTRE F.PU. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: VAN BEETHOVEN et PSYCHE (AMERICAN POST)",
+          "corde": "",
+          "couleurs": "",
+          "propriétaire": "B.B.MONTZEY (S)",
+          "entraineur": "B.MONTZEY (S)",
+          "éleveurs": "EARL DE PUY BOUILLARD",
+          "jockey": "A.BEAUDOIRE",
+          "poids": "66 kg",
+          "gains": "788500",
+          "musique": "6h3h(25)5hAhJh2h5h0p0p",
+          "valeur": "66.0",
+          "equipement(s)": "",
+          "nb_courses": 7,
+          "nb_victoires": 0,
+          "nb_places": 4,
+          "cote": 6.5,
+          "cote_tendance": "",
+          "cote_reference": 18.0,
+          "arrivee": 4
+        },
+        {
           "n°": "1",
           "cheval": "ZE WEEKEND H.PU. 4 a.",
           "cheval_url": "",
@@ -807,30 +831,8 @@
           "nb_places": 5,
           "cote": 2.5,
           "cote_tendance": "+",
-          "cote_reference": 3.9
-        },
-        {
-          "n°": "3",
-          "cheval": "BIAK LESCRIBAA F.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: ROBIN OF NAVAN et DELLA VALLE (LANDO)",
-          "corde": "",
-          "couleurs": "",
-          "propriétaire": "P.LAFITTE",
-          "entraineur": "J.PLOUGANOU (S)",
-          "éleveurs": "MME LOUIS LAFITTE",
-          "jockey": "D.RODRIGUEZ",
-          "poids": "70 kg",
-          "gains": "",
-          "musique": "(25)6p8p5p0p9p9p1p2p2p",
-          "valeur": "70.0",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0,
-          "cote": 7.9,
-          "cote_tendance": "",
-          "cote_reference": 18.0
+          "cote_reference": 3.9,
+          "arrivee": 5
         },
         {
           "n°": "4",
@@ -853,36 +855,38 @@
           "nb_places": 1,
           "cote": 11.0,
           "cote_tendance": "-",
-          "cote_reference": 27.0
+          "cote_reference": 27.0,
+          "arrivee": 6
         },
         {
-          "n°": "6",
-          "cheval": "LA LETTRE F.PU. 4 a.",
+          "n°": "3",
+          "cheval": "BIAK LESCRIBAA F.PU. 4 a.",
           "cheval_url": "",
-          "père_mère": "Par: VAN BEETHOVEN et PSYCHE (AMERICAN POST)",
+          "père_mère": "Par: ROBIN OF NAVAN et DELLA VALLE (LANDO)",
           "corde": "",
           "couleurs": "",
-          "propriétaire": "B.B.MONTZEY (S)",
-          "entraineur": "B.MONTZEY (S)",
-          "éleveurs": "EARL DE PUY BOUILLARD",
-          "jockey": "A.BEAUDOIRE",
-          "poids": "66 kg",
-          "gains": "788500",
-          "musique": "6h3h(25)5hAhJh2h5h0p0p",
-          "valeur": "66.0",
+          "propriétaire": "P.LAFITTE",
+          "entraineur": "J.PLOUGANOU (S)",
+          "éleveurs": "MME LOUIS LAFITTE",
+          "jockey": "D.RODRIGUEZ",
+          "poids": "70 kg",
+          "gains": "",
+          "musique": "(25)6p8p5p0p9p9p1p2p2p",
+          "valeur": "70.0",
           "equipement(s)": "",
-          "nb_courses": 7,
+          "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 4,
-          "cote": 6.5,
+          "nb_places": 0,
+          "cote": 7.9,
           "cote_tendance": "",
-          "cote_reference": 18.0
+          "cote_reference": 18.0,
+          "arrivee": 7
         }
       ],
       "typePiste": "HERBE",
       "terrain": "Bon",
       "penetrometre": "3,2",
-      "arrivee_definitive": false
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX MISTER BOUM",
@@ -912,7 +916,7 @@
           "nb_victoires": 8,
           "nb_places": 18,
           "cote": 3.7,
-          "cote_tendance": "+",
+          "cote_tendance": "",
           "cote_reference": 4.1
         },
         {
@@ -934,8 +938,8 @@
           "nb_courses": 27,
           "nb_victoires": 1,
           "nb_places": 20,
-          "cote": 16.0,
-          "cote_tendance": "-",
+          "cote": 14.0,
+          "cote_tendance": "+",
           "cote_reference": 7.3
         },
         {
@@ -957,7 +961,7 @@
           "nb_courses": 10,
           "nb_victoires": 0,
           "nb_places": 9,
-          "cote": 14.0,
+          "cote": 7.9,
           "cote_tendance": "-",
           "cote_reference": 9.6
         },
@@ -980,8 +984,8 @@
           "nb_courses": 23,
           "nb_victoires": 2,
           "nb_places": 14,
-          "cote": 7.4,
-          "cote_tendance": "",
+          "cote": 6.7,
+          "cote_tendance": "+",
           "cote_reference": 6.0
         },
         {
@@ -1003,8 +1007,8 @@
           "nb_courses": 55,
           "nb_victoires": 6,
           "nb_places": 31,
-          "cote": 3.0,
-          "cote_tendance": "-",
+          "cote": 3.2,
+          "cote_tendance": "",
           "cote_reference": 4.0
         },
         {
@@ -1026,8 +1030,8 @@
           "nb_courses": 13,
           "nb_victoires": 2,
           "nb_places": 8,
-          "cote": 3.6,
-          "cote_tendance": "+",
+          "cote": 4.5,
+          "cote_tendance": "-",
           "cote_reference": 4.1
         }
       ],
@@ -1062,7 +1066,7 @@
           "nb_courses": 25,
           "nb_victoires": 3,
           "nb_places": 19,
-          "cote": 5.6,
+          "cote": 5.5,
           "cote_tendance": "-",
           "cote_reference": 9.1
         },
@@ -1085,8 +1089,8 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 7.8,
-          "cote_tendance": "+",
+          "cote": 6.3,
+          "cote_tendance": "-",
           "cote_reference": 8.1
         },
         {
@@ -1109,7 +1113,7 @@
           "nb_victoires": 1,
           "nb_places": 15,
           "cote": 2.5,
-          "cote_tendance": "+",
+          "cote_tendance": "",
           "cote_reference": 2.1
         },
         {
@@ -1131,7 +1135,7 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 41.0,
+          "cote": 46.0,
           "cote_tendance": "+"
         },
         {
@@ -1153,7 +1157,7 @@
           "nb_courses": 6,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 4.8,
+          "cote": 4.9,
           "cote_tendance": "+",
           "cote_reference": 2.8
         },
@@ -1176,7 +1180,7 @@
           "nb_courses": 10,
           "nb_victoires": 0,
           "nb_places": 5,
-          "cote": 8.9,
+          "cote": 9.9,
           "cote_tendance": "+",
           "cote_reference": 36.0
         },
@@ -1219,8 +1223,8 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 11.0,
-          "cote_tendance": "",
+          "cote": 12.0,
+          "cote_tendance": "+",
           "cote_reference": 18.0
         }
       ],
