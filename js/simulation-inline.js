@@ -331,29 +331,36 @@ document.addEventListener('DOMContentLoaded', function() {
                 cells[0].querySelector('.horse-number').textContent.trim() : '';
             const cheval = cells[1].textContent.trim();
             
-            // Extraire le score prédictif
+            // Extraire le score prédictif (colonne 6)
             let score = 0;
-            const scoreElement = cells[7].querySelector('.prediction-value');
-            if (scoreElement) {
-                score = parseFloat(scoreElement.textContent.trim());
+            const scoreCell = cells[6];
+            if (scoreCell) {
+                // Chercher le score dans le span bold ou directement dans le texte
+                const scoreSpan = scoreCell.querySelector('span[style*="font-weight"]');
+                if (scoreSpan) {
+                    score = parseFloat(scoreSpan.textContent.trim());
+                } else {
+                    score = parseFloat(row.dataset.score || 0);
+                }
             }
             
-            // Pour les cotes, deux approches :
-            // 1. Utiliser une cote explicite si elle existe dans les données
-            // 2. Estimer une cote inverse basée sur le score prédictif
+            // Récupérer la cote depuis le data-attribute du tr ou la cellule cote
             let cote = 0;
-            
-            // Rechercher une cote explicite dans les attributs du participant
-            const coteElement = row.querySelector('.cote-badge');
-            if (coteElement) {
-                const coteText = coteElement.textContent.replace('Cote:', '').trim();
-                cote = parseFloat(coteText);
+
+            // 1. Depuis data-cote du <tr>
+            if (row.dataset.cote) {
+                cote = parseFloat(row.dataset.cote);
             }
-            
-            // Si pas de cote trouvée, estimer basée sur le score
-            if (!cote || isNaN(cote)) {
-                // Formule inverse : plus le score est élevé, plus la cote est basse
-                // On limite entre 1.5 (très favori) et 20 (outsider)
+
+            // 2. Depuis la cellule cote (colonne 5)
+            if (!cote || isNaN(cote) || cote <= 1) {
+                const coteCellText = cells[5]?.textContent?.trim() || '';
+                const coteMatch = coteCellText.match(/^([\d.]+)/);
+                if (coteMatch) cote = parseFloat(coteMatch[1]);
+            }
+
+            // 3. Fallback : estimer depuis le score
+            if (!cote || isNaN(cote) || cote <= 1) {
                 const normalizedScore = Math.max(0, Math.min(100, score)) / 100;
                 cote = Math.round((1.5 + (1 - normalizedScore) * 18.5) * 10) / 10;
             }
