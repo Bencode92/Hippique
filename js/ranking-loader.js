@@ -2600,18 +2600,16 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         const coteVal = parseFloat(participant.cote) || 0;
         const scoreCote = coteVal > 1 ? (1 / coteVal) * 100 : 50;
 
-        // DÉRIVE DE COTE (signal orthogonal validé : coeff -0.258, z=-3.22, p<0.001)
-        // Cote qui monte fort = marché abandonne ce cheval = PÉNALITÉ
-        // Seuil : log(cote/ref) > 0.3 = hausse > 35%
+        // DÉRIVE DE COTE — DÉSACTIVÉE dans le scoring (Dérive 1 = gain 0 en A/B test)
+        // La Dérive 2 (cote_matin → cote_live) sera testée quand on aura
+        // assez de données dans data/cotes_live/ (2-3 semaines)
         const coteRef = parseFloat(participant.cote_reference) || 0;
         let penaliteDerive = 0;
-        if (coteVal > 1 && coteRef > 1) {
-            const derive = Math.log(coteVal / coteRef);
-            if (derive > 0.3) {
-                // Pénalité proportionnelle : -5 à -15 pts selon l'amplitude
-                penaliteDerive = -Math.min(15, (derive - 0.3) * 20);
-            }
-        }
+        // Code prêt pour Dérive 2 — à activer après validation A/B test
+        // if (coteVal > 1 && coteLive > 1) {
+        //     const derive = Math.log(coteLive / coteMatin);
+        //     if (derive > 0.3) penaliteDerive = -Math.min(15, (derive - 0.3) * 20);
+        // }
 
         // LEVIER 2 : Valeur France Galop (rating officiel handicapeur)
         const valeurFG = parseFloat(participant.valeur) || 0;
