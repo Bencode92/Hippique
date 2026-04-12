@@ -697,7 +697,12 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Vérifier si une solution rentable a été trouvée
             if (!result.rentable) {
-                throw new Error(`Aucune combinaison rentable trouvée avec la stratégie ${strategy}. Essayez d'augmenter le montant total ou de changer de stratégie.`);
+                // Vérifier si c'est à cause d'une cote trop basse
+                const minCote = Math.min(...selectedParticipants.map(p => p.cote).filter(c => c > 0));
+                const hint = minCote < 1.5
+                    ? ` Un cheval a une cote très basse (${minCote}). Essayez de le décocher ou utilisez Couplé/Tiercé.`
+                    : ' Essayez d\'augmenter le montant ou de changer de stratégie.';
+                throw new Error(`Pas de combinaison rentable (${strategy}).${hint}`);
             }
 
             // Afficher les résultats
