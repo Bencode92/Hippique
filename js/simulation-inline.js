@@ -203,24 +203,11 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
     
-    // Algorithme d'optimisation EV (pondéré par score modèle)
+    // Algorithme d'optimisation EV
     function calculateEVOptimization(horsesInput, totalBet, maxPerHorse, selectedHorses) {
-        console.log("Exécution de l'algorithme EV Optimization (score-pondéré)");
+        console.log("Exécution de l'algorithme EV Optimization");
         const odds = selectedHorses.map(horseName => horsesInput[horseName]);
         const numHorses = selectedHorses.length;
-
-        // Récupérer les scores pour pondérer la proba de victoire
-        const scores = selectedHorses.map(name => {
-            const p = window.currentSimulationData?.participants?.find(p => p.cheval === name);
-            return p?.score || 50;
-        });
-        const totalScore = scores.reduce((a, b) => a + b, 0) || 1;
-        // Proba ajustée : mix entre proba cote et proba score
-        const probaAjustee = scores.map((s, i) => {
-            const probaCote = 1 / odds[i];
-            const probaScore = s / totalScore;
-            return probaCote * 0.6 + probaScore * 0.4; // 60% cote, 40% score
-        });
         
         // Paramètres pour l'optimisation
         const STEP_SIZE = numHorses <= 2 ? 0.5 : (numHorses <= 3 ? 1 : 2);
@@ -248,8 +235,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 if (!gainsNets.every(g => g > 0)) return;
                 
-                // Gain moyen pondéré par la proba ajustée (score + cote)
-                const gainMoyen = gainsNets.reduce((sum, g, i) => sum + g * probaAjustee[i], 0) / probaAjustee.reduce((a,b) => a+b, 0);
+                const gainMoyen = gainsNets.reduce((sum, g) => sum + g, 0) / numHorses;
                 
                 if (gainMoyen > bestGainMoyen) {
                     bestGainMoyen = gainMoyen;
