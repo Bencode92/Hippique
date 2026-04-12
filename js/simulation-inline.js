@@ -517,16 +517,26 @@ document.addEventListener('DOMContentLoaded', function() {
         const nbPicks = type === 'couple' ? 2 : type === 'tierce' ? 3 : 5;
         const typeName = type === 'couple' ? 'Couplé' : type === 'tierce' ? 'Tiercé' : 'Quinté+';
 
+        console.log(`Paris français: ${typeName}, ${participants.length} participants, mise ${totalBet}€`);
+
         if (participants.length < nbPicks) {
             return { rentable: false };
         }
+
+        // S'assurer que les cotes sont valides
+        participants.forEach(p => {
+            if (!p.cote || p.cote <= 1) p.cote = 10; // fallback
+            if (!p.score) p.score = 50;
+        });
 
         // Trier par score (nos meilleurs picks)
         const sorted = [...participants].sort((a, b) => b.score - a.score);
         const picks = sorted.slice(0, nbPicks);
 
+        console.log('Picks:', picks.map(p => p.cheval + ' cote:' + p.cote + ' score:' + p.score).join(', '));
+
         // Calculer les probas approximatives (basées sur 1/cote normalisé)
-        const totalProba = participants.reduce((s, p) => s + (p.cote > 1 ? 1/p.cote : 0), 0);
+        const totalProba = participants.reduce((s, p) => s + 1/p.cote, 0);
         picks.forEach(p => {
             p.probaWin = p.cote > 1 ? (1/p.cote) / totalProba : 0.05;
         });
