@@ -1228,7 +1228,7 @@
     </div>
 
     <!-- Module ranking-loader (doit être chargé avant le script principal) -->
-    <script src="js/ranking-loader.js?v=12"></script>
+    <script src="js/ranking-loader.js?v=13"></script>
 
     <!-- Module de chargement des courses -->
     <script>
@@ -2073,10 +2073,13 @@
                         let coteDisplay = coteValue;
                         if (coteRefValue && coteValue !== '-' && coteRefValue !== coteValue) {
                             const diff = parseFloat(coteValue) - parseFloat(coteRefValue);
-                            const pct = ((parseFloat(coteValue) / parseFloat(coteRefValue) - 1) * 100).toFixed(0);
+                            const pct = Math.round((parseFloat(coteValue) / parseFloat(coteRefValue) - 1) * 100);
+                            const absPct = Math.abs(pct);
                             const color = diff < 0 ? '#40e05a' : diff > 0 ? '#e05a40' : '';
-                            const arrow = diff < 0 ? '↓' : diff > 0 ? '↑' : '';
-                            coteDisplay = `<span title="Réf: ${coteRefValue} → Actuelle: ${coteValue} (${pct > 0 ? '+' : ''}${pct}%)">${coteValue}<span style="font-size:0.7em;color:${color}">${arrow}${pct}%</span></span>`;
+                            const arrow = diff < 0 ? '▼' : diff > 0 ? '▲' : '';
+                            // N'afficher la dérive que si > 5% (sinon c'est du bruit)
+                            const deriveLabel = absPct > 5 ? `<span style="font-size:0.6em;color:${color};display:block;line-height:1">${arrow}${pct > 0 ? '+' : ''}${pct}%</span>` : '';
+                            coteDisplay = `<span title="Ouverture: ${coteRefValue} → Actuelle: ${coteValue}">${coteValue}${deriveLabel}</span>`;
                         }
 
                         // Score color (vert=bon, rouge=mauvais)
