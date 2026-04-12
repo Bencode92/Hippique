@@ -1,7 +1,7 @@
 {
   "hippodrome": "MONT DE MARSAN",
   "type_reunion": "HAIE",
-  "date_extraction": "2026-04-12T16:08:42.063433",
+  "date_extraction": "2026-04-12T20:45:25.251073",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/12042026/R13",
   "courses": [
     {
@@ -1144,30 +1144,8 @@
           "nb_places": 19,
           "cote": 6.3,
           "cote_tendance": "",
-          "cote_reference": 5.0
-        },
-        {
-          "n°": "3",
-          "cheval": "HOLIGAN DU BERLAIS H.PU. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: DOCTOR DINO et HILTON DU BERLAIS (SAINT DES SAINTS)",
-          "corde": "",
-          "couleurs": "",
-          "propriétaire": "L.CADOT",
-          "entraineur": "L.CADOT",
-          "éleveurs": "HARAS DU BERLAIS",
-          "jockey": "L.ZULIANI",
-          "poids": "69 kg",
-          "gains": "5765500",
-          "musique": "5h0h5hAh(24)4s2h3s1h3s",
-          "valeur": "69.0",
-          "equipement(s)": "",
-          "nb_courses": 21,
-          "nb_victoires": 1,
-          "nb_places": 15,
-          "cote": 4.6,
-          "cote_tendance": "+",
-          "cote_reference": 2.7
+          "cote_reference": 5.0,
+          "arrivee": 4
         },
         {
           "n°": "4",
@@ -1190,7 +1168,32 @@
           "nb_places": 0,
           "cote": 22.0,
           "cote_tendance": "+",
-          "cote_reference": 53.0
+          "cote_reference": 53.0,
+          "arrivee": 5
+        },
+        {
+          "n°": "3",
+          "cheval": "HOLIGAN DU BERLAIS H.PU. 6 a.",
+          "cheval_url": "",
+          "père_mère": "Par: DOCTOR DINO et HILTON DU BERLAIS (SAINT DES SAINTS)",
+          "corde": "",
+          "couleurs": "",
+          "propriétaire": "L.CADOT",
+          "entraineur": "L.CADOT",
+          "éleveurs": "HARAS DU BERLAIS",
+          "jockey": "L.ZULIANI",
+          "poids": "69 kg",
+          "gains": "5765500",
+          "musique": "5h0h5hAh(24)4s2h3s1h3s",
+          "valeur": "69.0",
+          "equipement(s)": "",
+          "nb_courses": 21,
+          "nb_victoires": 1,
+          "nb_places": 15,
+          "cote": 4.6,
+          "cote_tendance": "+",
+          "cote_reference": 2.7,
+          "arrivee": 6
         },
         {
           "n°": "6",
@@ -1219,7 +1222,7 @@
       "typePiste": "HERBE",
       "terrain": "Bon",
       "penetrometre": "3,2",
-      "arrivee_definitive": false
+      "arrivee_definitive": true
     }
   ]
 }
