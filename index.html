@@ -2067,19 +2067,15 @@
                         const fchColor = fch.includes('▲') ? '#40e05a' : fch.includes('▼') ? '#e05a40' : '#D4AF37';
                         const fcjColor = fcj.includes('▲') ? '#40e05a' : fcj.includes('▼') ? '#e05a40' : '#D4AF37';
 
-                        // Cote PMU + dérive
+                        // Cote PMU : ouverture → actuelle
                         const coteValue = participant.cote ? parseFloat(participant.cote).toFixed(1) : '-';
                         const coteRefValue = participant.cote_reference ? parseFloat(participant.cote_reference).toFixed(1) : null;
                         let coteDisplay = coteValue;
-                        if (coteRefValue && coteValue !== '-' && coteRefValue !== coteValue) {
+                        if (coteRefValue && coteValue !== '-') {
                             const diff = parseFloat(coteValue) - parseFloat(coteRefValue);
-                            const pct = Math.round((parseFloat(coteValue) / parseFloat(coteRefValue) - 1) * 100);
-                            const absPct = Math.abs(pct);
-                            const color = diff < 0 ? '#40e05a' : diff > 0 ? '#e05a40' : '';
-                            const arrow = diff < 0 ? '▼' : diff > 0 ? '▲' : '';
-                            // N'afficher la dérive que si > 5% (sinon c'est du bruit)
-                            const deriveLabel = absPct > 5 ? `<span style="font-size:0.6em;color:${color};display:block;line-height:1">${arrow}${pct > 0 ? '+' : ''}${pct}%</span>` : '';
-                            coteDisplay = `<span title="Ouverture: ${coteRefValue} → Actuelle: ${coteValue}">${coteValue}${deriveLabel}</span>`;
+                            const color = diff < -0.3 ? '#40e05a' : diff > 0.3 ? '#e05a40' : 'rgba(255,255,255,0.5)';
+                            const arrow = diff < -0.3 ? '→' : diff > 0.3 ? '→' : '→';
+                            coteDisplay = `<span title="Ouverture → Actuelle"><span style="font-size:0.75em;opacity:0.6">${coteRefValue}</span> <span style="color:${color};font-size:0.7em">${arrow}</span> ${coteValue}</span>`;
                         }
 
                         // Score color (vert=bon, rouge=mauvais)
