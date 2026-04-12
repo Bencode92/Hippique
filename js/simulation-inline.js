@@ -625,39 +625,38 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
             
+            // Obtenir la stratégie sélectionnée EN PREMIER
+            const strategyOption = document.querySelector('.strategy-option.active');
+            if (!strategyOption) {
+                throw new Error('Aucune stratégie sélectionnée');
+            }
+            const strategy = strategyOption.dataset.strategy;
+            console.log(`Stratégie sélectionnée: ${strategy}`);
+
             // Récupérer les chevaux sélectionnés
             const checkboxes = document.querySelectorAll('.horse-select-checkbox:checked');
             const minChevaux = (strategy === 'couple') ? 2 : (strategy === 'tierce') ? 3 : (strategy === 'quinte') ? 5 : 2;
             if (checkboxes.length < minChevaux) {
                 throw new Error(`Vous devez sélectionner au moins ${minChevaux} chevaux pour ${strategy}`);
             }
-            
+
             // Récupérer les indices des chevaux sélectionnés
-            const selectedIndices = Array.from(checkboxes).map(checkbox => 
+            const selectedIndices = Array.from(checkboxes).map(checkbox =>
                 parseInt(checkbox.value)
             );
-            
+
             // Obtenir les participants correspondants
-            const selectedParticipants = selectedIndices.map(index => 
+            const selectedParticipants = selectedIndices.map(index =>
                 window.currentSimulationData.participants[index]
             );
-            
+
             // Préparer les entrées pour la simulation
             const horsesInput = {};
             selectedParticipants.forEach(p => {
                 horsesInput[p.cheval] = p.cote;
             });
-            
+
             const selectedHorses = selectedParticipants.map(p => p.cheval);
-            
-            // Obtenir la stratégie sélectionnée
-            const strategyOption = document.querySelector('.strategy-option.active');
-            if (!strategyOption) {
-                throw new Error('Aucune stratégie sélectionnée');
-            }
-            
-            const strategy = strategyOption.dataset.strategy;
-            console.log(`Stratégie sélectionnée: ${strategy}`);
             
             // Variables pour Mid Range
             let excludeLow = 0;
