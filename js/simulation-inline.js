@@ -163,37 +163,64 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Algorithme Dutch Betting
     function calculateDutchBetting(horsesInput, totalBet, selectedHorses) {
-        console.log("Exécution de l'algorithme Dutch Betting");
+        console.log("Exécution de l'algorithme Dutch Betting (pondéré par score)");
         const odds = selectedHorses.map(horseName => horsesInput[horseName]);
-        
-        // Calcul Dutch classique
-        const invOdds = odds.map(o => 1/o);
+
+        // Récupérer les scores du modèle pour pondérer
+        const scores = selectedHorses.map(name => {
+            const p = window.currentSimulationData?.participants?.find(p => p.cheval === name);
+            return p?.score || 50;
+        });
+
+        // Dutch pondéré : combine 1/cote (classique) + score modèle
+        // Score élevé = on mise plus que ce que la cote seule suggère
+        const maxScore = Math.max(...scores, 1);
+        const invOdds = odds.map((o, i) => {
+            const coteWeight = 1 / o;
+            const scoreWeight = (scores[i] / maxScore); // 0-1
+            return coteWeight * (0.6 + scoreWeight * 0.4); // 60% cote + 40% score
+        });
+
         const totalInv = invOdds.reduce((a, b) => a + b, 0);
         const stakes = invOdds.map(inv => (inv / totalInv) * totalBet);
         const gainsBruts = stakes.map((stake, i) => stake * odds[i]);
         const gainsNets = gainsBruts.map(gain => gain - totalBet);
-        
+
         const isRentable = gainsNets.every(g => g > 0);
-        
+
         return {
             chevaux: selectedHorses,
             mises: stakes,
             cotes: odds,
+            scores: scores,
             gains_bruts: gainsBruts,
             gains_net: gainsNets,
             gain_minimum: Math.min(...gainsNets),
             gain_moyen: gainsNets.reduce((a, b) => a + b, 0) / gainsNets.length,
             gain_maximum: Math.max(...gainsNets),
             rentable: isRentable,
-            approche: "Dutch"
+            approche: "Dutch (score-pondéré)"
         };
     }
     
-    // Algorithme d'optimisation EV
+    // Algorithme d'optimisation EV (pondéré par score modèle)
     function calculateEVOptimization(horsesInput, totalBet, maxPerHorse, selectedHorses) {
-        console.log("Exécution de l'algorithme EV Optimization");
+        console.log("Exécution de l'algorithme EV Optimization (score-pondéré)");
         const odds = selectedHorses.map(horseName => horsesInput[horseName]);
         const numHorses = selectedHorses.length;
+
+        // Récupérer les scores pour pondérer la proba de victoire
+        const scores = selectedHorses.map(name => {
+            const p = window.currentSimulationData?.participants?.find(p => p.cheval === name);
+            return p?.score || 50;
+        });
+        const totalScore = scores.reduce((a, b) => a + b, 0) || 1;
+        // Proba ajustée : mix entre proba cote et proba score
+        const probaAjustee = scores.map((s, i) => {
+            const probaCote = 1 / odds[i];
+            const probaScore = s / totalScore;
+            return probaCote * 0.6 + probaScore * 0.4; // 60% cote, 40% score
+        });
         
         // Paramètres pour l'optimisation
         const STEP_SIZE = numHorses <= 2 ? 0.5 : (numHorses <= 3 ? 1 : 2);
@@ -221,7 +248,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 if (!gainsNets.every(g => g > 0)) return;
                 
-                const gainMoyen = gainsNets.reduce((sum, g) => sum + g, 0) / numHorses;
+                // Gain moyen pondéré par la proba ajustée (score + cote)
+                const gainMoyen = gainsNets.reduce((sum, g, i) => sum + g * probaAjustee[i], 0) / probaAjustee.reduce((a,b) => a+b, 0);
                 
                 if (gainMoyen > bestGainMoyen) {
                     bestGainMoyen = gainMoyen;
