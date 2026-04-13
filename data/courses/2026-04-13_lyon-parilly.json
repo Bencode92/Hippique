@@ -1,7 +1,7 @@
 {
   "hippodrome": "LYON-PARILLY",
   "type_reunion": "Plat",
-  "date_extraction": "2026-04-13T11:04:25.235003",
+  "date_extraction": "2026-04-13T11:15:17.982378",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/13042026/R3",
   "courses": [
     {
@@ -499,29 +499,6 @@
           "arrivee": 4
         },
         {
-          "n°": "4",
-          "cheval": "AXIOKERSA F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: CAMELOT et SAMOTHRACE (IFFRAAJ)",
-          "corde": "(Corde:05)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/13042026/R3/C3/P4.png",
-          "propriétaire": "MME J.BIANCO",
-          "entraineur": "C.FERLAND (S)",
-          "éleveurs": "MR ALBAN CHEVALIER DU FAU",
-          "jockey": "S.PASQUIER",
-          "poids": "56.5 kg",
-          "gains": "393800",
-          "musique": "6p3p",
-          "valeur": "56.5",
-          "equipement(s)": "",
-          "nb_courses": 2,
-          "nb_victoires": 0,
-          "nb_places": 2,
-          "cote": 18.0,
-          "cote_tendance": "-",
-          "cote_reference": 18.0
-        },
-        {
           "n°": "5",
           "cheval": "I AM MAELIA F.PU. 3 a.",
           "cheval_url": "",
@@ -542,7 +519,32 @@
           "nb_places": 4,
           "cote": 21.0,
           "cote_tendance": "",
-          "cote_reference": 15.0
+          "cote_reference": 15.0,
+          "arrivee": 5
+        },
+        {
+          "n°": "4",
+          "cheval": "AXIOKERSA F.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: CAMELOT et SAMOTHRACE (IFFRAAJ)",
+          "corde": "(Corde:05)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/13042026/R3/C3/P4.png",
+          "propriétaire": "MME J.BIANCO",
+          "entraineur": "C.FERLAND (S)",
+          "éleveurs": "MR ALBAN CHEVALIER DU FAU",
+          "jockey": "S.PASQUIER",
+          "poids": "56.5 kg",
+          "gains": "393800",
+          "musique": "6p3p",
+          "valeur": "56.5",
+          "equipement(s)": "",
+          "nb_courses": 2,
+          "nb_victoires": 0,
+          "nb_places": 2,
+          "cote": 18.0,
+          "cote_tendance": "-",
+          "cote_reference": 18.0,
+          "arrivee": 6
         },
         {
           "n°": "6",
@@ -565,7 +567,8 @@
           "nb_places": 0,
           "cote": 46.0,
           "cote_tendance": "-",
-          "cote_reference": 25.0
+          "cote_reference": 25.0,
+          "arrivee": 7
         },
         {
           "n°": "8",
@@ -588,14 +591,15 @@
           "nb_places": 0,
           "cote": 38.0,
           "cote_tendance": "-",
-          "cote_reference": 15.0
+          "cote_reference": 15.0,
+          "arrivee": 8
         }
       ],
       "typePiste": "HERBE",
       "terrain": "Collant",
       "penetrometre": "4,2",
       "cordeCourse": "CORDE_GAUCHE",
-      "arrivee_definitive": false
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX HENRI ROSSI",
@@ -624,7 +628,7 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 17.0,
+          "cote": 16.0,
           "cote_tendance": "+",
           "cote_reference": 15.0
         },
@@ -647,7 +651,7 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 8.2,
+          "cote": 7.7,
           "cote_tendance": "-",
           "cote_reference": 8.8
         },
@@ -670,8 +674,8 @@
           "nb_courses": 6,
           "nb_victoires": 0,
           "nb_places": 5,
-          "cote": 4.5,
-          "cote_tendance": "+",
+          "cote": 5.4,
+          "cote_tendance": "",
           "cote_reference": 4.1
         },
         {
@@ -693,8 +697,8 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 9.7,
-          "cote_tendance": "",
+          "cote": 8.9,
+          "cote_tendance": "-",
           "cote_reference": 9.6
         },
         {
@@ -716,7 +720,7 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 5.4,
+          "cote": 4.5,
           "cote_tendance": "+",
           "cote_reference": 5.5
         },
@@ -739,8 +743,8 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 35.0,
-          "cote_tendance": "+",
+          "cote": 41.0,
+          "cote_tendance": "-",
           "cote_reference": 29.0
         },
         {
@@ -762,7 +766,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 3.8,
+          "cote": 3.4,
           "cote_tendance": "",
           "cote_reference": 3.9
         },
@@ -785,8 +789,8 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 6.3,
-          "cote_tendance": "",
+          "cote": 8.9,
+          "cote_tendance": "+",
           "cote_reference": 6.9
         }
       ],
