@@ -1,7 +1,7 @@
 {
   "hippodrome": "CONCEPCION",
   "type_reunion": "Plat",
-  "date_extraction": "2026-04-14T07:07:39.683017",
+  "date_extraction": "2026-04-14T10:17:48.385321",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/14042026/R6",
   "courses": [
     {
@@ -51,7 +51,7 @@
           "nb_courses": 66,
           "nb_victoires": 6,
           "nb_places": 12,
-          "cote": 3.0,
+          "cote": 3.9,
           "cote_tendance": "",
           "cote_reference": 3.0
         },
@@ -74,7 +74,7 @@
           "nb_courses": 100,
           "nb_victoires": 10,
           "nb_places": 14,
-          "cote": 6.1,
+          "cote": 2.6,
           "cote_tendance": "",
           "cote_reference": 6.1
         },
@@ -117,7 +117,7 @@
           "nb_courses": 68,
           "nb_victoires": 2,
           "nb_places": 13,
-          "cote": 3.0,
+          "cote": 3.9,
           "cote_tendance": "",
           "cote_reference": 3.0
         },
@@ -200,7 +200,7 @@
           "nb_courses": 251,
           "nb_victoires": 12,
           "nb_places": 62,
-          "cote": 3.0,
+          "cote": 3.9,
           "cote_tendance": "",
           "cote_reference": 3.0
         },
@@ -245,6 +245,7 @@
           "nb_places": 27
         }
       ],
+      "typePiste": "GAZON",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -333,7 +334,10 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 15.0
         },
         {
           "n°": "5",
@@ -354,9 +358,9 @@
           "nb_courses": 29,
           "nb_victoires": 0,
           "nb_places": 12,
-          "cote": 1.3,
+          "cote": 1.9,
           "cote_tendance": "",
-          "cote_reference": 1.3
+          "cote_reference": 1.9
         },
         {
           "n°": "6",
@@ -377,9 +381,9 @@
           "nb_courses": 7,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 2.7,
-          "cote_tendance": "+",
-          "cote_reference": 2.7
+          "cote": 1.9,
+          "cote_tendance": "",
+          "cote_reference": 1.9
         },
         {
           "n°": "7",
@@ -420,9 +424,9 @@
           "nb_courses": 10,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 22.0,
-          "cote_tendance": "+",
-          "cote_reference": 22.0
+          "cote": 30.0,
+          "cote_tendance": "",
+          "cote_reference": 30.0
         },
         {
           "n°": "9",
@@ -445,6 +449,7 @@
           "nb_places": 2
         }
       ],
+      "typePiste": "GAZON",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -605,6 +610,7 @@
           "nb_places": 31
         }
       ],
+      "typePiste": "GAZON",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -819,6 +825,7 @@
           "nb_places": 0
         }
       ],
+      "typePiste": "GAZON",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -1005,6 +1012,7 @@
           "cote_reference": 3.9
         }
       ],
+      "typePiste": "GAZON",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -1211,6 +1219,7 @@
           "nb_places": 11
         }
       ],
+      "typePiste": "GAZON",
       "cordeCourse": "CORDE_DROITE"
     }
   ]
