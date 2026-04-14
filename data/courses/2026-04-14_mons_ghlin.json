@@ -1,7 +1,7 @@
 {
   "hippodrome": "MONS (GHLIN)",
   "type_reunion": "ATTELE",
-  "date_extraction": "2026-04-14T21:02:35.078893",
+  "date_extraction": "2026-04-14T22:53:27.843724",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/14042026/R5",
   "courses": [
     {
@@ -1828,6 +1828,30 @@
           "arrivee": 3
         },
         {
+          "n°": "5",
+          "cheval": "KAPTAIN LUCK M.TR. 6 a.",
+          "cheval_url": "",
+          "père_mère": "Par: CAPTAIN SPARROW et UNE ALOUETTE",
+          "corde": "",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/14042026/R5/C8/P5.png",
+          "propriétaire": "MARC BRUYNEEL",
+          "entraineur": "JO CORBANIE",
+          "éleveurs": "M. Yann Daniel LEMASSON",
+          "jockey": "GILLES WILLEMS",
+          "poids": "",
+          "gains": "2461000",
+          "musique": "9a8aDaDa6a7a5a0a1a",
+          "valeur": "",
+          "equipement(s)": "",
+          "nb_courses": 22,
+          "nb_victoires": 3,
+          "nb_places": 9,
+          "cote": 26.0,
+          "cote_tendance": "+",
+          "cote_reference": 13.0,
+          "arrivee": 4
+        },
+        {
           "n°": "1",
           "cheval": "FINOLO BELLO H.TR. 11 a.",
           "cheval_url": "",
@@ -1848,7 +1872,32 @@
           "nb_places": 42,
           "cote": 38.0,
           "cote_tendance": "+",
-          "cote_reference": 14.0
+          "cote_reference": 14.0,
+          "arrivee": 5
+        },
+        {
+          "n°": "7",
+          "cheval": "FUEGO VERDERIE H.TR. 11 a.",
+          "cheval_url": "",
+          "père_mère": "Par: QUEROAN DE JAY et QUEEN DERAINES",
+          "corde": "",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/14042026/R5/C8/P7.png",
+          "propriétaire": "FRANK DELOMBAERDE",
+          "entraineur": "FRANK DELOMBAERDE",
+          "éleveurs": "",
+          "jockey": "E. Indekeu",
+          "poids": "",
+          "gains": "3072900",
+          "musique": "0aDa6a8a4a3m6a2m5a",
+          "valeur": "",
+          "equipement(s)": "",
+          "nb_courses": 0,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 41.0,
+          "cote_tendance": "+",
+          "cote_reference": 12.0,
+          "arrivee": 6
         },
         {
           "n°": "4",
@@ -1872,52 +1921,6 @@
           "cote": 4.1,
           "cote_tendance": "",
           "cote_reference": 4.0
-        },
-        {
-          "n°": "5",
-          "cheval": "KAPTAIN LUCK M.TR. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: CAPTAIN SPARROW et UNE ALOUETTE",
-          "corde": "",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/14042026/R5/C8/P5.png",
-          "propriétaire": "MARC BRUYNEEL",
-          "entraineur": "JO CORBANIE",
-          "éleveurs": "M. Yann Daniel LEMASSON",
-          "jockey": "GILLES WILLEMS",
-          "poids": "",
-          "gains": "2461000",
-          "musique": "9a8aDaDa6a7a5a0a1a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 22,
-          "nb_victoires": 3,
-          "nb_places": 9,
-          "cote": 26.0,
-          "cote_tendance": "+",
-          "cote_reference": 13.0
-        },
-        {
-          "n°": "7",
-          "cheval": "FUEGO VERDERIE H.TR. 11 a.",
-          "cheval_url": "",
-          "père_mère": "Par: QUEROAN DE JAY et QUEEN DERAINES",
-          "corde": "",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/14042026/R5/C8/P7.png",
-          "propriétaire": "FRANK DELOMBAERDE",
-          "entraineur": "FRANK DELOMBAERDE",
-          "éleveurs": "",
-          "jockey": "E. Indekeu",
-          "poids": "",
-          "gains": "3072900",
-          "musique": "0aDa6a8a4a3m6a2m5a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0,
-          "cote": 41.0,
-          "cote_tendance": "+",
-          "cote_reference": 12.0
         },
         {
           "n°": "8",
@@ -1944,7 +1947,7 @@
         }
       ],
       "cordeCourse": "CORDE_GAUCHE",
-      "arrivee_definitive": false
+      "arrivee_definitive": true
     }
   ]
 }
