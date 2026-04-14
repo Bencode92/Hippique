@@ -1,7 +1,7 @@
 {
   "hippodrome": "VINCENNES",
   "type_reunion": "ATTELE",
-  "date_extraction": "2026-04-14T15:16:03.443395",
+  "date_extraction": "2026-04-14T15:25:19.455544",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/14042026/R4",
   "courses": [
     {
@@ -977,30 +977,6 @@
           "arrivee": 4
         },
         {
-          "n°": "2",
-          "cheval": "LABEL DE LARRE H.TR. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: UP AND QUICK et DELABELLE MIKA",
-          "corde": "",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/14042026/R4/C3/P2.png",
-          "propriétaire": "Ecurie La PETTEVINIERE",
-          "entraineur": "S. ROGER",
-          "éleveurs": "M. Sylvain ROGER",
-          "jockey": "D. BONNE",
-          "poids": "65 kg",
-          "gains": "7553000",
-          "musique": "Da4mDmDmDa(25)6m9a0a8a",
-          "valeur": "65.0",
-          "equipement(s)": "",
-          "nb_courses": 33,
-          "nb_victoires": 2,
-          "nb_places": 14,
-          "cote": 89.0,
-          "cote_tendance": "+",
-          "cote_reference": 48.0,
-          "avis_entraineur": "NEUTRE"
-        },
-        {
           "n°": "3",
           "cheval": "KENIDILLE F.TR. 6 a.",
           "cheval_url": "",
@@ -1022,7 +998,8 @@
           "cote": 32.0,
           "cote_tendance": "+",
           "cote_reference": 20.0,
-          "avis_entraineur": "NEUTRE"
+          "avis_entraineur": "NEUTRE",
+          "arrivee": 5
         },
         {
           "n°": "4",
@@ -1046,31 +1023,8 @@
           "cote": 39.0,
           "cote_tendance": "+",
           "cote_reference": 37.0,
-          "avis_entraineur": "NEUTRE"
-        },
-        {
-          "n°": "6",
-          "cheval": "LENSOIS DU DOLLAR H.TR. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: BOLD EAGLE et VANILLE DU DOLLAR",
-          "corde": "",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/14042026/R4/C3/P6.png",
-          "propriétaire": "Ec. Fr. SENET",
-          "entraineur": "F. SENET",
-          "éleveurs": "M. Jean Luc COUPE",
-          "jockey": "Mme CLEA ROGER",
-          "poids": "62 kg",
-          "gains": "8186000",
-          "musique": "5m4m7m(25)1m3m0m3mDa0a",
-          "valeur": "62.0",
-          "equipement(s)": "",
-          "nb_courses": 32,
-          "nb_victoires": 3,
-          "nb_places": 15,
-          "cote": 28.0,
-          "cote_tendance": "+",
-          "cote_reference": 36.0,
-          "avis_entraineur": "NEUTRE"
+          "avis_entraineur": "NEUTRE",
+          "arrivee": 6
         },
         {
           "n°": "9",
@@ -1094,7 +1048,33 @@
           "cote": 8.6,
           "cote_tendance": "+",
           "cote_reference": 8.0,
-          "avis_entraineur": "POSITIF"
+          "avis_entraineur": "POSITIF",
+          "arrivee": 7
+        },
+        {
+          "n°": "6",
+          "cheval": "LENSOIS DU DOLLAR H.TR. 5 a.",
+          "cheval_url": "",
+          "père_mère": "Par: BOLD EAGLE et VANILLE DU DOLLAR",
+          "corde": "",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/14042026/R4/C3/P6.png",
+          "propriétaire": "Ec. Fr. SENET",
+          "entraineur": "F. SENET",
+          "éleveurs": "M. Jean Luc COUPE",
+          "jockey": "Mme CLEA ROGER",
+          "poids": "62 kg",
+          "gains": "8186000",
+          "musique": "5m4m7m(25)1m3m0m3mDa0a",
+          "valeur": "62.0",
+          "equipement(s)": "",
+          "nb_courses": 32,
+          "nb_victoires": 3,
+          "nb_places": 15,
+          "cote": 28.0,
+          "cote_tendance": "+",
+          "cote_reference": 36.0,
+          "avis_entraineur": "NEUTRE",
+          "arrivee": 8
         },
         {
           "n°": "10",
@@ -1118,7 +1098,33 @@
           "cote": 1.7,
           "cote_tendance": "",
           "cote_reference": 2.0,
-          "avis_entraineur": "POSITIF"
+          "avis_entraineur": "POSITIF",
+          "arrivee": 9
+        },
+        {
+          "n°": "2",
+          "cheval": "LABEL DE LARRE H.TR. 5 a.",
+          "cheval_url": "",
+          "père_mère": "Par: UP AND QUICK et DELABELLE MIKA",
+          "corde": "",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/14042026/R4/C3/P2.png",
+          "propriétaire": "Ecurie La PETTEVINIERE",
+          "entraineur": "S. ROGER",
+          "éleveurs": "M. Sylvain ROGER",
+          "jockey": "D. BONNE",
+          "poids": "65 kg",
+          "gains": "7553000",
+          "musique": "Da4mDmDmDa(25)6m9a0a8a",
+          "valeur": "65.0",
+          "equipement(s)": "",
+          "nb_courses": 33,
+          "nb_victoires": 2,
+          "nb_places": 14,
+          "cote": 89.0,
+          "cote_tendance": "+",
+          "cote_reference": 48.0,
+          "avis_entraineur": "NEUTRE",
+          "arrivee": 10
         },
         {
           "n°": "11",
@@ -1146,7 +1152,7 @@
         }
       ],
       "cordeCourse": "CORDE_GAUCHE",
-      "arrivee_definitive": false
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX CLORINDE",
@@ -1175,8 +1181,8 @@
           "nb_courses": 20,
           "nb_victoires": 4,
           "nb_places": 10,
-          "cote": 10.0,
-          "cote_tendance": "",
+          "cote": 9.6,
+          "cote_tendance": "+",
           "cote_reference": 10.0,
           "avis_entraineur": "NEUTRE"
         },
@@ -1199,7 +1205,7 @@
           "nb_courses": 35,
           "nb_victoires": 2,
           "nb_places": 31,
-          "cote": 13.0,
+          "cote": 12.0,
           "cote_tendance": "-",
           "cote_reference": 14.0,
           "avis_entraineur": "NEUTRE"
@@ -1223,7 +1229,7 @@
           "nb_courses": 21,
           "nb_victoires": 1,
           "nb_places": 8,
-          "cote": 22.0,
+          "cote": 28.0,
           "cote_tendance": "-",
           "cote_reference": 26.0,
           "avis_entraineur": "NEUTRE"
@@ -1247,8 +1253,8 @@
           "nb_courses": 26,
           "nb_victoires": 2,
           "nb_places": 10,
-          "cote": 4.2,
-          "cote_tendance": "+",
+          "cote": 4.0,
+          "cote_tendance": "",
           "cote_reference": 4.0,
           "avis_entraineur": "NEUTRE"
         },
@@ -1271,7 +1277,7 @@
           "nb_courses": 28,
           "nb_victoires": 3,
           "nb_places": 11,
-          "cote": 4.3,
+          "cote": 4.6,
           "cote_tendance": "",
           "cote_reference": 4.1,
           "avis_entraineur": "POSITIF"
@@ -1296,7 +1302,7 @@
           "nb_victoires": 3,
           "nb_places": 9,
           "cote": 9.4,
-          "cote_tendance": "+",
+          "cote_tendance": "",
           "cote_reference": 10.0,
           "avis_entraineur": "NEUTRE"
         },
@@ -1319,8 +1325,8 @@
           "nb_courses": 10,
           "nb_victoires": 3,
           "nb_places": 7,
-          "cote": 4.9,
-          "cote_tendance": "-",
+          "cote": 5.4,
+          "cote_tendance": "+",
           "cote_reference": 4.9,
           "avis_entraineur": "NEUTRE"
         },
@@ -1367,8 +1373,8 @@
           "nb_courses": 36,
           "nb_victoires": 2,
           "nb_places": 17,
-          "cote": 42.0,
-          "cote_tendance": "+",
+          "cote": 30.0,
+          "cote_tendance": "-",
           "cote_reference": 41.0,
           "avis_entraineur": "NEUTRE"
         },
@@ -1391,8 +1397,8 @@
           "nb_courses": 25,
           "nb_victoires": 2,
           "nb_places": 12,
-          "cote": 24.0,
-          "cote_tendance": "+",
+          "cote": 20.0,
+          "cote_tendance": "-",
           "cote_reference": 25.0,
           "avis_entraineur": "NEUTRE"
         },
@@ -1415,8 +1421,8 @@
           "nb_courses": 52,
           "nb_victoires": 4,
           "nb_places": 21,
-          "cote": 28.0,
-          "cote_tendance": "+",
+          "cote": 23.0,
+          "cote_tendance": "-",
           "cote_reference": 27.0,
           "avis_entraineur": "NEUTRE"
         }
