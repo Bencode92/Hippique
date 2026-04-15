@@ -1,7 +1,7 @@
 {
   "hippodrome": "SAN ISIDRO",
   "type_reunion": "Plat",
-  "date_extraction": "2026-04-15T08:51:01.985168",
+  "date_extraction": "2026-04-15T10:56:57.312870",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/15042026/R7",
   "courses": [
     {
@@ -50,7 +50,9 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 1,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 1.1,
+          "cote_tendance": ""
         },
         {
           "n°": "3",
@@ -91,8 +93,8 @@
           "nb_courses": 8,
           "nb_victoires": 1,
           "nb_places": 4,
-          "cote": 1.1,
-          "cote_tendance": "",
+          "cote": 4.4,
+          "cote_tendance": "+",
           "cote_reference": 1.1
         },
         {
@@ -719,9 +721,9 @@
           "nb_courses": 29,
           "nb_victoires": 10,
           "nb_places": 15,
-          "cote": 5.7,
-          "cote_tendance": "",
-          "cote_reference": 5.7
+          "cote": 7.4,
+          "cote_tendance": "+",
+          "cote_reference": 6.6
         },
         {
           "n°": "2",
@@ -762,9 +764,9 @@
           "nb_courses": 32,
           "nb_victoires": 5,
           "nb_places": 26,
-          "cote": 5.7,
-          "cote_tendance": "",
-          "cote_reference": 5.7
+          "cote": 7.4,
+          "cote_tendance": "+",
+          "cote_reference": 6.6
         },
         {
           "n°": "4",
@@ -785,9 +787,9 @@
           "nb_courses": 16,
           "nb_victoires": 4,
           "nb_places": 9,
-          "cote": 5.7,
-          "cote_tendance": "",
-          "cote_reference": 5.7
+          "cote": 3.7,
+          "cote_tendance": "-",
+          "cote_reference": 6.6
         },
         {
           "n°": "5",
@@ -808,9 +810,9 @@
           "nb_courses": 57,
           "nb_victoires": 18,
           "nb_places": 35,
-          "cote": 2.2,
-          "cote_tendance": "",
-          "cote_reference": 2.2
+          "cote": 2.9,
+          "cote_tendance": "+",
+          "cote_reference": 2.6
         },
         {
           "n°": "6",
@@ -831,9 +833,9 @@
           "nb_courses": 9,
           "nb_victoires": 2,
           "nb_places": 7,
-          "cote": 5.7,
-          "cote_tendance": "",
-          "cote_reference": 5.7
+          "cote": 3.7,
+          "cote_tendance": "+",
+          "cote_reference": 3.3
         }
       ],
       "cordeCourse": "CORDE_GAUCHE"
