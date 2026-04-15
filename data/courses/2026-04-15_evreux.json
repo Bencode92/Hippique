@@ -1,17 +1,41 @@
 {
   "hippodrome": "EVREUX",
   "type_reunion": "Plat",
-  "date_extraction": "2026-04-15T10:56:24.020932",
+  "date_extraction": "2026-04-15T15:30:29.204614",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/15042026/R3",
   "courses": [
     {
       "nom": "PRIX DE L'HIPPODROME DE MARTINIQUE - MAURICE BRUERE-DAWSON",
-      "horaire": "13h57",
+      "horaire": "14h00",
       "numero": "1",
       "type": "Plat",
       "distance": "1800m",
       "url": "",
       "participants": [
+        {
+          "n°": "4",
+          "cheval": "VESCO H.PU. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: BIRCHWOOD et LALA DANCE (MOTIVATOR)",
+          "corde": "(Corde:08)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C1/P4.png",
+          "propriétaire": "P.SANGLIER",
+          "entraineur": "M.BRASME (S)",
+          "éleveurs": "INDIVISION N. LALA DANCE 2022",
+          "jockey": "L.BOISSEAU",
+          "poids": "59 kg",
+          "gains": "2168000",
+          "musique": "8p8p0p3p0p6p0p(25)Ap7h",
+          "valeur": "59.0",
+          "equipement(s)": "",
+          "nb_courses": 22,
+          "nb_victoires": 1,
+          "nb_places": 10,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 15.0,
+          "arrivee": 1
+        },
         {
           "n°": "1",
           "cheval": "J'AURAIS DU H.PU. 10 a.",
@@ -31,9 +55,82 @@
           "nb_courses": 129,
           "nb_victoires": 9,
           "nb_places": 68,
-          "cote": 3.6,
+          "cote": 4.4,
+          "cote_tendance": "+",
+          "cote_reference": 3.4,
+          "arrivee": 2
+        },
+        {
+          "n°": "6",
+          "cheval": "CHANEL GOLD F.PU. 6 a.",
+          "cheval_url": "",
+          "père_mère": "Par: LAWMAN et COCO SUN (MARCHAND DE SABLE)",
+          "corde": "(Corde:03)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C1/P6.png",
+          "propriétaire": "H.GAENSSMANTEL",
+          "entraineur": "FX.WEISSMEIER",
+          "éleveurs": "MR SVEN GOLDMANN",
+          "jockey": "G.SIAS",
+          "poids": "59 kg",
+          "gains": "5764600",
+          "musique": "2p0p7p7p0p6p(25)8p4p0p",
+          "valeur": "59.0",
+          "equipement(s)": "",
+          "nb_courses": 30,
+          "nb_victoires": 3,
+          "nb_places": 11,
+          "cote": 10.0,
+          "cote_tendance": "+",
+          "cote_reference": 10.0,
+          "arrivee": 3
+        },
+        {
+          "n°": "10",
+          "cheval": "AKAGERA F.PU. 6 a.",
+          "cheval_url": "",
+          "père_mère": "Par: PRINCE GIBRALTAR et AGUSHAYA (OASIS DREAM)",
+          "corde": "(Corde:07)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C1/P10.png",
+          "propriétaire": "JUL .PHELIPPON",
+          "entraineur": "JUL .PHELIPPON",
+          "éleveurs": "MME FRANCOISE PERREE",
+          "jockey": "T.TRULLIER",
+          "poids": "55.5 kg",
+          "gains": "7253100",
+          "musique": "0p0p(25)1p5p5p7p7p3p0p",
+          "valeur": "55.5",
+          "equipement(s)": "A",
+          "nb_courses": 39,
+          "nb_victoires": 4,
+          "nb_places": 20,
+          "cote": 6.3,
           "cote_tendance": "-",
-          "cote_reference": 3.7
+          "cote_reference": 12.0,
+          "arrivee": 4
+        },
+        {
+          "n°": "8",
+          "cheval": "KLARABELLE F.PU. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: ROMANISED et SIKKIM (LINAMIX)",
+          "corde": "(Corde:05)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C1/P8.png",
+          "propriétaire": "JP.BLANCHARD",
+          "entraineur": "P.ADDA (S)",
+          "éleveurs": "MR BRUNO PLAINFOSSE",
+          "jockey": "F.VALLE SKAR",
+          "poids": "58 kg",
+          "gains": "95000",
+          "musique": "Ah7h3hTh(25)0h7h0p0p5p",
+          "valeur": "58.0",
+          "equipement(s)": "A",
+          "nb_courses": 4,
+          "nb_victoires": 0,
+          "nb_places": 1,
+          "cote": 27.0,
+          "cote_tendance": "-",
+          "cote_reference": 14.0,
+          "arrivee": 5
         },
         {
           "n°": "2",
@@ -54,9 +151,10 @@
           "nb_courses": 10,
           "nb_victoires": 2,
           "nb_places": 6,
-          "cote": 6.8,
+          "cote": 5.2,
           "cote_tendance": "+",
-          "cote_reference": 6.7
+          "cote_reference": 7.0,
+          "arrivee": 6
         },
         {
           "n°": "3",
@@ -79,76 +177,8 @@
           "nb_places": 1,
           "cote": 22.0,
           "cote_tendance": "+",
-          "cote_reference": 22.0
-        },
-        {
-          "n°": "4",
-          "cheval": "VESCO H.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: BIRCHWOOD et LALA DANCE (MOTIVATOR)",
-          "corde": "(Corde:08)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C1/P4.png",
-          "propriétaire": "P.SANGLIER",
-          "entraineur": "M.BRASME (S)",
-          "éleveurs": "INDIVISION N. LALA DANCE 2022",
-          "jockey": "L.BOISSEAU",
-          "poids": "59 kg",
-          "gains": "2168000",
-          "musique": "8p8p0p3p0p6p0p(25)Ap7h",
-          "valeur": "59.0",
-          "equipement(s)": "",
-          "nb_courses": 22,
-          "nb_victoires": 1,
-          "nb_places": 10,
-          "cote": 15.0,
-          "cote_tendance": "-",
-          "cote_reference": 16.0
-        },
-        {
-          "n°": "5",
-          "cheval": "EASILY CONVINCED H.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: KODI BEAR et GULLIBLE (MAKE BELIEVE)",
-          "corde": "(Corde:06)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C1/P5.png",
-          "propriétaire": "MME A.BHANTOO",
-          "entraineur": "A.WEST",
-          "éleveurs": "COTTON HOUSE BLOODSTOCK",
-          "jockey": "M.Z .SAHEBJAN",
-          "poids": "59 kg",
-          "gains": "1513600",
-          "musique": "0p6p0p8p0p(25)0p1p0p9p",
-          "valeur": "59.0",
-          "equipement(s)": "",
-          "nb_courses": 19,
-          "nb_victoires": 2,
-          "nb_places": 3,
-          "cote": 52.0,
-          "cote_tendance": "+",
-          "cote_reference": 51.0
-        },
-        {
-          "n°": "6",
-          "cheval": "CHANEL GOLD F.PU. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: LAWMAN et COCO SUN (MARCHAND DE SABLE)",
-          "corde": "(Corde:03)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C1/P6.png",
-          "propriétaire": "H.GAENSSMANTEL",
-          "entraineur": "FX.WEISSMEIER",
-          "éleveurs": "MR SVEN GOLDMANN",
-          "jockey": "G.SIAS",
-          "poids": "59 kg",
-          "gains": "5764600",
-          "musique": "2p0p7p7p0p6p(25)8p4p0p",
-          "valeur": "59.0",
-          "equipement(s)": "",
-          "nb_courses": 30,
-          "nb_victoires": 3,
-          "nb_places": 11,
-          "cote": 16.0,
-          "cote_tendance": "+",
-          "cote_reference": 16.0
+          "cote_reference": 18.0,
+          "arrivee": 7
         },
         {
           "n°": "7",
@@ -169,32 +199,10 @@
           "nb_courses": 9,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 17.0,
+          "cote": 11.0,
           "cote_tendance": "-",
-          "cote_reference": 18.0
-        },
-        {
-          "n°": "8",
-          "cheval": "KLARABELLE F.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: ROMANISED et SIKKIM (LINAMIX)",
-          "corde": "(Corde:05)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C1/P8.png",
-          "propriétaire": "JP.BLANCHARD",
-          "entraineur": "P.ADDA (S)",
-          "éleveurs": "MR BRUNO PLAINFOSSE",
-          "jockey": "F.VALLE SKAR",
-          "poids": "58 kg",
-          "gains": "95000",
-          "musique": "Ah7h3hTh(25)0h7h0p0p5p",
-          "valeur": "58.0",
-          "equipement(s)": "A",
-          "nb_courses": 4,
-          "nb_victoires": 0,
-          "nb_places": 1,
-          "cote": 14.0,
-          "cote_tendance": "+",
-          "cote_reference": 14.0
+          "cote_reference": 16.0,
+          "arrivee": 8
         },
         {
           "n°": "9",
@@ -215,36 +223,41 @@
           "nb_courses": 82,
           "nb_victoires": 5,
           "nb_places": 37,
-          "cote": 3.1,
+          "cote": 5.7,
           "cote_tendance": "",
-          "cote_reference": 3.1
+          "cote_reference": 4.6,
+          "arrivee": 9
         },
         {
-          "n°": "10",
-          "cheval": "AKAGERA F.PU. 6 a.",
+          "n°": "5",
+          "cheval": "EASILY CONVINCED H.PU. 4 a.",
           "cheval_url": "",
-          "père_mère": "Par: PRINCE GIBRALTAR et AGUSHAYA (OASIS DREAM)",
-          "corde": "(Corde:07)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C1/P10.png",
-          "propriétaire": "JUL .PHELIPPON",
-          "entraineur": "JUL .PHELIPPON",
-          "éleveurs": "MME FRANCOISE PERREE",
-          "jockey": "T.TRULLIER",
-          "poids": "55.5 kg",
-          "gains": "7253100",
-          "musique": "0p0p(25)1p5p5p7p7p3p0p",
-          "valeur": "55.5",
-          "equipement(s)": "A",
-          "nb_courses": 39,
-          "nb_victoires": 4,
-          "nb_places": 20,
-          "cote": 12.0,
+          "père_mère": "Par: KODI BEAR et GULLIBLE (MAKE BELIEVE)",
+          "corde": "(Corde:06)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C1/P5.png",
+          "propriétaire": "MME A.BHANTOO",
+          "entraineur": "A.WEST",
+          "éleveurs": "COTTON HOUSE BLOODSTOCK",
+          "jockey": "M.Z .SAHEBJAN",
+          "poids": "59 kg",
+          "gains": "1513600",
+          "musique": "0p6p0p8p0p(25)0p1p0p9p",
+          "valeur": "59.0",
+          "equipement(s)": "",
+          "nb_courses": 19,
+          "nb_victoires": 2,
+          "nb_places": 3,
+          "cote": 27.0,
           "cote_tendance": "+",
-          "cote_reference": 11.0
+          "cote_reference": 14.0,
+          "arrivee": 10
         }
       ],
       "typePiste": "HERBE",
-      "cordeCourse": "CORDE_DROITE"
+      "terrain": "Souple",
+      "penetrometre": "3,7",
+      "cordeCourse": "CORDE_DROITE",
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX HENRI VAN DE POELE",
@@ -254,52 +267,6 @@
       "distance": "1200m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "BEWARE OF THE BEAR M.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: BUNGLE INTHEJUNGLE et BRAZILIAN BREEZE (INVINCIBLE SPIRIT)",
-          "corde": "(Corde:11)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C2/P1.png",
-          "propriétaire": "MME M.BLANC",
-          "entraineur": "MME M.SCANDELLA-LACAILLE",
-          "éleveurs": "MR P. BURNS",
-          "jockey": "M.GRANDIN",
-          "poids": "60 kg",
-          "gains": "2926700",
-          "musique": "5p5p5p2p7p6p(25)4p2p3p",
-          "valeur": "60.0",
-          "equipement(s)": "A",
-          "nb_courses": 17,
-          "nb_victoires": 1,
-          "nb_places": 12,
-          "cote": 12.0,
-          "cote_tendance": "-",
-          "cote_reference": 12.0
-        },
-        {
-          "n°": "2",
-          "cheval": "YOHIO M.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: YAFTA et VATOHIO (VATORI)",
-          "corde": "(Corde:04)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C2/P2.png",
-          "propriétaire": "SCEA ECURIE BADER",
-          "entraineur": "A.FOUASSIER",
-          "éleveurs": "S.C.E.A. ECURIE BADER",
-          "jockey": "F.LEFEBVRE",
-          "poids": "60 kg",
-          "gains": "1223500",
-          "musique": "4p4p(25)2p3p7p3p2p7p",
-          "valeur": "60.0",
-          "equipement(s)": "",
-          "nb_courses": 8,
-          "nb_victoires": 0,
-          "nb_places": 8,
-          "cote": 2.2,
-          "cote_tendance": "",
-          "cote_reference": 2.2
-        },
         {
           "n°": "3",
           "cheval": "SUGAR DADDY H.PU. 3 a.",
@@ -319,32 +286,10 @@
           "nb_courses": 11,
           "nb_victoires": 0,
           "nb_places": 9,
-          "cote": 11.0,
-          "cote_tendance": "-",
-          "cote_reference": 11.0
-        },
-        {
-          "n°": "4",
-          "cheval": "ONE EDITION F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: TWILIGHT SON et EXECUTRIX (OASIS DREAM)",
-          "corde": "(Corde:10)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C2/P4.png",
-          "propriétaire": "TENERIFE",
-          "entraineur": "D.WINDRIF",
-          "éleveurs": "HYDE PARK STUD",
-          "jockey": "M.MARQUETTE",
-          "poids": "59 kg",
-          "gains": "254400",
-          "musique": "7p(25)4p4p7p",
-          "valeur": "59.0",
-          "equipement(s)": "A",
-          "nb_courses": 4,
-          "nb_victoires": 0,
-          "nb_places": 4,
-          "cote": 11.0,
-          "cote_tendance": "-",
-          "cote_reference": 11.0
+          "cote": 4.1,
+          "cote_tendance": "",
+          "cote_reference": 10.0,
+          "arrivee": 1
         },
         {
           "n°": "5",
@@ -365,9 +310,34 @@
           "nb_courses": 20,
           "nb_victoires": 2,
           "nb_places": 14,
-          "cote": 14.0,
-          "cote_tendance": "+",
-          "cote_reference": 14.0
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 7.9,
+          "arrivee": 2
+        },
+        {
+          "n°": "2",
+          "cheval": "YOHIO M.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: YAFTA et VATOHIO (VATORI)",
+          "corde": "(Corde:04)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C2/P2.png",
+          "propriétaire": "SCEA ECURIE BADER",
+          "entraineur": "A.FOUASSIER",
+          "éleveurs": "S.C.E.A. ECURIE BADER",
+          "jockey": "F.LEFEBVRE",
+          "poids": "60 kg",
+          "gains": "1223500",
+          "musique": "4p4p(25)2p3p7p3p2p7p",
+          "valeur": "60.0",
+          "equipement(s)": "",
+          "nb_courses": 8,
+          "nb_victoires": 0,
+          "nb_places": 8,
+          "cote": 6.1,
+          "cote_tendance": "",
+          "cote_reference": 4.3,
+          "arrivee": 3
         },
         {
           "n°": "6",
@@ -388,9 +358,34 @@
           "nb_courses": 12,
           "nb_victoires": 1,
           "nb_places": 7,
-          "cote": 8.9,
+          "cote": 9.5,
           "cote_tendance": "",
-          "cote_reference": 8.9
+          "cote_reference": 7.6,
+          "arrivee": 4
+        },
+        {
+          "n°": "4",
+          "cheval": "ONE EDITION F.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: TWILIGHT SON et EXECUTRIX (OASIS DREAM)",
+          "corde": "(Corde:10)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C2/P4.png",
+          "propriétaire": "TENERIFE",
+          "entraineur": "D.WINDRIF",
+          "éleveurs": "HYDE PARK STUD",
+          "jockey": "M.MARQUETTE",
+          "poids": "59 kg",
+          "gains": "254400",
+          "musique": "7p(25)4p4p7p",
+          "valeur": "59.0",
+          "equipement(s)": "A",
+          "nb_courses": 4,
+          "nb_victoires": 0,
+          "nb_places": 4,
+          "cote": 47.0,
+          "cote_tendance": "+",
+          "cote_reference": 15.0,
+          "arrivee": 5
         },
         {
           "n°": "7",
@@ -411,32 +406,34 @@
           "nb_courses": 12,
           "nb_victoires": 0,
           "nb_places": 7,
-          "cote": 21.0,
-          "cote_tendance": "+",
-          "cote_reference": 21.0
+          "cote": 16.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0,
+          "arrivee": 6
         },
         {
-          "n°": "8",
-          "cheval": "SURFIN SAFARI F.PU. 3 a.",
+          "n°": "1",
+          "cheval": "BEWARE OF THE BEAR M.PU. 3 a.",
           "cheval_url": "",
-          "père_mère": "Par: GOKEN et BALLE BLANCHE (ROCK OF GIBRALTAR)",
-          "corde": "(Corde:03)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C2/P8.png",
-          "propriétaire": "F.GIACOBBE",
-          "entraineur": "M.GUARNIERI",
-          "éleveurs": "ECURIE DU SUD",
-          "jockey": "L.CARBONI",
-          "poids": "58 kg",
-          "gains": "61700",
-          "musique": "6p0p(25)0p",
-          "valeur": "58.0",
-          "equipement(s)": "",
-          "nb_courses": 3,
-          "nb_victoires": 0,
-          "nb_places": 1,
-          "cote": 26.0,
-          "cote_tendance": "+",
-          "cote_reference": 26.0
+          "père_mère": "Par: BUNGLE INTHEJUNGLE et BRAZILIAN BREEZE (INVINCIBLE SPIRIT)",
+          "corde": "(Corde:11)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C2/P1.png",
+          "propriétaire": "MME M.BLANC",
+          "entraineur": "MME M.SCANDELLA-LACAILLE",
+          "éleveurs": "MR P. BURNS",
+          "jockey": "M.GRANDIN",
+          "poids": "60 kg",
+          "gains": "2926700",
+          "musique": "5p5p5p2p7p6p(25)4p2p3p",
+          "valeur": "60.0",
+          "equipement(s)": "A",
+          "nb_courses": 17,
+          "nb_victoires": 1,
+          "nb_places": 12,
+          "cote": 4.9,
+          "cote_tendance": "",
+          "cote_reference": 7.1,
+          "arrivee": 7
         },
         {
           "n°": "9",
@@ -457,32 +454,10 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 9.2,
-          "cote_tendance": "+",
-          "cote_reference": 9.1
-        },
-        {
-          "n°": "10",
-          "cheval": "ACHILEA CHOPE F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: GUTAIFAN et ACHILLEA (DYLAN THOMAS)",
-          "corde": "(Corde:06)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C2/P10.png",
-          "propriétaire": "T.DE VLAMINCK",
-          "entraineur": "T.DE VLAMINCK",
-          "éleveurs": "MR ALAIN CHOPARD",
-          "jockey": "S.BREUX",
-          "poids": "56 kg",
-          "gains": "852000",
-          "musique": "0p0p(25)0p0p0p8p1p5p7p",
-          "valeur": "56.0",
-          "equipement(s)": "",
-          "nb_courses": 10,
-          "nb_victoires": 1,
-          "nb_places": 3,
-          "cote": 323.0,
-          "cote_tendance": "+",
-          "cote_reference": 321.0
+          "cote": 20.0,
+          "cote_tendance": "",
+          "cote_reference": 7.1,
+          "arrivee": 8
         },
         {
           "n°": "11",
@@ -503,36 +478,65 @@
           "nb_courses": 10,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 40.0,
-          "cote_tendance": "+",
-          "cote_reference": 40.0
+          "cote": 8.9,
+          "cote_tendance": "-",
+          "cote_reference": 15.0,
+          "arrivee": 9
         },
         {
-          "n°": "12",
-          "cheval": "PLAY THE GAME F.PU. 3 a.",
+          "n°": "8",
+          "cheval": "SURFIN SAFARI F.PU. 3 a.",
           "cheval_url": "",
-          "père_mère": "Par: CLOTH OF STARS et WILSIDE (VERGLAS)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C2/P12.png",
-          "propriétaire": "ECURIE NICOLATO",
-          "entraineur": "M.BOUTIN (S)",
-          "éleveurs": "MR ALBAN CHEVALIER DU FAU",
-          "jockey": "M.PIEN",
-          "poids": "55.5 kg",
-          "gains": "1591500",
-          "musique": "6p8p3p7p4p3p5p7p(25)9p",
-          "valeur": "55.5",
+          "père_mère": "Par: GOKEN et BALLE BLANCHE (ROCK OF GIBRALTAR)",
+          "corde": "(Corde:03)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C2/P8.png",
+          "propriétaire": "F.GIACOBBE",
+          "entraineur": "M.GUARNIERI",
+          "éleveurs": "ECURIE DU SUD",
+          "jockey": "L.CARBONI",
+          "poids": "58 kg",
+          "gains": "61700",
+          "musique": "6p0p(25)0p",
+          "valeur": "58.0",
           "equipement(s)": "",
-          "nb_courses": 17,
+          "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 14,
+          "nb_places": 1,
           "cote": 24.0,
+          "cote_tendance": "",
+          "cote_reference": 23.0,
+          "arrivee": 10
+        },
+        {
+          "n°": "10",
+          "cheval": "ACHILEA CHOPE F.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: GUTAIFAN et ACHILLEA (DYLAN THOMAS)",
+          "corde": "(Corde:06)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C2/P10.png",
+          "propriétaire": "T.DE VLAMINCK",
+          "entraineur": "T.DE VLAMINCK",
+          "éleveurs": "MR ALAIN CHOPARD",
+          "jockey": "S.BREUX",
+          "poids": "56 kg",
+          "gains": "852000",
+          "musique": "0p0p(25)0p0p0p8p1p5p7p",
+          "valeur": "56.0",
+          "equipement(s)": "",
+          "nb_courses": 10,
+          "nb_victoires": 1,
+          "nb_places": 3,
+          "cote": 58.0,
           "cote_tendance": "+",
-          "cote_reference": 24.0
+          "cote_reference": 33.0,
+          "arrivee": 11
         }
       ],
       "typePiste": "HERBE",
-      "cordeCourse": "CORDE_DROITE"
+      "terrain": "Souple",
+      "penetrometre": "3,7",
+      "cordeCourse": "CORDE_DROITE",
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX EQUURES",
@@ -542,29 +546,6 @@
       "distance": "1200m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "NIOUININON H.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: TIBERIAN et HURKALYA (DIAMOND GREEN)",
-          "corde": "(Corde:09)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C3/P1.png",
-          "propriétaire": "G.VERHEYE",
-          "entraineur": "G.VERHEYE",
-          "éleveurs": "MR PASCAL-RAYMOND BEYER",
-          "jockey": "C.CARBONI",
-          "poids": "60 kg",
-          "gains": "1018400",
-          "musique": "1p0p9p0p(25)0p9p5p",
-          "valeur": "60.0",
-          "equipement(s)": "",
-          "nb_courses": 7,
-          "nb_victoires": 1,
-          "nb_places": 1,
-          "cote": 15.0,
-          "cote_tendance": "",
-          "cote_reference": 15.0
-        },
         {
           "n°": "2",
           "cheval": "RUE EBLE H.PU. 3 a.",
@@ -584,9 +565,10 @@
           "nb_courses": 11,
           "nb_victoires": 0,
           "nb_places": 7,
-          "cote": 9.3,
-          "cote_tendance": "",
-          "cote_reference": 9.3
+          "cote": 4.7,
+          "cote_tendance": "-",
+          "cote_reference": 4.9,
+          "arrivee": 1
         },
         {
           "n°": "3",
@@ -607,9 +589,10 @@
           "nb_courses": 13,
           "nb_victoires": 0,
           "nb_places": 8,
-          "cote": 1.9,
+          "cote": 3.3,
           "cote_tendance": "",
-          "cote_reference": 1.9
+          "cote_reference": 3.0,
+          "arrivee": 2
         },
         {
           "n°": "4",
@@ -630,32 +613,10 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 6.9,
-          "cote_tendance": "",
-          "cote_reference": 6.9
-        },
-        {
-          "n°": "5",
-          "cheval": "REGIS CAMBACERES H.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: TORONADO et DONT TEUTCH (COUNTRY REEL)",
-          "corde": "(Corde:11)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C3/P5.png",
-          "propriétaire": "J.LEROY",
-          "entraineur": "J.LEROY",
-          "éleveurs": "MR JEREMY PARA",
-          "jockey": "T.LE GRAET",
-          "poids": "59.5 kg",
-          "gains": "168000",
-          "musique": "0p(25)0p0p7p6p6p7p",
-          "valeur": "59.5",
-          "equipement(s)": "A",
-          "nb_courses": 7,
-          "nb_victoires": 0,
-          "nb_places": 4,
-          "cote": 79.0,
-          "cote_tendance": "",
-          "cote_reference": 79.0
+          "cote": 11.0,
+          "cote_tendance": "+",
+          "cote_reference": 14.0,
+          "arrivee": 3
         },
         {
           "n°": "6",
@@ -676,32 +637,34 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 31.0,
-          "cote_tendance": "",
-          "cote_reference": 31.0
+          "cote": 13.0,
+          "cote_tendance": "+",
+          "cote_reference": 14.0,
+          "arrivee": 4
         },
         {
-          "n°": "8",
-          "cheval": "WOODSHINE F.PU. 3 a.",
+          "n°": "1",
+          "cheval": "NIOUININON H.PU. 3 a.",
           "cheval_url": "",
-          "père_mère": "Par: BIRCHWOOD et MOLLY SUNSHINE (SOLDIER HOLLOW)",
-          "corde": "(Corde:07)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C3/P8.png",
-          "propriétaire": "S.LANNOO",
-          "entraineur": "B.DE KONINCK",
-          "éleveurs": "MR DENIS LEMARIE",
-          "jockey": "S.BREUX",
-          "poids": "58 kg",
-          "gains": "",
-          "musique": "8p0p0p0p(25)0p",
-          "valeur": "58.0",
+          "père_mère": "Par: TIBERIAN et HURKALYA (DIAMOND GREEN)",
+          "corde": "(Corde:09)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C3/P1.png",
+          "propriétaire": "G.VERHEYE",
+          "entraineur": "G.VERHEYE",
+          "éleveurs": "MR PASCAL-RAYMOND BEYER",
+          "jockey": "C.CARBONI",
+          "poids": "60 kg",
+          "gains": "1018400",
+          "musique": "1p0p9p0p(25)0p9p5p",
+          "valeur": "60.0",
           "equipement(s)": "",
-          "nb_courses": 5,
-          "nb_victoires": 0,
-          "nb_places": 0,
-          "cote": 158.0,
-          "cote_tendance": "",
-          "cote_reference": 158.0
+          "nb_courses": 7,
+          "nb_victoires": 1,
+          "nb_places": 1,
+          "cote": 7.1,
+          "cote_tendance": "-",
+          "cote_reference": 8.4,
+          "arrivee": 5
         },
         {
           "n°": "9",
@@ -722,55 +685,10 @@
           "nb_courses": 11,
           "nb_victoires": 1,
           "nb_places": 5,
-          "cote": 10.0,
-          "cote_tendance": "",
-          "cote_reference": 10.0
-        },
-        {
-          "n°": "10",
-          "cheval": "HOMMAGE A NADINE F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: GOLDEN HORDE et ASCOT GLORY (KHELEYF)",
-          "corde": "(Corde:06)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C3/P10.png",
-          "propriétaire": "VDA TRANSPORT SOLUTIONS",
-          "entraineur": "A.FOUASSIER",
-          "éleveurs": "MME FRANCOISE PERREE",
-          "jockey": "M.GRANDIN",
-          "poids": "57 kg",
-          "gains": "371000",
-          "musique": "7p0p0p0p(25)0p3p9p7p7p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 9,
-          "nb_victoires": 0,
-          "nb_places": 4,
-          "cote": 12.0,
-          "cote_tendance": "",
-          "cote_reference": 12.0
-        },
-        {
-          "n°": "11",
-          "cheval": "WITHOUT NEWS F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: NEW BAY et WITH REASON (FRANKEL)",
-          "corde": "(Corde:08)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C3/P11.png",
-          "propriétaire": "D.ARTU(S)/G.PERRIER/D.BENARD",
-          "entraineur": "D.ARTU (S)",
-          "éleveurs": "MR GARY MIDDLEBROOK",
-          "jockey": "N.BAUDET",
-          "poids": "57 kg",
-          "gains": "229900",
-          "musique": "9p6p7p9p0p(25)7p5p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 7,
-          "nb_victoires": 0,
-          "nb_places": 4,
-          "cote": 39.0,
-          "cote_tendance": "",
-          "cote_reference": 39.0
+          "cote": 6.5,
+          "cote_tendance": "+",
+          "cote_reference": 8.9,
+          "arrivee": 6
         },
         {
           "n°": "12",
@@ -791,13 +709,113 @@
           "nb_courses": 6,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 22.0,
-          "cote_tendance": "",
-          "cote_reference": 22.0
+          "cote": 56.0,
+          "cote_tendance": "+",
+          "cote_reference": 23.0,
+          "arrivee": 7
+        },
+        {
+          "n°": "10",
+          "cheval": "HOMMAGE A NADINE F.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: GOLDEN HORDE et ASCOT GLORY (KHELEYF)",
+          "corde": "(Corde:06)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C3/P10.png",
+          "propriétaire": "VDA TRANSPORT SOLUTIONS",
+          "entraineur": "A.FOUASSIER",
+          "éleveurs": "MME FRANCOISE PERREE",
+          "jockey": "M.GRANDIN",
+          "poids": "57 kg",
+          "gains": "371000",
+          "musique": "7p0p0p0p(25)0p3p9p7p7p",
+          "valeur": "57.0",
+          "equipement(s)": "",
+          "nb_courses": 9,
+          "nb_victoires": 0,
+          "nb_places": 4,
+          "cote": 11.0,
+          "cote_tendance": "+",
+          "cote_reference": 11.0,
+          "arrivee": 8
+        },
+        {
+          "n°": "5",
+          "cheval": "REGIS CAMBACERES H.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: TORONADO et DONT TEUTCH (COUNTRY REEL)",
+          "corde": "(Corde:11)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C3/P5.png",
+          "propriétaire": "J.LEROY",
+          "entraineur": "J.LEROY",
+          "éleveurs": "MR JEREMY PARA",
+          "jockey": "T.LE GRAET",
+          "poids": "59.5 kg",
+          "gains": "168000",
+          "musique": "0p(25)0p0p7p6p6p7p",
+          "valeur": "59.5",
+          "equipement(s)": "A",
+          "nb_courses": 7,
+          "nb_victoires": 0,
+          "nb_places": 4,
+          "cote": 106.0,
+          "cote_tendance": "+",
+          "cote_reference": 32.0,
+          "arrivee": 9
+        },
+        {
+          "n°": "11",
+          "cheval": "WITHOUT NEWS F.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: NEW BAY et WITH REASON (FRANKEL)",
+          "corde": "(Corde:08)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C3/P11.png",
+          "propriétaire": "D.ARTU(S)/G.PERRIER/D.BENARD",
+          "entraineur": "D.ARTU (S)",
+          "éleveurs": "MR GARY MIDDLEBROOK",
+          "jockey": "N.BAUDET",
+          "poids": "57 kg",
+          "gains": "229900",
+          "musique": "9p6p7p9p0p(25)7p5p",
+          "valeur": "57.0",
+          "equipement(s)": "",
+          "nb_courses": 7,
+          "nb_victoires": 0,
+          "nb_places": 4,
+          "cote": 23.0,
+          "cote_tendance": "+",
+          "cote_reference": 29.0,
+          "arrivee": 10
+        },
+        {
+          "n°": "8",
+          "cheval": "WOODSHINE F.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: BIRCHWOOD et MOLLY SUNSHINE (SOLDIER HOLLOW)",
+          "corde": "(Corde:07)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R3/C3/P8.png",
+          "propriétaire": "S.LANNOO",
+          "entraineur": "B.DE KONINCK",
+          "éleveurs": "MR DENIS LEMARIE",
+          "jockey": "S.BREUX",
+          "poids": "58 kg",
+          "gains": "",
+          "musique": "8p0p0p0p(25)0p",
+          "valeur": "58.0",
+          "equipement(s)": "",
+          "nb_courses": 5,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 71.0,
+          "cote_tendance": "+",
+          "cote_reference": 23.0,
+          "arrivee": 11
         }
       ],
       "typePiste": "HERBE",
-      "cordeCourse": "CORDE_DROITE"
+      "terrain": "Souple",
+      "penetrometre": "3,7",
+      "cordeCourse": "CORDE_DROITE",
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX JEAN-YVES ARTU",
@@ -826,9 +844,9 @@
           "nb_courses": 27,
           "nb_victoires": 3,
           "nb_places": 11,
-          "cote": 8.4,
+          "cote": 10.0,
           "cote_tendance": "+",
-          "cote_reference": 8.3
+          "cote_reference": 10.0
         },
         {
           "n°": "2",
@@ -849,9 +867,9 @@
           "nb_courses": 15,
           "nb_victoires": 1,
           "nb_places": 7,
-          "cote": 39.0,
+          "cote": 20.0,
           "cote_tendance": "-",
-          "cote_reference": 68.0
+          "cote_reference": 21.0
         },
         {
           "n°": "3",
@@ -872,9 +890,9 @@
           "nb_courses": 26,
           "nb_victoires": 1,
           "nb_places": 17,
-          "cote": 6.3,
-          "cote_tendance": "+",
-          "cote_reference": 6.2
+          "cote": 9.6,
+          "cote_tendance": "-",
+          "cote_reference": 9.0
         },
         {
           "n°": "4",
@@ -895,9 +913,9 @@
           "nb_courses": 27,
           "nb_victoires": 2,
           "nb_places": 19,
-          "cote": 9.9,
-          "cote_tendance": "+",
-          "cote_reference": 9.7
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 15.0
         },
         {
           "n°": "5",
@@ -918,9 +936,9 @@
           "nb_courses": 66,
           "nb_victoires": 6,
           "nb_places": 24,
-          "cote": 14.0,
+          "cote": 8.5,
           "cote_tendance": "+",
-          "cote_reference": 14.0
+          "cote_reference": 7.8
         },
         {
           "n°": "6",
@@ -941,9 +959,9 @@
           "nb_courses": 58,
           "nb_victoires": 6,
           "nb_places": 22,
-          "cote": 34.0,
+          "cote": 27.0,
           "cote_tendance": "+",
-          "cote_reference": 34.0
+          "cote_reference": 24.0
         },
         {
           "n°": "7",
@@ -964,9 +982,9 @@
           "nb_courses": 25,
           "nb_victoires": 2,
           "nb_places": 11,
-          "cote": 8.1,
+          "cote": 12.0,
           "cote_tendance": "+",
-          "cote_reference": 8.0
+          "cote_reference": 10.0
         },
         {
           "n°": "8",
@@ -987,9 +1005,9 @@
           "nb_courses": 8,
           "nb_victoires": 1,
           "nb_places": 5,
-          "cote": 30.0,
+          "cote": 15.0,
           "cote_tendance": "+",
-          "cote_reference": 30.0
+          "cote_reference": 14.0
         },
         {
           "n°": "9",
@@ -1010,9 +1028,9 @@
           "nb_courses": 72,
           "nb_victoires": 5,
           "nb_places": 33,
-          "cote": 5.2,
+          "cote": 7.0,
           "cote_tendance": "",
-          "cote_reference": 5.2
+          "cote_reference": 6.7
         },
         {
           "n°": "10",
@@ -1033,9 +1051,9 @@
           "nb_courses": 24,
           "nb_victoires": 4,
           "nb_places": 9,
-          "cote": 139.0,
-          "cote_tendance": "+",
-          "cote_reference": 137.0
+          "cote": 47.0,
+          "cote_tendance": "-",
+          "cote_reference": 58.0
         },
         {
           "n°": "11",
@@ -1056,9 +1074,9 @@
           "nb_courses": 6,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 69.0,
+          "cote": 47.0,
           "cote_tendance": "+",
-          "cote_reference": 68.0
+          "cote_reference": 42.0
         },
         {
           "n°": "12",
@@ -1079,9 +1097,9 @@
           "nb_courses": 50,
           "nb_victoires": 5,
           "nb_places": 22,
-          "cote": 10.0,
+          "cote": 11.0,
           "cote_tendance": "+",
-          "cote_reference": 10.0
+          "cote_reference": 12.0
         },
         {
           "n°": "13",
@@ -1102,9 +1120,9 @@
           "nb_courses": 80,
           "nb_victoires": 9,
           "nb_places": 41,
-          "cote": 11.0,
+          "cote": 7.9,
           "cote_tendance": "-",
-          "cote_reference": 11.0
+          "cote_reference": 8.3
         },
         {
           "n°": "14",
@@ -1125,12 +1143,14 @@
           "nb_courses": 40,
           "nb_victoires": 2,
           "nb_places": 17,
-          "cote": 12.0,
-          "cote_tendance": "+",
-          "cote_reference": 11.0
+          "cote": 8.5,
+          "cote_tendance": "",
+          "cote_reference": 10.0
         }
       ],
       "typePiste": "HERBE",
+      "terrain": "Souple",
+      "penetrometre": "3,7",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -1160,7 +1180,7 @@
           "nb_courses": 8,
           "nb_victoires": 0,
           "nb_places": 8,
-          "cote": 3.8,
+          "cote": 4.9,
           "cote_tendance": "+",
           "cote_reference": 3.3
         },
@@ -1183,8 +1203,8 @@
           "nb_courses": 4,
           "nb_victoires": 1,
           "nb_places": 2,
-          "cote": 2.4,
-          "cote_tendance": "-",
+          "cote": 3.0,
+          "cote_tendance": "+",
           "cote_reference": 3.1
         },
         {
@@ -1206,8 +1226,8 @@
           "nb_courses": 4,
           "nb_victoires": 1,
           "nb_places": 2,
-          "cote": 29.0,
-          "cote_tendance": "+",
+          "cote": 14.0,
+          "cote_tendance": "-",
           "cote_reference": 25.0
         },
         {
@@ -1229,7 +1249,7 @@
           "nb_courses": 4,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 8.3,
+          "cote": 7.2,
           "cote_tendance": "+",
           "cote_reference": 7.4
         },
@@ -1252,8 +1272,8 @@
           "nb_courses": 7,
           "nb_victoires": 1,
           "nb_places": 4,
-          "cote": 26.0,
-          "cote_tendance": "+",
+          "cote": 35.0,
+          "cote_tendance": "-",
           "cote_reference": 25.0
         },
         {
@@ -1275,8 +1295,8 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 11.0,
-          "cote_tendance": "+",
+          "cote": 16.0,
+          "cote_tendance": "-",
           "cote_reference": 9.8
         },
         {
@@ -1298,7 +1318,7 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 6.9,
+          "cote": 4.5,
           "cote_tendance": "+",
           "cote_reference": 6.0
         },
@@ -1321,8 +1341,8 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 33.0,
-          "cote_tendance": "+",
+          "cote": 24.0,
+          "cote_tendance": "",
           "cote_reference": 29.0
         },
         {
@@ -1343,7 +1363,9 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 60.0,
+          "cote_tendance": "-"
         },
         {
           "n°": "10",
@@ -1364,12 +1386,14 @@
           "nb_courses": 8,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 78.0,
-          "cote_tendance": "+",
+          "cote": 39.0,
+          "cote_tendance": "-",
           "cote_reference": 69.0
         }
       ],
       "typePiste": "HERBE",
+      "terrain": "Souple",
+      "penetrometre": "3,7",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -1399,8 +1423,8 @@
           "nb_courses": 30,
           "nb_victoires": 5,
           "nb_places": 18,
-          "cote": 6.8,
-          "cote_tendance": "+",
+          "cote": 4.7,
+          "cote_tendance": "-",
           "cote_reference": 6.6
         },
         {
@@ -1422,8 +1446,8 @@
           "nb_courses": 36,
           "nb_victoires": 11,
           "nb_places": 13,
-          "cote": 133.0,
-          "cote_tendance": "+",
+          "cote": 18.0,
+          "cote_tendance": "-",
           "cote_reference": 129.0
         },
         {
@@ -1445,7 +1469,7 @@
           "nb_courses": 28,
           "nb_victoires": 5,
           "nb_places": 14,
-          "cote": 10.0,
+          "cote": 9.6,
           "cote_tendance": "-",
           "cote_reference": 11.0
         },
@@ -1468,8 +1492,8 @@
           "nb_courses": 11,
           "nb_victoires": 2,
           "nb_places": 6,
-          "cote": 8.3,
-          "cote_tendance": "+",
+          "cote": 7.8,
+          "cote_tendance": "-",
           "cote_reference": 8.1
         },
         {
@@ -1491,7 +1515,7 @@
           "nb_courses": 18,
           "nb_victoires": 1,
           "nb_places": 11,
-          "cote": 16.0,
+          "cote": 17.0,
           "cote_tendance": "+",
           "cote_reference": 16.0
         },
@@ -1514,8 +1538,8 @@
           "nb_courses": 60,
           "nb_victoires": 7,
           "nb_places": 30,
-          "cote": 2.8,
-          "cote_tendance": "",
+          "cote": 5.0,
+          "cote_tendance": "+",
           "cote_reference": 2.8
         },
         {
@@ -1537,8 +1561,8 @@
           "nb_courses": 24,
           "nb_victoires": 4,
           "nb_places": 11,
-          "cote": 7.0,
-          "cote_tendance": "-",
+          "cote": 7.3,
+          "cote_tendance": "+",
           "cote_reference": 7.6
         },
         {
@@ -1560,7 +1584,7 @@
           "nb_courses": 39,
           "nb_victoires": 8,
           "nb_places": 23,
-          "cote": 7.6,
+          "cote": 8.9,
           "cote_tendance": "+",
           "cote_reference": 7.4
         },
@@ -1583,7 +1607,7 @@
           "nb_courses": 12,
           "nb_victoires": 3,
           "nb_places": 4,
-          "cote": 33.0,
+          "cote": 13.0,
           "cote_tendance": "+",
           "cote_reference": 32.0
         },
@@ -1606,12 +1630,14 @@
           "nb_courses": 9,
           "nb_victoires": 0,
           "nb_places": 6,
-          "cote": 17.0,
+          "cote": 15.0,
           "cote_tendance": "+",
           "cote_reference": 17.0
         }
       ],
       "typePiste": "HERBE",
+      "terrain": "Souple",
+      "penetrometre": "3,7",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -1641,8 +1667,8 @@
           "nb_courses": 7,
           "nb_victoires": 1,
           "nb_places": 2,
-          "cote": 11.0,
-          "cote_tendance": "",
+          "cote": 19.0,
+          "cote_tendance": "+",
           "cote_reference": 11.0
         },
         {
@@ -1664,8 +1690,8 @@
           "nb_courses": 17,
           "nb_victoires": 1,
           "nb_places": 12,
-          "cote": 31.0,
-          "cote_tendance": "",
+          "cote": 36.0,
+          "cote_tendance": "+",
           "cote_reference": 31.0
         },
         {
@@ -1688,7 +1714,7 @@
           "nb_victoires": 2,
           "nb_places": 4,
           "cote": 1.5,
-          "cote_tendance": "",
+          "cote_tendance": "+",
           "cote_reference": 1.5
         },
         {
@@ -1710,8 +1736,8 @@
           "nb_courses": 7,
           "nb_victoires": 1,
           "nb_places": 6,
-          "cote": 7.2,
-          "cote_tendance": "",
+          "cote": 11.0,
+          "cote_tendance": "-",
           "cote_reference": 7.2
         },
         {
@@ -1733,8 +1759,8 @@
           "nb_courses": 5,
           "nb_victoires": 1,
           "nb_places": 2,
-          "cote": 7.8,
-          "cote_tendance": "",
+          "cote": 4.1,
+          "cote_tendance": "-",
           "cote_reference": 7.8
         },
         {
@@ -1756,8 +1782,8 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 11.0,
-          "cote_tendance": "",
+          "cote": 18.0,
+          "cote_tendance": "+",
           "cote_reference": 11.0
         },
         {
@@ -1779,12 +1805,14 @@
           "nb_courses": 6,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 23.0,
-          "cote_tendance": "",
+          "cote": 36.0,
+          "cote_tendance": "-",
           "cote_reference": 23.0
         }
       ],
       "typePiste": "HERBE",
+      "terrain": "Souple",
+      "penetrometre": "3,7",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -1814,7 +1842,7 @@
           "nb_courses": 20,
           "nb_victoires": 1,
           "nb_places": 7,
-          "cote": 6.1,
+          "cote": 9.8,
           "cote_tendance": "+",
           "cote_reference": 5.9
         },
@@ -1837,8 +1865,8 @@
           "nb_courses": 11,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 15.0,
-          "cote_tendance": "-",
+          "cote": 8.2,
+          "cote_tendance": "+",
           "cote_reference": 16.0
         },
         {
@@ -1860,8 +1888,8 @@
           "nb_courses": 19,
           "nb_victoires": 1,
           "nb_places": 11,
-          "cote": 6.5,
-          "cote_tendance": "-",
+          "cote": 7.5,
+          "cote_tendance": "+",
           "cote_reference": 6.6
         },
         {
@@ -1883,8 +1911,8 @@
           "nb_courses": 86,
           "nb_victoires": 5,
           "nb_places": 35,
-          "cote": 6.1,
-          "cote_tendance": "",
+          "cote": 6.8,
+          "cote_tendance": "+",
           "cote_reference": 6.1
         },
         {
@@ -1906,7 +1934,7 @@
           "nb_courses": 12,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 34.0,
+          "cote": 32.0,
           "cote_tendance": "+",
           "cote_reference": 33.0
         },
@@ -1929,8 +1957,8 @@
           "nb_courses": 32,
           "nb_victoires": 2,
           "nb_places": 11,
-          "cote": 34.0,
-          "cote_tendance": "-",
+          "cote": 64.0,
+          "cote_tendance": "+",
           "cote_reference": 41.0
         },
         {
@@ -1952,8 +1980,8 @@
           "nb_courses": 46,
           "nb_victoires": 4,
           "nb_places": 21,
-          "cote": 7.4,
-          "cote_tendance": "-",
+          "cote": 13.0,
+          "cote_tendance": "+",
           "cote_reference": 7.5
         },
         {
@@ -1975,7 +2003,7 @@
           "nb_courses": 35,
           "nb_victoires": 1,
           "nb_places": 11,
-          "cote": 15.0,
+          "cote": 13.0,
           "cote_tendance": "+",
           "cote_reference": 15.0
         },
@@ -1998,8 +2026,8 @@
           "nb_courses": 70,
           "nb_victoires": 5,
           "nb_places": 31,
-          "cote": 15.0,
-          "cote_tendance": "+",
+          "cote": 6.8,
+          "cote_tendance": "-",
           "cote_reference": 15.0
         },
         {
@@ -2021,8 +2049,8 @@
           "nb_courses": 49,
           "nb_victoires": 2,
           "nb_places": 16,
-          "cote": 19.0,
-          "cote_tendance": "+",
+          "cote": 17.0,
+          "cote_tendance": "",
           "cote_reference": 18.0
         },
         {
@@ -2044,7 +2072,7 @@
           "nb_courses": 23,
           "nb_victoires": 1,
           "nb_places": 7,
-          "cote": 42.0,
+          "cote": 12.0,
           "cote_tendance": "+",
           "cote_reference": 41.0
         },
@@ -2067,8 +2095,8 @@
           "nb_courses": 25,
           "nb_victoires": 0,
           "nb_places": 6,
-          "cote": 28.0,
-          "cote_tendance": "-",
+          "cote": 19.0,
+          "cote_tendance": "+",
           "cote_reference": 33.0
         },
         {
@@ -2090,12 +2118,14 @@
           "nb_courses": 13,
           "nb_victoires": 0,
           "nb_places": 6,
-          "cote": 6.3,
-          "cote_tendance": "+",
+          "cote": 10.0,
+          "cote_tendance": "-",
           "cote_reference": 6.1
         }
       ],
       "typePiste": "HERBE",
+      "terrain": "Souple",
+      "penetrometre": "3,7",
       "cordeCourse": "CORDE_DROITE"
     }
   ]

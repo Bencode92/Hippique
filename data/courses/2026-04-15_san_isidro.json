@@ -1,7 +1,7 @@
 {
   "hippodrome": "SAN ISIDRO",
   "type_reunion": "Plat",
-  "date_extraction": "2026-04-15T10:56:57.312870",
+  "date_extraction": "2026-04-15T15:31:04.574197",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/15042026/R7",
   "courses": [
     {
@@ -51,8 +51,8 @@
           "nb_courses": 14,
           "nb_victoires": 1,
           "nb_places": 10,
-          "cote": 1.1,
-          "cote_tendance": ""
+          "cote": 2.4,
+          "cote_tendance": "+"
         },
         {
           "n°": "3",
@@ -72,7 +72,9 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 1,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 2.4,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -93,7 +95,7 @@
           "nb_courses": 8,
           "nb_victoires": 1,
           "nb_places": 4,
-          "cote": 4.4,
+          "cote": 9.7,
           "cote_tendance": "+",
           "cote_reference": 1.1
         },
@@ -135,7 +137,9 @@
           "equipement(s)": "",
           "nb_courses": 23,
           "nb_victoires": 1,
-          "nb_places": 19
+          "nb_places": 19,
+          "cote": 4.8,
+          "cote_tendance": "+"
         },
         {
           "n°": "7",
@@ -218,6 +222,8 @@
           "nb_places": 8
         }
       ],
+      "terrain": "PSF LENTE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -309,29 +315,6 @@
           "nb_places": 7
         },
         {
-          "n°": "5",
-          "cheval": "DON JAGUAR M.PU. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: EQUAL STRIPES et JOYA LATINA (SOUTHERN HALO)",
-          "corde": "(Corde:05)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R7/C8/P5.png",
-          "propriétaire": "EL DIABLO",
-          "entraineur": "MIGUEL ANGEL BARTOLOME MEDINA",
-          "éleveurs": "",
-          "jockey": "WILLIAM PEREYRA",
-          "poids": "57 kg",
-          "gains": "3138800000",
-          "musique": "8p4p1p5p3p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 19,
-          "nb_victoires": 2,
-          "nb_places": 14,
-          "cote": 1.1,
-          "cote_tendance": "",
-          "cote_reference": 1.1
-        },
-        {
           "n°": "6",
           "cheval": "Q CULPEO M.PU. 6 a.",
           "cheval_url": "",
@@ -389,7 +372,9 @@
           "equipement(s)": "",
           "nb_courses": 18,
           "nb_victoires": 2,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 1.3,
+          "cote_tendance": ""
         },
         {
           "n°": "9",
@@ -452,6 +437,8 @@
           "nb_places": 5
         }
       ],
+      "terrain": "PSF LENTE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -500,7 +487,9 @@
           "equipement(s)": "",
           "nb_courses": 18,
           "nb_victoires": 2,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 4.6,
+          "cote_tendance": ""
         },
         {
           "n°": "3",
@@ -523,26 +512,6 @@
           "nb_places": 12
         },
         {
-          "n°": "4",
-          "cheval": "RISA PLENA F.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: SIXTIES SONG et RISA ETERNA (ORPEN)",
-          "corde": "(Corde:04)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R7/C9/P4.png",
-          "propriétaire": "TRADICION (SI)",
-          "entraineur": "OMAR FERNANDO LABANCA",
-          "éleveurs": "",
-          "jockey": "LAUTARO EMMANUEL BALMACEDA",
-          "poids": "57 kg",
-          "gains": "2052260000",
-          "musique": "6p4p1p5p3p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 14,
-          "nb_victoires": 2,
-          "nb_places": 11
-        },
-        {
           "n°": "5",
           "cheval": "DONA ROSA F.PU. 5 a.",
           "cheval_url": "",
@@ -561,7 +530,7 @@
           "nb_courses": 16,
           "nb_victoires": 2,
           "nb_places": 13,
-          "cote": 3.9,
+          "cote": 9.2,
           "cote_tendance": "",
           "cote_reference": 3.9
         },
@@ -584,7 +553,7 @@
           "nb_courses": 12,
           "nb_victoires": 2,
           "nb_places": 8,
-          "cote": 7.9,
+          "cote": 18.0,
           "cote_tendance": "",
           "cote_reference": 7.9
         },
@@ -629,26 +598,6 @@
           "nb_places": 13
         },
         {
-          "n°": "9",
-          "cheval": "INDIANA SOUND F.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: LONG ISLAND SOUND et INDIANA CATCHER (CATCHER IN THE RYE)",
-          "corde": "(Corde:09)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R7/C9/P9.png",
-          "propriétaire": "CONTA-DOS",
-          "entraineur": "GABRIEL ENRIQUE SCAGNETTI",
-          "éleveurs": "",
-          "jockey": "MAXIMILIANO HERNAN MACHADO",
-          "poids": "54 kg",
-          "gains": "1090320000",
-          "musique": "5p1p6p0p1p",
-          "valeur": "54.0",
-          "equipement(s)": "",
-          "nb_courses": 15,
-          "nb_victoires": 2,
-          "nb_places": 11
-        },
-        {
           "n°": "10",
           "cheval": "ELENIS F.PU. 5 a.",
           "cheval_url": "",
@@ -667,7 +616,7 @@
           "nb_courses": 4,
           "nb_victoires": 2,
           "nb_places": 2,
-          "cote": 1.3,
+          "cote": 3.0,
           "cote_tendance": "",
           "cote_reference": 1.3
         },
@@ -692,6 +641,8 @@
           "nb_places": 3
         }
       ],
+      "terrain": "PSF LENTE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -721,8 +672,8 @@
           "nb_courses": 29,
           "nb_victoires": 10,
           "nb_places": 15,
-          "cote": 7.4,
-          "cote_tendance": "+",
+          "cote": 11.0,
+          "cote_tendance": "",
           "cote_reference": 6.6
         },
         {
@@ -743,7 +694,9 @@
           "equipement(s)": "",
           "nb_courses": 16,
           "nb_victoires": 2,
-          "nb_places": 14
+          "nb_places": 14,
+          "cote": 11.0,
+          "cote_tendance": ""
         },
         {
           "n°": "3",
@@ -764,8 +717,8 @@
           "nb_courses": 32,
           "nb_victoires": 5,
           "nb_places": 26,
-          "cote": 7.4,
-          "cote_tendance": "+",
+          "cote": 3.9,
+          "cote_tendance": "",
           "cote_reference": 6.6
         },
         {
@@ -787,8 +740,8 @@
           "nb_courses": 16,
           "nb_victoires": 4,
           "nb_places": 9,
-          "cote": 3.7,
-          "cote_tendance": "-",
+          "cote": 5.9,
+          "cote_tendance": "",
           "cote_reference": 6.6
         },
         {
@@ -810,8 +763,8 @@
           "nb_courses": 57,
           "nb_victoires": 18,
           "nb_places": 35,
-          "cote": 2.9,
-          "cote_tendance": "+",
+          "cote": 2.6,
+          "cote_tendance": "",
           "cote_reference": 2.6
         },
         {
@@ -833,11 +786,13 @@
           "nb_courses": 9,
           "nb_victoires": 2,
           "nb_places": 7,
-          "cote": 3.7,
-          "cote_tendance": "+",
+          "cote": 5.9,
+          "cote_tendance": "",
           "cote_reference": 3.3
         }
       ],
+      "terrain": "PSF LENTE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -867,26 +822,6 @@
           "nb_courses": 6,
           "nb_victoires": 1,
           "nb_places": 5
-        },
-        {
-          "n°": "2",
-          "cheval": "VACATION JOY M.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: FORTIFY et VANIDOSA ORO (ORPEN)",
-          "corde": "(Corde:02)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R7/C11/P2.png",
-          "propriétaire": "MDC (LP)",
-          "entraineur": "JUAN SEBASTIAN MALDOTTI",
-          "éleveurs": "",
-          "jockey": "LEO NICOLAS ACUNA",
-          "poids": "53 kg",
-          "gains": "444640000",
-          "musique": "6p5p6p6p6p",
-          "valeur": "53.0",
-          "equipement(s)": "",
-          "nb_courses": 6,
-          "nb_victoires": 1,
-          "nb_places": 4
         },
         {
           "n°": "4",
@@ -992,26 +927,6 @@
           "nb_places": 5
         },
         {
-          "n°": "9",
-          "cheval": "JACK NEGRO M.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MR. MAGIC et JAQUELADA (SOUTHERN HALO)",
-          "corde": "(Corde:09)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/15042026/R7/C11/P9.png",
-          "propriétaire": "STUD BERNAGI (R*)",
-          "entraineur": "JULIO CESAR CONTI",
-          "éleveurs": "",
-          "jockey": "JUAN PABLO PAOLONI",
-          "poids": "56 kg",
-          "gains": "296100000",
-          "musique": "1p8p7p",
-          "valeur": "56.0",
-          "equipement(s)": "",
-          "nb_courses": 3,
-          "nb_victoires": 1,
-          "nb_places": 2
-        },
-        {
           "n°": "10",
           "cheval": "HUMOR ARGENTINO M.PU. 4 a.",
           "cheval_url": "",
@@ -1112,6 +1027,8 @@
           "nb_places": 2
         }
       ],
+      "terrain": "PSF LENTE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     }
   ]
