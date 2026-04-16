@@ -2562,24 +2562,31 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         // 3 critères : tauxVictoire cheval 2025 + cote marché + rang jockey 2025
         // Les classements 2025 = année fermée, zéro leakage
 
-        // Chercher le cheval dans 2025 ET 2026 (le meilleur des deux)
+        // Déterminer si la course est passée ou actuelle/future
+        // Courses passées = utiliser UNIQUEMENT 2025 (résultats figés, pas de biais)
+        // Courses d'aujourd'hui = combiner 2025 + 2026 (meilleur matching)
+        const courseDate = courseContext?.date || '';
+        const today = new Date().toISOString().split('T')[0];
+        const isCourseFuture = !courseDate || courseDate >= today;
+
+        // Chercher le cheval dans les classements
         const itemCheval25 = this.trouverItemDansClassement(this.dataHistorique?.chevaux_2025 || [], nomChevalBase, 'chevaux');
-        const itemCheval26 = this.trouverItemDansClassement(this.data.chevaux || [], nomChevalBase, 'chevaux');
-        // Prendre le meilleur tauxV entre 2025 et 2026, ou la médiane si aucun
+        const itemCheval26 = isCourseFuture ? this.trouverItemDansClassement(this.data.chevaux || [], nomChevalBase, 'chevaux') : null;
+
         const tauxV25 = itemCheval25 ? parseFloat(itemCheval25.TauxVictoire || 0) : null;
         const tauxV26 = itemCheval26 ? parseFloat(itemCheval26.TauxVictoire || 0) : null;
         const tauxVCh25 = tauxV25 !== null && tauxV26 !== null ? Math.max(tauxV25, tauxV26)
                         : tauxV25 !== null ? tauxV25
                         : tauxV26 !== null ? tauxV26
-                        : 8; // médiane si aucun trouvé
+                        : 8;
         const chevalSource = tauxV25 !== null && tauxV26 !== null ? '2025+2026'
                            : tauxV25 !== null ? '2025'
                            : tauxV26 !== null ? '2026'
                            : 'NC';
 
-        // Chercher le jockey dans 2025 ET 2026
+        // Chercher le jockey
         const itemJockey25 = this.trouverItemDansClassement(this.dataHistorique?.jockeys_2025 || [], participant.jockey, 'jockeys');
-        const itemJockey26 = this.trouverItemDansClassement(this.data.jockeys || [], participant.jockey, 'jockeys');
+        const itemJockey26 = isCourseFuture ? this.trouverItemDansClassement(this.data.jockeys || [], participant.jockey, 'jockeys') : null;
         const popJ25 = (this.dataHistorique?.jockeys_2025 || []).length || 500;
         const popJ26 = (this.data.jockeys || []).length || 266;
         // Prendre le meilleur rang entre 2025 et 2026
