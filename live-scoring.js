@@ -23,7 +23,9 @@ global.window = {
   rankingLoader: undefined,
 };
 global.document = { addEventListener: () => {} };
-global.console = console;
+// Silencer les logs de ranking-loader.js pour la vitesse
+const _log = console.log.bind(console);
+global.console = { ...console, log: () => {}, warn: () => {} };
 global.fetch = (url) => {
   return new Promise((resolve) => {
     // Intercepter TOUTES les URLs et charger depuis le disque local
@@ -143,13 +145,13 @@ async function main() {
   const datePmu = new Date().toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', year: 'numeric' }).split('/').join('');
   const dateISO = new Date().toISOString().split('T')[0];
 
-  console.log(`\n🏇 LIVE SCORING (100% code HTML) — ${dateISO}`);
-  console.log('='.repeat(60));
+  _log(`\n🏇 LIVE SCORING (100% code HTML) — ${dateISO}`);
+_log('='.repeat(60));
 
   // Charger toutes les données de ranking-loader
-  console.log('📊 Chargement des classements...');
+_log('📊 Chargement des classements...');
   await rankingLoader.loadAllData();
-  console.log('✅ Données chargées');
+_log('✅ Données chargées');
 
   // Filtrer R/C
   let filterR = null, filterC = null;
@@ -200,7 +202,7 @@ async function main() {
         const scoresPredictifs = await rankingLoader.calculerScoresCourse(courseContext);
 
         if (!scoresPredictifs || !scoresPredictifs.length) {
-          console.log(`\n⚠️ ${hippo} R${rNum}C${cNum} — pas de scores`);
+_log(`\n⚠️ ${hippo} R${rNum}C${cNum} — pas de scores`);
           continue;
         }
 
@@ -210,12 +212,12 @@ async function main() {
         );
 
         const distLabel = distance < 1400 ? 'Sprint' : distance < 1700 ? 'Mile' : distance < 2200 ? 'Middle' : 'Staying';
-        console.log(`\n${'━'.repeat(60)}`);
-        console.log(`🏟️  ${hippo} R${rNum}C${cNum} — ${course.libelle || ''}`);
-        console.log(`📏 ${distance}m (${distLabel}) | ⏰ ${depart} | 🐴 ${partants.length} partants`);
-        console.log('━'.repeat(60));
-        console.log(`${'#'.padStart(3)} ${'Cheval'.padEnd(22)} ${'Cote'.padStart(5)} ${'Score'.padStart(6)} ${'Fiab'.padStart(5)}`);
-        console.log('─'.repeat(60));
+_log(`\n${'━'.repeat(60)}`);
+_log(`🏟️  ${hippo} R${rNum}C${cNum} — ${course.libelle || ''}`);
+_log(`📏 ${distance}m (${distLabel}) | ⏰ ${depart} | 🐴 ${partants.length} partants`);
+_log('━'.repeat(60));
+_log(`${'#'.padStart(3)} ${'Cheval'.padEnd(22)} ${'Cote'.padStart(5)} ${'Score'.padStart(6)} ${'Fiab'.padStart(5)}`);
+_log('─'.repeat(60));
 
         sorted.forEach((r, i) => {
           const p = r.participant;
@@ -223,26 +225,26 @@ async function main() {
           const medal = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : '  ';
           const cote = p.cote > 0 ? p.cote.toFixed(1) : '-';
           const fiab = s.indiceConfiance ? Math.round(parseFloat(s.indiceConfiance) * 100) + '%' : '-';
-          console.log(`${medal}${String(p['n°'] || '').padStart(2)} ${(p.cheval || '').slice(0, 21).padEnd(22)} ${cote.padStart(5)} ${String(s.score).padStart(6)} ${fiab.padStart(5)}`);
+_log(`${medal}${String(p['n°'] || '').padStart(2)} ${(p.cheval || '').slice(0, 21).padEnd(22)} ${cote.padStart(5)} ${String(s.score).padStart(6)} ${fiab.padStart(5)}`);
         });
 
         // Comparer au favori
         const byCote = sorted.filter(r => r.participant.cote > 1).sort((a, b) => a.participant.cote - b.participant.cote);
         const notre1 = sorted[0];
         if (byCote.length && byCote[0].participant['n°'] !== notre1.participant['n°']) {
-          console.log(`\n⭐ Favori: #${byCote[0].participant['n°']} ${(byCote[0].participant.cheval || '').slice(0, 20)} (cote ${byCote[0].participant.cote})`);
-          console.log(`🎯 Notre #1: #${notre1.participant['n°']} ${(notre1.participant.cheval || '').slice(0, 20)} (cote ${notre1.participant.cote})`);
-          console.log(`   → DIVERGENCE = potentiel VALUE`);
+_log(`\n⭐ Favori: #${byCote[0].participant['n°']} ${(byCote[0].participant.cheval || '').slice(0, 20)} (cote ${byCote[0].participant.cote})`);
+_log(`🎯 Notre #1: #${notre1.participant['n°']} ${(notre1.participant.cheval || '').slice(0, 20)} (cote ${notre1.participant.cote})`);
+_log(`   → DIVERGENCE = potentiel VALUE`);
         } else if (byCote.length) {
-          console.log(`\n✅ Notre #1 = Favori: #${notre1.participant['n°']} ${(notre1.participant.cheval || '').slice(0, 20)}`);
+_log(`\n✅ Notre #1 = Favori: #${notre1.participant['n°']} ${(notre1.participant.cheval || '').slice(0, 20)}`);
         }
 
       } catch (err) {
-        console.error(`❌ Erreur scoring R${rNum}C${cNum}:`, err.message);
+        _log(`❌ Erreur scoring R${rNum}C${cNum}:`, err.message);
       }
     }
   }
-  console.log(`\n${'='.repeat(60)}\nTerminé.`);
+_log(`\n${'='.repeat(60)}\nTerminé.`);
 }
 
 main().catch(err => { console.error(err); process.exit(1); });
