@@ -153,10 +153,24 @@ _log('📊 Chargement des classements...');
   await rankingLoader.loadAllData();
 _log('✅ Données chargées');
 
-  // Filtrer R/C
-  let filterR = null, filterC = null;
-  if (process.argv[2]) { const m = process.argv[2].match(/R(\d+)/i); if (m) filterR = parseInt(m[1]); }
-  if (process.argv[3]) { const m = process.argv[3].match(/C(\d+)/i); if (m) filterC = parseInt(m[1]); }
+  // Filtrer par R/C ou par nom d'hippodrome + numéro de course
+  // Usage : node live-scoring.js R1 C3
+  //         node live-scoring.js salon C3
+  //         node live-scoring.js longchamp C1
+  //         node live-scoring.js salon       (toutes les courses de Salon)
+  let filterR = null, filterC = null, filterHippo = null;
+  const arg1 = (process.argv[2] || '').trim();
+  const arg2 = (process.argv[3] || '').trim();
+
+  if (arg1) {
+    const mR = arg1.match(/^R(\d+)$/i);
+    if (mR) { filterR = parseInt(mR[1]); }
+    else { filterHippo = arg1.toUpperCase(); }
+  }
+  if (arg2) {
+    const mC = arg2.match(/^C(\d+)$/i);
+    if (mC) filterC = parseInt(mC[1]);
+  }
 
   // Programme du jour
   const prog = await apiGet(`programme/${datePmu}?specialisation=INTERNET`);
@@ -166,6 +180,7 @@ _log('✅ Données chargées');
     const rNum = reunion.numOfficiel || 0;
     if (filterR && rNum !== filterR) continue;
     const hippo = reunion.hippodrome?.libelleCourt || '?';
+    if (filterHippo && !hippo.toUpperCase().includes(filterHippo)) continue;
 
     for (const course of (reunion.courses || [])) {
       const cNum = course.numOrdre || 0;
