@@ -26,9 +26,11 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def load_rankings():
     rankings = {}
-    for cat, key in [('chevaux_2025', 'Nom'), ('jockeys_2025', 'NomPostal')]:
+    for cat, key in [('chevaux_2025', 'Nom'), ('jockeys_2025', 'NomPostal'),
+                      ('chevaux', 'Nom'), ('jockeys', 'NomPostal')]:
+        fname = f'{cat}_ponderated_latest.json' if '2025' in cat else f'{cat}_ponderated_latest.json'
         try:
-            path = os.path.join(SCRIPT_DIR, f'data/{cat}_ponderated_latest.json')
+            path = os.path.join(SCRIPT_DIR, f'data/{fname}')
             d = json.load(open(path))
             rankings[cat] = {}
             for item in d.get('resultats', []):
@@ -87,7 +89,7 @@ def parse_musique(m):
     return sc / w if w > 0 else 50
 
 
-def score_participant(p, dist, rankings):
+def score_participant(p, dist, rankings, nb_partants=10):
     """Calcule le score d'un participant."""
     ch_name = p.get('nom', '').upper().strip()
     j_name = (p.get('driver') or '').strip() if isinstance(p.get('driver'), str) else ''
@@ -113,9 +115,12 @@ def score_participant(p, dist, rankings):
     musique = p.get('musique', '')
     score_musique = parse_musique(musique)
 
-    # Classement 2025
-    rc = rankings['chevaux_2025'].get(ch_name)
-    taux_v = float(rc.get('TauxVictoire', 0)) if rc else 8
+    # Classement 2025 + 2026 combiné (comme ranking-loader.js)
+    rc25 = rankings.get('chevaux_2025', {}).get(ch_name)
+    rc26 = rankings.get('chevaux', {}).get(ch_name)
+    tv25 = float(rc25.get('TauxVictoire', 0)) if rc25 else None
+    tv26 = float(rc26.get('TauxVictoire', 0)) if rc26 else None
+    taux_v = max(tv25 or 0, tv26 or 0) if (tv25 is not None or tv26 is not None) else 8
 
     # Scoring par distance
     if dist < 1400:  # Sprint
@@ -129,6 +134,12 @@ def score_participant(p, dist, rankings):
         score = score_cote * 0.5 + valeur * 0.3 + indiv_v * 0.2
     else:  # Staying
         score = score_cote * 0.4 + valeur * 0.3 + score_musique * 0.3
+
+    # Ajustement peloton (identique à ranking-loader.js)
+    if nb_partants < 9:  # Petit champ
+        score += valeur * 0.15
+    elif nb_partants >= 14:  # Grand champ
+        score += taux_v * 0.3
 
     # Dérive cote
     derive = ''
@@ -220,7 +231,7 @@ def main():
                 continue
 
             # Scorer
-            scored = [score_participant(p, distance, rankings) for p in partants]
+            scored = [score_participant(p, distance, rankings, len(partants)) for p in partants]
             scored.sort(key=lambda x: -x['score'])
 
             # Normaliser 10-90
