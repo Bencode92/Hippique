@@ -1228,7 +1228,7 @@
     </div>
 
     <!-- Module ranking-loader (doit être chargé avant le script principal) -->
-    <script src="js/ranking-loader.js?v=14"></script>
+    <script src="js/ranking-loader.js?v=15"></script>
 
     <!-- Module de chargement des courses -->
     <script>
@@ -1984,7 +1984,8 @@
                         position: getCoursePosition(course.horaire),
                         totalRacesInDay: getCoursesInDay(),
                         participants: course.participants || [],
-                        hippodrome: hippodrome
+                        hippodrome: hippodrome,
+                        date: window.currentDate ? window.currentDate.toISOString().split('T')[0] : new Date().toISOString().split('T')[0]
                     };
                     
                     console.log("Contexte course pour pondération:", courseContext);
