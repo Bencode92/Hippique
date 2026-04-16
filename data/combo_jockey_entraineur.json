@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "extraction_date": "2026-04-12T09:46:56.773Z",
+    "extraction_date": "2026-04-16T07:28:48.769Z",
     "method": "combo_jockey_entraineur",
-    "participations_analysees": 14720,
-    "combos_total": 6395,
-    "combos_significatifs": 1290
+    "participations_analysees": 15619,
+    "combos_total": 6830,
+    "combos_significatifs": 1384
   },
   "resultats": {
     "HUGO MOUESAN|||X. THOMAS-DEMEAULTE (S)": {
@@ -20015,11 +20015,37 @@
     "M.GERMAIN|||C.ESCUDER": {
       "jockey": "M.GERMAIN",
       "entraineur": "C.ESCUDER",
-      "courses": 5,
-      "victoires": 1,
-      "places": 3,
-      "tauxVictoire": 20,
-      "tauxPlace": 60,
+      "courses": 6,
+      "victoires": 2,
+      "places": 4,
+      "tauxVictoire": 33.3,
+      "tauxPlace": 66.7,
+      "byDistance": {
+        "intermediaire": {
+          "courses": 3,
+          "victoires": 1,
+          "tauxVictoire": 33.3
+        }
+      }
+    },
+    "M.BRUNELLI|||L.BERNHARDT": {
+      "jockey": "M.BRUNELLI",
+      "entraineur": "L.BERNHARDT",
+      "courses": 3,
+      "victoires": 0,
+      "places": 2,
+      "tauxVictoire": 0,
+      "tauxPlace": 66.7,
+      "byDistance": {}
+    },
+    "A.GIREL|||M.STEHLI": {
+      "jockey": "A.GIREL",
+      "entraineur": "M.STEHLI",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 33.3,
       "byDistance": {
         "intermediaire": {
           "courses": 2,
@@ -20047,17 +20073,23 @@
     "G.CONGIU|||MME E.CURY": {
       "jockey": "G.CONGIU",
       "entraineur": "MME E.CURY",
-      "courses": 3,
+      "courses": 4,
       "victoires": 0,
       "places": 0,
       "tauxVictoire": 0,
       "tauxPlace": 0,
-      "byDistance": {}
+      "byDistance": {
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
     },
     "M.BRUNELLI|||MME M.SCANDELLA-LACAILLE": {
       "jockey": "M.BRUNELLI",
       "entraineur": "MME M.SCANDELLA-LACAILLE",
-      "courses": 3,
+      "courses": 5,
       "victoires": 0,
       "places": 0,
       "tauxVictoire": 0,
@@ -20073,16 +20105,16 @@
     "S.ST LARY LEROY|||P.COTTIER": {
       "jockey": "S.ST LARY LEROY",
       "entraineur": "P.COTTIER",
-      "courses": 5,
-      "victoires": 3,
-      "places": 5,
-      "tauxVictoire": 60,
+      "courses": 7,
+      "victoires": 5,
+      "places": 7,
+      "tauxVictoire": 71.4,
       "tauxPlace": 100,
       "byDistance": {
         "mile": {
-          "courses": 2,
-          "victoires": 0,
-          "tauxVictoire": 0
+          "courses": 4,
+          "victoires": 2,
+          "tauxVictoire": 50
         },
         "intermediaire": {
           "courses": 2,
@@ -20110,27 +20142,11 @@
     "D.PROVOST|||HF.DEVIN (S)": {
       "jockey": "D.PROVOST",
       "entraineur": "HF.DEVIN (S)",
-      "courses": 5,
-      "victoires": 0,
-      "places": 2,
-      "tauxVictoire": 0,
-      "tauxPlace": 40,
-      "byDistance": {
-        "sprint": {
-          "courses": 2,
-          "victoires": 0,
-          "tauxVictoire": 0
-        }
-      }
-    },
-    "H.BESNIER|||P.COTTIER": {
-      "jockey": "H.BESNIER",
-      "entraineur": "P.COTTIER",
-      "courses": 9,
+      "courses": 7,
       "victoires": 0,
       "places": 3,
       "tauxVictoire": 0,
-      "tauxPlace": 33.3,
+      "tauxPlace": 42.9,
       "byDistance": {
         "sprint": {
           "courses": 3,
@@ -20138,7 +20154,48 @@
           "tauxVictoire": 0
         },
         "intermediaire": {
-          "courses": 4,
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "A.MOSSE|||J.REYNIER (S)": {
+      "jockey": "A.MOSSE",
+      "entraineur": "J.REYNIER (S)",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 33.3,
+      "byDistance": {}
+    },
+    "H.BESNIER|||P.COTTIER": {
+      "jockey": "H.BESNIER",
+      "entraineur": "P.COTTIER",
+      "courses": 13,
+      "victoires": 0,
+      "places": 6,
+      "tauxVictoire": 0,
+      "tauxPlace": 46.2,
+      "byDistance": {
+        "sprint": {
+          "courses": 3,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
+        "intermediaire": {
+          "courses": 5,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
+        "staying": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
+        "mile": {
+          "courses": 3,
           "victoires": 0,
           "tauxVictoire": 0
         }
@@ -20163,11 +20220,11 @@
     "E.VERHESTRAETEN|||A.MURPHY (S)": {
       "jockey": "E.VERHESTRAETEN",
       "entraineur": "A.MURPHY (S)",
-      "courses": 5,
+      "courses": 6,
       "victoires": 2,
-      "places": 2,
-      "tauxVictoire": 40,
-      "tauxPlace": 40,
+      "places": 3,
+      "tauxVictoire": 33.3,
+      "tauxPlace": 50,
       "byDistance": {
         "sprint": {
           "courses": 2,
@@ -20175,9 +20232,9 @@
           "tauxVictoire": 0
         },
         "mile": {
-          "courses": 2,
+          "courses": 3,
           "victoires": 1,
-          "tauxVictoire": 50
+          "tauxVictoire": 33.3
         }
       }
     },
@@ -20215,11 +20272,11 @@
     "D.PROVOST|||M.CESANDRI (S)": {
       "jockey": "D.PROVOST",
       "entraineur": "M.CESANDRI (S)",
-      "courses": 6,
+      "courses": 7,
       "victoires": 1,
       "places": 3,
-      "tauxVictoire": 16.7,
-      "tauxPlace": 50,
+      "tauxVictoire": 14.3,
+      "tauxPlace": 42.9,
       "byDistance": {
         "intermediaire": {
           "courses": 3,
@@ -20227,6 +20284,11 @@
           "tauxVictoire": 33.3
         },
         "staying": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
+        "mile": {
           "courses": 2,
           "victoires": 0,
           "tauxVictoire": 0
@@ -20283,11 +20345,11 @@
     "A.HAMELIN|||M.DELZANGLES": {
       "jockey": "A.HAMELIN",
       "entraineur": "M.DELZANGLES",
-      "courses": 3,
+      "courses": 4,
       "victoires": 2,
       "places": 2,
-      "tauxVictoire": 66.7,
-      "tauxPlace": 66.7,
+      "tauxVictoire": 50,
+      "tauxPlace": 50,
       "byDistance": {
         "intermediaire": {
           "courses": 2,
@@ -20309,14 +20371,14 @@
     "H.BESNIER|||MME M.SCANDELLA-LACAILLE": {
       "jockey": "H.BESNIER",
       "entraineur": "MME M.SCANDELLA-LACAILLE",
-      "courses": 5,
+      "courses": 6,
       "victoires": 0,
-      "places": 1,
+      "places": 2,
       "tauxVictoire": 0,
-      "tauxPlace": 20,
+      "tauxPlace": 33.3,
       "byDistance": {
         "intermediaire": {
-          "courses": 3,
+          "courses": 4,
           "victoires": 0,
           "tauxVictoire": 0
         },
@@ -20330,11 +20392,11 @@
     "T.TRULLIER|||S.LABATE (S)": {
       "jockey": "T.TRULLIER",
       "entraineur": "S.LABATE (S)",
-      "courses": 3,
+      "courses": 4,
       "victoires": 1,
       "places": 1,
-      "tauxVictoire": 33.3,
-      "tauxPlace": 33.3,
+      "tauxVictoire": 25,
+      "tauxPlace": 25,
       "byDistance": {
         "sprint": {
           "courses": 2,
@@ -20343,38 +20405,63 @@
         }
       }
     },
+    "M.WALDHAUSER|||L.BERNHARDT": {
+      "jockey": "M.WALDHAUSER",
+      "entraineur": "L.BERNHARDT",
+      "courses": 3,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {}
+    },
     "A.MOLINS|||J.PARIZE": {
       "jockey": "A.MOLINS",
       "entraineur": "J.PARIZE",
-      "courses": 4,
+      "courses": 5,
       "victoires": 0,
       "places": 2,
       "tauxVictoire": 0,
-      "tauxPlace": 50,
+      "tauxPlace": 40,
       "byDistance": {
         "intermediaire": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
+        "mile": {
           "courses": 2,
           "victoires": 0,
           "tauxVictoire": 0
         }
       }
     },
+    "H.BESNIER|||R.FRADET (S)": {
+      "jockey": "H.BESNIER",
+      "entraineur": "R.FRADET (S)",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 33.3,
+      "byDistance": {}
+    },
     "M.WALDHAUSER|||F.FORESI": {
       "jockey": "M.WALDHAUSER",
       "entraineur": "F.FORESI",
-      "courses": 6,
+      "courses": 9,
       "victoires": 1,
       "places": 2,
-      "tauxVictoire": 16.7,
-      "tauxPlace": 33.3,
+      "tauxVictoire": 11.1,
+      "tauxPlace": 22.2,
       "byDistance": {
         "mile": {
-          "courses": 3,
+          "courses": 4,
           "victoires": 0,
           "tauxVictoire": 0
         },
         "staying": {
-          "courses": 2,
+          "courses": 4,
           "victoires": 0,
           "tauxVictoire": 0
         }
@@ -20483,32 +20570,11 @@
     "HECTOR FABIAN LAZO|||ROBERTO SOLANES": {
       "jockey": "HECTOR FABIAN LAZO",
       "entraineur": "ROBERTO SOLANES",
-      "courses": 6,
+      "courses": 5,
       "victoires": 0,
       "places": 2,
       "tauxVictoire": 0,
-      "tauxPlace": 33.3,
-      "byDistance": {
-        "mile": {
-          "courses": 3,
-          "victoires": 0,
-          "tauxVictoire": 0
-        },
-        "sprint": {
-          "courses": 3,
-          "victoires": 0,
-          "tauxVictoire": 0
-        }
-      }
-    },
-    "ERIC ACOSTA|||FACUNDO SANTESTEBAN": {
-      "jockey": "ERIC ACOSTA",
-      "entraineur": "FACUNDO SANTESTEBAN",
-      "courses": 5,
-      "victoires": 1,
-      "places": 1,
-      "tauxVictoire": 20,
-      "tauxPlace": 20,
+      "tauxPlace": 40,
       "byDistance": {
         "mile": {
           "courses": 3,
@@ -20517,8 +20583,24 @@
         },
         "sprint": {
           "courses": 2,
-          "victoires": 1,
-          "tauxVictoire": 50
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "ERIC ACOSTA|||FACUNDO SANTESTEBAN": {
+      "jockey": "ERIC ACOSTA",
+      "entraineur": "FACUNDO SANTESTEBAN",
+      "courses": 4,
+      "victoires": 1,
+      "places": 1,
+      "tauxVictoire": 25,
+      "tauxPlace": 25,
+      "byDistance": {
+        "mile": {
+          "courses": 3,
+          "victoires": 0,
+          "tauxVictoire": 0
         }
       }
     },
@@ -20647,16 +20729,16 @@
     "LAUTARO EMMANUEL BALMACEDA|||OMAR FERNANDO LABANCA": {
       "jockey": "LAUTARO EMMANUEL BALMACEDA",
       "entraineur": "OMAR FERNANDO LABANCA",
-      "courses": 3,
+      "courses": 4,
       "victoires": 1,
       "places": 1,
-      "tauxVictoire": 33.3,
-      "tauxPlace": 33.3,
+      "tauxVictoire": 25,
+      "tauxPlace": 25,
       "byDistance": {
         "sprint": {
-          "courses": 2,
+          "courses": 3,
           "victoires": 1,
-          "tauxVictoire": 50
+          "tauxVictoire": 33.3
         }
       }
     },
@@ -20679,16 +20761,26 @@
     "M.BARZALONA|||FH.GRAFFARD (S)": {
       "jockey": "M.BARZALONA",
       "entraineur": "FH.GRAFFARD (S)",
-      "courses": 11,
-      "victoires": 2,
-      "places": 3,
-      "tauxVictoire": 18.2,
-      "tauxPlace": 27.3,
+      "courses": 17,
+      "victoires": 4,
+      "places": 5,
+      "tauxVictoire": 23.5,
+      "tauxPlace": 29.4,
       "byDistance": {
         "mile": {
-          "courses": 5,
+          "courses": 7,
           "victoires": 1,
-          "tauxVictoire": 20
+          "tauxVictoire": 14.3
+        },
+        "staying": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
+        "sprint": {
+          "courses": 4,
+          "victoires": 2,
+          "tauxVictoire": 50
         },
         "intermediaire": {
           "courses": 4,
@@ -20713,19 +20805,35 @@
         }
       }
     },
+    "T.PICCONE|||A.MURPHY (S)": {
+      "jockey": "T.PICCONE",
+      "entraineur": "A.MURPHY (S)",
+      "courses": 3,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
     "C.DEMURO|||M.BARATTI (S)": {
       "jockey": "C.DEMURO",
       "entraineur": "M.BARATTI (S)",
-      "courses": 8,
+      "courses": 10,
       "victoires": 1,
       "places": 3,
-      "tauxVictoire": 12.5,
-      "tauxPlace": 37.5,
+      "tauxVictoire": 10,
+      "tauxPlace": 30,
       "byDistance": {
         "mile": {
-          "courses": 3,
+          "courses": 4,
           "victoires": 1,
-          "tauxVictoire": 33.3
+          "tauxVictoire": 25
         },
         "intermediaire": {
           "courses": 4,
@@ -20753,12 +20861,17 @@
     "M.GUYON|||P&J.BRANDT (S)": {
       "jockey": "M.GUYON",
       "entraineur": "P&J.BRANDT (S)",
-      "courses": 5,
+      "courses": 7,
       "victoires": 1,
-      "places": 3,
-      "tauxVictoire": 20,
-      "tauxPlace": 60,
+      "places": 5,
+      "tauxVictoire": 14.3,
+      "tauxPlace": 71.4,
       "byDistance": {
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
         "intermediaire": {
           "courses": 2,
           "victoires": 1,
@@ -20774,16 +20887,16 @@
     "A.LEMAITRE|||A.SCHUTZ (S)": {
       "jockey": "A.LEMAITRE",
       "entraineur": "A.SCHUTZ (S)",
-      "courses": 4,
+      "courses": 5,
       "victoires": 4,
-      "places": 4,
-      "tauxVictoire": 100,
+      "places": 5,
+      "tauxVictoire": 80,
       "tauxPlace": 100,
       "byDistance": {
         "mile": {
-          "courses": 3,
+          "courses": 4,
           "victoires": 3,
-          "tauxVictoire": 100
+          "tauxVictoire": 75
         }
       }
     },
@@ -20816,14 +20929,14 @@
     "L.BOISSEAU|||MME A.KARKOSA": {
       "jockey": "L.BOISSEAU",
       "entraineur": "MME A.KARKOSA",
-      "courses": 7,
+      "courses": 8,
       "victoires": 0,
       "places": 2,
       "tauxVictoire": 0,
-      "tauxPlace": 28.6,
+      "tauxPlace": 25,
       "byDistance": {
         "mile": {
-          "courses": 3,
+          "courses": 4,
           "victoires": 0,
           "tauxVictoire": 0
         },
@@ -20837,40 +20950,56 @@
     "T.BACHELOT|||G.BIETOLINI": {
       "jockey": "T.BACHELOT",
       "entraineur": "G.BIETOLINI",
-      "courses": 3,
+      "courses": 4,
       "victoires": 0,
       "places": 1,
       "tauxVictoire": 0,
-      "tauxPlace": 33.3,
-      "byDistance": {}
+      "tauxPlace": 25,
+      "byDistance": {
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
     },
     "C.LECOEUVRE|||P.GROUALLE (S)": {
       "jockey": "C.LECOEUVRE",
       "entraineur": "P.GROUALLE (S)",
-      "courses": 3,
+      "courses": 4,
       "victoires": 1,
       "places": 1,
-      "tauxVictoire": 33.3,
-      "tauxPlace": 33.3,
+      "tauxVictoire": 25,
+      "tauxPlace": 25,
       "byDistance": {
         "mile": {
-          "courses": 2,
+          "courses": 3,
           "victoires": 1,
-          "tauxVictoire": 50
+          "tauxVictoire": 33.3
         }
       }
+    },
+    "A.MADAMET|||P.DECOUZ (S)": {
+      "jockey": "A.MADAMET",
+      "entraineur": "P.DECOUZ (S)",
+      "courses": 3,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {}
     },
     "C.SOUMILLON|||M.DELCHER SANCHEZ": {
       "jockey": "C.SOUMILLON",
       "entraineur": "M.DELCHER SANCHEZ",
-      "courses": 6,
+      "courses": 7,
       "victoires": 1,
-      "places": 2,
-      "tauxVictoire": 16.7,
-      "tauxPlace": 33.3,
+      "places": 3,
+      "tauxVictoire": 14.3,
+      "tauxPlace": 42.9,
       "byDistance": {
         "mile": {
-          "courses": 2,
+          "courses": 3,
           "victoires": 0,
           "tauxVictoire": 0
         },
@@ -20884,14 +21013,14 @@
     "M.GUYON|||A.FABRE (S)": {
       "jockey": "M.GUYON",
       "entraineur": "A.FABRE (S)",
-      "courses": 8,
+      "courses": 9,
       "victoires": 0,
       "places": 0,
       "tauxVictoire": 0,
       "tauxPlace": 0,
       "byDistance": {
         "mile": {
-          "courses": 3,
+          "courses": 4,
           "victoires": 0,
           "tauxVictoire": 0
         },
@@ -20910,24 +21039,24 @@
     "A.ORANI|||J.REYNIER (S)": {
       "jockey": "A.ORANI",
       "entraineur": "J.REYNIER (S)",
-      "courses": 9,
+      "courses": 12,
       "victoires": 1,
       "places": 1,
-      "tauxVictoire": 11.1,
-      "tauxPlace": 11.1,
+      "tauxVictoire": 8.3,
+      "tauxPlace": 8.3,
       "byDistance": {
         "mile": {
-          "courses": 2,
-          "victoires": 0,
-          "tauxVictoire": 0
-        },
-        "staying": {
           "courses": 3,
           "victoires": 0,
           "tauxVictoire": 0
         },
+        "staying": {
+          "courses": 4,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
         "sprint": {
-          "courses": 2,
+          "courses": 3,
           "victoires": 0,
           "tauxVictoire": 0
         },
@@ -20941,19 +21070,19 @@
     "T.BACHELOT|||S.WATTEL (S)": {
       "jockey": "T.BACHELOT",
       "entraineur": "S.WATTEL (S)",
-      "courses": 9,
+      "courses": 11,
       "victoires": 1,
       "places": 3,
-      "tauxVictoire": 11.1,
-      "tauxPlace": 33.3,
+      "tauxVictoire": 9.1,
+      "tauxPlace": 27.3,
       "byDistance": {
         "mile": {
-          "courses": 3,
+          "courses": 4,
           "victoires": 1,
-          "tauxVictoire": 33.3
+          "tauxVictoire": 25
         },
         "staying": {
-          "courses": 3,
+          "courses": 4,
           "victoires": 0,
           "tauxVictoire": 0
         },
@@ -20967,11 +21096,11 @@
     "A.POUCHIN|||E.LIBAUD (S)": {
       "jockey": "A.POUCHIN",
       "entraineur": "E.LIBAUD (S)",
-      "courses": 6,
+      "courses": 7,
       "victoires": 1,
-      "places": 3,
-      "tauxVictoire": 16.7,
-      "tauxPlace": 50,
+      "places": 4,
+      "tauxVictoire": 14.3,
+      "tauxPlace": 57.1,
       "byDistance": {
         "intermediaire": {
           "courses": 3,
@@ -20979,36 +21108,36 @@
           "tauxVictoire": 0
         },
         "mile": {
-          "courses": 2,
+          "courses": 3,
           "victoires": 1,
-          "tauxVictoire": 50
+          "tauxVictoire": 33.3
         }
       }
     },
     "O.ANDIGNE|||A.COUETIL (S)": {
       "jockey": "O.ANDIGNE",
       "entraineur": "A.COUETIL (S)",
-      "courses": 6,
-      "victoires": 1,
-      "places": 1,
-      "tauxVictoire": 16.7,
-      "tauxPlace": 16.7,
+      "courses": 7,
+      "victoires": 2,
+      "places": 2,
+      "tauxVictoire": 28.6,
+      "tauxPlace": 28.6,
       "byDistance": {
         "staying": {
-          "courses": 4,
-          "victoires": 1,
-          "tauxVictoire": 25
+          "courses": 5,
+          "victoires": 2,
+          "tauxVictoire": 40
         }
       }
     },
     "F.VALLE SKAR|||MME C.BARANDE BARBE": {
       "jockey": "F.VALLE SKAR",
       "entraineur": "MME C.BARANDE BARBE",
-      "courses": 3,
+      "courses": 4,
       "victoires": 0,
       "places": 1,
       "tauxVictoire": 0,
-      "tauxPlace": 33.3,
+      "tauxPlace": 25,
       "byDistance": {
         "intermediaire": {
           "courses": 2,
@@ -21057,14 +21186,14 @@
     "A.LEMAITRE|||HF.DEVIN (S)": {
       "jockey": "A.LEMAITRE",
       "entraineur": "HF.DEVIN (S)",
-      "courses": 3,
+      "courses": 5,
       "victoires": 0,
       "places": 0,
       "tauxVictoire": 0,
       "tauxPlace": 0,
       "byDistance": {
         "mile": {
-          "courses": 3,
+          "courses": 4,
           "victoires": 0,
           "tauxVictoire": 0
         }
@@ -21073,11 +21202,11 @@
     "M.GRANDIN|||C.ESCUDER": {
       "jockey": "M.GRANDIN",
       "entraineur": "C.ESCUDER",
-      "courses": 13,
-      "victoires": 2,
-      "places": 6,
-      "tauxVictoire": 15.4,
-      "tauxPlace": 46.2,
+      "courses": 14,
+      "victoires": 3,
+      "places": 7,
+      "tauxVictoire": 21.4,
+      "tauxPlace": 50,
       "byDistance": {
         "mile": {
           "courses": 2,
@@ -21085,9 +21214,9 @@
           "tauxVictoire": 0
         },
         "intermediaire": {
-          "courses": 6,
-          "victoires": 1,
-          "tauxVictoire": 16.7
+          "courses": 7,
+          "victoires": 2,
+          "tauxVictoire": 28.6
         },
         "staying": {
           "courses": 3,
@@ -21104,19 +21233,19 @@
     "R.THOMAS|||C&Y.LERNER (S)": {
       "jockey": "R.THOMAS",
       "entraineur": "C&Y.LERNER (S)",
-      "courses": 8,
+      "courses": 10,
       "victoires": 1,
       "places": 2,
-      "tauxVictoire": 12.5,
-      "tauxPlace": 25,
+      "tauxVictoire": 10,
+      "tauxPlace": 20,
       "byDistance": {
         "mile": {
-          "courses": 3,
+          "courses": 4,
           "victoires": 1,
-          "tauxVictoire": 33.3
+          "tauxVictoire": 25
         },
         "staying": {
-          "courses": 2,
+          "courses": 3,
           "victoires": 0,
           "tauxVictoire": 0
         },
@@ -21130,11 +21259,11 @@
     "C.LECOEUVRE|||FH.GRAFFARD (S)": {
       "jockey": "C.LECOEUVRE",
       "entraineur": "FH.GRAFFARD (S)",
-      "courses": 4,
+      "courses": 5,
       "victoires": 0,
       "places": 1,
       "tauxVictoire": 0,
-      "tauxPlace": 25,
+      "tauxPlace": 20,
       "byDistance": {
         "mile": {
           "courses": 2,
@@ -21172,14 +21301,14 @@
     "A.POUCHIN|||G.MOSSE (S)": {
       "jockey": "A.POUCHIN",
       "entraineur": "G.MOSSE (S)",
-      "courses": 3,
+      "courses": 5,
       "victoires": 0,
-      "places": 0,
+      "places": 1,
       "tauxVictoire": 0,
-      "tauxPlace": 0,
+      "tauxPlace": 20,
       "byDistance": {
         "sprint": {
-          "courses": 2,
+          "courses": 3,
           "victoires": 0,
           "tauxVictoire": 0
         }
@@ -21188,23 +21317,33 @@
     "A.ORANI|||MME M.SCANDELLA-LACAILLE": {
       "jockey": "A.ORANI",
       "entraineur": "MME M.SCANDELLA-LACAILLE",
-      "courses": 6,
+      "courses": 10,
       "victoires": 1,
-      "places": 2,
-      "tauxVictoire": 16.7,
-      "tauxPlace": 33.3,
+      "places": 4,
+      "tauxVictoire": 10,
+      "tauxPlace": 40,
       "byDistance": {
         "staying": {
-          "courses": 4,
+          "courses": 5,
           "victoires": 1,
-          "tauxVictoire": 25
+          "tauxVictoire": 20
+        },
+        "sprint": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
         }
       }
     },
     "L.BOISSEAU|||D.ARTU (S)": {
       "jockey": "L.BOISSEAU",
       "entraineur": "D.ARTU (S)",
-      "courses": 4,
+      "courses": 5,
       "victoires": 0,
       "places": 0,
       "tauxVictoire": 0,
@@ -21214,6 +21353,32 @@
           "courses": 2,
           "victoires": 0,
           "tauxVictoire": 0
+        },
+        "staying": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "M.GRANDIN|||E.MIKHALIDES (S)": {
+      "jockey": "M.GRANDIN",
+      "entraineur": "E.MIKHALIDES (S)",
+      "courses": 4,
+      "victoires": 1,
+      "places": 2,
+      "tauxVictoire": 25,
+      "tauxPlace": 50,
+      "byDistance": {
+        "intermediaire": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
+        "mile": {
+          "courses": 2,
+          "victoires": 1,
+          "tauxVictoire": 50
         }
       }
     },
@@ -21259,27 +21424,43 @@
         }
       }
     },
+    "B.MARIE|||A.SUBORICS": {
+      "jockey": "B.MARIE",
+      "entraineur": "A.SUBORICS",
+      "courses": 3,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {}
+    },
     "M.GUYON|||N.CAULLERY": {
       "jockey": "M.GUYON",
       "entraineur": "N.CAULLERY",
-      "courses": 3,
+      "courses": 4,
       "victoires": 0,
-      "places": 1,
+      "places": 2,
       "tauxVictoire": 0,
-      "tauxPlace": 33.3,
-      "byDistance": {}
+      "tauxPlace": 50,
+      "byDistance": {
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
     },
     "CHUNG Y.L.|||CRUZ A.S.": {
       "jockey": "CHUNG Y.L.",
       "entraineur": "CRUZ A.S.",
-      "courses": 4,
+      "courses": 5,
       "victoires": 0,
       "places": 1,
       "tauxVictoire": 0,
-      "tauxPlace": 25,
+      "tauxPlace": 20,
       "byDistance": {
         "sprint": {
-          "courses": 2,
+          "courses": 3,
           "victoires": 0,
           "tauxVictoire": 0
         },
@@ -21293,21 +21474,21 @@
     "TEETAN K.|||CRAWFORD B.": {
       "jockey": "TEETAN K.",
       "entraineur": "CRAWFORD B.",
-      "courses": 6,
-      "victoires": 0,
-      "places": 1,
-      "tauxVictoire": 0,
-      "tauxPlace": 16.7,
+      "courses": 8,
+      "victoires": 1,
+      "places": 2,
+      "tauxVictoire": 12.5,
+      "tauxPlace": 25,
       "byDistance": {
         "sprint": {
-          "courses": 4,
+          "courses": 5,
           "victoires": 0,
           "tauxVictoire": 0
         },
         "mile": {
-          "courses": 2,
-          "victoires": 0,
-          "tauxVictoire": 0
+          "courses": 3,
+          "victoires": 1,
+          "tauxVictoire": 33.3
         }
       }
     },
@@ -21327,16 +21508,37 @@
         }
       }
     },
-    "CHAU C.L.|||YIP C.H.": {
-      "jockey": "CHAU C.L.",
+    "WONG P.N.|||YIP C.H.": {
+      "jockey": "WONG P.N.",
       "entraineur": "YIP C.H.",
       "courses": 3,
       "victoires": 0,
-      "places": 0,
+      "places": 2,
       "tauxVictoire": 0,
-      "tauxPlace": 0,
+      "tauxPlace": 66.7,
       "byDistance": {
         "sprint": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "CHAU C.L.|||YIP C.H.": {
+      "jockey": "CHAU C.L.",
+      "entraineur": "YIP C.H.",
+      "courses": 4,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 25,
+      "byDistance": {
+        "sprint": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
+        "mile": {
           "courses": 2,
           "victoires": 0,
           "tauxVictoire": 0
@@ -21346,14 +21548,14 @@
     "KINGSCOTE R.|||EUSTACE D.": {
       "jockey": "KINGSCOTE R.",
       "entraineur": "EUSTACE D.",
-      "courses": 4,
+      "courses": 5,
       "victoires": 0,
       "places": 0,
       "tauxVictoire": 0,
       "tauxPlace": 0,
       "byDistance": {
         "mile": {
-          "courses": 3,
+          "courses": 4,
           "victoires": 0,
           "tauxVictoire": 0
         }
@@ -21394,14 +21596,14 @@
     "FERRARIS L.|||NEWNHAM M.": {
       "jockey": "FERRARIS L.",
       "entraineur": "NEWNHAM M.",
-      "courses": 4,
+      "courses": 5,
       "victoires": 1,
       "places": 2,
-      "tauxVictoire": 25,
-      "tauxPlace": 50,
+      "tauxVictoire": 20,
+      "tauxPlace": 40,
       "byDistance": {
         "sprint": {
-          "courses": 3,
+          "courses": 4,
           "victoires": 0,
           "tauxVictoire": 0
         }
@@ -21410,11 +21612,69 @@
     "BENTLEY H.|||HAYES D.A.": {
       "jockey": "BENTLEY H.",
       "entraineur": "HAYES D.A.",
-      "courses": 3,
+      "courses": 8,
       "victoires": 1,
       "places": 1,
-      "tauxVictoire": 33.3,
+      "tauxVictoire": 12.5,
+      "tauxPlace": 12.5,
+      "byDistance": {
+        "mile": {
+          "courses": 3,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
+        "sprint": {
+          "courses": 5,
+          "victoires": 1,
+          "tauxVictoire": 20
+        }
+      }
+    },
+    "ATZENI A.|||SIZE J.": {
+      "jockey": "ATZENI A.",
+      "entraineur": "SIZE J.",
+      "courses": 6,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 16.7,
+      "byDistance": {
+        "sprint": {
+          "courses": 4,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "HEWITSON L.|||CRAWFORD B.": {
+      "jockey": "HEWITSON L.",
+      "entraineur": "CRAWFORD B.",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
       "tauxPlace": 33.3,
+      "byDistance": {
+        "sprint": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "ORMAN J.|||SO W.Y.": {
+      "jockey": "ORMAN J.",
+      "entraineur": "SO W.Y.",
+      "courses": 3,
+      "victoires": 1,
+      "places": 2,
+      "tauxVictoire": 33.3,
+      "tauxPlace": 66.7,
       "byDistance": {
         "sprint": {
           "courses": 2,
@@ -21423,22 +21683,38 @@
         }
       }
     },
-    "ATZENI A.|||SIZE J.": {
-      "jockey": "ATZENI A.",
-      "entraineur": "SIZE J.",
+    "POON M.F.|||LOR F.C.": {
+      "jockey": "POON M.F.",
+      "entraineur": "LOR F.C.",
       "courses": 4,
+      "victoires": 1,
+      "places": 2,
+      "tauxVictoire": 25,
+      "tauxPlace": 50,
+      "byDistance": {
+        "mile": {
+          "courses": 2,
+          "victoires": 1,
+          "tauxVictoire": 50
+        },
+        "sprint": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "FERRARIS L.|||LUI K.W.": {
+      "jockey": "FERRARIS L.",
+      "entraineur": "LUI K.W.",
+      "courses": 3,
       "victoires": 0,
       "places": 0,
       "tauxVictoire": 0,
       "tauxPlace": 0,
       "byDistance": {
-        "sprint": {
-          "courses": 2,
-          "victoires": 0,
-          "tauxVictoire": 0
-        },
         "mile": {
-          "courses": 2,
+          "courses": 3,
           "victoires": 0,
           "tauxVictoire": 0
         }
@@ -21521,50 +21797,82 @@
     "C.SOUMILLON|||C&Y.LERNER (S)": {
       "jockey": "C.SOUMILLON",
       "entraineur": "C&Y.LERNER (S)",
-      "courses": 3,
+      "courses": 4,
       "victoires": 0,
       "places": 0,
       "tauxVictoire": 0,
       "tauxPlace": 0,
-      "byDistance": {}
-    },
-    "C.DEMURO|||M.PITART": {
-      "jockey": "C.DEMURO",
-      "entraineur": "M.PITART",
-      "courses": 3,
-      "victoires": 0,
-      "places": 2,
-      "tauxVictoire": 0,
-      "tauxPlace": 66.7,
       "byDistance": {
-        "intermediaire": {
+        "mile": {
           "courses": 2,
           "victoires": 0,
           "tauxVictoire": 0
         }
       }
     },
+    "C.DEMURO|||M.PITART": {
+      "jockey": "C.DEMURO",
+      "entraineur": "M.PITART",
+      "courses": 5,
+      "victoires": 1,
+      "places": 4,
+      "tauxVictoire": 20,
+      "tauxPlace": 80,
+      "byDistance": {
+        "intermediaire": {
+          "courses": 3,
+          "victoires": 1,
+          "tauxVictoire": 33.3
+        }
+      }
+    },
     "T.PICCONE|||HA.PANTALL (S)": {
       "jockey": "T.PICCONE",
       "entraineur": "HA.PANTALL (S)",
-      "courses": 12,
+      "courses": 17,
       "victoires": 1,
-      "places": 1,
-      "tauxVictoire": 8.3,
-      "tauxPlace": 8.3,
+      "places": 3,
+      "tauxVictoire": 5.9,
+      "tauxPlace": 17.6,
       "byDistance": {
         "intermediaire": {
-          "courses": 5,
+          "courses": 6,
           "victoires": 0,
           "tauxVictoire": 0
         },
         "mile": {
-          "courses": 4,
+          "courses": 5,
           "victoires": 1,
-          "tauxVictoire": 25
+          "tauxVictoire": 20
+        },
+        "staying": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
         },
         "sprint": {
+          "courses": 4,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "H.BOUTIN|||C.BOUTIN (S)": {
+      "jockey": "H.BOUTIN",
+      "entraineur": "C.BOUTIN (S)",
+      "courses": 5,
+      "victoires": 2,
+      "places": 3,
+      "tauxVictoire": 40,
+      "tauxPlace": 60,
+      "byDistance": {
+        "mile": {
           "courses": 2,
+          "victoires": 2,
+          "tauxVictoire": 100
+        },
+        "sprint": {
+          "courses": 3,
           "victoires": 0,
           "tauxVictoire": 0
         }
@@ -21573,13 +21881,18 @@
     "A.CRASTUS|||A.FOUASSIER": {
       "jockey": "A.CRASTUS",
       "entraineur": "A.FOUASSIER",
-      "courses": 3,
+      "courses": 6,
       "victoires": 0,
-      "places": 0,
+      "places": 2,
       "tauxVictoire": 0,
-      "tauxPlace": 0,
+      "tauxPlace": 33.3,
       "byDistance": {
         "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
+        "staying": {
           "courses": 2,
           "victoires": 0,
           "tauxVictoire": 0
@@ -21589,34 +21902,60 @@
     "L.GALLO|||M.BOUTIN (S)": {
       "jockey": "L.GALLO",
       "entraineur": "M.BOUTIN (S)",
-      "courses": 10,
-      "victoires": 2,
-      "places": 4,
+      "courses": 15,
+      "victoires": 3,
+      "places": 6,
       "tauxVictoire": 20,
       "tauxPlace": 40,
       "byDistance": {
         "mile": {
-          "courses": 6,
+          "courses": 8,
           "victoires": 2,
-          "tauxVictoire": 33.3
+          "tauxVictoire": 25
         },
         "sprint": {
-          "courses": 2,
+          "courses": 4,
           "victoires": 0,
           "tauxVictoire": 0
+        },
+        "staying": {
+          "courses": 2,
+          "victoires": 1,
+          "tauxVictoire": 50
         }
       }
     },
     "H.LEBOUC|||J.BOISNARD (S)": {
       "jockey": "H.LEBOUC",
       "entraineur": "J.BOISNARD (S)",
-      "courses": 3,
-      "victoires": 0,
-      "places": 1,
-      "tauxVictoire": 0,
-      "tauxPlace": 33.3,
+      "courses": 6,
+      "victoires": 1,
+      "places": 3,
+      "tauxVictoire": 16.7,
+      "tauxPlace": 50,
       "byDistance": {
         "mile": {
+          "courses": 4,
+          "victoires": 1,
+          "tauxVictoire": 25
+        },
+        "staying": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "A.HAMELIN|||MME C.AUVRAY": {
+      "jockey": "A.HAMELIN",
+      "entraineur": "MME C.AUVRAY",
+      "courses": 3,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {
+        "intermediaire": {
           "courses": 2,
           "victoires": 0,
           "tauxVictoire": 0
@@ -21626,16 +21965,80 @@
     "L.GROSSO|||CH.PLISSON (S)": {
       "jockey": "L.GROSSO",
       "entraineur": "CH.PLISSON (S)",
-      "courses": 3,
+      "courses": 6,
       "victoires": 1,
-      "places": 1,
-      "tauxVictoire": 33.3,
+      "places": 2,
+      "tauxVictoire": 16.7,
       "tauxPlace": 33.3,
-      "byDistance": {}
+      "byDistance": {
+        "staying": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
+        "mile": {
+          "courses": 3,
+          "victoires": 1,
+          "tauxVictoire": 33.3
+        }
+      }
+    },
+    "C.LECOEUVRE|||FX.BELVISI": {
+      "jockey": "C.LECOEUVRE",
+      "entraineur": "FX.BELVISI",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 33.3,
+      "byDistance": {
+        "intermediaire": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "M.GRANDIN|||M.KREBS (S)": {
+      "jockey": "M.GRANDIN",
+      "entraineur": "M.KREBS (S)",
+      "courses": 4,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 25,
+      "byDistance": {
+        "mile": {
+          "courses": 3,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
     },
     "J.LACROIX|||B.LEGROS (S)": {
       "jockey": "J.LACROIX",
       "entraineur": "B.LEGROS (S)",
+      "courses": 5,
+      "victoires": 1,
+      "places": 2,
+      "tauxVictoire": 20,
+      "tauxPlace": 40,
+      "byDistance": {
+        "staying": {
+          "courses": 2,
+          "victoires": 1,
+          "tauxVictoire": 50
+        },
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "M.GRANDIN|||MME M.SCANDELLA-LACAILLE": {
+      "jockey": "M.GRANDIN",
+      "entraineur": "MME M.SCANDELLA-LACAILLE",
       "courses": 3,
       "victoires": 1,
       "places": 1,
@@ -21659,14 +22062,46 @@
         }
       }
     },
+    "M.CALBRIX|||JP.CARVALHO": {
+      "jockey": "M.CALBRIX",
+      "entraineur": "JP.CARVALHO",
+      "courses": 3,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "C.GROSBOIS|||CH.PLISSON (S)": {
+      "jockey": "C.GROSBOIS",
+      "entraineur": "CH.PLISSON (S)",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 33.3,
+      "byDistance": {
+        "staying": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
     "H.BOUTIN|||M.BOUTIN (S)": {
       "jockey": "H.BOUTIN",
       "entraineur": "M.BOUTIN (S)",
-      "courses": 8,
+      "courses": 12,
       "victoires": 1,
-      "places": 3,
-      "tauxVictoire": 12.5,
-      "tauxPlace": 37.5,
+      "places": 5,
+      "tauxVictoire": 8.3,
+      "tauxPlace": 41.7,
       "byDistance": {
         "intermediaire": {
           "courses": 4,
@@ -21677,19 +22112,61 @@
           "courses": 2,
           "victoires": 1,
           "tauxVictoire": 50
+        },
+        "sprint": {
+          "courses": 3,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
+        "staying": {
+          "courses": 3,
+          "victoires": 0,
+          "tauxVictoire": 0
         }
       }
     },
     "F.VALLE SKAR|||P.ADDA (S)": {
       "jockey": "F.VALLE SKAR",
       "entraineur": "P.ADDA (S)",
-      "courses": 4,
+      "courses": 5,
       "victoires": 0,
       "places": 1,
       "tauxVictoire": 0,
-      "tauxPlace": 25,
+      "tauxPlace": 20,
       "byDistance": {
         "mile": {
+          "courses": 3,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "L.GALLO|||J.LEROY": {
+      "jockey": "L.GALLO",
+      "entraineur": "J.LEROY",
+      "courses": 3,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {
+        "intermediaire": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "T.PICCONE|||M.KREBS (S)": {
+      "jockey": "T.PICCONE",
+      "entraineur": "M.KREBS (S)",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 33.3,
+      "byDistance": {
+        "intermediaire": {
           "courses": 2,
           "victoires": 0,
           "tauxVictoire": 0
@@ -21751,22 +22228,49 @@
     "A.LEMAITRE|||MME Y.VOLLMER": {
       "jockey": "A.LEMAITRE",
       "entraineur": "MME Y.VOLLMER",
-      "courses": 3,
+      "courses": 5,
       "victoires": 1,
       "places": 1,
-      "tauxVictoire": 33.3,
-      "tauxPlace": 33.3,
-      "byDistance": {}
+      "tauxVictoire": 20,
+      "tauxPlace": 20,
+      "byDistance": {
+        "intermediaire": {
+          "courses": 3,
+          "victoires": 1,
+          "tauxVictoire": 33.3
+        }
+      }
+    },
+    "A.HAMELIN|||D&P.PROD'HOMME (S)": {
+      "jockey": "A.HAMELIN",
+      "entraineur": "D&P.PROD'HOMME (S)",
+      "courses": 4,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 25,
+      "byDistance": {
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
     },
     "T.PICCONE|||M.PITART": {
       "jockey": "T.PICCONE",
       "entraineur": "M.PITART",
-      "courses": 3,
-      "victoires": 0,
-      "places": 1,
-      "tauxVictoire": 0,
-      "tauxPlace": 33.3,
+      "courses": 4,
+      "victoires": 1,
+      "places": 2,
+      "tauxVictoire": 25,
+      "tauxPlace": 50,
       "byDistance": {
+        "intermediaire": {
+          "courses": 2,
+          "victoires": 1,
+          "tauxVictoire": 50
+        },
         "mile": {
           "courses": 2,
           "victoires": 0,
@@ -21793,30 +22297,78 @@
     "OSVALDO ADRIAN ALDERETE|||ELVIO RAMON BORTULE": {
       "jockey": "OSVALDO ADRIAN ALDERETE",
       "entraineur": "ELVIO RAMON BORTULE",
-      "courses": 3,
+      "courses": 4,
       "victoires": 0,
       "places": 0,
       "tauxVictoire": 0,
       "tauxPlace": 0,
       "byDistance": {
         "sprint": {
-          "courses": 3,
+          "courses": 4,
           "victoires": 0,
           "tauxVictoire": 0
+        }
+      }
+    },
+    "MOISES ABRAHAM DONOSO|||ENRIQUE SIMON LAGUNAS": {
+      "jockey": "MOISES ABRAHAM DONOSO",
+      "entraineur": "ENRIQUE SIMON LAGUNAS",
+      "courses": 4,
+      "victoires": 1,
+      "places": 2,
+      "tauxVictoire": 25,
+      "tauxPlace": 50,
+      "byDistance": {
+        "sprint": {
+          "courses": 4,
+          "victoires": 1,
+          "tauxVictoire": 25
         }
       }
     },
     "JOSE DANIEL VILLAGRAN|||VICTOR HUGO MORIS": {
       "jockey": "JOSE DANIEL VILLAGRAN",
       "entraineur": "VICTOR HUGO MORIS",
-      "courses": 3,
+      "courses": 5,
       "victoires": 0,
       "places": 0,
       "tauxVictoire": 0,
       "tauxPlace": 0,
       "byDistance": {
         "sprint": {
-          "courses": 3,
+          "courses": 5,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "CARLOS ALEJANDRO ORTEGA TAPIA|||JOSE ARAYA": {
+      "jockey": "CARLOS ALEJANDRO ORTEGA TAPIA",
+      "entraineur": "JOSE ARAYA",
+      "courses": 4,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 25,
+      "byDistance": {
+        "sprint": {
+          "courses": 4,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "CARLOS ALEJANDRO ORTEGA TAPIA|||BRAULIO SANTIAGO GOMEZ": {
+      "jockey": "CARLOS ALEJANDRO ORTEGA TAPIA",
+      "entraineur": "BRAULIO SANTIAGO GOMEZ",
+      "courses": 4,
+      "victoires": 0,
+      "places": 2,
+      "tauxVictoire": 0,
+      "tauxPlace": 50,
+      "byDistance": {
+        "sprint": {
+          "courses": 4,
           "victoires": 0,
           "tauxVictoire": 0
         }
@@ -21825,14 +22377,14 @@
     "SEBASTIAN ANDRES MARIN QUEZADA|||WILFREDO FRANCISCO MANCILLA DIAZ": {
       "jockey": "SEBASTIAN ANDRES MARIN QUEZADA",
       "entraineur": "WILFREDO FRANCISCO MANCILLA DIAZ",
-      "courses": 3,
+      "courses": 4,
       "victoires": 0,
       "places": 0,
       "tauxVictoire": 0,
       "tauxPlace": 0,
       "byDistance": {
         "sprint": {
-          "courses": 3,
+          "courses": 4,
           "victoires": 0,
           "tauxVictoire": 0
         }
@@ -21841,16 +22393,32 @@
     "MAXIMILIANO JOSE SALINAS|||VICTOR HUGO MORIS": {
       "jockey": "MAXIMILIANO JOSE SALINAS",
       "entraineur": "VICTOR HUGO MORIS",
-      "courses": 3,
-      "victoires": 0,
-      "places": 0,
-      "tauxVictoire": 0,
-      "tauxPlace": 0,
+      "courses": 4,
+      "victoires": 1,
+      "places": 1,
+      "tauxVictoire": 25,
+      "tauxPlace": 25,
       "byDistance": {
         "sprint": {
-          "courses": 3,
-          "victoires": 0,
-          "tauxVictoire": 0
+          "courses": 4,
+          "victoires": 1,
+          "tauxVictoire": 25
+        }
+      }
+    },
+    "NICOLAS ALEJANDRO RAMIREZ MUNOZ|||MAXIMO TOMAS SILVA": {
+      "jockey": "NICOLAS ALEJANDRO RAMIREZ MUNOZ",
+      "entraineur": "MAXIMO TOMAS SILVA",
+      "courses": 5,
+      "victoires": 1,
+      "places": 2,
+      "tauxVictoire": 20,
+      "tauxPlace": 40,
+      "byDistance": {
+        "sprint": {
+          "courses": 5,
+          "victoires": 1,
+          "tauxVictoire": 20
         }
       }
     },
@@ -21863,6 +22431,38 @@
       "tauxVictoire": 0,
       "tauxPlace": 33.3,
       "byDistance": {}
+    },
+    "JAMES SULLIVAN|||RUTH CARR": {
+      "jockey": "JAMES SULLIVAN",
+      "entraineur": "RUTH CARR",
+      "courses": 4,
+      "victoires": 1,
+      "places": 1,
+      "tauxVictoire": 25,
+      "tauxPlace": 25,
+      "byDistance": {
+        "sprint": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "JASON HART|||CHARLIE JOHNSTON": {
+      "jockey": "JASON HART",
+      "entraineur": "CHARLIE JOHNSTON",
+      "courses": 4,
+      "victoires": 1,
+      "places": 3,
+      "tauxVictoire": 25,
+      "tauxPlace": 75,
+      "byDistance": {
+        "intermediaire": {
+          "courses": 3,
+          "victoires": 1,
+          "tauxVictoire": 33.3
+        }
+      }
     },
     "ROB HORNBY|||JONATHAN PORTMAN": {
       "jockey": "ROB HORNBY",
@@ -21880,14 +22480,30 @@
         }
       }
     },
-    "JUAN P. TORRES|||FRANCISCO  ACEVEDO": {
-      "jockey": "JUAN P. TORRES",
-      "entraineur": "FRANCISCO  ACEVEDO",
+    "CAM HARDIE|||ANTONY BRITTAIN": {
+      "jockey": "CAM HARDIE",
+      "entraineur": "ANTONY BRITTAIN",
       "courses": 3,
       "victoires": 0,
-      "places": 3,
+      "places": 1,
       "tauxVictoire": 0,
-      "tauxPlace": 100,
+      "tauxPlace": 33.3,
+      "byDistance": {
+        "sprint": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "JOHANN  OLATE|||JULIO ENRIQUE ESPINOSA NUNEZ": {
+      "jockey": "JOHANN  OLATE",
+      "entraineur": "JULIO ENRIQUE ESPINOSA NUNEZ",
+      "courses": 3,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
       "byDistance": {
         "sprint": {
           "courses": 3,
@@ -21896,9 +22512,89 @@
         }
       }
     },
+    "JOSE MANUEL MOYA SEPULVEDA|||CARLOS MARCELO CORDOVA ARAYA": {
+      "jockey": "JOSE MANUEL MOYA SEPULVEDA",
+      "entraineur": "CARLOS MARCELO CORDOVA ARAYA",
+      "courses": 4,
+      "victoires": 2,
+      "places": 2,
+      "tauxVictoire": 50,
+      "tauxPlace": 50,
+      "byDistance": {
+        "sprint": {
+          "courses": 4,
+          "victoires": 2,
+          "tauxVictoire": 50
+        }
+      }
+    },
+    "LUIS EDUARDO ROJAS ARANGUREN|||HECTOR CH ARTEAGA": {
+      "jockey": "LUIS EDUARDO ROJAS ARANGUREN",
+      "entraineur": "HECTOR CH ARTEAGA",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 33.3,
+      "byDistance": {
+        "sprint": {
+          "courses": 3,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "JUAN P. TORRES|||FRANCISCO  ACEVEDO": {
+      "jockey": "JUAN P. TORRES",
+      "entraineur": "FRANCISCO  ACEVEDO",
+      "courses": 5,
+      "victoires": 0,
+      "places": 4,
+      "tauxVictoire": 0,
+      "tauxPlace": 80,
+      "byDistance": {
+        "sprint": {
+          "courses": 5,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "JOSE MANUEL MOYA SEPULVEDA|||ALEX S. CEA": {
+      "jockey": "JOSE MANUEL MOYA SEPULVEDA",
+      "entraineur": "ALEX S. CEA",
+      "courses": 4,
+      "victoires": 1,
+      "places": 4,
+      "tauxVictoire": 25,
+      "tauxPlace": 100,
+      "byDistance": {
+        "sprint": {
+          "courses": 4,
+          "victoires": 1,
+          "tauxVictoire": 25
+        }
+      }
+    },
     "JOHANN  OLATE|||EDUARDO S. GONZALEZ": {
       "jockey": "JOHANN  OLATE",
       "entraineur": "EDUARDO S. GONZALEZ",
+      "courses": 5,
+      "victoires": 2,
+      "places": 2,
+      "tauxVictoire": 40,
+      "tauxPlace": 40,
+      "byDistance": {
+        "sprint": {
+          "courses": 5,
+          "victoires": 2,
+          "tauxVictoire": 40
+        }
+      }
+    },
+    "CRISTIAN ANDRES ROJAS ESPINOSA|||ALEX S. CEA": {
+      "jockey": "CRISTIAN ANDRES ROJAS ESPINOSA",
+      "entraineur": "ALEX S. CEA",
       "courses": 3,
       "victoires": 2,
       "places": 2,
@@ -21909,6 +22605,54 @@
           "courses": 3,
           "victoires": 2,
           "tauxVictoire": 66.7
+        }
+      }
+    },
+    "ANGEL IRENK VEGA CHAMORRO|||CARLOS MIGUEL NORAMBUENA": {
+      "jockey": "ANGEL IRENK VEGA CHAMORRO",
+      "entraineur": "CARLOS MIGUEL NORAMBUENA",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 33.3,
+      "byDistance": {
+        "sprint": {
+          "courses": 3,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "VICENTE ALEXANDER MARDONES GONZA|||CARLOS MARCELO CORDOVA ARAYA": {
+      "jockey": "VICENTE ALEXANDER MARDONES GONZA",
+      "entraineur": "CARLOS MARCELO CORDOVA ARAYA",
+      "courses": 4,
+      "victoires": 1,
+      "places": 2,
+      "tauxVictoire": 25,
+      "tauxPlace": 50,
+      "byDistance": {
+        "sprint": {
+          "courses": 4,
+          "victoires": 1,
+          "tauxVictoire": 25
+        }
+      }
+    },
+    "C.DEMURO|||C.ESCUDER": {
+      "jockey": "C.DEMURO",
+      "entraineur": "C.ESCUDER",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 33.3,
+      "byDistance": {
+        "staying": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
         }
       }
     },
@@ -21928,14 +22672,72 @@
         }
       }
     },
+    "R.THOMAS|||MME C.BARANDE BARBE": {
+      "jockey": "R.THOMAS",
+      "entraineur": "MME C.BARANDE BARBE",
+      "courses": 4,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {
+        "sprint": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "C.DEMURO|||M.GUARNIERI": {
+      "jockey": "C.DEMURO",
+      "entraineur": "M.GUARNIERI",
+      "courses": 3,
+      "victoires": 1,
+      "places": 1,
+      "tauxVictoire": 33.3,
+      "tauxPlace": 33.3,
+      "byDistance": {
+        "sprint": {
+          "courses": 3,
+          "victoires": 1,
+          "tauxVictoire": 33.3
+        }
+      }
+    },
+    "C.DEMURO|||M.MUNCH (S)": {
+      "jockey": "C.DEMURO",
+      "entraineur": "M.MUNCH (S)",
+      "courses": 4,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {
+        "intermediaire": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
+        "staying": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
     "H.JOURNIAC|||Y.BARBEROT (S)": {
       "jockey": "H.JOURNIAC",
       "entraineur": "Y.BARBEROT (S)",
-      "courses": 5,
+      "courses": 6,
       "victoires": 1,
       "places": 1,
-      "tauxVictoire": 20,
-      "tauxPlace": 20,
+      "tauxVictoire": 16.7,
+      "tauxPlace": 16.7,
       "byDistance": {
         "staying": {
           "courses": 3,
@@ -21947,11 +22749,11 @@
     "N.BAUDET|||D.ARTU (S)": {
       "jockey": "N.BAUDET",
       "entraineur": "D.ARTU (S)",
-      "courses": 3,
+      "courses": 5,
       "victoires": 0,
-      "places": 0,
+      "places": 1,
       "tauxVictoire": 0,
-      "tauxPlace": 0,
+      "tauxPlace": 20,
       "byDistance": {
         "intermediaire": {
           "courses": 3,
@@ -21963,28 +22765,81 @@
     "F.VALLE SKAR|||M.BOUTIN (S)": {
       "jockey": "F.VALLE SKAR",
       "entraineur": "M.BOUTIN (S)",
-      "courses": 4,
+      "courses": 5,
       "victoires": 1,
       "places": 2,
-      "tauxVictoire": 25,
-      "tauxPlace": 50,
+      "tauxVictoire": 20,
+      "tauxPlace": 40,
       "byDistance": {
         "sprint": {
-          "courses": 2,
+          "courses": 3,
           "victoires": 1,
-          "tauxVictoire": 50
+          "tauxVictoire": 33.3
+        }
+      }
+    },
+    "S.PASQUIER|||F.CARNEVALI": {
+      "jockey": "S.PASQUIER",
+      "entraineur": "F.CARNEVALI",
+      "courses": 3,
+      "victoires": 1,
+      "places": 1,
+      "tauxVictoire": 33.3,
+      "tauxPlace": 33.3,
+      "byDistance": {
+        "mile": {
+          "courses": 3,
+          "victoires": 1,
+          "tauxVictoire": 33.3
+        }
+      }
+    },
+    "P.BAZIRE|||JV.TOUX": {
+      "jockey": "P.BAZIRE",
+      "entraineur": "JV.TOUX",
+      "courses": 5,
+      "victoires": 0,
+      "places": 2,
+      "tauxVictoire": 0,
+      "tauxPlace": 40,
+      "byDistance": {
+        "mile": {
+          "courses": 4,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "D.SANTIAGO|||MME C.NICOT": {
+      "jockey": "D.SANTIAGO",
+      "entraineur": "MME C.NICOT",
+      "courses": 4,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 25,
+      "byDistance": {
+        "mile": {
+          "courses": 4,
+          "victoires": 0,
+          "tauxVictoire": 0
         }
       }
     },
     "M.JUSTUM|||M.JUSTUM": {
       "jockey": "M.JUSTUM",
       "entraineur": "M.JUSTUM",
-      "courses": 3,
+      "courses": 5,
       "victoires": 0,
       "places": 0,
       "tauxVictoire": 0,
       "tauxPlace": 0,
       "byDistance": {
+        "mile": {
+          "courses": 3,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
         "staying": {
           "courses": 2,
           "victoires": 0,
@@ -22011,16 +22866,16 @@
     "F.LEFEBVRE|||A.FOUASSIER": {
       "jockey": "F.LEFEBVRE",
       "entraineur": "A.FOUASSIER",
-      "courses": 9,
+      "courses": 11,
       "victoires": 2,
-      "places": 4,
-      "tauxVictoire": 22.2,
-      "tauxPlace": 44.4,
+      "places": 6,
+      "tauxVictoire": 18.2,
+      "tauxPlace": 54.5,
       "byDistance": {
         "staying": {
-          "courses": 4,
+          "courses": 5,
           "victoires": 2,
-          "tauxVictoire": 50
+          "tauxVictoire": 40
         },
         "mile": {
           "courses": 2,
@@ -22028,7 +22883,7 @@
           "tauxVictoire": 0
         },
         "sprint": {
-          "courses": 2,
+          "courses": 3,
           "victoires": 0,
           "tauxVictoire": 0
         }
@@ -22053,6 +22908,22 @@
     "A.BARON|||A.BARON": {
       "jockey": "A.BARON",
       "entraineur": "A.BARON",
+      "courses": 4,
+      "victoires": 0,
+      "places": 2,
+      "tauxVictoire": 0,
+      "tauxPlace": 50,
+      "byDistance": {
+        "mile": {
+          "courses": 3,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "P.REMOUE|||M.BRASME (S)": {
+      "jockey": "P.REMOUE",
+      "entraineur": "M.BRASME (S)",
       "courses": 3,
       "victoires": 0,
       "places": 2,
@@ -22060,7 +22931,7 @@
       "tauxPlace": 66.7,
       "byDistance": {
         "mile": {
-          "courses": 2,
+          "courses": 3,
           "victoires": 0,
           "tauxVictoire": 0
         }
@@ -22069,7 +22940,7 @@
     "A.MASSIN|||Y.BARBEROT (S)": {
       "jockey": "A.MASSIN",
       "entraineur": "Y.BARBEROT (S)",
-      "courses": 3,
+      "courses": 4,
       "victoires": 0,
       "places": 0,
       "tauxVictoire": 0,
@@ -22077,6 +22948,27 @@
       "byDistance": {
         "mile": {
           "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
+        "staying": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "J.GUILLOCHON|||FR.MONFORT (S)": {
+      "jockey": "J.GUILLOCHON",
+      "entraineur": "FR.MONFORT (S)",
+      "courses": 5,
+      "victoires": 0,
+      "places": 3,
+      "tauxVictoire": 0,
+      "tauxPlace": 60,
+      "byDistance": {
+        "staying": {
+          "courses": 4,
           "victoires": 0,
           "tauxVictoire": 0
         }
@@ -22098,6 +22990,43 @@
         }
       }
     },
+    "JASON HART|||IVAN FURTADO": {
+      "jockey": "JASON HART",
+      "entraineur": "IVAN FURTADO",
+      "courses": 3,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "HOLLIE DOYLE|||DR RICHARD NEWLAND & JAMIE INSOL": {
+      "jockey": "HOLLIE DOYLE",
+      "entraineur": "DR RICHARD NEWLAND & JAMIE INSOL",
+      "courses": 4,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {
+        "sprint": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
     "A.WERLE|||O.TRIGODET (S)": {
       "jockey": "A.WERLE",
       "entraineur": "O.TRIGODET (S)",
@@ -22107,6 +23036,22 @@
       "tauxVictoire": 66.7,
       "tauxPlace": 66.7,
       "byDistance": {}
+    },
+    "H.MOUESAN|||JC.ROUGET (S)": {
+      "jockey": "H.MOUESAN",
+      "entraineur": "JC.ROUGET (S)",
+      "courses": 4,
+      "victoires": 0,
+      "places": 2,
+      "tauxVictoire": 0,
+      "tauxPlace": 50,
+      "byDistance": {
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
     },
     "N.M..LOPES DUARTE|||TJ.MARTINS NOVAIS": {
       "jockey": "N.M..LOPES DUARTE",
@@ -22153,6 +23098,22 @@
       "places": 3,
       "tauxVictoire": 33.3,
       "tauxPlace": 100,
+      "byDistance": {
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "I.MENDIZABAL|||D.WATRIGANT (S)": {
+      "jockey": "I.MENDIZABAL",
+      "entraineur": "D.WATRIGANT (S)",
+      "courses": 4,
+      "victoires": 1,
+      "places": 1,
+      "tauxVictoire": 25,
+      "tauxPlace": 25,
       "byDistance": {
         "mile": {
           "courses": 2,
@@ -22214,15 +23175,36 @@
         }
       }
     },
-    "CHUNG Y.L.|||TSUI Y.S.": {
-      "jockey": "CHUNG Y.L.",
-      "entraineur": "TSUI Y.S.",
+    "ATZENI A.|||CRUZ A.S.": {
+      "jockey": "ATZENI A.",
+      "entraineur": "CRUZ A.S.",
       "courses": 3,
       "victoires": 0,
       "places": 0,
       "tauxVictoire": 0,
       "tauxPlace": 0,
       "byDistance": {
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "CHUNG Y.L.|||TSUI Y.S.": {
+      "jockey": "CHUNG Y.L.",
+      "entraineur": "TSUI Y.S.",
+      "courses": 4,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {
+        "sprint": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
         "mile": {
           "courses": 2,
           "victoires": 0,
@@ -22248,6 +23230,38 @@
           "courses": 3,
           "victoires": 0,
           "tauxVictoire": 0
+        }
+      }
+    },
+    "WONG E.C.W.|||SHUM C.S.": {
+      "jockey": "WONG E.C.W.",
+      "entraineur": "SHUM C.S.",
+      "courses": 3,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {
+        "sprint": {
+          "courses": 3,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "CHAU C.L.|||NG P.C.": {
+      "jockey": "CHAU C.L.",
+      "entraineur": "NG P.C.",
+      "courses": 4,
+      "victoires": 1,
+      "places": 2,
+      "tauxVictoire": 25,
+      "tauxPlace": 50,
+      "byDistance": {
+        "mile": {
+          "courses": 3,
+          "victoires": 1,
+          "tauxVictoire": 33.3
         }
       }
     },
@@ -22320,6 +23334,86 @@
         }
       }
     },
+    "POON M.F.|||HALL D.J.": {
+      "jockey": "POON M.F.",
+      "entraineur": "HALL D.J.",
+      "courses": 3,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {
+        "mile": {
+          "courses": 3,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "HEWITSON L.|||SHUM C.S.": {
+      "jockey": "HEWITSON L.",
+      "entraineur": "SHUM C.S.",
+      "courses": 4,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {
+        "mile": {
+          "courses": 3,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "BOWMAN H.|||MO W.K.": {
+      "jockey": "BOWMAN H.",
+      "entraineur": "MO W.K.",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 33.3,
+      "byDistance": {
+        "sprint": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "PIERO IGNACIO REYES PODESTA|||CARLOS ARTURO VASQUEZ PEREZ": {
+      "jockey": "PIERO IGNACIO REYES PODESTA",
+      "entraineur": "CARLOS ARTURO VASQUEZ PEREZ",
+      "courses": 3,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {
+        "sprint": {
+          "courses": 3,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "DIEGO ANDRES CARVACHO AZUA|||MARCOS ANTONIO CONTRERAS LOPEZ": {
+      "jockey": "DIEGO ANDRES CARVACHO AZUA",
+      "entraineur": "MARCOS ANTONIO CONTRERAS LOPEZ",
+      "courses": 3,
+      "victoires": 1,
+      "places": 1,
+      "tauxVictoire": 33.3,
+      "tauxPlace": 33.3,
+      "byDistance": {
+        "sprint": {
+          "courses": 3,
+          "victoires": 1,
+          "tauxVictoire": 33.3
+        }
+      }
+    },
     "A.LEMAITRE|||MME V.HEAD": {
       "jockey": "A.LEMAITRE",
       "entraineur": "MME V.HEAD",
@@ -22328,6 +23422,38 @@
       "places": 0,
       "tauxVictoire": 0,
       "tauxPlace": 0,
+      "byDistance": {
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "M.MARQUETTE|||M.GUARNIERI": {
+      "jockey": "M.MARQUETTE",
+      "entraineur": "M.GUARNIERI",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 33.3,
+      "byDistance": {
+        "sprint": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "G.TROLLEY DE PREVAUX|||TIM.DONWORTH (S)": {
+      "jockey": "G.TROLLEY DE PREVAUX",
+      "entraineur": "TIM.DONWORTH (S)",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 33.3,
       "byDistance": {
         "mile": {
           "courses": 2,
@@ -22349,6 +23475,22 @@
           "courses": 3,
           "victoires": 0,
           "tauxVictoire": 0
+        }
+      }
+    },
+    "T.PICCONE|||G.HERNON (S)": {
+      "jockey": "T.PICCONE",
+      "entraineur": "G.HERNON (S)",
+      "courses": 3,
+      "victoires": 1,
+      "places": 1,
+      "tauxVictoire": 33.3,
+      "tauxPlace": 33.3,
+      "byDistance": {
+        "mile": {
+          "courses": 2,
+          "victoires": 1,
+          "tauxVictoire": 50
         }
       }
     },
@@ -22403,16 +23545,21 @@
     "M J HUSBANDS|||S A JOSEPH, JR.": {
       "jockey": "M J HUSBANDS",
       "entraineur": "S A JOSEPH, JR.",
-      "courses": 3,
-      "victoires": 1,
-      "places": 1,
-      "tauxVictoire": 33.3,
-      "tauxPlace": 33.3,
+      "courses": 5,
+      "victoires": 2,
+      "places": 2,
+      "tauxVictoire": 40,
+      "tauxPlace": 40,
       "byDistance": {
         "sprint": {
+          "courses": 3,
+          "victoires": 2,
+          "tauxVictoire": 66.7
+        },
+        "mile": {
           "courses": 2,
-          "victoires": 1,
-          "tauxVictoire": 50
+          "victoires": 0,
+          "tauxVictoire": 0
         }
       }
     },
@@ -22554,22 +23701,6 @@
         }
       }
     },
-    "JORGE ALEJANDRO GONZALEZ MORENO|||PATRICIO BAEZA ALAMOS": {
-      "jockey": "JORGE ALEJANDRO GONZALEZ MORENO",
-      "entraineur": "PATRICIO BAEZA ALAMOS",
-      "courses": 4,
-      "victoires": 0,
-      "places": 2,
-      "tauxVictoire": 0,
-      "tauxPlace": 50,
-      "byDistance": {
-        "mile": {
-          "courses": 2,
-          "victoires": 0,
-          "tauxVictoire": 0
-        }
-      }
-    },
     "JONATHAN ANDRES CASTILLO TAPIA|||ALDO RODOLFO PARRA": {
       "jockey": "JONATHAN ANDRES CASTILLO TAPIA",
       "entraineur": "ALDO RODOLFO PARRA",
@@ -22602,22 +23733,116 @@
         }
       }
     },
+    "SHANE GRAY|||RICHARD & PETER FAHEY": {
+      "jockey": "SHANE GRAY",
+      "entraineur": "RICHARD & PETER FAHEY",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 33.3,
+      "byDistance": {
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "SEAN KIRRANE|||MICHAEL DODS": {
+      "jockey": "SEAN KIRRANE",
+      "entraineur": "MICHAEL DODS",
+      "courses": 4,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 25,
+      "byDistance": {
+        "sprint": {
+          "courses": 3,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "BEN ROBINSON|||BRIAN ELLISON": {
+      "jockey": "BEN ROBINSON",
+      "entraineur": "BRIAN ELLISON",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 33.3,
+      "byDistance": {
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
     "A.CRASTUS|||N.PERRET (S)": {
       "jockey": "A.CRASTUS",
       "entraineur": "N.PERRET (S)",
-      "courses": 8,
-      "victoires": 1,
-      "places": 4,
-      "tauxVictoire": 12.5,
-      "tauxPlace": 50,
+      "courses": 11,
+      "victoires": 2,
+      "places": 5,
+      "tauxVictoire": 18.2,
+      "tauxPlace": 45.5,
       "byDistance": {
         "staying": {
-          "courses": 2,
-          "victoires": 1,
-          "tauxVictoire": 50
+          "courses": 3,
+          "victoires": 2,
+          "tauxVictoire": 66.7
         },
         "intermediaire": {
-          "courses": 5,
+          "courses": 6,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "C.PACAUT|||C.ESCUDER": {
+      "jockey": "C.PACAUT",
+      "entraineur": "C.ESCUDER",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 33.3,
+      "byDistance": {}
+    },
+    "D.BREUX|||R.CHOTARD": {
+      "jockey": "D.BREUX",
+      "entraineur": "R.CHOTARD",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 33.3,
+      "byDistance": {}
+    },
+    "H.BESNIER|||C.ESCUDER": {
+      "jockey": "H.BESNIER",
+      "entraineur": "C.ESCUDER",
+      "courses": 5,
+      "victoires": 1,
+      "places": 2,
+      "tauxVictoire": 20,
+      "tauxPlace": 40,
+      "byDistance": {
+        "sprint": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
+        "mile": {
+          "courses": 2,
           "victoires": 0,
           "tauxVictoire": 0
         }
@@ -22636,7 +23861,7 @@
     "C.PACAUT|||S.LABATE (S)": {
       "jockey": "C.PACAUT",
       "entraineur": "S.LABATE (S)",
-      "courses": 3,
+      "courses": 4,
       "victoires": 0,
       "places": 0,
       "tauxVictoire": 0,
@@ -22649,17 +23874,106 @@
         }
       }
     },
-    "J.CLAUDIC|||F.BRESSON (S)": {
-      "jockey": "J.CLAUDIC",
-      "entraineur": "F.BRESSON (S)",
-      "courses": 4,
+    "M.GERMAIN|||MME M.SCANDELLA-LACAILLE": {
+      "jockey": "M.GERMAIN",
+      "entraineur": "MME M.SCANDELLA-LACAILLE",
+      "courses": 3,
       "victoires": 0,
       "places": 1,
       "tauxVictoire": 0,
-      "tauxPlace": 25,
+      "tauxPlace": 33.3,
+      "byDistance": {}
+    },
+    "A.ORANI|||N.PERRET (S)": {
+      "jockey": "A.ORANI",
+      "entraineur": "N.PERRET (S)",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 33.3,
       "byDistance": {
         "mile": {
           "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "L.BOISSEAU|||A.JUNK (S)": {
+      "jockey": "L.BOISSEAU",
+      "entraineur": "A.JUNK (S)",
+      "courses": 3,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {
+        "sprint": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "C.GROSBOIS|||K.PLISSON": {
+      "jockey": "C.GROSBOIS",
+      "entraineur": "K.PLISSON",
+      "courses": 3,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {
+        "staying": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "J.CLAUDIC|||F.BRESSON (S)": {
+      "jockey": "J.CLAUDIC",
+      "entraineur": "F.BRESSON (S)",
+      "courses": 5,
+      "victoires": 1,
+      "places": 2,
+      "tauxVictoire": 20,
+      "tauxPlace": 40,
+      "byDistance": {
+        "staying": {
+          "courses": 2,
+          "victoires": 1,
+          "tauxVictoire": 50
+        },
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "X.BERGERON|||T.SPEICHER": {
+      "jockey": "X.BERGERON",
+      "entraineur": "T.SPEICHER",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 33.3,
+      "byDistance": {}
+    },
+    "C.PACAUT|||S.ZULIANI (S)": {
+      "jockey": "C.PACAUT",
+      "entraineur": "S.ZULIANI (S)",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 33.3,
+      "byDistance": {
+        "staying": {
+          "courses": 3,
           "victoires": 0,
           "tauxVictoire": 0
         }
@@ -22672,6 +23986,22 @@
       "victoires": 0,
       "places": 1,
       "tauxVictoire": 0,
+      "tauxPlace": 33.3,
+      "byDistance": {
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "M.GRANDIN|||L.GADBIN (S)": {
+      "jockey": "M.GRANDIN",
+      "entraineur": "L.GADBIN (S)",
+      "courses": 3,
+      "victoires": 1,
+      "places": 1,
+      "tauxVictoire": 33.3,
       "tauxPlace": 33.3,
       "byDistance": {
         "mile": {
@@ -22700,16 +24030,16 @@
     "J.CLAUDIC|||M.PITART": {
       "jockey": "J.CLAUDIC",
       "entraineur": "M.PITART",
-      "courses": 4,
-      "victoires": 0,
-      "places": 0,
-      "tauxVictoire": 0,
-      "tauxPlace": 0,
+      "courses": 5,
+      "victoires": 1,
+      "places": 1,
+      "tauxVictoire": 20,
+      "tauxPlace": 20,
       "byDistance": {
         "staying": {
-          "courses": 3,
-          "victoires": 0,
-          "tauxVictoire": 0
+          "courses": 4,
+          "victoires": 1,
+          "tauxVictoire": 25
         }
       }
     },
@@ -22740,6 +24070,80 @@
       "byDistance": {
         "intermediaire": {
           "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "H.BOUTIN|||J.ANDREU (S)": {
+      "jockey": "H.BOUTIN",
+      "entraineur": "J.ANDREU (S)",
+      "courses": 5,
+      "victoires": 1,
+      "places": 3,
+      "tauxVictoire": 20,
+      "tauxPlace": 60,
+      "byDistance": {
+        "intermediaire": {
+          "courses": 2,
+          "victoires": 1,
+          "tauxVictoire": 50
+        },
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "D.PROVOST|||C.ESCUDER": {
+      "jockey": "D.PROVOST",
+      "entraineur": "C.ESCUDER",
+      "courses": 3,
+      "victoires": 1,
+      "places": 1,
+      "tauxVictoire": 33.3,
+      "tauxPlace": 33.3,
+      "byDistance": {
+        "intermediaire": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "G.SIAS|||A.BOTTI (S)": {
+      "jockey": "G.SIAS",
+      "entraineur": "A.BOTTI (S)",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 33.3,
+      "byDistance": {
+        "sprint": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "J.NICOLEAU|||A.WEST": {
+      "jockey": "J.NICOLEAU",
+      "entraineur": "A.WEST",
+      "courses": 7,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 14.3,
+      "byDistance": {
+        "staying": {
+          "courses": 3,
+          "victoires": 0,
+          "tauxVictoire": 0
+        },
+        "sprint": {
+          "courses": 3,
           "victoires": 0,
           "tauxVictoire": 0
         }
@@ -22809,22 +24213,6 @@
         }
       }
     },
-    "VICTOR MANUEL MIRANDA GALLEGOS|||CRISTIAN ANTONIO URBINA ROJAS": {
-      "jockey": "VICTOR MANUEL MIRANDA GALLEGOS",
-      "entraineur": "CRISTIAN ANTONIO URBINA ROJAS",
-      "courses": 3,
-      "victoires": 1,
-      "places": 1,
-      "tauxVictoire": 33.3,
-      "tauxPlace": 33.3,
-      "byDistance": {
-        "sprint": {
-          "courses": 3,
-          "victoires": 1,
-          "tauxVictoire": 33.3
-        }
-      }
-    },
     "L.BOISSEAU|||G.PANNIER": {
       "jockey": "L.BOISSEAU",
       "entraineur": "G.PANNIER",
@@ -22836,6 +24224,54 @@
       "byDistance": {
         "mile": {
           "courses": 3,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "M.VELON|||JP.GAUVIN (S)": {
+      "jockey": "M.VELON",
+      "entraineur": "JP.GAUVIN (S)",
+      "courses": 3,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "A.MOLINS|||P.CHEVIGNY DE": {
+      "jockey": "A.MOLINS",
+      "entraineur": "P.CHEVIGNY DE",
+      "courses": 4,
+      "victoires": 0,
+      "places": 2,
+      "tauxVictoire": 0,
+      "tauxPlace": 50,
+      "byDistance": {
+        "mile": {
+          "courses": 3,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "S.PASQUIER|||C.FERLAND (S)": {
+      "jockey": "S.PASQUIER",
+      "entraineur": "C.FERLAND (S)",
+      "courses": 3,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {
+        "mile": {
+          "courses": 2,
           "victoires": 0,
           "tauxVictoire": 0
         }
@@ -22875,6 +24311,70 @@
       "places": 3,
       "tauxVictoire": 33.3,
       "tauxPlace": 100,
+      "byDistance": {
+        "sprint": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "PABLO DAMIAN CARRIZO|||JUAN CARLOS BORDA": {
+      "jockey": "PABLO DAMIAN CARRIZO",
+      "entraineur": "JUAN CARLOS BORDA",
+      "courses": 3,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {
+        "sprint": {
+          "courses": 3,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "ADRIAN MAXIMILIANO GIANNETTI|||CARLOS ARNALDO VIGIL": {
+      "jockey": "ADRIAN MAXIMILIANO GIANNETTI",
+      "entraineur": "CARLOS ARNALDO VIGIL",
+      "courses": 3,
+      "victoires": 0,
+      "places": 2,
+      "tauxVictoire": 0,
+      "tauxPlace": 66.7,
+      "byDistance": {
+        "sprint": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "KEVIN BANEGAS|||NICOLAS MARTIN FERRO": {
+      "jockey": "KEVIN BANEGAS",
+      "entraineur": "NICOLAS MARTIN FERRO",
+      "courses": 3,
+      "victoires": 1,
+      "places": 2,
+      "tauxVictoire": 33.3,
+      "tauxPlace": 66.7,
+      "byDistance": {
+        "sprint": {
+          "courses": 3,
+          "victoires": 1,
+          "tauxVictoire": 33.3
+        }
+      }
+    },
+    "ELVIO G CANDIA GUTIERREZ|||MARIA FERNANDA ALVAREZ": {
+      "jockey": "ELVIO G CANDIA GUTIERREZ",
+      "entraineur": "MARIA FERNANDA ALVAREZ",
+      "courses": 3,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
       "byDistance": {
         "sprint": {
           "courses": 2,
@@ -22979,6 +24479,16 @@
         }
       }
     },
+    "M.GRANDIN|||CH.PLISSON (S)": {
+      "jockey": "M.GRANDIN",
+      "entraineur": "CH.PLISSON (S)",
+      "courses": 3,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {}
+    },
     "DAVID PATRICIO SANCHEZ SAN MARTI|||JOSE ARAYA BAHAMONDES": {
       "jockey": "DAVID PATRICIO SANCHEZ SAN MARTI",
       "entraineur": "JOSE ARAYA BAHAMONDES",
@@ -22995,9 +24505,136 @@
         }
       }
     },
+    "JORGE EDUARDO ZUNIGA|||PATRICIO BAEZA ALAMOS": {
+      "jockey": "JORGE EDUARDO ZUNIGA",
+      "entraineur": "PATRICIO BAEZA ALAMOS",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 33.3,
+      "byDistance": {}
+    },
     "MOREIRA J.|||FOWNES C.": {
       "jockey": "MOREIRA J.",
       "entraineur": "FOWNES C.",
+      "courses": 11,
+      "victoires": 1,
+      "places": 6,
+      "tauxVictoire": 9.1,
+      "tauxPlace": 54.5,
+      "byDistance": {
+        "mile": {
+          "courses": 7,
+          "victoires": 1,
+          "tauxVictoire": 14.3
+        },
+        "sprint": {
+          "courses": 4,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "PURTON Z.|||SIZE J.": {
+      "jockey": "PURTON Z.",
+      "entraineur": "SIZE J.",
+      "courses": 3,
+      "victoires": 3,
+      "places": 3,
+      "tauxVictoire": 100,
+      "tauxPlace": 100,
+      "byDistance": {
+        "mile": {
+          "courses": 3,
+          "victoires": 3,
+          "tauxVictoire": 100
+        }
+      }
+    },
+    "YEUNG M.L.|||LUI K.W.": {
+      "jockey": "YEUNG M.L.",
+      "entraineur": "LUI K.W.",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 33.3,
+      "byDistance": {
+        "sprint": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "GERALD ANDRES RODRIGUEZ SEPULVED|||EDUARDO ALEJANDRO DONOSO": {
+      "jockey": "GERALD ANDRES RODRIGUEZ SEPULVED",
+      "entraineur": "EDUARDO ALEJANDRO DONOSO",
+      "courses": 3,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {
+        "sprint": {
+          "courses": 3,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "GUILLERMO ANTONIO PEREZ ASTUDILL|||GABRIEL RODRIGO REYES IRIARTE": {
+      "jockey": "GUILLERMO ANTONIO PEREZ ASTUDILL",
+      "entraineur": "GABRIEL RODRIGO REYES IRIARTE",
+      "courses": 3,
+      "victoires": 0,
+      "places": 1,
+      "tauxVictoire": 0,
+      "tauxPlace": 33.3,
+      "byDistance": {
+        "sprint": {
+          "courses": 3,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "MOISES ABRAHAM DONOSO|||JOAN MANUEL AMAYA HERNANDEZ": {
+      "jockey": "MOISES ABRAHAM DONOSO",
+      "entraineur": "JOAN MANUEL AMAYA HERNANDEZ",
+      "courses": 3,
+      "victoires": 1,
+      "places": 1,
+      "tauxVictoire": 33.3,
+      "tauxPlace": 33.3,
+      "byDistance": {
+        "sprint": {
+          "courses": 3,
+          "victoires": 1,
+          "tauxVictoire": 33.3
+        }
+      }
+    },
+    "WONG P.N.|||TSUI Y.S.": {
+      "jockey": "WONG P.N.",
+      "entraineur": "TSUI Y.S.",
+      "courses": 3,
+      "victoires": 0,
+      "places": 0,
+      "tauxVictoire": 0,
+      "tauxPlace": 0,
+      "byDistance": {
+        "mile": {
+          "courses": 2,
+          "victoires": 0,
+          "tauxVictoire": 0
+        }
+      }
+    },
+    "R. SOUSA|||O. ANAYA": {
+      "jockey": "R. SOUSA",
+      "entraineur": "O. ANAYA",
       "courses": 3,
       "victoires": 0,
       "places": 2,
@@ -23005,9 +24642,25 @@
       "tauxPlace": 66.7,
       "byDistance": {
         "mile": {
-          "courses": 3,
+          "courses": 2,
           "victoires": 0,
           "tauxVictoire": 0
+        }
+      }
+    },
+    "V. JANACEK|||G. ARIZKORRETA": {
+      "jockey": "V. JANACEK",
+      "entraineur": "G. ARIZKORRETA",
+      "courses": 4,
+      "victoires": 1,
+      "places": 1,
+      "tauxVictoire": 25,
+      "tauxPlace": 25,
+      "byDistance": {
+        "mile": {
+          "courses": 3,
+          "victoires": 1,
+          "tauxVictoire": 33.3
         }
       }
     }
