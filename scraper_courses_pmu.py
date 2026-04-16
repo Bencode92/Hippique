@@ -53,10 +53,17 @@ def api_get(endpoint, max_retries=3):
 
 
 def format_heure(ts):
+    """Convertit timestamp PMU en heure française (UTC+2 été, UTC+1 hiver)."""
     if not ts:
         return ""
     try:
-        return datetime.fromtimestamp(ts / 1000).strftime("%Hh%M")
+        # L'API PMU donne des timestamps UTC
+        # On ajoute 2h pour l'heure française (CEST, été)
+        # TODO: gérer le changement heure hiver/été automatiquement
+        from datetime import timezone, timedelta
+        utc_dt = datetime.fromtimestamp(ts / 1000, tz=timezone.utc)
+        paris_dt = utc_dt + timedelta(hours=2)  # CEST (été)
+        return paris_dt.strftime("%Hh%M")
     except:
         return ""
 
