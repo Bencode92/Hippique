@@ -1679,13 +1679,11 @@
                     );
                     let reunionBanner = '';
                     if (coursesTerminees.length >= 2) {
-                        let rN1=0, rF1=0, rN2=0, rF2=0, rTotal=coursesTerminees.length;
+                        let rN1=0, rF1=0, rN2=0, rF2=0, rN3=0, rF3=0, rTotal=coursesTerminees.length;
                         coursesTerminees.forEach(c => {
                             const parts = c.participants || [];
-                            // Trier par cote (favori)
                             const avecCotes = parts.filter(p => p.cote > 1);
                             const parCote = [...avecCotes].sort((a,b) => a.cote - b.cote);
-                            // Trier par nos critères simples (valeur + cote)
                             const scored = parts.map(p => {
                                 const val = parseFloat(p.valeur) || 50;
                                 const coteS = p.cote > 1 ? (1/p.cote)*100 : 50;
@@ -1694,25 +1692,33 @@
 
                             if (scored[0]?.arrivee === 1) rN1++;
                             if (scored.slice(0,2).some(p => p.arrivee === 1)) rN2++;
+                            if (scored.slice(0,3).some(p => p.arrivee === 1)) rN3++;
                             if (parCote[0]?.arrivee === 1) rF1++;
                             if (parCote.slice(0,2).some(p => p.arrivee === 1)) rF2++;
+                            if (parCote.slice(0,3).some(p => p.arrivee === 1)) rF3++;
                         });
                         const pN1 = Math.round(rN1/rTotal*100);
                         const pF1 = Math.round(rF1/rTotal*100);
                         const pN2 = Math.round(rN2/rTotal*100);
                         const pF2 = Math.round(rF2/rTotal*100);
+                        const pN3 = Math.round(rN3/rTotal*100);
+                        const pF3 = Math.round(rF3/rTotal*100);
                         const n1Color = pN1 >= pF1 ? '#40e05a' : '#e05a40';
                         const f1Color = pF1 >= pN1 ? '#40e05a' : '#e05a40';
                         const n2Color = pN2 >= pF2 ? '#40e05a' : '#e05a40';
                         const f2Color = pF2 >= pN2 ? '#40e05a' : '#e05a40';
+                        const n3Color = pN3 >= pF3 ? '#40e05a' : '#e05a40';
+                        const f3Color = pF3 >= pN3 ? '#40e05a' : '#e05a40';
 
                         reunionBanner = `
                             <div style="background:rgba(0,0,0,0.25);border-radius:8px;padding:8px 12px;margin-bottom:10px;font-size:0.85em;display:flex;justify-content:space-around;flex-wrap:wrap;gap:8px">
-                                <span>📊 <strong>${rTotal}</strong> courses terminées</span>
-                                <span>Notre #1 gagne <strong style="color:${n1Color}">${pN1}%</strong> (${rN1}/${rTotal})</span>
-                                <span>Favori cote <strong style="color:${f1Color}">${pF1}%</strong> (${rF1}/${rTotal})</span>
-                                <span>Notre Top2 <strong style="color:${n2Color}">${pN2}%</strong></span>
+                                <span>📊 <strong>${rTotal}</strong> courses</span>
+                                <span>Notre #1 <strong style="color:${n1Color}">${pN1}%</strong> (${rN1}/${rTotal})</span>
+                                <span>Fav cote <strong style="color:${f1Color}">${pF1}%</strong> (${rF1}/${rTotal})</span>
+                                <span>Top2 <strong style="color:${n2Color}">${pN2}%</strong></span>
                                 <span>2 meill. cotes <strong style="color:${f2Color}">${pF2}%</strong></span>
+                                <span>Top3 <strong style="color:${n3Color}">${pN3}%</strong></span>
+                                <span>3 meill. cotes <strong style="color:${f3Color}">${pF3}%</strong></span>
                             </div>`;
                     }
 
