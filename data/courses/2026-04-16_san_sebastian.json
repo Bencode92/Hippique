@@ -1,39 +1,40 @@
 {
   "hippodrome": "SAN SEBASTIAN",
   "type_reunion": "Plat",
-  "date_extraction": "2026-04-16T07:19:44.101278",
+  "date_extraction": "2026-04-16T09:09:19.916032",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/16042026/R2",
   "courses": [
     {
       "nom": "PREMIO ANDATZA TABERNA",
-      "horaire": "09h05",
+      "horaire": "11h05",
       "numero": "1",
       "type": "Plat",
       "distance": "1400m",
       "url": "",
       "participants": [
         {
-          "n°": "1",
-          "cheval": "ECLAIR LANE F.PU. 3 a.",
+          "n°": "4",
+          "cheval": "CONTESA F.PU. 3 a.",
           "cheval_url": "",
-          "père_mère": "Par: LUCKY VEGA et VERONICA FALLS (MEDICEAN)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/16042026/R2/C1/P1.png",
-          "propriétaire": "C. EZENEL",
-          "entraineur": "A. SOTO",
+          "père_mère": "Par: SAXON WARRIOR et LOCKERBIE (NEW APPROACH)",
+          "corde": "(Corde:03)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/16042026/R2/C1/P4.png",
+          "propriétaire": "YEGUADA ROCIO",
+          "entraineur": "G. ARIZKORRETA",
           "éleveurs": "",
-          "jockey": "I. MELGAREJO",
-          "poids": "58.5 kg",
-          "gains": "1500000",
-          "musique": "8p2p(25)3p5p",
-          "valeur": "58.5",
+          "jockey": "V. JANACEK",
+          "poids": "55.5 kg",
+          "gains": "440000",
+          "musique": "6p2p(25)3p",
+          "valeur": "55.5",
           "equipement(s)": "",
-          "nb_courses": 7,
-          "nb_victoires": 1,
-          "nb_places": 4,
-          "cote": 6.8,
-          "cote_tendance": "+",
-          "cote_reference": 6.5
+          "nb_courses": 3,
+          "nb_victoires": 0,
+          "nb_places": 2,
+          "cote": 2.2,
+          "cote_tendance": "",
+          "cote_reference": 2.5,
+          "arrivee": 1
         },
         {
           "n°": "2",
@@ -54,78 +55,10 @@
           "nb_courses": 6,
           "nb_victoires": 1,
           "nb_places": 4,
-          "cote": 4.7,
-          "cote_tendance": "+",
-          "cote_reference": 4.6
-        },
-        {
-          "n°": "3",
-          "cheval": "VOLTERETA H.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: SLADE POWER et KISMAR (THE CARBON UNIT)",
-          "corde": "(Corde:04)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/16042026/R2/C1/P3.png",
-          "propriétaire": "CUADRA C & M",
-          "entraineur": "A. SANCHEZ M.",
-          "éleveurs": "",
-          "jockey": "R. DUBORD",
-          "poids": "57 kg",
-          "gains": "89500",
-          "musique": "(25)9p7p6p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 3,
-          "nb_victoires": 0,
-          "nb_places": 2,
-          "cote": 7.3,
-          "cote_tendance": "+",
-          "cote_reference": 6.8
-        },
-        {
-          "n°": "4",
-          "cheval": "CONTESA F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: SAXON WARRIOR et LOCKERBIE (NEW APPROACH)",
-          "corde": "(Corde:03)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/16042026/R2/C1/P4.png",
-          "propriétaire": "YEGUADA ROCIO",
-          "entraineur": "G. ARIZKORRETA",
-          "éleveurs": "",
-          "jockey": "V. JANACEK",
-          "poids": "55.5 kg",
-          "gains": "440000",
-          "musique": "6p2p(25)3p",
-          "valeur": "55.5",
-          "equipement(s)": "",
-          "nb_courses": 3,
-          "nb_victoires": 0,
-          "nb_places": 2,
-          "cote": 2.3,
-          "cote_tendance": "-",
-          "cote_reference": 2.5
-        },
-        {
-          "n°": "5",
-          "cheval": "SASHAY AWAY F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: ACLAIM et WARSASH (WAR COMMAND)",
-          "corde": "(Corde:02)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/16042026/R2/C1/P5.png",
-          "propriétaire": "C. ESPECTACULO",
-          "entraineur": "H. PEREIRA",
-          "éleveurs": "",
-          "jockey": "J. GELABERT",
-          "poids": "55.5 kg",
-          "gains": "91200",
-          "musique": "6p5p(25)9p0p",
-          "valeur": "55.5",
-          "equipement(s)": "",
-          "nb_courses": 7,
-          "nb_victoires": 0,
-          "nb_places": 2,
-          "cote": 10.0,
-          "cote_tendance": "+",
-          "cote_reference": 10.0
+          "cote": 2.8,
+          "cote_tendance": "",
+          "cote_reference": 3.2,
+          "arrivee": 2
         },
         {
           "n°": "6",
@@ -146,18 +79,91 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 7.9,
+          "cote": 9.4,
+          "cote_tendance": "",
+          "cote_reference": 8.2,
+          "arrivee": 3
+        },
+        {
+          "n°": "1",
+          "cheval": "ECLAIR LANE F.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: LUCKY VEGA et VERONICA FALLS (MEDICEAN)",
+          "corde": "(Corde:01)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/16042026/R2/C1/P1.png",
+          "propriétaire": "C. EZENEL",
+          "entraineur": "A. SOTO",
+          "éleveurs": "",
+          "jockey": "I. MELGAREJO",
+          "poids": "58.5 kg",
+          "gains": "1500000",
+          "musique": "8p2p(25)3p5p",
+          "valeur": "58.5",
+          "equipement(s)": "",
+          "nb_courses": 7,
+          "nb_victoires": 1,
+          "nb_places": 4,
+          "cote": 8.0,
+          "cote_tendance": "",
+          "cote_reference": 6.6,
+          "arrivee": 4
+        },
+        {
+          "n°": "3",
+          "cheval": "VOLTERETA H.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: SLADE POWER et KISMAR (THE CARBON UNIT)",
+          "corde": "(Corde:04)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/16042026/R2/C1/P3.png",
+          "propriétaire": "CUADRA C & M",
+          "entraineur": "A. SANCHEZ M.",
+          "éleveurs": "",
+          "jockey": "R. DUBORD",
+          "poids": "57 kg",
+          "gains": "89500",
+          "musique": "(25)9p7p6p",
+          "valeur": "57.0",
+          "equipement(s)": "",
+          "nb_courses": 3,
+          "nb_victoires": 0,
+          "nb_places": 2,
+          "cote": 15.0,
           "cote_tendance": "+",
-          "cote_reference": 7.5
+          "cote_reference": 10.0
+        },
+        {
+          "n°": "5",
+          "cheval": "SASHAY AWAY F.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: ACLAIM et WARSASH (WAR COMMAND)",
+          "corde": "(Corde:02)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/16042026/R2/C1/P5.png",
+          "propriétaire": "C. ESPECTACULO",
+          "entraineur": "H. PEREIRA",
+          "éleveurs": "",
+          "jockey": "J. GELABERT",
+          "poids": "55.5 kg",
+          "gains": "91200",
+          "musique": "6p5p(25)9p0p",
+          "valeur": "55.5",
+          "equipement(s)": "",
+          "nb_courses": 7,
+          "nb_victoires": 0,
+          "nb_places": 2,
+          "cote": 20.0,
+          "cote_tendance": "+",
+          "cote_reference": 13.0
         }
       ],
+      "typePiste": "HERBE",
       "terrain": "Souple",
       "penetrometre": "3,5",
-      "cordeCourse": "CORDE_DROITE"
+      "cordeCourse": "CORDE_DROITE",
+      "arrivee_definitive": false
     },
     {
       "nom": "PREMIO AITONAK OKINDEGIA",
-      "horaire": "09h35",
+      "horaire": "11h35",
       "numero": "2",
       "type": "Plat",
       "distance": "1600m",
@@ -182,9 +188,9 @@
           "nb_courses": 7,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 19.0,
-          "cote_tendance": "+",
-          "cote_reference": 17.0
+          "cote": 6.3,
+          "cote_tendance": "",
+          "cote_reference": 6.1
         },
         {
           "n°": "2",
@@ -205,9 +211,9 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 9.3,
-          "cote_tendance": "+",
-          "cote_reference": 14.0
+          "cote": 7.4,
+          "cote_tendance": "",
+          "cote_reference": 7.2
         },
         {
           "n°": "3",
@@ -228,9 +234,9 @@
           "nb_courses": 20,
           "nb_victoires": 2,
           "nb_places": 10,
-          "cote": 3.7,
+          "cote": 3.5,
           "cote_tendance": "",
-          "cote_reference": 3.4
+          "cote_reference": 3.5
         },
         {
           "n°": "4",
@@ -251,9 +257,9 @@
           "nb_courses": 7,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 13.0,
-          "cote_tendance": "-",
-          "cote_reference": 15.0
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 12.0
         },
         {
           "n°": "5",
@@ -274,9 +280,9 @@
           "nb_courses": 24,
           "nb_victoires": 5,
           "nb_places": 13,
-          "cote": 8.6,
-          "cote_tendance": "+",
-          "cote_reference": 7.8
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 12.0
         },
         {
           "n°": "6",
@@ -297,9 +303,9 @@
           "nb_courses": 10,
           "nb_victoires": 2,
           "nb_places": 5,
-          "cote": 6.9,
+          "cote": 4.6,
           "cote_tendance": "",
-          "cote_reference": 6.3
+          "cote_reference": 4.4
         },
         {
           "n°": "7",
@@ -320,9 +326,9 @@
           "nb_courses": 11,
           "nb_victoires": 6,
           "nb_places": 2,
-          "cote": 2.9,
-          "cote_tendance": "+",
-          "cote_reference": 3.0
+          "cote": 7.2,
+          "cote_tendance": "",
+          "cote_reference": 6.9
         },
         {
           "n°": "8",
@@ -343,18 +349,19 @@
           "nb_courses": 6,
           "nb_victoires": 1,
           "nb_places": 1,
-          "cote": 33.0,
-          "cote_tendance": "+",
-          "cote_reference": 30.0
+          "cote": 26.0,
+          "cote_tendance": "",
+          "cote_reference": 46.0
         }
       ],
+      "typePiste": "HERBE",
       "terrain": "Souple",
       "penetrometre": "3,5",
       "cordeCourse": "CORDE_DROITE"
     },
     {
       "nom": "PREMIO VENTANAS ALCAR (VENTA)",
-      "horaire": "10h07",
+      "horaire": "12h07",
       "numero": "3",
       "type": "Plat",
       "distance": "1400m",
@@ -379,9 +386,9 @@
           "nb_courses": 57,
           "nb_victoires": 9,
           "nb_places": 36,
-          "cote": 9.5,
-          "cote_tendance": "+",
-          "cote_reference": 8.0
+          "cote": 5.3,
+          "cote_tendance": "-",
+          "cote_reference": 6.4
         },
         {
           "n°": "2",
@@ -402,9 +409,9 @@
           "nb_courses": 19,
           "nb_victoires": 4,
           "nb_places": 7,
-          "cote": 13.0,
-          "cote_tendance": "+",
-          "cote_reference": 13.0
+          "cote": 12.0,
+          "cote_tendance": "-",
+          "cote_reference": 14.0
         },
         {
           "n°": "3",
@@ -425,9 +432,9 @@
           "nb_courses": 24,
           "nb_victoires": 10,
           "nb_places": 9,
-          "cote": 3.9,
+          "cote": 3.8,
           "cote_tendance": "-",
-          "cote_reference": 6.1
+          "cote_reference": 4.1
         },
         {
           "n°": "4",
@@ -448,9 +455,9 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 13.0,
-          "cote_tendance": "-",
-          "cote_reference": 20.0
+          "cote": 17.0,
+          "cote_tendance": "+",
+          "cote_reference": 16.0
         },
         {
           "n°": "5",
@@ -471,9 +478,9 @@
           "nb_courses": 18,
           "nb_victoires": 2,
           "nb_places": 9,
-          "cote": 7.3,
+          "cote": 8.2,
           "cote_tendance": "+",
-          "cote_reference": 6.6
+          "cote_reference": 7.5
         },
         {
           "n°": "6",
@@ -494,9 +501,9 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 7.9,
+          "cote": 11.0,
           "cote_tendance": "+",
-          "cote_reference": 6.6
+          "cote_reference": 10.0
         },
         {
           "n°": "7",
@@ -517,9 +524,9 @@
           "nb_courses": 44,
           "nb_victoires": 8,
           "nb_places": 17,
-          "cote": 9.5,
+          "cote": 11.0,
           "cote_tendance": "+",
-          "cote_reference": 8.0
+          "cote_reference": 10.0
         },
         {
           "n°": "8",
@@ -540,9 +547,9 @@
           "nb_courses": 41,
           "nb_victoires": 3,
           "nb_places": 17,
-          "cote": 6.3,
+          "cote": 7.7,
           "cote_tendance": "+",
-          "cote_reference": 5.7
+          "cote_reference": 7.1
         },
         {
           "n°": "9",
@@ -563,18 +570,19 @@
           "nb_courses": 24,
           "nb_victoires": 2,
           "nb_places": 7,
-          "cote": 9.5,
+          "cote": 7.3,
           "cote_tendance": "+",
-          "cote_reference": 8.0
+          "cote_reference": 6.7
         }
       ],
+      "typePiste": "HERBE",
       "terrain": "Souple",
       "penetrometre": "3,5",
       "cordeCourse": "CORDE_DROITE"
     },
     {
       "nom": "PREMIO BAR PATRICIO (HANDICAP 2 PARTE)",
-      "horaire": "10h39",
+      "horaire": "12h39",
       "numero": "4",
       "type": "Plat",
       "distance": "2200m",
@@ -599,9 +607,9 @@
           "nb_courses": 14,
           "nb_victoires": 1,
           "nb_places": 0,
-          "cote": 42.0,
+          "cote": 9.9,
           "cote_tendance": "+",
-          "cote_reference": 38.0
+          "cote_reference": 9.5
         },
         {
           "n°": "2",
@@ -622,9 +630,9 @@
           "nb_courses": 44,
           "nb_victoires": 7,
           "nb_places": 19,
-          "cote": 9.4,
+          "cote": 9.9,
           "cote_tendance": "-",
-          "cote_reference": 9.5
+          "cote_reference": 11.0
         },
         {
           "n°": "3",
@@ -645,9 +653,9 @@
           "nb_courses": 80,
           "nb_victoires": 7,
           "nb_places": 44,
-          "cote": 5.2,
-          "cote_tendance": "-",
-          "cote_reference": 5.9
+          "cote": 7.0,
+          "cote_tendance": "+",
+          "cote_reference": 6.8
         },
         {
           "n°": "4",
@@ -668,9 +676,9 @@
           "nb_courses": 30,
           "nb_victoires": 2,
           "nb_places": 15,
-          "cote": 6.5,
-          "cote_tendance": "-",
-          "cote_reference": 8.5
+          "cote": 9.3,
+          "cote_tendance": "+",
+          "cote_reference": 8.9
         },
         {
           "n°": "5",
@@ -691,9 +699,9 @@
           "nb_courses": 11,
           "nb_victoires": 0,
           "nb_places": 5,
-          "cote": 9.4,
-          "cote_tendance": "+",
-          "cote_reference": 8.5
+          "cote": 8.7,
+          "cote_tendance": "-",
+          "cote_reference": 9.5
         },
         {
           "n°": "6",
@@ -716,7 +724,7 @@
           "nb_places": 2,
           "cote": 10.0,
           "cote_tendance": "+",
-          "cote_reference": 9.5
+          "cote_reference": 10.0
         },
         {
           "n°": "7",
@@ -737,9 +745,9 @@
           "nb_courses": 27,
           "nb_victoires": 2,
           "nb_places": 11,
-          "cote": 4.7,
-          "cote_tendance": "+",
-          "cote_reference": 4.5
+          "cote": 7.0,
+          "cote_tendance": "-",
+          "cote_reference": 7.1
         },
         {
           "n°": "8",
@@ -760,9 +768,9 @@
           "nb_courses": 6,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 84.0,
+          "cote": 7.0,
           "cote_tendance": "+",
-          "cote_reference": 76.0
+          "cote_reference": 6.8
         },
         {
           "n°": "9",
@@ -782,7 +790,10 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 74.0,
+          "cote_tendance": "-",
+          "cote_reference": 142.0
         },
         {
           "n°": "10",
@@ -803,9 +814,9 @@
           "nb_courses": 14,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 7.0,
+          "cote": 8.2,
           "cote_tendance": "+",
-          "cote_reference": 6.3
+          "cote_reference": 7.9
         },
         {
           "n°": "11",
@@ -826,18 +837,19 @@
           "nb_courses": 43,
           "nb_victoires": 4,
           "nb_places": 21,
-          "cote": 10.0,
+          "cote": 16.0,
           "cote_tendance": "+",
-          "cote_reference": 9.5
+          "cote_reference": 15.0
         }
       ],
+      "typePiste": "HERBE",
       "terrain": "Souple",
       "penetrometre": "3,5",
       "cordeCourse": "CORDE_DROITE"
     },
     {
       "nom": "PREMIO CLINICA DENTAL ALDAZ- ALDAZ HORTZ KLINIKA (HÁNDICAP 1 PARTE)",
-      "horaire": "11h11",
+      "horaire": "13h11",
       "numero": "5",
       "type": "Plat",
       "distance": "2200m",
@@ -862,9 +874,9 @@
           "nb_courses": 16,
           "nb_victoires": 4,
           "nb_places": 7,
-          "cote": 6.4,
+          "cote": 6.3,
           "cote_tendance": "+",
-          "cote_reference": 6.3
+          "cote_reference": 6.2
         },
         {
           "n°": "2",
@@ -885,9 +897,9 @@
           "nb_courses": 52,
           "nb_victoires": 6,
           "nb_places": 25,
-          "cote": 4.6,
-          "cote_tendance": "-",
-          "cote_reference": 13.0
+          "cote": 4.7,
+          "cote_tendance": "+",
+          "cote_reference": 4.6
         },
         {
           "n°": "3",
@@ -908,9 +920,9 @@
           "nb_courses": 9,
           "nb_victoires": 2,
           "nb_places": 5,
-          "cote": 20.0,
+          "cote": 11.0,
           "cote_tendance": "+",
-          "cote_reference": 17.0
+          "cote_reference": 11.0
         },
         {
           "n°": "4",
@@ -931,9 +943,9 @@
           "nb_courses": 22,
           "nb_victoires": 5,
           "nb_places": 9,
-          "cote": 10.0,
-          "cote_tendance": "+",
-          "cote_reference": 8.7
+          "cote": 8.1,
+          "cote_tendance": "-",
+          "cote_reference": 9.3
         },
         {
           "n°": "5",
@@ -954,9 +966,9 @@
           "nb_courses": 10,
           "nb_victoires": 3,
           "nb_places": 4,
-          "cote": 6.4,
+          "cote": 6.0,
           "cote_tendance": "+",
-          "cote_reference": 5.3
+          "cote_reference": 5.8
         },
         {
           "n°": "6",
@@ -997,9 +1009,9 @@
           "nb_courses": 15,
           "nb_victoires": 2,
           "nb_places": 5,
-          "cote": 4.6,
+          "cote": 6.0,
           "cote_tendance": "+",
-          "cote_reference": 3.8
+          "cote_reference": 5.8
         },
         {
           "n°": "8",
@@ -1020,9 +1032,9 @@
           "nb_courses": 22,
           "nb_victoires": 5,
           "nb_places": 10,
-          "cote": 10.0,
+          "cote": 14.0,
           "cote_tendance": "+",
-          "cote_reference": 8.7
+          "cote_reference": 14.0
         },
         {
           "n°": "9",
@@ -1043,9 +1055,9 @@
           "nb_courses": 29,
           "nb_victoires": 5,
           "nb_places": 12,
-          "cote": 20.0,
+          "cote": 28.0,
           "cote_tendance": "+",
-          "cote_reference": 17.0
+          "cote_reference": 28.0
         },
         {
           "n°": "10",
@@ -1066,9 +1078,9 @@
           "nb_courses": 10,
           "nb_victoires": 2,
           "nb_places": 2,
-          "cote": 11.0,
-          "cote_tendance": "+",
-          "cote_reference": 9.9
+          "cote": 10.0,
+          "cote_tendance": "-",
+          "cote_reference": 11.0
         },
         {
           "n°": "11",
@@ -1089,11 +1101,12 @@
           "nb_courses": 15,
           "nb_victoires": 3,
           "nb_places": 4,
-          "cote": 41.0,
-          "cote_tendance": "-",
-          "cote_reference": 69.0
+          "cote": 38.0,
+          "cote_tendance": "+",
+          "cote_reference": 37.0
         }
       ],
+      "typePiste": "HERBE",
       "terrain": "Souple",
       "penetrometre": "3,5",
       "cordeCourse": "CORDE_DROITE"
