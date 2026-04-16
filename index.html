@@ -1250,7 +1250,8 @@
                     
                     // Chemin correct vers les fichiers de courses
                     console.log("Tentative de récupération des fichiers dans le répertoire 'data/courses'");
-                    let response = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/data/courses`);
+                    const cacheBust = Math.floor(Date.now() / 60000); // change chaque minute
+                    let response = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/data/courses?t=${cacheBust}`);
                     
                     if (!response.ok) {
                         console.error(`Erreur lors de la récupération des fichiers: ${response.status}`);
