@@ -1684,10 +1684,30 @@
                             const parts = c.participants || [];
                             const avecCotes = parts.filter(p => p.cote > 1);
                             const parCote = [...avecCotes].sort((a,b) => a.cote - b.cote);
+                            // Scoring identique aux formules par distance
+                            const dist = parseInt(String(c.distance || '').replace(/[^0-9]/g, '')) || 0;
                             const scored = parts.map(p => {
                                 const val = parseFloat(p.valeur) || 50;
                                 const coteS = p.cote > 1 ? (1/p.cote)*100 : 50;
-                                return {...p, _s: val * 0.5 + coteS * 0.4};
+                                // Musique
+                                let mus = 50;
+                                if (p.musique) {
+                                    const pos = p.musique.replace(/\(\d+\)/g,'').match(/(\d+|[DRT])[a-z]/gi);
+                                    if (pos && pos.length >= 2) {
+                                        const l = pos.slice(0,5).map(x => {const v=x.slice(0,-1);if('DRT'.includes(v))return 12;const n=parseInt(v);return n===0?12:n;});
+                                        let sc=0,w=0;l.forEach((ps,i)=>{const wt=(l.length-i)/l.length;const s=ps===1?100:ps===2?80:ps===3?65:ps<=5?45:ps<=8?25:10;sc+=s*wt;w+=wt;});
+                                        mus = w>0?sc/w:50;
+                                    }
+                                }
+                                let s;
+                                if (dist < 1400) s = mus*0.4 + coteS*0.4 + val*0.2;
+                                else if (dist < 1700) s = val*0.5 + coteS*0.3 + mus*0.2;
+                                else if (dist < 2200) { const nbC=parseInt(p.nb_courses)||0; const iv=nbC>=2?(parseInt(p.nb_victoires)||0)/nbC*100:8; s = coteS*0.5 + val*0.3 + iv*0.2; }
+                                else s = coteS*0.4 + val*0.3 + mus*0.3;
+                                // Peloton
+                                if (parts.length < 9) s += val*0.15;
+                                else if (parts.length >= 14) s += 8*0.3;
+                                return {...p, _s: s};
                             }).sort((a,b) => b._s - a._s);
 
                             if (scored[0]?.arrivee === 1) rN1++;
