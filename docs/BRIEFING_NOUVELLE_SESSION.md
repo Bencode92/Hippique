@@ -337,3 +337,22 @@ Utilisé par claude-matcher.js pour résoudre les noms non matchés via Claude.
 - Le favori marché gagne ~32% des courses
 - Notre modèle global fait ~25-35% selon la période
 - L'edge n'est PAS global, il est **par segment** (Saint-Cloud mile, sprint provincial)
+
+---
+
+## 10. TODO PRIORITAIRE PROCHAINE SESSION
+
+### Refactoring scoring : module partagé HTML + Terminal
+
+**Problème** : `live-scoring.js` (terminal) et `ranking-loader.js` (HTML) ont des logiques similaires mais pas 100% identiques. Le matching des noms (fuzzy matching) diffère → classements légèrement différents.
+
+**Solution** : Extraire la logique de scoring dans un module JavaScript partagé (`scoring-engine.js`) utilisable par :
+- `ranking-loader.js` (navigateur)
+- `live-scoring.js` (terminal Node.js)
+
+**Fichiers concernés** :
+- `js/ranking-loader.js` lignes 2560-2720 : formules de scoring
+- `js/ranking-loader.js` lignes 1545-1850 : matching noms (fuzzy, initiales, etc.)
+- `live-scoring.js` : à refaire pour utiliser le module partagé
+
+**Objectif** : `node live-scoring.js R1 C1` donne **100%** le même résultat que le HTML.
