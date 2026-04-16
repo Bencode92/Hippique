@@ -1729,7 +1729,7 @@
                     `;
                     
                     // Ajouter chaque course comme une carte
-                    filteredCourses.forEach(course => {
+                    filteredCourses.forEach((course, courseIndex) => {
                         if (!course) return; // Ignorer les courses nulles ou undefined
                         
                         const participantsCount = course.participants && Array.isArray(course.participants) 
@@ -1746,6 +1746,11 @@
                                     <div class="participant-count">${participantsCount} participant${participantsCount > 1 ? 's' : ''}</div>
                                     <div class="course-distance"><i class="fas fa-route"></i> ${course.distance || ""}</div>
                                     <div class="course-type">${course.type || "Plat"}</div>
+                                </div>
+                                <div style="margin-top:4px;font-size:0.7em;opacity:0.5;cursor:pointer"
+                                     title="Cliquer pour copier la commande terminal"
+                                     onclick="event.stopPropagation();const cmd='cd ~/Hippique && node live-scoring.js';navigator.clipboard.writeText(cmd).then(()=>{this.style.color='#40e05a';this.textContent='✅ Copié : '+cmd;setTimeout(()=>{this.style.color='';this.textContent='📋 Terminal: node live-scoring.js'},1500)})">
+                                    📋 Terminal: node live-scoring.js
                                 </div>
                             </div>
                         `;
