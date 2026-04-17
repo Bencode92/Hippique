@@ -139,6 +139,89 @@ function buildChevalLabel(p) {
 }
 
 // ====================================================================
+// ÉTAPE 5 : Classement LEVIERS — meilleur critère par distance
+// ====================================================================
+function loadLocalJSON(file) {
+  try { return JSON.parse(fs.readFileSync(path.join(__dirname, 'data', file), 'utf8')); }
+  catch { return null; }
+}
+
+function buildLookup(data, keyField) {
+  const m = {};
+  if (!data?.resultats) return m;
+  const list = Array.isArray(data.resultats) ? data.resultats : Object.entries(data.resultats).map(([k, v]) => ({ _key: k, ...v }));
+  list.forEach(item => { const k = (item[keyField] || item._key || '').toUpperCase().trim(); if (k) m[k] = item; });
+  return m;
+}
+
+let levierData = null;
+function getLevierData() {
+  if (levierData) return levierData;
+  const jk25 = buildLookup(loadLocalJSON('jockeys_2025_ponderated_latest.json'), 'NomPostal');
+  const jk26 = buildLookup(loadLocalJSON('jockeys_ponderated_latest.json'), 'NomPostal');
+  const chx25 = buildLookup(loadLocalJSON('chevaux_2025_ponderated_latest.json'), 'Nom');
+  const chx26 = buildLookup(loadLocalJSON('chevaux_ponderated_latest.json'), 'Nom');
+  levierData = { jk25, jk26, chx25, chx26 };
+  return levierData;
+}
+
+// Fuzzy match : "C. DEMURO" ou "DEMURO C." → "CRISTIAN DEMURO"
+function fuzzyMatch(map, shortName) {
+  if (!shortName || shortName.length < 3) return null;
+  const key = shortName.toUpperCase().trim();
+  if (map[key]) return map[key];
+
+  let init = '', fam = '';
+  // Format "C. DEMURO" ou "C DEMURO" ou "C.DEMURO" (sans espace)
+  let m = key.match(/^([A-Z])\.?\s*(.{3,})$/);
+  if (m) { init = m[1]; fam = m[2].trim(); }
+  // Format "DEMURO C." ou "DEMURO C"
+  if (!m) { m = key.match(/^(.{3,?})\s+([A-Z])\.?$/); if (m) { fam = m[1].trim(); init = m[2]; } }
+  // Format complet "CRISTIAN DEMURO" — chercher direct
+  if (!m) {
+    for (const [k, v] of Object.entries(map)) {
+      if (k === key) return v;
+      // Chercher si le nom contient le key ou vice versa
+      if (key.length >= 5 && (k.includes(key) || key.includes(k))) return v;
+    }
+    return null;
+  }
+
+  if (fam.length < 3) return null;
+  for (const [k, v] of Object.entries(map)) {
+    if (k.endsWith(fam) || k.endsWith(' ' + fam) || k.includes(' ' + fam)) {
+      const prenom = k.replace(fam, '').trim();
+      if (prenom && prenom[0] === init) return v;
+    }
+  }
+  return null;
+}
+
+function extractNomCheval(chevalStr) {
+  return (chevalStr || '').replace(/\s+[MFH]\.\w*\.?\s*\d+\s*a\.?\s*$/i, '').trim().toUpperCase();
+}
+
+// Meilleur levier par distance (basé sur l'analyse stats)
+function getLevierScore(participant, distBucket, ld) {
+  const jk = (participant.jockey || '').toUpperCase().trim();
+  const nom = extractNomCheval(participant.cheval);
+  const j25 = fuzzyMatch(ld.jk25, jk) || ld.jk25[jk];
+  const j26 = fuzzyMatch(ld.jk26, jk) || ld.jk26[jk];
+  const ch25 = ld.chx25[nom], ch26 = ld.chx26[nom];
+
+  const jkTauxP = Math.max(j25 ? parseFloat(j25.TauxPlace || 0) : 0, j26 ? parseFloat(j26.TauxPlace || 0) : 0) || 30;
+  const jkTauxV = Math.max(j25 ? parseFloat(j25.TauxVictoire || 0) : 0, j26 ? parseFloat(j26.TauxVictoire || 0) : 0) || 8;
+  const chTauxV = Math.max(ch25 ? parseFloat(ch25.TauxVictoire || 0) : 0, ch26 ? parseFloat(ch26.TauxVictoire || 0) : 0) || 8;
+
+  // Formule optimale par distance (d'après l'analyse leviers)
+  if (distBucket === 'sprint')  return { score: jkTauxP * 0.6 + chTauxV * 0.4, label: 'JkTauxP×60% + ChTauxV×40%' };
+  if (distBucket === 'mile')    return { score: jkTauxP * 0.5 + jkTauxV * 0.3 + chTauxV * 0.2, label: 'JkTauxP×50% + JkTauxV×30% + ChTauxV×20%' };
+  if (distBucket === 'middle')  return { score: jkTauxP * 0.5 + chTauxV * 0.3 + jkTauxV * 0.2, label: 'JkTauxP×50% + ChTauxV×30% + JkTauxV×20%' };
+  if (distBucket === 'staying') return { score: jkTauxP * 0.6 + jkTauxV * 0.2 + chTauxV * 0.2, label: 'JkTauxP×60% + JkTauxV×20% + ChTauxV×20%' };
+  return { score: jkTauxP, label: 'JkTauxP' };
+}
+
+// ====================================================================
 // MAIN
 // ====================================================================
 async function main() {
@@ -227,10 +310,14 @@ _log(`\n⚠️ ${hippo} R${rNum}C${cNum} — pas de scores`);
         );
 
         const distLabel = distance < 1400 ? 'Sprint' : distance < 1700 ? 'Mile' : distance < 2200 ? 'Middle' : 'Staying';
+        const distBucket = distLabel.toLowerCase();
 _log(`\n${'━'.repeat(60)}`);
 _log(`🏟️  ${hippo} R${rNum}C${cNum} — ${course.libelle || ''}`);
 _log(`📏 ${distance}m (${distLabel}) | ⏰ ${depart} | 🐴 ${partants.length} partants`);
+
+        // ── CLASSEMENT 1 : Modèle actuel ──
 _log('━'.repeat(60));
+_log(`📊 CLASSEMENT MODÈLE (formule actuelle)`);
 _log(`${'#'.padStart(3)} ${'Cheval'.padEnd(22)} ${'Cote'.padStart(5)} ${'Score'.padStart(6)} ${'Fiab'.padStart(5)}`);
 _log('─'.repeat(60));
 
@@ -242,6 +329,37 @@ _log('─'.repeat(60));
           const fiab = s.indiceConfiance ? Math.round(parseFloat(s.indiceConfiance) * 100) + '%' : '-';
 _log(`${medal}${String(p['n°'] || '').padStart(2)} ${(p.cheval || '').slice(0, 21).padEnd(22)} ${cote.padStart(5)} ${String(s.score).padStart(6)} ${fiab.padStart(5)}`);
         });
+
+        // ── CLASSEMENT 2 : Leviers optimaux par distance ──
+        const ld = getLevierData();
+        const levierResults = participants.map(p => {
+          const lr = getLevierScore(p, distBucket, ld);
+          return { ...p, _levScore: lr.score, _levLabel: lr.label };
+        });
+        levierResults.sort((a, b) => b._levScore - a._levScore);
+        // Normaliser 10-90
+        const scores = levierResults.map(r => r._levScore);
+        const minS = Math.min(...scores), maxS = Math.max(...scores);
+        const rng = maxS - minS || 1;
+        levierResults.forEach(r => { r._levNorm = ((r._levScore - minS) / rng * 80 + 10).toFixed(1); });
+
+_log(`\n🔬 CLASSEMENT LEVIERS (${levierResults[0]._levLabel})`);
+_log(`${'#'.padStart(3)} ${'Cheval'.padEnd(22)} ${'Cote'.padStart(5)} ${'Score'.padStart(6)}`);
+_log('─'.repeat(60));
+        levierResults.forEach((p, i) => {
+          const medal = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : '  ';
+          const cote = p.cote > 0 ? p.cote.toFixed(1) : '-';
+_log(`${medal}${String(p['n°'] || '').padStart(2)} ${(p.cheval || '').slice(0, 21).padEnd(22)} ${cote.padStart(5)} ${String(p._levNorm).padStart(6)}`);
+        });
+
+        // Comparer les deux classements
+        const top1Modele = sorted[0]?.participant?.['n°'];
+        const top1Levier = levierResults[0]?.['n°'];
+        if (top1Modele !== top1Levier) {
+_log(`\n⚡ Top1 différent : Modèle=#${top1Modele} vs Leviers=#${top1Levier}`);
+        } else {
+_log(`\n🤝 Top1 identique : #${top1Modele} (les 2 classements concordent)`);
+        }
 
         // Comparer au favori
         const byCote = sorted.filter(r => r.participant.cote > 1).sort((a, b) => a.participant.cote - b.participant.cote);
