@@ -1121,28 +1121,61 @@
                 const favP = results[0].pF1;
                 const maxP1 = Math.max(...results.map(r => r.pN1), favP);
 
-                // Phase 2 : combinaisons des top 5
-                const top5 = results.slice(0, 5).map(r => r.name);
+                // Formule actuelle du site (pour comparaison)
+                const distBucket = cat.includes('sprint') || cat === '1000m' || cat === '1200m' || cat === '1300m' ? 'sprint'
+                    : cat.includes('mile') || cat === '1400m' || cat === '1500m' || cat === '1600m' ? 'mile'
+                    : cat.includes('middle') || cat === '1800m' || cat === '2000m' || cat === '2100m' ? 'middle'
+                    : 'staying';
+                const currentFormula = {
+                    sprint: { leviers: ['Musique','Cote (1/cote)','Valeur FG'], poids: [0.4,0.4,0.2], label: 'Actuelle: Mus×40% + Cote×40% + Val×20%' },
+                    mile: { leviers: ['Valeur FG','Cote (1/cote)','Musique'], poids: [0.5,0.3,0.2], label: 'Actuelle: Val×50% + Cote×30% + Mus×20%' },
+                    middle: { leviers: ['Cote (1/cote)','Valeur FG','TauxV indiv'], poids: [0.5,0.3,0.2], label: 'Actuelle: Cote×50% + Val×30% + IndivV×20%' },
+                    staying: { leviers: ['Cote (1/cote)','Valeur FG','Musique'], poids: [0.4,0.3,0.3], label: 'Actuelle: Cote×40% + Val×30% + Mus×30%' },
+                }[distBucket];
+                const currentR = evalCombo(courses, currentFormula.leviers, currentFormula.poids);
+
+                // Phase 2 : combinaisons des top 6
+                const top6 = results.slice(0, 6).map(r => r.name);
                 const comboResults = [];
                 const wSteps = [0.2, 0.4, 0.6, 0.8];
+                const sh = n => n.length > 12 ? n.split(' ')[0] : n; // short name
+
                 // Paires
-                for (let i = 0; i < top5.length; i++)
-                    for (let j = i + 1; j < top5.length; j++)
+                for (let i = 0; i < top6.length; i++)
+                    for (let j = i + 1; j < top6.length; j++)
                         for (const w of wSteps) {
-                            const r = evalCombo(courses, [top5[i], top5[j]], [w, 1-w]);
-                            comboResults.push({ label: `${top5[i].split(' ')[0]}×${(w*100).toFixed(0)}% + ${top5[j].split(' ')[0]}×${((1-w)*100).toFixed(0)}%`, ...r });
+                            const r = evalCombo(courses, [top6[i], top6[j]], [w, 1-w]);
+                            comboResults.push({ label: `${sh(top6[i])}×${(w*100).toFixed(0)}% + ${sh(top6[j])}×${((1-w)*100).toFixed(0)}%`, n: 2, ...r });
                         }
-                // Triplets top 3
-                const top3 = top5.slice(0, 3);
-                for (const w1 of [0.2, 0.4, 0.6])
-                    for (const w2 of [0.2, 0.4])
-                        if (w1 + w2 < 1) {
-                            const w3 = +(1 - w1 - w2).toFixed(1);
-                            const r = evalCombo(courses, top3, [w1, w2, w3]);
-                            comboResults.push({ label: `${top3[0].split(' ')[0]}×${(w1*100).toFixed(0)}% + ${top3[1].split(' ')[0]}×${(w2*100).toFixed(0)}% + ${top3[2].split(' ')[0]}×${(w3*100).toFixed(0)}%`, ...r });
-                        }
-                comboResults.sort((a, b) => b.pN1 !== a.pN1 ? b.pN1 - a.pN1 : b.pN2 - a.pN2);
-                const maxP2 = Math.max(...comboResults.map(r => r.pN1), favP);
+                // Triplets top 5
+                const top5t = top6.slice(0, 5);
+                for (let i = 0; i < top5t.length; i++)
+                    for (let j = i+1; j < top5t.length; j++)
+                        for (let k = j+1; k < top5t.length; k++)
+                            for (const w1 of [0.2, 0.4, 0.5])
+                                for (const w2 of [0.2, 0.3, 0.4])
+                                    if (w1 + w2 < 0.95) {
+                                        const w3 = +(1 - w1 - w2).toFixed(1);
+                                        if (w3 >= 0.1) {
+                                            const r = evalCombo(courses, [top5t[i],top5t[j],top5t[k]], [w1,w2,w3]);
+                                            comboResults.push({ label: `${sh(top5t[i])}×${(w1*100).toFixed(0)}% + ${sh(top5t[j])}×${(w2*100).toFixed(0)}% + ${sh(top5t[k])}×${(w3*100).toFixed(0)}%`, n: 3, ...r });
+                                        }
+                                    }
+                // Quadruplets top 4
+                const top4q = top6.slice(0, 4);
+                for (const w1 of [0.1, 0.2, 0.3, 0.4])
+                    for (const w2 of [0.1, 0.2, 0.3])
+                        for (const w3 of [0.1, 0.2, 0.3])
+                            if (w1+w2+w3 < 0.95) {
+                                const w4 = +(1-w1-w2-w3).toFixed(1);
+                                if (w4 >= 0.1) {
+                                    const r = evalCombo(courses, top4q, [w1,w2,w3,w4]);
+                                    comboResults.push({ label: `${sh(top4q[0])}×${(w1*100).toFixed(0)}% + ${sh(top4q[1])}×${(w2*100).toFixed(0)}% + ${sh(top4q[2])}×${(w3*100).toFixed(0)}% + ${sh(top4q[3])}×${(w4*100).toFixed(0)}%`, n: 4, ...r });
+                                }
+                            }
+
+                comboResults.sort((a, b) => b.pN1 !== a.pN1 ? b.pN1 - a.pN1 : b.pN2 !== a.pN2 ? b.pN2 - a.pN2 : b.pN3 - a.pN3);
+                const maxP2 = Math.max(...comboResults.slice(0,30).map(r => r.pN1), favP, currentR.pN1);
 
                 html += `<div class="levier-content" id="levier-${cat}" style="display:${firstTab ? '' : 'none'}">`;
 
@@ -1161,25 +1194,44 @@
                         <td><div style="position:relative;height:10px"><span class="levier-bar" style="width:${barW}%;background:var(--accent);position:absolute;top:0"></span></div></td>
                         <td class="${cls}">${diffStr}</td><td>${r.pN2.toFixed(0)}%</td><td>${r.pN3.toFixed(0)}%</td><td>${r.avgCote > 0 ? r.avgCote.toFixed(1) : '-'}</td></tr>`;
                 });
+                // Ligne formule actuelle
+                const curDiff = currentR.pN1 - favP;
+                const curCls = curDiff > 0 ? 'win' : curDiff < 0 ? 'lose' : 'tie';
+                html += `<tr style="border-top:2px solid rgba(64,224,208,0.3);background:rgba(64,224,208,0.05)">
+                    <td>&#128736;</td><td><strong style="color:var(--accent)">${currentFormula.label}</strong></td>
+                    <td class="${curCls}"><strong>${currentR.pN1.toFixed(0)}%</strong> <span style="opacity:0.5;font-size:0.7rem">(${currentR.n1}/${currentR.t})</span></td>
+                    <td></td><td class="${curCls}">${curDiff > 0 ? '+' : ''}${curDiff.toFixed(0)}pp</td>
+                    <td>${currentR.pN2.toFixed(0)}%</td><td>${currentR.pN3.toFixed(0)}%</td>
+                    <td>${currentR.avgCote > 0 ? currentR.avgCote.toFixed(1) : '-'}</td></tr>`;
                 html += `<tr style="border-top:2px solid rgba(233,209,140,0.2)"><td>&#9733;</td><td><strong style="color:var(--gold)">Favori cote</strong></td><td style="color:var(--gold)"><strong>${favP.toFixed(0)}%</strong></td><td></td><td>-</td><td>-</td><td>-</td><td>-</td></tr>`;
                 html += `</tbody></table>`;
 
                 // Combo table
-                html += `<h3 style="color:var(--accent);margin:1.2rem 0 0.5rem;font-size:0.9rem">Phase 2 — Combinaisons (top 5 leviers, poids 20-80%)</h3>`;
-                html += `<table class="levier-table"><thead><tr><th>#</th><th>Combinaison</th><th>Top1</th><th style="width:100px"></th><th>vs Fav</th><th>Top2</th><th>Top3</th><th>Cote</th></tr></thead><tbody>`;
+                const nb2 = comboResults.filter(r => r.n === 2).length;
+                const nb3 = comboResults.filter(r => r.n === 3).length;
+                const nb4 = comboResults.filter(r => r.n === 4).length;
+                html += `<h3 style="color:var(--accent);margin:1.2rem 0 0.5rem;font-size:0.9rem">Phase 2 — Combinaisons (${comboResults.length} testées : ${nb2} paires, ${nb3} triplets, ${nb4} quadruplets)</h3>`;
+                html += `<table class="levier-table"><thead><tr><th>#</th><th>Nb</th><th>Combinaison</th><th>Top1</th><th style="width:100px"></th><th>vs Fav</th><th>Top2</th><th>Top3</th><th>Cote</th></tr></thead><tbody>`;
 
-                comboResults.slice(0, 15).forEach((r, idx) => {
+                comboResults.slice(0, 20).forEach((r, idx) => {
                     const diff = r.pN1 - favP;
                     const diffStr = diff > 0 ? `+${diff.toFixed(0)}pp` : diff === 0 ? '=' : `${diff.toFixed(0)}pp`;
                     const cls = diff > 0 ? 'win' : diff < 0 ? 'lose' : 'tie';
                     const barW = maxP2 > 0 ? Math.round(r.pN1 / maxP2 * 100) : 0;
                     const medal = idx < 3 ? ['&#129351;','&#129352;','&#129353;'][idx] : String(idx+1);
-                    html += `<tr><td>${medal}</td><td><strong>${r.label}</strong></td>
+                    const nbBadge = r.n === 2 ? '2L' : r.n === 3 ? '3L' : '4L';
+                    html += `<tr><td>${medal}</td><td><span style="background:rgba(64,224,208,0.15);padding:1px 5px;border-radius:4px;font-size:0.7rem">${nbBadge}</span></td><td><strong>${r.label}</strong></td>
                         <td class="${cls}"><strong>${r.pN1.toFixed(0)}%</strong> <span style="opacity:0.5;font-size:0.7rem">(${r.n1}/${r.t})</span></td>
                         <td><div style="position:relative;height:10px"><span class="levier-bar" style="width:${barW}%;background:var(--accent);position:absolute;top:0"></span></div></td>
                         <td class="${cls}">${diffStr}</td><td>${r.pN2.toFixed(0)}%</td><td>${r.pN3.toFixed(0)}%</td><td>${r.avgCote > 0 ? r.avgCote.toFixed(1) : '-'}</td></tr>`;
                 });
-                html += `<tr style="border-top:2px solid rgba(233,209,140,0.2)"><td>&#9733;</td><td><strong style="color:var(--gold)">Favori cote</strong></td><td style="color:var(--gold)"><strong>${favP.toFixed(0)}%</strong></td><td></td><td>-</td><td>-</td><td>-</td><td>-</td></tr>`;
+                // Ligne formule actuelle pour comparaison
+                html += `<tr style="border-top:2px solid rgba(64,224,208,0.3);background:rgba(64,224,208,0.05)">
+                    <td>&#128736;</td><td></td><td><strong style="color:var(--accent)">${currentFormula.label}</strong></td>
+                    <td class="${curCls}"><strong>${currentR.pN1.toFixed(0)}%</strong></td><td></td>
+                    <td class="${curCls}">${curDiff > 0 ? '+' : ''}${curDiff.toFixed(0)}pp</td>
+                    <td>${currentR.pN2.toFixed(0)}%</td><td>${currentR.pN3.toFixed(0)}%</td><td>${currentR.avgCote > 0 ? currentR.avgCote.toFixed(1) : '-'}</td></tr>`;
+                html += `<tr style="border-top:2px solid rgba(233,209,140,0.2)"><td>&#9733;</td><td></td><td><strong style="color:var(--gold)">Favori cote</strong></td><td style="color:var(--gold)"><strong>${favP.toFixed(0)}%</strong></td><td></td><td>-</td><td>-</td><td>-</td><td>-</td></tr>`;
                 html += `</tbody></table>`;
 
                 html += `</div>`;
