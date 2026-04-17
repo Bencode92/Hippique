@@ -201,16 +201,122 @@ function extractNomCheval(chevalStr) {
   return (chevalStr || '').replace(/\s+[MFH]\.\w*\.?\s*\d+\s*a\.?\s*$/i, '').trim().toUpperCase();
 }
 
-// Charger les formules optimales (générées par stats.html → Analyse Leviers)
+// Charger ou calculer les formules optimales automatiquement
 let bestFormulas = null;
 function loadBestFormulas() {
   if (bestFormulas) return bestFormulas;
+  // Essayer de lire le fichier existant
+  const filePath = path.join(__dirname, 'data', 'best_formulas.json');
   try {
-    bestFormulas = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'best_formulas.json'), 'utf8'));
-  } catch {
-    bestFormulas = {}; // fallback vide
-  }
+    const stat = fs.statSync(filePath);
+    const age = Date.now() - stat.mtimeMs;
+    if (age < 24 * 60 * 60 * 1000) { // moins de 24h
+      bestFormulas = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+      _log('📋 Formules leviers chargées (best_formulas.json)');
+      return bestFormulas;
+    }
+  } catch {}
+  // Sinon, calculer automatiquement depuis les courses historiques
+  _log('🔬 Calcul des meilleures formules par distance...');
+  bestFormulas = computeBestFormulasFromHistory();
+  // Sauvegarder pour la prochaine fois
+  try { fs.writeFileSync(filePath, JSON.stringify(bestFormulas, null, 2)); _log('💾 Sauvegardé dans data/best_formulas.json'); } catch {}
   return bestFormulas;
+}
+
+function computeBestFormulasFromHistory() {
+  const dir = path.join(__dirname, 'data', 'courses');
+  let files;
+  try { files = fs.readdirSync(dir).filter(f => f.endsWith('.json')).sort(); } catch { return {}; }
+
+  const ld = getLevierData();
+  const buckets = { sprint: [], mile: [], middle: [], staying: [] };
+  // NbVictoires et TauxV/TauxP indiv exclus : leakage circulaire
+  // (un cheval qui a gagné dans les fichiers → corrèle avec ses propres victoires)
+  const levierNames = ['Cote (1/cote)', 'Cote ref', 'Dérive cote', 'Valeur FG', 'Musique',
+    'Ch TauxV', 'Ch TauxP', 'Ch Rang', 'Ch GainMoy', 'Ch ScoreMixte',
+    'Jk TauxV', 'Jk TauxP', 'Jk Rang', 'Jk ScoreMixte', 'Jk GainMoy'];
+
+  // Charger les courses terminées
+  files.forEach(f => {
+    try {
+      const data = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
+      if (data.type_reunion && data.type_reunion.toLowerCase() !== 'plat') return;
+      (data.courses || []).forEach(c => {
+        if (c.type && c.type.toLowerCase() !== 'plat') return;
+        if (!c.arrivee_definitive || !c.participants?.some(p => p.arrivee === 1)) return;
+        const dist = parseInt(String(c.distance || '').replace(/[^0-9]/g, '')) || 0;
+        const dl = dist < 1400 ? 'sprint' : dist < 1700 ? 'mile' : dist < 2200 ? 'middle' : 'staying';
+        const avecCotes = c.participants.filter(p => p.cote > 1);
+        const parCote = [...avecCotes].sort((a, b) => a.cote - b.cote);
+        if (parCote.length < 2) return;
+        // Pré-calculer les leviers pour chaque participant
+        const enriched = c.participants.map(p => {
+          const levs = {};
+          levierNames.forEach(name => { levs[name] = getLevierValue(name, p, ld); });
+          return { ...p, _levs: levs };
+        });
+        buckets[dl].push({ enriched, parCote });
+      });
+    } catch {}
+  });
+
+  // Pour chaque bucket, tester chaque levier solo + paires des top 5
+  const result = {};
+  Object.entries(buckets).forEach(([bucket, courses]) => {
+    if (courses.length < 10) return;
+
+    // Solo
+    const soloResults = levierNames.map(name => {
+      let n1 = 0, f1 = 0;
+      courses.forEach(c => {
+        const sorted = [...c.enriched].sort((a, b) => (b._levs[name] || 0) - (a._levs[name] || 0));
+        if (sorted[0]?.arrivee === 1) n1++;
+        if (c.parCote[0]?.arrivee === 1) f1++;
+      });
+      return { name, pN1: n1 / courses.length * 100, pF1: f1 / courses.length * 100 };
+    }).sort((a, b) => b.pN1 - a.pN1);
+
+    // Paires des top 5
+    const top5 = soloResults.slice(0, 5).map(r => r.name);
+    let bestCombo = { leviers: [top5[0]], poids: [1], pN1: soloResults[0].pN1 };
+
+    for (let i = 0; i < top5.length; i++)
+      for (let j = i + 1; j < top5.length; j++)
+        for (const w of [0.3, 0.4, 0.5, 0.6, 0.7]) {
+          let n1 = 0;
+          courses.forEach(c => {
+            const sorted = [...c.enriched].sort((a, b) =>
+              ((b._levs[top5[i]]||0)*w + (b._levs[top5[j]]||0)*(1-w)) -
+              ((a._levs[top5[i]]||0)*w + (a._levs[top5[j]]||0)*(1-w))
+            );
+            if (sorted[0]?.arrivee === 1) n1++;
+          });
+          const pN1 = n1 / courses.length * 100;
+          if (pN1 > bestCombo.pN1) bestCombo = { leviers: [top5[i], top5[j]], poids: [w, +(1-w).toFixed(1)], pN1 };
+        }
+
+    // Triplets des top 3
+    const top3 = top5.slice(0, 3);
+    for (const w1 of [0.4, 0.5]) {
+      const w2 = 0.3, w3 = +(1 - w1 - w2).toFixed(1);
+      let n1 = 0;
+      courses.forEach(c => {
+        const sorted = [...c.enriched].sort((a, b) =>
+          ((b._levs[top3[0]]||0)*w1 + (b._levs[top3[1]]||0)*w2 + (b._levs[top3[2]]||0)*w3) -
+          ((a._levs[top3[0]]||0)*w1 + (a._levs[top3[1]]||0)*w2 + (a._levs[top3[2]]||0)*w3)
+        );
+        if (sorted[0]?.arrivee === 1) n1++;
+      });
+      const pN1 = n1 / courses.length * 100;
+      if (pN1 > bestCombo.pN1) bestCombo = { leviers: top3, poids: [w1, w2, w3], pN1 };
+    }
+
+    result[bucket] = { leviers: bestCombo.leviers, poids: bestCombo.poids, top1: bestCombo.pN1, courses: courses.length };
+    _log(`  ${bucket}: ${bestCombo.leviers.map((l,i) => l+'×'+Math.round(bestCombo.poids[i]*100)+'%').join(' + ')} → ${bestCombo.pN1.toFixed(1)}% (${courses.length} courses)`);
+  });
+
+  return result;
 }
 
 // Calculer la valeur d'un levier pour un participant
@@ -293,6 +399,8 @@ _log('='.repeat(60));
   // Charger toutes les données de ranking-loader
 _log('📊 Chargement des classements...');
   await rankingLoader.loadAllData();
+  // Pré-calculer les formules leviers optimales
+  loadBestFormulas();
 _log('✅ Données chargées');
 
   // Filtrer par R/C ou par nom d'hippodrome + numéro de course
