@@ -258,6 +258,9 @@
             <button class="btn-leviers" id="btn-leviers" onclick="runLeviers()">
                 <i class="fas fa-sliders-h"></i> Analyse Leviers
             </button>
+            <button class="btn-leviers" id="btn-simu" onclick="runSimuTop4()" style="border-color:var(--gold);color:var(--gold)">
+                <i class="fas fa-coins"></i> Simu Top4 (5€)
+            </button>
             <div style="display:flex;gap:6px;flex-wrap:wrap">
                 <button class="btn-preset" onclick="setPreset('7d')">7 jours</button>
                 <button class="btn-preset" onclick="setPreset('30d')">30 jours</button>
@@ -1238,6 +1241,163 @@
         el.classList.add('active');
         document.querySelectorAll('.levier-content').forEach(c => c.style.display = 'none');
         document.getElementById('levier-' + cat).style.display = '';
+    }
+
+    // ============================================================
+    // SIMULATION TOP 4 — 5€ répartis, min 1€, objectif 2 chevaux gagnants
+    // ============================================================
+    function repartir5euros(cotes) {
+        // cotes = [cote1, cote2, cote3, cote4] triées par score modèle (pas par cote)
+        // Répartition : pondérer inversement par la cote (favori = plus de mise)
+        // puis ajuster pour min 1€ et total = 5€
+        const valid = cotes.map(c => c > 1 ? c : 100);
+        const invCotes = valid.map(c => 1 / c);
+        const sumInv = invCotes.reduce((a, b) => a + b, 0);
+
+        // Répartition brute proportionnelle
+        let mises = invCotes.map(ic => (ic / sumInv) * 5);
+
+        // Forcer minimum 1€
+        mises = mises.map(m => Math.max(1, m));
+        const total = mises.reduce((a, b) => a + b, 0);
+
+        // Ajuster pour revenir à 5€ : réduire proportionnellement les mises > 1€
+        if (total > 5) {
+            const excess = total - 5;
+            const adjustable = mises.filter(m => m > 1);
+            const adjustSum = adjustable.reduce((a, b) => a + b, 0) - adjustable.length;
+            mises = mises.map(m => {
+                if (m > 1) return Math.max(1, m - excess * (m - 1) / adjustSum);
+                return m;
+            });
+        }
+
+        // Arrondir à 0.5€ près (PMU accepte 0.50€ de step)
+        mises = mises.map(m => Math.max(1, Math.round(m * 2) / 2));
+        // Ajuster le dernier pour coller à 5€
+        const totalR = mises.reduce((a, b) => a + b, 0);
+        if (totalR !== 5) mises[0] = +(mises[0] + 5 - totalR).toFixed(1);
+
+        return mises;
+    }
+
+    function runSimuTop4() {
+        const container = document.getElementById('results');
+        const btn = document.getElementById('btn-simu');
+
+        if (!loadedCourses.length) {
+            alert('Lance d\'abord "Analyser" pour charger les courses.');
+            return;
+        }
+
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Calcul...';
+
+        const MISE_TOTALE = 5;
+        let plTotal = 0, nbCourses = 0, nbWins = 0, nbTop2Wins = 0;
+        const details = [];
+
+        loadedCourses.forEach(c => {
+            const r = scoreCourse(c.course);
+            if (!r || r.scored.length < 4) return;
+
+            // Top 4 du modèle
+            const top4 = r.scored.slice(0, 4);
+            const cotes = top4.map(p => p.cote || 0);
+
+            // Ignorer si pas assez de cotes valides
+            if (cotes.filter(c => c > 1).length < 2) return;
+
+            const mises = repartir5euros(cotes);
+            nbCourses++;
+
+            // Qui a gagné ?
+            let plCourse = -MISE_TOTALE; // on perd la mise par défaut
+            let winner = null;
+            let winIdx = -1;
+
+            for (let i = 0; i < 4; i++) {
+                if (top4[i].arrivee === 1) {
+                    winIdx = i;
+                    winner = top4[i];
+                    plCourse = mises[i] * cotes[i] - MISE_TOTALE; // gain net
+                    nbWins++;
+                    if (i < 2) nbTop2Wins++;
+                    break;
+                }
+            }
+
+            plTotal += plCourse;
+
+            details.push({
+                date: c.fileDate, hippo: c.hippo,
+                nom: c.course.nom || '',
+                top4: top4.map((p, i) => ({
+                    num: p['n°'], cheval: (p.cheval || '').slice(0, 15),
+                    cote: cotes[i], mise: mises[i], arrivee: p.arrivee
+                })),
+                winIdx, plCourse, plCumule: plTotal
+            });
+        });
+
+        // Render
+        const roi = nbCourses > 0 ? (plTotal / (nbCourses * MISE_TOTALE) * 100) : 0;
+        const hitRate = nbCourses > 0 ? (nbWins / nbCourses * 100) : 0;
+        const top2Rate = nbCourses > 0 ? (nbTop2Wins / nbCourses * 100) : 0;
+
+        let html = `<div class="section">
+            <h2><i class="fas fa-coins"></i> Simulation Top 4 — 5€ par course, gagnant simple</h2>
+            <p style="opacity:0.6;font-size:0.82rem;margin-bottom:1rem">Mise de 5€ répartie sur les 4 meilleurs du modèle (min 1€/cheval, pondéré par cote). Profit si l'un des 4 gagne.</p>
+        </div>`;
+
+        // Summary cards
+        const plColor = plTotal >= 0 ? 'var(--green)' : 'var(--red)';
+        const roiColor = roi >= 0 ? 'var(--green)' : 'var(--red)';
+        html += `<div class="stats-grid">
+            <div class="stat-card"><div class="label">Courses</div><div class="value">${nbCourses}</div><div class="sub">simulées</div></div>
+            <div class="stat-card"><div class="label">Misé total</div><div class="value">${(nbCourses * MISE_TOTALE).toFixed(0)}€</div><div class="sub">${MISE_TOTALE}€/course</div></div>
+            <div class="stat-card"><div class="label">P&L</div><div class="value" style="color:${plColor}">${plTotal >= 0 ? '+' : ''}${plTotal.toFixed(1)}€</div><div class="sub">profit/perte net</div></div>
+            <div class="stat-card"><div class="label">ROI</div><div class="value" style="color:${roiColor}">${roi >= 0 ? '+' : ''}${roi.toFixed(1)}%</div><div class="sub">retour sur mise</div></div>
+            <div class="stat-card"><div class="label">Top4 gagne</div><div class="value">${hitRate.toFixed(0)}%</div><div class="sub">${nbWins}/${nbCourses}</div></div>
+            <div class="stat-card"><div class="label">Top2 gagne</div><div class="value" style="color:var(--accent)">${top2Rate.toFixed(0)}%</div><div class="sub">${nbTop2Wins}/${nbCourses}</div></div>
+        </div>`;
+
+        // Courbe P&L (texte)
+        html += `<div class="section">
+            <h2><i class="fas fa-chart-line"></i> Évolution P&L</h2>
+            <div style="overflow-x:auto">
+            <table class="comp-table" style="font-size:0.78rem">
+                <thead><tr><th>Date</th><th>Hippodrome</th><th>Course</th>
+                    <th>#1</th><th>Mise</th><th>Cote</th>
+                    <th>#2</th><th>Mise</th><th>Cote</th>
+                    <th>#3</th><th>Mise</th><th>Cote</th>
+                    <th>#4</th><th>Mise</th><th>Cote</th>
+                    <th>Résultat</th><th>P&L</th><th>Cumulé</th>
+                </tr></thead><tbody>`;
+
+        details.forEach(d => {
+            const plCls = d.plCourse >= 0 ? 'win' : 'lose';
+            const cumCls = d.plCumule >= 0 ? 'win' : 'lose';
+            let resultTxt = 'Perdu';
+            if (d.winIdx >= 0) resultTxt = `#${d.top4[d.winIdx].num} ✓`;
+
+            html += `<tr>
+                <td>${d.date}</td><td>${d.hippo}</td><td>${d.nom.slice(0, 20)}</td>`;
+            d.top4.forEach((t, i) => {
+                const bg = i === d.winIdx ? 'background:rgba(64,224,90,0.1)' : '';
+                html += `<td style="${bg}">#${t.num}</td><td style="${bg}">${t.mise.toFixed(1)}€</td><td style="${bg}">${t.cote > 1 ? t.cote.toFixed(1) : '-'}</td>`;
+            });
+            html += `<td class="${d.winIdx >= 0 ? 'win' : ''}">${resultTxt}</td>
+                <td class="${plCls}">${d.plCourse >= 0 ? '+' : ''}${d.plCourse.toFixed(1)}€</td>
+                <td class="${cumCls}"><strong>${d.plCumule >= 0 ? '+' : ''}${d.plCumule.toFixed(1)}€</strong></td>
+            </tr>`;
+        });
+
+        html += `</tbody></table></div></div>`;
+
+        container.innerHTML = html;
+        btn.disabled = false;
+        btn.innerHTML = '<i class="fas fa-coins"></i> Simu Top4 (5€)';
     }
 
     // Init dates
