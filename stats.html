@@ -813,9 +813,22 @@
 
     const RAW = 'https://raw.githubusercontent.com/Bencode92/Hippique/main/data/';
 
+    function buildMap(data, keyField) {
+        const m = {};
+        if (!data?.resultats) return m;
+        const list = Array.isArray(data.resultats) ? data.resultats : Object.entries(data.resultats).map(([k, v]) => ({ _key: k, ...v }));
+        list.forEach(item => { const k = (item[keyField] || item._key || '').toUpperCase().trim(); if (k) m[k] = item; });
+        return m;
+    }
+
+    // Snapshots 2026 datés — { date: string, chx: {}, jk: {}, cr: {} }
+    let snapshots26 = [];
+
     async function loadRankings() {
         if (rankingData) return rankingData;
-        const files = {
+
+        // 1) Charger les fichiers stables (2025 + forme + combo + latest 2026)
+        const stableFiles = {
             chx25: 'chevaux_2025_ponderated_latest.json',
             chx26: 'chevaux_ponderated_latest.json',
             jk25: 'jockeys_2025_ponderated_latest.json',
@@ -826,17 +839,9 @@
             combo: 'combo_jockey_entraineur.json',
         };
         const results = {};
-        const entries = Object.entries(files);
+        const entries = Object.entries(stableFiles);
         const fetches = await Promise.all(entries.map(([, f]) => fetch(RAW + f).then(r => r.ok ? r.json() : null).catch(() => null)));
         entries.forEach(([k], i) => { results[k] = fetches[i]; });
-
-        function buildMap(data, keyField) {
-            const m = {};
-            if (!data?.resultats) return m;
-            const list = Array.isArray(data.resultats) ? data.resultats : Object.entries(data.resultats).map(([k, v]) => ({ _key: k, ...v }));
-            list.forEach(item => { const k = (item[keyField] || item._key || '').toUpperCase().trim(); if (k) m[k] = item; });
-            return m;
-        }
 
         rankingData = {
             chx25: buildMap(results.chx25, 'Nom'), chx26: buildMap(results.chx26, 'Nom'),
@@ -844,7 +849,61 @@
             cr25: buildMap(results.cr25, 'NomPostal'), cr26: buildMap(results.cr26, 'NomPostal'),
             forme: results.forme?.resultats || {}, combo: results.combo?.resultats || {},
         };
+
+        // 2) Charger les snapshots datés 2026 depuis GitHub API
+        try {
+            const ghResp = await fetch('https://api.github.com/repos/bencode92/Hippique/contents/data');
+            if (ghResp.ok) {
+                const allDataFiles = await ghResp.json();
+                // Trouver les fichiers datés pour chaque catégorie
+                const dated = { chx: [], jk: [], cr: [] };
+                allDataFiles.forEach(f => {
+                    let m;
+                    if ((m = f.name.match(/^chevaux_ponderated_(\d{4}-\d{2}-\d{2})T/))) dated.chx.push({ date: m[1], url: f.download_url });
+                    else if ((m = f.name.match(/^jockeys_ponderated_(\d{4}-\d{2}-\d{2})T/))) dated.jk.push({ date: m[1], url: f.download_url });
+                    else if ((m = f.name.match(/^cravache_or_ponderated_(\d{4}-\d{2}-\d{2})T/))) dated.cr.push({ date: m[1], url: f.download_url });
+                });
+
+                // Garder un snapshot par date unique (le premier trouvé)
+                const dateSet = new Set();
+                [...dated.chx, ...dated.jk, ...dated.cr].forEach(d => dateSet.add(d.date));
+                const uniqueDates = [...dateSet].sort();
+
+                for (const dt of uniqueDates) {
+                    const chxFile = dated.chx.find(d => d.date === dt);
+                    const jkFile = dated.jk.find(d => d.date === dt);
+                    const crFile = dated.cr.find(d => d.date === dt);
+                    if (chxFile && jkFile) {
+                        const [chxData, jkData, crData] = await Promise.all([
+                            fetch(chxFile.url).then(r => r.ok ? r.json() : null).catch(() => null),
+                            fetch(jkFile.url).then(r => r.ok ? r.json() : null).catch(() => null),
+                            crFile ? fetch(crFile.url).then(r => r.ok ? r.json() : null).catch(() => null) : null,
+                        ]);
+                        snapshots26.push({
+                            date: dt,
+                            chx: buildMap(chxData, 'Nom'),
+                            jk: buildMap(jkData, 'NomPostal'),
+                            cr: crData ? buildMap(crData, 'NomPostal') : {},
+                        });
+                    }
+                }
+                console.log(`📸 ${snapshots26.length} snapshots 2026 chargés: ${uniqueDates.join(', ')}`);
+            }
+        } catch (e) { console.warn('Snapshots datés non disponibles:', e); }
+
         return rankingData;
+    }
+
+    // Trouver le snapshot 2026 le plus récent AVANT une date donnée
+    function getSnapshot26(courseDate) {
+        if (!courseDate || !snapshots26.length) return null;
+        // Chercher le dernier snapshot dont la date est < courseDate
+        let best = null;
+        for (const s of snapshots26) {
+            if (s.date < courseDate) best = s;
+            else break; // trié par date
+        }
+        return best;
     }
 
     function extractNom(cheval) { return (cheval || '').replace(/\s+[MFH]\.\w*\.?\s*\d+\s*a\.?\s*$/i, '').trim().toUpperCase(); }
@@ -866,7 +925,7 @@
         return _pop;
     }
 
-    function computeLeviers(p, rd, isFuture) {
+    function computeLeviers(p, rd, courseDate) {
         const nom = extractNom(p.cheval);
         const jk = (p.jockey || '').toUpperCase().trim();
         const coteVal = parseFloat(p.cote) || 0;
@@ -879,10 +938,19 @@
         const ch25 = rd.chx25[nom];
         const j25 = rd.jk25[jk];
         const cr25 = rd.cr25[jk];
-        // 2026 UNIQUEMENT pour courses futures (sinon = leakage)
-        const ch26 = isFuture ? rd.chx26[nom] : null;
-        const j26 = isFuture ? rd.jk26[jk] : null;
-        const cr26 = isFuture ? rd.cr26[jk] : null;
+        // 2026 : utiliser le snapshot le plus récent AVANT la course
+        // Si pas de snapshot dispo avant cette date → 2025 only
+        const today = new Date().toISOString().split('T')[0];
+        const isFuture = !courseDate || courseDate >= today;
+        let ch26 = null, j26 = null, cr26 = null;
+        if (isFuture) {
+            // Course future → latest 2026
+            ch26 = rd.chx26[nom]; j26 = rd.jk26[jk]; cr26 = rd.cr26[jk];
+        } else {
+            // Course passée → snapshot 2026 d'avant la course
+            const snap = getSnapshot26(courseDate);
+            if (snap) { ch26 = snap.chx[nom]; j26 = snap.jk[jk]; cr26 = snap.cr[jk]; }
+        }
         const pop = getPop(rd);
         const mxF = (a, b, f) => Math.max(a ? parseFloat(a[f]||0) : 0, b ? parseFloat(b[f]||0) : 0);
         const rS = (it, pp) => it ? 100*(1-(parseInt(it.Rang)-1)/pp) : 50;
@@ -932,13 +1000,12 @@
             await new Promise(r => setTimeout(r, 30));
 
             // Enrichir chaque course avec les leviers pré-calculés
-            // Courses passées = 2025 only (zéro leakage), futures = 2025+2026
-            const today = new Date().toISOString().split('T')[0];
+            // Courses passées = snapshot 2026 d'avant la course (ou 2025 only si pas dispo)
+            // Courses futures = latest 2026
             const enriched = [];
             for (let i = 0; i < loadedCourses.length; i++) {
                 const c = loadedCourses[i];
-                const isFuture = !c.fileDate || c.fileDate >= today;
-                const parts = c.course.participants.map(p => ({ ...p, _lev: computeLeviers(p, rd, isFuture) }));
+                const parts = c.course.participants.map(p => ({ ...p, _lev: computeLeviers(p, rd, c.fileDate) }));
                 enriched.push({ ...c, parts });
                 if (i % 50 === 0) {
                     if (progress) progress.textContent = `Pré-calcul ${i+1}/${loadedCourses.length} courses...`;
