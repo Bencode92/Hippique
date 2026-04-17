@@ -943,22 +943,53 @@
         const forme = rd.forme[nom];
         const comboKey = jk + '|||' + (p.entraineur || p['entraîneur'] || '').toUpperCase().trim();
         const combo = rd.combo[comboKey];
+        // Scores de base
+        const scoreCote = coteVal>1?(1/coteVal)*100:50;
+        const scoreCoteRef = coteRef>1?(1/coteRef)*100:50;
+        const scoreValeur = valeur>0?valeur:50;
+        const scoreMus = parseMusique(p.musique);
+        const tauxVI = nbC>=2?nbV/nbC*100:8;
+        const chTauxV = mxF(ch25,ch26,'TauxVictoire')||8;
+        const jkTauxP = mxF(j25,j26,'TauxPlace')||30;
+        const jkRang = bR(j25,pop.jk25,j26,pop.jk26);
+        const chRang = bR(ch25,pop.chx25,ch26,pop.chx26);
+
+        // Dérive de cote : cote qui baisse = argent qui rentre = signal positif
+        // Score haut = cote a baissé (confiance marché)
+        let deriveScore = 50;
+        if (coteVal > 1 && coteRef > 1) {
+            const pctChange = (coteRef - coteVal) / coteRef * 100; // positif = cote baisse = bien
+            deriveScore = 50 + pctChange * 2; // amplifié : -25% drift → score 100
+        }
+
         return {
-            'Cote (1/cote)': coteVal>1?(1/coteVal)*100:50, 'Cote ref': coteRef>1?(1/coteRef)*100:50,
-            'Valeur FG': valeur>0?valeur:50, 'Musique': parseMusique(p.musique),
+            'Cote (1/cote)': scoreCote, 'Cote ref': scoreCoteRef,
+            'Dérive cote': deriveScore,
+            'Valeur FG': scoreValeur, 'Musique': scoreMus,
             'Gains (log)': gains>0?Math.log10(gains)*10:0,
-            'TauxV indiv': nbC>=2?nbV/nbC*100:8, 'TauxP indiv': nbC>=2?nbP/nbC*100:30,
+            'TauxV indiv': tauxVI, 'TauxP indiv': nbC>=2?nbP/nbC*100:30,
             'NbVictoires': nbV*5,
-            'Ch TauxV': mxF(ch25,ch26,'TauxVictoire')||8, 'Ch TauxP': mxF(ch25,ch26,'TauxPlace')||30,
-            'Ch Rang': bR(ch25,pop.chx25,ch26,pop.chx26),
+            'Ch TauxV': chTauxV, 'Ch TauxP': mxF(ch25,ch26,'TauxPlace')||30,
+            'Ch Rang': chRang,
             'Ch GainMoy': Math.max(ch25?.GainMoyen||0,ch26?.GainMoyen||0)>0?Math.log10(Math.max(ch25?.GainMoyen||0,ch26?.GainMoyen||0))*15:0,
             'Ch ScoreMixte': mxF(ch25,ch26,'ScoreMixte'),
-            'Jk TauxV': mxF(j25,j26,'TauxVictoire')||8, 'Jk TauxP': mxF(j25,j26,'TauxPlace')||30,
-            'Jk Rang': bR(j25,pop.jk25,j26,pop.jk26), 'Jk ScoreMixte': mxF(j25,j26,'ScoreMixte'),
+            'Jk TauxV': mxF(j25,j26,'TauxVictoire')||8, 'Jk TauxP': jkTauxP,
+            'Jk Rang': jkRang, 'Jk ScoreMixte': mxF(j25,j26,'ScoreMixte'),
             'Jk GainMoy': Math.max(j25?.GainMoyen||0,j26?.GainMoyen||0)>0?Math.log10(Math.max(j25?.GainMoyen||0,j26?.GainMoyen||0))*15:0,
             'Cravache Rang': bR(cr25,pop.cr25,cr26,pop.cr26),
             'Forme récente': forme?forme.formeScore:50,
             'Combo Jk*Ent': combo&&combo.courses>=3?combo.tauxVictoire:10,
+            // Combos croisés
+            'Dérive × JkRang': deriveScore * 0.5 + jkRang * 0.5,
+            'Dérive × ChTauxV': deriveScore * 0.5 + chTauxV * 0.5,
+            'Dérive × Cote': deriveScore * 0.5 + scoreCote * 0.5,
+            'Cote × JkRang': scoreCote * 0.5 + jkRang * 0.5,
+            'Cote × ChTauxV': scoreCote * 0.5 + chTauxV * 0.5,
+            'Cote × Valeur': scoreCote * 0.5 + scoreValeur * 0.5,
+            'JkRang × ChTauxV': jkRang * 0.5 + chTauxV * 0.5,
+            'JkRang × Musique': jkRang * 0.5 + scoreMus * 0.5,
+            'Valeur × Musique': scoreValeur * 0.5 + scoreMus * 0.5,
+            'ChTauxV × Musique': chTauxV * 0.5 + scoreMus * 0.5,
         };
     }
 
