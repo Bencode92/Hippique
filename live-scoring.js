@@ -201,24 +201,83 @@ function extractNomCheval(chevalStr) {
   return (chevalStr || '').replace(/\s+[MFH]\.\w*\.?\s*\d+\s*a\.?\s*$/i, '').trim().toUpperCase();
 }
 
-// Meilleur levier par distance (basé sur l'analyse stats)
-function getLevierScore(participant, distBucket, ld) {
+// Charger les formules optimales (générées par stats.html → Analyse Leviers)
+let bestFormulas = null;
+function loadBestFormulas() {
+  if (bestFormulas) return bestFormulas;
+  try {
+    bestFormulas = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'best_formulas.json'), 'utf8'));
+  } catch {
+    bestFormulas = {}; // fallback vide
+  }
+  return bestFormulas;
+}
+
+// Calculer la valeur d'un levier pour un participant
+function getLevierValue(levierName, participant, ld) {
   const jk = (participant.jockey || '').toUpperCase().trim();
   const nom = extractNomCheval(participant.cheval);
-  const j25 = fuzzyMatch(ld.jk25, jk) || ld.jk25[jk];
-  const j26 = fuzzyMatch(ld.jk26, jk) || ld.jk26[jk];
+  const j25 = fuzzyMatch(ld.jk25, jk);
+  const j26 = fuzzyMatch(ld.jk26, jk);
   const ch25 = ld.chx25[nom], ch26 = ld.chx26[nom];
+  const coteVal = parseFloat(participant.cote) || 0;
+  const coteRef = parseFloat(participant.cote_reference) || 0;
+  const valeur = parseFloat(participant.valeur) || 0;
+  const nbC = parseInt(participant.nb_courses) || 0;
+  const nbV = parseInt(participant.nb_victoires) || 0;
+  const nbP = parseInt(participant.nb_places) || 0;
+  const mxF = (a, b, f) => Math.max(a ? parseFloat(a[f]||0) : 0, b ? parseFloat(b[f]||0) : 0);
+  const pop = { jk25: Object.keys(ld.jk25).length||1, jk26: Object.keys(ld.jk26).length||1, chx25: Object.keys(ld.chx25).length||1, chx26: Object.keys(ld.chx26).length||1 };
+  const rS = (it, pp) => it ? 100*(1-(parseInt(it.Rang)-1)/pp) : 50;
+  const bR = (a, pA, b, pB) => { const sa=a?rS(a,pA):null, sb=b?rS(b,pB):null; return sa!==null&&sb!==null?Math.max(sa,sb):sa??sb??50; };
 
-  const jkTauxP = Math.max(j25 ? parseFloat(j25.TauxPlace || 0) : 0, j26 ? parseFloat(j26.TauxPlace || 0) : 0) || 30;
-  const jkTauxV = Math.max(j25 ? parseFloat(j25.TauxVictoire || 0) : 0, j26 ? parseFloat(j26.TauxVictoire || 0) : 0) || 8;
-  const chTauxV = Math.max(ch25 ? parseFloat(ch25.TauxVictoire || 0) : 0, ch26 ? parseFloat(ch26.TauxVictoire || 0) : 0) || 8;
+  const map = {
+    'Cote (1/cote)': coteVal>1?(1/coteVal)*100:50,
+    'Cote ref': coteRef>1?(1/coteRef)*100:50,
+    'Valeur FG': valeur>0?valeur:50,
+    'Musique': (() => { const m=participant.musique; if(!m)return 50; const pos=m.replace(/\(\d+\)/g,'').match(/(\d+|[DRT])[a-z]/gi); if(!pos||pos.length<2)return 50; const l=pos.slice(0,5).map(x=>{const v=x.slice(0,-1);if('DRT'.includes(v))return 12;const n=parseInt(v);return n===0?12:n;}); let sc=0,w=0; l.forEach((ps,i)=>{const wt=(l.length-i)/l.length;const s=ps===1?100:ps===2?80:ps===3?65:ps<=5?45:ps<=8?25:10;sc+=s*wt;w+=wt;}); return w>0?sc/w:50; })(),
+    'Gains (log)': parseInt(String(participant.gains||'').replace(/\D/g,''))||0 > 0 ? Math.log10(parseInt(String(participant.gains||'').replace(/\D/g,'')))*10 : 0,
+    'TauxV indiv': nbC>=2?nbV/nbC*100:8,
+    'TauxP indiv': nbC>=2?nbP/nbC*100:30,
+    'NbVictoires': nbV*5,
+    'Ch TauxV': mxF(ch25,ch26,'TauxVictoire')||8,
+    'Ch TauxP': mxF(ch25,ch26,'TauxPlace')||30,
+    'Ch Rang': bR(ch25,pop.chx25,ch26,pop.chx26),
+    'Ch GainMoy': Math.max(ch25?.GainMoyen||0,ch26?.GainMoyen||0)>0?Math.log10(Math.max(ch25?.GainMoyen||0,ch26?.GainMoyen||0))*15:0,
+    'Ch ScoreMixte': mxF(ch25,ch26,'ScoreMixte'),
+    'Jk TauxV': mxF(j25,j26,'TauxVictoire')||8,
+    'Jk TauxP': mxF(j25,j26,'TauxPlace')||30,
+    'Jk Rang': bR(j25,pop.jk25,j26,pop.jk26),
+    'Jk ScoreMixte': mxF(j25,j26,'ScoreMixte'),
+    'Jk GainMoy': Math.max(j25?.GainMoyen||0,j26?.GainMoyen||0)>0?Math.log10(Math.max(j25?.GainMoyen||0,j26?.GainMoyen||0))*15:0,
+    'Cravache Rang': 50, // simplified
+    'Forme récente': 50,
+    'Combo Jk*Ent': 10,
+    'Dérive cote': coteVal>1&&coteRef>1 ? 50+(coteRef-coteVal)/coteRef*200 : 50,
+  };
+  // Aussi gérer les combos pré-calculés
+  const shortMap = {};
+  Object.entries(map).forEach(([k,v]) => { shortMap[k] = v; shortMap[k.split(' ')[0]] = v; });
+  return map[levierName] ?? shortMap[levierName] ?? 50;
+}
 
-  // Formule optimale par distance (d'après l'analyse leviers)
-  if (distBucket === 'sprint')  return { score: jkTauxP * 0.6 + chTauxV * 0.4, label: 'JkTauxP×60% + ChTauxV×40%' };
-  if (distBucket === 'mile')    return { score: jkTauxP * 0.5 + jkTauxV * 0.3 + chTauxV * 0.2, label: 'JkTauxP×50% + JkTauxV×30% + ChTauxV×20%' };
-  if (distBucket === 'middle')  return { score: jkTauxP * 0.5 + chTauxV * 0.3 + jkTauxV * 0.2, label: 'JkTauxP×50% + ChTauxV×30% + JkTauxV×20%' };
-  if (distBucket === 'staying') return { score: jkTauxP * 0.6 + jkTauxV * 0.2 + chTauxV * 0.2, label: 'JkTauxP×60% + JkTauxV×20% + ChTauxV×20%' };
-  return { score: jkTauxP, label: 'JkTauxP' };
+function getLevierScore(participant, distBucket, ld) {
+  const formulas = loadBestFormulas();
+  const formula = formulas[distBucket];
+
+  if (formula && formula.leviers && formula.poids) {
+    let score = 0;
+    const label = formula.leviers.map((l, i) => `${l.split(' ')[0]}×${(formula.poids[i]*100).toFixed(0)}%`).join(' + ');
+    formula.leviers.forEach((lev, i) => {
+      score += getLevierValue(lev, participant, ld) * formula.poids[i];
+    });
+    return { score, label };
+  }
+
+  // Fallback si pas de fichier best_formulas.json
+  const jkTauxP = getLevierValue('Jk TauxP', participant, ld);
+  const chTauxV = getLevierValue('Ch TauxV', participant, ld);
+  return { score: jkTauxP * 0.6 + chTauxV * 0.4, label: 'JkTauxP×60% + ChTauxV×40% (fallback)' };
 }
 
 // ====================================================================

@@ -1225,6 +1225,58 @@
             });
 
             html += `</div>`;
+
+            // Sauvegarder les meilleures formules par distance (pour live-scoring.js)
+            const bestFormulas = {};
+            ['sprint', 'mile', 'middle', 'staying'].forEach(bucket => {
+                const courses = categories[bucket];
+                if (!courses || courses.length < 3) return;
+                // Meilleur solo
+                const soloRes = levierNames.map(name => ({ name, ...evalLevier(courses, name) })).sort((a,b) => b.pN1 - a.pN1);
+                // Meilleures combos (toutes tailles)
+                const allCombos = comboResults.filter(r => true); // already sorted globally
+                // Recalculer pour ce bucket spécifiquement
+                const bucketCombos = [];
+                const top6b = soloRes.slice(0, 6).map(r => r.name);
+                for (let i = 0; i < top6b.length; i++)
+                    for (let j = i+1; j < top6b.length; j++)
+                        for (const w of [0.2, 0.4, 0.5, 0.6, 0.8]) {
+                            const r = evalCombo(courses, [top6b[i], top6b[j]], [w, 1-w]);
+                            bucketCombos.push({ leviers: [top6b[i], top6b[j]], poids: [w, 1-w], ...r });
+                        }
+                for (let i = 0; i < Math.min(4, top6b.length); i++)
+                    for (let j = i+1; j < Math.min(5, top6b.length); j++)
+                        for (let k = j+1; k < Math.min(6, top6b.length); k++)
+                            for (const w1 of [0.4, 0.5]) {
+                                const r = evalCombo(courses, [top6b[i],top6b[j],top6b[k]], [w1, 0.3, +(1-w1-0.3).toFixed(1)]);
+                                bucketCombos.push({ leviers: [top6b[i],top6b[j],top6b[k]], poids: [w1, 0.3, +(1-w1-0.3).toFixed(1)], ...r });
+                            }
+                bucketCombos.sort((a,b) => b.pN1 !== a.pN1 ? b.pN1 - a.pN1 : b.pN2 - a.pN2);
+
+                const best = bucketCombos[0];
+                if (best) {
+                    bestFormulas[bucket] = {
+                        leviers: best.leviers,
+                        poids: best.poids,
+                        top1: best.pN1, top2: best.pN2, top3: best.pN3,
+                        courses: best.t
+                    };
+                }
+            });
+
+            // Afficher un bouton pour copier les formules
+            html += `<div class="section" style="margin-top:1rem">
+                <h2><i class="fas fa-download"></i> Formules optimales pour live-scoring</h2>
+                <p style="opacity:0.6;font-size:0.82rem;margin-bottom:0.8rem">Copiées automatiquement dans data/best_formulas.json — utilisées par <code>node live-scoring.js</code></p>
+                <pre style="background:rgba(0,0,0,0.3);padding:1rem;border-radius:8px;font-size:0.8rem;overflow-x:auto">${JSON.stringify(bestFormulas, null, 2)}</pre>
+                <button class="btn-filter" style="margin-top:0.5rem" onclick="downloadFormulas()">
+                    <i class="fas fa-save"></i> Télécharger best_formulas.json
+                </button>
+            </div>`;
+
+            // Stocker pour le download
+            window._bestFormulas = bestFormulas;
+
             container.innerHTML = html;
 
         } catch (err) {
@@ -1234,6 +1286,15 @@
 
         btn.disabled = false;
         btn.innerHTML = '<i class="fas fa-sliders-h"></i> Analyse Leviers';
+    }
+
+    function downloadFormulas() {
+        if (!window._bestFormulas) return;
+        const blob = new Blob([JSON.stringify(window._bestFormulas, null, 2)], { type: 'application/json' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'best_formulas.json';
+        a.click();
     }
 
     function showLevierTab(cat, el) {
