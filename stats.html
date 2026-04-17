@@ -1233,9 +1233,7 @@
                 if (!courses || courses.length < 3) return;
                 // Meilleur solo
                 const soloRes = levierNames.map(name => ({ name, ...evalLevier(courses, name) })).sort((a,b) => b.pN1 - a.pN1);
-                // Meilleures combos (toutes tailles)
-                const allCombos = comboResults.filter(r => true); // already sorted globally
-                // Recalculer pour ce bucket spécifiquement
+                // Recalculer les combos pour ce bucket
                 const bucketCombos = [];
                 const top6b = soloRes.slice(0, 6).map(r => r.name);
                 for (let i = 0; i < top6b.length; i++)
