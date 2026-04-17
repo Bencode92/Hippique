@@ -866,7 +866,7 @@
         return _pop;
     }
 
-    function computeLeviers(p, rd) {
+    function computeLeviers(p, rd, isFuture) {
         const nom = extractNom(p.cheval);
         const jk = (p.jockey || '').toUpperCase().trim();
         const coteVal = parseFloat(p.cote) || 0;
@@ -876,9 +876,13 @@
         const nbC = parseInt(p.nb_courses) || 0;
         const nbV = parseInt(p.nb_victoires) || 0;
         const nbP = parseInt(p.nb_places) || 0;
-        const ch25 = rd.chx25[nom], ch26 = rd.chx26[nom];
-        const j25 = rd.jk25[jk], j26 = rd.jk26[jk];
-        const cr25 = rd.cr25[jk], cr26 = rd.cr26[jk];
+        const ch25 = rd.chx25[nom];
+        const j25 = rd.jk25[jk];
+        const cr25 = rd.cr25[jk];
+        // 2026 UNIQUEMENT pour courses futures (sinon = leakage)
+        const ch26 = isFuture ? rd.chx26[nom] : null;
+        const j26 = isFuture ? rd.jk26[jk] : null;
+        const cr26 = isFuture ? rd.cr26[jk] : null;
         const pop = getPop(rd);
         const mxF = (a, b, f) => Math.max(a ? parseFloat(a[f]||0) : 0, b ? parseFloat(b[f]||0) : 0);
         const rS = (it, pp) => it ? 100*(1-(parseInt(it.Rang)-1)/pp) : 50;
@@ -928,10 +932,13 @@
             await new Promise(r => setTimeout(r, 30));
 
             // Enrichir chaque course avec les leviers pré-calculés
+            // Courses passées = 2025 only (zéro leakage), futures = 2025+2026
+            const today = new Date().toISOString().split('T')[0];
             const enriched = [];
             for (let i = 0; i < loadedCourses.length; i++) {
                 const c = loadedCourses[i];
-                const parts = c.course.participants.map(p => ({ ...p, _lev: computeLeviers(p, rd) }));
+                const isFuture = !c.fileDate || c.fileDate >= today;
+                const parts = c.course.participants.map(p => ({ ...p, _lev: computeLeviers(p, rd, isFuture) }));
                 enriched.push({ ...c, parts });
                 if (i % 50 === 0) {
                     if (progress) progress.textContent = `Pré-calcul ${i+1}/${loadedCourses.length} courses...`;
