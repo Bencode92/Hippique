@@ -254,34 +254,80 @@ _log(`   → DIVERGENCE = potentiel VALUE`);
 _log(`\n✅ Notre #1 = Favori: #${notre1.participant['n°']} ${(notre1.participant.cheval || '').slice(0, 20)}`);
         }
 
-        // Simulation Top 4 — 5€ répartis (min 1€, arrondi 0.50€)
-        const top4 = sorted.slice(0, 4).filter(r => r.participant.cote > 1);
-        if (top4.length >= 2) {
-          const cotes4 = top4.map(r => r.participant.cote);
-          const invC = cotes4.map(c => 1 / c);
-          const sumInv = invC.reduce((a, b) => a + b, 0);
-          let mises = invC.map(ic => Math.max(1, (ic / sumInv) * 5));
-          // Ajuster à 5€
-          const tot = mises.reduce((a, b) => a + b, 0);
-          if (tot > 5) {
-            const excess = tot - 5;
-            const adjSum = mises.filter(m => m > 1).reduce((a, b) => a + b, 0) - mises.filter(m => m > 1).length;
-            mises = mises.map(m => m > 1 ? Math.max(1, m - excess * (m - 1) / (adjSum || 1)) : m);
-          }
-          mises = mises.map(m => Math.max(1, Math.round(m * 2) / 2));
-          const totalM = mises.reduce((a, b) => a + b, 0);
-          if (totalM !== 5) mises[0] = +(mises[0] + 5 - totalM).toFixed(1);
+        // Simulation Dutch — 5€, min 1€/cheval, net TOUJOURS positif
+        // Tester de 4 chevaux jusqu'à 2 (consécutifs depuis le top)
+        // Garder la meilleure config où TOUS les nets sont > 0
+        const BUDGET = 5;
+        let bestConfig = null;
 
-_log(`\n💰 SIMULATION TOP ${top4.length} — Mise totale ${mises.reduce((a,b)=>a+b,0).toFixed(1)}€`);
+        for (let nb = Math.min(4, sorted.length); nb >= 2; nb--) {
+          const chevaux = sorted.slice(0, nb).filter(r => r.participant.cote > 1);
+          if (chevaux.length < nb) continue;
+
+          const cotes = chevaux.map(r => r.participant.cote);
+          const sumInv = cotes.reduce((s, c) => s + 1/c, 0);
+
+          // Dutch betting : si sum(1/cote) >= 1, impossible d'avoir tous nets positifs
+          if (sumInv >= 1) continue;
+
+          // Mises Dutch optimales : mise_i = BUDGET / (cote_i × sum(1/cote_j))
+          let mises = cotes.map(c => BUDGET / (c * sumInv));
+
+          // Arrondir à 0.50€ (step PMU), minimum 1€
+          mises = mises.map(m => Math.max(1, Math.round(m * 2) / 2));
+          let total = mises.reduce((a, b) => a + b, 0);
+
+          // Ajuster pour coller au budget : ajouter/retirer 0.5€ au cheval avec la plus grosse cote
+          while (total < BUDGET) { mises[mises.length - 1] += 0.5; total += 0.5; }
+          while (total > BUDGET && mises[0] > 1) { mises[0] -= 0.5; total -= 0.5; }
+          // Si toujours pas 5€, ajuster le premier
+          if (total !== BUDGET) mises[0] = +(mises[0] + BUDGET - total).toFixed(1);
+
+          // Vérifier que TOUS les nets sont positifs
+          const allPositive = mises.every((m, i) => m * cotes[i] > BUDGET);
+          if (!allPositive) continue;
+
+          // Calculer le gain net minimum
+          const nets = mises.map((m, i) => +(m * cotes[i] - BUDGET).toFixed(1));
+          const minNet = Math.min(...nets);
+
+          bestConfig = { chevaux, cotes, mises, nets, minNet, nb };
+          break; // Prendre le max de chevaux possible
+        }
+
+        if (bestConfig) {
+          const { chevaux, mises, nets, nb } = bestConfig;
+_log(`\n💰 DUTCH TOP ${nb} — Mise ${BUDGET}€ (net TOUJOURS positif)`);
 _log('─'.repeat(60));
-          top4.forEach((r, i) => {
+          chevaux.forEach((r, i) => {
             const p = r.participant;
             const gain = (mises[i] * p.cote).toFixed(1);
-            const net = (mises[i] * p.cote - 5).toFixed(1);
-_log(`  #${String(p['n°']).padStart(2)} ${(p.cheval || '').slice(0, 18).padEnd(19)} cote ${String(p.cote.toFixed(1)).padStart(5)} → mise ${String(mises[i].toFixed(1)).padStart(4)}€ → gain ${gain.padStart(6)}€ (net ${net > 0 ? '+' : ''}${net}€)`);
+            const netStr = nets[i] >= 0 ? `\x1b[32m+${nets[i].toFixed(1)}€\x1b[0m` : `\x1b[31m${nets[i].toFixed(1)}€\x1b[0m`;
+_log(`  #${String(p['n°']).padStart(2)} ${(p.cheval || '').slice(0, 18).padEnd(19)} cote ${String(p.cote.toFixed(1)).padStart(5)} → mise ${String(mises[i].toFixed(1)).padStart(4)}€ → gain ${gain.padStart(6)}€ (net ${netStr})`);
           });
 _log('─'.repeat(60));
-_log(`  Si #1 ou #2 gagne = couvert | Objectif: 2 chevaux sur 4`);
+_log(`  ✅ Net min: +${bestConfig.minNet.toFixed(1)}€ | N'importe lequel des ${nb} gagne = profit`);
+        } else {
+          // Aucune config Dutch possible → fallback 2 chevaux
+          const top2 = sorted.slice(0, 2).filter(r => r.participant.cote > 1);
+          if (top2.length === 2) {
+            const c1 = top2[0].participant.cote, c2 = top2[1].participant.cote;
+            // Mise minimale pour net positif : mise × cote > budget
+            // Chercher le budget max qui marche avec 2 chevaux
+            const m1 = Math.max(1, Math.ceil(BUDGET / c1 * 2) / 2);
+            const m2 = Math.max(1, BUDGET - m1);
+_log(`\n💰 TOP 2 — Cotes trop basses pour Dutch 4`);
+_log('─'.repeat(60));
+            top2.forEach((r, i) => {
+              const p = r.participant;
+              const m = i === 0 ? m1 : m2;
+              const gain = (m * p.cote).toFixed(1);
+              const net = (m * p.cote - BUDGET).toFixed(1);
+_log(`  #${String(p['n°']).padStart(2)} ${(p.cheval || '').slice(0, 18).padEnd(19)} cote ${String(p.cote.toFixed(1)).padStart(5)} → mise ${String(m.toFixed(1)).padStart(4)}€ → gain ${gain.padStart(6)}€ (net ${net > 0 ? '+' : ''}${net}€)`);
+            });
+_log('─'.repeat(60));
+_log(`  ⚠️  Cotes basses — vérifier que les nets sont positifs`);
+          }
         }
 
       } catch (err) {
