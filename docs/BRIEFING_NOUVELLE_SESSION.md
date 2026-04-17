@@ -356,3 +356,42 @@ Utilisé par claude-matcher.js pour résoudre les noms non matchés via Claude.
 - `live-scoring.js` : à refaire pour utiliser le module partagé
 
 **Objectif** : `node live-scoring.js R1 C1` donne **100%** le même résultat que le HTML.
+
+---
+
+## 11. TODO PRIORITAIRE #1 — Dashboard de statistiques globales
+
+### Ce que veut l'utilisateur
+
+Une page/section sur le site où il peut :
+1. Choisir une **période** (ex: 1 avril → 16 avril, ou "dernier mois")
+2. Choisir des **hippodromes** (Saint-Cloud, Longchamp, tous, etc.)
+3. Voir les **statistiques de performance** :
+   - Notre Top1 gagne : X% (N/total)
+   - Notre Top2 contient le gagnant : X%
+   - Notre Top3 contient le gagnant : X%
+   - Favori cote gagne : X%
+   - 2 meilleures cotes : X%
+   - 3 meilleures cotes : X%
+4. **Par type de course** : Sprint / Mile / Middle / Staying
+5. **Par taille de peloton** : Petit / Moyen / Grand
+
+### Données disponibles
+
+- Toutes les courses avec arrivées dans `data/courses/2026-*.json`
+- Le scoring est calculé en live par `ranking-loader.js`
+- Le bandeau réunion fait déjà un calcul simplifié (à réutiliser)
+
+### Implémentation suggérée
+
+Option A : Nouvelle page `stats.html` avec filtres
+Option B : Section dans `index.html` accessible via un onglet
+Option C : Script terminal `node stats.js --from 2026-04-01 --to 2026-04-16 --hippo saint-cloud`
+
+L'utilisateur préfère avoir ça sur le site HTML (options A ou B).
+
+### Le scoring du dashboard doit utiliser les mêmes formules
+
+Attention : le bandeau réunion actuel utilise un scoring simplifié.
+Le dashboard doit idéalement utiliser `rankingLoader.calculerScoresCourse()`
+pour être 100% cohérent avec les scores affichés dans les courses.
