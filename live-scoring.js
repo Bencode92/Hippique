@@ -254,6 +254,36 @@ _log(`   → DIVERGENCE = potentiel VALUE`);
 _log(`\n✅ Notre #1 = Favori: #${notre1.participant['n°']} ${(notre1.participant.cheval || '').slice(0, 20)}`);
         }
 
+        // Simulation Top 4 — 5€ répartis (min 1€, arrondi 0.50€)
+        const top4 = sorted.slice(0, 4).filter(r => r.participant.cote > 1);
+        if (top4.length >= 2) {
+          const cotes4 = top4.map(r => r.participant.cote);
+          const invC = cotes4.map(c => 1 / c);
+          const sumInv = invC.reduce((a, b) => a + b, 0);
+          let mises = invC.map(ic => Math.max(1, (ic / sumInv) * 5));
+          // Ajuster à 5€
+          const tot = mises.reduce((a, b) => a + b, 0);
+          if (tot > 5) {
+            const excess = tot - 5;
+            const adjSum = mises.filter(m => m > 1).reduce((a, b) => a + b, 0) - mises.filter(m => m > 1).length;
+            mises = mises.map(m => m > 1 ? Math.max(1, m - excess * (m - 1) / (adjSum || 1)) : m);
+          }
+          mises = mises.map(m => Math.max(1, Math.round(m * 2) / 2));
+          const totalM = mises.reduce((a, b) => a + b, 0);
+          if (totalM !== 5) mises[0] = +(mises[0] + 5 - totalM).toFixed(1);
+
+_log(`\n💰 SIMULATION TOP ${top4.length} — Mise totale ${mises.reduce((a,b)=>a+b,0).toFixed(1)}€`);
+_log('─'.repeat(60));
+          top4.forEach((r, i) => {
+            const p = r.participant;
+            const gain = (mises[i] * p.cote).toFixed(1);
+            const net = (mises[i] * p.cote - 5).toFixed(1);
+_log(`  #${String(p['n°']).padStart(2)} ${(p.cheval || '').slice(0, 18).padEnd(19)} cote ${String(p.cote.toFixed(1)).padStart(5)} → mise ${String(mises[i].toFixed(1)).padStart(4)}€ → gain ${gain.padStart(6)}€ (net ${net > 0 ? '+' : ''}${net}€)`);
+          });
+_log('─'.repeat(60));
+_log(`  Si #1 ou #2 gagne = couvert | Objectif: 2 chevaux sur 4`);
+        }
+
       } catch (err) {
         _log(`❌ Erreur scoring R${rNum}C${cNum}:`, err.message);
       }
