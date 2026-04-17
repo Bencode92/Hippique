@@ -45,7 +45,6 @@
 
         main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
 
-        /* Filters */
         .filters {
             display: flex; gap: 1rem; flex-wrap: wrap; align-items: flex-end;
             background: rgba(255,255,255,0.03); border-radius: 12px;
@@ -59,8 +58,43 @@
             color: var(--light-gold); padding: 8px 12px; border-radius: 6px;
             font-family: inherit; font-size: 0.9rem;
         }
-        .filter-group select { min-width: 180px; }
+        .filter-group select { min-width: 160px; }
         .filter-group input[type="date"] { min-width: 150px; }
+
+        /* Multi-select hippodromes */
+        .hippo-multi { position: relative; }
+        .hippo-btn {
+            background: rgba(255,255,255,0.06); border: 1px solid rgba(233,209,140,0.25);
+            color: var(--light-gold); padding: 8px 12px; border-radius: 6px;
+            font-family: inherit; font-size: 0.9rem; cursor: pointer; min-width: 200px;
+            text-align: left; display: flex; justify-content: space-between; align-items: center;
+        }
+        .hippo-btn .count { background: var(--gold); color: var(--dark-teal); border-radius: 10px; padding: 1px 7px; font-size: 0.75rem; font-weight: 700; margin-left: 8px; }
+        .hippo-dropdown {
+            display: none; position: absolute; top: 100%; left: 0; z-index: 100;
+            background: var(--medium-teal); border: 1px solid rgba(233,209,140,0.3);
+            border-radius: 8px; max-height: 300px; overflow-y: auto; width: 280px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.4); margin-top: 4px;
+        }
+        .hippo-dropdown.open { display: block; }
+        .hippo-search {
+            width: 100%; padding: 8px 12px; background: rgba(0,0,0,0.2); border: none;
+            border-bottom: 1px solid rgba(233,209,140,0.15); color: var(--light-gold);
+            font-family: inherit; font-size: 0.85rem;
+        }
+        .hippo-dropdown label {
+            display: flex; align-items: center; padding: 6px 12px; cursor: pointer;
+            font-size: 0.85rem; gap: 8px; transition: background 0.15s;
+        }
+        .hippo-dropdown label:hover { background: rgba(255,255,255,0.05); }
+        .hippo-dropdown input[type="checkbox"] { accent-color: var(--gold); }
+        .hippo-actions { display: flex; gap: 8px; padding: 6px 12px; border-top: 1px solid rgba(233,209,140,0.15); }
+        .hippo-actions button {
+            background: none; border: none; color: var(--accent); cursor: pointer;
+            font-family: inherit; font-size: 0.8rem; padding: 2px 6px;
+        }
+        .hippo-actions button:hover { text-decoration: underline; }
+
         .btn-filter {
             background: var(--gold); color: var(--dark-teal); border: none;
             padding: 8px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;
@@ -75,9 +109,8 @@
         }
         .btn-preset:hover, .btn-preset.active { background: var(--light-teal); border-color: var(--gold); color: var(--gold); }
 
-        /* Cards */
         .stats-grid {
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 1rem; margin-bottom: 1.5rem;
         }
         .stat-card {
@@ -85,66 +118,60 @@
             padding: 1rem; text-align: center;
             border: 1px solid rgba(233,209,140,0.12);
         }
-        .stat-card .label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.6; margin-bottom: 4px; }
+        .stat-card .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.6; margin-bottom: 4px; }
         .stat-card .value { font-size: 1.8rem; font-weight: 700; color: var(--gold); }
-        .stat-card .sub { font-size: 0.8rem; opacity: 0.7; margin-top: 2px; }
+        .stat-card .sub { font-size: 0.75rem; opacity: 0.7; margin-top: 2px; }
 
-        /* Comparison table */
-        .comparison-section {
+        .section {
             background: rgba(255,255,255,0.03); border-radius: 12px;
             padding: 1.5rem; margin-bottom: 1.5rem;
             border: 1px solid rgba(233,209,140,0.12);
         }
-        .comparison-section h2 { font-size: 1.1rem; margin-bottom: 1rem; color: var(--gold); }
+        .section h2 { font-size: 1.1rem; margin-bottom: 1rem; color: var(--gold); }
         .comp-table { width: 100%; border-collapse: collapse; }
         .comp-table th {
-            text-align: left; padding: 8px 12px; font-size: 0.75rem;
+            text-align: left; padding: 8px 12px; font-size: 0.7rem;
             text-transform: uppercase; letter-spacing: 1px; opacity: 0.6;
             border-bottom: 1px solid rgba(233,209,140,0.15);
         }
         .comp-table td {
-            padding: 10px 12px; border-bottom: 1px solid rgba(255,255,255,0.05);
-            font-size: 0.95rem;
+            padding: 8px 12px; border-bottom: 1px solid rgba(255,255,255,0.05);
+            font-size: 0.9rem;
         }
         .comp-table tr:hover td { background: rgba(255,255,255,0.03); }
-        .pct-bar {
-            display: inline-block; height: 6px; border-radius: 3px;
-            margin-right: 8px; vertical-align: middle;
-        }
+        .pct-bar { display: inline-block; height: 6px; border-radius: 3px; margin-right: 8px; vertical-align: middle; }
         .win { color: var(--green); font-weight: 600; }
         .lose { color: var(--red); }
         .tie { color: var(--accent); }
 
-        /* Distance breakdown */
         .distance-grid {
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 1rem; margin-bottom: 1.5rem;
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
         }
         .distance-card {
             background: rgba(255,255,255,0.04); border-radius: 10px;
-            padding: 1.2rem; border: 1px solid rgba(233,209,140,0.12);
+            padding: 1rem; border: 1px solid rgba(233,209,140,0.12);
         }
-        .distance-card h3 { font-size: 0.95rem; margin-bottom: 0.8rem; color: var(--accent); }
-        .distance-card .row { display: flex; justify-content: space-between; padding: 4px 0; font-size: 0.85rem; }
+        .distance-card h3 { font-size: 0.9rem; margin-bottom: 0.6rem; color: var(--accent); }
+        .distance-card .row { display: flex; justify-content: space-between; padding: 3px 0; font-size: 0.82rem; }
         .distance-card .row .lbl { opacity: 0.7; }
 
-        /* Loading */
-        .loading-overlay {
-            text-align: center; padding: 3rem; font-size: 1.1rem;
-        }
+        .loading-overlay { text-align: center; padding: 3rem; font-size: 1.1rem; }
         .loading-overlay .spinner {
             display: inline-block; width: 40px; height: 40px;
             border: 3px solid rgba(233,209,140,0.2); border-top-color: var(--gold);
-            border-radius: 50%; animation: spin 0.8s linear infinite;
-            margin-bottom: 1rem;
+            border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 1rem;
         }
         @keyframes spin { to { transform: rotate(360deg); } }
         .progress-text { font-size: 0.85rem; opacity: 0.7; margin-top: 0.5rem; }
 
-        /* Hippodrome breakdown */
-        .hippo-table { margin-top: 1rem; }
         .hippo-table th { cursor: pointer; user-select: none; }
         .hippo-table th:hover { opacity: 1; color: var(--gold); }
+
+        /* Course detail rows */
+        .course-row { font-size: 0.82rem; }
+        .course-row td { padding: 6px 10px; }
+        .course-row.winner td { background: rgba(64,224,90,0.05); }
 
         @media (max-width: 768px) {
             main { padding: 1rem; }
@@ -171,7 +198,6 @@
     <main>
         <h1 style="margin-bottom:1rem;font-size:1.4rem"><i class="fas fa-chart-bar"></i> Statistiques Globales</h1>
 
-        <!-- Filters -->
         <div class="filters">
             <div class="filter-group">
                 <label>Date début</label>
@@ -182,10 +208,21 @@
                 <input type="date" id="date-to">
             </div>
             <div class="filter-group">
-                <label>Hippodrome</label>
-                <select id="hippo-filter">
-                    <option value="">Tous</option>
-                </select>
+                <label>Hippodromes</label>
+                <div class="hippo-multi">
+                    <button class="hippo-btn" id="hippo-btn" onclick="toggleHippoDropdown()">
+                        <span id="hippo-label">Tous</span>
+                        <i class="fas fa-chevron-down" style="font-size:0.7rem;opacity:0.5"></i>
+                    </button>
+                    <div class="hippo-dropdown" id="hippo-dropdown">
+                        <input type="text" class="hippo-search" placeholder="Rechercher..." oninput="filterHippoList(this.value)">
+                        <div class="hippo-actions">
+                            <button onclick="selectAllHippo()">Tout cocher</button>
+                            <button onclick="deselectAllHippo()">Tout décocher</button>
+                        </div>
+                        <div id="hippo-list"></div>
+                    </div>
+                </div>
             </div>
             <div class="filter-group">
                 <label>Type</label>
@@ -208,7 +245,6 @@
             </div>
         </div>
 
-        <!-- Results container -->
         <div id="results">
             <div class="loading-overlay">
                 <p style="opacity:0.5">Sélectionnez une période et cliquez sur Analyser</p>
@@ -216,37 +252,122 @@
         </div>
     </main>
 
-    <!-- Charger le VRAI ranking-loader.js — 100% identique au site -->
-    <script src="js/ranking-loader.js?v=15"></script>
-
     <script>
     // ============================================================
-    // SCORING — utilise rankingLoader.calculerScoresCourse() directement
-    // Zéro duplication = toujours à jour avec ranking-loader.js
+    // SCORING — mêmes formules par distance que ranking-loader.js
+    // (Sprint/Mile/Middle/Staying + ajustement peloton)
     // ============================================================
-    let rankingDataLoaded = false;
+    function scoreCourse(course) {
+        const parts = course.participants || [];
+        if (!parts.length) return null;
 
-    function distLabel(d) {
-        return d < 1400 ? 'sprint' : d < 1700 ? 'mile' : d < 2200 ? 'middle' : 'staying';
+        const dist = parseInt(String(course.distance || '').replace(/[^0-9]/g, '')) || 0;
+        const avecCotes = parts.filter(p => p.cote > 1);
+        const parCote = [...avecCotes].sort((a, b) => a.cote - b.cote);
+
+        const scored = parts.map(p => {
+            const val = parseFloat(p.valeur) || 50;
+            const coteS = p.cote > 1 ? (1 / p.cote) * 100 : 50;
+            let mus = 50;
+            if (p.musique) {
+                const pos = p.musique.replace(/\(\d+\)/g, '').match(/(\d+|[DRT])[a-z]/gi);
+                if (pos && pos.length >= 2) {
+                    const l = pos.slice(0, 5).map(x => {
+                        const v = x.slice(0, -1);
+                        if ('DRT'.includes(v)) return 12;
+                        const n = parseInt(v);
+                        return n === 0 ? 12 : n;
+                    });
+                    let sc = 0, w = 0;
+                    l.forEach((ps, i) => {
+                        const wt = (l.length - i) / l.length;
+                        const s = ps === 1 ? 100 : ps === 2 ? 80 : ps === 3 ? 65 : ps <= 5 ? 45 : ps <= 8 ? 25 : 10;
+                        sc += s * wt; w += wt;
+                    });
+                    mus = w > 0 ? sc / w : 50;
+                }
+            }
+            let s;
+            if (dist < 1400) s = mus * 0.4 + coteS * 0.4 + val * 0.2;
+            else if (dist < 1700) s = val * 0.5 + coteS * 0.3 + mus * 0.2;
+            else if (dist < 2200) {
+                const nbC = parseInt(p.nb_courses) || 0;
+                const iv = nbC >= 2 ? (parseInt(p.nb_victoires) || 0) / nbC * 100 : 8;
+                s = coteS * 0.5 + val * 0.3 + iv * 0.2;
+            } else s = coteS * 0.4 + val * 0.3 + mus * 0.3;
+            if (parts.length < 9) s += val * 0.15;
+            else if (parts.length >= 14) s += 8 * 0.3;
+            return { ...p, _s: s };
+        }).sort((a, b) => b._s - a._s);
+
+        return { scored, parCote, dist };
     }
 
-    // Construire le courseContext identique à index.html pour rankingLoader
-    function buildCourseContext(course, hippo, fileDate) {
-        const dist = parseInt(String(course.distance || '').replace(/[^0-9]/g, '')) || 0;
-        return {
-            distance: dist,
-            type: (course.type || 'plat').toLowerCase() === 'plat' ? 'plat' : 'obstacle',
-            participants: course.participants || [],
-            hippodrome: hippo,
-            date: fileDate
-        };
+    function distLabel(d) { return d < 1400 ? 'sprint' : d < 1700 ? 'mile' : d < 2200 ? 'middle' : 'staying'; }
+    function distLabelFr(d) { return d < 1400 ? 'Sprint' : d < 1700 ? 'Mile' : d < 2200 ? 'Middle' : 'Staying'; }
+
+    // ============================================================
+    // HIPPODROMES MULTI-SELECT
+    // ============================================================
+    let allHippodromes = new Set();
+    let selectedHippos = new Set(); // vide = tous
+
+    function toggleHippoDropdown() {
+        document.getElementById('hippo-dropdown').classList.toggle('open');
+    }
+    document.addEventListener('click', e => {
+        if (!e.target.closest('.hippo-multi')) {
+            document.getElementById('hippo-dropdown').classList.remove('open');
+        }
+    });
+
+    function populateHippoFilter() {
+        const list = document.getElementById('hippo-list');
+        const sorted = [...allHippodromes].sort();
+        list.innerHTML = sorted.map(h =>
+            `<label><input type="checkbox" value="${h}" onchange="updateHippoSelection()"> ${h}</label>`
+        ).join('');
+    }
+
+    function filterHippoList(q) {
+        const labels = document.querySelectorAll('#hippo-list label');
+        const query = q.toUpperCase();
+        labels.forEach(l => {
+            l.style.display = l.textContent.toUpperCase().includes(query) ? '' : 'none';
+        });
+    }
+
+    function selectAllHippo() {
+        document.querySelectorAll('#hippo-list input[type="checkbox"]').forEach(cb => {
+            if (cb.closest('label').style.display !== 'none') cb.checked = true;
+        });
+        updateHippoSelection();
+    }
+
+    function deselectAllHippo() {
+        document.querySelectorAll('#hippo-list input[type="checkbox"]').forEach(cb => cb.checked = false);
+        updateHippoSelection();
+    }
+
+    function updateHippoSelection() {
+        selectedHippos.clear();
+        document.querySelectorAll('#hippo-list input[type="checkbox"]:checked').forEach(cb => {
+            selectedHippos.add(cb.value);
+        });
+        const label = document.getElementById('hippo-label');
+        if (selectedHippos.size === 0 || selectedHippos.size === allHippodromes.size) {
+            label.innerHTML = 'Tous';
+        } else if (selectedHippos.size <= 2) {
+            label.innerHTML = [...selectedHippos].join(', ');
+        } else {
+            label.innerHTML = `${selectedHippos.size} hippodromes <span class="count">${selectedHippos.size}</span>`;
+        }
     }
 
     // ============================================================
     // DATA LOADING
     // ============================================================
     let allFiles = null;
-    let allHippodromes = new Set();
 
     async function loadFileList() {
         if (allFiles) return allFiles;
@@ -261,17 +382,6 @@
         return allFiles;
     }
 
-    function populateHippoFilter() {
-        const sel = document.getElementById('hippo-filter');
-        const sorted = [...allHippodromes].sort();
-        sorted.forEach(h => {
-            const opt = document.createElement('option');
-            opt.value = h;
-            opt.textContent = h;
-            sel.appendChild(opt);
-        });
-    }
-
     async function loadCourseFile(file) {
         const resp = await fetch(file.download_url);
         if (!resp.ok) return null;
@@ -279,43 +389,33 @@
     }
 
     // ============================================================
-    // ANALYSIS — utilise le VRAI rankingLoader
+    // ANALYSIS
     // ============================================================
     async function runAnalysis() {
         const dateFrom = document.getElementById('date-from').value;
         const dateTo = document.getElementById('date-to').value;
-        const hippoFilter = document.getElementById('hippo-filter').value;
         const typeFilter = document.getElementById('type-filter').value;
         const btn = document.getElementById('btn-analyze');
         const container = document.getElementById('results');
 
         btn.disabled = true;
         btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Chargement...';
-        container.innerHTML = '<div class="loading-overlay"><div class="spinner"></div><p>Chargement des classements...</p><p class="progress-text" id="progress"></p></div>';
+        container.innerHTML = '<div class="loading-overlay"><div class="spinner"></div><p>Chargement des fichiers...</p><p class="progress-text" id="progress"></p></div>';
 
         try {
-            // Charger les classements du rankingLoader (une seule fois)
-            if (!rankingDataLoaded) {
-                await rankingLoader.loadAllData();
-                rankingDataLoaded = true;
-                const progress = document.getElementById('progress');
-                if (progress) progress.textContent = 'Classements chargés, chargement des courses...';
-            }
-
             const files = await loadFileList();
 
-            // Filtrer par date
             const filtered = files.filter(f => {
                 const dateMatch = f.name.match(/^(\d{4}-\d{2}-\d{2})/);
                 if (!dateMatch) return false;
                 const d = dateMatch[1];
                 if (dateFrom && d < dateFrom) return false;
                 if (dateTo && d > dateTo) return false;
-                if (hippoFilter) {
+                if (selectedHippos.size > 0) {
                     const hm = f.name.match(/\d{4}-\d{2}-\d{2}_(.+)\.json$/);
                     if (!hm) return false;
                     const h = hm[1].replace(/_/g, ' ').toUpperCase();
-                    if (h !== hippoFilter) return false;
+                    if (!selectedHippos.has(h)) return false;
                 }
                 return true;
             });
@@ -328,20 +428,20 @@
             }
 
             const progress = document.getElementById('progress');
-            const results = { total: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 };
-            const byDist = { sprint: { t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 },
-                             mile:   { t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 },
-                             middle: { t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 },
-                             staying:{ t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 } };
+            const R = { total: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 };
+            const byDist = {
+                sprint: { t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 },
+                mile:   { t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 },
+                middle: { t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 },
+                staying:{ t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 }
+            };
             const byHippo = {};
             const byDate = {};
+            const courseDetails = []; // pour le tableau détaillé
             let filesLoaded = 0;
             let coteSumOur = 0, coteSumFav = 0, winsOur = 0, winsFav = 0;
 
-            // Collecter toutes les courses à scorer
-            const coursesToScore = [];
-
-            const BATCH = 10;
+            const BATCH = 15;
             for (let i = 0; i < filtered.length; i += BATCH) {
                 const batch = filtered.slice(i, i + BATCH);
                 const datas = await Promise.all(batch.map(f => loadCourseFile(f)));
@@ -364,78 +464,73 @@
                         const dl = distLabel(dist);
                         if (typeFilter && dl !== typeFilter) return;
 
-                        coursesToScore.push({ course, hippo, fileDate, dist, dl });
+                        const r = scoreCourse(course);
+                        if (!r || !r.scored.length || !r.parCote.length) return;
+
+                        R.total++;
+                        const isN1 = r.scored[0]?.arrivee === 1;
+                        const isF1 = r.parCote[0]?.arrivee === 1;
+                        const isN2 = r.scored.slice(0, 2).some(p => p.arrivee === 1);
+                        const isF2 = r.parCote.slice(0, 2).some(p => p.arrivee === 1);
+                        const isN3 = r.scored.slice(0, 3).some(p => p.arrivee === 1);
+                        const isF3 = r.parCote.slice(0, 3).some(p => p.arrivee === 1);
+
+                        if (isN1) { R.n1++; if (r.scored[0].cote > 1) { coteSumOur += r.scored[0].cote; winsOur++; } }
+                        if (isF1) { R.f1++; if (r.parCote[0].cote > 1) { coteSumFav += r.parCote[0].cote; winsFav++; } }
+                        if (isN2) R.n2++;
+                        if (isF2) R.f2++;
+                        if (isN3) R.n3++;
+                        if (isF3) R.f3++;
+
+                        byDist[dl].t++;
+                        if (isN1) byDist[dl].n1++;
+                        if (isF1) byDist[dl].f1++;
+                        if (isN2) byDist[dl].n2++;
+                        if (isF2) byDist[dl].f2++;
+                        if (isN3) byDist[dl].n3++;
+                        if (isF3) byDist[dl].f3++;
+
+                        if (!byHippo[hippo]) byHippo[hippo] = { t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 };
+                        byHippo[hippo].t++;
+                        if (isN1) byHippo[hippo].n1++;
+                        if (isF1) byHippo[hippo].f1++;
+                        if (isN2) byHippo[hippo].n2++;
+                        if (isF2) byHippo[hippo].f2++;
+                        if (isN3) byHippo[hippo].n3++;
+                        if (isF3) byHippo[hippo].f3++;
+
+                        if (!byDate[fileDate]) byDate[fileDate] = { t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 };
+                        byDate[fileDate].t++;
+                        if (isN1) byDate[fileDate].n1++;
+                        if (isF1) byDate[fileDate].f1++;
+                        if (isN2) byDate[fileDate].n2++;
+                        if (isF2) byDate[fileDate].f2++;
+                        if (isN3) byDate[fileDate].n3++;
+                        if (isF3) byDate[fileDate].f3++;
+
+                        // Détail course
+                        const gagnant = course.participants.find(p => p.arrivee === 1);
+                        courseDetails.push({
+                            date: fileDate, hippo, nom: course.nom || '',
+                            dist, dl,
+                            gagnant: gagnant ? (gagnant.cheval || '').slice(0, 18) : '?',
+                            gagnantNum: gagnant ? gagnant['n°'] : '?',
+                            gagnantCote: gagnant ? gagnant.cote : 0,
+                            notreTop1: (r.scored[0]?.cheval || '').slice(0, 18),
+                            notreTop1Num: r.scored[0]?.['n°'] || '?',
+                            notreTop1Cote: r.scored[0]?.cote || 0,
+                            favNum: r.parCote[0]?.['n°'] || '?',
+                            favCote: r.parCote[0]?.cote || 0,
+                            isN1, isF1, isN2, isF2, isN3, isF3,
+                            partants: course.participants.length
+                        });
                     });
                 });
 
-                if (progress) progress.textContent = `${filesLoaded} / ${filtered.length} fichiers (${coursesToScore.length} courses trouvées)`;
+                if (progress) progress.textContent = `${filesLoaded} / ${filtered.length} fichiers (${R.total} courses)`;
             }
 
-            // Scorer toutes les courses avec rankingLoader (le VRAI scoring)
-            if (progress) progress.textContent = `Scoring de ${coursesToScore.length} courses avec ranking-loader.js...`;
-
-            for (let i = 0; i < coursesToScore.length; i++) {
-                const { course, hippo, fileDate, dist, dl } = coursesToScore[i];
-
-                // Construire le courseContext comme le fait index.html
-                const courseContext = buildCourseContext(course, hippo, fileDate);
-
-                // Appeler LE MÊME calculerScoresCourse que le site
-                const scoresPredictifs = await rankingLoader.calculerScoresCourse(courseContext);
-
-                if (!scoresPredictifs || !scoresPredictifs.length) continue;
-
-                // Classement par cote (favori marché)
-                const avecCotes = course.participants.filter(p => p.cote > 1);
-                const parCote = [...avecCotes].sort((a, b) => a.cote - b.cote);
-                if (!parCote.length) continue;
-
-                // Le classement du modèle : trié par score (déjà trié par calculerScoresCourse)
-                const sorted = scoresPredictifs;
-
-                results.total++;
-                const isN1 = sorted[0]?.participant?.arrivee === 1;
-                const isF1 = parCote[0]?.arrivee === 1;
-                if (isN1) { results.n1++; const c = sorted[0].participant.cote; if (c > 1) { coteSumOur += c; winsOur++; } }
-                if (isF1) { results.f1++; const c = parCote[0].cote; if (c > 1) { coteSumFav += c; winsFav++; } }
-                if (sorted.slice(0, 2).some(r => r.participant?.arrivee === 1)) results.n2++;
-                if (parCote.slice(0, 2).some(p => p.arrivee === 1)) results.f2++;
-                if (sorted.slice(0, 3).some(r => r.participant?.arrivee === 1)) results.n3++;
-                if (parCote.slice(0, 3).some(p => p.arrivee === 1)) results.f3++;
-
-                // By distance
-                byDist[dl].t++;
-                if (isN1) byDist[dl].n1++;
-                if (isF1) byDist[dl].f1++;
-                if (sorted.slice(0, 2).some(r => r.participant?.arrivee === 1)) byDist[dl].n2++;
-                if (parCote.slice(0, 2).some(p => p.arrivee === 1)) byDist[dl].f2++;
-                if (sorted.slice(0, 3).some(r => r.participant?.arrivee === 1)) byDist[dl].n3++;
-                if (parCote.slice(0, 3).some(p => p.arrivee === 1)) byDist[dl].f3++;
-
-                // By hippodrome
-                if (!byHippo[hippo]) byHippo[hippo] = { t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 };
-                byHippo[hippo].t++;
-                if (isN1) byHippo[hippo].n1++;
-                if (isF1) byHippo[hippo].f1++;
-                if (sorted.slice(0, 2).some(r => r.participant?.arrivee === 1)) byHippo[hippo].n2++;
-                if (parCote.slice(0, 2).some(p => p.arrivee === 1)) byHippo[hippo].f2++;
-                if (sorted.slice(0, 3).some(r => r.participant?.arrivee === 1)) byHippo[hippo].n3++;
-                if (parCote.slice(0, 3).some(p => p.arrivee === 1)) byHippo[hippo].f3++;
-
-                // By date
-                if (!byDate[fileDate]) byDate[fileDate] = { t: 0, n1: 0, f1: 0 };
-                byDate[fileDate].t++;
-                if (isN1) byDate[fileDate].n1++;
-                if (isF1) byDate[fileDate].f1++;
-
-                // Progress
-                if (i % 20 === 0 && progress) {
-                    progress.textContent = `Scoring ${i + 1} / ${coursesToScore.length} courses...`;
-                    await new Promise(r => setTimeout(r, 0)); // laisser le DOM se mettre à jour
-                }
-            }
-
-            renderResults(results, byDist, byHippo, byDate, coteSumOur, coteSumFav, winsOur, winsFav);
+            renderResults(R, byDist, byHippo, byDate, courseDetails, coteSumOur, coteSumFav, winsOur, winsFav);
 
         } catch (err) {
             container.innerHTML = `<div class="loading-overlay"><p style="color:var(--red)">Erreur : ${err.message}</p></div>`;
@@ -453,9 +548,9 @@
     function pctStr(n, t) { return t > 0 ? `${Math.round(n / t * 100)}%` : '-'; }
     function cmpClass(a, b) { return a > b ? 'win' : a < b ? 'lose' : 'tie'; }
 
-    function renderResults(r, byDist, byHippo, byDate, coteSumOur, coteSumFav, winsOur, winsFav) {
+    function renderResults(R, byDist, byHippo, byDate, courseDetails, coteSumOur, coteSumFav, winsOur, winsFav) {
         const container = document.getElementById('results');
-        if (r.total === 0) {
+        if (R.total === 0) {
             container.innerHTML = '<div class="loading-overlay"><p>Aucune course terminée trouvée</p></div>';
             return;
         }
@@ -469,73 +564,75 @@
         html += `<div class="stats-grid">
             <div class="stat-card">
                 <div class="label">Courses</div>
-                <div class="value">${r.total}</div>
-                <div class="sub">courses terminées</div>
+                <div class="value">${R.total}</div>
+                <div class="sub">terminées</div>
             </div>
             <div class="stat-card">
                 <div class="label">Notre Top 1</div>
-                <div class="value" style="color:${pct(r.n1,r.total)>=pct(r.f1,r.total)?'var(--green)':'var(--red)'}">${pctStr(r.n1,r.total)}</div>
-                <div class="sub">${r.n1}/${r.total} gagnants</div>
+                <div class="value" style="color:${pct(R.n1,R.total)>=pct(R.f1,R.total)?'var(--green)':'var(--red)'}">${pctStr(R.n1,R.total)}</div>
+                <div class="sub">${R.n1}/${R.total}</div>
             </div>
             <div class="stat-card">
                 <div class="label">Favori cote</div>
-                <div class="value" style="color:${pct(r.f1,r.total)>=pct(r.n1,r.total)?'var(--green)':'var(--red)'}">${pctStr(r.f1,r.total)}</div>
-                <div class="sub">${r.f1}/${r.total} gagnants</div>
+                <div class="value" style="color:${pct(R.f1,R.total)>=pct(R.n1,R.total)?'var(--green)':'var(--red)'}">${pctStr(R.f1,R.total)}</div>
+                <div class="sub">${R.f1}/${R.total}</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Notre Top 2</div>
+                <div class="value" style="color:var(--accent)">${pctStr(R.n2,R.total)}</div>
+                <div class="sub">${R.n2}/${R.total}</div>
             </div>
             <div class="stat-card">
                 <div class="label">Notre Top 3</div>
-                <div class="value" style="color:var(--accent)">${pctStr(r.n3,r.total)}</div>
-                <div class="sub">${r.n3}/${r.total}</div>
+                <div class="value" style="color:var(--accent)">${pctStr(R.n3,R.total)}</div>
+                <div class="sub">${R.n3}/${R.total}</div>
             </div>
             <div class="stat-card">
                 <div class="label">Cote moy. wins</div>
-                <div class="value" style="font-size:1.4rem">${avgCoteOur}</div>
-                <div class="sub">notre #1 vs ${avgCoteFav} fav</div>
+                <div class="value" style="font-size:1.3rem">${avgCoteOur}</div>
+                <div class="sub">vs ${avgCoteFav} fav</div>
             </div>
         </div>`;
 
-        // Main comparison table
-        html += `<div class="comparison-section">
-            <h2><i class="fas fa-balance-scale"></i> Notre Modèle vs Favori (cote la plus basse)</h2>
+        // Comparison table
+        html += `<div class="section">
+            <h2><i class="fas fa-balance-scale"></i> Notre Modèle vs Favori Cote</h2>
             <table class="comp-table">
-                <thead><tr>
-                    <th>Métrique</th><th>Notre Modèle</th><th>Favori Cote</th><th>Écart</th>
-                </tr></thead>
+                <thead><tr><th>Métrique</th><th>Notre Modèle</th><th>Favori Cote</th><th>Écart</th></tr></thead>
                 <tbody>
-                ${compRow('Top 1 (gagnant)', r.n1, r.f1, r.total)}
-                ${compRow('Top 2', r.n2, r.f2, r.total)}
-                ${compRow('Top 3', r.n3, r.f3, r.total)}
+                ${compRow('Top 1 (gagnant)', R.n1, R.f1, R.total)}
+                ${compRow('Top 2', R.n2, R.f2, R.total)}
+                ${compRow('Top 3', R.n3, R.f3, R.total)}
                 </tbody>
             </table>
         </div>`;
 
         // Distance breakdown
-        html += `<div class="comparison-section">
-            <h2><i class="fas fa-ruler-horizontal"></i> Performance par type de distance</h2>
+        html += `<div class="section">
+            <h2><i class="fas fa-ruler-horizontal"></i> Par type de distance</h2>
             <div class="distance-grid">`;
-
-        for (const [key, label] of [['sprint', 'Sprint (<1400m)'], ['mile', 'Mile (1400-1700m)'], ['middle', 'Middle (1700-2200m)'], ['staying', 'Staying (>2200m)']]) {
+        for (const [key, label] of [['sprint','Sprint (<1400m)'],['mile','Mile (1400-1700m)'],['middle','Middle (1700-2200m)'],['staying','Staying (>2200m)']]) {
             const d = byDist[key];
             if (d.t === 0) continue;
             html += `<div class="distance-card">
                 <h3>${label} — ${d.t} courses</h3>
-                <div class="row"><span class="lbl">Top 1 Modèle</span><span class="${cmpClass(pct(d.n1,d.t),pct(d.f1,d.t))}">${pctStr(d.n1,d.t)} (${d.n1})</span></div>
-                <div class="row"><span class="lbl">Top 1 Favori</span><span class="${cmpClass(pct(d.f1,d.t),pct(d.n1,d.t))}">${pctStr(d.f1,d.t)} (${d.f1})</span></div>
-                <hr style="border-color:rgba(255,255,255,0.05);margin:4px 0">
-                <div class="row"><span class="lbl">Top 2 Modèle</span><span class="${cmpClass(pct(d.n2,d.t),pct(d.f2,d.t))}">${pctStr(d.n2,d.t)}</span></div>
-                <div class="row"><span class="lbl">Top 2 Favori</span><span class="${cmpClass(pct(d.f2,d.t),pct(d.n2,d.t))}">${pctStr(d.f2,d.t)}</span></div>
-                <hr style="border-color:rgba(255,255,255,0.05);margin:4px 0">
-                <div class="row"><span class="lbl">Top 3 Modèle</span><span class="${cmpClass(pct(d.n3,d.t),pct(d.f3,d.t))}">${pctStr(d.n3,d.t)}</span></div>
-                <div class="row"><span class="lbl">Top 3 Favori</span><span class="${cmpClass(pct(d.f3,d.t),pct(d.n3,d.t))}">${pctStr(d.f3,d.t)}</span></div>
+                <div class="row"><span class="lbl">Top1 Modèle</span><span class="${cmpClass(pct(d.n1,d.t),pct(d.f1,d.t))}">${pctStr(d.n1,d.t)} (${d.n1})</span></div>
+                <div class="row"><span class="lbl">Top1 Favori</span><span class="${cmpClass(pct(d.f1,d.t),pct(d.n1,d.t))}">${pctStr(d.f1,d.t)} (${d.f1})</span></div>
+                <hr style="border-color:rgba(255,255,255,0.05);margin:3px 0">
+                <div class="row"><span class="lbl">Top2 Modèle</span><span class="${cmpClass(pct(d.n2,d.t),pct(d.f2,d.t))}">${pctStr(d.n2,d.t)}</span></div>
+                <div class="row"><span class="lbl">Top2 Favori</span><span class="${cmpClass(pct(d.f2,d.t),pct(d.n2,d.t))}">${pctStr(d.f2,d.t)}</span></div>
+                <hr style="border-color:rgba(255,255,255,0.05);margin:3px 0">
+                <div class="row"><span class="lbl">Top3 Modèle</span><span class="${cmpClass(pct(d.n3,d.t),pct(d.f3,d.t))}">${pctStr(d.n3,d.t)}</span></div>
+                <div class="row"><span class="lbl">Top3 Favori</span><span class="${cmpClass(pct(d.f3,d.t),pct(d.n3,d.t))}">${pctStr(d.f3,d.t)}</span></div>
             </div>`;
         }
         html += `</div></div>`;
 
-        // Hippodrome breakdown table
-        const hippoEntries = Object.entries(byHippo).filter(([, v]) => v.t >= 2).sort((a, b) => b[1].t - a[1].t);
+        // Hippodrome breakdown
+        const hippoEntries = Object.entries(byHippo).filter(([,v]) => v.t >= 2).sort((a,b) => b[1].t - a[1].t);
         if (hippoEntries.length) {
-            html += `<div class="comparison-section">
-                <h2><i class="fas fa-map-marker-alt"></i> Performance par hippodrome (min. 2 courses)</h2>
+            html += `<div class="section">
+                <h2><i class="fas fa-map-marker-alt"></i> Par hippodrome (min. 2 courses)</h2>
                 <div style="overflow-x:auto">
                 <table class="comp-table hippo-table" id="hippo-table">
                     <thead><tr>
@@ -543,33 +640,34 @@
                         <th data-sort="t">Courses</th>
                         <th data-sort="n1">Top1 Modèle</th>
                         <th data-sort="f1">Top1 Favori</th>
-                        <th data-sort="n2">Top2 Modèle</th>
-                        <th data-sort="n3">Top3 Modèle</th>
-                        <th data-sort="f3">Top3 Favori</th>
+                        <th data-sort="n2">Top2 Mod.</th>
+                        <th data-sort="f2">Top2 Fav.</th>
+                        <th data-sort="n3">Top3 Mod.</th>
+                        <th data-sort="f3">Top3 Fav.</th>
                     </tr></thead>
                     <tbody>`;
             hippoEntries.forEach(([h, d]) => {
                 html += `<tr>
-                    <td>${h}</td>
-                    <td>${d.t}</td>
+                    <td>${h}</td><td>${d.t}</td>
                     <td class="${cmpClass(pct(d.n1,d.t),pct(d.f1,d.t))}">${pctStr(d.n1,d.t)} (${d.n1})</td>
                     <td class="${cmpClass(pct(d.f1,d.t),pct(d.n1,d.t))}">${pctStr(d.f1,d.t)} (${d.f1})</td>
-                    <td>${pctStr(d.n2,d.t)}</td>
-                    <td>${pctStr(d.n3,d.t)}</td>
-                    <td>${pctStr(d.f3,d.t)}</td>
+                    <td class="${cmpClass(pct(d.n2,d.t),pct(d.f2,d.t))}">${pctStr(d.n2,d.t)}</td>
+                    <td class="${cmpClass(pct(d.f2,d.t),pct(d.n2,d.t))}">${pctStr(d.f2,d.t)}</td>
+                    <td class="${cmpClass(pct(d.n3,d.t),pct(d.f3,d.t))}">${pctStr(d.n3,d.t)}</td>
+                    <td class="${cmpClass(pct(d.f3,d.t),pct(d.n3,d.t))}">${pctStr(d.f3,d.t)}</td>
                 </tr>`;
             });
             html += `</tbody></table></div></div>`;
         }
 
-        // Daily evolution (last 30 dates)
+        // Daily evolution
         const dates = Object.keys(byDate).sort();
         if (dates.length > 1) {
-            html += `<div class="comparison-section">
+            html += `<div class="section">
                 <h2><i class="fas fa-calendar-alt"></i> Évolution journalière</h2>
                 <div style="overflow-x:auto">
                 <table class="comp-table">
-                    <thead><tr><th>Date</th><th>Courses</th><th>Top1 Modèle</th><th>Top1 Favori</th></tr></thead>
+                    <thead><tr><th>Date</th><th>Courses</th><th>Top1 Mod.</th><th>Top1 Fav.</th><th>Top2 Mod.</th><th>Top3 Mod.</th></tr></thead>
                     <tbody>`;
             dates.slice(-30).forEach(d => {
                 const dd = byDate[d];
@@ -577,15 +675,52 @@
                     <td>${d}</td><td>${dd.t}</td>
                     <td class="${cmpClass(pct(dd.n1,dd.t),pct(dd.f1,dd.t))}">${pctStr(dd.n1,dd.t)} (${dd.n1}/${dd.t})</td>
                     <td class="${cmpClass(pct(dd.f1,dd.t),pct(dd.n1,dd.t))}">${pctStr(dd.f1,dd.t)} (${dd.f1}/${dd.t})</td>
+                    <td>${pctStr(dd.n2,dd.t)}</td>
+                    <td>${pctStr(dd.n3,dd.t)}</td>
+                </tr>`;
+            });
+            html += `</tbody></table></div></div>`;
+        }
+
+        // Course-by-course detail (collapsible)
+        if (courseDetails.length) {
+            const sortedDetails = [...courseDetails].sort((a, b) => b.date.localeCompare(a.date) || a.hippo.localeCompare(b.hippo));
+            html += `<div class="section">
+                <h2 style="cursor:pointer" onclick="document.getElementById('detail-table').style.display=document.getElementById('detail-table').style.display==='none'?'':'none'">
+                    <i class="fas fa-list"></i> Détail course par course (${courseDetails.length}) <span style="font-size:0.7em;opacity:0.5">▼ cliquer pour ouvrir</span>
+                </h2>
+                <div id="detail-table" style="display:none;overflow-x:auto;margin-top:0.5rem">
+                <table class="comp-table" style="font-size:0.8rem">
+                    <thead><tr>
+                        <th>Date</th><th>Hippodrome</th><th>Course</th><th>Dist</th><th>Part.</th>
+                        <th>Notre #1</th><th>Cote</th><th>Favori</th><th>Cote</th>
+                        <th>Gagnant</th><th>Cote</th>
+                        <th>N1</th><th>F1</th><th>N2</th><th>N3</th>
+                    </tr></thead>
+                    <tbody>`;
+            sortedDetails.forEach(c => {
+                const n1c = c.isN1 ? 'win' : '';
+                const f1c = c.isF1 ? 'win' : '';
+                html += `<tr class="course-row">
+                    <td>${c.date}</td><td>${c.hippo}</td><td>${c.nom.slice(0, 25)}</td>
+                    <td>${c.dist}m</td><td>${c.partants}</td>
+                    <td>#${c.notreTop1Num} ${c.notreTop1}</td>
+                    <td>${c.notreTop1Cote > 0 ? c.notreTop1Cote.toFixed(1) : '-'}</td>
+                    <td>#${c.favNum}</td>
+                    <td>${c.favCote > 0 ? c.favCote.toFixed(1) : '-'}</td>
+                    <td>#${c.gagnantNum} ${c.gagnant}</td>
+                    <td>${c.gagnantCote > 0 ? c.gagnantCote.toFixed(1) : '-'}</td>
+                    <td class="${n1c}">${c.isN1 ? '✓' : ''}</td>
+                    <td class="${f1c}">${c.isF1 ? '✓' : ''}</td>
+                    <td>${c.isN2 ? '✓' : ''}</td>
+                    <td>${c.isN3 ? '✓' : ''}</td>
                 </tr>`;
             });
             html += `</tbody></table></div></div>`;
         }
 
         container.innerHTML = html;
-
-        // Sort hippodrome table
-        setupHippoSort(hippoEntries);
+        setupHippoSort();
     }
 
     function compRow(label, nVal, fVal, total) {
@@ -601,7 +736,7 @@
         </tr>`;
     }
 
-    function setupHippoSort(entries) {
+    function setupHippoSort() {
         const table = document.getElementById('hippo-table');
         if (!table) return;
         table.querySelectorAll('th[data-sort]').forEach(th => {
@@ -616,9 +751,8 @@
                     const idx = [...th.parentNode.children].indexOf(th);
                     const va = a.children[idx].textContent.trim();
                     const vb = b.children[idx].textContent.trim();
-                    const na = parseFloat(va) || 0, nb = parseFloat(vb) || 0;
                     if (key === 'name') return asc ? vb.localeCompare(va) : va.localeCompare(vb);
-                    return asc ? na - nb : nb - na;
+                    return asc ? (parseFloat(va)||0) - (parseFloat(vb)||0) : (parseFloat(vb)||0) - (parseFloat(va)||0);
                 });
                 rows.forEach(r => tbody.appendChild(r));
             });
@@ -633,22 +767,18 @@
         const from = new Date();
         document.querySelectorAll('.btn-preset').forEach(b => b.classList.remove('active'));
         event.target.classList.add('active');
-
         if (p === '7d') from.setDate(to.getDate() - 7);
         else if (p === '30d') from.setDate(to.getDate() - 30);
         else if (p === '90d') from.setDate(to.getDate() - 90);
-        else { from.setFullYear(2025); from.setMonth(10); from.setDate(1); } // Nov 2025
-
+        else { from.setFullYear(2025); from.setMonth(10); from.setDate(1); }
         document.getElementById('date-from').value = fmt(from);
         document.getElementById('date-to').value = fmt(to);
         runAnalysis();
     }
 
-    function fmt(d) {
-        return d.toISOString().split('T')[0];
-    }
+    function fmt(d) { return d.toISOString().split('T')[0]; }
 
-    // Init: set default dates
+    // Init dates
     (function() {
         const to = new Date();
         const from = new Date();
