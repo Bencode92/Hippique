@@ -850,46 +850,31 @@
             forme: results.forme?.resultats || {}, combo: results.combo?.resultats || {},
         };
 
-        // 2) Charger les snapshots datés 2026 depuis GitHub API
+        // 2) Charger les snapshots datés depuis data/rankings/
         try {
-            const ghResp = await fetch('https://api.github.com/repos/bencode92/Hippique/contents/data');
+            const ghResp = await fetch('https://api.github.com/repos/bencode92/Hippique/contents/data/rankings');
             if (ghResp.ok) {
-                const allDataFiles = await ghResp.json();
-                // Trouver les fichiers datés pour chaque catégorie
-                const dated = { chx: [], jk: [], cr: [] };
-                allDataFiles.forEach(f => {
-                    let m;
-                    if ((m = f.name.match(/^chevaux_ponderated_(\d{4}-\d{2}-\d{2})T/))) dated.chx.push({ date: m[1], url: f.download_url });
-                    else if ((m = f.name.match(/^jockeys_ponderated_(\d{4}-\d{2}-\d{2})T/))) dated.jk.push({ date: m[1], url: f.download_url });
-                    else if ((m = f.name.match(/^cravache_or_ponderated_(\d{4}-\d{2}-\d{2})T/))) dated.cr.push({ date: m[1], url: f.download_url });
-                });
+                const folders = (await ghResp.json()).filter(f => f.type === 'dir' && /^\d{4}-\d{2}-\d{2}$/.test(f.name)).sort((a,b) => a.name.localeCompare(b.name));
 
-                // Garder un snapshot par date unique (le premier trouvé)
-                const dateSet = new Set();
-                [...dated.chx, ...dated.jk, ...dated.cr].forEach(d => dateSet.add(d.date));
-                const uniqueDates = [...dateSet].sort();
-
-                for (const dt of uniqueDates) {
-                    const chxFile = dated.chx.find(d => d.date === dt);
-                    const jkFile = dated.jk.find(d => d.date === dt);
-                    const crFile = dated.cr.find(d => d.date === dt);
-                    if (chxFile && jkFile) {
-                        const [chxData, jkData, crData] = await Promise.all([
-                            fetch(chxFile.url).then(r => r.ok ? r.json() : null).catch(() => null),
-                            fetch(jkFile.url).then(r => r.ok ? r.json() : null).catch(() => null),
-                            crFile ? fetch(crFile.url).then(r => r.ok ? r.json() : null).catch(() => null) : null,
-                        ]);
+                for (const folder of folders) {
+                    const base = `${RAW}rankings/${folder.name}/`;
+                    const [chxData, jkData, crData] = await Promise.all([
+                        fetch(base + 'chevaux.json').then(r => r.ok ? r.json() : null).catch(() => null),
+                        fetch(base + 'jockeys.json').then(r => r.ok ? r.json() : null).catch(() => null),
+                        fetch(base + 'cravache_or.json').then(r => r.ok ? r.json() : null).catch(() => null),
+                    ]);
+                    if (chxData || jkData) {
                         snapshots26.push({
-                            date: dt,
+                            date: folder.name,
                             chx: buildMap(chxData, 'Nom'),
                             jk: buildMap(jkData, 'NomPostal'),
-                            cr: crData ? buildMap(crData, 'NomPostal') : {},
+                            cr: buildMap(crData, 'NomPostal'),
                         });
                     }
                 }
-                console.log(`📸 ${snapshots26.length} snapshots 2026 chargés: ${uniqueDates.join(', ')}`);
+                console.log(`📸 ${snapshots26.length} snapshots chargés: ${folders.map(f => f.name).join(', ')}`);
             }
-        } catch (e) { console.warn('Snapshots datés non disponibles:', e); }
+        } catch (e) { console.warn('Snapshots rankings non disponibles:', e); }
 
         return rankingData;
     }

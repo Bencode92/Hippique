@@ -97,6 +97,7 @@ jobs:
           git config --local user.name "GitHub Action - Pipeline Complet"
 
           git add data/*_ponderated_latest.json 2>/dev/null || true
+          git add data/rankings/ 2>/dev/null || true
           git add data/*_distance_stats.json 2>/dev/null || true
           git add data/*_forme_recente.json 2>/dev/null || true
           git add data/combo_jockey_entraineur.json 2>/dev/null || true

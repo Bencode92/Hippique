@@ -287,13 +287,18 @@ async function processCategory(category) {
     };
     
     // Générer les noms de fichiers
-    const timestamp = new Date().toISOString().replace(/:/g, '-').split('.')[0];
-    const timestampedFile = path.join(OUTPUT_DIR, `${category.id}_ponderated_${timestamp}.json`);
+    const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
     const latestFile = path.join(OUTPUT_DIR, `${category.id}_ponderated_latest.json`);
-    
+
+    // Snapshot historique dans data/rankings/YYYY-MM-DD/
+    const snapshotDir = path.join(OUTPUT_DIR, 'rankings', today);
+    await fs.mkdir(snapshotDir, { recursive: true });
+    const snapshotFile = path.join(snapshotDir, `${category.id}.json`);
+
     // Écrire les fichiers
-    await fs.writeFile(timestampedFile, JSON.stringify(result, null, 2));
+    await fs.writeFile(snapshotFile, JSON.stringify(result, null, 2));
     await fs.writeFile(latestFile, JSON.stringify(result, null, 2));
+    console.log(`  📸 Snapshot: ${snapshotFile}`);
     
     console.log(`✅ Catégorie ${category.id} traitée avec succès.`);
     return { category: category.id, success: true };
