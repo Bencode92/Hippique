@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistiques Globales — Analyse Hippique</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --dark-teal: #0A2E2A;
+            --medium-teal: #134542;
+            --light-teal: #1B5A56;
+            --gold: #D4AF37;
+            --light-gold: #F1E6C8;
+            --accent: #40E0D0;
+            --red: #e05a40;
+            --green: #40e05a;
+        }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--dark-teal);
+            color: var(--light-gold);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        header {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 1.5rem 2rem;
+            background: linear-gradient(to right, var(--dark-teal), var(--medium-teal));
+            border-bottom: 1px solid rgba(233,209,140,0.2);
+        }
+        .logo h1 { font-size: 1.8rem; color: var(--gold); font-weight: 500; letter-spacing: 2px; }
+        .main-nav { background-color: var(--medium-teal); padding: 0; }
+        .main-nav ul { display: flex; list-style: none; }
+        .main-nav li a {
+            display: block; padding: 0.75rem 1.5rem; color: var(--light-gold);
+            text-decoration: none; font-size: 0.9rem; transition: all 0.3s;
+        }
+        .main-nav li a:hover { background-color: var(--light-teal); }
+        .main-nav li.active a { border-bottom: 2px solid var(--gold); color: var(--gold); }
+
+        main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+        /* Filters */
+        .filters {
+            display: flex; gap: 1rem; flex-wrap: wrap; align-items: flex-end;
+            background: rgba(255,255,255,0.03); border-radius: 12px;
+            padding: 1.2rem; margin-bottom: 1.5rem;
+            border: 1px solid rgba(233,209,140,0.15);
+        }
+        .filter-group { display: flex; flex-direction: column; gap: 4px; }
+        .filter-group label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.7; }
+        .filter-group input, .filter-group select {
+            background: rgba(255,255,255,0.06); border: 1px solid rgba(233,209,140,0.25);
+            color: var(--light-gold); padding: 8px 12px; border-radius: 6px;
+            font-family: inherit; font-size: 0.9rem;
+        }
+        .filter-group select { min-width: 180px; }
+        .filter-group input[type="date"] { min-width: 150px; }
+        .btn-filter {
+            background: var(--gold); color: var(--dark-teal); border: none;
+            padding: 8px 20px; border-radius: 6px; font-weight: 600; cursor: pointer;
+            font-family: inherit; font-size: 0.9rem; transition: opacity 0.2s;
+        }
+        .btn-filter:hover { opacity: 0.85; }
+        .btn-filter:disabled { opacity: 0.5; cursor: wait; }
+        .btn-preset {
+            background: rgba(255,255,255,0.08); color: var(--light-gold); border: 1px solid rgba(233,209,140,0.2);
+            padding: 6px 14px; border-radius: 6px; cursor: pointer; font-family: inherit; font-size: 0.8rem;
+            transition: all 0.2s;
+        }
+        .btn-preset:hover, .btn-preset.active { background: var(--light-teal); border-color: var(--gold); color: var(--gold); }
+
+        /* Cards */
+        .stats-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 1rem; margin-bottom: 1.5rem;
+        }
+        .stat-card {
+            background: rgba(255,255,255,0.04); border-radius: 10px;
+            padding: 1rem; text-align: center;
+            border: 1px solid rgba(233,209,140,0.12);
+        }
+        .stat-card .label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.6; margin-bottom: 4px; }
+        .stat-card .value { font-size: 1.8rem; font-weight: 700; color: var(--gold); }
+        .stat-card .sub { font-size: 0.8rem; opacity: 0.7; margin-top: 2px; }
+
+        /* Comparison table */
+        .comparison-section {
+            background: rgba(255,255,255,0.03); border-radius: 12px;
+            padding: 1.5rem; margin-bottom: 1.5rem;
+            border: 1px solid rgba(233,209,140,0.12);
+        }
+        .comparison-section h2 { font-size: 1.1rem; margin-bottom: 1rem; color: var(--gold); }
+        .comp-table { width: 100%; border-collapse: collapse; }
+        .comp-table th {
+            text-align: left; padding: 8px 12px; font-size: 0.75rem;
+            text-transform: uppercase; letter-spacing: 1px; opacity: 0.6;
+            border-bottom: 1px solid rgba(233,209,140,0.15);
+        }
+        .comp-table td {
+            padding: 10px 12px; border-bottom: 1px solid rgba(255,255,255,0.05);
+            font-size: 0.95rem;
+        }
+        .comp-table tr:hover td { background: rgba(255,255,255,0.03); }
+        .pct-bar {
+            display: inline-block; height: 6px; border-radius: 3px;
+            margin-right: 8px; vertical-align: middle;
+        }
+        .win { color: var(--green); font-weight: 600; }
+        .lose { color: var(--red); }
+        .tie { color: var(--accent); }
+
+        /* Distance breakdown */
+        .distance-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1rem; margin-bottom: 1.5rem;
+        }
+        .distance-card {
+            background: rgba(255,255,255,0.04); border-radius: 10px;
+            padding: 1.2rem; border: 1px solid rgba(233,209,140,0.12);
+        }
+        .distance-card h3 { font-size: 0.95rem; margin-bottom: 0.8rem; color: var(--accent); }
+        .distance-card .row { display: flex; justify-content: space-between; padding: 4px 0; font-size: 0.85rem; }
+        .distance-card .row .lbl { opacity: 0.7; }
+
+        /* Loading */
+        .loading-overlay {
+            text-align: center; padding: 3rem; font-size: 1.1rem;
+        }
+        .loading-overlay .spinner {
+            display: inline-block; width: 40px; height: 40px;
+            border: 3px solid rgba(233,209,140,0.2); border-top-color: var(--gold);
+            border-radius: 50%; animation: spin 0.8s linear infinite;
+            margin-bottom: 1rem;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .progress-text { font-size: 0.85rem; opacity: 0.7; margin-top: 0.5rem; }
+
+        /* Hippodrome breakdown */
+        .hippo-table { margin-top: 1rem; }
+        .hippo-table th { cursor: pointer; user-select: none; }
+        .hippo-table th:hover { opacity: 1; color: var(--gold); }
+
+        @media (max-width: 768px) {
+            main { padding: 1rem; }
+            .filters { flex-direction: column; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><h1><i class="fas fa-horse-head"></i> Hippique</h1></div>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href="courses.html"><i class="fas fa-flag-checkered"></i> Courses</a></li>
+            <li><a href="classement.html"><i class="fas fa-list-ol"></i> Classement</a></li>
+            <li><a href="simulation.html"><i class="fas fa-calculator"></i> Simulation</a></li>
+            <li class="active"><a href="stats.html"><i class="fas fa-chart-bar"></i> Stats</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 style="margin-bottom:1rem;font-size:1.4rem"><i class="fas fa-chart-bar"></i> Statistiques Globales</h1>
+
+        <!-- Filters -->
+        <div class="filters">
+            <div class="filter-group">
+                <label>Date début</label>
+                <input type="date" id="date-from">
+            </div>
+            <div class="filter-group">
+                <label>Date fin</label>
+                <input type="date" id="date-to">
+            </div>
+            <div class="filter-group">
+                <label>Hippodrome</label>
+                <select id="hippo-filter">
+                    <option value="">Tous</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label>Type</label>
+                <select id="type-filter">
+                    <option value="">Tous</option>
+                    <option value="sprint">Sprint (&lt;1400m)</option>
+                    <option value="mile">Mile (1400-1700m)</option>
+                    <option value="middle">Middle (1700-2200m)</option>
+                    <option value="staying">Staying (&gt;2200m)</option>
+                </select>
+            </div>
+            <button class="btn-filter" id="btn-analyze" onclick="runAnalysis()">
+                <i class="fas fa-play"></i> Analyser
+            </button>
+            <div style="display:flex;gap:6px;flex-wrap:wrap">
+                <button class="btn-preset" onclick="setPreset('7d')">7 jours</button>
+                <button class="btn-preset" onclick="setPreset('30d')">30 jours</button>
+                <button class="btn-preset" onclick="setPreset('90d')">90 jours</button>
+                <button class="btn-preset" onclick="setPreset('all')">Tout</button>
+            </div>
+        </div>
+
+        <!-- Results container -->
+        <div id="results">
+            <div class="loading-overlay">
+                <p style="opacity:0.5">Sélectionnez une période et cliquez sur Analyser</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Charger le VRAI ranking-loader.js — 100% identique au site -->
+    <script src="js/ranking-loader.js?v=15"></script>
+
+    <script>
+    // ============================================================
+    // SCORING — utilise rankingLoader.calculerScoresCourse() directement
+    // Zéro duplication = toujours à jour avec ranking-loader.js
+    // ============================================================
+    let rankingDataLoaded = false;
+
+    function distLabel(d) {
+        return d < 1400 ? 'sprint' : d < 1700 ? 'mile' : d < 2200 ? 'middle' : 'staying';
+    }
+
+    // Construire le courseContext identique à index.html pour rankingLoader
+    function buildCourseContext(course, hippo, fileDate) {
+        const dist = parseInt(String(course.distance || '').replace(/[^0-9]/g, '')) || 0;
+        return {
+            distance: dist,
+            type: (course.type || 'plat').toLowerCase() === 'plat' ? 'plat' : 'obstacle',
+            participants: course.participants || [],
+            hippodrome: hippo,
+            date: fileDate
+        };
+    }
+
+    // ============================================================
+    // DATA LOADING
+    // ============================================================
+    let allFiles = null;
+    let allHippodromes = new Set();
+
+    async function loadFileList() {
+        if (allFiles) return allFiles;
+        const resp = await fetch('https://api.github.com/repos/bencode92/Hippique/contents/data/courses');
+        if (!resp.ok) throw new Error('Impossible de charger la liste des fichiers');
+        allFiles = await resp.json();
+        allFiles.forEach(f => {
+            const m = f.name.match(/\d{4}-\d{2}-\d{2}_(.+)\.json$/);
+            if (m) allHippodromes.add(m[1].replace(/_/g, ' ').toUpperCase());
+        });
+        populateHippoFilter();
+        return allFiles;
+    }
+
+    function populateHippoFilter() {
+        const sel = document.getElementById('hippo-filter');
+        const sorted = [...allHippodromes].sort();
+        sorted.forEach(h => {
+            const opt = document.createElement('option');
+            opt.value = h;
+            opt.textContent = h;
+            sel.appendChild(opt);
+        });
+    }
+
+    async function loadCourseFile(file) {
+        const resp = await fetch(file.download_url);
+        if (!resp.ok) return null;
+        return resp.json();
+    }
+
+    // ============================================================
+    // ANALYSIS — utilise le VRAI rankingLoader
+    // ============================================================
+    async function runAnalysis() {
+        const dateFrom = document.getElementById('date-from').value;
+        const dateTo = document.getElementById('date-to').value;
+        const hippoFilter = document.getElementById('hippo-filter').value;
+        const typeFilter = document.getElementById('type-filter').value;
+        const btn = document.getElementById('btn-analyze');
+        const container = document.getElementById('results');
+
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Chargement...';
+        container.innerHTML = '<div class="loading-overlay"><div class="spinner"></div><p>Chargement des classements...</p><p class="progress-text" id="progress"></p></div>';
+
+        try {
+            // Charger les classements du rankingLoader (une seule fois)
+            if (!rankingDataLoaded) {
+                await rankingLoader.loadAllData();
+                rankingDataLoaded = true;
+                const progress = document.getElementById('progress');
+                if (progress) progress.textContent = 'Classements chargés, chargement des courses...';
+            }
+
+            const files = await loadFileList();
+
+            // Filtrer par date
+            const filtered = files.filter(f => {
+                const dateMatch = f.name.match(/^(\d{4}-\d{2}-\d{2})/);
+                if (!dateMatch) return false;
+                const d = dateMatch[1];
+                if (dateFrom && d < dateFrom) return false;
+                if (dateTo && d > dateTo) return false;
+                if (hippoFilter) {
+                    const hm = f.name.match(/\d{4}-\d{2}-\d{2}_(.+)\.json$/);
+                    if (!hm) return false;
+                    const h = hm[1].replace(/_/g, ' ').toUpperCase();
+                    if (h !== hippoFilter) return false;
+                }
+                return true;
+            });
+
+            if (!filtered.length) {
+                container.innerHTML = '<div class="loading-overlay"><p>Aucun fichier trouvé pour cette période</p></div>';
+                btn.disabled = false;
+                btn.innerHTML = '<i class="fas fa-play"></i> Analyser';
+                return;
+            }
+
+            const progress = document.getElementById('progress');
+            const results = { total: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 };
+            const byDist = { sprint: { t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 },
+                             mile:   { t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 },
+                             middle: { t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 },
+                             staying:{ t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 } };
+            const byHippo = {};
+            const byDate = {};
+            let filesLoaded = 0;
+            let coteSumOur = 0, coteSumFav = 0, winsOur = 0, winsFav = 0;
+
+            // Collecter toutes les courses à scorer
+            const coursesToScore = [];
+
+            const BATCH = 10;
+            for (let i = 0; i < filtered.length; i += BATCH) {
+                const batch = filtered.slice(i, i + BATCH);
+                const datas = await Promise.all(batch.map(f => loadCourseFile(f)));
+
+                datas.forEach((data, idx) => {
+                    filesLoaded++;
+                    if (!data) return;
+                    if (data.type_reunion && data.type_reunion.toLowerCase() !== 'plat') return;
+
+                    const hippo = (data.hippodrome || '').toUpperCase();
+                    const fileDate = (batch[idx].name.match(/^(\d{4}-\d{2}-\d{2})/) || [])[1] || '';
+
+                    (data.courses || []).forEach(course => {
+                        if (course.type && course.type.toLowerCase() !== 'plat') return;
+                        if (!course.participants || !course.participants.length) return;
+                        if (!course.arrivee_definitive) return;
+                        if (!course.participants.some(p => p.arrivee === 1)) return;
+
+                        const dist = parseInt(String(course.distance || '').replace(/[^0-9]/g, '')) || 0;
+                        const dl = distLabel(dist);
+                        if (typeFilter && dl !== typeFilter) return;
+
+                        coursesToScore.push({ course, hippo, fileDate, dist, dl });
+                    });
+                });
+
+                if (progress) progress.textContent = `${filesLoaded} / ${filtered.length} fichiers (${coursesToScore.length} courses trouvées)`;
+            }
+
+            // Scorer toutes les courses avec rankingLoader (le VRAI scoring)
+            if (progress) progress.textContent = `Scoring de ${coursesToScore.length} courses avec ranking-loader.js...`;
+
+            for (let i = 0; i < coursesToScore.length; i++) {
+                const { course, hippo, fileDate, dist, dl } = coursesToScore[i];
+
+                // Construire le courseContext comme le fait index.html
+                const courseContext = buildCourseContext(course, hippo, fileDate);
+
+                // Appeler LE MÊME calculerScoresCourse que le site
+                const scoresPredictifs = await rankingLoader.calculerScoresCourse(courseContext);
+
+                if (!scoresPredictifs || !scoresPredictifs.length) continue;
+
+                // Classement par cote (favori marché)
+                const avecCotes = course.participants.filter(p => p.cote > 1);
+                const parCote = [...avecCotes].sort((a, b) => a.cote - b.cote);
+                if (!parCote.length) continue;
+
+                // Le classement du modèle : trié par score (déjà trié par calculerScoresCourse)
+                const sorted = scoresPredictifs;
+
+                results.total++;
+                const isN1 = sorted[0]?.participant?.arrivee === 1;
+                const isF1 = parCote[0]?.arrivee === 1;
+                if (isN1) { results.n1++; const c = sorted[0].participant.cote; if (c > 1) { coteSumOur += c; winsOur++; } }
+                if (isF1) { results.f1++; const c = parCote[0].cote; if (c > 1) { coteSumFav += c; winsFav++; } }
+                if (sorted.slice(0, 2).some(r => r.participant?.arrivee === 1)) results.n2++;
+                if (parCote.slice(0, 2).some(p => p.arrivee === 1)) results.f2++;
+                if (sorted.slice(0, 3).some(r => r.participant?.arrivee === 1)) results.n3++;
+                if (parCote.slice(0, 3).some(p => p.arrivee === 1)) results.f3++;
+
+                // By distance
+                byDist[dl].t++;
+                if (isN1) byDist[dl].n1++;
+                if (isF1) byDist[dl].f1++;
+                if (sorted.slice(0, 2).some(r => r.participant?.arrivee === 1)) byDist[dl].n2++;
+                if (parCote.slice(0, 2).some(p => p.arrivee === 1)) byDist[dl].f2++;
+                if (sorted.slice(0, 3).some(r => r.participant?.arrivee === 1)) byDist[dl].n3++;
+                if (parCote.slice(0, 3).some(p => p.arrivee === 1)) byDist[dl].f3++;
+
+                // By hippodrome
+                if (!byHippo[hippo]) byHippo[hippo] = { t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 };
+                byHippo[hippo].t++;
+                if (isN1) byHippo[hippo].n1++;
+                if (isF1) byHippo[hippo].f1++;
+                if (sorted.slice(0, 2).some(r => r.participant?.arrivee === 1)) byHippo[hippo].n2++;
+                if (parCote.slice(0, 2).some(p => p.arrivee === 1)) byHippo[hippo].f2++;
+                if (sorted.slice(0, 3).some(r => r.participant?.arrivee === 1)) byHippo[hippo].n3++;
+                if (parCote.slice(0, 3).some(p => p.arrivee === 1)) byHippo[hippo].f3++;
+
+                // By date
+                if (!byDate[fileDate]) byDate[fileDate] = { t: 0, n1: 0, f1: 0 };
+                byDate[fileDate].t++;
+                if (isN1) byDate[fileDate].n1++;
+                if (isF1) byDate[fileDate].f1++;
+
+                // Progress
+                if (i % 20 === 0 && progress) {
+                    progress.textContent = `Scoring ${i + 1} / ${coursesToScore.length} courses...`;
+                    await new Promise(r => setTimeout(r, 0)); // laisser le DOM se mettre à jour
+                }
+            }
+
+            renderResults(results, byDist, byHippo, byDate, coteSumOur, coteSumFav, winsOur, winsFav);
+
+        } catch (err) {
+            container.innerHTML = `<div class="loading-overlay"><p style="color:var(--red)">Erreur : ${err.message}</p></div>`;
+            console.error(err);
+        }
+
+        btn.disabled = false;
+        btn.innerHTML = '<i class="fas fa-play"></i> Analyser';
+    }
+
+    // ============================================================
+    // RENDER
+    // ============================================================
+    function pct(n, t) { return t > 0 ? Math.round(n / t * 100) : 0; }
+    function pctStr(n, t) { return t > 0 ? `${Math.round(n / t * 100)}%` : '-'; }
+    function cmpClass(a, b) { return a > b ? 'win' : a < b ? 'lose' : 'tie'; }
+
+    function renderResults(r, byDist, byHippo, byDate, coteSumOur, coteSumFav, winsOur, winsFav) {
+        const container = document.getElementById('results');
+        if (r.total === 0) {
+            container.innerHTML = '<div class="loading-overlay"><p>Aucune course terminée trouvée</p></div>';
+            return;
+        }
+
+        const avgCoteOur = winsOur > 0 ? (coteSumOur / winsOur).toFixed(1) : '-';
+        const avgCoteFav = winsFav > 0 ? (coteSumFav / winsFav).toFixed(1) : '-';
+
+        let html = '';
+
+        // Summary cards
+        html += `<div class="stats-grid">
+            <div class="stat-card">
+                <div class="label">Courses</div>
+                <div class="value">${r.total}</div>
+                <div class="sub">courses terminées</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Notre Top 1</div>
+                <div class="value" style="color:${pct(r.n1,r.total)>=pct(r.f1,r.total)?'var(--green)':'var(--red)'}">${pctStr(r.n1,r.total)}</div>
+                <div class="sub">${r.n1}/${r.total} gagnants</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Favori cote</div>
+                <div class="value" style="color:${pct(r.f1,r.total)>=pct(r.n1,r.total)?'var(--green)':'var(--red)'}">${pctStr(r.f1,r.total)}</div>
+                <div class="sub">${r.f1}/${r.total} gagnants</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Notre Top 3</div>
+                <div class="value" style="color:var(--accent)">${pctStr(r.n3,r.total)}</div>
+                <div class="sub">${r.n3}/${r.total}</div>
+            </div>
+            <div class="stat-card">
+                <div class="label">Cote moy. wins</div>
+                <div class="value" style="font-size:1.4rem">${avgCoteOur}</div>
+                <div class="sub">notre #1 vs ${avgCoteFav} fav</div>
+            </div>
+        </div>`;
+
+        // Main comparison table
+        html += `<div class="comparison-section">
+            <h2><i class="fas fa-balance-scale"></i> Notre Modèle vs Favori (cote la plus basse)</h2>
+            <table class="comp-table">
+                <thead><tr>
+                    <th>Métrique</th><th>Notre Modèle</th><th>Favori Cote</th><th>Écart</th>
+                </tr></thead>
+                <tbody>
+                ${compRow('Top 1 (gagnant)', r.n1, r.f1, r.total)}
+                ${compRow('Top 2', r.n2, r.f2, r.total)}
+                ${compRow('Top 3', r.n3, r.f3, r.total)}
+                </tbody>
+            </table>
+        </div>`;
+
+        // Distance breakdown
+        html += `<div class="comparison-section">
+            <h2><i class="fas fa-ruler-horizontal"></i> Performance par type de distance</h2>
+            <div class="distance-grid">`;
+
+        for (const [key, label] of [['sprint', 'Sprint (<1400m)'], ['mile', 'Mile (1400-1700m)'], ['middle', 'Middle (1700-2200m)'], ['staying', 'Staying (>2200m)']]) {
+            const d = byDist[key];
+            if (d.t === 0) continue;
+            html += `<div class="distance-card">
+                <h3>${label} — ${d.t} courses</h3>
+                <div class="row"><span class="lbl">Top 1 Modèle</span><span class="${cmpClass(pct(d.n1,d.t),pct(d.f1,d.t))}">${pctStr(d.n1,d.t)} (${d.n1})</span></div>
+                <div class="row"><span class="lbl">Top 1 Favori</span><span class="${cmpClass(pct(d.f1,d.t),pct(d.n1,d.t))}">${pctStr(d.f1,d.t)} (${d.f1})</span></div>
+                <hr style="border-color:rgba(255,255,255,0.05);margin:4px 0">
+                <div class="row"><span class="lbl">Top 2 Modèle</span><span class="${cmpClass(pct(d.n2,d.t),pct(d.f2,d.t))}">${pctStr(d.n2,d.t)}</span></div>
+                <div class="row"><span class="lbl">Top 2 Favori</span><span class="${cmpClass(pct(d.f2,d.t),pct(d.n2,d.t))}">${pctStr(d.f2,d.t)}</span></div>
+                <hr style="border-color:rgba(255,255,255,0.05);margin:4px 0">
+                <div class="row"><span class="lbl">Top 3 Modèle</span><span class="${cmpClass(pct(d.n3,d.t),pct(d.f3,d.t))}">${pctStr(d.n3,d.t)}</span></div>
+                <div class="row"><span class="lbl">Top 3 Favori</span><span class="${cmpClass(pct(d.f3,d.t),pct(d.n3,d.t))}">${pctStr(d.f3,d.t)}</span></div>
+            </div>`;
+        }
+        html += `</div></div>`;
+
+        // Hippodrome breakdown table
+        const hippoEntries = Object.entries(byHippo).filter(([, v]) => v.t >= 2).sort((a, b) => b[1].t - a[1].t);
+        if (hippoEntries.length) {
+            html += `<div class="comparison-section">
+                <h2><i class="fas fa-map-marker-alt"></i> Performance par hippodrome (min. 2 courses)</h2>
+                <div style="overflow-x:auto">
+                <table class="comp-table hippo-table" id="hippo-table">
+                    <thead><tr>
+                        <th data-sort="name">Hippodrome</th>
+                        <th data-sort="t">Courses</th>
+                        <th data-sort="n1">Top1 Modèle</th>
+                        <th data-sort="f1">Top1 Favori</th>
+                        <th data-sort="n2">Top2 Modèle</th>
+                        <th data-sort="n3">Top3 Modèle</th>
+                        <th data-sort="f3">Top3 Favori</th>
+                    </tr></thead>
+                    <tbody>`;
+            hippoEntries.forEach(([h, d]) => {
+                html += `<tr>
+                    <td>${h}</td>
+                    <td>${d.t}</td>
+                    <td class="${cmpClass(pct(d.n1,d.t),pct(d.f1,d.t))}">${pctStr(d.n1,d.t)} (${d.n1})</td>
+                    <td class="${cmpClass(pct(d.f1,d.t),pct(d.n1,d.t))}">${pctStr(d.f1,d.t)} (${d.f1})</td>
+                    <td>${pctStr(d.n2,d.t)}</td>
+                    <td>${pctStr(d.n3,d.t)}</td>
+                    <td>${pctStr(d.f3,d.t)}</td>
+                </tr>`;
+            });
+            html += `</tbody></table></div></div>`;
+        }
+
+        // Daily evolution (last 30 dates)
+        const dates = Object.keys(byDate).sort();
+        if (dates.length > 1) {
+            html += `<div class="comparison-section">
+                <h2><i class="fas fa-calendar-alt"></i> Évolution journalière</h2>
+                <div style="overflow-x:auto">
+                <table class="comp-table">
+                    <thead><tr><th>Date</th><th>Courses</th><th>Top1 Modèle</th><th>Top1 Favori</th></tr></thead>
+                    <tbody>`;
+            dates.slice(-30).forEach(d => {
+                const dd = byDate[d];
+                html += `<tr>
+                    <td>${d}</td><td>${dd.t}</td>
+                    <td class="${cmpClass(pct(dd.n1,dd.t),pct(dd.f1,dd.t))}">${pctStr(dd.n1,dd.t)} (${dd.n1}/${dd.t})</td>
+                    <td class="${cmpClass(pct(dd.f1,dd.t),pct(dd.n1,dd.t))}">${pctStr(dd.f1,dd.t)} (${dd.f1}/${dd.t})</td>
+                </tr>`;
+            });
+            html += `</tbody></table></div></div>`;
+        }
+
+        container.innerHTML = html;
+
+        // Sort hippodrome table
+        setupHippoSort(hippoEntries);
+    }
+
+    function compRow(label, nVal, fVal, total) {
+        const pn = pct(nVal, total), pf = pct(fVal, total);
+        const diff = pn - pf;
+        const diffStr = diff > 0 ? `+${diff}pp` : diff < 0 ? `${diff}pp` : '=';
+        const diffClass = diff > 0 ? 'win' : diff < 0 ? 'lose' : 'tie';
+        return `<tr>
+            <td>${label}</td>
+            <td><span class="pct-bar" style="width:${pn}px;background:var(--accent)"></span><span class="${cmpClass(pn,pf)}">${pn}%</span> <span style="opacity:0.5">(${nVal}/${total})</span></td>
+            <td><span class="pct-bar" style="width:${pf}px;background:var(--gold)"></span><span class="${cmpClass(pf,pn)}">${pf}%</span> <span style="opacity:0.5">(${fVal}/${total})</span></td>
+            <td class="${diffClass}">${diffStr}</td>
+        </tr>`;
+    }
+
+    function setupHippoSort(entries) {
+        const table = document.getElementById('hippo-table');
+        if (!table) return;
+        table.querySelectorAll('th[data-sort]').forEach(th => {
+            th.addEventListener('click', () => {
+                const key = th.dataset.sort;
+                const tbody = table.querySelector('tbody');
+                const rows = [...tbody.querySelectorAll('tr')];
+                const asc = th.classList.contains('sort-asc');
+                table.querySelectorAll('th').forEach(h => h.classList.remove('sort-asc', 'sort-desc'));
+                th.classList.add(asc ? 'sort-desc' : 'sort-asc');
+                rows.sort((a, b) => {
+                    const idx = [...th.parentNode.children].indexOf(th);
+                    const va = a.children[idx].textContent.trim();
+                    const vb = b.children[idx].textContent.trim();
+                    const na = parseFloat(va) || 0, nb = parseFloat(vb) || 0;
+                    if (key === 'name') return asc ? vb.localeCompare(va) : va.localeCompare(vb);
+                    return asc ? na - nb : nb - na;
+                });
+                rows.forEach(r => tbody.appendChild(r));
+            });
+        });
+    }
+
+    // ============================================================
+    // PRESETS
+    // ============================================================
+    function setPreset(p) {
+        const to = new Date();
+        const from = new Date();
+        document.querySelectorAll('.btn-preset').forEach(b => b.classList.remove('active'));
+        event.target.classList.add('active');
+
+        if (p === '7d') from.setDate(to.getDate() - 7);
+        else if (p === '30d') from.setDate(to.getDate() - 30);
+        else if (p === '90d') from.setDate(to.getDate() - 90);
+        else { from.setFullYear(2025); from.setMonth(10); from.setDate(1); } // Nov 2025
+
+        document.getElementById('date-from').value = fmt(from);
+        document.getElementById('date-to').value = fmt(to);
+        runAnalysis();
+    }
+
+    function fmt(d) {
+        return d.toISOString().split('T')[0];
+    }
+
+    // Init: set default dates
+    (function() {
+        const to = new Date();
+        const from = new Date();
+        from.setDate(to.getDate() - 30);
+        document.getElementById('date-from').value = fmt(from);
+        document.getElementById('date-to').value = fmt(to);
+    })();
+    </script>
+</body>
+</html>
