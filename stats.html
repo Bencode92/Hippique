@@ -859,6 +859,13 @@
         return w > 0 ? sc / w : 50;
     }
 
+    // Pré-calculer les populations une seule fois
+    let _pop = null;
+    function getPop(rd) {
+        if (!_pop) _pop = { chx25: Object.keys(rd.chx25).length||1, chx26: Object.keys(rd.chx26).length||1, jk25: Object.keys(rd.jk25).length||1, jk26: Object.keys(rd.jk26).length||1, cr25: Object.keys(rd.cr25).length||1, cr26: Object.keys(rd.cr26).length||1 };
+        return _pop;
+    }
+
     function computeLeviers(p, rd) {
         const nom = extractNom(p.cheval);
         const jk = (p.jockey || '').toUpperCase().trim();
@@ -869,60 +876,33 @@
         const nbC = parseInt(p.nb_courses) || 0;
         const nbV = parseInt(p.nb_victoires) || 0;
         const nbP = parseInt(p.nb_places) || 0;
-
         const ch25 = rd.chx25[nom], ch26 = rd.chx26[nom];
         const j25 = rd.jk25[jk], j26 = rd.jk26[jk];
         const cr25 = rd.cr25[jk], cr26 = rd.cr26[jk];
-        const pop = { chx25: Object.keys(rd.chx25).length || 1, chx26: Object.keys(rd.chx26).length || 1, jk25: Object.keys(rd.jk25).length || 1, jk26: Object.keys(rd.jk26).length || 1, cr25: Object.keys(rd.cr25).length || 1, cr26: Object.keys(rd.cr26).length || 1 };
-
-        const maxF = (a, b, field) => Math.max(a ? parseFloat(a[field] || 0) : 0, b ? parseFloat(b[field] || 0) : 0);
-        const rangScore = (item, population) => item ? 100 * (1 - (parseInt(item.Rang) - 1) / population) : 50;
-        const bestRang = (a, popA, b, popB) => { const sa = a ? rangScore(a, popA) : null; const sb = b ? rangScore(b, popB) : null; return sa !== null && sb !== null ? Math.max(sa, sb) : sa ?? sb ?? 50; };
-
+        const pop = getPop(rd);
+        const mxF = (a, b, f) => Math.max(a ? parseFloat(a[f]||0) : 0, b ? parseFloat(b[f]||0) : 0);
+        const rS = (it, pp) => it ? 100*(1-(parseInt(it.Rang)-1)/pp) : 50;
+        const bR = (a, pA, b, pB) => { const sa=a?rS(a,pA):null, sb=b?rS(b,pB):null; return sa!==null&&sb!==null?Math.max(sa,sb):sa??sb??50; };
         const forme = rd.forme[nom];
         const comboKey = jk + '|||' + (p.entraineur || p['entraîneur'] || '').toUpperCase().trim();
         const combo = rd.combo[comboKey];
-
         return {
-            'Cote (1/cote)': coteVal > 1 ? (1 / coteVal) * 100 : 50,
-            'Cote ref (1/ref)': coteRef > 1 ? (1 / coteRef) * 100 : 50,
-            'Valeur FG': valeur > 0 ? valeur : 50,
-            'Musique': parseMusique(p.musique),
-            'Gains (log)': gains > 0 ? Math.log10(gains) * 10 : 0,
-            'TauxV indiv': nbC >= 2 ? nbV / nbC * 100 : 8,
-            'TauxP indiv': nbC >= 2 ? nbP / nbC * 100 : 30,
-            'NbVictoires': nbV * 5,
-            'Ch TauxV': maxF(ch25, ch26, 'TauxVictoire') || 8,
-            'Ch TauxP': maxF(ch25, ch26, 'TauxPlace') || 30,
-            'Ch Rang': bestRang(ch25, pop.chx25, ch26, pop.chx26),
-            'Ch GainMoy': Math.max(ch25?.GainMoyen || 0, ch26?.GainMoyen || 0) > 0 ? Math.log10(Math.max(ch25?.GainMoyen || 0, ch26?.GainMoyen || 0)) * 15 : 0,
-            'Ch ScoreMixte': maxF(ch25, ch26, 'ScoreMixte'),
-            'Jk TauxV': maxF(j25, j26, 'TauxVictoire') || 8,
-            'Jk TauxP': maxF(j25, j26, 'TauxPlace') || 30,
-            'Jk Rang': bestRang(j25, pop.jk25, j26, pop.jk26),
-            'Jk ScoreMixte': maxF(j25, j26, 'ScoreMixte'),
-            'Jk GainMoy': Math.max(j25?.GainMoyen || 0, j26?.GainMoyen || 0) > 0 ? Math.log10(Math.max(j25?.GainMoyen || 0, j26?.GainMoyen || 0)) * 15 : 0,
-            'Cravache Rang': bestRang(cr25, pop.cr25, cr26, pop.cr26),
-            'Forme récente': forme ? forme.formeScore : 50,
-            'Combo Jk*Ent': combo && combo.courses >= 3 ? combo.tauxVictoire : 10,
+            'Cote (1/cote)': coteVal>1?(1/coteVal)*100:50, 'Cote ref': coteRef>1?(1/coteRef)*100:50,
+            'Valeur FG': valeur>0?valeur:50, 'Musique': parseMusique(p.musique),
+            'Gains (log)': gains>0?Math.log10(gains)*10:0,
+            'TauxV indiv': nbC>=2?nbV/nbC*100:8, 'TauxP indiv': nbC>=2?nbP/nbC*100:30,
+            'NbVictoires': nbV*5,
+            'Ch TauxV': mxF(ch25,ch26,'TauxVictoire')||8, 'Ch TauxP': mxF(ch25,ch26,'TauxPlace')||30,
+            'Ch Rang': bR(ch25,pop.chx25,ch26,pop.chx26),
+            'Ch GainMoy': Math.max(ch25?.GainMoyen||0,ch26?.GainMoyen||0)>0?Math.log10(Math.max(ch25?.GainMoyen||0,ch26?.GainMoyen||0))*15:0,
+            'Ch ScoreMixte': mxF(ch25,ch26,'ScoreMixte'),
+            'Jk TauxV': mxF(j25,j26,'TauxVictoire')||8, 'Jk TauxP': mxF(j25,j26,'TauxPlace')||30,
+            'Jk Rang': bR(j25,pop.jk25,j26,pop.jk26), 'Jk ScoreMixte': mxF(j25,j26,'ScoreMixte'),
+            'Jk GainMoy': Math.max(j25?.GainMoyen||0,j26?.GainMoyen||0)>0?Math.log10(Math.max(j25?.GainMoyen||0,j26?.GainMoyen||0))*15:0,
+            'Cravache Rang': bR(cr25,pop.cr25,cr26,pop.cr26),
+            'Forme récente': forme?forme.formeScore:50,
+            'Combo Jk*Ent': combo&&combo.courses>=3?combo.tauxVictoire:10,
         };
-    }
-
-    function evalLevier(courses, levierName, rd) {
-        let n1 = 0, f1 = 0, n2 = 0, n3 = 0, t = 0;
-        let coteSum = 0, wins = 0;
-        courses.forEach(c => {
-            const scored = c.course.participants.map(p => {
-                const lev = computeLeviers(p, rd);
-                return { ...p, _s: lev[levierName] || 0 };
-            }).sort((a, b) => b._s - a._s);
-            t++;
-            if (scored[0]?.arrivee === 1) { n1++; if (scored[0].cote > 1) { coteSum += scored[0].cote; wins++; } }
-            if (c.parCote[0]?.arrivee === 1) f1++;
-            if (scored.slice(0, 2).some(p => p.arrivee === 1)) n2++;
-            if (scored.slice(0, 3).some(p => p.arrivee === 1)) n3++;
-        });
-        return { n1, f1, n2, n3, t, pN1: t ? n1/t*100 : 0, pF1: t ? f1/t*100 : 0, pN2: t ? n2/t*100 : 0, pN3: t ? n3/t*100 : 0, avgCote: wins > 0 ? coteSum/wins : 0 };
     }
 
     async function runLeviers() {
@@ -936,48 +916,76 @@
 
         btn.disabled = true;
         btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Classements...';
+        container.innerHTML = '<div class="loading-overlay"><div class="spinner"></div><p>Chargement des classements...</p><p class="progress-text" id="lev-progress"></p></div>';
 
         try {
             const rd = await loadRankings();
-            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Calcul leviers...';
-            await new Promise(r => setTimeout(r, 50));
+            _pop = null; // reset pop cache
 
-            const levierNames = Object.keys(computeLeviers(loadedCourses[0].course.participants[0], rd));
+            // Phase 1 : pré-calculer tous les leviers par participant (une seule fois)
+            const progress = document.getElementById('lev-progress');
+            if (progress) progress.textContent = 'Pré-calcul des leviers...';
+            await new Promise(r => setTimeout(r, 30));
 
-            // Par catégorie de distance
-            const categories = { sprint: [], mile: [], middle: [], staying: [], tous: [] };
-            loadedCourses.forEach(c => { categories[c.dl].push(c); categories.tous.push(c); });
+            // Enrichir chaque course avec les leviers pré-calculés
+            const enriched = [];
+            for (let i = 0; i < loadedCourses.length; i++) {
+                const c = loadedCourses[i];
+                const parts = c.course.participants.map(p => ({ ...p, _lev: computeLeviers(p, rd) }));
+                enriched.push({ ...c, parts });
+                if (i % 50 === 0) {
+                    if (progress) progress.textContent = `Pré-calcul ${i+1}/${loadedCourses.length} courses...`;
+                    await new Promise(r => setTimeout(r, 0));
+                }
+            }
 
-            const catLabels = { tous: 'Toutes distances', sprint: 'Sprint (<1400m)', mile: 'Mile (1400-1700m)', middle: 'Middle (1700-2200m)', staying: 'Staying (>2200m)' };
+            // Phase 2 : évaluer chaque levier (juste des lookups, très rapide)
+            const levierNames = Object.keys(enriched[0].parts[0]._lev);
+            const categories = { tous: enriched, sprint: [], mile: [], middle: [], staying: [] };
+            enriched.forEach(c => { categories[c.dl].push(c); });
+
+            if (progress) progress.textContent = 'Évaluation des leviers...';
+            await new Promise(r => setTimeout(r, 0));
+
+            function evalLevier(courses, name) {
+                let n1=0, f1=0, n2=0, n3=0;
+                let coteSum=0, wins=0;
+                courses.forEach(c => {
+                    const sorted = [...c.parts].sort((a,b) => (b._lev[name]||0) - (a._lev[name]||0));
+                    if (sorted[0]?.arrivee===1) { n1++; if (sorted[0].cote>1) { coteSum+=sorted[0].cote; wins++; } }
+                    if (c.parCote[0]?.arrivee===1) f1++;
+                    if (sorted.slice(0,2).some(p=>p.arrivee===1)) n2++;
+                    if (sorted.slice(0,3).some(p=>p.arrivee===1)) n3++;
+                });
+                const t = courses.length;
+                return { n1, f1, n2, n3, t, pN1:t?n1/t*100:0, pF1:t?f1/t*100:0, pN2:t?n2/t*100:0, pN3:t?n3/t*100:0, avgCote:wins>0?coteSum/wins:0 };
+            }
+
+            const catLabels = { tous:'Toutes distances', sprint:'Sprint (<1400m)', mile:'Mile (1400-1700m)', middle:'Middle (1700-2200m)', staying:'Staying (>2200m)' };
 
             let html = `<div class="section"><h2><i class="fas fa-sliders-h"></i> Analyse Leviers — Quel critère prédit le mieux le gagnant ?</h2>`;
             html += `<p style="opacity:0.6;font-size:0.82rem;margin-bottom:1rem">Chaque levier est testé seul : on classe les partants par ce critère et on regarde si le #1 gagne. Comparé au favori cote.</p>`;
 
-            // Tabs
             html += `<div class="tab-bar">`;
-            Object.entries(catLabels).forEach(([k, label], i) => {
+            let firstTab = true;
+            Object.entries(catLabels).forEach(([k, label]) => {
                 if (categories[k].length < 5) return;
-                html += `<div class="tab-item ${i === 0 ? 'active' : ''}" onclick="showLevierTab('${k}', this)">${label} (${categories[k].length})</div>`;
+                html += `<div class="tab-item ${firstTab ? 'active' : ''}" onclick="showLevierTab('${k}', this)">${label} (${categories[k].length})</div>`;
+                firstTab = false;
             });
             html += `</div>`;
 
-            // Content per tab
-            Object.entries(catLabels).forEach(([cat, label], i) => {
+            firstTab = true;
+            Object.entries(catLabels).forEach(([cat]) => {
                 const courses = categories[cat];
                 if (courses.length < 5) return;
 
-                const results = levierNames.map(name => {
-                    const r = evalLevier(courses, name, rd);
-                    return { name, ...r };
-                }).sort((a, b) => b.pN1 - a.pN1);
-
-                html += `<div class="levier-content" id="levier-${cat}" style="display:${i === 0 ? '' : 'none'}">`;
-                html += `<table class="levier-table"><thead><tr>
-                    <th>#</th><th>Levier</th><th>Top1</th><th style="width:120px"></th><th>vs Fav</th><th>Top2</th><th>Top3</th><th>Cote moy</th>
-                </tr></thead><tbody>`;
-
-                const favP = results[0].pF1; // all same
+                const results = levierNames.map(name => ({ name, ...evalLevier(courses, name) })).sort((a,b) => b.pN1 - a.pN1);
+                const favP = results[0].pF1;
                 const maxP = Math.max(...results.map(r => r.pN1), favP);
+
+                html += `<div class="levier-content" id="levier-${cat}" style="display:${firstTab ? '' : 'none'}">`;
+                html += `<table class="levier-table"><thead><tr><th>#</th><th>Levier</th><th>Top1</th><th style="width:120px"></th><th>vs Fav</th><th>Top2</th><th>Top3</th><th>Cote moy</th></tr></thead><tbody>`;
 
                 results.forEach((r, idx) => {
                     const diff = r.pN1 - favP;
@@ -985,33 +993,16 @@
                     const cls = diff > 0 ? 'win' : diff < 0 ? 'lose' : 'tie';
                     const barW = maxP > 0 ? Math.round(r.pN1 / maxP * 100) : 0;
                     const barWF = maxP > 0 ? Math.round(favP / maxP * 100) : 0;
-                    const medal = idx === 0 ? '&#129351;' : idx === 1 ? '&#129352;' : idx === 2 ? '&#129353;' : String(idx + 1);
-
-                    html += `<tr>
-                        <td>${medal}</td>
-                        <td><strong>${r.name}</strong></td>
+                    const medal = idx === 0 ? '&#129351;' : idx === 1 ? '&#129352;' : idx === 2 ? '&#129353;' : String(idx+1);
+                    html += `<tr><td>${medal}</td><td><strong>${r.name}</strong></td>
                         <td class="${cls}" style="font-size:1rem"><strong>${r.pN1.toFixed(0)}%</strong> <span style="opacity:0.5;font-size:0.75rem">(${r.n1}/${r.t})</span></td>
-                        <td>
-                            <div style="position:relative;height:14px">
-                                <span class="levier-bar" style="width:${barW}%;background:var(--accent);position:absolute;top:0"></span>
-                                <span class="levier-bar" style="width:${barWF}%;background:var(--gold);opacity:0.4;position:absolute;top:8px;height:4px"></span>
-                            </div>
-                        </td>
-                        <td class="${cls}">${diffStr}</td>
-                        <td>${r.pN2.toFixed(0)}%</td>
-                        <td>${r.pN3.toFixed(0)}%</td>
-                        <td>${r.avgCote > 0 ? r.avgCote.toFixed(1) : '-'}</td>
-                    </tr>`;
+                        <td><div style="position:relative;height:14px"><span class="levier-bar" style="width:${barW}%;background:var(--accent);position:absolute;top:0"></span><span class="levier-bar" style="width:${barWF}%;background:var(--gold);opacity:0.4;position:absolute;top:8px;height:4px"></span></div></td>
+                        <td class="${cls}">${diffStr}</td><td>${r.pN2.toFixed(0)}%</td><td>${r.pN3.toFixed(0)}%</td><td>${r.avgCote > 0 ? r.avgCote.toFixed(1) : '-'}</td></tr>`;
                 });
 
-                // Ligne favori
-                html += `<tr style="border-top:2px solid rgba(233,209,140,0.2)">
-                    <td>&#9733;</td><td><strong style="color:var(--gold)">Favori cote (baseline)</strong></td>
-                    <td style="color:var(--gold);font-size:1rem"><strong>${favP.toFixed(0)}%</strong></td>
-                    <td></td><td>-</td><td>-</td><td>-</td><td>-</td>
-                </tr>`;
-
+                html += `<tr style="border-top:2px solid rgba(233,209,140,0.2)"><td>&#9733;</td><td><strong style="color:var(--gold)">Favori cote (baseline)</strong></td><td style="color:var(--gold);font-size:1rem"><strong>${favP.toFixed(0)}%</strong></td><td></td><td>-</td><td>-</td><td>-</td><td>-</td></tr>`;
                 html += `</tbody></table></div>`;
+                firstTab = false;
             });
 
             html += `</div>`;
