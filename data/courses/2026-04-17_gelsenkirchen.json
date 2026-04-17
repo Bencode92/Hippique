@@ -1,7 +1,7 @@
 {
   "hippodrome": "GELSENKIRCHEN",
   "type_reunion": "ATTELE",
-  "date_extraction": "2026-04-17T13:50:11.437808",
+  "date_extraction": "2026-04-17T14:20:14.518700",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/17042026/R5",
   "courses": [
     {
@@ -30,7 +30,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 22.0,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -71,7 +73,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 2.0,
+          "cote": 2.2,
           "cote_tendance": "",
           "cote_reference": 2.8
         },
@@ -114,7 +116,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 18.0,
+          "cote": 11.0,
           "cote_tendance": "",
           "cote_reference": 11.0
         },
@@ -137,7 +139,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 4.6,
+          "cote": 3.8,
           "cote_tendance": "",
           "cote_reference": 3.8
         },
@@ -160,7 +162,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 4.6,
+          "cote": 5.7,
           "cote_tendance": "",
           "cote_reference": 3.8
         },
@@ -203,7 +205,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 18.0,
+          "cote": 22.0,
           "cote_tendance": "",
           "cote_reference": 11.0
         },
@@ -226,7 +228,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 18.0,
+          "cote": 22.0,
           "cote_tendance": "",
           "cote_reference": 11.0
         }
@@ -279,8 +281,8 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 7.4,
-          "cote_tendance": "",
+          "cote": 7.0,
+          "cote_tendance": "+",
           "cote_reference": 6.1
         },
         {
@@ -302,8 +304,8 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 4.9,
-          "cote_tendance": "",
+          "cote": 5.2,
+          "cote_tendance": "+",
           "cote_reference": 6.1
         },
         {
@@ -385,8 +387,8 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 14.0,
-          "cote_tendance": "",
+          "cote": 21.0,
+          "cote_tendance": "+",
           "cote_reference": 12.0
         },
         {
@@ -408,8 +410,8 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 7.4,
-          "cote_tendance": "",
+          "cote": 3.0,
+          "cote_tendance": "-",
           "cote_reference": 6.1
         },
         {
@@ -431,8 +433,8 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 2.1,
-          "cote_tendance": "",
+          "cote": 3.0,
+          "cote_tendance": "+",
           "cote_reference": 1.7
         }
       ]
