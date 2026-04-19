@@ -857,7 +857,8 @@
         try {
             const ghResp = await fetch('https://api.github.com/repos/bencode92/Hippique/contents/data/rankings');
             if (ghResp.ok) {
-                const folders = (await ghResp.json()).filter(f => f.type === 'dir' && /^\d{4}-\d{2}-\d{2}$/.test(f.name)).sort((a,b) => a.name.localeCompare(b.name));
+                // Accepte 2026-04-19 (ancien format) et 2026-04-19_09h30 (nouveau)
+                const folders = (await ghResp.json()).filter(f => f.type === 'dir' && /^\d{4}-\d{2}-\d{2}/.test(f.name)).sort((a,b) => a.name.localeCompare(b.name));
 
                 for (const folder of folders) {
                     const base = `${RAW}rankings/${folder.name}/`;
@@ -882,14 +883,17 @@
         return rankingData;
     }
 
-    // Trouver le snapshot 2026 le plus récent AVANT une date donnée
-    function getSnapshot26(courseDate) {
+    // Trouver le snapshot 2026 le plus récent AVANT une date/heure donnée
+    // courseDate = "2026-04-19", courseTime = "14h30" (optionnel)
+    function getSnapshot26(courseDate, courseTime) {
         if (!courseDate || !snapshots26.length) return null;
-        // Chercher le dernier snapshot dont la date est < courseDate
+        // Construire un comparable : "2026-04-19_14h30" ou "2026-04-19"
+        const courseKey = courseTime ? `${courseDate}_${courseTime}` : courseDate;
         let best = null;
         for (const s of snapshots26) {
-            if (s.date < courseDate) best = s;
-            else break; // trié par date
+            // s.date peut être "2026-04-19" ou "2026-04-19_09h30"
+            if (s.date < courseKey) best = s;
+            else break;
         }
         return best;
     }

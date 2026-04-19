@@ -287,11 +287,15 @@ async function processCategory(category) {
     };
     
     // Générer les noms de fichiers
-    const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
+    const now = new Date();
+    const dateStr = now.toISOString().split('T')[0]; // YYYY-MM-DD
+    const hh = String(now.getUTCHours()).padStart(2, '0');
+    const mm = String(now.getUTCMinutes()).padStart(2, '0');
+    const snapshotName = `${dateStr}_${hh}h${mm}`; // ex: 2026-04-19_09h30
     const latestFile = path.join(OUTPUT_DIR, `${category.id}_ponderated_latest.json`);
 
-    // Snapshot historique dans data/rankings/YYYY-MM-DD/
-    const snapshotDir = path.join(OUTPUT_DIR, 'rankings', today);
+    // Snapshot historique dans data/rankings/YYYY-MM-DD_HHhMM/
+    const snapshotDir = path.join(OUTPUT_DIR, 'rankings', snapshotName);
     await fs.mkdir(snapshotDir, { recursive: true });
     const snapshotFile = path.join(snapshotDir, `${category.id}.json`);
 
