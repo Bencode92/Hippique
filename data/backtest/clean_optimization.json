@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-18T22:44:04.190Z",
+  "date": "2026-04-19T22:45:23.495Z",
   "method": "ZERO_LEAKAGE",
   "allResults": [
     {
@@ -10,10 +10,10 @@
         "corde": 0.2
       },
       "temp": 8,
-      "total": 293,
-      "top1": 28,
-      "top3": 80.5,
-      "ll": 2.269
+      "total": 300,
+      "top1": 29.3,
+      "top3": 80.7,
+      "ll": 2.247
     },
     {
       "name": "WALK_VP",
@@ -23,23 +23,10 @@
         "walkJockeyV": 0.5
       },
       "temp": 8,
-      "total": 293,
-      "top1": 19.5,
-      "top3": 80.5,
-      "ll": 2.284
-    },
-    {
-      "name": "WALK+COMBO",
-      "weights": {
-        "walkChevalV": 0.7,
-        "walkJockeyV": 0.3,
-        "walkCombo": 0.3
-      },
-      "temp": 8,
-      "total": 293,
-      "top1": 18.8,
-      "top3": 79.2,
-      "ll": 2.293
+      "total": 300,
+      "top1": 19.7,
+      "top3": 80,
+      "ll": 2.272
     },
     {
       "name": "WALK+FORME t12",
@@ -50,27 +37,37 @@
         "walkFormeJockey": 0.2
       },
       "temp": 12,
-      "total": 293,
-      "top1": 18.8,
-      "top3": 79.2,
-      "ll": 2.34
+      "total": 300,
+      "top1": 19.3,
+      "top3": 80.3,
+      "ll": 2.322
     },
     {
-      "name": "ALL_CLEAN",
+      "name": "WALK+COMBO",
       "weights": {
-        "walkChevalV": 0.5,
-        "walkChevalP": 0.2,
+        "walkChevalV": 0.7,
         "walkJockeyV": 0.3,
-        "walkFormeCheval": 0.4,
-        "walkFormeJockey": 0.1,
-        "walkDistCheval": 0.2,
-        "walkCombo": 0.1
+        "walkCombo": 0.3
       },
       "temp": 8,
-      "total": 293,
-      "top1": 18.1,
-      "top3": 80.9,
-      "ll": 2.448
+      "total": 300,
+      "top1": 19,
+      "top3": 78.3,
+      "ll": 2.281
+    },
+    {
+      "name": "WALK+FORME",
+      "weights": {
+        "walkChevalV": 0.7,
+        "walkJockeyV": 0.3,
+        "walkFormeCheval": 0.5,
+        "walkFormeJockey": 0.2
+      },
+      "temp": 8,
+      "total": 300,
+      "top1": 19.3,
+      "top3": 80.3,
+      "ll": 2.549
     }
   ],
   "bestConfig": {
@@ -81,19 +78,19 @@
       "corde": 0.2
     },
     "temp": 8,
-    "total": 293,
-    "top1": 28,
-    "top3": 80.5,
-    "ll": 2.269
+    "total": 300,
+    "top1": 29.3,
+    "top3": 80.7,
+    "ll": 2.247
   },
   "testResult": {
-    "total": 293,
-    "top1": 31.7,
-    "top3": 82.6,
-    "ll": 2.058
+    "total": 300,
+    "top1": 31,
+    "top3": 82.7,
+    "ll": 2.048
   },
   "baseline": {
     "top1": 10,
-    "ll": 2.298
+    "ll": 2.302
   }
 }
