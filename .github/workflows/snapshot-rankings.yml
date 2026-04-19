@@ -1,0 +1,54 @@
+name: Snapshot Rankings
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Créer le snapshot horodaté
+        run: |
+          # Heure UTC
+          STAMP=$(date -u +"%Y-%m-%d_%Hh%M")
+          DIR="data/rankings/${STAMP}"
+          mkdir -p "$DIR"
+
+          echo "📸 Snapshot: $DIR"
+
+          # Copier tous les *_ponderated_latest.json
+          for f in data/*_ponderated_latest.json; do
+            if [ -f "$f" ]; then
+              # Extraire le nom de catégorie : chevaux_2025_ponderated_latest.json → chevaux_2025
+              NAME=$(basename "$f" | sed 's/_ponderated_latest\.json//')
+              cp "$f" "$DIR/${NAME}.json"
+              echo "  ✅ ${NAME}.json"
+            fi
+          done
+
+          echo ""
+          echo "=== Contenu du snapshot ==="
+          ls -la "$DIR/"
+
+      - name: Commit et push
+        run: |
+          STAMP=$(date -u +"%Y-%m-%d_%Hh%M")
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action - Snapshot"
+          git add data/rankings/
+          if git diff --cached --quiet; then
+            echo "Aucun changement"
+          else
+            git commit -m "📸 Snapshot rankings ${STAMP}"
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
