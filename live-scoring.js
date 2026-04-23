@@ -563,7 +563,17 @@ _log(`${medal}${String(p['n°'] || '').padStart(2)} ${(p.cheval || '').slice(0, 
         const rng = maxS - minS || 1;
         levierResults.forEach(r => { r._levNorm = ((r._levScore - minS) / rng * 80 + 10).toFixed(1); });
 
-_log(`\n🔬 CLASSEMENT LEVIERS (${levierResults[0]._levLabel})`);
+        // Vérifier fiabilité : formule basée sur combien de courses ?
+        const formulas = loadBestFormulas();
+        const formula = formulas[distBucket];
+        const nbCoursesFormula = formula?.courses || 0;
+        const fiable = nbCoursesFormula >= 30;
+
+        if (fiable) {
+_log(`\n🔬 CLASSEMENT LEVIERS (${levierResults[0]._levLabel}) — ${nbCoursesFormula} courses`);
+        } else {
+_log(`\n⚠️  CLASSEMENT LEVIERS (${levierResults[0]._levLabel}) — ${nbCoursesFormula} courses (< 30 = PEU FIABLE)`);
+        }
 _log(`${'#'.padStart(3)} ${'Cheval'.padEnd(22)} ${'Cote'.padStart(5)} ${'Score'.padStart(6)}`);
 _log('─'.repeat(60));
         levierResults.forEach((p, i) => {
@@ -576,7 +586,7 @@ _log(`${medal}${String(p['n°'] || '').padStart(2)} ${(p.cheval || '').slice(0, 
         const top1Modele = sorted[0]?.participant?.['n°'];
         const top1Levier = levierResults[0]?.['n°'];
         if (top1Modele !== top1Levier) {
-_log(`\n⚡ Top1 différent : Modèle=#${top1Modele} vs Leviers=#${top1Levier}`);
+_log(`\n⚡ Top1 différent : Modèle=#${top1Modele} vs Leviers=#${top1Levier}${!fiable ? ' (levier peu fiable, préférer Modèle)' : ''}`);
         } else {
 _log(`\n🤝 Top1 identique : #${top1Modele} (les 2 classements concordent)`);
         }
