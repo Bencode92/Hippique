@@ -411,8 +411,12 @@ function getLevierScore(participant, distBucket, ld) {
 
   // Utiliser la formule SEULEMENT si basée sur assez de courses (min 80)
   // et si le top1 n'est pas suspect (>90% = probable overfitting)
-  // Accepter seulement si : 100+ courses ET top1 < 50% (réaliste, pas d'overfitting)
-  if (formula && formula.leviers && formula.poids && formula.courses >= 100 && formula.top1 < 50) {
+  // Accepter si : 50+ courses ET top1 réaliste
+  // Seuil configurable : node live-scoring.js --seuil 90 longchamp C1
+  const seuilArg = process.argv.find(a => a.startsWith('--seuil'));
+  const seuilIdx = process.argv.indexOf('--seuil');
+  const seuilTop1 = parseInt(seuilArg?.split('=')[1] || (seuilIdx >= 0 ? process.argv[seuilIdx + 1] : null)) || 50;
+  if (formula && formula.leviers && formula.poids && formula.courses >= 50 && formula.top1 <= seuilTop1) {
     let score = 0;
     const label = formula.leviers.map((l, i) => `${l.split(' ')[0]}×${(formula.poids[i]*100).toFixed(0)}%`).join(' + ');
     formula.leviers.forEach((lev, i) => {
