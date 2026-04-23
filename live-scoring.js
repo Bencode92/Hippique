@@ -205,22 +205,18 @@ function extractNomCheval(chevalStr) {
 let bestFormulas = null;
 function loadBestFormulas() {
   if (bestFormulas) return bestFormulas;
-  // Essayer de lire le fichier existant
   const filePath = path.join(__dirname, 'data', 'best_formulas.json');
   try {
-    const stat = fs.statSync(filePath);
-    const age = Date.now() - stat.mtimeMs;
-    if (age < 24 * 60 * 60 * 1000) { // moins de 24h
-      bestFormulas = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-      _log('📋 Formules leviers chargées (best_formulas.json)');
-      return bestFormulas;
-    }
+    bestFormulas = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    const keys = Object.keys(bestFormulas);
+    _log(`📋 Formules leviers: ${keys.map(k => k + '=' + (bestFormulas[k].leviers||[]).join('+')).join(' | ')}`);
+    return bestFormulas;
   } catch {}
-  // Sinon, calculer automatiquement depuis les courses historiques
-  _log('🔬 Calcul des meilleures formules par distance...');
+  // Pas de fichier → calculer (fallback)
+  _log('🔬 Pas de best_formulas.json — calcul automatique...');
+  _log('   💡 Pour de meilleurs résultats : page Stats → Analyse Leviers → Copier commande terminal');
   bestFormulas = computeBestFormulasFromHistory();
-  // Sauvegarder pour la prochaine fois
-  try { fs.writeFileSync(filePath, JSON.stringify(bestFormulas, null, 2)); _log('💾 Sauvegardé dans data/best_formulas.json'); } catch {}
+  try { fs.writeFileSync(filePath, JSON.stringify(bestFormulas, null, 2)); _log('💾 Sauvegardé'); } catch {}
   return bestFormulas;
 }
 

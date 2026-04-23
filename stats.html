@@ -1330,18 +1330,27 @@
                 }
             });
 
-            // Afficher un bouton pour copier les formules
+            // Afficher les formules + bouton copie rapide
+            const jsonStr = JSON.stringify(bestFormulas, null, 2);
+            const cmdStr = `cat > ~/Hippique/data/best_formulas.json << 'FORMULAS'\n${jsonStr}\nFORMULAS`;
+
             html += `<div class="section" style="margin-top:1rem">
-                <h2><i class="fas fa-download"></i> Formules optimales pour live-scoring</h2>
-                <p style="opacity:0.6;font-size:0.82rem;margin-bottom:0.8rem">Copiées automatiquement dans data/best_formulas.json — utilisées par <code>node live-scoring.js</code></p>
-                <pre style="background:rgba(0,0,0,0.3);padding:1rem;border-radius:8px;font-size:0.8rem;overflow-x:auto">${JSON.stringify(bestFormulas, null, 2)}</pre>
-                <button class="btn-filter" style="margin-top:0.5rem" onclick="downloadFormulas()">
-                    <i class="fas fa-save"></i> Télécharger best_formulas.json
-                </button>
+                <h2><i class="fas fa-terminal"></i> Formules pour live-scoring</h2>
+                <p style="opacity:0.6;font-size:0.82rem;margin-bottom:0.8rem">Ces formules seront utilisées par <code>node live-scoring.js</code></p>
+                <pre style="background:rgba(0,0,0,0.3);padding:1rem;border-radius:8px;font-size:0.8rem;overflow-x:auto">${jsonStr}</pre>
+                <div style="display:flex;gap:8px;margin-top:0.5rem;flex-wrap:wrap">
+                    <button class="btn-filter" onclick="copyCmd()" id="btn-copy-cmd">
+                        <i class="fas fa-clipboard"></i> Copier la commande terminal
+                    </button>
+                    <button class="btn-filter" style="background:var(--accent)" onclick="downloadFormulas()">
+                        <i class="fas fa-download"></i> Télécharger .json
+                    </button>
+                </div>
+                <p id="copy-hint" style="display:none;color:var(--green);font-size:0.8rem;margin-top:0.5rem">✅ Commande copiée ! Colle-la dans ton terminal (cd ~/Hippique puis coller)</p>
             </div>`;
 
-            // Stocker pour le download
             window._bestFormulas = bestFormulas;
+            window._cmdStr = cmdStr;
 
             container.innerHTML = html;
 
@@ -1352,6 +1361,17 @@
 
         btn.disabled = false;
         btn.innerHTML = '<i class="fas fa-sliders-h"></i> Analyse Leviers';
+    }
+
+    function copyCmd() {
+        if (!window._cmdStr) return;
+        navigator.clipboard.writeText(window._cmdStr).then(() => {
+            document.getElementById('btn-copy-cmd').innerHTML = '<i class="fas fa-check"></i> Copié !';
+            document.getElementById('copy-hint').style.display = '';
+            setTimeout(() => {
+                document.getElementById('btn-copy-cmd').innerHTML = '<i class="fas fa-clipboard"></i> Copier la commande terminal';
+            }, 3000);
+        });
     }
 
     function downloadFormulas() {
