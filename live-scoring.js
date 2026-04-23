@@ -415,7 +415,7 @@ function getLevierScore(participant, distBucket, ld) {
   // Seuil configurable : node live-scoring.js --seuil 90 longchamp C1
   const seuilArg = process.argv.find(a => a.startsWith('--seuil'));
   const seuilIdx = process.argv.indexOf('--seuil');
-  const seuilTop1 = parseInt(seuilArg?.split('=')[1] || (seuilIdx >= 0 ? process.argv[seuilIdx + 1] : null)) || 50;
+  const seuilTop1 = parseInt(seuilArg?.split('=')[1] || (seuilIdx >= 0 ? process.argv[seuilIdx + 1] : null)) || 100;
   if (formula && formula.leviers && formula.poids && formula.courses >= 50 && formula.top1 <= seuilTop1) {
     let score = 0;
     const label = formula.leviers.map((l, i) => `${l.split(' ')[0]}×${(formula.poids[i]*100).toFixed(0)}%`).join(' + ');
