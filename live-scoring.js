@@ -411,7 +411,8 @@ function getLevierScore(participant, distBucket, ld) {
 
   // Utiliser la formule SEULEMENT si basée sur assez de courses (min 80)
   // et si le top1 n'est pas suspect (>90% = probable overfitting)
-  if (formula && formula.leviers && formula.poids && formula.courses >= 80 && formula.top1 < 90) {
+  // Accepter seulement si : 100+ courses ET top1 < 50% (réaliste, pas d'overfitting)
+  if (formula && formula.leviers && formula.poids && formula.courses >= 100 && formula.top1 < 50) {
     let score = 0;
     const label = formula.leviers.map((l, i) => `${l.split(' ')[0]}×${(formula.poids[i]*100).toFixed(0)}%`).join(' + ');
     formula.leviers.forEach((lev, i) => {
