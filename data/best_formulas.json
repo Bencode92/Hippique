@@ -1,13 +1,15 @@
 {
   "sprint": {
     "leviers": [
-      "Ch TauxV"
+      "Ch TauxV",
+      "Ch Rang"
     ],
     "poids": [
-      1
+      0.3,
+      0.7
     ],
-    "top1": 78.04878048780488,
-    "courses": 123
+    "top1": 76.16279069767442,
+    "courses": 172
   },
   "mile": {
     "leviers": [
@@ -16,8 +18,8 @@
     "poids": [
       1
     ],
-    "top1": 63.31360946745562,
-    "courses": 169
+    "top1": 50.46296296296296,
+    "courses": 216
   },
   "middle": {
     "leviers": [
@@ -26,8 +28,8 @@
     "poids": [
       1
     ],
-    "top1": 61.93181818181818,
-    "courses": 176
+    "top1": 56.132075471698116,
+    "courses": 212
   },
   "staying": {
     "leviers": [
@@ -36,7 +38,7 @@
     "poids": [
       1
     ],
-    "top1": 69.56521739130434,
-    "courses": 161
+    "top1": 65.5367231638418,
+    "courses": 177
   }
 }

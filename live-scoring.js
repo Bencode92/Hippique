@@ -229,19 +229,41 @@ function computeBestFormulasFromHistory() {
   let files;
   try { files = fs.readdirSync(dir).filter(f => f.endsWith('.json')).sort(); } catch { return {}; }
 
-  const ld = getLevierData();
+  const ldFull = getLevierData();
   const buckets = { sprint: [], mile: [], middle: [], staying: [] };
-  // NbVictoires et TauxV/TauxP indiv exclus : leakage circulaire
-  // (un cheval qui a gagné dans les fichiers → corrèle avec ses propres victoires)
   const levierNames = ['Cote (1/cote)', 'Cote ref', 'Dérive cote', 'Valeur FG', 'Musique',
     'Ch TauxV', 'Ch TauxP', 'Ch Rang', 'Ch GainMoy', 'Ch ScoreMixte',
     'Jk TauxV', 'Jk TauxP', 'Jk Rang', 'Jk ScoreMixte', 'Jk GainMoy'];
 
-  // Charger les courses terminées
+  // Charger les snapshots datés pour anti-leakage
+  const snapshotsDir = path.join(__dirname, 'data', 'rankings');
+  const snapshots = [];
+  try {
+    const dirs = fs.readdirSync(snapshotsDir).filter(d => /^\d{4}-\d{2}-\d{2}/.test(d)).sort();
+    dirs.forEach(d => {
+      try {
+        const chx = loadLocalJSON(`rankings/${d}/chevaux.json`);
+        const jk = loadLocalJSON(`rankings/${d}/jockeys.json`);
+        if (chx || jk) snapshots.push({ date: d, chx: buildLookup(chx, 'Nom'), jk: buildLookup(jk, 'NomPostal') });
+      } catch {}
+    });
+  } catch {}
+
+  function getSnapshotBefore(courseDate) {
+    let best = null;
+    for (const s of snapshots) { if (s.date < courseDate) best = s; else break; }
+    return best;
+  }
+
+  const today = new Date().toISOString().split('T')[0];
+
+  // Charger les courses terminées — anti-leakage : 2025 only pour passé
   files.forEach(f => {
     try {
       const data = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
       if (data.type_reunion && data.type_reunion.toLowerCase() !== 'plat') return;
+      const fileDate = (f.match(/^(\d{4}-\d{2}-\d{2})/) || [])[1] || '';
+
       (data.courses || []).forEach(c => {
         if (c.type && c.type.toLowerCase() !== 'plat') return;
         if (!c.arrivee_definitive || !c.participants?.some(p => p.arrivee === 1)) return;
@@ -250,7 +272,21 @@ function computeBestFormulasFromHistory() {
         const avecCotes = c.participants.filter(p => p.cote > 1);
         const parCote = [...avecCotes].sort((a, b) => a.cote - b.cote);
         if (parCote.length < 2) return;
-        // Pré-calculer les leviers pour chaque participant
+
+        // Créer un ld spécifique à cette course (anti-leakage)
+        const isFuture = !fileDate || fileDate >= today;
+        let ld;
+        if (isFuture) {
+          ld = ldFull; // course future → latest OK
+        } else {
+          // Course passée → 2025 only + snapshot 2026 d'avant la course
+          const snap = getSnapshotBefore(fileDate);
+          ld = {
+            jk25: ldFull.jk25, jk26: snap ? snap.jk : {},
+            chx25: ldFull.chx25, chx26: snap ? snap.chx : {},
+          };
+        }
+
         const enriched = c.participants.map(p => {
           const levs = {};
           levierNames.forEach(name => { levs[name] = getLevierValue(name, p, ld); });
