@@ -896,12 +896,11 @@
     // courseDate = "2026-04-19", courseTime = "14h30" (optionnel)
     function getSnapshot26(courseDate, courseTime) {
         if (!courseDate || !snapshots26.length) return null;
-        // Construire un comparable : "2026-04-19_14h30" ou "2026-04-19"
-        const courseKey = courseTime ? `${courseDate}_${courseTime}` : courseDate;
+        // Snapshot du MÊME JOUR ou AVANT = OK (pris le matin, course l'après-midi)
         let best = null;
         for (const s of snapshots26) {
-            // s.date peut être "2026-04-19" ou "2026-04-19_09h30"
-            if (s.date < courseKey) best = s;
+            const snapDate = s.date.slice(0, 10); // "2026-04-16_09h00" → "2026-04-16"
+            if (snapDate <= courseDate) best = s;
             else break;
         }
         return best;
