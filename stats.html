@@ -476,6 +476,7 @@
 
             // Stocker les courses pour l'analyse leviers
             loadedCourses = [];
+            loadedCoursesAVenir = [];
 
             const BATCH = 15;
             for (let i = 0; i < filtered.length; i += BATCH) {
@@ -493,12 +494,22 @@
                     (data.courses || []).forEach(course => {
                         if (course.type && course.type.toLowerCase() !== 'plat') return;
                         if (!course.participants || !course.participants.length) return;
-                        if (!course.arrivee_definitive) return;
-                        if (!course.participants.some(p => p.arrivee === 1)) return;
 
                         const dist = parseInt(String(course.distance || '').replace(/[^0-9]/g, '')) || 0;
                         const dl = distLabel(dist);
                         if (typeFilter && dl !== typeFilter) return;
+
+                        const isTerminee = course.arrivee_definitive && course.participants.some(p => p.arrivee === 1);
+
+                        if (!isTerminee) {
+                            // Course non terminée → stocker pour preview leviers (pas pour stats)
+                            const avecCotes = course.participants.filter(p => p.cote > 1);
+                            const parCote = [...avecCotes].sort((a, b) => a.cote - b.cote);
+                            if (parCote.length >= 2) {
+                                loadedCoursesAVenir.push({ course, hippo, fileDate, dist, dl, parCote });
+                            }
+                            return;
+                        }
 
                         const r = scoreCourse(course);
                         if (!r || !r.scored.length || !r.parCote.length) return;
@@ -821,6 +832,7 @@
     // ANALYSE LEVIERS
     // ============================================================
     let loadedCourses = [];
+    let loadedCoursesAVenir = [];
     let rankingData = null;
 
     const RAW = 'https://raw.githubusercontent.com/Bencode92/Hippique/main/data/';
@@ -1327,6 +1339,72 @@
             });
 
             html += `</div>`;
+
+            // Courses à venir — preview levier
+            if (loadedCoursesAVenir.length > 0) {
+                html += `<div class="section" style="margin-top:1.5rem">
+                    <h2><i class="fas fa-clock"></i> Courses à venir — Classement Leviers (${loadedCoursesAVenir.length} courses)</h2>`;
+
+                // Enrichir avec leviers
+                const rd = await loadRankings();
+                loadedCoursesAVenir.forEach((c, ci) => {
+                    const distB = c.dl;
+                    // Trouver le meilleur levier pour cette distance
+                    const catCourses = enriched.filter(e => e.dl === distB);
+                    let bestLevName = 'Cote (1/cote)';
+                    if (catCourses.length >= 3) {
+                        const soloR = levierNames.map(name => {
+                            let n1 = 0;
+                            catCourses.forEach(cc => {
+                                const s = [...cc.parts].sort((a,b) => (b._lev[name]||0) - (a._lev[name]||0));
+                                if (s[0]?.arrivee === 1) n1++;
+                            });
+                            return { name, pN1: n1/catCourses.length*100 };
+                        }).sort((a,b) => b.pN1 - a.pN1);
+                        bestLevName = soloR[0].name;
+                    }
+
+                    // Calculer les leviers pour les participants de cette course
+                    const parts = c.course.participants.map(p => ({
+                        ...p,
+                        _lev: computeLeviers(p, rd, c.fileDate)
+                    }));
+                    const sorted = [...parts].sort((a,b) => (b._lev[bestLevName]||0) - (a._lev[bestLevName]||0));
+                    const scrs = sorted.map(p => p._lev[bestLevName]||0);
+                    const mnS = Math.min(...scrs), mxS = Math.max(...scrs), rnS = mxS - mnS || 1;
+                    sorted.forEach(p => { p._norm = ((p._lev[bestLevName]||0) - mnS) / rnS * 80 + 10; });
+
+                    const distLbl = c.dist < 1400 ? 'Sprint' : c.dist < 1700 ? 'Mile' : c.dist < 2200 ? 'Middle' : 'Staying';
+
+                    html += `<div style="margin-bottom:1rem">
+                        <h3 style="color:var(--accent);font-size:0.9rem;cursor:pointer;margin:0.8rem 0 0.3rem" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'':'none'">
+                            ${c.course.horaire || ''} — ${c.course.nom || ''} — ${c.dist}m (${distLbl}) — ${c.hippo} — ${c.course.participants.length} partants
+                            <span style="opacity:0.4;font-size:0.7rem">▼ levier: ${bestLevName}</span>
+                        </h3>
+                        <div style="display:none;overflow-x:auto">
+                        <table style="width:100%;font-size:0.78rem;border-collapse:collapse">
+                            <thead><tr style="opacity:0.6">
+                                <th style="text-align:left;padding:3px 8px">Rang</th>
+                                <th style="text-align:left;padding:3px 8px">Cheval</th>
+                                <th style="text-align:left;padding:3px 8px">Jockey</th>
+                                <th style="text-align:right;padding:3px 8px">Cote</th>
+                                <th style="text-align:right;padding:3px 8px">Score</th>
+                            </tr></thead><tbody>`;
+                    sorted.forEach((p, ri) => {
+                        const medal = ri === 0 ? '🥇' : ri === 1 ? '🥈' : ri === 2 ? '🥉' : String(ri+1);
+                        html += `<tr style="border-bottom:1px solid rgba(255,255,255,0.03)">
+                            <td style="padding:3px 8px">${medal}</td>
+                            <td style="padding:3px 8px"><strong>#${p['n°']||''}</strong> ${(p.cheval||'').slice(0,22)}</td>
+                            <td style="padding:3px 8px;opacity:0.7">${(p.jockey||'').slice(0,18)}</td>
+                            <td style="padding:3px 8px;text-align:right">${p.cote > 0 ? p.cote.toFixed(1) : '-'}</td>
+                            <td style="padding:3px 8px;text-align:right">${p._norm.toFixed(1)}</td>
+                        </tr>`;
+                    });
+                    html += `</tbody></table></div></div>`;
+                });
+
+                html += `</div>`;
+            }
 
             // Sauvegarder le MEILLEUR SOLO par distance (= même formule que le détail)
             // Comme ça le terminal utilise exactement la même formule que le détail
