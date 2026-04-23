@@ -1318,8 +1318,9 @@
                     sorted.forEach((p, ri) => {
                         const arr = p.arrivee;
                         const isWinner = arr === 1;
-                        const arrStr = arr ? (arr <= 3 ? `<strong style="color:var(--green)">${arr}${arr===1?'er':'e'}</strong>` : String(arr)) : '-';
-                        const bg = isWinner ? 'background:rgba(64,224,90,0.1);' : '';
+                        const arrColor = arr === 1 ? 'color:var(--green);font-weight:700' : arr === 2 ? 'color:var(--accent);font-weight:600' : arr === 3 ? 'color:var(--gold);font-weight:600' : arr ? 'opacity:0.6' : 'opacity:0.3';
+                        const arrStr = arr ? `<span style="${arrColor}">${arr}${arr===1?'er':arr===2?'e':arr===3?'e':'e'}</span>` : '<span style="opacity:0.2">-</span>';
+                        const bg = isWinner ? 'background:rgba(64,224,90,0.1);' : arr && arr <= 3 ? 'background:rgba(64,224,208,0.05);' : '';
                         const medal = ri === 0 ? '🥇' : ri === 1 ? '🥈' : ri === 2 ? '🥉' : String(ri+1);
                         html += `<tr style="${bg}border-bottom:1px solid rgba(255,255,255,0.03)">
                             <td style="padding:3px 6px">${medal}</td>
