@@ -409,7 +409,9 @@ function getLevierScore(participant, distBucket, ld) {
   const formulas = loadBestFormulas();
   const formula = formulas[distBucket];
 
-  if (formula && formula.leviers && formula.poids) {
+  // Utiliser la formule SEULEMENT si basée sur assez de courses (min 80)
+  // et si le top1 n'est pas suspect (>90% = probable overfitting)
+  if (formula && formula.leviers && formula.poids && formula.courses >= 80 && formula.top1 < 90) {
     let score = 0;
     const label = formula.leviers.map((l, i) => `${l.split(' ')[0]}×${(formula.poids[i]*100).toFixed(0)}%`).join(' + ');
     formula.leviers.forEach((lev, i) => {
@@ -418,10 +420,18 @@ function getLevierScore(participant, distBucket, ld) {
     return { score, label };
   }
 
-  // Fallback si pas de fichier best_formulas.json
-  const jkTauxP = getLevierValue('Jk TauxP', participant, ld);
+  // Formule conservatrice : mix de plusieurs leviers fiables
+  // Cote (marché) + Ch TauxV (classement cheval) + Jk TauxP (classement jockey) + Musique
+  const scoreCote = getLevierValue('Cote (1/cote)', participant, ld);
   const chTauxV = getLevierValue('Ch TauxV', participant, ld);
-  return { score: jkTauxP * 0.6 + chTauxV * 0.4, label: 'JkTauxP×60% + ChTauxV×40% (fallback)' };
+  const jkTauxP = getLevierValue('Jk TauxP', participant, ld);
+  const musique = getLevierValue('Musique', participant, ld);
+
+  if (distBucket === 'sprint')  return { score: chTauxV*0.3 + scoreCote*0.3 + jkTauxP*0.2 + musique*0.2, label: 'ChTauxV×30%+Cote×30%+JkTauxP×20%+Mus×20%' };
+  if (distBucket === 'mile')    return { score: scoreCote*0.3 + chTauxV*0.25 + jkTauxP*0.25 + musique*0.2, label: 'Cote×30%+ChTauxV×25%+JkTauxP×25%+Mus×20%' };
+  if (distBucket === 'middle')  return { score: scoreCote*0.3 + musique*0.25 + chTauxV*0.25 + jkTauxP*0.2, label: 'Cote×30%+Mus×25%+ChTauxV×25%+JkTauxP×20%' };
+  if (distBucket === 'staying') return { score: musique*0.3 + scoreCote*0.25 + chTauxV*0.25 + jkTauxP*0.2, label: 'Mus×30%+Cote×25%+ChTauxV×25%+JkTauxP×20%' };
+  return { score: scoreCote*0.3 + chTauxV*0.3 + jkTauxP*0.2 + musique*0.2, label: 'Cote×30%+ChTauxV×30%+JkTauxP×20%+Mus×20%' };
 }
 
 // ====================================================================
