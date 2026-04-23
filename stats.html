@@ -1256,9 +1256,14 @@
                     <th>Levier</th><th>Fav</th><th>Top2</th><th>Top3</th>
                 </tr></thead><tbody>`;
 
-                courses.forEach(c => {
+                courses.forEach((c, ci) => {
                     // Classement par le meilleur levier
                     const sorted = [...c.parts].sort((a,b) => (b._lev[bestLev]||0) - (a._lev[bestLev]||0));
+                    // Normaliser scores 10-90
+                    const scrs = sorted.map(p => p._lev[bestLev]||0);
+                    const mnS = Math.min(...scrs), mxS = Math.max(...scrs), rnS = mxS - mnS || 1;
+                    sorted.forEach(p => { p._norm = ((p._lev[bestLev]||0) - mnS) / rnS * 80 + 10; });
+
                     const gagnant = c.course.participants.find(p => p.arrivee === 1);
                     const favCote = c.parCote[0];
                     const top1 = sorted[0];
@@ -1267,11 +1272,12 @@
                     const isN2 = sorted.slice(0,2).some(p => p.arrivee === 1);
                     const isN3 = sorted.slice(0,3).some(p => p.arrivee === 1);
 
-                    const rowCls = isN1 ? 'style="background:rgba(64,224,90,0.06)"' : '';
-                    html += `<tr ${rowCls}>
+                    const detailId = `detail-${cat}-${ci}`;
+                    const rowCls = isN1 ? 'style="background:rgba(64,224,90,0.06);cursor:pointer"' : 'style="cursor:pointer"';
+                    html += `<tr ${rowCls} onclick="document.getElementById('${detailId}').style.display=document.getElementById('${detailId}').style.display==='none'?'':'none'">
                         <td>${c.fileDate || ''}</td>
                         <td>${c.hippo || ''}</td>
-                        <td>${(c.course.nom || '').slice(0,22)}</td>
+                        <td>${(c.course.nom || '').slice(0,22)} <span style="opacity:0.4;font-size:0.65rem">▼</span></td>
                         <td>${c.dist}m</td>
                         <td><strong>#${top1?.['n°']||'?'}</strong> ${(top1?.cheval||'').slice(0,14)}</td>
                         <td>${top1?.cote > 0 ? top1.cote.toFixed(1) : '-'}</td>
@@ -1284,6 +1290,34 @@
                         <td>${isN2 ? '✓' : ''}</td>
                         <td>${isN3 ? '✓' : ''}</td>
                     </tr>`;
+
+                    // Détail dépliant : classement complet levier + arrivée
+                    html += `<tr id="${detailId}" style="display:none"><td colspan="14" style="padding:0">
+                        <div style="background:rgba(0,0,0,0.2);padding:10px 15px;margin:2px 0">
+                            <strong style="color:var(--accent)">${c.course.nom || ''}</strong> — ${c.dist}m — ${c.hippo} — ${c.fileDate}
+                            <table style="width:100%;margin-top:6px;font-size:0.75rem;border-collapse:collapse">
+                                <thead><tr style="opacity:0.6">
+                                    <th style="text-align:left;padding:3px 6px">Rang</th>
+                                    <th style="text-align:left;padding:3px 6px">Cheval</th>
+                                    <th style="text-align:right;padding:3px 6px">Cote</th>
+                                    <th style="text-align:right;padding:3px 6px">Score ${bestLev.split(' ')[0]}</th>
+                                    <th style="text-align:center;padding:3px 6px">Arrivée</th>
+                                </tr></thead><tbody>`;
+                    sorted.forEach((p, ri) => {
+                        const arr = p.arrivee;
+                        const isWinner = arr === 1;
+                        const arrStr = arr ? (arr <= 3 ? `<strong style="color:var(--green)">${arr}${arr===1?'er':'e'}</strong>` : String(arr)) : '-';
+                        const bg = isWinner ? 'background:rgba(64,224,90,0.1);' : '';
+                        const medal = ri === 0 ? '🥇' : ri === 1 ? '🥈' : ri === 2 ? '🥉' : String(ri+1);
+                        html += `<tr style="${bg}border-bottom:1px solid rgba(255,255,255,0.03)">
+                            <td style="padding:3px 6px">${medal}</td>
+                            <td style="padding:3px 6px"><strong>#${p['n°']||''}</strong> ${(p.cheval||'').slice(0,20)}</td>
+                            <td style="padding:3px 6px;text-align:right">${p.cote > 0 ? p.cote.toFixed(1) : '-'}</td>
+                            <td style="padding:3px 6px;text-align:right">${p._norm.toFixed(1)}</td>
+                            <td style="padding:3px 6px;text-align:center">${arrStr}</td>
+                        </tr>`;
+                    });
+                    html += `</tbody></table></div></td></tr>`;
                 });
 
                 html += `</tbody></table></div>`;
