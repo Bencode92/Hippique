@@ -1245,6 +1245,50 @@
                     html += renderSection(`${sizeLabels[sz]} — Top 5 <span style="opacity:0.5;font-size:0.75rem">(${tested} testées)</span>`, ofSize, 5);
                 }
 
+                // Détail course par course pour le meilleur levier solo
+                const bestLev = results[0].name;
+                html += `<h3 style="color:var(--accent);margin:1.2rem 0 0.4rem;font-size:0.9rem;cursor:pointer" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'':'none'">
+                    Détail course par course — ${bestLev} <span style="opacity:0.5;font-size:0.75rem">▼ cliquer</span></h3>`;
+                html += `<div style="display:none;overflow-x:auto">`;
+                html += `<table class="levier-table" style="font-size:0.75rem"><thead><tr>
+                    <th>Date</th><th>Hippo</th><th>Course</th><th>Dist</th>
+                    <th>Notre #1</th><th>Cote</th><th>Gagnant</th><th>Cote</th>
+                    <th>Fav cote</th><th>Cote</th>
+                    <th>Levier</th><th>Fav</th><th>Top2</th><th>Top3</th>
+                </tr></thead><tbody>`;
+
+                courses.forEach(c => {
+                    // Classement par le meilleur levier
+                    const sorted = [...c.parts].sort((a,b) => (b._lev[bestLev]||0) - (a._lev[bestLev]||0));
+                    const gagnant = c.course.participants.find(p => p.arrivee === 1);
+                    const favCote = c.parCote[0];
+                    const top1 = sorted[0];
+                    const isN1 = top1?.arrivee === 1;
+                    const isF1 = favCote?.arrivee === 1;
+                    const isN2 = sorted.slice(0,2).some(p => p.arrivee === 1);
+                    const isN3 = sorted.slice(0,3).some(p => p.arrivee === 1);
+
+                    const rowCls = isN1 ? 'style="background:rgba(64,224,90,0.06)"' : '';
+                    html += `<tr ${rowCls}>
+                        <td>${c.fileDate || ''}</td>
+                        <td>${c.hippo || ''}</td>
+                        <td>${(c.course.nom || '').slice(0,22)}</td>
+                        <td>${c.dist}m</td>
+                        <td><strong>#${top1?.['n°']||'?'}</strong> ${(top1?.cheval||'').slice(0,14)}</td>
+                        <td>${top1?.cote > 0 ? top1.cote.toFixed(1) : '-'}</td>
+                        <td>#${gagnant?.['n°']||'?'} ${(gagnant?.cheval||'').slice(0,14)}</td>
+                        <td>${gagnant?.cote > 0 ? gagnant.cote.toFixed(1) : '-'}</td>
+                        <td>#${favCote?.['n°']||'?'}</td>
+                        <td>${favCote?.cote > 0 ? favCote.cote.toFixed(1) : '-'}</td>
+                        <td class="${isN1 ? 'win' : ''}">${isN1 ? '✓' : ''}</td>
+                        <td class="${isF1 ? 'win' : ''}">${isF1 ? '✓' : ''}</td>
+                        <td>${isN2 ? '✓' : ''}</td>
+                        <td>${isN3 ? '✓' : ''}</td>
+                    </tr>`;
+                });
+
+                html += `</tbody></table></div>`;
+
                 html += `</div>`;
                 firstTab = false;
             });
