@@ -257,8 +257,8 @@
                 <select id="ranking-filter">
                     <option value="auto">Auto (snapshot avant course)</option>
                     <option value="2025">2025 uniquement</option>
-                    <option value="2026">2026 uniquement</option>
-                    <option value="both">2025 + 2026 (latest)</option>
+                    <option value="2026">2026 (snapshot avant course)</option>
+                    <option value="both">2025 + 2026 (snapshot avant course)</option>
                 </select>
             </div>
             <button class="btn-filter" id="btn-analyze" onclick="runAnalysis()">
@@ -943,27 +943,26 @@
         let ch25 = null, j25 = null, cr25 = null;
         let ch26 = null, j26 = null, cr26 = null;
 
+        // Résoudre les données 2026 : toujours via snapshot pour courses passées
+        const today = new Date().toISOString().split('T')[0];
+        const isFuture = !courseDate || courseDate >= today;
+        function get26() {
+            if (isFuture) return { ch: rd.chx26[nom], jk: rd.jk26[jk], cr: rd.cr26[jk] };
+            const snap = getSnapshot26(courseDate);
+            if (snap) return { ch: snap.chx[nom], jk: snap.jk[jk], cr: snap.cr[jk] };
+            return { ch: null, jk: null, cr: null }; // pas de snapshot dispo
+        }
+
         if (rankingMode === '2025') {
-            // 2025 uniquement
             ch25 = rd.chx25[nom]; j25 = rd.jk25[jk]; cr25 = rd.cr25[jk];
         } else if (rankingMode === '2026') {
-            // 2026 uniquement (latest)
-            ch26 = rd.chx26[nom]; j26 = rd.jk26[jk]; cr26 = rd.cr26[jk];
-        } else if (rankingMode === 'both') {
-            // 2025 + 2026 latest (sans vérif date)
-            ch25 = rd.chx25[nom]; j25 = rd.jk25[jk]; cr25 = rd.cr25[jk];
-            ch26 = rd.chx26[nom]; j26 = rd.jk26[jk]; cr26 = rd.cr26[jk];
+            const d26 = get26();
+            ch26 = d26.ch; j26 = d26.jk; cr26 = d26.cr;
         } else {
-            // Auto : 2025 toujours + 2026 avec vérif date (snapshot avant course)
+            // Auto ou both : 2025 + 2026 (snapshot)
             ch25 = rd.chx25[nom]; j25 = rd.jk25[jk]; cr25 = rd.cr25[jk];
-            const today = new Date().toISOString().split('T')[0];
-            const isFuture = !courseDate || courseDate >= today;
-            if (isFuture) {
-                ch26 = rd.chx26[nom]; j26 = rd.jk26[jk]; cr26 = rd.cr26[jk];
-            } else {
-                const snap = getSnapshot26(courseDate);
-                if (snap) { ch26 = snap.chx[nom]; j26 = snap.jk[jk]; cr26 = snap.cr[jk]; }
-            }
+            const d26 = get26();
+            ch26 = d26.ch; j26 = d26.jk; cr26 = d26.cr;
         }
         const pop = getPop(rd);
         const mxF = (a, b, f) => Math.max(a ? parseFloat(a[f]||0) : 0, b ? parseFloat(b[f]||0) : 0);
