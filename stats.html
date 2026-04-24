@@ -851,7 +851,7 @@
     async function loadRankings() {
         if (rankingData) return rankingData;
 
-        // 1) Charger les fichiers stables (2025 + forme + combo + latest 2026)
+        // 1) Charger les fichiers stables (2025 + forme + combo + latest 2026 + correspondances)
         const stableFiles = {
             chx25: 'chevaux_2025_ponderated_latest.json',
             chx26: 'chevaux_ponderated_latest.json',
@@ -861,17 +861,26 @@
             cr26: 'cravache_or_ponderated_latest.json',
             forme: 'chevaux_forme_recente.json',
             combo: 'combo_jockey_entraineur.json',
+            corresp: 'claude_correspondances.json',
         };
         const results = {};
         const entries = Object.entries(stableFiles);
         const fetches = await Promise.all(entries.map(([, f]) => fetch(RAW + f).then(r => r.ok ? r.json() : null).catch(() => null)));
         entries.forEach(([k], i) => { results[k] = fetches[i]; });
 
+        // Correspondances pré-calculées : "M.Z .SAHEBJAN" → "MOHAMMAD ZEESHAAN SAHEBJAN"
+        const correspMap = {};
+        for (const [raw, info] of Object.entries(results.corresp?.correspondances || {})) {
+            correspMap[raw.toUpperCase().trim()] = (info.match || '').toUpperCase().trim();
+        }
+        const knownForeign = new Set((results.corresp?.etrangers || []).map(s => s.toUpperCase().trim()));
+
         rankingData = {
             chx25: buildMap(results.chx25, 'Nom'), chx26: buildMap(results.chx26, 'Nom'),
             jk25: buildMap(results.jk25, 'NomPostal'), jk26: buildMap(results.jk26, 'NomPostal'),
             cr25: buildMap(results.cr25, 'NomPostal'), cr26: buildMap(results.cr26, 'NomPostal'),
             forme: results.forme?.resultats || {}, combo: results.combo?.resultats || {},
+            correspMap, knownForeign,
         };
 
         // 2) Charger les snapshots datés depuis data/rankings/
@@ -920,6 +929,43 @@
 
     function extractNom(cheval) { return (cheval || '').replace(/\s+[MFH]\.\w*\.?\s*\d+\s*a\.?\s*$/i, '').trim().toUpperCase(); }
 
+    // Fuzzy match : "M.GRANDIN" → "MARVIN GRANDIN" (repris de live-scoring.js:168-198)
+    // + consulte claude_correspondances.json pour les cas spéciaux et ignore les étrangers connus.
+    function fuzzyMatch(map, shortName, rd) {
+        if (!shortName || shortName.length < 3) return null;
+        const key = shortName.toUpperCase().trim();
+        if (map[key]) return map[key];
+
+        // Correspondances pré-calculées
+        if (rd?.correspMap?.[key] && map[rd.correspMap[key]]) return map[rd.correspMap[key]];
+
+        // Étrangers connus : pas la peine de chercher
+        if (rd?.knownForeign?.has(key)) return null;
+
+        let init = '', fam = '';
+        // "C. DEMURO" / "C DEMURO" / "C.DEMURO"
+        let m = key.match(/^([A-Z])\.?\s*(.{3,})$/);
+        if (m) { init = m[1]; fam = m[2].trim(); }
+        // "DEMURO C." / "DEMURO C"
+        if (!m) { m = key.match(/^(.{3,?})\s+([A-Z])\.?$/); if (m) { fam = m[1].trim(); init = m[2]; } }
+        // Nom complet : recherche inclusive
+        if (!m) {
+            for (const [k, v] of Object.entries(map)) {
+                if (k === key) return v;
+                if (key.length >= 5 && (k.includes(key) || key.includes(k))) return v;
+            }
+            return null;
+        }
+        if (fam.length < 3) return null;
+        for (const [k, v] of Object.entries(map)) {
+            if (k.endsWith(fam) || k.endsWith(' ' + fam) || k.includes(' ' + fam)) {
+                const prenom = k.replace(fam, '').trim();
+                if (prenom && prenom[0] === init) return v;
+            }
+        }
+        return null;
+    }
+
     function parseMusique(m) {
         if (!m) return 50;
         const pos = m.replace(/\(\d+\)/g, '').match(/(\d+|[DRT])[a-z]/gi);
@@ -958,20 +1004,20 @@
         const today = new Date().toISOString().split('T')[0];
         const isFuture = !courseDate || courseDate >= today;
         function get26() {
-            if (isFuture) return { ch: rd.chx26[nom], jk: rd.jk26[jk], cr: rd.cr26[jk] };
+            if (isFuture) return { ch: fuzzyMatch(rd.chx26, nom, rd), jk: fuzzyMatch(rd.jk26, jk, rd), cr: fuzzyMatch(rd.cr26, jk, rd) };
             const snap = getSnapshot26(courseDate);
-            if (snap) return { ch: snap.chx[nom], jk: snap.jk[jk], cr: snap.cr[jk] };
+            if (snap) return { ch: fuzzyMatch(snap.chx, nom, rd), jk: fuzzyMatch(snap.jk, jk, rd), cr: fuzzyMatch(snap.cr, jk, rd) };
             return { ch: null, jk: null, cr: null }; // pas de snapshot dispo
         }
 
         if (rankingMode === '2025') {
-            ch25 = rd.chx25[nom]; j25 = rd.jk25[jk]; cr25 = rd.cr25[jk];
+            ch25 = fuzzyMatch(rd.chx25, nom, rd); j25 = fuzzyMatch(rd.jk25, jk, rd); cr25 = fuzzyMatch(rd.cr25, jk, rd);
         } else if (rankingMode === '2026') {
             const d26 = get26();
             ch26 = d26.ch; j26 = d26.jk; cr26 = d26.cr;
         } else {
             // Auto ou both : 2025 + 2026 (snapshot)
-            ch25 = rd.chx25[nom]; j25 = rd.jk25[jk]; cr25 = rd.cr25[jk];
+            ch25 = fuzzyMatch(rd.chx25, nom, rd); j25 = fuzzyMatch(rd.jk25, jk, rd); cr25 = fuzzyMatch(rd.cr25, jk, rd);
             const d26 = get26();
             ch26 = d26.ch; j26 = d26.jk; cr26 = d26.cr;
         }
