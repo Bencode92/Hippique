@@ -1776,8 +1776,8 @@
                                 </div>
                                 <div style="margin-top:4px;font-size:0.7em;opacity:0.5;cursor:pointer"
                                      title="Cliquer pour copier la commande terminal"
-                                     onclick="event.stopPropagation();const cmd='cd ~/Hippique && node live-scoring.js ${hippodrome.split(' ')[0].toLowerCase()} C${course.numero || (courseIndex+1)}';navigator.clipboard.writeText(cmd).then(()=>{this.style.color='#40e05a';this.textContent='✅ Copié !';setTimeout(()=>{this.style.color='';this.textContent='📋 '+cmd.replace('cd ~/Hippique && ','')},1500)})">
-                                    📋 node live-scoring.js ${hippodrome.split(' ')[0].toLowerCase()} C${course.numero || (courseIndex+1)}
+                                     onclick="event.stopPropagation();const cmd='cd ~/Hippique && git pull && node live-scoring.js ${hippodrome.split(' ')[0].toLowerCase()} C${course.numero || (courseIndex+1)}';navigator.clipboard.writeText(cmd).then(()=>{this.style.color='#40e05a';this.textContent='✅ Copié !';setTimeout(()=>{this.style.color='';this.textContent='📋 '+cmd.replace('cd ~/Hippique && ','')},1500)})">
+                                    📋 git pull && node live-scoring.js ${hippodrome.split(' ')[0].toLowerCase()} C${course.numero || (courseIndex+1)}
                                 </div>
                             </div>
                         `;
