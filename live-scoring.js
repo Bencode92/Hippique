@@ -257,8 +257,19 @@ function computeBestFormulasFromHistory() {
   try { files = fs.readdirSync(dir).filter(f => f.endsWith('.json')).sort(); } catch { return {}; }
 
   const ldFull = getLevierData();
-  // 4 buckets distance + 1 bucket "premium" (Longchamp + Saint-Cloud, haut de gamme région parisienne)
+  // Buckets alignés avec stats.html :
+  // - 4 coarse (sprint/mile/middle/staying) — toujours utilisables (beaucoup de données)
+  // - 11 fine (par tranche précise) — utilisés si assez de courses (min 15)
+  // - 1 premium (LC+SC+Chantilly+FB+Deauville, toutes distances) — si hippo match
+  // Un même course alimente plusieurs buckets (coarse + fine + premium si applicable)
+  const FINE_RANGES = [
+    ['1000m', 900, 1099], ['1200m', 1100, 1299], ['1300m', 1300, 1399],
+    ['1400m', 1400, 1499], ['1500m', 1500, 1599], ['1600m', 1600, 1699],
+    ['1800m', 1700, 1899], ['2000m', 1900, 2099], ['2100m', 2100, 2199],
+    ['2400m', 2200, 2500], ['3000m+', 2600, 99999],
+  ];
   const buckets = { sprint: [], mile: [], middle: [], staying: [], premium: [] };
+  FINE_RANGES.forEach(([k]) => { buckets[k] = []; });
   // Liste exhaustive alignée avec stats.html — tous les leviers sont explorés
   const levierNames = ['Cote (1/cote)', 'Cote ref', 'Dérive cote', 'Valeur FG', 'Musique',
     'Gains (log)', 'TauxV indiv', 'TauxP indiv', 'NbVictoires',
@@ -335,9 +346,14 @@ function computeBestFormulasFromHistory() {
           levierNames.forEach(name => { levs[name] = getLevierValue(name, p, ld); });
           return { ...p, _levs: levs };
         });
-        buckets[dl].push({ enriched, parCote });
-        // Les courses Longchamp/Saint-Cloud alimentent AUSSI le bucket premium
-        if (isPremium) buckets.premium.push({ enriched, parCote });
+        const payload = { enriched, parCote };
+        buckets[dl].push(payload);
+        // Bucket fin correspondant à la distance exacte (si applicable)
+        for (const [k, lo, hi] of FINE_RANGES) {
+          if (dist >= lo && dist <= hi) { buckets[k].push(payload); break; }
+        }
+        // Pool premium : hippos haut de gamme — alimenté en plus de tous les autres
+        if (isPremium) buckets.premium.push(payload);
       });
     } catch {}
   });
@@ -500,22 +516,54 @@ const PREMIUM_HIPPOS = new Set([
   'deauville',
 ]);
 
-function getLevierScore(participant, distBucket, ld, hippo) {
-  const formulas = loadBestFormulas();
+// Quel bucket fin correspond à une distance (aligné avec les FINE_RANGES de computeBestFormulasFromHistory)
+function fineBucketForDistance(dist) {
+  const d = parseInt(dist) || 0;
+  if (d >= 900 && d <= 1099) return '1000m';
+  if (d >= 1100 && d <= 1299) return '1200m';
+  if (d >= 1300 && d <= 1399) return '1300m';
+  if (d >= 1400 && d <= 1499) return '1400m';
+  if (d >= 1500 && d <= 1599) return '1500m';
+  if (d >= 1600 && d <= 1699) return '1600m';
+  if (d >= 1700 && d <= 1899) return '1800m';
+  if (d >= 1900 && d <= 2099) return '2000m';
+  if (d >= 2100 && d <= 2199) return '2100m';
+  if (d >= 2200 && d <= 2500) return '2400m';
+  if (d >= 2600) return '3000m+';
+  return null;
+}
 
-  // Priorité : si hippo ∈ premium ET formule premium disponible → l'utiliser
+function getLevierScore(participant, distBucket, ld, hippo, rawDist) {
+  const formulas = loadBestFormulas();
   const hippoKey = (hippo || '').toLowerCase();
-  const usePremium = PREMIUM_HIPPOS.has(hippoKey) && formulas.premium?.leviers;
-  const formula = usePremium ? formulas.premium : formulas[distBucket];
-  const formulaKey = usePremium ? 'premium' : distBucket;
+
+  // Routage aligné avec stats.html : fine bucket > premium > coarse
+  // - Fine : formule calculée sur la distance exacte (ex. "2400m") si dispo
+  // - Premium : si hippo ∈ pool premium ET pas de fine meilleur
+  // - Coarse : fallback toujours présent (sprint/mile/middle/staying)
+  const fineKey = fineBucketForDistance(rawDist);
+  const fineFormula = fineKey && formulas[fineKey]?.leviers ? formulas[fineKey] : null;
+  const premiumFormula = PREMIUM_HIPPOS.has(hippoKey) && formulas.premium?.leviers ? formulas.premium : null;
+  const coarseFormula = formulas[distBucket];
+
+  let formula = null, formulaKey = distBucket, tag = '';
+  if (fineFormula) {
+    formula = fineFormula; formulaKey = fineKey; tag = `[${fineKey}] `;
+  } else if (premiumFormula) {
+    formula = premiumFormula; formulaKey = 'premium'; tag = '[PREMIUM] ';
+  } else {
+    formula = coarseFormula; formulaKey = distBucket; tag = '';
+  }
+  const usePremium = formulaKey === 'premium';
 
   // Seuil configurable : node live-scoring.js --seuil 90 longchamp C1
   const seuilArg = process.argv.find(a => a.startsWith('--seuil'));
   const seuilIdx = process.argv.indexOf('--seuil');
   const seuilTop1 = parseInt(seuilArg?.split('=')[1] || (seuilIdx >= 0 ? process.argv[seuilIdx + 1] : null)) || 100;
-  if (formula && formula.leviers && formula.poids && formula.courses >= 50 && formula.top1 <= seuilTop1) {
+  // Seuil de courses : 15 pour fine (petits samples OK), 50 pour coarse/premium
+  const minCourses = (fineKey && formulaKey === fineKey) ? 15 : 50;
+  if (formula && formula.leviers && formula.poids && formula.courses >= minCourses && formula.top1 <= seuilTop1) {
     let score = 0;
-    const tag = usePremium ? '[PREMIUM] ' : '';
     const label = tag + formula.leviers.map((l, i) => `${l.split(' ')[0]}×${(formula.poids[i]*100).toFixed(0)}%`).join(' + ');
     formula.leviers.forEach((lev, i) => {
       score += getLevierValue(lev, participant, ld) * formula.poids[i];
@@ -653,7 +701,7 @@ _log(`${medal}${String(p['n°'] || '').padStart(2)} ${(p.cheval || '').slice(0, 
         // ── CLASSEMENT 2 : Leviers optimaux par distance ──
         const ld = getLevierData();
         const levierResults = participants.map(p => {
-          const lr = getLevierScore(p, distBucket, ld, hippo);
+          const lr = getLevierScore(p, distBucket, ld, hippo, distance);
           return { ...p, _levScore: lr.score, _levLabel: lr.label };
         });
         levierResults.sort((a, b) => {
@@ -669,8 +717,12 @@ _log(`${medal}${String(p['n°'] || '').padStart(2)} ${(p.cheval || '').slice(0, 
 
         // Vérifier fiabilité : formule basée sur combien de courses ?
         const formulas = loadBestFormulas();
-        const isPremium = PREMIUM_HIPPOS.has((hippo || '').toLowerCase()) && formulas.premium?.leviers;
-        const formula = isPremium ? formulas.premium : formulas[distBucket];
+        // Même routage que getLevierScore : fine > premium > coarse
+        const fineKey = fineBucketForDistance(distance);
+        const fineFormula = fineKey && formulas[fineKey]?.leviers ? formulas[fineKey] : null;
+        const premiumFormula = PREMIUM_HIPPOS.has((hippo || '').toLowerCase()) && formulas.premium?.leviers ? formulas.premium : null;
+        const formula = (fineFormula && fineFormula.courses >= 15) ? fineFormula
+                      : (premiumFormula ? premiumFormula : formulas[distBucket]);
         const nbCoursesFormula = formula?.courses || 0;
         const fiable = nbCoursesFormula >= 30;
 
