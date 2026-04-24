@@ -1126,7 +1126,11 @@
                 let n1=0, f1=0, n2=0, n3=0;
                 let coteSum=0, wins=0;
                 courses.forEach(c => {
-                    const sorted = [...c.parts].sort((a,b) => (b._lev[name]||0) - (a._lev[name]||0));
+                    const sorted = [...c.parts].sort((a,b) => {
+                        const diff = (b._lev[name]||0) - (a._lev[name]||0);
+                        if (Math.abs(diff) > 0.001) return diff;
+                        return (parseFloat(a.cote)||999) - (parseFloat(b.cote)||999);
+                    });
                     if (sorted[0]?.arrivee===1) { n1++; if (sorted[0].cote>1) { coteSum+=sorted[0].cote; wins++; } }
                     if (c.parCote[0]?.arrivee===1) f1++;
                     if (sorted.slice(0,2).some(p=>p.arrivee===1)) n2++;
@@ -1144,7 +1148,9 @@
                     const sorted = [...c.parts].sort((a,b) => {
                         let sa=0, sb=0;
                         names.forEach((n,i) => { sa += (a._lev[n]||0)*weights[i]; sb += (b._lev[n]||0)*weights[i]; });
-                        return sb - sa;
+                        const diff = sb - sa;
+                        if (Math.abs(diff) > 0.001) return diff;
+                        return (parseFloat(a.cote)||999) - (parseFloat(b.cote)||999);
                     });
                     if (sorted[0]?.arrivee===1) { n1++; if (sorted[0].cote>1) { coteSum+=sorted[0].cote; wins++; } }
                     if (c.parCote[0]?.arrivee===1) f1++;
@@ -1315,8 +1321,12 @@
                 </tr></thead><tbody>`;
 
                 courses.forEach((c, ci) => {
-                    // Classement par le meilleur levier
-                    const sorted = [...c.parts].sort((a,b) => (b._lev[bestLev]||0) - (a._lev[bestLev]||0));
+                    // Classement par le meilleur levier (DESC), cote ASC en tie-breaker
+                    const sorted = [...c.parts].sort((a,b) => {
+                        const diff = (b._lev[bestLev]||0) - (a._lev[bestLev]||0);
+                        if (Math.abs(diff) > 0.001) return diff;
+                        return (parseFloat(a.cote)||999) - (parseFloat(b.cote)||999);
+                    });
                     // Détection levier dégénéré (tous scores égaux = pas de signal pour cette course)
                     const rawScores = sorted.map(p => p._lev[bestLev]||0);
                     const scoreMin = Math.min(...rawScores), scoreMax = Math.max(...rawScores);
