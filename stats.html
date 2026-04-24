@@ -1317,10 +1317,27 @@
                 courses.forEach((c, ci) => {
                     // Classement par le meilleur levier
                     const sorted = [...c.parts].sort((a,b) => (b._lev[bestLev]||0) - (a._lev[bestLev]||0));
-                    // Normaliser scores 10-90
-                    const scrs = sorted.map(p => p._lev[bestLev]||0);
-                    const mnS = Math.min(...scrs), mxS = Math.max(...scrs), rnS = mxS - mnS || 1;
-                    sorted.forEach(p => { p._norm = ((p._lev[bestLev]||0) - mnS) / rnS * 80 + 10; });
+                    // Détection levier dégénéré (tous scores égaux = pas de signal pour cette course)
+                    const rawScores = sorted.map(p => p._lev[bestLev]||0);
+                    const scoreMin = Math.min(...rawScores), scoreMax = Math.max(...rawScores);
+                    const isDegen = (scoreMax - scoreMin) < 0.001;
+
+                    // Rang officiel France Galop (26 prioritaire, 25 en fallback)
+                    const snap26 = getSnapshot26(c.fileDate);
+                    function officialRank(p, kind) {
+                        const key = kind === 'jk' ? (p.jockey || '').toUpperCase().trim() : extractNom(p.cheval);
+                        if (!key) return '<span style="opacity:0.3">—</span>';
+                        const map25 = kind === 'jk' ? rd.jk25 : rd.chx25;
+                        const map26 = snap26 ? (kind === 'jk' ? snap26.jk : snap26.chx) : (kind === 'jk' ? rd.jk26 : rd.chx26);
+                        const it25 = fuzzyMatch(map25, key, rd);
+                        const it26 = fuzzyMatch(map26, key, rd);
+                        const r25 = it25?.Rang ? parseInt(it25.Rang) : null;
+                        const r26 = it26?.Rang ? parseInt(it26.Rang) : null;
+                        if (r26 && r25) return `<strong>${r26}</strong><span style="opacity:0.4">·${r25}</span>`;
+                        if (r26) return `<strong>${r26}</strong>`;
+                        if (r25) return `<span style="opacity:0.7">${r25}</span><span style="opacity:0.4">·25</span>`;
+                        return '<span style="opacity:0.3">—</span>';
+                    }
 
                     const gagnant = c.course.participants.find(p => p.arrivee === 1);
                     const favCote = c.parCote[0];
@@ -1350,20 +1367,22 @@
                     </tr>`;
 
                     // Détail dépliant : classement complet levier + arrivée
+                    const degenBadge = isDegen ? ' <span style="color:#e05a40;font-size:0.7rem" title="Tous les scores sont identiques — le levier ne discrimine rien pour cette course (jockeys/chevaux absents des rankings FR)">⚠️ levier dégénéré</span>' : '';
                     html += `<tr id="${detailId}" style="display:none"><td colspan="14" style="padding:0">
                         <div style="background:rgba(0,0,0,0.2);padding:10px 15px;margin:2px 0">
-                            <strong style="color:var(--accent)">${c.course.nom || ''}</strong> — ${c.dist}m — ${c.hippo} — ${c.fileDate}
+                            <strong style="color:var(--accent)">${c.course.nom || ''}</strong> — ${c.dist}m — ${c.hippo} — ${c.fileDate}${degenBadge}
                             <table style="width:100%;margin-top:6px;font-size:0.75rem;border-collapse:collapse">
                                 <thead><tr style="opacity:0.6">
                                     <th style="text-align:left;padding:3px 6px">Rang</th>
                                     <th style="text-align:left;padding:3px 6px">Cheval</th>
                                     <th style="text-align:right;padding:3px 6px">Cote</th>
-                                    <th style="text-align:right;padding:3px 6px">Score ${bestLev.split(' ')[0]}</th>
+                                    <th style="text-align:right;padding:3px 6px" title="Score brut du levier ${bestLev}">Score ${bestLev.split(' ')[0]}</th>
+                                    <th style="text-align:right;padding:3px 6px" title="Rang France Galop du jockey (2026·2025)">Rang Jk</th>
+                                    <th style="text-align:right;padding:3px 6px" title="Rang France Galop du cheval (2026·2025)">Rang Ch</th>
                                     <th style="text-align:center;padding:3px 6px">Arrivée</th>
                                 </tr></thead><tbody>`;
                     sorted.forEach((p, ri) => {
                         const arr = p.arrivee;
-                        const isWinner = arr === 1;
                         let arrStr, bg = '';
                         if (arr === 1) { arrStr = '<strong style="color:#40e05a;font-size:1.1em">1er</strong>'; bg = 'background:rgba(64,224,90,0.12);'; }
                         else if (arr === 2) { arrStr = '<strong style="color:#40E0D0">2e</strong>'; bg = 'background:rgba(64,224,208,0.07);'; }
@@ -1371,11 +1390,15 @@
                         else if (arr) { arrStr = `<span style="color:#F1E6C8">${arr}e</span>`; }
                         else { arrStr = '<span style="color:#555">—</span>'; }
                         const medal = ri === 0 ? '🥇' : ri === 1 ? '🥈' : ri === 2 ? '🥉' : String(ri+1);
+                        const rawScore = p._lev[bestLev] || 0;
+                        const scoreStr = isDegen ? `<span style="opacity:0.5">${rawScore.toFixed(1)}</span>` : rawScore.toFixed(1);
                         html += `<tr style="${bg}border-bottom:1px solid rgba(255,255,255,0.03)">
                             <td style="padding:3px 6px">${medal}</td>
                             <td style="padding:3px 6px"><strong>#${p['n°']||''}</strong> ${(p.cheval||'').slice(0,20)}</td>
                             <td style="padding:3px 6px;text-align:right">${p.cote > 0 ? p.cote.toFixed(1) : '-'}</td>
-                            <td style="padding:3px 6px;text-align:right">${p._norm.toFixed(1)}</td>
+                            <td style="padding:3px 6px;text-align:right">${scoreStr}</td>
+                            <td style="padding:3px 6px;text-align:right">${officialRank(p, 'jk')}</td>
+                            <td style="padding:3px 6px;text-align:right">${officialRank(p, 'ch')}</td>
                             <td style="padding:3px 6px;text-align:center">${arrStr}</td>
                         </tr>`;
                     });
