@@ -1213,6 +1213,9 @@
             });
             html += `</div>`;
 
+            // On mémorise le champion de chaque bucket pour que "Courses à venir" l'utilise
+            const championsByBucket = {};
+
             firstTab = true;
             catDefs.forEach(([cat]) => {
                 const courses = categories[cat];
@@ -1291,6 +1294,7 @@
                 const champion = allFormulas[0];
                 const champDiff = champion.pN1 - favP;
                 const champTies = allFormulas.filter(f => f.pN1 === champion.pN1 && f.pN2 === champion.pN2 && f.pN3 === champion.pN3).length;
+                championsByBucket[cat] = champion;
 
                 html += `<div class="levier-content" id="levier-${cat}" style="display:${firstTab ? '' : 'none'}">`;
 
@@ -1483,38 +1487,37 @@
                 // Enrichir avec leviers
                 const rd = await loadRankings();
                 loadedCoursesAVenir.forEach((c, ci) => {
-                    const distB = c.dl;
-                    // Trouver le meilleur levier pour cette distance
-                    const catCourses = enriched.filter(e => e.dl === distB);
-                    let bestLevName = 'Cote (1/cote)';
-                    if (catCourses.length >= 3) {
-                        const soloR = levierNames.map(name => {
-                            let n1 = 0;
-                            catCourses.forEach(cc => {
-                                const s = [...cc.parts].sort((a,b) => (b._lev[name]||0) - (a._lev[name]||0));
-                                if (s[0]?.arrivee === 1) n1++;
-                            });
-                            return { name, pN1: n1/catCourses.length*100 };
-                        }).sort((a,b) => b.pN1 - a.pN1);
-                        bestLevName = soloR[0].name;
-                    }
+                    // Utiliser le champion du bucket de la course (sprint/mile/middle/staying)
+                    // Fallback : champion "tous" si pas de champion pour ce bucket, puis Cote brute
+                    const champ = championsByBucket[c.dl] || championsByBucket['tous'];
+                    const champLeviers = champ ? (champ.kind === 'combo' ? champ.leviers : [champ.label]) : ['Cote (1/cote)'];
+                    const champWeights = champ ? (champ.kind === 'combo' ? champ.weights : [1]) : [1];
+                    const champLabel = champ ? champ.label : 'Cote (1/cote)';
+                    const scoreOf = p => champLeviers.reduce((s, lv, i) => s + (p._lev[lv]||0) * champWeights[i], 0);
 
                     // Calculer les leviers pour les participants de cette course
                     const parts = c.course.participants.map(p => ({
                         ...p,
                         _lev: computeLeviers(p, rd, c.fileDate)
                     }));
-                    const sorted = [...parts].sort((a,b) => (b._lev[bestLevName]||0) - (a._lev[bestLevName]||0));
-                    const scrs = sorted.map(p => p._lev[bestLevName]||0);
-                    const mnS = Math.min(...scrs), mxS = Math.max(...scrs), rnS = mxS - mnS || 1;
-                    sorted.forEach(p => { p._norm = ((p._lev[bestLevName]||0) - mnS) / rnS * 80 + 10; });
+                    // Sort par score champion DESC, cote ASC en tie-breaker
+                    const sorted = [...parts].sort((a, b) => {
+                        const diff = scoreOf(b) - scoreOf(a);
+                        if (Math.abs(diff) > 0.001) return diff;
+                        return (parseFloat(a.cote) || 999) - (parseFloat(b.cote) || 999);
+                    });
+                    // Détection dégénéré (scores tous égaux = pas de signal pour cette course)
+                    const rawScores = sorted.map(p => scoreOf(p));
+                    const isDegen = (Math.max(...rawScores) - Math.min(...rawScores)) < 0.001;
 
                     const distLbl = c.dist < 1400 ? 'Sprint' : c.dist < 1700 ? 'Mile' : c.dist < 2200 ? 'Middle' : 'Staying';
+                    const champPerf = champ ? ` — ${champ.pN1.toFixed(0)}% Top1 sur ${champ.t} courses` : '';
+                    const degenBadge = isDegen ? ' <span style="color:#e05a40;font-size:0.7rem">⚠️ dégénéré</span>' : '';
 
                     html += `<div style="margin-bottom:1rem">
                         <h3 style="color:var(--accent);font-size:0.9rem;cursor:pointer;margin:0.8rem 0 0.3rem" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'':'none'">
                             ${c.course.horaire || ''} — ${c.course.nom || ''} — ${c.dist}m (${distLbl}) — ${c.hippo} — ${c.course.participants.length} partants
-                            <span style="opacity:0.4;font-size:0.7rem">▼ levier: ${bestLevName}</span>
+                            <span style="opacity:0.4;font-size:0.7rem">▼ champion: ${champLabel}${champPerf}${degenBadge}</span>
                         </h3>
                         <div style="display:none;overflow-x:auto">
                         <table style="width:100%;font-size:0.78rem;border-collapse:collapse">
@@ -1527,12 +1530,14 @@
                             </tr></thead><tbody>`;
                     sorted.forEach((p, ri) => {
                         const medal = ri === 0 ? '🥇' : ri === 1 ? '🥈' : ri === 2 ? '🥉' : String(ri+1);
+                        const scoreStr = scoreOf(p).toFixed(1);
+                        const scoreDisplay = isDegen ? `<span style="opacity:0.5">${scoreStr}</span>` : scoreStr;
                         html += `<tr style="border-bottom:1px solid rgba(255,255,255,0.03)">
                             <td style="padding:3px 8px">${medal}</td>
                             <td style="padding:3px 8px"><strong>#${p['n°']||''}</strong> ${(p.cheval||'').slice(0,22)}</td>
                             <td style="padding:3px 8px;opacity:0.7">${(p.jockey||'').slice(0,18)}</td>
                             <td style="padding:3px 8px;text-align:right">${p.cote > 0 ? p.cote.toFixed(1) : '-'}</td>
-                            <td style="padding:3px 8px;text-align:right">${p._norm.toFixed(1)}</td>
+                            <td style="padding:3px 8px;text-align:right">${scoreDisplay}</td>
                         </tr>`;
                     });
                     html += `</tbody></table></div></div>`;
