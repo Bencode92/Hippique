@@ -306,12 +306,20 @@ function computeBestFormulasFromHistory() {
 
   const today = new Date().toISOString().split('T')[0];
 
-  // Charger les courses terminées — anti-leakage : 2025 only pour passé
+  // Seuil de l'entraînement : avant cette date, les snapshots datés n'existent pas
+  // → les rankings "latest" seraient appliqués à des courses passées = leakage.
+  // Les courses 2025 n'ont pas les cotes capturées. Donc on part du premier snapshot daté.
+  const TRAINING_START_DATE = '2026-04-16';
+
+  // Charger les courses terminées — anti-leakage strict (snapshots datés dispos)
+  let skippedBefore = 0, kept = 0;
   files.forEach(f => {
     try {
       const data = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
       if (data.type_reunion && data.type_reunion.toLowerCase() !== 'plat') return;
       const fileDate = (f.match(/^(\d{4}-\d{2}-\d{2})/) || [])[1] || '';
+      // Filtre : pas de snapshot daté avant TRAINING_START_DATE → rankings biaisés → skip
+      if (fileDate && fileDate < TRAINING_START_DATE) { skippedBefore++; return; }
       const hippoName = f.slice(11, -5).toLowerCase();
       const isPremium = PREMIUM_HIPPOS.has(hippoName);
 
@@ -355,8 +363,11 @@ function computeBestFormulasFromHistory() {
         // Pool premium : hippos haut de gamme — alimenté en plus de tous les autres
         if (isPremium) buckets.premium.push(payload);
       });
+      kept++;
     } catch {}
   });
+
+  _log(`📊 Entraînement : ${kept} fichiers courses conservés (${skippedBefore} skippés < ${TRAINING_START_DATE} = leakage évité)`);
 
   // Helpers de génération de combinaisons (identiques à stats.html)
   function combosOfSize(items, size) {
