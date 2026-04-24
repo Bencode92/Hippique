@@ -271,11 +271,17 @@ function computeBestFormulasFromHistory() {
   const buckets = { sprint: [], mile: [], middle: [], staying: [], premium: [] };
   FINE_RANGES.forEach(([k]) => { buckets[k] = []; });
   // Liste exhaustive alignée avec stats.html — tous les leviers sont explorés
+  // 22 leviers de base + 10 croisés (pré-calculés, 50/50) identiques à stats.html
   const levierNames = ['Cote (1/cote)', 'Cote ref', 'Dérive cote', 'Valeur FG', 'Musique',
     'Gains (log)', 'TauxV indiv', 'TauxP indiv', 'NbVictoires',
     'Ch TauxV', 'Ch TauxP', 'Ch Rang', 'Ch GainMoy', 'Ch ScoreMixte',
     'Jk TauxV', 'Jk TauxP', 'Jk Rang', 'Jk ScoreMixte', 'Jk GainMoy',
-    'Cravache Rang', 'Forme récente', 'Combo Jk*Ent'];
+    'Cravache Rang', 'Forme récente', 'Combo Jk*Ent',
+    // Croisés 50/50 — peuvent entrer dans le top8 des solos et alimenter les combos
+    'Dérive × JkRang', 'Dérive × ChTauxV', 'Dérive × Cote',
+    'Cote × JkRang', 'Cote × ChTauxV', 'Cote × Valeur',
+    'JkRang × ChTauxV', 'JkRang × Musique',
+    'Valeur × Musique', 'ChTauxV × Musique'];
 
   // Charger les snapshots datés pour anti-leakage
   const snapshotsDir = path.join(__dirname, 'data', 'rankings');
@@ -511,6 +517,24 @@ function getLevierValue(levierName, participant, ld) {
     'Combo Jk*Ent': combo && combo.courses >= 3 ? combo.tauxVictoire : 10,
     'Dérive cote': coteVal>1&&coteRef>1 ? 50+(coteRef-coteVal)/coteRef*200 : 50,
   };
+
+  // Calculs dérivés : leviers croisés (50/50) identiques à stats.html
+  const _scoreCote = map['Cote (1/cote)'];
+  const _deriveScore = map['Dérive cote'];
+  const _scoreValeur = map['Valeur FG'];
+  const _scoreMus = map['Musique'];
+  const _chTauxV = map['Ch TauxV'];
+  const _jkRang = map['Jk Rang'];
+  map['Dérive × JkRang']   = _deriveScore * 0.5 + _jkRang * 0.5;
+  map['Dérive × ChTauxV']  = _deriveScore * 0.5 + _chTauxV * 0.5;
+  map['Dérive × Cote']     = _deriveScore * 0.5 + _scoreCote * 0.5;
+  map['Cote × JkRang']     = _scoreCote * 0.5 + _jkRang * 0.5;
+  map['Cote × ChTauxV']    = _scoreCote * 0.5 + _chTauxV * 0.5;
+  map['Cote × Valeur']     = _scoreCote * 0.5 + _scoreValeur * 0.5;
+  map['JkRang × ChTauxV']  = _jkRang * 0.5 + _chTauxV * 0.5;
+  map['JkRang × Musique']  = _jkRang * 0.5 + _scoreMus * 0.5;
+  map['Valeur × Musique']  = _scoreValeur * 0.5 + _scoreMus * 0.5;
+  map['ChTauxV × Musique'] = _chTauxV * 0.5 + _scoreMus * 0.5;
   // Aussi gérer les combos pré-calculés
   const shortMap = {};
   Object.entries(map).forEach(([k,v]) => { shortMap[k] = v; shortMap[k.split(' ')[0]] = v; });
