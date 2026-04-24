@@ -1,6 +1,6 @@
 {
   "_version": 2,
-  "_generatedAt": "2026-04-24T09:09:17.324Z",
+  "_generatedAt": "2026-04-24T09:28:40.297Z",
   "sprint": {
     "leviers": [
       "Cote (1/cote)",
@@ -77,6 +77,31 @@
     "avgCote": 3.557142857142857,
     "courses": 179,
     "coursesUtilisables": 179,
+    "degen": 0
+  },
+  "premium": {
+    "leviers": [
+      "Cote (1/cote)",
+      "Cote ref",
+      "Dérive cote",
+      "Jk Rang",
+      "Ch TauxP",
+      "Musique"
+    ],
+    "poids": [
+      0.25,
+      0.2,
+      0.15,
+      0.15,
+      0.15,
+      0.1
+    ],
+    "top1": 30.158730158730158,
+    "top2": 46.03174603174603,
+    "top3": 59.25925925925925,
+    "avgCote": 3.9649122807017547,
+    "courses": 189,
+    "coursesUtilisables": 189,
     "degen": 0
   }
 }

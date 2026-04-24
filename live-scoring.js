@@ -252,7 +252,8 @@ function computeBestFormulasFromHistory() {
   try { files = fs.readdirSync(dir).filter(f => f.endsWith('.json')).sort(); } catch { return {}; }
 
   const ldFull = getLevierData();
-  const buckets = { sprint: [], mile: [], middle: [], staying: [] };
+  // 4 buckets distance + 1 bucket "premium" (Longchamp + Saint-Cloud, haut de gamme région parisienne)
+  const buckets = { sprint: [], mile: [], middle: [], staying: [], premium: [] };
   const levierNames = ['Cote (1/cote)', 'Cote ref', 'Dérive cote', 'Valeur FG', 'Musique',
     'Ch TauxV', 'Ch TauxP', 'Ch Rang', 'Ch GainMoy', 'Ch ScoreMixte',
     'Jk TauxV', 'Jk TauxP', 'Jk Rang', 'Jk ScoreMixte', 'Jk GainMoy'];
@@ -291,6 +292,8 @@ function computeBestFormulasFromHistory() {
       const data = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
       if (data.type_reunion && data.type_reunion.toLowerCase() !== 'plat') return;
       const fileDate = (f.match(/^(\d{4}-\d{2}-\d{2})/) || [])[1] || '';
+      const hippoName = f.slice(11, -5).toLowerCase();
+      const isPremium = PREMIUM_HIPPOS.has(hippoName);
 
       (data.courses || []).forEach(c => {
         if (c.type && c.type.toLowerCase() !== 'plat') return;
@@ -321,6 +324,8 @@ function computeBestFormulasFromHistory() {
           return { ...p, _levs: levs };
         });
         buckets[dl].push({ enriched, parCote });
+        // Les courses Longchamp/Saint-Cloud alimentent AUSSI le bucket premium
+        if (isPremium) buckets.premium.push({ enriched, parCote });
       });
     } catch {}
   });
@@ -459,20 +464,33 @@ function getLevierValue(levierName, participant, ld) {
   return map[levierName] ?? shortMap[levierName] ?? 50;
 }
 
-function getLevierScore(participant, distBucket, ld) {
-  const formulas = loadBestFormulas();
-  const formula = formulas[distBucket];
+// Pool "premium" : haut de gamme plat FR région parisienne + Normandie (Deauville en option).
+// Critère : classements France Galop bien peuplés, cotes informatives, Groupes réguliers.
+const PREMIUM_HIPPOS = new Set([
+  'parislongchamp', 'longchamp',
+  'saint-cloud', 'saint_cloud',
+  'chantilly',
+  'fontainebleau',
+  'deauville',
+]);
 
-  // Utiliser la formule SEULEMENT si basée sur assez de courses (min 80)
-  // et si le top1 n'est pas suspect (>90% = probable overfitting)
-  // Accepter si : 50+ courses ET top1 réaliste
+function getLevierScore(participant, distBucket, ld, hippo) {
+  const formulas = loadBestFormulas();
+
+  // Priorité : si hippo ∈ premium ET formule premium disponible → l'utiliser
+  const hippoKey = (hippo || '').toLowerCase();
+  const usePremium = PREMIUM_HIPPOS.has(hippoKey) && formulas.premium?.leviers;
+  const formula = usePremium ? formulas.premium : formulas[distBucket];
+  const formulaKey = usePremium ? 'premium' : distBucket;
+
   // Seuil configurable : node live-scoring.js --seuil 90 longchamp C1
   const seuilArg = process.argv.find(a => a.startsWith('--seuil'));
   const seuilIdx = process.argv.indexOf('--seuil');
   const seuilTop1 = parseInt(seuilArg?.split('=')[1] || (seuilIdx >= 0 ? process.argv[seuilIdx + 1] : null)) || 100;
   if (formula && formula.leviers && formula.poids && formula.courses >= 50 && formula.top1 <= seuilTop1) {
     let score = 0;
-    const label = formula.leviers.map((l, i) => `${l.split(' ')[0]}×${(formula.poids[i]*100).toFixed(0)}%`).join(' + ');
+    const tag = usePremium ? '[PREMIUM] ' : '';
+    const label = tag + formula.leviers.map((l, i) => `${l.split(' ')[0]}×${(formula.poids[i]*100).toFixed(0)}%`).join(' + ');
     formula.leviers.forEach((lev, i) => {
       score += getLevierValue(lev, participant, ld) * formula.poids[i];
     });
@@ -609,7 +627,7 @@ _log(`${medal}${String(p['n°'] || '').padStart(2)} ${(p.cheval || '').slice(0, 
         // ── CLASSEMENT 2 : Leviers optimaux par distance ──
         const ld = getLevierData();
         const levierResults = participants.map(p => {
-          const lr = getLevierScore(p, distBucket, ld);
+          const lr = getLevierScore(p, distBucket, ld, hippo);
           return { ...p, _levScore: lr.score, _levLabel: lr.label };
         });
         levierResults.sort((a, b) => {
@@ -625,7 +643,8 @@ _log(`${medal}${String(p['n°'] || '').padStart(2)} ${(p.cheval || '').slice(0, 
 
         // Vérifier fiabilité : formule basée sur combien de courses ?
         const formulas = loadBestFormulas();
-        const formula = formulas[distBucket];
+        const isPremium = PREMIUM_HIPPOS.has((hippo || '').toLowerCase()) && formulas.premium?.leviers;
+        const formula = isPremium ? formulas.premium : formulas[distBucket];
         const nbCoursesFormula = formula?.courses || 0;
         const fiable = nbCoursesFormula >= 30;
 
