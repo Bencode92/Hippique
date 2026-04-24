@@ -1,44 +1,82 @@
 {
+  "_version": 2,
+  "_generatedAt": "2026-04-24T09:09:17.324Z",
   "sprint": {
     "leviers": [
-      "Ch TauxV",
-      "Ch Rang"
+      "Cote (1/cote)",
+      "Dérive cote"
     ],
     "poids": [
-      0.3,
-      0.7
+      0.8,
+      0.2
     ],
-    "top1": 76.16279069767442,
-    "courses": 172
+    "top1": 30.89887640449438,
+    "top2": 46.06741573033708,
+    "top3": 58.98876404494382,
+    "avgCote": 3.2981818181818183,
+    "courses": 178,
+    "coursesUtilisables": 178,
+    "degen": 0
   },
   "mile": {
     "leviers": [
-      "Ch TauxV"
+      "Cote (1/cote)",
+      "Cote ref",
+      "Jk Rang"
     ],
     "poids": [
-      1
+      0.5,
+      0.3,
+      0.2
     ],
-    "top1": 50.46296296296296,
-    "courses": 216
+    "top1": 31.69642857142857,
+    "top2": 49.107142857142854,
+    "top3": 60.26785714285714,
+    "avgCote": 3.008450704225351,
+    "courses": 224,
+    "coursesUtilisables": 224,
+    "degen": 0
   },
   "middle": {
     "leviers": [
-      "Musique"
+      "Cote (1/cote)",
+      "Jk Rang",
+      "Jk TauxV",
+      "Jk GainMoy"
     ],
     "poids": [
-      1
+      0.5,
+      0.2,
+      0.2,
+      0.1
     ],
-    "top1": 56.132075471698116,
-    "courses": 212
+    "top1": 33.80281690140845,
+    "top2": 51.64319248826291,
+    "top3": 63.38028169014085,
+    "avgCote": 3.355555555555556,
+    "courses": 213,
+    "coursesUtilisables": 213,
+    "degen": 0
   },
   "staying": {
     "leviers": [
-      "Musique"
+      "Cote (1/cote)",
+      "Musique",
+      "Jk Rang",
+      "Jk GainMoy"
     ],
     "poids": [
-      1
+      0.4,
+      0.2,
+      0.2,
+      0.2
     ],
-    "top1": 65.5367231638418,
-    "courses": 177
+    "top1": 35.19553072625698,
+    "top2": 51.955307262569825,
+    "top3": 60.893854748603346,
+    "avgCote": 3.557142857142857,
+    "courses": 179,
+    "coursesUtilisables": 179,
+    "degen": 0
   }
 }

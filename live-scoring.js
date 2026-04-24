@@ -165,28 +165,47 @@ function getLevierData() {
   return levierData;
 }
 
+// Correspondances pré-calculées (claude_correspondances.json) — chargées une fois
+let _correspMap = null;
+let _knownForeign = null;
+function loadCorresp() {
+  if (_correspMap !== null) return;
+  _correspMap = {};
+  _knownForeign = new Set();
+  try {
+    const data = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'claude_correspondances.json'), 'utf8'));
+    for (const [raw, info] of Object.entries(data.correspondances || {})) {
+      _correspMap[raw.toUpperCase().trim()] = (info.match || '').toUpperCase().trim();
+    }
+    (data.etrangers || []).forEach(e => _knownForeign.add(e.toUpperCase().trim()));
+  } catch {}
+}
+
 // Fuzzy match : "C. DEMURO" ou "DEMURO C." → "CRISTIAN DEMURO"
+// Consulte aussi claude_correspondances.json et court-circuite les étrangers connus.
 function fuzzyMatch(map, shortName) {
   if (!shortName || shortName.length < 3) return null;
+  loadCorresp();
   const key = shortName.toUpperCase().trim();
   if (map[key]) return map[key];
 
+  // Correspondances pré-calculées (cas tordus : "M.Z .SAHEBJAN" → "MOHAMMAD ZEESHAAN SAHEBJAN")
+  if (_correspMap[key] && map[_correspMap[key]]) return map[_correspMap[key]];
+
+  // Étrangers connus : pas la peine de chercher
+  if (_knownForeign.has(key)) return null;
+
   let init = '', fam = '';
-  // Format "C. DEMURO" ou "C DEMURO" ou "C.DEMURO" (sans espace)
   let m = key.match(/^([A-Z])\.?\s*(.{3,})$/);
   if (m) { init = m[1]; fam = m[2].trim(); }
-  // Format "DEMURO C." ou "DEMURO C"
   if (!m) { m = key.match(/^(.{3,?})\s+([A-Z])\.?$/); if (m) { fam = m[1].trim(); init = m[2]; } }
-  // Format complet "CRISTIAN DEMURO" — chercher direct
   if (!m) {
     for (const [k, v] of Object.entries(map)) {
       if (k === key) return v;
-      // Chercher si le nom contient le key ou vice versa
       if (key.length >= 5 && (k.includes(key) || key.includes(k))) return v;
     }
     return null;
   }
-
   if (fam.length < 3) return null;
   for (const [k, v] of Object.entries(map)) {
     if (k.endsWith(fam) || k.endsWith(' ' + fam) || k.includes(' ' + fam)) {
@@ -201,22 +220,29 @@ function extractNomCheval(chevalStr) {
   return (chevalStr || '').replace(/\s+[MFH]\.\w*\.?\s*\d+\s*a\.?\s*$/i, '').trim().toUpperCase();
 }
 
+// Version des formules — bump quand le calcul change (fuzzyMatch, tie-break, exploration élargie…)
+const BEST_FORMULAS_VERSION = 2;
+
 // Charger ou calculer les formules optimales automatiquement
 let bestFormulas = null;
 function loadBestFormulas() {
   if (bestFormulas) return bestFormulas;
   const filePath = path.join(__dirname, 'data', 'best_formulas.json');
   try {
-    bestFormulas = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-    const keys = Object.keys(bestFormulas);
-    _log(`📋 Formules leviers: ${keys.map(k => k + '=' + (bestFormulas[k].leviers||[]).join('+')).join(' | ')}`);
-    return bestFormulas;
+    const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+    if (data._version === BEST_FORMULAS_VERSION) {
+      bestFormulas = data;
+      const keys = Object.keys(bestFormulas).filter(k => !k.startsWith('_'));
+      _log(`📋 Formules leviers v${BEST_FORMULAS_VERSION}: ${keys.map(k => k + '=' + (bestFormulas[k].leviers||[]).join('+')).join(' | ')}`);
+      return bestFormulas;
+    }
+    _log(`🔄 best_formulas.json v${data._version || 1} détecté — recalcul v${BEST_FORMULAS_VERSION} (fuzzyMatch+tie-break+2L→6L)...`);
   } catch {}
-  // Pas de fichier → calculer (fallback)
-  _log('🔬 Pas de best_formulas.json — calcul automatique...');
-  _log('   💡 Pour de meilleurs résultats : page Stats → Analyse Leviers → Copier commande terminal');
   bestFormulas = computeBestFormulasFromHistory();
-  try { fs.writeFileSync(filePath, JSON.stringify(bestFormulas, null, 2)); _log('💾 Sauvegardé'); } catch {}
+  try {
+    fs.writeFileSync(filePath, JSON.stringify({ _version: BEST_FORMULAS_VERSION, _generatedAt: new Date().toISOString(), ...bestFormulas }, null, 2));
+    _log('💾 best_formulas.json sauvegardé');
+  } catch {}
   return bestFormulas;
 }
 
@@ -299,59 +325,87 @@ function computeBestFormulasFromHistory() {
     } catch {}
   });
 
-  // Pour chaque bucket, tester chaque levier solo + paires des top 5
+  // Helpers de génération de combinaisons (identiques à stats.html)
+  function combosOfSize(items, size) {
+    if (size === 1) return items.map(x => [x]);
+    const res = [];
+    for (let i = 0; i <= items.length - size; i++)
+      for (const tail of combosOfSize(items.slice(i + 1), size - 1))
+        res.push([items[i], ...tail]);
+    return res;
+  }
+  function weightSets(n) {
+    if (n === 2) return [[0.2,0.8],[0.4,0.6],[0.5,0.5],[0.6,0.4],[0.8,0.2]];
+    if (n === 3) return [[0.5,0.3,0.2],[0.4,0.4,0.2],[0.4,0.3,0.3],[0.6,0.2,0.2],[0.33,0.33,0.34]];
+    if (n === 4) return [[0.4,0.3,0.2,0.1],[0.3,0.3,0.2,0.2],[0.25,0.25,0.25,0.25],[0.4,0.2,0.2,0.2],[0.5,0.2,0.2,0.1]];
+    if (n === 5) return [[0.3,0.25,0.2,0.15,0.1],[0.2,0.2,0.2,0.2,0.2],[0.35,0.25,0.2,0.1,0.1],[0.4,0.2,0.15,0.15,0.1]];
+    if (n === 6) return [[0.25,0.2,0.15,0.15,0.15,0.1],[0.17,0.17,0.17,0.17,0.16,0.16],[0.3,0.2,0.15,0.15,0.1,0.1]];
+    return [];
+  }
+
+  // Pour chaque bucket, exploration unifiée solo + combos 2L→6L avec tie-break cote
   const result = {};
   Object.entries(buckets).forEach(([bucket, courses]) => {
     if (courses.length < 10) return;
 
-    // Solo
-    const soloResults = levierNames.map(name => {
-      let n1 = 0, f1 = 0;
+    // Évaluation commune : filtre courses dégénérées, tri levier DESC + cote ASC, stats Top1/2/3
+    function evalFormula(leviers, poids) {
+      let n1 = 0, n2 = 0, n3 = 0, degen = 0;
+      let coteSum = 0, wins = 0;
       courses.forEach(c => {
-        const sorted = [...c.enriched].sort((a, b) => (b._levs[name] || 0) - (a._levs[name] || 0));
-        if (sorted[0]?.arrivee === 1) n1++;
-        if (c.parCote[0]?.arrivee === 1) f1++;
+        const scoreOf = p => leviers.reduce((s, lv, i) => s + (p._levs[lv] || 0) * poids[i], 0);
+        const scores = c.enriched.map(scoreOf);
+        const minS = Math.min(...scores), maxS = Math.max(...scores);
+        if (maxS - minS < 0.001) { degen++; return; }
+        const sorted = [...c.enriched].sort((a, b) => {
+          const diff = scoreOf(b) - scoreOf(a);
+          if (Math.abs(diff) > 0.001) return diff;
+          return (parseFloat(a.cote) || 999) - (parseFloat(b.cote) || 999);
+        });
+        if (sorted[0]?.arrivee === 1) { n1++; if (sorted[0].cote > 1) { coteSum += sorted[0].cote; wins++; } }
+        if (sorted.slice(0, 2).some(p => p.arrivee === 1)) n2++;
+        if (sorted.slice(0, 3).some(p => p.arrivee === 1)) n3++;
       });
-      return { name, pN1: n1 / courses.length * 100, pF1: f1 / courses.length * 100 };
-    }).sort((a, b) => b.pN1 - a.pN1);
-
-    // Paires des top 5
-    const top5 = soloResults.slice(0, 5).map(r => r.name);
-    let bestCombo = { leviers: [top5[0]], poids: [1], pN1: soloResults[0].pN1 };
-
-    for (let i = 0; i < top5.length; i++)
-      for (let j = i + 1; j < top5.length; j++)
-        for (const w of [0.3, 0.4, 0.5, 0.6, 0.7]) {
-          let n1 = 0;
-          courses.forEach(c => {
-            const sorted = [...c.enriched].sort((a, b) =>
-              ((b._levs[top5[i]]||0)*w + (b._levs[top5[j]]||0)*(1-w)) -
-              ((a._levs[top5[i]]||0)*w + (a._levs[top5[j]]||0)*(1-w))
-            );
-            if (sorted[0]?.arrivee === 1) n1++;
-          });
-          const pN1 = n1 / courses.length * 100;
-          if (pN1 > bestCombo.pN1) bestCombo = { leviers: [top5[i], top5[j]], poids: [w, +(1-w).toFixed(1)], pN1 };
-        }
-
-    // Triplets des top 3
-    const top3 = top5.slice(0, 3);
-    for (const w1 of [0.4, 0.5]) {
-      const w2 = 0.3, w3 = +(1 - w1 - w2).toFixed(1);
-      let n1 = 0;
-      courses.forEach(c => {
-        const sorted = [...c.enriched].sort((a, b) =>
-          ((b._levs[top3[0]]||0)*w1 + (b._levs[top3[1]]||0)*w2 + (b._levs[top3[2]]||0)*w3) -
-          ((a._levs[top3[0]]||0)*w1 + (a._levs[top3[1]]||0)*w2 + (a._levs[top3[2]]||0)*w3)
-        );
-        if (sorted[0]?.arrivee === 1) n1++;
-      });
-      const pN1 = n1 / courses.length * 100;
-      if (pN1 > bestCombo.pN1) bestCombo = { leviers: top3, poids: [w1, w2, w3], pN1 };
+      const t = courses.length - degen;
+      return { n1, n2, n3, t, degen, pN1: t ? n1/t*100 : 0, pN2: t ? n2/t*100 : 0, pN3: t ? n3/t*100 : 0, avgCote: wins > 0 ? coteSum/wins : 0 };
     }
 
-    result[bucket] = { leviers: bestCombo.leviers, poids: bestCombo.poids, top1: bestCombo.pN1, courses: courses.length };
-    _log(`  ${bucket}: ${bestCombo.leviers.map((l,i) => l+'×'+Math.round(bestCombo.poids[i]*100)+'%').join(' + ')} → ${bestCombo.pN1.toFixed(1)}% (${courses.length} courses)`);
+    // 1L — tous leviers solo
+    const allFormulas = levierNames.map(name => ({ leviers: [name], poids: [1], n: 1, ...evalFormula([name], [1]) }));
+
+    // Top 8 solos pour alimenter les combos (par Top1)
+    const top8 = [...allFormulas].sort((a, b) => b.pN1 - a.pN1).slice(0, 8).map(r => r.leviers[0]);
+
+    // 2L → 6L
+    for (let sz = 2; sz <= Math.min(6, top8.length); sz++) {
+      const levSets = combosOfSize(top8.slice(0, Math.min(sz + 2, 8)), sz);
+      const ws = weightSets(sz);
+      for (const levs of levSets)
+        for (const w of ws)
+          allFormulas.push({ leviers: levs, poids: w, n: sz, ...evalFormula(levs, w) });
+    }
+
+    // Champion : Top1 > Top2 > Top3 > simplicité (n ASC)
+    allFormulas.sort((a, b) => {
+      if (b.pN1 !== a.pN1) return b.pN1 - a.pN1;
+      if (b.pN2 !== a.pN2) return b.pN2 - a.pN2;
+      if (b.pN3 !== a.pN3) return b.pN3 - a.pN3;
+      return a.n - b.n;
+    });
+    const champ = allFormulas[0];
+
+    result[bucket] = {
+      leviers: champ.leviers,
+      poids: champ.poids,
+      top1: champ.pN1,
+      top2: champ.pN2,
+      top3: champ.pN3,
+      avgCote: champ.avgCote,
+      courses: courses.length,
+      coursesUtilisables: champ.t,
+      degen: champ.degen,
+    };
+    _log(`  ${bucket}: ${champ.leviers.map((l,i) => l.split(' ')[0]+'×'+Math.round(champ.poids[i]*100)+'%').join(' + ')} → ${champ.pN1.toFixed(1)}% (${champ.n1}/${champ.t}, ${champ.degen} degen)`);
   });
 
   return result;
@@ -524,10 +578,12 @@ _log(`\n⚠️ ${hippo} R${rNum}C${cNum} — pas de scores`);
           continue;
         }
 
-        // Trier par score
-        const sorted = [...scoresPredictifs].sort((a, b) =>
-          parseFloat(b.scorePredictif.score) - parseFloat(a.scorePredictif.score)
-        );
+        // Trier par score (DESC), cote ASC en tie-breaker pour éviter le biais ordre d'entrée
+        const sorted = [...scoresPredictifs].sort((a, b) => {
+          const diff = parseFloat(b.scorePredictif.score) - parseFloat(a.scorePredictif.score);
+          if (Math.abs(diff) > 0.001) return diff;
+          return (parseFloat(a.participant.cote) || 999) - (parseFloat(b.participant.cote) || 999);
+        });
 
         const distLabel = distance < 1400 ? 'Sprint' : distance < 1700 ? 'Mile' : distance < 2200 ? 'Middle' : 'Staying';
         const distBucket = distLabel.toLowerCase();
@@ -556,7 +612,11 @@ _log(`${medal}${String(p['n°'] || '').padStart(2)} ${(p.cheval || '').slice(0, 
           const lr = getLevierScore(p, distBucket, ld);
           return { ...p, _levScore: lr.score, _levLabel: lr.label };
         });
-        levierResults.sort((a, b) => b._levScore - a._levScore);
+        levierResults.sort((a, b) => {
+          const diff = b._levScore - a._levScore;
+          if (Math.abs(diff) > 0.001) return diff;
+          return (parseFloat(a.cote) || 999) - (parseFloat(b.cote) || 999);
+        });
         // Normaliser 10-90
         const scores = levierResults.map(r => r._levScore);
         const minS = Math.min(...scores), maxS = Math.max(...scores);
