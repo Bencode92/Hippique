@@ -161,7 +161,12 @@ function getLevierData() {
   const jk26 = buildLookup(loadLocalJSON('jockeys_ponderated_latest.json'), 'NomPostal');
   const chx25 = buildLookup(loadLocalJSON('chevaux_2025_ponderated_latest.json'), 'Nom');
   const chx26 = buildLookup(loadLocalJSON('chevaux_ponderated_latest.json'), 'Nom');
-  levierData = { jk25, jk26, chx25, chx26 };
+  const cr25 = buildLookup(loadLocalJSON('cravache_or_2025_ponderated_latest.json'), 'NomPostal');
+  const cr26 = buildLookup(loadLocalJSON('cravache_or_ponderated_latest.json'), 'NomPostal');
+  // Forme récente + combo jockey/entraîneur : fichiers stables (pas de snapshot daté)
+  const forme = (loadLocalJSON('chevaux_forme_recente.json') || {}).resultats || {};
+  const combo = (loadLocalJSON('combo_jockey_entraineur.json') || {}).resultats || {};
+  levierData = { jk25, jk26, chx25, chx26, cr25, cr26, forme, combo };
   return levierData;
 }
 
@@ -254,9 +259,12 @@ function computeBestFormulasFromHistory() {
   const ldFull = getLevierData();
   // 4 buckets distance + 1 bucket "premium" (Longchamp + Saint-Cloud, haut de gamme région parisienne)
   const buckets = { sprint: [], mile: [], middle: [], staying: [], premium: [] };
+  // Liste exhaustive alignée avec stats.html — tous les leviers sont explorés
   const levierNames = ['Cote (1/cote)', 'Cote ref', 'Dérive cote', 'Valeur FG', 'Musique',
+    'Gains (log)', 'TauxV indiv', 'TauxP indiv', 'NbVictoires',
     'Ch TauxV', 'Ch TauxP', 'Ch Rang', 'Ch GainMoy', 'Ch ScoreMixte',
-    'Jk TauxV', 'Jk TauxP', 'Jk Rang', 'Jk ScoreMixte', 'Jk GainMoy'];
+    'Jk TauxV', 'Jk TauxP', 'Jk Rang', 'Jk ScoreMixte', 'Jk GainMoy',
+    'Cravache Rang', 'Forme récente', 'Combo Jk*Ent'];
 
   // Charger les snapshots datés pour anti-leakage
   const snapshotsDir = path.join(__dirname, 'data', 'rankings');
@@ -267,7 +275,8 @@ function computeBestFormulasFromHistory() {
       try {
         const chx = loadLocalJSON(`rankings/${d}/chevaux.json`);
         const jk = loadLocalJSON(`rankings/${d}/jockeys.json`);
-        if (chx || jk) snapshots.push({ date: d, chx: buildLookup(chx, 'Nom'), jk: buildLookup(jk, 'NomPostal') });
+        const cr = loadLocalJSON(`rankings/${d}/cravache_or.json`);
+        if (chx || jk) snapshots.push({ date: d, chx: buildLookup(chx, 'Nom'), jk: buildLookup(jk, 'NomPostal'), cr: buildLookup(cr, 'NomPostal') });
       } catch {}
     });
   } catch {}
@@ -315,6 +324,9 @@ function computeBestFormulasFromHistory() {
           ld = {
             jk25: ldFull.jk25, jk26: snap ? snap.jk : {},
             chx25: ldFull.chx25, chx26: snap ? snap.chx : {},
+            cr25: ldFull.cr25, cr26: snap && snap.cr ? snap.cr : {},
+            // forme + combo : fichiers stables latest (aligné avec stats.html)
+            forme: ldFull.forme, combo: ldFull.combo,
           };
         }
 
@@ -420,26 +432,40 @@ function computeBestFormulasFromHistory() {
 function getLevierValue(levierName, participant, ld) {
   const jk = (participant.jockey || '').toUpperCase().trim();
   const nom = extractNomCheval(participant.cheval);
+  const entr = (participant.entraineur || participant['entraîneur'] || '').toUpperCase().trim();
   const j25 = fuzzyMatch(ld.jk25, jk);
   const j26 = fuzzyMatch(ld.jk26, jk);
-  const ch25 = ld.chx25[nom], ch26 = ld.chx26[nom];
+  const ch25 = fuzzyMatch(ld.chx25, nom) || ld.chx25[nom];
+  const ch26 = fuzzyMatch(ld.chx26, nom) || ld.chx26[nom];
+  const cr25 = ld.cr25 ? fuzzyMatch(ld.cr25, jk) : null;
+  const cr26 = ld.cr26 ? fuzzyMatch(ld.cr26, jk) : null;
   const coteVal = parseFloat(participant.cote) || 0;
   const coteRef = parseFloat(participant.cote_reference) || 0;
   const valeur = parseFloat(participant.valeur) || 0;
+  const gains = parseInt(String(participant.gains || '').replace(/\D/g, '')) || 0;
   const nbC = parseInt(participant.nb_courses) || 0;
   const nbV = parseInt(participant.nb_victoires) || 0;
   const nbP = parseInt(participant.nb_places) || 0;
   const mxF = (a, b, f) => Math.max(a ? parseFloat(a[f]||0) : 0, b ? parseFloat(b[f]||0) : 0);
-  const pop = { jk25: Object.keys(ld.jk25).length||1, jk26: Object.keys(ld.jk26).length||1, chx25: Object.keys(ld.chx25).length||1, chx26: Object.keys(ld.chx26).length||1 };
+  const pop = {
+    jk25: Object.keys(ld.jk25).length||1, jk26: Object.keys(ld.jk26).length||1,
+    chx25: Object.keys(ld.chx25).length||1, chx26: Object.keys(ld.chx26).length||1,
+    cr25: Object.keys(ld.cr25 || {}).length||1, cr26: Object.keys(ld.cr26 || {}).length||1,
+  };
   const rS = (it, pp) => it ? 100*(1-(parseInt(it.Rang)-1)/pp) : 50;
   const bR = (a, pA, b, pB) => { const sa=a?rS(a,pA):null, sb=b?rS(b,pB):null; return sa!==null&&sb!==null?Math.max(sa,sb):sa??sb??50; };
+
+  // Forme récente (chevaux_forme_recente.json) et Combo Jk×Entraîneur (combo_jockey_entraineur.json)
+  const forme = (ld.forme || {})[nom];
+  const comboKey = jk + '|||' + entr;
+  const combo = (ld.combo || {})[comboKey];
 
   const map = {
     'Cote (1/cote)': coteVal>1?(1/coteVal)*100:50,
     'Cote ref': coteRef>1?(1/coteRef)*100:50,
     'Valeur FG': valeur>0?valeur:50,
     'Musique': (() => { const m=participant.musique; if(!m)return 50; const pos=m.replace(/\(\d+\)/g,'').match(/(\d+|[DRT])[a-z]/gi); if(!pos||pos.length<2)return 50; const l=pos.slice(0,5).map(x=>{const v=x.slice(0,-1);if('DRT'.includes(v))return 12;const n=parseInt(v);return n===0?12:n;}); let sc=0,w=0; l.forEach((ps,i)=>{const wt=(l.length-i)/l.length;const s=ps===1?100:ps===2?80:ps===3?65:ps<=5?45:ps<=8?25:10;sc+=s*wt;w+=wt;}); return w>0?sc/w:50; })(),
-    'Gains (log)': parseInt(String(participant.gains||'').replace(/\D/g,''))||0 > 0 ? Math.log10(parseInt(String(participant.gains||'').replace(/\D/g,'')))*10 : 0,
+    'Gains (log)': gains > 0 ? Math.log10(gains) * 10 : 0,
     'TauxV indiv': nbC>=2?nbV/nbC*100:8,
     'TauxP indiv': nbC>=2?nbP/nbC*100:30,
     'NbVictoires': nbV*5,
@@ -453,9 +479,9 @@ function getLevierValue(levierName, participant, ld) {
     'Jk Rang': bR(j25,pop.jk25,j26,pop.jk26),
     'Jk ScoreMixte': mxF(j25,j26,'ScoreMixte'),
     'Jk GainMoy': Math.max(j25?.GainMoyen||0,j26?.GainMoyen||0)>0?Math.log10(Math.max(j25?.GainMoyen||0,j26?.GainMoyen||0))*15:0,
-    'Cravache Rang': 50, // simplified
-    'Forme récente': 50,
-    'Combo Jk*Ent': 10,
+    'Cravache Rang': bR(cr25, pop.cr25, cr26, pop.cr26),
+    'Forme récente': forme ? forme.formeScore : 50,
+    'Combo Jk*Ent': combo && combo.courses >= 3 ? combo.tauxVictoire : 10,
     'Dérive cote': coteVal>1&&coteRef>1 ? 50+(coteRef-coteVal)/coteRef*200 : 50,
   };
   // Aussi gérer les combos pré-calculés

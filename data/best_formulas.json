@@ -1,6 +1,6 @@
 {
   "_version": 2,
-  "_generatedAt": "2026-04-24T09:28:40.297Z",
+  "_generatedAt": "2026-04-24T11:30:40.854Z",
   "sprint": {
     "leviers": [
       "Cote (1/cote)",
@@ -21,18 +21,16 @@
   "mile": {
     "leviers": [
       "Cote (1/cote)",
-      "Cote ref",
-      "Jk Rang"
+      "TauxV indiv"
     ],
     "poids": [
       0.5,
-      0.3,
-      0.2
+      0.5
     ],
-    "top1": 31.69642857142857,
-    "top2": 49.107142857142854,
-    "top3": 60.26785714285714,
-    "avgCote": 3.008450704225351,
+    "top1": 34.375,
+    "top2": 46.875,
+    "top3": 60.71428571428571,
+    "avgCote": 3.4116883116883123,
     "courses": 224,
     "coursesUtilisables": 224,
     "degen": 0
@@ -40,20 +38,16 @@
   "middle": {
     "leviers": [
       "Cote (1/cote)",
-      "Jk Rang",
-      "Jk TauxV",
-      "Jk GainMoy"
+      "Cravache Rang"
     ],
     "poids": [
       0.5,
-      0.2,
-      0.2,
-      0.1
+      0.5
     ],
-    "top1": 33.80281690140845,
-    "top2": 51.64319248826291,
-    "top3": 63.38028169014085,
-    "avgCote": 3.355555555555556,
+    "top1": 33.33333333333333,
+    "top2": 48.35680751173709,
+    "top3": 62.441314553990615,
+    "avgCote": 3.507042253521127,
     "courses": 213,
     "coursesUtilisables": 213,
     "degen": 0
@@ -61,20 +55,22 @@
   "staying": {
     "leviers": [
       "Cote (1/cote)",
+      "Cote ref",
       "Musique",
       "Jk Rang",
       "Jk GainMoy"
     ],
     "poids": [
-      0.4,
+      0.2,
+      0.2,
       0.2,
       0.2,
       0.2
     ],
-    "top1": 35.19553072625698,
-    "top2": 51.955307262569825,
-    "top3": 60.893854748603346,
-    "avgCote": 3.557142857142857,
+    "top1": 34.63687150837989,
+    "top2": 49.72067039106145,
+    "top3": 59.77653631284916,
+    "avgCote": 3.6790322580645154,
     "courses": 179,
     "coursesUtilisables": 179,
     "degen": 0
@@ -84,9 +80,9 @@
       "Cote (1/cote)",
       "Cote ref",
       "Dérive cote",
-      "Jk Rang",
+      "Cravache Rang",
       "Ch TauxP",
-      "Musique"
+      "Jk GainMoy"
     ],
     "poids": [
       0.25,
@@ -96,10 +92,10 @@
       0.15,
       0.1
     ],
-    "top1": 30.158730158730158,
-    "top2": 46.03174603174603,
-    "top3": 59.25925925925925,
-    "avgCote": 3.9649122807017547,
+    "top1": 29.629629629629626,
+    "top2": 44.97354497354497,
+    "top3": 58.201058201058196,
+    "avgCote": 4.105357142857144,
     "courses": 189,
     "coursesUtilisables": 189,
     "degen": 0
