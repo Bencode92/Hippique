@@ -237,6 +237,7 @@
                         <div class="hippo-actions">
                             <button onclick="selectAllHippo()">Tout cocher</button>
                             <button onclick="deselectAllHippo()">Tout décocher</button>
+                            <button onclick="selectPremiumHippos()" style="color:var(--gold);font-weight:600" title="Longchamp + Saint-Cloud + Chantilly + Fontainebleau + Deauville">&#11088; Premium FR</button>
                         </div>
                         <div id="hippo-list"></div>
                     </div>
@@ -379,6 +380,16 @@
 
     function deselectAllHippo() {
         document.querySelectorAll('#hippo-list input[type="checkbox"]').forEach(cb => cb.checked = false);
+        updateHippoSelection();
+    }
+
+    // Preset "Premium FR" : LC + SC + Chantilly + Fontainebleau + Deauville
+    // Aligné avec PREMIUM_HIPPOS de live-scoring.js — mêmes jockeys/écuries, pool cohérent.
+    const PREMIUM_FR = new Set(['PARISLONGCHAMP', 'LONGCHAMP', 'SAINT-CLOUD', 'CHANTILLY', 'FONTAINEBLEAU', 'DEAUVILLE']);
+    function selectPremiumHippos() {
+        document.querySelectorAll('#hippo-list input[type="checkbox"]').forEach(cb => {
+            cb.checked = PREMIUM_FR.has((cb.value || '').toUpperCase());
+        });
         updateHippoSelection();
     }
 
