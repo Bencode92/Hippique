@@ -1258,6 +1258,7 @@
                         for (const w of ws) {
                             const r = evalCombo(courses, levs, w);
                             comboResults.push({
+                                leviers: levs, weights: w,
                                 label: levs.map((l,i) => `${sh(l)}×${(w[i]*100).toFixed(0)}%`).join(' + '),
                                 n: sz, ...r
                             });
@@ -1266,7 +1267,44 @@
 
                 comboResults.sort((a, b) => b.pN1 !== a.pN1 ? b.pN1 - a.pN1 : b.pN2 !== a.pN2 ? b.pN2 - a.pN2 : b.pN3 - a.pN3);
 
+                // CHAMPION : meilleure formule toutes tailles confondues (solo + combos)
+                // Tie-break : Top1 > Top2 > Top3 > simplicité (moins de leviers)
+                const soloForChamp = results.map(r => ({ kind: 'solo', n: 1, label: r.name, pN1: r.pN1, pN2: r.pN2, pN3: r.pN3, n1: r.n1, n2: r.n2, n3: r.n3, t: r.t, avgCote: r.avgCote }));
+                const allFormulas = [...soloForChamp, ...comboResults.map(r => ({ kind: 'combo', ...r }))];
+                allFormulas.sort((a, b) => {
+                    if (b.pN1 !== a.pN1) return b.pN1 - a.pN1;
+                    if (b.pN2 !== a.pN2) return b.pN2 - a.pN2;
+                    if (b.pN3 !== a.pN3) return b.pN3 - a.pN3;
+                    return (a.n || 1) - (b.n || 1);
+                });
+                const champion = allFormulas[0];
+                const champDiff = champion.pN1 - favP;
+                const champTies = allFormulas.filter(f => f.pN1 === champion.pN1 && f.pN2 === champion.pN2 && f.pN3 === champion.pN3).length;
+
                 html += `<div class="levier-content" id="levier-${cat}" style="display:${firstTab ? '' : 'none'}">`;
+
+                // Banner CHAMPION
+                const champSizeLabel = champion.n === 1 ? '1 levier (solo)' : `${champion.n} leviers`;
+                html += `<div style="margin:0.8rem 0 1.2rem;padding:14px 18px;background:linear-gradient(135deg,rgba(233,209,140,0.08),rgba(64,224,208,0.06));border:1px solid rgba(233,209,140,0.35);border-radius:8px">
+                    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+                        <div style="font-size:1.8rem">&#127942;</div>
+                        <div style="flex:1;min-width:240px">
+                            <div style="font-size:0.7rem;opacity:0.6;letter-spacing:0.08em;text-transform:uppercase">Champion — ${champSizeLabel}</div>
+                            <div style="font-size:1rem;font-weight:600;color:var(--accent);margin-top:2px">${champion.label}</div>
+                            ${champTies > 1 ? `<div style="font-size:0.7rem;opacity:0.5;margin-top:2px">⚠️ ${champTies} formules ex-æquo — affichée : la plus simple</div>` : ''}
+                        </div>
+                        <div style="text-align:right">
+                            <div style="font-size:1.8rem;font-weight:700;color:${champDiff > 0 ? '#40e05a' : champDiff < 0 ? '#e05a40' : 'var(--gold)'}">${champion.pN1.toFixed(0)}%</div>
+                            <div style="font-size:0.75rem;opacity:0.7">Top1 <span style="opacity:0.5">(${champion.n1}/${champion.t})</span></div>
+                            <div style="font-size:0.75rem;margin-top:2px"><span style="opacity:0.6">vs favori</span> <strong style="color:${champDiff > 0 ? '#40e05a' : champDiff < 0 ? '#e05a40' : 'var(--gold)'}">${champDiff > 0 ? '+' : ''}${champDiff.toFixed(0)}pp</strong></div>
+                        </div>
+                        <div style="display:flex;gap:14px;font-size:0.78rem;padding-left:12px;border-left:1px solid rgba(255,255,255,0.1)">
+                            <div><span style="opacity:0.6">Top2</span><br><strong>${champion.pN2.toFixed(0)}%</strong></div>
+                            <div><span style="opacity:0.6">Top3</span><br><strong>${champion.pN3.toFixed(0)}%</strong></div>
+                            <div><span style="opacity:0.6">avg Cote</span><br><strong>${champion.avgCote > 0 ? champion.avgCote.toFixed(1) : '-'}</strong></div>
+                        </div>
+                    </div>
+                </div>`;
 
                 // Formule actuelle
                 const curDiff = currentR.pN1 - favP;
@@ -1308,8 +1346,11 @@
                     html += renderSection(`${sizeLabels[sz]} — Top 5 <span style="opacity:0.5;font-size:0.75rem">(${tested} testées)</span>`, ofSize, 5);
                 }
 
-                // Détail course par course pour le meilleur levier solo
-                const bestLev = results[0].name;
+                // Détail course par course — CHAMPION (solo ou combo)
+                const champLeviers = champion.kind === 'combo' ? champion.leviers : [champion.label];
+                const champWeights = champion.kind === 'combo' ? champion.weights : [1];
+                const bestLev = champion.label;
+                const scoreOf = p => champLeviers.reduce((s, lv, i) => s + (p._lev[lv]||0) * champWeights[i], 0);
                 html += `<h3 style="color:var(--accent);margin:1.2rem 0 0.4rem;font-size:0.9rem;cursor:pointer" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'':'none'">
                     Détail course par course — ${bestLev} <span style="opacity:0.5;font-size:0.75rem">▼ cliquer</span></h3>`;
                 html += `<div style="display:none;overflow-x:auto">`;
@@ -1321,14 +1362,14 @@
                 </tr></thead><tbody>`;
 
                 courses.forEach((c, ci) => {
-                    // Classement par le meilleur levier (DESC), cote ASC en tie-breaker
+                    // Classement par le score du champion (DESC), cote ASC en tie-breaker
                     const sorted = [...c.parts].sort((a,b) => {
-                        const diff = (b._lev[bestLev]||0) - (a._lev[bestLev]||0);
+                        const diff = scoreOf(b) - scoreOf(a);
                         if (Math.abs(diff) > 0.001) return diff;
                         return (parseFloat(a.cote)||999) - (parseFloat(b.cote)||999);
                     });
-                    // Détection levier dégénéré (tous scores égaux = pas de signal pour cette course)
-                    const rawScores = sorted.map(p => p._lev[bestLev]||0);
+                    // Détection dégénéré (tous scores égaux = pas de signal pour cette course)
+                    const rawScores = sorted.map(p => scoreOf(p));
                     const scoreMin = Math.min(...rawScores), scoreMax = Math.max(...rawScores);
                     const isDegen = (scoreMax - scoreMin) < 0.001;
 
@@ -1400,7 +1441,7 @@
                         else if (arr) { arrStr = `<span style="color:#F1E6C8">${arr}e</span>`; }
                         else { arrStr = '<span style="color:#555">—</span>'; }
                         const medal = ri === 0 ? '🥇' : ri === 1 ? '🥈' : ri === 2 ? '🥉' : String(ri+1);
-                        const rawScore = p._lev[bestLev] || 0;
+                        const rawScore = scoreOf(p);
                         const scoreStr = isDegen ? `<span style="opacity:0.5">${rawScore.toFixed(1)}</span>` : rawScore.toFixed(1);
                         html += `<tr style="${bg}border-bottom:1px solid rgba(255,255,255,0.03)">
                             <td style="padding:3px 6px">${medal}</td>
