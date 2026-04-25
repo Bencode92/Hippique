@@ -1,7 +1,7 @@
 {
   "hippodrome": "SANDOWN PARK",
   "type_reunion": "STEEPLECHASE",
-  "date_extraction": "2026-04-25T10:40:00.772284",
+  "date_extraction": "2026-04-25T19:20:01.130035",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/25042026/R8",
   "courses": [
     {
@@ -12,29 +12,6 @@
       "distance": "3100m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "BROOKIE H.PU. 9 a.",
-          "cheval_url": "",
-          "père_mère": "Par: POLICY MAKER et PRESENTING D'AZY (PRESENTING)",
-          "corde": "",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/25042026/R8/C4/P1.png",
-          "propriétaire": "MISS A F RUGG",
-          "entraineur": "ANTHONY HONEYBALL",
-          "éleveurs": "",
-          "jockey": "SAM TWISTON-DAVIES",
-          "poids": "74 kg",
-          "gains": "11196900",
-          "musique": "0s8s(25)As3s",
-          "valeur": "74.0",
-          "equipement(s)": "",
-          "nb_courses": 29,
-          "nb_victoires": 5,
-          "nb_places": 6,
-          "cote": 7.6,
-          "cote_tendance": "",
-          "cote_reference": 7.6
-        },
         {
           "n°": "2",
           "cheval": "EDWARDSTONE H.PU. 12 a.",
@@ -53,30 +30,11 @@
           "equipement(s)": "",
           "nb_courses": 41,
           "nb_victoires": 11,
-          "nb_places": 16
-        },
-        {
-          "n°": "3",
-          "cheval": "JONBON H.PU. 10 a.",
-          "cheval_url": "",
-          "père_mère": "Par: WALK IN THE PARK et STAR FACE (SAINT DES SAINTS)",
-          "corde": "",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/25042026/R8/C4/P3.png",
-          "propriétaire": "MR JOHN P. MCMANUS",
-          "entraineur": "NICKY HENDERSON",
-          "éleveurs": "",
-          "jockey": "NICO DE BOINVILLE",
-          "poids": "74 kg",
-          "gains": "173478100",
-          "musique": "2s1s1s(25)2s",
-          "valeur": "74.0",
-          "equipement(s)": "A",
-          "nb_courses": 28,
-          "nb_victoires": 20,
-          "nb_places": 8,
-          "cote": 2.5,
+          "nb_places": 16,
+          "cote": 24.0,
           "cote_tendance": "",
-          "cote_reference": 2.5
+          "cote_reference": 64.0,
+          "arrivee": 1
         },
         {
           "n°": "4",
@@ -96,30 +54,11 @@
           "equipement(s)": "A",
           "nb_courses": 23,
           "nb_victoires": 7,
-          "nb_places": 6
-        },
-        {
-          "n°": "5",
-          "cheval": "MIRABAD H.PU. 7 a.",
-          "cheval_url": "",
-          "père_mère": "Par: GLENEAGLES et MILA (CAPE CROSS)",
-          "corde": "",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/25042026/R8/C4/P5.png",
-          "propriétaire": "THE FOREFOLD RACING PARTNERSHIP",
-          "entraineur": "DAN SKELTON",
-          "éleveurs": "",
-          "jockey": "TRISTAN DURRELL",
-          "poids": "74 kg",
-          "gains": "13191600",
-          "musique": "1s2s2sTs",
-          "valeur": "74.0",
-          "equipement(s)": "",
-          "nb_courses": 15,
-          "nb_victoires": 5,
           "nb_places": 6,
-          "cote": 4.5,
+          "cote": 11.0,
           "cote_tendance": "",
-          "cote_reference": 4.5
+          "cote_reference": 32.0,
+          "arrivee": 2
         },
         {
           "n°": "6",
@@ -140,9 +79,56 @@
           "nb_courses": 27,
           "nb_victoires": 9,
           "nb_places": 9,
-          "cote": 4.5,
+          "cote": 2.9,
           "cote_tendance": "",
-          "cote_reference": 4.5
+          "cote_reference": 5.2,
+          "arrivee": 3
+        },
+        {
+          "n°": "1",
+          "cheval": "BROOKIE H.PU. 9 a.",
+          "cheval_url": "",
+          "père_mère": "Par: POLICY MAKER et PRESENTING D'AZY (PRESENTING)",
+          "corde": "",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/25042026/R8/C4/P1.png",
+          "propriétaire": "MISS A F RUGG",
+          "entraineur": "ANTHONY HONEYBALL",
+          "éleveurs": "",
+          "jockey": "SAM TWISTON-DAVIES",
+          "poids": "74 kg",
+          "gains": "11196900",
+          "musique": "0s8s(25)As3s",
+          "valeur": "74.0",
+          "equipement(s)": "",
+          "nb_courses": 29,
+          "nb_victoires": 5,
+          "nb_places": 6,
+          "cote": 16.0,
+          "cote_tendance": "+",
+          "cote_reference": 9.2
+        },
+        {
+          "n°": "5",
+          "cheval": "MIRABAD H.PU. 7 a.",
+          "cheval_url": "",
+          "père_mère": "Par: GLENEAGLES et MILA (CAPE CROSS)",
+          "corde": "",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/25042026/R8/C4/P5.png",
+          "propriétaire": "THE FOREFOLD RACING PARTNERSHIP",
+          "entraineur": "DAN SKELTON",
+          "éleveurs": "",
+          "jockey": "TRISTAN DURRELL",
+          "poids": "74 kg",
+          "gains": "13191600",
+          "musique": "1s2s2sTs",
+          "valeur": "74.0",
+          "equipement(s)": "",
+          "nb_courses": 15,
+          "nb_victoires": 5,
+          "nb_places": 6,
+          "cote": 8.9,
+          "cote_tendance": "-",
+          "cote_reference": 8.7
         },
         {
           "n°": "7",
@@ -163,14 +149,15 @@
           "nb_courses": 14,
           "nb_victoires": 6,
           "nb_places": 4,
-          "cote": 5.7,
+          "cote": 2.1,
           "cote_tendance": "",
-          "cote_reference": 5.7
+          "cote_reference": 2.1
         }
       ],
       "terrain": "Bon léger",
       "penetrometre": "2,8",
-      "cordeCourse": "CORDE_DROITE"
+      "cordeCourse": "CORDE_DROITE",
+      "arrivee_definitive": true
     }
   ]
 }

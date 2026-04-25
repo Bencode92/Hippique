@@ -1,7 +1,7 @@
 {
   "hippodrome": "MARONAS",
   "type_reunion": "Plat",
-  "date_extraction": "2026-04-25T10:39:56.342233",
+  "date_extraction": "2026-04-25T19:19:56.608119",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/25042026/R7",
   "courses": [
     {
@@ -12,29 +12,6 @@
       "distance": "1000m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "LA ATRAYENTE F.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MONJE NEGRO et CAUTIVANTE (CAGNEY)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/25042026/R7/C1/P1.png",
-          "propriétaire": "HS. LA HORQUETA",
-          "entraineur": "MARTIN MARTINEZ",
-          "éleveurs": "",
-          "jockey": "LUIS ALBERTO CACERES",
-          "poids": "56 kg",
-          "gains": "143164000",
-          "musique": "6p1p6p1p3p",
-          "valeur": "56.0",
-          "equipement(s)": "",
-          "nb_courses": 9,
-          "nb_victoires": 3,
-          "nb_places": 4,
-          "cote": 3.0,
-          "cote_tendance": "",
-          "cote_reference": 3.0
-        },
         {
           "n°": "2",
           "cheval": "ATINA F.PU. 4 a.",
@@ -53,7 +30,11 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 4,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 1.5,
+          "cote_tendance": "",
+          "cote_reference": 3.2,
+          "arrivee": 1
         },
         {
           "n°": "3",
@@ -73,7 +54,11 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 2,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 5.9,
+          "cote_tendance": "",
+          "cote_reference": 6.8,
+          "arrivee": 2
         },
         {
           "n°": "4",
@@ -94,32 +79,10 @@
           "nb_courses": 11,
           "nb_victoires": 2,
           "nb_places": 4,
-          "cote": 6.1,
-          "cote_tendance": "",
-          "cote_reference": 6.1
-        },
-        {
-          "n°": "5",
-          "cheval": "TAP IT WIN F.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: TAP IT RICH et BEST LANCE (GRANDE LANCE)",
-          "corde": "(Corde:05)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/25042026/R7/C1/P5.png",
-          "propriétaire": "VIRGEN DEL LUJAN",
-          "entraineur": "DOMINGO STENGONE",
-          "éleveurs": "",
-          "jockey": "FEDERICO FABIAN PIRIZ",
-          "poids": "56 kg",
-          "gains": "116396000",
-          "musique": "1p0p1p7p1p",
-          "valeur": "56.0",
-          "equipement(s)": "",
-          "nb_courses": 10,
-          "nb_victoires": 4,
-          "nb_places": 3,
-          "cote": 3.0,
-          "cote_tendance": "",
-          "cote_reference": 3.0
+          "cote": 13.0,
+          "cote_tendance": "-",
+          "cote_reference": 11.0,
+          "arrivee": 3
         },
         {
           "n°": "6",
@@ -140,13 +103,41 @@
           "nb_courses": 15,
           "nb_victoires": 2,
           "nb_places": 6,
-          "cote": 3.0,
-          "cote_tendance": "",
-          "cote_reference": 3.0
+          "cote": 7.3,
+          "cote_tendance": "+",
+          "cote_reference": 8.8,
+          "arrivee": 4
+        },
+        {
+          "n°": "1",
+          "cheval": "LA ATRAYENTE F.PU. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: MONJE NEGRO et CAUTIVANTE (CAGNEY)",
+          "corde": "(Corde:01)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/25042026/R7/C1/P1.png",
+          "propriétaire": "HS. LA HORQUETA",
+          "entraineur": "MARTIN MARTINEZ",
+          "éleveurs": "",
+          "jockey": "LUIS ALBERTO CACERES",
+          "poids": "56 kg",
+          "gains": "143164000",
+          "musique": "6p1p6p1p3p",
+          "valeur": "56.0",
+          "equipement(s)": "",
+          "nb_courses": 9,
+          "nb_victoires": 3,
+          "nb_places": 4,
+          "cote": 8.4,
+          "cote_tendance": "+",
+          "cote_reference": 2.3,
+          "arrivee": 5
         }
       ],
       "typePiste": "GAZON",
-      "cordeCourse": "CORDE_GAUCHE"
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
+      "cordeCourse": "CORDE_GAUCHE",
+      "arrivee_definitive": true
     },
     {
       "nom": "PREMIO DOG HALO (2017)",
@@ -156,29 +147,6 @@
       "distance": "1500m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "LA KINCSEM F.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: INVASOR et LA LOGICA (IDEOLOGICO)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/25042026/R7/C2/P1.png",
-          "propriétaire": "DON JUAN FELIPE",
-          "entraineur": "SERGIO PELUFFO",
-          "éleveurs": "",
-          "jockey": "FACUNDO GABRIEL D'ALBORA",
-          "poids": "53 kg",
-          "gains": "17612000",
-          "musique": "6p0p1p",
-          "valeur": "53.0",
-          "equipement(s)": "",
-          "nb_courses": 3,
-          "nb_victoires": 1,
-          "nb_places": 0,
-          "cote": 3.9,
-          "cote_tendance": "",
-          "cote_reference": 3.9
-        },
         {
           "n°": "2",
           "cheval": "LA KARIBE F.PU. 5 a.",
@@ -197,47 +165,11 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 2,
-          "nb_places": 4
-        },
-        {
-          "n°": "3",
-          "cheval": "RESCATADA F.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: ESCOLASO et CAPTURADA H (HARDY)",
-          "corde": "(Corde:03)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/25042026/R7/C2/P3.png",
-          "propriétaire": "EL RENEGAO",
-          "entraineur": "CAROLINA JOSEFA DOTTA",
-          "éleveurs": "",
-          "jockey": "JORGE LUIS PIRIZ",
-          "poids": "57 kg",
-          "gains": "26828000",
-          "musique": "8p0p0p1p0p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 9,
-          "nb_victoires": 1,
-          "nb_places": 2
-        },
-        {
-          "n°": "4",
-          "cheval": "NADA CONVENCIONAL F.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: EMCEE et CARAVELA (GIANT'S CAUSEWAY)",
-          "corde": "(Corde:04)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/25042026/R7/C2/P4.png",
-          "propriétaire": "EL FACU",
-          "entraineur": "SERGIO PELUFFO",
-          "éleveurs": "",
-          "jockey": "HECTOR FABIAN LAZO",
-          "poids": "57 kg",
-          "gains": "30256000",
-          "musique": "0p4p1p5p4p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 12,
-          "nb_victoires": 1,
-          "nb_places": 5
+          "nb_places": 4,
+          "cote": 2.7,
+          "cote_tendance": "",
+          "cote_reference": 9.6,
+          "arrivee": 1
         },
         {
           "n°": "5",
@@ -258,9 +190,10 @@
           "nb_courses": 26,
           "nb_victoires": 1,
           "nb_places": 12,
-          "cote": 7.9,
+          "cote": 5.7,
           "cote_tendance": "",
-          "cote_reference": 7.9
+          "cote_reference": 5.6,
+          "arrivee": 2
         },
         {
           "n°": "6",
@@ -281,9 +214,33 @@
           "nb_courses": 11,
           "nb_victoires": 2,
           "nb_places": 5,
-          "cote": 3.9,
+          "cote": 9.4,
           "cote_tendance": "",
-          "cote_reference": 3.9
+          "cote_reference": 48.0,
+          "arrivee": 2
+        },
+        {
+          "n°": "8",
+          "cheval": "PIMIENTA F.PU. 5 a.",
+          "cheval_url": "",
+          "père_mère": "Par: UNITARIAN et AMISTOSA FOUND (FUND OF FUNDS)",
+          "corde": "(Corde:08)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/25042026/R7/C2/P8.png",
+          "propriétaire": "EL COLITA",
+          "entraineur": "GONZALO AGUSTIN RODRIGUEZ",
+          "éleveurs": "",
+          "jockey": "LUCIANA VALERIA FRASER",
+          "poids": "55 kg",
+          "gains": "26600000",
+          "musique": "5p3p1p3p5p",
+          "valeur": "55.0",
+          "equipement(s)": "",
+          "nb_courses": 16,
+          "nb_victoires": 1,
+          "nb_places": 4,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "arrivee": 3
         },
         {
           "n°": "7",
@@ -304,33 +261,89 @@
           "nb_courses": 18,
           "nb_victoires": 1,
           "nb_places": 9,
-          "cote": 1.9,
-          "cote_tendance": "",
-          "cote_reference": 1.9
+          "cote": 5.1,
+          "cote_tendance": "+",
+          "cote_reference": 8.0,
+          "arrivee": 4
         },
         {
-          "n°": "8",
-          "cheval": "PIMIENTA F.PU. 5 a.",
+          "n°": "4",
+          "cheval": "NADA CONVENCIONAL F.PU. 5 a.",
           "cheval_url": "",
-          "père_mère": "Par: UNITARIAN et AMISTOSA FOUND (FUND OF FUNDS)",
-          "corde": "(Corde:08)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/25042026/R7/C2/P8.png",
-          "propriétaire": "EL COLITA",
-          "entraineur": "GONZALO AGUSTIN RODRIGUEZ",
+          "père_mère": "Par: EMCEE et CARAVELA (GIANT'S CAUSEWAY)",
+          "corde": "(Corde:04)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/25042026/R7/C2/P4.png",
+          "propriétaire": "EL FACU",
+          "entraineur": "SERGIO PELUFFO",
           "éleveurs": "",
-          "jockey": "LUCIANA VALERIA FRASER",
-          "poids": "55 kg",
-          "gains": "26600000",
-          "musique": "5p3p1p3p5p",
-          "valeur": "55.0",
+          "jockey": "HECTOR FABIAN LAZO",
+          "poids": "57 kg",
+          "gains": "30256000",
+          "musique": "0p4p1p5p4p",
+          "valeur": "57.0",
           "equipement(s)": "",
-          "nb_courses": 16,
+          "nb_courses": 12,
           "nb_victoires": 1,
-          "nb_places": 4
+          "nb_places": 5,
+          "cote": 11.0,
+          "cote_tendance": "-",
+          "cote_reference": 6.0,
+          "arrivee": 5
+        },
+        {
+          "n°": "1",
+          "cheval": "LA KINCSEM F.PU. 5 a.",
+          "cheval_url": "",
+          "père_mère": "Par: INVASOR et LA LOGICA (IDEOLOGICO)",
+          "corde": "(Corde:01)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/25042026/R7/C2/P1.png",
+          "propriétaire": "DON JUAN FELIPE",
+          "entraineur": "SERGIO PELUFFO",
+          "éleveurs": "",
+          "jockey": "FACUNDO GABRIEL D'ALBORA",
+          "poids": "53 kg",
+          "gains": "17612000",
+          "musique": "6p0p1p",
+          "valeur": "53.0",
+          "equipement(s)": "",
+          "nb_courses": 3,
+          "nb_victoires": 1,
+          "nb_places": 0,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 2.0,
+          "arrivee": 6
+        },
+        {
+          "n°": "3",
+          "cheval": "RESCATADA F.PU. 5 a.",
+          "cheval_url": "",
+          "père_mère": "Par: ESCOLASO et CAPTURADA H (HARDY)",
+          "corde": "(Corde:03)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/25042026/R7/C2/P3.png",
+          "propriétaire": "EL RENEGAO",
+          "entraineur": "CAROLINA JOSEFA DOTTA",
+          "éleveurs": "",
+          "jockey": "JORGE LUIS PIRIZ",
+          "poids": "57 kg",
+          "gains": "26828000",
+          "musique": "8p0p0p1p0p",
+          "valeur": "57.0",
+          "equipement(s)": "",
+          "nb_courses": 9,
+          "nb_victoires": 1,
+          "nb_places": 2,
+          "cote": 50.0,
+          "cote_tendance": "-",
+          "cote_reference": 24.0,
+          "arrivee": 7
         }
       ],
       "typePiste": "GAZON",
-      "cordeCourse": "CORDE_GAUCHE"
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
+      "cordeCourse": "CORDE_GAUCHE",
+      "arrivee_definitive": true
     },
     {
       "nom": "PREMIO ECCLECTICO (2018)",
@@ -358,7 +371,10 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 0,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 3.1,
+          "cote_tendance": "+",
+          "cote_reference": 7.1
         },
         {
           "n°": "2",
@@ -378,7 +394,10 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 11.0,
+          "cote_tendance": "-",
+          "cote_reference": 14.0
         },
         {
           "n°": "3",
@@ -398,7 +417,10 @@
           "equipement(s)": "",
           "nb_courses": 13,
           "nb_victoires": 1,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 26.0,
+          "cote_tendance": "+",
+          "cote_reference": 14.0
         },
         {
           "n°": "4",
@@ -418,7 +440,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 17.0,
+          "cote_tendance": "-",
+          "cote_reference": 10.0
         },
         {
           "n°": "5",
@@ -439,9 +464,9 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 2.2,
-          "cote_tendance": "",
-          "cote_reference": 2.2
+          "cote": 10.0,
+          "cote_tendance": "+",
+          "cote_reference": 10.0
         },
         {
           "n°": "6",
@@ -462,29 +487,9 @@
           "nb_courses": 3,
           "nb_victoires": 1,
           "nb_places": 2,
-          "cote": 1.4,
-          "cote_tendance": "",
-          "cote_reference": 1.4
-        },
-        {
-          "n°": "7",
-          "cheval": "NOHAYMASEXCUSA F.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MIDAS TOUCH et KANANGA (FORESTRY)",
-          "corde": "(Corde:07)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/25042026/R7/C3/P7.png",
-          "propriétaire": "QUE YUNTA",
-          "entraineur": "CARLOS DANIEL FAJARDO",
-          "éleveurs": "",
-          "jockey": "SANTIAGO BAZ",
-          "poids": "54 kg",
-          "gains": "",
-          "musique": "",
-          "valeur": "54.0",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
+          "cote": 2.8,
+          "cote_tendance": "+",
+          "cote_reference": 2.7
         },
         {
           "n°": "8",
@@ -504,10 +509,15 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 5.7,
+          "cote_tendance": "",
+          "cote_reference": 3.5
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -556,7 +566,9 @@
           "equipement(s)": "",
           "nb_courses": 21,
           "nb_victoires": 1,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 3.1,
+          "cote_tendance": "-"
         },
         {
           "n°": "3",
@@ -576,7 +588,9 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 10.0,
+          "cote_tendance": "+"
         },
         {
           "n°": "4",
@@ -596,7 +610,9 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 0,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 15.0,
+          "cote_tendance": "+"
         },
         {
           "n°": "5",
@@ -617,8 +633,8 @@
           "nb_courses": 10,
           "nb_victoires": 1,
           "nb_places": 4,
-          "cote": 6.1,
-          "cote_tendance": "",
+          "cote": 2.2,
+          "cote_tendance": "-",
           "cote_reference": 6.1
         },
         {
@@ -640,8 +656,8 @@
           "nb_courses": 7,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 1.5,
-          "cote_tendance": "",
+          "cote": 6.3,
+          "cote_tendance": "+",
           "cote_reference": 1.5
         },
         {
@@ -683,12 +699,14 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 3.0,
-          "cote_tendance": "",
+          "cote": 15.0,
+          "cote_tendance": "-",
           "cote_reference": 3.0
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -717,7 +735,9 @@
           "equipement(s)": "",
           "nb_courses": 31,
           "nb_victoires": 3,
-          "nb_places": 18
+          "nb_places": 18,
+          "cote": 23.0,
+          "cote_tendance": "-"
         },
         {
           "n°": "2",
@@ -738,9 +758,9 @@
           "nb_courses": 29,
           "nb_victoires": 4,
           "nb_places": 12,
-          "cote": 1.3,
-          "cote_tendance": "",
-          "cote_reference": 1.3
+          "cote": 9.5,
+          "cote_tendance": "+",
+          "cote_reference": 1.1
         },
         {
           "n°": "3",
@@ -760,7 +780,9 @@
           "equipement(s)": "",
           "nb_courses": 20,
           "nb_victoires": 3,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 4.1,
+          "cote_tendance": "-"
         },
         {
           "n°": "4",
@@ -780,30 +802,9 @@
           "equipement(s)": "",
           "nb_courses": 20,
           "nb_victoires": 3,
-          "nb_places": 11
-        },
-        {
-          "n°": "5",
-          "cheval": "ROWAN M.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MIDAS TOUCH et ACUARELISTA (ARTISTE ROYAL)",
-          "corde": "(Corde:05)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/25042026/R7/C5/P5.png",
-          "propriétaire": "EL PELUCHE",
-          "entraineur": "JAVIER TUCCELLI",
-          "éleveurs": "",
-          "jockey": "LORENA FIGALO",
-          "poids": "56 kg",
-          "gains": "86140000",
-          "musique": "3p5p4p2p6p",
-          "valeur": "56.0",
-          "equipement(s)": "",
-          "nb_courses": 19,
-          "nb_victoires": 3,
-          "nb_places": 9,
-          "cote": 2.6,
-          "cote_tendance": "",
-          "cote_reference": 2.6
+          "nb_places": 11,
+          "cote": 7.9,
+          "cote_tendance": "-"
         },
         {
           "n°": "6",
@@ -823,7 +824,9 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 2,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 15.0,
+          "cote_tendance": "+"
         },
         {
           "n°": "7",
@@ -843,7 +846,9 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 3,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 11.0,
+          "cote_tendance": "-"
         },
         {
           "n°": "8",
@@ -863,7 +868,9 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 2,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 3.8,
+          "cote_tendance": "+"
         },
         {
           "n°": "9",
@@ -883,7 +890,9 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 2,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 6.3,
+          "cote_tendance": "+"
         },
         {
           "n°": "10",
@@ -903,10 +912,14 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 2,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 23.0,
+          "cote_tendance": "-"
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     }
   ]
