@@ -1,7 +1,7 @@
 {
   "hippodrome": "NANCY-BRABOIS",
   "type_reunion": "CROSS",
-  "date_extraction": "2026-04-26T14:57:56.586022",
+  "date_extraction": "2026-04-26T15:23:38.382197",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/26042026/R15",
   "courses": [
     {
@@ -1327,7 +1327,8 @@
           "nb_places": 15,
           "cote": 38.0,
           "cote_tendance": "+",
-          "cote_reference": 18.0
+          "cote_reference": 18.0,
+          "arrivee": 4
         },
         {
           "n°": "4",
@@ -1350,7 +1351,8 @@
           "nb_places": 18,
           "cote": 26.0,
           "cote_tendance": "",
-          "cote_reference": 7.0
+          "cote_reference": 7.0,
+          "arrivee": 5
         },
         {
           "n°": "6",
@@ -1373,14 +1375,15 @@
           "nb_places": 6,
           "cote": 27.0,
           "cote_tendance": "+",
-          "cote_reference": 21.0
+          "cote_reference": 21.0,
+          "arrivee": 6
         }
       ],
       "typePiste": "HERBE",
       "terrain": "Souple",
       "penetrometre": "3,6",
       "cordeCourse": "CORDE_DROITE",
-      "arrivee_definitive": false
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX # RACE AND CARE (WWW.HIPPODROMENANCY)",
@@ -1409,8 +1412,8 @@
           "nb_courses": 6,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 7.3,
-          "cote_tendance": "-",
+          "cote": 8.5,
+          "cote_tendance": "+",
           "cote_reference": 9.5
         },
         {
@@ -1432,7 +1435,7 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 19.0,
+          "cote": 51.0,
           "cote_tendance": "+",
           "cote_reference": 22.0
         },
@@ -1454,7 +1457,9 @@
           "equipement(s)": "A",
           "nb_courses": 5,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 98.0,
+          "cote_tendance": "+"
         },
         {
           "n°": "4",
@@ -1475,8 +1480,8 @@
           "nb_courses": 30,
           "nb_victoires": 0,
           "nb_places": 23,
-          "cote": 2.8,
-          "cote_tendance": "+",
+          "cote": 2.1,
+          "cote_tendance": "-",
           "cote_reference": 2.5
         },
         {
@@ -1498,7 +1503,7 @@
           "nb_courses": 18,
           "nb_victoires": 0,
           "nb_places": 10,
-          "cote": 17.0,
+          "cote": 9.5,
           "cote_tendance": "+",
           "cote_reference": 15.0
         },
@@ -1521,7 +1526,7 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 19.0,
+          "cote": 24.0,
           "cote_tendance": "+",
           "cote_reference": 16.0
         },
@@ -1544,8 +1549,8 @@
           "nb_courses": 15,
           "nb_victoires": 0,
           "nb_places": 10,
-          "cote": 8.1,
-          "cote_tendance": "+",
+          "cote": 12.0,
+          "cote_tendance": "-",
           "cote_reference": 7.1
         },
         {
@@ -1567,7 +1572,7 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 17.0,
+          "cote": 18.0,
           "cote_tendance": "+",
           "cote_reference": 15.0
         },
@@ -1590,7 +1595,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 12.0,
+          "cote": 11.0,
           "cote_tendance": "+",
           "cote_reference": 14.0
         },
@@ -1613,7 +1618,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 8.8,
+          "cote": 19.0,
           "cote_tendance": "+",
           "cote_reference": 11.0
         },
@@ -1659,7 +1664,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 28.0,
+          "cote": 29.0,
           "cote_tendance": "+",
           "cote_reference": 40.0
         }
@@ -1696,9 +1701,9 @@
           "nb_courses": 5,
           "nb_victoires": 1,
           "nb_places": 4,
-          "cote": 4.1,
-          "cote_tendance": "+",
-          "cote_reference": 6.3
+          "cote": 2.2,
+          "cote_tendance": "",
+          "cote_reference": 2.2
         },
         {
           "n°": "2",
@@ -1719,9 +1724,9 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 12.0,
-          "cote_tendance": "-",
-          "cote_reference": 12.0
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0
         },
         {
           "n°": "3",
@@ -1742,9 +1747,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 3.8,
-          "cote_tendance": "-",
-          "cote_reference": 6.3
+          "cote": 5.6,
+          "cote_tendance": "",
+          "cote_reference": 5.7
         },
         {
           "n°": "4",
@@ -1765,9 +1770,9 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 13.0,
-          "cote_tendance": "-",
-          "cote_reference": 12.0
+          "cote": 17.0,
+          "cote_tendance": "",
+          "cote_reference": 17.0
         },
         {
           "n°": "5",
@@ -1788,8 +1793,9 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 18.0,
-          "cote_tendance": "+"
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         },
         {
           "n°": "6",
@@ -1810,9 +1816,9 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 4.7,
-          "cote_tendance": "-",
-          "cote_reference": 2.3
+          "cote": 5.6,
+          "cote_tendance": "",
+          "cote_reference": 5.8
         },
         {
           "n°": "7",
@@ -1833,9 +1839,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 10.0,
-          "cote_tendance": "+",
-          "cote_reference": 12.0
+          "cote": 17.0,
+          "cote_tendance": "",
+          "cote_reference": 18.0
         },
         {
           "n°": "8",
@@ -1856,9 +1862,9 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 8.4,
-          "cote_tendance": "+",
-          "cote_reference": 6.3
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 13.0
         }
       ],
       "typePiste": "HERBE",
