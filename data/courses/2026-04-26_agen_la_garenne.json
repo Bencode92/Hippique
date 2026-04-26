@@ -1,7 +1,7 @@
 {
   "hippodrome": "AGEN LA GARENNE",
   "type_reunion": "Plat",
-  "date_extraction": "2026-04-26T10:42:25.418232",
+  "date_extraction": "2026-04-26T12:58:44.141822",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/26042026/R12",
   "courses": [
     {
@@ -31,78 +31,10 @@
           "nb_courses": 44,
           "nb_victoires": 8,
           "nb_places": 17,
-          "cote": 3.0,
+          "cote": 2.9,
           "cote_tendance": "+",
-          "cote_reference": 3.0
-        },
-        {
-          "n°": "2",
-          "cheval": "ZELICA F.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: THE GREY GATSBY et LIGHT SHINE (DANSILI)",
-          "corde": "(Corde:03)",
-          "couleurs": "",
-          "propriétaire": "MME M.PEREZ CARLOS",
-          "entraineur": "A.SANCHEZ-MARTIN",
-          "éleveurs": "SUCC MR FRANCIS JOSEPH GILLESPIE",
-          "jockey": "C.BRECHON",
-          "poids": "66.5 kg",
-          "gains": "2390300",
-          "musique": "2p4p0p7p0p0p7p5p(25)9p",
-          "valeur": "66.5",
-          "equipement(s)": "",
-          "nb_courses": 23,
-          "nb_victoires": 2,
-          "nb_places": 13,
-          "cote": 7.1,
-          "cote_tendance": "-",
-          "cote_reference": 7.1
-        },
-        {
-          "n°": "3",
-          "cheval": "PINTXOPOTE H.PU. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: WORTHADD et POMPOSA (BARATHEA)",
-          "corde": "(Corde:04)",
-          "couleurs": "",
-          "propriétaire": "HJ.FARIA PEREIRA",
-          "entraineur": "HJ.FARIA PEREIRA",
-          "éleveurs": "HARAS DE ULIA SL",
-          "jockey": "L.URBANO AGUERO",
-          "poids": "66 kg",
-          "gains": "3429500",
-          "musique": "(25)4p8p1p5p4p(24)0p2p1p",
-          "valeur": "66.0",
-          "equipement(s)": "",
-          "nb_courses": 36,
-          "nb_victoires": 2,
-          "nb_places": 15,
-          "cote": 15.0,
-          "cote_tendance": "+",
-          "cote_reference": 15.0
-        },
-        {
-          "n°": "4",
-          "cheval": "PETITEJACQ AA F.AN. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MASTEROFTHEHORSE et KADALVOIX (KADALKO)",
-          "corde": "(Corde:01)",
-          "couleurs": "",
-          "propriétaire": "L.CADOT",
-          "entraineur": "L.CADOT",
-          "éleveurs": "MR JACQUES LAFARGE",
-          "jockey": "L.CADOT",
-          "poids": "65.5 kg",
-          "gains": "1549500",
-          "musique": "Js(25)1s3p4p(24)1h1h3p1s",
-          "valeur": "65.5",
-          "equipement(s)": "A",
-          "nb_courses": 8,
-          "nb_victoires": 1,
-          "nb_places": 5,
-          "cote": 4.9,
-          "cote_tendance": "-",
-          "cote_reference": 4.9
+          "cote_reference": 2.4,
+          "arrivee": 1
         },
         {
           "n°": "5",
@@ -123,9 +55,10 @@
           "nb_courses": 18,
           "nb_victoires": 1,
           "nb_places": 2,
-          "cote": 3.5,
+          "cote": 12.0,
           "cote_tendance": "+",
-          "cote_reference": 3.5
+          "cote_reference": 6.5,
+          "arrivee": 2
         },
         {
           "n°": "6",
@@ -146,13 +79,89 @@
           "nb_courses": 57,
           "nb_victoires": 5,
           "nb_places": 32,
-          "cote": 8.7,
+          "cote": 13.0,
           "cote_tendance": "+",
-          "cote_reference": 8.7
+          "cote_reference": 6.8,
+          "arrivee": 3
+        },
+        {
+          "n°": "4",
+          "cheval": "PETITEJACQ AA F.AN. 6 a.",
+          "cheval_url": "",
+          "père_mère": "Par: MASTEROFTHEHORSE et KADALVOIX (KADALKO)",
+          "corde": "(Corde:01)",
+          "couleurs": "",
+          "propriétaire": "L.CADOT",
+          "entraineur": "L.CADOT",
+          "éleveurs": "MR JACQUES LAFARGE",
+          "jockey": "L.CADOT",
+          "poids": "65.5 kg",
+          "gains": "1549500",
+          "musique": "Js(25)1s3p4p(24)1h1h3p1s",
+          "valeur": "65.5",
+          "equipement(s)": "A",
+          "nb_courses": 8,
+          "nb_victoires": 1,
+          "nb_places": 5,
+          "cote": 4.4,
+          "cote_tendance": "+",
+          "cote_reference": 4.9,
+          "arrivee": 4
+        },
+        {
+          "n°": "2",
+          "cheval": "ZELICA F.PU. 5 a.",
+          "cheval_url": "",
+          "père_mère": "Par: THE GREY GATSBY et LIGHT SHINE (DANSILI)",
+          "corde": "(Corde:03)",
+          "couleurs": "",
+          "propriétaire": "MME M.PEREZ CARLOS",
+          "entraineur": "A.SANCHEZ-MARTIN",
+          "éleveurs": "SUCC MR FRANCIS JOSEPH GILLESPIE",
+          "jockey": "C.BRECHON",
+          "poids": "66.5 kg",
+          "gains": "2390300",
+          "musique": "2p4p0p7p0p0p7p5p(25)9p",
+          "valeur": "66.5",
+          "equipement(s)": "",
+          "nb_courses": 23,
+          "nb_victoires": 2,
+          "nb_places": 13,
+          "cote": 5.5,
+          "cote_tendance": "-",
+          "cote_reference": 9.1,
+          "arrivee": 5
+        },
+        {
+          "n°": "3",
+          "cheval": "PINTXOPOTE H.PU. 6 a.",
+          "cheval_url": "",
+          "père_mère": "Par: WORTHADD et POMPOSA (BARATHEA)",
+          "corde": "(Corde:04)",
+          "couleurs": "",
+          "propriétaire": "HJ.FARIA PEREIRA",
+          "entraineur": "HJ.FARIA PEREIRA",
+          "éleveurs": "HARAS DE ULIA SL",
+          "jockey": "L.URBANO AGUERO",
+          "poids": "66 kg",
+          "gains": "3429500",
+          "musique": "(25)4p8p1p5p4p(24)0p2p1p",
+          "valeur": "66.0",
+          "equipement(s)": "",
+          "nb_courses": 36,
+          "nb_victoires": 2,
+          "nb_places": 15,
+          "cote": 4.1,
+          "cote_tendance": "-",
+          "cote_reference": 9.1,
+          "arrivee": 6
         }
       ],
       "typePiste": "HERBE",
-      "cordeCourse": "CORDE_DROITE"
+      "terrain": "Très souple",
+      "penetrometre": "3,9",
+      "cordeCourse": "CORDE_DROITE",
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX DE CONFOLENS",
@@ -162,121 +171,6 @@
       "distance": "1850m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "WATHAB H.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: ZELZAL et YSANDRE (ZAMINDAR)",
-          "corde": "(Corde:01)",
-          "couleurs": "",
-          "propriétaire": "E.FERNANDEZ DE VEGA",
-          "entraineur": "RC.MONTENEGRO",
-          "éleveurs": "AL SHAQAB RACING",
-          "jockey": "M.FOULON",
-          "poids": "59 kg",
-          "gains": "5269400",
-          "musique": "2p0p8p(25)0p0p6p5p5p4p",
-          "valeur": "59.0",
-          "equipement(s)": "",
-          "nb_courses": 38,
-          "nb_victoires": 1,
-          "nb_places": 22,
-          "cote": 4.6,
-          "cote_tendance": "-",
-          "cote_reference": 4.6
-        },
-        {
-          "n°": "2",
-          "cheval": "ATLANTIGO H.PU. 7 a.",
-          "cheval_url": "",
-          "père_mère": "Par: BIRCHWOOD et LILI ST CYR (ROCK OF GIBRALTAR)",
-          "corde": "(Corde:07)",
-          "couleurs": "",
-          "propriétaire": "G.HEURTAULT",
-          "entraineur": "G.HEURTAULT",
-          "éleveurs": "MR ZIED BEN M'RAD",
-          "jockey": "R.DUBORD",
-          "poids": "59 kg",
-          "gains": "8459700",
-          "musique": "3p9p9p7p(25)6p7p5p0p5p",
-          "valeur": "59.0",
-          "equipement(s)": "A",
-          "nb_courses": 64,
-          "nb_victoires": 4,
-          "nb_places": 26,
-          "cote": 12.0,
-          "cote_tendance": "+",
-          "cote_reference": 12.0
-        },
-        {
-          "n°": "3",
-          "cheval": "TOUQUETOISE F.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: SEAHENGE et MELODIENNE (KITTEN'S JOY)",
-          "corde": "(Corde:08)",
-          "couleurs": "",
-          "propriétaire": "P.SOGORB",
-          "entraineur": "P.SOGORB",
-          "éleveurs": "MR PATRICK-GEORGES ROULOIS",
-          "jockey": "D.ALBERCA-GAVILAN",
-          "poids": "58 kg",
-          "gains": "3057600",
-          "musique": "1p9p4p0p0p(25)5p0p9p0p",
-          "valeur": "58.0",
-          "equipement(s)": "",
-          "nb_courses": 20,
-          "nb_victoires": 3,
-          "nb_places": 7,
-          "cote": 10.0,
-          "cote_tendance": "+",
-          "cote_reference": 10.0
-        },
-        {
-          "n°": "4",
-          "cheval": "MISS PARANO F.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: JOHNNY BARNES et LAST CAST (MARJU)",
-          "corde": "(Corde:06)",
-          "couleurs": "",
-          "propriétaire": "A.LOPEZ",
-          "entraineur": "A.LOPEZ",
-          "éleveurs": "MR MATHIEU DAGUZAN-GARROS",
-          "jockey": "A.JARDEL",
-          "poids": "57.5 kg",
-          "gains": "1865000",
-          "musique": "4p7p0p8p0p9p9p0p(25)1p",
-          "valeur": "57.5",
-          "equipement(s)": "",
-          "nb_courses": 20,
-          "nb_victoires": 2,
-          "nb_places": 4,
-          "cote": 20.0,
-          "cote_tendance": "+",
-          "cote_reference": 20.0
-        },
-        {
-          "n°": "5",
-          "cheval": "BELLE DE CLHOE F.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: VOL DE NUIT et KORBA (EXCEED AND EXCEL)",
-          "corde": "(Corde:09)",
-          "couleurs": "",
-          "propriétaire": "MME B.SABLON",
-          "entraineur": "MME B.SABLON",
-          "éleveurs": "MR MICHEL GUILLOIS",
-          "jockey": "M.ROMARY",
-          "poids": "57.5 kg",
-          "gains": "677400",
-          "musique": "1p4p(25)7p3p6p",
-          "valeur": "57.5",
-          "equipement(s)": "",
-          "nb_courses": 5,
-          "nb_victoires": 1,
-          "nb_places": 3,
-          "cote": 11.0,
-          "cote_tendance": "+",
-          "cote_reference": 11.0
-        },
         {
           "n°": "6",
           "cheval": "ELAUNEIL F.PU. 6 a.",
@@ -296,9 +190,10 @@
           "nb_courses": 46,
           "nb_victoires": 4,
           "nb_places": 17,
-          "cote": 4.9,
-          "cote_tendance": "+",
-          "cote_reference": 4.9
+          "cote": 7.0,
+          "cote_tendance": "",
+          "cote_reference": 3.7,
+          "arrivee": 1
         },
         {
           "n°": "7",
@@ -319,32 +214,34 @@
           "nb_courses": 73,
           "nb_victoires": 9,
           "nb_places": 22,
-          "cote": 14.0,
-          "cote_tendance": "+",
-          "cote_reference": 14.0
+          "cote": 17.0,
+          "cote_tendance": "-",
+          "cote_reference": 14.0,
+          "arrivee": 2
         },
         {
-          "n°": "8",
-          "cheval": "KHELLE TARTARE F.PU. 7 a.",
+          "n°": "3",
+          "cheval": "TOUQUETOISE F.PU. 5 a.",
           "cheval_url": "",
-          "père_mère": "Par: KHELEYF et MAGIC TARTARE (LESOTHO)",
-          "corde": "(Corde:05)",
+          "père_mère": "Par: SEAHENGE et MELODIENNE (KITTEN'S JOY)",
+          "corde": "(Corde:08)",
           "couleurs": "",
-          "propriétaire": "H.FROIDEFOND",
-          "entraineur": "H.FROIDEFOND",
-          "éleveurs": "GAEC DE LA SEGUEGNE",
-          "jockey": "S.TOPIN",
-          "poids": "56 kg",
-          "gains": "2691100",
-          "musique": "0p8p(25)6p0p0p2p9p4p3p",
-          "valeur": "56.0",
+          "propriétaire": "P.SOGORB",
+          "entraineur": "P.SOGORB",
+          "éleveurs": "MR PATRICK-GEORGES ROULOIS",
+          "jockey": "D.ALBERCA-GAVILAN",
+          "poids": "58 kg",
+          "gains": "3057600",
+          "musique": "1p9p4p0p0p(25)5p0p9p0p",
+          "valeur": "58.0",
           "equipement(s)": "",
-          "nb_courses": 56,
-          "nb_victoires": 1,
-          "nb_places": 23,
-          "cote": 9.3,
-          "cote_tendance": "+",
-          "cote_reference": 9.3
+          "nb_courses": 20,
+          "nb_victoires": 3,
+          "nb_places": 7,
+          "cote": 5.6,
+          "cote_tendance": "-",
+          "cote_reference": 11.0,
+          "arrivee": 3
         },
         {
           "n°": "9",
@@ -365,13 +262,137 @@
           "nb_courses": 90,
           "nb_victoires": 6,
           "nb_places": 34,
-          "cote": 4.2,
-          "cote_tendance": "+",
-          "cote_reference": 4.2
+          "cote": 6.1,
+          "cote_tendance": "-",
+          "cote_reference": 6.0,
+          "arrivee": 4
+        },
+        {
+          "n°": "5",
+          "cheval": "BELLE DE CLHOE F.PU. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: VOL DE NUIT et KORBA (EXCEED AND EXCEL)",
+          "corde": "(Corde:09)",
+          "couleurs": "",
+          "propriétaire": "MME B.SABLON",
+          "entraineur": "MME B.SABLON",
+          "éleveurs": "MR MICHEL GUILLOIS",
+          "jockey": "M.ROMARY",
+          "poids": "57.5 kg",
+          "gains": "677400",
+          "musique": "1p4p(25)7p3p6p",
+          "valeur": "57.5",
+          "equipement(s)": "",
+          "nb_courses": 5,
+          "nb_victoires": 1,
+          "nb_places": 3,
+          "cote": 5.1,
+          "cote_tendance": "",
+          "cote_reference": 9.3,
+          "arrivee": 5
+        },
+        {
+          "n°": "1",
+          "cheval": "WATHAB H.PU. 5 a.",
+          "cheval_url": "",
+          "père_mère": "Par: ZELZAL et YSANDRE (ZAMINDAR)",
+          "corde": "(Corde:01)",
+          "couleurs": "",
+          "propriétaire": "E.FERNANDEZ DE VEGA",
+          "entraineur": "RC.MONTENEGRO",
+          "éleveurs": "AL SHAQAB RACING",
+          "jockey": "M.FOULON",
+          "poids": "59 kg",
+          "gains": "5269400",
+          "musique": "2p0p8p(25)0p0p6p5p5p4p",
+          "valeur": "59.0",
+          "equipement(s)": "",
+          "nb_courses": 38,
+          "nb_victoires": 1,
+          "nb_places": 22,
+          "cote": 3.9,
+          "cote_tendance": "",
+          "cote_reference": 5.1,
+          "arrivee": 6
+        },
+        {
+          "n°": "8",
+          "cheval": "KHELLE TARTARE F.PU. 7 a.",
+          "cheval_url": "",
+          "père_mère": "Par: KHELEYF et MAGIC TARTARE (LESOTHO)",
+          "corde": "(Corde:05)",
+          "couleurs": "",
+          "propriétaire": "H.FROIDEFOND",
+          "entraineur": "H.FROIDEFOND",
+          "éleveurs": "GAEC DE LA SEGUEGNE",
+          "jockey": "S.TOPIN",
+          "poids": "56 kg",
+          "gains": "2691100",
+          "musique": "0p8p(25)6p0p0p2p9p4p3p",
+          "valeur": "56.0",
+          "equipement(s)": "",
+          "nb_courses": 56,
+          "nb_victoires": 1,
+          "nb_places": 23,
+          "cote": 19.0,
+          "cote_tendance": "-",
+          "cote_reference": 9.3,
+          "arrivee": 7
+        },
+        {
+          "n°": "4",
+          "cheval": "MISS PARANO F.PU. 5 a.",
+          "cheval_url": "",
+          "père_mère": "Par: JOHNNY BARNES et LAST CAST (MARJU)",
+          "corde": "(Corde:06)",
+          "couleurs": "",
+          "propriétaire": "A.LOPEZ",
+          "entraineur": "A.LOPEZ",
+          "éleveurs": "MR MATHIEU DAGUZAN-GARROS",
+          "jockey": "A.JARDEL",
+          "poids": "57.5 kg",
+          "gains": "1865000",
+          "musique": "4p7p0p8p0p9p9p0p(25)1p",
+          "valeur": "57.5",
+          "equipement(s)": "",
+          "nb_courses": 20,
+          "nb_victoires": 2,
+          "nb_places": 4,
+          "cote": 36.0,
+          "cote_tendance": "-",
+          "cote_reference": 21.0,
+          "arrivee": 8
+        },
+        {
+          "n°": "2",
+          "cheval": "ATLANTIGO H.PU. 7 a.",
+          "cheval_url": "",
+          "père_mère": "Par: BIRCHWOOD et LILI ST CYR (ROCK OF GIBRALTAR)",
+          "corde": "(Corde:07)",
+          "couleurs": "",
+          "propriétaire": "G.HEURTAULT",
+          "entraineur": "G.HEURTAULT",
+          "éleveurs": "MR ZIED BEN M'RAD",
+          "jockey": "R.DUBORD",
+          "poids": "59 kg",
+          "gains": "8459700",
+          "musique": "3p9p9p7p(25)6p7p5p0p5p",
+          "valeur": "59.0",
+          "equipement(s)": "A",
+          "nb_courses": 64,
+          "nb_victoires": 4,
+          "nb_places": 26,
+          "cote": 14.0,
+          "cote_tendance": "-",
+          "cote_reference": 12.0,
+          "arrivee": 9
         }
       ],
       "typePiste": "HERBE",
-      "cordeCourse": "CORDE_DROITE"
+      "terrain": "Très souple",
+      "penetrometre": "3,9",
+      "cordeCourse": "CORDE_DROITE",
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX DE RUFFES",
@@ -400,55 +421,10 @@
           "nb_courses": 14,
           "nb_victoires": 1,
           "nb_places": 11,
-          "cote": 3.1,
-          "cote_tendance": "",
-          "cote_reference": 3.1
-        },
-        {
-          "n°": "2",
-          "cheval": "SARI MAN H.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: LAWMAN et SARY ARQA (DUBAWI)",
-          "corde": "(Corde:01)",
-          "couleurs": "",
-          "propriétaire": "H.DEVILLAIRS",
-          "entraineur": "JP.DAIREAUX (S)",
-          "éleveurs": "HARAS D'HASPEL",
-          "jockey": "C.MERILLE",
-          "poids": "58 kg",
-          "gains": "569800",
-          "musique": "(25)7p2p7p7p4p5p6p6p5p",
-          "valeur": "58.0",
-          "equipement(s)": "",
-          "nb_courses": 9,
-          "nb_victoires": 0,
-          "nb_places": 9,
-          "cote": 40.0,
-          "cote_tendance": "",
-          "cote_reference": 40.0
-        },
-        {
-          "n°": "3",
-          "cheval": "KAMIKAZE M.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: VANISHING CUPID et KARADSH (KENDARGENT)",
-          "corde": "(Corde:07)",
-          "couleurs": "",
-          "propriétaire": "MME S.EGLOFF",
-          "entraineur": "HA.PANTALL (S)",
-          "éleveurs": "STALL SOHRENHOF",
-          "jockey": "M.PROTTI",
-          "poids": "58 kg",
-          "gains": "763900",
-          "musique": "5p2p0p8p(25)6p8p2p",
-          "valeur": "58.0",
-          "equipement(s)": "",
-          "nb_courses": 7,
-          "nb_victoires": 0,
-          "nb_places": 4,
-          "cote": 4.5,
-          "cote_tendance": "",
-          "cote_reference": 4.5
+          "cote": 4.2,
+          "cote_tendance": "+",
+          "cote_reference": 2.8,
+          "arrivee": 1
         },
         {
           "n°": "4",
@@ -469,9 +445,57 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 40.0,
-          "cote_tendance": "",
-          "cote_reference": 40.0
+          "cote": 17.0,
+          "cote_tendance": "+",
+          "cote_reference": 41.0,
+          "arrivee": 2
+        },
+        {
+          "n°": "2",
+          "cheval": "SARI MAN H.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: LAWMAN et SARY ARQA (DUBAWI)",
+          "corde": "(Corde:01)",
+          "couleurs": "",
+          "propriétaire": "H.DEVILLAIRS",
+          "entraineur": "JP.DAIREAUX (S)",
+          "éleveurs": "HARAS D'HASPEL",
+          "jockey": "C.MERILLE",
+          "poids": "58 kg",
+          "gains": "569800",
+          "musique": "(25)7p2p7p7p4p5p6p6p5p",
+          "valeur": "58.0",
+          "equipement(s)": "",
+          "nb_courses": 9,
+          "nb_victoires": 0,
+          "nb_places": 9,
+          "cote": 30.0,
+          "cote_tendance": "+",
+          "cote_reference": 41.0,
+          "arrivee": 3
+        },
+        {
+          "n°": "3",
+          "cheval": "KAMIKAZE M.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: VANISHING CUPID et KARADSH (KENDARGENT)",
+          "corde": "(Corde:07)",
+          "couleurs": "",
+          "propriétaire": "MME S.EGLOFF",
+          "entraineur": "HA.PANTALL (S)",
+          "éleveurs": "STALL SOHRENHOF",
+          "jockey": "M.PROTTI",
+          "poids": "58 kg",
+          "gains": "763900",
+          "musique": "5p2p0p8p(25)6p8p2p",
+          "valeur": "58.0",
+          "equipement(s)": "",
+          "nb_courses": 7,
+          "nb_victoires": 0,
+          "nb_places": 4,
+          "cote": 3.8,
+          "cote_tendance": "+",
+          "cote_reference": 5.8
         },
         {
           "n°": "5",
@@ -492,9 +516,9 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 40.0,
-          "cote_tendance": "",
-          "cote_reference": 40.0
+          "cote": 28.0,
+          "cote_tendance": "+",
+          "cote_reference": 20.0
         },
         {
           "n°": "6",
@@ -515,9 +539,9 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 5.0,
-          "cote_tendance": "",
-          "cote_reference": 5.0
+          "cote": 9.3,
+          "cote_tendance": "-",
+          "cote_reference": 8.2
         },
         {
           "n°": "7",
@@ -538,9 +562,9 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 10.0,
-          "cote_tendance": "",
-          "cote_reference": 10.0
+          "cote": 14.0,
+          "cote_tendance": "-",
+          "cote_reference": 20.0
         },
         {
           "n°": "8",
@@ -561,9 +585,9 @@
           "nb_courses": 6,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 40.0,
-          "cote_tendance": "",
-          "cote_reference": 40.0
+          "cote": 21.0,
+          "cote_tendance": "-",
+          "cote_reference": 41.0
         },
         {
           "n°": "9",
@@ -584,9 +608,9 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 8.1,
-          "cote_tendance": "",
-          "cote_reference": 8.1
+          "cote": 16.0,
+          "cote_tendance": "+",
+          "cote_reference": 11.0
         },
         {
           "n°": "10",
@@ -607,9 +631,9 @@
           "nb_courses": 15,
           "nb_victoires": 0,
           "nb_places": 11,
-          "cote": 40.0,
-          "cote_tendance": "",
-          "cote_reference": 40.0
+          "cote": 8.8,
+          "cote_tendance": "+",
+          "cote_reference": 41.0
         },
         {
           "n°": "11",
@@ -630,9 +654,9 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 20.0,
-          "cote_tendance": "",
-          "cote_reference": 20.0
+          "cote": 15.0,
+          "cote_tendance": "+",
+          "cote_reference": 9.1
         },
         {
           "n°": "12",
@@ -652,11 +676,17 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 18.0,
+          "cote_tendance": "+",
+          "cote_reference": 10.0
         }
       ],
       "typePiste": "HERBE",
-      "cordeCourse": "CORDE_DROITE"
+      "terrain": "Très souple",
+      "penetrometre": "3,9",
+      "cordeCourse": "CORDE_DROITE",
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX DE BARBEZIEUX-SAINT-HILAIRE",
@@ -685,9 +715,9 @@
           "nb_courses": 8,
           "nb_victoires": 0,
           "nb_places": 7,
-          "cote": 4.2,
-          "cote_tendance": "",
-          "cote_reference": 4.2
+          "cote": 4.4,
+          "cote_tendance": "+",
+          "cote_reference": 4.1
         },
         {
           "n°": "2",
@@ -708,9 +738,9 @@
           "nb_courses": 17,
           "nb_victoires": 0,
           "nb_places": 7,
-          "cote": 85.0,
-          "cote_tendance": "",
-          "cote_reference": 85.0
+          "cote": 30.0,
+          "cote_tendance": "+",
+          "cote_reference": 52.0
         },
         {
           "n°": "3",
@@ -731,9 +761,9 @@
           "nb_courses": 10,
           "nb_victoires": 0,
           "nb_places": 9,
-          "cote": 4.2,
+          "cote": 3.9,
           "cote_tendance": "",
-          "cote_reference": 4.2
+          "cote_reference": 3.7
         },
         {
           "n°": "4",
@@ -754,9 +784,9 @@
           "nb_courses": 8,
           "nb_victoires": 0,
           "nb_places": 7,
-          "cote": 2.0,
-          "cote_tendance": "",
-          "cote_reference": 2.0
+          "cote": 2.9,
+          "cote_tendance": "+",
+          "cote_reference": 2.6
         },
         {
           "n°": "5",
@@ -776,7 +806,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 17.0,
+          "cote_tendance": "-",
+          "cote_reference": 19.0
         },
         {
           "n°": "6",
@@ -797,9 +830,9 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 12.0,
-          "cote_tendance": "",
-          "cote_reference": 12.0
+          "cote": 20.0,
+          "cote_tendance": "+",
+          "cote_reference": 17.0
         },
         {
           "n°": "8",
@@ -820,9 +853,9 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 85.0,
-          "cote_tendance": "",
-          "cote_reference": 85.0
+          "cote": 61.0,
+          "cote_tendance": "+",
+          "cote_reference": 52.0
         },
         {
           "n°": "9",
@@ -842,7 +875,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 61.0,
+          "cote_tendance": "+",
+          "cote_reference": 70.0
         },
         {
           "n°": "10",
@@ -863,9 +899,9 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 17.0,
-          "cote_tendance": "",
-          "cote_reference": 17.0
+          "cote": 10.0,
+          "cote_tendance": "+",
+          "cote_reference": 21.0
         },
         {
           "n°": "11",
@@ -886,12 +922,14 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 85.0,
-          "cote_tendance": "",
-          "cote_reference": 85.0
+          "cote": 22.0,
+          "cote_tendance": "+",
+          "cote_reference": 26.0
         }
       ],
       "typePiste": "HERBE",
+      "terrain": "Très souple",
+      "penetrometre": "3,9",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -921,8 +959,8 @@
           "nb_courses": 6,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 7.6,
-          "cote_tendance": "+",
+          "cote": 3.7,
+          "cote_tendance": "-",
           "cote_reference": 7.6
         },
         {
@@ -944,7 +982,7 @@
           "nb_courses": 9,
           "nb_victoires": 0,
           "nb_places": 9,
-          "cote": 2.5,
+          "cote": 2.6,
           "cote_tendance": "+",
           "cote_reference": 2.5
         },
@@ -967,8 +1005,8 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 5.3,
-          "cote_tendance": "+",
+          "cote": 8.4,
+          "cote_tendance": "-",
           "cote_reference": 5.3
         },
         {
@@ -991,7 +1029,7 @@
           "nb_victoires": 0,
           "nb_places": 1,
           "cote": 10.0,
-          "cote_tendance": "+",
+          "cote_tendance": "-",
           "cote_reference": 10.0
         },
         {
@@ -1013,7 +1051,7 @@
           "nb_courses": 10,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 7.6,
+          "cote": 10.0,
           "cote_tendance": "+",
           "cote_reference": 7.6
         },
@@ -1036,8 +1074,8 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 4.8,
-          "cote_tendance": "-",
+          "cote": 5.7,
+          "cote_tendance": "",
           "cote_reference": 4.8
         },
         {
@@ -1062,6 +1100,8 @@
         }
       ],
       "typePiste": "HERBE",
+      "terrain": "Très souple",
+      "penetrometre": "3,9",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -1091,8 +1131,8 @@
           "nb_courses": 25,
           "nb_victoires": 3,
           "nb_places": 9,
-          "cote": 8.5,
-          "cote_tendance": "-",
+          "cote": 9.8,
+          "cote_tendance": "+",
           "cote_reference": 8.5
         },
         {
@@ -1136,7 +1176,9 @@
           "equipement(s)": "",
           "nb_courses": 53,
           "nb_victoires": 3,
-          "nb_places": 22
+          "nb_places": 22,
+          "cote": 49.0,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -1157,7 +1199,7 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 6.8,
+          "cote": 9.8,
           "cote_tendance": "+",
           "cote_reference": 6.8
         },
@@ -1180,7 +1222,7 @@
           "nb_courses": 17,
           "nb_victoires": 3,
           "nb_places": 6,
-          "cote": 17.0,
+          "cote": 16.0,
           "cote_tendance": "+",
           "cote_reference": 17.0
         },
@@ -1203,7 +1245,7 @@
           "nb_courses": 12,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 8.5,
+          "cote": 8.2,
           "cote_tendance": "+",
           "cote_reference": 8.5
         },
@@ -1226,7 +1268,7 @@
           "nb_courses": 28,
           "nb_victoires": 0,
           "nb_places": 18,
-          "cote": 8.5,
+          "cote": 6.1,
           "cote_tendance": "+",
           "cote_reference": 8.5
         },
@@ -1249,12 +1291,14 @@
           "nb_courses": 40,
           "nb_victoires": 3,
           "nb_places": 19,
-          "cote": 6.8,
+          "cote": 8.2,
           "cote_tendance": "+",
           "cote_reference": 6.8
         }
       ],
       "typePiste": "HERBE",
+      "terrain": "Très souple",
+      "penetrometre": "3,9",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -1307,7 +1351,7 @@
           "nb_courses": 24,
           "nb_victoires": 1,
           "nb_places": 12,
-          "cote": 9.8,
+          "cote": 14.0,
           "cote_tendance": "+",
           "cote_reference": 9.8
         },
@@ -1330,7 +1374,7 @@
           "nb_courses": 11,
           "nb_victoires": 1,
           "nb_places": 5,
-          "cote": 5.6,
+          "cote": 3.5,
           "cote_tendance": "+",
           "cote_reference": 5.6
         },
@@ -1353,7 +1397,7 @@
           "nb_courses": 26,
           "nb_victoires": 2,
           "nb_places": 10,
-          "cote": 13.0,
+          "cote": 19.0,
           "cote_tendance": "+",
           "cote_reference": 13.0
         },
@@ -1376,7 +1420,7 @@
           "nb_courses": 30,
           "nb_victoires": 1,
           "nb_places": 13,
-          "cote": 2.6,
+          "cote": 3.9,
           "cote_tendance": "+",
           "cote_reference": 2.6
         },
@@ -1399,7 +1443,7 @@
           "nb_courses": 8,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 19.0,
+          "cote": 10.0,
           "cote_tendance": "-",
           "cote_reference": 19.0
         },
@@ -1442,7 +1486,7 @@
           "nb_courses": 17,
           "nb_victoires": 0,
           "nb_places": 8,
-          "cote": 15.0,
+          "cote": 10.0,
           "cote_tendance": "+",
           "cote_reference": 15.0
         },
@@ -1465,7 +1509,7 @@
           "nb_courses": 23,
           "nb_victoires": 1,
           "nb_places": 11,
-          "cote": 78.0,
+          "cote": 39.0,
           "cote_tendance": "+",
           "cote_reference": 78.0
         },
@@ -1488,12 +1532,14 @@
           "nb_courses": 30,
           "nb_victoires": 1,
           "nb_places": 11,
-          "cote": 15.0,
-          "cote_tendance": "+",
+          "cote": 14.0,
+          "cote_tendance": "-",
           "cote_reference": 15.0
         }
       ],
       "typePiste": "HERBE",
+      "terrain": "Très souple",
+      "penetrometre": "3,9",
       "cordeCourse": "CORDE_DROITE"
     }
   ]
