@@ -1,7 +1,7 @@
 {
   "hippodrome": "NANCY-BRABOIS",
   "type_reunion": "CROSS",
-  "date_extraction": "2026-04-26T13:08:17.285602",
+  "date_extraction": "2026-04-26T13:11:58.624805",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/26042026/R15",
   "courses": [
     {
@@ -450,27 +450,28 @@
       "url": "",
       "participants": [
         {
-          "n°": "1",
-          "cheval": "SUNDAY KING H.PU. 5 a.",
+          "n°": "6",
+          "cheval": "PINK PERSEVERANCE F.PU. 5 a.",
           "cheval_url": "",
-          "père_mère": "Par: PLANTEUR et SUNDAY ANDALUZ (SUNDAY BREAK)",
+          "père_mère": "Par: PASTORIUS et PINK CLOUD (OCTAGONAL)",
           "corde": "",
           "couleurs": "",
-          "propriétaire": "ECURIE DE LA VERTE VALLEE",
-          "entraineur": "CH.HERPIN (S)",
-          "éleveurs": "ECURIE DE LA VERTE VALLEE",
-          "jockey": "Q.DEFONTAINE",
-          "poids": "67 kg",
-          "gains": "207000",
-          "musique": "8h5h(24)5h",
-          "valeur": "67.0",
-          "equipement(s)": "A",
-          "nb_courses": 3,
+          "propriétaire": "MME M.BOUDOT",
+          "entraineur": "M.SEROR (S)",
+          "éleveurs": "MR MICHEL BAGUENAULT DE PUCHESSE",
+          "jockey": "J.PHELIPPE",
+          "poids": "65 kg",
+          "gains": "337500",
+          "musique": "4p7h(25)4h7hTh2p4p9p3p",
+          "valeur": "65.0",
+          "equipement(s)": "",
+          "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 2,
-          "cote": 11.0,
+          "nb_places": 3,
+          "cote": 2.5,
           "cote_tendance": "",
-          "cote_reference": 4.9
+          "cote_reference": 2.8,
+          "arrivee": 1
         },
         {
           "n°": "2",
@@ -493,7 +494,8 @@
           "nb_places": 0,
           "cote": 6.4,
           "cote_tendance": "",
-          "cote_reference": 10.0
+          "cote_reference": 10.0,
+          "arrivee": 2
         },
         {
           "n°": "3",
@@ -516,7 +518,31 @@
           "nb_places": 0,
           "cote": 13.0,
           "cote_tendance": "-",
-          "cote_reference": 19.0
+          "cote_reference": 19.0,
+          "arrivee": 3
+        },
+        {
+          "n°": "1",
+          "cheval": "SUNDAY KING H.PU. 5 a.",
+          "cheval_url": "",
+          "père_mère": "Par: PLANTEUR et SUNDAY ANDALUZ (SUNDAY BREAK)",
+          "corde": "",
+          "couleurs": "",
+          "propriétaire": "ECURIE DE LA VERTE VALLEE",
+          "entraineur": "CH.HERPIN (S)",
+          "éleveurs": "ECURIE DE LA VERTE VALLEE",
+          "jockey": "Q.DEFONTAINE",
+          "poids": "67 kg",
+          "gains": "207000",
+          "musique": "8h5h(24)5h",
+          "valeur": "67.0",
+          "equipement(s)": "A",
+          "nb_courses": 3,
+          "nb_victoires": 0,
+          "nb_places": 2,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 4.9
         },
         {
           "n°": "4",
@@ -563,29 +589,6 @@
           "cote": 9.1,
           "cote_tendance": "+",
           "cote_reference": 11.0
-        },
-        {
-          "n°": "6",
-          "cheval": "PINK PERSEVERANCE F.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: PASTORIUS et PINK CLOUD (OCTAGONAL)",
-          "corde": "",
-          "couleurs": "",
-          "propriétaire": "MME M.BOUDOT",
-          "entraineur": "M.SEROR (S)",
-          "éleveurs": "MR MICHEL BAGUENAULT DE PUCHESSE",
-          "jockey": "J.PHELIPPE",
-          "poids": "65 kg",
-          "gains": "337500",
-          "musique": "4p7h(25)4h7hTh2p4p9p3p",
-          "valeur": "65.0",
-          "equipement(s)": "",
-          "nb_courses": 4,
-          "nb_victoires": 0,
-          "nb_places": 3,
-          "cote": 2.5,
-          "cote_tendance": "",
-          "cote_reference": 2.8
         },
         {
           "n°": "7",
@@ -682,7 +685,8 @@
       ],
       "typePiste": "HERBE",
       "terrain": "Souple",
-      "penetrometre": "3,6"
+      "penetrometre": "3,6",
+      "arrivee_definitive": false
     },
     {
       "nom": "PRIX GUIDONS FLEURS",
@@ -711,7 +715,7 @@
           "nb_courses": 6,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 9.2,
+          "cote": 9.3,
           "cote_tendance": "",
           "cote_reference": 9.5
         },
@@ -872,7 +876,7 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 277.0,
+          "cote": 279.0,
           "cote_tendance": "",
           "cote_reference": 267.0
         },
@@ -941,7 +945,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 10.0,
+          "cote": 9.6,
           "cote_tendance": "",
           "cote_reference": 9.8
         },
