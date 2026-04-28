@@ -15,28 +15,21 @@ jobs:
         with:
           ref: main
 
-      - name: Créer le snapshot horodaté
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Créer le snapshot brut horodaté
         run: |
-          # Heure UTC
           STAMP=$(date -u +"%Y-%m-%d_%Hh%M")
-          DIR="data/rankings/${STAMP}"
-          mkdir -p "$DIR"
-
-          echo "📸 Snapshot: $DIR"
-
-          # Copier tous les *_ponderated_latest.json
-          for f in data/*_ponderated_latest.json; do
-            if [ -f "$f" ]; then
-              # Extraire le nom de catégorie : chevaux_2025_ponderated_latest.json → chevaux_2025
-              NAME=$(basename "$f" | sed 's/_ponderated_latest\.json//')
-              cp "$f" "$DIR/${NAME}.json"
-              echo "  ✅ ${NAME}.json"
-            fi
-          done
-
+          echo "📸 Stamp: $STAMP"
+          # Snapshot des bruts (Rang officiel France Galop, ratios calculés à la volée)
+          # Plus de pondered_ranking qui inventait un ScoreMixte → classement aligné avec le site
+          python3 scripts/snapshot_brut.py "$STAMP"
           echo ""
           echo "=== Contenu du snapshot ==="
-          ls -la "$DIR/"
+          ls -la "data/rankings/$STAMP/"
 
       - name: Commit et push
         run: |
