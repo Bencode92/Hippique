@@ -1,11 +1,17 @@
 {
   "metadata": {
-    "category": "cravache_or_2025",
-    "extraction_date": "2026-04-28T07:27:49.667518+00:00",
-    "extraction_method": "brut_snapshot",
-    "source_file": "data/cravache_or_2025.json",
-    "totalPopulation": 493,
-    "note": "Rang = officiel France Galop. Ratios calculés mais Rang non recalculé."
+    "source": "https://www.france-galop.com/fr/hommes-chevaux/cravache-d-or-jockeys",
+    "date_extraction": "2026-04-28T07:10:12.089082",
+    "category": "cravache_or",
+    "annee": 2025,
+    "nombre_resultats": 493,
+    "methode": "csv_upload",
+    "field_aliases": {
+      "Jockey": "NomPostal",
+      "Nom": "NomPostal",
+      "Partants": "Partants",
+      "Places": "Place"
+    }
   },
   "resultats": [
     {
@@ -23,11 +29,7 @@
       "Prim. Eleveur": 767461,
       "Gain/Part.": 4701.8,
       "Gain/Chev.": 8532,
-      "Course/Chev.": 2,
-      "TauxVictoire": "14.6",
-      "TauxPlace": "51.6",
-      "GainMoyen": 4701.8,
-      "ScoreMixte": "14.6"
+      "Course/Chev.": 2
     },
     {
       "Rang": 2,
@@ -44,11 +46,7 @@
       "Prim. Eleveur": 746802,
       "Gain/Part.": 5650.23,
       "Gain/Chev.": 10375,
-      "Course/Chev.": 2,
-      "TauxVictoire": "15.4",
-      "TauxPlace": "52.8",
-      "GainMoyen": 5650.23,
-      "ScoreMixte": "15.4"
+      "Course/Chev.": 2
     },
     {
       "Rang": 3,
@@ -65,11 +63,7 @@
       "Prim. Eleveur": 970662,
       "Gain/Part.": 10597.97,
       "Gain/Chev.": 18225,
-      "Course/Chev.": 2,
-      "TauxVictoire": "17.8",
-      "TauxPlace": "54.8",
-      "GainMoyen": 10597.97,
-      "ScoreMixte": "17.8"
+      "Course/Chev.": 2
     },
     {
       "Rang": 4,
@@ -86,11 +80,7 @@
       "Prim. Eleveur": 372991,
       "Gain/Part.": 4229.02,
       "Gain/Chev.": 7411,
-      "Course/Chev.": 2,
-      "TauxVictoire": "13.2",
-      "TauxPlace": "53.4",
-      "GainMoyen": 4229.02,
-      "ScoreMixte": "13.2"
+      "Course/Chev.": 2
     },
     {
       "Rang": 5,
@@ -107,11 +97,7 @@
       "Prim. Eleveur": 321260,
       "Gain/Part.": 2575.99,
       "Gain/Chev.": 4799,
-      "Course/Chev.": 2,
-      "TauxVictoire": "9.5",
-      "TauxPlace": "52.5",
-      "GainMoyen": 2575.99,
-      "ScoreMixte": "9.5"
+      "Course/Chev.": 2
     },
     {
       "Rang": 6,
@@ -128,11 +114,7 @@
       "Prim. Eleveur": 233647,
       "Gain/Part.": 2437.01,
       "Gain/Chev.": 5202,
-      "Course/Chev.": 2,
-      "TauxVictoire": "10.2",
-      "TauxPlace": "46.1",
-      "GainMoyen": 2437.01,
-      "ScoreMixte": "10.2"
+      "Course/Chev.": 2
     },
     {
       "Rang": 7,
@@ -149,11 +131,7 @@
       "Prim. Eleveur": 249090,
       "Gain/Part.": 2757.94,
       "Gain/Chev.": 5447,
-      "Course/Chev.": 2,
-      "TauxVictoire": "12.5",
-      "TauxPlace": "55.2",
-      "GainMoyen": 2757.94,
-      "ScoreMixte": "12.5"
+      "Course/Chev.": 2
     },
     {
       "Rang": 8,
@@ -170,11 +148,7 @@
       "Prim. Eleveur": 182445,
       "Gain/Part.": 2432.29,
       "Gain/Chev.": 4624,
-      "Course/Chev.": 2,
-      "TauxVictoire": "14.7",
-      "TauxPlace": "55.0",
-      "GainMoyen": 2432.29,
-      "ScoreMixte": "14.7"
+      "Course/Chev.": 2
     },
     {
       "Rang": 9,
@@ -191,11 +165,7 @@
       "Prim. Eleveur": 562863,
       "Gain/Part.": 16922.35,
       "Gain/Chev.": 24102,
-      "Course/Chev.": 1,
-      "TauxVictoire": "15.4",
-      "TauxPlace": "50.4",
-      "GainMoyen": 16922.35,
-      "ScoreMixte": "15.4"
+      "Course/Chev.": 1
     },
     {
       "Rang": 10,
@@ -212,11 +182,7 @@
       "Prim. Eleveur": 346553,
       "Gain/Part.": 3452.57,
       "Gain/Chev.": 6242,
-      "Course/Chev.": 2,
-      "TauxVictoire": "9.0",
-      "TauxPlace": "50.9",
-      "GainMoyen": 3452.57,
-      "ScoreMixte": "9.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 11,
@@ -233,11 +199,7 @@
       "Prim. Eleveur": 280417,
       "Gain/Part.": 2494.56,
       "Gain/Chev.": 4440,
-      "Course/Chev.": 2,
-      "TauxVictoire": "9.5",
-      "TauxPlace": "49.5",
-      "GainMoyen": 2494.56,
-      "ScoreMixte": "9.5"
+      "Course/Chev.": 2
     },
     {
       "Rang": 12,
@@ -254,11 +216,7 @@
       "Prim. Eleveur": 320275,
       "Gain/Part.": 3020.22,
       "Gain/Chev.": 5214,
-      "Course/Chev.": 2,
-      "TauxVictoire": "7.8",
-      "TauxPlace": "45.8",
-      "GainMoyen": 3020.22,
-      "ScoreMixte": "7.8"
+      "Course/Chev.": 2
     },
     {
       "Rang": 13,
@@ -275,11 +233,7 @@
       "Prim. Eleveur": 321952,
       "Gain/Part.": 5542.96,
       "Gain/Chev.": 10444,
-      "Course/Chev.": 2,
-      "TauxVictoire": "11.1",
-      "TauxPlace": "47.1",
-      "GainMoyen": 5542.96,
-      "ScoreMixte": "11.1"
+      "Course/Chev.": 2
     },
     {
       "Rang": 14,
@@ -296,11 +250,7 @@
       "Prim. Eleveur": 194281,
       "Gain/Part.": 2035.95,
       "Gain/Chev.": 3921,
-      "Course/Chev.": 2,
-      "TauxVictoire": "8.5",
-      "TauxPlace": "48.9",
-      "GainMoyen": 2035.95,
-      "ScoreMixte": "8.5"
+      "Course/Chev.": 2
     },
     {
       "Rang": 15,
@@ -317,11 +267,7 @@
       "Prim. Eleveur": 217273,
       "Gain/Part.": 2017.08,
       "Gain/Chev.": 3704,
-      "Course/Chev.": 2,
-      "TauxVictoire": "7.8",
-      "TauxPlace": "50.9",
-      "GainMoyen": 2017.08,
-      "ScoreMixte": "7.8"
+      "Course/Chev.": 2
     },
     {
       "Rang": 16,
@@ -338,11 +284,7 @@
       "Prim. Eleveur": 129676,
       "Gain/Part.": 1530.06,
       "Gain/Chev.": 2631,
-      "Course/Chev.": 2,
-      "TauxVictoire": "10.1",
-      "TauxPlace": "46.8",
-      "GainMoyen": 1530.06,
-      "ScoreMixte": "10.1"
+      "Course/Chev.": 2
     },
     {
       "Rang": 17,
@@ -359,11 +301,7 @@
       "Prim. Eleveur": 132699,
       "Gain/Part.": 2335.68,
       "Gain/Chev.": 4108,
-      "Course/Chev.": 2,
-      "TauxVictoire": "13.7",
-      "TauxPlace": "48.1",
-      "GainMoyen": 2335.68,
-      "ScoreMixte": "13.7"
+      "Course/Chev.": 2
     },
     {
       "Rang": 18,
@@ -380,11 +318,7 @@
       "Prim. Eleveur": 98100,
       "Gain/Part.": 1323.75,
       "Gain/Chev.": 2760,
-      "Course/Chev.": 2,
-      "TauxVictoire": "9.5",
-      "TauxPlace": "48.9",
-      "GainMoyen": 1323.75,
-      "ScoreMixte": "9.5"
+      "Course/Chev.": 2
     },
     {
       "Rang": 19,
@@ -401,11 +335,7 @@
       "Prim. Eleveur": 144242,
       "Gain/Part.": 2424.89,
       "Gain/Chev.": 4707,
-      "Course/Chev.": 2,
-      "TauxVictoire": "12.7",
-      "TauxPlace": "57.9",
-      "GainMoyen": 2424.89,
-      "ScoreMixte": "12.7"
+      "Course/Chev.": 2
     },
     {
       "Rang": 20,
@@ -422,11 +352,7 @@
       "Prim. Eleveur": 106759,
       "Gain/Part.": 1998.57,
       "Gain/Chev.": 3722,
-      "Course/Chev.": 2,
-      "TauxVictoire": "12.8",
-      "TauxPlace": "48.0",
-      "GainMoyen": 1998.57,
-      "ScoreMixte": "12.8"
+      "Course/Chev.": 2
     },
     {
       "Rang": 21,
@@ -443,11 +369,7 @@
       "Prim. Eleveur": 129587,
       "Gain/Part.": 2218.62,
       "Gain/Chev.": 3418,
-      "Course/Chev.": 2,
-      "TauxVictoire": "9.8",
-      "TauxPlace": "52.8",
-      "GainMoyen": 2218.62,
-      "ScoreMixte": "9.8"
+      "Course/Chev.": 2
     },
     {
       "Rang": 22,
@@ -464,11 +386,7 @@
       "Prim. Eleveur": 129277,
       "Gain/Part.": 2342.09,
       "Gain/Chev.": 5159,
-      "Course/Chev.": 2,
-      "TauxVictoire": "12.2",
-      "TauxPlace": "54.3",
-      "GainMoyen": 2342.09,
-      "ScoreMixte": "12.2"
+      "Course/Chev.": 2
     },
     {
       "Rang": 23,
@@ -485,11 +403,7 @@
       "Prim. Eleveur": 85843,
       "Gain/Part.": 1982.57,
       "Gain/Chev.": 4833,
-      "Course/Chev.": 2,
-      "TauxVictoire": "13.2",
-      "TauxPlace": "52.0",
-      "GainMoyen": 1982.57,
-      "ScoreMixte": "13.2"
+      "Course/Chev.": 2
     },
     {
       "Rang": 24,
@@ -506,11 +420,7 @@
       "Prim. Eleveur": 115180,
       "Gain/Part.": 4092.18,
       "Gain/Chev.": 6681,
-      "Course/Chev.": 2,
-      "TauxVictoire": "21.9",
-      "TauxPlace": "46.9",
-      "GainMoyen": 4092.18,
-      "ScoreMixte": "21.9"
+      "Course/Chev.": 2
     },
     {
       "Rang": 25,
@@ -527,11 +437,7 @@
       "Prim. Eleveur": 127879,
       "Gain/Part.": 2203.81,
       "Gain/Chev.": 4502,
-      "Course/Chev.": 2,
-      "TauxVictoire": "10.2",
-      "TauxPlace": "47.4",
-      "GainMoyen": 2203.81,
-      "ScoreMixte": "10.2"
+      "Course/Chev.": 2
     },
     {
       "Rang": 26,
@@ -548,11 +454,7 @@
       "Prim. Eleveur": 103990,
       "Gain/Part.": 1932.63,
       "Gain/Chev.": 3263,
-      "Course/Chev.": 2,
-      "TauxVictoire": "10.8",
-      "TauxPlace": "48.4",
-      "GainMoyen": 1932.63,
-      "ScoreMixte": "10.8"
+      "Course/Chev.": 2
     },
     {
       "Rang": 27,
@@ -569,11 +471,7 @@
       "Prim. Eleveur": 71667,
       "Gain/Part.": 1568.2,
       "Gain/Chev.": 2309,
-      "Course/Chev.": 1,
-      "TauxVictoire": "12.8",
-      "TauxPlace": "50.2",
-      "GainMoyen": 1568.2,
-      "ScoreMixte": "12.8"
+      "Course/Chev.": 1
     },
     {
       "Rang": 28,
@@ -590,11 +488,7 @@
       "Prim. Eleveur": 181583,
       "Gain/Part.": 2120.5,
       "Gain/Chev.": 3212,
-      "Course/Chev.": 2,
-      "TauxVictoire": "6.7",
-      "TauxPlace": "53.7",
-      "GainMoyen": 2120.5,
-      "ScoreMixte": "6.7"
+      "Course/Chev.": 2
     },
     {
       "Rang": 29,
@@ -611,11 +505,7 @@
       "Prim. Eleveur": 101691,
       "Gain/Part.": 2266.64,
       "Gain/Chev.": 4706,
-      "Course/Chev.": 2,
-      "TauxVictoire": "11.4",
-      "TauxPlace": "53.7",
-      "GainMoyen": 2266.64,
-      "ScoreMixte": "11.4"
+      "Course/Chev.": 2
     },
     {
       "Rang": 30,
@@ -632,11 +522,7 @@
       "Prim. Eleveur": 88850,
       "Gain/Part.": 1787.95,
       "Gain/Chev.": 3101,
-      "Course/Chev.": 2,
-      "TauxVictoire": "10.1",
-      "TauxPlace": "44.0",
-      "GainMoyen": 1787.95,
-      "ScoreMixte": "10.1"
+      "Course/Chev.": 2
     },
     {
       "Rang": 31,
@@ -653,11 +539,7 @@
       "Prim. Eleveur": 64870,
       "Gain/Part.": 1343.07,
       "Gain/Chev.": 2247,
-      "Course/Chev.": 2,
-      "TauxVictoire": "11.4",
-      "TauxPlace": "48.3",
-      "GainMoyen": 1343.07,
-      "ScoreMixte": "11.4"
+      "Course/Chev.": 2
     },
     {
       "Rang": 32,
@@ -674,11 +556,7 @@
       "Prim. Eleveur": 122897,
       "Gain/Part.": 1749.06,
       "Gain/Chev.": 3084,
-      "Course/Chev.": 2,
-      "TauxVictoire": "7.1",
-      "TauxPlace": "47.1",
-      "GainMoyen": 1749.06,
-      "ScoreMixte": "7.1"
+      "Course/Chev.": 2
     },
     {
       "Rang": 33,
@@ -695,11 +573,7 @@
       "Prim. Eleveur": 77554,
       "Gain/Part.": 1515.19,
       "Gain/Chev.": 3011,
-      "Course/Chev.": 2,
-      "TauxVictoire": "9.7",
-      "TauxPlace": "35.1",
-      "GainMoyen": 1515.19,
-      "ScoreMixte": "9.7"
+      "Course/Chev.": 2
     },
     {
       "Rang": 34,
@@ -716,11 +590,7 @@
       "Prim. Eleveur": 118109,
       "Gain/Part.": 1855.93,
       "Gain/Chev.": 3571,
-      "Course/Chev.": 2,
-      "TauxVictoire": "8.2",
-      "TauxPlace": "58.2",
-      "GainMoyen": 1855.93,
-      "ScoreMixte": "8.2"
+      "Course/Chev.": 2
     },
     {
       "Rang": 35,
@@ -737,11 +607,7 @@
       "Prim. Eleveur": 92299,
       "Gain/Part.": 1245.16,
       "Gain/Chev.": 2292,
-      "Course/Chev.": 2,
-      "TauxVictoire": "6.8",
-      "TauxPlace": "40.7",
-      "GainMoyen": 1245.16,
-      "ScoreMixte": "6.8"
+      "Course/Chev.": 2
     },
     {
       "Rang": 36,
@@ -758,11 +624,7 @@
       "Prim. Eleveur": 35340,
       "Gain/Part.": 1352.95,
       "Gain/Chev.": 2411,
-      "Course/Chev.": 2,
-      "TauxVictoire": "20.9",
-      "TauxPlace": "46.0",
-      "GainMoyen": 1352.95,
-      "ScoreMixte": "20.9"
+      "Course/Chev.": 2
     },
     {
       "Rang": 37,
@@ -779,11 +641,7 @@
       "Prim. Eleveur": 138960,
       "Gain/Part.": 1544.84,
       "Gain/Chev.": 2467,
-      "Course/Chev.": 2,
-      "TauxVictoire": "5.5",
-      "TauxPlace": "51.1",
-      "GainMoyen": 1544.84,
-      "ScoreMixte": "5.5"
+      "Course/Chev.": 2
     },
     {
       "Rang": 38,
@@ -800,11 +658,7 @@
       "Prim. Eleveur": 117692,
       "Gain/Part.": 1728.46,
       "Gain/Chev.": 3254,
-      "Course/Chev.": 2,
-      "TauxVictoire": "6.5",
-      "TauxPlace": "43.6",
-      "GainMoyen": 1728.46,
-      "ScoreMixte": "6.5"
+      "Course/Chev.": 2
     },
     {
       "Rang": 39,
@@ -821,11 +675,7 @@
       "Prim. Eleveur": 67485,
       "Gain/Part.": 1404.67,
       "Gain/Chev.": 2257,
-      "Course/Chev.": 2,
-      "TauxVictoire": "9.1",
-      "TauxPlace": "44.1",
-      "GainMoyen": 1404.67,
-      "ScoreMixte": "9.1"
+      "Course/Chev.": 2
     },
     {
       "Rang": 40,
@@ -842,11 +692,7 @@
       "Prim. Eleveur": 42350,
       "Gain/Part.": 1394.7,
       "Gain/Chev.": 2392,
-      "Course/Chev.": 2,
-      "TauxVictoire": "11.7",
-      "TauxPlace": "45.7",
-      "GainMoyen": 1394.7,
-      "ScoreMixte": "11.7"
+      "Course/Chev.": 2
     },
     {
       "Rang": 41,
@@ -863,11 +709,7 @@
       "Prim. Eleveur": 117923,
       "Gain/Part.": 1552.81,
       "Gain/Chev.": 2994,
-      "Course/Chev.": 2,
-      "TauxVictoire": "5.8",
-      "TauxPlace": "48.1",
-      "GainMoyen": 1552.81,
-      "ScoreMixte": "5.8"
+      "Course/Chev.": 2
     },
     {
       "Rang": 42,
@@ -884,11 +726,7 @@
       "Prim. Eleveur": 60355,
       "Gain/Part.": 1216.81,
       "Gain/Chev.": 2240,
-      "Course/Chev.": 2,
-      "TauxVictoire": "7.2",
-      "TauxPlace": "38.2",
-      "GainMoyen": 1216.81,
-      "ScoreMixte": "7.2"
+      "Course/Chev.": 2
     },
     {
       "Rang": 43,
@@ -905,11 +743,7 @@
       "Prim. Eleveur": 64337,
       "Gain/Part.": 1773.12,
       "Gain/Chev.": 2666,
-      "Course/Chev.": 2,
-      "TauxVictoire": "12.1",
-      "TauxPlace": "49.0",
-      "GainMoyen": 1773.12,
-      "ScoreMixte": "12.1"
+      "Course/Chev.": 2
     },
     {
       "Rang": 44,
@@ -926,11 +760,7 @@
       "Prim. Eleveur": 60171,
       "Gain/Part.": 1741.02,
       "Gain/Chev.": 2946,
-      "Course/Chev.": 2,
-      "TauxVictoire": "12.6",
-      "TauxPlace": "49.5",
-      "GainMoyen": 1741.02,
-      "ScoreMixte": "12.6"
+      "Course/Chev.": 2
     },
     {
       "Rang": 45,
@@ -947,11 +777,7 @@
       "Prim. Eleveur": 75492,
       "Gain/Part.": 1315.34,
       "Gain/Chev.": 2596,
-      "Course/Chev.": 2,
-      "TauxVictoire": "6.5",
-      "TauxPlace": "52.6",
-      "GainMoyen": 1315.34,
-      "ScoreMixte": "6.5"
+      "Course/Chev.": 2
     },
     {
       "Rang": 46,
@@ -968,11 +794,7 @@
       "Prim. Eleveur": 90794,
       "Gain/Part.": 2031.9,
       "Gain/Chev.": 3596,
-      "Course/Chev.": 2,
-      "TauxVictoire": "9.8",
-      "TauxPlace": "53.3",
-      "GainMoyen": 2031.9,
-      "ScoreMixte": "9.8"
+      "Course/Chev.": 2
     },
     {
       "Rang": 47,
@@ -989,11 +811,7 @@
       "Prim. Eleveur": 45878,
       "Gain/Part.": 1703.82,
       "Gain/Chev.": 2660,
-      "Course/Chev.": 2,
-      "TauxVictoire": "15.7",
-      "TauxPlace": "44.4",
-      "GainMoyen": 1703.82,
-      "ScoreMixte": "15.7"
+      "Course/Chev.": 2
     },
     {
       "Rang": 48,
@@ -1010,11 +828,7 @@
       "Prim. Eleveur": 71678,
       "Gain/Part.": 1140.06,
       "Gain/Chev.": 1989,
-      "Course/Chev.": 2,
-      "TauxVictoire": "5.7",
-      "TauxPlace": "39.0",
-      "GainMoyen": 1140.06,
-      "ScoreMixte": "5.7"
+      "Course/Chev.": 2
     },
     {
       "Rang": 49,
@@ -1031,11 +845,7 @@
       "Prim. Eleveur": 47751,
       "Gain/Part.": 1443.44,
       "Gain/Chev.": 2210,
-      "Course/Chev.": 2,
-      "TauxVictoire": "11.7",
-      "TauxPlace": "49.0",
-      "GainMoyen": 1443.44,
-      "ScoreMixte": "11.7"
+      "Course/Chev.": 2
     },
     {
       "Rang": 50,
@@ -1052,11 +862,7 @@
       "Prim. Eleveur": 47088,
       "Gain/Part.": 1363.06,
       "Gain/Chev.": 2298,
-      "Course/Chev.": 2,
-      "TauxVictoire": "13.4",
-      "TauxPlace": "40.1",
-      "GainMoyen": 1363.06,
-      "ScoreMixte": "13.4"
+      "Course/Chev.": 2
     },
     {
       "Rang": 51,
@@ -1073,11 +879,7 @@
       "Prim. Eleveur": 42166,
       "Gain/Part.": 1844.65,
       "Gain/Chev.": 2426,
-      "Course/Chev.": 1,
-      "TauxVictoire": "13.2",
-      "TauxPlace": "46.1",
-      "GainMoyen": 1844.65,
-      "ScoreMixte": "13.2"
+      "Course/Chev.": 1
     },
     {
       "Rang": 52,
@@ -1094,11 +896,7 @@
       "Prim. Eleveur": 43170,
       "Gain/Part.": 1793.77,
       "Gain/Chev.": 2947,
-      "Course/Chev.": 2,
-      "TauxVictoire": "15.9",
-      "TauxPlace": "42.8",
-      "GainMoyen": 1793.77,
-      "ScoreMixte": "15.9"
+      "Course/Chev.": 2
     },
     {
       "Rang": 53,
@@ -1115,11 +913,7 @@
       "Prim. Eleveur": 41440,
       "Gain/Part.": 3190.58,
       "Gain/Chev.": 7677,
-      "Course/Chev.": 2,
-      "TauxVictoire": "28.6",
-      "TauxPlace": "64.9",
-      "GainMoyen": 3190.58,
-      "ScoreMixte": "28.6"
+      "Course/Chev.": 2
     },
     {
       "Rang": 54,
@@ -1136,11 +930,7 @@
       "Prim. Eleveur": 54882,
       "Gain/Part.": 1046.49,
       "Gain/Chev.": 1718,
-      "Course/Chev.": 2,
-      "TauxVictoire": "7.3",
-      "TauxPlace": "48.1",
-      "GainMoyen": 1046.49,
-      "ScoreMixte": "7.3"
+      "Course/Chev.": 2
     },
     {
       "Rang": 55,
@@ -1157,11 +947,7 @@
       "Prim. Eleveur": 75821,
       "Gain/Part.": 1549.4,
       "Gain/Chev.": 2543,
-      "Course/Chev.": 2,
-      "TauxVictoire": "6.6",
-      "TauxPlace": "37.8",
-      "GainMoyen": 1549.4,
-      "ScoreMixte": "6.6"
+      "Course/Chev.": 2
     },
     {
       "Rang": 56,
@@ -1178,11 +964,7 @@
       "Prim. Eleveur": 121356,
       "Gain/Part.": 3396.7,
       "Gain/Chev.": 8823,
-      "Course/Chev.": 3,
-      "TauxVictoire": "9.9",
-      "TauxPlace": "48.4",
-      "GainMoyen": 3396.7,
-      "ScoreMixte": "9.9"
+      "Course/Chev.": 3
     },
     {
       "Rang": 57,
@@ -1199,11 +981,7 @@
       "Prim. Eleveur": 46755,
       "Gain/Part.": 1374.78,
       "Gain/Chev.": 2589,
-      "Course/Chev.": 2,
-      "TauxVictoire": "10.0",
-      "TauxPlace": "45.5",
-      "GainMoyen": 1374.78,
-      "ScoreMixte": "10.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 58,
@@ -1220,11 +998,7 @@
       "Prim. Eleveur": 66455,
       "Gain/Part.": 1822.22,
       "Gain/Chev.": 3821,
-      "Course/Chev.": 2,
-      "TauxVictoire": "10.8",
-      "TauxPlace": "47.7",
-      "GainMoyen": 1822.22,
-      "ScoreMixte": "10.8"
+      "Course/Chev.": 2
     },
     {
       "Rang": 59,
@@ -1241,11 +1015,7 @@
       "Prim. Eleveur": 37074,
       "Gain/Part.": 1305.18,
       "Gain/Chev.": 2109,
-      "Course/Chev.": 2,
-      "TauxVictoire": "11.2",
-      "TauxPlace": "59.4",
-      "GainMoyen": 1305.18,
-      "ScoreMixte": "11.2"
+      "Course/Chev.": 2
     },
     {
       "Rang": 60,
@@ -1262,11 +1032,7 @@
       "Prim. Eleveur": 64103,
       "Gain/Part.": 1820.73,
       "Gain/Chev.": 4429,
-      "Course/Chev.": 2,
-      "TauxVictoire": "10.0",
-      "TauxPlace": "48.9",
-      "GainMoyen": 1820.73,
-      "ScoreMixte": "10.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 61,
@@ -1283,11 +1049,7 @@
       "Prim. Eleveur": 65365,
       "Gain/Part.": 2669.48,
       "Gain/Chev.": 4306,
-      "Course/Chev.": 2,
-      "TauxVictoire": "12.0",
-      "TauxPlace": "46.0",
-      "GainMoyen": 2669.48,
-      "ScoreMixte": "12.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 62,
@@ -1304,11 +1066,7 @@
       "Prim. Eleveur": 32588,
       "Gain/Part.": 1275.58,
       "Gain/Chev.": 3011,
-      "Course/Chev.": 2,
-      "TauxVictoire": "12.5",
-      "TauxPlace": "39.6",
-      "GainMoyen": 1275.58,
-      "ScoreMixte": "12.5"
+      "Course/Chev.": 2
     },
     {
       "Rang": 63,
@@ -1325,11 +1083,7 @@
       "Prim. Eleveur": 62961,
       "Gain/Part.": 1533.56,
       "Gain/Chev.": 2927,
-      "Course/Chev.": 2,
-      "TauxVictoire": "6.8",
-      "TauxPlace": "46.8",
-      "GainMoyen": 1533.56,
-      "ScoreMixte": "6.8"
+      "Course/Chev.": 2
     },
     {
       "Rang": 64,
@@ -1346,11 +1100,7 @@
       "Prim. Eleveur": 73706,
       "Gain/Part.": 1642.58,
       "Gain/Chev.": 2927,
-      "Course/Chev.": 2,
-      "TauxVictoire": "6.3",
-      "TauxPlace": "51.0",
-      "GainMoyen": 1642.58,
-      "ScoreMixte": "6.3"
+      "Course/Chev.": 2
     },
     {
       "Rang": 65,
@@ -1367,11 +1117,7 @@
       "Prim. Eleveur": 35851,
       "Gain/Part.": 922.58,
       "Gain/Chev.": 1365,
-      "Course/Chev.": 1,
-      "TauxVictoire": "7.3",
-      "TauxPlace": "40.6",
-      "GainMoyen": 922.58,
-      "ScoreMixte": "7.3"
+      "Course/Chev.": 1
     },
     {
       "Rang": 66,
@@ -1388,11 +1134,7 @@
       "Prim. Eleveur": 45648,
       "Gain/Part.": 1315.72,
       "Gain/Chev.": 2166,
-      "Course/Chev.": 2,
-      "TauxVictoire": "7.5",
-      "TauxPlace": "40.7",
-      "GainMoyen": 1315.72,
-      "ScoreMixte": "7.5"
+      "Course/Chev.": 2
     },
     {
       "Rang": 67,
@@ -1409,11 +1151,7 @@
       "Prim. Eleveur": 39803,
       "Gain/Part.": 1393.28,
       "Gain/Chev.": 2484,
-      "Course/Chev.": 2,
-      "TauxVictoire": "10.8",
-      "TauxPlace": "50.0",
-      "GainMoyen": 1393.28,
-      "ScoreMixte": "10.8"
+      "Course/Chev.": 2
     },
     {
       "Rang": 68,
@@ -1430,11 +1168,7 @@
       "Prim. Eleveur": 31388,
       "Gain/Part.": 1242.74,
       "Gain/Chev.": 1757,
-      "Course/Chev.": 1,
-      "TauxVictoire": "10.9",
-      "TauxPlace": "42.9",
-      "GainMoyen": 1242.74,
-      "ScoreMixte": "10.9"
+      "Course/Chev.": 1
     },
     {
       "Rang": 69,
@@ -1451,11 +1185,7 @@
       "Prim. Eleveur": 72651,
       "Gain/Part.": 1779.24,
       "Gain/Chev.": 2957,
-      "Course/Chev.": 2,
-      "TauxVictoire": "6.4",
-      "TauxPlace": "54.2",
-      "GainMoyen": 1779.24,
-      "ScoreMixte": "6.4"
+      "Course/Chev.": 2
     },
     {
       "Rang": 70,
@@ -1472,11 +1202,7 @@
       "Prim. Eleveur": 47029,
       "Gain/Part.": 1155.57,
       "Gain/Chev.": 1923,
-      "Course/Chev.": 2,
-      "TauxVictoire": "6.9",
-      "TauxPlace": "44.0",
-      "GainMoyen": 1155.57,
-      "ScoreMixte": "6.9"
+      "Course/Chev.": 2
     },
     {
       "Rang": 71,
@@ -1493,11 +1219,7 @@
       "Prim. Eleveur": 56226,
       "Gain/Part.": 2147.24,
       "Gain/Chev.": 3338,
-      "Course/Chev.": 2,
-      "TauxVictoire": "10.5",
-      "TauxPlace": "53.1",
-      "GainMoyen": 2147.24,
-      "ScoreMixte": "10.5"
+      "Course/Chev.": 2
     },
     {
       "Rang": 72,
@@ -1514,11 +1236,7 @@
       "Prim. Eleveur": 36966,
       "Gain/Part.": 2582.26,
       "Gain/Chev.": 6617,
-      "Course/Chev.": 3,
-      "TauxVictoire": "18.3",
-      "TauxPlace": "75.6",
-      "GainMoyen": 2582.26,
-      "ScoreMixte": "18.3"
+      "Course/Chev.": 3
     },
     {
       "Rang": 73,
@@ -1535,11 +1253,7 @@
       "Prim. Eleveur": 27145,
       "Gain/Part.": 1202.2,
       "Gain/Chev.": 1783,
-      "Course/Chev.": 1,
-      "TauxVictoire": "11.1",
-      "TauxPlace": "44.4",
-      "GainMoyen": 1202.2,
-      "ScoreMixte": "11.1"
+      "Course/Chev.": 1
     },
     {
       "Rang": 74,
@@ -1556,11 +1270,7 @@
       "Prim. Eleveur": 35325,
       "Gain/Part.": 2171.32,
       "Gain/Chev.": 2853,
-      "Course/Chev.": 1,
-      "TauxVictoire": "13.3",
-      "TauxPlace": "51.3",
-      "GainMoyen": 2171.32,
-      "ScoreMixte": "13.3"
+      "Course/Chev.": 1
     },
     {
       "Rang": 75,
@@ -1577,11 +1287,7 @@
       "Prim. Eleveur": 61822,
       "Gain/Part.": 1169.62,
       "Gain/Chev.": 1819,
-      "Course/Chev.": 2,
-      "TauxVictoire": "5.0",
-      "TauxPlace": "44.3",
-      "GainMoyen": 1169.62,
-      "ScoreMixte": "5.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 76,
@@ -1598,11 +1304,7 @@
       "Prim. Eleveur": 50276,
       "Gain/Part.": 1523.73,
       "Gain/Chev.": 2090,
-      "Course/Chev.": 1,
-      "TauxVictoire": "6.5",
-      "TauxPlace": "51.9",
-      "GainMoyen": 1523.73,
-      "ScoreMixte": "6.5"
+      "Course/Chev.": 1
     },
     {
       "Rang": 77,
@@ -1619,11 +1321,7 @@
       "Prim. Eleveur": 80198,
       "Gain/Part.": 2532.86,
       "Gain/Chev.": 3371,
-      "Course/Chev.": 1,
-      "TauxVictoire": "7.9",
-      "TauxPlace": "53.1",
-      "GainMoyen": 2532.86,
-      "ScoreMixte": "7.9"
+      "Course/Chev.": 1
     },
     {
       "Rang": 78,
@@ -1640,11 +1338,7 @@
       "Prim. Eleveur": 44579,
       "Gain/Part.": 1366,
       "Gain/Chev.": 2299,
-      "Course/Chev.": 2,
-      "TauxVictoire": "6.8",
-      "TauxPlace": "45.4",
-      "GainMoyen": 1366.0,
-      "ScoreMixte": "6.8"
+      "Course/Chev.": 2
     },
     {
       "Rang": 79,
@@ -1661,11 +1355,7 @@
       "Prim. Eleveur": 21686,
       "Gain/Part.": 1277.77,
       "Gain/Chev.": 2355,
-      "Course/Chev.": 2,
-      "TauxVictoire": "14.9",
-      "TauxPlace": "50.0",
-      "GainMoyen": 1277.77,
-      "ScoreMixte": "14.9"
+      "Course/Chev.": 2
     },
     {
       "Rang": 80,
@@ -1682,11 +1372,7 @@
       "Prim. Eleveur": 28170,
       "Gain/Part.": 974.76,
       "Gain/Chev.": 1504,
-      "Course/Chev.": 2,
-      "TauxVictoire": "7.3",
-      "TauxPlace": "39.1",
-      "GainMoyen": 974.76,
-      "ScoreMixte": "7.3"
+      "Course/Chev.": 2
     },
     {
       "Rang": 81,
@@ -1703,11 +1389,7 @@
       "Prim. Eleveur": 25557,
       "Gain/Part.": 1104.58,
       "Gain/Chev.": 1972,
-      "Course/Chev.": 2,
-      "TauxVictoire": "10.4",
-      "TauxPlace": "43.2",
-      "GainMoyen": 1104.58,
-      "ScoreMixte": "10.4"
+      "Course/Chev.": 2
     },
     {
       "Rang": 82,
@@ -1724,11 +1406,7 @@
       "Prim. Eleveur": 30266,
       "Gain/Part.": 1926.75,
       "Gain/Chev.": 2740,
-      "Course/Chev.": 1,
-      "TauxVictoire": "14.3",
-      "TauxPlace": "53.8",
-      "GainMoyen": 1926.75,
-      "ScoreMixte": "14.3"
+      "Course/Chev.": 1
     },
     {
       "Rang": 83,
@@ -1745,11 +1423,7 @@
       "Prim. Eleveur": 43535,
       "Gain/Part.": 1021.14,
       "Gain/Chev.": 1578,
-      "Course/Chev.": 2,
-      "TauxVictoire": "4.1",
-      "TauxPlace": "33.2",
-      "GainMoyen": 1021.14,
-      "ScoreMixte": "4.1"
+      "Course/Chev.": 2
     },
     {
       "Rang": 84,
@@ -1766,11 +1440,7 @@
       "Prim. Eleveur": 33836,
       "Gain/Part.": 1411.92,
       "Gain/Chev.": 2209,
-      "Course/Chev.": 2,
-      "TauxVictoire": "9.0",
-      "TauxPlace": "54.1",
-      "GainMoyen": 1411.92,
-      "ScoreMixte": "9.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 85,
@@ -1787,11 +1457,7 @@
       "Prim. Eleveur": 26048,
       "Gain/Part.": 1663.33,
       "Gain/Chev.": 2523,
-      "Course/Chev.": 2,
-      "TauxVictoire": "13.2",
-      "TauxPlace": "50.5",
-      "GainMoyen": 1663.33,
-      "ScoreMixte": "13.2"
+      "Course/Chev.": 2
     },
     {
       "Rang": 86,
@@ -1808,11 +1474,7 @@
       "Prim. Eleveur": 26394,
       "Gain/Part.": 1521.55,
       "Gain/Chev.": 2894,
-      "Course/Chev.": 2,
-      "TauxVictoire": "12.4",
-      "TauxPlace": "45.4",
-      "GainMoyen": 1521.55,
-      "ScoreMixte": "12.4"
+      "Course/Chev.": 2
     },
     {
       "Rang": 87,
@@ -1829,11 +1491,7 @@
       "Prim. Eleveur": 53178,
       "Gain/Part.": 1332.64,
       "Gain/Chev.": 2338,
-      "Course/Chev.": 2,
-      "TauxVictoire": "5.3",
-      "TauxPlace": "44.0",
-      "GainMoyen": 1332.64,
-      "ScoreMixte": "5.3"
+      "Course/Chev.": 2
     },
     {
       "Rang": 88,
@@ -1850,11 +1508,7 @@
       "Prim. Eleveur": 30383,
       "Gain/Part.": 1226.36,
       "Gain/Chev.": 1826,
-      "Course/Chev.": 1,
-      "TauxVictoire": "5.5",
-      "TauxPlace": "44.8",
-      "GainMoyen": 1226.36,
-      "ScoreMixte": "5.5"
+      "Course/Chev.": 1
     },
     {
       "Rang": 89,
@@ -1871,11 +1525,7 @@
       "Prim. Eleveur": 33621,
       "Gain/Part.": 1295.66,
       "Gain/Chev.": 1849,
-      "Course/Chev.": 1,
-      "TauxVictoire": "8.0",
-      "TauxPlace": "53.3",
-      "GainMoyen": 1295.66,
-      "ScoreMixte": "8.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 90,
@@ -1892,11 +1542,7 @@
       "Prim. Eleveur": 31440,
       "Gain/Part.": 1390.74,
       "Gain/Chev.": 2194,
-      "Course/Chev.": 2,
-      "TauxVictoire": "7.7",
-      "TauxPlace": "43.0",
-      "GainMoyen": 1390.74,
-      "ScoreMixte": "7.7"
+      "Course/Chev.": 2
     },
     {
       "Rang": 91,
@@ -1913,11 +1559,7 @@
       "Prim. Eleveur": 30550,
       "Gain/Part.": 1667.6,
       "Gain/Chev.": 3175,
-      "Course/Chev.": 2,
-      "TauxVictoire": "10.1",
-      "TauxPlace": "54.5",
-      "GainMoyen": 1667.6,
-      "ScoreMixte": "10.1"
+      "Course/Chev.": 2
     },
     {
       "Rang": 92,
@@ -1934,11 +1576,7 @@
       "Prim. Eleveur": 17791,
       "Gain/Part.": 1567.27,
       "Gain/Chev.": 2983,
-      "Course/Chev.": 2,
-      "TauxVictoire": "8.5",
-      "TauxPlace": "44.1",
-      "GainMoyen": 1567.27,
-      "ScoreMixte": "8.5"
+      "Course/Chev.": 2
     },
     {
       "Rang": 93,
@@ -1955,11 +1593,7 @@
       "Prim. Eleveur": 25510,
       "Gain/Part.": 1664.71,
       "Gain/Chev.": 2607,
-      "Course/Chev.": 2,
-      "TauxVictoire": "12.0",
-      "TauxPlace": "55.4",
-      "GainMoyen": 1664.71,
-      "ScoreMixte": "12.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 94,
@@ -1976,11 +1610,7 @@
       "Prim. Eleveur": 22018,
       "Gain/Part.": 1440.25,
       "Gain/Chev.": 2745,
-      "Course/Chev.": 2,
-      "TauxVictoire": "8.2",
-      "TauxPlace": "34.4",
-      "GainMoyen": 1440.25,
-      "ScoreMixte": "8.2"
+      "Course/Chev.": 2
     },
     {
       "Rang": 95,
@@ -1997,11 +1627,7 @@
       "Prim. Eleveur": 15712,
       "Gain/Part.": 3311.15,
       "Gain/Chev.": 7174,
-      "Course/Chev.": 2,
-      "TauxVictoire": "38.5",
-      "TauxPlace": "50.0",
-      "GainMoyen": 3311.15,
-      "ScoreMixte": "38.5"
+      "Course/Chev.": 2
     },
     {
       "Rang": 96,
@@ -2018,11 +1644,7 @@
       "Prim. Eleveur": 30293,
       "Gain/Part.": 952.83,
       "Gain/Chev.": 1707,
-      "Course/Chev.": 2,
-      "TauxVictoire": "5.2",
-      "TauxPlace": "46.5",
-      "GainMoyen": 952.83,
-      "ScoreMixte": "5.2"
+      "Course/Chev.": 2
     },
     {
       "Rang": 97,
@@ -2039,11 +1661,7 @@
       "Prim. Eleveur": 15282,
       "Gain/Part.": 731.54,
       "Gain/Chev.": 1181,
-      "Course/Chev.": 2,
-      "TauxVictoire": "4.6",
-      "TauxPlace": "34.0",
-      "GainMoyen": 731.54,
-      "ScoreMixte": "4.6"
+      "Course/Chev.": 2
     },
     {
       "Rang": 98,
@@ -2060,11 +1678,7 @@
       "Prim. Eleveur": 23077,
       "Gain/Part.": 913.09,
       "Gain/Chev.": 1293,
-      "Course/Chev.": 1,
-      "TauxVictoire": "6.3",
-      "TauxPlace": "46.9",
-      "GainMoyen": 913.09,
-      "ScoreMixte": "6.3"
+      "Course/Chev.": 1
     },
     {
       "Rang": 99,
@@ -2081,11 +1695,7 @@
       "Prim. Eleveur": 19445,
       "Gain/Part.": 885.38,
       "Gain/Chev.": 1193,
-      "Course/Chev.": 1,
-      "TauxVictoire": "7.0",
-      "TauxPlace": "39.1",
-      "GainMoyen": 885.38,
-      "ScoreMixte": "7.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 100,
@@ -2102,11 +1712,7 @@
       "Prim. Eleveur": 18621,
       "Gain/Part.": 1255.5,
       "Gain/Chev.": 1779,
-      "Course/Chev.": 1,
-      "TauxVictoire": "8.8",
-      "TauxPlace": "47.1",
-      "GainMoyen": 1255.5,
-      "ScoreMixte": "8.8"
+      "Course/Chev.": 1
     },
     {
       "Rang": 101,
@@ -2123,11 +1729,7 @@
       "Prim. Eleveur": 27717,
       "Gain/Part.": 1197.3,
       "Gain/Chev.": 1903,
-      "Course/Chev.": 2,
-      "TauxVictoire": "7.8",
-      "TauxPlace": "35.3",
-      "GainMoyen": 1197.3,
-      "ScoreMixte": "7.8"
+      "Course/Chev.": 2
     },
     {
       "Rang": 102,
@@ -2144,11 +1746,7 @@
       "Prim. Eleveur": 23850,
       "Gain/Part.": 1345.95,
       "Gain/Chev.": 1775,
-      "Course/Chev.": 1,
-      "TauxVictoire": "9.9",
-      "TauxPlace": "40.7",
-      "GainMoyen": 1345.95,
-      "ScoreMixte": "9.9"
+      "Course/Chev.": 1
     },
     {
       "Rang": 103,
@@ -2165,11 +1763,7 @@
       "Prim. Eleveur": 20167,
       "Gain/Part.": 4074.63,
       "Gain/Chev.": 5927,
-      "Course/Chev.": 1,
-      "TauxVictoire": "28.1",
-      "TauxPlace": "31.2",
-      "GainMoyen": 4074.62,
-      "ScoreMixte": "28.1"
+      "Course/Chev.": 1
     },
     {
       "Rang": 104,
@@ -2186,11 +1780,7 @@
       "Prim. Eleveur": 24330,
       "Gain/Part.": 921.37,
       "Gain/Chev.": 1453,
-      "Course/Chev.": 2,
-      "TauxVictoire": "4.9",
-      "TauxPlace": "44.5",
-      "GainMoyen": 921.37,
-      "ScoreMixte": "4.9"
+      "Course/Chev.": 2
     },
     {
       "Rang": 105,
@@ -2207,11 +1797,7 @@
       "Prim. Eleveur": 25096,
       "Gain/Part.": 1244.74,
       "Gain/Chev.": 3242,
-      "Course/Chev.": 3,
-      "TauxVictoire": "6.4",
-      "TauxPlace": "55.2",
-      "GainMoyen": 1244.74,
-      "ScoreMixte": "6.4"
+      "Course/Chev.": 3
     },
     {
       "Rang": 106,
@@ -2228,11 +1814,7 @@
       "Prim. Eleveur": 23082,
       "Gain/Part.": 724.1,
       "Gain/Chev.": 1129,
-      "Course/Chev.": 2,
-      "TauxVictoire": "4.6",
-      "TauxPlace": "39.9",
-      "GainMoyen": 724.1,
-      "ScoreMixte": "4.6"
+      "Course/Chev.": 2
     },
     {
       "Rang": 107,
@@ -2249,11 +1831,7 @@
       "Prim. Eleveur": 19848,
       "Gain/Part.": 793.27,
       "Gain/Chev.": 1808,
-      "Course/Chev.": 2,
-      "TauxVictoire": "5.8",
-      "TauxPlace": "46.0",
-      "GainMoyen": 793.27,
-      "ScoreMixte": "5.8"
+      "Course/Chev.": 2
     },
     {
       "Rang": 108,
@@ -2270,11 +1848,7 @@
       "Prim. Eleveur": 19455,
       "Gain/Part.": 1347.9,
       "Gain/Chev.": 2087,
-      "Course/Chev.": 2,
-      "TauxVictoire": "8.3",
-      "TauxPlace": "49.0",
-      "GainMoyen": 1347.9,
-      "ScoreMixte": "8.3"
+      "Course/Chev.": 2
     },
     {
       "Rang": 109,
@@ -2291,11 +1865,7 @@
       "Prim. Eleveur": 13086,
       "Gain/Part.": 2944.62,
       "Gain/Chev.": 3828,
-      "Course/Chev.": 1,
-      "TauxVictoire": "30.8",
-      "TauxPlace": "38.5",
-      "GainMoyen": 2944.62,
-      "ScoreMixte": "30.8"
+      "Course/Chev.": 1
     },
     {
       "Rang": 110,
@@ -2312,11 +1882,7 @@
       "Prim. Eleveur": 19544,
       "Gain/Part.": 1120.59,
       "Gain/Chev.": 1455,
-      "Course/Chev.": 1,
-      "TauxVictoire": "6.2",
-      "TauxPlace": "45.1",
-      "GainMoyen": 1120.59,
-      "ScoreMixte": "6.2"
+      "Course/Chev.": 1
     },
     {
       "Rang": 111,
@@ -2333,11 +1899,7 @@
       "Prim. Eleveur": 18692,
       "Gain/Part.": 1702.56,
       "Gain/Chev.": 2137,
-      "Course/Chev.": 1,
-      "TauxVictoire": "10.9",
-      "TauxPlace": "65.6",
-      "GainMoyen": 1702.56,
-      "ScoreMixte": "10.9"
+      "Course/Chev.": 1
     },
     {
       "Rang": 112,
@@ -2354,11 +1916,7 @@
       "Prim. Eleveur": 10059,
       "Gain/Part.": 1119.12,
       "Gain/Chev.": 1297,
-      "Course/Chev.": 1,
-      "TauxVictoire": "13.7",
-      "TauxPlace": "56.9",
-      "GainMoyen": 1119.12,
-      "ScoreMixte": "13.7"
+      "Course/Chev.": 1
     },
     {
       "Rang": 113,
@@ -2375,11 +1933,7 @@
       "Prim. Eleveur": 15201,
       "Gain/Part.": 1044.22,
       "Gain/Chev.": 1446,
-      "Course/Chev.": 1,
-      "TauxVictoire": "9.7",
-      "TauxPlace": "36.1",
-      "GainMoyen": 1044.22,
-      "ScoreMixte": "9.7"
+      "Course/Chev.": 1
     },
     {
       "Rang": 114,
@@ -2396,11 +1950,7 @@
       "Prim. Eleveur": 15096,
       "Gain/Part.": 33540.85,
       "Gain/Chev.": 38332,
-      "Course/Chev.": 1,
-      "TauxVictoire": "17.5",
-      "TauxPlace": "52.5",
-      "GainMoyen": 33540.85,
-      "ScoreMixte": "17.5"
+      "Course/Chev.": 1
     },
     {
       "Rang": 115,
@@ -2417,11 +1967,7 @@
       "Prim. Eleveur": 12518,
       "Gain/Part.": 1908.61,
       "Gain/Chev.": 2270,
-      "Course/Chev.": 1,
-      "TauxVictoire": "15.9",
-      "TauxPlace": "45.5",
-      "GainMoyen": 1908.61,
-      "ScoreMixte": "15.9"
+      "Course/Chev.": 1
     },
     {
       "Rang": 116,
@@ -2438,11 +1984,7 @@
       "Prim. Eleveur": 20885,
       "Gain/Part.": 6530.28,
       "Gain/Chev.": 9042,
-      "Course/Chev.": 1,
-      "TauxVictoire": "38.9",
-      "TauxPlace": "61.1",
-      "GainMoyen": 6530.28,
-      "ScoreMixte": "38.9"
+      "Course/Chev.": 1
     },
     {
       "Rang": 117,
@@ -2459,11 +2001,7 @@
       "Prim. Eleveur": 15904,
       "Gain/Part.": 870.37,
       "Gain/Chev.": 1328,
-      "Course/Chev.": 2,
-      "TauxVictoire": "5.2",
-      "TauxPlace": "54.3",
-      "GainMoyen": 870.37,
-      "ScoreMixte": "5.2"
+      "Course/Chev.": 2
     },
     {
       "Rang": 118,
@@ -2480,11 +2018,7 @@
       "Prim. Eleveur": 16187,
       "Gain/Part.": 675.36,
       "Gain/Chev.": 3074,
-      "Course/Chev.": 5,
-      "TauxVictoire": "4.5",
-      "TauxPlace": "37.1",
-      "GainMoyen": 675.36,
-      "ScoreMixte": "4.5"
+      "Course/Chev.": 5
     },
     {
       "Rang": 119,
@@ -2501,11 +2035,7 @@
       "Prim. Eleveur": 16261,
       "Gain/Part.": 1297.29,
       "Gain/Chev.": 2757,
-      "Course/Chev.": 2,
-      "TauxVictoire": "7.1",
-      "TauxPlace": "51.8",
-      "GainMoyen": 1297.29,
-      "ScoreMixte": "7.1"
+      "Course/Chev.": 2
     },
     {
       "Rang": 120,
@@ -2522,11 +2052,7 @@
       "Prim. Eleveur": 18337,
       "Gain/Part.": 1346.46,
       "Gain/Chev.": 2020,
-      "Course/Chev.": 2,
-      "TauxVictoire": "7.7",
-      "TauxPlace": "51.3",
-      "GainMoyen": 1346.46,
-      "ScoreMixte": "7.7"
+      "Course/Chev.": 2
     },
     {
       "Rang": 121,
@@ -2543,11 +2069,7 @@
       "Prim. Eleveur": 16710,
       "Gain/Part.": 1087.51,
       "Gain/Chev.": 1792,
-      "Course/Chev.": 2,
-      "TauxVictoire": "6.7",
-      "TauxPlace": "41.6",
-      "GainMoyen": 1087.51,
-      "ScoreMixte": "6.7"
+      "Course/Chev.": 2
     },
     {
       "Rang": 122,
@@ -2564,11 +2086,7 @@
       "Prim. Eleveur": 17035,
       "Gain/Part.": 1311.2,
       "Gain/Chev.": 4655,
-      "Course/Chev.": 4,
-      "TauxVictoire": "8.5",
-      "TauxPlace": "52.1",
-      "GainMoyen": 1311.2,
-      "ScoreMixte": "8.5"
+      "Course/Chev.": 4
     },
     {
       "Rang": 123,
@@ -2585,11 +2103,7 @@
       "Prim. Eleveur": 17211,
       "Gain/Part.": 1156.05,
       "Gain/Chev.": 1643,
-      "Course/Chev.": 1,
-      "TauxVictoire": "7.4",
-      "TauxPlace": "44.4",
-      "GainMoyen": 1156.05,
-      "ScoreMixte": "7.4"
+      "Course/Chev.": 1
     },
     {
       "Rang": 124,
@@ -2606,11 +2120,7 @@
       "Prim. Eleveur": 9618,
       "Gain/Part.": 780.07,
       "Gain/Chev.": 1001,
-      "Course/Chev.": 1,
-      "TauxVictoire": "8.8",
-      "TauxPlace": "39.7",
-      "GainMoyen": 780.07,
-      "ScoreMixte": "8.8"
+      "Course/Chev.": 1
     },
     {
       "Rang": 125,
@@ -2627,11 +2137,7 @@
       "Prim. Eleveur": 17456,
       "Gain/Part.": 3286.79,
       "Gain/Chev.": 4804,
-      "Course/Chev.": 1,
-      "TauxVictoire": "15.8",
-      "TauxPlace": "55.3",
-      "GainMoyen": 3286.79,
-      "ScoreMixte": "15.8"
+      "Course/Chev.": 1
     },
     {
       "Rang": 126,
@@ -2648,11 +2154,7 @@
       "Prim. Eleveur": 7011,
       "Gain/Part.": 1092.67,
       "Gain/Chev.": 1578,
-      "Course/Chev.": 1,
-      "TauxVictoire": "15.4",
-      "TauxPlace": "33.3",
-      "GainMoyen": 1092.67,
-      "ScoreMixte": "15.4"
+      "Course/Chev.": 1
     },
     {
       "Rang": 127,
@@ -2669,11 +2171,7 @@
       "Prim. Eleveur": 13817,
       "Gain/Part.": 2594.29,
       "Gain/Chev.": 3158,
-      "Course/Chev.": 1,
-      "TauxVictoire": "21.4",
-      "TauxPlace": "39.3",
-      "GainMoyen": 2594.29,
-      "ScoreMixte": "21.4"
+      "Course/Chev.": 1
     },
     {
       "Rang": 128,
@@ -2690,11 +2188,7 @@
       "Prim. Eleveur": 15178,
       "Gain/Part.": 1517.29,
       "Gain/Chev.": 1946,
-      "Course/Chev.": 1,
-      "TauxVictoire": "8.5",
-      "TauxPlace": "50.8",
-      "GainMoyen": 1517.29,
-      "ScoreMixte": "8.5"
+      "Course/Chev.": 1
     },
     {
       "Rang": 129,
@@ -2711,11 +2205,7 @@
       "Prim. Eleveur": 8700,
       "Gain/Part.": 836.83,
       "Gain/Chev.": 2418,
-      "Course/Chev.": 3,
-      "TauxVictoire": "9.6",
-      "TauxPlace": "53.8",
-      "GainMoyen": 836.83,
-      "ScoreMixte": "9.6"
+      "Course/Chev.": 3
     },
     {
       "Rang": 130,
@@ -2732,11 +2222,7 @@
       "Prim. Eleveur": 11756,
       "Gain/Part.": 1309.52,
       "Gain/Chev.": 7857,
-      "Course/Chev.": 6,
-      "TauxVictoire": "8.3",
-      "TauxPlace": "43.3",
-      "GainMoyen": 1309.52,
-      "ScoreMixte": "8.3"
+      "Course/Chev.": 6
     },
     {
       "Rang": 131,
@@ -2753,11 +2239,7 @@
       "Prim. Eleveur": 46297,
       "Gain/Part.": 20456.6,
       "Gain/Chev.": 23604,
-      "Course/Chev.": 1,
-      "TauxVictoire": "16.7",
-      "TauxPlace": "46.7",
-      "GainMoyen": 20456.6,
-      "ScoreMixte": "16.7"
+      "Course/Chev.": 1
     },
     {
       "Rang": 132,
@@ -2774,11 +2256,7 @@
       "Prim. Eleveur": 9481,
       "Gain/Part.": 978.4,
       "Gain/Chev.": 1296,
-      "Course/Chev.": 1,
-      "TauxVictoire": "7.5",
-      "TauxPlace": "43.4",
-      "GainMoyen": 978.4,
-      "ScoreMixte": "7.5"
+      "Course/Chev.": 1
     },
     {
       "Rang": 133,
@@ -2795,11 +2273,7 @@
       "Prim. Eleveur": 7215,
       "Gain/Part.": 761.28,
       "Gain/Chev.": 1883,
-      "Course/Chev.": 2,
-      "TauxVictoire": "8.5",
-      "TauxPlace": "46.8",
-      "GainMoyen": 761.28,
-      "ScoreMixte": "8.5"
+      "Course/Chev.": 2
     },
     {
       "Rang": 134,
@@ -2816,11 +2290,7 @@
       "Prim. Eleveur": 8979,
       "Gain/Part.": 1282.58,
       "Gain/Chev.": 2138,
-      "Course/Chev.": 2,
-      "TauxVictoire": "10.0",
-      "TauxPlace": "42.5",
-      "GainMoyen": 1282.58,
-      "ScoreMixte": "10.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 135,
@@ -2837,11 +2307,7 @@
       "Prim. Eleveur": 9174,
       "Gain/Part.": 1715.24,
       "Gain/Chev.": 2926,
-      "Course/Chev.": 2,
-      "TauxVictoire": "13.8",
-      "TauxPlace": "44.8",
-      "GainMoyen": 1715.24,
-      "ScoreMixte": "13.8"
+      "Course/Chev.": 2
     },
     {
       "Rang": 136,
@@ -2858,11 +2324,7 @@
       "Prim. Eleveur": 7332,
       "Gain/Part.": 1746.9,
       "Gain/Chev.": 2470,
-      "Course/Chev.": 1,
-      "TauxVictoire": "9.8",
-      "TauxPlace": "26.8",
-      "GainMoyen": 1746.9,
-      "ScoreMixte": "9.8"
+      "Course/Chev.": 1
     },
     {
       "Rang": 137,
@@ -2879,11 +2341,7 @@
       "Prim. Eleveur": 7830,
       "Gain/Part.": 1733,
       "Gain/Chev.": 3342,
-      "Course/Chev.": 2,
-      "TauxVictoire": "14.8",
-      "TauxPlace": "37.0",
-      "GainMoyen": 1733.0,
-      "ScoreMixte": "14.8"
+      "Course/Chev.": 2
     },
     {
       "Rang": 138,
@@ -2900,11 +2358,7 @@
       "Prim. Eleveur": 12307,
       "Gain/Part.": 886.34,
       "Gain/Chev.": 1592,
-      "Course/Chev.": 2,
-      "TauxVictoire": "3.4",
-      "TauxPlace": "42.0",
-      "GainMoyen": 886.34,
-      "ScoreMixte": "3.4"
+      "Course/Chev.": 2
     },
     {
       "Rang": 139,
@@ -2921,11 +2375,7 @@
       "Prim. Eleveur": 12875,
       "Gain/Part.": 1235.51,
       "Gain/Chev.": 1657,
-      "Course/Chev.": 1,
-      "TauxVictoire": "5.5",
-      "TauxPlace": "52.7",
-      "GainMoyen": 1235.51,
-      "ScoreMixte": "5.5"
+      "Course/Chev.": 1
     },
     {
       "Rang": 140,
@@ -2942,11 +2392,7 @@
       "Prim. Eleveur": 14257,
       "Gain/Part.": 1175.43,
       "Gain/Chev.": 1894,
-      "Course/Chev.": 2,
-      "TauxVictoire": "5.2",
-      "TauxPlace": "46.6",
-      "GainMoyen": 1175.43,
-      "ScoreMixte": "5.2"
+      "Course/Chev.": 2
     },
     {
       "Rang": 141,
@@ -2963,11 +2409,7 @@
       "Prim. Eleveur": 6475,
       "Gain/Part.": 990.56,
       "Gain/Chev.": 1426,
-      "Course/Chev.": 1,
-      "TauxVictoire": "8.3",
-      "TauxPlace": "69.4",
-      "GainMoyen": 990.56,
-      "ScoreMixte": "8.3"
+      "Course/Chev.": 1
     },
     {
       "Rang": 142,
@@ -2984,11 +2426,7 @@
       "Prim. Eleveur": 8728,
       "Gain/Part.": 907.16,
       "Gain/Chev.": 2160,
-      "Course/Chev.": 2,
-      "TauxVictoire": "6.0",
-      "TauxPlace": "42.0",
-      "GainMoyen": 907.16,
-      "ScoreMixte": "6.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 143,
@@ -3005,11 +2443,7 @@
       "Prim. Eleveur": 9050,
       "Gain/Part.": 1649.21,
       "Gain/Chev.": 2177,
-      "Course/Chev.": 1,
-      "TauxVictoire": "9.1",
-      "TauxPlace": "51.5",
-      "GainMoyen": 1649.21,
-      "ScoreMixte": "9.1"
+      "Course/Chev.": 1
     },
     {
       "Rang": 144,
@@ -3026,11 +2460,7 @@
       "Prim. Eleveur": 6094,
       "Gain/Part.": 1016.47,
       "Gain/Chev.": 1900,
-      "Course/Chev.": 2,
-      "TauxVictoire": "7.0",
-      "TauxPlace": "39.5",
-      "GainMoyen": 1016.47,
-      "ScoreMixte": "7.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 145,
@@ -3047,11 +2477,7 @@
       "Prim. Eleveur": 6830,
       "Gain/Part.": 934.03,
       "Gain/Chev.": 1401,
-      "Course/Chev.": 2,
-      "TauxVictoire": "7.7",
-      "TauxPlace": "43.6",
-      "GainMoyen": 934.03,
-      "ScoreMixte": "7.7"
+      "Course/Chev.": 2
     },
     {
       "Rang": 146,
@@ -3068,11 +2494,7 @@
       "Prim. Eleveur": 4275,
       "Gain/Part.": 1400.12,
       "Gain/Chev.": 2178,
-      "Course/Chev.": 2,
-      "TauxVictoire": "7.1",
-      "TauxPlace": "33.3",
-      "GainMoyen": 1400.12,
-      "ScoreMixte": "7.1"
+      "Course/Chev.": 2
     },
     {
       "Rang": 147,
@@ -3089,11 +2511,7 @@
       "Prim. Eleveur": 5913,
       "Gain/Part.": 683.51,
       "Gain/Chev.": 904,
-      "Course/Chev.": 1,
-      "TauxVictoire": "7.3",
-      "TauxPlace": "31.7",
-      "GainMoyen": 683.51,
-      "ScoreMixte": "7.3"
+      "Course/Chev.": 1
     },
     {
       "Rang": 148,
@@ -3110,11 +2528,7 @@
       "Prim. Eleveur": 8126,
       "Gain/Part.": 2505.9,
       "Gain/Chev.": 3132,
-      "Course/Chev.": 1,
-      "TauxVictoire": "10.0",
-      "TauxPlace": "40.0",
-      "GainMoyen": 2505.9,
-      "ScoreMixte": "10.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 149,
@@ -3131,11 +2545,7 @@
       "Prim. Eleveur": 3488,
       "Gain/Part.": 963.82,
       "Gain/Chev.": 1928,
-      "Course/Chev.": 2,
-      "TauxVictoire": "10.7",
-      "TauxPlace": "42.9",
-      "GainMoyen": 963.82,
-      "ScoreMixte": "10.7"
+      "Course/Chev.": 2
     },
     {
       "Rang": 150,
@@ -3152,11 +2562,7 @@
       "Prim. Eleveur": 3754,
       "Gain/Part.": 1032,
       "Gain/Chev.": 1746,
-      "Course/Chev.": 2,
-      "TauxVictoire": "13.6",
-      "TauxPlace": "45.5",
-      "GainMoyen": 1032.0,
-      "ScoreMixte": "13.6"
+      "Course/Chev.": 2
     },
     {
       "Rang": 151,
@@ -3173,11 +2579,7 @@
       "Prim. Eleveur": 1021,
       "Gain/Part.": 21735.25,
       "Gain/Chev.": 28980,
-      "Course/Chev.": 1,
-      "TauxVictoire": "15.0",
-      "TauxPlace": "45.0",
-      "GainMoyen": 21735.25,
-      "ScoreMixte": "15.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 152,
@@ -3194,11 +2596,7 @@
       "Prim. Eleveur": 6777,
       "Gain/Part.": 2860.67,
       "Gain/Chev.": 8582,
-      "Course/Chev.": 3,
-      "TauxVictoire": "20.0",
-      "TauxPlace": "60.0",
-      "GainMoyen": 2860.67,
-      "ScoreMixte": "20.0"
+      "Course/Chev.": 3
     },
     {
       "Rang": 153,
@@ -3215,11 +2613,7 @@
       "Prim. Eleveur": 7151,
       "Gain/Part.": 3030.67,
       "Gain/Chev.": 5195,
-      "Course/Chev.": 2,
-      "TauxVictoire": "25.0",
-      "TauxPlace": "33.3",
-      "GainMoyen": 3030.67,
-      "ScoreMixte": "25.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 154,
@@ -3236,11 +2630,7 @@
       "Prim. Eleveur": 10003,
       "Gain/Part.": 986.83,
       "Gain/Chev.": 1585,
-      "Course/Chev.": 2,
-      "TauxVictoire": "3.8",
-      "TauxPlace": "66.0",
-      "GainMoyen": 986.83,
-      "ScoreMixte": "3.8"
+      "Course/Chev.": 2
     },
     {
       "Rang": 155,
@@ -3257,11 +2647,7 @@
       "Prim. Eleveur": 8648,
       "Gain/Part.": 611.97,
       "Gain/Chev.": 1122,
-      "Course/Chev.": 2,
-      "TauxVictoire": "2.6",
-      "TauxPlace": "42.9",
-      "GainMoyen": 611.97,
-      "ScoreMixte": "2.6"
+      "Course/Chev.": 2
     },
     {
       "Rang": 156,
@@ -3278,11 +2664,7 @@
       "Prim. Eleveur": 7030,
       "Gain/Part.": 681.51,
       "Gain/Chev.": 1439,
-      "Course/Chev.": 2,
-      "TauxVictoire": "3.5",
-      "TauxPlace": "45.6",
-      "GainMoyen": 681.51,
-      "ScoreMixte": "3.5"
+      "Course/Chev.": 2
     },
     {
       "Rang": 157,
@@ -3299,11 +2681,7 @@
       "Prim. Eleveur": 6451,
       "Gain/Part.": 1018.03,
       "Gain/Chev.": 2093,
-      "Course/Chev.": 2,
-      "TauxVictoire": "5.4",
-      "TauxPlace": "54.1",
-      "GainMoyen": 1018.03,
-      "ScoreMixte": "5.4"
+      "Course/Chev.": 2
     },
     {
       "Rang": 158,
@@ -3320,11 +2698,7 @@
       "Prim. Eleveur": 7573,
       "Gain/Part.": 1759.26,
       "Gain/Chev.": 5058,
-      "Course/Chev.": 3,
-      "TauxVictoire": "8.7",
-      "TauxPlace": "56.5",
-      "GainMoyen": 1759.26,
-      "ScoreMixte": "8.7"
+      "Course/Chev.": 3
     },
     {
       "Rang": 159,
@@ -3341,11 +2715,7 @@
       "Prim. Eleveur": 6236,
       "Gain/Part.": 1331.09,
       "Gain/Chev.": 1801,
-      "Course/Chev.": 1,
-      "TauxVictoire": "8.7",
-      "TauxPlace": "52.2",
-      "GainMoyen": 1331.09,
-      "ScoreMixte": "8.7"
+      "Course/Chev.": 1
     },
     {
       "Rang": 160,
@@ -3362,11 +2732,7 @@
       "Prim. Eleveur": 5740,
       "Gain/Part.": 1369.82,
       "Gain/Chev.": 3348,
-      "Course/Chev.": 2,
-      "TauxVictoire": "9.1",
-      "TauxPlace": "54.5",
-      "GainMoyen": 1369.82,
-      "ScoreMixte": "9.1"
+      "Course/Chev.": 2
     },
     {
       "Rang": 161,
@@ -3383,11 +2749,7 @@
       "Prim. Eleveur": 4675,
       "Gain/Part.": 1378.17,
       "Gain/Chev.": 1654,
-      "Course/Chev.": 1,
-      "TauxVictoire": "11.1",
-      "TauxPlace": "61.1",
-      "GainMoyen": 1378.17,
-      "ScoreMixte": "11.1"
+      "Course/Chev.": 1
     },
     {
       "Rang": 162,
@@ -3404,11 +2766,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 44381.39,
       "Gain/Chev.": 49929,
-      "Course/Chev.": 1,
-      "TauxVictoire": "11.1",
-      "TauxPlace": "50.0",
-      "GainMoyen": 44381.39,
-      "ScoreMixte": "11.1"
+      "Course/Chev.": 1
     },
     {
       "Rang": 163,
@@ -3425,11 +2783,7 @@
       "Prim. Eleveur": 6658,
       "Gain/Part.": 1764.75,
       "Gain/Chev.": 2715,
-      "Course/Chev.": 2,
-      "TauxVictoire": "10.0",
-      "TauxPlace": "45.0",
-      "GainMoyen": 1764.75,
-      "ScoreMixte": "10.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 164,
@@ -3446,11 +2800,7 @@
       "Prim. Eleveur": 3632,
       "Gain/Part.": 1276.25,
       "Gain/Chev.": 1856,
-      "Course/Chev.": 1,
-      "TauxVictoire": "12.5",
-      "TauxPlace": "56.2",
-      "GainMoyen": 1276.25,
-      "ScoreMixte": "12.5"
+      "Course/Chev.": 1
     },
     {
       "Rang": 165,
@@ -3467,11 +2817,7 @@
       "Prim. Eleveur": 1701,
       "Gain/Part.": 523.33,
       "Gain/Chev.": 673,
-      "Course/Chev.": 1,
-      "TauxVictoire": "7.4",
-      "TauxPlace": "33.3",
-      "GainMoyen": 523.33,
-      "ScoreMixte": "7.4"
+      "Course/Chev.": 1
     },
     {
       "Rang": 166,
@@ -3488,11 +2834,7 @@
       "Prim. Eleveur": 754,
       "Gain/Part.": 26089.29,
       "Gain/Chev.": 28096,
-      "Course/Chev.": 1,
-      "TauxVictoire": "14.3",
-      "TauxPlace": "57.1",
-      "GainMoyen": 26089.29,
-      "ScoreMixte": "14.3"
+      "Course/Chev.": 1
     },
     {
       "Rang": 167,
@@ -3509,11 +2851,7 @@
       "Prim. Eleveur": 3065,
       "Gain/Part.": 789.25,
       "Gain/Chev.": 1473,
-      "Course/Chev.": 2,
-      "TauxVictoire": "7.1",
-      "TauxPlace": "28.6",
-      "GainMoyen": 789.25,
-      "ScoreMixte": "7.1"
+      "Course/Chev.": 2
     },
     {
       "Rang": 168,
@@ -3530,11 +2868,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 161256.82,
       "Gain/Chev.": 197092,
-      "Course/Chev.": 1,
-      "TauxVictoire": "18.2",
-      "TauxPlace": "63.6",
-      "GainMoyen": 161256.82,
-      "ScoreMixte": "18.2"
+      "Course/Chev.": 1
     },
     {
       "Rang": 169,
@@ -3551,11 +2885,7 @@
       "Prim. Eleveur": 3129,
       "Gain/Part.": 1158.7,
       "Gain/Chev.": 1403,
-      "Course/Chev.": 1,
-      "TauxVictoire": "8.7",
-      "TauxPlace": "30.4",
-      "GainMoyen": 1158.7,
-      "ScoreMixte": "8.7"
+      "Course/Chev.": 1
     },
     {
       "Rang": 170,
@@ -3572,11 +2902,7 @@
       "Prim. Eleveur": 3043,
       "Gain/Part.": 1218.89,
       "Gain/Chev.": 3860,
-      "Course/Chev.": 3,
-      "TauxVictoire": "10.5",
-      "TauxPlace": "36.8",
-      "GainMoyen": 1218.89,
-      "ScoreMixte": "10.5"
+      "Course/Chev.": 3
     },
     {
       "Rang": 171,
@@ -3593,11 +2919,7 @@
       "Prim. Eleveur": 22523,
       "Gain/Part.": 32875.56,
       "Gain/Chev.": 49313,
-      "Course/Chev.": 2,
-      "TauxVictoire": "22.2",
-      "TauxPlace": "66.7",
-      "GainMoyen": 32875.56,
-      "ScoreMixte": "22.2"
+      "Course/Chev.": 2
     },
     {
       "Rang": 172,
@@ -3614,11 +2936,7 @@
       "Prim. Eleveur": 4935,
       "Gain/Part.": 1077.25,
       "Gain/Chev.": 2873,
-      "Course/Chev.": 3,
-      "TauxVictoire": "8.3",
-      "TauxPlace": "25.0",
-      "GainMoyen": 1077.25,
-      "ScoreMixte": "8.3"
+      "Course/Chev.": 3
     },
     {
       "Rang": 173,
@@ -3635,11 +2953,7 @@
       "Prim. Eleveur": 2695,
       "Gain/Part.": 1042.33,
       "Gain/Chev.": 1421,
-      "Course/Chev.": 1,
-      "TauxVictoire": "13.3",
-      "TauxPlace": "40.0",
-      "GainMoyen": 1042.33,
-      "ScoreMixte": "13.3"
+      "Course/Chev.": 1
     },
     {
       "Rang": 174,
@@ -3656,11 +2970,7 @@
       "Prim. Eleveur": 702,
       "Gain/Part.": 20513.33,
       "Gain/Chev.": 41027,
-      "Course/Chev.": 2,
-      "TauxVictoire": "33.3",
-      "TauxPlace": "50.0",
-      "GainMoyen": 20513.33,
-      "ScoreMixte": "33.3"
+      "Course/Chev.": 2
     },
     {
       "Rang": 175,
@@ -3677,11 +2987,7 @@
       "Prim. Eleveur": 452,
       "Gain/Part.": 10831.11,
       "Gain/Chev.": 13926,
-      "Course/Chev.": 1,
-      "TauxVictoire": "22.2",
-      "TauxPlace": "33.3",
-      "GainMoyen": 10831.11,
-      "ScoreMixte": "22.2"
+      "Course/Chev.": 1
     },
     {
       "Rang": 176,
@@ -3698,11 +3004,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 13580.71,
       "Gain/Chev.": 13581,
-      "Course/Chev.": 1,
-      "TauxVictoire": "28.6",
-      "TauxPlace": "42.9",
-      "GainMoyen": 13580.71,
-      "ScoreMixte": "28.6"
+      "Course/Chev.": 1
     },
     {
       "Rang": 177,
@@ -3719,11 +3021,7 @@
       "Prim. Eleveur": 5444,
       "Gain/Part.": 22875,
       "Gain/Chev.": 22875,
-      "Course/Chev.": 1,
-      "TauxVictoire": "50.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 22875.0,
-      "ScoreMixte": "50.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 178,
@@ -3740,11 +3038,7 @@
       "Prim. Eleveur": 2914,
       "Gain/Part.": 41225,
       "Gain/Chev.": 57715,
-      "Course/Chev.": 1,
-      "TauxVictoire": "28.6",
-      "TauxPlace": "14.3",
-      "GainMoyen": 41225.0,
-      "ScoreMixte": "28.6"
+      "Course/Chev.": 1
     },
     {
       "Rang": 179,
@@ -3761,11 +3055,7 @@
       "Prim. Eleveur": 2164,
       "Gain/Part.": 2405,
       "Gain/Chev.": 2405,
-      "Course/Chev.": 1,
-      "TauxVictoire": "40.0",
-      "TauxPlace": "20.0",
-      "GainMoyen": 2405.0,
-      "ScoreMixte": "40.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 180,
@@ -3782,11 +3072,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 12812.5,
       "Gain/Chev.": 17083,
-      "Course/Chev.": 1,
-      "TauxVictoire": "50.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 12812.5,
-      "ScoreMixte": "50.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 181,
@@ -3803,11 +3089,7 @@
       "Prim. Eleveur": 1526,
       "Gain/Part.": 2983.33,
       "Gain/Chev.": 2983,
-      "Course/Chev.": 1,
-      "TauxVictoire": "66.7",
-      "TauxPlace": "0.0",
-      "GainMoyen": 2983.33,
-      "ScoreMixte": "66.7"
+      "Course/Chev.": 1
     },
     {
       "Rang": 182,
@@ -3824,11 +3106,7 @@
       "Prim. Eleveur": 7268,
       "Gain/Part.": 565.72,
       "Gain/Chev.": 772,
-      "Course/Chev.": 1,
-      "TauxVictoire": "1.4",
-      "TauxPlace": "43.7",
-      "GainMoyen": 565.72,
-      "ScoreMixte": "1.4"
+      "Course/Chev.": 1
     },
     {
       "Rang": 183,
@@ -3845,11 +3123,7 @@
       "Prim. Eleveur": 5839,
       "Gain/Part.": 734.23,
       "Gain/Chev.": 1015,
-      "Course/Chev.": 1,
-      "TauxVictoire": "2.1",
-      "TauxPlace": "61.7",
-      "GainMoyen": 734.23,
-      "ScoreMixte": "2.1"
+      "Course/Chev.": 1
     },
     {
       "Rang": 184,
@@ -3866,11 +3140,7 @@
       "Prim. Eleveur": 6133,
       "Gain/Part.": 697.63,
       "Gain/Chev.": 1814,
-      "Course/Chev.": 3,
-      "TauxVictoire": "1.9",
-      "TauxPlace": "53.8",
-      "GainMoyen": 697.63,
-      "ScoreMixte": "1.9"
+      "Course/Chev.": 3
     },
     {
       "Rang": 185,
@@ -3887,11 +3157,7 @@
       "Prim. Eleveur": 5070,
       "Gain/Part.": 607.87,
       "Gain/Chev.": 939,
-      "Course/Chev.": 2,
-      "TauxVictoire": "1.5",
-      "TauxPlace": "33.8",
-      "GainMoyen": 607.87,
-      "ScoreMixte": "1.5"
+      "Course/Chev.": 2
     },
     {
       "Rang": 186,
@@ -3908,11 +3174,7 @@
       "Prim. Eleveur": 6655,
       "Gain/Part.": 606.26,
       "Gain/Chev.": 1027,
-      "Course/Chev.": 2,
-      "TauxVictoire": "1.6",
-      "TauxPlace": "36.1",
-      "GainMoyen": 606.26,
-      "ScoreMixte": "1.6"
+      "Course/Chev.": 2
     },
     {
       "Rang": 187,
@@ -3929,11 +3191,7 @@
       "Prim. Eleveur": 10451,
       "Gain/Part.": 894.98,
       "Gain/Chev.": 1270,
-      "Course/Chev.": 1,
-      "TauxVictoire": "1.6",
-      "TauxPlace": "34.4",
-      "GainMoyen": 894.98,
-      "ScoreMixte": "1.6"
+      "Course/Chev.": 1
     },
     {
       "Rang": 188,
@@ -3950,11 +3208,7 @@
       "Prim. Eleveur": 4275,
       "Gain/Part.": 385.9,
       "Gain/Chev.": 487,
-      "Course/Chev.": 1,
-      "TauxVictoire": "1.7",
-      "TauxPlace": "34.5",
-      "GainMoyen": 385.9,
-      "ScoreMixte": "1.7"
+      "Course/Chev.": 1
     },
     {
       "Rang": 189,
@@ -3971,11 +3225,7 @@
       "Prim. Eleveur": 3285,
       "Gain/Part.": 719.8,
       "Gain/Chev.": 1200,
-      "Course/Chev.": 2,
-      "TauxVictoire": "3.3",
-      "TauxPlace": "56.7",
-      "GainMoyen": 719.8,
-      "ScoreMixte": "3.3"
+      "Course/Chev.": 2
     },
     {
       "Rang": 190,
@@ -3992,11 +3242,7 @@
       "Prim. Eleveur": 3290,
       "Gain/Part.": 719.41,
       "Gain/Chev.": 1942,
-      "Course/Chev.": 3,
-      "TauxVictoire": "3.7",
-      "TauxPlace": "63.0",
-      "GainMoyen": 719.41,
-      "ScoreMixte": "3.7"
+      "Course/Chev.": 3
     },
     {
       "Rang": 191,
@@ -4013,11 +3259,7 @@
       "Prim. Eleveur": 4288,
       "Gain/Part.": 568.7,
       "Gain/Chev.": 1019,
-      "Course/Chev.": 2,
-      "TauxVictoire": "2.3",
-      "TauxPlace": "32.6",
-      "GainMoyen": 568.7,
-      "ScoreMixte": "2.3"
+      "Course/Chev.": 2
     },
     {
       "Rang": 192,
@@ -4034,11 +3276,7 @@
       "Prim. Eleveur": 954,
       "Gain/Part.": 297.97,
       "Gain/Chev.": 557,
-      "Course/Chev.": 2,
-      "TauxVictoire": "1.4",
-      "TauxPlace": "19.7",
-      "GainMoyen": 297.97,
-      "ScoreMixte": "1.4"
+      "Course/Chev.": 2
     },
     {
       "Rang": 193,
@@ -4055,11 +3293,7 @@
       "Prim. Eleveur": 2173,
       "Gain/Part.": 790.06,
       "Gain/Chev.": 917,
-      "Course/Chev.": 1,
-      "TauxVictoire": "2.8",
-      "TauxPlace": "36.1",
-      "GainMoyen": 790.06,
-      "ScoreMixte": "2.8"
+      "Course/Chev.": 1
     },
     {
       "Rang": 194,
@@ -4076,11 +3310,7 @@
       "Prim. Eleveur": 4791,
       "Gain/Part.": 770.03,
       "Gain/Chev.": 1232,
-      "Course/Chev.": 2,
-      "TauxVictoire": "3.1",
-      "TauxPlace": "40.6",
-      "GainMoyen": 770.03,
-      "ScoreMixte": "3.1"
+      "Course/Chev.": 2
     },
     {
       "Rang": 195,
@@ -4097,11 +3327,7 @@
       "Prim. Eleveur": 2539,
       "Gain/Part.": 634.53,
       "Gain/Chev.": 781,
-      "Course/Chev.": 1,
-      "TauxVictoire": "3.1",
-      "TauxPlace": "40.6",
-      "GainMoyen": 634.53,
-      "ScoreMixte": "3.1"
+      "Course/Chev.": 1
     },
     {
       "Rang": 196,
@@ -4118,11 +3344,7 @@
       "Prim. Eleveur": 4540,
       "Gain/Part.": 857.68,
       "Gain/Chev.": 1601,
-      "Course/Chev.": 2,
-      "TauxVictoire": "3.6",
-      "TauxPlace": "42.9",
-      "GainMoyen": 857.68,
-      "ScoreMixte": "3.6"
+      "Course/Chev.": 2
     },
     {
       "Rang": 197,
@@ -4139,11 +3361,7 @@
       "Prim. Eleveur": 3832,
       "Gain/Part.": 558.89,
       "Gain/Chev.": 782,
-      "Course/Chev.": 1,
-      "TauxVictoire": "2.9",
-      "TauxPlace": "34.3",
-      "GainMoyen": 558.89,
-      "ScoreMixte": "2.9"
+      "Course/Chev.": 1
     },
     {
       "Rang": 198,
@@ -4160,11 +3378,7 @@
       "Prim. Eleveur": 5106,
       "Gain/Part.": 586.6,
       "Gain/Chev.": 1484,
-      "Course/Chev.": 3,
-      "TauxVictoire": "2.3",
-      "TauxPlace": "25.6",
-      "GainMoyen": 586.6,
-      "ScoreMixte": "2.3"
+      "Course/Chev.": 3
     },
     {
       "Rang": 199,
@@ -4181,11 +3395,7 @@
       "Prim. Eleveur": 3704,
       "Gain/Part.": 1079.21,
       "Gain/Chev.": 1577,
-      "Course/Chev.": 1,
-      "TauxVictoire": "5.3",
-      "TauxPlace": "57.9",
-      "GainMoyen": 1079.21,
-      "ScoreMixte": "5.3"
+      "Course/Chev.": 1
     },
     {
       "Rang": 200,
@@ -4202,11 +3412,7 @@
       "Prim. Eleveur": 12585,
       "Gain/Part.": 18054.93,
       "Gain/Chev.": 18749,
-      "Course/Chev.": 1,
-      "TauxVictoire": "3.7",
-      "TauxPlace": "37.0",
-      "GainMoyen": 18054.93,
-      "ScoreMixte": "3.7"
+      "Course/Chev.": 1
     },
     {
       "Rang": 201,
@@ -4223,11 +3429,7 @@
       "Prim. Eleveur": 2694,
       "Gain/Part.": 1015.63,
       "Gain/Chev.": 1625,
-      "Course/Chev.": 2,
-      "TauxVictoire": "6.2",
-      "TauxPlace": "62.5",
-      "GainMoyen": 1015.62,
-      "ScoreMixte": "6.2"
+      "Course/Chev.": 2
     },
     {
       "Rang": 202,
@@ -4244,11 +3446,7 @@
       "Prim. Eleveur": 2694,
       "Gain/Part.": 557.08,
       "Gain/Chev.": 608,
-      "Course/Chev.": 1,
-      "TauxVictoire": "4.2",
-      "TauxPlace": "37.5",
-      "GainMoyen": 557.08,
-      "ScoreMixte": "4.2"
+      "Course/Chev.": 1
     },
     {
       "Rang": 203,
@@ -4265,11 +3463,7 @@
       "Prim. Eleveur": 4052,
       "Gain/Part.": 1608.79,
       "Gain/Chev.": 2815,
-      "Course/Chev.": 2,
-      "TauxVictoire": "7.1",
-      "TauxPlace": "57.1",
-      "GainMoyen": 1608.79,
-      "ScoreMixte": "7.1"
+      "Course/Chev.": 2
     },
     {
       "Rang": 204,
@@ -4286,11 +3480,7 @@
       "Prim. Eleveur": 2414,
       "Gain/Part.": 16371.25,
       "Gain/Chev.": 17860,
-      "Course/Chev.": 1,
-      "TauxVictoire": "8.3",
-      "TauxPlace": "58.3",
-      "GainMoyen": 16371.25,
-      "ScoreMixte": "8.3"
+      "Course/Chev.": 1
     },
     {
       "Rang": 205,
@@ -4307,11 +3497,7 @@
       "Prim. Eleveur": 2234,
       "Gain/Part.": 843.71,
       "Gain/Chev.": 1312,
-      "Course/Chev.": 2,
-      "TauxVictoire": "7.1",
-      "TauxPlace": "50.0",
-      "GainMoyen": 843.71,
-      "ScoreMixte": "7.1"
+      "Course/Chev.": 2
     },
     {
       "Rang": 206,
@@ -4328,11 +3514,7 @@
       "Prim. Eleveur": 1349,
       "Gain/Part.": 547.44,
       "Gain/Chev.": 796,
-      "Course/Chev.": 1,
-      "TauxVictoire": "6.2",
-      "TauxPlace": "43.8",
-      "GainMoyen": 547.44,
-      "ScoreMixte": "6.2"
+      "Course/Chev.": 1
     },
     {
       "Rang": 207,
@@ -4349,11 +3531,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 7029.09,
       "Gain/Chev.": 7732,
-      "Course/Chev.": 1,
-      "TauxVictoire": "9.1",
-      "TauxPlace": "54.5",
-      "GainMoyen": 7029.09,
-      "ScoreMixte": "9.1"
+      "Course/Chev.": 1
     },
     {
       "Rang": 208,
@@ -4370,11 +3548,7 @@
       "Prim. Eleveur": 1907,
       "Gain/Part.": 2525,
       "Gain/Chev.": 5050,
-      "Course/Chev.": 2,
-      "TauxVictoire": "16.7",
-      "TauxPlace": "83.3",
-      "GainMoyen": 2525.0,
-      "ScoreMixte": "16.7"
+      "Course/Chev.": 2
     },
     {
       "Rang": 209,
@@ -4391,11 +3565,7 @@
       "Prim. Eleveur": 1726,
       "Gain/Part.": 805.35,
       "Gain/Chev.": 978,
-      "Course/Chev.": 1,
-      "TauxVictoire": "5.9",
-      "TauxPlace": "29.4",
-      "GainMoyen": 805.35,
-      "ScoreMixte": "5.9"
+      "Course/Chev.": 1
     },
     {
       "Rang": 210,
@@ -4412,11 +3582,7 @@
       "Prim. Eleveur": 2498,
       "Gain/Part.": 1106.17,
       "Gain/Chev.": 2212,
-      "Course/Chev.": 2,
-      "TauxVictoire": "8.3",
-      "TauxPlace": "41.7",
-      "GainMoyen": 1106.17,
-      "ScoreMixte": "8.3"
+      "Course/Chev.": 2
     },
     {
       "Rang": 211,
@@ -4433,11 +3599,7 @@
       "Prim. Eleveur": 1713,
       "Gain/Part.": 717.28,
       "Gain/Chev.": 1614,
-      "Course/Chev.": 2,
-      "TauxVictoire": "5.6",
-      "TauxPlace": "27.8",
-      "GainMoyen": 717.28,
-      "ScoreMixte": "5.6"
+      "Course/Chev.": 2
     },
     {
       "Rang": 212,
@@ -4454,11 +3616,7 @@
       "Prim. Eleveur": 2255,
       "Gain/Part.": 1567.5,
       "Gain/Chev.": 2090,
-      "Course/Chev.": 1,
-      "TauxVictoire": "12.5",
-      "TauxPlace": "62.5",
-      "GainMoyen": 1567.5,
-      "ScoreMixte": "12.5"
+      "Course/Chev.": 1
     },
     {
       "Rang": 213,
@@ -4475,11 +3633,7 @@
       "Prim. Eleveur": 1789,
       "Gain/Part.": 975.58,
       "Gain/Chev.": 1301,
-      "Course/Chev.": 1,
-      "TauxVictoire": "8.3",
-      "TauxPlace": "41.7",
-      "GainMoyen": 975.58,
-      "ScoreMixte": "8.3"
+      "Course/Chev.": 1
     },
     {
       "Rang": 214,
@@ -4496,11 +3650,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 7952.5,
       "Gain/Chev.": 8483,
-      "Course/Chev.": 1,
-      "TauxVictoire": "6.2",
-      "TauxPlace": "25.0",
-      "GainMoyen": 7952.5,
-      "ScoreMixte": "6.2"
+      "Course/Chev.": 1
     },
     {
       "Rang": 215,
@@ -4517,11 +3667,7 @@
       "Prim. Eleveur": 1328,
       "Gain/Part.": 1340.57,
       "Gain/Chev.": 1564,
-      "Course/Chev.": 1,
-      "TauxVictoire": "14.3",
-      "TauxPlace": "57.1",
-      "GainMoyen": 1340.57,
-      "ScoreMixte": "14.3"
+      "Course/Chev.": 1
     },
     {
       "Rang": 216,
@@ -4538,11 +3684,7 @@
       "Prim. Eleveur": 1554,
       "Gain/Part.": 688.33,
       "Gain/Chev.": 1377,
-      "Course/Chev.": 2,
-      "TauxVictoire": "8.3",
-      "TauxPlace": "33.3",
-      "GainMoyen": 688.33,
-      "ScoreMixte": "8.3"
+      "Course/Chev.": 2
     },
     {
       "Rang": 217,
@@ -4559,11 +3701,7 @@
       "Prim. Eleveur": 1082,
       "Gain/Part.": 987.5,
       "Gain/Chev.": 1129,
-      "Course/Chev.": 1,
-      "TauxVictoire": "12.5",
-      "TauxPlace": "50.0",
-      "GainMoyen": 987.5,
-      "ScoreMixte": "12.5"
+      "Course/Chev.": 1
     },
     {
       "Rang": 218,
@@ -4580,11 +3718,7 @@
       "Prim. Eleveur": 1216,
       "Gain/Part.": 1057.14,
       "Gain/Chev.": 1480,
-      "Course/Chev.": 1,
-      "TauxVictoire": "14.3",
-      "TauxPlace": "57.1",
-      "GainMoyen": 1057.14,
-      "ScoreMixte": "14.3"
+      "Course/Chev.": 1
     },
     {
       "Rang": 219,
@@ -4601,11 +3735,7 @@
       "Prim. Eleveur": 452,
       "Gain/Part.": 3492.86,
       "Gain/Chev.": 8150,
-      "Course/Chev.": 2,
-      "TauxVictoire": "14.3",
-      "TauxPlace": "42.9",
-      "GainMoyen": 3492.86,
-      "ScoreMixte": "14.3"
+      "Course/Chev.": 2
     },
     {
       "Rang": 220,
@@ -4622,11 +3752,7 @@
       "Prim. Eleveur": 2057,
       "Gain/Part.": 4515,
       "Gain/Chev.": 6020,
-      "Course/Chev.": 1,
-      "TauxVictoire": "25.0",
-      "TauxPlace": "75.0",
-      "GainMoyen": 4515.0,
-      "ScoreMixte": "25.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 221,
@@ -4643,11 +3769,7 @@
       "Prim. Eleveur": 2324,
       "Gain/Part.": 2243.75,
       "Gain/Chev.": 3590,
-      "Course/Chev.": 2,
-      "TauxVictoire": "12.5",
-      "TauxPlace": "37.5",
-      "GainMoyen": 2243.75,
-      "ScoreMixte": "12.5"
+      "Course/Chev.": 2
     },
     {
       "Rang": 222,
@@ -4664,11 +3786,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 17411.25,
       "Gain/Chev.": 19899,
-      "Course/Chev.": 1,
-      "TauxVictoire": "12.5",
-      "TauxPlace": "25.0",
-      "GainMoyen": 17411.25,
-      "ScoreMixte": "12.5"
+      "Course/Chev.": 1
     },
     {
       "Rang": 223,
@@ -4685,11 +3803,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 18520,
       "Gain/Chev.": 18520,
-      "Course/Chev.": 1,
-      "TauxVictoire": "25.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 18520.0,
-      "ScoreMixte": "25.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 224,
@@ -4706,11 +3820,7 @@
       "Prim. Eleveur": 3515,
       "Gain/Part.": 6511,
       "Gain/Chev.": 9766,
-      "Course/Chev.": 2,
-      "TauxVictoire": "33.3",
-      "TauxPlace": "66.7",
-      "GainMoyen": 6511.0,
-      "ScoreMixte": "33.3"
+      "Course/Chev.": 2
     },
     {
       "Rang": 225,
@@ -4727,11 +3837,7 @@
       "Prim. Eleveur": 2103,
       "Gain/Part.": 3083.33,
       "Gain/Chev.": 3083,
-      "Course/Chev.": 1,
-      "TauxVictoire": "33.3",
-      "TauxPlace": "66.7",
-      "GainMoyen": 3083.33,
-      "ScoreMixte": "33.3"
+      "Course/Chev.": 1
     },
     {
       "Rang": 226,
@@ -4748,11 +3854,7 @@
       "Prim. Eleveur": 1671,
       "Gain/Part.": 1291,
       "Gain/Chev.": 2259,
-      "Course/Chev.": 2,
-      "TauxVictoire": "14.3",
-      "TauxPlace": "28.6",
-      "GainMoyen": 1291.0,
-      "ScoreMixte": "14.3"
+      "Course/Chev.": 2
     },
     {
       "Rang": 227,
@@ -4769,11 +3871,7 @@
       "Prim. Eleveur": 1237,
       "Gain/Part.": 1818.75,
       "Gain/Chev.": 2425,
-      "Course/Chev.": 1,
-      "TauxVictoire": "25.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 1818.75,
-      "ScoreMixte": "25.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 228,
@@ -4790,11 +3888,7 @@
       "Prim. Eleveur": 1116,
       "Gain/Part.": 549.67,
       "Gain/Chev.": 618,
-      "Course/Chev.": 1,
-      "TauxVictoire": "11.1",
-      "TauxPlace": "22.2",
-      "GainMoyen": 549.67,
-      "ScoreMixte": "11.1"
+      "Course/Chev.": 1
     },
     {
       "Rang": 229,
@@ -4811,11 +3905,7 @@
       "Prim. Eleveur": 775,
       "Gain/Part.": 445.45,
       "Gain/Chev.": 490,
-      "Course/Chev.": 1,
-      "TauxVictoire": "9.1",
-      "TauxPlace": "18.2",
-      "GainMoyen": 445.45,
-      "ScoreMixte": "9.1"
+      "Course/Chev.": 1
     },
     {
       "Rang": 230,
@@ -4832,11 +3922,7 @@
       "Prim. Eleveur": 672,
       "Gain/Part.": 371.82,
       "Gain/Chev.": 409,
-      "Course/Chev.": 1,
-      "TauxVictoire": "9.1",
-      "TauxPlace": "18.2",
-      "GainMoyen": 371.82,
-      "ScoreMixte": "9.1"
+      "Course/Chev.": 1
     },
     {
       "Rang": 231,
@@ -4853,11 +3939,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 23257.5,
       "Gain/Chev.": 26580,
-      "Course/Chev.": 1,
-      "TauxVictoire": "12.5",
-      "TauxPlace": "12.5",
-      "GainMoyen": 23257.5,
-      "ScoreMixte": "12.5"
+      "Course/Chev.": 1
     },
     {
       "Rang": 232,
@@ -4874,11 +3956,7 @@
       "Prim. Eleveur": 544,
       "Gain/Part.": 58360,
       "Gain/Chev.": 58360,
-      "Course/Chev.": 1,
-      "TauxVictoire": "33.3",
-      "TauxPlace": "33.3",
-      "GainMoyen": 58360.0,
-      "ScoreMixte": "33.3"
+      "Course/Chev.": 1
     },
     {
       "Rang": 233,
@@ -4895,11 +3973,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 14715,
       "Gain/Chev.": 22072,
-      "Course/Chev.": 2,
-      "TauxVictoire": "33.3",
-      "TauxPlace": "33.3",
-      "GainMoyen": 14715.0,
-      "ScoreMixte": "33.3"
+      "Course/Chev.": 2
     },
     {
       "Rang": 234,
@@ -4916,11 +3990,7 @@
       "Prim. Eleveur": 113,
       "Gain/Part.": 9275,
       "Gain/Chev.": 12367,
-      "Course/Chev.": 1,
-      "TauxVictoire": "25.0",
-      "TauxPlace": "25.0",
-      "GainMoyen": 9275.0,
-      "ScoreMixte": "25.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 235,
@@ -4937,11 +4007,7 @@
       "Prim. Eleveur": 1790,
       "Gain/Part.": 10750,
       "Gain/Chev.": 10750,
-      "Course/Chev.": 1,
-      "TauxVictoire": "50.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 10750.0,
-      "ScoreMixte": "50.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 236,
@@ -4958,11 +4024,7 @@
       "Prim. Eleveur": 2141,
       "Gain/Part.": 2840,
       "Gain/Chev.": 3787,
-      "Course/Chev.": 1,
-      "TauxVictoire": "25.0",
-      "TauxPlace": "25.0",
-      "GainMoyen": 2840.0,
-      "ScoreMixte": "25.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 237,
@@ -4979,11 +4041,7 @@
       "Prim. Eleveur": 67,
       "Gain/Part.": 1215.71,
       "Gain/Chev.": 1418,
-      "Course/Chev.": 1,
-      "TauxVictoire": "14.3",
-      "TauxPlace": "14.3",
-      "GainMoyen": 1215.71,
-      "ScoreMixte": "14.3"
+      "Course/Chev.": 1
     },
     {
       "Rang": 238,
@@ -5000,11 +4058,7 @@
       "Prim. Eleveur": 1170,
       "Gain/Part.": 3445,
       "Gain/Chev.": 3445,
-      "Course/Chev.": 1,
-      "TauxVictoire": "50.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 3445.0,
-      "ScoreMixte": "50.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 239,
@@ -5021,11 +4075,7 @@
       "Prim. Eleveur": 1008,
       "Gain/Part.": 1120,
       "Gain/Chev.": 1120,
-      "Course/Chev.": 1,
-      "TauxVictoire": "20.0",
-      "TauxPlace": "20.0",
-      "GainMoyen": 1120.0,
-      "ScoreMixte": "20.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 240,
@@ -5042,11 +4092,7 @@
       "Prim. Eleveur": 872,
       "Gain/Part.": 1816.67,
       "Gain/Chev.": 1817,
-      "Course/Chev.": 1,
-      "TauxVictoire": "33.3",
-      "TauxPlace": "33.3",
-      "GainMoyen": 1816.67,
-      "ScoreMixte": "33.3"
+      "Course/Chev.": 1
     },
     {
       "Rang": 241,
@@ -5063,11 +4109,7 @@
       "Prim. Eleveur": 692,
       "Gain/Part.": 1423.33,
       "Gain/Chev.": 1423,
-      "Course/Chev.": 1,
-      "TauxVictoire": "33.3",
-      "TauxPlace": "33.3",
-      "GainMoyen": 1423.33,
-      "ScoreMixte": "33.3"
+      "Course/Chev.": 1
     },
     {
       "Rang": 242,
@@ -5084,11 +4126,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 95233.33,
       "Gain/Chev.": 95233,
-      "Course/Chev.": 1,
-      "TauxVictoire": "33.3",
-      "TauxPlace": "0.0",
-      "GainMoyen": 95233.33,
-      "ScoreMixte": "33.3"
+      "Course/Chev.": 1
     },
     {
       "Rang": 243,
@@ -5105,11 +4143,7 @@
       "Prim. Eleveur": 4510,
       "Gain/Part.": 36600,
       "Gain/Chev.": 36600,
-      "Course/Chev.": 1,
-      "TauxVictoire": "100.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 36600.0,
-      "ScoreMixte": "100.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 244,
@@ -5126,11 +4160,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 11900,
       "Gain/Chev.": 11900,
-      "Course/Chev.": 1,
-      "TauxVictoire": "50.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 11900.0,
-      "ScoreMixte": "50.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 245,
@@ -5147,11 +4177,7 @@
       "Prim. Eleveur": 1300,
       "Gain/Part.": 10550,
       "Gain/Chev.": 10550,
-      "Course/Chev.": 1,
-      "TauxVictoire": "100.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 10550.0,
-      "ScoreMixte": "100.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 246,
@@ -5168,11 +4194,7 @@
       "Prim. Eleveur": 1602,
       "Gain/Part.": 1700,
       "Gain/Chev.": 2125,
-      "Course/Chev.": 1,
-      "TauxVictoire": "20.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 1700.0,
-      "ScoreMixte": "20.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 247,
@@ -5189,11 +4211,7 @@
       "Prim. Eleveur": 1451,
       "Gain/Part.": 7700,
       "Gain/Chev.": 7700,
-      "Course/Chev.": 1,
-      "TauxVictoire": "100.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 7700.0,
-      "ScoreMixte": "100.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 248,
@@ -5210,11 +4228,7 @@
       "Prim. Eleveur": 1035,
       "Gain/Part.": 2875,
       "Gain/Chev.": 5750,
-      "Course/Chev.": 2,
-      "TauxVictoire": "50.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 2875.0,
-      "ScoreMixte": "50.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 249,
@@ -5231,11 +4245,7 @@
       "Prim. Eleveur": 760,
       "Gain/Part.": 4750,
       "Gain/Chev.": 4750,
-      "Course/Chev.": 1,
-      "TauxVictoire": "100.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 4750.0,
-      "ScoreMixte": "100.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 250,
@@ -5252,11 +4262,7 @@
       "Prim. Eleveur": 846,
       "Gain/Part.": 2350,
       "Gain/Chev.": 2350,
-      "Course/Chev.": 1,
-      "TauxVictoire": "50.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 2350.0,
-      "ScoreMixte": "50.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 251,
@@ -5273,11 +4279,7 @@
       "Prim. Eleveur": 846,
       "Gain/Part.": 4700,
       "Gain/Chev.": 4700,
-      "Course/Chev.": 1,
-      "TauxVictoire": "100.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 4700.0,
-      "ScoreMixte": "100.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 252,
@@ -5294,11 +4296,7 @@
       "Prim. Eleveur": 678,
       "Gain/Part.": 1800,
       "Gain/Chev.": 1800,
-      "Course/Chev.": 1,
-      "TauxVictoire": "50.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 1800.0,
-      "ScoreMixte": "50.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 253,
@@ -5315,11 +4313,7 @@
       "Prim. Eleveur": 504,
       "Gain/Part.": 3150,
       "Gain/Chev.": 3150,
-      "Course/Chev.": 1,
-      "TauxVictoire": "100.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 3150.0,
-      "ScoreMixte": "100.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 254,
@@ -5336,11 +4330,7 @@
       "Prim. Eleveur": 3959,
       "Gain/Part.": 561.28,
       "Gain/Chev.": 832,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "52.5",
-      "GainMoyen": 561.27,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 255,
@@ -5357,11 +4347,7 @@
       "Prim. Eleveur": 3190,
       "Gain/Part.": 243.24,
       "Gain/Chev.": 412,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "31.8",
-      "GainMoyen": 243.24,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 256,
@@ -5378,11 +4364,7 @@
       "Prim. Eleveur": 3331,
       "Gain/Part.": 484.56,
       "Gain/Chev.": 646,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "52.8",
-      "GainMoyen": 484.56,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 257,
@@ -5399,11 +4381,7 @@
       "Prim. Eleveur": 2537,
       "Gain/Part.": 371.63,
       "Gain/Chev.": 523,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 371.63,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 258,
@@ -5420,11 +4398,7 @@
       "Prim. Eleveur": 3436,
       "Gain/Part.": 547.22,
       "Gain/Chev.": 657,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "47.2",
-      "GainMoyen": 547.22,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 259,
@@ -5441,11 +4415,7 @@
       "Prim. Eleveur": 2500,
       "Gain/Part.": 471.18,
       "Gain/Chev.": 501,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "44.1",
-      "GainMoyen": 471.18,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 260,
@@ -5462,11 +4432,7 @@
       "Prim. Eleveur": 3240,
       "Gain/Part.": 860.33,
       "Gain/Chev.": 983,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "54.2",
-      "GainMoyen": 860.33,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 261,
@@ -5483,11 +4449,7 @@
       "Prim. Eleveur": 1597,
       "Gain/Part.": 337.88,
       "Gain/Chev.": 462,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "46.2",
-      "GainMoyen": 337.88,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 262,
@@ -5504,11 +4466,7 @@
       "Prim. Eleveur": 2877,
       "Gain/Part.": 2133.64,
       "Gain/Chev.": 2667,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "44.0",
-      "GainMoyen": 2133.64,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 263,
@@ -5525,11 +4483,7 @@
       "Prim. Eleveur": 1587,
       "Gain/Part.": 347.41,
       "Gain/Chev.": 586,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "40.7",
-      "GainMoyen": 347.41,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 264,
@@ -5546,11 +4500,7 @@
       "Prim. Eleveur": 1662,
       "Gain/Part.": 230.26,
       "Gain/Chev.": 374,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "28.2",
-      "GainMoyen": 230.26,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 265,
@@ -5567,11 +4517,7 @@
       "Prim. Eleveur": 1462,
       "Gain/Part.": 273.44,
       "Gain/Chev.": 625,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "34.4",
-      "GainMoyen": 273.44,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 266,
@@ -5588,11 +4534,7 @@
       "Prim. Eleveur": 2360,
       "Gain/Part.": 670.94,
       "Gain/Chev.": 1037,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "58.8",
-      "GainMoyen": 670.94,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 267,
@@ -5609,11 +4551,7 @@
       "Prim. Eleveur": 2633,
       "Gain/Part.": 1148.08,
       "Gain/Chev.": 1244,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "69.2",
-      "GainMoyen": 1148.08,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 268,
@@ -5630,11 +4568,7 @@
       "Prim. Eleveur": 1720,
       "Gain/Part.": 818.75,
       "Gain/Chev.": 1404,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "75.0",
-      "GainMoyen": 818.75,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 269,
@@ -5651,11 +4585,7 @@
       "Prim. Eleveur": 1674,
       "Gain/Part.": 741.54,
       "Gain/Chev.": 1377,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "61.5",
-      "GainMoyen": 741.54,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 270,
@@ -5672,11 +4602,7 @@
       "Prim. Eleveur": 1122,
       "Gain/Part.": 953.64,
       "Gain/Chev.": 954,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "63.6",
-      "GainMoyen": 953.64,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 271,
@@ -5693,11 +4619,7 @@
       "Prim. Eleveur": 1728,
       "Gain/Part.": 842.5,
       "Gain/Chev.": 842,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "58.3",
-      "GainMoyen": 842.5,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 272,
@@ -5714,11 +4636,7 @@
       "Prim. Eleveur": 1477,
       "Gain/Part.": 487.19,
       "Gain/Chev.": 600,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "43.8",
-      "GainMoyen": 487.19,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 273,
@@ -5735,11 +4653,7 @@
       "Prim. Eleveur": 1137,
       "Gain/Part.": 209.73,
       "Gain/Chev.": 301,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "21.2",
-      "GainMoyen": 209.73,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 274,
@@ -5756,11 +4670,7 @@
       "Prim. Eleveur": 1898,
       "Gain/Part.": 1330.71,
       "Gain/Chev.": 1331,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "85.7",
-      "GainMoyen": 1330.71,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 275,
@@ -5777,11 +4687,7 @@
       "Prim. Eleveur": 730,
       "Gain/Part.": 289.64,
       "Gain/Chev.": 338,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "42.9",
-      "GainMoyen": 289.64,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 276,
@@ -5798,11 +4704,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 23763.64,
       "Gain/Chev.": 23764,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "45.5",
-      "GainMoyen": 23763.64,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 277,
@@ -5819,11 +4721,7 @@
       "Prim. Eleveur": 637,
       "Gain/Part.": 6122.5,
       "Gain/Chev.": 7347,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "83.3",
-      "GainMoyen": 6122.5,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 278,
@@ -5840,11 +4738,7 @@
       "Prim. Eleveur": 1551,
       "Gain/Part.": 875,
       "Gain/Chev.": 1094,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 875.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 279,
@@ -5861,11 +4755,7 @@
       "Prim. Eleveur": 755,
       "Gain/Part.": 394.83,
       "Gain/Chev.": 526,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "41.7",
-      "GainMoyen": 394.83,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 280,
@@ -5882,11 +4772,7 @@
       "Prim. Eleveur": 578,
       "Gain/Part.": 314,
       "Gain/Chev.": 1570,
-      "Course/Chev.": 5,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 314.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 5
     },
     {
       "Rang": 281,
@@ -5903,11 +4789,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 11769.5,
       "Gain/Chev.": 11770,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 11769.5,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 282,
@@ -5924,11 +4806,7 @@
       "Prim. Eleveur": 368,
       "Gain/Part.": 1420.71,
       "Gain/Chev.": 1658,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "57.1",
-      "GainMoyen": 1420.71,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 283,
@@ -5945,11 +4823,7 @@
       "Prim. Eleveur": 1118,
       "Gain/Part.": 566.09,
       "Gain/Chev.": 692,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "36.4",
-      "GainMoyen": 566.09,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 284,
@@ -5966,11 +4840,7 @@
       "Prim. Eleveur": 1125,
       "Gain/Part.": 588.4,
       "Gain/Chev.": 736,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "40.0",
-      "GainMoyen": 588.4,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 285,
@@ -5987,11 +4857,7 @@
       "Prim. Eleveur": 451,
       "Gain/Part.": 312,
       "Gain/Chev.": 589,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "23.5",
-      "GainMoyen": 312.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 286,
@@ -6008,11 +4874,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 39780.83,
       "Gain/Chev.": 39781,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 39780.83,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 287,
@@ -6029,11 +4891,7 @@
       "Prim. Eleveur": 1750,
       "Gain/Part.": 16848.33,
       "Gain/Chev.": 16848,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 16848.33,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 288,
@@ -6050,11 +4908,7 @@
       "Prim. Eleveur": 1173,
       "Gain/Part.": 1086.67,
       "Gain/Chev.": 1087,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 1086.67,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 289,
@@ -6071,11 +4925,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 1258,
       "Gain/Chev.": 2097,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "60.0",
-      "GainMoyen": 1258.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 290,
@@ -6092,11 +4942,7 @@
       "Prim. Eleveur": 1004,
       "Gain/Part.": 876.67,
       "Gain/Chev.": 1052,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 876.67,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 291,
@@ -6113,11 +4959,7 @@
       "Prim. Eleveur": 940,
       "Gain/Part.": 1666.33,
       "Gain/Chev.": 4999,
-      "Course/Chev.": 3,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 1666.33,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 3
     },
     {
       "Rang": 292,
@@ -6134,11 +4976,7 @@
       "Prim. Eleveur": 841,
       "Gain/Part.": 1560,
       "Gain/Chev.": 1560,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 1560.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 293,
@@ -6155,11 +4993,7 @@
       "Prim. Eleveur": 719,
       "Gain/Part.": 601.71,
       "Gain/Chev.": 842,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "42.9",
-      "GainMoyen": 601.71,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 294,
@@ -6176,11 +5010,7 @@
       "Prim. Eleveur": 741,
       "Gain/Part.": 1373.33,
       "Gain/Chev.": 4120,
-      "Course/Chev.": 3,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 1373.33,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 3
     },
     {
       "Rang": 295,
@@ -6197,11 +5027,7 @@
       "Prim. Eleveur": 646,
       "Gain/Part.": 623.33,
       "Gain/Chev.": 623,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 623.33,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 296,
@@ -6218,11 +5044,7 @@
       "Prim. Eleveur": 643,
       "Gain/Part.": 611.67,
       "Gain/Chev.": 734,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 611.67,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 297,
@@ -6239,11 +5061,7 @@
       "Prim. Eleveur": 161,
       "Gain/Part.": 713.4,
       "Gain/Chev.": 713,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "60.0",
-      "GainMoyen": 713.4,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 298,
@@ -6260,11 +5078,7 @@
       "Prim. Eleveur": 577,
       "Gain/Part.": 421.88,
       "Gain/Chev.": 844,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "37.5",
-      "GainMoyen": 421.88,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 299,
@@ -6281,11 +5095,7 @@
       "Prim. Eleveur": 541,
       "Gain/Part.": 430.71,
       "Gain/Chev.": 502,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "42.9",
-      "GainMoyen": 430.71,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 300,
@@ -6302,11 +5112,7 @@
       "Prim. Eleveur": 499,
       "Gain/Part.": 156.32,
       "Gain/Chev.": 175,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "15.8",
-      "GainMoyen": 156.32,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 301,
@@ -6323,11 +5129,7 @@
       "Prim. Eleveur": 541,
       "Gain/Part.": 720,
       "Gain/Chev.": 2880,
-      "Course/Chev.": 4,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "75.0",
-      "GainMoyen": 720.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 4
     },
     {
       "Rang": 302,
@@ -6344,11 +5146,7 @@
       "Prim. Eleveur": 516,
       "Gain/Part.": 313.89,
       "Gain/Chev.": 353,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "33.3",
-      "GainMoyen": 313.89,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 303,
@@ -6365,11 +5163,7 @@
       "Prim. Eleveur": 495,
       "Gain/Part.": 688.75,
       "Gain/Chev.": 918,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "75.0",
-      "GainMoyen": 688.75,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 304,
@@ -6386,11 +5180,7 @@
       "Prim. Eleveur": 317,
       "Gain/Part.": 213.75,
       "Gain/Chev.": 233,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "25.0",
-      "GainMoyen": 213.75,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 305,
@@ -6407,11 +5197,7 @@
       "Prim. Eleveur": 483,
       "Gain/Part.": 184.62,
       "Gain/Chev.": 300,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "23.1",
-      "GainMoyen": 184.62,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 306,
@@ -6428,11 +5214,7 @@
       "Prim. Eleveur": 360,
       "Gain/Part.": 161.43,
       "Gain/Chev.": 565,
-      "Course/Chev.": 4,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "21.4",
-      "GainMoyen": 161.43,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 4
     },
     {
       "Rang": 307,
@@ -6449,11 +5231,7 @@
       "Prim. Eleveur": 298,
       "Gain/Part.": 150.5,
       "Gain/Chev.": 150,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "30.0",
-      "GainMoyen": 150.5,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 308,
@@ -6470,11 +5248,7 @@
       "Prim. Eleveur": 208,
       "Gain/Part.": 158.86,
       "Gain/Chev.": 278,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "42.9",
-      "GainMoyen": 158.86,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 309,
@@ -6491,11 +5265,7 @@
       "Prim. Eleveur": 144,
       "Gain/Part.": 251.25,
       "Gain/Chev.": 335,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "75.0",
-      "GainMoyen": 251.25,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 310,
@@ -6512,11 +5282,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 20636.67,
       "Gain/Chev.": 24764,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "33.3",
-      "GainMoyen": 20636.67,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 311,
@@ -6533,11 +5299,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 23662.5,
       "Gain/Chev.": 23662,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 23662.5,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 312,
@@ -6554,11 +5316,7 @@
       "Prim. Eleveur": 3360,
       "Gain/Part.": 6500,
       "Gain/Chev.": 6500,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "40.0",
-      "GainMoyen": 6500.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 313,
@@ -6575,11 +5333,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 4483.75,
       "Gain/Chev.": 4484,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 4483.75,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 314,
@@ -6596,11 +5350,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 2562.5,
       "Gain/Chev.": 3417,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 2562.5,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 315,
@@ -6617,11 +5367,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 2000,
       "Gain/Chev.": 3000,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "66.7",
-      "GainMoyen": 2000.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 316,
@@ -6638,11 +5384,7 @@
       "Prim. Eleveur": 119,
       "Gain/Part.": 1155,
       "Gain/Chev.": 1732,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "66.7",
-      "GainMoyen": 1155.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 317,
@@ -6659,11 +5401,7 @@
       "Prim. Eleveur": 117,
       "Gain/Part.": 800,
       "Gain/Chev.": 800,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 800.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 318,
@@ -6680,11 +5418,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 1575,
       "Gain/Chev.": 1575,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 1575.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 319,
@@ -6701,11 +5435,7 @@
       "Prim. Eleveur": 364,
       "Gain/Part.": 428.57,
       "Gain/Chev.": 500,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "28.6",
-      "GainMoyen": 428.57,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 320,
@@ -6722,11 +5452,7 @@
       "Prim. Eleveur": 452,
       "Gain/Part.": 1474.5,
       "Gain/Chev.": 1474,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 1474.5,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 321,
@@ -6743,11 +5469,7 @@
       "Prim. Eleveur": 520,
       "Gain/Part.": 1445,
       "Gain/Chev.": 1445,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 1445.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 322,
@@ -6764,11 +5486,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 702.5,
       "Gain/Chev.": 702,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 702.5,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 323,
@@ -6785,11 +5503,7 @@
       "Prim. Eleveur": 499,
       "Gain/Part.": 396.43,
       "Gain/Chev.": 555,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "28.6",
-      "GainMoyen": 396.43,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 324,
@@ -6806,11 +5520,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 552,
       "Gain/Chev.": 690,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "40.0",
-      "GainMoyen": 552.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 325,
@@ -6827,11 +5537,7 @@
       "Prim. Eleveur": 508,
       "Gain/Part.": 675.5,
       "Gain/Chev.": 1351,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 675.5,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 326,
@@ -6848,11 +5554,7 @@
       "Prim. Eleveur": 457,
       "Gain/Part.": 895,
       "Gain/Chev.": 895,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "66.7",
-      "GainMoyen": 895.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 327,
@@ -6869,11 +5571,7 @@
       "Prim. Eleveur": 521,
       "Gain/Part.": 786,
       "Gain/Chev.": 786,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "66.7",
-      "GainMoyen": 786.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 328,
@@ -6890,11 +5588,7 @@
       "Prim. Eleveur": 422,
       "Gain/Part.": 391.67,
       "Gain/Chev.": 470,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "33.3",
-      "GainMoyen": 391.67,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 329,
@@ -6911,11 +5605,7 @@
       "Prim. Eleveur": 403,
       "Gain/Part.": 561.25,
       "Gain/Chev.": 561,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 561.25,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 330,
@@ -6932,11 +5622,7 @@
       "Prim. Eleveur": 383,
       "Gain/Part.": 1065,
       "Gain/Chev.": 2130,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 1065.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 331,
@@ -6953,11 +5639,7 @@
       "Prim. Eleveur": 216,
       "Gain/Part.": 525,
       "Gain/Chev.": 700,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 525.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 332,
@@ -6974,11 +5656,7 @@
       "Prim. Eleveur": 415,
       "Gain/Part.": 500,
       "Gain/Chev.": 500,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 500.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 333,
@@ -6995,11 +5673,7 @@
       "Prim. Eleveur": 259,
       "Gain/Part.": 661.67,
       "Gain/Chev.": 992,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "66.7",
-      "GainMoyen": 661.67,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 334,
@@ -7016,11 +5690,7 @@
       "Prim. Eleveur": 207,
       "Gain/Part.": 254.29,
       "Gain/Chev.": 297,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "28.6",
-      "GainMoyen": 254.29,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 335,
@@ -7037,11 +5707,7 @@
       "Prim. Eleveur": 398,
       "Gain/Part.": 351,
       "Gain/Chev.": 439,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "40.0",
-      "GainMoyen": 351.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 336,
@@ -7058,11 +5724,7 @@
       "Prim. Eleveur": 230,
       "Gain/Part.": 238.57,
       "Gain/Chev.": 557,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "28.6",
-      "GainMoyen": 238.57,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 337,
@@ -7079,11 +5741,7 @@
       "Prim. Eleveur": 203,
       "Gain/Part.": 732,
       "Gain/Chev.": 732,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 732.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 338,
@@ -7100,11 +5758,7 @@
       "Prim. Eleveur": 259,
       "Gain/Part.": 288,
       "Gain/Chev.": 360,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "40.0",
-      "GainMoyen": 288.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 339,
@@ -7121,11 +5775,7 @@
       "Prim. Eleveur": 184,
       "Gain/Part.": 100,
       "Gain/Chev.": 157,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "18.2",
-      "GainMoyen": 100.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 340,
@@ -7142,11 +5792,7 @@
       "Prim. Eleveur": 192,
       "Gain/Part.": 340,
       "Gain/Chev.": 1020,
-      "Course/Chev.": 3,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "66.7",
-      "GainMoyen": 340.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 3
     },
     {
       "Rang": 341,
@@ -7163,11 +5809,7 @@
       "Prim. Eleveur": 204,
       "Gain/Part.": 225,
       "Gain/Chev.": 225,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 225.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 342,
@@ -7184,11 +5826,7 @@
       "Prim. Eleveur": 153,
       "Gain/Part.": 372.5,
       "Gain/Chev.": 372,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 372.5,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 343,
@@ -7205,11 +5843,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 285500,
       "Gain/Chev.": 285500,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 285500.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 344,
@@ -7226,11 +5860,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 28600,
       "Gain/Chev.": 28600,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 28600.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 345,
@@ -7247,11 +5877,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 7500,
       "Gain/Chev.": 7500,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 7500.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 346,
@@ -7268,11 +5894,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 7320,
       "Gain/Chev.": 7320,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 7320.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 347,
@@ -7289,11 +5911,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 4758.33,
       "Gain/Chev.": 4758,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "33.3",
-      "GainMoyen": 4758.33,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 348,
@@ -7310,11 +5928,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 13650,
       "Gain/Chev.": 13650,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 13650.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 349,
@@ -7331,11 +5945,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 10010,
       "Gain/Chev.": 10010,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 10010.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 350,
@@ -7352,11 +5962,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 8780,
       "Gain/Chev.": 8780,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 8780.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 351,
@@ -7373,11 +5979,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 3292.5,
       "Gain/Chev.": 3292,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 3292.5,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 352,
@@ -7394,11 +5996,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 5490,
       "Gain/Chev.": 5490,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 5490.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 353,
@@ -7415,11 +6013,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 5030,
       "Gain/Chev.": 5030,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 5030.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 354,
@@ -7436,11 +6030,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 1388.33,
       "Gain/Chev.": 1388,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "33.3",
-      "GainMoyen": 1388.33,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 355,
@@ -7457,11 +6047,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 3456,
       "Gain/Chev.": 3456,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 3456.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 356,
@@ -7478,11 +6064,7 @@
       "Prim. Eleveur": 594,
       "Gain/Part.": 825,
       "Gain/Chev.": 825,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "25.0",
-      "GainMoyen": 825.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 357,
@@ -7499,11 +6081,7 @@
       "Prim. Eleveur": 468,
       "Gain/Part.": 3150,
       "Gain/Chev.": 3150,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 3150.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 358,
@@ -7520,11 +6098,7 @@
       "Prim. Eleveur": 378,
       "Gain/Part.": 3150,
       "Gain/Chev.": 3150,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 3150.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 359,
@@ -7541,11 +6115,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 3080,
       "Gain/Chev.": 3080,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 3080.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 360,
@@ -7562,11 +6132,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 2750,
       "Gain/Chev.": 2750,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 2750.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 361,
@@ -7583,11 +6149,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 2745,
       "Gain/Chev.": 2745,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 2745.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 362,
@@ -7604,11 +6166,7 @@
       "Prim. Eleveur": 284,
       "Gain/Part.": 2310,
       "Gain/Chev.": 2310,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 2310.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 363,
@@ -7625,11 +6183,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 1141,
       "Gain/Chev.": 1141,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 1141.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 364,
@@ -7646,11 +6200,7 @@
       "Prim. Eleveur": 378,
       "Gain/Part.": 1050,
       "Gain/Chev.": 2100,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 1050.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 365,
@@ -7667,11 +6217,7 @@
       "Prim. Eleveur": 320,
       "Gain/Part.": 250,
       "Gain/Chev.": 400,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "12.5",
-      "GainMoyen": 250.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 366,
@@ -7688,11 +6234,7 @@
       "Prim. Eleveur": 338,
       "Gain/Part.": 940,
       "Gain/Chev.": 940,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 940.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 367,
@@ -7709,11 +6251,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 1809,
       "Gain/Chev.": 1809,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 1809.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 368,
@@ -7730,11 +6268,7 @@
       "Prim. Eleveur": 311,
       "Gain/Part.": 1730,
       "Gain/Chev.": 1730,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 1730.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 369,
@@ -7751,11 +6285,7 @@
       "Prim. Eleveur": 320,
       "Gain/Part.": 425,
       "Gain/Chev.": 425,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "25.0",
-      "GainMoyen": 425.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 370,
@@ -7772,11 +6302,7 @@
       "Prim. Eleveur": 290,
       "Gain/Part.": 1540,
       "Gain/Chev.": 1540,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 1540.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 371,
@@ -7793,11 +6319,7 @@
       "Prim. Eleveur": 243,
       "Gain/Part.": 1520,
       "Gain/Chev.": 1520,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 1520.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 372,
@@ -7814,11 +6336,7 @@
       "Prim. Eleveur": 253,
       "Gain/Part.": 705,
       "Gain/Chev.": 705,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 705.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 373,
@@ -7835,11 +6353,7 @@
       "Prim. Eleveur": 253,
       "Gain/Part.": 705,
       "Gain/Chev.": 705,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 705.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 374,
@@ -7856,11 +6370,7 @@
       "Prim. Eleveur": 224,
       "Gain/Part.": 700,
       "Gain/Chev.": 700,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 700.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 375,
@@ -7877,11 +6387,7 @@
       "Prim. Eleveur": 160,
       "Gain/Part.": 1300,
       "Gain/Chev.": 1300,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 1300.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 376,
@@ -7898,11 +6404,7 @@
       "Prim. Eleveur": 201,
       "Gain/Part.": 630,
       "Gain/Chev.": 1260,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 630.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 377,
@@ -7919,11 +6421,7 @@
       "Prim. Eleveur": 201,
       "Gain/Part.": 1260,
       "Gain/Chev.": 1260,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 1260.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 378,
@@ -7940,11 +6438,7 @@
       "Prim. Eleveur": 225,
       "Gain/Part.": 178.57,
       "Gain/Chev.": 208,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "14.3",
-      "GainMoyen": 178.57,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 379,
@@ -7961,11 +6455,7 @@
       "Prim. Eleveur": 194,
       "Gain/Part.": 151.88,
       "Gain/Chev.": 202,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "12.5",
-      "GainMoyen": 151.88,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 380,
@@ -7982,11 +6472,7 @@
       "Prim. Eleveur": 207,
       "Gain/Part.": 575,
       "Gain/Chev.": 575,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 575.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 381,
@@ -8003,11 +6489,7 @@
       "Prim. Eleveur": 207,
       "Gain/Part.": 1150,
       "Gain/Chev.": 1150,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 1150.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 382,
@@ -8024,11 +6506,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 1050,
       "Gain/Chev.": 1050,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 1050.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 383,
@@ -8045,11 +6523,7 @@
       "Prim. Eleveur": 123,
       "Gain/Part.": 167.5,
       "Gain/Chev.": 201,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "16.7",
-      "GainMoyen": 167.5,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 384,
@@ -8066,11 +6540,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 320,
       "Gain/Chev.": 320,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "33.3",
-      "GainMoyen": 320.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 385,
@@ -8087,11 +6557,7 @@
       "Prim. Eleveur": 151,
       "Gain/Part.": 472.5,
       "Gain/Chev.": 472,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 472.5,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 386,
@@ -8108,11 +6574,7 @@
       "Prim. Eleveur": 153,
       "Gain/Part.": 425,
       "Gain/Chev.": 425,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 425.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 387,
@@ -8129,11 +6591,7 @@
       "Prim. Eleveur": 145,
       "Gain/Part.": 770,
       "Gain/Chev.": 770,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 770.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 388,
@@ -8150,11 +6608,7 @@
       "Prim. Eleveur": 115,
       "Gain/Part.": 180,
       "Gain/Chev.": 180,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "25.0",
-      "GainMoyen": 180.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 389,
@@ -8171,11 +6625,7 @@
       "Prim. Eleveur": 131,
       "Gain/Part.": 350,
       "Gain/Chev.": 700,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 350.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 390,
@@ -8192,11 +6642,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 600,
       "Gain/Chev.": 600,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 600.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 391,
@@ -8213,11 +6659,7 @@
       "Prim. Eleveur": 73,
       "Gain/Part.": 600,
       "Gain/Chev.": 600,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 600.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 392,
@@ -8234,11 +6676,7 @@
       "Prim. Eleveur": 94,
       "Gain/Part.": 105,
       "Gain/Chev.": 131,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "20.0",
-      "GainMoyen": 105.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 393,
@@ -8255,11 +6693,7 @@
       "Prim. Eleveur": 94,
       "Gain/Part.": 525,
       "Gain/Chev.": 525,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 525.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 394,
@@ -8276,11 +6710,7 @@
       "Prim. Eleveur": 85,
       "Gain/Part.": 158.33,
       "Gain/Chev.": 238,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "33.3",
-      "GainMoyen": 158.33,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 395,
@@ -8297,11 +6727,7 @@
       "Prim. Eleveur": 76,
       "Gain/Part.": 475,
       "Gain/Chev.": 475,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 475.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 396,
@@ -8318,11 +6744,7 @@
       "Prim. Eleveur": 75,
       "Gain/Part.": 236,
       "Gain/Chev.": 236,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 236.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 397,
@@ -8339,11 +6761,7 @@
       "Prim. Eleveur": 84,
       "Gain/Part.": 235,
       "Gain/Chev.": 235,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 235.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 398,
@@ -8360,11 +6778,7 @@
       "Prim. Eleveur": 84,
       "Gain/Part.": 235,
       "Gain/Chev.": 235,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 235.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 399,
@@ -8381,11 +6795,7 @@
       "Prim. Eleveur": 79,
       "Gain/Part.": 440,
       "Gain/Chev.": 440,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 440.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 400,
@@ -8402,11 +6812,7 @@
       "Prim. Eleveur": 68,
       "Gain/Part.": 212.5,
       "Gain/Chev.": 212,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 212.5,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 401,
@@ -8423,11 +6829,7 @@
       "Prim. Eleveur": 76,
       "Gain/Part.": 425,
       "Gain/Chev.": 425,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 425.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 402,
@@ -8444,11 +6846,7 @@
       "Prim. Eleveur": 49,
       "Gain/Part.": 80.4,
       "Gain/Chev.": 402,
-      "Course/Chev.": 5,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "20.0",
-      "GainMoyen": 80.4,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 5
     },
     {
       "Rang": 403,
@@ -8465,11 +6863,7 @@
       "Prim. Eleveur": 75,
       "Gain/Part.": 133.33,
       "Gain/Chev.": 133,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "33.3",
-      "GainMoyen": 133.33,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 404,
@@ -8486,11 +6880,7 @@
       "Prim. Eleveur": 60,
       "Gain/Part.": 95,
       "Gain/Chev.": 127,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "25.0",
-      "GainMoyen": 95.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 405,
@@ -8507,11 +6897,7 @@
       "Prim. Eleveur": 81,
       "Gain/Part.": 60,
       "Gain/Chev.": 120,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "16.7",
-      "GainMoyen": 60.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 406,
@@ -8528,11 +6914,7 @@
       "Prim. Eleveur": 56,
       "Gain/Part.": 350,
       "Gain/Chev.": 350,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 350.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 407,
@@ -8549,11 +6931,7 @@
       "Prim. Eleveur": 76,
       "Gain/Part.": 83.75,
       "Gain/Chev.": 84,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "25.0",
-      "GainMoyen": 83.75,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 408,
@@ -8570,11 +6948,7 @@
       "Prim. Eleveur": 50,
       "Gain/Part.": 315,
       "Gain/Chev.": 315,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "100.0",
-      "GainMoyen": 315.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 409,
@@ -8591,11 +6965,7 @@
       "Prim. Eleveur": 54,
       "Gain/Part.": 57.6,
       "Gain/Chev.": 58,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "20.0",
-      "GainMoyen": 57.6,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 410,
@@ -8612,11 +6982,7 @@
       "Prim. Eleveur": 49,
       "Gain/Part.": 137.5,
       "Gain/Chev.": 138,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 137.5,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 411,
@@ -8633,11 +6999,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 60,
       "Gain/Chev.": 120,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "25.0",
-      "GainMoyen": 60.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 412,
@@ -8654,11 +7016,7 @@
       "Prim. Eleveur": 53,
       "Gain/Part.": 117,
       "Gain/Chev.": 234,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "50.0",
-      "GainMoyen": 117.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 413,
@@ -8675,11 +7033,7 @@
       "Prim. Eleveur": 43,
       "Gain/Part.": 17.77,
       "Gain/Chev.": 26,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "7.7",
-      "GainMoyen": 17.77,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 414,
@@ -8696,11 +7050,7 @@
       "Prim. Eleveur": 32,
       "Gain/Part.": 12.29,
       "Gain/Chev.": 13,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "7.1",
-      "GainMoyen": 12.29,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 415,
@@ -8717,11 +7067,7 @@
       "Prim. Eleveur": 39,
       "Gain/Part.": 34.4,
       "Gain/Chev.": 57,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "20.0",
-      "GainMoyen": 34.4,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 416,
@@ -8738,11 +7084,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 417,
@@ -8759,11 +7101,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 3,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 3
     },
     {
       "Rang": 418,
@@ -8780,11 +7118,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 419,
@@ -8801,11 +7135,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 420,
@@ -8822,11 +7152,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 421,
@@ -8843,11 +7169,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 4,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 4
     },
     {
       "Rang": 422,
@@ -8864,11 +7186,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 423,
@@ -8885,11 +7203,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 424,
@@ -8906,11 +7220,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 425,
@@ -8927,11 +7237,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 426,
@@ -8948,11 +7254,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 427,
@@ -8969,11 +7271,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 428,
@@ -8990,11 +7288,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 429,
@@ -9011,11 +7305,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 430,
@@ -9032,11 +7322,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 431,
@@ -9053,11 +7339,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 432,
@@ -9074,11 +7356,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 433,
@@ -9095,11 +7373,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 434,
@@ -9116,11 +7390,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 435,
@@ -9137,11 +7407,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 436,
@@ -9158,11 +7424,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 437,
@@ -9179,11 +7441,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 438,
@@ -9200,11 +7458,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 439,
@@ -9221,11 +7475,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 440,
@@ -9242,11 +7492,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 441,
@@ -9263,11 +7509,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 442,
@@ -9284,11 +7526,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 443,
@@ -9305,11 +7543,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 444,
@@ -9326,11 +7560,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 2,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 2
     },
     {
       "Rang": 445,
@@ -9347,11 +7577,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 446,
@@ -9368,11 +7594,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 447,
@@ -9389,11 +7611,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 448,
@@ -9410,11 +7628,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 449,
@@ -9431,11 +7645,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 450,
@@ -9452,11 +7662,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 451,
@@ -9473,11 +7679,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 452,
@@ -9494,11 +7696,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 453,
@@ -9515,11 +7713,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 454,
@@ -9536,11 +7730,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 455,
@@ -9557,11 +7747,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 456,
@@ -9578,11 +7764,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 457,
@@ -9599,11 +7781,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 458,
@@ -9620,11 +7798,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 459,
@@ -9641,11 +7815,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 460,
@@ -9662,11 +7832,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 461,
@@ -9683,11 +7849,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 462,
@@ -9704,11 +7866,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 463,
@@ -9725,11 +7883,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 464,
@@ -9746,11 +7900,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 465,
@@ -9767,11 +7917,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 466,
@@ -9788,11 +7934,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 467,
@@ -9809,11 +7951,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 468,
@@ -9830,11 +7968,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 469,
@@ -9851,11 +7985,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 470,
@@ -9872,11 +8002,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 471,
@@ -9893,11 +8019,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 472,
@@ -9914,11 +8036,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 473,
@@ -9935,11 +8053,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 474,
@@ -9956,11 +8070,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 475,
@@ -9977,11 +8087,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 476,
@@ -9998,11 +8104,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 477,
@@ -10019,11 +8121,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 478,
@@ -10040,11 +8138,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 479,
@@ -10061,11 +8155,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 480,
@@ -10082,11 +8172,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 481,
@@ -10103,11 +8189,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 482,
@@ -10124,11 +8206,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 483,
@@ -10145,11 +8223,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 484,
@@ -10166,11 +8240,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 485,
@@ -10187,11 +8257,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 486,
@@ -10208,11 +8274,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 487,
@@ -10229,11 +8291,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 488,
@@ -10250,11 +8308,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 489,
@@ -10271,11 +8325,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 490,
@@ -10292,11 +8342,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 491,
@@ -10313,11 +8359,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 492,
@@ -10334,11 +8376,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     },
     {
       "Rang": 493,
@@ -10355,11 +8393,7 @@
       "Prim. Eleveur": 0,
       "Gain/Part.": 0,
       "Gain/Chev.": 0,
-      "Course/Chev.": 1,
-      "TauxVictoire": "0.0",
-      "TauxPlace": "0.0",
-      "GainMoyen": 0.0,
-      "ScoreMixte": "0.0"
+      "Course/Chev.": 1
     }
   ]
 }
