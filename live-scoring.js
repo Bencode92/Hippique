@@ -154,6 +154,62 @@ function buildLookup(data, keyField) {
   return m;
 }
 
+// Parser CSV tab-séparé France Galop (snapshot brut). Première ligne = header.
+// Cast les nombres (virgule décimale → point), ajoute Rang basé sur l'ordre.
+function parseFGCSV(text) {
+  const lines = text.split(/\r?\n/).filter(l => l.trim());
+  if (lines.length < 2) return [];
+  const headers = lines[0].split('\t').map(h => h.trim());
+  return lines.slice(1).map((line, idx) => {
+    const cols = line.split('\t');
+    const obj = { Rang: idx + 1 };
+    headers.forEach((h, i) => {
+      let v = (cols[i] || '').trim();
+      if (/^-?\d+([,.]\d+)?$/.test(v)) v = parseFloat(v.replace(',', '.'));
+      obj[h] = v;
+    });
+    return obj;
+  });
+}
+
+// Charge un CSV de snapshot brut + enrichit avec Nom/NomPostal/TauxVictoire/...
+// kind : 'jockeys' (Nom direct), 'cravache' (Nom direct), 'chevaux' (Cheval → Nom)
+function loadSnapshotCSV(relPath, kind) {
+  const fp = path.join(__dirname, 'data', relPath);
+  if (!fs.existsSync(fp)) return null;
+  let text;
+  try { text = fs.readFileSync(fp, 'utf8'); } catch { return null; }
+  const rows = parseFGCSV(text);
+  const map = {};
+  rows.forEach(r => {
+    // Normaliser le nom-clé selon la catégorie
+    if (kind === 'chevaux') {
+      r.Nom = (r.Cheval || r.Nom || '').toString().toUpperCase().trim();
+      r.Partants = +(r.Courses || r.Partants || 0); // chevaux.csv → 'Courses'
+      r.Places = +(r.Places || 0);
+      r.NomPostal = r.Nom;
+    } else {
+      r.Nom = (r.Nom || '').toString().toUpperCase().trim();
+      r.NomPostal = r.Nom;
+    }
+    if (!r.Nom) return;
+    const partants = +r.Partants || 0;
+    const victoires = +r.Victoires || 0;
+    const places = +r.Places || 0;
+    const alloc = +(r['Allocation tot.'] || r['Allocation'] || 0);
+    if (partants > 0) {
+      r.TauxVictoire = +(victoires / partants * 100).toFixed(1);
+      r.TauxPlace = +(places / partants * 100).toFixed(1);
+      r.GainMoyen = +(alloc / partants).toFixed(2);
+    } else {
+      r.TauxVictoire = 0; r.TauxPlace = 0; r.GainMoyen = 0;
+    }
+    r.ScoreMixte = r.TauxVictoire; // proxy honnête, on ne réinvente plus de formule
+    map[r.Nom] = r;
+  });
+  return map;
+}
+
 let levierData = null;
 function getLevierData() {
   if (levierData) return levierData;
@@ -290,10 +346,14 @@ function computeBestFormulasFromHistory() {
     const dirs = fs.readdirSync(snapshotsDir).filter(d => /^\d{4}-\d{2}-\d{2}/.test(d)).sort();
     dirs.forEach(d => {
       try {
-        const chx = loadLocalJSON(`rankings/${d}/chevaux.json`);
-        const jk = loadLocalJSON(`rankings/${d}/jockeys.json`);
-        const cr = loadLocalJSON(`rankings/${d}/cravache_or.json`);
-        if (chx || jk) snapshots.push({ date: d, chx: buildLookup(chx, 'Nom'), jk: buildLookup(jk, 'NomPostal'), cr: buildLookup(cr, 'NomPostal') });
+        // Snapshots = CSV brut depuis 28/04. On accepte aussi l'ancien format JSON pour rétro-compat.
+        const chx = loadSnapshotCSV(`rankings/${d}/chevaux.csv`, 'chevaux')
+                 || buildLookup(loadLocalJSON(`rankings/${d}/chevaux.json`), 'Nom');
+        const jk = loadSnapshotCSV(`rankings/${d}/jockeys.csv`, 'jockeys')
+                 || buildLookup(loadLocalJSON(`rankings/${d}/jockeys.json`), 'NomPostal');
+        const cr = loadSnapshotCSV(`rankings/${d}/cravache_or.csv`, 'cravache')
+                 || buildLookup(loadLocalJSON(`rankings/${d}/cravache_or.json`), 'NomPostal');
+        if (chx || jk) snapshots.push({ date: d, chx: chx || {}, jk: jk || {}, cr: cr || {} });
       } catch {}
     });
   } catch {}
@@ -541,7 +601,7 @@ function getLevierValue(levierName, participant, ld) {
   return map[levierName] ?? shortMap[levierName] ?? 50;
 }
 
-// Pool "premium" : haut de gamme plat FR région parisienne + Normandie (Deauville en option).
+// Pool "premium" : haut de gamme plat FR région parisienne + Normandie + Lyon.
 // Critère : classements France Galop bien peuplés, cotes informatives, Groupes réguliers.
 const PREMIUM_HIPPOS = new Set([
   'parislongchamp', 'longchamp',
@@ -549,6 +609,7 @@ const PREMIUM_HIPPOS = new Set([
   'chantilly',
   'fontainebleau',
   'deauville',
+  'lyon-parilly', 'lyon_parilly',
 ]);
 
 // Quel bucket fin correspond à une distance (aligné avec les FINE_RANGES de computeBestFormulasFromHistory)

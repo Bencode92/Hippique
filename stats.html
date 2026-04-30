@@ -237,7 +237,7 @@
                         <div class="hippo-actions">
                             <button onclick="selectAllHippo()">Tout cocher</button>
                             <button onclick="deselectAllHippo()">Tout décocher</button>
-                            <button onclick="selectPremiumHippos()" style="color:var(--gold);font-weight:600" title="Longchamp + Saint-Cloud + Chantilly + Fontainebleau + Deauville">&#11088; Premium FR</button>
+                            <button onclick="selectPremiumHippos()" style="color:var(--gold);font-weight:600" title="Longchamp + Saint-Cloud + Chantilly + Fontainebleau + Deauville + Lyon-Parilly">&#11088; Premium FR</button>
                         </div>
                         <div id="hippo-list"></div>
                     </div>
@@ -383,9 +383,9 @@
         updateHippoSelection();
     }
 
-    // Preset "Premium FR" : LC + SC + Chantilly + Fontainebleau + Deauville
+    // Preset "Premium FR" : LC + SC + Chantilly + Fontainebleau + Deauville + Lyon-Parilly
     // Aligné avec PREMIUM_HIPPOS de live-scoring.js — mêmes jockeys/écuries, pool cohérent.
-    const PREMIUM_FR = new Set(['PARISLONGCHAMP', 'LONGCHAMP', 'SAINT-CLOUD', 'CHANTILLY', 'FONTAINEBLEAU', 'DEAUVILLE']);
+    const PREMIUM_FR = new Set(['PARISLONGCHAMP', 'LONGCHAMP', 'SAINT-CLOUD', 'CHANTILLY', 'FONTAINEBLEAU', 'DEAUVILLE', 'LYON-PARILLY']);
     function selectPremiumHippos() {
         document.querySelectorAll('#hippo-list input[type="checkbox"]').forEach(cb => {
             cb.checked = PREMIUM_FR.has((cb.value || '').toUpperCase());
@@ -859,6 +859,49 @@
     // Snapshots 2026 datés — { date: string, chx: {}, jk: {}, cr: {} }
     let snapshots26 = [];
 
+    // Parser CSV brut France Galop (tab-séparé, header 1ère ligne, virgule décimale)
+    // Retourne un map keyé par Nom (uppercase). Ajoute Rang (position), Nom, NomPostal,
+    // TauxVictoire, TauxPlace, GainMoyen, ScoreMixte (proxy = TauxVictoire).
+    function parseSnapshotCSV(text, kind) {
+        if (!text) return null;
+        const lines = text.split(/\r?\n/).filter(l => l.trim());
+        if (lines.length < 2) return null;
+        const headers = lines[0].split('\t').map(h => h.trim());
+        const map = {};
+        lines.slice(1).forEach((line, idx) => {
+            const cols = line.split('\t');
+            const r = { Rang: idx + 1 };
+            headers.forEach((h, i) => {
+                let v = (cols[i] || '').trim();
+                if (/^-?\d+([,.]\d+)?$/.test(v)) v = parseFloat(v.replace(',', '.'));
+                r[h] = v;
+            });
+            // Normalisation selon catégorie
+            if (kind === 'chevaux') {
+                r.Nom = String(r.Cheval || r.Nom || '').toUpperCase().trim();
+                r.Partants = +(r.Courses || r.Partants || 0);
+            } else {
+                r.Nom = String(r.Nom || '').toUpperCase().trim();
+            }
+            r.NomPostal = r.Nom;
+            if (!r.Nom) return;
+            const partants = +r.Partants || 0;
+            const victoires = +r.Victoires || 0;
+            const places = +r.Places || 0;
+            const alloc = +(r['Allocation tot.'] || 0);
+            if (partants > 0) {
+                r.TauxVictoire = +(victoires / partants * 100).toFixed(1);
+                r.TauxPlace = +(places / partants * 100).toFixed(1);
+                r.GainMoyen = +(alloc / partants).toFixed(2);
+            } else {
+                r.TauxVictoire = 0; r.TauxPlace = 0; r.GainMoyen = 0;
+            }
+            r.ScoreMixte = r.TauxVictoire;
+            map[r.Nom] = r;
+        });
+        return map;
+    }
+
     async function loadRankings() {
         if (rankingData) return rankingData;
 
@@ -895,27 +938,38 @@
         };
 
         // 2) Charger les snapshots datés depuis data/rankings/
+        // Format CSV brut depuis fin avril 2026 (Rang officiel France Galop, ratios calculés à la volée).
+        // On accepte aussi l'ancien format JSON pour rétro-compat sur les snapshots anciens.
         try {
             const ghResp = await fetch('https://api.github.com/repos/bencode92/Hippique/contents/data/rankings');
             if (ghResp.ok) {
-                // Accepte 2026-04-19 (ancien format) et 2026-04-19_09h30 (nouveau)
                 const folders = (await ghResp.json()).filter(f => f.type === 'dir' && /^\d{4}-\d{2}-\d{2}/.test(f.name)).sort((a,b) => a.name.localeCompare(b.name));
 
                 for (const folder of folders) {
                     const base = `${RAW}rankings/${folder.name}/`;
-                    const [chxData, jkData, crData] = await Promise.all([
-                        fetch(base + 'chevaux.json').then(r => r.ok ? r.json() : null).catch(() => null),
-                        fetch(base + 'jockeys.json').then(r => r.ok ? r.json() : null).catch(() => null),
-                        fetch(base + 'cravache_or.json').then(r => r.ok ? r.json() : null).catch(() => null),
+                    // Essai CSV d'abord (nouveau format), puis JSON (ancien)
+                    const [chxCsv, jkCsv, crCsv] = await Promise.all([
+                        fetch(base + 'chevaux.csv').then(r => r.ok ? r.text() : null).catch(() => null),
+                        fetch(base + 'jockeys.csv').then(r => r.ok ? r.text() : null).catch(() => null),
+                        fetch(base + 'cravache_or.csv').then(r => r.ok ? r.text() : null).catch(() => null),
                     ]);
-                    if (chxData || jkData) {
-                        snapshots26.push({
-                            date: folder.name,
-                            chx: buildMap(chxData, 'Nom'),
-                            jk: buildMap(jkData, 'NomPostal'),
-                            cr: buildMap(crData, 'NomPostal'),
-                        });
+                    let chx, jk, cr;
+                    if (chxCsv || jkCsv) {
+                        chx = parseSnapshotCSV(chxCsv, 'chevaux');
+                        jk = parseSnapshotCSV(jkCsv, 'jockeys');
+                        cr = parseSnapshotCSV(crCsv, 'cravache');
+                    } else {
+                        const [chxData, jkData, crData] = await Promise.all([
+                            fetch(base + 'chevaux.json').then(r => r.ok ? r.json() : null).catch(() => null),
+                            fetch(base + 'jockeys.json').then(r => r.ok ? r.json() : null).catch(() => null),
+                            fetch(base + 'cravache_or.json').then(r => r.ok ? r.json() : null).catch(() => null),
+                        ]);
+                        if (!chxData && !jkData) continue;
+                        chx = buildMap(chxData, 'Nom');
+                        jk = buildMap(jkData, 'NomPostal');
+                        cr = buildMap(crData, 'NomPostal');
                     }
+                    snapshots26.push({ date: folder.name, chx: chx || {}, jk: jk || {}, cr: cr || {} });
                 }
                 console.log(`📸 ${snapshots26.length} snapshots chargés: ${folders.map(f => f.name).join(', ')}`);
             }
