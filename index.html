@@ -2110,12 +2110,19 @@
                     console.log(`Poids utilisés pour ${courseName}:`, weights);
                     
                     // Ajouter un indicateur visuel des poids utilisés
-                    const weightsInfo = document.createElement('p');
-                    weightsInfo.className = 'loading-indicator';
+                    // (insérer AVANT la <table> sinon le <p> finit invalide entre thead/tbody)
                     const distLabel = courseContext.distance < 1400 ? 'Sprint' : courseContext.distance < 1900 ? 'Mile' : courseContext.distance < 2400 ? 'Middle' : 'Staying';
                     const fieldLabel = courseContext.participants?.length < 9 ? 'petit champ' : courseContext.participants?.length < 14 ? 'moyen' : 'grand champ';
+                    const tableEl = participantsContainer.parentNode;            // <table>
+                    const tableWrapper = tableEl.parentNode;                      // <div.table-responsive>
+                    // Évite les doublons si on rouvre la course
+                    const existing = tableWrapper.parentNode.querySelector('.formule-adaptee-info');
+                    if (existing) existing.remove();
+                    const weightsInfo = document.createElement('p');
+                    weightsInfo.className = 'formule-adaptee-info';
+                    weightsInfo.style.cssText = 'margin:0.4rem 0 0.8rem;padding:0.6rem 0.9rem;background:rgba(64,224,208,0.08);border-left:3px solid var(--accent);border-radius:4px;color:var(--accent);font-size:0.9rem';
                     weightsInfo.innerHTML = `<i class="fas fa-balance-scale"></i> Formule adaptée : ${distLabel} (${courseContext.distance}m) + ${fieldLabel} (${courseContext.participants?.length || '?'} partants)`;
-                    participantsContainer.parentNode.insertBefore(weightsInfo, participantsContainer);
+                    tableWrapper.parentNode.insertBefore(weightsInfo, tableWrapper);
                     
                     if (scoresPredictifs.length === 0) {
                         participantsContainer.innerHTML = `
