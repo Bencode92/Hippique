@@ -469,9 +469,27 @@
 
     async function loadFileList() {
         if (allFiles) return allFiles;
-        const resp = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/data/courses?_=${Date.now()}`);
-        if (!resp.ok) throw new Error('Impossible de charger la liste des fichiers');
-        allFiles = await resp.json();
+
+        // PRIMAIRE : _index.json maintenu auto via GitHub Actions, servi par raw → aucun rate limit
+        try {
+            const idxResp = await fetch(`https://raw.githubusercontent.com/bencode92/Hippique/main/data/courses/_index.json?_=${Date.now()}`);
+            if (idxResp.ok) {
+                const idx = await idxResp.json();
+                allFiles = (idx.files || []).map(f => ({
+                    name: f.name,
+                    download_url: `https://raw.githubusercontent.com/bencode92/Hippique/main/data/courses/${f.name}`
+                }));
+                console.log(`📋 Listing depuis _index.json (${allFiles.length} fichiers)`);
+            }
+        } catch (e) { console.warn('_index.json indisponible', e); }
+
+        // Fallback API GitHub (60 req/h)
+        if (!allFiles) {
+            const resp = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/data/courses?_=${Date.now()}`);
+            if (!resp.ok) throw new Error('Impossible de charger la liste des fichiers');
+            allFiles = await resp.json();
+        }
+
         allFiles.forEach(f => {
             const m = f.name.match(/\d{4}-\d{2}-\d{2}_(.+)\.json$/);
             if (m) allHippodromes.add(m[1].replace(/_/g, ' ').toUpperCase());
