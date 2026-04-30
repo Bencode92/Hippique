@@ -1,10 +1,10 @@
 {
   "metadata": {
     "category": "jockeys",
-    "extraction_date": "2026-04-29T15:58:39.844Z",
+    "extraction_date": "2026-04-30T06:47:49.527Z",
     "method": "distance_stats_aggregation",
     "courses_analysees": 2541,
-    "participations": 28498,
+    "participations": 28493,
     "fichiers_source": 609,
     "distance_buckets": {
       "sprint": "<1400m",
@@ -22061,12 +22061,12 @@
     },
     "J.CH. SOREL": {
       "global": {
-        "courses": 24,
+        "courses": 23,
         "victoires": 3,
-        "places": 8,
-        "top5": 12,
-        "tauxVictoire": 12.5,
-        "tauxPlace": 33.3
+        "places": 7,
+        "top5": 11,
+        "tauxVictoire": 13,
+        "tauxPlace": 30.4
       },
       "staying": {
         "label": "2400m+",
@@ -22083,15 +22083,15 @@
       },
       "intermediaire": {
         "label": "1900-2399m",
-        "courses": 9,
+        "courses": 8,
         "victoires": 0,
-        "places": 1,
-        "top5": 4,
+        "places": 0,
+        "top5": 3,
         "tauxVictoire": 0,
-        "tauxPlace": 11.1,
-        "tauxTop5": 44.4,
+        "tauxPlace": 0,
+        "tauxTop5": 37.5,
         "type_course": {
-          "ATTELE": 9
+          "ATTELE": 8
         }
       },
       "meilleureDistance": {
@@ -29564,37 +29564,37 @@
     },
     "WILLIAM PEREYRA": {
       "global": {
-        "courses": 19,
+        "courses": 17,
         "victoires": 2,
         "places": 6,
         "top5": 8,
-        "tauxVictoire": 10.5,
-        "tauxPlace": 31.6
+        "tauxVictoire": 11.8,
+        "tauxPlace": 35.3
       },
       "mile": {
         "label": "1400-1899m",
-        "courses": 8,
+        "courses": 7,
         "victoires": 1,
         "places": 1,
         "top5": 2,
-        "tauxVictoire": 12.5,
-        "tauxPlace": 12.5,
-        "tauxTop5": 25,
+        "tauxVictoire": 14.3,
+        "tauxPlace": 14.3,
+        "tauxTop5": 28.6,
         "type_course": {
-          "Plat": 8
+          "Plat": 7
         }
       },
       "sprint": {
         "label": "<1400m",
-        "courses": 10,
+        "courses": 9,
         "victoires": 1,
         "places": 5,
         "top5": 6,
-        "tauxVictoire": 10,
-        "tauxPlace": 50,
-        "tauxTop5": 60,
+        "tauxVictoire": 11.1,
+        "tauxPlace": 55.6,
+        "tauxTop5": 66.7,
         "type_course": {
-          "Plat": 10
+          "Plat": 9
         }
       },
       "staying": {
@@ -29613,7 +29613,7 @@
       "meilleureDistance": {
         "bucket": "mile",
         "label": "1400-1899m",
-        "tauxVictoire": 12.5
+        "tauxVictoire": 14.3
       }
     },
     "MARTIN JAVIER VALLE": {
@@ -35313,12 +35313,12 @@
     },
     "M.GRANDIN": {
       "global": {
-        "courses": 135,
+        "courses": 134,
         "victoires": 13,
         "places": 43,
-        "top5": 77,
-        "tauxVictoire": 9.6,
-        "tauxPlace": 31.9
+        "top5": 76,
+        "tauxVictoire": 9.7,
+        "tauxPlace": 32.1
       },
       "mile": {
         "label": "1400-1899m",
@@ -35335,15 +35335,15 @@
       },
       "intermediaire": {
         "label": "1900-2399m",
-        "courses": 38,
+        "courses": 37,
         "victoires": 4,
         "places": 11,
-        "top5": 23,
-        "tauxVictoire": 10.5,
-        "tauxPlace": 28.9,
-        "tauxTop5": 60.5,
+        "top5": 22,
+        "tauxVictoire": 10.8,
+        "tauxPlace": 29.7,
+        "tauxTop5": 59.5,
         "type_course": {
-          "Plat": 38
+          "Plat": 37
         }
       },
       "staying": {
@@ -43005,12 +43005,12 @@
     },
     "RODRIGUEZ MAXIM ASERITO": {
       "global": {
-        "courses": 10,
+        "courses": 9,
         "victoires": 2,
         "places": 3,
         "top5": 4,
-        "tauxVictoire": 20,
-        "tauxPlace": 30
+        "tauxVictoire": 22.2,
+        "tauxPlace": 33.3
       },
       "sprint": {
         "label": "<1400m",
@@ -43027,21 +43027,21 @@
       },
       "mile": {
         "label": "1400-1899m",
-        "courses": 4,
+        "courses": 3,
         "victoires": 1,
         "places": 1,
         "top5": 1,
-        "tauxVictoire": 25,
-        "tauxPlace": 25,
-        "tauxTop5": 25,
+        "tauxVictoire": 33.3,
+        "tauxPlace": 33.3,
+        "tauxTop5": 33.3,
         "type_course": {
-          "Plat": 4
+          "Plat": 3
         }
       },
       "meilleureDistance": {
         "bucket": "mile",
         "label": "1400-1899m",
-        "tauxVictoire": 25
+        "tauxVictoire": 33.3
       }
     },
     "EMILIANO FABRIZIO SINIANI": {
@@ -43152,12 +43152,12 @@
     },
     "ANIBAL JOSE CABRERA": {
       "global": {
-        "courses": 7,
+        "courses": 6,
         "victoires": 2,
         "places": 2,
-        "top5": 3,
-        "tauxVictoire": 28.6,
-        "tauxPlace": 28.6
+        "top5": 2,
+        "tauxVictoire": 33.3,
+        "tauxPlace": 33.3
       },
       "sprint": {
         "label": "<1400m",
@@ -43174,15 +43174,15 @@
       },
       "mile": {
         "label": "1400-1899m",
-        "courses": 2,
+        "courses": 1,
         "victoires": 0,
         "places": 0,
-        "top5": 1,
+        "top5": 0,
         "tauxVictoire": 0,
         "tauxPlace": 0,
-        "tauxTop5": 50,
+        "tauxTop5": 0,
         "type_course": {
-          "Plat": 2
+          "Plat": 1
         }
       },
       "meilleureDistance": {
@@ -103585,6 +103585,30 @@
       },
       "meilleureDistance": null
     },
+    "E. LAMY": {
+      "global": {
+        "courses": 1,
+        "victoires": 0,
+        "places": 1,
+        "top5": 1,
+        "tauxVictoire": 0,
+        "tauxPlace": 100
+      },
+      "staying": {
+        "label": "2400m+",
+        "courses": 1,
+        "victoires": 0,
+        "places": 1,
+        "top5": 1,
+        "tauxVictoire": 0,
+        "tauxPlace": 100,
+        "tauxTop5": 100,
+        "type_course": {
+          "ATTELE": 1
+        }
+      },
+      "meilleureDistance": null
+    },
     "D. BROSSARD": {
       "global": {
         "courses": 3,
@@ -103612,30 +103636,6 @@
         "label": "2400m+",
         "tauxVictoire": 33.3
       }
-    },
-    "E. LAMY": {
-      "global": {
-        "courses": 1,
-        "victoires": 0,
-        "places": 1,
-        "top5": 1,
-        "tauxVictoire": 0,
-        "tauxPlace": 100
-      },
-      "staying": {
-        "label": "2400m+",
-        "courses": 1,
-        "victoires": 0,
-        "places": 1,
-        "top5": 1,
-        "tauxVictoire": 0,
-        "tauxPlace": 100,
-        "tauxTop5": 100,
-        "type_course": {
-          "ATTELE": 1
-        }
-      },
-      "meilleureDistance": null
     },
     "A. MAZZU": {
       "global": {
@@ -103781,7 +103781,7 @@
       },
       "meilleureDistance": null
     },
-    "F. BOUDET": {
+    "J. GASTINEAU": {
       "global": {
         "courses": 1,
         "victoires": 0,
@@ -103805,7 +103805,7 @@
       },
       "meilleureDistance": null
     },
-    "J. GASTINEAU": {
+    "F. BOUDET": {
       "global": {
         "courses": 1,
         "victoires": 0,
@@ -103877,50 +103877,26 @@
       },
       "meilleureDistance": null
     },
-    "TUSCHER HERBERT": {
+    "HALLER RUDOLF": {
       "global": {
-        "courses": 2,
-        "victoires": 1,
-        "places": 2,
+        "courses": 3,
+        "victoires": 0,
+        "places": 0,
         "top5": 2,
-        "tauxVictoire": 50,
-        "tauxPlace": 100
+        "tauxVictoire": 0,
+        "tauxPlace": 0
       },
       "intermediaire": {
         "label": "1900-2399m",
         "courses": 2,
-        "victoires": 1,
-        "places": 2,
-        "top5": 2,
-        "tauxVictoire": 50,
-        "tauxPlace": 100,
-        "tauxTop5": 100,
+        "victoires": 0,
+        "places": 0,
+        "top5": 1,
+        "tauxVictoire": 0,
+        "tauxPlace": 0,
+        "tauxTop5": 50,
         "type_course": {
           "ATTELE": 2
-        }
-      },
-      "meilleureDistance": null
-    },
-    "PLETSCHACHER ROBERT": {
-      "global": {
-        "courses": 2,
-        "victoires": 0,
-        "places": 1,
-        "top5": 1,
-        "tauxVictoire": 0,
-        "tauxPlace": 50
-      },
-      "intermediaire": {
-        "label": "1900-2399m",
-        "courses": 1,
-        "victoires": 0,
-        "places": 1,
-        "top5": 1,
-        "tauxVictoire": 0,
-        "tauxPlace": 100,
-        "tauxTop5": 100,
-        "type_course": {
-          "ATTELE": 1
         }
       },
       "staying": {
@@ -103928,10 +103904,10 @@
         "courses": 1,
         "victoires": 0,
         "places": 0,
-        "top5": 0,
+        "top5": 1,
         "tauxVictoire": 0,
         "tauxPlace": 0,
-        "tauxTop5": 0,
+        "tauxTop5": 100,
         "type_course": {
           "ATTELE": 1
         }
@@ -103975,26 +103951,26 @@
       },
       "meilleureDistance": null
     },
-    "HALLER RUDOLF": {
+    "PLETSCHACHER ROBERT": {
       "global": {
-        "courses": 3,
+        "courses": 2,
         "victoires": 0,
-        "places": 0,
-        "top5": 2,
+        "places": 1,
+        "top5": 1,
         "tauxVictoire": 0,
-        "tauxPlace": 0
+        "tauxPlace": 50
       },
       "intermediaire": {
         "label": "1900-2399m",
-        "courses": 2,
+        "courses": 1,
         "victoires": 0,
-        "places": 0,
+        "places": 1,
         "top5": 1,
         "tauxVictoire": 0,
-        "tauxPlace": 0,
-        "tauxTop5": 50,
+        "tauxPlace": 100,
+        "tauxTop5": 100,
         "type_course": {
-          "ATTELE": 2
+          "ATTELE": 1
         }
       },
       "staying": {
@@ -104002,10 +103978,10 @@
         "courses": 1,
         "victoires": 0,
         "places": 0,
-        "top5": 1,
+        "top5": 0,
         "tauxVictoire": 0,
         "tauxPlace": 0,
-        "tauxTop5": 100,
+        "tauxTop5": 0,
         "type_course": {
           "ATTELE": 1
         }
@@ -104032,30 +104008,6 @@
         "tauxTop5": 100,
         "type_course": {
           "ATTELE": 1
-        }
-      },
-      "meilleureDistance": null
-    },
-    "SPARBER JOSEF": {
-      "global": {
-        "courses": 2,
-        "victoires": 0,
-        "places": 0,
-        "top5": 0,
-        "tauxVictoire": 0,
-        "tauxPlace": 0
-      },
-      "intermediaire": {
-        "label": "1900-2399m",
-        "courses": 2,
-        "victoires": 0,
-        "places": 0,
-        "top5": 0,
-        "tauxVictoire": 0,
-        "tauxPlace": 0,
-        "tauxTop5": 0,
-        "type_course": {
-          "ATTELE": 2
         }
       },
       "meilleureDistance": null
@@ -104097,6 +104049,54 @@
       },
       "meilleureDistance": null
     },
+    "SPARBER JOSEF": {
+      "global": {
+        "courses": 2,
+        "victoires": 0,
+        "places": 0,
+        "top5": 0,
+        "tauxVictoire": 0,
+        "tauxPlace": 0
+      },
+      "intermediaire": {
+        "label": "1900-2399m",
+        "courses": 2,
+        "victoires": 0,
+        "places": 0,
+        "top5": 0,
+        "tauxVictoire": 0,
+        "tauxPlace": 0,
+        "tauxTop5": 0,
+        "type_course": {
+          "ATTELE": 2
+        }
+      },
+      "meilleureDistance": null
+    },
+    "TUSCHER HERBERT": {
+      "global": {
+        "courses": 2,
+        "victoires": 1,
+        "places": 2,
+        "top5": 2,
+        "tauxVictoire": 50,
+        "tauxPlace": 100
+      },
+      "intermediaire": {
+        "label": "1900-2399m",
+        "courses": 2,
+        "victoires": 1,
+        "places": 2,
+        "top5": 2,
+        "tauxVictoire": 50,
+        "tauxPlace": 100,
+        "tauxTop5": 100,
+        "type_course": {
+          "ATTELE": 2
+        }
+      },
+      "meilleureDistance": null
+    },
     "MME BOCK MARISA": {
       "global": {
         "courses": 2,
@@ -104130,162 +104130,6 @@
         "tauxTop5": 100,
         "type_course": {
           "ATTELE": 1
-        }
-      },
-      "meilleureDistance": null
-    },
-    "SCHMID SANDRO": {
-      "global": {
-        "courses": 1,
-        "victoires": 1,
-        "places": 1,
-        "top5": 1,
-        "tauxVictoire": 100,
-        "tauxPlace": 100
-      },
-      "intermediaire": {
-        "label": "1900-2399m",
-        "courses": 1,
-        "victoires": 1,
-        "places": 1,
-        "top5": 1,
-        "tauxVictoire": 100,
-        "tauxPlace": 100,
-        "tauxTop5": 100,
-        "type_course": {
-          "ATTELE": 1
-        }
-      },
-      "meilleureDistance": null
-    },
-    "GEINEDER MARTIN CH.": {
-      "global": {
-        "courses": 3,
-        "victoires": 0,
-        "places": 2,
-        "top5": 2,
-        "tauxVictoire": 0,
-        "tauxPlace": 66.7
-      },
-      "intermediaire": {
-        "label": "1900-2399m",
-        "courses": 3,
-        "victoires": 0,
-        "places": 2,
-        "top5": 2,
-        "tauxVictoire": 0,
-        "tauxPlace": 66.7,
-        "tauxTop5": 66.7,
-        "type_course": {
-          "ATTELE": 3
-        }
-      },
-      "meilleureDistance": {
-        "bucket": "intermediaire",
-        "label": "1900-2399m",
-        "tauxVictoire": 0
-      }
-    },
-    "FERSTL CHRISTIAN": {
-      "global": {
-        "courses": 3,
-        "victoires": 0,
-        "places": 2,
-        "top5": 3,
-        "tauxVictoire": 0,
-        "tauxPlace": 66.7
-      },
-      "intermediaire": {
-        "label": "1900-2399m",
-        "courses": 3,
-        "victoires": 0,
-        "places": 2,
-        "top5": 3,
-        "tauxVictoire": 0,
-        "tauxPlace": 66.7,
-        "tauxTop5": 100,
-        "type_course": {
-          "ATTELE": 3
-        }
-      },
-      "meilleureDistance": {
-        "bucket": "intermediaire",
-        "label": "1900-2399m",
-        "tauxVictoire": 0
-      }
-    },
-    "MME PLANKL JOHANNA": {
-      "global": {
-        "courses": 2,
-        "victoires": 1,
-        "places": 1,
-        "top5": 2,
-        "tauxVictoire": 50,
-        "tauxPlace": 50
-      },
-      "intermediaire": {
-        "label": "1900-2399m",
-        "courses": 2,
-        "victoires": 1,
-        "places": 1,
-        "top5": 2,
-        "tauxVictoire": 50,
-        "tauxPlace": 50,
-        "tauxTop5": 100,
-        "type_course": {
-          "ATTELE": 2
-        }
-      },
-      "meilleureDistance": null
-    },
-    "SCHULZ DR.CONNY": {
-      "global": {
-        "courses": 3,
-        "victoires": 0,
-        "places": 0,
-        "top5": 1,
-        "tauxVictoire": 0,
-        "tauxPlace": 0
-      },
-      "intermediaire": {
-        "label": "1900-2399m",
-        "courses": 3,
-        "victoires": 0,
-        "places": 0,
-        "top5": 1,
-        "tauxVictoire": 0,
-        "tauxPlace": 0,
-        "tauxTop5": 33.3,
-        "type_course": {
-          "ATTELE": 3
-        }
-      },
-      "meilleureDistance": {
-        "bucket": "intermediaire",
-        "label": "1900-2399m",
-        "tauxVictoire": 0
-      }
-    },
-    "RUHLAND MARIO JOSEF": {
-      "global": {
-        "courses": 2,
-        "victoires": 0,
-        "places": 0,
-        "top5": 0,
-        "tauxVictoire": 0,
-        "tauxPlace": 0
-      },
-      "intermediaire": {
-        "label": "1900-2399m",
-        "courses": 2,
-        "victoires": 0,
-        "places": 0,
-        "top5": 0,
-        "tauxVictoire": 0,
-        "tauxPlace": 0,
-        "tauxTop5": 0,
-        "type_course": {
-          "ATTELE": 2
         }
       },
       "meilleureDistance": null
@@ -104338,6 +104182,34 @@
       },
       "meilleureDistance": null
     },
+    "GEINEDER MARTIN CH.": {
+      "global": {
+        "courses": 3,
+        "victoires": 0,
+        "places": 2,
+        "top5": 2,
+        "tauxVictoire": 0,
+        "tauxPlace": 66.7
+      },
+      "intermediaire": {
+        "label": "1900-2399m",
+        "courses": 3,
+        "victoires": 0,
+        "places": 2,
+        "top5": 2,
+        "tauxVictoire": 0,
+        "tauxPlace": 66.7,
+        "tauxTop5": 66.7,
+        "type_course": {
+          "ATTELE": 3
+        }
+      },
+      "meilleureDistance": {
+        "bucket": "intermediaire",
+        "label": "1900-2399m",
+        "tauxVictoire": 0
+      }
+    },
     "MME GEINEDER THERESA": {
       "global": {
         "courses": 1,
@@ -104386,7 +104258,55 @@
       },
       "meilleureDistance": null
     },
-    "GRUNDHOFER LASSE": {
+    "MME PLANKL JOHANNA": {
+      "global": {
+        "courses": 2,
+        "victoires": 1,
+        "places": 1,
+        "top5": 2,
+        "tauxVictoire": 50,
+        "tauxPlace": 50
+      },
+      "intermediaire": {
+        "label": "1900-2399m",
+        "courses": 2,
+        "victoires": 1,
+        "places": 1,
+        "top5": 2,
+        "tauxVictoire": 50,
+        "tauxPlace": 50,
+        "tauxTop5": 100,
+        "type_course": {
+          "ATTELE": 2
+        }
+      },
+      "meilleureDistance": null
+    },
+    "RUHLAND MARIO JOSEF": {
+      "global": {
+        "courses": 2,
+        "victoires": 0,
+        "places": 0,
+        "top5": 0,
+        "tauxVictoire": 0,
+        "tauxPlace": 0
+      },
+      "intermediaire": {
+        "label": "1900-2399m",
+        "courses": 2,
+        "victoires": 0,
+        "places": 0,
+        "top5": 0,
+        "tauxVictoire": 0,
+        "tauxPlace": 0,
+        "tauxTop5": 0,
+        "type_course": {
+          "ATTELE": 2
+        }
+      },
+      "meilleureDistance": null
+    },
+    "SCHMID SANDRO": {
       "global": {
         "courses": 1,
         "victoires": 1,
@@ -104410,53 +104330,61 @@
       },
       "meilleureDistance": null
     },
-    "VOLF MYKOLA": {
+    "FERSTL CHRISTIAN": {
       "global": {
-        "courses": 1,
+        "courses": 3,
         "victoires": 0,
-        "places": 1,
-        "top5": 1,
+        "places": 2,
+        "top5": 3,
         "tauxVictoire": 0,
-        "tauxPlace": 100
+        "tauxPlace": 66.7
       },
       "intermediaire": {
         "label": "1900-2399m",
-        "courses": 1,
+        "courses": 3,
         "victoires": 0,
-        "places": 1,
-        "top5": 1,
+        "places": 2,
+        "top5": 3,
         "tauxVictoire": 0,
-        "tauxPlace": 100,
+        "tauxPlace": 66.7,
         "tauxTop5": 100,
         "type_course": {
-          "ATTELE": 1
+          "ATTELE": 3
         }
       },
-      "meilleureDistance": null
+      "meilleureDistance": {
+        "bucket": "intermediaire",
+        "label": "1900-2399m",
+        "tauxVictoire": 0
+      }
     },
-    "MME SALKOVIC-VOLF ELENA": {
+    "SCHULZ DR.CONNY": {
       "global": {
-        "courses": 1,
+        "courses": 3,
         "victoires": 0,
-        "places": 1,
+        "places": 0,
         "top5": 1,
         "tauxVictoire": 0,
-        "tauxPlace": 100
+        "tauxPlace": 0
       },
       "intermediaire": {
         "label": "1900-2399m",
-        "courses": 1,
+        "courses": 3,
         "victoires": 0,
-        "places": 1,
+        "places": 0,
         "top5": 1,
         "tauxVictoire": 0,
-        "tauxPlace": 100,
-        "tauxTop5": 100,
+        "tauxPlace": 0,
+        "tauxTop5": 33.3,
         "type_course": {
-          "ATTELE": 1
+          "ATTELE": 3
         }
       },
-      "meilleureDistance": null
+      "meilleureDistance": {
+        "bucket": "intermediaire",
+        "label": "1900-2399m",
+        "tauxVictoire": 0
+      }
     },
     "KRENMAYR GREGOR": {
       "global": {
@@ -104506,6 +104434,102 @@
       },
       "meilleureDistance": null
     },
+    "VOLF MYKOLA": {
+      "global": {
+        "courses": 1,
+        "victoires": 0,
+        "places": 1,
+        "top5": 1,
+        "tauxVictoire": 0,
+        "tauxPlace": 100
+      },
+      "intermediaire": {
+        "label": "1900-2399m",
+        "courses": 1,
+        "victoires": 0,
+        "places": 1,
+        "top5": 1,
+        "tauxVictoire": 0,
+        "tauxPlace": 100,
+        "tauxTop5": 100,
+        "type_course": {
+          "ATTELE": 1
+        }
+      },
+      "meilleureDistance": null
+    },
+    "GRUNDHOFER LASSE": {
+      "global": {
+        "courses": 1,
+        "victoires": 1,
+        "places": 1,
+        "top5": 1,
+        "tauxVictoire": 100,
+        "tauxPlace": 100
+      },
+      "intermediaire": {
+        "label": "1900-2399m",
+        "courses": 1,
+        "victoires": 1,
+        "places": 1,
+        "top5": 1,
+        "tauxVictoire": 100,
+        "tauxPlace": 100,
+        "tauxTop5": 100,
+        "type_course": {
+          "ATTELE": 1
+        }
+      },
+      "meilleureDistance": null
+    },
+    "MME SALKOVIC-VOLF ELENA": {
+      "global": {
+        "courses": 1,
+        "victoires": 0,
+        "places": 1,
+        "top5": 1,
+        "tauxVictoire": 0,
+        "tauxPlace": 100
+      },
+      "intermediaire": {
+        "label": "1900-2399m",
+        "courses": 1,
+        "victoires": 0,
+        "places": 1,
+        "top5": 1,
+        "tauxVictoire": 0,
+        "tauxPlace": 100,
+        "tauxTop5": 100,
+        "type_course": {
+          "ATTELE": 1
+        }
+      },
+      "meilleureDistance": null
+    },
+    "KARTEN TOM": {
+      "global": {
+        "courses": 1,
+        "victoires": 0,
+        "places": 0,
+        "top5": 0,
+        "tauxVictoire": 0,
+        "tauxPlace": 0
+      },
+      "intermediaire": {
+        "label": "1900-2399m",
+        "courses": 1,
+        "victoires": 0,
+        "places": 0,
+        "top5": 0,
+        "tauxVictoire": 0,
+        "tauxPlace": 0,
+        "tauxTop5": 0,
+        "type_course": {
+          "ATTELE": 1
+        }
+      },
+      "meilleureDistance": null
+    },
     "VOIGT CHRISTIAN": {
       "global": {
         "courses": 1,
@@ -104524,6 +104548,30 @@
         "tauxVictoire": 100,
         "tauxPlace": 100,
         "tauxTop5": 100,
+        "type_course": {
+          "ATTELE": 1
+        }
+      },
+      "meilleureDistance": null
+    },
+    "ROSENBERG JENS": {
+      "global": {
+        "courses": 1,
+        "victoires": 0,
+        "places": 0,
+        "top5": 0,
+        "tauxVictoire": 0,
+        "tauxPlace": 0
+      },
+      "intermediaire": {
+        "label": "1900-2399m",
+        "courses": 1,
+        "victoires": 0,
+        "places": 0,
+        "top5": 0,
+        "tauxVictoire": 0,
+        "tauxPlace": 0,
+        "tauxTop5": 0,
         "type_course": {
           "ATTELE": 1
         }
@@ -104578,31 +104626,7 @@
       },
       "meilleureDistance": null
     },
-    "KARTEN TOM": {
-      "global": {
-        "courses": 1,
-        "victoires": 0,
-        "places": 0,
-        "top5": 0,
-        "tauxVictoire": 0,
-        "tauxPlace": 0
-      },
-      "intermediaire": {
-        "label": "1900-2399m",
-        "courses": 1,
-        "victoires": 0,
-        "places": 0,
-        "top5": 0,
-        "tauxVictoire": 0,
-        "tauxPlace": 0,
-        "tauxTop5": 0,
-        "type_course": {
-          "ATTELE": 1
-        }
-      },
-      "meilleureDistance": null
-    },
-    "ROSENBERG JENS": {
+    "LINDINGER RENATE": {
       "global": {
         "courses": 1,
         "victoires": 0,
@@ -104650,31 +104674,7 @@
       },
       "meilleureDistance": null
     },
-    "VEIT FERDINAND": {
-      "global": {
-        "courses": 1,
-        "victoires": 0,
-        "places": 0,
-        "top5": 1,
-        "tauxVictoire": 0,
-        "tauxPlace": 0
-      },
-      "intermediaire": {
-        "label": "1900-2399m",
-        "courses": 1,
-        "victoires": 0,
-        "places": 0,
-        "top5": 1,
-        "tauxVictoire": 0,
-        "tauxPlace": 0,
-        "tauxTop5": 100,
-        "type_course": {
-          "ATTELE": 1
-        }
-      },
-      "meilleureDistance": null
-    },
-    "LINDINGER RENATE": {
+    "LORENZ HERBERT": {
       "global": {
         "courses": 1,
         "victoires": 0,
@@ -104722,12 +104722,12 @@
       },
       "meilleureDistance": null
     },
-    "SCHWAIGER MARTIN": {
+    "VEIT FERDINAND": {
       "global": {
         "courses": 1,
         "victoires": 0,
         "places": 0,
-        "top5": 0,
+        "top5": 1,
         "tauxVictoire": 0,
         "tauxPlace": 0
       },
@@ -104736,17 +104736,17 @@
         "courses": 1,
         "victoires": 0,
         "places": 0,
-        "top5": 0,
+        "top5": 1,
         "tauxVictoire": 0,
         "tauxPlace": 0,
-        "tauxTop5": 0,
+        "tauxTop5": 100,
         "type_course": {
           "ATTELE": 1
         }
       },
       "meilleureDistance": null
     },
-    "LORENZ HERBERT": {
+    "SCHWAIGER MARTIN": {
       "global": {
         "courses": 1,
         "victoires": 0,
@@ -104818,7 +104818,7 @@
       },
       "meilleureDistance": null
     },
-    "S.F. O'KEEFFE": {
+    "PHILIP BYRNES": {
       "global": {
         "courses": 1,
         "victoires": 0,
@@ -104842,7 +104842,7 @@
       },
       "meilleureDistance": null
     },
-    "PHILIP BYRNES": {
+    "S.F. O'KEEFFE": {
       "global": {
         "courses": 1,
         "victoires": 0,
@@ -104886,6 +104886,30 @@
         "tauxTop5": 100,
         "type_course": {
           "STEEPLECHASE": 1
+        }
+      },
+      "meilleureDistance": null
+    },
+    "JEREMIAS LEYES": {
+      "global": {
+        "courses": 1,
+        "victoires": 0,
+        "places": 0,
+        "top5": 1,
+        "tauxVictoire": 0,
+        "tauxPlace": 0
+      },
+      "mile": {
+        "label": "1400-1899m",
+        "courses": 1,
+        "victoires": 0,
+        "places": 0,
+        "top5": 1,
+        "tauxVictoire": 0,
+        "tauxPlace": 0,
+        "tauxTop5": 100,
+        "type_course": {
+          "Plat": 1
         }
       },
       "meilleureDistance": null
@@ -104951,6 +104975,30 @@
       },
       "meilleureDistance": null
     },
+    "J. VON KRUSENSTIERNA": {
+      "global": {
+        "courses": 1,
+        "victoires": 0,
+        "places": 0,
+        "top5": 0,
+        "tauxVictoire": 0,
+        "tauxPlace": 0
+      },
+      "intermediaire": {
+        "label": "1900-2399m",
+        "courses": 1,
+        "victoires": 0,
+        "places": 0,
+        "top5": 0,
+        "tauxVictoire": 0,
+        "tauxPlace": 0,
+        "tauxTop5": 0,
+        "type_course": {
+          "ATTELE": 1
+        }
+      },
+      "meilleureDistance": null
+    },
     "M.E. DJUSE": {
       "global": {
         "courses": 6,
@@ -104991,30 +105039,6 @@
         "label": "1900-2399m",
         "tauxVictoire": 25
       }
-    },
-    "J. VON KRUSENSTIERNA": {
-      "global": {
-        "courses": 1,
-        "victoires": 0,
-        "places": 0,
-        "top5": 0,
-        "tauxVictoire": 0,
-        "tauxPlace": 0
-      },
-      "intermediaire": {
-        "label": "1900-2399m",
-        "courses": 1,
-        "victoires": 0,
-        "places": 0,
-        "top5": 0,
-        "tauxVictoire": 0,
-        "tauxPlace": 0,
-        "tauxTop5": 0,
-        "type_course": {
-          "ATTELE": 1
-        }
-      },
-      "meilleureDistance": null
     },
     "P. NYSTROM": {
       "global": {
@@ -105138,36 +105162,12 @@
       },
       "meilleureDistance": null
     },
-    "MME A. LARSSON": {
-      "global": {
-        "courses": 1,
-        "victoires": 1,
-        "places": 1,
-        "top5": 1,
-        "tauxVictoire": 100,
-        "tauxPlace": 100
-      },
-      "mile": {
-        "label": "1400-1899m",
-        "courses": 1,
-        "victoires": 1,
-        "places": 1,
-        "top5": 1,
-        "tauxVictoire": 100,
-        "tauxPlace": 100,
-        "tauxTop5": 100,
-        "type_course": {
-          "MONTE": 1
-        }
-      },
-      "meilleureDistance": null
-    },
-    "MME E. TUNMAR": {
+    "J. CARRE": {
       "global": {
         "courses": 1,
         "victoires": 0,
         "places": 0,
-        "top5": 1,
+        "top5": 0,
         "tauxVictoire": 0,
         "tauxPlace": 0
       },
@@ -105176,10 +105176,10 @@
         "courses": 1,
         "victoires": 0,
         "places": 0,
-        "top5": 1,
+        "top5": 0,
         "tauxVictoire": 0,
         "tauxPlace": 0,
-        "tauxTop5": 100,
+        "tauxTop5": 0,
         "type_course": {
           "MONTE": 1
         }
@@ -105210,7 +105210,31 @@
       },
       "meilleureDistance": null
     },
-    "MME I. AHO": {
+    "MME A. LARSSON": {
+      "global": {
+        "courses": 1,
+        "victoires": 1,
+        "places": 1,
+        "top5": 1,
+        "tauxVictoire": 100,
+        "tauxPlace": 100
+      },
+      "mile": {
+        "label": "1400-1899m",
+        "courses": 1,
+        "victoires": 1,
+        "places": 1,
+        "top5": 1,
+        "tauxVictoire": 100,
+        "tauxPlace": 100,
+        "tauxTop5": 100,
+        "type_course": {
+          "MONTE": 1
+        }
+      },
+      "meilleureDistance": null
+    },
+    "MME J. ANDERSSON": {
       "global": {
         "courses": 1,
         "victoires": 0,
@@ -105258,7 +105282,7 @@
       },
       "meilleureDistance": null
     },
-    "J. CARRE": {
+    "MME I. AHO": {
       "global": {
         "courses": 1,
         "victoires": 0,
@@ -105282,12 +105306,12 @@
       },
       "meilleureDistance": null
     },
-    "MME J. ANDERSSON": {
+    "MME E. TUNMAR": {
       "global": {
         "courses": 1,
         "victoires": 0,
         "places": 0,
-        "top5": 0,
+        "top5": 1,
         "tauxVictoire": 0,
         "tauxPlace": 0
       },
@@ -105296,94 +105320,22 @@
         "courses": 1,
         "victoires": 0,
         "places": 0,
-        "top5": 0,
+        "top5": 1,
         "tauxVictoire": 0,
         "tauxPlace": 0,
-        "tauxTop5": 0,
+        "tauxTop5": 100,
         "type_course": {
           "MONTE": 1
         }
       },
       "meilleureDistance": null
     },
-    "MME J. LIND": {
-      "global": {
-        "courses": 1,
-        "victoires": 1,
-        "places": 1,
-        "top5": 1,
-        "tauxVictoire": 100,
-        "tauxPlace": 100
-      },
-      "intermediaire": {
-        "label": "1900-2399m",
-        "courses": 1,
-        "victoires": 1,
-        "places": 1,
-        "top5": 1,
-        "tauxVictoire": 100,
-        "tauxPlace": 100,
-        "tauxTop5": 100,
-        "type_course": {
-          "ATTELE": 1
-        }
-      },
-      "meilleureDistance": null
-    },
-    "T. JOHANSSON": {
-      "global": {
-        "courses": 1,
-        "victoires": 0,
-        "places": 1,
-        "top5": 1,
-        "tauxVictoire": 0,
-        "tauxPlace": 100
-      },
-      "intermediaire": {
-        "label": "1900-2399m",
-        "courses": 1,
-        "victoires": 0,
-        "places": 1,
-        "top5": 1,
-        "tauxVictoire": 0,
-        "tauxPlace": 100,
-        "tauxTop5": 100,
-        "type_course": {
-          "ATTELE": 1
-        }
-      },
-      "meilleureDistance": null
-    },
-    "M.H. BJORKLUND": {
-      "global": {
-        "courses": 1,
-        "victoires": 0,
-        "places": 1,
-        "top5": 1,
-        "tauxVictoire": 0,
-        "tauxPlace": 100
-      },
-      "intermediaire": {
-        "label": "1900-2399m",
-        "courses": 1,
-        "victoires": 0,
-        "places": 1,
-        "top5": 1,
-        "tauxVictoire": 0,
-        "tauxPlace": 100,
-        "tauxTop5": 100,
-        "type_course": {
-          "ATTELE": 1
-        }
-      },
-      "meilleureDistance": null
-    },
-    "L.H. VIKSTROM": {
+    "L. WICKMAN": {
       "global": {
         "courses": 1,
         "victoires": 0,
         "places": 0,
-        "top5": 1,
+        "top5": 0,
         "tauxVictoire": 0,
         "tauxPlace": 0
       },
@@ -105392,10 +105344,10 @@
         "courses": 1,
         "victoires": 0,
         "places": 0,
-        "top5": 1,
+        "top5": 0,
         "tauxVictoire": 0,
         "tauxPlace": 0,
-        "tauxTop5": 100,
+        "tauxTop5": 0,
         "type_course": {
           "ATTELE": 1
         }
@@ -105426,7 +105378,79 @@
       },
       "meilleureDistance": null
     },
-    "L. WICKMAN": {
+    "MME J. LIND": {
+      "global": {
+        "courses": 1,
+        "victoires": 1,
+        "places": 1,
+        "top5": 1,
+        "tauxVictoire": 100,
+        "tauxPlace": 100
+      },
+      "intermediaire": {
+        "label": "1900-2399m",
+        "courses": 1,
+        "victoires": 1,
+        "places": 1,
+        "top5": 1,
+        "tauxVictoire": 100,
+        "tauxPlace": 100,
+        "tauxTop5": 100,
+        "type_course": {
+          "ATTELE": 1
+        }
+      },
+      "meilleureDistance": null
+    },
+    "V. REMNEBY": {
+      "global": {
+        "courses": 1,
+        "victoires": 0,
+        "places": 0,
+        "top5": 0,
+        "tauxVictoire": 0,
+        "tauxPlace": 0
+      },
+      "intermediaire": {
+        "label": "1900-2399m",
+        "courses": 1,
+        "victoires": 0,
+        "places": 0,
+        "top5": 0,
+        "tauxVictoire": 0,
+        "tauxPlace": 0,
+        "tauxTop5": 0,
+        "type_course": {
+          "ATTELE": 1
+        }
+      },
+      "meilleureDistance": null
+    },
+    "M.H. BJORKLUND": {
+      "global": {
+        "courses": 1,
+        "victoires": 0,
+        "places": 1,
+        "top5": 1,
+        "tauxVictoire": 0,
+        "tauxPlace": 100
+      },
+      "intermediaire": {
+        "label": "1900-2399m",
+        "courses": 1,
+        "victoires": 0,
+        "places": 1,
+        "top5": 1,
+        "tauxVictoire": 0,
+        "tauxPlace": 100,
+        "tauxTop5": 100,
+        "type_course": {
+          "ATTELE": 1
+        }
+      },
+      "meilleureDistance": null
+    },
+    "N. SELIN": {
       "global": {
         "courses": 1,
         "victoires": 0,
@@ -105474,36 +105498,36 @@
       },
       "meilleureDistance": null
     },
-    "V. REMNEBY": {
+    "T. JOHANSSON": {
       "global": {
         "courses": 1,
         "victoires": 0,
-        "places": 0,
-        "top5": 0,
+        "places": 1,
+        "top5": 1,
         "tauxVictoire": 0,
-        "tauxPlace": 0
+        "tauxPlace": 100
       },
       "intermediaire": {
         "label": "1900-2399m",
         "courses": 1,
         "victoires": 0,
-        "places": 0,
-        "top5": 0,
+        "places": 1,
+        "top5": 1,
         "tauxVictoire": 0,
-        "tauxPlace": 0,
-        "tauxTop5": 0,
+        "tauxPlace": 100,
+        "tauxTop5": 100,
         "type_course": {
           "ATTELE": 1
         }
       },
       "meilleureDistance": null
     },
-    "N. SELIN": {
+    "L.H. VIKSTROM": {
       "global": {
         "courses": 1,
         "victoires": 0,
         "places": 0,
-        "top5": 0,
+        "top5": 1,
         "tauxVictoire": 0,
         "tauxPlace": 0
       },
@@ -105512,10 +105536,10 @@
         "courses": 1,
         "victoires": 0,
         "places": 0,
-        "top5": 0,
+        "top5": 1,
         "tauxVictoire": 0,
         "tauxPlace": 0,
-        "tauxTop5": 0,
+        "tauxTop5": 100,
         "type_course": {
           "ATTELE": 1
         }
