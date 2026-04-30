@@ -1188,7 +1188,7 @@
             await new Promise(r => setTimeout(r, 0));
 
             function evalLevier(courses, name) {
-                let n1=0, f1=0, n2=0, n3=0;
+                let n1=0, f1=0, f2=0, f3=0, n2=0, n3=0;
                 let coteSum=0, wins=0;
                 courses.forEach(c => {
                     const sorted = [...c.parts].sort((a,b) => {
@@ -1198,16 +1198,18 @@
                     });
                     if (sorted[0]?.arrivee===1) { n1++; if (sorted[0].cote>1) { coteSum+=sorted[0].cote; wins++; } }
                     if (c.parCote[0]?.arrivee===1) f1++;
+                    if (c.parCote.slice(0,2).some(p=>p.arrivee===1)) f2++;
+                    if (c.parCote.slice(0,3).some(p=>p.arrivee===1)) f3++;
                     if (sorted.slice(0,2).some(p=>p.arrivee===1)) n2++;
                     if (sorted.slice(0,3).some(p=>p.arrivee===1)) n3++;
                 });
                 const t = courses.length;
-                return { n1, f1, n2, n3, t, pN1:t?n1/t*100:0, pF1:t?f1/t*100:0, pN2:t?n2/t*100:0, pN3:t?n3/t*100:0, avgCote:wins>0?coteSum/wins:0 };
+                return { n1, f1, f2, f3, n2, n3, t, pN1:t?n1/t*100:0, pF1:t?f1/t*100:0, pF2:t?f2/t*100:0, pF3:t?f3/t*100:0, pN2:t?n2/t*100:0, pN3:t?n3/t*100:0, avgCote:wins>0?coteSum/wins:0 };
             }
 
             // Évaluer une combinaison de leviers avec poids
             function evalCombo(courses, names, weights) {
-                let n1=0, f1=0, n2=0, n3=0;
+                let n1=0, f1=0, f2=0, f3=0, n2=0, n3=0;
                 let coteSum=0, wins=0;
                 courses.forEach(c => {
                     const sorted = [...c.parts].sort((a,b) => {
@@ -1219,11 +1221,13 @@
                     });
                     if (sorted[0]?.arrivee===1) { n1++; if (sorted[0].cote>1) { coteSum+=sorted[0].cote; wins++; } }
                     if (c.parCote[0]?.arrivee===1) f1++;
+                    if (c.parCote.slice(0,2).some(p=>p.arrivee===1)) f2++;
+                    if (c.parCote.slice(0,3).some(p=>p.arrivee===1)) f3++;
                     if (sorted.slice(0,2).some(p=>p.arrivee===1)) n2++;
                     if (sorted.slice(0,3).some(p=>p.arrivee===1)) n3++;
                 });
                 const t = courses.length;
-                return { n1, f1, n2, n3, t, pN1:t?n1/t*100:0, pF1:t?f1/t*100:0, pN2:t?n2/t*100:0, pN3:t?n3/t*100:0, avgCote:wins>0?coteSum/wins:0 };
+                return { n1, f1, f2, f3, n2, n3, t, pN1:t?n1/t*100:0, pF1:t?f1/t*100:0, pF2:t?f2/t*100:0, pF3:t?f3/t*100:0, pN2:t?n2/t*100:0, pN3:t?n3/t*100:0, avgCote:wins>0?coteSum/wins:0 };
             }
 
             // Catégories fines par distance
@@ -1275,8 +1279,8 @@
                 const courses = categories[cat];
                 if (!courses || courses.length < 3) return;
 
-                // Phase 1 : leviers solo
-                const results = levierNames.map(name => ({ name, ...evalLevier(courses, name) })).sort((a,b) => b.pN1 - a.pN1);
+                // Phase 1 : leviers solo — tri par Top3 (métrique principale = Dutch sur top 3-4)
+                const results = levierNames.map(name => ({ name, ...evalLevier(courses, name) })).sort((a,b) => b.pN3 - a.pN3);
                 const favP = results[0].pF1;
                 const maxP1 = Math.max(...results.map(r => r.pN1), favP);
 
@@ -1333,26 +1337,29 @@
                         }
                 }
 
-                comboResults.sort((a, b) => b.pN1 !== a.pN1 ? b.pN1 - a.pN1 : b.pN2 !== a.pN2 ? b.pN2 - a.pN2 : b.pN3 - a.pN3);
+                // Tri des combos : Top3 > Top2 > Top1 (le user joue en Dutch sur top 3-4)
+                comboResults.sort((a, b) => b.pN3 !== a.pN3 ? b.pN3 - a.pN3 : b.pN2 !== a.pN2 ? b.pN2 - a.pN2 : b.pN1 - a.pN1);
 
                 // CHAMPION : meilleure formule toutes tailles confondues (solo + combos)
-                // Tie-break : Top1 > Top2 > Top3 > simplicité (moins de leviers)
+                // Tie-break : Top3 > Top2 > Top1 > simplicité — métrique alignée avec stratégie Dutch
                 const soloForChamp = results.map(r => ({ kind: 'solo', n: 1, label: r.name, pN1: r.pN1, pN2: r.pN2, pN3: r.pN3, n1: r.n1, n2: r.n2, n3: r.n3, t: r.t, avgCote: r.avgCote }));
                 const allFormulas = [...soloForChamp, ...comboResults.map(r => ({ kind: 'combo', ...r }))];
                 allFormulas.sort((a, b) => {
-                    if (b.pN1 !== a.pN1) return b.pN1 - a.pN1;
-                    if (b.pN2 !== a.pN2) return b.pN2 - a.pN2;
                     if (b.pN3 !== a.pN3) return b.pN3 - a.pN3;
+                    if (b.pN2 !== a.pN2) return b.pN2 - a.pN2;
+                    if (b.pN1 !== a.pN1) return b.pN1 - a.pN1;
                     return (a.n || 1) - (b.n || 1);
                 });
                 const champion = allFormulas[0];
-                const champDiff = champion.pN1 - favP;
+                // Métrique principale = Top3 (le user joue en Dutch sur top 3-4)
+                const favP3 = results[0]?.pF3 || 0;
+                const champDiff = champion.pN3 - favP3;
                 const champTies = allFormulas.filter(f => f.pN1 === champion.pN1 && f.pN2 === champion.pN2 && f.pN3 === champion.pN3).length;
                 championsByBucket[cat] = champion;
 
                 html += `<div class="levier-content" id="levier-${cat}" style="display:${firstTab ? '' : 'none'}">`;
 
-                // Banner CHAMPION
+                // Banner CHAMPION — Top3 en métrique principale (stratégie Dutch sur top 3-4)
                 const champSizeLabel = champion.n === 1 ? '1 levier (solo)' : `${champion.n} leviers`;
                 html += `<div style="margin:0.8rem 0 1.2rem;padding:14px 18px;background:linear-gradient(135deg,rgba(233,209,140,0.08),rgba(64,224,208,0.06));border:1px solid rgba(233,209,140,0.35);border-radius:8px">
                     <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
@@ -1363,13 +1370,13 @@
                             ${champTies > 1 ? `<div style="font-size:0.7rem;opacity:0.5;margin-top:2px">⚠️ ${champTies} formules ex-æquo — affichée : la plus simple</div>` : ''}
                         </div>
                         <div style="text-align:right">
-                            <div style="font-size:1.8rem;font-weight:700;color:${champDiff > 0 ? '#40e05a' : champDiff < 0 ? '#e05a40' : 'var(--gold)'}">${champion.pN1.toFixed(0)}%</div>
-                            <div style="font-size:0.75rem;opacity:0.7">Top1 <span style="opacity:0.5">(${champion.n1}/${champion.t})</span></div>
+                            <div style="font-size:1.8rem;font-weight:700;color:${champDiff > 0 ? '#40e05a' : champDiff < 0 ? '#e05a40' : 'var(--gold)'}">${champion.pN3.toFixed(0)}%</div>
+                            <div style="font-size:0.75rem;opacity:0.7">Top3 <span style="opacity:0.5">(${champion.n3}/${champion.t})</span></div>
                             <div style="font-size:0.75rem;margin-top:2px"><span style="opacity:0.6">vs favori</span> <strong style="color:${champDiff > 0 ? '#40e05a' : champDiff < 0 ? '#e05a40' : 'var(--gold)'}">${champDiff > 0 ? '+' : ''}${champDiff.toFixed(0)}pp</strong></div>
                         </div>
                         <div style="display:flex;gap:14px;font-size:0.78rem;padding-left:12px;border-left:1px solid rgba(255,255,255,0.1)">
+                            <div><span style="opacity:0.6">Top1</span><br><strong>${champion.pN1.toFixed(0)}%</strong></div>
                             <div><span style="opacity:0.6">Top2</span><br><strong>${champion.pN2.toFixed(0)}%</strong></div>
-                            <div><span style="opacity:0.6">Top3</span><br><strong>${champion.pN3.toFixed(0)}%</strong></div>
                             <div><span style="opacity:0.6">avg Cote</span><br><strong>${champion.avgCote > 0 ? champion.avgCote.toFixed(1) : '-'}</strong></div>
                         </div>
                     </div>

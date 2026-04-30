@@ -484,7 +484,8 @@ function computeBestFormulasFromHistory() {
     const allFormulas = levierNames.map(name => ({ leviers: [name], poids: [1], n: 1, ...evalFormula([name], [1]) }));
 
     // Top 8 solos pour alimenter les combos (par Top1)
-    const top8 = [...allFormulas].sort((a, b) => b.pN1 - a.pN1).slice(0, 8).map(r => r.leviers[0]);
+    // Top 8 solos sélectionnés par Top3 (métrique principale = stratégie Dutch)
+    const top8 = [...allFormulas].sort((a, b) => b.pN3 - a.pN3).slice(0, 8).map(r => r.leviers[0]);
 
     // 2L → 6L
     for (let sz = 2; sz <= Math.min(6, top8.length); sz++) {
@@ -495,11 +496,13 @@ function computeBestFormulasFromHistory() {
           allFormulas.push({ leviers: levs, poids: w, n: sz, ...evalFormula(levs, w) });
     }
 
-    // Champion : Top1 > Top2 > Top3 > simplicité (n ASC)
+    // Champion : Top3 > Top2 > Top1 > simplicité (n ASC)
+    // Le user joue en Dutch sur top 3-4 → ce qui compte c'est avoir le gagnant
+    // dans ses 3 premiers, pas forcément en #1 absolu.
     allFormulas.sort((a, b) => {
-      if (b.pN1 !== a.pN1) return b.pN1 - a.pN1;
-      if (b.pN2 !== a.pN2) return b.pN2 - a.pN2;
       if (b.pN3 !== a.pN3) return b.pN3 - a.pN3;
+      if (b.pN2 !== a.pN2) return b.pN2 - a.pN2;
+      if (b.pN1 !== a.pN1) return b.pN1 - a.pN1;
       return a.n - b.n;
     });
     const champ = allFormulas[0];
@@ -515,7 +518,7 @@ function computeBestFormulasFromHistory() {
       coursesUtilisables: champ.t,
       degen: champ.degen,
     };
-    _log(`  ${bucket}: ${champ.leviers.map((l,i) => l.split(' ')[0]+'×'+Math.round(champ.poids[i]*100)+'%').join(' + ')} → ${champ.pN1.toFixed(1)}% (${champ.n1}/${champ.t}, ${champ.degen} degen)`);
+    _log(`  ${bucket}: ${champ.leviers.map((l,i) => l.split(' ')[0]+'×'+Math.round(champ.poids[i]*100)+'%').join(' + ')} → Top3=${champ.pN3.toFixed(1)}% (${champ.n3}/${champ.t}) | Top1=${champ.pN1.toFixed(1)}%`);
   });
 
   return result;
