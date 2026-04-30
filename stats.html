@@ -1129,17 +1129,6 @@
             'Cravache Rang': bR(cr25,pop.cr25,cr26,pop.cr26),
             'Forme récente': forme?forme.formeScore:50,
             'Combo Jk*Ent': combo&&combo.courses>=3?combo.tauxVictoire:10,
-            // Combos croisés
-            'Dérive × JkRang': deriveScore * 0.5 + jkRang * 0.5,
-            'Dérive × ChTauxV': deriveScore * 0.5 + chTauxV * 0.5,
-            'Dérive × Cote': deriveScore * 0.5 + scoreCote * 0.5,
-            'Cote × JkRang': scoreCote * 0.5 + jkRang * 0.5,
-            'Cote × ChTauxV': scoreCote * 0.5 + chTauxV * 0.5,
-            'Cote × Valeur': scoreCote * 0.5 + scoreValeur * 0.5,
-            'JkRang × ChTauxV': jkRang * 0.5 + chTauxV * 0.5,
-            'JkRang × Musique': jkRang * 0.5 + scoreMus * 0.5,
-            'Valeur × Musique': scoreValeur * 0.5 + scoreMus * 0.5,
-            'ChTauxV × Musique': chTauxV * 0.5 + scoreMus * 0.5,
         };
     }
 
@@ -1298,7 +1287,12 @@
                 const currentR = evalCombo(courses, currentFormula.leviers, currentFormula.poids);
 
                 // Phase 2 : combinaisons de toutes tailles (2L → 6L)
-                const top8 = results.slice(0, 8).map(r => r.name);
+                // Pool élargi : top12 solo + noyau forcé (signaux fondamentaux)
+                // garantit que des leviers comme 'Cote ref' (solo médiocre mais signal marché crucial)
+                // soient testés en combo, même s'ils ne percent pas dans le top solo.
+                const CORE_LEVIERS = ['Cote (1/cote)', 'Cote ref', 'Valeur FG', 'Jk Rang', 'Ch Rang', 'Musique'];
+                const top12 = results.slice(0, 12).map(r => r.name);
+                const pool = [...new Set([...top12, ...CORE_LEVIERS])];
                 const comboResults = [];
                 // Labels courts UNIQUES (pas de collision entre "Cote (1/cote)", "Cote × Valeur", "Cote ref"…)
                 const SHORT_LABELS = {
@@ -1310,14 +1304,10 @@
                     'Jk TauxV':'JkTV', 'Jk TauxP':'JkTP', 'Jk Rang':'JkRg',
                     'Jk ScoreMixte':'JkSM', 'Jk GainMoy':'JkGM',
                     'Cravache Rang':'Crv', 'Forme récente':'Forme', 'Combo Jk*Ent':'Combo',
-                    'Dérive × JkRang':'Dér×Jk', 'Dérive × ChTauxV':'Dér×ChV', 'Dérive × Cote':'Dér×Cot',
-                    'Cote × JkRang':'Cot×Jk', 'Cote × ChTauxV':'Cot×ChV', 'Cote × Valeur':'Cot×Val',
-                    'JkRang × ChTauxV':'Jk×ChV', 'JkRang × Musique':'Jk×Mus',
-                    'Valeur × Musique':'Val×Mus', 'ChTauxV × Musique':'ChV×Mus',
                 };
                 const sh = n => SHORT_LABELS[n] || n;
 
-                // Générer les combinaisons de N leviers parmi top8
+                // Générer les combinaisons de N leviers parmi le pool
                 function combosOfSize(items, size) {
                     if (size === 1) return items.map(x => [x]);
                     const res = [];
@@ -1327,19 +1317,28 @@
                     return res;
                 }
 
-                // Poids à tester par taille
-                function weightSets(n) {
-                    if (n === 2) return [[0.2,0.8],[0.4,0.6],[0.5,0.5],[0.6,0.4],[0.8,0.2]];
-                    if (n === 3) return [[0.5,0.3,0.2],[0.4,0.4,0.2],[0.4,0.3,0.3],[0.6,0.2,0.2],[0.33,0.33,0.34]];
-                    if (n === 4) return [[0.4,0.3,0.2,0.1],[0.3,0.3,0.2,0.2],[0.25,0.25,0.25,0.25],[0.4,0.2,0.2,0.2],[0.5,0.2,0.2,0.1]];
-                    if (n === 5) return [[0.3,0.25,0.2,0.15,0.1],[0.2,0.2,0.2,0.2,0.2],[0.35,0.25,0.2,0.1,0.1],[0.4,0.2,0.15,0.15,0.1]];
-                    if (n === 6) return [[0.25,0.2,0.15,0.15,0.15,0.1],[0.17,0.17,0.17,0.17,0.16,0.16],[0.3,0.2,0.15,0.15,0.1,0.1]];
-                    return [];
+                // Grille de poids exhaustive — toutes compositions sommant à 1, pas 0.1
+                // 2L=9 jeux, 3L=36, 4L=84, 5L=126, 6L=126. Coût géré par limitation du pool de leviers ci-dessous.
+                function weightSetsAuto(n, step = 0.1) {
+                    const total = Math.round(1/step), out = [];
+                    function rec(rem, d, cur) {
+                        if (d === n - 1) { if (rem >= 1) out.push([...cur, rem*step]); return; }
+                        for (let v = 1; v <= rem - (n-1-d); v++) {
+                            cur.push(v*step); rec(rem-v, d+1, cur); cur.pop();
+                        }
+                    }
+                    rec(total, 0, []);
+                    return out;
                 }
+                function weightSets(n) { return weightSetsAuto(n, 0.1); }
 
-                // Tester 2L → 6L
-                for (let sz = 2; sz <= Math.min(6, top8.length); sz++) {
-                    const levSets = combosOfSize(top8.slice(0, Math.min(sz + 2, 8)), sz);
+                // Tester 2L → 6L. Pool décroissant pour borner le coût combinatoire.
+                // 2L: pool 12 (66 combos × 9 poids = 594) ; 3L: pool 10 (120 × 36 = 4320)
+                // 4L: pool 8 (70 × 84 = 5880) ; 5L: pool 7 (21 × 126 = 2646) ; 6L: pool 7 (7 × 126 = 882)
+                const poolSizeBy = { 2: 12, 3: 10, 4: 8, 5: 7, 6: 7 };
+                for (let sz = 2; sz <= Math.min(6, pool.length); sz++) {
+                    const psz = Math.min(poolSizeBy[sz] || 8, pool.length);
+                    const levSets = combosOfSize(pool.slice(0, psz), sz);
                     const ws = weightSets(sz);
                     for (const levs of levSets)
                         for (const w of ws) {

@@ -282,7 +282,7 @@ function extractNomCheval(chevalStr) {
 }
 
 // Version des formules — bump quand le calcul change (fuzzyMatch, tie-break, exploration élargie…)
-const BEST_FORMULAS_VERSION = 2;
+const BEST_FORMULAS_VERSION = 3;
 
 // Charger ou calculer les formules optimales automatiquement
 let bestFormulas = null;
@@ -327,17 +327,13 @@ function computeBestFormulasFromHistory() {
   const buckets = { sprint: [], mile: [], middle: [], staying: [], premium: [] };
   FINE_RANGES.forEach(([k]) => { buckets[k] = []; });
   // Liste exhaustive alignée avec stats.html — tous les leviers sont explorés
-  // 22 leviers de base + 10 croisés (pré-calculés, 50/50) identiques à stats.html
+  // 22 leviers de base — les combos 2L à grille fine redécouvrent les croisés
+  // avec les vrais poids optimaux (au lieu d'un 50/50 figé)
   const levierNames = ['Cote (1/cote)', 'Cote ref', 'Dérive cote', 'Valeur FG', 'Musique',
     'Gains (log)', 'TauxV indiv', 'TauxP indiv', 'NbVictoires',
     'Ch TauxV', 'Ch TauxP', 'Ch Rang', 'Ch GainMoy', 'Ch ScoreMixte',
     'Jk TauxV', 'Jk TauxP', 'Jk Rang', 'Jk ScoreMixte', 'Jk GainMoy',
-    'Cravache Rang', 'Forme récente', 'Combo Jk*Ent',
-    // Croisés 50/50 — peuvent entrer dans le top8 des solos et alimenter les combos
-    'Dérive × JkRang', 'Dérive × ChTauxV', 'Dérive × Cote',
-    'Cote × JkRang', 'Cote × ChTauxV', 'Cote × Valeur',
-    'JkRang × ChTauxV', 'JkRang × Musique',
-    'Valeur × Musique', 'ChTauxV × Musique'];
+    'Cravache Rang', 'Forme récente', 'Combo Jk*Ent'];
 
   // Charger les snapshots datés pour anti-leakage
   const snapshotsDir = path.join(__dirname, 'data', 'rankings');
@@ -444,14 +440,20 @@ function computeBestFormulasFromHistory() {
         res.push([items[i], ...tail]);
     return res;
   }
-  function weightSets(n) {
-    if (n === 2) return [[0.2,0.8],[0.4,0.6],[0.5,0.5],[0.6,0.4],[0.8,0.2]];
-    if (n === 3) return [[0.5,0.3,0.2],[0.4,0.4,0.2],[0.4,0.3,0.3],[0.6,0.2,0.2],[0.33,0.33,0.34]];
-    if (n === 4) return [[0.4,0.3,0.2,0.1],[0.3,0.3,0.2,0.2],[0.25,0.25,0.25,0.25],[0.4,0.2,0.2,0.2],[0.5,0.2,0.2,0.1]];
-    if (n === 5) return [[0.3,0.25,0.2,0.15,0.1],[0.2,0.2,0.2,0.2,0.2],[0.35,0.25,0.2,0.1,0.1],[0.4,0.2,0.15,0.15,0.1]];
-    if (n === 6) return [[0.25,0.2,0.15,0.15,0.15,0.1],[0.17,0.17,0.17,0.17,0.16,0.16],[0.3,0.2,0.15,0.15,0.1,0.1]];
-    return [];
+  // Grille de poids exhaustive : toutes compositions sommant à 1, pas 0.1
+  // 2L=9 jeux, 3L=36, 4L=84, 5L=126, 6L=126
+  function weightSetsAuto(n, step = 0.1) {
+    const total = Math.round(1/step), out = [];
+    function rec(rem, d, cur) {
+      if (d === n - 1) { if (rem >= 1) out.push([...cur, rem*step]); return; }
+      for (let v = 1; v <= rem - (n-1-d); v++) {
+        cur.push(v*step); rec(rem-v, d+1, cur); cur.pop();
+      }
+    }
+    rec(total, 0, []);
+    return out;
   }
+  function weightSets(n) { return weightSetsAuto(n, 0.1); }
 
   // Pour chaque bucket, exploration unifiée solo + combos 2L→6L avec tie-break cote
   const result = {};
@@ -483,13 +485,16 @@ function computeBestFormulasFromHistory() {
     // 1L — tous leviers solo
     const allFormulas = levierNames.map(name => ({ leviers: [name], poids: [1], n: 1, ...evalFormula([name], [1]) }));
 
-    // Top 8 solos pour alimenter les combos (par Top1)
-    // Top 8 solos sélectionnés par Top3 (métrique principale = stratégie Dutch)
-    const top8 = [...allFormulas].sort((a, b) => b.pN3 - a.pN3).slice(0, 8).map(r => r.leviers[0]);
+    // Pool élargi : top12 solo (par Top3) + noyau forcé (signaux fondamentaux toujours testés)
+    const CORE_LEVIERS = ['Cote (1/cote)', 'Cote ref', 'Valeur FG', 'Jk Rang', 'Ch Rang', 'Musique'];
+    const top12 = [...allFormulas].sort((a, b) => b.pN3 - a.pN3).slice(0, 12).map(r => r.leviers[0]);
+    const pool = [...new Set([...top12, ...CORE_LEVIERS])];
 
-    // 2L → 6L
-    for (let sz = 2; sz <= Math.min(6, top8.length); sz++) {
-      const levSets = combosOfSize(top8.slice(0, Math.min(sz + 2, 8)), sz);
+    // 2L → 6L. Pool décroissant pour borner le coût (cf stats.html).
+    const poolSizeBy = { 2: 12, 3: 10, 4: 8, 5: 7, 6: 7 };
+    for (let sz = 2; sz <= Math.min(6, pool.length); sz++) {
+      const psz = Math.min(poolSizeBy[sz] || 8, pool.length);
+      const levSets = combosOfSize(pool.slice(0, psz), sz);
       const ws = weightSets(sz);
       for (const levs of levSets)
         for (const w of ws)
@@ -581,24 +586,7 @@ function getLevierValue(levierName, participant, ld) {
     'Dérive cote': coteVal>1&&coteRef>1 ? 50+(coteRef-coteVal)/coteRef*200 : 50,
   };
 
-  // Calculs dérivés : leviers croisés (50/50) identiques à stats.html
-  const _scoreCote = map['Cote (1/cote)'];
-  const _deriveScore = map['Dérive cote'];
-  const _scoreValeur = map['Valeur FG'];
-  const _scoreMus = map['Musique'];
-  const _chTauxV = map['Ch TauxV'];
-  const _jkRang = map['Jk Rang'];
-  map['Dérive × JkRang']   = _deriveScore * 0.5 + _jkRang * 0.5;
-  map['Dérive × ChTauxV']  = _deriveScore * 0.5 + _chTauxV * 0.5;
-  map['Dérive × Cote']     = _deriveScore * 0.5 + _scoreCote * 0.5;
-  map['Cote × JkRang']     = _scoreCote * 0.5 + _jkRang * 0.5;
-  map['Cote × ChTauxV']    = _scoreCote * 0.5 + _chTauxV * 0.5;
-  map['Cote × Valeur']     = _scoreCote * 0.5 + _scoreValeur * 0.5;
-  map['JkRang × ChTauxV']  = _jkRang * 0.5 + _chTauxV * 0.5;
-  map['JkRang × Musique']  = _jkRang * 0.5 + _scoreMus * 0.5;
-  map['Valeur × Musique']  = _scoreValeur * 0.5 + _scoreMus * 0.5;
-  map['ChTauxV × Musique'] = _chTauxV * 0.5 + _scoreMus * 0.5;
-  // Aussi gérer les combos pré-calculés
+  // Lookup robuste avec préfixe court (compat anciens noms)
   const shortMap = {};
   Object.entries(map).forEach(([k,v]) => { shortMap[k] = v; shortMap[k.split(' ')[0]] = v; });
   return map[levierName] ?? shortMap[levierName] ?? 50;
