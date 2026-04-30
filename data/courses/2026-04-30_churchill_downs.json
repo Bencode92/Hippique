@@ -1,7 +1,7 @@
 {
   "hippodrome": "CHURCHILL DOWNS",
   "type_reunion": "Plat",
-  "date_extraction": "2026-04-30T15:28:26.649505",
+  "date_extraction": "2026-04-30T15:50:27.331480",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/30042026/R7",
   "courses": [
     {
@@ -253,6 +253,8 @@
           "nb_places": 0
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -544,6 +546,8 @@
           "nb_places": 0
         }
       ],
+      "terrain": "Bon",
+      "penetrometre": "3,0",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -706,6 +710,8 @@
           "cote_reference": 1.4
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -754,7 +760,9 @@
           "equipement(s)": "",
           "nb_courses": 39,
           "nb_victoires": 8,
-          "nb_places": 19
+          "nb_places": 19,
+          "cote": 2.8,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -775,8 +783,8 @@
           "nb_courses": 16,
           "nb_victoires": 6,
           "nb_places": 3,
-          "cote": 3.9,
-          "cote_tendance": ""
+          "cote": 5.7,
+          "cote_tendance": "+"
         },
         {
           "n°": "5",
@@ -817,8 +825,8 @@
           "nb_courses": 13,
           "nb_victoires": 4,
           "nb_places": 7,
-          "cote": 3.9,
-          "cote_tendance": "",
+          "cote": 5.7,
+          "cote_tendance": "+",
           "cote_reference": 2.2
         },
         {
@@ -860,8 +868,8 @@
           "nb_courses": 25,
           "nb_victoires": 7,
           "nb_places": 14,
-          "cote": 2.6,
-          "cote_tendance": "",
+          "cote": 3.8,
+          "cote_tendance": "+",
           "cote_reference": 1.4
         },
         {
@@ -883,10 +891,12 @@
           "nb_courses": 8,
           "nb_victoires": 4,
           "nb_places": 3,
-          "cote": 3.9,
-          "cote_tendance": ""
+          "cote": 5.7,
+          "cote_tendance": "+"
         }
       ],
+      "terrain": "Bon",
+      "penetrometre": "3,0",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1091,6 +1101,8 @@
           "nb_places": 7
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1302,6 +1314,8 @@
           "cote_reference": 6.6
         }
       ],
+      "terrain": "Bon",
+      "penetrometre": "3,0",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1519,6 +1533,8 @@
           "nb_places": 6
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     }
   ]
