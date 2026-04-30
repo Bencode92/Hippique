@@ -1292,7 +1292,7 @@
                 const currentFormula = {
                     sprint: { leviers: ['Musique','Cote (1/cote)','Valeur FG'], poids: [0.4,0.4,0.2], label: 'Actuelle: Mus×40% + Cote×40% + Val×20%' },
                     mile: { leviers: ['Valeur FG','Cote (1/cote)','Musique'], poids: [0.5,0.3,0.2], label: 'Actuelle: Val×50% + Cote×30% + Mus×20%' },
-                    middle: { leviers: ['Cote (1/cote)','Valeur FG','TauxV indiv'], poids: [0.5,0.3,0.2], label: 'Actuelle: Cote×50% + Val×30% + IndivV×20%' },
+                    middle: { leviers: ['Cote (1/cote)','Valeur FG','TauxV indiv'], poids: [0.5,0.3,0.2], label: 'Actuelle: Cote×50% + Val×30% + TxVind×20%' },
                     staying: { leviers: ['Cote (1/cote)','Valeur FG','Musique'], poids: [0.4,0.3,0.3], label: 'Actuelle: Cote×40% + Val×30% + Mus×30%' },
                 }[distBucket];
                 const currentR = evalCombo(courses, currentFormula.leviers, currentFormula.poids);
@@ -1300,7 +1300,22 @@
                 // Phase 2 : combinaisons de toutes tailles (2L → 6L)
                 const top8 = results.slice(0, 8).map(r => r.name);
                 const comboResults = [];
-                const sh = n => n.length > 12 ? n.split(' ')[0] : n;
+                // Labels courts UNIQUES (pas de collision entre "Cote (1/cote)", "Cote × Valeur", "Cote ref"…)
+                const SHORT_LABELS = {
+                    'Cote (1/cote)':'Cote', 'Cote ref':'CotRef', 'Dérive cote':'Dérive',
+                    'Valeur FG':'Val', 'Musique':'Mus', 'Gains (log)':'Gain',
+                    'TauxV indiv':'TxVind', 'TauxP indiv':'TxPind', 'NbVictoires':'NbV',
+                    'Ch TauxV':'ChTV', 'Ch TauxP':'ChTP', 'Ch Rang':'ChRg',
+                    'Ch GainMoy':'ChGM', 'Ch ScoreMixte':'ChSM',
+                    'Jk TauxV':'JkTV', 'Jk TauxP':'JkTP', 'Jk Rang':'JkRg',
+                    'Jk ScoreMixte':'JkSM', 'Jk GainMoy':'JkGM',
+                    'Cravache Rang':'Crv', 'Forme récente':'Forme', 'Combo Jk*Ent':'Combo',
+                    'Dérive × JkRang':'Dér×Jk', 'Dérive × ChTauxV':'Dér×ChV', 'Dérive × Cote':'Dér×Cot',
+                    'Cote × JkRang':'Cot×Jk', 'Cote × ChTauxV':'Cot×ChV', 'Cote × Valeur':'Cot×Val',
+                    'JkRang × ChTauxV':'Jk×ChV', 'JkRang × Musique':'Jk×Mus',
+                    'Valeur × Musique':'Val×Mus', 'ChTauxV × Musique':'ChV×Mus',
+                };
+                const sh = n => SHORT_LABELS[n] || n;
 
                 // Générer les combinaisons de N leviers parmi top8
                 function combosOfSize(items, size) {
@@ -1509,7 +1524,7 @@
                                     <th style="text-align:left;padding:3px 6px">Rang</th>
                                     <th style="text-align:left;padding:3px 6px">Cheval</th>
                                     <th style="text-align:right;padding:3px 6px">Cote</th>
-                                    <th style="text-align:right;padding:3px 6px" title="Score brut du levier ${bestLev}">Score ${bestLev.split(' ')[0]}</th>
+                                    <th style="text-align:right;padding:3px 6px" title="Score brut du levier ${bestLev}">Score</th>
                                     <th style="text-align:right;padding:3px 6px" title="Rang France Galop du jockey (2026·2025)">Rang Jk</th>
                                     <th style="text-align:right;padding:3px 6px" title="Rang France Galop du cheval (2026·2025)">Rang Ch</th>
                                     <th style="text-align:center;padding:3px 6px">Arrivée</th>
