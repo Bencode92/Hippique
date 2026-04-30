@@ -1285,6 +1285,54 @@
 
     <!-- Module de chargement des courses -->
     <script>
+        // Liste les fichiers du dossier data/courses avec :
+        // 1) cache localStorage 30s — les Refresh rapprochés ne consomment pas l'API
+        // 2) fallback jsdelivr si l'API GitHub renvoie 403 (rate limit 60/h)
+        // Retourne un tableau d'objets { name, download_url } compatible avec processFile.
+        async function listCourseFiles() {
+            const CACHE_KEY = 'hippique_courses_listing';
+            const CACHE_TTL_MS = 30000; // 30s
+
+            // 1) cache local
+            try {
+                const cached = JSON.parse(localStorage.getItem(CACHE_KEY) || 'null');
+                if (cached && Date.now() - cached.t < CACHE_TTL_MS) {
+                    console.log('📋 Listing courses depuis cache local (TTL 30s)');
+                    return cached.files;
+                }
+            } catch {}
+
+            // 2) GitHub API
+            try {
+                const r = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/data/courses?_=${Date.now()}`);
+                if (r.ok) {
+                    const raw = await r.json();
+                    const files = raw.map(f => ({ name: f.name, download_url: f.download_url }));
+                    localStorage.setItem(CACHE_KEY, JSON.stringify({ t: Date.now(), files }));
+                    return files;
+                }
+                if (r.status !== 403) throw new Error(`API GitHub: ${r.status}`);
+                console.warn('⚠️ API GitHub rate-limitée (403) → fallback jsdelivr');
+            } catch (e) {
+                console.warn('⚠️ API GitHub indisponible → fallback jsdelivr', e);
+            }
+
+            // 3) Fallback jsdelivr (pas de rate limit, cache CDN ~12h mais on s'en sert
+            //    seulement quand l'API GitHub est down)
+            const jd = await fetch(`https://data.jsdelivr.com/v1/package/gh/bencode92/Hippique@main/flat?_=${Date.now()}`);
+            if (!jd.ok) throw new Error(`jsdelivr: ${jd.status}`);
+            const all = await jd.json();
+            const files = (all.files || [])
+                .filter(f => f.name.startsWith('/data/courses/') && f.name.endsWith('.json'))
+                .map(f => ({
+                    name: f.name.replace('/data/courses/', ''),
+                    download_url: `https://raw.githubusercontent.com/bencode92/Hippique/main${f.name}`
+                }));
+            // On cache aussi le résultat fallback
+            localStorage.setItem(CACHE_KEY, JSON.stringify({ t: Date.now(), files }));
+            return files;
+        }
+
         // Module de chargement des courses
         const coursesLoader = {
             // Récupérer la liste des courses pour une date spécifique
@@ -1300,26 +1348,10 @@
                 try {
                     // Initialiser l'objet courseData
                     const courseData = {};
-                    
-                    // Chemin correct vers les fichiers de courses (cache-buster pour voir les nouveaux fichiers immédiatement)
-                    console.log("Tentative de récupération des fichiers dans le répertoire 'data/courses'");
-                    let response = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/data/courses?_=${Date.now()}`);
-                    
-                    if (!response.ok) {
-                        console.error(`Erreur lors de la récupération des fichiers: ${response.status}`);
-                        console.error(`Essai de déboguer: récupération du contenu du répertoire 'data'`);
-                        
-                        // Essayer de lister le contenu du répertoire parent
-                        const dataResponse = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/data`);
-                        if (dataResponse.ok) {
-                            const dataContent = await dataResponse.json();
-                            console.log("Contenu du répertoire 'data':", dataContent);
-                        }
-                        
-                        throw new Error(`Impossible d'accéder au répertoire data/courses: ${response.status}`);
-                    }
-                    
-                    const files = await response.json();
+
+                    // Listing courses : cache localStorage 30s + fallback jsdelivr si l'API GitHub
+                    // est rate-limitée (60 req/h, partagés entre tous les appareils sur la même IP)
+                    const files = await listCourseFiles();
                     console.log("Fichiers trouvés dans data/courses:", files);
                     
                     // Filtrer pour trouver tous les fichiers JSON correspondant à la date
@@ -1566,6 +1598,8 @@
                     refreshBtn.disabled = true;
                     refreshBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Actualisation...';
                     try {
+                        // Invalider le cache localStorage du listing (sinon TTL 30s)
+                        localStorage.removeItem('hippique_courses_listing');
                         // Vide le cache navigateur des fetch précédents pour ce domaine
                         if ('caches' in window) {
                             const keys = await caches.keys();
