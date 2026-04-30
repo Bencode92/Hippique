@@ -1364,14 +1364,12 @@
             
             // Traiter un fichier JSON
             async processFile(file, courseData) {
-                // Bypass cache CDN raw.githubusercontent (5 min) en passant par l'API GitHub
-                // avec Accept: raw → cache API ~60s, JSON frais quasi-instantanément après push
-                const apiUrl = `${file.url}&_=${Date.now()}`;
-                console.log(`Traitement du fichier: ${file.name}, URL: ${apiUrl}`);
+                // Cache-buster sur raw.githubusercontent.com → bypass le CDN sans consommer
+                // le quota api.github.com (60 req/h). La query string sert de cache key Fastly.
+                const url = `${file.download_url}?_=${Date.now()}`;
+                console.log(`Traitement du fichier: ${file.name}, URL: ${url}`);
 
-                const fileResponse = await fetch(apiUrl, {
-                    headers: { 'Accept': 'application/vnd.github.v3.raw' }
-                });
+                const fileResponse = await fetch(url);
                 if (!fileResponse.ok) {
                     console.error(`Erreur lors du chargement du fichier ${file.name}: ${fileResponse.status}`);
                     return;

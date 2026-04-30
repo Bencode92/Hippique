@@ -481,11 +481,8 @@
     }
 
     async function loadCourseFile(file) {
-        // Bypass cache CDN raw (5 min) → API GitHub avec Accept: raw + cache-buster
-        const apiUrl = `${file.url}&_=${Date.now()}`;
-        const resp = await fetch(apiUrl, {
-            headers: { 'Accept': 'application/vnd.github.v3.raw' }
-        });
+        // raw.githubusercontent.com avec cache-buster → bypass CDN sans consommer api.github.com (60/h)
+        const resp = await fetch(`${file.download_url}?_=${Date.now()}`);
         if (!resp.ok) return null;
         return resp.json();
     }
