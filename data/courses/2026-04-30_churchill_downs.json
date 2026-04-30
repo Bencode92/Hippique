@@ -1,11 +1,7 @@
 {
   "hippodrome": "CHURCHILL DOWNS",
   "type_reunion": "Plat",
-<<<<<<< Updated upstream
-  "date_extraction": "2026-04-30T15:50:27.331480",
-=======
-  "date_extraction": "2026-04-30T15:51:35.317560",
->>>>>>> Stashed changes
+  "date_extraction": "2026-04-30T16:23:53.841484",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/30042026/R7",
   "courses": [
     {
@@ -234,7 +230,9 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 1.1,
+          "cote_tendance": ""
         },
         {
           "n°": "13",
@@ -788,7 +786,7 @@
           "nb_victoires": 6,
           "nb_places": 3,
           "cote": 5.7,
-          "cote_tendance": "+"
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -830,7 +828,7 @@
           "nb_victoires": 4,
           "nb_places": 7,
           "cote": 5.7,
-          "cote_tendance": "+",
+          "cote_tendance": "",
           "cote_reference": 2.2
         },
         {
@@ -873,7 +871,7 @@
           "nb_victoires": 7,
           "nb_places": 14,
           "cote": 3.8,
-          "cote_tendance": "+",
+          "cote_tendance": "",
           "cote_reference": 1.4
         },
         {
@@ -896,7 +894,7 @@
           "nb_victoires": 4,
           "nb_places": 3,
           "cote": 5.7,
-          "cote_tendance": "+"
+          "cote_tendance": ""
         }
       ],
       "terrain": "Bon",
