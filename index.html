@@ -1292,47 +1292,58 @@
         // 3) Fallback API GitHub (60 req/h, utilisé si _index.json indisponible)
         // 4) Fallback jsdelivr (limite 50 MB, ne marche pas pour ce repo mais OK pour d'autres)
         // 5) Cache localStorage expiré en dernier recours
-        async function listCourseFiles() {
+        async function listCourseFiles({ forceFresh = false } = {}) {
             const CACHE_KEY = 'hippique_courses_listing';
             const CACHE_TTL_MS = 30000; // 30s
 
-            // 1) cache local frais
-            try {
-                const cached = JSON.parse(localStorage.getItem(CACHE_KEY) || 'null');
-                if (cached && Date.now() - cached.t < CACHE_TTL_MS) {
-                    console.log('📋 Listing courses depuis cache local (TTL 30s)');
-                    return cached.files;
-                }
-            } catch {}
+            // 1) cache local frais (skippé si forceFresh — clic Refresh manuel)
+            if (!forceFresh) {
+                try {
+                    const cached = JSON.parse(localStorage.getItem(CACHE_KEY) || 'null');
+                    if (cached && Date.now() - cached.t < CACHE_TTL_MS) {
+                        console.log('📋 Listing courses depuis cache local (TTL 30s)');
+                        return cached.files;
+                    }
+                } catch {}
+            }
 
-            // 2) PRIMAIRE : _index.json maintenu par GitHub Actions
-            try {
+            // 2) Source primaire dépend du contexte :
+            //    - Page load : _index.json (rapide, illimité, mais peut avoir 30-60s de retard)
+            //    - Refresh manuel : API GitHub (toujours fraîche, mais 60/h limite)
+            const tryIndex = async () => {
                 const idxResp = await fetch(`https://raw.githubusercontent.com/bencode92/Hippique/main/data/courses/_index.json?_=${Date.now()}`);
-                if (idxResp.ok) {
-                    const idx = await idxResp.json();
-                    const files = (idx.files || []).map(f => ({
-                        name: f.name,
-                        download_url: `https://raw.githubusercontent.com/bencode92/Hippique/main/data/courses/${f.name}`
-                    }));
-                    console.log(`📋 Listing depuis _index.json (${files.length} fichiers, généré ${idx.generated_at})`);
-                    localStorage.setItem(CACHE_KEY, JSON.stringify({ t: Date.now(), files }));
-                    return files;
-                }
-            } catch (e) { console.warn('_index.json indisponible', e); }
-
-            // 3) Fallback : GitHub API
-            try {
+                if (!idxResp.ok) return null;
+                const idx = await idxResp.json();
+                const files = (idx.files || []).map(f => ({
+                    name: f.name,
+                    download_url: `https://raw.githubusercontent.com/bencode92/Hippique/main/data/courses/${f.name}`
+                }));
+                console.log(`📋 _index.json (${files.length} fichiers, généré ${idx.generated_at})`);
+                return files;
+            };
+            const tryApi = async () => {
                 const r = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/data/courses?_=${Date.now()}`);
-                if (r.ok) {
-                    const raw = await r.json();
-                    const files = raw.map(f => ({ name: f.name, download_url: f.download_url }));
-                    localStorage.setItem(CACHE_KEY, JSON.stringify({ t: Date.now(), files }));
-                    return files;
+                if (!r.ok) {
+                    if (r.status === 403) console.warn('⚠️ API GitHub rate-limitée (403)');
+                    return null;
                 }
-                if (r.status !== 403) throw new Error(`API GitHub: ${r.status}`);
-                console.warn('⚠️ API GitHub rate-limitée (403) → fallback jsdelivr');
-            } catch (e) {
-                console.warn('⚠️ API GitHub indisponible → fallback jsdelivr', e);
+                const raw = await r.json();
+                const files = raw.map(f => ({ name: f.name, download_url: f.download_url }));
+                console.log(`📋 API GitHub fresh (${files.length} fichiers)`);
+                return files;
+            };
+
+            // forceFresh = essai API d'abord (frais), sinon _index.json
+            // sinon (page load normal) = essai _index.json d'abord
+            const order = forceFresh ? [tryApi, tryIndex] : [tryIndex, tryApi];
+            for (const fn of order) {
+                try {
+                    const files = await fn();
+                    if (files) {
+                        localStorage.setItem(CACHE_KEY, JSON.stringify({ t: Date.now(), files }));
+                        return files;
+                    }
+                } catch (e) { console.warn('Source listing échouée', e); }
             }
 
             // 3) Fallback jsdelivr (API correcte : /v1/packages/ pluriel + /tree?path=)
@@ -1381,9 +1392,12 @@
                     // Initialiser l'objet courseData
                     const courseData = {};
 
-                    // Listing courses : cache localStorage 30s + fallback jsdelivr si l'API GitHub
-                    // est rate-limitée (60 req/h, partagés entre tous les appareils sur la même IP)
-                    const files = await listCourseFiles();
+                    // Listing courses. window.__forceFreshListing est posé à true par le bouton
+                    // Refresh pour forcer un fetch frais via API GitHub (au cas où le workflow
+                    // qui maintient _index.json n'a pas encore tourné).
+                    const forceFresh = !!window.__forceFreshListing;
+                    window.__forceFreshListing = false;
+                    const files = await listCourseFiles({ forceFresh });
                     console.log("Fichiers trouvés dans data/courses:", files);
                     
                     // Filtrer pour trouver tous les fichiers JSON correspondant à la date
@@ -1632,6 +1646,9 @@
                     try {
                         // Invalider le cache localStorage du listing (sinon TTL 30s)
                         localStorage.removeItem('hippique_courses_listing');
+                        // Forcer la prochaine requête à passer par l'API GitHub fraîche
+                        // (au cas où _index.json a 30-60s de retard après un push)
+                        window.__forceFreshListing = true;
                         // Vide le cache navigateur des fetch précédents pour ce domaine
                         if ('caches' in window) {
                             const keys = await caches.keys();
