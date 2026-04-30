@@ -1285,15 +1285,18 @@
 
     <!-- Module de chargement des courses -->
     <script>
-        // Liste les fichiers du dossier data/courses avec :
-        // 1) cache localStorage 30s — les Refresh rapprochés ne consomment pas l'API
-        // 2) fallback jsdelivr si l'API GitHub renvoie 403 (rate limit 60/h)
-        // Retourne un tableau d'objets { name, download_url } compatible avec processFile.
+        // Liste les fichiers du dossier data/courses avec stratégie multi-source :
+        // 1) cache localStorage 30s
+        // 2) PRIMAIRE : data/courses/_index.json via raw.githubusercontent (auto-maintenu
+        //    par GitHub Actions, AUCUN rate limit, le seul moyen fiable)
+        // 3) Fallback API GitHub (60 req/h, utilisé si _index.json indisponible)
+        // 4) Fallback jsdelivr (limite 50 MB, ne marche pas pour ce repo mais OK pour d'autres)
+        // 5) Cache localStorage expiré en dernier recours
         async function listCourseFiles() {
             const CACHE_KEY = 'hippique_courses_listing';
             const CACHE_TTL_MS = 30000; // 30s
 
-            // 1) cache local
+            // 1) cache local frais
             try {
                 const cached = JSON.parse(localStorage.getItem(CACHE_KEY) || 'null');
                 if (cached && Date.now() - cached.t < CACHE_TTL_MS) {
@@ -1302,7 +1305,22 @@
                 }
             } catch {}
 
-            // 2) GitHub API
+            // 2) PRIMAIRE : _index.json maintenu par GitHub Actions
+            try {
+                const idxResp = await fetch(`https://raw.githubusercontent.com/bencode92/Hippique/main/data/courses/_index.json?_=${Date.now()}`);
+                if (idxResp.ok) {
+                    const idx = await idxResp.json();
+                    const files = (idx.files || []).map(f => ({
+                        name: f.name,
+                        download_url: `https://raw.githubusercontent.com/bencode92/Hippique/main/data/courses/${f.name}`
+                    }));
+                    console.log(`📋 Listing depuis _index.json (${files.length} fichiers, généré ${idx.generated_at})`);
+                    localStorage.setItem(CACHE_KEY, JSON.stringify({ t: Date.now(), files }));
+                    return files;
+                }
+            } catch (e) { console.warn('_index.json indisponible', e); }
+
+            // 3) Fallback : GitHub API
             try {
                 const r = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/data/courses?_=${Date.now()}`);
                 if (r.ok) {
@@ -1317,20 +1335,34 @@
                 console.warn('⚠️ API GitHub indisponible → fallback jsdelivr', e);
             }
 
-            // 3) Fallback jsdelivr (pas de rate limit, cache CDN ~12h mais on s'en sert
-            //    seulement quand l'API GitHub est down)
-            const jd = await fetch(`https://data.jsdelivr.com/v1/package/gh/bencode92/Hippique@main/flat?_=${Date.now()}`);
-            if (!jd.ok) throw new Error(`jsdelivr: ${jd.status}`);
-            const all = await jd.json();
-            const files = (all.files || [])
-                .filter(f => f.name.startsWith('/data/courses/') && f.name.endsWith('.json'))
-                .map(f => ({
-                    name: f.name.replace('/data/courses/', ''),
-                    download_url: `https://raw.githubusercontent.com/bencode92/Hippique/main${f.name}`
-                }));
-            // On cache aussi le résultat fallback
-            localStorage.setItem(CACHE_KEY, JSON.stringify({ t: Date.now(), files }));
-            return files;
+            // 3) Fallback jsdelivr (API correcte : /v1/packages/ pluriel + /tree?path=)
+            //    Pas de rate limit. Cache CDN ~12h mais on s'en sert seulement
+            //    quand l'API GitHub est rate-limitée donc OK comme dégradé.
+            try {
+                const jd = await fetch(`https://data.jsdelivr.com/v1/packages/gh/bencode92/Hippique@main/tree?path=data/courses&_=${Date.now()}`);
+                if (jd.ok) {
+                    const data = await jd.json();
+                    const files = (data.files || [])
+                        .filter(f => f.type === 'file' && f.name.endsWith('.json'))
+                        .map(f => ({
+                            name: f.name,
+                            download_url: `https://raw.githubusercontent.com/bencode92/Hippique/main/data/courses/${f.name}`
+                        }));
+                    localStorage.setItem(CACHE_KEY, JSON.stringify({ t: Date.now(), files }));
+                    return files;
+                }
+            } catch (e) { console.warn('jsdelivr indisponible', e); }
+
+            // 4) Dernier recours : tenter de réutiliser un cache localStorage même expiré
+            try {
+                const stale = JSON.parse(localStorage.getItem(CACHE_KEY) || 'null');
+                if (stale && stale.files?.length) {
+                    console.warn(`📋 Tous les listings échouent — cache local expiré utilisé (âge ${Math.round((Date.now()-stale.t)/1000)}s)`);
+                    return stale.files;
+                }
+            } catch {}
+
+            throw new Error('Aucune source de listing disponible (API GitHub rate-limitée ET jsdelivr KO)');
         }
 
         // Module de chargement des courses

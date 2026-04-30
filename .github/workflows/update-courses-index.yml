@@ -1,0 +1,42 @@
+name: Update courses index
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/courses/**.json'
+      - '!data/courses/_index.json'
+
+permissions:
+  contents: write
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Régénérer _index.json
+        run: python3 scripts/update_courses_index.py
+
+      - name: Commit et push si modifié
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action - Index"
+          git add data/courses/_index.json
+          if git diff --cached --quiet; then
+            echo "Index inchangé, rien à commiter"
+          else
+            git commit -m "🔄 Auto-update courses _index.json"
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
