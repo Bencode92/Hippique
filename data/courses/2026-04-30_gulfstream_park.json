@@ -1,7 +1,7 @@
 {
   "hippodrome": "GULFSTREAM PARK",
   "type_reunion": "Plat",
-  "date_extraction": "2026-04-30T16:23:46.435326",
+  "date_extraction": "2026-04-30T17:44:21.348024",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/30042026/R6",
   "courses": [
     {
@@ -12,6 +12,30 @@
       "distance": "1600m",
       "url": "",
       "participants": [
+        {
+          "n°": "5",
+          "cheval": "PEPPERMINT MAN H.PU. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: NEOLITHIC et LADY KAFCA (KAFWAIN)",
+          "corde": "(Corde:05)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/30042026/R6/C1/P5.png",
+          "propriétaire": "DAVID S. ROMANIK",
+          "entraineur": "R B SPATZ",
+          "éleveurs": "",
+          "jockey": "D A HERRERA",
+          "poids": "57 kg",
+          "gains": "3483000",
+          "musique": "5p4p2p6p9p",
+          "valeur": "57.0",
+          "equipement(s)": "",
+          "nb_courses": 9,
+          "nb_victoires": 1,
+          "nb_places": 5,
+          "cote": 2.7,
+          "cote_tendance": "",
+          "cote_reference": 8.0,
+          "arrivee": 1
+        },
         {
           "n°": "2",
           "cheval": "STARSHIP MAGELLAN H.PU. 5 a.",
@@ -31,9 +55,10 @@
           "nb_courses": 21,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 7.4,
-          "cote_tendance": "",
-          "cote_reference": 7.1
+          "cote": 33.0,
+          "cote_tendance": "+",
+          "cote_reference": 7.1,
+          "arrivee": 2
         },
         {
           "n°": "3",
@@ -54,9 +79,10 @@
           "nb_courses": 20,
           "nb_victoires": 1,
           "nb_places": 8,
-          "cote": 10.0,
+          "cote": 22.0,
           "cote_tendance": "",
-          "cote_reference": 10.0
+          "cote_reference": 10.0,
+          "arrivee": 3
         },
         {
           "n°": "4",
@@ -77,55 +103,10 @@
           "nb_courses": 9,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 3.5,
+          "cote": 5.6,
           "cote_tendance": "",
-          "cote_reference": 3.7
-        },
-        {
-          "n°": "5",
-          "cheval": "PEPPERMINT MAN H.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: NEOLITHIC et LADY KAFCA (KAFWAIN)",
-          "corde": "(Corde:05)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/30042026/R6/C1/P5.png",
-          "propriétaire": "DAVID S. ROMANIK",
-          "entraineur": "R B SPATZ",
-          "éleveurs": "",
-          "jockey": "D A HERRERA",
-          "poids": "57 kg",
-          "gains": "3483000",
-          "musique": "5p4p2p6p9p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 9,
-          "nb_victoires": 1,
-          "nb_places": 5,
-          "cote": 8.3,
-          "cote_tendance": "",
-          "cote_reference": 8.0
-        },
-        {
-          "n°": "7",
-          "cheval": "GIURO H.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: CORDON et TROUBLE N MIND (SPEIGHTSTOWN)",
-          "corde": "(Corde:07)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/30042026/R6/C1/P7.png",
-          "propriétaire": "PIERA FICO AND JOSEPH C. CATANES",
-          "entraineur": "J C CATANESE III",
-          "éleveurs": "",
-          "jockey": "H FIGUEROA",
-          "poids": "57 kg",
-          "gains": "4009000",
-          "musique": "3p7p4p(25)3p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 24,
-          "nb_victoires": 1,
-          "nb_places": 7,
-          "cote": 9.0,
-          "cote_tendance": "",
-          "cote_reference": 8.7
+          "cote_reference": 3.7,
+          "arrivee": 4
         },
         {
           "n°": "8",
@@ -146,15 +127,41 @@
           "nb_courses": 12,
           "nb_victoires": 1,
           "nb_places": 9,
-          "cote": 3.1,
+          "cote": 2.3,
           "cote_tendance": "",
-          "cote_reference": 3.1
+          "cote_reference": 3.1,
+          "arrivee": 5
+        },
+        {
+          "n°": "7",
+          "cheval": "GIURO H.PU. 5 a.",
+          "cheval_url": "",
+          "père_mère": "Par: CORDON et TROUBLE N MIND (SPEIGHTSTOWN)",
+          "corde": "(Corde:07)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/30042026/R6/C1/P7.png",
+          "propriétaire": "PIERA FICO AND JOSEPH C. CATANES",
+          "entraineur": "J C CATANESE III",
+          "éleveurs": "",
+          "jockey": "H FIGUEROA",
+          "poids": "57 kg",
+          "gains": "4009000",
+          "musique": "3p7p4p(25)3p",
+          "valeur": "57.0",
+          "equipement(s)": "",
+          "nb_courses": 24,
+          "nb_victoires": 1,
+          "nb_places": 7,
+          "cote": 10.0,
+          "cote_tendance": "+",
+          "cote_reference": 8.7,
+          "arrivee": 6
         }
       ],
       "typePiste": "HERBE",
       "terrain": "Léger",
       "penetrometre": "2,3",
-      "cordeCourse": "CORDE_GAUCHE"
+      "cordeCourse": "CORDE_GAUCHE",
+      "arrivee_definitive": true
     },
     {
       "nom": "MAIDEN CLAIMING (3 YO & UP - FILLIES & MARES - DIRT)",
@@ -164,29 +171,6 @@
       "distance": "1200m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "CAMM'S GIRL F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MCKINZIE et FRUHL'S GOLD (CRAFTY PROSPECTOR)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/30042026/R6/C2/P1.png",
-          "propriétaire": "SYA'S FARM, LLC",
-          "entraineur": "R R RODRIGUEZ",
-          "éleveurs": "",
-          "jockey": "S CAMACHO",
-          "poids": "54.5 kg",
-          "gains": "458000",
-          "musique": "6p6p6p9p(25)",
-          "valeur": "54.5",
-          "equipement(s)": "",
-          "nb_courses": 11,
-          "nb_victoires": 0,
-          "nb_places": 3,
-          "cote": 6.9,
-          "cote_tendance": "",
-          "cote_reference": 9.5
-        },
         {
           "n°": "2",
           "cheval": "NEW LEASE ON LIFE F.PU. 3 a.",
@@ -206,55 +190,34 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 3.6,
+          "cote": 2.7,
           "cote_tendance": "",
-          "cote_reference": 3.3
+          "cote_reference": 3.7,
+          "arrivee": 1
         },
         {
-          "n°": "3",
-          "cheval": "HARPY F.PU. 3 a.",
+          "n°": "1",
+          "cheval": "CAMM'S GIRL F.PU. 3 a.",
           "cheval_url": "",
-          "père_mère": "Par: REDESDALE et SCULPT (FIRST DEFENCE)",
-          "corde": "(Corde:03)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/30042026/R6/C2/P3.png",
-          "propriétaire": "THE THREE COLLEENS STABLE AND HE",
-          "entraineur": "H SMULLEN",
+          "père_mère": "Par: MCKINZIE et FRUHL'S GOLD (CRAFTY PROSPECTOR)",
+          "corde": "(Corde:01)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/30042026/R6/C2/P1.png",
+          "propriétaire": "SYA'S FARM, LLC",
+          "entraineur": "R R RODRIGUEZ",
           "éleveurs": "",
-          "jockey": "J E MORELOS",
+          "jockey": "S CAMACHO",
           "poids": "54.5 kg",
-          "gains": "425200",
-          "musique": "3p5p4p(25)0p",
+          "gains": "458000",
+          "musique": "6p6p6p9p(25)",
           "valeur": "54.5",
           "equipement(s)": "",
-          "nb_courses": 5,
+          "nb_courses": 11,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 2.9,
-          "cote_tendance": "",
-          "cote_reference": 2.6
-        },
-        {
-          "n°": "4",
-          "cheval": "MEMORY OF MY LIFE F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: KING FOR A DAY et TRES CHARMANT (FREUD)",
-          "corde": "(Corde:04)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/30042026/R6/C2/P4.png",
-          "propriétaire": "CHUNCHO BRAVO STABLE & FARM LLC",
-          "entraineur": "J E MORZAN",
-          "éleveurs": "",
-          "jockey": "Y TORRES",
-          "poids": "52 kg",
-          "gains": "63500",
-          "musique": "6p0p7p",
-          "valeur": "52.0",
-          "equipement(s)": "",
-          "nb_courses": 3,
-          "nb_victoires": 0,
-          "nb_places": 0,
-          "cote": 8.7,
-          "cote_tendance": "",
-          "cote_reference": 9.5
+          "cote": 4.5,
+          "cote_tendance": "+",
+          "cote_reference": 7.2,
+          "arrivee": 2
         },
         {
           "n°": "5",
@@ -275,9 +238,56 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 8.7,
+          "cote": 5.6,
+          "cote_tendance": "-",
+          "cote_reference": 5.4,
+          "arrivee": 3
+        },
+        {
+          "n°": "3",
+          "cheval": "HARPY F.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: REDESDALE et SCULPT (FIRST DEFENCE)",
+          "corde": "(Corde:03)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/30042026/R6/C2/P3.png",
+          "propriétaire": "THE THREE COLLEENS STABLE AND HE",
+          "entraineur": "H SMULLEN",
+          "éleveurs": "",
+          "jockey": "J E MORELOS",
+          "poids": "54.5 kg",
+          "gains": "425200",
+          "musique": "3p5p4p(25)0p",
+          "valeur": "54.5",
+          "equipement(s)": "",
+          "nb_courses": 5,
+          "nb_victoires": 0,
+          "nb_places": 3,
+          "cote": 3.2,
           "cote_tendance": "",
-          "cote_reference": 9.5
+          "cote_reference": 3.1
+        },
+        {
+          "n°": "4",
+          "cheval": "MEMORY OF MY LIFE F.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: KING FOR A DAY et TRES CHARMANT (FREUD)",
+          "corde": "(Corde:04)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/30042026/R6/C2/P4.png",
+          "propriétaire": "CHUNCHO BRAVO STABLE & FARM LLC",
+          "entraineur": "J E MORZAN",
+          "éleveurs": "",
+          "jockey": "Y TORRES",
+          "poids": "52 kg",
+          "gains": "63500",
+          "musique": "6p0p7p",
+          "valeur": "52.0",
+          "equipement(s)": "",
+          "nb_courses": 3,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 24.0,
+          "cote_tendance": "+",
+          "cote_reference": 8.7
         },
         {
           "n°": "6",
@@ -298,15 +308,16 @@
           "nb_courses": 14,
           "nb_victoires": 0,
           "nb_places": 5,
-          "cote": 6.9,
-          "cote_tendance": "",
-          "cote_reference": 7.1
+          "cote": 32.0,
+          "cote_tendance": "+",
+          "cote_reference": 8.7
         }
       ],
       "typePiste": "GAZON",
       "terrain": "PSF RAPIDE",
       "penetrometre": "",
-      "cordeCourse": "CORDE_GAUCHE"
+      "cordeCourse": "CORDE_GAUCHE",
+      "arrivee_definitive": true
     },
     {
       "nom": "CLAIMING (4 YO & UP - DIRT)",
@@ -335,9 +346,9 @@
           "nb_courses": 17,
           "nb_victoires": 3,
           "nb_places": 8,
-          "cote": 9.0,
-          "cote_tendance": "+",
-          "cote_reference": 2.6
+          "cote": 6.5,
+          "cote_tendance": "-",
+          "cote_reference": 15.0
         },
         {
           "n°": "4",
@@ -358,8 +369,8 @@
           "nb_courses": 15,
           "nb_victoires": 4,
           "nb_places": 8,
-          "cote": 2.2,
-          "cote_tendance": "+",
+          "cote": 1.6,
+          "cote_tendance": "",
           "cote_reference": 1.3
         },
         {
@@ -381,8 +392,9 @@
           "nb_courses": 19,
           "nb_victoires": 3,
           "nb_places": 10,
-          "cote": 18.0,
-          "cote_tendance": "+"
+          "cote": 9.5,
+          "cote_tendance": "+",
+          "cote_reference": 18.0
         },
         {
           "n°": "6",
@@ -403,8 +415,9 @@
           "nb_courses": 44,
           "nb_victoires": 3,
           "nb_places": 30,
-          "cote": 9.0,
-          "cote_tendance": "-"
+          "cote": 4.0,
+          "cote_tendance": "",
+          "cote_reference": 4.8
         }
       ],
       "typePiste": "GAZON",
@@ -439,8 +452,8 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 2.9,
-          "cote_tendance": "",
+          "cote": 3.6,
+          "cote_tendance": "+",
           "cote_reference": 5.2
         },
         {
@@ -462,8 +475,8 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 7.4,
-          "cote_tendance": "",
+          "cote": 8.1,
+          "cote_tendance": "-",
           "cote_reference": 2.6
         },
         {
@@ -485,8 +498,8 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 4.9,
-          "cote_tendance": "",
+          "cote": 3.6,
+          "cote_tendance": "+",
           "cote_reference": 5.2
         },
         {
@@ -508,8 +521,8 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 7.4,
-          "cote_tendance": ""
+          "cote": 5.4,
+          "cote_tendance": "-"
         },
         {
           "n°": "5",
@@ -530,8 +543,8 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 7.4,
-          "cote_tendance": "",
+          "cote": 5.4,
+          "cote_tendance": "-",
           "cote_reference": 2.6
         }
       ],
@@ -567,8 +580,8 @@
           "nb_courses": 9,
           "nb_victoires": 1,
           "nb_places": 6,
-          "cote": 7.3,
-          "cote_tendance": "",
+          "cote": 3.6,
+          "cote_tendance": "-",
           "cote_reference": 6.1
         },
         {
@@ -590,8 +603,8 @@
           "nb_courses": 21,
           "nb_victoires": 2,
           "nb_places": 10,
-          "cote": 11.0,
-          "cote_tendance": ""
+          "cote": 9.9,
+          "cote_tendance": "+"
         },
         {
           "n°": "3",
@@ -612,8 +625,8 @@
           "nb_courses": 15,
           "nb_victoires": 2,
           "nb_places": 10,
-          "cote": 4.4,
-          "cote_tendance": "",
+          "cote": 5.6,
+          "cote_tendance": "+",
           "cote_reference": 6.1
         },
         {
@@ -635,8 +648,8 @@
           "nb_courses": 14,
           "nb_victoires": 2,
           "nb_places": 10,
-          "cote": 11.0,
-          "cote_tendance": ""
+          "cote": 6.6,
+          "cote_tendance": "-"
         },
         {
           "n°": "5",
@@ -657,8 +670,8 @@
           "nb_courses": 13,
           "nb_victoires": 2,
           "nb_places": 5,
-          "cote": 4.4,
-          "cote_tendance": "",
+          "cote": 7.9,
+          "cote_tendance": "+",
           "cote_reference": 6.1
         },
         {
@@ -680,8 +693,8 @@
           "nb_courses": 10,
           "nb_victoires": 2,
           "nb_places": 4,
-          "cote": 3.6,
-          "cote_tendance": "",
+          "cote": 3.9,
+          "cote_tendance": "+",
           "cote_reference": 1.5
         },
         {
@@ -703,8 +716,8 @@
           "nb_courses": 4,
           "nb_victoires": 2,
           "nb_places": 1,
-          "cote": 11.0,
-          "cote_tendance": ""
+          "cote": 19.0,
+          "cote_tendance": "+"
         }
       ],
       "typePiste": "GAZON",
@@ -738,7 +751,9 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 3,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 6.6,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -759,7 +774,7 @@
           "nb_courses": 22,
           "nb_victoires": 4,
           "nb_places": 12,
-          "cote": 1.3,
+          "cote": 2.2,
           "cote_tendance": "",
           "cote_reference": 1.1
         },
@@ -827,7 +842,9 @@
           "equipement(s)": "",
           "nb_courses": 15,
           "nb_victoires": 6,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 13.0,
+          "cote_tendance": ""
         },
         {
           "n°": "6",
@@ -847,7 +864,9 @@
           "equipement(s)": "",
           "nb_courses": 37,
           "nb_victoires": 6,
-          "nb_places": 14
+          "nb_places": 14,
+          "cote": 13.0,
+          "cote_tendance": ""
         }
       ],
       "typePiste": "HERBE",
@@ -882,7 +901,7 @@
           "nb_courses": 6,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 3.8,
+          "cote": 3.7,
           "cote_tendance": "",
           "cote_reference": 7.9
         },
@@ -905,7 +924,7 @@
           "nb_courses": 6,
           "nb_victoires": 2,
           "nb_places": 4,
-          "cote": 5.7,
+          "cote": 3.0,
           "cote_tendance": "",
           "cote_reference": 3.9
         },
@@ -927,7 +946,9 @@
           "equipement(s)": "",
           "nb_courses": 17,
           "nb_victoires": 3,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 9.2,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -968,7 +989,7 @@
           "nb_courses": 3,
           "nb_victoires": 1,
           "nb_places": 1,
-          "cote": 1.9,
+          "cote": 3.0,
           "cote_tendance": "",
           "cote_reference": 1.3
         }
@@ -1005,8 +1026,8 @@
           "nb_courses": 9,
           "nb_victoires": 0,
           "nb_places": 8,
-          "cote": 6.4,
-          "cote_tendance": "",
+          "cote": 8.8,
+          "cote_tendance": "+",
           "cote_reference": 14.0
         },
         {
@@ -1028,8 +1049,8 @@
           "nb_courses": 6,
           "nb_victoires": 0,
           "nb_places": 6,
-          "cote": 6.4,
-          "cote_tendance": "",
+          "cote": 3.7,
+          "cote_tendance": "+",
           "cote_reference": 4.7
         },
         {
@@ -1051,8 +1072,8 @@
           "nb_courses": 10,
           "nb_victoires": 0,
           "nb_places": 5,
-          "cote": 9.7,
-          "cote_tendance": "",
+          "cote": 13.0,
+          "cote_tendance": "+",
           "cote_reference": 7.0
         },
         {
@@ -1073,7 +1094,9 @@
           "equipement(s)": "",
           "nb_courses": 19,
           "nb_victoires": 0,
-          "nb_places": 15
+          "nb_places": 15,
+          "cote": 6.6,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -1094,8 +1117,8 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 9.7,
-          "cote_tendance": "",
+          "cote": 13.0,
+          "cote_tendance": "+",
           "cote_reference": 7.0
         },
         {
@@ -1117,8 +1140,8 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 1.9,
-          "cote_tendance": "",
+          "cote": 2.6,
+          "cote_tendance": "+",
           "cote_reference": 2.3
         },
         {
@@ -1140,8 +1163,8 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 9.7,
-          "cote_tendance": "",
+          "cote": 13.0,
+          "cote_tendance": "+",
           "cote_reference": 7.0
         }
       ],
