@@ -1,7 +1,7 @@
 {
   "hippodrome": "PUNCHESTOWN",
   "type_reunion": "STEEPLECHASE",
-  "date_extraction": "2026-04-30T06:54:16.375051",
+  "date_extraction": "2026-04-30T11:26:34.375777",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/30042026/R5",
   "courses": [
     {
@@ -32,7 +32,8 @@
           "nb_victoires": 2,
           "nb_places": 10,
           "cote": 4.9,
-          "cote_tendance": "+"
+          "cote_tendance": "-",
+          "cote_reference": 5.2
         },
         {
           "n°": "2",
@@ -53,8 +54,9 @@
           "nb_courses": 13,
           "nb_victoires": 6,
           "nb_places": 4,
-          "cote": 4.9,
-          "cote_tendance": "+"
+          "cote": 5.4,
+          "cote_tendance": "-",
+          "cote_reference": 6.1
         },
         {
           "n°": "3",
@@ -75,8 +77,9 @@
           "nb_courses": 5,
           "nb_victoires": 4,
           "nb_places": 0,
-          "cote": 4.2,
-          "cote_tendance": "+"
+          "cote": 3.9,
+          "cote_tendance": "+",
+          "cote_reference": 3.2
         },
         {
           "n°": "4",
@@ -97,8 +100,9 @@
           "nb_courses": 7,
           "nb_victoires": 3,
           "nb_places": 1,
-          "cote": 4.2,
-          "cote_tendance": "-"
+          "cote": 4.1,
+          "cote_tendance": "-",
+          "cote_reference": 4.6
         },
         {
           "n°": "5",
@@ -119,10 +123,13 @@
           "nb_courses": 6,
           "nb_victoires": 3,
           "nb_places": 2,
-          "cote": 3.7,
-          "cote_tendance": "+"
+          "cote": 3.9,
+          "cote_tendance": "-",
+          "cote_reference": 3.8
         }
       ],
+      "terrain": "Bon souple",
+      "penetrometre": "3,3",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -152,8 +159,9 @@
           "nb_courses": 15,
           "nb_victoires": 6,
           "nb_places": 7,
-          "cote": 14.0,
-          "cote_tendance": ""
+          "cote": 5.7,
+          "cote_tendance": "",
+          "cote_reference": 5.7
         },
         {
           "n°": "2",
@@ -193,7 +201,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 2,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 22.0,
+          "cote_tendance": "",
+          "cote_reference": 22.0
         },
         {
           "n°": "4",
@@ -214,8 +225,9 @@
           "nb_courses": 7,
           "nb_victoires": 2,
           "nb_places": 2,
-          "cote": 3.7,
-          "cote_tendance": ""
+          "cote": 5.7,
+          "cote_tendance": "",
+          "cote_reference": 5.7
         },
         {
           "n°": "5",
@@ -236,8 +248,9 @@
           "nb_courses": 4,
           "nb_victoires": 1,
           "nb_places": 2,
-          "cote": 3.7,
-          "cote_tendance": ""
+          "cote": 4.5,
+          "cote_tendance": "",
+          "cote_reference": 4.5
         },
         {
           "n°": "6",
@@ -258,8 +271,9 @@
           "nb_courses": 25,
           "nb_victoires": 3,
           "nb_places": 9,
-          "cote": 14.0,
-          "cote_tendance": ""
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 15.0
         },
         {
           "n°": "7",
@@ -280,8 +294,9 @@
           "nb_courses": 16,
           "nb_victoires": 12,
           "nb_places": 2,
-          "cote": 2.4,
-          "cote_tendance": ""
+          "cote": 2.5,
+          "cote_tendance": "",
+          "cote_reference": 2.5
         },
         {
           "n°": "8",
@@ -302,10 +317,13 @@
           "nb_courses": 25,
           "nb_victoires": 7,
           "nb_places": 11,
-          "cote": 14.0,
-          "cote_tendance": ""
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 15.0
         }
       ],
+      "terrain": "Bon souple",
+      "penetrometre": "3,3",
       "cordeCourse": "CORDE_DROITE"
     }
   ]
