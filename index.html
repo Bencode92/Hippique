@@ -1249,9 +1249,11 @@
                     // Initialiser l'objet courseData
                     const courseData = {};
                     
-                    // Chemin correct vers les fichiers de courses
+                    // Chemin correct vers les fichiers de courses (cache-buster pour voir les nouveaux fichiers immédiatement)
                     console.log("Tentative de récupération des fichiers dans le répertoire 'data/courses'");
-                    let response = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/data/courses`);
+                    let response = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/data/courses?_=${Date.now()}`, {
+                        headers: { 'Cache-Control': 'no-cache' }
+                    });
                     
                     if (!response.ok) {
                         console.error(`Erreur lors de la récupération des fichiers: ${response.status}`);
@@ -1312,9 +1314,14 @@
             
             // Traiter un fichier JSON
             async processFile(file, courseData) {
-                console.log(`Traitement du fichier: ${file.name}, URL: ${file.download_url}`);
-                
-                const fileResponse = await fetch(file.download_url);
+                // Bypass cache CDN raw.githubusercontent (5 min) en passant par l'API GitHub
+                // avec Accept: raw → cache API ~60s, JSON frais quasi-instantanément après push
+                const apiUrl = `${file.url}&_=${Date.now()}`;
+                console.log(`Traitement du fichier: ${file.name}, URL: ${apiUrl}`);
+
+                const fileResponse = await fetch(apiUrl, {
+                    headers: { 'Accept': 'application/vnd.github.v3.raw' }
+                });
                 if (!fileResponse.ok) {
                     console.error(`Erreur lors du chargement du fichier ${file.name}: ${fileResponse.status}`);
                     return;
