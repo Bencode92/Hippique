@@ -199,6 +199,57 @@
             .filters { flex-direction: column; }
             .stats-grid { grid-template-columns: repeat(2, 1fr); }
         }
+
+        /* iPhone : optimisations agressives */
+        @media (max-width: 480px) {
+            html { font-size: 14px; }
+            main { padding: 0.6rem; }
+            header h1 { font-size: 1.1rem; }
+
+            .stats-grid { grid-template-columns: 1fr; gap: 0.6rem; }
+            .stat-card { padding: 0.8rem; }
+
+            /* Tableaux scrollables (les Top5 et Détail course par course) */
+            .levier-table, table {
+                font-size: 0.72rem;
+                display: block;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                white-space: nowrap;
+                max-width: 100%;
+            }
+            .levier-table th, .levier-table td,
+            table th, table td { padding: 0.3rem 0.4rem; }
+
+            /* Tabs distance/bucket scrollables horizontalement */
+            .tabs, .tab-row, [role="tablist"] {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                white-space: nowrap;
+                padding-bottom: 0.3rem;
+            }
+            .tab-item { padding: 0.5rem 0.7rem; font-size: 0.8rem; flex-shrink: 0; }
+
+            /* Filtres compacts */
+            .filter-group { width: 100%; }
+            .filter-group input, .filter-group select { width: 100%; font-size: 0.85rem; }
+
+            /* Boutons compacts */
+            button, .btn { font-size: 0.85rem; padding: 0.5rem 0.8rem; }
+
+            /* Banner champion : passer en colonne */
+            .champion-banner, [class*="champion"] {
+                flex-direction: column !important;
+                align-items: flex-start !important;
+                gap: 0.5rem !important;
+            }
+
+            /* Headers sticky désactivés */
+            thead { position: static !important; }
+
+            /* Réduire les boutons preset hippo */
+            .preset-btn { font-size: 0.75rem; padding: 0.4rem 0.6rem; }
+        }
     </style>
 </head>
 <body>
