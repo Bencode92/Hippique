@@ -1,7 +1,7 @@
 {
   "hippodrome": "SAN ISIDRO",
   "type_reunion": "Plat",
-  "date_extraction": "2026-05-02T10:47:00.349478",
+  "date_extraction": "2026-05-02T17:00:57.396021",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/02052026/R9",
   "courses": [
     {
@@ -31,8 +31,8 @@
           "nb_courses": 12,
           "nb_victoires": 5,
           "nb_places": 6,
-          "cote": 3.9,
-          "cote_tendance": "",
+          "cote": 5.1,
+          "cote_tendance": "+",
           "cote_reference": 3.9
         },
         {
@@ -54,8 +54,8 @@
           "nb_courses": 9,
           "nb_victoires": 3,
           "nb_places": 6,
-          "cote": 3.9,
-          "cote_tendance": "",
+          "cote": 10.0,
+          "cote_tendance": "+",
           "cote_reference": 3.9
         },
         {
@@ -88,7 +88,7 @@
           "propriétaire": "EL CHESCO VIEJO",
           "entraineur": "ALEX GABRIEL RODRIGUEZ",
           "éleveurs": "",
-          "jockey": "ENRIQUE CARLOS E. WEISHEIM",
+          "jockey": "ORTEGA TORRES EDUARDO GABRIEL",
           "poids": "49 kg",
           "gains": "924700000",
           "musique": "3p1p4p0p",
@@ -96,7 +96,9 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 1,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 5.1,
+          "cote_tendance": "+"
         },
         {
           "n°": "5",
@@ -117,8 +119,8 @@
           "nb_courses": 12,
           "nb_victoires": 3,
           "nb_places": 8,
-          "cote": 2.6,
-          "cote_tendance": "",
+          "cote": 1.9,
+          "cote_tendance": "-",
           "cote_reference": 2.6
         },
         {
@@ -140,11 +142,13 @@
           "nb_courses": 6,
           "nb_victoires": 2,
           "nb_places": 4,
-          "cote": 3.9,
-          "cote_tendance": "",
+          "cote": 6.9,
+          "cote_tendance": "-",
           "cote_reference": 3.9
         }
       ],
+      "terrain": "Léger",
+      "penetrometre": "2,3",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -194,7 +198,7 @@
           "nb_courses": 7,
           "nb_victoires": 1,
           "nb_places": 6,
-          "cote": 4.0,
+          "cote": 7.7,
           "cote_tendance": "",
           "cote_reference": 4.0
         },
@@ -236,7 +240,9 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 1,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 16.0,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -257,7 +263,7 @@
           "nb_courses": 5,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 2.7,
+          "cote": 4.0,
           "cote_tendance": "",
           "cote_reference": 2.7
         },
@@ -280,7 +286,7 @@
           "nb_courses": 2,
           "nb_victoires": 1,
           "nb_places": 1,
-          "cote": 2.7,
+          "cote": 2.3,
           "cote_tendance": "",
           "cote_reference": 2.7
         },
@@ -303,7 +309,7 @@
           "nb_courses": 4,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 17.0,
+          "cote": 11.0,
           "cote_tendance": "",
           "cote_reference": 17.0
         },
@@ -326,7 +332,7 @@
           "nb_courses": 8,
           "nb_victoires": 1,
           "nb_places": 6,
-          "cote": 8.8,
+          "cote": 5.5,
           "cote_tendance": "",
           "cote_reference": 8.8
         },
@@ -351,6 +357,8 @@
           "nb_places": 5
         }
       ],
+      "terrain": "Léger",
+      "penetrometre": "2,3",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -420,7 +428,7 @@
           "nb_courses": 6,
           "nb_victoires": 1,
           "nb_places": 4,
-          "cote": 3.9,
+          "cote": 5.0,
           "cote_tendance": "",
           "cote_reference": 3.9
         },
@@ -443,7 +451,7 @@
           "nb_courses": 3,
           "nb_victoires": 1,
           "nb_places": 2,
-          "cote": 2.6,
+          "cote": 2.8,
           "cote_tendance": "",
           "cote_reference": 2.6
         },
@@ -465,7 +473,9 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 5.0,
+          "cote_tendance": ""
         },
         {
           "n°": "6",
@@ -486,7 +496,7 @@
           "nb_courses": 2,
           "nb_victoires": 2,
           "nb_places": 0,
-          "cote": 1.9,
+          "cote": 2.5,
           "cote_tendance": "",
           "cote_reference": 1.9
         },
@@ -511,6 +521,8 @@
           "nb_places": 3
         }
       ],
+      "terrain": "Léger",
+      "penetrometre": "2,3",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -560,8 +572,8 @@
           "nb_courses": 6,
           "nb_victoires": 1,
           "nb_places": 4,
-          "cote": 3.0,
-          "cote_tendance": "+",
+          "cote": 3.9,
+          "cote_tendance": "",
           "cote_reference": 2.2
         },
         {
@@ -583,8 +595,8 @@
           "nb_courses": 8,
           "nb_victoires": 1,
           "nb_places": 7,
-          "cote": 6.1,
-          "cote_tendance": "+",
+          "cote": 7.9,
+          "cote_tendance": "",
           "cote_reference": 4.4
         },
         {
@@ -605,7 +617,9 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 1,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 3.9,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -646,11 +660,13 @@
           "nb_courses": 4,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 1.5,
-          "cote_tendance": "-",
+          "cote": 1.9,
+          "cote_tendance": "",
           "cote_reference": 2.2
         }
       ],
+      "terrain": "Léger",
+      "penetrometre": "2,3",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -702,26 +718,6 @@
           "nb_places": 10
         },
         {
-          "n°": "3",
-          "cheval": "SILVER YA M.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: WINNING PRIZE et CANDY MAYA (LODE)",
-          "corde": "(Corde:03)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/02052026/R9/C12/P3.png",
-          "propriétaire": "LOS DOS HERMANOS (LPT)",
-          "entraineur": "JOAQUIN ALBERTO CANO",
-          "éleveurs": "",
-          "jockey": "NON COMMUNIQUE",
-          "poids": "54 kg",
-          "gains": "2054360000",
-          "musique": "3p3p1p1p",
-          "valeur": "54.0",
-          "equipement(s)": "",
-          "nb_courses": 8,
-          "nb_victoires": 3,
-          "nb_places": 4
-        },
-        {
           "n°": "4",
           "cheval": "GRAND CANYON M.PU. 5 a.",
           "cheval_url": "",
@@ -740,7 +736,7 @@
           "nb_courses": 7,
           "nb_victoires": 2,
           "nb_places": 4,
-          "cote": 2.2,
+          "cote": 1.1,
           "cote_tendance": "",
           "cote_reference": 2.2
         },
@@ -762,7 +758,9 @@
           "equipement(s)": "",
           "nb_courses": 11,
           "nb_victoires": 2,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 9.2,
+          "cote_tendance": ""
         },
         {
           "n°": "6",
@@ -783,7 +781,7 @@
           "nb_courses": 7,
           "nb_victoires": 2,
           "nb_places": 5,
-          "cote": 2.2,
+          "cote": 9.2,
           "cote_tendance": "",
           "cote_reference": 2.2
         },
@@ -806,11 +804,13 @@
           "nb_courses": 9,
           "nb_victoires": 2,
           "nb_places": 7,
-          "cote": 4.4,
+          "cote": 18.0,
           "cote_tendance": "",
           "cote_reference": 4.4
         }
       ],
+      "terrain": "Léger",
+      "penetrometre": "2,3",
       "cordeCourse": "CORDE_GAUCHE"
     }
   ]
