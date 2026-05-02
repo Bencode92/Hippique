@@ -1,7 +1,7 @@
 {
   "hippodrome": "CHURCHILL DOWNS",
   "type_reunion": "Plat",
-  "date_extraction": "2026-05-02T06:56:27.228061",
+  "date_extraction": "2026-05-02T10:46:54.390908",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/02052026/R8",
   "courses": [
     {
@@ -50,7 +50,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 5,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 4.1,
+          "cote_tendance": "",
+          "cote_reference": 4.1
         },
         {
           "n°": "3",
@@ -71,8 +74,9 @@
           "nb_courses": 3,
           "nb_victoires": 2,
           "nb_places": 1,
-          "cote": 1.4,
-          "cote_tendance": "-"
+          "cote": 5.5,
+          "cote_tendance": "",
+          "cote_reference": 5.5
         },
         {
           "n°": "4",
@@ -92,7 +96,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 3,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 4.1,
+          "cote_tendance": "",
+          "cote_reference": 4.1
         },
         {
           "n°": "5",
@@ -133,8 +140,9 @@
           "nb_courses": 9,
           "nb_victoires": 2,
           "nb_places": 3,
-          "cote": 2.2,
-          "cote_tendance": "+"
+          "cote": 8.3,
+          "cote_tendance": "",
+          "cote_reference": 8.3
         },
         {
           "n°": "7",
@@ -154,7 +162,10 @@
           "equipement(s)": "",
           "nb_courses": 18,
           "nb_victoires": 5,
-          "nb_places": 11
+          "nb_places": 11,
+          "cote": 8.3,
+          "cote_tendance": "",
+          "cote_reference": 8.3
         },
         {
           "n°": "8",
@@ -194,9 +205,13 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 3,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 4.1,
+          "cote_tendance": "",
+          "cote_reference": 4.1
         }
       ],
+      "typePiste": "HERBE",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -225,7 +240,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 2,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 5.7,
+          "cote_tendance": "",
+          "cote_reference": 5.7
         },
         {
           "n°": "2",
@@ -245,7 +263,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 2,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 5.7,
+          "cote_tendance": "",
+          "cote_reference": 5.7
         },
         {
           "n°": "3",
@@ -325,7 +346,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 2,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 1.9,
+          "cote_tendance": "",
+          "cote_reference": 1.9
         },
         {
           "n°": "7",
@@ -346,8 +370,9 @@
           "nb_courses": 6,
           "nb_victoires": 2,
           "nb_places": 3,
-          "cote": 1.1,
-          "cote_tendance": ""
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0
         },
         {
           "n°": "8",
@@ -367,7 +392,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 3,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 5.7,
+          "cote_tendance": "",
+          "cote_reference": 5.7
         },
         {
           "n°": "9",
@@ -388,26 +416,6 @@
           "nb_courses": 3,
           "nb_victoires": 2,
           "nb_places": 1
-        },
-        {
-          "n°": "10",
-          "cheval": "GREAT WHITE H.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: VOLATILE et KELLY BAG (UNCLE MO)",
-          "corde": "(Corde:10)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/02052026/R8/C8/P10.png",
-          "propriétaire": "THREE CHIMNEYS FARM, LLC (GONCAL",
-          "entraineur": "J ENNIS",
-          "éleveurs": "",
-          "jockey": "A ACHARD",
-          "poids": "53.5 kg",
-          "gains": "20249500",
-          "musique": "5p1p5p(25)1p",
-          "valeur": "53.5",
-          "equipement(s)": "",
-          "nb_courses": 4,
-          "nb_victoires": 2,
-          "nb_places": 2
         },
         {
           "n°": "11",
@@ -450,6 +458,7 @@
           "nb_places": 6
         }
       ],
+      "typePiste": "GAZON",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -478,7 +487,10 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 3,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 9.2,
+          "cote_tendance": "",
+          "cote_reference": 5.7
         },
         {
           "n°": "2",
@@ -499,8 +511,9 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 1.3,
-          "cote_tendance": "+"
+          "cote": 4.6,
+          "cote_tendance": "",
+          "cote_reference": 5.7
         },
         {
           "n°": "3",
@@ -542,27 +555,8 @@
           "nb_victoires": 3,
           "nb_places": 3,
           "cote": 2.6,
-          "cote_tendance": ""
-        },
-        {
-          "n°": "5",
-          "cheval": "BLACKOUT TIME M.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: NOT THIS TIME et BEAUTY PARLOR (ELUSIVE QUALITY)",
-          "corde": "(Corde:05)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/02052026/R8/C9/P5.png",
-          "propriétaire": "BR THOROUGHBREDS, INC. (NADER AL",
-          "entraineur": "K G MCPEEK",
-          "éleveurs": "",
-          "jockey": "L SAEZ",
-          "poids": "55.5 kg",
-          "gains": "32019100",
-          "musique": "5p4p(25)2p1p",
-          "valeur": "55.5",
-          "equipement(s)": "",
-          "nb_courses": 5,
-          "nb_victoires": 1,
-          "nb_places": 4
+          "cote_tendance": "",
+          "cote_reference": 1.6
         },
         {
           "n°": "6",
@@ -622,7 +616,9 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 3,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 9.2,
+          "cote_tendance": ""
         },
         {
           "n°": "9",
@@ -702,7 +698,9 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 3,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 9.2,
+          "cote_tendance": ""
         },
         {
           "n°": "13",
@@ -742,9 +740,12 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 3,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 9.2,
+          "cote_tendance": ""
         }
       ],
+      "typePiste": "HERBE",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -793,7 +794,9 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 3,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 11.0,
+          "cote_tendance": ""
         },
         {
           "n°": "3",
@@ -834,8 +837,9 @@
           "nb_courses": 11,
           "nb_victoires": 4,
           "nb_places": 5,
-          "cote": 1.1,
-          "cote_tendance": ""
+          "cote": 3.9,
+          "cote_tendance": "+",
+          "cote_reference": 1.9
         },
         {
           "n°": "5",
@@ -855,7 +859,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 3,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 3.9,
+          "cote_tendance": "+",
+          "cote_reference": 2.8
         },
         {
           "n°": "6",
@@ -875,7 +882,9 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 6,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 11.0,
+          "cote_tendance": ""
         },
         {
           "n°": "7",
@@ -896,8 +905,9 @@
           "nb_courses": 15,
           "nb_victoires": 4,
           "nb_places": 9,
-          "cote": 4.4,
-          "cote_tendance": ""
+          "cote": 7.9,
+          "cote_tendance": "-",
+          "cote_reference": 11.0
         },
         {
           "n°": "8",
@@ -917,7 +927,9 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 5,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 5.9,
+          "cote_tendance": ""
         },
         {
           "n°": "9",
@@ -957,7 +969,10 @@
           "equipement(s)": "",
           "nb_courses": 29,
           "nb_victoires": 10,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 5.9,
+          "cote_tendance": "+",
+          "cote_reference": 5.7
         },
         {
           "n°": "11",
@@ -980,6 +995,7 @@
           "nb_places": 14
         }
       ],
+      "typePiste": "GAZON",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1049,8 +1065,9 @@
           "nb_courses": 5,
           "nb_victoires": 2,
           "nb_places": 2,
-          "cote": 9.7,
-          "cote_tendance": ""
+          "cote": 10.0,
+          "cote_tendance": "-",
+          "cote_reference": 23.0
         },
         {
           "n°": "4",
@@ -1071,8 +1088,9 @@
           "nb_courses": 12,
           "nb_victoires": 5,
           "nb_places": 6,
-          "cote": 1.2,
-          "cote_tendance": "-"
+          "cote": 2.7,
+          "cote_tendance": "+",
+          "cote_reference": 1.9
         },
         {
           "n°": "5",
@@ -1092,7 +1110,9 @@
           "equipement(s)": "",
           "nb_courses": 18,
           "nb_victoires": 5,
-          "nb_places": 11
+          "nb_places": 11,
+          "cote": 16.0,
+          "cote_tendance": ""
         },
         {
           "n°": "6",
@@ -1112,7 +1132,9 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 5,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 16.0,
+          "cote_tendance": ""
         },
         {
           "n°": "7",
@@ -1132,27 +1154,10 @@
           "equipement(s)": "",
           "nb_courses": 31,
           "nb_victoires": 11,
-          "nb_places": 15
-        },
-        {
-          "n°": "8",
-          "cheval": "ASTRONOMER H.PU. 7 a.",
-          "cheval_url": "",
-          "père_mère": "Par: AIR FORCE BLUE et QARAABA (SHAMARDAL)",
-          "corde": "(Corde:08)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/02052026/R8/C11/P8.png",
-          "propriétaire": "ALICE BAMFORD AND MICHAEL B. TAB",
-          "entraineur": "S CALLAGHAN",
-          "éleveurs": "",
-          "jockey": "J CASTELLANO",
-          "poids": "55.5 kg",
-          "gains": "45386000",
-          "musique": "4p7p4p(25)2p",
-          "valeur": "55.5",
-          "equipement(s)": "",
-          "nb_courses": 25,
-          "nb_victoires": 3,
-          "nb_places": 14
+          "nb_places": 15,
+          "cote": 3.2,
+          "cote_tendance": "+",
+          "cote_reference": 2.3
         },
         {
           "n°": "9",
@@ -1172,7 +1177,10 @@
           "equipement(s)": "",
           "nb_courses": 13,
           "nb_victoires": 5,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 8.1,
+          "cote_tendance": "-",
+          "cote_reference": 11.0
         },
         {
           "n°": "10",
@@ -1193,10 +1201,12 @@
           "nb_courses": 28,
           "nb_victoires": 7,
           "nb_places": 16,
-          "cote": 4.8,
-          "cote_tendance": "+"
+          "cote": 8.1,
+          "cote_tendance": "-",
+          "cote_reference": 11.0
         }
       ],
+      "typePiste": "HERBE",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1597,7 +1607,7 @@
           "propriétaire": "CALUMET FARM (BRAD KELLEY)",
           "entraineur": "D F O'NEILL",
           "éleveurs": "",
-          "jockey": "RESERVISTE 1",
+          "jockey": "E JARAMILLO",
           "poids": "57 kg",
           "gains": "8350000",
           "musique": "7p2p6p1p(25)",
@@ -1606,28 +1616,9 @@
           "nb_courses": 5,
           "nb_victoires": 1,
           "nb_places": 1
-        },
-        {
-          "n°": "24",
-          "cheval": "CORONA DE ORO M.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: BOLT D'ORO et LEMON DE ORO (LEMON DROP KID)",
-          "corde": "(Corde:24)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/02052026/R8/C12/P24.png",
-          "propriétaire": "ON OUR OWN STABLE LLC, COMMONWEA",
-          "entraineur": "D STEWART",
-          "éleveurs": "",
-          "jockey": "RESERVISTE 2",
-          "poids": "57 kg",
-          "gains": "9254000",
-          "musique": "3p1p2p(25)3p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 5,
-          "nb_victoires": 1,
-          "nb_places": 3
         }
       ],
+      "typePiste": "GAZON",
       "cordeCourse": "CORDE_GAUCHE"
     }
   ]

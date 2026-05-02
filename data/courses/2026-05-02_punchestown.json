@@ -1,7 +1,7 @@
 {
   "hippodrome": "PUNCHESTOWN",
   "type_reunion": "HAIE",
-  "date_extraction": "2026-05-02T06:56:25.475411",
+  "date_extraction": "2026-05-02T10:46:52.224611",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/02052026/R7",
   "courses": [
     {
@@ -30,7 +30,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 2,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 46.0,
+          "cote_tendance": "+",
+          "cote_reference": 45.0
         },
         {
           "n°": "2",
@@ -51,8 +54,9 @@
           "nb_courses": 8,
           "nb_victoires": 6,
           "nb_places": 2,
-          "cote": 1.1,
-          "cote_tendance": ""
+          "cote": 1.2,
+          "cote_tendance": "",
+          "cote_reference": 1.2
         },
         {
           "n°": "3",
@@ -73,8 +77,9 @@
           "nb_courses": 5,
           "nb_victoires": 2,
           "nb_places": 3,
-          "cote": 52.0,
-          "cote_tendance": "+"
+          "cote": 11.0,
+          "cote_tendance": "-",
+          "cote_reference": 12.0
         },
         {
           "n°": "4",
@@ -95,10 +100,13 @@
           "nb_courses": 4,
           "nb_victoires": 4,
           "nb_places": 0,
-          "cote": 8.0,
-          "cote_tendance": "-"
+          "cote": 3.8,
+          "cote_tendance": "",
+          "cote_reference": 3.8
         }
       ],
+      "terrain": "Souple",
+      "penetrometre": "3,5",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -128,8 +136,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 2.6,
-          "cote_tendance": "-"
+          "cote": 11.0,
+          "cote_tendance": "+",
+          "cote_reference": 11.0
         },
         {
           "n°": "2",
@@ -150,8 +159,9 @@
           "nb_courses": 5,
           "nb_victoires": 1,
           "nb_places": 0,
-          "cote": 5.2,
-          "cote_tendance": "+"
+          "cote": 50.0,
+          "cote_tendance": "+",
+          "cote_reference": 49.0
         },
         {
           "n°": "3",
@@ -171,7 +181,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 16.0,
+          "cote_tendance": "+",
+          "cote_reference": 16.0
         },
         {
           "n°": "4",
@@ -191,7 +204,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 25.0,
+          "cote_tendance": "+",
+          "cote_reference": 24.0
         },
         {
           "n°": "5",
@@ -211,7 +227,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 2.0,
+          "cote_tendance": "+",
+          "cote_reference": 1.9
         },
         {
           "n°": "6",
@@ -231,7 +250,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 25.0,
+          "cote_tendance": "+",
+          "cote_reference": 24.0
         },
         {
           "n°": "7",
@@ -252,8 +274,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 5.2,
-          "cote_tendance": "+"
+          "cote": 7.2,
+          "cote_tendance": "+",
+          "cote_reference": 7.1
         },
         {
           "n°": "8",
@@ -273,7 +296,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 16.0,
+          "cote_tendance": "+",
+          "cote_reference": 16.0
         },
         {
           "n°": "9",
@@ -293,29 +319,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 2
-        },
-        {
-          "n°": "10",
-          "cheval": "PROACTIF H.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MASKED MARVEL et BALDER PHENIX (PRESENTING)",
-          "corde": "",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/02052026/R7/C5/P10.png",
-          "propriétaire": "JOHN P. MCMANUS",
-          "entraineur": "W.P. MULLINS",
-          "éleveurs": "",
-          "jockey": "H. COBDEN",
-          "poids": "69.5 kg",
-          "gains": "4020000",
-          "musique": "1h9h1h(25)1h",
-          "valeur": "69.5",
-          "equipement(s)": "",
-          "nb_courses": 2,
-          "nb_victoires": 2,
-          "nb_places": 0,
-          "cote": 2.6,
-          "cote_tendance": "-"
+          "nb_places": 2,
+          "cote": 50.0,
+          "cote_tendance": "+",
+          "cote_reference": 49.0
         },
         {
           "n°": "11",
@@ -335,7 +342,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 1,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 33.0,
+          "cote_tendance": "+",
+          "cote_reference": 33.0
         },
         {
           "n°": "12",
@@ -355,7 +365,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 16.0,
+          "cote_tendance": "+",
+          "cote_reference": 15.0
         },
         {
           "n°": "13",
@@ -375,9 +388,14 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 20.0,
+          "cote_tendance": "-",
+          "cote_reference": 33.0
         }
       ],
+      "terrain": "Souple",
+      "penetrometre": "3,5",
       "cordeCourse": "CORDE_DROITE"
     }
   ]
