@@ -2847,9 +2847,147 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             resultat.rang = rang;
             scorePrec = score;
         });
-        
+
         return resultatsTries;
-    }
+    },
+
+    // ============================================================
+    // OPTIMAL FORMULA APPLIER
+    // Applique les formules best_formulas.json (calculées par stats.html)
+    // sur un participant pour obtenir un score optimal.
+    // Utilisé par index.html pour afficher le rang optimal en plus du rang actuel.
+    // ============================================================
+
+    _bestFormulas: null,
+
+    async loadBestFormulas() {
+        if (this._bestFormulas) return this._bestFormulas;
+        try {
+            const r = await fetch(`https://raw.githubusercontent.com/bencode92/Hippique/main/data/best_formulas.json?_=${Date.now()}`);
+            if (r.ok) this._bestFormulas = await r.json();
+        } catch (e) { console.warn('best_formulas.json indisponible', e); }
+        return this._bestFormulas;
+    },
+
+    // Détermine le bucket pour une distance (priorité fine > coarse)
+    bucketForDistance(distance) {
+        if (!this._bestFormulas) return null;
+        const fines = [
+            ['1000m', 900, 1099], ['1200m', 1100, 1299], ['1300m', 1300, 1399],
+            ['1400m', 1400, 1499], ['1500m', 1500, 1599], ['1600m', 1600, 1699],
+            ['1800m', 1700, 1899], ['2000m', 1900, 2099], ['2100m', 2100, 2199],
+            ['2400m', 2200, 2500], ['3000m+', 2600, 99999],
+        ];
+        for (const [k, lo, hi] of fines) {
+            if (distance >= lo && distance <= hi && this._bestFormulas[k]) return k;
+        }
+        if (distance < 1400) return 'sprint';
+        if (distance < 1700) return 'mile';
+        if (distance < 2200) return 'middle';
+        return 'staying';
+    },
+
+    // Calcule la valeur de chaque levier pour un participant
+    // (port simplifié de computeLeviers de stats.html, utilise les data déjà chargées)
+    computeLeviersForParticipant(participant) {
+        const nomBase = this.extraireNomBaseCheval(participant.cheval);
+        const ch = this.trouverItemDansClassement(this.data.chevaux, nomBase, 'chevaux');
+        const ch25 = this.trouverItemDansClassement(this.dataHistorique?.chevaux_2025 || [], nomBase, 'chevaux');
+        const jk = this.trouverItemDansClassement(this.data.jockeys, participant.jockey, 'jockeys');
+        const jk25 = this.trouverItemDansClassement(this.dataHistorique?.jockeys_2025 || [], participant.jockey, 'jockeys');
+        const cr = this.trouverItemDansClassement(this.data.cravache_or, participant.jockey, 'cravache_or');
+        const cr25 = this.trouverItemDansClassement(this.dataHistorique?.cravache_or_2025 || [], participant.jockey, 'cravache_or');
+
+        const coteVal = parseFloat(participant.cote) || 0;
+        const coteRef = parseFloat(participant.cote_reference) || 0;
+        const valeur = parseFloat(participant.valeur) || 0;
+        const gains = parseInt(String(participant.gains || '').replace(/\D/g, '')) || 0;
+        const nbC = parseInt(participant.nb_courses) || 0;
+        const nbV = parseInt(participant.nb_victoires) || 0;
+        const nbP = parseInt(participant.nb_places) || 0;
+
+        // Helper : max valeur entre 25 et 26 pour un champ
+        const mxF = (a, b, f) => Math.max(a ? parseFloat(a[f] || 0) : 0, b ? parseFloat(b[f] || 0) : 0);
+        // Score rang : haut si rang faible (1er = 100, derniers = 0)
+        const popCh = (this.data.chevaux || []).length || 1;
+        const popJk = (this.data.jockeys || []).length || 1;
+        const popCr = (this.data.cravache_or || []).length || 1;
+        const popCh25 = (this.dataHistorique?.chevaux_2025 || []).length || 1;
+        const popJk25 = (this.dataHistorique?.jockeys_2025 || []).length || 1;
+        const popCr25 = (this.dataHistorique?.cravache_or_2025 || []).length || 1;
+        const rS = (it, pp) => it ? 100 * (1 - (parseInt(it.Rang) - 1) / pp) : 50;
+        const bR = (a, pA, b, pB) => {
+            const sa = a ? rS(a, pA) : null, sb = b ? rS(b, pB) : null;
+            return sa !== null && sb !== null ? Math.max(sa, sb) : (sa ?? sb ?? 50);
+        };
+
+        const scoreCote = coteVal > 1 ? (1 / coteVal) * 100 : 50;
+        const scoreCoteRef = coteRef > 1 ? (1 / coteRef) * 100 : 50;
+        let deriveScore = 50;
+        if (coteVal > 1 && coteRef > 1) {
+            deriveScore = 50 + ((coteRef - coteVal) / coteRef * 100) * 2;
+        }
+
+        return {
+            'Cote (1/cote)': scoreCote,
+            'Cote ref': scoreCoteRef,
+            'Dérive cote': deriveScore,
+            'Valeur FG': valeur > 0 ? valeur : 50,
+            'Musique': 50, // pas dispo simple ici, fallback neutre
+            'Gains (log)': gains > 0 ? Math.log10(gains) * 10 : 0,
+            'TauxV indiv': nbC >= 2 ? nbV / nbC * 100 : 8,
+            'TauxP indiv': nbC >= 2 ? nbP / nbC * 100 : 30,
+            'NbVictoires': nbV * 5,
+            'Ch TauxV': mxF(ch25, ch, 'TauxVictoire') || 8,
+            'Ch TauxP': mxF(ch25, ch, 'TauxPlace') || 30,
+            'Ch Rang': bR(ch25, popCh25, ch, popCh),
+            'Ch GainMoy': Math.max(ch25?.GainMoyen || 0, ch?.GainMoyen || 0) > 0
+                ? Math.log10(Math.max(ch25?.GainMoyen || 0, ch?.GainMoyen || 0)) * 15 : 0,
+            'Ch ScoreMixte': mxF(ch25, ch, 'ScoreMixte'),
+            'Jk TauxV': mxF(jk25, jk, 'TauxVictoire') || 8,
+            'Jk TauxP': mxF(jk25, jk, 'TauxPlace') || 30,
+            'Jk Rang': bR(jk25, popJk25, jk, popJk),
+            'Jk ScoreMixte': mxF(jk25, jk, 'ScoreMixte'),
+            'Jk GainMoy': Math.max(jk25?.GainMoyen || 0, jk?.GainMoyen || 0) > 0
+                ? Math.log10(Math.max(jk25?.GainMoyen || 0, jk?.GainMoyen || 0)) * 15 : 0,
+            'Cravache Rang': bR(cr25, popCr25, cr, popCr),
+            'Forme récente': 50,
+            'Combo Jk*Ent': 10,
+        };
+    },
+
+    // Applique la formule optimale du bucket à tous les participants d'une course
+    // Retourne map { participantNum: { score, rang } }
+    async computeOptimalRanks(course) {
+        await this.loadBestFormulas();
+        if (!this._bestFormulas || !course?.participants) return null;
+        const distance = parseInt(String(course.distance || '').replace(/[^0-9]/g, '')) || 0;
+        const bucket = this.bucketForDistance(distance);
+        const formula = bucket && this._bestFormulas[bucket];
+        if (!formula) return null;
+
+        const scored = course.participants.map(p => {
+            const leviers = this.computeLeviersForParticipant(p);
+            const score = formula.leviers.reduce(
+                (s, lv, i) => s + (leviers[lv] || 0) * formula.poids[i], 0
+            );
+            return { participant: p, score };
+        });
+
+        // Trier par score DESC, cote ASC en tie-breaker
+        scored.sort((a, b) => {
+            const diff = b.score - a.score;
+            if (Math.abs(diff) > 0.001) return diff;
+            return (parseFloat(a.participant.cote) || 999) - (parseFloat(b.participant.cote) || 999);
+        });
+
+        const result = { _bucket: bucket, _formula: formula };
+        scored.forEach((s, i) => {
+            const id = s.participant['n°'] || s.participant.numero || s.participant.n;
+            result[id] = { score: s.score, rang: i + 1 };
+        });
+        return result;
+    },
 };
 
 // Exporter le module pour le rendre disponible globalement
