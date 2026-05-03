@@ -2242,13 +2242,15 @@
                     const parCote = [...scoresPredictifs]
                         .filter(r => parseFloat(r.participant.cote || 0) > 1)
                         .sort((a, b) => parseFloat(a.participant.cote) - parseFloat(b.participant.cote));
-                    parCote.forEach((r, i) => { rangCoteMap[r.participant.numero || r.participant.n] = i + 1; });
+                    // Le numéro du cheval est dans participant['n°'] (avec degré), pas .numero ni .n (=jockey)
+                    const partKey = p => p['n°'] || p.numero || p.n;
+                    parCote.forEach((r, i) => { rangCoteMap[partKey(r.participant)] = i + 1; });
 
                     // Map id→rangActuel : on fait un tri par score décroissant pour avoir le rang
                     const rangActuelMap = {};
                     [...scoresPredictifs]
                         .sort((a, b) => parseFloat(b.scorePredictif.score) - parseFloat(a.scorePredictif.score))
-                        .forEach((r, i) => { rangActuelMap[r.participant.numero || r.participant.n] = i + 1; });
+                        .forEach((r, i) => { rangActuelMap[partKey(r.participant)] = i + 1; });
                     
                     if (scoresPredictifs.length === 0) {
                         participantsContainer.innerHTML = `
@@ -2389,7 +2391,7 @@
                                     </div>
                                 </td>
                                 ${(() => {
-                                    const partId = participant.numero || participant.n;
+                                    const partId = participant['n°'] || participant.numero || participant.n;
                                     const rgCote = rangCoteMap[partId];
                                     const rgActuel = rangActuelMap[partId];
                                     const inTopActuel = rgActuel && rgActuel <= 3;
