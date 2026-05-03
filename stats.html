@@ -1737,22 +1737,21 @@
                 html += `</div>`;
             }
 
-            // Sauvegarder le MEILLEUR SOLO par distance (= même formule que le détail)
-            // Comme ça le terminal utilise exactement la même formule que le détail
+            // Exporter le VRAI champion par bucket (solo OU combo, selon ce qui est meilleur)
+            // = exactement ce qui est affiché dans la banner "🏆 CHAMPION" pour chaque onglet
+            // Métrique de tri = Top3 (stratégie Dutch sur top 3-4)
             const bestFormulas = {};
-            ['sprint', 'mile', 'middle', 'staying'].forEach(bucket => {
-                const courses = categories[bucket];
-                if (!courses || courses.length < 3) return;
-                const soloRes = levierNames.map(name => ({ name, ...evalLevier(courses, name) })).sort((a,b) => b.pN1 - a.pN1);
-                const best = soloRes[0];
-                if (best) {
-                    bestFormulas[bucket] = {
-                        leviers: [best.name],
-                        poids: [1],
-                        top1: best.pN1, top2: best.pN2, top3: best.pN3,
-                        courses: best.t
-                    };
-                }
+            Object.entries(championsByBucket).forEach(([bucket, champ]) => {
+                if (!champ) return;
+                // champ.kind === 'solo' : champ.label est le nom du levier, pas de leviers/weights
+                // champ.kind === 'combo' : champ a leviers + weights
+                const leviers = champ.kind === 'combo' ? champ.leviers : [champ.label];
+                const poids = champ.kind === 'combo' ? champ.weights : [1];
+                bestFormulas[bucket] = {
+                    leviers, poids,
+                    top1: champ.pN1, top2: champ.pN2, top3: champ.pN3,
+                    courses: champ.t,
+                };
             });
 
             // Afficher les formules + bouton copie rapide
