@@ -1,0 +1,52 @@
+{
+  "_doc": "Filtre hippodromes pour l'analyse leviers (stats.html + live-scoring.js).",
+  "_doc_2": "Si whitelist_fr est non-vide, SEULES les courses dont l'hippodrome match (préfixe normalisé) sont gardées pour l'apprentissage des champions.",
+  "_doc_3": "blacklist_explicit s'applique en plus : exclusion forcée même si match dans whitelist.",
+  "_doc_4": "Format : noms normalisés en minuscule, sans accents, espaces et tirets équivalents. Match par préfixe.",
+  "_updated": "2026-05-03",
+
+  "whitelist_fr": [
+    "parislongchamp", "longchamp",
+    "chantilly", "deauville", "saint-cloud", "st-cloud", "fontainebleau",
+    "maisons-laffitte", "lyon-parilly",
+    "agen", "ajaccio", "amiens", "angers", "argentan", "arles",
+    "bayonne", "bordeaux", "borely", "bouscat",
+    "cagnes-sur-mer", "chartres", "chateaubriant", "chatelaillon",
+    "compiegne", "craon", "dax", "dieppe", "durtal", "evreux", "feurs",
+    "hyeres", "lignieres", "lisieux",
+    "machecoul", "marseille", "mauquenchy", "moulins",
+    "nancy", "nantes", "nimes", "pau", "pompadour", "pornichet",
+    "redon", "saint-brieuc", "saint-malo", "salon-de-provence", "salon",
+    "senonnes-pouance", "senonnes",
+    "strasbourg", "tarbes", "toulouse", "vichy", "vire",
+    "auteuil", "enghien", "vincennes", "cabourg", "caen"
+  ],
+
+  "blacklist_explicit": [
+    "ascot", "cheltenham", "aintree", "doncaster", "newmarket",
+    "leopardstown", "hereford", "york", "epsom", "goodwood", "haydock",
+    "kempton", "lingfield", "newcastle", "ripon", "sandown", "windsor",
+    "churchill_downs", "churchill-downs", "downs",
+    "gulfstream_park", "gulfstream-park", "gulfstream",
+    "aqueduct", "saratoga", "belmont", "santa_anita", "santa-anita",
+    "keeneland", "woodbine", "del_mar", "del-mar", "monmouth",
+    "sha_tin", "sha-tin", "happy_valley", "happy-valley", "kong",
+    "dortmund", "dusseldorf", "gelsenkirchen", "krefeld",
+    "munich-daglfing", "munich-riem", "munich",
+    "hamburg", "baden-baden", "baden", "hannover", "frankfurt",
+    "koln", "cologne", "berlin",
+    "australie", "albany", "bunbury", "barker",
+    "sydney", "melbourne", "flemington", "caulfield", "randwick",
+    "doomben", "eagle_farm",
+    "arg.palermo", "arg-palermo", "palermo", "san_isidro", "san-isidro", "isidro",
+    "concepcion", "valparaiso", "maronas", "casablanca",
+    "k.abdulaziz", "k-abdulaziz", "riyadh", "meydan", "abu_dhabi",
+    "avenches", "duindigt",
+    "capannelle", "milano", "milan", "san_siro",
+    "cidade_jardim", "gavea",
+    "son_pardo", "son-pardo", "melilla", "dos_hermanas",
+    "tokyo", "kyoto", "nakayama", "hanshin", "sapporo",
+    "valparaiso", "maronas",
+    "dubai"
+  ]
+}

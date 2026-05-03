@@ -373,8 +373,27 @@ function computeBestFormulasFromHistory() {
   // Les courses 2025 n'ont pas les cotes capturées. Donc on part du premier snapshot daté.
   const TRAINING_START_DATE = '2026-04-16';
 
+  // Filtre hippodromes : whitelist FR + blacklist étrangers (rankings FR inutiles ailleurs)
+  let hippoFilter = null;
+  try {
+    hippoFilter = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'hippos_filter.json'), 'utf8'));
+  } catch { _log('⚠️  hippos_filter.json non chargé — pas de filtre hippodromes'); }
+  const normalizeHippo = (n) => (n || '').toString().toLowerCase()
+    .normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/[\s_-]+/g, '-').replace(/[^a-z0-9.-]/g, '').replace(/^-+|-+$/g, '');
+  const blacklistN = (hippoFilter?.blacklist_explicit || []).map(normalizeHippo);
+  const whitelistN = (hippoFilter?.whitelist_fr || []).map(normalizeHippo);
+  function isHippoAllowed(name) {
+    if (!hippoFilter) return true;
+    const n = normalizeHippo(name);
+    if (!n) return false;
+    if (blacklistN.some(b => n === b || n.startsWith(b + '-') || n.startsWith(b + '.'))) return false;
+    if (!whitelistN.length) return true;
+    return whitelistN.some(w => n === w || n.startsWith(w + '-') || n.startsWith(w + '.'));
+  }
+
   // Charger les courses terminées — anti-leakage strict (snapshots datés dispos)
-  let skippedBefore = 0, kept = 0;
+  let skippedBefore = 0, kept = 0, skippedHippo = 0;
   files.forEach(f => {
     try {
       const data = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
@@ -383,6 +402,10 @@ function computeBestFormulasFromHistory() {
       // Filtre : pas de snapshot daté avant TRAINING_START_DATE → rankings biaisés → skip
       if (fileDate && fileDate < TRAINING_START_DATE) { skippedBefore++; return; }
       const hippoName = f.slice(11, -5).toLowerCase();
+      // Filtre hippodromes (whitelist FR + blacklist étrangers)
+      if (!isHippoAllowed(hippoName) && !isHippoAllowed(data.hippodrome)) {
+        skippedHippo++; return;
+      }
       const isPremium = PREMIUM_HIPPOS.has(hippoName);
 
       (data.courses || []).forEach(c => {
@@ -429,7 +452,7 @@ function computeBestFormulasFromHistory() {
     } catch {}
   });
 
-  _log(`📊 Entraînement : ${kept} fichiers courses conservés (${skippedBefore} skippés < ${TRAINING_START_DATE} = leakage évité)`);
+  _log(`📊 Entraînement : ${kept} fichiers courses conservés (${skippedBefore} skippés < ${TRAINING_START_DATE} = leakage évité, ${skippedHippo} skippés hors whitelist FR ou blacklistés)`);
 
   // Helpers de génération de combinaisons (identiques à stats.html)
   function combosOfSize(items, size) {

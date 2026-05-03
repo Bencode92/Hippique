@@ -541,6 +541,41 @@
     }
 
     // ============================================================
+    // FILTRE HIPPODROMES (whitelist FR + blacklist étrangers)
+    // ============================================================
+    let _hippoFilter = null;
+    async function loadHippoFilter() {
+        if (_hippoFilter) return _hippoFilter;
+        try {
+            const r = await fetchWithRetry(`https://raw.githubusercontent.com/bencode92/Hippique/main/data/hippos_filter.json?_=${Date.now()}`);
+            if (r.ok) _hippoFilter = await r.json();
+        } catch (e) { console.warn('hippos_filter.json indisponible', e); }
+        return _hippoFilter;
+    }
+    function normalizeHippo(name) {
+        if (!name) return '';
+        return name.toString().toLowerCase()
+            .normalize('NFD').replace(/[̀-ͯ]/g, '') // virer accents
+            .replace(/[\s_-]+/g, '-')                          // espaces & _ → -
+            .replace(/[^a-z0-9.-]/g, '')                       // virer chars exotiques
+            .replace(/^-+|-+$/g, '');
+    }
+    // Renvoie true si le hippo passe le filtre (whitelist non vide → doit y matcher,
+    // blacklist applique en plus). Match par préfixe pour gérer "saint-cloud-2" → "saint-cloud".
+    function isHippoAllowed(hippoName) {
+        if (!_hippoFilter) return true; // si filtre pas chargé, on laisse passer
+        const n = normalizeHippo(hippoName);
+        if (!n) return false;
+        const black = _hippoFilter.blacklist_explicit || [];
+        const blackNorm = black.map(normalizeHippo);
+        if (blackNorm.some(b => n === b || n.startsWith(b + '-') || n.startsWith(b + '.'))) return false;
+        const white = _hippoFilter.whitelist_fr || [];
+        if (!white.length) return true; // whitelist vide → tout passe (sauf blacklistés)
+        const whiteNorm = white.map(normalizeHippo);
+        return whiteNorm.some(w => n === w || n.startsWith(w + '-') || n.startsWith(w + '.'));
+    }
+
+    // ============================================================
     // ANALYSIS
     // ============================================================
     async function runAnalysis() {
@@ -555,6 +590,7 @@
         container.innerHTML = '<div class="loading-overlay"><div class="spinner"></div><p>Chargement des fichiers...</p><p class="progress-text" id="progress"></p></div>';
 
         try {
+            await loadHippoFilter();
             const files = await loadFileList();
 
             const filtered = files.filter(f => {
@@ -609,6 +645,11 @@
 
                     const hippo = (data.hippodrome || '').toUpperCase();
                     const fileDate = (batch[idx].name.match(/^(\d{4}-\d{2}-\d{2})/) || [])[1] || '';
+
+                    // Filtre whitelist FR + blacklist étrangers (rankings FR inutiles ailleurs)
+                    // On lit aussi le hippo depuis le nom de fichier en fallback
+                    const hippoFromFile = (batch[idx].name.match(/\d{4}-\d{2}-\d{2}_(.+)\.json$/) || [])[1] || '';
+                    if (!isHippoAllowed(hippo) && !isHippoAllowed(hippoFromFile)) return;
 
                     (data.courses || []).forEach(course => {
                         if (course.type && course.type.toLowerCase() !== 'plat') return;
