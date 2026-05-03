@@ -2152,12 +2152,22 @@
                         </table>
                     </div>
                     
-                    <div class="action-buttons">
-                        <button class="action-btn primary" id="sort-by-score-${detailId}">
-                            <i class="fas fa-sort-amount-down"></i> Trier par score prédictif
+                    <div class="action-buttons" style="flex-wrap:wrap;gap:0.4rem">
+                        <span style="opacity:0.7;font-size:0.85rem;align-self:center;margin-right:0.3rem">Trier :</span>
+                        <button class="action-btn primary sort-btn" data-detail="${detailId}" data-key="numero" data-asc="true" title="Tri par numéro de partant">
+                            <i class="fas fa-list-ol"></i> N°
                         </button>
-                        <button class="action-btn secondary" id="simulate-bets-${detailId}">
-                            <i class="fas fa-calculator"></i> Simuler des paris sur cette course
+                        <button class="action-btn secondary sort-btn" data-detail="${detailId}" data-key="score" data-asc="false" title="Tri par score formule actuelle (DESC)">
+                            <i class="fas fa-star"></i> Score actuel
+                        </button>
+                        <button class="action-btn secondary sort-btn" data-detail="${detailId}" data-key="rg-optimal" data-asc="true" title="Tri par rang formule optimale (1 = meilleur)">
+                            <i class="fas fa-flask"></i> Rg Optimal
+                        </button>
+                        <button class="action-btn secondary sort-btn" data-detail="${detailId}" data-key="rg-cote" data-asc="true" title="Tri par cote ASC (favoris marché)">
+                            <i class="fas fa-coins"></i> Rg Cote
+                        </button>
+                        <button class="action-btn secondary" id="simulate-bets-${detailId}" style="margin-left:auto">
+                            <i class="fas fa-calculator"></i> Simuler des paris
                         </button>
                     </div>
                 `;
@@ -2351,7 +2361,7 @@
                         }
 
                         participantsHTML += `
-                            <tr data-score="${scorePredictif.score}" data-numero="${participant.numero || 0}" data-cheval="${participant.cheval}" data-cote="${participant.cote || 0}">
+                            <tr data-score="${scorePredictif.score}" data-numero="${participant.numero || 0}" data-cheval="${participant.cheval}" data-cote="${participant.cote || 0}" data-rg-optimal="${optimalResult?.[participant['n°'] || participant.numero || participant.n]?.rang || 999}" data-rg-cote="${rangCoteMap[participant['n°'] || participant.numero || participant.n] || 999}">
                                 <td style="text-align: center;">
                                     <div class="horse-number">${participant['n°'] || participant.n || participant.numero || '-'}</div>
                                     ${cordeDisplay}
@@ -2494,44 +2504,33 @@
 
                     participantsContainer.innerHTML = participantsHTML;
 
-                    // Ajouter l'événement de tri au bouton
-                    const sortButton = document.getElementById(`sort-by-score-${detailId}`);
-                    sortButton.addEventListener('click', function() {
-                        const rows = Array.from(participantsContainer.querySelectorAll('tr'));
-                        const sortedRows = rows.sort((a, b) => {
-                            const scoreA = parseFloat(a.dataset.score || 0);
-                            const scoreB = parseFloat(b.dataset.score || 0);
-                            return scoreB - scoreA; // Décroissant
-                        });
-                        
-                        // Effacer le contenu actuel et réinsérer dans le nouvel ordre
-                        participantsContainer.innerHTML = '';
-                        sortedRows.forEach(row => {
-                            participantsContainer.appendChild(row);
-                        });
-                        
-                        // Mettre à jour le texte du bouton
-                        if (this.querySelector('i').classList.contains('fa-sort-amount-down')) {
-                            this.innerHTML = '<i class="fas fa-sort-amount-up"></i> Trier par numéro';
-                            this.title = 'Cliquez pour trier par numéro de participant';
-                        } else {
-                            this.innerHTML = '<i class="fas fa-sort-amount-down"></i> Trier par score prédictif';
-                            this.title = 'Cliquez pour trier par score prédictif';
-                            
-                            // Trier par numéro au lieu de par score
-                            const rowsByNumber = Array.from(participantsContainer.querySelectorAll('tr'));
-                            const sortedByNumber = rowsByNumber.sort((a, b) => {
-                                const numA = parseInt(a.dataset.numero || 0);
-                                const numB = parseInt(b.dataset.numero || 0);
-                                return numA - numB;
+                    // Tri générique : 1 handler pour les 4 boutons (N°, Score actuel, Rg Optimal, Rg Cote)
+                    document.querySelectorAll(`.sort-btn[data-detail="${detailId}"]`).forEach(btn => {
+                        btn.addEventListener('click', function() {
+                            const key = this.dataset.key;
+                            const asc = this.dataset.asc === 'true';
+                            // Highlight bouton actif
+                            document.querySelectorAll(`.sort-btn[data-detail="${detailId}"]`).forEach(b => b.classList.remove('primary'));
+                            document.querySelectorAll(`.sort-btn[data-detail="${detailId}"]`).forEach(b => { if (b !== this) b.classList.add('secondary'); });
+                            this.classList.add('primary');
+                            this.classList.remove('secondary');
+                            // Filtre les vraies <tr> participants (skip les <tr> ajoutées comme résumé : colspan)
+                            const allRows = Array.from(participantsContainer.querySelectorAll('tr'));
+                            const partRows = allRows.filter(r => !r.querySelector('td[colspan]'));
+                            const sumRows = allRows.filter(r => r.querySelector('td[colspan]'));
+                            partRows.sort((a, b) => {
+                                // getAttribute('data-XXX') marche peu importe le format kebab-case
+                                const va = parseFloat(a.getAttribute('data-' + key) || 0);
+                                const vb = parseFloat(b.getAttribute('data-' + key) || 0);
+                                return asc ? va - vb : vb - va;
                             });
-                            
                             participantsContainer.innerHTML = '';
-                            sortedByNumber.forEach(row => {
-                                participantsContainer.appendChild(row);
-                            });
-                        }
+                            partRows.forEach(r => participantsContainer.appendChild(r));
+                            sumRows.forEach(r => participantsContainer.appendChild(r));
+                        });
                     });
+                    // Tri initial = par numéro
+                    document.querySelector(`.sort-btn[data-detail="${detailId}"][data-key="numero"]`)?.click();
                     
                     // Ajouter l'événement pour ouvrir la simulation intégrée
                     const simulateButton = document.getElementById(`simulate-bets-${detailId}`);
