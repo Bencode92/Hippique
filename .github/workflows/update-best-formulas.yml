@@ -40,7 +40,10 @@ jobs:
       - name: Lancer la recherche levier
         run: |
           echo "🔬 Lancement live-scoring.js (recherche des champions par bucket)..."
-          node live-scoring.js 2>&1 | grep -E "💾|🔄|📋|sauvegard|champion|✅" | head -50 || true
+          # FORCE_COLOR=0 désactive les codes ANSI dans les logs (plus lisibles)
+          # NODE_NO_WARNINGS=1 supprime les warnings Node verbeux
+          # stdbuf -oL force le flush ligne par ligne (sinon Node buffer en mode pipe → on voit rien pendant 5min)
+          FORCE_COLOR=0 NODE_NO_WARNINGS=1 stdbuf -oL -eL node live-scoring.js
 
       - name: Vérifier le résultat
         run: |
