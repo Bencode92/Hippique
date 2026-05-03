@@ -1816,7 +1816,7 @@
             }
             
             // Fonction pour afficher les hippodromes et leurs courses
-            function displayHippodromes() {
+            async function displayHippodromes() {
                 // Si aucune donnée n'est disponible
                 if (Object.keys(courseData).length === 0) {
                     resultsContainer.innerHTML = `
@@ -1865,8 +1865,12 @@
                     );
                     let reunionBanner = '';
                     if (coursesTerminees.length >= 2) {
-                        let rN1=0, rF1=0, rN2=0, rF2=0, rN3=0, rF3=0, rTotal=coursesTerminees.length;
-                        coursesTerminees.forEach(c => {
+                        let rN1=0, rF1=0, rN2=0, rF2=0, rN3=0, rF3=0, rO1=0, rO2=0, rO3=0, rTotal=coursesTerminees.length;
+                        // Pré-calcul du ranking optimal pour chaque course terminée
+                        const optimalRanksPerCourse = await Promise.all(
+                            coursesTerminees.map(c => rankingLoader.computeOptimalRanks(c).catch(() => null))
+                        );
+                        coursesTerminees.forEach((c, ci) => {
                             const parts = c.participants || [];
                             const avecCotes = parts.filter(p => p.cote > 1);
                             const parCote = [...avecCotes].sort((a,b) => a.cote - b.cote);
@@ -1902,29 +1906,57 @@
                             if (parCote[0]?.arrivee === 1) rF1++;
                             if (parCote.slice(0,2).some(p => p.arrivee === 1)) rF2++;
                             if (parCote.slice(0,3).some(p => p.arrivee === 1)) rF3++;
+
+                            // Stats formule optimale (champion stats par bucket)
+                            const optMap = optimalRanksPerCourse[ci];
+                            if (optMap) {
+                                const winner = parts.find(p => p.arrivee === 1);
+                                const winnerKey = winner && (winner['n°'] || winner.numero || winner.n);
+                                const winnerRank = winnerKey ? optMap[winnerKey]?.rang : null;
+                                if (winnerRank === 1) rO1++;
+                                if (winnerRank && winnerRank <= 2) rO2++;
+                                if (winnerRank && winnerRank <= 3) rO3++;
+                            }
                         });
-                        const pN1 = Math.round(rN1/rTotal*100);
-                        const pF1 = Math.round(rF1/rTotal*100);
-                        const pN2 = Math.round(rN2/rTotal*100);
-                        const pF2 = Math.round(rF2/rTotal*100);
-                        const pN3 = Math.round(rN3/rTotal*100);
-                        const pF3 = Math.round(rF3/rTotal*100);
-                        const n1Color = pN1 >= pF1 ? '#40e05a' : '#e05a40';
-                        const f1Color = pF1 >= pN1 ? '#40e05a' : '#e05a40';
-                        const n2Color = pN2 >= pF2 ? '#40e05a' : '#e05a40';
-                        const f2Color = pF2 >= pN2 ? '#40e05a' : '#e05a40';
-                        const n3Color = pN3 >= pF3 ? '#40e05a' : '#e05a40';
-                        const f3Color = pF3 >= pN3 ? '#40e05a' : '#e05a40';
+                        const pN1 = Math.round(rN1/rTotal*100), pN2 = Math.round(rN2/rTotal*100), pN3 = Math.round(rN3/rTotal*100);
+                        const pF1 = Math.round(rF1/rTotal*100), pF2 = Math.round(rF2/rTotal*100), pF3 = Math.round(rF3/rTotal*100);
+                        const pO1 = Math.round(rO1/rTotal*100), pO2 = Math.round(rO2/rTotal*100), pO3 = Math.round(rO3/rTotal*100);
+                        // Couleur : vert si méthode = max parmi les 3, rouge sinon
+                        const colorBest = (val, others) => Math.max(val, ...others) === val ? '#40e05a' : '#e05a40';
 
                         reunionBanner = `
-                            <div style="background:rgba(0,0,0,0.25);border-radius:8px;padding:8px 12px;margin-bottom:10px;font-size:0.85em;display:flex;justify-content:space-around;flex-wrap:wrap;gap:8px">
-                                <span>📊 <strong>${rTotal}</strong> courses</span>
-                                <span>Notre #1 <strong style="color:${n1Color}">${pN1}%</strong> (${rN1}/${rTotal})</span>
-                                <span>Fav cote <strong style="color:${f1Color}">${pF1}%</strong> (${rF1}/${rTotal})</span>
-                                <span>Top2 <strong style="color:${n2Color}">${pN2}%</strong></span>
-                                <span>2 meill. cotes <strong style="color:${f2Color}">${pF2}%</strong></span>
-                                <span>Top3 <strong style="color:${n3Color}">${pN3}%</strong></span>
-                                <span>3 meill. cotes <strong style="color:${f3Color}">${pF3}%</strong></span>
+                            <div style="background:rgba(0,0,0,0.25);border-radius:8px;padding:10px 14px;margin-bottom:10px;font-size:0.82em">
+                                <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;opacity:0.85">
+                                    <span>📊 <strong>${rTotal}</strong> courses terminées</span>
+                                </div>
+                                <table style="width:100%;border-collapse:collapse;font-size:0.95em">
+                                    <thead><tr style="opacity:0.55;text-align:center">
+                                        <th style="text-align:left;padding:2px 4px;font-weight:500">Méthode</th>
+                                        <th style="padding:2px 4px;font-weight:500">Top1</th>
+                                        <th style="padding:2px 4px;font-weight:500">Top2</th>
+                                        <th style="padding:2px 4px;font-weight:500">Top3</th>
+                                    </tr></thead>
+                                    <tbody style="text-align:center">
+                                        <tr style="border-top:1px solid rgba(255,255,255,0.08)">
+                                            <td style="text-align:left;padding:4px;opacity:0.8">📊 Actuelle</td>
+                                            <td style="padding:4px"><strong style="color:${colorBest(pN1,[pF1,pO1])}">${pN1}%</strong> <span style="opacity:0.4;font-size:0.85em">(${rN1}/${rTotal})</span></td>
+                                            <td style="padding:4px"><strong style="color:${colorBest(pN2,[pF2,pO2])}">${pN2}%</strong></td>
+                                            <td style="padding:4px"><strong style="color:${colorBest(pN3,[pF3,pO3])}">${pN3}%</strong></td>
+                                        </tr>
+                                        <tr style="border-top:1px solid rgba(255,255,255,0.08)">
+                                            <td style="text-align:left;padding:4px;opacity:0.8">🔬 Optimale</td>
+                                            <td style="padding:4px"><strong style="color:${colorBest(pO1,[pN1,pF1])}">${pO1}%</strong> <span style="opacity:0.4;font-size:0.85em">(${rO1}/${rTotal})</span></td>
+                                            <td style="padding:4px"><strong style="color:${colorBest(pO2,[pN2,pF2])}">${pO2}%</strong></td>
+                                            <td style="padding:4px"><strong style="color:${colorBest(pO3,[pN3,pF3])}">${pO3}%</strong></td>
+                                        </tr>
+                                        <tr style="border-top:1px solid rgba(255,255,255,0.08)">
+                                            <td style="text-align:left;padding:4px;opacity:0.8">💰 Cote</td>
+                                            <td style="padding:4px"><strong style="color:${colorBest(pF1,[pN1,pO1])}">${pF1}%</strong> <span style="opacity:0.4;font-size:0.85em">(${rF1}/${rTotal})</span></td>
+                                            <td style="padding:4px"><strong style="color:${colorBest(pF2,[pN2,pO2])}">${pF2}%</strong></td>
+                                            <td style="padding:4px"><strong style="color:${colorBest(pF3,[pN3,pO3])}">${pF3}%</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>`;
                     }
 
