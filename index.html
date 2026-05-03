@@ -2136,12 +2136,14 @@
                                     <th style="width:50px">Poids</th>
                                     <th style="width:50px">Cote</th>
                                     <th style="width:140px">Score</th>
+                                    <th style="width:65px" title="Rang dans les favoris cote (1=cote la + basse)">Rg Cote</th>
+                                    <th style="width:80px" title="Consensus : nombre de méthodes (Score actuel + Cote) où le cheval est dans le top 3">Consensus</th>
                                     <th style="width:55px">Arrivée</th>
                                 </tr>
                             </thead>
                             <tbody id="participants-${detailId}">
                                 <tr>
-                                    <td colspan="8" class="loading-indicator">
+                                    <td colspan="10" class="loading-indicator">
                                         <i class="fas fa-spinner fa-spin"></i> Calcul des scores prédictifs...
                                     </td>
                                 </tr>
@@ -2225,14 +2227,33 @@
                     if (existing) existing.remove();
                     const weightsInfo = document.createElement('p');
                     weightsInfo.className = 'formule-adaptee-info';
-                    weightsInfo.style.cssText = 'margin:0.4rem 0 0.8rem;padding:0.6rem 0.9rem;background:rgba(64,224,208,0.08);border-left:3px solid var(--accent);border-radius:4px;color:var(--accent);font-size:0.9rem';
-                    weightsInfo.innerHTML = `<i class="fas fa-balance-scale"></i> Formule adaptée : ${distLabel} (${courseContext.distance}m) + ${fieldLabel} (${courseContext.participants?.length || '?'} partants)`;
+                    weightsInfo.style.cssText = 'margin:0.4rem 0 0.8rem;padding:0.6rem 0.9rem;background:rgba(64,224,208,0.08);border-left:3px solid var(--accent);border-radius:4px;color:var(--accent);font-size:0.9rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:0.6rem';
+                    weightsInfo.innerHTML = `
+                        <span><i class="fas fa-balance-scale"></i> Formule adaptée : ${distLabel} (${courseContext.distance}m) + ${fieldLabel} (${courseContext.participants?.length || '?'} partants)</span>
+                        <a href="stats.html#course-${encodeURIComponent(courseName || '')}" target="_blank" rel="noopener" style="background:rgba(212,175,55,0.15);border:1px solid var(--gold);color:var(--gold);padding:0.3rem 0.7rem;border-radius:4px;font-size:0.8rem;text-decoration:none;white-space:nowrap">
+                            <i class="fas fa-flask"></i> Ranking optimal (stats)
+                        </a>`;
                     tableWrapper.parentNode.insertBefore(weightsInfo, tableWrapper);
+
+                    // Précalcul des rangs Cote pour la colonne supplémentaire
+                    // (on garde scoresPredictifs trié par numéro pour le rendu, mais on calcule
+                    //  un map id→rangCote en triant par cote ASC)
+                    const rangCoteMap = {};
+                    const parCote = [...scoresPredictifs]
+                        .filter(r => parseFloat(r.participant.cote || 0) > 1)
+                        .sort((a, b) => parseFloat(a.participant.cote) - parseFloat(b.participant.cote));
+                    parCote.forEach((r, i) => { rangCoteMap[r.participant.numero || r.participant.n] = i + 1; });
+
+                    // Map id→rangActuel : on fait un tri par score décroissant pour avoir le rang
+                    const rangActuelMap = {};
+                    [...scoresPredictifs]
+                        .sort((a, b) => parseFloat(b.scorePredictif.score) - parseFloat(a.scorePredictif.score))
+                        .forEach((r, i) => { rangActuelMap[r.participant.numero || r.participant.n] = i + 1; });
                     
                     if (scoresPredictifs.length === 0) {
                         participantsContainer.innerHTML = `
                             <tr>
-                                <td colspan="8" style="text-align: center;">
+                                <td colspan="10" style="text-align: center;">
                                     <i class="fas fa-exclamation-circle" style="color: var(--gold);"></i>
                                     Impossible de calculer les scores prédictifs pour cette course.
                                 </td>
@@ -2367,6 +2388,21 @@
                                         </div>
                                     </div>
                                 </td>
+                                ${(() => {
+                                    const partId = participant.numero || participant.n;
+                                    const rgCote = rangCoteMap[partId];
+                                    const rgActuel = rangActuelMap[partId];
+                                    const inTopActuel = rgActuel && rgActuel <= 3;
+                                    const inTopCote = rgCote && rgCote <= 3;
+                                    const consensus = (inTopActuel ? 1 : 0) + (inTopCote ? 1 : 0);
+                                    const medalCote = rgCote === 1 ? '🥇' : rgCote === 2 ? '🥈' : rgCote === 3 ? '🥉' : '';
+                                    const cotaBadge = rgCote ? `<span style="font-weight:700">${medalCote}${medalCote ? ' ' : ''}${rgCote}</span>` : '<span style="opacity:0.3">-</span>';
+                                    let consensusBadge;
+                                    if (consensus === 2) consensusBadge = '<span style="color:#40e05a;font-weight:700;font-size:1.1em" title="Top 3 dans Score actuel ET Cote">⭐⭐ 2/2</span>';
+                                    else if (consensus === 1) consensusBadge = '<span style="color:#D4AF37;font-weight:600" title="Top 3 dans 1 méthode">⭐ 1/2</span>';
+                                    else consensusBadge = '<span style="opacity:0.3">0/2</span>';
+                                    return `<td style="text-align:center;font-size:0.9em">${cotaBadge}</td><td style="text-align:center">${consensusBadge}</td>`;
+                                })()}
                                 <td style="text-align:center">${arriveeHTML}</td>
                             </tr>
                         `;
@@ -2431,8 +2467,8 @@
                         const pctN2 = rs.total > 0 ? Math.round(rs.notre2/rs.total*100) : 0;
                         const pctF2 = rs.total > 0 ? Math.round(rs.fav2/rs.total*100) : 0;
 
-                        participantsHTML += '<tr><td colspan="8" style="text-align:center;padding:6px;' + resumeClass + ';font-size:0.85em;border-top:2px solid rgba(255,255,255,0.1)">' + resumeText + '</td></tr>';
-                        participantsHTML += '<tr><td colspan="8" style="text-align:center;padding:4px;font-size:0.8em;opacity:0.8;background:rgba(0,0,0,0.15)">'
+                        participantsHTML += '<tr><td colspan="10" style="text-align:center;padding:6px;' + resumeClass + ';font-size:0.85em;border-top:2px solid rgba(255,255,255,0.1)">' + resumeText + '</td></tr>';
+                        participantsHTML += '<tr><td colspan="10" style="text-align:center;padding:4px;font-size:0.8em;opacity:0.8;background:rgba(0,0,0,0.15)">'
                             + '📊 Réunion ' + hippoKey + ' (' + rs.total + 'c) : '
                             + 'Notre #1 gagne <strong style="color:' + (pctN1 >= pctF1 ? '#40e05a' : '#e05a40') + '">' + pctN1 + '%</strong>'
                             + ' vs Favori <strong style="color:' + (pctF1 >= pctN1 ? '#40e05a' : '#e05a40') + '">' + pctF1 + '%</strong>'
@@ -2494,7 +2530,7 @@
                     console.error("Erreur lors du calcul des scores prédictifs:", error);
                     participantsContainer.innerHTML = `
                         <tr>
-                            <td colspan="8" style="text-align: center; color: var(--red);">
+                            <td colspan="10" style="text-align: center; color: var(--red);">
                                 <i class="fas fa-exclamation-triangle"></i> 
                                 Erreur lors du calcul des scores prédictifs. Veuillez réessayer plus tard.
                             </td>
