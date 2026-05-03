@@ -470,24 +470,43 @@
     async function loadFileList() {
         if (allFiles) return allFiles;
 
+        // Vérifie si l'index est à jour : son dernier fichier doit être >= hier
+        // Sinon le workflow GitHub Actions n'a pas tourné après les derniers pushs.
+        const yesterdayStr = (() => { const d = new Date(); d.setDate(d.getDate() - 1); return d.toISOString().split('T')[0]; })();
+        let indexStale = false;
+
         // PRIMAIRE : _index.json maintenu auto via GitHub Actions, servi par raw → aucun rate limit
         try {
             const idxResp = await fetch(`https://raw.githubusercontent.com/bencode92/Hippique/main/data/courses/_index.json?_=${Date.now()}`);
             if (idxResp.ok) {
                 const idx = await idxResp.json();
-                allFiles = (idx.files || []).map(f => ({
+                const fromIndex = (idx.files || []).map(f => ({
                     name: f.name,
                     download_url: `https://raw.githubusercontent.com/bencode92/Hippique/main/data/courses/${f.name}`
                 }));
-                console.log(`📋 Listing depuis _index.json (${allFiles.length} fichiers)`);
+                // Détecte si l'index est obsolète (aucun fichier daté >= hier)
+                const lastFile = [...fromIndex].sort((a,b) => a.name.localeCompare(b.name)).pop();
+                const lastDate = lastFile?.name?.slice(0, 10);
+                if (lastDate && lastDate < yesterdayStr) {
+                    console.warn(`📋 _index.json semble obsolète (dernier fichier ${lastDate} < ${yesterdayStr}) → fallback API`);
+                    indexStale = true;
+                } else {
+                    allFiles = fromIndex;
+                    console.log(`📋 _index.json à jour (${allFiles.length} fichiers, dernier ${lastDate})`);
+                }
             }
         } catch (e) { console.warn('_index.json indisponible', e); }
 
-        // Fallback API GitHub (60 req/h)
-        if (!allFiles) {
+        // Fallback API GitHub (60 req/h) si _index.json absent OU obsolète
+        if (!allFiles || indexStale) {
             const resp = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/data/courses?_=${Date.now()}`);
-            if (!resp.ok) throw new Error('Impossible de charger la liste des fichiers');
-            allFiles = await resp.json();
+            if (resp.ok) {
+                allFiles = (await resp.json()).map(f => ({ name: f.name, download_url: f.download_url }));
+                console.log(`📋 Listing API GitHub fresh (${allFiles.length} fichiers)`);
+            } else if (!allFiles) {
+                throw new Error('Impossible de charger la liste des fichiers');
+            }
+            // Si l'API échoue (403) mais qu'on a déjà l'index obsolète, on s'en contente
         }
 
         allFiles.forEach(f => {
