@@ -1,7 +1,7 @@
 {
   "hippodrome": "VALPARAISO",
   "type_reunion": "Plat",
-  "date_extraction": "2026-05-03T12:14:10.739394",
+  "date_extraction": "2026-05-03T12:24:17.536917",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/03052026/R7",
   "courses": [
     {
@@ -330,7 +330,9 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 1.1,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -391,8 +393,8 @@
           "nb_courses": 13,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 1.1,
-          "cote_tendance": "",
+          "cote": 7.9,
+          "cote_tendance": "+",
           "cote_reference": 1.1
         },
         {
@@ -1137,8 +1139,8 @@
           "nb_courses": 20,
           "nb_victoires": 5,
           "nb_places": 6,
-          "cote": 3.7,
-          "cote_tendance": "-",
+          "cote": 4.6,
+          "cote_tendance": "+",
           "cote_reference": 4.8
         },
         {
@@ -1200,8 +1202,8 @@
           "nb_courses": 73,
           "nb_victoires": 13,
           "nb_places": 19,
-          "cote": 7.4,
-          "cote_tendance": "+"
+          "cote": 4.6,
+          "cote_tendance": "-"
         },
         {
           "n°": "5",
@@ -1223,7 +1225,7 @@
           "nb_victoires": 21,
           "nb_places": 38,
           "cote": 1.8,
-          "cote_tendance": "-",
+          "cote_tendance": "",
           "cote_reference": 1.6
         },
         {
@@ -1245,7 +1247,7 @@
           "nb_courses": 26,
           "nb_victoires": 8,
           "nb_places": 9,
-          "cote": 4.9,
+          "cote": 6.1,
           "cote_tendance": "+",
           "cote_reference": 3.2
         },
