@@ -1,12 +1,12 @@
 name: Update best formulas (leviers)
 
 on:
-  schedule:
-    # 21h UTC chaque jour (23h FR) — après l'extraction du soir
-    # qui ajoute les résultats du jour. L'apprentissage tourne donc
-    # sur la base la plus complète possible.
-    - cron: '0 21 * * *'
-  workflow_dispatch: # déclenchement manuel possible
+  # CRON DÉSACTIVÉ — le workflow trouvait moitié moins de courses utilisables
+  # que stats.html (~441 vs 886) et écrasait les bonnes formules figées
+  # manuellement. À réactiver après debug de la divergence dans live-scoring.js.
+  # schedule:
+  #   - cron: '0 21 * * *'
+  workflow_dispatch: # déclenchement manuel possible (ne tourne plus en auto)
 
 permissions:
   contents: write
