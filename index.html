@@ -1397,18 +1397,28 @@
                     // qui maintient _index.json n'a pas encore tourné).
                     const forceFresh = !!window.__forceFreshListing;
                     window.__forceFreshListing = false;
-                    const files = await listCourseFiles({ forceFresh });
-                    console.log("Fichiers trouvés dans data/courses:", files);
-                    
+                    let files = await listCourseFiles({ forceFresh });
+
                     // Filtrer pour trouver tous les fichiers JSON correspondant à la date
-                    const courseFiles = files.filter(file => 
-                        file.name.startsWith(dateStr) && 
+                    let courseFiles = files.filter(file =>
+                        file.name.startsWith(dateStr) &&
                         file.name.endsWith('.json')
                     );
-                    
-                    console.log(`Fichiers de courses trouvés pour ${dateStr}:`, courseFiles);
-                    
-                    // Si aucun fichier trouvé, retourner objet vide
+
+                    // _index.json peut être obsolète si le workflow GitHub Actions n'a pas
+                    // encore régénéré : si 0 course pour aujourd'hui ET qu'on n'a pas déjà
+                    // forcé l'API, retenter avec API GitHub fresh.
+                    if (courseFiles.length === 0 && !forceFresh) {
+                        console.log(`📋 0 course pour ${dateStr} dans _index.json (probablement obsolète) → fallback API GitHub`);
+                        files = await listCourseFiles({ forceFresh: true });
+                        courseFiles = files.filter(file =>
+                            file.name.startsWith(dateStr) &&
+                            file.name.endsWith('.json')
+                        );
+                    }
+
+                    console.log(`Fichiers de courses trouvés pour ${dateStr}: ${courseFiles.length}`);
+
                     if (courseFiles.length === 0) {
                         console.warn(`Aucun fichier de course trouvé pour la date ${dateStr}`);
                         return courseData;
