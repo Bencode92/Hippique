@@ -1,0 +1,78 @@
+name: Update best formulas (leviers)
+
+on:
+  schedule:
+    # 21h UTC chaque jour (23h FR) — après l'extraction du soir
+    # qui ajoute les résultats du jour. L'apprentissage tourne donc
+    # sur la base la plus complète possible.
+    - cron: '0 21 * * *'
+  workflow_dispatch: # déclenchement manuel possible
+
+permissions:
+  contents: write
+
+jobs:
+  update-formulas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Forcer la régénération (bump version locale)
+        run: |
+          # On supprime le fichier pour que live-scoring détecte qu'il faut recalculer
+          # (sinon le check de version peut court-circuiter le calcul)
+          if [ -f data/best_formulas.json ]; then
+            rm data/best_formulas.json
+            echo "📋 Ancien best_formulas.json supprimé, recalcul à venir"
+          fi
+
+      - name: Lancer la recherche levier
+        run: |
+          echo "🔬 Lancement live-scoring.js (recherche des champions par bucket)..."
+          node live-scoring.js 2>&1 | grep -E "💾|🔄|📋|sauvegard|champion|✅" | head -50 || true
+
+      - name: Vérifier le résultat
+        run: |
+          if [ ! -f data/best_formulas.json ]; then
+            echo "❌ best_formulas.json non généré"
+            exit 1
+          fi
+          echo "✅ Fichier généré ($(wc -c < data/best_formulas.json) octets)"
+          # Affiche les buckets et leur Top3
+          python3 -c "
+          import json
+          d = json.load(open('data/best_formulas.json'))
+          print(f\"Version: {d.get('_version')} | Generated: {d.get('_generatedAt','?')}\")
+          for k,v in d.items():
+              if k.startswith('_') or not isinstance(v, dict): continue
+              n = v.get('coursesUtilisables', '?')
+              t3 = v.get('top3', 0)
+              f = ' + '.join(f\"{l}×{int(round(p*100))}%\" for l,p in zip(v.get('leviers',[]), v.get('poids',[])))
+              print(f'  {k:<10} n={n:>4}  Top3={t3:>5.1f}%  {f}')
+          "
+
+      - name: Commit et push
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action - Best formulas"
+          git add data/best_formulas.json
+          if git diff --cached --quiet; then
+            echo "Formules inchangées, rien à commiter"
+          else
+            git commit -m "🔬 Auto-update best_formulas.json (recherche levier quotidienne)"
+            git pull --rebase
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
