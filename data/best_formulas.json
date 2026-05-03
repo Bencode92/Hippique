@@ -1,316 +1,101 @@
 {
   "_version": 3,
-  "_generatedAt": "2026-05-03T09:13:09.098Z",
+  "_generatedAt": "2026-05-03T09:30:00.000Z",
+  "_source": "stats.html (886 courses, 16/04/2026 → 03/05/2026)",
+  "tous": {
+    "leviers": ["Cote (1/cote)", "Cravache Rang"],
+    "poids": [0.9, 0.1],
+    "top1": 34.76, "top2": 51.69, "top3": 67.04,
+    "courses": 886
+  },
   "sprint": {
-    "leviers": [
-      "Cote (1/cote)",
-      "Dérive cote",
-      "Ch TauxP"
-    ],
-    "poids": [
-      0.5,
-      0.1,
-      0.4
-    ],
-    "top1": 31.538461538461537,
-    "top2": 52.307692307692314,
-    "top3": 70,
-    "avgCote": 2.8600000000000003,
-    "courses": 130,
-    "coursesUtilisables": 130,
-    "degen": 0
-  },
-  "mile": {
-    "leviers": [
-      "Cote (1/cote)",
-      "Cote ref"
-    ],
-    "poids": [
-      0.6000000000000001,
-      0.4
-    ],
-    "top1": 32.41379310344827,
-    "top2": 54.48275862068965,
-    "top3": 68.96551724137932,
-    "avgCote": 2.6999999999999997,
-    "courses": 145,
-    "coursesUtilisables": 145,
-    "degen": 0
-  },
-  "middle": {
-    "leviers": [
-      "Cote (1/cote)",
-      "Jk GainMoy",
-      "Ch GainMoy"
-    ],
-    "poids": [
-      0.8,
-      0.1,
-      0.1
-    ],
-    "top1": 34.862385321100916,
-    "top2": 54.12844036697248,
-    "top3": 71.55963302752293,
-    "avgCote": 2.860526315789474,
-    "courses": 109,
-    "coursesUtilisables": 109,
-    "degen": 0
-  },
-  "staying": {
-    "leviers": [
-      "Cote ref",
-      "Jk GainMoy",
-      "Cravache Rang",
-      "Jk Rang"
-    ],
-    "poids": [
-      0.5,
-      0.1,
-      0.1,
-      0.30000000000000004
-    ],
-    "top1": 40.35087719298245,
-    "top2": 56.14035087719298,
-    "top3": 70.17543859649122,
-    "avgCote": 2.9695652173913043,
-    "courses": 59,
-    "coursesUtilisables": 57,
-    "degen": 2
-  },
-  "premium": {
-    "leviers": [
-      "Cote (1/cote)",
-      "Cote ref",
-      "Ch GainMoy",
-      "Valeur FG"
-    ],
-    "poids": [
-      0.4,
-      0.1,
-      0.1,
-      0.4
-    ],
-    "top1": 36.666666666666664,
-    "top2": 53.333333333333336,
-    "top3": 67.77777777777779,
-    "avgCote": 2.8696969696969705,
-    "courses": 90,
-    "coursesUtilisables": 90,
-    "degen": 0
+    "leviers": ["Cote (1/cote)", "Ch TauxP", "Dérive cote"],
+    "poids": [0.5, 0.4, 0.1],
+    "top1": 31.54, "top2": 52.31, "top3": 70.0,
+    "courses": 260
   },
   "1000m": {
-    "leviers": [
-      "Ch TauxV"
-    ],
-    "poids": [
-      1
-    ],
-    "top1": 0,
-    "top2": 100,
-    "top3": 100,
-    "avgCote": 0,
-    "courses": 39,
-    "coursesUtilisables": 1,
-    "degen": 38
+    "leviers": ["Cote (1/cote)", "Ch ScoreMixte", "Ch Rang"],
+    "poids": [0.7, 0.1, 0.2],
+    "top1": 28.21, "top2": 53.85, "top3": 71.79,
+    "courses": 39
   },
   "1200m": {
-    "leviers": [
-      "Cote (1/cote)",
-      "Musique",
-      "Dérive cote",
-      "Ch Rang"
-    ],
-    "poids": [
-      0.2,
-      0.2,
-      0.1,
-      0.5
-    ],
-    "top1": 32.91139240506329,
-    "top2": 62.0253164556962,
-    "top3": 74.68354430379746,
-    "avgCote": 3.428,
-    "courses": 79,
-    "coursesUtilisables": 79,
-    "degen": 0
+    "leviers": ["Dérive cote", "Ch Rang", "Cote (1/cote)", "Musique"],
+    "poids": [0.1, 0.6, 0.2, 0.1],
+    "top1": 34.18, "top2": 56.96, "top3": 75.95,
+    "courses": 79
   },
   "1300m": {
-    "leviers": [
-      "Jk TauxV"
-    ],
-    "poids": [
-      1
-    ],
-    "top1": 100,
-    "top2": 100,
-    "top3": 100,
-    "avgCote": 23,
-    "courses": 12,
-    "coursesUtilisables": 1,
-    "degen": 11
+    "leviers": ["Jk TauxV", "Cote (1/cote)", "NbVictoires"],
+    "poids": [0.5, 0.3, 0.2],
+    "top1": 50.0, "top2": 75.0, "top3": 91.67,
+    "courses": 12
+  },
+  "mile": {
+    "leviers": ["Cote (1/cote)", "Cote ref"],
+    "poids": [0.6, 0.4],
+    "top1": 32.41, "top2": 54.48, "top3": 68.97,
+    "courses": 290
   },
   "1400m": {
-    "leviers": [
-      "Cote (1/cote)",
-      "Cote ref",
-      "Ch GainMoy",
-      "TauxV indiv"
-    ],
-    "poids": [
-      0.4,
-      0.4,
-      0.1,
-      0.1
-    ],
-    "top1": 38,
-    "top2": 62,
-    "top3": 72,
-    "avgCote": 2.7473684210526317,
-    "courses": 50,
-    "coursesUtilisables": 50,
-    "degen": 0
+    "leviers": ["Cote (1/cote)", "Ch TauxV"],
+    "poids": [0.9, 0.1],
+    "top1": 40.0, "top2": 58.0, "top3": 72.0,
+    "courses": 50
   },
   "1500m": {
-    "leviers": [
-      "Cote (1/cote)",
-      "Ch TauxV",
-      "Combo Jk*Ent",
-      "Jk GainMoy"
-    ],
-    "poids": [
-      0.5,
-      0.1,
-      0.30000000000000004,
-      0.1
-    ],
-    "top1": 31.25,
-    "top2": 50,
-    "top3": 87.5,
-    "avgCote": 3.6800000000000006,
-    "courses": 16,
-    "coursesUtilisables": 16,
-    "degen": 0
+    "leviers": ["Cote (1/cote)", "Ch TauxV", "Jk GainMoy", "Combo Jk*Ent"],
+    "poids": [0.5, 0.1, 0.1, 0.3],
+    "top1": 31.25, "top2": 50.0, "top3": 87.5,
+    "courses": 16
   },
   "1600m": {
-    "leviers": [
-      "Cote (1/cote)",
-      "Cote ref",
-      "Ch TauxP"
-    ],
-    "poids": [
-      0.5,
-      0.4,
-      0.1
-    ],
-    "top1": 30.37974683544304,
-    "top2": 50.63291139240506,
-    "top3": 68.35443037974683,
-    "avgCote": 2.6708333333333325,
-    "courses": 79,
-    "coursesUtilisables": 79,
-    "degen": 0
+    "leviers": ["Cote (1/cote)", "Ch TauxP", "Cote ref"],
+    "poids": [0.5, 0.1, 0.4],
+    "top1": 30.38, "top2": 50.63, "top3": 68.35,
+    "courses": 79
+  },
+  "middle": {
+    "leviers": ["Cote (1/cote)", "Cote ref", "Ch Rang"],
+    "poids": [0.7, 0.2, 0.1],
+    "top1": 33.94, "top2": 55.05, "top3": 72.48,
+    "courses": 218
   },
   "1800m": {
-    "leviers": [
-      "Ch GainMoy",
-      "Jk GainMoy",
-      "Ch Rang",
-      "Jk Rang"
-    ],
-    "poids": [
-      0.4,
-      0.2,
-      0.1,
-      0.30000000000000004
-    ],
-    "top1": 27.77777777777778,
-    "top2": 72.22222222222221,
-    "top3": 83.33333333333334,
-    "avgCote": 3.78,
-    "courses": 32,
-    "coursesUtilisables": 18,
-    "degen": 14
+    "leviers": ["Jk GainMoy", "Cote (1/cote)", "Cote ref", "Ch Rang", "Jk Rang"],
+    "poids": [0.1, 0.1, 0.4, 0.3, 0.1],
+    "top1": 37.5, "top2": 62.5, "top3": 75.0,
+    "courses": 32
   },
   "2000m": {
-    "leviers": [
-      "Cote (1/cote)",
-      "Valeur FG",
-      "Jk GainMoy"
-    ],
-    "poids": [
-      0.6000000000000001,
-      0.30000000000000004,
-      0.1
-    ],
-    "top1": 33.33333333333333,
-    "top2": 58.333333333333336,
-    "top3": 73.33333333333333,
-    "avgCote": 3.1350000000000007,
-    "courses": 60,
-    "coursesUtilisables": 60,
-    "degen": 0
+    "leviers": ["Cote (1/cote)", "Valeur FG", "Jk GainMoy"],
+    "poids": [0.6, 0.3, 0.1],
+    "top1": 33.33, "top2": 58.33, "top3": 73.33,
+    "courses": 60
   },
   "2100m": {
-    "leviers": [
-      "Jk TauxV",
-      "Cote (1/cote)",
-      "Ch TauxV",
-      "Cravache Rang"
-    ],
-    "poids": [
-      0.2,
-      0.2,
-      0.2,
-      0.4
-    ],
-    "top1": 41.17647058823529,
-    "top2": 70.58823529411765,
-    "top3": 88.23529411764706,
-    "avgCote": 4.171428571428572,
-    "courses": 17,
-    "coursesUtilisables": 17,
-    "degen": 0
+    "leviers": ["Jk TauxV", "Cote (1/cote)", "Ch TauxV", "Cravache Rang"],
+    "poids": [0.2, 0.2, 0.2, 0.4],
+    "top1": 41.18, "top2": 70.59, "top3": 88.24,
+    "courses": 17
+  },
+  "staying": {
+    "leviers": ["Cote (1/cote)", "Cote ref", "Cravache Rang", "Jk Rang"],
+    "poids": [0.5, 0.2, 0.1, 0.2],
+    "top1": 40.68, "top2": 54.24, "top3": 67.80,
+    "courses": 118
   },
   "2400m": {
-    "leviers": [
-      "Cote ref",
-      "Cote (1/cote)",
-      "Cravache Rang",
-      "Jk GainMoy",
-      "Gains (log)"
-    ],
-    "poids": [
-      0.1,
-      0.1,
-      0.30000000000000004,
-      0.1,
-      0.4
-    ],
-    "top1": 31.25,
-    "top2": 52.083333333333336,
-    "top3": 68.75,
-    "avgCote": 3.4333333333333327,
-    "courses": 48,
-    "coursesUtilisables": 48,
-    "degen": 0
+    "leviers": ["Cote ref", "Cote (1/cote)", "Cravache Rang", "Jk GainMoy", "Gains (log)"],
+    "poids": [0.1, 0.1, 0.3, 0.1, 0.4],
+    "top1": 31.25, "top2": 52.08, "top3": 68.75,
+    "courses": 48
   },
   "3000m+": {
-    "leviers": [
-      "Cote ref",
-      "Ch GainMoy",
-      "Jk TauxP"
-    ],
-    "poids": [
-      0.1,
-      0.6000000000000001,
-      0.30000000000000004
-    ],
-    "top1": 90,
-    "top2": 100,
-    "top3": 100,
-    "avgCote": 3.6555555555555554,
-    "courses": 11,
-    "coursesUtilisables": 10,
-    "degen": 1
+    "leviers": ["Musique", "Cote ref", "Ch GainMoy"],
+    "poids": [0.3, 0.3, 0.4],
+    "top1": 81.82, "top2": 90.91, "top3": 90.91,
+    "courses": 11
   }
 }
