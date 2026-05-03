@@ -51,6 +51,12 @@ jobs:
           mkdir -p data/courses
           git add data/courses/*.json
 
+          # Régénère _index.json pour que le frontend ait la liste à jour.
+          # Inclus ici car les pushs faits via GITHUB_TOKEN ne déclenchent
+          # PAS d'autres workflows (sécurité anti-boucle de GitHub Actions).
+          python3 scripts/update_courses_index.py
+          git add data/courses/_index.json
+
           if git diff --cached --quiet; then
             echo "Aucun changement détecté"
           else
