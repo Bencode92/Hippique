@@ -1285,6 +1285,18 @@
 
     <!-- Module de chargement des courses -->
     <script>
+        // Retry sur erreurs réseau temporaires (ERR_NETWORK_CHANGED sur mobile)
+        async function fetchWithRetry(url, opts = {}, attempts = 3) {
+            for (let i = 0; i < attempts; i++) {
+                try { return await fetch(url, opts); }
+                catch (e) {
+                    if (i === attempts - 1) throw e;
+                    console.warn(`fetch ${url} échec (${e.message}) — retry ${i+1}/${attempts-1}`);
+                    await new Promise(r => setTimeout(r, 300 * (i + 1) ** 2));
+                }
+            }
+        }
+
         // Liste les fichiers du dossier data/courses avec stratégie multi-source :
         // 1) cache localStorage 30s
         // 2) PRIMAIRE : data/courses/_index.json via raw.githubusercontent (auto-maintenu
@@ -1311,7 +1323,7 @@
             //    - Page load : _index.json (rapide, illimité, mais peut avoir 30-60s de retard)
             //    - Refresh manuel : API GitHub (toujours fraîche, mais 60/h limite)
             const tryIndex = async () => {
-                const idxResp = await fetch(`https://raw.githubusercontent.com/bencode92/Hippique/main/data/courses/_index.json?_=${Date.now()}`);
+                const idxResp = await fetchWithRetry(`https://raw.githubusercontent.com/bencode92/Hippique/main/data/courses/_index.json?_=${Date.now()}`);
                 if (!idxResp.ok) return null;
                 const idx = await idxResp.json();
                 const files = (idx.files || []).map(f => ({
@@ -1322,7 +1334,7 @@
                 return files;
             };
             const tryApi = async () => {
-                const r = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/data/courses?_=${Date.now()}`);
+                const r = await fetchWithRetry(`https://api.github.com/repos/bencode92/Hippique/contents/data/courses?_=${Date.now()}`);
                 if (!r.ok) {
                     if (r.status === 403) console.warn('⚠️ API GitHub rate-limitée (403)');
                     return null;
@@ -1350,7 +1362,7 @@
             //    Pas de rate limit. Cache CDN ~12h mais on s'en sert seulement
             //    quand l'API GitHub est rate-limitée donc OK comme dégradé.
             try {
-                const jd = await fetch(`https://data.jsdelivr.com/v1/packages/gh/bencode92/Hippique@main/tree?path=data/courses&_=${Date.now()}`);
+                const jd = await fetchWithRetry(`https://data.jsdelivr.com/v1/packages/gh/bencode92/Hippique@main/tree?path=data/courses&_=${Date.now()}`);
                 if (jd.ok) {
                     const data = await jd.json();
                     const files = (data.files || [])
@@ -1457,7 +1469,7 @@
                 const url = `${file.download_url}?_=${Date.now()}`;
                 console.log(`Traitement du fichier: ${file.name}, URL: ${url}`);
 
-                const fileResponse = await fetch(url);
+                const fileResponse = await fetchWithRetry(url);
                 if (!fileResponse.ok) {
                     console.error(`Erreur lors du chargement du fichier ${file.name}: ${fileResponse.status}`);
                     return;

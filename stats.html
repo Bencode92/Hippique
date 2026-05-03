@@ -467,6 +467,20 @@
     // ============================================================
     let allFiles = null;
 
+    // Retry sur erreurs réseau temporaires (ERR_NETWORK_CHANGED sur mobile, etc.)
+    // Retente 2× avec délais 300ms, 800ms. Pas de retry sur 4xx/5xx (problème serveur, pas réseau).
+    async function fetchWithRetry(url, opts = {}, attempts = 3) {
+        for (let i = 0; i < attempts; i++) {
+            try {
+                return await fetch(url, opts);
+            } catch (e) {
+                if (i === attempts - 1) throw e;
+                console.warn(`fetch ${url} échec (${e.message}) — retry ${i+1}/${attempts-1}`);
+                await new Promise(r => setTimeout(r, 300 * (i + 1) ** 2));
+            }
+        }
+    }
+
     async function loadFileList() {
         if (allFiles) return allFiles;
 
@@ -477,7 +491,7 @@
 
         // PRIMAIRE : _index.json maintenu auto via GitHub Actions, servi par raw → aucun rate limit
         try {
-            const idxResp = await fetch(`https://raw.githubusercontent.com/bencode92/Hippique/main/data/courses/_index.json?_=${Date.now()}`);
+            const idxResp = await fetchWithRetry(`https://raw.githubusercontent.com/bencode92/Hippique/main/data/courses/_index.json?_=${Date.now()}`);
             if (idxResp.ok) {
                 const idx = await idxResp.json();
                 const fromIndex = (idx.files || []).map(f => ({
@@ -499,7 +513,7 @@
 
         // Fallback API GitHub (60 req/h) si _index.json absent OU obsolète
         if (!allFiles || indexStale) {
-            const resp = await fetch(`https://api.github.com/repos/bencode92/Hippique/contents/data/courses?_=${Date.now()}`);
+            const resp = await fetchWithRetry(`https://api.github.com/repos/bencode92/Hippique/contents/data/courses?_=${Date.now()}`);
             if (resp.ok) {
                 allFiles = (await resp.json()).map(f => ({ name: f.name, download_url: f.download_url }));
                 console.log(`📋 Listing API GitHub fresh (${allFiles.length} fichiers)`);
@@ -519,9 +533,11 @@
 
     async function loadCourseFile(file) {
         // raw.githubusercontent.com avec cache-buster → bypass CDN sans consommer api.github.com (60/h)
-        const resp = await fetch(`${file.download_url}?_=${Date.now()}`);
-        if (!resp.ok) return null;
-        return resp.json();
+        try {
+            const resp = await fetchWithRetry(`${file.download_url}?_=${Date.now()}`);
+            if (!resp.ok) return null;
+            return resp.json();
+        } catch { return null; } // skip ce fichier si réseau persistant KO
     }
 
     // ============================================================
