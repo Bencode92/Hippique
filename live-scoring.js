@@ -679,8 +679,22 @@ async function main() {
   const datePmu = new Date().toLocaleDateString('fr-FR', { day: '2-digit', month: '2-digit', year: 'numeric' }).split('/').join('');
   const dateISO = new Date().toISOString().split('T')[0];
 
-  _log(`\n🏇 LIVE SCORING (100% code HTML) — ${dateISO}`);
+  // Mode "formulas-only" : on ne fait QUE recalculer best_formulas.json puis exit.
+  // Utilisé par le workflow GitHub Actions quotidien — pas besoin de scorer
+  // les courses du jour dans ce contexte (le frontend le fait en live).
+  const formulasOnly = process.argv.includes('--formulas-only');
+
+  _log(`\n🏇 LIVE SCORING (100% code HTML) — ${dateISO}${formulasOnly ? ' [FORMULAS-ONLY]' : ''}`);
 _log('='.repeat(60));
+
+  if (formulasOnly) {
+    // Skip rankingLoader.loadAllData() — non nécessaire pour computeBestFormulasFromHistory
+    // (qui utilise les snapshots datés directement). Gain ~5-10s.
+    _log('🔬 Mode formulas-only : recalcul direct des champions par bucket');
+    loadBestFormulas();
+    _log('✅ Terminé. best_formulas.json à jour.');
+    return;
+  }
 
   // Charger toutes les données de ranking-loader
 _log('📊 Chargement des classements...');

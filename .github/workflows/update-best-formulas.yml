@@ -37,13 +37,13 @@ jobs:
             echo "📋 Ancien best_formulas.json supprimé, recalcul à venir"
           fi
 
-      - name: Lancer la recherche levier
+      - name: Lancer la recherche levier (formulas-only)
         run: |
-          echo "🔬 Lancement live-scoring.js (recherche des champions par bucket)..."
-          # FORCE_COLOR=0 désactive les codes ANSI dans les logs (plus lisibles)
-          # NODE_NO_WARNINGS=1 supprime les warnings Node verbeux
-          # stdbuf -oL force le flush ligne par ligne (sinon Node buffer en mode pipe → on voit rien pendant 5min)
-          FORCE_COLOR=0 NODE_NO_WARNINGS=1 stdbuf -oL -eL node live-scoring.js
+          echo "🔬 Recalcul des champions par bucket (sans scoring courses du jour)..."
+          # --formulas-only : skip toute la phase de scoring courses du jour qui prend
+          # 1-2 min en plus. Le frontend (index.html, stats.html) score en live.
+          # stdbuf -oL : flush ligne par ligne (sinon buffer en mode pipe)
+          FORCE_COLOR=0 NODE_NO_WARNINGS=1 stdbuf -oL -eL node live-scoring.js --formulas-only
 
       - name: Vérifier le résultat
         run: |
