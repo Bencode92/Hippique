@@ -1,7 +1,7 @@
 {
   "hippodrome": "NAPLES",
   "type_reunion": "ATTELE",
-  "date_extraction": "2026-05-03T16:11:44.329832",
+  "date_extraction": "2026-05-03T20:54:14.340818",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/03052026/R9",
   "courses": [
     {
@@ -905,16 +905,16 @@
           "arrivee": 4
         },
         {
-          "n°": "1",
-          "cheval": "CHEVAL FINALISTE 1 M.TR. 6 a.",
+          "n°": "9",
+          "cheval": "CHEVAL FINALISTE 9 M.TR. 6 a.",
           "cheval_url": "",
           "père_mère": "Par: INCONNU et INCONNUE",
-          "corde": "(Corde:01)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/03052026/R9/C8/P1.png",
+          "corde": "(Corde:09)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/03052026/R9/C8/P9.png",
           "propriétaire": "",
           "entraineur": "",
           "éleveurs": "",
-          "jockey": "DUBHE PRAV",
+          "jockey": "FINALMENTE PAR",
           "poids": "",
           "gains": "",
           "musique": "",
@@ -923,32 +923,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 7.7,
-          "cote_tendance": "",
-          "cote_reference": 12.0
-        },
-        {
-          "n°": "3",
-          "cheval": "CHEVAL FINALISTE 3 M.TR. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: INCONNU et INCONNUE",
-          "corde": "(Corde:03)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/03052026/R9/C8/P3.png",
-          "propriétaire": "",
-          "entraineur": "",
-          "éleveurs": "",
-          "jockey": "COBRA KILLER GAR",
-          "poids": "",
-          "gains": "",
-          "musique": "",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0,
-          "cote": 4.4,
-          "cote_tendance": "",
-          "cote_reference": 5.0
+          "cote": 129.0,
+          "cote_tendance": "-",
+          "arrivee": 5
         },
         {
           "n°": "6",
@@ -971,7 +948,8 @@
           "nb_places": 0,
           "cote": 68.0,
           "cote_tendance": "+",
-          "cote_reference": 77.0
+          "cote_reference": 77.0,
+          "arrivee": 6
         },
         {
           "n°": "7",
@@ -994,19 +972,20 @@
           "nb_places": 0,
           "cote": 15.0,
           "cote_tendance": "-",
-          "cote_reference": 23.0
+          "cote_reference": 23.0,
+          "arrivee": 7
         },
         {
-          "n°": "9",
-          "cheval": "CHEVAL FINALISTE 9 M.TR. 6 a.",
+          "n°": "3",
+          "cheval": "CHEVAL FINALISTE 3 M.TR. 6 a.",
           "cheval_url": "",
           "père_mère": "Par: INCONNU et INCONNUE",
-          "corde": "(Corde:09)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/03052026/R9/C8/P9.png",
+          "corde": "(Corde:03)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/03052026/R9/C8/P3.png",
           "propriétaire": "",
           "entraineur": "",
           "éleveurs": "",
-          "jockey": "FINALMENTE PAR",
+          "jockey": "COBRA KILLER GAR",
           "poids": "",
           "gains": "",
           "musique": "",
@@ -1015,11 +994,37 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 129.0,
-          "cote_tendance": "-"
+          "cote": 4.4,
+          "cote_tendance": "",
+          "cote_reference": 5.0,
+          "arrivee": 8
+        },
+        {
+          "n°": "1",
+          "cheval": "CHEVAL FINALISTE 1 M.TR. 6 a.",
+          "cheval_url": "",
+          "père_mère": "Par: INCONNU et INCONNUE",
+          "corde": "(Corde:01)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/03052026/R9/C8/P1.png",
+          "propriétaire": "",
+          "entraineur": "",
+          "éleveurs": "",
+          "jockey": "DUBHE PRAV",
+          "poids": "",
+          "gains": "",
+          "musique": "",
+          "valeur": "",
+          "equipement(s)": "",
+          "nb_courses": 0,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 7.7,
+          "cote_tendance": "",
+          "cote_reference": 12.0,
+          "arrivee": 9
         }
       ],
-      "arrivee_definitive": false
+      "arrivee_definitive": true
     }
   ]
 }
