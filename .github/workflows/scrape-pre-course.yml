@@ -35,6 +35,8 @@ jobs:
           git config --local user.name "GitHub Action - Cotes Live"
 
           mkdir -p data/cotes_live
+          # Régénère l'index AVANT le check git diff pour qu'il soit inclus dans le commit
+          python3 scripts/update_cotes_live_index.py
           git add data/cotes_live/ 2>/dev/null || true
 
           if git diff --cached --quiet; then
@@ -43,6 +45,7 @@ jobs:
             git stash -u || true
             git pull origin main --rebase || true
             git stash pop || true
+            python3 scripts/update_cotes_live_index.py
             git add data/cotes_live/
             git commit -m "⏱️ Cotes live pré-course $(date +'%Y-%m-%d %H:%M')"
             git push

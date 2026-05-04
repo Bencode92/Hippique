@@ -1388,6 +1388,70 @@
             throw new Error('Aucune source de listing disponible (API GitHub rate-limitée ET jsdelivr KO)');
         }
 
+        // ============================================================
+        // OVERRIDE COTES LIVE : remplace les cotes initiales par les cotes
+        // pré-course (data/cotes_live/) mises à jour par scrape-pre-course.yml
+        // ============================================================
+        async function applyCotesLive(courseData, dateStr) {
+            // 1) Fetch l'index des fichiers live disponibles
+            let idx;
+            try {
+                const r = await fetchWithRetry(`https://raw.githubusercontent.com/bencode92/Hippique/main/data/cotes_live/_index.json?_=${Date.now()}_${Math.random().toString(36).slice(2,6)}`, { cache: 'no-store' });
+                if (!r.ok) { console.log('Pas d_index cotes_live'); return; }
+                idx = await r.json();
+            } catch (e) { console.warn('cotes_live/_index.json inaccessible', e); return; }
+
+            // 2) Filtrer les fichiers du jour, mapper par hippo+numero
+            const liveByKey = {};
+            const norm = s => (s || '').toString().toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[\s_-]+/g,'-').replace(/[^a-z0-9.-]/g,'');
+            (idx.files || []).filter(f => f.date === dateStr).forEach(f => {
+                liveByKey[`${norm(f.hippo)}|${f.numero}`] = f.name;
+            });
+
+            const liveCount = Object.keys(liveByKey).length;
+            if (!liveCount) { console.log(`📡 cotes_live : 0 fichier pour ${dateStr}`); return; }
+            console.log(`📡 cotes_live : ${liveCount} fichier(s) pour ${dateStr}`);
+
+            // 3) Pour chaque hippo dans courseData, pour chaque course, override les cotes
+            const fetches = [];
+            let updatedCount = 0;
+            Object.keys(courseData).forEach(hippoName => {
+                const hippoNorm = norm(hippoName);
+                const courses = courseData[hippoName] || [];
+                courses.forEach(c => {
+                    const num = parseInt(c.numero || c.numero_course || 0);
+                    const key = `${hippoNorm}|${num}`;
+                    const liveFile = liveByKey[key];
+                    if (!liveFile) return;
+                    fetches.push((async () => {
+                        try {
+                            const url = `https://raw.githubusercontent.com/bencode92/Hippique/main/data/cotes_live/${liveFile}?_=${Date.now()}_${Math.random().toString(36).slice(2,6)}`;
+                            const r = await fetchWithRetry(url, { cache: 'no-store' });
+                            if (!r.ok) return;
+                            const live = await r.json();
+                            if (!live.participants) return;
+                            // Map live par numPmu
+                            const liveByNum = {};
+                            live.participants.forEach(p => { liveByNum[p.numPmu] = p; });
+                            // Override des cotes des participants par numéro
+                            (c.participants || []).forEach(p => {
+                                const partNum = parseInt(p['n°'] || p.numero || p.n);
+                                const liveP = liveByNum[partNum];
+                                if (liveP && liveP.cote_live) {
+                                    p.cote = liveP.cote_live;
+                                    if (liveP.cote_reference) p.cote_reference = liveP.cote_reference;
+                                    if (liveP.tendance) p.cote_tendance = liveP.tendance;
+                                    updatedCount++;
+                                }
+                            });
+                        } catch (e) { console.warn(`Live ${liveFile} fetch failed`, e); }
+                    })());
+                });
+            });
+            await Promise.all(fetches);
+            console.log(`✅ Cotes live appliquées : ${updatedCount} participants mis à jour`);
+        }
+
         // Module de chargement des courses
         const coursesLoader = {
             // Récupérer la liste des courses pour une date spécifique
@@ -1444,7 +1508,16 @@
                             console.error(`Erreur lors du traitement du fichier ${file.name}:`, fileError);
                         }
                     }
-                    
+
+                    // OVERRIDE des cotes par les fichiers cotes_live (mis à jour par
+                    // scrape-pre-course.yml toutes les 15 min). Les cotes du programme du
+                    // matin (data/courses/) sont remplacées par les cotes pré-course actuelles.
+                    try {
+                        await applyCotesLive(courseData, dateStr);
+                    } catch (e) {
+                        console.warn('Override cotes_live échoué (non bloquant):', e);
+                    }
+
                     // Filtrer les hippodromes qui n'ont pas de courses (après tous les traitements)
                     Object.keys(courseData).forEach(hippodrome => {
                         if (!courseData[hippodrome] || courseData[hippodrome].length === 0) {
