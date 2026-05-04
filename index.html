@@ -1736,28 +1736,22 @@
             // (utile juste après un push pour voir les nouveaux JSON sans recharger la page)
             if (refreshBtn) {
                 refreshBtn.addEventListener('click', async function() {
-                    const orig = refreshBtn.innerHTML;
                     refreshBtn.disabled = true;
                     refreshBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Actualisation...';
                     try {
-                        // Invalider le cache localStorage du listing (sinon TTL 30s)
+                        // Cleanup des caches AVANT reload pour ne pas servir l'ancien
                         localStorage.removeItem('hippique_courses_listing');
-                        // Forcer la prochaine requête à passer par l'API GitHub fraîche
-                        // (au cas où _index.json a 30-60s de retard après un push)
-                        window.__forceFreshListing = true;
-                        // Vide le cache navigateur des fetch précédents pour ce domaine
                         if ('caches' in window) {
                             const keys = await caches.keys();
                             await Promise.all(keys.map(k => caches.delete(k)));
                         }
-                        await loadCoursesForCurrentDate();
-                        refreshBtn.innerHTML = '<i class="fas fa-check"></i> À jour';
-                        setTimeout(() => { refreshBtn.innerHTML = orig; refreshBtn.disabled = false; }, 1500);
-                    } catch (e) {
-                        console.error('Refresh failed:', e);
-                        refreshBtn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Erreur';
-                        setTimeout(() => { refreshBtn.innerHTML = orig; refreshBtn.disabled = false; }, 2000);
-                    }
+                    } catch {}
+                    // HARD RELOAD avec cache-buster sur l'URL → force le navigateur à
+                    // re-télécharger HTML + JS + tous les JSON. C'est le seul moyen 100%
+                    // fiable de bypasser tous les caches navigateur (mémoire, disque, CDN).
+                    const url = new URL(window.location.href);
+                    url.searchParams.set('_r', Date.now());
+                    window.location.href = url.toString();
                 });
             }
             
