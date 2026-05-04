@@ -532,12 +532,14 @@
     }
 
     async function loadCourseFile(file) {
-        // raw.githubusercontent.com avec cache-buster → bypass CDN sans consommer api.github.com (60/h)
+        // Cache-buster + cache:'no-store' → bypass CDN ET cache navigateur (essentiel
+        // pour voir les nouvelles cotes après un push)
         try {
-            const resp = await fetchWithRetry(`${file.download_url}?_=${Date.now()}`);
+            const url = `${file.download_url}?_=${Date.now()}_${Math.random().toString(36).slice(2, 6)}`;
+            const resp = await fetchWithRetry(url, { cache: 'no-store' });
             if (!resp.ok) return null;
             return resp.json();
-        } catch { return null; } // skip ce fichier si réseau persistant KO
+        } catch { return null; }
     }
 
     // ============================================================

@@ -1323,7 +1323,7 @@
             //    - Page load : _index.json (rapide, illimité, mais peut avoir 30-60s de retard)
             //    - Refresh manuel : API GitHub (toujours fraîche, mais 60/h limite)
             const tryIndex = async () => {
-                const idxResp = await fetchWithRetry(`https://raw.githubusercontent.com/bencode92/Hippique/main/data/courses/_index.json?_=${Date.now()}`);
+                const idxResp = await fetchWithRetry(`https://raw.githubusercontent.com/bencode92/Hippique/main/data/courses/_index.json?_=${Date.now()}_${Math.random().toString(36).slice(2,6)}`, { cache: 'no-store' });
                 if (!idxResp.ok) return null;
                 const idx = await idxResp.json();
                 const files = (idx.files || []).map(f => ({
@@ -1334,7 +1334,7 @@
                 return files;
             };
             const tryApi = async () => {
-                const r = await fetchWithRetry(`https://api.github.com/repos/bencode92/Hippique/contents/data/courses?_=${Date.now()}`);
+                const r = await fetchWithRetry(`https://api.github.com/repos/bencode92/Hippique/contents/data/courses?_=${Date.now()}_${Math.random().toString(36).slice(2,6)}`, { cache: 'no-store' });
                 if (!r.ok) {
                     if (r.status === 403) console.warn('⚠️ API GitHub rate-limitée (403)');
                     return null;
@@ -1464,12 +1464,13 @@
             
             // Traiter un fichier JSON
             async processFile(file, courseData) {
-                // Cache-buster sur raw.githubusercontent.com → bypass le CDN sans consommer
-                // le quota api.github.com (60 req/h). La query string sert de cache key Fastly.
-                const url = `${file.download_url}?_=${Date.now()}`;
+                // Cache-buster (timestamp + random salt) + cache:'no-store' :
+                // bypass le CDN Fastly ET le cache navigateur. Critique pour voir
+                // les nouvelles cotes après un push (sinon le navigateur sert encore l'ancien JSON).
+                const url = `${file.download_url}?_=${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
                 console.log(`Traitement du fichier: ${file.name}, URL: ${url}`);
 
-                const fileResponse = await fetchWithRetry(url);
+                const fileResponse = await fetchWithRetry(url, { cache: 'no-store' });
                 if (!fileResponse.ok) {
                     console.error(`Erreur lors du chargement du fichier ${file.name}: ${fileResponse.status}`);
                     return;
