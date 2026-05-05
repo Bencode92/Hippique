@@ -1,7 +1,7 @@
 {
   "hippodrome": "LE BOUSCAT",
   "type_reunion": "Plat",
-  "date_extraction": "2026-05-05T12:25:41.324714",
+  "date_extraction": "2026-05-05T12:29:41.187522",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/05052026/R2",
   "courses": [
     {
@@ -1532,14 +1532,15 @@
           "nb_places": 1,
           "cote": 26.0,
           "cote_tendance": "",
-          "cote_reference": 9.4
+          "cote_reference": 9.4,
+          "arrivee": 5
         }
       ],
       "typePiste": "HERBE",
       "terrain": "Souple",
       "penetrometre": "3,7",
       "cordeCourse": "CORDE_DROITE",
-      "arrivee_definitive": false
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX MON ROMAIN",
@@ -1568,8 +1569,8 @@
           "nb_courses": 1,
           "nb_victoires": 1,
           "nb_places": 0,
-          "cote": 1.8,
-          "cote_tendance": "",
+          "cote": 2.0,
+          "cote_tendance": "+",
           "cote_reference": 2.5
         },
         {
@@ -1591,8 +1592,8 @@
           "nb_courses": 1,
           "nb_victoires": 1,
           "nb_places": 0,
-          "cote": 5.9,
-          "cote_tendance": "",
+          "cote": 5.4,
+          "cote_tendance": "-",
           "cote_reference": 5.8
         },
         {
@@ -1614,8 +1615,8 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 8.2,
-          "cote_tendance": "",
+          "cote": 8.7,
+          "cote_tendance": "+",
           "cote_reference": 5.6
         },
         {
@@ -1637,8 +1638,8 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 4.8,
-          "cote_tendance": "",
+          "cote": 3.9,
+          "cote_tendance": "-",
           "cote_reference": 4.2
         },
         {
@@ -1660,8 +1661,8 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 9.7,
-          "cote_tendance": "-",
+          "cote": 10.0,
+          "cote_tendance": "+",
           "cote_reference": 6.1
         }
       ],
