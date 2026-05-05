@@ -1,7 +1,7 @@
 {
   "hippodrome": "LE BOUSCAT",
   "type_reunion": "Plat",
-  "date_extraction": "2026-05-05T12:29:41.187522",
+  "date_extraction": "2026-05-05T13:59:58.182984",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/05052026/R2",
   "courses": [
     {
@@ -1569,9 +1569,10 @@
           "nb_courses": 1,
           "nb_victoires": 1,
           "nb_places": 0,
-          "cote": 2.0,
-          "cote_tendance": "+",
-          "cote_reference": 2.5
+          "cote": 3.7,
+          "cote_tendance": "",
+          "cote_reference": 2.5,
+          "arrivee": 1
         },
         {
           "n°": "2",
@@ -1592,32 +1593,10 @@
           "nb_courses": 1,
           "nb_victoires": 1,
           "nb_places": 0,
-          "cote": 5.4,
-          "cote_tendance": "-",
-          "cote_reference": 5.8
-        },
-        {
-          "n°": "3",
-          "cheval": "NOSSLAND H.AQPS. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: THE GREY GATSBY et ANNALAND (SAINT DES SAINTS)",
-          "corde": "",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/05052026/R2/C8/P3.png",
-          "propriétaire": "MME L.MACLENNAN",
-          "entraineur": "F.NICOLLE",
-          "éleveurs": "MR THIERRY CYPRES",
-          "jockey": "A.ZULIANI",
-          "poids": "67 kg",
-          "gains": "",
-          "musique": "0p",
-          "valeur": "67.0",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0,
-          "cote": 8.7,
+          "cote": 3.8,
           "cote_tendance": "+",
-          "cote_reference": 5.6
+          "cote_reference": 5.8,
+          "arrivee": 2
         },
         {
           "n°": "4",
@@ -1638,9 +1617,34 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 3.9,
-          "cote_tendance": "-",
-          "cote_reference": 4.2
+          "cote": 2.5,
+          "cote_tendance": "",
+          "cote_reference": 4.2,
+          "arrivee": 3
+        },
+        {
+          "n°": "3",
+          "cheval": "NOSSLAND H.AQPS. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: THE GREY GATSBY et ANNALAND (SAINT DES SAINTS)",
+          "corde": "",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/05052026/R2/C8/P3.png",
+          "propriétaire": "MME L.MACLENNAN",
+          "entraineur": "F.NICOLLE",
+          "éleveurs": "MR THIERRY CYPRES",
+          "jockey": "A.ZULIANI",
+          "poids": "67 kg",
+          "gains": "",
+          "musique": "0p",
+          "valeur": "67.0",
+          "equipement(s)": "",
+          "nb_courses": 0,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 5.6,
+          "cote_tendance": "",
+          "cote_reference": 5.6,
+          "arrivee": 4
         },
         {
           "n°": "5",
@@ -1661,14 +1665,16 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 10.0,
+          "cote": 27.0,
           "cote_tendance": "+",
-          "cote_reference": 6.1
+          "cote_reference": 6.1,
+          "arrivee": 5
         }
       ],
       "typePiste": "HERBE",
       "terrain": "Souple",
-      "penetrometre": "3,5"
+      "penetrometre": "3,5",
+      "arrivee_definitive": true
     }
   ]
 }
