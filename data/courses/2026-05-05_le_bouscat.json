@@ -1,7 +1,7 @@
 {
   "hippodrome": "LE BOUSCAT",
   "type_reunion": "Plat",
-  "date_extraction": "2026-05-05T11:54:45.898434",
+  "date_extraction": "2026-05-05T12:25:41.324714",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/05052026/R2",
   "courses": [
     {
@@ -1332,6 +1332,30 @@
           "arrivee": 4
         },
         {
+          "n°": "5",
+          "cheval": "STRONG BOY H.PU. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: TIN HORSE et PERLA CIARA (VOIX DU NORD)",
+          "corde": "",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/05052026/R2/C6/P5.png",
+          "propriétaire": "MME S.MESTRIES",
+          "entraineur": "MME S.MESTRIES",
+          "éleveurs": "MR FRANCOIS-MARIE COTTIN",
+          "jockey": "G.RICHARD",
+          "poids": "67 kg",
+          "gains": "243000",
+          "musique": "6s5h5sAh(25)9h8h",
+          "valeur": "67.0",
+          "equipement(s)": "",
+          "nb_courses": 6,
+          "nb_victoires": 0,
+          "nb_places": 3,
+          "cote": 67.0,
+          "cote_tendance": "+",
+          "cote_reference": 45.0,
+          "arrivee": 5
+        },
+        {
           "n°": "4",
           "cheval": "MIRACLE ROYAL H.PU. 4 a.",
           "cheval_url": "",
@@ -1353,29 +1377,6 @@
           "cote": 49.0,
           "cote_tendance": "",
           "cote_reference": 19.0
-        },
-        {
-          "n°": "5",
-          "cheval": "STRONG BOY H.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: TIN HORSE et PERLA CIARA (VOIX DU NORD)",
-          "corde": "",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/05052026/R2/C6/P5.png",
-          "propriétaire": "MME S.MESTRIES",
-          "entraineur": "MME S.MESTRIES",
-          "éleveurs": "MR FRANCOIS-MARIE COTTIN",
-          "jockey": "G.RICHARD",
-          "poids": "67 kg",
-          "gains": "243000",
-          "musique": "6s5h5sAh(25)9h8h",
-          "valeur": "67.0",
-          "equipement(s)": "",
-          "nb_courses": 6,
-          "nb_victoires": 0,
-          "nb_places": 3,
-          "cote": 67.0,
-          "cote_tendance": "+",
-          "cote_reference": 45.0
         },
         {
           "n°": "7",
@@ -1404,7 +1405,7 @@
       "typePiste": "HERBE",
       "terrain": "Souple",
       "penetrometre": "3,6",
-      "arrivee_definitive": false
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX DAMAS",
@@ -1415,27 +1416,28 @@
       "url": "",
       "participants": [
         {
-          "n°": "1",
-          "cheval": "MUTAZ M.AR. 5 a.",
+          "n°": "5",
+          "cheval": "ROMEO AT M.AR. 4 a.",
           "cheval_url": "",
-          "père_mère": "Par: MUNJIZ et RAKHA (MAHABB)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/05052026/R2/C7/P1.png",
-          "propriétaire": "YAS HORSE RACING MANAGEME",
+          "père_mère": "Par: AF AL BURAQ et TAWAAZUN (MONSIEUR AL MAURY)",
+          "corde": "(Corde:04)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/05052026/R2/C7/P5.png",
+          "propriétaire": "WATHNAN RACING",
           "entraineur": "X.THOMAS-DEMEAULTE (S)",
-          "éleveurs": "YAS HORSE RACING MANAGEMENT",
-          "jockey": "H.MOUESAN",
-          "poids": "60.5 kg",
-          "gains": "8700000",
-          "musique": "(24)1p1p1p4p",
-          "valeur": "60.5",
+          "éleveurs": "MR ABDULLA ALMARRI",
+          "jockey": "G.GUEDJ-GAY",
+          "poids": "56 kg",
+          "gains": "4000000",
+          "musique": "(25)2p2p1p",
+          "valeur": "56.0",
           "equipement(s)": "",
-          "nb_courses": 4,
-          "nb_victoires": 3,
-          "nb_places": 1,
-          "cote": 7.9,
-          "cote_tendance": "-",
-          "cote_reference": 7.5
+          "nb_courses": 3,
+          "nb_victoires": 1,
+          "nb_places": 2,
+          "cote": 2.0,
+          "cote_tendance": "",
+          "cote_reference": 4.8,
+          "arrivee": 1
         },
         {
           "n°": "2",
@@ -1456,9 +1458,10 @@
           "nb_courses": 11,
           "nb_victoires": 4,
           "nb_places": 6,
-          "cote": 1.8,
-          "cote_tendance": "",
-          "cote_reference": 1.7
+          "cote": 2.5,
+          "cote_tendance": "+",
+          "cote_reference": 1.7,
+          "arrivee": 2
         },
         {
           "n°": "3",
@@ -1479,9 +1482,34 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 5,
-          "cote": 9.8,
-          "cote_tendance": "",
-          "cote_reference": 9.3
+          "cote": 9.4,
+          "cote_tendance": "-",
+          "cote_reference": 9.3,
+          "arrivee": 3
+        },
+        {
+          "n°": "1",
+          "cheval": "MUTAZ M.AR. 5 a.",
+          "cheval_url": "",
+          "père_mère": "Par: MUNJIZ et RAKHA (MAHABB)",
+          "corde": "(Corde:01)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/05052026/R2/C7/P1.png",
+          "propriétaire": "YAS HORSE RACING MANAGEME",
+          "entraineur": "X.THOMAS-DEMEAULTE (S)",
+          "éleveurs": "YAS HORSE RACING MANAGEMENT",
+          "jockey": "H.MOUESAN",
+          "poids": "60.5 kg",
+          "gains": "8700000",
+          "musique": "(24)1p1p1p4p",
+          "valeur": "60.5",
+          "equipement(s)": "",
+          "nb_courses": 4,
+          "nb_victoires": 3,
+          "nb_places": 1,
+          "cote": 8.6,
+          "cote_tendance": "-",
+          "cote_reference": 7.5,
+          "arrivee": 4
         },
         {
           "n°": "4",
@@ -1502,38 +1530,16 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 10.0,
+          "cote": 26.0,
           "cote_tendance": "",
           "cote_reference": 9.4
-        },
-        {
-          "n°": "5",
-          "cheval": "ROMEO AT M.AR. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: AF AL BURAQ et TAWAAZUN (MONSIEUR AL MAURY)",
-          "corde": "(Corde:04)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/05052026/R2/C7/P5.png",
-          "propriétaire": "WATHNAN RACING",
-          "entraineur": "X.THOMAS-DEMEAULTE (S)",
-          "éleveurs": "MR ABDULLA ALMARRI",
-          "jockey": "G.GUEDJ-GAY",
-          "poids": "56 kg",
-          "gains": "4000000",
-          "musique": "(25)2p2p1p",
-          "valeur": "56.0",
-          "equipement(s)": "",
-          "nb_courses": 3,
-          "nb_victoires": 1,
-          "nb_places": 2,
-          "cote": 3.8,
-          "cote_tendance": "",
-          "cote_reference": 4.8
         }
       ],
       "typePiste": "HERBE",
       "terrain": "Souple",
       "penetrometre": "3,7",
-      "cordeCourse": "CORDE_DROITE"
+      "cordeCourse": "CORDE_DROITE",
+      "arrivee_definitive": false
     },
     {
       "nom": "PRIX MON ROMAIN",
@@ -1562,9 +1568,9 @@
           "nb_courses": 1,
           "nb_victoires": 1,
           "nb_places": 0,
-          "cote": 1.9,
-          "cote_tendance": "+",
-          "cote_reference": 2.6
+          "cote": 1.8,
+          "cote_tendance": "",
+          "cote_reference": 2.5
         },
         {
           "n°": "2",
@@ -1585,9 +1591,9 @@
           "nb_courses": 1,
           "nb_victoires": 1,
           "nb_places": 0,
-          "cote": 4.4,
-          "cote_tendance": "-",
-          "cote_reference": 3.9
+          "cote": 5.9,
+          "cote_tendance": "",
+          "cote_reference": 5.8
         },
         {
           "n°": "3",
@@ -1608,8 +1614,8 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 7.7,
-          "cote_tendance": "-",
+          "cote": 8.2,
+          "cote_tendance": "",
           "cote_reference": 5.6
         },
         {
@@ -1631,9 +1637,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 5.5,
-          "cote_tendance": "+",
-          "cote_reference": 3.9
+          "cote": 4.8,
+          "cote_tendance": "",
+          "cote_reference": 4.2
         },
         {
           "n°": "5",
@@ -1654,9 +1660,9 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 10.0,
+          "cote": 9.7,
           "cote_tendance": "-",
-          "cote_reference": 14.0
+          "cote_reference": 6.1
         }
       ],
       "typePiste": "HERBE",
