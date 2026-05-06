@@ -1,7 +1,7 @@
 {
   "hippodrome": "MARIENDORF",
   "type_reunion": "ATTELE",
-  "date_extraction": "2026-05-06T11:13:39.516779",
+  "date_extraction": "2026-05-06T11:46:12.262044",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/06052026/R2",
   "courses": [
     {
@@ -798,27 +798,28 @@
           "arrivee": 4
         },
         {
-          "n°": "2",
-          "cheval": "VIKING SILVIO H.TR. 5 a.",
+          "n°": "8",
+          "cheval": "BRANDY SIMONI M.TR. 13 a.",
           "cheval_url": "",
-          "père_mère": "Par: MAHARAJAH et BIANCA SILVIO (SE)",
-          "corde": "(Corde:02)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/06052026/R2/C5/P2.png",
-          "propriétaire": "MAX EISENREICH",
-          "entraineur": "M. EISENREICH",
+          "père_mère": "Par: SAN PELLEGRINO et YASMIN BLOU",
+          "corde": "(Corde:08)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/06052026/R2/C5/P8.png",
+          "propriétaire": "ILKA WETZEL",
+          "entraineur": "D. DARLING",
           "éleveurs": "",
-          "jockey": "PANSCHOW THOMAS",
+          "jockey": "Mme DARLING DENISE",
           "poids": "",
-          "gains": "359100",
-          "musique": "5aDa6aDa6a6aDaDaDa6a",
+          "gains": "940500",
+          "musique": "6a0a4a7a5a4aDa8a0a8a",
           "valeur": "",
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 112.0,
-          "cote_tendance": "-",
-          "cote_reference": 12.0
+          "cote": 88.0,
+          "cote_tendance": "+",
+          "cote_reference": 86.0,
+          "arrivee": 5
         },
         {
           "n°": "5",
@@ -841,33 +842,35 @@
           "nb_places": 0,
           "cote": 42.0,
           "cote_tendance": "+",
-          "cote_reference": 21.0
+          "cote_reference": 21.0,
+          "arrivee": 6
         },
         {
-          "n°": "8",
-          "cheval": "BRANDY SIMONI M.TR. 13 a.",
+          "n°": "2",
+          "cheval": "VIKING SILVIO H.TR. 5 a.",
           "cheval_url": "",
-          "père_mère": "Par: SAN PELLEGRINO et YASMIN BLOU",
-          "corde": "(Corde:08)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/06052026/R2/C5/P8.png",
-          "propriétaire": "ILKA WETZEL",
-          "entraineur": "D. DARLING",
+          "père_mère": "Par: MAHARAJAH et BIANCA SILVIO (SE)",
+          "corde": "(Corde:02)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/06052026/R2/C5/P2.png",
+          "propriétaire": "MAX EISENREICH",
+          "entraineur": "M. EISENREICH",
           "éleveurs": "",
-          "jockey": "Mme DARLING DENISE",
+          "jockey": "PANSCHOW THOMAS",
           "poids": "",
-          "gains": "940500",
-          "musique": "6a0a4a7a5a4aDa8a0a8a",
+          "gains": "359100",
+          "musique": "5aDa6aDa6a6aDaDaDa6a",
           "valeur": "",
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 88.0,
-          "cote_tendance": "+",
-          "cote_reference": 86.0
+          "cote": 112.0,
+          "cote_tendance": "-",
+          "cote_reference": 12.0,
+          "arrivee": 7
         }
       ],
-      "arrivee_definitive": false
+      "arrivee_definitive": true
     }
   ]
 }
