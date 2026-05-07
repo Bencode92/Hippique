@@ -1,7 +1,7 @@
 {
   "hippodrome": "AQUEDUCT",
   "type_reunion": "Plat",
-  "date_extraction": "2026-05-07T21:10:12.152762",
+  "date_extraction": "2026-05-07T23:04:33.436642",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/07052026/R6",
   "courses": [
     {
@@ -658,29 +658,6 @@
           "arrivee": 2
         },
         {
-          "n°": "2",
-          "cheval": "JET OFF M.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: TWIRLING CANDY et CASSIES DREAMER (FLATTER)",
-          "corde": "(Corde:02)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/07052026/R6/C8/P2.png",
-          "propriétaire": "BLACK TYPE THOROUGHBREDS SWINBAN",
-          "entraineur": "G WEAVER",
-          "éleveurs": "",
-          "jockey": "E CANCEL",
-          "poids": "54.5 kg",
-          "gains": "5078100",
-          "musique": "6p6p2p9p(25)",
-          "valeur": "54.5",
-          "equipement(s)": "",
-          "nb_courses": 9,
-          "nb_victoires": 0,
-          "nb_places": 4,
-          "cote": 3.2,
-          "cote_tendance": "+",
-          "cote_reference": 4.8
-        },
-        {
           "n°": "5",
           "cheval": "DARE DEFYING M.PU. 3 a.",
           "cheval_url": "",
@@ -701,7 +678,32 @@
           "nb_places": 0,
           "cote": 10.0,
           "cote_tendance": "+",
-          "cote_reference": 6.6
+          "cote_reference": 6.6,
+          "arrivee": 3
+        },
+        {
+          "n°": "2",
+          "cheval": "JET OFF M.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: TWIRLING CANDY et CASSIES DREAMER (FLATTER)",
+          "corde": "(Corde:02)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/07052026/R6/C8/P2.png",
+          "propriétaire": "BLACK TYPE THOROUGHBREDS SWINBAN",
+          "entraineur": "G WEAVER",
+          "éleveurs": "",
+          "jockey": "E CANCEL",
+          "poids": "54.5 kg",
+          "gains": "5078100",
+          "musique": "6p6p2p9p(25)",
+          "valeur": "54.5",
+          "equipement(s)": "",
+          "nb_courses": 9,
+          "nb_victoires": 0,
+          "nb_places": 4,
+          "cote": 3.2,
+          "cote_tendance": "+",
+          "cote_reference": 4.8,
+          "arrivee": 4
         },
         {
           "n°": "6",
@@ -724,7 +726,8 @@
           "nb_places": 1,
           "cote": 10.0,
           "cote_tendance": "+",
-          "cote_reference": 11.0
+          "cote_reference": 11.0,
+          "arrivee": 5
         },
         {
           "n°": "7",
@@ -747,7 +750,8 @@
           "nb_places": 1,
           "cote": 25.0,
           "cote_tendance": "+",
-          "cote_reference": 11.0
+          "cote_reference": 11.0,
+          "arrivee": 6
         }
       ],
       "typePiste": "HERBE",
