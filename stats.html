@@ -828,7 +828,7 @@
             const max = Math.max(np, op, fp);
             const c = v => v === max ? 'color:var(--green);font-weight:700' : '';
             const optCell = optAvail
-                ? `<td style="${c(op)}">${op.toFixed(1)}% <span style="opacity:0.4;font-size:0.85em">(n=${optCourses})</span></td>`
+                ? `<td style="${c(op)}">${op.toFixed(1)}% <span style="opacity:0.4;font-size:0.75em" title="Perf globale apprise sur ${optCourses} courses 16/04→today, pas sur ta plage sélectionnée">(global, n=${optCourses})</span></td>`
                 : `<td style="opacity:0.4">— <span style="font-size:0.75em">best_formulas.json indispo</span></td>`;
             return `<tr>
                 <td>${label}</td>
@@ -839,7 +839,7 @@
         }
         html += `<div class="section">
             <h2><i class="fas fa-balance-scale"></i> Notre Modèle vs Optimale vs Favori Cote</h2>
-            <p style="opacity:0.6;font-size:0.82rem;margin-top:-0.5rem;margin-bottom:0.6rem">Vert = méthode gagnante sur la métrique. Optimale = champion best_formulas.json (bucket "tous", appris sur 16/04 → aujourd'hui).</p>
+            <p style="opacity:0.6;font-size:0.82rem;margin-top:-0.5rem;margin-bottom:0.6rem">⚠️ <strong>Notre Modèle</strong> et <strong>Favori Cote</strong> sont calculés sur les ${R.total} courses de ta plage sélectionnée. <strong>Optimale</strong> est la perf <em>globale apprise</em> (best_formulas.json bucket "tous"), donc sur un échantillon différent (n=${optCourses || '?'}). Indication de tendance, comparaison non strictement équivalente.</p>
             <table class="comp-table">
                 <thead><tr><th>Métrique</th><th>📊 Notre Modèle</th><th>🔬 Optimale</th><th>💰 Favori Cote</th></tr></thead>
                 <tbody>
