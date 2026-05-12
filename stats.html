@@ -593,10 +593,12 @@
 
         try {
             await loadHippoFilter();
-            // Charge best_formulas.json en parallèle pour afficher la performance optimale
-            // dans le résumé global (3e colonne du tableau et 3e card stat)
+            // Charge best_formulas.json + rankings en parallèle
+            // Pour calculer l'Optimale DYNAMIQUEMENT sur la même plage de courses que Notre Modèle
+            // → comparaison strictement équivalente (n identique)
             const bestFormulasPromise = fetchWithRetry(`https://raw.githubusercontent.com/bencode92/Hippique/main/data/best_formulas.json?_=${Date.now()}_${Math.random().toString(36).slice(2,6)}`, { cache: 'no-store' })
                 .then(r => r.ok ? r.json() : null).catch(() => null);
+            const rankingsPromise = loadRankings().catch(() => null);
             const files = await loadFileList();
 
             const filtered = files.filter(f => {
@@ -622,12 +624,12 @@
             }
 
             const progress = document.getElementById('progress');
-            const R = { total: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 };
+            const R = { total: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0, o1: 0, o2: 0, o3: 0, oTotal: 0 };
             const byDist = {
-                sprint: { t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 },
-                mile:   { t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 },
-                middle: { t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 },
-                staying:{ t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0 }
+                sprint: { t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0, o1: 0, o2: 0, o3: 0 },
+                mile:   { t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0, o1: 0, o2: 0, o3: 0 },
+                middle: { t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0, o1: 0, o2: 0, o3: 0 },
+                staying:{ t: 0, n1: 0, f1: 0, n2: 0, f2: 0, n3: 0, f3: 0, o1: 0, o2: 0, o3: 0 }
             };
             const byHippo = {};
             const byDate = {};
@@ -638,6 +640,47 @@
             // Stocker les courses pour l'analyse leviers
             loadedCourses = [];
             loadedCoursesAVenir = [];
+
+            // Attendre que rankings + best_formulas soient chargés pour calculer l'Optimale dynamiquement
+            // sur la même plage de courses que Notre Modèle (comparaison strictement équivalente)
+            if (progress) progress.textContent = 'Chargement des classements pour l\'Optimale...';
+            const rd = await rankingsPromise;
+            const bestFormulas = await bestFormulasPromise;
+            // Helper : pour une course donnée, retourne true/false pour Top1/2/3 selon la formule optimale du bucket
+            // Bucket priorité : fine (1000m..3000m+) > coarse (sprint/mile/middle/staying)
+            function bucketForDistance(dist) {
+                const fines = [['1000m',900,1099],['1200m',1100,1299],['1300m',1300,1399],
+                    ['1400m',1400,1499],['1500m',1500,1599],['1600m',1600,1699],
+                    ['1800m',1700,1899],['2000m',1900,2099],['2100m',2100,2199],
+                    ['2400m',2200,2500],['3000m+',2600,99999]];
+                for (const [k, lo, hi] of fines) if (dist >= lo && dist <= hi && bestFormulas?.[k]) return k;
+                if (dist < 1400) return 'sprint';
+                if (dist < 1700) return 'mile';
+                if (dist < 2200) return 'middle';
+                return 'staying';
+            }
+            function evalOptimal(course, dist, fileDate) {
+                if (!bestFormulas || !rd) return null;
+                const bucket = bucketForDistance(dist);
+                const f = bestFormulas[bucket];
+                if (!f) return null;
+                const parts = course.participants || [];
+                const scored = parts.map(p => {
+                    const lev = computeLeviers(p, rd, fileDate);
+                    const score = f.leviers.reduce((s, lv, i) => s + (lev[lv]||0)*f.poids[i], 0);
+                    return { p, score };
+                });
+                // Tri DESC + cote ASC tie-breaker (cohérent avec le reste)
+                scored.sort((a, b) => {
+                    const d = b.score - a.score;
+                    if (Math.abs(d) > 0.001) return d;
+                    return (parseFloat(a.p.cote)||999) - (parseFloat(b.p.cote)||999);
+                });
+                const winner = parts.find(p => p.arrivee === 1);
+                if (!winner) return null;
+                const rank = scored.findIndex(s => s.p === winner) + 1;
+                return rank > 0 ? rank : null;
+            }
 
             const BATCH = 15;
             for (let i = 0; i < filtered.length; i += BATCH) {
@@ -698,6 +741,15 @@
                         if (isN3) R.n3++;
                         if (isF3) R.f3++;
 
+                        // Optimale dynamique : applique la formule du bucket à cette course
+                        const optRank = evalOptimal(course, dist, fileDate);
+                        if (optRank !== null) {
+                            R.oTotal++;
+                            if (optRank === 1) { R.o1++; byDist[dl].o1++; }
+                            if (optRank <= 2) { R.o2++; byDist[dl].o2++; }
+                            if (optRank <= 3) { R.o3++; byDist[dl].o3++; }
+                        }
+
                         byDist[dl].t++;
                         if (isN1) byDist[dl].n1++;
                         if (isF1) byDist[dl].f1++;
@@ -746,7 +798,6 @@
                 if (progress) progress.textContent = `${filesLoaded} / ${filtered.length} fichiers (${R.total} courses)`;
             }
 
-            const bestFormulas = await bestFormulasPromise;
             renderResults(R, byDist, byHippo, byDate, courseDetails, coteSumOur, coteSumFav, winsOur, winsFav, bestFormulas);
 
         } catch (err) {
@@ -775,13 +826,10 @@
         const avgCoteOur = winsOur > 0 ? (coteSumOur / winsOur).toFixed(1) : '-';
         const avgCoteFav = winsFav > 0 ? (coteSumFav / winsFav).toFixed(1) : '-';
 
-        // Stats optimales depuis best_formulas.json (bucket 'tous' = global appris sur 16/04 → today)
-        const opt = bestFormulas?.tous;
-        const optAvail = !!opt;
-        const optTop1 = optAvail ? opt.top1 : 0;
-        const optTop2 = optAvail ? opt.top2 : 0;
-        const optTop3 = optAvail ? opt.top3 : 0;
-        const optCourses = optAvail ? opt.courses : 0;
+        // Stats optimales DYNAMIQUES : calculées sur la même plage que Notre Modèle
+        // R.o1/o2/o3 ont été remplis dans le forEach principal via evalOptimal()
+        const optAvail = R.oTotal > 0;
+        const optTotal = R.oTotal;
 
         let html = '';
 
@@ -819,17 +867,17 @@
             </div>
         </div>`;
 
-        // Comparison table — 3 méthodes : Notre Modèle (formule actuelle) / Optimale / Favori Cote
-        // L'Optimale vient de best_formulas.json (bucket 'tous'), apprise sur 16/04 → today
-        function compRow3(label, nCount, optPct, fCount, t) {
+        // Comparison table — 3 méthodes calculées sur LA MÊME plage de courses
+        // (Notre Modèle = formule actuelle, Optimale = formule champion par bucket, Favori Cote = top cote)
+        function compRow3(label, nCount, oCount, fCount, t) {
             const np = pct(nCount, t);
+            const op = pct(oCount, t);
             const fp = pct(fCount, t);
-            const op = optPct;
             const max = Math.max(np, op, fp);
             const c = v => v === max ? 'color:var(--green);font-weight:700' : '';
             const optCell = optAvail
-                ? `<td style="${c(op)}">${op.toFixed(1)}% <span style="opacity:0.4;font-size:0.75em" title="Perf globale apprise sur ${optCourses} courses 16/04→today, pas sur ta plage sélectionnée">(global, n=${optCourses})</span></td>`
-                : `<td style="opacity:0.4">— <span style="font-size:0.75em">best_formulas.json indispo</span></td>`;
+                ? `<td style="${c(op)}">${pctStr(oCount, t)} <span style="opacity:0.4;font-size:0.85em">(${oCount}/${t})</span></td>`
+                : `<td style="opacity:0.4">— <span style="font-size:0.75em">best_formulas/rankings indispo</span></td>`;
             return `<tr>
                 <td>${label}</td>
                 <td style="${c(np)}">${pctStr(nCount,t)} <span style="opacity:0.4;font-size:0.85em">(${nCount}/${t})</span></td>
@@ -839,13 +887,13 @@
         }
         html += `<div class="section">
             <h2><i class="fas fa-balance-scale"></i> Notre Modèle vs Optimale vs Favori Cote</h2>
-            <p style="opacity:0.6;font-size:0.82rem;margin-top:-0.5rem;margin-bottom:0.6rem">⚠️ <strong>Notre Modèle</strong> et <strong>Favori Cote</strong> sont calculés sur les ${R.total} courses de ta plage sélectionnée. <strong>Optimale</strong> est la perf <em>globale apprise</em> (best_formulas.json bucket "tous"), donc sur un échantillon différent (n=${optCourses || '?'}). Indication de tendance, comparaison non strictement équivalente.</p>
+            <p style="opacity:0.6;font-size:0.82rem;margin-top:-0.5rem;margin-bottom:0.6rem">Les 3 méthodes sont calculées sur les <strong>${R.total} mêmes courses</strong> de ta plage. Vert = méthode gagnante sur la métrique. Optimale = formule champion par bucket distance (best_formulas.json), appliquée dynamiquement à chaque course.</p>
             <table class="comp-table">
                 <thead><tr><th>Métrique</th><th>📊 Notre Modèle</th><th>🔬 Optimale</th><th>💰 Favori Cote</th></tr></thead>
                 <tbody>
-                ${compRow3('Top 1 (gagnant)', R.n1, optTop1, R.f1, R.total)}
-                ${compRow3('Top 2',          R.n2, optTop2, R.f2, R.total)}
-                ${compRow3('Top 3',          R.n3, optTop3, R.f3, R.total)}
+                ${compRow3('Top 1 (gagnant)', R.n1, R.o1, R.f1, R.total)}
+                ${compRow3('Top 2',          R.n2, R.o2, R.f2, R.total)}
+                ${compRow3('Top 3',          R.n3, R.o3, R.f3, R.total)}
                 </tbody>
             </table>
         </div>`;
