@@ -593,6 +593,10 @@
 
         try {
             await loadHippoFilter();
+            // Charge best_formulas.json en parallèle pour afficher la performance optimale
+            // dans le résumé global (3e colonne du tableau et 3e card stat)
+            const bestFormulasPromise = fetchWithRetry(`https://raw.githubusercontent.com/bencode92/Hippique/main/data/best_formulas.json?_=${Date.now()}_${Math.random().toString(36).slice(2,6)}`, { cache: 'no-store' })
+                .then(r => r.ok ? r.json() : null).catch(() => null);
             const files = await loadFileList();
 
             const filtered = files.filter(f => {
@@ -742,7 +746,8 @@
                 if (progress) progress.textContent = `${filesLoaded} / ${filtered.length} fichiers (${R.total} courses)`;
             }
 
-            renderResults(R, byDist, byHippo, byDate, courseDetails, coteSumOur, coteSumFav, winsOur, winsFav);
+            const bestFormulas = await bestFormulasPromise;
+            renderResults(R, byDist, byHippo, byDate, courseDetails, coteSumOur, coteSumFav, winsOur, winsFav, bestFormulas);
 
         } catch (err) {
             container.innerHTML = `<div class="loading-overlay"><p style="color:var(--red)">Erreur : ${err.message}</p></div>`;
@@ -760,7 +765,7 @@
     function pctStr(n, t) { return t > 0 ? `${Math.round(n / t * 100)}%` : '-'; }
     function cmpClass(a, b) { return a > b ? 'win' : a < b ? 'lose' : 'tie'; }
 
-    function renderResults(R, byDist, byHippo, byDate, courseDetails, coteSumOur, coteSumFav, winsOur, winsFav) {
+    function renderResults(R, byDist, byHippo, byDate, courseDetails, coteSumOur, coteSumFav, winsOur, winsFav, bestFormulas) {
         const container = document.getElementById('results');
         if (R.total === 0) {
             container.innerHTML = '<div class="loading-overlay"><p>Aucune course terminée trouvée</p></div>';
@@ -769,6 +774,14 @@
 
         const avgCoteOur = winsOur > 0 ? (coteSumOur / winsOur).toFixed(1) : '-';
         const avgCoteFav = winsFav > 0 ? (coteSumFav / winsFav).toFixed(1) : '-';
+
+        // Stats optimales depuis best_formulas.json (bucket 'tous' = global appris sur 16/04 → today)
+        const opt = bestFormulas?.tous;
+        const optAvail = !!opt;
+        const optTop1 = optAvail ? opt.top1 : 0;
+        const optTop2 = optAvail ? opt.top2 : 0;
+        const optTop3 = optAvail ? opt.top3 : 0;
+        const optCourses = optAvail ? opt.courses : 0;
 
         let html = '';
 
@@ -806,15 +819,33 @@
             </div>
         </div>`;
 
-        // Comparison table
+        // Comparison table — 3 méthodes : Notre Modèle (formule actuelle) / Optimale / Favori Cote
+        // L'Optimale vient de best_formulas.json (bucket 'tous'), apprise sur 16/04 → today
+        function compRow3(label, nCount, optPct, fCount, t) {
+            const np = pct(nCount, t);
+            const fp = pct(fCount, t);
+            const op = optPct;
+            const max = Math.max(np, op, fp);
+            const c = v => v === max ? 'color:var(--green);font-weight:700' : '';
+            const optCell = optAvail
+                ? `<td style="${c(op)}">${op.toFixed(1)}% <span style="opacity:0.4;font-size:0.85em">(n=${optCourses})</span></td>`
+                : `<td style="opacity:0.4">— <span style="font-size:0.75em">best_formulas.json indispo</span></td>`;
+            return `<tr>
+                <td>${label}</td>
+                <td style="${c(np)}">${pctStr(nCount,t)} <span style="opacity:0.4;font-size:0.85em">(${nCount}/${t})</span></td>
+                ${optCell}
+                <td style="${c(fp)}">${pctStr(fCount,t)} <span style="opacity:0.4;font-size:0.85em">(${fCount}/${t})</span></td>
+            </tr>`;
+        }
         html += `<div class="section">
-            <h2><i class="fas fa-balance-scale"></i> Notre Modèle vs Favori Cote</h2>
+            <h2><i class="fas fa-balance-scale"></i> Notre Modèle vs Optimale vs Favori Cote</h2>
+            <p style="opacity:0.6;font-size:0.82rem;margin-top:-0.5rem;margin-bottom:0.6rem">Vert = méthode gagnante sur la métrique. Optimale = champion best_formulas.json (bucket "tous", appris sur 16/04 → aujourd'hui).</p>
             <table class="comp-table">
-                <thead><tr><th>Métrique</th><th>Notre Modèle</th><th>Favori Cote</th><th>Écart</th></tr></thead>
+                <thead><tr><th>Métrique</th><th>📊 Notre Modèle</th><th>🔬 Optimale</th><th>💰 Favori Cote</th></tr></thead>
                 <tbody>
-                ${compRow('Top 1 (gagnant)', R.n1, R.f1, R.total)}
-                ${compRow('Top 2', R.n2, R.f2, R.total)}
-                ${compRow('Top 3', R.n3, R.f3, R.total)}
+                ${compRow3('Top 1 (gagnant)', R.n1, optTop1, R.f1, R.total)}
+                ${compRow3('Top 2',          R.n2, optTop2, R.f2, R.total)}
+                ${compRow3('Top 3',          R.n3, optTop3, R.f3, R.total)}
                 </tbody>
             </table>
         </div>`;
