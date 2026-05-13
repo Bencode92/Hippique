@@ -1,7 +1,7 @@
 {
   "hippodrome": "SOLVALLA",
   "type_reunion": "ATTELE",
-  "date_extraction": "2026-05-13T08:26:17.913115",
+  "date_extraction": "2026-05-13T12:01:31.652777",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/13052026/R7",
   "courses": [
     {
@@ -50,7 +50,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.0,
+          "cote_tendance": ""
         },
         {
           "n°": "3",
@@ -111,9 +113,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 1.1,
+          "cote": 11.0,
           "cote_tendance": "",
-          "cote_reference": 1.1
+          "cote_reference": 6.1
         },
         {
           "n°": "6",
@@ -133,7 +135,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 1.9,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         },
         {
           "n°": "7",
@@ -173,7 +178,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 17.0,
+          "cote_tendance": ""
         },
         {
           "n°": "9",
@@ -244,7 +251,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 9.2,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -305,9 +314,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 1.4,
+          "cote": 1.5,
           "cote_tendance": "",
-          "cote_reference": 1.6
+          "cote_reference": 1.3
         },
         {
           "n°": "5",
@@ -328,9 +337,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 11.0,
+          "cote": 18.0,
           "cote_tendance": "",
-          "cote_reference": 9.7
+          "cote_reference": 13.0
         },
         {
           "n°": "6",
@@ -351,9 +360,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 5.7,
+          "cote": 9.2,
           "cote_tendance": "",
-          "cote_reference": 4.8
+          "cote_reference": 6.6
         },
         {
           "n°": "7",
@@ -374,11 +383,12 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 5.7,
+          "cote": 4.6,
           "cote_tendance": "",
-          "cote_reference": 4.8
+          "cote_reference": 6.6
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX PHECDA                             SUEDE",
@@ -407,9 +417,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 1.9,
+          "cote": 2.7,
           "cote_tendance": "",
-          "cote_reference": 1.9
+          "cote_reference": 2.4
         },
         {
           "n°": "2",
@@ -429,7 +439,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 4.1,
+          "cote_tendance": "",
+          "cote_reference": 4.8
         },
         {
           "n°": "3",
@@ -490,9 +503,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 7.9,
+          "cote": 16.0,
           "cote_tendance": "",
-          "cote_reference": 7.9
+          "cote_reference": 9.7
         },
         {
           "n°": "6",
@@ -513,9 +526,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 3.9,
+          "cote": 8.3,
           "cote_tendance": "",
-          "cote_reference": 3.9
+          "cote_reference": 4.8
         },
         {
           "n°": "7",
@@ -535,7 +548,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.3,
+          "cote_tendance": ""
         },
         {
           "n°": "8",
@@ -556,9 +571,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 3.9,
+          "cote": 4.1,
           "cote_tendance": "",
-          "cote_reference": 3.9
+          "cote_reference": 4.8
         },
         {
           "n°": "9",
@@ -580,7 +595,8 @@
           "nb_victoires": 0,
           "nb_places": 0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX MEGREZ                             SUEDE",
@@ -669,9 +685,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 1.5,
+          "cote": 1.9,
           "cote_tendance": "",
-          "cote_reference": 1.5
+          "cote_reference": 1.9
         },
         {
           "n°": "5",
@@ -692,9 +708,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 6.1,
+          "cote": 7.9,
           "cote_tendance": "",
-          "cote_reference": 6.1
+          "cote_reference": 7.9
         },
         {
           "n°": "6",
@@ -715,9 +731,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 3.0,
+          "cote": 3.9,
           "cote_tendance": "",
-          "cote_reference": 3.0
+          "cote_reference": 3.9
         },
         {
           "n°": "7",
@@ -733,26 +749,6 @@
           "poids": "",
           "gains": "2499700",
           "musique": "0a7a0a1a3a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
-          "n°": "8",
-          "cheval": "GLOBAL EVIDENCE F.TR. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: S.J.'s Caviar et Platinium Shine",
-          "corde": "(Corde:08)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/13052026/R7/C4/P8.png",
-          "propriétaire": "JJ STABLE AB",
-          "entraineur": "J. IVANOV",
-          "éleveurs": "",
-          "jockey": "Mme A. LARSSON",
-          "poids": "",
-          "gains": "1888700",
-          "musique": "4a3a4a0a5a",
           "valeur": "",
           "equipement(s)": "",
           "nb_courses": 0,
@@ -797,7 +793,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.9,
+          "cote_tendance": "",
+          "cote_reference": 3.9
         },
         {
           "n°": "11",
@@ -839,7 +838,8 @@
           "nb_victoires": 0,
           "nb_places": 0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX ALIOTH                             SUEDE",
@@ -948,7 +948,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 1.1,
+          "cote": 3.2,
           "cote_tendance": "",
           "cote_reference": 1.1
         },
@@ -990,7 +990,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 4.8,
+          "cote_tendance": ""
         },
         {
           "n°": "8",
@@ -1010,7 +1012,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 4.8,
+          "cote_tendance": ""
         },
         {
           "n°": "9",
@@ -1030,7 +1034,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 4.8,
+          "cote_tendance": ""
         },
         {
           "n°": "10",
@@ -1050,9 +1056,12 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 4.8,
+          "cote_tendance": ""
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX MIZAR                              SUEDE",
@@ -1374,7 +1383,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.0,
+          "cote_tendance": "+"
         },
         {
           "n°": "5",
@@ -1395,8 +1406,8 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 2.6,
-          "cote_tendance": "",
+          "cote": 6.1,
+          "cote_tendance": "+",
           "cote_reference": 2.6
         },
         {
@@ -1558,8 +1569,8 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 1.3,
-          "cote_tendance": "",
+          "cote": 1.5,
+          "cote_tendance": "-",
           "cote_reference": 1.3
         }
       ],
@@ -1631,7 +1642,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.2,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -1672,7 +1685,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 2.6,
+          "cote": 4.4,
           "cote_tendance": "",
           "cote_reference": 2.6
         },
@@ -1695,7 +1708,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 1.3,
+          "cote": 2.2,
           "cote_tendance": "",
           "cote_reference": 1.3
         },
@@ -1819,7 +1832,8 @@
           "nb_victoires": 0,
           "nb_places": 0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX TANIA BOREALIS                     SUEDE",
@@ -1829,26 +1843,6 @@
       "distance": "1640m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "FOLLOWING M.TR. 7 a.",
-          "cheval_url": "",
-          "père_mère": "Par: Nuncio et Tweet Hanover",
-          "corde": "(Corde:01)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/13052026/R7/C9/P1.png",
-          "propriétaire": "STALL T.Z.",
-          "entraineur": "S. MELANDER",
-          "éleveurs": "",
-          "jockey": "B. GOOP",
-          "poids": "",
-          "gains": "33179300",
-          "musique": "5a7a5a0a4a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
-        },
         {
           "n°": "2",
           "cheval": "BORUPS VICTORY M.TR. 8 a.",
@@ -1868,9 +1862,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 1.7,
+          "cote": 1.9,
           "cote_tendance": "",
-          "cote_reference": 2.3
+          "cote_reference": 1.9
         },
         {
           "n°": "3",
@@ -1891,9 +1885,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 11.0,
+          "cote": 8.6,
           "cote_tendance": "",
-          "cote_reference": 6.3
+          "cote_reference": 5.7
         },
         {
           "n°": "4",
@@ -1934,9 +1928,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 69.0,
+          "cote": 13.0,
           "cote_tendance": "",
-          "cote_reference": 37.0
+          "cote_reference": 26.0
         },
         {
           "n°": "6",
@@ -1957,9 +1951,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 34.0,
+          "cote": 60.0,
           "cote_tendance": "",
-          "cote_reference": 18.0
+          "cote_reference": 40.0
         },
         {
           "n°": "7",
@@ -2000,11 +1994,12 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 2.3,
+          "cote": 2.4,
           "cote_tendance": "",
-          "cote_reference": 2.1
+          "cote_reference": 2.6
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX TALITHA                            SUEDE",
@@ -2113,29 +2108,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 1.1,
+          "cote": 9.7,
           "cote_tendance": "",
           "cote_reference": 1.1
-        },
-        {
-          "n°": "6",
-          "cheval": "KALLE TAXAM H.TR. 8 a.",
-          "cheval_url": "",
-          "père_mère": "Par: Make it Happen et Safir Brick",
-          "corde": "(Corde:06)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/13052026/R7/C10/P6.png",
-          "propriétaire": "POLLANEN STABLE AB",
-          "entraineur": "R. POLLANEN",
-          "éleveurs": "",
-          "jockey": "R. POLLANEN",
-          "poids": "",
-          "gains": "8310800",
-          "musique": "3a2a3a0a4a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
         },
         {
           "n°": "7",
@@ -2195,7 +2170,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 1.1,
+          "cote_tendance": ""
         },
         {
           "n°": "10",
@@ -2236,28 +2213,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0
-        },
-        {
-          "n°": "12",
-          "cheval": "PUNCHBOARD H.TR. 8 a.",
-          "cheval_url": "",
-          "père_mère": "Par: Readly Express et Nice Face",
-          "corde": "(Corde:12)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/13052026/R7/C10/P12.png",
-          "propriétaire": "NORSES TRAVTEAM AB",
-          "entraineur": "D. WAJERSTEN",
-          "éleveurs": "",
-          "jockey": "D. WAJERSTEN",
-          "poids": "",
-          "gains": "6888300",
-          "musique": "3aDa1a(25)1a0a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     }
   ]
 }
