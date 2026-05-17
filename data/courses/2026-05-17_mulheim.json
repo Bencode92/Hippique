@@ -1,7 +1,7 @@
 {
   "hippodrome": "MULHEIM",
   "type_reunion": "Plat",
-  "date_extraction": "2026-05-17T11:02:12.212181",
+  "date_extraction": "2026-05-17T21:00:55.291016",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/17052026/R3",
   "courses": [
     {
@@ -793,52 +793,6 @@
           "arrivee": 4
         },
         {
-          "n°": "3",
-          "cheval": "MISTER WONDERFUL H.PU. 9 a.",
-          "cheval_url": "",
-          "père_mère": "Par: RELIABLE MAN et MONASTRELLA (SINNDAR)",
-          "corde": "(Corde:08)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/17052026/R3/C4/P3.png",
-          "propriétaire": "CELINA LOPEZ",
-          "entraineur": "YASMIN ALMENRAEDER",
-          "éleveurs": "",
-          "jockey": "MIGUEL LOPEZ",
-          "poids": "61.5 kg",
-          "gains": "3951800",
-          "musique": "4p(25)7p2p4p",
-          "valeur": "61.5",
-          "equipement(s)": "",
-          "nb_courses": 32,
-          "nb_victoires": 6,
-          "nb_places": 11,
-          "cote": 3.3,
-          "cote_tendance": "",
-          "cote_reference": 4.8
-        },
-        {
-          "n°": "5",
-          "cheval": "CLASSIC FLEUR F.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: HARZAND et CLASSIC DIVA (SHOLOKHOV)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/17052026/R3/C4/P5.png",
-          "propriétaire": "STALL GOLTERMANN & FRIENDS",
-          "entraineur": "SARAH WEIS",
-          "éleveurs": "",
-          "jockey": "LEON WOLFF",
-          "poids": "59.5 kg",
-          "gains": "1815000",
-          "musique": "Ap(25)3p1p1p",
-          "valeur": "59.5",
-          "equipement(s)": "",
-          "nb_courses": 15,
-          "nb_victoires": 2,
-          "nb_places": 4,
-          "cote": 8.8,
-          "cote_tendance": "",
-          "cote_reference": 4.8
-        },
-        {
           "n°": "6",
           "cheval": "ATTENTION ROCKET F.PU. 5 a.",
           "cheval_url": "",
@@ -859,7 +813,8 @@
           "nb_places": 3,
           "cote": 21.0,
           "cote_tendance": "+",
-          "cote_reference": 12.0
+          "cote_reference": 12.0,
+          "arrivee": 5
         },
         {
           "n°": "8",
@@ -882,7 +837,8 @@
           "nb_places": 11,
           "cote": 6.7,
           "cote_tendance": "-",
-          "cote_reference": 5.4
+          "cote_reference": 5.4,
+          "arrivee": 6
         },
         {
           "n°": "9",
@@ -905,11 +861,60 @@
           "nb_places": 4,
           "cote": 25.0,
           "cote_tendance": "+",
-          "cote_reference": 19.0
+          "cote_reference": 19.0,
+          "arrivee": 7
+        },
+        {
+          "n°": "5",
+          "cheval": "CLASSIC FLEUR F.PU. 5 a.",
+          "cheval_url": "",
+          "père_mère": "Par: HARZAND et CLASSIC DIVA (SHOLOKHOV)",
+          "corde": "(Corde:01)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/17052026/R3/C4/P5.png",
+          "propriétaire": "STALL GOLTERMANN & FRIENDS",
+          "entraineur": "SARAH WEIS",
+          "éleveurs": "",
+          "jockey": "LEON WOLFF",
+          "poids": "59.5 kg",
+          "gains": "1815000",
+          "musique": "Ap(25)3p1p1p",
+          "valeur": "59.5",
+          "equipement(s)": "",
+          "nb_courses": 15,
+          "nb_victoires": 2,
+          "nb_places": 4,
+          "cote": 8.8,
+          "cote_tendance": "",
+          "cote_reference": 4.8,
+          "arrivee": 8
+        },
+        {
+          "n°": "3",
+          "cheval": "MISTER WONDERFUL H.PU. 9 a.",
+          "cheval_url": "",
+          "père_mère": "Par: RELIABLE MAN et MONASTRELLA (SINNDAR)",
+          "corde": "(Corde:08)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/17052026/R3/C4/P3.png",
+          "propriétaire": "CELINA LOPEZ",
+          "entraineur": "YASMIN ALMENRAEDER",
+          "éleveurs": "",
+          "jockey": "MIGUEL LOPEZ",
+          "poids": "61.5 kg",
+          "gains": "3951800",
+          "musique": "4p(25)7p2p4p",
+          "valeur": "61.5",
+          "equipement(s)": "",
+          "nb_courses": 32,
+          "nb_victoires": 6,
+          "nb_places": 11,
+          "cote": 3.3,
+          "cote_tendance": "",
+          "cote_reference": 4.8,
+          "arrivee": 9
         }
       ],
       "cordeCourse": "CORDE_DROITE",
-      "arrivee_definitive": false
+      "arrivee_definitive": true
     }
   ]
 }
