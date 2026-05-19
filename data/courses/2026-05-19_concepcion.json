@@ -1,7 +1,7 @@
 {
   "hippodrome": "CONCEPCION",
   "type_reunion": "Plat",
-  "date_extraction": "2026-05-19T21:26:03.357814",
+  "date_extraction": "2026-05-19T23:12:09.865364",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/19052026/R5",
   "courses": [
     {
@@ -1577,53 +1577,8 @@
           "nb_places": 44,
           "cote": 3.9,
           "cote_tendance": "",
-          "cote_reference": 4.2
-        },
-        {
-          "n°": "3",
-          "cheval": "SEKOTI F.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: THE MIGHTY TIGER et SASSY PRANCE (BELONG TO ME)",
-          "corde": "(Corde:03)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/19052026/R5/C10/P3.png",
-          "propriétaire": "FUSTA Y PONCHA",
-          "entraineur": "LUIS G. SOTO E.",
-          "éleveurs": "",
-          "jockey": "LUIS EDUARDO ROJAS ARANGUREN",
-          "poids": "56 kg",
-          "gains": "556560000",
-          "musique": "8p3p3p",
-          "valeur": "56.0",
-          "equipement(s)": "",
-          "nb_courses": 20,
-          "nb_victoires": 1,
-          "nb_places": 10,
-          "cote": 14.0,
-          "cote_tendance": "",
-          "cote_reference": 7.6
-        },
-        {
-          "n°": "4",
-          "cheval": "ENGLA F.PU. 9 a.",
-          "cheval_url": "",
-          "père_mère": "Par: TUMBLEBRUTUS et BJORK (DYNAMIX)",
-          "corde": "(Corde:04)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/19052026/R5/C10/P4.png",
-          "propriétaire": "DANPOCH",
-          "entraineur": "CARLOS MARCELO CORDOVA ARAYA",
-          "éleveurs": "",
-          "jockey": "GUSTAVO VERA",
-          "poids": "55 kg",
-          "gains": "1786140000",
-          "musique": "3p4p2p",
-          "valeur": "55.0",
-          "equipement(s)": "",
-          "nb_courses": 144,
-          "nb_victoires": 11,
-          "nb_places": 49,
-          "cote": 9.3,
-          "cote_tendance": "",
-          "cote_reference": 8.4
+          "cote_reference": 4.2,
+          "arrivee": 4
         },
         {
           "n°": "6",
@@ -1646,7 +1601,32 @@
           "nb_places": 0,
           "cote": 4.4,
           "cote_tendance": "",
-          "cote_reference": 14.0
+          "cote_reference": 14.0,
+          "arrivee": 5
+        },
+        {
+          "n°": "4",
+          "cheval": "ENGLA F.PU. 9 a.",
+          "cheval_url": "",
+          "père_mère": "Par: TUMBLEBRUTUS et BJORK (DYNAMIX)",
+          "corde": "(Corde:04)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/19052026/R5/C10/P4.png",
+          "propriétaire": "DANPOCH",
+          "entraineur": "CARLOS MARCELO CORDOVA ARAYA",
+          "éleveurs": "",
+          "jockey": "GUSTAVO VERA",
+          "poids": "55 kg",
+          "gains": "1786140000",
+          "musique": "3p4p2p",
+          "valeur": "55.0",
+          "equipement(s)": "",
+          "nb_courses": 144,
+          "nb_victoires": 11,
+          "nb_places": 49,
+          "cote": 9.3,
+          "cote_tendance": "",
+          "cote_reference": 8.4,
+          "arrivee": 6
         },
         {
           "n°": "8",
@@ -1669,14 +1649,39 @@
           "nb_places": 6,
           "cote": 37.0,
           "cote_tendance": "",
-          "cote_reference": 22.0
+          "cote_reference": 22.0,
+          "arrivee": 7
+        },
+        {
+          "n°": "3",
+          "cheval": "SEKOTI F.PU. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: THE MIGHTY TIGER et SASSY PRANCE (BELONG TO ME)",
+          "corde": "(Corde:03)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/19052026/R5/C10/P3.png",
+          "propriétaire": "FUSTA Y PONCHA",
+          "entraineur": "LUIS G. SOTO E.",
+          "éleveurs": "",
+          "jockey": "LUIS EDUARDO ROJAS ARANGUREN",
+          "poids": "56 kg",
+          "gains": "556560000",
+          "musique": "8p3p3p",
+          "valeur": "56.0",
+          "equipement(s)": "",
+          "nb_courses": 20,
+          "nb_victoires": 1,
+          "nb_places": 10,
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 7.6,
+          "arrivee": 8
         }
       ],
       "typePiste": "GAZON",
       "terrain": "PSF RAPIDE",
       "penetrometre": "",
       "cordeCourse": "CORDE_DROITE",
-      "arrivee_definitive": false
+      "arrivee_definitive": true
     }
   ]
 }
