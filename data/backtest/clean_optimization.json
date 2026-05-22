@@ -1,5 +1,5 @@
 {
-  "date": "2026-05-21T23:10:18.794Z",
+  "date": "2026-05-22T23:11:05.956Z",
   "method": "ZERO_LEAKAGE",
   "allResults": [
     {
@@ -10,8 +10,8 @@
         "corde": 0.2
       },
       "temp": 8,
-      "total": 465,
-      "top1": 26.2,
+      "total": 469,
+      "top1": 26.4,
       "top3": 83.4,
       "ll": 2.016
     },
@@ -24,10 +24,10 @@
         "walkFormeJockey": 0.2
       },
       "temp": 12,
-      "total": 465,
-      "top1": 16.8,
-      "top3": 77.8,
-      "ll": 2.198
+      "total": 469,
+      "top1": 17.1,
+      "top3": 77.2,
+      "ll": 2.199
     },
     {
       "name": "WALK_VP",
@@ -37,10 +37,10 @@
         "walkJockeyV": 0.5
       },
       "temp": 8,
-      "total": 465,
-      "top1": 16.1,
-      "top3": 78.3,
-      "ll": 2.116
+      "total": 469,
+      "top1": 16.4,
+      "top3": 77.4,
+      "ll": 2.119
     },
     {
       "name": "WALK+EXP",
@@ -50,10 +50,10 @@
         "experience": 0.2
       },
       "temp": 8,
-      "total": 465,
-      "top1": 15.5,
-      "top3": 78.5,
-      "ll": 2.105
+      "total": 469,
+      "top1": 15.4,
+      "top3": 78,
+      "ll": 2.115
     },
     {
       "name": "WALK+FORME",
@@ -64,10 +64,10 @@
         "walkFormeJockey": 0.2
       },
       "temp": 8,
-      "total": 465,
-      "top1": 16.8,
-      "top3": 77.8,
-      "ll": 2.438
+      "total": 469,
+      "top1": 17.1,
+      "top3": 77.2,
+      "ll": 2.433
     }
   ],
   "bestConfig": {
@@ -78,19 +78,19 @@
       "corde": 0.2
     },
     "temp": 8,
-    "total": 465,
-    "top1": 26.2,
+    "total": 469,
+    "top1": 26.4,
     "top3": 83.4,
     "ll": 2.016
   },
   "testResult": {
-    "total": 465,
-    "top1": 31,
-    "top3": 86.9,
-    "ll": 2.032
+    "total": 469,
+    "top1": 30.9,
+    "top3": 86.6,
+    "ll": 2.021
   },
   "baseline": {
-    "top1": 9.6,
-    "ll": 2.339
+    "top1": 9.7,
+    "ll": 2.33
   }
 }
