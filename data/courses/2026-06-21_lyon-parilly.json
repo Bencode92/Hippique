@@ -1,7 +1,7 @@
 {
   "hippodrome": "LYON-PARILLY",
   "type_reunion": "Plat",
-  "date_extraction": "2026-06-21T12:08:58.769003",
+  "date_extraction": "2026-06-21T21:20:10.662345",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/21062026/R2",
   "courses": [
     {
@@ -1266,30 +1266,8 @@
           "nb_places": 7,
           "cote": 2.3,
           "cote_tendance": "",
-          "cote_reference": 1.9
-        },
-        {
-          "n°": "4",
-          "cheval": "LADY PALMA F.AQPS. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: BEAUMEC DE HOUELLE et VISTA PALMA (ENRIQUE)",
-          "corde": "(Corde:03)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/21062026/R2/C8/P4.png",
-          "propriétaire": "M.SAURET/HARAS DU HOGUENET",
-          "entraineur": "M.PITART",
-          "éleveurs": "S.C.E.A. HARAS DU HOGUENET",
-          "jockey": "E.PUILLET-RODA",
-          "poids": "63.5 kg",
-          "gains": "645000",
-          "musique": "6p(25)Th6h3h4hAh1p8p4p",
-          "valeur": "63.5",
-          "equipement(s)": "",
-          "nb_courses": 4,
-          "nb_victoires": 1,
-          "nb_places": 2,
-          "cote": 2.7,
-          "cote_tendance": "+",
-          "cote_reference": 4.0
+          "cote_reference": 1.9,
+          "arrivee": 1
         },
         {
           "n°": "5",
@@ -1312,7 +1290,32 @@
           "nb_places": 5,
           "cote": 3.9,
           "cote_tendance": "",
-          "cote_reference": 4.6
+          "cote_reference": 4.6,
+          "arrivee": 2
+        },
+        {
+          "n°": "4",
+          "cheval": "LADY PALMA F.AQPS. 5 a.",
+          "cheval_url": "",
+          "père_mère": "Par: BEAUMEC DE HOUELLE et VISTA PALMA (ENRIQUE)",
+          "corde": "(Corde:03)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/21062026/R2/C8/P4.png",
+          "propriétaire": "M.SAURET/HARAS DU HOGUENET",
+          "entraineur": "M.PITART",
+          "éleveurs": "S.C.E.A. HARAS DU HOGUENET",
+          "jockey": "E.PUILLET-RODA",
+          "poids": "63.5 kg",
+          "gains": "645000",
+          "musique": "6p(25)Th6h3h4hAh1p8p4p",
+          "valeur": "63.5",
+          "equipement(s)": "",
+          "nb_courses": 4,
+          "nb_victoires": 1,
+          "nb_places": 2,
+          "cote": 2.7,
+          "cote_tendance": "+",
+          "cote_reference": 4.0,
+          "arrivee": 3
         },
         {
           "n°": "6",
@@ -1335,13 +1338,15 @@
           "nb_places": 1,
           "cote": 11.0,
           "cote_tendance": "-",
-          "cote_reference": 7.2
+          "cote_reference": 7.2,
+          "arrivee": 4
         }
       ],
       "typePiste": "HERBE",
       "terrain": "Bon souple",
       "penetrometre": "3,3",
-      "cordeCourse": "CORDE_GAUCHE"
+      "cordeCourse": "CORDE_GAUCHE",
+      "arrivee_definitive": true
     }
   ]
 }
