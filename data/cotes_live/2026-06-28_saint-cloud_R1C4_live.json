@@ -1,0 +1,48 @@
+{
+  "course": "PRIX EUGENE ADAM",
+  "numero": 4,
+  "reunion": 1,
+  "heure_depart": 1782655200000,
+  "distance": 2000,
+  "scraped_at": "2026-06-28T13:57:38.032633",
+  "minutes_avant_depart": 2,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "BAROUD",
+      "cote_live": 12.0,
+      "cote_reference": 13.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1782655048000
+    },
+    {
+      "numPmu": 2,
+      "nom": "PEARLED MAJESTY",
+      "cote_live": 2.3,
+      "cote_reference": 3.6,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1782655048000
+    },
+    {
+      "numPmu": 3,
+      "nom": "FOCUS",
+      "cote_live": 9.0,
+      "cote_reference": 8.4,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1782655048000
+    },
+    {
+      "numPmu": 4,
+      "nom": "OVERNIGHT",
+      "cote_live": 1.9,
+      "cote_reference": 1.4,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1782655048000
+    }
+  ],
+  "hippodrome": "SAINT-CLOUD"
+}
