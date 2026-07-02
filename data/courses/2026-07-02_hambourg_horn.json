@@ -1,7 +1,7 @@
 {
   "hippodrome": "HAMBOURG HORN",
   "type_reunion": "Plat",
-  "date_extraction": "2026-07-02T12:06:38.400292",
+  "date_extraction": "2026-07-02T21:15:18.572347",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/02072026/R2",
   "courses": [
     {
@@ -961,29 +961,6 @@
       "url": "",
       "participants": [
         {
-          "n°": "1",
-          "cheval": "ANY MOON H.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: SEA THE MOON et ANATOLA (TIGER HILL)",
-          "corde": "(Corde:03)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/02072026/R2/C10/P1.png",
-          "propriétaire": "STALL ROM",
-          "entraineur": "SASCHA SMRCZEK",
-          "éleveurs": "",
-          "jockey": "MICHAELA MALACOVA",
-          "poids": "61 kg",
-          "gains": "3738200",
-          "musique": "2p1p2p(25)3p",
-          "valeur": "61.0",
-          "equipement(s)": "",
-          "nb_courses": 10,
-          "nb_victoires": 2,
-          "nb_places": 6,
-          "cote": 1.1,
-          "cote_tendance": "",
-          "cote_reference": 1.7
-        },
-        {
           "n°": "2",
           "cheval": "MANSOUR H.PU. 9 a.",
           "cheval_url": "",
@@ -1002,32 +979,34 @@
           "nb_courses": 31,
           "nb_victoires": 9,
           "nb_places": 9,
-          "cote": 9.7,
-          "cote_tendance": "-",
-          "cote_reference": 3.9
+          "cote": 2.5,
+          "cote_tendance": "",
+          "cote_reference": 4.0,
+          "arrivee": 1
         },
         {
-          "n°": "4",
-          "cheval": "TABASCO STAR H.PU. 4 a.",
+          "n°": "1",
+          "cheval": "ANY MOON H.PU. 5 a.",
           "cheval_url": "",
-          "père_mère": "Par: SEA THE STARS et TABASSUM (NAYEF)",
-          "corde": "(Corde:05)",
-          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/02072026/R2/C10/P4.png",
-          "propriétaire": "STALL NIGHT FLOWERS",
-          "entraineur": "FRANK FUHRMANN",
+          "père_mère": "Par: SEA THE MOON et ANATOLA (TIGER HILL)",
+          "corde": "(Corde:03)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/02072026/R2/C10/P1.png",
+          "propriétaire": "STALL ROM",
+          "entraineur": "SASCHA SMRCZEK",
           "éleveurs": "",
-          "jockey": "SINA SCHMIDT",
-          "poids": "52 kg",
-          "gains": "",
-          "musique": "",
-          "valeur": "52.0",
+          "jockey": "MICHAELA MALACOVA",
+          "poids": "61 kg",
+          "gains": "3738200",
+          "musique": "2p1p2p(25)3p",
+          "valeur": "61.0",
           "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0,
-          "cote": 11.0,
-          "cote_tendance": "-",
-          "cote_reference": 9.3
+          "nb_courses": 10,
+          "nb_victoires": 2,
+          "nb_places": 6,
+          "cote": 1.8,
+          "cote_tendance": "",
+          "cote_reference": 1.5,
+          "arrivee": 2
         },
         {
           "n°": "5",
@@ -1048,9 +1027,10 @@
           "nb_courses": 12,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 15.0,
+          "cote": 17.0,
           "cote_tendance": "+",
-          "cote_reference": 11.0
+          "cote_reference": 12.0,
+          "arrivee": 3
         },
         {
           "n°": "6",
@@ -1071,12 +1051,38 @@
           "nb_courses": 12,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 41.0,
-          "cote_tendance": "-",
-          "cote_reference": 9.3
+          "cote": 26.0,
+          "cote_tendance": "+",
+          "cote_reference": 18.0,
+          "arrivee": 4
+        },
+        {
+          "n°": "4",
+          "cheval": "TABASCO STAR H.PU. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: SEA THE STARS et TABASSUM (NAYEF)",
+          "corde": "(Corde:05)",
+          "couleurs": "https://www.pmu.fr/back-assets/hippique/casaques/02072026/R2/C10/P4.png",
+          "propriétaire": "STALL NIGHT FLOWERS",
+          "entraineur": "FRANK FUHRMANN",
+          "éleveurs": "",
+          "jockey": "SINA SCHMIDT",
+          "poids": "52 kg",
+          "gains": "",
+          "musique": "",
+          "valeur": "52.0",
+          "equipement(s)": "",
+          "nb_courses": 0,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 9.3,
+          "cote_tendance": "+",
+          "cote_reference": 9.9,
+          "arrivee": 5
         }
       ],
-      "cordeCourse": "CORDE_DROITE"
+      "cordeCourse": "CORDE_DROITE",
+      "arrivee_definitive": true
     }
   ]
 }
