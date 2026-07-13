@@ -1644,6 +1644,23 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         return this.trouverMeilleurScore(donneesClassement, nomAvecInitiale);
     },
     
+    // Index O(1) : normaliserNom(nom) -> item, construit UNE fois par tableau (WeakMap).
+    // Réplique la sémantique "première correspondance" de la STRATÉGIE 1 (on ne surcharge
+    // pas une clé déjà vue). Auto-invalidé quand loadAllData réassigne le tableau.
+    _normIndexFor(donneesClassement) {
+        if (!this._normIndexCache) this._normIndexCache = new WeakMap();
+        let idx = this._normIndexCache.get(donneesClassement);
+        if (!idx) {
+            idx = new Map();
+            for (const item of donneesClassement) {
+                const k = this.normaliserNom(item.Nom || item.NomPostal || "");
+                if (k && !idx.has(k)) idx.set(k, item);
+            }
+            this._normIndexCache.set(donneesClassement, idx);
+        }
+        return idx;
+    },
+
     // Trouver le meilleur score pour un nom dans les données de classement
     // FONCTION AMÉLIORÉE AVEC RECHERCHE PROGRESSIVE
     trouverMeilleurScore(donneesClassement, nom) {
@@ -1730,23 +1747,13 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         const nomNormalise = this.normaliserNom(nom);
         console.log(`Recherche pour: "${nom}" normalisé en "${nomNormalise}"`);
         
-        // STRATÉGIE 1: Correspondance exacte
-        for (const item of donneesClassement) {
-            const nomItem = item.Nom || item.NomPostal || "";
-            const nomItemNormalise = this.normaliserNom(nomItem);
-            
-            if (nomItemNormalise === nomNormalise) {
-                console.log(`Correspondance exacte trouvée: "${nomItem}"`);
-                
-                // Mémoriser cette correspondance
-                this.correspondancesDecouvertes[nomUpper] = nomItem;
-                
-                return {
-                    score: 0,
-                    rang: item.Rang,
-                    similarite: 100,
-                    item: item
-                };
+        // STRATÉGIE 1: Correspondance exacte — via index O(1) (au lieu de re-scanner
+        // + re-normaliser les ~14K entrées à CHAQUE recherche = cause des ~40s).
+        {
+            const exact = this._normIndexFor(donneesClassement).get(nomNormalise);
+            if (exact) {
+                this.correspondancesDecouvertes[nomUpper] = exact.Nom || exact.NomPostal || "";
+                return { score: 0, rang: exact.Rang, similarite: 100, item: exact };
             }
         }
         
