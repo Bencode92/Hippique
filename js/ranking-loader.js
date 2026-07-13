@@ -1925,12 +1925,29 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         return { score: 0, rang: null, item: null };
     },
     
-    // Trouver l'item correspondant à un nom dans un classement
+    // Trouver l'item correspondant à un nom dans un classement.
+    // Wrapper MÉMOÏSÉ : le fuzzy-matching (trouverMeilleurScore) est un scan linéaire
+    // coûteux appelé ~6× par partant → gelait Chrome au chargement d'un jour terminé.
+    // Cache par (tableau, catégorie, nom) via WeakMap sur la référence du tableau :
+    // auto-invalidé dès que loadAllData() réassigne les données (ancien tableau GC).
     trouverItemDansClassement(donneesClassement, nom, categorie) {
+        if (!nom || !donneesClassement || !donneesClassement.length) return null;
+        if (!this._lookupCache) this._lookupCache = new WeakMap();
+        let byName = this._lookupCache.get(donneesClassement);
+        if (!byName) { byName = new Map(); this._lookupCache.set(donneesClassement, byName); }
+        const key = categorie + '|' + (typeof nom === 'string' ? nom : JSON.stringify(nom));
+        if (byName.has(key)) return byName.get(key);
+        const res = this._trouverItemDansClassementImpl(donneesClassement, nom, categorie);
+        byName.set(key, res);
+        return res;
+    },
+
+    // Implémentation réelle (non cachée) — voir le wrapper mémoïsé ci-dessus.
+    _trouverItemDansClassementImpl(donneesClassement, nom, categorie) {
         if (!nom || !donneesClassement || !donneesClassement.length) {
             return null;
         }
-        
+
         // Pour les éleveurs et propriétaires qui peuvent être multiples
         if (categorie === 'eleveurs' || categorie === 'proprietaires') {
             let noms = [];

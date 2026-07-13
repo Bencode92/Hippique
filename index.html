@@ -1526,7 +1526,9 @@
                         }
                     });
                     
-                    console.log("Données de courses chargées avec succès:", courseData);
+                    // NB: ne PAS logger l'objet courseData entier (des milliers de participants) —
+                    // sérialiser/retenir cet objet fige Chrome quand la console est ouverte.
+                    console.log(`Données de courses chargées : ${Object.keys(courseData).length} hippodrome(s)`);
                     return courseData;
                     
                 } catch (error) {
