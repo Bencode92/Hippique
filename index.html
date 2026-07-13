@@ -1500,23 +1500,14 @@
                         return courseData;
                     }
                     
-                    // Charger les fichiers du jour EN PARALLÈLE avec limite de concurrence
-                    // (pool de 8) : ~5-10× plus rapide que séquentiel, sans saturer le CDN.
-                    // courseData est indexé par hippodrome (1 fichier = 1 hippo) → pas de conflit.
-                    let __fileIdx = 0;
-                    const __worker = async () => {
-                        while (__fileIdx < courseFiles.length) {
-                            const file = courseFiles[__fileIdx++];
-                            try {
-                                await this.processFile(file, courseData);
-                            } catch (fileError) {
-                                console.error(`Erreur lors du traitement du fichier ${file.name}:`, fileError);
-                            }
+                    // Charger les données de chaque fichier
+                    for (const file of courseFiles) {
+                        try {
+                            await this.processFile(file, courseData);
+                        } catch (fileError) {
+                            console.error(`Erreur lors du traitement du fichier ${file.name}:`, fileError);
                         }
-                    };
-                    await Promise.all(
-                        Array.from({ length: Math.min(8, courseFiles.length) }, __worker)
-                    );
+                    }
 
                     // OVERRIDE des cotes par les fichiers cotes_live (mis à jour par
                     // scrape-pre-course.yml toutes les 15 min). Les cotes du programme du
@@ -1548,16 +1539,13 @@
             
             // Traiter un fichier JSON
             async processFile(file, courseData) {
-                // Cache-buster + no-store UNIQUEMENT pour aujourd'hui/futur (cotes qui bougent,
-                // il faut voir les nouvelles après un push). Les courses PASSÉES sont immuables
-                // → cache navigateur normal → 2e visite d'un jour passé quasi instantanée.
-                const fileDate = (file.name.match(/^(\d{4}-\d{2}-\d{2})/) || [])[1] || '';
-                const isTodayOrFuture = !fileDate || fileDate >= this.formatDateYMD(new Date());
-                const url = isTodayOrFuture
-                    ? `${file.download_url}?_=${Date.now()}_${Math.random().toString(36).slice(2, 8)}`
-                    : file.download_url;
+                // Cache-buster (timestamp + random salt) + cache:'no-store' :
+                // bypass le CDN Fastly ET le cache navigateur. Critique pour voir
+                // les nouvelles cotes après un push (sinon le navigateur sert encore l'ancien JSON).
+                const url = `${file.download_url}?_=${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
+                console.log(`Traitement du fichier: ${file.name}, URL: ${url}`);
 
-                const fileResponse = await fetchWithRetry(url, isTodayOrFuture ? { cache: 'no-store' } : {});
+                const fileResponse = await fetchWithRetry(url, { cache: 'no-store' });
                 if (!fileResponse.ok) {
                     console.error(`Erreur lors du chargement du fichier ${file.name}: ${fileResponse.status}`);
                     return;
