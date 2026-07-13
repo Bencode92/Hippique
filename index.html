@@ -1500,15 +1500,14 @@
                         return courseData;
                     }
                     
-                    // Charger les données de chaque fichier EN PARALLÈLE (gros gain vs séquentiel).
-                    // courseData est indexé par hippodrome (1 fichier = 1 hippo) → pas de conflit d'écriture.
-                    await Promise.all(courseFiles.map(async (file) => {
+                    // Charger les données de chaque fichier
+                    for (const file of courseFiles) {
                         try {
                             await this.processFile(file, courseData);
                         } catch (fileError) {
                             console.error(`Erreur lors du traitement du fichier ${file.name}:`, fileError);
                         }
-                    }));
+                    }
 
                     // OVERRIDE des cotes par les fichiers cotes_live (mis à jour par
                     // scrape-pre-course.yml toutes les 15 min). Les cotes du programme du
@@ -1541,17 +1540,10 @@
                 // Cache-buster (timestamp + random salt) + cache:'no-store' :
                 // bypass le CDN Fastly ET le cache navigateur. Critique pour voir
                 // les nouvelles cotes après un push (sinon le navigateur sert encore l'ancien JSON).
-                // Cache-buster + no-store UNIQUEMENT pour aujourd'hui/futur (cotes qui bougent).
-                // Les courses passées sont immuables → cache navigateur normal = quasi instantané
-                // en re-visite (évite un aller-retour réseau complet par fichier).
-                const fileDate = (file.name.match(/^(\d{4}-\d{2}-\d{2})/) || [])[1] || '';
-                const isTodayOrFuture = !fileDate || fileDate >= this.formatDateYMD(new Date());
-                const url = isTodayOrFuture
-                    ? `${file.download_url}?_=${Date.now()}_${Math.random().toString(36).slice(2, 8)}`
-                    : file.download_url;
+                const url = `${file.download_url}?_=${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
                 console.log(`Traitement du fichier: ${file.name}, URL: ${url}`);
 
-                const fileResponse = await fetchWithRetry(url, isTodayOrFuture ? { cache: 'no-store' } : {});
+                const fileResponse = await fetchWithRetry(url, { cache: 'no-store' });
                 if (!fileResponse.ok) {
                     console.error(`Erreur lors du chargement du fichier ${file.name}: ${fileResponse.status}`);
                     return;
