@@ -1,7 +1,7 @@
 {
   "hippodrome": "AIX LES BAINS",
   "type_reunion": "HAIE",
-  "date_extraction": "2026-07-14T11:23:08.150627",
+  "date_extraction": "2026-07-14T21:05:15.110089",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/14072026/R3",
   "courses": [
     {
@@ -1168,52 +1168,6 @@
           "arrivee": 4
         },
         {
-          "n°": "2",
-          "cheval": "RIO GRANDE H.PU. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: DABIRSIM et JEU DE VIVRE (MONTJEU)",
-          "corde": "(Corde:08)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260714/AIX/8/20260714-AIX-8-2.png",
-          "propriétaire": "EC.BONARDEL/P.FILLIAT/THOUVENEL",
-          "entraineur": "M.CESANDRI (S)",
-          "éleveurs": "MME GILLES FORIEN",
-          "jockey": "E.PUILLET-RODA",
-          "poids": "59 kg",
-          "gains": "8707400",
-          "musique": "1p9p1p9p0p0p0p4p(25)4p",
-          "valeur": "59.0",
-          "equipement(s)": "",
-          "nb_courses": 46,
-          "nb_victoires": 7,
-          "nb_places": 15,
-          "cote": 13.0,
-          "cote_tendance": "+",
-          "cote_reference": 7.6
-        },
-        {
-          "n°": "4",
-          "cheval": "WILD HORSES H.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: WALDGEIST et SABI SABI (ORPEN)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260714/AIX/8/20260714-AIX-8-4.png",
-          "propriétaire": "C.MARTINON",
-          "entraineur": "C.MARTINON",
-          "éleveurs": "M.L.P. CONSULTANCY",
-          "jockey": "C.BOUVIER",
-          "poids": "56 kg",
-          "gains": "3025200",
-          "musique": "7p0p(25)2p0p7p(24)5p4p3p",
-          "valeur": "56.0",
-          "equipement(s)": "",
-          "nb_courses": 9,
-          "nb_victoires": 1,
-          "nb_places": 5,
-          "cote": 33.0,
-          "cote_tendance": "+",
-          "cote_reference": 9.3
-        },
-        {
           "n°": "5",
           "cheval": "FETE JOYEUSE F.PU. 7 a.",
           "cheval_url": "",
@@ -1234,7 +1188,8 @@
           "nb_places": 19,
           "cote": 14.0,
           "cote_tendance": "-",
-          "cote_reference": 13.0
+          "cote_reference": 13.0,
+          "arrivee": 5
         },
         {
           "n°": "6",
@@ -1257,14 +1212,63 @@
           "nb_places": 4,
           "cote": 3.5,
           "cote_tendance": "+",
-          "cote_reference": 5.0
+          "cote_reference": 5.0,
+          "arrivee": 6
+        },
+        {
+          "n°": "2",
+          "cheval": "RIO GRANDE H.PU. 6 a.",
+          "cheval_url": "",
+          "père_mère": "Par: DABIRSIM et JEU DE VIVRE (MONTJEU)",
+          "corde": "(Corde:08)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260714/AIX/8/20260714-AIX-8-2.png",
+          "propriétaire": "EC.BONARDEL/P.FILLIAT/THOUVENEL",
+          "entraineur": "M.CESANDRI (S)",
+          "éleveurs": "MME GILLES FORIEN",
+          "jockey": "E.PUILLET-RODA",
+          "poids": "59 kg",
+          "gains": "8707400",
+          "musique": "1p9p1p9p0p0p0p4p(25)4p",
+          "valeur": "59.0",
+          "equipement(s)": "",
+          "nb_courses": 46,
+          "nb_victoires": 7,
+          "nb_places": 15,
+          "cote": 13.0,
+          "cote_tendance": "+",
+          "cote_reference": 7.6,
+          "arrivee": 7
+        },
+        {
+          "n°": "4",
+          "cheval": "WILD HORSES H.PU. 5 a.",
+          "cheval_url": "",
+          "père_mère": "Par: WALDGEIST et SABI SABI (ORPEN)",
+          "corde": "(Corde:01)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260714/AIX/8/20260714-AIX-8-4.png",
+          "propriétaire": "C.MARTINON",
+          "entraineur": "C.MARTINON",
+          "éleveurs": "M.L.P. CONSULTANCY",
+          "jockey": "C.BOUVIER",
+          "poids": "56 kg",
+          "gains": "3025200",
+          "musique": "7p0p(25)2p0p7p(24)5p4p3p",
+          "valeur": "56.0",
+          "equipement(s)": "",
+          "nb_courses": 9,
+          "nb_victoires": 1,
+          "nb_places": 5,
+          "cote": 33.0,
+          "cote_tendance": "+",
+          "cote_reference": 9.3,
+          "arrivee": 8
         }
       ],
       "typePiste": "HERBE",
       "terrain": "Bon souple",
       "penetrometre": "3,4",
       "cordeCourse": "CORDE_DROITE",
-      "arrivee_definitive": false
+      "arrivee_definitive": true
     }
   ]
 }
