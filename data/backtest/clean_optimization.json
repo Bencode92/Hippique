@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-16T23:04:06.294Z",
+  "date": "2026-07-17T22:55:54.600Z",
   "method": "ZERO_LEAKAGE",
   "allResults": [
     {
@@ -10,10 +10,10 @@
         "corde": 0.2
       },
       "temp": 8,
-      "total": 543,
-      "top1": 27.1,
+      "total": 545,
+      "top1": 27.3,
       "top3": 85.5,
-      "ll": 1.972
+      "ll": 1.963
     },
     {
       "name": "WALK_VP",
@@ -23,24 +23,10 @@
         "walkJockeyV": 0.5
       },
       "temp": 8,
-      "total": 543,
-      "top1": 19.3,
-      "top3": 80.5,
-      "ll": 2.061
-    },
-    {
-      "name": "WALK+FORME t12",
-      "weights": {
-        "walkChevalV": 0.7,
-        "walkJockeyV": 0.3,
-        "walkFormeCheval": 0.5,
-        "walkFormeJockey": 0.2
-      },
-      "temp": 12,
-      "total": 543,
-      "top1": 19.9,
-      "top3": 78.6,
-      "ll": 2.231
+      "total": 545,
+      "top1": 19.4,
+      "top3": 80.4,
+      "ll": 2.056
     },
     {
       "name": "ALL_CLEAN",
@@ -54,10 +40,24 @@
         "walkCombo": 0.1
       },
       "temp": 8,
-      "total": 543,
-      "top1": 19.9,
-      "top3": 80.1,
-      "ll": 2.401
+      "total": 545,
+      "top1": 20,
+      "top3": 80,
+      "ll": 2.399
+    },
+    {
+      "name": "WALK+FORME t12",
+      "weights": {
+        "walkChevalV": 0.7,
+        "walkJockeyV": 0.3,
+        "walkFormeCheval": 0.5,
+        "walkFormeJockey": 0.2
+      },
+      "temp": 12,
+      "total": 545,
+      "top1": 19.8,
+      "top3": 78.3,
+      "ll": 2.229
     },
     {
       "name": "WALK+COMBO",
@@ -67,10 +67,10 @@
         "walkCombo": 0.3
       },
       "temp": 8,
-      "total": 543,
-      "top1": 19.2,
-      "top3": 77,
-      "ll": 2.071
+      "total": 545,
+      "top1": 19.1,
+      "top3": 76.7,
+      "ll": 2.066
     }
   ],
   "bestConfig": {
@@ -81,19 +81,19 @@
       "corde": 0.2
     },
     "temp": 8,
-    "total": 543,
-    "top1": 27.1,
+    "total": 545,
+    "top1": 27.3,
     "top3": 85.5,
-    "ll": 1.972
+    "ll": 1.963
   },
   "testResult": {
-    "total": 543,
-    "top1": 28.7,
-    "top3": 88.4,
-    "ll": 1.916
+    "total": 545,
+    "top1": 28.1,
+    "top3": 88.1,
+    "ll": 1.928
   },
   "baseline": {
-    "top1": 10.4,
-    "ll": 2.266
+    "top1": 10.3,
+    "ll": 2.269
   }
 }
