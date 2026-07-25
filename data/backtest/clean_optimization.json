@@ -1,5 +1,5 @@
 {
-  "date": "2026-07-24T23:08:28.465Z",
+  "date": "2026-07-25T23:00:48.335Z",
   "method": "ZERO_LEAKAGE",
   "allResults": [
     {
@@ -10,10 +10,10 @@
         "corde": 0.2
       },
       "temp": 8,
-      "total": 579,
-      "top1": 28.5,
-      "top3": 86.5,
-      "ll": 1.885
+      "total": 585,
+      "top1": 28.2,
+      "top3": 86.3,
+      "ll": 1.908
     },
     {
       "name": "WALK_VP",
@@ -23,10 +23,10 @@
         "walkJockeyV": 0.5
       },
       "temp": 8,
-      "total": 579,
-      "top1": 20,
-      "top3": 81.2,
-      "ll": 1.976
+      "total": 585,
+      "top1": 20.2,
+      "top3": 81.5,
+      "ll": 2.001
     },
     {
       "name": "ALL_CLEAN",
@@ -40,24 +40,10 @@
         "walkCombo": 0.1
       },
       "temp": 8,
-      "total": 579,
+      "total": 585,
       "top1": 20.9,
-      "top3": 80.3,
-      "ll": 2.298
-    },
-    {
-      "name": "WALK+FORME t12",
-      "weights": {
-        "walkChevalV": 0.7,
-        "walkJockeyV": 0.3,
-        "walkFormeCheval": 0.5,
-        "walkFormeJockey": 0.2
-      },
-      "temp": 12,
-      "total": 579,
-      "top1": 20.4,
-      "top3": 78.9,
-      "ll": 2.142
+      "top3": 80.2,
+      "ll": 2.333
     },
     {
       "name": "WALK_V",
@@ -66,10 +52,23 @@
         "walkJockeyV": 0.5
       },
       "temp": 8,
-      "total": 579,
-      "top1": 19.5,
-      "top3": 78.2,
-      "ll": 1.974
+      "total": 585,
+      "top1": 19.7,
+      "top3": 78.5,
+      "ll": 1.998
+    },
+    {
+      "name": "WALK_a5",
+      "weights": {
+        "walkChevalV": 1,
+        "walkJockeyV": 0.5
+      },
+      "temp": 8,
+      "alpha": 5,
+      "total": 585,
+      "top1": 19.7,
+      "top3": 78.5,
+      "ll": 1.998
     }
   ],
   "bestConfig": {
@@ -80,19 +79,19 @@
       "corde": 0.2
     },
     "temp": 8,
-    "total": 579,
-    "top1": 28.5,
-    "top3": 86.5,
-    "ll": 1.885
+    "total": 585,
+    "top1": 28.2,
+    "top3": 86.3,
+    "ll": 1.908
   },
   "testResult": {
-    "total": 579,
-    "top1": 29.7,
-    "top3": 85.7,
-    "ll": 2.009
+    "total": 585,
+    "top1": 29.9,
+    "top3": 85.5,
+    "ll": 2.008
   },
   "baseline": {
     "top1": 10.1,
-    "ll": 2.292
+    "ll": 2.291
   }
 }
