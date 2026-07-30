@@ -1,7 +1,7 @@
 {
   "hippodrome": "VICHY",
   "type_reunion": "Plat",
-  "date_extraction": "2026-07-30T11:48:21.497832",
+  "date_extraction": "2026-07-30T21:16:30.154020",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/30072026/R2",
   "courses": [
     {
@@ -1534,29 +1534,6 @@
           "arrivee": 4
         },
         {
-          "n°": "5",
-          "cheval": "MARVEL MAX H.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MASKED MARVEL et ARSINOE (SHIROCCO)",
-          "corde": "(Corde:02)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260730/VIC/8/20260730-VIC-8-5.png",
-          "propriétaire": "W RACING",
-          "entraineur": "D.COTTIN (S)",
-          "éleveurs": "MME JEANNE BARBE",
-          "jockey": "H.LEBOUC",
-          "poids": "58 kg",
-          "gains": "252300",
-          "musique": "5p8p7p2p(25)4hAhAh(24)1h",
-          "valeur": "58.0",
-          "equipement(s)": "",
-          "nb_courses": 4,
-          "nb_victoires": 0,
-          "nb_places": 3,
-          "cote": 22.0,
-          "cote_tendance": "+",
-          "cote_reference": 10.0
-        },
-        {
           "n°": "6",
           "cheval": "AL HABISSET F.PU. 5 a.",
           "cheval_url": "",
@@ -1577,7 +1554,8 @@
           "nb_places": 23,
           "cote": 25.0,
           "cote_tendance": "+",
-          "cote_reference": 15.0
+          "cote_reference": 15.0,
+          "arrivee": 5
         },
         {
           "n°": "7",
@@ -1600,14 +1578,39 @@
           "nb_places": 32,
           "cote": 9.0,
           "cote_tendance": "+",
-          "cote_reference": 8.4
+          "cote_reference": 8.4,
+          "arrivee": 6
+        },
+        {
+          "n°": "5",
+          "cheval": "MARVEL MAX H.PU. 5 a.",
+          "cheval_url": "",
+          "père_mère": "Par: MASKED MARVEL et ARSINOE (SHIROCCO)",
+          "corde": "(Corde:02)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260730/VIC/8/20260730-VIC-8-5.png",
+          "propriétaire": "W RACING",
+          "entraineur": "D.COTTIN (S)",
+          "éleveurs": "MME JEANNE BARBE",
+          "jockey": "H.LEBOUC",
+          "poids": "58 kg",
+          "gains": "252300",
+          "musique": "5p8p7p2p(25)4hAhAh(24)1h",
+          "valeur": "58.0",
+          "equipement(s)": "",
+          "nb_courses": 4,
+          "nb_victoires": 0,
+          "nb_places": 3,
+          "cote": 22.0,
+          "cote_tendance": "+",
+          "cote_reference": 10.0,
+          "arrivee": 7
         }
       ],
       "typePiste": "HERBE",
       "terrain": "Souple",
       "penetrometre": "3,5",
       "cordeCourse": "CORDE_DROITE",
-      "arrivee_definitive": false
+      "arrivee_definitive": true
     }
   ]
 }
