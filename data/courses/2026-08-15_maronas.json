@@ -1,7 +1,7 @@
 {
   "hippodrome": "MARONAS",
   "type_reunion": "Plat",
-  "date_extraction": "2026-08-15T10:17:54.615912",
+  "date_extraction": "2026-08-15T20:28:45.956095",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/15082026/R8",
   "courses": [
     {
@@ -12,46 +12,6 @@
       "distance": "1500m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "SEVILLANA KEEP F.PU. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: KEEP CONTROL et SEVILLANA PLICCK (PLICCK)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260815/MXD/2/20260815-MXD-2-1.png",
-          "propriétaire": "EL 27",
-          "entraineur": "SERGIO G. DORNELES",
-          "éleveurs": "",
-          "jockey": "MAXIMO ADRIANNO GONZALEZ",
-          "poids": "57 kg",
-          "gains": "250964000",
-          "musique": "8p4p0p7p1p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 40,
-          "nb_victoires": 6,
-          "nb_places": 14
-        },
-        {
-          "n°": "2",
-          "cheval": "QUE FINA STAMPA F.PU. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: BEST OF THE BEST et CAFE DELICATE (CAFETIN)",
-          "corde": "(Corde:02)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260815/MXD/2/20260815-MXD-2-2.png",
-          "propriétaire": "MEDIA LUNA ROJA",
-          "entraineur": "SEBASTIAN BAEZ",
-          "éleveurs": "",
-          "jockey": "JESUS GABRIEL PRESTES",
-          "poids": "54 kg",
-          "gains": "139900000",
-          "musique": "6p7p5p1p1p",
-          "valeur": "54.0",
-          "equipement(s)": "",
-          "nb_courses": 26,
-          "nb_victoires": 4,
-          "nb_places": 9
-        },
         {
           "n°": "3",
           "cheval": "TENGO UN AMOR F.PU. 4 a.",
@@ -70,47 +30,35 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 2,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 4.2,
+          "cote_tendance": "",
+          "cote_reference": 2.7,
+          "arrivee": 1
         },
         {
-          "n°": "4",
-          "cheval": "TEXANA F.PU. 6 a.",
+          "n°": "1",
+          "cheval": "SEVILLANA KEEP F.PU. 6 a.",
           "cheval_url": "",
-          "père_mère": "Par: KODIAK KOWBOY et DEEP BLUE (ALPHA PLUS)",
-          "corde": "(Corde:04)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260815/MXD/2/20260815-MXD-2-4.png",
-          "propriétaire": "COMPAC",
-          "entraineur": "ROBERTO SOLANES (CS)",
+          "père_mère": "Par: KEEP CONTROL et SEVILLANA PLICCK (PLICCK)",
+          "corde": "(Corde:01)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260815/MXD/2/20260815-MXD-2-1.png",
+          "propriétaire": "EL 27",
+          "entraineur": "SERGIO G. DORNELES",
           "éleveurs": "",
-          "jockey": "WALDEMAR MACIEL BOCCIA",
-          "poids": "52 kg",
-          "gains": "165236000",
-          "musique": "4p3p3p7p3p",
-          "valeur": "52.0",
-          "equipement(s)": "",
-          "nb_courses": 27,
-          "nb_victoires": 3,
-          "nb_places": 14
-        },
-        {
-          "n°": "5",
-          "cheval": "MADRUGADA MIA F.PU. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: POSSE et CALANDRIA FT (FUI TAMBEM)",
-          "corde": "(Corde:05)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260815/MXD/2/20260815-MXD-2-5.png",
-          "propriétaire": "LA CRESTA DE LA OLA",
-          "entraineur": "MARIA XIMENA MARRERO",
-          "éleveurs": "",
-          "jockey": "EDISON RODRIGO ROSAS",
+          "jockey": "MAXIMO ADRIANNO GONZALEZ",
           "poids": "57 kg",
-          "gains": "218600000",
-          "musique": "9p1p2p5p5p",
+          "gains": "250964000",
+          "musique": "8p4p0p7p1p",
           "valeur": "57.0",
           "equipement(s)": "",
-          "nb_courses": 31,
-          "nb_victoires": 7,
-          "nb_places": 18
+          "nb_courses": 40,
+          "nb_victoires": 6,
+          "nb_places": 14,
+          "cote": 8.8,
+          "cote_tendance": "+",
+          "cote_reference": 17.0,
+          "arrivee": 2
         },
         {
           "n°": "6",
@@ -131,9 +79,10 @@
           "nb_courses": 46,
           "nb_victoires": 5,
           "nb_places": 27,
-          "cote": 9.0,
-          "cote_tendance": "",
-          "cote_reference": 9.0
+          "cote": 8.1,
+          "cote_tendance": "+",
+          "cote_reference": 8.7,
+          "arrivee": 3
         },
         {
           "n°": "7",
@@ -154,12 +103,88 @@
           "nb_courses": 11,
           "nb_victoires": 2,
           "nb_places": 6,
-          "cote": 1.1,
+          "cote": 2.7,
           "cote_tendance": "",
-          "cote_reference": 1.1
+          "cote_reference": 3.5,
+          "arrivee": 4
+        },
+        {
+          "n°": "4",
+          "cheval": "TEXANA F.PU. 6 a.",
+          "cheval_url": "",
+          "père_mère": "Par: KODIAK KOWBOY et DEEP BLUE (ALPHA PLUS)",
+          "corde": "(Corde:04)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260815/MXD/2/20260815-MXD-2-4.png",
+          "propriétaire": "COMPAC",
+          "entraineur": "ROBERTO SOLANES (CS)",
+          "éleveurs": "",
+          "jockey": "WALDEMAR MACIEL BOCCIA",
+          "poids": "52 kg",
+          "gains": "165236000",
+          "musique": "4p3p3p7p3p",
+          "valeur": "52.0",
+          "equipement(s)": "",
+          "nb_courses": 27,
+          "nb_victoires": 3,
+          "nb_places": 14,
+          "cote": 7.0,
+          "cote_tendance": "-",
+          "cote_reference": 8.0,
+          "arrivee": 5
+        },
+        {
+          "n°": "5",
+          "cheval": "MADRUGADA MIA F.PU. 6 a.",
+          "cheval_url": "",
+          "père_mère": "Par: POSSE et CALANDRIA FT (FUI TAMBEM)",
+          "corde": "(Corde:05)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260815/MXD/2/20260815-MXD-2-5.png",
+          "propriétaire": "LA CRESTA DE LA OLA",
+          "entraineur": "MARIA XIMENA MARRERO",
+          "éleveurs": "",
+          "jockey": "EDISON RODRIGO ROSAS",
+          "poids": "57 kg",
+          "gains": "218600000",
+          "musique": "9p1p2p5p5p",
+          "valeur": "57.0",
+          "equipement(s)": "",
+          "nb_courses": 31,
+          "nb_victoires": 7,
+          "nb_places": 18,
+          "cote": 12.0,
+          "cote_tendance": "+",
+          "cote_reference": 6.5,
+          "arrivee": 6
+        },
+        {
+          "n°": "2",
+          "cheval": "QUE FINA STAMPA F.PU. 6 a.",
+          "cheval_url": "",
+          "père_mère": "Par: BEST OF THE BEST et CAFE DELICATE (CAFETIN)",
+          "corde": "(Corde:02)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260815/MXD/2/20260815-MXD-2-2.png",
+          "propriétaire": "MEDIA LUNA ROJA",
+          "entraineur": "SEBASTIAN BAEZ",
+          "éleveurs": "",
+          "jockey": "JESUS GABRIEL PRESTES",
+          "poids": "54 kg",
+          "gains": "139900000",
+          "musique": "6p7p5p1p1p",
+          "valeur": "54.0",
+          "equipement(s)": "",
+          "nb_courses": 26,
+          "nb_victoires": 4,
+          "nb_places": 9,
+          "cote": 13.0,
+          "cote_tendance": "+",
+          "cote_reference": 26.0,
+          "arrivee": 7
         }
       ],
-      "cordeCourse": "CORDE_GAUCHE"
+      "terrain": "Léger",
+      "penetrometre": "2,3",
+      "cordeCourse": "CORDE_GAUCHE",
+      "arrivee_definitive": true
     },
     {
       "nom": "PREMIO SIMPATICO",
@@ -169,29 +194,6 @@
       "distance": "1600m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "KIKO CASCADOR M.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: HIELO et KAMBA CUA (KODIAK KOWBOY)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260815/MXD/3/20260815-MXD-3-1.png",
-          "propriétaire": "LOS PRINCIPIOS",
-          "entraineur": "SANTIAGO RAFAEL ACOSTA",
-          "éleveurs": "",
-          "jockey": "CARLOS ANDRES ROMERO",
-          "poids": "56 kg",
-          "gains": "5332000",
-          "musique": "5p4p4p",
-          "valeur": "56.0",
-          "equipement(s)": "",
-          "nb_courses": 3,
-          "nb_victoires": 0,
-          "nb_places": 2,
-          "cote": 3.9,
-          "cote_tendance": "",
-          "cote_reference": 3.9
-        },
         {
           "n°": "2",
           "cheval": "FITZ M.PU. 3 a.",
@@ -210,27 +212,11 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 1,
-          "nb_places": 1
-        },
-        {
-          "n°": "3",
-          "cheval": "FOREMAN JAVI M.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: IRONICUS et BUCHE DE AGUA (BRUJO DE OLLEROS)",
-          "corde": "(Corde:03)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260815/MXD/3/20260815-MXD-3-3.png",
-          "propriétaire": "EL CALAMO",
-          "entraineur": "CESAR ANDRES MARTIN",
-          "éleveurs": "",
-          "jockey": "CRISTIAN MORENO",
-          "poids": "56 kg",
-          "gains": "",
-          "musique": "7p0p0p",
-          "valeur": "56.0",
-          "equipement(s)": "",
-          "nb_courses": 3,
-          "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 1,
+          "cote": 3.1,
+          "cote_tendance": "+",
+          "cote_reference": 4.8,
+          "arrivee": 1
         },
         {
           "n°": "4",
@@ -251,52 +237,10 @@
           "nb_courses": 2,
           "nb_victoires": 1,
           "nb_places": 1,
-          "cote": 7.9,
-          "cote_tendance": "",
-          "cote_reference": 7.9
-        },
-        {
-          "n°": "5",
-          "cheval": "EL TENISTA M.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: THE LEOPARD et LOLLI POP (ECCLESIASTIC)",
-          "corde": "(Corde:05)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260815/MXD/3/20260815-MXD-3-5.png",
-          "propriétaire": "EL FACU",
-          "entraineur": "SERGIO PELUFFO",
-          "éleveurs": "",
-          "jockey": "LUCAS URRUZMENDI",
-          "poids": "56 kg",
-          "gains": "",
-          "musique": "8p9p6p0p",
-          "valeur": "56.0",
-          "equipement(s)": "",
-          "nb_courses": 4,
-          "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
-          "n°": "6",
-          "cheval": "REGAL THOR M.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: SONIC MULE et REGAL THALIA (PIONEERING)",
-          "corde": "(Corde:06)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260815/MXD/3/20260815-MXD-3-6.png",
-          "propriétaire": "WALDO",
-          "entraineur": "PABLO MATIAS ALVAREZ",
-          "éleveurs": "",
-          "jockey": "JESUS GABRIEL PRESTES",
-          "poids": "57 kg",
-          "gains": "83500000",
-          "musique": "6p3p4p3p5p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 17,
-          "nb_victoires": 1,
-          "nb_places": 12,
-          "cote": 1.9,
-          "cote_tendance": "",
-          "cote_reference": 1.9
+          "cote": 2.0,
+          "cote_tendance": "-",
+          "cote_reference": 5.2,
+          "arrivee": 2
         },
         {
           "n°": "7",
@@ -317,9 +261,58 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 3.9,
-          "cote_tendance": "",
-          "cote_reference": 3.9
+          "cote": 7.8,
+          "cote_tendance": "+",
+          "cote_reference": 3.7,
+          "arrivee": 3
+        },
+        {
+          "n°": "6",
+          "cheval": "REGAL THOR M.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: SONIC MULE et REGAL THALIA (PIONEERING)",
+          "corde": "(Corde:06)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260815/MXD/3/20260815-MXD-3-6.png",
+          "propriétaire": "WALDO",
+          "entraineur": "PABLO MATIAS ALVAREZ",
+          "éleveurs": "",
+          "jockey": "JESUS GABRIEL PRESTES",
+          "poids": "57 kg",
+          "gains": "83500000",
+          "musique": "6p3p4p3p5p",
+          "valeur": "57.0",
+          "equipement(s)": "",
+          "nb_courses": 17,
+          "nb_victoires": 1,
+          "nb_places": 12,
+          "cote": 9.9,
+          "cote_tendance": "+",
+          "cote_reference": 5.7,
+          "arrivee": 4
+        },
+        {
+          "n°": "1",
+          "cheval": "KIKO CASCADOR M.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: HIELO et KAMBA CUA (KODIAK KOWBOY)",
+          "corde": "(Corde:01)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260815/MXD/3/20260815-MXD-3-1.png",
+          "propriétaire": "LOS PRINCIPIOS",
+          "entraineur": "SANTIAGO RAFAEL ACOSTA",
+          "éleveurs": "",
+          "jockey": "CARLOS ANDRES ROMERO",
+          "poids": "56 kg",
+          "gains": "5332000",
+          "musique": "5p4p4p",
+          "valeur": "56.0",
+          "equipement(s)": "",
+          "nb_courses": 3,
+          "nb_victoires": 0,
+          "nb_places": 2,
+          "cote": 29.0,
+          "cote_tendance": "+",
+          "cote_reference": 5.7,
+          "arrivee": 5
         },
         {
           "n°": "8",
@@ -339,10 +332,40 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 27.0,
+          "cote_tendance": "+",
+          "cote_reference": 7.9,
+          "arrivee": 6
+        },
+        {
+          "n°": "5",
+          "cheval": "EL TENISTA M.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: THE LEOPARD et LOLLI POP (ECCLESIASTIC)",
+          "corde": "(Corde:05)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260815/MXD/3/20260815-MXD-3-5.png",
+          "propriétaire": "EL FACU",
+          "entraineur": "SERGIO PELUFFO",
+          "éleveurs": "",
+          "jockey": "LUCAS URRUZMENDI",
+          "poids": "56 kg",
+          "gains": "",
+          "musique": "8p9p6p0p",
+          "valeur": "56.0",
+          "equipement(s)": "",
+          "nb_courses": 4,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 61.0,
+          "cote_tendance": "+",
+          "arrivee": 7
         }
       ],
-      "cordeCourse": "CORDE_GAUCHE"
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
+      "cordeCourse": "CORDE_GAUCHE",
+      "arrivee_definitive": true
     },
     {
       "nom": "PREMIO SOBERANA",
@@ -370,7 +393,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 37.0,
+          "cote_tendance": "+",
+          "cote_reference": 13.0
         },
         {
           "n°": "2",
@@ -390,7 +416,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 0,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 2.2,
+          "cote_tendance": "",
+          "cote_reference": 3.1
         },
         {
           "n°": "3",
@@ -410,7 +439,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 57.0,
+          "cote_tendance": "+",
+          "cote_reference": 15.0
         },
         {
           "n°": "4",
@@ -430,7 +462,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 56.0,
+          "cote_tendance": "+",
+          "cote_reference": 18.0
         },
         {
           "n°": "5",
@@ -450,7 +485,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 4.9,
+          "cote_tendance": "",
+          "cote_reference": 3.2
         },
         {
           "n°": "6",
@@ -471,9 +509,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 1.4,
-          "cote_tendance": "",
-          "cote_reference": 1.4
+          "cote": 5.6,
+          "cote_tendance": "+",
+          "cote_reference": 20.0
         },
         {
           "n°": "7",
@@ -493,7 +531,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 7.2,
+          "cote_tendance": "+",
+          "cote_reference": 7.0
         },
         {
           "n°": "8",
@@ -513,7 +554,10 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 25.0,
+          "cote_tendance": "-",
+          "cote_reference": 25.0
         },
         {
           "n°": "9",
@@ -534,11 +578,13 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 2.2,
-          "cote_tendance": "",
-          "cote_reference": 2.2
+          "cote": 13.0,
+          "cote_tendance": "-",
+          "cote_reference": 11.0
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -549,29 +595,6 @@
       "distance": "1600m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "MONTJUIC M.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: ENDORSMENT et HI JOAN (CATCHER IN THE RYE)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260815/MXD/5/20260815-MXD-5-1.png",
-          "propriétaire": "LOS PATRIOTAS",
-          "entraineur": "SERGIO G. DORNELES",
-          "éleveurs": "",
-          "jockey": "HECTOR FABIAN LAZO",
-          "poids": "56 kg",
-          "gains": "80644000",
-          "musique": "4p1p2p5p3p",
-          "valeur": "56.0",
-          "equipement(s)": "",
-          "nb_courses": 6,
-          "nb_victoires": 2,
-          "nb_places": 3,
-          "cote": 7.4,
-          "cote_tendance": "",
-          "cote_reference": 7.4
-        },
         {
           "n°": "2",
           "cheval": "KAHUNA F.PU. 3 a.",
@@ -591,9 +614,9 @@
           "nb_courses": 2,
           "nb_victoires": 1,
           "nb_places": 1,
-          "cote": 1.8,
-          "cote_tendance": "",
-          "cote_reference": 1.8
+          "cote": 2.6,
+          "cote_tendance": "+",
+          "cote_reference": 1.6
         },
         {
           "n°": "3",
@@ -614,9 +637,9 @@
           "nb_courses": 9,
           "nb_victoires": 1,
           "nb_places": 6,
-          "cote": 3.7,
-          "cote_tendance": "",
-          "cote_reference": 3.7
+          "cote": 18.0,
+          "cote_tendance": "+",
+          "cote_reference": 3.3
         },
         {
           "n°": "4",
@@ -636,7 +659,9 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 2,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 7.0,
+          "cote_tendance": "-"
         },
         {
           "n°": "5",
@@ -656,7 +681,9 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 1,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 8.5,
+          "cote_tendance": "+"
         },
         {
           "n°": "6",
@@ -677,9 +704,9 @@
           "nb_courses": 3,
           "nb_victoires": 1,
           "nb_places": 0,
-          "cote": 7.4,
-          "cote_tendance": "",
-          "cote_reference": 7.4
+          "cote": 5.8,
+          "cote_tendance": "+",
+          "cote_reference": 6.6
         },
         {
           "n°": "7",
@@ -700,9 +727,9 @@
           "nb_courses": 4,
           "nb_victoires": 1,
           "nb_places": 2,
-          "cote": 14.0,
-          "cote_tendance": "",
-          "cote_reference": 14.0
+          "cote": 9.5,
+          "cote_tendance": "-",
+          "cote_reference": 13.0
         },
         {
           "n°": "8",
@@ -722,9 +749,13 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 1,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 6.2,
+          "cote_tendance": "-"
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -754,8 +785,8 @@
           "nb_courses": 18,
           "nb_victoires": 2,
           "nb_places": 8,
-          "cote": 3.0,
-          "cote_tendance": "",
+          "cote": 6.8,
+          "cote_tendance": "+",
           "cote_reference": 3.0
         },
         {
@@ -777,8 +808,8 @@
           "nb_courses": 11,
           "nb_victoires": 2,
           "nb_places": 3,
-          "cote": 3.0,
-          "cote_tendance": "",
+          "cote": 4.2,
+          "cote_tendance": "-",
           "cote_reference": 3.0
         },
         {
@@ -799,7 +830,9 @@
           "equipement(s)": "",
           "nb_courses": 31,
           "nb_victoires": 4,
-          "nb_places": 17
+          "nb_places": 17,
+          "cote": 8.0,
+          "cote_tendance": "-"
         },
         {
           "n°": "4",
@@ -819,7 +852,9 @@
           "equipement(s)": "",
           "nb_courses": 21,
           "nb_victoires": 3,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 3.6,
+          "cote_tendance": "+"
         },
         {
           "n°": "5",
@@ -839,7 +874,9 @@
           "equipement(s)": "",
           "nb_courses": 24,
           "nb_victoires": 4,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 19.0,
+          "cote_tendance": "-"
         },
         {
           "n°": "6",
@@ -860,8 +897,8 @@
           "nb_courses": 17,
           "nb_victoires": 3,
           "nb_places": 11,
-          "cote": 2.0,
-          "cote_tendance": "",
+          "cote": 7.2,
+          "cote_tendance": "+",
           "cote_reference": 2.0
         },
         {
@@ -882,9 +919,13 @@
           "equipement(s)": "",
           "nb_courses": 27,
           "nb_victoires": 3,
-          "nb_places": 17
+          "nb_places": 17,
+          "cote": 5.9,
+          "cote_tendance": "+"
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     }
   ]
