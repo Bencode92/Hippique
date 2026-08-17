@@ -1,7 +1,7 @@
 {
   "hippodrome": "LES SABLES D OLONNE",
   "type_reunion": "ATTELE",
-  "date_extraction": "2026-08-17T20:32:50.084799",
+  "date_extraction": "2026-08-17T22:31:15.498176",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/17082026/R6",
   "courses": [
     {
@@ -2013,6 +2013,31 @@
       "url": "",
       "participants": [
         {
+          "n°": "4",
+          "cheval": "JEDELWEIS D'URFIST H.TR. 7 a.",
+          "cheval_url": "",
+          "père_mère": "Par: BRETIGNY et CARLA D'URFIST",
+          "corde": "(Corde:04)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260817/LSO/7/20260817-LSO-7-4.png",
+          "propriétaire": "A. SOURICE",
+          "entraineur": "A. SOURICE",
+          "éleveurs": "M. Jean François ROQUAIN",
+          "jockey": "Mme E. SOURICE",
+          "poids": "",
+          "gains": "5683000",
+          "musique": "9a5a5a2a8a8a4a2a3a5a",
+          "valeur": "",
+          "equipement(s)": "",
+          "nb_courses": 74,
+          "nb_victoires": 2,
+          "nb_places": 56,
+          "cote": 4.7,
+          "cote_tendance": "-",
+          "cote_reference": 5.5,
+          "avis_entraineur": "NEUTRE",
+          "arrivee": 1
+        },
+        {
           "n°": "1",
           "cheval": "KALINDA SPOKEN F.TR. 6 a.",
           "cheval_url": "",
@@ -2034,31 +2059,8 @@
           "cote": 2.8,
           "cote_tendance": "",
           "cote_reference": 4.9,
-          "avis_entraineur": "NEUTRE"
-        },
-        {
-          "n°": "2",
-          "cheval": "HOTLINE JAVANAISE F.TR. 9 a.",
-          "cheval_url": "",
-          "père_mère": "Par: URIEL SPEED et SITUVAZA JAVA",
-          "corde": "(Corde:02)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260817/LSO/7/20260817-LSO-7-2.png",
-          "propriétaire": "J.L. HOCDE",
-          "entraineur": "J.L. HOCDE",
-          "éleveurs": "M. Paul André VIEL",
-          "jockey": "J.L. HOCDE",
-          "poids": "",
-          "gains": "5342500",
-          "musique": "4a1aDa9a7a8a0aDa0a3a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 94,
-          "nb_victoires": 5,
-          "nb_places": 39,
-          "cote": 15.0,
-          "cote_tendance": "+",
-          "cote_reference": 13.0,
-          "avis_entraineur": "NEUTRE"
+          "avis_entraineur": "NEUTRE",
+          "arrivee": 2
         },
         {
           "n°": "3",
@@ -2082,30 +2084,31 @@
           "cote": 39.0,
           "cote_tendance": "+",
           "cote_reference": 33.0,
-          "avis_entraineur": "NEUTRE"
+          "avis_entraineur": "NEUTRE",
+          "arrivee": 3
         },
         {
-          "n°": "4",
-          "cheval": "JEDELWEIS D'URFIST H.TR. 7 a.",
+          "n°": "2",
+          "cheval": "HOTLINE JAVANAISE F.TR. 9 a.",
           "cheval_url": "",
-          "père_mère": "Par: BRETIGNY et CARLA D'URFIST",
-          "corde": "(Corde:04)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260817/LSO/7/20260817-LSO-7-4.png",
-          "propriétaire": "A. SOURICE",
-          "entraineur": "A. SOURICE",
-          "éleveurs": "M. Jean François ROQUAIN",
-          "jockey": "Mme E. SOURICE",
+          "père_mère": "Par: URIEL SPEED et SITUVAZA JAVA",
+          "corde": "(Corde:02)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260817/LSO/7/20260817-LSO-7-2.png",
+          "propriétaire": "J.L. HOCDE",
+          "entraineur": "J.L. HOCDE",
+          "éleveurs": "M. Paul André VIEL",
+          "jockey": "J.L. HOCDE",
           "poids": "",
-          "gains": "5683000",
-          "musique": "9a5a5a2a8a8a4a2a3a5a",
+          "gains": "5342500",
+          "musique": "4a1aDa9a7a8a0aDa0a3a",
           "valeur": "",
           "equipement(s)": "",
-          "nb_courses": 74,
-          "nb_victoires": 2,
-          "nb_places": 56,
-          "cote": 4.7,
-          "cote_tendance": "-",
-          "cote_reference": 5.5,
+          "nb_courses": 94,
+          "nb_victoires": 5,
+          "nb_places": 39,
+          "cote": 15.0,
+          "cote_tendance": "+",
+          "cote_reference": 13.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2301,7 +2304,8 @@
           "avis_entraineur": "NEGATIF"
         }
       ],
-      "cordeCourse": "CORDE_GAUCHE"
+      "cordeCourse": "CORDE_GAUCHE",
+      "arrivee_definitive": true
     }
   ]
 }

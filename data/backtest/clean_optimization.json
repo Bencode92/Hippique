@@ -1,5 +1,5 @@
 {
-  "date": "2026-08-16T22:28:39.480Z",
+  "date": "2026-08-17T22:31:25.945Z",
   "method": "ZERO_LEAKAGE",
   "allResults": [
     {
@@ -10,10 +10,10 @@
         "corde": 0.2
       },
       "temp": 8,
-      "total": 686,
-      "top1": 29,
-      "top3": 87.6,
-      "ll": 1.894
+      "total": 689,
+      "top1": 29.5,
+      "top3": 87.8,
+      "ll": 1.89
     },
     {
       "name": "ALL_CLEAN",
@@ -27,10 +27,10 @@
         "walkCombo": 0.1
       },
       "temp": 8,
-      "total": 686,
-      "top1": 22.9,
-      "top3": 84.3,
-      "ll": 2.281
+      "total": 689,
+      "top1": 23.1,
+      "top3": 84.6,
+      "ll": 2.266
     },
     {
       "name": "WALK+FORME t12",
@@ -41,10 +41,10 @@
         "walkFormeJockey": 0.2
       },
       "temp": 12,
-      "total": 686,
+      "total": 689,
       "top1": 22.6,
-      "top3": 82.7,
-      "ll": 2.132
+      "top3": 83,
+      "ll": 2.121
     },
     {
       "name": "WALK_VP",
@@ -54,10 +54,10 @@
         "walkJockeyV": 0.5
       },
       "temp": 8,
-      "total": 686,
-      "top1": 21.7,
-      "top3": 82.8,
-      "ll": 1.969
+      "total": 689,
+      "top1": 21.8,
+      "top3": 82.9,
+      "ll": 1.966
     },
     {
       "name": "WALK_V",
@@ -66,10 +66,10 @@
         "walkJockeyV": 0.5
       },
       "temp": 8,
-      "total": 686,
-      "top1": 21.6,
+      "total": 689,
+      "top1": 21.8,
       "top3": 81,
-      "ll": 1.963
+      "ll": 1.962
     }
   ],
   "bestConfig": {
@@ -80,19 +80,19 @@
       "corde": 0.2
     },
     "temp": 8,
-    "total": 686,
-    "top1": 29,
-    "top3": 87.6,
-    "ll": 1.894
+    "total": 689,
+    "top1": 29.5,
+    "top3": 87.8,
+    "ll": 1.89
   },
   "testResult": {
-    "total": 687,
-    "top1": 26.1,
-    "top3": 83.1,
-    "ll": 1.999
+    "total": 689,
+    "top1": 25.4,
+    "top3": 82.9,
+    "ll": 2
   },
   "baseline": {
-    "top1": 10.1,
-    "ll": 2.288
+    "top1": 10.2,
+    "ll": 2.287
   }
 }
