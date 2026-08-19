@@ -1,7 +1,7 @@
 {
   "hippodrome": "CAGNES/MER",
   "type_reunion": "ATTELE",
-  "date_extraction": "2026-08-19T20:34:53.582813",
+  "date_extraction": "2026-08-19T22:31:13.970790",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/19082026/R6",
   "courses": [
     {
@@ -1813,7 +1813,8 @@
           "cote": 36.0,
           "cote_tendance": "-",
           "cote_reference": 18.0,
-          "avis_entraineur": "NEUTRE"
+          "avis_entraineur": "NEUTRE",
+          "arrivee": 5
         },
         {
           "n°": "2",
@@ -1913,7 +1914,7 @@
         }
       ],
       "cordeCourse": "CORDE_GAUCHE",
-      "arrivee_definitive": false
+      "arrivee_definitive": true
     }
   ]
 }
