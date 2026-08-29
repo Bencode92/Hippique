@@ -1,7 +1,7 @@
 {
   "hippodrome": "BERGSAKER",
   "type_reunion": "ATTELE",
-  "date_extraction": "2026-08-29T03:37:22.701977",
+  "date_extraction": "2026-08-29T14:54:41.448925",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/29082026/R6",
   "courses": [
     {
@@ -30,7 +30,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 34.0,
+          "cote_tendance": "+",
+          "cote_reference": 41.0
         },
         {
           "n°": "2",
@@ -51,8 +54,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 9.7,
-          "cote_tendance": "+"
+          "cote": 24.0,
+          "cote_tendance": "-",
+          "cote_reference": 83.0
         },
         {
           "n°": "3",
@@ -72,7 +76,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 57.0,
+          "cote_tendance": "+",
+          "cote_reference": 41.0
         },
         {
           "n°": "4",
@@ -93,8 +100,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 4.8,
-          "cote_tendance": "+"
+          "cote": 3.9,
+          "cote_tendance": "+",
+          "cote_reference": 5.2
         },
         {
           "n°": "5",
@@ -115,8 +123,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 3.2,
-          "cote_tendance": "+"
+          "cote": 18.0,
+          "cote_tendance": "+",
+          "cote_reference": 9.8
         },
         {
           "n°": "6",
@@ -137,8 +146,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 1.9,
-          "cote_tendance": "-"
+          "cote": 1.4,
+          "cote_tendance": "",
+          "cote_reference": 1.4
         },
         {
           "n°": "7",
@@ -158,7 +168,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 57.0,
+          "cote_tendance": "-"
         },
         {
           "n°": "8",
@@ -178,7 +190,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 173.0,
+          "cote_tendance": "+",
+          "cote_reference": 83.0
         },
         {
           "n°": "9",
@@ -198,27 +213,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
-          "n°": "10",
-          "cheval": "CLARISSA F.TR. 8 a.",
-          "cheval_url": "",
-          "père_mère": "Par: EXPLOIT CAF et NIKELIA",
-          "corde": "(Corde:10)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260829/BGR/12/20260829-BGR-12-10.png",
-          "propriétaire": "SCUD. NATALINO 96 SAS DI (ITY)",
-          "entraineur": "A. GOCCIADORO",
-          "éleveurs": "",
-          "jockey": "A. GOCCIADORO",
-          "poids": "",
-          "gains": "78864000",
-          "musique": "2a2a5a1a1a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 57.0,
+          "cote_tendance": "+",
+          "cote_reference": 27.0
         }
       ]
     }
