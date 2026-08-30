@@ -1,76 +1,40 @@
 {
   "hippodrome": "DIEPPE",
   "type_reunion": "HAIE",
-  "date_extraction": "2026-08-30T00:02:11.234158",
+  "date_extraction": "2026-08-30T14:39:12.574040",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/30082026/R4",
   "courses": [
     {
       "nom": "PRIX DE LEILA (PRIX MILORD THOMAS)",
-      "horaire": "16h07",
+      "horaire": "16h08",
       "numero": "1",
       "type": "HAIE",
       "distance": "3400m",
       "url": "",
       "participants": [
         {
-          "n°": "1",
-          "cheval": "ONE LOVE DIAMOND H.PU. 3 a.",
+          "n°": "6",
+          "cheval": "ALICE'S SAGA F.PU. 3 a.",
           "cheval_url": "",
-          "père_mère": "Par: GENTLEWAVE et CH'TI DIAMOND (DIAMOND BOY)",
+          "père_mère": "Par: TIN HORSE et PAUL'S SAGA (MARTALINE)",
           "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260830/DIE/1/20260830-DIE-1-1.png",
-          "propriétaire": "ECURIE HERVE GUERIN",
-          "entraineur": "GAB.LEENDERS (S)",
-          "éleveurs": "MR DAVID FUTTER",
-          "jockey": "T.DUMOUCH",
-          "poids": "69 kg",
-          "gains": "1072000",
-          "musique": "2h2h",
-          "valeur": "69.0",
-          "equipement(s)": "A",
-          "nb_courses": 2,
-          "nb_victoires": 0,
-          "nb_places": 2
-        },
-        {
-          "n°": "2",
-          "cheval": "CELESTIN NONANTAIS H.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MAGIC DREAM et CIVELLE (BALLINGARRY)",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260830/DIE/1/20260830-DIE-1-2.png",
-          "propriétaire": "C.TRECCO/MALO CASH/JM.FIELDHOUSE",
-          "entraineur": "D.WINDRIF",
-          "éleveurs": "MME MARIE-FLORE CORBIERE",
-          "jockey": "K.NABET",
-          "poids": "68 kg",
-          "gains": "576000",
-          "musique": "4h4h",
-          "valeur": "68.0",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260830/DIE/1/20260830-DIE-1-6.png",
+          "propriétaire": "HARAS DE BEAUVOIR",
+          "entraineur": "D.BRESSOU",
+          "éleveurs": "ECURIE DES VIVES TERRES",
+          "jockey": "G.MEUNIER",
+          "poids": "67 kg",
+          "gains": "1472000",
+          "musique": "1h",
+          "valeur": "67.0",
           "equipement(s)": "",
-          "nb_courses": 2,
-          "nb_victoires": 0,
-          "nb_places": 2
-        },
-        {
-          "n°": "3",
-          "cheval": "KANAGA F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: CRYSTAL OCEAN et KAMELIE (MARTALINE)",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260830/DIE/1/20260830-DIE-1-3.png",
-          "propriétaire": "DS PEGAS",
-          "entraineur": "D.TOROK",
-          "éleveurs": "ECURIE HARAS DE BEAUFAY",
-          "jockey": "G.FAIVRE-PICON",
-          "poids": "68 kg",
-          "gains": "1717000",
-          "musique": "3h1h",
-          "valeur": "68.0",
-          "equipement(s)": "",
-          "nb_courses": 2,
+          "nb_courses": 1,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 0,
+          "cote": 3.4,
+          "cote_tendance": "",
+          "cote_reference": 4.2,
+          "arrivee": 1
         },
         {
           "n°": "4",
@@ -90,7 +54,35 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 5.2,
+          "arrivee": 2
+        },
+        {
+          "n°": "2",
+          "cheval": "CELESTIN NONANTAIS H.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: MAGIC DREAM et CIVELLE (BALLINGARRY)",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260830/DIE/1/20260830-DIE-1-2.png",
+          "propriétaire": "C.TRECCO/MALO CASH/JM.FIELDHOUSE",
+          "entraineur": "D.WINDRIF",
+          "éleveurs": "MME MARIE-FLORE CORBIERE",
+          "jockey": "K.NABET",
+          "poids": "68 kg",
+          "gains": "576000",
+          "musique": "4h4h",
+          "valeur": "68.0",
+          "equipement(s)": "",
+          "nb_courses": 2,
+          "nb_victoires": 0,
+          "nb_places": 2,
+          "cote": 22.0,
+          "cote_tendance": "",
+          "cote_reference": 8.2,
+          "arrivee": 3
         },
         {
           "n°": "5",
@@ -110,27 +102,59 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 3.5,
+          "cote_tendance": "",
+          "cote_reference": 4.3,
+          "arrivee": 4
         },
         {
-          "n°": "6",
-          "cheval": "ALICE'S SAGA F.PU. 3 a.",
+          "n°": "3",
+          "cheval": "KANAGA F.PU. 3 a.",
           "cheval_url": "",
-          "père_mère": "Par: TIN HORSE et PAUL'S SAGA (MARTALINE)",
+          "père_mère": "Par: CRYSTAL OCEAN et KAMELIE (MARTALINE)",
           "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260830/DIE/1/20260830-DIE-1-6.png",
-          "propriétaire": "HARAS DE BEAUVOIR",
-          "entraineur": "D.BRESSOU",
-          "éleveurs": "ECURIE DES VIVES TERRES",
-          "jockey": "G.MEUNIER",
-          "poids": "67 kg",
-          "gains": "1472000",
-          "musique": "1h",
-          "valeur": "67.0",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260830/DIE/1/20260830-DIE-1-3.png",
+          "propriétaire": "DS PEGAS",
+          "entraineur": "D.TOROK",
+          "éleveurs": "ECURIE HARAS DE BEAUFAY",
+          "jockey": "G.FAIVRE-PICON",
+          "poids": "68 kg",
+          "gains": "1717000",
+          "musique": "3h1h",
+          "valeur": "68.0",
           "equipement(s)": "",
-          "nb_courses": 1,
+          "nb_courses": 2,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 1,
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 19.0,
+          "arrivee": 5
+        },
+        {
+          "n°": "1",
+          "cheval": "ONE LOVE DIAMOND H.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: GENTLEWAVE et CH'TI DIAMOND (DIAMOND BOY)",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260830/DIE/1/20260830-DIE-1-1.png",
+          "propriétaire": "ECURIE HERVE GUERIN",
+          "entraineur": "GAB.LEENDERS (S)",
+          "éleveurs": "MR DAVID FUTTER",
+          "jockey": "T.DUMOUCH",
+          "poids": "69 kg",
+          "gains": "1072000",
+          "musique": "2h2h",
+          "valeur": "69.0",
+          "equipement(s)": "A",
+          "nb_courses": 2,
+          "nb_victoires": 0,
+          "nb_places": 2,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0,
+          "arrivee": 6
         },
         {
           "n°": "7",
@@ -150,27 +174,11 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 1,
-          "nb_places": 0
-        },
-        {
-          "n°": "8",
-          "cheval": "NATACHA DU CHENET F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: NO RISK AT ALL et VANESSA (MARTALINE)",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260830/DIE/1/20260830-DIE-1-8.png",
-          "propriétaire": "FAMILLE BRYANT",
-          "entraineur": "M.ROLLAND (S)",
-          "éleveurs": "MME MARIE-LAURE BESNOUIN",
-          "jockey": "F.GILES",
-          "poids": "66 kg",
-          "gains": "782000",
-          "musique": "2h",
-          "valeur": "66.0",
-          "equipement(s)": "",
-          "nb_courses": 1,
-          "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 0,
+          "cote": 19.0,
+          "cote_tendance": "+",
+          "cote_reference": 17.0,
+          "arrivee": 7
         },
         {
           "n°": "9",
@@ -190,13 +198,44 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 58.0,
+          "cote_tendance": "",
+          "cote_reference": 28.0,
+          "arrivee": 8
+        },
+        {
+          "n°": "8",
+          "cheval": "NATACHA DU CHENET F.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: NO RISK AT ALL et VANESSA (MARTALINE)",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260830/DIE/1/20260830-DIE-1-8.png",
+          "propriétaire": "FAMILLE BRYANT",
+          "entraineur": "M.ROLLAND (S)",
+          "éleveurs": "MME MARIE-LAURE BESNOUIN",
+          "jockey": "F.GILES",
+          "poids": "66 kg",
+          "gains": "782000",
+          "musique": "2h",
+          "valeur": "66.0",
+          "equipement(s)": "",
+          "nb_courses": 1,
+          "nb_victoires": 0,
+          "nb_places": 1,
+          "cote": 4.5,
+          "cote_tendance": "",
+          "cote_reference": 7.6
         }
-      ]
+      ],
+      "typePiste": "HERBE",
+      "terrain": "Collant",
+      "penetrometre": "4,2",
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX HERACLIA",
-      "horaire": "16h42",
+      "horaire": "16h44",
       "numero": "2",
       "type": "HAIE",
       "distance": "3400m",
@@ -220,7 +259,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 1,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 4.0,
+          "cote_tendance": "",
+          "cote_reference": 3.3
         },
         {
           "n°": "2",
@@ -240,7 +282,10 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 2,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 7.9,
+          "cote_tendance": "+",
+          "cote_reference": 5.5
         },
         {
           "n°": "3",
@@ -260,7 +305,10 @@
           "equipement(s)": "A",
           "nb_courses": 23,
           "nb_victoires": 0,
-          "nb_places": 15
+          "nb_places": 15,
+          "cote": 14.0,
+          "cote_tendance": "-",
+          "cote_reference": 11.0
         },
         {
           "n°": "4",
@@ -280,7 +328,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 11.0,
+          "cote_tendance": "+",
+          "cote_reference": 8.9
         },
         {
           "n°": "5",
@@ -300,7 +351,10 @@
           "equipement(s)": "",
           "nb_courses": 15,
           "nb_victoires": 2,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 6.0,
+          "cote_tendance": "+",
+          "cote_reference": 8.7
         },
         {
           "n°": "6",
@@ -320,7 +374,10 @@
           "equipement(s)": "A",
           "nb_courses": 18,
           "nb_victoires": 2,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 11.0,
+          "cote_tendance": "-",
+          "cote_reference": 13.0
         },
         {
           "n°": "7",
@@ -340,7 +397,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 1,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 3.1,
+          "cote_tendance": "-",
+          "cote_reference": 4.4
         },
         {
           "n°": "8",
@@ -360,9 +420,15 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 27.0,
+          "cote_tendance": "+",
+          "cote_reference": 21.0
         }
-      ]
+      ],
+      "typePiste": "HERBE",
+      "terrain": "Collant",
+      "penetrometre": "4,2"
     },
     {
       "nom": "PRIX NELL BREAUTE (CHMPT PARIS TURF DES APPRENTIS & JEUNES JOCKEYS)",
@@ -390,7 +456,10 @@
           "equipement(s)": "",
           "nb_courses": 34,
           "nb_victoires": 5,
-          "nb_places": 21
+          "nb_places": 21,
+          "cote": 3.9,
+          "cote_tendance": "+",
+          "cote_reference": 4.3
         },
         {
           "n°": "2",
@@ -410,7 +479,10 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 0,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 7.2,
+          "cote_tendance": "+",
+          "cote_reference": 3.9
         },
         {
           "n°": "3",
@@ -430,7 +502,10 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 2,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 9.6,
+          "cote_tendance": "-",
+          "cote_reference": 6.8
         },
         {
           "n°": "4",
@@ -450,7 +525,10 @@
           "equipement(s)": "",
           "nb_courses": 15,
           "nb_victoires": 1,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 2.7,
+          "cote_tendance": "-",
+          "cote_reference": 5.9
         },
         {
           "n°": "5",
@@ -470,7 +548,10 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 0,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 18.0,
+          "cote_tendance": "+",
+          "cote_reference": 13.0
         },
         {
           "n°": "6",
@@ -490,7 +571,10 @@
           "equipement(s)": "",
           "nb_courses": 21,
           "nb_victoires": 1,
-          "nb_places": 14
+          "nb_places": 14,
+          "cote": 29.0,
+          "cote_tendance": "+",
+          "cote_reference": 14.0
         },
         {
           "n°": "7",
@@ -510,7 +594,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 0,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 19.0,
+          "cote_tendance": "+",
+          "cote_reference": 15.0
         },
         {
           "n°": "8",
@@ -530,7 +617,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 0,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 29.0,
+          "cote_tendance": "-",
+          "cote_reference": 143.0
         },
         {
           "n°": "9",
@@ -550,9 +640,15 @@
           "equipement(s)": "",
           "nb_courses": 21,
           "nb_victoires": 2,
-          "nb_places": 17
+          "nb_places": 17,
+          "cote": 9.4,
+          "cote_tendance": "-",
+          "cote_reference": 7.9
         }
-      ]
+      ],
+      "typePiste": "HERBE",
+      "terrain": "Collant",
+      "penetrometre": "4,2"
     },
     {
       "nom": "PRIX PAMPHILOS",
@@ -580,7 +676,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 3,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 8.0,
+          "cote_tendance": "+",
+          "cote_reference": 10.0
         },
         {
           "n°": "2",
@@ -600,7 +699,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 2,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.7,
+          "cote_tendance": "-",
+          "cote_reference": 5.0
         },
         {
           "n°": "3",
@@ -620,7 +722,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 12.0,
+          "cote_tendance": "+",
+          "cote_reference": 11.0
         },
         {
           "n°": "4",
@@ -640,7 +745,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 1,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 7.5,
+          "cote_tendance": "+",
+          "cote_reference": 5.8
         },
         {
           "n°": "5",
@@ -660,7 +768,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 1,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 18.0,
+          "cote_tendance": "+",
+          "cote_reference": 10.0
         },
         {
           "n°": "6",
@@ -680,7 +791,10 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 2,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 6.1,
+          "cote_tendance": "+",
+          "cote_reference": 4.0
         },
         {
           "n°": "7",
@@ -700,7 +814,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 30.0,
+          "cote_tendance": "-",
+          "cote_reference": 28.0
         },
         {
           "n°": "8",
@@ -720,7 +837,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 14.0,
+          "cote_tendance": "-",
+          "cote_reference": 20.0
         },
         {
           "n°": "9",
@@ -740,9 +860,15 @@
           "equipement(s)": "A",
           "nb_courses": 7,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 8.8,
+          "cote_tendance": "-",
+          "cote_reference": 7.1
         }
-      ]
+      ],
+      "typePiste": "HERBE",
+      "terrain": "Collant",
+      "penetrometre": "4,2"
     },
     {
       "nom": "PRIX JUSTE UN ARBRE",
@@ -770,7 +896,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 0,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 2.4,
+          "cote_tendance": "",
+          "cote_reference": 1.9
         },
         {
           "n°": "2",
@@ -790,7 +919,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 6.8,
+          "cote_tendance": "+",
+          "cote_reference": 11.0
         },
         {
           "n°": "3",
@@ -810,7 +942,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 5.2,
+          "cote_tendance": "",
+          "cote_reference": 9.5
         },
         {
           "n°": "4",
@@ -830,7 +965,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 10.0,
+          "cote_tendance": "-",
+          "cote_reference": 13.0
         },
         {
           "n°": "5",
@@ -850,7 +988,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 9.8,
+          "cote_tendance": "+",
+          "cote_reference": 9.5
         },
         {
           "n°": "6",
@@ -870,7 +1011,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 10.0,
+          "cote_tendance": "-",
+          "cote_reference": 9.5
         },
         {
           "n°": "7",
@@ -890,9 +1034,15 @@
           "equipement(s)": "A",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 11.0,
+          "cote_tendance": "-",
+          "cote_reference": 6.7
         }
-      ]
+      ],
+      "typePiste": "HERBE",
+      "terrain": "Collant",
+      "penetrometre": "4,2"
     },
     {
       "nom": "PRIX RJP IMMO (PRIX RIP IMMO)",
@@ -920,7 +1070,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 13.0,
+          "cote_tendance": "-",
+          "cote_reference": 13.0
         },
         {
           "n°": "2",
@@ -940,7 +1093,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 3.1,
+          "cote_tendance": "-",
+          "cote_reference": 4.2
         },
         {
           "n°": "3",
@@ -960,7 +1116,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 9.6,
+          "cote_tendance": "+",
+          "cote_reference": 6.0
         },
         {
           "n°": "4",
@@ -980,7 +1139,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 4.7,
+          "cote_tendance": "+",
+          "cote_reference": 4.5
         },
         {
           "n°": "5",
@@ -1000,7 +1162,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 4.6,
+          "cote_tendance": "+",
+          "cote_reference": 3.6
         },
         {
           "n°": "6",
@@ -1020,7 +1185,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 9.6,
+          "cote_tendance": "+",
+          "cote_reference": 13.0
         },
         {
           "n°": "7",
@@ -1040,9 +1208,15 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 9.3,
+          "cote_tendance": "+",
+          "cote_reference": 10.0
         }
-      ]
+      ],
+      "typePiste": "HERBE",
+      "terrain": "Collant",
+      "penetrometre": "4,2"
     },
     {
       "nom": "PRIX D'HAUTOT-SUR-MER (PRIX GARDE ROYALE)",
@@ -1070,7 +1244,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 1,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 2.0,
+          "cote_tendance": "-",
+          "cote_reference": 2.4
         },
         {
           "n°": "2",
@@ -1090,7 +1267,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 8.0,
+          "cote_tendance": "+",
+          "cote_reference": 5.5
         },
         {
           "n°": "3",
@@ -1110,7 +1290,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 14.0,
+          "cote_tendance": "+",
+          "cote_reference": 10.0
         },
         {
           "n°": "4",
@@ -1130,7 +1313,10 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 2,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 15.0,
+          "cote_tendance": "+",
+          "cote_reference": 12.0
         },
         {
           "n°": "5",
@@ -1150,7 +1336,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 19.0,
+          "cote_tendance": "+",
+          "cote_reference": 8.8
         },
         {
           "n°": "6",
@@ -1170,9 +1359,15 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 2.9,
+          "cote_tendance": "-",
+          "cote_reference": 4.0
         }
-      ]
+      ],
+      "typePiste": "HERBE",
+      "terrain": "Collant",
+      "penetrometre": "4,2"
     },
     {
       "nom": "PRIX JOIN IMMO - CHALL. DE L'OBST. EQUINAXY",
@@ -1200,7 +1395,10 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 4,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 12.0,
+          "cote_tendance": "-",
+          "cote_reference": 10.0
         },
         {
           "n°": "2",
@@ -1220,7 +1418,10 @@
           "equipement(s)": "",
           "nb_courses": 25,
           "nb_victoires": 5,
-          "nb_places": 15
+          "nb_places": 15,
+          "cote": 5.6,
+          "cote_tendance": "-",
+          "cote_reference": 5.7
         },
         {
           "n°": "3",
@@ -1240,7 +1441,10 @@
           "equipement(s)": "",
           "nb_courses": 15,
           "nb_victoires": 1,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 7.5,
+          "cote_tendance": "+",
+          "cote_reference": 8.0
         },
         {
           "n°": "4",
@@ -1260,7 +1464,10 @@
           "equipement(s)": "",
           "nb_courses": 26,
           "nb_victoires": 6,
-          "nb_places": 11
+          "nb_places": 11,
+          "cote": 15.0,
+          "cote_tendance": "+",
+          "cote_reference": 24.0
         },
         {
           "n°": "5",
@@ -1280,7 +1487,10 @@
           "equipement(s)": "",
           "nb_courses": 16,
           "nb_victoires": 7,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 2.9,
+          "cote_tendance": "+",
+          "cote_reference": 3.1
         },
         {
           "n°": "6",
@@ -1300,7 +1510,10 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 0,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 13.0,
+          "cote_tendance": "-",
+          "cote_reference": 9.7
         },
         {
           "n°": "7",
@@ -1320,9 +1533,15 @@
           "equipement(s)": "",
           "nb_courses": 17,
           "nb_victoires": 4,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 3.7,
+          "cote_tendance": "",
+          "cote_reference": 3.5
         }
-      ]
+      ],
+      "typePiste": "HERBE",
+      "terrain": "Collant",
+      "penetrometre": "4,2"
     }
   ]
 }
