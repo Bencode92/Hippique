@@ -1,7 +1,7 @@
 {
   "hippodrome": "PALERMO",
   "type_reunion": "Plat",
-  "date_extraction": "2026-08-31T00:21:39.779849",
+  "date_extraction": "2026-08-31T17:22:43.333580",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/31082026/R6",
   "courses": [
     {
@@ -30,7 +30,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 4,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 3.5,
+          "cote_tendance": "+",
+          "cote_reference": 1.5
         },
         {
           "n°": "2",
@@ -50,7 +53,10 @@
           "equipement(s)": "",
           "nb_courses": 21,
           "nb_victoires": 3,
-          "nb_places": 18
+          "nb_places": 18,
+          "cote": 17.0,
+          "cote_tendance": "+",
+          "cote_reference": 7.7
         },
         {
           "n°": "3",
@@ -90,7 +96,9 @@
           "equipement(s)": "",
           "nb_courses": 22,
           "nb_victoires": 5,
-          "nb_places": 16
+          "nb_places": 16,
+          "cote": 8.9,
+          "cote_tendance": "-"
         },
         {
           "n°": "5",
@@ -110,7 +118,10 @@
           "equipement(s)": "",
           "nb_courses": 15,
           "nb_victoires": 5,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 2.8,
+          "cote_tendance": "+",
+          "cote_reference": 10.0
         },
         {
           "n°": "6",
@@ -130,7 +141,10 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 4,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 11.0,
+          "cote_tendance": "+",
+          "cote_reference": 15.0
         },
         {
           "n°": "7",
@@ -150,7 +164,9 @@
           "equipement(s)": "",
           "nb_courses": 27,
           "nb_victoires": 5,
-          "nb_places": 20
+          "nb_places": 20,
+          "cote": 35.0,
+          "cote_tendance": "+"
         },
         {
           "n°": "8",
@@ -190,7 +206,10 @@
           "equipement(s)": "",
           "nb_courses": 19,
           "nb_victoires": 7,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 7.1,
+          "cote_tendance": "+",
+          "cote_reference": 15.0
         },
         {
           "n°": "10",
@@ -230,9 +249,14 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 3,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 11.0,
+          "cote_tendance": "+",
+          "cote_reference": 7.7
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -261,7 +285,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 2,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 4.7,
+          "cote_tendance": "+",
+          "cote_reference": 3.7
         },
         {
           "n°": "2",
@@ -301,7 +328,9 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 2,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 2.4,
+          "cote_tendance": "+"
         },
         {
           "n°": "4",
@@ -321,7 +350,9 @@
           "equipement(s)": "",
           "nb_courses": 17,
           "nb_victoires": 2,
-          "nb_places": 15
+          "nb_places": 15,
+          "cote": 13.0,
+          "cote_tendance": "+"
         },
         {
           "n°": "5",
@@ -341,7 +372,10 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 2,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 4.7,
+          "cote_tendance": "-",
+          "cote_reference": 2.9
         },
         {
           "n°": "6",
@@ -361,7 +395,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 3,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 8.6,
+          "cote_tendance": "+",
+          "cote_reference": 3.7
         },
         {
           "n°": "7",
@@ -381,9 +418,14 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 2,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 8.6,
+          "cote_tendance": "+",
+          "cote_reference": 3.7
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -412,7 +454,10 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 0,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 3.9,
+          "cote_tendance": "+",
+          "cote_reference": 2.4
         },
         {
           "n°": "2",
@@ -452,27 +497,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 0,
-          "nb_places": 4
-        },
-        {
-          "n°": "4",
-          "cheval": "EL EX M.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: IL CAMPIONE et IXALA (INTERPRETE)",
-          "corde": "(Corde:04)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260831/PMO/8/20260831-PMO-8-4.png",
-          "propriétaire": "LA FRONTERA",
-          "entraineur": "HECTOR D PETERLIN",
-          "éleveurs": "",
-          "jockey": "GONZALO DAMIAN BORDA",
-          "poids": "57 kg",
-          "gains": "27440000",
-          "musique": "5p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 1,
-          "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 4,
+          "cote": 3.9,
+          "cote_tendance": "",
+          "cote_reference": 4.8
         },
         {
           "n°": "5",
@@ -492,7 +520,10 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 0,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 23.0,
+          "cote_tendance": "",
+          "cote_reference": 9.7
         },
         {
           "n°": "6",
@@ -512,7 +543,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 0,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 5.9,
+          "cote_tendance": "",
+          "cote_reference": 2.4
         },
         {
           "n°": "7",
@@ -552,7 +586,9 @@
           "equipement(s)": "",
           "nb_courses": 11,
           "nb_victoires": 0,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 5.9,
+          "cote_tendance": "-"
         },
         {
           "n°": "9",
@@ -575,6 +611,8 @@
           "nb_places": 4
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -603,7 +641,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 4.5,
+          "cote_tendance": "+",
+          "cote_reference": 10.0
         },
         {
           "n°": "2",
@@ -623,7 +664,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 11.0,
+          "cote_tendance": "+",
+          "cote_reference": 10.0
         },
         {
           "n°": "3",
@@ -643,7 +687,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 29.0,
+          "cote_tendance": "+",
+          "cote_reference": 10.0
         },
         {
           "n°": "4",
@@ -663,7 +710,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 0,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 14.0,
+          "cote_tendance": "+",
+          "cote_reference": 2.5
         },
         {
           "n°": "5",
@@ -683,7 +733,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 1.4,
+          "cote_tendance": "-",
+          "cote_reference": 4.0
         },
         {
           "n°": "6",
@@ -703,9 +756,14 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 19.0,
+          "cote_tendance": "+",
+          "cote_reference": 5.0
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -734,7 +792,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 1,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 3.9
         },
         {
           "n°": "2",
@@ -754,7 +815,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 1,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 4.5,
+          "cote_tendance": "",
+          "cote_reference": 3.9
         },
         {
           "n°": "3",
@@ -794,7 +858,9 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 1,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 13.0,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -814,7 +880,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 1,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 9.1,
+          "cote_tendance": "",
+          "cote_reference": 7.9
         },
         {
           "n°": "6",
@@ -834,7 +903,10 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 1,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 2.7,
+          "cote_tendance": "",
+          "cote_reference": 3.9
         },
         {
           "n°": "7",
@@ -854,7 +926,9 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 1,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 6.8,
+          "cote_tendance": ""
         },
         {
           "n°": "8",
@@ -874,9 +948,14 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 6.8,
+          "cote_tendance": "",
+          "cote_reference": 3.9
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -925,7 +1004,9 @@
           "equipement(s)": "",
           "nb_courses": 18,
           "nb_victoires": 3,
-          "nb_places": 15
+          "nb_places": 15,
+          "cote": 11.0,
+          "cote_tendance": ""
         },
         {
           "n°": "3",
@@ -945,7 +1026,10 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 4,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 2.9,
+          "cote_tendance": "",
+          "cote_reference": 1.6
         },
         {
           "n°": "4",
@@ -965,7 +1049,10 @@
           "equipement(s)": "",
           "nb_courses": 15,
           "nb_victoires": 4,
-          "nb_places": 11
+          "nb_places": 11,
+          "cote": 3.9,
+          "cote_tendance": "",
+          "cote_reference": 4.8
         },
         {
           "n°": "5",
@@ -985,27 +1072,10 @@
           "equipement(s)": "",
           "nb_courses": 21,
           "nb_victoires": 4,
-          "nb_places": 17
-        },
-        {
-          "n°": "6",
-          "cheval": "LIMITLESS THUNDER F.PU. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: DUBAI THUNDER et LIMITLESS APPEAL (TALE OF THE CAT)",
-          "corde": "(Corde:06)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260831/PMO/11/20260831-PMO-11-6.png",
-          "propriétaire": "LA CHURRASQUERA(AZL)",
-          "entraineur": "MARIO ADRIAN COTIGNOLA",
-          "éleveurs": "",
-          "jockey": "GONZALO LAUTARO MANSILLA",
-          "poids": "54 kg",
-          "gains": "1102920000",
-          "musique": "1p5p9p0p1p",
-          "valeur": "54.0",
-          "equipement(s)": "",
-          "nb_courses": 14,
-          "nb_victoires": 3,
-          "nb_places": 10
+          "nb_places": 17,
+          "cote": 3.4,
+          "cote_tendance": "",
+          "cote_reference": 3.2
         },
         {
           "n°": "7",
@@ -1068,6 +1138,8 @@
           "nb_places": 17
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     }
   ]
