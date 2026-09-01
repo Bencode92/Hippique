@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-01T01:11:11.659Z",
+  "date": "2026-09-01T23:56:46.649Z",
   "method": "ZERO_LEAKAGE",
   "allResults": [
     {
@@ -87,12 +87,12 @@
   },
   "testResult": {
     "total": 751,
-    "top1": 23.8,
+    "top1": 24,
     "top3": 82.4,
-    "ll": 2.003
+    "ll": 1.997
   },
   "baseline": {
     "top1": 10,
-    "ll": 2.3
+    "ll": 2.299
   }
 }
