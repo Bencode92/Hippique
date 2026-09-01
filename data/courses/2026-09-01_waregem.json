@@ -1,7 +1,7 @@
 {
   "hippodrome": "WAREGEM",
   "type_reunion": "STEEPLECHASE",
-  "date_extraction": "2026-09-01T01:10:46.763881",
+  "date_extraction": "2026-09-01T14:28:51.147704",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/01092026/R4",
   "courses": [
     {
@@ -13,24 +13,28 @@
       "url": "",
       "participants": [
         {
-          "n°": "1",
-          "cheval": "KING DE LA NOVERIE H.AQPS. 6 a.",
+          "n°": "6",
+          "cheval": "LADY RAFFLES F.AQPS. 5 a.",
           "cheval_url": "",
-          "père_mère": "Par: TIGER GROOM et QUAT'SOUS D'OR (LOST WORLD)",
+          "père_mère": "Par: DOCTOR DINO et UNE ARTISTE (ALBERTO GIACOMETTI)",
           "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260901/WAR/2/20260901-WAR-2-1.png",
-          "propriétaire": "MME A.SALAUN-BORDILLON",
-          "entraineur": "A.LE CLERC (S)",
-          "éleveurs": "MR HUBERT RIVIERE",
-          "jockey": "B.LE CLERC",
-          "poids": "69 kg",
-          "gains": "4009000",
-          "musique": "Tc2c1c6c4c2c2s(25)0s2s",
-          "valeur": "69.0",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260901/WAR/2/20260901-WAR-2-6.png",
+          "propriétaire": "ECURIE DU HARAS D'ERABLE",
+          "entraineur": "P.QUINTON (S)",
+          "éleveurs": "MR SIMON MUNIR",
+          "jockey": "A.ZULIANI",
+          "poids": "64 kg",
+          "gains": "4444500",
+          "musique": "1h1s2s7s6s5s4sAs(25)4s",
+          "valeur": "64.0",
           "equipement(s)": "",
-          "nb_courses": 24,
-          "nb_victoires": 1,
-          "nb_places": 9
+          "nb_courses": 14,
+          "nb_victoires": 3,
+          "nb_places": 8,
+          "cote": 3.1,
+          "cote_tendance": "",
+          "cote_reference": 3.5,
+          "arrivee": 1
         },
         {
           "n°": "2",
@@ -50,7 +54,11 @@
           "equipement(s)": "",
           "nb_courses": 28,
           "nb_victoires": 1,
-          "nb_places": 17
+          "nb_places": 17,
+          "cote": 7.2,
+          "cote_tendance": "",
+          "cote_reference": 6.5,
+          "arrivee": 2
         },
         {
           "n°": "3",
@@ -70,7 +78,11 @@
           "equipement(s)": "",
           "nb_courses": 20,
           "nb_victoires": 2,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 4.8,
+          "cote_tendance": "-",
+          "cote_reference": 6.0,
+          "arrivee": 3
         },
         {
           "n°": "4",
@@ -90,49 +102,40 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 4,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 2.7,
+          "cote_tendance": "",
+          "cote_reference": 2.4,
+          "arrivee": 4
         },
         {
-          "n°": "6",
-          "cheval": "LADY RAFFLES F.AQPS. 5 a.",
+          "n°": "1",
+          "cheval": "KING DE LA NOVERIE H.AQPS. 6 a.",
           "cheval_url": "",
-          "père_mère": "Par: DOCTOR DINO et UNE ARTISTE (ALBERTO GIACOMETTI)",
+          "père_mère": "Par: TIGER GROOM et QUAT'SOUS D'OR (LOST WORLD)",
           "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260901/WAR/2/20260901-WAR-2-6.png",
-          "propriétaire": "ECURIE DU HARAS D'ERABLE",
-          "entraineur": "P.QUINTON (S)",
-          "éleveurs": "MR SIMON MUNIR",
-          "jockey": "A.ZULIANI",
-          "poids": "64 kg",
-          "gains": "4444500",
-          "musique": "1h1s2s7s6s5s4sAs(25)4s",
-          "valeur": "64.0",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260901/WAR/2/20260901-WAR-2-1.png",
+          "propriétaire": "MME A.SALAUN-BORDILLON",
+          "entraineur": "A.LE CLERC (S)",
+          "éleveurs": "MR HUBERT RIVIERE",
+          "jockey": "B.LE CLERC",
+          "poids": "69 kg",
+          "gains": "4009000",
+          "musique": "Tc2c1c6c4c2c2s(25)0s2s",
+          "valeur": "69.0",
           "equipement(s)": "",
-          "nb_courses": 14,
-          "nb_victoires": 3,
-          "nb_places": 8
-        },
-        {
-          "n°": "7",
-          "cheval": "POURQUOI PAS MAMAN F.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: KINGFISHER et POURQUOI PAS ELLE (MARTALINE)",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260901/WAR/2/20260901-WAR-2-7.png",
-          "propriétaire": "MME S.AMAR",
-          "entraineur": "D.COTTIN (S)",
-          "éleveurs": "MR CLOVIS COTTIN",
-          "jockey": "THO .JOURNIAC",
-          "poids": "63 kg",
-          "gains": "2600000",
-          "musique": "6s3s(24)4s1s6h6h8h2h",
-          "valeur": "63.0",
-          "equipement(s)": "",
-          "nb_courses": 8,
+          "nb_courses": 24,
           "nb_victoires": 1,
-          "nb_places": 6
+          "nb_places": 9,
+          "cote": 9.8,
+          "cote_tendance": "+",
+          "cote_reference": 8.3,
+          "arrivee": 5
         }
-      ]
+      ],
+      "terrain": "Bon",
+      "penetrometre": "3,0",
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX FELIX DE RUYCK",
@@ -142,26 +145,6 @@
       "distance": "3600m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "HILL OF BAMBOO H.PU. 7 a.",
-          "cheval_url": "",
-          "père_mère": "Par: GEMIX et MELANCHOLY HILL (MY RISK)",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260901/WAR/3/20260901-WAR-3-1.png",
-          "propriétaire": "F.HUTHER/R.CLAROT/Y.FOUIN/COTTIN",
-          "entraineur": "D.COTTIN (S)",
-          "éleveurs": "SUCC MR ROLAND MONNIER",
-          "jockey": "J.CHARRON",
-          "poids": "70 kg",
-          "gains": "21727500",
-          "musique": "1h1sAh9s(25)3s2s2h2h0h",
-          "valeur": "70.0",
-          "equipement(s)": "",
-          "nb_courses": 36,
-          "nb_victoires": 4,
-          "nb_places": 20
-        },
         {
           "n°": "2",
           "cheval": "RISK DU BRIZAIS H.PU. 9 a.",
@@ -180,7 +163,11 @@
           "equipement(s)": "",
           "nb_courses": 42,
           "nb_victoires": 7,
-          "nb_places": 28
+          "nb_places": 28,
+          "cote": 2.7,
+          "cote_tendance": "",
+          "cote_reference": 2.7,
+          "arrivee": 1
         },
         {
           "n°": "3",
@@ -200,87 +187,35 @@
           "equipement(s)": "",
           "nb_courses": 16,
           "nb_victoires": 2,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 5.0,
+          "cote_tendance": "",
+          "cote_reference": 8.4,
+          "arrivee": 2
         },
         {
-          "n°": "4",
-          "cheval": "FIRST POLAR H.PU. 6 a.",
+          "n°": "1",
+          "cheval": "HILL OF BAMBOO H.PU. 7 a.",
           "cheval_url": "",
-          "père_mère": "Par: KARAKTAR et POLAR GIRL (POLIGLOTE)",
+          "père_mère": "Par: GEMIX et MELANCHOLY HILL (MY RISK)",
           "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260901/WAR/3/20260901-WAR-3-4.png",
-          "propriétaire": "SCUDERIA AICHNER SRL",
-          "entraineur": "J.VANA JR",
-          "éleveurs": "MME KARINE PERREAU",
-          "jockey": "F.GILES",
-          "poids": "67.5 kg",
-          "gains": "10424000",
-          "musique": "3h(25)2h7h1h6s2s3s(24)Ah",
-          "valeur": "67.5",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260901/WAR/3/20260901-WAR-3-1.png",
+          "propriétaire": "F.HUTHER/R.CLAROT/Y.FOUIN/COTTIN",
+          "entraineur": "D.COTTIN (S)",
+          "éleveurs": "SUCC MR ROLAND MONNIER",
+          "jockey": "J.CHARRON",
+          "poids": "70 kg",
+          "gains": "21727500",
+          "musique": "1h1sAh9s(25)3s2s2h2h0h",
+          "valeur": "70.0",
           "equipement(s)": "",
-          "nb_courses": 21,
+          "nb_courses": 36,
           "nb_victoires": 4,
-          "nb_places": 12
-        },
-        {
-          "n°": "5",
-          "cheval": "INTIME WILD H.PU. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: DARIYAN et LETTRE INTIME (INVINCIBLE SPIRIT)",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260901/WAR/3/20260901-WAR-3-5.png",
-          "propriétaire": "DOMAINE DE LA CORNILLIERE",
-          "entraineur": "GAB.LEENDERS (S)",
-          "éleveurs": "DOMAINE DE LA CORNILLIERE EARL",
-          "jockey": "T.DUMOUCH",
-          "poids": "67 kg",
-          "gains": "10007000",
-          "musique": "4s5h4h3hTs4s(25)As5h2h",
-          "valeur": "67.0",
-          "equipement(s)": "",
-          "nb_courses": 19,
-          "nb_victoires": 2,
-          "nb_places": 13
-        },
-        {
-          "n°": "6",
-          "cheval": "KIMFLY F.AQPS. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: FLY WITH ME et RIGAYA DU SEUIL (ULTIMATELY LUCKY)",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260901/WAR/3/20260901-WAR-3-6.png",
-          "propriétaire": "G.BEAUNEZ/E.GRALL(S)",
-          "entraineur": "E.GRALL (S)",
-          "éleveurs": "MR JOEL DENIS",
-          "jockey": "THO .JOURNIAC",
-          "poids": "66 kg",
-          "gains": "6251500",
-          "musique": "5h2h6h5h2h(25)3h6h9hAh",
-          "valeur": "66.0",
-          "equipement(s)": "",
-          "nb_courses": 12,
-          "nb_victoires": 1,
-          "nb_places": 9
-        },
-        {
-          "n°": "7",
-          "cheval": "ROCK TEEN H.PU. 7 a.",
-          "cheval_url": "",
-          "père_mère": "Par: KAP ROCK et SAINTE BORGUE (SAINT DES SAINTS)",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260901/WAR/3/20260901-WAR-3-7.png",
-          "propriétaire": "B.COMPIGNIE",
-          "entraineur": "A.DUBREUIL",
-          "éleveurs": "MR BERTRAND COMPIGNIE",
-          "jockey": "A.COUPU",
-          "poids": "62 kg",
-          "gains": "6103500",
-          "musique": "8h3h1h1hTh(25)7h6h5h8h",
-          "valeur": "62.0",
-          "equipement(s)": "",
-          "nb_courses": 28,
-          "nb_victoires": 4,
-          "nb_places": 12
+          "nb_places": 20,
+          "cote": 3.6,
+          "cote_tendance": "",
+          "cote_reference": 3.4,
+          "arrivee": 3
         },
         {
           "n°": "8",
@@ -300,10 +235,112 @@
           "equipement(s)": "",
           "nb_courses": 33,
           "nb_victoires": 2,
-          "nb_places": 21
+          "nb_places": 21,
+          "cote": 20.0,
+          "cote_tendance": "",
+          "cote_reference": 19.0,
+          "arrivee": 4
+        },
+        {
+          "n°": "7",
+          "cheval": "ROCK TEEN H.PU. 7 a.",
+          "cheval_url": "",
+          "père_mère": "Par: KAP ROCK et SAINTE BORGUE (SAINT DES SAINTS)",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260901/WAR/3/20260901-WAR-3-7.png",
+          "propriétaire": "B.COMPIGNIE",
+          "entraineur": "A.DUBREUIL",
+          "éleveurs": "MR BERTRAND COMPIGNIE",
+          "jockey": "A.COUPU",
+          "poids": "62 kg",
+          "gains": "6103500",
+          "musique": "8h3h1h1hTh(25)7h6h5h8h",
+          "valeur": "62.0",
+          "equipement(s)": "",
+          "nb_courses": 28,
+          "nb_victoires": 4,
+          "nb_places": 12,
+          "cote": 24.0,
+          "cote_tendance": "",
+          "cote_reference": 16.0,
+          "arrivee": 5
+        },
+        {
+          "n°": "4",
+          "cheval": "FIRST POLAR H.PU. 6 a.",
+          "cheval_url": "",
+          "père_mère": "Par: KARAKTAR et POLAR GIRL (POLIGLOTE)",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260901/WAR/3/20260901-WAR-3-4.png",
+          "propriétaire": "SCUDERIA AICHNER SRL",
+          "entraineur": "J.VANA JR",
+          "éleveurs": "MME KARINE PERREAU",
+          "jockey": "F.GILES",
+          "poids": "67.5 kg",
+          "gains": "10424000",
+          "musique": "3h(25)2h7h1h6s2s3s(24)Ah",
+          "valeur": "67.5",
+          "equipement(s)": "",
+          "nb_courses": 21,
+          "nb_victoires": 4,
+          "nb_places": 12,
+          "cote": 9.8,
+          "cote_tendance": "",
+          "cote_reference": 14.0,
+          "arrivee": 6
+        },
+        {
+          "n°": "5",
+          "cheval": "INTIME WILD H.PU. 6 a.",
+          "cheval_url": "",
+          "père_mère": "Par: DARIYAN et LETTRE INTIME (INVINCIBLE SPIRIT)",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260901/WAR/3/20260901-WAR-3-5.png",
+          "propriétaire": "DOMAINE DE LA CORNILLIERE",
+          "entraineur": "GAB.LEENDERS (S)",
+          "éleveurs": "DOMAINE DE LA CORNILLIERE EARL",
+          "jockey": "T.DUMOUCH",
+          "poids": "67 kg",
+          "gains": "10007000",
+          "musique": "4s5h4h3hTs4s(25)As5h2h",
+          "valeur": "67.0",
+          "equipement(s)": "",
+          "nb_courses": 19,
+          "nb_victoires": 2,
+          "nb_places": 13,
+          "cote": 21.0,
+          "cote_tendance": "",
+          "cote_reference": 12.0,
+          "arrivee": 7
+        },
+        {
+          "n°": "6",
+          "cheval": "KIMFLY F.AQPS. 6 a.",
+          "cheval_url": "",
+          "père_mère": "Par: FLY WITH ME et RIGAYA DU SEUIL (ULTIMATELY LUCKY)",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260901/WAR/3/20260901-WAR-3-6.png",
+          "propriétaire": "G.BEAUNEZ/E.GRALL(S)",
+          "entraineur": "E.GRALL (S)",
+          "éleveurs": "MR JOEL DENIS",
+          "jockey": "THO .JOURNIAC",
+          "poids": "66 kg",
+          "gains": "6251500",
+          "musique": "5h2h6h5h2h(25)3h6h9hAh",
+          "valeur": "66.0",
+          "equipement(s)": "",
+          "nb_courses": 12,
+          "nb_victoires": 1,
+          "nb_places": 9,
+          "cote": 18.0,
+          "cote_tendance": "",
+          "cote_reference": 10.0
         }
       ],
-      "cordeCourse": "CORDE_DROITE"
+      "terrain": "Bon",
+      "penetrometre": "3,0",
+      "cordeCourse": "CORDE_DROITE",
+      "arrivee_definitive": true
     },
     {
       "nom": "ING GRAND STEEPLE-CHASE DES FLANDRES",
@@ -331,7 +368,10 @@
           "equipement(s)": "",
           "nb_courses": 34,
           "nb_victoires": 9,
-          "nb_places": 17
+          "nb_places": 17,
+          "cote": 4.0,
+          "cote_tendance": "",
+          "cote_reference": 6.5
         },
         {
           "n°": "2",
@@ -351,7 +391,10 @@
           "equipement(s)": "",
           "nb_courses": 26,
           "nb_victoires": 8,
-          "nb_places": 15
+          "nb_places": 15,
+          "cote": 7.4,
+          "cote_tendance": "",
+          "cote_reference": 8.3
         },
         {
           "n°": "3",
@@ -371,7 +414,10 @@
           "equipement(s)": "",
           "nb_courses": 30,
           "nb_victoires": 6,
-          "nb_places": 17
+          "nb_places": 17,
+          "cote": 21.0,
+          "cote_tendance": "+",
+          "cote_reference": 9.8
         },
         {
           "n°": "4",
@@ -391,7 +437,10 @@
           "equipement(s)": "",
           "nb_courses": 70,
           "nb_victoires": 13,
-          "nb_places": 32
+          "nb_places": 32,
+          "cote": 13.0,
+          "cote_tendance": "+",
+          "cote_reference": 12.0
         },
         {
           "n°": "5",
@@ -411,7 +460,10 @@
           "equipement(s)": "",
           "nb_courses": 21,
           "nb_victoires": 5,
-          "nb_places": 11
+          "nb_places": 11,
+          "cote": 4.1,
+          "cote_tendance": "",
+          "cote_reference": 6.8
         },
         {
           "n°": "6",
@@ -431,7 +483,10 @@
           "equipement(s)": "",
           "nb_courses": 32,
           "nb_victoires": 9,
-          "nb_places": 17
+          "nb_places": 17,
+          "cote": 2.7,
+          "cote_tendance": "",
+          "cote_reference": 1.9
         },
         {
           "n°": "7",
@@ -451,9 +506,14 @@
           "equipement(s)": "",
           "nb_courses": 27,
           "nb_victoires": 4,
-          "nb_places": 16
+          "nb_places": 16,
+          "cote": 43.0,
+          "cote_tendance": "+",
+          "cote_reference": 31.0
         }
-      ]
+      ],
+      "terrain": "Bon",
+      "penetrometre": "3,0"
     },
     {
       "nom": "PRIX RALLYE WAREGEM",
@@ -481,7 +541,10 @@
           "equipement(s)": "",
           "nb_courses": 11,
           "nb_victoires": 3,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 10.0,
+          "cote_tendance": "+",
+          "cote_reference": 8.6
         },
         {
           "n°": "2",
@@ -501,7 +564,10 @@
           "equipement(s)": "",
           "nb_courses": 26,
           "nb_victoires": 3,
-          "nb_places": 16
+          "nb_places": 16,
+          "cote": 6.1,
+          "cote_tendance": "+",
+          "cote_reference": 4.3
         },
         {
           "n°": "3",
@@ -521,7 +587,10 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 1,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 7.9,
+          "cote_tendance": "+",
+          "cote_reference": 4.8
         },
         {
           "n°": "4",
@@ -541,7 +610,10 @@
           "equipement(s)": "",
           "nb_courses": 42,
           "nb_victoires": 7,
-          "nb_places": 28
+          "nb_places": 28,
+          "cote": 5.0,
+          "cote_tendance": "-",
+          "cote_reference": 11.0
         },
         {
           "n°": "5",
@@ -561,7 +633,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 1,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 12.0,
+          "cote_tendance": "+",
+          "cote_reference": 8.9
         },
         {
           "n°": "6",
@@ -581,7 +656,10 @@
           "equipement(s)": "",
           "nb_courses": 34,
           "nb_victoires": 6,
-          "nb_places": 20
+          "nb_places": 20,
+          "cote": 3.2,
+          "cote_tendance": "+",
+          "cote_reference": 8.6
         },
         {
           "n°": "7",
@@ -601,27 +679,10 @@
           "equipement(s)": "",
           "nb_courses": 33,
           "nb_victoires": 5,
-          "nb_places": 15
-        },
-        {
-          "n°": "8",
-          "cheval": "CATS'AGILITY F.PU. 7 a.",
-          "cheval_url": "",
-          "père_mère": "Par: RELIABLE MAN et CAT NOVA (HURRICANE CAT)",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260901/WAR/8/20260901-WAR-8-8.png",
-          "propriétaire": "ECURIE ETOILE N.V.",
-          "entraineur": "J.PLANQUE (S)",
-          "éleveurs": "E.A.R.L. MELL ELEVAGES",
-          "jockey": "L.BRECHET",
-          "poids": "64 kg",
-          "gains": "3458800",
-          "musique": "3s1s2s5s(25)2s(24)3h4h",
-          "valeur": "64.0",
-          "equipement(s)": "",
-          "nb_courses": 9,
-          "nb_victoires": 2,
-          "nb_places": 7
+          "nb_places": 15,
+          "cote": 13.0,
+          "cote_tendance": "-",
+          "cote_reference": 14.0
         },
         {
           "n°": "9",
@@ -641,9 +702,14 @@
           "equipement(s)": "",
           "nb_courses": 21,
           "nb_victoires": 2,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 42.0,
+          "cote_tendance": "+",
+          "cote_reference": 74.0
         }
-      ]
+      ],
+      "terrain": "Bon",
+      "penetrometre": "3,0"
     }
   ]
 }
