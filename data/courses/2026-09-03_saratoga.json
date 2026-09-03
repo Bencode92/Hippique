@@ -1,7 +1,7 @@
 {
   "hippodrome": "SARATOGA",
   "type_reunion": "Plat",
-  "date_extraction": "2026-09-03T22:28:03.060630",
+  "date_extraction": "2026-09-03T23:54:42.115323",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/03092026/R6",
   "courses": [
     {
@@ -1856,6 +1856,30 @@
           "arrivee": 3
         },
         {
+          "n°": "7",
+          "cheval": "RISK TOLERANCE M.PU. 5 a.",
+          "cheval_url": "",
+          "père_mère": "Par: KINGMAN et LOVING THINGS (PIVOTAL)",
+          "corde": "(Corde:07)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260903/STD/9/20260903-STD-9-7.png",
+          "propriétaire": "KLARAVICH STABLES, INC.",
+          "entraineur": "C C BROWN",
+          "éleveurs": "",
+          "jockey": "M FRANCO",
+          "poids": "56 kg",
+          "gains": "18339300",
+          "musique": "1p2p4p2p(25)",
+          "valeur": "56.0",
+          "equipement(s)": "",
+          "nb_courses": 8,
+          "nb_victoires": 3,
+          "nb_places": 4,
+          "cote": 8.3,
+          "cote_tendance": "+",
+          "cote_reference": 9.1,
+          "arrivee": 4
+        },
+        {
           "n°": "1",
           "cheval": "FORT WASHINGTON M.PU. 7 a.",
           "cheval_url": "",
@@ -1923,29 +1947,6 @@
           "cote": 5.9,
           "cote_tendance": "+",
           "cote_reference": 8.2
-        },
-        {
-          "n°": "7",
-          "cheval": "RISK TOLERANCE M.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: KINGMAN et LOVING THINGS (PIVOTAL)",
-          "corde": "(Corde:07)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260903/STD/9/20260903-STD-9-7.png",
-          "propriétaire": "KLARAVICH STABLES, INC.",
-          "entraineur": "C C BROWN",
-          "éleveurs": "",
-          "jockey": "M FRANCO",
-          "poids": "56 kg",
-          "gains": "18339300",
-          "musique": "1p2p4p2p(25)",
-          "valeur": "56.0",
-          "equipement(s)": "",
-          "nb_courses": 8,
-          "nb_victoires": 3,
-          "nb_places": 4,
-          "cote": 8.3,
-          "cote_tendance": "+",
-          "cote_reference": 9.1
         },
         {
           "n°": "8",
@@ -2058,6 +2059,30 @@
           "arrivee": 3
         },
         {
+          "n°": "3",
+          "cheval": "FRESH START H.PU. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: KILLYBEGS CAPTAIN et HIPSHOOTINMOMMA (SUCCESSFUL APPEAL)",
+          "corde": "(Corde:03)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260903/STD/10/20260903-STD-10-3.png",
+          "propriétaire": "BEHRENDT, JOHN T. AND THERESA E.",
+          "entraineur": "D G DONK",
+          "éleveurs": "",
+          "jockey": "C ELLIOTT",
+          "poids": "57 kg",
+          "gains": "627800",
+          "musique": "(25)5p4p7p",
+          "valeur": "57.0",
+          "equipement(s)": "",
+          "nb_courses": 3,
+          "nb_victoires": 0,
+          "nb_places": 2,
+          "cote": 19.0,
+          "cote_tendance": "+",
+          "cote_reference": 19.0,
+          "arrivee": 4
+        },
+        {
           "n°": "1",
           "cheval": "MO CURLS H.PU. 3 a.",
           "cheval_url": "",
@@ -2102,29 +2127,6 @@
           "cote": 14.0,
           "cote_tendance": "+",
           "cote_reference": 7.1
-        },
-        {
-          "n°": "3",
-          "cheval": "FRESH START H.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: KILLYBEGS CAPTAIN et HIPSHOOTINMOMMA (SUCCESSFUL APPEAL)",
-          "corde": "(Corde:03)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260903/STD/10/20260903-STD-10-3.png",
-          "propriétaire": "BEHRENDT, JOHN T. AND THERESA E.",
-          "entraineur": "D G DONK",
-          "éleveurs": "",
-          "jockey": "C ELLIOTT",
-          "poids": "57 kg",
-          "gains": "627800",
-          "musique": "(25)5p4p7p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 3,
-          "nb_victoires": 0,
-          "nb_places": 2,
-          "cote": 19.0,
-          "cote_tendance": "+",
-          "cote_reference": 19.0
         },
         {
           "n°": "4",
@@ -2269,7 +2271,7 @@
       "terrain": "Bon",
       "penetrometre": "3,0",
       "cordeCourse": "CORDE_GAUCHE",
-      "arrivee_definitive": false
+      "arrivee_definitive": true
     }
   ]
 }
