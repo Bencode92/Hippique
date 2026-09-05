@@ -645,24 +645,53 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         return (value - min) / (max - min);
     },
     
-    // Charger toutes les données nécessaires
-    async loadAllData() {
-        const promises = [
+    // ── CHEMIN CRITIQUE ────────────────────────────────────────────────
+    // Ce dont le CLASSEMENT LEVIERS a besoin, et rien d'autre.
+    // computeLeviersForParticipant() ne lit que chevaux / jockeys / cravache_or
+    // (2026 + 2025) : il code 'Forme récente' et 'Combo Jk*Ent' en dur.
+    // ~4 Mo bruts contre ~89 Mo pour loadAllData().
+    async loadCoreData() {
+        if (this._corePromise) return this._corePromise;
+        this._corePromise = Promise.all([
             this.loadCategoryData('chevaux'),
             this.loadCategoryData('jockeys'),
+            this.loadCategoryData('cravache_or'),
+            this.loadHistoricalData(['chevaux', 'jockeys', 'cravache_or']),
+            this.loadClaudeCorrespondances()
+        ]);
+        return this._corePromise;
+    },
+
+    // ── HORS CHEMIN CRITIQUE ───────────────────────────────────────────
+    // Nécessaire au CLASSEMENT MODÈLE (calculerScoreParticipant : couches
+    // distance, forme, combo, écurie, intervalle) et aux widgets « top
+    // performers ». Chargé en tâche de fond — le classement Leviers n'attend pas.
+    async loadExtraData() {
+        if (this._extraPromise) return this._extraPromise;
+        this._extraPromise = Promise.all([
             this.loadCategoryData('entraineurs'),
             this.loadCategoryData('eleveurs'),
             this.loadCategoryData('proprietaires'),
-            this.loadCategoryData('cravache_or'),
-            this.loadHistoricalData(),
-            this.loadDistanceStats(),
+            this.loadHistoricalData(['entraineurs', 'eleveurs', 'proprietaires']),
+            this.loadDistanceStats(),   // getDistanceBonus() — ranking-loader.js:2551
             this.loadFormeRecente(),
-            this.loadClaudeCorrespondances(),
             this.loadComboStats(),
             this.loadStableFormAndIntervalle()
-        ];
+        ]);
+        return this._extraPromise;
+    },
 
-        return Promise.all(promises);
+    _corePromise: null,
+    _extraPromise: null,
+
+    // Compat : les appelants existants gardent le comportement d'origine.
+    // Les deux vagues démarrent ENSEMBLE — même parallélisme qu'avant le
+    // découpage — mais loadCoreData() reste attendable seul par le classement
+    // Leviers, qui n'a alors pas à patienter derrière les ~85 Mo du Modèle.
+    async loadAllData() {
+        const core = this.loadCoreData();
+        const extra = this.loadExtraData();
+        return Promise.all([core, extra]);
     },
 
     // Charger forme stable + intervalle courses
@@ -768,8 +797,7 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
 
     // Charger les stats par distance (taux victoire/place par bucket)
     // Charger les données historiques (2025) pour les catégories qui en ont
-    async loadHistoricalData() {
-        const categories = ['chevaux', 'jockeys', 'entraineurs', 'eleveurs', 'proprietaires', 'cravache_or'];
+    async loadHistoricalData(categories = ['chevaux', 'jockeys', 'entraineurs', 'eleveurs', 'proprietaires', 'cravache_or']) {
         const baseUrl = 'https://raw.githubusercontent.com/Bencode92/Hippique/main/data/';
 
         for (const cat of categories) {
@@ -2983,7 +3011,9 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
     // Applique la formule optimale du bucket à tous les participants d'une course
     // Retourne map { participantNum: { score, rang } }
     async computeOptimalRanks(course) {
-        await this.loadBestFormulas();
+        // Le noyau suffit ici — inutile d'attendre les ~85 Mo du Modèle.
+        // (Avant ce garde, un appel anticipé scorait sur des tableaux vides.)
+        await Promise.all([this.loadCoreData(), this.loadBestFormulas()]);
         if (!this._bestFormulas || !course?.participants) return null;
         const distance = parseInt(String(course.distance || '').replace(/[^0-9]/g, '')) || 0;
         const bucket = this.bucketForDistance(distance);

@@ -1281,7 +1281,7 @@
     </div>
 
     <!-- Module ranking-loader (doit être chargé avant le script principal) -->
-    <script src="js/ranking-loader.js?v=16"></script>
+    <script src="js/ranking-loader.js?v=17"></script>
 
     <!-- Module de chargement des courses -->
     <script>
@@ -1844,8 +1844,13 @@
                     // Charger les données
                     courseData = await coursesLoader.loadCoursesForDate(dateStr);
                     
-                    // Précharger les données de classement en arrière-plan
-                    rankingLoader.loadAllData().then(() => {
+                    // Précharger les données de classement en arrière-plan.
+                    // Noyau d'abord (~4 Mo) : il débloque le classement Leviers.
+                    // Le reste (~85 Mo, classement Modèle + top performers) suit.
+                    rankingLoader.loadCoreData().then(() => {
+                        console.log("Noyau de classement prêt — classement Leviers disponible");
+                        return rankingLoader.loadExtraData();
+                    }).then(() => {
                         console.log("Données de classement préchargées avec succès");
                         // Charger les top performers des différentes catégories
                         loadTopPerformers().catch(error => {
