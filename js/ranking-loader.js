@@ -645,6 +645,18 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         return (value - min) / (max - min);
     },
     
+    // Base des fichiers data/. Une seule origine par contexte :
+    //  - GitHub Pages : chemin relatif → gzip, max-age=600, aucun quota
+    //  - local        : chemin relatif
+    //  - ailleurs     : raw.githubusercontent (max-age=300, rate-limité, c'est
+    //    lui qui produisait les 403 quand tous les chargeurs tapaient dessus)
+    dataBase() {
+        const h = (typeof window !== 'undefined' && window.location && window.location.hostname) || '';
+        if (h.includes('github.io')) return '/Hippique/data/';
+        if (h === 'localhost' || h === '127.0.0.1' || h === '') return 'data/';
+        return 'https://raw.githubusercontent.com/Bencode92/Hippique/main/data/';
+    },
+
     // ── CHEMIN CRITIQUE ────────────────────────────────────────────────
     // Ce dont le CLASSEMENT LEVIERS a besoin, et rien d'autre.
     // computeLeviersForParticipant() ne lit que chevaux / jockeys / cravache_or
@@ -696,7 +708,7 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
 
     // Charger forme stable + intervalle courses
     async loadStableFormAndIntervalle() {
-        const baseUrl = 'https://raw.githubusercontent.com/Bencode92/Hippique/main/data/';
+        const baseUrl = this.dataBase();
         try {
             const [r1, r2] = await Promise.all([
                 fetch(baseUrl + 'stable_form.json'),
@@ -719,7 +731,7 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
     // Charger les stats combos jockey × entraîneur
     async loadComboStats() {
         try {
-            const url = 'https://raw.githubusercontent.com/Bencode92/Hippique/main/data/combo_jockey_entraineur.json';
+            const url = this.dataBase() + 'combo_jockey_entraineur.json';
             const response = await fetch(url);
             if (response.ok) {
                 const data = await response.json();
@@ -771,7 +783,7 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
     // Charger les correspondances découvertes par Claude (fuzzy matching IA)
     async loadClaudeCorrespondances() {
         try {
-            const url = 'https://raw.githubusercontent.com/Bencode92/Hippique/main/data/claude_correspondances.json';
+            const url = this.dataBase() + 'claude_correspondances.json';
             const response = await fetch(url);
             if (!response.ok) return;
 
@@ -798,7 +810,7 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
     // Charger les stats par distance (taux victoire/place par bucket)
     // Charger les données historiques (2025) pour les catégories qui en ont
     async loadHistoricalData(categories = ['chevaux', 'jockeys', 'entraineurs', 'eleveurs', 'proprietaires', 'cravache_or']) {
-        const baseUrl = 'https://raw.githubusercontent.com/Bencode92/Hippique/main/data/';
+        const baseUrl = this.dataBase();
 
         for (const cat of categories) {
             const key = `${cat}_2025`;
@@ -839,7 +851,7 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
 
     async loadDistanceStats() {
         const categories = ['chevaux', 'jockeys', 'entraineurs'];
-        const baseUrl = 'https://raw.githubusercontent.com/Bencode92/Hippique/main/data/';
+        const baseUrl = this.dataBase();
 
         for (const cat of categories) {
             if (this.distanceStats[cat]) continue; // Déjà chargé
@@ -898,7 +910,7 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
     // Charger les indices de forme récente
     async loadFormeRecente() {
         const categories = ['chevaux', 'jockeys', 'entraineurs'];
-        const baseUrl = 'https://raw.githubusercontent.com/Bencode92/Hippique/main/data/';
+        const baseUrl = this.dataBase();
 
         for (const cat of categories) {
             if (this.formeRecente[cat]) continue;
@@ -2915,7 +2927,7 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
     async loadBestFormulas() {
         if (this._bestFormulas) return this._bestFormulas;
         try {
-            const r = await fetch(`https://raw.githubusercontent.com/bencode92/Hippique/main/data/best_formulas.json?_=${Date.now()}`);
+            const r = await fetch(`${this.dataBase()}best_formulas.json?_=${Date.now()}`);
             if (r.ok) this._bestFormulas = await r.json();
         } catch (e) { console.warn('best_formulas.json indisponible', e); }
         return this._bestFormulas;
