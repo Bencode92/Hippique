@@ -1190,10 +1190,7 @@
                     <button id="todayBtn" class="nav-date-btn today-btn">
                         <i class="fas fa-calendar-day"></i> Courses d'aujourd'hui
                     </button>
-                    <button id="cotesLiveBtn" class="nav-date-btn" style="background:linear-gradient(135deg,#123a5a,#1b5c8a);color:#7fd4ff" title="Rafraîchir uniquement les cotes des courses affichées — ne recharge ni la page ni les classements">
-                        <i class="fas fa-bolt"></i> Cotes live
-                    </button>
-                    <button id="refreshBtn" class="nav-date-btn" style="background:linear-gradient(135deg,#0a4d3a,#1a7050);color:#5fffaf" title="Recharger TOUT depuis GitHub (rechargement complet de la page)">
+                    <button id="refreshBtn" class="nav-date-btn" style="background:linear-gradient(135deg,#0a4d3a,#1a7050);color:#5fffaf" title="Recharger les courses depuis GitHub (cache bypassé)">
                         <i class="fas fa-sync-alt"></i> Refresh data
                     </button>
                 </div>
@@ -1284,7 +1281,7 @@
     </div>
 
     <!-- Module ranking-loader (doit être chargé avant le script principal) -->
-    <script src="js/ranking-loader.js?v=18" defer></script>
+    <script src="js/ranking-loader.js?v=17"></script>
 
     <!-- Module de chargement des courses -->
     <script>
@@ -1503,23 +1500,14 @@
                         return courseData;
                     }
                     
-                    // Charger les fichiers du jour avec un pool BORNÉ à 3.
-                    // Historique : un pool de 8 vers raw.githubusercontent a produit
-                    // « erreur de chargement » deux fois (rafale rejetée par le CDN),
-                    // reverté les deux fois. 3 reste sous le seuil et garde le retry.
-                    // Repasser à 1 ici suffit à revenir au comportement séquentiel.
-                    const POOL_COURSES = 3;
-                    const file_q = [...courseFiles];
-                    await Promise.all(Array.from({ length: POOL_COURSES }, async () => {
-                        while (file_q.length) {
-                            const file = file_q.shift();
-                            try {
-                                await this.processFile(file, courseData);
-                            } catch (fileError) {
-                                console.error(`Erreur lors du traitement du fichier ${file.name}:`, fileError);
-                            }
+                    // Charger les données de chaque fichier
+                    for (const file of courseFiles) {
+                        try {
+                            await this.processFile(file, courseData);
+                        } catch (fileError) {
+                            console.error(`Erreur lors du traitement du fichier ${file.name}:`, fileError);
                         }
-                    }));
+                    }
 
                     // OVERRIDE des cotes par les fichiers cotes_live (mis à jour par
                     // scrape-pre-course.yml toutes les 15 min). Les cotes du programme du
@@ -1551,21 +1539,13 @@
             
             // Traiter un fichier JSON
             async processFile(file, courseData) {
-                // Deux régimes de cache, selon que le fichier peut encore bouger :
-                //  - JOUR COURANT (et futur) : cache-buster + cache:'no-store'.
-                //    Bypass le CDN Fastly ET le cache navigateur — critique pour voir
-                //    les nouvelles cotes après un push.
-                //  - JOUR PASSÉ : le fichier est figé, on laisse le navigateur le
-                //    servir depuis son cache (max-age=300). Une réouverture du même
-                //    jour ne coûte alors plus rien sur le réseau.
-                const fileDate = (file.name.match(/^(\d{4}-\d{2}-\d{2})/) || [])[1] || '';
-                const today = coursesLoader.formatDateYMD(new Date());
-                const fige = fileDate && fileDate < today;
-                const url = fige
-                    ? file.download_url
-                    : `${file.download_url}?_=${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
+                // Cache-buster (timestamp + random salt) + cache:'no-store' :
+                // bypass le CDN Fastly ET le cache navigateur. Critique pour voir
+                // les nouvelles cotes après un push (sinon le navigateur sert encore l'ancien JSON).
+                const url = `${file.download_url}?_=${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
+                console.log(`Traitement du fichier: ${file.name}, URL: ${url}`);
 
-                const fileResponse = await fetchWithRetry(url, fige ? {} : { cache: 'no-store' });
+                const fileResponse = await fetchWithRetry(url, { cache: 'no-store' });
                 if (!fileResponse.ok) {
                     console.error(`Erreur lors du chargement du fichier ${file.name}: ${fileResponse.status}`);
                     return;
@@ -1573,7 +1553,7 @@
                 
                 try {
                     const fileData = await fileResponse.json();
-                    if (window.HIPPIQUE_DEBUG) console.log(`Structure du fichier ${file.name}:`, Object.keys(fileData));
+                    console.log(`Structure du fichier ${file.name}:`, Object.keys(fileData));
                     
                     // ÉTAPE 1: Vérifier si c'est une réunion de type PLAT
                     // Si type_reunion existe et n'est pas "Plat", ignorer ce fichier
@@ -1753,115 +1733,6 @@
                 // Recharger les courses
                 loadCoursesForCurrentDate();
             });
-
-            // ── SOURCE DE COTES OPTIONNELLE : PROXY PMU ─────────────────────
-            // L'API PMU répond 403 dès qu'un en-tête Origin est présent, donc le
-            // navigateur ne peut pas l'appeler en direct : il faut un relais.
-            // Vide = désactivé, on garde data/cotes_live/. Voir
-            // cloudflare-worker/README.md pour déployer et renseigner l'URL.
-            const PMU_PROXY = '';
-
-            async function cotesDepuisPMU(courseData, dateStr) {
-                if (!PMU_PROXY) return 0;
-                const [a, m, j] = dateStr.split('-');
-                const datePmu = `${j}${m}${a}`;
-                const norm = s => (s || '').toString().toLowerCase().normalize('NFD')
-                    .replace(/[\u0300-\u036f]/g, '').replace(/[\s_-]+/g, '-').replace(/[^a-z0-9.-]/g, '');
-
-                const rp = await fetchWithRetry(`${PMU_PROXY}/programme/${datePmu}`, { cache: 'no-store' });
-                if (!rp.ok) throw new Error(`proxy programme ${rp.status}`);
-                const prog = await rp.json();
-
-                // Index des courses affichées : hippodrome normalisé + n° de course
-                const cible = {};
-                Object.entries(courseData).forEach(([hippo, courses]) => {
-                    (courses || []).forEach(c => {
-                        cible[`${norm(hippo)}|${parseInt(c.numero || c.numero_course || 0)}`] = c;
-                    });
-                });
-
-                const taches = [];
-                let maj = 0;
-                for (const reunion of (prog.programme?.reunions || [])) {
-                    const hip = norm(reunion.hippodrome?.libelleCourt || reunion.hippodrome?.libelleLong || '');
-                    for (const course of (reunion.courses || [])) {
-                        const c = cible[`${hip}|${course.numOrdre}`];
-                        if (!c) continue;
-                        taches.push((async () => {
-                            const u = `${PMU_PROXY}/programme/${datePmu}/R${reunion.numOfficiel}/C${course.numOrdre}/participants`;
-                            const r = await fetchWithRetry(u, { cache: 'no-store' });
-                            if (!r.ok) return;
-                            const data = await r.json();
-                            const parNum = {};
-                            (data.participants || []).forEach(p => { parNum[p.numPmu] = p; });
-                            (c.participants || []).forEach(p => {
-                                const src = parNum[parseInt(p['n°'] || p.numero || p.n)];
-                                if (!src) return;
-                                const rd = src.dernierRapportDirect || {};
-                                const rr = src.dernierRapportReference || {};
-                                if (typeof rd.rapport === 'number' && rd.rapport > 0) { p.cote = rd.rapport; maj++; }
-                                if (typeof rr.rapport === 'number' && rr.rapport > 0) p.cote_reference = rr.rapport;
-                                if (rd.indicateurTendance) p.cote_tendance = rd.indicateurTendance;
-                            });
-                        })());
-                    }
-                }
-                await Promise.all(taches);
-                console.log(`⚡ Proxy PMU : ${maj} cotes mises à jour en direct`);
-                return maj;
-            }
-
-            // ── RAFRAÎCHISSEMENT CHIRURGICAL DES COTES ──────────────────────
-            // Ne refetch que data/cotes_live/ pour la date affichée (quelques Ko)
-            // et re-rend depuis courseData déjà en mémoire. Aucun rechargement de
-            // page, aucun re-parse des ~89 Mo de classements.
-            const cotesLiveBtn = document.getElementById('cotesLiveBtn');
-            let _cotesTimer = null;
-
-            async function rafraichirCotesLive({ silencieux = false } = {}) {
-                if (!courseData || !Object.keys(courseData).length) return;
-                const dateStr = coursesLoader.formatDateYMD(window.currentDate);
-                const t0 = performance.now();
-                if (cotesLiveBtn && !silencieux) {
-                    cotesLiveBtn.disabled = true;
-                    cotesLiveBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Cotes…';
-                }
-                try {
-                    // Proxy PMU si activé (cote à la seconde), sinon data/cotes_live/.
-                    let maj = 0;
-                    if (PMU_PROXY) {
-                        try { maj = await cotesDepuisPMU(courseData, dateStr); }
-                        catch (e) { console.warn('Proxy PMU indisponible — repli sur cotes_live', e); }
-                    }
-                    if (!maj) await applyCotesLive(courseData, dateStr);
-                    await displayHippodromes();
-                    const ms = Math.round(performance.now() - t0);
-                    console.log(`⚡ Cotes rafraîchies en ${ms} ms (sans recharger la page)`);
-                    if (cotesLiveBtn && !silencieux) {
-                        const h = new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-                        cotesLiveBtn.innerHTML = `<i class="fas fa-bolt"></i> ${h}`;
-                    }
-                } catch (e) {
-                    console.warn('Rafraîchissement des cotes échoué', e);
-                    if (cotesLiveBtn && !silencieux) cotesLiveBtn.innerHTML = '<i class="fas fa-bolt"></i> Cotes live';
-                } finally {
-                    if (cotesLiveBtn) cotesLiveBtn.disabled = false;
-                }
-            }
-            window.rafraichirCotesLive = rafraichirCotesLive;
-
-            if (cotesLiveBtn) {
-                cotesLiveBtn.addEventListener('click', () => rafraichirCotesLive());
-                // Auto-rafraîchissement pendant qu'on regarde le jour courant :
-                // toutes les 60 s, et jamais quand l'onglet est en arrière-plan.
-                const tickAuto = () => {
-                    if (document.hidden) return;
-                    const dateStr = coursesLoader.formatDateYMD(window.currentDate);
-                    if (dateStr !== coursesLoader.formatDateYMD(new Date())) return;
-                    rafraichirCotesLive({ silencieux: true });
-                };
-                _cotesTimer = setInterval(tickAuto, 60000);
-            }
 
             // Refresh : re-fetch tout depuis GitHub avec cache-busters frais
             // (utile juste après un push pour voir les nouveaux JSON sans recharger la page)
@@ -2883,6 +2754,6 @@
     </script>
     
     <!-- Ajout du nouveau module de simulation intégrée -->
-    <script src="js/simulation-inline.js?v=7" defer></script>
+    <script src="js/simulation-inline.js?v=6"></script>
 </body>
 </html>
