@@ -782,6 +782,7 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             for (const [source, info] of Object.entries(data.correspondances || {})) {
                 if (info.confiance >= 80 && info.match) {
                     this.correspondanceManuelle[source] = info.match;
+                    this._normCache.clear(); this._normGen++;   // les correspondances changent la sortie
                     added++;
                 }
             }
@@ -1008,7 +1009,41 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
     },
     
     // Fonction pour normaliser et nettoyer un nom (améliorée pour les chevaux et écuries)
+    // Cache de normalisation. normaliserNom() est appelée ~6,3 millions de fois
+    // pour l'affichage d'un seul jour (27 courses) : chaque recherche qui ne
+    // trouve pas de match exact retombe sur un balayage complet du classement,
+    // en renormalisant chaque entrée. Le nombre de noms DISTINCTS, lui, se
+    // compte en milliers. La fonction est déterministe à correspondances
+    // constantes — le cache est donc vidé aux deux seuls endroits qui les
+    // modifient : loadClaudeCorrespondances() et ajouterCorrespondanceAutomatique().
+    _normCache: new Map(),
+    _normGen: 0,                      // incrémenté dès qu'une correspondance change
+    _normItemCache: new WeakMap(),    // item de classement -> nom normalisé
+
+    // Les stratégies de repli de trouverMeilleurScore balaient le classement
+    // entier en renormalisant chaque entrée, à chaque recherche. Le nom d'une
+    // entrée ne dépend que d'elle-même et des correspondances : on le calcule
+    // une fois par item, invalidé par _normGen.
+    _normNomItem(item) {
+        const c = this._normItemCache.get(item);
+        if (c !== undefined && c.g === this._normGen) return c.v;
+        const v = this.normaliserNom(item.Nom || item.NomPostal || "");
+        this._normItemCache.set(item, { g: this._normGen, v });
+        return v;
+    },
+
     normaliserNom(nom) {
+        if (!nom) return "";
+        const hit = this._normCache.get(nom);
+        if (hit !== undefined) return hit;
+        const res = this._normaliserNomImpl(nom);
+        // Garde-fou mémoire : au-delà de 100 000 noms distincts on repart de zéro.
+        if (this._normCache.size > 100000) this._normCache.clear(); this._normGen++;
+        this._normCache.set(nom, res);
+        return res;
+    },
+
+    _normaliserNomImpl(nom) {
         if (!nom) return "";
         
         // Nettoyer les noms tronqués (avec ...)
@@ -1503,7 +1538,7 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             
             // Chercher les correspondances avec les écuries
             const correspondances = donneesClassement.filter(item => {
-                const nomItem = this.normaliserNom(item.Nom || item.NomPostal || "");
+                const nomItem = this._normNomItem(item);
                 
                 // Vérifier si c'est une écurie (ECURIE/ECURIES)
                 if (nomItem.startsWith('ECURIE')) {
@@ -1628,7 +1663,7 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             
             // Chercher tous les noms qui correspondent au nom de famille et dont le prénom commence par l'initiale
             const correspondances = donneesClassement.filter(item => {
-                const nomComplet = this.normaliserNom(item.Nom || item.NomPostal || "");
+                const nomComplet = this._normNomItem(item);
                 
                 // Extraire le préfixe, le prénom et le nom de famille du nom complet
                 const matchComplet = nomComplet.match(/^(MME|MR|M)?\\s*([A-Z]+)(?:\\s+([A-Z\\s]+))?$/i);
@@ -1760,6 +1795,9 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
                     console.log(`Correspondance sans suffixe trouvée: "${nomItem}"`);
                     
                     // Mémoriser cette correspondance pour l'avenir
+                    // Indexé par le nom du PARTANT cherché : seul le cache par chaîne
+                    // est concerné, pas le cache par item de classement.
+                    this._normCache.delete(nomUpper);
                     this.correspondancesDecouvertes[nomUpper] = nomItem;
                     
                     return {
@@ -1780,6 +1818,7 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         {
             const exact = this._normIndexFor(donneesClassement).get(nomNormalise);
             if (exact) {
+                this._normCache.delete(nomUpper);
                 this.correspondancesDecouvertes[nomUpper] = exact.Nom || exact.NomPostal || "";
                 return { score: 0, rang: exact.Rang, similarite: 100, item: exact };
             }
@@ -1813,7 +1852,10 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
                         if (prenomPart && prenomPart.charAt(0) === initiale.charAt(0)) {
                             // Match parfait : initiale + nom de famille
                             console.log(`✅ Initiale match: "${nom}" → "${nomItem}" (${initiale}. = ${prenomPart})`);
-                            this.correspondancesDecouvertes[nomUpper] = nomItem;
+                            // Indexé par le nom du PARTANT cherché : seul le cache par chaîne
+                    // est concerné, pas le cache par item de classement.
+                    this._normCache.delete(nomUpper);
+                    this.correspondancesDecouvertes[nomUpper] = nomItem;
                             bestMatch = item;
                             bestSimilarity = 95;
                             break;
@@ -1829,6 +1871,9 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
                     if (bestSimilarity < 95) {
                         console.log(`⚡ Nom de famille match: "${nom}" → "${bestMatch.Nom || bestMatch.NomPostal}" (similarité: ${bestSimilarity}%)`);
                     }
+                    // Indexé par le nom du PARTANT cherché : seul le cache par chaîne
+                    // est concerné, pas le cache par item de classement.
+                    this._normCache.delete(nomUpper);
                     this.correspondancesDecouvertes[nomUpper] = bestMatch.Nom || bestMatch.NomPostal;
                     return {
                         score: 0,
@@ -1848,12 +1893,15 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             
             for (const item of donneesClassement) {
                 const nomItem = item.Nom || item.NomPostal || "";
-                const nomItemSansSuffixe = this.normaliserNom(nomItem).replace(/\s*\([^)]+\)|\s+[HFM]\.?P\.?S\.?.*/gi, "").trim();
+                const nomItemSansSuffixe = this._normNomItem(item).replace(/\s*\([^)]+\)|\s+[HFM]\.?P\.?S\.?.*/gi, "").trim();
                 
                 if (nomItemSansSuffixe === nomSansSuffixe) {
                     console.log(`Correspondance sans suffixe trouvée: "${nomItem}"`);
                     
                     // Mémoriser cette correspondance
+                    // Indexé par le nom du PARTANT cherché : seul le cache par chaîne
+                    // est concerné, pas le cache par item de classement.
+                    this._normCache.delete(nomUpper);
                     this.correspondancesDecouvertes[nomUpper] = nomItem;
                     
                     return {
@@ -1869,14 +1917,17 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         // STRATÉGIE 3: Vérifier si le nom est contenu dans l'autre
         for (const item of donneesClassement) {
             const nomItem = item.Nom || item.NomPostal || "";
-            const nomItemNormalise = this.normaliserNom(nomItem);
+            const nomItemNormalise = this._normNomItem(item);
             
             // Si l'un contient l'autre (par exemple "CORTEZ BANK" dans "CORTEZ BANK (GB)")
             if (nomItemNormalise.includes(nomSansSuffixe) || nomSansSuffixe.includes(nomItemNormalise)) {
                 console.log(`Correspondance par inclusion trouvée: "${nom}" avec "${nomItem}"`);
                 
                 // Mémoriser cette correspondance
-                this.correspondancesDecouvertes[nomUpper] = nomItem;
+                // Indexé par le nom du PARTANT cherché : seul le cache par chaîne
+                    // est concerné, pas le cache par item de classement.
+                    this._normCache.delete(nomUpper);
+                    this.correspondancesDecouvertes[nomUpper] = nomItem;
                 
                 return {
                     score: 0,
@@ -1893,11 +1944,14 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             
             // Recherche d'écurie simplifiée
             for (const item of donneesClassement) {
-                const nomItem = this.normaliserNom(item.Nom || item.NomPostal || "");
+                const nomItem = this._normNomItem(item);
                 if (nomItem.startsWith('ECURIE') && 
                     (nomItem.includes(nomEcurie) || nomEcurie.includes(nomItem.replace(/^ECURIE\s+/i, '').trim()))) {
                     
                     // Mémoriser cette correspondance
+                    // Indexé par le nom du PARTANT cherché : seul le cache par chaîne
+                    // est concerné, pas le cache par item de classement.
+                    this._normCache.delete(nomUpper);
                     this.correspondancesDecouvertes[nomUpper] = item.Nom || item.NomPostal;
                     
                     return {
@@ -1944,7 +1998,10 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             
             // Mémoriser cette correspondance si similarité > 70%
             if (correspondances[0].similarite > 70) {
-                this.correspondancesDecouvertes[nomUpper] = correspondances[0].item.Nom || correspondances[0].item.NomPostal;
+                // Indexé par le nom du PARTANT cherché : seul le cache par chaîne
+                    // est concerné, pas le cache par item de classement.
+                    this._normCache.delete(nomUpper);
+                    this.correspondancesDecouvertes[nomUpper] = correspondances[0].item.Nom || correspondances[0].item.NomPostal;
             }
             
             return {
@@ -2215,7 +2272,11 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             return;
         }
         
-        // Ajouter à la table de correspondance
+        // Ajouter à la table de correspondance. L'invalidation du cache de
+        // normalisation se fait ICI, au point d'écriture réel : la fonction est
+        // appelée pour chaque partant apparié, et vider le cache à l'entrée le
+        // détruisait à chaque participant.
+        this._normCache.clear(); this._normGen++;
         this.correspondanceManuelle[nomCourseTrim] = nomClassementTrim;
         console.log(`✅ Nouvelle correspondance ajoutée: "${nomCourseTrim}" -> "${nomClassementTrim}"`);
         
