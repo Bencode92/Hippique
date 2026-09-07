@@ -1341,6 +1341,16 @@
                 }
                 const raw = await r.json();
                 const files = raw.map(f => ({ name: f.name, download_url: f.download_url }));
+                // PLAFOND DUR de l'API contents : 1000 entrées, sans aucun
+                // indicateur de troncature dans la réponse. data/courses en
+                // compte davantage depuis le 13/08/2026 — la liste renvoyée
+                // s'arrête donc à cette date et TOUTES les courses suivantes
+                // sont invisibles. Une liste pile à 1000 est inexploitable :
+                // on la refuse pour laisser _index.json prendre la main.
+                if (files.length >= 1000) {
+                    console.warn(`⚠️ API GitHub tronquée à ${files.length} fichiers (plafond) — listing incomplet, on bascule sur _index.json`);
+                    return null;
+                }
                 console.log(`📋 API GitHub fresh (${files.length} fichiers)`);
                 return files;
             };
@@ -1352,10 +1362,17 @@
                 try {
                     const files = await fn();
                     if (files) {
-                        localStorage.setItem(CACHE_KEY, JSON.stringify({ t: Date.now(), files }));
+                        // L'écriture du cache est un bonus : si le quota
+                        // localStorage explose (le listing dépasse 1 100
+                        // entrées), on garde quand même le listing obtenu.
+                        try {
+                            localStorage.setItem(CACHE_KEY, JSON.stringify({ t: Date.now(), files }));
+                        } catch (eCache) {
+                            console.warn('Cache listing non écrit (quota ?) — sans conséquence', eCache);
+                        }
                         return files;
                     }
-                } catch (e) { console.warn('Source listing échouée', e); }
+                } catch (e) { console.warn(`Source listing échouée (${fn === tryIndex ? '_index.json' : 'API GitHub'})`, e); }
             }
 
             // 3) Fallback jsdelivr (API correcte : /v1/packages/ pluriel + /tree?path=)
