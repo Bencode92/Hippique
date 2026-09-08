@@ -1402,6 +1402,36 @@
 
             // Phase 2 : évaluer chaque levier (juste des lookups, très rapide)
             const levierNames = Object.keys(enriched[0].parts[0]._lev);
+
+            // ── PRÉPARATION POUR L'ANALYSE DE LEVIERS ───────────────────────
+            // La grille évalue ~14 300 formules PAR bucket, sur 16 buckets.
+            // On paie donc chaque accès une centaine de milliers de fois : les
+            // valeurs de leviers passent en Float64Array (index numérique au
+            // lieu d'un lookup par chaîne) et les stats du favori, qui ne
+            // dépendent pas de la formule, sont calculées une seule fois.
+            // Une même course appartient à plusieurs buckets : la préparation
+            // est portée par l'objet course, donc partagée.
+            const IDX_LEV = new Map(levierNames.map((L, i) => [L, i]));
+            const NLEV = levierNames.length;
+            function prepareCourses(courses) {
+                for (const c of courses) {
+                    if (c._M) continue;
+                    const N = c.parts.length;
+                    c._M = new Float64Array(N * NLEV);
+                    c._cote = new Float64Array(N);
+                    c._gagnant = new Uint8Array(N);
+                    c._sc = new Float64Array(N);
+                    c.parts.forEach((p, i) => {
+                        for (let k = 0; k < NLEV; k++) c._M[i * NLEV + k] = p._lev[levierNames[k]] || 0;
+                        c._cote[i] = parseFloat(p.cote) || 999;
+                        c._gagnant[i] = p.arrivee === 1 ? 1 : 0;
+                    });
+                    c._f1 = c.parCote[0]?.arrivee === 1 ? 1 : 0;
+                    c._f2 = c.parCote.slice(0, 2).some(p => p.arrivee === 1) ? 1 : 0;
+                    c._f3 = c.parCote.slice(0, 3).some(p => p.arrivee === 1) ? 1 : 0;
+                }
+            }
+            prepareCourses(enriched);
             const categories = { tous: enriched, sprint: [], mile: [], middle: [], staying: [] };
             enriched.forEach(c => { categories[c.dl].push(c); });
 
@@ -1409,44 +1439,49 @@
             await new Promise(r => setTimeout(r, 0));
 
             function evalLevier(courses, name) {
-                let n1=0, f1=0, f2=0, f3=0, n2=0, n3=0;
-                let coteSum=0, wins=0;
-                courses.forEach(c => {
-                    const sorted = [...c.parts].sort((a,b) => {
-                        const diff = (b._lev[name]||0) - (a._lev[name]||0);
-                        if (Math.abs(diff) > 0.001) return diff;
-                        return (parseFloat(a.cote)||999) - (parseFloat(b.cote)||999);
-                    });
-                    if (sorted[0]?.arrivee===1) { n1++; if (sorted[0].cote>1) { coteSum+=sorted[0].cote; wins++; } }
-                    if (c.parCote[0]?.arrivee===1) f1++;
-                    if (c.parCote.slice(0,2).some(p=>p.arrivee===1)) f2++;
-                    if (c.parCote.slice(0,3).some(p=>p.arrivee===1)) f3++;
-                    if (sorted.slice(0,2).some(p=>p.arrivee===1)) n2++;
-                    if (sorted.slice(0,3).some(p=>p.arrivee===1)) n3++;
-                });
-                const t = courses.length;
-                return { n1, f1, f2, f3, n2, n3, t, pN1:t?n1/t*100:0, pF1:t?f1/t*100:0, pF2:t?f2/t*100:0, pF3:t?f3/t*100:0, pN2:t?n2/t*100:0, pN3:t?n3/t*100:0, avgCote:wins>0?coteSum/wins:0 };
+                return evalCombo(courses, [name], [1]);
             }
 
             // Évaluer une combinaison de leviers avec poids
             function evalCombo(courses, names, weights) {
+                // On n'a jamais besoin du classement complet : seulement de
+                // savoir si le gagnant finit 1er, dans les 2 ou dans les 3
+                // premiers. C'est le nombre de partants qui passent DEVANT lui
+                // — une seule passe, sans tri ni tableau intermédiaire.
+                // L'ancienne version recalculait les deux scores À CHAQUE
+                // comparaison du tri, soit ~6 fois par partant.
                 let n1=0, f1=0, f2=0, f3=0, n2=0, n3=0;
                 let coteSum=0, wins=0;
-                courses.forEach(c => {
-                    const sorted = [...c.parts].sort((a,b) => {
-                        let sa=0, sb=0;
-                        names.forEach((n,i) => { sa += (a._lev[n]||0)*weights[i]; sb += (b._lev[n]||0)*weights[i]; });
-                        const diff = sb - sa;
-                        if (Math.abs(diff) > 0.001) return diff;
-                        return (parseFloat(a.cote)||999) - (parseFloat(b.cote)||999);
-                    });
-                    if (sorted[0]?.arrivee===1) { n1++; if (sorted[0].cote>1) { coteSum+=sorted[0].cote; wins++; } }
-                    if (c.parCote[0]?.arrivee===1) f1++;
-                    if (c.parCote.slice(0,2).some(p=>p.arrivee===1)) f2++;
-                    if (c.parCote.slice(0,3).some(p=>p.arrivee===1)) f3++;
-                    if (sorted.slice(0,2).some(p=>p.arrivee===1)) n2++;
-                    if (sorted.slice(0,3).some(p=>p.arrivee===1)) n3++;
-                });
+                const K = names.length;
+                const cols = new Int32Array(K);
+                for (let k = 0; k < K; k++) cols[k] = IDX_LEV.get(names[k]);
+                for (let ci = 0; ci < courses.length; ci++) {
+                    const c = courses[ci];
+                    const N = c.parts.length, M = c._M, sc = c._sc, cote = c._cote, g = c._gagnant;
+                    for (let i = 0; i < N; i++) {
+                        let sum = 0; const base = i * NLEV;
+                        for (let k = 0; k < K; k++) sum += M[base + cols[k]] * weights[k];
+                        sc[i] = sum;
+                    }
+                    // Rang du gagnant le mieux classé (dead heat géré).
+                    // Même départage que le tri d'origine : écart <= 0.001 → cote ASC.
+                    let rangMin = N, coteGagnant = 0;
+                    for (let w = 0; w < N; w++) {
+                        if (!g[w]) continue;
+                        const sw = sc[w], cw = cote[w];
+                        let rang = 0;
+                        for (let j = 0; j < N; j++) {
+                            if (j === w) continue;
+                            const d = sc[j] - sw;
+                            if (d > 0.001 || (Math.abs(d) <= 0.001 && cote[j] < cw)) rang++;
+                        }
+                        if (rang < rangMin) { rangMin = rang; coteGagnant = cw; }
+                    }
+                    if (rangMin === 0) { n1++; if (coteGagnant > 1) { coteSum += coteGagnant; wins++; } }
+                    if (rangMin <= 1) n2++;
+                    if (rangMin <= 2) n3++;
+                    f1 += c._f1; f2 += c._f2; f3 += c._f3;
+                }
                 const t = courses.length;
                 return { n1, f1, f2, f3, n2, n3, t, pN1:t?n1/t*100:0, pF1:t?f1/t*100:0, pF2:t?f2/t*100:0, pF3:t?f3/t*100:0, pN2:t?n2/t*100:0, pN3:t?n3/t*100:0, avgCote:wins>0?coteSum/wins:0 };
             }
