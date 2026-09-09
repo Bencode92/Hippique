@@ -3,8 +3,8 @@
 Scraper pré-course : capture les cotes 10 min avant le départ
 pour les hippodromes majeurs (Saint-Cloud, Longchamp, Chantilly, etc.)
 
-Tourne toutes les 15 minutes entre 11h et 17h UTC (13h-19h France).
-Vérifie si une course démarre dans les 15 prochaines minutes.
+Tourne toutes les 10 minutes entre 8h et 20h UTC (10h-22h France).
+Vérifie si une course démarre dans les 20 prochaines minutes.
 Si oui, scrape les cotes et les stocke dans data/cotes_live/
 
 Usage : python3 scraper_pre_course.py
@@ -36,8 +36,9 @@ HIPPODROMES_CIBLES = [
     'PORNICHET', 'AMIENS',
 ]
 
-# Fenêtre de capture : on scrape si la course démarre dans les 15 prochaines minutes
-FENETRE_MINUTES = 15
+# Fenêtre de capture : on scrape si la course démarre dans les 20 prochaines minutes
+# (marge volontaire : absorbe un run retardé par la file d'attente GitHub Actions)
+FENETRE_MINUTES = 20
 
 
 def api_get(endpoint, max_retries=2):

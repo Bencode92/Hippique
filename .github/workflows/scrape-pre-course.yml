@@ -2,9 +2,14 @@ name: Scrape cotes live pré-course
 
 on:
   schedule:
-    # Toutes les 15 minutes entre 11h et 17h UTC (13h-19h France)
-    # Couvre les heures de courses françaises
-    - cron: '*/15 10-18 * * *'
+    # Toutes les 10 minutes entre 8h et 20h UTC (10h-22h France, heure d'été).
+    # L'ancienne fenêtre (*/15 10-18) s'arrêtait à 20h Paris : les réunions du
+    # soir n'étaient jamais capturées. Le pas de 10 min absorbe aussi le délai
+    # de la file d'attente des runners, qui faisait échouer la condition
+    # `0 < minutes_avant <= FENETRE` et laissait des courses sans cotes.
+    # Objectif : élargir le corpus de cotes TARDIVES (T−15 min), seul signal
+    # à avoir montré un écart de calibration positif (+0,8 pt sur 192 chevaux).
+    - cron: '*/10 8-20 * * *'
   workflow_dispatch:
 
 permissions:
