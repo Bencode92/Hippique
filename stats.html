@@ -1432,8 +1432,14 @@
                 }
             }
             prepareCourses(enriched);
-            const categories = { tous: enriched, sprint: [], mile: [], middle: [], staying: [] };
-            enriched.forEach(c => { categories[c.dl].push(c); });
+            // DOUBLE COMPTAGE CORRIGÉ : `tous` était initialisé à `enriched` et les
+            // buckets coarse remplis ici, puis la boucle catDefs (plus bas) repoussait
+            // CHAQUE course une seconde fois dans `tous` et dans son bucket coarse.
+            // Les pourcentages restaient justes (numérateur et dénominateur doublaient
+            // ensemble) mais le nombre de courses affiché valait le double du réel —
+            // de quoi croire qu'on analysait deux fois plus de courses que la sélection
+            // n'en contenait. catDefs remplit désormais tous les buckets, une seule fois.
+            const categories = { tous: [], sprint: [], mile: [], middle: [], staying: [] };
 
             if (progress) progress.textContent = 'Évaluation des leviers...';
             await new Promise(r => setTimeout(r, 0));

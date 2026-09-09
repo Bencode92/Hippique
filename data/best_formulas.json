@@ -1,249 +1,275 @@
 {
   "_version": 3,
-  "_generatedAt": "2026-07-13T00:00:00.000Z",
-  "_source": "stats.html Optimale PREMIUM (5 hippos: Chantilly/Saint-Cloud/Longchamp/Deauville/+1, 738 courses, Top3)",
+  "_generatedAt": "2026-09-08T00:00:00.000Z",
+  "_source": "stats.html Optimale PREMIUM (7 hippos: Longchamp/Saint-Cloud/Chantilly/Fontainebleau/Deauville/Lyon-Parilly, 628 courses depuis 2026-04-16, Top3). Compteurs tous/sprint/mile/middle/staying divises par 2 (double comptage stats.html, corrige par le meme commit).",
   "tous": {
     "leviers": [
       "Cote (1/cote)",
+      "Valeur FG",
       "Jk TauxV"
     ],
     "poids": [
-      0.9,
-      0.1
-    ],
-    "top1": 35.50135501355013,
-    "top2": 51.76151761517615,
-    "top3": 64.22764227642277,
-    "courses": 738
-  },
-  "sprint": {
-    "leviers": [
-      "Cote (1/cote)",
-      "Cote ref",
-      "Dérive cote",
-      "Ch TauxP"
-    ],
-    "poids": [
-      0.1,
-      0.6,
+      0.7,
       0.1,
       0.2
     ],
-    "top1": 41.509433962264154,
-    "top2": 58.490566037735846,
-    "top3": 73.58490566037736,
-    "courses": 106
+    "top1": 33.59872611464968,
+    "top2": 50.318471337579616,
+    "top3": 64.64968152866241,
+    "courses": 628
   },
-  "mile": {
+  "sprint": {
     "leviers": [
       "Cote ref",
-      "Cote (1/cote)",
-      "Jk TauxV",
-      "Ch TauxP"
+      "Dérive cote",
+      "Ch TauxP",
+      "Jk TauxV"
     ],
     "poids": [
-      0.3,
-      0.5,
+      0.6,
       0.1,
+      0.2,
       0.1
     ],
-    "top1": 40.458015267175576,
-    "top2": 51.14503816793893,
-    "top3": 68.70229007633588,
-    "courses": 262
-  },
-  "middle": {
-    "leviers": [
-      "Cote (1/cote)",
-      "Cote ref",
-      "Ch GainMoy"
-    ],
-    "poids": [
-      0.8,
-      0.1,
-      0.1
-    ],
-    "top1": 33.04347826086956,
-    "top2": 47.82608695652174,
-    "top3": 60.86956521739131,
-    "courses": 230
-  },
-  "staying": {
-    "leviers": [
-      "Cote ref",
-      "Valeur FG",
-      "Jk Rang"
-    ],
-    "poids": [
-      0.4,
-      0.5,
-      0.1
-    ],
-    "top1": 34.285714285714285,
-    "top2": 58.57142857142858,
-    "top3": 68.57142857142857,
-    "courses": 140
+    "top1": 33.33333333333333,
+    "top2": 57.291666666666664,
+    "top3": 69.79166666666666,
+    "courses": 96
   },
   "1000m": {
     "leviers": [
       "Cote (1/cote)",
-      "Cote ref",
-      "TauxP indiv"
+      "Jk TauxV",
+      "Combo Jk*Ent",
+      "NbVictoires"
     ],
     "poids": [
-      0.4,
       0.5,
+      0.2,
+      0.2,
       0.1
     ],
-    "top1": 66.66666666666666,
-    "top2": 100,
-    "top3": 100,
-    "courses": 9
+    "top1": 69.23076923076923,
+    "top2": 84.61538461538461,
+    "top3": 100.0,
+    "courses": 13
   },
   "1200m": {
     "leviers": [
-      "Ch Rang",
       "Cote ref",
       "Dérive cote",
       "Ch TauxP"
     ],
     "poids": [
-      0.2,
-      0.4,
-      0.1,
-      0.3
-    ],
-    "top1": 30.23255813953488,
-    "top2": 55.81395348837209,
-    "top3": 72.09302325581395,
-    "courses": 43
-  },
-  "1400m": {
-    "leviers": [
-      "Cote (1/cote)",
-      "Dérive cote",
-      "Valeur FG"
-    ],
-    "poids": [
-      0.2,
-      0.1,
-      0.7
-    ],
-    "top1": 17.391304347826086,
-    "top2": 47.82608695652174,
-    "top3": 60.86956521739131,
-    "courses": 69
-  },
-  "1500m": {
-    "leviers": [
-      "Cote ref",
-      "NbVictoires"
-    ],
-    "poids": [
-      0.6,
-      0.4
-    ],
-    "top1": 66.66666666666666,
-    "top2": 100,
-    "top3": 100,
-    "courses": 6
-  },
-  "1600m": {
-    "leviers": [
-      "Cote (1/cote)",
-      "Cote ref"
-    ],
-    "poids": [
       0.7,
-      0.3
+      0.1,
+      0.2
     ],
-    "top1": 44.642857142857146,
-    "top2": 66.07142857142857,
-    "top3": 78.57142857142857,
-    "courses": 56
+    "top1": 35.38461538461539,
+    "top2": 53.84615384615385,
+    "top3": 70.76923076923077,
+    "courses": 65
   },
-  "1800m": {
+  "1300m": {
     "leviers": [
-      "Cote ref",
-      "TauxV indiv",
+      "Ch TauxP",
       "Ch GainMoy",
-      "Jk Rang"
+      "Cote (1/cote)",
+      "TauxV indiv"
     ],
     "poids": [
+      0.2,
       0.2,
       0.5,
-      0.2,
       0.1
     ],
-    "top1": 40,
-    "top2": 53.333333333333336,
-    "top3": 66.66666666666666,
-    "courses": 15
+    "top1": 16.666666666666664,
+    "top2": 55.55555555555556,
+    "top3": 72.22222222222221,
+    "courses": 18
   },
-  "2000m": {
+  "mile": {
     "leviers": [
       "Cote (1/cote)",
+      "Cote ref",
       "Valeur FG",
       "Jk TauxV"
     ],
     "poids": [
-      0.5,
       0.4,
+      0.1,
+      0.1,
+      0.4
+    ],
+    "top1": 33.0188679245283,
+    "top2": 54.24528301886793,
+    "top3": 67.45283018867924,
+    "courses": 212
+  },
+  "1400m": {
+    "leviers": [
+      "Cote (1/cote)",
+      "Valeur FG",
+      "Combo Jk*Ent"
+    ],
+    "poids": [
+      0.3,
+      0.5,
+      0.2
+    ],
+    "top1": 28.915662650602407,
+    "top2": 43.373493975903614,
+    "top3": 65.06024096385542,
+    "courses": 83
+  },
+  "1500m": {
+    "leviers": [
+      "Dérive cote",
+      "Cote ref",
+      "Jk TauxV",
+      "Jk Rang"
+    ],
+    "poids": [
+      0.1,
+      0.5,
+      0.1,
+      0.3
+    ],
+    "top1": 41.17647058823529,
+    "top2": 64.70588235294117,
+    "top3": 76.47058823529412,
+    "courses": 17
+  },
+  "1600m": {
+    "leviers": [
+      "Cote (1/cote)",
+      "Cote ref",
+      "Valeur FG",
+      "Jk TauxV"
+    ],
+    "poids": [
+      0.4,
+      0.1,
+      0.1,
+      0.4
+    ],
+    "top1": 34.82142857142857,
+    "top2": 61.60714285714286,
+    "top3": 75.0,
+    "courses": 112
+  },
+  "middle": {
+    "leviers": [
+      "Cote (1/cote)",
+      "Valeur FG"
+    ],
+    "poids": [
+      0.5,
+      0.5
+    ],
+    "top1": 32.97872340425532,
+    "top2": 48.40425531914894,
+    "top3": 62.76595744680851,
+    "courses": 188
+  },
+  "1800m": {
+    "leviers": [
+      "NbVictoires",
+      "TauxV indiv",
+      "Forme récente"
+    ],
+    "poids": [
+      0.1,
+      0.8,
       0.1
     ],
-    "top1": 25.925925925925924,
-    "top2": 43.20987654320987,
-    "top3": 59.25925925925925,
-    "courses": 81
+    "top1": 31.57894736842105,
+    "top2": 63.1578947368421,
+    "top3": 68.42105263157895,
+    "courses": 19
+  },
+  "2000m": {
+    "leviers": [
+      "Cote (1/cote)",
+      "Valeur FG"
+    ],
+    "poids": [
+      0.5,
+      0.5
+    ],
+    "top1": 29.72972972972973,
+    "top2": 45.94594594594595,
+    "top3": 62.16216216216216,
+    "courses": 148
   },
   "2100m": {
     "leviers": [
       "Cote (1/cote)",
       "Valeur FG",
-      "Dérive cote",
-      "Jk TauxV"
+      "Jk TauxV",
+      "Dérive cote"
     ],
     "poids": [
       0.5,
       0.1,
-      0.1,
-      0.3
+      0.3,
+      0.1
     ],
-    "top1": 57.89473684210527,
-    "top2": 73.68421052631578,
-    "top3": 78.94736842105263,
-    "courses": 19
+    "top1": 57.14285714285714,
+    "top2": 76.19047619047619,
+    "top3": 80.95238095238095,
+    "courses": 21
   },
-  "2400m": {
+  "staying": {
     "leviers": [
+      "Cote (1/cote)",
       "Cote ref",
       "Valeur FG",
-      "Jk GainMoy"
+      "Musique"
     ],
     "poids": [
-      0.5,
+      0.4,
+      0.1,
       0.4,
       0.1
     ],
-    "top1": 30.909090909090907,
-    "top2": 52.72727272727272,
-    "top3": 65.45454545454545,
-    "courses": 55
+    "top1": 34.090909090909086,
+    "top2": 51.515151515151516,
+    "top3": 68.93939393939394,
+    "courses": 132
+  },
+  "2400m": {
+    "leviers": [
+      "Cote (1/cote)",
+      "Valeur FG",
+      "TauxV indiv"
+    ],
+    "poids": [
+      0.3,
+      0.6,
+      0.1
+    ],
+    "top1": 34.90566037735849,
+    "top2": 51.886792452830186,
+    "top3": 70.75471698113208,
+    "courses": 106
   },
   "3000m+": {
     "leviers": [
       "Cote (1/cote)",
       "Cote ref",
-      "Cravache Rang"
+      "Musique",
+      "Jk TauxP"
     ],
     "poids": [
-      0.6,
+      0.2,
+      0.3,
       0.1,
-      0.3
+      0.4
     ],
-    "top1": 46.666666666666664,
-    "top2": 80,
-    "top3": 86.66666666666667,
-    "courses": 15
+    "top1": 42.30769230769231,
+    "top2": 69.23076923076923,
+    "top3": 80.76923076923077,
+    "courses": 26
   }
 }
