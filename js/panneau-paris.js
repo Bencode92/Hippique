@@ -95,7 +95,19 @@ const PanneauParis = (() => {
                   divAttendu: g === undefined ? null : g / p,
                   ev: g === undefined ? null : g - 1 });
     }
-    const tri = (arr) => arr.filter((x) => x.ev !== null).sort((a, b) => b.ev - a.ev);
+    // Tri par PROBABILITÉ, pas par espérance : les espérances des meilleures
+    // compositions tiennent en moins d'un point d'écart, très en deçà du bruit
+    // de mesure, et trier dessus ferait passer un pari à 3 % devant un pari à
+    // 20 % pour un dixième de point. Le champ `meilleureEv` marque la meilleure
+    // espérance de la liste, qui est l'information utile.
+    const tri = (arr) => {
+      const l = arr.filter((x) => x.ev !== null).sort((a, b) => b.p - a.p);
+      if (l.length) {
+        const max = Math.max(...l.map((x) => x.ev));
+        l.forEach((x) => { x.meilleureEv = x.ev === max; });
+      }
+      return l;
+    };
     return { simple: tri(simple), couple: tri(couple), trio: tri(trio),
              prelevement: 0.165 };
   }

@@ -1281,6 +1281,7 @@
     </div>
 
     <!-- Module ranking-loader (doit être chargé avant le script principal) -->
+    <script src="js/panneau-paris.js?v=1"></script>
     <script src="js/ranking-loader.js?v=19"></script>
 
     <!-- Module de chargement des courses -->
@@ -1467,6 +1468,50 @@
             });
             await Promise.all(fetches);
             console.log(`✅ Cotes live appliquées : ${updatedCount} participants mis à jour`);
+        }
+
+        // ── PANNEAU DE DÉCISION ─────────────────────────────────────────
+        // Probabilité et ESPÉRANCE de chaque pari, calibrées sur 13 242 courses
+        // FR plat 2022-2025 (js/panneau-paris.js). L'espérance est négative
+        // partout — le prélèvement mesuré est de 16,5 %. Ce panneau ne désigne
+        // pas un pari gagnant : il montre lequel coûte le moins cher, et l'écart
+        // entre le meilleur et le pire choix atteint 34 points.
+        function renderPanneauParis(ancre, participants) {
+            if (typeof PanneauParis === 'undefined') return;
+            const pan = PanneauParis.pourCourse(participants || [], { profondeur: 5 });
+            if (!pan) return;
+            const pct = v => (v * 100).toFixed(1) + '%';
+            const ev = v => {
+                const c = v > -0.15 ? '#5fffaf' : v > -0.25 ? '#e9d18c' : '#ff8a7a';
+                return `<span style="color:${c};font-variant-numeric:tabular-nums">${(v * 100).toFixed(1)}%</span>`;
+            };
+            const ligne = x => `<tr>
+                <td style="padding:2px 8px 2px 0">${x.meilleureEv ? '<span title="meilleure espérance de la liste" style="color:var(--gold)">\u25B8</span> ' : ''}${x.chevaux.join(' + ')}</td>
+                <td style="padding:2px 8px;text-align:right;font-variant-numeric:tabular-nums;opacity:.75">${pct(x.p)}</td>
+                <td style="padding:2px 0;text-align:right">${ev(x.ev)}</td></tr>`;
+            const col = (titre, arr) => `<div style="min-width:210px;flex:1">
+                <div style="font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;opacity:.6;margin-bottom:.3rem">${titre}</div>
+                <table style="width:100%;font-size:.84rem;border-collapse:collapse">
+                    <tr style="opacity:.5;font-size:.72rem"><td></td><td style="text-align:right">proba</td><td style="text-align:right">espérance</td></tr>
+                    ${arr.slice(0, 3).map(ligne).join('')}
+                </table></div>`;
+            const el = document.createElement('div');
+            el.className = 'panneau-paris';
+            el.style.cssText = 'margin:0 0 .9rem;padding:.7rem .9rem;background:rgba(20,60,58,.35);border:1px solid rgba(233,209,140,.18);border-radius:6px';
+            el.innerHTML = `
+                <div style="display:flex;gap:1.4rem;flex-wrap:wrap">
+                    ${col('Simple gagnant', pan.simple)}
+                    ${col('Couplé gagnant', pan.couple)}
+                    ${col('Trio', pan.trio)}
+                </div>
+                <div style="margin-top:.5rem;font-size:.74rem;opacity:.55;line-height:1.4">
+                    Classé par probabilité. \u25B8 marque la meilleure espérance, pour 1 € misé,
+                    mesurée sur 13 242 courses 2022-2025. Prélèvement 16,5 % : aucune espérance
+                    n'est positive, et les écarts inférieurs à 1 point sont dans le bruit.
+                </div>`;
+            const doublon = ancre.parentNode.querySelector('.panneau-paris');
+            if (doublon) doublon.remove();
+            ancre.parentNode.insertBefore(el, ancre.nextSibling);
         }
 
         // Module de chargement des courses
@@ -2369,6 +2414,10 @@
                             <i class="fas fa-flask"></i> Ranking optimal (stats)
                         </a>`;
                     tableWrapper.parentNode.insertBefore(weightsInfo, tableWrapper);
+
+                    // Panneau de décision : proba et espérance par type de pari
+                    try { renderPanneauParis(weightsInfo, courseContext.participants); }
+                    catch (e) { console.warn('Panneau paris indisponible', e); }
 
                     // Précalcul des rangs supplémentaires : Cote, Actuel, Optimal
                     const partKey = p => p['n°'] || p.numero || p.n;
