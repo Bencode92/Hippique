@@ -56,6 +56,34 @@ const PanneauParis = (() => {
   };
   const PRELEVEMENT = { gagnant: 0.14, couple: 0.26, trio: 0.31, deuxSurQuatre: 0.26 };
 
+  // Quel instrument selon l'OUVERTURE de la course, mesuré par la probabilité
+  // implicite du favori. Gain moyen encaissé pour 1 € misé, sur 14 547 courses.
+  // Le choix qui ressort de chaque profil est stable entre 2022-2023 et
+  // 2024-2026 : couplé en course fermée, 2 sur 4 en course moyenne, simple en
+  // course ouverte — où le couplé s'effondre à -33 %.
+  //   simple   = le favori seul
+  //   couple   = couplé gagnant sur les deux favoris ; couple02 = favori + 3e
+  //   d4 / d402 = 2 sur 4, mêmes paires
+  //   trio     = les trois premiers du marché
+  const PROFILS = {
+    'course fermée': { pMin:0.28, pMax:1.01, n:4555, simple:0.8999,couple:0.9547,couple02:0.8705,d4:0.936,d402:0.9404,trio:0.7938 },
+    'course moyenne': { pMin:0.22, pMax:0.28, n:4050, simple:0.8622,couple:0.8606,couple02:0.8314,d4:0.9299,d402:0.9045,trio:0.7772 },
+    'course assez ouverte': { pMin:0.17, pMax:0.22, n:4042, simple:0.8455,couple:0.9009,couple02:0.7426,d4:0.8408,d402:0.8806,trio:0.6466 },
+    'course ouverte': { pMin:0, pMax:0.17, n:1900, simple:0.8926,couple:0.6713,couple02:0.9472,d4:0.7826,d402:0.8738,trio:0.4128 },
+  };
+  const LIB = { simple: 'simple gagnant', couple: 'couplé gagnant',
+                couple02: 'couplé gagnant (favori + 3e)', d4: '2 sur 4',
+                d402: '2 sur 4 (favori + 3e)', trio: 'trio' };
+  const RANGS = { simple: [0], couple: [0, 1], couple02: [0, 2],
+                  d4: [0, 1], d402: [0, 2], trio: [0, 1, 2] };
+
+  /** Profil d'ouverture d'après la probabilité corrigée du favori. */
+  function profilCourse(pFavori) {
+    for (const [nom, d] of Object.entries(PROFILS))
+      if (pFavori >= d.pMin && pFavori < d.pMax) return { nom, ...d };
+    return null;
+  }
+
   const ratio = (p) => (CORRECTION.find(([lo, hi]) => p >= lo && p < hi) || [0, 0, 1])[2];
 
   /** Probabilités de victoire corrigées, renormalisées à 1. */
@@ -139,21 +167,36 @@ const PanneauParis = (() => {
         trio.push({ pari: 'trio', chevaux: [nom(parts[i]), nom(parts[j]), nom(parts[l])],
                     rangs: [i, j, l], p: pTrio(P, i, j, l), ev: ev('trio', [i, j, l]), exact: false });
     }
+    // Profil de la course et instrument qui en ressort
+    const prof = profilCourse(P[0]);
+    let reco = null;
+    if (prof) {
+      const cles = Object.keys(LIB).filter((k) => typeof prof[k] === 'number');
+      const meilleur = cles.reduce((a, b) => (prof[b] > prof[a] ? b : a));
+      const rangs = RANGS[meilleur];
+      if (rangs.every((r) => r < parts.length)) {
+        reco = {
+          pari: LIB[meilleur], profil: prof.nom,
+          chevaux: rangs.map((r) => nom(parts[r])),
+          ev: prof[meilleur] - 1,
+          pourquoi: `${prof.nom} — sur ${prof.n.toLocaleString('fr-FR')} courses de ce profil,`
+                  + ` c'est l'instrument le moins coûteux (${((prof[meilleur] - 1) * 100).toFixed(1)} %)`,
+        };
+      }
+    }
     const propre = (a) => a.filter((x) => x.ev !== null && isFinite(x.ev))
                            .sort((x, y) => y.p - x.p);
     const S = propre(simple), C = propre(couple), T = propre(trio), D = propre(d4);
-    const tous = [...S, ...C, ...T, ...D];
-    const best = tous.reduce((a, b) => (b.ev > a.ev ? b : a), tous[0]);
     const marqueMeilleur = (l) => { if (!l.length) return; const m = Math.max(...l.map((x) => x.ev));
                                     l.forEach((x) => { x.meilleureEv = x.ev === m; }); };
     [S, C, T, D].forEach(marqueMeilleur);
     return {
       simple: S, couple: C, trio: T, deuxSurQuatre: D,
-      recommandation: best && {
-        pari: best.pari, chevaux: best.chevaux, p: best.p, ev: best.ev,
-        pourquoi: `${(best.p * 100).toFixed(1)} % de chances, espérance ${(best.ev * 100).toFixed(1)} %`
-                + ` — le moins coûteux des ${tous.length} paris possibles de cette course`,
-      },
+      profil: prof,
+      // La recommandation vient de la table PAR PROFIL, mesurée et stable entre
+      // les deux périodes — et non du minimum des 35 espérances de la course,
+      // qui serait le maximum d'un tirage et donc optimiste.
+      recommandation: reco,
       prelevement: PRELEVEMENT,
     };
   }

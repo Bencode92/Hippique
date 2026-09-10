@@ -1,0 +1,145 @@
+{
+  "_doc": "Gain moyen encaissé pour 1 € misé, par profil d'ouverture de la course (probabilité implicite du favori) et par instrument. Mesuré sur data/histo + data/rapports, 8 partants et plus, Σ(1/cote) dans [1,03 ; 1,60]. Le choix qui ressort de chaque profil est stable entre 2022-2023 et 2024-2026.",
+  "profils": {
+    "fermee": {
+      "p_min": 0.28,
+      "p_max": 1.01,
+      "n": 4555,
+      "simple": {
+        "gain": 0.8999,
+        "se": 1.7,
+        "n": 4555
+      },
+      "couple": {
+        "gain": 0.9547,
+        "se": 3.2,
+        "n": 4555
+      },
+      "couple02": {
+        "gain": 0.8705,
+        "se": 3.8,
+        "n": 4555
+      },
+      "d4": {
+        "gain": 0.936,
+        "se": 2.2,
+        "n": 2508
+      },
+      "d402": {
+        "gain": 0.9404,
+        "se": 2.8,
+        "n": 2508
+      },
+      "trio": {
+        "gain": 0.7938,
+        "se": 3.7,
+        "n": 4534
+      }
+    },
+    "moyenne": {
+      "p_min": 0.22,
+      "p_max": 0.28,
+      "n": 4050,
+      "simple": {
+        "gain": 0.8622,
+        "se": 2.3,
+        "n": 4050
+      },
+      "couple": {
+        "gain": 0.8606,
+        "se": 4.1,
+        "n": 4050
+      },
+      "couple02": {
+        "gain": 0.8314,
+        "se": 4.8,
+        "n": 4050
+      },
+      "d4": {
+        "gain": 0.9299,
+        "se": 2.5,
+        "n": 3104
+      },
+      "d402": {
+        "gain": 0.9045,
+        "se": 3.0,
+        "n": 3104
+      },
+      "trio": {
+        "gain": 0.7772,
+        "se": 5.5,
+        "n": 3961
+      }
+    },
+    "assez_ouverte": {
+      "p_min": 0.17,
+      "p_max": 0.22,
+      "n": 4042,
+      "simple": {
+        "gain": 0.8455,
+        "se": 2.7,
+        "n": 4042
+      },
+      "couple": {
+        "gain": 0.9009,
+        "se": 5.1,
+        "n": 4042
+      },
+      "couple02": {
+        "gain": 0.7426,
+        "se": 5.0,
+        "n": 4042
+      },
+      "d4": {
+        "gain": 0.8408,
+        "se": 2.6,
+        "n": 3783
+      },
+      "d402": {
+        "gain": 0.8806,
+        "se": 3.1,
+        "n": 3783
+      },
+      "trio": {
+        "gain": 0.6466,
+        "se": 6.1,
+        "n": 3796
+      }
+    },
+    "ouverte": {
+      "p_min": 0,
+      "p_max": 0.17,
+      "n": 1900,
+      "simple": {
+        "gain": 0.8926,
+        "se": 4.7,
+        "n": 1900
+      },
+      "couple": {
+        "gain": 0.6713,
+        "se": 7.7,
+        "n": 1900
+      },
+      "couple02": {
+        "gain": 0.9472,
+        "se": 10.9,
+        "n": 1900
+      },
+      "d4": {
+        "gain": 0.7826,
+        "se": 4.3,
+        "n": 1889
+      },
+      "d402": {
+        "gain": 0.8738,
+        "se": 5.4,
+        "n": 1889
+      },
+      "trio": {
+        "gain": 0.4128,
+        "se": 8.4,
+        "n": 1612
+      }
+    }
+  }
+}
