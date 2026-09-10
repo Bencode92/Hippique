@@ -1,0 +1,249 @@
+{
+  "_version": 3,
+  "_generatedAt": "2026-07-13T00:00:00.000Z",
+  "_source": "stats.html Optimale PREMIUM (5 hippos: Chantilly/Saint-Cloud/Longchamp/Deauville/+1, 738 courses, Top3)",
+  "tous": {
+    "leviers": [
+      "Cote (1/cote)",
+      "Jk TauxV"
+    ],
+    "poids": [
+      0.9,
+      0.1
+    ],
+    "top1": 35.50135501355013,
+    "top2": 51.76151761517615,
+    "top3": 64.22764227642277,
+    "courses": 738
+  },
+  "sprint": {
+    "leviers": [
+      "Cote (1/cote)",
+      "Cote ref",
+      "Dérive cote",
+      "Ch TauxP"
+    ],
+    "poids": [
+      0.1,
+      0.6,
+      0.1,
+      0.2
+    ],
+    "top1": 41.509433962264154,
+    "top2": 58.490566037735846,
+    "top3": 73.58490566037736,
+    "courses": 106
+  },
+  "mile": {
+    "leviers": [
+      "Cote ref",
+      "Cote (1/cote)",
+      "Jk TauxV",
+      "Ch TauxP"
+    ],
+    "poids": [
+      0.3,
+      0.5,
+      0.1,
+      0.1
+    ],
+    "top1": 40.458015267175576,
+    "top2": 51.14503816793893,
+    "top3": 68.70229007633588,
+    "courses": 262
+  },
+  "middle": {
+    "leviers": [
+      "Cote (1/cote)",
+      "Cote ref",
+      "Ch GainMoy"
+    ],
+    "poids": [
+      0.8,
+      0.1,
+      0.1
+    ],
+    "top1": 33.04347826086956,
+    "top2": 47.82608695652174,
+    "top3": 60.86956521739131,
+    "courses": 230
+  },
+  "staying": {
+    "leviers": [
+      "Cote ref",
+      "Valeur FG",
+      "Jk Rang"
+    ],
+    "poids": [
+      0.4,
+      0.5,
+      0.1
+    ],
+    "top1": 34.285714285714285,
+    "top2": 58.57142857142858,
+    "top3": 68.57142857142857,
+    "courses": 140
+  },
+  "1000m": {
+    "leviers": [
+      "Cote (1/cote)",
+      "Cote ref",
+      "TauxP indiv"
+    ],
+    "poids": [
+      0.4,
+      0.5,
+      0.1
+    ],
+    "top1": 66.66666666666666,
+    "top2": 100,
+    "top3": 100,
+    "courses": 9
+  },
+  "1200m": {
+    "leviers": [
+      "Ch Rang",
+      "Cote ref",
+      "Dérive cote",
+      "Ch TauxP"
+    ],
+    "poids": [
+      0.2,
+      0.4,
+      0.1,
+      0.3
+    ],
+    "top1": 30.23255813953488,
+    "top2": 55.81395348837209,
+    "top3": 72.09302325581395,
+    "courses": 43
+  },
+  "1400m": {
+    "leviers": [
+      "Cote (1/cote)",
+      "Dérive cote",
+      "Valeur FG"
+    ],
+    "poids": [
+      0.2,
+      0.1,
+      0.7
+    ],
+    "top1": 17.391304347826086,
+    "top2": 47.82608695652174,
+    "top3": 60.86956521739131,
+    "courses": 69
+  },
+  "1500m": {
+    "leviers": [
+      "Cote ref",
+      "NbVictoires"
+    ],
+    "poids": [
+      0.6,
+      0.4
+    ],
+    "top1": 66.66666666666666,
+    "top2": 100,
+    "top3": 100,
+    "courses": 6
+  },
+  "1600m": {
+    "leviers": [
+      "Cote (1/cote)",
+      "Cote ref"
+    ],
+    "poids": [
+      0.7,
+      0.3
+    ],
+    "top1": 44.642857142857146,
+    "top2": 66.07142857142857,
+    "top3": 78.57142857142857,
+    "courses": 56
+  },
+  "1800m": {
+    "leviers": [
+      "Cote ref",
+      "TauxV indiv",
+      "Ch GainMoy",
+      "Jk Rang"
+    ],
+    "poids": [
+      0.2,
+      0.5,
+      0.2,
+      0.1
+    ],
+    "top1": 40,
+    "top2": 53.333333333333336,
+    "top3": 66.66666666666666,
+    "courses": 15
+  },
+  "2000m": {
+    "leviers": [
+      "Cote (1/cote)",
+      "Valeur FG",
+      "Jk TauxV"
+    ],
+    "poids": [
+      0.5,
+      0.4,
+      0.1
+    ],
+    "top1": 25.925925925925924,
+    "top2": 43.20987654320987,
+    "top3": 59.25925925925925,
+    "courses": 81
+  },
+  "2100m": {
+    "leviers": [
+      "Cote (1/cote)",
+      "Valeur FG",
+      "Dérive cote",
+      "Jk TauxV"
+    ],
+    "poids": [
+      0.5,
+      0.1,
+      0.1,
+      0.3
+    ],
+    "top1": 57.89473684210527,
+    "top2": 73.68421052631578,
+    "top3": 78.94736842105263,
+    "courses": 19
+  },
+  "2400m": {
+    "leviers": [
+      "Cote ref",
+      "Valeur FG",
+      "Jk GainMoy"
+    ],
+    "poids": [
+      0.5,
+      0.4,
+      0.1
+    ],
+    "top1": 30.909090909090907,
+    "top2": 52.72727272727272,
+    "top3": 65.45454545454545,
+    "courses": 55
+  },
+  "3000m+": {
+    "leviers": [
+      "Cote (1/cote)",
+      "Cote ref",
+      "Cravache Rang"
+    ],
+    "poids": [
+      0.6,
+      0.1,
+      0.3
+    ],
+    "top1": 46.666666666666664,
+    "top2": 80,
+    "top3": 86.66666666666667,
+    "courses": 15
+  }
+}

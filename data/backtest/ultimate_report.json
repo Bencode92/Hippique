@@ -1,0 +1,140 @@
+{
+  "date": "2026-04-10T09:41:44.828Z",
+  "configs_tested": 78,
+  "top10": [
+    {
+      "name": "chevalV_SEUL",
+      "top1": 100,
+      "top2": 100,
+      "favTop1": 36.8,
+      "favTop2": 57.5,
+      "weights": {
+        "chevalV": 1
+      }
+    },
+    {
+      "name": "chevalP_SEUL",
+      "top1": 100,
+      "top2": 100,
+      "favTop1": 36.8,
+      "favTop2": 57.5,
+      "weights": {
+        "chevalP": 1
+      }
+    },
+    {
+      "name": "formeCheval_SEUL",
+      "top1": 100,
+      "top2": 100,
+      "favTop1": 36.8,
+      "favTop2": 57.5,
+      "weights": {
+        "formeCheval": 1
+      }
+    },
+    {
+      "name": "distCheval_SEUL",
+      "top1": 100,
+      "top2": 100,
+      "favTop1": 36.8,
+      "favTop2": 57.5,
+      "weights": {
+        "distCheval": 1
+      }
+    },
+    {
+      "name": "experience_SEUL",
+      "top1": 98.9,
+      "top2": 100,
+      "favTop1": 36.8,
+      "favTop2": 57.5,
+      "weights": {
+        "experience": 1
+      }
+    },
+    {
+      "name": "distJockey_SEUL",
+      "top1": 72.4,
+      "top2": 85.1,
+      "favTop1": 36.8,
+      "favTop2": 57.5,
+      "weights": {
+        "distJockey": 1
+      }
+    },
+    {
+      "name": "poids_SEUL",
+      "top1": 58.6,
+      "top2": 65.5,
+      "favTop1": 36.8,
+      "favTop2": 57.5,
+      "weights": {
+        "poids": 1
+      }
+    },
+    {
+      "name": "corde_SEUL",
+      "top1": 55.2,
+      "top2": 59.8,
+      "favTop1": 36.8,
+      "favTop2": 57.5,
+      "weights": {
+        "corde": 1
+      }
+    },
+    {
+      "name": "coteProba_SEUL",
+      "top1": 36.8,
+      "top2": 57.5,
+      "favTop1": 36.8,
+      "favTop2": 57.5,
+      "weights": {
+        "coteProba": 1
+      }
+    },
+    {
+      "name": "COTE_PURE",
+      "top1": 36.8,
+      "top2": 57.5,
+      "favTop1": 36.8,
+      "favTop2": 57.5,
+      "weights": {
+        "coteProba": 1
+      }
+    }
+  ],
+  "beatFavoriTop1": [
+    "chevalV_SEUL",
+    "chevalP_SEUL",
+    "formeCheval_SEUL",
+    "distCheval_SEUL",
+    "experience_SEUL",
+    "distJockey_SEUL",
+    "poids_SEUL",
+    "corde_SEUL"
+  ],
+  "beatFavoriTop2": [
+    "chevalV_SEUL",
+    "chevalP_SEUL",
+    "formeCheval_SEUL",
+    "distCheval_SEUL",
+    "experience_SEUL",
+    "distJockey_SEUL",
+    "poids_SEUL",
+    "corde_SEUL"
+  ],
+  "testResult": {
+    "config": "chevalV_SEUL",
+    "total": 87,
+    "top1": 90.8,
+    "top2": 93.1,
+    "top3": 93.1,
+    "favTop1": 31,
+    "favTop2": 48.3,
+    "beatFavTop1": 53,
+    "beatFavTop2": 40,
+    "weights": {
+      "chevalV": 1
+    }
+  }
+}

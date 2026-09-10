@@ -1,0 +1,122 @@
+{
+  "date": "2026-04-17T08:35:30.753Z",
+  "method": "walk-forward 60/40",
+  "results": {
+    "sprint": {
+      "trainSize": 72,
+      "testSize": 49,
+      "favoriTest": {
+        "top1": 28.57142857142857,
+        "top2": 55.10204081632652,
+        "top3": 71.42857142857143
+      },
+      "actuelleTest": {
+        "top1": 26.53061224489796,
+        "top2": 44.89795918367347,
+        "top3": 65.3061224489796
+      },
+      "optimaleTest": {
+        "top1": 53.06122448979592,
+        "top2": 61.224489795918366,
+        "top3": 73.46938775510205,
+        "avgCoteWin": 4.961538461538462
+      },
+      "bestWeights": {
+        "wMus": 0,
+        "wCote": 0,
+        "wVal": 1,
+        "wIndivV": 0,
+        "wPelotonSmall": 0,
+        "wPelotonLarge": 0
+      },
+      "beatsFavori": true
+    },
+    "mile": {
+      "trainSize": 97,
+      "testSize": 66,
+      "favoriTest": {
+        "top1": 27.27272727272727,
+        "top2": 54.54545454545454,
+        "top3": 72.72727272727273
+      },
+      "actuelleTest": {
+        "top1": 24.242424242424242,
+        "top2": 51.515151515151516,
+        "top3": 60.60606060606061
+      },
+      "optimaleTest": {
+        "top1": 27.27272727272727,
+        "top2": 54.54545454545454,
+        "top3": 69.6969696969697,
+        "avgCoteWin": 3.011111111111111
+      },
+      "bestWeights": {
+        "wMus": 0,
+        "wCote": 0.6,
+        "wVal": 0.4,
+        "wIndivV": 0,
+        "wPelotonSmall": 0.15,
+        "wPelotonLarge": 0.15
+      },
+      "beatsFavori": false
+    },
+    "middle": {
+      "trainSize": 105,
+      "testSize": 70,
+      "favoriTest": {
+        "top1": 35.714285714285715,
+        "top2": 51.42857142857142,
+        "top3": 67.14285714285714
+      },
+      "actuelleTest": {
+        "top1": 34.285714285714285,
+        "top2": 51.42857142857142,
+        "top3": 64.28571428571429
+      },
+      "optimaleTest": {
+        "top1": 32.857142857142854,
+        "top2": 44.285714285714285,
+        "top3": 52.85714285714286,
+        "avgCoteWin": 7.686956521739129
+      },
+      "bestWeights": {
+        "wMus": 0.3,
+        "wCote": 0,
+        "wVal": 0,
+        "wIndivV": 0.7,
+        "wPelotonSmall": 0,
+        "wPelotonLarge": 0
+      },
+      "beatsFavori": false
+    },
+    "staying": {
+      "trainSize": 95,
+      "testSize": 64,
+      "favoriTest": {
+        "top1": 32.8125,
+        "top2": 50,
+        "top3": 60.9375
+      },
+      "actuelleTest": {
+        "top1": 39.0625,
+        "top2": 53.125,
+        "top3": 68.75
+      },
+      "optimaleTest": {
+        "top1": 42.1875,
+        "top2": 51.5625,
+        "top3": 65.625,
+        "avgCoteWin": 5.911111111111112
+      },
+      "bestWeights": {
+        "wMus": 1,
+        "wCote": 0,
+        "wVal": 0,
+        "wIndivV": 0,
+        "wPelotonSmall": 0,
+        "wPelotonLarge": 0
+      },
+      "beatsFavori": true
+    }
+  }
+}

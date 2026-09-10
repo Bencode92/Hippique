@@ -1,0 +1,547 @@
+{
+  "date": "2026-04-10T14:56:17.133Z",
+  "configs_tested": 584,
+  "val_courses": 349,
+  "holdout_courses": 381,
+  "segments": {
+    "SPRINT (<1400m)": [
+      {
+        "name": "indivV",
+        "features": {
+          "indivV": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 32.1,
+        "hold_t1": 21,
+        "hold_t2": 35.5,
+        "hold_t3": 43.5,
+        "hold_f1": 6.5,
+        "hold_f2": 14.5,
+        "hold_n": 62
+      },
+      {
+        "name": "indivP",
+        "features": {
+          "indivP": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 32.1,
+        "hold_t1": 27.4,
+        "hold_t2": 41.9,
+        "hold_t3": 53.2,
+        "hold_f1": 6.5,
+        "hold_f2": 14.5,
+        "hold_n": 62
+      },
+      {
+        "name": "gainPC",
+        "features": {
+          "gainPC": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 32.1,
+        "hold_t1": 58.1,
+        "hold_t2": 61.3,
+        "hold_t3": 72.6,
+        "hold_f1": 6.5,
+        "hold_f2": 14.5,
+        "hold_n": 62
+      },
+      {
+        "name": "stable",
+        "features": {
+          "stable": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 32.1,
+        "hold_t1": 32.3,
+        "hold_t2": 41.9,
+        "hold_t3": 53.2,
+        "hold_f1": 6.5,
+        "hold_f2": 14.5,
+        "hold_n": 62
+      },
+      {
+        "name": "musique",
+        "features": {
+          "musique": 1
+        },
+        "val_t1": 82.1,
+        "val_t2": 82.1,
+        "val_f1": 32.1,
+        "hold_t1": 16.1,
+        "hold_t2": 32.3,
+        "hold_t3": 35.5,
+        "hold_f1": 6.5,
+        "hold_f2": 14.5,
+        "hold_n": 62
+      }
+    ],
+    "MILE (1400-1900m)": [
+      {
+        "name": "indivV",
+        "features": {
+          "indivV": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 31.2,
+        "hold_t1": 21.9,
+        "hold_t2": 34.2,
+        "hold_t3": 42.5,
+        "hold_f1": 17.8,
+        "hold_f2": 24.7,
+        "hold_n": 73
+      },
+      {
+        "name": "indivP",
+        "features": {
+          "indivP": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 31.2,
+        "hold_t1": 24.7,
+        "hold_t2": 41.1,
+        "hold_t3": 46.6,
+        "hold_f1": 17.8,
+        "hold_f2": 24.7,
+        "hold_n": 73
+      },
+      {
+        "name": "gainPC",
+        "features": {
+          "gainPC": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 31.2,
+        "hold_t1": 49.3,
+        "hold_t2": 56.2,
+        "hold_t3": 61.6,
+        "hold_f1": 17.8,
+        "hold_f2": 24.7,
+        "hold_n": 73
+      },
+      {
+        "name": "stable",
+        "features": {
+          "stable": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 31.2,
+        "hold_t1": 30.1,
+        "hold_t2": 52.1,
+        "hold_t3": 65.8,
+        "hold_f1": 17.8,
+        "hold_f2": 24.7,
+        "hold_n": 73
+      },
+      {
+        "name": "musique",
+        "features": {
+          "musique": 1
+        },
+        "val_t1": 88.2,
+        "val_t2": 89.2,
+        "val_f1": 31.2,
+        "hold_t1": 17.8,
+        "hold_t2": 39.7,
+        "hold_t3": 50.7,
+        "hold_f1": 17.8,
+        "hold_f2": 24.7,
+        "hold_n": 73
+      }
+    ],
+    "MIDDLE (1900-2400m)": [
+      {
+        "name": "indivV",
+        "features": {
+          "indivV": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 36.7,
+        "hold_t1": 32.5,
+        "hold_t2": 43.8,
+        "hold_t3": 57.5,
+        "hold_f1": 31.3,
+        "hold_f2": 48.8,
+        "hold_n": 80
+      },
+      {
+        "name": "indivP",
+        "features": {
+          "indivP": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 36.7,
+        "hold_t1": 16.3,
+        "hold_t2": 27.5,
+        "hold_t3": 36.3,
+        "hold_f1": 31.3,
+        "hold_f2": 48.8,
+        "hold_n": 80
+      },
+      {
+        "name": "gainPC",
+        "features": {
+          "gainPC": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 36.7,
+        "hold_t1": 38.8,
+        "hold_t2": 43.8,
+        "hold_t3": 52.5,
+        "hold_f1": 31.3,
+        "hold_f2": 48.8,
+        "hold_n": 80
+      },
+      {
+        "name": "distJ",
+        "features": {
+          "distJ": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 36.7,
+        "hold_t1": 100,
+        "hold_t2": 100,
+        "hold_t3": 100,
+        "hold_f1": 31.3,
+        "hold_f2": 48.8,
+        "hold_n": 80
+      },
+      {
+        "name": "distCh",
+        "features": {
+          "distCh": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 36.7,
+        "hold_t1": 100,
+        "hold_t2": 100,
+        "hold_t3": 100,
+        "hold_f1": 31.3,
+        "hold_f2": 48.8,
+        "hold_n": 80
+      }
+    ],
+    "STAYING (2400m+)": [
+      {
+        "name": "indivV",
+        "features": {
+          "indivV": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 34.8,
+        "hold_t1": 23.5,
+        "hold_t2": 38,
+        "hold_t3": 49.4,
+        "hold_f1": 38,
+        "hold_f2": 57.8,
+        "hold_n": 166
+      },
+      {
+        "name": "indivP",
+        "features": {
+          "indivP": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 34.8,
+        "hold_t1": 12,
+        "hold_t2": 23.5,
+        "hold_t3": 35.5,
+        "hold_f1": 38,
+        "hold_f2": 57.8,
+        "hold_n": 166
+      },
+      {
+        "name": "gainPC",
+        "features": {
+          "gainPC": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 34.8,
+        "hold_t1": 27.7,
+        "hold_t2": 39.8,
+        "hold_t3": 46.4,
+        "hold_f1": 38,
+        "hold_f2": 57.8,
+        "hold_n": 166
+      },
+      {
+        "name": "stable",
+        "features": {
+          "stable": 1
+        },
+        "val_t1": 99.3,
+        "val_t2": 99.3,
+        "val_f1": 34.8,
+        "hold_t1": 20.5,
+        "hold_t2": 39.8,
+        "hold_t3": 51.8,
+        "hold_f1": 38,
+        "hold_f2": 57.8,
+        "hold_n": 166
+      },
+      {
+        "name": "musique",
+        "features": {
+          "musique": 1
+        },
+        "val_t1": 87.7,
+        "val_t2": 91.3,
+        "val_f1": 34.8,
+        "hold_t1": 31.9,
+        "hold_t2": 44,
+        "hold_t3": 54.2,
+        "hold_f1": 38,
+        "hold_f2": 57.8,
+        "hold_n": 166
+      }
+    ],
+    "PETIT (<9 partants)": [
+      {
+        "name": "indivV",
+        "features": {
+          "indivV": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 40,
+        "hold_t1": 32.5,
+        "hold_t2": 50,
+        "hold_t3": 61.3,
+        "hold_f1": 33.8,
+        "hold_f2": 45,
+        "hold_n": 80
+      },
+      {
+        "name": "indivP",
+        "features": {
+          "indivP": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 40,
+        "hold_t1": 32.5,
+        "hold_t2": 47.5,
+        "hold_t3": 56.3,
+        "hold_f1": 33.8,
+        "hold_f2": 45,
+        "hold_n": 80
+      },
+      {
+        "name": "gainPC",
+        "features": {
+          "gainPC": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 40,
+        "hold_t1": 56.3,
+        "hold_t2": 62.5,
+        "hold_t3": 66.3,
+        "hold_f1": 33.8,
+        "hold_f2": 45,
+        "hold_n": 80
+      },
+      {
+        "name": "stable",
+        "features": {
+          "stable": 1
+        },
+        "val_t1": 98,
+        "val_t2": 98,
+        "val_f1": 40,
+        "hold_t1": 43.8,
+        "hold_t2": 66.3,
+        "hold_t3": 76.3,
+        "hold_f1": 33.8,
+        "hold_f2": 45,
+        "hold_n": 80
+      },
+      {
+        "name": "musique",
+        "features": {
+          "musique": 1
+        },
+        "val_t1": 90,
+        "val_t2": 96,
+        "val_f1": 40,
+        "hold_t1": 33.8,
+        "hold_t2": 56.3,
+        "hold_t3": 67.5,
+        "hold_f1": 33.8,
+        "hold_f2": 45,
+        "hold_n": 80
+      }
+    ],
+    "MOYEN (9-14)": [
+      {
+        "name": "indivV",
+        "features": {
+          "indivV": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 37.7,
+        "hold_t1": 22.9,
+        "hold_t2": 39,
+        "hold_t3": 48.3,
+        "hold_f1": 22.4,
+        "hold_f2": 38,
+        "hold_n": 205
+      },
+      {
+        "name": "indivP",
+        "features": {
+          "indivP": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 37.7,
+        "hold_t1": 16.6,
+        "hold_t2": 32.2,
+        "hold_t3": 42.4,
+        "hold_f1": 22.4,
+        "hold_f2": 38,
+        "hold_n": 205
+      },
+      {
+        "name": "gainPC",
+        "features": {
+          "gainPC": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 37.7,
+        "hold_t1": 39,
+        "hold_t2": 46.8,
+        "hold_t3": 56.6,
+        "hold_f1": 22.4,
+        "hold_f2": 38,
+        "hold_n": 205
+      },
+      {
+        "name": "stable",
+        "features": {
+          "stable": 1
+        },
+        "val_t1": 99.5,
+        "val_t2": 99.5,
+        "val_f1": 37.7,
+        "hold_t1": 20,
+        "hold_t2": 36.6,
+        "hold_t3": 48.8,
+        "hold_f1": 22.4,
+        "hold_f2": 38,
+        "hold_n": 205
+      },
+      {
+        "name": "musique",
+        "features": {
+          "musique": 1
+        },
+        "val_t1": 81.4,
+        "val_t2": 83.9,
+        "val_f1": 37.7,
+        "hold_t1": 19.5,
+        "hold_t2": 32.7,
+        "hold_t3": 41,
+        "hold_f1": 22.4,
+        "hold_f2": 38,
+        "hold_n": 205
+      }
+    ],
+    "GRAND (14+)": [
+      {
+        "name": "indivV",
+        "features": {
+          "indivV": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 24,
+        "hold_t1": 21.9,
+        "hold_t2": 26,
+        "hold_t3": 39.6,
+        "hold_f1": 33.3,
+        "hold_f2": 50,
+        "hold_n": 96
+      },
+      {
+        "name": "indivP",
+        "features": {
+          "indivP": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 24,
+        "hold_t1": 8.3,
+        "hold_t2": 13.5,
+        "hold_t3": 24,
+        "hold_f1": 33.3,
+        "hold_f2": 50,
+        "hold_n": 96
+      },
+      {
+        "name": "gainPC",
+        "features": {
+          "gainPC": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 24,
+        "hold_t1": 25,
+        "hold_t2": 35.4,
+        "hold_t3": 41.7,
+        "hold_f1": 33.3,
+        "hold_f2": 50,
+        "hold_n": 96
+      },
+      {
+        "name": "stable",
+        "features": {
+          "stable": 1
+        },
+        "val_t1": 100,
+        "val_t2": 100,
+        "val_f1": 24,
+        "hold_t1": 17.7,
+        "hold_t2": 37.5,
+        "hold_t3": 52.1,
+        "hold_f1": 33.3,
+        "hold_f2": 50,
+        "hold_n": 96
+      },
+      {
+        "name": "musique",
+        "features": {
+          "musique": 1
+        },
+        "val_t1": 96,
+        "val_t2": 96,
+        "val_f1": 24,
+        "hold_t1": 29.2,
+        "hold_t2": 40.6,
+        "hold_t3": 50,
+        "hold_f1": 33.3,
+        "hold_f2": 50,
+        "hold_n": 96
+      }
+    ]
+  }
+}

@@ -672,6 +672,15 @@
             font-size: 1.1rem;
         }
 
+        .course-card[data-verdict="jouable"] {
+            border-left: 3px solid #5fffaf;
+        }
+        .course-card[data-verdict="pass"], .course-card[data-verdict="incomplet"] {
+            opacity: 0.72;
+        }
+        .course-card[data-verdict="pass"]:hover, .course-card[data-verdict="incomplet"]:hover {
+            opacity: 1;
+        }
         .participants-title {
             color: var(--accent);
             margin: 1.5rem 0 1rem;
@@ -1281,7 +1290,7 @@
     </div>
 
     <!-- Module ranking-loader (doit être chargé avant le script principal) -->
-    <script src="js/panneau-paris.js?v=2"></script>
+    <script src="js/panneau-paris.js?v=3"></script>
     <script src="js/ranking-loader.js?v=19"></script>
 
     <!-- Module de chargement des courses -->
@@ -1468,6 +1477,51 @@
             });
             await Promise.all(fetches);
             console.log(`✅ Cotes live appliquées : ${updatedCount} participants mis à jour`);
+        }
+
+        // ── VERDICT COMPACT, pour la liste des courses ──────────────────
+        // Même logique que le bandeau, mais sans calculer les 35 paris : on ne
+        // veut ici que le favori et son espérance. Permet de balayer une réunion
+        // entière sans ouvrir chaque course.
+        function verdictCourse(hippodrome, participants) {
+            if (typeof PanneauParis === 'undefined') return null;
+            const parts = (participants || [])
+                .filter(p => (parseFloat(p.cote) || 0) > 1)
+                .sort((a, b) => parseFloat(a.cote) - parseFloat(b.cote));
+            if (parts.length < 5) return null;
+            const overround = parts.reduce((s, p) => s + 1 / parseFloat(p.cote), 0);
+            if (overround < PanneauParis.OVERROUND_MIN || overround > PanneauParis.OVERROUND_MAX)
+                return { etat: 'incomplet' };
+            const P = PanneauParis.probabilites(parts);
+            const cote = parseFloat(parts[0].cote);
+            const hip = (hippodrome || '').toUpperCase().replace(/[ '-]/g, '');
+            const chezMoi = ['LONGCHAMP', 'PARISLONGCHAMP', 'SAINTCLOUD'].some(h => hip.includes(h));
+            const ev = P[0] * cote - 1 + (chezMoi ? 0.124 : -0.026);
+            const prof = PanneauParis.profilCourse(P[0]);
+            return { etat: (chezMoi && cote <= 6 && ev > 0) ? 'jouable' : 'pass',
+                     ev, cote, p: P[0], chezMoi, profil: prof ? prof.nom : null };
+        }
+        function badgeVerdict(v) {
+            if (!v) return '';
+            if (v.etat === 'incomplet')
+                return `<div style="margin-top:5px;font-size:.7em;opacity:.35">cotes incomplètes</div>`;
+            // Un PASS a deux causes distinctes ; afficher l'espérance quand ce
+            // n'est pas elle qui décide ferait dire au badge le contraire de sa
+            // conclusion (« passe · +1 % »). On donne donc la vraie raison.
+            const pct = (100 * v.ev).toFixed(1).replace(/^-0\.0$/, '0.0');
+            const motif = !v.chezMoi ? 'hors de tes hippodromes'
+                        : v.cote > 6  ? 'favori trop peu joué'
+                        : pct + ' %';
+            if (v.etat !== 'jouable')
+                return `<div style="margin-top:5px;font-size:.7em;opacity:.38"
+                            title="${v.chezMoi ? (v.cote > 6 ? 'Tes hippodromes, mais au-delà de 6 le favori ne tient plus l\'espérance' : 'Tes hippodromes, mais espérance négative sur cette course') : 'Pas un de tes hippodromes'}"
+                        >passe · favori ${v.cote} · ${motif}</div>`;
+            return `<div style="margin-top:6px;display:flex;align-items:center;gap:.4rem;font-size:.72em"
+                        title="Un de tes hippodromes, favori jouable — ${v.profil || ''}">
+                    <span style="color:#0b1f16;background:#5fffaf;font-weight:700;letter-spacing:.06em;
+                                 padding:1px 6px;border-radius:3px">JOUABLE</span>
+                    <span style="opacity:.7">favori ${v.cote} · +${pct} %</span>
+                </div>`;
         }
 
         // ── BANDEAU DE DÉCISION ─────────────────────────────────────────
@@ -2183,13 +2237,24 @@
                             </div>`;
                     }
 
+                    // Verdicts de la réunion : calculés une fois, servent au compteur
+                    // du titre et au badge de chaque carte (~7 µs par course).
+                    const verdicts = filteredCourses.map(c => {
+                        if (!c) return null;
+                        try { return verdictCourse(hippodrome, c.participants); } catch (e) { return null; }
+                    });
+                    const nbJouables = verdicts.filter(v => v && v.etat === 'jouable').length;
+                    const compteur = nbJouables
+                        ? `<span style="color:#5fffaf;font-weight:600">${nbJouables} jouable${nbJouables > 1 ? 's' : ''}</span> / ${filteredCourses.length}`
+                        : `${filteredCourses.length} course${filteredCourses.length > 1 ? 's' : ''}`;
+
                     // Nouveau format d'affichage avec des cartes
                     const hippodromeId = hippodrome.replace(/\s+/g, '-').toLowerCase();
                     html += `
                         <div class="hippodrome-card">
                             <div class="hippodrome-title">
                                 <h3><i class="fas fa-horse-head"></i> ${hippodrome}</h3>
-                                <span>${filteredCourses.length} course${filteredCourses.length > 1 ? 's' : ''}</span>
+                                <span>${compteur}</span>
                             </div>
                             ${reunionBanner}
                             <div class="course-grid" id="grid-${hippodromeId}">
@@ -2206,7 +2271,7 @@
                         const courseDetailId = createCourseDetailId(hippodrome, course.nom);
                         
                         html += `
-                            <div class="course-card" data-hippodrome="${hippodrome}" data-course="${course.nom}" data-detail-id="${courseDetailId}">
+                            <div class="course-card" data-verdict="${verdicts[courseIndex]?.etat || ''}" data-hippodrome="${hippodrome}" data-course="${course.nom}" data-detail-id="${courseDetailId}">
                                 <div class="course-time">${course.horaire || ""}</div>
                                 <div class="course-name">${course.nom || ""}</div>
                                 <div class="course-meta">
@@ -2214,6 +2279,7 @@
                                     <div class="course-distance"><i class="fas fa-route"></i> ${course.distance || ""}</div>
                                     <div class="course-type">${course.type || "Plat"}</div>
                                 </div>
+                                ${badgeVerdict(verdicts[courseIndex])}
                                 <div style="margin-top:4px;font-size:0.7em;opacity:0.5;cursor:pointer"
                                      title="Cliquer pour copier la commande terminal"
                                      onclick="event.stopPropagation();const cmd='cd ~/Hippique && git pull && node live-scoring.js ${hippodrome.split(' ')[0].toLowerCase()} C${course.numero || (courseIndex+1)}';navigator.clipboard.writeText(cmd).then(()=>{this.style.color='#40e05a';this.textContent='✅ Copié !';setTimeout(()=>{this.style.color='';this.textContent='📋 '+cmd.replace('cd ~/Hippique && ','')},1500)})">

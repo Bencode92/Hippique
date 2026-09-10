@@ -1,0 +1,211 @@
+{
+  "generated_at": "2026-04-12T12:10:38.865513",
+  "total_courses": 94,
+  "hippodromes": [
+    "SAINT-CLOUD",
+    "CHANTILLY",
+    "FONTAINEBLEAU",
+    "PARISLONGCHAMP",
+    "LONGCHAMP"
+  ],
+  "segments": {
+    "peloton_moyen_9-13": {
+      "n": 49,
+      "model_top1_pct": 0.2653061224489796,
+      "fav_top1_pct": 0.3469387755102041,
+      "model_top2_pct": 0.5102040816326531,
+      "fav_top2_pct": 0.6326530612244898,
+      "model_wilson_ci_95": [
+        0.1621113124514944,
+        0.4026255615265835
+      ]
+    },
+    "dist_middle": {
+      "n": 26,
+      "model_top1_pct": 0.15384615384615385,
+      "fav_top1_pct": 0.2692307692307692,
+      "model_top2_pct": 0.46153846153846156,
+      "fav_top2_pct": 0.46153846153846156,
+      "model_wilson_ci_95": [
+        0.0614993399892948,
+        0.33531584418313565
+      ]
+    },
+    "favori_net_2.5-4": {
+      "n": 47,
+      "model_top1_pct": 0.2553191489361702,
+      "fav_top1_pct": 0.2978723404255319,
+      "model_top2_pct": 0.5106382978723404,
+      "fav_top2_pct": 0.5319148936170213,
+      "model_wilson_ci_95": [
+        0.15253006046383732,
+        0.3950844913992039
+      ]
+    },
+    "forte_dispersion_cotes": {
+      "n": 24,
+      "model_top1_pct": 0.16666666666666666,
+      "fav_top1_pct": 0.2916666666666667,
+      "model_top2_pct": 0.5416666666666666,
+      "fav_top2_pct": 0.5416666666666666,
+      "model_wilson_ci_95": [
+        0.06678568000728924,
+        0.3585347038786943
+      ]
+    },
+    "GLOBAL": {
+      "n": 94,
+      "model_top1_pct": 0.26595744680851063,
+      "fav_top1_pct": 0.3191489361702128,
+      "model_top2_pct": 0.4787234042553192,
+      "fav_top2_pct": 0.5531914893617021,
+      "model_wilson_ci_95": [
+        0.1871148582279006,
+        0.3631786774460867
+      ]
+    },
+    "hippo_CHANTILLY": {
+      "n": 46,
+      "model_top1_pct": 0.17391304347826086,
+      "fav_top1_pct": 0.2391304347826087,
+      "model_top2_pct": 0.43478260869565216,
+      "fav_top2_pct": 0.45652173913043476,
+      "model_wilson_ci_95": [
+        0.09085683568889254,
+        0.3072363234392253
+      ]
+    },
+    "grand_peloton_14+": {
+      "n": 30,
+      "model_top1_pct": 0.3,
+      "fav_top1_pct": 0.3333333333333333,
+      "model_top2_pct": 0.43333333333333335,
+      "fav_top2_pct": 0.4666666666666667,
+      "model_wilson_ci_95": [
+        0.16664562643958933,
+        0.4787612101166018
+      ]
+    },
+    "dist_mile": {
+      "n": 38,
+      "model_top1_pct": 0.21052631578947367,
+      "fav_top1_pct": 0.2631578947368421,
+      "model_top2_pct": 0.39473684210526316,
+      "fav_top2_pct": 0.47368421052631576,
+      "model_wilson_ci_95": [
+        0.1107466035209593,
+        0.36346088376442165
+      ]
+    },
+    "petit_peloton_<=8": {
+      "n": 15,
+      "model_top1_pct": 0.2,
+      "fav_top1_pct": 0.2,
+      "model_top2_pct": 0.4666666666666667,
+      "fav_top2_pct": 0.4666666666666667,
+      "model_wilson_ci_95": [
+        0.07047420643610411,
+        0.4518593533465045
+      ]
+    },
+    "course_ouverte_favori>4": {
+      "n": 27,
+      "model_top1_pct": 0.25925925925925924,
+      "fav_top1_pct": 0.37037037037037035,
+      "model_top2_pct": 0.37037037037037035,
+      "fav_top2_pct": 0.5925925925925926,
+      "model_wilson_ci_95": [
+        0.13170208422866778,
+        0.4467893040261568
+      ]
+    },
+    "favori_massif_cote<=2.5": {
+      "n": 20,
+      "model_top1_pct": 0.3,
+      "fav_top1_pct": 0.3,
+      "model_top2_pct": 0.55,
+      "fav_top2_pct": 0.55,
+      "model_wilson_ci_95": [
+        0.14547527396899385,
+        0.5189767762289793
+      ]
+    },
+    "dist_sprint": {
+      "n": 7,
+      "model_top1_pct": 0.2857142857142857,
+      "fav_top1_pct": 0.2857142857142857,
+      "model_top2_pct": 0.2857142857142857,
+      "fav_top2_pct": 0.7142857142857143,
+      "model_wilson_ci_95": [
+        0.0822171657090155,
+        0.6410709098517873
+      ]
+    },
+    "dist_staying": {
+      "n": 23,
+      "model_top1_pct": 0.4782608695652174,
+      "fav_top1_pct": 0.4782608695652174,
+      "model_top2_pct": 0.6956521739130435,
+      "fav_top2_pct": 0.7391304347826086,
+      "model_wilson_ci_95": [
+        0.2923686953994572,
+        0.6703757013578151
+      ]
+    },
+    "hippo_FONTAINEBLEAU": {
+      "n": 24,
+      "model_top1_pct": 0.375,
+      "fav_top1_pct": 0.5,
+      "model_top2_pct": 0.5416666666666666,
+      "fav_top2_pct": 0.6666666666666666,
+      "model_wilson_ci_95": [
+        0.21159133433631458,
+        0.5729038096209293
+      ]
+    },
+    "hippo_SAINT-CLOUD": {
+      "n": 24,
+      "model_top1_pct": 0.3333333333333333,
+      "fav_top1_pct": 0.2916666666666667,
+      "model_top2_pct": 0.5,
+      "fav_top2_pct": 0.625,
+      "model_wilson_ci_95": [
+        0.17971978688379642,
+        0.5329404050591954
+      ]
+    },
+    "groupe_ou_listed_probable": {
+      "n": 1,
+      "model_top1_pct": 0.0,
+      "fav_top1_pct": 0.0,
+      "model_top2_pct": 0.0,
+      "fav_top2_pct": 0.0,
+      "model_wilson_ci_95": [
+        0.0,
+        0.7934567085261071
+      ]
+    },
+    "terrain_souple": {
+      "n": 16,
+      "model_top1_pct": 0.375,
+      "fav_top1_pct": 0.375,
+      "model_top2_pct": 0.5625,
+      "fav_top2_pct": 0.6875,
+      "model_wilson_ci_95": [
+        0.18480982554752806,
+        0.613593529020652
+      ]
+    },
+    "handicap": {
+      "n": 1,
+      "model_top1_pct": 1.0,
+      "fav_top1_pct": 1.0,
+      "model_top2_pct": 1.0,
+      "fav_top2_pct": 1.0,
+      "model_wilson_ci_95": [
+        0.20654329147389294,
+        1.0
+      ]
+    }
+  }
+}

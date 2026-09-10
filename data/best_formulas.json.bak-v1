@@ -1,0 +1,58 @@
+{
+  "sprint": {
+    "leviers": [
+      "Jk TauxV",
+      "Jk TauxP"
+    ],
+    "poids": [
+      0.2,
+      0.8
+    ],
+    "top1": 94.44444444444444,
+    "top2": 98.14814814814815,
+    "top3": 100,
+    "courses": 108
+  },
+  "mile": {
+    "leviers": [
+      "Jk ScoreMixte",
+      "Jk TauxV"
+    ],
+    "poids": [
+      0.2,
+      0.8
+    ],
+    "top1": 89.39393939393939,
+    "top2": 89.39393939393939,
+    "top3": 92.42424242424242,
+    "courses": 132
+  },
+  "middle": {
+    "leviers": [
+      "Jk TauxV",
+      "Jk Rang"
+    ],
+    "poids": [
+      0.8,
+      0.19999999999999996
+    ],
+    "top1": 95.23809523809523,
+    "top2": 97.61904761904762,
+    "top3": 97.61904761904762,
+    "courses": 84
+  },
+  "staying": {
+    "leviers": [
+      "Jk ScoreMixte",
+      "Jk GainMoy"
+    ],
+    "poids": [
+      0.2,
+      0.8
+    ],
+    "top1": 92,
+    "top2": 96,
+    "top3": 100,
+    "courses": 50
+  }
+}

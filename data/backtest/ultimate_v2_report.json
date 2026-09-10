@@ -1,0 +1,217 @@
+{
+  "date": "2026-04-10T09:55:22.964Z",
+  "configs": 328,
+  "top20": [
+    {
+      "name": "F28_intervalle",
+      "top1": 98.3,
+      "top2": 98.3,
+      "favT1": 39.3,
+      "weights": {
+        "F28_intervalle": 1
+      }
+    },
+    {
+      "name": "F16_tauxVCheval",
+      "top1": 89.6,
+      "top2": 96.5,
+      "favT1": 39.3,
+      "weights": {
+        "F16_tauxVCheval": 1
+      }
+    },
+    {
+      "name": "tauxVCheval+rangCheval",
+      "top1": 87.9,
+      "top2": 97.7,
+      "favT1": 39.3,
+      "weights": {
+        "F16_tauxVCheval": 1,
+        "F09_rangCheval": 0.5
+      }
+    },
+    {
+      "name": "tauxVCheval+gainMoyenCheval",
+      "top1": 87.3,
+      "top2": 93.1,
+      "favT1": 39.3,
+      "weights": {
+        "F16_tauxVCheval": 1,
+        "F15_gainMoyenCheval": 0.5
+      }
+    },
+    {
+      "name": "rangCh+gainMo+tauxVC",
+      "top1": 86.7,
+      "top2": 93.1,
+      "favT1": 39.3,
+      "weights": {
+        "F09_rangCheval": 1,
+        "F15_gainMoyenCheval": 0.5,
+        "F16_tauxVCheval": 0.3
+      }
+    },
+    {
+      "name": "rangCheval+tauxVCheval",
+      "top1": 84.4,
+      "top2": 95.4,
+      "favT1": 39.3,
+      "weights": {
+        "F09_rangCheval": 1,
+        "F16_tauxVCheval": 0.5
+      }
+    },
+    {
+      "name": "rangCheval+gainMoyenCheval",
+      "top1": 83.2,
+      "top2": 90.2,
+      "favT1": 39.3,
+      "weights": {
+        "F09_rangCheval": 1,
+        "F15_gainMoyenCheval": 0.5
+      }
+    },
+    {
+      "name": "F09_rangCheval",
+      "top1": 79.8,
+      "top2": 91.3,
+      "favT1": 39.3,
+      "weights": {
+        "F09_rangCheval": 1
+      }
+    },
+    {
+      "name": "gainMoyenCheval+tauxVCheval",
+      "top1": 79.8,
+      "top2": 87.3,
+      "favT1": 39.3,
+      "weights": {
+        "F15_gainMoyenCheval": 1,
+        "F16_tauxVCheval": 0.5
+      }
+    },
+    {
+      "name": "gainMoyenCheval+rangCheval",
+      "top1": 78,
+      "top2": 83.8,
+      "favT1": 39.3,
+      "weights": {
+        "F15_gainMoyenCheval": 1,
+        "F09_rangCheval": 0.5
+      }
+    },
+    {
+      "name": "F15_gainMoyenCheval",
+      "top1": 77.5,
+      "top2": 85.5,
+      "favT1": 39.3,
+      "weights": {
+        "F15_gainMoyenCheval": 1
+      }
+    },
+    {
+      "name": "F26_combo",
+      "top1": 76.3,
+      "top2": 88.4,
+      "favT1": 39.3,
+      "weights": {
+        "F26_combo": 1
+      }
+    },
+    {
+      "name": "tauxVCheval+rangJockey",
+      "top1": 75.1,
+      "top2": 86.1,
+      "favT1": 39.3,
+      "weights": {
+        "F16_tauxVCheval": 1,
+        "F10_rangJockey": 0.5
+      }
+    },
+    {
+      "name": "rangCh+rangJo+tauxVC",
+      "top1": 74,
+      "top2": 84.4,
+      "favT1": 39.3,
+      "weights": {
+        "F09_rangCheval": 1,
+        "F10_rangJockey": 0.5,
+        "F16_tauxVCheval": 0.3
+      }
+    },
+    {
+      "name": "rangJockey+tauxVCheval",
+      "top1": 72.8,
+      "top2": 82.7,
+      "favT1": 39.3,
+      "weights": {
+        "F10_rangJockey": 1,
+        "F16_tauxVCheval": 0.5
+      }
+    },
+    {
+      "name": "rangCh+rangJo+gainMo",
+      "top1": 72.8,
+      "top2": 80.3,
+      "favT1": 39.3,
+      "weights": {
+        "F09_rangCheval": 1,
+        "F10_rangJockey": 0.5,
+        "F15_gainMoyenCheval": 0.3
+      }
+    },
+    {
+      "name": "valeur+tauxVCheval",
+      "top1": 72.3,
+      "top2": 82.1,
+      "favT1": 39.3,
+      "weights": {
+        "F08_valeur": 1,
+        "F16_tauxVCheval": 0.5
+      }
+    },
+    {
+      "name": "tauxVCheval+valeur",
+      "top1": 72.3,
+      "top2": 82.1,
+      "favT1": 39.3,
+      "weights": {
+        "F16_tauxVCheval": 1,
+        "F08_valeur": 0.5
+      }
+    },
+    {
+      "name": "rangCheval+rangJockey",
+      "top1": 69.4,
+      "top2": 79.8,
+      "favT1": 39.3,
+      "weights": {
+        "F09_rangCheval": 1,
+        "F10_rangJockey": 0.5
+      }
+    },
+    {
+      "name": "F24_distCheval",
+      "top1": 68.2,
+      "top2": 76.9,
+      "favT1": 39.3,
+      "weights": {
+        "F24_distCheval": 1
+      }
+    }
+  ],
+  "beatFav1": 86,
+  "beatFav2": 82,
+  "test": {
+    "config": "F28_intervalle",
+    "total": 116,
+    "top1": 100,
+    "top2": 100,
+    "top3": 100,
+    "favT1": 30.2,
+    "favT2": 47.4,
+    "weights": {
+      "F28_intervalle": 1
+    }
+  }
+}

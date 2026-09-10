@@ -1,0 +1,1050 @@
+{
+  "date": "2026-04-17T08:41:01.962Z",
+  "method": "all-leviers walk-forward 60/40",
+  "results": {
+    "sprint": {
+      "category": "Sprint (<1400m)",
+      "trainSize": 72,
+      "testSize": 49,
+      "favTest": {
+        "n1": 14,
+        "f1": 14,
+        "n2": 27,
+        "f2": 27,
+        "n3": 35,
+        "f3": 35,
+        "total": 49,
+        "pN1": 28.57142857142857,
+        "pF1": 28.57142857142857,
+        "pN2": 55.10204081632652,
+        "pF2": 55.10204081632652,
+        "pN3": 71.42857142857143,
+        "pF3": 71.42857142857143,
+        "avgCoteWin": 2.721428571428572
+      },
+      "soloTop": [
+        {
+          "name": "Jk TauxP (ranking)",
+          "trainTop1": 59.72222222222222,
+          "testTop1": 100,
+          "testTop2": 100,
+          "testTop3": 100,
+          "avgCoteWin": 8.642857142857142
+        },
+        {
+          "name": "Jk TauxV (ranking)",
+          "trainTop1": 65.27777777777779,
+          "testTop1": 97.95918367346938,
+          "testTop2": 100,
+          "testTop3": 100,
+          "avgCoteWin": 8.766666666666666
+        },
+        {
+          "name": "Jk GainMoy (ranking)",
+          "trainTop1": 59.72222222222222,
+          "testTop1": 97.95918367346938,
+          "testTop2": 100,
+          "testTop3": 100,
+          "avgCoteWin": 8.766666666666666
+        },
+        {
+          "name": "Jk Rang (ranking)",
+          "trainTop1": 66.66666666666666,
+          "testTop1": 95.91836734693877,
+          "testTop2": 97.95918367346938,
+          "testTop3": 97.95918367346938,
+          "avgCoteWin": 8.719148936170212
+        },
+        {
+          "name": "Jk ScoreMixte",
+          "trainTop1": 59.72222222222222,
+          "testTop1": 95.91836734693877,
+          "testTop2": 97.95918367346938,
+          "testTop3": 100,
+          "avgCoteWin": 7.634042553191487
+        },
+        {
+          "name": "Cravache Rang",
+          "trainTop1": 66.66666666666666,
+          "testTop1": 95.91836734693877,
+          "testTop2": 97.95918367346938,
+          "testTop3": 97.95918367346938,
+          "avgCoteWin": 8.719148936170212
+        },
+        {
+          "name": "Ch TauxP (ranking)",
+          "trainTop1": 52.77777777777778,
+          "testTop1": 79.59183673469387,
+          "testTop2": 87.75510204081633,
+          "testTop3": 87.75510204081633,
+          "avgCoteWin": 8.566666666666663
+        },
+        {
+          "name": "Ch TauxV (ranking)",
+          "trainTop1": 77.77777777777779,
+          "testTop1": 77.55102040816327,
+          "testTop2": 81.63265306122449,
+          "testTop3": 83.6734693877551,
+          "avgCoteWin": 8.74473684210526
+        },
+        {
+          "name": "Ch Rang (ranking)",
+          "trainTop1": 62.5,
+          "testTop1": 77.55102040816327,
+          "testTop2": 79.59183673469387,
+          "testTop3": 83.6734693877551,
+          "avgCoteWin": 8.668421052631578
+        },
+        {
+          "name": "Ch GainMoy (ranking)",
+          "trainTop1": 70.83333333333334,
+          "testTop1": 77.55102040816327,
+          "testTop2": 81.63265306122449,
+          "testTop3": 83.6734693877551,
+          "avgCoteWin": 8.668421052631578
+        }
+      ],
+      "comboTop": [
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk TauxV (ranking)"
+          ],
+          "weights": [
+            0.4,
+            0.6
+          ],
+          "trainTop1": 63.888888888888886,
+          "testTop1": 100,
+          "testTop2": 100,
+          "testTop3": 100,
+          "avgCoteWin": 8.642857142857142
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk TauxV (ranking)"
+          ],
+          "weights": [
+            0.6,
+            0.4
+          ],
+          "trainTop1": 61.111111111111114,
+          "testTop1": 100,
+          "testTop2": 100,
+          "testTop3": 100,
+          "avgCoteWin": 8.642857142857142
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk TauxV (ranking)"
+          ],
+          "weights": [
+            0.8,
+            0.2
+          ],
+          "trainTop1": 59.72222222222222,
+          "testTop1": 100,
+          "testTop2": 100,
+          "testTop3": 100,
+          "avgCoteWin": 8.642857142857142
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk GainMoy (ranking)"
+          ],
+          "weights": [
+            0.2,
+            0.8
+          ],
+          "trainTop1": 62.5,
+          "testTop1": 100,
+          "testTop2": 100,
+          "testTop3": 100,
+          "avgCoteWin": 8.642857142857142
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk GainMoy (ranking)"
+          ],
+          "weights": [
+            0.4,
+            0.6
+          ],
+          "trainTop1": 61.111111111111114,
+          "testTop1": 100,
+          "testTop2": 100,
+          "testTop3": 100,
+          "avgCoteWin": 8.642857142857142
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk GainMoy (ranking)"
+          ],
+          "weights": [
+            0.6,
+            0.4
+          ],
+          "trainTop1": 59.72222222222222,
+          "testTop1": 100,
+          "testTop2": 100,
+          "testTop3": 100,
+          "avgCoteWin": 8.642857142857142
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk GainMoy (ranking)"
+          ],
+          "weights": [
+            0.8,
+            0.2
+          ],
+          "trainTop1": 59.72222222222222,
+          "testTop1": 100,
+          "testTop2": 100,
+          "testTop3": 100,
+          "avgCoteWin": 8.642857142857142
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk TauxV (ranking)",
+            "Jk GainMoy (ranking)"
+          ],
+          "weights": [
+            0.2,
+            0.2,
+            0.6
+          ],
+          "trainTop1": 63.888888888888886,
+          "testTop1": 100,
+          "testTop2": 100,
+          "testTop3": 100,
+          "avgCoteWin": 8.642857142857142
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk TauxV (ranking)",
+            "Jk GainMoy (ranking)"
+          ],
+          "weights": [
+            0.4,
+            0.2,
+            0.4
+          ],
+          "trainTop1": 61.111111111111114,
+          "testTop1": 100,
+          "testTop2": 100,
+          "testTop3": 100,
+          "avgCoteWin": 8.642857142857142
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk TauxV (ranking)",
+            "Jk GainMoy (ranking)"
+          ],
+          "weights": [
+            0.4,
+            0.4,
+            0.2
+          ],
+          "trainTop1": 61.111111111111114,
+          "testTop1": 100,
+          "testTop2": 100,
+          "testTop3": 100,
+          "avgCoteWin": 8.642857142857142
+        }
+      ],
+      "beatsFav": true
+    },
+    "mile": {
+      "category": "Mile (1400-1700m)",
+      "trainSize": 97,
+      "testSize": 66,
+      "favTest": {
+        "n1": 18,
+        "f1": 18,
+        "n2": 36,
+        "f2": 36,
+        "n3": 48,
+        "f3": 48,
+        "total": 66,
+        "pN1": 27.27272727272727,
+        "pF1": 27.27272727272727,
+        "pN2": 54.54545454545454,
+        "pF2": 54.54545454545454,
+        "pN3": 72.72727272727273,
+        "pF3": 72.72727272727273,
+        "avgCoteWin": 2.861111111111111
+      },
+      "soloTop": [
+        {
+          "name": "Jk TauxP (ranking)",
+          "trainTop1": 31.958762886597935,
+          "testTop1": 95.45454545454545,
+          "testTop2": 95.45454545454545,
+          "testTop3": 96.96969696969697,
+          "avgCoteWin": 7.104761904761905
+        },
+        {
+          "name": "Jk TauxV (ranking)",
+          "trainTop1": 30.927835051546392,
+          "testTop1": 92.42424242424242,
+          "testTop2": 96.96969696969697,
+          "testTop3": 100,
+          "avgCoteWin": 7.186885245901639
+        },
+        {
+          "name": "Jk Rang (ranking)",
+          "trainTop1": 34.02061855670103,
+          "testTop1": 92.42424242424242,
+          "testTop2": 93.93939393939394,
+          "testTop3": 95.45454545454545,
+          "avgCoteWin": 7.186885245901639
+        },
+        {
+          "name": "Jk ScoreMixte",
+          "trainTop1": 28.865979381443296,
+          "testTop1": 92.42424242424242,
+          "testTop2": 95.45454545454545,
+          "testTop3": 95.45454545454545,
+          "avgCoteWin": 7.295081967213115
+        },
+        {
+          "name": "Jk GainMoy (ranking)",
+          "trainTop1": 37.11340206185567,
+          "testTop1": 92.42424242424242,
+          "testTop2": 93.93939393939394,
+          "testTop3": 96.96969696969697,
+          "avgCoteWin": 7.186885245901639
+        },
+        {
+          "name": "Cravache Rang",
+          "trainTop1": 32.98969072164948,
+          "testTop1": 92.42424242424242,
+          "testTop2": 93.93939393939394,
+          "testTop3": 95.45454545454545,
+          "avgCoteWin": 7.186885245901639
+        },
+        {
+          "name": "Ch TauxV (ranking)",
+          "trainTop1": 58.76288659793815,
+          "testTop1": 69.6969696969697,
+          "testTop2": 80.3030303030303,
+          "testTop3": 87.87878787878788,
+          "avgCoteWin": 6.8
+        },
+        {
+          "name": "Ch GainMoy (ranking)",
+          "trainTop1": 47.42268041237113,
+          "testTop1": 57.57575757575758,
+          "testTop2": 74.24242424242425,
+          "testTop3": 84.84848484848484,
+          "avgCoteWin": 6.4868421052631575
+        },
+        {
+          "name": "Ch Rang (ranking)",
+          "trainTop1": 41.23711340206185,
+          "testTop1": 53.03030303030303,
+          "testTop2": 65.15151515151516,
+          "testTop3": 72.72727272727273,
+          "avgCoteWin": 6.671428571428571
+        },
+        {
+          "name": "Ch TauxP (ranking)",
+          "trainTop1": 18.556701030927837,
+          "testTop1": 43.93939393939394,
+          "testTop2": 54.54545454545454,
+          "testTop3": 60.60606060606061,
+          "avgCoteWin": 6.655172413793104
+        }
+      ],
+      "comboTop": [
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk TauxV (ranking)"
+          ],
+          "weights": [
+            0.4,
+            0.6
+          ],
+          "trainTop1": 32.98969072164948,
+          "testTop1": 95.45454545454545,
+          "testTop2": 95.45454545454545,
+          "testTop3": 96.96969696969697,
+          "avgCoteWin": 7.104761904761905
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk TauxV (ranking)"
+          ],
+          "weights": [
+            0.6,
+            0.4
+          ],
+          "trainTop1": 30.927835051546392,
+          "testTop1": 95.45454545454545,
+          "testTop2": 95.45454545454545,
+          "testTop3": 96.96969696969697,
+          "avgCoteWin": 7.104761904761905
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk TauxV (ranking)"
+          ],
+          "weights": [
+            0.8,
+            0.2
+          ],
+          "trainTop1": 31.958762886597935,
+          "testTop1": 95.45454545454545,
+          "testTop2": 95.45454545454545,
+          "testTop3": 96.96969696969697,
+          "avgCoteWin": 7.104761904761905
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk ScoreMixte"
+          ],
+          "weights": [
+            0.8,
+            0.2
+          ],
+          "trainTop1": 26.804123711340207,
+          "testTop1": 93.93939393939394,
+          "testTop2": 96.96969696969697,
+          "testTop3": 96.96969696969697,
+          "avgCoteWin": 7.135483870967742
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk TauxV (ranking)",
+            "Jk ScoreMixte"
+          ],
+          "weights": [
+            0.6,
+            0.2,
+            0.2
+          ],
+          "trainTop1": 26.804123711340207,
+          "testTop1": 93.93939393939394,
+          "testTop2": 96.96969696969697,
+          "testTop3": 96.96969696969697,
+          "avgCoteWin": 7.135483870967742
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk Rang (ranking)",
+            "Jk ScoreMixte"
+          ],
+          "weights": [
+            0.4,
+            0.4,
+            0.2
+          ],
+          "trainTop1": 29.896907216494846,
+          "testTop1": 93.93939393939394,
+          "testTop2": 96.96969696969697,
+          "testTop3": 96.96969696969697,
+          "avgCoteWin": 7.135483870967742
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk Rang (ranking)",
+            "Jk ScoreMixte"
+          ],
+          "weights": [
+            0.6,
+            0.2,
+            0.2
+          ],
+          "trainTop1": 28.865979381443296,
+          "testTop1": 93.93939393939394,
+          "testTop2": 96.96969696969697,
+          "testTop3": 96.96969696969697,
+          "avgCoteWin": 7.135483870967742
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk TauxV (ranking)"
+          ],
+          "weights": [
+            0.2,
+            0.8
+          ],
+          "trainTop1": 30.927835051546392,
+          "testTop1": 93.93939393939394,
+          "testTop2": 95.45454545454545,
+          "testTop3": 96.96969696969697,
+          "avgCoteWin": 7.104838709677419
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk Rang (ranking)"
+          ],
+          "weights": [
+            0.4,
+            0.6
+          ],
+          "trainTop1": 31.958762886597935,
+          "testTop1": 93.93939393939394,
+          "testTop2": 95.45454545454545,
+          "testTop3": 95.45454545454545,
+          "avgCoteWin": 7.104838709677419
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk Rang (ranking)"
+          ],
+          "weights": [
+            0.6,
+            0.4
+          ],
+          "trainTop1": 31.958762886597935,
+          "testTop1": 93.93939393939394,
+          "testTop2": 95.45454545454545,
+          "testTop3": 95.45454545454545,
+          "avgCoteWin": 7.104838709677419
+        }
+      ],
+      "beatsFav": true
+    },
+    "middle": {
+      "category": "Middle (1700-2200m)",
+      "trainSize": 105,
+      "testSize": 70,
+      "favTest": {
+        "n1": 25,
+        "f1": 25,
+        "n2": 36,
+        "f2": 36,
+        "n3": 46,
+        "f3": 47,
+        "total": 70,
+        "pN1": 35.714285714285715,
+        "pF1": 35.714285714285715,
+        "pN2": 51.42857142857142,
+        "pF2": 51.42857142857142,
+        "pN3": 65.71428571428571,
+        "pF3": 67.14285714285714,
+        "avgCoteWin": 3.504000000000001
+      },
+      "soloTop": [
+        {
+          "name": "Jk TauxP (ranking)",
+          "trainTop1": 5.714285714285714,
+          "testTop1": 84.28571428571429,
+          "testTop2": 88.57142857142857,
+          "testTop3": 90,
+          "avgCoteWin": 6.499999999999998
+        },
+        {
+          "name": "Jk Rang (ranking)",
+          "trainTop1": 13.333333333333334,
+          "testTop1": 84.28571428571429,
+          "testTop2": 85.71428571428571,
+          "testTop3": 92.85714285714286,
+          "avgCoteWin": 6.47966101694915
+        },
+        {
+          "name": "Jk TauxV (ranking)",
+          "trainTop1": 12.380952380952381,
+          "testTop1": 82.85714285714286,
+          "testTop2": 87.14285714285714,
+          "testTop3": 90,
+          "avgCoteWin": 6.531034482758618
+        },
+        {
+          "name": "Jk ScoreMixte",
+          "trainTop1": 3.8095238095238098,
+          "testTop1": 81.42857142857143,
+          "testTop2": 84.28571428571429,
+          "testTop3": 85.71428571428571,
+          "avgCoteWin": 6.542105263157892
+        },
+        {
+          "name": "Jk GainMoy (ranking)",
+          "trainTop1": 21.904761904761905,
+          "testTop1": 81.42857142857143,
+          "testTop2": 84.28571428571429,
+          "testTop3": 90,
+          "avgCoteWin": 6.5070175438596465
+        },
+        {
+          "name": "Cravache Rang",
+          "trainTop1": 14.285714285714285,
+          "testTop1": 81.42857142857143,
+          "testTop2": 85.71428571428571,
+          "testTop3": 90,
+          "avgCoteWin": 6.364912280701753
+        },
+        {
+          "name": "Ch TauxV (ranking)",
+          "trainTop1": 59.04761904761905,
+          "testTop1": 54.285714285714285,
+          "testTop2": 70,
+          "testTop3": 78.57142857142857,
+          "avgCoteWin": 6.213157894736841
+        },
+        {
+          "name": "Ch GainMoy (ranking)",
+          "trainTop1": 47.61904761904761,
+          "testTop1": 47.14285714285714,
+          "testTop2": 60,
+          "testTop3": 74.28571428571429,
+          "avgCoteWin": 6.7333333333333325
+        },
+        {
+          "name": "NbVictoires",
+          "trainTop1": 100,
+          "testTop1": 40,
+          "testTop2": 54.285714285714285,
+          "testTop3": 57.14285714285714,
+          "avgCoteWin": 7.725
+        },
+        {
+          "name": "Cote (1/cote)",
+          "trainTop1": 32.38095238095238,
+          "testTop1": 35.714285714285715,
+          "testTop2": 51.42857142857142,
+          "testTop3": 65.71428571428571,
+          "avgCoteWin": 3.504000000000001
+        }
+      ],
+      "comboTop": [
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk Rang (ranking)",
+            "Jk ScoreMixte"
+          ],
+          "weights": [
+            0.4,
+            0.4,
+            0.2
+          ],
+          "trainTop1": 7.6190476190476195,
+          "testTop1": 85.71428571428571,
+          "testTop2": 90,
+          "testTop3": 90,
+          "avgCoteWin": 6.724999999999997
+        },
+        {
+          "names": [
+            "Jk Rang (ranking)",
+            "Jk TauxV (ranking)",
+            "Jk ScoreMixte"
+          ],
+          "weights": [
+            0.4,
+            0.4,
+            0.2
+          ],
+          "trainTop1": 6.666666666666667,
+          "testTop1": 85.71428571428571,
+          "testTop2": 87.14285714285714,
+          "testTop3": 87.14285714285714,
+          "avgCoteWin": 6.979999999999998
+        },
+        {
+          "names": [
+            "Jk Rang (ranking)",
+            "Jk TauxV (ranking)",
+            "Jk ScoreMixte"
+          ],
+          "weights": [
+            0.6,
+            0.2,
+            0.2
+          ],
+          "trainTop1": 8.571428571428571,
+          "testTop1": 85.71428571428571,
+          "testTop2": 87.14285714285714,
+          "testTop3": 88.57142857142857,
+          "avgCoteWin": 6.979999999999998
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk Rang (ranking)"
+          ],
+          "weights": [
+            0.6,
+            0.4
+          ],
+          "trainTop1": 7.6190476190476195,
+          "testTop1": 84.28571428571429,
+          "testTop2": 88.57142857142857,
+          "testTop3": 91.42857142857143,
+          "avgCoteWin": 6.499999999999998
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk Rang (ranking)"
+          ],
+          "weights": [
+            0.8,
+            0.2
+          ],
+          "trainTop1": 5.714285714285714,
+          "testTop1": 84.28571428571429,
+          "testTop2": 88.57142857142857,
+          "testTop3": 91.42857142857143,
+          "avgCoteWin": 6.499999999999998
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk TauxV (ranking)"
+          ],
+          "weights": [
+            0.4,
+            0.6
+          ],
+          "trainTop1": 14.285714285714285,
+          "testTop1": 84.28571428571429,
+          "testTop2": 88.57142857142857,
+          "testTop3": 91.42857142857143,
+          "avgCoteWin": 6.483050847457625
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk GainMoy (ranking)"
+          ],
+          "weights": [
+            0.8,
+            0.2
+          ],
+          "trainTop1": 5.714285714285714,
+          "testTop1": 84.28571428571429,
+          "testTop2": 88.57142857142857,
+          "testTop3": 90,
+          "avgCoteWin": 6.499999999999998
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Cravache Rang"
+          ],
+          "weights": [
+            0.6,
+            0.4
+          ],
+          "trainTop1": 8.571428571428571,
+          "testTop1": 84.28571428571429,
+          "testTop2": 88.57142857142857,
+          "testTop3": 91.42857142857143,
+          "avgCoteWin": 6.499999999999998
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Cravache Rang"
+          ],
+          "weights": [
+            0.8,
+            0.2
+          ],
+          "trainTop1": 5.714285714285714,
+          "testTop1": 84.28571428571429,
+          "testTop2": 88.57142857142857,
+          "testTop3": 88.57142857142857,
+          "avgCoteWin": 6.499999999999998
+        },
+        {
+          "names": [
+            "Jk TauxV (ranking)",
+            "Cravache Rang"
+          ],
+          "weights": [
+            0.8,
+            0.2
+          ],
+          "trainTop1": 15.238095238095239,
+          "testTop1": 84.28571428571429,
+          "testTop2": 88.57142857142857,
+          "testTop3": 94.28571428571428,
+          "avgCoteWin": 6.47966101694915
+        }
+      ],
+      "beatsFav": true
+    },
+    "staying": {
+      "category": "Staying (>2200m)",
+      "trainSize": 95,
+      "testSize": 64,
+      "favTest": {
+        "n1": 20,
+        "f1": 21,
+        "n2": 32,
+        "f2": 32,
+        "n3": 39,
+        "f3": 39,
+        "total": 64,
+        "pN1": 31.25,
+        "pF1": 32.8125,
+        "pN2": 50,
+        "pF2": 50,
+        "pN3": 60.9375,
+        "pF3": 60.9375,
+        "avgCoteWin": 2.7800000000000002
+      },
+      "soloTop": [
+        {
+          "name": "Jk TauxP (ranking)",
+          "trainTop1": 14.736842105263156,
+          "testTop1": 87.5,
+          "testTop2": 89.0625,
+          "testTop3": 90.625,
+          "avgCoteWin": 9.178571428571427
+        },
+        {
+          "name": "Jk TauxV (ranking)",
+          "trainTop1": 21.052631578947366,
+          "testTop1": 82.8125,
+          "testTop2": 85.9375,
+          "testTop3": 89.0625,
+          "avgCoteWin": 9.326415094339621
+        },
+        {
+          "name": "Jk GainMoy (ranking)",
+          "trainTop1": 22.105263157894736,
+          "testTop1": 82.8125,
+          "testTop2": 84.375,
+          "testTop3": 92.1875,
+          "avgCoteWin": 9.239622641509431
+        },
+        {
+          "name": "Jk Rang (ranking)",
+          "trainTop1": 21.052631578947366,
+          "testTop1": 81.25,
+          "testTop2": 82.8125,
+          "testTop3": 92.1875,
+          "avgCoteWin": 9.313461538461537
+        },
+        {
+          "name": "Jk ScoreMixte",
+          "trainTop1": 5.263157894736842,
+          "testTop1": 81.25,
+          "testTop2": 82.8125,
+          "testTop3": 85.9375,
+          "avgCoteWin": 9.313461538461537
+        },
+        {
+          "name": "Cravache Rang",
+          "trainTop1": 18.947368421052634,
+          "testTop1": 81.25,
+          "testTop2": 85.9375,
+          "testTop3": 92.1875,
+          "avgCoteWin": 9.313461538461537
+        },
+        {
+          "name": "Ch TauxV (ranking)",
+          "trainTop1": 68.42105263157895,
+          "testTop1": 59.375,
+          "testTop2": 71.875,
+          "testTop3": 76.5625,
+          "avgCoteWin": 8.544736842105262
+        },
+        {
+          "name": "NbVictoires",
+          "trainTop1": 100,
+          "testTop1": 43.75,
+          "testTop2": 59.375,
+          "testTop3": 68.75,
+          "avgCoteWin": 5.30357142857143
+        },
+        {
+          "name": "Ch GainMoy (ranking)",
+          "trainTop1": 56.84210526315789,
+          "testTop1": 43.75,
+          "testTop2": 54.6875,
+          "testTop3": 65.625,
+          "avgCoteWin": 7.1000000000000005
+        },
+        {
+          "name": "Musique",
+          "trainTop1": 89.47368421052632,
+          "testTop1": 42.1875,
+          "testTop2": 51.5625,
+          "testTop3": 65.625,
+          "avgCoteWin": 5.911111111111112
+        }
+      ],
+      "comboTop": [
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk TauxV (ranking)"
+          ],
+          "weights": [
+            0.8,
+            0.2
+          ],
+          "trainTop1": 14.736842105263156,
+          "testTop1": 87.5,
+          "testTop2": 89.0625,
+          "testTop3": 90.625,
+          "avgCoteWin": 9.178571428571427
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk GainMoy (ranking)"
+          ],
+          "weights": [
+            0.4,
+            0.6
+          ],
+          "trainTop1": 13.684210526315791,
+          "testTop1": 87.5,
+          "testTop2": 87.5,
+          "testTop3": 92.1875,
+          "avgCoteWin": 8.97142857142857
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk TauxV (ranking)"
+          ],
+          "weights": [
+            0.6,
+            0.4
+          ],
+          "trainTop1": 16.842105263157894,
+          "testTop1": 85.9375,
+          "testTop2": 89.0625,
+          "testTop3": 90.625,
+          "avgCoteWin": 9.036363636363633
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk GainMoy (ranking)"
+          ],
+          "weights": [
+            0.6,
+            0.4
+          ],
+          "trainTop1": 13.684210526315791,
+          "testTop1": 85.9375,
+          "testTop2": 89.0625,
+          "testTop3": 92.1875,
+          "avgCoteWin": 9.036363636363633
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk GainMoy (ranking)"
+          ],
+          "weights": [
+            0.8,
+            0.2
+          ],
+          "trainTop1": 12.631578947368421,
+          "testTop1": 85.9375,
+          "testTop2": 89.0625,
+          "testTop3": 90.625,
+          "avgCoteWin": 9.036363636363633
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk Rang (ranking)"
+          ],
+          "weights": [
+            0.8,
+            0.2
+          ],
+          "trainTop1": 13.684210526315791,
+          "testTop1": 85.9375,
+          "testTop2": 89.0625,
+          "testTop3": 92.1875,
+          "avgCoteWin": 9.036363636363633
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk TauxV (ranking)",
+            "Jk GainMoy (ranking)"
+          ],
+          "weights": [
+            0.6,
+            0.2,
+            0.2
+          ],
+          "trainTop1": 13.684210526315791,
+          "testTop1": 85.9375,
+          "testTop2": 89.0625,
+          "testTop3": 92.1875,
+          "avgCoteWin": 9.036363636363633
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk GainMoy (ranking)"
+          ],
+          "weights": [
+            0.2,
+            0.8
+          ],
+          "trainTop1": 15.789473684210526,
+          "testTop1": 85.9375,
+          "testTop2": 87.5,
+          "testTop3": 92.1875,
+          "avgCoteWin": 9.06181818181818
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk Rang (ranking)"
+          ],
+          "weights": [
+            0.4,
+            0.6
+          ],
+          "trainTop1": 21.052631578947366,
+          "testTop1": 85.9375,
+          "testTop2": 87.5,
+          "testTop3": 90.625,
+          "avgCoteWin": 9.036363636363633
+        },
+        {
+          "names": [
+            "Jk TauxP (ranking)",
+            "Jk Rang (ranking)"
+          ],
+          "weights": [
+            0.6,
+            0.4
+          ],
+          "trainTop1": 15.789473684210526,
+          "testTop1": 85.9375,
+          "testTop2": 87.5,
+          "testTop3": 90.625,
+          "avgCoteWin": 9.036363636363633
+        }
+      ],
+      "beatsFav": true
+    }
+  }
+}

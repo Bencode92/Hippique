@@ -1,0 +1,198 @@
+{
+  "date": "2026-04-17T08:33:50.163Z",
+  "step": 10,
+  "results": {
+    "sprint": {
+      "total": 121,
+      "favori": {
+        "top1": 28.09917355371901,
+        "top2": 52.066115702479344,
+        "top3": 67.76859504132231
+      },
+      "actuelle": {
+        "top1": 28.09917355371901,
+        "top2": 47.107438016528924,
+        "top3": 61.15702479338842,
+        "weights": {
+          "wMus": 0.4,
+          "wCote": 0.4,
+          "wVal": 0.2,
+          "wIndivV": 0,
+          "wPelotonSmall": 0.15,
+          "wPelotonLarge": 0
+        }
+      },
+      "optimale": {
+        "top1": 40.49586776859504,
+        "top2": 51.2396694214876,
+        "top3": 62.8099173553719,
+        "weights": {
+          "wMus": 0,
+          "wCote": 0,
+          "wVal": 1,
+          "wIndivV": 0,
+          "wPelotonSmall": 0,
+          "wPelotonLarge": 0
+        },
+        "avgCoteWin": 5.922448979591835
+      },
+      "bestValue": {
+        "top1": 40.49586776859504,
+        "avgCoteWin": 5.922448979591835,
+        "weights": {
+          "wMus": 0,
+          "wCote": 0,
+          "wVal": 1,
+          "wIndivV": 0,
+          "wPelotonSmall": 0,
+          "wPelotonLarge": 0
+        }
+      },
+      "combosTestedCount": 24
+    },
+    "mile": {
+      "total": 163,
+      "favori": {
+        "top1": 29.447852760736197,
+        "top2": 47.85276073619632,
+        "top3": 65.03067484662577
+      },
+      "actuelle": {
+        "top1": 25.766871165644172,
+        "top2": 46.62576687116564,
+        "top3": 57.05521472392638,
+        "weights": {
+          "wMus": 0.2,
+          "wCote": 0.3,
+          "wVal": 0.5,
+          "wIndivV": 0,
+          "wPelotonSmall": 0.15,
+          "wPelotonLarge": 0
+        }
+      },
+      "optimale": {
+        "top1": 48.466257668711656,
+        "top2": 58.895705521472394,
+        "top3": 67.48466257668711,
+        "weights": {
+          "wMus": 1,
+          "wCote": 0,
+          "wVal": 0,
+          "wIndivV": 0,
+          "wPelotonSmall": 0,
+          "wPelotonLarge": 0
+        },
+        "avgCoteWin": 9.186075949367089
+      },
+      "bestValue": {
+        "top1": 48.466257668711656,
+        "avgCoteWin": 9.186075949367089,
+        "weights": {
+          "wMus": 1,
+          "wCote": 0,
+          "wVal": 0,
+          "wIndivV": 0,
+          "wPelotonSmall": 0,
+          "wPelotonLarge": 0
+        }
+      },
+      "combosTestedCount": 18
+    },
+    "middle": {
+      "total": 175,
+      "favori": {
+        "top1": 36,
+        "top2": 49.142857142857146,
+        "top3": 64
+      },
+      "actuelle": {
+        "top1": 30.28571428571429,
+        "top2": 47.42857142857143,
+        "top3": 58.285714285714285,
+        "weights": {
+          "wMus": 0,
+          "wCote": 0.5,
+          "wVal": 0.3,
+          "wIndivV": 0.2,
+          "wPelotonSmall": 0.15,
+          "wPelotonLarge": 0
+        }
+      },
+      "optimale": {
+        "top1": 73.14285714285714,
+        "top2": 75.42857142857143,
+        "top3": 78.85714285714286,
+        "weights": {
+          "wMus": 0,
+          "wCote": 0,
+          "wVal": 0,
+          "wIndivV": 1,
+          "wPelotonSmall": 0,
+          "wPelotonLarge": 0
+        },
+        "avgCoteWin": 8.380468750000002
+      },
+      "bestValue": {
+        "top1": 73.14285714285714,
+        "avgCoteWin": 8.380468750000002,
+        "weights": {
+          "wMus": 0,
+          "wCote": 0,
+          "wVal": 0,
+          "wIndivV": 1,
+          "wPelotonSmall": 0,
+          "wPelotonLarge": 0
+        }
+      },
+      "combosTestedCount": 99
+    },
+    "staying": {
+      "total": 159,
+      "favori": {
+        "top1": 31.446540880503143,
+        "top2": 47.79874213836478,
+        "top3": 63.52201257861635
+      },
+      "actuelle": {
+        "top1": 31.446540880503143,
+        "top2": 47.16981132075472,
+        "top3": 62.264150943396224,
+        "weights": {
+          "wMus": 0.3,
+          "wCote": 0.4,
+          "wVal": 0.3,
+          "wIndivV": 0,
+          "wPelotonSmall": 0.15,
+          "wPelotonLarge": 0
+        }
+      },
+      "optimale": {
+        "top1": 70.44025157232704,
+        "top2": 76.10062893081762,
+        "top3": 83.01886792452831,
+        "weights": {
+          "wMus": 1,
+          "wCote": 0,
+          "wVal": 0,
+          "wIndivV": 0,
+          "wPelotonSmall": 0,
+          "wPelotonLarge": 0
+        },
+        "avgCoteWin": 6.908035714285716
+      },
+      "bestValue": {
+        "top1": 70.44025157232704,
+        "avgCoteWin": 6.908035714285716,
+        "weights": {
+          "wMus": 1,
+          "wCote": 0,
+          "wVal": 0,
+          "wIndivV": 0,
+          "wPelotonSmall": 0,
+          "wPelotonLarge": 0
+        }
+      },
+      "combosTestedCount": 83
+    }
+  }
+}

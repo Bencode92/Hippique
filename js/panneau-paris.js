@@ -201,7 +201,7 @@ const PanneauParis = (() => {
     };
   }
 
-  return { pourCourse, probabilites, LAMBDA };
+  return { pourCourse, probabilites, profilCourse, LAMBDA, OVERROUND_MIN, OVERROUND_MAX };
 })();
 if (typeof module !== 'undefined') module.exports = PanneauParis;
 if (typeof window !== 'undefined') window.PanneauParis = PanneauParis;
