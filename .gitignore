@@ -37,3 +37,8 @@ env/
 # ============================================================
 data/*_ponderated_20*.json
 data/extraction_report_20*.json
+
+# ajoutés après un git add -A trop large
+.DS_Store
+**/.DS_Store
+hippique-clean/
