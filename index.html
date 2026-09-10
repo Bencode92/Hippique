@@ -2376,9 +2376,9 @@
                                     <th style="width:50px">Poids</th>
                                     <th style="width:50px">Cote</th>
                                     <th style="width:140px" title="Score formule actuelle (du site)">Score</th>
-                                    <th style="width:75px" title="Rang formule optimale (champion stats.html du bucket distance)">Rg Optimal</th>
-                                    <th style="width:65px" title="Rang dans les favoris cote (1=cote la + basse)">Rg Cote</th>
-                                    <th style="width:80px" title="Consensus : nombre de méthodes (Actuelle + Optimale + Cote) où le cheval est dans le top 3">Consensus</th>
+                                    <th style="width:78px" title="Rang par la cote — la référence. Son n°1 gagne 34,9 % du temps, mesuré sur 14 620 courses de plat FR 2022-2026.">Marché<br><span style="font-weight:400;opacity:.6;font-size:.8em">34,9 %</span></th>
+                                    <th style="width:78px" title="Rang par la formule Optimale (champion du bucket distance). Son n°1 gagne 33,6 % du temps sur les mêmes courses, soit 1,3 point DE MOINS que la simple cote. Conservé pour comparaison, pas comme référence.">Optimale<br><span style="font-weight:400;opacity:.6;font-size:.8em">33,6 %</span></th>
+                                    <th style="width:80px" title="Nombre de méthodes plaçant le cheval dans leur top 3. Indicatif : les méthodes ne se valent pas, seule la colonne Marché a une performance établie.">Accord</th>
                                     <th style="width:55px">Arrivée</th>
                                 </tr>
                             </thead>
@@ -2670,15 +2670,19 @@
                                     const consensus = (inTopActuel ? 1 : 0) + (inTopCote ? 1 : 0) + (inTopOpt ? 1 : 0);
                                     const totalMethods = optimalResult ? 3 : 2;
                                     const medal = r => r === 1 ? '🥇' : r === 2 ? '🥈' : r === 3 ? '🥉' : '';
-                                    const cotaBadge = rgCote ? `<span style="font-weight:700">${medal(rgCote)}${medal(rgCote) ? ' ' : ''}${rgCote}</span>` : '<span style="opacity:0.3">-</span>';
-                                    const optBadge = rgOpt ? `<span style="font-weight:700;color:${inTopOpt ? '#40e05a' : 'inherit'}">${medal(rgOpt)}${medal(rgOpt) ? ' ' : ''}${rgOpt}</span>` : '<span style="opacity:0.3">-</span>';
+                                    // Le relief va au marché : c'est la seule méthode dont la
+                                    // performance soit établie (34,9 % de Top1 contre 33,6 % pour
+                                    // l'Optimale, sur 14 620 courses). L'Optimale reste affichée,
+                                    // en retrait, pour comparaison.
+                                    const cotaBadge = rgCote ? `<span style="font-weight:700;color:${inTopCote ? '#40e05a' : 'inherit'}">${medal(rgCote)}${medal(rgCote) ? ' ' : ''}${rgCote}</span>` : '<span style="opacity:0.3">-</span>';
+                                    const optBadge = rgOpt ? `<span style="font-weight:600">${medal(rgOpt)}${medal(rgOpt) ? ' ' : ''}${rgOpt}</span>` : '<span style="opacity:0.3">-</span>';
                                     let consensusBadge;
                                     const stars = '⭐'.repeat(consensus);
                                     if (consensus === totalMethods) consensusBadge = `<span style="color:#40e05a;font-weight:700;font-size:1.1em" title="Top 3 dans toutes les méthodes — pick fort">${stars} ${consensus}/${totalMethods}</span>`;
                                     else if (consensus >= 2) consensusBadge = `<span style="color:#7ed957;font-weight:700" title="Top 3 dans ${consensus} méthodes sur ${totalMethods}">${stars} ${consensus}/${totalMethods}</span>`;
                                     else if (consensus === 1) consensusBadge = `<span style="color:#D4AF37" title="Top 3 dans 1 méthode">${stars} 1/${totalMethods}</span>`;
                                     else consensusBadge = `<span style="opacity:0.3">0/${totalMethods}</span>`;
-                                    return `<td style="text-align:center;font-size:0.9em">${optBadge}</td><td style="text-align:center;font-size:0.9em">${cotaBadge}</td><td style="text-align:center">${consensusBadge}</td>`;
+                                    return `<td style="text-align:center;font-size:0.9em">${cotaBadge}</td><td style="text-align:center;font-size:0.9em;opacity:.75">${optBadge}</td><td style="text-align:center">${consensusBadge}</td>`;
                                 })()}
                                 <td style="text-align:center">${arriveeHTML}</td>
                             </tr>
