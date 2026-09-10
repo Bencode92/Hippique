@@ -93,3 +93,76 @@ console.log(`  C'est un arbitrage à rendre explicitement, pas à corriger en do
 
 console.log(`\n  À relancer tous les trimestres. Ne pas ajuster le seuil : une règle`);
 console.log(`  d'arrêt qu'on déplace quand elle se rapproche ne protège de rien.`);
+
+// ── CUSUM (Page) ────────────────────────────────────────────────────────
+// Une fenêtre glissante ne détecte pas une érosion : elle noie la dérive dans
+// son propre intervalle. Le CUSUM cumule les écarts course par course et
+// signale dès que le cumul dépasse un seuil, sans attendre que la moyenne de
+// fenêtre bouge.
+//
+// NOTE DE SIGNE. La formule proposée — S = max(0, S + (rendement − référence
+// + 4 pts)) — détecte une HAUSSE : quand le rendement s'effondre, le terme
+// devient négatif et S retombe à zéro, donc l'alarme ne sonne jamais. Le
+// CUSUM unilatéral BAS s'écrit :
+//        S = max(0, S + (référence − rendement − marge))
+// avec marge = la moitié de la dérive à détecter. C'est cette forme qui est
+// implémentée ici.
+const REF   = -0.037;   // chiffre canonique, par course
+const DERIVE = -0.08;   // dérive à détecter : passage de -4 % à -12 %
+const MARGE = Math.abs(DERIVE) / 2;
+const ARL0_CIBLE = 3700; // ~10 ans à 370 courses/an sans fausse alerte
+
+const x = L.map(c => c.gain - 1);   // profit par euro misé
+
+function cusum(serie, h) {
+  let S = 0;
+  for (let i = 0; i < serie.length; i++) {
+    S = Math.max(0, S + (REF - serie[i] - MARGE));
+    if (S > h) return i + 1;        // course de déclenchement
+  }
+  return null;
+}
+// calibrage de h par rééchantillonnage sous l'hypothèse « rien n'a changé »
+function calibrer() {
+  const tirage = n => Array.from({length:n}, () => x[(Math.random()*x.length)|0]);
+  // borne haute large : le cumul évolue à l'échelle de sd*sqrt(n), soit ~90
+  // pour 3 700 courses à 150 pt d'écart-type. Une borne à 30 saturerait.
+  let lo = 1, hi = 600;
+  for (let it = 0; it < 22; it++) {
+    const h = (lo + hi) / 2;
+    let dec = 0;
+    const N = 400;
+    for (let k = 0; k < N; k++) if (cusum(tirage(ARL0_CIBLE), h) !== null) dec++;
+    // on vise ~63 % de déclenchement sur une longueur ARL0 (loi géométrique)
+    if (dec / N > 0.63) lo = h; else hi = h;
+  }
+  return (lo + hi) / 2;
+}
+const h = calibrer();
+
+console.log(`\n────────────────────────────────────────────────────────────`);
+console.log(`CUSUM — détecter une érosion, pas seulement un effondrement\n`);
+console.log(`  référence ${(100*REF).toFixed(1)} % · dérive visée ${(100*DERIVE).toFixed(0)} pt · marge ${(100*MARGE).toFixed(0)} pt`);
+console.log(`  seuil h calibré par rééchantillonnage : ${h.toFixed(2)}  (1 fausse alerte / ~10 ans)`);
+
+const decl = cusum(x, h);
+console.log(`\n  SUR L'HISTORIQUE RÉEL (${x.length} courses, ${L[0].date} → ${dernier})`);
+if (decl === null) console.log(`  ✅ le CUSUM ne se déclenche pas — conforme à la prédiction écrite d'avance.`);
+else console.log(`  ⛔ déclenchement à la course ${decl} (${L[decl-1].date}).`);
+
+// puissance : combien de courses pour repérer la dérive si elle survient ?
+const sim = [];
+for (let k = 0; k < 400; k++) {
+  const dec = Math.random; // rendements dégradés : on retire la dérive à chaque tirage
+  const serie = Array.from({length:4000}, () => x[(Math.random()*x.length)|0] + DERIVE);
+  const d = cusum(serie, h);
+  if (d !== null) sim.push(d);
+}
+sim.sort((a,b)=>a-b);
+if (sim.length) {
+  const med = sim[sim.length>>1];
+  console.log(`\n  SI L'ÉROSION SURVIENT (${(100*DERIVE).toFixed(0)} pt) : détectée en ${med} courses en médiane`);
+  console.log(`  soit ${(med/370).toFixed(1)} an${med/370>=2?'s':''} à 370 courses par an  ` +
+              `(9 fois sur 10 avant ${sim[Math.floor(0.9*sim.length)]} courses)`);
+  console.log(`  Pour mémoire, la fenêtre glissante 24 mois ne la détecte jamais.`);
+}
