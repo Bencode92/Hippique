@@ -965,8 +965,13 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
     extraireNomBaseCheval(nom) {
         if (!nom) return "";
 
-        // Supprimer les suffixes H.PS, F.PS, M.PS avec leur âge
-        let cleaned = nom.replace(/\s+[HFM]\.?P\.?[US]?\.?\s+\d+\s*a\.?.*/i, '').trim();
+        // Le libellé PMU est « NOM <SEXE>.<RACE>. <âge> a. » : sexe H/F/M,
+        // race PU (pur-sang), PS, TR (trotteur), AQPS, AR (arabe), AN (anglo-
+        // arabe). L'ancien motif ne reconnaissait que PU/PS et laissait donc
+        // passer les 30 000 libellés de trot, jamais rattachés au classement.
+        let cleaned = nom.replace(/\s+[HFM]\.\s*(?:AQPS|PU|PS|TR|AR|AN)\s*\.?(?:\s+\d+\s*a\.?)?.*$/i, '').trim();
+        // âge seul, quand le suffixe de race est absent
+        cleaned = cleaned.replace(/\s+\d+\s*a\.?\s*$/i, '').trim();
 
         // Supprimer les suffixes de pays : (IRE), (GB), (GER), (FR), (USA), IRE, GB, GER
         cleaned = cleaned.replace(/\s*\((IRE|GB|GER|FR|USA|ITY|JPN|AUS|NZ|BRZ|ARG|CAN|SAF|SPA|SWE|DEN|NOR|HOL|BEL|CZE|HUN|POL|TUR|CHI|URU|PER)\)\s*$/i, '').trim();
@@ -2121,6 +2126,19 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         
         // Amélioré - utiliser toute la stratégie de recherche progressive
         const resultat = this.trouverMeilleurScore(donneesClassement, nom);
+        // Dernier recours : même nom à la ponctuation près. « P&C.PELTIER (S) »
+        // et « P&C. PELTIER (S) » sont la même écurie, « REMI.CAMPOS » et
+        // « REMI CAMPOS » le même jockey. On écrase seulement la ponctuation et
+        // les espaces — jamais l'ordre ni les prénoms — donc l'identité est
+        // préservée : rapprocher par nom de famille seul confondrait
+        // « GUILLAUME MARTIN » et « ADRIAN LE LAY MARTIN ».
+        if (!resultat.item) {
+            const item = this._parClePonctuation(donneesClassement, nom, categorie);
+            if (item) {
+                console.log(`Correspondance à la ponctuation près pour "${nom}": "${item.Nom || item.NomPostal}"`);
+                return item;
+            }
+        }
         if (resultat.item) {
             console.log(`Correspondance trouvée pour "${nom}": "${resultat.item.Nom || resultat.item.NomPostal}" (similarité: ${resultat.similarite || 'N/A'}%)`);
         } else {
@@ -2129,6 +2147,36 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         return resultat.item;
     },
     
+    // Index « nom sans ponctuation » → item, construit une fois par jeu de
+    // données. Une clé déjà prise n'est jamais écrasée : en cas d'ambiguïté on
+    // préfère ne rien renvoyer plutôt que rattacher le mauvais acteur.
+    _clePonctuation(nom) {
+        return (nom || '').toUpperCase()
+            .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+            .replace(/\((?:S|J)\)/g, '')
+            .replace(/[^A-Z0-9&]/g, '');
+    },
+
+    _parClePonctuation(donneesClassement, nom, categorie) {
+        const cle = this._clePonctuation(nom);
+        if (cle.length < 4) return null;
+        if (!this._idxPonct) this._idxPonct = new WeakMap();
+        let idx = this._idxPonct.get(donneesClassement);
+        if (!idx) {
+            idx = new Map();
+            const ambigus = new Set();
+            for (const it of donneesClassement) {
+                const k = this._clePonctuation(it.Nom || it.NomPostal);
+                if (k.length < 4) continue;
+                if (idx.has(k)) { ambigus.add(k); continue; }
+                idx.set(k, it);
+            }
+            for (const k of ambigus) idx.delete(k);
+            this._idxPonct.set(donneesClassement, idx);
+        }
+        return idx.get(cle) || null;
+    },
+
     // Trouver le rang d'un acteur dans son classement pondéré
     trouverRangDansClassement(donneesClassement, nom, categorie) {
         if (!nom || !donneesClassement || !donneesClassement.length) {
