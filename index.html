@@ -1693,12 +1693,41 @@
                         return courseData;
                     }
                     
-                    // Charger les données de chaque fichier
-                    for (const file of courseFiles) {
+                    // Les fichiers étaient chargés un par un : sur une journée à
+                    // 20 réunions, cela fait 20 allers-retours réseau en série.
+                    //
+                    // Trois tentatives de parallélisation ont été annulées par le
+                    // passé (2cb18dc4, 8be7b382, 086bf075). La raison en est
+                    // visible ici : processFile() ÉCRIT dans courseData, donc
+                    // paralléliser le traitement change l'ordre d'insertion des
+                    // hippodromes et des courses, et l'affichage avec.
+                    //
+                    // On ne parallélise donc que les TÉLÉCHARGEMENTS, puis on
+                    // traite dans l'ordre d'origine : le courseData produit est
+                    // identique à celui de la version séquentielle, ce qui se
+                    // vérifie (bench/bench-parallele.mjs).
+                    const CONCURRENCE = 8;
+                    const charges = new Array(courseFiles.length).fill(null);
+                    let curseur = 0;
+                    await Promise.all(
+                        Array.from({ length: Math.min(CONCURRENCE, courseFiles.length) }, async () => {
+                            for (;;) {
+                                const i = curseur++;
+                                if (i >= courseFiles.length) return;
+                                try {
+                                    charges[i] = await this.fetchFile(courseFiles[i]);
+                                } catch (e) {
+                                    console.error(`Erreur au chargement de ${courseFiles[i].name}:`, e);
+                                }
+                            }
+                        })
+                    );
+                    for (let i = 0; i < courseFiles.length; i++) {
+                        if (!charges[i]) continue;
                         try {
-                            await this.processFile(file, courseData);
+                            await this.processFile(courseFiles[i], courseData, charges[i]);
                         } catch (fileError) {
-                            console.error(`Erreur lors du traitement du fichier ${file.name}:`, fileError);
+                            console.error(`Erreur lors du traitement du fichier ${courseFiles[i].name}:`, fileError);
                         }
                     }
 
@@ -1730,22 +1759,30 @@
                 }
             },
             
-            // Traiter un fichier JSON
-            async processFile(file, courseData) {
+            // Télécharger un fichier de courses, sans le traiter. Séparé de
+            // processFile() pour que les téléchargements puissent partir en
+            // parallèle sans que l'ingestion, elle, sorte de son ordre.
+            async fetchFile(file) {
                 // Cache-buster (timestamp + random salt) + cache:'no-store' :
                 // bypass le CDN Fastly ET le cache navigateur. Critique pour voir
                 // les nouvelles cotes après un push (sinon le navigateur sert encore l'ancien JSON).
                 const url = `${file.download_url}?_=${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
-                console.log(`Traitement du fichier: ${file.name}, URL: ${url}`);
-
-                const fileResponse = await fetchWithRetry(url, { cache: 'no-store' });
-                if (!fileResponse.ok) {
-                    console.error(`Erreur lors du chargement du fichier ${file.name}: ${fileResponse.status}`);
-                    return;
+                const r = await fetchWithRetry(url, { cache: 'no-store' });
+                if (!r.ok) {
+                    console.error(`Erreur lors du chargement du fichier ${file.name}: ${r.status}`);
+                    return null;
                 }
-                
+                return r.json();
+            },
+
+            // Traiter un fichier JSON. `preloaded` est le contenu déjà téléchargé
+            // par fetchFile ; sans lui, le fichier est récupéré à la demande.
+            async processFile(file, courseData, preloaded) {
+                const fileData0 = preloaded !== undefined ? preloaded : await this.fetchFile(file);
+                if (!fileData0) return;
+
                 try {
-                    const fileData = await fileResponse.json();
+                    const fileData = fileData0;
                     console.log(`Structure du fichier ${file.name}:`, Object.keys(fileData));
                     
                     // ÉTAPE 1: Vérifier si c'est une réunion de type PLAT
