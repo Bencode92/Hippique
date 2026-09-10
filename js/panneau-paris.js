@@ -94,11 +94,25 @@ const PanneauParis = (() => {
          + pOrdre(P, j, k, i) + pOrdre(P, k, i, j) + pOrdre(P, k, j, i);
   }
 
+  /** Σ(1/cote) attendu en pari mutuel : médiane 1,18 sur 17 534 courses réelles,
+   *  1er centile 1,10, 99e centile 1,47 — les petits pelotons montent naturellement
+   *  plus haut. Hors de [1,03 ; 1,60] les
+   *  cotes sont incomplètes (partants manquants, non-partants, données partielles)
+   *  et toute probabilité qu'on en tirerait serait fausse — on refuse de calculer
+   *  plutôt que d'afficher une espérance absurde. */
+  const OVERROUND_MIN = 1.03, OVERROUND_MAX = 1.60;
+
   function pourCourse(participants, { profondeur = 5 } = {}) {
     const parts = (participants || [])
       .filter((p) => (parseFloat(p.cote) || 0) > 1)
       .sort((a, b) => parseFloat(a.cote) - parseFloat(b.cote));
     if (parts.length < 5) return null;
+    const overround = parts.reduce((s, p) => s + 1 / parseFloat(p.cote), 0);
+    if (overround < OVERROUND_MIN || overround > OVERROUND_MAX) {
+      return { incomplet: true, overround,
+               raison: `cotes incomplètes — Σ(1/cote) = ${overround.toFixed(2)}, attendu entre 1,03 et 1,60`,
+               simple: [], couple: [], trio: [], deuxSurQuatre: [], recommandation: null };
+    }
     const P = probabilites(parts);
     const nom = (p) => p.cheval || p.nom || `#${p['n°'] || p.numero || ''}`;
     const k = Math.min(profondeur, parts.length);
