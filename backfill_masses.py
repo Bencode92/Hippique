@@ -16,8 +16,12 @@ Sortie : data/masses/YYYY-MM.jsonl, reprise automatique.
 import json, os, sys, time, urllib.request, urllib.error
 BASE = "https://online.turfinfo.api.pmu.fr/rest/client/61"
 RAC = os.path.dirname(os.path.abspath(__file__))
-SRC, OUT = os.path.join(RAC, "data", "histo"), os.path.join(RAC, "data", "masses")
-GARDE = {"E_SIMPLE_GAGNANT", "E_SIMPLE_PLACE"}
+SRC, OUT = os.path.join(RAC, "data", "histo"), os.path.join(RAC, "data", "masses2")
+# Les pools combinés sont tronqués aux 12 plus grosses combinaisons par l'API.
+# C'est suffisant : les paires qu'on évalue sont celles des favoris, donc parmi
+# les plus chargées. Les combinaisons absentes sont traitées comme non observées.
+GARDE = {"E_SIMPLE_GAGNANT", "E_SIMPLE_PLACE", "E_COUPLE_GAGNANT",
+         "E_COUPLE_PLACE", "E_TRIO"}
 
 def get(url, essais=3):
     for i in range(essais):
@@ -60,7 +64,8 @@ def main():
                     m = {}
                     for x in lc:
                         c = x.get("combinaison") or []
-                        if len(c) == 1 and x.get("totalEnjeu"): m[str(c[0])] = x["totalEnjeu"]
+                        if c and x.get("totalEnjeu"):
+                            m["-".join(str(v) for v in sorted(c))] = x["totalEnjeu"]
                     if m: pools[t] = m
                 if len(pools) < 2: continue
                 fh.write(json.dumps({"date": cr["date"], "r": cr["r"], "c": cr["c"],

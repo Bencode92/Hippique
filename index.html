@@ -1281,7 +1281,7 @@
     </div>
 
     <!-- Module ranking-loader (doit être chargé avant le script principal) -->
-    <script src="js/panneau-paris.js?v=1"></script>
+    <script src="js/panneau-paris.js?v=2"></script>
     <script src="js/ranking-loader.js?v=19"></script>
 
     <!-- Module de chargement des courses -->
@@ -1482,32 +1482,39 @@
             if (!pan) return;
             const pct = v => (v * 100).toFixed(1) + '%';
             const ev = v => {
-                const c = v > -0.15 ? '#5fffaf' : v > -0.25 ? '#e9d18c' : '#ff8a7a';
+                const c = v > -0.13 ? '#5fffaf' : v > -0.22 ? '#e9d18c' : '#ff8a7a';
                 return `<span style="color:${c};font-variant-numeric:tabular-nums">${(v * 100).toFixed(1)}%</span>`;
             };
             const ligne = x => `<tr>
-                <td style="padding:2px 8px 2px 0">${x.meilleureEv ? '<span title="meilleure espérance de la liste" style="color:var(--gold)">\u25B8</span> ' : ''}${x.chevaux.join(' + ')}</td>
+                <td style="padding:2px 8px 2px 0">${x.meilleureEv ? '<span style="color:var(--gold)">\u25B8</span> ' : ''}${x.chevaux.join(' + ')}</td>
                 <td style="padding:2px 8px;text-align:right;font-variant-numeric:tabular-nums;opacity:.75">${pct(x.p)}</td>
                 <td style="padding:2px 0;text-align:right">${ev(x.ev)}</td></tr>`;
-            const col = (titre, arr) => `<div style="min-width:210px;flex:1">
-                <div style="font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;opacity:.6;margin-bottom:.3rem">${titre}</div>
-                <table style="width:100%;font-size:.84rem;border-collapse:collapse">
-                    <tr style="opacity:.5;font-size:.72rem"><td></td><td style="text-align:right">proba</td><td style="text-align:right">espérance</td></tr>
+            const col = (titre, arr, note) => !arr.length ? '' : `<div style="min-width:200px;flex:1">
+                <div style="font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;opacity:.6;margin-bottom:.3rem">${titre}${note ? ` <span style="opacity:.6;text-transform:none;letter-spacing:0">${note}</span>` : ''}</div>
+                <table style="width:100%;font-size:.83rem;border-collapse:collapse">
+                    <tr style="opacity:.5;font-size:.7rem"><td></td><td style="text-align:right">proba</td><td style="text-align:right">espérance</td></tr>
                     ${arr.slice(0, 3).map(ligne).join('')}
                 </table></div>`;
+            const R = pan.recommandation;
             const el = document.createElement('div');
             el.className = 'panneau-paris';
             el.style.cssText = 'margin:0 0 .9rem;padding:.7rem .9rem;background:rgba(20,60,58,.35);border:1px solid rgba(233,209,140,.18);border-radius:6px';
             el.innerHTML = `
-                <div style="display:flex;gap:1.4rem;flex-wrap:wrap">
-                    ${col('Simple gagnant', pan.simple)}
+                ${R ? `<div style="margin-bottom:.6rem;padding:.45rem .7rem;background:rgba(212,175,55,.1);border-left:3px solid var(--gold);border-radius:3px">
+                    <span style="font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;opacity:.65">Pari le moins coûteux</span><br>
+                    <strong style="color:var(--gold)">${R.pari.toUpperCase()}</strong> — ${R.chevaux.join(' + ')}
+                    <span style="opacity:.7;font-size:.86rem">&nbsp;·&nbsp;${R.pourquoi}</span>
+                </div>` : ''}
+                <div style="display:flex;gap:1.2rem;flex-wrap:wrap">
+                    ${col('Simple gagnant', pan.simple, '(exact)')}
                     ${col('Couplé gagnant', pan.couple)}
                     ${col('Trio', pan.trio)}
+                    ${col('2 sur 4', pan.deuxSurQuatre)}
                 </div>
-                <div style="margin-top:.5rem;font-size:.74rem;opacity:.55;line-height:1.4">
-                    Classé par probabilité. \u25B8 marque la meilleure espérance, pour 1 € misé,
-                    mesurée sur 13 242 courses 2022-2025. Prélèvement 16,5 % : aucune espérance
-                    n'est positive, et les écarts inférieurs à 1 point sont dans le bruit.
+                <div style="margin-top:.5rem;font-size:.72rem;opacity:.55;line-height:1.4">
+                    Probabilités corrigées du biais favori/outsider (159 103 partants) ; combinaisons par le modèle de Stern, λ = 0,85.
+                    L'espérance du simple gagnant est propre à cette course ; celles des combinés sont des moyennes mesurées par composition
+                    sur 13 000 à 17 000 courses. Prélèvement : 14 % au gagnant, 26 % au couplé, 31 % au trio. Aucune espérance n'est positive.
                 </div>`;
             const doublon = ancre.parentNode.querySelector('.panneau-paris');
             if (doublon) doublon.remove();
