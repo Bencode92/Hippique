@@ -2602,12 +2602,29 @@
                         // Cote PMU : ouverture → actuelle
                         const coteValue = participant.cote ? parseFloat(participant.cote).toFixed(1) : '-';
                         const coteRefValue = participant.cote_reference ? parseFloat(participant.cote_reference).toFixed(1) : null;
+                        // Signalement des cotes longues. Mesuré sur 45 629 paris de plat FR
+                        // 2022-2026 : rendement du fait de miser sur un cheval de la tranche.
+                        //   cote 9–15  : −15,7 %      cote 25–50 : −26,8 %
+                        //   cote 15–25 : −15,7 %      cote >= 50 : −48,9 %
+                        // Ces chevaux gagnent à la MOITIÉ de leur probabilité affichée
+                        // (0,8 % observé contre 1,4 % implicite au-delà de 50).
+                        const coteNum = parseFloat(participant.cote) || 0;
+                        const alerteCote = coteNum >= 50
+                            ? { c: '#ff6b5a', t: 'Cote au-delà de 50 : ces chevaux rendent −48,9 % et gagnent à la moitié de leur probabilité affichée (45 629 paris mesurés)' }
+                            : coteNum >= 25
+                            ? { c: '#ff8a7a', t: 'Cote 25 à 50 : rendement mesuré −26,8 %' }
+                            : coteNum >= 15
+                            ? { c: '#e9a08a', t: 'Cote au-delà de 15 : rendement mesuré −15,7 %' }
+                            : null;
                         let coteDisplay = coteValue;
                         if (coteRefValue && coteValue !== '-') {
                             const diff = parseFloat(coteValue) - parseFloat(coteRefValue);
                             const color = diff < -0.3 ? '#40e05a' : diff > 0.3 ? '#e05a40' : 'rgba(255,255,255,0.5)';
                             const arrow = diff < -0.3 ? '→' : diff > 0.3 ? '→' : '→';
                             coteDisplay = `<span title="Ouverture → Actuelle"><span style="font-size:0.75em;opacity:0.6">${coteRefValue}</span> <span style="color:${color};font-size:0.7em">${arrow}</span> ${coteValue}</span>`;
+                        }
+                        if (alerteCote) {
+                            coteDisplay = `<span style="color:${alerteCote.c}" title="${alerteCote.t}">${coteDisplay} <span style="font-size:.8em;opacity:.8">⚠</span></span>`;
                         }
 
                         // Score color (vert=bon, rouge=mauvais)
