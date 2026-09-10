@@ -123,6 +123,40 @@ def scrape_cotes_course(date_pmu, reunion_num, course_num, course_info):
     }
 
 
+def enregistrer_snapshot(filepath, result, minutes_avant, logger):
+    """Garde le snapshot le PLUS PROCHE du départ.
+
+    Deux défauts corrigés ici (mesure : 50 captures sur 152 étaient postérieures
+    au départ, cf. bench/fraicheur_cotes.mjs) :
+      - on gardait la PREMIÈRE capture, donc la plus ÉLOIGNÉE du départ, alors
+        que la valeur d'une cote live est d'être tardive ;
+      - la branche « vient de partir » écrivait sans vérifier l'existant : une
+        bonne capture à T-8 était écrasée par une capture à T+3, inutilisable
+        pour parier.
+
+    Règle : un snapshot pris avant le départ prime toujours sur un snapshot pris
+    après ; entre deux snapshots d'avant, le plus tardif gagne.
+    """
+    if os.path.exists(filepath):
+        try:
+            with open(filepath, encoding='utf-8') as f:
+                ancien = json.load(f).get("minutes_avant_depart")
+        except Exception:
+            ancien = None
+        if ancien is not None:
+            # un snapshot d'après le départ ne remplace jamais un snapshot d'avant
+            if minutes_avant <= 0 < ancien:
+                logger.info(f"   \u23ed\ufe0f  conserve T-{ancien} min (le nouveau est postérieur au départ)")
+                return False
+            # sinon on ne remplace que si l'on se rapproche du départ
+            if 0 < ancien <= minutes_avant:
+                logger.info(f"   \u23ed\ufe0f  conserve T-{ancien} min (plus proche que T-{minutes_avant})")
+                return False
+    with open(filepath, 'w', encoding='utf-8') as f:
+        json.dump(result, f, ensure_ascii=False, indent=2)
+    return True
+
+
 def main():
     logger.info("🏇 Scraper pré-course — cotes live")
     logger.info(f"📅 {datetime.now().strftime('%Y-%m-%d %H:%M')}")
@@ -175,12 +209,8 @@ def main():
                     filename = f"{date_iso}_{safe_hippo}_R{reunion_num}C{course_num}_live.json"
                     filepath = os.path.join(OUTPUT_DIR, filename)
 
-                    if os.path.exists(filepath):
-                        logger.info(f"   ⏭️  Déjà capté, skip")
+                    if not enregistrer_snapshot(filepath, result, minutes_avant, logger):
                         continue
-
-                    with open(filepath, 'w', encoding='utf-8') as f:
-                        json.dump(result, f, ensure_ascii=False, indent=2)
 
                     logger.info(f"   💾 {filepath}")
                     logger.info(f"   📊 {len(result['participants'])} participants avec cotes live")
@@ -203,8 +233,8 @@ def main():
                     safe_hippo = hippo_nom.lower().replace(" ", "_").replace("/", "-")
                     filename = f"{date_iso}_{safe_hippo}_R{reunion_num}C{course_num}_live.json"
                     filepath = os.path.join(OUTPUT_DIR, filename)
-                    with open(filepath, 'w', encoding='utf-8') as f:
-                        json.dump(result, f, ensure_ascii=False, indent=2)
+                    if not enregistrer_snapshot(filepath, result, minutes_avant, logger):
+                        continue
                     courses_scrapees += 1
 
     if courses_scrapees == 0:
