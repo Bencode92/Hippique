@@ -1043,7 +1043,12 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         if (hit !== undefined) return hit;
         const res = this._normaliserNomImpl(nom);
         // Garde-fou mémoire : au-delà de 100 000 noms distincts on repart de zéro.
-        if (this._normCache.size > 100000) this._normCache.clear(); this._normGen++;
+        // Les accolades comptent : sans elles, _normGen++ s'exécutait à CHAQUE
+        // appel, ce qui invalidait _normItemCache en permanence — le cache par
+        // item ne servait jamais. (Le corriger ne change pas le temps mesuré :
+        // ce chemin n'est pas le chemin dominant. C'est une correction, pas une
+        // optimisation.)
+        if (this._normCache.size > 100000) { this._normCache.clear(); this._normGen++; }
         this._normCache.set(nom, res);
         return res;
     },

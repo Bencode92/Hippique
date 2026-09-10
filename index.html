@@ -1291,7 +1291,7 @@
 
     <!-- Module ranking-loader (doit être chargé avant le script principal) -->
     <script src="js/panneau-paris.js?v=4"></script>
-    <script src="js/ranking-loader.js?v=20"></script>
+    <script src="js/ranking-loader.js?v=21"></script>
 
     <!-- Module de chargement des courses -->
     <script>
@@ -1734,10 +1734,15 @@
                     // OVERRIDE des cotes par les fichiers cotes_live (mis à jour par
                     // scrape-pre-course.yml toutes les 15 min). Les cotes du programme du
                     // matin (data/courses/) sont remplacées par les cotes pré-course actuelles.
-                    try {
-                        await applyCotesLive(courseData, dateStr);
-                    } catch (e) {
-                        console.warn('Override cotes_live échoué (non bloquant):', e);
+                    // Inutile sur une journée close : les cotes définitives du
+                    // programme font foi, et l'index cotes_live coûte un aller-retour.
+                    const jourClos = this.estJourneeClose({ name: dateStr });
+                    if (!jourClos) {
+                        try {
+                            await applyCotesLive(courseData, dateStr);
+                        } catch (e) {
+                            console.warn('Override cotes_live échoué (non bloquant):', e);
+                        }
                     }
 
                     // Filtrer les hippodromes qui n'ont pas de courses (après tous les traitements)
@@ -1762,12 +1767,34 @@
             // Télécharger un fichier de courses, sans le traiter. Séparé de
             // processFile() pour que les téléchargements puissent partir en
             // parallèle sans que l'ingestion, elle, sorte de son ordre.
+            // Une journée close ne bouge plus : ni cotes, ni arrivées. La
+            // retélécharger à chaque consultation ne sert à rien. On garde le
+            // cache-buster pour les journées vivantes uniquement.
+            //
+            // « Close » = strictement antérieure à hier, et non pas à aujourd'hui :
+            // les arrivées et rapports définitifs d'une réunion du soir peuvent
+            // arriver après minuit. Une marge d'un jour évite de figer un fichier
+            // encore incomplet.
+            estJourneeClose(file) {
+                const m = String(file.name || '').match(/^(\d{4}-\d{2}-\d{2})/);
+                if (!m) return false;
+                const limite = new Date();
+                limite.setUTCHours(0, 0, 0, 0);
+                limite.setUTCDate(limite.getUTCDate() - 1);
+                return m[1] < limite.toISOString().slice(0, 10);
+            },
+
             async fetchFile(file) {
                 // Cache-buster (timestamp + random salt) + cache:'no-store' :
                 // bypass le CDN Fastly ET le cache navigateur. Critique pour voir
                 // les nouvelles cotes après un push (sinon le navigateur sert encore l'ancien JSON).
-                const url = `${file.download_url}?_=${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
-                const r = await fetchWithRetry(url, { cache: 'no-store' });
+                // Sur une journée close, l'inverse : URL stable et cache forcé, pour
+                // que la deuxième consultation ne touche pas le réseau.
+                const close = this.estJourneeClose(file);
+                const url = close
+                    ? file.download_url
+                    : `${file.download_url}?_=${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
+                const r = await fetchWithRetry(url, close ? { cache: 'force-cache' } : { cache: 'no-store' });
                 if (!r.ok) {
                     console.error(`Erreur lors du chargement du fichier ${file.name}: ${r.status}`);
                     return null;
