@@ -43,11 +43,16 @@ const PanneauParis = (() => {
   ];
 
   // Gain moyen encaissé pour 1 € misé, par composition de rangs du marché.
+  // CORRECTIF : ne sont comptées que les courses où le pari était RÉELLEMENT
+  // PROPOSÉ. Le 2 sur 4 n'est offert que sur 64 % des courses et le trio sur
+  // 80 % ; compter les autres comme des mises perdues déflatait leur espérance
+  // de 20 et 4 points. Le simple gagnant et le couplé sont offerts partout,
+  // leurs chiffres étaient donc justes.
   const EV = {
     gagnant: {'0':0.8697,'1':0.865,'2':0.8636,'3':0.8307,'4':0.8181},
     couple: {'0-1':0.8729,'0-2':0.832,'0-3':0.81,'0-4':0.8071,'1-2':0.8693,'1-3':0.8312,'1-4':0.7409,'2-3':0.7601,'2-4':0.8045,'3-4':0.7623},
-    trio: {'0-1-2':0.6712,'0-1-3':0.719,'0-1-4':0.7302,'0-2-3':0.746,'0-2-4':0.7356,'0-3-4':0.7267,'1-2-3':0.7588,'1-2-4':0.7983,'1-3-4':0.7148,'2-3-4':0.5573},
-    deuxSurQuatre: {'0-1':0.6783,'0-2':0.6964,'0-3':0.6749,'0-4':0.6459,'1-2':0.6645,'1-3':0.655,'1-4':0.6192,'2-3':0.5971,'2-4':0.5814,'3-4':0.5646},
+    trio: {'0-1-2':0.7022,'0-1-3':0.7521,'0-1-4':0.7639,'0-2-3':0.7804,'0-2-4':0.7695,'0-3-4':0.7602,'1-2-3':0.7938,'1-2-4':0.8352,'1-3-4':0.7478,'2-3-4':0.583},
+    deuxSurQuatre: {'0-1':0.8752,'0-2':0.8985,'0-3':0.8708,'0-4':0.8333,'1-2':0.8574,'1-3':0.8451,'1-4':0.7989,'2-3':0.7704,'2-4':0.7502,'3-4':0.7285},
   };
   const PRELEVEMENT = { gagnant: 0.14, couple: 0.26, trio: 0.31, deuxSurQuatre: 0.26 };
 
