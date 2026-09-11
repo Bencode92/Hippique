@@ -1660,8 +1660,21 @@
             // (t = 2,08), le ROI positif ne l'est pas — l'intervalle du +7,5 %
             // va de -6,6 à +21,6. Voir bench/PRESPEC_GRAND_CHAMP.md.
             const grandChamp = chezMoi && cotes.length >= 14;
+            // LA table, mesurée sur tes deux hippodromes 2022-2026, dividendes
+            // réels, mise de 20 €, résultat annuel moyen :
+            //
+            //                    grand champ (14+)      petit champ (<14)
+            //   simple gagnant      +7,4 %  +244 €         -9,0 %  -629 €
+            //   couplé gagnant     -18,5 %  -611 €         -1,4 %   -69 €
+            //   2 sur 4            -20,0 %  -662 €         -7,7 %  -247 €
+            //   trio               -52,7 % -1267 €        -14,8 %  -748 €
+            //
+            // Une seule case positive sur huit. La règle en découle : grand
+            // champ sur ton terrain, simple gagnant ; partout ailleurs, passer.
+            // Le trio n'est jamais jouable, nulle part.
+            const joue = grandChamp;
             return { etat: chezMoi ? 'terrain' : 'hors', cote: cotes[0], chezMoi, pari,
-                     grandChamp, np: cotes.length,
+                     grandChamp, joue, np: cotes.length,
                      ev: P[0] * Math.max(1.10, cotes[0]) - 1 };
         }
 
@@ -1669,21 +1682,22 @@
             if (!v) return '';
             if (v.etat === 'incomplet')
                 return `<div style="margin-top:5px;font-size:.7em;opacity:.35">cotes incomplètes</div>`;
-            if (v.etat !== 'terrain')
-                return `<div style="margin-top:5px;font-size:.7em;opacity:.38"
-                            title="Hors de Longchamp et Saint-Cloud, le favori rend -14 % en moyenne sur 15 000 courses.">
-                        hors de ton terrain · favori ${v.cote}${v.pari ? ' · ' + v.pari.pari : ''}</div>`;
-            return `<div style="margin-top:6px;display:flex;align-items:center;gap:.4rem;font-size:.72em"
-                        title="Longchamp et Saint-Cloud : le favori y rend -4 % contre -14 % ailleurs. Un terrain moins défavorable, pas un pari gagnant.">
+
+            if (v.joue) return `<div style="margin-top:6px;display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;font-size:.72em"
+                        title="${v.np} partants à Longchamp ou Saint-Cloud. Sur 743 courses de ce type depuis 2022, le favori au simple gagnant a rendu +7,4 %, soit +1 100 € à 20 € la mise, positif cinq années sur cinq. C'est la seule des huit combinaisons mesurées qui soit positive. L'écart avec les petits champs est démontré ; le gain positif ne l'est pas encore.">
                     <span style="color:#0b1f16;background:#5fffaf;font-weight:700;letter-spacing:.06em;
-                                 padding:1px 6px;border-radius:3px">TON TERRAIN</span>
-                    ${v.grandChamp ? `<span style="color:#0b1f16;background:var(--gold,#d4af37);font-weight:700;
-                                 letter-spacing:.06em;padding:1px 6px;border-radius:3px"
-                                 title="${v.np} partants. Sur tes deux hippodromes, le favori des courses à 14 partants ou plus a rendu +7,5 % sur 743 courses depuis 2022, contre −8,9 % en dessous — soit +1 108 € contre −2 818 € à 20 € la mise. Positif 5 années sur 5. L'écart est démontré ; le gain positif ne l'est pas encore (intervalle −6,6 à +21,6).">GRAND CHAMP</span>` : ''}
-                    <span style="opacity:.7">favori ${v.cote}</span>
-                    ${v.pari ? `<span style="opacity:.55">·</span>
-                    <span style="color:var(--gold,#d4af37)" title="Instrument le moins coûteux sur ce profil d'ouverture : ${(v.pari.ev * 100).toFixed(1)} % en moyenne mesurée.">${v.pari.pari}</span>` : ''}
+                                 padding:1px 7px;border-radius:3px">JOUE</span>
+                    <span style="color:var(--gold,#d4af37);font-weight:600">simple gagnant</span>
+                    <span style="opacity:.7">favori ${v.cote} · ${v.np} partants</span>
                 </div>`;
+
+            const motif = !v.chezMoi ? 'hors de ton terrain'
+                        : `${v.np} partants — sous 14, rien n'est positif`;
+            return `<div style="margin-top:5px;font-size:.7em;opacity:.42"
+                        title="${v.chezMoi
+                          ? `Sur tes hippodromes, sous 14 partants, le favori au simple gagnant rend -9,0 % (-629 €/an à 20 €), le couplé -1,4 %, le 2 sur 4 -7,7 %, le trio -14,8 %. Aucune de ces cases n'est positive.`
+                          : `Hors de Longchamp et Saint-Cloud, le favori rend -14 % en moyenne sur 15 000 courses.`}">
+                    passe · ${motif} · favori ${v.cote}</div>`;
         }
 
         // ── BANDEAU DE DÉCISION ─────────────────────────────────────────
