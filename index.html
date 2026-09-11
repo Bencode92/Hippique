@@ -1964,8 +1964,7 @@
             el.innerHTML = `
                 <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem">
                     <span><strong style="color:${c};letter-spacing:.04em">${joue ? 'JOUE — SIMPLE GAGNANT' : 'PASSE'}</strong>
-                        &nbsp;·&nbsp;favori <strong>${nomFav}</strong> à ${fav.cote}
-                        &nbsp;·&nbsp;${(fav.p * 100).toFixed(0)} % de chances</span>
+                        &nbsp;·&nbsp;favori <strong>${nomFav}</strong> à ${fav.cote}</span>
                     <span style="opacity:.85;font-size:.85em">mise&nbsp;:
                         <input type="number" min="1" step="1" value="${miseCourante()}" class="champ-mise"
                                style="width:4.2em;background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.18);
@@ -1977,6 +1976,19 @@
                                 : euros(-miseCourante()) + ' — perdu')
                                 : euros(miseCourante() * Math.max(1.10, fav.cote) - miseCourante())}</strong>
                     </span>
+                </div>
+                <div style="margin-top:.4rem;font-size:.82rem;padding:.35rem .6rem;border-radius:3px;
+                            background:rgba(0,0,0,.18);font-variant-numeric:tabular-nums">
+                    <span style="opacity:.85">${(fav.p * 100).toFixed(0)} % de chances</span>
+                    <span style="opacity:.5">&nbsp;×&nbsp;</span>
+                    <span style="opacity:.85">${(miseCourante() * Math.max(1.10, fav.cote)).toFixed(0)} € si ça passe</span>
+                    <span style="opacity:.5">&nbsp;=&nbsp;</span>
+                    <strong>${(fav.p * miseCourante() * Math.max(1.10, fav.cote)).toFixed(2)} €</strong>
+                    <span style="opacity:.65">&nbsp;attendus pour ${miseCourante()} € misés</span>
+                    <span style="opacity:.5">&nbsp;→&nbsp;</span>
+                    <strong style="color:${(fav.p * Math.max(1.10, fav.cote) - 1) >= 0 ? '#5fffaf' : '#e9a08a'}">${
+                        ((fav.p * Math.max(1.10, fav.cote) - 1) * 100).toFixed(1)} %</strong>
+                    <span style="opacity:.55;font-size:.9em">&nbsp;— une probabilité élevée va toujours avec un petit gain : les deux se compensent.</span>
                 </div>
                 <div style="margin-top:.35rem;font-size:.74rem;opacity:.6;line-height:1.45">
                     ${joue
