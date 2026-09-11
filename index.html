@@ -1724,6 +1724,15 @@
                 ? rankingLoader.extraireNomBaseCheval(fav.chevaux[0])
                 : String(fav.chevaux[0] || '').replace(/\s+[HFM]\.\s*(?:AQPS|PU|PS|TR|AR|AN)\s*\.?.*$/i, '').trim();
 
+            // Course déjà courue : le bandeau doit dire ce qui s'est passé, pas ce
+            // qui pourrait arriver. « si le favori passe : +36 € » sur une course
+            // où il a fini 2e est un contresens.
+            const arrB = (courseContext.participants || []).filter(p => parseInt(p.arrivee) >= 1);
+            const couruB = arrB.length >= 3;
+            const gagnantB = arrB.find(p => parseInt(p.arrivee) === 1);
+            const favGagne = couruB && gagnantB &&
+                String(gagnantB.cheval || '').indexOf(String(fav.chevaux[0] || '\u0000')) === 0;
+
             const cellule = chezMoi
                 ? { roi: -4, se: 3.3, n: 2324, lib: 'Longchamp et Saint-Cloud' }
                 : { roi: -14, se: 1.3, n: 15210, lib: 'hors de tes deux hippodromes' };
@@ -1739,8 +1748,12 @@
                         <input type="number" min="1" step="1" value="${miseCourante()}" class="champ-mise"
                                style="width:4.2em;background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.18);
                                       border-radius:3px;color:inherit;font:inherit;text-align:right;padding:1px 4px">&nbsp;€
-                        <span style="opacity:.6">&nbsp;·&nbsp;si le favori passe&nbsp;:</span>
-                        <strong class="gain-favori" style="color:${c}">${euros(miseCourante() * Math.max(1.10, fav.cote) - miseCourante())}</strong>
+                        <span style="opacity:.6">&nbsp;·&nbsp;${couruB ? 'sur le favori&nbsp;:' : 'si le favori passe&nbsp;:'}</span>
+                        <strong class="gain-favori" style="color:${couruB ? (favGagne ? '#5fffaf' : '#e9a08a') : c}">${
+                            couruB ? (favGagne
+                                ? euros(miseCourante() * Math.max(1.10, fav.cote) - miseCourante()) + ' — gagné'
+                                : euros(-miseCourante()) + ' — perdu')
+                                : euros(miseCourante() * Math.max(1.10, fav.cote) - miseCourante())}</strong>
                     </span>
                 </div>
                 <div style="margin-top:.35rem;font-size:.74rem;opacity:.6;line-height:1.45">
@@ -1760,7 +1773,9 @@
                 if (!isFinite(v) || v <= 0) return;
                 poserMise(v);
                 const g = el.querySelector('.gain-favori');
-                if (g) g.textContent = euros(v * Math.max(1.10, fav.cote) - v);
+                if (g) g.textContent = couruB
+                    ? (favGagne ? euros(v * Math.max(1.10, fav.cote) - v) + ' — gagné' : euros(-v) + ' — perdu')
+                    : euros(v * Math.max(1.10, fav.cote) - v);
                 const pan = el.parentNode && el.parentNode.querySelector('.panneau-paris');
                 if (pan && pan._rerender) pan._rerender();
             });
