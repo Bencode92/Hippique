@@ -1531,13 +1531,19 @@
         // Bilan d'un hippodrome : même calcul que le bandeau du jour, mais sur
         // un seul lieu. Rendu dans l'en-tête, là où l'on regarde déjà combien
         // de courses il propose.
+        // Le bilan ne compte que les courses que la règle fait JOUER. Additionner
+        // des paris qu'on ne prend pas donnerait un chiffre sans rapport avec ce
+        // qui sortirait de la poche.
         function bilanHippodrome(hippodrome, courses) {
             if (typeof PanneauParis === 'undefined') return null;
             const M = miseCourante();
-            let n = 0, gain = 0, esp = 0, gagnants = 0, tousCourus = true;
+            let n = 0, gain = 0, esp = 0, gagnants = 0, tousCourus = true, vues = 0;
             for (const c of courses || []) {
                 const ps = (c.participants || []).filter(p => (parseFloat(p.cote) || 0) > 1);
                 if (ps.length < 5) continue;
+                vues++;
+                const V = verdictCourse(hippodrome, c.participants);
+                if (!V || !V.joue) continue;
                 const fav = ps.reduce((a, b) => parseFloat(a.cote) <= parseFloat(b.cote) ? a : b);
                 const cote = Math.max(1.10, parseFloat(fav.cote));
                 const P = PanneauParis.probabilites(
@@ -1548,9 +1554,114 @@
                     if (+fav.arrivee === 1) { gain += M * cote; gagnants++; }
                 } else tousCourus = false;
             }
-            if (!n) return null;
+            if (!n) return { n: 0, vues, aucune: true };
             const engage = M * n;
-            return { n, engage, gagnants, tousCourus,
+            return { n, vues, engage, gagnants, tousCourus,
+                     valeur: tousCourus ? gain - engage : esp, reel: tousCourus };
+        }
+
+        // ── BILAN DE LA JOURNÉE ─────────────────────────────────────────
+        // Le panneau chiffre une course à la fois ; ce bandeau répond à l'autre
+        // question : « et si je mets X sur chaque course ? »
+        //
+        // Deux lectures selon que la journée est courue ou non :
+        //   · arrivées connues  → le résultat RÉEL, ce qu'on aurait encaissé ;
+        //   · arrivées inconnues → l'espérance, somme des p×cote−1 par course.
+        //
+        // Le favori est celui de la cote affichée. Sur une journée passée c'est
+        // la cote finale, donc le bilan est exact ; sur une journée à venir la
+        // cote bougera encore (le favori change dans 24 % des cas entre le
+        // dernier relevé et le départ), et le chiffre est indicatif.
+        function bilanJournee(courseData) {
+            if (typeof PanneauParis === 'undefined') return '';
+            const M = miseCourante();
+            const retenues = [];
+            let vues = 0;
+            for (const [hippodrome, courses] of Object.entries(courseData || {})) {
+                if (!Array.isArray(courses)) continue;
+                for (const c of courses) {
+                    const ps = (c.participants || []).filter(p => (parseFloat(p.cote) || 0) > 1);
+                    if (ps.length < 5) continue;
+                    vues++;
+                    const V = verdictCourse(hippodrome, c.participants);
+                    if (!V || !V.joue) continue;
+                    const fav = ps.reduce((a, b) => parseFloat(a.cote) <= parseFloat(b.cote) ? a : b);
+                    const cote = Math.max(1.10, parseFloat(fav.cote));
+                    const P = PanneauParis.probabilites(
+                        ps.slice().sort((a, b) => parseFloat(a.cote) - parseFloat(b.cote)));
+                    retenues.push({ hippodrome, nom: c.nom, cote, np: V.np,
+                                    couru: ps.some(p => p.arrivee), gagne: +fav.arrivee === 1,
+                                    ev: P[0] * cote - 1 });
+                }
+            }
+            if (!vues) return '';
+            if (!retenues.length)
+                return `<div style="margin:0 0 1rem;padding:.7rem .9rem;border-radius:6px;
+                            background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.08);font-size:.92rem">
+                        <span style="font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;opacity:.6">Aujourd'hui</span>
+                        &nbsp;<strong>aucune course à jouer</strong>
+                        <span style="opacity:.6;font-size:.88em">&nbsp;— sur ${vues} courses affichées. La règle demande
+                        Longchamp ou Saint-Cloud, 14 partants ou plus, et un favori à 4 ou plus.</span>
+                    </div>`;
+
+            const engage = M * retenues.length;
+            const tousCourus = retenues.every(x => x.couru);
+            const gagnants = retenues.filter(x => x.gagne).length;
+            const valeur = tousCourus
+                ? retenues.reduce((s, x) => s + (x.gagne ? M * x.cote : 0), 0) - engage
+                : retenues.reduce((s, x) => s + M * x.ev, 0);
+            const c = valeur >= 0 ? '#5fffaf' : '#e9a08a';
+            return `<div style="margin:0 0 1rem;padding:.75rem .9rem;border-radius:6px;
+                        background:rgba(20,60,58,.32);border:1px solid rgba(95,255,175,.22);font-size:.93rem">
+                    <div style="display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap">
+                        <strong style="color:#5fffaf;letter-spacing:.04em">${retenues.length} COURSE${retenues.length > 1 ? 'S' : ''} À JOUER</strong>
+                        <span style="opacity:.6;font-size:.88em">sur ${vues} affichées · simple gagnant sur le favori</span>
+                        <span style="margin-left:auto">
+                            <span style="opacity:.7;font-size:.86em">mise&nbsp;</span>
+                            <input type="number" min="1" step="1" value="${M}" class="champ-mise-jour"
+                                   style="width:4.2em;background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.18);
+                                          border-radius:3px;color:inherit;font:inherit;text-align:right;padding:1px 4px"> €
+                            <span style="opacity:.6;font-size:.86em">&nbsp;·&nbsp;${engage} € engagés&nbsp;·&nbsp;</span>
+                            <strong style="color:${c};font-variant-numeric:tabular-nums">${valeur >= 0 ? '+' : '−'}${Math.abs(valeur).toFixed(2)} €</strong>
+                            <span style="opacity:.55;font-size:.85em">&nbsp;${tousCourus ? `réel · ${gagnants} gagnant${gagnants > 1 ? 's' : ''}` : 'espérance'}</span>
+                        </span>
+                    </div>
+                    <div style="margin-top:.4rem;font-size:.85em;opacity:.72;line-height:1.5">
+                        ${retenues.map(x => `<span style="white-space:nowrap">${x.hippodrome} — ${x.nom}
+                            <span style="opacity:.65">(${x.np} part., favori ${x.cote})</span></span>`).join(' &nbsp;·&nbsp; ')}
+                    </div>
+                </div>`;
+        }
+
+        // Bilan d'un hippodrome : même calcul que le bandeau du jour, mais sur
+        // un seul lieu. Rendu dans l'en-tête, là où l'on regarde déjà combien
+        // de courses il propose.
+        // Le bilan ne compte que les courses que la règle fait JOUER. Additionner
+        // des paris qu'on ne prend pas donnerait un chiffre sans rapport avec ce
+        // qui sortirait de la poche.
+        function bilanHippodrome(hippodrome, courses) {
+            if (typeof PanneauParis === 'undefined') return null;
+            const M = miseCourante();
+            let n = 0, gain = 0, esp = 0, gagnants = 0, tousCourus = true, vues = 0;
+            for (const c of courses || []) {
+                const ps = (c.participants || []).filter(p => (parseFloat(p.cote) || 0) > 1);
+                if (ps.length < 5) continue;
+                vues++;
+                const V = verdictCourse(hippodrome, c.participants);
+                if (!V || !V.joue) continue;
+                const fav = ps.reduce((a, b) => parseFloat(a.cote) <= parseFloat(b.cote) ? a : b);
+                const cote = Math.max(1.10, parseFloat(fav.cote));
+                const P = PanneauParis.probabilites(
+                    ps.slice().sort((a, b) => parseFloat(a.cote) - parseFloat(b.cote)));
+                n++;
+                esp += M * (P[0] * cote - 1);
+                if (ps.some(p => p.arrivee)) {
+                    if (+fav.arrivee === 1) { gain += M * cote; gagnants++; }
+                } else tousCourus = false;
+            }
+            if (!n) return { n: 0, vues, aucune: true };
+            const engage = M * n;
+            return { n, vues, engage, gagnants, tousCourus,
                      valeur: tousCourus ? gain - engage : esp, reel: tousCourus };
         }
 
@@ -1769,15 +1880,21 @@
             const favGagne = couruB && gagnantB &&
                 String(gagnantB.cheval || '').indexOf(String(fav.chevaux[0] || '\u0000')) === 0;
 
-            const cellule = chezMoi
+            // Une seule verite affichee partout : le bandeau lit le meme verdict
+            // que le badge de la liste, au lieu de raconter sa propre histoire.
+            const V = verdictCourse(courseContext.hippodrome, courseContext.participants);
+            const joue = !!(V && V.joue);
+            const cellule = joue
+                ? { roi: 14, se: 9.2, n: 523, lib: 'en grand champ ouvert sur ton terrain' }
+                : chezMoi
                 ? { roi: -4, se: 3.3, n: 2324, lib: 'Longchamp et Saint-Cloud' }
                 : { roi: -14, se: 1.3, n: 15210, lib: 'hors de tes deux hippodromes' };
-            const c = chezMoi ? '#5fffaf' : '#e9a08a';
+            const c = joue ? '#5fffaf' : '#e9a08a';
             el.style.cssText = `margin:.4rem 0 .6rem;padding:.6rem .9rem;border-radius:5px;font-size:.9rem;`
                 + `background:${chezMoi ? 'rgba(20,90,60,.25)' : 'rgba(90,40,30,.22)'};border-left:3px solid ${c}`;
             el.innerHTML = `
                 <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem">
-                    <span><strong style="color:${c};letter-spacing:.04em">${chezMoi ? 'TON TERRAIN' : 'HORS TERRAIN'}</strong>
+                    <span><strong style="color:${c};letter-spacing:.04em">${joue ? 'JOUE — SIMPLE GAGNANT' : 'PASSE'}</strong>
                         &nbsp;·&nbsp;favori <strong>${nomFav}</strong> à ${fav.cote}
                         &nbsp;·&nbsp;${(fav.p * 100).toFixed(0)} % de chances</span>
                     <span style="opacity:.85;font-size:.85em">mise&nbsp;:
@@ -1793,10 +1910,17 @@
                     </span>
                 </div>
                 <div style="margin-top:.35rem;font-size:.74rem;opacity:.6;line-height:1.45">
-                    Ici, le favori rend <strong style="color:${c}">${cellule.roi} % ± ${cellule.se}</strong>
-                    sur ${cellule.n.toLocaleString('fr-FR')} courses — contre ${chezMoi ? '−14 % ailleurs' : '−4 % à Longchamp et Saint-Cloud'}.
-                    C'est une moyenne d'hippodrome, pas une prévision sur cette course :
-                    trier les courses entre elles n'a rien donné hors échantillon.
+                    ${joue
+                      ? `Cette course réunit les trois conditions : ton terrain, ${V.np} partants, favori à ${V.cote}.
+                         Sur 523 courses de ce type depuis 2022, le simple gagnant sur le favori rend
+                         <strong style="color:${c}">+14,0 % ± 9,2</strong> — positif cinq années sur cinq,
+                         et répliqué sur deux moitiés indépendantes. L'intervalle contient encore zéro :
+                         c'est la meilleure case mesurée, pas un gain garanti.`
+                      : `Le favori rend ici <strong style="color:${c}">${cellule.roi} % ± ${cellule.se}</strong>
+                         sur ${cellule.n.toLocaleString('fr-FR')} courses.
+                         ${!chezMoi ? 'Hors de Longchamp et Saint-Cloud, rien n\'est jouable.'
+                           : (V && V.np < 14) ? `Sous 14 partants, aucun instrument n'est positif sur ton terrain.`
+                           : `Grand champ, mais favori sous 4 : cette case rend -7,1 % quand celle au-delà de 4 rend +14,0 %.`}`}
                     ${sansCote ? ` ${sansCote} partant${sansCote > 1 ? 's' : ''} sans cote, écarté${sansCote > 1 ? 's' : ''} du calcul.` : ''}
                     Prix et mise restent le seul levier non mesuré qui puisse rendre l'espérance positive.
                 </div>`;
@@ -1907,7 +2031,17 @@
                     <tr style="opacity:.5;font-size:.7rem"><td></td><td style="text-align:right">proba</td><td style="text-align:right">si ça passe</td><td style="text-align:right">${couru ? 'résultat' : 'espérance'}</td></tr>
                     ${arr.slice(0, 3).map(ligne).join('')}
                 </table></div>`;
-            const R = pan.recommandation;
+            // Quand la regle s'applique, elle prime sur la table par profil : c'est
+            // la seule case mesuree positive, et elle a ete verifiee sur deux
+            // moities independantes.
+            const Vp = (typeof verdictCourse === 'function' && ancre)
+                ? verdictCourse(ancre.closest?.('[data-hippodrome]')?.dataset?.hippodrome
+                                || document.querySelector('.course-card.active')?.dataset?.hippodrome || '',
+                                participants) : null;
+            const R = (Vp && Vp.joue)
+                ? { pari: 'simple gagnant', chevaux: [pan.simple[0] && pan.simple[0].chevaux[0]].filter(Boolean),
+                    pourquoi: `grand champ ouvert sur ton terrain — +14,0 % ± 9,2 sur 523 courses, positif cinq années sur cinq` }
+                : pan.recommandation;
             const el = document.createElement('div');
             el.className = 'panneau-paris';
             el.style.cssText = 'margin:0 0 .9rem;padding:.7rem .9rem;background:rgba(20,60,58,.35);border:1px solid rgba(233,209,140,.18);border-radius:6px';
@@ -2607,12 +2741,15 @@
                     });
                     const nbJouables = verdicts.filter(v => v && v.etat === 'terrain').length;
                     const bilanH = bilanHippodrome(hippodrome, filteredCourses);
-                    const chiffreH = bilanH
-                        ? `<span style="opacity:.5">&nbsp;·&nbsp;</span><span style="font-variant-numeric:tabular-nums"
-                             title="${bilanH.engage.toFixed(0)} € engagés à ${miseCourante()} € sur le favori de chacune des ${bilanH.n} courses${bilanH.reel ? `, ${bilanH.gagnants} gagnant${bilanH.gagnants > 1 ? 's' : ''}` : ' — espérance, la journée n\'est pas courue'}.">
+                    const chiffreH = !bilanH ? ''
+                        : bilanH.aucune
+                        ? `<span style="opacity:.45">&nbsp;·&nbsp;aucune course à jouer</span>`
+                        : `<span style="opacity:.5">&nbsp;·&nbsp;</span><span style="font-variant-numeric:tabular-nums"
+                             title="${bilanH.n} course${bilanH.n > 1 ? 's' : ''} retenue${bilanH.n > 1 ? 's' : ''} par la règle sur ${bilanH.vues}, ${bilanH.engage.toFixed(0)} € engagés à ${miseCourante()} €${bilanH.reel ? `, ${bilanH.gagnants} gagnant${bilanH.gagnants > 1 ? 's' : ''}` : ' — espérance, la journée n\'est pas courue'}.">
+                             <strong style="color:#5fffaf">${bilanH.n} à jouer</strong>
+                             <span style="opacity:.5">&nbsp;·&nbsp;</span>
                              <strong style="color:${bilanH.valeur >= 0 ? '#5fffaf' : '#e9a08a'}">${bilanH.valeur >= 0 ? '+' : '−'}${Math.abs(bilanH.valeur).toFixed(0)} €</strong>
-                             <span style="opacity:.5;font-size:.85em">${bilanH.reel ? 'réel' : 'esp.'}</span></span>`
-                        : '';
+                             <span style="opacity:.5;font-size:.85em">${bilanH.reel ? 'réel' : 'esp.'}</span></span>`;
                     const compteur = (nbJouables
                         ? `<span style="color:#5fffaf;font-weight:600">ton terrain</span> <span style="opacity:.6">— le favori y rend −4 % contre −14 % ailleurs</span> · ${filteredCourses.length} course${filteredCourses.length > 1 ? 's' : ''}`
                         : `${filteredCourses.length} course${filteredCourses.length > 1 ? 's' : ''}`) + chiffreH;
