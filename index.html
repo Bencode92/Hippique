@@ -1654,7 +1654,14 @@
             // pourCourse() calculerait les 35 paris.
             const P = PanneauParis.probabilites(cotes.map(c => ({ cote: c })));
             const pari = PanneauParis.pariDuProfil(PanneauParis.profilCourse(P[0]));
+            // Sur tes deux hippodromes, le favori des grands champs a rendu
+            // +7,5 % sur 743 courses (2022-2026) contre -8,9 % sous 14 partants.
+            // À 20 € la mise : +1 108 € contre -2 818 €. L'écart est démontré
+            // (t = 2,08), le ROI positif ne l'est pas — l'intervalle du +7,5 %
+            // va de -6,6 à +21,6. Voir bench/PRESPEC_GRAND_CHAMP.md.
+            const grandChamp = chezMoi && cotes.length >= 14;
             return { etat: chezMoi ? 'terrain' : 'hors', cote: cotes[0], chezMoi, pari,
+                     grandChamp, np: cotes.length,
                      ev: P[0] * Math.max(1.10, cotes[0]) - 1 };
         }
 
@@ -1670,6 +1677,9 @@
                         title="Longchamp et Saint-Cloud : le favori y rend -4 % contre -14 % ailleurs. Un terrain moins défavorable, pas un pari gagnant.">
                     <span style="color:#0b1f16;background:#5fffaf;font-weight:700;letter-spacing:.06em;
                                  padding:1px 6px;border-radius:3px">TON TERRAIN</span>
+                    ${v.grandChamp ? `<span style="color:#0b1f16;background:var(--gold,#d4af37);font-weight:700;
+                                 letter-spacing:.06em;padding:1px 6px;border-radius:3px"
+                                 title="${v.np} partants. Sur tes deux hippodromes, le favori des courses à 14 partants ou plus a rendu +7,5 % sur 743 courses depuis 2022, contre −8,9 % en dessous — soit +1 108 € contre −2 818 € à 20 € la mise. Positif 5 années sur 5. L'écart est démontré ; le gain positif ne l'est pas encore (intervalle −6,6 à +21,6).">GRAND CHAMP</span>` : ''}
                     <span style="opacity:.7">favori ${v.cote}</span>
                     ${v.pari ? `<span style="opacity:.55">·</span>
                     <span style="color:var(--gold,#d4af37)" title="Instrument le moins coûteux sur ce profil d'ouverture : ${(v.pari.ev * 100).toFixed(1)} % en moyenne mesurée.">${v.pari.pari}</span>` : ''}
