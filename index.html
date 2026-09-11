@@ -1290,7 +1290,7 @@
     </div>
 
     <!-- Module ranking-loader (doit être chargé avant le script principal) -->
-    <script src="js/panneau-paris.js?v=8"></script>
+    <script src="js/panneau-paris.js?v=9"></script>
     <script src="js/ranking-loader.js?v=23"></script>
 
     <!-- Module de chargement des courses -->
@@ -1560,6 +1560,20 @@
                      valeur: tousCourus ? gain - engage : esp, reel: tousCourus };
         }
 
+        // ── SOCLE ───────────────────────────────────────────────────────
+        // Mise de base sur TOUTES les courses de tes hippodromes, au-delà de la
+        // règle. Elle n'a aucune valeur informationnelle : les dividendes sont
+        // publics, donc le test séquentiel n'y perd rien si le socle est nul.
+        // Elle n'a qu'une valeur de jeu, et son prix est connu — il s'affiche à
+        // côté du choix, faute de quoi il dérive tout seul vers le haut.
+        const COUT_SOCLE = { 0: 0, 2: -38, 5: -95 };   // € par an, 516 courses à -3,7 %
+        const GAIN_REGLE = { 0: 244, 2: 220, 5: 183 }; // 165 courses, supplément à +7,4 %
+        function socleCourant() {
+            const v = parseFloat(localStorage.getItem('hippique_socle'));
+            return [0, 2, 5].includes(v) ? v : 0;
+        }
+        function poserSocle(v) { try { localStorage.setItem('hippique_socle', v); } catch (e) {} }
+
         // ── BILAN DE LA JOURNÉE ─────────────────────────────────────────
         // Le panneau chiffre une course à la fois ; ce bandeau répond à l'autre
         // question : « et si je mets X sur chaque course ? »
@@ -1572,6 +1586,40 @@
         // la cote finale, donc le bilan est exact ; sur une journée à venir la
         // cote bougera encore (le favori change dans 24 % des cas entre le
         // dernier relevé et le départ), et le chiffre est indicatif.
+        // Les trois informations que la revue impose d'afficher à côté du choix
+        // du socle : son coût annuel, l'espérance de travail avec son
+        // intervalle, et l'état du test séquentiel.
+        let _sprt = null;
+        fetch('https://raw.githubusercontent.com/bencode92/Hippique/main/data/sprt_etat.json?_=' + Date.now())
+            .then(r => r.ok ? r.json() : null).then(j => { _sprt = j; }).catch(() => {});
+
+        function barreReglage() {
+            const S = socleCourant();
+            const cout = COUT_SOCLE[S], gain = GAIN_REGLE[S];
+            const opt = v => `<option value="${v}"${v === S ? ' selected' : ''}>${v} €</option>`;
+            const sp = _sprt
+                ? (_sprt.verdict
+                   ? `<strong>${_sprt.verdict}</strong>`
+                   : `${_sprt.paris} pari${_sprt.paris > 1 ? 's' : ''} depuis le ${_sprt.debut} · statistique
+                      <strong>${_sprt.statistique >= 0 ? '+' : ''}${_sprt.statistique}</strong> sur ±${_sprt.borne}`)
+                : 'état non chargé';
+            return `<div style="margin-top:.6rem;padding-top:.55rem;border-top:1px solid rgba(255,255,255,.1);
+                        font-size:.82em;display:flex;gap:1.2rem;flex-wrap:wrap;align-items:baseline">
+                    <span>socle sur les autres courses&nbsp;:
+                        <select class="champ-socle" style="background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.18);
+                                border-radius:3px;color:inherit;font:inherit;padding:1px 4px">
+                            ${opt(0)}${opt(2)}${opt(5)}</select>
+                        <span style="opacity:.6">&nbsp;coût&nbsp;</span>
+                        <strong style="color:${cout ? '#e9a08a' : 'inherit'}">${cout} €/an</strong>
+                        <span style="opacity:.6">&nbsp;·&nbsp;total attendu&nbsp;</span>
+                        <strong style="color:#5fffaf">+${cout + gain} €/an</strong>
+                    </span>
+                    <span style="opacity:.72">espérance de travail <strong>+7,4 %</strong>
+                        <span style="opacity:.75">[−0,5 ; +15,3]</span></span>
+                    <span style="opacity:.72">test séquentiel&nbsp;: ${sp}</span>
+                </div>`;
+        }
+
         function bilanJournee(courseData) {
             if (typeof PanneauParis === 'undefined') return '';
             const M = miseCourante();
@@ -1630,6 +1678,7 @@
                         ${retenues.map(x => `<span style="white-space:nowrap">${x.hippodrome} — ${x.nom}
                             <span style="opacity:.65">(${x.np} part., favori ${x.cote})</span></span>`).join(' &nbsp;·&nbsp; ')}
                     </div>
+                    ${barreReglage()}
                 </div>`;
         }
 
@@ -1802,7 +1851,13 @@
             // de 6). Cette règle inverse le seul comportement de marché qu'on
             // comprenne. Un écart de 29 points avec le national appelle de la
             // méfiance, pas de l'enthousiasme.
-            const joue = grandChamp && cotes[0] >= 4;
+            // La condition « cote >= 4 » a ete RETIREE sur recommandation de la
+            // revue : trouvee apres coup, elle inverse le biais favori/outsider
+            // national (-17,8 % sur ce segment) et n'ajoute que de la variance.
+            // Sans elle : 165 courses par an au lieu de 116, meme esperance de
+            // travail, donc +244 €/an au lieu de +162. Elle reste OBSERVEE dans
+            // le test sequentiel, sans influer sur ce qu'on joue.
+            const joue = grandChamp;
             return { etat: chezMoi ? 'terrain' : 'hors', cote: cotes[0], chezMoi, pari,
                      grandChamp, joue, np: cotes.length,
                      ev: P[0] * Math.max(1.10, cotes[0]) - 1 };
@@ -2828,6 +2883,10 @@
                     // l'autre. On redessine à la validation (change) et non à
                     // chaque frappe, sinon saisir « 20 » recalcule d'abord pour
                     // une mise de 2 €.
+                    const champSocle = resultsContainer.querySelector('.champ-socle');
+                    if (champSocle) champSocle.addEventListener('change', () => {
+                        poserSocle(parseFloat(champSocle.value)); displayHippodromes();
+                    });
                     const champJour = resultsContainer.querySelector('.champ-mise-jour');
                     if (champJour) {
                         const appliquer = () => {

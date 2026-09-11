@@ -43,7 +43,11 @@ for (const f of fs.readdirSync('data/histo').filter(x=>x.endsWith('.jsonl')))
     const ps = (d.parts||[]).filter(p=>p.c>1);
     if (ps.length < 14 || !ps.some(p=>p.a===1)) continue;
     const fav = ps.reduce((a,b)=>a.c<=b.c?a:b);
-    if (fav.c < 4) continue;
+    // La condition « cote >= 4 » a ete RETIREE de la regle jouee sur
+    // recommandation de la revue : elle a ete trouvee apres coup, elle inverse
+    // le biais favori/outsider national (-17,8 % sur ce segment) et elle
+    // n'ajoute que de la variance. Elle reste OBSERVEE ci-dessous : si elle
+    // est reelle, elle apparaitra ; sinon elle n'aura rien coute.
     const sg = rap.get(`${d.date}|${h}|${d.r}|${d.c}`); if (!sg) continue;
     const m = sg.find(x=>String(x.comb) === String(fav.n));
     L.push({ date: d.date, cote: fav.c, gagne: !!(m && m.div > 0) });
@@ -74,8 +78,10 @@ if (prospectif) {
   console.log(`   la règle : il ne compte pas. node bench/sprt_regle.mjs --historique pour le voir.)\n`);
   if (!jeu.length) {
     console.log(`  Aucun pari enregistré depuis le ${DEBUT}. Le test commencera à la première`);
-    console.log(`  course répondant aux trois conditions. Environ 116 par an ; il en faudra`);
-    console.log(`  250 à 400 pour conclure, soit deux à trois ans.`);
+    console.log(`  course à 14 partants ou plus sur tes hippodromes — environ 165 par an.`);
+    console.log(`  L'effet visé étant de +7 %, il faudra de l'ordre de 1 000 paris pour`);
+    console.log(`  conclure : c'est le prix d'une règle plus large mais moins tranchée.`);
+    ecrire(0, 0, null);
     process.exit(0);
   }
 } else {
@@ -101,4 +107,42 @@ else {
     + ` soit ${(Math.ceil(reste/parPari)/116).toFixed(1)} an(s).`);
   else console.log(`\n  Au rythme observé, la statistique n'avance pas : l'historique ne permet pas de conclure.`);
 }
+// sous-hypothese observee, sans effet sur la regle jouee
+const sousH = (sel, lib) => {
+  const a = jeu.filter(sel);
+  if (a.length < 20) return console.log(`  ${lib.padEnd(26)}— ${a.length} pari(s), trop peu`);
+  let s2 = 0;
+  for (const x of a) {
+    const p0 = pSous(E0, x.cote), p1 = pSous(E1, x.cote);
+    s2 += x.gagne ? Math.log(p1 / p0) : Math.log((1 - p1) / (1 - p0));
+  }
+  const g = a.reduce((t,x)=>t+(x.gagne?Math.max(1.10,x.cote):0),0)/a.length;
+  console.log(`  ${lib.padEnd(26)}${a.length} paris   ROI ${(100*(g-1)>=0?'+':'')}${(100*(g-1)).toFixed(1)} %   statistique ${s2>=0?'+':''}${s2.toFixed(2)}`);
+};
+if (jeu.length) {
+  console.log('\n  SOUS-HYPOTHÈSE OBSERVÉE (retirée de la règle jouée)');
+  sousH(x => x.cote >= 4, 'dont favori ≥ 4');
+  sousH(x => x.cote <  4, 'dont favori < 4');
+}
+
+// état écrit pour l'affichage
+function ecrire(nParis, stat, verd) {
+ try {
+  fs.mkdirSync('data', { recursive: true });
+  fs.writeFileSync('data/sprt_etat.json', JSON.stringify({
+    _doc: "État du test séquentiel de la règle (14 partants et plus, tes hippodromes). "
+        + "Écrit par bench/sprt_regle.mjs. H0 = -3,7 %, H1 = +7 %, bornes ±2,94.",
+    maj: new Date().toISOString().slice(0, 10),
+    debut: DEBUT, paris: nParis, statistique: Math.round(stat * 1000) / 1000,
+    borne: Math.round(BORNE * 100) / 100, verdict: verd || null,
+    esperance_travail: 0.074, intervalle: [-0.005, 0.153],
+    courses_par_an: 165,
+  }, null, 2));
+  console.log('\n  état écrit dans data/sprt_etat.json');
+ } catch (e) { console.error('  (état non écrit :', e.message, ')'); }
+}
+// le mode historique ne doit pas ecraser l'etat prospectif : il n'est pas un test
+if (prospectif) ecrire(jeu.length, S, verdict);
+else console.log('\n  (mode historique : l\'état prospectif n\'est pas modifié)');
+
 console.log('\n  À relancer après chaque série de paris réels. Les bornes ne se déplacent pas.');
