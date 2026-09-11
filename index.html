@@ -1290,7 +1290,7 @@
     </div>
 
     <!-- Module ranking-loader (doit être chargé avant le script principal) -->
-    <script src="js/panneau-paris.js?v=7"></script>
+    <script src="js/panneau-paris.js?v=8"></script>
     <script src="js/ranking-loader.js?v=23"></script>
 
     <!-- Module de chargement des courses -->
@@ -1783,15 +1783,25 @@
             // Une seule case positive sur huit. La règle en découle : grand
             // champ sur ton terrain, simple gagnant ; partout ailleurs, passer.
             // Le trio n'est jamais jouable, nulle part.
-            // Affinage mesure le 11/09/2026 : dans les grands champs, tout tient
-            // aux courses OUVERTES. Simple gagnant, tes hippodromes, 14 partants
-            // et plus :
-            //     favori >= 4     +14,0 % ± 9,2   (n=523)   +1 462 € a 20 €
-            //     favori 2,5 - 4   -7,1 % ± 10,4  (n=209)     -298 €
-            // Positif cinq annees sur cinq (+14,9 / +21,0 / +6,3 / +21,1 / +1,2)
-            // et repliqué sur deux moities independantes (+14,1 puis +13,9).
-            // L'intervalle contient encore zero : c'est la meilleure case
-            // mesuree, pas un gain garanti.
+            // ESPÉRANCE DE TRAVAIL : +7 %, pas +14 %.
+            //
+            // La mesure brute de cette case donne +14,0 % ± 9,2 sur 523 courses.
+            // Ce chiffre ne doit PAS être affiché : il est le maximum d'une
+            // grille de 78 comparaisons explorée le même jour, et rien n'en est
+            // hors échantillon — les « deux moitiés » et les « cinq années
+            // positives » sont l'objet de la sélection, pas sa confirmation.
+            //
+            // L'estimation honnête est celle de la règle PRÉ-SPÉCIFIÉE, écrite
+            // avant d'ajouter le filtre de cote : 14 partants et plus, toutes
+            // cotes, +7,4 % ± 7,2 sur 743 courses. Le rétrécissement de la carte
+            // de sensibilité vers sa moyenne donne le même ordre (~+7 %).
+            //
+            // Mise en garde retenue de la revue : nationalement, le favori à
+            // cote >= 4 est le PIRE segment (-17,8 %), et le biais
+            // favori/outsider est monotone (-8,8 % à cote 1-2, -19,2 % au-delà
+            // de 6). Cette règle inverse le seul comportement de marché qu'on
+            // comprenne. Un écart de 29 points avec le national appelle de la
+            // méfiance, pas de l'enthousiasme.
             const joue = grandChamp && cotes[0] >= 4;
             return { etat: chezMoi ? 'terrain' : 'hors', cote: cotes[0], chezMoi, pari,
                      grandChamp, joue, np: cotes.length,
@@ -1804,7 +1814,7 @@
                 return `<div style="margin-top:5px;font-size:.7em;opacity:.35">cotes incomplètes</div>`;
 
             if (v.joue) return `<div style="margin-top:6px;display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;font-size:.72em"
-                        title="${v.np} partants et favori à ${v.cote} — grand champ ET course ouverte, sur ton terrain. Sur 523 courses de ce type depuis 2022, le simple gagnant sur le favori a rendu +14,0 % ± 9,2, soit +1 462 € à 20 € la mise et +325 € par an. Positif cinq années sur cinq, et répliqué sur deux moitiés indépendantes (+14,1 puis +13,9). Dans les mêmes grands champs avec un favori sous 4, le même pari rend -7,1 %. Réserve : l'intervalle contient encore zéro, c'est la meilleure case mesurée et non un gain garanti.">
+                        title="${v.np} partants, favori à ${v.cote}, sur ton terrain. Espérance de travail : +7 %, intervalle [−5 ; +19]. La mesure brute de cette case donne +14 %, mais c'est le maximum d'une grille de 78 comparaisons explorée le même jour — rien n'en est hors échantillon. Le chiffre retenu est celui de la règle pré-spécifiée (14 partants et plus, toutes cotes) : +7,4 % ± 7,2 sur 743 courses. À 20 € la mise, cela vaut environ +160 € par an sur 116 courses. À surveiller : nationalement ce segment est le pire (−17,8 %), la règle inverse le biais favori/outsider sans mécanisme connu.">
                     <span style="color:#0b1f16;background:#5fffaf;font-weight:700;letter-spacing:.06em;
                                  padding:1px 7px;border-radius:3px">JOUE</span>
                     <span style="color:var(--gold,#d4af37);font-weight:600">simple gagnant</span>
@@ -1817,7 +1827,7 @@
             return `<div style="margin-top:5px;font-size:.7em;opacity:.42"
                         title="${v.chezMoi
                           ? (v.np >= 14
-                             ? `Grand champ, mais favori à ${v.cote}. Entre 2,5 et 4, le simple gagnant y rend -7,1 % sur 209 courses ; c'est au-delà de 4 qu'il rend +14,0 %.`
+                             ? `Grand champ, mais favori à ${v.cote}. Sous 4, cette case rend -7,1 % sur 209 courses ; le filtre de cote a été ajouté après coup, ce qui affaiblit sa valeur, mais aucune mesure ne le contredit.`
                              : `Sur tes hippodromes, sous 14 partants, le favori au simple gagnant rend -9,0 % (-629 €/an à 20 €), le couplé -1,4 %, le 2 sur 4 -7,7 %, le trio -14,8 %. Aucune de ces cases n'est positive.`)
                           : `Hors de Longchamp et Saint-Cloud, le favori rend -14 % en moyenne sur 15 000 courses.`}">
                     passe · ${motif} · favori ${v.cote}</div>`;
@@ -1885,7 +1895,7 @@
             const V = verdictCourse(courseContext.hippodrome, courseContext.participants);
             const joue = !!(V && V.joue);
             const cellule = joue
-                ? { roi: 14, se: 9.2, n: 523, lib: 'en grand champ ouvert sur ton terrain' }
+                ? { roi: 7, se: 7.2, n: 743, lib: 'en grand champ sur ton terrain' }
                 : chezMoi
                 ? { roi: -4, se: 3.3, n: 2324, lib: 'Longchamp et Saint-Cloud' }
                 : { roi: -14, se: 1.3, n: 15210, lib: 'hors de tes deux hippodromes' };
@@ -1911,16 +1921,16 @@
                 </div>
                 <div style="margin-top:.35rem;font-size:.74rem;opacity:.6;line-height:1.45">
                     ${joue
-                      ? `Cette course réunit les trois conditions : ton terrain, ${V.np} partants, favori à ${V.cote}.
-                         Sur 523 courses de ce type depuis 2022, le simple gagnant sur le favori rend
-                         <strong style="color:${c}">+14,0 % ± 9,2</strong> — positif cinq années sur cinq,
-                         et répliqué sur deux moitiés indépendantes. L'intervalle contient encore zéro :
-                         c'est la meilleure case mesurée, pas un gain garanti.`
+                      ? `Les trois conditions sont réunies : ton terrain, ${V.np} partants, favori à ${V.cote}.
+                         Espérance de travail <strong style="color:${c}">+7 %</strong>, intervalle [−5 ; +19].
+                         La mesure brute de cette case vaut +14 %, mais c'est le maximum d'une grille
+                         explorée après coup : le chiffre retenu est celui de la règle écrite d'avance.
+                         Aucun mécanisme n'est identifié, et ce segment est le pire au niveau national.`
                       : `Le favori rend ici <strong style="color:${c}">${cellule.roi} % ± ${cellule.se}</strong>
                          sur ${cellule.n.toLocaleString('fr-FR')} courses.
                          ${!chezMoi ? 'Hors de Longchamp et Saint-Cloud, rien n\'est jouable.'
                            : (V && V.np < 14) ? `Sous 14 partants, aucun instrument n'est positif sur ton terrain.`
-                           : `Grand champ, mais favori sous 4 : cette case rend -7,1 % quand celle au-delà de 4 rend +14,0 %.`}`}
+                           : `Grand champ, mais favori sous 4 : cette case rend -7,1 % sur 209 courses. Le filtre de cote a été trouvé après coup — il est appliqué faute de mesure qui le contredise, pas parce qu'il est démontré.`}`}
                     ${sansCote ? ` ${sansCote} partant${sansCote > 1 ? 's' : ''} sans cote, écarté${sansCote > 1 ? 's' : ''} du calcul.` : ''}
                     Prix et mise restent le seul levier non mesuré qui puisse rendre l'espérance positive.
                 </div>`;
@@ -2040,7 +2050,7 @@
                                 participants) : null;
             const R = (Vp && Vp.joue)
                 ? { pari: 'simple gagnant', chevaux: [pan.simple[0] && pan.simple[0].chevaux[0]].filter(Boolean),
-                    pourquoi: `grand champ ouvert sur ton terrain — +14,0 % ± 9,2 sur 523 courses, positif cinq années sur cinq` }
+                    pourquoi: `grand champ ouvert sur ton terrain — espérance de travail +7 %, intervalle [−5 ; +19]` }
                 : pan.recommandation;
             const el = document.createElement('div');
             el.className = 'panneau-paris';
