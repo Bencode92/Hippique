@@ -240,7 +240,19 @@ const PanneauParis = (() => {
     };
   }
 
-  return { pourCourse, probabilites, profilCourse, LAMBDA, OVERROUND_MIN, OVERROUND_MAX };
+  /** Instrument le moins coûteux pour un profil, sans calculer les 35 paris.
+   *  Sert à l'affichage de liste, où l'on veut le nom du pari et son coût
+   *  moyen mais pas le détail des combinaisons. */
+  function pariDuProfil(prof) {
+    if (!prof) return null;
+    const cles = Object.keys(LIB).filter((k) => typeof prof[k] === 'number');
+    if (!cles.length) return null;
+    const meilleur = cles.reduce((a, b) => (prof[b] > prof[a] ? b : a));
+    return { cle: meilleur, pari: LIB[meilleur], rangs: RANGS[meilleur], ev: prof[meilleur] - 1 };
+  }
+
+  return { pourCourse, probabilites, profilCourse, pariDuProfil, LIB, RANGS,
+           LAMBDA, OVERROUND_MIN, OVERROUND_MAX };
 })();
 if (typeof module !== 'undefined') module.exports = PanneauParis;
 if (typeof window !== 'undefined') window.PanneauParis = PanneauParis;

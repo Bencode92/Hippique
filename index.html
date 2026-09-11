@@ -1290,7 +1290,7 @@
     </div>
 
     <!-- Module ranking-loader (doit être chargé avant le script principal) -->
-    <script src="js/panneau-paris.js?v=5"></script>
+    <script src="js/panneau-paris.js?v=6"></script>
     <script src="js/ranking-loader.js?v=23"></script>
 
     <!-- Module de chargement des courses -->
@@ -1479,6 +1479,32 @@
             console.log(`✅ Cotes live appliquées : ${updatedCount} participants mis à jour`);
         }
 
+        // Bilan d'un hippodrome : même calcul que le bandeau du jour, mais sur
+        // un seul lieu. Rendu dans l'en-tête, là où l'on regarde déjà combien
+        // de courses il propose.
+        function bilanHippodrome(hippodrome, courses) {
+            if (typeof PanneauParis === 'undefined') return null;
+            const M = miseCourante();
+            let n = 0, gain = 0, esp = 0, gagnants = 0, tousCourus = true;
+            for (const c of courses || []) {
+                const ps = (c.participants || []).filter(p => (parseFloat(p.cote) || 0) > 1);
+                if (ps.length < 5) continue;
+                const fav = ps.reduce((a, b) => parseFloat(a.cote) <= parseFloat(b.cote) ? a : b);
+                const cote = Math.max(1.10, parseFloat(fav.cote));
+                const P = PanneauParis.probabilites(
+                    ps.slice().sort((a, b) => parseFloat(a.cote) - parseFloat(b.cote)));
+                n++;
+                esp += M * (P[0] * cote - 1);
+                if (ps.some(p => p.arrivee)) {
+                    if (+fav.arrivee === 1) { gain += M * cote; gagnants++; }
+                } else tousCourus = false;
+            }
+            if (!n) return null;
+            const engage = M * n;
+            return { n, engage, gagnants, tousCourus,
+                     valeur: tousCourus ? gain - engage : esp, reel: tousCourus };
+        }
+
         // ── BILAN DE LA JOURNÉE ─────────────────────────────────────────
         // Le panneau chiffre une course à la fois ; ce bandeau répond à l'autre
         // question : « et si je mets X sur chaque course ? »
@@ -1574,7 +1600,13 @@
                 return { etat: 'incomplet' };
             const hip = (hippodrome || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
             const chezMoi = ['LONGCHAMP', 'PARISLONGCHAMP', 'SAINTCLOUD'].some(h => hip.includes(h));
-            return { etat: chezMoi ? 'terrain' : 'hors', cote: cotes[0], chezMoi };
+            // Instrument le moins coûteux pour ce profil d'ouverture. Un simple
+            // max sur six valeurs tabulées — assez léger pour la liste, là où
+            // pourCourse() calculerait les 35 paris.
+            const P = PanneauParis.probabilites(cotes.map(c => ({ cote: c })));
+            const pari = PanneauParis.pariDuProfil(PanneauParis.profilCourse(P[0]));
+            return { etat: chezMoi ? 'terrain' : 'hors', cote: cotes[0], chezMoi, pari,
+                     ev: P[0] * Math.max(1.10, cotes[0]) - 1 };
         }
 
         function badgeVerdict(v) {
@@ -1584,12 +1616,14 @@
             if (v.etat !== 'terrain')
                 return `<div style="margin-top:5px;font-size:.7em;opacity:.38"
                             title="Hors de Longchamp et Saint-Cloud, le favori rend -14 % en moyenne sur 15 000 courses.">
-                        hors de ton terrain · favori ${v.cote}</div>`;
+                        hors de ton terrain · favori ${v.cote}${v.pari ? ' · ' + v.pari.pari : ''}</div>`;
             return `<div style="margin-top:6px;display:flex;align-items:center;gap:.4rem;font-size:.72em"
                         title="Longchamp et Saint-Cloud : le favori y rend -4 % contre -14 % ailleurs. Un terrain moins défavorable, pas un pari gagnant.">
                     <span style="color:#0b1f16;background:#5fffaf;font-weight:700;letter-spacing:.06em;
                                  padding:1px 6px;border-radius:3px">TON TERRAIN</span>
                     <span style="opacity:.7">favori ${v.cote}</span>
+                    ${v.pari ? `<span style="opacity:.55">·</span>
+                    <span style="color:var(--gold,#d4af37)" title="Instrument le moins coûteux sur ce profil d'ouverture : ${(v.pari.ev * 100).toFixed(1)} % en moyenne mesurée.">${v.pari.pari}</span>` : ''}
                 </div>`;
         }
 
@@ -2431,9 +2465,16 @@
                         try { return verdictCourse(hippodrome, c.participants); } catch (e) { return null; }
                     });
                     const nbJouables = verdicts.filter(v => v && v.etat === 'terrain').length;
-                    const compteur = nbJouables
+                    const bilanH = bilanHippodrome(hippodrome, filteredCourses);
+                    const chiffreH = bilanH
+                        ? `<span style="opacity:.5">&nbsp;·&nbsp;</span><span style="font-variant-numeric:tabular-nums"
+                             title="${bilanH.engage.toFixed(0)} € engagés à ${miseCourante()} € sur le favori de chacune des ${bilanH.n} courses${bilanH.reel ? `, ${bilanH.gagnants} gagnant${bilanH.gagnants > 1 ? 's' : ''}` : ' — espérance, la journée n\'est pas courue'}.">
+                             <strong style="color:${bilanH.valeur >= 0 ? '#5fffaf' : '#e9a08a'}">${bilanH.valeur >= 0 ? '+' : '−'}${Math.abs(bilanH.valeur).toFixed(0)} €</strong>
+                             <span style="opacity:.5;font-size:.85em">${bilanH.reel ? 'réel' : 'esp.'}</span></span>`
+                        : '';
+                    const compteur = (nbJouables
                         ? `<span style="color:#5fffaf;font-weight:600">ton terrain</span> <span style="opacity:.6">— le favori y rend −4 % contre −14 % ailleurs</span> · ${filteredCourses.length} course${filteredCourses.length > 1 ? 's' : ''}`
-                        : `${filteredCourses.length} course${filteredCourses.length > 1 ? 's' : ''}`;
+                        : `${filteredCourses.length} course${filteredCourses.length > 1 ? 's' : ''}`) + chiffreH;
 
                     // Nouveau format d'affichage avec des cartes
                     const hippodromeId = hippodrome.replace(/\s+/g, '-').toLowerCase();
