@@ -29,6 +29,24 @@ def clean(s):
     s = ''.join(c for c in s if c.isalnum() or c == ' ')
     return ' '.join(s.split())
 
+def cles_personne(s):
+    """Formes possibles d'un nom de jockey ou d'entraineur, de la plus precise
+    a la plus laxiste : « E.HARDOUIN » donne EHARDOUIN puis HARDOUIN."""
+    b = str(s or '').upper().replace('(S)', '').replace('(J)', '')
+    b = ''.join(c if c.isalnum() else ' ' for c in b)
+    mots = [m for m in b.split() if m]
+    if not mots: return []
+    out = [' '.join(mots), ''.join(mots)]
+    if len(mots) >= 2:
+        out.append(mots[0][0] + mots[-1])
+        out.append(mots[-1])
+    return out
+
+def trouve(idx, nom):
+    for k in cles_personne(nom):
+        if k in idx: return idx[k]
+    return {}
+
 def nom_cheval(s):
     s = re.sub(r'\s+[HFM]\.\s*(?:AQPS|PU|PS|TR|AR|AN)\s*\.?.*$', '', str(s or ''), flags=re.I)
     s = re.sub(r'\s+\d+\s*a\.?.*$', '', s)
@@ -57,14 +75,23 @@ def snap_pour(date):
         co = num(r.get('Courses')) or 0
         ch[n] = dict(val=num(r.get('Valeur')) or 0, gm=num(r.get('Gain moyen')) or 0,
                      tv=(num(r.get('Victoires')) or 0) / co if co >= 2 else None)
+    # Les classements ecrivent « ERIC HARDOUIN », les courses « E.HARDOUIN ».
+    # On indexe donc AUSSI par initiale + nom de famille, faute de quoi aucun
+    # jockey ne se retrouve — c'est ce qui donnait 0 % de fiabilite partout.
     for f, d in (('jockeys.csv', jk), ('entraineurs.csv', en)):
         for r in lire_csv(choisi + '/' + f):
             n = clean(r.get('Nom'))
             if not n: continue
             pa = num(r.get('Partants')) or 0
-            d[n] = dict(tv=(num(r.get('Victoires')) or 0) / pa if pa >= 20 else None,
-                        tp=(num(r.get('Places')) or 0) / pa if pa >= 20 else None,
-                        gp=num(r.get('Gain/Part.')) or 0)
+            v = dict(tv=(num(r.get('Victoires')) or 0) / pa if pa >= 20 else None,
+                     tp=(num(r.get('Places')) or 0) / pa if pa >= 20 else None,
+                     gp=num(r.get('Gain/Part.')) or 0)
+            d[n] = v
+            mots = n.split()
+            if len(mots) >= 2:
+                cle = mots[0][0] + mots[-1]
+                d.setdefault(cle, v)          # E + HARDOUIN
+                d.setdefault(mots[-1], v)     # HARDOUIN seul, dernier recours
     _cache[choisi] = (ch, jk, en)
     return _cache[choisi]
 
@@ -89,12 +116,26 @@ for f in sorted(glob.glob('data/courses/2026-*.json')):
         gi = next((i for i, p in enumerate(ps) if num(p.get('arrivee')) == 1), None)
         if len(ps) < 5 or gi is None: continue
         inv = sum(1 / num(p['cote']) for p in ps)
+        # Fiabilité de la course : part des partants dont TOUTES les infos sont
+        # la — cheval retrouve au classement (donc Valeur FG datee), jockey
+        # retrouve, cote de reference, musique et valeur renseignees. Un modele
+        # nourri de valeurs par defaut ne peut pas etre juge comme un modele
+        # nourri de donnees reelles.
+        complet = 0
+        for p in ps:
+            ok = (nom_cheval(p.get('cheval')) in CH
+                  and bool(trouve(JK, p.get('jockey')))
+                  and (num(p.get('cote_reference')) or 0) > 1
+                  and len(str(p.get('musique') or '')) > 3
+                  and (num(p.get('valeur')) or 0) > 0)
+            complet += 1 if ok else 0
+        fiab = complet / len(ps)
         X = []
         for p in ps:
             cote, cr = num(p['cote']), num(p.get('cote_reference'))
             ch = CH.get(nom_cheval(p.get('cheval')), {})
-            jkd = JK.get(clean(p.get('jockey')), {})
-            end = EN.get(clean(p.get('entraineur')), {})
+            jkd = trouve(JK, p.get('jockey'))
+            end = trouve(EN, p.get('entraineur'))
             mus = musique(p.get('musique'))
             t = str(p.get('cote_tendance') or '')
             nc = num(p.get('nb_courses')) or 0
@@ -120,8 +161,9 @@ for f in sorted(glob.glob('data/courses/2026-*.json')):
         nomc = (c.get('nom') or '').upper()
         typ = ('handicap' if 'HANDICAP' in nomc else
                'maiden'   if 'MAIDEN' in nomc else 'conditions')
-        courses.append(dict(date=date, X=np.array(X, float), g=gi, np_=len(ps),
+        courses.append(dict(date=date, X=np.array(X, float), g=gi, np_=len(ps), fiab=fiab,
                             dist=num(c.get('distance')) or 0, typ=typ,
+                            hip=''.join(ch for ch in (d.get('hippodrome') or '').upper() if ch.isalnum()),
                             cotes=np.array([num(p['cote']) for p in ps])))
 
 tr = [c for c in courses if c['date'] < '2026-07-01']
@@ -250,3 +292,162 @@ for nom, f in SEGMENTS:
           f"[{NOMS[idx]} {ws[idx]:+.2f}]")
 print("\n  * = écart positif au-delà de deux erreurs-types.  Dix segments testés :")
 print("  un tel écart est attendu par le hasard environ une fois sur deux.")
+
+
+# ── TON TERRAIN ─────────────────────────────────────────────────────────
+# Longchamp compte 187 courses depuis avril : bien trop peu pour y ajuster
+# dix-huit parametres. On fait donc l'inverse, qui est plus puissant — on
+# apprend sur TOUT LE RESTE, et l'on teste la-bas. Si le modele y gagnait
+# quelque chose que la cote n'a pas, cela se verrait ici sans surapprentissage
+# local possible.
+def roi_top1(jeu, w):
+    """ROI d'une mise plate sur le n1 du modele, dividende = cote, plancher 1,10."""
+    g = []
+    for c in jeu:
+        u = c['Z'] @ w
+        i = int(np.argmax(u))
+        g.append(max(1.10, c['cotes'][i]) if i == c['g'] else 0.0)
+    g = np.array(g)
+    return 100 * (g.mean() - 1), 100 * g.std(ddof=0) / math.sqrt(len(g))
+
+def roi_favori(jeu):
+    g = []
+    for c in jeu:
+        i = int(np.argmin(c['cotes']))
+        g.append(max(1.10, c['cotes'][i]) if i == c['g'] else 0.0)
+    g = np.array(g)
+    return 100 * (g.mean() - 1), 100 * g.std(ddof=0) / math.sqrt(len(g))
+
+PREM = ['LONGCHAMP', 'SAINTCLOUD', 'CHANTILLY', 'FONTAINEBLEAU', 'DEAUVILLE', 'LYONPARILLY']
+CIBLES = [
+    ('Longchamp',            lambda c: 'LONGCHAMP' in c['hip']),
+    ('Longchamp+St-Cloud',   lambda c: 'LONGCHAMP' in c['hip'] or 'SAINTCLOUD' in c['hip']),
+    ('les 7 premium',        lambda c: any(x in c['hip'] for x in PREM)),
+]
+print("\n" + "=" * 74)
+print("TON TERRAIN — modele appris AILLEURS, teste ici\n")
+for nom, f in CIBLES:
+    ici = [c for c in courses if f(c)]
+    ailleurs = [c for c in courses if not f(c)]
+    if len(ici) < 100: 
+        print(f"  {nom} — trop peu ({len(ici)})"); continue
+    w0 = np.zeros(len(NOMS)); w0[0] = 1.0
+    r = minimize(negll, w0, args=(ailleurs, 0.05), method='L-BFGS-B')
+    ws = r.x
+    t1, c1 = top_k(ici, ws, 1), top_k_marche(ici, 1)
+    t2, c2 = top_k(ici, ws, 2), top_k_marche(ici, 2)
+    se1 = math.sqrt(t1 * (1 - t1) / len(ici)) * 100
+    rm, rms = roi_top1(ici, ws)
+    rf, rfs = roi_favori(ici)
+    idx = int(np.argmax(np.abs(ws[1:]))) + 1
+    print(f"  {nom}  ({len(ici)} courses ici, {len(ailleurs)} pour apprendre)")
+    print(f"    Top1   modele {100*t1:5.1f} %   cote {100*c1:5.1f} %   ecart {100*(t1-c1):+5.1f} ± {se1:.1f}")
+    print(f"    Top2   modele {100*t2:5.1f} %   cote {100*c2:5.1f} %   ecart {100*(t2-c2):+5.1f}")
+    print(f"    ROI    modele {rm:+6.1f} % ± {rms:.1f}   favori {rf:+6.1f} % ± {rfs:.1f}")
+    print(f"    levier dominant hors marche : {NOMS[idx]} {ws[idx]:+.2f}\n")
+
+
+# ── FIABILITE DES DONNEES ───────────────────────────────────────────────
+# Un modele nourri de valeurs par defaut ne peut pas etre juge comme un modele
+# nourri de donnees reelles. On mesure donc la part des partants dont TOUTES
+# les infos sont presentes, et l'on regarde si le modele se comporte mieux la
+# ou il est bien nourri.
+PREM7 = ['LONGCHAMP', 'SAINTCLOUD', 'CHANTILLY', 'FONTAINEBLEAU', 'DEAUVILLE', 'LYONPARILLY']
+prem = [c for c in courses if any(x in c['hip'] for x in PREM7)]
+print("\n" + "=" * 74)
+print("FIABILITE DES DONNEES — courses premium\n")
+fi = np.array([c['fiab'] for c in prem])
+print(f"  {len(prem)} courses premium · fiabilite moyenne {100*fi.mean():.1f} %")
+for lo, hi, lib in [(0, .5, '< 50 %'), (.5, .8, '50-80 %'), (.8, .999, '80-100 %'), (.999, 1.01, '100 %')]:
+    n = int(((fi >= lo) & (fi < hi)).sum())
+    print(f"    {lib:9} {n:5} courses ({100*n/len(prem):4.1f} %)")
+
+print("\n  Modele appris sur les NON-premium, teste sur les premium par niveau\n")
+autres = [c for c in courses if not any(x in c['hip'] for x in PREM7)]
+w0 = np.zeros(len(NOMS)); w0[0] = 1.0
+wp = minimize(negll, w0, args=(autres, 0.05), method='L-BFGS-B').x
+print("  fiabilite   courses   Top1 modele / cote     ROI modele / favori")
+for lo, hi, lib in [(0, .8, 'sous 80 %'), (.8, 1.01, '80 % et plus'), (.999, 1.01, '100 % strict')]:
+    seg = [c for c in prem if lo <= c['fiab'] < hi]
+    if len(seg) < 100:
+        print(f"  {lib:12}{len(seg):7}   — trop peu"); continue
+    t1, c1 = top_k(seg, wp, 1), top_k_marche(seg, 1)
+    se = math.sqrt(t1 * (1 - t1) / len(seg)) * 100
+    rm, rms = roi_top1(seg, wp)
+    rf, rfs = roi_favori(seg)
+    print(f"  {lib:12}{len(seg):7}   {100*t1:5.1f} / {100*c1:5.1f}  {100*(t1-c1):+5.1f} ± {se:.1f}   "
+          f"{rm:+6.1f} ± {rms:.1f}  /  {rf:+6.1f} ± {rfs:.1f}")
+print("\n  Le favori sert de reference : s'il rend deja plus la ou les donnees sont")
+print("  completes, c'est la course qui est differente, pas le modele qui est meilleur.")
+
+
+# ── LA FIABILITE EST-ELLE UN PROXY ? ────────────────────────────────────
+# Le favori rend +10,7 % la ou les donnees sont completes contre -13,0 %
+# ailleurs. Avant d'y voir un effet de la qualite des donnees, il faut
+# eliminer l'explication banale : une course dont tous les partants ont une
+# musique et une valeur n'est pas une course au hasard, c'est une course de
+# chevaux etablis. La fiabilite pourrait n'etre qu'un deguisement du type de
+# course, ou de l'age des partants.
+print("\n" + "=" * 74)
+print("LA FIABILITE EST-ELLE UN PROXY D'AUTRE CHOSE ?\n")
+hauts = [c for c in prem if c['fiab'] >= .8]
+bas   = [c for c in prem if c['fiab'] <  .8]
+def part(jeu, f): return 100 * sum(1 for c in jeu if f(c)) / max(1, len(jeu))
+print("  caracteristique              donnees >=80 %   donnees <80 %")
+for lib, f in [('type maiden',        lambda c: c['typ'] == 'maiden'),
+               ('type handicap',      lambda c: c['typ'] == 'handicap'),
+               ('type conditions',    lambda c: c['typ'] == 'conditions'),
+               ('distance < 1400 m',  lambda c: c['dist'] < 1400),
+               ('partants >= 14',     lambda c: c['np_'] >= 14)]:
+    print(f"  {lib:28}{part(hauts,f):8.1f} %      {part(bas,f):8.1f} %")
+
+print("\n  ROI DU FAVORI, a type de course FIXE\n")
+print("  segment                    donnees >=80 %          donnees <80 %")
+for lib, f in [('toutes',           lambda c: True),
+               ('conditions seul',  lambda c: c['typ'] == 'conditions'),
+               ('maiden exclu',     lambda c: c['typ'] != 'maiden')]:
+    a = [c for c in hauts if f(c)]; b = [c for c in bas if f(c)]
+    if len(a) < 60 or len(b) < 60:
+        print(f"  {lib:26}— trop peu ({len(a)} / {len(b)})"); continue
+    ra, sa = roi_favori(a); rb, sb = roi_favori(b)
+    d = ra - rb; sd = math.sqrt(sa**2 + sb**2)
+    print(f"  {lib:26}{ra:+6.1f} % ± {sa:4.1f} (n={len(a)})   {rb:+6.1f} % ± {sb:4.1f} (n={len(b)})"
+          f"   ecart {d:+5.1f} ± {sd:.1f}" + ("  <- tient" if abs(d) > 1.96*sd else "  <- bruit"))
+
+print("\n  ET LA MEME CHOSE SUR LES NON-PREMIUM, ou l'echantillon est six fois plus gros\n")
+ha = [c for c in autres if c['fiab'] >= .8]; ba = [c for c in autres if c['fiab'] < .8]
+ra, sa = roi_favori(ha); rb, sb = roi_favori(ba)
+d = ra - rb; sd = math.sqrt(sa**2 + sb**2)
+print(f"  donnees >=80 %  {ra:+6.1f} % ± {sa:.1f}  (n={len(ha)})")
+print(f"  donnees <80 %   {rb:+6.1f} % ± {sb:.1f}  (n={len(ba)})")
+print(f"  ecart           {d:+6.1f} ± {sd:.1f}" + ("   <- TIENT" if abs(d) > 1.96*sd else "   <- dans le bruit"))
+
+
+# ── LE CONTROLE DECISIF : a taille de champ FIXEE ───────────────────────
+# 39 % des courses a donnees completes ont 14 partants ou plus, contre 5 % des
+# autres. La « fiabilite » pourrait n'etre qu'un deguisement de la taille du
+# champ, qui change tout par ailleurs. A taille fixee, l'ecart survit-il ?
+print("\n" + "=" * 74)
+print("ROI DU FAVORI A TAILLE DE CHAMP FIXEE — premium\n")
+print("  champ            donnees >=80 %           donnees <80 %            ecart")
+for lib, f in [('< 9 partants',  lambda c: c['np_'] < 9),
+               ('9 a 13',        lambda c: 9 <= c['np_'] < 14),
+               ('14 et plus',    lambda c: c['np_'] >= 14)]:
+    a = [c for c in prem if c['fiab'] >= .8 and f(c)]
+    b = [c for c in prem if c['fiab'] <  .8 and f(c)]
+    if len(a) < 40 or len(b) < 40:
+        print(f"  {lib:16}n={len(a):4} / {len(b):4}   — trop peu pour comparer"); continue
+    ra, sa = roi_favori(a); rb, sb = roi_favori(b)
+    d = ra - rb; sd = math.sqrt(sa**2 + sb**2)
+    print(f"  {lib:16}{ra:+6.1f} % ± {sa:4.1f} (n={len(a):3})   {rb:+6.1f} % ± {sb:4.1f} (n={len(b):3})"
+          f"   {d:+5.1f} ± {sd:.1f}" + ("  <- tient" if abs(d) > 1.96*sd else "  <- bruit"))
+
+print("\n  ET L'EFFET DE LA TAILLE DE CHAMP SEULE, sans regarder la fiabilite\n")
+print("  champ            premium                  non-premium")
+for lib, f in [('< 9 partants',  lambda c: c['np_'] < 9),
+               ('9 a 13',        lambda c: 9 <= c['np_'] < 14),
+               ('14 et plus',    lambda c: c['np_'] >= 14)]:
+    a = [c for c in prem if f(c)]; b = [c for c in autres if f(c)]
+    ra, sa = roi_favori(a) if len(a) >= 40 else (float('nan'), 0)
+    rb, sb = roi_favori(b) if len(b) >= 40 else (float('nan'), 0)
+    print(f"  {lib:16}{ra:+6.1f} % ± {sa:4.1f} (n={len(a):3})   {rb:+6.1f} % ± {sb:4.1f} (n={len(b):4})")
