@@ -1291,7 +1291,7 @@
 
     <!-- Module ranking-loader (doit être chargé avant le script principal) -->
     <script src="js/panneau-paris.js?v=5"></script>
-    <script src="js/ranking-loader.js?v=21"></script>
+    <script src="js/ranking-loader.js?v=22"></script>
 
     <!-- Module de chargement des courses -->
     <script>
@@ -2512,8 +2512,8 @@
                                     <th style="width:50px">Poids</th>
                                     <th style="width:50px">Cote</th>
                                     <th style="width:140px" title="Score formule actuelle (du site)">Score</th>
-                                    <th style="width:78px" title="Rang par la cote — la référence. Son n°1 gagne 34,9 % du temps, mesuré sur 14 620 courses de plat FR 2022-2026.">Marché<br><span style="font-weight:400;opacity:.6;font-size:.8em">34,9 %</span></th>
-                                    <th style="width:78px" title="Rang par la formule Optimale (champion du bucket distance). Son n°1 gagne 33,6 % du temps sur les mêmes courses, soit 1,3 point DE MOINS que la simple cote. Conservé pour comparaison, pas comme référence.">Optimale<br><span style="font-weight:400;opacity:.6;font-size:.8em">33,6 %</span></th>
+                                    <th style="width:78px" title="Rang par la cote — la référence. Son n°1 gagne 33,8 % ± 1,9 du temps sur les 637 courses premium depuis le 16/04/2026, c'est-à-dire exactement l'univers sur lequel l'Optimale est mesurée. (Les 34,9 % affichés auparavant venaient de 14 620 courses toutes catégories : ils n'étaient pas comparables.)">Marché<br><span style="font-weight:400;opacity:.6;font-size:.8em">33,8 %</span></th>
+                                    <th style="width:78px" title="Rang par la formule Optimale (champion du bucket distance). Son n°1 gagne 33,6 % du temps sur 628 courses premium — à égalité avec la cote (33,8 % ± 1,9) sur le même univers. Mais ses leviers et ses poids ont été CHOISIS sur ces mêmes 628 courses : ce 33,6 % est donc une borne supérieure, et l'égalité in-sample annonce un retard hors échantillon.">Optimale<br><span style="font-weight:400;opacity:.6;font-size:.8em">33,6 %</span></th>
                                     <th style="width:80px" title="Nombre de méthodes plaçant le cheval dans leur top 3. Indicatif : les méthodes ne se valent pas, seule la colonne Marché a une performance établie.">Accord</th>
                                     <th style="width:55px">Arrivée</th>
                                 </tr>
@@ -2824,7 +2824,7 @@
                                     const totalMethods = optimalResult ? 3 : 2;
                                     const medal = r => r === 1 ? '🥇' : r === 2 ? '🥈' : r === 3 ? '🥉' : '';
                                     // Le relief va au marché : c'est la seule méthode dont la
-                                    // performance soit établie (34,9 % de Top1 contre 33,6 % pour
+                                    // performance soit établie (33,8 % de Top1 contre 33,6 % pour
                                     // l'Optimale, sur 14 620 courses). L'Optimale reste affichée,
                                     // en retrait, pour comparaison.
                                     const cotaBadge = rgCote ? `<span style="font-weight:700;color:${inTopCote ? '#40e05a' : 'inherit'}">${medal(rgCote)}${medal(rgCote) ? ' ' : ''}${rgCote}</span>` : '<span style="opacity:0.3">-</span>';
