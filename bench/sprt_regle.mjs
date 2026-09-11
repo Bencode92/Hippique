@@ -57,7 +57,9 @@ for (const f of fs.readdirSync('data/histo').filter(x=>x.endsWith('.jsonl')))
     // est reelle, elle apparaitra ; sinon elle n'aura rien coute.
     const sg = rap.get(`${d.date}|${h}|${d.r}|${d.c}`); if (!sg) continue;
     const m = sg.find(x=>String(x.comb) === String(fav.n));
-    L.push({ date: d.date, cote: fav.c, gagne: !!(m && m.div > 0) });
+    // derive du favori : sa cote a-t-elle baisse depuis le matin ?
+    const der = (fav.cr > 1) ? (fav.cr - fav.c) / fav.cr : null;
+    L.push({ date: d.date, cote: fav.c, der, gagne: !!(m && m.div > 0) });
   }
 L.sort((a,b)=>a.date.localeCompare(b.date));
 const DEBUT = '2026-10-01';
@@ -130,6 +132,12 @@ if (jeu.length) {
   console.log('\n  SOUS-HYPOTHÈSE OBSERVÉE (retirée de la règle jouée)');
   sousH(x => x.cote >= 4, 'dont favori ≥ 4');
   sousH(x => x.cote <  4, 'dont favori < 4');
+  // seconde sous-hypothese, observee depuis le 11/09/2026 : sur avril-septembre
+  // 2026, le favori dont la cote a BAISSE depuis le matin rendait +16,4 % contre
+  // -31,4 % pour celui qui a monte. Ecart de 48 points, mais t = 1,18 sur
+  // 95 courses et six filtres essayes : rien a en tirer aujourd'hui.
+  sousH(x => x.der !== null && x.der >  0, 'dont favori qui a baissé');
+  sousH(x => x.der !== null && x.der <= 0, 'dont favori qui a monté');
 }
 
 // état écrit pour l'affichage
