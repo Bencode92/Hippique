@@ -1479,6 +1479,55 @@
             console.log(`✅ Cotes live appliquées : ${updatedCount} participants mis à jour`);
         }
 
+        // Le même tableau que par réunion, mais sur toute la journée. Par
+        // hippodrome, « 5/9 » se lit vite comme un verdict alors que neuf
+        // courses ne tranchent rien : cumulé, l'échantillon devient lisible.
+        function bandeauGlobal(G) {
+            if (!G || G.total < 3) return '';
+            const p = (x, n) => Math.round(x / n * 100);
+            const meilleur = (v, autres) => Math.max(v, ...autres) === v ? '#40e05a' : '#e05a40';
+            const ligne = (icone, nom, v1, v2, v3, a1, a2, a3, n, note) => `
+                <tr style="border-top:1px solid rgba(255,255,255,0.08)">
+                    <td style="text-align:left;padding:4px;opacity:0.8">${icone} ${nom}</td>
+                    <td style="padding:4px"><strong style="color:${meilleur(v1, a1)}">${v1}%</strong>
+                        <span style="opacity:0.4;font-size:0.85em">(${Math.round(v1 * n / 100)}/${n})</span></td>
+                    <td style="padding:4px"><strong style="color:${meilleur(v2, a2)}">${v2}%</strong></td>
+                    <td style="padding:4px"><strong style="color:${meilleur(v3, a3)}">${v3}%</strong></td>
+                    <td style="text-align:left;padding:4px;opacity:0.45;font-size:0.85em">${note || ''}</td>
+                </tr>`;
+            const N = G.total, O = G.avecOpt || N;
+            const n1 = p(G.n1, N), n2 = p(G.n2, N), n3 = p(G.n3, N);
+            const f1 = p(G.f1, N), f2 = p(G.f2, N), f3 = p(G.f3, N);
+            const o1 = p(G.o1, O), o2 = p(G.o2, O), o3 = p(G.o3, O);
+            // écart-type binomial : sans lui, deux points d'écart passent pour un résultat
+            const se = (x) => Math.round(100 * Math.sqrt((x/100) * (1 - x/100) / N));
+            return `<div style="background:rgba(0,0,0,0.25);border-radius:8px;padding:10px 14px;margin:0 0 1rem;font-size:0.82em">
+                <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;opacity:0.85;flex-wrap:wrap;gap:.4rem">
+                    <span>🗓️ <strong>Toute la journée</strong> — ${N} courses terminées, tous hippodromes</span>
+                    <span style="opacity:.6;font-size:.92em">±${se(f1)} points d'incertitude sur chaque taux</span>
+                </div>
+                <table style="width:100%;border-collapse:collapse;font-size:0.95em;text-align:center">
+                    <thead><tr style="opacity:0.55">
+                        <th style="text-align:left;padding:2px 4px;font-weight:500">Méthode</th>
+                        <th style="padding:2px 4px;font-weight:500">Top1</th>
+                        <th style="padding:2px 4px;font-weight:500">Top2</th>
+                        <th style="padding:2px 4px;font-weight:500">Top3</th>
+                        <th style="text-align:left;padding:2px 4px;font-weight:500"></th>
+                    </tr></thead>
+                    <tbody>
+                        ${ligne('📊', 'Actuelle', n1, n2, n3, [f1,o1], [f2,o2], [f3,o3], N)}
+                        ${ligne('🔬', 'Optimale', o1, o2, o3, [n1,f1], [n2,f2], [n3,f3], O, 'formule par bucket')}
+                        ${ligne('💰', 'Cote', f1, f2, f3, [n1,o1], [n2,o2], [n3,o3], N, 'la référence')}
+                    </tbody>
+                </table>
+                <div style="opacity:.45;font-size:.85em;margin-top:6px;line-height:1.4">
+                    Une journée ne tranche rien : à ${N} courses, l'écart entre deux méthodes doit dépasser
+                    ${2 * se(f1)} points pour signifier quelque chose. Mesurée sur 6 304 courses hors
+                    échantillon, l'Optimale rend 0,5 point de moins que la cote.
+                </div>
+            </div>`;
+        }
+
         // Bilan d'un hippodrome : même calcul que le bandeau du jour, mais sur
         // un seul lieu. Rendu dans l'en-tête, là où l'on regarde déjà combien
         // de courses il propose.
@@ -1746,6 +1795,29 @@
             if (!pan || pan.incomplet) return;
             const M = miseCourante();
             const pct = v => (v * 100).toFixed(1) + '%';
+
+            // Course courue : on ne montre plus une espérance, on montre le
+            // résultat. Les arrivées sont dans les participants ; le dividende
+            // du simple gagnant EST la cote (vérifié sur 729 favoris gagnants,
+            // écart médian 0,0 % avec les rapports définitifs). Pour les
+            // combinés on sait si le pari passe, pas ce qu'il rapporte : le
+            // rapport n'est pas dans data/courses. On dit donc « gagné » sans
+            // inventer de montant.
+            const arrivees = new Map();
+            for (const p of participants || []) {
+                const a = parseInt(p.arrivee);
+                if (a >= 1) arrivees.set(String(p.cheval), a);
+            }
+            const couru = arrivees.size >= 3;
+            const placeDe = nom => arrivees.get(String(nom)) || 99;
+            const passe = (x) => {
+                const r = x.chevaux.map(placeDe);
+                if (x.pari === 'simple gagnant') return r[0] === 1;
+                if (x.pari.startsWith('couplé')) return r.every(v => v <= 2);
+                if (x.pari === 'trio') return r.every(v => v <= 3);
+                if (x.pari.startsWith('2 sur 4')) return r.every(v => v <= 4);
+                return false;
+            };
             const ev = v => {
                 const c = v > -0.13 ? '#5fffaf' : v > -0.22 ? '#e9d18c' : '#ff8a7a';
                 return `<span style="color:${c};font-variant-numeric:tabular-nums">${(v * 100).toFixed(1)}%</span>`;
@@ -1764,16 +1836,24 @@
             };
             const ligne = x => {
                 const sp = siPasse(x);
-                return `<tr>
+                const gagne = couru ? passe(x) : null;
+                const resultat = !couru ? null
+                    : gagne
+                      ? (sp && sp.exact
+                         ? `<span style="color:#5fffaf;font-weight:600">${euros(sp.v)}</span>`
+                         : `<span style="color:#5fffaf;font-weight:600">gagné</span>`)
+                      : `<span style="color:#e9a08a">${euros(-M)}</span>`;
+                return `<tr${gagne ? ' style="background:rgba(95,255,175,.07)"' : ''}>
                 <td style="padding:2px 8px 2px 0">${x.meilleureEv ? '<span style="color:var(--gold)">\u25B8</span> ' : ''}${x.chevaux.join(' + ')}</td>
                 <td style="padding:2px 8px;text-align:right;font-variant-numeric:tabular-nums;opacity:.75">${pct(x.p)}</td>
                 <td style="padding:2px 8px;text-align:right;font-variant-numeric:tabular-nums;opacity:${sp && sp.exact ? '.85' : '.6'}">${sp === null ? '—' : (sp.exact ? '' : '~') + euros(sp.v)}</td>
-                <td style="padding:2px 0;text-align:right">${ev(x.ev)} <span style="opacity:.55;font-size:.88em;font-variant-numeric:tabular-nums">${euros(x.ev * M)}</span></td></tr>`;
+                <td style="padding:2px 0;text-align:right;font-variant-numeric:tabular-nums">${couru ? resultat
+                    : `${ev(x.ev)} <span style="opacity:.55;font-size:.88em">${euros(x.ev * M)}</span>`}</td></tr>`;
             };
             const col = (titre, arr, note) => !arr.length ? '' : `<div style="min-width:200px;flex:1">
                 <div style="font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;opacity:.6;margin-bottom:.3rem">${titre}${note ? ` <span style="opacity:.6;text-transform:none;letter-spacing:0">${note}</span>` : ''}</div>
                 <table style="width:100%;font-size:.83rem;border-collapse:collapse">
-                    <tr style="opacity:.5;font-size:.7rem"><td></td><td style="text-align:right">proba</td><td style="text-align:right">si ça passe</td><td style="text-align:right">espérance</td></tr>
+                    <tr style="opacity:.5;font-size:.7rem"><td></td><td style="text-align:right">proba</td><td style="text-align:right">si ça passe</td><td style="text-align:right">${couru ? 'résultat' : 'espérance'}</td></tr>
                     ${arr.slice(0, 3).map(ligne).join('')}
                 </table></div>`;
             const R = pan.recommandation;
@@ -2329,7 +2409,12 @@
                 
                 // Filtrer les hippodromes par recherche
                 const searchTerm = searchInput.value.trim().toLowerCase();
-                let html = bilanJournee(courseData);
+                let html = '';
+                // Les mêmes compteurs que le bandeau de réunion, mais cumulés sur
+                // tous les hippodromes : la question « laquelle des trois méthodes
+                // a eu raison » se pose aussi à l'échelle de la journée, où
+                // l'échantillon est enfin de taille décente.
+                const GLOB = { n1:0, n2:0, n3:0, f1:0, f2:0, f3:0, o1:0, o2:0, o3:0, total:0, avecOpt:0 };
                 
                 // Parcourir les hippodromes
                 for (const [hippodrome, courses] of Object.entries(courseData)) {
@@ -2416,6 +2501,11 @@
                                 if (winnerRank && winnerRank <= 3) rO3++;
                             }
                         });
+                        GLOB.n1 += rN1; GLOB.n2 += rN2; GLOB.n3 += rN3;
+                        GLOB.f1 += rF1; GLOB.f2 += rF2; GLOB.f3 += rF3;
+                        GLOB.o1 += rO1; GLOB.o2 += rO2; GLOB.o3 += rO3;
+                        GLOB.total += rTotal;
+                        GLOB.avecOpt += optimalRanksPerCourse.filter(Boolean).length;
                         const pN1 = Math.round(rN1/rTotal*100), pN2 = Math.round(rN2/rTotal*100), pN3 = Math.round(rN3/rTotal*100);
                         const pF1 = Math.round(rF1/rTotal*100), pF2 = Math.round(rF2/rTotal*100), pF3 = Math.round(rF3/rTotal*100);
                         const pO1 = Math.round(rO1/rTotal*100), pO2 = Math.round(rO2/rTotal*100), pO3 = Math.round(rO3/rTotal*100);
@@ -2533,7 +2623,7 @@
                         </div>
                     `;
                 } else {
-                    resultsContainer.innerHTML = html;
+                    resultsContainer.innerHTML = bilanJournee(courseData) + bandeauGlobal(GLOB) + html;
 
                     // La mise du bilan pilote aussi celle des cartes : un seul
                     // montant pour toute la session, retenu d'une journée à
