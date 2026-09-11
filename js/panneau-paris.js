@@ -42,18 +42,48 @@ const PanneauParis = (() => {
     [0.250, 0.350, 1.047], [0.350, 1.000, 1.090],
   ];
 
-  // Gain moyen encaissé pour 1 € misé, par composition de rangs du marché.
-  // CORRECTIF : ne sont comptées que les courses où le pari était RÉELLEMENT
-  // PROPOSÉ. Le 2 sur 4 n'est offert que sur 64 % des courses et le trio sur
-  // 80 % ; compter les autres comme des mises perdues déflatait leur espérance
-  // de 20 et 4 points. Le simple gagnant et le couplé sont offerts partout,
-  // leurs chiffres étaient donc justes.
-  const EV = {
-    gagnant: {'0':0.8697,'1':0.865,'2':0.8636,'3':0.8307,'4':0.8181},
-    couple: {'0-1':0.8729,'0-2':0.832,'0-3':0.81,'0-4':0.8071,'1-2':0.8693,'1-3':0.8312,'1-4':0.7409,'2-3':0.7601,'2-4':0.8045,'3-4':0.7623},
-    trio: {'0-1-2':0.7022,'0-1-3':0.7521,'0-1-4':0.7639,'0-2-3':0.7804,'0-2-4':0.7695,'0-3-4':0.7602,'1-2-3':0.7938,'1-2-4':0.8352,'1-3-4':0.7478,'2-3-4':0.583},
-    deuxSurQuatre: {'0-1':0.8752,'0-2':0.8985,'0-3':0.8708,'0-4':0.8333,'1-2':0.8574,'1-3':0.8451,'1-4':0.7989,'2-3':0.7704,'2-4':0.7502,'3-4':0.7285},
+  // Gain moyen encaissé pour 1 € misé, par composition de rangs du marché (0 =
+  // favori) et par profil d'ouverture. Régénéré par bench/gen_ev_compositions.mjs
+  // sur 14 547 courses (plat FR, 8 partants et plus, Σ(1/cote) dans [1,03 ; 1,60]).
+  //
+  // Pourquoi par profil : le couplé des rangs 1-2 vaut -12,4 % toutes courses
+  // confondues mais -4,5 % sur une course fermée et -39,6 % sur une course
+  // ouverte. La table précédente ne donnait que la moyenne générale, à côté
+  // d'une recommandation calculée par profil — le couplé paraissait donc pire
+  // que le simple là où il est en réalité le meilleur choix.
+  //
+  // Une composition n'apparaît dans son profil QUE si son écart à la moyenne
+  // générale dépasse son intervalle de confiance : 15 sur 140 l'ont fait, les
+  // 125 autres retombent sur `global`. Sans cette règle, un trio mesuré à
+  // +1,9 % sur un profil (écart +22 pt, IC ±26) se serait affiché comme une
+  // espérance positive, alors que le prélèvement du trio est de 31 %.
+  //
+  // Ne sont comptées que les courses où le pari était RÉELLEMENT PROPOSÉ : le
+  // 2 sur 4 n'est pas offert partout, et compter les autres comme des mises
+  // perdues déflatait son espérance de 20 points.
+  const EV_PROFILS = {
+    fermee: {
+      gagnant: {'3':0.7456},
+      couple: {'0-1':0.9547, '1-3':0.6971},
+      trio: {'1-3-4':0.5051},
+      deuxSurQuatre: {'0-1':0.936, '1-2':0.7815, '1-3':0.7117, '1-4':0.6224, '2-3':0.6726, '2-4':0.5587, '3-4':0.4893}
+    },
+    moyenne: {},
+    assez_ouverte: {
+      deuxSurQuatre: {'3-4':0.8618}
+    },
+    ouverte: {
+      couple: {'0-1':0.6038},
+      trio: {'0-1-2':0.3761, '1-2-4':0.3838}
+    },
+    global: {
+      gagnant: {'0':0.8716, '1':0.8653, '2':0.8644, '3':0.8324, '4':0.8163},
+      couple: {'0-1':0.8765, '0-2':0.8341, '0-3':0.8129, '0-4':0.8094, '1-2':0.8696, '1-3':0.8324, '1-4':0.7411, '2-3':0.7623, '2-4':0.8047, '3-4':0.7624},
+      trio: {'0-1-2':0.7047, '0-1-3':0.7555, '0-1-4':0.7659, '0-2-3':0.7843, '0-2-4':0.7731, '0-3-4':0.7624, '1-2-3':0.7959, '1-2-4':0.8395, '1-3-4':0.7467, '2-3-4':0.5787},
+      deuxSurQuatre: {'0-1':0.8767, '0-2':0.8993, '0-3':0.8729, '0-4':0.8362, '1-2':0.858, '1-3':0.8457, '1-4':0.7982, '2-3':0.7715, '2-4':0.7498, '3-4':0.7287}
+    }
   };
+
   const PRELEVEMENT = { gagnant: 0.14, couple: 0.26, trio: 0.31, deuxSurQuatre: 0.26 };
 
   // Quel instrument selon l'OUVERTURE de la course, mesuré par la probabilité
@@ -65,6 +95,9 @@ const PanneauParis = (() => {
   //   couple   = couplé gagnant sur les deux favoris ; couple02 = favori + 3e
   //   d4 / d402 = 2 sur 4, mêmes paires
   //   trio     = les trois premiers du marché
+  // libellé affiché → clé de EV_PROFILS
+  const CLE_EV = { 'course fermée':'fermee', 'course moyenne':'moyenne',
+                   'course assez ouverte':'assez_ouverte', 'course ouverte':'ouverte' };
   const PROFILS = {
     'course fermée': { pMin:0.28, pMax:1.01, n:4555, simple:0.8999,couple:0.9547,couple02:0.8705,d4:0.936,d402:0.9404,trio:0.7938 },
     'course moyenne': { pMin:0.22, pMax:0.28, n:4050, simple:0.8622,couple:0.8606,couple02:0.8314,d4:0.9299,d402:0.9045,trio:0.7772 },
@@ -144,8 +177,14 @@ const PanneauParis = (() => {
     const P = probabilites(parts);
     const nom = (p) => p.cheval || p.nom || `#${p['n°'] || p.numero || ''}`;
     const k = Math.min(profondeur, parts.length);
+    // Le profil doit être connu AVANT de calculer les espérances des combinés :
+    // c'est lui qui choisit la ligne de la table.
+    const profilEv = profilCourse(P[0]);
+    const cleProfil = (profilEv && EV_PROFILS[CLE_EV[profilEv.nom]]) ? CLE_EV[profilEv.nom] : 'global';
     const ev = (fam, rangs) => {
-      const g = EV[fam][rangs.join('-')];
+      const k = rangs.join('-');
+      const t = EV_PROFILS[cleProfil];
+      const g = (t && t[fam] && t[fam][k] !== undefined) ? t[fam][k] : EV_PROFILS.global[fam][k];
       return g === undefined ? null : g - 1;
     };
 
@@ -168,7 +207,7 @@ const PanneauParis = (() => {
                     rangs: [i, j, l], p: pTrio(P, i, j, l), ev: ev('trio', [i, j, l]), exact: false });
     }
     // Profil de la course et instrument qui en ressort
-    const prof = profilCourse(P[0]);
+    const prof = profilEv;
     let reco = null;
     if (prof) {
       const cles = Object.keys(LIB).filter((k) => typeof prof[k] === 'number');
