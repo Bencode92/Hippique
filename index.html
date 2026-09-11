@@ -2831,7 +2831,7 @@
                         <button class="action-btn secondary sort-btn" data-detail="${detailId}" data-key="score" data-asc="false" title="Tri par score formule actuelle (DESC)">
                             <i class="fas fa-star"></i> Score actuel
                         </button>
-                        <button class="action-btn secondary sort-btn" data-detail="${detailId}" data-key="rg-optimal" data-asc="true" title="Tri par rang formule optimale (1 = meilleur)">
+                        <button class="action-btn secondary sort-btn" data-detail="${detailId}" data-key="rg-optimal" data-asc="true" title="Tri par rang de la formule Optimale (1 = meilleur). Le classement choisi est retenu pour toutes les courses suivantes.">
                             <i class="fas fa-flask"></i> Rg Optimal
                         </button>
                         <button class="action-btn secondary sort-btn" data-detail="${detailId}" data-key="rg-cote" data-asc="true" title="Tri par cote ASC (favoris marché)">
@@ -3213,6 +3213,10 @@
                         btn.addEventListener('click', function() {
                             const key = this.dataset.key;
                             const asc = this.dataset.asc === 'true';
+                            // Le classement de référence est un choix de l'utilisateur, pas
+                            // du code : on le retient pour toutes les courses suivantes au
+                            // lieu de le lui faire reposer à chaque ouverture.
+                            try { localStorage.setItem('hippique_tri', key); } catch (e) {}
                             // Highlight bouton actif
                             document.querySelectorAll(`.sort-btn[data-detail="${detailId}"]`).forEach(b => b.classList.remove('primary'));
                             document.querySelectorAll(`.sort-btn[data-detail="${detailId}"]`).forEach(b => { if (b !== this) b.classList.add('secondary'); });
@@ -3233,8 +3237,15 @@
                             sumRows.forEach(r => participantsContainer.appendChild(r));
                         });
                     });
-                    // Tri initial = par numéro
-                    document.querySelector(`.sort-btn[data-detail="${detailId}"][data-key="numero"]`)?.click();
+                    // Tri initial : le dernier classement choisi, numéro par défaut.
+                    // L'Optimale reste sélectionnable et mémorisable même si elle rend
+                    // 0,5 point de moins que la cote hors échantillon : c'est un choix
+                    // d'affichage, et l'écart est inférieur au bruit d'une journée.
+                    let triVoulu = 'numero';
+                    try { triVoulu = localStorage.getItem('hippique_tri') || 'numero'; } catch (e) {}
+                    const btnTri = document.querySelector(`.sort-btn[data-detail="${detailId}"][data-key="${triVoulu}"]`)
+                                || document.querySelector(`.sort-btn[data-detail="${detailId}"][data-key="numero"]`);
+                    btnTri?.click();
                     
                     // Ajouter l'événement pour ouvrir la simulation intégrée
                     const simulateButton = document.getElementById(`simulate-bets-${detailId}`);
