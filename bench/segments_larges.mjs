@@ -67,9 +67,10 @@ for (const d of brut) {
       const r = hi-lo || 1;
       for (let i=0;i<N;i++) M[i*NOMS.length+k] = (M[i*NOMS.length+k]-lo)/r;
     }
-    let fav=0; for (let i=1;i<N;i++) if (ps[i].c < ps[fav].c) fav=i;
+    const parCote = ps.map((p,i)=>i).sort((a,b)=>ps[a].c-ps[b].c);
+    const rangGagnantMarche = parCote.indexOf(ps.findIndex(p=>p.a===1));
     courses.push({ date:d.date, dist:d.dist, N, M,
-                   gagnant: ps.findIndex(p=>p.a===1), favOk: ps[fav].a===1 });
+                   gagnant: ps.findIndex(p=>p.a===1), rangMarche: rangGagnantMarche });
   }
   for (const p of d.parts||[]) {
     const s = jk.get(p.jk) || {c:0,v:0,p:0}; s.c++; if(p.a===1)s.v++; if(p.a>=1&&p.a<=3)s.p++; jk.set(p.jk,s);
@@ -80,22 +81,32 @@ for (const d of brut) {
 const SEG = { tous: ()=>true, sprint: d=>d<1400, mile: d=>d>=1400&&d<1700,
               middle: d=>d>=1700&&d<2200, staying: d=>d>=2200 };
 const NL = NOMS.length;
-const top1 = (set, lev, poids) => {
+// topK : le gagnant est-il dans les K premiers du classement ? K=1 pour le
+// simple gagnant, K=2 pour un couplé, K=3 pour un trio. La question n'est pas
+// la même : designer le gagnant est plus dur que le ranger dans les deux
+// premiers, et les leviers pourraient aider davantage sur la seconde.
+const topK = (set, lev, poids, K) => {
   let w = 0;
   for (const c of set) {
-    let best = 0, sb = -Infinity;
+    const sc = new Float64Array(c.N);
     for (let i=0;i<c.N;i++) {
       let s = 0;
       for (let j=0;j<lev.length;j++) s += poids[j] * c.M[i*NL + lev[j]];
-      if (s > sb) { sb = s; best = i; }
+      sc[i] = s;
     }
-    if (best === c.gagnant) w++;
+    // rang du gagnant = nombre de chevaux mieux notés que lui
+    let mieux = 0;
+    for (let i=0;i<c.N;i++) if (i !== c.gagnant && sc[i] > sc[c.gagnant]) mieux++;
+    if (mieux < K) w++;
   }
   return w / set.length;
 };
+const top1 = (set, lev, poids) => topK(set, lev, poids, 1);
 
 console.log(`${courses.length} courses premium · train < ${COUPE} · test >=\n`);
-console.log('  segment    train   test    champion trouvé sur le train                    top1 test   cote     écart');
+const K = parseInt(process.argv[2]) || 1;
+console.log(`CRITÈRE : le gagnant dans les ${K} premier${K>1?'s':''} du classement\n`);
+console.log('  segment    train   test    champion trouvé sur le train                    modèle     cote     écart');
 for (const [nom, f] of Object.entries(SEG)) {
   const tr = courses.filter(c=>f(c.dist) && c.date <  COUPE);
   const te = courses.filter(c=>f(c.dist) && c.date >= COUPE);
@@ -110,13 +121,13 @@ for (const [nom, f] of Object.entries(SEG)) {
         ? [[.9,.1],[.8,.2],[.7,.3],[.6,.4],[.5,.5],[.4,.6],[.3,.7]]
         : [[.6,.2,.2],[.5,.3,.2],[.5,.2,.3],[.4,.3,.3],[.7,.2,.1],[.7,.1,.2],[.4,.4,.2],[.4,.2,.4]];
       for (const w of pas) {
-        const t = top1(tr, lev, w);
+        const t = topK(tr, lev, w, K);
         if (!meilleur || t > meilleur.t) meilleur = { lev, w, t };
       }
     }
   }
-  const tt = top1(te, meilleur.lev, meilleur.w);
-  const mc = te.filter(c=>c.favOk).length / te.length;
+  const tt = topK(te, meilleur.lev, meilleur.w, K);
+  const mc = te.filter(c=>c.rangMarche < K).length / te.length;
   const se = Math.sqrt(tt*(1-tt)/te.length) * 100;
   const d = 100*(tt - mc);
   const desc = meilleur.lev.map((l,i)=>`${NOMS[l]}×${meilleur.w[i]}`).join(' + ');

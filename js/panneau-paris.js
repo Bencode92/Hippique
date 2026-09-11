@@ -99,10 +99,10 @@ const PanneauParis = (() => {
   const CLE_EV = { 'course fermée':'fermee', 'course moyenne':'moyenne',
                    'course assez ouverte':'assez_ouverte', 'course ouverte':'ouverte' };
   const PROFILS = {
-    'course fermée': { pMin:0.28, pMax:1.01, n:4555, simple:0.8999,couple:0.9547,couple02:0.8705,d4:0.936,d402:0.9404,trio:0.7938 },
-    'course moyenne': { pMin:0.22, pMax:0.28, n:4050, simple:0.8622,couple:0.8606,couple02:0.8314,d4:0.9299,d402:0.9045,trio:0.7772 },
-    'course assez ouverte': { pMin:0.17, pMax:0.22, n:4042, simple:0.8455,couple:0.9009,couple02:0.7426,d4:0.8408,d402:0.8806,trio:0.6466 },
-    'course ouverte': { pMin:0, pMax:0.17, n:1900, simple:0.8926,couple:0.6713,couple02:0.9472,d4:0.7826,d402:0.8738,trio:0.4128 },
+    'course fermée': { pMin:0.28, pMax:1.01, n:4555, simple:0.8999,simpleSe:1.7, couple:0.9547,coupleSe:3.2, couple02:0.8705,couple02Se:3.8, d4:0.936,d4Se:2.2, d402:0.9404,d402Se:2.8, trio:0.7938,trioSe:3.7 },
+    'course moyenne': { pMin:0.22, pMax:0.28, n:4050, simple:0.8622,simpleSe:2.3, couple:0.8606,coupleSe:4.1, couple02:0.8314,couple02Se:4.8, d4:0.9299,d4Se:2.5, d402:0.9045,d402Se:3.0, trio:0.7772,trioSe:5.5 },
+    'course assez ouverte': { pMin:0.17, pMax:0.22, n:4042, simple:0.8455,simpleSe:2.7, couple:0.9009,coupleSe:5.1, couple02:0.7426,couple02Se:5.0, d4:0.8408,d4Se:2.6, d402:0.8806,d402Se:3.1, trio:0.6466,trioSe:6.1 },
+    'course ouverte': { pMin:0, pMax:0.17, n:1900, simple:0.8926,simpleSe:4.7, couple:0.6713,coupleSe:7.7, couple02:0.9472,couple02Se:10.9, d4:0.7826,d4Se:4.3, d402:0.8738,d402Se:5.4, trio:0.4128,trioSe:8.4 }
   };
   const LIB = { simple: 'simple gagnant', couple: 'couplé gagnant',
                 couple02: 'couplé gagnant (favori + 3e)', d4: '2 sur 4',
@@ -209,9 +209,9 @@ const PanneauParis = (() => {
     // Profil de la course et instrument qui en ressort
     const prof = profilEv;
     let reco = null;
-    if (prof) {
-      const cles = Object.keys(LIB).filter((k) => typeof prof[k] === 'number');
-      const meilleur = cles.reduce((a, b) => (prof[b] > prof[a] ? b : a));
+    const choix = pariDuProfil(prof);
+    if (prof && choix) {
+      const meilleur = choix.cle;
       const rangs = RANGS[meilleur];
       if (rangs.every((r) => r < parts.length)) {
         reco = {
@@ -219,7 +219,11 @@ const PanneauParis = (() => {
           chevaux: rangs.map((r) => nom(parts[r])),
           ev: prof[meilleur] - 1,
           pourquoi: `${prof.nom} — sur ${prof.n.toLocaleString('fr-FR')} courses de ce profil,`
-                  + ` c'est l'instrument le moins coûteux (${((prof[meilleur] - 1) * 100).toFixed(1)} %)`,
+                  + ` ${((prof[meilleur] - 1) * 100).toFixed(1)} %`
+                  + (choix.ecarte
+                     ? `. Le ${choix.ecarte.instrument} y rend ${choix.ecarte.ecart.toFixed(1)} points de plus,`
+                       + ` mais l'écart n'est pas démontré (t = ${choix.ecarte.t.toFixed(2)}) : on reste au simple gagnant.`
+                     : `, écart au simple gagnant démontré (t = ${(choix.ecarte === null && prof.simpleSe ? (100*(prof[meilleur]-prof.simple))/Math.sqrt((prof[meilleur+'Se']||0)**2+(prof.simpleSe||0)**2) : 0).toFixed(2)})`),
         };
       }
     }
@@ -248,7 +252,26 @@ const PanneauParis = (() => {
     const cles = Object.keys(LIB).filter((k) => typeof prof[k] === 'number');
     if (!cles.length) return null;
     const meilleur = cles.reduce((a, b) => (prof[b] > prof[a] ? b : a));
-    return { cle: meilleur, pari: LIB[meilleur], rangs: RANGS[meilleur], ev: prof[meilleur] - 1 };
+    if (meilleur === 'simple' || typeof prof.simple !== 'number')
+      return { cle: meilleur, pari: LIB[meilleur], rangs: RANGS[meilleur], ev: prof[meilleur] - 1 };
+
+    // On n'écarte le simple gagnant que si l'écart est DÉMONTRÉ. Sur les quatre
+    // profils, un seul l'est :
+    //     fermée        couplé  +5,5 ± 3,6  t = 1,51   dans le bruit
+    //     moyenne       2 sur 4 +6,8 ± 3,4  t = 1,99   significatif
+    //     assez ouverte couplé  +5,5 ± 5,8  t = 0,96   dans le bruit
+    //     ouverte       cpl 0-2 +5,5 ± 11,9 t = 0,46   dans le bruit
+    // Recommander un combiné sur t = 1,5 serait refaire l'erreur du badge
+    // JOUABLE : un écart flatteur qu'aucun test ne soutient. À égalité
+    // statistique on garde le simple gagnant — espérance mesurée avec la plus
+    // petite erreur-type, un seul cheval à désigner, et pas de pari qui puisse
+    // ne pas être proposé.
+    const se = Math.sqrt((prof[meilleur + 'Se'] || 0) ** 2 + (prof.simpleSe || 0) ** 2);
+    const ecart = 100 * (prof[meilleur] - prof.simple);
+    const demontre = se > 0 && ecart / se > 1.96;
+    const cle = demontre ? meilleur : 'simple';
+    return { cle, pari: LIB[cle], rangs: RANGS[cle], ev: prof[cle] - 1,
+             ecarte: demontre ? null : { instrument: LIB[meilleur], ecart, t: se ? ecart / se : 0 } };
   }
 
   return { pourCourse, probabilites, profilCourse, pariDuProfil, LIB, RANGS,
