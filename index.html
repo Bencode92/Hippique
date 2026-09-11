@@ -1479,6 +1479,77 @@
             console.log(`✅ Cotes live appliquées : ${updatedCount} participants mis à jour`);
         }
 
+        // ── BILAN DE LA JOURNÉE ─────────────────────────────────────────
+        // Le panneau chiffre une course à la fois ; ce bandeau répond à l'autre
+        // question : « et si je mets X sur chaque course ? »
+        //
+        // Deux lectures selon que la journée est courue ou non :
+        //   · arrivées connues  → le résultat RÉEL, ce qu'on aurait encaissé ;
+        //   · arrivées inconnues → l'espérance, somme des p×cote−1 par course.
+        //
+        // Le favori est celui de la cote affichée. Sur une journée passée c'est
+        // la cote finale, donc le bilan est exact ; sur une journée à venir la
+        // cote bougera encore (le favori change dans 24 % des cas entre le
+        // dernier relevé et le départ), et le chiffre est indicatif.
+        function bilanJournee(courseData) {
+            if (typeof PanneauParis === 'undefined') return '';
+            const M = miseCourante();
+            const MOI_H = ['LONGCHAMP', 'PARISLONGCHAMP', 'SAINTCLOUD'];
+            const seg = { terrain: [], autres: [] };
+            for (const [hippodrome, courses] of Object.entries(courseData || {})) {
+                if (!Array.isArray(courses)) continue;
+                const hip = (hippodrome || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+                const chezMoi = MOI_H.some(h => hip.includes(h));
+                for (const c of courses) {
+                    const ps = (c.participants || []).filter(p => (parseFloat(p.cote) || 0) > 1);
+                    if (ps.length < 5) continue;
+                    const fav = ps.reduce((a, b) => parseFloat(a.cote) <= parseFloat(b.cote) ? a : b);
+                    const cote = Math.max(1.10, parseFloat(fav.cote));
+                    const P = PanneauParis.probabilites(
+                        ps.slice().sort((a, b) => parseFloat(a.cote) - parseFloat(b.cote)));
+                    const couru = ps.some(p => p.arrivee);
+                    seg[chezMoi ? 'terrain' : 'autres'].push({
+                        couru, gagne: +fav.arrivee === 1, cote, ev: P[0] * cote - 1,
+                    });
+                }
+            }
+            const bloc = (a) => {
+                if (!a.length) return null;
+                const engage = M * a.length;
+                const courus = a.filter(x => x.couru);
+                const reel = courus.length === a.length
+                    ? courus.reduce((s, x) => s + (x.gagne ? M * x.cote : 0), 0) - engage : null;
+                const esp = a.reduce((s, x) => s + M * x.ev, 0);
+                return { n: a.length, engage, reel, esp, gagnants: courus.filter(x => x.gagne).length };
+            };
+            const T = bloc(seg.terrain), A = bloc(seg.autres);
+            if (!T && !A) return '';
+            const ligne = (b, lib, vert) => {
+                if (!b) return '';
+                const val = b.reel !== null ? b.reel : b.esp;
+                const c = val >= 0 ? '#5fffaf' : '#e9a08a';
+                return `<div style="display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap;margin-top:.25rem">
+                    <span style="color:${vert ? '#5fffaf' : 'inherit'};font-weight:${vert ? 600 : 400}">${lib}</span>
+                    <span style="opacity:.6;font-size:.86em">${b.n} course${b.n > 1 ? 's' : ''} · ${b.engage.toFixed(0)} € engagés</span>
+                    <span style="margin-left:auto;font-variant-numeric:tabular-nums">
+                        <strong style="color:${c}">${val >= 0 ? '+' : '−'}${Math.abs(val).toFixed(2)} €</strong>
+                        <span style="opacity:.55;font-size:.85em">&nbsp;${b.reel !== null ? `réel · ${b.gagnants} favori${b.gagnants > 1 ? 's' : ''} gagnant${b.gagnants > 1 ? 's' : ''}` : 'espérance'}</span>
+                    </span></div>`;
+            };
+            return `<div class="bilan-journee" style="margin:0 0 1rem;padding:.7rem .9rem;border-radius:6px;
+                        background:rgba(20,60,58,.3);border:1px solid rgba(233,209,140,.16);font-size:.92rem">
+                <div style="display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap">
+                    <span style="font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;opacity:.65">Si tu mises</span>
+                    <input type="number" min="1" step="1" value="${M}" class="champ-mise-jour"
+                           style="width:4.2em;background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.18);
+                                  border-radius:3px;color:inherit;font:inherit;text-align:right;padding:1px 4px"> €
+                    <span style="opacity:.65;font-size:.86em">sur le favori de chaque course</span>
+                </div>
+                ${ligne(T, 'Ton terrain', true)}
+                ${ligne(A, 'Hors terrain', false)}
+            </div>`;
+        }
+
         // ── VERDICT COMPACT, pour la liste des courses ──────────────────
         // Ce badge ne dit QUE ce qui est démontré. Mesuré sur 15 000 courses
         // plat (bench/verdict_roi.mjs) : le ROI du favori tient à l'hippodrome
@@ -2224,7 +2295,7 @@
                 
                 // Filtrer les hippodromes par recherche
                 const searchTerm = searchInput.value.trim().toLowerCase();
-                let html = '';
+                let html = bilanJournee(courseData);
                 
                 // Parcourir les hippodromes
                 for (const [hippodrome, courses] of Object.entries(courseData)) {
@@ -2422,7 +2493,24 @@
                     `;
                 } else {
                     resultsContainer.innerHTML = html;
-                    
+
+                    // La mise du bilan pilote aussi celle des cartes : un seul
+                    // montant pour toute la session, retenu d'une journée à
+                    // l'autre. On redessine à la validation (change) et non à
+                    // chaque frappe, sinon saisir « 20 » recalcule d'abord pour
+                    // une mise de 2 €.
+                    const champJour = resultsContainer.querySelector('.champ-mise-jour');
+                    if (champJour) {
+                        const appliquer = () => {
+                            const v = parseFloat(champJour.value);
+                            if (!isFinite(v) || v <= 0) return;
+                            poserMise(v);
+                            displayHippodromes();
+                        };
+                        champJour.addEventListener('change', appliquer);
+                        champJour.addEventListener('keydown', e => { if (e.key === 'Enter') appliquer(); });
+                    }
+
                     // Ajouter les événements click aux cartes de course
                     document.querySelectorAll('.course-card').forEach(card => {
                         card.addEventListener('click', function() {
