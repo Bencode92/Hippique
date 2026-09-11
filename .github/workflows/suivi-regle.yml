@@ -1,0 +1,62 @@
+name: Suivi de la règle (SPRT)
+
+# La regle est testee de facon SEQUENTIELLE : le verdict tombe quand
+# l'accumulation penche assez d'un cote, pas a une date fixe. Encore faut-il
+# que la statistique avance toute seule — sans quoi elle resterait a zero et
+# le dispositif ne servirait a rien.
+#
+# Ce workflow relance le test apres chaque collecte de resultats et republie
+# data/sprt_etat.json, que la page affiche.
+
+on:
+  schedule:
+    # 23h UTC, apres le backtest quotidien de 22h qui complete data/histo
+    - cron: '0 23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sprt:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Relancer le test séquentiel
+        run: node bench/sprt_regle.mjs | tee /tmp/sprt.txt
+
+      - name: Résumé dans le job
+        run: |
+          {
+            echo '## Test séquentiel de la règle'
+            echo '```'
+            cat /tmp/sprt.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit si l'état a changé
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action - SPRT"
+          git add data/sprt_etat.json
+          if git diff --cached --quiet; then
+            echo "État inchangé"
+          else
+            # Le verdict, quand il tombe, doit etre visible dans l'historique git
+            VERDICT=$(python3 -c "import json;d=json.load(open('data/sprt_etat.json'));print(d.get('verdict') or ('%d paris, statistique %+.3f' % (d['paris'], d['statistique'])))")
+            git stash -u || true
+            git pull origin main --rebase || true
+            git stash pop || true
+            git add data/sprt_etat.json
+            git commit -m "📐 SPRT règle : $VERDICT"
+            git push
+          fi

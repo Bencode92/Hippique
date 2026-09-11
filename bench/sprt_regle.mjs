@@ -42,6 +42,13 @@ for (const f of fs.readdirSync('data/histo').filter(x=>x.endsWith('.jsonl')))
     const h = norm(d.hip); if (!MOI.some(x=>h.includes(x))) continue;
     const ps = (d.parts||[]).filter(p=>p.c>1);
     if (ps.length < 14 || !ps.some(p=>p.a===1)) continue;
+    // Meme garde-fou que le front : un overround hors [1,03 ; 1,60] signale des
+    // cotes manquantes, pas une opportunite. Sans lui, le script comptait des
+    // courses a overround 0,99 — impossible en pari mutuel — que l'interface
+    // refusait a juste titre. Les deux doivent designer le MEME jeu de paris,
+    // sinon la statistique ne mesure pas ce qu'on joue.
+    const ov = ps.reduce((t,p)=>t+1/p.c, 0);
+    if (ov < 1.03 || ov > 1.60) continue;
     const fav = ps.reduce((a,b)=>a.c<=b.c?a:b);
     // La condition « cote >= 4 » a ete RETIREE de la regle jouee sur
     // recommandation de la revue : elle a ete trouvee apres coup, elle inverse
