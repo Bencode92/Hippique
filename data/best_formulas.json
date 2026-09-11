@@ -1,7 +1,7 @@
 {
   "_version": 3,
   "_generatedAt": "2026-09-08T00:00:00.000Z",
-  "_source": "stats.html Optimale PREMIUM (7 hippos: Longchamp/Saint-Cloud/Chantilly/Fontainebleau/Deauville/Lyon-Parilly, 628 courses depuis 2026-04-16, Top3). Compteurs tous/sprint/mile/middle/staying divises par 2 (double comptage stats.html, corrige par le meme commit).",
+  "_source": "stats.html Optimale PREMIUM (7 hippos: Longchamp/Saint-Cloud/Chantilly/Fontainebleau/Deauville/Lyon-Parilly, 628 courses depuis 2026-04-16, Top3). Compteurs tous/sprint/mile/middle/staying divises par 2 (double comptage stats.html, corrige par le meme commit). | Seuil de 100 courses appliqué le 2026-09-11 : 9 bucket(s) retirés (1000m n=13, 1500m n=17, 1300m n=18, 1800m n=19, 2100m n=21, 3000m+ n=26, 1200m n=65, 1400m n=83, sprint n=96). Motif : la grille essaie ~14 300 formules par bucket ; sous 100 courses la championne décrit son échantillon. Hors échantillon, celle du 1800m (n=19) perdait 19 points contre la simple cote. Voir bench/optimale_hors_echantillon.mjs.",
   "tous": {
     "leviers": [
       "Cote (1/cote)",
@@ -17,76 +17,6 @@
     "top2": 50.318471337579616,
     "top3": 64.64968152866241,
     "courses": 628
-  },
-  "sprint": {
-    "leviers": [
-      "Cote ref",
-      "Dérive cote",
-      "Ch TauxP",
-      "Jk TauxV"
-    ],
-    "poids": [
-      0.6,
-      0.1,
-      0.2,
-      0.1
-    ],
-    "top1": 33.33333333333333,
-    "top2": 57.291666666666664,
-    "top3": 69.79166666666666,
-    "courses": 96
-  },
-  "1000m": {
-    "leviers": [
-      "Cote (1/cote)",
-      "Jk TauxV",
-      "Combo Jk*Ent",
-      "NbVictoires"
-    ],
-    "poids": [
-      0.5,
-      0.2,
-      0.2,
-      0.1
-    ],
-    "top1": 69.23076923076923,
-    "top2": 84.61538461538461,
-    "top3": 100.0,
-    "courses": 13
-  },
-  "1200m": {
-    "leviers": [
-      "Cote ref",
-      "Dérive cote",
-      "Ch TauxP"
-    ],
-    "poids": [
-      0.7,
-      0.1,
-      0.2
-    ],
-    "top1": 35.38461538461539,
-    "top2": 53.84615384615385,
-    "top3": 70.76923076923077,
-    "courses": 65
-  },
-  "1300m": {
-    "leviers": [
-      "Ch TauxP",
-      "Ch GainMoy",
-      "Cote (1/cote)",
-      "TauxV indiv"
-    ],
-    "poids": [
-      0.2,
-      0.2,
-      0.5,
-      0.1
-    ],
-    "top1": 16.666666666666664,
-    "top2": 55.55555555555556,
-    "top3": 72.22222222222221,
-    "courses": 18
   },
   "mile": {
     "leviers": [
@@ -105,40 +35,6 @@
     "top2": 54.24528301886793,
     "top3": 67.45283018867924,
     "courses": 212
-  },
-  "1400m": {
-    "leviers": [
-      "Cote (1/cote)",
-      "Valeur FG",
-      "Combo Jk*Ent"
-    ],
-    "poids": [
-      0.3,
-      0.5,
-      0.2
-    ],
-    "top1": 28.915662650602407,
-    "top2": 43.373493975903614,
-    "top3": 65.06024096385542,
-    "courses": 83
-  },
-  "1500m": {
-    "leviers": [
-      "Dérive cote",
-      "Cote ref",
-      "Jk TauxV",
-      "Jk Rang"
-    ],
-    "poids": [
-      0.1,
-      0.5,
-      0.1,
-      0.3
-    ],
-    "top1": 41.17647058823529,
-    "top2": 64.70588235294117,
-    "top3": 76.47058823529412,
-    "courses": 17
   },
   "1600m": {
     "leviers": [
@@ -172,22 +68,6 @@
     "top3": 62.76595744680851,
     "courses": 188
   },
-  "1800m": {
-    "leviers": [
-      "NbVictoires",
-      "TauxV indiv",
-      "Forme récente"
-    ],
-    "poids": [
-      0.1,
-      0.8,
-      0.1
-    ],
-    "top1": 31.57894736842105,
-    "top2": 63.1578947368421,
-    "top3": 68.42105263157895,
-    "courses": 19
-  },
   "2000m": {
     "leviers": [
       "Cote (1/cote)",
@@ -201,24 +81,6 @@
     "top2": 45.94594594594595,
     "top3": 62.16216216216216,
     "courses": 148
-  },
-  "2100m": {
-    "leviers": [
-      "Cote (1/cote)",
-      "Valeur FG",
-      "Jk TauxV",
-      "Dérive cote"
-    ],
-    "poids": [
-      0.5,
-      0.1,
-      0.3,
-      0.1
-    ],
-    "top1": 57.14285714285714,
-    "top2": 76.19047619047619,
-    "top3": 80.95238095238095,
-    "courses": 21
   },
   "staying": {
     "leviers": [
@@ -254,22 +116,5 @@
     "top3": 70.75471698113208,
     "courses": 106
   },
-  "3000m+": {
-    "leviers": [
-      "Cote (1/cote)",
-      "Cote ref",
-      "Musique",
-      "Jk TauxP"
-    ],
-    "poids": [
-      0.2,
-      0.3,
-      0.1,
-      0.4
-    ],
-    "top1": 42.30769230769231,
-    "top2": 69.23076923076923,
-    "top3": 80.76923076923077,
-    "courses": 26
-  }
+  "_min_courses": 100
 }
