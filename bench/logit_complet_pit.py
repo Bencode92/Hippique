@@ -117,7 +117,11 @@ for f in sorted(glob.glob('data/courses/2026-*.json')):
                 end.get('gp') or 0,
                 1.0 if str(p.get('equipement(s)') or '').strip() else 0.0,
             ])
-        courses.append(dict(date=date, X=np.array(X, float), g=gi,
+        nomc = (c.get('nom') or '').upper()
+        typ = ('handicap' if 'HANDICAP' in nomc else
+               'maiden'   if 'MAIDEN' in nomc else 'conditions')
+        courses.append(dict(date=date, X=np.array(X, float), g=gi, np_=len(ps),
+                            dist=num(c.get('distance')) or 0, typ=typ,
                             cotes=np.array([num(p['cote']) for p in ps])))
 
 tr = [c for c in courses if c['date'] < '2026-07-01']
@@ -203,3 +207,46 @@ for pd in (0.0, 0.05, 0.10, 0.15, 0.25, 0.40):
 print("\n  Le marché seul correspond à un poids de dérive nul. Si une valeur non nulle")
 print("  faisait mieux sur les trois critères ET en vraisemblance, la dérive ajouterait")
 print("  quelque chose.")
+
+
+# ── SEGMENTATION ────────────────────────────────────────────────────────
+# Un modèle est réajusté SUR CHAQUE SEGMENT, train puis test. Chaque segment
+# est un test de plus : à neuf segments, un écart à deux erreurs-types est
+# attendu par le hasard une fois sur deux. Rien ici ne vaut preuve.
+SEGMENTS = [
+    ('distance  < 1400 m',   lambda c: c['dist'] < 1400),
+    ('distance 1400-1700',   lambda c: 1400 <= c['dist'] < 1700),
+    ('distance 1700-2200',   lambda c: 1700 <= c['dist'] < 2200),
+    ('distance >= 2200 m',   lambda c: c['dist'] >= 2200),
+    ('partants < 9',         lambda c: c['np_'] < 9),
+    ('partants 9-13',        lambda c: 9 <= c['np_'] < 14),
+    ('partants >= 14',       lambda c: c['np_'] >= 14),
+    ('type handicap',        lambda c: c['typ'] == 'handicap'),
+    ('type maiden',          lambda c: c['typ'] == 'maiden'),
+    ('type conditions',      lambda c: c['typ'] == 'conditions'),
+]
+print("\n" + "=" * 74)
+print("PAR SEGMENT — modèle réajusté sur chacun, EXPLORATOIRE\n")
+print("  segment              train  test    Top1 modèle / cote    Top2 modèle / cote")
+for nom, f in SEGMENTS:
+    str_, ste = [c for c in tr if f(c)], [c for c in te if f(c)]
+    if len(str_) < 120 or len(ste) < 120:
+        print(f"  {nom:20} {len(str_):5} {len(ste):5}   — trop peu")
+        continue
+    w0 = np.zeros(len(NOMS)); w0[0] = 1.0
+    r = minimize(negll, w0, args=(str_, 0.05), method='L-BFGS-B')
+    ws = r.x
+    l1, c1 = top_k(ste, ws, 1), top_k_marche(ste, 1)
+    l2, c2 = top_k(ste, ws, 2), top_k_marche(ste, 2)
+    se1 = math.sqrt(l1 * (1 - l1) / len(ste)) * 100
+    se2 = math.sqrt(l2 * (1 - l2) / len(ste)) * 100
+    d1, d2 = 100 * (l1 - c1), 100 * (l2 - c2)
+    marque = lambda d, se: ' *' if d > 1.96 * se else ('  ' if d > 0 else ' -')
+    # levier le plus fort hors le marché
+    idx = int(np.argmax(np.abs(ws[1:]))) + 1
+    print(f"  {nom:20} {len(str_):5} {len(ste):5}   "
+          f"{100*l1:5.1f} / {100*c1:5.1f}  {d1:+5.1f}{marque(d1,se1)}  "
+          f"{100*l2:5.1f} / {100*c2:5.1f}  {d2:+5.1f}{marque(d2,se2)}   "
+          f"[{NOMS[idx]} {ws[idx]:+.2f}]")
+print("\n  * = écart positif au-delà de deux erreurs-types.  Dix segments testés :")
+print("  un tel écart est attendu par le hasard environ une fois sur deux.")
