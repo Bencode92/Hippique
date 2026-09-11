@@ -653,11 +653,14 @@
                     ['1400m',1400,1499],['1500m',1500,1599],['1600m',1600,1699],
                     ['1800m',1700,1899],['2000m',1900,2099],['2100m',2100,2199],
                     ['2400m',2200,2500],['3000m+',2600,99999]];
-                for (const [k, lo, hi] of fines) if (dist >= lo && dist <= hi && bestFormulas?.[k]) return k;
-                if (dist < 1400) return 'sprint';
-                if (dist < 1700) return 'mile';
-                if (dist < 2200) return 'middle';
-                return 'staying';
+                // même seuil qu'à l'export et que dans ranking-loader.js
+                const assez = (k) => bestFormulas?.[k] && (bestFormulas[k].courses === undefined
+                              || bestFormulas[k].courses >= (bestFormulas._min_courses || 100));
+                for (const [k, lo, hi] of fines) if (dist >= lo && dist <= hi && assez(k)) return k;
+                // le bucket large doit franchir le même seuil, sinon « tous »
+                const large = dist < 1400 ? 'sprint' : dist < 1700 ? 'mile'
+                            : dist < 2200 ? 'middle' : 'staying';
+                return assez(large) ? large : 'tous';
             }
             function evalOptimal(course, dist, fileDate) {
                 if (!bestFormulas || !rd) return null;
@@ -1903,9 +1906,26 @@
             // Exporter le VRAI champion par bucket (solo OU combo, selon ce qui est meilleur)
             // = exactement ce qui est affiché dans la banner "🏆 CHAMPION" pour chaque onglet
             // Métrique de tri = Top3 (stratégie Dutch sur top 3-4)
+            // SEUIL DE CALIBRATION. La grille essaie ~14 300 formules par bucket :
+            // sur 19 courses, la meilleure d'entre elles décrit son échantillon, pas
+            // une régularité. Mesuré hors échantillon (bench/optimale_hors_echantillon.mjs,
+            // premium 2022 → 15/04/2026), l'écart de la formule à la simple cote :
+            //
+            //     n < 30      -4,6 pt, dispersion ±6,6   (1800m calibré sur 19 : -19,1)
+            //     n 30-100    -2,5 pt, ±0,7
+            //     n 100-200   -0,9 pt, ±0,9
+            //     n >= 200    -1,0 pt, ±0,8
+            //
+            // Un bucket sous le seuil n'est donc plus publié : le consommateur
+            // retombera sur le bucket large, puis sur « tous ». Mesuré sur les mêmes
+            // 6 304 courses, cela fait passer l'Optimale de -2,2 à -0,5 point.
+            // Le seuil supprime les accidents ; il ne crée pas d'avantage.
+            const MIN_COURSES_BUCKET = 100;
             const bestFormulas = {};
+            const bucketsEcartes = [];
             Object.entries(championsByBucket).forEach(([bucket, champ]) => {
                 if (!champ) return;
+                if (champ.t < MIN_COURSES_BUCKET) { bucketsEcartes.push(`${bucket} (${champ.t})`); return; }
                 // champ.kind === 'solo' : champ.label est le nom du levier, pas de leviers/weights
                 // champ.kind === 'combo' : champ a leviers + weights
                 const leviers = champ.kind === 'combo' ? champ.leviers : [champ.label];
@@ -1916,6 +1936,7 @@
                     courses: champ.t,
                 };
             });
+            bestFormulas._min_courses = MIN_COURSES_BUCKET;
 
             // Afficher les formules + bouton copie rapide
             const jsonStr = JSON.stringify(bestFormulas, null, 2);
@@ -1924,6 +1945,12 @@
             html += `<div class="section" style="margin-top:1rem">
                 <h2><i class="fas fa-terminal"></i> Formules pour live-scoring</h2>
                 <p style="opacity:0.6;font-size:0.82rem;margin-bottom:0.8rem">Ces formules seront utilisées par <code>node live-scoring.js</code></p>
+                ${bucketsEcartes.length ? `<p style="opacity:0.75;font-size:0.82rem;margin-bottom:0.8rem;border-left:2px solid #e9d18c;padding-left:.7rem">
+                    <strong>${bucketsEcartes.length} bucket(s) non publié(s)</strong>, calibrés sur moins de ${MIN_COURSES_BUCKET} courses :
+                    ${bucketsEcartes.join(' · ')}. La grille essaie ~14 300 formules par bucket — sous ce seuil,
+                    la championne décrit son échantillon et non une régularité. Hors échantillon, celle du 1800 m
+                    (19 courses) perdait 19 points contre la simple cote. Ces distances retomberont sur le bucket
+                    large, puis sur « tous ».</p>` : ''}
                 <pre style="background:rgba(0,0,0,0.3);padding:1rem;border-radius:8px;font-size:0.8rem;overflow-x:auto">${jsonStr}</pre>
                 <div style="display:flex;gap:8px;margin-top:0.5rem;flex-wrap:wrap">
                     <button class="btn-filter" onclick="copyCmd()" id="btn-copy-cmd">

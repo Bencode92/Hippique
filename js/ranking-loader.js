@@ -3059,9 +3059,12 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
     // Détermine le bucket pour une distance (priorité fine > coarse)
     bucketForDistance(distance) {
         if (!this._bestFormulas) return null;
+        // le seuil voyage avec le fichier : stats.html l'écrit dans _min_courses
+        // au moment de la génération, ce qui évite deux constantes à maintenir.
+        const seuil = this._bestFormulas._min_courses || this.MIN_COURSES_BUCKET;
         const assezDeCourses = (k) => {
             const f = this._bestFormulas[k];
-            return f && (f.courses === undefined || f.courses >= this.MIN_COURSES_BUCKET);
+            return f && (f.courses === undefined || f.courses >= seuil);
         };
         const fines = [
             ['1000m', 900, 1099], ['1200m', 1100, 1299], ['1300m', 1300, 1399],
