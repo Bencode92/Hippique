@@ -1581,7 +1581,13 @@
                     <span><strong style="color:${c};letter-spacing:.04em">${chezMoi ? 'TON TERRAIN' : 'HORS TERRAIN'}</strong>
                         &nbsp;·&nbsp;favori <strong>${nomFav}</strong> à ${fav.cote}
                         &nbsp;·&nbsp;${(fav.p * 100).toFixed(0)} % de chances</span>
-                    <span style="opacity:.75;font-size:.85em">mise : <strong>—</strong> &nbsp;·&nbsp; meilleur prix : <strong>—</strong></span>
+                    <span style="opacity:.85;font-size:.85em">mise&nbsp;:
+                        <input type="number" min="1" step="1" value="${miseCourante()}" class="champ-mise"
+                               style="width:4.2em;background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.18);
+                                      border-radius:3px;color:inherit;font:inherit;text-align:right;padding:1px 4px">&nbsp;€
+                        <span style="opacity:.6">&nbsp;·&nbsp;si le favori passe&nbsp;:</span>
+                        <strong class="gain-favori" style="color:${c}">${euros(miseCourante() * Math.max(1.10, fav.cote) - miseCourante())}</strong>
+                    </span>
                 </div>
                 <div style="margin-top:.35rem;font-size:.74rem;opacity:.6;line-height:1.45">
                     Ici, le favori rend <strong style="color:${c}">${cellule.roi} % ± ${cellule.se}</strong>
@@ -1591,6 +1597,19 @@
                     ${sansCote ? ` ${sansCote} partant${sansCote > 1 ? 's' : ''} sans cote, écarté${sansCote > 1 ? 's' : ''} du calcul.` : ''}
                     Prix et mise restent le seul levier non mesuré qui puisse rendre l'espérance positive.
                 </div>`;
+            // Changer la mise met à jour la carte sans la recharger, et la retient
+            // pour les courses suivantes : un montant qu'on ressaisit à chaque
+            // course finit par ne plus être saisi du tout.
+            const champ = el.querySelector('.champ-mise');
+            if (champ) champ.addEventListener('input', () => {
+                const v = parseFloat(champ.value);
+                if (!isFinite(v) || v <= 0) return;
+                poserMise(v);
+                const g = el.querySelector('.gain-favori');
+                if (g) g.textContent = euros(v * Math.max(1.10, fav.cote) - v);
+                const pan = el.parentNode && el.parentNode.querySelector('.panneau-paris');
+                if (pan && pan._rerender) pan._rerender();
+            });
             return el;
         }
 
@@ -1600,29 +1619,63 @@
         // partout — le prélèvement mesuré est de 16,5 %. Ce panneau ne désigne
         // pas un pari gagnant : il montre lequel coûte le moins cher, et l'écart
         // entre le meilleur et le pire choix atteint 34 points.
+        // Mise de référence, en euros. La page ne parlait qu'en pourcentages :
+        // « -4,5 % » ne dit pas si le pari vaut le geste, alors que « +6,58 € si
+        // ça passe » le dit tout de suite. Mesuré sur 2 324 courses à Longchamp
+        // et Saint-Cloud, un favori entre 1 et 1,5 rend 6,58 € pour 20 € misés
+        // — l'espérance y est pourtant parmi les moins mauvaises (-0,38 €).
+        // Le gain absolu et l'espérance sont deux questions différentes ; la
+        // page doit montrer les deux.
+        function miseCourante() {
+            const v = parseFloat(localStorage.getItem('hippique_mise'));
+            return (isFinite(v) && v > 0) ? v : 20;
+        }
+        function poserMise(v) {
+            if (isFinite(v) && v > 0) { try { localStorage.setItem('hippique_mise', v); } catch (e) {} }
+        }
+        const euros = v => (v >= 0 ? '+' : '−') + Math.abs(v).toFixed(2) + ' €';
+
         function renderPanneauParis(ancre, participants) {
             if (typeof PanneauParis === 'undefined') return;
             const pan = PanneauParis.pourCourse(participants || [], { profondeur: 5 });
             if (!pan || pan.incomplet) return;
+            const M = miseCourante();
             const pct = v => (v * 100).toFixed(1) + '%';
             const ev = v => {
                 const c = v > -0.13 ? '#5fffaf' : v > -0.22 ? '#e9d18c' : '#ff8a7a';
                 return `<span style="color:${c};font-variant-numeric:tabular-nums">${(v * 100).toFixed(1)}%</span>`;
             };
-            const ligne = x => `<tr>
+            // « si ça passe » : le PMU garantit un rapport minimum de 1,10 € pour
+            // 1 € misé — c'est le plus faible dividende observé sur 2 324 courses.
+            const siPasse = x => {
+                // Simple gagnant : exact, le dividende EST la cote.
+                if (x.cote) return { v: M * Math.max(1.10, x.cote) - M, exact: true };
+                // Combinés : le dividende n'est pas connu avant la clôture du
+                // pool. On l'estime par espérance ÷ probabilité, c'est-à-dire le
+                // rapport moyen de cette composition sur ce profil de course.
+                // C'est un ordre de grandeur, pas une promesse — d'où le « ~ ».
+                if (!(x.p > 0)) return null;
+                return { v: M * Math.max(1.10, (1 + x.ev) / x.p) - M, exact: false };
+            };
+            const ligne = x => {
+                const sp = siPasse(x);
+                return `<tr>
                 <td style="padding:2px 8px 2px 0">${x.meilleureEv ? '<span style="color:var(--gold)">\u25B8</span> ' : ''}${x.chevaux.join(' + ')}</td>
                 <td style="padding:2px 8px;text-align:right;font-variant-numeric:tabular-nums;opacity:.75">${pct(x.p)}</td>
-                <td style="padding:2px 0;text-align:right">${ev(x.ev)}</td></tr>`;
+                <td style="padding:2px 8px;text-align:right;font-variant-numeric:tabular-nums;opacity:${sp && sp.exact ? '.85' : '.6'}">${sp === null ? '—' : (sp.exact ? '' : '~') + euros(sp.v)}</td>
+                <td style="padding:2px 0;text-align:right">${ev(x.ev)} <span style="opacity:.55;font-size:.88em;font-variant-numeric:tabular-nums">${euros(x.ev * M)}</span></td></tr>`;
+            };
             const col = (titre, arr, note) => !arr.length ? '' : `<div style="min-width:200px;flex:1">
                 <div style="font-size:.76rem;letter-spacing:.06em;text-transform:uppercase;opacity:.6;margin-bottom:.3rem">${titre}${note ? ` <span style="opacity:.6;text-transform:none;letter-spacing:0">${note}</span>` : ''}</div>
                 <table style="width:100%;font-size:.83rem;border-collapse:collapse">
-                    <tr style="opacity:.5;font-size:.7rem"><td></td><td style="text-align:right">proba</td><td style="text-align:right">espérance</td></tr>
+                    <tr style="opacity:.5;font-size:.7rem"><td></td><td style="text-align:right">proba</td><td style="text-align:right">si ça passe</td><td style="text-align:right">espérance</td></tr>
                     ${arr.slice(0, 3).map(ligne).join('')}
                 </table></div>`;
             const R = pan.recommandation;
             const el = document.createElement('div');
             el.className = 'panneau-paris';
             el.style.cssText = 'margin:0 0 .9rem;padding:.7rem .9rem;background:rgba(20,60,58,.35);border:1px solid rgba(233,209,140,.18);border-radius:6px';
+            el._rerender = () => { const n = renderPanneauParis(null, participants); if (n) el.innerHTML = n.innerHTML; };
             el.innerHTML = `
                 ${R ? `<div style="margin-bottom:.6rem;padding:.45rem .7rem;background:rgba(212,175,55,.1);border-left:3px solid var(--gold);border-radius:3px">
                     <span style="font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;opacity:.65">Pari le moins coûteux</span><br>
@@ -1639,10 +1692,18 @@
                     Probabilités corrigées du biais favori/outsider (159 103 partants) ; combinaisons par le modèle de Stern, λ = 0,85.
                     L'espérance du simple gagnant est propre à cette course ; celles des combinés sont des moyennes mesurées par composition
                     sur 13 000 à 17 000 courses. Prélèvement : 14 % au gagnant, 26 % au couplé, 31 % au trio. Aucune espérance n'est positive.
+                    « Si ça passe » est exact au simple gagnant, où le dividende est la cote ; ailleurs c'est
+                    un ordre de grandeur (~), le rapport d'un combiné n'étant fixé qu'à la clôture du pool.
+                    Le plancher PMU de 1,10 € pour 1 € misé est appliqué.
                 </div>`;
+            // Sans ancre, on ne fait que construire : c'est le cas du re-rendu
+            // déclenché par un changement de mise, qui réutilise l'élément déjà
+            // en place au lieu d'en insérer un second.
+            if (!ancre) return el;
             const doublon = ancre.parentNode.querySelector('.panneau-paris');
             if (doublon) doublon.remove();
             ancre.parentNode.insertBefore(el, ancre.nextSibling);
+            return el;
         }
 
         // Module de chargement des courses
