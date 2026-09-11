@@ -3035,9 +3035,34 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         return this._bestFormulas;
     },
 
+    // Un bucket calibré sur trop peu de courses ne décrit pas une régularité,
+    // il décrit son échantillon. Mesuré hors échantillon sur le premium
+    // 2022 → 15/04/2026 (bench/optimale_hors_echantillon.mjs), l'écart de la
+    // formule à la simple cote se comporte ainsi selon la taille de sa
+    // calibration :
+    //
+    //     n < 30      -4,6 pt en moyenne, dispersion ±6,6   (1800m : -19,1)
+    //     n 30-100    -2,5 pt, ±0,7
+    //     n 100-200   -0,9 pt, ±0,9
+    //     n >= 200    -1,0 pt, ±0,8
+    //
+    // Sous 100 courses, la formule est instable ET plus mauvaise. On refuse donc
+    // ces buckets et on retombe sur le bucket large, puis sur « tous ». Cela
+    // écarte aujourd'hui 1000m (13), 1500m (17), 1300m (18), 1800m (19),
+    // 2100m (21), 3000m+ (26), 1200m (65) et 1400m (83).
+    //
+    // NB : passer ce seuil ne rend pas l'Optimale meilleure que la cote — au
+    // mieux elle s'en approche par le bas. Le seuil supprime les accidents, pas
+    // le déficit.
+    MIN_COURSES_BUCKET: 100,
+
     // Détermine le bucket pour une distance (priorité fine > coarse)
     bucketForDistance(distance) {
         if (!this._bestFormulas) return null;
+        const assezDeCourses = (k) => {
+            const f = this._bestFormulas[k];
+            return f && (f.courses === undefined || f.courses >= this.MIN_COURSES_BUCKET);
+        };
         const fines = [
             ['1000m', 900, 1099], ['1200m', 1100, 1299], ['1300m', 1300, 1399],
             ['1400m', 1400, 1499], ['1500m', 1500, 1599], ['1600m', 1600, 1699],
@@ -3045,12 +3070,11 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             ['2400m', 2200, 2500], ['3000m+', 2600, 99999],
         ];
         for (const [k, lo, hi] of fines) {
-            if (distance >= lo && distance <= hi && this._bestFormulas[k]) return k;
+            if (distance >= lo && distance <= hi && assezDeCourses(k)) return k;
         }
-        if (distance < 1400) return 'sprint';
-        if (distance < 1700) return 'mile';
-        if (distance < 2200) return 'middle';
-        return 'staying';
+        const large = distance < 1400 ? 'sprint' : distance < 1700 ? 'mile'
+                    : distance < 2200 ? 'middle' : 'staying';
+        return assezDeCourses(large) ? large : (assezDeCourses('tous') ? 'tous' : null);
     },
 
     // Calcule la valeur de chaque levier pour un participant

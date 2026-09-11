@@ -86,6 +86,11 @@ for (const d of courses) {
   for (const [b, [lo, hi]] of Object.entries(FINS))   if (d.dist >= lo && d.dist <= hi) buckets.push(b);
   for (const [b, [lo, hi]] of Object.entries(LARGES)) if (d.dist >= lo && d.dist <= hi) buckets.push(b);
   buckets.push('tous');
+  // Le bucket que le front retiendrait : le premier de la liste (fin, puis
+  // large, puis « tous ») qui atteint le seuil de calibration.
+  const MIN = 100;
+  const retenu = buckets.find(b => bf[b] && (bf[b].courses === undefined || bf[b].courses >= MIN));
+  const naif   = buckets[0];
   if (gagnant) for (const nomB of buckets) {
     const fo = bf[nomB];
     if (!fo) continue;
@@ -101,6 +106,8 @@ for (const d of courses) {
     let best = 0; for (let i = 1; i < ps.length; i++) if (score[i] > score[best]) best = i;
     const fav = ps.reduce((a,b)=>a.c<=b.c?a:b);
     const refIdx = ps.reduce((a,b,i)=>((b.cr>1?b.cr:b.c) < (ps[a].cr>1?ps[a].cr:ps[a].c) ? i : a), 0);
+    if (nomB === retenu) push(`${horsEch ? 'hors' : 'in'}|@SEUIL`, { opt: ps[best].a === 1, marche: fav.a === 1 });
+    if (nomB === naif)    push(`${horsEch ? 'hors' : 'in'}|@NAIF`,   { opt: ps[best].a === 1, marche: fav.a === 1 });
     push(`${horsEch ? 'hors' : 'in'}|${nomB}`, {
       opt: ps[best].a === 1, marche: fav.a === 1, coteRef: ps[refIdx].a === 1,
       ampute, partTestee: somme / fo.poids.reduce((s,x)=>s+x,0),
@@ -137,6 +144,13 @@ let mieuxE = 0;
 for (const b of entiers) {
   const a = res[`hors|${b}`];
   if (a.filter(x=>x.opt).length > a.filter(x=>x.marche).length) mieuxE++;
+}
+console.log('\n──────────────────────────────────────────────────────────────');
+console.log('LE SEUIL DE 100 COURSES CHANGE-T-IL QUELQUE CHOSE ?\n');
+for (const [k, lib] of [['@NAIF','bucket le plus fin (comportement actuel)'],['@SEUIL','bucket >= 100 courses (proposé)']]) {
+  const a = res[`hors|${k}`]; if (!a) continue;
+  const o = a.filter(x=>x.opt).length/a.length, m = a.filter(x=>x.marche).length/a.length;
+  console.log(`  ${lib.padEnd(42)}Optimale ${(100*o).toFixed(1)} %   marché ${(100*m).toFixed(1)} %   écart ${(100*(o-m)>=0?'+':'')}${(100*(o-m)).toFixed(1)} pt   (n=${a.length})`);
 }
 console.log(`  En ne gardant que les formules testées ENTIÈRES (sans Valeur FG dans leur`);
 console.log(`  définition) : ${mieuxE} sur ${entiers.length} — ${entiers.join(', ')}.`);
