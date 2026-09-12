@@ -1,7 +1,7 @@
 {
   "hippodrome": "LE BOUSCAT",
   "type_reunion": "Plat",
-  "date_extraction": "2026-09-12T00:03:00.652451",
+  "date_extraction": "2026-09-12T13:19:26.645309",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/12092026/R4",
   "courses": [
     {
@@ -30,7 +30,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.5,
+          "cote_tendance": "",
+          "cote_reference": 3.4
         },
         {
           "n°": "2",
@@ -50,7 +53,10 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 3,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 6.2,
+          "cote_tendance": "",
+          "cote_reference": 6.2
         },
         {
           "n°": "3",
@@ -70,7 +76,10 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 4,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 2.8,
+          "cote_tendance": "",
+          "cote_reference": 2.9
         },
         {
           "n°": "4",
@@ -90,7 +99,10 @@
           "equipement(s)": "A",
           "nb_courses": 17,
           "nb_victoires": 3,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 8.8,
+          "cote_tendance": "",
+          "cote_reference": 8.7
         },
         {
           "n°": "5",
@@ -110,9 +122,13 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 2,
-          "nb_places": 11
+          "nb_places": 11,
+          "cote": 4.4,
+          "cote_tendance": "",
+          "cote_reference": 4.4
         }
       ],
+      "typePiste": "HERBE",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -141,7 +157,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 16.0
         },
         {
           "n°": "2",
@@ -161,7 +180,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 27.0,
+          "cote_tendance": "+",
+          "cote_reference": 32.0
         },
         {
           "n°": "3",
@@ -201,7 +223,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 14.0,
+          "cote_tendance": "-",
+          "cote_reference": 14.0
         },
         {
           "n°": "5",
@@ -221,27 +246,10 @@
           "equipement(s)": "A",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
-          "n°": "6",
-          "cheval": "PARIGNY M.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: SOTTSASS et PADOVANA (SEA THE MOON)",
-          "corde": "(Corde:05)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260912/BOU/2/20260912-BOU-2-6.png",
-          "propriétaire": "G.AUGUSTIN-NORMAND/EC.A.CARO",
-          "entraineur": "JC.ROUGET (S)",
-          "éleveurs": "ELEVAGE HARAS DE BOURGEAUVILLE",
-          "jockey": "JB.EYQUEM",
-          "poids": "58 kg",
-          "gains": "",
-          "musique": "",
-          "valeur": "58.0",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 29.0,
+          "cote_tendance": "+",
+          "cote_reference": 27.0
         },
         {
           "n°": "7",
@@ -261,7 +269,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.9,
+          "cote_tendance": "+",
+          "cote_reference": 3.0
         },
         {
           "n°": "8",
@@ -281,7 +292,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 4.7,
+          "cote_tendance": "+",
+          "cote_reference": 3.2
         },
         {
           "n°": "9",
@@ -301,7 +315,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 11.0,
+          "cote_tendance": "-",
+          "cote_reference": 24.0
         },
         {
           "n°": "10",
@@ -321,7 +338,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 27.0,
+          "cote_tendance": "+",
+          "cote_reference": 21.0
         },
         {
           "n°": "11",
@@ -341,7 +361,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 37.0,
+          "cote_tendance": "+",
+          "cote_reference": 48.0
         },
         {
           "n°": "12",
@@ -361,7 +384,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 17.0
         },
         {
           "n°": "13",
@@ -381,9 +407,13 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.7,
+          "cote_tendance": "+",
+          "cote_reference": 7.1
         }
       ],
+      "typePiste": "HERBE",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -412,7 +442,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 4.7,
+          "cote_tendance": "",
+          "cote_reference": 4.6
         },
         {
           "n°": "2",
@@ -432,7 +465,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 17.0,
+          "cote_tendance": "+",
+          "cote_reference": 22.0
         },
         {
           "n°": "3",
@@ -452,7 +488,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 10.0,
+          "cote_tendance": "+",
+          "cote_reference": 14.0
         },
         {
           "n°": "4",
@@ -472,7 +511,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 43.0,
+          "cote_tendance": "+",
+          "cote_reference": 67.0
         },
         {
           "n°": "5",
@@ -492,7 +534,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 4.0,
+          "cote_tendance": "-",
+          "cote_reference": 3.9
         },
         {
           "n°": "6",
@@ -512,7 +557,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 13.0,
+          "cote_tendance": "-",
+          "cote_reference": 16.0
         },
         {
           "n°": "7",
@@ -532,7 +580,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 87.0,
+          "cote_tendance": "+",
+          "cote_reference": 134.0
         },
         {
           "n°": "8",
@@ -552,7 +603,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 174.0,
+          "cote_tendance": "+",
+          "cote_reference": 134.0
         },
         {
           "n°": "9",
@@ -572,7 +626,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 87.0,
+          "cote_tendance": "+",
+          "cote_reference": 134.0
         },
         {
           "n°": "10",
@@ -592,7 +649,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 58.0,
+          "cote_tendance": "+",
+          "cote_reference": 67.0
         },
         {
           "n°": "11",
@@ -612,7 +672,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 29.0,
+          "cote_tendance": "+",
+          "cote_reference": 26.0
         },
         {
           "n°": "12",
@@ -632,7 +695,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 14.0,
+          "cote_tendance": "+",
+          "cote_reference": 19.0
         },
         {
           "n°": "13",
@@ -652,9 +718,13 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.5,
+          "cote_tendance": "+",
+          "cote_reference": 2.8
         }
       ],
+      "typePiste": "HERBE",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -683,7 +753,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 5.5,
+          "cote_tendance": "+",
+          "cote_reference": 8.0
         },
         {
           "n°": "2",
@@ -703,7 +776,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 13.0,
+          "cote_tendance": "+",
+          "cote_reference": 13.0
         },
         {
           "n°": "3",
@@ -723,7 +799,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 1,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 7.5,
+          "cote_tendance": "-",
+          "cote_reference": 7.7
         },
         {
           "n°": "4",
@@ -743,7 +822,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 9.5,
+          "cote_tendance": "-",
+          "cote_reference": 11.0
         },
         {
           "n°": "5",
@@ -763,7 +845,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 33.0,
+          "cote_tendance": "-",
+          "cote_reference": 38.0
         },
         {
           "n°": "6",
@@ -783,7 +868,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 1,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 2.8,
+          "cote_tendance": "+",
+          "cote_reference": 2.1
         },
         {
           "n°": "7",
@@ -803,7 +891,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 111.0,
+          "cote_tendance": "+",
+          "cote_reference": 77.0
         },
         {
           "n°": "8",
@@ -823,7 +914,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 55.0,
+          "cote_tendance": "+",
+          "cote_reference": 38.0
         },
         {
           "n°": "9",
@@ -843,7 +937,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 9.2,
+          "cote_tendance": "+",
+          "cote_reference": 12.0
         },
         {
           "n°": "10",
@@ -863,7 +960,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 13.0,
+          "cote_tendance": "+",
+          "cote_reference": 12.0
         },
         {
           "n°": "11",
@@ -883,9 +983,13 @@
           "equipement(s)": "A",
           "nb_courses": 7,
           "nb_victoires": 0,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 22.0,
+          "cote_tendance": "-",
+          "cote_reference": 38.0
         }
       ],
+      "typePiste": "HERBE",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -914,7 +1018,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 10.0,
+          "cote_tendance": "+",
+          "cote_reference": 8.4
         },
         {
           "n°": "2",
@@ -954,7 +1061,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 3.2,
+          "cote_tendance": "+",
+          "cote_reference": 2.1
         },
         {
           "n°": "4",
@@ -974,7 +1084,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 12.0,
+          "cote_tendance": "+",
+          "cote_reference": 8.4
         },
         {
           "n°": "5",
@@ -994,7 +1107,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 10.0,
+          "cote_tendance": "-",
+          "cote_reference": 59.0
         },
         {
           "n°": "6",
@@ -1014,7 +1130,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 22.0,
+          "cote_tendance": "+",
+          "cote_reference": 11.0
         },
         {
           "n°": "7",
@@ -1034,7 +1153,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 16.0,
+          "cote_tendance": "+",
+          "cote_reference": 9.8
         },
         {
           "n°": "8",
@@ -1054,7 +1176,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 22.0,
+          "cote_tendance": "+",
+          "cote_reference": 19.0
         },
         {
           "n°": "9",
@@ -1074,9 +1199,13 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.4,
+          "cote_tendance": "+",
+          "cote_reference": 5.9
         }
       ],
+      "typePiste": "HERBE",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -1105,7 +1234,10 @@
           "equipement(s)": "A",
           "nb_courses": 14,
           "nb_victoires": 2,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 20.0,
+          "cote_tendance": "+",
+          "cote_reference": 11.0
         },
         {
           "n°": "2",
@@ -1125,7 +1257,10 @@
           "equipement(s)": "",
           "nb_courses": 45,
           "nb_victoires": 6,
-          "nb_places": 20
+          "nb_places": 20,
+          "cote": 12.0,
+          "cote_tendance": "-",
+          "cote_reference": 20.0
         },
         {
           "n°": "3",
@@ -1145,7 +1280,10 @@
           "equipement(s)": "",
           "nb_courses": 13,
           "nb_victoires": 2,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 12.0,
+          "cote_tendance": "+",
+          "cote_reference": 9.2
         },
         {
           "n°": "4",
@@ -1165,7 +1303,10 @@
           "equipement(s)": "",
           "nb_courses": 29,
           "nb_victoires": 3,
-          "nb_places": 20
+          "nb_places": 20,
+          "cote": 16.0,
+          "cote_tendance": "+",
+          "cote_reference": 20.0
         },
         {
           "n°": "5",
@@ -1185,7 +1326,10 @@
           "equipement(s)": "",
           "nb_courses": 23,
           "nb_victoires": 2,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 3.4,
+          "cote_tendance": "+",
+          "cote_reference": 2.7
         },
         {
           "n°": "6",
@@ -1205,7 +1349,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 16.0,
+          "cote_tendance": "+",
+          "cote_reference": 9.8
         },
         {
           "n°": "7",
@@ -1225,7 +1372,10 @@
           "equipement(s)": "",
           "nb_courses": 43,
           "nb_victoires": 4,
-          "nb_places": 16
+          "nb_places": 16,
+          "cote": 11.0,
+          "cote_tendance": "-",
+          "cote_reference": 23.0
         },
         {
           "n°": "8",
@@ -1245,7 +1395,10 @@
           "equipement(s)": "",
           "nb_courses": 43,
           "nb_victoires": 4,
-          "nb_places": 22
+          "nb_places": 22,
+          "cote": 15.0,
+          "cote_tendance": "+",
+          "cote_reference": 18.0
         },
         {
           "n°": "9",
@@ -1265,7 +1418,10 @@
           "equipement(s)": "",
           "nb_courses": 34,
           "nb_victoires": 6,
-          "nb_places": 18
+          "nb_places": 18,
+          "cote": 20.0,
+          "cote_tendance": "-",
+          "cote_reference": 15.0
         },
         {
           "n°": "10",
@@ -1285,7 +1441,10 @@
           "equipement(s)": "",
           "nb_courses": 45,
           "nb_victoires": 3,
-          "nb_places": 23
+          "nb_places": 23,
+          "cote": 20.0,
+          "cote_tendance": "+",
+          "cote_reference": 41.0
         },
         {
           "n°": "11",
@@ -1305,7 +1464,10 @@
           "equipement(s)": "A",
           "nb_courses": 56,
           "nb_victoires": 3,
-          "nb_places": 30
+          "nb_places": 30,
+          "cote": 14.0,
+          "cote_tendance": "+",
+          "cote_reference": 16.0
         },
         {
           "n°": "12",
@@ -1325,7 +1487,10 @@
           "equipement(s)": "",
           "nb_courses": 21,
           "nb_victoires": 2,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 25.0,
+          "cote_tendance": "-",
+          "cote_reference": 27.0
         },
         {
           "n°": "13",
@@ -1345,7 +1510,10 @@
           "equipement(s)": "A",
           "nb_courses": 36,
           "nb_victoires": 4,
-          "nb_places": 20
+          "nb_places": 20,
+          "cote": 10.0,
+          "cote_tendance": "-",
+          "cote_reference": 16.0
         },
         {
           "n°": "14",
@@ -1385,7 +1553,10 @@
           "equipement(s)": "A",
           "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 18.0,
+          "cote_tendance": "+",
+          "cote_reference": 33.0
         },
         {
           "n°": "16",
@@ -1405,9 +1576,13 @@
           "equipement(s)": "",
           "nb_courses": 19,
           "nb_victoires": 1,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 162.0,
+          "cote_tendance": "+",
+          "cote_reference": 83.0
         }
       ],
+      "typePiste": "HERBE",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -1436,7 +1611,10 @@
           "equipement(s)": "",
           "nb_courses": 11,
           "nb_victoires": 1,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 18.0,
+          "cote_tendance": "+",
+          "cote_reference": 11.0
         },
         {
           "n°": "2",
@@ -1456,7 +1634,10 @@
           "equipement(s)": "",
           "nb_courses": 34,
           "nb_victoires": 5,
-          "nb_places": 14
+          "nb_places": 14,
+          "cote": 8.2,
+          "cote_tendance": "+",
+          "cote_reference": 59.0
         },
         {
           "n°": "3",
@@ -1476,7 +1657,10 @@
           "equipement(s)": "",
           "nb_courses": 82,
           "nb_victoires": 8,
-          "nb_places": 39
+          "nb_places": 39,
+          "cote": 17.0,
+          "cote_tendance": "+",
+          "cote_reference": 13.0
         },
         {
           "n°": "4",
@@ -1496,7 +1680,10 @@
           "equipement(s)": "A",
           "nb_courses": 70,
           "nb_victoires": 8,
-          "nb_places": 38
+          "nb_places": 38,
+          "cote": 33.0,
+          "cote_tendance": "+",
+          "cote_reference": 59.0
         },
         {
           "n°": "5",
@@ -1516,7 +1703,10 @@
           "equipement(s)": "A",
           "nb_courses": 39,
           "nb_victoires": 5,
-          "nb_places": 21
+          "nb_places": 21,
+          "cote": 46.0,
+          "cote_tendance": "+",
+          "cote_reference": 59.0
         },
         {
           "n°": "6",
@@ -1536,7 +1726,10 @@
           "equipement(s)": "",
           "nb_courses": 74,
           "nb_victoires": 6,
-          "nb_places": 33
+          "nb_places": 33,
+          "cote": 37.0,
+          "cote_tendance": "-",
+          "cote_reference": 47.0
         },
         {
           "n°": "7",
@@ -1556,7 +1749,10 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 0,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 53.0,
+          "cote_tendance": "-",
+          "cote_reference": 47.0
         },
         {
           "n°": "8",
@@ -1576,7 +1772,10 @@
           "equipement(s)": "",
           "nb_courses": 95,
           "nb_victoires": 7,
-          "nb_places": 49
+          "nb_places": 49,
+          "cote": 14.0,
+          "cote_tendance": "+",
+          "cote_reference": 18.0
         },
         {
           "n°": "9",
@@ -1596,7 +1795,10 @@
           "equipement(s)": "",
           "nb_courses": 73,
           "nb_victoires": 5,
-          "nb_places": 42
+          "nb_places": 42,
+          "cote": 6.1,
+          "cote_tendance": "+",
+          "cote_reference": 4.8
         },
         {
           "n°": "10",
@@ -1616,7 +1818,10 @@
           "equipement(s)": "",
           "nb_courses": 45,
           "nb_victoires": 3,
-          "nb_places": 26
+          "nb_places": 26,
+          "cote": 14.0,
+          "cote_tendance": "-",
+          "cote_reference": 14.0
         },
         {
           "n°": "11",
@@ -1636,7 +1841,10 @@
           "equipement(s)": "",
           "nb_courses": 20,
           "nb_victoires": 1,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 2.6,
+          "cote_tendance": "+",
+          "cote_reference": 2.1
         },
         {
           "n°": "12",
@@ -1656,7 +1864,10 @@
           "equipement(s)": "",
           "nb_courses": 95,
           "nb_victoires": 14,
-          "nb_places": 43
+          "nb_places": 43,
+          "cote": 46.0,
+          "cote_tendance": "-",
+          "cote_reference": 34.0
         },
         {
           "n°": "13",
@@ -1676,7 +1887,10 @@
           "equipement(s)": "",
           "nb_courses": 98,
           "nb_victoires": 13,
-          "nb_places": 54
+          "nb_places": 54,
+          "cote": 93.0,
+          "cote_tendance": "-",
+          "cote_reference": 79.0
         },
         {
           "n°": "14",
@@ -1696,7 +1910,10 @@
           "equipement(s)": "A",
           "nb_courses": 69,
           "nb_victoires": 11,
-          "nb_places": 27
+          "nb_places": 27,
+          "cote": 93.0,
+          "cote_tendance": "+",
+          "cote_reference": 79.0
         },
         {
           "n°": "15",
@@ -1716,7 +1933,10 @@
           "equipement(s)": "",
           "nb_courses": 23,
           "nb_victoires": 2,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 16.0,
+          "cote_tendance": "+",
+          "cote_reference": 238.0
         },
         {
           "n°": "16",
@@ -1736,9 +1956,13 @@
           "equipement(s)": "",
           "nb_courses": 32,
           "nb_victoires": 1,
-          "nb_places": 14
+          "nb_places": 14,
+          "cote": 53.0,
+          "cote_tendance": "+",
+          "cote_reference": 47.0
         }
       ],
+      "typePiste": "HERBE",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -1767,7 +1991,10 @@
           "equipement(s)": "A",
           "nb_courses": 8,
           "nb_victoires": 2,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 16.0,
+          "cote_tendance": "+",
+          "cote_reference": 12.0
         },
         {
           "n°": "2",
@@ -1787,7 +2014,10 @@
           "equipement(s)": "",
           "nb_courses": 17,
           "nb_victoires": 5,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 2.0,
+          "cote_tendance": "+",
+          "cote_reference": 2.5
         },
         {
           "n°": "3",
@@ -1807,7 +2037,10 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 3,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 8.3,
+          "cote_tendance": "-",
+          "cote_reference": 25.0
         },
         {
           "n°": "4",
@@ -1827,7 +2060,10 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 4,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 6.7,
+          "cote_tendance": "+",
+          "cote_reference": 3.8
         },
         {
           "n°": "5",
@@ -1847,7 +2083,10 @@
           "equipement(s)": "A",
           "nb_courses": 10,
           "nb_victoires": 2,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 10.0,
+          "cote_tendance": "+",
+          "cote_reference": 5.5
         },
         {
           "n°": "6",
@@ -1867,9 +2106,13 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 1,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 4.5,
+          "cote_tendance": "+",
+          "cote_reference": 5.5
         }
       ],
+      "typePiste": "HERBE",
       "cordeCourse": "CORDE_DROITE"
     }
   ]
