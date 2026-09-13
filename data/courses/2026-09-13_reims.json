@@ -1,11 +1,7 @@
 {
   "hippodrome": "REIMS",
   "type_reunion": "ATTELE",
-<<<<<<< Updated upstream
-  "date_extraction": "2026-09-13T17:41:29.000589",
-=======
-  "date_extraction": "2026-09-13T17:41:30.895301",
->>>>>>> Stashed changes
+  "date_extraction": "2026-09-13T22:16:17.506110",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/13092026/R5",
   "courses": [
     {
@@ -1748,30 +1744,6 @@
           "arrivee": 4
         },
         {
-          "n°": "1",
-          "cheval": "OLLY DE BAILLY F.TR. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: EXCELLENT et QUOKINE DE CHAVOT",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260913/REI/7/20260913-REI-7-1.png",
-          "propriétaire": "Ecurie L.B. BOURGOIN",
-          "entraineur": "B. BOURGOIN",
-          "éleveurs": "Ecurie L.B. BOURGOIN",
-          "jockey": "M. VERVA",
-          "poids": "",
-          "gains": "",
-          "musique": "",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0,
-          "cote": 7.5,
-          "cote_tendance": "+",
-          "cote_reference": 11.0,
-          "avis_entraineur": "POSITIF"
-        },
-        {
           "n°": "3",
           "cheval": "ORLY F.TR. 2 a.",
           "cheval_url": "",
@@ -1793,7 +1765,8 @@
           "cote": 65.0,
           "cote_tendance": "+",
           "cote_reference": 36.0,
-          "avis_entraineur": "NEUTRE"
+          "avis_entraineur": "NEUTRE",
+          "arrivee": 5
         },
         {
           "n°": "4",
@@ -1817,7 +1790,33 @@
           "cote": 32.0,
           "cote_tendance": "+",
           "cote_reference": 19.0,
-          "avis_entraineur": "NEUTRE"
+          "avis_entraineur": "NEUTRE",
+          "arrivee": 6
+        },
+        {
+          "n°": "1",
+          "cheval": "OLLY DE BAILLY F.TR. 2 a.",
+          "cheval_url": "",
+          "père_mère": "Par: EXCELLENT et QUOKINE DE CHAVOT",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260913/REI/7/20260913-REI-7-1.png",
+          "propriétaire": "Ecurie L.B. BOURGOIN",
+          "entraineur": "B. BOURGOIN",
+          "éleveurs": "Ecurie L.B. BOURGOIN",
+          "jockey": "M. VERVA",
+          "poids": "",
+          "gains": "",
+          "musique": "",
+          "valeur": "",
+          "equipement(s)": "",
+          "nb_courses": 0,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 7.5,
+          "cote_tendance": "+",
+          "cote_reference": 11.0,
+          "avis_entraineur": "POSITIF",
+          "arrivee": 7
         },
         {
           "n°": "5",
@@ -1845,7 +1844,7 @@
         }
       ],
       "cordeCourse": "CORDE_DROITE",
-      "arrivee_definitive": false
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX DU RETOUR EN SELLE",
@@ -1855,6 +1854,56 @@
       "distance": "2550m",
       "url": "",
       "participants": [
+        {
+          "n°": "6",
+          "cheval": "KANDAR JIEL H.TR. 6 a.",
+          "cheval_url": "",
+          "père_mère": "Par: LOVE YOU et DESTINY JIEL",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260913/REI/8/20260913-REI-8-6.png",
+          "propriétaire": "Ecurie LUCK",
+          "entraineur": "J.L. DERSOIR",
+          "éleveurs": "Ecurie LUCK",
+          "jockey": "E. FREMIOT",
+          "poids": "",
+          "gains": "6265000",
+          "musique": "3a2a7a4a0a2a3a0aDaDa",
+          "valeur": "",
+          "equipement(s)": "",
+          "nb_courses": 39,
+          "nb_victoires": 3,
+          "nb_places": 18,
+          "cote": 4.4,
+          "cote_tendance": "",
+          "cote_reference": 5.6,
+          "avis_entraineur": "NEUTRE",
+          "arrivee": 1
+        },
+        {
+          "n°": "5",
+          "cheval": "KISS ME MENCOURT F.TR. 6 a.",
+          "cheval_url": "",
+          "père_mère": "Par: CARAT WILLIAMS et CIABATTA",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260913/REI/8/20260913-REI-8-5.png",
+          "propriétaire": "Ecurie Laurent VERVA",
+          "entraineur": "L. VERVA",
+          "éleveurs": "M. Pierre Henri LEMAITRE",
+          "jockey": "S. ROCHER",
+          "poids": "",
+          "gains": "5336000",
+          "musique": "1a1a1a1aDa9a9a5a1a4a",
+          "valeur": "",
+          "equipement(s)": "",
+          "nb_courses": 40,
+          "nb_victoires": 6,
+          "nb_places": 23,
+          "cote": 2.0,
+          "cote_tendance": "",
+          "cote_reference": 1.8,
+          "avis_entraineur": "NEUTRE",
+          "arrivee": 2
+        },
         {
           "n°": "1",
           "cheval": "KRACK JIHESSE H.TR. 6 a.",
@@ -1874,38 +1923,11 @@
           "nb_courses": 33,
           "nb_victoires": 1,
           "nb_places": 14,
-<<<<<<< Updated upstream
-          "cote": 92.0,
-=======
-          "cote": 93.0,
->>>>>>> Stashed changes
-          "cote_tendance": "+",
+          "cote": 41.0,
+          "cote_tendance": "",
           "cote_reference": 67.0,
-          "avis_entraineur": "NEUTRE"
-        },
-        {
-          "n°": "2",
-          "cheval": "IDEALOU H.TR. 8 a.",
-          "cheval_url": "",
-          "père_mère": "Par: KOREAN et BAXANITA",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260913/REI/8/20260913-REI-8-2.png",
-          "propriétaire": "Mme E. HENDRICKX",
-          "entraineur": "Mme G. MASSCHAELE",
-          "éleveurs": "M. Guy VERVA",
-          "jockey": "TH. HUCHEDE",
-          "poids": "",
-          "gains": "4330000",
-          "musique": "0a8a8a(25)4a2a0a6a0a0a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 47,
-          "nb_victoires": 2,
-          "nb_places": 30,
-          "cote": 18.0,
-          "cote_tendance": "+",
-          "cote_reference": 16.0,
-          "avis_entraineur": "NEUTRE"
+          "avis_entraineur": "NEUTRE",
+          "arrivee": 3
         },
         {
           "n°": "3",
@@ -1926,9 +1948,34 @@
           "nb_courses": 62,
           "nb_victoires": 2,
           "nb_places": 26,
-          "cote": 30.0,
-          "cote_tendance": "+",
+          "cote": 28.0,
+          "cote_tendance": "",
           "cote_reference": 28.0,
+          "avis_entraineur": "NEUTRE",
+          "arrivee": 4
+        },
+        {
+          "n°": "2",
+          "cheval": "IDEALOU H.TR. 8 a.",
+          "cheval_url": "",
+          "père_mère": "Par: KOREAN et BAXANITA",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260913/REI/8/20260913-REI-8-2.png",
+          "propriétaire": "Mme E. HENDRICKX",
+          "entraineur": "Mme G. MASSCHAELE",
+          "éleveurs": "M. Guy VERVA",
+          "jockey": "TH. HUCHEDE",
+          "poids": "",
+          "gains": "4330000",
+          "musique": "0a8a8a(25)4a2a0a6a0a0a",
+          "valeur": "",
+          "equipement(s)": "",
+          "nb_courses": 47,
+          "nb_victoires": 2,
+          "nb_places": 30,
+          "cote": 24.0,
+          "cote_tendance": "",
+          "cote_reference": 16.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1950,72 +1997,9 @@
           "nb_courses": 101,
           "nb_victoires": 3,
           "nb_places": 33,
-<<<<<<< Updated upstream
-          "cote": 84.0,
+          "cote": 101.0,
           "cote_tendance": "+",
-=======
-          "cote": 82.0,
-          "cote_tendance": "-",
->>>>>>> Stashed changes
           "cote_reference": 57.0,
-          "avis_entraineur": "NEUTRE"
-        },
-        {
-          "n°": "5",
-          "cheval": "KISS ME MENCOURT F.TR. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: CARAT WILLIAMS et CIABATTA",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260913/REI/8/20260913-REI-8-5.png",
-          "propriétaire": "Ecurie Laurent VERVA",
-          "entraineur": "L. VERVA",
-          "éleveurs": "M. Pierre Henri LEMAITRE",
-          "jockey": "S. ROCHER",
-          "poids": "",
-          "gains": "5336000",
-          "musique": "1a1a1a1aDa9a9a5a1a4a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 40,
-          "nb_victoires": 6,
-          "nb_places": 23,
-<<<<<<< Updated upstream
-          "cote": 1.6,
-          "cote_tendance": "",
-=======
-          "cote": 1.7,
-          "cote_tendance": "+",
->>>>>>> Stashed changes
-          "cote_reference": 1.8,
-          "avis_entraineur": "NEUTRE"
-        },
-        {
-          "n°": "6",
-          "cheval": "KANDAR JIEL H.TR. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: LOVE YOU et DESTINY JIEL",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260913/REI/8/20260913-REI-8-6.png",
-          "propriétaire": "Ecurie LUCK",
-          "entraineur": "J.L. DERSOIR",
-          "éleveurs": "Ecurie LUCK",
-          "jockey": "E. FREMIOT",
-          "poids": "",
-          "gains": "6265000",
-          "musique": "3a2a7a4a0a2a3a0aDaDa",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 39,
-          "nb_victoires": 3,
-          "nb_places": 18,
-<<<<<<< Updated upstream
-          "cote": 7.9,
-          "cote_tendance": "+",
-=======
-          "cote": 7.7,
-          "cote_tendance": "-",
->>>>>>> Stashed changes
-          "cote_reference": 5.6,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2037,7 +2021,7 @@
           "nb_courses": 56,
           "nb_victoires": 3,
           "nb_places": 35,
-          "cote": 31.0,
+          "cote": 61.0,
           "cote_tendance": "+",
           "cote_reference": 12.0,
           "avis_entraineur": "NEUTRE"
@@ -2061,12 +2045,8 @@
           "nb_courses": 87,
           "nb_victoires": 6,
           "nb_places": 37,
-          "cote": 6.2,
-<<<<<<< Updated upstream
-          "cote_tendance": "-",
-=======
+          "cote": 5.0,
           "cote_tendance": "",
->>>>>>> Stashed changes
           "cote_reference": 7.2,
           "avis_entraineur": "POSITIF"
         },
@@ -2089,18 +2069,14 @@
           "nb_courses": 77,
           "nb_victoires": 7,
           "nb_places": 45,
-<<<<<<< Updated upstream
-          "cote": 8.6,
+          "cote": 11.0,
           "cote_tendance": "",
-=======
-          "cote": 8.4,
-          "cote_tendance": "-",
->>>>>>> Stashed changes
           "cote_reference": 12.0,
           "avis_entraineur": "NEUTRE"
         }
       ],
-      "cordeCourse": "CORDE_DROITE"
+      "cordeCourse": "CORDE_DROITE",
+      "arrivee_definitive": true
     }
   ]
 }
