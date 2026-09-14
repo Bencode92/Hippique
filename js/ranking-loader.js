@@ -2045,10 +2045,40 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
     },
 
     // Implémentation réelle (non cachée) — voir le wrapper mémoïsé ci-dessus.
+    //
+    // Depuis le 14/09/2026 : délègue à js/matching.js, le module partagé avec
+    // live-scoring.js et les bancs d'essai. Avant, l'écran et l'apprentissage
+    // n'utilisaient pas le même rattachement (l'écran retrouvait PC.BOUDOT,
+    // l'apprentissage non). Le résultat est mémorisé avec sa méthode et sa
+    // confiance dans this._dernierRattachement pour l'affichage.
     _trouverItemDansClassementImpl(donneesClassement, nom, categorie) {
         if (!nom || !donneesClassement || !donneesClassement.length) {
             return null;
         }
+        if (typeof Matching !== 'undefined') {
+            if (!this._idxMatching) this._idxMatching = new WeakMap();
+            let idx = this._idxMatching.get(donneesClassement);
+            if (!idx || idx.categorie !== categorie) {
+                const corr = {};
+                for (const [k, v] of Object.entries(this.correspondanceManuelle || {})) corr[k] = v;
+                idx = Matching.creerIndex(donneesClassement, categorie, { correspondances: corr, etrangers: this._etrangers ? [...this._etrangers] : [] });
+                this._idxMatching.set(donneesClassement, idx);
+            }
+            const r = Matching.rattacher(idx, typeof nom === 'string' ? nom : String(nom), categorie);
+            if (!this._rattachements) this._rattachements = new Map();
+            this._rattachements.set(categorie + '|' + nom, r ? { nom: r.nom, methode: r.methode, confiance: r.confiance, candidats: r.candidats } : null);
+            return r ? r.item : null;
+        }
+        return this._trouverItemDansClassementLegacy(donneesClassement, nom, categorie);
+    },
+
+    // Comment un nom a été rattaché la dernière fois (méthode, confiance, candidats) — pour l'écran.
+    rattachementDe(categorie, nom) {
+        return this._rattachements ? this._rattachements.get(categorie + '|' + nom) || null : null;
+    },
+
+    // Ancien rattachement (Levenshtein à seuil 0,58), gardé seulement si matching.js n'est pas chargé.
+    _trouverItemDansClassementLegacy(donneesClassement, nom, categorie) {
 
         // Pour les éleveurs et propriétaires qui peuvent être multiples
         if (categorie === 'eleveurs' || categorie === 'proprietaires') {

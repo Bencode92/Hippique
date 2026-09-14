@@ -1291,7 +1291,8 @@
 
     <!-- Module ranking-loader (doit être chargé avant le script principal) -->
     <script src="js/panneau-paris.js?v=9"></script>
-    <script src="js/ranking-loader.js?v=23"></script>
+    <script src="js/matching.js?v=1"></script>
+    <script src="js/ranking-loader.js?v=24"></script>
 
     <!-- Module de chargement des courses -->
     <script>
@@ -2946,6 +2947,54 @@
                 }
             }
             
+            // Bilan de rattachement d'une course : pour chaque partant, cheval / jockey /
+            // entraîneur retrouvés (ou non) au classement France Galop de l'année, puis de
+            // 2025. Utilise le même module que le score (js/matching.js via rankingLoader),
+            // donc ce qui est affiché ici est exactement ce que le score a vu.
+            function bandeauRattachement(participants) {
+                if (!participants || !participants.length || !window.rankingLoader) return null;
+                const RL = window.rankingLoader;
+                const cats = [
+                    { cat: 'chevaux',     champ: 'cheval',     libelle: 'chevaux',     un: 'cheval' },
+                    { cat: 'jockeys',     champ: 'jockey',     libelle: 'jockeys',     un: 'jockey' },
+                    { cat: 'entraineurs', champ: 'entraineur', libelle: 'entraîneurs', un: 'entraîneur' },
+                ];
+                const parts = [], manquants = [], douteux = [];
+                let complet = true;
+                for (const { cat, champ, libelle, un } of cats) {
+                    const data = RL.data && RL.data[cat];
+                    if (!data || !data.length) { parts.push(`${libelle} : classement non chargé`); complet = false; continue; }
+                    const histo = RL.dataHistorique && RL.dataHistorique[cat + '_2025'];
+                    let ok = 0, via2025 = 0;
+                    for (const p of participants) {
+                        const nom = p[champ] || (champ === 'entraineur' ? p['entraîneur'] : '');
+                        const num = p['n°'] || p.numero || p.n || '?';
+                        let item = nom ? RL.trouverItemDansClassement(data, nom, cat) : null;
+                        let r = item ? RL.rattachementDe(cat, nom) : null;
+                        if (!item && nom && histo && histo.length) { item = RL.trouverItemDansClassement(histo, nom, cat); if (item) via2025++; }
+                        if (item) {
+                            ok++;
+                            if (r && r.confiance < 95) douteux.push(`n°${num} ${un} « ${nom} » → ${r.nom} (${r.methode}${r.candidats ? ' : ' + r.candidats.join(' / ') : ''})`);
+                        } else {
+                            const debutant = cat === 'chevaux' && !(parseInt(p.nb_courses) > 0);
+                            const horsPS = cat === 'chevaux' && !/\s[HFM]\.(PU|PS)\./i.test(nom || '');
+                            manquants.push(`n°${num} ${un} « ${nom || '—'} »${debutant ? ' — débutant, normal' : horsPS ? ' — hors pur-sang, pas au classement' : ''}`);
+                            if (!debutant && !horsPS) complet = false;
+                        }
+                    }
+                    parts.push(`${libelle} ${ok}/${participants.length}${via2025 ? ` <span style="opacity:.7">(dont ${via2025} via 2025)</span>` : ''}`);
+                }
+                const el = document.createElement('p');
+                el.className = 'bandeau-rattachement';
+                const couleur = complet && !douteux.length ? '#40e05a' : '#e0b040';
+                el.style.cssText = `margin:0 0 0.8rem;padding:0.5rem 0.9rem;border-left:3px solid ${couleur};border-radius:4px;background:rgba(255,255,255,0.04);font-size:0.85rem;color:var(--light-gold)`;
+                const details = manquants.concat(douteux.map(d => '⚠ ' + d));
+                el.innerHTML = `<i class="fas fa-link" style="color:${couleur}"></i> <strong>Rattachement France Galop</strong> — ${parts.join(' · ')}`
+                    + (details.length ? `<details style="margin-top:0.3rem"><summary style="cursor:pointer;opacity:.85">${manquants.length} non rattaché${manquants.length > 1 ? 's' : ''}${douteux.length ? `, ${douteux.length} à vérifier` : ''}</summary><ul style="margin:0.3rem 0 0 1rem;padding:0;font-size:0.82rem;line-height:1.5">${details.map(d => `<li>${d}</li>`).join('')}</ul></details>`
+                                       : ` <span style="color:${couleur}">— complet</span>`);
+                return el;
+            }
+
             // Déterminer la position de la course dans la journée
             function getCoursePosition(horaire) {
                 if (!horaire) return 1;
@@ -3193,6 +3242,15 @@
                             <i class="fas fa-flask"></i> Ranking optimal (stats)
                         </a>`;
                     tableWrapper.parentNode.insertBefore(weightsInfo, tableWrapper);
+
+                    // Rattachement au classement : sur quoi le score s'appuie vraiment.
+                    // Un partant non rattaché est noté avec une valeur par défaut — il faut le voir.
+                    try {
+                        const ancien = tableWrapper.parentNode.querySelector('.bandeau-rattachement');
+                        if (ancien) ancien.remove();
+                        const br = bandeauRattachement(courseContext.participants);
+                        if (br) tableWrapper.parentNode.insertBefore(br, tableWrapper);
+                    } catch (e) { console.warn('Bilan de rattachement indisponible', e); }
 
                     // Bandeau de décision, au-dessus de tout le reste
                     try {

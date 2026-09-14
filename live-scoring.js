@@ -244,37 +244,24 @@ function loadCorresp() {
 
 // Fuzzy match : "C. DEMURO" ou "DEMURO C." → "CRISTIAN DEMURO"
 // Consulte aussi claude_correspondances.json et court-circuite les étrangers connus.
-function fuzzyMatch(map, shortName) {
-  if (!shortName || shortName.length < 3) return null;
+// Rattachement fiche PMU → classement : js/matching.js, le module partagé avec
+// l'écran (ranking-loader.js) et les bancs d'essai. L'ancienne fonction locale
+// n'acceptait qu'une lettre d'initiale : PC.BOUDOT, FH.GRAFFARD (S), A&L.FABRE (S)
+// tombaient tous à la valeur par défaut — 45 à 65 % des partants — et les
+// formules ont été apprises comme ça. Voir bench/matching_audit.mjs.
+const Matching = require(path.join(__dirname, 'js', 'matching.js'));
+const _idxMatching = new WeakMap();
+function fuzzyMatch(map, shortName, categorie) {
+  if (!shortName || !map) return null;
   loadCorresp();
-  const key = shortName.toUpperCase().trim();
-  if (map[key]) return map[key];
-
-  // Correspondances pré-calculées (cas tordus : "M.Z .SAHEBJAN" → "MOHAMMAD ZEESHAAN SAHEBJAN")
-  if (_correspMap[key] && map[_correspMap[key]]) return map[_correspMap[key]];
-
-  // Étrangers connus : pas la peine de chercher
-  if (_knownForeign.has(key)) return null;
-
-  let init = '', fam = '';
-  let m = key.match(/^([A-Z])\.?\s*(.{3,})$/);
-  if (m) { init = m[1]; fam = m[2].trim(); }
-  if (!m) { m = key.match(/^(.{3,?})\s+([A-Z])\.?$/); if (m) { fam = m[1].trim(); init = m[2]; } }
-  if (!m) {
-    for (const [k, v] of Object.entries(map)) {
-      if (k === key) return v;
-      if (key.length >= 5 && (k.includes(key) || key.includes(k))) return v;
-    }
-    return null;
+  let idx = _idxMatching.get(map);
+  if (!idx) {
+    const corr = {}; for (const [k, v] of Object.entries(_correspMap)) corr[k] = v;
+    idx = Matching.creerIndex(Object.values(map), categorie || 'jockeys', { correspondances: corr, etrangers: [..._knownForeign] });
+    _idxMatching.set(map, idx);
   }
-  if (fam.length < 3) return null;
-  for (const [k, v] of Object.entries(map)) {
-    if (k.endsWith(fam) || k.endsWith(' ' + fam) || k.includes(' ' + fam)) {
-      const prenom = k.replace(fam, '').trim();
-      if (prenom && prenom[0] === init) return v;
-    }
-  }
-  return null;
+  const r = Matching.rattacher(idx, shortName, categorie || 'jockeys');
+  return r ? r.item : null;
 }
 
 function extractNomCheval(chevalStr) {
@@ -282,7 +269,7 @@ function extractNomCheval(chevalStr) {
 }
 
 // Version des formules — bump quand le calcul change (fuzzyMatch, tie-break, exploration élargie…)
-const BEST_FORMULAS_VERSION = 3;
+const BEST_FORMULAS_VERSION = 4;   // v4 : rattachement partagé js/matching.js (les v≤3 ont appris sans Boudot ni Graffard)
 
 // Charger ou calculer les formules optimales automatiquement
 let bestFormulas = null;
@@ -557,12 +544,12 @@ function getLevierValue(levierName, participant, ld) {
   const jk = (participant.jockey || '').toUpperCase().trim();
   const nom = extractNomCheval(participant.cheval);
   const entr = (participant.entraineur || participant['entraîneur'] || '').toUpperCase().trim();
-  const j25 = fuzzyMatch(ld.jk25, jk);
-  const j26 = fuzzyMatch(ld.jk26, jk);
-  const ch25 = fuzzyMatch(ld.chx25, nom) || ld.chx25[nom];
-  const ch26 = fuzzyMatch(ld.chx26, nom) || ld.chx26[nom];
-  const cr25 = ld.cr25 ? fuzzyMatch(ld.cr25, jk) : null;
-  const cr26 = ld.cr26 ? fuzzyMatch(ld.cr26, jk) : null;
+  const j25 = fuzzyMatch(ld.jk25, jk, 'jockeys');
+  const j26 = fuzzyMatch(ld.jk26, jk, 'jockeys');
+  const ch25 = fuzzyMatch(ld.chx25, participant.cheval, 'chevaux') || ld.chx25[nom];
+  const ch26 = fuzzyMatch(ld.chx26, participant.cheval, 'chevaux') || ld.chx26[nom];
+  const cr25 = ld.cr25 ? fuzzyMatch(ld.cr25, jk, 'jockeys') : null;
+  const cr26 = ld.cr26 ? fuzzyMatch(ld.cr26, jk, 'jockeys') : null;
   const coteVal = parseFloat(participant.cote) || 0;
   const coteRef = parseFloat(participant.cote_reference) || 0;
   const valeur = parseFloat(participant.valeur) || 0;
