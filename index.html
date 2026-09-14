@@ -1292,6 +1292,7 @@
     <!-- Module ranking-loader (doit être chargé avant le script principal) -->
     <script src="js/panneau-paris.js?v=9"></script>
     <script src="js/matching.js?v=1"></script>
+    <script src="js/cote-juste.js?v=1"></script>
     <script src="js/ranking-loader.js?v=24"></script>
 
     <!-- Module de chargement des courses -->
@@ -1593,6 +1594,14 @@
         let _sprt = null;
         fetch('https://raw.githubusercontent.com/bencode92/Hippique/main/data/sprt_etat.json?_=' + Date.now())
             .then(r => r.ok ? r.json() : null).then(j => { _sprt = j; }).catch(() => {});
+
+        // La cote juste (js/cote-juste.js + data/cote_juste.json) : proba réelle de
+        // gagner sachant la cote et le contexte, et espérance du pari. Modèle
+        // local d'abord (même dépôt que la page), GitHub en repli.
+        let _coteJuste = null;
+        const _cjPromise = fetch('data/cote_juste.json?_=' + Date.now()).then(r => r.ok ? r.json() : Promise.reject())
+            .catch(() => fetch('https://raw.githubusercontent.com/bencode92/Hippique/main/data/cote_juste.json?_=' + Date.now()).then(r => r.ok ? r.json() : null))
+            .then(j => { _coteJuste = j; return j; }).catch(() => null);
 
         function barreReglage() {
             const S = socleCourant();
@@ -3134,7 +3143,7 @@
                                     <th style="width:50px">Cote</th>
                                     <th style="width:140px" title="Score formule actuelle (du site)">Score</th>
                                     <th style="width:78px" title="Rang par la cote — la référence. Son n°1 gagne 33,8 % ± 1,9 du temps sur les 637 courses premium depuis le 16/04/2026, c'est-à-dire exactement l'univers sur lequel l'Optimale est mesurée. (Les 34,9 % affichés auparavant venaient de 14 620 courses toutes catégories : ils n'étaient pas comparables.)">Marché<br><span style="font-weight:400;opacity:.6;font-size:.8em">33,8 %</span></th>
-                                    <th style="width:78px" title="Rang par la formule Optimale (champion du bucket distance). Sur les 628 courses premium qui ont servi à la CHOISIR, elle fait 33,6 %, à égalité avec la cote (33,8 % ± 1,9). Rejouée sur le premium ANTÉRIEUR au 16/04/2026, jamais vu par la calibration, elle tombe à 25,1 % sur 980 sprints et 24,6 % sur 349 courses de 1200 m, contre 27,3 % et 26,9 % pour la simple cote — soit 2,2 points DE MOINS. L'écart entre 33 % annoncé et 25 % réel est du surapprentissage : la médiane des buckets de calibration est de 96 courses, le plus petit en compte 13.">Optimale<br><span style="font-weight:400;opacity:.6;font-size:.8em">33,6 %</span></th>
+                                    <th style="width:110px" title="p_juste : probabilité réelle de gagner sachant la cote et le contexte (favori, champ, dérive, âge, corde, hippodrome), apprise sur 2022-2026. Espérance = p_juste × cote − 1. PLAY si ≥ 0. Mesuré sur 2025-2026 (jamais vu) : PLAY −4,4 % ± 4,9 sur 2 209 paris, PLAY sur le favori +4,8 % ± 7,2 sur 567, passe −20,4 %. L'ancienne colonne Optimale a été retirée : hors échantillon, aucune de ses formules ne battait la cote (bench/grille_walkforward.mjs).">Cote juste<br><span style="font-weight:400;opacity:.6;font-size:.8em">p · espérance</span></th>
                                     <th style="width:80px" title="Nombre de méthodes plaçant le cheval dans leur top 3. Indicatif : les méthodes ne se valent pas, seule la colonne Marché a une performance établie.">Accord</th>
                                     <th style="width:55px">Arrivée</th>
                                 </tr>
@@ -3286,6 +3295,33 @@
                             weightsInfo.querySelector('span').innerHTML += `<br><span style="opacity:0.7;font-size:0.8em">🔬 Optimale (${optimalResult._bucket}, n=${f.courses}, Top3=${f.top3?.toFixed(0)}%): ${formulaStr}</span>`;
                         }
                     } catch (e) { console.warn('Optimal ranking failed:', e); }
+
+                    // Cote juste : p_juste, cote juste, espérance, PLAY/passe par partant
+                    let coteJusteMap = null;
+                    try {
+                        const modele = _coteJuste || await _cjPromise;
+                        if (modele && window.CoteJuste) {
+                            coteJusteMap = CoteJuste.calculer(courseContext.participants, { hippodrome: hippodrome, course: courseName }, modele);
+                            const ancien = tableWrapper.parentNode.querySelector('.bandeau-cote-juste');
+                            if (ancien) ancien.remove();
+                            const plays = courseContext.participants.filter(p => coteJusteMap.get(p)?.play)
+                                .sort((a, b) => coteJusteMap.get(b).esperance - coteJusteMap.get(a).esperance);
+                            const T = modele.test_2025_2026 || {};
+                            const fmtR = r => r ? `${r.roi > 0 ? '+' : ''}${r.roi} % ± ${r.se} (n=${r.n})` : '—';
+                            const el = document.createElement('p');
+                            el.className = 'bandeau-cote-juste';
+                            el.style.cssText = `margin:0 0 0.8rem;padding:0.5rem 0.9rem;border-left:3px solid ${plays.length ? '#40e05a' : 'rgba(255,255,255,0.25)'};border-radius:4px;background:rgba(255,255,255,0.04);font-size:0.85rem;color:var(--light-gold)`;
+                            const nomCourt = p => String(p.cheval || '').replace(/\s+[HFM]\.[A-Z]+\.?\s*\d+\s*a\.?\s*$/i, '');
+                            const liste = plays.map(p => { const x = coteJusteMap.get(p); const fav = parseFloat(p.cote) === Math.min(...courseContext.participants.map(q => parseFloat(q.cote) || 999)); return `<strong>n°${p['n°'] || p.numero} ${nomCourt(p)}</strong> — cote ${parseFloat(p.cote).toFixed(1)}, p_juste ${(100 * x.p).toFixed(0)} % (cote juste ${x.coteJuste.toFixed(1)}), espérance <strong style="color:#40e05a">${x.esperance >= 0 ? '+' : ''}${(100 * x.esperance).toFixed(0)} %</strong>${fav ? ' · favori' : ''}`; }).join('<br>');
+                            el.innerHTML = `<i class="fas fa-balance-scale-right" style="color:${plays.length ? '#40e05a' : 'inherit'}"></i> <strong>Cote juste</strong>
+                                <span style="opacity:.7">— proba réelle sachant la cote et le contexte (favori, champ, dérive, âge, corde), appris 2022-2026 sur ${(modele.chevaux || 0).toLocaleString('fr-FR')} chevaux</span><br>
+                                ${plays.length ? `PLAY (espérance ≥ 0) :<br>${liste}` : '<span style="opacity:.85">aucun cheval ne vaut sa cote ici — <strong>passe</strong></span>'}
+                                <details style="margin-top:0.3rem"><summary style="cursor:pointer;opacity:.7;font-size:0.8rem">ce que ça vaut, mesuré sur 2025-2026 (jamais vu à l'apprentissage), dividendes réels</summary>
+                                <div style="font-size:0.8rem;line-height:1.5;opacity:.85;margin-top:.2rem">PLAY : <strong>${fmtR(T.play)}</strong> · PLAY sur le favori : <strong>${fmtR(T.play_favori)}</strong> · passe : ${fmtR(T.passe)} · tous les chevaux : ${fmtR(T.tous)}.<br>
+                                Ce n'est pas un classement : c'est « à ce prix, ce cheval vaut-il le pari ». PLAY seul reste légèrement négatif ; sur le favori il est autour de zéro à légèrement positif. Exiger plus d'espérance n'améliore pas (malédiction du vainqueur). La cote affichée n'est pas la cote finale : la dérive peut encore bouger.</div></details>`;
+                            tableWrapper.parentNode.insertBefore(el, tableWrapper);
+                        }
+                    } catch (e) { console.warn('Cote juste indisponible', e); }
                     
                     if (scoresPredictifs.length === 0) {
                         participantsContainer.innerHTML = `
@@ -3458,7 +3494,10 @@
                                     // l'Optimale, sur 14 620 courses). L'Optimale reste affichée,
                                     // en retrait, pour comparaison.
                                     const cotaBadge = rgCote ? `<span style="font-weight:700;color:${inTopCote ? '#40e05a' : 'inherit'}">${medal(rgCote)}${medal(rgCote) ? ' ' : ''}${rgCote}</span>` : '<span style="opacity:0.3">-</span>';
-                                    const optBadge = rgOpt ? `<span style="font-weight:600">${medal(rgOpt)}${medal(rgOpt) ? ' ' : ''}${rgOpt}</span>` : '<span style="opacity:0.3">-</span>';
+                                    const cj = coteJusteMap ? coteJusteMap.get(participant) : null;
+                                    const optBadge = cj
+                                        ? `<span title="cote juste ${cj.coteJuste.toFixed(1)} — le marché dit ${(100 * cj.marche).toFixed(0)} %" style="display:inline-block;line-height:1.25"><strong>${(100 * cj.p).toFixed(0)} %</strong><br><span style="font-size:0.85em;color:${cj.play ? '#40e05a' : 'rgba(255,255,255,0.55)'}">${cj.esperance >= 0 ? '+' : ''}${(100 * cj.esperance).toFixed(0)} %${cj.play ? ' PLAY' : ''}</span></span>`
+                                        : '<span style="opacity:0.3">-</span>';
                                     let consensusBadge;
                                     const stars = '⭐'.repeat(consensus);
                                     if (consensus === totalMethods) consensusBadge = `<span style="color:#40e05a;font-weight:700;font-size:1.1em" title="Top 3 dans toutes les méthodes — pick fort">${stars} ${consensus}/${totalMethods}</span>`;
