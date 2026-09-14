@@ -340,6 +340,7 @@
         </div>
     </main>
 
+    <script src="js/matching.js?v=1"></script>
     <script>
     // ============================================================
     // SCORING — mêmes formules par distance que ranking-loader.js
@@ -1231,7 +1232,27 @@
 
     // Fuzzy match : "M.GRANDIN" → "MARVIN GRANDIN" (repris de live-scoring.js:168-198)
     // + consulte claude_correspondances.json pour les cas spéciaux et ignore les étrangers connus.
-    function fuzzyMatch(map, shortName, rd) {
+    // Rattachement fiche PMU → classement : js/matching.js, le module partagé avec
+    // index.html et live-scoring.js. L'ancienne fonction locale ne lisait qu'une
+    // lettre d'initiale : PC.BOUDOT, FH.GRAFFARD (S), A&L.FABRE (S) tombaient à la
+    // valeur par défaut, et la grille choisissait ses formules avec la moitié des
+    // jockeys à « inconnu ». Voir bench/matching_audit.mjs.
+    const _idxMatching = new WeakMap();
+    function fuzzyMatch(map, shortName, rd, categorie) {
+        if (!shortName || !map) return null;
+        if (typeof Matching !== 'undefined') {
+            let idx = _idxMatching.get(map);
+            if (!idx) {
+                const corr = {}; for (const [k, v] of Object.entries(rd?.correspMap || {})) corr[k] = v;
+                idx = Matching.creerIndex(Object.values(map), categorie || 'jockeys', { correspondances: corr, etrangers: rd?.knownForeign ? [...rd.knownForeign] : [] });
+                _idxMatching.set(map, idx);
+            }
+            const r = Matching.rattacher(idx, shortName, categorie || 'jockeys');
+            return r ? r.item : null;
+        }
+        return fuzzyMatchLegacy(map, shortName, rd);
+    }
+    function fuzzyMatchLegacy(map, shortName, rd) {
         if (!shortName || shortName.length < 3) return null;
         const key = shortName.toUpperCase().trim();
         if (map[key]) return map[key];
@@ -1304,20 +1325,20 @@
         const today = new Date().toISOString().split('T')[0];
         const isFuture = !courseDate || courseDate >= today;
         function get26() {
-            if (isFuture) return { ch: fuzzyMatch(rd.chx26, nom, rd), jk: fuzzyMatch(rd.jk26, jk, rd), cr: fuzzyMatch(rd.cr26, jk, rd) };
+            if (isFuture) return { ch: fuzzyMatch(rd.chx26, nom, rd, 'chevaux'), jk: fuzzyMatch(rd.jk26, jk, rd, 'jockeys'), cr: fuzzyMatch(rd.cr26, jk, rd, 'jockeys') };
             const snap = getSnapshot26(courseDate);
-            if (snap) return { ch: fuzzyMatch(snap.chx, nom, rd), jk: fuzzyMatch(snap.jk, jk, rd), cr: fuzzyMatch(snap.cr, jk, rd) };
+            if (snap) return { ch: fuzzyMatch(snap.chx, nom, rd, 'chevaux'), jk: fuzzyMatch(snap.jk, jk, rd, 'jockeys'), cr: fuzzyMatch(snap.cr, jk, rd, 'jockeys') };
             return { ch: null, jk: null, cr: null }; // pas de snapshot dispo
         }
 
         if (rankingMode === '2025') {
-            ch25 = fuzzyMatch(rd.chx25, nom, rd); j25 = fuzzyMatch(rd.jk25, jk, rd); cr25 = fuzzyMatch(rd.cr25, jk, rd);
+            ch25 = fuzzyMatch(rd.chx25, nom, rd, 'chevaux'); j25 = fuzzyMatch(rd.jk25, jk, rd, 'jockeys'); cr25 = fuzzyMatch(rd.cr25, jk, rd, 'jockeys');
         } else if (rankingMode === '2026') {
             const d26 = get26();
             ch26 = d26.ch; j26 = d26.jk; cr26 = d26.cr;
         } else {
             // Auto ou both : 2025 + 2026 (snapshot)
-            ch25 = fuzzyMatch(rd.chx25, nom, rd); j25 = fuzzyMatch(rd.jk25, jk, rd); cr25 = fuzzyMatch(rd.cr25, jk, rd);
+            ch25 = fuzzyMatch(rd.chx25, nom, rd, 'chevaux'); j25 = fuzzyMatch(rd.jk25, jk, rd, 'jockeys'); cr25 = fuzzyMatch(rd.cr25, jk, rd, 'jockeys');
             const d26 = get26();
             ch26 = d26.ch; j26 = d26.jk; cr26 = d26.cr;
         }
@@ -1362,8 +1383,10 @@
             'Jk Rang': jkRang, 'Jk ScoreMixte': mxF(j25,j26,'ScoreMixte'),
             'Jk GainMoy': Math.max(j25?.GainMoyen||0,j26?.GainMoyen||0)>0?Math.log10(Math.max(j25?.GainMoyen||0,j26?.GainMoyen||0))*15:0,
             'Cravache Rang': bR(cr25,pop.cr25,cr26,pop.cr26),
-            'Forme récente': forme?forme.formeScore:50,
-            'Combo Jk*Ent': combo&&combo.courses>=3?combo.tauxVictoire:10,
+            // « Forme récente » et « Combo Jk*Ent » ne sont plus des leviers de la grille :
+            // chevaux_forme_recente.json et combo_jockey_entraineur.json sont calculés à
+            // la date d'extraction sur TOUTES les courses, y compris celle qu'on évalue.
+            // Une formule qui les utilise voit le résultat qu'elle prétend prédire.
         };
     }
 
@@ -1544,24 +1567,12 @@
                 const courses = categories[cat];
                 if (!courses || courses.length < 3) return;
 
-                // Phase 1 : leviers solo — tri par Top3 (métrique principale = Dutch sur top 3-4)
-                const results = levierNames.map(name => ({ name, ...evalLevier(courses, name) })).sort((a,b) => b.pN3 - a.pN3);
-                const favP = results[0].pF1;
-                const maxP1 = Math.max(...results.map(r => r.pN1), favP);
-
-                // Formule actuelle du site (pour comparaison)
-                const distBucket = cat.includes('sprint') || cat === '1000m' || cat === '1200m' || cat === '1300m' ? 'sprint'
-                    : cat.includes('mile') || cat === '1400m' || cat === '1500m' || cat === '1600m' ? 'mile'
-                    : cat.includes('middle') || cat === '1800m' || cat === '2000m' || cat === '2100m' ? 'middle'
-                    : 'staying';
-                const currentFormula = {
-                    sprint: { leviers: ['Musique','Cote (1/cote)','Valeur FG'], poids: [0.4,0.4,0.2], label: 'Actuelle: Mus×40% + Cote×40% + Val×20%' },
-                    mile: { leviers: ['Valeur FG','Cote (1/cote)','Musique'], poids: [0.5,0.3,0.2], label: 'Actuelle: Val×50% + Cote×30% + Mus×20%' },
-                    middle: { leviers: ['Cote (1/cote)','Valeur FG','TauxV indiv'], poids: [0.5,0.3,0.2], label: 'Actuelle: Cote×50% + Val×30% + TxVind×20%' },
-                    staying: { leviers: ['Cote (1/cote)','Valeur FG','Musique'], poids: [0.4,0.3,0.3], label: 'Actuelle: Cote×40% + Val×30% + Mus×30%' },
-                }[distBucket];
-                const currentR = evalCombo(courses, currentFormula.leviers, currentFormula.poids);
-
+                // La grille — solo, puis 2 à 6 leviers — sur un jeu de courses donné.
+                // Appelée deux fois : sur toutes les courses (ce qui est affiché) et sur
+                // les 70 % les plus anciennes (pour mesurer le champion sur les 30 %
+                // qu'il n'a pas vues — la seule mesure qui dise s'il bat la cote).
+                function grille(cs) {
+                const results = levierNames.map(name => ({ name, ...evalLevier(cs, name) })).sort((a,b) => b.pN3 - a.pN3);
                 // Phase 2 : combinaisons de toutes tailles (2L → 6L)
                 // Pool élargi : top12 solo + noyau forcé (signaux fondamentaux)
                 // garantit que des leviers comme 'Cote ref' (solo médiocre mais signal marché crucial)
@@ -1618,7 +1629,7 @@
                     const ws = weightSets(sz);
                     for (const levs of levSets)
                         for (const w of ws) {
-                            const r = evalCombo(courses, levs, w);
+                            const r = evalCombo(cs, levs, w);
                             comboResults.push({
                                 leviers: levs, weights: w,
                                 label: levs.map((l,i) => `${sh(l)}×${(w[i]*100).toFixed(0)}%`).join(' + '),
@@ -1641,6 +1652,46 @@
                     return (a.n || 1) - (b.n || 1);
                 });
                 const champion = allFormulas[0];
+                return { results, comboResults, allFormulas, champion, sh };
+                }
+
+                const G = grille(courses);
+                const { results, comboResults, allFormulas, champion, sh } = G;
+                const favP = results[0].pF1;
+                const maxP1 = Math.max(...results.map(r => r.pN1), favP);
+
+                // Formule actuelle du site (pour comparaison)
+                const distBucket = cat.includes('sprint') || cat === '1000m' || cat === '1200m' || cat === '1300m' ? 'sprint'
+                    : cat.includes('mile') || cat === '1400m' || cat === '1500m' || cat === '1600m' ? 'mile'
+                    : cat.includes('middle') || cat === '1800m' || cat === '2000m' || cat === '2100m' ? 'middle'
+                    : 'staying';
+                const currentFormula = {
+                    sprint: { leviers: ['Musique','Cote (1/cote)','Valeur FG'], poids: [0.4,0.4,0.2], label: 'Actuelle: Mus×40% + Cote×40% + Val×20%' },
+                    mile: { leviers: ['Valeur FG','Cote (1/cote)','Musique'], poids: [0.5,0.3,0.2], label: 'Actuelle: Val×50% + Cote×30% + Mus×20%' },
+                    middle: { leviers: ['Cote (1/cote)','Valeur FG','TauxV indiv'], poids: [0.5,0.3,0.2], label: 'Actuelle: Cote×50% + Val×30% + TxVind×20%' },
+                    staying: { leviers: ['Cote (1/cote)','Valeur FG','Musique'], poids: [0.4,0.3,0.3], label: 'Actuelle: Cote×40% + Val×30% + Mus×30%' },
+                }[distBucket];
+                const currentR = evalCombo(courses, currentFormula.leviers, currentFormula.poids);
+
+                // HORS ÉCHANTILLON : champion choisi sur les 70 % de courses les plus
+                // anciennes, mesuré sur les 30 % les plus récentes, contre la cote seule
+                // sur ces mêmes courses. Mesuré en walk-forward mensuel sur avril →
+                // septembre 2026 (bench/grille_walkforward.mjs) : le champion ne bat
+                // jamais la cote (-1,5 pt de Top3 sur 755 courses FR, -0,7 sur 409 premium).
+                let horsEch = null;
+                {
+                    const tri = [...courses].sort((x, y) => String(x.fileDate || '').localeCompare(String(y.fileDate || '')));
+                    const nTrain = Math.floor(tri.length * 0.7);
+                    const train = tri.slice(0, nTrain), test = tri.slice(nTrain);
+                    if (train.length >= 60 && test.length >= 20) {
+                        const ct = grille(train).champion;
+                        const levs = ct.kind === 'combo' ? ct.leviers : [ct.label];
+                        const w = ct.kind === 'combo' ? ct.weights : [1];
+                        const r = evalCombo(test, levs, w), rc = evalCombo(test, ['Cote (1/cote)'], [1]);
+                        horsEch = { label: levs.map((l, i) => `${sh(l)}×${(w[i]*100).toFixed(0)}%`).join(' + '), top1: r.pN1, top2: r.pN2, top3: r.pN3,
+                                    cote_top1: rc.pN1, cote_top2: rc.pN2, cote_top3: rc.pN3, courses: test.length, train: train.length };
+                    }
+                }
                 // Métrique principale = Top3 (le user joue en Dutch sur top 3-4)
                 const favP3 = results[0]?.pF3 || 0;
                 const champDiff = champion.pN3 - favP3;
@@ -1676,7 +1727,16 @@
                             <div><span style="opacity:0.6">avg Cote</span><br><strong>${champion.avgCote > 0 ? champion.avgCote.toFixed(1) : '-'}</strong></div>
                         </div>
                     </div>
+                    ${horsEch ? `<div style="margin-top:10px;padding-top:8px;border-top:1px dashed rgba(255,255,255,0.15);font-size:0.8rem;line-height:1.5">
+                        <strong style="color:${horsEch.top3 > horsEch.cote_top3 ? '#40e05a' : '#e05a40'}">Hors échantillon</strong>
+                        <span style="opacity:0.7">— les chiffres ci-dessus sont mesurés sur les courses qui ont servi à choisir la formule. Ici : champion choisi sur les ${horsEch.train} plus anciennes, mesuré sur les ${horsEch.courses} plus récentes.</span><br>
+                        <span style="opacity:0.85">${horsEch.label}</span> → Top1 <strong>${horsEch.top1.toFixed(0)}%</strong> · Top2 <strong>${horsEch.top2.toFixed(0)}%</strong> · Top3 <strong>${horsEch.top3.toFixed(0)}%</strong>
+                        &nbsp; contre cote seule : ${horsEch.cote_top1.toFixed(0)}% · ${horsEch.cote_top2.toFixed(0)}% · ${horsEch.cote_top3.toFixed(0)}%
+                        &nbsp; <strong style="color:${horsEch.top3 > horsEch.cote_top3 ? '#40e05a' : '#e05a40'}">${horsEch.top3 > horsEch.cote_top3 ? '+' : ''}${(horsEch.top3 - horsEch.cote_top3).toFixed(1)} pt de Top3</strong>
+                        <span style="opacity:0.5">(± ${(100 * Math.sqrt(0.23 / horsEch.courses)).toFixed(1)})</span>
+                    </div>` : ''}
                 </div>`;
+                championsByBucket[cat]._horsEch = horsEch;
 
                 // Formule actuelle vs 3 favoris cote (métrique principale = Top3)
                 const curDiff = currentR.pN3 - favP3;
@@ -1752,8 +1812,8 @@
                         if (!key) return '<span style="opacity:0.3">—</span>';
                         const map25 = kind === 'jk' ? rd.jk25 : rd.chx25;
                         const map26 = snap26 ? (kind === 'jk' ? snap26.jk : snap26.chx) : (kind === 'jk' ? rd.jk26 : rd.chx26);
-                        const it25 = fuzzyMatch(map25, key, rd);
-                        const it26 = fuzzyMatch(map26, key, rd);
+                        const it25 = fuzzyMatch(map25, key, rd, kind === 'jk' ? 'jockeys' : 'chevaux');
+                        const it26 = fuzzyMatch(map26, key, rd, kind === 'jk' ? 'jockeys' : 'chevaux');
                         const r25 = it25?.Rang ? parseInt(it25.Rang) : null;
                         const r26 = it26?.Rang ? parseInt(it26.Rang) : null;
                         if (r26 && r25) return `<strong>${r26}</strong><span style="opacity:0.4">·${r25}</span>`;
@@ -1922,18 +1982,24 @@
             // Le seuil supprime les accidents ; il ne crée pas d'avantage.
             const MIN_COURSES_BUCKET = 100;
             const bestFormulas = {};
-            const bucketsEcartes = [];
+            const bucketsEcartes = [], bucketsCoteSeule = [];
             Object.entries(championsByBucket).forEach(([bucket, champ]) => {
                 if (!champ) return;
                 if (champ.t < MIN_COURSES_BUCKET) { bucketsEcartes.push(`${bucket} (${champ.t})`); return; }
                 // champ.kind === 'solo' : champ.label est le nom du levier, pas de leviers/weights
                 // champ.kind === 'combo' : champ a leviers + weights
-                const leviers = champ.kind === 'combo' ? champ.leviers : [champ.label];
-                const poids = champ.kind === 'combo' ? champ.weights : [1];
+                let leviers = champ.kind === 'combo' ? champ.leviers : [champ.label];
+                let poids = champ.kind === 'combo' ? champ.weights : [1];
+                const he = champ._horsEch;
+                // Une formule n'est publiée que si elle bat la cote seule sur les courses
+                // qu'elle n'a pas vues. Sinon : la cote seule, qui ne coûte rien.
+                const batLaCote = he && he.top3 > he.cote_top3;
+                if (he && !batLaCote) { leviers = ['Cote (1/cote)']; poids = [1]; bucketsCoteSeule.push(`${bucket} (${he.top3.toFixed(0)} vs ${he.cote_top3.toFixed(0)})`); }
                 bestFormulas[bucket] = {
                     leviers, poids,
                     top1: champ.pN1, top2: champ.pN2, top3: champ.pN3,
                     courses: champ.t,
+                    ...(he ? { hors_echantillon: { formule: he.label, top3: +he.top3.toFixed(1), cote_top3: +he.cote_top3.toFixed(1), courses: he.courses, publiee: batLaCote ? 'champion' : 'cote seule' } } : {}),
                 };
             });
             bestFormulas._min_courses = MIN_COURSES_BUCKET;
@@ -1951,6 +2017,10 @@
                     la championne décrit son échantillon et non une régularité. Hors échantillon, celle du 1800 m
                     (19 courses) perdait 19 points contre la simple cote. Ces distances retomberont sur le bucket
                     large, puis sur « tous ».</p>` : ''}
+                ${bucketsCoteSeule.length ? `<p style="opacity:0.75;font-size:0.82rem;margin-bottom:0.8rem;border-left:2px solid #e05a40;padding-left:.7rem">
+                    <strong>${bucketsCoteSeule.length} bucket(s) publié(s) en « cote seule »</strong> : leur champion ne bat pas la cote sur les
+                    30 % de courses qu'il n'a pas vues (Top3 champion vs cote) : ${bucketsCoteSeule.join(' · ')}.
+                    Une formule choisie parmi 14 300 décrit toujours son échantillon ; seule la mesure hors échantillon compte.</p>` : ''}
                 <pre style="background:rgba(0,0,0,0.3);padding:1rem;border-radius:8px;font-size:0.8rem;overflow-x:auto">${jsonStr}</pre>
                 <div style="display:flex;gap:8px;margin-top:0.5rem;flex-wrap:wrap">
                     <button class="btn-filter" onclick="copyCmd()" id="btn-copy-cmd">
