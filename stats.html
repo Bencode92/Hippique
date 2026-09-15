@@ -1700,8 +1700,11 @@
                         const levs = ct.kind === 'combo' ? ct.leviers : [ct.label];
                         const w = ct.kind === 'combo' ? ct.weights : [1];
                         const r = evalCombo(test, levs, w), rc = evalCombo(test, ['Cote (1/cote)'], [1]);
-                        horsEch = { label: levs.map((l, i) => `${sh(l)}×${(w[i]*100).toFixed(0)}%`).join(' + '), top1: r.pN1, top2: r.pN2, top3: r.pN3,
-                                    cote_top1: rc.pN1, cote_top2: rc.pN2, cote_top3: rc.pN3, courses: test.length, train: train.length };
+                        // erreur-type de l'écart de Top3 entre deux classements corrélés (borne prudente)
+                        const et = 100 * Math.sqrt(0.23 / test.length);
+                        horsEch = { label: levs.map((l, i) => `${sh(l)}×${(w[i]*100).toFixed(0)}%`).join(' + '), leviers: levs, poids: w, top1: r.pN1, top2: r.pN2, top3: r.pN3,
+                                    cote_top1: rc.pN1, cote_top2: rc.pN2, cote_top3: rc.pN3, courses: test.length, train: train.length,
+                                    ecart: r.pN3 - rc.pN3, et, demontre: (r.pN3 - rc.pN3) > 1.96 * et };
                     }
                 }
                 // Métrique principale = Top3 (le user joue en Dutch sur top 3-4)
@@ -1744,8 +1747,9 @@
                         <span style="opacity:0.7">— les chiffres ci-dessus sont mesurés sur les courses qui ont servi à choisir la formule. Ici : champion choisi sur les ${horsEch.train} plus anciennes, mesuré sur les ${horsEch.courses} plus récentes.</span><br>
                         <span style="opacity:0.85">${horsEch.label}</span> → Top1 <strong>${horsEch.top1.toFixed(0)}%</strong> · Top2 <strong>${horsEch.top2.toFixed(0)}%</strong> · Top3 <strong>${horsEch.top3.toFixed(0)}%</strong>
                         &nbsp; contre cote seule : ${horsEch.cote_top1.toFixed(0)}% · ${horsEch.cote_top2.toFixed(0)}% · ${horsEch.cote_top3.toFixed(0)}%
-                        &nbsp; <strong style="color:${horsEch.top3 > horsEch.cote_top3 ? '#40e05a' : '#e05a40'}">${horsEch.top3 > horsEch.cote_top3 ? '+' : ''}${(horsEch.top3 - horsEch.cote_top3).toFixed(1)} pt de Top3</strong>
-                        <span style="opacity:0.5">(± ${(100 * Math.sqrt(0.23 / horsEch.courses)).toFixed(1)})</span>
+                        &nbsp; <strong style="color:${horsEch.demontre ? '#40e05a' : horsEch.ecart > 0 ? '#e0b040' : '#e05a40'}">${horsEch.ecart > 0 ? '+' : ''}${horsEch.ecart.toFixed(1)} pt de Top3</strong>
+                        <span style="opacity:0.5">(± ${horsEch.et.toFixed(1)})</span>
+                        ${horsEch.demontre ? '<span style="color:#40e05a"> — démontré (plus de 2 erreurs-types)</span>' : horsEch.ecart > 0 ? `<span style="opacity:.75"> — dans le bruit : sur ${horsEch.courses} courses, ${horsEch.ecart.toFixed(1)} pt c'est ${Math.round(horsEch.ecart * horsEch.courses / 100)} course(s). Il faudrait +${(1.96 * horsEch.et).toFixed(0)} pt pour conclure.</span>` : ''}
                     </div>` : ''}
                 </div>`;
                 championsByBucket[cat]._horsEch = horsEch;
@@ -2004,14 +2008,18 @@
                 let poids = champ.kind === 'combo' ? champ.weights : [1];
                 const he = champ._horsEch;
                 // Une formule n'est publiée que si elle bat la cote seule sur les courses
-                // qu'elle n'a pas vues. Sinon : la cote seule, qui ne coûte rien.
-                const batLaCote = he && he.top3 > he.cote_top3;
-                if (he && !batLaCote) { leviers = ['Cote (1/cote)']; poids = [1]; bucketsCoteSeule.push(`${bucket} (${he.top3.toFixed(0)} vs ${he.cote_top3.toFixed(0)})`); }
+                // qu'elle n'a pas vues, d'au moins deux erreurs-types — pas d'une course sur
+                // 37. Et c'est alors la formule VALIDÉE (choisie sur les 70 %) qui est publiée,
+                // pas le champion de tout l'échantillon, qui n'a été validé par rien.
+                // Sinon : la cote seule, qui ne coûte rien.
+                const batLaCote = !!(he && he.demontre);
+                if (he && batLaCote) { leviers = he.leviers; poids = he.poids; }
+                if (he && !batLaCote) { leviers = ['Cote (1/cote)']; poids = [1]; bucketsCoteSeule.push(`${bucket} (${he.top3.toFixed(0)} vs ${he.cote_top3.toFixed(0)}, ± ${he.et.toFixed(0)})`); }
                 bestFormulas[bucket] = {
                     leviers, poids,
                     top1: champ.pN1, top2: champ.pN2, top3: champ.pN3,
                     courses: champ.t,
-                    ...(he ? { hors_echantillon: { formule: he.label, top3: +he.top3.toFixed(1), cote_top3: +he.cote_top3.toFixed(1), courses: he.courses, publiee: batLaCote ? 'champion' : 'cote seule' } } : {}),
+                    ...(he ? { hors_echantillon: { formule: he.label, top3: +he.top3.toFixed(1), cote_top3: +he.cote_top3.toFixed(1), ecart: +he.ecart.toFixed(1), erreur_type: +he.et.toFixed(1), courses: he.courses, publiee: batLaCote ? 'formule validée' : 'cote seule' } } : {}),
                 };
             });
             bestFormulas._min_courses = MIN_COURSES_BUCKET;
@@ -2030,9 +2038,10 @@
                     (19 courses) perdait 19 points contre la simple cote. Ces distances retomberont sur le bucket
                     large, puis sur « tous ».</p>` : ''}
                 ${bucketsCoteSeule.length ? `<p style="opacity:0.75;font-size:0.82rem;margin-bottom:0.8rem;border-left:2px solid #e05a40;padding-left:.7rem">
-                    <strong>${bucketsCoteSeule.length} bucket(s) publié(s) en « cote seule »</strong> : leur champion ne bat pas la cote sur les
-                    30 % de courses qu'il n'a pas vues (Top3 champion vs cote) : ${bucketsCoteSeule.join(' · ')}.
-                    Une formule choisie parmi 14 300 décrit toujours son échantillon ; seule la mesure hors échantillon compte.</p>` : ''}
+                    <strong>${bucketsCoteSeule.length} bucket(s) publié(s) en « cote seule »</strong> : leur champion ne bat pas la cote seule
+                    d'au moins deux erreurs-types sur les 30 % de courses qu'il n'a pas vues (Top3 champion vs cote, ± e-t) : ${bucketsCoteSeule.join(' · ')}.
+                    Une formule choisie parmi 14 300 décrit toujours son échantillon ; avec dix buckets testés, en trouver un ou deux
+                    légèrement au-dessus de la cote par hasard est la norme. Seul un écart au-delà du bruit compte.</p>` : ''}
                 <pre style="background:rgba(0,0,0,0.3);padding:1rem;border-radius:8px;font-size:0.8rem;overflow-x:auto">${jsonStr}</pre>
                 <div style="display:flex;gap:8px;margin-top:0.5rem;flex-wrap:wrap">
                     <button class="btn-filter" onclick="copyCmd()" id="btn-copy-cmd">
