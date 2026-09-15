@@ -3135,6 +3135,7 @@
                                     <th>Cheval</th>
                                     <th>Jockey</th>
                                     <th>Entraîneur</th>
+                                    <th style="width:70px" title="Rattachement au classement France Galop : cheval, jockey, entraîneur retrouvés (sur 3). Survole pour voir à qui chacun est rattaché et son rang. Un acteur non retrouvé est noté avec une valeur par défaut.">Rattach.</th>
                                     <th style="width:90px" title="Cote de référence du matin → cote actuelle. La flèche est la dérive : une cote qui baisse est de l'argent qui rentre.">Cote</th>
                                     <th style="width:70px" title="Rang par la cote : le favori est 1. C'est la référence — son n°1 gagne une course sur trois.">Marché</th>
                                     <th style="width:78px" title="Rang par la formule Optimale du bucket distance (data/best_formulas.json, publiée depuis stats.html). Une formule n'est publiée que si elle bat la cote seule sur les 30 % de courses qu'elle n'a pas vues ; sinon le bucket est en « cote seule » et ce rang est celui du marché. Voir stats.html → Analyser → Classements.">Optimale</th>
@@ -3144,7 +3145,7 @@
                             </thead>
                             <tbody id="participants-${detailId}">
                                 <tr>
-                                    <td colspan="9" class="loading-indicator">
+                                    <td colspan="10" class="loading-indicator">
                                         <i class="fas fa-spinner fa-spin"></i> Calcul des scores prédictifs...
                                     </td>
                                 </tr>
@@ -3351,7 +3352,7 @@
                     if (scoresPredictifs.length === 0) {
                         participantsContainer.innerHTML = `
                             <tr>
-                                <td colspan="9" style="text-align: center;">
+                                <td colspan="10" style="text-align: center;">
                                     <i class="fas fa-exclamation-circle" style="color: var(--gold);"></i>
                                     Impossible de calculer les scores prédictifs pour cette course.
                                 </td>
@@ -3466,6 +3467,23 @@
                                 <td>${participant.cheval || 'N/A'}${fch ? ` <span title="Forme cheval" style="color:${fchColor};font-size:0.8em">${fch}</span>` : ''}</td>
                                 <td>${participant.jockey || 'N/A'}${fcj ? ` <span title="Forme jockey" style="color:${fcjColor};font-size:0.8em">${fcj}</span>` : ''}</td>
                                 <td>${participant.entraineur || 'N/A'}</td>
+                                ${(() => {
+                                    // Rattachement par acteur : nom retrouvé au classement + rang, via le même module que le score
+                                    const RL = window.rankingLoader; const lignes = []; let ok = 0;
+                                    for (const [cat, champ, lib] of [['chevaux', 'cheval', 'Cheval'], ['jockeys', 'jockey', 'Jockey'], ['entraineurs', 'entraineur', 'Entraîneur']]) {
+                                        const nom = participant[champ] || (champ === 'entraineur' ? participant['entraîneur'] : '');
+                                        let item = null, via = '';
+                                        try {
+                                            if (nom && RL?.data?.[cat]?.length) item = RL.trouverItemDansClassement(RL.data[cat], nom, cat);
+                                            if (!item && nom && RL?.dataHistorique?.[cat + '_2025']?.length) { item = RL.trouverItemDansClassement(RL.dataHistorique[cat + '_2025'], nom, cat); if (item) via = ' (2025)'; }
+                                        } catch (e) {}
+                                        if (item) { ok++; lignes.push(`${lib} → ${item.Nom || item.Cheval || ''}${item.Rang ? ' #' + item.Rang : ''}${via}`); }
+                                        else lignes.push(`${lib} : non retrouvé${cat === 'chevaux' && !(parseInt(participant.nb_courses) > 0) ? ' (débutant)' : ''}`);
+                                    }
+                                    const pct = Math.round(ok / 3 * 100);
+                                    const col = ok === 3 ? '#40e05a' : ok === 2 ? '#e0b040' : '#e05a40';
+                                    return `<td style="text-align:center;font-size:0.85em;color:${col};cursor:help" title="${lignes.join('\n').replace(/"/g, '&quot;')}">${pct} %<br><span style="opacity:.6;font-size:.8em">${ok}/3</span></td>`;
+                                })()}
                                 <td style="text-align:center;font-weight:600;${coteValue !== '-' ? 'color:#40E0D0' : ''}">${coteDisplay}</td>
                                 <td class="prediction-cell" style="display:none">
                                     <div style="display:flex;align-items:center;gap:6px">
@@ -3548,7 +3566,7 @@
                         const cj = coteJusteMap ? coteJusteMap.get(g) : null;
                         const nomCourt = String(g.cheval || '').replace(/\s+[HFM]\.[A-Z]+\.?\s*\d+\s*a\.?\s*$/i, '');
                         const verdictCJ = cj ? (cj.play ? `<span style="color:#40e05a">PLAY (${cj.esperance >= 0 ? '+' : ''}${(100 * cj.esperance).toFixed(0)} %)</span>` : `passe (${(100 * cj.esperance).toFixed(0)} %)`) : '—';
-                        participantsHTML += `<tr><td colspan="9" style="text-align:center;padding:8px;font-size:0.9em;border-top:2px solid rgba(255,255,255,0.1)">
+                        participantsHTML += `<tr><td colspan="10" style="text-align:center;padding:8px;font-size:0.9em;border-top:2px solid rgba(255,255,255,0.1)">
                             Gagnant : <strong style="color:#FFD700">n°${g['n°'] || g.numero || ''} ${nomCourt}</strong> à ${parseFloat(g.cote) ? parseFloat(g.cote).toFixed(1) : '-'}
                             ${estFav ? '<span style="color:#40E0D0">· le favori</span>' : '<span style="opacity:.7">· pas le favori</span>'}
                             <span style="opacity:.8">· cote juste disait ${verdictCJ}</span></td></tr>`;
@@ -3605,7 +3623,7 @@
                     console.error("Erreur lors du calcul des scores prédictifs:", error);
                     participantsContainer.innerHTML = `
                         <tr>
-                            <td colspan="9" style="text-align: center; color: var(--red);">
+                            <td colspan="10" style="text-align: center; color: var(--red);">
                                 <i class="fas fa-exclamation-triangle"></i> 
                                 Erreur lors du calcul des scores prédictifs. Veuillez réessayer plus tard.
                             </td>
