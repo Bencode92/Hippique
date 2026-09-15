@@ -1,0 +1,152 @@
+{
+  "course": "PRIX DE SAINT-CYR-LES-VIGNES",
+  "numero": 6,
+  "reunion": 3,
+  "heure_depart": 1789476420000,
+  "distance": 1600,
+  "scraped_at": "2026-09-15T14:42:52.222669",
+  "minutes_avant_depart": 4,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "ARWOOD",
+      "cote_live": 15.0,
+      "cote_reference": 12.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1789476164000
+    },
+    {
+      "numPmu": 2,
+      "nom": "IN SPACE",
+      "cote_live": 5.0,
+      "cote_reference": 7.7,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1789476164000
+    },
+    {
+      "numPmu": 3,
+      "nom": "HELLO MAJOR TOM",
+      "cote_live": 17.0,
+      "cote_reference": 9.1,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789476164000
+    },
+    {
+      "numPmu": 4,
+      "nom": "ROCKET LEAGUE",
+      "cote_live": 42.0,
+      "cote_reference": 27.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789476164000
+    },
+    {
+      "numPmu": 5,
+      "nom": "OZARK JAMES",
+      "cote_live": 26.0,
+      "cote_reference": 26.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1789476164000
+    },
+    {
+      "numPmu": 6,
+      "nom": "TAKAVOR",
+      "cote_live": 8.8,
+      "cote_reference": 6.8,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1789476164000
+    },
+    {
+      "numPmu": 7,
+      "nom": "ALL WOOTTON",
+      "cote_live": 2.6,
+      "cote_reference": 2.4,
+      "tendance": "+",
+      "favoris": true,
+      "timestamp_cote": 1789476164000
+    },
+    {
+      "numPmu": 8,
+      "nom": "VICTORSTRUNG",
+      "cote_live": 8.8,
+      "cote_reference": 7.9,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789476164000
+    },
+    {
+      "numPmu": 9,
+      "nom": "ABABEL",
+      "cote_live": 13.0,
+      "cote_reference": 24.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1789476164000
+    },
+    {
+      "numPmu": 10,
+      "nom": "ROMANUS PONTIFEX",
+      "cote_live": 14.0,
+      "cote_reference": 39.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1789476164000
+    }
+  ],
+  "hippodrome": "LYON-PARILLY",
+  "releves": [
+    {
+      "scraped_at": "2026-09-15T14:41:32.050433",
+      "minutes_avant_depart": 5.471453183333334,
+      "cotes": {
+        "1": 15.0,
+        "2": 5.4,
+        "3": 17.0,
+        "4": 39.0,
+        "5": 25.0,
+        "6": 8.2,
+        "7": 2.5,
+        "8": 8.6,
+        "9": 16.0,
+        "10": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T14:42:11.852464",
+      "minutes_avant_depart": 4.804784133333333,
+      "cotes": {
+        "1": 15.0,
+        "2": 5.5,
+        "3": 16.0,
+        "4": 39.0,
+        "5": 25.0,
+        "6": 8.6,
+        "7": 2.5,
+        "8": 9.2,
+        "9": 13.0,
+        "10": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T14:42:52.222669",
+      "minutes_avant_depart": 4.133409783333333,
+      "cotes": {
+        "1": 15.0,
+        "2": 5.0,
+        "3": 17.0,
+        "4": 42.0,
+        "5": 26.0,
+        "6": 8.8,
+        "7": 2.6,
+        "8": 8.8,
+        "9": 13.0,
+        "10": 14.0
+      }
+    }
+  ]
+}
