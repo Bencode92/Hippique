@@ -59,3 +59,12 @@ for cle, lib in [('type', 'catégorie'), ('champ', 'taille du champ'), ('ouv', '
     for k, cs in sorted(groupes.items(), key=lambda kv: -len(kv[1])):
         print(f"   {k:<22s} n={len(cs):3d}" + ''.join(f"{cell([fn(c) for c in cs]):>22s}" for _, fn in PARIS))
     print()
+
+# ── croisement taille du champ × distance ──────────────────────────────
+print("══ taille du champ × distance".ljust(36) + ''.join(f"{p[0]:>22s}" for p in PARIS))
+for champ in ['8-9', '10-13', '14+']:
+    for dist in ['sprint <1400', 'mile 1400-1900', 'intermédiaire 1900-2400', 'tenue 2400+']:
+        cs = [c for c in courses if c['champ'] == champ and c['dist'] == dist]
+        if len(cs) < 15: continue
+        print(f"   {champ:<6s} {dist:<24s} n={len(cs):3d}" + ''.join(f"{cell([fn(c) for c in cs]):>22s}" for _, fn in PARIS))
+    print()
