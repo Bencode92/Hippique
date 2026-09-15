@@ -4,8 +4,8 @@
   "reunion": 1,
   "heure_depart": 1789477680000,
   "distance": 2000,
-  "scraped_at": "2026-09-15T15:02:52.464484",
-  "minutes_avant_depart": 5,
+  "scraped_at": "2026-09-15T15:06:12.269123",
+  "minutes_avant_depart": 2,
   "participants": [
     {
       "numPmu": 1,
@@ -14,7 +14,7 @@
       "cote_reference": 5.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789477349000
+      "timestamp_cote": 1789477569000
     },
     {
       "numPmu": 3,
@@ -23,70 +23,70 @@
       "cote_reference": 5.6,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1789477349000
+      "timestamp_cote": 1789477569000
     },
     {
       "numPmu": 4,
       "nom": "VALIKA",
-      "cote_live": 7.7,
+      "cote_live": 6.5,
       "cote_reference": 8.6,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789477349000
+      "timestamp_cote": 1789477569000
     },
     {
       "numPmu": 5,
       "nom": "EUNICE",
-      "cote_live": 3.2,
+      "cote_live": 3.4,
       "cote_reference": 2.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789477349000
+      "timestamp_cote": 1789477569000
     },
     {
       "numPmu": 6,
       "nom": "RITZY ROXY",
-      "cote_live": 15.0,
+      "cote_live": 17.0,
       "cote_reference": 20.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789477349000
+      "timestamp_cote": 1789477569000
     },
     {
       "numPmu": 7,
       "nom": "NICOSIE ESSEF",
-      "cote_live": 53.0,
+      "cote_live": 66.0,
       "cote_reference": 17.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789477349000
+      "timestamp_cote": 1789477569000
     },
     {
       "numPmu": 8,
       "nom": "FAROUKH",
-      "cote_live": 35.0,
+      "cote_live": 38.0,
       "cote_reference": 31.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789477349000
+      "timestamp_cote": 1789477569000
     },
     {
       "numPmu": 9,
       "nom": "PACIFIC SKY",
-      "cote_live": 56.0,
+      "cote_live": 57.0,
       "cote_reference": 59.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789477349000
+      "timestamp_cote": 1789477569000
     },
     {
       "numPmu": 10,
       "nom": "LALLYBROCH",
-      "cote_live": 20.0,
+      "cote_live": 21.0,
       "cote_reference": 13.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789477349000
+      "timestamp_cote": 1789477569000
     }
   ],
   "hippodrome": "COMPIEGNE",
@@ -119,6 +119,81 @@
         "8": 35.0,
         "9": 56.0,
         "10": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T15:03:31.967578",
+      "minutes_avant_depart": 4.4713817166666665,
+      "cotes": {
+        "1": 9.2,
+        "3": 2.3,
+        "4": 7.9,
+        "5": 3.3,
+        "6": 16.0,
+        "7": 56.0,
+        "8": 36.0,
+        "9": 56.0,
+        "10": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T15:04:11.942754",
+      "minutes_avant_depart": 3.8047123166666665,
+      "cotes": {
+        "1": 8.9,
+        "3": 2.3,
+        "4": 7.6,
+        "5": 3.4,
+        "6": 17.0,
+        "7": 59.0,
+        "8": 36.0,
+        "9": 54.0,
+        "10": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T15:04:52.071542",
+      "minutes_avant_depart": 3.13804245,
+      "cotes": {
+        "1": 8.9,
+        "3": 2.4,
+        "4": 7.4,
+        "5": 3.3,
+        "6": 16.0,
+        "7": 62.0,
+        "8": 36.0,
+        "9": 54.0,
+        "10": 19.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T15:05:31.857469",
+      "minutes_avant_depart": 2.4713741666666666,
+      "cotes": {
+        "1": 9.0,
+        "3": 2.4,
+        "4": 6.8,
+        "5": 3.3,
+        "6": 16.0,
+        "7": 66.0,
+        "8": 38.0,
+        "9": 57.0,
+        "10": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T15:06:12.269123",
+      "minutes_avant_depart": 1.7993789,
+      "cotes": {
+        "1": 9.0,
+        "3": 2.4,
+        "4": 6.5,
+        "5": 3.4,
+        "6": 17.0,
+        "7": 66.0,
+        "8": 38.0,
+        "9": 57.0,
+        "10": 21.0
       }
     }
   ]
