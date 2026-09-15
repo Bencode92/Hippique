@@ -34,6 +34,26 @@ for (const f of fs.readdirSync('data/rapports').filter(x=>x.endsWith('.jsonl')))
     const sg = d.paris && d.paris.E_SIMPLE_GAGNANT;
     if (sg && sg.length) rap.set(`${d.date}|${norm(d.hip)}|${d.r}|${d.c}`, sg);
   }
+// Relevés live (data/cotes_live/<date>_<hippo>_R<r>C<c>_live.json) : la cote 2 à
+// 5 minutes avant le départ. Dans un quart des courses le favori à T-2 n'est
+// pas celui de la clôture ; le test prospectif doit enregistrer le cheval
+// EFFECTIVEMENT misé et sa cote au moment de la mise, sinon il mesure un pari
+// qui n'a pas été fait (revue du 15/09/2026). Le dividende, lui, est celui
+// du cheval misé à la clôture — c'est ce que paie le guichet.
+const live = new Map();
+try {
+  for (const f of fs.readdirSync('data/cotes_live').filter(x=>x.endsWith('_live.json'))) {
+    const m = f.match(/^(\d{4}-\d{2}-\d{2})_(.+)_R(\d+)C(\d+)_live\.json$/); if (!m) continue;
+    try {
+      const d = JSON.parse(fs.readFileSync('data/cotes_live/'+f,'utf8'));
+      const ps = (d.participants||[]).filter(p=>p.cote_live>1);
+      if (ps.length < 2) continue;
+      const fav = ps.reduce((a,b)=>a.cote_live<=b.cote_live?a:b);
+      live.set(`${m[1]}|${norm(m[2])}|${+m[3]}|${+m[4]}`, { n: fav.numPmu, nom: fav.nom, cote: fav.cote_live, cr: fav.cote_reference, minutes: d.minutes_avant_depart, heure: d.scraped_at });
+    } catch {}
+  }
+} catch {}
+
 const L = [];
 for (const f of fs.readdirSync('data/histo').filter(x=>x.endsWith('.jsonl')))
   for (const l of fs.readFileSync('data/histo/'+f,'utf8').split('\n')) {
@@ -56,10 +76,17 @@ for (const f of fs.readdirSync('data/histo').filter(x=>x.endsWith('.jsonl')))
     // n'ajoute que de la variance. Elle reste OBSERVEE ci-dessous : si elle
     // est reelle, elle apparaitra ; sinon elle n'aura rien coute.
     const sg = rap.get(`${d.date}|${h}|${d.r}|${d.c}`); if (!sg) continue;
-    const m = sg.find(x=>String(x.comb) === String(fav.n));
-    // derive du favori : sa cote a-t-elle baisse depuis le matin ?
-    const der = (fav.cr > 1) ? (fav.cr - fav.c) / fav.cr : null;
-    L.push({ date: d.date, cote: fav.c, der, gagne: !!(m && m.div > 0) });
+    // le favori misé : celui du relevé T-2 s'il existe, sinon celui de la clôture (signalé)
+    const lv = live.get(`${d.date}|${h}|${d.r}|${d.c}`);
+    const mise = lv ? { n: lv.n, nom: lv.nom, cote: lv.cote, cr: lv.cr, source: lv.minutes == null ? 'T-? min' : `T${lv.minutes < 0 ? '+' : '-'}${Math.abs(lv.minutes)} min` }
+                    : { n: fav.n, nom: fav.nom, cote: fav.c, cr: fav.cr, source: 'clôture' };
+    const m = sg.find(x=>String(x.comb) === String(mise.n));
+    const finalDuMise = ps.find(p=>String(p.n) === String(mise.n));
+    // derive du favori misé : sa cote a-t-elle baisse depuis le matin ?
+    const der = (mise.cr > 1) ? (mise.cr - mise.cote) / mise.cr : null;
+    L.push({ date: d.date, hip: d.hip, r: d.r, c: d.c, n: mise.n, nom: mise.nom, cote: mise.cote, source: mise.source,
+             cote_finale: finalDuMise ? finalDuMise.c : null, favori_final_identique: String(fav.n) === String(mise.n),
+             der, gagne: !!(m && m.div > 0), dividende: m ? m.div : 0 });
   }
 L.sort((a,b)=>a.date.localeCompare(b.date));
 const DEBUT = '2026-10-01';
@@ -91,6 +118,7 @@ if (prospectif) {
     console.log(`  L'effet visé étant de +7 %, il faudra de l'ordre de 1 000 paris pour`);
     console.log(`  conclure : c'est le prix d'une règle plus large mais moins tranchée.`);
     ecrire(0, 0, null);
+    journal();
     process.exit(0);
   }
 } else {
@@ -156,8 +184,25 @@ function ecrire(nParis, stat, verd) {
   console.log('\n  état écrit dans data/sprt_etat.json');
  } catch (e) { console.error('  (état non écrit :', e.message, ')'); }
 }
-// le mode historique ne doit pas ecraser l'etat prospectif : il n'est pas un test
-if (prospectif) ecrire(jeu.length, S, verdict);
+// journal des paris prospectifs : un enregistrement par pari réel, avec le cheval
+// misé, sa cote au moment de la mise, la source du relevé, le dividende et la
+// statistique cumulée. C'est ce journal que le verdict engage.
+function journal() {
+  let Sj = 0;
+  const lignes = jeu.map(x => {
+    const p0 = pSous(E0, x.cote), p1 = pSous(E1, x.cote);
+    Sj += x.gagne ? Math.log(p1 / p0) : Math.log((1 - p1) / (1 - p0));
+    return { date: x.date, hippodrome: x.hip, R: x.r, C: x.c, cheval: x.nom, numero: x.n, cote_misee: x.cote, releve: x.source,
+             cote_finale: x.cote_finale, favori_final_identique: x.favori_final_identique, derive: x.der === null ? null : Math.round(x.der * 1000) / 1000,
+             gagne: x.gagne, dividende: x.dividende, gain_20e: Math.round((x.gagne ? x.dividende * 20 - 20 : -20) * 100) / 100, S: Math.round(Sj * 1000) / 1000 };
+  });
+  fs.writeFileSync('data/sprt_journal.json', JSON.stringify({
+    _doc: "Journal des paris réels du test séquentiel. cote_misee = cote du favori au relevé T-2 (releve = 'T-n min') ou, à défaut, à la clôture (releve = 'clôture', à éviter : le test doit mesurer le pari fait). Écrit par bench/sprt_regle.mjs.",
+    debut: DEBUT, paris: lignes.length, sans_releve_live: lignes.filter(l => l.releve === 'clôture').length, favori_change_avant_cloture: lignes.filter(l => l.favori_final_identique === false).length,
+    lignes }, null, 2));
+  console.log(`  journal écrit dans data/sprt_journal.json (${lignes.length} paris, ${lignes.filter(l => l.releve === 'clôture').length} sans relevé live)`);
+}
+if (prospectif) { ecrire(jeu.length, S, verdict); journal(); }
 else console.log('\n  (mode historique : l\'état prospectif n\'est pas modifié)');
 
 console.log('\n  À relancer après chaque série de paris réels. Les bornes ne se déplacent pas.');
