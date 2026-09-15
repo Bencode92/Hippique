@@ -1147,6 +1147,8 @@
             jk26: 'jockeys_ponderated_latest.json',
             cr25: 'cravache_or_2025_ponderated_latest.json',
             cr26: 'cravache_or_ponderated_latest.json',
+            en25: 'entraineurs_2025_ponderated_latest.json',
+            en26: 'entraineurs_ponderated_latest.json',
             forme: 'chevaux_forme_recente.json',
             combo: 'combo_jockey_entraineur.json',
             corresp: 'claude_correspondances.json',
@@ -1169,6 +1171,7 @@
             chx25: buildMap(results.chx25, 'Nom'), chx26: buildMap(results.chx26, 'Nom'),
             jk25: buildMap(results.jk25, 'NomPostal'), jk26: buildMap(results.jk26, 'NomPostal'),
             cr25: buildMap(results.cr25, 'NomPostal'), cr26: buildMap(results.cr26, 'NomPostal'),
+            en25: buildMap(results.en25, 'NomPostal'), en26: buildMap(results.en26, 'NomPostal'),
             forme: results.forme?.resultats || {}, combo: results.combo?.resultats || {},
             correspMap, knownForeign,
         };
@@ -1184,16 +1187,18 @@
                 for (const folder of folders) {
                     const base = `${RAW}rankings/${folder.name}/`;
                     // Essai CSV d'abord (nouveau format), puis JSON (ancien)
-                    const [chxCsv, jkCsv, crCsv] = await Promise.all([
+                    const [chxCsv, jkCsv, crCsv, enCsv] = await Promise.all([
                         fetch(base + 'chevaux.csv').then(r => r.ok ? r.text() : null).catch(() => null),
                         fetch(base + 'jockeys.csv').then(r => r.ok ? r.text() : null).catch(() => null),
                         fetch(base + 'cravache_or.csv').then(r => r.ok ? r.text() : null).catch(() => null),
+                        fetch(base + 'entraineurs.csv').then(r => r.ok ? r.text() : null).catch(() => null),
                     ]);
-                    let chx, jk, cr;
+                    let chx, jk, cr, en;
                     if (chxCsv || jkCsv) {
                         chx = parseSnapshotCSV(chxCsv, 'chevaux');
                         jk = parseSnapshotCSV(jkCsv, 'jockeys');
                         cr = parseSnapshotCSV(crCsv, 'cravache');
+                        en = parseSnapshotCSV(enCsv, 'entraineurs');
                     } else {
                         const [chxData, jkData, crData] = await Promise.all([
                             fetch(base + 'chevaux.json').then(r => r.ok ? r.json() : null).catch(() => null),
@@ -1205,7 +1210,7 @@
                         jk = buildMap(jkData, 'NomPostal');
                         cr = buildMap(crData, 'NomPostal');
                     }
-                    snapshots26.push({ date: folder.name, chx: chx || {}, jk: jk || {}, cr: cr || {} });
+                    snapshots26.push({ date: folder.name, chx: chx || {}, jk: jk || {}, cr: cr || {}, en: en || {} });
                 }
                 console.log(`📸 ${snapshots26.length} snapshots chargés: ${folders.map(f => f.name).join(', ')}`);
             }
@@ -1300,7 +1305,7 @@
     // Pré-calculer les populations une seule fois
     let _pop = null;
     function getPop(rd) {
-        if (!_pop) _pop = { chx25: Object.keys(rd.chx25).length||1, chx26: Object.keys(rd.chx26).length||1, jk25: Object.keys(rd.jk25).length||1, jk26: Object.keys(rd.jk26).length||1, cr25: Object.keys(rd.cr25).length||1, cr26: Object.keys(rd.cr26).length||1 };
+        if (!_pop) _pop = { chx25: Object.keys(rd.chx25).length||1, chx26: Object.keys(rd.chx26).length||1, jk25: Object.keys(rd.jk25).length||1, jk26: Object.keys(rd.jk26).length||1, cr25: Object.keys(rd.cr25).length||1, cr26: Object.keys(rd.cr26).length||1, en25: Object.keys(rd.en25 || {}).length||1, en26: Object.keys(rd.en26 || {}).length||1 };
         return _pop;
     }
 
@@ -1318,29 +1323,30 @@
         const rankingMode = document.getElementById('ranking-filter')?.value || 'auto';
 
         // Déterminer quelles données utiliser selon le mode
-        let ch25 = null, j25 = null, cr25 = null;
-        let ch26 = null, j26 = null, cr26 = null;
+        let ch25 = null, j25 = null, cr25 = null, e25 = null;
+        let ch26 = null, j26 = null, cr26 = null, e26 = null;
+        const entr = (p.entraineur || p['entraîneur'] || '').toUpperCase().trim();
 
         // Résoudre les données 2026 : toujours via snapshot pour courses passées
         const today = new Date().toISOString().split('T')[0];
         const isFuture = !courseDate || courseDate >= today;
         function get26() {
-            if (isFuture) return { ch: fuzzyMatch(rd.chx26, nom, rd, 'chevaux'), jk: fuzzyMatch(rd.jk26, jk, rd, 'jockeys'), cr: fuzzyMatch(rd.cr26, jk, rd, 'jockeys') };
+            if (isFuture) return { ch: fuzzyMatch(rd.chx26, nom, rd, 'chevaux'), jk: fuzzyMatch(rd.jk26, jk, rd, 'jockeys'), cr: fuzzyMatch(rd.cr26, jk, rd, 'jockeys'), en: fuzzyMatch(rd.en26 || {}, entr, rd, 'entraineurs') };
             const snap = getSnapshot26(courseDate);
-            if (snap) return { ch: fuzzyMatch(snap.chx, nom, rd, 'chevaux'), jk: fuzzyMatch(snap.jk, jk, rd, 'jockeys'), cr: fuzzyMatch(snap.cr, jk, rd, 'jockeys') };
-            return { ch: null, jk: null, cr: null }; // pas de snapshot dispo
+            if (snap) return { ch: fuzzyMatch(snap.chx, nom, rd, 'chevaux'), jk: fuzzyMatch(snap.jk, jk, rd, 'jockeys'), cr: fuzzyMatch(snap.cr, jk, rd, 'jockeys'), en: fuzzyMatch(snap.en || {}, entr, rd, 'entraineurs') };
+            return { ch: null, jk: null, cr: null, en: null }; // pas de snapshot dispo
         }
 
         if (rankingMode === '2025') {
-            ch25 = fuzzyMatch(rd.chx25, nom, rd, 'chevaux'); j25 = fuzzyMatch(rd.jk25, jk, rd, 'jockeys'); cr25 = fuzzyMatch(rd.cr25, jk, rd, 'jockeys');
+            ch25 = fuzzyMatch(rd.chx25, nom, rd, 'chevaux'); j25 = fuzzyMatch(rd.jk25, jk, rd, 'jockeys'); cr25 = fuzzyMatch(rd.cr25, jk, rd, 'jockeys'); e25 = fuzzyMatch(rd.en25 || {}, entr, rd, 'entraineurs');
         } else if (rankingMode === '2026') {
             const d26 = get26();
-            ch26 = d26.ch; j26 = d26.jk; cr26 = d26.cr;
+            ch26 = d26.ch; j26 = d26.jk; cr26 = d26.cr; e26 = d26.en;
         } else {
             // Auto ou both : 2025 + 2026 (snapshot)
-            ch25 = fuzzyMatch(rd.chx25, nom, rd, 'chevaux'); j25 = fuzzyMatch(rd.jk25, jk, rd, 'jockeys'); cr25 = fuzzyMatch(rd.cr25, jk, rd, 'jockeys');
+            ch25 = fuzzyMatch(rd.chx25, nom, rd, 'chevaux'); j25 = fuzzyMatch(rd.jk25, jk, rd, 'jockeys'); cr25 = fuzzyMatch(rd.cr25, jk, rd, 'jockeys'); e25 = fuzzyMatch(rd.en25 || {}, entr, rd, 'entraineurs');
             const d26 = get26();
-            ch26 = d26.ch; j26 = d26.jk; cr26 = d26.cr;
+            ch26 = d26.ch; j26 = d26.jk; cr26 = d26.cr; e26 = d26.en;
         }
         const pop = getPop(rd);
         const mxF = (a, b, f) => Math.max(a ? parseFloat(a[f]||0) : 0, b ? parseFloat(b[f]||0) : 0);
@@ -1383,6 +1389,11 @@
             'Jk Rang': jkRang, 'Jk ScoreMixte': mxF(j25,j26,'ScoreMixte'),
             'Jk GainMoy': Math.max(j25?.GainMoyen||0,j26?.GainMoyen||0)>0?Math.log10(Math.max(j25?.GainMoyen||0,j26?.GainMoyen||0))*15:0,
             'Cravache Rang': bR(cr25,pop.cr25,cr26,pop.cr26),
+            // Entraîneur : absent de la grille jusqu'au 15/09/2026 alors que son gain par
+            // partant était le levier n°1 du logit conjoint (bench/leviers_sans_cote.py).
+            'Ent TauxV': mxF(e25,e26,'TauxVictoire')||8, 'Ent TauxP': mxF(e25,e26,'TauxPlace')||30,
+            'Ent Rang': bR(e25,pop.en25,e26,pop.en26),
+            'Ent GainMoy': Math.max(e25?.GainMoyen||0,e26?.GainMoyen||0)>0?Math.log10(Math.max(e25?.GainMoyen||0,e26?.GainMoyen||0))*15:0,
             // « Forme récente » et « Combo Jk*Ent » ne sont plus des leviers de la grille :
             // chevaux_forme_recente.json et combo_jockey_entraineur.json sont calculés à
             // la date d'extraction sur TOUTES les courses, y compris celle qu'on évalue.
@@ -1577,7 +1588,7 @@
                 // Pool élargi : top12 solo + noyau forcé (signaux fondamentaux)
                 // garantit que des leviers comme 'Cote ref' (solo médiocre mais signal marché crucial)
                 // soient testés en combo, même s'ils ne percent pas dans le top solo.
-                const CORE_LEVIERS = ['Cote (1/cote)', 'Cote ref', 'Valeur FG', 'Jk Rang', 'Ch Rang', 'Musique'];
+                const CORE_LEVIERS = ['Cote (1/cote)', 'Cote ref', 'Valeur FG', 'Jk Rang', 'Ch Rang', 'Musique', 'Ent GainMoy'];
                 const top12 = results.slice(0, 12).map(r => r.name);
                 const pool = [...new Set([...top12, ...CORE_LEVIERS])];
                 const comboResults = [];
@@ -1591,6 +1602,7 @@
                     'Jk TauxV':'JkTV', 'Jk TauxP':'JkTP', 'Jk Rang':'JkRg',
                     'Jk ScoreMixte':'JkSM', 'Jk GainMoy':'JkGM',
                     'Cravache Rang':'Crv', 'Forme récente':'Forme', 'Combo Jk*Ent':'Combo',
+                    'Ent TauxV':'EntTV', 'Ent TauxP':'EntTP', 'Ent Rang':'EntRg', 'Ent GainMoy':'EntGM',
                 };
                 const sh = n => SHORT_LABELS[n] || n;
 

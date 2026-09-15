@@ -219,10 +219,12 @@ function getLevierData() {
   const chx26 = buildLookup(loadLocalJSON('chevaux_ponderated_latest.json'), 'Nom');
   const cr25 = buildLookup(loadLocalJSON('cravache_or_2025_ponderated_latest.json'), 'NomPostal');
   const cr26 = buildLookup(loadLocalJSON('cravache_or_ponderated_latest.json'), 'NomPostal');
+  const en25 = buildLookup(loadLocalJSON('entraineurs_2025_ponderated_latest.json'), 'NomPostal');
+  const en26 = buildLookup(loadLocalJSON('entraineurs_ponderated_latest.json'), 'NomPostal');
   // Forme récente + combo jockey/entraîneur : fichiers stables (pas de snapshot daté)
   const forme = (loadLocalJSON('chevaux_forme_recente.json') || {}).resultats || {};
   const combo = (loadLocalJSON('combo_jockey_entraineur.json') || {}).resultats || {};
-  levierData = { jk25, jk26, chx25, chx26, cr25, cr26, forme, combo };
+  levierData = { jk25, jk26, chx25, chx26, cr25, cr26, en25, en26, forme, combo };
   return levierData;
 }
 
@@ -320,7 +322,9 @@ function computeBestFormulasFromHistory() {
     'Gains (log)', 'TauxV indiv', 'TauxP indiv', 'NbVictoires',
     'Ch TauxV', 'Ch TauxP', 'Ch Rang', 'Ch GainMoy', 'Ch ScoreMixte',
     'Jk TauxV', 'Jk TauxP', 'Jk Rang', 'Jk ScoreMixte', 'Jk GainMoy',
-    'Cravache Rang', 'Forme récente', 'Combo Jk*Ent'];
+    'Cravache Rang', 'Ent TauxV', 'Ent TauxP', 'Ent Rang', 'Ent GainMoy'];
+  // « Forme récente » et « Combo Jk*Ent » retirés : leurs fichiers sont calculés sur toutes
+  // les courses, y compris celle qu'on évalue (fuite). Voir stats.html, même retrait.
 
   // Charger les snapshots datés pour anti-leakage
   const snapshotsDir = path.join(__dirname, 'data', 'rankings');
@@ -334,9 +338,10 @@ function computeBestFormulasFromHistory() {
                  || buildLookup(loadLocalJSON(`rankings/${d}/chevaux.json`), 'Nom');
         const jk = loadSnapshotCSV(`rankings/${d}/jockeys.csv`, 'jockeys')
                  || buildLookup(loadLocalJSON(`rankings/${d}/jockeys.json`), 'NomPostal');
+        const en = loadSnapshotCSV(`rankings/${d}/entraineurs.csv`, 'entraineurs');
         const cr = loadSnapshotCSV(`rankings/${d}/cravache_or.csv`, 'cravache')
                  || buildLookup(loadLocalJSON(`rankings/${d}/cravache_or.json`), 'NomPostal');
-        if (chx || jk) snapshots.push({ date: d, chx: chx || {}, jk: jk || {}, cr: cr || {} });
+        if (chx || jk) snapshots.push({ date: d, chx: chx || {}, jk: jk || {}, cr: cr || {}, en: en || {} });
       } catch {}
     });
   } catch {}
@@ -416,6 +421,7 @@ function computeBestFormulasFromHistory() {
             jk25: ldFull.jk25, jk26: snap ? snap.jk : {},
             chx25: ldFull.chx25, chx26: snap ? snap.chx : {},
             cr25: ldFull.cr25, cr26: snap && snap.cr ? snap.cr : {},
+            en25: ldFull.en25, en26: snap && snap.en ? snap.en : {},
             // forme + combo : fichiers stables latest (aligné avec stats.html)
             forme: ldFull.forme, combo: ldFull.combo,
           };
@@ -550,6 +556,8 @@ function getLevierValue(levierName, participant, ld) {
   const ch26 = fuzzyMatch(ld.chx26, participant.cheval, 'chevaux') || ld.chx26[nom];
   const cr25 = ld.cr25 ? fuzzyMatch(ld.cr25, jk, 'jockeys') : null;
   const cr26 = ld.cr26 ? fuzzyMatch(ld.cr26, jk, 'jockeys') : null;
+  const e25 = ld.en25 ? fuzzyMatch(ld.en25, entr, 'entraineurs') : null;
+  const e26 = ld.en26 ? fuzzyMatch(ld.en26, entr, 'entraineurs') : null;
   const coteVal = parseFloat(participant.cote) || 0;
   const coteRef = parseFloat(participant.cote_reference) || 0;
   const valeur = parseFloat(participant.valeur) || 0;
@@ -562,6 +570,7 @@ function getLevierValue(levierName, participant, ld) {
     jk25: Object.keys(ld.jk25).length||1, jk26: Object.keys(ld.jk26).length||1,
     chx25: Object.keys(ld.chx25).length||1, chx26: Object.keys(ld.chx26).length||1,
     cr25: Object.keys(ld.cr25 || {}).length||1, cr26: Object.keys(ld.cr26 || {}).length||1,
+    en25: Object.keys(ld.en25 || {}).length||1, en26: Object.keys(ld.en26 || {}).length||1,
   };
   const rS = (it, pp) => it ? 100*(1-(parseInt(it.Rang)-1)/pp) : 50;
   const bR = (a, pA, b, pB) => { const sa=a?rS(a,pA):null, sb=b?rS(b,pB):null; return sa!==null&&sb!==null?Math.max(sa,sb):sa??sb??50; };
@@ -591,6 +600,11 @@ function getLevierValue(levierName, participant, ld) {
     'Jk ScoreMixte': mxF(j25,j26,'ScoreMixte'),
     'Jk GainMoy': Math.max(j25?.GainMoyen||0,j26?.GainMoyen||0)>0?Math.log10(Math.max(j25?.GainMoyen||0,j26?.GainMoyen||0))*15:0,
     'Cravache Rang': bR(cr25, pop.cr25, cr26, pop.cr26),
+    // Entraîneur : absent jusqu'au 15/09/2026 alors que son gain par partant était le
+    // levier n°1 du logit conjoint (bench/leviers_sans_cote.py)
+    'Ent TauxV': mxF(e25, e26, 'TauxVictoire') || 8, 'Ent TauxP': mxF(e25, e26, 'TauxPlace') || 30,
+    'Ent Rang': bR(e25, pop.en25, e26, pop.en26),
+    'Ent GainMoy': Math.max(e25?.GainMoyen || 0, e26?.GainMoyen || 0) > 0 ? Math.log10(Math.max(e25?.GainMoyen || 0, e26?.GainMoyen || 0)) * 15 : 0,
     'Forme récente': forme ? forme.formeScore : 50,
     'Combo Jk*Ent': combo && combo.courses >= 3 ? combo.tauxVictoire : 10,
     'Dérive cote': coteVal>1&&coteRef>1 ? 50+(coteRef-coteVal)/coteRef*200 : 50,

@@ -55,7 +55,7 @@ function snapPour(date) {
   if (!choisi) return null;
   if (cache.has(choisi)) return cache.get(choisi);
   const dir = path.join(ROOT, 'data/rankings', choisi), S = {};
-  for (const [k, f, cat] of [['jk26', 'jockeys.csv', 'jockeys'], ['jk25', 'jockeys_2025.csv', 'jockeys'], ['chx26', 'chevaux.csv', 'chevaux'], ['chx25', 'chevaux_2025.csv', 'chevaux'], ['cr26', 'cravache_or.csv', 'jockeys'], ['cr25', 'cravache_or_2025.csv', 'jockeys']]) {
+  for (const [k, f, cat] of [['jk26', 'jockeys.csv', 'jockeys'], ['jk25', 'jockeys_2025.csv', 'jockeys'], ['chx26', 'chevaux.csv', 'chevaux'], ['chx25', 'chevaux_2025.csv', 'chevaux'], ['cr26', 'cravache_or.csv', 'jockeys'], ['cr25', 'cravache_or_2025.csv', 'jockeys'], ['en26', 'entraineurs.csv', 'entraineurs'], ['en25', 'entraineurs_2025.csv', 'entraineurs']]) {
     const rows = lireCSV(path.join(dir, f));
     S[k] = { idx: M.creerIndex(rows, cat, { correspondances: corresp.correspondances }), pop: rows.length || 1, cat };
   }
@@ -77,6 +77,7 @@ function parseMusique(m) {
 function leviers(p, S) {
   const jk = p.jockey || '', ch = p.cheval || '';
   const j25 = trouve(S.jk25, jk), j26 = trouve(S.jk26, jk), ch25 = trouve(S.chx25, ch), ch26 = trouve(S.chx26, ch), cr25 = trouve(S.cr25, jk), cr26 = trouve(S.cr26, jk);
+  const entr = p.entraineur || p['entraîneur'] || '', e25 = trouve(S.en25, entr), e26 = trouve(S.en26, entr);
   const coteVal = num(p.cote), coteRef = num(p.cote_reference), valeur = num(p.valeur);
   const gains = parseInt(String(p.gains || '').replace(/\D/g, '')) || 0;
   const nbC = parseInt(p.nb_courses) || 0, nbV = parseInt(p.nb_victoires) || 0, nbP = parseInt(p.nb_places) || 0;
@@ -98,6 +99,9 @@ function leviers(p, S) {
     'Jk Rang': bR(j25, S.jk25.pop, j26, S.jk26.pop), 'Jk ScoreMixte': mxF(j25, j26, 'ScoreMixte'),
     'Jk GainMoy': gm(j25, j26) > 0 ? Math.log10(gm(j25, j26)) * 15 : 0,
     'Cravache Rang': bR(cr25, S.cr25.pop, cr26, S.cr26.pop),
+    'Ent TauxV': mxF(e25, e26, 'TauxVictoire') || 8, 'Ent TauxP': mxF(e25, e26, 'TauxPlace') || 30,
+    'Ent Rang': bR(e25, S.en25.pop, e26, S.en26.pop),
+    'Ent GainMoy': gm(e25, e26) > 0 ? Math.log10(gm(e25, e26)) * 15 : 0,
   };
 }
 
@@ -123,7 +127,7 @@ for (const f of fs.readdirSync(path.join(ROOT, 'data/courses')).filter(f => f.en
 }
 const NOMS = Object.keys(courses[0].L[0]);
 for (const c of courses) c.Mx = c.L.map(l => NOMS.map(n => l[n] || 0));
-console.log(`${courses.length} courses ${TOUS_HIPPOS ? 'FR' : 'premium'} depuis le 16/04/2026, ${NOMS.length} leviers (sans Forme récente ni Combo)\n`);
+console.log(`${courses.length} courses ${TOUS_HIPPOS ? 'FR' : 'premium'} depuis le 16/04/2026, ${NOMS.length} leviers (avec entraîneur, sans Forme récente ni Combo)\n`);
 
 // ── évaluation d'une formule : identique à evalCombo
 function evalCombo(cs, idxs, w) {
@@ -158,7 +162,7 @@ function weightSets(n, step = 0.1) {
   })(total, 0, []);
   return out;
 }
-const CORE = ['Cote (1/cote)', 'Cote ref', 'Valeur FG', 'Jk Rang', 'Ch Rang', 'Musique'];
+const CORE = ['Cote (1/cote)', 'Cote ref', 'Valeur FG', 'Jk Rang', 'Ch Rang', 'Musique', 'Ent GainMoy'];
 const poolSizeBy = { 2: 12, 3: 10, 4: 8, 5: 7, 6: 7 };
 // le champion de la grille sur un jeu de courses, exactement comme stats.html
 function champion(cs) {
