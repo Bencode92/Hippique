@@ -3135,7 +3135,7 @@
                                     <th>Cheval</th>
                                     <th>Jockey</th>
                                     <th>Entraîneur</th>
-                                    <th style="width:95px" title="Rattachement au classement France Galop et rang de chacun : cheval, jockey, entraîneur. NC = non retrouvé (valeur par défaut dans le score). « 25 » = retrouvé dans le classement 2025 seulement. Survole pour les noms.">Rattach.<br><span style="font-weight:400;opacity:.6;font-size:.8em">rang FG</span></th>
+                                    <th style="width:95px" title="Rattachement aux classements France Galop et rang de chacun : cheval, jockey, entraîneur (les trois qui font le score), puis éleveur, propriétaire et cravache d'or (informatifs). NC = non retrouvé (valeur par défaut dans le score). « 25 » = retrouvé dans le classement 2025 seulement. Survole pour les noms.">Rattach.<br><span style="font-weight:400;opacity:.6;font-size:.8em">rang FG</span></th>
                                     <th style="width:90px" title="Cote de référence du matin → cote actuelle. La flèche est la dérive : une cote qui baisse est de l'argent qui rentre.">Cote</th>
                                     <th style="width:70px" title="Rang par la cote : le favori est 1. C'est la référence — son n°1 gagne une course sur trois.">Marché</th>
                                     <th style="width:78px" title="Rang par la formule Optimale du bucket distance (data/best_formulas.json, publiée depuis stats.html). Une formule n'est publiée que si elle bat la cote seule sur les 30 % de courses qu'elle n'a pas vues ; sinon le bucket est en « cote seule » et ce rang est celui du marché. Voir stats.html → Analyser → Classements.">Optimale</th>
@@ -3470,8 +3470,8 @@
                                 ${(() => {
                                     // Rattachement par acteur : nom retrouvé au classement + rang, via le même module que le score
                                     const RL = window.rankingLoader; const lignes = []; let ok = 0;
-                                    for (const [cat, champ, lib] of [['chevaux', 'cheval', 'Cheval'], ['jockeys', 'jockey', 'Jockey'], ['entraineurs', 'entraineur', 'Entraîneur']]) {
-                                        const nom = participant[champ] || (champ === 'entraineur' ? participant['entraîneur'] : '');
+                                    for (const [cat, champ, lib] of [['chevaux', 'cheval', 'Cheval'], ['jockeys', 'jockey', 'Jockey'], ['entraineurs', 'entraineur', 'Entraîneur'], ['eleveurs', 'éleveurs', 'Éleveur'], ['proprietaires', 'propriétaire', 'Propriétaire'], ['cravache_or', 'jockey', 'Cravache d\'or']]) {
+                                        const nom = participant[champ] || (champ === 'entraineur' ? participant['entraîneur'] : champ === 'éleveurs' ? participant.eleveurs : champ === 'propriétaire' ? participant.proprietaire : '');
                                         let item = null, via = '';
                                         try {
                                             if (nom && RL?.data?.[cat]?.length) item = RL.trouverItemDansClassement(RL.data[cat], nom, cat);
@@ -3481,9 +3481,13 @@
                                         else lignes.push(`${lib} : non retrouvé${cat === 'chevaux' && !(parseInt(participant.nb_courses) > 0) ? ' (débutant)' : ''}`);
                                     }
                                     // Affiché en clair, ligne par ligne : le rang au classement, ou NC en rouge
-                                    const col = ok === 3 ? '#40e05a' : ok === 2 ? '#e0b040' : '#e05a40';
-                                    const rangs = lignes.map((l, i) => { const lib = ['Ch', 'Jk', 'Ent'][i]; const m = l.match(/#(\d+)/); const nc = l.includes('non retrouvé'); return `<div style="white-space:nowrap"><span style="opacity:.6">${lib}</span> <strong style="color:${nc ? '#e05a40' : 'inherit'}">${nc ? 'NC' : '#' + m[1]}</strong>${l.includes('(2025)') ? '<span style="opacity:.5;font-size:.8em"> 25</span>' : ''}</div>`; }).join('');
-                                    return `<td style="text-align:left;font-size:0.8em;line-height:1.3;cursor:help" title="${lignes.join('\n').replace(/"/g, '&quot;')}"><div style="color:${col};font-weight:600">${ok}/3</div>${rangs}</td>`;
+                                    // Les trois premiers (cheval, jockey, entraîneur) font le score ; éleveur,
+                                    // propriétaire et cravache d'or sont informatifs (poids 1-2 %, ou absents du modèle).
+                                    const ok3 = lignes.slice(0, 3).filter(l => !l.includes('non retrouvé')).length;
+                                    const col = ok3 === 3 ? '#40e05a' : ok3 === 2 ? '#e0b040' : '#e05a40';
+                                    const libs = ['Ch', 'Jk', 'Ent', 'Élev', 'Prop', 'Crav'];
+                                    const rangs = lignes.map((l, i) => { const m = l.match(/#(\d+)/); const nc = l.includes('non retrouvé'); return `<div style="white-space:nowrap${i >= 3 ? ';opacity:.7' : ''}"><span style="opacity:.6">${libs[i]}</span> <strong style="color:${nc ? (i >= 3 ? 'rgba(224,90,64,.6)' : '#e05a40') : 'inherit'}">${nc ? 'NC' : '#' + m[1]}</strong>${l.includes('(2025)') ? '<span style="opacity:.5;font-size:.8em"> 25</span>' : ''}</div>`; }).join('');
+                                    return `<td style="text-align:left;font-size:0.8em;line-height:1.3;cursor:help" title="${lignes.join('\n').replace(/"/g, '&quot;')}"><div style="color:${col};font-weight:600">${ok3}/3</div>${rangs}</td>`;
                                 })()}
                                 <td style="text-align:center;font-weight:600;${coteValue !== '-' ? 'color:#40E0D0' : ''}">${coteDisplay}</td>
                                 <td class="prediction-cell" style="display:none">
