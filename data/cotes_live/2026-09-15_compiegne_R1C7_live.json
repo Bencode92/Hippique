@@ -4,17 +4,17 @@
   "reunion": 1,
   "heure_depart": 1789486680000,
   "distance": 2800,
-  "scraped_at": "2026-09-15T17:32:52.474995",
-  "minutes_avant_depart": 5,
+  "scraped_at": "2026-09-15T17:36:12.364798",
+  "minutes_avant_depart": 2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MY EDEN JAMES",
-      "cote_live": 24.0,
+      "cote_live": 27.0,
       "cote_reference": 25.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789486366000
+      "timestamp_cote": 1789486564000
     },
     {
       "numPmu": 2,
@@ -23,79 +23,79 @@
       "cote_reference": 22.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789486366000
+      "timestamp_cote": 1789486564000
     },
     {
       "numPmu": 3,
       "nom": "BRIGHTON SPORT",
-      "cote_live": 5.0,
+      "cote_live": 4.2,
       "cote_reference": 10.0,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789486366000
+      "timestamp_cote": 1789486564000
     },
     {
       "numPmu": 4,
       "nom": "GOD SAVE THE QUEEN",
-      "cote_live": 5.9,
+      "cote_live": 5.7,
       "cote_reference": 6.3,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789486366000
+      "timestamp_cote": 1789486564000
     },
     {
       "numPmu": 5,
       "nom": "LA BOBRIDE",
-      "cote_live": 35.0,
+      "cote_live": 19.0,
       "cote_reference": 32.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789486366000
+      "timestamp_cote": 1789486564000
     },
     {
       "numPmu": 6,
       "nom": "BARBADIN",
-      "cote_live": 8.9,
+      "cote_live": 9.5,
       "cote_reference": 8.3,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789486366000
+      "timestamp_cote": 1789486564000
     },
     {
       "numPmu": 7,
       "nom": "GRAND ART",
-      "cote_live": 2.7,
+      "cote_live": 3.0,
       "cote_reference": 2.2,
-      "tendance": "+",
+      "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1789486366000
+      "timestamp_cote": 1789486564000
     },
     {
       "numPmu": 8,
       "nom": "MISS BRESIL DELF",
-      "cote_live": 19.0,
+      "cote_live": 17.0,
       "cote_reference": 13.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789486366000
+      "timestamp_cote": 1789486564000
     },
     {
       "numPmu": 9,
       "nom": "ERIDITA DOVER",
-      "cote_live": 42.0,
+      "cote_live": 41.0,
       "cote_reference": 34.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789486366000
+      "timestamp_cote": 1789486564000
     },
     {
       "numPmu": 10,
       "nom": "AND WE DANCED",
-      "cote_live": 9.4,
+      "cote_live": 11.0,
       "cote_reference": 9.8,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789486366000
+      "timestamp_cote": 1789486564000
     }
   ],
   "hippodrome": "COMPIEGNE",
@@ -130,6 +130,86 @@
         "8": 19.0,
         "9": 42.0,
         "10": 9.4
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T17:33:31.972404",
+      "minutes_avant_depart": 4.470864916666667,
+      "cotes": {
+        "1": 24.0,
+        "2": 27.0,
+        "3": 5.0,
+        "4": 5.9,
+        "5": 35.0,
+        "6": 8.9,
+        "7": 2.7,
+        "8": 19.0,
+        "9": 38.0,
+        "10": 9.4
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T17:34:11.798415",
+      "minutes_avant_depart": 3.8041960333333336,
+      "cotes": {
+        "1": 24.0,
+        "2": 27.0,
+        "3": 4.7,
+        "4": 6.1,
+        "5": 29.0,
+        "6": 9.1,
+        "7": 2.8,
+        "8": 17.0,
+        "9": 39.0,
+        "10": 9.7
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T17:34:52.144331",
+      "minutes_avant_depart": 3.13752665,
+      "cotes": {
+        "1": 26.0,
+        "2": 26.0,
+        "3": 4.6,
+        "4": 5.4,
+        "5": 31.0,
+        "6": 9.2,
+        "7": 2.9,
+        "8": 18.0,
+        "9": 40.0,
+        "10": 10.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T17:35:31.976285",
+      "minutes_avant_depart": 2.47085825,
+      "cotes": {
+        "1": 27.0,
+        "2": 25.0,
+        "3": 4.3,
+        "4": 5.5,
+        "5": 30.0,
+        "6": 9.8,
+        "7": 2.8,
+        "8": 18.0,
+        "9": 38.0,
+        "10": 10.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T17:36:12.364798",
+      "minutes_avant_depart": 1.7977229333333333,
+      "cotes": {
+        "1": 27.0,
+        "2": 27.0,
+        "3": 4.2,
+        "4": 5.7,
+        "5": 19.0,
+        "6": 9.5,
+        "7": 3.0,
+        "8": 17.0,
+        "9": 41.0,
+        "10": 11.0
       }
     }
   ]
