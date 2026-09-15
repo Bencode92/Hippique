@@ -1,6 +1,12 @@
 name: Snapshot Rankings
 
 on:
+  schedule:
+    # Hebdomadaire, le lundi à 4h30 UTC — avant toute course, donc jamais un
+    # snapshot de l'après-midi qui contiendrait les gains du jour (05/09 15h44).
+    # Lancé à la main dix fois en cinq mois, le snapshot du 12/07 a servi 377
+    # réunions (33 % de la base) avec jusqu'à huit semaines de retard.
+    - cron: '30 4 * * 1'
   workflow_dispatch:
 
 permissions:
