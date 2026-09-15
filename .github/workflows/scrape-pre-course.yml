@@ -2,26 +2,40 @@ name: Scrape cotes live pré-course
 
 on:
   schedule:
-    # Toutes les 10 minutes entre 8h et 20h UTC (10h-22h France, heure d'été).
-    # L'ancienne fenêtre (*/15 10-18) s'arrêtait à 20h Paris : les réunions du
-    # soir n'étaient jamais capturées. Le pas de 10 min absorbe aussi le délai
-    # de la file d'attente des runners, qui faisait échouer la condition
-    # `0 < minutes_avant <= FENETRE` et laissait des courses sans cotes.
-    # Objectif : élargir le corpus de cotes TARDIVES (T−15 min), seul signal
-    # à avoir montré un écart de calibration positif (+0,8 pt sur 192 chevaux).
-    - cron: '*/10 8-20 * * *'
+    # Trois boucles de ~4 h qui se relaient : 10h → 22h Paris (heure d'été).
+    # Un cron « toutes les 10 minutes » partait avec 5 à 20 minutes de retard
+    # et ne gardait qu'un relevé : 2 courses de la règle sur 11 avaient une
+    # cote live en août-septembre. Ici le scraper tourne en continu, relève
+    # toutes les ~40 s dans les 6 dernières minutes avant le départ, garde le
+    # relevé le plus proche du départ et l'historique, et pousse toutes les
+    # 3 minutes. Le test séquentiel a besoin du favori à T-2, pas à la clôture.
+    - cron: '0 8 * * *'
+    - cron: '0 12 * * *'
+    - cron: '0 16 * * *'
   workflow_dispatch:
+    inputs:
+      duree:
+        description: 'Durée de la boucle en minutes'
+        default: '235'
 
 permissions:
   contents: write
 
+# deux boucles ne doivent pas écrire en même temps ; la suivante attend
+concurrency:
+  group: cotes-live
+  cancel-in-progress: false
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 250
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -31,29 +45,12 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Scraper cotes live pré-course
-        run: python scraper_pre_course.py
-
-      - name: Commit si nouvelles cotes
+      - name: Identité git (les push sont faits par le scraper, toutes les 3 min)
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action - Cotes Live"
 
-          mkdir -p data/cotes_live
-          # Régénère l'index AVANT le check git diff pour qu'il soit inclus dans le commit
-          python3 scripts/update_cotes_live_index.py
-          git add data/cotes_live/ 2>/dev/null || true
-
-          if git diff --cached --quiet; then
-            echo "Pas de nouvelles cotes"
-          else
-            git stash -u || true
-            git pull origin main --rebase || true
-            git stash pop || true
-            python3 scripts/update_cotes_live_index.py
-            git add data/cotes_live/
-            git commit -m "⏱️ Cotes live pré-course $(date +'%Y-%m-%d %H:%M')"
-            git push
-          fi
+      - name: Boucle de relevés
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TZ: Europe/Paris
+        run: python scraper_pre_course.py --boucle ${{ github.event.inputs.duree || '235' }}

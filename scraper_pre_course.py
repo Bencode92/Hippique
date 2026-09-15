@@ -1,13 +1,21 @@
 #!/usr/bin/env python3
 """
-Scraper pré-course : capture les cotes 10 min avant le départ
+Scraper pré-course : capture les cotes juste avant le départ
 pour les hippodromes majeurs (Saint-Cloud, Longchamp, Chantilly, etc.)
 
-Tourne toutes les 10 minutes entre 8h et 20h UTC (10h-22h France).
-Vérifie si une course démarre dans les 20 prochaines minutes.
-Si oui, scrape les cotes et les stocke dans data/cotes_live/
+Deux modes :
+  python3 scraper_pre_course.py                 une passe (l'ancien cron)
+  python3 scraper_pre_course.py --boucle 235    tourne 235 minutes, une passe
+                                                toutes les ~40 s, commit+push
+                                                toutes les 3 minutes
 
-Usage : python3 scraper_pre_course.py
+Pourquoi la boucle (15/09/2026) : un cron GitHub « toutes les 10 minutes »
+part avec 5 à 20 minutes de retard ; sur août-septembre, 2 courses de la
+règle sur 11 avaient un relevé live. Le test séquentiel doit enregistrer le
+pari FAIT — le favori à T-2 et sa cote — donc il faut un relevé toutes les
+minutes dans les 5 dernières. Chaque fichier garde le relevé le plus proche
+du départ (participants) ET l'historique des relevés (releves), pour mesurer
+un jour la dérive à T-2 contre la cote finale.
 """
 
 import requests
@@ -38,7 +46,10 @@ HIPPODROMES_CIBLES = [
 
 # Fenêtre de capture : on scrape si la course démarre dans les 20 prochaines minutes
 # (marge volontaire : absorbe un run retardé par la file d'attente GitHub Actions)
-FENETRE_MINUTES = 20
+FENETRE_MINUTES = 20          # mode une passe
+FENETRE_BOUCLE = 6            # mode boucle : on relève dans les 6 dernières minutes
+PAS_BOUCLE_S = 40             # secondes entre deux passes
+PUSH_TOUTES_LES_S = 180       # commit + push toutes les 3 minutes
 
 
 def api_get(endpoint, max_retries=2):
@@ -152,21 +163,49 @@ def enregistrer_snapshot(filepath, result, minutes_avant, logger):
             if 0 < ancien <= minutes_avant:
                 logger.info(f"   \u23ed\ufe0f  conserve T-{ancien} min (plus proche que T-{minutes_avant})")
                 return False
+    # historique : chaque relevé (cotes des partants, horodaté) est conservé,
+    # même s'il n'est pas le plus proche du départ — c'est la matière pour
+    # mesurer la dérive à T-2 contre la clôture.
+    releves = []
+    if os.path.exists(filepath):
+        try:
+            with open(filepath, encoding='utf-8') as f:
+                releves = json.load(f).get("releves") or []
+        except Exception:
+            releves = []
+    releves.append({
+        "scraped_at": result.get("scraped_at"), "minutes_avant_depart": minutes_avant,
+        "cotes": {str(p.get("numPmu")): p.get("cote_live") for p in result.get("participants", [])},
+    })
+    result = dict(result, releves=releves[-30:])
     with open(filepath, 'w', encoding='utf-8') as f:
         json.dump(result, f, ensure_ascii=False, indent=2)
     return True
 
 
-def main():
-    logger.info("🏇 Scraper pré-course — cotes live")
-    logger.info(f"📅 {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+_prog_cache = {"t": 0, "val": (None, None)}
+
+def programme_cache(max_age_s=180):
+    """Le programme du jour, rafraîchi au plus toutes les 3 minutes (mode boucle)."""
+    if time.time() - _prog_cache["t"] > max_age_s:
+        _prog_cache["val"] = get_programme_jour()
+        _prog_cache["t"] = time.time()
+    return _prog_cache["val"]
+
+
+def main(fenetre=None, silencieux=False):
+    fenetre = fenetre or FENETRE_MINUTES
+    if not silencieux:
+        logger.info("🏇 Scraper pré-course — cotes live")
+        logger.info(f"📅 {datetime.now().strftime('%Y-%m-%d %H:%M')}")
 
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-    reunions, date_pmu = get_programme_jour()
+    reunions, date_pmu = programme_cache()
     if not reunions:
-        logger.info("❌ Pas de programme aujourd'hui")
-        return
+        if not silencieux:
+            logger.info("❌ Pas de programme aujourd'hui")
+        return 0
 
     now = datetime.now()
     date_iso = now.strftime("%Y-%m-%d")
@@ -192,7 +231,7 @@ def main():
             # Vérifier si la course démarre dans les FENETRE_MINUTES prochaines minutes
             minutes_avant = (depart_dt - now).total_seconds() / 60
 
-            if 0 < minutes_avant <= FENETRE_MINUTES:
+            if 0 < minutes_avant <= fenetre:
                 course_num = course.get("numOrdre", 0)
                 course_nom = course.get("libelle", "")
                 logger.info(f"\n⏰ {hippo_nom} R{reunion_num} C{course_num} — {course_nom}")
@@ -237,11 +276,62 @@ def main():
                         continue
                     courses_scrapees += 1
 
-    if courses_scrapees == 0:
-        logger.info("\n📭 Aucune course cible dans les 15 prochaines minutes")
-    else:
-        logger.info(f"\n✅ {courses_scrapees} courses scrapées (cotes live)")
+    if not silencieux:
+        if courses_scrapees == 0:
+            logger.info(f"\n📭 Aucune course cible dans les {fenetre} prochaines minutes")
+        else:
+            logger.info(f"\n✅ {courses_scrapees} courses scrapées (cotes live)")
+    return courses_scrapees
+
+
+def git_push():
+    """Commit et pousse les relevés (index régénéré). Jamais bloquant."""
+    import subprocess
+    def run(*cmd):
+        return subprocess.run(cmd, capture_output=True, text=True)
+    try:
+        run("python3", "scripts/update_cotes_live_index.py")
+        run("git", "add", "data/cotes_live/")
+        if run("git", "diff", "--cached", "--quiet").returncode == 0:
+            return False
+        run("git", "commit", "-m", f"⏱️ Cotes live pré-course {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+        for _ in range(3):
+            run("git", "pull", "--rebase", "origin", "main")
+            if run("git", "push", "origin", "main").returncode == 0:
+                logger.info(f"   ⬆️  poussé {datetime.now().strftime('%H:%M:%S')}")
+                return True
+            time.sleep(5)
+        logger.warning("   ⚠️ push échoué trois fois, on réessaiera au prochain tour")
+    except Exception as e:
+        logger.warning(f"   ⚠️ git : {e}")
+    return False
+
+
+def boucle(duree_min):
+    """Tourne duree_min minutes : une passe toutes les PAS_BOUCLE_S secondes,
+    relevés dans les FENETRE_BOUCLE dernières minutes, push régulier."""
+    logger.info(f"🏇 Scraper pré-course — boucle de {duree_min} min, passe toutes les {PAS_BOUCLE_S} s, fenêtre T-{FENETRE_BOUCLE} min")
+    fin = time.time() + duree_min * 60
+    dernier_push = time.time()
+    total = 0
+    while time.time() < fin:
+        t0 = time.time()
+        try:
+            total += main(fenetre=FENETRE_BOUCLE, silencieux=True) or 0
+        except Exception as e:
+            logger.warning(f"   ⚠️ passe : {e}")
+        if time.time() - dernier_push >= PUSH_TOUTES_LES_S:
+            git_push()
+            dernier_push = time.time()
+        time.sleep(max(5, PAS_BOUCLE_S - (time.time() - t0)))
+    git_push()
+    logger.info(f"🏁 fin de boucle : {total} relevés")
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    if "--boucle" in sys.argv:
+        i = sys.argv.index("--boucle")
+        boucle(int(sys.argv[i + 1]) if len(sys.argv) > i + 1 else 235)
+    else:
+        main()
