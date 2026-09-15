@@ -24,7 +24,7 @@ const num = v => { const x = parseFloat(String(v ?? '').replace(',', '.').replac
 function lireCSV(f) { if (!fs.existsSync(f)) return []; const L = fs.readFileSync(f, 'utf8').split('\n').filter(l => l.trim()); const c = L[0].split('\t'); return L.slice(1).map((l, i) => { const r = Object.fromEntries(l.split('\t').map((v, j) => [c[j], v])); r.Rang = i + 1; return r; }); }
 const SNAPS = fs.readdirSync(path.join(ROOT, 'data/rankings')).filter(d => /^\d{4}-\d{2}-\d{2}_/.test(d)).sort();
 const cache = new Map();
-const STRICT = process.argv.includes('--strict');   // snapshot strictement ANTÉRIEUR à la date (anti-fuite)
+const STRICT = !process.argv.includes('--egal');   // strictement antérieur par défaut (fuite du snapshot de l'après-midi) ; --egal pour l'ancienne convention
 const R2025 = process.argv.includes('--2025');    // classement 2025 seul (aucune fuite possible)
 function snap(date) { let ch = null; for (const s of SNAPS) if (STRICT ? s.slice(0, 10) < date : s.slice(0, 10) <= date) ch = s; if (!ch) return null; if (!cache.has(ch)) cache.set(ch, { i26: M.creerIndex(lireCSV(path.join(ROOT, 'data/rankings', ch, 'chevaux.csv')), 'chevaux'), i25: M.creerIndex(lireCSV(path.join(ROOT, 'data/rankings', ch, 'chevaux_2025.csv')), 'chevaux') }); return cache.get(ch); }
 

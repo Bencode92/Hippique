@@ -36,7 +36,7 @@ const SNAPS = fs.readdirSync(path.join(ROOT, 'data/rankings')).filter(d => /^\d{
 const cache = new Map();
 function indexesPour(date) {
   let choisi = null;
-  for (const s of SNAPS) if (s.slice(0, 10) <= date) choisi = s;
+  for (const s of SNAPS) if (s.slice(0, 10) < date) choisi = s;   // strictement antérieur
   if (!choisi) return null;
   if (cache.has(choisi)) return cache.get(choisi);
   const ix = { _snap: choisi };

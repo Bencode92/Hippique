@@ -65,7 +65,7 @@ _cache = {}
 def snap_pour(date):
     choisi = None
     for d, p in SNAPS:
-        if d <= date: choisi = p
+        if d < date: choisi = p   # strictement antérieur
     if not choisi: return None
     if choisi in _cache: return _cache[choisi]
     ch, jk, en = {}, {}, {}

@@ -3345,17 +3345,22 @@
                                 .sort((a, b) => coteJusteMap.get(b).esperance - coteJusteMap.get(a).esperance);
                             const T = modele.test_2025_2026 || {};
                             const fmtR = r => r ? `${r.roi > 0 ? '+' : ''}${r.roi} % ± ${r.se} (n=${r.n})` : '—';
-                            const el = document.createElement('p');
+                            // Course de la règle (JOUE) : la cote juste ne trie pas la règle (PLAY ± 25 sur
+                            // 61 paris, bench/regle_x_cote_juste.py) — elle n'est pas affichée, pour ne pas
+                            // inviter à re-trader le pari du test. Ailleurs : diagnostic replié.
+                            const dansLaRegle = (() => { try { const v = typeof verdictCourse === 'function' ? verdictCourse(hippodrome, courseContext.participants) : null; return !!(v && v.joue); } catch (e) { return false; } })();
+                            if (dansLaRegle) { coteJusteMap = null; throw new Error('cote juste non affichée sur une course de la règle'); }
+                            const el = document.createElement('details');
                             el.className = 'bandeau-cote-juste';
-                            el.style.cssText = `margin:0 0 0.8rem;padding:0.5rem 0.9rem;border-left:3px solid ${plays.length ? '#40e05a' : 'rgba(255,255,255,0.25)'};border-radius:4px;background:rgba(255,255,255,0.04);font-size:0.85rem;color:var(--light-gold)`;
+                            el.style.cssText = `margin:0 0 0.8rem;padding:0.4rem 0.9rem;border-left:3px solid rgba(255,255,255,0.25);border-radius:4px;background:rgba(255,255,255,0.04);font-size:0.85rem;color:var(--light-gold)`;
                             const nomCourt = p => String(p.cheval || '').replace(/\s+[HFM]\.[A-Z]+\.?\s*\d+\s*a\.?\s*$/i, '');
                             const liste = plays.map(p => { const x = coteJusteMap.get(p); const fav = parseFloat(p.cote) === Math.min(...courseContext.participants.map(q => parseFloat(q.cote) || 999)); return `<strong>n°${p['n°'] || p.numero} ${nomCourt(p)}</strong> — cote ${parseFloat(p.cote).toFixed(1)}, p_juste ${(100 * x.p).toFixed(0)} % (cote juste ${x.coteJuste.toFixed(1)}), espérance <strong style="color:#40e05a">${x.esperance >= 0 ? '+' : ''}${(100 * x.esperance).toFixed(0)} %</strong>${fav ? ' · favori' : ''}`; }).join('<br>');
-                            el.innerHTML = `<i class="fas fa-balance-scale-right" style="color:${plays.length ? '#40e05a' : 'inherit'}"></i> <strong>Cote juste</strong>
-                                <span style="opacity:.7">— proba réelle sachant la cote et le contexte (favori, champ, dérive, âge, corde), appris 2022-2026 sur ${(modele.chevaux || 0).toLocaleString('fr-FR')} chevaux</span><br>
-                                ${plays.length ? `PLAY (espérance ≥ 0) :<br>${liste}` : '<span style="opacity:.85">aucun cheval ne vaut sa cote ici — <strong>passe</strong></span>'}
-                                <details style="margin-top:0.3rem"><summary style="cursor:pointer;opacity:.7;font-size:0.8rem">ce que ça vaut, mesuré sur 2025-2026 (jamais vu à l'apprentissage), dividendes réels</summary>
-                                <div style="font-size:0.8rem;line-height:1.5;opacity:.85;margin-top:.2rem">PLAY : <strong>${fmtR(T.play)}</strong> · PLAY sur le favori : <strong>${fmtR(T.play_favori)}</strong> · passe : ${fmtR(T.passe)} · tous les chevaux : ${fmtR(T.tous)}.<br>
-                                Ce n'est pas un classement : c'est « à ce prix, ce cheval vaut-il le pari ». PLAY seul reste légèrement négatif ; sur le favori il est autour de zéro à légèrement positif. Exiger plus d'espérance n'améliore pas (malédiction du vainqueur). La cote affichée n'est pas la cote finale : la dérive peut encore bouger.</div></details>`;
+                            el.innerHTML = `<summary style="cursor:pointer"><i class="fas fa-balance-scale-right"></i> <strong>Cote juste</strong> <span style="opacity:.7">— diagnostic, hors règle : ${plays.length ? `${plays.length} cheval${plays.length > 1 ? 'x' : ''} au juste prix ou mieux` : 'aucun cheval ne vaut sa cote ici'}</span></summary>
+                                <div style="margin-top:.4rem;line-height:1.5">
+                                <span style="opacity:.7">Proba réelle sachant la cote et le contexte (favori, champ, dérive, âge, corde), apprise sur 2022-2024 (${(modele.chevaux || 0).toLocaleString('fr-FR')} chevaux), jugée sur 2025-2026.</span><br>
+                                ${plays.length ? `PLAY (espérance ≥ 0) :<br>${liste}` : '<span style="opacity:.85"><strong>passe</strong></span>'}
+                                <div style="font-size:0.8rem;line-height:1.5;opacity:.8;margin-top:.4rem">Mesuré sur 2025-2026, dividendes réels : PLAY <strong>${fmtR(T.play)}</strong> · PLAY sur le favori <strong>${fmtR(T.play_favori)}</strong> (à 0,7 erreur-type de zéro : non mesuré, pas positif) · passe ${fmtR(T.passe)}.
+                                Ce n'est pas un pari : c'est un diagnostic de prix. Il ne trie pas la règle et n'est pas affiché sur ses courses. La cote affichée n'est pas la cote finale.</div></div>`;
                             tableWrapper.parentNode.insertBefore(el, tableWrapper);
                         }
                     } catch (e) { console.warn('Cote juste indisponible', e); }

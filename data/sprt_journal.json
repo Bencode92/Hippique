@@ -1,8 +1,10 @@
 {
-  "_doc": "Journal des paris réels du test séquentiel. cote_misee = cote du favori au relevé T-2 (releve = 'T-n min') ou, à défaut, à la clôture (releve = 'clôture', à éviter : le test doit mesurer le pari fait). Écrit par bench/sprt_regle.mjs.",
+  "_doc": "Journal des paris réels du test séquentiel. Le pari est le relevé le plus proche de T-2:00 dans [T-2:40 ; T-1:20] (releve = 'T-m:ss') ; une course de la règle sans relevé dans la fenêtre est EXCLUE (liste exclues), jamais remplacée par la clôture. Écrit par bench/sprt_regle.mjs.",
   "debut": "2026-10-01",
   "paris": 0,
-  "sans_releve_live": 0,
+  "exclues_sans_releve": 0,
   "favori_change_avant_cloture": 0,
-  "lignes": []
+  "taux_bascule_favori": null,
+  "lignes": [],
+  "exclues": []
 }

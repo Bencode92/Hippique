@@ -347,12 +347,12 @@ function computeBestFormulasFromHistory() {
   } catch {}
 
   function getSnapshotBefore(courseDate) {
-    // Snapshot du MÊME JOUR ou AVANT = OK (pris le matin, course l'après-midi)
+    // Snapshot strictement ANTÉRIEUR à la date de la course (amendement du 15/09/2026)
     // "2026-04-16_09h00".slice(0,10) = "2026-04-16" <= "2026-04-16" → OK
     let best = null;
     for (const s of snapshots) {
       const snapDate = s.date.slice(0, 10); // extraire YYYY-MM-DD
-      if (snapDate <= courseDate) best = s;
+      if (snapDate < courseDate) best = s;   // strictement antérieur : un snapshot pris l'après-midi (05/09 15h44) contient déjà les gains du jour
       else break;
     }
     return best;

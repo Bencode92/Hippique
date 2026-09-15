@@ -1227,7 +1227,7 @@
         let best = null;
         for (const s of snapshots26) {
             const snapDate = s.date.slice(0, 10); // "2026-04-16_09h00" → "2026-04-16"
-            if (snapDate <= courseDate) best = s;
+            if (snapDate < courseDate) best = s;   // strictement antérieur : un snapshot de l'après-midi contient déjà les gains du jour
             else break;
         }
         return best;
@@ -2043,7 +2043,13 @@
                     Une formule choisie parmi 14 300 décrit toujours son échantillon ; avec dix buckets testés, en trouver un ou deux
                     légèrement au-dessus de la cote par hasard est la norme. Seul un écart au-delà du bruit compte.</p>` : ''}
                 <pre style="background:rgba(0,0,0,0.3);padding:1rem;border-radius:8px;font-size:0.8rem;overflow-x:auto">${jsonStr}</pre>
-                <div style="display:flex;gap:8px;margin-top:0.5rem;flex-wrap:wrap">
+                <p style="opacity:0.85;font-size:0.85rem;margin:0.6rem 0;border-left:3px solid #e05a40;padding-left:.7rem">
+                    <strong>Export fermé le 15/09/2026.</strong> La grille reste une page de recherche, sans effet sur l'écran :
+                    en walk-forward elle ne bat jamais la cote (−0,8 ± 2,0 pt de Top3 sur 770 courses), et avec 16 buckets un
+                    seuil à deux erreurs-types laisse passer un faux positif tous les deux ou trois exports. Pour démontrer +3 pt
+                    il faut ~1 000 courses de test par cellule ; la base en a 200 au mieux. <code>data/best_formulas.json</code>
+                    reste en cote seule. Une hypothèse par bucket écrite d'avance se teste avec <code>bench/grille_walkforward.mjs</code>, pas par l'énumération.</p>
+                <div style="display:none">
                     <button class="btn-filter" onclick="copyCmd()" id="btn-copy-cmd">
                         <i class="fas fa-clipboard"></i> Copier la commande terminal
                     </button>

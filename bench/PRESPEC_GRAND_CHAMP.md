@@ -112,3 +112,50 @@ Les sous-hypothèses observées ne seront pas lisibles en un an non plus : la
 différence entre « favori dont la cote a baissé » et « a monté » sur ~165
 paris a une erreur-type d'environ 28 points. Effectif requis pour un écart
 de 20 points à deux erreurs-types : ~600 paris, soit quatre saisons.
+
+## Amendement 2 du 15 septembre 2026 — l'instant de la mise, et ce que le test peut dire
+
+**Le pari est défini par son instant.** En pari mutuel le dividende est celui
+de la clôture quel que soit le moment de la mise ; le seul aléa est *quel
+cheval* est favori quand on mise. La mesure fondatrice porte sur le favori de
+la clôture ; le pari réel porte sur le favori à T-2. Pour que le test mesure
+un pari reproductible :
+
+- le pari est le relevé le plus proche de T-2:00 dans la fenêtre
+  **[T-2:40 ; T-1:20]** (`bench/sprt_regle.mjs`, `data/cotes_live`) ;
+- hors fenêtre : **pas de pari, course exclue du test** — jamais de repli sur
+  la clôture, qui mélangerait deux distributions ;
+- le journal enregistre le taux de bascule (favori à T-2 ≠ favori à la
+  clôture) ; il sera lu après une saison de relevés.
+
+**Ce que le test peut dire** (`bench/sprt_simul.py`, 20 000 tirages, cotes
+réelles des 742 paris historiques de la règle, favori médian à 4,6) :
+
+| vraie espérance | P(H1) à 6 ans | P(H0) | sans verdict à 6 ans | verdict en 1 an | année 1 : moyenne ± sd | drawdown 4 ans médian |
+|---|---|---|---|---|---|---|
+| −3,7 % | 0,02 | 0,37 | 0,61 | 0 % | −125 € ± 485 | 1 306 € |
+| +2 % | 0,13 | 0,10 | 0,77 | 0 % | +67 € ± 493 | 986 € |
+| +7 % | 0,38 | 0,02 | 0,60 | 0 % | +233 € ± 501 | 805 € |
+| +10 % | 0,58 | 0,01 | 0,42 | 0 % | +338 € ± 507 | 724 € |
+
+σ d'un pari de la règle ≈ 1,7 unité : l'incrément moyen de vraisemblance est
+de quelques millièmes par pari. **Aucun verdict n'est possible en un an**,
+quelle que soit la vérité ; même à +7 %, six saisons ne concluent H1 que
+quatre fois sur dix ; une saison perdante a une chance sur trois d'arriver
+même si la règle est vraie ; un drawdown de 800 € sur quatre saisons est
+médian. Le test est un **garde-fou de discipline** — il interdit de lire entre
+les bornes et d'ajuster — pas une machine à verdict. Le 30 septembre 2027 sera
+presque sûrement sans verdict ; c'est écrit ici pour ne pas céder à la
+tentation de lire la statistique.
+
+**Espérance rétrécie.** La règle est le produit d'une recherche hippodrome ×
+champ × favori ; « positif cinq années sur cinq » est vu après coup. Avec le
+prior — favoris nationaux à −13,7 %, calibration monotone, aucun mécanisme —
+un rétrécissement vers la pratique parente (−3,7 %) donne une espérance
+plausible de **+1 à +2 %**, pas +7,4. Le +7,4 % reste l'espérance de travail
+du test (H1) ; il ne doit pas être lu comme une prévision.
+
+**Retiré :** « avril → septembre 2026 hors échantillon : +5,4 % sur 95
+courses ». La règle a été figée le 11/09 sur des données allant jusqu'au
+08/09 ; 2026 fait partie de la mesure fondatrice. Ce n'était pas hors
+échantillon, et à 95 courses l'erreur-type est d'environ ± 12.

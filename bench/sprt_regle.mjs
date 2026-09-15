@@ -41,20 +41,40 @@ for (const f of fs.readdirSync('data/rapports').filter(x=>x.endsWith('.jsonl')))
 // qui n'a pas été fait (revue du 15/09/2026). Le dividende, lui, est celui
 // du cheval misé à la clôture — c'est ce que paie le guichet.
 const live = new Map();
+// PROTOCOLE (amendement 2 du 15/09/2026) : le pari est le relevé le plus proche
+// de T-2:00 dans la fenêtre [T-2:40 ; T-1:20]. Hors fenêtre : pas de pari, la
+// course est EXCLUE du test — pas de repli sur la clôture, qui mélangerait deux
+// distributions (le favori à T-2 n'est pas celui de la clôture dans une course
+// sur dix à quinze). Les fichiers récents portent l'historique des relevés
+// (releves) ; les anciens n'ont qu'un relevé, pris tel quel s'il est dans la fenêtre.
+const FEN_MIN = 80, FEN_MAX = 160, CIBLE = 120;   // secondes avant le départ
 try {
   for (const f of fs.readdirSync('data/cotes_live').filter(x=>x.endsWith('_live.json'))) {
     const m = f.match(/^(\d{4}-\d{2}-\d{2})_(.+)_R(\d+)C(\d+)_live\.json$/); if (!m) continue;
     try {
       const d = JSON.parse(fs.readFileSync('data/cotes_live/'+f,'utf8'));
-      const ps = (d.participants||[]).filter(p=>p.cote_live>1);
-      if (ps.length < 2) continue;
-      const fav = ps.reduce((a,b)=>a.cote_live<=b.cote_live?a:b);
-      live.set(`${m[1]}|${norm(m[2])}|${+m[3]}|${+m[4]}`, { n: fav.numPmu, nom: fav.nom, cote: fav.cote_live, cr: fav.cote_reference, minutes: d.minutes_avant_depart, heure: d.scraped_at });
+      const depart = d.heure_depart ? new Date(d.heure_depart).getTime() : null;
+      // candidats : l'historique s'il existe, sinon le relevé unique
+      const cands = (d.releves && d.releves.length ? d.releves.map(r => ({ t: r.scraped_at, cotes: r.cotes, min: r.minutes_avant_depart }))
+                                                   : [{ t: d.scraped_at, cotes: Object.fromEntries((d.participants||[]).map(p=>[String(p.numPmu), p.cote_live])), min: d.minutes_avant_depart }]);
+      let best = null;
+      for (const c of cands) {
+        const sec = depart && c.t ? (depart - new Date(c.t).getTime()) / 1000 : (c.min != null ? c.min * 60 : null);
+        if (sec == null || sec < FEN_MIN || sec > FEN_MAX) continue;
+        if (!best || Math.abs(sec - CIBLE) < Math.abs(best.sec - CIBLE)) best = { sec, cotes: c.cotes };
+      }
+      if (!best) continue;
+      const ref = Object.fromEntries((d.participants||[]).map(p=>[String(p.numPmu), p]));
+      const nums = Object.entries(best.cotes).filter(([,c]) => c > 1);
+      if (nums.length < 2) continue;
+      const [n, cote] = nums.reduce((a, b) => b[1] < a[1] ? b : a);
+      live.set(`${m[1]}|${norm(m[2])}|${+m[3]}|${+m[4]}`, { n: +n, nom: ref[n]?.nom || '', cote, cr: ref[n]?.cote_reference, sec: Math.round(best.sec) });
     } catch {}
   }
 } catch {}
 
-const L = [];
+const DEBUT = '2026-10-01';
+const L = []; const EXCLUES = [];
 for (const f of fs.readdirSync('data/histo').filter(x=>x.endsWith('.jsonl')))
   for (const l of fs.readFileSync('data/histo/'+f,'utf8').split('\n')) {
     if (!l.trim()) continue; const d = JSON.parse(l);
@@ -76,10 +96,14 @@ for (const f of fs.readdirSync('data/histo').filter(x=>x.endsWith('.jsonl')))
     // n'ajoute que de la variance. Elle reste OBSERVEE ci-dessous : si elle
     // est reelle, elle apparaitra ; sinon elle n'aura rien coute.
     const sg = rap.get(`${d.date}|${h}|${d.r}|${d.c}`); if (!sg) continue;
-    // le favori misé : celui du relevé T-2 s'il existe, sinon celui de la clôture (signalé)
+    // le favori misé : celui du relevé dans la fenêtre [T-2:40 ; T-1:20]. En mode
+    // prospectif, pas de relevé = pas de pari (course exclue). En mode historique
+    // (référence, non valide), la clôture est prise faute de mieux.
     const lv = live.get(`${d.date}|${h}|${d.r}|${d.c}`);
-    const mise = lv ? { n: lv.n, nom: lv.nom, cote: lv.cote, cr: lv.cr, source: lv.minutes == null ? 'T-? min' : `T${lv.minutes < 0 ? '+' : '-'}${Math.abs(lv.minutes)} min` }
-                    : { n: fav.n, nom: fav.nom, cote: fav.c, cr: fav.cr, source: 'clôture' };
+    const prospectifDate = d.date >= DEBUT;
+    if (!lv && prospectifDate) { EXCLUES.push({ date: d.date, hip: d.hip, r: d.r, c: d.c, motif: 'aucun relevé dans [T-2:40 ; T-1:20]' }); continue; }
+    const mise = lv ? { n: lv.n, nom: lv.nom, cote: lv.cote, cr: lv.cr, source: `T-${Math.floor(lv.sec / 60)}:${String(lv.sec % 60).padStart(2, '0')}` }
+                    : { n: fav.n, nom: fav.nom, cote: fav.c, cr: fav.cr, source: 'clôture (historique seulement)' };
     const m = sg.find(x=>String(x.comb) === String(mise.n));
     const finalDuMise = ps.find(p=>String(p.n) === String(mise.n));
     // derive du favori misé : sa cote a-t-elle baisse depuis le matin ?
@@ -89,7 +113,6 @@ for (const f of fs.readdirSync('data/histo').filter(x=>x.endsWith('.jsonl')))
              der, gagne: !!(m && m.div > 0), dividende: m ? m.div : 0 });
   }
 L.sort((a,b)=>a.date.localeCompare(b.date));
-const DEBUT = '2026-10-01';
 const prospectif = !process.argv.includes('--historique');
 const jeu = prospectif ? L.filter(x => x.date >= DEBUT) : L;
 
@@ -197,10 +220,11 @@ function journal() {
              gagne: x.gagne, dividende: x.dividende, gain_20e: Math.round((x.gagne ? x.dividende * 20 - 20 : -20) * 100) / 100, S: Math.round(Sj * 1000) / 1000 };
   });
   fs.writeFileSync('data/sprt_journal.json', JSON.stringify({
-    _doc: "Journal des paris réels du test séquentiel. cote_misee = cote du favori au relevé T-2 (releve = 'T-n min') ou, à défaut, à la clôture (releve = 'clôture', à éviter : le test doit mesurer le pari fait). Écrit par bench/sprt_regle.mjs.",
-    debut: DEBUT, paris: lignes.length, sans_releve_live: lignes.filter(l => l.releve === 'clôture').length, favori_change_avant_cloture: lignes.filter(l => l.favori_final_identique === false).length,
-    lignes }, null, 2));
-  console.log(`  journal écrit dans data/sprt_journal.json (${lignes.length} paris, ${lignes.filter(l => l.releve === 'clôture').length} sans relevé live)`);
+    _doc: "Journal des paris réels du test séquentiel. Le pari est le relevé le plus proche de T-2:00 dans [T-2:40 ; T-1:20] (releve = 'T-m:ss') ; une course de la règle sans relevé dans la fenêtre est EXCLUE (liste exclues), jamais remplacée par la clôture. Écrit par bench/sprt_regle.mjs.",
+    debut: DEBUT, paris: lignes.length, exclues_sans_releve: EXCLUES.length, favori_change_avant_cloture: lignes.filter(l => l.favori_final_identique === false).length,
+    taux_bascule_favori: lignes.length ? Math.round(1000 * lignes.filter(l => l.favori_final_identique === false).length / lignes.length) / 1000 : null,
+    lignes, exclues: EXCLUES }, null, 2));
+  console.log(`  journal écrit dans data/sprt_journal.json (${lignes.length} paris, ${EXCLUES.length} course(s) de la règle exclue(s) faute de relevé dans la fenêtre)`);
 }
 if (prospectif) { ecrire(jeu.length, S, verdict); journal(); }
 else console.log('\n  (mode historique : l\'état prospectif n\'est pas modifié)');

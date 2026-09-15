@@ -101,22 +101,23 @@ for i in sorted(idx, key=lambda i: cote[i])[:12]:
     print(f"   cote {cote[i]:5.1f}   marché {100/cote[i]:5.1f} %   p_juste {100*p1[i]:5.1f} %   cote juste {1/p1[i]:5.1f}   espérance {100*e:+6.1f} %   {'PLAY' if e >= 0 else 'passe':5s}   {'✓ gagné' if y[i] else ''}")
 
 # ── export du modèle pour l'écran (js/cote-juste.js) ───────────────────
-# Réajusté sur TOUT l'historique (2022 → 2026) une fois le protocole validé ci-dessus :
-# les poids publiés utilisent toutes les données, les chiffres de test restent ceux de 2025-26.
-mf = LogisticRegression(C=10, max_iter=2000).fit(X, y)
-pf = mf.predict_proba(X)[:, 1]
+# Les poids publiés sont ceux du modèle JUGÉ (appris sur 2022-2024) — pas un
+# réajustement sur tout : le JS en production doit être le modèle dont les
+# chiffres de test sont donnés (revue du 15/09/2026).
+mf = m1
+pf = p1
 rng = np.random.default_rng(1)
 verif = [dict(x=[float(v) for v in X[i]], p=float(pf[i])) for i in rng.choice(len(X), 8, replace=False)]
 esp = p1 * cote - 1
 def roi_n(mask):
     g = gain[mask]; return dict(roi=round(100 * g.mean(), 1), se=round(100 * g.std(ddof=1) / math.sqrt(mask.sum()), 1), n=int(mask.sum()))
 modele = {
-    '_doc': 'Cote juste = proba réelle de gagner sachant la cote et le contexte. p = 1/(1+exp(-(b0 + Σ w·x))). Appris par bench/cote_juste.py ; protocole 2022-24 → test 2025-26 ; poids publiés réajustés sur 2022-2026. Espérance = p × cote − 1 ; PLAY si ≥ 0.',
-    'appris_le': '2026-09-14', 'chevaux': int(len(X)), 'periode': [str(min(dates)), str(max(dates))],
+    '_doc': 'Cote juste = proba réelle de gagner sachant la cote et le contexte. p = 1/(1+exp(-(b0 + Σ w·x))). Appris par bench/cote_juste.py sur 2022-2024, jugé sur 2025-2026 ; les poids publiés sont ceux du modèle jugé. Espérance = p × cote − 1 ; PLAY si ≥ 0. Statut : diagnostic hors règle, pas un tri de la règle (bench/regle_x_cote_juste.py).',
+    'appris_le': '2026-09-15', 'chevaux': int(tr.sum()), 'periode': ['2022-01-02', '2024-12-31'],
     'variables': NOMS, 'intercept': float(mf.intercept_[0]), 'poids': [float(w) for w in mf.coef_[0]],
     'premium': sorted(PREMIUM),
     'test_2025_2026': {'tous': roi_n(te), 'play': roi_n(te & (esp >= 0)), 'play_favori': roi_n(te & (esp >= 0) & (X[:, 2] == 1)), 'passe': roi_n(te & (esp < 0))},
     'verification': verif,
 }
 json.dump(modele, open('data/cote_juste.json', 'w'), ensure_ascii=False, indent=1)
-print(f"\n→ data/cote_juste.json écrit ({len(NOMS)} variables, réajusté sur {len(X)} chevaux)")
+print(f"\n→ data/cote_juste.json écrit ({len(NOMS)} variables, modèle jugé : appris sur {int(tr.sum())} chevaux 2022-2024)")

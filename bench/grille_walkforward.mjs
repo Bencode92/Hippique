@@ -51,7 +51,7 @@ const SNAPS = fs.readdirSync(path.join(ROOT, 'data/rankings')).filter(d => /^\d{
 const cache = new Map();
 function snapPour(date) {
   let choisi = null;
-  for (const s of SNAPS) if (s.slice(0, 10) <= date) choisi = s;
+  for (const s of SNAPS) if (s.slice(0, 10) < date) choisi = s;   // strictement antérieur : le snapshot du 05/09 à 15h44 contenait les gains du jour
   if (!choisi) return null;
   if (cache.has(choisi)) return cache.get(choisi);
   const dir = path.join(ROOT, 'data/rankings', choisi), S = {};
