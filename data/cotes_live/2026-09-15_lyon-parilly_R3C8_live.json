@@ -1,0 +1,164 @@
+{
+  "course": "PRIX SERGE MAILLARD",
+  "numero": 8,
+  "reunion": 3,
+  "heure_depart": 1789481040000,
+  "distance": 1600,
+  "scraped_at": "2026-09-15T15:59:32.061656",
+  "minutes_avant_depart": 4,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "MAGIC STARS",
+      "cote_live": 2.8,
+      "cote_reference": 5.1,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1789480757000
+    },
+    {
+      "numPmu": 2,
+      "nom": "GREY BELLE",
+      "cote_live": 20.0,
+      "cote_reference": 18.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789480757000
+    },
+    {
+      "numPmu": 3,
+      "nom": "RESOLUTION",
+      "cote_live": 27.0,
+      "cote_reference": 24.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789480757000
+    },
+    {
+      "numPmu": 4,
+      "nom": "BALAGAN",
+      "cote_live": 9.8,
+      "cote_reference": 6.3,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1789480757000
+    },
+    {
+      "numPmu": 5,
+      "nom": "TIBERIANA",
+      "cote_live": 11.0,
+      "cote_reference": 15.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1789480757000
+    },
+    {
+      "numPmu": 6,
+      "nom": "BOAVISTA",
+      "cote_live": 7.7,
+      "cote_reference": 3.5,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789480757000
+    },
+    {
+      "numPmu": 7,
+      "nom": "MISTER GAN",
+      "cote_live": 36.0,
+      "cote_reference": 22.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789480757000
+    },
+    {
+      "numPmu": 8,
+      "nom": "HURRICANE",
+      "cote_live": 8.1,
+      "cote_reference": 8.5,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1789480757000
+    },
+    {
+      "numPmu": 9,
+      "nom": "ELUSIVE NELSON",
+      "cote_live": 6.4,
+      "cote_reference": 17.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1789480757000
+    },
+    {
+      "numPmu": 10,
+      "nom": "MAGIC TREVILLE",
+      "cote_live": 36.0,
+      "cote_reference": 35.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789480757000
+    },
+    {
+      "numPmu": 11,
+      "nom": "LORLISALSA",
+      "cote_live": 19.0,
+      "cote_reference": 10.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789480757000
+    }
+  ],
+  "hippodrome": "LYON-PARILLY",
+  "releves": [
+    {
+      "scraped_at": "2026-09-15T15:58:11.894366",
+      "minutes_avant_depart": 5.804528566666666,
+      "cotes": {
+        "1": 3.2,
+        "2": 15.0,
+        "3": 22.0,
+        "4": 9.3,
+        "5": 11.0,
+        "6": 6.3,
+        "7": 30.0,
+        "8": 8.2,
+        "9": 10.0,
+        "10": 27.0,
+        "11": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T15:58:52.118252",
+      "minutes_avant_depart": 5.1378593666666665,
+      "cotes": {
+        "1": 2.8,
+        "2": 17.0,
+        "3": 24.0,
+        "4": 9.6,
+        "5": 11.0,
+        "6": 6.8,
+        "7": 31.0,
+        "8": 9.0,
+        "9": 9.4,
+        "10": 30.0,
+        "11": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T15:59:32.061656",
+      "minutes_avant_depart": 4.46860035,
+      "cotes": {
+        "1": 2.8,
+        "2": 20.0,
+        "3": 27.0,
+        "4": 9.8,
+        "5": 11.0,
+        "6": 7.7,
+        "7": 36.0,
+        "8": 8.1,
+        "9": 6.4,
+        "10": 36.0,
+        "11": 19.0
+      }
+    }
+  ]
+}
