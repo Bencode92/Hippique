@@ -4,26 +4,26 @@
   "reunion": 3,
   "heure_depart": 1789474320000,
   "distance": 2400,
-  "scraped_at": "2026-09-15T14:12:52.331242",
-  "minutes_avant_depart": -1,
+  "scraped_at": "2026-09-15T14:16:12.386096",
+  "minutes_avant_depart": -4,
   "participants": [
     {
       "numPmu": 1,
       "nom": "BLACK SAXON",
-      "cote_live": 3.2,
+      "cote_live": 3.3,
       "cote_reference": 2.3,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789474360000
+      "timestamp_cote": 1789474380000
     },
     {
       "numPmu": 2,
       "nom": "NIAGARO",
-      "cote_live": 29.0,
+      "cote_live": 30.0,
       "cote_reference": 25.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789474360000
+      "timestamp_cote": 1789474380000
     },
     {
       "numPmu": 3,
@@ -32,34 +32,34 @@
       "cote_reference": 7.3,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789474360000
+      "timestamp_cote": 1789474380000
     },
     {
       "numPmu": 4,
       "nom": "SEA THE AURORA",
-      "cote_live": 6.6,
+      "cote_live": 6.3,
       "cote_reference": 3.4,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789474360000
+      "timestamp_cote": 1789474380000
     },
     {
       "numPmu": 5,
       "nom": "PINK MONDAY",
-      "cote_live": 2.4,
+      "cote_live": 2.3,
       "cote_reference": 5.6,
-      "tendance": "",
+      "tendance": "-",
       "favoris": true,
-      "timestamp_cote": 1789474360000
+      "timestamp_cote": 1789474380000
     },
     {
       "numPmu": 6,
       "nom": "RAW ENERGY",
-      "cote_live": 29.0,
+      "cote_live": 30.0,
       "cote_reference": 14.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789474360000
+      "timestamp_cote": 1789474380000
     }
   ],
   "hippodrome": "LYON-PARILLY",
@@ -194,6 +194,66 @@
         "4": 6.6,
         "5": 2.4,
         "6": 29.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T14:13:31.860214",
+      "minutes_avant_depart": -1.52845785,
+      "cotes": {
+        "1": 3.3,
+        "2": 30.0,
+        "3": 5.0,
+        "4": 6.3,
+        "5": 2.3,
+        "6": 30.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T14:14:11.977561",
+      "minutes_avant_depart": -2.1951264499999996,
+      "cotes": {
+        "1": 3.3,
+        "2": 30.0,
+        "3": 5.0,
+        "4": 6.3,
+        "5": 2.3,
+        "6": 30.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T14:14:51.887146",
+      "minutes_avant_depart": -2.86179515,
+      "cotes": {
+        "1": 3.3,
+        "2": 30.0,
+        "3": 5.0,
+        "4": 6.3,
+        "5": 2.3,
+        "6": 30.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T14:15:32.068044",
+      "minutes_avant_depart": -3.528464233333333,
+      "cotes": {
+        "1": 3.3,
+        "2": 30.0,
+        "3": 5.0,
+        "4": 6.3,
+        "5": 2.3,
+        "6": 30.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T14:16:12.386096",
+      "minutes_avant_depart": -4.203582,
+      "cotes": {
+        "1": 3.3,
+        "2": 30.0,
+        "3": 5.0,
+        "4": 6.3,
+        "5": 2.3,
+        "6": 30.0
       }
     }
   ]
