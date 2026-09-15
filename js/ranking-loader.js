@@ -656,7 +656,8 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             this.loadCategoryData('chevaux'),
             this.loadCategoryData('jockeys'),
             this.loadCategoryData('cravache_or'),
-            this.loadHistoricalData(['chevaux', 'jockeys', 'cravache_or']),
+            this.loadCategoryData('entraineurs'),   // levier de la grille depuis le 15/09/2026
+            this.loadHistoricalData(['chevaux', 'jockeys', 'cravache_or', 'entraineurs']),
             this.loadClaudeCorrespondances()
         ]);
         return this._corePromise;
@@ -669,10 +670,9 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
     async loadExtraData() {
         if (this._extraPromise) return this._extraPromise;
         this._extraPromise = Promise.all([
-            this.loadCategoryData('entraineurs'),
             this.loadCategoryData('eleveurs'),
             this.loadCategoryData('proprietaires'),
-            this.loadHistoricalData(['entraineurs', 'eleveurs', 'proprietaires']),
+            this.loadHistoricalData(['eleveurs', 'proprietaires']),
             this.loadDistanceStats(),   // getDistanceBonus() — ranking-loader.js:2551
             this.loadFormeRecente(),
             this.loadComboStats(),
@@ -3120,6 +3120,9 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         const jk25 = this.trouverItemDansClassement(this.dataHistorique?.jockeys_2025 || [], participant.jockey, 'jockeys');
         const cr = this.trouverItemDansClassement(this.data.cravache_or, participant.jockey, 'cravache_or');
         const cr25 = this.trouverItemDansClassement(this.dataHistorique?.cravache_or_2025 || [], participant.jockey, 'cravache_or');
+        const entr = participant.entraineur || participant['entraîneur'] || '';
+        const en = this.trouverItemDansClassement(this.data.entraineurs || [], entr, 'entraineurs');
+        const en25 = this.trouverItemDansClassement(this.dataHistorique?.entraineurs_2025 || [], entr, 'entraineurs');
 
         const coteVal = parseFloat(participant.cote) || 0;
         const coteRef = parseFloat(participant.cote_reference) || 0;
@@ -3138,6 +3141,19 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
         const popCh25 = (this.dataHistorique?.chevaux_2025 || []).length || 1;
         const popJk25 = (this.dataHistorique?.jockeys_2025 || []).length || 1;
         const popCr25 = (this.dataHistorique?.cravache_or_2025 || []).length || 1;
+        const popEn = (this.data.entraineurs || []).length || 1;
+        const popEn25 = (this.dataHistorique?.entraineurs_2025 || []).length || 1;
+        // Musique : même formule que stats.html (parseMusique) — avant, 50 pour tout le
+        // monde, donc une formule publiée avec « Musique » ne s'appliquait pas à l'écran.
+        const parseMusique = m => {
+            if (!m) return 50;
+            const pos = String(m).replace(/\(\d+\)/g, '').match(/(\d+|[DRT])[a-z]/gi);
+            if (!pos || pos.length < 2) return 50;
+            const l = pos.slice(0, 5).map(x => { const v = x.slice(0, -1); if ('DRT'.includes(v)) return 12; const n = parseInt(v); return n === 0 ? 12 : n; });
+            let sc = 0, w = 0;
+            l.forEach((ps, i) => { const wt = (l.length - i) / l.length; const sv = ps === 1 ? 100 : ps === 2 ? 80 : ps === 3 ? 65 : ps <= 5 ? 45 : ps <= 8 ? 25 : 10; sc += sv * wt; w += wt; });
+            return w > 0 ? sc / w : 50;
+        };
         const rS = (it, pp) => it ? 100 * (1 - (parseInt(it.Rang) - 1) / pp) : 50;
         const bR = (a, pA, b, pB) => {
             const sa = a ? rS(a, pA) : null, sb = b ? rS(b, pB) : null;
@@ -3156,7 +3172,7 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             'Cote ref': scoreCoteRef,
             'Dérive cote': deriveScore,
             'Valeur FG': valeur > 0 ? valeur : 50,
-            'Musique': 50, // pas dispo simple ici, fallback neutre
+            'Musique': parseMusique(participant.musique),
             'Gains (log)': gains > 0 ? Math.log10(gains) * 10 : 0,
             'TauxV indiv': nbC >= 2 ? nbV / nbC * 100 : 8,
             'TauxP indiv': nbC >= 2 ? nbP / nbC * 100 : 30,
@@ -3174,6 +3190,11 @@ WEIGHT_DISTANCE_MULTIPLIERS: {
             'Jk GainMoy': Math.max(jk25?.GainMoyen || 0, jk?.GainMoyen || 0) > 0
                 ? Math.log10(Math.max(jk25?.GainMoyen || 0, jk?.GainMoyen || 0)) * 15 : 0,
             'Cravache Rang': bR(cr25, popCr25, cr, popCr),
+            'Ent TauxV': mxF(en25, en, 'TauxVictoire') || 8,
+            'Ent TauxP': mxF(en25, en, 'TauxPlace') || 30,
+            'Ent Rang': bR(en25, popEn25, en, popEn),
+            'Ent GainMoy': Math.max(en25?.GainMoyen || 0, en?.GainMoyen || 0) > 0
+                ? Math.log10(Math.max(en25?.GainMoyen || 0, en?.GainMoyen || 0)) * 15 : 0,
             'Forme récente': 50,
             'Combo Jk*Ent': 10,
         };
