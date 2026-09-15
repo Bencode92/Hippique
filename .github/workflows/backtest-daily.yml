@@ -47,6 +47,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action - Backtest"
 
+          python3 scripts/update_courses_index.py || true
           git add data/backtest/ data/courses/ 2>/dev/null || true
 
           if git diff --cached --quiet; then

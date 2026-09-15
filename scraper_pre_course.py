@@ -291,7 +291,12 @@ def git_push():
         return subprocess.run(cmd, capture_output=True, text=True)
     try:
         run("python3", "scripts/update_cotes_live_index.py")
-        run("git", "add", "data/cotes_live/")
+        # l'index des courses aussi : le front ne voit une journée que par
+        # data/courses/_index.json, et les workflows qui déposent des fichiers
+        # (backtest, extraction) ne le régénèrent pas toujours — la boucle, elle,
+        # passe toutes les 3 minutes.
+        run("python3", "scripts/update_courses_index.py")
+        run("git", "add", "data/cotes_live/", "data/courses/_index.json")
         if run("git", "diff", "--cached", "--quiet").returncode == 0:
             return False
         run("git", "commit", "-m", f"⏱️ Cotes live pré-course {datetime.now().strftime('%Y-%m-%d %H:%M')}")

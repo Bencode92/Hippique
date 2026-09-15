@@ -1202,6 +1202,7 @@
                     <button id="refreshBtn" class="nav-date-btn" style="background:linear-gradient(135deg,#0a4d3a,#1a7050);color:#5fffaf" title="Recharger les courses depuis GitHub (cache bypassé)">
                         <i class="fas fa-sync-alt"></i> Refresh data
                     </button>
+                    <span id="live-maj" style="grid-column:1 / -1;font-size:0.8rem;opacity:.65;text-align:center" title="Les cotes live sont relevées toutes les 40 s dans les 6 dernières minutes avant chaque départ, poussées toutes les 3 min, et la page les recharge toutes les 60 s (aujourd'hui, 9h-22h)."><i class="fas fa-satellite-dish"></i> cotes live · rechargées toutes les 60 s</span>
                 </div>
                 
                 <button class="date-button" id="date-button">
@@ -2496,6 +2497,46 @@
             let courseData = {};
             window.currentDate = new Date();
             let activeDetailSection = null;
+            let activeDetailInfo = null;
+
+            // ── COTES LIVE, AUTOMATIQUEMENT ─────────────────────────────────
+            // Le scraper pousse un relevé toutes les 3 minutes dans les 6 dernières
+            // minutes avant chaque départ. La page va les chercher toutes les 60 s
+            // (aujourd'hui seulement, 9h-22h) ; si une cote a bougé, les cartes et la
+            // course ouverte sont redessinées — verdict de la règle, cote juste,
+            // rang marché compris — sans recharger la page ni perdre sa place.
+            let _liveHash = '';
+            const _hashCotes = () => JSON.stringify(Object.values(courseData || {}).flat().map(c => (c && c.participants || []).map(p => p.cote)));
+            async function rafraichirCotesLive() {
+                try {
+                    if (!courseData || !Object.keys(courseData).length) return;
+                    const dateStr = coursesLoader.formatDateYMD(window.currentDate || new Date());
+                    if (dateStr !== coursesLoader.formatDateYMD(new Date())) return;
+                    const h = new Date().getHours(); if (h < 9 || h > 22) return;
+                    const avant = _hashCotes();
+                    await applyCotesLive(courseData, dateStr);
+                    const el = document.getElementById('live-maj');
+                    if (el) el.innerHTML = `<i class="fas fa-satellite-dish"></i> cotes live · ${new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' })}`;
+                    const apres = _hashCotes();
+                    if (apres === avant || apres === _liveHash) return;
+                    _liveHash = apres;
+                    const info = activeDetailInfo;
+                    const y = window.scrollY;
+                    window._rafraichissementLive = true;
+                    try {
+                        await displayHippodromes();
+                        if (info) {
+                            activeDetailSection = null;
+                            const card = document.querySelector(`.course-card[data-detail-id="${info.detailId}"]`);
+                            if (card) await toggleCourseDetails(info.hippodrome, info.courseName, info.detailId, card);
+                        }
+                        window.scrollTo({ top: y });
+                    } finally { window._rafraichissementLive = false; }
+                    console.log('📡 cotes live rafraîchies, écran redessiné');
+                } catch (e) { console.warn('rafraîchissement cotes live', e); }
+            }
+            setInterval(rafraichirCotesLive, 60000);
+            window.rafraichirCotesLive = rafraichirCotesLive;   // pour forcer depuis la console
             
             // Mise à jour de la date affichée
             currentDateSpan.textContent = coursesLoader.getReadableDate(window.currentDate);
@@ -3181,11 +3222,13 @@
                     detailsElement.classList.add('visible');
                 }, 10);
                 
-                // Mettre à jour la section active
+                // Mettre à jour la section active (et de quoi la rouvrir après un
+                // rafraîchissement des cotes live)
                 activeDetailSection = detailsElement;
+                activeDetailInfo = { hippodrome, courseName, detailId };
                 
-                // Faire défiler vers la section visible
-                setTimeout(() => {
+                // Faire défiler vers la section visible — sauf si c'est un rafraîchissement
+                if (!window._rafraichissementLive) setTimeout(() => {
                     detailsElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }, 100);
                 
@@ -3197,6 +3240,7 @@
                         if (detailsElement.parentNode) {
                             detailsElement.parentNode.removeChild(detailsElement);
                             activeDetailSection = null;
+                            activeDetailInfo = null;
                         }
                     }, 300);
                 });
