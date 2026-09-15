@@ -2158,11 +2158,7 @@
             el.style.cssText = 'margin:0 0 .9rem;padding:.7rem .9rem;background:rgba(20,60,58,.35);border:1px solid rgba(233,209,140,.18);border-radius:6px';
             el._rerender = () => { const n = renderPanneauParis(null, participants); if (n) el.innerHTML = n.innerHTML; };
             el.innerHTML = `
-                ${R ? `<div style="margin-bottom:.6rem;padding:.45rem .7rem;background:rgba(212,175,55,.1);border-left:3px solid var(--gold);border-radius:3px">
-                    <span style="font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;opacity:.65">Pari le moins coûteux</span><br>
-                    <strong style="color:var(--gold)">${R.pari.toUpperCase()}</strong> — ${R.chevaux.join(' + ')}
-                    <span style="opacity:.7;font-size:.86rem">&nbsp;·&nbsp;${R.pourquoi}</span>
-                </div>` : ''}
+                ${''/* plus de « pari le moins coûteux » : le verdict est porté par la règle et la cote juste, ce panneau n'est qu'informatif */}
                 <div style="display:flex;gap:1.2rem;flex-wrap:wrap">
                     ${col('Simple gagnant', pan.simple, '(exact)')}
                     ${col('Couplé gagnant', pan.couple)}
@@ -3139,18 +3135,15 @@
                                     <th>Cheval</th>
                                     <th>Jockey</th>
                                     <th>Entraîneur</th>
-                                    <th style="width:50px">Poids</th>
-                                    <th style="width:50px">Cote</th>
-                                    <th style="width:140px" title="Score formule actuelle (du site)">Score</th>
-                                    <th style="width:78px" title="Rang par la cote — la référence. Son n°1 gagne 33,8 % ± 1,9 du temps sur les 637 courses premium depuis le 16/04/2026, c'est-à-dire exactement l'univers sur lequel l'Optimale est mesurée. (Les 34,9 % affichés auparavant venaient de 14 620 courses toutes catégories : ils n'étaient pas comparables.)">Marché<br><span style="font-weight:400;opacity:.6;font-size:.8em">33,8 %</span></th>
-                                    <th style="width:110px" title="p_juste : probabilité réelle de gagner sachant la cote et le contexte (favori, champ, dérive, âge, corde, hippodrome), apprise sur 2022-2026. Espérance = p_juste × cote − 1. PLAY si ≥ 0. Mesuré sur 2025-2026 (jamais vu) : PLAY −4,4 % ± 4,9 sur 2 209 paris, PLAY sur le favori +4,8 % ± 7,2 sur 567, passe −20,4 %. L'ancienne colonne Optimale a été retirée : hors échantillon, aucune de ses formules ne battait la cote (bench/grille_walkforward.mjs).">Cote juste<br><span style="font-weight:400;opacity:.6;font-size:.8em">p · espérance</span></th>
-                                    <th style="width:80px" title="Nombre de méthodes plaçant le cheval dans leur top 3. Indicatif : les méthodes ne se valent pas, seule la colonne Marché a une performance établie.">Accord</th>
+                                    <th style="width:90px" title="Cote de référence du matin → cote actuelle. La flèche est la dérive : une cote qui baisse est de l'argent qui rentre.">Cote</th>
+                                    <th style="width:70px" title="Rang par la cote : le favori est 1. C'est la référence — son n°1 gagne une course sur trois.">Marché</th>
+                                    <th style="width:110px" title="p_juste : probabilité réelle de gagner sachant la cote et le contexte (favori, champ, dérive, âge, corde, hippodrome), apprise sur 2022-2026. Espérance = p_juste × cote − 1. PLAY si ≥ 0. Mesuré sur 2025-2026 (jamais vu) : PLAY −4,4 % ± 4,9 sur 2 209 paris, PLAY sur le favori +4,8 % ± 7,2 sur 567, passe −20,4 %.">Cote juste<br><span style="font-weight:400;opacity:.6;font-size:.8em">p · espérance</span></th>
                                     <th style="width:55px">Arrivée</th>
                                 </tr>
                             </thead>
                             <tbody id="participants-${detailId}">
                                 <tr>
-                                    <td colspan="11" class="loading-indicator">
+                                    <td colspan="8" class="loading-indicator">
                                         <i class="fas fa-spinner fa-spin"></i> Calcul des scores prédictifs...
                                     </td>
                                 </tr>
@@ -3160,17 +3153,11 @@
                     
                     <div class="action-buttons" style="flex-wrap:wrap;gap:0.4rem">
                         <span style="opacity:0.7;font-size:0.85rem;align-self:center;margin-right:0.3rem">Trier :</span>
-                        <button class="action-btn primary sort-btn" data-detail="${detailId}" data-key="numero" data-asc="true" title="Tri par numéro de partant">
+                        <button class="action-btn primary sort-btn" data-detail="${detailId}" data-key="rg-cote" data-asc="true" title="Ordre du marché : le favori en haut">
+                            <i class="fas fa-coins"></i> Marché
+                        </button>
+                        <button class="action-btn secondary sort-btn" data-detail="${detailId}" data-key="numero" data-asc="true" title="Tri par numéro de partant">
                             <i class="fas fa-list-ol"></i> N°
-                        </button>
-                        <button class="action-btn secondary sort-btn" data-detail="${detailId}" data-key="score" data-asc="false" title="Tri par score formule actuelle (DESC)">
-                            <i class="fas fa-star"></i> Score actuel
-                        </button>
-                        <button class="action-btn secondary sort-btn" data-detail="${detailId}" data-key="rg-optimal" data-asc="true" title="Tri par rang de la formule Optimale (1 = meilleur). Le classement choisi est retenu pour toutes les courses suivantes.">
-                            <i class="fas fa-flask"></i> Rg Optimal
-                        </button>
-                        <button class="action-btn secondary sort-btn" data-detail="${detailId}" data-key="rg-cote" data-asc="true" title="Tri par cote ASC (favoris marché)">
-                            <i class="fas fa-coins"></i> Rg Cote
                         </button>
                         <button class="action-btn secondary" id="simulate-bets-${detailId}" style="margin-left:auto">
                             <i class="fas fa-calculator"></i> Simuler des paris
@@ -3250,6 +3237,7 @@
                         <a href="stats.html#course-${encodeURIComponent(courseName || '')}" target="_blank" rel="noopener" style="background:rgba(212,175,55,0.15);border:1px solid var(--gold);color:var(--gold);padding:0.3rem 0.7rem;border-radius:4px;font-size:0.8rem;text-decoration:none;white-space:nowrap">
                             <i class="fas fa-flask"></i> Ranking optimal (stats)
                         </a>`;
+                    weightsInfo.style.display = 'none';   // la formule du site n'a plus de valeur mesurée : gardée comme ancre, pas affichée
                     tableWrapper.parentNode.insertBefore(weightsInfo, tableWrapper);
 
                     // Rattachement au classement : sur quoi le score s'appuie vraiment.
@@ -3323,10 +3311,31 @@
                         }
                     } catch (e) { console.warn('Cote juste indisponible', e); }
                     
+                    // Lecture linéaire : 1. la règle (le pari du test), 2. la cote juste, 3. le
+                    // rattachement, 4. les combinés repliés (pour information : mesurés, tous
+                    // perdants), 5. la table dans l'ordre du marché.
+                    try {
+                        const zone = tableWrapper.parentNode;
+                        const pan = zone.querySelector('.panneau-paris');
+                        if (pan) {
+                            let det = zone.querySelector('.combines-details');
+                            if (!det) {
+                                det = document.createElement('details');
+                                det.className = 'combines-details';
+                                det.style.cssText = 'margin:0 0 .8rem;font-size:.85rem;color:var(--light-gold)';
+                                det.innerHTML = `<summary style="cursor:pointer;opacity:.75">Couplé, trio, 2 sur 4 — pour information <span style="opacity:.6">(mesurés sur 2022-2026 : tous perdants ; le couplé favori + 2e fait −20 % à Longchamp là où le simple gagnant sur le favori fait +3 %)</span></summary>`;
+                            }
+                            det.appendChild(pan);
+                            zone.insertBefore(det, tableWrapper);
+                        }
+                        const ordre = ['.bandeau-decision', '.bandeau-cote-juste', '.bandeau-rattachement', '.combines-details'];
+                        for (const sel of ordre) { const el = zone.querySelector(sel); if (el) zone.insertBefore(el, tableWrapper); }
+                    } catch (e) { console.warn('Mise en ordre des blocs', e); }
+
                     if (scoresPredictifs.length === 0) {
                         participantsContainer.innerHTML = `
                             <tr>
-                                <td colspan="11" style="text-align: center;">
+                                <td colspan="8" style="text-align: center;">
                                     <i class="fas fa-exclamation-circle" style="color: var(--gold);"></i>
                                     Impossible de calculer les scores prédictifs pour cette course.
                                 </td>
@@ -3338,10 +3347,11 @@
                     let participantsHTML = '';
                     
                     // Trier par numéro de participant (ordre initial)
+                    // Ordre du marché : le favori en haut, les sans-cote en bas, puis le numéro.
                     const participantsTries = [...scoresPredictifs].sort((a, b) => {
-                        const numA = parseInt(a.participant.numero || 0);
-                        const numB = parseInt(b.participant.numero || 0);
-                        return numA - numB;
+                        const ca = parseFloat(a.participant.cote) || 999, cb = parseFloat(b.participant.cote) || 999;
+                        if (ca !== cb) return ca - cb;
+                        return (parseInt(a.participant['n°'] || a.participant.numero || 0)) - (parseInt(b.participant['n°'] || b.participant.numero || 0));
                     });
                     
                     participantsTries.forEach((resultat, index) => {
@@ -3440,9 +3450,8 @@
                                 <td>${participant.cheval || 'N/A'}${fch ? ` <span title="Forme cheval" style="color:${fchColor};font-size:0.8em">${fch}</span>` : ''}</td>
                                 <td>${participant.jockey || 'N/A'}${fcj ? ` <span title="Forme jockey" style="color:${fcjColor};font-size:0.8em">${fcj}</span>` : ''}</td>
                                 <td>${participant.entraineur || 'N/A'}</td>
-                                <td>${participant.poids || '-'}</td>
                                 <td style="text-align:center;font-weight:600;${coteValue !== '-' ? 'color:#40E0D0' : ''}">${coteDisplay}</td>
-                                <td class="prediction-cell">
+                                <td class="prediction-cell" style="display:none">
                                     <div style="display:flex;align-items:center;gap:6px">
                                         <span style="font-weight:700;font-size:1.1em;color:${scoreColor};min-width:35px">${scorePredictif.score}</span>
                                         <div class="prediction-bar-container" style="flex:1">
@@ -3504,80 +3513,28 @@
                                     else if (consensus >= 2) consensusBadge = `<span style="color:#7ed957;font-weight:700" title="Top 3 dans ${consensus} méthodes sur ${totalMethods}">${stars} ${consensus}/${totalMethods}</span>`;
                                     else if (consensus === 1) consensusBadge = `<span style="color:#D4AF37" title="Top 3 dans 1 méthode">${stars} 1/${totalMethods}</span>`;
                                     else consensusBadge = `<span style="opacity:0.3">0/${totalMethods}</span>`;
-                                    return `<td style="text-align:center;font-size:0.9em">${cotaBadge}</td><td style="text-align:center;font-size:0.9em;opacity:.75">${optBadge}</td><td style="text-align:center">${consensusBadge}</td>`;
+                                    return `<td style="text-align:center;font-size:0.9em">${cotaBadge}</td><td style="text-align:center;font-size:0.9em">${optBadge}</td>`;
                                 })()}
                                 <td style="text-align:center">${arriveeHTML}</td>
                             </tr>
                         `;
                     });
 
-                    // Ajouter un résumé si des arrivées sont disponibles
-                    const hasArrivees = participantsTries.some(r => r.participant.arrivee);
-                    if (hasArrivees) {
-                        const sorted = [...participantsTries].sort((a,b) => parseFloat(b.scorePredictif.score) - parseFloat(a.scorePredictif.score));
-                        const notre1 = sorted[0];
-                        const notre2 = sorted.slice(0, 2);
-                        const gagnant = participantsTries.find(r => r.participant.arrivee === 1);
-
-                        // Favori marché (2 meilleures cotes)
-                        const avecCotes = participantsTries.filter(r => r.participant.cote > 1);
-                        const parCote = [...avecCotes].sort((a,b) => a.participant.cote - b.participant.cote);
-                        const fav1 = parCote[0];
-                        const fav2 = parCote.slice(0, 2);
-
-                        const notre1Gagne = notre1.participant.arrivee === 1;
-                        const fav1Gagne = fav1 && fav1.participant.arrivee === 1;
-                        const notre2Gagne = notre2.some(r => r.participant.arrivee === 1);
-                        const fav2Gagne = fav2.some(r => r.participant.arrivee === 1);
-
-                        // Accumuler stats réunion
-                        if (!window.reunionStats) window.reunionStats = {};
-                        const hippoKey = hippodrome || 'GLOBAL';
-                        if (!window.reunionStats[hippoKey]) window.reunionStats[hippoKey] = {total:0, notre1:0, fav1:0, notre2:0, fav2:0};
-                        const rs = window.reunionStats[hippoKey];
-                        rs.total++;
-                        if (notre1Gagne) rs.notre1++;
-                        if (fav1Gagne) rs.fav1++;
-                        if (notre2Gagne) rs.notre2++;
-                        if (fav2Gagne) rs.fav2++;
-
-                        // Ligne résultat course
-                        let resumeText = '';
-                        let resumeClass = '';
-                        if (notre1Gagne) {
-                            resumeText = '✅ Notre #1 a GAGNÉ !';
-                            resumeClass = 'color:#FFD700;font-weight:700';
-                        } else if (fav1Gagne) {
-                            resumeText = '⭐ Favori cote a gagné';
-                            resumeClass = 'color:#40E0D0';
-                        } else if (notre2Gagne) {
-                            resumeText = '✅ Gagnant dans notre Top 2';
-                            resumeClass = 'color:#40e05a';
-                        } else if (fav2Gagne) {
-                            resumeText = '⭐ Gagnant dans les 2 meilleures cotes';
-                            resumeClass = 'color:#40E0D0';
-                        } else {
-                            resumeText = '❌ Surprise !';
-                            resumeClass = 'color:#e05a40';
-                        }
-                        if (gagnant) {
-                            resumeText += ' | ' + (gagnant.participant.cheval||'').split(' ')[0] + ' (cote ' + (gagnant.participant.cote||'-') + ')';
-                        }
-
-                        // Stats réunion cumulées
-                        const pctN1 = rs.total > 0 ? Math.round(rs.notre1/rs.total*100) : 0;
-                        const pctF1 = rs.total > 0 ? Math.round(rs.fav1/rs.total*100) : 0;
-                        const pctN2 = rs.total > 0 ? Math.round(rs.notre2/rs.total*100) : 0;
-                        const pctF2 = rs.total > 0 ? Math.round(rs.fav2/rs.total*100) : 0;
-
-                        participantsHTML += '<tr><td colspan="11" style="text-align:center;padding:6px;' + resumeClass + ';font-size:0.85em;border-top:2px solid rgba(255,255,255,0.1)">' + resumeText + '</td></tr>';
-                        participantsHTML += '<tr><td colspan="11" style="text-align:center;padding:4px;font-size:0.8em;opacity:0.8;background:rgba(0,0,0,0.15)">'
-                            + '📊 Réunion ' + hippoKey + ' (' + rs.total + 'c) : '
-                            + 'Notre #1 gagne <strong style="color:' + (pctN1 >= pctF1 ? '#40e05a' : '#e05a40') + '">' + pctN1 + '%</strong>'
-                            + ' vs Favori <strong style="color:' + (pctF1 >= pctN1 ? '#40e05a' : '#e05a40') + '">' + pctF1 + '%</strong>'
-                            + ' | Notre Top2 <strong style="color:' + (pctN2 >= pctF2 ? '#40e05a' : '#e05a40') + '">' + pctN2 + '%</strong>'
-                            + ' vs 2 meilleures cotes <strong style="color:' + (pctF2 >= pctN2 ? '#40e05a' : '#e05a40') + '">' + pctF2 + '%</strong>'
-                            + '</td></tr>';
+                    // Course courue : une ligne — qui a gagné, à quelle cote, et ce que la cote
+                    // juste et la règle en disaient AVANT. Pas de « notre #1 » : la formule du
+                    // site n'a plus de valeur mesurée.
+                    const gagnantR = participantsTries.find(r => parseInt(r.participant.arrivee) === 1);
+                    if (gagnantR) {
+                        const g = gagnantR.participant;
+                        const cotes = participantsTries.map(r => parseFloat(r.participant.cote) || 999);
+                        const estFav = (parseFloat(g.cote) || 999) === Math.min(...cotes);
+                        const cj = coteJusteMap ? coteJusteMap.get(g) : null;
+                        const nomCourt = String(g.cheval || '').replace(/\s+[HFM]\.[A-Z]+\.?\s*\d+\s*a\.?\s*$/i, '');
+                        const verdictCJ = cj ? (cj.play ? `<span style="color:#40e05a">PLAY (${cj.esperance >= 0 ? '+' : ''}${(100 * cj.esperance).toFixed(0)} %)</span>` : `passe (${(100 * cj.esperance).toFixed(0)} %)`) : '—';
+                        participantsHTML += `<tr><td colspan="8" style="text-align:center;padding:8px;font-size:0.9em;border-top:2px solid rgba(255,255,255,0.1)">
+                            Gagnant : <strong style="color:#FFD700">n°${g['n°'] || g.numero || ''} ${nomCourt}</strong> à ${parseFloat(g.cote) ? parseFloat(g.cote).toFixed(1) : '-'}
+                            ${estFav ? '<span style="color:#40E0D0">· le favori</span>' : '<span style="opacity:.7">· pas le favori</span>'}
+                            <span style="opacity:.8">· cote juste disait ${verdictCJ}</span></td></tr>`;
                     }
 
                     participantsContainer.innerHTML = participantsHTML;
@@ -3611,14 +3568,12 @@
                             sumRows.forEach(r => participantsContainer.appendChild(r));
                         });
                     });
-                    // Tri initial : le dernier classement choisi, numéro par défaut.
-                    // L'Optimale reste sélectionnable et mémorisable même si elle rend
-                    // 0,5 point de moins que la cote hors échantillon : c'est un choix
-                    // d'affichage, et l'écart est inférieur au bruit d'une journée.
-                    let triVoulu = 'numero';
-                    try { triVoulu = localStorage.getItem('hippique_tri') || 'numero'; } catch (e) {}
+                    // Tri initial : l'ordre du marché (le favori en haut), ou le dernier choix
+                    // retenu s'il existe encore (les tris Score et Optimale n'existent plus).
+                    let triVoulu = 'rg-cote';
+                    try { triVoulu = localStorage.getItem('hippique_tri') || 'rg-cote'; } catch (e) {}
                     const btnTri = document.querySelector(`.sort-btn[data-detail="${detailId}"][data-key="${triVoulu}"]`)
-                                || document.querySelector(`.sort-btn[data-detail="${detailId}"][data-key="numero"]`);
+                                || document.querySelector(`.sort-btn[data-detail="${detailId}"][data-key="rg-cote"]`);
                     btnTri?.click();
                     
                     // Ajouter l'événement pour ouvrir la simulation intégrée
@@ -3633,7 +3588,7 @@
                     console.error("Erreur lors du calcul des scores prédictifs:", error);
                     participantsContainer.innerHTML = `
                         <tr>
-                            <td colspan="11" style="text-align: center; color: var(--red);">
+                            <td colspan="8" style="text-align: center; color: var(--red);">
                                 <i class="fas fa-exclamation-triangle"></i> 
                                 Erreur lors du calcul des scores prédictifs. Veuillez réessayer plus tard.
                             </td>
