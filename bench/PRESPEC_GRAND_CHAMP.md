@@ -85,3 +85,30 @@ trente-six » est précisément ce qui appelle la prudence.
 
 Rien. La règle de jeu reste celle du dossier. Si tu veux jouer cette piste,
 c'est avec une bankroll séparée et la conscience qu'elle n'est pas démontrée.
+
+## Amendement du 15 septembre 2026 — avant le premier pari
+
+Le critère ci-dessus (« écart à la référence > 1,96 erreur-type sur douze
+mois ») condamne la règle d'avance : avec ± 20 points sur 165 paris, il faut
+un ROI d'environ +36 % pour confirmer, et une règle **vraie** à +7 % serait
+rejetée le 30 septembre 2027 dans plus de 90 % des cas. Le test séquentiel
+(`bench/sprt_regle.mjs`, H0 = −3,7 %, H1 = +7 %, bornes ± 2,94) existe
+précisément pour ne pas dépendre d'une date.
+
+Le verdict est donc **le franchissement d'une borne du SPRT**, quelle que
+soit la date :
+- borne haute franchie → confirmé ;
+- borne basse franchie → rejeté ;
+- ni l'une ni l'autre au 30 septembre 2027 → **point d'étape**, pas un
+  verdict : le test continue, la mise ne change pas.
+
+Ce qui ne change pas : la règle (14 partants et plus, ParisLongchamp ou
+Saint-Cloud, favori, simple gagnant, mise plate), la référence, les
+sous-hypothèses observées (favori ≥ 4, dérive), et l'interdiction de tout
+ajustement après coup. Le seul chiffre modifié est le critère de lecture,
+et il l'est avant que la première course soit jouée.
+
+Les sous-hypothèses observées ne seront pas lisibles en un an non plus : la
+différence entre « favori dont la cote a baissé » et « a monté » sur ~165
+paris a une erreur-type d'environ 28 points. Effectif requis pour un écart
+de 20 points à deux erreurs-types : ~600 paris, soit quatre saisons.
