@@ -4,98 +4,89 @@
   "reunion": 3,
   "heure_depart": 1789476420000,
   "distance": 1600,
-  "scraped_at": "2026-09-15T14:49:32.479871",
-  "minutes_avant_depart": -3,
+  "scraped_at": "2026-09-15T14:51:32.004901",
+  "minutes_avant_depart": -5,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ARWOOD",
       "cote_live": 14.0,
-      "cote_reference": 12.0,
+      "cote_reference": 11.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789476566000
+      "timestamp_cote": 1789476680000
     },
     {
       "numPmu": 2,
       "nom": "IN SPACE",
-      "cote_live": 5.0,
-      "cote_reference": 7.7,
+      "cote_live": 4.9,
+      "cote_reference": 7.5,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789476566000
+      "timestamp_cote": 1789476680000
     },
     {
       "numPmu": 3,
       "nom": "HELLO MAJOR TOM",
-      "cote_live": 20.0,
-      "cote_reference": 9.1,
-      "tendance": "+",
+      "cote_live": 16.0,
+      "cote_reference": 8.8,
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789476566000
+      "timestamp_cote": 1789476680000
     },
     {
       "numPmu": 4,
       "nom": "ROCKET LEAGUE",
-      "cote_live": 83.0,
-      "cote_reference": 27.0,
-      "tendance": "-",
+      "cote_live": 81.0,
+      "cote_reference": 26.0,
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789476566000
+      "timestamp_cote": 1789476680000
     },
     {
       "numPmu": 5,
       "nom": "OZARK JAMES",
-      "cote_live": 32.0,
-      "cote_reference": 26.0,
+      "cote_live": 23.0,
+      "cote_reference": 25.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789476566000
+      "timestamp_cote": 1789476680000
     },
     {
       "numPmu": 6,
       "nom": "TAKAVOR",
-      "cote_live": 4.9,
-      "cote_reference": 6.8,
+      "cote_live": 4.8,
+      "cote_reference": 6.5,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789476566000
+      "timestamp_cote": 1789476680000
     },
     {
       "numPmu": 7,
       "nom": "ALL WOOTTON",
-      "cote_live": 2.4,
-      "cote_reference": 2.4,
+      "cote_live": 2.3,
+      "cote_reference": 2.3,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1789476566000
+      "timestamp_cote": 1789476680000
     },
     {
       "numPmu": 8,
       "nom": "VICTORSTRUNG",
       "cote_live": 13.0,
-      "cote_reference": 7.9,
+      "cote_reference": 7.6,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789476566000
-    },
-    {
-      "numPmu": 9,
-      "nom": "ABABEL",
-      "cote_live": 18.0,
-      "cote_reference": 24.0,
-      "tendance": "+",
-      "favoris": false,
-      "timestamp_cote": 1789476566000
+      "timestamp_cote": 1789476680000
     },
     {
       "numPmu": 10,
       "nom": "ROMANUS PONTIFEX",
-      "cote_live": 28.0,
-      "cote_reference": 39.0,
+      "cote_live": 27.0,
+      "cote_reference": 38.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789476566000
+      "timestamp_cote": 1789476680000
     }
   ],
   "hippodrome": "LYON-PARILLY",
@@ -306,6 +297,51 @@
         "8": 13.0,
         "9": 18.0,
         "10": 28.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T14:50:11.782896",
+      "minutes_avant_depart": -3.1952414,
+      "cotes": {
+        "1": 14.0,
+        "2": 4.7,
+        "3": 19.0,
+        "4": 80.0,
+        "5": 31.0,
+        "6": 4.6,
+        "7": 2.3,
+        "8": 12.0,
+        "10": 26.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T14:50:51.962565",
+      "minutes_avant_depart": -3.8619103333333333,
+      "cotes": {
+        "1": 14.0,
+        "2": 4.7,
+        "3": 18.0,
+        "4": 82.0,
+        "5": 26.0,
+        "6": 4.7,
+        "7": 2.3,
+        "8": 13.0,
+        "10": 26.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T14:51:32.004901",
+      "minutes_avant_depart": -4.5285788333333326,
+      "cotes": {
+        "1": 14.0,
+        "2": 4.9,
+        "3": 16.0,
+        "4": 81.0,
+        "5": 23.0,
+        "6": 4.8,
+        "7": 2.3,
+        "8": 13.0,
+        "10": 27.0
       }
     }
   ]
