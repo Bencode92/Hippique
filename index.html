@@ -3137,13 +3137,14 @@
                                     <th>Entraîneur</th>
                                     <th style="width:90px" title="Cote de référence du matin → cote actuelle. La flèche est la dérive : une cote qui baisse est de l'argent qui rentre.">Cote</th>
                                     <th style="width:70px" title="Rang par la cote : le favori est 1. C'est la référence — son n°1 gagne une course sur trois.">Marché</th>
+                                    <th style="width:78px" title="Rang par la formule Optimale du bucket distance (data/best_formulas.json, publiée depuis stats.html). Une formule n'est publiée que si elle bat la cote seule sur les 30 % de courses qu'elle n'a pas vues ; sinon le bucket est en « cote seule » et ce rang est celui du marché. Voir stats.html → Analyser → Classements.">Optimale</th>
                                     <th style="width:110px" title="p_juste : probabilité réelle de gagner sachant la cote et le contexte (favori, champ, dérive, âge, corde, hippodrome), apprise sur 2022-2026. Espérance = p_juste × cote − 1. PLAY si ≥ 0. Mesuré sur 2025-2026 (jamais vu) : PLAY −4,4 % ± 4,9 sur 2 209 paris, PLAY sur le favori +4,8 % ± 7,2 sur 567, passe −20,4 %.">Cote juste<br><span style="font-weight:400;opacity:.6;font-size:.8em">p · espérance</span></th>
                                     <th style="width:55px">Arrivée</th>
                                 </tr>
                             </thead>
                             <tbody id="participants-${detailId}">
                                 <tr>
-                                    <td colspan="8" class="loading-indicator">
+                                    <td colspan="9" class="loading-indicator">
                                         <i class="fas fa-spinner fa-spin"></i> Calcul des scores prédictifs...
                                     </td>
                                 </tr>
@@ -3155,6 +3156,9 @@
                         <span style="opacity:0.7;font-size:0.85rem;align-self:center;margin-right:0.3rem">Trier :</span>
                         <button class="action-btn primary sort-btn" data-detail="${detailId}" data-key="rg-cote" data-asc="true" title="Ordre du marché : le favori en haut">
                             <i class="fas fa-coins"></i> Marché
+                        </button>
+                        <button class="action-btn secondary sort-btn" data-detail="${detailId}" data-key="rg-optimal" data-asc="true" title="Tri par rang de la formule Optimale (1 = meilleur)">
+                            <i class="fas fa-flask"></i> Optimale
                         </button>
                         <button class="action-btn secondary sort-btn" data-detail="${detailId}" data-key="numero" data-asc="true" title="Tri par numéro de partant">
                             <i class="fas fa-list-ol"></i> N°
@@ -3334,7 +3338,10 @@
                             lien = document.createElement('div');
                             lien.className = 'lien-stats';
                             lien.style.cssText = 'text-align:right;margin:0 0 .5rem';
-                            lien.innerHTML = `<a href="stats.html#course-${encodeURIComponent(courseName || '')}" target="_blank" rel="noopener" style="background:rgba(212,175,55,0.15);border:1px solid var(--gold);color:var(--gold);padding:0.3rem 0.7rem;border-radius:4px;font-size:0.8rem;text-decoration:none;white-space:nowrap"><i class="fas fa-flask"></i> Ranking optimal (stats)</a>`;
+                            const f = optimalResult?._formula;
+                            const formuleStr = f ? `Optimale (${optimalResult._bucket}, n=${f.courses}) : ${f.leviers.map((l, i) => `${l.replace(' (1/cote)', '')}×${Math.round(f.poids[i] * 100)}%`).join(' + ')}${f.hors_echantillon ? ` — hors échantillon ${f.hors_echantillon.publiee === 'champion' ? 'bat la cote' : 'ne bat pas la cote, publiée en cote seule'} (${f.hors_echantillon.top3} vs ${f.hors_echantillon.cote_top3} de Top3)` : ''}` : '';
+                            lien.style.cssText = 'display:flex;justify-content:space-between;align-items:center;gap:.8rem;flex-wrap:wrap;margin:0 0 .5rem;font-size:0.8rem';
+                            lien.innerHTML = `<span style="opacity:.7">${formuleStr}</span><a href="stats.html#course-${encodeURIComponent(courseName || '')}" target="_blank" rel="noopener" style="background:rgba(212,175,55,0.15);border:1px solid var(--gold);color:var(--gold);padding:0.3rem 0.7rem;border-radius:4px;font-size:0.8rem;text-decoration:none;white-space:nowrap"><i class="fas fa-flask"></i> Ranking optimal (stats)</a>`;
                             zone.insertBefore(lien, tableWrapper);
                         }
                         const ordre = ['.bandeau-decision', '.bandeau-cote-juste', '.bandeau-rattachement', '.combines-details', '.lien-stats'];
@@ -3344,7 +3351,7 @@
                     if (scoresPredictifs.length === 0) {
                         participantsContainer.innerHTML = `
                             <tr>
-                                <td colspan="8" style="text-align: center;">
+                                <td colspan="9" style="text-align: center;">
                                     <i class="fas fa-exclamation-circle" style="color: var(--gold);"></i>
                                     Impossible de calculer les scores prédictifs pour cette course.
                                 </td>
@@ -3522,7 +3529,8 @@
                                     else if (consensus >= 2) consensusBadge = `<span style="color:#7ed957;font-weight:700" title="Top 3 dans ${consensus} méthodes sur ${totalMethods}">${stars} ${consensus}/${totalMethods}</span>`;
                                     else if (consensus === 1) consensusBadge = `<span style="color:#D4AF37" title="Top 3 dans 1 méthode">${stars} 1/${totalMethods}</span>`;
                                     else consensusBadge = `<span style="opacity:0.3">0/${totalMethods}</span>`;
-                                    return `<td style="text-align:center;font-size:0.9em">${cotaBadge}</td><td style="text-align:center;font-size:0.9em">${optBadge}</td>`;
+                                    const optRang = rgOpt ? `<span style="font-weight:600;opacity:.85">${medal(rgOpt)}${medal(rgOpt) ? ' ' : ''}${rgOpt}</span>` : '<span style="opacity:0.3">-</span>';
+                                    return `<td style="text-align:center;font-size:0.9em">${cotaBadge}</td><td style="text-align:center;font-size:0.9em">${optRang}</td><td style="text-align:center;font-size:0.9em">${optBadge}</td>`;
                                 })()}
                                 <td style="text-align:center">${arriveeHTML}</td>
                             </tr>
@@ -3540,7 +3548,7 @@
                         const cj = coteJusteMap ? coteJusteMap.get(g) : null;
                         const nomCourt = String(g.cheval || '').replace(/\s+[HFM]\.[A-Z]+\.?\s*\d+\s*a\.?\s*$/i, '');
                         const verdictCJ = cj ? (cj.play ? `<span style="color:#40e05a">PLAY (${cj.esperance >= 0 ? '+' : ''}${(100 * cj.esperance).toFixed(0)} %)</span>` : `passe (${(100 * cj.esperance).toFixed(0)} %)`) : '—';
-                        participantsHTML += `<tr><td colspan="8" style="text-align:center;padding:8px;font-size:0.9em;border-top:2px solid rgba(255,255,255,0.1)">
+                        participantsHTML += `<tr><td colspan="9" style="text-align:center;padding:8px;font-size:0.9em;border-top:2px solid rgba(255,255,255,0.1)">
                             Gagnant : <strong style="color:#FFD700">n°${g['n°'] || g.numero || ''} ${nomCourt}</strong> à ${parseFloat(g.cote) ? parseFloat(g.cote).toFixed(1) : '-'}
                             ${estFav ? '<span style="color:#40E0D0">· le favori</span>' : '<span style="opacity:.7">· pas le favori</span>'}
                             <span style="opacity:.8">· cote juste disait ${verdictCJ}</span></td></tr>`;
@@ -3597,7 +3605,7 @@
                     console.error("Erreur lors du calcul des scores prédictifs:", error);
                     participantsContainer.innerHTML = `
                         <tr>
-                            <td colspan="8" style="text-align: center; color: var(--red);">
+                            <td colspan="9" style="text-align: center; color: var(--red);">
                                 <i class="fas fa-exclamation-triangle"></i> 
                                 Erreur lors du calcul des scores prédictifs. Veuillez réessayer plus tard.
                             </td>
