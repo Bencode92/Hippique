@@ -4,116 +4,116 @@
   "reunion": 1,
   "heure_depart": 1789482300000,
   "distance": 1800,
-  "scraped_at": "2026-09-15T16:22:52.232996",
-  "minutes_avant_depart": 2,
+  "scraped_at": "2026-09-15T16:26:12.633449",
+  "minutes_avant_depart": -1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MARASI DRIVE",
-      "cote_live": 8.6,
+      "cote_live": 11.0,
       "cote_reference": 11.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789482157000
+      "timestamp_cote": 1789482361000
     },
     {
       "numPmu": 2,
       "nom": "PIYANGO",
       "cote_live": 12.0,
       "cote_reference": 11.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789482157000
+      "timestamp_cote": 1789482361000
     },
     {
       "numPmu": 3,
       "nom": "UTXA",
-      "cote_live": 7.8,
+      "cote_live": 5.9,
       "cote_reference": 8.6,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789482157000
+      "timestamp_cote": 1789482361000
     },
     {
       "numPmu": 4,
       "nom": "TOCOA",
-      "cote_live": 7.1,
+      "cote_live": 6.6,
       "cote_reference": 3.7,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789482157000
+      "timestamp_cote": 1789482361000
     },
     {
       "numPmu": 5,
       "nom": "MAINE DE BIRAN",
-      "cote_live": 5.0,
+      "cote_live": 4.1,
       "cote_reference": 6.6,
-      "tendance": "",
+      "tendance": "+",
       "favoris": true,
-      "timestamp_cote": 1789482157000
+      "timestamp_cote": 1789482361000
     },
     {
       "numPmu": 6,
       "nom": "SANAWARI",
-      "cote_live": 8.9,
+      "cote_live": 9.8,
       "cote_reference": 13.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789482157000
+      "timestamp_cote": 1789482361000
     },
     {
       "numPmu": 7,
       "nom": "ICE CRACKER",
-      "cote_live": 19.0,
+      "cote_live": 26.0,
       "cote_reference": 16.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789482157000
+      "timestamp_cote": 1789482361000
     },
     {
       "numPmu": 8,
       "nom": "SPIELER",
-      "cote_live": 26.0,
+      "cote_live": 30.0,
       "cote_reference": 34.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789482157000
+      "timestamp_cote": 1789482361000
     },
     {
       "numPmu": 9,
       "nom": "MARYCHA",
-      "cote_live": 30.0,
+      "cote_live": 28.0,
       "cote_reference": 13.0,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789482157000
+      "timestamp_cote": 1789482361000
     },
     {
       "numPmu": 10,
       "nom": "AL GHARIYA",
-      "cote_live": 16.0,
+      "cote_live": 15.0,
       "cote_reference": 28.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789482157000
+      "timestamp_cote": 1789482361000
     },
     {
       "numPmu": 12,
       "nom": "ZEUDI",
-      "cote_live": 18.0,
+      "cote_live": 24.0,
       "cote_reference": 13.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789482157000
+      "timestamp_cote": 1789482361000
     },
     {
       "numPmu": 13,
       "nom": "LA BELLE HELENE",
-      "cote_live": 8.2,
+      "cote_live": 10.0,
       "cote_reference": 12.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789482157000
+      "timestamp_cote": 1789482361000
     }
   ],
   "hippodrome": "COMPIEGNE",
@@ -224,6 +224,96 @@
         "10": 16.0,
         "12": 18.0,
         "13": 8.2
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T16:23:31.970412",
+      "minutes_avant_depart": 1.47110445,
+      "cotes": {
+        "1": 8.7,
+        "2": 12.0,
+        "3": 7.2,
+        "4": 7.6,
+        "5": 4.7,
+        "6": 9.7,
+        "7": 20.0,
+        "8": 28.0,
+        "9": 31.0,
+        "10": 13.0,
+        "12": 18.0,
+        "13": 8.5
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T16:24:11.894134",
+      "minutes_avant_depart": 0.80443625,
+      "cotes": {
+        "1": 9.1,
+        "2": 12.0,
+        "3": 7.3,
+        "4": 7.4,
+        "5": 4.5,
+        "6": 10.0,
+        "7": 21.0,
+        "8": 27.0,
+        "9": 31.0,
+        "10": 13.0,
+        "12": 18.0,
+        "13": 8.5
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T16:24:52.064839",
+      "minutes_avant_depart": 0.13776751666666665,
+      "cotes": {
+        "1": 9.8,
+        "2": 13.0,
+        "3": 6.2,
+        "4": 7.0,
+        "5": 4.7,
+        "6": 10.0,
+        "7": 21.0,
+        "8": 28.0,
+        "9": 32.0,
+        "10": 14.0,
+        "12": 20.0,
+        "13": 8.6
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T16:25:32.141841",
+      "minutes_avant_depart": -0.528901,
+      "cotes": {
+        "1": 10.0,
+        "2": 12.0,
+        "3": 6.0,
+        "4": 7.2,
+        "5": 4.0,
+        "6": 9.5,
+        "7": 24.0,
+        "8": 31.0,
+        "9": 34.0,
+        "10": 15.0,
+        "12": 22.0,
+        "13": 9.8
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T16:26:12.633449",
+      "minutes_avant_depart": -1.2036497666666668,
+      "cotes": {
+        "1": 11.0,
+        "2": 12.0,
+        "3": 5.9,
+        "4": 6.6,
+        "5": 4.1,
+        "6": 9.8,
+        "7": 26.0,
+        "8": 30.0,
+        "9": 28.0,
+        "10": 15.0,
+        "12": 24.0,
+        "13": 10.0
       }
     }
   ]
