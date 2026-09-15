@@ -1,0 +1,125 @@
+{
+  "course": "PRIX DE L'ABBAYE SAINT-CORNEILLE",
+  "numero": 3,
+  "reunion": 1,
+  "heure_depart": 1789477680000,
+  "distance": 2000,
+  "scraped_at": "2026-09-15T15:02:52.464484",
+  "minutes_avant_depart": 5,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "BILLION GOLD",
+      "cote_live": 9.0,
+      "cote_reference": 5.7,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1789477349000
+    },
+    {
+      "numPmu": 3,
+      "nom": "KENERGY",
+      "cote_live": 2.4,
+      "cote_reference": 5.6,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1789477349000
+    },
+    {
+      "numPmu": 4,
+      "nom": "VALIKA",
+      "cote_live": 7.7,
+      "cote_reference": 8.6,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789477349000
+    },
+    {
+      "numPmu": 5,
+      "nom": "EUNICE",
+      "cote_live": 3.2,
+      "cote_reference": 2.2,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1789477349000
+    },
+    {
+      "numPmu": 6,
+      "nom": "RITZY ROXY",
+      "cote_live": 15.0,
+      "cote_reference": 20.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1789477349000
+    },
+    {
+      "numPmu": 7,
+      "nom": "NICOSIE ESSEF",
+      "cote_live": 53.0,
+      "cote_reference": 17.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789477349000
+    },
+    {
+      "numPmu": 8,
+      "nom": "FAROUKH",
+      "cote_live": 35.0,
+      "cote_reference": 31.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1789477349000
+    },
+    {
+      "numPmu": 9,
+      "nom": "PACIFIC SKY",
+      "cote_live": 56.0,
+      "cote_reference": 59.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1789477349000
+    },
+    {
+      "numPmu": 10,
+      "nom": "LALLYBROCH",
+      "cote_live": 20.0,
+      "cote_reference": 13.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1789477349000
+    }
+  ],
+  "hippodrome": "COMPIEGNE",
+  "releves": [
+    {
+      "scraped_at": "2026-09-15T15:02:12.190048",
+      "minutes_avant_depart": 5.804719783333334,
+      "cotes": {
+        "1": 9.0,
+        "3": 2.4,
+        "4": 7.4,
+        "5": 3.2,
+        "6": 16.0,
+        "7": 52.0,
+        "8": 35.0,
+        "9": 62.0,
+        "10": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T15:02:52.464484",
+      "minutes_avant_depart": 5.132547316666666,
+      "cotes": {
+        "1": 9.0,
+        "3": 2.4,
+        "4": 7.7,
+        "5": 3.2,
+        "6": 15.0,
+        "7": 53.0,
+        "8": 35.0,
+        "9": 56.0,
+        "10": 20.0
+      }
+    }
+  ]
+}
