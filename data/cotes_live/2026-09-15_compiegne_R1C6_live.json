@@ -4,89 +4,89 @@
   "reunion": 1,
   "heure_depart": 1789484220000,
   "distance": 2800,
-  "scraped_at": "2026-09-15T16:56:12.233602",
-  "minutes_avant_depart": 1,
+  "scraped_at": "2026-09-15T16:59:32.305007",
+  "minutes_avant_depart": -3,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ALLEZ FRERES",
-      "cote_live": 5.9,
+      "cote_live": 7.9,
       "cote_reference": 4.9,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789484170000
+      "timestamp_cote": 1789484350000
     },
     {
       "numPmu": 2,
       "nom": "MARANTAO",
-      "cote_live": 14.0,
+      "cote_live": 17.0,
       "cote_reference": 8.6,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789484170000
+      "timestamp_cote": 1789484350000
     },
     {
       "numPmu": 3,
       "nom": "NEPTUNE DU HUTREL",
-      "cote_live": 45.0,
+      "cote_live": 67.0,
       "cote_reference": 19.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789484170000
+      "timestamp_cote": 1789484350000
     },
     {
       "numPmu": 5,
       "nom": "GOOD TIMING",
-      "cote_live": 21.0,
+      "cote_live": 19.0,
       "cote_reference": 19.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789484170000
+      "timestamp_cote": 1789484350000
     },
     {
       "numPmu": 6,
       "nom": "JANNET",
-      "cote_live": 2.9,
+      "cote_live": 2.3,
       "cote_reference": 3.2,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1789484170000
+      "timestamp_cote": 1789484350000
     },
     {
       "numPmu": 7,
       "nom": "MEYN ZUN",
-      "cote_live": 14.0,
+      "cote_live": 18.0,
       "cote_reference": 12.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789484170000
+      "timestamp_cote": 1789484350000
     },
     {
       "numPmu": 8,
       "nom": "STORY WAY",
-      "cote_live": 4.0,
+      "cote_live": 4.1,
       "cote_reference": 4.9,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789484170000
+      "timestamp_cote": 1789484350000
     },
     {
       "numPmu": 9,
       "nom": "CARAMEL",
-      "cote_live": 15.0,
+      "cote_live": 16.0,
       "cote_reference": 18.0,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789484170000
+      "timestamp_cote": 1789484350000
     },
     {
       "numPmu": 10,
       "nom": "ROSARIA",
-      "cote_live": 9.2,
+      "cote_live": 10.0,
       "cote_reference": 15.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789484170000
+      "timestamp_cote": 1789484350000
     }
   ],
   "hippodrome": "COMPIEGNE",
@@ -209,6 +209,81 @@
         "8": 4.0,
         "9": 15.0,
         "10": 9.2
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T16:56:51.966064",
+      "minutes_avant_depart": 0.13765995,
+      "cotes": {
+        "1": 6.2,
+        "2": 16.0,
+        "3": 47.0,
+        "5": 23.0,
+        "6": 2.6,
+        "7": 15.0,
+        "8": 4.1,
+        "9": 15.0,
+        "10": 9.7
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T16:57:32.165743",
+      "minutes_avant_depart": -0.5290085999999999,
+      "cotes": {
+        "1": 6.6,
+        "2": 15.0,
+        "3": 53.0,
+        "5": 20.0,
+        "6": 2.6,
+        "7": 15.0,
+        "8": 3.9,
+        "9": 15.0,
+        "10": 10.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T16:58:12.118712",
+      "minutes_avant_depart": -1.1956777666666667,
+      "cotes": {
+        "1": 7.7,
+        "2": 17.0,
+        "3": 63.0,
+        "5": 19.0,
+        "6": 2.2,
+        "7": 17.0,
+        "8": 4.3,
+        "9": 16.0,
+        "10": 11.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T16:58:51.881075",
+      "minutes_avant_depart": -1.8623470500000001,
+      "cotes": {
+        "1": 7.8,
+        "2": 16.0,
+        "3": 68.0,
+        "5": 19.0,
+        "6": 2.2,
+        "7": 18.0,
+        "8": 4.2,
+        "9": 16.0,
+        "10": 10.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T16:59:32.305007",
+      "minutes_avant_depart": -2.5346263500000004,
+      "cotes": {
+        "1": 7.9,
+        "2": 17.0,
+        "3": 67.0,
+        "5": 19.0,
+        "6": 2.3,
+        "7": 18.0,
+        "8": 4.1,
+        "9": 16.0,
+        "10": 10.0
       }
     }
   ]
