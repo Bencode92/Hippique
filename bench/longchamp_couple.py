@@ -12,6 +12,7 @@ des 3 ou 4 premiers du marché (3 ou 6 tickets). Mise 1 € par ticket.
 import json, glob, sys, math, itertools
 import numpy as np
 HIP = (sys.argv[1] if len(sys.argv) > 1 else 'PARISLONGCHAMP').upper()
+SERREE = '--serree' in sys.argv   # course serrée : favori à 4 ou plus
 rap = {}
 for f in glob.glob('data/rapports/*.jsonl'):
     for l in open(f, encoding='utf-8'):
@@ -29,11 +30,14 @@ for f in sorted(glob.glob('data/histo/*.jsonl')):
         r = rap.get((d['date'], d['hip'], d['r'], d['c'])) or {}
         if not r.get('E_COUPLE_GAGNANT'): continue
         d['ps'] = sorted(ps, key=lambda p: p['c'])
+        if SERREE and d['ps'][0]['c'] < 4: continue
         d['cg'] = {frozenset(x['comb'].split('-')): x['div'] / 100 for x in r.get('E_COUPLE_GAGNANT', [])}
         d['cp'] = {frozenset(x['comb'].split('-')): x['div'] / 100 for x in r.get('E_COUPLE_PLACE', [])}
         d['sg'] = {x['comb']: x['div'] / 100 for x in r.get('E_SIMPLE_GAGNANT', [])}
+        d['trio'] = {frozenset(x['comb'].split('-')): x['div'] / 100 for x in r.get('E_TRIO', [])}
+        d['d24'] = {frozenset(x['comb'].split('-')): x['div'] / 100 for x in r.get('E_DEUX_SUR_QUATRE', [])}
         courses.append(d)
-print(f"{HIP} : {len(courses)} courses de 8 partants et plus avec rapports couplé, {courses[0]['date']} → {courses[-1]['date']}\n")
+print(f"{HIP}{' · COURSES SERRÉES (favori ≥ 4)' if SERREE else ''} : {len(courses)} courses de 8 partants et plus avec rapports couplé, {courses[0]['date']} → {courses[-1]['date']}\n")
 
 def gain_couple(c, i, j, table):
     k = frozenset([str(c['ps'][i]['n']), str(c['ps'][j]['n'])])
@@ -59,6 +63,15 @@ for table, nom in [('cg', 'COUPLÉ GAGNANT'), ('cp', 'COUPLÉ PLACÉ')]:
     ligne('favori + 2e, les deux cotes ont baissé', [gain_couple(c, 0, 1, table) for c in courses if derive(c['ps'][0]) and derive(c['ps'][1])])
     ligne('favori + 1 outsider 10-20 (1 ticket par outsider)', [gain_couple(c, 0, j, table) for c in courses for j in range(1, len(c['ps'])) if 10 <= c['ps'][j]['c'] < 20])
     print()
+print("══ TRIO (les 3 premiers du marché, 1 ticket) et 2 SUR 4 (favori + 2e)")
+def gain_trio(c):
+    k = frozenset(str(c['ps'][i]['n']) for i in range(3)); t = c.get('trio', {}); return t.get(k, 0.0) - 1
+def gain_2sur4(c):
+    k = frozenset([str(c['ps'][0]['n']), str(c['ps'][1]['n'])]); t = c.get('d24', {}); return t.get(k, 0.0) - 1
+ct = [c for c in courses if c.get('trio')]; c24 = [c for c in courses if c.get('d24')]
+if ct: ligne('trio des 3 premiers du marché', [gain_trio(c) for c in ct])
+if c24: ligne('2 sur 4 favori + 2e favori', [gain_2sur4(c) for c in c24])
+print()
 print("══ RÉFÉRENCE, simple gagnant sur les mêmes courses")
 ligne('favori', [gain_simple(c, 0) for c in courses])
 ligne('favori, grands champs (14+)', [gain_simple(c, 0) for c in courses if grand(c)])
