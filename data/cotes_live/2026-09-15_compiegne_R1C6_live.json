@@ -1,0 +1,140 @@
+{
+  "course": "PRIX DE PONT-SAINT-MAXENCE",
+  "numero": 6,
+  "reunion": 1,
+  "heure_depart": 1789484220000,
+  "distance": 2800,
+  "scraped_at": "2026-09-15T16:52:52.421618",
+  "minutes_avant_depart": 4,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "ALLEZ FRERES",
+      "cote_live": 6.3,
+      "cote_reference": 4.9,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1789483952000
+    },
+    {
+      "numPmu": 2,
+      "nom": "MARANTAO",
+      "cote_live": 13.0,
+      "cote_reference": 8.6,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789483952000
+    },
+    {
+      "numPmu": 3,
+      "nom": "NEPTUNE DU HUTREL",
+      "cote_live": 33.0,
+      "cote_reference": 19.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789483952000
+    },
+    {
+      "numPmu": 5,
+      "nom": "GOOD TIMING",
+      "cote_live": 25.0,
+      "cote_reference": 19.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1789483952000
+    },
+    {
+      "numPmu": 6,
+      "nom": "JANNET",
+      "cote_live": 2.5,
+      "cote_reference": 3.2,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1789483952000
+    },
+    {
+      "numPmu": 7,
+      "nom": "MEYN ZUN",
+      "cote_live": 13.0,
+      "cote_reference": 12.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1789483952000
+    },
+    {
+      "numPmu": 8,
+      "nom": "STORY WAY",
+      "cote_live": 4.1,
+      "cote_reference": 4.9,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1789483952000
+    },
+    {
+      "numPmu": 9,
+      "nom": "CARAMEL",
+      "cote_live": 16.0,
+      "cote_reference": 18.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789483952000
+    },
+    {
+      "numPmu": 10,
+      "nom": "ROSARIA",
+      "cote_live": 17.0,
+      "cote_reference": 15.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789483952000
+    }
+  ],
+  "hippodrome": "COMPIEGNE",
+  "releves": [
+    {
+      "scraped_at": "2026-09-15T16:51:32.120897",
+      "minutes_avant_depart": 5.471011883333333,
+      "cotes": {
+        "1": 6.4,
+        "2": 12.0,
+        "3": 32.0,
+        "5": 26.0,
+        "6": 2.4,
+        "7": 14.0,
+        "8": 4.3,
+        "9": 17.0,
+        "10": 17.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T16:52:11.964247",
+      "minutes_avant_depart": 4.804342866666667,
+      "cotes": {
+        "1": 6.3,
+        "2": 12.0,
+        "3": 33.0,
+        "5": 26.0,
+        "6": 2.5,
+        "7": 13.0,
+        "8": 4.1,
+        "9": 16.0,
+        "10": 16.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-15T16:52:52.421618",
+      "minutes_avant_depart": 4.1290751,
+      "cotes": {
+        "1": 6.3,
+        "2": 13.0,
+        "3": 33.0,
+        "5": 25.0,
+        "6": 2.5,
+        "7": 13.0,
+        "8": 4.1,
+        "9": 16.0,
+        "10": 17.0
+      }
+    }
+  ]
+}
