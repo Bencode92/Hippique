@@ -3328,7 +3328,16 @@
                             det.appendChild(pan);
                             zone.insertBefore(det, tableWrapper);
                         }
-                        const ordre = ['.bandeau-decision', '.bandeau-cote-juste', '.bandeau-rattachement', '.combines-details'];
+                        // le lien vers l'analyse des leviers (stats.html), en haut à droite de la table
+                        let lien = zone.querySelector('.lien-stats');
+                        if (!lien) {
+                            lien = document.createElement('div');
+                            lien.className = 'lien-stats';
+                            lien.style.cssText = 'text-align:right;margin:0 0 .5rem';
+                            lien.innerHTML = `<a href="stats.html#course-${encodeURIComponent(courseName || '')}" target="_blank" rel="noopener" style="background:rgba(212,175,55,0.15);border:1px solid var(--gold);color:var(--gold);padding:0.3rem 0.7rem;border-radius:4px;font-size:0.8rem;text-decoration:none;white-space:nowrap"><i class="fas fa-flask"></i> Ranking optimal (stats)</a>`;
+                            zone.insertBefore(lien, tableWrapper);
+                        }
+                        const ordre = ['.bandeau-decision', '.bandeau-cote-juste', '.bandeau-rattachement', '.combines-details', '.lien-stats'];
                         for (const sel of ordre) { const el = zone.querySelector(sel); if (el) zone.insertBefore(el, tableWrapper); }
                     } catch (e) { console.warn('Mise en ordre des blocs', e); }
 
