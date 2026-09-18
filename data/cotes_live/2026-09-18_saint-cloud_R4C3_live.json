@@ -1,0 +1,194 @@
+{
+  "course": "PRIX FAST FOX",
+  "numero": 3,
+  "reunion": 4,
+  "heure_depart": 1789735980000,
+  "distance": 1200,
+  "scraped_at": "2026-09-18T14:49:21.758095",
+  "minutes_avant_depart": 4,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "OMARBEK",
+      "cote_live": 39.0,
+      "cote_reference": 38.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1789735755000
+    },
+    {
+      "numPmu": 2,
+      "nom": "AMOUNE",
+      "cote_live": 16.0,
+      "cote_reference": 15.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789735755000
+    },
+    {
+      "numPmu": 3,
+      "nom": "AL HAMAAD",
+      "cote_live": 1.5,
+      "cote_reference": 1.6,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1789735755000
+    },
+    {
+      "numPmu": 4,
+      "nom": "MACK THE KNIFE",
+      "cote_live": 59.0,
+      "cote_reference": 54.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789735755000
+    },
+    {
+      "numPmu": 5,
+      "nom": "HEILIGENSTEIN",
+      "cote_live": 63.0,
+      "cote_reference": 46.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1789735755000
+    },
+    {
+      "numPmu": 6,
+      "nom": "KARAKOUM",
+      "cote_live": 20.0,
+      "cote_reference": 12.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1789735755000
+    },
+    {
+      "numPmu": 7,
+      "nom": "NEVER ALWAYS",
+      "cote_live": 13.0,
+      "cote_reference": 14.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1789735755000
+    },
+    {
+      "numPmu": 8,
+      "nom": "IMMATIN STORM",
+      "cote_live": 33.0,
+      "cote_reference": 28.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789735755000
+    },
+    {
+      "numPmu": 9,
+      "nom": "WONDER BAILEYS",
+      "cote_live": 38.0,
+      "cote_reference": 57.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789735755000
+    },
+    {
+      "numPmu": 10,
+      "nom": "HARMONY IN BLUE",
+      "cote_live": 7.4,
+      "cote_reference": 9.1,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1789735755000
+    },
+    {
+      "numPmu": 11,
+      "nom": "RIMANOVKHA",
+      "cote_live": 61.0,
+      "cote_reference": 45.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789735755000
+    },
+    {
+      "numPmu": 12,
+      "nom": "MICHELLE",
+      "cote_live": 28.0,
+      "cote_reference": 17.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1789735755000
+    }
+  ],
+  "hippodrome": "SAINT-CLOUD",
+  "releves": [
+    {
+      "scraped_at": "2026-09-18T14:47:21.363377",
+      "minutes_avant_depart": 5.6504982,
+      "cotes": {
+        "1": 39.0,
+        "2": 17.0,
+        "3": 1.5,
+        "4": 60.0,
+        "5": 61.0,
+        "6": 18.0,
+        "7": 13.0,
+        "8": 32.0,
+        "9": 34.0,
+        "10": 7.4,
+        "11": 58.0,
+        "12": 25.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-18T14:48:01.936850",
+      "minutes_avant_depart": 4.9838293,
+      "cotes": {
+        "1": 40.0,
+        "2": 17.0,
+        "3": 1.5,
+        "4": 60.0,
+        "5": 63.0,
+        "6": 19.0,
+        "7": 13.0,
+        "8": 32.0,
+        "9": 35.0,
+        "10": 7.6,
+        "11": 58.0,
+        "12": 25.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-18T14:48:41.673361",
+      "minutes_avant_depart": 4.317160483333334,
+      "cotes": {
+        "1": 41.0,
+        "2": 15.0,
+        "3": 1.5,
+        "4": 58.0,
+        "5": 63.0,
+        "6": 19.0,
+        "7": 13.0,
+        "8": 33.0,
+        "9": 37.0,
+        "10": 7.3,
+        "11": 59.0,
+        "12": 27.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-18T14:49:21.758095",
+      "minutes_avant_depart": 3.641931083333333,
+      "cotes": {
+        "1": 39.0,
+        "2": 16.0,
+        "3": 1.5,
+        "4": 59.0,
+        "5": 63.0,
+        "6": 20.0,
+        "7": 13.0,
+        "8": 33.0,
+        "9": 38.0,
+        "10": 7.4,
+        "11": 61.0,
+        "12": 28.0
+      }
+    }
+  ]
+}
