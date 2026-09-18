@@ -4,62 +4,62 @@
   "reunion": 4,
   "heure_depart": 1789738380000,
   "distance": 2400,
-  "scraped_at": "2026-09-18T15:29:21.493130",
-  "minutes_avant_depart": 4,
+  "scraped_at": "2026-09-18T15:32:41.506141",
+  "minutes_avant_depart": 0,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ZAKHAROVA",
-      "cote_live": 6.4,
+      "cote_live": 3.8,
       "cote_reference": 2.8,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789738139000
+      "timestamp_cote": 1789738346000
     },
     {
       "numPmu": 2,
       "nom": "CASSIUS",
-      "cote_live": 9.0,
+      "cote_live": 6.4,
       "cote_reference": 3.5,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789738139000
+      "timestamp_cote": 1789738346000
     },
     {
       "numPmu": 3,
       "nom": "CENTRICAL",
       "cote_live": 21.0,
       "cote_reference": 8.7,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789738139000
+      "timestamp_cote": 1789738346000
     },
     {
       "numPmu": 4,
       "nom": "AKIDO",
-      "cote_live": 1.3,
+      "cote_live": 1.7,
       "cote_reference": 5.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1789738139000
+      "timestamp_cote": 1789738346000
     },
     {
       "numPmu": 5,
       "nom": "BONNIE MOON",
-      "cote_live": 14.0,
+      "cote_live": 11.0,
       "cote_reference": 8.6,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789738139000
+      "timestamp_cote": 1789738346000
     },
     {
       "numPmu": 6,
       "nom": "CARDINAL POINT",
-      "cote_live": 35.0,
+      "cote_live": 37.0,
       "cote_reference": 12.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789738139000
+      "timestamp_cote": 1789738346000
     }
   ],
   "hippodrome": "SAINT-CLOUD",
@@ -110,6 +110,66 @@
         "4": 1.3,
         "5": 14.0,
         "6": 35.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-18T15:30:01.116770",
+      "minutes_avant_depart": 2.9837019,
+      "cotes": {
+        "1": 5.7,
+        "2": 9.3,
+        "3": 21.0,
+        "4": 1.4,
+        "5": 11.0,
+        "6": 34.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-18T15:30:41.186618",
+      "minutes_avant_depart": 2.3170334333333336,
+      "cotes": {
+        "1": 5.2,
+        "2": 8.4,
+        "3": 21.0,
+        "4": 1.5,
+        "5": 12.0,
+        "6": 34.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-18T15:31:21.483173",
+      "minutes_avant_depart": 1.6503644666666666,
+      "cotes": {
+        "1": 4.6,
+        "2": 7.3,
+        "3": 21.0,
+        "4": 1.6,
+        "5": 11.0,
+        "6": 35.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-18T15:32:01.459532",
+      "minutes_avant_depart": 0.9836957833333333,
+      "cotes": {
+        "1": 4.2,
+        "2": 7.1,
+        "3": 20.0,
+        "4": 1.6,
+        "5": 11.0,
+        "6": 35.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-18T15:32:41.506141",
+      "minutes_avant_depart": 0.3092484166666667,
+      "cotes": {
+        "1": 3.8,
+        "2": 6.4,
+        "3": 21.0,
+        "4": 1.7,
+        "5": 11.0,
+        "6": 37.0
       }
     }
   ]
