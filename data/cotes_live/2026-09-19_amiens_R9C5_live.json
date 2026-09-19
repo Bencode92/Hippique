@@ -4,89 +4,89 @@
   "reunion": 9,
   "heure_depart": 1789844400000,
   "distance": 2400,
-  "scraped_at": "2026-09-19T20:58:45.831412",
+  "scraped_at": "2026-09-19T20:59:25.206568",
   "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "LEGACY FAFA",
-      "cote_live": 6.9,
+      "cote_live": 7.4,
       "cote_reference": 7.6,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789844314000
+      "timestamp_cote": 1789844354000
     },
     {
       "numPmu": 2,
       "nom": "LOVAT",
-      "cote_live": 8.3,
+      "cote_live": 8.0,
       "cote_reference": 6.9,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789844314000
+      "timestamp_cote": 1789844354000
     },
     {
       "numPmu": 3,
       "nom": "LE TANGO DU RENARD",
-      "cote_live": 44.0,
+      "cote_live": 45.0,
       "cote_reference": 30.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789844314000
+      "timestamp_cote": 1789844354000
     },
     {
       "numPmu": 4,
       "nom": "LORINEA CUT",
-      "cote_live": 8.8,
+      "cote_live": 9.5,
       "cote_reference": 13.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789844314000
+      "timestamp_cote": 1789844354000
     },
     {
       "numPmu": 5,
       "nom": "LILY PEEL",
-      "cote_live": 7.3,
+      "cote_live": 7.2,
       "cote_reference": 5.3,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789844314000
+      "timestamp_cote": 1789844354000
     },
     {
       "numPmu": 6,
       "nom": "L'ULKA DI LEONE",
-      "cote_live": 3.7,
+      "cote_live": 3.4,
       "cote_reference": 4.6,
-      "tendance": "",
+      "tendance": "-",
       "favoris": true,
-      "timestamp_cote": 1789844314000
+      "timestamp_cote": 1789844354000
     },
     {
       "numPmu": 7,
       "nom": "LEXIA",
       "cote_live": 13.0,
       "cote_reference": 20.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789844314000
+      "timestamp_cote": 1789844354000
     },
     {
       "numPmu": 8,
       "nom": "LEONARD PEEL",
-      "cote_live": 10.0,
+      "cote_live": 11.0,
       "cote_reference": 13.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789844314000
+      "timestamp_cote": 1789844354000
     },
     {
       "numPmu": 9,
       "nom": "LOVE YOU DADDY",
-      "cote_live": 26.0,
+      "cote_live": 25.0,
       "cote_reference": 23.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789844314000
+      "timestamp_cote": 1789844354000
     },
     {
       "numPmu": 10,
@@ -95,25 +95,25 @@
       "cote_reference": 9.2,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789844314000
+      "timestamp_cote": 1789844354000
     },
     {
       "numPmu": 11,
       "nom": "LASCO DE LOU",
-      "cote_live": 52.0,
+      "cote_live": 39.0,
       "cote_reference": 38.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789844314000
+      "timestamp_cote": 1789844354000
     },
     {
       "numPmu": 13,
       "nom": "LENNY D'EP",
-      "cote_live": 26.0,
+      "cote_live": 28.0,
       "cote_reference": 17.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789844314000
+      "timestamp_cote": 1789844354000
     }
   ],
   "hippodrome": "AMIENS",
@@ -260,6 +260,24 @@
         "10": 15.0,
         "11": 52.0,
         "13": 26.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-19T20:59:25.206568",
+      "minutes_avant_depart": 0.5835241166666666,
+      "cotes": {
+        "1": 7.4,
+        "2": 8.0,
+        "3": 45.0,
+        "4": 9.5,
+        "5": 7.2,
+        "6": 3.4,
+        "7": 13.0,
+        "8": 11.0,
+        "9": 25.0,
+        "10": 15.0,
+        "11": 39.0,
+        "13": 28.0
       }
     }
   ]
