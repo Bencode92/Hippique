@@ -4,17 +4,17 @@
   "reunion": 9,
   "heure_depart": 1789842600000,
   "distance": 2900,
-  "scraped_at": "2026-09-19T20:25:25.490231",
-  "minutes_avant_depart": 5,
+  "scraped_at": "2026-09-19T20:28:45.465403",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MOJITO DANOVER",
-      "cote_live": 35.0,
+      "cote_live": 36.0,
       "cote_reference": 36.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789842317000
+      "timestamp_cote": 1789842511000
     },
     {
       "numPmu": 2,
@@ -23,61 +23,61 @@
       "cote_reference": 9.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789842317000
+      "timestamp_cote": 1789842511000
     },
     {
       "numPmu": 3,
       "nom": "MAESTRIA D'EURVAD",
       "cote_live": 5.0,
       "cote_reference": 8.1,
-      "tendance": "-",
+      "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1789842317000
+      "timestamp_cote": 1789842511000
     },
     {
       "numPmu": 4,
       "nom": "MALINE D'EVAILLES",
-      "cote_live": 5.2,
+      "cote_live": 6.0,
       "cote_reference": 7.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789842317000
+      "timestamp_cote": 1789842511000
     },
     {
       "numPmu": 5,
       "nom": "MOONLIGHT ATOUT",
-      "cote_live": 9.2,
+      "cote_live": 9.9,
       "cote_reference": 8.6,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789842317000
+      "timestamp_cote": 1789842511000
     },
     {
       "numPmu": 6,
       "nom": "MANON DU LUPIN",
       "cote_live": 13.0,
       "cote_reference": 9.6,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789842317000
+      "timestamp_cote": 1789842511000
     },
     {
       "numPmu": 7,
       "nom": "MAESTRO DE PAGERIE",
-      "cote_live": 25.0,
+      "cote_live": 29.0,
       "cote_reference": 14.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789842317000
+      "timestamp_cote": 1789842511000
     },
     {
       "numPmu": 8,
       "nom": "MY DARLING DANOVER",
-      "cote_live": 35.0,
+      "cote_live": 41.0,
       "cote_reference": 22.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789842317000
+      "timestamp_cote": 1789842511000
     },
     {
       "numPmu": 9,
@@ -86,34 +86,34 @@
       "cote_reference": 6.7,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789842317000
+      "timestamp_cote": 1789842511000
     },
     {
       "numPmu": 10,
       "nom": "MIKI DU POMMEREUX",
-      "cote_live": 23.0,
+      "cote_live": 24.0,
       "cote_reference": 11.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789842317000
+      "timestamp_cote": 1789842511000
     },
     {
       "numPmu": 11,
       "nom": "MAYA DE LA FYE",
-      "cote_live": 10.0,
+      "cote_live": 6.6,
       "cote_reference": 21.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789842317000
+      "timestamp_cote": 1789842511000
     },
     {
       "numPmu": 12,
       "nom": "MY LADY BLUE",
-      "cote_live": 5.5,
+      "cote_live": 5.8,
       "cote_reference": 8.4,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789842317000
+      "timestamp_cote": 1789842511000
     }
   ],
   "hippodrome": "AMIENS",
@@ -170,6 +170,96 @@
         "10": 23.0,
         "11": 10.0,
         "12": 5.5
+      }
+    },
+    {
+      "scraped_at": "2026-09-19T20:26:05.082652",
+      "minutes_avant_depart": 3.9169517,
+      "cotes": {
+        "1": 37.0,
+        "2": 14.0,
+        "3": 5.0,
+        "4": 5.4,
+        "5": 9.0,
+        "6": 14.0,
+        "7": 27.0,
+        "8": 37.0,
+        "9": 11.0,
+        "10": 24.0,
+        "11": 11.0,
+        "12": 5.1
+      }
+    },
+    {
+      "scraped_at": "2026-09-19T20:26:45.465183",
+      "minutes_avant_depart": 3.250282916666667,
+      "cotes": {
+        "1": 37.0,
+        "2": 14.0,
+        "3": 4.7,
+        "4": 5.5,
+        "5": 9.4,
+        "6": 13.0,
+        "7": 28.0,
+        "8": 39.0,
+        "9": 12.0,
+        "10": 25.0,
+        "11": 9.1,
+        "12": 5.6
+      }
+    },
+    {
+      "scraped_at": "2026-09-19T20:27:25.469391",
+      "minutes_avant_depart": 2.5836140333333333,
+      "cotes": {
+        "1": 38.0,
+        "2": 14.0,
+        "3": 4.7,
+        "4": 5.7,
+        "5": 9.7,
+        "6": 13.0,
+        "7": 28.0,
+        "8": 42.0,
+        "9": 12.0,
+        "10": 27.0,
+        "11": 7.6,
+        "12": 5.7
+      }
+    },
+    {
+      "scraped_at": "2026-09-19T20:28:05.078861",
+      "minutes_avant_depart": 1.9169458166666666,
+      "cotes": {
+        "1": 35.0,
+        "2": 14.0,
+        "3": 4.8,
+        "4": 5.9,
+        "5": 9.4,
+        "6": 13.0,
+        "7": 29.0,
+        "8": 43.0,
+        "9": 12.0,
+        "10": 25.0,
+        "11": 7.2,
+        "12": 5.8
+      }
+    },
+    {
+      "scraped_at": "2026-09-19T20:28:45.465403",
+      "minutes_avant_depart": 1.2455688666666667,
+      "cotes": {
+        "1": 36.0,
+        "2": 15.0,
+        "3": 5.0,
+        "4": 6.0,
+        "5": 9.9,
+        "6": 13.0,
+        "7": 29.0,
+        "8": 41.0,
+        "9": 11.0,
+        "10": 24.0,
+        "11": 6.6,
+        "12": 5.8
       }
     }
   ]
