@@ -4,7 +4,7 @@
   "reunion": 9,
   "heure_depart": 1789842600000,
   "distance": 2900,
-  "scraped_at": "2026-09-19T20:28:45.465403",
+  "scraped_at": "2026-09-19T20:29:25.134212",
   "minutes_avant_depart": 1,
   "participants": [
     {
@@ -14,106 +14,106 @@
       "cote_reference": 36.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789842511000
+      "timestamp_cote": 1789842551000
     },
     {
       "numPmu": 2,
       "nom": "MAHINE D'OCCAGNES",
-      "cote_live": 15.0,
+      "cote_live": 11.0,
       "cote_reference": 9.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789842511000
+      "timestamp_cote": 1789842551000
     },
     {
       "numPmu": 3,
       "nom": "MAESTRIA D'EURVAD",
-      "cote_live": 5.0,
+      "cote_live": 5.2,
       "cote_reference": 8.1,
-      "tendance": "",
+      "tendance": "+",
       "favoris": true,
-      "timestamp_cote": 1789842511000
+      "timestamp_cote": 1789842551000
     },
     {
       "numPmu": 4,
       "nom": "MALINE D'EVAILLES",
-      "cote_live": 6.0,
+      "cote_live": 6.4,
       "cote_reference": 7.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789842511000
+      "timestamp_cote": 1789842551000
     },
     {
       "numPmu": 5,
       "nom": "MOONLIGHT ATOUT",
-      "cote_live": 9.9,
+      "cote_live": 10.0,
       "cote_reference": 8.6,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789842511000
+      "timestamp_cote": 1789842551000
     },
     {
       "numPmu": 6,
       "nom": "MANON DU LUPIN",
-      "cote_live": 13.0,
+      "cote_live": 12.0,
       "cote_reference": 9.6,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789842511000
+      "timestamp_cote": 1789842551000
     },
     {
       "numPmu": 7,
       "nom": "MAESTRO DE PAGERIE",
-      "cote_live": 29.0,
+      "cote_live": 30.0,
       "cote_reference": 14.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789842511000
+      "timestamp_cote": 1789842551000
     },
     {
       "numPmu": 8,
       "nom": "MY DARLING DANOVER",
-      "cote_live": 41.0,
+      "cote_live": 38.0,
       "cote_reference": 22.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789842511000
+      "timestamp_cote": 1789842551000
     },
     {
       "numPmu": 9,
       "nom": "MARANELLA",
-      "cote_live": 11.0,
+      "cote_live": 10.0,
       "cote_reference": 6.7,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789842511000
+      "timestamp_cote": 1789842551000
     },
     {
       "numPmu": 10,
       "nom": "MIKI DU POMMEREUX",
-      "cote_live": 24.0,
+      "cote_live": 16.0,
       "cote_reference": 11.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789842511000
+      "timestamp_cote": 1789842551000
     },
     {
       "numPmu": 11,
       "nom": "MAYA DE LA FYE",
-      "cote_live": 6.6,
+      "cote_live": 7.5,
       "cote_reference": 21.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789842511000
+      "timestamp_cote": 1789842551000
     },
     {
       "numPmu": 12,
       "nom": "MY LADY BLUE",
-      "cote_live": 5.8,
+      "cote_live": 6.6,
       "cote_reference": 8.4,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789842511000
+      "timestamp_cote": 1789842551000
     }
   ],
   "hippodrome": "AMIENS",
@@ -260,6 +260,24 @@
         "10": 24.0,
         "11": 6.6,
         "12": 5.8
+      }
+    },
+    {
+      "scraped_at": "2026-09-19T20:29:25.134212",
+      "minutes_avant_depart": 0.5836088833333334,
+      "cotes": {
+        "1": 36.0,
+        "2": 11.0,
+        "3": 5.2,
+        "4": 6.4,
+        "5": 10.0,
+        "6": 12.0,
+        "7": 30.0,
+        "8": 38.0,
+        "9": 10.0,
+        "10": 16.0,
+        "11": 7.5,
+        "12": 6.6
       }
     }
   ]
