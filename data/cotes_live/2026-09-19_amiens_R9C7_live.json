@@ -4,7 +4,7 @@
   "reunion": 9,
   "heure_depart": 1789848000000,
   "distance": 2400,
-  "scraped_at": "2026-09-19T21:58:45.566669",
+  "scraped_at": "2026-09-19T21:59:25.148895",
   "minutes_avant_depart": 1,
   "participants": [
     {
@@ -12,45 +12,45 @@
       "nom": "KADOR DU RABUTIN",
       "cote_live": 13.0,
       "cote_reference": 14.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789847914000
+      "timestamp_cote": 1789847954000
     },
     {
       "numPmu": 2,
       "nom": "KODAC DE FIERVILLE",
-      "cote_live": 7.7,
+      "cote_live": 7.8,
       "cote_reference": 9.8,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789847914000
+      "timestamp_cote": 1789847954000
     },
     {
       "numPmu": 3,
       "nom": "KISS ME MATCH",
-      "cote_live": 6.4,
+      "cote_live": 6.3,
       "cote_reference": 4.9,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789847914000
+      "timestamp_cote": 1789847954000
     },
     {
       "numPmu": 4,
       "nom": "KISS YOU PIYA",
-      "cote_live": 10.0,
+      "cote_live": 11.0,
       "cote_reference": 11.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789847914000
+      "timestamp_cote": 1789847954000
     },
     {
       "numPmu": 5,
       "nom": "KEMER SI",
-      "cote_live": 37.0,
+      "cote_live": 31.0,
       "cote_reference": 21.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789847914000
+      "timestamp_cote": 1789847954000
     },
     {
       "numPmu": 6,
@@ -59,79 +59,79 @@
       "cote_reference": 4.0,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1789847914000
+      "timestamp_cote": 1789847954000
     },
     {
       "numPmu": 7,
       "nom": "KERIA FLEURY",
       "cote_live": 5.8,
       "cote_reference": 9.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789847914000
+      "timestamp_cote": 1789847954000
     },
     {
       "numPmu": 8,
       "nom": "KUROSIO DES LOVES",
       "cote_live": 18.0,
       "cote_reference": 20.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789847914000
+      "timestamp_cote": 1789847954000
     },
     {
       "numPmu": 9,
       "nom": "KASIMODO DREAM",
-      "cote_live": 22.0,
+      "cote_live": 23.0,
       "cote_reference": 25.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789847914000
+      "timestamp_cote": 1789847954000
     },
     {
       "numPmu": 10,
       "nom": "KENZO BEACH",
       "cote_live": 10.0,
       "cote_reference": 12.0,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789847914000
+      "timestamp_cote": 1789847954000
     },
     {
       "numPmu": 11,
       "nom": "KASTILLE",
-      "cote_live": 95.0,
+      "cote_live": 97.0,
       "cote_reference": 96.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789847914000
+      "timestamp_cote": 1789847954000
     },
     {
       "numPmu": 12,
       "nom": "KAIROS DU VAL",
-      "cote_live": 103.0,
+      "cote_live": 105.0,
       "cote_reference": 160.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789847914000
+      "timestamp_cote": 1789847954000
     },
     {
       "numPmu": 13,
       "nom": "KYOTO JIEL",
-      "cote_live": 21.0,
+      "cote_live": 22.0,
       "cote_reference": 12.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789847914000
+      "timestamp_cote": 1789847954000
     },
     {
       "numPmu": 14,
       "nom": "KARAIBE DE TILLARD",
-      "cote_live": 133.0,
+      "cote_live": 137.0,
       "cote_reference": 96.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789847914000
+      "timestamp_cote": 1789847954000
     }
   ],
   "hippodrome": "AMIENS",
@@ -294,6 +294,26 @@
         "12": 103.0,
         "13": 21.0,
         "14": 133.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-19T21:59:25.148895",
+      "minutes_avant_depart": 0.5833479666666667,
+      "cotes": {
+        "1": 13.0,
+        "2": 7.8,
+        "3": 6.3,
+        "4": 11.0,
+        "5": 31.0,
+        "6": 4.5,
+        "7": 5.8,
+        "8": 18.0,
+        "9": 23.0,
+        "10": 10.0,
+        "11": 97.0,
+        "12": 105.0,
+        "13": 22.0,
+        "14": 137.0
       }
     }
   ]
