@@ -4,116 +4,116 @@
   "reunion": 9,
   "heure_depart": 1789844400000,
   "distance": 2400,
-  "scraped_at": "2026-09-19T20:55:26.247179",
-  "minutes_avant_depart": 5,
+  "scraped_at": "2026-09-19T20:58:45.831412",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "LEGACY FAFA",
-      "cote_live": 6.3,
+      "cote_live": 6.9,
       "cote_reference": 7.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789844108000
+      "timestamp_cote": 1789844314000
     },
     {
       "numPmu": 2,
       "nom": "LOVAT",
-      "cote_live": 8.0,
+      "cote_live": 8.3,
       "cote_reference": 6.9,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789844108000
+      "timestamp_cote": 1789844314000
     },
     {
       "numPmu": 3,
       "nom": "LE TANGO DU RENARD",
-      "cote_live": 43.0,
+      "cote_live": 44.0,
       "cote_reference": 30.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789844108000
+      "timestamp_cote": 1789844314000
     },
     {
       "numPmu": 4,
       "nom": "LORINEA CUT",
-      "cote_live": 8.2,
+      "cote_live": 8.8,
       "cote_reference": 13.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789844108000
+      "timestamp_cote": 1789844314000
     },
     {
       "numPmu": 5,
       "nom": "LILY PEEL",
-      "cote_live": 8.0,
+      "cote_live": 7.3,
       "cote_reference": 5.3,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789844108000
+      "timestamp_cote": 1789844314000
     },
     {
       "numPmu": 6,
       "nom": "L'ULKA DI LEONE",
-      "cote_live": 4.0,
+      "cote_live": 3.7,
       "cote_reference": 4.6,
-      "tendance": "-",
+      "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1789844108000
+      "timestamp_cote": 1789844314000
     },
     {
       "numPmu": 7,
       "nom": "LEXIA",
-      "cote_live": 15.0,
+      "cote_live": 13.0,
       "cote_reference": 20.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789844108000
+      "timestamp_cote": 1789844314000
     },
     {
       "numPmu": 8,
       "nom": "LEONARD PEEL",
-      "cote_live": 9.4,
+      "cote_live": 10.0,
       "cote_reference": 13.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789844108000
+      "timestamp_cote": 1789844314000
     },
     {
       "numPmu": 9,
       "nom": "LOVE YOU DADDY",
-      "cote_live": 25.0,
+      "cote_live": 26.0,
       "cote_reference": 23.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789844108000
+      "timestamp_cote": 1789844314000
     },
     {
       "numPmu": 10,
       "nom": "LUEUR DES LANDES",
-      "cote_live": 14.0,
+      "cote_live": 15.0,
       "cote_reference": 9.2,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789844108000
+      "timestamp_cote": 1789844314000
     },
     {
       "numPmu": 11,
       "nom": "LASCO DE LOU",
-      "cote_live": 60.0,
+      "cote_live": 52.0,
       "cote_reference": 38.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789844108000
+      "timestamp_cote": 1789844314000
     },
     {
       "numPmu": 13,
       "nom": "LENNY D'EP",
-      "cote_live": 25.0,
+      "cote_live": 26.0,
       "cote_reference": 17.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789844108000
+      "timestamp_cote": 1789844314000
     }
   ],
   "hippodrome": "AMIENS",
@@ -170,6 +170,96 @@
         "10": 14.0,
         "11": 60.0,
         "13": 25.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-19T20:56:05.071471",
+      "minutes_avant_depart": 3.91686545,
+      "cotes": {
+        "1": 6.1,
+        "2": 8.0,
+        "3": 44.0,
+        "4": 8.3,
+        "5": 7.9,
+        "6": 3.9,
+        "7": 16.0,
+        "8": 9.4,
+        "9": 25.0,
+        "10": 14.0,
+        "11": 60.0,
+        "13": 25.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-19T20:56:45.291206",
+      "minutes_avant_depart": 3.2501973333333334,
+      "cotes": {
+        "1": 6.2,
+        "2": 8.1,
+        "3": 45.0,
+        "4": 8.4,
+        "5": 7.9,
+        "6": 3.9,
+        "7": 15.0,
+        "8": 9.5,
+        "9": 26.0,
+        "10": 14.0,
+        "11": 62.0,
+        "13": 26.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-19T20:57:25.514589",
+      "minutes_avant_depart": 2.5835290333333334,
+      "cotes": {
+        "1": 6.1,
+        "2": 8.2,
+        "3": 45.0,
+        "4": 8.4,
+        "5": 7.9,
+        "6": 3.9,
+        "7": 15.0,
+        "8": 9.4,
+        "9": 25.0,
+        "10": 14.0,
+        "11": 63.0,
+        "13": 25.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-19T20:58:05.170677",
+      "minutes_avant_depart": 1.9168608333333335,
+      "cotes": {
+        "1": 6.2,
+        "2": 8.4,
+        "3": 52.0,
+        "4": 8.6,
+        "5": 7.2,
+        "6": 3.6,
+        "7": 14.0,
+        "8": 10.0,
+        "9": 28.0,
+        "10": 16.0,
+        "11": 49.0,
+        "13": 29.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-19T20:58:45.831412",
+      "minutes_avant_depart": 1.2396455499999999,
+      "cotes": {
+        "1": 6.9,
+        "2": 8.3,
+        "3": 44.0,
+        "4": 8.8,
+        "5": 7.3,
+        "6": 3.7,
+        "7": 13.0,
+        "8": 10.0,
+        "9": 26.0,
+        "10": 15.0,
+        "11": 52.0,
+        "13": 26.0
       }
     }
   ]
