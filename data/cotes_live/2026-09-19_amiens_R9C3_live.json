@@ -4,7 +4,7 @@
   "reunion": 9,
   "heure_depart": 1789840800000,
   "distance": 2900,
-  "scraped_at": "2026-09-19T19:58:46.212626",
+  "scraped_at": "2026-09-19T19:59:25.388180",
   "minutes_avant_depart": 1,
   "participants": [
     {
@@ -12,54 +12,54 @@
       "nom": "MAX LA FRIPOUILLE",
       "cote_live": 5.7,
       "cote_reference": 10.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789840714000
+      "timestamp_cote": 1789840754000
     },
     {
       "numPmu": 2,
       "nom": "MERCURY JIEL",
-      "cote_live": 33.0,
+      "cote_live": 35.0,
       "cote_reference": 34.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789840714000
+      "timestamp_cote": 1789840754000
     },
     {
       "numPmu": 3,
       "nom": "MONOGAME",
-      "cote_live": 13.0,
+      "cote_live": 11.0,
       "cote_reference": 12.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789840714000
+      "timestamp_cote": 1789840754000
     },
     {
       "numPmu": 4,
       "nom": "MOONSHINER JOLY",
-      "cote_live": 27.0,
+      "cote_live": 24.0,
       "cote_reference": 19.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789840714000
+      "timestamp_cote": 1789840754000
     },
     {
       "numPmu": 5,
       "nom": "MANO D'ELVINQUIERE",
-      "cote_live": 3.0,
+      "cote_live": 3.3,
       "cote_reference": 3.5,
       "tendance": "+",
       "favoris": true,
-      "timestamp_cote": 1789840714000
+      "timestamp_cote": 1789840754000
     },
     {
       "numPmu": 6,
       "nom": "MA BELLA DE JED",
-      "cote_live": 46.0,
+      "cote_live": 51.0,
       "cote_reference": 18.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789840714000
+      "timestamp_cote": 1789840754000
     },
     {
       "numPmu": 7,
@@ -68,52 +68,52 @@
       "cote_reference": 22.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789840714000
+      "timestamp_cote": 1789840754000
     },
     {
       "numPmu": 8,
       "nom": "MARIO DU CAIEU",
-      "cote_live": 21.0,
+      "cote_live": 22.0,
       "cote_reference": 16.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789840714000
+      "timestamp_cote": 1789840754000
     },
     {
       "numPmu": 9,
       "nom": "MILLESIME ROC",
-      "cote_live": 9.1,
+      "cote_live": 8.5,
       "cote_reference": 6.2,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789840714000
+      "timestamp_cote": 1789840754000
     },
     {
       "numPmu": 10,
       "nom": "MYRTILLE DE SEE",
       "cote_live": 28.0,
       "cote_reference": 16.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789840714000
+      "timestamp_cote": 1789840754000
     },
     {
       "numPmu": 11,
       "nom": "MIKONOS DE MAHEY",
-      "cote_live": 19.0,
+      "cote_live": 20.0,
       "cote_reference": 10.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789840714000
+      "timestamp_cote": 1789840754000
     },
     {
       "numPmu": 12,
       "nom": "MACAME DU CAUX",
-      "cote_live": 6.3,
+      "cote_live": 5.8,
       "cote_reference": 8.2,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789840714000
+      "timestamp_cote": 1789840754000
     }
   ],
   "hippodrome": "AMIENS",
@@ -260,6 +260,24 @@
         "10": 28.0,
         "11": 19.0,
         "12": 6.3
+      }
+    },
+    {
+      "scraped_at": "2026-09-19T19:59:25.388180",
+      "minutes_avant_depart": 0.5836924666666667,
+      "cotes": {
+        "1": 5.7,
+        "2": 35.0,
+        "3": 11.0,
+        "4": 24.0,
+        "5": 3.3,
+        "6": 51.0,
+        "7": 15.0,
+        "8": 22.0,
+        "9": 8.5,
+        "10": 28.0,
+        "11": 20.0,
+        "12": 5.8
       }
     }
   ]
