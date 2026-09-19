@@ -4,44 +4,44 @@
   "reunion": 1,
   "heure_depart": 1789821420000,
   "distance": 1200,
-  "scraped_at": "2026-09-19T14:36:05.076747",
-  "minutes_avant_depart": 1,
+  "scraped_at": "2026-09-19T14:39:24.664490",
+  "minutes_avant_depart": -2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "SCYTHE",
-      "cote_live": 2.7,
+      "cote_live": 2.4,
       "cote_reference": 3.5,
-      "tendance": "-",
+      "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1789821360000
+      "timestamp_cote": 1789821520000
     },
     {
       "numPmu": 2,
       "nom": "CALYX EXPRESS",
-      "cote_live": 16.0,
+      "cote_live": 18.0,
       "cote_reference": 12.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789821360000
+      "timestamp_cote": 1789821520000
     },
     {
       "numPmu": 3,
       "nom": "MAGNA GRACE",
-      "cote_live": 36.0,
+      "cote_live": 49.0,
       "cote_reference": 24.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789821360000
+      "timestamp_cote": 1789821520000
     },
     {
       "numPmu": 4,
       "nom": "MOONDANCE",
-      "cote_live": 8.2,
+      "cote_live": 7.9,
       "cote_reference": 10.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789821360000
+      "timestamp_cote": 1789821520000
     },
     {
       "numPmu": 5,
@@ -50,25 +50,25 @@
       "cote_reference": 3.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789821360000
+      "timestamp_cote": 1789821520000
     },
     {
       "numPmu": 6,
       "nom": "CHECKERED FLAG",
-      "cote_live": 15.0,
+      "cote_live": 18.0,
       "cote_reference": 7.4,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789821360000
+      "timestamp_cote": 1789821520000
     },
     {
       "numPmu": 7,
       "nom": "BELISA BAY",
-      "cote_live": 5.5,
+      "cote_live": 6.3,
       "cote_reference": 4.5,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789821360000
+      "timestamp_cote": 1789821520000
     }
   ],
   "hippodrome": "CHANTILLY",
@@ -175,6 +175,71 @@
         "5": 3.1,
         "6": 15.0,
         "7": 5.5
+      }
+    },
+    {
+      "scraped_at": "2026-09-19T14:36:44.437777",
+      "minutes_avant_depart": 0.26496885,
+      "cotes": {
+        "1": 2.5,
+        "2": 17.0,
+        "3": 38.0,
+        "4": 7.5,
+        "5": 3.3,
+        "6": 16.0,
+        "7": 5.7
+      }
+    },
+    {
+      "scraped_at": "2026-09-19T14:37:24.292444",
+      "minutes_avant_depart": -0.40169988333333334,
+      "cotes": {
+        "1": 2.6,
+        "2": 17.0,
+        "3": 40.0,
+        "4": 8.0,
+        "5": 3.1,
+        "6": 18.0,
+        "7": 5.8
+      }
+    },
+    {
+      "scraped_at": "2026-09-19T14:38:04.565268",
+      "minutes_avant_depart": -1.06836885,
+      "cotes": {
+        "1": 2.6,
+        "2": 18.0,
+        "3": 46.0,
+        "4": 7.3,
+        "5": 3.0,
+        "6": 16.0,
+        "7": 5.9
+      }
+    },
+    {
+      "scraped_at": "2026-09-19T14:38:44.369771",
+      "minutes_avant_depart": -1.7350375999999998,
+      "cotes": {
+        "1": 2.4,
+        "2": 18.0,
+        "3": 49.0,
+        "4": 7.8,
+        "5": 3.1,
+        "6": 18.0,
+        "7": 6.3
+      }
+    },
+    {
+      "scraped_at": "2026-09-19T14:39:24.664490",
+      "minutes_avant_depart": -2.407589883333333,
+      "cotes": {
+        "1": 2.4,
+        "2": 18.0,
+        "3": 49.0,
+        "4": 7.9,
+        "5": 3.1,
+        "6": 18.0,
+        "7": 6.3
       }
     }
   ]
