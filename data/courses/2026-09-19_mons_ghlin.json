@@ -1,7 +1,7 @@
 {
   "hippodrome": "MONS (GHLIN)",
   "type_reunion": "ATTELE",
-  "date_extraction": "2026-09-19T00:05:42.790983",
+  "date_extraction": "2026-09-19T13:40:05.329324",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/19092026/R5",
   "courses": [
     {
@@ -30,7 +30,10 @@
           "equipement(s)": "",
           "nb_courses": 75,
           "nb_victoires": 16,
-          "nb_places": 37
+          "nb_places": 37,
+          "cote": 28.0,
+          "cote_tendance": "+",
+          "cote_reference": 27.0
         },
         {
           "n°": "2",
@@ -50,7 +53,10 @@
           "equipement(s)": "",
           "nb_courses": 21,
           "nb_victoires": 8,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 11.0,
+          "cote_tendance": "-",
+          "cote_reference": 12.0
         },
         {
           "n°": "3",
@@ -70,7 +76,10 @@
           "equipement(s)": "",
           "nb_courses": 50,
           "nb_victoires": 11,
-          "nb_places": 28
+          "nb_places": 28,
+          "cote": 11.0,
+          "cote_tendance": "-",
+          "cote_reference": 11.0
         },
         {
           "n°": "4",
@@ -90,7 +99,10 @@
           "equipement(s)": "",
           "nb_courses": 47,
           "nb_victoires": 9,
-          "nb_places": 24
+          "nb_places": 24,
+          "cote": 13.0,
+          "cote_tendance": "+",
+          "cote_reference": 14.0
         },
         {
           "n°": "5",
@@ -110,7 +122,10 @@
           "equipement(s)": "",
           "nb_courses": 61,
           "nb_victoires": 25,
-          "nb_places": 24
+          "nb_places": 24,
+          "cote": 1.7,
+          "cote_tendance": "",
+          "cote_reference": 1.6
         },
         {
           "n°": "6",
@@ -130,7 +145,10 @@
           "equipement(s)": "",
           "nb_courses": 79,
           "nb_victoires": 22,
-          "nb_places": 42
+          "nb_places": 42,
+          "cote": 5.0,
+          "cote_tendance": "",
+          "cote_reference": 5.1
         },
         {
           "n°": "7",
@@ -150,7 +168,10 @@
           "equipement(s)": "",
           "nb_courses": 32,
           "nb_victoires": 17,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 27.0,
+          "cote_tendance": "+",
+          "cote_reference": 29.0
         },
         {
           "n°": "8",
@@ -170,7 +191,10 @@
           "equipement(s)": "",
           "nb_courses": 142,
           "nb_victoires": 17,
-          "nb_places": 84
+          "nb_places": 84,
+          "cote": 168.0,
+          "cote_tendance": "+",
+          "cote_reference": 161.0
         },
         {
           "n°": "9",
@@ -190,7 +214,10 @@
           "equipement(s)": "",
           "nb_courses": 58,
           "nb_victoires": 13,
-          "nb_places": 30
+          "nb_places": 30,
+          "cote": 36.0,
+          "cote_tendance": "+",
+          "cote_reference": 35.0
         },
         {
           "n°": "10",
@@ -210,9 +237,13 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 78.0,
+          "cote_tendance": "+",
+          "cote_reference": 78.0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     }
   ]
 }
