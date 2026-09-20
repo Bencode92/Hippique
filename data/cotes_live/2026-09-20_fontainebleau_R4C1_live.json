@@ -1,0 +1,168 @@
+{
+  "course": "PRIX DES ANIMATIONS PMU (PRIX LABEL EQUURES)",
+  "numero": 1,
+  "reunion": 4,
+  "heure_depart": 1789911120000,
+  "distance": 1200,
+  "scraped_at": "2026-09-20T15:28:31.566830",
+  "minutes_avant_depart": 3,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "SILENCIO",
+      "cote_live": 6.5,
+      "cote_reference": 8.5,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789910891000
+    },
+    {
+      "numPmu": 2,
+      "nom": "NO REMORSE",
+      "cote_live": 7.9,
+      "cote_reference": 4.6,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789910891000
+    },
+    {
+      "numPmu": 3,
+      "nom": "VERTICAL",
+      "cote_live": 31.0,
+      "cote_reference": 71.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789910891000
+    },
+    {
+      "numPmu": 4,
+      "nom": "MARVELLOUS CITY",
+      "cote_live": 65.0,
+      "cote_reference": 42.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1789910891000
+    },
+    {
+      "numPmu": 5,
+      "nom": "QUEEN NZINGA",
+      "cote_live": 52.0,
+      "cote_reference": 59.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789910891000
+    },
+    {
+      "numPmu": 6,
+      "nom": "SIGHISH",
+      "cote_live": 6.7,
+      "cote_reference": 5.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789910891000
+    },
+    {
+      "numPmu": 7,
+      "nom": "TIME LIKE A RIVER",
+      "cote_live": 60.0,
+      "cote_reference": 143.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1789910891000
+    },
+    {
+      "numPmu": 8,
+      "nom": "MARBELLESA",
+      "cote_live": 2.9,
+      "cote_reference": 3.0,
+      "tendance": "-",
+      "favoris": true,
+      "timestamp_cote": 1789910891000
+    },
+    {
+      "numPmu": 9,
+      "nom": "PHILLY BASSETT",
+      "cote_live": 5.0,
+      "cote_reference": 8.2,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1789910891000
+    },
+    {
+      "numPmu": 10,
+      "nom": "BEVERLY WILSHIRE",
+      "cote_live": 10.0,
+      "cote_reference": 11.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1789910891000
+    }
+  ],
+  "hippodrome": "FONTAINEBLEAU",
+  "releves": [
+    {
+      "scraped_at": "2026-09-20T15:26:31.490175",
+      "minutes_avant_depart": 5.4814927,
+      "cotes": {
+        "1": 5.7,
+        "2": 7.4,
+        "3": 32.0,
+        "4": 69.0,
+        "5": 54.0,
+        "6": 7.5,
+        "7": 76.0,
+        "8": 2.8,
+        "9": 5.6,
+        "10": 11.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-20T15:27:11.343292",
+      "minutes_avant_depart": 4.81482385,
+      "cotes": {
+        "1": 6.0,
+        "2": 7.6,
+        "3": 29.0,
+        "4": 68.0,
+        "5": 51.0,
+        "6": 7.6,
+        "7": 60.0,
+        "8": 2.9,
+        "9": 4.8,
+        "10": 11.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-20T15:27:51.416945",
+      "minutes_avant_depart": 4.148155183333333,
+      "cotes": {
+        "1": 6.1,
+        "2": 7.4,
+        "3": 30.0,
+        "4": 69.0,
+        "5": 50.0,
+        "6": 7.2,
+        "7": 61.0,
+        "8": 3.0,
+        "9": 4.9,
+        "10": 11.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-20T15:28:31.566830",
+      "minutes_avant_depart": 3.476357966666667,
+      "cotes": {
+        "1": 6.5,
+        "2": 7.9,
+        "3": 31.0,
+        "4": 65.0,
+        "5": 52.0,
+        "6": 6.7,
+        "7": 60.0,
+        "8": 2.9,
+        "9": 5.0,
+        "10": 10.0
+      }
+    }
+  ]
+}
