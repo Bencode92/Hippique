@@ -1,7 +1,7 @@
 {
   "hippodrome": "BOLOGNE",
   "type_reunion": "ATTELE",
-  "date_extraction": "2026-09-20T00:01:39.605407",
+  "date_extraction": "2026-09-20T13:54:16.512560",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/20092026/R7",
   "courses": [
     {
@@ -30,7 +30,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.1,
+          "cote_tendance": "+",
+          "cote_reference": 55.0
         },
         {
           "n°": "2",
@@ -50,7 +53,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.1,
+          "cote_tendance": "+",
+          "cote_reference": 1.7
         },
         {
           "n°": "3",
@@ -70,7 +76,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 46.0,
+          "cote_tendance": "+",
+          "cote_reference": 55.0
         },
         {
           "n°": "4",
@@ -90,7 +99,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 61.0,
+          "cote_tendance": "-"
         },
         {
           "n°": "5",
@@ -110,7 +121,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 13.0,
+          "cote_tendance": "+",
+          "cote_reference": 11.0
         },
         {
           "n°": "6",
@@ -130,7 +144,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 8.0,
+          "cote_tendance": "+",
+          "cote_reference": 4.8
         },
         {
           "n°": "7",
@@ -150,7 +167,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 46.0,
+          "cote_tendance": "-",
+          "cote_reference": 111.0
         },
         {
           "n°": "8",
@@ -170,7 +190,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 3.8,
+          "cote_tendance": "",
+          "cote_reference": 4.6
         }
       ]
     }
