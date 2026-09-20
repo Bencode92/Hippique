@@ -4,71 +4,71 @@
   "reunion": 4,
   "heure_depart": 1789923720000,
   "distance": 2600,
-  "scraped_at": "2026-09-20T19:01:13.426406",
-  "minutes_avant_depart": 1,
+  "scraped_at": "2026-09-20T19:04:33.419056",
+  "minutes_avant_depart": -3,
   "participants": [
     {
       "numPmu": 2,
       "nom": "FLYING AQUANGEL",
-      "cote_live": 11.0,
+      "cote_live": 10.0,
       "cote_reference": 10.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789923663000
+      "timestamp_cote": 1789923770000
     },
     {
       "numPmu": 3,
       "nom": "FANTASTIC NINIAN",
-      "cote_live": 22.0,
+      "cote_live": 26.0,
       "cote_reference": 17.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789923663000
+      "timestamp_cote": 1789923770000
     },
     {
       "numPmu": 4,
       "nom": "MOZART DES BRIERES",
-      "cote_live": 3.8,
+      "cote_live": 3.7,
       "cote_reference": 6.8,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789923663000
+      "timestamp_cote": 1789923770000
     },
     {
       "numPmu": 5,
       "nom": "MARCHEMALO",
-      "cote_live": 6.0,
+      "cote_live": 6.6,
       "cote_reference": 5.8,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789923663000
+      "timestamp_cote": 1789923770000
     },
     {
       "numPmu": 6,
       "nom": "CREATIVER",
-      "cote_live": 3.1,
+      "cote_live": 3.3,
       "cote_reference": 3.9,
-      "tendance": "-",
+      "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1789923663000
+      "timestamp_cote": 1789923770000
     },
     {
       "numPmu": 7,
       "nom": "EL CANEY",
-      "cote_live": 13.0,
+      "cote_live": 11.0,
       "cote_reference": 6.1,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789923663000
+      "timestamp_cote": 1789923770000
     },
     {
       "numPmu": 9,
       "nom": "LALOU",
-      "cote_live": 5.3,
+      "cote_live": 5.0,
       "cote_reference": 4.0,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789923663000
+      "timestamp_cote": 1789923770000
     }
   ],
   "hippodrome": "FONTAINEBLEAU",
@@ -175,6 +175,71 @@
         "6": 3.1,
         "7": 13.0,
         "9": 5.3
+      }
+    },
+    {
+      "scraped_at": "2026-09-20T19:01:53.336538",
+      "minutes_avant_depart": 0.12035544999999999,
+      "cotes": {
+        "2": 10.0,
+        "3": 24.0,
+        "4": 3.8,
+        "5": 6.4,
+        "6": 3.0,
+        "7": 12.0,
+        "9": 5.4
+      }
+    },
+    {
+      "scraped_at": "2026-09-20T19:02:32.952850",
+      "minutes_avant_depart": -0.5463132166666667,
+      "cotes": {
+        "2": 10.0,
+        "3": 24.0,
+        "4": 3.7,
+        "5": 6.3,
+        "6": 3.2,
+        "7": 12.0,
+        "9": 5.4
+      }
+    },
+    {
+      "scraped_at": "2026-09-20T19:03:12.935119",
+      "minutes_avant_depart": -1.21298215,
+      "cotes": {
+        "2": 10.0,
+        "3": 26.0,
+        "4": 3.7,
+        "5": 6.6,
+        "6": 3.3,
+        "7": 11.0,
+        "9": 5.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-20T19:03:53.217928",
+      "minutes_avant_depart": -1.8796509333333333,
+      "cotes": {
+        "2": 10.0,
+        "3": 26.0,
+        "4": 3.7,
+        "5": 6.6,
+        "6": 3.3,
+        "7": 11.0,
+        "9": 5.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-20T19:04:33.419056",
+      "minutes_avant_depart": -2.553637483333333,
+      "cotes": {
+        "2": 10.0,
+        "3": 26.0,
+        "4": 3.7,
+        "5": 6.6,
+        "6": 3.3,
+        "7": 11.0,
+        "9": 5.0
       }
     }
   ]
