@@ -4,107 +4,107 @@
   "reunion": 9,
   "heure_depart": 1789911900000,
   "distance": 2850,
-  "scraped_at": "2026-09-20T15:45:11.709544",
-  "minutes_avant_depart": 0,
+  "scraped_at": "2026-09-20T15:48:31.465666",
+  "minutes_avant_depart": -4,
   "participants": [
     {
       "numPmu": 1,
       "nom": "LATINO DREAM",
-      "cote_live": 9.0,
+      "cote_live": 9.1,
       "cote_reference": null,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789911902000
+      "timestamp_cote": 1789912030000
     },
     {
       "numPmu": 2,
       "nom": "LEADER BENOIT",
       "cote_live": 121.0,
       "cote_reference": 79.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789911902000
+      "timestamp_cote": 1789912030000
     },
     {
       "numPmu": 3,
       "nom": "LE DOCTOR",
-      "cote_live": 15.0,
+      "cote_live": 13.0,
       "cote_reference": 8.4,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1789911902000
+      "timestamp_cote": 1789912030000
     },
     {
       "numPmu": 4,
       "nom": "LIKE DAD",
-      "cote_live": 41.0,
+      "cote_live": 55.0,
       "cote_reference": 7.2,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789911902000
+      "timestamp_cote": 1789912030000
     },
     {
       "numPmu": 5,
       "nom": "LUAP D'ORTIGE",
-      "cote_live": 54.0,
+      "cote_live": 73.0,
       "cote_reference": 159.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789911902000
+      "timestamp_cote": 1789912030000
     },
     {
       "numPmu": 7,
       "nom": "LIKE DESBOIS",
-      "cote_live": 87.0,
+      "cote_live": 95.0,
       "cote_reference": 79.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789911902000
+      "timestamp_cote": 1789912030000
     },
     {
       "numPmu": 8,
       "nom": "LAGON BLEU",
-      "cote_live": 10.0,
+      "cote_live": 11.0,
       "cote_reference": 15.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789911902000
+      "timestamp_cote": 1789912030000
     },
     {
       "numPmu": 9,
       "nom": "LEWIS PARK",
-      "cote_live": 4.4,
+      "cote_live": 3.9,
       "cote_reference": 9.9,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789911902000
+      "timestamp_cote": 1789912030000
     },
     {
       "numPmu": 10,
       "nom": "LORD DAIDOU",
-      "cote_live": 24.0,
+      "cote_live": 22.0,
       "cote_reference": 17.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789911902000
+      "timestamp_cote": 1789912030000
     },
     {
       "numPmu": 11,
       "nom": "LIBERO DE LOU",
-      "cote_live": 17.0,
+      "cote_live": 25.0,
       "cote_reference": 53.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789911902000
+      "timestamp_cote": 1789912030000
     },
     {
       "numPmu": 12,
       "nom": "LUCKY EVER",
-      "cote_live": 7.0,
+      "cote_live": 7.6,
       "cote_reference": 6.9,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1789911902000
+      "timestamp_cote": 1789912030000
     },
     {
       "numPmu": 13,
@@ -113,25 +113,25 @@
       "cote_reference": 12.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789911902000
+      "timestamp_cote": 1789912030000
     },
     {
       "numPmu": 14,
       "nom": "LOULOU DU SABLIER",
-      "cote_live": 24.0,
+      "cote_live": 33.0,
       "cote_reference": 31.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1789911902000
+      "timestamp_cote": 1789912030000
     },
     {
       "numPmu": 15,
       "nom": "LOOK HAPPY",
-      "cote_live": 4.2,
+      "cote_live": 3.8,
       "cote_reference": 2.8,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": true,
-      "timestamp_cote": 1789911902000
+      "timestamp_cote": 1789912030000
     }
   ],
   "hippodrome": "LYON-PARILLY",
@@ -334,6 +334,106 @@
         "13": 16.0,
         "14": 24.0,
         "15": 4.2
+      }
+    },
+    {
+      "scraped_at": "2026-09-20T15:45:51.392104",
+      "minutes_avant_depart": -0.8519026833333334,
+      "cotes": {
+        "1": 8.6,
+        "2": 136.0,
+        "3": 17.0,
+        "4": 48.0,
+        "5": 64.0,
+        "7": 103.0,
+        "8": 11.0,
+        "9": 4.0,
+        "10": 22.0,
+        "11": 20.0,
+        "12": 6.7,
+        "13": 17.0,
+        "14": 25.0,
+        "15": 4.1
+      }
+    },
+    {
+      "scraped_at": "2026-09-20T15:46:31.469797",
+      "minutes_avant_depart": -1.5185715333333334,
+      "cotes": {
+        "1": 8.7,
+        "2": 133.0,
+        "3": 12.0,
+        "4": 45.0,
+        "5": 65.0,
+        "7": 93.0,
+        "8": 10.0,
+        "9": 3.9,
+        "10": 21.0,
+        "11": 21.0,
+        "12": 7.0,
+        "13": 17.0,
+        "14": 28.0,
+        "15": 4.7
+      }
+    },
+    {
+      "scraped_at": "2026-09-20T15:47:11.263879",
+      "minutes_avant_depart": -2.1852405166666666,
+      "cotes": {
+        "1": 9.3,
+        "2": 128.0,
+        "3": 14.0,
+        "4": 55.0,
+        "5": 72.0,
+        "7": 93.0,
+        "8": 11.0,
+        "9": 3.9,
+        "10": 21.0,
+        "11": 25.0,
+        "12": 7.6,
+        "13": 16.0,
+        "14": 32.0,
+        "15": 3.9
+      }
+    },
+    {
+      "scraped_at": "2026-09-20T15:47:51.328616",
+      "minutes_avant_depart": -2.8519096333333334,
+      "cotes": {
+        "1": 9.1,
+        "2": 121.0,
+        "3": 13.0,
+        "4": 55.0,
+        "5": 73.0,
+        "7": 95.0,
+        "8": 11.0,
+        "9": 3.9,
+        "10": 22.0,
+        "11": 25.0,
+        "12": 7.6,
+        "13": 16.0,
+        "14": 33.0,
+        "15": 3.8
+      }
+    },
+    {
+      "scraped_at": "2026-09-20T15:48:31.465666",
+      "minutes_avant_depart": -3.521551666666667,
+      "cotes": {
+        "1": 9.1,
+        "2": 121.0,
+        "3": 13.0,
+        "4": 55.0,
+        "5": 73.0,
+        "7": 95.0,
+        "8": 11.0,
+        "9": 3.9,
+        "10": 22.0,
+        "11": 25.0,
+        "12": 7.6,
+        "13": 16.0,
+        "14": 33.0,
+        "15": 3.8
       }
     }
   ]
