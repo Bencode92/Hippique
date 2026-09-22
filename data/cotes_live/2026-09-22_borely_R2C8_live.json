@@ -4,17 +4,17 @@
   "reunion": 2,
   "heure_depart": 1790083380000,
   "distance": 2300,
-  "scraped_at": "2026-09-22T15:17:11.167567",
-  "minutes_avant_depart": 6,
+  "scraped_at": "2026-09-22T15:20:30.839794",
+  "minutes_avant_depart": 2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "KINGSLAND DE SIMM",
-      "cote_live": 6.6,
+      "cote_live": 6.5,
       "cote_reference": 8.3,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790083030000
+      "timestamp_cote": 1790083206000
     },
     {
       "numPmu": 2,
@@ -23,97 +23,97 @@
       "cote_reference": 9.1,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790083030000
+      "timestamp_cote": 1790083206000
     },
     {
       "numPmu": 3,
       "nom": "JAVANAIS DELO",
-      "cote_live": 4.7,
+      "cote_live": 4.6,
       "cote_reference": 5.2,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790083030000
+      "timestamp_cote": 1790083206000
     },
     {
       "numPmu": 4,
       "nom": "ILLUSTRE FERM",
-      "cote_live": 115.0,
+      "cote_live": 97.0,
       "cote_reference": 115.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790083030000
+      "timestamp_cote": 1790083206000
     },
     {
       "numPmu": 5,
       "nom": "GERONIMO FUEGO",
-      "cote_live": 21.0,
+      "cote_live": 17.0,
       "cote_reference": 20.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790083030000
+      "timestamp_cote": 1790083206000
     },
     {
       "numPmu": 6,
       "nom": "IBIZA EVENING",
       "cote_live": 15.0,
       "cote_reference": 33.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790083030000
+      "timestamp_cote": 1790083206000
     },
     {
       "numPmu": 7,
       "nom": "IVOIRE PRESTANCE",
-      "cote_live": 35.0,
+      "cote_live": 41.0,
       "cote_reference": 28.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790083030000
+      "timestamp_cote": 1790083206000
     },
     {
       "numPmu": 8,
       "nom": "JEREMY D'AS",
       "cote_live": 2.6,
       "cote_reference": 2.2,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": true,
-      "timestamp_cote": 1790083030000
+      "timestamp_cote": 1790083206000
     },
     {
       "numPmu": 9,
       "nom": "I LOVE IGNY",
       "cote_live": 59.0,
       "cote_reference": 40.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790083030000
+      "timestamp_cote": 1790083206000
     },
     {
       "numPmu": 10,
       "nom": "ISIS DE LA FERME",
-      "cote_live": 14.0,
+      "cote_live": 15.0,
       "cote_reference": 18.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790083030000
+      "timestamp_cote": 1790083206000
     },
     {
       "numPmu": 11,
       "nom": "KAPORAL VISAIS",
-      "cote_live": 29.0,
+      "cote_live": 32.0,
       "cote_reference": 23.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790083030000
+      "timestamp_cote": 1790083206000
     },
     {
       "numPmu": 12,
       "nom": "GIRLY VICTORY",
-      "cote_live": 30.0,
+      "cote_live": 29.0,
       "cote_reference": 29.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790083030000
+      "timestamp_cote": 1790083206000
     }
   ],
   "hippodrome": "BORELY",
@@ -134,6 +134,96 @@
         "10": 14.0,
         "11": 29.0,
         "12": 30.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-22T15:17:50.914211",
+      "minutes_avant_depart": 5.157584716666666,
+      "cotes": {
+        "1": 6.7,
+        "2": 10.0,
+        "3": 4.7,
+        "4": 117.0,
+        "5": 21.0,
+        "6": 15.0,
+        "7": 36.0,
+        "8": 2.5,
+        "9": 59.0,
+        "10": 14.0,
+        "11": 29.0,
+        "12": 30.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-22T15:18:30.787980",
+      "minutes_avant_depart": 4.4909160166666675,
+      "cotes": {
+        "1": 6.9,
+        "2": 10.0,
+        "3": 4.5,
+        "4": 116.0,
+        "5": 17.0,
+        "6": 14.0,
+        "7": 36.0,
+        "8": 2.6,
+        "9": 53.0,
+        "10": 15.0,
+        "11": 30.0,
+        "12": 30.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-22T15:19:10.796871",
+      "minutes_avant_depart": 3.8242466833333335,
+      "cotes": {
+        "1": 6.9,
+        "2": 9.8,
+        "3": 4.6,
+        "4": 108.0,
+        "5": 17.0,
+        "6": 14.0,
+        "7": 38.0,
+        "8": 2.7,
+        "9": 54.0,
+        "10": 15.0,
+        "11": 29.0,
+        "12": 30.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-22T15:19:50.769435",
+      "minutes_avant_depart": 3.1575773333333337,
+      "cotes": {
+        "1": 6.7,
+        "2": 10.0,
+        "3": 4.5,
+        "4": 90.0,
+        "5": 17.0,
+        "6": 14.0,
+        "7": 40.0,
+        "8": 2.7,
+        "9": 56.0,
+        "10": 15.0,
+        "11": 30.0,
+        "12": 28.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-22T15:20:30.839794",
+      "minutes_avant_depart": 2.4865413833333334,
+      "cotes": {
+        "1": 6.5,
+        "2": 10.0,
+        "3": 4.6,
+        "4": 97.0,
+        "5": 17.0,
+        "6": 15.0,
+        "7": 41.0,
+        "8": 2.6,
+        "9": 59.0,
+        "10": 15.0,
+        "11": 32.0,
+        "12": 29.0
       }
     }
   ]
