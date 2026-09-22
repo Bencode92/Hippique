@@ -4,17 +4,17 @@
   "reunion": 1,
   "heure_depart": 1790082300000,
   "distance": 4400,
-  "scraped_at": "2026-09-22T15:03:51.161799",
-  "minutes_avant_depart": 1,
+  "scraped_at": "2026-09-22T15:07:11.302229",
+  "minutes_avant_depart": -2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "METRONOMIQUE",
       "cote_live": 1.5,
       "cote_reference": 1.9,
-      "tendance": "+",
+      "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1790082223000
+      "timestamp_cote": 1790082310000
     },
     {
       "numPmu": 2,
@@ -23,61 +23,61 @@
       "cote_reference": 10.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790082223000
+      "timestamp_cote": 1790082310000
     },
     {
       "numPmu": 3,
       "nom": "FRENCH LOVER",
-      "cote_live": 27.0,
+      "cote_live": 32.0,
       "cote_reference": 14.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790082223000
+      "timestamp_cote": 1790082310000
     },
     {
       "numPmu": 4,
       "nom": "WILD FUN",
-      "cote_live": 64.0,
+      "cote_live": 76.0,
       "cote_reference": 58.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790082223000
+      "timestamp_cote": 1790082310000
     },
     {
       "numPmu": 5,
       "nom": "THE ROBBERS",
-      "cote_live": 143.0,
+      "cote_live": 180.0,
       "cote_reference": 82.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790082223000
+      "timestamp_cote": 1790082310000
     },
     {
       "numPmu": 6,
       "nom": "MISTER SUN",
-      "cote_live": 20.0,
+      "cote_live": 23.0,
       "cote_reference": 11.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790082223000
+      "timestamp_cote": 1790082310000
     },
     {
       "numPmu": 7,
       "nom": "OPERA LIGHT",
-      "cote_live": 22.0,
+      "cote_live": 21.0,
       "cote_reference": 15.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790082223000
+      "timestamp_cote": 1790082310000
     },
     {
       "numPmu": 8,
       "nom": "EDAMURA",
-      "cote_live": 8.2,
+      "cote_live": 7.6,
       "cote_reference": 10.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790082223000
+      "timestamp_cote": 1790082310000
     },
     {
       "numPmu": 9,
@@ -86,16 +86,16 @@
       "cote_reference": 8.5,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790082223000
+      "timestamp_cote": 1790082310000
     },
     {
       "numPmu": 10,
       "nom": "MELISSE DU MATHAN",
-      "cote_live": 10.0,
+      "cote_live": 9.5,
       "cote_reference": 14.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790082223000
+      "timestamp_cote": 1790082310000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -194,6 +194,86 @@
         "8": 8.2,
         "9": 15.0,
         "10": 10.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-22T15:04:31.028009",
+      "minutes_avant_depart": 0.4909626166666667,
+      "cotes": {
+        "1": 1.5,
+        "2": 17.0,
+        "3": 28.0,
+        "4": 66.0,
+        "5": 148.0,
+        "6": 19.0,
+        "7": 23.0,
+        "8": 8.2,
+        "9": 15.0,
+        "10": 9.6
+      }
+    },
+    {
+      "scraped_at": "2026-09-22T15:05:10.980351",
+      "minutes_avant_depart": -0.17570601666666666,
+      "cotes": {
+        "1": 1.5,
+        "2": 16.0,
+        "3": 31.0,
+        "4": 74.0,
+        "5": 176.0,
+        "6": 22.0,
+        "7": 21.0,
+        "8": 9.1,
+        "9": 15.0,
+        "10": 9.4
+      }
+    },
+    {
+      "scraped_at": "2026-09-22T15:05:51.091392",
+      "minutes_avant_depart": -0.84237465,
+      "cotes": {
+        "1": 1.5,
+        "2": 17.0,
+        "3": 32.0,
+        "4": 76.0,
+        "5": 180.0,
+        "6": 23.0,
+        "7": 21.0,
+        "8": 7.6,
+        "9": 15.0,
+        "10": 9.5
+      }
+    },
+    {
+      "scraped_at": "2026-09-22T15:06:30.687192",
+      "minutes_avant_depart": -1.5090433333333333,
+      "cotes": {
+        "1": 1.5,
+        "2": 17.0,
+        "3": 32.0,
+        "4": 76.0,
+        "5": 180.0,
+        "6": 23.0,
+        "7": 21.0,
+        "8": 7.6,
+        "9": 15.0,
+        "10": 9.5
+      }
+    },
+    {
+      "scraped_at": "2026-09-22T15:07:11.302229",
+      "minutes_avant_depart": -2.1837416666666667,
+      "cotes": {
+        "1": 1.5,
+        "2": 17.0,
+        "3": 32.0,
+        "4": 76.0,
+        "5": 180.0,
+        "6": 23.0,
+        "7": 21.0,
+        "8": 7.6,
+        "9": 15.0,
+        "10": 9.5
       }
     }
   ]
