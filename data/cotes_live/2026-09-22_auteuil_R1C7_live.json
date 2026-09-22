@@ -4,26 +4,26 @@
   "reunion": 1,
   "heure_depart": 1790084400000,
   "distance": 3600,
-  "scraped_at": "2026-09-22T15:40:31.121694",
-  "minutes_avant_depart": -1,
+  "scraped_at": "2026-09-22T15:43:51.148522",
+  "minutes_avant_depart": -4,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MON BONHEUR",
-      "cote_live": 25.0,
+      "cote_live": 24.0,
       "cote_reference": 22.0,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790084418000
+      "timestamp_cote": 1790084530000
     },
     {
       "numPmu": 2,
       "nom": "MILOVENT",
-      "cote_live": 3.8,
+      "cote_live": 4.1,
       "cote_reference": 7.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790084418000
+      "timestamp_cote": 1790084530000
     },
     {
       "numPmu": 3,
@@ -32,97 +32,97 @@
       "cote_reference": 14.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790084418000
+      "timestamp_cote": 1790084530000
     },
     {
       "numPmu": 4,
       "nom": "MONDIALITO D'HUEZ",
-      "cote_live": 2.8,
+      "cote_live": 2.7,
       "cote_reference": 3.4,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1790084418000
+      "timestamp_cote": 1790084530000
     },
     {
       "numPmu": 5,
       "nom": "MEGALO DE SIVOLA",
-      "cote_live": 162.0,
+      "cote_live": 192.0,
       "cote_reference": 56.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790084418000
+      "timestamp_cote": 1790084530000
     },
     {
       "numPmu": 6,
       "nom": "MARBEUF",
-      "cote_live": 129.0,
+      "cote_live": 147.0,
       "cote_reference": 36.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790084418000
+      "timestamp_cote": 1790084530000
     },
     {
       "numPmu": 7,
       "nom": "MISTRAL DE REVE",
-      "cote_live": 24.0,
+      "cote_live": 26.0,
       "cote_reference": 19.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790084418000
+      "timestamp_cote": 1790084530000
     },
     {
       "numPmu": 8,
       "nom": "MEURSAULT CHARME",
       "cote_live": 30.0,
       "cote_reference": 26.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790084418000
+      "timestamp_cote": 1790084530000
     },
     {
       "numPmu": 9,
       "nom": "MISSISSIPI",
-      "cote_live": 24.0,
+      "cote_live": 27.0,
       "cote_reference": 27.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790084418000
+      "timestamp_cote": 1790084530000
     },
     {
       "numPmu": 10,
       "nom": "MEXICO",
-      "cote_live": 62.0,
+      "cote_live": 65.0,
       "cote_reference": 29.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790084418000
+      "timestamp_cote": 1790084530000
     },
     {
       "numPmu": 11,
       "nom": "MILLE STAR",
-      "cote_live": 8.7,
+      "cote_live": 7.9,
       "cote_reference": 8.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790084418000
+      "timestamp_cote": 1790084530000
     },
     {
       "numPmu": 12,
       "nom": "MAGIQUE D'AUTHIE",
       "cote_live": 6.6,
       "cote_reference": 3.6,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790084418000
+      "timestamp_cote": 1790084530000
     },
     {
       "numPmu": 13,
       "nom": "MORPHO",
-      "cote_live": 137.0,
+      "cote_live": 160.0,
       "cote_reference": 79.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790084418000
+      "timestamp_cote": 1790084530000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -315,6 +315,101 @@
         "11": 8.7,
         "12": 6.6,
         "13": 137.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-22T15:41:10.709173",
+      "minutes_avant_depart": -1.1758282333333334,
+      "cotes": {
+        "1": 26.0,
+        "2": 4.1,
+        "3": 14.0,
+        "4": 2.6,
+        "5": 179.0,
+        "6": 141.0,
+        "7": 25.0,
+        "8": 27.0,
+        "9": 26.0,
+        "10": 67.0,
+        "11": 8.4,
+        "12": 6.8,
+        "13": 146.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-22T15:41:50.900853",
+      "minutes_avant_depart": -1.8424981166666667,
+      "cotes": {
+        "1": 26.0,
+        "2": 4.1,
+        "3": 13.0,
+        "4": 2.6,
+        "5": 184.0,
+        "6": 141.0,
+        "7": 26.0,
+        "8": 29.0,
+        "9": 26.0,
+        "10": 63.0,
+        "11": 8.4,
+        "12": 6.9,
+        "13": 153.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-22T15:42:30.863234",
+      "minutes_avant_depart": -2.5091670333333336,
+      "cotes": {
+        "1": 24.0,
+        "2": 4.1,
+        "3": 13.0,
+        "4": 2.7,
+        "5": 192.0,
+        "6": 147.0,
+        "7": 26.0,
+        "8": 30.0,
+        "9": 27.0,
+        "10": 65.0,
+        "11": 7.9,
+        "12": 6.6,
+        "13": 160.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-22T15:43:10.935071",
+      "minutes_avant_depart": -3.175836166666667,
+      "cotes": {
+        "1": 24.0,
+        "2": 4.1,
+        "3": 13.0,
+        "4": 2.7,
+        "5": 192.0,
+        "6": 147.0,
+        "7": 26.0,
+        "8": 30.0,
+        "9": 27.0,
+        "10": 65.0,
+        "11": 7.9,
+        "12": 6.6,
+        "13": 160.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-22T15:43:51.148522",
+      "minutes_avant_depart": -3.850120216666667,
+      "cotes": {
+        "1": 24.0,
+        "2": 4.1,
+        "3": 13.0,
+        "4": 2.7,
+        "5": 192.0,
+        "6": 147.0,
+        "7": 26.0,
+        "8": 30.0,
+        "9": 27.0,
+        "10": 65.0,
+        "11": 7.9,
+        "12": 6.6,
+        "13": 160.0
       }
     }
   ]
