@@ -4,98 +4,98 @@
   "reunion": 1,
   "heure_depart": 1790172960000,
   "distance": 2875,
-  "scraped_at": "2026-09-23T16:14:38.971590",
-  "minutes_avant_depart": 1,
+  "scraped_at": "2026-09-23T16:17:59.095753",
+  "minutes_avant_depart": -2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "KAP ORNE",
-      "cote_live": 20.0,
+      "cote_live": 28.0,
       "cote_reference": 15.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790172870000
+      "timestamp_cote": 1790173000000
     },
     {
       "numPmu": 2,
       "nom": "VASTERBO IMTHEMAN",
-      "cote_live": 105.0,
+      "cote_live": 95.0,
       "cote_reference": 96.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790172870000
+      "timestamp_cote": 1790173000000
     },
     {
       "numPmu": 3,
       "nom": "HASHTAG DE TAGOR",
-      "cote_live": 32.0,
+      "cote_live": 38.0,
       "cote_reference": 27.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790172870000
+      "timestamp_cote": 1790173000000
     },
     {
       "numPmu": 4,
       "nom": "LAMBADA DU GOUTIER",
-      "cote_live": 8.5,
+      "cote_live": 7.4,
       "cote_reference": 8.4,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790172870000
+      "timestamp_cote": 1790173000000
     },
     {
       "numPmu": 5,
       "nom": "KRACK CLEA",
-      "cote_live": 8.5,
+      "cote_live": 10.0,
       "cote_reference": 8.9,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790172870000
+      "timestamp_cote": 1790173000000
     },
     {
       "numPmu": 6,
       "nom": "JABLO DU CHENE",
-      "cote_live": 3.4,
+      "cote_live": 3.2,
       "cote_reference": 5.4,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": true,
-      "timestamp_cote": 1790172870000
+      "timestamp_cote": 1790173000000
     },
     {
       "numPmu": 7,
       "nom": "JAG MAHCATH",
-      "cote_live": 3.4,
+      "cote_live": 3.3,
       "cote_reference": 2.6,
-      "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1790172870000
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790173000000
     },
     {
       "numPmu": 8,
       "nom": "JIMINY CRICKET",
-      "cote_live": 6.4,
+      "cote_live": 5.8,
       "cote_reference": 5.9,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790172870000
+      "timestamp_cote": 1790173000000
     },
     {
       "numPmu": 9,
       "nom": "IMELDA",
-      "cote_live": 15.0,
+      "cote_live": 19.0,
       "cote_reference": 18.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790172870000
+      "timestamp_cote": 1790173000000
     },
     {
       "numPmu": 10,
       "nom": "FALTO DES LANDIERS",
-      "cote_live": 124.0,
+      "cote_live": 192.0,
       "cote_reference": 142.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790172870000
+      "timestamp_cote": 1790173000000
     }
   ],
   "hippodrome": "ARGENTAN",
@@ -210,6 +210,86 @@
         "8": 6.4,
         "9": 15.0,
         "10": 124.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-23T16:15:18.544172",
+      "minutes_avant_depart": 0.69697925,
+      "cotes": {
+        "1": 21.0,
+        "2": 86.0,
+        "3": 31.0,
+        "4": 8.3,
+        "5": 8.8,
+        "6": 3.2,
+        "7": 3.4,
+        "8": 6.7,
+        "9": 16.0,
+        "10": 132.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-23T16:15:58.619678",
+      "minutes_avant_depart": 0.030310816666666667,
+      "cotes": {
+        "1": 26.0,
+        "2": 106.0,
+        "3": 37.0,
+        "4": 6.4,
+        "5": 10.0,
+        "6": 3.4,
+        "7": 2.9,
+        "8": 8.1,
+        "9": 17.0,
+        "10": 158.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-23T16:16:38.685518",
+      "minutes_avant_depart": -0.6363573666666666,
+      "cotes": {
+        "1": 28.0,
+        "2": 105.0,
+        "3": 37.0,
+        "4": 7.2,
+        "5": 10.0,
+        "6": 3.3,
+        "7": 3.2,
+        "8": 5.7,
+        "9": 20.0,
+        "10": 187.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-23T16:17:18.934226",
+      "minutes_avant_depart": -1.3030259166666667,
+      "cotes": {
+        "1": 28.0,
+        "2": 95.0,
+        "3": 38.0,
+        "4": 7.4,
+        "5": 10.0,
+        "6": 3.2,
+        "7": 3.3,
+        "8": 5.8,
+        "9": 19.0,
+        "10": 192.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-23T16:17:59.095753",
+      "minutes_avant_depart": -1.9797749166666667,
+      "cotes": {
+        "1": 28.0,
+        "2": 95.0,
+        "3": 38.0,
+        "4": 7.4,
+        "5": 10.0,
+        "6": 3.2,
+        "7": 3.3,
+        "8": 5.8,
+        "9": 19.0,
+        "10": 192.0
       }
     }
   ]
