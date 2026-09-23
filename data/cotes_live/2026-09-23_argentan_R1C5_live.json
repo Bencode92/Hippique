@@ -1,0 +1,136 @@
+{
+  "course": "PRIX DU CHATEAU DE CHAMBOIS",
+  "numero": 5,
+  "reunion": 1,
+  "heure_depart": 1790172960000,
+  "distance": 2875,
+  "scraped_at": "2026-09-23T16:11:18.935313",
+  "minutes_avant_depart": 5,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "KAP ORNE",
+      "cote_live": 18.0,
+      "cote_reference": 15.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790172658000
+    },
+    {
+      "numPmu": 2,
+      "nom": "VASTERBO IMTHEMAN",
+      "cote_live": 96.0,
+      "cote_reference": 96.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790172658000
+    },
+    {
+      "numPmu": 3,
+      "nom": "HASHTAG DE TAGOR",
+      "cote_live": 38.0,
+      "cote_reference": 27.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790172658000
+    },
+    {
+      "numPmu": 4,
+      "nom": "LAMBADA DU GOUTIER",
+      "cote_live": 8.8,
+      "cote_reference": 8.4,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790172658000
+    },
+    {
+      "numPmu": 5,
+      "nom": "KRACK CLEA",
+      "cote_live": 8.6,
+      "cote_reference": 8.9,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790172658000
+    },
+    {
+      "numPmu": 6,
+      "nom": "JABLO DU CHENE",
+      "cote_live": 3.2,
+      "cote_reference": 5.4,
+      "tendance": "-",
+      "favoris": true,
+      "timestamp_cote": 1790172658000
+    },
+    {
+      "numPmu": 7,
+      "nom": "JAG MAHCATH",
+      "cote_live": 3.4,
+      "cote_reference": 2.6,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790172658000
+    },
+    {
+      "numPmu": 8,
+      "nom": "JIMINY CRICKET",
+      "cote_live": 7.3,
+      "cote_reference": 5.9,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1790172658000
+    },
+    {
+      "numPmu": 9,
+      "nom": "IMELDA",
+      "cote_live": 13.0,
+      "cote_reference": 18.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790172658000
+    },
+    {
+      "numPmu": 10,
+      "nom": "FALTO DES LANDIERS",
+      "cote_live": 131.0,
+      "cote_reference": 142.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790172658000
+    }
+  ],
+  "hippodrome": "ARGENTAN",
+  "releves": [
+    {
+      "scraped_at": "2026-09-23T16:10:38.919797",
+      "minutes_avant_depart": 5.363659566666667,
+      "cotes": {
+        "1": 19.0,
+        "2": 90.0,
+        "3": 36.0,
+        "4": 8.7,
+        "5": 8.4,
+        "6": 3.4,
+        "7": 3.2,
+        "8": 7.7,
+        "9": 13.0,
+        "10": 125.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-23T16:11:18.935313",
+      "minutes_avant_depart": 4.6898892,
+      "cotes": {
+        "1": 18.0,
+        "2": 96.0,
+        "3": 38.0,
+        "4": 8.8,
+        "5": 8.6,
+        "6": 3.2,
+        "7": 3.4,
+        "8": 7.3,
+        "9": 13.0,
+        "10": 131.0
+      }
+    }
+  ]
+}
