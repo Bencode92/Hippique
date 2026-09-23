@@ -4,71 +4,71 @@
   "reunion": 3,
   "heure_depart": 1790172000000,
   "distance": 1600,
-  "scraped_at": "2026-09-23T15:54:38.991846",
-  "minutes_avant_depart": 5,
+  "scraped_at": "2026-09-23T15:57:59.140691",
+  "minutes_avant_depart": 2,
   "participants": [
     {
       "numPmu": 2,
       "nom": "DUBALAA",
-      "cote_live": 4.1,
+      "cote_live": 3.1,
       "cote_reference": 4.7,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": true,
-      "timestamp_cote": 1790171660000
+      "timestamp_cote": 1790171873000
     },
     {
       "numPmu": 3,
       "nom": "APOGEO",
       "cote_live": 15.0,
       "cote_reference": 13.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790171660000
+      "timestamp_cote": 1790171873000
     },
     {
       "numPmu": 5,
       "nom": "LETTY'S MARVEL",
-      "cote_live": 10.0,
+      "cote_live": 13.0,
       "cote_reference": 8.3,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790171660000
+      "timestamp_cote": 1790171873000
     },
     {
       "numPmu": 6,
       "nom": "HIGHBARI",
-      "cote_live": 5.6,
+      "cote_live": 7.1,
       "cote_reference": 7.4,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790171660000
+      "timestamp_cote": 1790171873000
     },
     {
       "numPmu": 7,
       "nom": "AMIDARGENT",
-      "cote_live": 8.8,
+      "cote_live": 5.1,
       "cote_reference": 9.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790171660000
+      "timestamp_cote": 1790171873000
     },
     {
       "numPmu": 8,
       "nom": "VOLCANO",
-      "cote_live": 24.0,
+      "cote_live": 37.0,
       "cote_reference": 29.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790171660000
+      "timestamp_cote": 1790171873000
     },
     {
       "numPmu": 9,
       "nom": "SAINT HELLIER",
-      "cote_live": 33.0,
+      "cote_live": 43.0,
       "cote_reference": 36.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790171660000
+      "timestamp_cote": 1790171873000
     },
     {
       "numPmu": 10,
@@ -77,61 +77,61 @@
       "cote_reference": 14.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790171660000
+      "timestamp_cote": 1790171873000
     },
     {
       "numPmu": 11,
       "nom": "SWIFT FLIGHT",
-      "cote_live": 9.0,
+      "cote_live": 11.0,
       "cote_reference": 9.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790171660000
+      "timestamp_cote": 1790171873000
     },
     {
       "numPmu": 12,
       "nom": "FASTER",
-      "cote_live": 25.0,
+      "cote_live": 37.0,
       "cote_reference": 19.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790171660000
+      "timestamp_cote": 1790171873000
     },
     {
       "numPmu": 13,
       "nom": "SPRING HEART",
-      "cote_live": 27.0,
+      "cote_live": 35.0,
       "cote_reference": 34.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790171660000
+      "timestamp_cote": 1790171873000
     },
     {
       "numPmu": 14,
       "nom": "GOLDFIELD",
-      "cote_live": 27.0,
+      "cote_live": 38.0,
       "cote_reference": 23.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790171660000
+      "timestamp_cote": 1790171873000
     },
     {
       "numPmu": 15,
       "nom": "ARTISTIC MAN",
-      "cote_live": 16.0,
+      "cote_live": 23.0,
       "cote_reference": 13.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790171660000
+      "timestamp_cote": 1790171873000
     },
     {
       "numPmu": 16,
       "nom": "LISIPPO",
-      "cote_live": 29.0,
+      "cote_live": 42.0,
       "cote_reference": 19.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790171660000
+      "timestamp_cote": 1790171873000
     }
   ],
   "hippodrome": "CHANTILLY",
@@ -154,6 +154,106 @@
         "14": 27.0,
         "15": 16.0,
         "16": 29.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-23T15:55:18.250344",
+      "minutes_avant_depart": 4.697035383333333,
+      "cotes": {
+        "2": 4.3,
+        "3": 15.0,
+        "5": 11.0,
+        "6": 5.7,
+        "7": 8.6,
+        "8": 25.0,
+        "9": 35.0,
+        "10": 13.0,
+        "11": 8.1,
+        "12": 27.0,
+        "13": 29.0,
+        "14": 28.0,
+        "15": 17.0,
+        "16": 31.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-23T15:55:58.565223",
+      "minutes_avant_depart": 4.030367283333333,
+      "cotes": {
+        "2": 4.3,
+        "3": 15.0,
+        "5": 11.0,
+        "6": 5.3,
+        "7": 8.6,
+        "8": 26.0,
+        "9": 36.0,
+        "10": 14.0,
+        "11": 8.4,
+        "12": 26.0,
+        "13": 28.0,
+        "14": 28.0,
+        "15": 17.0,
+        "16": 31.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-23T15:56:38.296542",
+      "minutes_avant_depart": 3.3636990166666667,
+      "cotes": {
+        "2": 4.1,
+        "3": 15.0,
+        "5": 11.0,
+        "6": 5.4,
+        "7": 8.5,
+        "8": 25.0,
+        "9": 35.0,
+        "10": 14.0,
+        "11": 8.4,
+        "12": 27.0,
+        "13": 29.0,
+        "14": 29.0,
+        "15": 18.0,
+        "16": 31.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-23T15:57:18.431451",
+      "minutes_avant_depart": 2.6970301333333335,
+      "cotes": {
+        "2": 4.5,
+        "3": 14.0,
+        "5": 12.0,
+        "6": 5.9,
+        "7": 5.3,
+        "8": 30.0,
+        "9": 36.0,
+        "10": 14.0,
+        "11": 9.2,
+        "12": 30.0,
+        "13": 30.0,
+        "14": 32.0,
+        "15": 19.0,
+        "16": 34.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-23T15:57:59.140691",
+      "minutes_avant_depart": 2.0200836499999997,
+      "cotes": {
+        "2": 3.1,
+        "3": 15.0,
+        "5": 13.0,
+        "6": 7.1,
+        "7": 5.1,
+        "8": 37.0,
+        "9": 43.0,
+        "10": 17.0,
+        "11": 11.0,
+        "12": 37.0,
+        "13": 35.0,
+        "14": 38.0,
+        "15": 23.0,
+        "16": 42.0
       }
     }
   ]
