@@ -4,80 +4,80 @@
   "reunion": 4,
   "heure_depart": 1790342880000,
   "distance": 1200,
-  "scraped_at": "2026-09-25T15:26:49.330096",
+  "scraped_at": "2026-09-25T15:27:28.485312",
   "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 2,
       "nom": "VIGNELLI",
-      "cote_live": 3.0,
+      "cote_live": 2.7,
       "cote_reference": 2.9,
-      "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1790342795000
+      "tendance": "-",
+      "favoris": true,
+      "timestamp_cote": 1790342835000
     },
     {
       "numPmu": 3,
       "nom": "EN CHANTANT",
-      "cote_live": 36.0,
+      "cote_live": 39.0,
       "cote_reference": 14.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790342795000
+      "timestamp_cote": 1790342835000
     },
     {
       "numPmu": 4,
       "nom": "DREAM OF GLORY",
-      "cote_live": 12.0,
+      "cote_live": 11.0,
       "cote_reference": 13.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790342795000
+      "timestamp_cote": 1790342835000
     },
     {
       "numPmu": 5,
       "nom": "MLLE ANDROMAQUE",
       "cote_live": 5.7,
       "cote_reference": 4.9,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790342795000
+      "timestamp_cote": 1790342835000
     },
     {
       "numPmu": 6,
       "nom": "SHIBUYA",
-      "cote_live": 12.0,
+      "cote_live": 13.0,
       "cote_reference": 15.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790342795000
+      "timestamp_cote": 1790342835000
     },
     {
       "numPmu": 7,
       "nom": "AMETIS CHOPE",
-      "cote_live": 23.0,
+      "cote_live": 25.0,
       "cote_reference": 15.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790342795000
+      "timestamp_cote": 1790342835000
     },
     {
       "numPmu": 8,
       "nom": "YAFTABELLA",
-      "cote_live": 32.0,
+      "cote_live": 34.0,
       "cote_reference": 25.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790342795000
+      "timestamp_cote": 1790342835000
     },
     {
       "numPmu": 9,
       "nom": "AMNESIA",
-      "cote_live": 2.6,
+      "cote_live": 2.9,
       "cote_reference": 3.4,
-      "tendance": "-",
-      "favoris": true,
-      "timestamp_cote": 1790342795000
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790342835000
     }
   ],
   "hippodrome": "SAINT-CLOUD",
@@ -192,6 +192,20 @@
         "7": 23.0,
         "8": 32.0,
         "9": 2.6
+      }
+    },
+    {
+      "scraped_at": "2026-09-25T15:27:28.485312",
+      "minutes_avant_depart": 0.5270240833333334,
+      "cotes": {
+        "2": 2.7,
+        "3": 39.0,
+        "4": 11.0,
+        "5": 5.7,
+        "6": 13.0,
+        "7": 25.0,
+        "8": 34.0,
+        "9": 2.9
       }
     }
   ]
