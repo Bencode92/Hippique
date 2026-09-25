@@ -1,0 +1,184 @@
+{
+  "course": "PRIX THEBAIS",
+  "numero": 5,
+  "reunion": 4,
+  "heure_depart": 1790344980000,
+  "distance": 1600,
+  "scraped_at": "2026-09-25T16:00:09.301159",
+  "minutes_avant_depart": 3,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "SUNNY QUEEN",
+      "cote_live": 8.4,
+      "cote_reference": 9.8,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1790344788000
+    },
+    {
+      "numPmu": 2,
+      "nom": "ORANGETTE",
+      "cote_live": 11.0,
+      "cote_reference": 12.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1790344788000
+    },
+    {
+      "numPmu": 4,
+      "nom": "KASSAB",
+      "cote_live": 4.5,
+      "cote_reference": 6.6,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1790344788000
+    },
+    {
+      "numPmu": 5,
+      "nom": "MOONA FAL",
+      "cote_live": 5.4,
+      "cote_reference": 8.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790344788000
+    },
+    {
+      "numPmu": 6,
+      "nom": "MAGIEL",
+      "cote_live": 4.3,
+      "cote_reference": 2.6,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1790344788000
+    },
+    {
+      "numPmu": 7,
+      "nom": "INCREDIBLE",
+      "cote_live": 16.0,
+      "cote_reference": 14.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1790344788000
+    },
+    {
+      "numPmu": 8,
+      "nom": "PICCOLO ANGELO",
+      "cote_live": 17.0,
+      "cote_reference": 19.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790344788000
+    },
+    {
+      "numPmu": 9,
+      "nom": "NO SOLO",
+      "cote_live": 10.0,
+      "cote_reference": 12.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790344788000
+    },
+    {
+      "numPmu": 10,
+      "nom": "SAOUDIENNE",
+      "cote_live": 30.0,
+      "cote_reference": 24.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790344788000
+    },
+    {
+      "numPmu": 11,
+      "nom": "ALGARADE",
+      "cote_live": 24.0,
+      "cote_reference": 15.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1790344788000
+    }
+  ],
+  "hippodrome": "SAINT-CLOUD",
+  "releves": [
+    {
+      "scraped_at": "2026-09-25T15:57:28.884770",
+      "minutes_avant_depart": 5.52694675,
+      "cotes": {
+        "1": 10.0,
+        "2": 10.0,
+        "4": 4.7,
+        "5": 5.7,
+        "6": 3.4,
+        "7": 15.0,
+        "8": 20.0,
+        "9": 12.0,
+        "10": 25.0,
+        "11": 24.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-25T15:58:08.655783",
+      "minutes_avant_depart": 4.860279283333333,
+      "cotes": {
+        "1": 9.5,
+        "2": 11.0,
+        "4": 4.8,
+        "5": 5.2,
+        "6": 3.6,
+        "7": 16.0,
+        "8": 19.0,
+        "9": 12.0,
+        "10": 27.0,
+        "11": 25.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-25T15:58:48.582375",
+      "minutes_avant_depart": 4.1936103,
+      "cotes": {
+        "1": 8.4,
+        "2": 11.0,
+        "4": 4.9,
+        "5": 5.3,
+        "6": 3.9,
+        "7": 16.0,
+        "8": 19.0,
+        "9": 10.0,
+        "10": 30.0,
+        "11": 25.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-25T15:59:28.624861",
+      "minutes_avant_depart": 3.52694295,
+      "cotes": {
+        "1": 8.4,
+        "2": 11.0,
+        "4": 4.5,
+        "5": 5.5,
+        "6": 4.3,
+        "7": 16.0,
+        "8": 17.0,
+        "9": 9.8,
+        "10": 29.0,
+        "11": 24.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-25T16:00:09.301159",
+      "minutes_avant_depart": 2.84879195,
+      "cotes": {
+        "1": 8.4,
+        "2": 11.0,
+        "4": 4.5,
+        "5": 5.4,
+        "6": 4.3,
+        "7": 16.0,
+        "8": 17.0,
+        "9": 10.0,
+        "10": 30.0,
+        "11": 24.0
+      }
+    }
+  ]
+}
