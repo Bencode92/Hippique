@@ -4,107 +4,107 @@
   "reunion": 3,
   "heure_depart": 1790427120000,
   "distance": 1600,
-  "scraped_at": "2026-09-26T14:53:33.007602",
-  "minutes_avant_depart": -2,
+  "scraped_at": "2026-09-26T14:56:53.314791",
+  "minutes_avant_depart": -5,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MANDOKI",
-      "cote_live": 7.1,
+      "cote_live": 6.6,
       "cote_reference": 12.0,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790427205000
+      "timestamp_cote": 1790427310000
     },
     {
       "numPmu": 2,
       "nom": "COTE D'OR",
-      "cote_live": 5.0,
+      "cote_live": 4.3,
       "cote_reference": 7.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790427205000
+      "timestamp_cote": 1790427310000
     },
     {
       "numPmu": 3,
       "nom": "IRELIA",
-      "cote_live": 26.0,
+      "cote_live": 33.0,
       "cote_reference": 10.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790427205000
+      "timestamp_cote": 1790427310000
     },
     {
       "numPmu": 4,
       "nom": "FERNANDO",
       "cote_live": 13.0,
       "cote_reference": 7.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790427205000
+      "timestamp_cote": 1790427310000
     },
     {
       "numPmu": 5,
       "nom": "MAPLE GIRL",
-      "cote_live": 3.6,
+      "cote_live": 3.9,
       "cote_reference": 4.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1790427205000
+      "timestamp_cote": 1790427310000
     },
     {
       "numPmu": 6,
       "nom": "BELCHA",
       "cote_live": 10.0,
       "cote_reference": 26.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790427205000
+      "timestamp_cote": 1790427310000
     },
     {
       "numPmu": 7,
       "nom": "LORLISALSA",
-      "cote_live": 7.7,
+      "cote_live": 8.2,
       "cote_reference": 10.0,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790427205000
+      "timestamp_cote": 1790427310000
     },
     {
       "numPmu": 8,
       "nom": "NIGHT OF THE OPERA",
-      "cote_live": 41.0,
+      "cote_live": 43.0,
       "cote_reference": 16.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790427205000
+      "timestamp_cote": 1790427310000
     },
     {
       "numPmu": 9,
       "nom": "LISA",
-      "cote_live": 17.0,
+      "cote_live": 19.0,
       "cote_reference": 9.7,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790427205000
+      "timestamp_cote": 1790427310000
     },
     {
       "numPmu": 10,
       "nom": "LILY OFTHE KINGDON",
       "cote_live": 30.0,
       "cote_reference": 15.0,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790427205000
+      "timestamp_cote": 1790427310000
     },
     {
       "numPmu": 11,
       "nom": "TIME TO GALI",
       "cote_live": 14.0,
       "cote_reference": 12.0,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790427205000
+      "timestamp_cote": 1790427310000
     }
   ],
   "hippodrome": "LYON-PARILLY",
@@ -309,6 +309,91 @@
         "7": 7.7,
         "8": 41.0,
         "9": 17.0,
+        "10": 30.0,
+        "11": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-26T14:54:12.831282",
+      "minutes_avant_depart": -2.209711,
+      "cotes": {
+        "1": 6.6,
+        "2": 4.6,
+        "3": 29.0,
+        "4": 12.0,
+        "5": 3.7,
+        "6": 10.0,
+        "7": 8.6,
+        "8": 44.0,
+        "9": 19.0,
+        "10": 33.0,
+        "11": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-26T14:54:52.928060",
+      "minutes_avant_depart": -2.8763797,
+      "cotes": {
+        "1": 6.7,
+        "2": 4.3,
+        "3": 29.0,
+        "4": 13.0,
+        "5": 3.8,
+        "6": 10.0,
+        "7": 8.7,
+        "8": 44.0,
+        "9": 19.0,
+        "10": 30.0,
+        "11": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-26T14:55:32.843119",
+      "minutes_avant_depart": -3.5430485833333334,
+      "cotes": {
+        "1": 6.6,
+        "2": 4.3,
+        "3": 33.0,
+        "4": 13.0,
+        "5": 3.9,
+        "6": 10.0,
+        "7": 8.2,
+        "8": 43.0,
+        "9": 19.0,
+        "10": 30.0,
+        "11": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-26T14:56:12.745641",
+      "minutes_avant_depart": -4.209717033333333,
+      "cotes": {
+        "1": 6.6,
+        "2": 4.3,
+        "3": 33.0,
+        "4": 13.0,
+        "5": 3.9,
+        "6": 10.0,
+        "7": 8.2,
+        "8": 43.0,
+        "9": 19.0,
+        "10": 30.0,
+        "11": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-26T14:56:53.314791",
+      "minutes_avant_depart": -4.882999716666666,
+      "cotes": {
+        "1": 6.6,
+        "2": 4.3,
+        "3": 33.0,
+        "4": 13.0,
+        "5": 3.9,
+        "6": 10.0,
+        "7": 8.2,
+        "8": 43.0,
+        "9": 19.0,
         "10": 30.0,
         "11": 14.0
       }
