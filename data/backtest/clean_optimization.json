@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-25T00:25:01.595Z",
+  "date": "2026-09-26T00:29:31.389Z",
   "method": "ZERO_LEAKAGE",
   "allResults": [
     {
@@ -10,36 +10,10 @@
         "corde": 0.2
       },
       "temp": 8,
-      "total": 880,
+      "total": 887,
       "top1": 27.2,
-      "top3": 82.6,
-      "ll": 1.989
-    },
-    {
-      "name": "WALK+COMBO",
-      "weights": {
-        "walkChevalV": 0.7,
-        "walkJockeyV": 0.3,
-        "walkCombo": 0.3
-      },
-      "temp": 8,
-      "total": 880,
-      "top1": 21.6,
-      "top3": 80.2,
-      "ll": 2.061
-    },
-    {
-      "name": "WALK_VP",
-      "weights": {
-        "walkChevalV": 1,
-        "walkChevalP": 0.3,
-        "walkJockeyV": 0.5
-      },
-      "temp": 8,
-      "total": 880,
-      "top1": 20.8,
-      "top3": 81.6,
-      "ll": 2.062
+      "top3": 82.3,
+      "ll": 1.985
     },
     {
       "name": "ALL_CLEAN",
@@ -53,23 +27,48 @@
         "walkCombo": 0.1
       },
       "temp": 8,
-      "total": 880,
-      "top1": 21.8,
-      "top3": 82,
-      "ll": 2.348
+      "total": 887,
+      "top1": 21.9,
+      "top3": 81.7,
+      "ll": 2.339
     },
     {
-      "name": "WALK+EXP",
+      "name": "WALK+COMBO",
       "weights": {
         "walkChevalV": 0.7,
         "walkJockeyV": 0.3,
-        "experience": 0.2
+        "walkCombo": 0.3
       },
       "temp": 8,
-      "total": 880,
-      "top1": 20.7,
-      "top3": 81,
-      "ll": 2.042
+      "total": 887,
+      "top1": 21.4,
+      "top3": 79.9,
+      "ll": 2.06
+    },
+    {
+      "name": "WALK_VP",
+      "weights": {
+        "walkChevalV": 1,
+        "walkChevalP": 0.3,
+        "walkJockeyV": 0.5
+      },
+      "temp": 8,
+      "total": 887,
+      "top1": 20.5,
+      "top3": 81.1,
+      "ll": 2.062
+    },
+    {
+      "name": "WALK_V",
+      "weights": {
+        "walkChevalV": 1,
+        "walkJockeyV": 0.5
+      },
+      "temp": 8,
+      "total": 887,
+      "top1": 21.1,
+      "top3": 79.6,
+      "ll": 2.043
     }
   ],
   "bestConfig": {
@@ -80,19 +79,19 @@
       "corde": 0.2
     },
     "temp": 8,
-    "total": 880,
+    "total": 887,
     "top1": 27.2,
-    "top3": 82.6,
-    "ll": 1.989
+    "top3": 82.3,
+    "ll": 1.985
   },
   "testResult": {
-    "total": 881,
-    "top1": 27,
-    "top3": 83.1,
-    "ll": 2.051
+    "total": 887,
+    "top1": 27.1,
+    "top3": 83.3,
+    "ll": 2.053
   },
   "baseline": {
-    "top1": 9.8,
-    "ll": 2.319
+    "top1": 9.9,
+    "ll": 2.316
   }
 }
