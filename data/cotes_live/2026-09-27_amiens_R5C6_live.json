@@ -4,71 +4,71 @@
   "reunion": 5,
   "heure_depart": 1790532180000,
   "distance": 1650,
-  "scraped_at": "2026-09-27T19:57:57.264642",
-  "minutes_avant_depart": 5,
+  "scraped_at": "2026-09-27T20:01:17.604421",
+  "minutes_avant_depart": 2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ITAEWON",
-      "cote_live": 4.0,
+      "cote_live": 3.9,
       "cote_reference": 7.6,
-      "tendance": "+",
-      "favoris": true,
-      "timestamp_cote": 1790531856000
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790532075000
     },
     {
       "numPmu": 2,
       "nom": "ARABIAN FEVER",
-      "cote_live": 13.0,
+      "cote_live": 16.0,
       "cote_reference": 12.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790531856000
+      "timestamp_cote": 1790532075000
     },
     {
       "numPmu": 3,
       "nom": "COSMO BEAU",
-      "cote_live": 5.1,
+      "cote_live": 6.1,
       "cote_reference": 4.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790531856000
+      "timestamp_cote": 1790532075000
     },
     {
       "numPmu": 4,
       "nom": "WESTMINSTER NIGHT",
-      "cote_live": 5.3,
+      "cote_live": 5.2,
       "cote_reference": 9.3,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790531856000
+      "timestamp_cote": 1790532075000
     },
     {
       "numPmu": 5,
       "nom": "ART PIECE",
-      "cote_live": 8.8,
+      "cote_live": 9.0,
       "cote_reference": 4.2,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790531856000
+      "timestamp_cote": 1790532075000
     },
     {
       "numPmu": 6,
       "nom": "LORIA",
-      "cote_live": 4.8,
+      "cote_live": 3.7,
       "cote_reference": 5.9,
-      "tendance": "-",
-      "favoris": false,
-      "timestamp_cote": 1790531856000
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1790532075000
     },
     {
       "numPmu": 7,
       "nom": "IFFROCTA FAL",
-      "cote_live": 8.9,
+      "cote_live": 10.0,
       "cote_reference": 5.9,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790531856000
+      "timestamp_cote": 1790532075000
     }
   ],
   "hippodrome": "AMIENS",
@@ -97,6 +97,71 @@
         "5": 8.8,
         "6": 4.8,
         "7": 8.9
+      }
+    },
+    {
+      "scraped_at": "2026-09-27T19:58:36.748544",
+      "minutes_avant_depart": 4.397058516666666,
+      "cotes": {
+        "1": 4.1,
+        "2": 13.0,
+        "3": 5.2,
+        "4": 5.2,
+        "5": 8.6,
+        "6": 4.8,
+        "7": 9.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-27T19:59:16.314838",
+      "minutes_avant_depart": 3.7303902333333334,
+      "cotes": {
+        "1": 4.0,
+        "2": 13.0,
+        "3": 5.0,
+        "4": 5.3,
+        "5": 9.0,
+        "6": 4.9,
+        "7": 8.8
+      }
+    },
+    {
+      "scraped_at": "2026-09-27T19:59:56.534762",
+      "minutes_avant_depart": 3.0637217333333333,
+      "cotes": {
+        "1": 3.9,
+        "2": 13.0,
+        "3": 5.0,
+        "4": 5.3,
+        "5": 8.9,
+        "6": 5.0,
+        "7": 8.8
+      }
+    },
+    {
+      "scraped_at": "2026-09-27T20:00:36.497953",
+      "minutes_avant_depart": 2.3970537833333334,
+      "cotes": {
+        "1": 3.8,
+        "2": 13.0,
+        "3": 5.4,
+        "4": 5.7,
+        "5": 7.4,
+        "6": 5.1,
+        "7": 8.7
+      }
+    },
+    {
+      "scraped_at": "2026-09-27T20:01:17.604421",
+      "minutes_avant_depart": 1.7143642,
+      "cotes": {
+        "1": 3.9,
+        "2": 16.0,
+        "3": 6.1,
+        "4": 5.2,
+        "5": 9.0,
+        "6": 3.7,
+        "7": 10.0
       }
     }
   ]
