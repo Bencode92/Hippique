@@ -1,0 +1,103 @@
+{
+  "course": "PRIX DE LONGPRE",
+  "numero": 5,
+  "reunion": 5,
+  "heure_depart": 1790530380000,
+  "distance": 1650,
+  "scraped_at": "2026-09-27T19:27:57.439097",
+  "minutes_avant_depart": 5,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "REGAL CHOP",
+      "cote_live": 11.0,
+      "cote_reference": 14.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790530056000
+    },
+    {
+      "numPmu": 2,
+      "nom": "ADHARA",
+      "cote_live": 7.3,
+      "cote_reference": 6.8,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1790530056000
+    },
+    {
+      "numPmu": 3,
+      "nom": "BISOUS SINCERES",
+      "cote_live": 21.0,
+      "cote_reference": 24.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790530056000
+    },
+    {
+      "numPmu": 4,
+      "nom": "VICTORSTRUNG",
+      "cote_live": 3.2,
+      "cote_reference": 1.7,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790530056000
+    },
+    {
+      "numPmu": 5,
+      "nom": "MIA RARE",
+      "cote_live": 22.0,
+      "cote_reference": 21.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790530056000
+    },
+    {
+      "numPmu": 6,
+      "nom": "PERKA FAL",
+      "cote_live": 17.0,
+      "cote_reference": 16.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790530056000
+    },
+    {
+      "numPmu": 7,
+      "nom": "DESEO",
+      "cote_live": 2.2,
+      "cote_reference": 4.7,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1790530056000
+    }
+  ],
+  "hippodrome": "AMIENS",
+  "releves": [
+    {
+      "scraped_at": "2026-09-27T19:27:16.589799",
+      "minutes_avant_depart": 5.7304648333333335,
+      "cotes": {
+        "1": 9.9,
+        "2": 6.5,
+        "3": 18.0,
+        "4": 2.8,
+        "5": 20.0,
+        "6": 17.0,
+        "7": 2.6
+      }
+    },
+    {
+      "scraped_at": "2026-09-27T19:27:57.439097",
+      "minutes_avant_depart": 5.051803383333334,
+      "cotes": {
+        "1": 11.0,
+        "2": 7.3,
+        "3": 21.0,
+        "4": 3.2,
+        "5": 22.0,
+        "6": 17.0,
+        "7": 2.2
+      }
+    }
+  ]
+}
