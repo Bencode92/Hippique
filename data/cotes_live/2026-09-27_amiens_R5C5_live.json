@@ -4,71 +4,71 @@
   "reunion": 5,
   "heure_depart": 1790530380000,
   "distance": 1650,
-  "scraped_at": "2026-09-27T19:31:17.439695",
-  "minutes_avant_depart": 2,
+  "scraped_at": "2026-09-27T19:34:36.900735",
+  "minutes_avant_depart": -2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "REGAL CHOP",
-      "cote_live": 11.0,
+      "cote_live": 13.0,
       "cote_reference": 14.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790530271000
+      "timestamp_cote": 1790530471000
     },
     {
       "numPmu": 2,
       "nom": "ADHARA",
-      "cote_live": 5.9,
+      "cote_live": 5.6,
       "cote_reference": 6.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790530271000
+      "timestamp_cote": 1790530471000
     },
     {
       "numPmu": 3,
       "nom": "BISOUS SINCERES",
-      "cote_live": 23.0,
+      "cote_live": 29.0,
       "cote_reference": 24.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790530271000
+      "timestamp_cote": 1790530471000
     },
     {
       "numPmu": 4,
       "nom": "VICTORSTRUNG",
-      "cote_live": 3.0,
+      "cote_live": 2.6,
       "cote_reference": 1.7,
-      "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1790530271000
+      "tendance": "-",
+      "favoris": true,
+      "timestamp_cote": 1790530471000
     },
     {
       "numPmu": 5,
       "nom": "MIA RARE",
-      "cote_live": 24.0,
+      "cote_live": 28.0,
       "cote_reference": 21.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790530271000
+      "timestamp_cote": 1790530471000
     },
     {
       "numPmu": 6,
       "nom": "PERKA FAL",
-      "cote_live": 15.0,
+      "cote_live": 16.0,
       "cote_reference": 16.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790530271000
+      "timestamp_cote": 1790530471000
     },
     {
       "numPmu": 7,
       "nom": "DESEO",
-      "cote_live": 2.4,
+      "cote_live": 2.6,
       "cote_reference": 4.7,
-      "tendance": "",
+      "tendance": "+",
       "favoris": true,
-      "timestamp_cote": 1790530271000
+      "timestamp_cote": 1790530471000
     }
   ],
   "hippodrome": "AMIENS",
@@ -162,6 +162,71 @@
         "5": 24.0,
         "6": 15.0,
         "7": 2.4
+      }
+    },
+    {
+      "scraped_at": "2026-09-27T19:31:56.634330",
+      "minutes_avant_depart": 1.0637871833333332,
+      "cotes": {
+        "1": 11.0,
+        "2": 5.3,
+        "3": 24.0,
+        "4": 3.0,
+        "5": 25.0,
+        "6": 16.0,
+        "7": 2.5
+      }
+    },
+    {
+      "scraped_at": "2026-09-27T19:32:36.725779",
+      "minutes_avant_depart": 0.3971191333333334,
+      "cotes": {
+        "1": 12.0,
+        "2": 5.6,
+        "3": 26.0,
+        "4": 3.2,
+        "5": 25.0,
+        "6": 18.0,
+        "7": 2.3
+      }
+    },
+    {
+      "scraped_at": "2026-09-27T19:33:16.442582",
+      "minutes_avant_depart": -0.26954923333333336,
+      "cotes": {
+        "1": 12.0,
+        "2": 5.2,
+        "3": 28.0,
+        "4": 3.0,
+        "5": 25.0,
+        "6": 18.0,
+        "7": 2.4
+      }
+    },
+    {
+      "scraped_at": "2026-09-27T19:33:56.873398",
+      "minutes_avant_depart": -0.9362170333333334,
+      "cotes": {
+        "1": 13.0,
+        "2": 5.5,
+        "3": 28.0,
+        "4": 2.8,
+        "5": 26.0,
+        "6": 17.0,
+        "7": 2.5
+      }
+    },
+    {
+      "scraped_at": "2026-09-27T19:34:36.900735",
+      "minutes_avant_depart": -1.6115762333333334,
+      "cotes": {
+        "1": 13.0,
+        "2": 5.6,
+        "3": 29.0,
+        "4": 2.6,
+        "5": 28.0,
+        "6": 16.0,
+        "7": 2.6
       }
     }
   ]
