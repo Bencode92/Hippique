@@ -4,71 +4,71 @@
   "reunion": 4,
   "heure_depart": 1790614200000,
   "distance": 1600,
-  "scraped_at": "2026-09-28T18:48:16.764081",
-  "minutes_avant_depart": 2,
+  "scraped_at": "2026-09-28T18:51:36.836055",
+  "minutes_avant_depart": -2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "VALTRADA",
-      "cote_live": 4.2,
+      "cote_live": 5.5,
       "cote_reference": 2.2,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790614088000
+      "timestamp_cote": 1790614240000
     },
     {
       "numPmu": 2,
       "nom": "ZODIACO",
-      "cote_live": 11.0,
+      "cote_live": 9.9,
       "cote_reference": 24.0,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790614088000
+      "timestamp_cote": 1790614240000
     },
     {
       "numPmu": 3,
       "nom": "ALHAMA RIVER",
-      "cote_live": 2.3,
+      "cote_live": 3.1,
       "cote_reference": 2.6,
-      "tendance": "+",
-      "favoris": true,
-      "timestamp_cote": 1790614088000
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1790614240000
     },
     {
       "numPmu": 4,
       "nom": "RAINSILVER",
-      "cote_live": 20.0,
+      "cote_live": 31.0,
       "cote_reference": 28.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790614088000
+      "timestamp_cote": 1790614240000
     },
     {
       "numPmu": 5,
       "nom": "OFF TO DUBAI",
-      "cote_live": 19.0,
+      "cote_live": 24.0,
       "cote_reference": 19.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790614088000
+      "timestamp_cote": 1790614240000
     },
     {
       "numPmu": 6,
       "nom": "ZELZALA",
-      "cote_live": 16.0,
+      "cote_live": 23.0,
       "cote_reference": 17.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790614088000
+      "timestamp_cote": 1790614240000
     },
     {
       "numPmu": 7,
       "nom": "MISS DE PANAME",
-      "cote_live": 4.4,
+      "cote_live": 2.3,
       "cote_reference": 7.6,
-      "tendance": "-",
-      "favoris": false,
-      "timestamp_cote": 1790614088000
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1790614240000
     }
   ],
   "hippodrome": "LE BOUSCAT",
@@ -162,6 +162,71 @@
         "5": 19.0,
         "6": 16.0,
         "7": 4.4
+      }
+    },
+    {
+      "scraped_at": "2026-09-28T18:48:56.360240",
+      "minutes_avant_depart": 1.0630651500000001,
+      "cotes": {
+        "1": 4.4,
+        "2": 12.0,
+        "3": 2.4,
+        "4": 22.0,
+        "5": 17.0,
+        "6": 18.0,
+        "7": 3.9
+      }
+    },
+    {
+      "scraped_at": "2026-09-28T18:49:36.554375",
+      "minutes_avant_depart": 0.39639596666666665,
+      "cotes": {
+        "1": 4.7,
+        "2": 11.0,
+        "3": 2.5,
+        "4": 25.0,
+        "5": 19.0,
+        "6": 20.0,
+        "7": 3.2
+      }
+    },
+    {
+      "scraped_at": "2026-09-28T18:50:16.314817",
+      "minutes_avant_depart": -0.27027260000000003,
+      "cotes": {
+        "1": 5.2,
+        "2": 11.0,
+        "3": 3.0,
+        "4": 29.0,
+        "5": 22.0,
+        "6": 23.0,
+        "7": 2.4
+      }
+    },
+    {
+      "scraped_at": "2026-09-28T18:50:56.424096",
+      "minutes_avant_depart": -0.9369411499999999,
+      "cotes": {
+        "1": 5.5,
+        "2": 9.9,
+        "3": 3.1,
+        "4": 31.0,
+        "5": 24.0,
+        "6": 23.0,
+        "7": 2.3
+      }
+    },
+    {
+      "scraped_at": "2026-09-28T18:51:36.836055",
+      "minutes_avant_depart": -1.6095487499999999,
+      "cotes": {
+        "1": 5.5,
+        "2": 9.9,
+        "3": 3.1,
+        "4": 31.0,
+        "5": 24.0,
+        "6": 23.0,
+        "7": 2.3
       }
     }
   ]
