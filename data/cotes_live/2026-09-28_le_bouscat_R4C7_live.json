@@ -1,0 +1,103 @@
+{
+  "course": "PRIX JACQUES DOGNY",
+  "numero": 7,
+  "reunion": 4,
+  "heure_depart": 1790614200000,
+  "distance": 1600,
+  "scraped_at": "2026-09-28T18:44:57.070631",
+  "minutes_avant_depart": 5,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "VALTRADA",
+      "cote_live": 3.1,
+      "cote_reference": 2.2,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790613876000
+    },
+    {
+      "numPmu": 2,
+      "nom": "ZODIACO",
+      "cote_live": 12.0,
+      "cote_reference": 24.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790613876000
+    },
+    {
+      "numPmu": 3,
+      "nom": "ALHAMA RIVER",
+      "cote_live": 2.4,
+      "cote_reference": 2.6,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1790613876000
+    },
+    {
+      "numPmu": 4,
+      "nom": "RAINSILVER",
+      "cote_live": 17.0,
+      "cote_reference": 28.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1790613876000
+    },
+    {
+      "numPmu": 5,
+      "nom": "OFF TO DUBAI",
+      "cote_live": 13.0,
+      "cote_reference": 19.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790613876000
+    },
+    {
+      "numPmu": 6,
+      "nom": "ZELZALA",
+      "cote_live": 13.0,
+      "cote_reference": 17.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790613876000
+    },
+    {
+      "numPmu": 7,
+      "nom": "MISS DE PANAME",
+      "cote_live": 8.6,
+      "cote_reference": 7.6,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790613876000
+    }
+  ],
+  "hippodrome": "LE BOUSCAT",
+  "releves": [
+    {
+      "scraped_at": "2026-09-28T18:44:16.484478",
+      "minutes_avant_depart": 5.729744800000001,
+      "cotes": {
+        "1": 3.2,
+        "2": 11.0,
+        "3": 2.3,
+        "4": 18.0,
+        "5": 13.0,
+        "6": 12.0,
+        "7": 8.4
+      }
+    },
+    {
+      "scraped_at": "2026-09-28T18:44:57.070631",
+      "minutes_avant_depart": 5.0570504,
+      "cotes": {
+        "1": 3.1,
+        "2": 12.0,
+        "3": 2.4,
+        "4": 17.0,
+        "5": 13.0,
+        "6": 13.0,
+        "7": 8.6
+      }
+    }
+  ]
+}
