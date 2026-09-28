@@ -4,26 +4,26 @@
   "reunion": 4,
   "heure_depart": 1790616060000,
   "distance": 1600,
-  "scraped_at": "2026-09-28T19:18:17.439911",
-  "minutes_avant_depart": 3,
+  "scraped_at": "2026-09-28T19:21:36.720086",
+  "minutes_avant_depart": -1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "NO LIMIT DREAM",
-      "cote_live": 4.7,
+      "cote_live": 5.7,
       "cote_reference": 3.6,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790615890000
+      "timestamp_cote": 1790616090000
     },
     {
       "numPmu": 2,
       "nom": "NOLITO",
-      "cote_live": 6.5,
+      "cote_live": 6.0,
       "cote_reference": 7.4,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790615890000
+      "timestamp_cote": 1790616090000
     },
     {
       "numPmu": 3,
@@ -32,61 +32,61 @@
       "cote_reference": 5.6,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1790615890000
+      "timestamp_cote": 1790616090000
     },
     {
       "numPmu": 4,
       "nom": "FAMOSO",
-      "cote_live": 7.7,
+      "cote_live": 10.0,
       "cote_reference": 10.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790615890000
+      "timestamp_cote": 1790616090000
     },
     {
       "numPmu": 5,
       "nom": "SOUVENIR D'ECAJEUL",
-      "cote_live": 10.0,
+      "cote_live": 8.2,
       "cote_reference": 8.3,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790615890000
+      "timestamp_cote": 1790616090000
     },
     {
       "numPmu": 6,
       "nom": "DULINI",
-      "cote_live": 11.0,
+      "cote_live": 6.8,
       "cote_reference": 15.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790615890000
+      "timestamp_cote": 1790616090000
     },
     {
       "numPmu": 7,
       "nom": "STORIA DI ROMA",
-      "cote_live": 10.0,
+      "cote_live": 11.0,
       "cote_reference": 11.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790615890000
+      "timestamp_cote": 1790616090000
     },
     {
       "numPmu": 8,
       "nom": "RAPIDO PRESTO",
       "cote_live": 14.0,
       "cote_reference": 11.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790615890000
+      "timestamp_cote": 1790616090000
     },
     {
       "numPmu": 9,
       "nom": "BARE ELEGANCE",
-      "cote_live": 14.0,
+      "cote_live": 18.0,
       "cote_reference": 11.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790615890000
+      "timestamp_cote": 1790616090000
     }
   ],
   "hippodrome": "LE BOUSCAT",
@@ -164,6 +164,81 @@
         "7": 10.0,
         "8": 14.0,
         "9": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-28T19:18:56.505599",
+      "minutes_avant_depart": 2.0629709000000003,
+      "cotes": {
+        "1": 4.8,
+        "2": 6.5,
+        "3": 4.7,
+        "4": 8.1,
+        "5": 11.0,
+        "6": 10.0,
+        "7": 8.9,
+        "8": 12.0,
+        "9": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-28T19:19:36.402260",
+      "minutes_avant_depart": 1.3963020499999999,
+      "cotes": {
+        "1": 5.7,
+        "2": 7.0,
+        "3": 4.5,
+        "4": 7.6,
+        "5": 9.5,
+        "6": 8.0,
+        "7": 10.0,
+        "8": 13.0,
+        "9": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-28T19:20:16.695802",
+      "minutes_avant_depart": 0.729633,
+      "cotes": {
+        "1": 5.1,
+        "2": 6.8,
+        "3": 4.9,
+        "4": 8.0,
+        "5": 9.6,
+        "6": 8.3,
+        "7": 10.0,
+        "8": 13.0,
+        "9": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-28T19:20:56.430054",
+      "minutes_avant_depart": 0.06296425,
+      "cotes": {
+        "1": 5.1,
+        "2": 6.3,
+        "3": 4.9,
+        "4": 8.3,
+        "5": 8.6,
+        "6": 8.6,
+        "7": 11.0,
+        "8": 13.0,
+        "9": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-28T19:21:36.720086",
+      "minutes_avant_depart": -0.6082181999999999,
+      "cotes": {
+        "1": 5.7,
+        "2": 6.0,
+        "3": 4.5,
+        "4": 10.0,
+        "5": 8.2,
+        "6": 6.8,
+        "7": 11.0,
+        "8": 14.0,
+        "9": 18.0
       }
     }
   ]
