@@ -327,6 +327,19 @@ def extract_category(session, category, config, year=None):
 
 
 def save_json(data, category):
+    """N'écrase JAMAIS un classement existant par un résultat vide.
+
+    29/09/2026 : france-galop.com est passé en rendu JavaScript, le scraper ne
+    trouve plus de tableau et renvoyait 0 résultat pour les cinq catégories —
+    en écrivant quand même des fichiers vides par-dessus les classements
+    servis à l'écran. Un classement vide n'est pas une information, c'est une
+    panne : on refuse d'écrire et on le dit.
+    """
+    lignes = data.get('resultats', data) if isinstance(data, dict) else data
+    if not lignes:
+        logger.error(f"  ⛔ {category} : 0 résultat — fichier NON écrit (le site a-t-il changé ?)")
+        return False
+
     """Sauvegarde les données en JSON."""
     os.makedirs(DATA_DIR, exist_ok=True)
     filepath = os.path.join(DATA_DIR, f"{category}.json")
