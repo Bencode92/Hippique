@@ -4,107 +4,107 @@
   "reunion": 1,
   "heure_depart": 1790693640000,
   "distance": 1800,
-  "scraped_at": "2026-09-29T16:52:06.382107",
-  "minutes_avant_depart": 2,
+  "scraped_at": "2026-09-29T16:53:26.266643",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "FIRE BULLET",
-      "cote_live": 4.2,
+      "cote_live": 4.7,
       "cote_reference": 9.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790693512000
+      "timestamp_cote": 1790693592000
     },
     {
       "numPmu": 2,
       "nom": "ON THE ROCK BLOU",
-      "cote_live": 100.0,
+      "cote_live": 116.0,
       "cote_reference": 31.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790693512000
+      "timestamp_cote": 1790693592000
     },
     {
       "numPmu": 3,
       "nom": "SILENT DESTINY",
-      "cote_live": 4.3,
+      "cote_live": 4.4,
       "cote_reference": 3.9,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790693512000
+      "timestamp_cote": 1790693592000
     },
     {
       "numPmu": 4,
       "nom": "QEYNAN",
-      "cote_live": 34.0,
+      "cote_live": 35.0,
       "cote_reference": 20.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790693512000
+      "timestamp_cote": 1790693592000
     },
     {
       "numPmu": 5,
       "nom": "CAPTAIN AMERICWAN",
-      "cote_live": 19.0,
+      "cote_live": 21.0,
       "cote_reference": 20.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790693512000
+      "timestamp_cote": 1790693592000
     },
     {
       "numPmu": 7,
       "nom": "SMOKEY SPIRIT",
       "cote_live": 53.0,
       "cote_reference": 25.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790693512000
+      "timestamp_cote": 1790693592000
     },
     {
       "numPmu": 8,
       "nom": "AKHILLEUS",
       "cote_live": 18.0,
       "cote_reference": 16.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790693512000
+      "timestamp_cote": 1790693592000
     },
     {
       "numPmu": 9,
       "nom": "LE TROCA",
-      "cote_live": 82.0,
+      "cote_live": 90.0,
       "cote_reference": 56.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790693512000
+      "timestamp_cote": 1790693592000
     },
     {
       "numPmu": 10,
       "nom": "SCRIBE OF WISDOM",
-      "cote_live": 3.5,
+      "cote_live": 3.0,
       "cote_reference": 3.0,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1790693512000
+      "timestamp_cote": 1790693592000
     },
     {
       "numPmu": 11,
       "nom": "BARRAMUNDI",
-      "cote_live": 5.5,
+      "cote_live": 5.8,
       "cote_reference": 6.7,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790693512000
+      "timestamp_cote": 1790693592000
     },
     {
       "numPmu": 12,
       "nom": "GELDEN GREY",
       "cote_live": 28.0,
       "cote_reference": 21.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790693512000
+      "timestamp_cote": 1790693592000
     }
   ],
   "hippodrome": "CHANTILLY",
@@ -225,6 +225,40 @@
         "9": 82.0,
         "10": 3.5,
         "11": 5.5,
+        "12": 28.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-29T16:52:46.116504",
+      "minutes_avant_depart": 1.2336938166666667,
+      "cotes": {
+        "1": 4.7,
+        "2": 115.0,
+        "3": 4.3,
+        "4": 38.0,
+        "5": 21.0,
+        "7": 60.0,
+        "8": 18.0,
+        "9": 88.0,
+        "10": 3.1,
+        "11": 5.7,
+        "12": 29.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-29T16:53:26.266643",
+      "minutes_avant_depart": 0.5670254499999999,
+      "cotes": {
+        "1": 4.7,
+        "2": 116.0,
+        "3": 4.4,
+        "4": 35.0,
+        "5": 21.0,
+        "7": 53.0,
+        "8": 18.0,
+        "9": 90.0,
+        "10": 3.0,
+        "11": 5.8,
         "12": 28.0
       }
     }
