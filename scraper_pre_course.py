@@ -49,7 +49,7 @@ HIPPODROMES_CIBLES = [
 FENETRE_MINUTES = 20          # mode une passe
 FENETRE_BOUCLE = 6            # mode boucle : on relève dans les 6 dernières minutes
 PAS_BOUCLE_S = 40             # secondes entre deux passes
-PUSH_TOUTES_LES_S = 180       # commit + push toutes les 3 minutes
+PUSH_TOUTES_LES_S = 120       # commit + push toutes les 2 minutes (un relevé perdu ne se rattrape pas)
 
 
 def api_get(endpoint, max_retries=2):
@@ -285,8 +285,21 @@ def main(fenetre=None, silencieux=False):
 
 
 def git_push():
-    """Commit et pousse les relevés (index régénéré). Jamais bloquant."""
-    import subprocess
+    """Commit et pousse les relevés (index régénérés). Jamais bloquant.
+
+    Deux défauts corrigés le 29/09/2026, après avoir perdu 6 courses de la règle
+    sur 9 en deux semaines (« push échoué trois fois » en boucle dans les logs,
+    relevés captés mais jamais poussés, runner éphémère = données perdues) :
+
+      - on ne sortait pas tôt quand il n'y avait RIEN DE NOUVEAU à committer,
+        alors qu'un commit précédent restait en attente de push : la boucle ne
+        réessayait donc jamais. On pousse désormais dès que la branche locale
+        est en avance sur origin, qu'il y ait ou non du nouveau ;
+      - trois tentatives rapprochées ne suffisent pas quand plusieurs workflows
+        poussent en même temps : huit tentatives, attente croissante et
+        désynchronisée pour ne pas retomber sur le même créneau.
+    """
+    import subprocess, random
     def run(*cmd):
         return subprocess.run(cmd, capture_output=True, text=True)
     try:
@@ -297,16 +310,20 @@ def git_push():
         # passe toutes les 3 minutes.
         run("python3", "scripts/update_courses_index.py")
         run("git", "add", "data/cotes_live/", "data/courses/_index.json")
-        if run("git", "diff", "--cached", "--quiet").returncode == 0:
+        if run("git", "diff", "--cached", "--quiet").returncode != 0:
+            run("git", "commit", "-m", f"⏱️ Cotes live pré-course {datetime.now().strftime('%Y-%m-%d %H:%M')}")
+        # en avance sur origin ? (commit du tour précédent resté non poussé compris)
+        run("git", "fetch", "-q", "origin", "main")
+        avance = run("git", "rev-list", "--count", "origin/main..HEAD").stdout.strip()
+        if avance in ("", "0"):
             return False
-        run("git", "commit", "-m", f"⏱️ Cotes live pré-course {datetime.now().strftime('%Y-%m-%d %H:%M')}")
-        for _ in range(3):
-            run("git", "pull", "--rebase", "origin", "main")
+        for essai in range(8):
+            run("git", "pull", "--rebase", "-q", "origin", "main")
             if run("git", "push", "origin", "main").returncode == 0:
-                logger.info(f"   ⬆️  poussé {datetime.now().strftime('%H:%M:%S')}")
+                logger.info(f"   ⬆️  poussé {datetime.now().strftime('%H:%M:%S')} ({avance} commit(s))")
                 return True
-            time.sleep(5)
-        logger.warning("   ⚠️ push échoué trois fois, on réessaiera au prochain tour")
+            time.sleep(3 + 4 * essai + random.uniform(0, 3))
+        logger.warning(f"   ⚠️ push encore refusé après 8 essais — {avance} commit(s) en attente, nouvel essai au prochain tour")
     except Exception as e:
         logger.warning(f"   ⚠️ git : {e}")
     return False

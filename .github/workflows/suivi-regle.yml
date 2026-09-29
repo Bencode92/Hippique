@@ -31,8 +31,40 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Dépendances
+        run: pip install requests
+
+      # data/histo et data/rapports ne sont alimentés par AUCUN workflow : ils
+      # étaient gelés au 08/09 alors que le test lit ces deux fichiers pour
+      # trouver les courses de la règle. Sans ça, le test aurait enregistré
+      # zéro pari à partir du 1er octobre.
+      - name: Compléter l'historique et les rapports (10 derniers jours)
+        run: |
+          python3 backfill_histo.py $(date -u -d '10 days ago' +%Y-%m-%d) $(date -u +%Y-%m-%d) || true
+          python3 backfill_rapports.py $(date -u +%Y-%m) || true
+
       - name: Relancer le test séquentiel
         run: node bench/sprt_regle.mjs | tee /tmp/sprt.txt
+
+      - name: Publier historique, rapports et état du test
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action - Suivi règle"
+          git add data/histo/ data/rapports/ data/sprt_etat.json data/sprt_journal.json 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "Rien à publier"
+          else
+            git commit -m "📐 Suivi règle $(date -u +'%Y-%m-%d') — historique, rapports, état du test"
+            for i in 1 2 3 4 5; do
+              git pull --rebase -q origin main || true
+              git push origin main && break || sleep $((5 * i))
+            done
+          fi
 
       - name: Résumé dans le job
         run: |

@@ -9,27 +9,35 @@ on:
     # toutes les ~40 s dans les 6 dernières minutes avant le départ, garde le
     # relevé le plus proche du départ et l'historique, et pousse toutes les
     # 3 minutes. Le test séquentiel a besoin du favori à T-2, pas à la clôture.
+    # Un run toutes les 2 h, chacun de 150 min : ils se CHEVAUCHENT de 30 min.
+    # Sans chevauchement, un démarrage retardé par GitHub (jusqu'à 5 h observées)
+    # laisse un trou ; et le verrou de concurrence, qui ne garde qu'un seul run
+    # en attente, en supprimait davantage qu'il n'en protégeait.
+    - cron: '0 6 * * *'
     - cron: '0 8 * * *'
+    - cron: '0 10 * * *'
     - cron: '0 12 * * *'
+    - cron: '0 14 * * *'
     - cron: '0 16 * * *'
+    - cron: '0 18 * * *'
   workflow_dispatch:
     inputs:
       duree:
         description: 'Durée de la boucle en minutes'
-        default: '235'
+        default: '150'
 
 permissions:
   contents: write
 
-# deux boucles ne doivent pas écrire en même temps ; la suivante attend
-concurrency:
-  group: cotes-live
-  cancel-in-progress: false
+# PAS de verrou de concurrence : il ne garde qu'un run en attente et supprime
+# les autres, ce qui a coûté 6 courses de la règle sur 9 les 18 et 25/09. Deux
+# boucles qui se chevauchent écrivent le même contenu (le relevé le plus proche
+# du départ gagne) et leurs push se rattrapent par rebase.
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 250
+    timeout-minutes: 170
 
     steps:
       - name: Checkout
@@ -53,4 +61,4 @@ jobs:
       - name: Boucle de relevés
         env:
           TZ: Europe/Paris
-        run: python scraper_pre_course.py --boucle ${{ github.event.inputs.duree || '235' }}
+        run: python scraper_pre_course.py --boucle ${{ github.event.inputs.duree || '150' }}
