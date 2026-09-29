@@ -1,7 +1,7 @@
 {
   "hippodrome": "MONS (GHLIN)",
   "type_reunion": "ATTELE",
-  "date_extraction": "2026-09-29T01:43:27.802132",
+  "date_extraction": "2026-09-29T16:18:43.861147",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/29092026/R5",
   "courses": [
     {
@@ -31,8 +31,9 @@
           "nb_courses": 84,
           "nb_victoires": 14,
           "nb_places": 55,
-          "cote": 1.5,
-          "cote_tendance": ""
+          "cote": 16.0,
+          "cote_tendance": "+",
+          "cote_reference": 7.9
         },
         {
           "n°": "2",
@@ -52,7 +53,10 @@
           "equipement(s)": "",
           "nb_courses": 56,
           "nb_victoires": 10,
-          "nb_places": 17
+          "nb_places": 17,
+          "cote": 5.8,
+          "cote_tendance": "-",
+          "cote_reference": 10.0
         },
         {
           "n°": "3",
@@ -73,8 +77,9 @@
           "nb_courses": 43,
           "nb_victoires": 5,
           "nb_places": 21,
-          "cote": 7.9,
-          "cote_tendance": ""
+          "cote": 40.0,
+          "cote_tendance": "-",
+          "cote_reference": 17.0
         },
         {
           "n°": "4",
@@ -94,7 +99,10 @@
           "equipement(s)": "",
           "nb_courses": 36,
           "nb_victoires": 6,
-          "nb_places": 16
+          "nb_places": 16,
+          "cote": 14.0,
+          "cote_tendance": "+",
+          "cote_reference": 35.0
         },
         {
           "n°": "5",
@@ -115,8 +123,9 @@
           "nb_courses": 49,
           "nb_victoires": 4,
           "nb_places": 19,
-          "cote": 3.9,
-          "cote_tendance": ""
+          "cote": 8.3,
+          "cote_tendance": "+",
+          "cote_reference": 7.1
         },
         {
           "n°": "6",
@@ -136,7 +145,10 @@
           "equipement(s)": "",
           "nb_courses": 83,
           "nb_victoires": 11,
-          "nb_places": 54
+          "nb_places": 54,
+          "cote": 34.0,
+          "cote_tendance": "-",
+          "cote_reference": 35.0
         },
         {
           "n°": "7",
@@ -157,8 +169,9 @@
           "nb_courses": 22,
           "nb_victoires": 4,
           "nb_places": 8,
-          "cote": 7.9,
-          "cote_tendance": ""
+          "cote": 6.1,
+          "cote_tendance": "+",
+          "cote_reference": 4.2
         },
         {
           "n°": "8",
@@ -178,7 +191,9 @@
           "equipement(s)": "",
           "nb_courses": 30,
           "nb_victoires": 3,
-          "nb_places": 19
+          "nb_places": 19,
+          "cote": 26.0,
+          "cote_tendance": "-"
         },
         {
           "n°": "9",
@@ -198,7 +213,10 @@
           "equipement(s)": "",
           "nb_courses": 62,
           "nb_victoires": 5,
-          "nb_places": 29
+          "nb_places": 29,
+          "cote": 7.5,
+          "cote_tendance": "+",
+          "cote_reference": 14.0
         },
         {
           "n°": "10",
@@ -218,7 +236,10 @@
           "equipement(s)": "",
           "nb_courses": 30,
           "nb_victoires": 4,
-          "nb_places": 17
+          "nb_places": 17,
+          "cote": 7.5,
+          "cote_tendance": "+",
+          "cote_reference": 17.0
         },
         {
           "n°": "11",
@@ -238,9 +259,13 @@
           "equipement(s)": "",
           "nb_courses": 58,
           "nb_victoires": 12,
-          "nb_places": 22
+          "nb_places": 22,
+          "cote": 5.2,
+          "cote_tendance": "+",
+          "cote_reference": 3.4
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX LETROT.COM                         BELGIQUE",
@@ -268,7 +293,10 @@
           "equipement(s)": "",
           "nb_courses": 15,
           "nb_victoires": 0,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 20.0,
+          "cote_tendance": "-",
+          "cote_reference": 24.0
         },
         {
           "n°": "2",
@@ -288,7 +316,10 @@
           "equipement(s)": "",
           "nb_courses": 21,
           "nb_victoires": 1,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 124.0,
+          "cote_tendance": "+",
+          "cote_reference": 72.0
         },
         {
           "n°": "3",
@@ -329,8 +360,9 @@
           "nb_courses": 11,
           "nb_victoires": 2,
           "nb_places": 5,
-          "cote": 4.4,
-          "cote_tendance": ""
+          "cote": 5.1,
+          "cote_tendance": "+",
+          "cote_reference": 3.4
         },
         {
           "n°": "5",
@@ -350,7 +382,10 @@
           "equipement(s)": "",
           "nb_courses": 32,
           "nb_victoires": 2,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 124.0,
+          "cote_tendance": "+",
+          "cote_reference": 72.0
         },
         {
           "n°": "6",
@@ -372,27 +407,8 @@
           "nb_victoires": 2,
           "nb_places": 11,
           "cote": 4.4,
-          "cote_tendance": ""
-        },
-        {
-          "n°": "7",
-          "cheval": "JARNO FRA MALOU M.TR. 7 a.",
-          "cheval_url": "",
-          "père_mère": "Par: SILVER PIERJI et BINGI ROSE",
-          "corde": "(Corde:07)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260929/HWM/2/20260929-HWM-2-7.png",
-          "propriétaire": "ROBERT SMEETS",
-          "entraineur": "ROBERT SMEETS",
-          "éleveurs": "",
-          "jockey": "JONAS VAN DEN HOVE",
-          "poids": "",
-          "gains": "1092700",
-          "musique": "3a6a4aDa3a0a6a3a7a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
+          "cote_tendance": "+",
+          "cote_reference": 14.0
         },
         {
           "n°": "8",
@@ -432,7 +448,10 @@
           "equipement(s)": "",
           "nb_courses": 23,
           "nb_victoires": 0,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 124.0,
+          "cote_tendance": "+",
+          "cote_reference": 72.0
         },
         {
           "n°": "10",
@@ -452,7 +471,10 @@
           "equipement(s)": "",
           "nb_courses": 45,
           "nb_victoires": 2,
-          "nb_places": 27
+          "nb_places": 27,
+          "cote": 13.0,
+          "cote_tendance": "+",
+          "cote_reference": 9.0
         },
         {
           "n°": "11",
@@ -473,8 +495,9 @@
           "nb_courses": 12,
           "nb_victoires": 3,
           "nb_places": 6,
-          "cote": 4.4,
-          "cote_tendance": ""
+          "cote": 3.6,
+          "cote_tendance": "",
+          "cote_reference": 2.2
         },
         {
           "n°": "12",
@@ -495,8 +518,9 @@
           "nb_courses": 25,
           "nb_victoires": 0,
           "nb_places": 14,
-          "cote": 4.4,
-          "cote_tendance": ""
+          "cote": 41.0,
+          "cote_tendance": "+",
+          "cote_reference": 72.0
         },
         {
           "n°": "13",
@@ -517,10 +541,12 @@
           "nb_courses": 48,
           "nb_victoires": 5,
           "nb_places": 20,
-          "cote": 4.4,
-          "cote_tendance": ""
+          "cote": 3.6,
+          "cote_tendance": "",
+          "cote_reference": 8.0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX WWW.EUROTIERCE.BE                  BELGIQUE",
@@ -549,8 +575,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 7.9,
-          "cote_tendance": ""
+          "cote": 7.0,
+          "cote_tendance": "-",
+          "cote_reference": 40.0
         },
         {
           "n°": "2",
@@ -570,7 +597,9 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 0,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 49.0,
+          "cote_tendance": "+"
         },
         {
           "n°": "3",
@@ -590,7 +619,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 73.0,
+          "cote_tendance": "+"
         },
         {
           "n°": "4",
@@ -611,8 +642,9 @@
           "nb_courses": 4,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 3.9,
-          "cote_tendance": ""
+          "cote": 1.6,
+          "cote_tendance": "+",
+          "cote_reference": 1.2
         },
         {
           "n°": "5",
@@ -633,8 +665,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 3.9,
-          "cote_tendance": ""
+          "cote": 9.2,
+          "cote_tendance": "-",
+          "cote_reference": 20.0
         },
         {
           "n°": "6",
@@ -655,8 +688,9 @@
           "nb_courses": 73,
           "nb_victoires": 3,
           "nb_places": 51,
-          "cote": 7.9,
-          "cote_tendance": ""
+          "cote": 7.2,
+          "cote_tendance": "+",
+          "cote_reference": 8.6
         },
         {
           "n°": "7",
@@ -677,8 +711,9 @@
           "nb_courses": 42,
           "nb_victoires": 4,
           "nb_places": 17,
-          "cote": 2.6,
-          "cote_tendance": ""
+          "cote": 14.0,
+          "cote_tendance": "+",
+          "cote_reference": 9.2
         },
         {
           "n°": "8",
@@ -698,7 +733,10 @@
           "equipement(s)": "",
           "nb_courses": 143,
           "nb_victoires": 17,
-          "nb_places": 84
+          "nb_places": 84,
+          "cote": 49.0,
+          "cote_tendance": "+",
+          "cote_reference": 60.0
         }
       ],
       "cordeCourse": "CORDE_GAUCHE"
@@ -729,7 +767,10 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 17.0,
+          "cote_tendance": "+",
+          "cote_reference": 9.1
         },
         {
           "n°": "2",
@@ -749,7 +790,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 53.0,
+          "cote_tendance": ""
         },
         {
           "n°": "3",
@@ -769,7 +812,9 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 0,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 53.0,
+          "cote_tendance": "+"
         },
         {
           "n°": "4",
@@ -789,7 +834,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 53.0,
+          "cote_tendance": "+",
+          "cote_reference": 27.0
         },
         {
           "n°": "5",
@@ -809,7 +857,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.1,
+          "cote_tendance": "",
+          "cote_reference": 27.0
         },
         {
           "n°": "6",
@@ -829,7 +880,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.6,
+          "cote_tendance": "+",
+          "cote_reference": 1.3
         },
         {
           "n°": "7",
@@ -849,7 +903,10 @@
           "equipement(s)": "",
           "nb_courses": 13,
           "nb_victoires": 0,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 10.0,
+          "cote_tendance": "-",
+          "cote_reference": 27.0
         },
         {
           "n°": "8",
@@ -889,7 +946,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 5.3,
+          "cote_tendance": "-",
+          "cote_reference": 6.8
         },
         {
           "n°": "10",
@@ -909,7 +969,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 17.0,
+          "cote_tendance": "+",
+          "cote_reference": 27.0
         },
         {
           "n°": "11",
@@ -931,7 +994,8 @@
           "nb_victoires": 0,
           "nb_places": 0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX LA CAPELLE                         BELGIQUE",
@@ -999,7 +1063,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 9.4,
+          "cote_tendance": "+",
+          "cote_reference": 7.4
         },
         {
           "n°": "4",
@@ -1019,7 +1086,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 18.0,
+          "cote_tendance": "-"
         },
         {
           "n°": "5",
@@ -1039,7 +1108,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 37.0,
+          "cote_tendance": "+",
+          "cote_reference": 14.0
         },
         {
           "n°": "6",
@@ -1059,7 +1131,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 37.0,
+          "cote_tendance": "+",
+          "cote_reference": 14.0
         },
         {
           "n°": "7",
@@ -1079,7 +1154,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 37.0,
+          "cote_tendance": "+"
         },
         {
           "n°": "8",
@@ -1099,7 +1176,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.7,
+          "cote_tendance": "",
+          "cote_reference": 2.9
         },
         {
           "n°": "9",
@@ -1119,7 +1199,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 37.0,
+          "cote_tendance": "+",
+          "cote_reference": 14.0
         },
         {
           "n°": "10",
@@ -1139,7 +1222,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 3.1,
+          "cote_tendance": "+",
+          "cote_reference": 14.0
         },
         {
           "n°": "11",
@@ -1159,29 +1245,13 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
-          "n°": "12",
-          "cheval": "UDO GILOU M.TR. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: PACIFIC BROLINE et LILY ROSE VOLITA",
-          "corde": "(Corde:12)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260929/HWM/5/20260929-HWM-5-12.png",
-          "propriétaire": "NIC WILLEMS",
-          "entraineur": "NIC WILLEMS",
-          "éleveurs": "",
-          "jockey": "GILLES WILLEMS",
-          "poids": "",
-          "gains": "106800",
-          "musique": "2a7a1aQa",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.4,
+          "cote_tendance": "+",
+          "cote_reference": 2.4
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX COMPIEGNE                          BELGIQUE",
@@ -1209,7 +1279,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.1,
+          "cote_tendance": "",
+          "cote_reference": 24.0
         },
         {
           "n°": "2",
@@ -1229,7 +1302,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 1.3,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         },
         {
           "n°": "3",
@@ -1249,7 +1325,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 16.0,
+          "cote_tendance": "",
+          "cote_reference": 16.0
         },
         {
           "n°": "4",
@@ -1269,7 +1348,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 24.0
         },
         {
           "n°": "5",
@@ -1289,7 +1371,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 17.0,
+          "cote_tendance": "",
+          "cote_reference": 32.0
         },
         {
           "n°": "6",
@@ -1309,7 +1394,10 @@
           "equipement(s)": "",
           "nb_courses": 54,
           "nb_victoires": 3,
-          "nb_places": 33
+          "nb_places": 33,
+          "cote": 32.0,
+          "cote_tendance": "",
+          "cote_reference": 24.0
         },
         {
           "n°": "7",
@@ -1329,7 +1417,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 32.0,
+          "cote_tendance": "",
+          "cote_reference": 48.0
         },
         {
           "n°": "8",
@@ -1349,9 +1440,13 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 64.0,
+          "cote_tendance": "",
+          "cote_reference": 48.0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX AMIENS                             BELGIQUE",
@@ -1379,7 +1474,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.5,
+          "cote_tendance": "+",
+          "cote_reference": 16.0
         },
         {
           "n°": "2",
@@ -1399,7 +1497,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.5,
+          "cote_tendance": "+",
+          "cote_reference": 3.9
         },
         {
           "n°": "3",
@@ -1419,7 +1520,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 0,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 17.0,
+          "cote_tendance": "+",
+          "cote_reference": 5.4
         },
         {
           "n°": "4",
@@ -1439,7 +1543,10 @@
           "equipement(s)": "",
           "nb_courses": 28,
           "nb_victoires": 0,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 26.0,
+          "cote_tendance": "+",
+          "cote_reference": 8.2
         },
         {
           "n°": "5",
@@ -1459,7 +1566,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 1.8,
+          "cote_tendance": "",
+          "cote_reference": 2.9
         },
         {
           "n°": "6",
@@ -1479,7 +1589,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 17.0,
+          "cote_tendance": "+",
+          "cote_reference": 8.2
         },
         {
           "n°": "7",
@@ -1499,7 +1612,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 26.0,
+          "cote_tendance": "-",
+          "cote_reference": 16.0
         },
         {
           "n°": "8",
@@ -1521,7 +1637,8 @@
           "nb_victoires": 0,
           "nb_places": 0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX ARRAS                              BELGIQUE",
@@ -1549,7 +1666,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.4,
+          "cote_tendance": "",
+          "cote_reference": 5.7
         },
         {
           "n°": "2",
@@ -1569,7 +1689,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 9.5,
+          "cote_tendance": "",
+          "cote_reference": 4.2
         },
         {
           "n°": "3",
@@ -1589,7 +1712,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 39.0,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -1609,7 +1734,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 6.5,
+          "cote_tendance": "",
+          "cote_reference": 17.0
         },
         {
           "n°": "5",
@@ -1629,7 +1757,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 78.0,
+          "cote_tendance": "",
+          "cote_reference": 34.0
         },
         {
           "n°": "6",
@@ -1649,7 +1780,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 4.3,
+          "cote_tendance": "",
+          "cote_reference": 1.9
         },
         {
           "n°": "7",
@@ -1669,7 +1803,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 4.9,
+          "cote_tendance": "",
+          "cote_reference": 8.6
         },
         {
           "n°": "8",
@@ -1691,7 +1828,8 @@
           "nb_victoires": 0,
           "nb_places": 0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     }
   ]
 }
