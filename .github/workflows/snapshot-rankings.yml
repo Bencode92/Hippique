@@ -4,8 +4,14 @@ on:
   schedule:
     # Hebdomadaire, le lundi à 4h30 UTC — avant toute course, donc jamais un
     # snapshot de l'après-midi qui contiendrait les gains du jour (05/09 15h44).
-    # Lancé à la main dix fois en cinq mois, le snapshot du 12/07 a servi 377
-    # réunions (33 % de la base) avec jusqu'à huit semaines de retard.
+    #
+    # ATTENTION (29/09/2026) : ce workflow ne télécharge RIEN. Il horodate une
+    # copie de data/raw_csv/, qui contient les exports que Benoit récupère à la
+    # main sur France Galop. Sans réimport, le cron fabriquait des dossiers
+    # « 2026-09-21 » et « 2026-09-28 » contenant les données du 5 septembre.
+    # snapshot_brut.py refuse désormais un snapshot identique au précédent
+    # (sortie 78) : le run échoue, visible dans Actions, et c'est le rappel
+    # qu'il faut réimporter les CSV.
     - cron: '30 4 * * 1'
   workflow_dispatch:
 
@@ -36,6 +42,10 @@ jobs:
           echo ""
           echo "=== Contenu du snapshot ==="
           ls -la "data/rankings/$STAMP/"
+
+      - name: Rappel si les CSV n'ont pas été réimportés
+        if: failure()
+        run: echo "::warning::Snapshot abandonné — data/raw_csv n'a pas changé depuis le dernier snapshot. Réimporte les classements depuis France Galop."
 
       - name: Commit et push
         run: |
