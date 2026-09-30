@@ -4,80 +4,80 @@
   "reunion": 3,
   "heure_depart": 1790770440000,
   "distance": 3900,
-  "scraped_at": "2026-09-30T14:10:34.489306",
-  "minutes_avant_depart": 3,
+  "scraped_at": "2026-09-30T14:13:14.662302",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "LA VALETTE",
-      "cote_live": 15.0,
+      "cote_live": 9.2,
       "cote_reference": 10.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790770227000
+      "timestamp_cote": 1790770384000
     },
     {
       "numPmu": 2,
       "nom": "MAMAZARA",
-      "cote_live": 48.0,
+      "cote_live": 59.0,
       "cote_reference": 38.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790770227000
+      "timestamp_cote": 1790770384000
     },
     {
       "numPmu": 3,
       "nom": "LUNATIQUE D'AINAY",
-      "cote_live": 16.0,
+      "cote_live": 19.0,
       "cote_reference": 14.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790770227000
+      "timestamp_cote": 1790770384000
     },
     {
       "numPmu": 4,
       "nom": "MIRAVAL DE GRUGY",
       "cote_live": 8.6,
       "cote_reference": 7.4,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790770227000
+      "timestamp_cote": 1790770384000
     },
     {
       "numPmu": 5,
       "nom": "MISSDENUO",
-      "cote_live": 2.1,
+      "cote_live": 2.3,
       "cote_reference": 2.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1790770227000
+      "timestamp_cote": 1790770384000
     },
     {
       "numPmu": 6,
       "nom": "MAGIC TRILLION",
-      "cote_live": 3.6,
+      "cote_live": 3.3,
       "cote_reference": 6.1,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790770227000
+      "timestamp_cote": 1790770384000
     },
     {
       "numPmu": 7,
       "nom": "MASKA D'AIRY",
-      "cote_live": 26.0,
+      "cote_live": 29.0,
       "cote_reference": 32.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790770227000
+      "timestamp_cote": 1790770384000
     },
     {
       "numPmu": 8,
       "nom": "MAPREFERENCE ALLEN",
-      "cote_live": 10.0,
+      "cote_live": 11.0,
       "cote_reference": 7.3,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790770227000
+      "timestamp_cote": 1790770384000
     }
   ],
   "hippodrome": "COMPIEGNE",
@@ -136,6 +136,62 @@
         "6": 3.6,
         "7": 26.0,
         "8": 10.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-30T14:11:14.474430",
+      "minutes_avant_depart": 2.759724583333333,
+      "cotes": {
+        "1": 16.0,
+        "2": 49.0,
+        "3": 16.0,
+        "4": 8.3,
+        "5": 2.0,
+        "6": 3.8,
+        "7": 27.0,
+        "8": 11.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-30T14:11:54.529206",
+      "minutes_avant_depart": 2.0930550833333332,
+      "cotes": {
+        "1": 17.0,
+        "2": 53.0,
+        "3": 16.0,
+        "4": 8.0,
+        "5": 2.0,
+        "6": 3.8,
+        "7": 28.0,
+        "8": 10.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-30T14:12:34.964591",
+      "minutes_avant_depart": 1.4189013833333335,
+      "cotes": {
+        "1": 8.9,
+        "2": 65.0,
+        "3": 19.0,
+        "4": 8.8,
+        "5": 2.3,
+        "6": 3.3,
+        "7": 34.0,
+        "8": 11.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-30T14:13:14.662302",
+      "minutes_avant_depart": 0.7597180333333333,
+      "cotes": {
+        "1": 9.2,
+        "2": 59.0,
+        "3": 19.0,
+        "4": 8.6,
+        "5": 2.3,
+        "6": 3.3,
+        "7": 29.0,
+        "8": 11.0
       }
     }
   ]
