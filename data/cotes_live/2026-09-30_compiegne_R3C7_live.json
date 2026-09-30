@@ -4,116 +4,116 @@
   "reunion": 3,
   "heure_depart": 1790774640000,
   "distance": 3600,
-  "scraped_at": "2026-09-30T15:22:34.889374",
-  "minutes_avant_depart": 1,
+  "scraped_at": "2026-09-30T15:25:14.688952",
+  "minutes_avant_depart": -1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ESTO MEMOR",
-      "cote_live": 4.7,
+      "cote_live": 5.1,
       "cote_reference": 7.2,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1790774539000
+      "favoris": false,
+      "timestamp_cote": 1790774690000
     },
     {
       "numPmu": 2,
       "nom": "DIEGO NOLIMIT",
       "cote_live": 7.5,
       "cote_reference": 6.7,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790774539000
+      "timestamp_cote": 1790774690000
     },
     {
       "numPmu": 3,
       "nom": "MIATCHU",
-      "cote_live": 6.1,
+      "cote_live": 6.3,
       "cote_reference": 5.3,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790774539000
+      "timestamp_cote": 1790774690000
     },
     {
       "numPmu": 4,
       "nom": "MATERHORN PARADISE",
-      "cote_live": 15.0,
+      "cote_live": 16.0,
       "cote_reference": 18.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790774539000
+      "timestamp_cote": 1790774690000
     },
     {
       "numPmu": 5,
       "nom": "MIROR",
-      "cote_live": 20.0,
+      "cote_live": 29.0,
       "cote_reference": 21.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790774539000
+      "timestamp_cote": 1790774690000
     },
     {
       "numPmu": 7,
       "nom": "MAGIC PAL",
-      "cote_live": 6.8,
+      "cote_live": 6.9,
       "cote_reference": 10.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790774539000
+      "timestamp_cote": 1790774690000
     },
     {
       "numPmu": 8,
       "nom": "RIMATILCLO",
-      "cote_live": 7.2,
+      "cote_live": 4.6,
       "cote_reference": 5.0,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1790774539000
+      "favoris": true,
+      "timestamp_cote": 1790774690000
     },
     {
       "numPmu": 9,
       "nom": "MUTIN D'OUDAIRIES",
-      "cote_live": 45.0,
+      "cote_live": 71.0,
       "cote_reference": 55.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790774539000
+      "timestamp_cote": 1790774690000
     },
     {
       "numPmu": 10,
       "nom": "BALKIOLO DE PAIX",
-      "cote_live": 19.0,
+      "cote_live": 21.0,
       "cote_reference": 23.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790774539000
+      "timestamp_cote": 1790774690000
     },
     {
       "numPmu": 11,
       "nom": "MONSIEUR SUN",
-      "cote_live": 10.0,
+      "cote_live": 12.0,
       "cote_reference": 8.5,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790774539000
+      "timestamp_cote": 1790774690000
     },
     {
       "numPmu": 12,
       "nom": "MAKANI DU FENOIR",
-      "cote_live": 39.0,
+      "cote_live": 37.0,
       "cote_reference": 37.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790774539000
+      "timestamp_cote": 1790774690000
     },
     {
       "numPmu": 13,
       "nom": "MISE A JOUR",
-      "cote_live": 32.0,
+      "cote_live": 41.0,
       "cote_reference": 17.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790774539000
+      "timestamp_cote": 1790774690000
     }
   ],
   "hippodrome": "COMPIEGNE",
@@ -242,6 +242,78 @@
         "11": 10.0,
         "12": 39.0,
         "13": 32.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-30T15:23:14.695212",
+      "minutes_avant_depart": 0.7594917833333333,
+      "cotes": {
+        "1": 4.7,
+        "2": 7.6,
+        "3": 6.4,
+        "4": 15.0,
+        "5": 22.0,
+        "7": 6.9,
+        "8": 6.6,
+        "9": 48.0,
+        "10": 20.0,
+        "11": 9.6,
+        "12": 41.0,
+        "13": 30.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-30T15:23:54.733587",
+      "minutes_avant_depart": 0.09282248333333333,
+      "cotes": {
+        "1": 5.2,
+        "2": 8.1,
+        "3": 6.2,
+        "4": 18.0,
+        "5": 24.0,
+        "7": 6.6,
+        "8": 4.9,
+        "9": 57.0,
+        "10": 19.0,
+        "11": 10.0,
+        "12": 41.0,
+        "13": 35.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-30T15:24:34.639629",
+      "minutes_avant_depart": -0.5738462833333333,
+      "cotes": {
+        "1": 4.9,
+        "2": 8.3,
+        "3": 6.7,
+        "4": 15.0,
+        "5": 28.0,
+        "7": 7.0,
+        "8": 4.6,
+        "9": 66.0,
+        "10": 19.0,
+        "11": 11.0,
+        "12": 34.0,
+        "13": 38.0
+      }
+    },
+    {
+      "scraped_at": "2026-09-30T15:25:14.688952",
+      "minutes_avant_depart": -1.2405150333333335,
+      "cotes": {
+        "1": 5.1,
+        "2": 7.5,
+        "3": 6.3,
+        "4": 16.0,
+        "5": 29.0,
+        "7": 6.9,
+        "8": 4.6,
+        "9": 71.0,
+        "10": 21.0,
+        "11": 12.0,
+        "12": 37.0,
+        "13": 41.0
       }
     }
   ]
