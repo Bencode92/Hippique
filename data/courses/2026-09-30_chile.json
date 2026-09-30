@@ -1,7 +1,7 @@
 {
   "hippodrome": "CHILE",
   "type_reunion": "Plat",
-  "date_extraction": "2026-09-30T01:12:08.967451",
+  "date_extraction": "2026-09-30T16:15:00.349961",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/30092026/R8",
   "courses": [
     {
@@ -30,7 +30,9 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 0,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 7.5,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -50,7 +52,10 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.5,
+          "cote_tendance": "+",
+          "cote_reference": 1.9
         },
         {
           "n°": "3",
@@ -70,7 +75,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 3.7,
+          "cote_tendance": "+",
+          "cote_reference": 4.0
         },
         {
           "n°": "4",
@@ -250,7 +258,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.5,
+          "cote_tendance": "+"
         },
         {
           "n°": "13",
@@ -290,7 +300,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 5.0,
+          "cote_tendance": "+",
+          "cote_reference": 2.7
         },
         {
           "n°": "15",
@@ -310,9 +323,14 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.5,
+          "cote_tendance": "+"
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -323,26 +341,6 @@
       "distance": "1000m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "TWO FLAGS F.PU. 8 a.",
-          "cheval_url": "",
-          "père_mère": "Par: SEEKING THE DIA et TOSSITA (FUSAICHI PEGASUS)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260930/S85/2/20260930-S85-2-1.png",
-          "propriétaire": "AS",
-          "entraineur": "ALEXIS RAMON PEREZ DUARTE",
-          "éleveurs": "",
-          "jockey": "RICARDO ANDRES SOLORZA FERNANDEZ",
-          "poids": "57 kg",
-          "gains": "2048670000",
-          "musique": "5p3p3p0p5p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 102,
-          "nb_victoires": 5,
-          "nb_places": 29
-        },
         {
           "n°": "2",
           "cheval": "FREE REIN F.PU. 9 a.",
@@ -361,7 +359,10 @@
           "equipement(s)": "",
           "nb_courses": 177,
           "nb_victoires": 13,
-          "nb_places": 45
+          "nb_places": 45,
+          "cote": 4.0,
+          "cote_tendance": "+",
+          "cote_reference": 1.5
         },
         {
           "n°": "3",
@@ -381,7 +382,10 @@
           "equipement(s)": "",
           "nb_courses": 19,
           "nb_victoires": 1,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 5.6,
+          "cote_tendance": "+",
+          "cote_reference": 2.1
         },
         {
           "n°": "4",
@@ -421,7 +425,9 @@
           "equipement(s)": "",
           "nb_courses": 76,
           "nb_victoires": 3,
-          "nb_places": 11
+          "nb_places": 11,
+          "cote": 8.4,
+          "cote_tendance": "+"
         },
         {
           "n°": "6",
@@ -461,7 +467,9 @@
           "equipement(s)": "",
           "nb_courses": 138,
           "nb_victoires": 7,
-          "nb_places": 46
+          "nb_places": 46,
+          "cote": 8.4,
+          "cote_tendance": "+"
         },
         {
           "n°": "8",
@@ -521,7 +529,9 @@
           "equipement(s)": "",
           "nb_courses": 74,
           "nb_victoires": 4,
-          "nb_places": 16
+          "nb_places": 16,
+          "cote": 8.4,
+          "cote_tendance": "+"
         },
         {
           "n°": "11",
@@ -581,7 +591,9 @@
           "equipement(s)": "",
           "nb_courses": 43,
           "nb_victoires": 3,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 2.8,
+          "cote_tendance": "-"
         },
         {
           "n°": "14",
@@ -604,6 +616,9 @@
           "nb_places": 0
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -614,26 +629,6 @@
       "distance": "1000m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "SRA ELGA F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: BIG DADDY et ELGA (ECTON PARK)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260930/S85/3/20260930-S85-3-1.png",
-          "propriétaire": "MI GRAN FAMILIA",
-          "entraineur": "ALEJANDRO PATRICIO PADOVANI ESTA",
-          "éleveurs": "",
-          "jockey": "GUSTAVO ADRIAN AROS",
-          "poids": "57 kg",
-          "gains": "329940000",
-          "musique": "8p6p5p5p0p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 7,
-          "nb_victoires": 1,
-          "nb_places": 1
-        },
         {
           "n°": "2",
           "cheval": "DESERT ROSE F.PU. 4 a.",
@@ -652,7 +647,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 1.8,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         },
         {
           "n°": "3",
@@ -672,7 +670,9 @@
           "equipement(s)": "",
           "nb_courses": 24,
           "nb_victoires": 2,
-          "nb_places": 11
+          "nb_places": 11,
+          "cote": 5.8,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -792,7 +792,10 @@
           "equipement(s)": "",
           "nb_courses": 74,
           "nb_victoires": 5,
-          "nb_places": 18
+          "nb_places": 18,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 6.3
         },
         {
           "n°": "10",
@@ -872,29 +875,14 @@
           "equipement(s)": "",
           "nb_courses": 47,
           "nb_victoires": 1,
-          "nb_places": 6
-        },
-        {
-          "n°": "14",
-          "cheval": "CHIQUITO CAMPEADOR M.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MIDSHIPMAN et SHE IS SWEET (HENRYTHENAVIGATOR)",
-          "corde": "(Corde:14)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260930/S85/3/20260930-S85-3-14.png",
-          "propriétaire": "SANTA ANA",
-          "entraineur": "CARLOS ENRIQUE SEPULVEDA BENITEZ",
-          "éleveurs": "",
-          "jockey": "JOAQUIN ALEJANDRO HERRERA OLIVAR",
-          "poids": "56 kg",
-          "gains": "2272500000",
-          "musique": "8p0p0p0p0p",
-          "valeur": "56.0",
-          "equipement(s)": "",
-          "nb_courses": 86,
-          "nb_victoires": 8,
-          "nb_places": 12
+          "nb_places": 6,
+          "cote": 2.9,
+          "cote_tendance": ""
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -943,7 +931,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.3,
+          "cote_tendance": "+",
+          "cote_reference": 2.2
         },
         {
           "n°": "3",
@@ -963,7 +954,10 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 17.0,
+          "cote_tendance": "-",
+          "cote_reference": 23.0
         },
         {
           "n°": "4",
@@ -983,7 +977,10 @@
           "equipement(s)": "",
           "nb_courses": 18,
           "nb_victoires": 1,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 8.8,
+          "cote_tendance": "-",
+          "cote_reference": 5.7
         },
         {
           "n°": "5",
@@ -1023,7 +1020,9 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 13.0,
+          "cote_tendance": "+"
         },
         {
           "n°": "7",
@@ -1043,7 +1042,10 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 4.4,
+          "cote_tendance": "+",
+          "cote_reference": 2.3
         },
         {
           "n°": "8",
@@ -1063,27 +1065,9 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 1,
-          "nb_places": 3
-        },
-        {
-          "n°": "9",
-          "cheval": "KATSUMI F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: KINGLY et GISELDA (THUNDER GULCH)",
-          "corde": "(Corde:09)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20260930/S85/4/20260930-S85-4-9.png",
-          "propriétaire": "HARAS MOCITO GUAPO",
-          "entraineur": "JUAN PABLO BAEZA JARPA",
-          "éleveurs": "",
-          "jockey": "VICTOR MANUEL CIFUENTES PEDRAZA",
-          "poids": "55 kg",
-          "gains": "544950000",
-          "musique": "4p2p1p2p2p",
-          "valeur": "55.0",
-          "equipement(s)": "",
-          "nb_courses": 8,
-          "nb_victoires": 1,
-          "nb_places": 6
+          "nb_places": 3,
+          "cote": 26.0,
+          "cote_tendance": "+"
         },
         {
           "n°": "10",
@@ -1103,7 +1087,9 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 13.0,
+          "cote_tendance": "+"
         },
         {
           "n°": "11",
@@ -1123,7 +1109,9 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 13.0,
+          "cote_tendance": "+"
         },
         {
           "n°": "12",
@@ -1143,7 +1131,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 17.0,
+          "cote_tendance": "+",
+          "cote_reference": 23.0
         },
         {
           "n°": "13",
@@ -1166,6 +1157,9 @@
           "nb_places": 4
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     }
   ]
