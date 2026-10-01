@@ -1,0 +1,116 @@
+{
+  "course": "PRIX RECRUIT II",
+  "numero": 2,
+  "reunion": 1,
+  "heure_depart": 1790857920000,
+  "distance": 3700,
+  "scraped_at": "2026-10-01T14:27:21.868777",
+  "minutes_avant_depart": 5,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "PRIAM DU MESNIL",
+      "cote_live": 3.1,
+      "cote_reference": 2.9,
+      "tendance": "-",
+      "favoris": true,
+      "timestamp_cote": 1790857635000
+    },
+    {
+      "numPmu": 2,
+      "nom": "NELSON DU MATHAN",
+      "cote_live": 6.6,
+      "cote_reference": 9.8,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1790857635000
+    },
+    {
+      "numPmu": 3,
+      "nom": "THE MUST",
+      "cote_live": 11.0,
+      "cote_reference": 5.9,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790857635000
+    },
+    {
+      "numPmu": 4,
+      "nom": "HURRICK DES OBEAUX",
+      "cote_live": 5.7,
+      "cote_reference": 6.5,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790857613000
+    },
+    {
+      "numPmu": 5,
+      "nom": "TCHEQUE KING",
+      "cote_live": 3.7,
+      "cote_reference": 5.1,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1790857635000
+    },
+    {
+      "numPmu": 7,
+      "nom": "GRIFFON D'AUBRELLE",
+      "cote_live": 11.0,
+      "cote_reference": 8.5,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1790857635000
+    },
+    {
+      "numPmu": 8,
+      "nom": "SIRLIGHT",
+      "cote_live": 18.0,
+      "cote_reference": 15.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790857635000
+    }
+  ],
+  "hippodrome": "AUTEUIL",
+  "releves": [
+    {
+      "scraped_at": "2026-10-01T14:26:02.469045",
+      "minutes_avant_depart": 5.964238666666666,
+      "cotes": {
+        "1": 3.1,
+        "2": 6.7,
+        "3": 10.0,
+        "4": 5.7,
+        "5": 3.8,
+        "7": 12.0,
+        "8": 18.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-01T14:26:41.709473",
+      "minutes_avant_depart": 5.309682166666667,
+      "cotes": {
+        "1": 3.2,
+        "2": 6.7,
+        "3": 10.0,
+        "4": 5.6,
+        "5": 3.8,
+        "7": 11.0,
+        "8": 18.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-01T14:27:21.868777",
+      "minutes_avant_depart": 4.643014033333333,
+      "cotes": {
+        "1": 3.1,
+        "2": 6.6,
+        "3": 11.0,
+        "4": 5.7,
+        "5": 3.7,
+        "7": 11.0,
+        "8": 18.0
+      }
+    }
+  ]
+}
