@@ -4,71 +4,71 @@
   "reunion": 1,
   "heure_depart": 1790857920000,
   "distance": 3700,
-  "scraped_at": "2026-10-01T14:30:01.865832",
-  "minutes_avant_depart": 2,
+  "scraped_at": "2026-10-01T14:31:21.761049",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "PRIAM DU MESNIL",
-      "cote_live": 3.8,
+      "cote_live": 4.1,
       "cote_reference": 2.9,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790857787000
+      "timestamp_cote": 1790857867000
     },
     {
       "numPmu": 2,
       "nom": "NELSON DU MATHAN",
-      "cote_live": 6.4,
+      "cote_live": 6.6,
       "cote_reference": 9.8,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790857787000
+      "timestamp_cote": 1790857867000
     },
     {
       "numPmu": 3,
       "nom": "THE MUST",
-      "cote_live": 11.0,
+      "cote_live": 12.0,
       "cote_reference": 5.9,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790857787000
+      "timestamp_cote": 1790857867000
     },
     {
       "numPmu": 4,
       "nom": "HURRICK DES OBEAUX",
-      "cote_live": 4.6,
+      "cote_live": 4.8,
       "cote_reference": 6.5,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790857787000
+      "timestamp_cote": 1790857867000
     },
     {
       "numPmu": 5,
       "nom": "TCHEQUE KING",
-      "cote_live": 3.6,
+      "cote_live": 3.2,
       "cote_reference": 5.1,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": true,
-      "timestamp_cote": 1790857787000
+      "timestamp_cote": 1790857867000
     },
     {
       "numPmu": 7,
       "nom": "GRIFFON D'AUBRELLE",
-      "cote_live": 11.0,
+      "cote_live": 9.9,
       "cote_reference": 8.5,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790857787000
+      "timestamp_cote": 1790857867000
     },
     {
       "numPmu": 8,
       "nom": "SIRLIGHT",
-      "cote_live": 19.0,
+      "cote_live": 22.0,
       "cote_reference": 15.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790857787000
+      "timestamp_cote": 1790857867000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -162,6 +162,32 @@
         "5": 3.6,
         "7": 11.0,
         "8": 19.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-01T14:30:41.648106",
+      "minutes_avant_depart": 1.3096713333333334,
+      "cotes": {
+        "1": 3.8,
+        "2": 6.7,
+        "3": 11.0,
+        "4": 4.9,
+        "5": 3.5,
+        "7": 9.4,
+        "8": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-01T14:31:21.761049",
+      "minutes_avant_depart": 0.6430030166666667,
+      "cotes": {
+        "1": 4.1,
+        "2": 6.6,
+        "3": 12.0,
+        "4": 4.8,
+        "5": 3.2,
+        "7": 9.9,
+        "8": 22.0
       }
     }
   ]
