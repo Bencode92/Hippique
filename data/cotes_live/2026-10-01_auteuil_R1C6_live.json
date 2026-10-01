@@ -1,0 +1,136 @@
+{
+  "course": "PRIX MARITTIMO",
+  "numero": 6,
+  "reunion": 1,
+  "heure_depart": 1790866320000,
+  "distance": 3600,
+  "scraped_at": "2026-10-01T16:47:11.611273",
+  "minutes_avant_depart": 5,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "DO IT AGAIN",
+      "cote_live": 6.2,
+      "cote_reference": 6.4,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790866014000
+    },
+    {
+      "numPmu": 2,
+      "nom": "FLYING TRIX",
+      "cote_live": 11.0,
+      "cote_reference": 14.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790866014000
+    },
+    {
+      "numPmu": 3,
+      "nom": "LION BLUE",
+      "cote_live": 19.0,
+      "cote_reference": 22.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790866014000
+    },
+    {
+      "numPmu": 4,
+      "nom": "KARYSMATIKA",
+      "cote_live": 11.0,
+      "cote_reference": 17.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790866014000
+    },
+    {
+      "numPmu": 5,
+      "nom": "MARTIN",
+      "cote_live": 30.0,
+      "cote_reference": 22.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790866014000
+    },
+    {
+      "numPmu": 6,
+      "nom": "TALGAT",
+      "cote_live": 6.3,
+      "cote_reference": 7.5,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790866014000
+    },
+    {
+      "numPmu": 7,
+      "nom": "HUNTER'S LUCK",
+      "cote_live": 21.0,
+      "cote_reference": 28.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790866014000
+    },
+    {
+      "numPmu": 8,
+      "nom": "HERE BE DRAGONS",
+      "cote_live": 8.2,
+      "cote_reference": 5.1,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790866014000
+    },
+    {
+      "numPmu": 9,
+      "nom": "KHALADAM",
+      "cote_live": 14.0,
+      "cote_reference": 8.1,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790866014000
+    },
+    {
+      "numPmu": 10,
+      "nom": "INSTANT FRAGILE",
+      "cote_live": 3.1,
+      "cote_reference": 3.5,
+      "tendance": "+",
+      "favoris": true,
+      "timestamp_cote": 1790866014000
+    }
+  ],
+  "hippodrome": "AUTEUIL",
+  "releves": [
+    {
+      "scraped_at": "2026-10-01T16:46:31.367921",
+      "minutes_avant_depart": 5.480988983333333,
+      "cotes": {
+        "1": 6.2,
+        "2": 11.0,
+        "3": 21.0,
+        "4": 12.0,
+        "5": 30.0,
+        "6": 6.2,
+        "7": 21.0,
+        "8": 8.6,
+        "9": 13.0,
+        "10": 3.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-01T16:47:11.611273",
+      "minutes_avant_depart": 4.8143207,
+      "cotes": {
+        "1": 6.2,
+        "2": 11.0,
+        "3": 19.0,
+        "4": 11.0,
+        "5": 30.0,
+        "6": 6.3,
+        "7": 21.0,
+        "8": 8.2,
+        "9": 14.0,
+        "10": 3.1
+      }
+    }
+  ]
+}
