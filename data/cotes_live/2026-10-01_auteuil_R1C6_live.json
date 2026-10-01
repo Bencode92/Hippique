@@ -4,98 +4,98 @@
   "reunion": 1,
   "heure_depart": 1790866320000,
   "distance": 3600,
-  "scraped_at": "2026-10-01T16:47:11.611273",
-  "minutes_avant_depart": 5,
+  "scraped_at": "2026-10-01T16:49:51.773510",
+  "minutes_avant_depart": 2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "DO IT AGAIN",
-      "cote_live": 6.2,
+      "cote_live": 5.1,
       "cote_reference": 6.4,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790866014000
+      "timestamp_cote": 1790866183000
     },
     {
       "numPmu": 2,
       "nom": "FLYING TRIX",
       "cote_live": 11.0,
       "cote_reference": 14.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790866014000
+      "timestamp_cote": 1790866183000
     },
     {
       "numPmu": 3,
       "nom": "LION BLUE",
-      "cote_live": 19.0,
+      "cote_live": 23.0,
       "cote_reference": 22.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790866014000
+      "timestamp_cote": 1790866183000
     },
     {
       "numPmu": 4,
       "nom": "KARYSMATIKA",
       "cote_live": 11.0,
       "cote_reference": 17.0,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790866014000
+      "timestamp_cote": 1790866183000
     },
     {
       "numPmu": 5,
       "nom": "MARTIN",
-      "cote_live": 30.0,
+      "cote_live": 37.0,
       "cote_reference": 22.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790866014000
+      "timestamp_cote": 1790866183000
     },
     {
       "numPmu": 6,
       "nom": "TALGAT",
-      "cote_live": 6.3,
+      "cote_live": 4.7,
       "cote_reference": 7.5,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790866014000
+      "timestamp_cote": 1790866183000
     },
     {
       "numPmu": 7,
       "nom": "HUNTER'S LUCK",
-      "cote_live": 21.0,
+      "cote_live": 28.0,
       "cote_reference": 28.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790866014000
+      "timestamp_cote": 1790866183000
     },
     {
       "numPmu": 8,
       "nom": "HERE BE DRAGONS",
-      "cote_live": 8.2,
+      "cote_live": 9.5,
       "cote_reference": 5.1,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790866014000
+      "timestamp_cote": 1790866183000
     },
     {
       "numPmu": 9,
       "nom": "KHALADAM",
-      "cote_live": 14.0,
+      "cote_live": 15.0,
       "cote_reference": 8.1,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790866014000
+      "timestamp_cote": 1790866183000
     },
     {
       "numPmu": 10,
       "nom": "INSTANT FRAGILE",
-      "cote_live": 3.1,
+      "cote_live": 3.5,
       "cote_reference": 3.5,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": true,
-      "timestamp_cote": 1790866014000
+      "timestamp_cote": 1790866183000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -130,6 +130,70 @@
         "8": 8.2,
         "9": 14.0,
         "10": 3.1
+      }
+    },
+    {
+      "scraped_at": "2026-10-01T16:47:51.419789",
+      "minutes_avant_depart": 4.147652366666667,
+      "cotes": {
+        "1": 5.9,
+        "2": 10.0,
+        "3": 18.0,
+        "4": 11.0,
+        "5": 31.0,
+        "6": 6.5,
+        "7": 22.0,
+        "8": 8.4,
+        "9": 14.0,
+        "10": 3.1
+      }
+    },
+    {
+      "scraped_at": "2026-10-01T16:48:31.673984",
+      "minutes_avant_depart": 3.4809841333333336,
+      "cotes": {
+        "1": 5.8,
+        "2": 11.0,
+        "3": 19.0,
+        "4": 11.0,
+        "5": 32.0,
+        "6": 6.1,
+        "7": 23.0,
+        "8": 8.5,
+        "9": 15.0,
+        "10": 3.1
+      }
+    },
+    {
+      "scraped_at": "2026-10-01T16:49:12.107501",
+      "minutes_avant_depart": 2.8060281166666665,
+      "cotes": {
+        "1": 5.0,
+        "2": 10.0,
+        "3": 21.0,
+        "4": 11.0,
+        "5": 34.0,
+        "6": 5.9,
+        "7": 25.0,
+        "8": 9.0,
+        "9": 16.0,
+        "10": 3.3
+      }
+    },
+    {
+      "scraped_at": "2026-10-01T16:49:51.773510",
+      "minutes_avant_depart": 2.147647,
+      "cotes": {
+        "1": 5.1,
+        "2": 11.0,
+        "3": 23.0,
+        "4": 11.0,
+        "5": 37.0,
+        "6": 4.7,
+        "7": 28.0,
+        "8": 9.5,
+        "9": 15.0,
+        "10": 3.5
       }
     }
   ]
