@@ -1,0 +1,147 @@
+{
+  "course": "PRIX BENJAMIN BOUTIN",
+  "numero": 7,
+  "reunion": 4,
+  "heure_depart": 1790863140000,
+  "distance": 1900,
+  "scraped_at": "2026-10-01T15:53:51.461656",
+  "minutes_avant_depart": 5,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "RUE DE VOLGA",
+      "cote_live": 6.5,
+      "cote_reference": 5.5,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790862807000
+    },
+    {
+      "numPmu": 2,
+      "nom": "TOSCANE TEMPLE",
+      "cote_live": 8.4,
+      "cote_reference": 15.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790862807000
+    },
+    {
+      "numPmu": 3,
+      "nom": "LHASA",
+      "cote_live": 4.3,
+      "cote_reference": 3.7,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1790862807000
+    },
+    {
+      "numPmu": 4,
+      "nom": "HIGHFIELD HEIRESS",
+      "cote_live": 7.8,
+      "cote_reference": 9.5,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790862807000
+    },
+    {
+      "numPmu": 5,
+      "nom": "JOHNNY JANE",
+      "cote_live": 30.0,
+      "cote_reference": 28.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790862807000
+    },
+    {
+      "numPmu": 6,
+      "nom": "COMTESSE VERA",
+      "cote_live": 5.4,
+      "cote_reference": 5.2,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790862807000
+    },
+    {
+      "numPmu": 7,
+      "nom": "DIAMONDS",
+      "cote_live": 15.0,
+      "cote_reference": 19.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790862807000
+    },
+    {
+      "numPmu": 8,
+      "nom": "SPICHOPE",
+      "cote_live": 33.0,
+      "cote_reference": 20.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790862807000
+    },
+    {
+      "numPmu": 9,
+      "nom": "SOHO VICKY",
+      "cote_live": 7.8,
+      "cote_reference": 9.8,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790862807000
+    },
+    {
+      "numPmu": 10,
+      "nom": "BRAMANTE",
+      "cote_live": 32.0,
+      "cote_reference": 24.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790862807000
+    },
+    {
+      "numPmu": 11,
+      "nom": "PADDY WHITE HEART",
+      "cote_live": 27.0,
+      "cote_reference": 18.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790862807000
+    }
+  ],
+  "hippodrome": "ARGENTAN",
+  "releves": [
+    {
+      "scraped_at": "2026-10-01T15:53:11.292440",
+      "minutes_avant_depart": 5.814462633333333,
+      "cotes": {
+        "1": 6.4,
+        "2": 8.5,
+        "3": 4.3,
+        "4": 7.7,
+        "5": 30.0,
+        "6": 5.3,
+        "7": 14.0,
+        "8": 33.0,
+        "9": 8.2,
+        "10": 32.0,
+        "11": 28.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-01T15:53:51.461656",
+      "minutes_avant_depart": 5.147794366666667,
+      "cotes": {
+        "1": 6.5,
+        "2": 8.4,
+        "3": 4.3,
+        "4": 7.8,
+        "5": 30.0,
+        "6": 5.4,
+        "7": 15.0,
+        "8": 33.0,
+        "9": 7.8,
+        "10": 32.0,
+        "11": 27.0
+      }
+    }
+  ]
+}
