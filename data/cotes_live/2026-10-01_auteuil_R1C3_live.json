@@ -4,98 +4,98 @@
   "reunion": 1,
   "heure_depart": 1790860020000,
   "distance": 3600,
-  "scraped_at": "2026-10-01T15:04:41.706991",
-  "minutes_avant_depart": 2,
+  "scraped_at": "2026-10-01T15:07:21.896923",
+  "minutes_avant_depart": 0,
   "participants": [
     {
       "numPmu": 1,
       "nom": "NEVER RISK",
-      "cote_live": 4.2,
+      "cote_live": 4.7,
       "cote_reference": 7.1,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790859878000
+      "timestamp_cote": 1790860038000
     },
     {
       "numPmu": 2,
       "nom": "HAUT LES COEURS",
-      "cote_live": 3.2,
+      "cote_live": 2.5,
       "cote_reference": 3.0,
       "tendance": "-",
       "favoris": true,
-      "timestamp_cote": 1790859878000
+      "timestamp_cote": 1790860038000
     },
     {
       "numPmu": 3,
       "nom": "CAPTAIN FLAG",
-      "cote_live": 12.0,
+      "cote_live": 15.0,
       "cote_reference": 24.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790859878000
+      "timestamp_cote": 1790860038000
     },
     {
       "numPmu": 4,
       "nom": "BY EXETER",
-      "cote_live": 6.3,
+      "cote_live": 7.1,
       "cote_reference": 7.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790859878000
+      "timestamp_cote": 1790860038000
     },
     {
       "numPmu": 5,
       "nom": "ANOTHER WORLD",
-      "cote_live": 18.0,
+      "cote_live": 12.0,
       "cote_reference": 14.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790859878000
+      "timestamp_cote": 1790860038000
     },
     {
       "numPmu": 6,
       "nom": "WESTERN STARS",
-      "cote_live": 18.0,
+      "cote_live": 23.0,
       "cote_reference": 9.8,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790859878000
+      "timestamp_cote": 1790860038000
     },
     {
       "numPmu": 7,
       "nom": "SAINT SONNET",
-      "cote_live": 17.0,
+      "cote_live": 18.0,
       "cote_reference": 15.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790859878000
+      "timestamp_cote": 1790860038000
     },
     {
       "numPmu": 8,
       "nom": "COEUR EN OR",
-      "cote_live": 38.0,
+      "cote_live": 52.0,
       "cote_reference": 21.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790859878000
+      "timestamp_cote": 1790860038000
     },
     {
       "numPmu": 9,
       "nom": "KETAMINE DE BALME",
-      "cote_live": 14.0,
+      "cote_live": 19.0,
       "cote_reference": 18.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790859878000
+      "timestamp_cote": 1790860038000
     },
     {
       "numPmu": 10,
       "nom": "LES FLOTS BLEUS",
-      "cote_live": 10.0,
+      "cote_live": 12.0,
       "cote_reference": 6.2,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790859878000
+      "timestamp_cote": 1790860038000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -194,6 +194,70 @@
         "8": 38.0,
         "9": 14.0,
         "10": 10.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-01T15:05:21.847634",
+      "minutes_avant_depart": 1.6429057833333334,
+      "cotes": {
+        "1": 4.5,
+        "2": 3.0,
+        "3": 12.0,
+        "4": 6.2,
+        "5": 19.0,
+        "6": 19.0,
+        "7": 16.0,
+        "8": 42.0,
+        "9": 15.0,
+        "10": 10.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-01T15:06:02.268484",
+      "minutes_avant_depart": 0.9679145833333334,
+      "cotes": {
+        "1": 4.8,
+        "2": 2.7,
+        "3": 13.0,
+        "4": 6.4,
+        "5": 18.0,
+        "6": 22.0,
+        "7": 15.0,
+        "8": 46.0,
+        "9": 17.0,
+        "10": 11.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-01T15:06:41.862146",
+      "minutes_avant_depart": 0.30956895,
+      "cotes": {
+        "1": 4.6,
+        "2": 2.6,
+        "3": 14.0,
+        "4": 6.7,
+        "5": 15.0,
+        "6": 22.0,
+        "7": 16.0,
+        "8": 54.0,
+        "9": 19.0,
+        "10": 11.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-01T15:07:21.896923",
+      "minutes_avant_depart": -0.35709921666666666,
+      "cotes": {
+        "1": 4.7,
+        "2": 2.5,
+        "3": 15.0,
+        "4": 7.1,
+        "5": 12.0,
+        "6": 23.0,
+        "7": 18.0,
+        "8": 52.0,
+        "9": 19.0,
+        "10": 12.0
       }
     }
   ]
