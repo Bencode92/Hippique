@@ -1,0 +1,194 @@
+{
+  "course": "PRIX WINGS OF EAGLE",
+  "numero": 6,
+  "reunion": 4,
+  "heure_depart": 1790861100000,
+  "distance": 1900,
+  "scraped_at": "2026-10-01T15:21:05.178623",
+  "minutes_avant_depart": 4,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "MASSA CHOP",
+      "cote_live": 10.0,
+      "cote_reference": 10.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1790860856000
+    },
+    {
+      "numPmu": 2,
+      "nom": "ESTELLA MOBRAY",
+      "cote_live": 3.4,
+      "cote_reference": 5.0,
+      "tendance": "+",
+      "favoris": true,
+      "timestamp_cote": 1790860856000
+    },
+    {
+      "numPmu": 3,
+      "nom": "MEARAS STYLE",
+      "cote_live": 9.2,
+      "cote_reference": 11.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790860856000
+    },
+    {
+      "numPmu": 4,
+      "nom": "READY KING",
+      "cote_live": 8.9,
+      "cote_reference": 9.4,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1790860856000
+    },
+    {
+      "numPmu": 5,
+      "nom": "DAHARIZ",
+      "cote_live": 12.0,
+      "cote_reference": 11.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790860856000
+    },
+    {
+      "numPmu": 6,
+      "nom": "PODIA DAZ",
+      "cote_live": 24.0,
+      "cote_reference": 17.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790860856000
+    },
+    {
+      "numPmu": 7,
+      "nom": "GOLDEN RIVER",
+      "cote_live": 13.0,
+      "cote_reference": 14.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1790860856000
+    },
+    {
+      "numPmu": 8,
+      "nom": "KAHOUNA",
+      "cote_live": 14.0,
+      "cote_reference": 11.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790860856000
+    },
+    {
+      "numPmu": 9,
+      "nom": "HEY MAN",
+      "cote_live": 9.6,
+      "cote_reference": 10.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790860856000
+    },
+    {
+      "numPmu": 10,
+      "nom": "GALILEE DREAM",
+      "cote_live": 16.0,
+      "cote_reference": 11.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790860856000
+    },
+    {
+      "numPmu": 11,
+      "nom": "BOKEN",
+      "cote_live": 22.0,
+      "cote_reference": 13.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790860856000
+    },
+    {
+      "numPmu": 12,
+      "nom": "HEY RISE UP",
+      "cote_live": 16.0,
+      "cote_reference": 12.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1790860856000
+    }
+  ],
+  "hippodrome": "ARGENTAN",
+  "releves": [
+    {
+      "scraped_at": "2026-10-01T15:19:05.601032",
+      "minutes_avant_depart": 5.91269405,
+      "cotes": {
+        "1": 10.0,
+        "2": 3.2,
+        "3": 9.8,
+        "4": 10.0,
+        "5": 12.0,
+        "6": 24.0,
+        "7": 13.0,
+        "8": 14.0,
+        "9": 9.7,
+        "10": 18.0,
+        "11": 19.0,
+        "12": 17.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-01T15:19:44.982029",
+      "minutes_avant_depart": 5.253109116666667,
+      "cotes": {
+        "1": 10.0,
+        "2": 3.3,
+        "3": 9.3,
+        "4": 9.1,
+        "5": 12.0,
+        "6": 25.0,
+        "7": 13.0,
+        "8": 15.0,
+        "9": 10.0,
+        "10": 18.0,
+        "11": 21.0,
+        "12": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-01T15:20:25.070723",
+      "minutes_avant_depart": 4.5864406833333335,
+      "cotes": {
+        "1": 10.0,
+        "2": 3.3,
+        "3": 9.3,
+        "4": 8.7,
+        "5": 12.0,
+        "6": 26.0,
+        "7": 13.0,
+        "8": 15.0,
+        "9": 10.0,
+        "10": 17.0,
+        "11": 22.0,
+        "12": 16.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-01T15:21:05.178623",
+      "minutes_avant_depart": 3.9197724333333333,
+      "cotes": {
+        "1": 10.0,
+        "2": 3.4,
+        "3": 9.2,
+        "4": 8.9,
+        "5": 12.0,
+        "6": 24.0,
+        "7": 13.0,
+        "8": 14.0,
+        "9": 9.6,
+        "10": 16.0,
+        "11": 22.0,
+        "12": 16.0
+      }
+    }
+  ]
+}
