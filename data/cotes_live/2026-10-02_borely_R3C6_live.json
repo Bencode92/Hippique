@@ -4,26 +4,26 @@
   "reunion": 3,
   "heure_depart": 1790944620000,
   "distance": 2300,
-  "scraped_at": "2026-10-02T14:32:09.667410",
-  "minutes_avant_depart": 5,
+  "scraped_at": "2026-10-02T14:34:49.696834",
+  "minutes_avant_depart": 2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "LELOUP VALLEE",
-      "cote_live": 10.0,
+      "cote_live": 12.0,
       "cote_reference": 19.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790944306000
+      "timestamp_cote": 1790944476000
     },
     {
       "numPmu": 2,
       "nom": "LUTIN QUICK",
-      "cote_live": 6.0,
+      "cote_live": 5.9,
       "cote_reference": 5.7,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790944306000
+      "timestamp_cote": 1790944476000
     },
     {
       "numPmu": 3,
@@ -32,16 +32,16 @@
       "cote_reference": 8.9,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790944306000
+      "timestamp_cote": 1790944476000
     },
     {
       "numPmu": 4,
       "nom": "LISTAO",
-      "cote_live": 34.0,
+      "cote_live": 39.0,
       "cote_reference": 17.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790944306000
+      "timestamp_cote": 1790944476000
     },
     {
       "numPmu": 5,
@@ -50,79 +50,79 @@
       "cote_reference": 12.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790944306000
+      "timestamp_cote": 1790944476000
     },
     {
       "numPmu": 6,
       "nom": "LUCIFER",
-      "cote_live": 38.0,
+      "cote_live": 43.0,
       "cote_reference": 20.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790944306000
+      "timestamp_cote": 1790944476000
     },
     {
       "numPmu": 7,
       "nom": "L'ARGENTIN",
-      "cote_live": 1.9,
+      "cote_live": 2.0,
       "cote_reference": 2.9,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1790944306000
+      "timestamp_cote": 1790944476000
     },
     {
       "numPmu": 8,
       "nom": "LIDO DE LOU",
-      "cote_live": 36.0,
+      "cote_live": 45.0,
       "cote_reference": 39.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790944306000
+      "timestamp_cote": 1790944476000
     },
     {
       "numPmu": 9,
       "nom": "L'AS ATOUT",
-      "cote_live": 11.0,
+      "cote_live": 8.3,
       "cote_reference": 7.8,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790944306000
+      "timestamp_cote": 1790944476000
     },
     {
       "numPmu": 10,
       "nom": "LEADER DES APRES",
-      "cote_live": 34.0,
+      "cote_live": 38.0,
       "cote_reference": 29.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790944306000
+      "timestamp_cote": 1790944476000
     },
     {
       "numPmu": 11,
       "nom": "L'AIGLE",
-      "cote_live": 71.0,
+      "cote_live": 69.0,
       "cote_reference": 32.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790944306000
+      "timestamp_cote": 1790944476000
     },
     {
       "numPmu": 12,
       "nom": "LE GRAND ZAMPANO",
-      "cote_live": 29.0,
+      "cote_live": 32.0,
       "cote_reference": 31.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790944306000
+      "timestamp_cote": 1790944476000
     },
     {
       "numPmu": 13,
       "nom": "LUCKY RED",
-      "cote_live": 70.0,
+      "cote_live": 86.0,
       "cote_reference": 41.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790944306000
+      "timestamp_cote": 1790944476000
     }
   ],
   "hippodrome": "BORELY",
@@ -163,6 +163,82 @@
         "11": 71.0,
         "12": 29.0,
         "13": 70.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T14:32:49.741210",
+      "minutes_avant_depart": 4.174556966666667,
+      "cotes": {
+        "1": 10.0,
+        "2": 6.2,
+        "3": 16.0,
+        "4": 35.0,
+        "5": 19.0,
+        "6": 39.0,
+        "7": 1.9,
+        "8": 39.0,
+        "9": 10.0,
+        "10": 35.0,
+        "11": 70.0,
+        "12": 30.0,
+        "13": 70.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T14:33:30.038945",
+      "minutes_avant_depart": 3.5034455500000004,
+      "cotes": {
+        "1": 10.0,
+        "2": 6.2,
+        "3": 15.0,
+        "4": 37.0,
+        "5": 19.0,
+        "6": 42.0,
+        "7": 1.9,
+        "8": 42.0,
+        "9": 9.9,
+        "10": 36.0,
+        "11": 73.0,
+        "12": 31.0,
+        "13": 73.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T14:34:09.752027",
+      "minutes_avant_depart": 2.84121905,
+      "cotes": {
+        "1": 11.0,
+        "2": 6.0,
+        "3": 15.0,
+        "4": 37.0,
+        "5": 19.0,
+        "6": 40.0,
+        "7": 1.9,
+        "8": 45.0,
+        "9": 9.8,
+        "10": 38.0,
+        "11": 66.0,
+        "12": 33.0,
+        "13": 79.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T14:34:49.696834",
+      "minutes_avant_depart": 2.1745501666666667,
+      "cotes": {
+        "1": 12.0,
+        "2": 5.9,
+        "3": 15.0,
+        "4": 39.0,
+        "5": 19.0,
+        "6": 43.0,
+        "7": 2.0,
+        "8": 45.0,
+        "9": 8.3,
+        "10": 38.0,
+        "11": 69.0,
+        "12": 32.0,
+        "13": 86.0
       }
     }
   ]
