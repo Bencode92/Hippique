@@ -4,80 +4,80 @@
   "reunion": 5,
   "heure_depart": 1790963400000,
   "distance": 2400,
-  "scraped_at": "2026-10-02T19:46:08.884345",
-  "minutes_avant_depart": 4,
+  "scraped_at": "2026-10-02T19:48:49.170814",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "HOWABOUTHATNOW",
-      "cote_live": 6.1,
+      "cote_live": 7.1,
       "cote_reference": 9.8,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790963151000
+      "timestamp_cote": 1790963315000
     },
     {
       "numPmu": 2,
       "nom": "JAGDA",
-      "cote_live": 9.3,
+      "cote_live": 6.1,
       "cote_reference": 5.4,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790963151000
+      "timestamp_cote": 1790963315000
     },
     {
       "numPmu": 3,
       "nom": "GWO KA",
-      "cote_live": 4.2,
+      "cote_live": 4.6,
       "cote_reference": 4.2,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790963151000
+      "timestamp_cote": 1790963315000
     },
     {
       "numPmu": 4,
       "nom": "FREEZE",
-      "cote_live": 7.7,
+      "cote_live": 7.4,
       "cote_reference": 9.1,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790963151000
+      "timestamp_cote": 1790963315000
     },
     {
       "numPmu": 5,
       "nom": "CAPMAN FAL",
-      "cote_live": 8.6,
+      "cote_live": 8.0,
       "cote_reference": 10.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790963151000
+      "timestamp_cote": 1790963315000
     },
     {
       "numPmu": 6,
       "nom": "L'AGORA GAME",
-      "cote_live": 3.5,
+      "cote_live": 3.9,
       "cote_reference": 5.2,
-      "tendance": "+",
+      "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1790963151000
+      "timestamp_cote": 1790963315000
     },
     {
       "numPmu": 7,
       "nom": "KARMINA BELLA",
-      "cote_live": 20.0,
+      "cote_live": 22.0,
       "cote_reference": 11.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790963151000
+      "timestamp_cote": 1790963315000
     },
     {
       "numPmu": 8,
       "nom": "ROLEXXA",
-      "cote_live": 19.0,
+      "cote_live": 17.0,
       "cote_reference": 7.8,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790963151000
+      "timestamp_cote": 1790963315000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -136,6 +136,62 @@
         "6": 3.5,
         "7": 20.0,
         "8": 19.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T19:46:48.907424",
+      "minutes_avant_depart": 3.18827795,
+      "cotes": {
+        "1": 6.2,
+        "2": 8.6,
+        "3": 4.2,
+        "4": 7.9,
+        "5": 8.3,
+        "6": 3.6,
+        "7": 20.0,
+        "8": 19.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T19:47:29.054159",
+      "minutes_avant_depart": 2.5216094,
+      "cotes": {
+        "1": 6.8,
+        "2": 5.9,
+        "3": 4.4,
+        "4": 8.4,
+        "5": 8.8,
+        "6": 3.8,
+        "7": 21.0,
+        "8": 17.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T19:48:09.058161",
+      "minutes_avant_depart": 1.8549409,
+      "cotes": {
+        "1": 6.9,
+        "2": 6.3,
+        "3": 4.2,
+        "4": 7.8,
+        "5": 8.8,
+        "6": 3.9,
+        "7": 20.0,
+        "8": 17.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T19:48:49.170814",
+      "minutes_avant_depart": 1.1838897499999999,
+      "cotes": {
+        "1": 7.1,
+        "2": 6.1,
+        "3": 4.6,
+        "4": 7.4,
+        "5": 8.0,
+        "6": 3.9,
+        "7": 22.0,
+        "8": 17.0
       }
     }
   ]
