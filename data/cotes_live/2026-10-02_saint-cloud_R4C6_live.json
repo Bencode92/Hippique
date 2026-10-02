@@ -4,98 +4,98 @@
   "reunion": 4,
   "heure_depart": 1790951940000,
   "distance": 2000,
-  "scraped_at": "2026-10-02T16:38:40.223287",
-  "minutes_avant_depart": 0,
+  "scraped_at": "2026-10-02T16:41:19.894041",
+  "minutes_avant_depart": -2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ZGHARTA",
-      "cote_live": 17.0,
+      "cote_live": 14.0,
       "cote_reference": 16.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790951916000
+      "timestamp_cote": 1790951990000
     },
     {
       "numPmu": 2,
       "nom": "DIAMOND EXCHANGE",
-      "cote_live": 34.0,
+      "cote_live": 40.0,
       "cote_reference": 10.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790951916000
+      "timestamp_cote": 1790951990000
     },
     {
       "numPmu": 3,
       "nom": "INDALIMOS",
-      "cote_live": 9.9,
+      "cote_live": 10.0,
       "cote_reference": 8.1,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790951916000
+      "timestamp_cote": 1790951990000
     },
     {
       "numPmu": 4,
       "nom": "LIGHT THE GHOST",
-      "cote_live": 4.7,
+      "cote_live": 5.2,
       "cote_reference": 5.4,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790951916000
+      "timestamp_cote": 1790951990000
     },
     {
       "numPmu": 5,
       "nom": "GRECIAN COMET",
-      "cote_live": 14.0,
+      "cote_live": 13.0,
       "cote_reference": 10.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790951916000
+      "timestamp_cote": 1790951990000
     },
     {
       "numPmu": 6,
       "nom": "MAHIYA",
-      "cote_live": 16.0,
+      "cote_live": 18.0,
       "cote_reference": 8.8,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790951916000
+      "timestamp_cote": 1790951990000
     },
     {
       "numPmu": 7,
       "nom": "REGAL CHARM",
-      "cote_live": 22.0,
+      "cote_live": 15.0,
       "cote_reference": 16.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790951916000
+      "timestamp_cote": 1790951990000
     },
     {
       "numPmu": 8,
       "nom": "RHAPSODY",
-      "cote_live": 4.0,
+      "cote_live": 3.3,
       "cote_reference": 5.1,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1790951916000
+      "favoris": true,
+      "timestamp_cote": 1790951990000
     },
     {
       "numPmu": 9,
       "nom": "AZANIYA",
-      "cote_live": 3.8,
+      "cote_live": 4.9,
       "cote_reference": 9.4,
-      "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1790951916000
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790951990000
     },
     {
       "numPmu": 11,
       "nom": "MISS JUSTICE",
-      "cote_live": 17.0,
+      "cote_live": 18.0,
       "cote_reference": 9.5,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790951916000
+      "timestamp_cote": 1790951990000
     }
   ],
   "hippodrome": "SAINT-CLOUD",
@@ -242,6 +242,70 @@
         "8": 4.0,
         "9": 3.8,
         "11": 17.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T16:39:19.871096",
+      "minutes_avant_depart": -0.32741583333333335,
+      "cotes": {
+        "1": 19.0,
+        "2": 39.0,
+        "3": 10.0,
+        "4": 5.0,
+        "5": 15.0,
+        "6": 18.0,
+        "7": 21.0,
+        "8": 3.6,
+        "9": 3.8,
+        "11": 18.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T16:40:00.296036",
+      "minutes_avant_depart": -1.0028444333333333,
+      "cotes": {
+        "1": 14.0,
+        "2": 40.0,
+        "3": 10.0,
+        "4": 5.2,
+        "5": 13.0,
+        "6": 18.0,
+        "7": 15.0,
+        "8": 3.3,
+        "9": 4.9,
+        "11": 18.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T16:40:39.994034",
+      "minutes_avant_depart": -1.6607527333333332,
+      "cotes": {
+        "1": 14.0,
+        "2": 40.0,
+        "3": 10.0,
+        "4": 5.2,
+        "5": 13.0,
+        "6": 18.0,
+        "7": 15.0,
+        "8": 3.3,
+        "9": 4.9,
+        "11": 18.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T16:41:19.894041",
+      "minutes_avant_depart": -2.3274217333333334,
+      "cotes": {
+        "1": 14.0,
+        "2": 40.0,
+        "3": 10.0,
+        "4": 5.2,
+        "5": 13.0,
+        "6": 18.0,
+        "7": 15.0,
+        "8": 3.3,
+        "9": 4.9,
+        "11": 18.0
       }
     }
   ]
