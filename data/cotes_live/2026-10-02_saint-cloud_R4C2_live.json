@@ -4,26 +4,26 @@
   "reunion": 4,
   "heure_depart": 1790943600000,
   "distance": 2000,
-  "scraped_at": "2026-10-02T14:16:09.907714",
-  "minutes_avant_depart": 4,
+  "scraped_at": "2026-10-02T14:18:49.739396",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "SPAREO",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 9.4,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790943344000
+      "timestamp_cote": 1790943521000
     },
     {
       "numPmu": 2,
       "nom": "NEUF DE FAUST",
-      "cote_live": 6.1,
+      "cote_live": 7.4,
       "cote_reference": 6.8,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790943344000
+      "timestamp_cote": 1790943521000
     },
     {
       "numPmu": 3,
@@ -32,25 +32,25 @@
       "cote_reference": 20.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790943344000
+      "timestamp_cote": 1790943521000
     },
     {
       "numPmu": 4,
       "nom": "ZAHIM",
-      "cote_live": 21.0,
+      "cote_live": 30.0,
       "cote_reference": 27.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790943344000
+      "timestamp_cote": 1790943521000
     },
     {
       "numPmu": 5,
       "nom": "ALMOSHAHAR",
-      "cote_live": 1.7,
+      "cote_live": 1.6,
       "cote_reference": 2.3,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1790943344000
+      "timestamp_cote": 1790943521000
     },
     {
       "numPmu": 6,
@@ -59,34 +59,34 @@
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790943344000
+      "timestamp_cote": 1790943521000
     },
     {
       "numPmu": 7,
       "nom": "ELJAS DU BIENN",
-      "cote_live": 14.0,
+      "cote_live": 12.0,
       "cote_reference": 4.6,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790943344000
+      "timestamp_cote": 1790943521000
     },
     {
       "numPmu": 8,
       "nom": "JOUHARI GRINE",
-      "cote_live": 28.0,
+      "cote_live": 38.0,
       "cote_reference": 19.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790943344000
+      "timestamp_cote": 1790943521000
     },
     {
       "numPmu": 9,
       "nom": "MADISON BOY",
-      "cote_live": 38.0,
+      "cote_live": 50.0,
       "cote_reference": 41.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790943344000
+      "timestamp_cote": 1790943521000
     }
   ],
   "hippodrome": "SAINT-CLOUD",
@@ -149,6 +149,66 @@
         "7": 14.0,
         "8": 28.0,
         "9": 38.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T14:16:50.046906",
+      "minutes_avant_depart": 3.1700198166666667,
+      "cotes": {
+        "1": 13.0,
+        "2": 5.8,
+        "3": 14.0,
+        "4": 22.0,
+        "5": 1.8,
+        "6": 12.0,
+        "7": 12.0,
+        "8": 31.0,
+        "9": 39.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T14:17:29.857897",
+      "minutes_avant_depart": 2.5079414166666667,
+      "cotes": {
+        "1": 14.0,
+        "2": 6.4,
+        "3": 15.0,
+        "4": 24.0,
+        "5": 1.6,
+        "6": 12.0,
+        "7": 13.0,
+        "8": 32.0,
+        "9": 44.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T14:18:09.761034",
+      "minutes_avant_depart": 1.8412723166666667,
+      "cotes": {
+        "1": 16.0,
+        "2": 7.8,
+        "3": 13.0,
+        "4": 30.0,
+        "5": 1.5,
+        "6": 12.0,
+        "7": 13.0,
+        "8": 39.0,
+        "9": 52.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T14:18:49.739396",
+      "minutes_avant_depart": 1.1746035166666668,
+      "cotes": {
+        "1": 14.0,
+        "2": 7.4,
+        "3": 13.0,
+        "4": 30.0,
+        "5": 1.6,
+        "6": 12.0,
+        "7": 12.0,
+        "8": 38.0,
+        "9": 50.0
       }
     }
   ]
