@@ -1,0 +1,194 @@
+{
+  "course": "PRIX YUMPAL",
+  "numero": 3,
+  "reunion": 5,
+  "heure_depart": 1790955000000,
+  "distance": 2150,
+  "scraped_at": "2026-10-02T17:26:40.334089",
+  "minutes_avant_depart": 3,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "GLAM LIGHT",
+      "cote_live": 6.0,
+      "cote_reference": 6.5,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790954796000
+    },
+    {
+      "numPmu": 2,
+      "nom": "COUNTRY CLUB",
+      "cote_live": 6.9,
+      "cote_reference": 8.8,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790954796000
+    },
+    {
+      "numPmu": 3,
+      "nom": "HORDEARII",
+      "cote_live": 36.0,
+      "cote_reference": 46.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790954796000
+    },
+    {
+      "numPmu": 4,
+      "nom": "BIBI DU MOULIN",
+      "cote_live": 23.0,
+      "cote_reference": 5.3,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790954796000
+    },
+    {
+      "numPmu": 5,
+      "nom": "DELIRE D'AMOUR",
+      "cote_live": 15.0,
+      "cote_reference": 9.7,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790954796000
+    },
+    {
+      "numPmu": 6,
+      "nom": "MARANELLO",
+      "cote_live": 6.8,
+      "cote_reference": 7.4,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790954796000
+    },
+    {
+      "numPmu": 7,
+      "nom": "CIRCION CHOP",
+      "cote_live": 14.0,
+      "cote_reference": 19.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790954796000
+    },
+    {
+      "numPmu": 8,
+      "nom": "MIXED FORCE",
+      "cote_live": 3.9,
+      "cote_reference": 7.4,
+      "tendance": "+",
+      "favoris": true,
+      "timestamp_cote": 1790954796000
+    },
+    {
+      "numPmu": 9,
+      "nom": "PORTOVECCHIO",
+      "cote_live": 10.0,
+      "cote_reference": 8.5,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790954796000
+    },
+    {
+      "numPmu": 10,
+      "nom": "L'ARMENIENNE",
+      "cote_live": 23.0,
+      "cote_reference": 24.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790954796000
+    },
+    {
+      "numPmu": 11,
+      "nom": "HATEDIA FAL",
+      "cote_live": 21.0,
+      "cote_reference": 22.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790954796000
+    },
+    {
+      "numPmu": 12,
+      "nom": "MARIZONA",
+      "cote_live": 32.0,
+      "cote_reference": 27.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1790954796000
+    }
+  ],
+  "hippodrome": "LYON LA SOIE",
+  "releves": [
+    {
+      "scraped_at": "2026-10-02T17:24:39.877633",
+      "minutes_avant_depart": 5.3390880166666665,
+      "cotes": {
+        "1": 5.1,
+        "2": 8.7,
+        "3": 48.0,
+        "4": 21.0,
+        "5": 14.0,
+        "6": 6.8,
+        "7": 15.0,
+        "8": 3.9,
+        "9": 11.0,
+        "10": 18.0,
+        "11": 19.0,
+        "12": 28.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T17:25:20.022843",
+      "minutes_avant_depart": 4.672419083333334,
+      "cotes": {
+        "1": 5.5,
+        "2": 6.6,
+        "3": 50.0,
+        "4": 21.0,
+        "5": 14.0,
+        "6": 7.2,
+        "7": 15.0,
+        "8": 4.1,
+        "9": 10.0,
+        "10": 20.0,
+        "11": 21.0,
+        "12": 31.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T17:26:00.043658",
+      "minutes_avant_depart": 4.00575,
+      "cotes": {
+        "1": 6.0,
+        "2": 6.7,
+        "3": 40.0,
+        "4": 23.0,
+        "5": 16.0,
+        "6": 6.8,
+        "7": 15.0,
+        "8": 3.8,
+        "9": 10.0,
+        "10": 22.0,
+        "11": 22.0,
+        "12": 31.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T17:26:40.334089",
+      "minutes_avant_depart": 3.334423833333333,
+      "cotes": {
+        "1": 6.0,
+        "2": 6.9,
+        "3": 36.0,
+        "4": 23.0,
+        "5": 15.0,
+        "6": 6.8,
+        "7": 14.0,
+        "8": 3.9,
+        "9": 10.0,
+        "10": 23.0,
+        "11": 21.0,
+        "12": 32.0
+      }
+    }
+  ]
+}
