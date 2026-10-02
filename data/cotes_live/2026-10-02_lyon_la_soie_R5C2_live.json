@@ -4,80 +4,80 @@
   "reunion": 5,
   "heure_depart": 1790952900000,
   "distance": 1800,
-  "scraped_at": "2026-10-02T16:54:40.154200",
-  "minutes_avant_depart": 0,
+  "scraped_at": "2026-10-02T16:57:19.932693",
+  "minutes_avant_depart": -2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ILIANNABELLA",
-      "cote_live": 2.0,
+      "cote_live": 2.1,
       "cote_reference": 4.4,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1790952873000
+      "timestamp_cote": 1790952940000
     },
     {
       "numPmu": 2,
       "nom": "CONSPIRATOR",
-      "cote_live": 7.6,
+      "cote_live": 4.2,
       "cote_reference": 4.4,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790952873000
+      "timestamp_cote": 1790952940000
     },
     {
       "numPmu": 3,
       "nom": "PERSIANA",
-      "cote_live": 9.0,
+      "cote_live": 11.0,
       "cote_reference": 10.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790952873000
+      "timestamp_cote": 1790952940000
     },
     {
       "numPmu": 4,
       "nom": "FANZI CHOP",
-      "cote_live": 9.4,
+      "cote_live": 9.9,
       "cote_reference": 7.0,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790952873000
+      "timestamp_cote": 1790952940000
     },
     {
       "numPmu": 5,
       "nom": "ARTOA",
-      "cote_live": 30.0,
+      "cote_live": 27.0,
       "cote_reference": 12.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790952873000
+      "timestamp_cote": 1790952940000
     },
     {
       "numPmu": 6,
       "nom": "FORGOTTEN SON",
-      "cote_live": 6.7,
+      "cote_live": 8.0,
       "cote_reference": 6.8,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790952873000
+      "timestamp_cote": 1790952940000
     },
     {
       "numPmu": 7,
       "nom": "INVENTER",
-      "cote_live": 15.0,
+      "cote_live": 16.0,
       "cote_reference": 8.1,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790952873000
+      "timestamp_cote": 1790952940000
     },
     {
       "numPmu": 8,
       "nom": "OCRA",
-      "cote_live": 24.0,
+      "cote_live": 32.0,
       "cote_reference": 10.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790952873000
+      "timestamp_cote": 1790952940000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -206,6 +206,62 @@
         "6": 6.7,
         "7": 15.0,
         "8": 24.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T16:55:19.873534",
+      "minutes_avant_depart": -0.32747205,
+      "cotes": {
+        "1": 2.0,
+        "2": 6.2,
+        "3": 9.7,
+        "4": 9.4,
+        "5": 31.0,
+        "6": 7.4,
+        "7": 13.0,
+        "8": 27.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T16:55:59.910352",
+      "minutes_avant_depart": -0.9941409833333333,
+      "cotes": {
+        "1": 2.1,
+        "2": 4.2,
+        "3": 11.0,
+        "4": 9.9,
+        "5": 27.0,
+        "6": 8.0,
+        "7": 16.0,
+        "8": 32.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T16:56:40.516578",
+      "minutes_avant_depart": -1.6689627166666667,
+      "cotes": {
+        "1": 2.1,
+        "2": 4.2,
+        "3": 11.0,
+        "4": 9.9,
+        "5": 27.0,
+        "6": 8.0,
+        "7": 16.0,
+        "8": 32.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T16:57:19.932693",
+      "minutes_avant_depart": -2.3274804500000004,
+      "cotes": {
+        "1": 2.1,
+        "2": 4.2,
+        "3": 11.0,
+        "4": 9.9,
+        "5": 27.0,
+        "6": 8.0,
+        "7": 16.0,
+        "8": 32.0
       }
     }
   ]
