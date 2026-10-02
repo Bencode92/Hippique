@@ -1,0 +1,169 @@
+{
+  "course": "PRIX DES AZALEES",
+  "numero": 6,
+  "reunion": 3,
+  "heure_depart": 1790944620000,
+  "distance": 2300,
+  "scraped_at": "2026-10-02T14:32:09.667410",
+  "minutes_avant_depart": 5,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "LELOUP VALLEE",
+      "cote_live": 10.0,
+      "cote_reference": 19.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790944306000
+    },
+    {
+      "numPmu": 2,
+      "nom": "LUTIN QUICK",
+      "cote_live": 6.0,
+      "cote_reference": 5.7,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1790944306000
+    },
+    {
+      "numPmu": 3,
+      "nom": "LEMON JULRY",
+      "cote_live": 15.0,
+      "cote_reference": 8.9,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790944306000
+    },
+    {
+      "numPmu": 4,
+      "nom": "LISTAO",
+      "cote_live": 34.0,
+      "cote_reference": 17.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790944306000
+    },
+    {
+      "numPmu": 5,
+      "nom": "LUXOR D'ECAJEUL",
+      "cote_live": 19.0,
+      "cote_reference": 12.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790944306000
+    },
+    {
+      "numPmu": 6,
+      "nom": "LUCIFER",
+      "cote_live": 38.0,
+      "cote_reference": 20.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790944306000
+    },
+    {
+      "numPmu": 7,
+      "nom": "L'ARGENTIN",
+      "cote_live": 1.9,
+      "cote_reference": 2.9,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1790944306000
+    },
+    {
+      "numPmu": 8,
+      "nom": "LIDO DE LOU",
+      "cote_live": 36.0,
+      "cote_reference": 39.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790944306000
+    },
+    {
+      "numPmu": 9,
+      "nom": "L'AS ATOUT",
+      "cote_live": 11.0,
+      "cote_reference": 7.8,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790944306000
+    },
+    {
+      "numPmu": 10,
+      "nom": "LEADER DES APRES",
+      "cote_live": 34.0,
+      "cote_reference": 29.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790944306000
+    },
+    {
+      "numPmu": 11,
+      "nom": "L'AIGLE",
+      "cote_live": 71.0,
+      "cote_reference": 32.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790944306000
+    },
+    {
+      "numPmu": 12,
+      "nom": "LE GRAND ZAMPANO",
+      "cote_live": 29.0,
+      "cote_reference": 31.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790944306000
+    },
+    {
+      "numPmu": 13,
+      "nom": "LUCKY RED",
+      "cote_live": 70.0,
+      "cote_reference": 41.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790944306000
+    }
+  ],
+  "hippodrome": "BORELY",
+  "releves": [
+    {
+      "scraped_at": "2026-10-02T14:31:29.866747",
+      "minutes_avant_depart": 5.507894383333333,
+      "cotes": {
+        "1": 10.0,
+        "2": 5.5,
+        "3": 14.0,
+        "4": 32.0,
+        "5": 17.0,
+        "6": 43.0,
+        "7": 2.1,
+        "8": 36.0,
+        "9": 11.0,
+        "10": 30.0,
+        "11": 63.0,
+        "12": 27.0,
+        "13": 65.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T14:32:09.667410",
+      "minutes_avant_depart": 4.841225883333333,
+      "cotes": {
+        "1": 10.0,
+        "2": 6.0,
+        "3": 15.0,
+        "4": 34.0,
+        "5": 19.0,
+        "6": 38.0,
+        "7": 1.9,
+        "8": 36.0,
+        "9": 11.0,
+        "10": 34.0,
+        "11": 71.0,
+        "12": 29.0,
+        "13": 70.0
+      }
+    }
+  ]
+}
