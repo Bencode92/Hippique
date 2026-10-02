@@ -1,0 +1,100 @@
+{
+  "course": "PRIX SOYA",
+  "numero": 3,
+  "reunion": 4,
+  "heure_depart": 1790945640000,
+  "distance": 1400,
+  "scraped_at": "2026-10-02T14:48:09.844903",
+  "minutes_avant_depart": 6,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "AZAMRA",
+      "cote_live": 2.9,
+      "cote_reference": 5.1,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1790945270000
+    },
+    {
+      "numPmu": 2,
+      "nom": "LOVELY WARRIOR",
+      "cote_live": 9.0,
+      "cote_reference": 7.5,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790945270000
+    },
+    {
+      "numPmu": 3,
+      "nom": "OZARK JAMES",
+      "cote_live": 10.0,
+      "cote_reference": 8.7,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790945270000
+    },
+    {
+      "numPmu": 4,
+      "nom": "SHABAZI",
+      "cote_live": 3.6,
+      "cote_reference": 2.6,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1790945270000
+    },
+    {
+      "numPmu": 5,
+      "nom": "QUEEN LAGERTHA",
+      "cote_live": 15.0,
+      "cote_reference": 21.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1790945270000
+    },
+    {
+      "numPmu": 6,
+      "nom": "RUN LIWAY",
+      "cote_live": 21.0,
+      "cote_reference": 18.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790945270000
+    },
+    {
+      "numPmu": 7,
+      "nom": "ETOILE D ARMOR",
+      "cote_live": 7.8,
+      "cote_reference": 8.4,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790945270000
+    },
+    {
+      "numPmu": 8,
+      "nom": "BHASKARI",
+      "cote_live": 13.0,
+      "cote_reference": 10.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790945270000
+    }
+  ],
+  "hippodrome": "SAINT-CLOUD",
+  "releves": [
+    {
+      "scraped_at": "2026-10-02T14:48:09.844903",
+      "minutes_avant_depart": 5.84117265,
+      "cotes": {
+        "1": 2.9,
+        "2": 9.0,
+        "3": 10.0,
+        "4": 3.6,
+        "5": 15.0,
+        "6": 21.0,
+        "7": 7.8,
+        "8": 13.0
+      }
+    }
+  ]
+}
