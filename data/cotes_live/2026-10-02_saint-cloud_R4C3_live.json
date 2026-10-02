@@ -4,80 +4,80 @@
   "reunion": 4,
   "heure_depart": 1790945640000,
   "distance": 1400,
-  "scraped_at": "2026-10-02T14:48:09.844903",
-  "minutes_avant_depart": 6,
+  "scraped_at": "2026-10-02T14:50:49.759184",
+  "minutes_avant_depart": 3,
   "participants": [
     {
       "numPmu": 1,
       "nom": "AZAMRA",
-      "cote_live": 2.9,
+      "cote_live": 4.2,
       "cote_reference": 5.1,
-      "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1790945270000
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1790945424000
     },
     {
       "numPmu": 2,
       "nom": "LOVELY WARRIOR",
-      "cote_live": 9.0,
+      "cote_live": 6.2,
       "cote_reference": 7.5,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790945270000
+      "timestamp_cote": 1790945424000
     },
     {
       "numPmu": 3,
       "nom": "OZARK JAMES",
-      "cote_live": 10.0,
+      "cote_live": 17.0,
       "cote_reference": 8.7,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790945270000
+      "timestamp_cote": 1790945424000
     },
     {
       "numPmu": 4,
       "nom": "SHABAZI",
-      "cote_live": 3.6,
+      "cote_live": 2.7,
       "cote_reference": 2.6,
-      "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1790945270000
+      "tendance": "+",
+      "favoris": true,
+      "timestamp_cote": 1790945424000
     },
     {
       "numPmu": 5,
       "nom": "QUEEN LAGERTHA",
-      "cote_live": 15.0,
+      "cote_live": 21.0,
       "cote_reference": 21.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790945270000
+      "timestamp_cote": 1790945424000
     },
     {
       "numPmu": 6,
       "nom": "RUN LIWAY",
-      "cote_live": 21.0,
+      "cote_live": 30.0,
       "cote_reference": 18.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790945270000
+      "timestamp_cote": 1790945424000
     },
     {
       "numPmu": 7,
       "nom": "ETOILE D ARMOR",
-      "cote_live": 7.8,
+      "cote_live": 11.0,
       "cote_reference": 8.4,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790945270000
+      "timestamp_cote": 1790945424000
     },
     {
       "numPmu": 8,
       "nom": "BHASKARI",
-      "cote_live": 13.0,
+      "cote_live": 6.5,
       "cote_reference": 10.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790945270000
+      "timestamp_cote": 1790945424000
     }
   ],
   "hippodrome": "SAINT-CLOUD",
@@ -94,6 +94,62 @@
         "6": 21.0,
         "7": 7.8,
         "8": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T14:48:49.751617",
+      "minutes_avant_depart": 5.174503483333334,
+      "cotes": {
+        "1": 2.6,
+        "2": 9.0,
+        "3": 11.0,
+        "4": 3.8,
+        "5": 15.0,
+        "6": 22.0,
+        "7": 8.0,
+        "8": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T14:49:29.700735",
+      "minutes_avant_depart": 4.50783395,
+      "cotes": {
+        "1": 2.7,
+        "2": 9.4,
+        "3": 12.0,
+        "4": 3.8,
+        "5": 14.0,
+        "6": 24.0,
+        "7": 7.4,
+        "8": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T14:50:10.083134",
+      "minutes_avant_depart": 3.8364666499999998,
+      "cotes": {
+        "1": 3.9,
+        "2": 11.0,
+        "3": 16.0,
+        "4": 2.6,
+        "5": 19.0,
+        "6": 28.0,
+        "7": 10.0,
+        "8": 6.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T14:50:49.759184",
+      "minutes_avant_depart": 3.174494316666667,
+      "cotes": {
+        "1": 4.2,
+        "2": 6.2,
+        "3": 17.0,
+        "4": 2.7,
+        "5": 21.0,
+        "6": 30.0,
+        "7": 11.0,
+        "8": 6.5
       }
     }
   ]
