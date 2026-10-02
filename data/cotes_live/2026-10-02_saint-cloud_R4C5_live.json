@@ -4,7 +4,7 @@
   "reunion": 4,
   "heure_depart": 1790949840000,
   "distance": 1400,
-  "scraped_at": "2026-10-02T16:02:49.690013",
+  "scraped_at": "2026-10-02T16:03:29.977615",
   "minutes_avant_depart": 1,
   "participants": [
     {
@@ -14,61 +14,61 @@
       "cote_reference": 3.0,
       "tendance": "+",
       "favoris": true,
-      "timestamp_cote": 1790949761000
+      "timestamp_cote": 1790949801000
     },
     {
       "numPmu": 2,
       "nom": "CHARLY",
       "cote_live": 14.0,
       "cote_reference": 5.6,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790949761000
+      "timestamp_cote": 1790949801000
     },
     {
       "numPmu": 3,
       "nom": "GO MAN",
-      "cote_live": 5.5,
+      "cote_live": 5.4,
       "cote_reference": 9.9,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790949761000
+      "timestamp_cote": 1790949801000
     },
     {
       "numPmu": 4,
       "nom": "IMPERIOR",
-      "cote_live": 26.0,
+      "cote_live": 27.0,
       "cote_reference": 16.0,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790949761000
+      "timestamp_cote": 1790949801000
     },
     {
       "numPmu": 5,
       "nom": "VIVA LA SKIDS",
-      "cote_live": 31.0,
+      "cote_live": 34.0,
       "cote_reference": 12.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1790949761000
+      "timestamp_cote": 1790949801000
     },
     {
       "numPmu": 6,
       "nom": "NO TURNING BACK",
       "cote_live": 4.3,
       "cote_reference": 5.4,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1790949761000
+      "timestamp_cote": 1790949801000
     },
     {
       "numPmu": 7,
       "nom": "NO TUNE",
-      "cote_live": 4.6,
+      "cote_live": 4.5,
       "cote_reference": 4.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1790949761000
+      "timestamp_cote": 1790949801000
     }
   ],
   "hippodrome": "SAINT-CLOUD",
@@ -175,6 +175,19 @@
         "5": 31.0,
         "6": 4.3,
         "7": 4.6
+      }
+    },
+    {
+      "scraped_at": "2026-10-02T16:03:29.977615",
+      "minutes_avant_depart": 0.5029598833333334,
+      "cotes": {
+        "1": 2.7,
+        "2": 14.0,
+        "3": 5.4,
+        "4": 27.0,
+        "5": 34.0,
+        "6": 4.3,
+        "7": 4.5
       }
     }
   ]
