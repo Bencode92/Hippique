@@ -1,0 +1,100 @@
+{
+  "course": "PRIX EXPOSITION PAUL TAVERNIER",
+  "numero": 7,
+  "reunion": 2,
+  "heure_depart": 1791028740000,
+  "distance": 3850,
+  "scraped_at": "2026-10-03T13:53:22.929503",
+  "minutes_avant_depart": 6,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "FORTUNA",
+      "cote_live": 14.0,
+      "cote_reference": 13.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1791028388000
+    },
+    {
+      "numPmu": 2,
+      "nom": "SOBEST",
+      "cote_live": 9.0,
+      "cote_reference": 11.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1791028388000
+    },
+    {
+      "numPmu": 3,
+      "nom": "LADY ANGE WIN",
+      "cote_live": 7.9,
+      "cote_reference": 8.4,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1791028388000
+    },
+    {
+      "numPmu": 4,
+      "nom": "HARTHUR DES OBEAUX",
+      "cote_live": 6.9,
+      "cote_reference": 7.4,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1791028388000
+    },
+    {
+      "numPmu": 5,
+      "nom": "MON PETIT PRINCE",
+      "cote_live": 4.0,
+      "cote_reference": 4.6,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1791028388000
+    },
+    {
+      "numPmu": 6,
+      "nom": "FILIPPINO",
+      "cote_live": 3.8,
+      "cote_reference": 3.7,
+      "tendance": "-",
+      "favoris": true,
+      "timestamp_cote": 1791028388000
+    },
+    {
+      "numPmu": 7,
+      "nom": "LE ROI LOTH",
+      "cote_live": 15.0,
+      "cote_reference": 9.7,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1791028388000
+    },
+    {
+      "numPmu": 9,
+      "nom": "L'ENFANT JESUS",
+      "cote_live": 8.7,
+      "cote_reference": 7.2,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1791028388000
+    }
+  ],
+  "hippodrome": "FONTAINEBLEAU",
+  "releves": [
+    {
+      "scraped_at": "2026-10-03T13:53:22.929503",
+      "minutes_avant_depart": 5.619420066666667,
+      "cotes": {
+        "1": 14.0,
+        "2": 9.0,
+        "3": 7.9,
+        "4": 6.9,
+        "5": 4.0,
+        "6": 3.8,
+        "7": 15.0,
+        "9": 8.7
+      }
+    }
+  ]
+}
