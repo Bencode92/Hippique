@@ -4,17 +4,17 @@
   "reunion": 9,
   "heure_depart": 1791059400000,
   "distance": 2400,
-  "scraped_at": "2026-10-03T22:28:48.638056",
+  "scraped_at": "2026-10-03T22:29:28.707949",
   "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "IPSY DJOB",
-      "cote_live": 7.0,
+      "cote_live": 6.6,
       "cote_reference": 10.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791059318000
+      "timestamp_cote": 1791059368000
     },
     {
       "numPmu": 2,
@@ -23,70 +23,70 @@
       "cote_reference": 6.7,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791059318000
+      "timestamp_cote": 1791059368000
     },
     {
       "numPmu": 3,
       "nom": "HAROLD BUROIS",
-      "cote_live": 24.0,
+      "cote_live": 23.0,
       "cote_reference": 25.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791059318000
+      "timestamp_cote": 1791059368000
     },
     {
       "numPmu": 4,
       "nom": "IT'S ME DIESCHOOT",
-      "cote_live": 6.5,
+      "cote_live": 7.3,
       "cote_reference": 10.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791059318000
+      "timestamp_cote": 1791059368000
     },
     {
       "numPmu": 5,
       "nom": "IMEA DE LA POTEL",
-      "cote_live": 54.0,
+      "cote_live": 46.0,
       "cote_reference": 24.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791059318000
+      "timestamp_cote": 1791059368000
     },
     {
       "numPmu": 6,
       "nom": "JOS DU PILET",
-      "cote_live": 45.0,
+      "cote_live": 44.0,
       "cote_reference": 33.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791059318000
+      "timestamp_cote": 1791059368000
     },
     {
       "numPmu": 7,
       "nom": "ISARD DE PLAY",
-      "cote_live": 6.5,
+      "cote_live": 7.3,
       "cote_reference": 4.9,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791059318000
+      "timestamp_cote": 1791059368000
     },
     {
       "numPmu": 8,
       "nom": "JACK RUSSELL",
-      "cote_live": 32.0,
+      "cote_live": 30.0,
       "cote_reference": 35.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791059318000
+      "timestamp_cote": 1791059368000
     },
     {
       "numPmu": 9,
       "nom": "KENTUCKY VALLEY",
-      "cote_live": 18.0,
+      "cote_live": 19.0,
       "cote_reference": 31.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791059318000
+      "timestamp_cote": 1791059368000
     },
     {
       "numPmu": 10,
@@ -95,43 +95,43 @@
       "cote_reference": 15.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791059318000
+      "timestamp_cote": 1791059368000
     },
     {
       "numPmu": 11,
       "nom": "KASIMODO DREAM",
-      "cote_live": 12.0,
+      "cote_live": 13.0,
       "cote_reference": 14.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791059318000
+      "timestamp_cote": 1791059368000
     },
     {
       "numPmu": 12,
       "nom": "KROKEUSE",
       "cote_live": 18.0,
       "cote_reference": 18.0,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791059318000
+      "timestamp_cote": 1791059368000
     },
     {
       "numPmu": 13,
       "nom": "KASHMIR PRESTANCE",
-      "cote_live": 4.6,
+      "cote_live": 4.1,
       "cote_reference": 4.8,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791059318000
+      "timestamp_cote": 1791059368000
     },
     {
       "numPmu": 14,
       "nom": "KING JULMA",
-      "cote_live": 43.0,
+      "cote_live": 34.0,
       "cote_reference": 31.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791059318000
+      "timestamp_cote": 1791059368000
     }
   ],
   "hippodrome": "AMIENS",
@@ -294,6 +294,26 @@
         "12": 18.0,
         "13": 4.6,
         "14": 43.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T22:29:28.707949",
+      "minutes_avant_depart": 0.5283993666666666,
+      "cotes": {
+        "1": 6.6,
+        "2": 11.0,
+        "3": 23.0,
+        "4": 7.3,
+        "5": 46.0,
+        "6": 44.0,
+        "7": 7.3,
+        "8": 30.0,
+        "9": 19.0,
+        "10": 16.0,
+        "11": 13.0,
+        "12": 18.0,
+        "13": 4.1,
+        "14": 34.0
       }
     }
   ]
