@@ -4,98 +4,98 @@
   "reunion": 1,
   "heure_depart": 1791039720000,
   "distance": 4000,
-  "scraped_at": "2026-10-03T17:02:33.356620",
-  "minutes_avant_depart": -1,
+  "scraped_at": "2026-10-03T17:05:13.008133",
+  "minutes_avant_depart": -3,
   "participants": [
     {
       "numPmu": 1,
       "nom": "SCANDINAVIA",
-      "cote_live": 1.2,
+      "cote_live": 1.3,
       "cote_reference": 1.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791039742000
+      "timestamp_cote": 1791039902000
     },
     {
       "numPmu": 2,
       "nom": "QUEENSTOWN",
-      "cote_live": 17.0,
+      "cote_live": 14.0,
       "cote_reference": 16.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791039742000
+      "timestamp_cote": 1791039902000
     },
     {
       "numPmu": 3,
       "nom": "ANSPRUCH",
-      "cote_live": 123.0,
+      "cote_live": 137.0,
       "cote_reference": 69.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791039742000
+      "timestamp_cote": 1791039902000
     },
     {
       "numPmu": 4,
       "nom": "MR HOLLYWOOD",
-      "cote_live": 23.0,
+      "cote_live": 22.0,
       "cote_reference": 20.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791039742000
+      "timestamp_cote": 1791039902000
     },
     {
       "numPmu": 5,
       "nom": "WALDADLER",
-      "cote_live": 75.0,
+      "cote_live": 69.0,
       "cote_reference": 52.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791039742000
+      "timestamp_cote": 1791039902000
     },
     {
       "numPmu": 6,
       "nom": "WINTERTRAUM",
-      "cote_live": 35.0,
+      "cote_live": 37.0,
       "cote_reference": 18.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791039742000
+      "timestamp_cote": 1791039902000
     },
     {
       "numPmu": 7,
       "nom": "CABALLO DE MAR",
-      "cote_live": 9.8,
+      "cote_live": 7.8,
       "cote_reference": 6.4,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791039742000
+      "timestamp_cote": 1791039902000
     },
     {
       "numPmu": 8,
       "nom": "FRENCH MASTER",
-      "cote_live": 50.0,
+      "cote_live": 45.0,
       "cote_reference": 49.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791039742000
+      "timestamp_cote": 1791039902000
     },
     {
       "numPmu": 9,
       "nom": "DOUBLE MAJOR",
-      "cote_live": 12.0,
+      "cote_live": 13.0,
       "cote_reference": 5.6,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791039742000
+      "timestamp_cote": 1791039902000
     },
     {
       "numPmu": 10,
       "nom": "SHEEMA'S ROSE",
-      "cote_live": 188.0,
+      "cote_live": 201.0,
       "cote_reference": 45.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791039742000
+      "timestamp_cote": 1791039902000
     }
   ],
   "hippodrome": "PARISLONGCHAMP",
@@ -258,6 +258,70 @@
         "8": 50.0,
         "9": 12.0,
         "10": 188.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T17:03:13.277192",
+      "minutes_avant_depart": -1.2162574333333334,
+      "cotes": {
+        "1": 1.3,
+        "2": 16.0,
+        "3": 125.0,
+        "4": 20.0,
+        "5": 64.0,
+        "6": 34.0,
+        "7": 9.6,
+        "8": 44.0,
+        "9": 12.0,
+        "10": 190.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T17:03:53.355872",
+      "minutes_avant_depart": -1.888744,
+      "cotes": {
+        "1": 1.3,
+        "2": 14.0,
+        "3": 125.0,
+        "4": 20.0,
+        "5": 61.0,
+        "6": 33.0,
+        "7": 8.9,
+        "8": 42.0,
+        "9": 12.0,
+        "10": 181.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T17:04:33.153491",
+      "minutes_avant_depart": -2.5495950833333336,
+      "cotes": {
+        "1": 1.3,
+        "2": 14.0,
+        "3": 132.0,
+        "4": 21.0,
+        "5": 64.0,
+        "6": 34.0,
+        "7": 8.8,
+        "8": 43.0,
+        "9": 12.0,
+        "10": 186.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T17:05:13.008133",
+      "minutes_avant_depart": -3.2162638833333332,
+      "cotes": {
+        "1": 1.3,
+        "2": 14.0,
+        "3": 137.0,
+        "4": 22.0,
+        "5": 69.0,
+        "6": 37.0,
+        "7": 7.8,
+        "8": 45.0,
+        "9": 13.0,
+        "10": 201.0
       }
     }
   ]
