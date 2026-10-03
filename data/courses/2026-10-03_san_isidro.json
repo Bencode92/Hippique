@@ -1,7 +1,7 @@
 {
   "hippodrome": "SAN ISIDRO",
   "type_reunion": "Plat",
-  "date_extraction": "2026-10-03T01:02:30.665934",
+  "date_extraction": "2026-10-03T14:32:15.995817",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/03102026/R8",
   "courses": [
     {
@@ -30,7 +30,10 @@
           "equipement(s)": "",
           "nb_courses": 17,
           "nb_victoires": 4,
-          "nb_places": 11
+          "nb_places": 11,
+          "cote": 6.4,
+          "cote_tendance": "",
+          "cote_reference": 4.2
         },
         {
           "n°": "2",
@@ -50,7 +53,10 @@
           "equipement(s)": "",
           "nb_courses": 17,
           "nb_victoires": 3,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 5.9,
+          "cote_tendance": "",
+          "cote_reference": 3.9
         },
         {
           "n°": "3",
@@ -90,7 +96,10 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 5,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 6.4,
+          "cote_tendance": "",
+          "cote_reference": 8.5
         },
         {
           "n°": "5",
@@ -110,7 +119,10 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 3,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 6.4,
+          "cote_tendance": "",
+          "cote_reference": 4.2
         },
         {
           "n°": "6",
@@ -130,7 +142,9 @@
           "equipement(s)": "",
           "nb_courses": 28,
           "nb_victoires": 12,
-          "nb_places": 16
+          "nb_places": 16,
+          "cote": 6.4,
+          "cote_tendance": ""
         },
         {
           "n°": "7",
@@ -150,7 +164,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 2,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 8.5
         },
         {
           "n°": "8",
@@ -190,7 +207,10 @@
           "equipement(s)": "",
           "nb_courses": 23,
           "nb_victoires": 4,
-          "nb_places": 17
+          "nb_places": 17,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 8.5
         },
         {
           "n°": "10",
@@ -230,7 +250,9 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 4,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 6.4,
+          "cote_tendance": ""
         },
         {
           "n°": "12",
@@ -250,7 +272,10 @@
           "equipement(s)": "",
           "nb_courses": 22,
           "nb_victoires": 7,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 25.0,
+          "cote_tendance": "",
+          "cote_reference": 17.0
         },
         {
           "n°": "13",
@@ -293,6 +318,9 @@
           "nb_places": 8
         }
       ],
+      "typePiste": "HERBE",
+      "terrain": "Souple",
+      "penetrometre": "3,5",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -321,7 +349,10 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 2,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 19.0,
+          "cote_tendance": "",
+          "cote_reference": 6.7
         },
         {
           "n°": "2",
@@ -341,7 +372,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 2,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 1.1,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         },
         {
           "n°": "3",
@@ -361,7 +395,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 3,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 6.6,
+          "cote_tendance": "",
+          "cote_reference": 6.7
         },
         {
           "n°": "4",
@@ -404,6 +441,9 @@
           "nb_places": 4
         }
       ],
+      "typePiste": "HERBE",
+      "terrain": "Souple",
+      "penetrometre": "3,5",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -432,7 +472,9 @@
           "equipement(s)": "A",
           "nb_courses": 8,
           "nb_victoires": 3,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 9.3,
+          "cote_tendance": "+"
         },
         {
           "n°": "2",
@@ -452,7 +494,10 @@
           "equipement(s)": "",
           "nb_courses": 22,
           "nb_victoires": 5,
-          "nb_places": 15
+          "nb_places": 15,
+          "cote": 2.9,
+          "cote_tendance": "-",
+          "cote_reference": 2.3
         },
         {
           "n°": "3",
@@ -472,7 +517,10 @@
           "equipement(s)": "A",
           "nb_courses": 19,
           "nb_victoires": 9,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 6.2,
+          "cote_tendance": "-",
+          "cote_reference": 9.9
         },
         {
           "n°": "4",
@@ -492,7 +540,9 @@
           "equipement(s)": "",
           "nb_courses": 13,
           "nb_victoires": 4,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 9.3,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -532,7 +582,10 @@
           "equipement(s)": "",
           "nb_courses": 16,
           "nb_victoires": 9,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 4.6,
+          "cote_tendance": "+",
+          "cote_reference": 4.9
         },
         {
           "n°": "7",
@@ -552,9 +605,15 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 6,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 4.6,
+          "cote_tendance": "+",
+          "cote_reference": 2.4
         }
       ],
+      "typePiste": "HERBE",
+      "terrain": "Souple",
+      "penetrometre": "3,5",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -603,7 +662,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 9.6
         },
         {
           "n°": "3",
@@ -643,7 +705,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 1,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 5.6,
+          "cote_tendance": "",
+          "cote_reference": 10.0
         },
         {
           "n°": "5",
@@ -655,7 +720,7 @@
           "propriétaire": "NUESTRO SUENO (TDL)",
           "entraineur": "MARCELO ROBERTO LOPEZ",
           "éleveurs": "",
-          "jockey": "NON COMMUNIQUE",
+          "jockey": "KEVIN BANEGAS",
           "poids": "56 kg",
           "gains": "2128980000",
           "musique": "6p3p7p8p6p",
@@ -683,9 +748,15 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 1.1,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         }
       ],
+      "typePiste": "HERBE",
+      "terrain": "Souple",
+      "penetrometre": "3,5",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -714,7 +785,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 1,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 9.5,
+          "cote_tendance": "",
+          "cote_reference": 9.3
         },
         {
           "n°": "2",
@@ -734,7 +808,10 @@
           "equipement(s)": "A",
           "nb_courses": 5,
           "nb_victoires": 1,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 4.5,
+          "cote_tendance": "",
+          "cote_reference": 2.2
         },
         {
           "n°": "3",
@@ -794,7 +871,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 4.7,
+          "cote_tendance": "",
+          "cote_reference": 2.3
         },
         {
           "n°": "6",
@@ -814,7 +894,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 1,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 19.0,
+          "cote_tendance": "",
+          "cote_reference": 9.3
         },
         {
           "n°": "7",
@@ -914,7 +997,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 1,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 38.0,
+          "cote_tendance": "",
+          "cote_reference": 18.0
         },
         {
           "n°": "12",
@@ -974,9 +1060,14 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 2,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 1.9,
+          "cote_tendance": ""
         }
       ],
+      "typePiste": "HERBE",
+      "terrain": "Souple",
+      "penetrometre": "3,5",
       "cordeCourse": "CORDE_GAUCHE"
     }
   ]
