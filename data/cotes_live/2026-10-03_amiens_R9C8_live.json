@@ -4,134 +4,134 @@
   "reunion": 9,
   "heure_depart": 1791059400000,
   "distance": 2400,
-  "scraped_at": "2026-10-03T22:26:08.802319",
-  "minutes_avant_depart": 4,
+  "scraped_at": "2026-10-03T22:28:48.638056",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "IPSY DJOB",
-      "cote_live": 8.5,
+      "cote_live": 7.0,
       "cote_reference": 10.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791059156000
+      "timestamp_cote": 1791059318000
     },
     {
       "numPmu": 2,
       "nom": "IROISE DES BAULTS",
-      "cote_live": 10.0,
+      "cote_live": 11.0,
       "cote_reference": 6.7,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791059156000
+      "timestamp_cote": 1791059318000
     },
     {
       "numPmu": 3,
       "nom": "HAROLD BUROIS",
-      "cote_live": 22.0,
+      "cote_live": 24.0,
       "cote_reference": 25.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791059156000
+      "timestamp_cote": 1791059318000
     },
     {
       "numPmu": 4,
       "nom": "IT'S ME DIESCHOOT",
-      "cote_live": 5.2,
+      "cote_live": 6.5,
       "cote_reference": 10.0,
-      "tendance": "-",
-      "favoris": true,
-      "timestamp_cote": 1791059156000
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1791059318000
     },
     {
       "numPmu": 5,
       "nom": "IMEA DE LA POTEL",
-      "cote_live": 41.0,
+      "cote_live": 54.0,
       "cote_reference": 24.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791059156000
+      "timestamp_cote": 1791059318000
     },
     {
       "numPmu": 6,
       "nom": "JOS DU PILET",
-      "cote_live": 36.0,
+      "cote_live": 45.0,
       "cote_reference": 33.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791059156000
+      "timestamp_cote": 1791059318000
     },
     {
       "numPmu": 7,
       "nom": "ISARD DE PLAY",
-      "cote_live": 6.1,
+      "cote_live": 6.5,
       "cote_reference": 4.9,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791059156000
+      "timestamp_cote": 1791059318000
     },
     {
       "numPmu": 8,
       "nom": "JACK RUSSELL",
-      "cote_live": 29.0,
+      "cote_live": 32.0,
       "cote_reference": 35.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791059156000
+      "timestamp_cote": 1791059318000
     },
     {
       "numPmu": 9,
       "nom": "KENTUCKY VALLEY",
-      "cote_live": 14.0,
+      "cote_live": 18.0,
       "cote_reference": 31.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791059156000
+      "timestamp_cote": 1791059318000
     },
     {
       "numPmu": 10,
       "nom": "KALINA DE LAURIERE",
-      "cote_live": 14.0,
+      "cote_live": 16.0,
       "cote_reference": 15.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791059156000
+      "timestamp_cote": 1791059318000
     },
     {
       "numPmu": 11,
       "nom": "KASIMODO DREAM",
-      "cote_live": 13.0,
+      "cote_live": 12.0,
       "cote_reference": 14.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791059156000
+      "timestamp_cote": 1791059318000
     },
     {
       "numPmu": 12,
       "nom": "KROKEUSE",
-      "cote_live": 13.0,
+      "cote_live": 18.0,
       "cote_reference": 18.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791059156000
+      "timestamp_cote": 1791059318000
     },
     {
       "numPmu": 13,
       "nom": "KASHMIR PRESTANCE",
-      "cote_live": 7.0,
+      "cote_live": 4.6,
       "cote_reference": 4.8,
-      "tendance": "+",
-      "favoris": false,
-      "timestamp_cote": 1791059156000
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1791059318000
     },
     {
       "numPmu": 14,
       "nom": "KING JULMA",
-      "cote_live": 42.0,
+      "cote_live": 43.0,
       "cote_reference": 31.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791059156000
+      "timestamp_cote": 1791059318000
     }
   ],
   "hippodrome": "AMIENS",
@@ -214,6 +214,86 @@
         "12": 13.0,
         "13": 7.0,
         "14": 42.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T22:26:48.491290",
+      "minutes_avant_depart": 3.1950721166666667,
+      "cotes": {
+        "1": 7.8,
+        "2": 10.0,
+        "3": 25.0,
+        "4": 5.6,
+        "5": 44.0,
+        "6": 39.0,
+        "7": 6.8,
+        "8": 32.0,
+        "9": 16.0,
+        "10": 14.0,
+        "11": 12.0,
+        "12": 15.0,
+        "13": 5.8,
+        "14": 46.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T22:27:29.193149",
+      "minutes_avant_depart": 2.520346883333333,
+      "cotes": {
+        "1": 6.7,
+        "2": 11.0,
+        "3": 23.0,
+        "4": 6.1,
+        "5": 50.0,
+        "6": 43.0,
+        "7": 7.2,
+        "8": 30.0,
+        "9": 17.0,
+        "10": 15.0,
+        "11": 11.0,
+        "12": 15.0,
+        "13": 5.3,
+        "14": 48.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T22:28:08.804693",
+      "minutes_avant_depart": 1.8617355000000002,
+      "cotes": {
+        "1": 6.4,
+        "2": 10.0,
+        "3": 24.0,
+        "4": 6.2,
+        "5": 50.0,
+        "6": 43.0,
+        "7": 7.9,
+        "8": 32.0,
+        "9": 16.0,
+        "10": 16.0,
+        "11": 11.0,
+        "12": 16.0,
+        "13": 5.1,
+        "14": 43.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T22:28:48.638056",
+      "minutes_avant_depart": 1.1950675333333334,
+      "cotes": {
+        "1": 7.0,
+        "2": 11.0,
+        "3": 24.0,
+        "4": 6.5,
+        "5": 54.0,
+        "6": 45.0,
+        "7": 6.5,
+        "8": 32.0,
+        "9": 18.0,
+        "10": 16.0,
+        "11": 12.0,
+        "12": 18.0,
+        "13": 4.6,
+        "14": 43.0
       }
     }
   ]
