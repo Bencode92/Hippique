@@ -4,44 +4,44 @@
   "reunion": 9,
   "heure_depart": 1791046800000,
   "distance": 2400,
-  "scraped_at": "2026-10-03T18:54:33.179982",
-  "minutes_avant_depart": 5,
+  "scraped_at": "2026-10-03T18:57:13.891182",
+  "minutes_avant_depart": 3,
   "participants": [
     {
       "numPmu": 1,
       "nom": "KING DE LARRE",
-      "cote_live": 16.0,
+      "cote_live": 15.0,
       "cote_reference": 17.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791046468000
+      "timestamp_cote": 1791046622000
     },
     {
       "numPmu": 2,
       "nom": "KEZURA LORRAINE",
-      "cote_live": 4.5,
+      "cote_live": 3.6,
       "cote_reference": 5.7,
-      "tendance": "-",
-      "favoris": false,
-      "timestamp_cote": 1791046468000
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1791046622000
     },
     {
       "numPmu": 3,
       "nom": "KATIA DE MUZE",
-      "cote_live": 3.6,
+      "cote_live": 3.8,
       "cote_reference": 4.2,
-      "tendance": "+",
-      "favoris": true,
-      "timestamp_cote": 1791046468000
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1791046622000
     },
     {
       "numPmu": 5,
       "nom": "JOYCE DE LA COUR",
       "cote_live": 11.0,
       "cote_reference": 7.9,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791046468000
+      "timestamp_cote": 1791046622000
     },
     {
       "numPmu": 6,
@@ -50,79 +50,79 @@
       "cote_reference": 26.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791046468000
+      "timestamp_cote": 1791046622000
     },
     {
       "numPmu": 7,
       "nom": "JACARTO DE HOUELLE",
-      "cote_live": 23.0,
+      "cote_live": 22.0,
       "cote_reference": 28.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791046468000
+      "timestamp_cote": 1791046622000
     },
     {
       "numPmu": 8,
       "nom": "KABOTIN CHENEVIERE",
-      "cote_live": 15.0,
+      "cote_live": 17.0,
       "cote_reference": 26.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791046468000
+      "timestamp_cote": 1791046622000
     },
     {
       "numPmu": 9,
       "nom": "JAGUAR DE ROZEVIC",
-      "cote_live": 29.0,
+      "cote_live": 34.0,
       "cote_reference": 19.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791046468000
+      "timestamp_cote": 1791046622000
     },
     {
       "numPmu": 10,
       "nom": "JOCIE DU VILLARD",
-      "cote_live": 23.0,
+      "cote_live": 25.0,
       "cote_reference": 23.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791046468000
+      "timestamp_cote": 1791046622000
     },
     {
       "numPmu": 11,
       "nom": "IN AMERICA",
-      "cote_live": 39.0,
+      "cote_live": 45.0,
       "cote_reference": 51.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791046468000
+      "timestamp_cote": 1791046622000
     },
     {
       "numPmu": 12,
       "nom": "IROKO DU NORD",
-      "cote_live": 27.0,
+      "cote_live": 34.0,
       "cote_reference": 36.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791046468000
+      "timestamp_cote": 1791046622000
     },
     {
       "numPmu": 13,
       "nom": "JOURNAIO DU ROI",
-      "cote_live": 27.0,
+      "cote_live": 28.0,
       "cote_reference": 16.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791046468000
+      "timestamp_cote": 1791046622000
     },
     {
       "numPmu": 14,
       "nom": "KONSTANCIA D'OYSE",
-      "cote_live": 6.4,
+      "cote_live": 7.4,
       "cote_reference": 4.3,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791046468000
+      "timestamp_cote": 1791046622000
     }
   ],
   "hippodrome": "AMIENS",
@@ -144,6 +144,82 @@
         "12": 27.0,
         "13": 27.0,
         "14": 6.4
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T18:55:13.478317",
+      "minutes_avant_depart": 4.783411616666667,
+      "cotes": {
+        "1": 15.0,
+        "2": 4.4,
+        "3": 3.6,
+        "5": 11.0,
+        "6": 19.0,
+        "7": 23.0,
+        "8": 15.0,
+        "9": 29.0,
+        "10": 23.0,
+        "11": 40.0,
+        "12": 28.0,
+        "13": 27.0,
+        "14": 6.5
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T18:55:53.549662",
+      "minutes_avant_depart": 4.116742933333333,
+      "cotes": {
+        "1": 16.0,
+        "2": 4.3,
+        "3": 3.6,
+        "5": 11.0,
+        "6": 18.0,
+        "7": 22.0,
+        "8": 15.0,
+        "9": 30.0,
+        "10": 23.0,
+        "11": 41.0,
+        "12": 29.0,
+        "13": 25.0,
+        "14": 6.7
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T18:56:33.231281",
+      "minutes_avant_depart": 3.4500740666666667,
+      "cotes": {
+        "1": 17.0,
+        "2": 3.9,
+        "3": 3.8,
+        "5": 11.0,
+        "6": 18.0,
+        "7": 23.0,
+        "8": 16.0,
+        "9": 31.0,
+        "10": 23.0,
+        "11": 42.0,
+        "12": 31.0,
+        "13": 26.0,
+        "14": 7.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T18:57:13.891182",
+      "minutes_avant_depart": 2.7727698,
+      "cotes": {
+        "1": 15.0,
+        "2": 3.6,
+        "3": 3.8,
+        "5": 11.0,
+        "6": 19.0,
+        "7": 22.0,
+        "8": 17.0,
+        "9": 34.0,
+        "10": 25.0,
+        "11": 45.0,
+        "12": 34.0,
+        "13": 28.0,
+        "14": 7.4
       }
     }
   ]
