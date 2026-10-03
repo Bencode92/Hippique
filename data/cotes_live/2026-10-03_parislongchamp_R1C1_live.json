@@ -4,44 +4,44 @@
   "reunion": 1,
   "heure_depart": 1791026880000,
   "distance": 3000,
-  "scraped_at": "2026-10-03T13:24:02.362562",
-  "minutes_avant_depart": 4,
+  "scraped_at": "2026-10-03T13:26:42.850604",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ASAKIR",
-      "cote_live": 13.0,
+      "cote_live": 10.0,
       "cote_reference": 14.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791026626000
+      "timestamp_cote": 1791026789000
     },
     {
       "numPmu": 2,
       "nom": "WINDAY",
-      "cote_live": 36.0,
+      "cote_live": 35.0,
       "cote_reference": 36.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791026626000
+      "timestamp_cote": 1791026789000
     },
     {
       "numPmu": 3,
       "nom": "BOX OFFICER",
-      "cote_live": 17.0,
+      "cote_live": 21.0,
       "cote_reference": 17.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791026626000
+      "timestamp_cote": 1791026789000
     },
     {
       "numPmu": 4,
       "nom": "SPACE WALTZ",
-      "cote_live": 4.8,
+      "cote_live": 5.0,
       "cote_reference": 5.2,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791026626000
+      "timestamp_cote": 1791026789000
     },
     {
       "numPmu": 5,
@@ -50,34 +50,34 @@
       "cote_reference": 9.9,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791026626000
+      "timestamp_cote": 1791026789000
     },
     {
       "numPmu": 6,
       "nom": "PIERRE BONNARD",
-      "cote_live": 2.8,
+      "cote_live": 2.6,
       "cote_reference": 2.9,
-      "tendance": "",
+      "tendance": "-",
       "favoris": true,
-      "timestamp_cote": 1791026626000
+      "timestamp_cote": 1791026789000
     },
     {
       "numPmu": 7,
       "nom": "VICTOIRE MAGIQUE",
-      "cote_live": 3.5,
+      "cote_live": 4.0,
       "cote_reference": 3.3,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791026626000
+      "timestamp_cote": 1791026789000
     },
     {
       "numPmu": 8,
       "nom": "LIGHT OF THUNDER",
-      "cote_live": 19.0,
+      "cote_live": 23.0,
       "cote_reference": 18.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791026626000
+      "timestamp_cote": 1791026789000
     }
   ],
   "hippodrome": "PARISLONGCHAMP",
@@ -136,6 +136,62 @@
         "6": 2.8,
         "7": 3.5,
         "8": 19.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T13:24:42.549243",
+      "minutes_avant_depart": 3.2950346666666666,
+      "cotes": {
+        "1": 12.0,
+        "2": 37.0,
+        "3": 18.0,
+        "4": 4.9,
+        "5": 11.0,
+        "6": 2.7,
+        "7": 3.6,
+        "8": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T13:25:22.347048",
+      "minutes_avant_depart": 2.6283663833333337,
+      "cotes": {
+        "1": 11.0,
+        "2": 35.0,
+        "3": 20.0,
+        "4": 4.8,
+        "5": 11.0,
+        "6": 2.7,
+        "7": 3.7,
+        "8": 21.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T13:26:02.608057",
+      "minutes_avant_depart": 1.9616976000000002,
+      "cotes": {
+        "1": 10.0,
+        "2": 34.0,
+        "3": 20.0,
+        "4": 4.9,
+        "5": 11.0,
+        "6": 2.8,
+        "7": 3.7,
+        "8": 21.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T13:26:42.850604",
+      "minutes_avant_depart": 1.287667,
+      "cotes": {
+        "1": 10.0,
+        "2": 35.0,
+        "3": 21.0,
+        "4": 5.0,
+        "5": 10.0,
+        "6": 2.6,
+        "7": 4.0,
+        "8": 23.0
       }
     }
   ]

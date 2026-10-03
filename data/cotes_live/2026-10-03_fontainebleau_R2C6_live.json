@@ -4,71 +4,71 @@
   "reunion": 2,
   "heure_depart": 1791026700000,
   "distance": 3600,
-  "scraped_at": "2026-10-03T13:24:02.558184",
-  "minutes_avant_depart": 1,
+  "scraped_at": "2026-10-03T13:26:42.962448",
+  "minutes_avant_depart": -2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MAVERICK'AMSYL",
-      "cote_live": 4.4,
+      "cote_live": 4.8,
       "cote_reference": 4.9,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791026633000
+      "timestamp_cote": 1791026793000
     },
     {
       "numPmu": 2,
       "nom": "BEL ECLAT",
-      "cote_live": 2.7,
+      "cote_live": 2.5,
       "cote_reference": 2.0,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791026633000
+      "timestamp_cote": 1791026793000
     },
     {
       "numPmu": 3,
       "nom": "PACHA DES BEAUX",
-      "cote_live": 5.9,
+      "cote_live": 7.0,
       "cote_reference": 20.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791026633000
+      "timestamp_cote": 1791026793000
     },
     {
       "numPmu": 4,
       "nom": "MAKAO'K",
-      "cote_live": 21.0,
+      "cote_live": 16.0,
       "cote_reference": 27.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791026633000
+      "timestamp_cote": 1791026793000
     },
     {
       "numPmu": 5,
       "nom": "LA CHOCOLATINE",
-      "cote_live": 5.1,
+      "cote_live": 4.7,
       "cote_reference": 4.6,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791026633000
+      "timestamp_cote": 1791026793000
     },
     {
       "numPmu": 6,
       "nom": "PETITE THEYSS",
-      "cote_live": 8.6,
+      "cote_live": 8.9,
       "cote_reference": 11.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791026633000
+      "timestamp_cote": 1791026793000
     },
     {
       "numPmu": 7,
       "nom": "LOZEN DE LORME",
-      "cote_live": 47.0,
+      "cote_live": 72.0,
       "cote_reference": 17.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791026633000
+      "timestamp_cote": 1791026793000
     }
   ],
   "hippodrome": "FONTAINEBLEAU",
@@ -175,6 +175,58 @@
         "5": 5.1,
         "6": 8.6,
         "7": 47.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T13:24:42.660881",
+      "minutes_avant_depart": 0.29503466666666667,
+      "cotes": {
+        "1": 4.8,
+        "2": 2.7,
+        "3": 5.8,
+        "4": 23.0,
+        "5": 4.6,
+        "6": 8.8,
+        "7": 55.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T13:25:22.394821",
+      "minutes_avant_depart": -0.37163361666666667,
+      "cotes": {
+        "1": 5.1,
+        "2": 2.5,
+        "3": 6.4,
+        "4": 20.0,
+        "5": 4.6,
+        "6": 8.6,
+        "7": 60.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T13:26:02.657522",
+      "minutes_avant_depart": -1.0383024,
+      "cotes": {
+        "1": 4.9,
+        "2": 2.5,
+        "3": 6.6,
+        "4": 17.0,
+        "5": 4.8,
+        "6": 8.6,
+        "7": 68.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T13:26:42.962448",
+      "minutes_avant_depart": -1.712333,
+      "cotes": {
+        "1": 4.8,
+        "2": 2.5,
+        "3": 7.0,
+        "4": 16.0,
+        "5": 4.7,
+        "6": 8.9,
+        "7": 72.0
       }
     }
   ]
