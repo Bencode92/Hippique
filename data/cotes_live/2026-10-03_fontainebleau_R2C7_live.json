@@ -4,44 +4,44 @@
   "reunion": 2,
   "heure_depart": 1791028740000,
   "distance": 3850,
-  "scraped_at": "2026-10-03T13:56:02.728323",
-  "minutes_avant_depart": 3,
+  "scraped_at": "2026-10-03T13:58:42.773590",
+  "minutes_avant_depart": 0,
   "participants": [
     {
       "numPmu": 1,
       "nom": "FORTUNA",
       "cote_live": 13.0,
       "cote_reference": 13.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791028542000
+      "timestamp_cote": 1791028711000
     },
     {
       "numPmu": 2,
       "nom": "SOBEST",
-      "cote_live": 8.0,
+      "cote_live": 8.6,
       "cote_reference": 11.0,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791028542000
+      "timestamp_cote": 1791028711000
     },
     {
       "numPmu": 3,
       "nom": "LADY ANGE WIN",
-      "cote_live": 7.9,
+      "cote_live": 8.0,
       "cote_reference": 8.4,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791028542000
+      "timestamp_cote": 1791028711000
     },
     {
       "numPmu": 4,
       "nom": "HARTHUR DES OBEAUX",
-      "cote_live": 6.0,
+      "cote_live": 6.6,
       "cote_reference": 7.4,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791028542000
+      "timestamp_cote": 1791028711000
     },
     {
       "numPmu": 5,
@@ -49,35 +49,35 @@
       "cote_live": 4.4,
       "cote_reference": 4.6,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1791028542000
+      "favoris": false,
+      "timestamp_cote": 1791028711000
     },
     {
       "numPmu": 6,
       "nom": "FILIPPINO",
-      "cote_live": 4.4,
+      "cote_live": 3.9,
       "cote_reference": 3.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791028542000
+      "timestamp_cote": 1791028711000
     },
     {
       "numPmu": 7,
       "nom": "LE ROI LOTH",
       "cote_live": 12.0,
       "cote_reference": 9.7,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791028542000
+      "timestamp_cote": 1791028711000
     },
     {
       "numPmu": 9,
       "nom": "L'ENFANT JESUS",
-      "cote_live": 8.3,
+      "cote_live": 9.4,
       "cote_reference": 7.2,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791028542000
+      "timestamp_cote": 1791028711000
     }
   ],
   "hippodrome": "FONTAINEBLEAU",
@@ -150,6 +150,62 @@
         "6": 4.4,
         "7": 12.0,
         "9": 8.3
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T13:56:43.243746",
+      "minutes_avant_depart": 2.283790316666667,
+      "cotes": {
+        "1": 13.0,
+        "2": 7.7,
+        "3": 7.9,
+        "4": 6.3,
+        "5": 4.3,
+        "6": 4.3,
+        "7": 14.0,
+        "9": 8.6
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T13:57:22.717154",
+      "minutes_avant_depart": 1.6282671833333333,
+      "cotes": {
+        "1": 12.0,
+        "2": 8.0,
+        "3": 7.8,
+        "4": 6.5,
+        "5": 4.4,
+        "6": 4.1,
+        "7": 14.0,
+        "9": 8.6
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T13:58:02.564091",
+      "minutes_avant_depart": 0.9615986333333333,
+      "cotes": {
+        "1": 12.0,
+        "2": 8.2,
+        "3": 7.3,
+        "4": 6.4,
+        "5": 4.5,
+        "6": 4.3,
+        "7": 12.0,
+        "9": 8.7
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T13:58:42.773590",
+      "minutes_avant_depart": 0.29493010000000003,
+      "cotes": {
+        "1": 13.0,
+        "2": 8.6,
+        "3": 8.0,
+        "4": 6.6,
+        "5": 4.4,
+        "6": 3.9,
+        "7": 12.0,
+        "9": 9.4
       }
     }
   ]

@@ -4,71 +4,71 @@
   "reunion": 1,
   "heure_depart": 1791028860000,
   "distance": 1950,
-  "scraped_at": "2026-10-03T13:56:02.354833",
-  "minutes_avant_depart": 5,
+  "scraped_at": "2026-10-03T13:58:42.563924",
+  "minutes_avant_depart": 2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ZAYDANN",
-      "cote_live": 6.5,
+      "cote_live": 6.9,
       "cote_reference": 5.6,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791028548000
+      "timestamp_cote": 1791028702000
     },
     {
       "numPmu": 2,
       "nom": "SEAGULLS ELEVEN",
-      "cote_live": 42.0,
+      "cote_live": 45.0,
       "cote_reference": 60.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791028548000
+      "timestamp_cote": 1791028702000
     },
     {
       "numPmu": 3,
       "nom": "WIMBLEDON HAWKEYE",
-      "cote_live": 5.7,
+      "cote_live": 5.6,
       "cote_reference": 6.2,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791028548000
+      "timestamp_cote": 1791028702000
     },
     {
       "numPmu": 4,
       "nom": "FIRST LOOK",
-      "cote_live": 30.0,
+      "cote_live": 31.0,
       "cote_reference": 29.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791028548000
+      "timestamp_cote": 1791028702000
     },
     {
       "numPmu": 5,
       "nom": "SILAWI",
-      "cote_live": 40.0,
+      "cote_live": 42.0,
       "cote_reference": 37.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791028548000
+      "timestamp_cote": 1791028702000
     },
     {
       "numPmu": 6,
       "nom": "PHINEAS",
-      "cote_live": 2.0,
+      "cote_live": 1.9,
       "cote_reference": 1.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791028548000
+      "timestamp_cote": 1791028702000
     },
     {
       "numPmu": 7,
       "nom": "DISTANT STORM",
-      "cote_live": 4.1,
+      "cote_live": 4.4,
       "cote_reference": 12.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791028548000
+      "timestamp_cote": 1791028702000
     }
   ],
   "hippodrome": "PARISLONGCHAMP",
@@ -97,6 +97,58 @@
         "5": 40.0,
         "6": 2.0,
         "7": 4.1
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T13:56:43.194449",
+      "minutes_avant_depart": 4.283790316666667,
+      "cotes": {
+        "1": 7.0,
+        "2": 41.0,
+        "3": 5.4,
+        "4": 29.0,
+        "5": 39.0,
+        "6": 1.9,
+        "7": 4.4
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T13:57:22.516586",
+      "minutes_avant_depart": 3.6282671833333335,
+      "cotes": {
+        "1": 7.0,
+        "2": 40.0,
+        "3": 5.4,
+        "4": 29.0,
+        "5": 39.0,
+        "6": 2.0,
+        "7": 4.4
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T13:58:02.505711",
+      "minutes_avant_depart": 2.9615986333333333,
+      "cotes": {
+        "1": 7.1,
+        "2": 41.0,
+        "3": 5.5,
+        "4": 28.0,
+        "5": 39.0,
+        "6": 1.9,
+        "7": 4.4
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T13:58:42.563924",
+      "minutes_avant_depart": 2.2949301,
+      "cotes": {
+        "1": 6.9,
+        "2": 45.0,
+        "3": 5.6,
+        "4": 31.0,
+        "5": 42.0,
+        "6": 1.9,
+        "7": 4.4
       }
     }
   ]
