@@ -1,0 +1,129 @@
+{
+  "course": "PRIX D'AMIENS",
+  "numero": 6,
+  "reunion": 2,
+  "heure_depart": 1791026700000,
+  "distance": 3600,
+  "scraped_at": "2026-10-03T13:21:22.493789",
+  "minutes_avant_depart": 4,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "MAVERICK'AMSYL",
+      "cote_live": 4.3,
+      "cote_reference": 4.9,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1791026470000
+    },
+    {
+      "numPmu": 2,
+      "nom": "BEL ECLAT",
+      "cote_live": 2.9,
+      "cote_reference": 2.0,
+      "tendance": "+",
+      "favoris": true,
+      "timestamp_cote": 1791026470000
+    },
+    {
+      "numPmu": 3,
+      "nom": "PACHA DES BEAUX",
+      "cote_live": 4.6,
+      "cote_reference": 20.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1791026470000
+    },
+    {
+      "numPmu": 4,
+      "nom": "MAKAO'K",
+      "cote_live": 18.0,
+      "cote_reference": 27.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1791026470000
+    },
+    {
+      "numPmu": 5,
+      "nom": "LA CHOCOLATINE",
+      "cote_live": 6.3,
+      "cote_reference": 4.6,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1791026470000
+    },
+    {
+      "numPmu": 6,
+      "nom": "PETITE THEYSS",
+      "cote_live": 8.5,
+      "cote_reference": 11.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1791026470000
+    },
+    {
+      "numPmu": 7,
+      "nom": "LOZEN DE LORME",
+      "cote_live": 41.0,
+      "cote_reference": 17.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1791026470000
+    }
+  ],
+  "hippodrome": "FONTAINEBLEAU",
+  "releves": [
+    {
+      "scraped_at": "2026-10-03T13:19:22.469911",
+      "minutes_avant_depart": 5.628384833333333,
+      "cotes": {
+        "1": 4.5,
+        "2": 2.4,
+        "3": 11.0,
+        "4": 13.0,
+        "5": 5.2,
+        "6": 7.8,
+        "7": 35.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T13:20:02.861807",
+      "minutes_avant_depart": 4.9553524,
+      "cotes": {
+        "1": 4.3,
+        "2": 2.5,
+        "3": 11.0,
+        "4": 14.0,
+        "5": 5.1,
+        "6": 7.7,
+        "7": 32.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T13:20:42.412324",
+      "minutes_avant_depart": 4.2950479999999995,
+      "cotes": {
+        "1": 4.4,
+        "2": 2.4,
+        "3": 11.0,
+        "4": 14.0,
+        "5": 5.3,
+        "6": 8.0,
+        "7": 33.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T13:21:22.493789",
+      "minutes_avant_depart": 3.6283792166666666,
+      "cotes": {
+        "1": 4.3,
+        "2": 2.9,
+        "3": 4.6,
+        "4": 18.0,
+        "5": 6.3,
+        "6": 8.5,
+        "7": 41.0
+      }
+    }
+  ]
+}
