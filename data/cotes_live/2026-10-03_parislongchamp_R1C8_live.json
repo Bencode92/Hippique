@@ -4,98 +4,98 @@
   "reunion": 1,
   "heure_depart": 1791042000000,
   "distance": 1600,
-  "scraped_at": "2026-10-03T17:42:33.229309",
-  "minutes_avant_depart": -3,
+  "scraped_at": "2026-10-03T17:44:33.175545",
+  "minutes_avant_depart": -5,
   "participants": [
     {
       "numPmu": 1,
       "nom": "QUDDWAH",
-      "cote_live": 2.0,
+      "cote_live": 2.1,
       "cote_reference": 2.9,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791042138000
+      "timestamp_cote": 1791042160000
     },
     {
       "numPmu": 2,
       "nom": "RIDARI",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 11.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791042138000
+      "timestamp_cote": 1791042160000
     },
     {
       "numPmu": 3,
       "nom": "QIRAT",
-      "cote_live": 12.0,
+      "cote_live": 9.3,
       "cote_reference": 12.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791042138000
+      "timestamp_cote": 1791042160000
     },
     {
       "numPmu": 4,
       "nom": "DIEGO VENTURA",
-      "cote_live": 33.0,
+      "cote_live": 23.0,
       "cote_reference": 24.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791042138000
+      "timestamp_cote": 1791042160000
     },
     {
       "numPmu": 5,
       "nom": "SIR TOMMY CEN",
-      "cote_live": 49.0,
+      "cote_live": 51.0,
       "cote_reference": 22.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791042138000
+      "timestamp_cote": 1791042160000
     },
     {
       "numPmu": 6,
       "nom": "SICILIANO",
-      "cote_live": 38.0,
+      "cote_live": 41.0,
       "cote_reference": 12.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791042138000
+      "timestamp_cote": 1791042160000
     },
     {
       "numPmu": 7,
       "nom": "ISAAC NEWTON",
-      "cote_live": 17.0,
+      "cote_live": 18.0,
       "cote_reference": 20.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791042138000
+      "timestamp_cote": 1791042160000
     },
     {
       "numPmu": 8,
       "nom": "FALLEN ANGEL",
-      "cote_live": 5.9,
+      "cote_live": 6.1,
       "cote_reference": 9.9,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791042138000
+      "timestamp_cote": 1791042160000
     },
     {
       "numPmu": 9,
       "nom": "ANAKOVA",
       "cote_live": 10.0,
       "cote_reference": 5.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791042138000
+      "timestamp_cote": 1791042160000
     },
     {
       "numPmu": 10,
       "nom": "ELASTIC",
       "cote_live": 11.0,
       "cote_reference": 8.1,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791042138000
+      "timestamp_cote": 1791042160000
     }
   ],
   "hippodrome": "PARISLONGCHAMP",
@@ -304,6 +304,54 @@
         "6": 38.0,
         "7": 17.0,
         "8": 5.9,
+        "9": 10.0,
+        "10": 11.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T17:43:13.544861",
+      "minutes_avant_depart": -3.2163800166666667,
+      "cotes": {
+        "1": 2.1,
+        "2": 14.0,
+        "3": 9.3,
+        "4": 23.0,
+        "5": 51.0,
+        "6": 41.0,
+        "7": 18.0,
+        "8": 6.1,
+        "9": 10.0,
+        "10": 11.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T17:43:54.103967",
+      "minutes_avant_depart": -3.8938344999999996,
+      "cotes": {
+        "1": 2.1,
+        "2": 14.0,
+        "3": 9.3,
+        "4": 23.0,
+        "5": 51.0,
+        "6": 41.0,
+        "7": 18.0,
+        "8": 6.1,
+        "9": 10.0,
+        "10": 11.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-03T17:44:33.175545",
+      "minutes_avant_depart": -4.549716833333333,
+      "cotes": {
+        "1": 2.1,
+        "2": 14.0,
+        "3": 9.3,
+        "4": 23.0,
+        "5": 51.0,
+        "6": 41.0,
+        "7": 18.0,
+        "8": 6.1,
         "9": 10.0,
         "10": 11.0
       }
