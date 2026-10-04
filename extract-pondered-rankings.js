@@ -291,18 +291,16 @@ async function processCategory(category) {
     const dateStr = now.toISOString().split('T')[0]; // YYYY-MM-DD
     const hh = String(now.getUTCHours()).padStart(2, '0');
     const mm = String(now.getUTCMinutes()).padStart(2, '0');
-    const snapshotName = `${dateStr}_${hh}h${mm}`; // ex: 2026-04-19_09h30
     const latestFile = path.join(OUTPUT_DIR, `${category.id}_ponderated_latest.json`);
 
-    // Snapshot historique dans data/rankings/YYYY-MM-DD_HHhMM/
-    const snapshotDir = path.join(OUTPUT_DIR, 'rankings', snapshotName);
-    await fs.mkdir(snapshotDir, { recursive: true });
-    const snapshotFile = path.join(snapshotDir, `${category.id}.json`);
-
-    // Écrire les fichiers
-    await fs.writeFile(snapshotFile, JSON.stringify(result, null, 2));
+    // PLUS DE SNAPSHOT DATÉ ICI (04/10/2026). Ce script en écrivait un en JSON
+    // dans data/rankings/YYYY-MM-DD_HHhMM/, à côté des snapshots CSV produits par
+    // scripts/snapshot_brut.py — deux formats dans le même dossier. Un dossier
+    // JSON devenu le plus récent vidait silencieusement tous les rattachements
+    // des scripts qui lisent du CSV, et chaque passage poussait 2,5 millions de
+    // lignes de diff. La référence point-in-time reste le snapshot CSV.
     await fs.writeFile(latestFile, JSON.stringify(result, null, 2));
-    console.log(`  📸 Snapshot: ${snapshotFile}`);
+    console.log(`  ✅ ${latestFile}`);
     
     console.log(`✅ Catégorie ${category.id} traitée avec succès.`);
     return { category: category.id, success: true };

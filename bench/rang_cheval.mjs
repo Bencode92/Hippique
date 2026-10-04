@@ -22,7 +22,7 @@ const fr = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/hippos_filter.json')
 const hippoFr = f => { const h = f.replace(/^\d{4}-\d{2}-\d{2}_/, '').replace(/\.json$/, '').replace(/_/g, '-'); return fr.some(w => h.startsWith(w)); };
 const num = v => { const x = parseFloat(String(v ?? '').replace(',', '.').replace(/[^\d.\-]/g, '')); return isFinite(x) ? x : 0; };
 function lireCSV(f) { if (!fs.existsSync(f)) return []; const L = fs.readFileSync(f, 'utf8').split('\n').filter(l => l.trim()); const c = L[0].split('\t'); return L.slice(1).map((l, i) => { const r = Object.fromEntries(l.split('\t').map((v, j) => [c[j], v])); r.Rang = i + 1; return r; }); }
-const SNAPS = fs.readdirSync(path.join(ROOT, 'data/rankings')).filter(d => /^\d{4}-\d{2}-\d{2}_/.test(d)).sort();
+const SNAPS = fs.readdirSync(path.join(ROOT, 'data/rankings')).filter(d => /^\d{4}-\d{2}-\d{2}_/.test(d) && fs.existsSync(path.join(ROOT, 'data/rankings', d, 'chevaux.csv'))).sort();
 const cache = new Map();
 const STRICT = !process.argv.includes('--egal');   // strictement antérieur par défaut (fuite du snapshot de l'après-midi) ; --egal pour l'ancienne convention
 const R2025 = process.argv.includes('--2025');    // classement 2025 seul (aucune fuite possible)

@@ -97,7 +97,9 @@ jobs:
           git config --local user.name "GitHub Action - Pipeline Complet"
 
           git add data/*_ponderated_latest.json 2>/dev/null || true
-          git add data/rankings/ 2>/dev/null || true
+          # plus de data/rankings/ ici : les snapshots datés sont produits en CSV
+          # par snapshot-rankings.yml, et ce workflow en écrivait une copie JSON
+          # dans le même dossier (04/10/2026).
           git add data/*_distance_stats.json 2>/dev/null || true
           git add data/*_forme_recente.json 2>/dev/null || true
           git add data/combo_jockey_entraineur.json 2>/dev/null || true
@@ -110,7 +112,10 @@ jobs:
             echo "Aucun changement à committer"
           else
             git commit -m "🔄 Pipeline complet - rankings + distance + forme ($(date +%Y-%m-%d))"
-            git push
+            for i in 1 2 3 4 5; do
+              git pull --rebase -q origin main || true
+              git push origin main && break || sleep $((5 * i))
+            done
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

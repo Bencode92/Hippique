@@ -38,7 +38,11 @@ function lireCSV(f) {
 }
 const CATS = { chevaux: 'cheval', jockeys: 'jockey', entraineurs: 'entraineur', eleveurs: 'éleveurs', proprietaires: 'propriétaire', cravache_or: 'jockey' };
 const COURT = { chevaux: 'ch', jockeys: 'jk', entraineurs: 'ent', eleveurs: 'el', proprietaires: 'pr', cravache_or: 'cr' };
-const SNAPS = fs.readdirSync(path.join(ROOT, 'data/rankings')).filter(d => /^\d{4}-\d{2}-\d{2}_/.test(d)).sort();
+// Un dossier de snapshot ne compte que s'il porte les CSV attendus : un autre
+// workflow (pipeline-complet) y dépose aussi des .json, et le retenir vidait
+// tous les rattachements sans rien signaler.
+const estSnapCSV = d => fs.existsSync(path.join(ROOT, 'data/rankings', d, 'jockeys.csv'));
+const SNAPS = fs.readdirSync(path.join(ROOT, 'data/rankings')).filter(d => /^\d{4}-\d{2}-\d{2}_/.test(d) && estSnapCSV(d)).sort();
 const cache = new Map();
 function indexes(date) {
   let choisi = null;

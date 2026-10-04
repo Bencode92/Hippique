@@ -23,7 +23,7 @@ const num = v => { const x = parseFloat(String(v ?? '').replace(',', '.').replac
 
 // ── leviers : même code que la grille (bench/grille_walkforward.mjs)
 function lireCSV(f) { if (!fs.existsSync(f)) return []; const L = fs.readFileSync(f, 'utf8').split('\n').filter(l => l.trim()); const c = L[0].split('\t'); return L.slice(1).map((l, i) => { const r = Object.fromEntries(l.split('\t').map((v, j) => [c[j], v])); r.Rang = i + 1; const pa = num(r.Partants || r.Courses), v = num(r.Victoires), pl = num(r.Places), al = num(r['Allocation tot.']); r.TauxVictoire = pa > 0 ? +(v / pa * 100).toFixed(1) : 0; r.TauxPlace = pa > 0 ? +(pl / pa * 100).toFixed(1) : 0; r.GainMoyen = pa > 0 ? +(al / pa).toFixed(2) : 0; r.ScoreMixte = r.TauxVictoire; return r; }); }
-const SNAPS = fs.readdirSync(path.join(ROOT, 'data/rankings')).filter(d => /^\d{4}-\d{2}-\d{2}_/.test(d)).sort();
+const SNAPS = fs.readdirSync(path.join(ROOT, 'data/rankings')).filter(d => /^\d{4}-\d{2}-\d{2}_/.test(d) && fs.existsSync(path.join(ROOT, 'data/rankings', d, 'jockeys.csv'))).sort();
 const cache = new Map();
 function snapPour(date) { let ch = null; for (const s of SNAPS) if (s.slice(0, 10) < date) ch = s; if (!ch) return null; if (cache.has(ch)) return cache.get(ch); const dir = path.join(ROOT, 'data/rankings', ch), S = {}; for (const [k, f, cat] of [['jk26', 'jockeys.csv', 'jockeys'], ['jk25', 'jockeys_2025.csv', 'jockeys'], ['chx26', 'chevaux.csv', 'chevaux'], ['chx25', 'chevaux_2025.csv', 'chevaux']]) { const rows = lireCSV(path.join(dir, f)); S[k] = { idx: M.creerIndex(rows, cat), pop: rows.length || 1, cat }; } cache.set(ch, S); return S; }
 const trouve = (s, nom) => { const r = M.rattacher(s.idx, nom, s.cat); return r ? r.item : null; };

@@ -32,7 +32,7 @@ function lireCSV(f) {
   return lignes.slice(1).map(l => Object.fromEntries(l.split('\t').map((v, i) => [cols[i], v])));
 }
 const CATS = ['jockeys', 'entraineurs', 'chevaux', 'eleveurs', 'proprietaires'];
-const SNAPS = fs.readdirSync(path.join(ROOT, 'data/rankings')).filter(d => /^\d{4}-\d{2}-\d{2}_/.test(d)).sort();
+const SNAPS = fs.readdirSync(path.join(ROOT, 'data/rankings')).filter(d => /^\d{4}-\d{2}-\d{2}_/.test(d) && fs.existsSync(path.join(ROOT, 'data/rankings', d, 'jockeys.csv'))).sort();
 const cache = new Map();
 function indexesPour(date) {
   let choisi = null;

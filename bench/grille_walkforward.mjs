@@ -47,7 +47,7 @@ function lireCSV(f) {
     return r;
   });
 }
-const SNAPS = fs.readdirSync(path.join(ROOT, 'data/rankings')).filter(d => /^\d{4}-\d{2}-\d{2}_/.test(d)).sort();
+const SNAPS = fs.readdirSync(path.join(ROOT, 'data/rankings')).filter(d => /^\d{4}-\d{2}-\d{2}_/.test(d) && fs.existsSync(path.join(ROOT, 'data/rankings', d, 'jockeys.csv'))).sort();
 const cache = new Map();
 function snapPour(date) {
   let choisi = null;
