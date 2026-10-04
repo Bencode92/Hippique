@@ -13,6 +13,17 @@ on:
     # (sortie 78) : le run échoue, visible dans Actions, et c'est le rappel
     # qu'il faut réimporter les CSV.
     - cron: '30 4 * * 1'
+
+  # Déclencheur réel : l'import des CSV lui-même. Le cron hebdomadaire ne
+  # servait à rien le jour où Benoit réimporte un samedi matin — l'archive
+  # n'aurait été créée que le lundi, et la carte aurait servi tout le week-end
+  # des classements d'un mois (constaté le 04/10/2026). Ici l'archive est
+  # horodatée dans la minute qui suit le dépôt des CSV, donc avant les courses.
+  # Le workflow n'écrit que dans data/rankings/ : il ne peut pas se relancer.
+  push:
+    paths:
+      - 'data/raw_csv/**.csv'
+
   workflow_dispatch:
 
 permissions:
@@ -57,6 +68,22 @@ jobs:
             echo "Aucun changement"
           else
             git commit -m "📸 Snapshot rankings ${STAMP}"
+            git push
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Sans ça, data/jour/<date>.json garde les rangs de l'ancien snapshot
+      # jusqu'au prochain passage du scraper : la carte afficherait un
+      # classement périmé alors que l'archive fraîche est déjà dans le dépôt.
+      - name: Recalculer la carte du jour
+        run: |
+          node bench/precalcul_jour.mjs || true
+          git add data/jour/ || true
+          if git diff --cached --quiet; then
+            echo "Carte du jour inchangée"
+          else
+            git commit -m "♻️ Carte du jour recalculée sur le snapshot frais"
             git push
           fi
         env:
