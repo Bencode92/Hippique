@@ -1614,8 +1614,13 @@
         // parrain ne fait que les préfixer (« QATAR PRIX DE L'ARC DE TRIOMPHE »).
         function estBelleCourse(nomCourse) {
             if (!_jkDist || !_jkDist.noms_belles_courses || !nomCourse) return false;
+            // Le parrain change d'une année à l'autre et d'un support à l'autre
+            // (« QATAR PRIX DE L'ARC DE TRIOMPHE », « PRIX DE L'ABBAYE DE LONGCHAMP »
+            // contre « ... LONGINES » dans l'historique) : on accepte l'inclusion dans
+            // les deux sens, sur un noyau d'au moins 12 lettres.
             const c = String(nomCourse).toUpperCase().replace(/[^A-Z]/g, '');
-            return _jkDist.noms_belles_courses.some(n => n.length >= 10 && c.includes(n));
+            if (c.length < 12) return false;
+            return _jkDist.noms_belles_courses.some(n => n.length >= 12 && (c.includes(n) || n.includes(c)));
         }
 
         function pastilleJockey(nomJockey, distance, nomCourse) {
@@ -1624,6 +1629,22 @@
             let belle = '';
             // Belle course : le classement de la cravache d'or, affiché EN PLUS de la distance.
             if (estBelleCourse(nomCourse)) {
+                // Dans une belle course, le classement qui compte est celui des belles
+                // courses À CETTE LONGUEUR (demande de Benoit : « meilleur sur 2400 m en
+                // groupes », pas toutes courses). Repli sur le classement groupes toutes
+                // distances si la bande est trop mince.
+                const BD = _jkDist.belles_par_distance;
+                const bd = BD && distance && BD.bandes[String(Math.round(distance / 100) * 100)];
+                const cd = bd && bd.classement.find(x => x.jk === cleJk);
+                if (cd && cd.rang <= 5) {
+                    const coul = cd.rp >= 1.05 ? '#D4AF37' : 'rgba(255,255,255,0.45)';
+                    const t = `${cd.jk} — belles courses autour de ${Math.round(distance / 100) * 100} m (±${BD.bande} m) : ${cd.rang}e sur ${bd.jockeys} jockeys\n`
+                        + `${cd.n} montes en groupes à cette longueur, ${cd.v} victoires, ${cd.tx} %\n`
+                        + `Réel / promis ${cd.rp} — ${cd.rp >= 1.05 ? 'il gagne PLUS que sa cote ne le promet ici' : cd.rp >= 0.98 ? 'exactement au prix du marché' : 'moins que sa cote ne le promet'}\n`
+                        + `Rendement : ${cd.roi > 0 ? '+' : ''}${cd.roi} % ± ${cd.se}\n`
+                        + `Échantillon mince (${cd.n} montes : un taux de victoire y vaut ±${Math.round(100 * Math.sqrt(cd.tx / 100 * (1 - cd.tx / 100) / cd.n))} points). Lecture seule.`;
+                    return ` <span title="${t.replace(/"/g, '&quot;')}" style="display:inline-block;font-size:.72em;font-weight:600;color:${coul};border:1px solid ${coul};border-radius:3px;padding:0 4px;vertical-align:1px;cursor:help">🏆 ${cd.rang}${cd.rang === 1 ? 'er' : 'e'} / ${Math.round(distance / 100) * 100}m en groupes</span>`;
+                }
                 const B = _jkDist.belles_courses;
                 const c = B && B.classement.find(x => x.jk === cleJk);
                 if (c && c.rang <= 8) {

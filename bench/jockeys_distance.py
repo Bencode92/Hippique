@@ -24,6 +24,7 @@ import json, glob, math, collections
 
 MIN_MONTES, BANDE = 50, 100
 MIN_BELLE = 40          # belles courses : 543 groupes seulement, 20 jockeys à 50+ montes
+MIN_BELLE_D, BANDE_BELLE = 20, 200   # par longueur EN GROUPES : fenêtre élargie, 4 334 montes en tout
 rows, belles, noms_belles = [], [], set()
 def _cle(t): return ''.join(ch for ch in (t or '').upper() if ch.isalpha())
 for f in sorted(glob.glob('data/histo/*.jsonl')):
@@ -86,6 +87,31 @@ for jk, v in parb.items():
 casesb.sort(key=lambda c: -c['tx'])
 for i, c in enumerate(casesb): c['rang'] = i + 1
 
+# ── classement par longueur, RESTREINT AUX BELLES COURSES ────────────────
+# Ce que Benoit demande : « meilleur sur 2400 m EN GROUPES », pas toutes courses
+# confondues. L'échantillon est dix fois plus mince (4 334 montes contre
+# 196 078) : fenêtre de ±200 m au lieu de ±100, minimum 20 montes, et le nombre
+# de montes est toujours affiché — à 20 montes, un taux de victoire a ±9 points.
+bandes_b = sorted({round(r[1] / 100) * 100 for r in belles})
+outb = {}
+for b in bandes_b:
+    sel = [r for r in belles if abs(r[1] - b) <= BANDE_BELLE]
+    if len(sel) < 120: continue
+    par2 = collections.defaultdict(list)
+    for r in sel: par2[r[0]].append(r)
+    cases2 = []
+    for jk, v in par2.items():
+        if len(v) < MIN_BELLE_D: continue
+        n = len(v); vic = sum(1 for r in v if r[3]); prom = sum(r[4] for r in v)
+        gains = [(r[2] - 1) if r[3] else -1.0 for r in v]
+        moy = sum(gains) / n
+        sd = math.sqrt(sum((g - moy) ** 2 for g in gains) / (n - 1)) if n > 1 else 0
+        cases2.append(dict(jk=jk, n=n, v=vic, tx=round(100 * vic / n, 1), rp=round(vic / prom, 2) if prom else 0,
+                           roi=round(100 * moy, 1), se=round(100 * sd / math.sqrt(n), 1)))
+    cases2.sort(key=lambda c: -c['tx'])
+    for i, c in enumerate(cases2): c['rang'] = i + 1
+    if cases2: outb[str(b)] = dict(montes=len(sel), jockeys=len(cases2), classement=cases2)
+
 doc = {
     '_doc': ("Classement des jockeys par bande de distance (±%d m, minimum %d montes). "
              "tx = taux de victoire (performance) ; rp = réel/promis = victoires / somme des probas "
@@ -98,10 +124,15 @@ doc = {
     'periode': [min(r[1] for r in rows) and '2022-01', '2026-10'],
     'montes_totales': len(rows), 'bandes': out,
     'belles_courses': dict(montes=len(belles), courses=len(noms_belles), jockeys=len(casesb), classement=casesb),
+    'belles_par_distance': dict(bande=BANDE_BELLE, min_montes=MIN_BELLE_D, bandes=outb),
     'noms_belles_courses': sorted(noms_belles),
 }
 json.dump(doc, open('data/jockeys_distance.json', 'w'), ensure_ascii=False, separators=(',', ':'))
 print(f"{len(rows)} montes · {len(out)} bandes · {len(belles)} montes en belles courses ({len(noms_belles)} groupes) → data/jockeys_distance.json")
+print("  belles courses par longueur : " + " · ".join(f"{b}m({v['jockeys']}jk)" for b, v in sorted(outb.items(), key=lambda kv: int(kv[0]))))
+for b in ['1000', '1400', '1600', '2000', '2400']:
+    if b in outb:
+        print(f"    {b} m en groupes : " + " · ".join(f"{c['rang']}. {c['jk']} {c['tx']}% ({c['n']}m) rp{c['rp']}" for c in outb[b]['classement'][:3]))
 print("  belles courses, top 6 : " + " · ".join(f"{c['rang']}. {c['jk']} {c['tx']}% rp{c['rp']} ({c['n']}m, {c['g1v']}/{c['g1']} en Gr.I)" for c in casesb[:6]))
 for b in ['1000', '1200', '1600', '2000', '2100', '2400', '3000']:
     if b not in out: continue
