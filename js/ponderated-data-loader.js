@@ -519,11 +519,25 @@ document.addEventListener('DOMContentLoaded', function() {
         window.loadTopPerformers = loadTopPerformersWithPonderated;
     }
     
-    // Si la page d'accueil est déjà chargée et que les conteneurs existent, mettre à jour immédiatement
+    // Les encarts « Top … » coûtent 13 Mo de classements pondérés (chevaux 1,6 Mo,
+    // propriétaires 2,7, éleveurs 1,9…). Les charger au DOMContentLoaded faisait
+    // patienter une minute avant d'afficher une course sur le réseau d'un
+    // hippodrome — alors que la carte n'en a plus besoin (data/jour/<date>.json).
+    // On attend donc que ces encarts arrivent réellement à l'écran.
     const topJockeysContainer = document.getElementById('top-jockeys');
     if (topJockeysContainer) {
-        console.log("📊 Chargement des top performers avec les données pondérées");
-        loadTopPerformersWithPonderated();
+        if (!('IntersectionObserver' in window)) {
+            loadTopPerformersWithPonderated();
+        } else {
+            const io = new IntersectionObserver(function (entrees) {
+                if (entrees.some(function (e) { return e.isIntersecting; })) {
+                    io.disconnect();
+                    console.log("📊 Encarts Top visibles — chargement des données pondérées");
+                    loadTopPerformersWithPonderated();
+                }
+            }, { threshold: 0.1 });
+            io.observe(topJockeysContainer);
+        }
     }
 });
 

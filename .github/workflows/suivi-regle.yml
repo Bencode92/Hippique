@@ -48,6 +48,11 @@ jobs:
           python3 backfill_histo.py $(date -u -d '10 days ago' +%Y-%m-%d) $(date -u +%Y-%m-%d) || true
           python3 backfill_rapports.py $(date -u +%Y-%m) || true
 
+      - name: Précalcul des journées récentes (carte rapide)
+        run: |
+          node bench/precalcul_jour.mjs $(date -u +%Y-%m-%d) || true
+          node bench/precalcul_jour.mjs $(date -u -d 'tomorrow' +%Y-%m-%d) || true
+
       - name: Relancer le test séquentiel
         run: node bench/sprt_regle.mjs | tee /tmp/sprt.txt
 
@@ -55,7 +60,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action - Suivi règle"
-          git add data/histo/ data/rapports/ data/sprt_etat.json data/sprt_journal.json 2>/dev/null || true
+          git add data/histo/ data/rapports/ data/jour/ data/sprt_etat.json data/sprt_journal.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "Rien à publier"
           else

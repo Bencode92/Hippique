@@ -1663,14 +1663,92 @@
         // persiste pas (corrélation +0,15 entre 2022-24 et 2025-26 ; les dix meilleures cases
         // rendent −15,6 % ensuite). La pastille dit qui est fort sur la distance, et sa couleur
         // dit si le marché le paie déjà.
-        let _jkDist = null;
-        fetch('data/jockeys_distance.json?_=' + Date.now()).then(r => r.ok ? r.json() : Promise.reject())
-            .catch(() => fetch('https://raw.githubusercontent.com/bencode92/Hippique/main/data/jockeys_distance.json?_=' + Date.now()).then(r => r.ok ? r.json() : null))
-            .then(j => { _jkDist = j; }).catch(() => {});
+        // ── PRÉCALCUL DU JOUR ───────────────────────────────────────────────
+        // data/jour/<date>.json : rangs France Galop, pastilles et forme, résolus
+        // côté dépôt (bench/precalcul_jour.mjs). Avant, la carte téléchargeait
+        // 13,3 Mo de classements pondérés et de forme récente pour écrire six
+        // rangs par ligne — une minute d'attente sur le réseau d'un hippodrome.
+        // Ici : ~100 Ko. Si le fichier manque, on retombe sur les classements.
+        let _jour = null, _jourDate = null;
+        async function chargerJour(dateStr) {
+            if (_jourDate === dateStr) return _jour;
+            _jourDate = dateStr; _jour = null;
+            for (const u of [`data/jour/${dateStr}.json?_=${Date.now()}`,
+                             `https://raw.githubusercontent.com/bencode92/Hippique/main/data/jour/${dateStr}.json?_=${Date.now()}`]) {
+                try { const r = await fetch(u, { cache: 'no-store' }); if (r.ok) { _jour = await r.json(); break; } } catch (e) {}
+            }
+            console.log(_jour ? `⚡ précalcul du ${dateStr} : ${Object.keys(_jour.hippodromes).length} hippodromes (snapshot ${_jour.snapshot})` : `précalcul du ${dateStr} absent — repli sur les classements complets`);
+            return _jour;
+        }
+        const normHip = h => (h || '').toString().toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^A-Z0-9]/g, '');
+        function jourCourse(hippodrome, numeroCourse) {
+            if (!_jour) return null;
+            const cible = normHip(hippodrome);
+            for (const [h, courses] of Object.entries(_jour.hippodromes)) {
+                if (normHip(h) !== cible) continue;
+                return courses.find(c => String(c.numero) === String(numeroCourse)) || null;
+            }
+            return null;
+        }
+        const jourPartant = (jc, p) => jc && (jc.partants || []).find(x => String(x.n) === String(p['n°'] || p.numero || p.n)) || null;
+
+        // Chargé seulement en REPLI : quand le précalcul du jour existe, les
+        // pastilles y sont déjà et ces 210 Ko ne servent à rien.
+        let _jkDist = null, _jkDistPromise = null;
+        function chargerJkDist() {
+            if (_jkDistPromise) return _jkDistPromise;
+            _jkDistPromise = fetch('data/jockeys_distance.json?_=' + Date.now()).then(r => r.ok ? r.json() : Promise.reject())
+                .catch(() => fetch('https://raw.githubusercontent.com/bencode92/Hippique/main/data/jockeys_distance.json?_=' + Date.now()).then(r => r.ok ? r.json() : null))
+                .then(j => { _jkDist = j; return j; }).catch(() => null);
+            return _jkDistPromise;
+        }
 
         // Une belle course (groupe I, II, III) se reconnaît à son nom : data/courses ne
         // porte pas la catégorie, mais l'historique donne les 188 noms de groupes, et le
         // parrain ne fait que les préfixer (« QATAR PRIX DE L'ARC DE TRIOMPHE »).
+        // Rend une pastille déjà résolue par bench/precalcul_jour.mjs.
+        // Rang « Optimale » calculé depuis les seules cotes, quand la formule publiée
+        // pour le bucket de distance est la cote seule. Rend null sinon : on repasse
+        // alors par le calcul complet.
+        let _bestF = null, _bestFPromise = null;
+        function chargerBestFormulas() {
+            if (_bestFPromise) return _bestFPromise;
+            _bestFPromise = fetch('data/best_formulas.json?_=' + Date.now()).then(r => r.ok ? r.json() : Promise.reject())
+                .catch(() => fetch('https://raw.githubusercontent.com/bencode92/Hippique/main/data/best_formulas.json?_=' + Date.now()).then(r => r.ok ? r.json() : null))
+                .then(j => { _bestF = j; return j; }).catch(() => null);
+            return _bestFPromise;
+        }
+        async function optimaleDepuisCotes(ctx) {
+            const F = _bestF || await chargerBestFormulas();
+            if (!F) return null;
+            const d = parseInt(ctx.distance) || 0;
+            const bucket = d < 1400 ? 'sprint' : d < 1700 ? 'mile' : d < 2200 ? 'middle' : 'staying';
+            const f = F[bucket] && F[bucket].leviers ? F[bucket] : F.tous;
+            if (!f || !f.leviers || f.leviers.length !== 1 || f.leviers[0] !== 'Cote (1/cote)') return null;
+            const parCote = (ctx.participants || []).filter(p => parseFloat(p.cote) > 1)
+                .sort((a, b) => parseFloat(a.cote) - parseFloat(b.cote));
+            const out = { _formula: { ...f, _bucket: bucket }, _bucket: bucket };
+            parCote.forEach((p, i) => { out[p['n°'] || p.numero || p.n] = { rang: i + 1 }; });
+            return out;
+        }
+
+        function pastilleDepuisPrecalcul(c) {
+            if (!c) return '';
+            const coul = c.rp >= 1.05 ? '#D4AF37' : 'rgba(255,255,255,0.45)';
+            const quoi = c.type === 'groupe_dist' ? `belles courses autour de ${c.bande} m (±200 m)`
+                       : c.type === 'groupe' ? 'belles courses (groupes I, II, III)'
+                       : `${c.bande} m (±100 m)`;
+            const t = `${c.jk} — ${quoi} : ${c.rang}e sur ${c.total} jockeys\n`
+                + `${c.n} montes, ${c.v} victoires, ${c.tx} %\n`
+                + `Réel / promis ${c.rp} — ${c.rp >= 1.05 ? 'il gagne PLUS que sa cote ne le promet ici' : c.rp >= 0.98 ? 'exactement au prix du marché' : 'moins que sa cote ne le promet'}\n`
+                + `Rendement : ${c.roi > 0 ? '+' : ''}${c.roi} % ± ${c.se}\n`
+                + `Lecture seule : une spécialité de jockey ne se répète pas d'une période à l'autre.`;
+            const lib = c.type === 'groupe' ? `🏆 ${c.rang}${c.rang === 1 ? 'er' : 'e'} · groupes`
+                      : c.type === 'groupe_dist' ? `🏆 ${c.rang}${c.rang === 1 ? 'er' : 'e'} · ${c.bande}m`
+                      : `${c.rang}${c.rang === 1 ? 'er' : 'e'} · ${c.bande}m`;
+            return ` <span title="${t.replace(/"/g, '&quot;')}" style="display:inline-block;font-size:.72em;font-weight:600;color:${coul};border:1px solid ${coul};border-radius:3px;padding:0 4px;vertical-align:1px;cursor:help;white-space:nowrap">${lib}</span>`;
+        }
+
         function estBelleCourse(nomCourse) {
             if (!_jkDist || !_jkDist.noms_belles_courses || !nomCourse) return false;
             // Le parrain change d'une année à l'autre et d'un support à l'autre
@@ -2730,6 +2808,30 @@
             }
             
             // Fonction pour charger et afficher les top performers pour chaque catégorie
+            // Charge les classements complets à la demande : quand les encarts
+            // « Top … » entrent dans le champ, ou au premier besoin réel.
+            let _classementsDemandes = null;
+            function chargerClassements() {
+                if (_classementsDemandes) return _classementsDemandes;
+                window.__traceClassements = (new Error('appelant')).stack.split('\n').slice(1, 4).join(' | ');
+                console.log('Chargement des classements complets (13 Mo) — encarts Top…');
+                _classementsDemandes = rankingLoader.loadCoreData()
+                    .then(() => rankingLoader.loadExtraData())
+                    .then(() => loadTopPerformers())
+                    .catch(e => console.warn('Classements complets indisponibles', e));
+                return _classementsDemandes;
+            }
+            window.chargerClassements = chargerClassements;
+            function chargerClassementsSiVisible() {
+                const cible = document.getElementById('top-jockeys');
+                if (!cible) return;
+                if (!('IntersectionObserver' in window)) { chargerClassements(); return; }
+                const io = new IntersectionObserver(es => {
+                    if (es.some(e => e.isIntersecting)) { io.disconnect(); chargerClassements(); }
+                }, { rootMargin: '0px', threshold: 0.1 });
+                io.observe(cible);
+            }
+
             async function loadTopPerformers() {
                 // Précharger toutes les données de classement
                 await rankingLoader.loadAllData();
@@ -2815,22 +2917,15 @@
                     
                     // Charger les données
                     courseData = await coursesLoader.loadCoursesForDate(dateStr);
+                    chargerJour(dateStr);   // en parallèle, ~100 Ko
                     
-                    // Précharger les données de classement en arrière-plan.
-                    // Noyau d'abord (~4 Mo) : il débloque le classement Leviers.
-                    // Le reste (~85 Mo, classement Modèle + top performers) suit.
-                    rankingLoader.loadCoreData().then(() => {
-                        console.log("Noyau de classement prêt — classement Leviers disponible");
-                        return rankingLoader.loadExtraData();
-                    }).then(() => {
-                        console.log("Données de classement préchargées avec succès");
-                        // Charger les top performers des différentes catégories
-                        loadTopPerformers().catch(error => {
-                            console.error("Erreur lors du chargement des top performers:", error);
-                        });
-                    }).catch(error => {
-                        console.error("Erreur lors du préchargement des données de classement:", error);
-                    });
+                    // Les classements complets (13 Mo : pondérés, forme, stats de
+                    // distance) ne servent QUE aux encarts « Top jockeys / chevaux »
+                    // du bas de page — la carte, elle, lit data/jour/<date>.json.
+                    // On ne les charge donc que si ces encarts arrivent à l'écran,
+                    // et jamais tant qu'on regarde les courses. Si le précalcul du
+                    // jour manque, le détail d'une course les demandera lui-même.
+                    chargerClassementsSiVisible();
                     
                     // Mettre à jour l'affichage
                     displayHippodromes();
@@ -2919,8 +3014,14 @@
                     if (coursesTerminees.length >= 2) {
                         let rN1=0, rF1=0, rN2=0, rF2=0, rN3=0, rF3=0, rO1=0, rO2=0, rO3=0, rTotal=coursesTerminees.length;
                         // Pré-calcul du ranking optimal pour chaque course terminée
+                        // Même raccourci que pour la carte : tant que la formule publiée
+                        // est « cote seule », ce rang se déduit des cotes — sinon ce
+                        // bilan réveillait 13 Mo de classements à chaque affichage.
                         const optimalRanksPerCourse = await Promise.all(
-                            coursesTerminees.map(c => rankingLoader.computeOptimalRanks(c).catch(() => null))
+                            coursesTerminees.map(async c => {
+                                const r = await optimaleDepuisCotes(c).catch(() => null);
+                                return r || rankingLoader.computeOptimalRanks(c).catch(() => null);
+                            })
                         );
                         coursesTerminees.forEach((c, ci) => {
                             const parts = c.participants || [];
@@ -3398,8 +3499,17 @@
                     
                     console.log("Contexte course pour pondération:", courseContext);
                     
-                    // Utiliser le contexte pour le calcul des scores
-                    const scoresPredictifs = await rankingLoader.calculerScoresCourse(courseContext);
+                    // Précalcul du jour : rangs, pastilles et forme déjà résolus côté dépôt.
+                    // S'il est là, on n'attend AUCUN classement — c'est ce qui faisait
+                    // patienter une minute avant de miser.
+                    // on attend le précalcul (~100 Ko, souvent déjà là) : sans ça, une
+                    // ouverture rapide retombait sur les 13 Mo de classements
+                    await chargerJour(coursesLoader.formatDateYMD(window.currentDate || new Date()));
+                    const jc = jourCourse(hippodrome, course.numero);
+                    if (!jc) { await chargerClassements(); await chargerJkDist(); }   // repli complet
+                    const scoresPredictifs = jc
+                        ? (courseContext.participants || []).map(p => ({ participant: p, scorePredictif: { score: '0', indiceConfiance: '1', details: {} } }))
+                        : await rankingLoader.calculerScoresCourse(courseContext);
                     
                     // Obtenir et afficher les poids utilisés
                     const weights = rankingLoader.getWeights(courseContext);
@@ -3461,7 +3571,12 @@
                     // Rang optimal : applique la formule champion du bucket (best_formulas.json)
                     let optimalResult = null;
                     try {
-                        optimalResult = await rankingLoader.computeOptimalRanks(courseContext);
+                        // Tant que best_formulas.json publie « cote seule » (c'est le cas
+                        // depuis le 15/09 : aucune formule ne bat la cote hors échantillon),
+                        // le rang Optimale EST le rang du marché — inutile de réveiller
+                        // 13 Mo de classements pour le recalculer.
+                        if (jc) optimalResult = await optimaleDepuisCotes(courseContext);
+                        if (!optimalResult) optimalResult = await rankingLoader.computeOptimalRanks(courseContext);
                         if (optimalResult?._formula) {
                             const f = optimalResult._formula;
                             const formulaStr = f.leviers.map((l, i) => `${l}×${Math.round(f.poids[i]*100)}%`).join(' + ');
@@ -3591,8 +3706,9 @@
                         const cordeDisplay = numeroCorde ? `<span class="corde-number">${numeroCorde}</span>` : '';
                         
                         // Forme indicators
-                        const formeCheval = scorePredictif.details.forme?.cheval;
-                        const formeJockey = scorePredictif.details.forme?.jockey;
+                        const jp = jourPartant(jc, participant);
+                        const formeCheval = jp?.forme?.ch ? { tendance: jp.forme.ch } : scorePredictif.details.forme?.cheval;
+                        const formeJockey = jp?.forme?.jk ? { tendance: jp.forme.jk } : scorePredictif.details.forme?.jockey;
                         const fch = formeCheval ? ({forte_hausse:'▲▲',hausse:'▲',forte_baisse:'▼▼',baisse:'▼'}[formeCheval.tendance]||'') : '';
                         const fcj = formeJockey ? ({forte_hausse:'▲▲',hausse:'▲',forte_baisse:'▼▼',baisse:'▼'}[formeJockey.tendance]||'') : '';
                         const fchColor = fch.includes('▲') ? '#40e05a' : fch.includes('▼') ? '#e05a40' : '#D4AF37';
@@ -3656,12 +3772,19 @@
                                     const m = String(participant.cheval || 'N/A').match(/^(.*?)(\s+[HFM]\.[A-Z]+\.?\s*\d+\s*a\.?\s*)$/i);
                                     return m ? `${m[1]}<span class="suffixe-cheval" style="opacity:.6">${m[2]}</span>` : (participant.cheval || 'N/A');
                                 })()}${fch ? ` <span title="Forme cheval" style="color:${fchColor};font-size:0.8em">${fch}</span>` : ''}</td>
-                                <td>${participant.jockey || 'N/A'}${fcj ? ` <span title="Forme jockey" style="color:${fcjColor};font-size:0.8em">${fcj}</span>` : ''}${pastilleJockey(participant.jockey, courseContext.distance, courseName)}</td>
+                                <td>${participant.jockey || 'N/A'}${fcj ? ` <span title="Forme jockey" style="color:${fcjColor};font-size:0.8em">${fcj}</span>` : ''}${jp ? pastilleDepuisPrecalcul(jp.pastille) : pastilleJockey(participant.jockey, courseContext.distance, courseName)}</td>
                                 <td>${participant.entraineur || 'N/A'}</td>
                                 ${(() => {
                                     // Rattachement par acteur : nom retrouvé au classement + rang, via le même module que le score
                                     const RL = window.rankingLoader; const lignes = []; let ok = 0;
-                                    for (const [cat, champ, lib] of [['chevaux', 'cheval', 'Cheval'], ['jockeys', 'jockey', 'Jockey'], ['entraineurs', 'entraineur', 'Entraîneur'], ['eleveurs', 'éleveurs', 'Éleveur'], ['proprietaires', 'propriétaire', 'Propriétaire'], ['cravache_or', 'jockey', 'Cravache d\'or']]) {
+                                    const pre = jp && jp.rangs;   // précalcul du jour
+                                    for (const [cat, champ, lib, court] of [['chevaux', 'cheval', 'Cheval', 'ch'], ['jockeys', 'jockey', 'Jockey', 'jk'], ['entraineurs', 'entraineur', 'Entraîneur', 'ent'], ['eleveurs', 'éleveurs', 'Éleveur', 'el'], ['proprietaires', 'propriétaire', 'Propriétaire', 'pr'], ['cravache_or', 'jockey', 'Cravache d\'or', 'cr']]) {
+                                        if (pre) {
+                                            const e = pre[court];
+                                            if (e) { ok++; lignes.push(`${lib} → ${e.nom}${e.r ? ' #' + e.r : ''}${e.a ? ' (2025)' : ''}`); }
+                                            else lignes.push(`${lib} : non retrouvé`);
+                                            continue;
+                                        }
                                         const nom = participant[champ] || (champ === 'entraineur' ? participant['entraîneur'] : champ === 'éleveurs' ? participant.eleveurs : champ === 'propriétaire' ? participant.proprietaire : '');
                                         let item = null, via = '';
                                         try {

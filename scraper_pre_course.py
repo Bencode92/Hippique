@@ -309,7 +309,11 @@ def git_push():
         # (backtest, extraction) ne le régénèrent pas toujours — la boucle, elle,
         # passe toutes les 3 minutes.
         run("python3", "scripts/update_courses_index.py")
-        run("git", "add", "data/cotes_live/", "data/courses/_index.json")
+        # précalcul du jour : rangs France Galop, pastilles et forme résolus côté
+        # dépôt, pour que la carte n'ait plus à télécharger 13 Mo de classements
+        # avant d'afficher une course (bench/precalcul_jour.mjs).
+        run("node", "bench/precalcul_jour.mjs")
+        run("git", "add", "data/cotes_live/", "data/courses/_index.json", "data/jour/")
         if run("git", "diff", "--cached", "--quiet").returncode != 0:
             run("git", "commit", "-m", f"⏱️ Cotes live pré-course {datetime.now().strftime('%Y-%m-%d %H:%M')}")
         # en avance sur origin ? (commit du tour précédent resté non poussé compris)
