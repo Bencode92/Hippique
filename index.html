@@ -1621,7 +1621,8 @@
         function pastilleJockey(nomJockey, distance, nomCourse) {
             if (!_jkDist || !nomJockey) return '';
             const cleJk = String(nomJockey).toUpperCase().trim();
-            // Belle course : c'est le classement qui compte ici — celui de la cravache d'or.
+            let belle = '';
+            // Belle course : le classement de la cravache d'or, affiché EN PLUS de la distance.
             if (estBelleCourse(nomCourse)) {
                 const B = _jkDist.belles_courses;
                 const c = B && B.classement.find(x => x.jk === cleJk);
@@ -1633,16 +1634,17 @@
                         + `Réel / promis ${c.rp} — ${c.rp >= 1.05 ? 'il gagne PLUS que sa cote ne le promet dans ces courses' : c.rp >= 0.98 ? 'exactement au prix du marché' : 'moins que sa cote ne le promet'}\n`
                         + `Rendement sur toutes ses montes en groupes : ${c.roi > 0 ? '+' : ''}${c.roi} % ± ${c.se}\n`
                         + `543 groupes dans l'historique : lecture seule, ce n'est pas un signal de pari.`;
-                    return ` <span title="${t.replace(/"/g, '&quot;')}" style="display:inline-block;font-size:.72em;font-weight:600;color:${coul};border:1px solid ${coul};border-radius:3px;padding:0 4px;vertical-align:1px;cursor:help">🏆 ${c.rang}${c.rang === 1 ? 'er' : 'e'} en groupes</span>`;
+                    belle = ` <span title="${t.replace(/"/g, '&quot;')}" style="display:inline-block;font-size:.72em;font-weight:600;color:${coul};border:1px solid ${coul};border-radius:3px;padding:0 4px;vertical-align:1px;cursor:help">🏆 ${c.rang}${c.rang === 1 ? 'er' : 'e'} en groupes</span>`;
                 }
-                return '';
             }
-            if (!distance) return '';
+            // les deux dimensions se cumulent : la qualité de la course (cravache d'or)
+            // et la distance. Un jockey peut être 2e en groupes et 7e sur la distance.
+            if (!distance) return belle;
             const bande = String(Math.round(distance / 100) * 100);
             const b = _jkDist.bandes && _jkDist.bandes[bande];
-            if (!b) return '';
+            if (!b) return belle;
             const c = b.classement.find(x => x.jk === cleJk);
-            if (!c || c.rang > 5) return '';
+            if (!c || c.rang > 5) return belle;
             // or = fort ET pas encore sur-joué (réel/promis ≥ 1,05) ; gris = fort mais au prix
             const paye = c.rp >= 1.05;
             const coul = paye ? '#D4AF37' : 'rgba(255,255,255,0.45)';
@@ -1650,7 +1652,7 @@
                 + `Réel / promis ${c.rp} — ${c.rp >= 1.05 ? 'il gagne PLUS que sa cote ne le promet sur cette distance' : c.rp >= 0.98 ? 'exactement au prix du marché' : 'moins que sa cote ne le promet : le public le sur-joue ici'}\n`
                 + `Rendement d'un pari sur toutes ses montes de la bande : ${c.roi > 0 ? '+' : ''}${c.roi} % ± ${c.se}\n`
                 + `Lecture seule : une spécialité de jockey ne se répète pas d'une période à l'autre.`;
-            return ` <span title="${t.replace(/"/g, '&quot;')}" style="display:inline-block;font-family:inherit;font-size:.72em;font-weight:600;color:${coul};border:1px solid ${coul};border-radius:3px;padding:0 4px;vertical-align:1px;cursor:help">${c.rang}${c.rang === 1 ? 'er' : 'e'} / ${bande}m</span>`;
+            return belle + ` <span title="${t.replace(/"/g, '&quot;')}" style="display:inline-block;font-family:inherit;font-size:.72em;font-weight:600;color:${coul};border:1px solid ${coul};border-radius:3px;padding:0 4px;vertical-align:1px;cursor:help">${c.rang}${c.rang === 1 ? 'er' : 'e'} / ${bande}m</span>`;
         }
 
         let _coteJuste = null;
