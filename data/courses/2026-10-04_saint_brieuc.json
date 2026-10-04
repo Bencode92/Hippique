@@ -1,11 +1,7 @@
 {
   "hippodrome": "SAINT BRIEUC",
   "type_reunion": "Plat",
-<<<<<<< Updated upstream
-  "date_extraction": "2026-10-04T15:06:47.217739",
-=======
-  "date_extraction": "2026-10-04T15:07:12.189749",
->>>>>>> Stashed changes
+  "date_extraction": "2026-10-04T15:37:06.494535",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/04102026/R9",
   "courses": [
     {
@@ -1328,30 +1324,8 @@
           "nb_places": 1,
           "cote": 3.4,
           "cote_tendance": "-",
-          "cote_reference": 6.0
-        },
-        {
-          "n°": "2",
-          "cheval": "MELCHIOR KERGADOR H.AQPS. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: HONOLULU et FEDOROVA KERGADOR (LAURO)",
-          "corde": "(Corde:02)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261004/BRI/6/20261004-BRI-6-2.png",
-          "propriétaire": "SCEA DES SENS",
-          "entraineur": "D.GEORGET",
-          "éleveurs": "SUCC MR MICHEL COROLLER",
-          "jockey": "C.GROSBOIS",
-          "poids": "67 kg",
-          "gains": "986000",
-          "musique": "3p4p3p9pDp1p8p0p",
-          "valeur": "67.0",
-          "equipement(s)": "A",
-          "nb_courses": 8,
-          "nb_victoires": 1,
-          "nb_places": 3,
-          "cote": 6.9,
-          "cote_tendance": "",
-          "cote_reference": 8.1
+          "cote_reference": 6.0,
+          "arrivee": 1
         },
         {
           "n°": "3",
@@ -1374,53 +1348,8 @@
           "nb_places": 4,
           "cote": 6.8,
           "cote_tendance": "+",
-          "cote_reference": 6.5
-        },
-        {
-          "n°": "4",
-          "cheval": "MARIGOLD SACREE F.AQPS. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: RAIL LINK et FLEUR SACREE (LORD DU SUD)",
-          "corde": "(Corde:03)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261004/BRI/6/20261004-BRI-6-4.png",
-          "propriétaire": "M.CHEVILLARD",
-          "entraineur": "T.VIEL",
-          "éleveurs": "ELEVAGE DU LIVET",
-          "jockey": "A.MENARD-LEDAUPHIN",
-          "poids": "65.5 kg",
-          "gains": "845400",
-          "musique": "9pAh7p1p6hAs(25)0p5p5p",
-          "valeur": "65.5",
-          "equipement(s)": "",
-          "nb_courses": 7,
-          "nb_victoires": 1,
-          "nb_places": 4,
-          "cote": 33.0,
-          "cote_tendance": "+",
-          "cote_reference": 21.0
-        },
-        {
-          "n°": "5",
-          "cheval": "MY LADY RAISELLE F.AQPS. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: KINGFISHER et DIVINE RAISELLE (BAROUD D'HONNEUR)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261004/BRI/6/20261004-BRI-6-5.png",
-          "propriétaire": "P.DEGROOTE",
-          "entraineur": "S.ZULIANI (S)",
-          "éleveurs": "MME JULIA POTIER",
-          "jockey": "L.BRECHET",
-          "poids": "65.5 kg",
-          "gains": "1417500",
-          "musique": "6p5p3p(25)4p1p5p2p3p4p",
-          "valeur": "65.5",
-          "equipement(s)": "",
-          "nb_courses": 9,
-          "nb_victoires": 1,
-          "nb_places": 7,
-          "cote": 10.0,
-          "cote_tendance": "+",
-          "cote_reference": 8.1
+          "cote_reference": 6.5,
+          "arrivee": 2
         },
         {
           "n°": "6",
@@ -1443,30 +1372,80 @@
           "nb_places": 3,
           "cote": 3.4,
           "cote_tendance": "",
-          "cote_reference": 3.2
+          "cote_reference": 3.2,
+          "arrivee": 3
         },
         {
-          "n°": "7",
-          "cheval": "MONDRAGON H.AQPS. 4 a.",
+          "n°": "5",
+          "cheval": "MY LADY RAISELLE F.AQPS. 4 a.",
           "cheval_url": "",
-          "père_mère": "Par: BUCK'S BOUM et NOTTINGHAM PALACE (GARDE ROYALE)",
-          "corde": "(Corde:09)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261004/BRI/6/20261004-BRI-6-7.png",
-          "propriétaire": "A.PORTAIS",
-          "entraineur": "C.LEQUIEN (S)",
-          "éleveurs": "MR GILDAS VAILLANT",
-          "jockey": "C.LEQUIEN",
+          "père_mère": "Par: KINGFISHER et DIVINE RAISELLE (BAROUD D'HONNEUR)",
+          "corde": "(Corde:01)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261004/BRI/6/20261004-BRI-6-5.png",
+          "propriétaire": "P.DEGROOTE",
+          "entraineur": "S.ZULIANI (S)",
+          "éleveurs": "MME JULIA POTIER",
+          "jockey": "L.BRECHET",
           "poids": "65.5 kg",
-          "gains": "90000",
-          "musique": "5p5pTs1s4s4s3s(25)5sAh",
+          "gains": "1417500",
+          "musique": "6p5p3p(25)4p1p5p2p3p4p",
           "valeur": "65.5",
           "equipement(s)": "",
-          "nb_courses": 2,
-          "nb_victoires": 0,
-          "nb_places": 2,
-          "cote": 35.0,
+          "nb_courses": 9,
+          "nb_victoires": 1,
+          "nb_places": 7,
+          "cote": 10.0,
           "cote_tendance": "+",
-          "cote_reference": 24.0
+          "cote_reference": 8.1,
+          "arrivee": 4
+        },
+        {
+          "n°": "4",
+          "cheval": "MARIGOLD SACREE F.AQPS. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: RAIL LINK et FLEUR SACREE (LORD DU SUD)",
+          "corde": "(Corde:03)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261004/BRI/6/20261004-BRI-6-4.png",
+          "propriétaire": "M.CHEVILLARD",
+          "entraineur": "T.VIEL",
+          "éleveurs": "ELEVAGE DU LIVET",
+          "jockey": "A.MENARD-LEDAUPHIN",
+          "poids": "65.5 kg",
+          "gains": "845400",
+          "musique": "9pAh7p1p6hAs(25)0p5p5p",
+          "valeur": "65.5",
+          "equipement(s)": "",
+          "nb_courses": 7,
+          "nb_victoires": 1,
+          "nb_places": 4,
+          "cote": 33.0,
+          "cote_tendance": "+",
+          "cote_reference": 21.0,
+          "arrivee": 5
+        },
+        {
+          "n°": "2",
+          "cheval": "MELCHIOR KERGADOR H.AQPS. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: HONOLULU et FEDOROVA KERGADOR (LAURO)",
+          "corde": "(Corde:02)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261004/BRI/6/20261004-BRI-6-2.png",
+          "propriétaire": "SCEA DES SENS",
+          "entraineur": "D.GEORGET",
+          "éleveurs": "SUCC MR MICHEL COROLLER",
+          "jockey": "C.GROSBOIS",
+          "poids": "67 kg",
+          "gains": "986000",
+          "musique": "3p4p3p9pDp1p8p0p",
+          "valeur": "67.0",
+          "equipement(s)": "A",
+          "nb_courses": 8,
+          "nb_victoires": 1,
+          "nb_places": 3,
+          "cote": 6.9,
+          "cote_tendance": "",
+          "cote_reference": 8.1,
+          "arrivee": 6
         },
         {
           "n°": "8",
@@ -1489,7 +1468,32 @@
           "nb_places": 8,
           "cote": 12.0,
           "cote_tendance": "+",
-          "cote_reference": 11.0
+          "cote_reference": 11.0,
+          "arrivee": 7
+        },
+        {
+          "n°": "7",
+          "cheval": "MONDRAGON H.AQPS. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: BUCK'S BOUM et NOTTINGHAM PALACE (GARDE ROYALE)",
+          "corde": "(Corde:09)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261004/BRI/6/20261004-BRI-6-7.png",
+          "propriétaire": "A.PORTAIS",
+          "entraineur": "C.LEQUIEN (S)",
+          "éleveurs": "MR GILDAS VAILLANT",
+          "jockey": "C.LEQUIEN",
+          "poids": "65.5 kg",
+          "gains": "90000",
+          "musique": "5p5pTs1s4s4s3s(25)5sAh",
+          "valeur": "65.5",
+          "equipement(s)": "",
+          "nb_courses": 2,
+          "nb_victoires": 0,
+          "nb_places": 2,
+          "cote": 35.0,
+          "cote_tendance": "+",
+          "cote_reference": 24.0,
+          "arrivee": 8
         },
         {
           "n°": "9",
@@ -1512,13 +1516,15 @@
           "nb_places": 0,
           "cote": 27.0,
           "cote_tendance": "",
-          "cote_reference": 11.0
+          "cote_reference": 11.0,
+          "arrivee": 9
         }
       ],
       "typePiste": "HERBE",
       "terrain": "Bon souple",
       "penetrometre": "3,3",
-      "cordeCourse": "CORDE_DROITE"
+      "cordeCourse": "CORDE_DROITE",
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX DE L'ARGOAT",
@@ -1547,13 +1553,8 @@
           "nb_courses": 6,
           "nb_victoires": 1,
           "nb_places": 4,
-<<<<<<< Updated upstream
-          "cote": 9.2,
+          "cote": 6.5,
           "cote_tendance": "",
-=======
-          "cote": 8.9,
-          "cote_tendance": "-",
->>>>>>> Stashed changes
           "cote_reference": 9.4
         },
         {
@@ -1575,12 +1576,8 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 10.0,
-<<<<<<< Updated upstream
+          "cote": 36.0,
           "cote_tendance": "+",
-=======
-          "cote_tendance": "",
->>>>>>> Stashed changes
           "cote_reference": 10.0
         },
         {
@@ -1602,7 +1599,7 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 6.1,
+          "cote": 10.0,
           "cote_tendance": "",
           "cote_reference": 6.0
         },
@@ -1625,7 +1622,7 @@
           "nb_courses": 3,
           "nb_victoires": 1,
           "nb_places": 2,
-          "cote": 3.8,
+          "cote": 3.3,
           "cote_tendance": "",
           "cote_reference": 3.9
         },
@@ -1648,12 +1645,8 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 9.2,
-<<<<<<< Updated upstream
+          "cote": 14.0,
           "cote_tendance": "-",
-=======
-          "cote_tendance": "",
->>>>>>> Stashed changes
           "cote_reference": 10.0
         },
         {
@@ -1675,8 +1668,8 @@
           "nb_courses": 8,
           "nb_victoires": 0,
           "nb_places": 7,
-          "cote": 6.8,
-          "cote_tendance": "",
+          "cote": 25.0,
+          "cote_tendance": "+",
           "cote_reference": 6.7
         },
         {
@@ -1698,8 +1691,8 @@
           "nb_courses": 4,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 3.8,
-          "cote_tendance": "",
+          "cote": 2.2,
+          "cote_tendance": "+",
           "cote_reference": 3.7
         }
       ],

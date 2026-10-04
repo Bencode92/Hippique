@@ -126,18 +126,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. QATAR PRIX DE LA FORET
 
-*17h25 · plat · 1400 m · 8 partants*
+*17h30 · plat · 1400 m · 8 partants*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 2 | SAMANGAN | 2,4 | 2,46 | -2,3 % | M.BARZALONA 🏆2e | 2/1/2/1 |
-| 4 | THESECRETADVERSARY | 4,9 | 5,32 | -7,9 % | C.SOUMILLON 🏆4e | 7/98/3082/296 |
-| 5 | NIGHTTIME | 5,2 | 6,05 | -14,0 % | M.GUYON | 4/10/1/2 |
-| 8 | TRUE LOVE | 7,5 | 9,22 | -18,7 % | RL.MOORE 🏆3e | 151/3/3082/520 |
-| 7 | SHOWNA | 15 | 19,94 | -24,8 % | M.GRANDIN | 3/60/4/229 |
-| 3 | PUERTO RICO | 19 | 25,64 | -25,9 % | W.BUICK 🏆4e | 168/3/4182/520 |
-| 6 | MY CALYX CEN | 22 | 30,38 | -27,6 % | A.LEMAITRE 🏆1er | 11/78/25/22 |
-| 1 | MARVELMAN | 32 | 47,84 | -33,1 % | P.J..MCDONALD | 256/116/3201/381 |
+| 4 | THESECRETADVERSARY | 3,6 | 3,98 | -9,4 % | C.SOUMILLON 🏆4e | 7/98/3082/296 |
+| 8 | TRUE LOVE | 4,1 | 4,35 | -5,8 % | RL.MOORE 🏆3e | 151/3/3082/520 |
+| 2 | SAMANGAN | 4,4 | 4,60 | -4,2 % | M.BARZALONA 🏆2e | 2/1/2/1 |
+| 5 | NIGHTTIME | 5,8 | 6,63 | -12,5 % | M.GUYON | 4/10/1/2 |
+| 1 | MARVELMAN | 8,9 | 10,01 | -11,1 % | P.J..MCDONALD | 256/116/3201/381 |
+| 3 | PUERTO RICO | 22 | 30,66 | -28,3 % | W.BUICK 🏆4e | 168/3/4182/520 |
+| 7 | SHOWNA | 25 | 36,41 | -31,3 % | M.GRANDIN | 3/60/4/229 |
+| 6 | MY CALYX CEN | 31 | 43,25 | -28,3 % | A.LEMAITRE 🏆1er | 11/78/25/22 |
 
 ### 8. QATAR GRAND HANDICAP DES FLYERS PRESENTE PAR RMC
 
@@ -145,22 +145,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 6 | SKYLIGHT BROCHARD | 6,5 | 5,60 | **+16,0 %** | PC.BOUDOT 2e | 8/41/405/211 |
-| 11 | TALENTUOSO | 7,4 | 7,70 | -4,0 % | M.GRANDIN | 3/110/3159/214 |
-| 7 | PURPLE LION | 7,7 | 9,33 | -17,5 % | H.BOUTIN | 14/1/25/74 |
-| 8 | TEN HORNS | 8,9 | 10,18 | -12,6 % | A.POUCHIN | 6/5/49/– |
-| 4 | TORTISAMBERT | 9,1 | 9,78 | -6,9 % | C.DEMURO | 1/45/33/4 |
-| 1 | BLUE BROTHER | 11 | 11,16 | -1,4 % | M.BARZALONA 4e | 2/238/144/8 |
-| 3 | SIAM PARAGON | 12 | 15,36 | -21,9 % | A.LEMAITRE | 11/170/247/183 |
-| 15 | IVORY SPRING | 14 | 18,41 | -24,0 % | A.HAMELIN | 22/92/695/17 |
-| 9 | FELIX AUX ORMES | 21 | 26,96 | -22,1 % | H.JOURNIAC | 43/8/37/291 |
-| 2 | LA MANDALA | 23 | 23,85 | -3,6 % | C.SOUMILLON 3e | 7/36/98/17 |
-| 12 | MARCUS AURELIUS | 23 | 28,67 | -19,8 % | T.PICCONE | 9/6/175/583 |
-| 14 | AGIOTA | 29 | 41,65 | -30,4 % | A.MADAMET | 10/22/118/134 |
-| 16 | REVE DE VALLARSA | 37 | 40,67 | -9,0 % | D.SANTIAGO | 15/39/294/1414 |
-| 10 | PROFUMO DI IENA | 40 | 61,32 | -34,8 % | M.GHIANI | 376/87/76/553 |
-| 13 | FAST RAAJ | 47 | 66,60 | -29,4 % | D.PROVOST | 33/8/13/9 |
-| 5 | COLOMBIER | 50 | 56,53 | -11,5 % | JW.DOYLE | 162/238/3151/8 |
+| 6 | SKYLIGHT BROCHARD | 5,6 | 6,42 | -12,8 % | PC.BOUDOT 2e | 8/41/405/211 |
+| 7 | PURPLE LION | 8,3 | 10,69 | -22,3 % | H.BOUTIN | 14/1/25/74 |
+| 8 | TEN HORNS | 8,4 | 9,55 | -12,1 % | A.POUCHIN | 6/5/49/– |
+| 4 | TORTISAMBERT | 8,5 | 9,07 | -6,3 % | C.DEMURO | 1/45/33/4 |
+| 11 | TALENTUOSO | 9,7 | 10,57 | -8,2 % | M.GRANDIN | 3/110/3159/214 |
+| 1 | BLUE BROTHER | 11 | 11,20 | -1,8 % | M.BARZALONA 4e | 2/238/144/8 |
+| 3 | SIAM PARAGON | 12 | 15,42 | -22,2 % | A.LEMAITRE | 11/170/247/183 |
+| 15 | IVORY SPRING | 16 | 21,62 | -26,0 % | A.HAMELIN | 22/92/695/17 |
+| 2 | LA MANDALA | 17 | 18,54 | -8,3 % | C.SOUMILLON 3e | 7/36/98/17 |
+| 9 | FELIX AUX ORMES | 22 | 31,30 | -29,7 % | H.JOURNIAC | 43/8/37/291 |
+| 12 | MARCUS AURELIUS | 22 | 27,34 | -19,5 % | T.PICCONE | 9/6/175/583 |
+| 16 | REVE DE VALLARSA | 29 | 34,12 | -15,0 % | D.SANTIAGO | 15/39/294/1414 |
+| 14 | AGIOTA | 33 | 48,35 | -31,8 % | A.MADAMET | 10/22/118/134 |
+| 10 | PROFUMO DI IENA | 44 | 68,35 | -35,6 % | M.GHIANI | 376/87/76/553 |
+| 13 | FAST RAAJ | 49 | 69,94 | -29,9 % | D.PROVOST | 33/8/13/9 |
+| 5 | COLOMBIER | 51 | 63,64 | -19,9 % | JW.DOYLE | 162/238/3151/8 |
 
 ### 9. QATAR PRIX DU FESTIVAL DES NATIONS
 
@@ -168,20 +168,20 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 12 | ROZARION | 3,7 | 4,12 | -10,2 % | PC.BOUDOT 2e | 8/23/309/842 |
-| 11 | GALORD | 5,5 | 6,30 | -12,7 % | E.HARDOUIN | 27/89/4/464 |
-| 14 | NADIR | 9 | 10,66 | -15,5 % | C.DEMURO | 1/22/17/106 |
-| 2 | PRINCE AUBOIS | 10 | 12,06 | -17,1 % | S.PASQUIER | 23/149/385/1939 |
-| 5 | LAITH | 13 | 17,17 | -24,3 % | A.ORANI | 5/9/3/972 |
-| 10 | FREJA | 15 | 20,31 | -26,2 % | A.LEMAITRE | 11/45/13/89 |
-| 7 | ZAKOSHA | 16 | 18,27 | -12,4 % | A.POUCHIN | 6/14/17/434 |
-| 1 | HEYBETLI | 17 | 23,52 | -27,7 % | B.MARIE | 69/68/3/149 |
-| 8 | YOKEN | 17 | 17,17 | -1,0 % | C.SOUMILLON 3e | 7/239/158/757 |
-| 6 | PIEMONT | 21 | 28,20 | -25,5 % | T.PICCONE | 9/105/3254/101 |
-| 9 | CANENA | 28 | 37,07 | -24,5 % | A.WERLE | 29/62/28/1071 |
-| 13 | PREMONITION | 28 | 36,32 | -22,9 % | M.GRANDIN | 3/92/76/382 |
-| 3 | CHALDERO | 31 | 40,91 | -24,2 % | T.BACHELOT | 16/164/100/126 |
-| 4 | CHIRICCO | 43 | 58,84 | -26,9 % | A.MADAMET | 10/34/20/99 |
+| 12 | ROZARION | 4 | 4,58 | -12,6 % | PC.BOUDOT 2e | 8/23/309/842 |
+| 11 | GALORD | 5,3 | 5,99 | -11,5 % | E.HARDOUIN | 27/89/4/464 |
+| 14 | NADIR | 8,8 | 10,29 | -14,4 % | C.DEMURO | 1/22/17/106 |
+| 2 | PRINCE AUBOIS | 11 | 13,36 | -17,7 % | S.PASQUIER | 23/149/385/1939 |
+| 5 | LAITH | 11 | 12,80 | -14,0 % | A.ORANI | 5/9/3/972 |
+| 7 | ZAKOSHA | 16 | 18,10 | -11,6 % | A.POUCHIN | 6/14/17/434 |
+| 8 | YOKEN | 17 | 17,02 | -0,1 % | C.SOUMILLON 3e | 7/239/158/757 |
+| 10 | FREJA | 17 | 22,25 | -23,6 % | A.LEMAITRE | 11/45/13/89 |
+| 1 | HEYBETLI | 18 | 24,91 | -27,7 % | B.MARIE | 69/68/3/149 |
+| 6 | PIEMONT | 18 | 23,38 | -23,0 % | T.PICCONE | 9/105/3254/101 |
+| 9 | CANENA | 27 | 35,25 | -23,4 % | A.WERLE | 29/62/28/1071 |
+| 13 | PREMONITION | 30 | 38,92 | -22,9 % | M.GRANDIN | 3/92/76/382 |
+| 3 | CHALDERO | 31 | 40,55 | -23,6 % | T.BACHELOT | 16/164/100/126 |
+| 4 | CHIRICCO | 41 | 55,36 | -25,9 % | A.MADAMET | 10/34/20/99 |
 
 ### 10. QATAR PRIX DE LA PLACE DE L'ETOILE
 
@@ -189,21 +189,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 10 | BIG LOG | 5,3 | 6,06 | -12,6 % | S.DE SOUSA | 177/74/140/163 |
-| 2 | CARAMELITO | 9,1 | 10,25 | -11,3 % | T.BACHELOT | 16/30/342/371 |
-| 6 | JOHNNY HAMMER | 9,3 | 9,28 | **+0,3 %** | O.ANDIGNE | 81/80/869/1842 |
-| 9 | SILENT WARNING | 9,7 | 11,76 | -17,5 % | M.BARZALONA | 2/1/3107/8 |
-| 3 | GERARD TER BORCH | 10 | 11,45 | -12,6 % | A.HAMELIN | 22/23/42/1793 |
-| 8 | PRINCE DES VILLES | 12 | 13,34 | -10,0 % | M.GUYON 3e | 4/40/258/40 |
-| 1 | ORANDI | 14 | 16,98 | -17,5 % | C.SOUMILLON 2e | 7/894/607/– |
-| 4 | KOVROV | 17 | 19,49 | -12,8 % | A.ORANI 5e | 5/9/22/5032 |
-| 17 | SERENISSIMUS | 17 | 20,32 | -16,3 % | M.VELON | 28/1/12/1020 |
-| 18 | LAKOTA BEAU | 24 | 34,76 | -31,0 % | L.BAILS | 77/66/879/921 |
-| 7 | HUMAN EVOLUTION | 25 | 28,98 | -13,7 % | T.PICCONE | 9/6/3092/95 |
-| 5 | DIOPTASE | 26 | 38,10 | -31,8 % | C.DEMURO | 1/137/54/115 |
-| 12 | YMEEELIH | 26 | 33,82 | -23,1 % | A.MADAMET | 10/124/241/124 |
-| 14 | STARNBERG | 34 | 51,61 | -34,1 % | E.HARDOUIN | 27/4/20/17 |
-| 15 | AMERICAN GLORY | 36 | 43,66 | -17,6 % | A.CRASTUS | 17/18/802/432 |
-| 16 | MONONOF | 43 | 53,11 | -19,0 % | L.GROSSO | 136/60/–/1897 |
-| 11 | VANTA | 55 | 87,40 | -37,1 % | D.PROVOST | 33/91/392/– |
-| 13 | PACIFISTE | 65 | 95,24 | -31,7 % | R.MANGIONE | 78/32/1/498 |
+| 10 | BIG LOG | 4,2 | 4,75 | -11,6 % | S.DE SOUSA | 177/74/140/163 |
+| 9 | SILENT WARNING | 9,6 | 11,79 | -18,6 % | M.BARZALONA | 2/1/3107/8 |
+| 2 | CARAMELITO | 10 | 11,62 | -13,9 % | T.BACHELOT | 16/30/342/371 |
+| 6 | JOHNNY HAMMER | 10 | 9,80 | **+2,1 %** | O.ANDIGNE | 81/80/869/1842 |
+| 3 | GERARD TER BORCH | 11 | 12,99 | -15,3 % | A.HAMELIN | 22/23/42/1793 |
+| 1 | ORANDI | 14 | 17,23 | -18,7 % | C.SOUMILLON 2e | 7/894/607/– |
+| 8 | PRINCE DES VILLES | 14 | 16,19 | -13,5 % | M.GUYON 3e | 4/40/258/40 |
+| 17 | SERENISSIMUS | 16 | 20,12 | -20,5 % | M.VELON | 28/1/12/1020 |
+| 4 | KOVROV | 18 | 21,13 | -14,8 % | A.ORANI 5e | 5/9/22/5032 |
+| 14 | STARNBERG | 20 | 26,08 | -23,3 % | E.HARDOUIN | 27/4/20/17 |
+| 18 | LAKOTA BEAU | 23 | 33,59 | -31,5 % | L.BAILS | 77/66/879/921 |
+| 12 | YMEEELIH | 26 | 34,31 | -24,2 % | A.MADAMET | 10/124/241/124 |
+| 7 | HUMAN EVOLUTION | 27 | 32,08 | -15,8 % | T.PICCONE | 9/6/3092/95 |
+| 5 | DIOPTASE | 30 | 45,47 | -34,0 % | C.DEMURO | 1/137/54/115 |
+| 15 | AMERICAN GLORY | 44 | 52,67 | -16,5 % | A.CRASTUS | 17/18/802/432 |
+| 16 | MONONOF | 47 | 56,59 | -17,0 % | L.GROSSO | 136/60/–/1897 |
+| 11 | VANTA | 64 | 104,16 | -38,6 % | D.PROVOST | 33/91/392/– |
+| 13 | PACIFISTE | 78 | 128,42 | -39,3 % | R.MANGIONE | 78/32/1/498 |
