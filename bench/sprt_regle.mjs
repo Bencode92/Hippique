@@ -110,7 +110,7 @@ for (const f of fs.readdirSync('data/histo').filter(x=>x.endsWith('.jsonl')))
     const der = (mise.cr > 1) ? (mise.cr - mise.cote) / mise.cr : null;
     L.push({ date: d.date, hip: d.hip, r: d.r, c: d.c, n: mise.n, nom: mise.nom, cote: mise.cote, source: mise.source,
              cote_finale: finalDuMise ? finalDuMise.c : null, favori_final_identique: String(fav.n) === String(mise.n),
-             der, gagne: !!(m && m.div > 0), dividende: m ? m.div : 0 });
+             der, gagne: !!(m && m.div > 0), dividende: m ? m.div / 100 : 0 });   // div est en centimes pour 1 € misé
   }
 L.sort((a,b)=>a.date.localeCompare(b.date));
 const prospectif = !process.argv.includes('--historique');
