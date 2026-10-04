@@ -3506,6 +3506,13 @@
                     // ouverture rapide retombait sur les 13 Mo de classements
                     await chargerJour(coursesLoader.formatDateYMD(window.currentDate || new Date()));
                     const jc = jourCourse(hippodrome, course.numero);
+                    // le précalcul porte aussi le dernier relevé de cotes : s'il est là,
+                    // il est au plus vieux de deux minutes (régénéré à chaque push de la
+                    // boucle), donc plus frais que les cotes du programme du matin.
+                    if (jc) for (const p of (courseContext.participants || [])) {
+                        const e = jourPartant(jc, p);
+                        if (e && e.cotes && e.cotes.live > 1) { p.cote = e.cotes.live; if (e.cotes.ref > 1) p.cote_reference = e.cotes.ref; }
+                    }
                     if (!jc) { await chargerClassements(); await chargerJkDist(); }   // repli complet
                     const scoresPredictifs = jc
                         ? (courseContext.participants || []).map(p => ({ participant: p, scorePredictif: { score: '0', indiceConfiance: '1', details: {} } }))

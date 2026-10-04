@@ -81,10 +81,41 @@ function pastille(jockey, distance, nomCourse) {
   return null;
 }
 
+// Dernier relevé de cotes de chaque course (data/cotes_live), plus celui de la
+// fenêtre du protocole [T-2:40 ; T-1:20] : la carte n'a ainsi qu'UN fichier à
+// lire, et le JSON du jour se consulte tel quel sur GitHub avant la course.
+function cotesLive(date) {
+    const par = new Map();
+    let dir;
+    try { dir = fs.readdirSync(path.join(ROOT, 'data/cotes_live')); } catch { return par; }
+    for (const f of dir.filter(x => x.startsWith(date + '_') && x.endsWith('_live.json'))) {
+        const m = f.match(/^(\d{4}-\d{2}-\d{2})_(.+)_R(\d+)C(\d+)_live\.json$/);
+        if (!m) continue;
+        try {
+            const d = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/cotes_live', f), 'utf8'));
+            const dep = d.heure_depart || null;
+            const rel = d.releves || [];
+            const sec = r => dep && r.scraped_at ? Math.round((dep - new Date(r.scraped_at).getTime()) / 1000) : null;
+            let dernier = null, fenetre = null;
+            for (const r of rel) {
+                const sv = sec(r);
+                if (sv === null) continue;
+                if (sv > 0 && (!dernier || sv < dernier.sec)) dernier = { sec: sv, cotes: r.cotes, t: r.scraped_at };
+                if (sv >= 80 && sv <= 160 && (!fenetre || Math.abs(sv - 120) < Math.abs(fenetre.sec - 120))) fenetre = { sec: sv, cotes: r.cotes, t: r.scraped_at };
+            }
+            const base = Object.fromEntries((d.participants || []).map(p => [String(p.numPmu), { c: p.cote_live, ref: p.cote_reference, t: p.tendance }]));
+            par.set(`${normH(m[2])}|${+m[4]}`, { depart: dep, dernier, fenetre, base });
+        } catch {}
+    }
+    return par;
+}
+const normH = t => String(t || '').toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^A-Z0-9]/g, '');
+
 function journee(date) {
   const fichiers = fs.readdirSync(path.join(ROOT, 'data/courses')).filter(f => f.startsWith(date + '_') && f.endsWith('.json'));
   if (!fichiers.length) return null;
   const ix = indexes(date);
+  const live = cotesLive(date);
   const out = { date, genere: new Date().toISOString(), snapshot: ix ? ix._snap : null, hippodromes: {} };
   let nP = 0, nR = 0;
   for (const f of fichiers.sort()) {
@@ -114,7 +145,17 @@ function journee(date) {
         nP++;
         return o;
       });
-      courses.push({ numero: c.numero, nom: c.nom, distance: dist, partants: parts });
+      const lv = live.get(`${normH(hip)}|${num(c.numero)}`);
+      if (lv) {
+        // cote du dernier relevé et cote du relevé T-2 (celui qui fait foi pour le test)
+        for (const p of parts) {
+          const d1 = lv.dernier && lv.dernier.cotes[String(p.n)], d2 = lv.fenetre && lv.fenetre.cotes[String(p.n)];
+          const b = lv.base[String(p.n)];
+          if (d1 || d2 || b) p.cotes = { ...(d1 ? { live: d1 } : {}), ...(d2 ? { t2: d2 } : {}), ...(b && b.ref ? { ref: b.ref } : {}) };
+        }
+      }
+      courses.push({ numero: c.numero, nom: c.nom, distance: dist, partants: parts,
+                     ...(lv ? { releve: { depart: lv.depart, dernier_sec: lv.dernier ? lv.dernier.sec : null, t2_sec: lv.fenetre ? lv.fenetre.sec : null } } : {}) });
       nR++;
     }
     out.hippodromes[hip] = courses;

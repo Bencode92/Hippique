@@ -49,13 +49,19 @@ jobs:
           git stash pop || true
 
           mkdir -p data/courses
-          git add data/courses/*.json
+          # Dès l'extraction, le JSON du jour est prêt : rangs France Galop,
+          # pastilles, forme et cotes — consultable tel quel sur GitHub, et lu
+          # directement par la carte (plus de 13 Mo de classements à charger).
+          # Généré APRÈS le rebase, sinon le stash pop l'écraserait.
+          node bench/precalcul_jour.mjs $(date -u +%Y-%m-%d) || true
+          node bench/precalcul_jour.mjs $(date -u -d 'tomorrow' +%Y-%m-%d) || true
+          git add data/jour/ data/courses/*.json
 
           # Régénère _index.json pour que le frontend ait la liste à jour.
           # Inclus ici car les pushs faits via GITHUB_TOKEN ne déclenchent
           # PAS d'autres workflows (sécurité anti-boucle de GitHub Actions).
           python3 scripts/update_courses_index.py
-          git add data/courses/_index.json
+          git add data/jour/ data/courses/_index.json
 
           if git diff --cached --quiet; then
             echo "Aucun changement détecté"
