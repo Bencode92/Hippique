@@ -1293,7 +1293,7 @@
     <!-- Module ranking-loader (doit être chargé avant le script principal) -->
     <script src="js/panneau-paris.js?v=9"></script>
     <script src="js/matching.js?v=1"></script>
-    <script src="js/cote-juste.js?v=1"></script>
+    <script src="js/cote-juste.js?v=2"></script>
     <script src="js/ranking-loader.js?v=25"></script>
 
     <!-- Module de chargement des courses -->
@@ -1599,6 +1599,60 @@
         // La cote juste (js/cote-juste.js + data/cote_juste.json) : proba réelle de
         // gagner sachant la cote et le contexte, et espérance du pari. Modèle
         // local d'abord (même dépôt que la page), GitHub en repli.
+        // Classement des jockeys par bande de distance (±100 m) — data/jockeys_distance.json,
+        // produit par bench/jockeys_distance.py. LECTURE SEULE : la spécialité d'un jockey ne
+        // persiste pas (corrélation +0,15 entre 2022-24 et 2025-26 ; les dix meilleures cases
+        // rendent −15,6 % ensuite). La pastille dit qui est fort sur la distance, et sa couleur
+        // dit si le marché le paie déjà.
+        let _jkDist = null;
+        fetch('data/jockeys_distance.json?_=' + Date.now()).then(r => r.ok ? r.json() : Promise.reject())
+            .catch(() => fetch('https://raw.githubusercontent.com/bencode92/Hippique/main/data/jockeys_distance.json?_=' + Date.now()).then(r => r.ok ? r.json() : null))
+            .then(j => { _jkDist = j; }).catch(() => {});
+
+        // Une belle course (groupe I, II, III) se reconnaît à son nom : data/courses ne
+        // porte pas la catégorie, mais l'historique donne les 188 noms de groupes, et le
+        // parrain ne fait que les préfixer (« QATAR PRIX DE L'ARC DE TRIOMPHE »).
+        function estBelleCourse(nomCourse) {
+            if (!_jkDist || !_jkDist.noms_belles_courses || !nomCourse) return false;
+            const c = String(nomCourse).toUpperCase().replace(/[^A-Z]/g, '');
+            return _jkDist.noms_belles_courses.some(n => n.length >= 10 && c.includes(n));
+        }
+
+        function pastilleJockey(nomJockey, distance, nomCourse) {
+            if (!_jkDist || !nomJockey) return '';
+            const cleJk = String(nomJockey).toUpperCase().trim();
+            // Belle course : c'est le classement qui compte ici — celui de la cravache d'or.
+            if (estBelleCourse(nomCourse)) {
+                const B = _jkDist.belles_courses;
+                const c = B && B.classement.find(x => x.jk === cleJk);
+                if (c && c.rang <= 8) {
+                    const paye = c.rp >= 1.05;
+                    const coul = paye ? '#D4AF37' : 'rgba(255,255,255,0.45)';
+                    const t = `${c.jk} en belles courses (groupes I, II, III) : ${c.rang}e sur ${B.jockeys} jockeys\n`
+                        + `${c.n} montes, ${c.v} victoires, ${c.tx} % — dont ${c.g1v}/${c.g1} en Groupe I\n`
+                        + `Réel / promis ${c.rp} — ${c.rp >= 1.05 ? 'il gagne PLUS que sa cote ne le promet dans ces courses' : c.rp >= 0.98 ? 'exactement au prix du marché' : 'moins que sa cote ne le promet'}\n`
+                        + `Rendement sur toutes ses montes en groupes : ${c.roi > 0 ? '+' : ''}${c.roi} % ± ${c.se}\n`
+                        + `543 groupes dans l'historique : lecture seule, ce n'est pas un signal de pari.`;
+                    return ` <span title="${t.replace(/"/g, '&quot;')}" style="display:inline-block;font-size:.72em;font-weight:600;color:${coul};border:1px solid ${coul};border-radius:3px;padding:0 4px;vertical-align:1px;cursor:help">🏆 ${c.rang}${c.rang === 1 ? 'er' : 'e'} en groupes</span>`;
+                }
+                return '';
+            }
+            if (!distance) return '';
+            const bande = String(Math.round(distance / 100) * 100);
+            const b = _jkDist.bandes && _jkDist.bandes[bande];
+            if (!b) return '';
+            const c = b.classement.find(x => x.jk === cleJk);
+            if (!c || c.rang > 5) return '';
+            // or = fort ET pas encore sur-joué (réel/promis ≥ 1,05) ; gris = fort mais au prix
+            const paye = c.rp >= 1.05;
+            const coul = paye ? '#D4AF37' : 'rgba(255,255,255,0.45)';
+            const t = `${c.jk} sur ${bande} m (±100) : ${c.rang}e sur ${b.jockeys} jockeys · ${c.n} montes, ${c.v} victoires, ${c.tx} % de réussite\n`
+                + `Réel / promis ${c.rp} — ${c.rp >= 1.05 ? 'il gagne PLUS que sa cote ne le promet sur cette distance' : c.rp >= 0.98 ? 'exactement au prix du marché' : 'moins que sa cote ne le promet : le public le sur-joue ici'}\n`
+                + `Rendement d'un pari sur toutes ses montes de la bande : ${c.roi > 0 ? '+' : ''}${c.roi} % ± ${c.se}\n`
+                + `Lecture seule : une spécialité de jockey ne se répète pas d'une période à l'autre.`;
+            return ` <span title="${t.replace(/"/g, '&quot;')}" style="display:inline-block;font-family:inherit;font-size:.72em;font-weight:600;color:${coul};border:1px solid ${coul};border-radius:3px;padding:0 4px;vertical-align:1px;cursor:help">${c.rang}${c.rang === 1 ? 'er' : 'e'} / ${bande}m</span>`;
+        }
+
         let _coteJuste = null;
         const _cjPromise = fetch('data/cote_juste.json?_=' + Date.now()).then(r => r.ok ? r.json() : Promise.reject())
             .catch(() => fetch('https://raw.githubusercontent.com/bencode92/Hippique/main/data/cote_juste.json?_=' + Date.now()).then(r => r.ok ? r.json() : null))
@@ -3514,7 +3568,7 @@
                                     ${cordeDisplay}
                                 </td>
                                 <td>${participant.cheval || 'N/A'}${fch ? ` <span title="Forme cheval" style="color:${fchColor};font-size:0.8em">${fch}</span>` : ''}</td>
-                                <td>${participant.jockey || 'N/A'}${fcj ? ` <span title="Forme jockey" style="color:${fcjColor};font-size:0.8em">${fcj}</span>` : ''}</td>
+                                <td>${participant.jockey || 'N/A'}${fcj ? ` <span title="Forme jockey" style="color:${fcjColor};font-size:0.8em">${fcj}</span>` : ''}${pastilleJockey(participant.jockey, courseContext.distance, courseName)}</td>
                                 <td>${participant.entraineur || 'N/A'}</td>
                                 ${(() => {
                                     // Rattachement par acteur : nom retrouvé au classement + rang, via le même module que le score
