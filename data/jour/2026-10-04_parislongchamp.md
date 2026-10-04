@@ -145,22 +145,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 6 | SKYLIGHT BROCHARD | 5,6 | 6,42 | -12,8 % | PC.BOUDOT 2e | 8/41/405/211 |
-| 7 | PURPLE LION | 8,3 | 10,69 | -22,3 % | H.BOUTIN | 14/1/25/74 |
-| 8 | TEN HORNS | 8,4 | 9,55 | -12,1 % | A.POUCHIN | 6/5/49/– |
-| 4 | TORTISAMBERT | 8,5 | 9,07 | -6,3 % | C.DEMURO | 1/45/33/4 |
-| 11 | TALENTUOSO | 9,7 | 10,57 | -8,2 % | M.GRANDIN | 3/110/3159/214 |
-| 1 | BLUE BROTHER | 11 | 11,20 | -1,8 % | M.BARZALONA 4e | 2/238/144/8 |
-| 3 | SIAM PARAGON | 12 | 15,42 | -22,2 % | A.LEMAITRE | 11/170/247/183 |
-| 15 | IVORY SPRING | 16 | 21,62 | -26,0 % | A.HAMELIN | 22/92/695/17 |
-| 2 | LA MANDALA | 17 | 18,54 | -8,3 % | C.SOUMILLON 3e | 7/36/98/17 |
-| 9 | FELIX AUX ORMES | 22 | 31,30 | -29,7 % | H.JOURNIAC | 43/8/37/291 |
-| 12 | MARCUS AURELIUS | 22 | 27,34 | -19,5 % | T.PICCONE | 9/6/175/583 |
-| 16 | REVE DE VALLARSA | 29 | 34,12 | -15,0 % | D.SANTIAGO | 15/39/294/1414 |
-| 14 | AGIOTA | 33 | 48,35 | -31,8 % | A.MADAMET | 10/22/118/134 |
-| 10 | PROFUMO DI IENA | 44 | 68,35 | -35,6 % | M.GHIANI | 376/87/76/553 |
-| 13 | FAST RAAJ | 49 | 69,94 | -29,9 % | D.PROVOST | 33/8/13/9 |
-| 5 | COLOMBIER | 51 | 63,64 | -19,9 % | JW.DOYLE | 162/238/3151/8 |
+| 6 | SKYLIGHT BROCHARD | 5,3 | 6,06 | -12,5 % | PC.BOUDOT 2e | 8/41/405/211 |
+| 7 | PURPLE LION | 6,1 | 6,90 | -11,6 % | H.BOUTIN | 14/1/25/74 |
+| 4 | TORTISAMBERT | 8,9 | 9,60 | -7,3 % | C.DEMURO | 1/45/33/4 |
+| 8 | TEN HORNS | 9,7 | 11,35 | -14,5 % | A.POUCHIN | 6/5/49/– |
+| 11 | TALENTUOSO | 9,9 | 10,87 | -8,9 % | M.GRANDIN | 3/110/3159/214 |
+| 1 | BLUE BROTHER | 11 | 11,25 | -2,2 % | M.BARZALONA 4e | 2/238/144/8 |
+| 3 | SIAM PARAGON | 13 | 17,02 | -23,6 % | A.LEMAITRE | 11/170/247/183 |
+| 2 | LA MANDALA | 15 | 14,74 | **+1,8 %** | C.SOUMILLON 3e | 7/36/98/17 |
+| 15 | IVORY SPRING | 17 | 23,31 | -27,1 % | A.HAMELIN | 22/92/695/17 |
+| 9 | FELIX AUX ORMES | 24 | 34,74 | -30,9 % | H.JOURNIAC | 43/8/37/291 |
+| 12 | MARCUS AURELIUS | 26 | 33,24 | -21,8 % | T.PICCONE | 9/6/175/583 |
+| 16 | REVE DE VALLARSA | 34 | 40,95 | -17,0 % | D.SANTIAGO | 15/39/294/1414 |
+| 14 | AGIOTA | 36 | 53,52 | -32,7 % | A.MADAMET | 10/22/118/134 |
+| 13 | FAST RAAJ | 50 | 71,78 | -30,3 % | D.PROVOST | 33/8/13/9 |
+| 10 | PROFUMO DI IENA | 51 | 80,62 | -36,7 % | M.GHIANI | 376/87/76/553 |
+| 5 | COLOMBIER | 56 | 70,66 | -20,7 % | JW.DOYLE | 162/238/3151/8 |
 
 ### 9. QATAR PRIX DU FESTIVAL DES NATIONS
 
