@@ -44,9 +44,39 @@ const COURT = { chevaux: 'ch', jockeys: 'jk', entraineurs: 'ent', eleveurs: 'el'
 const estSnapCSV = d => fs.existsSync(path.join(ROOT, 'data/rankings', d, 'jockeys.csv'));
 const SNAPS = fs.readdirSync(path.join(ROOT, 'data/rankings')).filter(d => /^\d{4}-\d{2}-\d{2}_/.test(d) && estSnapCSV(d)).sort();
 const cache = new Map();
-function indexes(date) {
+
+// Heure de Paris (HH:MM) d'un dossier de snapshot : le nom porte un horodatage UTC.
+const heureParis = snap => {
+  const m = snap.match(/^(\d{4})-(\d{2})-(\d{2})_(\d{2})h(\d{2})$/);
+  if (!m) return null;
+  const t = Date.UTC(+m[1], +m[2] - 1, +m[3], +m[4], +m[5]);
+  return new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris', hour: '2-digit', minute: '2-digit', hour12: false }).format(t).replace(':', 'h');
+};
+const enMinutes = h => { const m = String(h || '').match(/^(\d{1,2})h(\d{2})$/); return m ? +m[1] * 60 + +m[2] : null; };
+
+/* Choix du classement, point-in-time.
+ *
+ * Règle de base : strictement antérieur à la date de la course — un snapshot
+ * daté du même jour peut contenir les résultats de l'après-midi (cas du
+ * 05/09 15h44, téléchargé après plusieurs courses).
+ *
+ * Exception, et seulement ici : les CSV France Galop du jour téléchargés AVANT
+ * le premier départ. Benoit les récupère le matin ; ils ne peuvent rien
+ * contenir d'une course qui n'a pas eu lieu, et les écarter ferait tourner la
+ * carte sur des classements d'un mois. On compare donc l'heure du snapshot
+ * (UTC dans son nom, convertie en heure de Paris) à l'horaire de la course.
+ * Les bancs d'essai historiques (bench/features_pit.mjs) restent, eux, au `<`
+ * strict : on n'y connaît pas l'heure de téléchargement de chaque archive.
+ */
+function indexes(date, horaire) {
   let choisi = null;
-  for (const s of SNAPS) if (s.slice(0, 10) < date) choisi = s;   // strictement antérieur
+  for (const s of SNAPS) {
+    const jour = s.slice(0, 10);
+    if (jour < date) { choisi = s; continue; }
+    if (jour !== date) continue;
+    const hs = enMinutes(heureParis(s)), hc = enMinutes(horaire);
+    if (hs != null && hc != null && hs < hc) choisi = s;
+  }
   if (!choisi) return null;
   if (cache.has(choisi)) return cache.get(choisi);
   const dir = path.join(ROOT, 'data/rankings', choisi), ix = { _snap: choisi };
@@ -118,9 +148,9 @@ const normH = t => String(t || '').toUpperCase().normalize('NFD').replace(/[\u03
 function journee(date) {
   const fichiers = fs.readdirSync(path.join(ROOT, 'data/courses')).filter(f => f.startsWith(date + '_') && f.endsWith('.json'));
   if (!fichiers.length) return null;
-  const ix = indexes(date);
   const live = cotesLive(date);
-  const out = { date, genere: new Date().toISOString(), snapshot: ix ? ix._snap : null, hippodromes: {} };
+  const out = { date, genere: new Date().toISOString(), snapshot: null, hippodromes: {} };
+  const snapsVus = new Set();
   let nP = 0, nR = 0;
   for (const f of fichiers.sort()) {
     const d = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/courses', f), 'utf8'));
@@ -128,6 +158,8 @@ function journee(date) {
     const courses = [];
     for (const c of d.courses || []) {
       const dist = num(c.distance);
+      const ix = indexes(date, c.horaire);
+      if (ix) snapsVus.add(ix._snap);
       const parts = (c.participants || []).map(p => {
         const o = { n: p['n°'] || p.numero || p.n };
         if (ix) {
@@ -159,11 +191,15 @@ function journee(date) {
         }
       }
       courses.push({ numero: c.numero, nom: c.nom, distance: dist, partants: parts,
+                     ...(ix ? { snapshot: ix._snap } : {}),
                      ...(lv ? { releve: { depart: lv.depart, dernier_sec: lv.dernier ? lv.dernier.sec : null, t2_sec: lv.fenetre ? lv.fenetre.sec : null } } : {}) });
       nR++;
     }
     out.hippodromes[hip] = courses;
   }
+  const snaps = [...snapsVus].sort();
+  out.snapshot = snaps.length ? snaps[snaps.length - 1] : null;
+  if (snaps.length > 1) out.snapshots = snaps;   // le matin peut basculer sur le classement du jour
   fs.mkdirSync(path.join(ROOT, 'data/jour'), { recursive: true });
   const chemin = path.join(ROOT, 'data/jour', date + '.json');
   fs.writeFileSync(chemin, JSON.stringify(out));
