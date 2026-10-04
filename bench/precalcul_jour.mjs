@@ -44,6 +44,20 @@ function lireCSV(f) {
   return L.slice(1).map((l, i) => { const r = Object.fromEntries(l.split('\t').map((v, j) => [cols[j], v])); r.Rang = i + 1; return r; });
 }
 const CATS = { chevaux: 'cheval', jockeys: 'jockey', entraineurs: 'entraineur', eleveurs: 'éleveurs', proprietaires: 'propriétaire', cravache_or: 'jockey' };
+/* Périmètre de chaque donnée, par type de course.
+ *
+ * Trot (attelé, monté) : France Galop ne classe pas le trot. Un rang affiché
+ * là est au mieux une homonymie — on voyait « éleveur 4409 » à côté d'un
+ * trotteur à Agen. Rien.
+ * Obstacle (haie, steeple, cross) : les classements France Galop couvrent
+ * l'obstacle, donc les rangs valent ; la pastille, non — bench/jockeys_distance.py
+ * est bâti sur `spe == 'PLAT'` seulement.
+ * Plat français : tout, cote juste comprise.
+ */
+const TROT = new Set(['ATTELE', 'MONTE']);
+const typeCourse = c => String(c.type || 'Plat').toUpperCase();
+const estTrot = c => TROT.has(typeCourse(c));
+const estPlat = c => typeCourse(c) === 'PLAT';
 const COURT = { chevaux: 'ch', jockeys: 'jk', entraineurs: 'ent', eleveurs: 'el', proprietaires: 'pr', cravache_or: 'cr' };
 // Un dossier de snapshot ne compte que s'il porte les CSV attendus : un autre
 // workflow (pipeline-complet) y dépose aussi des .json, et le retenir vidait
@@ -152,6 +166,86 @@ function cotesLive(date) {
 }
 const normH = t => String(t || '').toUpperCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^A-Z0-9]/g, '');
 
+/* ─── Markdown lisible sur téléphone ───────────────────────────────────────
+ *
+ * Le JSON est minifié : sur un téléphone c'est une seule ligne illisible.
+ * GitHub, en revanche, rend le Markdown en tableaux. On écrit donc UN fichier
+ * par hippodrome — personne ne défile 56 courses pour trouver la 3e de
+ * Longchamp — plus un index du jour qui les liste.
+ *
+ * Colonnes tenues volontairement courtes pour tenir sur un écran de
+ * téléphone ; les six rangs sont repliés dans une seule cellule.
+ */
+const slug = h => normH(h).toLowerCase();
+const esp = v => (v == null ? '' : (v > 0 ? '+' : '') + v.toFixed(1).replace('.', ',') + ' %');
+const nb = v => (v == null ? '–' : String(v).replace('.', ','));
+const nb2 = v => (v == null ? '–' : v.toFixed(2).replace('.', ','));
+const ord = r => r + (r === 1 ? 'er' : 'e');
+
+function tableauCourse(c) {
+  const L = [];
+  const lisible = { ATTELE: 'attelé', MONTE: 'monté', HAIE: 'haies', STEEPLECHASE: 'steeple', CROSS: 'cross', PLAT: 'plat' }[typeCourse(c)] || typeCourse(c);
+  const t = [c.horaire, lisible, c.distance ? c.distance + ' m' : null, c.partants.length + ' partants'].filter(Boolean).join(' · ');
+  L.push(`### ${c.numero}. ${c.nom}`, '', `*${t}*`, '');
+  const avecCote = c.partants.some(p => p.c > 0);
+  const avecCJ = c.partants.some(p => p.cj);
+  // ordre de lecture : la cote croissante (donc l'Optimale) ; sinon le numéro
+  const tri = avecCote
+    ? [...c.partants].sort((a, b) => (a.c || 1e9) - (b.c || 1e9))
+    : [...c.partants].sort((a, b) => (+a.n || 0) - (+b.n || 0));
+  // n° et chiffres à droite, noms à gauche : les colonnes de nombres se
+  // comparent d'un coup d'œil, les noms restent lisibles.
+  const entete = [['n°', '--:'], ['cheval', ':--'], ['cote', '--:']];
+  if (avecCJ) entete.push(['juste', '--:'], ['espérance', '--:']);
+  entete.push(['jockey', ':--']);
+  const avecRangs = c.partants.some(p => p.rangs && Object.keys(p.rangs).length);
+  if (avecRangs) entete.push(['jk/ent/él/pr', '--:']);
+  L.push('| ' + entete.map(e => e[0]).join(' | ') + ' |');
+  L.push('|' + entete.map(e => e[1]).join('|') + '|');
+  for (const p of tri) {
+    const r = p.rangs || {};
+    const rangs = ['jk', 'ent', 'el', 'pr'].map(k => (r[k] ? r[k].r : null)).map(v => (v == null ? '–' : v)).join('/');
+    const jk = (p.jockey || '') + (p.pastille ? ` ${p.pastille.type === 'distance' ? '' : '🏆'}${ord(p.pastille.rang)}` : '');
+    const ligne = [p.n, p.cheval || '', nb(p.c)];
+    if (avecCJ) ligne.push(nb2(p.cj && p.cj.cote), p.cj ? (p.cj.play ? `**${esp(p.cj.esp)}**` : esp(p.cj.esp)) : '');
+    ligne.push(jk);
+    if (avecRangs) ligne.push(rangs);
+    L.push('| ' + ligne.join(' | ') + ' |');
+  }
+  L.push('');
+  return L;
+}
+
+function ecrireMarkdown(date, out) {
+  const dossier = path.join(ROOT, 'data/jour');
+  const index = [`# Courses du ${date.split('-').reverse().join('/')}`, ''];
+  if (out.snapshot) index.push(`Classements France Galop : **${out.snapshot.replace('_', ' ').replace('h', 'h')}** (UTC).`, '');
+  const faits = [];
+  for (const [hip, courses] of Object.entries(out.hippodromes)) {
+    const f = `${date}_${slug(hip)}.md`;
+    const L = [`# ${hip} — ${date.split('-').reverse().join('/')}`, ''];
+    const cotees = courses.filter(c => c.partants.some(p => p.c > 0)).length;
+    L.push(`${courses.length} courses${cotees < courses.length ? ` (${cotees} avec cotes)` : ''}. Cotes de l'extraction, pas les cotes live — elles bougent.`, '');
+    const avecCJ = courses.some(c => c.partants.some(p => p.cj));
+    if (avecCJ) L.push('**Lecture.** L\'ordre est la cote croissante : c\'est aussi l\'Optimale, qui ne retient plus que le prix.',
+                       'La *cote juste* est la cote que le cheval mériterait ; l\'espérance en gras est un PLAY (≥ 0).',
+                       'Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classements ci-dessus.', '');
+    else {
+      const trot = courses.every(c => TROT.has(typeCourse(c)));
+      L.push(trot ? '*Trot : France Galop ne classe ni les drivers ni les chevaux d\'attelage. Cotes seules.*'
+                  : '*Pas de cote juste ici : elle n\'est calibrée que sur le plat français.*', '');
+    }
+    L.push('---', '');
+    for (const c of courses) L.push(...tableauCourse(c));
+    fs.writeFileSync(path.join(dossier, f), L.join('\n'));
+    faits.push(f);
+    index.push(`- [**${hip}**](${f}) — ${courses.length} courses${courses[0] && courses[0].horaire ? `, à partir de ${courses[0].horaire}` : ''}`);
+  }
+  index.push('', `*Généré par \`bench/precalcul_jour.mjs\`. Donnée brute : [${date}.json](${date}.json).*`);
+  fs.writeFileSync(path.join(dossier, date + '.md'), index.join('\n'));
+  return faits.length;
+}
+
 function journee(date) {
   const fichiers = fs.readdirSync(path.join(ROOT, 'data/courses')).filter(f => f.startsWith(date + '_') && f.endsWith('.json'));
   if (!fichiers.length) return null;
@@ -169,7 +263,7 @@ function journee(date) {
       if (ix) snapsVus.add(ix._snap);
       const parts = (c.participants || []).map(p => {
         const o = { n: p['n°'] || p.numero || p.n };
-        if (ix) {
+        if (ix && !estTrot(c)) {
           const r = {};
           for (const [cat, champ] of Object.entries(CATS)) {
             const nom = p[champ] || (champ === 'entraineur' ? p['entraîneur'] : '');
@@ -190,9 +284,9 @@ function journee(date) {
         if (cP > 1) o.c = cP;
         if (cR > 1) o.cr = cR;
         if (p.cote_tendance) o.tend = p.cote_tendance;
-        const pa = pastille(p.jockey, dist, c.nom);
+        const pa = estPlat(c) ? pastille(p.jockey, dist, c.nom) : null;
         if (pa) o.pastille = pa;
-        const fc = formeCh[nomCheval(p.cheval)], fj = formeJk[String(p.jockey || '').toUpperCase().trim()];
+        const fc = estTrot(c) ? null : formeCh[nomCheval(p.cheval)], fj = estTrot(c) ? null : formeJk[String(p.jockey || '').toUpperCase().trim()];
         if (fc?.tendance || fj?.tendance) o.forme = { ...(fc?.tendance ? { ch: fc.tendance } : {}), ...(fj?.tendance ? { jk: fj.tendance } : {}) };
         nP++;
         return o;
@@ -208,7 +302,7 @@ function journee(date) {
       /* Cote juste (js/cote-juste.js, modèle data/cote_juste.json) : proba
        * réelle sachant la cote et le contexte. Espérance = p × cote − 1,
        * PLAY si ≥ 0. Diagnostic, pas un tri de la règle. */
-      if (estFR(hip) && (c.type || 'Plat').toUpperCase() === 'PLAT') {
+      if (estFR(hip) && estPlat(c)) {
         const ps = (c.participants || []).filter(q => num(q.cote) > 1);
         if (ps.length >= 5) {
           const r = CJ.calculer(ps, { hippodrome: hip, course: c.nom }, modeleCJ);
@@ -230,7 +324,7 @@ function journee(date) {
           if (d1 || d2 || b) p.cotes = { ...(d1 ? { live: d1 } : {}), ...(d2 ? { t2: d2 } : {}), ...(b && b.ref ? { ref: b.ref } : {}) };
         }
       }
-      courses.push({ numero: c.numero, nom: c.nom, horaire: c.horaire || null, distance: dist, partants: parts,
+      courses.push({ numero: c.numero, nom: c.nom, horaire: c.horaire || null, type: typeCourse(c), distance: dist, partants: parts,
                      ...(ix ? { snapshot: ix._snap } : {}),
                      ...(lv ? { releve: { depart: lv.depart, dernier_sec: lv.dernier ? lv.dernier.sec : null, t2_sec: lv.fenetre ? lv.fenetre.sec : null } } : {}) });
       nR++;
@@ -243,7 +337,8 @@ function journee(date) {
   fs.mkdirSync(path.join(ROOT, 'data/jour'), { recursive: true });
   const chemin = path.join(ROOT, 'data/jour', date + '.json');
   fs.writeFileSync(chemin, JSON.stringify(out));
-  return { chemin, nR, nP, ko: Math.round(fs.statSync(chemin).size / 1024), snap: out.snapshot };
+  const nMd = ecrireMarkdown(date, out);
+  return { chemin, nR, nP, nMd, ko: Math.round(fs.statSync(chemin).size / 1024), snap: out.snapshot };
 }
 
 const arg = process.argv[2];
@@ -252,6 +347,6 @@ const dates = arg === '--tout'
   : [arg && /^\d{4}-\d{2}-\d{2}$/.test(arg) ? arg : new Date().toISOString().slice(0, 10)];
 for (const d of dates) {
   const r = journee(d);
-  if (r) console.log(`${d} · ${r.nR} courses · ${r.nP} partants · ${r.ko} Ko · snapshot ${r.snap}`);
+  if (r) console.log(`${d} · ${r.nR} courses · ${r.nP} partants · ${r.ko} Ko · ${r.nMd} fiches Markdown · snapshot ${r.snap}`);
   else if (dates.length === 1) console.log(`${d} : aucune course`);
 }

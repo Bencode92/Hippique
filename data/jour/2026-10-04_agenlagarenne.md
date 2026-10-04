@@ -1,0 +1,175 @@
+# AGEN LA GARENNE — 04/10/2026
+
+8 courses. Cotes de l'extraction, pas les cotes live — elles bougent.
+
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
+
+---
+
+### 1. PRIX EMILE LAROULANDIE
+
+*14h10 · attelé · 2625 m · 14 partants*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 2 | NOVAK | 1,2 | PIERRICK LE MOEL |
+| 10 | NUMBER FACE | 14 | M. CRIADO |
+| 11 | NOBLE DE TILLARD | 15 | F. MARTY |
+| 9 | NEO KNIGHT | 18 | C. GAZENGEL |
+| 8 | NOLITA DU QUENNE | 33 | J.F. MOQUET |
+| 12 | NELLIE | 33 | J. ASSELIE |
+| 6 | NUWA DU PATURAL | 40 | P. GERAY |
+| 13 | NOSTRA CULPA | 40 | C. HERSERANT |
+| 4 | NEBRASKA TORNADO | 50 | L. GOETZ |
+| 14 | NABAB DES PLEIGNES | 67 | N.R. BROSSARD |
+| 5 | NORRIS DU YUCCA | 100 | CH. FEYTE |
+| 1 | NAPOLEON LETONNANT | 201 | R. ORTEGA |
+| 3 | NIGHT SHADOW | 201 | Y. LACOMBE |
+| 7 | NOVA LOUDETTES | 201 | ET. CLOZIER |
+
+### 2. PRIX ROGER AURIN
+
+*14h40 · attelé · 2625 m · 13 partants*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 9 | JUNINIO FLEURY | 1,3 | F. JULIEN |
+| 10 | JAGUAR BLEU | 7,4 | J. BOUYNE |
+| 11 | HOBBY DE L'EVRE | 10 | C. CHESNE |
+| 2 | JEZABEL DE BEYLEV | 14 | Mlle ADELINE HARET |
+| 1 | JALNA DE PLAY | 47 | M. BESNARD |
+| 8 | IBACA | 47 | B. CANDELLE-GARDENQ |
+| 13 | HORIZON DE LARRE | 47 | J. MARC |
+| 3 | JAGUAR RANAIS | 71 | M. BADIN |
+| 5 | JURQUES | 71 | A. GONCALVES DA SILVA |
+| 4 | INCA VENESI | – | M.X. FLEURY |
+| 6 | JADE DALAMEDA | – | TH. CORBES |
+| 7 | JACODUS DU MELEUC | – | J.PH. TREICH |
+| 12 | JUSTICE PROUVEE | – | D. BOUYNE |
+
+### 3. PRIX HORTICULTURE PIERRE CARTE-FL (GR.A)
+
+*15h10 · attelé · 2575 m · 13 partants*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 3 | MONTE CARLO | 2,6 | F. GENCE |
+| 6 | MATCH LOVE | 4,9 | L. GOETZ |
+| 8 | MOHITO DE GUEZ | 7,3 | M. GRASSET |
+| 5 | MON FAVORI | 10 | V. GONIN |
+| 9 | MONECK BRILLOUARD | 12 | J. ASSELIE |
+| 10 | MISS ROC | 15 | F. MARTY |
+| 1 | MOISSON DE LA COTE | 19 | M. CRIADO |
+| 12 | MA FANTASY D'AMOUR | 19 | M. GERGOUIL |
+| 2 | MEDINA DU CHATELET | 34 | R. BOUVIER |
+| 11 | MAGIQUE GWENOL | 34 | P. GERAY |
+| 4 | MOULINSART | 46 | F. CLOZIER |
+| 13 | MY BEACH DUEM | 139 | Mme LANA HENRY |
+| 7 | MELODY DU CEBE | – | PIERRICK LE MOEL |
+
+### 4. PRIX DE GARONNE (GR.B)
+
+*15h40 · attelé · 2575 m · 13 partants*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 8 | MANSFIELD D'OYSE | 2,9 | M. GRASSET |
+| 4 | MILORD MARANDAIS | 5 | C. GAZENGEL |
+| 5 | MADAGASCAR YAMM | 9,3 | J. ASSELIE |
+| 2 | MAJOR DU MAINE | 13 | M.X. CHARLOT |
+| 3 | MAYA DES BAUX | 16 | V. CABOS |
+| 6 | MAGIC DU VALLON | 16 | N.R. BROSSARD |
+| 7 | MAYERLING LEGACY | 16 | Mme LANA HENRY |
+| 11 | MER AGITEE | 16 | P. GERAY |
+| 1 | MAGIC WELL | 21 | J. CHAVATTE |
+| 10 | MATIS DU VIGNAC | 21 | CH. FEYTE |
+| 13 | MAC DUEM | 21 | Mlle S. TREICH |
+| 9 | MALVERN DE GUEZ | 65 | M. CRIADO |
+| 12 | MUST MAJYC | 65 | A. HONORE |
+
+### 5. PRIX SIKI DU PADOUIN
+
+*16h25 · attelé · 2625 m · 16 partants*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 15 | LUTIN D'HERMES | 1,1 | L. GOETZ |
+| 11 | LITTERATURE | 22 | D. LAISIS |
+| 14 | LINGUIST D'HERIPRE | 30 | Mme LANA HENRY |
+| 6 | LOUNA DES BRETTES | 40 | PH. BOUTIN |
+| 12 | LAURE DE MORANZY | 61 | M. GRASSET |
+| 2 | LILY DE TROUVILLE | 73 | P. GERAY |
+| 13 | LANCELOT ELLIS | 91 | M. GERGOUIL |
+| 1 | LASCO DE BERTRANGE | 122 | F. CLOZIER |
+| 3 | LADY GIRL | 183 | F. MARTY |
+| 4 | LA FALINE | 183 | F. GENCE |
+| 7 | LANCIANO | 183 | V. CABOS |
+| 9 | LUNA DE NARMONT | 183 | N.R. BROSSARD |
+| 10 | LA PERLE RARE | 183 | J. CHAVATTE |
+| 5 | LINOTTE PAULO | 367 | PIERRICK LE MOEL |
+| 16 | LINOS DU GOUTIER | 367 | M. CRIADO |
+| 8 | LUBERON DE LA CRAU | – | Q. FLEURY |
+
+### 6. PRIX MARCEL VAUTHIER
+
+*16h55 · attelé · 2575 m · 15 partants*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 2 | KEEPER DREAM | 3,3 | M. RAHAULT |
+| 10 | KELLE NANA | 4,2 | Mlle ADELINE HARET |
+| 1 | IVANHOE DU FIER | 4,9 | CHARLY CLOZIER |
+| 9 | KOEUR A PRENDRE | 9,9 | P.X.  FLEURY |
+| 5 | JARNAC JULRY | 14 | E. ODIC |
+| 11 | KUPIDON DE CORBERY | 14 | J.M. DORCHIN |
+| 13 | KANAYOU | 14 | L. KONEFAL |
+| 3 | JAZZIE MARIVALOISE | 29 | Mlle M. PAILLARD |
+| 8 | JOYAU DE FAEL | 29 | D. BOUYNE |
+| 14 | KOCCINELLE BEY | 29 | F. DELPECH |
+| 4 | KARIMA DU PARC | – | PH. JOUBIOUX |
+| 6 | ISABELLE GRAND PRE | – | E. PEREKRESTOFF |
+| 7 | IBELIA DU LOISIR | – | H.C. BAKKER |
+| 12 | KINDER LONDE | – | M. WEICK |
+| 15 | ILET DE JEGUN | – | M. MASSY |
+
+### 7. PRIX DE SAINT-HILAIRE-DE-LUSIGNAN
+
+*17h25 · attelé · 2625 m · 17 partants*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 16 | JEFF DE MONPAZ | 1,5 | L. LALANDE |
+| 17 | JAZZ PAT | 10 | M. GERGOUIL |
+| 9 | JADE DES BRETTES | 12 | PH. BOUTIN |
+| 4 | JAVERT | 14 | F. MARTY |
+| 7 | IRELAND TEAM | 23 | C. GAZENGEL |
+| 10 | IBIS DE FRECA | 26 | L. GOETZ |
+| 13 | JEU INTERDIT | 31 | J.H. TREICH |
+| 8 | HEZA DE L'ERDRE | 37 | F. CLOZIER |
+| 2 | JIRELLA DU LOISIR | 46 | M. DAOUGABEL |
+| 6 | JACOTTE DE TIZE | 46 | M. GRASSET |
+| 11 | GHOST DE BEAULIEU | 46 | P. GERAY |
+| 12 | GEWURZTRAMINER | 46 | Y. HAMON |
+| 3 | JEANBAT DANOVER | 93 | Mme LANA HENRY |
+| 5 | JASON FAC | 93 | R. BOUVIER |
+| 1 | JIKA SAUTONNE | 186 | M. CRIADO |
+| 14 | JANTARA DESBOIS | 186 | M. CATHERINE-PEZET |
+| 15 | IRRATI DUEM | 186 | C. HERSERANT |
+
+### 8. PRIX ROGER LAGENEBRE
+
+*17h55 · attelé · 2575 m · 11 partants*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 4 | GRAND RESTAURANT | 4,4 | F. JULIEN |
+| 1 | GALAXIE LIMOUSINE | 5,4 | J. BOUYNE |
+| 3 | JOURNEE A LA GRAVE | 5,4 | A. GONCALVES DA SILVA |
+| 8 | HARKONNEN | 6,4 | B. CANDELLE-GARDENQ |
+| 2 | JAVA DE LIGNY | 7,1 | J. DHOUM |
+| 10 | INSTINCT DU RENARD | 7,9 | A. TOUZERY |
+| 6 | JASPER DU BELLAY | 17 | J.M. FREYSSENGE |
+| 7 | IGGY RUDLAND | 17 | J.PH. TREICH |
+| 5 | JASMIN D'AVENIR | 71 | C. LANGLOIS |
+| 9 | GENIUS DE BRAYE | – | A. GENESTE |
+| 11 | HORIZON PELSA | – | M. JOUBIOUX |
