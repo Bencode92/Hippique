@@ -23,6 +23,13 @@ const M = require(path.join(ROOT, 'js', 'matching.js'));
 
 const corresp = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/claude_correspondances.json'), 'utf8'));
 const jkDist = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/jockeys_distance.json'), 'utf8'));
+const CJ = require(path.join(ROOT, 'js', 'cote-juste.js'));
+const modeleCJ = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/cote_juste.json'), 'utf8'));
+// La cote juste est calibrée sur le plat français : l'appliquer à Sha Tin ou
+// Maronas n'aurait aucun sens (les variables d'hippodrome sont muettes et le
+// biais du public n'est pas le même marché).
+const FR = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/hippos_filter.json'), 'utf8')).whitelist_fr;
+const estFR = h => { const n = normH(h); return FR.some(w => n.startsWith(normH(w))); };
 // forme récente : 2,3 Mo de fichiers pour deux flèches par ligne — on en extrait
 // la seule tendance, par cheval et par jockey.
 const lireForme = f => { try { return (JSON.parse(fs.readFileSync(path.join(ROOT, 'data', f), 'utf8')).resultats) || {}; } catch { return {}; } };
@@ -174,6 +181,15 @@ function journee(date) {
           }
           o.rangs = r;
         }
+        // Lisible seul : sans le nom, le JSON n'est qu'une liste de numéros.
+        o.cheval = nomCheval(p.cheval);
+        if (p.jockey) o.jockey = String(p.jockey).trim();
+        // Cote PMU de l'extraction du matin — la seule disponible avant que le
+        // scraper pré-course ne tourne ; cotes.live/t2 l'affinent ensuite.
+        const cP = num(p.cote), cR = num(p.cote_reference);
+        if (cP > 1) o.c = cP;
+        if (cR > 1) o.cr = cR;
+        if (p.cote_tendance) o.tend = p.cote_tendance;
         const pa = pastille(p.jockey, dist, c.nom);
         if (pa) o.pastille = pa;
         const fc = formeCh[nomCheval(p.cheval)], fj = formeJk[String(p.jockey || '').toUpperCase().trim()];
@@ -181,6 +197,30 @@ function journee(date) {
         nP++;
         return o;
       });
+      /* Optimale : après la re-mesure honnête (les leviers ne battent pas le
+       * marché), la formule retenue par best_formulas.json n'a plus qu'un
+       * levier — « Cote (1/cote) ». L'Optimale EST donc le classement par cote
+       * croissante. On l'écrit tel quel plutôt que de le faire recalculer par
+       * la page, pour que le JSON se lise seul avant la course. */
+      const parCote = parts.filter(x => x.c > 1).sort((a, b) => a.c - b.c);
+      parCote.forEach((x, i) => { x.opt = i + 1; });
+
+      /* Cote juste (js/cote-juste.js, modèle data/cote_juste.json) : proba
+       * réelle sachant la cote et le contexte. Espérance = p × cote − 1,
+       * PLAY si ≥ 0. Diagnostic, pas un tri de la règle. */
+      if (estFR(hip) && (c.type || 'Plat').toUpperCase() === 'PLAT') {
+        const ps = (c.participants || []).filter(q => num(q.cote) > 1);
+        if (ps.length >= 5) {
+          const r = CJ.calculer(ps, { hippodrome: hip, course: c.nom }, modeleCJ);
+          for (const q of ps) {
+            const v = r.get(q);
+            if (!v) continue;
+            const o = parts.find(x => String(x.n) === String(q['n°'] || q.numero || q.n));
+            if (o) o.cj = { cote: +v.coteJuste.toFixed(2), esp: +(100 * v.esperance).toFixed(1), play: v.play };
+          }
+        }
+      }
+
       const lv = live.get(`${normH(hip)}|${num(c.numero)}`);
       if (lv) {
         // cote du dernier relevé et cote du relevé T-2 (celui qui fait foi pour le test)
@@ -190,7 +230,7 @@ function journee(date) {
           if (d1 || d2 || b) p.cotes = { ...(d1 ? { live: d1 } : {}), ...(d2 ? { t2: d2 } : {}), ...(b && b.ref ? { ref: b.ref } : {}) };
         }
       }
-      courses.push({ numero: c.numero, nom: c.nom, distance: dist, partants: parts,
+      courses.push({ numero: c.numero, nom: c.nom, horaire: c.horaire || null, distance: dist, partants: parts,
                      ...(ix ? { snapshot: ix._snap } : {}),
                      ...(lv ? { releve: { depart: lv.depart, dernier_sec: lv.dernier ? lv.dernier.sec : null, t2_sec: lv.fenetre ? lv.fenetre.sec : null } } : {}) });
       nR++;

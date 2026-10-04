@@ -43,12 +43,25 @@ jobs:
         with:
           python-version: '3.11'
 
+      # L'horodatage vient du dernier commit qui a touché data/raw_csv : c'est
+      # l'heure où Benoit a déposé les CSV, pas celle où le workflow passe.
+      # Deux conséquences : (1) le nom du dossier dit la vérité, donc la règle
+      # point-in-time de precalcul_jour.mjs peut l'accepter pour les courses de
+      # l'après-midi ; (2) relancer le workflow retombe sur le MÊME stamp, donc
+      # pas de doublon — le 04/10 avait produit 06h36 et 08h03 au contenu
+      # identique octet pour octet.
       - name: Créer le snapshot brut horodaté
         run: |
-          STAMP=$(date -u +"%Y-%m-%d_%Hh%M")
-          echo "📸 Stamp: $STAMP"
+          STAMP=$(TZ=UTC git log -1 --format=%cd --date=format-local:'%Y-%m-%d_%Hh%M' -- data/raw_csv)
+          [ -n "$STAMP" ] || STAMP=$(date -u +"%Y-%m-%d_%Hh%M")
+          echo "STAMP=$STAMP" >> "$GITHUB_ENV"
+          echo "📸 Stamp: $STAMP (dépôt des CSV)"
           # Snapshot des bruts (Rang officiel France Galop, ratios calculés à la volée)
           # Plus de pondered_ranking qui inventait un ScoreMixte → classement aligné avec le site
+          if [ -d "data/rankings/$STAMP" ]; then
+            echo "Snapshot $STAMP déjà présent — rien à faire."
+            exit 0
+          fi
           python3 scripts/snapshot_brut.py "$STAMP"
           echo ""
           echo "=== Contenu du snapshot ==="
@@ -60,7 +73,6 @@ jobs:
 
       - name: Commit et push
         run: |
-          STAMP=$(date -u +"%Y-%m-%d_%Hh%M")
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action - Snapshot"
           git add data/rankings/
