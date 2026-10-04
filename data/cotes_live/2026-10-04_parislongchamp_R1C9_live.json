@@ -4,134 +4,134 @@
   "reunion": 1,
   "heure_depart": 1791131820000,
   "distance": 1400,
-  "scraped_at": "2026-10-04T18:35:09.297302",
-  "minutes_avant_depart": 2,
+  "scraped_at": "2026-10-04T18:36:29.130810",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "HEYBETLI",
-      "cote_live": 22.0,
+      "cote_live": 23.0,
       "cote_reference": 18.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791131699000
+      "timestamp_cote": 1791131779000
     },
     {
       "numPmu": 2,
       "nom": "PRINCE AUBOIS",
       "cote_live": 18.0,
       "cote_reference": 13.0,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791131699000
+      "timestamp_cote": 1791131779000
     },
     {
       "numPmu": 3,
       "nom": "CHALDERO",
-      "cote_live": 52.0,
+      "cote_live": 53.0,
       "cote_reference": 29.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791131699000
+      "timestamp_cote": 1791131779000
     },
     {
       "numPmu": 4,
       "nom": "CHIRICCO",
-      "cote_live": 40.0,
+      "cote_live": 41.0,
       "cote_reference": 40.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791131699000
+      "timestamp_cote": 1791131779000
     },
     {
       "numPmu": 5,
       "nom": "LAITH",
-      "cote_live": 7.1,
+      "cote_live": 7.2,
       "cote_reference": 13.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791131699000
+      "timestamp_cote": 1791131779000
     },
     {
       "numPmu": 6,
       "nom": "PIEMONT",
-      "cote_live": 13.0,
+      "cote_live": 12.0,
       "cote_reference": 15.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791131699000
+      "timestamp_cote": 1791131779000
     },
     {
       "numPmu": 7,
       "nom": "ZAKOSHA",
-      "cote_live": 23.0,
+      "cote_live": 24.0,
       "cote_reference": 17.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791131699000
+      "timestamp_cote": 1791131779000
     },
     {
       "numPmu": 8,
       "nom": "YOKEN",
-      "cote_live": 33.0,
+      "cote_live": 37.0,
       "cote_reference": 15.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791131699000
+      "timestamp_cote": 1791131779000
     },
     {
       "numPmu": 9,
       "nom": "CANENA",
-      "cote_live": 39.0,
+      "cote_live": 43.0,
       "cote_reference": 29.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791131699000
+      "timestamp_cote": 1791131779000
     },
     {
       "numPmu": 10,
       "nom": "FREJA",
-      "cote_live": 22.0,
+      "cote_live": 23.0,
       "cote_reference": 16.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791131699000
+      "timestamp_cote": 1791131779000
     },
     {
       "numPmu": 11,
       "nom": "GALORD",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 5.4,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791131699000
+      "timestamp_cote": 1791131779000
     },
     {
       "numPmu": 12,
       "nom": "ROZARION",
-      "cote_live": 4.9,
+      "cote_live": 4.8,
       "cote_reference": 3.7,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791131699000
+      "timestamp_cote": 1791131779000
     },
     {
       "numPmu": 13,
       "nom": "PREMONITION",
       "cote_live": 37.0,
       "cote_reference": 34.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791131699000
+      "timestamp_cote": 1791131779000
     },
     {
       "numPmu": 14,
       "nom": "NADIR",
-      "cote_live": 3.0,
+      "cote_live": 2.9,
       "cote_reference": 9.0,
-      "tendance": "",
+      "tendance": "-",
       "favoris": true,
-      "timestamp_cote": 1791131699000
+      "timestamp_cote": 1791131779000
     }
   ],
   "hippodrome": "PARISLONGCHAMP",
@@ -274,6 +274,46 @@
         "12": 4.9,
         "13": 37.0,
         "14": 3.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-04T18:35:49.154007",
+      "minutes_avant_depart": 1.1877483333333332,
+      "cotes": {
+        "1": 22.0,
+        "2": 18.0,
+        "3": 52.0,
+        "4": 41.0,
+        "5": 7.3,
+        "6": 12.0,
+        "7": 23.0,
+        "8": 34.0,
+        "9": 40.0,
+        "10": 22.0,
+        "11": 13.0,
+        "12": 4.7,
+        "13": 36.0,
+        "14": 3.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-04T18:36:29.130810",
+      "minutes_avant_depart": 0.5210801333333334,
+      "cotes": {
+        "1": 23.0,
+        "2": 18.0,
+        "3": 53.0,
+        "4": 41.0,
+        "5": 7.2,
+        "6": 12.0,
+        "7": 24.0,
+        "8": 37.0,
+        "9": 43.0,
+        "10": 23.0,
+        "11": 14.0,
+        "12": 4.8,
+        "13": 37.0,
+        "14": 2.9
       }
     }
   ]
