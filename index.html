@@ -514,7 +514,7 @@
 
         .course-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
             gap: 1rem;
             padding: 1rem;
         }
@@ -595,6 +595,10 @@
             transition: max-height 0.5s ease, opacity 0.4s ease, margin 0.4s ease, padding 0.4s ease;
             opacity: 0;
             grid-column: 1 / -1;
+            /* Sans min-width:0, un élément de grille s'élargit à son contenu : la
+               table débordait de l'écran (507 px dans un conteneur de 329) et les
+               colonnes Cote juste et Arrivée passaient hors du téléphone. */
+            min-width: 0;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
             margin-bottom: 0;
             transform: translateY(-10px);
@@ -771,6 +775,7 @@
 
         .table-responsive {
             overflow-x: auto;
+            max-width: 100%;
             border-radius: 12px;
             margin-bottom: 2rem;
             box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
@@ -1033,6 +1038,60 @@
         }
 
         /* iPhone : optimisations agressives pour la lisibilité */
+        /* ── TÉLÉPHONE : la table des partants ─────────────────────────────
+           Dix colonnes ne tiennent pas sur 390 px. On garde ce qui sert à
+           décider et à lire le pari — numéro, cheval, jockey (avec ses
+           pastilles), cote, cote juste, arrivée — et on masque ce qui est
+           du confort de bureau : entraîneur, rattachement, rang marché
+           (l'ordre des lignes EST celui du marché) et rang Optimale (égal au
+           marché tant qu'aucune formule ne bat la cote). Tout reste visible
+           sur grand écran et en tournant le téléphone. */
+        @media (max-width: 760px) {
+            /* Une seule colonne, SANS plancher min-content : avec minmax(300px, 1fr),
+               la piste de grille se calait sur la largeur minimale de la table (507 px
+               dans un conteneur de 329) et les dernières colonnes sortaient de l'écran.
+               minmax(0, 1fr) supprime ce plancher. */
+            .course-grid { grid-template-columns: minmax(0, 1fr); padding: 0.6rem; }
+            .course-details { padding: 0.9rem; min-width: 0; }
+            .participants-table { font-size: 0.8rem; }
+            .participants-table th,
+            .participants-table td { padding: 0.45rem 0.35rem; }
+            /* « S.PASQUIE R » : word-break coupait en plein mot */
+            .participants-table td { word-break: normal; overflow-wrap: break-word; hyphens: none; }
+            .participants-table th:nth-child(2), .participants-table td:nth-child(2) { max-width: 7.5rem; }
+            .participants-table th:nth-child(3), .participants-table td:nth-child(3) { max-width: 7rem; }
+            .participants-table td span[title] { font-size: .68rem !important; }
+            .suffixe-cheval { display: none; }
+            /* Faire tenir les six colonnes sans défilement latéral. En table-layout
+               fixed, CHAQUE colonne visible doit avoir sa largeur, sinon celles qui
+               n'en ont pas tombent à zéro et le texte s'écrit une lettre par ligne. */
+            .participants-table { table-layout: fixed; width: 100%; }
+            /* !important : les en-têtes portent des largeurs en style INLINE
+               (width:40px, 90px, 110px…) qui l'emportent sinon — Cheval et Jockey
+               se retrouvaient à 0 px et le texte s'écrivait une lettre par ligne. */
+            .participants-table th:nth-child(1),  .participants-table td:nth-child(1)  { width: 10% !important; }
+            .participants-table th:nth-child(2),  .participants-table td:nth-child(2)  { width: 25% !important; max-width: none; }
+            .participants-table th:nth-child(3),  .participants-table td:nth-child(3)  { width: 23% !important; max-width: none; }
+            .participants-table th:nth-child(6),  .participants-table td:nth-child(6)  { width: 15% !important; }
+            .participants-table th:nth-child(9),  .participants-table td:nth-child(9)  { width: 16% !important; }
+            .participants-table th:nth-child(10), .participants-table td:nth-child(10) { width: 11% !important; text-align: center; }
+            /* les sous-titres d'en-tête (« p · espérance », « rang FG ») mangent la largeur */
+            .participants-table th br, .participants-table th br + span { display: none; }
+            .participants-table th { font-size: .78rem; padding: 0.5rem 0.25rem; }
+            .corde-number { font-size: .7rem; }
+            .participants-table th:nth-child(4), .participants-table td:nth-child(4),
+            .participants-table th:nth-child(5), .participants-table td:nth-child(5),
+            .participants-table th:nth-child(7), .participants-table td:nth-child(7),
+            .participants-table th:nth-child(8), .participants-table td:nth-child(8) { display: none; }
+            /* le jockey et ses pastilles passent à la ligne au lieu d'élargir la colonne */
+            .participants-table td:nth-child(3) span[title] { display: inline-block; margin-top: 2px; }
+            .horse-number { width: 26px; height: 26px; font-size: 0.8rem; }
+            .course-details-title { font-size: 1rem; }
+            .bandeau-decision, .bandeau-cote-juste, .bandeau-rattachement,
+            .combines-details, .lien-stats { font-size: 0.82rem; }
+            .lien-stats { flex-direction: column; align-items: flex-start; }
+        }
+
         @media (max-width: 480px) {
             html { font-size: 14px; }
             body { padding: 0; }
@@ -1643,7 +1702,7 @@
                         + `Réel / promis ${cd.rp} — ${cd.rp >= 1.05 ? 'il gagne PLUS que sa cote ne le promet ici' : cd.rp >= 0.98 ? 'exactement au prix du marché' : 'moins que sa cote ne le promet'}\n`
                         + `Rendement : ${cd.roi > 0 ? '+' : ''}${cd.roi} % ± ${cd.se}\n`
                         + `Échantillon mince (${cd.n} montes : un taux de victoire y vaut ±${Math.round(100 * Math.sqrt(cd.tx / 100 * (1 - cd.tx / 100) / cd.n))} points). Lecture seule.`;
-                    return ` <span title="${t.replace(/"/g, '&quot;')}" style="display:inline-block;font-size:.72em;font-weight:600;color:${coul};border:1px solid ${coul};border-radius:3px;padding:0 4px;vertical-align:1px;cursor:help">🏆 ${cd.rang}${cd.rang === 1 ? 'er' : 'e'} / ${Math.round(distance / 100) * 100}m en groupes</span>`;
+                    return ` <span title="${t.replace(/"/g, '&quot;')}" style="display:inline-block;font-size:.72em;font-weight:600;color:${coul};border:1px solid ${coul};border-radius:3px;padding:0 4px;vertical-align:1px;cursor:help;white-space:nowrap">🏆 ${cd.rang}${cd.rang === 1 ? 'er' : 'e'} · ${Math.round(distance / 100) * 100}m</span>`;
                 }
                 const B = _jkDist.belles_courses;
                 const c = B && B.classement.find(x => x.jk === cleJk);
@@ -1655,7 +1714,7 @@
                         + `Réel / promis ${c.rp} — ${c.rp >= 1.05 ? 'il gagne PLUS que sa cote ne le promet dans ces courses' : c.rp >= 0.98 ? 'exactement au prix du marché' : 'moins que sa cote ne le promet'}\n`
                         + `Rendement sur toutes ses montes en groupes : ${c.roi > 0 ? '+' : ''}${c.roi} % ± ${c.se}\n`
                         + `543 groupes dans l'historique : lecture seule, ce n'est pas un signal de pari.`;
-                    belle = ` <span title="${t.replace(/"/g, '&quot;')}" style="display:inline-block;font-size:.72em;font-weight:600;color:${coul};border:1px solid ${coul};border-radius:3px;padding:0 4px;vertical-align:1px;cursor:help">🏆 ${c.rang}${c.rang === 1 ? 'er' : 'e'} en groupes</span>`;
+                    belle = ` <span title="${t.replace(/"/g, '&quot;')}" style="display:inline-block;font-size:.72em;font-weight:600;color:${coul};border:1px solid ${coul};border-radius:3px;padding:0 4px;vertical-align:1px;cursor:help;white-space:nowrap">🏆 ${c.rang}${c.rang === 1 ? 'er' : 'e'} · groupes</span>`;
                 }
             }
             // les deux dimensions se cumulent : la qualité de la course (cravache d'or)
@@ -1673,7 +1732,7 @@
                 + `Réel / promis ${c.rp} — ${c.rp >= 1.05 ? 'il gagne PLUS que sa cote ne le promet sur cette distance' : c.rp >= 0.98 ? 'exactement au prix du marché' : 'moins que sa cote ne le promet : le public le sur-joue ici'}\n`
                 + `Rendement d'un pari sur toutes ses montes de la bande : ${c.roi > 0 ? '+' : ''}${c.roi} % ± ${c.se}\n`
                 + `Lecture seule : une spécialité de jockey ne se répète pas d'une période à l'autre.`;
-            return belle + ` <span title="${t.replace(/"/g, '&quot;')}" style="display:inline-block;font-family:inherit;font-size:.72em;font-weight:600;color:${coul};border:1px solid ${coul};border-radius:3px;padding:0 4px;vertical-align:1px;cursor:help">${c.rang}${c.rang === 1 ? 'er' : 'e'} / ${bande}m</span>`;
+            return belle + ` <span title="${t.replace(/"/g, '&quot;')}" style="display:inline-block;font-family:inherit;font-size:.72em;font-weight:600;color:${coul};border:1px solid ${coul};border-radius:3px;padding:0 4px;vertical-align:1px;cursor:help;white-space:nowrap">${c.rang}${c.rang === 1 ? 'er' : 'e'} · ${bande}m</span>`;
         }
 
         let _coteJuste = null;
@@ -3590,7 +3649,13 @@
                                     <div class="horse-number">${participant['n°'] || participant.n || participant.numero || '-'}</div>
                                     ${cordeDisplay}
                                 </td>
-                                <td>${participant.cheval || 'N/A'}${fch ? ` <span title="Forme cheval" style="color:${fchColor};font-size:0.8em">${fch}</span>` : ''}</td>
+                                <td>${(() => {
+                                    // « ALEM H.PU. 4 a. » : le nom d'abord, le suffixe sexe/race/âge
+                                    // dans un span qu'on masque sur téléphone — il mange une colonne
+                                    // entière sans aider à décider.
+                                    const m = String(participant.cheval || 'N/A').match(/^(.*?)(\s+[HFM]\.[A-Z]+\.?\s*\d+\s*a\.?\s*)$/i);
+                                    return m ? `${m[1]}<span class="suffixe-cheval" style="opacity:.6">${m[2]}</span>` : (participant.cheval || 'N/A');
+                                })()}${fch ? ` <span title="Forme cheval" style="color:${fchColor};font-size:0.8em">${fch}</span>` : ''}</td>
                                 <td>${participant.jockey || 'N/A'}${fcj ? ` <span title="Forme jockey" style="color:${fcjColor};font-size:0.8em">${fcj}</span>` : ''}${pastilleJockey(participant.jockey, courseContext.distance, courseName)}</td>
                                 <td>${participant.entraineur || 'N/A'}</td>
                                 ${(() => {
@@ -3616,42 +3681,7 @@
                                     return `<td style="text-align:left;font-size:0.8em;line-height:1.3;cursor:help" title="${lignes.join('\n').replace(/"/g, '&quot;')}"><div style="color:${col};font-weight:600">${ok3}/3</div>${rangs}</td>`;
                                 })()}
                                 <td style="text-align:center;font-weight:600;${coteValue !== '-' ? 'color:#40E0D0' : ''}">${coteDisplay}</td>
-                                <td class="prediction-cell" style="display:none">
-                                    <div style="display:flex;align-items:center;gap:6px">
-                                        <span style="font-weight:700;font-size:1.1em;color:${scoreColor};min-width:35px">${scorePredictif.score}</span>
-                                        <div class="prediction-bar-container" style="flex:1">
-                                            <div class="prediction-bar" style="width:${normalizedScore * 100}%;background:${scoreColor}"></div>
-                                        </div>
-                                    </div>
-                                    <div class="score-details">
-                                        <small>
-                                            ${scorePredictif.indiceConfiance ?
-                                                `<span class="confidence-indicator ${confidenceClass}">${Math.round(parseFloat(scorePredictif.indiceConfiance) * 100)}%</span>` : ''}
-                                            <i class="fas fa-info-circle"></i>
-                                        </small>
-                                        <div class="tooltip-content">
-                                            <div style="font-weight:600;margin-bottom:6px;color:#40E0D0;font-size:0.9em">Score brut: ${scorePredictif.scoreRaw || scorePredictif.score}</div>
-                                            <div style="display:grid;grid-template-columns:auto 1fr;gap:3px 10px;font-size:0.85em">
-                                              <span style="opacity:0.7">Cheval 2025</span>
-                                              <span>#${scorePredictif.details.cheval.rang} | TauxV: ${scorePredictif.details.cheval.tauxV2025 || '-'}%</span>
-                                              <span style="opacity:0.7">Jockey 2025</span>
-                                              <span>#${scorePredictif.details.jockey.rang} | ${scorePredictif.details.jockey.score} pts${scorePredictif.details.jockey.cravacheOr ? ' &#127942;' : ''}</span>
-                                              <span style="opacity:0.7">Valeur FG</span>
-                                              <span style="font-weight:600">${scorePredictif.details.valeurFG?.valeur || '-'}</span>
-                                              <span style="opacity:0.7">Cote PMU</span>
-                                              <span>${scorePredictif.details.cote?.valeur || '-'}${scorePredictif.details.cote?.penalite ? ' <span style="color:#e05a40">⚠️'+scorePredictif.details.cote.derive+'</span>' : (scorePredictif.details.cote?.derive && scorePredictif.details.cote.derive !== 'N/A' ? ' <span style="opacity:0.6">('+scorePredictif.details.cote.derive+')</span>' : '')}</span>
-                                              <span style="opacity:0.7">Corde</span>
-                                              <span>${participant.corde || '-'}</span>
-                                              <span style="opacity:0.7">Musique</span>
-                                              <span>${scorePredictif.details.musique?.score || '-'}/100</span>
-                                            </div>
-                                            ${scorePredictif.details.jockey.combo ? `<div style="margin-top:4px;padding-top:4px;border-top:1px solid rgba(255,255,255,0.1);color:#40E0D0;font-size:0.85em">&#129309; Duo J×E: ${scorePredictif.details.jockey.combo.courses}c, ${scorePredictif.details.jockey.combo.tauxVictoire}% vict</div>` : ''}
-                                            ${scorePredictif.details.forme?.cheval ? `<div style="margin-top:4px;padding-top:4px;border-top:1px solid rgba(255,255,255,0.1);font-size:0.85em"><strong>Forme</strong> ${scorePredictif.details.forme.cheval.score}/100 ${({forte_hausse:'<span style="color:#40e05a">&#9650;&#9650;</span>',hausse:'<span style="color:#40e05a">&#9650;</span>',forte_baisse:'<span style="color:#e05a40">&#9660;&#9660;</span>',baisse:'<span style="color:#e05a40">&#9660;</span>'})[scorePredictif.details.forme.cheval.tendance] || ''}${scorePredictif.details.forme.cheval.dernieres5 ? ` <span style="opacity:0.7">${scorePredictif.details.forme.cheval.dernieres5.map(c=>c.position).join('-')}</span>` : ''}</div>` : ''}
-                                            ${scorePredictif.details.distance?.cheval ? `<div style="font-size:0.85em"><strong>Spé dist.</strong> ${scorePredictif.details.distance.cheval.tauxVictoireDistance}% <span style="opacity:0.7">(vs ${scorePredictif.details.distance.cheval.tauxVictoireGlobal}% global)</span></div>` : ''}
-                                            <div style="margin-top:4px;padding-top:4px;border-top:1px solid rgba(255,255,255,0.1);font-size:0.8em;opacity:0.6">Fiab: ${Math.round(parseFloat(scorePredictif.indiceConfiance||0)*100)}%</div>
-                                        </div>
-                                    </div>
-                                </td>
+                                
                                 ${(() => {
                                     const partId = participant['n°'] || participant.numero || participant.n;
                                     const rgCote = rangCoteMap[partId];
