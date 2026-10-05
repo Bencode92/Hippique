@@ -62,24 +62,24 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX AU-DELA DES PISTES
 
-*18h28 · plat · 1300 m · 14 partants · cotes de l'extraction*
+*18h28 · plat · 1300 m · 14 partants · cotes à T−29:59*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | CROWDFUNDING | – | A.DUQUESNOY | 121/28/68/16 |
-| 2 | CREW DRAGON | – | J.MOUTARD | 61/28/68/16 |
-| 3 | ANDARTIS | – | M.VELON | 28/117/3124/784 |
-| 4 | TYSON | – | T.BACHELOT | 16/94/26/1429 |
-| 5 | SNOW GHOST | – | LHW .GHYS-DIETEREN | –/603/219/2356 |
-| 6 | HERACLES | – | L.POGGIONOVO | 80/79/1567/1523 |
-| 7 | ITAEWON | – | T.PICCONE | 9/28/186/49 |
-| 8 | WILD WEST | – | M.GUYON | 4/21/39/1194 |
-| 9 | GALLIUS | – | E.CHINCHILLA | 276/15/572/273 |
-| 10 | BACCHILIDE | – | S.TISON | 98/87/460/4483 |
-| 11 | GOLDFIELD | – | A.VILCHIEN | 93/94/95/1495 |
-| 12 | OUT OF THE BLUE | – | E.MUNTWYLER | 181/15/15/36 |
-| 13 | CLAIM THE STARS | – | C.PACAUT | 48/501/3210/1483 |
-| 14 | FAVORY CHOP | – | E.HARDOUIN | 27/70/6/1497 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 1 | CROWDFUNDING | 5 | 6,71 | -25,4 % | A.DUQUESNOY | 121/28/68/16 |
+| 7 | ITAEWON | 5,1 | 5,19 | -1,8 % | T.PICCONE | 9/28/186/49 |
+| 6 | HERACLES | 9,3 | 11,66 | -20,2 % | L.POGGIONOVO | 80/79/1567/1523 |
+| 10 | BACCHILIDE | 10 | 13,59 | -26,4 % | S.TISON | 98/87/460/4483 |
+| 11 | GOLDFIELD | 10 | 11,17 | -10,5 % | A.VILCHIEN | 93/94/95/1495 |
+| 14 | FAVORY CHOP | 10 | 11,17 | -10,5 % | E.HARDOUIN | 27/70/6/1497 |
+| 3 | ANDARTIS | 11 | 11,43 | -3,8 % | M.VELON | 28/117/3124/784 |
+| 9 | GALLIUS | 13 | 15,80 | -17,7 % | E.CHINCHILLA | 276/15/572/273 |
+| 13 | CLAIM THE STARS | 13 | 18,54 | -29,9 % | C.PACAUT | 48/501/3210/1483 |
+| 5 | SNOW GHOST | 14 | 16,54 | -15,3 % | LHW .GHYS-DIETEREN | –/603/219/2356 |
+| 12 | OUT OF THE BLUE | 23 | 30,64 | -24,9 % | E.MUNTWYLER | 181/15/15/36 |
+| 2 | CREW DRAGON | – | – |  | J.MOUTARD | 61/28/68/16 |
+| 4 | TYSON | – | – |  | T.BACHELOT | 16/94/26/1429 |
+| 8 | WILD WEST | – | – |  | M.GUYON | 4/21/39/1194 |
 
 ### 5. PRIX DE LA SAMBRE
 
