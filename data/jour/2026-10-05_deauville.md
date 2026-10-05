@@ -80,23 +80,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DE LA SAMBRE
 
-*19h00 · plat · 1300 m · 13 partants · cotes à T−5:59*
+*19h00 · plat · 1300 m · 13 partants · cotes à T−3:19*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 1 | CRACK CITY | 4,2 | 4,2 | 4,58 | -8,3 % | T.PICCONE | 9/390/1415/278 |
-| 6 | ASTERALE | 5,1 | 6,6 | 5,05 | **+1,0 %** | M.GRANDIN | 3/108/605/84 |
-| 2 | JIJI MY LOVE | 8,4 | 8,6 | 9,02 | -6,8 % | L.BAILS | 77/135/370/1384 |
-| 8 | GIN GEMBRE | 9,2 | 8,4 | 12,17 | -24,4 % | E.HARDOUIN | 27/214/24/342 |
-| 10 | LAGOA SANTA | 10 | 11 | 11,50 | -13,0 % | A.CRASTUS | 17/147/1010/1760 |
-| 11 | PALIMERO | 13 | 13 | 17,09 | -23,9 % | R.MANGIONE | 78/515/3371/1585 |
-| 5 | RUE DU SAHEL | 14 | 15 | 17,51 | -20,1 % | P.CHEYER | 109/562/59/2009 |
-| 9 | STRANGER | 17 | 14 | 23,40 | -27,4 % | J.LACROIX | 94/141/56/1531 |
-| 4 | LADY PINK | 20 | 19 | 25,78 | -22,4 % | D.SANTIAGO | 15/319/70/1583 |
-| 3 | EL MADAR | 22 | 16 | 31,57 | -30,3 % | M.VELON | 28/117/4119/784 |
-| 12 | MEHANYDREAM | 28 | 24 | 37,90 | -26,1 % | A.VILCHIEN | 93/532/719/2023 |
-| 13 | CALY ROSAY | 28 | 25 | 41,62 | -32,7 % | M.MARQUETTE | 54/262/608/3207 |
-| 7 | BREATHE ON | 62 | 36 | 82,98 | -25,3 % | S.TISON | 98/803/11/3460 |
+| 1 | CRACK CITY | 4,3 | 4,2 | 4,70 | -8,5 % | T.PICCONE | 9/390/1415/278 |
+| 6 | ASTERALE | 4,5 | 6,6 | 4,41 | **+1,9 %** | M.GRANDIN | 3/108/605/84 |
+| 10 | LAGOA SANTA | 9,1 | 11 | 10,30 | -11,6 % | A.CRASTUS | 17/147/1010/1760 |
+| 2 | JIJI MY LOVE | 9,2 | 8,6 | 10,02 | -8,2 % | L.BAILS | 77/135/370/1384 |
+| 8 | GIN GEMBRE | 10 | 8,4 | 13,43 | -25,5 % | E.HARDOUIN | 27/214/24/342 |
+| 5 | RUE DU SAHEL | 13 | 15 | 16,06 | -19,1 % | P.CHEYER | 109/562/59/2009 |
+| 11 | PALIMERO | 14 | 13 | 18,64 | -24,9 % | R.MANGIONE | 78/515/3371/1585 |
+| 9 | STRANGER | 19 | 14 | 25,44 | -25,3 % | J.LACROIX | 94/141/56/1531 |
+| 4 | LADY PINK | 22 | 19 | 28,78 | -23,6 % | D.SANTIAGO | 15/319/70/1583 |
+| 3 | EL MADAR | 26 | 16 | 36,50 | -28,8 % | M.VELON | 28/117/4119/784 |
+| 12 | MEHANYDREAM | 30 | 24 | 39,10 | -23,3 % | A.VILCHIEN | 93/532/719/2023 |
+| 7 | BREATHE ON | 32 | 36 | 42,22 | -24,2 % | S.TISON | 98/803/11/3460 |
+| 13 | CALY ROSAY | 34 | 25 | 49,43 | -31,2 % | M.MARQUETTE | 54/262/608/3207 |
 
 ### 6. PRIX DE CAGNES-SUR-MER
 
