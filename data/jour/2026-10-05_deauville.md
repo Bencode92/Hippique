@@ -1,6 +1,6 @@
 # DEAUVILLE — 05/10/2026
 
-9 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+9 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -10,93 +10,93 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 1. PRIX CAPITAINE RIQUET - HANDICAP CHALLENGE
 
-*16h37 · plat · 2500 m · 9 partants · cotes de l'extraction*
+*16h37 · plat · 2500 m · 9 partants · cotes à T−0:19*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 7 | LA JAVANAISE | 4,1 | 4,80 | -14,5 % | C.AELBRECHT | –/432/24/218 |
-| 1 | CATHERINE'S GIFT | 4,7 | 5,23 | -10,1 % | JD.MANCEAU | –/40/54/1582 |
-| 2 | SOLDIERS CHORUS | 6,4 | 6,83 | -6,3 % | S.CASTELA | –/12/59/897 |
-| 6 | KERDINA | 7,7 | 8,11 | -5,1 % | F.GUY | –/207/–/627 |
-| 5 | RIGEL | 7,8 | 9,96 | -21,7 % | T.MARLIN | –/27/117/2696 |
-| 3 | COEUR DE ROUME | 8,2 | 9,88 | -17,0 % | P.LOTOUT | –/314/1452/2190 |
-| 9 | DSCHINGIS ARROW | 16 | 19,45 | -17,7 % | Y.MADEC | –/296/67/262 |
-| 4 | MOURAT | 17 | 23,27 | -26,9 % | G.DANLOUX | –/28/17/16 |
-| 8 | AMKAR | 29 | 44,15 | -34,3 % | T.GUINEHEUX | –/138/1704/935 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 1 | CATHERINE'S GIFT | 4 | 4,7 | 5,03 | -20,5 % | JD.MANCEAU | –/40/54/1582 |
+| 7 | LA JAVANAISE | 5,5 | 4,1 | 6,23 | -11,7 % | C.AELBRECHT | –/432/24/218 |
+| 3 | COEUR DE ROUME | 6,7 | 8,2 | 7,81 | -14,2 % | P.LOTOUT | –/314/1452/2190 |
+| 6 | KERDINA | 7,3 | 7,7 | 7,63 | -4,3 % | F.GUY | –/207/–/627 |
+| 5 | RIGEL | 7,7 | 7,8 | 9,81 | -21,5 % | T.MARLIN | –/27/117/2696 |
+| 2 | SOLDIERS CHORUS | 7,7 | 6,4 | 8,44 | -8,7 % | S.CASTELA | –/12/59/897 |
+| 9 | DSCHINGIS ARROW | 15 | 16 | 18,04 | -16,8 % | Y.MADEC | –/296/67/262 |
+| 4 | MOURAT | 16 | 17 | 21,68 | -26,2 % | G.DANLOUX | –/28/17/16 |
+| 8 | AMKAR | 24 | 29 | 35,57 | -32,5 % | T.GUINEHEUX | –/138/1704/935 |
 
 ### 2. PRIX DU PEVELE
 
-*17h15 · plat · 2500 m · 9 partants · cotes de l'extraction*
+*17h15 · plat · 2500 m · 9 partants · cotes à T−0:19*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 9 | STARAC | 4,9 | 5,84 | -16,1 % | M.GRANDIN | 3/45/517/901 |
-| 4 | MERKUR | 4,9 | 5,21 | -5,9 % | R.MANGIONE | 78/15/12/16 |
-| 8 | EL CANEY | 5,1 | 5,72 | -10,9 % | L.POGGIONOVO | 80/53/3260/62 |
-| 2 | MARCHEMALO | 5,7 | 6,23 | -8,5 % | G.MEURY | 68/15/267/379 |
-| 5 | APPLEBLOSSOMWHITE | 8,9 | 11,62 | -23,4 % | M.VELON | 28/12/3168/367 |
-| 6 | ORION ROCK | 9 | 9,93 | -9,4 % | P.CHEYER | 109/84/46/2313 |
-| 7 | CHAIN OF COMMAND | 16 | 17,34 | -7,7 % | J.MOUTARD | 61/68/3210/200 |
-| 3 | SONNAZ | 24 | 33,10 | -27,5 % | T.BACHELOT | 16/56/955/1346 |
-| 1 | KING MOTIF | 27 | 42,66 | -36,7 % | A.BOURGEAIS 5e | 86/26/7/3191 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 4 | MERKUR | 4,5 | 4,9 | 4,77 | -5,6 % | R.MANGIONE | 78/15/12/16 |
+| 2 | MARCHEMALO | 4,9 | 5,7 | 5,28 | -7,3 % | G.MEURY | 68/15/267/379 |
+| 8 | EL CANEY | 5,2 | 5,1 | 5,87 | -11,5 % | L.POGGIONOVO | 80/53/3260/62 |
+| 9 | STARAC | 5,6 | 4,9 | 5,90 | -5,0 % | M.GRANDIN | 3/45/517/901 |
+| 6 | ORION ROCK | 8,7 | 9 | 9,59 | -9,3 % | P.CHEYER | 109/84/46/2313 |
+| 5 | APPLEBLOSSOMWHITE | 8,8 | 8,9 | 11,53 | -23,7 % | M.VELON | 28/12/3168/367 |
+| 7 | CHAIN OF COMMAND | 21 | 16 | 26,11 | -19,6 % | J.MOUTARD | 61/68/3210/200 |
+| 3 | SONNAZ | 25 | 24 | 34,85 | -28,3 % | T.BACHELOT | 16/56/955/1346 |
+| 1 | KING MOTIF | 28 | 27 | 44,67 | -37,3 % | A.BOURGEAIS 5e | 86/26/7/3191 |
 
 ### 3. PRIX DE L'AVESNOIS
 
-*17h51 · plat · 1300 m · 13 partants · cotes de l'extraction*
+*17h51 · plat · 1300 m · 13 partants · cotes à T−0:19*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 7 | MICHELANGELO | 3,9 | 4,05 | -3,8 % | T.BACHELOT | 16/53/300/2592 |
-| 1 | SWEET AS | 5,4 | 5,07 | **+6,4 %** | C.PACAUT | 48/15/15/36 |
-| 2 | WILD MOOR | 6,9 | 8,15 | -15,3 % | D.PILITTA | 267/32/38/216 |
-| 3 | BELVEDERE PALACE | 9,2 | 12,20 | -24,6 % | M.GRANDIN | 3/79/2767/1593 |
-| 14 | HEMATITE | 11 | 13,46 | -18,3 % | J.LACROIX | 94/141/38/96 |
-| 5 | MATCH ANTHEM | 14 | 14,99 | -6,6 % | T.PICCONE | 9/174/3196/277 |
-| 10 | CHARISMATIC CHICK | 16 | 19,97 | -19,9 % | A.DUQUESNOY | 121/28/383/49 |
-| 11 | NURTURE | 17 | 17,91 | -5,1 % | A.CRASTUS | 17/207/29/2179 |
-| 12 | ROCAMBOLESQUE | 20 | 25,40 | -21,3 % | D.SANTIAGO | 15/319/10/1583 |
-| 13 | MICOLEO | 23 | 28,98 | -20,6 % | G.MEURY | 68/28/21/75 |
-| 9 | PAPATEOU | 26 | 31,94 | -18,6 % | M.VELON | 28/432/98/2417 |
-| 6 | COOLMEEN ROYAL | 38 | 51,04 | -25,6 % | C.BELMONT | 171/174/12/277 |
-| 8 | MORUS | 57 | 87,31 | -34,7 % | R.MANGIONE | 78/390/438/278 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 7 | MICHELANGELO | 3,8 | 3,9 | 3,93 | -3,3 % | T.BACHELOT | 16/53/300/2592 |
+| 2 | WILD MOOR | 6,1 | 6,9 | 7,04 | -13,4 % | D.PILITTA | 267/32/38/216 |
+| 1 | SWEET AS | 6,2 | 5,4 | 5,88 | **+5,4 %** | C.PACAUT | 48/15/15/36 |
+| 3 | BELVEDERE PALACE | 8,7 | 9,2 | 10,43 | -16,6 % | M.GRANDIN | 3/79/2767/1593 |
+| 14 | HEMATITE | 9,9 | 11 | 12,38 | -20,0 % | J.LACROIX | 94/141/38/96 |
+| 11 | NURTURE | 18 | 17 | 19,05 | -5,5 % | A.CRASTUS | 17/207/29/2179 |
+| 12 | ROCAMBOLESQUE | 19 | 20 | 23,84 | -20,3 % | D.SANTIAGO | 15/319/10/1583 |
+| 5 | MATCH ANTHEM | 19 | 14 | 23,27 | -18,3 % | T.PICCONE | 9/174/3196/277 |
+| 13 | MICOLEO | 19 | 23 | 24,26 | -21,7 % | G.MEURY | 68/28/21/75 |
+| 9 | PAPATEOU | 23 | 26 | 27,67 | -16,9 % | M.VELON | 28/432/98/2417 |
+| 10 | CHARISMATIC CHICK | 25 | 16 | 36,52 | -31,5 % | A.DUQUESNOY | 121/28/383/49 |
+| 6 | COOLMEEN ROYAL | 36 | 38 | 47,89 | -24,8 % | C.BELMONT | 171/174/12/277 |
+| 8 | MORUS | 46 | 57 | 68,97 | -33,3 % | R.MANGIONE | 78/390/438/278 |
 
 ### 4. PRIX AU-DELA DES PISTES
 
-*18h28 · plat · 1300 m · 11 partants · cotes de l'extraction*
+*18h28 · plat · 1300 m · 11 partants · cotes à T−29:59*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 1 | CROWDFUNDING | 3 | 3,42 | -12,2 % | A.DUQUESNOY | 121/28/68/16 |
-| 7 | ITAEWON | 4,8 | 4,80 | **0,0 %** | T.PICCONE | 9/28/186/49 |
-| 6 | HERACLES | 8 | 8,85 | -9,6 % | L.POGGIONOVO | 80/79/1567/1523 |
-| 14 | FAVORY CHOP | 9,2 | 9,18 | **+0,2 %** | E.HARDOUIN | 27/70/6/1497 |
-| 3 | ANDARTIS | 13 | 13,68 | -4,9 % | M.VELON | 28/117/3124/784 |
-| 11 | GOLDFIELD | 15 | 16,89 | -11,2 % | A.VILCHIEN | 93/94/95/1495 |
-| 13 | CLAIM THE STARS | 17 | 25,07 | -32,2 % | C.PACAUT | 48/501/3210/1483 |
-| 5 | SNOW GHOST | 17 | 20,44 | -16,8 % | LHW .GHYS-DIETEREN | –/603/219/2356 |
-| 10 | BACCHILIDE | 19 | 27,25 | -30,3 % | S.TISON | 98/87/460/4483 |
-| 12 | OUT OF THE BLUE | 25 | 33,24 | -24,8 % | E.MUNTWYLER | 181/15/15/36 |
-| 9 | GALLIUS | 50 | 68,65 | -27,2 % | E.CHINCHILLA | 276/15/572/273 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 1 | CROWDFUNDING | 5 | 3 | 6,71 | -25,4 % | A.DUQUESNOY | 121/28/68/16 |
+| 7 | ITAEWON | 5,1 | 4,8 | 5,19 | -1,8 % | T.PICCONE | 9/28/186/49 |
+| 6 | HERACLES | 9,3 | 8 | 11,66 | -20,2 % | L.POGGIONOVO | 80/79/1567/1523 |
+| 11 | GOLDFIELD | 10 | 15 | 11,17 | -10,5 % | A.VILCHIEN | 93/94/95/1495 |
+| 10 | BACCHILIDE | 10 | 19 | 13,00 | -23,1 % | S.TISON | 98/87/460/4483 |
+| 14 | FAVORY CHOP | 10 | 9,2 | 11,17 | -10,5 % | E.HARDOUIN | 27/70/6/1497 |
+| 3 | ANDARTIS | 11 | 13 | 11,43 | -3,8 % | M.VELON | 28/117/3124/784 |
+| 13 | CLAIM THE STARS | 13 | 17 | 18,54 | -29,9 % | C.PACAUT | 48/501/3210/1483 |
+| 9 | GALLIUS | 13 | 50 | 15,80 | -17,7 % | E.CHINCHILLA | 276/15/572/273 |
+| 5 | SNOW GHOST | 14 | 17 | 16,54 | -15,3 % | LHW .GHYS-DIETEREN | –/603/219/2356 |
+| 12 | OUT OF THE BLUE | 23 | 25 | 30,64 | -24,9 % | E.MUNTWYLER | 181/15/15/36 |
 
 ### 5. PRIX DE LA SAMBRE
 
-*19h00 · plat · 1300 m · 13 partants · cotes de l'extraction*
+*19h00 · plat · 1300 m · 13 partants · cotes à T−17:39*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 1 | CRACK CITY | 4,2 | 4,60 | -8,6 % | T.PICCONE | 9/390/1415/278 |
-| 6 | ASTERALE | 6,6 | 7,31 | -9,8 % | M.GRANDIN | 3/108/605/84 |
-| 8 | GIN GEMBRE | 8,4 | 10,96 | -23,4 % | E.HARDOUIN | 27/214/24/342 |
-| 2 | JIJI MY LOVE | 8,6 | 9,30 | -7,5 % | L.BAILS | 77/135/370/1384 |
-| 10 | LAGOA SANTA | 11 | 12,89 | -14,7 % | A.CRASTUS | 17/147/1010/1760 |
-| 11 | PALIMERO | 13 | 17,14 | -24,2 % | R.MANGIONE | 78/515/3371/1585 |
-| 9 | STRANGER | 14 | 18,71 | -25,2 % | J.LACROIX | 94/141/56/1531 |
-| 5 | RUE DU SAHEL | 15 | 19,05 | -21,3 % | P.CHEYER | 109/562/59/2009 |
-| 3 | EL MADAR | 16 | 21,88 | -26,9 % | M.VELON | 28/117/4119/784 |
-| 4 | LADY PINK | 19 | 24,38 | -22,1 % | D.SANTIAGO | 15/319/70/1583 |
-| 12 | MEHANYDREAM | 24 | 31,90 | -24,8 % | A.VILCHIEN | 93/532/719/2023 |
-| 13 | CALY ROSAY | 25 | 36,69 | -31,9 % | M.MARQUETTE | 54/262/608/3207 |
-| 7 | BREATHE ON | 36 | 48,31 | -25,5 % | S.TISON | 98/803/11/3460 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 1 | CRACK CITY | 4,3 | 4,2 | 4,69 | -8,3 % | T.PICCONE | 9/390/1415/278 |
+| 6 | ASTERALE | 4,7 | 6,6 | 4,61 | **+1,9 %** | M.GRANDIN | 3/108/605/84 |
+| 2 | JIJI MY LOVE | 7,8 | 8,6 | 8,26 | -5,6 % | L.BAILS | 77/135/370/1384 |
+| 10 | LAGOA SANTA | 8,3 | 11 | 9,23 | -10,1 % | A.CRASTUS | 17/147/1010/1760 |
+| 11 | PALIMERO | 9,5 | 13 | 10,80 | -12,0 % | R.MANGIONE | 78/515/3371/1585 |
+| 8 | GIN GEMBRE | 12 | 8,4 | 15,89 | -24,5 % | E.HARDOUIN | 27/214/24/342 |
+| 5 | RUE DU SAHEL | 20 | 15 | 25,27 | -20,9 % | P.CHEYER | 109/562/59/2009 |
+| 9 | STRANGER | 21 | 14 | 28,49 | -26,3 % | J.LACROIX | 94/141/56/1531 |
+| 3 | EL MADAR | 23 | 16 | 33,15 | -30,6 % | M.VELON | 28/117/4119/784 |
+| 4 | LADY PINK | 24 | 19 | 30,28 | -20,7 % | D.SANTIAGO | 15/319/70/1583 |
+| 13 | CALY ROSAY | 28 | 25 | 41,52 | -32,6 % | M.MARQUETTE | 54/262/608/3207 |
+| 12 | MEHANYDREAM | 34 | 24 | 44,89 | -24,3 % | A.VILCHIEN | 93/532/719/2023 |
+| 7 | BREATHE ON | 52 | 36 | 68,58 | -24,2 % | S.TISON | 98/803/11/3460 |
 
 ### 6. PRIX DE CAGNES-SUR-MER
 
