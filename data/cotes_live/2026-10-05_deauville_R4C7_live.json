@@ -4,17 +4,17 @@
   "reunion": 4,
   "heure_depart": 1791223260000,
   "distance": 1900,
-  "scraped_at": "2026-10-05T19:51:40.749657",
-  "minutes_avant_depart": 9,
+  "scraped_at": "2026-10-05T19:56:20.564705",
+  "minutes_avant_depart": 5,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MONARCO",
-      "cote_live": 15.0,
+      "cote_live": 14.0,
       "cote_reference": 17.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791222695000
+      "timestamp_cote": 1791222959000
     },
     {
       "numPmu": 2,
@@ -23,97 +23,97 @@
       "cote_reference": 2.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791222695000
+      "timestamp_cote": 1791222959000
     },
     {
       "numPmu": 3,
       "nom": "STRATOVULCANO",
-      "cote_live": 6.7,
+      "cote_live": 6.5,
       "cote_reference": 8.5,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791222695000
+      "timestamp_cote": 1791222959000
     },
     {
       "numPmu": 4,
       "nom": "FAUSTIMINE",
-      "cote_live": 34.0,
+      "cote_live": 44.0,
       "cote_reference": 25.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791222695000
+      "timestamp_cote": 1791222959000
     },
     {
       "numPmu": 5,
       "nom": "RUE RECAMIER",
       "cote_live": 11.0,
       "cote_reference": 11.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791222695000
+      "timestamp_cote": 1791222959000
     },
     {
       "numPmu": 6,
       "nom": "VILLA ADRIENNE",
-      "cote_live": 21.0,
-      "cote_reference": 13.0,
-      "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1791222695000
-    },
-    {
-      "numPmu": 7,
-      "nom": "ALTIA",
       "cote_live": 20.0,
       "cote_reference": 13.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791222695000
+      "timestamp_cote": 1791222959000
+    },
+    {
+      "numPmu": 7,
+      "nom": "ALTIA",
+      "cote_live": 25.0,
+      "cote_reference": 13.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1791222959000
     },
     {
       "numPmu": 8,
       "nom": "GARIGA",
-      "cote_live": 11.0,
+      "cote_live": 12.0,
       "cote_reference": 13.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791222695000
+      "timestamp_cote": 1791222959000
     },
     {
       "numPmu": 9,
       "nom": "CORYPHEENE",
-      "cote_live": 16.0,
+      "cote_live": 18.0,
       "cote_reference": 16.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791222695000
+      "timestamp_cote": 1791222959000
     },
     {
       "numPmu": 10,
       "nom": "GAMBERRA",
-      "cote_live": 60.0,
+      "cote_live": 50.0,
       "cote_reference": 53.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791222695000
+      "timestamp_cote": 1791222959000
     },
     {
       "numPmu": 11,
       "nom": "SPARKS OF LOVE",
-      "cote_live": 9.6,
+      "cote_live": 10.0,
       "cote_reference": 9.3,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791222695000
+      "timestamp_cote": 1791222959000
     },
     {
       "numPmu": 12,
       "nom": "PRIMA O POI",
-      "cote_live": 34.0,
+      "cote_live": 39.0,
       "cote_reference": 26.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791222695000
+      "timestamp_cote": 1791222959000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -224,6 +224,60 @@
         "10": 60.0,
         "11": 9.6,
         "12": 34.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T19:55:00.668440",
+      "minutes_avant_depart": 5.9949866,
+      "cotes": {
+        "1": 14.0,
+        "2": 2.3,
+        "3": 6.7,
+        "4": 41.0,
+        "5": 10.0,
+        "6": 20.0,
+        "7": 25.0,
+        "8": 11.0,
+        "9": 18.0,
+        "10": 46.0,
+        "11": 10.0,
+        "12": 36.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T19:55:41.495359",
+      "minutes_avant_depart": 5.31735345,
+      "cotes": {
+        "1": 14.0,
+        "2": 2.3,
+        "3": 6.8,
+        "4": 43.0,
+        "5": 10.0,
+        "6": 19.0,
+        "7": 25.0,
+        "8": 11.0,
+        "9": 17.0,
+        "10": 47.0,
+        "11": 10.0,
+        "12": 36.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T19:56:20.564705",
+      "minutes_avant_depart": 4.661650166666666,
+      "cotes": {
+        "1": 14.0,
+        "2": 2.3,
+        "3": 6.5,
+        "4": 44.0,
+        "5": 11.0,
+        "6": 20.0,
+        "7": 25.0,
+        "8": 12.0,
+        "9": 18.0,
+        "10": 50.0,
+        "11": 10.0,
+        "12": 39.0
       }
     }
   ]
