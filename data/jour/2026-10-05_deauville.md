@@ -118,22 +118,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DU PLOUICH
 
-*20h00 · plat · 1900 m · 12 partants · cotes à T−12:19*
+*20h00 · plat · 1900 m · 12 partants · cotes à T−9:19*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | DEUX PONTS | 2,6 | 3,4 | 2,63 | -1,1 % | L.POGGIONOVO | 80/79/3138/810 |
-| 3 | STRATOVULCANO | 7,1 | 9 | 8,77 | -19,1 % | J.MOUTARD | 61/19/3429/151 |
-| 11 | SPARKS OF LOVE | 9,3 | 10 | 10,78 | -13,7 % | C.PACAUT | 48/53/19/62 |
-| 5 | RUE RECAMIER | 11 | 8,5 | 13,12 | -16,1 % | T.BREBION | 99/44/131/295 |
-| 8 | GARIGA | 11 | 17 | 12,56 | -12,4 % | S.TISON | 98/87/84/1975 |
-| 1 | MONARCO | 15 | 17 | 18,04 | -16,9 % | G.MEURY | 68/15/76/16 |
-| 7 | ALTIA | 16 | 10 | 21,29 | -24,9 % | C.RAIMBAULT | 84/26/584/696 |
-| 9 | CORYPHEENE | 16 | 20 | 20,86 | -23,3 % | R.THOMAS | 75/296/78/3358 |
-| 6 | VILLA ADRIENNE | 18 | 8,1 | 25,04 | -28,1 % | G.ROTH LE VAILLANT | 130/8/18/295 |
-| 12 | PRIMA O POI | 27 | 24 | 37,18 | -27,4 % | E.CORALLO | 57/127/48/– |
-| 4 | FAUSTIMINE | 29 | 16 | 40,32 | -28,1 % | L.BAILS | 77/135/532/2322 |
-| 10 | GAMBERRA | 49 | 34 | 75,68 | -35,3 % | M.PIEN | 150/15/15/36 |
+| 2 | DEUX PONTS | 2,3 | 3,4 | 2,12 | **+8,7 %** | L.POGGIONOVO | 80/79/3138/810 |
+| 3 | STRATOVULCANO | 6,7 | 9 | 8,35 | -19,8 % | J.MOUTARD | 61/19/3429/151 |
+| 11 | SPARKS OF LOVE | 9,6 | 10 | 11,39 | -15,7 % | C.PACAUT | 48/53/19/62 |
+| 5 | RUE RECAMIER | 11 | 8,5 | 13,36 | -17,7 % | T.BREBION | 99/44/131/295 |
+| 8 | GARIGA | 11 | 17 | 12,79 | -14,0 % | S.TISON | 98/87/84/1975 |
+| 1 | MONARCO | 15 | 17 | 18,38 | -18,4 % | G.MEURY | 68/15/76/16 |
+| 9 | CORYPHEENE | 16 | 20 | 21,25 | -24,7 % | R.THOMAS | 75/296/78/3358 |
+| 7 | ALTIA | 20 | 10 | 28,11 | -28,9 % | C.RAIMBAULT | 84/26/584/696 |
+| 6 | VILLA ADRIENNE | 21 | 8,1 | 30,49 | -31,1 % | G.ROTH LE VAILLANT | 130/8/18/295 |
+| 4 | FAUSTIMINE | 34 | 16 | 49,08 | -30,7 % | L.BAILS | 77/135/532/2322 |
+| 12 | PRIMA O POI | 34 | 24 | 49,08 | -30,7 % | E.CORALLO | 57/127/48/– |
+| 10 | GAMBERRA | 60 | 34 | 95,73 | -37,3 % | M.PIEN | 150/15/15/36 |
 
 ### 8. PRIX DES WEPPES
 
