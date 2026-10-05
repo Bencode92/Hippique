@@ -1,6 +1,6 @@
 # DEAUVILLE — 05/10/2026
 
-9 courses. 6 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 7 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -100,40 +100,40 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DE CAGNES-SUR-MER
 
-*19h30 · plat · 1300 m · 11 partants · cotes à T−1:19*
+*19h30 · plat · 1300 m · 11 partants · cotes à T−0:39*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 6 | SACREE PHILOMENE | 2,8 | 2,3 | 3,23 | -13,3 % | M.GUYON | 4/44/12/2559 |
-| 1 | LAMEGO | 5,2 | 7,2 | 5,41 | -3,8 % | T.PICCONE | 9/12/3143/58 |
-| 7 | GONAFOOT | 6,5 | 10 | 7,40 | -12,1 % | M.VELON | 28/26/4/624 |
-| 11 | HAVANISTA | 8,9 | 8 | 9,97 | -10,8 % | M.GRANDIN | 3/31/3288/410 |
-| 3 | MR SAY | 10 | 8,4 | 13,34 | -25,1 % | L.BAILS | 77/15/431/2239 |
-| 4 | REGAL CHOP | 18 | 16 | 22,70 | -20,7 % | J.MOUTARD | 61/28/6/16 |
-| 8 | RIMANOVKHA | 19 | 32 | 24,17 | -21,4 % | G.MEURY | 68/22/5/9 |
-| 9 | DUBARA | 21 | 14 | 28,39 | -26,0 % | E.HARDOUIN | 27/79/2717/810 |
-| 10 | FERRA CHOPE | 29 | 34 | 42,16 | -31,2 % | R.MANGIONE | 78/162/6/428 |
-| 5 | FETE DE TROP | 49 | 34 | 73,55 | -33,4 % | C.PACAUT | 48/15/15/36 |
-| 2 | SKAROS | 53 | 65 | 80,08 | -33,8 % | E.CHINCHILLA | 276/15/15/36 |
+| 6 | SACREE PHILOMENE | 2,9 | 2,3 | 3,27 | -11,4 % | M.GUYON | 4/44/12/2559 |
+| 1 | LAMEGO | 5,4 | 7,2 | 5,72 | -5,5 % | T.PICCONE | 9/12/3143/58 |
+| 7 | GONAFOOT | 5,6 | 10 | 6,33 | -11,6 % | M.VELON | 28/26/4/624 |
+| 11 | HAVANISTA | 9,2 | 8 | 10,52 | -12,5 % | M.GRANDIN | 3/31/3288/410 |
+| 3 | MR SAY | 10 | 8,4 | 13,54 | -26,1 % | L.BAILS | 77/15/431/2239 |
+| 8 | RIMANOVKHA | 16 | 32 | 20,08 | -20,3 % | G.MEURY | 68/22/5/9 |
+| 4 | REGAL CHOP | 17 | 16 | 21,55 | -21,1 % | J.MOUTARD | 61/28/6/16 |
+| 9 | DUBARA | 19 | 14 | 25,65 | -25,9 % | E.HARDOUIN | 27/79/2717/810 |
+| 10 | FERRA CHOPE | 31 | 34 | 46,10 | -32,8 % | R.MANGIONE | 78/162/6/428 |
+| 2 | SKAROS | 55 | 65 | 84,47 | -34,9 % | E.CHINCHILLA | 276/15/15/36 |
+| 5 | FETE DE TROP | 56 | 34 | 86,12 | -35,0 % | C.PACAUT | 48/15/15/36 |
 
 ### 7. PRIX DU PLOUICH
 
-*20h00 · plat · 1900 m · 12 partants · cotes de l'extraction*
+*20h00 · plat · 1900 m · 12 partants · cotes à T−29:39*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 2 | DEUX PONTS | 3,4 | 3,36 | **+1,1 %** | L.POGGIONOVO | 80/79/3138/810 |
-| 6 | VILLA ADRIENNE | 8,1 | 10,17 | -20,3 % | G.ROTH LE VAILLANT | 130/8/18/295 |
-| 5 | RUE RECAMIER | 8,5 | 9,64 | -11,8 % | T.BREBION | 99/44/131/295 |
-| 3 | STRATOVULCANO | 9 | 11,02 | -18,3 % | J.MOUTARD | 61/19/3429/151 |
-| 7 | ALTIA | 10 | 11,17 | -10,4 % | C.RAIMBAULT | 84/26/584/696 |
-| 11 | SPARKS OF LOVE | 10 | 11,65 | -14,2 % | C.PACAUT | 48/53/19/62 |
-| 4 | FAUSTIMINE | 16 | 19,32 | -17,2 % | L.BAILS | 77/135/532/2322 |
-| 1 | MONARCO | 17 | 22,71 | -25,1 % | G.MEURY | 68/15/76/16 |
-| 8 | GARIGA | 17 | 20,73 | -18,0 % | S.TISON | 98/87/84/1975 |
-| 9 | CORYPHEENE | 20 | 29,45 | -32,1 % | R.THOMAS | 75/296/78/3358 |
-| 12 | PRIMA O POI | 24 | 33,85 | -29,1 % | E.CORALLO | 57/127/48/– |
-| 10 | GAMBERRA | 34 | 50,24 | -32,3 % | M.PIEN | 150/15/15/36 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 2 | DEUX PONTS | 2,6 | 3,4 | 2,65 | -1,8 % | L.POGGIONOVO | 80/79/3138/810 |
+| 11 | SPARKS OF LOVE | 8,3 | 10 | 9,94 | -16,5 % | C.PACAUT | 48/53/19/62 |
+| 3 | STRATOVULCANO | 9,2 | 9 | 11,48 | -19,9 % | J.MOUTARD | 61/19/3429/151 |
+| 5 | RUE RECAMIER | 11 | 8,5 | 13,24 | -16,9 % | T.BREBION | 99/44/131/295 |
+| 6 | VILLA ADRIENNE | 11 | 8,1 | 14,17 | -22,4 % | G.ROTH LE VAILLANT | 130/8/18/295 |
+| 7 | ALTIA | 13 | 10 | 15,40 | -15,6 % | C.RAIMBAULT | 84/26/584/696 |
+| 8 | GARIGA | 14 | 17 | 16,80 | -16,7 % | S.TISON | 98/87/84/1975 |
+| 9 | CORYPHEENE | 14 | 20 | 18,01 | -22,3 % | R.THOMAS | 75/296/78/3358 |
+| 1 | MONARCO | 19 | 17 | 26,25 | -27,6 % | G.MEURY | 68/15/76/16 |
+| 4 | FAUSTIMINE | 23 | 16 | 32,73 | -29,7 % | L.BAILS | 77/135/532/2322 |
+| 12 | PRIMA O POI | 29 | 24 | 40,68 | -28,7 % | E.CORALLO | 57/127/48/– |
+| 10 | GAMBERRA | 59 | 34 | 93,23 | -36,7 % | M.PIEN | 150/15/15/36 |
 
 ### 8. PRIX DES WEPPES
 
