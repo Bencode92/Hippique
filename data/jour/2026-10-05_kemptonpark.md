@@ -58,15 +58,15 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 6 | EXTRATERRESTRIAL | 3,3 | CALLUM RODRIGUEZ | 205/35/–/– |
-| 2 | SAX AVOIDANCE | 5,4 | KIEREN FOX | –/–/–/– |
-| 9 | KATALYST | 5,8 | OLIVIA TUBB | –/–/–/– |
-| 1 | SEA BRAVE | 6,1 | FINLEY MARSH | –/253/–/– |
-| 3 | IMPOSSIBLE MISSION | 6,4 | DAVID EGAN | 312/–/–/– |
-| 4 | FAHIDI | 15 | JAMES DOYLE | 162/116/–/– |
-| 5 | LUCKY LUNA | 21 | PAT DOBBS | –/279/–/– |
-| 7 | ST HILDA | 30 | JASON WATSON | 369/–/–/– |
-| 8 | ENAMORUS | 41 | HARRY VIGORS | –/209/–/– |
+| 6 | EXTRATERRESTRIAL | 3,4 | CALLUM RODRIGUEZ | 205/35/–/– |
+| 3 | IMPOSSIBLE MISSION | 5,1 | DAVID EGAN | 312/–/–/– |
+| 2 | SAX AVOIDANCE | 5,9 | KIEREN FOX | –/–/–/– |
+| 1 | SEA BRAVE | 7,3 | FINLEY MARSH | –/253/–/– |
+| 4 | FAHIDI | 8,6 | JAMES DOYLE | 162/116/–/– |
+| 9 | KATALYST | 12 | OLIVIA TUBB | –/–/–/– |
+| 5 | LUCKY LUNA | 14 | PAT DOBBS | –/279/–/– |
+| 7 | ST HILDA | 18 | JASON WATSON | 369/–/–/– |
+| 8 | ENAMORUS | 47 | HARRY VIGORS | –/209/–/– |
 
 ### 5. HANDICAP (CLASS 4) (LONDON SPRINT SERIES QUALIFIER) (DIV I)
 
@@ -74,33 +74,32 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 10 | GOLDWORK | 3 | CHARLES BISHOP | –/550/–/– |
-| 9 | ARTANIS | 7 | STEVIE DONOHOE | –/307/–/– |
-| 2 | SPARKSMITH | 7,4 | DAVID EGAN | 312/541/–/– |
-| 4 | STAR CHORUS | 9,2 | PAT DOBBS | –/–/–/– |
-| 6 | PIXIE DIVA | 9,2 | CALLUM RODRIGUEZ | 205/29/–/5882 |
-| 1 | MOVING FORCE | 11 | JACK MITCHELL | 314/–/–/– |
-| 8 | FROM THE HIP | 11 | TYLER HEARD | –/–/–/– |
-| 5 | EM FOUR | 17 | WILLIAM CARVER | –/–/–/– |
-| 7 | AMAZONIAN DREAM | 17 | JOE LEAVY | –/–/–/– |
-| 3 | ROCK IGUANA | 29 | FINLEY MARSH | –/–/–/– |
+| 2 | SPARKSMITH | 3,3 | DAVID EGAN | 312/541/–/– |
+| 4 | STAR CHORUS | 3,6 | PAT DOBBS | –/–/–/– |
+| 10 | GOLDWORK | 6,3 | CHARLES BISHOP | –/550/–/– |
+| 1 | MOVING FORCE | 6,9 | JACK MITCHELL | 314/–/–/– |
+| 6 | PIXIE DIVA | 11 | CALLUM RODRIGUEZ | 205/29/–/5882 |
+| 8 | FROM THE HIP | 23 | TYLER HEARD | –/–/–/– |
+| 5 | EM FOUR | 27 | WILLIAM CARVER | –/–/–/– |
+| 9 | ARTANIS | 28 | STEVIE DONOHOE | –/307/–/– |
+| 7 | AMAZONIAN DREAM | 30 | JOE LEAVY | –/–/–/– |
+| 3 | ROCK IGUANA | 33 | FINLEY MARSH | –/–/–/– |
 
 ### 6. HANDICAP (CLASS 4) (LONDON SPRINT SERIES QUALIFIER) (DIV II)
 
-*19h45 · plat · 1200 m · 10 partants · cotes de l'extraction*
+*19h45 · plat · 1200 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | FIFTY NIFTY | 2,6 | CIEREN FALLON | 321/–/–/– |
-| 4 | WYLE COP | 4,1 | PIERRE-LOUIS JAMIN | 199/–/–/4942 |
-| 3 | MESAAFI | 7,6 | JACK MITCHELL | 314/–/–/– |
+| 6 | BUCCABAY | 3,5 | CHARLES BISHOP | –/550/–/– |
+| 3 | MESAAFI | 5 | JACK MITCHELL | 314/–/–/– |
+| 2 | FRENCH AFFAIR | 5,4 | DAVID EGAN | 312/448/–/– |
+| 1 | FIFTY NIFTY | 8,7 | CIEREN FALLON | 321/–/–/– |
+| 5 | TYGER BAY | 10 | JOE LEAVY | –/–/–/– |
 | 7 | SPACE PARTY | 11 | NICOLA CURRIE | –/779/–/– |
-| 8 | SHIHOKU | 11 | OISIN ORR | –/–/–/5855 |
-| 2 | FRENCH AFFAIR | 15 | DAVID EGAN | 312/448/–/– |
-| 5 | TYGER BAY | 15 | JOE LEAVY | –/–/–/– |
-| 10 | MERRIMACK | 22 | CHLOE LYONS | –/–/–/– |
-| 6 | BUCCABAY | 45 | CHARLES BISHOP | –/550/–/– |
-| 9 | CHARLIE MASON | 45 | KIEREN FOX | –/–/–/– |
+| 9 | CHARLIE MASON | 15 | KIEREN FOX | –/–/–/– |
+| 4 | WYLE COP | 17 | PIERRE-LOUIS JAMIN | 199/–/–/4942 |
+| 10 | MERRIMACK | 18 | CHLOE LYONS | –/–/–/– |
 
 ### 7. HANDICAP (CLASS 6)
 
@@ -108,37 +107,36 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 4 | ARARAT | 2,8 | JACK MITCHELL | 314/–/–/– |
-| 11 | TWITCH | 3,1 | GEORGIA DOBIE | –/–/–/– |
-| 14 | MAURY | 6,8 | JOSEPHINE GORDON | –/–/–/– |
-| 6 | FORT AUGUSTUS | 11 | JASON WATSON | 369/–/–/– |
-| 5 | CAMERA SHY | 17 | CIEREN FALLON | 321/–/–/– |
-| 9 | KONDRATIEV WAVE | 17 | KIEREN FOX | –/–/–/– |
-| 2 | PICKERING CASTLE | 34 | STEVIE DONOHOE | –/–/–/– |
-| 7 | ADDICTIVE | 34 | OLIVIA TUBB | –/–/–/– |
-| 8 | WILDFELL | 34 | WILLIAM CARSON | –/–/–/– |
-| 13 | ASHFORD HILL | 34 | ISOBELLE CHALMERS | –/–/–/– |
-| 1 | PORTMAN BLUE | – | DAVID EGAN | 312/–/–/– |
-| 3 | VIRTUE PATIENCE | – | PAT DOBBS | –/–/–/– |
-| 12 | AJRAD | – | FINLEY MARSH | –/–/–/– |
+| 1 | PORTMAN BLUE | 2,8 | DAVID EGAN | 312/–/–/– |
+| 11 | TWITCH | 5,7 | GEORGIA DOBIE | –/–/–/– |
+| 4 | ARARAT | 6,9 | JACK MITCHELL | 314/–/–/– |
+| 3 | VIRTUE PATIENCE | 7,1 | PAT DOBBS | –/–/–/– |
+| 2 | PICKERING CASTLE | 12 | STEVIE DONOHOE | –/–/–/– |
+| 5 | CAMERA SHY | 13 | CIEREN FALLON | 321/–/–/– |
+| 9 | KONDRATIEV WAVE | 18 | KIEREN FOX | –/–/–/– |
+| 6 | FORT AUGUSTUS | 31 | JASON WATSON | 369/–/–/– |
+| 12 | AJRAD | 37 | FINLEY MARSH | –/–/–/– |
+| 7 | ADDICTIVE | 55 | OLIVIA TUBB | –/–/–/– |
+| 13 | ASHFORD HILL | 56 | ISOBELLE CHALMERS | –/–/–/– |
+| 14 | MAURY | 74 | JOSEPHINE GORDON | –/–/–/– |
+| 8 | WILDFELL | 85 | WILLIAM CARSON | –/–/–/– |
 
 ### 8. RACING TV HANDICAP (CLASS 6)
 
-*20h45 · plat · 1400 m · 11 partants · cotes de l'extraction*
+*20h45 · plat · 1400 m · 10 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 5 | RIDGER | 3,2 | STEVIE DONOHOE | –/307/–/– |
-| 4 | WHO IS ALICE | 3,8 | GEORGE BASS | 367/869/–/– |
-| 7 | SQUASHY BERRY | 6 | JOE LEAVY | –/–/–/– |
-| 6 | LADY V | 10 | PIERRE-LOUIS JAMIN | 199/–/–/2070 |
-| 3 | CRECIENTE | 15 | DAVID EGAN | 312/–/–/– |
-| 8 | MOKATA | 15 | CHARLES BISHOP | –/–/–/– |
-| 10 | LEIA ANTILLES | 15 | NICOLA CURRIE | –/779/–/– |
-| 1 | BESSIE WALLIS | 30 | KIEREN FOX | –/–/–/– |
-| 2 | ARC LA SHARI | 30 | OISIN ORR | –/–/–/– |
-| 11 | MISS GOLD | 30 | MYLA COPPINS | –/–/–/– |
-| 9 | POETIC GRACE | – | CIEREN FALLON | 321/–/–/– |
+| 5 | RIDGER | 1,3 | STEVIE DONOHOE | –/307/–/– |
+| 3 | CRECIENTE | 7,4 | DAVID EGAN | 312/–/–/– |
+| 1 | BESSIE WALLIS | 15 | KIEREN FOX | –/–/–/– |
+| 9 | POETIC GRACE | 16 | CIEREN FALLON | 321/–/–/– |
+| 7 | SQUASHY BERRY | 33 | JOE LEAVY | –/–/–/– |
+| 2 | ARC LA SHARI | 39 | OISIN ORR | –/–/–/– |
+| 10 | LEIA ANTILLES | 49 | NICOLA CURRIE | –/779/–/– |
+| 11 | MISS GOLD | 51 | MYLA COPPINS | –/–/–/– |
+| 6 | LADY V | 53 | PIERRE-LOUIS JAMIN | 199/–/–/2070 |
+| 8 | MOKATA | 59 | CHARLES BISHOP | –/–/–/– |
 
 ### 9. HANDICAP (CLASS 6)
 
@@ -146,13 +144,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | SUPER HIT | 1,6 | JASON WATSON | 369/813/–/– |
-| 5 | CURRUMBIN | 4,6 | CIEREN FALLON | 321/–/–/– |
-| 4 | LETMEBETHEBOSS | 7,2 | MYLA COPPINS | –/–/–/– |
-| 7 | MREMBO | 14 | PIERRE-LOUIS JAMIN | 199/896/–/– |
-| 6 | CHESNEYS CHARM | 29 | OISIN ORR | –/–/–/– |
+| 1 | SUPER HIT | 3,1 | JASON WATSON | 369/813/–/– |
+| 7 | MREMBO | 5 | PIERRE-LOUIS JAMIN | 199/896/–/– |
+| 5 | CURRUMBIN | 6,7 | CIEREN FALLON | 321/–/–/– |
+| 6 | CHESNEYS CHARM | 7,7 | OISIN ORR | –/–/–/– |
+| 3 | LUCY THE WIRE | 7,9 | KIEREN FOX | –/813/–/– |
+| 2 | GOLDEN CIRCET | 10 | FINLEY MARSH | –/–/–/– |
+| 4 | LETMEBETHEBOSS | 25 | MYLA COPPINS | –/–/–/– |
 | 8 | LOST IN WONDER | 29 | ALISTAIR RAWLINSON | –/–/–/– |
-| 2 | GOLDEN CIRCET | 58 | FINLEY MARSH | –/–/–/– |
-| 3 | LUCY THE WIRE | 58 | KIEREN FOX | –/813/–/– |
-| 9 | DODGING THE BULLET | – | WILLIAM CARVER | –/–/–/– |
-| 10 | DEFERRED INTEREST | – | TYLER HEARD | –/–/–/– |
+| 9 | DODGING THE BULLET | 42 | WILLIAM CARVER | –/–/–/– |
+| 10 | DEFERRED INTEREST | 46 | TYLER HEARD | –/–/–/– |
