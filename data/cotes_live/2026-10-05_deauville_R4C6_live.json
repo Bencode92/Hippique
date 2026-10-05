@@ -4,35 +4,35 @@
   "reunion": 4,
   "heure_depart": 1791221460000,
   "distance": 1300,
-  "scraped_at": "2026-10-05T19:17:40.624723",
-  "minutes_avant_depart": 13,
+  "scraped_at": "2026-10-05T19:21:40.581409",
+  "minutes_avant_depart": 9,
   "participants": [
     {
       "numPmu": 1,
       "nom": "LAMEGO",
-      "cote_live": 6.2,
+      "cote_live": 5.6,
       "cote_reference": 9.8,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791220654000
+      "timestamp_cote": 1791220896000
     },
     {
       "numPmu": 2,
       "nom": "SKAROS",
-      "cote_live": 44.0,
+      "cote_live": 54.0,
       "cote_reference": 65.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791220654000
+      "timestamp_cote": 1791220896000
     },
     {
       "numPmu": 3,
       "nom": "MR SAY",
-      "cote_live": 9.9,
+      "cote_live": 9.5,
       "cote_reference": 11.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791220654000
+      "timestamp_cote": 1791220896000
     },
     {
       "numPmu": 4,
@@ -41,70 +41,70 @@
       "cote_reference": 22.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791220654000
+      "timestamp_cote": 1791220896000
     },
     {
       "numPmu": 5,
       "nom": "FETE DE TROP",
-      "cote_live": 43.0,
+      "cote_live": 46.0,
       "cote_reference": 48.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791220654000
+      "timestamp_cote": 1791220896000
     },
     {
       "numPmu": 6,
       "nom": "SACREE PHILOMENE",
-      "cote_live": 2.4,
+      "cote_live": 2.3,
       "cote_reference": 1.8,
-      "tendance": "",
+      "tendance": "-",
       "favoris": true,
-      "timestamp_cote": 1791220654000
+      "timestamp_cote": 1791220896000
     },
     {
       "numPmu": 7,
       "nom": "GONAFOOT",
-      "cote_live": 7.8,
+      "cote_live": 8.4,
       "cote_reference": 9.4,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791220654000
+      "timestamp_cote": 1791220896000
     },
     {
       "numPmu": 8,
       "nom": "RIMANOVKHA",
-      "cote_live": 15.0,
+      "cote_live": 20.0,
       "cote_reference": 29.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791220654000
+      "timestamp_cote": 1791220896000
     },
     {
       "numPmu": 9,
       "nom": "DUBARA",
-      "cote_live": 26.0,
+      "cote_live": 31.0,
       "cote_reference": 22.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791220654000
+      "timestamp_cote": 1791220896000
     },
     {
       "numPmu": 10,
       "nom": "FERRA CHOPE",
-      "cote_live": 40.0,
+      "cote_live": 55.0,
       "cote_reference": 55.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791220654000
+      "timestamp_cote": 1791220896000
     },
     {
       "numPmu": 11,
       "nom": "HAVANISTA",
-      "cote_live": 9.1,
+      "cote_live": 8.8,
       "cote_reference": 8.8,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791220654000
+      "timestamp_cote": 1791220896000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -192,6 +192,23 @@
         "9": 26.0,
         "10": 40.0,
         "11": 9.1
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T19:21:40.581409",
+      "minutes_avant_depart": 9.328412333333334,
+      "cotes": {
+        "1": 5.6,
+        "2": 54.0,
+        "3": 9.5,
+        "4": 17.0,
+        "5": 46.0,
+        "6": 2.3,
+        "7": 8.4,
+        "8": 20.0,
+        "9": 31.0,
+        "10": 55.0,
+        "11": 8.8
       }
     }
   ]
