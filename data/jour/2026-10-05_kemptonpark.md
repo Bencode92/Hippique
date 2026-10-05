@@ -1,8 +1,8 @@
 # KEMPTON PARK — 05/10/2026
 
-9 courses (0 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+9 courses.
 
-*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
+*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
 
 ---
 

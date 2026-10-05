@@ -2,6 +2,13 @@ name: Extraction des courses France Galop
 
 on:
   schedule:
+    # Tôt le matin — le programme de la veille au soir n'a PAS les cotes : au
+    # 05/10 l'extraction de 00h39 écrivait `cote: null` partout, et le cron de
+    # 10h UTC (12h Paris) tombait APRÈS la première course de 11h05. Deux
+    # passages tôt, parce que le cron GitHub dérive (5 à 20 min couramment,
+    # 5 h observées) : si l'un glisse, l'autre a déjà écrit.
+    - cron: '0 6 * * *'
+    - cron: '0 8 * * *'
     # Matin 10h UTC (12h France) — cotes d'ouverture + programme
     - cron: '0 10 * * *'
     # Soir 20h UTC (22h France) — résultats + cotes finales

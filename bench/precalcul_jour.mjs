@@ -237,17 +237,22 @@ function ecrireMarkdown(date, out) {
     const L = [`# ${hip} — ${date.split('-').reverse().join('/')}`, ''];
     const cotees = courses.filter(c => c.partants.some(p => p.c > 0)).length;
     const nLive = courses.filter(c => c.releve && c.releve.dernier_sec > 0).length;
-    L.push(`${courses.length} courses${cotees < courses.length ? ` (${cotees} avec cotes)` : ''}. `
-      + (nLive ? `${nLive} ${nLive > 1 ? 'ont' : 'a'} un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.`
-               : `Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.`), '');
+    L.push(`${courses.length} courses${cotees && cotees < courses.length ? ` (${cotees} avec cotes)` : ''}.`
+      + (!cotees ? ''
+         : nLive ? ` ${nLive} ${nLive > 1 ? 'ont' : 'a'} un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.`
+                 : ` Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.`), '');
     const avecCJ = courses.some(c => c.partants.some(p => p.cj));
     if (avecCJ) L.push('**Lecture.** L\'ordre est la cote croissante : c\'est aussi l\'Optimale, qui ne retient plus que le prix.',
                        'La *cote juste* est la cote que le cheval mériterait ; l\'espérance en gras est un PLAY (≥ 0).',
                        'Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classements ci-dessus.', '');
     else {
+      // Trois raisons distinctes à l'absence de cote juste — dire laquelle,
+      // sinon la fiche annonce un problème de calibration alors que le PMU
+      // n'a simplement pas encore publié les cotes.
       const trot = courses.every(c => TROT.has(typeCourse(c)));
-      L.push(trot ? '*Trot : France Galop ne classe ni les drivers ni les chevaux d\'attelage. Cotes seules.*'
-                  : '*Pas de cote juste ici : elle n\'est calibrée que sur le plat français.*', '');
+      L.push(!cotees ? '*Le PMU n\'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*'
+                     : trot ? '*Trot : France Galop ne classe ni les drivers ni les chevaux d\'attelage. Cotes seules.*'
+                            : '*Pas de cote juste ici : elle n\'est calibrée que sur le plat français.*', '');
     }
     L.push('---', '');
     for (const c of courses) L.push(...tableauCourse(c));
