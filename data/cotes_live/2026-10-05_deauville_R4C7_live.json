@@ -4,44 +4,44 @@
   "reunion": 4,
   "heure_depart": 1791223200000,
   "distance": 1900,
-  "scraped_at": "2026-10-05T19:34:20.931034",
-  "minutes_avant_depart": 26,
+  "scraped_at": "2026-10-05T19:39:00.757054",
+  "minutes_avant_depart": 21,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MONARCO",
-      "cote_live": 17.0,
+      "cote_live": 18.0,
       "cote_reference": 17.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791221643000
+      "timestamp_cote": 1791221929000
     },
     {
       "numPmu": 2,
       "nom": "DEUX PONTS",
-      "cote_live": 2.6,
+      "cote_live": 2.7,
       "cote_reference": 2.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791221643000
+      "timestamp_cote": 1791221929000
     },
     {
       "numPmu": 3,
       "nom": "STRATOVULCANO",
-      "cote_live": 8.7,
+      "cote_live": 6.9,
       "cote_reference": 8.5,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791221643000
+      "timestamp_cote": 1791221929000
     },
     {
       "numPmu": 4,
       "nom": "FAUSTIMINE",
-      "cote_live": 23.0,
+      "cote_live": 25.0,
       "cote_reference": 25.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791221643000
+      "timestamp_cote": 1791221929000
     },
     {
       "numPmu": 5,
@@ -50,16 +50,16 @@
       "cote_reference": 11.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791221643000
+      "timestamp_cote": 1791221929000
     },
     {
       "numPmu": 6,
       "nom": "VILLA ADRIENNE",
-      "cote_live": 14.0,
+      "cote_live": 15.0,
       "cote_reference": 13.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791221643000
+      "timestamp_cote": 1791221929000
     },
     {
       "numPmu": 7,
@@ -68,52 +68,52 @@
       "cote_reference": 13.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791221643000
+      "timestamp_cote": 1791221929000
     },
     {
       "numPmu": 8,
       "nom": "GARIGA",
-      "cote_live": 11.0,
+      "cote_live": 10.0,
       "cote_reference": 13.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791221643000
+      "timestamp_cote": 1791221929000
     },
     {
       "numPmu": 9,
       "nom": "CORYPHEENE",
-      "cote_live": 14.0,
+      "cote_live": 15.0,
       "cote_reference": 16.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791221643000
+      "timestamp_cote": 1791221929000
     },
     {
       "numPmu": 10,
       "nom": "GAMBERRA",
-      "cote_live": 44.0,
+      "cote_live": 46.0,
       "cote_reference": 53.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791221643000
+      "timestamp_cote": 1791221929000
     },
     {
       "numPmu": 11,
       "nom": "SPARKS OF LOVE",
-      "cote_live": 9.7,
+      "cote_live": 9.9,
       "cote_reference": 9.3,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791221643000
+      "timestamp_cote": 1791221929000
     },
     {
       "numPmu": 12,
       "nom": "PRIMA O POI",
-      "cote_live": 24.0,
+      "cote_live": 27.0,
       "cote_reference": 26.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791221643000
+      "timestamp_cote": 1791221929000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -152,6 +152,24 @@
         "10": 44.0,
         "11": 9.7,
         "12": 24.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T19:39:00.757054",
+      "minutes_avant_depart": 20.990811366666666,
+      "cotes": {
+        "1": 18.0,
+        "2": 2.7,
+        "3": 6.9,
+        "4": 25.0,
+        "5": 12.0,
+        "6": 15.0,
+        "7": 13.0,
+        "8": 10.0,
+        "9": 15.0,
+        "10": 46.0,
+        "11": 9.9,
+        "12": 27.0
       }
     }
   ]
