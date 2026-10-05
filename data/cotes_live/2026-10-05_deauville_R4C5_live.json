@@ -4,17 +4,17 @@
   "reunion": 4,
   "heure_depart": 1791219660000,
   "distance": 1300,
-  "scraped_at": "2026-10-05T18:51:00.597444",
-  "minutes_avant_depart": 10,
+  "scraped_at": "2026-10-05T18:55:00.628162",
+  "minutes_avant_depart": 6,
   "participants": [
     {
       "numPmu": 1,
       "nom": "CRACK CITY",
-      "cote_live": 4.1,
+      "cote_live": 4.2,
       "cote_reference": 3.9,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": true,
-      "timestamp_cote": 1791219037000
+      "timestamp_cote": 1791219279000
     },
     {
       "numPmu": 2,
@@ -23,7 +23,7 @@
       "cote_reference": 7.9,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791219037000
+      "timestamp_cote": 1791219279000
     },
     {
       "numPmu": 3,
@@ -32,7 +32,7 @@
       "cote_reference": 19.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791219037000
+      "timestamp_cote": 1791219279000
     },
     {
       "numPmu": 4,
@@ -41,88 +41,88 @@
       "cote_reference": 18.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791219037000
+      "timestamp_cote": 1791219279000
     },
     {
       "numPmu": 5,
       "nom": "RUE DU SAHEL",
-      "cote_live": 20.0,
+      "cote_live": 14.0,
       "cote_reference": 15.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791219037000
+      "timestamp_cote": 1791219279000
     },
     {
       "numPmu": 6,
       "nom": "ASTERALE",
-      "cote_live": 4.8,
+      "cote_live": 5.1,
       "cote_reference": 7.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791219037000
+      "timestamp_cote": 1791219279000
     },
     {
       "numPmu": 7,
       "nom": "BREATHE ON",
-      "cote_live": 57.0,
+      "cote_live": 62.0,
       "cote_reference": 34.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791219037000
+      "timestamp_cote": 1791219279000
     },
     {
       "numPmu": 8,
       "nom": "GIN GEMBRE",
-      "cote_live": 12.0,
+      "cote_live": 9.2,
       "cote_reference": 8.6,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791219037000
+      "timestamp_cote": 1791219279000
     },
     {
       "numPmu": 9,
       "nom": "STRANGER",
-      "cote_live": 16.0,
+      "cote_live": 17.0,
       "cote_reference": 14.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791219037000
+      "timestamp_cote": 1791219279000
     },
     {
       "numPmu": 10,
       "nom": "LAGOA SANTA",
-      "cote_live": 9.2,
+      "cote_live": 10.0,
       "cote_reference": 14.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791219037000
+      "timestamp_cote": 1791219279000
     },
     {
       "numPmu": 11,
       "nom": "PALIMERO",
-      "cote_live": 11.0,
+      "cote_live": 13.0,
       "cote_reference": 13.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791219037000
+      "timestamp_cote": 1791219279000
     },
     {
       "numPmu": 12,
       "nom": "MEHANYDREAM",
-      "cote_live": 29.0,
+      "cote_live": 28.0,
       "cote_reference": 22.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791219037000
+      "timestamp_cote": 1791219279000
     },
     {
       "numPmu": 13,
       "nom": "CALY ROSAY",
-      "cote_live": 26.0,
+      "cote_live": 28.0,
       "cote_reference": 24.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791219037000
+      "timestamp_cote": 1791219279000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -182,6 +182,25 @@
         "11": 11.0,
         "12": 29.0,
         "13": 26.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T18:55:00.628162",
+      "minutes_avant_depart": 5.995159433333333,
+      "cotes": {
+        "1": 4.2,
+        "2": 8.4,
+        "3": 22.0,
+        "4": 20.0,
+        "5": 14.0,
+        "6": 5.1,
+        "7": 62.0,
+        "8": 9.2,
+        "9": 17.0,
+        "10": 10.0,
+        "11": 13.0,
+        "12": 28.0,
+        "13": 28.0
       }
     }
   ]
