@@ -4,89 +4,89 @@
   "reunion": 4,
   "heure_depart": 1791213300000,
   "distance": 2500,
-  "scraped_at": "2026-10-05T17:09:20.860445",
-  "minutes_avant_depart": 6,
+  "scraped_at": "2026-10-05T17:12:01.275427",
+  "minutes_avant_depart": 3,
   "participants": [
     {
       "numPmu": 1,
       "nom": "KING MOTIF",
-      "cote_live": 23.0,
+      "cote_live": 25.0,
       "cote_reference": 26.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791212935000
+      "timestamp_cote": 1791213111000
     },
     {
       "numPmu": 2,
       "nom": "MARCHEMALO",
-      "cote_live": 3.6,
+      "cote_live": 5.1,
       "cote_reference": 2.7,
-      "tendance": "-",
-      "favoris": true,
-      "timestamp_cote": 1791212935000
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1791213111000
     },
     {
       "numPmu": 3,
       "nom": "SONNAZ",
-      "cote_live": 19.0,
+      "cote_live": 25.0,
       "cote_reference": 14.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791212935000
+      "timestamp_cote": 1791213111000
     },
     {
       "numPmu": 4,
       "nom": "MERKUR",
-      "cote_live": 7.4,
+      "cote_live": 4.8,
       "cote_reference": 13.0,
       "tendance": "+",
-      "favoris": false,
-      "timestamp_cote": 1791212935000
+      "favoris": true,
+      "timestamp_cote": 1791213111000
     },
     {
       "numPmu": 5,
       "nom": "APPLEBLOSSOMWHITE",
-      "cote_live": 7.2,
+      "cote_live": 8.3,
       "cote_reference": 8.1,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791212935000
+      "timestamp_cote": 1791213111000
     },
     {
       "numPmu": 6,
       "nom": "ORION ROCK",
-      "cote_live": 7.9,
+      "cote_live": 10.0,
       "cote_reference": 5.7,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791212935000
+      "timestamp_cote": 1791213111000
     },
     {
       "numPmu": 7,
       "nom": "CHAIN OF COMMAND",
-      "cote_live": 23.0,
+      "cote_live": 28.0,
       "cote_reference": 20.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791212935000
+      "timestamp_cote": 1791213111000
     },
     {
       "numPmu": 8,
       "nom": "EL CANEY",
-      "cote_live": 4.8,
+      "cote_live": 5.0,
       "cote_reference": 6.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791212935000
+      "timestamp_cote": 1791213111000
     },
     {
       "numPmu": 9,
       "nom": "STARAC",
-      "cote_live": 8.1,
+      "cote_live": 4.8,
       "cote_reference": 13.0,
       "tendance": "-",
-      "favoris": false,
-      "timestamp_cote": 1791212935000
+      "favoris": true,
+      "timestamp_cote": 1791213111000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -194,6 +194,66 @@
         "7": 23.0,
         "8": 4.8,
         "9": 8.1
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T17:10:00.845978",
+      "minutes_avant_depart": 4.990385966666667,
+      "cotes": {
+        "1": 23.0,
+        "2": 3.7,
+        "3": 19.0,
+        "4": 7.3,
+        "5": 7.2,
+        "6": 8.0,
+        "7": 23.0,
+        "8": 4.8,
+        "9": 8.2
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T17:10:40.843768",
+      "minutes_avant_depart": 4.323716950000001,
+      "cotes": {
+        "1": 26.0,
+        "2": 4.3,
+        "3": 21.0,
+        "4": 8.0,
+        "5": 7.9,
+        "6": 9.0,
+        "7": 25.0,
+        "8": 4.8,
+        "9": 4.7
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T17:11:21.488497",
+      "minutes_avant_depart": 3.647834666666667,
+      "cotes": {
+        "1": 23.0,
+        "2": 4.2,
+        "3": 22.0,
+        "4": 7.9,
+        "5": 7.8,
+        "6": 9.1,
+        "7": 25.0,
+        "8": 4.9,
+        "9": 4.8
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T17:12:01.275427",
+      "minutes_avant_depart": 2.9903797,
+      "cotes": {
+        "1": 25.0,
+        "2": 5.1,
+        "3": 25.0,
+        "4": 4.8,
+        "5": 8.3,
+        "6": 10.0,
+        "7": 28.0,
+        "8": 5.0,
+        "9": 4.8
       }
     }
   ]
