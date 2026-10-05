@@ -4,89 +4,89 @@
   "reunion": 4,
   "heure_depart": 1791213240000,
   "distance": 2500,
-  "scraped_at": "2026-10-05T16:44:00.841808",
-  "minutes_avant_depart": 30,
+  "scraped_at": "2026-10-05T16:48:01.962990",
+  "minutes_avant_depart": 26,
   "participants": [
     {
       "numPmu": 1,
       "nom": "KING MOTIF",
-      "cote_live": 20.0,
-      "cote_reference": 9.4,
+      "cote_live": 25.0,
+      "cote_reference": 26.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791210628000
+      "timestamp_cote": 1791211666000
     },
     {
       "numPmu": 2,
       "nom": "MARCHEMALO",
-      "cote_live": 5.3,
-      "cote_reference": 6.1,
+      "cote_live": 2.9,
+      "cote_reference": 2.7,
       "tendance": "+",
-      "favoris": false,
-      "timestamp_cote": 1791210628000
+      "favoris": true,
+      "timestamp_cote": 1791211666000
     },
     {
       "numPmu": 3,
       "nom": "SONNAZ",
-      "cote_live": 11.0,
-      "cote_reference": 8.0,
+      "cote_live": 14.0,
+      "cote_reference": 14.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791210628000
+      "timestamp_cote": 1791211666000
     },
     {
       "numPmu": 4,
       "nom": "MERKUR",
-      "cote_live": 9.6,
-      "cote_reference": 10.0,
+      "cote_live": 12.0,
+      "cote_reference": 13.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791210628000
+      "timestamp_cote": 1791211666000
     },
     {
       "numPmu": 5,
       "nom": "APPLEBLOSSOMWHITE",
-      "cote_live": 6.9,
-      "cote_reference": 8.3,
+      "cote_live": 7.8,
+      "cote_reference": 8.1,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791210628000
+      "timestamp_cote": 1791211666000
     },
     {
       "numPmu": 6,
       "nom": "ORION ROCK",
-      "cote_live": 4.4,
-      "cote_reference": 6.5,
-      "tendance": "+",
-      "favoris": true,
-      "timestamp_cote": 1791210628000
+      "cote_live": 5.5,
+      "cote_reference": 5.7,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1791211666000
     },
     {
       "numPmu": 7,
       "nom": "CHAIN OF COMMAND",
-      "cote_live": 16.0,
-      "cote_reference": 13.0,
-      "tendance": "+",
+      "cote_live": 20.0,
+      "cote_reference": 20.0,
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791210628000
+      "timestamp_cote": 1791211666000
     },
     {
       "numPmu": 8,
       "nom": "EL CANEY",
-      "cote_live": 5.8,
-      "cote_reference": 5.0,
-      "tendance": "-",
+      "cote_live": 6.0,
+      "cote_reference": 6.0,
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791210628000
+      "timestamp_cote": 1791211666000
     },
     {
       "numPmu": 9,
       "nom": "STARAC",
-      "cote_live": 9.3,
-      "cote_reference": 9.4,
+      "cote_live": 12.0,
+      "cote_reference": 13.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791210628000
+      "timestamp_cote": 1791211666000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -104,6 +104,21 @@
         "7": 16.0,
         "8": 5.8,
         "9": 9.3
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T16:48:01.962990",
+      "minutes_avant_depart": 25.970997033333333,
+      "cotes": {
+        "1": 25.0,
+        "2": 2.9,
+        "3": 14.0,
+        "4": 12.0,
+        "5": 7.8,
+        "6": 5.5,
+        "7": 20.0,
+        "8": 6.0,
+        "9": 12.0
       }
     }
   ]
