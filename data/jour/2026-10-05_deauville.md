@@ -100,21 +100,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DE CAGNES-SUR-MER
 
-*19h30 · plat · 1300 m · 11 partants · cotes à T−9:19*
+*19h30 · plat · 1300 m · 11 partants · cotes à T−3:59*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 6 | SACREE PHILOMENE | 2,3 | 2,3 | 2,35 | -2,3 % | M.GUYON | 4/44/12/2559 |
-| 1 | LAMEGO | 5,6 | 7,2 | 5,90 | -5,1 % | T.PICCONE | 9/12/3143/58 |
-| 7 | GONAFOOT | 8,4 | 10 | 10,02 | -16,2 % | M.VELON | 28/26/4/624 |
-| 11 | HAVANISTA | 8,8 | 8 | 9,90 | -11,1 % | M.GRANDIN | 3/31/3288/410 |
-| 3 | MR SAY | 9,5 | 8,4 | 12,63 | -24,8 % | L.BAILS | 77/15/431/2239 |
-| 4 | REGAL CHOP | 17 | 16 | 21,36 | -20,4 % | J.MOUTARD | 61/28/6/16 |
-| 8 | RIMANOVKHA | 20 | 32 | 25,79 | -22,4 % | G.MEURY | 68/22/5/9 |
-| 9 | DUBARA | 31 | 14 | 44,53 | -30,4 % | E.HARDOUIN | 27/79/2717/810 |
-| 5 | FETE DE TROP | 46 | 34 | 69,02 | -33,4 % | C.PACAUT | 48/15/15/36 |
-| 2 | SKAROS | 54 | 65 | 82,15 | -34,3 % | E.CHINCHILLA | 276/15/15/36 |
-| 10 | FERRA CHOPE | 55 | 34 | 94,53 | -41,8 % | R.MANGIONE | 78/162/6/428 |
+| 6 | SACREE PHILOMENE | 2,6 | 2,3 | 3,03 | -14,1 % | M.GUYON | 4/44/12/2559 |
+| 1 | LAMEGO | 5,2 | 7,2 | 5,45 | -4,6 % | T.PICCONE | 9/12/3143/58 |
+| 7 | GONAFOOT | 6,9 | 10 | 7,99 | -13,6 % | M.VELON | 28/26/4/624 |
+| 11 | HAVANISTA | 8,3 | 8 | 9,27 | -10,5 % | M.GRANDIN | 3/31/3288/410 |
+| 3 | MR SAY | 10 | 8,4 | 13,45 | -25,7 % | L.BAILS | 77/15/431/2239 |
+| 4 | REGAL CHOP | 17 | 16 | 21,41 | -20,6 % | J.MOUTARD | 61/28/6/16 |
+| 8 | RIMANOVKHA | 21 | 32 | 27,35 | -23,2 % | G.MEURY | 68/22/5/9 |
+| 9 | DUBARA | 24 | 14 | 33,37 | -28,1 % | E.HARDOUIN | 27/79/2717/810 |
+| 5 | FETE DE TROP | 45 | 34 | 67,54 | -33,4 % | C.PACAUT | 48/15/15/36 |
+| 10 | FERRA CHOPE | 46 | 34 | 78,03 | -41,0 % | R.MANGIONE | 78/162/6/428 |
+| 2 | SKAROS | 53 | 65 | 80,69 | -34,3 % | E.CHINCHILLA | 276/15/15/36 |
 
 ### 7. PRIX DU PLOUICH
 
