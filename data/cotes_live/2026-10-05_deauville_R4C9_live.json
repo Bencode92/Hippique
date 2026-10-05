@@ -4,62 +4,62 @@
   "reunion": 4,
   "heure_depart": 1791226860000,
   "distance": 1900,
-  "scraped_at": "2026-10-05T20:51:40.842520",
-  "minutes_avant_depart": 9,
+  "scraped_at": "2026-10-05T20:55:00.634227",
+  "minutes_avant_depart": 6,
   "participants": [
     {
       "numPmu": 1,
       "nom": "TIEGO THE FIRST",
-      "cote_live": 2.7,
+      "cote_live": 2.6,
       "cote_reference": 2.8,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791226276000
+      "timestamp_cote": 1791226474000
     },
     {
       "numPmu": 2,
       "nom": "LORAXED",
-      "cote_live": 6.1,
+      "cote_live": 5.9,
       "cote_reference": 7.7,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791226276000
+      "timestamp_cote": 1791226474000
     },
     {
       "numPmu": 3,
       "nom": "CLIMATE CHANGE",
-      "cote_live": 3.1,
+      "cote_live": 3.4,
       "cote_reference": 3.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791226276000
+      "timestamp_cote": 1791226474000
     },
     {
       "numPmu": 4,
       "nom": "DARK ROCKSTER",
       "cote_live": 19.0,
       "cote_reference": 12.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791226276000
+      "timestamp_cote": 1791226474000
     },
     {
       "numPmu": 5,
       "nom": "WAKABURN",
-      "cote_live": 15.0,
+      "cote_live": 16.0,
       "cote_reference": 10.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791226276000
+      "timestamp_cote": 1791226474000
     },
     {
       "numPmu": 6,
       "nom": "AGILE",
-      "cote_live": 5.6,
+      "cote_live": 5.2,
       "cote_reference": 4.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791226276000
+      "timestamp_cote": 1791226474000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -134,6 +134,18 @@
         "4": 19.0,
         "5": 15.0,
         "6": 5.6
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T20:55:00.634227",
+      "minutes_avant_depart": 5.9948172,
+      "cotes": {
+        "1": 2.6,
+        "2": 5.9,
+        "3": 3.4,
+        "4": 19.0,
+        "5": 16.0,
+        "6": 5.2
       }
     }
   ]
