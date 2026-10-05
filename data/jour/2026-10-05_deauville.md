@@ -10,19 +10,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 1. PRIX CAPITAINE RIQUET - HANDICAP CHALLENGE
 
-*16h37 · plat · 2500 m · 9 partants · cotes à T−16:59*
+*16h37 · plat · 2500 m · 9 partants · cotes à T−12:59*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 1 | CATHERINE'S GIFT | 3,1 | 3,69 | -16,0 % | JD.MANCEAU | –/40/54/1582 |
-| 3 | COEUR DE ROUME | 7,1 | 8,29 | -14,3 % | P.LOTOUT | –/314/1452/2190 |
-| 5 | RIGEL | 8,1 | 10,33 | -21,6 % | T.MARLIN | –/27/117/2696 |
-| 2 | SOLDIERS CHORUS | 8,9 | 10,79 | -17,5 % | S.CASTELA | –/12/59/897 |
-| 7 | LA JAVANAISE | 9,1 | 11,08 | -17,8 % | C.AELBRECHT | –/432/24/218 |
-| 6 | KERDINA | 9,5 | 10,26 | -7,4 % | F.GUY | –/207/–/627 |
-| 9 | DSCHINGIS ARROW | 10 | 11,65 | -14,2 % | Y.MADEC | –/296/67/262 |
-| 8 | AMKAR | 12 | 16,44 | -27,0 % | T.GUINEHEUX | –/138/1704/935 |
-| 4 | MOURAT | 23 | 32,79 | -29,9 % | G.DANLOUX | –/28/17/16 |
+| 1 | CATHERINE'S GIFT | 3,1 | 3,74 | -17,0 % | JD.MANCEAU | –/40/54/1582 |
+| 3 | COEUR DE ROUME | 6,9 | 8,12 | -15,1 % | P.LOTOUT | –/314/1452/2190 |
+| 5 | RIGEL | 8,3 | 10,77 | -22,9 % | T.MARLIN | –/27/117/2696 |
+| 7 | LA JAVANAISE | 8,8 | 10,79 | -18,5 % | C.AELBRECHT | –/432/24/218 |
+| 2 | SOLDIERS CHORUS | 8,9 | 10,94 | -18,6 % | S.CASTELA | –/12/59/897 |
+| 9 | DSCHINGIS ARROW | 9,6 | 11,25 | -14,7 % | Y.MADEC | –/296/67/262 |
+| 6 | KERDINA | 10 | 11,03 | -9,4 % | F.GUY | –/207/–/627 |
+| 8 | AMKAR | 12 | 16,66 | -28,0 % | T.GUINEHEUX | –/138/1704/935 |
+| 4 | MOURAT | 19 | 26,63 | -28,7 % | G.DANLOUX | –/28/17/16 |
 
 ### 2. PRIX DU PEVELE
 
