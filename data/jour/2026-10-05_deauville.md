@@ -42,23 +42,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX DE L'AVESNOIS
 
-*17h51 · plat · 1300 m · 13 partants · cotes de l'extraction*
+*17h51 · plat · 1300 m · 13 partants · cotes à T−29:39*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | SWEET AS | – | C.PACAUT | 48/15/15/36 |
-| 2 | WILD MOOR | – | D.PILITTA | 267/32/38/216 |
-| 3 | BELVEDERE PALACE | – | M.GRANDIN | 3/79/2767/1593 |
-| 5 | MATCH ANTHEM | – | T.PICCONE | 9/174/3196/277 |
-| 6 | COOLMEEN ROYAL | – | C.BELMONT | 171/174/12/277 |
-| 7 | MICHELANGELO | – | T.BACHELOT | 16/53/300/2592 |
-| 8 | MORUS | – | R.MANGIONE | 78/390/438/278 |
-| 9 | PAPATEOU | – | M.VELON | 28/432/98/2417 |
-| 10 | CHARISMATIC CHICK | – | A.DUQUESNOY | 121/28/383/49 |
-| 11 | NURTURE | – | A.CRASTUS | 17/207/29/2179 |
-| 12 | ROCAMBOLESQUE | – | D.SANTIAGO | 15/319/10/1583 |
-| 13 | MICOLEO | – | G.MEURY | 68/28/21/75 |
-| 14 | HEMATITE | – | J.LACROIX | 94/141/38/96 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 2 | WILD MOOR | 6,1 | 6,31 | -3,3 % | D.PILITTA | 267/32/38/216 |
+| 14 | HEMATITE | 7,9 | 9,60 | -17,7 % | J.LACROIX | 94/141/38/96 |
+| 7 | MICHELANGELO | 8,3 | 9,58 | -13,4 % | T.BACHELOT | 16/53/300/2592 |
+| 1 | SWEET AS | 8,9 | 9,73 | -8,5 % | C.PACAUT | 48/15/15/36 |
+| 11 | NURTURE | 10 | 10,21 | -2,1 % | A.CRASTUS | 17/207/29/2179 |
+| 3 | BELVEDERE PALACE | 11 | 15,17 | -27,5 % | M.GRANDIN | 3/79/2767/1593 |
+| 9 | PAPATEOU | 11 | 12,45 | -11,6 % | M.VELON | 28/432/98/2417 |
+| 12 | ROCAMBOLESQUE | 11 | 13,32 | -17,4 % | D.SANTIAGO | 15/319/10/1583 |
+| 8 | MORUS | 14 | 18,81 | -25,6 % | R.MANGIONE | 78/390/438/278 |
+| 13 | MICOLEO | 16 | 20,08 | -20,3 % | G.MEURY | 68/28/21/75 |
+| 5 | MATCH ANTHEM | 19 | 23,51 | -19,2 % | T.PICCONE | 9/174/3196/277 |
+| 6 | COOLMEEN ROYAL | 25 | 33,61 | -25,6 % | C.BELMONT | 171/174/12/277 |
+| 10 | CHARISMATIC CHICK | 26 | 38,59 | -32,6 % | A.DUQUESNOY | 121/28/383/49 |
 
 ### 4. PRIX AU-DELA DES PISTES
 
