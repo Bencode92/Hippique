@@ -1,6 +1,6 @@
 # DEAUVILLE — 05/10/2026
 
-9 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 6 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -80,41 +80,41 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DE LA SAMBRE
 
-*19h00 · plat · 1300 m · 13 partants · cotes à T−3:19*
+*19h00 · plat · 1300 m · 13 partants · cotes à T−0:40*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 1 | CRACK CITY | 4,3 | 4,2 | 4,70 | -8,5 % | T.PICCONE | 9/390/1415/278 |
-| 6 | ASTERALE | 4,5 | 6,6 | 4,41 | **+1,9 %** | M.GRANDIN | 3/108/605/84 |
-| 10 | LAGOA SANTA | 9,1 | 11 | 10,30 | -11,6 % | A.CRASTUS | 17/147/1010/1760 |
-| 2 | JIJI MY LOVE | 9,2 | 8,6 | 10,02 | -8,2 % | L.BAILS | 77/135/370/1384 |
-| 8 | GIN GEMBRE | 10 | 8,4 | 13,43 | -25,5 % | E.HARDOUIN | 27/214/24/342 |
-| 5 | RUE DU SAHEL | 13 | 15 | 16,06 | -19,1 % | P.CHEYER | 109/562/59/2009 |
-| 11 | PALIMERO | 14 | 13 | 18,64 | -24,9 % | R.MANGIONE | 78/515/3371/1585 |
-| 9 | STRANGER | 19 | 14 | 25,44 | -25,3 % | J.LACROIX | 94/141/56/1531 |
-| 4 | LADY PINK | 22 | 19 | 28,78 | -23,6 % | D.SANTIAGO | 15/319/70/1583 |
-| 3 | EL MADAR | 26 | 16 | 36,50 | -28,8 % | M.VELON | 28/117/4119/784 |
-| 12 | MEHANYDREAM | 30 | 24 | 39,10 | -23,3 % | A.VILCHIEN | 93/532/719/2023 |
-| 7 | BREATHE ON | 32 | 36 | 42,22 | -24,2 % | S.TISON | 98/803/11/3460 |
-| 13 | CALY ROSAY | 34 | 25 | 49,43 | -31,2 % | M.MARQUETTE | 54/262/608/3207 |
+| 6 | ASTERALE | 4,3 | 6,6 | 4,65 | -7,4 % | M.GRANDIN | 3/108/605/84 |
+| 1 | CRACK CITY | 4,6 | 4,2 | 4,62 | -0,4 % | T.PICCONE | 9/390/1415/278 |
+| 2 | JIJI MY LOVE | 6,7 | 8,6 | 7,00 | -4,2 % | L.BAILS | 77/135/370/1384 |
+| 8 | GIN GEMBRE | 9,2 | 8,4 | 12,23 | -24,8 % | E.HARDOUIN | 27/214/24/342 |
+| 10 | LAGOA SANTA | 10 | 11 | 11,56 | -13,5 % | A.CRASTUS | 17/147/1010/1760 |
+| 5 | RUE DU SAHEL | 15 | 15 | 19,09 | -21,4 % | P.CHEYER | 109/562/59/2009 |
+| 11 | PALIMERO | 15 | 13 | 20,33 | -26,2 % | R.MANGIONE | 78/515/3371/1585 |
+| 9 | STRANGER | 19 | 14 | 25,58 | -25,7 % | J.LACROIX | 94/141/56/1531 |
+| 4 | LADY PINK | 25 | 19 | 31,97 | -21,8 % | D.SANTIAGO | 15/319/70/1583 |
+| 3 | EL MADAR | 27 | 16 | 38,31 | -29,5 % | M.VELON | 28/117/4119/784 |
+| 12 | MEHANYDREAM | 30 | 24 | 39,30 | -23,7 % | A.VILCHIEN | 93/532/719/2023 |
+| 7 | BREATHE ON | 37 | 36 | 49,91 | -25,9 % | S.TISON | 98/803/11/3460 |
+| 13 | CALY ROSAY | 38 | 25 | 56,24 | -32,4 % | M.MARQUETTE | 54/262/608/3207 |
 
 ### 6. PRIX DE CAGNES-SUR-MER
 
-*19h30 · plat · 1300 m · 11 partants · cotes de l'extraction*
+*19h30 · plat · 1300 m · 11 partants · cotes à T−29:39*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 6 | SACREE PHILOMENE | 2,3 | 2,36 | -2,7 % | M.GUYON | 4/44/12/2559 |
-| 1 | LAMEGO | 7,2 | 8,59 | -16,1 % | T.PICCONE | 9/12/3143/58 |
-| 11 | HAVANISTA | 8 | 8,92 | -10,3 % | M.GRANDIN | 3/31/3288/410 |
-| 3 | MR SAY | 8,4 | 10,99 | -23,6 % | L.BAILS | 77/15/431/2239 |
-| 7 | GONAFOOT | 10 | 13,51 | -26,0 % | M.VELON | 28/26/4/624 |
-| 9 | DUBARA | 14 | 17,92 | -21,9 % | E.HARDOUIN | 27/79/2717/810 |
-| 4 | REGAL CHOP | 16 | 20,03 | -20,1 % | J.MOUTARD | 61/28/6/16 |
-| 8 | RIMANOVKHA | 32 | 48,68 | -34,3 % | G.MEURY | 68/22/5/9 |
-| 5 | FETE DE TROP | 34 | 52,11 | -34,7 % | C.PACAUT | 48/15/15/36 |
-| 10 | FERRA CHOPE | 34 | 51,03 | -33,4 % | R.MANGIONE | 78/162/6/428 |
-| 2 | SKAROS | 65 | 100,73 | -35,5 % | E.CHINCHILLA | 276/15/15/36 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 6 | SACREE PHILOMENE | 1,8 | 2,3 | 1,94 | -7,4 % | M.GUYON | 4/44/12/2559 |
+| 11 | HAVANISTA | 8,8 | 8 | 9,87 | -10,9 % | M.GRANDIN | 3/31/3288/410 |
+| 7 | GONAFOOT | 9,4 | 10 | 12,44 | -24,4 % | M.VELON | 28/26/4/624 |
+| 1 | LAMEGO | 9,8 | 7,2 | 12,21 | -19,7 % | T.PICCONE | 9/12/3143/58 |
+| 3 | MR SAY | 11 | 8,4 | 14,98 | -26,6 % | L.BAILS | 77/15/431/2239 |
+| 4 | REGAL CHOP | 22 | 16 | 28,71 | -23,4 % | J.MOUTARD | 61/28/6/16 |
+| 9 | DUBARA | 22 | 14 | 30,04 | -26,8 % | E.HARDOUIN | 27/79/2717/810 |
+| 8 | RIMANOVKHA | 29 | 32 | 43,18 | -32,8 % | G.MEURY | 68/22/5/9 |
+| 5 | FETE DE TROP | 48 | 34 | 72,13 | -33,5 % | C.PACAUT | 48/15/15/36 |
+| 10 | FERRA CHOPE | 55 | 34 | 94,30 | -41,7 % | R.MANGIONE | 78/162/6/428 |
+| 2 | SKAROS | 65 | 65 | 99,92 | -34,9 % | E.CHINCHILLA | 276/15/15/36 |
 
 ### 7. PRIX DU PLOUICH
 
