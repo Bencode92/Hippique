@@ -4,98 +4,98 @@
   "reunion": 4,
   "heure_depart": 1791225120000,
   "distance": 1900,
-  "scraped_at": "2026-10-05T20:31:00.407357",
-  "minutes_avant_depart": 1,
+  "scraped_at": "2026-10-05T20:33:40.679815",
+  "minutes_avant_depart": -2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "SAINT HELLIER",
-      "cote_live": 18.0,
+      "cote_live": 19.0,
       "cote_reference": 12.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791225050000
+      "timestamp_cote": 1791225180000
     },
     {
       "numPmu": 2,
       "nom": "CHARLESQUINT",
-      "cote_live": 17.0,
+      "cote_live": 15.0,
       "cote_reference": 12.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791225050000
+      "timestamp_cote": 1791225180000
     },
     {
       "numPmu": 3,
       "nom": "WOFF",
-      "cote_live": 16.0,
+      "cote_live": 19.0,
       "cote_reference": 10.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791225050000
+      "timestamp_cote": 1791225180000
     },
     {
       "numPmu": 4,
       "nom": "USER AMISTOSO",
-      "cote_live": 22.0,
+      "cote_live": 13.0,
       "cote_reference": 14.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791225050000
+      "timestamp_cote": 1791225180000
     },
     {
       "numPmu": 5,
       "nom": "LISEO",
-      "cote_live": 4.4,
+      "cote_live": 4.3,
       "cote_reference": 3.4,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791225050000
+      "timestamp_cote": 1791225180000
     },
     {
       "numPmu": 6,
       "nom": "GOLFEUR",
-      "cote_live": 11.0,
+      "cote_live": 12.0,
       "cote_reference": 14.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791225050000
+      "timestamp_cote": 1791225180000
     },
     {
       "numPmu": 7,
       "nom": "COSMO BEAU",
-      "cote_live": 14.0,
+      "cote_live": 15.0,
       "cote_reference": 6.8,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791225050000
+      "timestamp_cote": 1791225180000
     },
     {
       "numPmu": 8,
       "nom": "VOLCANO",
-      "cote_live": 3.8,
+      "cote_live": 2.9,
       "cote_reference": 6.5,
-      "tendance": "+",
+      "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791225050000
+      "timestamp_cote": 1791225180000
     },
     {
       "numPmu": 9,
       "nom": "SIETE MISTERIOS",
-      "cote_live": 35.0,
+      "cote_live": 38.0,
       "cote_reference": 19.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791225050000
+      "timestamp_cote": 1791225180000
     },
     {
       "numPmu": 10,
       "nom": "MURRAY",
-      "cote_live": 4.0,
+      "cote_live": 6.5,
       "cote_reference": 9.9,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791225050000
+      "timestamp_cote": 1791225180000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -338,6 +338,70 @@
         "8": 3.8,
         "9": 35.0,
         "10": 4.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T20:31:40.416190",
+      "minutes_avant_depart": 0.32821595,
+      "cotes": {
+        "1": 18.0,
+        "2": 18.0,
+        "3": 16.0,
+        "4": 23.0,
+        "5": 4.6,
+        "6": 12.0,
+        "7": 14.0,
+        "8": 3.3,
+        "9": 37.0,
+        "10": 4.2
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T20:32:20.771553",
+      "minutes_avant_depart": -0.34540136666666665,
+      "cotes": {
+        "1": 18.0,
+        "2": 19.0,
+        "3": 17.0,
+        "4": 23.0,
+        "5": 4.5,
+        "6": 13.0,
+        "7": 15.0,
+        "8": 3.2,
+        "9": 37.0,
+        "10": 4.1
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T20:33:00.591834",
+      "minutes_avant_depart": -1.0051216166666666,
+      "cotes": {
+        "1": 18.0,
+        "2": 14.0,
+        "3": 18.0,
+        "4": 13.0,
+        "5": 4.6,
+        "6": 12.0,
+        "7": 15.0,
+        "8": 2.9,
+        "9": 36.0,
+        "10": 6.3
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T20:33:40.679815",
+      "minutes_avant_depart": -1.6717899,
+      "cotes": {
+        "1": 19.0,
+        "2": 15.0,
+        "3": 19.0,
+        "4": 13.0,
+        "5": 4.3,
+        "6": 12.0,
+        "7": 15.0,
+        "8": 2.9,
+        "9": 38.0,
+        "10": 6.5
       }
     }
   ]
