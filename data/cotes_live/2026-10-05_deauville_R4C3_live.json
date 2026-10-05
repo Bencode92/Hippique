@@ -4,89 +4,89 @@
   "reunion": 4,
   "heure_depart": 1791215460000,
   "distance": 1300,
-  "scraped_at": "2026-10-05T17:38:01.551767",
-  "minutes_avant_depart": 13,
+  "scraped_at": "2026-10-05T17:42:41.191483",
+  "minutes_avant_depart": 8,
   "participants": [
     {
       "numPmu": 1,
       "nom": "SWEET AS",
-      "cote_live": 7.8,
+      "cote_live": 5.4,
       "cote_reference": 8.9,
       "tendance": "-",
-      "favoris": false,
-      "timestamp_cote": 1791214666000
+      "favoris": true,
+      "timestamp_cote": 1791214952000
     },
     {
       "numPmu": 2,
       "nom": "WILD MOOR",
-      "cote_live": 5.9,
+      "cote_live": 6.0,
       "cote_reference": 6.1,
-      "tendance": "-",
-      "favoris": true,
-      "timestamp_cote": 1791214666000
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1791214952000
     },
     {
       "numPmu": 3,
       "nom": "BELVEDERE PALACE",
-      "cote_live": 17.0,
+      "cote_live": 15.0,
       "cote_reference": 11.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791214666000
+      "timestamp_cote": 1791214952000
     },
     {
       "numPmu": 5,
       "nom": "MATCH ANTHEM",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 19.0,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791214666000
+      "timestamp_cote": 1791214952000
     },
     {
       "numPmu": 6,
       "nom": "COOLMEEN ROYAL",
-      "cote_live": 15.0,
+      "cote_live": 20.0,
       "cote_reference": 25.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791214666000
+      "timestamp_cote": 1791214952000
     },
     {
       "numPmu": 7,
       "nom": "MICHELANGELO",
-      "cote_live": 9.6,
+      "cote_live": 8.6,
       "cote_reference": 8.3,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791214666000
+      "timestamp_cote": 1791214952000
     },
     {
       "numPmu": 8,
       "nom": "MORUS",
-      "cote_live": 21.0,
+      "cote_live": 26.0,
       "cote_reference": 14.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791214666000
+      "timestamp_cote": 1791214952000
     },
     {
       "numPmu": 9,
       "nom": "PAPATEOU",
-      "cote_live": 11.0,
+      "cote_live": 13.0,
       "cote_reference": 11.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791214666000
+      "timestamp_cote": 1791214952000
     },
     {
       "numPmu": 10,
       "nom": "CHARISMATIC CHICK",
-      "cote_live": 13.0,
+      "cote_live": 15.0,
       "cote_reference": 26.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791214666000
+      "timestamp_cote": 1791214952000
     },
     {
       "numPmu": 11,
@@ -95,25 +95,25 @@
       "cote_reference": 10.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791214666000
+      "timestamp_cote": 1791214952000
     },
     {
       "numPmu": 12,
       "nom": "ROCAMBOLESQUE",
-      "cote_live": 9.7,
+      "cote_live": 11.0,
       "cote_reference": 10.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791214666000
+      "timestamp_cote": 1791214952000
     },
     {
       "numPmu": 13,
       "nom": "MICOLEO",
-      "cote_live": 11.0,
+      "cote_live": 12.0,
       "cote_reference": 16.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791214666000
+      "timestamp_cote": 1791214952000
     },
     {
       "numPmu": 14,
@@ -122,7 +122,7 @@
       "cote_reference": 8.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791214666000
+      "timestamp_cote": 1791214952000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -219,6 +219,25 @@
         "11": 15.0,
         "12": 9.7,
         "13": 11.0,
+        "14": 12.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T17:42:41.191483",
+      "minutes_avant_depart": 8.3236081,
+      "cotes": {
+        "1": 5.4,
+        "2": 6.0,
+        "3": 15.0,
+        "5": 14.0,
+        "6": 20.0,
+        "7": 8.6,
+        "8": 26.0,
+        "9": 13.0,
+        "10": 15.0,
+        "11": 15.0,
+        "12": 11.0,
+        "13": 12.0,
         "14": 12.0
       }
     }

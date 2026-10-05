@@ -42,23 +42,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX DE L'AVESNOIS
 
-*17h51 · plat · 1300 m · 13 partants · cotes à T−12:58*
+*17h51 · plat · 1300 m · 13 partants · cotes à T−8:19*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 2 | WILD MOOR | 5,9 | 7,62 | -22,6 % | D.PILITTA | 267/32/38/216 |
-| 1 | SWEET AS | 7,8 | 8,37 | -6,9 % | C.PACAUT | 48/15/15/36 |
-| 7 | MICHELANGELO | 9,6 | 11,39 | -15,7 % | T.BACHELOT | 16/53/300/2592 |
-| 12 | ROCAMBOLESQUE | 9,7 | 11,53 | -15,9 % | D.SANTIAGO | 15/319/10/1583 |
-| 9 | PAPATEOU | 11 | 12,48 | -11,8 % | M.VELON | 28/432/98/2417 |
-| 13 | MICOLEO | 11 | 12,99 | -15,3 % | G.MEURY | 68/28/21/75 |
-| 14 | HEMATITE | 12 | 15,73 | -23,7 % | J.LACROIX | 94/141/38/96 |
-| 5 | MATCH ANTHEM | 13 | 15,16 | -14,3 % | T.PICCONE | 9/174/3196/277 |
-| 10 | CHARISMATIC CHICK | 13 | 17,29 | -24,8 % | A.DUQUESNOY | 121/28/383/49 |
-| 6 | COOLMEEN ROYAL | 15 | 18,67 | -19,7 % | C.BELMONT | 171/174/12/277 |
-| 11 | NURTURE | 15 | 16,37 | -8,4 % | A.CRASTUS | 17/207/29/2179 |
-| 3 | BELVEDERE PALACE | 17 | 25,42 | -33,1 % | M.GRANDIN | 3/79/2767/1593 |
-| 8 | MORUS | 21 | 30,27 | -30,6 % | R.MANGIONE | 78/390/438/278 |
+| 1 | SWEET AS | 5,4 | 6,11 | -11,6 % | C.PACAUT | 48/15/15/36 |
+| 2 | WILD MOOR | 6 | 6,99 | -14,2 % | D.PILITTA | 267/32/38/216 |
+| 7 | MICHELANGELO | 8,6 | 10,00 | -14,0 % | T.BACHELOT | 16/53/300/2592 |
+| 12 | ROCAMBOLESQUE | 11 | 13,34 | -17,5 % | D.SANTIAGO | 15/319/10/1583 |
+| 13 | MICOLEO | 12 | 14,37 | -16,5 % | G.MEURY | 68/28/21/75 |
+| 14 | HEMATITE | 12 | 15,71 | -23,6 % | J.LACROIX | 94/141/38/96 |
+| 9 | PAPATEOU | 13 | 15,14 | -14,2 % | M.VELON | 28/432/98/2417 |
+| 5 | MATCH ANTHEM | 14 | 16,51 | -15,2 % | T.PICCONE | 9/174/3196/277 |
+| 3 | BELVEDERE PALACE | 15 | 21,92 | -31,6 % | M.GRANDIN | 3/79/2767/1593 |
+| 10 | CHARISMATIC CHICK | 15 | 20,43 | -26,6 % | A.DUQUESNOY | 121/28/383/49 |
+| 11 | NURTURE | 15 | 16,35 | -8,2 % | A.CRASTUS | 17/207/29/2179 |
+| 6 | COOLMEEN ROYAL | 20 | 26,05 | -23,2 % | C.BELMONT | 171/174/12/277 |
+| 8 | MORUS | 26 | 38,64 | -32,7 % | R.MANGIONE | 78/390/438/278 |
 
 ### 4. PRIX AU-DELA DES PISTES
 
