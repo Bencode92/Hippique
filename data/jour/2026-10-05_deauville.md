@@ -42,23 +42,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX DE L'AVESNOIS
 
-*17h51 · plat · 1300 m · 13 partants · cotes à T−29:39*
+*17h51 · plat · 1300 m · 13 partants · cotes à T−24:59*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 2 | WILD MOOR | 6,1 | 6,31 | -3,3 % | D.PILITTA | 267/32/38/216 |
-| 14 | HEMATITE | 7,9 | 9,60 | -17,7 % | J.LACROIX | 94/141/38/96 |
-| 7 | MICHELANGELO | 8,3 | 9,58 | -13,4 % | T.BACHELOT | 16/53/300/2592 |
-| 1 | SWEET AS | 8,9 | 9,73 | -8,5 % | C.PACAUT | 48/15/15/36 |
-| 11 | NURTURE | 10 | 10,21 | -2,1 % | A.CRASTUS | 17/207/29/2179 |
-| 3 | BELVEDERE PALACE | 11 | 15,17 | -27,5 % | M.GRANDIN | 3/79/2767/1593 |
-| 9 | PAPATEOU | 11 | 12,45 | -11,6 % | M.VELON | 28/432/98/2417 |
-| 12 | ROCAMBOLESQUE | 11 | 13,32 | -17,4 % | D.SANTIAGO | 15/319/10/1583 |
-| 8 | MORUS | 14 | 18,81 | -25,6 % | R.MANGIONE | 78/390/438/278 |
-| 13 | MICOLEO | 16 | 20,08 | -20,3 % | G.MEURY | 68/28/21/75 |
-| 5 | MATCH ANTHEM | 19 | 23,51 | -19,2 % | T.PICCONE | 9/174/3196/277 |
-| 6 | COOLMEEN ROYAL | 25 | 33,61 | -25,6 % | C.BELMONT | 171/174/12/277 |
-| 10 | CHARISMATIC CHICK | 26 | 38,59 | -32,6 % | A.DUQUESNOY | 121/28/383/49 |
+| 2 | WILD MOOR | 6,2 | 6,36 | -2,6 % | D.PILITTA | 267/32/38/216 |
+| 7 | MICHELANGELO | 7,9 | 8,96 | -11,9 % | T.BACHELOT | 16/53/300/2592 |
+| 14 | HEMATITE | 8,2 | 9,93 | -17,4 % | J.LACROIX | 94/141/38/96 |
+| 1 | SWEET AS | 9,1 | 9,89 | -8,0 % | C.PACAUT | 48/15/15/36 |
+| 12 | ROCAMBOLESQUE | 10 | 11,80 | -15,3 % | D.SANTIAGO | 15/319/10/1583 |
+| 11 | NURTURE | 11 | 11,29 | -2,6 % | A.CRASTUS | 17/207/29/2179 |
+| 3 | BELVEDERE PALACE | 12 | 16,66 | -28,0 % | M.GRANDIN | 3/79/2767/1593 |
+| 9 | PAPATEOU | 13 | 14,98 | -13,2 % | M.VELON | 28/432/98/2417 |
+| 13 | MICOLEO | 14 | 17,02 | -17,7 % | G.MEURY | 68/28/21/75 |
+| 8 | MORUS | 15 | 20,21 | -25,8 % | R.MANGIONE | 78/390/438/278 |
+| 5 | MATCH ANTHEM | 18 | 21,87 | -17,7 % | T.PICCONE | 9/174/3196/277 |
+| 10 | CHARISMATIC CHICK | 22 | 31,56 | -30,3 % | A.DUQUESNOY | 121/28/383/49 |
+| 6 | COOLMEEN ROYAL | 24 | 31,78 | -24,5 % | C.BELMONT | 171/174/12/277 |
 
 ### 4. PRIX AU-DELA DES PISTES
 
