@@ -2,25 +2,27 @@
 
 9 courses.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+**Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
+La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
+Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classements ci-dessus.
 
 ---
 
 ### 1. PRIX CAPITAINE RIQUET - HANDICAP CHALLENGE
 
-*16h37 · plat · 2500 m · 9 partants · cotes de l'extraction*
+*16h37 · plat · 2500 m · 9 partants · cotes à T−29:39*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | CATHERINE'S GIFT | – | JD.MANCEAU | –/40/54/1582 |
-| 2 | SOLDIERS CHORUS | – | S.CASTELA | –/12/59/897 |
-| 3 | COEUR DE ROUME | – | P.LOTOUT | –/314/1452/2190 |
-| 4 | MOURAT | – | G.DANLOUX | –/28/17/16 |
-| 5 | RIGEL | – | T.MARLIN | –/27/117/2696 |
-| 6 | KERDINA | – | F.GUY | –/207/–/627 |
-| 7 | LA JAVANAISE | – | C.AELBRECHT | –/432/24/218 |
-| 8 | AMKAR | – | T.GUINEHEUX | –/138/1704/935 |
-| 9 | DSCHINGIS ARROW | – | Y.MADEC | –/296/67/262 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 1 | CATHERINE'S GIFT | 4,6 | 5,88 | -21,7 % | JD.MANCEAU | –/40/54/1582 |
+| 7 | LA JAVANAISE | 5,4 | 6,09 | -11,4 % | C.AELBRECHT | –/432/24/218 |
+| 3 | COEUR DE ROUME | 7,2 | 8,47 | -15,0 % | P.LOTOUT | –/314/1452/2190 |
+| 6 | KERDINA | 7,3 | 7,61 | -4,1 % | F.GUY | –/207/–/627 |
+| 9 | DSCHINGIS ARROW | 7,4 | 8,25 | -10,3 % | Y.MADEC | –/296/67/262 |
+| 5 | RIGEL | 8,3 | 10,69 | -22,3 % | T.MARLIN | –/27/117/2696 |
+| 8 | AMKAR | 12 | 16,53 | -27,4 % | T.GUINEHEUX | –/138/1704/935 |
+| 2 | SOLDIERS CHORUS | 15 | 20,05 | -25,2 % | S.CASTELA | –/12/59/897 |
+| 4 | MOURAT | 16 | 21,63 | -26,0 % | G.DANLOUX | –/28/17/16 |
 
 ### 2. PRIX DU PEVELE
 
