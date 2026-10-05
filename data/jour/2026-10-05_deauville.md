@@ -26,19 +26,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 2. PRIX DU PEVELE
 
-*17h14 · plat · 2500 m · 9 partants · cotes à T−25:58*
+*17h14 · plat · 2500 m · 9 partants · cotes à T−21:19*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 2 | MARCHEMALO | 2,9 | 3,49 | -16,8 % | G.MEURY | 68/15/267/379 |
-| 6 | ORION ROCK | 5,5 | 5,92 | -7,2 % | P.CHEYER | 109/84/46/2313 |
-| 8 | EL CANEY | 6 | 6,91 | -13,2 % | L.POGGIONOVO | 80/53/3260/62 |
-| 5 | APPLEBLOSSOMWHITE | 7,8 | 10,00 | -22,0 % | M.VELON | 28/12/3168/367 |
-| 4 | MERKUR | 12 | 13,64 | -12,0 % | R.MANGIONE | 78/15/12/16 |
-| 9 | STARAC | 12 | 15,53 | -22,8 % | M.GRANDIN | 3/45/517/901 |
-| 3 | SONNAZ | 14 | 18,63 | -24,8 % | T.BACHELOT | 16/56/955/1346 |
-| 7 | CHAIN OF COMMAND | 20 | 24,70 | -19,0 % | J.MOUTARD | 61/68/3210/200 |
-| 1 | KING MOTIF | 25 | 39,26 | -36,3 % | A.BOURGEAIS 5e | 86/26/7/3191 |
+| 2 | MARCHEMALO | 3,1 | 3,73 | -16,9 % | G.MEURY | 68/15/267/379 |
+| 6 | ORION ROCK | 5,9 | 6,41 | -7,9 % | P.CHEYER | 109/84/46/2313 |
+| 8 | EL CANEY | 6,1 | 7,04 | -13,3 % | L.POGGIONOVO | 80/53/3260/62 |
+| 5 | APPLEBLOSSOMWHITE | 6,7 | 8,36 | -19,9 % | M.VELON | 28/12/3168/367 |
+| 4 | MERKUR | 9,4 | 10,25 | -8,3 % | R.MANGIONE | 78/15/12/16 |
+| 9 | STARAC | 12 | 15,52 | -22,7 % | M.GRANDIN | 3/45/517/901 |
+| 3 | SONNAZ | 15 | 20,18 | -25,7 % | T.BACHELOT | 16/56/955/1346 |
+| 7 | CHAIN OF COMMAND | 22 | 27,54 | -20,1 % | J.MOUTARD | 61/68/3210/200 |
+| 1 | KING MOTIF | 24 | 37,43 | -35,9 % | A.BOURGEAIS 5e | 86/26/7/3191 |
 
 ### 3. PRIX DE L'AVESNOIS
 
