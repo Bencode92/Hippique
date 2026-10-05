@@ -4,62 +4,62 @@
   "reunion": 4,
   "heure_depart": 1791226860000,
   "distance": 1900,
-  "scraped_at": "2026-10-05T20:55:00.634227",
-  "minutes_avant_depart": 6,
+  "scraped_at": "2026-10-05T20:57:40.574879",
+  "minutes_avant_depart": 3,
   "participants": [
     {
       "numPmu": 1,
       "nom": "TIEGO THE FIRST",
-      "cote_live": 2.6,
+      "cote_live": 2.8,
       "cote_reference": 2.8,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791226474000
+      "timestamp_cote": 1791226650000
     },
     {
       "numPmu": 2,
       "nom": "LORAXED",
-      "cote_live": 5.9,
+      "cote_live": 6.2,
       "cote_reference": 7.7,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791226474000
+      "timestamp_cote": 1791226650000
     },
     {
       "numPmu": 3,
       "nom": "CLIMATE CHANGE",
-      "cote_live": 3.4,
+      "cote_live": 3.5,
       "cote_reference": 3.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791226474000
+      "timestamp_cote": 1791226650000
     },
     {
       "numPmu": 4,
       "nom": "DARK ROCKSTER",
-      "cote_live": 19.0,
+      "cote_live": 22.0,
       "cote_reference": 12.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791226474000
+      "timestamp_cote": 1791226650000
     },
     {
       "numPmu": 5,
       "nom": "WAKABURN",
-      "cote_live": 16.0,
+      "cote_live": 14.0,
       "cote_reference": 10.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791226474000
+      "timestamp_cote": 1791226650000
     },
     {
       "numPmu": 6,
       "nom": "AGILE",
-      "cote_live": 5.2,
+      "cote_live": 4.3,
       "cote_reference": 4.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791226474000
+      "timestamp_cote": 1791226650000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -146,6 +146,54 @@
         "4": 19.0,
         "5": 16.0,
         "6": 5.2
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T20:55:40.903802",
+      "minutes_avant_depart": 5.321942316666666,
+      "cotes": {
+        "1": 2.7,
+        "2": 5.9,
+        "3": 3.3,
+        "4": 19.0,
+        "5": 16.0,
+        "6": 5.4
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T20:56:20.530840",
+      "minutes_avant_depart": 4.66148075,
+      "cotes": {
+        "1": 2.7,
+        "2": 5.8,
+        "3": 3.3,
+        "4": 19.0,
+        "5": 14.0,
+        "6": 5.6
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T20:57:00.515843",
+      "minutes_avant_depart": 3.9948124666666667,
+      "cotes": {
+        "1": 2.8,
+        "2": 6.3,
+        "3": 3.5,
+        "4": 22.0,
+        "5": 14.0,
+        "6": 4.3
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T20:57:40.574879",
+      "minutes_avant_depart": 3.328143916666667,
+      "cotes": {
+        "1": 2.8,
+        "2": 6.2,
+        "3": 3.5,
+        "4": 22.0,
+        "5": 14.0,
+        "6": 4.3
       }
     }
   ]
