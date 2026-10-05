@@ -4,98 +4,98 @@
   "reunion": 4,
   "heure_depart": 1791225000000,
   "distance": 1900,
-  "scraped_at": "2026-10-05T20:00:20.649860",
-  "minutes_avant_depart": 30,
+  "scraped_at": "2026-10-05T20:04:21.076537",
+  "minutes_avant_depart": 26,
   "participants": [
     {
       "numPmu": 1,
       "nom": "SAINT HELLIER",
       "cote_live": 12.0,
       "cote_reference": 12.0,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791223216000
+      "timestamp_cote": 1791223436000
     },
     {
       "numPmu": 2,
       "nom": "CHARLESQUINT",
-      "cote_live": 12.0,
+      "cote_live": 13.0,
       "cote_reference": 12.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791223216000
+      "timestamp_cote": 1791223436000
     },
     {
       "numPmu": 3,
       "nom": "WOFF",
       "cote_live": 10.0,
       "cote_reference": 10.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791223216000
+      "timestamp_cote": 1791223436000
     },
     {
       "numPmu": 4,
       "nom": "USER AMISTOSO",
-      "cote_live": 14.0,
+      "cote_live": 15.0,
       "cote_reference": 14.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791223216000
+      "timestamp_cote": 1791223436000
     },
     {
       "numPmu": 5,
       "nom": "LISEO",
       "cote_live": 3.4,
       "cote_reference": 3.4,
-      "tendance": "-",
+      "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791223216000
+      "timestamp_cote": 1791223436000
     },
     {
       "numPmu": 6,
       "nom": "GOLFEUR",
-      "cote_live": 14.0,
+      "cote_live": 16.0,
       "cote_reference": 14.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791223216000
+      "timestamp_cote": 1791223436000
     },
     {
       "numPmu": 7,
       "nom": "COSMO BEAU",
-      "cote_live": 6.8,
+      "cote_live": 5.4,
       "cote_reference": 6.8,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791223216000
+      "timestamp_cote": 1791223436000
     },
     {
       "numPmu": 8,
       "nom": "VOLCANO",
-      "cote_live": 6.5,
+      "cote_live": 7.0,
       "cote_reference": 6.5,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791223216000
+      "timestamp_cote": 1791223436000
     },
     {
       "numPmu": 9,
       "nom": "SIETE MISTERIOS",
-      "cote_live": 19.0,
+      "cote_live": 20.0,
       "cote_reference": 19.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791223216000
+      "timestamp_cote": 1791223436000
     },
     {
       "numPmu": 10,
       "nom": "MURRAY",
-      "cote_live": 9.9,
+      "cote_live": 10.0,
       "cote_reference": 9.9,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791223216000
+      "timestamp_cote": 1791223436000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -114,6 +114,22 @@
         "8": 6.5,
         "9": 19.0,
         "10": 9.9
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T20:04:21.076537",
+      "minutes_avant_depart": 25.6616272,
+      "cotes": {
+        "1": 12.0,
+        "2": 13.0,
+        "3": 10.0,
+        "4": 15.0,
+        "5": 3.4,
+        "6": 16.0,
+        "7": 5.4,
+        "8": 7.0,
+        "9": 20.0,
+        "10": 10.0
       }
     }
   ]

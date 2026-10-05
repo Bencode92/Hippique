@@ -137,20 +137,20 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DES WEPPES
 
-*20h30 · plat · 1900 m · 10 partants · cotes à T−29:39*
+*20h30 · plat · 1900 m · 10 partants · cotes à T−25:39*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 5 | LISEO | 3,4 | 4 | 3,71 | -8,3 % | J.MOUTARD | 61/94/1735/949 |
-| 8 | VOLCANO | 6,5 | 7,1 | 7,04 | -7,6 % | P.BAZIRE | 58/124/30/100 |
-| 7 | COSMO BEAU | 6,8 | 6,8 | 7,60 | -10,5 % | M.MARQUETTE | 54/14/218/100 |
-| 10 | MURRAY | 9,9 | 10 | 10,78 | -8,1 % | C.PACAUT | 48/501/3852/1483 |
-| 3 | WOFF | 10 | 8,6 | 13,53 | -26,1 % | W.LEVESQUE | 79/94/1/164 |
-| 1 | SAINT HELLIER | 12 | 9,5 | 14,97 | -19,9 % | A.DUQUESNOY | 121/28/8/16 |
-| 2 | CHARLESQUINT | 12 | 11 | 14,33 | -16,3 % | R.MANGIONE | 78/15/18/16 |
-| 4 | USER AMISTOSO | 14 | 15 | 15,06 | -7,0 % | C.BELMONT | 171/192/262/185 |
-| 6 | GOLFEUR | 14 | 10 | 15,73 | -11,0 % | T.BREBION | 99/44/1/1071 |
-| 9 | SIETE MISTERIOS | 19 | 19 | 25,62 | -25,9 % | L.BAILS | 77/146/31/1692 |
+| 5 | LISEO | 3,4 | 4 | 3,72 | -8,6 % | J.MOUTARD | 61/94/1735/949 |
+| 7 | COSMO BEAU | 5,4 | 6,8 | 5,43 | -0,5 % | M.MARQUETTE | 54/14/218/100 |
+| 8 | VOLCANO | 7 | 7,1 | 7,68 | -8,9 % | P.BAZIRE | 58/124/30/100 |
+| 3 | WOFF | 10 | 8,6 | 13,57 | -26,3 % | W.LEVESQUE | 79/94/1/164 |
+| 10 | MURRAY | 10 | 10 | 10,94 | -8,6 % | C.PACAUT | 48/501/3852/1483 |
+| 1 | SAINT HELLIER | 12 | 9,5 | 15,03 | -20,1 % | A.DUQUESNOY | 121/28/8/16 |
+| 2 | CHARLESQUINT | 13 | 11 | 15,79 | -17,7 % | R.MANGIONE | 78/15/18/16 |
+| 4 | USER AMISTOSO | 15 | 15 | 16,36 | -8,3 % | C.BELMONT | 171/192/262/185 |
+| 6 | GOLFEUR | 16 | 10 | 18,43 | -13,2 % | T.BREBION | 99/44/1/1071 |
+| 9 | SIETE MISTERIOS | 20 | 19 | 27,29 | -26,7 % | L.BAILS | 77/146/31/1692 |
 
 ### 9. PRIX DU CAMBRESIS
 
