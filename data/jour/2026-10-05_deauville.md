@@ -154,13 +154,13 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 9. PRIX DU CAMBRESIS
 
-*21h00 · plat · 1900 m · 6 partants · cotes à T−3:19*
+*21h00 · plat · 1900 m · 6 partants · cotes à T−0:39*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 1 | TIEGO THE FIRST | 2,8 | 2,5 | 3,38 | -17,2 % | M.GUYON 4e | 4/19/90/– |
-| 3 | CLIMATE CHANGE | 3,5 | 3,8 | 3,54 | -1,2 % | T.BACHELOT | 16/17/271/602 |
-| 6 | AGILE | 4,3 | 8 | 4,71 | -8,7 % | M.VELON | 28/201/3331/– |
-| 2 | LORAXED | 6,2 | 7,8 | 6,65 | -6,8 % | A.CRASTUS | 17/120/1167/103 |
-| 5 | WAKABURN | 14 | 8,9 | 18,36 | -23,7 % | M.GRANDIN | 3/108/955/84 |
-| 4 | DARK ROCKSTER | 22 | 8,9 | 30,29 | -27,4 % | C.PACAUT | 48/17/2120/40 |
+| 1 | TIEGO THE FIRST | 2,2 | 2,5 | 2,35 | -6,4 % | M.GUYON 4e | 4/19/90/– |
+| 3 | CLIMATE CHANGE | 2,7 | 3,8 | 2,85 | -5,4 % | T.BACHELOT | 16/17/271/602 |
+| 6 | AGILE | 6,7 | 8 | 7,76 | -13,6 % | M.VELON | 28/201/3331/– |
+| 2 | LORAXED | 9,5 | 7,8 | 10,90 | -12,8 % | A.CRASTUS | 17/120/1167/103 |
+| 5 | WAKABURN | 22 | 8,9 | 34,14 | -35,6 % | M.GRANDIN | 3/108/955/84 |
+| 4 | DARK ROCKSTER | 33 | 8,9 | 48,11 | -31,4 % | C.PACAUT | 48/17/2120/40 |
