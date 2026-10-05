@@ -1,6 +1,6 @@
 # DEAUVILLE — 05/10/2026
 
-9 courses. 7 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 8 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -118,39 +118,39 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DU PLOUICH
 
-*20h00 · plat · 1900 m · 12 partants · cotes à T−1:58*
+*20h00 · plat · 1900 m · 12 partants · cotes à T−0:40*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | DEUX PONTS | 1,6 | 3,4 | 1,66 | -3,4 % | L.POGGIONOVO | 80/79/3138/810 |
-| 3 | STRATOVULCANO | 5,2 | 9 | 6,23 | -16,5 % | J.MOUTARD | 61/19/3429/151 |
-| 5 | RUE RECAMIER | 13 | 8,5 | 16,22 | -19,9 % | T.BREBION | 99/44/131/295 |
-| 11 | SPARKS OF LOVE | 17 | 10 | 22,19 | -23,4 % | C.PACAUT | 48/53/19/62 |
-| 8 | GARIGA | 20 | 17 | 25,61 | -21,9 % | S.TISON | 98/87/84/1975 |
-| 1 | MONARCO | 23 | 17 | 32,97 | -30,2 % | G.MEURY | 68/15/76/16 |
-| 6 | VILLA ADRIENNE | 28 | 8,1 | 42,32 | -33,8 % | G.ROTH LE VAILLANT | 130/8/18/295 |
-| 9 | CORYPHEENE | 38 | 20 | 59,63 | -36,3 % | R.THOMAS | 75/296/78/3358 |
-| 7 | ALTIA | 39 | 10 | 57,08 | -31,7 % | C.RAIMBAULT | 84/26/584/696 |
-| 12 | PRIMA O POI | 78 | 24 | 120,12 | -35,1 % | E.CORALLO | 57/127/48/– |
-| 4 | FAUSTIMINE | 83 | 16 | 128,11 | -35,2 % | L.BAILS | 77/135/532/2322 |
-| 10 | GAMBERRA | 87 | 34 | 141,06 | -38,3 % | M.PIEN | 150/15/15/36 |
+| 2 | DEUX PONTS | 1,6 | 3,4 | 1,65 | -3,1 % | L.POGGIONOVO | 80/79/3138/810 |
+| 3 | STRATOVULCANO | 5,4 | 9 | 6,47 | -16,5 % | J.MOUTARD | 61/19/3429/151 |
+| 5 | RUE RECAMIER | 13 | 8,5 | 16,14 | -19,5 % | T.BREBION | 99/44/131/295 |
+| 11 | SPARKS OF LOVE | 17 | 10 | 22,09 | -23,0 % | C.PACAUT | 48/53/19/62 |
+| 1 | MONARCO | 20 | 17 | 27,93 | -28,4 % | G.MEURY | 68/15/76/16 |
+| 8 | GARIGA | 20 | 17 | 25,49 | -21,5 % | S.TISON | 98/87/84/1975 |
+| 6 | VILLA ADRIENNE | 28 | 8,1 | 42,13 | -33,5 % | G.ROTH LE VAILLANT | 130/8/18/295 |
+| 9 | CORYPHEENE | 36 | 20 | 55,90 | -35,6 % | R.THOMAS | 75/296/78/3358 |
+| 7 | ALTIA | 42 | 10 | 61,66 | -31,9 % | C.RAIMBAULT | 84/26/584/696 |
+| 12 | PRIMA O POI | 86 | 24 | 132,33 | -35,0 % | E.CORALLO | 57/127/48/– |
+| 4 | FAUSTIMINE | 94 | 16 | 144,96 | -35,2 % | L.BAILS | 77/135/532/2322 |
+| 10 | GAMBERRA | 97 | 34 | 157,02 | -38,2 % | M.PIEN | 150/15/15/36 |
 
 ### 8. PRIX DES WEPPES
 
-*20h30 · plat · 1900 m · 10 partants · cotes de l'extraction*
+*20h30 · plat · 1900 m · 10 partants · cotes à T−29:39*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 5 | LISEO | 4 | 4,58 | -12,7 % | J.MOUTARD | 61/94/1735/949 |
-| 7 | COSMO BEAU | 6,8 | 7,68 | -11,5 % | M.MARQUETTE | 54/14/218/100 |
-| 8 | VOLCANO | 7,1 | 7,87 | -9,8 % | P.BAZIRE | 58/124/30/100 |
-| 3 | WOFF | 8,6 | 11,45 | -24,9 % | W.LEVESQUE | 79/94/1/164 |
-| 1 | SAINT HELLIER | 9,5 | 11,52 | -17,5 % | A.DUQUESNOY | 121/28/8/16 |
-| 6 | GOLFEUR | 10 | 10,76 | -7,1 % | T.BREBION | 99/44/1/1071 |
-| 10 | MURRAY | 10 | 11,03 | -9,3 % | C.PACAUT | 48/501/3852/1483 |
-| 2 | CHARLESQUINT | 11 | 13,10 | -16,0 % | R.MANGIONE | 78/15/18/16 |
-| 4 | USER AMISTOSO | 15 | 16,50 | -9,1 % | C.BELMONT | 171/192/262/185 |
-| 9 | SIETE MISTERIOS | 19 | 25,92 | -26,7 % | L.BAILS | 77/146/31/1692 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 5 | LISEO | 3,4 | 4 | 3,71 | -8,3 % | J.MOUTARD | 61/94/1735/949 |
+| 8 | VOLCANO | 6,5 | 7,1 | 7,04 | -7,6 % | P.BAZIRE | 58/124/30/100 |
+| 7 | COSMO BEAU | 6,8 | 6,8 | 7,60 | -10,5 % | M.MARQUETTE | 54/14/218/100 |
+| 10 | MURRAY | 9,9 | 10 | 10,78 | -8,1 % | C.PACAUT | 48/501/3852/1483 |
+| 3 | WOFF | 10 | 8,6 | 13,53 | -26,1 % | W.LEVESQUE | 79/94/1/164 |
+| 1 | SAINT HELLIER | 12 | 9,5 | 14,97 | -19,9 % | A.DUQUESNOY | 121/28/8/16 |
+| 2 | CHARLESQUINT | 12 | 11 | 14,33 | -16,3 % | R.MANGIONE | 78/15/18/16 |
+| 4 | USER AMISTOSO | 14 | 15 | 15,06 | -7,0 % | C.BELMONT | 171/192/262/185 |
+| 6 | GOLFEUR | 14 | 10 | 15,73 | -11,0 % | T.BREBION | 99/44/1/1071 |
+| 9 | SIETE MISTERIOS | 19 | 19 | 25,62 | -25,9 % | L.BAILS | 77/146/31/1692 |
 
 ### 9. PRIX DU CAMBRESIS
 

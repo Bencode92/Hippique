@@ -4,17 +4,17 @@
   "reunion": 4,
   "heure_depart": 1791223260000,
   "distance": 1900,
-  "scraped_at": "2026-10-05T19:59:01.866679",
-  "minutes_avant_depart": 2,
+  "scraped_at": "2026-10-05T20:00:20.374328",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MONARCO",
-      "cote_live": 23.0,
+      "cote_live": 20.0,
       "cote_reference": 17.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791223130000
+      "timestamp_cote": 1791223210000
     },
     {
       "numPmu": 2,
@@ -23,25 +23,25 @@
       "cote_reference": 2.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791223130000
+      "timestamp_cote": 1791223210000
     },
     {
       "numPmu": 3,
       "nom": "STRATOVULCANO",
-      "cote_live": 5.2,
+      "cote_live": 5.4,
       "cote_reference": 8.5,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791223130000
+      "timestamp_cote": 1791223210000
     },
     {
       "numPmu": 4,
       "nom": "FAUSTIMINE",
-      "cote_live": 83.0,
+      "cote_live": 94.0,
       "cote_reference": 25.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791223130000
+      "timestamp_cote": 1791223210000
     },
     {
       "numPmu": 5,
@@ -50,25 +50,25 @@
       "cote_reference": 11.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791223130000
+      "timestamp_cote": 1791223210000
     },
     {
       "numPmu": 6,
       "nom": "VILLA ADRIENNE",
       "cote_live": 28.0,
       "cote_reference": 13.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791223130000
+      "timestamp_cote": 1791223210000
     },
     {
       "numPmu": 7,
       "nom": "ALTIA",
-      "cote_live": 39.0,
+      "cote_live": 42.0,
       "cote_reference": 13.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791223130000
+      "timestamp_cote": 1791223210000
     },
     {
       "numPmu": 8,
@@ -77,25 +77,25 @@
       "cote_reference": 13.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791223130000
+      "timestamp_cote": 1791223210000
     },
     {
       "numPmu": 9,
       "nom": "CORYPHEENE",
-      "cote_live": 38.0,
+      "cote_live": 36.0,
       "cote_reference": 16.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791223130000
+      "timestamp_cote": 1791223210000
     },
     {
       "numPmu": 10,
       "nom": "GAMBERRA",
-      "cote_live": 87.0,
+      "cote_live": 97.0,
       "cote_reference": 53.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791223130000
+      "timestamp_cote": 1791223210000
     },
     {
       "numPmu": 11,
@@ -104,16 +104,16 @@
       "cote_reference": 9.3,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791223130000
+      "timestamp_cote": 1791223210000
     },
     {
       "numPmu": 12,
       "nom": "PRIMA O POI",
-      "cote_live": 78.0,
+      "cote_live": 86.0,
       "cote_reference": 26.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791223130000
+      "timestamp_cote": 1791223210000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -350,6 +350,42 @@
         "10": 87.0,
         "11": 17.0,
         "12": 78.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T19:59:40.357162",
+      "minutes_avant_depart": 1.3283065166666668,
+      "cotes": {
+        "1": 23.0,
+        "2": 1.6,
+        "3": 5.2,
+        "4": 92.0,
+        "5": 14.0,
+        "6": 30.0,
+        "7": 42.0,
+        "8": 21.0,
+        "9": 40.0,
+        "10": 97.0,
+        "11": 17.0,
+        "12": 82.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T20:00:20.374328",
+      "minutes_avant_depart": 0.6616386833333333,
+      "cotes": {
+        "1": 20.0,
+        "2": 1.6,
+        "3": 5.4,
+        "4": 94.0,
+        "5": 13.0,
+        "6": 28.0,
+        "7": 42.0,
+        "8": 20.0,
+        "9": 36.0,
+        "10": 97.0,
+        "11": 17.0,
+        "12": 86.0
       }
     }
   ]
