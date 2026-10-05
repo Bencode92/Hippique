@@ -118,22 +118,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DU PLOUICH
 
-*20h00 · plat · 1900 m · 12 partants · cotes à T−4:39*
+*20h00 · plat · 1900 m · 12 partants · cotes à T−1:58*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | DEUX PONTS | 2,3 | 3,4 | 2,08 | **+10,4 %** | L.POGGIONOVO | 80/79/3138/810 |
-| 3 | STRATOVULCANO | 6,5 | 9 | 7,87 | -17,4 % | J.MOUTARD | 61/19/3429/151 |
-| 11 | SPARKS OF LOVE | 10 | 10 | 11,66 | -14,3 % | C.PACAUT | 48/53/19/62 |
-| 5 | RUE RECAMIER | 11 | 8,5 | 13,04 | -15,6 % | T.BREBION | 99/44/131/295 |
-| 8 | GARIGA | 12 | 17 | 13,82 | -13,2 % | S.TISON | 98/87/84/1975 |
-| 1 | MONARCO | 14 | 17 | 16,55 | -15,4 % | G.MEURY | 68/15/76/16 |
-| 9 | CORYPHEENE | 18 | 20 | 26,07 | -31,0 % | R.THOMAS | 75/296/78/3358 |
-| 6 | VILLA ADRIENNE | 20 | 8,1 | 28,13 | -28,9 % | G.ROTH LE VAILLANT | 130/8/18/295 |
-| 7 | ALTIA | 25 | 10 | 33,87 | -26,2 % | C.RAIMBAULT | 84/26/584/696 |
-| 12 | PRIMA O POI | 39 | 24 | 55,87 | -30,2 % | E.CORALLO | 57/127/48/– |
-| 4 | FAUSTIMINE | 44 | 16 | 63,82 | -31,1 % | L.BAILS | 77/135/532/2322 |
-| 10 | GAMBERRA | 50 | 34 | 76,94 | -35,0 % | M.PIEN | 150/15/15/36 |
+| 2 | DEUX PONTS | 1,6 | 3,4 | 1,66 | -3,4 % | L.POGGIONOVO | 80/79/3138/810 |
+| 3 | STRATOVULCANO | 5,2 | 9 | 6,23 | -16,5 % | J.MOUTARD | 61/19/3429/151 |
+| 5 | RUE RECAMIER | 13 | 8,5 | 16,22 | -19,9 % | T.BREBION | 99/44/131/295 |
+| 11 | SPARKS OF LOVE | 17 | 10 | 22,19 | -23,4 % | C.PACAUT | 48/53/19/62 |
+| 8 | GARIGA | 20 | 17 | 25,61 | -21,9 % | S.TISON | 98/87/84/1975 |
+| 1 | MONARCO | 23 | 17 | 32,97 | -30,2 % | G.MEURY | 68/15/76/16 |
+| 6 | VILLA ADRIENNE | 28 | 8,1 | 42,32 | -33,8 % | G.ROTH LE VAILLANT | 130/8/18/295 |
+| 9 | CORYPHEENE | 38 | 20 | 59,63 | -36,3 % | R.THOMAS | 75/296/78/3358 |
+| 7 | ALTIA | 39 | 10 | 57,08 | -31,7 % | C.RAIMBAULT | 84/26/584/696 |
+| 12 | PRIMA O POI | 78 | 24 | 120,12 | -35,1 % | E.CORALLO | 57/127/48/– |
+| 4 | FAUSTIMINE | 83 | 16 | 128,11 | -35,2 % | L.BAILS | 77/135/532/2322 |
+| 10 | GAMBERRA | 87 | 34 | 141,06 | -38,3 % | M.PIEN | 150/15/15/36 |
 
 ### 8. PRIX DES WEPPES
 
