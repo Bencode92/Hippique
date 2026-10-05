@@ -1,6 +1,6 @@
 # CORDEMAIS — 04/10/2026
 
-9 courses. Cotes de l'extraction, pas les cotes live — elles bougent.
+9 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
 *Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
@@ -8,7 +8,7 @@
 
 ### 1. PRIX INTERMARCHE ORVAULT
 
-*13h50 · attelé · 2050 m · 9 partants*
+*13h50 · attelé · 2050 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -24,7 +24,7 @@
 
 ### 2. PRIX COURSES DE MAURE DE BRETAGNE (GR.A)
 
-*14h20 · attelé · 2825 m · 14 partants*
+*14h20 · attelé · 2825 m · 14 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -45,7 +45,7 @@
 
 ### 3. PRIX SUPER U ST ETIENNE DE MONTLUC (GR.B)
 
-*14h50 · attelé · 2825 m · 13 partants*
+*14h50 · attelé · 2825 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -65,7 +65,7 @@
 
 ### 4. PRIX SOCIETE ARTKOSE
 
-*15h25 · attelé · 2825 m · 13 partants*
+*15h25 · attelé · 2825 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -85,7 +85,7 @@
 
 ### 5. PRIX GARAGE FAYEN (GR.A)
 
-*15h55 · attelé · 2650 m · 16 partants*
+*15h55 · attelé · 2650 m · 16 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -108,7 +108,7 @@
 
 ### 6. PRIX SOCIETE ATOUT ARBRES (GR.B)
 
-*16h35 · attelé · 2650 m · 16 partants*
+*16h35 · attelé · 2650 m · 16 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -131,7 +131,7 @@
 
 ### 7. PRIX SOCIETE GLT
 
-*17h08 · attelé · 2800 m · 16 partants*
+*17h08 · attelé · 2800 m · 16 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -154,7 +154,7 @@
 
 ### 8. PRIX SOCIETE ESTUTAIRE IMMOBILIER
 
-*17h37 · attelé · 2650 m · 16 partants*
+*17h37 · attelé · 2650 m · 16 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -177,7 +177,7 @@
 
 ### 9. PRIX DE LA FETE DES COURSES
 
-*18h05 · attelé · 2825 m · 14 partants*
+*18h05 · attelé · 2825 m · 14 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|

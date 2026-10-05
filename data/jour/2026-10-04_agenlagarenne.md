@@ -1,6 +1,6 @@
 # AGEN LA GARENNE — 04/10/2026
 
-8 courses. Cotes de l'extraction, pas les cotes live — elles bougent.
+8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
 *Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
@@ -8,7 +8,7 @@
 
 ### 1. PRIX EMILE LAROULANDIE
 
-*14h10 · attelé · 2625 m · 13 partants*
+*14h10 · attelé · 2625 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -28,7 +28,7 @@
 
 ### 2. PRIX ROGER AURIN
 
-*14h40 · attelé · 2625 m · 13 partants*
+*14h40 · attelé · 2625 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -48,7 +48,7 @@
 
 ### 3. PRIX HORTICULTURE PIERRE CARTE-FL (GR.A)
 
-*15h10 · attelé · 2575 m · 13 partants*
+*15h10 · attelé · 2575 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -68,7 +68,7 @@
 
 ### 4. PRIX DE GARONNE (GR.B)
 
-*15h40 · attelé · 2575 m · 13 partants*
+*15h40 · attelé · 2575 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -88,7 +88,7 @@
 
 ### 5. PRIX SIKI DU PADOUIN
 
-*16h25 · attelé · 2625 m · 15 partants*
+*16h25 · attelé · 2625 m · 15 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -110,7 +110,7 @@
 
 ### 6. PRIX MARCEL VAUTHIER
 
-*16h55 · attelé · 2575 m · 15 partants*
+*16h55 · attelé · 2575 m · 15 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -132,7 +132,7 @@
 
 ### 7. PRIX DE SAINT-HILAIRE-DE-LUSIGNAN
 
-*17h25 · attelé · 2625 m · 16 partants*
+*17h25 · attelé · 2625 m · 16 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -155,7 +155,7 @@
 
 ### 8. PRIX ROGER LAGENEBRE
 
-*17h55 · attelé · 2575 m · 11 partants*
+*17h55 · attelé · 2575 m · 11 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|

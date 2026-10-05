@@ -1,6 +1,6 @@
 # SAINT BRIEUC — 04/10/2026
 
-7 courses. Cotes de l'extraction, pas les cotes live — elles bougent.
+7 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -10,7 +10,7 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 1. PRIX DES BENEVOLES FLORIAN RENAULT ET GERARD LEVERGER
 
-*14h15 · plat · 1700 m · 10 partants*
+*14h15 · plat · 1700 m · 10 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
@@ -27,7 +27,7 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 2. PRIX DE SAINT-BRIEUC AGGLOMERATION
 
-*14h45 · plat · 2400 m · 8 partants*
+*14h45 · plat · 2400 m · 8 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
@@ -42,7 +42,7 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX D'ARMOR
 
-*15h17 · haies · 3600 m · 11 partants*
+*15h17 · haies · 3600 m · 11 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -60,7 +60,7 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX DE SAINT-BRIEUC
 
-*15h46 · plat · 2400 m · 10 partants*
+*15h46 · plat · 2400 m · 10 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
@@ -77,7 +77,7 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DU TREGOR - CHALLENGE APGO
 
-*16h30 · haies · 3600 m · 12 partants*
+*16h30 · haies · 3600 m · 12 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -96,7 +96,7 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DE LA FOIRE AUX POULAINS DE PLAINTEL
 
-*17h05 · plat · 2400 m · 9 partants*
+*17h05 · plat · 2400 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
@@ -112,7 +112,7 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE L'ARGOAT
 
-*17h30 · steeple · 3600 m · 7 partants*
+*17h30 · steeple · 3600 m · 7 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|

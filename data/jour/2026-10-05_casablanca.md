@@ -1,6 +1,6 @@
 # CASABLANCA — 05/10/2026
 
-5 courses (0 avec cotes). Cotes de l'extraction, pas les cotes live — elles bougent.
+5 courses (0 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -8,7 +8,7 @@
 
 ### 1. PRIX CREPPELANO
 
-*11h05 · plat · 1300 m · 9 partants*
+*11h05 · plat · 1300 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -24,7 +24,7 @@
 
 ### 2. PRIX PRINCE PAMIR
 
-*11h35 · plat · 1750 m · 11 partants*
+*11h35 · plat · 1750 m · 11 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -42,7 +42,7 @@
 
 ### 3. PRIX SILEX
 
-*12h07 · plat · 1900 m · 16 partants*
+*12h07 · plat · 1900 m · 16 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -65,7 +65,7 @@
 
 ### 4. PRIX TANDOR
 
-*12h39 · plat · 1300 m · 15 partants*
+*12h39 · plat · 1300 m · 15 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -87,7 +87,7 @@
 
 ### 5. PRIX AFTER-YOU
 
-*13h11 · plat · 1900 m · 13 partants*
+*13h11 · plat · 1900 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|

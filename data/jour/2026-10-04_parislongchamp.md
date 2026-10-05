@@ -1,6 +1,6 @@
 # PARISLONGCHAMP — 04/10/2026
 
-10 courses. Cotes de l'extraction, pas les cotes live — elles bougent.
+10 courses. 6 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -10,7 +10,7 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 1. QATAR PRIX MARCEL BOUSSAC - CRITERIUM DES POULICHES
 
-*13h33 · plat · 1600 m · 12 partants*
+*13h33 · plat · 1600 m · 12 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
@@ -29,46 +29,46 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 2. QATAR PRIX JEAN-LUC LAGARDERE
 
-*14h09 · plat · 1400 m · 10 partants*
+*14h09 · plat · 1400 m · 10 partants · cotes à T−0:17*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 1 | FOLSOM BLUES | 1,9 | 1,94 | -1,9 % | M.BARZALONA 🏆2e | 2/82/204/288 |
-| 6 | AVEC TOI | 3,8 | 4,04 | -5,9 % | PC.BOUDOT | 8/10/3086/503 |
-| 10 | AMUSINGLY | 9,3 | 11,55 | -19,5 % | C.KEANE | 153/1/3080/12 |
-| 9 | MAN'S BEST FRIEND | 12 | 14,27 | -15,9 % | RL.MOORE 🏆3e | 151/3/3113/– |
-| 3 | IMPERIAL STRIKE | 13 | 16,37 | -20,6 % | JW.DOYLE | 162/2/3153/– |
-| 4 | FLORIDA BAY | 32 | 52,15 | -38,6 % | W.BUICK 🏆4e | 168/3/3156/– |
-| 2 | BIG MONEY MAN | 38 | 56,07 | -32,2 % | M.GUYON | 4/10/2700/381 |
-| 7 | ALFRED WALLACE | 66 | 109,75 | -39,9 % | K.SHOEMARK | 279/103/3234/4947 |
-| 5 | CRUSHERMAN | 66 | 109,75 | -39,9 % | D.EGAN | 312/179/3104/– |
-| 8 | AIX LA CHAPELLE | 79 | 123,18 | -35,9 % | T.MARQUAND 🏆7e | 188/3/3086/– |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 1 | FOLSOM BLUES | 2 | 1,9 | 2,01 | -0,4 % | M.BARZALONA 🏆2e | 2/82/204/288 |
+| 6 | AVEC TOI | 3,6 | 3,8 | 3,81 | -5,6 % | PC.BOUDOT | 8/10/3086/503 |
+| 10 | AMUSINGLY | 9 | 9,3 | 11,10 | -18,9 % | C.KEANE | 153/1/3080/12 |
+| 3 | IMPERIAL STRIKE | 12 | 13 | 14,88 | -19,4 % | JW.DOYLE | 162/2/3153/– |
+| 9 | MAN'S BEST FRIEND | 14 | 12 | 17,06 | -17,9 % | RL.MOORE 🏆3e | 151/3/3113/– |
+| 4 | FLORIDA BAY | 31 | 32 | 50,25 | -38,3 % | W.BUICK 🏆4e | 168/3/3156/– |
+| 2 | BIG MONEY MAN | 33 | 38 | 50,15 | -34,2 % | M.GUYON | 4/10/2700/381 |
+| 5 | CRUSHERMAN | 54 | 66 | 92,78 | -41,8 % | D.EGAN | 312/179/3104/– |
+| 7 | ALFRED WALLACE | 58 | 66 | 95,53 | -39,3 % | K.SHOEMARK | 279/103/3234/4947 |
+| 8 | AIX LA CHAPELLE | 69 | 79 | 106,78 | -35,4 % | T.MARQUAND 🏆7e | 188/3/3086/– |
 
 ### 3. PRIX DE L'ABBAYE DE LONGCHAMP LONGINES
 
-*14h47 · plat · 1000 m · 15 partants*
+*14h47 · plat · 1000 m · 15 partants · cotes à T−0:17*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 12 | SHIRI | 4,6 | 5,09 | -9,6 % | M.BARZALONA 🏆1er | 2/1/214/345 |
-| 15 | NAANA'S SHADOW | 5,9 | 6,04 | -2,3 % | O.MURPHY 🏆3e | 144/311/3271/408 |
-| 9 | MISS YECHANCE | 7 | 7,33 | -4,5 % | J.NICHOLLS | –/42/3218/5902 |
-| 13 | TIME FOR SANDALS | 7,8 | 8,50 | -8,2 % | K.SHOEMARK | 279/259/3196/– |
-| 7 | MISSION CENTRAL | 9,1 | 10,81 | -15,8 % | RL.MOORE 🏆5e | 151/3/3201/– |
-| 2 | COROLLA POINT | 9,7 | 10,95 | -11,4 % | D.TUDHOPE | 245/221/–/– |
-| 8 | RUMSTAR | 13 | 13,53 | -3,9 % | R.HORNBY | 257/896/3180/5857 |
-| 6 | COVER UP | 25 | 28,74 | -13,0 % | W.BUICK 🏆6e | 168/35/–/– |
-| 5 | JAWWAL | 29 | 40,78 | -28,9 % | PC.BOUDOT | 8/105/3/1419 |
-| 11 | ARGENTINE TANGO | 34 | 48,76 | -30,3 % | DJ.ALLAN | 317/539/3445/994 |
-| 3 | REDORANGE | 41 | 52,20 | -21,5 % | R.RYAN | 215/815/3910/1989 |
-| 1 | AFJAN | 45 | 69,67 | -35,4 % | F.BUGHENAIM | 405/31/3/5 |
-| 10 | MONTEILLE | 56 | 73,49 | -23,8 % | C.DEMURO 🏆5e | 1/16/8/4 |
-| 4 | PONNTOS | 56 | 95,19 | -41,2 % | T.MARQUAND 🏆7e | 188/164/3740/126 |
-| 14 | LUNA A INBHIR NIS | 101 | 142,09 | -28,9 % | R.DAWSON | 315/311/–/408 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 12 | SHIRI | 3,9 | 4,6 | 4,29 | -9,1 % | M.BARZALONA 🏆1er | 2/1/214/345 |
+| 15 | NAANA'S SHADOW | 5,2 | 5,9 | 5,25 | -1,0 % | O.MURPHY 🏆3e | 144/311/3271/408 |
+| 13 | TIME FOR SANDALS | 7,9 | 7,8 | 8,63 | -8,5 % | K.SHOEMARK | 279/259/3196/– |
+| 7 | MISSION CENTRAL | 8,3 | 9,1 | 9,71 | -14,5 % | RL.MOORE 🏆5e | 151/3/3201/– |
+| 9 | MISS YECHANCE | 9,4 | 7 | 11,23 | -16,3 % | J.NICHOLLS | –/42/3218/5902 |
+| 8 | RUMSTAR | 12 | 13 | 12,33 | -2,7 % | R.HORNBY | 257/896/3180/5857 |
+| 2 | COROLLA POINT | 14 | 9,7 | 18,40 | -23,9 % | D.TUDHOPE | 245/221/–/– |
+| 5 | JAWWAL | 25 | 29 | 34,45 | -27,4 % | PC.BOUDOT | 8/105/3/1419 |
+| 11 | ARGENTINE TANGO | 34 | 34 | 48,77 | -30,3 % | DJ.ALLAN | 317/539/3445/994 |
+| 1 | AFJAN | 35 | 45 | 52,76 | -33,7 % | F.BUGHENAIM | 405/31/3/5 |
+| 6 | COVER UP | 40 | 25 | 53,44 | -25,1 % | W.BUICK 🏆6e | 168/35/–/– |
+| 10 | MONTEILLE | 44 | 56 | 56,60 | -22,3 % | C.DEMURO 🏆5e | 1/16/8/4 |
+| 4 | PONNTOS | 52 | 56 | 87,89 | -40,8 % | T.MARQUAND 🏆7e | 188/164/3740/126 |
+| 3 | REDORANGE | 80 | 41 | 117,35 | -31,8 % | R.RYAN | 215/815/3910/1989 |
+| 14 | LUNA A INBHIR NIS | 101 | 101 | 142,12 | -28,9 % | R.DAWSON | 315/311/–/408 |
 
 ### 4. QATAR ARABIAN WORLD CUP
 
-*15h25 · plat · 2000 m · 12 partants*
+*15h25 · plat · 2000 m · 12 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
@@ -87,30 +87,30 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. QATAR PRIX DE L'ARC DE TRIOMPHE
 
-*16h05 · plat · 2400 m · 16 partants*
+*16h05 · plat · 2400 m · 16 partants · cotes à T−0:20*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 1 | DARYZ | 2,3 | 2,24 | **+2,8 %** | M.BARZALONA 🏆1er | 2/1/2/1 |
-| 9 | KALPANA | 7,5 | 7,61 | -1,4 % | C.KEANE | 153/116/3080/27 |
-| 14 | MALTESE CROSS | 10 | 11,74 | -14,8 % | T.MARQUAND 🏆7e | 188/24/40/21 |
-| 15 | THUNDERING ON | 13 | 15,67 | -17,0 % | PC.BOUDOT | 8/82/–/5090 |
-| 16 | DIAMOND NECKLACE | 14 | 15,93 | -12,1 % | C.SOUMILLON 🏆2e | 7/3/12/– |
-| 11 | VARANDIR | 14 | 17,44 | -19,7 % | C.LECOEUVRE | 13/1/–/1 |
-| 12 | BENVENUTO CELLINI | 18 | 22,92 | -21,5 % | RL.MOORE 🏆5e | 151/3/3082/– |
-| 8 | MINNIE HAUK | 30 | 43,24 | -30,6 % | W.BUICK 🏆6e | 168/3/3340/523 |
-| 10 | FRIENDLY SOUL | 32 | 40,57 | -21,1 % | JW.DOYLE | 162/55/330/15 |
-| 5 | MEISHO TABARU | 43 | 51,29 | -16,2 % | Y.TAKE | 397/–/–/734 |
-| 7 | BAY CITY ROLLER | 51 | 70,91 | -28,1 % | O.MURPHY 🏆3e | 144/29/3642/104 |
-| 2 | SADDADD | 52 | 79,61 | -34,7 % | R.DAWSON | 315/510/–/431 |
-| 4 | ADMIRE TERRA | 64 | 75,16 | -14,8 % | C.DEMURO | 1/–/–/– |
-| 6 | ARROW EAGLE | 64 | 75,16 | -14,8 % | I.MENDIZABAL | 32/13/197/159 |
-| 3 | CHESTNUT ROCKET | 114 | 185,59 | -38,6 % | M.GRANDIN | 3/68/65/187 |
-| 13 | BRIGHT LIGHT | 136 | 200,09 | -32,0 % | B.MARIE | 69/176/408/922 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 1 | DARYZ | 2,4 | 2,3 | 2,30 | **+4,2 %** | M.BARZALONA 🏆1er | 2/1/2/1 |
+| 9 | KALPANA | 8,2 | 7,5 | 8,37 | -2,1 % | C.KEANE | 153/116/3080/27 |
+| 14 | MALTESE CROSS | 10 | 10 | 11,67 | -14,3 % | T.MARQUAND 🏆7e | 188/24/40/21 |
+| 15 | THUNDERING ON | 11 | 13 | 12,79 | -14,0 % | PC.BOUDOT | 8/82/–/5090 |
+| 16 | DIAMOND NECKLACE | 13 | 14 | 14,52 | -10,5 % | C.SOUMILLON 🏆2e | 7/3/12/– |
+| 11 | VARANDIR | 13 | 14 | 15,88 | -18,1 % | C.LECOEUVRE | 13/1/–/1 |
+| 12 | BENVENUTO CELLINI | 19 | 18 | 24,25 | -21,7 % | RL.MOORE 🏆5e | 151/3/3082/– |
+| 8 | MINNIE HAUK | 30 | 30 | 42,97 | -30,2 % | W.BUICK 🏆6e | 168/3/3340/523 |
+| 10 | FRIENDLY SOUL | 34 | 32 | 43,16 | -21,2 % | JW.DOYLE | 162/55/330/15 |
+| 5 | MEISHO TABARU | 47 | 43 | 56,20 | -16,4 % | Y.TAKE | 397/–/–/734 |
+| 6 | ARROW EAGLE | 54 | 64 | 65,33 | -17,3 % | I.MENDIZABAL | 32/13/197/159 |
+| 7 | BAY CITY ROLLER | 55 | 51 | 76,49 | -28,1 % | O.MURPHY 🏆3e | 144/29/3642/104 |
+| 4 | ADMIRE TERRA | 56 | 64 | 64,79 | -13,6 % | C.DEMURO | 1/–/–/– |
+| 2 | SADDADD | 56 | 52 | 85,75 | -34,7 % | R.DAWSON | 315/510/–/431 |
+| 3 | CHESTNUT ROCKET | 97 | 114 | 156,68 | -38,1 % | M.GRANDIN | 3/68/65/187 |
+| 13 | BRIGHT LIGHT | 116 | 136 | 169,86 | -31,7 % | B.MARIE | 69/176/408/922 |
 
 ### 6. PRIX DE L'OPERA LONGINES
 
-*16h55 · plat · 2000 m · 9 partants*
+*16h55 · plat · 2000 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
@@ -126,22 +126,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. QATAR PRIX DE LA FORET
 
-*17h30 · plat · 1400 m · 8 partants*
+*17h30 · plat · 1400 m · 8 partants · cotes à T−0:13*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 4 | THESECRETADVERSARY | 3,6 | 3,98 | -9,4 % | C.SOUMILLON 🏆4e | 7/98/3082/296 |
-| 8 | TRUE LOVE | 4,1 | 4,35 | -5,8 % | RL.MOORE 🏆3e | 151/3/3082/520 |
-| 2 | SAMANGAN | 4,4 | 4,60 | -4,2 % | M.BARZALONA 🏆2e | 2/1/2/1 |
-| 5 | NIGHTTIME | 5,8 | 6,63 | -12,5 % | M.GUYON | 4/10/1/2 |
-| 1 | MARVELMAN | 8,9 | 10,01 | -11,1 % | P.J..MCDONALD | 256/116/3201/381 |
-| 3 | PUERTO RICO | 22 | 30,66 | -28,3 % | W.BUICK 🏆4e | 168/3/4182/520 |
-| 7 | SHOWNA | 25 | 36,41 | -31,3 % | M.GRANDIN | 3/60/4/229 |
-| 6 | MY CALYX CEN | 31 | 43,25 | -28,3 % | A.LEMAITRE 🏆1er | 11/78/25/22 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 2 | SAMANGAN | 3,7 | 4,4 | 4,23 | -12,5 % | M.BARZALONA 🏆2e | 2/1/2/1 |
+| 8 | TRUE LOVE | 4 | 4,1 | 4,23 | -5,4 % | RL.MOORE 🏆3e | 151/3/3082/520 |
+| 4 | THESECRETADVERSARY | 4,8 | 3,6 | 5,24 | -8,3 % | C.SOUMILLON 🏆4e | 7/98/3082/296 |
+| 5 | NIGHTTIME | 5,1 | 5,8 | 5,95 | -14,3 % | M.GUYON | 4/10/1/2 |
+| 1 | MARVELMAN | 12 | 8,9 | 14,15 | -15,2 % | P.J..MCDONALD | 256/116/3201/381 |
+| 7 | SHOWNA | 19 | 25 | 26,46 | -28,2 % | M.GRANDIN | 3/60/4/229 |
+| 3 | PUERTO RICO | 20 | 22 | 27,40 | -27,0 % | W.BUICK 🏆4e | 168/3/4182/520 |
+| 6 | MY CALYX CEN | 26 | 31 | 37,05 | -29,8 % | A.LEMAITRE 🏆1er | 11/78/25/22 |
 
 ### 8. QATAR GRAND HANDICAP DES FLYERS PRESENTE PAR RMC
 
-*18h03 · plat · 1400 m · 16 partants*
+*18h03 · plat · 1400 m · 16 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
@@ -164,46 +164,46 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 9. QATAR PRIX DU FESTIVAL DES NATIONS
 
-*18h37 · plat · 1400 m · 14 partants*
+*18h37 · plat · 1400 m · 14 partants · cotes à T−0:31*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 14 | NADIR | 3,2 | 3,48 | -8,1 % | C.DEMURO | 1/22/17/106 |
-| 12 | ROZARION | 4,7 | 5,14 | -8,6 % | PC.BOUDOT 2e | 8/23/309/842 |
-| 5 | LAITH | 7,5 | 8,23 | -8,9 % | A.ORANI | 5/9/3/972 |
-| 6 | PIEMONT | 10 | 10,83 | -7,6 % | T.PICCONE | 9/105/3254/101 |
-| 11 | GALORD | 13 | 16,33 | -20,4 % | E.HARDOUIN | 27/89/4/464 |
-| 2 | PRINCE AUBOIS | 17 | 22,35 | -23,9 % | S.PASQUIER | 23/149/385/1939 |
-| 1 | HEYBETLI | 18 | 25,01 | -28,0 % | B.MARIE | 69/68/3/149 |
-| 7 | ZAKOSHA | 23 | 28,90 | -20,4 % | A.POUCHIN | 6/14/17/434 |
-| 10 | FREJA | 23 | 31,71 | -27,5 % | A.LEMAITRE | 11/45/13/89 |
-| 3 | CHALDERO | 32 | 42,20 | -24,2 % | T.BACHELOT | 16/164/100/126 |
-| 8 | YOKEN | 40 | 46,96 | -14,8 % | R. MANGIONE | 78/239/158/757 |
-| 13 | PREMONITION | 44 | 62,71 | -29,8 % | M.GRANDIN | 3/92/76/382 |
-| 4 | CHIRICCO | 48 | 66,05 | -27,3 % | A.MADAMET | 10/34/20/99 |
-| 9 | CANENA | 50 | 66,92 | -25,3 % | A.WERLE | 29/62/28/1071 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 14 | NADIR | 2,9 | 3,2 | 3,15 | -7,8 % | C.DEMURO | 1/22/17/106 |
+| 12 | ROZARION | 4,8 | 4,7 | 5,24 | -8,4 % | PC.BOUDOT 2e | 8/23/309/842 |
+| 5 | LAITH | 7,2 | 7,5 | 7,81 | -7,9 % | A.ORANI | 5/9/3/972 |
+| 6 | PIEMONT | 12 | 10 | 13,31 | -9,9 % | T.PICCONE | 9/105/3254/101 |
+| 11 | GALORD | 14 | 13 | 17,72 | -21,0 % | E.HARDOUIN | 27/89/4/464 |
+| 2 | PRINCE AUBOIS | 18 | 17 | 23,76 | -24,3 % | S.PASQUIER | 23/149/385/1939 |
+| 1 | HEYBETLI | 23 | 18 | 33,06 | -30,4 % | B.MARIE | 69/68/3/149 |
+| 10 | FREJA | 23 | 23 | 31,55 | -27,1 % | A.LEMAITRE | 11/45/13/89 |
+| 7 | ZAKOSHA | 24 | 23 | 30,18 | -20,5 % | A.POUCHIN | 6/14/17/434 |
+| 13 | PREMONITION | 37 | 44 | 51,54 | -28,2 % | M.GRANDIN | 3/92/76/382 |
+| 8 | YOKEN | 37 | 40 | 42,88 | -13,7 % | R. MANGIONE | 78/239/158/757 |
+| 4 | CHIRICCO | 41 | 48 | 55,31 | -25,9 % | A.MADAMET | 10/34/20/99 |
+| 9 | CANENA | 43 | 50 | 56,50 | -23,9 % | A.WERLE | 29/62/28/1071 |
+| 3 | CHALDERO | 53 | 32 | 69,78 | -24,0 % | T.BACHELOT | 16/164/100/126 |
 
 ### 10. QATAR PRIX DE LA PLACE DE L'ETOILE
 
-*19h09 · plat · 2000 m · 18 partants*
+*19h09 · plat · 2000 m · 18 partants · cotes à T−0:31*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 9 | SILENT WARNING | 4,3 | 4,59 | -6,3 % | M.BARZALONA | 2/1/3107/8 |
-| 10 | BIG LOG | 5 | 5,31 | -5,8 % | S.DE SOUSA | 177/74/140/163 |
-| 1 | ORANDI | 7,4 | 8,07 | -8,2 % | PC. BOUDOT | 8/894/607/– |
-| 2 | CARAMELITO | 8,4 | 9,33 | -10,0 % | T.BACHELOT | 16/30/342/371 |
-| 3 | GERARD TER BORCH | 12 | 14,14 | -15,2 % | A.HAMELIN | 22/23/42/1793 |
-| 8 | PRINCE DES VILLES | 16 | 20,37 | -21,4 % | M.GUYON 3e | 4/40/258/40 |
-| 12 | YMEEELIH | 17 | 22,68 | -25,0 % | A.MADAMET | 10/124/241/124 |
-| 6 | JOHNNY HAMMER | 20 | 21,42 | -6,6 % | O.ANDIGNE | 81/80/869/1842 |
-| 17 | SERENISSIMUS | 21 | 25,90 | -18,9 % | M.VELON | 28/1/12/1020 |
-| 5 | DIOPTASE | 30 | 40,79 | -26,4 % | C.DEMURO | 1/137/54/115 |
-| 4 | KOVROV | 37 | 47,10 | -21,4 % | A.ORANI 5e | 5/9/22/5032 |
-| 16 | MONONOF | 57 | 71,97 | -20,8 % | L.GROSSO | 136/60/–/1897 |
-| 7 | HUMAN EVOLUTION | 58 | 69,92 | -17,0 % | T.PICCONE | 9/6/3092/95 |
-| 11 | VANTA | 60 | 100,50 | -40,3 % | D.PROVOST | 33/91/392/– |
-| 14 | STARNBERG | 61 | 93,13 | -34,5 % | E.HARDOUIN | 27/4/20/17 |
-| 18 | LAKOTA BEAU | 69 | 106,12 | -35,0 % | L.BAILS | 77/66/879/921 |
-| 15 | AMERICAN GLORY | 71 | 86,59 | -18,0 % | A.CRASTUS | 17/18/802/432 |
-| 13 | PACIFISTE | 145 | 225,57 | -35,7 % | R.MANGIONE | 78/32/1/498 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 9 | SILENT WARNING | 4,2 | 4,3 | 4,45 | -5,6 % | M.BARZALONA | 2/1/3107/8 |
+| 10 | BIG LOG | 6,1 | 5 | 6,33 | -3,6 % | S.DE SOUSA | 177/74/140/163 |
+| 1 | ORANDI | 6,5 | 7,4 | 6,91 | -5,9 % | PC. BOUDOT | 8/894/607/– |
+| 2 | CARAMELITO | 8,1 | 8,4 | 8,89 | -8,9 % | T.BACHELOT | 16/30/342/371 |
+| 3 | GERARD TER BORCH | 13 | 12 | 14,75 | -11,9 % | A.HAMELIN | 22/23/42/1793 |
+| 8 | PRINCE DES VILLES | 15 | 16 | 18,77 | -20,1 % | M.GUYON 3e | 4/40/258/40 |
+| 17 | SERENISSIMUS | 18 | 21 | 22,55 | -20,2 % | M.VELON | 28/1/12/1020 |
+| 6 | JOHNNY HAMMER | 19 | 20 | 20,07 | -5,3 % | O.ANDIGNE | 81/80/869/1842 |
+| 12 | YMEEELIH | 20 | 17 | 27,22 | -26,5 % | A.MADAMET | 10/124/241/124 |
+| 4 | KOVROV | 33 | 37 | 41,21 | -19,9 % | A.ORANI 5e | 5/9/22/5032 |
+| 7 | HUMAN EVOLUTION | 48 | 58 | 56,69 | -15,3 % | T.PICCONE | 9/6/3092/95 |
+| 5 | DIOPTASE | 52 | 30 | 78,00 | -33,3 % | C.DEMURO | 1/137/54/115 |
+| 16 | MONONOF | 53 | 57 | 66,17 | -19,9 % | L.GROSSO | 136/60/–/1897 |
+| 14 | STARNBERG | 56 | 61 | 84,49 | -33,7 % | E.HARDOUIN | 27/4/20/17 |
+| 18 | LAKOTA BEAU | 57 | 69 | 86,11 | -33,8 % | L.BAILS | 77/66/879/921 |
+| 11 | VANTA | 58 | 60 | 96,35 | -39,8 % | D.PROVOST | 33/91/392/– |
+| 15 | AMERICAN GLORY | 65 | 71 | 78,45 | -17,1 % | A.CRASTUS | 17/18/802/432 |
+| 13 | PACIFISTE | 125 | 145 | 193,85 | -35,5 % | R.MANGIONE | 78/32/1/498 |

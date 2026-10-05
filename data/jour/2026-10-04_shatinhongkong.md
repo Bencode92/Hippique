@@ -1,6 +1,6 @@
 # SHA TIN (HONG KONG) — 04/10/2026
 
-5 courses. Cotes de l'extraction, pas les cotes live — elles bougent.
+5 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -8,7 +8,7 @@
 
 ### 7. SHAM TSENG HANDICAP - SEC 1
 
-*09h45 · plat · 1400 m · 14 partants*
+*09h45 · plat · 1400 m · 14 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -29,7 +29,7 @@
 
 ### 8. THE CHINESE RECREATION CLUB CHALLENGE CUP (HANDICAP)
 
-*10h15 · plat · 1800 m · 11 partants*
+*10h15 · plat · 1800 m · 11 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -47,7 +47,7 @@
 
 ### 9. SHEK WAI KOK HANDICAP
 
-*10h45 · plat · 1650 m · 11 partants*
+*10h45 · plat · 1650 m · 11 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -65,7 +65,7 @@
 
 ### 10. SHING MUN HANDICAP
 
-*11h20 · plat · 1000 m · 14 partants*
+*11h20 · plat · 1000 m · 14 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -86,7 +86,7 @@
 
 ### 11. YAU KOM TAU HANDICAP
 
-*11h55 · plat · 1200 m · 14 partants*
+*11h55 · plat · 1200 m · 14 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|

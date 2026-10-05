@@ -1,6 +1,6 @@
 # STRASBOURG — 04/10/2026
 
-8 courses. Cotes de l'extraction, pas les cotes live — elles bougent.
+8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -10,7 +10,7 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 1. PRIX DU CONSEIL DE L'EUROPE
 
-*11h00 · steeple · 3500 m · 4 partants*
+*11h00 · steeple · 3500 m · 4 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -21,7 +21,7 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 2. PRIX DU CANAL DE LA MARNE AU RHIN
 
-*11h35 · plat · 1550 m · 9 partants*
+*11h35 · plat · 1550 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
@@ -37,7 +37,7 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX D'AUTEUIL
 
-*12h07 · steeple · 4200 m · 5 partants*
+*12h07 · steeple · 4200 m · 5 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -49,7 +49,7 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX LES ENTREPRENEURS - CPME DU BAS-RHIN (PRIX DE LA MODER)
 
-*12h48 · plat · 1400 m · 11 partants*
+*12h48 · plat · 1400 m · 11 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
@@ -67,7 +67,7 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX MID DANCER
 
-*13h14 · haies · 3600 m · 9 partants*
+*13h14 · haies · 3600 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -83,7 +83,7 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX COUPE DE L'EST
 
-*13h50 · plat · 2100 m · 13 partants*
+*13h50 · plat · 2100 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
@@ -103,7 +103,7 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DU DABO
 
-*14h28 · plat · 2000 m · 15 partants*
+*14h28 · plat · 2000 m · 15 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
@@ -125,7 +125,7 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX AGRITEAM (PRIX RICHARD HARTLEY)
 
-*15h06 · plat · 2000 m · 15 partants*
+*15h06 · plat · 2000 m · 15 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|

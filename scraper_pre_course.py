@@ -47,7 +47,15 @@ HIPPODROMES_CIBLES = [
 # Fenêtre de capture : on scrape si la course démarre dans les 20 prochaines minutes
 # (marge volontaire : absorbe un run retardé par la file d'attente GitHub Actions)
 FENETRE_MINUTES = 20          # mode une passe
-FENETRE_BOUCLE = 6            # mode boucle : on relève dans les 6 dernières minutes
+FENETRE_BOUCLE = 6            # cadence rapide : chaque passe dans les 6 dernières minutes
+# Fenêtre large (05/10/2026) : Benoit rafraîchit la fiche « avant la course »,
+# pas à deux minutes du départ. Avec 6 minutes seulement, un refresh à T-15
+# affichait toujours les cotes de l'extraction du matin. On relève donc aussi
+# en amont, mais lentement — une fois toutes les 4 minutes par course, pour ne
+# pas multiplier les appels : à l'approche du départ, la cadence rapide
+# reprend et le relevé le plus tardif gagne de toute façon.
+FENETRE_VEILLE = 30           # minutes avant le départ où l'on commence à relever
+PAS_VEILLE_S = 240            # une course n'est re-relevée qu'au bout de 4 min en veille
 PAS_BOUCLE_S = 40             # secondes entre deux passes
 PUSH_TOUTES_LES_S = 120       # commit + push toutes les 2 minutes (un relevé perdu ne se rattrape pas)
 
@@ -193,6 +201,10 @@ def programme_cache(max_age_s=180):
     return _prog_cache["val"]
 
 
+# dernier relevé par course, pour espacer les appels en veille
+_dernier_releve = {}
+
+
 def main(fenetre=None, silencieux=False):
     fenetre = fenetre or FENETRE_MINUTES
     if not silencieux:
@@ -233,6 +245,15 @@ def main(fenetre=None, silencieux=False):
 
             if 0 < minutes_avant <= fenetre:
                 course_num = course.get("numOrdre", 0)
+                # En veille (au-delà de FENETRE_BOUCLE), on n'interroge une
+                # course qu'une fois toutes les PAS_VEILLE_S : sinon élargir la
+                # fenêtre à 30 min multiplierait les appels par cinq sans rien
+                # apporter — une cote ne bouge pas en quarante secondes à T-25.
+                if minutes_avant > FENETRE_BOUCLE:
+                    cle = (reunion_num, course_num)
+                    if time.time() - _dernier_releve.get(cle, 0) < PAS_VEILLE_S:
+                        continue
+                    _dernier_releve[cle] = time.time()
                 course_nom = course.get("libelle", "")
                 logger.info(f"\n⏰ {hippo_nom} R{reunion_num} C{course_num} — {course_nom}")
                 logger.info(f"   Départ dans {minutes_avant:.0f} min ({depart_dt.strftime('%H:%M')})")
@@ -336,14 +357,15 @@ def git_push():
 def boucle(duree_min):
     """Tourne duree_min minutes : une passe toutes les PAS_BOUCLE_S secondes,
     relevés dans les FENETRE_BOUCLE dernières minutes, push régulier."""
-    logger.info(f"🏇 Scraper pré-course — boucle de {duree_min} min, passe toutes les {PAS_BOUCLE_S} s, fenêtre T-{FENETRE_BOUCLE} min")
+    logger.info(f"🏇 Scraper pré-course — boucle de {duree_min} min, passe toutes les {PAS_BOUCLE_S} s, "
+                f"relevé dès T-{FENETRE_VEILLE} min (toutes les {PAS_VEILLE_S // 60} min), puis chaque passe dans les {FENETRE_BOUCLE} dernières")
     fin = time.time() + duree_min * 60
     dernier_push = time.time()
     total = 0
     while time.time() < fin:
         t0 = time.time()
         try:
-            total += main(fenetre=FENETRE_BOUCLE, silencieux=True) or 0
+            total += main(fenetre=FENETRE_VEILLE, silencieux=True) or 0
         except Exception as e:
             logger.warning(f"   ⚠️ passe : {e}")
         if time.time() - dernier_push >= PUSH_TOUTES_LES_S:

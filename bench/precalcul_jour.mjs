@@ -185,17 +185,27 @@ const ord = r => r + (r === 1 ? 'er' : 'e');
 function tableauCourse(c) {
   const L = [];
   const lisible = { ATTELE: 'attelé', MONTE: 'monté', HAIE: 'haies', STEEPLECHASE: 'steeple', CROSS: 'cross', PLAT: 'plat' }[typeCourse(c)] || typeCourse(c);
-  const t = [c.horaire, lisible, c.distance ? c.distance + ' m' : null, c.partants.length + ' partants'].filter(Boolean).join(' · ');
+  // D'où viennent les cotes affichées : un relevé live (et à quel instant avant
+  // le départ) ou l'extraction du matin. Sans ça on ne sait pas ce qu'on lit.
+  const sec = c.releve && c.releve.dernier_sec;
+  const aT = sec != null && sec > 0 ? `T−${Math.floor(sec / 60)}:${String(sec % 60).padStart(2, '0')}` : null;
+  const src = aT ? `cotes à ${aT}` : 'cotes de l\'extraction';
+  const t = [c.horaire, lisible, c.distance ? c.distance + ' m' : null, c.partants.length + ' partants', src].filter(Boolean).join(' · ');
   L.push(`### ${c.numero}. ${c.nom}`, '', `*${t}*`, '');
-  const avecCote = c.partants.some(p => p.c > 0);
+  const cote = p => (p.ce > 1 ? p.ce : (p.c > 1 ? p.c : null));
+  const avecCote = c.partants.some(p => cote(p));
   const avecCJ = c.partants.some(p => p.cj);
+  // la cote du matin n'est montrée que si elle a bougé : sinon c'est une
+  // colonne de doublons sur un écran de téléphone.
+  const avecMatin = c.partants.some(p => p.c > 1 && p.ce > 1 && Math.abs(p.ce - p.c) / p.c >= 0.05);
   // ordre de lecture : la cote croissante (donc l'Optimale) ; sinon le numéro
   const tri = avecCote
-    ? [...c.partants].sort((a, b) => (a.c || 1e9) - (b.c || 1e9))
+    ? [...c.partants].sort((a, b) => (cote(a) || 1e9) - (cote(b) || 1e9))
     : [...c.partants].sort((a, b) => (+a.n || 0) - (+b.n || 0));
   // n° et chiffres à droite, noms à gauche : les colonnes de nombres se
   // comparent d'un coup d'œil, les noms restent lisibles.
   const entete = [['n°', '--:'], ['cheval', ':--'], ['cote', '--:']];
+  if (avecMatin) entete.push(['matin', '--:']);
   if (avecCJ) entete.push(['juste', '--:'], ['espérance', '--:']);
   entete.push(['jockey', ':--']);
   const avecRangs = c.partants.some(p => p.rangs && Object.keys(p.rangs).length);
@@ -206,7 +216,8 @@ function tableauCourse(c) {
     const r = p.rangs || {};
     const rangs = ['jk', 'ent', 'el', 'pr'].map(k => (r[k] ? r[k].r : null)).map(v => (v == null ? '–' : v)).join('/');
     const jk = (p.jockey || '') + (p.pastille ? ` ${p.pastille.type === 'distance' ? '' : '🏆'}${ord(p.pastille.rang)}` : '');
-    const ligne = [p.n, p.cheval || '', nb(p.c)];
+    const ligne = [p.n, p.cheval || '', nb(cote(p))];
+    if (avecMatin) ligne.push(nb(p.c));
     if (avecCJ) ligne.push(nb2(p.cj && p.cj.cote), p.cj ? (p.cj.play ? `**${esp(p.cj.esp)}**` : esp(p.cj.esp)) : '');
     ligne.push(jk);
     if (avecRangs) ligne.push(rangs);
@@ -225,7 +236,10 @@ function ecrireMarkdown(date, out) {
     const f = `${date}_${slug(hip)}.md`;
     const L = [`# ${hip} — ${date.split('-').reverse().join('/')}`, ''];
     const cotees = courses.filter(c => c.partants.some(p => p.c > 0)).length;
-    L.push(`${courses.length} courses${cotees < courses.length ? ` (${cotees} avec cotes)` : ''}. Cotes de l'extraction, pas les cotes live — elles bougent.`, '');
+    const nLive = courses.filter(c => c.releve && c.releve.dernier_sec > 0).length;
+    L.push(`${courses.length} courses${cotees < courses.length ? ` (${cotees} avec cotes)` : ''}. `
+      + (nLive ? `${nLive} ${nLive > 1 ? 'ont' : 'a'} un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.`
+               : `Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.`), '');
     const avecCJ = courses.some(c => c.partants.some(p => p.cj));
     if (avecCJ) L.push('**Lecture.** L\'ordre est la cote croissante : c\'est aussi l\'Optimale, qui ne retient plus que le prix.',
                        'La *cote juste* est la cote que le cheval mériterait ; l\'espérance en gras est un PLAY (≥ 0).',
@@ -296,25 +310,10 @@ function journee(date) {
        * levier — « Cote (1/cote) ». L'Optimale EST donc le classement par cote
        * croissante. On l'écrit tel quel plutôt que de le faire recalculer par
        * la page, pour que le JSON se lise seul avant la course. */
-      const parCote = parts.filter(x => x.c > 1).sort((a, b) => a.c - b.c);
-      parCote.forEach((x, i) => { x.opt = i + 1; });
-
-      /* Cote juste (js/cote-juste.js, modèle data/cote_juste.json) : proba
-       * réelle sachant la cote et le contexte. Espérance = p × cote − 1,
-       * PLAY si ≥ 0. Diagnostic, pas un tri de la règle. */
-      if (estFR(hip) && estPlat(c)) {
-        const ps = (c.participants || []).filter(q => num(q.cote) > 1);
-        if (ps.length >= 5) {
-          const r = CJ.calculer(ps, { hippodrome: hip, course: c.nom }, modeleCJ);
-          for (const q of ps) {
-            const v = r.get(q);
-            if (!v) continue;
-            const o = parts.find(x => String(x.n) === String(q['n°'] || q.numero || q.n));
-            if (o) o.cj = { cote: +v.coteJuste.toFixed(2), esp: +(100 * v.esperance).toFixed(1), play: v.play };
-          }
-        }
-      }
-
+      /* Les cotes live AVANT tout calcul : l'Optimale et la cote juste doivent
+       * porter sur le prix du moment, pas sur celui de l'extraction du matin.
+       * C'est tout l'objet du refresh — sinon la fiche affiche une cote de 07h43
+       * à deux minutes du départ. */
       const lv = live.get(`${normH(hip)}|${num(c.numero)}`);
       if (lv) {
         // cote du dernier relevé et cote du relevé T-2 (celui qui fait foi pour le test)
@@ -324,6 +323,37 @@ function journee(date) {
           if (d1 || d2 || b) p.cotes = { ...(d1 ? { live: d1 } : {}), ...(d2 ? { t2: d2 } : {}), ...(b && b.ref ? { ref: b.ref } : {}) };
         }
       }
+      // `ce` = cote effective : le dernier relevé s'il existe, sinon l'extraction.
+      // `c` reste la cote du matin, pour lire la dérive.
+      for (const p of parts) {
+        const l = num(p.cotes && p.cotes.live);
+        p.ce = l > 1 ? l : (p.c > 1 ? p.c : null);
+      }
+
+      const parCote = parts.filter(x => x.ce > 1).sort((a, b) => a.ce - b.ce);
+      parCote.forEach((x, i) => { x.opt = i + 1; });
+
+      /* Cote juste (js/cote-juste.js, modèle data/cote_juste.json) : proba
+       * réelle sachant la cote et le contexte. Espérance = p × cote − 1,
+       * PLAY si ≥ 0. Diagnostic, pas un tri de la règle.
+       * On la recalcule sur la cote effective ; `cote_reference` reste la
+       * référence du matin, qui est bien ce que la variable « dérive » attend. */
+      if (estFR(hip) && estPlat(c)) {
+        const ps = (c.participants || []).map(q => {
+          const o = parts.find(x => String(x.n) === String(q['n°'] || q.numero || q.n));
+          return o && o.ce > 1 ? { ...q, cote: o.ce, _n: o.n } : { ...q, _n: o ? o.n : null };
+        }).filter(q => num(q.cote) > 1);
+        if (ps.length >= 5) {
+          const r = CJ.calculer(ps, { hippodrome: hip, course: c.nom }, modeleCJ);
+          for (const q of ps) {
+            const v = r.get(q);
+            if (!v) continue;
+            const o = parts.find(x => String(x.n) === String(q._n));
+            if (o) o.cj = { cote: +v.coteJuste.toFixed(2), esp: +(100 * v.esperance).toFixed(1), play: v.play };
+          }
+        }
+      }
+
       courses.push({ numero: c.numero, nom: c.nom, horaire: c.horaire || null, type: typeCourse(c), distance: dist, partants: parts,
                      ...(ix ? { snapshot: ix._snap } : {}),
                      ...(lv ? { releve: { depart: lv.depart, dernier_sec: lv.dernier ? lv.dernier.sec : null, t2_sec: lv.fenetre ? lv.fenetre.sec : null } } : {}) });

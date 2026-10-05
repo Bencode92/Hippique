@@ -1,6 +1,6 @@
 # DEAUVILLE — 05/10/2026
 
-9 courses (0 avec cotes). Cotes de l'extraction, pas les cotes live — elles bougent.
+9 courses (0 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -8,7 +8,7 @@
 
 ### 1. PRIX CAPITAINE RIQUET - HANDICAP CHALLENGE
 
-*16h37 · plat · 2500 m · 9 partants*
+*16h37 · plat · 2500 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -24,7 +24,7 @@
 
 ### 2. PRIX DU PEVELE
 
-*17h14 · plat · 2500 m · 9 partants*
+*17h14 · plat · 2500 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -40,7 +40,7 @@
 
 ### 3. PRIX DE L'AVESNOIS
 
-*17h51 · plat · 1300 m · 13 partants*
+*17h51 · plat · 1300 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -60,7 +60,7 @@
 
 ### 4. PRIX AU-DELA DES PISTES
 
-*18h28 · plat · 1300 m · 14 partants*
+*18h28 · plat · 1300 m · 14 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -81,7 +81,7 @@
 
 ### 5. PRIX DE LA SAMBRE
 
-*19h00 · plat · 1300 m · 13 partants*
+*19h00 · plat · 1300 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -101,7 +101,7 @@
 
 ### 6. PRIX DE CAGNES-SUR-MER
 
-*19h30 · plat · 1300 m · 11 partants*
+*19h30 · plat · 1300 m · 11 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -119,7 +119,7 @@
 
 ### 7. PRIX DU PLOUICH
 
-*20h00 · plat · 1900 m · 12 partants*
+*20h00 · plat · 1900 m · 12 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -138,7 +138,7 @@
 
 ### 8. PRIX DES WEPPES
 
-*20h30 · plat · 1900 m · 10 partants*
+*20h30 · plat · 1900 m · 10 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -155,7 +155,7 @@
 
 ### 9. PRIX DU CAMBRESIS
 
-*21h00 · plat · 1900 m · 6 partants*
+*21h00 · plat · 1900 m · 6 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|

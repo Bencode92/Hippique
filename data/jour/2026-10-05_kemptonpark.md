@@ -1,6 +1,6 @@
 # KEMPTON PARK — 05/10/2026
 
-9 courses (0 avec cotes). Cotes de l'extraction, pas les cotes live — elles bougent.
+9 courses (0 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -8,7 +8,7 @@
 
 ### 1. EBF NOVICE STAKES (CLASS 3)
 
-*17h10 · plat · 1600 m · 8 partants*
+*17h10 · plat · 1600 m · 8 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -23,7 +23,7 @@
 
 ### 2. HANDICAP (CLASS 5) (LONDON MILE SERIES QUALIFIER)
 
-*17h45 · plat · 1600 m · 10 partants*
+*17h45 · plat · 1600 m · 10 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -40,7 +40,7 @@
 
 ### 3. NOVICE STAKES (CLASS 3)
 
-*18h15 · plat · 2400 m · 7 partants*
+*18h15 · plat · 2400 m · 7 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -54,7 +54,7 @@
 
 ### 4. HANDICAP (CLASS 5)
 
-*18h45 · plat · 2200 m · 9 partants*
+*18h45 · plat · 2200 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -70,7 +70,7 @@
 
 ### 5. HANDICAP (CLASS 4) (LONDON SPRINT SERIES QUALIFIER) (DIV I)
 
-*19h15 · plat · 1200 m · 10 partants*
+*19h15 · plat · 1200 m · 10 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -87,7 +87,7 @@
 
 ### 6. HANDICAP (CLASS 4) (LONDON SPRINT SERIES QUALIFIER) (DIV II)
 
-*19h45 · plat · 1200 m · 10 partants*
+*19h45 · plat · 1200 m · 10 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -104,7 +104,7 @@
 
 ### 7. HANDICAP (CLASS 6)
 
-*20h15 · plat · 1400 m · 14 partants*
+*20h15 · plat · 1400 m · 14 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -125,7 +125,7 @@
 
 ### 8. RACING TV HANDICAP (CLASS 6)
 
-*20h45 · plat · 1400 m · 11 partants*
+*20h45 · plat · 1400 m · 11 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -143,7 +143,7 @@
 
 ### 9. HANDICAP (CLASS 6)
 
-*21h15 · plat · 2400 m · 10 partants*
+*21h15 · plat · 2400 m · 10 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
