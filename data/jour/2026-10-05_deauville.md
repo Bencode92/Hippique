@@ -42,23 +42,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX DE L'AVESNOIS
 
-*17h51 · plat · 1300 m · 13 partants · cotes à T−20:59*
+*17h51 · plat · 1300 m · 13 partants · cotes à T−16:59*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 2 | WILD MOOR | 6,2 | 6,39 | -3,0 % | D.PILITTA | 267/32/38/216 |
-| 7 | MICHELANGELO | 6,9 | 7,70 | -10,4 % | T.BACHELOT | 16/53/300/2592 |
-| 1 | SWEET AS | 8,7 | 9,43 | -7,7 % | C.PACAUT | 48/15/15/36 |
-| 14 | HEMATITE | 8,9 | 10,98 | -18,9 % | J.LACROIX | 94/141/38/96 |
-| 12 | ROCAMBOLESQUE | 9,9 | 11,71 | -15,5 % | D.SANTIAGO | 15/319/10/1583 |
-| 11 | NURTURE | 11 | 11,34 | -3,0 % | A.CRASTUS | 17/207/29/2179 |
-| 9 | PAPATEOU | 12 | 13,70 | -12,4 % | M.VELON | 28/432/98/2417 |
-| 3 | BELVEDERE PALACE | 13 | 18,39 | -29,3 % | M.GRANDIN | 3/79/2767/1593 |
-| 13 | MICOLEO | 15 | 18,53 | -19,0 % | G.MEURY | 68/28/21/75 |
-| 8 | MORUS | 16 | 21,89 | -26,9 % | R.MANGIONE | 78/390/438/278 |
-| 5 | MATCH ANTHEM | 18 | 21,97 | -18,1 % | T.PICCONE | 9/174/3196/277 |
-| 10 | CHARISMATIC CHICK | 22 | 31,69 | -30,6 % | A.DUQUESNOY | 121/28/383/49 |
-| 6 | COOLMEEN ROYAL | 25 | 33,44 | -25,2 % | C.BELMONT | 171/174/12/277 |
+| 2 | WILD MOOR | 6 | 6,26 | -4,2 % | D.PILITTA | 267/32/38/216 |
+| 1 | SWEET AS | 8,5 | 9,34 | -9,0 % | C.PACAUT | 48/15/15/36 |
+| 12 | ROCAMBOLESQUE | 9 | 10,66 | -15,6 % | D.SANTIAGO | 15/319/10/1583 |
+| 7 | MICHELANGELO | 9,6 | 11,50 | -16,5 % | T.BACHELOT | 16/53/300/2592 |
+| 9 | PAPATEOU | 10 | 11,27 | -11,3 % | M.VELON | 28/432/98/2417 |
+| 13 | MICOLEO | 11 | 13,12 | -16,1 % | G.MEURY | 68/28/21/75 |
+| 14 | HEMATITE | 11 | 14,34 | -23,3 % | J.LACROIX | 94/141/38/96 |
+| 5 | MATCH ANTHEM | 12 | 13,94 | -13,9 % | T.PICCONE | 9/174/3196/277 |
+| 6 | COOLMEEN ROYAL | 14 | 17,39 | -19,5 % | C.BELMONT | 171/174/12/277 |
+| 10 | CHARISMATIC CHICK | 14 | 19,05 | -26,5 % | A.DUQUESNOY | 121/28/383/49 |
+| 11 | NURTURE | 15 | 16,52 | -9,2 % | A.CRASTUS | 17/207/29/2179 |
+| 3 | BELVEDERE PALACE | 18 | 27,44 | -34,4 % | M.GRANDIN | 3/79/2767/1593 |
+| 8 | MORUS | 23 | 33,94 | -32,2 % | R.MANGIONE | 78/390/438/278 |
 
 ### 4. PRIX AU-DELA DES PISTES
 

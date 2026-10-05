@@ -4,125 +4,125 @@
   "reunion": 4,
   "heure_depart": 1791215460000,
   "distance": 1300,
-  "scraped_at": "2026-10-05T17:30:00.944538",
-  "minutes_avant_depart": 21,
+  "scraped_at": "2026-10-05T17:34:01.231220",
+  "minutes_avant_depart": 17,
   "participants": [
     {
       "numPmu": 1,
       "nom": "SWEET AS",
-      "cote_live": 8.7,
+      "cote_live": 8.5,
       "cote_reference": 8.9,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791214182000
+      "timestamp_cote": 1791214424000
     },
     {
       "numPmu": 2,
       "nom": "WILD MOOR",
-      "cote_live": 6.2,
+      "cote_live": 6.0,
       "cote_reference": 6.1,
-      "tendance": "",
+      "tendance": "-",
       "favoris": true,
-      "timestamp_cote": 1791214182000
+      "timestamp_cote": 1791214424000
     },
     {
       "numPmu": 3,
       "nom": "BELVEDERE PALACE",
-      "cote_live": 13.0,
+      "cote_live": 18.0,
       "cote_reference": 11.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791214182000
+      "timestamp_cote": 1791214424000
     },
     {
       "numPmu": 5,
       "nom": "MATCH ANTHEM",
-      "cote_live": 18.0,
+      "cote_live": 12.0,
       "cote_reference": 19.0,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791214182000
+      "timestamp_cote": 1791214424000
     },
     {
       "numPmu": 6,
       "nom": "COOLMEEN ROYAL",
-      "cote_live": 25.0,
+      "cote_live": 14.0,
       "cote_reference": 25.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791214182000
+      "timestamp_cote": 1791214424000
     },
     {
       "numPmu": 7,
       "nom": "MICHELANGELO",
-      "cote_live": 6.9,
+      "cote_live": 9.6,
       "cote_reference": 8.3,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791214182000
+      "timestamp_cote": 1791214424000
     },
     {
       "numPmu": 8,
       "nom": "MORUS",
-      "cote_live": 16.0,
+      "cote_live": 23.0,
       "cote_reference": 14.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791214182000
+      "timestamp_cote": 1791214424000
     },
     {
       "numPmu": 9,
       "nom": "PAPATEOU",
-      "cote_live": 12.0,
+      "cote_live": 10.0,
       "cote_reference": 11.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791214182000
+      "timestamp_cote": 1791214424000
     },
     {
       "numPmu": 10,
       "nom": "CHARISMATIC CHICK",
-      "cote_live": 22.0,
+      "cote_live": 14.0,
       "cote_reference": 26.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791214182000
+      "timestamp_cote": 1791214424000
     },
     {
       "numPmu": 11,
       "nom": "NURTURE",
-      "cote_live": 11.0,
+      "cote_live": 15.0,
       "cote_reference": 10.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791214182000
+      "timestamp_cote": 1791214424000
     },
     {
       "numPmu": 12,
       "nom": "ROCAMBOLESQUE",
-      "cote_live": 9.9,
+      "cote_live": 9.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791214182000
+      "timestamp_cote": 1791214424000
     },
     {
       "numPmu": 13,
       "nom": "MICOLEO",
-      "cote_live": 15.0,
+      "cote_live": 11.0,
       "cote_reference": 16.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791214182000
+      "timestamp_cote": 1791214424000
     },
     {
       "numPmu": 14,
       "nom": "HEMATITE",
-      "cote_live": 8.9,
+      "cote_live": 11.0,
       "cote_reference": 8.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791214182000
+      "timestamp_cote": 1791214424000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -182,6 +182,25 @@
         "12": 9.9,
         "13": 15.0,
         "14": 8.9
+      }
+    },
+    {
+      "scraped_at": "2026-10-05T17:34:01.231220",
+      "minutes_avant_depart": 16.99030455,
+      "cotes": {
+        "1": 8.5,
+        "2": 6.0,
+        "3": 18.0,
+        "5": 12.0,
+        "6": 14.0,
+        "7": 9.6,
+        "8": 23.0,
+        "9": 10.0,
+        "10": 14.0,
+        "11": 15.0,
+        "12": 9.0,
+        "13": 11.0,
+        "14": 11.0
       }
     }
   ]
