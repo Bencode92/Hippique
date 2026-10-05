@@ -1,6 +1,6 @@
 # DEAUVILLE — 05/10/2026
 
-9 courses. 8 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 9 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -137,30 +137,30 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DES WEPPES
 
-*20h30 · plat · 1900 m · 10 partants · cotes à T−3:39*
+*20h30 · plat · 1900 m · 10 partants · cotes à T−1:00*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 10 | MURRAY | 3,3 | 10 | 3,42 | -3,4 % | C.PACAUT | 48/501/3852/1483 |
-| 5 | LISEO | 4,6 | 4 | 4,76 | -3,4 % | J.MOUTARD | 61/94/1735/949 |
-| 8 | VOLCANO | 4,6 | 7,1 | 4,76 | -3,4 % | P.BAZIRE | 58/124/30/100 |
-| 7 | COSMO BEAU | 12 | 6,8 | 14,00 | -14,3 % | M.MARQUETTE | 54/14/218/100 |
-| 3 | WOFF | 15 | 8,6 | 20,75 | -27,7 % | W.LEVESQUE | 79/94/1/164 |
-| 6 | GOLFEUR | 15 | 10 | 16,95 | -11,5 % | T.BREBION | 99/44/1/1071 |
-| 1 | SAINT HELLIER | 17 | 9,5 | 22,39 | -24,1 % | A.DUQUESNOY | 121/28/8/16 |
-| 2 | CHARLESQUINT | 17 | 11 | 23,44 | -27,5 % | R.MANGIONE | 78/15/18/16 |
-| 4 | USER AMISTOSO | 19 | 15 | 21,31 | -10,8 % | C.BELMONT | 171/192/262/185 |
-| 9 | SIETE MISTERIOS | 36 | 19 | 52,77 | -31,8 % | L.BAILS | 77/146/31/1692 |
+| 8 | VOLCANO | 3,8 | 7,1 | 4,15 | -8,3 % | P.BAZIRE | 58/124/30/100 |
+| 10 | MURRAY | 4 | 10 | 3,91 | **+2,2 %** | C.PACAUT | 48/501/3852/1483 |
+| 5 | LISEO | 4,4 | 4 | 4,55 | -3,2 % | J.MOUTARD | 61/94/1735/949 |
+| 6 | GOLFEUR | 11 | 10 | 11,83 | -7,0 % | T.BREBION | 99/44/1/1071 |
+| 7 | COSMO BEAU | 14 | 6,8 | 16,78 | -16,6 % | M.MARQUETTE | 54/14/218/100 |
+| 3 | WOFF | 16 | 8,6 | 22,41 | -28,6 % | W.LEVESQUE | 79/94/1/164 |
+| 2 | CHARLESQUINT | 17 | 11 | 23,47 | -27,6 % | R.MANGIONE | 78/15/18/16 |
+| 1 | SAINT HELLIER | 18 | 9,5 | 23,96 | -24,9 % | A.DUQUESNOY | 121/28/8/16 |
+| 4 | USER AMISTOSO | 22 | 15 | 25,24 | -12,8 % | C.BELMONT | 171/192/262/185 |
+| 9 | SIETE MISTERIOS | 35 | 19 | 51,19 | -31,6 % | L.BAILS | 77/146/31/1692 |
 
 ### 9. PRIX DU CAMBRESIS
 
-*21h00 · plat · 1900 m · 6 partants · cotes de l'extraction*
+*21h00 · plat · 1900 m · 6 partants · cotes à T−29:39*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 1 | TIEGO THE FIRST | 2,5 | 2,99 | -16,5 % | M.GUYON 4e | 4/19/90/– |
-| 3 | CLIMATE CHANGE | 3,8 | 3,81 | -0,2 % | T.BACHELOT | 16/17/271/602 |
-| 2 | LORAXED | 7,8 | 8,54 | -8,7 % | A.CRASTUS | 17/120/1167/103 |
-| 6 | AGILE | 8 | 10,23 | -21,8 % | M.VELON | 28/201/3331/– |
-| 4 | DARK ROCKSTER | 8,9 | 10,85 | -18,0 % | C.PACAUT | 48/17/2120/40 |
-| 5 | WAKABURN | 8,9 | 10,64 | -16,4 % | M.GRANDIN | 3/108/955/84 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 1 | TIEGO THE FIRST | 2,5 | 2,5 | 3,02 | -17,1 % | M.GUYON 4e | 4/19/90/– |
+| 3 | CLIMATE CHANGE | 3,7 | 3,8 | 3,73 | -0,9 % | T.BACHELOT | 16/17/271/602 |
+| 6 | AGILE | 5,9 | 8 | 6,67 | -11,5 % | M.VELON | 28/201/3331/– |
+| 2 | LORAXED | 7,9 | 7,8 | 8,75 | -9,7 % | A.CRASTUS | 17/120/1167/103 |
+| 4 | DARK ROCKSTER | 10 | 8,9 | 12,55 | -20,3 % | C.PACAUT | 48/17/2120/40 |
+| 5 | WAKABURN | 12 | 8,9 | 15,26 | -21,3 % | M.GRANDIN | 3/108/955/84 |
