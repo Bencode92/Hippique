@@ -1,6 +1,6 @@
 # LYON-PARILLY — 06/10/2026
 
-8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -101,30 +101,30 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE PONT-DE-VIVAUX
 
-*14h48 · plat · 2400 m · 7 partants · cotes à T−0:18*
+*14h48 · plat · 2400 m · 7 partants · cotes de l'extraction*
 
-| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | ORAGEUX | 1,5 | 1,6 | 1,78 | -15,6 % | M.BARZALONA 3e | 2/9/332/8 |
-| 5 | EMBIEZ | 4,5 | 4,3 | 4,55 | -1,0 % | C.DEMURO | 1/111/192/50 |
-| 1 | GOLDEN BLUSH | 9,3 | 10 | 11,96 | -22,2 % | M.VELON | 28/4/39/47 |
-| 3 | MOZART DES BRIERES | 17 | 12 | 20,78 | -18,2 % | C.BILLARDELLO | 118/4/1212/823 |
-| 4 | DARLYVI | 17 | 13 | 24,34 | -30,1 % | M.GRANDIN | 3/223/533/1832 |
-| 7 | RAW ENERGY | 33 | 50 | 48,47 | -31,9 % | D.PROVOST 5e | 33/93/61/3392 |
-| 6 | POTE | 52 | 64 | 74,94 | -30,6 % | H.BOUTIN | 14/677/50/3061 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 2 | ORAGEUX | 1,6 | 1,84 | -13,2 % | M.BARZALONA 3e | 2/9/332/8 |
+| 5 | EMBIEZ | 4,3 | 4,29 | **+0,2 %** | C.DEMURO | 1/111/192/50 |
+| 1 | GOLDEN BLUSH | 10 | 12,90 | -22,5 % | M.VELON | 28/4/39/47 |
+| 3 | MOZART DES BRIERES | 12 | 12,55 | -4,4 % | C.BILLARDELLO | 118/4/1212/823 |
+| 4 | DARLYVI | 13 | 18,39 | -29,3 % | M.GRANDIN | 3/223/533/1832 |
+| 7 | RAW ENERGY | 50 | 75,93 | -34,2 % | D.PROVOST 5e | 33/93/61/3392 |
+| 6 | POTE | 64 | 92,71 | -31,0 % | H.BOUTIN | 14/677/50/3061 |
 
 ### 8. PRIX DU PARC BORELY
 
-*15h22 · plat · 1600 m · 9 partants · cotes à T−24:57*
+*15h22 · plat · 1600 m · 9 partants · cotes de l'extraction*
 
-| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|--:|:--|--:|
-| 4 | HE TOUCHED ME | 5 | 5,6 | 6,51 | -23,2 % | A.ORANI | 5/18/144/144 |
-| 6 | MARHARRY | 6,4 | 5,9 | 6,61 | -3,2 % | C.DEMURO | 1/66/34/434 |
-| 7 | KODIACOLOR | 6,6 | 5,3 | 7,72 | -14,5 % | E.CORALLO | 57/7/–/– |
-| 3 | NOVA HOPE | 7,6 | 11 | 8,04 | -5,4 % | A.LEMAITRE | 11/50/309/2607 |
-| 2 | HAZA | 9,1 | 7,7 | 11,23 | -19,0 % | F.LEFEBVRE | 41/290/270/391 |
-| 8 | PRECIOSO | 9,4 | 12 | 12,48 | -24,7 % | S.PASQUIER | 23/6/191/251 |
-| 9 | ZASYMOKA | 9,6 | 5,3 | 11,26 | -14,7 % | D.PROVOST | 33/77/100/688 |
-| 1 | JOH SPIRIT | 10 | 17 | 12,55 | -20,3 % | M.GRANDIN | 3/181/61/143 |
-| 5 | MAKAROV | 11 | 15 | 14,04 | -21,6 % | M.MARQUETTE | 54/14/398/358 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 7 | KODIACOLOR | 5,3 | 6,45 | -17,8 % | E.CORALLO | 57/7/–/– |
+| 9 | ZASYMOKA | 5,3 | 6,10 | -13,2 % | D.PROVOST | 33/77/100/688 |
+| 4 | HE TOUCHED ME | 5,6 | 6,42 | -12,8 % | A.ORANI | 5/18/144/144 |
+| 6 | MARHARRY | 5,9 | 6,06 | -2,6 % | C.DEMURO | 1/66/34/434 |
+| 2 | HAZA | 7,7 | 8,52 | -9,6 % | F.LEFEBVRE | 41/290/270/391 |
+| 3 | NOVA HOPE | 11 | 11,85 | -7,2 % | A.LEMAITRE | 11/50/309/2607 |
+| 8 | PRECIOSO | 12 | 16,00 | -25,0 % | S.PASQUIER | 23/6/191/251 |
+| 5 | MAKAROV | 15 | 19,40 | -22,7 % | M.MARQUETTE | 54/14/398/358 |
+| 1 | JOH SPIRIT | 17 | 22,45 | -24,3 % | M.GRANDIN | 3/181/61/143 |
