@@ -4,98 +4,98 @@
   "reunion": 1,
   "heure_depart": 1791302520000,
   "distance": 3500,
-  "scraped_at": "2026-10-06T18:01:31.413156",
-  "minutes_avant_depart": 0,
+  "scraped_at": "2026-10-06T18:04:11.584065",
+  "minutes_avant_depart": -2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MANIYSA BLEUE",
-      "cote_live": 23.0,
+      "cote_live": 28.0,
       "cote_reference": 17.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791302484000
+      "timestamp_cote": 1791302600000
     },
     {
       "numPmu": 2,
       "nom": "LOUBA",
-      "cote_live": 3.4,
+      "cote_live": 3.2,
       "cote_reference": 5.4,
-      "tendance": "+",
+      "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791302484000
+      "timestamp_cote": 1791302600000
     },
     {
       "numPmu": 3,
       "nom": "CHADOC",
       "cote_live": 7.1,
       "cote_reference": 9.3,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791302484000
+      "timestamp_cote": 1791302600000
     },
     {
       "numPmu": 4,
       "nom": "MISS GOLIATH",
-      "cote_live": 21.0,
+      "cote_live": 25.0,
       "cote_reference": 21.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791302484000
+      "timestamp_cote": 1791302600000
     },
     {
       "numPmu": 5,
       "nom": "SILVER BUCKLE",
-      "cote_live": 10.0,
+      "cote_live": 7.5,
       "cote_reference": 9.6,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791302484000
+      "timestamp_cote": 1791302600000
     },
     {
       "numPmu": 6,
       "nom": "CIEL MON CASTOR",
-      "cote_live": 5.0,
+      "cote_live": 5.6,
       "cote_reference": 5.6,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791302484000
+      "timestamp_cote": 1791302600000
     },
     {
       "numPmu": 7,
       "nom": "LOUISE LAMBERN",
-      "cote_live": 88.0,
+      "cote_live": 92.0,
       "cote_reference": 45.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791302484000
+      "timestamp_cote": 1791302600000
     },
     {
       "numPmu": 8,
       "nom": "NIRVANAFIX",
-      "cote_live": 18.0,
+      "cote_live": 19.0,
       "cote_reference": 12.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791302484000
+      "timestamp_cote": 1791302600000
     },
     {
       "numPmu": 9,
       "nom": "MENTION BIEN",
-      "cote_live": 22.0,
+      "cote_live": 24.0,
       "cote_reference": 17.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791302484000
+      "timestamp_cote": 1791302600000
     },
     {
       "numPmu": 10,
       "nom": "BIASCA",
-      "cote_live": 4.8,
+      "cote_live": 4.9,
       "cote_reference": 3.3,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791302484000
+      "timestamp_cote": 1791302600000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -354,6 +354,70 @@
         "8": 18.0,
         "9": 22.0,
         "10": 4.8
+      }
+    },
+    {
+      "scraped_at": "2026-10-06T18:02:11.686353",
+      "minutes_avant_depart": -0.18809086666666666,
+      "cotes": {
+        "1": 24.0,
+        "2": 3.4,
+        "3": 6.8,
+        "4": 21.0,
+        "5": 10.0,
+        "6": 5.0,
+        "7": 95.0,
+        "8": 18.0,
+        "9": 22.0,
+        "10": 4.8
+      }
+    },
+    {
+      "scraped_at": "2026-10-06T18:02:51.556819",
+      "minutes_avant_depart": -0.85716565,
+      "cotes": {
+        "1": 26.0,
+        "2": 3.6,
+        "3": 7.1,
+        "4": 25.0,
+        "5": 7.3,
+        "6": 5.2,
+        "7": 88.0,
+        "8": 18.0,
+        "9": 24.0,
+        "10": 4.7
+      }
+    },
+    {
+      "scraped_at": "2026-10-06T18:03:31.599140",
+      "minutes_avant_depart": -1.5214290333333333,
+      "cotes": {
+        "1": 28.0,
+        "2": 3.2,
+        "3": 7.1,
+        "4": 25.0,
+        "5": 7.5,
+        "6": 5.6,
+        "7": 92.0,
+        "8": 19.0,
+        "9": 24.0,
+        "10": 4.9
+      }
+    },
+    {
+      "scraped_at": "2026-10-06T18:04:11.584065",
+      "minutes_avant_depart": -2.1880977333333336,
+      "cotes": {
+        "1": 28.0,
+        "2": 3.2,
+        "3": 7.1,
+        "4": 25.0,
+        "5": 7.5,
+        "6": 5.6,
+        "7": 92.0,
+        "8": 19.0,
+        "9": 24.0,
+        "10": 4.9
       }
     }
   ]
