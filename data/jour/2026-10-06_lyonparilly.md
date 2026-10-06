@@ -101,17 +101,17 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE PONT-DE-VIVAUX
 
-*14h47 · plat · 2400 m · 7 partants · cotes à T−0:57*
+*14h47 · plat · 2400 m · 7 partants · cotes à T−0:18*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | ORAGEUX | 1,6 | 1,7 | 1,84 | -12,9 % | M.BARZALONA 3e | 2/9/332/8 |
-| 5 | EMBIEZ | 4,4 | 10 | 4,37 | **+0,7 %** | C.DEMURO | 1/111/192/50 |
-| 1 | GOLDEN BLUSH | 9 | 5,2 | 11,83 | -23,9 % | M.VELON | 28/4/39/47 |
-| 3 | MOZART DES BRIERES | 15 | – | 17,67 | -15,1 % | C.BILLARDELLO | 118/4/1212/823 |
-| 4 | DARLYVI | 16 | – | 23,34 | -31,5 % | M.GRANDIN | 3/223/533/1832 |
-| 7 | RAW ENERGY | 30 | 3,5 | 44,91 | -33,2 % | D.PROVOST 5e | 33/93/61/3392 |
-| 6 | POTE | 47 | – | 69,34 | -32,2 % | H.BOUTIN | 14/677/50/3061 |
+| 2 | ORAGEUX | 1,5 | 1,7 | 1,78 | -15,6 % | M.BARZALONA 3e | 2/9/332/8 |
+| 5 | EMBIEZ | 4,5 | 10 | 4,55 | -1,0 % | C.DEMURO | 1/111/192/50 |
+| 1 | GOLDEN BLUSH | 9,3 | 5,2 | 12,50 | -25,6 % | M.VELON | 28/4/39/47 |
+| 3 | MOZART DES BRIERES | 17 | – | 20,78 | -18,2 % | C.BILLARDELLO | 118/4/1212/823 |
+| 4 | DARLYVI | 17 | – | 25,49 | -33,3 % | M.GRANDIN | 3/223/533/1832 |
+| 7 | RAW ENERGY | 33 | 3,5 | 50,81 | -35,1 % | D.PROVOST 5e | 33/93/61/3392 |
+| 6 | POTE | 52 | – | 78,59 | -33,8 % | H.BOUTIN | 14/677/50/3061 |
 
 ### 8. PRIX DU PARC BORELY
 
