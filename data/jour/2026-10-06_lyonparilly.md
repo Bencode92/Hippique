@@ -1,6 +1,6 @@
 # LYON-PARILLY — 06/10/2026
 
-8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -101,17 +101,17 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE PONT-DE-VIVAUX
 
-*14h47 · plat · 2400 m · 7 partants · cotes de l'extraction*
+*14h47 · plat · 2400 m · 7 partants · cotes à T−3:37*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 2 | ORAGEUX | 1,7 | M.BARZALONA 3e | 2/9/332/8 |
-| 7 | RAW ENERGY | 3,5 | D.PROVOST 5e | 33/93/61/3392 |
-| 1 | GOLDEN BLUSH | 5,2 | M.VELON | 28/4/39/47 |
-| 5 | EMBIEZ | 10 | C.DEMURO | 1/111/192/50 |
-| 3 | MOZART DES BRIERES | – | C.BILLARDELLO | 118/4/1212/823 |
-| 4 | DARLYVI | – | M.GRANDIN | 3/223/533/1832 |
-| 6 | POTE | – | H.BOUTIN | 14/677/50/3061 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 2 | ORAGEUX | 2,1 | 1,7 | 2,26 | -7,1 % | M.BARZALONA 3e | 2/9/332/8 |
+| 5 | EMBIEZ | 3,3 | 10 | 3,28 | **+0,5 %** | C.DEMURO | 1/111/192/50 |
+| 1 | GOLDEN BLUSH | 7 | 5,2 | 8,86 | -21,0 % | M.VELON | 28/4/39/47 |
+| 4 | DARLYVI | 11 | – | 15,11 | -27,2 % | M.GRANDIN | 3/223/533/1832 |
+| 3 | MOZART DES BRIERES | 18 | – | 22,00 | -18,2 % | C.BILLARDELLO | 118/4/1212/823 |
+| 7 | RAW ENERGY | 21 | 3,5 | 30,08 | -30,2 % | D.PROVOST 5e | 33/93/61/3392 |
+| 6 | POTE | 26 | – | 36,06 | -27,9 % | H.BOUTIN | 14/677/50/3061 |
 
 ### 8. PRIX DU PARC BORELY
 

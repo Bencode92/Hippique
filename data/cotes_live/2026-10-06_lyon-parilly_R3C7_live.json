@@ -1,0 +1,129 @@
+{
+  "course": "PRIX DE PONT-DE-VIVAUX",
+  "numero": 7,
+  "reunion": 3,
+  "heure_depart": 1791290880000,
+  "distance": 2400,
+  "scraped_at": "2026-10-06T14:44:22.518931",
+  "minutes_avant_depart": 4,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "GOLDEN BLUSH",
+      "cote_live": 7.0,
+      "cote_reference": 5.5,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1791290643000
+    },
+    {
+      "numPmu": 2,
+      "nom": "ORAGEUX",
+      "cote_live": 2.1,
+      "cote_reference": 1.8,
+      "tendance": "-",
+      "favoris": true,
+      "timestamp_cote": 1791290643000
+    },
+    {
+      "numPmu": 3,
+      "nom": "MOZART DES BRIERES",
+      "cote_live": 18.0,
+      "cote_reference": 16.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1791290643000
+    },
+    {
+      "numPmu": 4,
+      "nom": "DARLYVI",
+      "cote_live": 11.0,
+      "cote_reference": 13.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1791290643000
+    },
+    {
+      "numPmu": 5,
+      "nom": "EMBIEZ",
+      "cote_live": 3.3,
+      "cote_reference": 5.1,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1791290643000
+    },
+    {
+      "numPmu": 6,
+      "nom": "POTE",
+      "cote_live": 26.0,
+      "cote_reference": 32.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1791290643000
+    },
+    {
+      "numPmu": 7,
+      "nom": "RAW ENERGY",
+      "cote_live": 21.0,
+      "cote_reference": 22.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1791290643000
+    }
+  ],
+  "hippodrome": "LYON-PARILLY",
+  "releves": [
+    {
+      "scraped_at": "2026-10-06T14:42:23.246506",
+      "minutes_avant_depart": 5.6192372,
+      "cotes": {
+        "1": 7.0,
+        "2": 2.4,
+        "3": 18.0,
+        "4": 10.0,
+        "5": 3.0,
+        "6": 23.0,
+        "7": 18.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-06T14:43:02.494417",
+      "minutes_avant_depart": 4.961626033333333,
+      "cotes": {
+        "1": 7.0,
+        "2": 2.4,
+        "3": 17.0,
+        "4": 10.0,
+        "5": 3.1,
+        "6": 23.0,
+        "7": 18.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-06T14:43:42.560741",
+      "minutes_avant_depart": 4.29495715,
+      "cotes": {
+        "1": 6.9,
+        "2": 2.2,
+        "3": 17.0,
+        "4": 11.0,
+        "5": 3.2,
+        "6": 25.0,
+        "7": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-06T14:44:22.518931",
+      "minutes_avant_depart": 3.6282881166666665,
+      "cotes": {
+        "1": 7.0,
+        "2": 2.1,
+        "3": 18.0,
+        "4": 11.0,
+        "5": 3.3,
+        "6": 26.0,
+        "7": 21.0
+      }
+    }
+  ]
+}
