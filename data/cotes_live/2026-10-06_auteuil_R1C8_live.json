@@ -4,98 +4,98 @@
   "reunion": 1,
   "heure_depart": 1791302400000,
   "distance": 3500,
-  "scraped_at": "2026-10-06T17:38:51.787235",
-  "minutes_avant_depart": 21,
+  "scraped_at": "2026-10-06T17:42:52.207562",
+  "minutes_avant_depart": 17,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MANIYSA BLEUE",
-      "cote_live": 20.0,
+      "cote_live": 14.0,
       "cote_reference": 17.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791301123000
+      "timestamp_cote": 1791301365000
     },
     {
       "numPmu": 2,
       "nom": "LOUBA",
       "cote_live": 3.9,
       "cote_reference": 5.4,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791301123000
+      "timestamp_cote": 1791301365000
     },
     {
       "numPmu": 3,
       "nom": "CHADOC",
       "cote_live": 11.0,
       "cote_reference": 9.3,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791301123000
+      "timestamp_cote": 1791301365000
     },
     {
       "numPmu": 4,
       "nom": "MISS GOLIATH",
       "cote_live": 24.0,
       "cote_reference": 21.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791301123000
+      "timestamp_cote": 1791301365000
     },
     {
       "numPmu": 5,
       "nom": "SILVER BUCKLE",
-      "cote_live": 9.0,
+      "cote_live": 9.6,
       "cote_reference": 9.6,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791301123000
+      "timestamp_cote": 1791301365000
     },
     {
       "numPmu": 6,
       "nom": "CIEL MON CASTOR",
-      "cote_live": 6.2,
+      "cote_live": 5.7,
       "cote_reference": 5.6,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791301123000
+      "timestamp_cote": 1791301365000
     },
     {
       "numPmu": 7,
       "nom": "LOUISE LAMBERN",
-      "cote_live": 49.0,
+      "cote_live": 48.0,
       "cote_reference": 45.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791301123000
+      "timestamp_cote": 1791301365000
     },
     {
       "numPmu": 8,
       "nom": "NIRVANAFIX",
       "cote_live": 14.0,
       "cote_reference": 12.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791301123000
+      "timestamp_cote": 1791301365000
     },
     {
       "numPmu": 9,
       "nom": "MENTION BIEN",
-      "cote_live": 16.0,
+      "cote_live": 19.0,
       "cote_reference": 17.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791301123000
+      "timestamp_cote": 1791301365000
     },
     {
       "numPmu": 10,
       "nom": "BIASCA",
-      "cote_live": 3.5,
+      "cote_live": 3.7,
       "cote_reference": 3.3,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791301123000
+      "timestamp_cote": 1791301365000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -146,6 +146,22 @@
         "8": 14.0,
         "9": 16.0,
         "10": 3.5
+      }
+    },
+    {
+      "scraped_at": "2026-10-06T17:42:52.207562",
+      "minutes_avant_depart": 17.132077683333332,
+      "cotes": {
+        "1": 14.0,
+        "2": 3.9,
+        "3": 11.0,
+        "4": 24.0,
+        "5": 9.6,
+        "6": 5.7,
+        "7": 48.0,
+        "8": 14.0,
+        "9": 19.0,
+        "10": 3.7
       }
     }
   ]
