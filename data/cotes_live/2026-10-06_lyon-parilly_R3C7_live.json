@@ -4,71 +4,71 @@
   "reunion": 3,
   "heure_depart": 1791290880000,
   "distance": 2400,
-  "scraped_at": "2026-10-06T14:44:22.518931",
-  "minutes_avant_depart": 4,
+  "scraped_at": "2026-10-06T14:47:02.946200",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "GOLDEN BLUSH",
-      "cote_live": 7.0,
+      "cote_live": 9.0,
       "cote_reference": 5.5,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791290643000
+      "timestamp_cote": 1791290812000
     },
     {
       "numPmu": 2,
       "nom": "ORAGEUX",
-      "cote_live": 2.1,
+      "cote_live": 1.6,
       "cote_reference": 1.8,
-      "tendance": "-",
+      "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791290643000
+      "timestamp_cote": 1791290812000
     },
     {
       "numPmu": 3,
       "nom": "MOZART DES BRIERES",
-      "cote_live": 18.0,
+      "cote_live": 15.0,
       "cote_reference": 16.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791290643000
+      "timestamp_cote": 1791290812000
     },
     {
       "numPmu": 4,
       "nom": "DARLYVI",
-      "cote_live": 11.0,
+      "cote_live": 16.0,
       "cote_reference": 13.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791290643000
+      "timestamp_cote": 1791290812000
     },
     {
       "numPmu": 5,
       "nom": "EMBIEZ",
-      "cote_live": 3.3,
+      "cote_live": 4.4,
       "cote_reference": 5.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791290643000
+      "timestamp_cote": 1791290812000
     },
     {
       "numPmu": 6,
       "nom": "POTE",
-      "cote_live": 26.0,
+      "cote_live": 47.0,
       "cote_reference": 32.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791290643000
+      "timestamp_cote": 1791290812000
     },
     {
       "numPmu": 7,
       "nom": "RAW ENERGY",
-      "cote_live": 21.0,
+      "cote_live": 30.0,
       "cote_reference": 22.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791290643000
+      "timestamp_cote": 1791290812000
     }
   ],
   "hippodrome": "LYON-PARILLY",
@@ -123,6 +123,58 @@
         "5": 3.3,
         "6": 26.0,
         "7": 21.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-06T14:45:02.459229",
+      "minutes_avant_depart": 2.9616190833333333,
+      "cotes": {
+        "1": 7.3,
+        "2": 1.9,
+        "3": 20.0,
+        "4": 11.0,
+        "5": 3.5,
+        "6": 30.0,
+        "7": 22.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-06T14:45:43.150184",
+      "minutes_avant_depart": 2.28691385,
+      "cotes": {
+        "1": 8.9,
+        "2": 1.6,
+        "3": 25.0,
+        "4": 13.0,
+        "5": 4.3,
+        "6": 37.0,
+        "7": 26.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-06T14:46:22.544538",
+      "minutes_avant_depart": 1.6282806833333334,
+      "cotes": {
+        "1": 8.0,
+        "2": 1.7,
+        "3": 26.0,
+        "4": 13.0,
+        "5": 3.8,
+        "6": 38.0,
+        "7": 26.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-06T14:47:02.946200",
+      "minutes_avant_depart": 0.9616116166666667,
+      "cotes": {
+        "1": 9.0,
+        "2": 1.6,
+        "3": 15.0,
+        "4": 16.0,
+        "5": 4.4,
+        "6": 47.0,
+        "7": 30.0
       }
     }
   ]
