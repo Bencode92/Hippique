@@ -4,26 +4,26 @@
   "reunion": 1,
   "heure_depart": 1791298320000,
   "distance": 3500,
-  "scraped_at": "2026-10-06T16:44:11.335097",
-  "minutes_avant_depart": 8,
+  "scraped_at": "2026-10-06T16:46:51.591247",
+  "minutes_avant_depart": 5,
   "participants": [
     {
       "numPmu": 1,
       "nom": "LISSADELL",
-      "cote_live": 2.7,
+      "cote_live": 2.4,
       "cote_reference": 2.9,
       "tendance": "-",
       "favoris": true,
-      "timestamp_cote": 1791297836000
+      "timestamp_cote": 1791297990000
     },
     {
       "numPmu": 2,
       "nom": "ALBERTINE",
-      "cote_live": 7.5,
+      "cote_live": 7.4,
       "cote_reference": 9.4,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791297836000
+      "timestamp_cote": 1791297990000
     },
     {
       "numPmu": 3,
@@ -32,43 +32,43 @@
       "cote_reference": 14.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791297836000
+      "timestamp_cote": 1791297990000
     },
     {
       "numPmu": 4,
       "nom": "PANAMA LUX",
       "cote_live": 16.0,
       "cote_reference": 21.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791297836000
+      "timestamp_cote": 1791297990000
     },
     {
       "numPmu": 5,
       "nom": "RAMONA",
-      "cote_live": 22.0,
+      "cote_live": 21.0,
       "cote_reference": 16.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791297836000
+      "timestamp_cote": 1791297990000
     },
     {
       "numPmu": 6,
       "nom": "SCARLETTS STAR",
-      "cote_live": 4.2,
+      "cote_live": 5.1,
       "cote_reference": 4.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791297836000
+      "timestamp_cote": 1791297990000
     },
     {
       "numPmu": 7,
       "nom": "GIRL POWER",
-      "cote_live": 20.0,
+      "cote_live": 19.0,
       "cote_reference": 21.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791297836000
+      "timestamp_cote": 1791297990000
     },
     {
       "numPmu": 8,
@@ -77,34 +77,34 @@
       "cote_reference": 54.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791297836000
+      "timestamp_cote": 1791297990000
     },
     {
       "numPmu": 9,
       "nom": "NINETTE DU SEUIL",
-      "cote_live": 23.0,
+      "cote_live": 18.0,
       "cote_reference": 17.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791297836000
+      "timestamp_cote": 1791297990000
     },
     {
       "numPmu": 10,
       "nom": "PEPS NOLIMIT",
-      "cote_live": 8.3,
+      "cote_live": 8.8,
       "cote_reference": 8.2,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791297836000
+      "timestamp_cote": 1791297990000
     },
     {
       "numPmu": 11,
       "nom": "LA DUCASSE",
-      "cote_live": 83.0,
+      "cote_live": 67.0,
       "cote_reference": 47.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791297836000
+      "timestamp_cote": 1791297990000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -141,6 +141,40 @@
         "9": 23.0,
         "10": 8.3,
         "11": 83.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-06T16:46:11.973142",
+      "minutes_avant_depart": 5.8042069666666665,
+      "cotes": {
+        "1": 2.6,
+        "2": 7.2,
+        "3": 20.0,
+        "4": 15.0,
+        "5": 21.0,
+        "6": 4.9,
+        "7": 19.0,
+        "8": 47.0,
+        "9": 18.0,
+        "10": 8.8,
+        "11": 67.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-06T16:46:51.591247",
+      "minutes_avant_depart": 5.145501666666666,
+      "cotes": {
+        "1": 2.4,
+        "2": 7.4,
+        "3": 21.0,
+        "4": 16.0,
+        "5": 21.0,
+        "6": 5.1,
+        "7": 19.0,
+        "8": 48.0,
+        "9": 18.0,
+        "10": 8.8,
+        "11": 67.0
       }
     }
   ]
