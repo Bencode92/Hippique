@@ -4,89 +4,89 @@
   "reunion": 1,
   "heure_depart": 1791300300000,
   "distance": 3600,
-  "scraped_at": "2026-10-06T17:00:11.444803",
-  "minutes_avant_depart": 25,
+  "scraped_at": "2026-10-06T17:04:11.669041",
+  "minutes_avant_depart": 21,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MOUSSE DU CHEF",
-      "cote_live": 2.9,
+      "cote_live": 2.7,
       "cote_reference": 2.9,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791298795000
+      "timestamp_cote": 1791299037000
     },
     {
       "numPmu": 2,
       "nom": "ALHUNTER",
-      "cote_live": 10.0,
+      "cote_live": 11.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791298795000
+      "timestamp_cote": 1791299037000
     },
     {
       "numPmu": 3,
       "nom": "MEROVEE",
-      "cote_live": 5.4,
+      "cote_live": 5.3,
       "cote_reference": 5.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791298795000
+      "timestamp_cote": 1791299037000
     },
     {
       "numPmu": 4,
       "nom": "BLIDA",
-      "cote_live": 8.3,
+      "cote_live": 7.3,
       "cote_reference": 8.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791298795000
+      "timestamp_cote": 1791299037000
     },
     {
       "numPmu": 6,
       "nom": "PAREIL PAREIL",
-      "cote_live": 5.0,
+      "cote_live": 5.5,
       "cote_reference": 4.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791298795000
+      "timestamp_cote": 1791299037000
     },
     {
       "numPmu": 7,
       "nom": "MAURA MAGUIRE",
-      "cote_live": 34.0,
+      "cote_live": 35.0,
       "cote_reference": 34.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791298795000
+      "timestamp_cote": 1791299037000
     },
     {
       "numPmu": 8,
       "nom": "SCILLA",
-      "cote_live": 16.0,
+      "cote_live": 17.0,
       "cote_reference": 18.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791298795000
+      "timestamp_cote": 1791299037000
     },
     {
       "numPmu": 9,
       "nom": "SERIAL WINNER",
-      "cote_live": 18.0,
+      "cote_live": 19.0,
       "cote_reference": 17.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791298795000
+      "timestamp_cote": 1791299037000
     },
     {
       "numPmu": 10,
       "nom": "HALTREE DES OBEAUX",
-      "cote_live": 18.0,
+      "cote_live": 19.0,
       "cote_reference": 19.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791298795000
+      "timestamp_cote": 1791299037000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -119,6 +119,21 @@
         "8": 16.0,
         "9": 18.0,
         "10": 18.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-06T17:04:11.669041",
+      "minutes_avant_depart": 20.81210701666667,
+      "cotes": {
+        "1": 2.7,
+        "2": 11.0,
+        "3": 5.3,
+        "4": 7.3,
+        "6": 5.5,
+        "7": 35.0,
+        "8": 17.0,
+        "9": 19.0,
+        "10": 19.0
       }
     }
   ]
