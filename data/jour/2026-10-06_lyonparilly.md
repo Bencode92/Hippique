@@ -115,16 +115,16 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DU PARC BORELY
 
-*15h22 · plat · 1600 m · 9 partants · cotes à T−29:36*
+*15h22 · plat · 1600 m · 9 partants · cotes à T−24:57*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 4 | HE TOUCHED ME | 4,6 | 2,9 | 5,89 | -21,8 % | A.ORANI | 5/18/144/144 |
-| 6 | MARHARRY | 6,2 | 4,4 | 6,34 | -2,2 % | C.DEMURO | 1/66/34/434 |
-| 7 | KODIACOLOR | 6,8 | 4,4 | 7,94 | -14,4 % | E.CORALLO | 57/7/–/– |
-| 8 | PRECIOSO | 8,2 | – | 10,56 | -22,3 % | S.PASQUIER | 23/6/191/251 |
-| 9 | ZASYMOKA | 9,2 | 8,8 | 10,64 | -13,6 % | D.PROVOST | 33/77/100/688 |
-| 2 | HAZA | 9,4 | – | 11,59 | -18,9 % | F.LEFEBVRE | 41/290/270/391 |
-| 3 | NOVA HOPE | 10 | 8,8 | 10,97 | -8,8 % | A.LEMAITRE | 11/50/309/2607 |
-| 1 | JOH SPIRIT | 11 | 8,8 | 13,95 | -21,1 % | M.GRANDIN | 3/181/61/143 |
-| 5 | MAKAROV | 11 | – | 13,95 | -21,1 % | M.MARQUETTE | 54/14/398/358 |
+| 4 | HE TOUCHED ME | 5 | 2,9 | 6,51 | -23,2 % | A.ORANI | 5/18/144/144 |
+| 6 | MARHARRY | 6,4 | 4,4 | 6,61 | -3,2 % | C.DEMURO | 1/66/34/434 |
+| 7 | KODIACOLOR | 6,6 | 4,4 | 7,72 | -14,5 % | E.CORALLO | 57/7/–/– |
+| 3 | NOVA HOPE | 7,6 | 8,8 | 8,04 | -5,4 % | A.LEMAITRE | 11/50/309/2607 |
+| 2 | HAZA | 9,1 | – | 11,23 | -19,0 % | F.LEFEBVRE | 41/290/270/391 |
+| 8 | PRECIOSO | 9,4 | – | 12,48 | -24,7 % | S.PASQUIER | 23/6/191/251 |
+| 9 | ZASYMOKA | 9,6 | 8,8 | 11,26 | -14,7 % | D.PROVOST | 33/77/100/688 |
+| 1 | JOH SPIRIT | 10 | 8,8 | 12,55 | -20,3 % | M.GRANDIN | 3/181/61/143 |
+| 5 | MAKAROV | 11 | – | 14,04 | -21,6 % | M.MARQUETTE | 54/14/398/358 |
