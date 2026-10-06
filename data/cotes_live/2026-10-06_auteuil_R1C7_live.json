@@ -4,89 +4,89 @@
   "reunion": 1,
   "heure_depart": 1791300420000,
   "distance": 3600,
-  "scraped_at": "2026-10-06T17:24:11.484262",
-  "minutes_avant_depart": 3,
+  "scraped_at": "2026-10-06T17:26:51.505317",
+  "minutes_avant_depart": 0,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MOUSSE DU CHEF",
-      "cote_live": 3.2,
+      "cote_live": 3.6,
       "cote_reference": 2.9,
-      "tendance": "+",
+      "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791300244000
+      "timestamp_cote": 1791300401000
     },
     {
       "numPmu": 2,
       "nom": "ALHUNTER",
-      "cote_live": 9.9,
+      "cote_live": 8.9,
       "cote_reference": 10.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791300244000
+      "timestamp_cote": 1791300401000
     },
     {
       "numPmu": 3,
       "nom": "MEROVEE",
       "cote_live": 4.0,
       "cote_reference": 5.3,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791300244000
+      "timestamp_cote": 1791300401000
     },
     {
       "numPmu": 4,
       "nom": "BLIDA",
-      "cote_live": 5.3,
+      "cote_live": 5.0,
       "cote_reference": 8.2,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791300244000
+      "timestamp_cote": 1791300401000
     },
     {
       "numPmu": 6,
       "nom": "PAREIL PAREIL",
-      "cote_live": 9.1,
+      "cote_live": 7.6,
       "cote_reference": 4.8,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791300244000
+      "timestamp_cote": 1791300401000
     },
     {
       "numPmu": 7,
       "nom": "MAURA MAGUIRE",
-      "cote_live": 40.0,
+      "cote_live": 55.0,
       "cote_reference": 34.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791300244000
+      "timestamp_cote": 1791300401000
     },
     {
       "numPmu": 8,
       "nom": "SCILLA",
-      "cote_live": 21.0,
+      "cote_live": 22.0,
       "cote_reference": 18.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791300244000
+      "timestamp_cote": 1791300401000
     },
     {
       "numPmu": 9,
       "nom": "SERIAL WINNER",
-      "cote_live": 16.0,
+      "cote_live": 17.0,
       "cote_reference": 17.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791300244000
+      "timestamp_cote": 1791300401000
     },
     {
       "numPmu": 10,
       "nom": "HALTREE DES OBEAUX",
-      "cote_live": 19.0,
+      "cote_live": 18.0,
       "cote_reference": 19.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791300244000
+      "timestamp_cote": 1791300401000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -269,6 +269,66 @@
         "8": 21.0,
         "9": 16.0,
         "10": 19.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-06T17:24:51.541958",
+      "minutes_avant_depart": 2.1453688833333335,
+      "cotes": {
+        "1": 3.3,
+        "2": 9.1,
+        "3": 4.0,
+        "4": 5.6,
+        "6": 7.2,
+        "7": 51.0,
+        "8": 22.0,
+        "9": 17.0,
+        "10": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-06T17:25:31.514793",
+      "minutes_avant_depart": 1.4786999333333335,
+      "cotes": {
+        "1": 3.4,
+        "2": 9.3,
+        "3": 4.1,
+        "4": 5.6,
+        "6": 7.3,
+        "7": 49.0,
+        "8": 21.0,
+        "9": 16.0,
+        "10": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-06T17:26:11.811953",
+      "minutes_avant_depart": 0.80525405,
+      "cotes": {
+        "1": 3.5,
+        "2": 8.9,
+        "3": 4.1,
+        "4": 5.3,
+        "6": 7.2,
+        "7": 55.0,
+        "8": 21.0,
+        "9": 17.0,
+        "10": 17.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-06T17:26:51.505317",
+      "minutes_avant_depart": 0.14536216666666668,
+      "cotes": {
+        "1": 3.6,
+        "2": 8.9,
+        "3": 4.0,
+        "4": 5.0,
+        "6": 7.6,
+        "7": 55.0,
+        "8": 22.0,
+        "9": 17.0,
+        "10": 18.0
       }
     }
   ]
