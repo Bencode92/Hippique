@@ -119,12 +119,12 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 4 | HE TOUCHED ME | 4,9 | 6,38 | -23,2 % | A.ORANI | 5/18/144/144 |
-| 6 | MARHARRY | 6,5 | 6,74 | -3,6 % | C.DEMURO | 1/66/34/434 |
-| 7 | KODIACOLOR | 6,9 | 8,15 | -15,3 % | E.CORALLO | 57/7/–/– |
-| 3 | NOVA HOPE | 7,6 | 8,06 | -5,7 % | A.LEMAITRE | 11/50/309/2607 |
-| 2 | HAZA | 8,8 | 10,82 | -18,7 % | F.LEFEBVRE | 41/290/270/391 |
-| 8 | PRECIOSO | 8,9 | 11,73 | -24,1 % | S.PASQUIER | 23/6/191/251 |
-| 9 | ZASYMOKA | 9,8 | 11,56 | -15,3 % | D.PROVOST | 33/77/100/688 |
-| 1 | JOH SPIRIT | 10 | 12,58 | -20,5 % | M.GRANDIN | 3/181/61/143 |
-| 5 | MAKAROV | 11 | 14,08 | -21,8 % | M.MARQUETTE | 54/14/398/358 |
+| 7 | KODIACOLOR | 5,3 | 6,45 | -17,8 % | E.CORALLO | 57/7/–/– |
+| 9 | ZASYMOKA | 5,3 | 6,10 | -13,2 % | D.PROVOST | 33/77/100/688 |
+| 4 | HE TOUCHED ME | 5,6 | 6,42 | -12,8 % | A.ORANI | 5/18/144/144 |
+| 6 | MARHARRY | 5,9 | 6,06 | -2,6 % | C.DEMURO | 1/66/34/434 |
+| 2 | HAZA | 7,7 | 8,52 | -9,6 % | F.LEFEBVRE | 41/290/270/391 |
+| 3 | NOVA HOPE | 11 | 11,85 | -7,2 % | A.LEMAITRE | 11/50/309/2607 |
+| 8 | PRECIOSO | 12 | 16,00 | -25,0 % | S.PASQUIER | 23/6/191/251 |
+| 5 | MAKAROV | 15 | 19,40 | -22,7 % | M.MARQUETTE | 54/14/398/358 |
+| 1 | JOH SPIRIT | 17 | 22,45 | -24,3 % | M.GRANDIN | 3/181/61/143 |
