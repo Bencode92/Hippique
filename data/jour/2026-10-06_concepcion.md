@@ -1,8 +1,8 @@
 # CONCEPCION — 06/10/2026
 
-6 courses.
+6 courses (4 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -12,14 +12,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 8 | GOLDEN WARRIOR | 1,4 | CARLOS  PAVEZ |
+| 7 | DRIYANKA | 2,2 | LUIS AROS HARVEY |
 | 1 | SONRIELE | – | BRYAN  RETAMAL |
 | 2 | FLIGHT OF ICARUS | – | GUSTAVO VERA |
 | 3 | ROJO JAMAS | – | ANGEL IRENK VEGA CHAMORRO |
 | 4 | MY BJORK | – | VICENTE ALEXANDER MARDONES GONZA |
 | 5 | TROMBONCITO | – | MARTIN  URZUA |
 | 6 | EL AEREO | – | GABRIEL  URZUA |
-| 7 | DRIYANKA | – | LUIS AROS HARVEY |
-| 8 | GOLDEN WARRIOR | – | CARLOS  PAVEZ |
 | 9 | STROKE OF LUCK | – | JUAN A. CAMPOS |
 
 ### 2. "QUENTIN" HANDICAP
@@ -28,7 +28,7 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | QUE BONITO QUE SOY | – | BRYAN  RETAMAL |
+| 1 | QUE BONITO QUE SOY | 1,1 | BRYAN  RETAMAL |
 | 2 | IRON STAR | – | CARLOS  PAVEZ |
 | 3 | WHITE SPIRIT | – | GABRIEL  URZUA |
 | 4 | TATARISTAN | – | LUIS AROS HARVEY |
@@ -75,9 +75,9 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 3 | SIEMPRE PIOLA | 1,1 | JUAN A. CAMPOS |
 | 1 | PITER ALFONSO | – | BRYAN  RETAMAL |
 | 2 | BY THE BOOK | – | IVAN CARCAMO |
-| 3 | SIEMPRE PIOLA | – | JUAN A. CAMPOS |
 | 4 | FURIA DE TROYA | – | CRISTOPHER  CORDERO |
 | 5 | WENA CASTILLO | – | JOSE MANUEL MOYA SEPULVEDA |
 | 6 | PAULIE GATTO | – | BENJAMIN  DIAZ |
@@ -91,14 +91,14 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | IL IMPERATORE | – | VICENTE ALEXANDER MARDONES GONZA | –/–/–/– |
-| 2 | SASUKE | – | ANYELO GERMAN SOTO GARCES | –/–/–/– |
+| 1 | IL IMPERATORE | 2,2 | VICENTE ALEXANDER MARDONES GONZA | –/–/–/– |
+| 2 | SASUKE | 2,2 | ANYELO GERMAN SOTO GARCES | –/–/–/– |
+| 9 | CHARMING STAR | 4,4 | GUSTAVO VERA | –/–/–/– |
 | 3 | LUDMILA | – | JOSE MANUEL MOYA SEPULVEDA | –/–/–/– |
 | 4 | HEY NINA | – | BRYAN  RETAMAL | –/–/–/– |
 | 5 | MIGHTY SYMPHONY | – | BENJAMIN  DIAZ | –/–/–/– |
 | 6 | FRESCO | – | LUIS AROS HARVEY | –/–/–/– |
 | 7 | MERCENARIA | – | CARLOS  PAVEZ | –/–/–/– |
 | 8 | CHILLY WILLY | – | JUAN A. CAMPOS | –/–/–/– |
-| 9 | CHARMING STAR | – | GUSTAVO VERA | –/–/–/– |
 | 10 | TOTOTITA | – | ANGEL IRENK VEGA CHAMORRO | –/–/–/– |
 | 11 | EL CATIMBA | – | CRISTOPHER  CORDERO | –/–/–/– |
