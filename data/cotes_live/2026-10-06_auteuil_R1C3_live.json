@@ -2,28 +2,28 @@
   "course": "PRIX PIOMARES - GUY NEGREL",
   "numero": 3,
   "reunion": 1,
-  "heure_depart": 1791291900000,
+  "heure_depart": 1791292020000,
   "distance": 3500,
-  "scraped_at": "2026-10-06T14:51:02.529387",
-  "minutes_avant_depart": 14,
+  "scraped_at": "2026-10-06T14:55:02.953951",
+  "minutes_avant_depart": 12,
   "participants": [
     {
       "numPmu": 1,
       "nom": "NECKER",
-      "cote_live": 9.3,
+      "cote_live": 9.5,
       "cote_reference": 8.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791291048000
+      "timestamp_cote": 1791291290000
     },
     {
       "numPmu": 2,
       "nom": "SPANISH BOY",
-      "cote_live": 18.0,
+      "cote_live": 16.0,
       "cote_reference": 20.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791291048000
+      "timestamp_cote": 1791291290000
     },
     {
       "numPmu": 3,
@@ -32,52 +32,52 @@
       "cote_reference": 2.6,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791291048000
+      "timestamp_cote": 1791291290000
     },
     {
       "numPmu": 4,
       "nom": "NARVICK SWEEN",
-      "cote_live": 4.1,
+      "cote_live": 4.3,
       "cote_reference": 4.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791291048000
+      "timestamp_cote": 1791291290000
     },
     {
       "numPmu": 5,
       "nom": "NOUVEAUTHAIX ALLEN",
-      "cote_live": 19.0,
+      "cote_live": 20.0,
       "cote_reference": 25.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791291048000
+      "timestamp_cote": 1791291290000
     },
     {
       "numPmu": 6,
       "nom": "MAX DU MATHAN",
-      "cote_live": 6.3,
+      "cote_live": 6.1,
       "cote_reference": 6.2,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791291048000
+      "timestamp_cote": 1791291290000
     },
     {
       "numPmu": 7,
       "nom": "NAIN BLEU",
-      "cote_live": 14.0,
+      "cote_live": 15.0,
       "cote_reference": 14.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791291048000
+      "timestamp_cote": 1791291290000
     },
     {
       "numPmu": 9,
       "nom": "MILORD DU BERLAIS",
-      "cote_live": 8.0,
+      "cote_live": 7.3,
       "cote_reference": 8.4,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791291048000
+      "timestamp_cote": 1791291290000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -122,6 +122,20 @@
         "6": 6.3,
         "7": 14.0,
         "9": 8.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-06T14:55:02.953951",
+      "minutes_avant_depart": 11.961582816666667,
+      "cotes": {
+        "1": 9.5,
+        "2": 16.0,
+        "3": 3.0,
+        "4": 4.3,
+        "5": 20.0,
+        "6": 6.1,
+        "7": 15.0,
+        "9": 7.3
       }
     }
   ]
