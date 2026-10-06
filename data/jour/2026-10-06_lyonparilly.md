@@ -1,6 +1,6 @@
 # LYON-PARILLY — 06/10/2026
 
-8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -115,16 +115,16 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DU PARC BORELY
 
-*15h22 · plat · 1600 m · 9 partants · cotes de l'extraction*
+*15h22 · plat · 1600 m · 9 partants · cotes à T−29:36*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 4 | HE TOUCHED ME | 2,9 | 3,46 | -16,2 % | A.ORANI | 5/18/144/144 |
-| 6 | MARHARRY | 4,4 | 4,35 | **+1,2 %** | C.DEMURO | 1/66/34/434 |
-| 7 | KODIACOLOR | 4,4 | 4,85 | -9,3 % | E.CORALLO | 57/7/–/– |
-| 1 | JOH SPIRIT | 8,8 | 10,70 | -17,7 % | M.GRANDIN | 3/181/61/143 |
-| 3 | NOVA HOPE | 8,8 | 9,43 | -6,7 % | A.LEMAITRE | 11/50/309/2607 |
-| 9 | ZASYMOKA | 8,8 | 10,08 | -12,7 % | D.PROVOST | 33/77/100/688 |
-| 2 | HAZA | – | – |  | F.LEFEBVRE | 41/290/270/391 |
-| 5 | MAKAROV | – | – |  | M.MARQUETTE | 54/14/398/358 |
-| 8 | PRECIOSO | – | – |  | S.PASQUIER | 23/6/191/251 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 4 | HE TOUCHED ME | 4,6 | 2,9 | 5,89 | -21,8 % | A.ORANI | 5/18/144/144 |
+| 6 | MARHARRY | 6,2 | 4,4 | 6,34 | -2,2 % | C.DEMURO | 1/66/34/434 |
+| 7 | KODIACOLOR | 6,8 | 4,4 | 7,94 | -14,4 % | E.CORALLO | 57/7/–/– |
+| 8 | PRECIOSO | 8,2 | – | 10,56 | -22,3 % | S.PASQUIER | 23/6/191/251 |
+| 9 | ZASYMOKA | 9,2 | 8,8 | 10,64 | -13,6 % | D.PROVOST | 33/77/100/688 |
+| 2 | HAZA | 9,4 | – | 11,59 | -18,9 % | F.LEFEBVRE | 41/290/270/391 |
+| 3 | NOVA HOPE | 10 | 8,8 | 10,97 | -8,8 % | A.LEMAITRE | 11/50/309/2607 |
+| 1 | JOH SPIRIT | 11 | 8,8 | 13,95 | -21,1 % | M.GRANDIN | 3/181/61/143 |
+| 5 | MAKAROV | 11 | – | 13,95 | -21,1 % | M.MARQUETTE | 54/14/398/358 |
