@@ -2,7 +2,9 @@
 
 8 courses.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+**Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
+La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
+Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classements ci-dessus.
 
 ---
 
@@ -102,24 +104,24 @@
 
 ### 6. PRIX DE L'HOTEL DE VERMANDOIS
 
-*14h47 · plat · 1200 m · 14 partants · cotes de l'extraction*
+*14h47 · plat · 1200 m · 14 partants · cotes à T−11:04*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | NAVACERRADA | – | C.DEMURO | 1/66/199/61 |
-| 2 | LOVE ADDICT | – | L.BOISSEAU | 36/230/1005/355 |
-| 3 | AMELIA | – | A.MADAMET | 10/249/5/1011 |
-| 4 | AVEC DES SI | – | T.TRULLIER | 21/54/74/535 |
-| 5 | KENDARO | – | M.GUYON | 4/21/4/612 |
-| 6 | PERFECT MOON | – | C.COLLET-VIDAL | 119/180/1137/709 |
-| 7 | MISTY CITY | – | L.GALLO | 45/15/91/273 |
-| 8 | CHACUN SA VIE | – | F.VALLE SKAR | 35/15/15/36 |
-| 9 | HATSLIANA | – | D.SANTIAGO | 15/197/2489/1750 |
-| 10 | NIOUININON | – | E.HARDOUIN | 27/320/–/502 |
-| 11 | POSSI | – | P.REMOUE | 37/15/4/16 |
-| 12 | BAILEYS HIP HOP | – | A.LEMAITRE | 11/161/172/1659 |
-| 13 | FARAWAY TREE | – | S.TISON | 98/582/3890/2226 |
-| 14 | CHARM PLATIN | – | P.CHEYER | 109/90/894/1347 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 1 | NAVACERRADA | 4,3 | 5,35 | -19,6 % | C.DEMURO | 1/66/199/61 |
+| 5 | KENDARO | 6,9 | 8,59 | -19,7 % | M.GUYON | 4/21/4/612 |
+| 4 | AVEC DES SI | 8,5 | 10,26 | -17,1 % | T.TRULLIER | 21/54/74/535 |
+| 7 | MISTY CITY | 10 | 13,29 | -24,7 % | L.GALLO | 45/15/91/273 |
+| 8 | CHACUN SA VIE | 11 | 13,88 | -20,8 % | F.VALLE SKAR | 35/15/15/36 |
+| 10 | NIOUININON | 12 | 15,38 | -22,0 % | E.HARDOUIN | 27/320/–/502 |
+| 11 | POSSI | 12 | 15,38 | -22,0 % | P.REMOUE | 37/15/4/16 |
+| 6 | PERFECT MOON | 13 | 16,90 | -23,1 % | C.COLLET-VIDAL | 119/180/1137/709 |
+| 2 | LOVE ADDICT | 14 | 18,43 | -24,0 % | L.BOISSEAU | 36/230/1005/355 |
+| 3 | AMELIA | 19 | 26,33 | -27,8 % | A.MADAMET | 10/249/5/1011 |
+| 9 | HATSLIANA | 19 | 24,01 | -20,9 % | D.SANTIAGO | 15/197/2489/1750 |
+| 14 | CHARM PLATIN | 34 | 51,15 | -33,5 % | P.CHEYER | 109/90/894/1347 |
+| 12 | BAILEYS HIP HOP | 55 | 78,86 | -30,3 % | A.LEMAITRE | 11/161/172/1659 |
+| 13 | FARAWAY TREE | 78 | 114,08 | -31,6 % | S.TISON | 98/582/3890/2226 |
 
 ### 7. PRIX DU BOIS BOURILLON
 
