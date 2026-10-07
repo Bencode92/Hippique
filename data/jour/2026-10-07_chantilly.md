@@ -104,24 +104,24 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DE L'HOTEL DE VERMANDOIS
 
-*14h47 · plat · 1200 m · 14 partants · cotes à T−6:24*
+*14h47 · plat · 1200 m · 14 partants · cotes à T−3:44*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 1 | NAVACERRADA | 4,2 | 5,16 | -18,6 % | C.DEMURO | 1/66/199/61 |
-| 4 | AVEC DES SI | 6,4 | 7,30 | -12,4 % | T.TRULLIER | 21/54/74/535 |
-| 5 | KENDARO | 7,3 | 9,07 | -19,5 % | M.GUYON | 4/21/4/612 |
-| 8 | CHACUN SA VIE | 11 | 13,73 | -19,9 % | F.VALLE SKAR | 35/15/15/36 |
-| 11 | POSSI | 12 | 15,21 | -21,1 % | P.REMOUE | 37/15/4/16 |
-| 7 | MISTY CITY | 13 | 17,92 | -27,4 % | L.GALLO | 45/15/91/273 |
-| 6 | PERFECT MOON | 14 | 18,23 | -23,2 % | C.COLLET-VIDAL | 119/180/1137/709 |
-| 10 | NIOUININON | 14 | 18,23 | -23,2 % | E.HARDOUIN | 27/320/–/502 |
-| 2 | LOVE ADDICT | 16 | 21,32 | -25,0 % | L.BOISSEAU | 36/230/1005/355 |
-| 3 | AMELIA | 19 | 26,05 | -27,1 % | A.MADAMET | 10/249/5/1011 |
-| 9 | HATSLIANA | 21 | 26,66 | -21,2 % | D.SANTIAGO | 15/197/2489/1750 |
-| 14 | CHARM PLATIN | 34 | 50,62 | -32,8 % | P.CHEYER | 109/90/894/1347 |
-| 12 | BAILEYS HIP HOP | 38 | 52,15 | -27,1 % | A.LEMAITRE | 11/161/172/1659 |
-| 13 | FARAWAY TREE | 82 | 119,01 | -31,1 % | S.TISON | 98/582/3890/2226 |
+| 1 | NAVACERRADA | 4 | 4,87 | -17,8 % | C.DEMURO | 1/66/199/61 |
+| 5 | KENDARO | 4,4 | 5,07 | -13,2 % | M.GUYON | 4/21/4/612 |
+| 4 | AVEC DES SI | 6,7 | 7,66 | -12,6 % | T.TRULLIER | 21/54/74/535 |
+| 8 | CHACUN SA VIE | 13 | 16,64 | -21,9 % | F.VALLE SKAR | 35/15/15/36 |
+| 11 | POSSI | 13 | 16,64 | -21,9 % | P.REMOUE | 37/15/4/16 |
+| 7 | MISTY CITY | 14 | 19,47 | -28,1 % | L.GALLO | 45/15/91/273 |
+| 6 | PERFECT MOON | 16 | 21,23 | -24,6 % | C.COLLET-VIDAL | 119/180/1137/709 |
+| 2 | LOVE ADDICT | 20 | 27,52 | -27,3 % | L.BOISSEAU | 36/230/1005/355 |
+| 9 | HATSLIANA | 20 | 25,10 | -20,3 % | D.SANTIAGO | 15/197/2489/1750 |
+| 10 | NIOUININON | 21 | 29,12 | -27,9 % | E.HARDOUIN | 27/320/–/502 |
+| 3 | AMELIA | 28 | 40,50 | -30,9 % | A.MADAMET | 10/249/5/1011 |
+| 14 | CHARM PLATIN | 44 | 67,09 | -34,4 % | P.CHEYER | 109/90/894/1347 |
+| 12 | BAILEYS HIP HOP | 50 | 70,17 | -28,7 % | A.LEMAITRE | 11/161/172/1659 |
+| 13 | FARAWAY TREE | 88 | 127,51 | -31,0 % | S.TISON | 98/582/3890/2226 |
 
 ### 7. PRIX DU BOIS BOURILLON
 
