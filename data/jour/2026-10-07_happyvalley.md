@@ -164,14 +164,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | AURIO | 3 | PURTON Z. |
-| 7 | THE HEIR | 4,2 | HO C.Y. |
-| 9 | LIVE WIRE | 5,2 | ATZENI A. |
-| 2 | MOTOR | 8,6 | LEUNG K.C. |
-| 5 | THUNDER KIT | 13 | HEWITSON L. |
-| 11 | STORMING DRAGON | 14 | WONG P.N. |
-| 8 | HONEST WITNESS | 19 | POON M.F. |
-| 12 | THUNDER ACTION | 23 | YEUNG M.L. |
-| 3 | GUSTOSISIMO | 24 | CHUNG Y.L. |
-| 4 | AMAZING KID | 30 | BADEL A. |
-| 10 | TRIPLE FORTUNE | 42 | KINGSCOTE R. |
+| 7 | THE HEIR | 2,1 | HO C.Y. |
+| 1 | AURIO | 4,4 | PURTON Z. |
+| 9 | LIVE WIRE | 6,2 | ATZENI A. |
+| 2 | MOTOR | 14 | LEUNG K.C. |
+| 11 | STORMING DRAGON | 16 | WONG P.N. |
+| 5 | THUNDER KIT | 16 | HEWITSON L. |
+| 8 | HONEST WITNESS | 20 | POON M.F. |
+| 3 | GUSTOSISIMO | 32 | CHUNG Y.L. |
+| 12 | THUNDER ACTION | 35 | YEUNG M.L. |
+| 4 | AMAZING KID | 39 | BADEL A. |
+| 10 | TRIPLE FORTUNE | 80 | KINGSCOTE R. |
