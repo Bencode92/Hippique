@@ -125,26 +125,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DU BOIS BOURILLON
 
-*15h22 · plat · 1900 m · 16 partants · cotes de l'extraction*
+*15h22 · plat · 1900 m · 16 partants · cotes à T−29:24*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | NOOTKA BAY | – | M.VELON | 28/117/433/2263 |
-| 2 | FLY HALF | – | A.MADAMET | 10/163/332/341 |
-| 3 | JOYEUSE SAGE | – | F.VALLE SKAR | 35/163/452/1530 |
-| 4 | PIERRE LE GRAND | – | M.GUYON 4e | 4/326/375/615 |
-| 5 | MOON RIDER | – | C.COLLET-VIDAL | 119/180/38/1092 |
-| 6 | DOUBLE EFFECT | – | C.DEMURO | 1/97/60/905 |
-| 7 | EMINENCE GRISE | – | A.POUCHIN | 6/59/834/1191 |
-| 8 | TWARAB | – | P.REMOUE | 37/147/15/3025 |
-| 9 | KIEVSKY | – | E.HARDOUIN | 27/262/366/292 |
-| 10 | JUDICIOUS GAME | – | D.PROVOST | 33/34/291/405 |
-| 11 | CEROS GOLD | – | J.MOUTARD | 61/670/123/2969 |
-| 12 | MONEY MONEY | – | C.BELMONT | 171/525/88/1705 |
-| 13 | NEUSCHWANSTEIN | – | C.SOUMILLON 5e | 7/133/866/47 |
-| 14 | AUCOEURDELANUIT | – | C.LECOEUVRE | 13/87/1112/719 |
-| 15 | BRAVE SHIINA | – | A.LEMAITRE | 11/69/2106/515 |
-| 16 | ANDY'S SPIRIT | – | S.PASQUIER | 23/106/700/1125 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 3 | JOYEUSE SAGE | 6,2 | 6,60 | -6,0 % | F.VALLE SKAR | 35/163/452/1530 |
+| 4 | PIERRE LE GRAND | 6,4 | 8,01 | -20,1 % | M.GUYON 4e | 4/326/375/615 |
+| 13 | NEUSCHWANSTEIN | 8,8 | 9,98 | -11,8 % | C.SOUMILLON 5e | 7/133/866/47 |
+| 1 | NOOTKA BAY | 10 | 11,13 | -10,2 % | M.VELON | 28/117/433/2263 |
+| 6 | DOUBLE EFFECT | 11 | 12,44 | -11,6 % | C.DEMURO | 1/97/60/905 |
+| 15 | BRAVE SHIINA | 11 | 14,16 | -22,3 % | A.LEMAITRE | 11/69/2106/515 |
+| 10 | JUDICIOUS GAME | 15 | 20,39 | -26,4 % | D.PROVOST | 33/34/291/405 |
+| 16 | ANDY'S SPIRIT | 16 | 23,60 | -32,2 % | S.PASQUIER | 23/106/700/1125 |
+| 2 | FLY HALF | 19 | 26,87 | -29,3 % | A.MADAMET | 10/163/332/341 |
+| 7 | EMINENCE GRISE | 20 | 26,00 | -23,1 % | A.POUCHIN | 6/59/834/1191 |
+| 8 | TWARAB | 21 | 30,18 | -30,4 % | P.REMOUE | 37/147/15/3025 |
+| 9 | KIEVSKY | 22 | 27,82 | -20,9 % | E.HARDOUIN | 27/262/366/292 |
+| 14 | AUCOEURDELANUIT | 26 | 30,67 | -15,2 % | C.LECOEUVRE | 13/87/1112/719 |
+| 11 | CEROS GOLD | 29 | 39,76 | -27,1 % | J.MOUTARD | 61/670/123/2969 |
+| 5 | MOON RIDER | 34 | 41,47 | -18,0 % | C.COLLET-VIDAL | 119/180/38/1092 |
+| 12 | MONEY MONEY | 47 | 65,10 | -27,8 % | C.BELMONT | 171/525/88/1705 |
 
 ### 8. PRIX DE SENLIS
 
