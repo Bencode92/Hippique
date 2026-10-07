@@ -1,6 +1,6 @@
 # CHANTILLY — 07/10/2026
 
-8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -101,47 +101,47 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DE L'HOTEL DE VERMANDOIS
 
-*14h47 · plat · 1200 m · 14 partants · cotes de l'extraction*
+*14h47 · plat · 1200 m · 14 partants · cotes à T−0:24*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 1 | NAVACERRADA | 3,2 | 3,51 | -8,7 % | C.DEMURO | 1/66/199/61 |
-| 5 | KENDARO | 6 | 7,26 | -17,4 % | M.GUYON | 4/21/4/612 |
-| 4 | AVEC DES SI | 8 | 9,50 | -15,8 % | T.TRULLIER | 21/54/74/535 |
-| 11 | POSSI | 8,6 | 10,34 | -16,8 % | P.REMOUE | 37/15/4/16 |
-| 6 | PERFECT MOON | 10 | 12,34 | -19,0 % | C.COLLET-VIDAL | 119/180/1137/709 |
-| 8 | CHACUN SA VIE | 13 | 16,06 | -19,0 % | F.VALLE SKAR | 35/15/15/36 |
-| 7 | MISTY CITY | 15 | 20,36 | -26,3 % | L.GALLO | 45/15/91/273 |
-| 9 | HATSLIANA | 21 | 25,59 | -17,9 % | D.SANTIAGO | 15/197/2489/1750 |
-| 2 | LOVE ADDICT | 22 | 29,61 | -25,7 % | L.BOISSEAU | 36/230/1005/355 |
-| 12 | BAILEYS HIP HOP | 32 | 39,43 | -18,8 % | A.LEMAITRE | 11/161/172/1659 |
-| 10 | NIOUININON | 35 | 50,13 | -30,2 % | E.HARDOUIN | 27/320/–/502 |
-| 3 | AMELIA | 45 | 66,17 | -32,0 % | A.MADAMET | 10/249/5/1011 |
-| 14 | CHARM PLATIN | 81 | 123,79 | -34,6 % | P.CHEYER | 109/90/894/1347 |
-| 13 | FARAWAY TREE | 103 | 150,97 | -31,8 % | S.TISON | 98/582/3890/2226 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 1 | NAVACERRADA | 2,9 | 3,2 | 3,15 | -7,9 % | C.DEMURO | 1/66/199/61 |
+| 5 | KENDARO | 5,1 | 6 | 5,51 | -7,5 % | M.GUYON | 4/21/4/612 |
+| 4 | AVEC DES SI | 7,8 | 8 | 9,12 | -14,5 % | T.TRULLIER | 21/54/74/535 |
+| 11 | POSSI | 9,9 | 8,6 | 12,05 | -17,9 % | P.REMOUE | 37/15/4/16 |
+| 7 | MISTY CITY | 14 | 15 | 19,42 | -27,9 % | L.GALLO | 45/15/91/273 |
+| 8 | CHACUN SA VIE | 16 | 13 | 20,23 | -20,9 % | F.VALLE SKAR | 35/15/15/36 |
+| 6 | PERFECT MOON | 21 | 10 | 27,74 | -24,3 % | C.COLLET-VIDAL | 119/180/1137/709 |
+| 9 | HATSLIANA | 24 | 21 | 29,47 | -18,6 % | D.SANTIAGO | 15/197/2489/1750 |
+| 2 | LOVE ADDICT | 25 | 22 | 33,89 | -26,2 % | L.BOISSEAU | 36/230/1005/355 |
+| 10 | NIOUININON | 27 | 35 | 36,99 | -27,0 % | E.HARDOUIN | 27/320/–/502 |
+| 12 | BAILEYS HIP HOP | 33 | 32 | 40,35 | -18,2 % | A.LEMAITRE | 11/161/172/1659 |
+| 3 | AMELIA | 40 | 45 | 57,49 | -30,4 % | A.MADAMET | 10/249/5/1011 |
+| 14 | CHARM PLATIN | 67 | 81 | 100,43 | -33,3 % | P.CHEYER | 109/90/894/1347 |
+| 13 | FARAWAY TREE | 112 | 103 | 162,60 | -31,1 % | S.TISON | 98/582/3890/2226 |
 
 ### 7. PRIX DU BOIS BOURILLON
 
-*15h22 · plat · 1900 m · 16 partants · cotes de l'extraction*
+*15h22 · plat · 1900 m · 16 partants · cotes à T−29:24*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 4 | PIERRE LE GRAND | 5,2 | 6,23 | -16,5 % | M.GUYON 4e | 4/326/375/615 |
-| 13 | NEUSCHWANSTEIN | 6,4 | 6,91 | -7,4 % | C.SOUMILLON 5e | 7/133/866/47 |
-| 6 | DOUBLE EFFECT | 7,7 | 7,57 | **+1,8 %** | C.DEMURO | 1/97/60/905 |
-| 1 | NOOTKA BAY | 10 | 11,13 | -10,1 % | M.VELON | 28/117/433/2263 |
-| 5 | MOON RIDER | 12 | 11,54 | **+4,0 %** | C.COLLET-VIDAL | 119/180/38/1092 |
-| 7 | EMINENCE GRISE | 12 | 13,12 | -8,6 % | A.POUCHIN | 6/59/834/1191 |
-| 15 | BRAVE SHIINA | 15 | 19,47 | -23,0 % | A.LEMAITRE | 11/69/2106/515 |
-| 3 | JOYEUSE SAGE | 17 | 24,18 | -29,7 % | F.VALLE SKAR | 35/163/452/1530 |
-| 9 | KIEVSKY | 21 | 26,36 | -20,3 % | E.HARDOUIN | 27/262/366/292 |
-| 16 | ANDY'S SPIRIT | 22 | 32,63 | -32,6 % | S.PASQUIER | 23/106/700/1125 |
-| 10 | JUDICIOUS GAME | 23 | 31,97 | -28,1 % | D.PROVOST | 33/34/291/405 |
-| 2 | FLY HALF | 24 | 35,18 | -31,8 % | A.MADAMET | 10/163/332/341 |
-| 8 | TWARAB | 25 | 36,86 | -32,2 % | P.REMOUE | 37/147/15/3025 |
-| 11 | CEROS GOLD | 35 | 46,83 | -25,3 % | J.MOUTARD | 61/670/123/2969 |
-| 14 | AUCOEURDELANUIT | 36 | 42,14 | -14,6 % | C.LECOEUVRE | 13/87/1112/719 |
-| 12 | MONEY MONEY | 63 | 85,01 | -25,9 % | C.BELMONT | 171/525/88/1705 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 3 | JOYEUSE SAGE | 6,2 | 17 | 6,60 | -6,0 % | F.VALLE SKAR | 35/163/452/1530 |
+| 4 | PIERRE LE GRAND | 6,4 | 5,2 | 8,01 | -20,1 % | M.GUYON 4e | 4/326/375/615 |
+| 13 | NEUSCHWANSTEIN | 8,8 | 6,4 | 9,98 | -11,8 % | C.SOUMILLON 5e | 7/133/866/47 |
+| 1 | NOOTKA BAY | 10 | 10 | 11,13 | -10,2 % | M.VELON | 28/117/433/2263 |
+| 15 | BRAVE SHIINA | 11 | 15 | 14,16 | -22,3 % | A.LEMAITRE | 11/69/2106/515 |
+| 6 | DOUBLE EFFECT | 11 | 7,7 | 12,44 | -11,6 % | C.DEMURO | 1/97/60/905 |
+| 10 | JUDICIOUS GAME | 15 | 23 | 20,39 | -26,4 % | D.PROVOST | 33/34/291/405 |
+| 16 | ANDY'S SPIRIT | 16 | 22 | 23,60 | -32,2 % | S.PASQUIER | 23/106/700/1125 |
+| 2 | FLY HALF | 19 | 24 | 26,87 | -29,3 % | A.MADAMET | 10/163/332/341 |
+| 7 | EMINENCE GRISE | 20 | 12 | 26,00 | -23,1 % | A.POUCHIN | 6/59/834/1191 |
+| 8 | TWARAB | 21 | 25 | 30,18 | -30,4 % | P.REMOUE | 37/147/15/3025 |
+| 9 | KIEVSKY | 22 | 21 | 27,82 | -20,9 % | E.HARDOUIN | 27/262/366/292 |
+| 14 | AUCOEURDELANUIT | 26 | 36 | 30,67 | -15,2 % | C.LECOEUVRE | 13/87/1112/719 |
+| 11 | CEROS GOLD | 29 | 35 | 39,76 | -27,1 % | J.MOUTARD | 61/670/123/2969 |
+| 5 | MOON RIDER | 34 | 12 | 41,47 | -18,0 % | C.COLLET-VIDAL | 119/180/38/1092 |
+| 12 | MONEY MONEY | 47 | 63 | 65,10 | -27,8 % | C.BELMONT | 171/525/88/1705 |
 
 ### 8. PRIX DE SENLIS
 
