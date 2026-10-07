@@ -126,39 +126,39 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 3 | JOYEUSE SAGE | 6,7 | 7,14 | -6,2 % | F.VALLE SKAR | 35/163/452/1530 |
-| 4 | PIERRE LE GRAND | 6,7 | 7,14 | -6,2 % | M.GUYON 4e | 4/326/375/615 |
-| 13 | NEUSCHWANSTEIN | 8,2 | 9,12 | -10,1 % | C.SOUMILLON 5e | 7/133/866/47 |
-| 6 | DOUBLE EFFECT | 10 | 11,04 | -9,4 % | C.DEMURO | 1/97/60/905 |
-| 1 | NOOTKA BAY | 11 | 12,33 | -10,8 % | M.VELON | 28/117/433/2263 |
-| 15 | BRAVE SHIINA | 11 | 14,03 | -21,6 % | A.LEMAITRE | 11/69/2106/515 |
-| 9 | KIEVSKY | 15 | 16,19 | -7,3 % | E.HARDOUIN | 27/262/366/292 |
-| 10 | JUDICIOUS GAME | 16 | 21,80 | -26,6 % | D.PROVOST | 33/34/291/405 |
-| 16 | ANDY'S SPIRIT | 18 | 26,85 | -33,0 % | S.PASQUIER | 23/106/700/1125 |
-| 7 | EMINENCE GRISE | 19 | 24,29 | -21,8 % | A.POUCHIN | 6/59/834/1191 |
-| 2 | FLY HALF | 22 | 31,57 | -30,3 % | A.MADAMET | 10/163/332/341 |
-| 8 | TWARAB | 22 | 31,57 | -30,3 % | P.REMOUE | 37/147/15/3025 |
-| 14 | AUCOEURDELANUIT | 26 | 30,42 | -14,5 % | C.LECOEUVRE | 13/87/1112/719 |
-| 11 | CEROS GOLD | 29 | 39,43 | -26,4 % | J.MOUTARD | 61/670/123/2969 |
-| 5 | MOON RIDER | 34 | 41,13 | -17,3 % | C.COLLET-VIDAL | 119/180/38/1092 |
-| 12 | MONEY MONEY | 50 | 69,07 | -27,6 % | C.BELMONT | 171/525/88/1705 |
+| 4 | PIERRE LE GRAND | 5,2 | 6,23 | -16,5 % | M.GUYON 4e | 4/326/375/615 |
+| 13 | NEUSCHWANSTEIN | 6,4 | 6,91 | -7,4 % | C.SOUMILLON 5e | 7/133/866/47 |
+| 6 | DOUBLE EFFECT | 7,7 | 7,57 | **+1,8 %** | C.DEMURO | 1/97/60/905 |
+| 1 | NOOTKA BAY | 10 | 11,13 | -10,1 % | M.VELON | 28/117/433/2263 |
+| 5 | MOON RIDER | 12 | 11,54 | **+4,0 %** | C.COLLET-VIDAL | 119/180/38/1092 |
+| 7 | EMINENCE GRISE | 12 | 13,12 | -8,6 % | A.POUCHIN | 6/59/834/1191 |
+| 15 | BRAVE SHIINA | 15 | 19,47 | -23,0 % | A.LEMAITRE | 11/69/2106/515 |
+| 3 | JOYEUSE SAGE | 17 | 24,18 | -29,7 % | F.VALLE SKAR | 35/163/452/1530 |
+| 9 | KIEVSKY | 21 | 26,36 | -20,3 % | E.HARDOUIN | 27/262/366/292 |
+| 16 | ANDY'S SPIRIT | 22 | 32,63 | -32,6 % | S.PASQUIER | 23/106/700/1125 |
+| 10 | JUDICIOUS GAME | 23 | 31,97 | -28,1 % | D.PROVOST | 33/34/291/405 |
+| 2 | FLY HALF | 24 | 35,18 | -31,8 % | A.MADAMET | 10/163/332/341 |
+| 8 | TWARAB | 25 | 36,86 | -32,2 % | P.REMOUE | 37/147/15/3025 |
+| 11 | CEROS GOLD | 35 | 46,83 | -25,3 % | J.MOUTARD | 61/670/123/2969 |
+| 14 | AUCOEURDELANUIT | 36 | 42,14 | -14,6 % | C.LECOEUVRE | 13/87/1112/719 |
+| 12 | MONEY MONEY | 63 | 85,01 | -25,9 % | C.BELMONT | 171/525/88/1705 |
 
 ### 8. PRIX DE SENLIS
 
-*15h57 · plat · 1200 m · 13 partants · cotes de l'extraction*
+*16h01 · plat · 1200 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 2 | MARBELLESA | 6,1 | 6,11 | -0,2 % | C.SOUMILLON | 7/22/80/32 |
-| 3 | SAINT SAENS | 6,4 | 6,44 | -0,6 % | M.VELON | 28/8/18/645 |
-| 12 | GOUTTES DE DIEU | 6,6 | 6,95 | -5,0 % | R.THOMAS | 75/11/59/3075 |
-| 6 | OSHIA | 8,1 | 9,16 | -11,6 % | M.BARZALONA 2e | 2/117/29/3019 |
-| 8 | ZENADIA | 8,1 | 9,56 | -15,3 % | A.MOLINS | 34/81/948/120 |
-| 11 | HOLLIE WOOD | 12 | 14,87 | -19,3 % | T.TRULLIER | 21/54/547/535 |
-| 7 | VIZIOSA | 14 | 17,81 | -21,4 % | A.POUCHIN | 6/48/37/1609 |
-| 10 | SIGHISH | 15 | 18,83 | -20,3 % | F.VALLE SKAR | 35/87/102/4 |
-| 1 | ADONIDE | 16 | 20,83 | -23,2 % | S.PASQUIER | 23/37/20/398 |
-| 14 | ROMAN BOY | 20 | 22,94 | -12,8 % | A.MADAMET | 10/299/24/218 |
-| 9 | DAMN PRECIOUS | 27 | 32,31 | -16,4 % | T.BACHELOT | 16/53/906/715 |
-| 5 | SKY DREAM | 29 | 42,19 | -31,3 % | C.DEMURO | 1/16/32/2589 |
-| 4 | INDY B | 35 | 52,14 | -32,9 % | A.LEMAITRE | 11/9/3316/4 |
+| 2 | MARBELLESA | 3 | 3,21 | -6,5 % | C.SOUMILLON | 7/22/80/32 |
+| 12 | GOUTTES DE DIEU | 6,5 | 7,45 | -12,7 % | R.THOMAS | 75/11/59/3075 |
+| 6 | OSHIA | 7,4 | 8,65 | -14,5 % | M.BARZALONA 2e | 2/117/29/3019 |
+| 11 | HOLLIE WOOD | 12 | 16,34 | -26,6 % | T.TRULLIER | 21/54/547/535 |
+| 5 | SKY DREAM | 14 | 16,71 | -16,2 % | C.DEMURO | 1/16/32/2589 |
+| 3 | SAINT SAENS | 16 | 18,63 | -14,1 % | M.VELON | 28/8/18/645 |
+| 10 | SIGHISH | 17 | 22,93 | -25,9 % | F.VALLE SKAR | 35/87/102/4 |
+| 4 | INDY B | 19 | 23,83 | -20,3 % | A.LEMAITRE | 11/9/3316/4 |
+| 1 | ADONIDE | 19 | 26,76 | -29,0 % | S.PASQUIER | 23/37/20/398 |
+| 9 | DAMN PRECIOUS | 19 | 23,81 | -20,2 % | T.BACHELOT | 16/53/906/715 |
+| 8 | ZENADIA | 23 | 31,07 | -26,0 % | A.MOLINS | 34/81/948/120 |
+| 14 | ROMAN BOY | 33 | 42,61 | -22,5 % | A.MADAMET | 10/299/24/218 |
+| 7 | VIZIOSA | 36 | 55,45 | -35,1 % | A.POUCHIN | 6/48/37/1609 |

@@ -12,14 +12,14 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 5 | LADY MANZOR | 1,1 | CHARLIE TUCKER | –/–/–/– |
-| 8 | TIMELY AFFAIR | 8,7 | TOBY MOORE | 287/823/–/– |
-| 2 | ARANTES NASCIMENTO | 14 | JAMES GLENNON | –/–/–/– |
-| 3 | RECEIPT | 21 | ALFIE REDMAN | –/–/–/– |
-| 6 | CARAGIO | 21 | TARYN LANGLEY | –/–/–/– |
-| 7 | STRIKE | 43 | OLIVIA TUBB | –/896/–/– |
-| 1 | SILVER TRUMPET | – | OLIVER CARMICHAEL | –/550/–/– |
-| 4 | CUBAN LADY | – | ISOBELLE CHALMERS | –/–/–/– |
+| 5 | LADY MANZOR | 2,9 | CHARLIE TUCKER | –/–/–/– |
+| 4 | CUBAN LADY | 3,1 | ISOBELLE CHALMERS | –/–/–/– |
+| 1 | SILVER TRUMPET | 7,3 | OLIVER CARMICHAEL | –/550/–/– |
+| 8 | TIMELY AFFAIR | 10 | TOBY MOORE | 287/823/–/– |
+| 6 | CARAGIO | 13 | TARYN LANGLEY | –/–/–/– |
+| 2 | ARANTES NASCIMENTO | 16 | JAMES GLENNON | –/–/–/– |
+| 3 | RECEIPT | 18 | ALFIE REDMAN | –/–/–/– |
+| 7 | STRIKE | 18 | OLIVIA TUBB | –/896/–/– |
 
 ### 2. EBF NOVICE STAKES (CLASS 3)
 
@@ -27,14 +27,14 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | BYZANTINE | 2,5 | BILLY LOUGHNANE | 223/433/–/5588 |
-| 2 | FENAROLI | 2,9 | LEWIS EDMUNDS | 410/855/–/– |
-| 4 | LANCASTER TOWER | 5,8 | WILLIAM BUICK | 168/55/–/– |
-| 6 | OLDBULLYOUNGBULL | 17 | CIEREN FALLON | 321/456/–/– |
-| 7 | PALLADINO | 17 | GEORGE DOWNING | –/103/–/48 |
-| 8 | RED WIZARD | 17 | GEORGE WOOD | –/855/–/– |
-| 9 | TWELVE BARS | 17 | OISIN MURPHY | 144/209/–/– |
-| 5 | ODELL | – | ROBERT HAVLIN | 493/150/–/5760 |
+| 1 | BYZANTINE | 3,1 | BILLY LOUGHNANE | 223/433/–/5588 |
+| 2 | FENAROLI | 3,6 | LEWIS EDMUNDS | 410/855/–/– |
+| 4 | LANCASTER TOWER | 5,1 | WILLIAM BUICK | 168/55/–/– |
+| 5 | ODELL | 6,3 | ROBERT HAVLIN | 493/150/–/5760 |
+| 9 | TWELVE BARS | 12 | OISIN MURPHY | 144/209/–/– |
+| 6 | OLDBULLYOUNGBULL | 25 | CIEREN FALLON | 321/456/–/– |
+| 7 | PALLADINO | 25 | GEORGE DOWNING | –/103/–/48 |
+| 8 | RED WIZARD | 25 | GEORGE WOOD | –/855/–/– |
 
 ### 3. MAIDEN FILLIES' STAKES (CLASS 3)
 
@@ -42,13 +42,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 6 | INMYOPINION | 1,7 | FINLEY MARSH | –/–/–/– |
-| 3 | FOREVER FAITHFULL | 5,2 | ROB HORNBY | 257/896/–/– |
-| 4 | GHAIYYATH DREAM | 10 | BILLY LOUGHNANE | 223/253/–/124 |
-| 5 | GODSPEED GIRL | 10 | P. J. MCDONALD | 256/116/–/381 |
-| 8 | KISS OF LIFE | 10 | GEORGE BASS | 367/861/–/– |
-| 10 | PERPETUALLY | 10 | LEWIS EDMUNDS | 410/855/–/– |
-| 1 | AQUILA D'ORO | – | LUKE MORRIS | 247/447/–/38 |
+| 6 | INMYOPINION | 2,7 | FINLEY MARSH | –/–/–/– |
+| 5 | GODSPEED GIRL | 3,3 | P. J. MCDONALD | 256/116/–/381 |
+| 3 | FOREVER FAITHFULL | 8,3 | ROB HORNBY | 257/896/–/– |
+| 4 | GHAIYYATH DREAM | 8,3 | BILLY LOUGHNANE | 223/253/–/124 |
+| 10 | PERPETUALLY | 8,3 | LEWIS EDMUNDS | 410/855/–/– |
+| 1 | AQUILA D'ORO | 16 | LUKE MORRIS | 247/447/–/38 |
+| 8 | KISS OF LIFE | 16 | GEORGE BASS | 367/861/–/– |
 | 2 | CORONETA | – | WILLIAM CARVER | –/–/–/– |
 | 7 | JUMEIRAH PEARL | – | MARCO GHIANI | 376/–/–/1156 |
 | 9 | MISS TRICKSTER | – | SEAN LEVEY | 266/–/–/– |
@@ -61,13 +61,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | QUEEN OF SCOTLAND | 1,5 | BILLY LOUGHNANE | 223/433/–/– |
-| 6 | HATTA ROMANCE | 6,1 | TYLER HEARD | –/–/–/– |
-| 8 | SAAFFYA | 9,2 | GEORGE DOWNING | –/103/–/431 |
-| 1 | ALPINARA | 18 | DAVID EGAN | 312/–/–/63 |
-| 3 | PERZAANEH | 18 | CALLUM HUTCHINSON | –/–/–/– |
-| 7 | MARQUETRY | 18 | OISIN MURPHY | 144/116/–/550 |
-| 9 | YAMNAH | 18 | WILLIAM BUICK | 168/55/–/114 |
+| 2 | QUEEN OF SCOTLAND | 1,6 | BILLY LOUGHNANE | 223/433/–/– |
+| 6 | HATTA ROMANCE | 6,4 | TYLER HEARD | –/–/–/– |
+| 8 | SAAFFYA | 6,4 | GEORGE DOWNING | –/103/–/431 |
+| 1 | ALPINARA | 19 | DAVID EGAN | 312/–/–/63 |
+| 3 | PERZAANEH | 19 | CALLUM HUTCHINSON | –/–/–/– |
+| 7 | MARQUETRY | 19 | OISIN MURPHY | 144/116/–/550 |
+| 9 | YAMNAH | 19 | WILLIAM BUICK | 168/55/–/114 |
 | 4 | TRALEE BAY | – | ALISTAIR RAWLINSON | –/–/–/– |
 
 ### 5. HANDICAP (CLASS 6)
@@ -76,20 +76,20 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | SEEING STARS | 1,1 | LUKE MORRIS | 247/823/–/– |
-| 1 | ROYAL COUNTY GLORY | 14 | OISIN MURPHY | 144/–/–/– |
-| 11 | ODDJOB | 14 | GEORGE DOWNING | –/103/–/48 |
-| 3 | BECAUSE WE | 22 | P. J. MCDONALD | 256/815/–/– |
-| 7 | BLACK ENDEAVOUR | 22 | JACK MITCHELL | 314/–/–/– |
-| 4 | CIXI | 44 | FINLEY MARSH | –/540/–/5648 |
-| 10 | UPSOMDOWNS | 44 | PADDY BRADLEY | –/–/–/– |
-| 14 | CREDIT FORGEDD IT | 44 | SEAN LEVEY | 266/–/–/– |
+| 2 | SEEING STARS | 1,6 | LUKE MORRIS | 247/823/–/– |
+| 8 | STATION BAR | 5,5 | OLIVER CARMICHAEL | –/550/–/– |
+| 1 | ROYAL COUNTY GLORY | 12 | OISIN MURPHY | 144/–/–/– |
+| 11 | ODDJOB | 20 | GEORGE DOWNING | –/103/–/48 |
+| 14 | CREDIT FORGEDD IT | 20 | SEAN LEVEY | 266/–/–/– |
+| 3 | BECAUSE WE | 30 | P. J. MCDONALD | 256/815/–/– |
+| 7 | BLACK ENDEAVOUR | 30 | JACK MITCHELL | 314/–/–/– |
+| 10 | UPSOMDOWNS | 30 | PADDY BRADLEY | –/–/–/– |
+| 4 | CIXI | 60 | FINLEY MARSH | –/540/–/5648 |
+| 9 | FOR EVER HOPEFULL | 60 | JONNY PEATE | –/–/–/– |
+| 13 | BARBUDA BAY | 60 | DOUGIE COSTELLO | –/204/–/– |
 | 5 | MOJITO | – | CIEREN FALLON | 321/279/–/– |
 | 6 | SENOR CAMPANARO | – | CALLUM HUTCHINSON | –/–/–/– |
-| 8 | STATION BAR | – | OLIVER CARMICHAEL | –/550/–/– |
-| 9 | FOR EVER HOPEFULL | – | JONNY PEATE | –/–/–/– |
 | 12 | SURGEON COMMANDER | – | BILLY LOUGHNANE | 223/–/–/– |
-| 13 | BARBUDA BAY | – | DOUGIE COSTELLO | –/204/–/– |
 
 ### 6. HANDICAP (CLASS 5) (LONDON SPRINT SERIES QUALIFIER)
 
@@ -97,15 +97,15 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 3 | MADMAN | 2 | BILLY LOUGHNANE | 223/–/–/– |
-| 4 | CHARLIE BOYO | 6,6 | GEORGIA DOBIE | –/815/–/– |
-| 5 | KING OF CHAOS | 8,8 | MARCO GHIANI | 376/461/–/– |
-| 6 | AN OUTLAW'S GRACE | 8,8 | SEAN LEVEY | 266/279/–/– |
-| 9 | PERFECT LOCATION | 13 | ROB HORNBY | 257/–/–/– |
-| 10 | BLUE ORBIT | 13 | LUKE MORRIS | 247/–/–/– |
-| 2 | CALLING A STAR | 26 | FINLEY MARSH | –/253/–/– |
-| 7 | LIOSA | 26 | JACK DACE | –/–/–/– |
-| 8 | GOLDWORK | 26 | CALLUM HUTCHINSON | –/550/–/– |
+| 3 | MADMAN | 2,1 | BILLY LOUGHNANE | 223/–/–/– |
+| 4 | CHARLIE BOYO | 7 | GEORGIA DOBIE | –/815/–/– |
+| 5 | KING OF CHAOS | 9,4 | MARCO GHIANI | 376/461/–/– |
+| 6 | AN OUTLAW'S GRACE | 9,4 | SEAN LEVEY | 266/279/–/– |
+| 9 | PERFECT LOCATION | 9,4 | ROB HORNBY | 257/–/–/– |
+| 10 | BLUE ORBIT | 9,4 | LUKE MORRIS | 247/–/–/– |
+| 2 | CALLING A STAR | 28 | FINLEY MARSH | –/253/–/– |
+| 7 | LIOSA | 28 | JACK DACE | –/–/–/– |
+| 8 | GOLDWORK | 28 | CALLUM HUTCHINSON | –/550/–/– |
 | 1 | KINIRO | – | OISIN MURPHY | 144/–/–/– |
 | 11 | UP THE AGENDA | – | GEORGE WOOD | –/969/–/– |
 
@@ -115,12 +115,12 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 4 | LUAN | 1,1 | BILLY LOUGHNANE | 223/–/–/– |
-| 9 | LAST FLIGHT | 7,4 | DANIEL MUSCUTT | 452/491/–/– |
-| 5 | NOW THE EAGLE | 14 | JACK DACE | –/–/–/– |
-| 3 | AUTUMN'S BREEZE | 44 | FINLEY MARSH | –/687/–/– |
-| 6 | VILAINE VERLAINE | 44 | DOUGIE COSTELLO | –/–/–/– |
-| 7 | DESERT BELLE | 89 | LUKE MORRIS | 247/–/–/521 |
+| 4 | LUAN | 1,3 | BILLY LOUGHNANE | 223/–/–/– |
+| 5 | NOW THE EAGLE | 6,2 | JACK DACE | –/–/–/– |
+| 9 | LAST FLIGHT | 6,3 | DANIEL MUSCUTT | 452/491/–/– |
+| 3 | AUTUMN'S BREEZE | 50 | FINLEY MARSH | –/687/–/– |
+| 6 | VILAINE VERLAINE | 50 | DOUGIE COSTELLO | –/–/–/– |
+| 7 | DESERT BELLE | 101 | LUKE MORRIS | 247/–/–/521 |
 | 1 | GEMMARI | – | SEAN LEVEY | 266/279/–/– |
 | 2 | BENVOY | – | ROBERT HAVLIN | 493/–/–/– |
 | 8 | VIRTUE DILIGENCE | – | ROB HORNBY | 257/–/–/– |
@@ -131,14 +131,14 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 5 | VIOLET GOLDSMITH | 4,3 | CALLUM HUTCHINSON | –/550/–/– |
-| 11 | MBAPPE | 4,5 | BILLY LOUGHNANE | 223/–/–/– |
-| 8 | MAKES ME WONDER | 6,8 | TARYN LANGLEY | –/–/–/– |
-| 9 | CHICO DULCE | 6,8 | JACK DACE | –/–/–/– |
-| 10 | BRAVE NEW WORLD | 6,8 | GEORGE DOWNING | –/103/–/48 |
-| 3 | SNOOKER MCCREW | 9,1 | ALFIE REDMAN | –/–/–/– |
-| 1 | DIVINE WISH | 13 | ROB HORNBY | 257/–/–/– |
-| 7 | BLUE SAMUNA | 13 | ROBERT HAVLIN | 493/813/–/– |
+| 11 | MBAPPE | 1,9 | BILLY LOUGHNANE | 223/–/–/– |
+| 5 | VIOLET GOLDSMITH | 6,3 | CALLUM HUTCHINSON | –/550/–/– |
+| 8 | MAKES ME WONDER | 9,9 | TARYN LANGLEY | –/–/–/– |
+| 9 | CHICO DULCE | 9,9 | JACK DACE | –/–/–/– |
+| 10 | BRAVE NEW WORLD | 9,9 | GEORGE DOWNING | –/103/–/48 |
+| 3 | SNOOKER MCCREW | 13 | ALFIE REDMAN | –/–/–/– |
+| 1 | DIVINE WISH | 19 | ROB HORNBY | 257/–/–/– |
+| 7 | BLUE SAMUNA | 19 | ROBERT HAVLIN | 493/813/–/– |
 | 2 | FORCA TIMAO | – | KIEREN FOX | –/–/–/– |
 | 4 | PITNEY | – | JAMES GLENNON | –/–/–/– |
 | 6 | OUR DAGGER | – | FINLEY MARSH | –/–/–/– |

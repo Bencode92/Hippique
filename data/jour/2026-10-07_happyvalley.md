@@ -107,18 +107,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 9 | NO OTHER CHOICE | 3 | BADEL A. |
-| 10 | KWAI CHUNG TALENTS | 3,7 | YEUNG M.L. |
-| 5 | CALIFORNIA BAY | 4,6 | TEETAN K. |
-| 2 | GRIT SPIRIT | 13 | HO C.Y. |
-| 7 | POET'S REIGN | 16 | ORMAN J. |
-| 6 | KING OBERON | 18 | WONG P.N. |
-| 4 | UNSTOPPAPLE | 19 | LEUNG K.C. |
-| 3 | STARRY SHOW | 24 | KINGSCOTE R. |
-| 1 | HEALTHY HEALTHY | 26 | ATZENI A. |
-| 8 | HAPPY UNITED | 39 | CHADWICK M. |
-| 12 | MAJESTIC DELIGHT | 43 | BENTLEY H. |
-| 11 | VIEW OF COSMOS | 76 | POON M.F. |
+| 9 | NO OTHER CHOICE | 2,1 | BADEL A. |
+| 10 | KWAI CHUNG TALENTS | 3,1 | YEUNG M.L. |
+| 5 | CALIFORNIA BAY | 9,5 | TEETAN K. |
+| 4 | UNSTOPPAPLE | 16 | LEUNG K.C. |
+| 8 | HAPPY UNITED | 20 | CHADWICK M. |
+| 2 | GRIT SPIRIT | 21 | HO C.Y. |
+| 6 | KING OBERON | 22 | WONG P.N. |
+| 3 | STARRY SHOW | 30 | KINGSCOTE R. |
+| 7 | POET'S REIGN | 30 | ORMAN J. |
+| 1 | HEALTHY HEALTHY | 47 | ATZENI A. |
+| 12 | MAJESTIC DELIGHT | 80 | BENTLEY H. |
+| 11 | VIEW OF COSMOS | 139 | POON M.F. |
 
 ### 7. YIP FAT HANDICAP - SECTION 2
 
@@ -126,18 +126,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 5 | TARGET AUDIENCE | 3,9 | BADEL A. |
-| 11 | DARYL FLASH | 4,1 | CHUNG Y.L. |
-| 2 | FLYING WROTE | 4,9 | YUEN H.Y. |
-| 9 | BRIGHT DAY | 10 | LEUNG K.C. |
-| 10 | QUANTUM CLOUD | 13 | HEWITSON L. |
-| 7 | SAVVY BRILLIANT | 16 | ATZENI A. |
-| 4 | LUCKY PLANET | 17 | POON M.F. |
-| 3 | JUBILANT WINNER | 19 | WONG P.N. |
-| 12 | YOUNG ARROW | 19 | CHADWICK M. |
-| 1 | AURORA LADY | 21 | YEUNG M.L. |
-| 8 | MATTERS MOST | 31 | WONG E.C.W. |
-| 6 | POWER KOEPP | 33 | FERRARIS L. |
+| 11 | DARYL FLASH | 3,9 | CHUNG Y.L. |
+| 5 | TARGET AUDIENCE | 5,7 | BADEL A. |
+| 2 | FLYING WROTE | 6,1 | YUEN H.Y. |
+| 9 | BRIGHT DAY | 7,2 | LEUNG K.C. |
+| 12 | YOUNG ARROW | 8,2 | CHADWICK M. |
+| 10 | QUANTUM CLOUD | 11 | HEWITSON L. |
+| 8 | MATTERS MOST | 11 | WONG E.C.W. |
+| 1 | AURORA LADY | 17 | YEUNG M.L. |
+| 7 | SAVVY BRILLIANT | 25 | ATZENI A. |
+| 3 | JUBILANT WINNER | 27 | WONG P.N. |
+| 4 | LUCKY PLANET | 33 | POON M.F. |
+| 6 | POWER KOEPP | 48 | FERRARIS L. |
 
 ### 8. HING FAT HANDICAP
 
@@ -145,34 +145,33 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | DAZZLING FIT | 3,5 | PURTON Z. |
-| 4 | DO YOU JUST | 6,1 | CHUNG Y.L. |
-| 2 | POPE CODY | 6,5 | BADEL A. |
-| 12 | REFUSETOBEENGLISH | 6,6 | LEUNG K.C. |
-| 3 | PRESTIGE GOOD | 9,8 | KINGSCOTE R. |
-| 10 | FLYING FORTUNE | 12 | BENTLEY H. |
-| 9 | AUDACIOUS PURSUIT | 14 | WONG E.C.W. |
-| 11 | URANUS STAR | 16 | CHADWICK M. |
-| 5 | RUN RUN SMART | 20 | YUEN H.Y. |
-| 8 | RISING PHOENIX | 26 | WONG P.N. |
-| 6 | CALL ME TOPSEED | 31 | ATZENI A. |
-| 7 | LEGEND WINNER | 35 | HEWITSON L. |
+| 2 | POPE CODY | 3 | BADEL A. |
+| 1 | DAZZLING FIT | 5,3 | PURTON Z. |
+| 11 | URANUS STAR | 8,7 | CHADWICK M. |
+| 4 | DO YOU JUST | 8,8 | CHUNG Y.L. |
+| 12 | REFUSETOBEENGLISH | 9 | LEUNG K.C. |
+| 9 | AUDACIOUS PURSUIT | 10 | WONG E.C.W. |
+| 10 | FLYING FORTUNE | 11 | BENTLEY H. |
+| 3 | PRESTIGE GOOD | 15 | KINGSCOTE R. |
+| 7 | LEGEND WINNER | 29 | HEWITSON L. |
+| 5 | RUN RUN SMART | 35 | YUEN H.Y. |
+| 6 | CALL ME TOPSEED | 42 | ATZENI A. |
+| 8 | RISING PHOENIX | 66 | WONG P.N. |
 
 ### 9. YIP FAT HANDICAP - SECTION 1
 
-*16h50 · plat · 1200 m · 12 partants · cotes de l'extraction*
+*16h50 · plat · 1200 m · 11 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | AURIO | 4,2 | PURTON Z. |
-| 7 | THE HEIR | 4,4 | HO C.Y. |
-| 6 | PRESTIGE ALWAYS | 6,5 | YUEN H.Y. |
-| 9 | LIVE WIRE | 8,8 | ATZENI A. |
-| 2 | MOTOR | 10 | LEUNG K.C. |
-| 5 | THUNDER KIT | 12 | HEWITSON L. |
-| 8 | HONEST WITNESS | 16 | POON M.F. |
-| 11 | STORMING DRAGON | 16 | WONG P.N. |
-| 3 | GUSTOSISIMO | 19 | CHUNG Y.L. |
-| 12 | THUNDER ACTION | 22 | YEUNG M.L. |
-| 10 | TRIPLE FORTUNE | 23 | KINGSCOTE R. |
-| 4 | AMAZING KID | 24 | BADEL A. |
+| 1 | AURIO | 3 | PURTON Z. |
+| 7 | THE HEIR | 4,2 | HO C.Y. |
+| 9 | LIVE WIRE | 5,2 | ATZENI A. |
+| 2 | MOTOR | 8,6 | LEUNG K.C. |
+| 5 | THUNDER KIT | 13 | HEWITSON L. |
+| 11 | STORMING DRAGON | 14 | WONG P.N. |
+| 8 | HONEST WITNESS | 19 | POON M.F. |
+| 12 | THUNDER ACTION | 23 | YEUNG M.L. |
+| 3 | GUSTOSISIMO | 24 | CHUNG Y.L. |
+| 4 | AMAZING KID | 30 | BADEL A. |
+| 10 | TRIPLE FORTUNE | 42 | KINGSCOTE R. |
