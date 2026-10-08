@@ -1,6 +1,6 @@
 # LE BOUSCAT — 08/10/2026
 
-9 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -139,21 +139,21 @@
 
 ### 9. PRIX JACQUES MEILHAN BORDES
 
-*15h24 · plat · 1900 m · 14 partants · cotes de l'extraction*
+*15h24 · plat · 1900 m · 14 partants · cotes à T−29:39*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 12 | DRIP | 2,6 | E.CORALLO | 57/505/1/1499 |
-| 8 | CHARM KING | 3,5 | A.GAVILAN | 18/187/56/305 |
-| 7 | MAGNIFICENT SEVEN | 5,2 | M.LAURON | 90/131/59/1862 |
-| 5 | HAUTE GAMME | 10 | A.MEKOUCHE | 135/216/295/346 |
-| 11 | XARUN | 10 | A.WERLE | 29/194/579/843 |
-| 13 | MALICIA | 10 | I.MENDIZABAL | 32/58/22/1416 |
-| 1 | BURNING HEART | – | M.FOULON | 55/131/245/321 |
-| 2 | MYBOYFRIEND | – | E.HARDOUIN | 27/256/1042/2187 |
-| 3 | AMITY | – | S.LE QUILLEUC | 60/131/27/751 |
-| 4 | KAMAKURA ONE | – | H.LEBOUC | 19/26/1404/601 |
-| 6 | VIOLIN | – | D.SANTIAGO | 15/39/303/384 |
-| 9 | LADY DARKA | – | C.CADEL | 76/229/796/1129 |
-| 10 | DON NICOLAS | – | A.LEMAITRE | 11/204/3299/177 |
-| 14 | RAYLA | – | T.BLANCHOUIN | 92/182/2085/3015 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 8 | CHARM KING | 4,9 | 3,5 | A.GAVILAN | 18/187/56/305 |
+| 13 | MALICIA | 6,8 | 10 | I.MENDIZABAL | 32/58/22/1416 |
+| 5 | HAUTE GAMME | 9,5 | 10 | A.MEKOUCHE | 135/216/295/346 |
+| 4 | KAMAKURA ONE | 10 | – | H.LEBOUC | 19/26/1404/601 |
+| 1 | BURNING HEART | 11 | – | M.FOULON | 55/131/245/321 |
+| 10 | DON NICOLAS | 11 | – | A.LEMAITRE | 11/204/3299/177 |
+| 12 | DRIP | 13 | 2,6 | E.CORALLO | 57/505/1/1499 |
+| 3 | AMITY | 14 | – | S.LE QUILLEUC | 60/131/27/751 |
+| 11 | XARUN | 16 | 10 | A.WERLE | 29/194/579/843 |
+| 2 | MYBOYFRIEND | 17 | – | E.HARDOUIN | 27/256/1042/2187 |
+| 6 | VIOLIN | 17 | – | D.SANTIAGO | 15/39/303/384 |
+| 9 | LADY DARKA | 31 | – | C.CADEL | 76/229/796/1129 |
+| 7 | MAGNIFICENT SEVEN | 36 | 5,2 | M.LAURON | 90/131/59/1862 |
+| 14 | RAYLA | 36 | – | T.BLANCHOUIN | 92/182/2085/3015 |
