@@ -4,35 +4,35 @@
   "reunion": 1,
   "heure_depart": 1791475200000,
   "distance": 2000,
-  "scraped_at": "2026-10-08T17:43:15.066834",
-  "minutes_avant_depart": 17,
+  "scraped_at": "2026-10-08T17:47:15.324019",
+  "minutes_avant_depart": 13,
   "participants": [
     {
       "numPmu": 1,
       "nom": "EXISTANT",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791474174000
+      "timestamp_cote": 1791474416000
     },
     {
       "numPmu": 2,
       "nom": "ELUSIVE WAY",
-      "cote_live": 11.0,
+      "cote_live": 8.6,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791474174000
+      "timestamp_cote": 1791474416000
     },
     {
       "numPmu": 3,
       "nom": "NOTIONI FAL",
-      "cote_live": 5.2,
+      "cote_live": 5.8,
       "cote_reference": 4.9,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791474174000
+      "timestamp_cote": 1791474416000
     },
     {
       "numPmu": 4,
@@ -41,7 +41,7 @@
       "cote_reference": 8.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791474174000
+      "timestamp_cote": 1791474416000
     },
     {
       "numPmu": 5,
@@ -50,25 +50,25 @@
       "cote_reference": 32.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791474174000
+      "timestamp_cote": 1791474416000
     },
     {
       "numPmu": 7,
       "nom": "LOVATREE PARIS",
-      "cote_live": 17.0,
+      "cote_live": 18.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791474174000
+      "timestamp_cote": 1791474416000
     },
     {
       "numPmu": 8,
       "nom": "SHAMBHALLA",
-      "cote_live": 5.9,
+      "cote_live": 6.3,
       "cote_reference": 5.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791474174000
+      "timestamp_cote": 1791474416000
     },
     {
       "numPmu": 9,
@@ -77,16 +77,16 @@
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791474174000
+      "timestamp_cote": 1791474416000
     },
     {
       "numPmu": 10,
       "nom": "LADY GATSBY",
-      "cote_live": 42.0,
+      "cote_live": 44.0,
       "cote_reference": 39.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791474174000
+      "timestamp_cote": 1791474416000
     },
     {
       "numPmu": 11,
@@ -95,52 +95,52 @@
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791474174000
+      "timestamp_cote": 1791474416000
     },
     {
       "numPmu": 12,
       "nom": "MIDNIGHT MAGIC",
-      "cote_live": 12.0,
+      "cote_live": 13.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791474174000
+      "timestamp_cote": 1791474416000
     },
     {
       "numPmu": 13,
       "nom": "LACALAS",
-      "cote_live": 65.0,
+      "cote_live": 70.0,
       "cote_reference": 68.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791474174000
+      "timestamp_cote": 1791474416000
     },
     {
       "numPmu": 14,
       "nom": "GRAND MARRAKCHI",
-      "cote_live": 22.0,
+      "cote_live": 24.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791474174000
+      "timestamp_cote": 1791474416000
     },
     {
       "numPmu": 15,
       "nom": "SPIELER",
-      "cote_live": 45.0,
+      "cote_live": 50.0,
       "cote_reference": 41.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791474174000
+      "timestamp_cote": 1791474416000
     },
     {
       "numPmu": 16,
       "nom": "GOLDEN FRIEND",
-      "cote_live": 11.0,
+      "cote_live": 9.5,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791474174000
+      "timestamp_cote": 1791474416000
     }
   ],
   "hippodrome": "SAINT-CLOUD",
@@ -227,6 +227,27 @@
         "14": 22.0,
         "15": 45.0,
         "16": 11.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-08T17:47:15.324019",
+      "minutes_avant_depart": 12.753701633333332,
+      "cotes": {
+        "1": 14.0,
+        "2": 8.6,
+        "3": 5.8,
+        "4": 7.1,
+        "5": 25.0,
+        "7": 18.0,
+        "8": 6.3,
+        "9": 18.0,
+        "10": 44.0,
+        "11": 18.0,
+        "12": 13.0,
+        "13": 70.0,
+        "14": 24.0,
+        "15": 50.0,
+        "16": 9.5
       }
     }
   ]
