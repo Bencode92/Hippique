@@ -116,22 +116,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE ROCQUENCOURT
 
-*18h00 · plat · 2000 m · 15 partants · cotes à T−25:24*
+*18h00 · plat · 2000 m · 15 partants · cotes à T−20:45*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | NOTIONI FAL | 5,1 | 4,4 | 6,43 | -20,7 % | C.LECOEUVRE | 13/57/34/31 |
-| 8 | SHAMBHALLA | 5,5 | 5,4 | 5,69 | -3,3 % | C.DEMURO | 1/60/1339/2650 |
-| 4 | GOOD BYE DAVIER | 7,1 | 12 | 8,24 | -13,9 % | M.VELON | 28/27/384/802 |
-| 12 | MIDNIGHT MAGIC | 11 | 10 | 13,48 | -18,4 % | PC.BOUDOT 4e | 8/27/2364/4039 |
-| 1 | EXISTANT | 12 | 12 | 15,23 | -21,2 % | L.BAILS | 77/201/1593/1745 |
-| 2 | ELUSIVE WAY | 13 | 12 | 14,62 | -11,1 % | A.MADAMET | 10/64/14/23 |
-| 16 | GOLDEN FRIEND | 13 | 16 | 15,99 | -18,7 % | T.BACHELOT | 16/17/39/40 |
-| 7 | LOVATREE PARIS | 15 | 15 | 18,91 | -20,7 % | D.PROVOST | 33/39/406/1063 |
-| 11 | ENCORE RIDGE | 19 | 16 | 25,54 | -25,6 % | M.GUYON 3e | 4/44/752/469 |
-| 14 | GRAND MARRAKCHI | 19 | 16 | 26,07 | -27,1 % | J.MOUTARD | 61/370/50/3595 |
-| 9 | LA CHARMETTE | 20 | 22 | 26,42 | -24,3 % | G.TROLLEY DE PREVAUX | 46/86/882/3126 |
-| 5 | SAINT MONCHIK | 33 | 35 | 44,60 | -26,0 % | M.GRANDIN | 3/120/141/248 |
-| 10 | LADY GATSBY | 41 | 36 | 56,80 | -27,8 % | H.BOUTIN | 14/126/635/887 |
-| 15 | SPIELER | 45 | 43 | 57,24 | -21,4 % | L.BOISSEAU | 36/344/203/610 |
-| 13 | LACALAS | 62 | 49 | 88,79 | -30,2 % | L.GALLO | 45/126/40/887 |
+| 3 | NOTIONI FAL | 5,2 | 4,4 | 6,27 | -17,1 % | C.LECOEUVRE | 13/57/34/31 |
+| 8 | SHAMBHALLA | 5,9 | 5,4 | 6,11 | -3,5 % | C.DEMURO | 1/60/1339/2650 |
+| 4 | GOOD BYE DAVIER | 6,8 | 12 | 7,79 | -12,7 % | M.VELON | 28/27/384/802 |
+| 16 | GOLDEN FRIEND | 11 | 16 | 13,66 | -19,5 % | T.BACHELOT | 16/17/39/40 |
+| 2 | ELUSIVE WAY | 12 | 12 | 13,23 | -9,3 % | A.MADAMET | 10/64/14/23 |
+| 12 | MIDNIGHT MAGIC | 12 | 10 | 14,83 | -19,1 % | PC.BOUDOT 4e | 8/27/2364/4039 |
+| 1 | EXISTANT | 13 | 12 | 16,62 | -21,8 % | L.BAILS | 77/201/1593/1745 |
+| 7 | LOVATREE PARIS | 17 | 15 | 21,73 | -21,8 % | D.PROVOST | 33/39/406/1063 |
+| 11 | ENCORE RIDGE | 18 | 16 | 23,83 | -24,5 % | M.GUYON 3e | 4/44/752/469 |
+| 9 | LA CHARMETTE | 20 | 22 | 26,24 | -23,8 % | G.TROLLEY DE PREVAUX | 46/86/882/3126 |
+| 14 | GRAND MARRAKCHI | 21 | 16 | 29,08 | -27,8 % | J.MOUTARD | 61/370/50/3595 |
+| 5 | SAINT MONCHIK | 25 | 35 | 29,53 | -15,3 % | M.GRANDIN | 3/120/141/248 |
+| 15 | SPIELER | 45 | 43 | 56,88 | -20,9 % | L.BOISSEAU | 36/344/203/610 |
+| 10 | LADY GATSBY | 46 | 36 | 64,04 | -28,2 % | H.BOUTIN | 14/126/635/887 |
+| 13 | LACALAS | 63 | 49 | 89,76 | -29,8 % | L.GALLO | 45/126/40/887 |
