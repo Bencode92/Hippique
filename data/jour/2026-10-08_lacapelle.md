@@ -1,8 +1,8 @@
 # LA CAPELLE — 08/10/2026
 
-7 courses.
+7 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
@@ -12,21 +12,21 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 14 | NEW LIFE CHARDET | 3,1 | PH. DAUGEARD |
+| 8 | NUIT DE ROMA | 3,7 | M. GOETZ |
+| 3 | NEMESIA | 5,8 | A. DE VAUGIRAUD |
+| 7 | NICE GIRL CASTELLE | 7,8 | A. REBECHE |
+| 6 | NUT AND MONEY | 13 | F. DESMIGNEUX |
+| 5 | NORMANDY NIGHT | 19 | A. DUPERCHE |
+| 2 | NIZELLA D'AVEL | 29 | A. GENDROT |
+| 9 | NESSENCE | 29 | P.Y. VERVA |
+| 12 | NIKITA DE MONTCEAU | 39 | G.A. POU POU |
+| 11 | NEW STAR QUICK | 58 | CH. DREUX |
+| 10 | NAPA VALLEY ZEN | 117 | N. RAIMBEAUX |
+| 15 | NOBILITY | 117 | K. DEPUYDT |
 | 1 | NUANCE DU HOULET | – | M. VERVA |
-| 2 | NIZELLA D'AVEL | – | A. GENDROT |
-| 3 | NEMESIA | – | A. DE VAUGIRAUD |
 | 4 | NORMA FIRST | – | A. MUIDEBLED |
-| 5 | NORMANDY NIGHT | – | A. DUPERCHE |
-| 6 | NUT AND MONEY | – | F. DESMIGNEUX |
-| 7 | NICE GIRL CASTELLE | – | A. REBECHE |
-| 8 | NUIT DE ROMA | – | M. GOETZ |
-| 9 | NESSENCE | – | P.Y. VERVA |
-| 10 | NAPA VALLEY ZEN | – | N. RAIMBEAUX |
-| 11 | NEW STAR QUICK | – | CH. DREUX |
-| 12 | NIKITA DE MONTCEAU | – | G.A. POU POU |
 | 13 | NYMPHE DE BAIS | – | G. GELORMINI |
-| 14 | NEW LIFE CHARDET | – | PH. DAUGEARD |
-| 15 | NOBILITY | – | K. DEPUYDT |
 
 ### 2. PRIX DE SAINS RICHAUMONT
 
@@ -34,20 +34,20 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | LITTLE LOVE | – | M. GOETZ |
-| 2 | LA CANDEUR | – | JULIEN RAFFESTIN |
-| 3 | LOZA | – | F. DESMIGNEUX |
-| 4 | LUTECE RINGEAT | – | TH.E. LONCKE |
-| 5 | LAKOS DE BERLES | – | N. RAIMBEAUX |
-| 6 | LEADER DU POMMEAU | – | PH. MASSCHAELE |
-| 7 | LOUVE DE BAIS | – | G. GELORMINI |
-| 8 | LA BOISBONNIERE | – | F. OUVRIE |
+| 12 | LAISSEZ FAIRE | 1,3 | P.PH. PLOQUIN |
+| 4 | LUTECE RINGEAT | 13 | TH.E. LONCKE |
+| 2 | LA CANDEUR | 17 | JULIEN RAFFESTIN |
+| 8 | LA BOISBONNIERE | 17 | F. OUVRIE |
+| 10 | LA CALLAS | 17 | J. TRAVERS |
+| 14 | LADY QUEEN | 20 | J. VANMEERBECK |
+| 5 | LAKOS DE BERLES | 34 | N. RAIMBEAUX |
+| 7 | LOUVE DE BAIS | 52 | G. GELORMINI |
+| 11 | LORENZO GEDE | 52 | J.F. SENET |
+| 1 | LITTLE LOVE | 104 | M. GOETZ |
+| 3 | LOZA | 104 | F. DESMIGNEUX |
+| 6 | LEADER DU POMMEAU | 104 | PH. MASSCHAELE |
+| 13 | LULU JIVE | 104 | J.CH. PITON |
 | 9 | LOVER SIXTY ONE | – | A. DUPERCHE |
-| 10 | LA CALLAS | – | J. TRAVERS |
-| 11 | LORENZO GEDE | – | J.F. SENET |
-| 12 | LAISSEZ FAIRE | – | P.PH. PLOQUIN |
-| 13 | LULU JIVE | – | J.CH. PITON |
-| 14 | LADY QUEEN | – | J. VANMEERBECK |
 
 ### 3. PRIX DE VERVINS
 
@@ -55,20 +55,20 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KALINE DE LAHAYE | – | M. HUYGENS |
-| 2 | KLARISSA | – | G. LANNOO |
-| 3 | KASSIOPEE | – | A. DE VAUGIRAUD |
-| 4 | KATHLEEN DU NORD | – | P.Y. VERVA |
+| 12 | KATYLAND | 1,8 | A. GENDROT |
+| 13 | KESA DES THIRONS | 3,6 | PH. DAUGEARD |
+| 3 | KASSIOPEE | 13 | A. DE VAUGIRAUD |
+| 2 | KLARISSA | 19 | G. LANNOO |
+| 4 | KATHLEEN DU NORD | 19 | P.Y. VERVA |
+| 14 | KELLE | 19 | A. LAURENT |
+| 1 | KALINE DE LAHAYE | 39 | M. HUYGENS |
+| 8 | KROKEUSE | 39 | PH. MASSCHAELE |
+| 9 | KIFILE DANICA | 39 | J. TRAVERS |
+| 10 | KADECOLE DE GUERRE | 39 | P.PH. PLOQUIN |
 | 5 | KOMELE | – | K. BROSSARD |
 | 6 | KERIA FLEURY | – | M. VERVA |
 | 7 | KALIFORNIE | – | F. GUERINEAU |
-| 8 | KROKEUSE | – | PH. MASSCHAELE |
-| 9 | KIFILE DANICA | – | J. TRAVERS |
-| 10 | KADECOLE DE GUERRE | – | P.PH. PLOQUIN |
 | 11 | KILIANA DU VAUTOUR | – | R. HEMERY |
-| 12 | KATYLAND | – | A. GENDROT |
-| 13 | KESA DES THIRONS | – | PH. DAUGEARD |
-| 14 | KELLE | – | A. LAURENT |
 
 ### 4. PX CONSEIL REGIONAL DES HAUTS DE FRANCE
 
@@ -76,20 +76,20 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KEFIR COHIAIS | – | K. DEPUYDT |
-| 2 | KRALL DE CORDAY | – | P.PH. PLOQUIN |
+| 9 | KING DE FOURCHES | 3,4 | J. VANMEERBECK |
+| 5 | KEEP OUT | 4,2 | F. OUVRIE |
+| 14 | KRONOS ZEN | 5,7 | CH. DREUX |
+| 2 | KRALL DE CORDAY | 8,5 | P.PH. PLOQUIN |
+| 11 | KIKLOVE ATOUT | 8,5 | J. KOUBICHE |
+| 7 | KIF DE LA BRETTE | 11 | TH. DROMIGNY |
+| 10 | KASH MADRIK | 17 | G. GELORMINI |
+| 1 | KEFIR COHIAIS | 34 | K. DEPUYDT |
+| 4 | KITKAT DU CHERISAY | 34 | J.F. SENET |
 | 3 | KING GEORGES ELLIS | – | LORIS BIZOUX |
-| 4 | KITKAT DU CHERISAY | – | J.F. SENET |
-| 5 | KEEP OUT | – | F. OUVRIE |
 | 6 | KYROC D'ERPION | – | J.M. CHAINEUX |
-| 7 | KIF DE LA BRETTE | – | TH. DROMIGNY |
 | 8 | KEOPS DU RABUTIN | – | PH. MASSCHAELE |
-| 9 | KING DE FOURCHES | – | J. VANMEERBECK |
-| 10 | KASH MADRIK | – | G. GELORMINI |
-| 11 | KIKLOVE ATOUT | – | J. KOUBICHE |
 | 12 | KHALIFE DU CHENE | – | F. DESMIGNEUX |
 | 13 | KAID FORTUNA | – | P.A. RYNWALT-BOULARD |
-| 14 | KRONOS ZEN | – | CH. DREUX |
 
 ### 5. GRAND PRIX DE LA SAUR
 
@@ -97,21 +97,21 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | JOKER DE BELLOU | – | P.PH. PLOQUIN |
-| 2 | JALBA DU FER | – | M. VERVA |
-| 3 | JERIMOW | – | P.Y. VERVA |
-| 4 | JULIANO | – | H. MONTHULE |
+| 13 | JAVLAR | 3,5 | F. OUVRIE |
+| 6 | J'ADORE D'EURVAD | 7 | G. ROIG-BALAGUER |
+| 14 | JACKPOT DU DOME | 7 | PH. DAUGEARD |
+| 1 | JOKER DE BELLOU | 10 | P.PH. PLOQUIN |
+| 3 | JERIMOW | 10 | P.Y. VERVA |
+| 4 | JULIANO | 10 | H. MONTHULE |
+| 7 | JUMBO DES PRES | 10 | K. DEPUYDT |
+| 15 | JUTLAND | 10 | J.F. SENET |
+| 2 | JALBA DU FER | 21 | M. VERVA |
+| 10 | JAG DE ROZEVIC | 21 | TH. DROMIGNY |
 | 5 | JACKPOT DE JUMILLY | – | G. GELORMINI |
-| 6 | J'ADORE D'EURVAD | – | G. ROIG-BALAGUER |
-| 7 | JUMBO DES PRES | – | K. DEPUYDT |
 | 8 | JARYCA | – | J.CH. BEAUFILS |
 | 9 | JUVENIA DU CLOSET | – | A. REBECHE |
-| 10 | JAG DE ROZEVIC | – | TH. DROMIGNY |
 | 11 | JUSTIN DE VALMONT | – | J.R. DECLERCQ |
 | 12 | JAGUAR'S EYES | – | A. DUPERCHE |
-| 13 | JAVLAR | – | F. OUVRIE |
-| 14 | JACKPOT DU DOME | – | PH. DAUGEARD |
-| 15 | JUTLAND | – | J.F. SENET |
 
 ### 6. PRIX NELLY JANIER-DUBRY & ERIC DONNAY
 
@@ -119,17 +119,17 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 6 | MORNING STAR | 2,6 | F. GUERINEAU |
+| 2 | MAESTRO DE BENOISE | 3,5 | G. GELORMINI |
+| 4 | MERLIN DE MAHEY | 4,2 | F. OUVRIE |
+| 7 | MILLESIME TIKELOLE | 10 | A. MUIDEBLED |
+| 3 | MURANO DU GANEP | 21 | LORIS BIZOUX |
+| 8 | MAXIMUS MATIDY | 21 | M. VERVA |
+| 11 | MYSTIC VERTAC | 21 | G. WILLEMS |
 | 1 | MONTEREY | – | F. DESMIGNEUX |
-| 2 | MAESTRO DE BENOISE | – | G. GELORMINI |
-| 3 | MURANO DU GANEP | – | LORIS BIZOUX |
-| 4 | MERLIN DE MAHEY | – | F. OUVRIE |
 | 5 | MISTER MEDLEY | – | K. DEPUYDT |
-| 6 | MORNING STAR | – | F. GUERINEAU |
-| 7 | MILLESIME TIKELOLE | – | A. MUIDEBLED |
-| 8 | MAXIMUS MATIDY | – | M. VERVA |
 | 9 | MANGA DES RACQUES | – | PH. MASSCHAELE |
 | 10 | MILLIONE SACHIN | – | J. KOUBICHE |
-| 11 | MYSTIC VERTAC | – | G. WILLEMS |
 
 ### 7. PRIX DE MARLE
 
@@ -137,19 +137,19 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MAEVA DES PRES | – | J.R. DECLERCQ |
-| 2 | MAGNIFICA JOSSELYN | – | A. GENDROT |
+| 1 | MAEVA DES PRES | 3,3 | J.R. DECLERCQ |
+| 2 | MAGNIFICA JOSSELYN | 5,5 | A. GENDROT |
+| 6 | MYRTO DU MINON | 5,5 | P.PH. PLOQUIN |
+| 8 | MILONGA DU CHENE | 8,3 | TH. DROMIGNY |
+| 9 | MALICE DES CHAMPS | 8,3 | F. OUVRIE |
+| 7 | MANGALYA | 16 | J.F. SENET |
+| 12 | MY QUEEN DELO | 16 | P.Y. VERVA |
+| 14 | MONA LISA BOND | 16 | M. VERVA |
+| 15 | MAFIA | 16 | CH. NICOLE |
 | 3 | MARSANNE | – | F. DESMIGNEUX |
 | 4 | MISS LOVE BERRY | – | M.J. BARCELO BISQUERRA |
 | 5 | MY VICTORY APPLE | – | G. SUCAET |
-| 6 | MYRTO DU MINON | – | P.PH. PLOQUIN |
-| 7 | MANGALYA | – | J.F. SENET |
-| 8 | MILONGA DU CHENE | – | TH. DROMIGNY |
-| 9 | MALICE DES CHAMPS | – | F. OUVRIE |
 | 10 | MERRY DAY | – | F. GUERINEAU |
 | 11 | MILLEMIA IMPERIALE | – | G. LANNOO |
-| 12 | MY QUEEN DELO | – | P.Y. VERVA |
 | 13 | MAHINE D'OCCAGNES | – | J.CH. PITON |
-| 14 | MONA LISA BOND | – | M. VERVA |
-| 15 | MAFIA | – | CH. NICOLE |
 | 16 | MUSANIA DE WARNOC | – | J.M. CHAINEUX |
