@@ -1,6 +1,6 @@
 # LE BOUSCAT — 08/10/2026
 
-9 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+9 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -116,42 +116,42 @@
 
 ### 8. PRIX PIERRE VALENTIN
 
-*14h51 · plat · 1900 m · 14 partants · cotes de l'extraction*
+*14h51 · plat · 1900 m · 14 partants · cotes à T−0:39*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 2 | JORDAN BAKER | 3,6 | G.GUEDJ-GAY | 20/386/15/818 |
-| 13 | GWENN HA DU | 5,6 | S.TOPIN | 111/61/635/1695 |
-| 9 | SEABISCUIT DU RHEU | 5,7 | H.LEBOUC | 19/86/1374/2474 |
-| 14 | THE MAGIC MAN | 12 | S.LE QUILLEUC | 60/187/568/1501 |
-| 3 | HURLEVENT | 14 | T.BLANCHOUIN | 92/446/502/1150 |
-| 4 | MEARAS STYLE | 15 | J.LACROIX | 94/141/382/– |
-| 7 | GOLDEN STATE | 19 | A.GAVILAN | 18/402/26/883 |
-| 10 | ARYVESAN | 19 | I.MENDIZABAL | 32/187/1960/2599 |
-| 5 | GUAPAK | 21 | A.SUBIAS | 122/86/1084/2110 |
-| 11 | GRECIAN RULER | 21 | H.MOUESAN | 52/439/54/2238 |
-| 8 | JUREER | 33 | R.DUBORD | 42/362/3181/683 |
-| 1 | KRUNGTHEPMAHANAKON | 35 | M.FOULON | 55/277/1047/1004 |
-| 6 | SEVEN FOR ALL | 37 | A.WERLE | 29/255/1918/3962 |
-| 12 | VALZAK | 58 | R.AGUILERA PUENTE | 237/503/81/– |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 2 | JORDAN BAKER | 3,2 | 3,6 | G.GUEDJ-GAY | 20/386/15/818 |
+| 13 | GWENN HA DU | 6,5 | 5,6 | S.TOPIN | 111/61/635/1695 |
+| 9 | SEABISCUIT DU RHEU | 6,5 | 5,7 | H.LEBOUC | 19/86/1374/2474 |
+| 14 | THE MAGIC MAN | 11 | 12 | S.LE QUILLEUC | 60/187/568/1501 |
+| 4 | MEARAS STYLE | 13 | 15 | J.LACROIX | 94/141/382/– |
+| 3 | HURLEVENT | 14 | 14 | T.BLANCHOUIN | 92/446/502/1150 |
+| 5 | GUAPAK | 18 | 21 | A.SUBIAS | 122/86/1084/2110 |
+| 10 | ARYVESAN | 19 | 19 | I.MENDIZABAL | 32/187/1960/2599 |
+| 7 | GOLDEN STATE | 20 | 19 | A.GAVILAN | 18/402/26/883 |
+| 11 | GRECIAN RULER | 22 | 21 | H.MOUESAN | 52/439/54/2238 |
+| 8 | JUREER | 33 | 33 | R.DUBORD | 42/362/3181/683 |
+| 12 | VALZAK | 50 | 58 | R.AGUILERA PUENTE | 237/503/81/– |
+| 6 | SEVEN FOR ALL | 51 | 37 | A.WERLE | 29/255/1918/3962 |
+| 1 | KRUNGTHEPMAHANAKON | 54 | 35 | M.FOULON | 55/277/1047/1004 |
 
 ### 9. PRIX JACQUES MEILHAN BORDES
 
-*15h27 · plat · 1900 m · 14 partants · cotes de l'extraction*
+*15h27 · plat · 1900 m · 14 partants · cotes à T−24:59*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 8 | CHARM KING | 5,4 | A.GAVILAN | 18/187/56/305 |
-| 9 | LADY DARKA | 5,8 | C.CADEL | 76/229/796/1129 |
-| 4 | KAMAKURA ONE | 6,1 | H.LEBOUC | 19/26/1404/601 |
-| 10 | DON NICOLAS | 7 | A.LEMAITRE | 11/204/3299/177 |
-| 1 | BURNING HEART | 10 | M.FOULON | 55/131/245/321 |
-| 3 | AMITY | 11 | S.LE QUILLEUC | 60/131/27/751 |
-| 13 | MALICIA | 12 | I.MENDIZABAL | 32/58/22/1416 |
-| 14 | RAYLA | 25 | T.BLANCHOUIN | 92/182/2085/3015 |
-| 2 | MYBOYFRIEND | 32 | E.HARDOUIN | 27/256/1042/2187 |
-| 11 | XARUN | 33 | A.WERLE | 29/194/579/843 |
-| 12 | DRIP | 33 | E.CORALLO | 57/505/1/1499 |
-| 5 | HAUTE GAMME | 34 | A.MEKOUCHE | 135/216/295/346 |
-| 6 | VIOLIN | 36 | D.SANTIAGO | 15/39/303/384 |
-| 7 | MAGNIFICENT SEVEN | 40 | M.LAURON | 90/131/59/1862 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 8 | CHARM KING | 5,5 | 5,4 | A.GAVILAN | 18/187/56/305 |
+| 13 | MALICIA | 8,2 | 12 | I.MENDIZABAL | 32/58/22/1416 |
+| 10 | DON NICOLAS | 9,6 | 7 | A.LEMAITRE | 11/204/3299/177 |
+| 4 | KAMAKURA ONE | 10 | 6,1 | H.LEBOUC | 19/26/1404/601 |
+| 5 | HAUTE GAMME | 11 | 34 | A.MEKOUCHE | 135/216/295/346 |
+| 1 | BURNING HEART | 11 | 10 | M.FOULON | 55/131/245/321 |
+| 12 | DRIP | 12 | 33 | E.CORALLO | 57/505/1/1499 |
+| 3 | AMITY | 13 | 11 | S.LE QUILLEUC | 60/131/27/751 |
+| 7 | MAGNIFICENT SEVEN | 13 | 40 | M.LAURON | 90/131/59/1862 |
+| 6 | VIOLIN | 17 | 36 | D.SANTIAGO | 15/39/303/384 |
+| 11 | XARUN | 18 | 33 | A.WERLE | 29/194/579/843 |
+| 2 | MYBOYFRIEND | 19 | 32 | E.HARDOUIN | 27/256/1042/2187 |
+| 14 | RAYLA | 26 | 25 | T.BLANCHOUIN | 92/182/2085/3015 |
+| 9 | LADY DARKA | 40 | 5,8 | C.CADEL | 76/229/796/1129 |

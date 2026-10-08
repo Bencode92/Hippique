@@ -1,6 +1,6 @@
 # SAINT-CLOUD — 08/10/2026
 
-7 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+7 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -46,18 +46,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX D'ECQUEVILLY
 
-*15h09 · plat · 1600 m · 8 partants · cotes de l'extraction*
+*15h09 · plat · 1600 m · 8 partants · cotes à T−10:39*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 3 | ARTHUR BEAR | 2,6 | 3,12 | -16,5 % | PC.BOUDOT 3e | 8/2/3885/5043 |
-| 1 | QUEEN LAGERTHA | 3,1 | 3,16 | -1,8 % | A.CRASTUS | 17/28/21/2590 |
-| 4 | MR SAY | 5,1 | 5,72 | -10,9 % | F.VALLE SKAR | 35/15/431/2239 |
-| 7 | PETIT GENIE | 7,1 | 8,54 | -16,8 % | C.DEMURO | 1/242/91/488 |
-| 6 | LE TROCA | 25 | 34,68 | -27,9 % | C.COLLET-VIDAL | 119/180/1339/3443 |
-| 5 | TINY DANCER | 36 | 52,35 | -31,2 % | H.BOUTIN | 14/15/19/7 |
-| 10 | BALLE D'ESPRESSO | 53 | 80,05 | -33,8 % | A.MOLINS | 34/197/17/975 |
-| 2 | SKAROS | 58 | 88,20 | -34,2 % | L.GALLO | 45/15/15/36 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 3 | ARTHUR BEAR | 3,6 | 2,6 | 3,30 | **+9,0 %** | PC.BOUDOT 3e | 8/2/3885/5043 |
+| 1 | QUEEN LAGERTHA | 5,3 | 3,1 | 4,46 | **+18,8 %** | A.CRASTUS | 17/28/21/2590 |
+| 7 | PETIT GENIE | 7,4 | 7,1 | 6,59 | **+12,2 %** | C.DEMURO | 1/242/91/488 |
+| 4 | MR SAY | 9,5 | 5,1 | 8,24 | **+15,3 %** | F.VALLE SKAR | 35/15/431/2239 |
+| 6 | LE TROCA | 13 | 25 | 11,88 | **+9,4 %** | C.COLLET-VIDAL | 119/180/1339/3443 |
+| 10 | BALLE D'ESPRESSO | 23 | 53 | 23,18 | -0,8 % | A.MOLINS | 34/197/17/975 |
+| 5 | TINY DANCER | 33 | 36 | 35,16 | -6,1 % | H.BOUTIN | 14/15/19/7 |
+| 2 | SKAROS | 44 | 58 | 51,05 | -13,8 % | L.GALLO | 45/15/15/36 |
 
 ### 4. PRIX DU HARAS DE LA HUME
 
@@ -93,45 +93,45 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DU CHESNAY
 
-*17h20 · plat · 2000 m · 16 partants · cotes de l'extraction*
+*17h20 · plat · 2000 m · 16 partants · cotes à T−0:05*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 8 | ARMSTRONG GLORY | 4,1 | 4,03 | **+1,8 %** | C.DEMURO | 1/60/634/858 |
-| 7 | FASOLDOFA | 5,8 | 6,31 | -8,1 % | A.HAMELIN | 22/218/246/1055 |
-| 14 | EXTRAVAGANZA | 7,7 | 8,53 | -9,7 % | M.GUYON 3e | 4/149/6/1576 |
-| 11 | MELIORA | 8,4 | 9,85 | -14,7 % | C.GROSBOIS | 25/104/62/857 |
-| 5 | MISS TECH | 9,2 | 10,96 | -16,0 % | T.BACHELOT | 16/17/910/1545 |
-| 9 | STIR CRAZY | 10 | 11,08 | -9,7 % | M.GRANDIN | 3/205/284/1600 |
-| 13 | TOLEO | 20 | 27,20 | -26,5 % | T.PICCONE | 9/79/149/1593 |
-| 16 | BAVAROIS | 25 | 33,56 | -25,5 % | D.PROVOST | 33/74/546/17 |
-| 6 | JIVEDA | 30 | 44,37 | -32,4 % | F.VERON | 24/261/577/915 |
-| 4 | FRANCQUEVILLE | 31 | 39,01 | -20,5 % | A.POUCHIN | 6/8/18/131 |
-| 12 | STILL LOVING DREAM | 39 | 55,37 | -29,6 % | L.BAILS | 77/201/1627/3969 |
-| 2 | SYDNEY SUNSET | 41 | 53,25 | -23,0 % | T.TRULLIER | 21/119/20/2100 |
-| 15 | LA BELLE OTERO | 50 | 66,15 | -24,4 % | A.MADAMET | 10/74/96/17 |
-| 1 | XTRAMOUR | 55 | 73,31 | -25,0 % | A.CRASTUS | 17/76/84/1721 |
-| 3 | SHERA | 58 | 96,27 | -39,8 % | C.LECOEUVRE | 13/303/–/– |
-| 10 | NICOSIE ESSEF | 100 | 150,68 | -33,6 % | R.MANGIONE | 78/299/310/3993 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 8 | ARMSTRONG GLORY | 5,1 | 4,1 | 5,54 | -8,0 % | C.DEMURO | 1/60/634/858 |
+| 7 | FASOLDOFA | 6,6 | 5,8 | 7,38 | -10,6 % | A.HAMELIN | 22/218/246/1055 |
+| 14 | EXTRAVAGANZA | 6,8 | 7,7 | 7,78 | -12,7 % | M.GUYON 3e | 4/149/6/1576 |
+| 11 | MELIORA | 8,4 | 8,4 | 9,95 | -15,6 % | C.GROSBOIS | 25/104/62/857 |
+| 5 | MISS TECH | 8,9 | 9,2 | 10,65 | -16,4 % | T.BACHELOT | 16/17/910/1545 |
+| 9 | STIR CRAZY | 11 | 10 | 12,50 | -12,0 % | M.GRANDIN | 3/205/284/1600 |
+| 13 | TOLEO | 17 | 20 | 22,74 | -25,3 % | T.PICCONE | 9/79/149/1593 |
+| 16 | BAVAROIS | 21 | 25 | 27,75 | -24,3 % | D.PROVOST | 33/74/546/17 |
+| 4 | FRANCQUEVILLE | 22 | 31 | 27,95 | -21,3 % | A.POUCHIN | 6/8/18/131 |
+| 6 | JIVEDA | 24 | 30 | 36,41 | -34,1 % | F.VERON | 24/261/577/915 |
+| 12 | STILL LOVING DREAM | 30 | 39 | 43,70 | -31,3 % | L.BAILS | 77/201/1627/3969 |
+| 2 | SYDNEY SUNSET | 34 | 41 | 43,68 | -22,2 % | T.TRULLIER | 21/119/20/2100 |
+| 15 | LA BELLE OTERO | 38 | 50 | 49,43 | -23,1 % | A.MADAMET | 10/74/96/17 |
+| 3 | SHERA | 45 | 58 | 73,80 | -39,0 % | C.LECOEUVRE | 13/303/–/– |
+| 1 | XTRAMOUR | 48 | 55 | 63,87 | -24,9 % | A.CRASTUS | 17/76/84/1721 |
+| 10 | NICOSIE ESSEF | 82 | 100 | 124,01 | -33,9 % | R.MANGIONE | 78/299/310/3993 |
 
 ### 7. PRIX DE ROCQUENCOURT
 
-*18h00 · plat · 2000 m · 15 partants · cotes de l'extraction*
+*18h00 · plat · 2000 m · 15 partants · cotes à T−0:05*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 8 | SHAMBHALLA | 3,7 | 3,79 | -2,3 % | C.DEMURO | 1/60/1339/2650 |
-| 3 | NOTIONI FAL | 6,2 | 7,40 | -16,2 % | C.LECOEUVRE | 13/57/34/31 |
-| 4 | GOOD BYE DAVIER | 6,3 | 6,52 | -3,4 % | M.VELON | 28/27/384/802 |
-| 2 | ELUSIVE WAY | 8,2 | 8,10 | **+1,3 %** | A.MADAMET | 10/64/14/23 |
-| 12 | MIDNIGHT MAGIC | 14 | 19,27 | -27,4 % | PC.BOUDOT 4e | 8/27/2364/4039 |
-| 9 | LA CHARMETTE | 15 | 17,81 | -15,8 % | G.TROLLEY DE PREVAUX | 46/86/882/3126 |
-| 5 | SAINT MONCHIK | 16 | 17,53 | -8,7 % | M.GRANDIN | 3/120/141/248 |
-| 16 | GOLDEN FRIEND | 17 | 21,54 | -21,1 % | T.BACHELOT | 16/17/39/40 |
-| 1 | EXISTANT | 23 | 30,56 | -24,7 % | L.BAILS | 77/201/1593/1745 |
-| 11 | ENCORE RIDGE | 30 | 44,45 | -32,5 % | M.GUYON 3e | 4/44/752/469 |
-| 14 | GRAND MARRAKCHI | 30 | 41,36 | -27,5 % | J.MOUTARD | 61/370/50/3595 |
-| 7 | LOVATREE PARIS | 44 | 63,35 | -30,5 % | D.PROVOST | 33/39/406/1063 |
-| 10 | LADY GATSBY | 49 | 74,72 | -34,4 % | H.BOUTIN | 14/126/635/887 |
-| 13 | LACALAS | 77 | 109,98 | -30,0 % | L.GALLO | 45/126/40/887 |
-| 15 | SPIELER | 118 | 162,07 | -27,2 % | L.BOISSEAU | 36/344/203/610 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 8 | SHAMBHALLA | 3,9 | 3,7 | 4,01 | -2,7 % | C.DEMURO | 1/60/1339/2650 |
+| 4 | GOOD BYE DAVIER | 6,2 | 6,3 | 6,42 | -3,5 % | M.VELON | 28/27/384/802 |
+| 3 | NOTIONI FAL | 6,3 | 6,2 | 7,56 | -16,7 % | C.LECOEUVRE | 13/57/34/31 |
+| 2 | ELUSIVE WAY | 10 | 8,2 | 10,20 | -2,0 % | A.MADAMET | 10/64/14/23 |
+| 9 | LA CHARMETTE | 13 | 15 | 15,11 | -14,0 % | G.TROLLEY DE PREVAUX | 46/86/882/3126 |
+| 12 | MIDNIGHT MAGIC | 14 | 14 | 19,33 | -27,6 % | PC.BOUDOT 4e | 8/27/2364/4039 |
+| 16 | GOLDEN FRIEND | 14 | 17 | 18,03 | -22,3 % | T.BACHELOT | 16/17/39/40 |
+| 1 | EXISTANT | 20 | 23 | 26,09 | -23,3 % | L.BAILS | 77/201/1593/1745 |
+| 5 | SAINT MONCHIK | 22 | 16 | 25,37 | -13,3 % | M.GRANDIN | 3/120/141/248 |
+| 11 | ENCORE RIDGE | 25 | 30 | 36,22 | -31,0 % | M.GUYON 3e | 4/44/752/469 |
+| 14 | GRAND MARRAKCHI | 27 | 30 | 36,81 | -26,6 % | J.MOUTARD | 61/370/50/3595 |
+| 7 | LOVATREE PARIS | 36 | 44 | 50,89 | -29,3 % | D.PROVOST | 33/39/406/1063 |
+| 10 | LADY GATSBY | 38 | 49 | 56,66 | -32,9 % | H.BOUTIN | 14/126/635/887 |
+| 13 | LACALAS | 63 | 77 | 89,28 | -29,4 % | L.GALLO | 45/126/40/887 |
+| 15 | SPIELER | 94 | 118 | 129,15 | -27,2 % | L.BOISSEAU | 36/344/203/610 |
