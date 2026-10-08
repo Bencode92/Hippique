@@ -1,6 +1,6 @@
 # SAINT-CLOUD — 08/10/2026
 
-7 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+7 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -116,22 +116,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE ROCQUENCOURT
 
-*18h00 · plat · 2000 m · 15 partants · cotes de l'extraction*
+*18h00 · plat · 2000 m · 15 partants · cotes à T−29:25*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 3 | NOTIONI FAL | 4,4 | 5,44 | -19,1 % | C.LECOEUVRE | 13/57/34/31 |
-| 8 | SHAMBHALLA | 5,4 | 5,57 | -3,1 % | C.DEMURO | 1/60/1339/2650 |
-| 12 | MIDNIGHT MAGIC | 10 | 12,06 | -17,1 % | PC.BOUDOT 4e | 8/27/2364/4039 |
-| 1 | EXISTANT | 12 | 15,24 | -21,2 % | L.BAILS | 77/201/1593/1745 |
-| 2 | ELUSIVE WAY | 12 | 13,32 | -9,9 % | A.MADAMET | 10/64/14/23 |
-| 4 | GOOD BYE DAVIER | 12 | 14,57 | -17,6 % | M.VELON | 28/27/384/802 |
-| 7 | LOVATREE PARIS | 15 | 18,91 | -20,7 % | D.PROVOST | 33/39/406/1063 |
-| 11 | ENCORE RIDGE | 16 | 20,92 | -23,5 % | M.GUYON 3e | 4/44/752/469 |
-| 14 | GRAND MARRAKCHI | 16 | 19,50 | -18,0 % | J.MOUTARD | 61/370/50/3595 |
-| 16 | GOLDEN FRIEND | 16 | 20,39 | -21,5 % | T.BACHELOT | 16/17/39/40 |
-| 9 | LA CHARMETTE | 22 | 29,49 | -25,4 % | G.TROLLEY DE PREVAUX | 46/86/882/3126 |
-| 5 | SAINT MONCHIK | 35 | 47,64 | -26,5 % | M.GRANDIN | 3/120/141/248 |
-| 10 | LADY GATSBY | 36 | 49,20 | -26,8 % | H.BOUTIN | 14/126/635/887 |
-| 15 | SPIELER | 43 | 54,48 | -21,1 % | L.BOISSEAU | 36/344/203/610 |
-| 13 | LACALAS | 49 | 68,98 | -29,0 % | L.GALLO | 45/126/40/887 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 3 | NOTIONI FAL | 4,5 | 4,4 | 5,59 | -19,5 % | C.LECOEUVRE | 13/57/34/31 |
+| 8 | SHAMBHALLA | 5,5 | 5,4 | 5,70 | -3,5 % | C.DEMURO | 1/60/1339/2650 |
+| 12 | MIDNIGHT MAGIC | 10 | 10 | 12,08 | -17,2 % | PC.BOUDOT 4e | 8/27/2364/4039 |
+| 2 | ELUSIVE WAY | 11 | 12 | 12,06 | -8,8 % | A.MADAMET | 10/64/14/23 |
+| 1 | EXISTANT | 12 | 12 | 15,26 | -21,4 % | L.BAILS | 77/201/1593/1745 |
+| 4 | GOOD BYE DAVIER | 13 | 12 | 16,03 | -18,9 % | M.VELON | 28/27/384/802 |
+| 7 | LOVATREE PARIS | 14 | 15 | 17,48 | -19,9 % | D.PROVOST | 33/39/406/1063 |
+| 14 | GRAND MARRAKCHI | 16 | 16 | 19,54 | -18,1 % | J.MOUTARD | 61/370/50/3595 |
+| 16 | GOLDEN FRIEND | 16 | 16 | 20,43 | -21,7 % | T.BACHELOT | 16/17/39/40 |
+| 11 | ENCORE RIDGE | 17 | 16 | 22,49 | -24,4 % | M.GUYON 3e | 4/44/752/469 |
+| 9 | LA CHARMETTE | 19 | 22 | 24,94 | -23,8 % | G.TROLLEY DE PREVAUX | 46/86/882/3126 |
+| 5 | SAINT MONCHIK | 36 | 35 | 49,24 | -26,9 % | M.GRANDIN | 3/120/141/248 |
+| 15 | SPIELER | 37 | 43 | 46,24 | -20,0 % | L.BOISSEAU | 36/344/203/610 |
+| 10 | LADY GATSBY | 38 | 36 | 52,33 | -27,4 % | H.BOUTIN | 14/126/635/887 |
+| 13 | LACALAS | 51 | 49 | 72,15 | -29,3 % | L.GALLO | 45/126/40/887 |
