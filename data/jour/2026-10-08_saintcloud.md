@@ -47,20 +47,20 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX D'ECQUEVILLY
 
-*15h09 · plat · 1600 m · 10 partants · cotes à T−14:39*
+*15h09 · plat · 1600 m · 10 partants · cotes à T−10:39*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | ARTHUR BEAR | 3,2 | 5,2 | 3,69 | -13,3 % | PC.BOUDOT 3e | 8/2/3885/5043 |
-| 9 | SABIRA | 4,9 | – | 5,81 | -15,7 % | M.VELON | 28/34/17/19 |
-| 1 | QUEEN LAGERTHA | 5,6 | 2,6 | 6,36 | -11,9 % | A.CRASTUS | 17/28/21/2590 |
-| 7 | PETIT GENIE | 7,7 | – | 9,80 | -21,4 % | C.DEMURO | 1/242/91/488 |
-| 4 | MR SAY | 9,8 | – | 12,17 | -19,5 % | F.VALLE SKAR | 35/15/431/2239 |
-| 6 | LE TROCA | 13 | – | 16,97 | -23,4 % | C.COLLET-VIDAL | 119/180/1339/3443 |
-| 10 | BALLE D'ESPRESSO | 22 | – | 31,36 | -29,8 % | A.MOLINS | 34/197/17/975 |
-| 8 | SAINT JIMMY | 24 | 1,7 | 37,24 | -35,6 % | L.BOISSEAU | 36/197/1339/997 |
-| 5 | TINY DANCER | 28 | – | 41,34 | -32,3 % | H.BOUTIN | 14/15/19/7 |
-| 2 | SKAROS | 46 | – | 71,93 | -36,0 % | L.GALLO | 45/15/15/36 |
+| 3 | ARTHUR BEAR | 3,6 | 5,2 | 4,18 | -13,9 % | PC.BOUDOT 3e | 8/2/3885/5043 |
+| 9 | SABIRA | 4,3 | – | 5,03 | -14,6 % | M.VELON | 28/34/17/19 |
+| 1 | QUEEN LAGERTHA | 5,3 | 2,6 | 5,98 | -11,4 % | A.CRASTUS | 17/28/21/2590 |
+| 7 | PETIT GENIE | 7,4 | – | 9,36 | -21,0 % | C.DEMURO | 1/242/91/488 |
+| 4 | MR SAY | 9,5 | – | 11,75 | -19,1 % | F.VALLE SKAR | 35/15/431/2239 |
+| 6 | LE TROCA | 13 | – | 16,99 | -23,5 % | C.COLLET-VIDAL | 119/180/1339/3443 |
+| 10 | BALLE D'ESPRESSO | 23 | – | 33,05 | -30,4 % | A.MOLINS | 34/197/17/975 |
+| 8 | SAINT JIMMY | 27 | 1,7 | 42,68 | -36,7 % | L.BOISSEAU | 36/197/1339/997 |
+| 5 | TINY DANCER | 33 | – | 49,83 | -33,8 % | H.BOUTIN | 14/15/19/7 |
+| 2 | SKAROS | 44 | – | 68,60 | -35,9 % | L.GALLO | 45/15/15/36 |
 
 ### 4. PRIX DU HARAS DE LA HUME
 
