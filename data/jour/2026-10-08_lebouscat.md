@@ -1,6 +1,6 @@
 # LE BOUSCAT — 08/10/2026
 
-9 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+9 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -118,24 +118,24 @@
 
 ### 8. PRIX PIERRE VALENTIN
 
-*14h49 · plat · 1900 m · 14 partants · cotes de l'extraction*
+*14h49 · plat · 1900 m · 14 partants · cotes à T−3:19*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 3 | HURLEVENT | 3,1 | T.BLANCHOUIN | 92/446/502/1150 |
-| 4 | MEARAS STYLE | 5,2 | J.LACROIX | 94/141/382/– |
-| 8 | JUREER | 5,2 | R.DUBORD | 42/362/3181/683 |
-| 6 | SEVEN FOR ALL | 7,9 | A.WERLE | 29/255/1918/3962 |
-| 10 | ARYVESAN | 7,9 | I.MENDIZABAL | 32/187/1960/2599 |
-| 2 | JORDAN BAKER | 15 | G.GUEDJ-GAY | 20/386/15/818 |
-| 7 | GOLDEN STATE | 15 | A.GAVILAN | 18/402/26/883 |
-| 14 | THE MAGIC MAN | 15 | S.LE QUILLEUC | 60/187/568/1501 |
-| 1 | KRUNGTHEPMAHANAKON | – | M.FOULON | 55/277/1047/1004 |
-| 5 | GUAPAK | – | A.SUBIAS | 122/86/1084/2110 |
-| 9 | SEABISCUIT DU RHEU | – | H.LEBOUC | 19/86/1374/2474 |
-| 11 | GRECIAN RULER | – | H.MOUESAN | 52/439/54/2238 |
-| 12 | VALZAK | – | R.AGUILERA PUENTE | 237/503/81/– |
-| 13 | GWENN HA DU | – | S.TOPIN | 111/61/635/1695 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 2 | JORDAN BAKER | 3,7 | 15 | G.GUEDJ-GAY | 20/386/15/818 |
+| 13 | GWENN HA DU | 6 | – | S.TOPIN | 111/61/635/1695 |
+| 9 | SEABISCUIT DU RHEU | 8,6 | – | H.LEBOUC | 19/86/1374/2474 |
+| 14 | THE MAGIC MAN | 9,9 | 15 | S.LE QUILLEUC | 60/187/568/1501 |
+| 4 | MEARAS STYLE | 13 | 5,2 | J.LACROIX | 94/141/382/– |
+| 10 | ARYVESAN | 14 | 7,9 | I.MENDIZABAL | 32/187/1960/2599 |
+| 5 | GUAPAK | 15 | – | A.SUBIAS | 122/86/1084/2110 |
+| 3 | HURLEVENT | 16 | 3,1 | T.BLANCHOUIN | 92/446/502/1150 |
+| 7 | GOLDEN STATE | 19 | 15 | A.GAVILAN | 18/402/26/883 |
+| 8 | JUREER | 22 | 5,2 | R.DUBORD | 42/362/3181/683 |
+| 11 | GRECIAN RULER | 26 | – | H.MOUESAN | 52/439/54/2238 |
+| 12 | VALZAK | 35 | – | R.AGUILERA PUENTE | 237/503/81/– |
+| 6 | SEVEN FOR ALL | 36 | 7,9 | A.WERLE | 29/255/1918/3962 |
+| 1 | KRUNGTHEPMAHANAKON | 38 | – | M.FOULON | 55/277/1047/1004 |
 
 ### 9. PRIX JACQUES MEILHAN BORDES
 
