@@ -93,26 +93,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DU CHESNAY
 
-*17h20 · plat · 2000 m · 16 partants · cotes à T−2:05*
+*17h20 · plat · 2000 m · 16 partants · cotes à T−0:05*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 8 | ARMSTRONG GLORY | 5,5 | 4,7 | 6,01 | -8,5 % | C.DEMURO | 1/60/634/858 |
-| 14 | EXTRAVAGANZA | 6 | 4,9 | 6,72 | -10,7 % | M.GUYON 3e | 4/149/6/1576 |
-| 7 | FASOLDOFA | 6,4 | 10 | 7,10 | -9,9 % | A.HAMELIN | 22/218/246/1055 |
-| 5 | MISS TECH | 7,7 | 7,8 | 8,23 | -6,5 % | T.BACHELOT | 16/17/910/1545 |
-| 11 | MELIORA | 10 | 10 | 12,16 | -17,7 % | C.GROSBOIS | 25/104/62/857 |
-| 9 | STIR CRAZY | 15 | 25 | 17,89 | -16,1 % | M.GRANDIN | 3/205/284/1600 |
-| 13 | TOLEO | 19 | 21 | 25,79 | -26,3 % | T.PICCONE | 9/79/149/1593 |
-| 16 | BAVAROIS | 19 | 13 | 24,62 | -22,8 % | D.PROVOST | 33/74/546/17 |
-| 6 | JIVEDA | 21 | 25 | 31,10 | -32,5 % | F.VERON | 24/261/577/915 |
-| 4 | FRANCQUEVILLE | 24 | 23 | 30,77 | -22,0 % | A.POUCHIN | 6/8/18/131 |
-| 2 | SYDNEY SUNSET | 28 | 26 | 36,67 | -23,6 % | T.TRULLIER | 21/119/20/2100 |
-| 15 | LA BELLE OTERO | 33 | 28 | 44,12 | -25,2 % | A.MADAMET | 10/74/96/17 |
-| 12 | STILL LOVING DREAM | 34 | 33 | 50,12 | -32,2 % | L.BAILS | 77/201/1627/3969 |
-| 1 | XTRAMOUR | 39 | 37 | 50,69 | -23,1 % | A.CRASTUS | 17/76/84/1721 |
-| 3 | SHERA | 48 | 54 | 78,91 | -39,2 % | C.LECOEUVRE | 13/303/–/– |
-| 10 | NICOSIE ESSEF | 75 | 61 | 112,63 | -33,4 % | R.MANGIONE | 78/299/310/3993 |
+| 8 | ARMSTRONG GLORY | 5,1 | 4,7 | 5,54 | -8,0 % | C.DEMURO | 1/60/634/858 |
+| 7 | FASOLDOFA | 6,6 | 10 | 7,38 | -10,6 % | A.HAMELIN | 22/218/246/1055 |
+| 14 | EXTRAVAGANZA | 6,8 | 4,9 | 7,78 | -12,7 % | M.GUYON 3e | 4/149/6/1576 |
+| 11 | MELIORA | 8,4 | 10 | 9,95 | -15,6 % | C.GROSBOIS | 25/104/62/857 |
+| 5 | MISS TECH | 8,9 | 7,8 | 10,65 | -16,4 % | T.BACHELOT | 16/17/910/1545 |
+| 9 | STIR CRAZY | 11 | 25 | 12,50 | -12,0 % | M.GRANDIN | 3/205/284/1600 |
+| 13 | TOLEO | 17 | 21 | 22,74 | -25,3 % | T.PICCONE | 9/79/149/1593 |
+| 16 | BAVAROIS | 21 | 13 | 27,75 | -24,3 % | D.PROVOST | 33/74/546/17 |
+| 4 | FRANCQUEVILLE | 22 | 23 | 27,95 | -21,3 % | A.POUCHIN | 6/8/18/131 |
+| 6 | JIVEDA | 24 | 25 | 36,41 | -34,1 % | F.VERON | 24/261/577/915 |
+| 12 | STILL LOVING DREAM | 30 | 33 | 43,70 | -31,3 % | L.BAILS | 77/201/1627/3969 |
+| 2 | SYDNEY SUNSET | 34 | 26 | 43,68 | -22,2 % | T.TRULLIER | 21/119/20/2100 |
+| 15 | LA BELLE OTERO | 38 | 28 | 49,43 | -23,1 % | A.MADAMET | 10/74/96/17 |
+| 3 | SHERA | 45 | 54 | 73,80 | -39,0 % | C.LECOEUVRE | 13/303/–/– |
+| 1 | XTRAMOUR | 48 | 37 | 63,87 | -24,9 % | A.CRASTUS | 17/76/84/1721 |
+| 10 | NICOSIE ESSEF | 82 | 61 | 124,01 | -33,9 % | R.MANGIONE | 78/299/310/3993 |
 
 ### 7. PRIX DE ROCQUENCOURT
 
