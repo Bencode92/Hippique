@@ -1,7 +1,7 @@
 {
   "hippodrome": "BELMONT PARK",
   "type_reunion": "Plat",
-  "date_extraction": "2026-10-08T13:03:08.216770",
+  "date_extraction": "2026-10-08T15:02:37.732310",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/08102026/R6",
   "courses": [
     {
@@ -31,7 +31,7 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 5.5,
+          "cote": 4.7,
           "cote_tendance": "",
           "cote_reference": 5.8
         },
@@ -54,7 +54,7 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 6.2,
+          "cote": 4.6,
           "cote_tendance": "",
           "cote_reference": 4.8
         },
@@ -77,7 +77,7 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 15.0,
+          "cote": 9.9,
           "cote_tendance": "",
           "cote_reference": 7.2
         },
@@ -100,7 +100,7 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 1.9,
+          "cote": 3.9,
           "cote_tendance": "",
           "cote_reference": 4.8
         },
@@ -123,7 +123,7 @@
           "nb_courses": 9,
           "nb_victoires": 0,
           "nb_places": 6,
-          "cote": 10.0,
+          "cote": 8.8,
           "cote_tendance": "",
           "cote_reference": 7.2
         },
@@ -146,12 +146,14 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 7.8,
+          "cote": 4.1,
           "cote_tendance": "",
           "cote_reference": 3.6
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -181,7 +183,7 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 6.6,
+          "cote": 4.0,
           "cote_tendance": "",
           "cote_reference": 5.7
         },
@@ -224,7 +226,7 @@
           "nb_courses": 8,
           "nb_victoires": 0,
           "nb_places": 6,
-          "cote": 3.3,
+          "cote": 6.0,
           "cote_tendance": "",
           "cote_reference": 2.8
         },
@@ -247,7 +249,7 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 3.3,
+          "cote": 6.0,
           "cote_tendance": "",
           "cote_reference": 5.7
         },
@@ -270,7 +272,7 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 6.6,
+          "cote": 12.0,
           "cote_tendance": "",
           "cote_reference": 5.7
         },
@@ -293,7 +295,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 4.4,
+          "cote": 4.8,
           "cote_tendance": "",
           "cote_reference": 3.8
         },
@@ -335,7 +337,9 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 5.6,
+          "cote_tendance": ""
         },
         {
           "n°": "9",
@@ -355,10 +359,14 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 12.0,
+          "cote_tendance": ""
         }
       ],
       "typePiste": "HERBE",
+      "terrain": "Souple",
+      "penetrometre": "3,5",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -388,29 +396,9 @@
           "nb_courses": 13,
           "nb_victoires": 4,
           "nb_places": 6,
-          "cote": 33.0,
+          "cote": 22.0,
           "cote_tendance": "",
           "cote_reference": 33.0
-        },
-        {
-          "n°": "2",
-          "cheval": "LA HOULIGAN M.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: WAR OF WILL et SMART DANCER (SMART STRIKE)",
-          "corde": "(Corde:02)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261008/BED/3/20261008-BED-3-2.png",
-          "propriétaire": "MASSANELLI, GREGG AND MOLLESTON,",
-          "entraineur": "G COMPTON",
-          "éleveurs": "",
-          "jockey": "J LEZCANO",
-          "poids": "57 kg",
-          "gains": "17862700",
-          "musique": "1p7p1p3p6p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 17,
-          "nb_victoires": 3,
-          "nb_places": 8
         },
         {
           "n°": "3",
@@ -431,7 +419,7 @@
           "nb_courses": 24,
           "nb_victoires": 4,
           "nb_places": 15,
-          "cote": 1.1,
+          "cote": 1.2,
           "cote_tendance": "",
           "cote_reference": 1.1
         },
@@ -453,7 +441,9 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 22.0,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -474,7 +464,7 @@
           "nb_courses": 4,
           "nb_victoires": 1,
           "nb_places": 1,
-          "cote": 67.0,
+          "cote": 29.0,
           "cote_tendance": "",
           "cote_reference": 67.0
         },
@@ -497,7 +487,7 @@
           "nb_courses": 7,
           "nb_victoires": 1,
           "nb_places": 5,
-          "cote": 33.0,
+          "cote": 22.0,
           "cote_tendance": "",
           "cote_reference": 33.0
         },
@@ -520,7 +510,7 @@
           "nb_courses": 15,
           "nb_victoires": 2,
           "nb_places": 11,
-          "cote": 33.0,
+          "cote": 14.0,
           "cote_tendance": "",
           "cote_reference": 33.0
         },
@@ -534,7 +524,7 @@
           "propriétaire": "MOSSAROSA",
           "entraineur": "N P ZITO",
           "éleveurs": "",
-          "jockey": "K DAVIS",
+          "jockey": "RAJIV MARAG",
           "poids": "57 kg",
           "gains": "8498000",
           "musique": "5p1p8p3p3p",
@@ -542,7 +532,9 @@
           "equipement(s)": "",
           "nb_courses": 11,
           "nb_victoires": 1,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 14.0,
+          "cote_tendance": ""
         },
         {
           "n°": "9",
@@ -562,10 +554,14 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 1,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 44.0,
+          "cote_tendance": ""
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -655,7 +651,7 @@
           "nb_courses": 11,
           "nb_victoires": 0,
           "nb_places": 9,
-          "cote": 4.8,
+          "cote": 7.6,
           "cote_tendance": "",
           "cote_reference": 3.9
         },
@@ -678,7 +674,7 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 4.8,
+          "cote": 3.8,
           "cote_tendance": "",
           "cote_reference": 3.9
         },
@@ -701,7 +697,7 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 3.2,
+          "cote": 5.0,
           "cote_tendance": "",
           "cote_reference": 2.6
         },
@@ -715,7 +711,7 @@
           "propriétaire": "DAVIS-CLEWS, KRISTEN, M.",
           "entraineur": "R G DAVIS",
           "éleveurs": "",
-          "jockey": "K DAVIS",
+          "jockey": "D A RIVERA",
           "poids": "57 kg",
           "gains": "554400",
           "musique": "0p8p5p(25)6p",
@@ -744,12 +740,14 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 2.4,
+          "cote": 1.8,
           "cote_tendance": "",
           "cote_reference": 3.9
         }
       ],
       "typePiste": "HERBE",
+      "terrain": "Souple",
+      "penetrometre": "3,5",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -778,7 +776,9 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 0,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 1.5,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -799,9 +799,9 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 3.9,
+          "cote": 6.1,
           "cote_tendance": "",
-          "cote_reference": 3.0
+          "cote_reference": 2.6
         },
         {
           "n°": "3",
@@ -882,9 +882,9 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 3.9,
+          "cote": 6.1,
           "cote_tendance": "",
-          "cote_reference": 3.0
+          "cote_reference": 2.6
         },
         {
           "n°": "7",
@@ -905,32 +905,9 @@
           "nb_courses": 13,
           "nb_victoires": 0,
           "nb_places": 8,
-          "cote": 3.9,
+          "cote": 6.1,
           "cote_tendance": "",
-          "cote_reference": 3.0
-        },
-        {
-          "n°": "8",
-          "cheval": "STREAM IT H.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: TAPIT et RIVER MAID (WHERE'S THE RING)",
-          "corde": "(Corde:08)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261008/BED/5/20261008-BED-5-8.png",
-          "propriétaire": "BROMAN, SR., CHESTER",
-          "entraineur": "L RICE",
-          "éleveurs": "",
-          "jockey": "M FRANCO",
-          "poids": "55.5 kg",
-          "gains": "5118500",
-          "musique": "2p4p3p3p(25)",
-          "valeur": "55.5",
-          "equipement(s)": "",
-          "nb_courses": 8,
-          "nb_victoires": 0,
-          "nb_places": 5,
-          "cote": 2.6,
-          "cote_tendance": "",
-          "cote_reference": 6.1
+          "cote_reference": 2.6
         },
         {
           "n°": "9",
@@ -954,6 +931,8 @@
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -983,7 +962,7 @@
           "nb_courses": 6,
           "nb_victoires": 1,
           "nb_places": 5,
-          "cote": 7.4,
+          "cote": 6.0,
           "cote_tendance": "",
           "cote_reference": 6.6
         },
@@ -1006,7 +985,7 @@
           "nb_courses": 5,
           "nb_victoires": 1,
           "nb_places": 4,
-          "cote": 4.9,
+          "cote": 3.4,
           "cote_tendance": "",
           "cote_reference": 4.4
         },
@@ -1020,7 +999,7 @@
           "propriétaire": "MONGIL III, BERNARDO",
           "entraineur": "R J ROHENA",
           "éleveurs": "",
-          "jockey": "J CRUZ",
+          "jockey": "R GUTIERREZ",
           "poids": "57 kg",
           "gains": "10819700",
           "musique": "3p6p1p3p6p",
@@ -1049,7 +1028,7 @@
           "nb_courses": 7,
           "nb_victoires": 4,
           "nb_places": 3,
-          "cote": 7.4,
+          "cote": 12.0,
           "cote_tendance": "",
           "cote_reference": 6.6
         },
@@ -1092,7 +1071,7 @@
           "nb_courses": 19,
           "nb_victoires": 1,
           "nb_places": 10,
-          "cote": 2.4,
+          "cote": 4.0,
           "cote_tendance": "",
           "cote_reference": 3.3
         },
@@ -1106,7 +1085,7 @@
           "propriétaire": "TRI-BONE STABLES",
           "entraineur": "J W FERRARO",
           "éleveurs": "",
-          "jockey": "K DAVIS",
+          "jockey": "FAVINHO VILLA PINO",
           "poids": "57 kg",
           "gains": "4653700",
           "musique": "9p5p6p0p8p",
@@ -1135,12 +1114,14 @@
           "nb_courses": 6,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 3.7,
+          "cote": 2.9,
           "cote_tendance": "",
           "cote_reference": 3.3
         }
       ],
       "typePiste": "HERBE",
+      "terrain": "Souple",
+      "penetrometre": "3,5",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1201,7 +1182,7 @@
           "propriétaire": "AUGUST DAWN FARM",
           "entraineur": "M GIDDINGS",
           "éleveurs": "",
-          "jockey": "K DAVIS",
+          "jockey": "D DAVIS",
           "poids": "55.5 kg",
           "gains": "2049000",
           "musique": "4p7p3p",
@@ -1229,7 +1210,9 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 12.0,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -1250,7 +1233,7 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 7.4,
+          "cote": 12.0,
           "cote_tendance": "",
           "cote_reference": 7.4
         },
@@ -1273,7 +1256,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 1.1,
+          "cote": 1.6,
           "cote_tendance": "",
           "cote_reference": 1.1
         },
@@ -1315,7 +1298,9 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 5.6,
+          "cote_tendance": ""
         },
         {
           "n°": "9",
@@ -1335,7 +1320,9 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 12.0,
+          "cote_tendance": ""
         },
         {
           "n°": "10",
@@ -1356,12 +1343,14 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 7.4,
+          "cote": 12.0,
           "cote_tendance": "",
           "cote_reference": 7.4
         }
       ],
       "typePiste": "HERBE",
+      "terrain": "Souple",
+      "penetrometre": "3,5",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1411,7 +1400,7 @@
           "nb_courses": 9,
           "nb_victoires": 2,
           "nb_places": 7,
-          "cote": 12.0,
+          "cote": 14.0,
           "cote_tendance": "",
           "cote_reference": 3.9
         },
@@ -1434,7 +1423,7 @@
           "nb_courses": 9,
           "nb_victoires": 2,
           "nb_places": 7,
-          "cote": 1.2,
+          "cote": 1.3,
           "cote_tendance": "",
           "cote_reference": 7.9
         },
@@ -1448,7 +1437,7 @@
           "propriétaire": "WWCD, LLC",
           "entraineur": "W R BAILES",
           "éleveurs": "",
-          "jockey": "K DAVIS",
+          "jockey": "R SANTANA, JR.",
           "poids": "56 kg",
           "gains": "26895000",
           "musique": "4p(25)4p1p2p",
@@ -1477,7 +1466,7 @@
           "nb_courses": 23,
           "nb_victoires": 6,
           "nb_places": 11,
-          "cote": 12.0,
+          "cote": 14.0,
           "cote_tendance": "",
           "cote_reference": 3.9
         },
@@ -1500,7 +1489,7 @@
           "nb_courses": 33,
           "nb_victoires": 9,
           "nb_places": 15,
-          "cote": 12.0,
+          "cote": 14.0,
           "cote_tendance": "",
           "cote_reference": 3.9
         },
@@ -1523,7 +1512,7 @@
           "nb_courses": 5,
           "nb_victoires": 2,
           "nb_places": 1,
-          "cote": 12.0,
+          "cote": 14.0,
           "cote_tendance": "",
           "cote_reference": 3.9
         },
@@ -1545,10 +1534,14 @@
           "equipement(s)": "",
           "nb_courses": 42,
           "nb_victoires": 8,
-          "nb_places": 26
+          "nb_places": 26,
+          "cote": 6.8,
+          "cote_tendance": ""
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1578,7 +1571,7 @@
           "nb_courses": 6,
           "nb_victoires": 1,
           "nb_places": 4,
-          "cote": 6.6,
+          "cote": 2.1,
           "cote_tendance": "",
           "cote_reference": 5.7
         },
@@ -1601,7 +1594,7 @@
           "nb_courses": 12,
           "nb_victoires": 1,
           "nb_places": 6,
-          "cote": 6.6,
+          "cote": 12.0,
           "cote_tendance": "",
           "cote_reference": 5.7
         },
@@ -1624,29 +1617,9 @@
           "nb_courses": 15,
           "nb_victoires": 1,
           "nb_places": 9,
-          "cote": 6.6,
+          "cote": 12.0,
           "cote_tendance": "",
           "cote_reference": 5.7
-        },
-        {
-          "n°": "4",
-          "cheval": "I'M WORTHY M.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MO TOWN et CORAL WAY (SMOKE GLACKEN)",
-          "corde": "(Corde:04)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261008/BED/9/20261008-BED-9-4.png",
-          "propriétaire": "VALENTE, RODDY, J.",
-          "entraineur": "L RICE",
-          "éleveurs": "",
-          "jockey": "K CARMOUCHE",
-          "poids": "55.5 kg",
-          "gains": "4321000",
-          "musique": "4p6p1p2p5p",
-          "valeur": "55.5",
-          "equipement(s)": "",
-          "nb_courses": 7,
-          "nb_victoires": 1,
-          "nb_places": 4
         },
         {
           "n°": "5",
@@ -1687,7 +1660,7 @@
           "nb_courses": 7,
           "nb_victoires": 1,
           "nb_places": 4,
-          "cote": 13.0,
+          "cote": 25.0,
           "cote_tendance": "",
           "cote_reference": 11.0
         },
@@ -1710,7 +1683,7 @@
           "nb_courses": 23,
           "nb_victoires": 1,
           "nb_places": 10,
-          "cote": 6.6,
+          "cote": 12.0,
           "cote_tendance": ""
         },
         {
@@ -1732,7 +1705,7 @@
           "nb_courses": 5,
           "nb_victoires": 1,
           "nb_places": 1,
-          "cote": 3.3,
+          "cote": 3.1,
           "cote_tendance": "",
           "cote_reference": 2.8
         },
@@ -1755,7 +1728,7 @@
           "nb_courses": 14,
           "nb_victoires": 1,
           "nb_places": 12,
-          "cote": 6.6,
+          "cote": 12.0,
           "cote_tendance": "",
           "cote_reference": 5.7
         },
@@ -1789,7 +1762,7 @@
           "propriétaire": "LESSELL, EDWARD R. AND MARY JO",
           "entraineur": "D G DONK",
           "éleveurs": "",
-          "jockey": "R SILVERA",
+          "jockey": "R GUTIERREZ",
           "poids": "55.5 kg",
           "gains": "2822700",
           "musique": "5p5p1p7p7p",
@@ -1801,6 +1774,8 @@
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     }
   ]
