@@ -1,6 +1,6 @@
 # COMPIEGNE — 09/10/2026
 
-9 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -145,25 +145,25 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DU CARREFOUR DU MONT DU TREMBLE
 
-*17h13 · plat · 1400 m · 15 partants · cotes de l'extraction*
+*17h13 · plat · 1400 m · 15 partants · cotes à T−19:46*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 4 | KRASKHOV | 3,4 | 3,87 | -12,2 % | C.SOUMILLON 3e | 7/22/117/9 |
-| 3 | LANAKEN | 5,6 | 6,47 | -13,5 % | A.POUCHIN | 6/59/125/– |
-| 9 | VICTORY FOLIE | 8,7 | 11,53 | -24,6 % | PC.BOUDOT 2e | 8/21/90/3957 |
-| 10 | QUARTZ DU HOULEY | 11 | 11,44 | -3,8 % | M.GUYON | 4/105/238/101 |
-| 14 | AVERSA | 11 | 11,44 | -3,8 % | D.SANTIAGO | 15/21/5/38 |
-| 15 | IRONICO | 13 | 18,55 | -29,9 % | P.REMOUE | 37/110/4120/214 |
-| 16 | BEAU GARS | 15 | 20,48 | -26,7 % | E.HARDOUIN | 27/89/70/– |
-| 8 | TORPEN | 18 | 27,21 | -33,8 % | T.TRULLIER | 21/818/3342/4869 |
-| 11 | ON LOCKDOWN | 26 | 38,75 | -32,9 % | L.BOISSEAU | 36/73/772/380 |
-| 7 | BARGING THRU | 30 | 41,54 | -27,8 % | M.VELON | 28/357/563/659 |
-| 12 | NAKED MEMORIES | 30 | 41,51 | -27,7 % | A.LEMAITRE | 11/76/20/112 |
-| 6 | PAINTELLO | 35 | 43,04 | -18,7 % | M.GRANDIN | 3/127/474/112 |
-| 13 | CELESTIN | 53 | 85,57 | -38,1 % | L.GALLO | 45/432/22/4854 |
-| 2 | PEDRITO | 57 | 92,54 | -38,4 % | M.PIEN | 150/432/289/4854 |
-| 1 | CENTENARIO | 61 | 99,50 | -38,7 % | A.SCAGLIA | 365/14/186/1652 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 4 | KRASKHOV | 2,8 | 3,4 | 3,18 | -11,9 % | C.SOUMILLON 3e | 7/22/117/9 |
+| 3 | LANAKEN | 5,3 | 5,6 | 6,07 | -12,6 % | A.POUCHIN | 6/59/125/– |
+| 9 | VICTORY FOLIE | 9,6 | 8,7 | 12,93 | -25,7 % | PC.BOUDOT 2e | 8/21/90/3957 |
+| 10 | QUARTZ DU HOULEY | 11 | 11 | 11,41 | -3,6 % | M.GUYON | 4/105/238/101 |
+| 14 | AVERSA | 13 | 11 | 13,85 | -6,1 % | D.SANTIAGO | 15/21/5/38 |
+| 15 | IRONICO | 15 | 13 | 21,92 | -31,6 % | P.REMOUE | 37/110/4120/214 |
+| 8 | TORPEN | 18 | 18 | 27,15 | -33,7 % | T.TRULLIER | 21/818/3342/4869 |
+| 16 | BEAU GARS | 19 | 15 | 25,71 | -26,1 % | E.HARDOUIN | 27/89/70/– |
+| 11 | ON LOCKDOWN | 28 | 26 | 42,07 | -33,4 % | L.BOISSEAU | 36/73/772/380 |
+| 7 | BARGING THRU | 37 | 30 | 57,57 | -35,7 % | M.VELON | 28/357/563/659 |
+| 12 | NAKED MEMORIES | 38 | 30 | 51,47 | -26,2 % | A.LEMAITRE | 11/76/20/112 |
+| 6 | PAINTELLO | 39 | 35 | 48,42 | -19,5 % | M.GRANDIN | 3/127/474/112 |
+| 1 | CENTENARIO | 63 | 61 | 102,77 | -38,7 % | A.SCAGLIA | 365/14/186/1652 |
+| 13 | CELESTIN | 66 | 53 | 107,97 | -38,9 % | L.GALLO | 45/432/22/4854 |
+| 2 | PEDRITO | 69 | 57 | 113,16 | -39,0 % | M.PIEN | 150/432/289/4854 |
 
 ### 9. PRIX DU CARREFOUR DU FOND PERNANT
 
