@@ -4,143 +4,143 @@
   "reunion": 4,
   "heure_depart": 1791560940000,
   "distance": 1400,
-  "scraped_at": "2026-10-09T17:45:53.484111+02:00",
-  "minutes_avant_depart": 3,
+  "scraped_at": "2026-10-09T17:48:33.572128+02:00",
+  "minutes_avant_depart": 0,
   "participants": [
     {
       "numPmu": 1,
       "nom": "KIMBIA",
-      "cote_live": 36.0,
+      "cote_live": 43.0,
       "cote_reference": 108.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791560738000
+      "timestamp_cote": 1791560904000
     },
     {
       "numPmu": 2,
       "nom": "EAGLEHAWK",
-      "cote_live": 38.0,
+      "cote_live": 55.0,
       "cote_reference": 26.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791560738000
+      "timestamp_cote": 1791560904000
     },
     {
       "numPmu": 3,
       "nom": "WHITE PLATIN",
-      "cote_live": 7.6,
+      "cote_live": 10.0,
       "cote_reference": 4.8,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791560738000
+      "timestamp_cote": 1791560904000
     },
     {
       "numPmu": 4,
       "nom": "FORCEFULL",
-      "cote_live": 14.0,
+      "cote_live": 18.0,
       "cote_reference": 15.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791560738000
+      "timestamp_cote": 1791560904000
     },
     {
       "numPmu": 5,
       "nom": "MASTER PAT",
-      "cote_live": 7.5,
+      "cote_live": 6.3,
       "cote_reference": 9.2,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791560738000
+      "timestamp_cote": 1791560904000
     },
     {
       "numPmu": 6,
       "nom": "MEISHO VELITE",
-      "cote_live": 18.0,
+      "cote_live": 24.0,
       "cote_reference": 30.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791560738000
+      "timestamp_cote": 1791560904000
     },
     {
       "numPmu": 7,
       "nom": "LISIPPO",
-      "cote_live": 17.0,
+      "cote_live": 13.0,
       "cote_reference": 17.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791560738000
+      "timestamp_cote": 1791560904000
     },
     {
       "numPmu": 8,
       "nom": "JACK O'BOY",
-      "cote_live": 14.0,
+      "cote_live": 16.0,
       "cote_reference": 14.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791560738000
+      "timestamp_cote": 1791560904000
     },
     {
       "numPmu": 10,
       "nom": "IDEE DE CHEVAL",
-      "cote_live": 16.0,
+      "cote_live": 21.0,
       "cote_reference": 17.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791560738000
+      "timestamp_cote": 1791560904000
     },
     {
       "numPmu": 11,
       "nom": "CELTIC ARYAAN",
-      "cote_live": 7.9,
+      "cote_live": 5.5,
       "cote_reference": 8.1,
-      "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1791560738000
+      "tendance": "+",
+      "favoris": true,
+      "timestamp_cote": 1791560904000
     },
     {
       "numPmu": 12,
       "nom": "ROYAL SHAKE",
-      "cote_live": 19.0,
+      "cote_live": 23.0,
       "cote_reference": 20.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791560738000
+      "timestamp_cote": 1791560904000
     },
     {
       "numPmu": 13,
       "nom": "INSIDE MATTERS",
-      "cote_live": 22.0,
+      "cote_live": 10.0,
       "cote_reference": 30.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791560738000
+      "timestamp_cote": 1791560904000
     },
     {
       "numPmu": 14,
       "nom": "PAMELA BOUM",
-      "cote_live": 5.1,
+      "cote_live": 5.6,
       "cote_reference": 5.7,
-      "tendance": "-",
-      "favoris": true,
-      "timestamp_cote": 1791560738000
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1791560904000
     },
     {
       "numPmu": 15,
       "nom": "LILAS TREZY",
-      "cote_live": 24.0,
+      "cote_live": 41.0,
       "cote_reference": 14.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791560738000
+      "timestamp_cote": 1791560904000
     },
     {
       "numPmu": 16,
       "nom": "JESS LIVERMORE",
-      "cote_live": 20.0,
+      "cote_live": 25.0,
       "cote_reference": 24.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791560738000
+      "timestamp_cote": 1791560904000
     }
   ],
   "hippodrome": "COMPIEGNE",
@@ -374,6 +374,90 @@
         "14": 5.1,
         "15": 24.0,
         "16": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-09T17:46:33.945040+02:00",
+      "minutes_avant_depart": 2.442470016666667,
+      "cotes": {
+        "1": 35.0,
+        "2": 40.0,
+        "3": 7.9,
+        "4": 14.0,
+        "5": 7.6,
+        "6": 19.0,
+        "7": 16.0,
+        "8": 14.0,
+        "10": 16.0,
+        "11": 7.6,
+        "12": 17.0,
+        "13": 24.0,
+        "14": 4.8,
+        "15": 26.0,
+        "16": 21.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-09T17:47:13.379062+02:00",
+      "minutes_avant_depart": 1.7818196666666668,
+      "cotes": {
+        "1": 35.0,
+        "2": 45.0,
+        "3": 8.7,
+        "4": 16.0,
+        "5": 5.4,
+        "6": 21.0,
+        "7": 16.0,
+        "8": 16.0,
+        "10": 18.0,
+        "11": 7.8,
+        "12": 20.0,
+        "13": 23.0,
+        "14": 4.8,
+        "15": 32.0,
+        "16": 22.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-09T17:47:53.510552+02:00",
+      "minutes_avant_depart": 1.1151515833333332,
+      "cotes": {
+        "1": 38.0,
+        "2": 48.0,
+        "3": 9.9,
+        "4": 17.0,
+        "5": 6.1,
+        "6": 22.0,
+        "7": 18.0,
+        "8": 17.0,
+        "10": 20.0,
+        "11": 5.3,
+        "12": 21.0,
+        "13": 13.0,
+        "14": 5.4,
+        "15": 36.0,
+        "16": 23.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-09T17:48:33.572128+02:00",
+      "minutes_avant_depart": 0.448483,
+      "cotes": {
+        "1": 43.0,
+        "2": 55.0,
+        "3": 10.0,
+        "4": 18.0,
+        "5": 6.3,
+        "6": 24.0,
+        "7": 13.0,
+        "8": 16.0,
+        "10": 21.0,
+        "11": 5.5,
+        "12": 23.0,
+        "13": 10.0,
+        "14": 5.6,
+        "15": 41.0,
+        "16": 25.0
       }
     }
   ]
