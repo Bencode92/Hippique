@@ -59,26 +59,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX DU CARREFOUR DU VIVIER CORAX
 
-*14h53 · plat · 1400 m · 16 partants · cotes à T−5:57*
+*14h53 · plat · 1400 m · 16 partants · cotes à T−3:18*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 9 | CIACCINO | 5,1 | – | 6,20 | -17,7 % | H.BOUTIN | 14/15/15/2158 |
-| 14 | KAVAKNEY | 6,8 | – | 8,59 | -20,8 % | C.CARBONI | 105/407/3219/911 |
-| 1 | EYWA | 7,4 | – | 8,16 | -9,3 % | T.TRULLIER | 21/54/43/1727 |
-| 7 | AKAMASOA | 7,5 | – | 8,29 | -9,5 % | A.LEMAITRE | 11/69/1398/515 |
-| 3 | AIR DE SAMBA | 10 | 3,5 | 12,64 | -20,9 % | P.REMOUE | 37/90/409/66 |
-| 8 | REDRUNNER | 13 | – | 15,11 | -14,0 % | L.BOISSEAU | 36/53/609/715 |
-| 4 | IRIDIA | 19 | – | 23,49 | -19,1 % | A.HAMELIN | 22/280/1001/1431 |
-| 6 | BIG BOOTS | 20 | – | 26,00 | -23,1 % | D.SANTIAGO | 15/404/3266/896 |
-| 11 | POLO BABY | 27 | – | 43,28 | -37,6 % | C.PACAUT | 48/53/504/62 |
-| 12 | ROXANA OF CECCA | 27 | 3,5 | 32,02 | -15,7 % | F.VALLE SKAR | 35/135/370/873 |
-| 5 | ABRASSO | 28 | 3,5 | 38,22 | -26,7 % | J.MOUTARD | 61/254/15/284 |
-| 10 | BAWE ISLAND | 28 | – | 36,63 | -23,6 % | L.GALLO | 45/15/15/36 |
-| 13 | LOUVE PRECIEUSE | 30 | – | 45,39 | -33,9 % | M.GRANDIN | 3/108/95/1560 |
-| 16 | ORLOVKA | 30 | – | 48,79 | -38,5 % | A.MOLINS | 34/527/16/1715 |
-| 2 | THE CHARM | 34 | 3,5 | 52,26 | -34,9 % | B.MARIE | 69/471/1907/1293 |
-| 15 | TIGRE DORE | 55 | – | 88,68 | -38,0 % | G.MEURY | 68/432/83/218 |
+| 9 | CIACCINO | 5 | – | 6,09 | -18,0 % | H.BOUTIN | 14/15/15/2158 |
+| 14 | KAVAKNEY | 8,2 | – | 10,77 | -23,9 % | C.CARBONI | 105/407/3219/911 |
+| 1 | EYWA | 8,3 | – | 9,38 | -11,5 % | T.TRULLIER | 21/54/43/1727 |
+| 7 | AKAMASOA | 8,7 | – | 9,90 | -12,2 % | A.LEMAITRE | 11/69/1398/515 |
+| 3 | AIR DE SAMBA | 12 | 3,5 | 15,78 | -23,9 % | P.REMOUE | 37/90/409/66 |
+| 8 | REDRUNNER | 12 | – | 13,85 | -13,3 % | L.BOISSEAU | 36/53/609/715 |
+| 2 | THE CHARM | 13 | 3,5 | 17,34 | -25,0 % | B.MARIE | 69/471/1907/1293 |
+| 11 | POLO BABY | 13 | – | 18,59 | -30,1 % | C.PACAUT | 48/53/504/62 |
+| 4 | IRIDIA | 20 | – | 25,08 | -20,3 % | A.HAMELIN | 22/280/1001/1431 |
+| 6 | BIG BOOTS | 24 | – | 32,26 | -25,6 % | D.SANTIAGO | 15/404/3266/896 |
+| 12 | ROXANA OF CECCA | 25 | 3,5 | 29,52 | -15,3 % | F.VALLE SKAR | 35/135/370/873 |
+| 13 | LOUVE PRECIEUSE | 27 | – | 40,52 | -33,4 % | M.GRANDIN | 3/108/95/1560 |
+| 5 | ABRASSO | 33 | 3,5 | 46,28 | -28,7 % | J.MOUTARD | 61/254/15/284 |
+| 10 | BAWE ISLAND | 33 | – | 44,34 | -25,6 % | L.GALLO | 45/15/15/36 |
+| 16 | ORLOVKA | 33 | – | 54,67 | -39,6 % | A.MOLINS | 34/527/16/1715 |
+| 15 | TIGRE DORE | 51 | – | 82,21 | -38,0 % | G.MEURY | 68/432/83/218 |
 
 ### 5. PRIX DE JONQUIERES
 
