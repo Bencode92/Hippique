@@ -167,22 +167,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 9. PRIX DU CARREFOUR DU FOND PERNANT
 
-*17h48 · plat · 1400 m · 15 partants · cotes à T−25:26*
+*17h48 · plat · 1400 m · 15 partants · cotes à T−21:26*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | WHITE PLATIN | 4,9 | 6,8 | 5,05 | -2,9 % | F.VALLE SKAR | 35/90/894/1347 |
-| 14 | PAMELA BOUM | 5,8 | 6,2 | 5,94 | -2,3 % | E.HARDOUIN | 27/89/445/838 |
-| 11 | CELTIC ARYAAN | 8 | 7,4 | 8,56 | -6,5 % | A.POUCHIN | 6/59/1183/1790 |
-| 5 | MASTER PAT | 9,2 | 8,3 | 10,75 | -14,4 % | M.GUYON | 4/73/642/380 |
-| 8 | JACK O'BOY | 13 | 10 | 17,58 | -26,1 % | D.SANTIAGO | 15/117/289/382 |
-| 15 | LILAS TREZY | 15 | 14 | 19,40 | -22,7 % | A.MOLINS | 34/137/124/541 |
-| 4 | FORCEFULL | 16 | 22 | 17,51 | -8,6 % | M.GRANDIN | 3/76/215/1721 |
-| 7 | LISIPPO | 16 | 14 | 22,44 | -28,7 % | A.HAMELIN | 22/280/1001/485 |
-| 10 | IDEE DE CHEVAL | 17 | 14 | 18,78 | -9,5 % | C.GROSBOIS | 25/119/86/1563 |
-| 12 | ROYAL SHAKE | 20 | 15 | 24,83 | -19,5 % | L.BOISSEAU | 36/214/107/342 |
-| 2 | EAGLEHAWK | 25 | 24 | 33,50 | -25,4 % | M.GRONDIN | 145/14/555/1649 |
-| 16 | JESS LIVERMORE | 25 | 21 | 29,26 | -14,6 % | T.TRULLIER | 21/57/13/4 |
-| 6 | MEISHO VELITE | 28 | 31 | 33,24 | -15,8 % | L.GROSSO | 136/60/462/734 |
-| 13 | INSIDE MATTERS | 30 | 28 | 35,96 | -16,6 % | A.LEMAITRE | 11/254/12/284 |
-| 1 | KIMBIA | 98 | 135 | 140,31 | -30,2 % | J.MARIEN | 159/21/805/2182 |
+| 3 | WHITE PLATIN | 5,1 | 6,8 | 5,32 | -4,2 % | F.VALLE SKAR | 35/90/894/1347 |
+| 14 | PAMELA BOUM | 6,1 | 6,2 | 6,34 | -3,8 % | E.HARDOUIN | 27/89/445/838 |
+| 11 | CELTIC ARYAAN | 6,6 | 7,4 | 6,40 | **+3,2 %** | A.POUCHIN | 6/59/1183/1790 |
+| 5 | MASTER PAT | 9,8 | 8,3 | 11,19 | -12,4 % | M.GUYON | 4/73/642/380 |
+| 8 | JACK O'BOY | 12 | 10 | 16,16 | -25,7 % | D.SANTIAGO | 15/117/289/382 |
+| 4 | FORCEFULL | 16 | 22 | 17,69 | -9,5 % | M.GRANDIN | 3/76/215/1721 |
+| 7 | LISIPPO | 16 | 14 | 22,67 | -29,4 % | A.HAMELIN | 22/280/1001/485 |
+| 15 | LILAS TREZY | 16 | 14 | 21,13 | -24,3 % | A.MOLINS | 34/137/124/541 |
+| 10 | IDEE DE CHEVAL | 18 | 14 | 20,26 | -11,2 % | C.GROSBOIS | 25/119/86/1563 |
+| 12 | ROYAL SHAKE | 20 | 15 | 25,08 | -20,3 % | L.BOISSEAU | 36/214/107/342 |
+| 16 | JESS LIVERMORE | 22 | 21 | 25,54 | -13,9 % | T.TRULLIER | 21/57/13/4 |
+| 2 | EAGLEHAWK | 24 | 24 | 32,29 | -25,7 % | M.GRONDIN | 145/14/555/1649 |
+| 6 | MEISHO VELITE | 29 | 31 | 34,92 | -17,0 % | L.GROSSO | 136/60/462/734 |
+| 13 | INSIDE MATTERS | 30 | 28 | 36,31 | -17,4 % | A.LEMAITRE | 11/254/12/284 |
+| 1 | KIMBIA | 84 | 135 | 126,78 | -33,7 % | J.MARIEN | 159/21/805/2182 |
