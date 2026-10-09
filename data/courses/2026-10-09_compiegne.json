@@ -1,39 +1,17 @@
 {
   "hippodrome": "COMPIEGNE",
   "type_reunion": "Plat",
-  "date_extraction": "2026-10-09T01:55:36.550616",
+  "date_extraction": "2026-10-09T14:49:21.751862",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/09102026/R4",
   "courses": [
     {
       "nom": "PRIX DE VENETTE",
-      "horaire": "13h08",
+      "horaire": "13h12",
       "numero": "1",
       "type": "Plat",
       "distance": "2000m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "ALMUGURA F.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: NAVAL CROWN et THANKS (KHELEYF)",
-          "corde": "(Corde:03)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/1/20261009-COM-1-1.png",
-          "propriétaire": "H.ARIBI",
-          "entraineur": "H.GHABRI",
-          "éleveurs": "MME EITHNE THOMPSON",
-          "jockey": "E.HARDOUIN",
-          "poids": "58 kg",
-          "gains": "",
-          "musique": "0p",
-          "valeur": "58.0",
-          "equipement(s)": "",
-          "nb_courses": 1,
-          "nb_victoires": 0,
-          "nb_places": 0,
-          "cote": 17.0,
-          "cote_tendance": ""
-        },
         {
           "n°": "2",
           "cheval": "BLACK THRILL F.PU. 2 a.",
@@ -53,74 +31,10 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 2.2,
-          "cote_tendance": ""
-        },
-        {
-          "n°": "3",
-          "cheval": "SKY NOVA F.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: SPACE BLUES et NAFITHAA (SHAMARDAL)",
-          "corde": "(Corde:04)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/1/20261009-COM-1-3.png",
-          "propriétaire": "H.GHABRI",
-          "entraineur": "H.GHABRI",
-          "éleveurs": "",
-          "jockey": "T.TRULLIER",
-          "poids": "58 kg",
-          "gains": "383600",
-          "musique": "3p",
-          "valeur": "58.0",
-          "equipement(s)": "",
-          "nb_courses": 1,
-          "nb_victoires": 0,
-          "nb_places": 1,
-          "cote": 17.0,
-          "cote_tendance": ""
-        },
-        {
-          "n°": "4",
-          "cheval": "OLGA D'ARGENT F.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: RECOLETOS et NOBLESSE D'ARGENT (KENDARGENT)",
-          "corde": "(Corde:07)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/1/20261009-COM-1-4.png",
-          "propriétaire": "LA FLECHE RACING/DP.COLLET",
-          "entraineur": "M.BRASME (S)",
-          "éleveurs": "MR JEAN BESNOUIN",
-          "jockey": "PC.BOUDOT",
-          "poids": "58 kg",
-          "gains": "483000",
-          "musique": "2p0p5p",
-          "valeur": "58.0",
-          "equipement(s)": "",
-          "nb_courses": 3,
-          "nb_victoires": 0,
-          "nb_places": 2,
-          "cote": 3.5,
-          "cote_tendance": ""
-        },
-        {
-          "n°": "5",
-          "cheval": "SYDNEY GIRLS F.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: HELLO YOUMZAIN et SUNFLOWER (LE HAVRE)",
-          "corde": "(Corde:05)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/1/20261009-COM-1-5.png",
-          "propriétaire": "S.LLOYD",
-          "entraineur": "MME V.HEAD",
-          "éleveurs": "PETRA BLOODSTOCK AGENCY LTD",
-          "jockey": "P.BAZIRE",
-          "poids": "58 kg",
-          "gains": "",
-          "musique": "8p",
-          "valeur": "58.0",
-          "equipement(s)": "",
-          "nb_courses": 1,
-          "nb_victoires": 0,
-          "nb_places": 0,
-          "cote": 8.8,
-          "cote_tendance": ""
+          "cote": 4.0,
+          "cote_tendance": "",
+          "cote_reference": 6.1,
+          "arrivee": 1
         },
         {
           "n°": "6",
@@ -141,8 +55,130 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 8.8,
-          "cote_tendance": ""
+          "cote": 4.8,
+          "cote_tendance": "",
+          "cote_reference": 5.7,
+          "arrivee": 2
+        },
+        {
+          "n°": "5",
+          "cheval": "SYDNEY GIRLS F.PU. 2 a.",
+          "cheval_url": "",
+          "père_mère": "Par: HELLO YOUMZAIN et SUNFLOWER (LE HAVRE)",
+          "corde": "(Corde:05)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/1/20261009-COM-1-5.png",
+          "propriétaire": "S.LLOYD",
+          "entraineur": "MME V.HEAD",
+          "éleveurs": "PETRA BLOODSTOCK AGENCY LTD",
+          "jockey": "P.BAZIRE",
+          "poids": "58 kg",
+          "gains": "",
+          "musique": "8p",
+          "valeur": "58.0",
+          "equipement(s)": "",
+          "nb_courses": 1,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 42.0,
+          "cote_tendance": "",
+          "cote_reference": 20.0,
+          "arrivee": 3
+        },
+        {
+          "n°": "3",
+          "cheval": "SKY NOVA F.PU. 2 a.",
+          "cheval_url": "",
+          "père_mère": "Par: SPACE BLUES et NAFITHAA (SHAMARDAL)",
+          "corde": "(Corde:04)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/1/20261009-COM-1-3.png",
+          "propriétaire": "H.GHABRI",
+          "entraineur": "H.GHABRI",
+          "éleveurs": "",
+          "jockey": "T.TRULLIER",
+          "poids": "58 kg",
+          "gains": "383600",
+          "musique": "3p",
+          "valeur": "58.0",
+          "equipement(s)": "",
+          "nb_courses": 1,
+          "nb_victoires": 0,
+          "nb_places": 1,
+          "cote": 7.2,
+          "cote_tendance": "",
+          "cote_reference": 7.8,
+          "arrivee": 4
+        },
+        {
+          "n°": "4",
+          "cheval": "OLGA D'ARGENT F.PU. 2 a.",
+          "cheval_url": "",
+          "père_mère": "Par: RECOLETOS et NOBLESSE D'ARGENT (KENDARGENT)",
+          "corde": "(Corde:07)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/1/20261009-COM-1-4.png",
+          "propriétaire": "LA FLECHE RACING/DP.COLLET",
+          "entraineur": "M.BRASME (S)",
+          "éleveurs": "MR JEAN BESNOUIN",
+          "jockey": "PC.BOUDOT",
+          "poids": "58 kg",
+          "gains": "483000",
+          "musique": "2p0p5p",
+          "valeur": "58.0",
+          "equipement(s)": "",
+          "nb_courses": 3,
+          "nb_victoires": 0,
+          "nb_places": 2,
+          "cote": 6.1,
+          "cote_tendance": "",
+          "cote_reference": 5.5,
+          "arrivee": 5
+        },
+        {
+          "n°": "1",
+          "cheval": "ALMUGURA F.PU. 2 a.",
+          "cheval_url": "",
+          "père_mère": "Par: NAVAL CROWN et THANKS (KHELEYF)",
+          "corde": "(Corde:03)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/1/20261009-COM-1-1.png",
+          "propriétaire": "H.ARIBI",
+          "entraineur": "H.GHABRI",
+          "éleveurs": "MME EITHNE THOMPSON",
+          "jockey": "E.HARDOUIN",
+          "poids": "58 kg",
+          "gains": "",
+          "musique": "0p",
+          "valeur": "58.0",
+          "equipement(s)": "",
+          "nb_courses": 1,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 32.0,
+          "cote_tendance": "",
+          "cote_reference": 13.0,
+          "arrivee": 6
+        },
+        {
+          "n°": "8",
+          "cheval": "LIVAKHOVA F.PU. 2 a.",
+          "cheval_url": "",
+          "père_mère": "Par: CAMELOT et RAINBOW RISING (HENRYTHENAVIGATOR)",
+          "corde": "(Corde:01)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/1/20261009-COM-1-8.png",
+          "propriétaire": "A.JATHIERE",
+          "entraineur": "M.BLANCPAIN (S)",
+          "éleveurs": "DRUMLIN BLOOCSTOCK",
+          "jockey": "C.SOUMILLON",
+          "poids": "56 kg",
+          "gains": "",
+          "musique": "",
+          "valeur": "56.0",
+          "equipement(s)": "",
+          "nb_courses": 0,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 6.3,
+          "cote_tendance": "",
+          "cote_reference": 3.7,
+          "arrivee": 7
         },
         {
           "n°": "7",
@@ -163,20 +199,37 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 17.0,
-          "cote_tendance": ""
-        },
+          "cote": 5.9,
+          "cote_tendance": "",
+          "cote_reference": 10.0,
+          "arrivee": 8
+        }
+      ],
+      "typePiste": "HERBE",
+      "terrain": "Très souple",
+      "penetrometre": "4,1",
+      "cordeCourse": "CORDE_GAUCHE",
+      "arrivee_definitive": true
+    },
+    {
+      "nom": "PRIX DE JAUX",
+      "horaire": "13h46",
+      "numero": "2",
+      "type": "Plat",
+      "distance": "2000m",
+      "url": "",
+      "participants": [
         {
-          "n°": "8",
-          "cheval": "LIVAKHOVA F.PU. 2 a.",
+          "n°": "10",
+          "cheval": "MERCI MILLE FOIS M.PU. 2 a.",
           "cheval_url": "",
-          "père_mère": "Par: CAMELOT et RAINBOW RISING (HENRYTHENAVIGATOR)",
+          "père_mère": "Par: NO NAY NEVER et MASCHA (LE HAVRE)",
           "corde": "(Corde:01)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/1/20261009-COM-1-8.png",
-          "propriétaire": "A.JATHIERE",
-          "entraineur": "M.BLANCPAIN (S)",
-          "éleveurs": "DRUMLIN BLOOCSTOCK",
-          "jockey": "C.SOUMILLON",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/2/20261009-COM-2-10.png",
+          "propriétaire": "M.TABOR/S.MAGNIER/D.SMITH",
+          "entraineur": "CHR.HEAD (S)",
+          "éleveurs": "PREMIER BLOODSTOCK",
+          "jockey": "PC.BOUDOT",
           "poids": "56 kg",
           "gains": "",
           "musique": "",
@@ -184,80 +237,35 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
-        }
-      ],
-      "cordeCourse": "CORDE_GAUCHE"
-    },
-    {
-      "nom": "PRIX DE JAUX",
-      "horaire": "13h43",
-      "numero": "2",
-      "type": "Plat",
-      "distance": "2000m",
-      "url": "",
-      "participants": [
-        {
-          "n°": "1",
-          "cheval": "LAZZAR M.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: LOPE DE VEGA et LASTOCHKA (AUSTRALIA)",
-          "corde": "(Corde:05)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/2/20261009-COM-2-1.png",
-          "propriétaire": "N.BIZAKOV",
-          "entraineur": "J.REYNIER (S)",
-          "éleveurs": "SUMBE SAS",
-          "jockey": "A.ORANI",
-          "poids": "58 kg",
-          "gains": "399000",
-          "musique": "2p",
-          "valeur": "58.0",
-          "equipement(s)": "",
-          "nb_courses": 1,
-          "nb_victoires": 0,
-          "nb_places": 1
-        },
-        {
-          "n°": "2",
-          "cheval": "SIGGY M.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: HELLO YOUMZAIN et STEIP AMACH (VOCALISED)",
-          "corde": "(Corde:07)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/2/20261009-COM-2-2.png",
-          "propriétaire": "HARAS D'ETREHAM",
-          "entraineur": "N.LE ROCH (S)",
-          "éleveurs": "HARAS D'ETREHAM",
-          "jockey": "A.LEMAITRE",
-          "poids": "58 kg",
-          "gains": "",
-          "musique": "8p",
-          "valeur": "58.0",
-          "equipement(s)": "",
-          "nb_courses": 1,
-          "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 5.2,
-          "cote_tendance": ""
+          "cote": 6.0,
+          "cote_tendance": "",
+          "cote_reference": 6.3,
+          "arrivee": 1
         },
         {
-          "n°": "3",
-          "cheval": "KEITH M.PU. 2 a.",
+          "n°": "7",
+          "cheval": "CONFLUENT H.PU. 2 a.",
           "cheval_url": "",
-          "père_mère": "Par: WOOTTON BASSETT et FRONT CONTENDER (TEOFILO)",
-          "corde": "(Corde:10)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/2/20261009-COM-2-3.png",
-          "propriétaire": "HAR .HARAS DU MONT DIT MONT",
-          "entraineur": "Y.BARBEROT (S)",
-          "éleveurs": "HARAS DU MONT DIT MONT",
-          "jockey": "A.POUCHIN",
+          "père_mère": "Par: SEA THE MOON et LA JONCTION (KINGMAN)",
+          "corde": "(Corde:08)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/2/20261009-COM-2-7.png",
+          "propriétaire": "RACING TO PROFIT SYNDICATE",
+          "entraineur": "A.MURPHY (S)",
+          "éleveurs": "ECURIE HUGO ET PIERRE PILARSKI",
+          "jockey": "E.VERHESTRAETEN",
           "poids": "58 kg",
-          "gains": "520600",
-          "musique": "2p",
+          "gains": "100000",
+          "musique": "6p7p",
           "valeur": "58.0",
           "equipement(s)": "",
-          "nb_courses": 1,
+          "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 2,
+          "cote": 37.0,
+          "cote_tendance": "",
+          "cote_reference": 18.0,
+          "arrivee": 2
         },
         {
           "n°": "4",
@@ -278,70 +286,82 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 2.6,
-          "cote_tendance": ""
+          "cote": 8.7,
+          "cote_tendance": "",
+          "cote_reference": 7.6,
+          "arrivee": 3
         },
         {
-          "n°": "5",
-          "cheval": "WHEELING M.PU. 2 a.",
+          "n°": "3",
+          "cheval": "KEITH M.PU. 2 a.",
           "cheval_url": "",
-          "père_mère": "Par: VICTOR LUDORUM et MISS ALPHA (CAPE CROSS)",
-          "corde": "(Corde:04)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/2/20261009-COM-2-5.png",
-          "propriétaire": "MME M.LEBLOND",
-          "entraineur": "M.DELZANGLES",
-          "éleveurs": "HARAS DES CAPUCINES",
-          "jockey": "A.HAMELIN",
+          "père_mère": "Par: WOOTTON BASSETT et FRONT CONTENDER (TEOFILO)",
+          "corde": "(Corde:10)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/2/20261009-COM-2-3.png",
+          "propriétaire": "HAR .HARAS DU MONT DIT MONT",
+          "entraineur": "Y.BARBEROT (S)",
+          "éleveurs": "HARAS DU MONT DIT MONT",
+          "jockey": "A.POUCHIN",
           "poids": "58 kg",
-          "gains": "383600",
-          "musique": "3p",
+          "gains": "520600",
+          "musique": "2p",
           "valeur": "58.0",
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 5.2,
-          "cote_tendance": ""
+          "cote": 5.0,
+          "cote_tendance": "",
+          "cote_reference": 6.0,
+          "arrivee": 4
         },
         {
-          "n°": "6",
-          "cheval": "DARSHKAN M.PU. 2 a.",
+          "n°": "1",
+          "cheval": "LAZZAR M.PU. 2 a.",
           "cheval_url": "",
-          "père_mère": "Par: MUHAARAR et NELKAN (DUBAWI)",
-          "corde": "(Corde:02)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/2/20261009-COM-2-6.png",
-          "propriétaire": "HA.HA.PANTALL (S)",
-          "entraineur": "HA.PANTALL (S)",
-          "éleveurs": "MME YVETTE PANTALL",
-          "jockey": "M.PROTTI",
+          "père_mère": "Par: LOPE DE VEGA et LASTOCHKA (AUSTRALIA)",
+          "corde": "(Corde:05)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/2/20261009-COM-2-1.png",
+          "propriétaire": "N.BIZAKOV",
+          "entraineur": "J.REYNIER (S)",
+          "éleveurs": "SUMBE SAS",
+          "jockey": "A.ORANI",
           "poids": "58 kg",
-          "gains": "84000",
-          "musique": "5p9p0p",
-          "valeur": "58.0",
-          "equipement(s)": "A",
-          "nb_courses": 3,
-          "nb_victoires": 0,
-          "nb_places": 1
-        },
-        {
-          "n°": "7",
-          "cheval": "CONFLUENT H.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: SEA THE MOON et LA JONCTION (KINGMAN)",
-          "corde": "(Corde:08)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/2/20261009-COM-2-7.png",
-          "propriétaire": "RACING TO PROFIT SYNDICATE",
-          "entraineur": "A.MURPHY (S)",
-          "éleveurs": "ECURIE HUGO ET PIERRE PILARSKI",
-          "jockey": "E.VERHESTRAETEN",
-          "poids": "58 kg",
-          "gains": "100000",
-          "musique": "6p7p",
+          "gains": "399000",
+          "musique": "2p",
           "valeur": "58.0",
           "equipement(s)": "",
-          "nb_courses": 2,
+          "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 1,
+          "cote": 2.4,
+          "cote_tendance": "",
+          "cote_reference": 3.4,
+          "arrivee": 5
+        },
+        {
+          "n°": "9",
+          "cheval": "LENDAS M.PU. 2 a.",
+          "cheval_url": "",
+          "père_mère": "Par: ALMANZOR et SACRED BELIEF (MUHAARAR)",
+          "corde": "(Corde:03)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/2/20261009-COM-2-9.png",
+          "propriétaire": "H.TOENNIES-FISCHER",
+          "entraineur": "J.BOISNARD (S)",
+          "éleveurs": "GESTUT ZUR KUSTE AG",
+          "jockey": "H.LEBOUC",
+          "poids": "58 kg",
+          "gains": "277600",
+          "musique": "5p5p5p",
+          "valeur": "58.0",
+          "equipement(s)": "",
+          "nb_courses": 3,
+          "nb_victoires": 0,
+          "nb_places": 3,
+          "cote": 40.0,
+          "cote_tendance": "",
+          "cote_reference": 22.0,
+          "arrivee": 6
         },
         {
           "n°": "8",
@@ -362,183 +382,121 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 5.2,
-          "cote_tendance": ""
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0,
+          "arrivee": 7
         },
         {
-          "n°": "9",
-          "cheval": "LENDAS M.PU. 2 a.",
+          "n°": "5",
+          "cheval": "WHEELING M.PU. 2 a.",
           "cheval_url": "",
-          "père_mère": "Par: ALMANZOR et SACRED BELIEF (MUHAARAR)",
-          "corde": "(Corde:03)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/2/20261009-COM-2-9.png",
-          "propriétaire": "H.TOENNIES-FISCHER",
-          "entraineur": "J.BOISNARD (S)",
-          "éleveurs": "GESTUT ZUR KUSTE AG",
-          "jockey": "H.LEBOUC",
+          "père_mère": "Par: VICTOR LUDORUM et MISS ALPHA (CAPE CROSS)",
+          "corde": "(Corde:04)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/2/20261009-COM-2-5.png",
+          "propriétaire": "MME M.LEBLOND",
+          "entraineur": "M.DELZANGLES",
+          "éleveurs": "HARAS DES CAPUCINES",
+          "jockey": "A.HAMELIN",
           "poids": "58 kg",
-          "gains": "277600",
-          "musique": "5p5p5p",
+          "gains": "383600",
+          "musique": "3p",
           "valeur": "58.0",
           "equipement(s)": "",
-          "nb_courses": 3,
+          "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 1,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 7.5,
+          "arrivee": 8
         },
         {
-          "n°": "10",
-          "cheval": "MERCI MILLE FOIS M.PU. 2 a.",
+          "n°": "6",
+          "cheval": "DARSHKAN M.PU. 2 a.",
           "cheval_url": "",
-          "père_mère": "Par: NO NAY NEVER et MASCHA (LE HAVRE)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/2/20261009-COM-2-10.png",
-          "propriétaire": "M.TABOR/S.MAGNIER/D.SMITH",
-          "entraineur": "CHR.HEAD (S)",
-          "éleveurs": "PREMIER BLOODSTOCK",
-          "jockey": "PC.BOUDOT",
-          "poids": "56 kg",
+          "père_mère": "Par: MUHAARAR et NELKAN (DUBAWI)",
+          "corde": "(Corde:02)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/2/20261009-COM-2-6.png",
+          "propriétaire": "HA.HA.PANTALL (S)",
+          "entraineur": "HA.PANTALL (S)",
+          "éleveurs": "MME YVETTE PANTALL",
+          "jockey": "M.PROTTI",
+          "poids": "58 kg",
+          "gains": "84000",
+          "musique": "5p9p0p",
+          "valeur": "58.0",
+          "equipement(s)": "A",
+          "nb_courses": 3,
+          "nb_victoires": 0,
+          "nb_places": 1,
+          "cote": 35.0,
+          "cote_tendance": "",
+          "cote_reference": 23.0,
+          "arrivee": 9
+        },
+        {
+          "n°": "2",
+          "cheval": "SIGGY M.PU. 2 a.",
+          "cheval_url": "",
+          "père_mère": "Par: HELLO YOUMZAIN et STEIP AMACH (VOCALISED)",
+          "corde": "(Corde:07)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/2/20261009-COM-2-2.png",
+          "propriétaire": "HARAS D'ETREHAM",
+          "entraineur": "N.LE ROCH (S)",
+          "éleveurs": "HARAS D'ETREHAM",
+          "jockey": "A.LEMAITRE",
+          "poids": "58 kg",
           "gains": "",
-          "musique": "",
-          "valeur": "56.0",
+          "musique": "8p",
+          "valeur": "58.0",
           "equipement(s)": "",
-          "nb_courses": 0,
+          "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 5.2,
-          "cote_tendance": ""
+          "cote": 49.0,
+          "cote_tendance": "",
+          "cote_reference": 32.0,
+          "arrivee": 10
         }
       ],
-      "cordeCourse": "CORDE_GAUCHE"
+      "typePiste": "HERBE",
+      "terrain": "Très souple",
+      "penetrometre": "4,1",
+      "cordeCourse": "CORDE_GAUCHE",
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX DE LONGUEIL-ANNEL",
-      "horaire": "14h18",
+      "horaire": "14h20",
       "numero": "3",
       "type": "Plat",
       "distance": "1400m",
       "url": "",
       "participants": [
         {
-          "n°": "1",
-          "cheval": "MUGHADIR H.PU. 3 a.",
+          "n°": "8",
+          "cheval": "DANCE GONE F.PU. 3 a.",
           "cheval_url": "",
-          "père_mère": "Par: ZELZAL et AL NAAMAH (GALILEO)",
-          "corde": "(Corde:03)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/3/20261009-COM-3-1.png",
-          "propriétaire": "AL SHAQAB RACING",
-          "entraineur": "C&Y.LERNER (S)",
-          "éleveurs": "AL SHAQAB RACING",
-          "jockey": "C.SOUMILLON",
-          "poids": "58 kg",
-          "gains": "109600",
-          "musique": "(25)5p",
-          "valeur": "58.0",
-          "equipement(s)": "",
-          "nb_courses": 1,
-          "nb_victoires": 0,
-          "nb_places": 1
-        },
-        {
-          "n°": "2",
-          "cheval": "LOVE SPIRIT H.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: CHARM SPIRIT et MADLY IN LOVE (SLICKLY)",
-          "corde": "(Corde:10)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/3/20261009-COM-3-2.png",
-          "propriétaire": "FX.BELVISI",
-          "entraineur": "FX.BELVISI",
-          "éleveurs": "MR FRANCOIS-XAVIER BELVISI",
-          "jockey": "F.VALLE SKAR",
-          "poids": "58 kg",
-          "gains": "",
-          "musique": "0p",
-          "valeur": "58.0",
-          "equipement(s)": "",
-          "nb_courses": 1,
-          "nb_victoires": 0,
-          "nb_places": 0,
-          "cote": 1.7,
-          "cote_tendance": ""
-        },
-        {
-          "n°": "3",
-          "cheval": "NO REMORSE H.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MEHMAS et ALUWAINA (REDOUTE'S CHOICE)",
-          "corde": "(Corde:04)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/3/20261009-COM-3-3.png",
-          "propriétaire": "C.WENTWORTH / Z.WENTWORTH",
+          "père_mère": "Par: TEN SOVEREIGNS et GONDWANA (SPEIGHTSTOWN)",
+          "corde": "(Corde:06)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/3/20261009-COM-3-8.png",
+          "propriétaire": "SCEA HARAS DES FORETS",
           "entraineur": "N.CAULLERY",
-          "éleveurs": "AL SHAQAB RACING",
-          "jockey": "M.GUYON",
-          "poids": "58 kg",
-          "gains": "3627900",
-          "musique": "3p7p3p4p5p2p(25)5p7p2p",
-          "valeur": "58.0",
-          "equipement(s)": "A",
-          "nb_courses": 11,
-          "nb_victoires": 0,
-          "nb_places": 10
-        },
-        {
-          "n°": "4",
-          "cheval": "LUCKY WOOD H.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: WOODED et ASSUNTA (SIYOUNI)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/3/20261009-COM-3-4.png",
-          "propriétaire": "DOMAINE BILLARD PERE ET FILS",
-          "entraineur": "MME J.DUPONT-FAHN",
-          "éleveurs": "MR THIERRY DE LA HERONNIERE",
-          "jockey": "A.LEMAITRE",
-          "poids": "58 kg",
-          "gains": "98800",
-          "musique": "0p0p0p0p5p8p",
-          "valeur": "58.0",
+          "éleveurs": "ECURIE DU SUD",
+          "jockey": "S.PASQUIER",
+          "poids": "56.5 kg",
+          "gains": "1266400",
+          "musique": "3p2p2p6p4p",
+          "valeur": "56.5",
           "equipement(s)": "",
-          "nb_courses": 6,
+          "nb_courses": 5,
           "nb_victoires": 0,
-          "nb_places": 1
-        },
-        {
-          "n°": "5",
-          "cheval": "PROTAGONIST M.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: JAPAN et PASSCODE (CAMACHO)",
-          "corde": "(Corde:08)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/3/20261009-COM-3-5.png",
-          "propriétaire": "M.ELDUBEBA",
-          "entraineur": "H.GHABRI",
-          "éleveurs": "MR THOMAS SCHAFFER",
-          "jockey": "PC.BOUDOT",
-          "poids": "58 kg",
-          "gains": "1033000",
-          "musique": "(25)3p4p4p5p6p0p6p",
-          "valeur": "58.0",
-          "equipement(s)": "",
-          "nb_courses": 7,
-          "nb_victoires": 0,
-          "nb_places": 6
-        },
-        {
-          "n°": "6",
-          "cheval": "NIEDERBRONN M.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: KENDARGENT et BASIDIA (MAKFI)",
-          "corde": "(Corde:09)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/3/20261009-COM-3-6.png",
-          "propriétaire": "C.FOELLER",
-          "entraineur": "M.RULEC (S)",
-          "éleveurs": "MR RASHIT SHAYKHUTDINOV",
-          "jockey": "A.HAMELIN",
-          "poids": "58 kg",
-          "gains": "1287000",
-          "musique": "6p7p3p5p(25)0p4p",
-          "valeur": "58.0",
-          "equipement(s)": "",
-          "nb_courses": 6,
-          "nb_victoires": 0,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 3.0,
+          "cote_tendance": "",
+          "cote_reference": 4.1,
+          "arrivee": 1
         },
         {
           "n°": "7",
@@ -558,47 +516,11 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 3
-        },
-        {
-          "n°": "8",
-          "cheval": "DANCE GONE F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: TEN SOVEREIGNS et GONDWANA (SPEIGHTSTOWN)",
-          "corde": "(Corde:06)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/3/20261009-COM-3-8.png",
-          "propriétaire": "SCEA HARAS DES FORETS",
-          "entraineur": "N.CAULLERY",
-          "éleveurs": "ECURIE DU SUD",
-          "jockey": "S.PASQUIER",
-          "poids": "56.5 kg",
-          "gains": "1266400",
-          "musique": "3p2p2p6p4p",
-          "valeur": "56.5",
-          "equipement(s)": "",
-          "nb_courses": 5,
-          "nb_victoires": 0,
-          "nb_places": 5
-        },
-        {
-          "n°": "9",
-          "cheval": "HIRAYA F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: SEAHENGE et JANAYA (DEPORTIVO)",
-          "corde": "(Corde:07)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/3/20261009-COM-3-9.png",
-          "propriétaire": "VAN DER WEIDE/VAN DER ZAA",
-          "entraineur": "MME J.HENDRIKS",
-          "éleveurs": "MR JOHANNES VAN DER WEIDE",
-          "jockey": "H.BOUTIN",
-          "poids": "56.5 kg",
-          "gains": "",
-          "musique": "0p0p0p",
-          "valeur": "56.5",
-          "equipement(s)": "",
-          "nb_courses": 3,
-          "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 3,
+          "cote": 3.2,
+          "cote_tendance": "",
+          "cote_reference": 3.5,
+          "arrivee": 2
         },
         {
           "n°": "10",
@@ -619,11 +541,161 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 1.7,
-          "cote_tendance": ""
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 15.0,
+          "arrivee": 3
+        },
+        {
+          "n°": "5",
+          "cheval": "PROTAGONIST M.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: JAPAN et PASSCODE (CAMACHO)",
+          "corde": "(Corde:08)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/3/20261009-COM-3-5.png",
+          "propriétaire": "M.ELDUBEBA",
+          "entraineur": "H.GHABRI",
+          "éleveurs": "MR THOMAS SCHAFFER",
+          "jockey": "PC.BOUDOT",
+          "poids": "58 kg",
+          "gains": "1033000",
+          "musique": "(25)3p4p4p5p6p0p6p",
+          "valeur": "58.0",
+          "equipement(s)": "",
+          "nb_courses": 7,
+          "nb_victoires": 0,
+          "nb_places": 6,
+          "cote": 19.0,
+          "cote_tendance": "",
+          "cote_reference": 23.0,
+          "arrivee": 4
+        },
+        {
+          "n°": "6",
+          "cheval": "NIEDERBRONN M.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: KENDARGENT et BASIDIA (MAKFI)",
+          "corde": "(Corde:09)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/3/20261009-COM-3-6.png",
+          "propriétaire": "C.FOELLER",
+          "entraineur": "M.RULEC (S)",
+          "éleveurs": "MR RASHIT SHAYKHUTDINOV",
+          "jockey": "A.HAMELIN",
+          "poids": "58 kg",
+          "gains": "1287000",
+          "musique": "6p7p3p5p(25)0p4p",
+          "valeur": "58.0",
+          "equipement(s)": "",
+          "nb_courses": 6,
+          "nb_victoires": 0,
+          "nb_places": 5,
+          "cote": 4.8,
+          "cote_tendance": "",
+          "cote_reference": 4.8,
+          "arrivee": 5
+        },
+        {
+          "n°": "2",
+          "cheval": "LOVE SPIRIT H.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: CHARM SPIRIT et MADLY IN LOVE (SLICKLY)",
+          "corde": "(Corde:10)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/3/20261009-COM-3-2.png",
+          "propriétaire": "FX.BELVISI",
+          "entraineur": "FX.BELVISI",
+          "éleveurs": "MR FRANCOIS-XAVIER BELVISI",
+          "jockey": "F.VALLE SKAR",
+          "poids": "58 kg",
+          "gains": "",
+          "musique": "0p",
+          "valeur": "58.0",
+          "equipement(s)": "",
+          "nb_courses": 1,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 49.0,
+          "cote_tendance": "",
+          "cote_reference": 16.0,
+          "arrivee": 6
+        },
+        {
+          "n°": "3",
+          "cheval": "NO REMORSE H.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: MEHMAS et ALUWAINA (REDOUTE'S CHOICE)",
+          "corde": "(Corde:04)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/3/20261009-COM-3-3.png",
+          "propriétaire": "C.WENTWORTH / Z.WENTWORTH",
+          "entraineur": "N.CAULLERY",
+          "éleveurs": "AL SHAQAB RACING",
+          "jockey": "M.GUYON",
+          "poids": "58 kg",
+          "gains": "3627900",
+          "musique": "3p7p3p4p5p2p(25)5p7p2p",
+          "valeur": "58.0",
+          "equipement(s)": "A",
+          "nb_courses": 11,
+          "nb_victoires": 0,
+          "nb_places": 10,
+          "cote": 7.3,
+          "cote_tendance": "",
+          "cote_reference": 5.2,
+          "arrivee": 7
+        },
+        {
+          "n°": "9",
+          "cheval": "HIRAYA F.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: SEAHENGE et JANAYA (DEPORTIVO)",
+          "corde": "(Corde:07)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/3/20261009-COM-3-9.png",
+          "propriétaire": "VAN DER WEIDE/VAN DER ZAA",
+          "entraineur": "MME J.HENDRIKS",
+          "éleveurs": "MR JOHANNES VAN DER WEIDE",
+          "jockey": "H.BOUTIN",
+          "poids": "56.5 kg",
+          "gains": "",
+          "musique": "0p0p0p",
+          "valeur": "56.5",
+          "equipement(s)": "",
+          "nb_courses": 3,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 157.0,
+          "cote_tendance": "",
+          "cote_reference": 64.0,
+          "arrivee": 8
+        },
+        {
+          "n°": "4",
+          "cheval": "LUCKY WOOD H.PU. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: WOODED et ASSUNTA (SIYOUNI)",
+          "corde": "(Corde:01)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/3/20261009-COM-3-4.png",
+          "propriétaire": "DOMAINE BILLARD PERE ET FILS",
+          "entraineur": "MME J.DUPONT-FAHN",
+          "éleveurs": "MR THIERRY DE LA HERONNIERE",
+          "jockey": "A.LEMAITRE",
+          "poids": "58 kg",
+          "gains": "98800",
+          "musique": "0p0p0p0p5p8p",
+          "valeur": "58.0",
+          "equipement(s)": "",
+          "nb_courses": 6,
+          "nb_victoires": 0,
+          "nb_places": 1,
+          "cote": 100.0,
+          "cote_tendance": "",
+          "cote_reference": 31.0,
+          "arrivee": 9
         }
       ],
-      "cordeCourse": "CORDE_GAUCHE"
+      "typePiste": "HERBE",
+      "terrain": "Très souple",
+      "penetrometre": "4,1",
+      "cordeCourse": "CORDE_GAUCHE",
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX DU CARREFOUR DU VIVIER CORAX",
@@ -651,7 +723,10 @@
           "equipement(s)": "A",
           "nb_courses": 46,
           "nb_victoires": 4,
-          "nb_places": 30
+          "nb_places": 30,
+          "cote": 8.3,
+          "cote_tendance": "",
+          "cote_reference": 5.9
         },
         {
           "n°": "2",
@@ -672,8 +747,9 @@
           "nb_courses": 53,
           "nb_victoires": 6,
           "nb_places": 10,
-          "cote": 3.5,
-          "cote_tendance": ""
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 35.0
         },
         {
           "n°": "3",
@@ -694,8 +770,9 @@
           "nb_courses": 30,
           "nb_victoires": 0,
           "nb_places": 10,
-          "cote": 3.5,
-          "cote_tendance": ""
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 9.7
         },
         {
           "n°": "4",
@@ -715,7 +792,10 @@
           "equipement(s)": "",
           "nb_courses": 30,
           "nb_victoires": 0,
-          "nb_places": 14
+          "nb_places": 14,
+          "cote": 20.0,
+          "cote_tendance": "",
+          "cote_reference": 12.0
         },
         {
           "n°": "5",
@@ -736,8 +816,9 @@
           "nb_courses": 70,
           "nb_victoires": 5,
           "nb_places": 32,
-          "cote": 3.5,
-          "cote_tendance": ""
+          "cote": 32.0,
+          "cote_tendance": "",
+          "cote_reference": 19.0
         },
         {
           "n°": "6",
@@ -757,7 +838,10 @@
           "equipement(s)": "A",
           "nb_courses": 99,
           "nb_victoires": 11,
-          "nb_places": 54
+          "nb_places": 54,
+          "cote": 24.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         },
         {
           "n°": "7",
@@ -777,7 +861,10 @@
           "equipement(s)": "A",
           "nb_courses": 13,
           "nb_victoires": 0,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 8.6,
+          "cote_tendance": "",
+          "cote_reference": 15.0
         },
         {
           "n°": "8",
@@ -797,7 +884,10 @@
           "equipement(s)": "",
           "nb_courses": 48,
           "nb_victoires": 3,
-          "nb_places": 19
+          "nb_places": 19,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 17.0
         },
         {
           "n°": "9",
@@ -817,7 +907,10 @@
           "equipement(s)": "A",
           "nb_courses": 38,
           "nb_victoires": 1,
-          "nb_places": 22
+          "nb_places": 22,
+          "cote": 4.9,
+          "cote_tendance": "",
+          "cote_reference": 6.2
         },
         {
           "n°": "10",
@@ -837,7 +930,10 @@
           "equipement(s)": "",
           "nb_courses": 61,
           "nb_victoires": 4,
-          "nb_places": 22
+          "nb_places": 22,
+          "cote": 32.0,
+          "cote_tendance": "",
+          "cote_reference": 19.0
         },
         {
           "n°": "11",
@@ -857,7 +953,10 @@
           "equipement(s)": "",
           "nb_courses": 27,
           "nb_victoires": 1,
-          "nb_places": 14
+          "nb_places": 14,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 50.0
         },
         {
           "n°": "12",
@@ -878,8 +977,9 @@
           "nb_courses": 22,
           "nb_victoires": 1,
           "nb_places": 2,
-          "cote": 3.5,
-          "cote_tendance": ""
+          "cote": 29.0,
+          "cote_tendance": "",
+          "cote_reference": 20.0
         },
         {
           "n°": "13",
@@ -899,7 +999,10 @@
           "equipement(s)": "A",
           "nb_courses": 69,
           "nb_victoires": 5,
-          "nb_places": 27
+          "nb_places": 27,
+          "cote": 29.0,
+          "cote_tendance": "",
+          "cote_reference": 20.0
         },
         {
           "n°": "14",
@@ -919,7 +1022,10 @@
           "equipement(s)": "",
           "nb_courses": 79,
           "nb_victoires": 5,
-          "nb_places": 26
+          "nb_places": 26,
+          "cote": 8.1,
+          "cote_tendance": "",
+          "cote_reference": 8.1
         },
         {
           "n°": "15",
@@ -939,7 +1045,10 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 50.0,
+          "cote_tendance": "",
+          "cote_reference": 41.0
         },
         {
           "n°": "16",
@@ -959,9 +1068,15 @@
           "equipement(s)": "A",
           "nb_courses": 24,
           "nb_victoires": 1,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 33.0,
+          "cote_tendance": "",
+          "cote_reference": 28.0
         }
       ],
+      "typePiste": "HERBE",
+      "terrain": "Très souple",
+      "penetrometre": "4,1",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -990,7 +1105,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 103.0,
+          "cote_tendance": "",
+          "cote_reference": 191.0
         },
         {
           "n°": "2",
@@ -1011,8 +1129,9 @@
           "nb_courses": 9,
           "nb_victoires": 0,
           "nb_places": 8,
-          "cote": 8.8,
-          "cote_tendance": ""
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 12.0
         },
         {
           "n°": "3",
@@ -1032,7 +1151,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 81.0,
+          "cote_tendance": "",
+          "cote_reference": 54.0
         },
         {
           "n°": "4",
@@ -1053,8 +1175,9 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 8.8,
-          "cote_tendance": ""
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 12.0
         },
         {
           "n°": "5",
@@ -1075,8 +1198,9 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 8.8,
-          "cote_tendance": ""
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 20.0
         },
         {
           "n°": "6",
@@ -1096,7 +1220,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 0,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 6.2,
+          "cote_tendance": "",
+          "cote_reference": 10.0
         },
         {
           "n°": "7",
@@ -1117,8 +1244,9 @@
           "nb_courses": 6,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 4.4,
-          "cote_tendance": ""
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 10.0
         },
         {
           "n°": "8",
@@ -1138,7 +1266,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 43.0,
+          "cote_tendance": "",
+          "cote_reference": 31.0
         },
         {
           "n°": "9",
@@ -1158,7 +1289,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 0,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 8.6
         },
         {
           "n°": "10",
@@ -1178,7 +1312,10 @@
           "equipement(s)": "A",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 228.0,
+          "cote_tendance": "",
+          "cote_reference": 191.0
         },
         {
           "n°": "11",
@@ -1198,7 +1335,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 38.0,
+          "cote_tendance": "",
+          "cote_reference": 19.0
         },
         {
           "n°": "12",
@@ -1218,7 +1358,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 34.0,
+          "cote_tendance": "",
+          "cote_reference": 22.0
         },
         {
           "n°": "13",
@@ -1239,8 +1382,9 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 2.2,
-          "cote_tendance": ""
+          "cote": 3.7,
+          "cote_tendance": "",
+          "cote_reference": 3.9
         },
         {
           "n°": "14",
@@ -1261,8 +1405,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 8.8,
-          "cote_tendance": ""
+          "cote": 6.4,
+          "cote_tendance": "",
+          "cote_reference": 8.1
         },
         {
           "n°": "15",
@@ -1282,7 +1427,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 24.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         },
         {
           "n°": "16",
@@ -1302,9 +1450,15 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 35.0,
+          "cote_tendance": "",
+          "cote_reference": 47.0
         }
       ],
+      "typePiste": "HERBE",
+      "terrain": "Très souple",
+      "penetrometre": "4,1",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1334,8 +1488,9 @@
           "nb_courses": 5,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 9.7,
-          "cote_tendance": ""
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 24.0
         },
         {
           "n°": "2",
@@ -1356,8 +1511,9 @@
           "nb_courses": 5,
           "nb_victoires": 2,
           "nb_places": 3,
-          "cote": 9.7,
-          "cote_tendance": ""
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 15.0
         },
         {
           "n°": "4",
@@ -1377,7 +1533,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 1,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 23.0,
+          "cote_tendance": "",
+          "cote_reference": 21.0
         },
         {
           "n°": "5",
@@ -1398,8 +1557,9 @@
           "nb_courses": 9,
           "nb_victoires": 2,
           "nb_places": 5,
-          "cote": 3.2,
-          "cote_tendance": ""
+          "cote": 30.0,
+          "cote_tendance": "",
+          "cote_reference": 75.0
         },
         {
           "n°": "6",
@@ -1419,7 +1579,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 26.0,
+          "cote_tendance": "",
+          "cote_reference": 31.0
         },
         {
           "n°": "7",
@@ -1439,7 +1602,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 2,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 19.0,
+          "cote_tendance": "",
+          "cote_reference": 35.0
         },
         {
           "n°": "8",
@@ -1459,7 +1625,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 2,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 18.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         },
         {
           "n°": "9",
@@ -1480,8 +1649,9 @@
           "nb_courses": 15,
           "nb_victoires": 2,
           "nb_places": 10,
-          "cote": 2.4,
-          "cote_tendance": ""
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 8.6
         },
         {
           "n°": "10",
@@ -1501,7 +1671,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 2,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 23.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         },
         {
           "n°": "11",
@@ -1522,8 +1695,9 @@
           "nb_courses": 6,
           "nb_victoires": 1,
           "nb_places": 5,
-          "cote": 4.8,
-          "cote_tendance": ""
+          "cote": 7.0,
+          "cote_tendance": "",
+          "cote_reference": 5.6
         },
         {
           "n°": "12",
@@ -1543,7 +1717,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 1,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 3.2,
+          "cote_tendance": "",
+          "cote_reference": 3.6
         },
         {
           "n°": "13",
@@ -1563,9 +1740,15 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 2,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 6.4,
+          "cote_tendance": "",
+          "cote_reference": 4.8
         }
       ],
+      "typePiste": "HERBE",
+      "terrain": "Très souple",
+      "penetrometre": "4,1",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1595,8 +1778,9 @@
           "nb_courses": 28,
           "nb_victoires": 2,
           "nb_places": 12,
-          "cote": 12.0,
-          "cote_tendance": ""
+          "cote": 6.9,
+          "cote_tendance": "",
+          "cote_reference": 4.5
         },
         {
           "n°": "2",
@@ -1617,8 +1801,9 @@
           "nb_courses": 17,
           "nb_victoires": 1,
           "nb_places": 12,
-          "cote": 12.0,
-          "cote_tendance": ""
+          "cote": 35.0,
+          "cote_tendance": "",
+          "cote_reference": 23.0
         },
         {
           "n°": "3",
@@ -1638,7 +1823,10 @@
           "equipement(s)": "",
           "nb_courses": 22,
           "nb_victoires": 1,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 107.0,
+          "cote_tendance": "",
+          "cote_reference": 123.0
         },
         {
           "n°": "4",
@@ -1659,8 +1847,9 @@
           "nb_courses": 48,
           "nb_victoires": 7,
           "nb_places": 25,
-          "cote": 6.1,
-          "cote_tendance": ""
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 18.0
         },
         {
           "n°": "5",
@@ -1680,7 +1869,10 @@
           "equipement(s)": "A",
           "nb_courses": 48,
           "nb_victoires": 4,
-          "nb_places": 24
+          "nb_places": 24,
+          "cote": 24.0,
+          "cote_tendance": "",
+          "cote_reference": 35.0
         },
         {
           "n°": "6",
@@ -1700,7 +1892,10 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 1,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 23.0
         },
         {
           "n°": "7",
@@ -1720,7 +1915,10 @@
           "equipement(s)": "",
           "nb_courses": 28,
           "nb_victoires": 1,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 121.0,
+          "cote_tendance": "",
+          "cote_reference": 98.0
         },
         {
           "n°": "8",
@@ -1740,7 +1938,10 @@
           "equipement(s)": "",
           "nb_courses": 39,
           "nb_victoires": 2,
-          "nb_places": 21
+          "nb_places": 21,
+          "cote": 17.0,
+          "cote_tendance": "",
+          "cote_reference": 12.0
         },
         {
           "n°": "9",
@@ -1760,7 +1961,10 @@
           "equipement(s)": "",
           "nb_courses": 21,
           "nb_victoires": 1,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 60.0,
+          "cote_tendance": "",
+          "cote_reference": 49.0
         },
         {
           "n°": "10",
@@ -1781,8 +1985,9 @@
           "nb_courses": 50,
           "nb_victoires": 7,
           "nb_places": 13,
-          "cote": 2.0,
-          "cote_tendance": ""
+          "cote": 2.5,
+          "cote_tendance": "",
+          "cote_reference": 2.5
         },
         {
           "n°": "11",
@@ -1803,8 +2008,9 @@
           "nb_courses": 48,
           "nb_victoires": 3,
           "nb_places": 33,
-          "cote": 4.1,
-          "cote_tendance": ""
+          "cote": 9.9,
+          "cote_tendance": "",
+          "cote_reference": 17.0
         },
         {
           "n°": "12",
@@ -1825,8 +2031,9 @@
           "nb_courses": 87,
           "nb_victoires": 8,
           "nb_places": 26,
-          "cote": 12.0,
-          "cote_tendance": ""
+          "cote": 28.0,
+          "cote_tendance": "",
+          "cote_reference": 22.0
         },
         {
           "n°": "13",
@@ -1846,7 +2053,10 @@
           "equipement(s)": "",
           "nb_courses": 24,
           "nb_victoires": 0,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 13.0
         },
         {
           "n°": "14",
@@ -1866,7 +2076,10 @@
           "equipement(s)": "A",
           "nb_courses": 25,
           "nb_victoires": 3,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 60.0,
+          "cote_tendance": "",
+          "cote_reference": 98.0
         },
         {
           "n°": "15",
@@ -1886,7 +2099,10 @@
           "equipement(s)": "",
           "nb_courses": 28,
           "nb_victoires": 1,
-          "nb_places": 14
+          "nb_places": 14,
+          "cote": 44.0,
+          "cote_tendance": "",
+          "cote_reference": 37.0
         },
         {
           "n°": "16",
@@ -1906,9 +2122,15 @@
           "equipement(s)": "",
           "nb_courses": 31,
           "nb_victoires": 1,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 23.0,
+          "cote_tendance": "",
+          "cote_reference": 70.0
         }
       ],
+      "typePiste": "HERBE",
+      "terrain": "Très souple",
+      "penetrometre": "4,1",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1937,7 +2159,10 @@
           "equipement(s)": "",
           "nb_courses": 33,
           "nb_victoires": 7,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 48.0,
+          "cote_tendance": "",
+          "cote_reference": 135.0
         },
         {
           "n°": "2",
@@ -1958,8 +2183,9 @@
           "nb_courses": 41,
           "nb_victoires": 6,
           "nb_places": 18,
-          "cote": 4.4,
-          "cote_tendance": ""
+          "cote": 44.0,
+          "cote_tendance": "",
+          "cote_reference": 27.0
         },
         {
           "n°": "3",
@@ -1980,8 +2206,9 @@
           "nb_courses": 45,
           "nb_victoires": 9,
           "nb_places": 29,
-          "cote": 8.8,
-          "cote_tendance": ""
+          "cote": 8.1,
+          "cote_tendance": "",
+          "cote_reference": 10.0
         },
         {
           "n°": "4",
@@ -2002,28 +2229,9 @@
           "nb_courses": 15,
           "nb_victoires": 2,
           "nb_places": 8,
-          "cote": 8.8,
-          "cote_tendance": ""
-        },
-        {
-          "n°": "5",
-          "cheval": "MAJOR OAK H.PU. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: BIRCHWOOD et AGUA DE MAR (MYBOYCHARLIE)",
-          "corde": "(Corde:12)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261009/COM/8/20261009-COM-8-5.png",
-          "propriétaire": "STALL HEXENBERG",
-          "entraineur": "MF.WEISSMEIER",
-          "éleveurs": "MME ISABELLE MAUGER",
-          "jockey": "S.PASQUIER",
-          "poids": "61 kg",
-          "gains": "16035000",
-          "musique": "0p5p9p4p5p8p5p0p(25)6p",
-          "valeur": "61.0",
-          "equipement(s)": "",
-          "nb_courses": 47,
-          "nb_victoires": 6,
-          "nb_places": 20
+          "cote": 2.7,
+          "cote_tendance": "",
+          "cote_reference": 2.6
         },
         {
           "n°": "6",
@@ -2044,8 +2252,9 @@
           "nb_courses": 19,
           "nb_victoires": 2,
           "nb_places": 11,
-          "cote": 2.9,
-          "cote_tendance": ""
+          "cote": 31.0,
+          "cote_tendance": "",
+          "cote_reference": 28.0
         },
         {
           "n°": "7",
@@ -2066,8 +2275,9 @@
           "nb_courses": 53,
           "nb_victoires": 7,
           "nb_places": 25,
-          "cote": 2.9,
-          "cote_tendance": ""
+          "cote": 36.0,
+          "cote_tendance": "",
+          "cote_reference": 33.0
         },
         {
           "n°": "8",
@@ -2087,7 +2297,10 @@
           "equipement(s)": "",
           "nb_courses": 76,
           "nb_victoires": 10,
-          "nb_places": 34
+          "nb_places": 34,
+          "cote": 25.0,
+          "cote_tendance": "",
+          "cote_reference": 25.0
         },
         {
           "n°": "9",
@@ -2107,7 +2320,10 @@
           "equipement(s)": "",
           "nb_courses": 22,
           "nb_victoires": 1,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 7.0,
+          "cote_tendance": "",
+          "cote_reference": 8.7
         },
         {
           "n°": "10",
@@ -2127,7 +2343,10 @@
           "equipement(s)": "",
           "nb_courses": 37,
           "nb_victoires": 2,
-          "nb_places": 22
+          "nb_places": 22,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0
         },
         {
           "n°": "11",
@@ -2147,7 +2366,10 @@
           "equipement(s)": "",
           "nb_courses": 52,
           "nb_victoires": 6,
-          "nb_places": 29
+          "nb_places": 29,
+          "cote": 25.0,
+          "cote_tendance": "",
+          "cote_reference": 22.0
         },
         {
           "n°": "12",
@@ -2167,7 +2389,10 @@
           "equipement(s)": "",
           "nb_courses": 18,
           "nb_victoires": 3,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 30.0,
+          "cote_tendance": "",
+          "cote_reference": 20.0
         },
         {
           "n°": "13",
@@ -2187,7 +2412,10 @@
           "equipement(s)": "",
           "nb_courses": 45,
           "nb_victoires": 8,
-          "nb_places": 21
+          "nb_places": 21,
+          "cote": 44.0,
+          "cote_tendance": "",
+          "cote_reference": 45.0
         },
         {
           "n°": "14",
@@ -2207,7 +2435,10 @@
           "equipement(s)": "",
           "nb_courses": 51,
           "nb_victoires": 4,
-          "nb_places": 25
+          "nb_places": 25,
+          "cote": 16.0,
+          "cote_tendance": "",
+          "cote_reference": 20.0
         },
         {
           "n°": "15",
@@ -2227,7 +2458,10 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 1,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 22.0,
+          "cote_tendance": "",
+          "cote_reference": 23.0
         },
         {
           "n°": "16",
@@ -2247,9 +2481,15 @@
           "equipement(s)": "",
           "nb_courses": 25,
           "nb_victoires": 3,
-          "nb_places": 17
+          "nb_places": 17,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 9.7
         }
       ],
+      "typePiste": "HERBE",
+      "terrain": "Très souple",
+      "penetrometre": "4,1",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -2279,8 +2519,9 @@
           "nb_courses": 19,
           "nb_victoires": 1,
           "nb_places": 13,
-          "cote": 7.9,
-          "cote_tendance": ""
+          "cote": 91.0,
+          "cote_tendance": "",
+          "cote_reference": 71.0
         },
         {
           "n°": "2",
@@ -2301,8 +2542,9 @@
           "nb_courses": 56,
           "nb_victoires": 6,
           "nb_places": 18,
-          "cote": 7.9,
-          "cote_tendance": ""
+          "cote": 22.0,
+          "cote_tendance": "",
+          "cote_reference": 50.0
         },
         {
           "n°": "3",
@@ -2323,8 +2565,9 @@
           "nb_courses": 78,
           "nb_victoires": 7,
           "nb_places": 36,
-          "cote": 1.5,
-          "cote_tendance": ""
+          "cote": 7.3,
+          "cote_tendance": "",
+          "cote_reference": 9.1
         },
         {
           "n°": "4",
@@ -2344,7 +2587,10 @@
           "equipement(s)": "",
           "nb_courses": 21,
           "nb_victoires": 2,
-          "nb_places": 11
+          "nb_places": 11,
+          "cote": 16.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         },
         {
           "n°": "5",
@@ -2364,7 +2610,10 @@
           "equipement(s)": "",
           "nb_courses": 29,
           "nb_victoires": 2,
-          "nb_places": 19
+          "nb_places": 19,
+          "cote": 6.6,
+          "cote_tendance": "",
+          "cote_reference": 7.4
         },
         {
           "n°": "6",
@@ -2384,7 +2633,10 @@
           "equipement(s)": "",
           "nb_courses": 28,
           "nb_victoires": 4,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 25.0,
+          "cote_tendance": "",
+          "cote_reference": 27.0
         },
         {
           "n°": "7",
@@ -2404,7 +2656,10 @@
           "equipement(s)": "",
           "nb_courses": 15,
           "nb_victoires": 2,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 19.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0
         },
         {
           "n°": "8",
@@ -2424,7 +2679,10 @@
           "equipement(s)": "",
           "nb_courses": 65,
           "nb_victoires": 9,
-          "nb_places": 22
+          "nb_places": 22,
+          "cote": 8.9,
+          "cote_tendance": "",
+          "cote_reference": 8.8
         },
         {
           "n°": "10",
@@ -2444,7 +2702,10 @@
           "equipement(s)": "A",
           "nb_courses": 50,
           "nb_victoires": 3,
-          "nb_places": 29
+          "nb_places": 29,
+          "cote": 17.0,
+          "cote_tendance": "",
+          "cote_reference": 16.0
         },
         {
           "n°": "11",
@@ -2464,7 +2725,10 @@
           "equipement(s)": "",
           "nb_courses": 28,
           "nb_victoires": 3,
-          "nb_places": 15
+          "nb_places": 15,
+          "cote": 7.0,
+          "cote_tendance": "",
+          "cote_reference": 9.6
         },
         {
           "n°": "12",
@@ -2484,7 +2748,10 @@
           "equipement(s)": "",
           "nb_courses": 35,
           "nb_victoires": 2,
-          "nb_places": 19
+          "nb_places": 19,
+          "cote": 18.0,
+          "cote_tendance": "",
+          "cote_reference": 19.0
         },
         {
           "n°": "13",
@@ -2504,7 +2771,10 @@
           "equipement(s)": "",
           "nb_courses": 20,
           "nb_victoires": 1,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 71.0,
+          "cote_tendance": "",
+          "cote_reference": 118.0
         },
         {
           "n°": "14",
@@ -2525,8 +2795,9 @@
           "nb_courses": 29,
           "nb_victoires": 2,
           "nb_places": 15,
-          "cote": 3.9,
-          "cote_tendance": ""
+          "cote": 6.9,
+          "cote_tendance": "",
+          "cote_reference": 6.9
         },
         {
           "n°": "15",
@@ -2546,7 +2817,10 @@
           "equipement(s)": "",
           "nb_courses": 28,
           "nb_victoires": 3,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 6.4
         },
         {
           "n°": "16",
@@ -2566,9 +2840,15 @@
           "equipement(s)": "",
           "nb_courses": 29,
           "nb_victoires": 1,
-          "nb_places": 16
+          "nb_places": 16,
+          "cote": 32.0,
+          "cote_tendance": "",
+          "cote_reference": 32.0
         }
       ],
+      "typePiste": "HERBE",
+      "terrain": "Très souple",
+      "penetrometre": "4,1",
       "cordeCourse": "CORDE_GAUCHE"
     }
   ]
