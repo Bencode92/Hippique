@@ -22,6 +22,8 @@
  *     node bench/sprt_regle.mjs --historique rejoue le passe, pour reference
  */
 import fs from 'fs';
+import { createRequire as _cr } from 'module';
+const _T = _cr(import.meta.url)(new URL('../js/temps.js', import.meta.url).pathname);
 const norm = h => (h||'').toUpperCase().replace(/[^A-Z0-9]/g,'');
 const MOI = ['LONGCHAMP','SAINTCLOUD'];
 const E0 = -0.037, E1 = 0.07;
@@ -53,13 +55,16 @@ try {
     const m = f.match(/^(\d{4}-\d{2}-\d{2})_(.+)_R(\d+)C(\d+)_live\.json$/); if (!m) continue;
     try {
       const d = JSON.parse(fs.readFileSync('data/cotes_live/'+f,'utf8'));
-      const depart = d.heure_depart ? new Date(d.heure_depart).getTime() : null;
+      const depart = d.heure_depart ? _T.ms(d.heure_depart) : null;
       // candidats : l'historique s'il existe, sinon le relevé unique
       const cands = (d.releves && d.releves.length ? d.releves.map(r => ({ t: r.scraped_at, cotes: r.cotes, min: r.minutes_avant_depart }))
                                                    : [{ t: d.scraped_at, cotes: Object.fromEntries((d.participants||[]).map(p=>[String(p.numPmu), p.cote_live])), min: d.minutes_avant_depart }]);
       let best = null;
       for (const c of cands) {
-        const sec = depart && c.t ? (depart - new Date(c.t).getTime()) / 1000 : (c.min != null ? c.min * 60 : null);
+        // js/temps.js : un horodatage sans fuseau est lu en heure de Paris, quel
+        // que soit le TZ du processus. Sans ça le runner GitHub (UTC) voyait
+        // tous les relevés APRÈS le départ et excluait chaque course.
+        const sec = depart && c.t ? _T.secAvant(depart, c.t) : (c.min != null ? c.min * 60 : null);
         if (sec == null || sec < FEN_MIN || sec > FEN_MAX) continue;
         if (!best || Math.abs(sec - CIBLE) < Math.abs(best.sec - CIBLE)) best = { sec, cotes: c.cotes };
       }

@@ -20,6 +20,7 @@ import { createRequire } from 'module';
 const require = createRequire(import.meta.url);
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const M = require(path.join(ROOT, 'js', 'matching.js'));
+const T = require(path.join(ROOT, 'js', 'temps.js'));
 
 const corresp = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/claude_correspondances.json'), 'utf8'));
 const jkDist = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/jockeys_distance.json'), 'utf8'));
@@ -150,7 +151,10 @@ function cotesLive(date) {
             const d = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/cotes_live', f), 'utf8'));
             const dep = d.heure_depart || null;
             const rel = d.releves || [];
-            const sec = r => dep && r.scraped_at ? Math.round((dep - new Date(r.scraped_at).getTime()) / 1000) : null;
+            // js/temps.js, pas new Date() : les relevés sont horodatés en heure
+            // de Paris sans fuseau, et le runner GitHub tourne en UTC — les
+            // cotes live tombaient donc à null dans les fiches poussées par CI.
+            const sec = r => dep && r.scraped_at ? Math.round(T.secAvant(dep, r.scraped_at)) : null;
             let dernier = null, fenetre = null;
             for (const r of rel) {
                 const sv = sec(r);

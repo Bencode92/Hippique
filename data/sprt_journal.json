@@ -1,11 +1,148 @@
 {
   "_doc": "Journal des paris réels du test séquentiel. Le pari est le relevé le plus proche de T-2:00 dans [T-2:40 ; T-1:20] (releve = 'T-m:ss') ; une course de la règle sans relevé dans la fenêtre est EXCLUE (liste exclues), jamais remplacée par la clôture. Écrit par bench/sprt_regle.mjs.",
   "debut": "2026-10-01",
-  "paris": 0,
-  "exclues_sans_releve": 12,
-  "favori_change_avant_cloture": 0,
-  "taux_bascule_favori": null,
-  "lignes": [],
+  "paris": 8,
+  "exclues_sans_releve": 4,
+  "favori_change_avant_cloture": 1,
+  "taux_bascule_favori": 0.125,
+  "lignes": [
+    {
+      "date": "2026-10-03",
+      "hippodrome": "ParisLongchamp",
+      "R": 1,
+      "C": 4,
+      "cheval": "REMBRAND TO GO",
+      "numero": 4,
+      "cote_misee": 3.8,
+      "releve": "T-2:18",
+      "cote_finale": 3.8,
+      "favori_final_identique": true,
+      "derive": 0.05,
+      "gagne": true,
+      "dividende": 3.8,
+      "gain_20e": 56,
+      "S": 0.105
+    },
+    {
+      "date": "2026-10-03",
+      "hippodrome": "ParisLongchamp",
+      "R": 1,
+      "C": 9,
+      "cheval": "ELIMAN",
+      "numero": 9,
+      "cote_misee": 3.3,
+      "releve": "T-1:47",
+      "cote_finale": 3.4,
+      "favori_final_identique": true,
+      "derive": 0.313,
+      "gagne": false,
+      "dividende": 0,
+      "gain_20e": -20,
+      "S": 0.058
+    },
+    {
+      "date": "2026-10-04",
+      "hippodrome": "ParisLongchamp",
+      "R": 1,
+      "C": 3,
+      "cheval": "SHIRI",
+      "numero": 12,
+      "cote_misee": 3.7,
+      "releve": "T-2:17",
+      "cote_finale": 4.6,
+      "favori_final_identique": true,
+      "derive": -0.057,
+      "gagne": false,
+      "dividende": 0,
+      "gain_20e": -20,
+      "S": 0.019
+    },
+    {
+      "date": "2026-10-04",
+      "hippodrome": "ParisLongchamp",
+      "R": 1,
+      "C": 5,
+      "cheval": "DARYZ",
+      "numero": 1,
+      "cote_misee": 2.4,
+      "releve": "T-1:41",
+      "cote_finale": 2.3,
+      "favori_final_identique": true,
+      "derive": 0.077,
+      "gagne": true,
+      "dividende": 2.3,
+      "gain_20e": 26,
+      "S": 0.124
+    },
+    {
+      "date": "2026-10-04",
+      "hippodrome": "ParisLongchamp",
+      "R": 1,
+      "C": 9,
+      "cheval": "NADIR",
+      "numero": 14,
+      "cote_misee": 3,
+      "releve": "T-1:51",
+      "cote_finale": 3.2,
+      "favori_final_identique": true,
+      "derive": 0.667,
+      "gagne": true,
+      "dividende": 3.2,
+      "gain_20e": 44,
+      "S": 0.229
+    },
+    {
+      "date": "2026-10-04",
+      "hippodrome": "ParisLongchamp",
+      "R": 1,
+      "C": 10,
+      "cheval": "SILENT WARNING",
+      "numero": 9,
+      "cote_misee": 4,
+      "releve": "T-1:52",
+      "cote_finale": 4.3,
+      "favori_final_identique": true,
+      "derive": 0.6,
+      "gagne": false,
+      "dividende": 0,
+      "gain_20e": -20,
+      "S": 0.193
+    },
+    {
+      "date": "2026-10-08",
+      "hippodrome": "SAINT-CLOUD",
+      "R": 1,
+      "C": 6,
+      "cheval": "ARMSTRONG GLORY",
+      "numero": 8,
+      "cote_misee": 5.5,
+      "releve": "T-2:05",
+      "cote_finale": 4.1,
+      "favori_final_identique": true,
+      "derive": 0.035,
+      "gagne": false,
+      "dividende": 0,
+      "gain_20e": -20,
+      "S": 0.17
+    },
+    {
+      "date": "2026-10-08",
+      "hippodrome": "SAINT-CLOUD",
+      "R": 1,
+      "C": 7,
+      "cheval": "NOTIONI FAL",
+      "numero": 3,
+      "cote_misee": 5.5,
+      "releve": "T-2:05",
+      "cote_finale": 6.2,
+      "favori_final_identique": false,
+      "derive": -0.122,
+      "gagne": false,
+      "dividende": 0,
+      "gain_20e": -20,
+      "S": 0.146
+    }
+  ],
   "exclues": [
     {
       "date": "2026-10-02",
@@ -18,34 +155,6 @@
       "date": "2026-10-03",
       "hip": "ParisLongchamp",
       "r": 1,
-      "c": 4,
-      "motif": "aucun relevé dans [T-2:40 ; T-1:20]"
-    },
-    {
-      "date": "2026-10-03",
-      "hip": "ParisLongchamp",
-      "r": 1,
-      "c": 5,
-      "motif": "aucun relevé dans [T-2:40 ; T-1:20]"
-    },
-    {
-      "date": "2026-10-03",
-      "hip": "ParisLongchamp",
-      "r": 1,
-      "c": 9,
-      "motif": "aucun relevé dans [T-2:40 ; T-1:20]"
-    },
-    {
-      "date": "2026-10-04",
-      "hip": "ParisLongchamp",
-      "r": 1,
-      "c": 3,
-      "motif": "aucun relevé dans [T-2:40 ; T-1:20]"
-    },
-    {
-      "date": "2026-10-04",
-      "hip": "ParisLongchamp",
-      "r": 1,
       "c": 5,
       "motif": "aucun relevé dans [T-2:40 ; T-1:20]"
     },
@@ -57,38 +166,10 @@
       "motif": "aucun relevé dans [T-2:40 ; T-1:20]"
     },
     {
-      "date": "2026-10-04",
-      "hip": "ParisLongchamp",
-      "r": 1,
-      "c": 9,
-      "motif": "aucun relevé dans [T-2:40 ; T-1:20]"
-    },
-    {
-      "date": "2026-10-04",
-      "hip": "ParisLongchamp",
-      "r": 1,
-      "c": 10,
-      "motif": "aucun relevé dans [T-2:40 ; T-1:20]"
-    },
-    {
       "date": "2026-10-08",
       "hip": "SAINT-CLOUD",
       "r": 1,
       "c": 1,
-      "motif": "aucun relevé dans [T-2:40 ; T-1:20]"
-    },
-    {
-      "date": "2026-10-08",
-      "hip": "SAINT-CLOUD",
-      "r": 1,
-      "c": 6,
-      "motif": "aucun relevé dans [T-2:40 ; T-1:20]"
-    },
-    {
-      "date": "2026-10-08",
-      "hip": "SAINT-CLOUD",
-      "r": 1,
-      "c": 7,
       "motif": "aucun relevé dans [T-2:40 ; T-1:20]"
     }
   ]

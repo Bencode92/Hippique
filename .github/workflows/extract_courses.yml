@@ -23,6 +23,12 @@ on:
 permissions:
   contents: write
 
+# Heure de Paris : les relevés de cotes sont horodatés en heure locale et
+# js/temps.js les lit comme tels, mais tout ce qui formate une date ici
+# (nom de fichier, date du jour) doit désigner la même journée de courses.
+env:
+  TZ: Europe/Paris
+
 jobs:
   extract_courses:
     runs-on: ubuntu-latest

@@ -24,6 +24,7 @@ import os
 import time
 import logging
 from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 logger = logging.getLogger(__name__)
@@ -46,6 +47,8 @@ HIPPODROMES_CIBLES = [
 
 # Fenêtre de capture : on scrape si la course démarre dans les 20 prochaines minutes
 # (marge volontaire : absorbe un run retardé par la file d'attente GitHub Actions)
+PARIS = ZoneInfo("Europe/Paris")   # les relevés sont horodatés en heure de Paris, explicitement
+
 FENETRE_MINUTES = 20          # mode une passe
 FENETRE_BOUCLE = 6            # cadence rapide : chaque passe dans les 6 dernières minutes
 # Fenêtre large (05/10/2026) : Benoit rafraîchit la fiche « avant la course »,
@@ -136,7 +139,10 @@ def scrape_cotes_course(date_pmu, reunion_num, course_num, course_info):
         "reunion": reunion_num,
         "heure_depart": course_info.get("heureDepart"),
         "distance": course_info.get("distance"),
-        "scraped_at": datetime.now().isoformat(),
+        # Horodatage AVEC fuseau : sans lui, un lecteur en UTC décalait le relevé
+        # de deux heures et le prenait pour un relevé d'après le départ
+        # (0 pari au lieu de 8 dans le journal SPRT, 09/10/2026).
+        "scraped_at": datetime.now(PARIS).isoformat(),
         "minutes_avant_depart": course_info.get("_minutes_avant", 0),
         "participants": cotes,
     }

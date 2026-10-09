@@ -29,7 +29,7 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 2. QATAR PRIX JEAN-LUC LAGARDERE
 
-*14h09 · plat · 1400 m · 10 partants · cotes à T−0:17*
+*14h09 · plat · 1400 m · 10 partants · cotes à T−0:18*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
