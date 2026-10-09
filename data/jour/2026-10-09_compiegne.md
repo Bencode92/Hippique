@@ -1,6 +1,6 @@
 # COMPIEGNE — 09/10/2026
 
-9 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+9 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -59,26 +59,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX DU CARREFOUR DU VIVIER CORAX
 
-*14h53 · plat · 1400 m · 16 partants · cotes de l'extraction*
+*14h53 · plat · 1400 m · 16 partants · cotes à T−21:18*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 2 | THE CHARM | 3,5 | B.MARIE | 69/471/1907/1293 |
-| 3 | AIR DE SAMBA | 3,5 | P.REMOUE | 37/90/409/66 |
-| 5 | ABRASSO | 3,5 | J.MOUTARD | 61/254/15/284 |
-| 12 | ROXANA OF CECCA | 3,5 | F.VALLE SKAR | 35/135/370/873 |
-| 1 | EYWA | – | T.TRULLIER | 21/54/43/1727 |
-| 4 | IRIDIA | – | A.HAMELIN | 22/280/1001/1431 |
-| 6 | BIG BOOTS | – | D.SANTIAGO | 15/404/3266/896 |
-| 7 | AKAMASOA | – | A.LEMAITRE | 11/69/1398/515 |
-| 8 | REDRUNNER | – | L.BOISSEAU | 36/53/609/715 |
-| 9 | CIACCINO | – | H.BOUTIN | 14/15/15/2158 |
-| 10 | BAWE ISLAND | – | L.GALLO | 45/15/15/36 |
-| 11 | POLO BABY | – | C.PACAUT | 48/53/504/62 |
-| 13 | LOUVE PRECIEUSE | – | M.GRANDIN | 3/108/95/1560 |
-| 14 | KAVAKNEY | – | C.CARBONI | 105/407/3219/911 |
-| 15 | TIGRE DORE | – | G.MEURY | 68/432/83/218 |
-| 16 | ORLOVKA | – | A.MOLINS | 34/527/16/1715 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 9 | CIACCINO | 5,1 | – | 6,24 | -18,3 % | H.BOUTIN | 14/15/15/2158 |
+| 14 | KAVAKNEY | 7,1 | – | 9,10 | -22,0 % | C.CARBONI | 105/407/3219/911 |
+| 1 | EYWA | 7,5 | – | 8,35 | -10,1 % | T.TRULLIER | 21/54/43/1727 |
+| 3 | AIR DE SAMBA | 10 | 3,5 | 12,74 | -21,5 % | P.REMOUE | 37/90/409/66 |
+| 8 | REDRUNNER | 11 | – | 12,52 | -12,2 % | L.BOISSEAU | 36/53/609/715 |
+| 7 | AKAMASOA | 12 | – | 14,44 | -16,9 % | A.LEMAITRE | 11/69/1398/515 |
+| 4 | IRIDIA | 16 | – | 19,39 | -17,5 % | A.HAMELIN | 22/280/1001/1431 |
+| 6 | BIG BOOTS | 17 | – | 21,69 | -21,6 % | D.SANTIAGO | 15/404/3266/896 |
+| 12 | ROXANA OF CECCA | 19 | 3,5 | 21,59 | -12,0 % | F.VALLE SKAR | 35/135/370/873 |
+| 5 | ABRASSO | 20 | 3,5 | 26,19 | -23,6 % | J.MOUTARD | 61/254/15/284 |
+| 13 | LOUVE PRECIEUSE | 21 | – | 30,40 | -30,9 % | M.GRANDIN | 3/108/95/1560 |
+| 10 | BAWE ISLAND | 24 | – | 30,96 | -22,5 % | L.GALLO | 45/15/15/36 |
+| 16 | ORLOVKA | 31 | – | 51,00 | -39,2 % | A.MOLINS | 34/527/16/1715 |
+| 2 | THE CHARM | 44 | 3,5 | 70,06 | -37,2 % | B.MARIE | 69/471/1907/1293 |
+| 11 | POLO BABY | 44 | – | 75,35 | -41,6 % | C.PACAUT | 48/53/504/62 |
+| 15 | TIGRE DORE | 44 | – | 70,06 | -37,2 % | G.MEURY | 68/432/83/218 |
 
 ### 5. PRIX DE JONQUIERES
 
