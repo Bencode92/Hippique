@@ -1,8 +1,8 @@
 # LA CEPIERE — 09/10/2026
 
-8 courses.
+8 courses (4 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -12,13 +12,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 7 | TICKEA | 1,7 | L.ROUSSEL | 26/8/1/2 |
+| 2 | KALIXA | 2,6 | G.GUEDJ-GAY | 20/839/2/– |
+| 6 | SPIRIT OF ZARAK | 5,2 | R.THOMAS | 75/11/7/14 |
 | 1 | ZAKHAROVA | – | C.BELMONT | 171/271/21/539 |
-| 2 | KALIXA | – | G.GUEDJ-GAY | 20/839/2/– |
 | 3 | MISS OF CHANGE | – | A.MADAMET | 10/164/103/126 |
 | 4 | HATANKA FAL | – | C.LECOEUVRE | 13/57/34/31 |
 | 5 | MAINTAIN | – | C.DEMURO | 1/31/3151/12 |
-| 6 | SPIRIT OF ZARAK | – | R.THOMAS | 75/11/7/14 |
-| 7 | TICKEA | – | L.ROUSSEL | 26/8/1/2 |
 
 ### 2. DERBY DU LANGUEDOC - FONDS EUROPEEN DE L'ELEVAGE
 
@@ -26,12 +26,12 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 6 | HABIBI | 1,1 | C.DEMURO | 1/78/104/16 |
 | 1 | BLACK MOR | – | L.ROUSSEL | 26/232/523/1201 |
 | 2 | ZULU CHANT | – | I.MENDIZABAL | 32/2/53/103 |
 | 3 | MARIA APOLLONIA | – | H.BESNIER | 12/5/494/829 |
 | 4 | CASABLANCA | – | A.MADAMET | 10/7/3120/1428 |
 | 5 | SAGA GAGA | – | G.GUEDJ-GAY | 20/839/–/– |
-| 6 | HABIBI | – | C.DEMURO | 1/78/104/16 |
 | 7 | VILLANESQUE | – | A.WERLE | 29/164/425/126 |
 
 ### 3. PRIX GOSSE DU BEARN - JEAN-LUC JARDEL
@@ -63,9 +63,9 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 3 | GYPSEA | 1,1 | C.DEMURO | 1/61/19/7 |
 | 1 | ORANGETTE | – | A.CRASTUS | 17/52/251/2402 |
 | 2 | BAZOUKA | – | N.M..LOPES DUARTE | 59/107/381/981 |
-| 3 | GYPSEA | – | C.DEMURO | 1/61/19/7 |
 | 4 | WISH YOU JOY | – | R.DUBORD | 42/298/158/1678 |
 | 5 | WOODHAMA | – | G.GUEDJ-GAY | 20/61/31/1634 |
 | 6 | LUCKY LOCO | – | F.LEFEBVRE | 41/229/3430/164 |
@@ -123,6 +123,7 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 10 | MARQUISE VERA | 1,1 | S.LE QUILLEUC | 60/303/213/839 |
 | 1 | TERANGA | – | J.LACROIX | 94/141/1647/– |
 | 2 | BOSQUET | – | M.WALDHAUSER | 44/355/387/651 |
 | 3 | ZASTER FOR ALL | – | J.GELABERT BAUTISTA | 202/379/22/899 |
@@ -132,7 +133,6 @@
 | 7 | ROSADORA | – | N.M..LOPES DUARTE | 59/331/1004/439 |
 | 8 | CHUNKA WAKAN | – | A.GAVILAN | 18/141/657/– |
 | 9 | FLEUR D'AQUITAINE | – | A.WERLE | 29/131/318/2291 |
-| 10 | MARQUISE VERA | – | S.LE QUILLEUC | 60/303/213/839 |
 | 11 | ADELA | – | R.DUBORD | 42/329/515/1942 |
 | 12 | SHOWMAN | – | V.ALONSO VIDAL DE LA PENA | 179/309/50/1224 |
 | 13 | NIGHT OF THE OPERA | – | A.CRASTUS | 17/47/383/196 |
