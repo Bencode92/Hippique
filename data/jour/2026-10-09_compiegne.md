@@ -1,6 +1,6 @@
 # COMPIEGNE — 09/10/2026
 
-9 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -145,44 +145,44 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DU CARREFOUR DU MONT DU TREMBLE
 
-*17h13 · plat · 1400 m · 15 partants · cotes à T−1:26*
+*17h13 · plat · 1400 m · 15 partants · cotes à T−0:06*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 4 | KRASKHOV | 2,9 | 3,4 | 3,29 | -11,8 % | C.SOUMILLON 3e | 7/22/117/9 |
-| 3 | LANAKEN | 7,1 | 5,6 | 8,47 | -16,2 % | A.POUCHIN | 6/59/125/– |
-| 9 | VICTORY FOLIE | 8,8 | 8,7 | 11,65 | -24,5 % | PC.BOUDOT 2e | 8/21/90/3957 |
-| 15 | IRONICO | 9,7 | 13 | 11,98 | -19,0 % | P.REMOUE | 37/110/4120/214 |
-| 10 | QUARTZ DU HOULEY | 11 | 11 | 11,40 | -3,5 % | M.GUYON | 4/105/238/101 |
-| 14 | AVERSA | 12 | 11 | 12,61 | -4,8 % | D.SANTIAGO | 15/21/5/38 |
-| 11 | ON LOCKDOWN | 15 | 26 | 18,65 | -19,6 % | L.BOISSEAU | 36/73/772/380 |
-| 8 | TORPEN | 22 | 18 | 34,25 | -35,8 % | T.TRULLIER | 21/818/3342/4869 |
-| 6 | PAINTELLO | 26 | 35 | 28,02 | -7,2 % | M.GRANDIN | 3/127/474/112 |
-| 12 | NAKED MEMORIES | 33 | 30 | 46,06 | -28,4 % | A.LEMAITRE | 11/76/20/112 |
-| 16 | BEAU GARS | 34 | 15 | 49,91 | -31,9 % | E.HARDOUIN | 27/89/70/– |
-| 7 | BARGING THRU | 42 | 30 | 66,18 | -36,5 % | M.VELON | 28/357/563/659 |
-| 1 | CENTENARIO | 53 | 61 | 85,31 | -37,9 % | A.SCAGLIA | 365/14/186/1652 |
-| 13 | CELESTIN | 76 | 53 | 119,28 | -36,3 % | L.GALLO | 45/432/22/4854 |
-| 2 | PEDRITO | 110 | 57 | 174,25 | -36,9 % | M.PIEN | 150/432/289/4854 |
+| 4 | KRASKHOV | 2,8 | 3,4 | 3,21 | -12,6 % | C.SOUMILLON 3e | 7/22/117/9 |
+| 3 | LANAKEN | 7,3 | 5,6 | 8,48 | -13,9 % | A.POUCHIN | 6/59/125/– |
+| 9 | VICTORY FOLIE | 9,4 | 8,7 | 12,73 | -26,2 % | PC.BOUDOT 2e | 8/21/90/3957 |
+| 10 | QUARTZ DU HOULEY | 10 | 11 | 10,32 | -3,1 % | M.GUYON | 4/105/238/101 |
+| 15 | IRONICO | 10 | 13 | 12,55 | -20,3 % | P.REMOUE | 37/110/4120/214 |
+| 14 | AVERSA | 11 | 11 | 11,52 | -4,5 % | D.SANTIAGO | 15/21/5/38 |
+| 11 | ON LOCKDOWN | 14 | 26 | 17,39 | -19,5 % | L.BOISSEAU | 36/73/772/380 |
+| 8 | TORPEN | 24 | 18 | 38,27 | -37,3 % | T.TRULLIER | 21/818/3342/4869 |
+| 12 | NAKED MEMORIES | 27 | 30 | 37,11 | -27,2 % | A.LEMAITRE | 11/76/20/112 |
+| 6 | PAINTELLO | 30 | 35 | 36,48 | -17,8 % | M.GRANDIN | 3/127/474/112 |
+| 16 | BEAU GARS | 37 | 15 | 55,42 | -33,2 % | E.HARDOUIN | 27/89/70/– |
+| 7 | BARGING THRU | 47 | 30 | 75,63 | -37,9 % | M.VELON | 28/357/563/659 |
+| 1 | CENTENARIO | 56 | 61 | 91,42 | -38,7 % | A.SCAGLIA | 365/14/186/1652 |
+| 13 | CELESTIN | 84 | 53 | 133,62 | -37,1 % | L.GALLO | 45/432/22/4854 |
+| 2 | PEDRITO | 105 | 57 | 167,82 | -37,4 % | M.PIEN | 150/432/289/4854 |
 
 ### 9. PRIX DU CARREFOUR DU FOND PERNANT
 
-*17h48 · plat · 1400 m · 15 partants · cotes de l'extraction*
+*17h48 · plat · 1400 m · 15 partants · cotes à T−29:26*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 14 | PAMELA BOUM | 6,2 | 5,54 | **+12,0 %** | E.HARDOUIN | 27/89/445/838 |
-| 3 | WHITE PLATIN | 6,8 | 6,85 | -0,8 % | F.VALLE SKAR | 35/90/894/1347 |
-| 11 | CELTIC ARYAAN | 7,4 | 7,26 | **+1,9 %** | A.POUCHIN | 6/59/1183/1790 |
-| 5 | MASTER PAT | 8,3 | 9,61 | -13,7 % | M.GUYON | 4/73/642/380 |
-| 8 | JACK O'BOY | 10 | 13,60 | -26,5 % | D.SANTIAGO | 15/117/289/382 |
-| 7 | LISIPPO | 14 | 20,25 | -30,9 % | A.HAMELIN | 22/280/1001/485 |
-| 10 | IDEE DE CHEVAL | 14 | 15,12 | -7,4 % | C.GROSBOIS | 25/119/86/1563 |
-| 15 | LILAS TREZY | 14 | 18,04 | -22,4 % | A.MOLINS | 34/137/124/541 |
-| 12 | ROYAL SHAKE | 15 | 16,40 | -8,5 % | L.BOISSEAU | 36/214/107/342 |
-| 16 | JESS LIVERMORE | 21 | 24,17 | -13,1 % | T.TRULLIER | 21/57/13/4 |
-| 4 | FORCEFULL | 22 | 24,32 | -9,6 % | M.GRANDIN | 3/76/215/1721 |
-| 2 | EAGLEHAWK | 24 | 32,23 | -25,5 % | M.GRONDIN | 145/14/555/1649 |
-| 13 | INSIDE MATTERS | 28 | 33,54 | -16,5 % | A.LEMAITRE | 11/254/12/284 |
-| 6 | MEISHO VELITE | 31 | 37,58 | -17,5 % | L.GROSSO | 136/60/462/734 |
-| 1 | KIMBIA | 135 | 194,69 | -30,7 % | J.MARIEN | 159/21/805/2182 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 3 | WHITE PLATIN | 4,9 | 6,8 | 5,09 | -3,7 % | F.VALLE SKAR | 35/90/894/1347 |
+| 14 | PAMELA BOUM | 5,7 | 6,2 | 5,87 | -2,9 % | E.HARDOUIN | 27/89/445/838 |
+| 11 | CELTIC ARYAAN | 8 | 7,4 | 8,63 | -7,3 % | A.POUCHIN | 6/59/1183/1790 |
+| 5 | MASTER PAT | 9,1 | 8,3 | 10,71 | -15,0 % | M.GUYON | 4/73/642/380 |
+| 8 | JACK O'BOY | 13 | 10 | 17,73 | -26,7 % | D.SANTIAGO | 15/117/289/382 |
+| 15 | LILAS TREZY | 14 | 14 | 18,04 | -22,4 % | A.MOLINS | 34/137/124/541 |
+| 4 | FORCEFULL | 15 | 22 | 16,39 | -8,5 % | M.GRANDIN | 3/76/215/1721 |
+| 7 | LISIPPO | 16 | 14 | 22,64 | -29,3 % | A.HAMELIN | 22/280/1001/485 |
+| 10 | IDEE DE CHEVAL | 17 | 14 | 18,94 | -10,2 % | C.GROSBOIS | 25/119/86/1563 |
+| 12 | ROYAL SHAKE | 20 | 15 | 25,04 | -20,1 % | L.BOISSEAU | 36/214/107/342 |
+| 16 | JESS LIVERMORE | 25 | 21 | 29,51 | -15,3 % | T.TRULLIER | 21/57/13/4 |
+| 2 | EAGLEHAWK | 26 | 24 | 35,33 | -26,4 % | M.GRONDIN | 145/14/555/1649 |
+| 6 | MEISHO VELITE | 30 | 31 | 36,23 | -17,2 % | L.GROSSO | 136/60/462/734 |
+| 13 | INSIDE MATTERS | 30 | 28 | 36,26 | -17,3 % | A.LEMAITRE | 11/254/12/284 |
+| 1 | KIMBIA | 106 | 135 | 153,05 | -30,7 % | J.MARIEN | 159/21/805/2182 |
