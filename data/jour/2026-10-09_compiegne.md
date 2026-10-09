@@ -145,25 +145,25 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DU CARREFOUR DU MONT DU TREMBLE
 
-*17h13 · plat · 1400 m · 15 partants · cotes à T−14:07*
+*17h13 · plat · 1400 m · 15 partants · cotes à T−12:07*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 4 | KRASKHOV | 3 | 3,4 | 3,38 | -11,2 % | C.SOUMILLON 3e | 7/22/117/9 |
-| 3 | LANAKEN | 5,7 | 5,6 | 6,54 | -12,8 % | A.POUCHIN | 6/59/125/– |
-| 9 | VICTORY FOLIE | 9,2 | 8,7 | 12,19 | -24,5 % | PC.BOUDOT 2e | 8/21/90/3957 |
-| 10 | QUARTZ DU HOULEY | 9,8 | 11 | 9,91 | -1,1 % | M.GUYON | 4/105/238/101 |
-| 14 | AVERSA | 13 | 11 | 13,74 | -5,4 % | D.SANTIAGO | 15/21/5/38 |
-| 8 | TORPEN | 16 | 18 | 23,46 | -31,8 % | T.TRULLIER | 21/818/3342/4869 |
-| 15 | IRONICO | 17 | 13 | 24,05 | -29,3 % | P.REMOUE | 37/110/4120/214 |
-| 16 | BEAU GARS | 20 | 15 | 27,07 | -26,1 % | E.HARDOUIN | 27/89/70/– |
-| 11 | ON LOCKDOWN | 23 | 26 | 33,33 | -31,0 % | L.BOISSEAU | 36/73/772/380 |
-| 12 | NAKED MEMORIES | 31 | 30 | 42,65 | -27,3 % | A.LEMAITRE | 11/76/20/112 |
-| 6 | PAINTELLO | 32 | 35 | 38,57 | -17,0 % | M.GRANDIN | 3/127/474/112 |
-| 7 | BARGING THRU | 40 | 30 | 62,30 | -35,8 % | M.VELON | 28/357/563/659 |
-| 1 | CENTENARIO | 58 | 61 | 93,41 | -37,9 % | A.SCAGLIA | 365/14/186/1652 |
-| 13 | CELESTIN | 67 | 53 | 103,84 | -35,5 % | L.GALLO | 45/432/22/4854 |
-| 2 | PEDRITO | 76 | 57 | 118,55 | -35,9 % | M.PIEN | 150/432/289/4854 |
+| 4 | KRASKHOV | 3 | 3,4 | 3,41 | -12,0 % | C.SOUMILLON 3e | 7/22/117/9 |
+| 3 | LANAKEN | 5,9 | 5,6 | 6,87 | -14,1 % | A.POUCHIN | 6/59/125/– |
+| 9 | VICTORY FOLIE | 8,7 | 8,7 | 11,54 | -24,6 % | PC.BOUDOT 2e | 8/21/90/3957 |
+| 10 | QUARTZ DU HOULEY | 10 | 11 | 10,25 | -2,4 % | M.GUYON | 4/105/238/101 |
+| 14 | AVERSA | 13 | 11 | 13,88 | -6,4 % | D.SANTIAGO | 15/21/5/38 |
+| 15 | IRONICO | 16 | 13 | 23,71 | -32,5 % | P.REMOUE | 37/110/4120/214 |
+| 8 | TORPEN | 17 | 18 | 25,46 | -33,2 % | T.TRULLIER | 21/818/3342/4869 |
+| 16 | BEAU GARS | 20 | 15 | 27,36 | -26,9 % | E.HARDOUIN | 27/89/70/– |
+| 11 | ON LOCKDOWN | 22 | 26 | 32,00 | -31,2 % | L.BOISSEAU | 36/73/772/380 |
+| 6 | PAINTELLO | 29 | 35 | 34,88 | -16,9 % | M.GRANDIN | 3/127/474/112 |
+| 12 | NAKED MEMORIES | 31 | 30 | 43,09 | -28,1 % | A.LEMAITRE | 11/76/20/112 |
+| 7 | BARGING THRU | 39 | 30 | 61,19 | -36,3 % | M.VELON | 28/357/563/659 |
+| 1 | CENTENARIO | 52 | 61 | 83,85 | -38,0 % | A.SCAGLIA | 365/14/186/1652 |
+| 13 | CELESTIN | 56 | 53 | 90,83 | -38,3 % | L.GALLO | 45/432/22/4854 |
+| 2 | PEDRITO | 69 | 57 | 113,43 | -39,2 % | M.PIEN | 150/432/289/4854 |
 
 ### 9. PRIX DU CARREFOUR DU FOND PERNANT
 
