@@ -1,6 +1,6 @@
 # CHANTILLY — 10/10/2026
 
-8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -26,16 +26,16 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 2. PRIX SARACA
 
-*14h15 · plat · 1400 m · 6 partants · cotes de l'extraction*
+*14h15 · plat · 1400 m · 6 partants · cotes à T−23:21*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | ZEN POETRY | 2 | PC.BOUDOT 2e | 8/2/13/6 |
-| 2 | SIDEWALKOFBROADWAY | 2,3 | C.SOUMILLON 3e | 7/438/3870/9 |
-| 5 | CELTIC MOON | 7 | T.PICCONE | 9/12/111/– |
-| 4 | HINATA GREY | 14 | C.DEMURO | 1/100/3203/112 |
-| 3 | DREAM OF GLORY | – | E.VERHESTRAETEN | 53/12/–/65 |
-| 6 | EVENEMENTIELLE | – | O.MURPHY | 144/1/3314/435 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 1 | ZEN POETRY | 1,9 | 2 | 2,18 | -12,8 % | PC.BOUDOT 2e | 8/2/13/6 |
+| 6 | EVENEMENTIELLE | 5,3 | – | 6,46 | -18,0 % | O.MURPHY | 144/1/3314/435 |
+| 4 | HINATA GREY | 5,7 | 14 | 6,59 | -13,6 % | C.DEMURO | 1/100/3203/112 |
+| 2 | SIDEWALKOFBROADWAY | 7,5 | 2,3 | 9,67 | -22,4 % | C.SOUMILLON 3e | 7/438/3870/9 |
+| 3 | DREAM OF GLORY | 13 | – | 17,28 | -24,7 % | E.VERHESTRAETEN | 53/12/–/65 |
+| 5 | CELTIC MOON | 17 | 7 | 23,66 | -28,2 % | T.PICCONE | 9/12/111/– |
 
 ### 3. PRIX DE LA FORTERELLE
 
