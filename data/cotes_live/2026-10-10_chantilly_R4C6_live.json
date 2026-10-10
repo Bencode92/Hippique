@@ -1,0 +1,100 @@
+{
+  "course": "PRIX DE L'ABBAYE DE CHALIS",
+  "numero": 6,
+  "reunion": 4,
+  "heure_depart": 1791643320000,
+  "distance": 1200,
+  "scraped_at": "2026-10-10T16:12:25.256636+02:00",
+  "minutes_avant_depart": 30,
+  "participants": [
+    {
+      "numPmu": 2,
+      "nom": "ARIA FRESCA",
+      "cote_live": 7.7,
+      "cote_reference": 8.5,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1791640825000
+    },
+    {
+      "numPmu": 3,
+      "nom": "DALMORA",
+      "cote_live": 12.0,
+      "cote_reference": 11.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1791640825000
+    },
+    {
+      "numPmu": 4,
+      "nom": "QUIET STRENGTH",
+      "cote_live": 3.2,
+      "cote_reference": 3.4,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1791640825000
+    },
+    {
+      "numPmu": 5,
+      "nom": "VATANEZ",
+      "cote_live": 3.9,
+      "cote_reference": 4.2,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1791640825000
+    },
+    {
+      "numPmu": 6,
+      "nom": "LA GALOPAZ",
+      "cote_live": 11.0,
+      "cote_reference": 9.7,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1791640825000
+    },
+    {
+      "numPmu": 7,
+      "nom": "ADHARA",
+      "cote_live": 10.0,
+      "cote_reference": 8.4,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1791640825000
+    },
+    {
+      "numPmu": 8,
+      "nom": "ENFANT PARADIS",
+      "cote_live": 7.1,
+      "cote_reference": 7.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1791640825000
+    },
+    {
+      "numPmu": 9,
+      "nom": "REGAL CHOP",
+      "cote_live": 24.0,
+      "cote_reference": 24.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1791640825000
+    }
+  ],
+  "hippodrome": "CHANTILLY",
+  "releves": [
+    {
+      "scraped_at": "2026-10-10T16:12:25.256636+02:00",
+      "minutes_avant_depart": 29.585632200000003,
+      "cotes": {
+        "2": 7.7,
+        "3": 12.0,
+        "4": 3.2,
+        "5": 3.9,
+        "6": 11.0,
+        "7": 10.0,
+        "8": 7.1,
+        "9": 24.0
+      }
+    }
+  ]
+}
