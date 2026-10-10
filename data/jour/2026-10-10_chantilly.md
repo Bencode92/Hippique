@@ -26,16 +26,16 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 2. PRIX SARACA
 
-*14h15 · plat · 1400 m · 6 partants · cotes à T−23:21*
+*14h15 · plat · 1400 m · 6 partants · cotes à T−18:41*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 1 | ZEN POETRY | 1,9 | 2 | 2,18 | -12,8 % | PC.BOUDOT 2e | 8/2/13/6 |
-| 6 | EVENEMENTIELLE | 5,3 | – | 6,46 | -18,0 % | O.MURPHY | 144/1/3314/435 |
-| 4 | HINATA GREY | 5,7 | 14 | 6,59 | -13,6 % | C.DEMURO | 1/100/3203/112 |
-| 2 | SIDEWALKOFBROADWAY | 7,5 | 2,3 | 9,67 | -22,4 % | C.SOUMILLON 3e | 7/438/3870/9 |
-| 3 | DREAM OF GLORY | 13 | – | 17,28 | -24,7 % | E.VERHESTRAETEN | 53/12/–/65 |
-| 5 | CELTIC MOON | 17 | 7 | 23,66 | -28,2 % | T.PICCONE | 9/12/111/– |
+| 1 | ZEN POETRY | 1,9 | 2 | 2,17 | -12,6 % | PC.BOUDOT 2e | 8/2/13/6 |
+| 6 | EVENEMENTIELLE | 4,4 | – | 5,22 | -15,7 % | O.MURPHY | 144/1/3314/435 |
+| 4 | HINATA GREY | 6,1 | 14 | 7,09 | -14,0 % | C.DEMURO | 1/100/3203/112 |
+| 2 | SIDEWALKOFBROADWAY | 8,8 | 2,3 | 11,62 | -24,3 % | C.SOUMILLON 3e | 7/438/3870/9 |
+| 3 | DREAM OF GLORY | 14 | – | 18,77 | -25,4 % | E.VERHESTRAETEN | 53/12/–/65 |
+| 5 | CELTIC MOON | 19 | 7 | 26,82 | -29,2 % | T.PICCONE | 9/12/111/– |
 
 ### 3. PRIX DE LA FORTERELLE
 
