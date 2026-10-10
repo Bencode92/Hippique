@@ -1,6 +1,6 @@
 # CHANTILLY — 10/10/2026
 
-8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -117,23 +117,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DE LA COLLERAIE
 
-*17h52 · plat · 1800 m · 16 partants · cotes de l'extraction*
+*17h52 · plat · 1800 m · 16 partants · cotes à T−29:35*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 10 | MARQUES | 6,7 | 6,51 | **+3,0 %** | M.GRANDIN | 3/156/8/1039 |
-| 3 | NOCE DE RUBIS | 8,3 | 10,19 | -18,6 % | A.HAMELIN | 22/47/27/1704 |
-| 11 | UTXA | 9,1 | 11,08 | -17,9 % | M.BARZALONA 5e | 2/56/3146/153 |
-| 15 | ROMANCE MARINE | 9,3 | 10,97 | -15,2 % | A.MADAMET | 10/74/1036/17 |
-| 5 | SIMANCAS | 10 | 11,16 | -10,4 % | L.BAILS | 77/152/28/238 |
-| 9 | SILILLY | 10 | 13,25 | -24,5 % | A.LEMAITRE | 11/341/1765/2707 |
-| 1 | TROPHANE | 13 | 12,69 | **+2,4 %** | M.VELON | 28/59/125/1739 |
-| 12 | RUBENESQUE | 13 | 14,09 | -7,7 % | T.TRULLIER | 21/299/39/1598 |
-| 7 | AURA | 17 | 21,61 | -21,3 % | C.DEMURO | 1/16/1520/4 |
-| 14 | BELLA VITA | 17 | 19,73 | -13,8 % | E.HARDOUIN | 27/74/1144/1945 |
-| 6 | RIGEL BLUE | 20 | 25,40 | -21,3 % | A.POUCHIN | 6/60/467/809 |
-| 2 | FARFLIES | 25 | 32,83 | -23,9 % | E.VERHESTRAETEN | 53/12/3828/2825 |
-| 4 | KOYA | 25 | 38,69 | -35,4 % | M.PROTTI | 30/6/85/300 |
-| 16 | MARYCHA | 34 | 46,42 | -26,8 % | A.CRASTUS | 17/119/100/2462 |
-| 8 | NONNABELLA | 37 | 51,04 | -27,5 % | T.BACHELOT | 16/48/900/2244 |
-| 13 | L'ANNONCIADE | 52 | 74,09 | -29,8 % | C.LECOEUVRE | 13/310/757/514 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 10 | MARQUES | 6,3 | 6,7 | 6,36 | -0,9 % | M.GRANDIN | 3/156/8/1039 |
+| 5 | SIMANCAS | 6,7 | 10 | 6,79 | -1,3 % | L.BAILS | 77/152/28/238 |
+| 11 | UTXA | 8,5 | 9,1 | 10,72 | -20,7 % | M.BARZALONA 5e | 2/56/3146/153 |
+| 3 | NOCE DE RUBIS | 8,9 | 8,3 | 11,60 | -23,3 % | A.HAMELIN | 22/47/27/1704 |
+| 15 | ROMANCE MARINE | 10 | 9,3 | 12,52 | -20,1 % | A.MADAMET | 10/74/1036/17 |
+| 1 | TROPHANE | 11 | 13 | 10,97 | **+0,2 %** | M.VELON | 28/59/125/1739 |
+| 9 | SILILLY | 13 | 10 | 18,09 | -28,2 % | A.LEMAITRE | 11/341/1765/2707 |
+| 12 | RUBENESQUE | 15 | 13 | 17,43 | -13,9 % | T.TRULLIER | 21/299/39/1598 |
+| 7 | AURA | 17 | 17 | 22,65 | -24,9 % | C.DEMURO | 1/16/1520/4 |
+| 14 | BELLA VITA | 20 | 17 | 24,92 | -19,8 % | E.HARDOUIN | 27/74/1144/1945 |
+| 4 | KOYA | 21 | 25 | 33,17 | -36,7 % | M.PROTTI | 30/6/85/300 |
+| 2 | FARFLIES | 24 | 25 | 32,81 | -26,9 % | E.VERHESTRAETEN | 53/12/3828/2825 |
+| 6 | RIGEL BLUE | 24 | 20 | 32,79 | -26,8 % | A.POUCHIN | 6/60/467/809 |
+| 16 | MARYCHA | 26 | 34 | 35,91 | -27,6 % | A.CRASTUS | 17/119/100/2462 |
+| 8 | NONNABELLA | 29 | 37 | 40,66 | -28,7 % | T.BACHELOT | 16/48/900/2244 |
+| 13 | L'ANNONCIADE | 37 | 52 | 53,38 | -30,7 % | C.LECOEUVRE | 13/310/757/514 |
