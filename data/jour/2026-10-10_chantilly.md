@@ -86,18 +86,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DE L'ABBAYE DE CHALIS
 
-*16h42 · plat · 1200 m · 8 partants · cotes à T−1:35*
+*16h42 · plat · 1200 m · 8 partants · cotes à T−0:15*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 4 | QUIET STRENGTH | 3,1 | 3,2 | 3,49 | -11,3 % | C.SOUMILLON | 7/132/389/471 |
-| 2 | ARIA FRESCA | 5,5 | 7,7 | 6,42 | -14,3 % | M.GUYON | 4/7/3171/1573 |
-| 8 | ENFANT PARADIS | 6,4 | 7,1 | 7,96 | -19,6 % | F.VALLE SKAR | 35/15/15/36 |
-| 7 | ADHARA | 7,3 | 10 | 8,00 | -8,7 % | A.MADAMET | 10/22/420/667 |
-| 6 | LA GALOPAZ | 7,4 | 11 | 8,67 | -14,6 % | C.DEMURO | 1/222/262/1102 |
-| 5 | VATANEZ | 9,4 | 3,9 | 11,19 | -16,0 % | A.POUCHIN | 6/57/9/260 |
-| 3 | DALMORA | 11 | 12 | 12,88 | -14,6 % | T.TRULLIER | 21/37/1102/4351 |
-| 9 | REGAL CHOP | 45 | 24 | 67,58 | -33,4 % | F.VERON | 24/28/6/16 |
+| 4 | QUIET STRENGTH | 3,2 | 3,2 | 3,56 | -10,2 % | C.SOUMILLON | 7/132/389/471 |
+| 2 | ARIA FRESCA | 5,4 | 7,7 | 6,20 | -12,9 % | M.GUYON | 4/7/3171/1573 |
+| 8 | ENFANT PARADIS | 6,5 | 7,1 | 7,99 | -18,7 % | F.VALLE SKAR | 35/15/15/36 |
+| 7 | ADHARA | 7,3 | 10 | 7,89 | -7,4 % | A.MADAMET | 10/22/420/667 |
+| 6 | LA GALOPAZ | 7,5 | 11 | 8,68 | -13,6 % | C.DEMURO | 1/222/262/1102 |
+| 5 | VATANEZ | 9,5 | 3,9 | 11,17 | -14,9 % | A.POUCHIN | 6/57/9/260 |
+| 3 | DALMORA | 11 | 12 | 12,70 | -13,4 % | T.TRULLIER | 21/37/1102/4351 |
+| 9 | REGAL CHOP | 49 | 24 | 73,19 | -33,0 % | F.VERON | 24/28/6/16 |
 
 ### 7. PRIX LE FABULEUX
 
