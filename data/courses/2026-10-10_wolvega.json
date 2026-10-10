@@ -1,7 +1,7 @@
 {
   "hippodrome": "WOLVEGA",
   "type_reunion": "ATTELE",
-  "date_extraction": "2026-10-10T01:37:54.454646",
+  "date_extraction": "2026-10-10T14:07:53.864577",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/10102026/R6",
   "courses": [
     {
@@ -70,7 +70,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 1,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 2.7,
+          "cote_tendance": "-",
+          "cote_reference": 1.2
         },
         {
           "n°": "4",
@@ -91,8 +94,9 @@
           "nb_courses": 28,
           "nb_victoires": 0,
           "nb_places": 17,
-          "cote": 1.1,
-          "cote_tendance": ""
+          "cote": 10.0,
+          "cote_tendance": "-",
+          "cote_reference": 6.9
         },
         {
           "n°": "5",
@@ -132,7 +136,10 @@
           "equipement(s)": "",
           "nb_courses": 36,
           "nb_victoires": 0,
-          "nb_places": 16
+          "nb_places": 16,
+          "cote": 25.0,
+          "cote_tendance": "+",
+          "cote_reference": 10.0
         },
         {
           "n°": "7",
@@ -172,9 +179,13 @@
           "equipement(s)": "",
           "nb_courses": 53,
           "nb_victoires": 4,
-          "nb_places": 33
+          "nb_places": 33,
+          "cote": 1.5,
+          "cote_tendance": "+",
+          "cote_reference": 10.0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX REDENT MAGRO WORLD CHAMPION        PAYS BAS",
@@ -223,8 +234,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 2.6,
-          "cote_tendance": ""
+          "cote": 1.7,
+          "cote_tendance": "-",
+          "cote_reference": 2.0
         },
         {
           "n°": "3",
@@ -285,8 +297,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 1.3,
-          "cote_tendance": ""
+          "cote": 2.3,
+          "cote_tendance": "+",
+          "cote_reference": 2.0
         },
         {
           "n°": "6",
@@ -326,7 +339,10 @@
           "equipement(s)": "",
           "nb_courses": 20,
           "nb_victoires": 1,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 7.0,
+          "cote_tendance": "+",
+          "cote_reference": 6.1
         },
         {
           "n°": "8",
@@ -448,7 +464,8 @@
           "nb_victoires": 0,
           "nb_places": 0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX DE NORMANDIE                       PAYS BAS",
@@ -477,8 +494,9 @@
           "nb_courses": 42,
           "nb_victoires": 3,
           "nb_places": 18,
-          "cote": 11.0,
-          "cote_tendance": ""
+          "cote": 62.0,
+          "cote_tendance": "+",
+          "cote_reference": 55.0
         },
         {
           "n°": "2",
@@ -498,7 +516,10 @@
           "equipement(s)": "",
           "nb_courses": 65,
           "nb_victoires": 2,
-          "nb_places": 52
+          "nb_places": 52,
+          "cote": 62.0,
+          "cote_tendance": "+",
+          "cote_reference": 55.0
         },
         {
           "n°": "3",
@@ -539,8 +560,9 @@
           "nb_courses": 44,
           "nb_victoires": 5,
           "nb_places": 22,
-          "cote": 11.0,
-          "cote_tendance": ""
+          "cote": 31.0,
+          "cote_tendance": "+",
+          "cote_reference": 27.0
         },
         {
           "n°": "5",
@@ -561,8 +583,9 @@
           "nb_courses": 72,
           "nb_victoires": 8,
           "nb_places": 26,
-          "cote": 2.2,
-          "cote_tendance": ""
+          "cote": 8.9,
+          "cote_tendance": "+",
+          "cote_reference": 7.9
         },
         {
           "n°": "6",
@@ -582,7 +605,10 @@
           "equipement(s)": "",
           "nb_courses": 21,
           "nb_victoires": 8,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 1.5,
+          "cote_tendance": "",
+          "cote_reference": 1.3
         },
         {
           "n°": "7",
@@ -602,7 +628,10 @@
           "equipement(s)": "",
           "nb_courses": 40,
           "nb_victoires": 2,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 8.9,
+          "cote_tendance": "+",
+          "cote_reference": 27.0
         },
         {
           "n°": "8",
@@ -623,8 +652,9 @@
           "nb_courses": 43,
           "nb_victoires": 6,
           "nb_places": 26,
-          "cote": 1.9,
-          "cote_tendance": ""
+          "cote": 6.9,
+          "cote_tendance": "+",
+          "cote_reference": 7.9
         },
         {
           "n°": "9",
@@ -644,9 +674,13 @@
           "equipement(s)": "",
           "nb_courses": 63,
           "nb_victoires": 7,
-          "nb_places": 37
+          "nb_places": 37,
+          "cote": 20.0,
+          "cote_tendance": "+",
+          "cote_reference": 18.0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX SPORTFONDS PARAPAARD               PAYS BAS",
@@ -675,8 +709,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 5.2,
-          "cote_tendance": ""
+          "cote": 19.0,
+          "cote_tendance": "+",
+          "cote_reference": 18.0
         },
         {
           "n°": "2",
@@ -697,8 +732,9 @@
           "nb_courses": 4,
           "nb_victoires": 1,
           "nb_places": 2,
-          "cote": 5.2,
-          "cote_tendance": ""
+          "cote": 59.0,
+          "cote_tendance": "+",
+          "cote_reference": 56.0
         },
         {
           "n°": "3",
@@ -719,8 +755,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 5.2,
-          "cote_tendance": ""
+          "cote": 4.6,
+          "cote_tendance": "+",
+          "cote_reference": 4.7
         },
         {
           "n°": "4",
@@ -741,8 +778,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 5.2,
-          "cote_tendance": ""
+          "cote": 1.4,
+          "cote_tendance": "-",
+          "cote_reference": 1.4
         },
         {
           "n°": "5",
@@ -762,7 +800,10 @@
           "equipement(s)": "",
           "nb_courses": 18,
           "nb_victoires": 3,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 59.0,
+          "cote_tendance": "+",
+          "cote_reference": 56.0
         },
         {
           "n°": "6",
@@ -783,8 +824,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 5.2,
-          "cote_tendance": ""
+          "cote": 19.0,
+          "cote_tendance": "+",
+          "cote_reference": 18.0
         },
         {
           "n°": "7",
@@ -804,7 +846,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 59.0,
+          "cote_tendance": "+",
+          "cote_reference": 56.0
         },
         {
           "n°": "8",
@@ -825,8 +870,9 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 5.2,
-          "cote_tendance": ""
+          "cote": 14.0,
+          "cote_tendance": "+",
+          "cote_reference": 14.0
         },
         {
           "n°": "9",
@@ -846,9 +892,12 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 29.0,
+          "cote_tendance": "+"
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX RONDAL VOLLENHOVE                  PAYS BAS",
@@ -877,8 +926,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 6.1,
-          "cote_tendance": ""
+          "cote": 4.4,
+          "cote_tendance": "",
+          "cote_reference": 4.4
         },
         {
           "n°": "2",
@@ -899,8 +949,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 6.1,
-          "cote_tendance": ""
+          "cote": 1.8,
+          "cote_tendance": "",
+          "cote_reference": 1.8
         },
         {
           "n°": "3",
@@ -921,8 +972,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 6.1,
-          "cote_tendance": ""
+          "cote": 30.0,
+          "cote_tendance": "",
+          "cote_reference": 30.0
         },
         {
           "n°": "4",
@@ -943,8 +995,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 6.1,
-          "cote_tendance": ""
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 15.0
         },
         {
           "n°": "5",
@@ -965,8 +1018,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 6.1,
-          "cote_tendance": ""
+          "cote": 30.0,
+          "cote_tendance": "",
+          "cote_reference": 30.0
         },
         {
           "n°": "6",
@@ -1006,7 +1060,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 30.0,
+          "cote_tendance": "",
+          "cote_reference": 30.0
         },
         {
           "n°": "8",
@@ -1027,8 +1084,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 6.1,
-          "cote_tendance": ""
+          "cote": 30.0,
+          "cote_tendance": "",
+          "cote_reference": 30.0
         },
         {
           "n°": "9",
@@ -1050,7 +1108,8 @@
           "nb_victoires": 0,
           "nb_places": 0,
           "cote": 6.1,
-          "cote_tendance": ""
+          "cote_tendance": "",
+          "cote_reference": 6.1
         },
         {
           "n°": "10",
@@ -1072,7 +1131,8 @@
           "nb_victoires": 0,
           "nb_places": 0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX WIERINGERMEERRUITERS               PAYS BAS",
@@ -1101,8 +1161,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 14.0,
-          "cote_tendance": ""
+          "cote": 17.0,
+          "cote_tendance": "+",
+          "cote_reference": 33.0
         },
         {
           "n°": "2",
@@ -1143,8 +1204,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 14.0,
-          "cote_tendance": ""
+          "cote": 17.0,
+          "cote_tendance": "-",
+          "cote_reference": 33.0
         },
         {
           "n°": "4",
@@ -1165,8 +1227,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 1.4,
-          "cote_tendance": ""
+          "cote": 2.0,
+          "cote_tendance": "",
+          "cote_reference": 1.9
         },
         {
           "n°": "5",
@@ -1187,8 +1250,9 @@
           "nb_courses": 5,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 14.0,
-          "cote_tendance": ""
+          "cote": 10.0,
+          "cote_tendance": "+",
+          "cote_reference": 9.5
         },
         {
           "n°": "6",
@@ -1209,8 +1273,9 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 7.0,
-          "cote_tendance": ""
+          "cote": 4.4,
+          "cote_tendance": "+",
+          "cote_reference": 4.1
         },
         {
           "n°": "7",
@@ -1231,10 +1296,12 @@
           "nb_courses": 8,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 14.0,
-          "cote_tendance": ""
+          "cote": 4.7,
+          "cote_tendance": "+",
+          "cote_reference": 4.4
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX NASSIR DUST                        PAYS BAS",
@@ -1263,8 +1330,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 7.0,
-          "cote_tendance": ""
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         },
         {
           "n°": "2",
@@ -1285,8 +1353,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 7.0,
-          "cote_tendance": ""
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         },
         {
           "n°": "3",
@@ -1307,8 +1376,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 7.0,
-          "cote_tendance": ""
+          "cote": 3.3,
+          "cote_tendance": "",
+          "cote_reference": 3.3
         },
         {
           "n°": "4",
@@ -1329,8 +1399,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 7.0,
-          "cote_tendance": ""
+          "cote": 4.9,
+          "cote_tendance": "",
+          "cote_reference": 4.9
         },
         {
           "n°": "5",
@@ -1351,8 +1422,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 7.0,
-          "cote_tendance": ""
+          "cote": 4.9,
+          "cote_tendance": "",
+          "cote_reference": 4.9
         },
         {
           "n°": "6",
@@ -1373,8 +1445,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 7.0,
-          "cote_tendance": ""
+          "cote": 7.4,
+          "cote_tendance": "",
+          "cote_reference": 7.4
         },
         {
           "n°": "7",
@@ -1395,8 +1468,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 7.0,
-          "cote_tendance": ""
+          "cote": 9.9,
+          "cote_tendance": "",
+          "cote_reference": 9.9
         },
         {
           "n°": "8",
@@ -1417,10 +1491,12 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 7.0,
-          "cote_tendance": ""
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX D'ALKMAAR                          PAYS BAS",
@@ -1449,8 +1525,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 5.2,
-          "cote_tendance": ""
+          "cote": 9.9,
+          "cote_tendance": "",
+          "cote_reference": 9.9
         },
         {
           "n°": "2",
@@ -1471,8 +1548,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 2.6,
-          "cote_tendance": ""
+          "cote": 3.7,
+          "cote_tendance": "",
+          "cote_reference": 3.7
         },
         {
           "n°": "3",
@@ -1493,8 +1571,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 5.2,
-          "cote_tendance": ""
+          "cote": 5.9,
+          "cote_tendance": "",
+          "cote_reference": 5.9
         },
         {
           "n°": "4",
@@ -1515,8 +1594,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 5.2,
-          "cote_tendance": ""
+          "cote": 7.4,
+          "cote_tendance": "",
+          "cote_reference": 7.4
         },
         {
           "n°": "5",
@@ -1537,8 +1617,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 5.2,
-          "cote_tendance": ""
+          "cote": 2.4,
+          "cote_tendance": "",
+          "cote_reference": 2.4
         },
         {
           "n°": "6",
@@ -1558,7 +1639,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         },
         {
           "n°": "7",
@@ -1580,7 +1664,8 @@
           "nb_victoires": 0,
           "nb_places": 0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     }
   ]
 }
