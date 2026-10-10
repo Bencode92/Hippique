@@ -4,26 +4,26 @@
   "reunion": 4,
   "heure_depart": 1791643320000,
   "distance": 1200,
-  "scraped_at": "2026-10-10T16:21:05.097983+02:00",
-  "minutes_avant_depart": 21,
+  "scraped_at": "2026-10-10T16:25:05.201233+02:00",
+  "minutes_avant_depart": 17,
   "participants": [
     {
       "numPmu": 2,
       "nom": "ARIA FRESCA",
-      "cote_live": 6.2,
+      "cote_live": 6.3,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791642051000
+      "timestamp_cote": 1791642293000
     },
     {
       "numPmu": 3,
       "nom": "DALMORA",
-      "cote_live": 11.0,
+      "cote_live": 10.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791642051000
+      "timestamp_cote": 1791642293000
     },
     {
       "numPmu": 4,
@@ -32,52 +32,52 @@
       "cote_reference": 3.4,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791642051000
+      "timestamp_cote": 1791642293000
     },
     {
       "numPmu": 5,
       "nom": "VATANEZ",
-      "cote_live": 4.3,
+      "cote_live": 4.7,
       "cote_reference": 4.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791642051000
+      "timestamp_cote": 1791642293000
     },
     {
       "numPmu": 6,
       "nom": "LA GALOPAZ",
-      "cote_live": 8.9,
+      "cote_live": 7.8,
       "cote_reference": 9.7,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791642051000
+      "timestamp_cote": 1791642293000
     },
     {
       "numPmu": 7,
       "nom": "ADHARA",
-      "cote_live": 9.9,
+      "cote_live": 10.0,
       "cote_reference": 8.4,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791642051000
+      "timestamp_cote": 1791642293000
     },
     {
       "numPmu": 8,
       "nom": "ENFANT PARADIS",
-      "cote_live": 7.2,
+      "cote_live": 7.4,
       "cote_reference": 7.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791642051000
+      "timestamp_cote": 1791642293000
     },
     {
       "numPmu": 9,
       "nom": "REGAL CHOP",
-      "cote_live": 25.0,
+      "cote_live": 21.0,
       "cote_reference": 24.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791642051000
+      "timestamp_cote": 1791642293000
     }
   ],
   "hippodrome": "CHANTILLY",
@@ -122,6 +122,20 @@
         "7": 9.9,
         "8": 7.2,
         "9": 25.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-10T16:25:05.201233+02:00",
+      "minutes_avant_depart": 16.922663366666665,
+      "cotes": {
+        "2": 6.3,
+        "3": 10.0,
+        "4": 3.7,
+        "5": 4.7,
+        "6": 7.8,
+        "7": 10.0,
+        "8": 7.4,
+        "9": 21.0
       }
     }
   ]
