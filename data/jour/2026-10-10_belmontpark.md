@@ -12,11 +12,11 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 4 | ART MUSEUM | 2,6 | M FRANCO |
-| 6 | VALUE DRIVEN | 3,3 | R SANTANA, JR. |
-| 1 | IRON CHARGER | 6,6 | D DAVIS |
-| 3 | SOUPER LAWRENCE | 6,6 | S MARIN |
-| 5 | LOUISIANA BABY | 6,6 | K CARMOUCHE |
+| 6 | VALUE DRIVEN | 2 | R SANTANA, JR. |
+| 4 | ART MUSEUM | 3,3 | M FRANCO |
+| 1 | IRON CHARGER | 8,3 | D DAVIS |
+| 3 | SOUPER LAWRENCE | 8,3 | S MARIN |
+| 5 | LOUISIANA BABY | 8,3 | K CARMOUCHE |
 | 2 | BELLISSIMO D'ORO | – | K DAVIS |
 | 7 | HULLABALOO RAY RAY | – | J LEZCANO |
 
@@ -26,12 +26,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | ICE CHOCOLAT | 2,4 | K CARMOUCHE |
-| 5 | BELOUNI | 2,8 | D DAVIS |
-| 3 | OCEAN ATLANTIQUE | 8,5 | S MARIN |
-| 6 | RAMBLIN' WRECK | 8,5 | J LEZCANO |
-| 7 | HEATHGUARD | 11 | M FRANCO |
-| 4 | LATE CALL | 17 | R SANTANA, JR. |
+| 1 | ICE CHOCOLAT | 2,1 | K CARMOUCHE |
+| 5 | BELOUNI | 3,3 | D DAVIS |
+| 3 | OCEAN ATLANTIQUE | 6,7 | S MARIN |
+| 6 | RAMBLIN' WRECK | 10 | J LEZCANO |
+| 7 | HEATHGUARD | 13 | M FRANCO |
+| 4 | LATE CALL | 20 | R SANTANA, JR. |
 | 2 | HIGH TIDE | – | O HERNANDEZ MORENO |
 | 8 | CLASSIC CREATION | – | A FRESU |
 
