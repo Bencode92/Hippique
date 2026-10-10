@@ -1,7 +1,7 @@
 {
   "hippodrome": "BELMONT PARK",
   "type_reunion": "Plat",
-  "date_extraction": "2026-10-10T16:05:33.054239",
+  "date_extraction": "2026-10-10T17:40:54.460405",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/10102026/R9",
   "courses": [
     {
@@ -31,8 +31,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 8.3,
-          "cote_tendance": ""
+          "cote": 6.8,
+          "cote_tendance": "+",
+          "cote_reference": 3.6
         },
         {
           "n°": "2",
@@ -52,7 +53,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 23.0,
+          "cote_tendance": "-",
+          "cote_reference": 13.0
         },
         {
           "n°": "3",
@@ -73,9 +77,9 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 8.3,
-          "cote_tendance": "",
-          "cote_reference": 3.9
+          "cote": 28.0,
+          "cote_tendance": "+",
+          "cote_reference": 13.0
         },
         {
           "n°": "4",
@@ -96,9 +100,9 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 3.3,
+          "cote": 3.9,
           "cote_tendance": "",
-          "cote_reference": 2.6
+          "cote_reference": 3.5
         },
         {
           "n°": "5",
@@ -119,9 +123,9 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 8.3,
-          "cote_tendance": "",
-          "cote_reference": 3.9
+          "cote": 16.0,
+          "cote_tendance": "+",
+          "cote_reference": 9.1
         },
         {
           "n°": "6",
@@ -142,9 +146,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 2.0,
-          "cote_tendance": "",
-          "cote_reference": 3.9
+          "cote": 12.0,
+          "cote_tendance": "+",
+          "cote_reference": 6.8
         },
         {
           "n°": "7",
@@ -164,7 +168,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 1.9,
+          "cote_tendance": "",
+          "cote_reference": 5.5
         }
       ],
       "typePiste": "GAZON",
@@ -197,9 +204,9 @@
           "nb_courses": 37,
           "nb_victoires": 8,
           "nb_places": 22,
-          "cote": 2.1,
+          "cote": 1.7,
           "cote_tendance": "-",
-          "cote_reference": 2.3
+          "cote_reference": 1.8
         },
         {
           "n°": "2",
@@ -222,29 +229,6 @@
           "nb_places": 28
         },
         {
-          "n°": "3",
-          "cheval": "OCEAN ATLANTIQUE H.PU. 9 a.",
-          "cheval_url": "",
-          "père_mère": "Par: AMERICAN PHAROAH et TARE GREEN (GIANT'S CAUSEWAY)",
-          "corde": "(Corde:03)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261010/BED/2/20261010-BED-2-3.png",
-          "propriétaire": "FINAL TURN RACING STABLE LLC AND",
-          "entraineur": "O NODA",
-          "éleveurs": "",
-          "jockey": "S MARIN",
-          "poids": "57 kg",
-          "gains": "78441600",
-          "musique": "9p6p3p1p1p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 52,
-          "nb_victoires": 8,
-          "nb_places": 28,
-          "cote": 6.7,
-          "cote_tendance": "+",
-          "cote_reference": 8.1
-        },
-        {
           "n°": "4",
           "cheval": "LATE CALL H.PU. 7 a.",
           "cheval_url": "",
@@ -263,9 +247,9 @@
           "nb_courses": 37,
           "nb_victoires": 6,
           "nb_places": 22,
-          "cote": 20.0,
+          "cote": 17.0,
           "cote_tendance": "+",
-          "cote_reference": 16.0
+          "cote_reference": 12.0
         },
         {
           "n°": "5",
@@ -286,32 +270,9 @@
           "nb_courses": 26,
           "nb_victoires": 6,
           "nb_places": 11,
-          "cote": 3.3,
+          "cote": 4.4,
           "cote_tendance": "+",
-          "cote_reference": 3.2
-        },
-        {
-          "n°": "6",
-          "cheval": "RAMBLIN' WRECK H.PU. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: REDESDALE et DAKOTA KID (LEMON DROP KID)",
-          "corde": "(Corde:06)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261010/BED/2/20261010-BED-2-6.png",
-          "propriétaire": "REEVES THOROUGHBRED RACING, SEAR",
-          "entraineur": "D GARGAN",
-          "éleveurs": "",
-          "jockey": "J LEZCANO",
-          "poids": "56 kg",
-          "gains": "46888000",
-          "musique": "9p0p3p6p9p",
-          "valeur": "56.0",
-          "equipement(s)": "",
-          "nb_courses": 26,
-          "nb_victoires": 4,
-          "nb_places": 12,
-          "cote": 10.0,
-          "cote_tendance": "+",
-          "cote_reference": 8.1
+          "cote_reference": 2.5
         },
         {
           "n°": "7",
@@ -332,9 +293,9 @@
           "nb_courses": 25,
           "nb_victoires": 4,
           "nb_places": 11,
-          "cote": 13.0,
+          "cote": 5.4,
           "cote_tendance": "+",
-          "cote_reference": 10.0
+          "cote_reference": 8.5
         },
         {
           "n°": "8",
@@ -354,7 +315,9 @@
           "equipement(s)": "",
           "nb_courses": 27,
           "nb_victoires": 3,
-          "nb_places": 14
+          "nb_places": 14,
+          "cote": 11.0,
+          "cote_tendance": "+"
         }
       ],
       "typePiste": "HERBE",
@@ -387,7 +350,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 3.0,
+          "cote": 2.1,
           "cote_tendance": ""
         },
         {
@@ -409,9 +372,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 6.1,
-          "cote_tendance": "",
-          "cote_reference": 2.6
+          "cote": 19.0,
+          "cote_tendance": "+",
+          "cote_reference": 1.1
         },
         {
           "n°": "3",
@@ -452,8 +415,8 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 3.0,
-          "cote_tendance": ""
+          "cote": 2.2,
+          "cote_tendance": "-"
         },
         {
           "n°": "5",
@@ -473,30 +436,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
-          "n°": "6",
-          "cheval": "LOOKIN' FINE F.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: UNCLE MO et OUR MAJESTY (MAJESTICPERFECTION)",
-          "corde": "(Corde:06)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261010/BED/3/20261010-BED-3-6.png",
-          "propriétaire": "ALLOR, FRED, M.",
-          "entraineur": "C R MCGAUGHEY III",
-          "éleveurs": "",
-          "jockey": "A FRESU",
-          "poids": "55.5 kg",
-          "gains": "",
-          "musique": "",
-          "valeur": "55.5",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 3.0,
-          "cote_tendance": "",
-          "cote_reference": 1.3
+          "cote": 14.0,
+          "cote_tendance": "+"
         },
         {
           "n°": "7",
@@ -516,7 +458,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 9.8,
+          "cote_tendance": "+"
         }
       ],
       "typePiste": "GAZON",
@@ -530,28 +474,6 @@
       "distance": "1700m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "ICE SHOT H.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: KEEN ICE et SMART SHOT (SKIPSHOT)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261010/BED/4/20261010-BED-4-1.png",
-          "propriétaire": "PURPURA, JOSEPH, ANTHONY",
-          "entraineur": "B KELLY",
-          "éleveurs": "",
-          "jockey": "T HAZELWOOD",
-          "poids": "57 kg",
-          "gains": "6345500",
-          "musique": "5p1p2p6p4p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 10,
-          "nb_victoires": 2,
-          "nb_places": 6,
-          "cote": 27.0,
-          "cote_tendance": ""
-        },
         {
           "n°": "2",
           "cheval": "SHATTUCK H.PU. 5 a.",
@@ -591,7 +513,7 @@
           "nb_courses": 19,
           "nb_victoires": 2,
           "nb_places": 8,
-          "cote": 27.0,
+          "cote": 33.0,
           "cote_tendance": "",
           "cote_reference": 2.2
         },
@@ -614,7 +536,7 @@
           "nb_courses": 42,
           "nb_victoires": 5,
           "nb_places": 26,
-          "cote": 27.0,
+          "cote": 33.0,
           "cote_tendance": ""
         },
         {
@@ -635,7 +557,9 @@
           "equipement(s)": "",
           "nb_courses": 28,
           "nb_victoires": 2,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 5.6,
+          "cote_tendance": ""
         },
         {
           "n°": "6",
@@ -656,7 +580,7 @@
           "nb_courses": 30,
           "nb_victoires": 2,
           "nb_places": 19,
-          "cote": 27.0,
+          "cote": 16.0,
           "cote_tendance": "",
           "cote_reference": 2.2
         },
@@ -756,26 +680,6 @@
           "nb_places": 0
         },
         {
-          "n°": "4",
-          "cheval": "RIDGEWOOD HONOR M.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MIDNIGHT LUTE et NO TOUCHIE (FLAT OUT)",
-          "corde": "(Corde:04)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261010/BED/5/20261010-BED-5-4.png",
-          "propriétaire": "RIDGEWOOD BARNS LLC",
-          "entraineur": "C F MARTIN",
-          "éleveurs": "",
-          "jockey": "A FRESU",
-          "poids": "55.5 kg",
-          "gains": "",
-          "musique": "",
-          "valeur": "55.5",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
           "n°": "5",
           "cheval": "TARTAH M.PU. 2 a.",
           "cheval_url": "",
@@ -793,7 +697,9 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 3.0,
+          "cote_tendance": ""
         },
         {
           "n°": "6",
@@ -814,7 +720,7 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 2.2,
+          "cote": 3.0,
           "cote_tendance": "",
           "cote_reference": 2.2
         },
@@ -857,7 +763,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 4.4,
+          "cote": 6.1,
           "cote_tendance": "",
           "cote_reference": 4.4
         },
@@ -880,7 +786,7 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 2.2,
+          "cote": 3.0,
           "cote_tendance": "",
           "cote_reference": 2.2
         }
@@ -915,7 +821,7 @@
           "nb_courses": 36,
           "nb_victoires": 6,
           "nb_places": 17,
-          "cote": 4.8,
+          "cote": 7.4,
           "cote_tendance": "",
           "cote_reference": 3.9
         },
@@ -938,7 +844,7 @@
           "nb_courses": 27,
           "nb_victoires": 5,
           "nb_places": 19,
-          "cote": 4.8,
+          "cote": 7.4,
           "cote_tendance": "",
           "cote_reference": 3.9
         },
@@ -960,7 +866,9 @@
           "equipement(s)": "",
           "nb_courses": 18,
           "nb_victoires": 4,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 2.4,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -981,7 +889,7 @@
           "nb_courses": 47,
           "nb_victoires": 9,
           "nb_places": 28,
-          "cote": 4.8,
+          "cote": 7.4,
           "cote_tendance": "",
           "cote_reference": 3.9
         },
@@ -1024,7 +932,7 @@
           "nb_courses": 36,
           "nb_victoires": 11,
           "nb_places": 20,
-          "cote": 2.4,
+          "cote": 3.7,
           "cote_tendance": "",
           "cote_reference": 3.9
         },
@@ -1047,7 +955,7 @@
           "nb_courses": 33,
           "nb_victoires": 5,
           "nb_places": 21,
-          "cote": 9.7,
+          "cote": 14.0,
           "cote_tendance": "",
           "cote_reference": 7.9
         }
@@ -1073,7 +981,7 @@
           "propriétaire": "R.T RACING STABLE",
           "entraineur": "J M JIMENEZ",
           "éleveurs": "",
-          "jockey": "R SILVERA",
+          "jockey": "D A RIVERA",
           "poids": "55.5 kg",
           "gains": "278400",
           "musique": "7p3p8p(25)9p",
@@ -1082,29 +990,6 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 1
-        },
-        {
-          "n°": "2",
-          "cheval": "IRISH GOODBYE M.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: CAIRO PRINCE et IRISH DANZING (DANZA)",
-          "corde": "(Corde:02)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261010/BED/7/20261010-BED-7-2.png",
-          "propriétaire": "DUBB, MICHAEL AND THE ELKSTONE G",
-          "entraineur": "B H COX",
-          "éleveurs": "",
-          "jockey": "M FRANCO",
-          "poids": "55.5 kg",
-          "gains": "6600000",
-          "musique": "5p3p2p2p2p",
-          "valeur": "55.5",
-          "equipement(s)": "",
-          "nb_courses": 5,
-          "nb_victoires": 0,
-          "nb_places": 5,
-          "cote": 1.5,
-          "cote_tendance": "",
-          "cote_reference": 1.5
         },
         {
           "n°": "3",
@@ -1185,9 +1070,9 @@
           "nb_courses": 8,
           "nb_victoires": 0,
           "nb_places": 5,
-          "cote": 3.9,
+          "cote": 1.7,
           "cote_tendance": "",
-          "cote_reference": 3.9
+          "cote_reference": 1.7
         },
         {
           "n°": "7",
@@ -1248,9 +1133,9 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 3.9,
+          "cote": 1.7,
           "cote_tendance": "",
-          "cote_reference": 3.9
+          "cote_reference": 1.7
         }
       ],
       "typePiste": "GAZON",
@@ -1283,7 +1168,7 @@
           "nb_courses": 9,
           "nb_victoires": 3,
           "nb_places": 4,
-          "cote": 4.8,
+          "cote": 5.7,
           "cote_tendance": "",
           "cote_reference": 4.8
         },
@@ -1325,7 +1210,9 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 5.7,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -1366,7 +1253,7 @@
           "nb_courses": 2,
           "nb_victoires": 1,
           "nb_places": 1,
-          "cote": 4.8,
+          "cote": 5.7,
           "cote_tendance": "",
           "cote_reference": 4.8
         },
@@ -1389,7 +1276,7 @@
           "nb_courses": 5,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 4.8,
+          "cote": 5.7,
           "cote_tendance": "",
           "cote_reference": 4.8
         },
@@ -1412,7 +1299,7 @@
           "nb_courses": 9,
           "nb_victoires": 3,
           "nb_places": 3,
-          "cote": 1.9,
+          "cote": 2.2,
           "cote_tendance": "",
           "cote_reference": 1.9
         },
@@ -1527,7 +1414,7 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 13.0,
+          "cote": 4.9,
           "cote_tendance": "",
           "cote_reference": 9.7
         },
@@ -1570,7 +1457,7 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 2.2,
+          "cote": 2.4,
           "cote_tendance": "",
           "cote_reference": 4.8
         },
@@ -1593,7 +1480,7 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 2.2,
+          "cote": 2.4,
           "cote_tendance": "",
           "cote_reference": 1.6
         },
@@ -1616,7 +1503,7 @@
           "nb_courses": 7,
           "nb_victoires": 0,
           "nb_places": 7,
-          "cote": 6.6,
+          "cote": 7.4,
           "cote_tendance": "",
           "cote_reference": 4.8
         },
@@ -1711,7 +1598,7 @@
           "nb_courses": 10,
           "nb_victoires": 1,
           "nb_places": 7,
-          "cote": 3.7,
+          "cote": 4.1,
           "cote_tendance": "",
           "cote_reference": 3.7
         },
@@ -1774,7 +1661,7 @@
           "nb_courses": 5,
           "nb_victoires": 3,
           "nb_places": 2,
-          "cote": 2.9,
+          "cote": 2.3,
           "cote_tendance": "",
           "cote_reference": 2.9
         },
@@ -1797,7 +1684,7 @@
           "nb_courses": 10,
           "nb_victoires": 2,
           "nb_places": 5,
-          "cote": 1.8,
+          "cote": 2.0,
           "cote_tendance": "",
           "cote_reference": 1.8
         },
@@ -1911,7 +1798,9 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 2.6,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -1971,7 +1860,9 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.6,
+          "cote_tendance": ""
         },
         {
           "n°": "7",
@@ -2051,7 +1942,9 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 2.6,
+          "cote_tendance": ""
         },
         {
           "n°": "11",
@@ -2092,66 +1985,6 @@
           "nb_courses": 11,
           "nb_victoires": 0,
           "nb_places": 6
-        },
-        {
-          "n°": "13",
-          "cheval": "LOBBYIST H.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: HARD SPUN et ST. MALO'S GATE (DYNAFORMER)",
-          "corde": "(Corde:13)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261010/BED/11/20261010-BED-11-13.png",
-          "propriétaire": "GRANT, JOSEPH M., O'SULLIVAN, PA",
-          "entraineur": "D G DONK",
-          "éleveurs": "",
-          "jockey": "RESERVISTE 1",
-          "poids": "55.5 kg",
-          "gains": "2292900",
-          "musique": "0p4p6p4p2p",
-          "valeur": "55.5",
-          "equipement(s)": "",
-          "nb_courses": 8,
-          "nb_victoires": 0,
-          "nb_places": 4
-        },
-        {
-          "n°": "14",
-          "cheval": "AGGRESSION H.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: STREET SENSE et TO THE MOON ALICE (MALIBU MOON)",
-          "corde": "(Corde:14)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261010/BED/11/20261010-BED-11-14.png",
-          "propriétaire": "GOLDFARB, SANFORD J., KANTARMACI",
-          "entraineur": "I KANTARMACI",
-          "éleveurs": "",
-          "jockey": "RESERVISTE 2",
-          "poids": "55.5 kg",
-          "gains": "50400",
-          "musique": "8p",
-          "valeur": "55.5",
-          "equipement(s)": "",
-          "nb_courses": 1,
-          "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
-          "n°": "15",
-          "cheval": "PILOT KNOB H.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: FLAMEAWAY et ISLE GET READY (MORE THAN READY)",
-          "corde": "(Corde:15)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261010/BED/11/20261010-BED-11-15.png",
-          "propriétaire": "OUR SUGAR BEAR STABLE LLC",
-          "entraineur": "B R BROWN",
-          "éleveurs": "",
-          "jockey": "RESERVISTE 3",
-          "poids": "55.5 kg",
-          "gains": "871800",
-          "musique": "7p7p6p5p9p",
-          "valeur": "55.5",
-          "equipement(s)": "",
-          "nb_courses": 9,
-          "nb_victoires": 0,
-          "nb_places": 3
         }
       ],
       "typePiste": "HERBE",

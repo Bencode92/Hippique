@@ -73,16 +73,16 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 5 | SAIDI EL FAL | 3,5 | 3,62 | -3,4 % | C.DEMURO | 1/16/125/31 |
-| 7 | TOMAKAY | 4,6 | 4,28 | **+7,6 %** | M.BARZALONA 4e | 2/5/208/4 |
-| 2 | FERRARI FEVER | 4,7 | 4,37 | **+7,5 %** | T.TRULLIER | 21/54/6/663 |
-| 9 | ZOOM | 6,2 | 6,39 | -3,0 % | M.GUYON | 4/2/1/2 |
-| 10 | OMICRONE | 16 | 19,60 | -18,4 % | A.HAMELIN | 22/57/3/1773 |
-| 1 | CHICA DE CIUDAD | 17 | 19,61 | -13,3 % | A.BARON | 39/95/3749/1220 |
-| 6 | LANZELOT GOLD | 17 | 19,61 | -13,3 % | M.GRANDIN | 3/14/123/234 |
-| 4 | SHIAWASE | 24 | 33,38 | -28,1 % | F.VERON | 24/56/65/155 |
-| 3 | QUASAR | 29 | 38,83 | -25,3 % | PC.BOUDOT 2e | 8/76/12/112 |
-| 8 | CHARENGO | 51 | 77,42 | -34,1 % | C.LECOEUVRE | 13/148/30/3196 |
+| 7 | TOMAKAY | 3,5 | 3,44 | **+1,8 %** | M.BARZALONA 4e | 2/5/208/4 |
+| 5 | SAIDI EL FAL | 4,4 | 4,65 | -5,3 % | C.DEMURO | 1/16/125/31 |
+| 9 | ZOOM | 4,9 | 4,92 | -0,5 % | M.GUYON | 4/2/1/2 |
+| 2 | FERRARI FEVER | 5,1 | 4,77 | **+7,0 %** | T.TRULLIER | 21/54/6/663 |
+| 10 | OMICRONE | 17 | 21,03 | -19,1 % | A.HAMELIN | 22/57/3/1773 |
+| 1 | CHICA DE CIUDAD | 20 | 23,65 | -15,4 % | A.BARON | 39/95/3749/1220 |
+| 6 | LANZELOT GOLD | 21 | 25,01 | -16,0 % | M.GRANDIN | 3/14/123/234 |
+| 4 | SHIAWASE | 23 | 31,78 | -27,6 % | F.VERON | 24/56/65/155 |
+| 3 | QUASAR | 37 | 51,00 | -27,5 % | PC.BOUDOT 2e | 8/76/12/112 |
+| 8 | CHARENGO | 79 | 123,18 | -35,9 % | C.LECOEUVRE | 13/148/30/3196 |
 
 ### 6. PRIX DE L'ABBAYE DE CHALIS
 
@@ -90,14 +90,14 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 4 | QUIET STRENGTH | 3,2 | 3,2 | 3,56 | -10,2 % | C.SOUMILLON | 7/132/389/471 |
-| 2 | ARIA FRESCA | 5,4 | 7,7 | 6,20 | -12,9 % | M.GUYON | 4/7/3171/1573 |
-| 8 | ENFANT PARADIS | 6,5 | 7,1 | 7,99 | -18,7 % | F.VALLE SKAR | 35/15/15/36 |
-| 7 | ADHARA | 7,3 | 10 | 7,89 | -7,4 % | A.MADAMET | 10/22/420/667 |
-| 6 | LA GALOPAZ | 7,5 | 11 | 8,68 | -13,6 % | C.DEMURO | 1/222/262/1102 |
-| 5 | VATANEZ | 9,5 | 3,9 | 11,17 | -14,9 % | A.POUCHIN | 6/57/9/260 |
-| 3 | DALMORA | 11 | 12 | 12,70 | -13,4 % | T.TRULLIER | 21/37/1102/4351 |
-| 9 | REGAL CHOP | 49 | 24 | 73,19 | -33,0 % | F.VERON | 24/28/6/16 |
+| 4 | QUIET STRENGTH | 3,2 | 3 | 3,82 | -16,2 % | C.SOUMILLON | 7/132/389/471 |
+| 2 | ARIA FRESCA | 5,4 | 5,3 | 5,96 | -9,4 % | M.GUYON | 4/7/3171/1573 |
+| 8 | ENFANT PARADIS | 6,5 | 8,6 | 7,99 | -18,7 % | F.VALLE SKAR | 35/15/15/36 |
+| 7 | ADHARA | 7,3 | 9,6 | 8,57 | -14,8 % | A.MADAMET | 10/22/420/667 |
+| 6 | LA GALOPAZ | 7,5 | 6,7 | 8,68 | -13,6 % | C.DEMURO | 1/222/262/1102 |
+| 5 | VATANEZ | 9,5 | 6,6 | 11,17 | -14,9 % | A.POUCHIN | 6/57/9/260 |
+| 3 | DALMORA | 11 | 12 | 13,87 | -20,7 % | T.TRULLIER | 21/37/1102/4351 |
+| 9 | REGAL CHOP | 49 | 50 | 73,19 | -33,0 % | F.VERON | 24/28/6/16 |
 
 ### 7. PRIX LE FABULEUX
 
@@ -105,35 +105,34 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 7 | REGAL RESOLVE | 3,6 | 2,5 | 4,54 | -20,8 % | C.KEANE | 153/1/3884/12 |
-| 6 | SEGALL | 3,8 | 5 | 3,82 | -0,5 % | PC.BOUDOT | 8/2/116/43 |
-| 4 | PATHEIN | 6,7 | 10 | 7,69 | -12,8 % | M.BARZALONA 5e | 2/457/3489/– |
-| 3 | BASHA | 7,6 | 9,9 | 8,18 | -7,1 % | C.DEMURO | 1/10/3/5 |
-| 1 | BLUE COURVOISIER | 8,8 | 17 | 10,35 | -15,0 % | T.PICCONE | 9/815/–/– |
-| 9 | TAKE ME ON | 11 | 15 | 12,56 | -12,4 % | M.GUYON 4e | 4/19/3308/33 |
-| 5 | BALZAC | 14 | 7,9 | 17,40 | -19,5 % | C.SOUMILLON | 7/650/541/– |
-| 8 | GAZI | 30 | 24 | 41,91 | -28,4 % | A.POUCHIN | 6/2/3/18 |
-| 2 | THING FOR THE HOT | 46 | 15 | 72,47 | -36,5 % | A.MADAMET | 10/124/324/124 |
+| 7 | REGAL RESOLVE | 3,6 | 3,7 | 4,38 | -17,7 % | C.KEANE | 153/1/3884/12 |
+| 6 | SEGALL | 3,8 | 4,8 | 4,10 | -7,3 % | PC.BOUDOT | 8/2/116/43 |
+| 4 | PATHEIN | 6,7 | 8,2 | 7,69 | -12,8 % | M.BARZALONA 5e | 2/457/3489/– |
+| 3 | BASHA | 7,6 | 6,5 | 8,18 | -7,1 % | C.DEMURO | 1/10/3/5 |
+| 1 | BLUE COURVOISIER | 8,8 | 7,6 | 10,35 | -15,0 % | T.PICCONE | 9/815/–/– |
+| 9 | TAKE ME ON | 11 | 9,3 | 12,56 | -12,4 % | M.GUYON 4e | 4/19/3308/33 |
+| 5 | BALZAC | 14 | 10 | 17,40 | -19,5 % | C.SOUMILLON | 7/650/541/– |
+| 8 | GAZI | 30 | 29 | 41,91 | -28,4 % | A.POUCHIN | 6/2/3/18 |
+| 2 | THING FOR THE HOT | 46 | 64 | 72,47 | -36,5 % | A.MADAMET | 10/124/324/124 |
 
 ### 8. PRIX DE LA COLLERAIE
 
-*17h52 · plat · 1800 m · 16 partants · cotes à T−12:55*
+*17h52 · plat · 1800 m · 15 partants · cotes à T−12:55*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 11 | UTXA | 5,6 | 9,1 | 6,56 | -14,6 % | M.BARZALONA 5e | 2/56/3146/153 |
-| 10 | MARQUES | 7 | 6,7 | 8,43 | -17,0 % | M.GRANDIN | 3/156/8/1039 |
-| 3 | NOCE DE RUBIS | 8,3 | 8,3 | 10,74 | -22,7 % | A.HAMELIN | 22/47/27/1704 |
-| 5 | SIMANCAS | 8,6 | 10 | 9,06 | -5,1 % | L.BAILS | 77/152/28/238 |
-| 15 | ROMANCE MARINE | 9,5 | 9,3 | 11,84 | -19,8 % | A.MADAMET | 10/74/1036/17 |
-| 9 | SILILLY | 13 | 10 | 18,18 | -28,5 % | A.LEMAITRE | 11/341/1765/2707 |
-| 1 | TROPHANE | 14 | 13 | 14,55 | -3,8 % | M.VELON | 28/59/125/1739 |
-| 7 | AURA | 17 | 17 | 22,76 | -25,3 % | C.DEMURO | 1/16/1520/4 |
-| 4 | KOYA | 18 | 25 | 27,86 | -35,4 % | M.PROTTI | 30/6/85/300 |
-| 12 | RUBENESQUE | 18 | 13 | 23,67 | -23,9 % | T.TRULLIER | 21/299/39/1598 |
-| 6 | RIGEL BLUE | 19 | 20 | 25,19 | -24,6 % | A.POUCHIN | 6/60/467/809 |
-| 16 | MARYCHA | 22 | 34 | 27,20 | -19,1 % | A.CRASTUS | 17/119/100/2462 |
-| 14 | BELLA VITA | 23 | 17 | 29,38 | -21,7 % | E.HARDOUIN | 27/74/1144/1945 |
-| 8 | NONNABELLA | 24 | 37 | 32,96 | -27,2 % | T.BACHELOT | 16/48/900/2244 |
-| 2 | FARFLIES | 32 | 25 | 45,62 | -29,9 % | E.VERHESTRAETEN | 53/12/3828/2825 |
-| 13 | L'ANNONCIADE | 48 | 52 | 71,28 | -32,7 % | C.LECOEUVRE | 13/310/757/514 |
+| 11 | UTXA | 5,6 | 5,5 | 6,20 | -9,7 % | M.BARZALONA 5e | 2/56/3146/153 |
+| 10 | MARQUES | 7 | 7 | 8,31 | -15,7 % | M.GRANDIN | 3/156/8/1039 |
+| 3 | NOCE DE RUBIS | 8,3 | 8,2 | 10,13 | -18,1 % | A.HAMELIN | 22/47/27/1704 |
+| 5 | SIMANCAS | 8,6 | 8,7 | 9,32 | -7,7 % | L.BAILS | 77/152/28/238 |
+| 15 | ROMANCE MARINE | 9,5 | 9,6 | 11,18 | -15,0 % | A.MADAMET | 10/74/1036/17 |
+| 9 | SILILLY | 13 | 14 | 17,95 | -27,6 % | A.LEMAITRE | 11/341/1765/2707 |
+| 1 | TROPHANE | 14 | 15 | 15,02 | -6,8 % | M.VELON | 28/59/125/1739 |
+| 4 | KOYA | 18 | 18 | 26,31 | -31,6 % | M.PROTTI | 30/6/85/300 |
+| 12 | RUBENESQUE | 18 | 19 | 22,36 | -19,5 % | T.TRULLIER | 21/299/39/1598 |
+| 6 | RIGEL BLUE | 19 | 18 | 23,80 | -20,2 % | A.POUCHIN | 6/60/467/809 |
+| 16 | MARYCHA | 22 | 22 | 28,18 | -21,9 % | A.CRASTUS | 17/119/100/2462 |
+| 14 | BELLA VITA | 23 | 24 | 30,45 | -24,5 % | E.HARDOUIN | 27/74/1144/1945 |
+| 8 | NONNABELLA | 24 | 23 | 34,17 | -29,8 % | T.BACHELOT | 16/48/900/2244 |
+| 2 | FARFLIES | 32 | 32 | 47,38 | -32,5 % | E.VERHESTRAETEN | 53/12/3828/2825 |
+| 13 | L'ANNONCIADE | 48 | 46 | 70,78 | -32,2 % | C.LECOEUVRE | 13/310/757/514 |
