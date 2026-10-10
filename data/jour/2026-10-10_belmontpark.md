@@ -1,8 +1,8 @@
 # BELMONT PARK — 10/10/2026
 
-11 courses.
+11 courses (8 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -12,11 +12,11 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 3 | SOUPER LAWRENCE | 1,7 | S MARIN |
+| 5 | LOUISIANA BABY | 1,7 | K CARMOUCHE |
 | 1 | IRON CHARGER | – | D DAVIS |
 | 2 | BELLISSIMO D'ORO | – | K DAVIS |
-| 3 | SOUPER LAWRENCE | – | S MARIN |
 | 4 | ART MUSEUM | – | M FRANCO |
-| 5 | LOUISIANA BABY | – | K CARMOUCHE |
 | 6 | VALUE DRIVEN | – | R SANTANA, JR. |
 | 7 | HULLABALOO RAY RAY | – | J LEZCANO |
 
@@ -26,9 +26,9 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 3 | OCEAN ATLANTIQUE | 1,1 | S MARIN |
 | 1 | ICE CHOCOLAT | – | K CARMOUCHE |
 | 2 | HIGH TIDE | – | O HERNANDEZ MORENO |
-| 3 | OCEAN ATLANTIQUE | – | S MARIN |
 | 4 | LATE CALL | – | R SANTANA, JR. |
 | 5 | BELOUNI | – | D DAVIS |
 | 6 | RAMBLIN' WRECK | – | J LEZCANO |
@@ -55,9 +55,9 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 3 | MO KREESA | 1,1 | C ELLIOTT | –/–/–/– |
 | 1 | ICE SHOT | – | T HAZELWOOD | –/–/–/– |
 | 2 | SHATTUCK | – | K CARMOUCHE | –/–/–/– |
-| 3 | MO KREESA | – | C ELLIOTT | –/–/–/– |
 | 4 | JACKSON HEIGHTS | – | E J ZAYAS | –/–/–/– |
 | 5 | AMERICAN GRANT | – | R SANTANA, JR. | –/–/–/– |
 | 6 | LEFTEMBEHIND | – | A FRESU | –/–/–/– |
@@ -69,6 +69,7 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 9 | BILLY BUCCHERO | 1,1 | E J ZAYAS |
 | 1 | GEORGE'S PAL VINNY | – | K CARMOUCHE |
 | 2 | THEMISTOCLES | – | R SANTANA, JR. |
 | 3 | SOUTHSIDE SAMURAI | – | S MARIN |
@@ -77,7 +78,6 @@
 | 6 | MIRACLE MICHAEL | – | J CASTELLANO |
 | 7 | NEPTUNEROAD RICHIE | – | D DAVIS |
 | 8 | BLUSTERY DAY | – | M FRANCO |
-| 9 | BILLY BUCCHERO | – | E J ZAYAS |
 
 ### 6. CLAIMING (3 YO & UP - DIRT)
 
@@ -85,8 +85,8 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 2 | RUN CLASSIC | 1,1 | E J ZAYAS |
 | 1 | GOLD LUCK | – | D DAVIS |
-| 2 | RUN CLASSIC | – | E J ZAYAS |
 | 3 | PAIR OF SOCKS | – | C ELLIOTT |
 | 4 | TWENTY FOUR MAMBA | – | R SANTANA, JR. |
 | 5 | PARADISE VALLEY | – | S MARIN |
@@ -99,6 +99,7 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 9 | TRUE ADIRONDACKER | 1,1 | E J ZAYAS | –/–/–/– |
 | 1 | VIOLIN | – | R SILVERA | –/–/–/– |
 | 2 | IRISH GOODBYE | – | M FRANCO | –/–/–/– |
 | 3 | PORTADOWN LAD | – | R MARAGH | –/–/–/– |
@@ -107,7 +108,6 @@
 | 6 | CHRIS'S SONG | – | A FRESU | –/–/–/– |
 | 7 | KINGS LANDYN | – | C ELLIOTT | –/–/–/– |
 | 8 | ALWAYS HONEST | – | R GUTIERREZ | –/–/–/– |
-| 9 | TRUE ADIRONDACKER | – | E J ZAYAS | –/–/–/– |
 
 ### 8. BRICKS AND MORTAR S.
 
@@ -115,13 +115,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | TWO OUT HERO | – | R M HERNANDEZ |
+| 7 | INTRICATE SPIRIT | 1,7 | M FRANCO |
+| 1 | TWO OUT HERO | 3,5 | R M HERNANDEZ |
+| 5 | IRON PALACE | 3,5 | E J ZAYAS |
 | 2 | LEARNTODISCOVER | – | R SANTANA, JR. |
 | 3 | BIG DESTROYER | – | A FRESU |
 | 4 | PROTON | – | S MARIN |
-| 5 | IRON PALACE | – | E J ZAYAS |
 | 6 | SIX O CLOCK | – | D DAVIS |
-| 7 | INTRICATE SPIRIT | – | M FRANCO |
 | 8 | DOUBTING THOMAS | – | J RUIZ |
 | 9 | FELINE CURIOUS | – | J LEZCANO |
 
@@ -146,13 +146,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 7 | VERSAILLES ROAD | 1,3 | E J ZAYAS |
+| 3 | HEEERE'S JOHNNY | 2,6 | D DAVIS |
 | 1 | PRINT | – | R SANTANA, JR. |
 | 2 | PROTECT AND DEFEND | – | S MARIN |
-| 3 | HEEERE'S JOHNNY | – | D DAVIS |
 | 4 | LENNOX THE GREY | – | A FRESU |
 | 5 | BULL SHOALS | – | K CARMOUCHE |
 | 6 | CAROLINE ST. BEAT | – | M FRANCO |
-| 7 | VERSAILLES ROAD | – | E J ZAYAS |
 | 8 | CHAMBERSVILLE | – | J CASTELLANO |
 | 9 | THIRD COAST | – | J LEZCANO |
 

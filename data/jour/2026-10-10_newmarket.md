@@ -1,8 +1,8 @@
 # NEWMARKET — 10/10/2026
 
-7 courses.
+7 courses (2 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -99,9 +99,9 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 3 | DESERT ROMANCE | 1,1 | WILLIAM BUICK | 168/101/–/46 |
 | 1 | CONSTELLA | – | BILLY LOUGHNANE | 223/–/–/– |
 | 2 | CULLENAGH RAINBOW | – | ROSSA RYAN | 215/456/–/– |
-| 3 | DESERT ROMANCE | – | WILLIAM BUICK | 168/101/–/46 |
 | 4 | FRIENDLY FORCE | – | ROWAN SCOTT | 509/358/–/– |
 | 5 | INTANGIBLE TRUTH | – | ROB HORNBY | 257/116/–/– |
 | 6 | LAKOTA PASS | – | CIEREN FALLON | 321/–/–/– |
@@ -113,6 +113,7 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 9 | MOTOWN FILLY | 1,1 | SAFFIE OSBORNE | –/–/–/– |
 | 1 | DANDYMAN DAN | – | KIERAN SHOEMARK | 279/447/–/2464 |
 | 2 | MAJESTIC JUDE | – | CIEREN FALLON | 321/24/–/– |
 | 3 | NATIONAL HONOUR | – | WILLIAM BUICK | 168/101/–/46 |
@@ -121,4 +122,3 @@
 | 6 | MIDGHAM MAN | – | GEORGE WOOD | –/–/–/– |
 | 7 | UNITED AUTHORITY | – | SILVESTRE DE SOUSA | 177/158/–/8 |
 | 8 | MOBADIR | – | ASHLEY LEWIS | –/103/–/431 |
-| 9 | MOTOWN FILLY | – | SAFFIE OSBORNE | –/–/–/– |
