@@ -1,6 +1,6 @@
 # CHANTILLY — 10/10/2026
 
-8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -101,19 +101,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX LE FABULEUX
 
-*17h17 · plat · 1800 m · 9 partants · cotes de l'extraction*
+*17h17 · plat · 1800 m · 9 partants · cotes à T−29:55*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 7 | REGAL RESOLVE | 2,5 | 2,94 | -15,1 % | C.KEANE | 153/1/3884/12 |
-| 6 | SEGALL | 5 | 5,56 | -10,1 % | PC.BOUDOT | 8/2/116/43 |
-| 5 | BALZAC | 7,9 | 8,99 | -12,1 % | C.SOUMILLON | 7/650/541/– |
-| 3 | BASHA | 9,9 | 12,22 | -19,0 % | C.DEMURO | 1/10/3/5 |
-| 4 | PATHEIN | 10 | 11,83 | -15,5 % | M.BARZALONA 5e | 2/457/3489/– |
-| 2 | THING FOR THE HOT | 15 | 21,37 | -29,8 % | A.MADAMET | 10/124/324/124 |
-| 9 | TAKE ME ON | 15 | 19,92 | -24,7 % | M.GUYON 4e | 4/19/3308/33 |
-| 1 | BLUE COURVOISIER | 17 | 24,75 | -31,3 % | T.PICCONE | 9/815/–/– |
-| 8 | GAZI | 24 | 32,79 | -26,8 % | A.POUCHIN | 6/2/3/18 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 7 | REGAL RESOLVE | 2,6 | 2,5 | 3,04 | -14,6 % | C.KEANE | 153/1/3884/12 |
+| 6 | SEGALL | 4,8 | 5 | 5,29 | -9,3 % | PC.BOUDOT | 8/2/116/43 |
+| 4 | PATHEIN | 8,1 | 10 | 9,62 | -15,8 % | M.BARZALONA 5e | 2/457/3489/– |
+| 5 | BALZAC | 8,4 | 7,9 | 9,61 | -12,6 % | C.SOUMILLON | 7/650/541/– |
+| 3 | BASHA | 11 | 9,9 | 13,77 | -20,1 % | C.DEMURO | 1/10/3/5 |
+| 9 | TAKE ME ON | 14 | 15 | 18,28 | -23,4 % | M.GUYON 4e | 4/19/3308/33 |
+| 1 | BLUE COURVOISIER | 17 | 17 | 24,63 | -31,0 % | T.PICCONE | 9/815/–/– |
+| 2 | THING FOR THE HOT | 20 | 15 | 28,41 | -29,6 % | A.MADAMET | 10/124/324/124 |
+| 8 | GAZI | 20 | 24 | 27,72 | -27,8 % | A.POUCHIN | 6/2/3/18 |
 
 ### 8. PRIX DE LA COLLERAIE
 
