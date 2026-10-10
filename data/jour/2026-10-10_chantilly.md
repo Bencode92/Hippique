@@ -117,23 +117,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DE LA COLLERAIE
 
-*17h52 · plat · 1800 m · 16 partants · cotes à T−20:55*
+*17h52 · plat · 1800 m · 16 partants · cotes à T−16:55*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 11 | UTXA | 6 | 9,1 | 5,66 | **+5,9 %** | M.BARZALONA 5e | 2/56/3146/153 |
-| 10 | MARQUES | 7,8 | 6,7 | 9,52 | -18,1 % | M.GRANDIN | 3/156/8/1039 |
-| 5 | SIMANCAS | 7,9 | 10 | 8,19 | -3,5 % | L.BAILS | 77/152/28/238 |
-| 3 | NOCE DE RUBIS | 8,5 | 8,3 | 11,00 | -22,7 % | A.HAMELIN | 22/47/27/1704 |
-| 15 | ROMANCE MARINE | 9,7 | 9,3 | 12,09 | -19,8 % | A.MADAMET | 10/74/1036/17 |
-| 1 | TROPHANE | 12 | 13 | 12,14 | -1,1 % | M.VELON | 28/59/125/1739 |
-| 9 | SILILLY | 13 | 10 | 18,11 | -28,2 % | A.LEMAITRE | 11/341/1765/2707 |
-| 4 | KOYA | 17 | 25 | 23,70 | -28,3 % | M.PROTTI | 30/6/85/300 |
-| 7 | AURA | 17 | 17 | 22,67 | -25,0 % | C.DEMURO | 1/16/1520/4 |
-| 12 | RUBENESQUE | 18 | 13 | 23,58 | -23,7 % | T.TRULLIER | 21/299/39/1598 |
-| 6 | RIGEL BLUE | 21 | 20 | 28,16 | -25,4 % | A.POUCHIN | 6/60/467/809 |
-| 14 | BELLA VITA | 21 | 17 | 26,38 | -20,4 % | E.HARDOUIN | 27/74/1144/1945 |
-| 8 | NONNABELLA | 24 | 37 | 32,84 | -26,9 % | T.BACHELOT | 16/48/900/2244 |
-| 16 | MARYCHA | 26 | 34 | 35,94 | -27,7 % | A.CRASTUS | 17/119/100/2462 |
-| 2 | FARFLIES | 27 | 25 | 37,54 | -28,1 % | E.VERHESTRAETEN | 53/12/3828/2825 |
-| 13 | L'ANNONCIADE | 40 | 52 | 58,21 | -31,3 % | C.LECOEUVRE | 13/310/757/514 |
+| 11 | UTXA | 5,4 | 9,1 | 6,26 | -13,7 % | M.BARZALONA 5e | 2/56/3146/153 |
+| 10 | MARQUES | 8,1 | 6,7 | 9,93 | -18,4 % | M.GRANDIN | 3/156/8/1039 |
+| 5 | SIMANCAS | 8,2 | 10 | 8,53 | -3,8 % | L.BAILS | 77/152/28/238 |
+| 3 | NOCE DE RUBIS | 8,7 | 8,3 | 11,28 | -22,9 % | A.HAMELIN | 22/47/27/1704 |
+| 15 | ROMANCE MARINE | 10 | 9,3 | 12,50 | -20,0 % | A.MADAMET | 10/74/1036/17 |
+| 1 | TROPHANE | 14 | 13 | 14,46 | -3,2 % | M.VELON | 28/59/125/1739 |
+| 9 | SILILLY | 14 | 10 | 19,71 | -29,0 % | A.LEMAITRE | 11/341/1765/2707 |
+| 4 | KOYA | 17 | 25 | 23,65 | -28,1 % | M.PROTTI | 30/6/85/300 |
+| 7 | AURA | 17 | 17 | 22,62 | -24,8 % | C.DEMURO | 1/16/1520/4 |
+| 12 | RUBENESQUE | 17 | 13 | 22,02 | -22,8 % | T.TRULLIER | 21/299/39/1598 |
+| 6 | RIGEL BLUE | 18 | 20 | 21,48 | -16,2 % | A.POUCHIN | 6/60/467/809 |
+| 16 | MARYCHA | 20 | 34 | 24,25 | -17,5 % | A.CRASTUS | 17/119/100/2462 |
+| 14 | BELLA VITA | 22 | 17 | 27,76 | -20,8 % | E.HARDOUIN | 27/74/1144/1945 |
+| 8 | NONNABELLA | 25 | 37 | 34,33 | -27,2 % | T.BACHELOT | 16/48/900/2244 |
+| 2 | FARFLIES | 31 | 25 | 43,77 | -29,2 % | E.VERHESTRAETEN | 53/12/3828/2825 |
+| 13 | L'ANNONCIADE | 44 | 52 | 64,49 | -31,8 % | C.LECOEUVRE | 13/310/757/514 |
