@@ -4,89 +4,89 @@
   "reunion": 4,
   "heure_depart": 1791645420000,
   "distance": 1800,
-  "scraped_at": "2026-10-10T17:07:45.141028+02:00",
-  "minutes_avant_depart": 9,
+  "scraped_at": "2026-10-10T17:12:25.574480+02:00",
+  "minutes_avant_depart": 5,
   "participants": [
     {
       "numPmu": 1,
       "nom": "BLUE COURVOISIER",
-      "cote_live": 18.0,
+      "cote_live": 7.9,
       "cote_reference": 17.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791644852000
+      "timestamp_cote": 1791645138000
     },
     {
       "numPmu": 2,
       "nom": "THING FOR THE HOT",
-      "cote_live": 25.0,
+      "cote_live": 35.0,
       "cote_reference": 20.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791644852000
+      "timestamp_cote": 1791645138000
     },
     {
       "numPmu": 3,
       "nom": "BASHA",
-      "cote_live": 5.7,
+      "cote_live": 7.1,
       "cote_reference": 10.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791644852000
+      "timestamp_cote": 1791645138000
     },
     {
       "numPmu": 4,
       "nom": "PATHEIN",
-      "cote_live": 11.0,
+      "cote_live": 5.6,
       "cote_reference": 8.1,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791644852000
+      "timestamp_cote": 1791645138000
     },
     {
       "numPmu": 5,
       "nom": "BALZAC",
-      "cote_live": 7.7,
+      "cote_live": 10.0,
       "cote_reference": 8.4,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791644852000
+      "timestamp_cote": 1791645138000
     },
     {
       "numPmu": 6,
       "nom": "SEGALL",
-      "cote_live": 4.8,
+      "cote_live": 4.2,
       "cote_reference": 4.6,
-      "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1791644852000
+      "tendance": "-",
+      "favoris": true,
+      "timestamp_cote": 1791645138000
     },
     {
       "numPmu": 7,
       "nom": "REGAL RESOLVE",
-      "cote_live": 3.3,
+      "cote_live": 4.6,
       "cote_reference": 2.7,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1791644852000
+      "favoris": false,
+      "timestamp_cote": 1791645138000
     },
     {
       "numPmu": 8,
       "nom": "GAZI",
-      "cote_live": 16.0,
+      "cote_live": 21.0,
       "cote_reference": 19.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791644852000
+      "timestamp_cote": 1791645138000
     },
     {
       "numPmu": 9,
       "nom": "TAKE ME ON",
-      "cote_live": 12.0,
+      "cote_live": 13.0,
       "cote_reference": 14.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791644852000
+      "timestamp_cote": 1791645138000
     }
   ],
   "hippodrome": "CHANTILLY",
@@ -179,6 +179,51 @@
         "7": 3.3,
         "8": 16.0,
         "9": 12.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-10T17:11:05.366222+02:00",
+      "minutes_avant_depart": 5.922512983333333,
+      "cotes": {
+        "1": 20.0,
+        "2": 33.0,
+        "3": 5.8,
+        "4": 14.0,
+        "5": 8.9,
+        "6": 3.4,
+        "7": 3.6,
+        "8": 17.0,
+        "9": 11.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-10T17:11:44.881829+02:00",
+      "minutes_avant_depart": 5.255844133333333,
+      "cotes": {
+        "1": 7.7,
+        "2": 42.0,
+        "3": 6.9,
+        "4": 5.4,
+        "5": 10.0,
+        "6": 4.3,
+        "7": 4.6,
+        "8": 21.0,
+        "9": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-10T17:12:25.574480+02:00",
+      "minutes_avant_depart": 4.580251766666667,
+      "cotes": {
+        "1": 7.9,
+        "2": 35.0,
+        "3": 7.1,
+        "4": 5.6,
+        "5": 10.0,
+        "6": 4.2,
+        "7": 4.6,
+        "8": 21.0,
+        "9": 13.0
       }
     }
   ]

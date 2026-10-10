@@ -101,19 +101,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX LE FABULEUX
 
-*17h17 · plat · 1800 m · 9 partants · cotes à T−9:15*
+*17h17 · plat · 1800 m · 9 partants · cotes à T−4:34*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 7 | REGAL RESOLVE | 3,3 | 2,5 | 4,12 | -20,0 % | C.KEANE | 153/1/3884/12 |
-| 6 | SEGALL | 4,8 | 5 | 5,25 | -8,6 % | PC.BOUDOT | 8/2/116/43 |
-| 3 | BASHA | 5,7 | 9,9 | 5,88 | -3,0 % | C.DEMURO | 1/10/3/5 |
-| 5 | BALZAC | 7,7 | 7,9 | 8,62 | -10,7 % | C.SOUMILLON | 7/650/541/– |
-| 4 | PATHEIN | 11 | 10 | 13,07 | -15,8 % | M.BARZALONA 5e | 2/457/3489/– |
-| 9 | TAKE ME ON | 12 | 15 | 15,13 | -20,7 % | M.GUYON 4e | 4/19/3308/33 |
-| 8 | GAZI | 16 | 24 | 21,21 | -24,6 % | A.POUCHIN | 6/2/3/18 |
-| 1 | BLUE COURVOISIER | 18 | 17 | 26,12 | -31,1 % | T.PICCONE | 9/815/–/– |
-| 2 | THING FOR THE HOT | 25 | 15 | 36,46 | -31,4 % | A.MADAMET | 10/124/324/124 |
+| 6 | SEGALL | 4,2 | 5 | 4,86 | -13,6 % | PC.BOUDOT | 8/2/116/43 |
+| 7 | REGAL RESOLVE | 4,6 | 2,5 | 5,35 | -14,0 % | C.KEANE | 153/1/3884/12 |
+| 4 | PATHEIN | 5,6 | 10 | 6,27 | -10,8 % | M.BARZALONA 5e | 2/457/3489/– |
+| 3 | BASHA | 7,1 | 9,9 | 7,58 | -6,3 % | C.DEMURO | 1/10/3/5 |
+| 1 | BLUE COURVOISIER | 7,9 | 17 | 9,14 | -13,6 % | T.PICCONE | 9/815/–/– |
+| 5 | BALZAC | 10 | 7,9 | 11,75 | -14,9 % | C.SOUMILLON | 7/650/541/– |
+| 9 | TAKE ME ON | 13 | 15 | 16,72 | -22,3 % | M.GUYON 4e | 4/19/3308/33 |
+| 8 | GAZI | 21 | 24 | 27,94 | -24,8 % | A.POUCHIN | 6/2/3/18 |
+| 2 | THING FOR THE HOT | 35 | 15 | 53,66 | -34,8 % | A.MADAMET | 10/124/324/124 |
 
 ### 8. PRIX DE LA COLLERAIE
 
