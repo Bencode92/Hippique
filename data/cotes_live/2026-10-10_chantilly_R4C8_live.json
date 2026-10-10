@@ -2,19 +2,19 @@
   "course": "PRIX DE LA COLLERAIE",
   "numero": 8,
   "reunion": 4,
-  "heure_depart": 1791647520000,
+  "heure_depart": 1791647700000,
   "distance": 1800,
-  "scraped_at": "2026-10-10T17:39:05.492869+02:00",
+  "scraped_at": "2026-10-10T17:42:05.205594+02:00",
   "minutes_avant_depart": 13,
   "participants": [
     {
       "numPmu": 1,
       "nom": "TROPHANE",
-      "cote_live": 14.0,
+      "cote_live": 15.0,
       "cote_reference": 12.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791646736000
+      "timestamp_cote": 1791646916000
     },
     {
       "numPmu": 2,
@@ -23,16 +23,16 @@
       "cote_reference": 25.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791646736000
+      "timestamp_cote": 1791646916000
     },
     {
       "numPmu": 3,
       "nom": "NOCE DE RUBIS",
-      "cote_live": 8.3,
+      "cote_live": 8.0,
       "cote_reference": 8.8,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791646736000
+      "timestamp_cote": 1791646916000
     },
     {
       "numPmu": 4,
@@ -41,16 +41,16 @@
       "cote_reference": 20.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791646736000
+      "timestamp_cote": 1791646916000
     },
     {
       "numPmu": 5,
       "nom": "SIMANCAS",
-      "cote_live": 8.6,
+      "cote_live": 8.3,
       "cote_reference": 6.9,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791646736000
+      "timestamp_cote": 1791646916000
     },
     {
       "numPmu": 6,
@@ -59,79 +59,79 @@
       "cote_reference": 22.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791646736000
+      "timestamp_cote": 1791646916000
     },
     {
       "numPmu": 8,
       "nom": "NONNABELLA",
-      "cote_live": 24.0,
+      "cote_live": 23.0,
       "cote_reference": 27.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791646736000
+      "timestamp_cote": 1791646916000
     },
     {
       "numPmu": 9,
       "nom": "SILILLY",
       "cote_live": 13.0,
       "cote_reference": 13.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791646736000
+      "timestamp_cote": 1791646916000
     },
     {
       "numPmu": 10,
       "nom": "MARQUES",
-      "cote_live": 7.0,
+      "cote_live": 7.1,
       "cote_reference": 6.8,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791646736000
+      "timestamp_cote": 1791646916000
     },
     {
       "numPmu": 11,
       "nom": "UTXA",
       "cote_live": 5.6,
       "cote_reference": 8.2,
-      "tendance": "",
+      "tendance": "+",
       "favoris": true,
-      "timestamp_cote": 1791646736000
+      "timestamp_cote": 1791646916000
     },
     {
       "numPmu": 12,
       "nom": "RUBENESQUE",
-      "cote_live": 18.0,
+      "cote_live": 19.0,
       "cote_reference": 16.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791646736000
+      "timestamp_cote": 1791646916000
     },
     {
       "numPmu": 13,
       "nom": "L'ANNONCIADE",
-      "cote_live": 48.0,
+      "cote_live": 45.0,
       "cote_reference": 34.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791646736000
+      "timestamp_cote": 1791646916000
     },
     {
       "numPmu": 14,
       "nom": "BELLA VITA",
-      "cote_live": 23.0,
+      "cote_live": 24.0,
       "cote_reference": 19.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791646736000
+      "timestamp_cote": 1791646916000
     },
     {
       "numPmu": 15,
       "nom": "ROMANCE MARINE",
-      "cote_live": 9.5,
+      "cote_live": 9.7,
       "cote_reference": 9.1,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791646736000
+      "timestamp_cote": 1791646916000
     },
     {
       "numPmu": 16,
@@ -140,7 +140,7 @@
       "cote_reference": 27.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791646736000
+      "timestamp_cote": 1791646916000
     }
   ],
   "hippodrome": "CHANTILLY",
@@ -247,6 +247,27 @@
         "13": 48.0,
         "14": 23.0,
         "15": 9.5,
+        "16": 22.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-10T17:42:05.205594+02:00",
+      "minutes_avant_depart": 12.921619283333333,
+      "cotes": {
+        "1": 15.0,
+        "2": 32.0,
+        "3": 8.0,
+        "4": 18.0,
+        "5": 8.3,
+        "6": 19.0,
+        "8": 23.0,
+        "9": 13.0,
+        "10": 7.1,
+        "11": 5.6,
+        "12": 19.0,
+        "13": 45.0,
+        "14": 24.0,
+        "15": 9.7,
         "16": 22.0
       }
     }

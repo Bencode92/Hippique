@@ -121,18 +121,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 11 | UTXA | 5,6 | 5,5 | 6,20 | -9,7 % | M.BARZALONA 5e | 2/56/3146/153 |
-| 10 | MARQUES | 7 | 7 | 8,31 | -15,7 % | M.GRANDIN | 3/156/8/1039 |
-| 3 | NOCE DE RUBIS | 8,3 | 8,2 | 10,13 | -18,1 % | A.HAMELIN | 22/47/27/1704 |
-| 5 | SIMANCAS | 8,6 | 8,7 | 9,32 | -7,7 % | L.BAILS | 77/152/28/238 |
-| 15 | ROMANCE MARINE | 9,5 | 9,6 | 11,18 | -15,0 % | A.MADAMET | 10/74/1036/17 |
-| 9 | SILILLY | 13 | 14 | 17,95 | -27,6 % | A.LEMAITRE | 11/341/1765/2707 |
-| 1 | TROPHANE | 14 | 15 | 15,02 | -6,8 % | M.VELON | 28/59/125/1739 |
-| 4 | KOYA | 18 | 18 | 26,31 | -31,6 % | M.PROTTI | 30/6/85/300 |
-| 12 | RUBENESQUE | 18 | 19 | 22,36 | -19,5 % | T.TRULLIER | 21/299/39/1598 |
-| 6 | RIGEL BLUE | 19 | 18 | 23,80 | -20,2 % | A.POUCHIN | 6/60/467/809 |
-| 16 | MARYCHA | 22 | 22 | 28,18 | -21,9 % | A.CRASTUS | 17/119/100/2462 |
-| 14 | BELLA VITA | 23 | 24 | 30,45 | -24,5 % | E.HARDOUIN | 27/74/1144/1945 |
-| 8 | NONNABELLA | 24 | 23 | 34,17 | -29,8 % | T.BACHELOT | 16/48/900/2244 |
-| 2 | FARFLIES | 32 | 32 | 47,38 | -32,5 % | E.VERHESTRAETEN | 53/12/3828/2825 |
-| 13 | L'ANNONCIADE | 48 | 46 | 70,78 | -32,2 % | C.LECOEUVRE | 13/310/757/514 |
+| 11 | UTXA | 5,6 | 5,5 | 6,19 | -9,6 % | M.BARZALONA 5e | 2/56/3146/153 |
+| 10 | MARQUES | 7,1 | 7 | 8,43 | -15,8 % | M.GRANDIN | 3/156/8/1039 |
+| 3 | NOCE DE RUBIS | 8 | 8,2 | 9,69 | -17,4 % | A.HAMELIN | 22/47/27/1704 |
+| 5 | SIMANCAS | 8,3 | 8,7 | 8,93 | -7,0 % | L.BAILS | 77/152/28/238 |
+| 15 | ROMANCE MARINE | 9,7 | 9,6 | 11,44 | -15,2 % | A.MADAMET | 10/74/1036/17 |
+| 9 | SILILLY | 13 | 14 | 17,92 | -27,5 % | A.LEMAITRE | 11/341/1765/2707 |
+| 1 | TROPHANE | 15 | 15 | 16,24 | -7,6 % | M.VELON | 28/59/125/1739 |
+| 4 | KOYA | 18 | 18 | 26,26 | -31,5 % | M.PROTTI | 30/6/85/300 |
+| 6 | RIGEL BLUE | 19 | 18 | 23,76 | -20,0 % | A.POUCHIN | 6/60/467/809 |
+| 12 | RUBENESQUE | 19 | 19 | 23,76 | -20,0 % | T.TRULLIER | 21/299/39/1598 |
+| 16 | MARYCHA | 22 | 22 | 28,13 | -21,8 % | A.CRASTUS | 17/119/100/2462 |
+| 8 | NONNABELLA | 23 | 23 | 32,49 | -29,2 % | T.BACHELOT | 16/48/900/2244 |
+| 14 | BELLA VITA | 24 | 24 | 31,91 | -24,8 % | E.HARDOUIN | 27/74/1144/1945 |
+| 2 | FARFLIES | 32 | 32 | 47,30 | -32,3 % | E.VERHESTRAETEN | 53/12/3828/2825 |
+| 13 | L'ANNONCIADE | 45 | 46 | 65,85 | -31,7 % | C.LECOEUVRE | 13/310/757/514 |
