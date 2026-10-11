@@ -88,47 +88,47 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 9 | MIMOSA DEVOL | 3,4 | K. THONNERIEUX |
-| 13 | MIRIANA DE BRAYE | 3,9 | D. BEKAERT |
-| 8 | MAGIC OHEM | 5,9 | E. GOUT |
-| 11 | MAGIC SYSTEM | 12 | Y.A. BRIAND |
-| 4 | MUSIC GEKA | 13 | S. STEFANO |
-| 5 | MATCHO D'AMAY | 17 | D. CINIER |
-| 2 | MAYENNE DU BOCAGE | 19 | J. UROZ |
-| 12 | MARCO POLO | 23 | E. BRIAND |
-| 10 | MADAME BUTTERFLY | 24 | LORENZO TALPO |
-| 14 | MADISON DE NIMES | 35 | N. JULIEN |
-| 7 | MISTER DE L'ETOILE | 46 | D. DESBORDES |
-| 1 | MAGIE D'ENOGAT | 70 | G. TOURON |
-| 3 | MARA DE LA CREUSE | 70 | N. CINIER |
+| 13 | MIRIANA DE BRAYE | 2,7 | D. BEKAERT |
+| 9 | MIMOSA DEVOL | 7,1 | K. THONNERIEUX |
+| 10 | MADAME BUTTERFLY | 7,2 | LORENZO TALPO |
+| 5 | MATCHO D'AMAY | 9,1 | D. CINIER |
+| 2 | MAYENNE DU BOCAGE | 11 | J. UROZ |
+| 4 | MUSIC GEKA | 16 | S. STEFANO |
+| 8 | MAGIC OHEM | 17 | E. GOUT |
+| 11 | MAGIC SYSTEM | 19 | Y.A. BRIAND |
+| 12 | MARCO POLO | 24 | E. BRIAND |
+| 7 | MISTER DE L'ETOILE | 28 | D. DESBORDES |
+| 14 | MADISON DE NIMES | 48 | N. JULIEN |
+| 1 | MAGIE D'ENOGAT | 53 | G. TOURON |
+| 3 | MARA DE LA CREUSE | 79 | N. CINIER |
 
 ### 7. PRIX CALAVON - PRIX LES GEANTS DE PAPIER
 
-*17h00 · plat · 2900 m · 5 partants · cotes de l'extraction*
+*17h05 · plat · 2900 m · 5 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | WUKOLINA | 1,3 | M.LEBAS | –/112/62/445 |
-| 5 | SYLVER SAMBA | 5,3 | L.URBANO AGUERO | –/88/252/450 |
+| 2 | WUKOLINA | 2,7 | M.LEBAS | –/112/62/445 |
+| 1 | JARDIN BLEU | 3,3 | F.GUY | –/88/8/930 |
+| 5 | SYLVER SAMBA | 4,1 | L.URBANO AGUERO | –/88/252/450 |
 | 6 | SUCCESS STORY | 8,4 | A.FERLAND | –/33/14/361 |
-| 1 | JARDIN BLEU | 10 | F.GUY | –/88/8/930 |
-| 3 | RUE DE SAVOIE | 118 | J.MAURER | –/261/131/2685 |
+| 3 | RUE DE SAVOIE | 9,2 | J.MAURER | –/261/131/2685 |
 
 ### 8. PRIX HYPERMARCHE AUCHAN CAVAILLON
 
-*17h30 · attelé · 2600 m · 12 partants · cotes de l'extraction*
+*17h35 · attelé · 2600 m · 12 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 12 | KEROS DES BAUX | 2,7 | D. BEKAERT |
-| 6 | KIF DE L'UNE | 6 | N. CINIER |
-| 11 | KHEOPS TURGOT | 7,4 | Y.A. BRIAND |
-| 2 | KOMANIA D'ABY | 10 | G. TOURON |
-| 3 | KLOE REBELLE | 10 | S. STEFANO |
-| 8 | KLEPPER DU LOIR | 12 | E. GOUT |
-| 7 | KINGSLEY | 17 | TH. ISSAUTIER |
-| 4 | JAMBEROO | 19 | E. BRIAND |
-| 5 | KOREANE DELICE | 32 | ST. CORBIN |
-| 10 | IBERICO | 32 | K. THONNERIEUX |
-| 1 | KALINKA DU HOME | 64 | D. CINIER |
-| 9 | ILLA VILLA | 97 | N. JULIEN |
+| 12 | KEROS DES BAUX | 1,8 | D. BEKAERT |
+| 11 | KHEOPS TURGOT | 6,6 | Y.A. BRIAND |
+| 3 | KLOE REBELLE | 9 | S. STEFANO |
+| 2 | KOMANIA D'ABY | 11 | G. TOURON |
+| 6 | KIF DE L'UNE | 22 | N. CINIER |
+| 5 | KOREANE DELICE | 26 | ST. CORBIN |
+| 8 | KLEPPER DU LOIR | 28 | E. GOUT |
+| 4 | JAMBEROO | 30 | E. BRIAND |
+| 1 | KALINKA DU HOME | 37 | D. CINIER |
+| 9 | ILLA VILLA | 43 | N. JULIEN |
+| 7 | KINGSLEY | 43 | TH. ISSAUTIER |
+| 10 | IBERICO | 62 | K. THONNERIEUX |

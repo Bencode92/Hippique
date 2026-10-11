@@ -8,21 +8,20 @@
 
 ### 4. QUEEN SALE 2011 I
 
-*20h25 · plat · 1600 m · 11 partants · cotes de l'extraction*
+*20h25 · plat · 1600 m · 10 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 7 | BEAUTIFUL MIND | 2,2 | LEO NICOLAS ACUNA |
-| 10 | SPACEMAN | 2,2 | KEVIN BANEGAS |
-| 5 | BUIN | 4,4 | GUSTAVO EMILIANO CALVENTE |
-| 1 | CATALINO SI | – | RAMIRO RODOLFO BARRUECO |
-| 2 | DANIEL TRACY | – | JUAN PABLO PAOLONI |
-| 3 | DON KAZUMA | – | IVAN MONASTEROLO |
+| 2 | DANIEL TRACY | 2,4 | JUAN PABLO PAOLONI |
+| 3 | DON KAZUMA | 2,7 | IVAN MONASTEROLO |
+| 11 | VASO SAGRADO | 3,7 | OSVALDO ADRIAN ALDERETE |
+| 1 | CATALINO SI | 7,4 | RAMIRO RODOLFO BARRUECO |
+| 7 | BEAUTIFUL MIND | 7,4 | LEO NICOLAS ACUNA |
+| 10 | SPACEMAN | 7,4 | KEVIN BANEGAS |
+| 5 | BUIN | 14 | GUSTAVO EMILIANO CALVENTE |
 | 4 | FIRENZE BEACH | – | JUAN CRUZ VILLAGRA |
 | 6 | LEGATUS | – | WILLIAM PEREYRA |
 | 8 | ROYAL STRAIGHT | – | ADRIAN MAXIMILIANO GIANNETTI |
-| 9 | FOGO AZUL | – | BRIAN RODRIGO ENRIQUE |
-| 11 | VASO SAGRADO | – | OSVALDO ADRIAN ALDERETE |
 
 ### 5. BOUCLETTE GULCH 2010
 
@@ -30,11 +29,11 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 6 | LAGUNA CANDY | 1,3 | JORGE MARCELINO ORTIZ |
-| 5 | ESTERCITA BOONE | 2,6 | PABLO DAMIAN CARRIZO |
+| 2 | GRAN CUIDADOSA | 2,4 | MARTIN JAVIER VALLE |
+| 3 | ILOCA | 2,4 | KEVIN BANEGAS |
+| 6 | LAGUNA CANDY | 4,8 | JORGE MARCELINO ORTIZ |
+| 5 | ESTERCITA BOONE | 9,7 | PABLO DAMIAN CARRIZO |
 | 1 | FLOR DEL VALLE | – | IVAN MONASTEROLO |
-| 2 | GRAN CUIDADOSA | – | MARTIN JAVIER VALLE |
-| 3 | ILOCA | – | KEVIN BANEGAS |
 | 4 | INTENSE BEAUTY | – | JUAN PABLO SILVA |
 | 7 | BLUE LAGOON | – | ENRIQUE CARLOS E. WEISHEIM |
 | 8 | LIDA | – | GONZALO DAMIAN BORDA |
@@ -43,14 +42,13 @@
 
 ### 6. PURA MAGIA 2014/15
 
-*21h25 · plat · 1000 m · 6 partants · cotes de l'extraction*
+*21h25 · plat · 1000 m · 5 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 5 | ALBALINA | 2 | JORGE MARCELINO ORTIZ |
-| 3 | DONA TAIFA | 3 | BRIAN RODRIGO ENRIQUE |
-| 6 | TEBA | 3 | NON COMMUNIQUE |
-| 1 | DE ESCAPADA | – | AXEL EXEQUIEL BANEGAS |
+| 3 | DONA TAIFA | 1,6 | BRIAN RODRIGO ENRIQUE |
+| 5 | ALBALINA | 3,2 | JORGE MARCELINO ORTIZ |
+| 6 | TEBA | 4,8 | NON COMMUNIQUE |
 | 2 | DONA CUCHA | – | KEVIN BANEGAS |
 | 4 | ECOUTE MOI | – | LAUTARO EMMANUEL BALMACEDA |
 
@@ -75,22 +73,21 @@
 
 ### 8. YUMARA CHICA 2021
 
-*22h25 · plat · 1200 m · 12 partants · cotes de l'extraction*
+*22h25 · plat · 1200 m · 11 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 4 | FUTURE MIND | 1,3 | KEVIN BANEGAS | –/–/–/– |
-| 5 | BEST SELLER | 4,4 | NON COMMUNIQUE 1 | –/–/–/– |
-| 6 | MUSIC DAY | 6,6 | NON COMMUNIQUE 2 | –/–/–/– |
+| 4 | FUTURE MIND | 2,5 | KEVIN BANEGAS | –/–/–/– |
+| 5 | BEST SELLER | 2,7 | NON COMMUNIQUE 1 | –/–/–/– |
+| 12 | UNAFRAID | 6 | GONZALO DAMIAN BORDA | –/–/–/– |
+| 2 | CORAZON FEDERAL | 9 | ADRIAN MAXIMILIANO GIANNETTI | –/–/–/– |
+| 9 | GO DANCING GO | 9 | IVAN MONASTEROLO | –/–/–/– |
 | 1 | CHAMPI RIM | – | ANIBAL JOSE CABRERA | –/–/–/– |
-| 2 | CORAZON FEDERAL | – | ADRIAN MAXIMILIANO GIANNETTI | –/–/–/– |
 | 3 | EL DESCAMISADO | – | RODRIGO GONZALO BLANCO | –/–/–/– |
 | 7 | BABY DADDY | – | LUCAS FERNANDO MARTINEZ | –/–/–/– |
 | 8 | PASOS AL COSTADO | – | JUAN CRUZ VILLAGRA | –/–/–/– |
-| 9 | GO DANCING GO | – | IVAN MONASTEROLO | –/–/–/– |
 | 10 | SENOR MIGUEL | – | WILLIAM PEREYRA | –/–/–/– |
 | 11 | SIXTIES PEN | – | ENRIQUE CARLOS E. WEISHEIM | –/–/–/– |
-| 12 | UNAFRAID | – | GONZALO DAMIAN BORDA | –/–/–/– |
 
 ### 9. FAIR VALUE (BRZ) 2017
 
@@ -98,24 +95,23 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | NOSTALGIA FRANK | 1,6 | IVAN MONASTEROLO | –/–/–/– |
-| 6 | THALIA | 3,3 | MARIA EUGENIA SCHNEIDER | –/–/–/– |
-| 5 | CASI TODA CANDY RIDE | 5,3 | KEVIN BANEGAS | –/–/–/– |
-| 3 | NURBANU | 40 | JUAN PABLO PAOLONI | –/–/–/– |
+| 2 | NOSTALGIA FRANK | 1,9 | IVAN MONASTEROLO | –/–/–/– |
+| 6 | THALIA | 2,1 | MARIA EUGENIA SCHNEIDER | –/–/–/– |
+| 5 | CASI TODA CANDY RIDE | 7,2 | KEVIN BANEGAS | –/–/–/– |
+| 3 | NURBANU | 54 | JUAN PABLO PAOLONI | –/–/–/– |
 | 1 | LA CHINA S | – | CRISTIAN ERNESTO VELAZQUEZ | –/–/–/– |
 | 4 | SANKY | – | PABLO DAMIAN CARRIZO | –/–/–/– |
 | 7 | AGUA KORAL | – | WILSON ROSARIO MOREYRA | –/–/–/– |
 
 ### 10. PERSONAL DOT 2012
 
-*23h25 · plat · 1000 m · 7 partants · cotes de l'extraction*
+*23h25 · plat · 1000 m · 6 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 6 | WI MILAGROS | 1,9 | NON COMMUNIQUE |
-| 7 | DONA ROSA | 1,9 | GONZALO DAMIAN BORDA |
-| 5 | FORTY DESEADA | 7,9 | JUAN PABLO PAOLONI |
+| 5 | FORTY DESEADA | 1,4 | JUAN PABLO PAOLONI |
+| 4 | SANTA CALMA | 5,3 | MAURICIO EMANUEL VILLARUEL |
+| 6 | WI MILAGROS | 8 | NON COMMUNIQUE |
+| 7 | DONA ROSA | 8 | GONZALO DAMIAN BORDA |
 | 1 | ICONO HIT | – | FERNANDO MIGUEL VILCHES |
-| 2 | LAPULI | – | DANIEL EDUARDO ARIAS |
 | 3 | NISA | – | WILSON ROSARIO MOREYRA |
-| 4 | SANTA CALMA | – | MAURICIO EMANUEL VILLARUEL |
