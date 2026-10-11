@@ -126,8 +126,8 @@
 | 4 | JEU INTERDIT | 3,8 | B. ROCHARD |
 | 5 | IROCKO STRYCK | 4,5 | F. CLOZIER |
 | 13 | JOYEUX DU VIVIEN | 9,2 | M. GRASSET |
-| 3 | IMPATIENTE NAY | 15 | P. GERAY |
 | 7 | INCREDIBLE GO | 15 | TH. DUCOS |
+| 3 | IMPATIENTE NAY | 15 | P. GERAY |
 | 1 | INVICTUS NAR | 23 | F. MARTY |
 | 11 | IBRA TEJY | 25 | M. CINIER |
 | 8 | IRRATI DUEM | 43 | PIERRICK LE MOEL |
@@ -138,18 +138,18 @@
 
 ### 8. GRAND PRIX DYNAVENA
 
-*14h50 · attelé · 2950 m · 11 partants · cotes de l'extraction*
+*14h54 · attelé · 2950 m · 11 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 7 | KANTO AVIS | 1,8 | B. ROCHARD |
-| 8 | ISTER MAN | 5,4 | J. CUOQ |
-| 4 | KARNAC WOOD | 7,3 | H. MONTHULE |
-| 11 | HUDO DU RUEL | 8,2 | PIERRICK LE MOEL |
-| 1 | KAVALEUR D'ENFER | 15 | M. CRIADO |
-| 10 | FAKIR MERITE | 31 | F. MARTY |
-| 9 | FILOU D'ANJOU | 33 | F. CLOZIER |
-| 5 | HARRY CARISAIE | 59 | E. AUDEBERT |
-| 6 | GRAND TRIO LUDOIS | 85 | S. LALOUM |
-| 2 | JACANA | 151 | Mme LANA HENRY |
-| 3 | HELIOS D'ELA | 247 | A. MARAIS |
+| 7 | KANTO AVIS | 1,9 | B. ROCHARD |
+| 4 | KARNAC WOOD | 4,7 | H. MONTHULE |
+| 11 | HUDO DU RUEL | 5,9 | PIERRICK LE MOEL |
+| 8 | ISTER MAN | 6,3 | J. CUOQ |
+| 1 | KAVALEUR D'ENFER | 18 | M. CRIADO |
+| 10 | FAKIR MERITE | 69 | F. MARTY |
+| 9 | FILOU D'ANJOU | 74 | F. CLOZIER |
+| 5 | HARRY CARISAIE | 179 | E. AUDEBERT |
+| 6 | GRAND TRIO LUDOIS | 234 | S. LALOUM |
+| 2 | JACANA | 323 | Mme LANA HENRY |
+| 3 | HELIOS D'ELA | 498 | A. MARAIS |

@@ -120,21 +120,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DU TECHNOPOLE DE BRABOIS
 
-*14h26 · plat · 2500 m · 11 partants · cotes de l'extraction*
+*14h28 · plat · 2500 m · 11 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 2 | GOOD TIMING | 4,5 | 5,10 | -11,8 % | M.CALBRIX | 97/37/2700/2028 |
-| 1 | OTERO | 5,2 | 6,24 | -16,7 % | P. BAZIRE | 58/45/4/201 |
-| 4 | MISS HENGE | 6,9 | 8,64 | -20,2 % | J.MOUTARD | 61/241/228/1756 |
-| 7 | YUNA | 8,1 | 9,76 | -17,0 % | F.VALLE SKAR | 35/242/541/488 |
-| 5 | MELKISEDEK | 11 | 13,37 | -17,7 % | A.HAMELIN | 22/23/58/566 |
-| 3 | WILDSTAR | 12 | 14,17 | -15,3 % | L.PLOMMEE | 31/69/1641/1685 |
-| 8 | OCTOBRE ROSE | 12 | 15,49 | -22,5 % | C.PACAUT | 48/157/884/147 |
-| 9 | ANNALIGHT | 12 | 14,81 | -19,0 % | L.GROSSO | 136/127/4/1396 |
-| 11 | L'ESPELETTE | 15 | 20,13 | -25,5 % | L.DELEAU | 251/378/1152/1043 |
-| 10 | BIRDY SUN | 21 | 28,43 | -26,1 % | D.SANTIAGO | 15/512/1591/1553 |
-| 6 | PEGASUS D'AZUR | 41 | 62,15 | -34,0 % | B.FLANDRIN | 102/307/2787/3847 |
+| 4 | MISS HENGE | 3,9 | 4,48 | -13,0 % | J.MOUTARD | 61/241/228/1756 |
+| 2 | GOOD TIMING | 4 | 4,09 | -2,1 % | M.CALBRIX | 97/37/2700/2028 |
+| 7 | YUNA | 6,6 | 7,07 | -6,7 % | F.VALLE SKAR | 35/242/541/488 |
+| 1 | OTERO | 7,3 | 8,83 | -17,3 % | P. BAZIRE | 58/45/4/201 |
+| 5 | MELKISEDEK | 10 | 12,47 | -19,8 % | A.HAMELIN | 22/23/58/566 |
+| 9 | ANNALIGHT | 12 | 14,78 | -18,8 % | L.GROSSO | 136/127/4/1396 |
+| 11 | L'ESPELETTE | 19 | 25,28 | -24,8 % | L.DELEAU | 251/378/1152/1043 |
+| 8 | OCTOBRE ROSE | 23 | 31,51 | -27,0 % | C.PACAUT | 48/157/884/147 |
+| 10 | BIRDY SUN | 26 | 36,26 | -28,3 % | D.SANTIAGO | 15/512/1591/1553 |
+| 3 | WILDSTAR | 27 | 37,85 | -28,7 % | L.PLOMMEE | 31/69/1641/1685 |
+| 6 | PEGASUS D'AZUR | 92 | 153,65 | -40,1 % | B.FLANDRIN | 102/307/2787/3847 |
 
 ### 8. PRIX DE LA PLACE CARRIERE
 
@@ -142,15 +142,15 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 9 | BATESCA | 4,8 | 5,14 | -6,6 % | A.HAMELIN | 22/67/34/182 |
-| 6 | QUELLA | 6,5 | 7,51 | -13,5 % | G.ROTH LE VAILLANT | 130/227/115/1840 |
-| 5 | KNOSSINGTON | 6,6 | 7,47 | -11,7 % | F.VALLE SKAR | 35/275/24/854 |
-| 1 | VERDANSK | 8,2 | 8,14 | **+0,7 %** | D.SANTIAGO | 15/472/563/1303 |
-| 8 | NIKULYA FAL | 9,5 | 11,92 | -20,3 % | L.PLOMMEE | 31/69/34/2805 |
-| 4 | NO TIME | 12 | 12,63 | -5,0 % | C.BELMONT | 171/108/22/749 |
-| 12 | WILMOT | 14 | 16,18 | -13,5 % | L.GROSSO | 136/210/3102/1619 |
-| 2 | MAAVAH | 16 | 21,04 | -23,9 % | P.BAZIRE | 58/275/289/992 |
-| 10 | YOU'VE GOT SAIL | 17 | 21,57 | -21,2 % | G.MEURY | 68/275/158/3312 |
-| 3 | FIREMAN | 18 | 24,14 | -25,4 % | T.PICCONE | 9/500/20/1481 |
-| 7 | GREY BELLE | 19 | 26,37 | -28,0 % | B.FLANDRIN | 102/365/33/698 |
-| 11 | BEST SIXTEEN | 38 | 56,54 | -32,8 % | M.RIEHL | 331/222/2185/4321 |
+| 5 | KNOSSINGTON | 4,5 | 5,16 | -12,9 % | F.VALLE SKAR | 35/275/24/854 |
+| 9 | BATESCA | 6,1 | 6,32 | -3,5 % | A.HAMELIN | 22/67/34/182 |
+| 1 | VERDANSK | 7,4 | 7,87 | -6,0 % | D.SANTIAGO | 15/472/563/1303 |
+| 6 | QUELLA | 8,2 | 10,73 | -23,6 % | G.ROTH LE VAILLANT | 130/227/115/1840 |
+| 8 | NIKULYA FAL | 9,9 | 12,52 | -21,0 % | L.PLOMMEE | 31/69/34/2805 |
+| 2 | MAAVAH | 14 | 18,84 | -25,7 % | P.BAZIRE | 58/275/289/992 |
+| 3 | FIREMAN | 14 | 17,22 | -18,7 % | T.PICCONE | 9/500/20/1481 |
+| 12 | WILMOT | 14 | 17,70 | -20,9 % | L.GROSSO | 136/210/3102/1619 |
+| 4 | NO TIME | 17 | 19,77 | -14,0 % | C.BELMONT | 171/108/22/749 |
+| 10 | YOU'VE GOT SAIL | 19 | 24,56 | -22,6 % | G.MEURY | 68/275/158/3312 |
+| 7 | GREY BELLE | 23 | 36,09 | -36,3 % | B.FLANDRIN | 102/365/33/698 |
+| 11 | BEST SIXTEEN | 26 | 38,67 | -32,8 % | M.RIEHL | 331/222/2185/4321 |
