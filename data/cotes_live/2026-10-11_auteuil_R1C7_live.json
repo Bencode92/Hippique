@@ -4,35 +4,35 @@
   "reunion": 1,
   "heure_depart": 1791733800000,
   "distance": 4300,
-  "scraped_at": "2026-10-11T17:20:31.010133+02:00",
-  "minutes_avant_depart": 29,
+  "scraped_at": "2026-10-11T17:25:09.581656+02:00",
+  "minutes_avant_depart": 25,
   "participants": [
     {
       "numPmu": 1,
       "nom": "LOSANGE BLEU",
-      "cote_live": 3.0,
+      "cote_live": 2.9,
       "cote_reference": 3.0,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791732024000
+      "timestamp_cote": 1791732288000
     },
     {
       "numPmu": 2,
       "nom": "IT'S WIN O'CLOCK",
       "cote_live": 17.0,
       "cote_reference": 17.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791732024000
+      "timestamp_cote": 1791732288000
     },
     {
       "numPmu": 3,
       "nom": "KIVALA DU BERLAIS",
       "cote_live": 20.0,
       "cote_reference": 20.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791732024000
+      "timestamp_cote": 1791732288000
     },
     {
       "numPmu": 4,
@@ -41,7 +41,7 @@
       "cote_reference": 7.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791732024000
+      "timestamp_cote": 1791732288000
     },
     {
       "numPmu": 5,
@@ -50,34 +50,34 @@
       "cote_reference": 2.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791732024000
+      "timestamp_cote": 1791732288000
     },
     {
       "numPmu": 6,
       "nom": "ZARAKHAN",
       "cote_live": 13.0,
       "cote_reference": 13.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791732024000
+      "timestamp_cote": 1791732288000
     },
     {
       "numPmu": 7,
       "nom": "JET BLUE",
       "cote_live": 21.0,
       "cote_reference": 21.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791732024000
+      "timestamp_cote": 1791732288000
     },
     {
       "numPmu": 8,
       "nom": "COEUR D'AMOUR",
       "cote_live": 13.0,
       "cote_reference": 13.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791732024000
+      "timestamp_cote": 1791732288000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -87,6 +87,20 @@
       "minutes_avant_depart": 29.496107400000003,
       "cotes": {
         "1": 3.0,
+        "2": 17.0,
+        "3": 20.0,
+        "4": 7.1,
+        "5": 2.7,
+        "6": 13.0,
+        "7": 21.0,
+        "8": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-11T17:25:09.581656+02:00",
+      "minutes_avant_depart": 24.844091600000002,
+      "cotes": {
+        "1": 2.9,
         "2": 17.0,
         "3": 20.0,
         "4": 7.1,
