@@ -4,44 +4,44 @@
   "reunion": 1,
   "heure_depart": 1791721980000,
   "distance": 3600,
-  "scraped_at": "2026-10-11T14:07:55.905170+02:00",
-  "minutes_avant_depart": 25,
+  "scraped_at": "2026-10-11T14:12:35.768680+02:00",
+  "minutes_avant_depart": 20,
   "participants": [
     {
       "numPmu": 1,
       "nom": "SUNNY FIGHT",
-      "cote_live": 31.0,
+      "cote_live": 32.0,
       "cote_reference": 30.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791720458000
+      "timestamp_cote": 1791720744000
     },
     {
       "numPmu": 2,
       "nom": "LA GARDE CONTRE",
-      "cote_live": 4.3,
+      "cote_live": 4.4,
       "cote_reference": 4.3,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1791720458000
+      "favoris": false,
+      "timestamp_cote": 1791720744000
     },
     {
       "numPmu": 3,
       "nom": "PLUME ADAM'S",
-      "cote_live": 8.5,
+      "cote_live": 8.3,
       "cote_reference": 8.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791720458000
+      "timestamp_cote": 1791720744000
     },
     {
       "numPmu": 4,
       "nom": "CHEZ CASTEL",
-      "cote_live": 23.0,
+      "cote_live": 24.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791720458000
+      "timestamp_cote": 1791720744000
     },
     {
       "numPmu": 6,
@@ -50,7 +50,7 @@
       "cote_reference": 7.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791720458000
+      "timestamp_cote": 1791720744000
     },
     {
       "numPmu": 7,
@@ -59,34 +59,34 @@
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791720458000
+      "timestamp_cote": 1791720744000
     },
     {
       "numPmu": 8,
       "nom": "MAGIADAME",
-      "cote_live": 4.3,
+      "cote_live": 4.2,
       "cote_reference": 4.3,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791720458000
+      "timestamp_cote": 1791720744000
     },
     {
       "numPmu": 9,
       "nom": "NOISETTE DE SIVOLA",
-      "cote_live": 58.0,
+      "cote_live": 60.0,
       "cote_reference": 59.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791720458000
+      "timestamp_cote": 1791720744000
     },
     {
       "numPmu": 10,
       "nom": "NIGHT AFTER STAR",
-      "cote_live": 47.0,
+      "cote_live": 48.0,
       "cote_reference": 45.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791720458000
+      "timestamp_cote": 1791720744000
     },
     {
       "numPmu": 11,
@@ -95,16 +95,16 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791720458000
+      "timestamp_cote": 1791720744000
     },
     {
       "numPmu": 12,
       "nom": "IRENE HAS",
-      "cote_live": 15.0,
+      "cote_live": 14.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791720458000
+      "timestamp_cote": 1791720744000
     },
     {
       "numPmu": 13,
@@ -113,7 +113,7 @@
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791720458000
+      "timestamp_cote": 1791720744000
     },
     {
       "numPmu": 14,
@@ -122,7 +122,7 @@
       "cote_reference": 32.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791720458000
+      "timestamp_cote": 1791720744000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -161,6 +161,25 @@
         "10": 47.0,
         "11": 12.0,
         "12": 15.0,
+        "13": 16.0,
+        "14": 33.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-11T14:12:35.768680+02:00",
+      "minutes_avant_depart": 20.4098238,
+      "cotes": {
+        "1": 32.0,
+        "2": 4.4,
+        "3": 8.3,
+        "4": 24.0,
+        "6": 8.1,
+        "7": 12.0,
+        "8": 4.2,
+        "9": 60.0,
+        "10": 48.0,
+        "11": 12.0,
+        "12": 14.0,
         "13": 16.0,
         "14": 33.0
       }
