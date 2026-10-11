@@ -4,116 +4,116 @@
   "reunion": 6,
   "heure_depart": 1791732720000,
   "distance": 1800,
-  "scraped_at": "2026-10-11T17:31:50.060625+02:00",
-  "minutes_avant_depart": 0,
+  "scraped_at": "2026-10-11T17:34:30.119940+02:00",
+  "minutes_avant_depart": -2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "CATHERINE LA MER",
       "cote_live": 10.0,
       "cote_reference": 11.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791732700000
+      "timestamp_cote": 1791732770000
     },
     {
       "numPmu": 2,
       "nom": "NIGHT MARY",
-      "cote_live": 25.0,
+      "cote_live": 28.0,
       "cote_reference": 13.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791732700000
+      "timestamp_cote": 1791732770000
     },
     {
       "numPmu": 3,
       "nom": "CAPITOL HILL",
       "cote_live": 10.0,
       "cote_reference": 9.0,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791732700000
+      "timestamp_cote": 1791732770000
     },
     {
       "numPmu": 4,
       "nom": "JOJO FANTAISIE",
-      "cote_live": 4.4,
+      "cote_live": 5.9,
       "cote_reference": 6.5,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791732700000
+      "timestamp_cote": 1791732770000
     },
     {
       "numPmu": 5,
       "nom": "SAINT LAURENT",
-      "cote_live": 15.0,
+      "cote_live": 17.0,
       "cote_reference": 19.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791732700000
+      "timestamp_cote": 1791732770000
     },
     {
       "numPmu": 6,
       "nom": "PURPLE DAHLIA",
       "cote_live": 43.0,
       "cote_reference": 40.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791732700000
+      "timestamp_cote": 1791732770000
     },
     {
       "numPmu": 7,
       "nom": "AGNESI",
-      "cote_live": 6.6,
+      "cote_live": 4.2,
       "cote_reference": 15.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791732700000
+      "timestamp_cote": 1791732770000
     },
     {
       "numPmu": 8,
       "nom": "ANAHEIM",
-      "cote_live": 8.5,
+      "cote_live": 10.0,
       "cote_reference": 4.2,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791732700000
+      "timestamp_cote": 1791732770000
     },
     {
       "numPmu": 9,
       "nom": "ON THE DOUBLE",
-      "cote_live": 24.0,
+      "cote_live": 15.0,
       "cote_reference": 18.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791732700000
+      "timestamp_cote": 1791732770000
     },
     {
       "numPmu": 11,
       "nom": "FIRST LADY STAR",
       "cote_live": 4.0,
       "cote_reference": 4.9,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": true,
-      "timestamp_cote": 1791732700000
+      "timestamp_cote": 1791732770000
     },
     {
       "numPmu": 13,
       "nom": "TEMADIVA",
-      "cote_live": 42.0,
+      "cote_live": 61.0,
       "cote_reference": 21.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791732700000
+      "timestamp_cote": 1791732770000
     },
     {
       "numPmu": 14,
       "nom": "NANALA",
-      "cote_live": 67.0,
+      "cote_live": 105.0,
       "cote_reference": 31.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791732700000
+      "timestamp_cote": 1791732770000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -387,6 +387,78 @@
         "11": 4.0,
         "13": 42.0,
         "14": 67.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-11T17:32:29.761758+02:00",
+      "minutes_avant_depart": -0.4892655166666667,
+      "cotes": {
+        "1": 10.0,
+        "2": 25.0,
+        "3": 11.0,
+        "4": 5.1,
+        "5": 17.0,
+        "6": 45.0,
+        "7": 6.3,
+        "8": 8.8,
+        "9": 17.0,
+        "11": 3.6,
+        "13": 50.0,
+        "14": 80.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-11T17:33:10.044912+02:00",
+      "minutes_avant_depart": -1.1559341333333333,
+      "cotes": {
+        "1": 10.0,
+        "2": 28.0,
+        "3": 10.0,
+        "4": 5.9,
+        "5": 17.0,
+        "6": 43.0,
+        "7": 4.2,
+        "8": 10.0,
+        "9": 15.0,
+        "11": 4.0,
+        "13": 61.0,
+        "14": 105.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-11T17:33:50.568733+02:00",
+      "minutes_avant_depart": -1.8328473166666666,
+      "cotes": {
+        "1": 10.0,
+        "2": 28.0,
+        "3": 10.0,
+        "4": 5.9,
+        "5": 17.0,
+        "6": 43.0,
+        "7": 4.2,
+        "8": 10.0,
+        "9": 15.0,
+        "11": 4.0,
+        "13": 61.0,
+        "14": 105.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-11T17:34:30.119940+02:00",
+      "minutes_avant_depart": -2.489272166666667,
+      "cotes": {
+        "1": 10.0,
+        "2": 28.0,
+        "3": 10.0,
+        "4": 5.9,
+        "5": 17.0,
+        "6": 43.0,
+        "7": 4.2,
+        "8": 10.0,
+        "9": 15.0,
+        "11": 4.0,
+        "13": 61.0,
+        "14": 105.0
       }
     }
   ]
