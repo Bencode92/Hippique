@@ -4,107 +4,107 @@
   "reunion": 6,
   "heure_depart": 1791730020000,
   "distance": 1800,
-  "scraped_at": "2026-10-11T16:38:29.634701+02:00",
-  "minutes_avant_depart": 9,
+  "scraped_at": "2026-10-11T16:41:09.538187+02:00",
+  "minutes_avant_depart": 6,
   "participants": [
     {
       "numPmu": 1,
       "nom": "SECRET FEELING",
-      "cote_live": 12.0,
+      "cote_live": 13.0,
       "cote_reference": 11.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791729493000
+      "timestamp_cote": 1791729647000
     },
     {
       "numPmu": 2,
       "nom": "SPIRIT GREY",
-      "cote_live": 5.4,
+      "cote_live": 4.3,
       "cote_reference": 6.1,
-      "tendance": "+",
+      "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791729493000
+      "timestamp_cote": 1791729647000
     },
     {
       "numPmu": 3,
       "nom": "MANDOKI",
-      "cote_live": 8.7,
+      "cote_live": 7.2,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791729493000
+      "timestamp_cote": 1791729647000
     },
     {
       "numPmu": 4,
       "nom": "COTAI HERO",
-      "cote_live": 16.0,
+      "cote_live": 19.0,
       "cote_reference": 14.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791729493000
+      "timestamp_cote": 1791729647000
     },
     {
       "numPmu": 5,
       "nom": "IRELIA",
-      "cote_live": 14.0,
+      "cote_live": 16.0,
       "cote_reference": 26.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791729493000
+      "timestamp_cote": 1791729647000
     },
     {
       "numPmu": 6,
       "nom": "PACO",
-      "cote_live": 5.5,
+      "cote_live": 6.9,
       "cote_reference": 5.6,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791729493000
+      "timestamp_cote": 1791729647000
     },
     {
       "numPmu": 7,
       "nom": "BIG ENERGY",
-      "cote_live": 15.0,
+      "cote_live": 19.0,
       "cote_reference": 18.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791729493000
+      "timestamp_cote": 1791729647000
     },
     {
       "numPmu": 8,
       "nom": "RIDWAAN",
-      "cote_live": 12.0,
+      "cote_live": 14.0,
       "cote_reference": 8.9,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791729493000
+      "timestamp_cote": 1791729647000
     },
     {
       "numPmu": 9,
       "nom": "LORLISALSA",
-      "cote_live": 11.0,
+      "cote_live": 13.0,
       "cote_reference": 11.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791729493000
+      "timestamp_cote": 1791729647000
     },
     {
       "numPmu": 10,
       "nom": "TIME TO GALI",
-      "cote_live": 13.0,
+      "cote_live": 11.0,
       "cote_reference": 10.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791729493000
+      "timestamp_cote": 1791729647000
     },
     {
       "numPmu": 11,
       "nom": "MAESTRO CHOP",
-      "cote_live": 6.8,
+      "cote_live": 6.5,
       "cote_reference": 6.4,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791729493000
+      "timestamp_cote": 1791729647000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -141,6 +141,23 @@
         "9": 11.0,
         "10": 13.0,
         "11": 6.8
+      }
+    },
+    {
+      "scraped_at": "2026-10-11T16:41:09.538187+02:00",
+      "minutes_avant_depart": 5.844235866666667,
+      "cotes": {
+        "1": 13.0,
+        "2": 4.3,
+        "3": 7.2,
+        "4": 19.0,
+        "5": 16.0,
+        "6": 6.9,
+        "7": 19.0,
+        "8": 14.0,
+        "9": 13.0,
+        "10": 11.0,
+        "11": 6.5
       }
     }
   ]
