@@ -18,7 +18,11 @@ import json, os, sys, time, urllib.request, urllib.error
 from datetime import date, timedelta
 
 BASE = "https://online.turfinfo.api.pmu.fr/rest/client/61"
-OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "histo")
+# HISTO_DISCIPLINE=OBSTACLE → haies/steeple/cross dans data/histo_obstacle/ (le
+# plat reste seul dans data/histo/ : le test de la règle et les classements le lisent).
+OBSTACLE = os.environ.get("HISTO_DISCIPLINE", "").upper() == "OBSTACLE"
+DISCIPLINES = {"HAIE", "STEEPLECHASE", "CROSS"} if OBSTACLE else {"PLAT"}
+OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "histo_obstacle" if OBSTACLE else "histo")
 PAUSE = 0.12          # politesse envers l'API
 TIMEOUT = 25
 
@@ -70,7 +74,7 @@ def jour(d):
             continue
         hip = (r.get("hippodrome") or {}).get("libelleCourt") or "?"
         for c in r.get("courses", []):
-            if c.get("discipline") != "PLAT" or not c.get("arriveeDefinitive"):
+            if c.get("discipline") not in DISCIPLINES or not c.get("arriveeDefinitive"):
                 continue
             rn, cn = r.get("numOfficiel"), c.get("numOrdre")
             data = get(f"{BASE}/programme/{d.strftime('%d%m%Y')}/R{rn}/C{cn}/participants?specialisation=INTERNET")
@@ -87,6 +91,7 @@ def jour(d):
                 "alloc": c.get("montantPrix"),          # niveau de la course
                 "cat": c.get("categorieParticularite"),
                 "spe": c.get("specialite"),
+                "disc": c.get("discipline"),
                 "corde": c.get("corde"),
                 "np_dec": c.get("nombreDeclaresPartants"),
                 "parts": ps,
@@ -129,7 +134,7 @@ def main():
             el = time.time() - t0
             print(f"  {d}  cumul {tot} courses  ({el/60:.1f} min)", flush=True)
         d += timedelta(days=1)
-    print(f"\n{tot} courses FR plat écrites dans data/histo/ en {(time.time()-t0)/60:.1f} min")
+    print(f"\n{tot} courses FR {'obstacle' if OBSTACLE else 'plat'} écrites dans {os.path.relpath(OUT)}/ en {(time.time()-t0)/60:.1f} min")
 
 if __name__ == "__main__":
     main()
