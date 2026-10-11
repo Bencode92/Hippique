@@ -4,8 +4,8 @@
   "reunion": 1,
   "heure_depart": 1791731820000,
   "distance": 3600,
-  "scraped_at": "2026-10-11T16:55:49.774582+02:00",
-  "minutes_avant_depart": 21,
+  "scraped_at": "2026-10-11T16:59:49.771893+02:00",
+  "minutes_avant_depart": 17,
   "participants": [
     {
       "numPmu": 1,
@@ -14,25 +14,25 @@
       "cote_reference": 1.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791730542000
+      "timestamp_cote": 1791730784000
     },
     {
       "numPmu": 2,
       "nom": "NAVY DU SEUIL",
-      "cote_live": 9.7,
+      "cote_live": 9.6,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791730542000
+      "timestamp_cote": 1791730784000
     },
     {
       "numPmu": 3,
       "nom": "KING DALEE",
-      "cote_live": 34.0,
+      "cote_live": 33.0,
       "cote_reference": 39.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791730542000
+      "timestamp_cote": 1791730784000
     },
     {
       "numPmu": 4,
@@ -41,34 +41,34 @@
       "cote_reference": 57.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791730542000
+      "timestamp_cote": 1791730784000
     },
     {
       "numPmu": 5,
       "nom": "NOM D'UN CHIEN",
       "cote_live": 19.0,
       "cote_reference": 20.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791730542000
+      "timestamp_cote": 1791730784000
     },
     {
       "numPmu": 6,
       "nom": "VARSOVIE",
-      "cote_live": 12.0,
+      "cote_live": 10.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791730542000
+      "timestamp_cote": 1791730784000
     },
     {
       "numPmu": 7,
       "nom": "ROI DANAOS",
-      "cote_live": 33.0,
+      "cote_live": 32.0,
       "cote_reference": 32.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791730542000
+      "timestamp_cote": 1791730784000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -110,6 +110,19 @@
         "5": 19.0,
         "6": 12.0,
         "7": 33.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-11T16:59:49.771893+02:00",
+      "minutes_avant_depart": 17.177506683333334,
+      "cotes": {
+        "1": 1.2,
+        "2": 9.6,
+        "3": 33.0,
+        "4": 51.0,
+        "5": 19.0,
+        "6": 10.0,
+        "7": 32.0
       }
     }
   ]
