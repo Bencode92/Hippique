@@ -43,21 +43,21 @@
 
 ### 3. PRIX JOCKEY STAR - PRIX DE PARAY-LE-MONIAL
 
-*16h47 · plat · 1800 m · 11 partants · cotes à T−5:50*
+*16h47 · plat · 1800 m · 11 partants · cotes à T−3:10*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 2 | SPIRIT GREY | 4,3 | 5,5 | A.ORANI 3e | 5/33/187/231 |
-| 11 | MAESTRO CHOP | 6,5 | 6,9 | P.CHEYER | 109/252/6/1377 |
-| 6 | PACO | 6,9 | 4,8 | M.VELON | 28/28/7/49 |
-| 3 | MANDOKI | 7,2 | 10 | H.BOUTIN | 14/47/868/196 |
-| 10 | TIME TO GALI | 11 | 13 | L.BOISSEAU | 36/395/305/1176 |
-| 1 | SECRET FEELING | 13 | 12 | C.LECOEUVRE | 13/261/608/944 |
-| 9 | LORLISALSA | 13 | 10 | A.POUCHIN | 6/223/672/285 |
-| 8 | RIDWAAN | 14 | 12 | C.BOUVIER | 180/263/2/368 |
-| 5 | IRELIA | 16 | 17 | M.GRANDIN | 3/261/5/1702 |
-| 4 | COTAI HERO | 19 | 14 | R.MANGIONE | 78/568/3283/2035 |
-| 7 | BIG ENERGY | 19 | 22 | T.TRULLIER | 21/160/99/600 |
+| 6 | PACO | 3,4 | 4,8 | M.VELON | 28/28/7/49 |
+| 2 | SPIRIT GREY | 5,1 | 5,5 | A.ORANI 3e | 5/33/187/231 |
+| 11 | MAESTRO CHOP | 5,9 | 6,9 | P.CHEYER | 109/252/6/1377 |
+| 3 | MANDOKI | 8,1 | 10 | H.BOUTIN | 14/47/868/196 |
+| 9 | LORLISALSA | 14 | 10 | A.POUCHIN | 6/223/672/285 |
+| 10 | TIME TO GALI | 14 | 13 | L.BOISSEAU | 36/395/305/1176 |
+| 1 | SECRET FEELING | 18 | 12 | C.LECOEUVRE | 13/261/608/944 |
+| 4 | COTAI HERO | 23 | 14 | R.MANGIONE | 78/568/3283/2035 |
+| 5 | IRELIA | 23 | 17 | M.GRANDIN | 3/261/5/1702 |
+| 7 | BIG ENERGY | 23 | 22 | T.TRULLIER | 21/160/99/600 |
+| 8 | RIDWAAN | 23 | 12 | C.BOUVIER | 180/263/2/368 |
 
 ### 4. PRIX YAKOBA
 
