@@ -1,8 +1,8 @@
 # CAVAILLON — 11/10/2026
 
-8 courses.
+8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -12,32 +12,30 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | NISHMAEL | – | A.FELE | 333/426/13/2302 |
-| 2 | PERSIANROMY | – | K.GAUDEFFROY | 129/33/345/267 |
-| 3 | VERY PRETTY | – | M.BRUNELLI | 123/326/46/82 |
-| 4 | HAREMOTION | – | J.NICOLEAU | 137/9/73/632 |
-| 5 | LEIA ORGANA | – | C.BILLARDELLO | 118/5/19/7 |
-| 6 | SHANVICTUS | – | M.MUNGROO | 197/88/54/459 |
+| 5 | LEIA ORGANA | 1,9 | C.BILLARDELLO | 118/5/19/7 |
+| 3 | VERY PRETTY | 2,2 | M.BRUNELLI | 123/326/46/82 |
+| 2 | PERSIANROMY | 14 | K.GAUDEFFROY | 129/33/345/267 |
+| 4 | HAREMOTION | 21 | J.NICOLEAU | 137/9/73/632 |
+| 6 | SHANVICTUS | 34 | M.MUNGROO | 197/88/54/459 |
+| 1 | NISHMAEL | 54 | A.FELE | 333/426/13/2302 |
 
 ### 2. PRIX PIERROT MATAS
 
-*14h30 · attelé · 2600 m · 13 partants · cotes de l'extraction*
+*14h30 · attelé · 2600 m · 11 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KALYPSO TURGOT | – | G. BLANCHARD |
-| 2 | KAREN D'IRAI | – | D. PAULEAU |
-| 3 | KASHMIR'S FELLA | – | J.M. LESAINT |
-| 4 | JAZZ DE MONGOCHY | – | H. LAKHRISSI |
-| 5 | JICKY DE L'ITON | – | R. BOUDAH |
-| 6 | JIOSCO DE SAUZETTE | – | PH. TERME |
-| 7 | JALAPA | – | H. ZOGHLAMI |
-| 8 | JOKER DE L'ETRE | – | D. BENHAMOU |
-| 9 | KASIMODO | – | Y. HAGEGE |
-| 10 | HOPE COGLAIS | – | A. MAZZU |
-| 11 | HACKER JULRY | – | R.F. PERRET |
-| 12 | IVY DE BENAC | – | F. JULIEN |
-| 13 | JAXON DE BRY | – | S. TRIOMPHE |
+| 13 | JAXON DE BRY | 1,8 | S. TRIOMPHE |
+| 7 | JALAPA | 6,7 | H. ZOGHLAMI |
+| 6 | JIOSCO DE SAUZETTE | 8,1 | PH. TERME |
+| 1 | KALYPSO TURGOT | 11 | G. BLANCHARD |
+| 8 | JOKER DE L'ETRE | 17 | D. BENHAMOU |
+| 9 | KASIMODO | 25 | Y. HAGEGE |
+| 10 | HOPE COGLAIS | 25 | L.j. PELLEGRINO |
+| 12 | IVY DE BENAC | 31 | F. JULIEN |
+| 3 | KASHMIR'S FELLA | 38 | J.M. LESAINT |
+| 5 | JICKY DE L'ITON | 38 | R. BOUDAH |
+| 2 | KAREN D'IRAI | 51 | D. PAULEAU |
 
 ### 3. PRIX AVF DE CAVAILLON
 
@@ -45,11 +43,11 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | WE RIDE THE WORLD | – | A.BAUDRON | –/5/1604/549 |
-| 2 | COSMO BEAU | – | M.LEBAS | –/112/218/848 |
-| 3 | IMAYA | – | F.DINEUR | –/395/3534/4628 |
-| 4 | ISNEAUVILLE | – | F.GUY | –/9/150/4 |
-| 5 | STEF LE MAGNIFIQUE | – | L.URBANO AGUERO | –/88/91/459 |
+| 5 | STEF LE MAGNIFIQUE | 2,7 | L.URBANO AGUERO | –/88/91/459 |
+| 3 | IMAYA | 2,9 | F.DINEUR | –/395/3534/4628 |
+| 1 | WE RIDE THE WORLD | 6,4 | A.BAUDRON | –/5/1604/549 |
+| 2 | COSMO BEAU | 6,6 | M.LEBAS | –/112/218/848 |
+| 4 | ISNEAUVILLE | 7,5 | F.GUY | –/9/150/4 |
 
 ### 4. PRIX LILIANE SALADIN
 
@@ -57,19 +55,19 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | JAVA DE NERET | – | R. BOUDAH |
-| 2 | JERONIMO | – | A. MAZZU |
-| 3 | KIR VENUS | – | L. LIGOT |
-| 4 | ISIS DE REYNALD | – | H. LAKHRISSI |
-| 5 | JAFFAR DE MONGOCHY | – | TH. CLAIRET |
-| 6 | KIWI D'AUVRECY | – | Mlle V. GRELIN |
-| 7 | JAM DES LANDES | – | Mlle K. FRESNEAU |
-| 8 | KRISTINA DU CLOS | – | S. TRIOMPHE |
-| 9 | JUNINIO FLEURY | – | F. JULIEN |
-| 10 | JET SET CODIE | – | Mlle S. BLANCHETIERE |
-| 11 | KEOPS DU CHATAULT | – | G. BLANCHARD |
-| 12 | IDRA DESBOIS | – | Mme L. CURY |
-| 13 | GAETANE DU VIVIER | – | Mlle G. AMBROGIO |
+| 7 | JAM DES LANDES | 3,2 | Mlle K. FRESNEAU |
+| 3 | KIR VENUS | 5,3 | L. LIGOT |
+| 10 | JET SET CODIE | 10 | Mlle S. BLANCHETIERE |
+| 11 | KEOPS DU CHATAULT | 10 | G. BLANCHARD |
+| 12 | IDRA DESBOIS | 10 | Mme L. CURY |
+| 2 | JERONIMO | 12 | PH. TERME |
+| 4 | ISIS DE REYNALD | 14 | H. LAKHRISSI |
+| 5 | JAFFAR DE MONGOCHY | 19 | TH. CLAIRET |
+| 13 | GAETANE DU VIVIER | 22 | Mlle G. AMBROGIO |
+| 1 | JAVA DE NERET | 33 | R. BOUDAH |
+| 6 | KIWI D'AUVRECY | 33 | Mlle V. GRELIN |
+| 9 | JUNINIO FLEURY | 33 | F. JULIEN |
+| 8 | KRISTINA DU CLOS | 133 | S. TRIOMPHE |
 
 ### 5. PRIX PIERRE GRAND - PRIX FOIRE DE CAVAILLON
 
@@ -77,33 +75,32 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | ASTREA | – | M.BRUNELLI | 123/4/43/38 |
-| 2 | LARK | – | K.GAUDEFFROY | 129/9/485/712 |
-| 3 | EVEROSE | – | N.ASTIER | 160/112/3293/278 |
-| 4 | UNITED COLOR | – | S.ST LARY LEROY | 163/5/323/3089 |
-| 5 | XAARTA | – | J.NICOLEAU | 137/4/4/4 |
-| 6 | THE BLACK VELVET | – | C.BILLARDELLO | 118/36/177/870 |
+| 1 | ASTREA | 2 | M.BRUNELLI | 123/4/43/38 |
+| 6 | THE BLACK VELVET | 4 | C.BILLARDELLO | 118/36/177/870 |
+| 3 | EVEROSE | 8,1 | N.ASTIER | 160/112/3293/278 |
+| 4 | UNITED COLOR | 8,1 | S.ST LARY LEROY | 163/5/323/3089 |
+| 5 | XAARTA | 10 | J.NICOLEAU | 137/4/4/4 |
+| 2 | LARK | 16 | K.GAUDEFFROY | 129/9/485/712 |
 
 ### 6. PRIX GEORGES LEON
 
-*16h30 · attelé · 2600 m · 14 partants · cotes de l'extraction*
+*16h30 · attelé · 2600 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MAGIE D'ENOGAT | – | G. TOURON |
-| 2 | MAYENNE DU BOCAGE | – | J. UROZ |
+| 9 | MIMOSA DEVOL | 2,4 | K. THONNERIEUX |
+| 4 | MUSIC GEKA | 5,9 | S. STEFANO |
+| 2 | MAYENNE DU BOCAGE | 7,4 | J. UROZ |
+| 11 | MAGIC SYSTEM | 8,9 | Y.A. BRIAND |
+| 5 | MATCHO D'AMAY | 11 | D. CINIER |
+| 8 | MAGIC OHEM | 12 | E. GOUT |
+| 13 | MIRIANA DE BRAYE | 14 | D. BEKAERT |
+| 7 | MISTER DE L'ETOILE | 44 | D. DESBORDES |
+| 12 | MARCO POLO | 44 | E. BRIAND |
+| 14 | MADISON DE NIMES | 44 | N. JULIEN |
+| 1 | MAGIE D'ENOGAT | 89 | G. TOURON |
 | 3 | MARA DE LA CREUSE | – | N. CINIER |
-| 4 | MUSIC GEKA | – | S. STEFANO |
-| 5 | MATCHO D'AMAY | – | D. CINIER |
-| 6 | MOELAND | – | F. GAUVIN |
-| 7 | MISTER DE L'ETOILE | – | D. DESBORDES |
-| 8 | MAGIC OHEM | – | E. GOUT |
-| 9 | MIMOSA DEVOL | – | K. THONNERIEUX |
 | 10 | MADAME BUTTERFLY | – | LORENZO TALPO |
-| 11 | MAGIC SYSTEM | – | Y.A. BRIAND |
-| 12 | MARCO POLO | – | E. BRIAND |
-| 13 | MIRIANA DE BRAYE | – | D. BEKAERT |
-| 14 | MADISON DE NIMES | – | N. JULIEN |
 
 ### 7. PRIX CALAVON - PRIX LES GEANTS DE PAPIER
 
@@ -111,11 +108,11 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | JARDIN BLEU | – | F.GUY | –/88/8/930 |
-| 2 | WUKOLINA | – | M.LEBAS | –/112/62/445 |
+| 5 | SYLVER SAMBA | 1,8 | L.URBANO AGUERO | –/88/252/450 |
+| 6 | SUCCESS STORY | 3,2 | A.FERLAND | –/33/14/361 |
+| 1 | JARDIN BLEU | 7 | F.GUY | –/88/8/930 |
+| 2 | WUKOLINA | 7 | M.LEBAS | –/112/62/445 |
 | 3 | RUE DE SAVOIE | – | J.MAURER | –/261/131/2685 |
-| 5 | SYLVER SAMBA | – | L.URBANO AGUERO | –/88/252/450 |
-| 6 | SUCCESS STORY | – | A.FERLAND | –/33/14/361 |
 
 ### 8. PRIX HYPERMARCHE AUCHAN CAVAILLON
 
@@ -123,15 +120,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KALINKA DU HOME | – | D. CINIER |
-| 2 | KOMANIA D'ABY | – | G. TOURON |
-| 3 | KLOE REBELLE | – | S. STEFANO |
-| 4 | JAMBEROO | – | E. BRIAND |
-| 5 | KOREANE DELICE | – | ST. CORBIN |
-| 6 | KIF DE L'UNE | – | N. CINIER |
-| 7 | KINGSLEY | – | TH. ISSAUTIER |
-| 8 | KLEPPER DU LOIR | – | E. GOUT |
-| 9 | ILLA VILLA | – | N. JULIEN |
-| 10 | IBERICO | – | K. THONNERIEUX |
-| 11 | KHEOPS TURGOT | – | Y.A. BRIAND |
-| 12 | KEROS DES BAUX | – | D. BEKAERT |
+| 12 | KEROS DES BAUX | 3 | D. BEKAERT |
+| 6 | KIF DE L'UNE | 4,2 | N. CINIER |
+| 11 | KHEOPS TURGOT | 6,2 | Y.A. BRIAND |
+| 3 | KLOE REBELLE | 9,1 | S. STEFANO |
+| 2 | KOMANIA D'ABY | 13 | G. TOURON |
+| 7 | KINGSLEY | 13 | TH. ISSAUTIER |
+| 4 | JAMBEROO | 19 | E. BRIAND |
+| 8 | KLEPPER DU LOIR | 22 | E. GOUT |
+| 1 | KALINKA DU HOME | 45 | D. CINIER |
+| 5 | KOREANE DELICE | 45 | ST. CORBIN |
+| 9 | ILLA VILLA | 136 | N. JULIEN |
+| 10 | IBERICO | 136 | K. THONNERIEUX |

@@ -1,8 +1,8 @@
 # SHA TIN (HONG KONG) — 11/10/2026
 
-5 courses.
+5 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -12,18 +12,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | STANLEY EXPRESS | – | AVDULLA B. |
-| 2 | GALLANT DESIGN | – | PURTON Z. |
-| 3 | DRAGON SKY FORCE | – | CHADWICK M. |
-| 4 | GLORY PATCH | – | ATZENI A. |
-| 5 | SASSPHIRE | – | HEWITSON L. |
-| 6 | TELECOM FORTUNE | – | ORMAN J. |
-| 7 | NOBLE SUPERIOR | – | YEUNG M.L. |
-| 8 | PARROT BLESSING | – | MO H.T. |
-| 9 | HAPPY BRETHREN | – | HO C.Y. |
-| 10 | ENJOY GOLF | – | BENTLEY H. |
-| 11 | AMO ERGO SUM | – | TEETAN K. |
-| 12 | LET'S HAVE FUN | – | POON M.F. |
+| 2 | GALLANT DESIGN | 1,9 | PURTON Z. |
+| 3 | DRAGON SKY FORCE | 7,6 | CHADWICK M. |
+| 7 | NOBLE SUPERIOR | 7,7 | YEUNG M.L. |
+| 11 | AMO ERGO SUM | 10 | TEETAN K. |
+| 12 | LET'S HAVE FUN | 11 | POON M.F. |
+| 10 | ENJOY GOLF | 16 | BENTLEY H. |
+| 9 | HAPPY BRETHREN | 17 | HO C.Y. |
+| 1 | STANLEY EXPRESS | 30 | AVDULLA B. |
+| 5 | SASSPHIRE | 35 | HEWITSON L. |
+| 8 | PARROT BLESSING | 36 | MO H.T. |
+| 4 | GLORY PATCH | 43 | ATZENI A. |
+| 6 | TELECOM FORTUNE | 73 | ORMAN J. |
 
 ### 7. NAM SANG WAI HANDICAP
 
@@ -31,20 +31,20 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | HAPPY TERCENTENARY | – | BADEL A. |
-| 2 | LUNAR DASH | – | TEETAN K. |
-| 3 | ABSOLUTE AWAKENED | – | LEUNG K.C. |
-| 4 | ONE MORE | – | MO H.T. |
-| 5 | STORM MIRROR | – | HO C.Y. |
-| 6 | CAVA PIONEER | – | PURTON Z. |
-| 7 | TYCOON EXPRESS | – | H BENTLEY |
-| 8 | M M CONCORD | – | CHADWICK M. |
-| 9 | STUNNING BUNDLE | – | ATZENI A. |
-| 10 | TIN FOOK | – | AVDULLA B. |
-| 11 | DAILY FUN | – | FERRARIS L. |
-| 12 | FLUORESCENCE | – | WONG E.C.W. |
-| 13 | SOO KOO | – | YEUNG M.L. |
-| 14 | GOOD LUCK BABE | – | CHAU C.L. |
+| 10 | TIN FOOK | 2,9 | AVDULLA B. |
+| 6 | CAVA PIONEER | 5,3 | PURTON Z. |
+| 3 | ABSOLUTE AWAKENED | 5,6 | LEUNG K.C. |
+| 5 | STORM MIRROR | 9 | HO C.Y. |
+| 14 | GOOD LUCK BABE | 9 | CHAU C.L. |
+| 7 | TYCOON EXPRESS | 11 | H BENTLEY |
+| 1 | HAPPY TERCENTENARY | 24 | BADEL A. |
+| 9 | STUNNING BUNDLE | 27 | ATZENI A. |
+| 4 | ONE MORE | 28 | MO H.T. |
+| 8 | M M CONCORD | 29 | CHADWICK M. |
+| 2 | LUNAR DASH | 50 | TEETAN K. |
+| 11 | DAILY FUN | 93 | FERRARIS L. |
+| 13 | SOO KOO | 142 | YEUNG M.L. |
+| 12 | FLUORESCENCE | 145 | WONG E.C.W. |
 
 ### 8. PING SHAN HANDICAP
 
@@ -52,20 +52,20 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | JOLLY BRILLIANT | – | ATZENI A. | –/–/–/– |
-| 2 | ACE | – | CHAU C.L. | –/–/–/– |
-| 3 | MASTER TRILLION | – | LEUNG K.C. | –/–/–/– |
-| 4 | MEGA MASTERMIND | – | BADEL A. | –/–/–/– |
-| 5 | BEAUTY VIVA | – | CHADWICK M. | –/–/–/– |
-| 6 | BUCEPHALAS | – | FERRARIS L. | –/–/–/– |
-| 7 | FLYING BOOM | – | POON M.F. | –/–/–/– |
-| 8 | BEST WORLD | – | AVDULLA B. | –/–/–/– |
-| 9 | BLING BLING GENIUS | – | HEWITSON L. | –/–/–/– |
-| 10 | AUTOMATED | – | KINGSCOTE R. | –/–/–/– |
-| 11 | GORGEOUS VICTORY | – | PURTON Z. | –/–/–/– |
-| 12 | FAMILY FORTUNE | – | HO C.Y. | –/–/–/– |
-| 13 | SMART FAT CAT | – | TEETAN K. | –/–/–/– |
-| 14 | BRIGHT INHERITANCE | – | CHUNG Y.L. | –/–/–/– |
+| 11 | GORGEOUS VICTORY | 2 | PURTON Z. | –/–/–/– |
+| 1 | JOLLY BRILLIANT | 5,6 | ATZENI A. | –/–/–/– |
+| 13 | SMART FAT CAT | 6,8 | TEETAN K. | –/–/–/– |
+| 7 | FLYING BOOM | 14 | POON M.F. | –/–/–/– |
+| 4 | MEGA MASTERMIND | 16 | BADEL A. | –/–/–/– |
+| 3 | MASTER TRILLION | 18 | LEUNG K.C. | –/–/–/– |
+| 9 | BLING BLING GENIUS | 20 | HEWITSON L. | –/–/–/– |
+| 10 | AUTOMATED | 26 | KINGSCOTE R. | –/–/–/– |
+| 2 | ACE | 32 | CHAU C.L. | –/–/–/– |
+| 8 | BEST WORLD | 32 | AVDULLA B. | –/–/–/– |
+| 6 | BUCEPHALAS | 34 | FERRARIS L. | –/–/–/– |
+| 14 | BRIGHT INHERITANCE | 60 | CHUNG Y.L. | –/–/–/– |
+| 12 | FAMILY FORTUNE | 77 | HO C.Y. | –/–/–/– |
+| 5 | BEAUTY VIVA | 84 | CHADWICK M. | –/–/–/– |
 
 ### 9. SAN TIN HANDICAP
 
@@ -73,18 +73,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | SWIFT ASCEND | – | PURTON Z. |
-| 2 | GALACTIC VOYAGE | – | CHAU C.L. |
-| 3 | HAPPY INDEX | – | HO C.Y. |
-| 4 | COOL BOY | – | BADEL A. |
-| 5 | ON THE WAY | – | MO H.T. |
-| 6 | ELITE GOLF | – | BENTLEY H. |
-| 7 | EVER LUCK | – | HEWITSON L. |
-| 8 | MEGASTAR HEART | – | FERRARIS L. |
-| 9 | SILK MASTER | – | TEETAN K. |
-| 10 | EMBRACE ABERDEEN | – | ATZENI A. |
-| 11 | SHANGHAI WARRIOR | – | POON M.F. |
-| 12 | ENDURANCE EXPRESS | – | CHADWICK M. |
+| 3 | HAPPY INDEX | 4 | HO C.Y. |
+| 8 | MEGASTAR HEART | 5 | FERRARIS L. |
+| 4 | COOL BOY | 6,2 | BADEL A. |
+| 1 | SWIFT ASCEND | 7,2 | PURTON Z. |
+| 10 | EMBRACE ABERDEEN | 8,1 | ATZENI A. |
+| 11 | SHANGHAI WARRIOR | 12 | POON M.F. |
+| 2 | GALACTIC VOYAGE | 13 | CHAU C.L. |
+| 6 | ELITE GOLF | 13 | BENTLEY H. |
+| 12 | ENDURANCE EXPRESS | 22 | CHADWICK M. |
+| 7 | EVER LUCK | 35 | HEWITSON L. |
+| 9 | SILK MASTER | 37 | TEETAN K. |
+| 5 | ON THE WAY | 76 | MO H.T. |
 
 ### 10. SHUI PIN WAI HANDICAP
 
@@ -92,17 +92,17 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | BEAUTY CRESCENT | – | CHUNG Y.L. |
-| 2 | TITAN PEGASUS | – | CHAU C.L. |
-| 3 | FIT FOR BEAUTY | – | ATZENI A. |
-| 4 | EVERYONE'S STAR | – | AVDULLA B. |
-| 5 | FORTUNE LINK | – | YUEN H.Y. |
-| 6 | SO NAIVE | – | HEWITSON L. |
-| 7 | CHIU CHOW SPIRIT | – | BADEL A. |
-| 8 | STAY COSMIC | – | POON M.F. |
-| 9 | CELESTIAL HERO | – | PURTON Z. |
-| 10 | DO YOUR PART | – | WONG P.N. |
-| 11 | ANOTHER ZONDA | – | WONG E.C.W. |
-| 12 | GULU GOGO | – | TEETAN K. |
-| 13 | SUPER UNICORN | – | CHADWICK M. |
-| 14 | TANG HEART | – | HO C.Y. |
+| 10 | DO YOUR PART | 3,5 | WONG P.N. |
+| 2 | TITAN PEGASUS | 4 | CHAU C.L. |
+| 9 | CELESTIAL HERO | 7,2 | PURTON Z. |
+| 3 | FIT FOR BEAUTY | 8 | ATZENI A. |
+| 1 | BEAUTY CRESCENT | 8,4 | CHUNG Y.L. |
+| 7 | CHIU CHOW SPIRIT | 13 | BADEL A. |
+| 4 | EVERYONE'S STAR | 16 | AVDULLA B. |
+| 12 | GULU GOGO | 22 | TEETAN K. |
+| 5 | FORTUNE LINK | 23 | YUEN H.Y. |
+| 14 | TANG HEART | 37 | HO C.Y. |
+| 6 | SO NAIVE | 80 | HEWITSON L. |
+| 13 | SUPER UNICORN | 93 | CHADWICK M. |
+| 11 | ANOTHER ZONDA | 94 | WONG E.C.W. |
+| 8 | STAY COSMIC | 108 | POON M.F. |
