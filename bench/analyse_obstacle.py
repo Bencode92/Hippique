@@ -98,6 +98,8 @@ for c in reu.get("courses", []):
     rows_h = [m for m in rows_d if hip_cible in m["hip"]]
     cl_b, g_b = classement(rows_b, "jk", MIN_J)
     cl_h, g_h = classement(rows_h, "jk", MIN_HIP)
+    # l'hippodrome SUR la longueur : la lecture qui compte pour Auteuil
+    cl_hb, g_hb = classement([m for m in rows_h if abs(m["dist"] - dist) <= BANDE], "jk", MIN_HIP)
     _, en_h = classement(rows_h, "en", 1)
     heure = c.get("heureDepart")
     from datetime import datetime
@@ -109,14 +111,15 @@ for c in reu.get("courses", []):
     for p in ps:
         jk, en, ch = nom_jk(p), nom_en(p), (p.get("nom") or "").upper()
         cote = (p.get("dernierRapportDirect") or {}).get("rapport") or (p.get("dernierRapportReference") or {}).get("rapport")
-        rb = cl_b.get(jk); rh = cl_h.get(jk)
+        rb = cl_b.get(jk); rh = cl_h.get(jk); rhb = cl_hb.get(jk)
         jb = f"**{rb[0]}{'er' if rb[0]==1 else 'e'}**/{rb[1]} · {fmt(rb[2])}" if rb else (f"({fmt(g_b[jk])})" if g_b[jk][0] else "–")
+        jhb = f"**{rhb[0]}{'er' if rhb[0]==1 else 'e'}**/{rhb[1]} · {fmt(rhb[2])}" if rhb else (f"({fmt(g_hb[jk])})" if g_hb[jk][0] else "–")
         jh = f"**{rh[0]}{'er' if rh[0]==1 else 'e'}**/{rh[1]} · {fmt(rh[2])}" if rh else (f"({fmt(g_h[jk])})" if g_h[jk][0] else "–")
         passe = [m for m in rows_h if m["ch"] == ch]
         hist = " ".join(("**1**" if m["a"] == 1 else str(m["a"] or "0")) for m in sorted(passe, key=lambda m: m["date"])[-6:]) or "–"
-        lignes.append((rb[0] if rb else 999, f"| {p.get('numPmu')} | {ch} | {cote or '–'} | {jk} | {jb} | {jh} | {hist} | {en} {fmt(en_h[en]) if en_h[en][0] else '–'} | {p.get('musique') or ''} |"))
-    out += ["| n° | cheval | cote | jockey | jockey · bande ±400 m | jockey · " + hip_cible.lower() + " | cheval ici (6 dern.) | entraîneur ici | musique |",
-            "|--:|:--|--:|:--|:--|:--|:--|:--|:--|"]
+        lignes.append((rhb[0] if rhb else 999, f"| {p.get('numPmu')} | {ch} | {cote or '–'} | {jk} | {jhb} | {jb} | {jh} | {hist} | {en} {fmt(en_h[en]) if en_h[en][0] else '–'} | {p.get('musique') or ''} |"))
+    out += ["| n° | cheval | cote | jockey | jockey · " + hip_cible.lower() + f" ±{BANDE} m | jockey · France ±{BANDE} m | jockey · " + hip_cible.lower() + " toutes longueurs | cheval ici (6 dern.) | entraîneur ici | musique |",
+            "|--:|:--|--:|:--|:--|:--|:--|:--|:--|:--|"]
     out += [l for _, l in sorted(lignes, key=lambda t: t[0])]
     out.append("")
 
