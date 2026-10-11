@@ -54,6 +54,11 @@ jobs:
           python3 backfill_histo.py $(date -u -d '10 days ago' +%Y-%m-%d) $(date -u +%Y-%m-%d) || true
           python3 backfill_rapports.py $(date -u +%Y-%m) || true
 
+      # La pastille jockey (« 5e · 2000m », 🏆 en groupes) lit ce fichier : il
+      # était resté figé au 04/10 alors que data/histo avance chaque nuit.
+      - name: Recalculer le classement des jockeys par distance
+        run: python3 bench/jockeys_distance.py || true
+
       - name: Précalcul des journées récentes (carte rapide)
         run: |
           node bench/precalcul_jour.mjs $(date -u +%Y-%m-%d) || true
@@ -66,7 +71,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action - Suivi règle"
-          git add data/histo/ data/rapports/ data/jour/ data/sprt_etat.json data/sprt_journal.json 2>/dev/null || true
+          git add data/histo/ data/rapports/ data/jour/ data/jockeys_distance.json data/sprt_etat.json data/sprt_journal.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "Rien à publier"
           else
