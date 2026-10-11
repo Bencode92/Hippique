@@ -4,98 +4,98 @@
   "reunion": 6,
   "heure_depart": 1791739260000,
   "distance": 2400,
-  "scraped_at": "2026-10-11T19:15:23.157418+02:00",
-  "minutes_avant_depart": 6,
+  "scraped_at": "2026-10-11T19:18:03.499393+02:00",
+  "minutes_avant_depart": 3,
   "participants": [
     {
       "numPmu": 1,
       "nom": "AUSTRALIAN ROMANCE",
       "cote_live": 4.0,
       "cote_reference": 3.0,
-      "tendance": "-",
+      "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791738921000
+      "timestamp_cote": 1791739075000
     },
     {
       "numPmu": 2,
       "nom": "BELLA CRACK",
-      "cote_live": 7.0,
+      "cote_live": 7.8,
       "cote_reference": 9.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791738921000
+      "timestamp_cote": 1791739075000
     },
     {
       "numPmu": 3,
       "nom": "COUNTRY CLUB",
-      "cote_live": 4.1,
+      "cote_live": 4.6,
       "cote_reference": 5.9,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791738921000
+      "timestamp_cote": 1791739075000
     },
     {
       "numPmu": 4,
       "nom": "JOYPHORIA",
-      "cote_live": 24.0,
+      "cote_live": 26.0,
       "cote_reference": 15.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791738921000
+      "timestamp_cote": 1791739075000
     },
     {
       "numPmu": 5,
       "nom": "ABRONZAL",
-      "cote_live": 6.4,
+      "cote_live": 6.9,
       "cote_reference": 7.5,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791738921000
+      "timestamp_cote": 1791739075000
     },
     {
       "numPmu": 6,
       "nom": "DESERONTO",
-      "cote_live": 25.0,
+      "cote_live": 29.0,
       "cote_reference": 28.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791738921000
+      "timestamp_cote": 1791739075000
     },
     {
       "numPmu": 7,
       "nom": "SISTINE CHAPEL",
-      "cote_live": 18.0,
+      "cote_live": 20.0,
       "cote_reference": 16.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791738921000
+      "timestamp_cote": 1791739075000
     },
     {
       "numPmu": 8,
       "nom": "PRINCENOIR",
-      "cote_live": 17.0,
+      "cote_live": 8.1,
       "cote_reference": 14.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791738921000
+      "timestamp_cote": 1791739075000
     },
     {
       "numPmu": 9,
       "nom": "LINDEN BLOSSOM",
       "cote_live": 12.0,
       "cote_reference": 9.5,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791738921000
+      "timestamp_cote": 1791739075000
     },
     {
       "numPmu": 10,
       "nom": "CIRCION CHOP",
       "cote_live": 12.0,
       "cote_reference": 16.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791738921000
+      "timestamp_cote": 1791739075000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -144,6 +144,70 @@
         "6": 25.0,
         "7": 18.0,
         "8": 17.0,
+        "9": 12.0,
+        "10": 12.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-11T19:16:03.429635+02:00",
+      "minutes_avant_depart": 4.950604216666666,
+      "cotes": {
+        "1": 4.0,
+        "2": 6.6,
+        "3": 4.2,
+        "4": 23.0,
+        "5": 6.5,
+        "6": 25.0,
+        "7": 18.0,
+        "8": 17.0,
+        "9": 12.0,
+        "10": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-11T19:16:43.159187+02:00",
+      "minutes_avant_depart": 4.283935966666666,
+      "cotes": {
+        "1": 4.0,
+        "2": 6.9,
+        "3": 4.1,
+        "4": 24.0,
+        "5": 6.7,
+        "6": 25.0,
+        "7": 18.0,
+        "8": 18.0,
+        "9": 12.0,
+        "10": 11.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-11T19:17:23.488344+02:00",
+      "minutes_avant_depart": 3.61726795,
+      "cotes": {
+        "1": 4.0,
+        "2": 7.3,
+        "3": 4.6,
+        "4": 26.0,
+        "5": 6.9,
+        "6": 27.0,
+        "7": 19.0,
+        "8": 9.9,
+        "9": 12.0,
+        "10": 12.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-11T19:18:03.499393+02:00",
+      "minutes_avant_depart": 2.945256716666667,
+      "cotes": {
+        "1": 4.0,
+        "2": 7.8,
+        "3": 4.6,
+        "4": 26.0,
+        "5": 6.9,
+        "6": 29.0,
+        "7": 20.0,
+        "8": 8.1,
         "9": 12.0,
         "10": 12.0
       }
