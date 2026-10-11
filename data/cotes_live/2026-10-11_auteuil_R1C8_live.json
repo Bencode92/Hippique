@@ -1,0 +1,110 @@
+{
+  "course": "PRIX BAYONNET",
+  "numero": 8,
+  "reunion": 1,
+  "heure_depart": 1791736380000,
+  "distance": 4400,
+  "scraped_at": "2026-10-11T18:03:10.041685+02:00",
+  "minutes_avant_depart": 30,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "INLANDSIS",
+      "cote_live": 6.5,
+      "cote_reference": 6.3,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1791734452000
+    },
+    {
+      "numPmu": 2,
+      "nom": "SANTANDER",
+      "cote_live": 10.0,
+      "cote_reference": 11.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1791734452000
+    },
+    {
+      "numPmu": 3,
+      "nom": "MOUNTAIN RIDGE",
+      "cote_live": 13.0,
+      "cote_reference": 13.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1791734452000
+    },
+    {
+      "numPmu": 4,
+      "nom": "TEEN SPIRIT",
+      "cote_live": 9.7,
+      "cote_reference": 9.6,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1791734452000
+    },
+    {
+      "numPmu": 5,
+      "nom": "MONTANA DREAM",
+      "cote_live": 4.0,
+      "cote_reference": 4.1,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1791734452000
+    },
+    {
+      "numPmu": 6,
+      "nom": "MICAWBER",
+      "cote_live": 13.0,
+      "cote_reference": 13.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1791734452000
+    },
+    {
+      "numPmu": 7,
+      "nom": "MUSIK PLEASE",
+      "cote_live": 15.0,
+      "cote_reference": 14.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1791734452000
+    },
+    {
+      "numPmu": 8,
+      "nom": "MAMALAND",
+      "cote_live": 3.6,
+      "cote_reference": 3.7,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1791734452000
+    },
+    {
+      "numPmu": 9,
+      "nom": "BRESSLAND",
+      "cote_live": 18.0,
+      "cote_reference": 17.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1791734452000
+    }
+  ],
+  "hippodrome": "AUTEUIL",
+  "releves": [
+    {
+      "scraped_at": "2026-10-11T18:03:10.041685+02:00",
+      "minutes_avant_depart": 29.843966066666667,
+      "cotes": {
+        "1": 6.5,
+        "2": 10.0,
+        "3": 13.0,
+        "4": 9.7,
+        "5": 4.0,
+        "6": 13.0,
+        "7": 15.0,
+        "8": 3.6,
+        "9": 18.0
+      }
+    }
+  ]
+}

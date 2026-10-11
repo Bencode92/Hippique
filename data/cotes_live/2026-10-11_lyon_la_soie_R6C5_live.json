@@ -4,71 +4,71 @@
   "reunion": 6,
   "heure_depart": 1791734700000,
   "distance": 1800,
-  "scraped_at": "2026-10-11T18:01:09.917873+02:00",
-  "minutes_avant_depart": 4,
+  "scraped_at": "2026-10-11T18:03:50.792370+02:00",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "AIDAN'S PHONE",
-      "cote_live": 14.0,
+      "cote_live": 19.0,
       "cote_reference": 15.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791734460000
+      "timestamp_cote": 1791734630000
     },
     {
       "numPmu": 2,
       "nom": "HYPERCORE",
-      "cote_live": 17.0,
+      "cote_live": 8.8,
       "cote_reference": 17.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791734460000
+      "timestamp_cote": 1791734630000
     },
     {
       "numPmu": 3,
       "nom": "ANSSIO",
-      "cote_live": 4.8,
+      "cote_live": 4.5,
       "cote_reference": 4.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791734460000
+      "timestamp_cote": 1791734630000
     },
     {
       "numPmu": 4,
       "nom": "SWINGUER",
-      "cote_live": 6.1,
+      "cote_live": 5.0,
       "cote_reference": 8.3,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791734460000
+      "timestamp_cote": 1791734630000
     },
     {
       "numPmu": 5,
       "nom": "TIPINSO",
-      "cote_live": 3.8,
+      "cote_live": 4.3,
       "cote_reference": 3.2,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791734460000
+      "timestamp_cote": 1791734630000
     },
     {
       "numPmu": 6,
       "nom": "CAMBRONNE",
-      "cote_live": 14.0,
+      "cote_live": 20.0,
       "cote_reference": 15.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791734460000
+      "timestamp_cote": 1791734630000
     },
     {
       "numPmu": 7,
       "nom": "ZELZARI",
-      "cote_live": 3.2,
+      "cote_live": 3.6,
       "cote_reference": 3.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791734460000
+      "timestamp_cote": 1791734630000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -201,6 +201,58 @@
         "5": 3.8,
         "6": 14.0,
         "7": 3.2
+      }
+    },
+    {
+      "scraped_at": "2026-10-11T18:01:50.009762+02:00",
+      "minutes_avant_depart": 3.177303516666667,
+      "cotes": {
+        "1": 14.0,
+        "2": 18.0,
+        "3": 4.5,
+        "4": 5.9,
+        "5": 4.0,
+        "6": 14.0,
+        "7": 3.2
+      }
+    },
+    {
+      "scraped_at": "2026-10-11T18:02:30.200597+02:00",
+      "minutes_avant_depart": 2.51063475,
+      "cotes": {
+        "1": 14.0,
+        "2": 17.0,
+        "3": 3.7,
+        "4": 6.2,
+        "5": 4.0,
+        "6": 16.0,
+        "7": 3.6
+      }
+    },
+    {
+      "scraped_at": "2026-10-11T18:03:10.572785+02:00",
+      "minutes_avant_depart": 1.8439660666666666,
+      "cotes": {
+        "1": 18.0,
+        "2": 8.5,
+        "3": 4.4,
+        "4": 5.0,
+        "5": 4.4,
+        "6": 19.0,
+        "7": 3.8
+      }
+    },
+    {
+      "scraped_at": "2026-10-11T18:03:50.792370+02:00",
+      "minutes_avant_depart": 1.16268295,
+      "cotes": {
+        "1": 19.0,
+        "2": 8.8,
+        "3": 4.5,
+        "4": 5.0,
+        "5": 4.3,
+        "6": 20.0,
+        "7": 3.6
       }
     }
   ]
