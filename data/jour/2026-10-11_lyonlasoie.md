@@ -1,6 +1,6 @@
 # LYON LA SOIE — 11/10/2026
 
-7 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+7 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -81,17 +81,17 @@
 
 ### 5. GRAND PRIX DE L'HIPPODROME DE LYON-LA-SOIE
 
-*18h05 · plat · 1800 m · 7 partants · cotes de l'extraction*
+*18h05 · plat · 1800 m · 7 partants · cotes à T−29:50*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 7 | ZELZARI | 2,9 | M.GRANDIN | 3/63/216/107 |
-| 5 | TIPINSO | 4,3 | A.ORANI 3e | 5/9/63/4 |
-| 3 | ANSSIO | 6,2 | C.LECOEUVRE | 13/96/20/242 |
-| 4 | SWINGUER | 6,8 | A.POUCHIN | 6/2/96/6 |
-| 6 | CAMBRONNE | 8,3 | H.BESNIER | 12/5/75/7 |
-| 2 | HYPERCORE | 10 | H.BOUTIN | 14/57/3282/1108 |
-| 1 | AIDAN'S PHONE | 24 | I.MENDIZABAL | 32/5/49/127 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 5 | TIPINSO | 3,1 | 4,3 | A.ORANI 3e | 5/9/63/4 |
+| 7 | ZELZARI | 3,6 | 2,9 | M.GRANDIN | 3/63/216/107 |
+| 3 | ANSSIO | 4,3 | 6,2 | C.LECOEUVRE | 13/96/20/242 |
+| 4 | SWINGUER | 8 | 6,8 | A.POUCHIN | 6/2/96/6 |
+| 6 | CAMBRONNE | 14 | 8,3 | H.BESNIER | 12/5/75/7 |
+| 1 | AIDAN'S PHONE | 17 | 24 | I.MENDIZABAL | 32/5/49/127 |
+| 2 | HYPERCORE | 17 | 10 | H.BOUTIN | 14/57/3282/1108 |
 
 ### 6. PRIX DE VAULX-EN-VELIN
 

@@ -1,0 +1,90 @@
+{
+  "course": "GRAND PRIX DE L'HIPPODROME DE LYON-LA-SOIE",
+  "numero": 5,
+  "reunion": 6,
+  "heure_depart": 1791734700000,
+  "distance": 1800,
+  "scraped_at": "2026-10-11T17:35:10.285324+02:00",
+  "minutes_avant_depart": 30,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "AIDAN'S PHONE",
+      "cote_live": 17.0,
+      "cote_reference": 15.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1791732620000
+    },
+    {
+      "numPmu": 2,
+      "nom": "HYPERCORE",
+      "cote_live": 17.0,
+      "cote_reference": 17.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1791732620000
+    },
+    {
+      "numPmu": 3,
+      "nom": "ANSSIO",
+      "cote_live": 4.3,
+      "cote_reference": 4.0,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1791732620000
+    },
+    {
+      "numPmu": 4,
+      "nom": "SWINGUER",
+      "cote_live": 8.0,
+      "cote_reference": 8.3,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1791732620000
+    },
+    {
+      "numPmu": 5,
+      "nom": "TIPINSO",
+      "cote_live": 3.1,
+      "cote_reference": 3.2,
+      "tendance": "+",
+      "favoris": true,
+      "timestamp_cote": 1791732620000
+    },
+    {
+      "numPmu": 6,
+      "nom": "CAMBRONNE",
+      "cote_live": 14.0,
+      "cote_reference": 15.0,
+      "tendance": "-",
+      "favoris": false,
+      "timestamp_cote": 1791732620000
+    },
+    {
+      "numPmu": 7,
+      "nom": "ZELZARI",
+      "cote_live": 3.6,
+      "cote_reference": 3.7,
+      "tendance": "+",
+      "favoris": false,
+      "timestamp_cote": 1791732620000
+    }
+  ],
+  "hippodrome": "LYON LA SOIE",
+  "releves": [
+    {
+      "scraped_at": "2026-10-11T17:35:10.285324+02:00",
+      "minutes_avant_depart": 29.844058716666666,
+      "cotes": {
+        "1": 17.0,
+        "2": 17.0,
+        "3": 4.3,
+        "4": 8.0,
+        "5": 3.1,
+        "6": 14.0,
+        "7": 3.6
+      }
+    }
+  ]
+}
