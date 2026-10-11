@@ -1,6 +1,6 @@
 # LYON LA SOIE — 11/10/2026
 
-7 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+7 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -43,21 +43,21 @@
 
 ### 3. PRIX JOCKEY STAR - PRIX DE PARAY-LE-MONIAL
 
-*16h47 · plat · 1800 m · 11 partants · cotes de l'extraction*
+*16h47 · plat · 1800 m · 11 partants · cotes à T−13:09*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 6 | PACO | 4,8 | M.VELON | 28/28/7/49 |
-| 2 | SPIRIT GREY | 5,5 | A.ORANI 3e | 5/33/187/231 |
-| 11 | MAESTRO CHOP | 6,9 | P.CHEYER | 109/252/6/1377 |
-| 3 | MANDOKI | 10 | H.BOUTIN | 14/47/868/196 |
-| 9 | LORLISALSA | 10 | A.POUCHIN | 6/223/672/285 |
-| 1 | SECRET FEELING | 12 | C.LECOEUVRE | 13/261/608/944 |
-| 8 | RIDWAAN | 12 | C.BOUVIER | 180/263/2/368 |
-| 10 | TIME TO GALI | 13 | L.BOISSEAU | 36/395/305/1176 |
-| 4 | COTAI HERO | 14 | R.MANGIONE | 78/568/3283/2035 |
-| 5 | IRELIA | 17 | M.GRANDIN | 3/261/5/1702 |
-| 7 | BIG ENERGY | 22 | T.TRULLIER | 21/160/99/600 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 2 | SPIRIT GREY | 5,1 | 5,5 | A.ORANI 3e | 5/33/187/231 |
+| 6 | PACO | 5,1 | 4,8 | M.VELON | 28/28/7/49 |
+| 11 | MAESTRO CHOP | 7,1 | 6,9 | P.CHEYER | 109/252/6/1377 |
+| 3 | MANDOKI | 10 | 10 | H.BOUTIN | 14/47/868/196 |
+| 9 | LORLISALSA | 10 | 10 | A.POUCHIN | 6/223/672/285 |
+| 7 | BIG ENERGY | 13 | 22 | T.TRULLIER | 21/160/99/600 |
+| 8 | RIDWAAN | 13 | 12 | C.BOUVIER | 180/263/2/368 |
+| 10 | TIME TO GALI | 13 | 13 | L.BOISSEAU | 36/395/305/1176 |
+| 1 | SECRET FEELING | 14 | 12 | C.LECOEUVRE | 13/261/608/944 |
+| 5 | IRELIA | 15 | 17 | M.GRANDIN | 3/261/5/1702 |
+| 4 | COTAI HERO | 16 | 14 | R.MANGIONE | 78/568/3283/2035 |
 
 ### 4. PRIX YAKOBA
 
