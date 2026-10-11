@@ -1,6 +1,6 @@
 # LYON LA SOIE — 11/10/2026
 
-7 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+7 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -112,17 +112,17 @@
 
 ### 7. PRIX JEAN CUVELETTE
 
-*19h21 · plat · 2400 m · 10 partants · cotes de l'extraction*
+*19h21 · plat · 2400 m · 10 partants · cotes à T−12:56*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | AUSTRALIAN ROMANCE | 2,8 | T.TRULLIER | 21/37/97/644 |
-| 2 | BELLA CRACK | 6,9 | M.VELON | 28/4/13/2221 |
-| 9 | LINDEN BLOSSOM | 7,3 | E.HARDOUIN | 27/125/699/3282 |
-| 3 | COUNTRY CLUB | 7,6 | A.ORANI | 5/70/1242/140 |
-| 5 | ABRONZAL | 8,7 | H.BOUTIN | 14/15/111/273 |
-| 8 | PRINCENOIR | 14 | L.BOISSEAU | 36/26/25/1604 |
-| 4 | JOYPHORIA | 16 | H.BESNIER | 12/5/319/3089 |
-| 7 | SISTINE CHAPEL | 16 | C.LECOEUVRE | 13/19/2608/3735 |
-| 10 | CIRCION CHOP | 22 | R.MANGIONE | 78/252/6/1963 |
-| 6 | DESERONTO | 36 | F.LEFEBVRE | 41/26/153/2309 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 1 | AUSTRALIAN ROMANCE | 3,6 | 2,8 | T.TRULLIER | 21/37/97/644 |
+| 3 | COUNTRY CLUB | 4,4 | 7,6 | A.ORANI | 5/70/1242/140 |
+| 5 | ABRONZAL | 6,1 | 8,7 | H.BOUTIN | 14/15/111/273 |
+| 2 | BELLA CRACK | 9,7 | 6,9 | M.VELON | 28/4/13/2221 |
+| 9 | LINDEN BLOSSOM | 11 | 7,3 | E.HARDOUIN | 27/125/699/3282 |
+| 10 | CIRCION CHOP | 13 | 22 | R.MANGIONE | 78/252/6/1963 |
+| 7 | SISTINE CHAPEL | 16 | 16 | C.LECOEUVRE | 13/19/2608/3735 |
+| 8 | PRINCENOIR | 16 | 14 | L.BOISSEAU | 36/26/25/1604 |
+| 4 | JOYPHORIA | 18 | 16 | H.BESNIER | 12/5/319/3089 |
+| 6 | DESERONTO | 23 | 36 | F.LEFEBVRE | 41/26/153/2309 |
