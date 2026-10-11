@@ -81,16 +81,16 @@
 
 ### 5. GRAND PRIX DE L'HIPPODROME DE LYON-LA-SOIE
 
-*18h05 · plat · 1800 m · 7 partants · cotes à T−1:09*
+*18h05 · plat · 1800 m · 7 partants · cotes à T−0:30*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 7 | ZELZARI | 3,6 | 2,9 | M.GRANDIN | 3/63/216/107 |
-| 5 | TIPINSO | 4,3 | 4,3 | A.ORANI 3e | 5/9/63/4 |
-| 3 | ANSSIO | 4,5 | 6,2 | C.LECOEUVRE | 13/96/20/242 |
-| 4 | SWINGUER | 5 | 6,8 | A.POUCHIN | 6/2/96/6 |
-| 2 | HYPERCORE | 8,8 | 10 | H.BOUTIN | 14/57/3282/1108 |
-| 1 | AIDAN'S PHONE | 19 | 24 | I.MENDIZABAL | 32/5/49/127 |
+| 7 | ZELZARI | 3,4 | 2,9 | M.GRANDIN | 3/63/216/107 |
+| 5 | TIPINSO | 4,6 | 4,3 | A.ORANI 3e | 5/9/63/4 |
+| 3 | ANSSIO | 4,7 | 6,2 | C.LECOEUVRE | 13/96/20/242 |
+| 4 | SWINGUER | 5,3 | 6,8 | A.POUCHIN | 6/2/96/6 |
+| 2 | HYPERCORE | 7,9 | 10 | H.BOUTIN | 14/57/3282/1108 |
+| 1 | AIDAN'S PHONE | 18 | 24 | I.MENDIZABAL | 32/5/49/127 |
 | 6 | CAMBRONNE | 20 | 8,3 | H.BESNIER | 12/5/75/7 |
 
 ### 6. PRIX DE VAULX-EN-VELIN
