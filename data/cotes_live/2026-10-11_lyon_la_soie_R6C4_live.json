@@ -4,89 +4,89 @@
   "reunion": 6,
   "heure_depart": 1791732720000,
   "distance": 1800,
-  "scraped_at": "2026-10-11T17:06:29.634793+02:00",
-  "minutes_avant_depart": 26,
+  "scraped_at": "2026-10-11T17:10:30.051430+02:00",
+  "minutes_avant_depart": 22,
   "participants": [
     {
       "numPmu": 1,
       "nom": "CATHERINE LA MER",
       "cote_live": 10.0,
       "cote_reference": 11.0,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791731182000
+      "timestamp_cote": 1791731402000
     },
     {
       "numPmu": 2,
       "nom": "NIGHT MARY",
-      "cote_live": 11.0,
+      "cote_live": 13.0,
       "cote_reference": 13.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791731182000
+      "timestamp_cote": 1791731402000
     },
     {
       "numPmu": 3,
       "nom": "CAPITOL HILL",
-      "cote_live": 9.4,
+      "cote_live": 9.3,
       "cote_reference": 9.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791731182000
+      "timestamp_cote": 1791731402000
     },
     {
       "numPmu": 4,
       "nom": "JOJO FANTAISIE",
-      "cote_live": 6.7,
+      "cote_live": 6.5,
       "cote_reference": 6.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791731182000
+      "timestamp_cote": 1791731402000
     },
     {
       "numPmu": 5,
       "nom": "SAINT LAURENT",
-      "cote_live": 20.0,
+      "cote_live": 15.0,
       "cote_reference": 19.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791731182000
+      "timestamp_cote": 1791731402000
     },
     {
       "numPmu": 6,
       "nom": "PURPLE DAHLIA",
-      "cote_live": 43.0,
+      "cote_live": 42.0,
       "cote_reference": 40.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791731182000
+      "timestamp_cote": 1791731402000
     },
     {
       "numPmu": 7,
       "nom": "AGNESI",
-      "cote_live": 10.0,
+      "cote_live": 9.8,
       "cote_reference": 15.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791731182000
+      "timestamp_cote": 1791731402000
     },
     {
       "numPmu": 8,
       "nom": "ANAHEIM",
-      "cote_live": 4.7,
+      "cote_live": 5.0,
       "cote_reference": 4.2,
-      "tendance": "+",
+      "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791731182000
+      "timestamp_cote": 1791731402000
     },
     {
       "numPmu": 9,
       "nom": "ON THE DOUBLE",
-      "cote_live": 19.0,
+      "cote_live": 18.0,
       "cote_reference": 18.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791731182000
+      "timestamp_cote": 1791731402000
     },
     {
       "numPmu": 11,
@@ -94,26 +94,26 @@
       "cote_live": 5.0,
       "cote_reference": 4.9,
       "tendance": "-",
-      "favoris": false,
-      "timestamp_cote": 1791731182000
+      "favoris": true,
+      "timestamp_cote": 1791731402000
     },
     {
       "numPmu": 13,
       "nom": "TEMADIVA",
-      "cote_live": 21.0,
+      "cote_live": 23.0,
       "cote_reference": 21.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791731182000
+      "timestamp_cote": 1791731402000
     },
     {
       "numPmu": 14,
       "nom": "NANALA",
-      "cote_live": 31.0,
+      "cote_live": 34.0,
       "cote_reference": 31.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791731182000
+      "timestamp_cote": 1791731402000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -153,6 +153,24 @@
         "11": 5.0,
         "13": 21.0,
         "14": 31.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-11T17:10:30.051430+02:00",
+      "minutes_avant_depart": 21.504019616666668,
+      "cotes": {
+        "1": 10.0,
+        "2": 13.0,
+        "3": 9.3,
+        "4": 6.5,
+        "5": 15.0,
+        "6": 42.0,
+        "7": 9.8,
+        "8": 5.0,
+        "9": 18.0,
+        "11": 5.0,
+        "13": 23.0,
+        "14": 34.0
       }
     }
   ]
