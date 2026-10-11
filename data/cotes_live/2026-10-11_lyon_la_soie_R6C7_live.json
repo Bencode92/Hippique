@@ -4,98 +4,98 @@
   "reunion": 6,
   "heure_depart": 1791739260000,
   "distance": 2400,
-  "scraped_at": "2026-10-11T19:12:43.199942+02:00",
-  "minutes_avant_depart": 8,
+  "scraped_at": "2026-10-11T19:15:23.157418+02:00",
+  "minutes_avant_depart": 6,
   "participants": [
     {
       "numPmu": 1,
       "nom": "AUSTRALIAN ROMANCE",
-      "cote_live": 3.9,
+      "cote_live": 4.0,
       "cote_reference": 3.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": true,
-      "timestamp_cote": 1791738745000
+      "timestamp_cote": 1791738921000
     },
     {
       "numPmu": 2,
       "nom": "BELLA CRACK",
-      "cote_live": 7.4,
+      "cote_live": 7.0,
       "cote_reference": 9.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791738745000
+      "timestamp_cote": 1791738921000
     },
     {
       "numPmu": 3,
       "nom": "COUNTRY CLUB",
       "cote_live": 4.1,
       "cote_reference": 5.9,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791738745000
+      "timestamp_cote": 1791738921000
     },
     {
       "numPmu": 4,
       "nom": "JOYPHORIA",
-      "cote_live": 19.0,
+      "cote_live": 24.0,
       "cote_reference": 15.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791738745000
+      "timestamp_cote": 1791738921000
     },
     {
       "numPmu": 5,
       "nom": "ABRONZAL",
-      "cote_live": 6.6,
+      "cote_live": 6.4,
       "cote_reference": 7.5,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791738745000
+      "timestamp_cote": 1791738921000
     },
     {
       "numPmu": 6,
       "nom": "DESERONTO",
-      "cote_live": 24.0,
+      "cote_live": 25.0,
       "cote_reference": 28.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791738745000
+      "timestamp_cote": 1791738921000
     },
     {
       "numPmu": 7,
       "nom": "SISTINE CHAPEL",
-      "cote_live": 19.0,
+      "cote_live": 18.0,
       "cote_reference": 16.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791738745000
+      "timestamp_cote": 1791738921000
     },
     {
       "numPmu": 8,
       "nom": "PRINCENOIR",
-      "cote_live": 19.0,
+      "cote_live": 17.0,
       "cote_reference": 14.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791738745000
+      "timestamp_cote": 1791738921000
     },
     {
       "numPmu": 9,
       "nom": "LINDEN BLOSSOM",
       "cote_live": 12.0,
       "cote_reference": 9.5,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791738745000
+      "timestamp_cote": 1791738921000
     },
     {
       "numPmu": 10,
       "nom": "CIRCION CHOP",
       "cote_live": 12.0,
       "cote_reference": 16.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791738745000
+      "timestamp_cote": 1791738921000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -128,6 +128,22 @@
         "6": 24.0,
         "7": 19.0,
         "8": 19.0,
+        "9": 12.0,
+        "10": 12.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-11T19:15:23.157418+02:00",
+      "minutes_avant_depart": 5.617272883333333,
+      "cotes": {
+        "1": 4.0,
+        "2": 7.0,
+        "3": 4.1,
+        "4": 24.0,
+        "5": 6.4,
+        "6": 25.0,
+        "7": 18.0,
+        "8": 17.0,
         "9": 12.0,
         "10": 12.0
       }

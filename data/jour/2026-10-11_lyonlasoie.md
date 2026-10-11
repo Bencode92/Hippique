@@ -112,17 +112,17 @@
 
 ### 7. PRIX JEAN CUVELETTE
 
-*19h21 · plat · 2400 m · 10 partants · cotes à T−8:17*
+*19h21 · plat · 2400 m · 10 partants · cotes à T−5:37*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 1 | AUSTRALIAN ROMANCE | 3,9 | 2,8 | T.TRULLIER | 21/37/97/644 |
+| 1 | AUSTRALIAN ROMANCE | 4 | 2,8 | T.TRULLIER | 21/37/97/644 |
 | 3 | COUNTRY CLUB | 4,1 | 7,6 | A.ORANI | 5/70/1242/140 |
-| 5 | ABRONZAL | 6,6 | 8,7 | H.BOUTIN | 14/15/111/273 |
-| 2 | BELLA CRACK | 7,4 | 6,9 | M.VELON | 28/4/13/2221 |
+| 5 | ABRONZAL | 6,4 | 8,7 | H.BOUTIN | 14/15/111/273 |
+| 2 | BELLA CRACK | 7 | 6,9 | M.VELON | 28/4/13/2221 |
 | 9 | LINDEN BLOSSOM | 12 | 7,3 | E.HARDOUIN | 27/125/699/3282 |
 | 10 | CIRCION CHOP | 12 | 22 | R.MANGIONE | 78/252/6/1963 |
-| 4 | JOYPHORIA | 19 | 16 | H.BESNIER | 12/5/319/3089 |
-| 7 | SISTINE CHAPEL | 19 | 16 | C.LECOEUVRE | 13/19/2608/3735 |
-| 8 | PRINCENOIR | 19 | 14 | L.BOISSEAU | 36/26/25/1604 |
-| 6 | DESERONTO | 24 | 36 | F.LEFEBVRE | 41/26/153/2309 |
+| 8 | PRINCENOIR | 17 | 14 | L.BOISSEAU | 36/26/25/1604 |
+| 7 | SISTINE CHAPEL | 18 | 16 | C.LECOEUVRE | 13/19/2608/3735 |
+| 4 | JOYPHORIA | 24 | 16 | H.BESNIER | 12/5/319/3089 |
+| 6 | DESERONTO | 25 | 36 | F.LEFEBVRE | 41/26/153/2309 |
