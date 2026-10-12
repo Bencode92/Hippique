@@ -1,8 +1,8 @@
 # LE CROISE LAROCHE — 12/10/2026
 
-6 courses.
+6 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
@@ -12,18 +12,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | NEW MAN DU CHENE | – | J. DENISOT |
-| 2 | NOBEL DU CHENE | – | G. GELORMINI |
-| 3 | NYRO D'ERPION | – | F. DEHUT |
-| 4 | NARSEO | – | T. PARTAIX |
-| 5 | NASKANO | – | M. HUYGENS |
-| 6 | NEWTON NOIR | – | G. CELIS |
-| 7 | NO LIMIT D'AIRZA | – | J.CH. PITON |
-| 8 | NERO D'ELVINQUIERE | – | P.Y. VERVA |
-| 9 | NEROS DU CHENE | – | DAVID LEFEVRE |
-| 10 | NAKANO BELLO | – | F. OUVRIE |
-| 11 | NINJA LANDIA | – | TH. BEAUCHENE |
-| 12 | NEO MIO | – | M. GRUMETZ |
+| 11 | NINJA LANDIA | 2,5 | TH. BEAUCHENE |
+| 8 | NERO D'ELVINQUIERE | 3,5 | P.Y. VERVA |
+| 10 | NAKANO BELLO | 9,3 | F. OUVRIE |
+| 4 | NARSEO | 12 | T. PARTAIX |
+| 3 | NYRO D'ERPION | 17 | F. DEHUT |
+| 9 | NEROS DU CHENE | 20 | DAVID LEFEVRE |
+| 12 | NEO MIO | 20 | M. GRUMETZ |
+| 2 | NOBEL DU CHENE | 24 | G. GELORMINI |
+| 1 | NEW MAN DU CHENE | 40 | J. DENISOT |
+| 6 | NEWTON NOIR | 40 | G. CELIS |
+| 7 | NO LIMIT D'AIRZA | 40 | J.CH. PITON |
+| 5 | NASKANO | 121 | M. HUYGENS |
 
 ### 2. PRIX DE WAMBRECHIES
 
@@ -31,41 +31,40 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 10 | NONZA | 2,6 | TH. LEVESQUE |
+| 8 | NAIRA D'HUIN | 6,2 | P.Y. VERVA |
+| 3 | NACRE DE BUSSET | 10 | J. KOUBICHE |
+| 9 | NEW QUILLE WINNER | 10 | TH. LAMARE |
+| 11 | NATIVE DU VAL | 10 | A. GARANDEAU |
+| 12 | NAIDE CAILLERIE | 10 | D. BROHIER |
+| 6 | NIOUTE DU PONCELET | 11 | M. VERVA |
+| 7 | NAHITIS D'ALCI | 14 | F. OUVRIE |
+| 2 | NOVATION | 18 | T. OUVRIE |
+| 5 | NAOMI D'HUIN | 65 | J.M. CHAINEUX |
 | 1 | NESMILE | – | G. GELORMINI |
-| 2 | NOVATION | – | T. OUVRIE |
-| 3 | NACRE DE BUSSET | – | J. KOUBICHE |
 | 4 | NANTILLA | – | DAVID LEFEVRE |
-| 5 | NAOMI D'HUIN | – | J.M. CHAINEUX |
-| 6 | NIOUTE DU PONCELET | – | M. VERVA |
-| 7 | NAHITIS D'ALCI | – | F. OUVRIE |
-| 8 | NAIRA D'HUIN | – | P.Y. VERVA |
-| 9 | NEW QUILLE WINNER | – | TH. LAMARE |
-| 10 | NONZA | – | TH. LEVESQUE |
-| 11 | NATIVE DU VAL | – | A. GARANDEAU |
-| 12 | NAIDE CAILLERIE | – | D. BROHIER |
 
 ### 3. PRIX DE RONCQ
 
-*20h00 · attelé · 2700 m · 16 partants · cotes de l'extraction*
+*20h00 · attelé · 2700 m · 15 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MONOGAME | – | F. OUVRIE |
-| 2 | MIMO DU MESNIL | – | F. GUERINEAU |
-| 3 | MIMOSA DE LARRE | – | ADRIEN RAFFEGEAU |
-| 4 | MYSTERIOUS LOVE | – | E. HERBEAU |
-| 5 | MISTRAL DE LARRE | – | G. GELORMINI |
+| 2 | MIMO DU MESNIL | 2,1 | F. GUERINEAU |
+| 7 | MAMBO DU VIVIER | 6,6 | P.Y. VERVA |
+| 8 | MYSTIC DE BLARY | 7,6 | TH. LEVESQUE |
+| 1 | MONOGAME | 14 | F. OUVRIE |
+| 13 | MANGANOU DU DOME | 17 | W. DEVENNE |
+| 10 | MARIO DU CAIEU | 19 | J. KOUBICHE |
+| 14 | MEKONG | 25 | M. VERVA |
+| 9 | MANDARINO FLEURY | 27 | T. PARTAIX |
+| 3 | MIMOSA DE LARRE | 41 | ADRIEN RAFFEGEAU |
+| 11 | MYSTERE DES ARRIS | 41 | V. LEBARQUE |
+| 12 | MAESTRO DE LOU | 41 | A. DUPERCHE |
+| 4 | MYSTERIOUS LOVE | 54 | E. HERBEAU |
+| 5 | MISTRAL DE LARRE | 54 | G. GELORMINI |
+| 16 | MATRIX SAUTREUIL | 65 | J.CH. PITON |
 | 6 | MILO DE NAPPES | – | N. D'HAENENS |
-| 7 | MAMBO DU VIVIER | – | P.Y. VERVA |
-| 8 | MYSTIC DE BLARY | – | TH. LEVESQUE |
-| 9 | MANDARINO FLEURY | – | T. PARTAIX |
-| 10 | MARIO DU CAIEU | – | J. KOUBICHE |
-| 11 | MYSTERE DES ARRIS | – | V. LEBARQUE |
-| 12 | MAESTRO DE LOU | – | A. DUPERCHE |
-| 13 | MANGANOU DU DOME | – | W. DEVENNE |
-| 14 | MEKONG | – | M. VERVA |
-| 15 | MAXIMUS DU DOME | – | PH. DAUGEARD |
-| 16 | MATRIX SAUTREUIL | – | J.CH. PITON |
 
 ### 4. PRIX DE LESQUIN
 
@@ -73,21 +72,21 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | ISSI TOP | – | G. LANNOO |
-| 2 | JUST A DREAM | – | TH. BEAUCHENE |
-| 3 | JADORE D'ISQUES | – | J. KOUBICHE |
-| 4 | HERCULE DE BEA | – | A. DUPERCHE |
-| 5 | JAZZ JENILOU | – | P.Y. VERVA |
-| 6 | JUSTICE BRICKELL | – | L. KOUBICHE |
-| 7 | JOKER D'AMARO | – | T. OUVRIE |
-| 8 | IRINA DE MONTCEAU | – | K. ACHARD |
-| 9 | IN AMERICA | – | D. BROHIER |
-| 10 | ISSY DE TILLARD | – | D. KUMPEN |
-| 11 | HOT SHOT | – | T. DEPYPERE |
-| 12 | JACKPOT JOMUNA | – | G. GELORMINI |
-| 13 | JASMIN DU NORD | – | K. VANDEMOORTELE |
-| 14 | JAGUAR DE ROZEVIC | – | F. OUVRIE |
-| 15 | JEALOUS GIRL | – | E. HERBEAU |
+| 5 | JAZZ JENILOU | 3,1 | P.Y. VERVA |
+| 6 | JUSTICE BRICKELL | 6,1 | L. KOUBICHE |
+| 3 | JADORE D'ISQUES | 11 | J. KOUBICHE |
+| 2 | JUST A DREAM | 12 | TH. BEAUCHENE |
+| 10 | ISSY DE TILLARD | 12 | D. KUMPEN |
+| 7 | JOKER D'AMARO | 13 | T. OUVRIE |
+| 1 | ISSI TOP | 14 | G. LANNOO |
+| 8 | IRINA DE MONTCEAU | 16 | K. ACHARD |
+| 15 | JEALOUS GIRL | 20 | E. HERBEAU |
+| 14 | JAGUAR DE ROZEVIC | 23 | F. OUVRIE |
+| 9 | IN AMERICA | 32 | D. BROHIER |
+| 4 | HERCULE DE BEA | 35 | A. DUPERCHE |
+| 12 | JACKPOT JOMUNA | 35 | G. GELORMINI |
+| 13 | JASMIN DU NORD | 44 | K. VANDEMOORTELE |
+| 11 | HOT SHOT | 352 | T. DEPYPERE |
 
 ### 5. PRIX DE FRETUN
 
@@ -95,20 +94,20 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | JANGO ELEVEN | – | K. ACHARD |
-| 2 | JAZZY MAKER | – | M. GARCON |
-| 3 | JUNIOR DU CHERISAY | – | L. PITON |
-| 4 | JAIZKIBEL | – | A. JANNIER |
-| 5 | JAFAR DE FAEL | – | I. KROUCHI |
-| 6 | JIVAGO DU VIVIER | – | G. DESPREZ |
-| 7 | JOHN ANGOT | – | Mme L. MARION |
-| 8 | JUST BE GOOD | – | LORIS BIZOUX |
-| 9 | JOY EASTER | – | D. THIEFAINE |
-| 10 | JUBILATION | – | L. TRAVERT |
-| 11 | JERICHO D'EM | – | ADRIEN RAFFEGEAU |
-| 12 | JIVAGO TURGOT | – | M. LELOUTRE |
-| 13 | JESSY DE DAUX | – | A. THOLLAS |
-| 14 | JOVIAL DE ROCK | – | E. ROGY |
+| 3 | JUNIOR DU CHERISAY | 3,1 | L. PITON |
+| 4 | JAIZKIBEL | 4,6 | A. JANNIER |
+| 5 | JAFAR DE FAEL | 9,4 | I. KROUCHI |
+| 7 | JOHN ANGOT | 9,4 | Mme L. MARION |
+| 6 | JIVAGO DU VIVIER | 14 | G. DESPREZ |
+| 9 | JOY EASTER | 17 | D. THIEFAINE |
+| 1 | JANGO ELEVEN | 18 | K. ACHARD |
+| 10 | JUBILATION | 21 | L. TRAVERT |
+| 8 | JUST BE GOOD | 23 | LORIS BIZOUX |
+| 2 | JAZZY MAKER | 27 | M. GARCON |
+| 11 | JERICHO D'EM | 31 | ADRIEN RAFFEGEAU |
+| 12 | JIVAGO TURGOT | 47 | M. LELOUTRE |
+| 13 | JESSY DE DAUX | 47 | A. THOLLAS |
+| 14 | JOVIAL DE ROCK | 94 | E. ROGY |
 
 ### 6. PRIX D'OCTOBRE ROSE
 
@@ -116,19 +115,19 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MAM'ZELLEPAZENAISE | – | JULIEN RAFFESTIN |
-| 2 | MYRTILLE DE SEE | – | O. BIZOUX |
-| 3 | MOSTRA DU TRIO | – | TH. LAMARE |
-| 4 | MARQUISE DARLING | – | Mme E. LE BELLER |
-| 5 | MISS DE TREMONT | – | TH. BEAUCHENE |
-| 6 | MISS STORY | – | K. ACHARD |
-| 7 | MAMZELLE DU HOULET | – | P.Y. VERVA |
-| 8 | MADISON DE MAHEY | – | F. GUERINEAU |
-| 9 | MADAME DU CHENE | – | G. GELORMINI |
-| 10 | MADOVA DU RILER | – | A. GARANDEAU |
-| 11 | MANTA BUISSONAY | – | G. LOIX |
-| 12 | MISSION DU CHOQUEL | – | M. GRUMETZ |
-| 13 | MAJESTYLOVE DE REM | – | N. D'HAENENS |
-| 14 | MISS FINE | – | F. OUVRIE |
-| 15 | MELODY DE L'EPINE | – | T. OUVRIE |
-| 16 | MIA DU BLEQUIN | – | M. VERVA |
+| 1 | MAM'ZELLEPAZENAISE | 4,3 | JULIEN RAFFESTIN |
+| 3 | MOSTRA DU TRIO | 6 | TH. LAMARE |
+| 5 | MISS DE TREMONT | 8,7 | TH. BEAUCHENE |
+| 4 | MARQUISE DARLING | 10 | Mme E. LE BELLER |
+| 7 | MAMZELLE DU HOULET | 12 | P.Y. VERVA |
+| 10 | MADOVA DU RILER | 14 | A. GARANDEAU |
+| 14 | MISS FINE | 14 | F. OUVRIE |
+| 6 | MISS STORY | 15 | K. ACHARD |
+| 16 | MIA DU BLEQUIN | 17 | M. VERVA |
+| 12 | MISSION DU CHOQUEL | 19 | M. GRUMETZ |
+| 15 | MELODY DE L'EPINE | 19 | T. OUVRIE |
+| 8 | MADISON DE MAHEY | 29 | F. GUERINEAU |
+| 9 | MADAME DU CHENE | 35 | G. GELORMINI |
+| 2 | MYRTILLE DE SEE | 58 | O. BIZOUX |
+| 11 | MANTA BUISSONAY | 175 | G. LOIX |
+| 13 | MAJESTYLOVE DE REM | 175 | N. D'HAENENS |
