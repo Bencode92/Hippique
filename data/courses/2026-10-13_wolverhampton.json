@@ -1,7 +1,7 @@
 {
   "hippodrome": "WOLVERHAMPTON",
   "type_reunion": "Plat",
-  "date_extraction": "2026-10-13T02:57:10.384933",
+  "date_extraction": "2026-10-13T15:49:31.767436",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/13102026/R5",
   "courses": [
     {
@@ -30,7 +30,10 @@
           "equipement(s)": "A",
           "nb_courses": 28,
           "nb_victoires": 2,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 1.5,
+          "cote_tendance": "-",
+          "cote_reference": 1.1
         },
         {
           "n°": "2",
@@ -50,7 +53,9 @@
           "equipement(s)": "A",
           "nb_courses": 28,
           "nb_victoires": 2,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 11.0,
+          "cote_tendance": "+"
         },
         {
           "n°": "3",
@@ -70,7 +75,10 @@
           "equipement(s)": "",
           "nb_courses": 27,
           "nb_victoires": 2,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 11.0,
+          "cote_tendance": "+",
+          "cote_reference": 11.0
         },
         {
           "n°": "4",
@@ -130,7 +138,10 @@
           "equipement(s)": "",
           "nb_courses": 30,
           "nb_victoires": 2,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 15.0,
+          "cote_tendance": "+",
+          "cote_reference": 22.0
         },
         {
           "n°": "7",
@@ -150,7 +161,9 @@
           "equipement(s)": "A",
           "nb_courses": 43,
           "nb_victoires": 6,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 3.8,
+          "cote_tendance": "+"
         },
         {
           "n°": "8",
@@ -193,6 +206,9 @@
           "nb_places": 2
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -221,7 +237,9 @@
           "equipement(s)": "",
           "nb_courses": 31,
           "nb_victoires": 3,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 27.0,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -241,7 +259,10 @@
           "equipement(s)": "",
           "nb_courses": 19,
           "nb_victoires": 2,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 1.1,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         },
         {
           "n°": "3",
@@ -261,7 +282,10 @@
           "equipement(s)": "",
           "nb_courses": 35,
           "nb_victoires": 4,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 18.0,
+          "cote_tendance": "+",
+          "cote_reference": 46.0
         },
         {
           "n°": "4",
@@ -281,7 +305,10 @@
           "equipement(s)": "",
           "nb_courses": 43,
           "nb_victoires": 7,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 9.2,
+          "cote_tendance": "+",
+          "cote_reference": 11.0
         },
         {
           "n°": "5",
@@ -321,7 +348,10 @@
           "equipement(s)": "A",
           "nb_courses": 66,
           "nb_victoires": 5,
-          "nb_places": 20
+          "nb_places": 20,
+          "cote": 27.0,
+          "cote_tendance": "+",
+          "cote_reference": 23.0
         },
         {
           "n°": "7",
@@ -361,7 +391,10 @@
           "equipement(s)": "A",
           "nb_courses": 22,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 27.0,
+          "cote_tendance": "+",
+          "cote_reference": 23.0
         },
         {
           "n°": "9",
@@ -384,6 +417,9 @@
           "nb_places": 0
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -412,7 +448,10 @@
           "equipement(s)": "",
           "nb_courses": 16,
           "nb_victoires": 4,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 1.1,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         },
         {
           "n°": "2",
@@ -432,7 +471,9 @@
           "equipement(s)": "",
           "nb_courses": 15,
           "nb_victoires": 1,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 54.0,
+          "cote_tendance": ""
         },
         {
           "n°": "3",
@@ -452,7 +493,9 @@
           "equipement(s)": "",
           "nb_courses": 11,
           "nb_victoires": 0,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 10.0,
+          "cote_tendance": "+"
         },
         {
           "n°": "4",
@@ -472,7 +515,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 10.0,
+          "cote_tendance": "+",
+          "cote_reference": 42.0
         },
         {
           "n°": "5",
@@ -492,7 +538,10 @@
           "equipement(s)": "",
           "nb_courses": 16,
           "nb_victoires": 1,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 18.0,
+          "cote_tendance": "-",
+          "cote_reference": 42.0
         },
         {
           "n°": "6",
@@ -512,9 +561,15 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 27.0,
+          "cote_tendance": "+",
+          "cote_reference": 21.0
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -543,7 +598,9 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 10.0,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -563,7 +620,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 10.0,
+          "cote_tendance": "+",
+          "cote_reference": 5.2
         },
         {
           "n°": "3",
@@ -603,7 +663,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 10.0,
+          "cote_tendance": "+",
+          "cote_reference": 5.2
         },
         {
           "n°": "5",
@@ -643,7 +706,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 3.5,
+          "cote_tendance": "+",
+          "cote_reference": 5.2
         },
         {
           "n°": "7",
@@ -675,7 +741,7 @@
           "propriétaire": "JUDDMONTE",
           "entraineur": "HARRY CHARLTON",
           "éleveurs": "",
-          "jockey": "CALLUM RODRIGUEZ",
+          "jockey": "BILLY LOUGHNANE",
           "poids": "56.5 kg",
           "gains": "380300",
           "musique": "2p3p",
@@ -683,7 +749,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 2.6,
+          "cote_tendance": "+",
+          "cote_reference": 5.2
         },
         {
           "n°": "9",
@@ -704,10 +773,14 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 1.1,
-          "cote_tendance": ""
+          "cote": 5.2,
+          "cote_tendance": "+",
+          "cote_reference": 2.6
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -736,7 +809,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 3.2,
+          "cote_tendance": "+",
+          "cote_reference": 6.1
         },
         {
           "n°": "2",
@@ -776,7 +852,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 9.7,
+          "cote_tendance": "+",
+          "cote_reference": 6.1
         },
         {
           "n°": "4",
@@ -796,7 +875,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 9.7,
+          "cote_tendance": "+",
+          "cote_reference": 6.1
         },
         {
           "n°": "5",
@@ -816,7 +898,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 4.8,
+          "cote_tendance": "+",
+          "cote_reference": 3.0
         },
         {
           "n°": "6",
@@ -836,7 +921,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 3.2,
+          "cote_tendance": "+",
+          "cote_reference": 3.0
         },
         {
           "n°": "7",
@@ -848,7 +936,7 @@
           "propriétaire": "MR MOHAMMED JABER",
           "entraineur": "OLLIE SANGSTER",
           "éleveurs": "",
-          "jockey": "CALLUM RODRIGUEZ",
+          "jockey": "HECTOR CROUCH",
           "poids": "60 kg",
           "gains": "319300",
           "musique": "4p6p3p3p",
@@ -856,7 +944,9 @@
           "equipement(s)": "A",
           "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 9.7,
+          "cote_tendance": ""
         },
         {
           "n°": "8",
@@ -899,6 +989,9 @@
           "nb_places": 0
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -927,7 +1020,10 @@
           "equipement(s)": "A",
           "nb_courses": 53,
           "nb_victoires": 9,
-          "nb_places": 15
+          "nb_places": 15,
+          "cote": 7.0,
+          "cote_tendance": "-",
+          "cote_reference": 11.0
         },
         {
           "n°": "2",
@@ -947,7 +1043,10 @@
           "equipement(s)": "A",
           "nb_courses": 13,
           "nb_victoires": 4,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 7.0,
+          "cote_tendance": "+",
+          "cote_reference": 5.7
         },
         {
           "n°": "3",
@@ -967,7 +1066,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 2.8,
+          "cote_tendance": "+",
+          "cote_reference": 3.8
         },
         {
           "n°": "4",
@@ -987,7 +1089,10 @@
           "equipement(s)": "",
           "nb_courses": 31,
           "nb_victoires": 2,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 14.0,
+          "cote_tendance": "+",
+          "cote_reference": 11.0
         },
         {
           "n°": "5",
@@ -1007,7 +1112,10 @@
           "equipement(s)": "A",
           "nb_courses": 20,
           "nb_victoires": 3,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 7.0,
+          "cote_tendance": "+",
+          "cote_reference": 5.7
         },
         {
           "n°": "6",
@@ -1027,7 +1135,10 @@
           "equipement(s)": "",
           "nb_courses": 47,
           "nb_victoires": 4,
-          "nb_places": 18
+          "nb_places": 18,
+          "cote": 3.5,
+          "cote_tendance": "+",
+          "cote_reference": 2.8
         },
         {
           "n°": "7",
@@ -1050,6 +1161,9 @@
           "nb_places": 6
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1118,7 +1232,10 @@
           "equipement(s)": "A",
           "nb_courses": 32,
           "nb_victoires": 3,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 2.3,
+          "cote_tendance": "",
+          "cote_reference": 2.0
         },
         {
           "n°": "4",
@@ -1221,26 +1338,6 @@
           "nb_places": 6
         },
         {
-          "n°": "9",
-          "cheval": "KOFFEE AND KALE H.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: ARDAD et MARA GREY (AZAMOUR)",
-          "corde": "(Corde:04)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261013/WVD/7/20261013-WVD-7-9.png",
-          "propriétaire": "KMS ORANGE LIMITED",
-          "entraineur": "MICHAEL BELL",
-          "éleveurs": "",
-          "jockey": "HECTOR CROUCH",
-          "poids": "60 kg",
-          "gains": "1454400",
-          "musique": "2p7p2p4p6p",
-          "valeur": "60.0",
-          "equipement(s)": "",
-          "nb_courses": 17,
-          "nb_victoires": 1,
-          "nb_places": 7
-        },
-        {
           "n°": "10",
           "cheval": "OUR PLANET H.PU. 4 a.",
           "cheval_url": "",
@@ -1278,7 +1375,10 @@
           "equipement(s)": "",
           "nb_courses": 16,
           "nb_victoires": 2,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 7.0,
+          "cote_tendance": "",
+          "cote_reference": 6.1
         },
         {
           "n°": "12",
@@ -1298,7 +1398,9 @@
           "equipement(s)": "A",
           "nb_courses": 29,
           "nb_victoires": 1,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 7.0,
+          "cote_tendance": ""
         },
         {
           "n°": "13",
@@ -1318,9 +1420,15 @@
           "equipement(s)": "",
           "nb_courses": 15,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 2.3,
+          "cote_tendance": "",
+          "cote_reference": 2.0
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1349,7 +1457,10 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 4.4,
+          "cote_tendance": "",
+          "cote_reference": 4.4
         },
         {
           "n°": "2",
@@ -1389,7 +1500,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 1,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 4.4,
+          "cote_tendance": "",
+          "cote_reference": 4.4
         },
         {
           "n°": "4",
@@ -1412,26 +1526,6 @@
           "nb_places": 5
         },
         {
-          "n°": "5",
-          "cheval": "AURELUNE F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: GHAIYYATH et QUEEN OF CARTHAGE (CAPE CROSS)",
-          "corde": "(Corde:10)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261013/WVD/8/20261013-WVD-8-5.png",
-          "propriétaire": "SHEIKH HAMED DALMOOK AL MAKTOUM",
-          "entraineur": "RICHARD & PETER FAHEY",
-          "éleveurs": "",
-          "jockey": "SHANE GRAY",
-          "poids": "60 kg",
-          "gains": "372300",
-          "musique": "2p3p7p6p3p",
-          "valeur": "60.0",
-          "equipement(s)": "",
-          "nb_courses": 6,
-          "nb_victoires": 0,
-          "nb_places": 3
-        },
-        {
           "n°": "6",
           "cheval": "COXY'S STAR F.PU. 3 a.",
           "cheval_url": "",
@@ -1450,26 +1544,6 @@
           "nb_courses": 7,
           "nb_victoires": 0,
           "nb_places": 1
-        },
-        {
-          "n°": "7",
-          "cheval": "SNAAFY H.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MASSAAT et KODIKOVA (SPEIGHTSTOWN)",
-          "corde": "(Corde:13)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261013/WVD/8/20261013-WVD-8-7.png",
-          "propriétaire": "DAVE LOUGHNANE RACING CLUB",
-          "entraineur": "DAVID LOUGHNANE",
-          "éleveurs": "",
-          "jockey": "HECTOR CROUCH",
-          "poids": "60 kg",
-          "gains": "866800",
-          "musique": "3p8p9p5p9p",
-          "valeur": "60.0",
-          "equipement(s)": "",
-          "nb_courses": 15,
-          "nb_victoires": 1,
-          "nb_places": 4
         },
         {
           "n°": "8",
@@ -1529,7 +1603,10 @@
           "equipement(s)": "A",
           "nb_courses": 8,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 4.4,
+          "cote_tendance": "",
+          "cote_reference": 4.4
         },
         {
           "n°": "11",
@@ -1549,7 +1626,10 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 4.4,
+          "cote_tendance": "",
+          "cote_reference": 4.4
         },
         {
           "n°": "12",
@@ -1569,29 +1649,15 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
-          "n°": "13",
-          "cheval": "CARWYN H.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MASAR et GWENDOLYN (INVINCIBLE SPIRIT)",
-          "corde": "(Corde:12)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261013/WVD/8/20261013-WVD-8-13.png",
-          "propriétaire": "MORRIS AND ALLAN",
-          "entraineur": "PATRICK MORRIS",
-          "éleveurs": "",
-          "jockey": "PADDY BRADLEY",
-          "poids": "58 kg",
-          "gains": "206700",
-          "musique": "0p7p0p9p9p",
-          "valeur": "58.0",
-          "equipement(s)": "A",
-          "nb_courses": 10,
-          "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 0,
+          "cote": 4.4,
+          "cote_tendance": "",
+          "cote_reference": 4.4
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1640,7 +1706,10 @@
           "equipement(s)": "",
           "nb_courses": 52,
           "nb_victoires": 7,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 19.0,
+          "cote_tendance": "",
+          "cote_reference": 18.0
         },
         {
           "n°": "3",
@@ -1680,7 +1749,10 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 3,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 1.1,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         },
         {
           "n°": "5",
@@ -1700,7 +1772,10 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 2,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 5.2,
+          "cote_tendance": "",
+          "cote_reference": 6.8
         },
         {
           "n°": "6",
@@ -1720,7 +1795,10 @@
           "equipement(s)": "A",
           "nb_courses": 8,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 39.0,
+          "cote_tendance": "",
+          "cote_reference": 37.0
         },
         {
           "n°": "7",
@@ -1740,7 +1818,10 @@
           "equipement(s)": "",
           "nb_courses": 27,
           "nb_victoires": 1,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 39.0,
+          "cote_tendance": "",
+          "cote_reference": 37.0
         },
         {
           "n°": "8",
@@ -1823,6 +1904,9 @@
           "nb_places": 0
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     }
   ]
