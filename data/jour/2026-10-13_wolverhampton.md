@@ -12,15 +12,15 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | MIDNIGHT'S DREAM | 1,5 | JACK NICHOLLS | –/–/–/– |
-| 7 | MINTANA | 3,8 | TOM KIELY-MARSHALL | –/–/–/– |
-| 2 | SANDITON | 11 | HARRY VIGORS | –/99/–/– |
-| 3 | CUBAN FIESTA | 11 | JACK DACE | –/–/–/– |
-| 6 | BLUE JAY WAY | 15 | ETHAN TINDALL | –/–/–/– |
-| 4 | SO CHIC | – | LIAM WRIGHT | –/–/–/– |
-| 5 | CREATE | – | CHRISTIAN HOWARTH | –/–/–/– |
-| 8 | LHEBAYEB | – | ROSE DAWES | –/–/–/– |
-| 9 | UNCLE ALBERT | – | TARYN LANGLEY | –/–/–/– |
+| 1 | MIDNIGHT'S DREAM | 3,6 | JACK NICHOLLS | –/–/–/– |
+| 2 | SANDITON | 3,6 | HARRY VIGORS | –/99/–/– |
+| 3 | CUBAN FIESTA | 3,6 | JACK DACE | –/–/–/– |
+| 5 | CREATE | 8,2 | CHRISTIAN HOWARTH | –/–/–/– |
+| 7 | MINTANA | 15 | TOM KIELY-MARSHALL | –/–/–/– |
+| 4 | SO CHIC | 20 | LIAM WRIGHT | –/–/–/– |
+| 6 | BLUE JAY WAY | 31 | ETHAN TINDALL | –/–/–/– |
+| 8 | LHEBAYEB | 35 | ROSE DAWES | –/–/–/– |
+| 9 | UNCLE ALBERT | 40 | TARYN LANGLEY | –/–/–/– |
 
 ### 2. APPRENTICE HANDICAP (CLASS 6) (DIV II)
 
@@ -28,13 +28,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | HOMME DE FER | 1,1 | MOLLY GUNN | –/–/–/– |
-| 4 | ASPIRE TO GLORY | 9,2 | JAKE J. SLAWSON | –/461/–/– |
-| 3 | SNOOZE LANE | 18 | WILLIAM PYLE | –/–/–/– |
-| 1 | HAVANA CLUB | 27 | DONAGH MURPHY | –/–/–/– |
-| 6 | RAVENGLASS | 27 | ASHLEY LEWIS | –/–/–/– |
-| 8 | LADY DELILA | 27 | ALEXANDRA EGAN | –/–/–/– |
-| 5 | FULFORD CROSS | – | TARYN LANGLEY | –/–/–/– |
+| 2 | HOMME DE FER | 1,8 | MOLLY GUNN | –/–/–/– |
+| 4 | ASPIRE TO GLORY | 4,7 | JAKE J. SLAWSON | –/461/–/– |
+| 6 | RAVENGLASS | 9,4 | ASHLEY LEWIS | –/–/–/– |
+| 8 | LADY DELILA | 9,4 | ALEXANDRA EGAN | –/–/–/– |
+| 3 | SNOOZE LANE | 13 | WILLIAM PYLE | –/–/–/– |
+| 1 | HAVANA CLUB | 23 | DONAGH MURPHY | –/–/–/– |
+| 5 | FULFORD CROSS | 23 | TARYN LANGLEY | –/–/–/– |
 | 7 | HOPJES | – | ROSE DAWES | –/–/–/– |
 | 9 | PACIFIC PRINCE | – | OLIVER CARMICHAEL | –/–/–/– |
 
@@ -44,12 +44,12 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | ROYAL COUNTY GLORY | 1,1 | OISIN MURPHY | 144/–/–/– |
-| 3 | COSMIC CLARETS | 10 | CHRISTIAN HOWARTH | –/–/–/– |
-| 4 | IMELDA | 10 | HECTOR CROUCH | 222/847/–/– |
+| 1 | ROYAL COUNTY GLORY | 1,2 | OISIN MURPHY | 144/–/–/– |
+| 3 | COSMIC CLARETS | 9,1 | CHRISTIAN HOWARTH | –/–/–/– |
+| 4 | IMELDA | 11 | HECTOR CROUCH | 222/847/–/– |
 | 5 | SUPREME DANCER | 18 | ETHAN TINDALL | –/–/–/– |
-| 6 | LIGHT THE NIGHT UP | 27 | CLIFFORD LEE | 246/42/–/– |
-| 2 | HAMALEEL | 54 | BILLY LOUGHNANE | 223/284/–/– |
+| 6 | LIGHT THE NIGHT UP | 22 | CLIFFORD LEE | 246/42/–/– |
+| 2 | HAMALEEL | 30 | BILLY LOUGHNANE | 223/284/–/– |
 
 ### 4. NOVICE STAKES (CLASS 4)
 
@@ -57,14 +57,14 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 8 | BELLA ANGELINA | 2,6 | BILLY LOUGHNANE | 223/855/–/– |
-| 6 | MISSMISFORTUNE | 3,5 | KIEREN FOX | –/–/–/2070 |
-| 9 | SOFT LANDING | 5,2 | OISIN MURPHY | 144/875/–/46 |
-| 1 | CEO STEALTH MODE | 10 | TOM KIELY-MARSHALL | –/–/–/– |
-| 2 | BLUE POINT GOLD | 10 | HECTOR CROUCH | 222/834/–/124 |
-| 4 | MR KEBLE | 10 | JONNY PEATE | –/–/–/– |
+| 9 | SOFT LANDING | 3,2 | OISIN MURPHY | 144/875/–/46 |
+| 6 | MISSMISFORTUNE | 4,8 | KIEREN FOX | –/–/–/2070 |
+| 8 | BELLA ANGELINA | 4,8 | BILLY LOUGHNANE | 223/855/–/– |
+| 1 | CEO STEALTH MODE | 9,7 | TOM KIELY-MARSHALL | –/–/–/– |
+| 2 | BLUE POINT GOLD | 9,7 | HECTOR CROUCH | 222/834/–/124 |
+| 4 | MR KEBLE | 9,7 | JONNY PEATE | –/–/–/– |
+| 5 | PANAME | 9,7 | KAIYA FRASER | 412/259/–/– |
 | 3 | EAGLE THUNDER | – | DARRAGH KEENAN | 195/448/–/– |
-| 5 | PANAME | – | KAIYA FRASER | 412/259/–/– |
 | 7 | RED MELODY | – | BEN FFRENCH DAVIS | –/–/–/– |
 
 ### 5. HOTEL & CONFERENCING AT WOLVERHAMPTON RACECOURSE EBF MAIDEN STAKES
@@ -73,12 +73,12 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | AL WIDYAN | 3,2 | OISIN MURPHY | 144/116/–/– |
-| 6 | MUHANDES | 3,2 | BILLY LOUGHNANE | 223/433/–/– |
-| 5 | ICY MOON | 4,8 | SEAN DYLAN BOWEN | –/–/–/– |
-| 3 | GUT REACTION | 9,7 | FINLEY MARSH | –/447/–/48 |
-| 4 | HIS NAME IS RIO | 9,7 | GINA MANGAN | –/653/–/– |
-| 7 | SEA PALACE | 9,7 | HECTOR CROUCH | 222/307/–/4827 |
+| 1 | AL WIDYAN | 2,6 | OISIN MURPHY | 144/116/–/– |
+| 6 | MUHANDES | 3,5 | BILLY LOUGHNANE | 223/433/–/– |
+| 5 | ICY MOON | 5,2 | SEAN DYLAN BOWEN | –/–/–/– |
+| 3 | GUT REACTION | 10 | FINLEY MARSH | –/447/–/48 |
+| 4 | HIS NAME IS RIO | 10 | GINA MANGAN | –/653/–/– |
+| 7 | SEA PALACE | 10 | HECTOR CROUCH | 222/307/–/4827 |
 | 2 | COSMOCRAT | – | KIERAN O'NEILL | 373/–/–/– |
 | 8 | THE RUSTY ROLEEX | – | JACK NICHOLLS | –/–/–/– |
 | 9 | TRUST IN FAR | – | CLIFFORD LEE | 246/–/–/– |
@@ -139,12 +139,12 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 4 | BRADBURY | 1,1 | BILLY LOUGHNANE | 223/221/–/– |
-| 5 | MIDNIGHT MEDIA | 5,2 | OISIN MURPHY | 144/–/–/– |
-| 2 | YOKKELL | 19 | HARRY DAVIES | 381/–/–/– |
-| 6 | PIPILY | 39 | JACK MITCHELL | 314/–/–/– |
-| 7 | BRODIE'S BOY | 39 | KIERAN O'NEILL | 373/–/–/– |
-| 1 | CURRUMBIN | – | DARRAGH KEENAN | 195/–/–/– |
+| 4 | BRADBURY | 1,2 | BILLY LOUGHNANE | 223/221/–/– |
+| 5 | MIDNIGHT MEDIA | 4,5 | OISIN MURPHY | 144/–/–/– |
+| 1 | CURRUMBIN | 21 | DARRAGH KEENAN | 195/–/–/– |
+| 2 | YOKKELL | 21 | HARRY DAVIES | 381/–/–/– |
+| 6 | PIPILY | 42 | JACK MITCHELL | 314/–/–/– |
+| 7 | BRODIE'S BOY | 42 | KIERAN O'NEILL | 373/–/–/– |
 | 3 | MAJD AL KAZEM | – | CLIFFORD LEE | 246/–/–/– |
 | 8 | CHARLES MORIN | – | MASON PAETEL | –/–/–/– |
 | 9 | NYMPHAEA | – | LIAM WRIGHT | –/448/–/– |
