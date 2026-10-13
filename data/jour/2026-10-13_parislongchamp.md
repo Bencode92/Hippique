@@ -1,6 +1,6 @@
 # PARISLONGCHAMP — 13/10/2026
 
-9 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -88,26 +88,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DE PRE-SAINT-GERVAIS
 
-*16h15 · plat · 2400 m · 16 partants · cotes de l'extraction*
+*16h15 · plat · 2400 m · 16 partants · cotes à T−29:39*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 2 | ATHINEOS | 2,4 | 2,56 | -6,4 % | M.VELON | 28/117/582/844 |
-| 1 | GOD SAVE THE QUEEN | 4,9 | 5,54 | -11,6 % | A.POUCHIN | 6/168/520/376 |
-| 12 | MAYAMAR | 12 | 15,65 | -23,3 % | C.LECOEUVRE | 13/135/1018/1541 |
-| 15 | CAMELARUA | 12 | 14,31 | -16,1 % | H.JOURNIAC | 43/8/394/281 |
-| 16 | MAJESTIC HILL | 12 | 15,65 | -23,3 % | A.HAMELIN | 22/297/873/458 |
-| 3 | MISSION D'ESPOIR | 24 | 35,11 | -31,6 % | C.DEMURO | 1/200/858/1322 |
-| 5 | COCOON QUATRE | 24 | 32,93 | -27,1 % | A.LEMAITRE | 11/186/751/1654 |
-| 6 | SPRING LILY | 24 | 37,73 | -36,4 % | J.MOUTARD | 61/70/107/160 |
-| 9 | SHALAA DANCER | 24 | 27,95 | -14,1 % | Y.ROUSSET | 62/122/1076/133 |
-| 10 | MISS BRESIL DELF | 24 | 35,11 | -31,6 % | E.HARDOUIN | 27/168/2117/335 |
-| 13 | ELOISE | 24 | 27,95 | -14,1 % | D.PROVOST 5e | 33/34/909/1254 |
-| 14 | SHACKLETON | 24 | 35,11 | -31,6 % | L.PLOMMEE | 31/273/158/337 |
-| 4 | JAZZMEN | – | – |  | D.SANTIAGO | 15/273/1509/337 |
-| 7 | LOUIS DEUX | – | – |  | H.BOUTIN | 14/136/11/1411 |
-| 8 | HONGUEMARE | – | – |  | L.BAILS | 77/211/8/181 |
-| 11 | PRINCESS KARA | – | – |  | H.LEBOUC | 19/114/1596/1754 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 15 | CAMELARUA | 8,3 | 12 | 7,84 | **+5,9 %** | H.JOURNIAC | 43/8/394/281 |
+| 12 | MAYAMAR | 9,1 | 12 | 11,19 | -18,7 % | C.LECOEUVRE | 13/135/1018/1541 |
+| 2 | ATHINEOS | 9,5 | 2,4 | 12,59 | -24,6 % | M.VELON | 28/117/582/844 |
+| 9 | SHALAA DANCER | 9,9 | 24 | 9,97 | -0,7 % | Y.ROUSSET | 62/122/1076/133 |
+| 10 | MISS BRESIL DELF | 11 | 24 | 13,98 | -21,3 % | E.HARDOUIN | 27/168/2117/335 |
+| 8 | HONGUEMARE | 12 | – | 14,17 | -15,3 % | L.BAILS | 77/211/8/181 |
+| 1 | GOD SAVE THE QUEEN | 14 | 4,9 | 18,57 | -24,6 % | A.POUCHIN | 6/168/520/376 |
+| 3 | MISSION D'ESPOIR | 14 | 24 | 18,57 | -24,6 % | C.DEMURO | 1/200/858/1322 |
+| 11 | PRINCESS KARA | 15 | – | 16,12 | -6,9 % | H.LEBOUC | 19/114/1596/1754 |
+| 13 | ELOISE | 17 | 24 | 18,63 | -8,7 % | D.PROVOST 5e | 33/34/909/1254 |
+| 7 | LOUIS DEUX | 18 | – | 24,93 | -27,8 % | H.BOUTIN | 14/136/11/1411 |
+| 4 | JAZZMEN | 19 | – | 26,54 | -28,4 % | D.SANTIAGO | 15/273/1509/337 |
+| 5 | COCOON QUATRE | 21 | 24 | 27,97 | -24,9 % | A.LEMAITRE | 11/186/751/1654 |
+| 16 | MAJESTIC HILL | 21 | 12 | 29,81 | -29,6 % | A.HAMELIN | 22/297/873/458 |
+| 14 | SHACKLETON | 22 | 24 | 31,45 | -30,1 % | L.PLOMMEE | 31/273/158/337 |
+| 6 | SPRING LILY | 39 | 24 | 64,67 | -39,7 % | J.MOUTARD | 61/70/107/160 |
 
 ### 6. PRIX DE BOLIVAR
 
