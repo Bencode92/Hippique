@@ -136,21 +136,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 1 | TIC TAC | 4,3 | 4,54 | -5,4 % | S.PASQUIER | 23/8/152/608 |
-| 4 | HAPPY LADY | 5,8 | 6,14 | -5,5 % | PC.BOUDOT | 8/64/14/23 |
-| 8 | ANCTOT | 8,3 | 10,76 | -22,9 % | M.VELON | 28/327/173/530 |
-| 6 | SEEYOUGO | 8,9 | 10,71 | -16,9 % | P.BAZIRE | 58/106/737/817 |
-| 3 | GOT MAN | 10 | 10,52 | -5,0 % | J.MOUTARD | 61/106/70/121 |
-| 16 | BRIGHTON SPORT | 10 | 11,48 | -12,9 % | B.MARIE | 69/176/408/1454 |
-| 10 | LAST SINN | 13 | 17,06 | -23,8 % | M.BARZALONA 3e | 2/117/146/235 |
-| 14 | MAITRE D'ARMES | 14 | 17,49 | -20,0 % | L.BAILS | 77/211/42/181 |
-| 11 | QUEEN D'AUNOU | 25 | 31,74 | -21,2 % | R.MANGIONE | 78/75/1165/1066 |
-| 2 | GRAND TERROIR | 32 | 41,96 | -23,7 % | A.LEMAITRE | 11/60/12/1376 |
-| 7 | KING KARA | 40 | 53,79 | -25,6 % | H.LEBOUC | 19/114/1596/1754 |
-| 15 | BOUSSANT | 41 | 55,27 | -25,8 % | A.HAMELIN | 22/23/58/566 |
-| 13 | COMBERMERE | 53 | 80,38 | -34,1 % | H.BOUTIN | 14/126/953/218 |
-| 9 | SILVER BEAUTY | 61 | 85,36 | -28,5 % | D.SANTIAGO | 15/273/407/337 |
-| 5 | PAPILLE D'ARGENT | 74 | 114,61 | -35,4 % | E.GAY LE BRETON | –/168/–/1816 |
+| 4 | HAPPY LADY | 5,1 | 5,65 | -9,8 % | PC.BOUDOT | 8/64/14/23 |
+| 1 | TIC TAC | 5,1 | 5,24 | -2,7 % | S.PASQUIER | 23/8/152/608 |
+| 6 | SEEYOUGO | 7,2 | 8,33 | -13,5 % | P.BAZIRE | 58/106/737/817 |
+| 8 | ANCTOT | 8,6 | 11,16 | -23,0 % | M.VELON | 28/327/173/530 |
+| 16 | BRIGHTON SPORT | 11 | 12,77 | -13,9 % | B.MARIE | 69/176/408/1454 |
+| 3 | GOT MAN | 12 | 14,13 | -15,1 % | J.MOUTARD | 61/106/70/121 |
+| 10 | LAST SINN | 12 | 15,45 | -22,3 % | M.BARZALONA 3e | 2/117/146/235 |
+| 14 | MAITRE D'ARMES | 13 | 14,60 | -11,0 % | L.BAILS | 77/211/42/181 |
+| 11 | QUEEN D'AUNOU | 24 | 30,15 | -20,4 % | R.MANGIONE | 78/75/1165/1066 |
+| 15 | BOUSSANT | 30 | 38,84 | -22,8 % | A.HAMELIN | 22/23/58/566 |
+| 2 | GRAND TERROIR | 37 | 49,11 | -24,7 % | A.LEMAITRE | 11/60/12/1376 |
+| 7 | KING KARA | 44 | 59,46 | -26,0 % | H.LEBOUC | 19/114/1596/1754 |
+| 13 | COMBERMERE | 62 | 94,67 | -34,5 % | H.BOUTIN | 14/126/953/218 |
+| 9 | SILVER BEAUTY | 68 | 90,91 | -25,2 % | D.SANTIAGO | 15/273/407/337 |
+| 5 | PAPILLE D'ARGENT | 75 | 115,72 | -35,2 % | E.GAY LE BRETON | –/168/–/1816 |
 
 ### 8. PRIX DU PASSAGE FEYDEAU
 
@@ -158,18 +158,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 9 | ALJADARA | 4,9 | 7,4 | 5,49 | -10,8 % | T.PICCONE | 9/6/–/6 |
-| 7 | HIGHBARI | 5,5 | 5,2 | 6,01 | -8,5 % | D.PROVOST | 33/34/79/2017 |
-| 10 | AVENTINO | 6 | 15 | 6,37 | -5,9 % | M.GUYON 5e | 4/41/338/348 |
-| 6 | ARTISTIC MAN | 6,3 | 7,2 | 6,73 | -6,5 % | H.LEBOUC | 19/299/62/2285 |
-| 8 | HAYEJOHN | 12 | 10 | 13,36 | -10,2 % | D.SANTIAGO | 15/21/208/38 |
-| 12 | LEOPARDUCCIO | 13 | 8,3 | 14,31 | -9,1 % | F.VALLE SKAR | 35/90/1070/1989 |
-| 13 | NOBLE MEMORY | 14 | 23 | 15,16 | -7,6 % | C.DEMURO | 1/57/71/360 |
-| 1 | FAMILY SECRET | 16 | 7,6 | 19,38 | -17,4 % | C.LECOEUVRE | 13/57/142/144 |
-| 4 | FRANCISCANO | 18 | 12 | 23,85 | -24,5 % | S.PASQUIER | 23/25/80/17 |
-| 11 | LORD SINCLAIR | 24 | 15 | 29,04 | -17,4 % | PC.BOUDOT 3e | 8/159/20/465 |
-| 2 | BLANC CARAT | 28 | 20 | 41,48 | -32,5 % | P.BAZIRE | 58/428/418/1010 |
-| 5 | KIANDA | 62 | 43 | 84,19 | -26,4 % | S.CHUETTE | 166/23/58/566 |
+| 9 | ALJADARA | 4,9 | 4,6 | 5,49 | -10,8 % | T.PICCONE | 9/6/–/6 |
+| 7 | HIGHBARI | 5,5 | 6,1 | 6,26 | -12,1 % | D.PROVOST | 33/34/79/2017 |
+| 10 | AVENTINO | 6 | 6,1 | 6,37 | -5,9 % | M.GUYON 5e | 4/41/338/348 |
+| 6 | ARTISTIC MAN | 6,3 | 6,3 | 6,73 | -6,5 % | H.LEBOUC | 19/299/62/2285 |
+| 8 | HAYEJOHN | 12 | 13 | 14,60 | -17,8 % | D.SANTIAGO | 15/21/208/38 |
+| 12 | LEOPARDUCCIO | 13 | 10 | 14,31 | -9,1 % | F.VALLE SKAR | 35/90/1070/1989 |
+| 13 | NOBLE MEMORY | 14 | 13 | 16,57 | -15,5 % | C.DEMURO | 1/57/71/360 |
+| 1 | FAMILY SECRET | 16 | 17 | 20,26 | -21,0 % | C.LECOEUVRE | 13/57/142/144 |
+| 4 | FRANCISCANO | 18 | 19 | 23,85 | -24,5 % | S.PASQUIER | 23/25/80/17 |
+| 11 | LORD SINCLAIR | 24 | 25 | 29,04 | -17,4 % | PC.BOUDOT 3e | 8/159/20/465 |
+| 2 | BLANC CARAT | 28 | 33 | 41,48 | -32,5 % | P.BAZIRE | 58/428/418/1010 |
+| 5 | KIANDA | 62 | 63 | 84,19 | -26,4 % | S.CHUETTE | 166/23/58/566 |
 
 ### 9. PRIX DE LA GALERIE SAINT-MARC
 
@@ -177,15 +177,15 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | PRIMA LUCE | 3 | 4,1 | 3,44 | -12,7 % | M.BARZALONA 2e | 2/14/13/225 |
-| 9 | ARKEN | 5 | 6 | 5,90 | -15,3 % | F.VALLE SKAR | 35/163/26/1513 |
-| 7 | THALIA | 10 | 11 | 13,54 | -26,2 % | B.MARIE | 69/176/23/1890 |
-| 8 | CASARES | 10 | 8,8 | 11,13 | -10,2 % | A.HAMELIN | 22/74/589/17 |
-| 6 | EL VEGAS | 11 | 12 | 12,64 | -13,0 % | C.DEMURO | 1/48/715/993 |
-| 12 | BOAVISTA | 13 | 13 | 15,05 | -13,6 % | L.BOISSEAU | 36/53/116/2900 |
-| 1 | AZOV | 14 | 26 | 17,18 | -18,5 % | M.FOREST | 72/309/333/365 |
-| 4 | FASTER | 16 | 6 | 21,00 | -23,8 % | D.SANTIAGO | 15/137/1392/226 |
-| 5 | SQUARE D'ANVERS | 21 | 23 | 31,56 | -33,5 % | M.GRANDIN | 3/133/131/47 |
-| 2 | DOLLAR DES BOIS | 26 | 19 | 37,55 | -30,8 % | A.POUCHIN | 6/59/963/1834 |
-| 13 | THE WHEEL | 43 | 18 | 67,76 | -36,5 % | E.HARDOUIN | 27/197/967/3165 |
-| 11 | ALINKA | 50 | 41 | 70,74 | -29,3 % | L.GALLO | 45/15/41/2186 |
+| 3 | PRIMA LUCE | 3 | 3,1 | 3,22 | -6,7 % | M.BARZALONA 2e | 2/14/13/225 |
+| 9 | ARKEN | 5 | 4,1 | 5,90 | -15,3 % | F.VALLE SKAR | 35/163/26/1513 |
+| 7 | THALIA | 10 | 10 | 13,54 | -26,2 % | B.MARIE | 69/176/23/1890 |
+| 8 | CASARES | 10 | 10 | 10,66 | -6,1 % | A.HAMELIN | 22/74/589/17 |
+| 6 | EL VEGAS | 11 | 11 | 13,80 | -20,3 % | C.DEMURO | 1/48/715/993 |
+| 12 | BOAVISTA | 13 | 15 | 15,75 | -17,4 % | L.BOISSEAU | 36/53/116/2900 |
+| 1 | AZOV | 14 | 14 | 18,80 | -25,5 % | M.FOREST | 72/309/333/365 |
+| 4 | FASTER | 16 | 19 | 21,00 | -23,8 % | D.SANTIAGO | 15/137/1392/226 |
+| 5 | SQUARE D'ANVERS | 21 | 20 | 31,56 | -33,5 % | M.GRANDIN | 3/133/131/47 |
+| 2 | DOLLAR DES BOIS | 26 | 32 | 37,55 | -30,8 % | A.POUCHIN | 6/59/963/1834 |
+| 13 | THE WHEEL | 43 | 51 | 64,62 | -33,5 % | E.HARDOUIN | 27/197/967/3165 |
+| 11 | ALINKA | 50 | 64 | 67,46 | -25,9 % | L.GALLO | 45/15/41/2186 |
