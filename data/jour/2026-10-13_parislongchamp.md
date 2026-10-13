@@ -173,19 +173,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 9. PRIX DE LA GALERIE SAINT-MARC
 
-*18h35 · plat · 1600 m · 12 partants · cotes à T−21:43*
+*18h35 · plat · 1600 m · 12 partants · cotes à T−17:04*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | PRIMA LUCE | 4,5 | 4,1 | 5,15 | -12,7 % | M.BARZALONA 2e | 2/14/13/225 |
-| 9 | ARKEN | 6,6 | 6 | 7,63 | -13,6 % | F.VALLE SKAR | 35/163/26/1513 |
-| 8 | CASARES | 7,7 | 8,8 | 7,44 | **+3,5 %** | A.HAMELIN | 22/74/589/17 |
-| 4 | FASTER | 8,6 | 6 | 9,55 | -9,9 % | D.SANTIAGO | 15/137/1392/226 |
-| 6 | EL VEGAS | 9,5 | 12 | 10,46 | -9,2 % | C.DEMURO | 1/48/715/993 |
-| 1 | AZOV | 10 | 26 | 11,38 | -12,2 % | M.FOREST | 72/309/333/365 |
-| 7 | THALIA | 10 | 11 | 13,30 | -24,8 % | B.MARIE | 69/176/23/1890 |
-| 12 | BOAVISTA | 15 | 13 | 17,46 | -14,1 % | L.BOISSEAU | 36/53/116/2900 |
-| 5 | SQUARE D'ANVERS | 22 | 23 | 32,70 | -32,7 % | M.GRANDIN | 3/133/131/47 |
-| 2 | DOLLAR DES BOIS | 24 | 19 | 33,65 | -28,7 % | A.POUCHIN | 6/59/963/1834 |
-| 13 | THE WHEEL | 27 | 18 | 36,04 | -25,1 % | E.HARDOUIN | 27/197/967/3165 |
-| 11 | ALINKA | 33 | 41 | 40,08 | -17,7 % | L.GALLO | 45/15/41/2186 |
+| 3 | PRIMA LUCE | 4,2 | 4,1 | 4,80 | -12,6 % | M.BARZALONA 2e | 2/14/13/225 |
+| 9 | ARKEN | 7 | 6 | 8,22 | -14,8 % | F.VALLE SKAR | 35/163/26/1513 |
+| 8 | CASARES | 8,6 | 8,8 | 8,48 | **+1,4 %** | A.HAMELIN | 22/74/589/17 |
+| 4 | FASTER | 8,8 | 6 | 10,75 | -18,2 % | D.SANTIAGO | 15/137/1392/226 |
+| 6 | EL VEGAS | 9,5 | 12 | 10,52 | -9,7 % | C.DEMURO | 1/48/715/993 |
+| 1 | AZOV | 10 | 26 | 11,45 | -12,7 % | M.FOREST | 72/309/333/365 |
+| 7 | THALIA | 10 | 11 | 13,38 | -25,2 % | B.MARIE | 69/176/23/1890 |
+| 12 | BOAVISTA | 15 | 13 | 17,57 | -14,6 % | L.BOISSEAU | 36/53/116/2900 |
+| 2 | DOLLAR DES BOIS | 22 | 19 | 30,63 | -28,2 % | A.POUCHIN | 6/59/963/1834 |
+| 5 | SQUARE D'ANVERS | 22 | 23 | 32,90 | -33,1 % | M.GRANDIN | 3/133/131/47 |
+| 11 | ALINKA | 25 | 41 | 29,47 | -15,2 % | L.GALLO | 45/15/41/2186 |
+| 13 | THE WHEEL | 26 | 18 | 34,73 | -25,1 % | E.HARDOUIN | 27/197/967/3165 |
