@@ -4,98 +4,98 @@
   "reunion": 1,
   "heure_depart": 1791907200000,
   "distance": 1600,
-  "scraped_at": "2026-10-13T17:38:36.333565+02:00",
-  "minutes_avant_depart": 21,
+  "scraped_at": "2026-10-13T17:42:36.809930+02:00",
+  "minutes_avant_depart": 17,
   "participants": [
     {
       "numPmu": 1,
       "nom": "FAMILY SECRET",
-      "cote_live": 9.2,
+      "cote_live": 10.0,
       "cote_reference": 8.1,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791905890000
+      "timestamp_cote": 1791906132000
     },
     {
       "numPmu": 2,
       "nom": "BLANC CARAT",
-      "cote_live": 21.0,
+      "cote_live": 22.0,
       "cote_reference": 18.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791905890000
+      "timestamp_cote": 1791906132000
     },
     {
       "numPmu": 4,
       "nom": "FRANCISCANO",
       "cote_live": 9.6,
       "cote_reference": 12.0,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791905890000
+      "timestamp_cote": 1791906132000
     },
     {
       "numPmu": 5,
       "nom": "KIANDA",
-      "cote_live": 40.0,
+      "cote_live": 46.0,
       "cote_reference": 44.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791905890000
+      "timestamp_cote": 1791906132000
     },
     {
       "numPmu": 6,
       "nom": "ARTISTIC MAN",
-      "cote_live": 7.8,
+      "cote_live": 8.4,
       "cote_reference": 8.0,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791905890000
+      "timestamp_cote": 1791906132000
     },
     {
       "numPmu": 7,
       "nom": "HIGHBARI",
-      "cote_live": 5.7,
+      "cote_live": 5.5,
       "cote_reference": 5.6,
-      "tendance": "-",
+      "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791905890000
+      "timestamp_cote": 1791906132000
     },
     {
       "numPmu": 8,
       "nom": "HAYEJOHN",
       "cote_live": 10.0,
       "cote_reference": 10.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791905890000
+      "timestamp_cote": 1791906132000
     },
     {
       "numPmu": 9,
       "nom": "ALJADARA",
-      "cote_live": 7.3,
+      "cote_live": 7.4,
       "cote_reference": 7.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791905890000
+      "timestamp_cote": 1791906132000
     },
     {
       "numPmu": 10,
       "nom": "AVENTINO",
-      "cote_live": 12.0,
+      "cote_live": 9.2,
       "cote_reference": 14.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791905890000
+      "timestamp_cote": 1791906132000
     },
     {
       "numPmu": 11,
       "nom": "LORD SINCLAIR",
-      "cote_live": 14.0,
+      "cote_live": 16.0,
       "cote_reference": 12.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791905890000
+      "timestamp_cote": 1791906132000
     },
     {
       "numPmu": 12,
@@ -104,16 +104,16 @@
       "cote_reference": 9.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791905890000
+      "timestamp_cote": 1791906132000
     },
     {
       "numPmu": 13,
       "nom": "NOBLE MEMORY",
       "cote_live": 13.0,
       "cote_reference": 13.0,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791905890000
+      "timestamp_cote": 1791906132000
     }
   ],
   "hippodrome": "PARISLONGCHAMP",
@@ -168,6 +168,24 @@
         "9": 7.3,
         "10": 12.0,
         "11": 14.0,
+        "12": 10.0,
+        "13": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-13T17:42:36.809930+02:00",
+      "minutes_avant_depart": 17.39939808333333,
+      "cotes": {
+        "1": 10.0,
+        "2": 22.0,
+        "4": 9.6,
+        "5": 46.0,
+        "6": 8.4,
+        "7": 5.5,
+        "8": 10.0,
+        "9": 7.4,
+        "10": 9.2,
+        "11": 16.0,
         "12": 10.0,
         "13": 13.0
       }
