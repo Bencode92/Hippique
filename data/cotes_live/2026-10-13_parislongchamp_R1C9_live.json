@@ -4,116 +4,116 @@
   "reunion": 1,
   "heure_depart": 1791909300000,
   "distance": 1600,
-  "scraped_at": "2026-10-13T18:17:56.427223+02:00",
-  "minutes_avant_depart": 17,
+  "scraped_at": "2026-10-13T18:21:56.708544+02:00",
+  "minutes_avant_depart": 13,
   "participants": [
     {
       "numPmu": 1,
       "nom": "AZOV",
       "cote_live": 10.0,
       "cote_reference": 17.0,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791908263000
+      "timestamp_cote": 1791908505000
     },
     {
       "numPmu": 2,
       "nom": "DOLLAR DES BOIS",
-      "cote_live": 22.0,
+      "cote_live": 23.0,
       "cote_reference": 21.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791908263000
+      "timestamp_cote": 1791908505000
     },
     {
       "numPmu": 3,
       "nom": "PRIMA LUCE",
-      "cote_live": 4.2,
+      "cote_live": 4.4,
       "cote_reference": 4.4,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791908263000
+      "timestamp_cote": 1791908505000
     },
     {
       "numPmu": 4,
       "nom": "FASTER",
-      "cote_live": 8.8,
+      "cote_live": 9.0,
       "cote_reference": 7.0,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791908263000
+      "timestamp_cote": 1791908505000
     },
     {
       "numPmu": 5,
       "nom": "SQUARE D'ANVERS",
-      "cote_live": 22.0,
+      "cote_live": 21.0,
       "cote_reference": 23.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791908263000
+      "timestamp_cote": 1791908505000
     },
     {
       "numPmu": 6,
       "nom": "EL VEGAS",
-      "cote_live": 9.5,
+      "cote_live": 8.4,
       "cote_reference": 13.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791908263000
+      "timestamp_cote": 1791908505000
     },
     {
       "numPmu": 7,
       "nom": "THALIA",
-      "cote_live": 10.0,
+      "cote_live": 9.7,
       "cote_reference": 10.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791908263000
+      "timestamp_cote": 1791908505000
     },
     {
       "numPmu": 8,
       "nom": "CASARES",
-      "cote_live": 8.6,
+      "cote_live": 8.5,
       "cote_reference": 7.2,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791908263000
+      "timestamp_cote": 1791908505000
     },
     {
       "numPmu": 9,
       "nom": "ARKEN",
-      "cote_live": 7.0,
+      "cote_live": 7.1,
       "cote_reference": 6.2,
-      "tendance": "",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791908263000
+      "timestamp_cote": 1791908505000
     },
     {
       "numPmu": 11,
       "nom": "ALINKA",
-      "cote_live": 25.0,
+      "cote_live": 26.0,
       "cote_reference": 35.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791908263000
+      "timestamp_cote": 1791908505000
     },
     {
       "numPmu": 12,
       "nom": "BOAVISTA",
       "cote_live": 15.0,
       "cote_reference": 13.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791908263000
+      "timestamp_cote": 1791908505000
     },
     {
       "numPmu": 13,
       "nom": "THE WHEEL",
-      "cote_live": 26.0,
+      "cote_live": 27.0,
       "cote_reference": 20.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791908263000
+      "timestamp_cote": 1791908505000
     }
   ],
   "hippodrome": "PARISLONGCHAMP",
@@ -188,6 +188,24 @@
         "11": 25.0,
         "12": 15.0,
         "13": 26.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-13T18:21:56.708544+02:00",
+      "minutes_avant_depart": 13.065935533333334,
+      "cotes": {
+        "1": 10.0,
+        "2": 23.0,
+        "3": 4.4,
+        "4": 9.0,
+        "5": 21.0,
+        "6": 8.4,
+        "7": 9.7,
+        "8": 8.5,
+        "9": 7.1,
+        "11": 26.0,
+        "12": 15.0,
+        "13": 27.0
       }
     }
   ]
