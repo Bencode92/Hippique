@@ -1,6 +1,6 @@
 # PARISLONGCHAMP — 13/10/2026
 
-9 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -173,19 +173,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 9. PRIX DE LA GALERIE SAINT-MARC
 
-*18h35 · plat · 1600 m · 12 partants · cotes de l'extraction*
+*18h35 · plat · 1600 m · 12 partants · cotes à T−29:43*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 3 | PRIMA LUCE | 4,1 | 4,70 | -12,8 % | M.BARZALONA 2e | 2/14/13/225 |
-| 4 | FASTER | 6 | 6,39 | -6,0 % | D.SANTIAGO | 15/137/1392/226 |
-| 9 | ARKEN | 6 | 6,91 | -13,2 % | F.VALLE SKAR | 35/163/26/1513 |
-| 8 | CASARES | 8,8 | 8,75 | **+0,6 %** | A.HAMELIN | 22/74/589/17 |
-| 7 | THALIA | 11 | 15,04 | -26,9 % | B.MARIE | 69/176/23/1890 |
-| 6 | EL VEGAS | 12 | 13,88 | -13,5 % | C.DEMURO | 1/48/715/993 |
-| 12 | BOAVISTA | 13 | 14,93 | -13,0 % | L.BOISSEAU | 36/53/116/2900 |
-| 13 | THE WHEEL | 18 | 22,85 | -21,2 % | E.HARDOUIN | 27/197/967/3165 |
-| 2 | DOLLAR DES BOIS | 19 | 25,96 | -26,8 % | A.POUCHIN | 6/59/963/1834 |
-| 5 | SQUARE D'ANVERS | 23 | 34,78 | -33,9 % | M.GRANDIN | 3/133/131/47 |
-| 1 | AZOV | 26 | 38,26 | -32,0 % | M.FOREST | 72/309/333/365 |
-| 11 | ALINKA | 41 | 56,53 | -27,5 % | L.GALLO | 45/15/41/2186 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 3 | PRIMA LUCE | 4,3 | 4,1 | 4,95 | -13,1 % | M.BARZALONA 2e | 2/14/13/225 |
+| 9 | ARKEN | 6,3 | 6 | 7,31 | -13,8 % | F.VALLE SKAR | 35/163/26/1513 |
+| 4 | FASTER | 7 | 6 | 7,61 | -8,0 % | D.SANTIAGO | 15/137/1392/226 |
+| 8 | CASARES | 7,1 | 8,8 | 6,85 | **+3,6 %** | A.HAMELIN | 22/74/589/17 |
+| 7 | THALIA | 10 | 11 | 13,43 | -25,5 % | B.MARIE | 69/176/23/1890 |
+| 12 | BOAVISTA | 13 | 13 | 14,93 | -12,9 % | L.BOISSEAU | 36/53/116/2900 |
+| 6 | EL VEGAS | 14 | 12 | 16,61 | -15,7 % | C.DEMURO | 1/48/715/993 |
+| 1 | AZOV | 18 | 26 | 22,84 | -21,2 % | M.FOREST | 72/309/333/365 |
+| 13 | THE WHEEL | 18 | 18 | 22,84 | -21,2 % | E.HARDOUIN | 27/197/967/3165 |
+| 2 | DOLLAR DES BOIS | 21 | 19 | 29,14 | -27,9 % | A.POUCHIN | 6/59/963/1834 |
+| 5 | SQUARE D'ANVERS | 22 | 23 | 33,03 | -33,4 % | M.GRANDIN | 3/133/131/47 |
+| 11 | ALINKA | 35 | 41 | 47,42 | -26,2 % | L.GALLO | 45/15/41/2186 |
