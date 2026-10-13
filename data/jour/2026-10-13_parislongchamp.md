@@ -65,26 +65,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX DE SECRETAN
 
-*15h40 · plat · 2400 m · 16 partants · cotes à T−5:19*
+*15h40 · plat · 2400 m · 16 partants · cotes à T−2:39*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 5 | GOOD MEMORY | 5,4 | – | 7,02 | -23,1 % | PC.BOUDOT | 8/64/14/23 |
-| 10 | STORMY NIGHT | 6,8 | 5,5 | 7,38 | -7,8 % | M.BARZALONA 3e | 2/631/2628/2567 |
-| 11 | ALROMY | 7,5 | – | 8,26 | -9,1 % | M.GRANDIN | 3/272/153/227 |
-| 4 | LOOK OF CECCA | 10 | 2,7 | 12,59 | -20,6 % | F.VALLE SKAR | 35/135/673/1032 |
-| 2 | BATURHAN | 12 | 16 | 14,27 | -15,9 % | J.MOUTARD | 61/68/18/149 |
-| 7 | HANDHY | 12 | – | 15,61 | -23,1 % | M.VELON | 28/26/1307/78 |
-| 16 | AMOR A MANI | 12 | 3,3 | 14,67 | -18,2 % | L.BOISSEAU | 36/53/77/62 |
-| 3 | HAMILTON DESJY | 14 | – | 18,71 | -25,2 % | L.PLOMMEE | 31/114/846/116 |
-| 9 | HADYA | 15 | 16 | 17,77 | -15,6 % | A.HAMELIN | 22/218/277/2488 |
-| 15 | BLANCHE SACREE | 22 | 16 | 31,68 | -30,6 % | H.BOUTIN | 14/545/40/1905 |
-| 13 | LOUISE DE BADE | 24 | – | 27,87 | -13,9 % | C.DEMURO | 1/126/305/247 |
-| 12 | LELLA DESJY | 25 | 16 | 29,19 | -14,4 % | S.JUST | 147/114/846/116 |
-| 6 | BORN TO WIN | 30 | – | 39,38 | -23,8 % | A.MOLINS | 34/381/76/1038 |
-| 8 | BRIVIDO MOON | 52 | – | 82,96 | -37,3 % | R.MANGIONE | 78/252/23/1377 |
-| 1 | LEMPIRA | 69 | – | 105,10 | -34,3 % | Y.ROUSSET | 62/122/296/2121 |
-| 14 | TREIZE DIAMANT | 77 | 16 | 125,87 | -38,8 % | M.MARQUETTE | 54/262/469/292 |
+| 5 | GOOD MEMORY | 4,8 | – | 6,08 | -21,0 % | PC.BOUDOT | 8/64/14/23 |
+| 16 | AMOR A MANI | 6,5 | 3,3 | 7,13 | -8,8 % | L.BOISSEAU | 36/53/77/62 |
+| 10 | STORMY NIGHT | 7,2 | 5,5 | 7,81 | -7,8 % | M.BARZALONA 3e | 2/631/2628/2567 |
+| 11 | ALROMY | 8 | – | 8,82 | -9,3 % | M.GRANDIN | 3/272/153/227 |
+| 4 | LOOK OF CECCA | 10 | 2,7 | 12,48 | -19,9 % | F.VALLE SKAR | 35/135/673/1032 |
+| 2 | BATURHAN | 14 | 16 | 16,94 | -17,3 % | J.MOUTARD | 61/68/18/149 |
+| 7 | HANDHY | 16 | – | 21,69 | -26,2 % | M.VELON | 28/26/1307/78 |
+| 9 | HADYA | 16 | 16 | 18,99 | -15,7 % | A.HAMELIN | 22/218/277/2488 |
+| 3 | HAMILTON DESJY | 17 | – | 23,28 | -27,0 % | L.PLOMMEE | 31/114/846/116 |
+| 15 | BLANCHE SACREE | 23 | 16 | 33,06 | -30,4 % | H.BOUTIN | 14/545/40/1905 |
+| 13 | LOUISE DE BADE | 31 | – | 36,90 | -16,0 % | C.DEMURO | 1/126/305/247 |
+| 12 | LELLA DESJY | 32 | 16 | 38,24 | -16,3 % | S.JUST | 147/114/846/116 |
+| 6 | BORN TO WIN | 39 | – | 52,34 | -25,5 % | A.MOLINS | 34/381/76/1038 |
+| 8 | BRIVIDO MOON | 65 | – | 104,51 | -37,8 % | R.MANGIONE | 78/252/23/1377 |
+| 1 | LEMPIRA | 79 | – | 120,14 | -34,2 % | Y.ROUSSET | 62/122/296/2121 |
+| 14 | TREIZE DIAMANT | 98 | 16 | 160,13 | -38,8 % | M.MARQUETTE | 54/262/469/292 |
 
 ### 5. PRIX DE PRE-SAINT-GERVAIS
 
