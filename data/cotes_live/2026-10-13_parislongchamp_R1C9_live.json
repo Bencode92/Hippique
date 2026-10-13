@@ -4,116 +4,116 @@
   "reunion": 1,
   "heure_depart": 1791909300000,
   "distance": 1600,
-  "scraped_at": "2026-10-13T18:25:56.811837+02:00",
-  "minutes_avant_depart": 9,
+  "scraped_at": "2026-10-13T18:30:36.740073+02:00",
+  "minutes_avant_depart": 4,
   "participants": [
     {
       "numPmu": 1,
       "nom": "AZOV",
-      "cote_live": 9.8,
+      "cote_live": 10.0,
       "cote_reference": 17.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791908747000
+      "timestamp_cote": 1791909033000
     },
     {
       "numPmu": 2,
       "nom": "DOLLAR DES BOIS",
-      "cote_live": 20.0,
+      "cote_live": 21.0,
       "cote_reference": 21.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791908747000
+      "timestamp_cote": 1791909033000
     },
     {
       "numPmu": 3,
       "nom": "PRIMA LUCE",
-      "cote_live": 4.2,
+      "cote_live": 4.4,
       "cote_reference": 4.4,
       "tendance": "-",
-      "favoris": true,
-      "timestamp_cote": 1791908747000
+      "favoris": false,
+      "timestamp_cote": 1791909033000
     },
     {
       "numPmu": 4,
       "nom": "FASTER",
-      "cote_live": 10.0,
+      "cote_live": 12.0,
       "cote_reference": 7.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791908747000
+      "timestamp_cote": 1791909033000
     },
     {
       "numPmu": 5,
       "nom": "SQUARE D'ANVERS",
-      "cote_live": 16.0,
+      "cote_live": 17.0,
       "cote_reference": 23.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791908747000
+      "timestamp_cote": 1791909033000
     },
     {
       "numPmu": 6,
       "nom": "EL VEGAS",
-      "cote_live": 8.5,
+      "cote_live": 10.0,
       "cote_reference": 13.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791908747000
+      "timestamp_cote": 1791909033000
     },
     {
       "numPmu": 7,
       "nom": "THALIA",
-      "cote_live": 10.0,
+      "cote_live": 11.0,
       "cote_reference": 10.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791908747000
+      "timestamp_cote": 1791909033000
     },
     {
       "numPmu": 8,
       "nom": "CASARES",
-      "cote_live": 10.0,
+      "cote_live": 12.0,
       "cote_reference": 7.2,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791908747000
+      "timestamp_cote": 1791909033000
     },
     {
       "numPmu": 9,
       "nom": "ARKEN",
-      "cote_live": 6.5,
+      "cote_live": 4.2,
       "cote_reference": 6.2,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1791908747000
+      "favoris": true,
+      "timestamp_cote": 1791909033000
     },
     {
       "numPmu": 11,
       "nom": "ALINKA",
-      "cote_live": 31.0,
+      "cote_live": 36.0,
       "cote_reference": 35.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791908747000
+      "timestamp_cote": 1791909033000
     },
     {
       "numPmu": 12,
       "nom": "BOAVISTA",
-      "cote_live": 14.0,
+      "cote_live": 13.0,
       "cote_reference": 13.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791908747000
+      "timestamp_cote": 1791909033000
     },
     {
       "numPmu": 13,
       "nom": "THE WHEEL",
-      "cote_live": 31.0,
+      "cote_live": 30.0,
       "cote_reference": 20.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791908747000
+      "timestamp_cote": 1791909033000
     }
   ],
   "hippodrome": "PARISLONGCHAMP",
@@ -224,6 +224,60 @@
         "11": 31.0,
         "12": 14.0,
         "13": 31.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-13T18:29:16.876680+02:00",
+      "minutes_avant_depart": 5.732578016666666,
+      "cotes": {
+        "1": 10.0,
+        "2": 20.0,
+        "3": 4.8,
+        "4": 12.0,
+        "5": 16.0,
+        "6": 9.5,
+        "7": 11.0,
+        "8": 12.0,
+        "9": 4.0,
+        "11": 35.0,
+        "12": 14.0,
+        "13": 30.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-13T18:29:57.086571+02:00",
+      "minutes_avant_depart": 5.0550083,
+      "cotes": {
+        "1": 10.0,
+        "2": 21.0,
+        "3": 4.7,
+        "4": 12.0,
+        "5": 16.0,
+        "6": 9.6,
+        "7": 11.0,
+        "8": 11.0,
+        "9": 4.1,
+        "11": 35.0,
+        "12": 14.0,
+        "13": 32.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-13T18:30:36.740073+02:00",
+      "minutes_avant_depart": 4.39924045,
+      "cotes": {
+        "1": 10.0,
+        "2": 21.0,
+        "3": 4.4,
+        "4": 12.0,
+        "5": 17.0,
+        "6": 10.0,
+        "7": 11.0,
+        "8": 12.0,
+        "9": 4.2,
+        "11": 36.0,
+        "12": 13.0,
+        "13": 30.0
       }
     }
   ]
