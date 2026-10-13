@@ -4,8 +4,8 @@
   "reunion": 1,
   "heure_depart": 1791907200000,
   "distance": 1600,
-  "scraped_at": "2026-10-13T17:42:36.809930+02:00",
-  "minutes_avant_depart": 17,
+  "scraped_at": "2026-10-13T17:46:37.691920+02:00",
+  "minutes_avant_depart": 13,
   "participants": [
     {
       "numPmu": 1,
@@ -14,43 +14,43 @@
       "cote_reference": 8.1,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791906132000
+      "timestamp_cote": 1791906374000
     },
     {
       "numPmu": 2,
       "nom": "BLANC CARAT",
       "cote_live": 22.0,
       "cote_reference": 18.0,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791906132000
+      "timestamp_cote": 1791906374000
     },
     {
       "numPmu": 4,
       "nom": "FRANCISCANO",
-      "cote_live": 9.6,
+      "cote_live": 10.0,
       "cote_reference": 12.0,
-      "tendance": "-",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791906132000
+      "timestamp_cote": 1791906374000
     },
     {
       "numPmu": 5,
       "nom": "KIANDA",
-      "cote_live": 46.0,
+      "cote_live": 48.0,
       "cote_reference": 44.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791906132000
+      "timestamp_cote": 1791906374000
     },
     {
       "numPmu": 6,
       "nom": "ARTISTIC MAN",
-      "cote_live": 8.4,
+      "cote_live": 8.2,
       "cote_reference": 8.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791906132000
+      "timestamp_cote": 1791906374000
     },
     {
       "numPmu": 7,
@@ -59,61 +59,61 @@
       "cote_reference": 5.6,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791906132000
+      "timestamp_cote": 1791906374000
     },
     {
       "numPmu": 8,
       "nom": "HAYEJOHN",
-      "cote_live": 10.0,
+      "cote_live": 9.9,
       "cote_reference": 10.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791906132000
+      "timestamp_cote": 1791906374000
     },
     {
       "numPmu": 9,
       "nom": "ALJADARA",
-      "cote_live": 7.4,
+      "cote_live": 6.5,
       "cote_reference": 7.7,
-      "tendance": "",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791906132000
+      "timestamp_cote": 1791906374000
     },
     {
       "numPmu": 10,
       "nom": "AVENTINO",
-      "cote_live": 9.2,
+      "cote_live": 9.7,
       "cote_reference": 14.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791906132000
+      "timestamp_cote": 1791906374000
     },
     {
       "numPmu": 11,
       "nom": "LORD SINCLAIR",
       "cote_live": 16.0,
       "cote_reference": 12.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791906132000
+      "timestamp_cote": 1791906374000
     },
     {
       "numPmu": 12,
       "nom": "LEOPARDUCCIO",
-      "cote_live": 10.0,
+      "cote_live": 11.0,
       "cote_reference": 9.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791906132000
+      "timestamp_cote": 1791906374000
     },
     {
       "numPmu": 13,
       "nom": "NOBLE MEMORY",
       "cote_live": 13.0,
       "cote_reference": 13.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791906132000
+      "timestamp_cote": 1791906374000
     }
   ],
   "hippodrome": "PARISLONGCHAMP",
@@ -187,6 +187,24 @@
         "10": 9.2,
         "11": 16.0,
         "12": 10.0,
+        "13": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-13T17:46:37.691920+02:00",
+      "minutes_avant_depart": 13.382752433333334,
+      "cotes": {
+        "1": 10.0,
+        "2": 22.0,
+        "4": 10.0,
+        "5": 48.0,
+        "6": 8.2,
+        "7": 5.5,
+        "8": 9.9,
+        "9": 6.5,
+        "10": 9.7,
+        "11": 16.0,
+        "12": 11.0,
         "13": 13.0
       }
     }

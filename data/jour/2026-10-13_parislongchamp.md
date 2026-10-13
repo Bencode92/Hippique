@@ -154,22 +154,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DU PASSAGE FEYDEAU
 
-*18h00 · plat · 1600 m · 12 partants · cotes à T−17:23*
+*18h00 · plat · 1600 m · 12 partants · cotes à T−13:22*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 7 | HIGHBARI | 5,5 | 5,2 | 6,67 | -17,5 % | D.PROVOST | 33/34/79/2017 |
-| 9 | ALJADARA | 7,4 | 7,4 | 7,91 | -6,5 % | T.PICCONE | 9/6/–/6 |
-| 6 | ARTISTIC MAN | 8,4 | 7,2 | 10,22 | -17,8 % | H.LEBOUC | 19/299/62/2285 |
-| 10 | AVENTINO | 9,2 | 15 | 10,43 | -11,8 % | M.GUYON 5e | 4/41/338/348 |
-| 4 | FRANCISCANO | 9,6 | 12 | 10,96 | -12,4 % | S.PASQUIER | 23/25/80/17 |
-| 1 | FAMILY SECRET | 10 | 7,6 | 11,21 | -10,8 % | C.LECOEUVRE | 13/57/142/144 |
-| 8 | HAYEJOHN | 10 | 10 | 10,82 | -7,6 % | D.SANTIAGO | 15/21/208/38 |
-| 12 | LEOPARDUCCIO | 10 | 8,3 | 10,56 | -5,3 % | F.VALLE SKAR | 35/90/1070/1989 |
-| 13 | NOBLE MEMORY | 13 | 23 | 13,92 | -6,6 % | C.DEMURO | 1/57/71/360 |
-| 11 | LORD SINCLAIR | 16 | 15 | 18,23 | -12,2 % | PC.BOUDOT 3e | 8/159/20/465 |
-| 2 | BLANC CARAT | 22 | 20 | 31,50 | -30,2 % | P.BAZIRE | 58/428/418/1010 |
-| 5 | KIANDA | 46 | 43 | 61,10 | -24,7 % | S.CHUETTE | 166/23/58/566 |
+| 7 | HIGHBARI | 5,5 | 5,2 | 6,68 | -17,7 % | D.PROVOST | 33/34/79/2017 |
+| 9 | ALJADARA | 6,5 | 7,4 | 6,84 | -5,0 % | T.PICCONE | 9/6/–/6 |
+| 6 | ARTISTIC MAN | 8,2 | 7,2 | 9,96 | -17,7 % | H.LEBOUC | 19/299/62/2285 |
+| 10 | AVENTINO | 9,7 | 15 | 11,12 | -12,8 % | M.GUYON 5e | 4/41/338/348 |
+| 8 | HAYEJOHN | 9,9 | 10 | 10,73 | -7,7 % | D.SANTIAGO | 15/21/208/38 |
+| 1 | FAMILY SECRET | 10 | 7,6 | 11,24 | -11,0 % | C.LECOEUVRE | 13/57/142/144 |
+| 4 | FRANCISCANO | 10 | 12 | 12,57 | -20,5 % | S.PASQUIER | 23/25/80/17 |
+| 12 | LEOPARDUCCIO | 11 | 8,3 | 11,83 | -7,0 % | F.VALLE SKAR | 35/90/1070/1989 |
+| 13 | NOBLE MEMORY | 13 | 23 | 13,96 | -6,9 % | C.DEMURO | 1/57/71/360 |
+| 11 | LORD SINCLAIR | 16 | 15 | 18,28 | -12,5 % | PC.BOUDOT 3e | 8/159/20/465 |
+| 2 | BLANC CARAT | 22 | 20 | 31,59 | -30,4 % | P.BAZIRE | 58/428/418/1010 |
+| 5 | KIANDA | 48 | 43 | 64,17 | -25,2 % | S.CHUETTE | 166/23/58/566 |
 
 ### 9. PRIX DE LA GALERIE SAINT-MARC
 
