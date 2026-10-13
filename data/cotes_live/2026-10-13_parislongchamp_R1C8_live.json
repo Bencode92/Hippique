@@ -4,62 +4,62 @@
   "reunion": 1,
   "heure_depart": 1791907200000,
   "distance": 1600,
-  "scraped_at": "2026-10-13T17:30:36.408381+02:00",
-  "minutes_avant_depart": 29,
+  "scraped_at": "2026-10-13T17:34:36.514585+02:00",
+  "minutes_avant_depart": 25,
   "participants": [
     {
       "numPmu": 1,
       "nom": "FAMILY SECRET",
-      "cote_live": 8.4,
+      "cote_live": 9.1,
       "cote_reference": 8.1,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791905428000
+      "timestamp_cote": 1791905670000
     },
     {
       "numPmu": 2,
       "nom": "BLANC CARAT",
-      "cote_live": 19.0,
+      "cote_live": 21.0,
       "cote_reference": 18.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791905428000
+      "timestamp_cote": 1791905670000
     },
     {
       "numPmu": 4,
       "nom": "FRANCISCANO",
-      "cote_live": 10.0,
+      "cote_live": 9.6,
       "cote_reference": 12.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791905428000
+      "timestamp_cote": 1791905670000
     },
     {
       "numPmu": 5,
       "nom": "KIANDA",
-      "cote_live": 42.0,
+      "cote_live": 41.0,
       "cote_reference": 44.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791905428000
+      "timestamp_cote": 1791905670000
     },
     {
       "numPmu": 6,
       "nom": "ARTISTIC MAN",
-      "cote_live": 8.2,
+      "cote_live": 8.1,
       "cote_reference": 8.0,
-      "tendance": "+",
+      "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791905428000
+      "timestamp_cote": 1791905670000
     },
     {
       "numPmu": 7,
       "nom": "HIGHBARI",
-      "cote_live": 5.7,
+      "cote_live": 6.1,
       "cote_reference": 5.6,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": true,
-      "timestamp_cote": 1791905428000
+      "timestamp_cote": 1791905670000
     },
     {
       "numPmu": 8,
@@ -68,43 +68,43 @@
       "cote_reference": 10.0,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791905428000
+      "timestamp_cote": 1791905670000
     },
     {
       "numPmu": 9,
       "nom": "ALJADARA",
-      "cote_live": 7.7,
+      "cote_live": 7.2,
       "cote_reference": 7.7,
       "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791905428000
+      "timestamp_cote": 1791905670000
     },
     {
       "numPmu": 10,
       "nom": "AVENTINO",
-      "cote_live": 14.0,
+      "cote_live": 12.0,
       "cote_reference": 14.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791905428000
+      "timestamp_cote": 1791905670000
     },
     {
       "numPmu": 11,
       "nom": "LORD SINCLAIR",
       "cote_live": 13.0,
       "cote_reference": 12.0,
-      "tendance": "-",
+      "tendance": "+",
       "favoris": false,
-      "timestamp_cote": 1791905428000
+      "timestamp_cote": 1791905670000
     },
     {
       "numPmu": 12,
       "nom": "LEOPARDUCCIO",
-      "cote_live": 9.2,
+      "cote_live": 9.8,
       "cote_reference": 9.0,
-      "tendance": "+",
+      "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791905428000
+      "timestamp_cote": 1791905670000
     },
     {
       "numPmu": 13,
@@ -113,7 +113,7 @@
       "cote_reference": 13.0,
       "tendance": "-",
       "favoris": false,
-      "timestamp_cote": 1791905428000
+      "timestamp_cote": 1791905670000
     }
   ],
   "hippodrome": "PARISLONGCHAMP",
@@ -133,6 +133,24 @@
         "10": 14.0,
         "11": 13.0,
         "12": 9.2,
+        "13": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-13T17:34:36.514585+02:00",
+      "minutes_avant_depart": 25.399424216666667,
+      "cotes": {
+        "1": 9.1,
+        "2": 21.0,
+        "4": 9.6,
+        "5": 41.0,
+        "6": 8.1,
+        "7": 6.1,
+        "8": 10.0,
+        "9": 7.2,
+        "10": 12.0,
+        "11": 13.0,
+        "12": 9.8,
         "13": 13.0
       }
     }
