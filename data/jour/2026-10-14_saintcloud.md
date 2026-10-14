@@ -144,23 +144,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 9. PRIX DES BOUCLES DE LA SEINE
 
-*16h33 · plat · 2000 m · 16 partants · cotes à T−1:44*
+*16h33 · plat · 2000 m · 16 partants · cotes à T−0:25*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 9 | CLICCLIC PANPANPAN | 6,3 | 5,3 | 5,46 | **+15,3 %** | L.BOISSEAU | 36/53/77/2192 |
-| 16 | LARLIB | 6,5 | 11 | 6,97 | -6,7 % | T.BACHELOT | 16/23/866/2194 |
-| 2 | MON COMEDIEN | 7 | 4,2 | 7,58 | -7,6 % | PC.BOUDOT | 8/91/377/1494 |
-| 1 | LONDONPOLO | 8,8 | 21 | 9,07 | -2,9 % | C.SOUMILLON 2e | 7/66/129/2694 |
-| 8 | SEPTIMUS | 9,8 | 8,1 | 10,75 | -8,9 % | C.BELMONT | 171/220/1023/1522 |
-| 3 | SIJOUX | 10 | 8,5 | 10,54 | -5,1 % | L.BAILS | 77/152/2773/863 |
-| 13 | TOKYO DREAMER | 10 | 22 | 10,80 | -7,4 % | E.HARDOUIN | 27/46/3253/170 |
-| 6 | FROMONTINE | 17 | 19 | 22,29 | -23,7 % | A.MOLINS | 34/197/748/3364 |
-| 12 | PINGO | 20 | 18 | 28,90 | -30,8 % | H.BOUTIN | 14/28/701/49 |
-| 5 | JAGUARE PRECIEUSE | 23 | 28 | 27,54 | -16,5 % | C.DEMURO | 1/200/244/206 |
-| 10 | CALLA FONDA | 25 | 26 | 34,80 | -28,2 % | L.GALLO | 45/126/18/887 |
-| 7 | ADLAN SENORA | 39 | 29 | 45,56 | -14,4 % | C.LECOEUVRE | 13/149/52/83 |
-| 15 | READY KING | 44 | 46 | 52,00 | -15,4 % | M.VELON | 28/388/25/827 |
-| 14 | KEEN APPROACH | 51 | 32 | 70,36 | -27,5 % | E.CORALLO | 57/231/1142/935 |
-| 4 | DSCHINGIS POWER | 86 | 76 | 133,82 | -35,7 % | M. FAVRIAUX | 51/593/67/2325 |
-| 11 | RIDE ON | 86 | 50 | 133,82 | -35,7 % | A.MADAMET | 10/157/158/3558 |
+| 16 | LARLIB | 5,9 | 11 | 6,65 | -11,2 % | T.BACHELOT | 16/23/866/2194 |
+| 9 | CLICCLIC PANPANPAN | 6,4 | 5,3 | 6,44 | -0,6 % | L.BOISSEAU | 36/53/77/2192 |
+| 2 | MON COMEDIEN | 7,6 | 4,2 | 8,28 | -8,3 % | PC.BOUDOT | 8/91/377/1494 |
+| 8 | SEPTIMUS | 8,4 | 8,1 | 8,95 | -6,1 % | C.BELMONT | 171/220/1023/1522 |
+| 1 | LONDONPOLO | 9,7 | 21 | 10,09 | -3,8 % | C.SOUMILLON 2e | 7/66/129/2694 |
+| 13 | TOKYO DREAMER | 10 | 22 | 10,74 | -6,9 % | E.HARDOUIN | 27/46/3253/170 |
+| 3 | SIJOUX | 11 | 8,5 | 11,70 | -6,0 % | L.BAILS | 77/152/2773/863 |
+| 6 | FROMONTINE | 18 | 19 | 23,69 | -24,0 % | A.MOLINS | 34/197/748/3364 |
+| 12 | PINGO | 20 | 18 | 28,74 | -30,4 % | H.BOUTIN | 14/28/701/49 |
+| 5 | JAGUARE PRECIEUSE | 25 | 28 | 33,04 | -24,3 % | C.DEMURO | 1/200/244/206 |
+| 10 | CALLA FONDA | 26 | 26 | 36,19 | -28,2 % | L.GALLO | 45/126/18/887 |
+| 15 | READY KING | 32 | 46 | 38,12 | -16,1 % | M.VELON | 28/388/25/827 |
+| 7 | ADLAN SENORA | 41 | 29 | 47,88 | -14,4 % | C.LECOEUVRE | 13/149/52/83 |
+| 14 | KEEN APPROACH | 54 | 32 | 74,45 | -27,5 % | E.CORALLO | 57/231/1142/935 |
+| 11 | RIDE ON | 92 | 50 | 142,72 | -35,5 % | A.MADAMET | 10/157/158/3558 |
+| 4 | DSCHINGIS POWER | 103 | 76 | 160,12 | -35,7 % | M. FAVRIAUX | 51/593/67/2325 |

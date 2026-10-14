@@ -4,80 +4,80 @@
   "reunion": 3,
   "heure_depart": 1791988380000,
   "distance": 2000,
-  "scraped_at": "2026-10-14T16:31:15.731348+02:00",
-  "minutes_avant_depart": 2,
+  "scraped_at": "2026-10-14T16:33:55.294664+02:00",
+  "minutes_avant_depart": -1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "LONDONPOLO",
-      "cote_live": 8.8,
+      "cote_live": 9.1,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791988269000
+      "timestamp_cote": 1791988429000
     },
     {
       "numPmu": 2,
       "nom": "MON COMEDIEN",
-      "cote_live": 7.0,
+      "cote_live": 8.1,
       "cote_reference": 4.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791988269000
+      "timestamp_cote": 1791988429000
     },
     {
       "numPmu": 3,
       "nom": "SIJOUX",
-      "cote_live": 10.0,
+      "cote_live": 12.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791988269000
+      "timestamp_cote": 1791988429000
     },
     {
       "numPmu": 4,
       "nom": "DSCHINGIS POWER",
-      "cote_live": 86.0,
+      "cote_live": 131.0,
       "cote_reference": 78.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791988269000
+      "timestamp_cote": 1791988429000
     },
     {
       "numPmu": 5,
       "nom": "JAGUARE PRECIEUSE",
-      "cote_live": 23.0,
+      "cote_live": 26.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791988269000
+      "timestamp_cote": 1791988429000
     },
     {
       "numPmu": 6,
       "nom": "FROMONTINE",
-      "cote_live": 17.0,
+      "cote_live": 19.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791988269000
+      "timestamp_cote": 1791988429000
     },
     {
       "numPmu": 7,
       "nom": "ADLAN SENORA",
-      "cote_live": 39.0,
+      "cote_live": 24.0,
       "cote_reference": 37.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791988269000
+      "timestamp_cote": 1791988429000
     },
     {
       "numPmu": 8,
       "nom": "SEPTIMUS",
-      "cote_live": 9.8,
+      "cote_live": 8.6,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791988269000
+      "timestamp_cote": 1791988429000
     },
     {
       "numPmu": 9,
@@ -85,71 +85,71 @@
       "cote_live": 6.3,
       "cote_reference": 5.7,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1791988269000
+      "favoris": false,
+      "timestamp_cote": 1791988429000
     },
     {
       "numPmu": 10,
       "nom": "CALLA FONDA",
-      "cote_live": 25.0,
+      "cote_live": 37.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791988269000
+      "timestamp_cote": 1791988429000
     },
     {
       "numPmu": 11,
       "nom": "RIDE ON",
-      "cote_live": 86.0,
+      "cote_live": 119.0,
       "cote_reference": 52.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791988269000
+      "timestamp_cote": 1791988429000
     },
     {
       "numPmu": 12,
       "nom": "PINGO",
-      "cote_live": 20.0,
+      "cote_live": 23.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791988269000
+      "timestamp_cote": 1791988429000
     },
     {
       "numPmu": 13,
       "nom": "TOKYO DREAMER",
-      "cote_live": 10.0,
+      "cote_live": 11.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791988269000
+      "timestamp_cote": 1791988429000
     },
     {
       "numPmu": 14,
       "nom": "KEEN APPROACH",
-      "cote_live": 51.0,
+      "cote_live": 63.0,
       "cote_reference": 39.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791988269000
+      "timestamp_cote": 1791988429000
     },
     {
       "numPmu": 15,
       "nom": "READY KING",
-      "cote_live": 44.0,
+      "cote_live": 38.0,
       "cote_reference": 36.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791988269000
+      "timestamp_cote": 1791988429000
     },
     {
       "numPmu": 16,
       "nom": "LARLIB",
-      "cote_live": 6.5,
+      "cote_live": 4.8,
       "cote_reference": 6.6,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1791988269000
+      "favoris": true,
+      "timestamp_cote": 1791988429000
     }
   ],
   "hippodrome": "SAINT-CLOUD",
@@ -438,6 +438,94 @@
         "14": 51.0,
         "15": 44.0,
         "16": 6.5
+      }
+    },
+    {
+      "scraped_at": "2026-10-14T16:31:55.360550+02:00",
+      "minutes_avant_depart": 1.0854482666666667,
+      "cotes": {
+        "1": 9.2,
+        "2": 7.1,
+        "3": 10.0,
+        "4": 93.0,
+        "5": 24.0,
+        "6": 17.0,
+        "7": 40.0,
+        "8": 9.4,
+        "9": 6.2,
+        "10": 25.0,
+        "11": 87.0,
+        "12": 20.0,
+        "13": 10.0,
+        "14": 54.0,
+        "15": 32.0,
+        "16": 6.5
+      }
+    },
+    {
+      "scraped_at": "2026-10-14T16:32:35.349788+02:00",
+      "minutes_avant_depart": 0.41877946666666666,
+      "cotes": {
+        "1": 9.7,
+        "2": 7.6,
+        "3": 11.0,
+        "4": 103.0,
+        "5": 25.0,
+        "6": 18.0,
+        "7": 41.0,
+        "8": 8.4,
+        "9": 6.4,
+        "10": 26.0,
+        "11": 92.0,
+        "12": 20.0,
+        "13": 10.0,
+        "14": 54.0,
+        "15": 32.0,
+        "16": 5.9
+      }
+    },
+    {
+      "scraped_at": "2026-10-14T16:33:15.274390+02:00",
+      "minutes_avant_depart": -0.24788955000000001,
+      "cotes": {
+        "1": 10.0,
+        "2": 8.1,
+        "3": 13.0,
+        "4": 115.0,
+        "5": 26.0,
+        "6": 20.0,
+        "7": 26.0,
+        "8": 8.9,
+        "9": 6.0,
+        "10": 31.0,
+        "11": 98.0,
+        "12": 23.0,
+        "13": 10.0,
+        "14": 63.0,
+        "15": 36.0,
+        "16": 4.7
+      }
+    },
+    {
+      "scraped_at": "2026-10-14T16:33:55.294664+02:00",
+      "minutes_avant_depart": -0.9145586666666666,
+      "cotes": {
+        "1": 9.1,
+        "2": 8.1,
+        "3": 12.0,
+        "4": 131.0,
+        "5": 26.0,
+        "6": 19.0,
+        "7": 24.0,
+        "8": 8.6,
+        "9": 6.3,
+        "10": 37.0,
+        "11": 119.0,
+        "12": 23.0,
+        "13": 11.0,
+        "14": 63.0,
+        "15": 38.0,
+        "16": 4.8
       }
     }
   ]
