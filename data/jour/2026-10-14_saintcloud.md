@@ -2,7 +2,9 @@
 
 9 courses.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+**Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
+La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
+Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classements ci-dessus.
 
 ---
 
@@ -49,20 +51,20 @@
 
 ### 4. PRIX MAURICE LARRAUN
 
-*13h27 · plat · 2400 m · 10 partants · cotes de l'extraction*
+*13h27 · plat · 2400 m · 10 partants · cotes à T−19:40*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | TSAVERNA | – | M.FAVRIAUX | 51/826/50/5311 |
-| 2 | LE FUTUR | – | G.ROTH LE VAILLANT | 130/8/24/608 |
-| 3 | NEVADOS | – | M.PROTTI | 30/6/36/34 |
-| 4 | MARANTAO | – | G.SEIGNEUL | 193/176/1814/1820 |
-| 5 | DAYTONINE | – | C.BELMONT | 171/8/3873/1438 |
-| 6 | HOUSE OF TUDOR | – | L.MABROUK | 326/10/3082/523 |
-| 7 | NATIVE RULER | – | A.DUQUESNOY | 121/126/3115/4217 |
-| 8 | INCENTIVE VICTORY | – | G.MEURY | 68/60/305/730 |
-| 9 | RUSH TO WAIT | – | T.BREBION | 99/44/449/228 |
-| 10 | SWEET SUMMER SWEET | – | L.PLOMMEE | 31/74/1388/2145 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 8 | INCENTIVE VICTORY | 2 | 2,15 | -6,8 % | G.MEURY | 68/60/305/730 |
+| 3 | NEVADOS | 6,7 | 7,60 | -11,8 % | M.PROTTI | 30/6/36/34 |
+| 1 | TSAVERNA | 8,5 | 10,01 | -15,1 % | M.FAVRIAUX | 51/826/50/5311 |
+| 6 | HOUSE OF TUDOR | 9,1 | 11,60 | -21,5 % | L.MABROUK | 326/10/3082/523 |
+| 2 | LE FUTUR | 11 | 13,55 | -18,8 % | G.ROTH LE VAILLANT | 130/8/24/608 |
+| 9 | RUSH TO WAIT | 12 | 15,01 | -20,0 % | T.BREBION | 99/44/449/228 |
+| 10 | SWEET SUMMER SWEET | 29 | 44,88 | -35,4 % | L.PLOMMEE | 31/74/1388/2145 |
+| 4 | MARANTAO | 32 | 46,67 | -31,4 % | G.SEIGNEUL | 193/176/1814/1820 |
+| 5 | DAYTONINE | 62 | 96,37 | -35,7 % | C.BELMONT | 171/8/3873/1438 |
+| 7 | NATIVE RULER | 79 | 124,38 | -36,5 % | A.DUQUESNOY | 121/126/3115/4217 |
 
 ### 5. PRIX DE LA FONTAINE
 
