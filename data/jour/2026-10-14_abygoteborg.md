@@ -12,11 +12,11 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | CADDIE BAHIA | 1,7 | M. ELIAS |
-| 8 | NOBLE TIGER | 3,5 | J. UNTERSTEINER |
-| 11 | FABULOUS KAGAN | 3,5 | D. PIETERS |
-| 2 | WASIMI | – | M. FORSS |
-| 3 | VASTERBO ELLE | – | B. PERSSON |
+| 3 | VASTERBO ELLE | 1,4 | B. PERSSON |
+| 1 | CADDIE BAHIA | 7 | M. ELIAS |
+| 2 | WASIMI | 7 | M. FORSS |
+| 8 | NOBLE TIGER | 14 | J. UNTERSTEINER |
+| 11 | FABULOUS KAGAN | 14 | D. PIETERS |
 | 4 | POWERWITHLOVE | – | R. BERGH |
 | 5 | NELSON SISU | – | P. NORDSTROM |
 | 6 | B.W.T.LANDSLIDE | – | T. UHRBERG |
@@ -46,16 +46,16 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 2 | PURE CUSTOM COWBOY | 3,5 | H. RORGEMOEN |
-| 3 | BEARNANDO | 3,5 | J. LOVGREN |
-| 6 | REILLY WESTWOOD | 3,5 | S. PERSSON |
-| 9 | PURE ISLAND | 3,5 | J. UNTERSTEINER |
+| 10 | AUGUSTE | 2 | M. FORSS |
+| 2 | PURE CUSTOM COWBOY | 6,1 | H. RORGEMOEN |
+| 3 | BEARNANDO | 6,1 | J. LOVGREN |
+| 6 | REILLY WESTWOOD | 6,1 | S. PERSSON |
+| 9 | PURE ISLAND | 6,1 | J. UNTERSTEINER |
 | 1 | PURE CUSTOM CANDY | – | O.J. OSTRE |
 | 4 | ZORRO ZACK | – | A. ZACKRISSON |
 | 5 | LIBERIA JET | – | G. JOHANSSON |
 | 7 | EVITA ZACK | – | C.J. JEPSON |
 | 8 | SPEED SELECT | – | V. ROSLEFF |
-| 10 | AUGUSTE | – | M. FORSS |
 
 ### 4. PRIX DE STRASBOURG                      SUEDE
 
@@ -65,8 +65,8 @@
 |--:|:--|--:|:--|
 | 6 | CUSTOM CHRONO | 2,6 | Mme I. AHO |
 | 8 | BASES LOADED | 2,6 | Mme A. WISÉN |
-| 9 | NICE STEEL | 2,6 | J. CARRÉ |
-| 2 | GOLD CAP B.R. | – | Mme M. CARLSEN |
+| 2 | GOLD CAP B.R. | 5,2 | Mme M. CARLSEN |
+| 9 | NICE STEEL | 5,2 | J. CARRÉ |
 | 3 | COUNTRY SOUND | – | Mme A. ERIXON |
 | 4 | BOLLINGER N.O. | – | Mme H. KOLLE |
 | 5 | DADDY POP | – | Mme H. EDVARDSEN |
@@ -168,15 +168,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 2 | LUGANO CORTINA | 2,2 | B. GOOP |
-| 9 | FRANK SILVIO | 4,4 | T. UHRBERG |
-| 1 | LAZY DUST | 8,8 | J. UNTERSTEINER |
-| 5 | EJNAR FACE | 8,8 | A. KOLGJINI |
-| 10 | ROSSO RUBINO | 8,8 | S. PERSSON |
-| 12 | CHRIBO HILL | 8,8 | C. LUGAUER |
+| 2 | LUGANO CORTINA | 2,4 | B. GOOP |
+| 9 | FRANK SILVIO | 4,8 | T. UHRBERG |
+| 1 | LAZY DUST | 9,7 | J. UNTERSTEINER |
+| 5 | EJNAR FACE | 9,7 | A. KOLGJINI |
+| 7 | I'M A DANCER | 9,7 | V. ROSLEFF |
+| 10 | ROSSO RUBINO | 9,7 | S. PERSSON |
+| 12 | CHRIBO HILL | 9,7 | C. LUGAUER |
 | 3 | JOAKIM PALEMA | – | H. CREBAS |
 | 4 | KOSING | – | D. PIETERS |
 | 6 | OCCAM'S RAZOR | – | M.B. SVEDBERG |
-| 7 | I'M A DANCER | – | V. ROSLEFF |
 | 8 | NIGHTLIFE IN | – | C.J. JEPSON |
 | 11 | EYEOFTHETIGER | – | P. NORDSTROM |
