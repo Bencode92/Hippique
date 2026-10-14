@@ -12,14 +12,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 3 | VASTERBO ELLE | 1,4 | B. PERSSON |
-| 1 | CADDIE BAHIA | 7 | M. ELIAS |
-| 2 | WASIMI | 7 | M. FORSS |
-| 8 | NOBLE TIGER | 14 | J. UNTERSTEINER |
-| 11 | FABULOUS KAGAN | 14 | D. PIETERS |
-| 4 | POWERWITHLOVE | – | R. BERGH |
+| 3 | VASTERBO ELLE | 1,9 | B. PERSSON |
+| 1 | CADDIE BAHIA | 6,4 | M. ELIAS |
+| 6 | B.W.T.LANDSLIDE | 6,4 | T. UHRBERG |
+| 2 | WASIMI | 9,7 | M. FORSS |
+| 11 | FABULOUS KAGAN | 9,7 | D. PIETERS |
+| 4 | POWERWITHLOVE | 19 | R. BERGH |
+| 8 | NOBLE TIGER | 19 | J. UNTERSTEINER |
 | 5 | NELSON SISU | – | P. NORDSTROM |
-| 6 | B.W.T.LANDSLIDE | – | T. UHRBERG |
 | 7 | HARMONIQUE DREAM | – | C.J. JEPSON |
 | 9 | DURANTE DE LUX | – | H. CREBAS |
 | 10 | MY LADY STAR | – | L. DAHL |
@@ -31,13 +31,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 4 | ORLANDO STAR | 2,6 | A. KOLGJINI |
-| 6 | J.J.'S GIRL | 2,6 | C. SODERSTROM |
-| 8 | FLAXY BAHITJ | 2,6 | O.J. OSTRE |
-| 1 | BILLY BAROSSO | – | J. UNTERSTEINER |
-| 2 | HUNTER A.F. | – | D. PIETERS |
+| 1 | BILLY BAROSSO | 5,2 | J. UNTERSTEINER |
+| 2 | HUNTER A.F. | 5,2 | D. PIETERS |
+| 4 | ORLANDO STAR | 5,2 | A. KOLGJINI |
+| 5 | VALENCIUS B.B. | 5,2 | C.J. JEPSON |
+| 6 | J.J.'S GIRL | 5,2 | C. SODERSTROM |
+| 8 | FLAXY BAHITJ | 5,2 | O.J. OSTRE |
 | 3 | GRANSAL JET | – | T. UHRBERG |
-| 5 | VALENCIUS B.B. | – | C.J. JEPSON |
 | 7 | BLAST WAVE | – | G. JOHANSSON |
 
 ### 3. PRIX DE VERSAILLES                      SUEDE
@@ -46,11 +46,11 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 10 | AUGUSTE | 2 | M. FORSS |
-| 2 | PURE CUSTOM COWBOY | 6,1 | H. RORGEMOEN |
-| 3 | BEARNANDO | 6,1 | J. LOVGREN |
-| 6 | REILLY WESTWOOD | 6,1 | S. PERSSON |
-| 9 | PURE ISLAND | 6,1 | J. UNTERSTEINER |
+| 6 | REILLY WESTWOOD | 2,9 | S. PERSSON |
+| 10 | AUGUSTE | 2,9 | M. FORSS |
+| 3 | BEARNANDO | 4,4 | J. LOVGREN |
+| 2 | PURE CUSTOM COWBOY | 8,8 | H. RORGEMOEN |
+| 9 | PURE ISLAND | 8,8 | J. UNTERSTEINER |
 | 1 | PURE CUSTOM CANDY | – | O.J. OSTRE |
 | 4 | ZORRO ZACK | – | A. ZACKRISSON |
 | 5 | LIBERIA JET | – | G. JOHANSSON |
@@ -63,10 +63,10 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 6 | CUSTOM CHRONO | 2,6 | Mme I. AHO |
-| 8 | BASES LOADED | 2,6 | Mme A. WISÉN |
-| 2 | GOLD CAP B.R. | 5,2 | Mme M. CARLSEN |
-| 9 | NICE STEEL | 5,2 | J. CARRÉ |
+| 8 | BASES LOADED | 2 | Mme A. WISÉN |
+| 6 | CUSTOM CHRONO | 3 | Mme I. AHO |
+| 2 | GOLD CAP B.R. | 6,1 | Mme M. CARLSEN |
+| 9 | NICE STEEL | 6,1 | J. CARRÉ |
 | 3 | COUNTRY SOUND | – | Mme A. ERIXON |
 | 4 | BOLLINGER N.O. | – | Mme H. KOLLE |
 | 5 | DADDY POP | – | Mme H. EDVARDSEN |
@@ -78,9 +78,9 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | GALAXY ROC | 2,6 | B. GOOP |
-| 3 | PAUL MCCARTNEY | 2,6 | W. KARISSON |
-| 6 | D'ARTAGNAN FACE | 2,6 | R. BERGH |
+| 1 | GALAXY ROC | 1,3 | B. GOOP |
+| 3 | PAUL MCCARTNEY | 5,2 | W. KARISSON |
+| 6 | D'ARTAGNAN FACE | 5,2 | R. BERGH |
 | 2 | GINGRAS | – | L. SVANBERG |
 | 4 | PETITE SIRAH | – | C.J. JEPSON |
 | 5 | STEADY KING | – | J. UNTERSTEINER |
@@ -168,13 +168,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 2 | LUGANO CORTINA | 2,4 | B. GOOP |
-| 9 | FRANK SILVIO | 4,8 | T. UHRBERG |
-| 1 | LAZY DUST | 9,7 | J. UNTERSTEINER |
-| 5 | EJNAR FACE | 9,7 | A. KOLGJINI |
-| 7 | I'M A DANCER | 9,7 | V. ROSLEFF |
-| 10 | ROSSO RUBINO | 9,7 | S. PERSSON |
-| 12 | CHRIBO HILL | 9,7 | C. LUGAUER |
+| 2 | LUGANO CORTINA | 2,6 | B. GOOP |
+| 1 | LAZY DUST | 5,2 | J. UNTERSTEINER |
+| 9 | FRANK SILVIO | 5,2 | T. UHRBERG |
+| 5 | EJNAR FACE | 10 | A. KOLGJINI |
+| 7 | I'M A DANCER | 10 | V. ROSLEFF |
+| 10 | ROSSO RUBINO | 10 | S. PERSSON |
+| 12 | CHRIBO HILL | 10 | C. LUGAUER |
 | 3 | JOAKIM PALEMA | – | H. CREBAS |
 | 4 | KOSING | – | D. PIETERS |
 | 6 | OCCAM'S RAZOR | – | M.B. SVEDBERG |

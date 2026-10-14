@@ -12,14 +12,14 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | COLABA | 1,3 | HARRY DAVIES | 381/815/–/– |
-| 4 | HAYATE | 3,9 | JACK MITCHELL | 314/510/–/– |
-| 5 | I AM ROYAL | 14 | BILLY LOUGHNANE | 223/253/–/124 |
-| 3 | ENCOUNTER | 21 | CIEREN FALLON | 321/–/–/– |
-| 8 | UOMO VALEROSO | 49 | ROSSA RYAN | 215/815/–/– |
-| 6 | LEAD TO GOLD | 74 | STEVIE DONOHOE | –/307/–/– |
-| 7 | STEPHEN'S SECRET | 74 | DAVID EGAN | 312/–/–/– |
-| 2 | DESERT MOVE | – | PADDY BRADLEY | –/–/–/– |
+| 1 | COLABA | 2,1 | HARRY DAVIES | 381/815/–/– |
+| 5 | I AM ROYAL | 4,6 | BILLY LOUGHNANE | 223/253/–/124 |
+| 8 | UOMO VALEROSO | 5,4 | ROSSA RYAN | 215/815/–/– |
+| 4 | HAYATE | 5,9 | JACK MITCHELL | 314/510/–/– |
+| 3 | ENCOUNTER | 19 | CIEREN FALLON | 321/–/–/– |
+| 7 | STEPHEN'S SECRET | 47 | DAVID EGAN | 312/–/–/– |
+| 6 | LEAD TO GOLD | 59 | STEVIE DONOHOE | –/307/–/– |
+| 2 | DESERT MOVE | 119 | PADDY BRADLEY | –/–/–/– |
 
 ### 2. NURSERY HANDICAP (CLASS 4)
 
@@ -27,13 +27,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | ARCTIC TSAR | 1,3 | ROSSA RYAN | 215/815/–/38 |
-| 4 | NOBLE PRINCE | 6 | BILLY LOUGHNANE | 223/101/–/46 |
-| 1 | ALGAIHABANE | 9,7 | ROBERT HAVLIN | 493/55/–/114 |
-| 6 | LADY CAROLINE LAMB | 16 | JACK MITCHELL | 314/99/–/957 |
-| 3 | RUPERT THE BRAVE | 24 | MARCO GHIANI | 376/447/–/– |
+| 2 | ARCTIC TSAR | 1,7 | ROSSA RYAN | 215/815/–/38 |
+| 4 | NOBLE PRINCE | 2,2 | BILLY LOUGHNANE | 223/101/–/46 |
+| 1 | ALGAIHABANE | 20 | ROBERT HAVLIN | 493/55/–/114 |
+| 6 | LADY CAROLINE LAMB | 23 | JACK MITCHELL | 314/99/–/957 |
+| 3 | RUPERT THE BRAVE | 71 | MARCO GHIANI | 376/447/–/– |
+| 7 | MAGICAL LIFE | 142 | ISOBELLE CHALMERS | –/–/–/– |
 | 5 | MY A'ALI BABA | – | FINLEY MARSH | –/–/–/– |
-| 7 | MAGICAL LIFE | – | ISOBELLE CHALMERS | –/–/–/– |
 
 ### 3. HANDICAP (CLASS 5) (LONDON MILE SERIES QUALIFIER) (DIV I)
 
@@ -41,12 +41,12 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 4 | GUNFIGHTER | 3,5 | DAVID EGAN | 312/–/–/– |
-| 5 | WARNING SYMBOL | 3,5 | CIEREN FALLON | 321/813/–/– |
-| 3 | CRYSTAL PIER | 5,2 | JACK DACE | –/158/–/– |
-| 8 | BE FRANK | 5,2 | BILLY LOUGHNANE | 223/599/–/– |
-| 1 | PORT ROAD | 10 | PADDY BRADLEY | –/–/–/– |
-| 6 | MAGNATURA | 10 | SEAN LEVEY | 266/–/–/– |
+| 4 | GUNFIGHTER | 1,1 | DAVID EGAN | 312/–/–/– |
+| 5 | WARNING SYMBOL | 14 | CIEREN FALLON | 321/813/–/– |
+| 8 | BE FRANK | 19 | BILLY LOUGHNANE | 223/599/–/– |
+| 3 | CRYSTAL PIER | 28 | JACK DACE | –/158/–/– |
+| 6 | MAGNATURA | 28 | SEAN LEVEY | 266/–/–/– |
+| 1 | PORT ROAD | 57 | PADDY BRADLEY | –/–/–/– |
 | 2 | HITCHED | – | CHARLES BISHOP | –/–/–/– |
 | 7 | KNOWLEDGE | – | HARRY DAVIES | 381/35/–/– |
 | 9 | NEZEEH | – | FINLEY MARSH | –/–/–/– |
@@ -58,13 +58,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 4 | MERTOUN | 2,3 | ROSSA RYAN | 215/650/–/2806 |
-| 7 | PROTECTRIX | 4,7 | DAVID EGAN | 312/–/–/– |
-| 6 | CHALE CHALO | 7 | PIERRE-LOUIS JAMIN | 199/796/–/– |
-| 8 | HEXAGONAL | 7 | FINLEY MARSH | –/–/–/– |
-| 2 | BOLD SUITOR | 14 | GEORGIA DOBIE | –/–/–/– |
-| 5 | ASSIRI HEIGHTS | 14 | BILLY LOUGHNANE | 223/116/–/– |
-| 9 | DOUBLE TIME | 14 | CALLUM HUTCHINSON | –/–/–/– |
+| 4 | MERTOUN | 1,6 | ROSSA RYAN | 215/650/–/2806 |
+| 5 | ASSIRI HEIGHTS | 2,6 | BILLY LOUGHNANE | 223/116/–/– |
+| 7 | PROTECTRIX | 17 | DAVID EGAN | 312/–/–/– |
+| 6 | CHALE CHALO | 34 | PIERRE-LOUIS JAMIN | 199/796/–/– |
+| 8 | HEXAGONAL | 34 | FINLEY MARSH | –/–/–/– |
+| 2 | BOLD SUITOR | 69 | GEORGIA DOBIE | –/–/–/– |
+| 9 | DOUBLE TIME | 69 | CALLUM HUTCHINSON | –/–/–/– |
 | 1 | KITARO KICH | – | BENOIT DE LA SAYETTE | –/460/–/– |
 | 3 | DUMUJI | – | HARRY DAVIES | 381/815/–/– |
 
@@ -74,34 +74,33 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 3 | SPEED NATION | 3,9 | BILLY LOUGHNANE | 223/35/–/– |
-| 5 | ZIRCONIC | 3,9 | ROSSA RYAN | 215/209/–/– |
-| 8 | SAND DANCE | 3,9 | CIEREN FALLON | 321/–/–/5588 |
-| 1 | IRIS OLIVIA | 7,9 | DAVID EGAN | 312/358/–/63 |
-| 7 | REMEMBER THE SHOW | 7,9 | ASHLEY LEWIS | –/103/–/– |
-| 9 | HIDDEN BEYOND | 7,9 | JASON WATSON | 369/832/–/1049 |
+| 4 | YOU'RE SENSATIONAL | 1,1 | ROBERT HAVLIN | 493/55/–/– |
+| 3 | SPEED NATION | 26 | BILLY LOUGHNANE | 223/35/–/– |
+| 5 | ZIRCONIC | 26 | ROSSA RYAN | 215/209/–/– |
+| 8 | SAND DANCE | 26 | CIEREN FALLON | 321/–/–/5588 |
+| 1 | IRIS OLIVIA | 52 | DAVID EGAN | 312/358/–/63 |
+| 7 | REMEMBER THE SHOW | 52 | ASHLEY LEWIS | –/103/–/– |
+| 9 | HIDDEN BEYOND | 52 | JASON WATSON | 369/832/–/1049 |
+| 10 | ISABELLA OF ARAGON | 52 | BEN FFRENCH DAVIS | –/–/–/– |
 | 2 | REVEILLEZ | – | KAIYA FRASER | 412/259/–/– |
-| 4 | YOU'RE SENSATIONAL | – | ROBERT HAVLIN | 493/55/–/– |
 | 6 | KEITHAAR | – | MARCO GHIANI | 376/105/–/– |
-| 10 | ISABELLA OF ARAGON | – | BEN FFRENCH DAVIS | –/–/–/– |
 
 ### 6. RACING TV HANDICAP (CLASS 4)
 
-*20h00 · plat · 1400 m · 13 partants · cotes de l'extraction*
+*20h00 · plat · 1400 m · 12 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 7 | WAISTCOAT | 2,6 | JACK MITCHELL | 314/–/–/– |
-| 3 | PHILANTHROPIST | 5,2 | GEORGE WOOD | –/581/–/– |
-| 4 | DO BRONXS | 5,2 | DAVID EGAN | 312/847/–/63 |
-| 9 | CHALK MOUNTAIN | 5,2 | MARCO GHIANI | 376/–/–/– |
-| 11 | RAGE OF THUNDER | 5,2 | BILLY LOUGHNANE | 223/687/–/– |
+| 7 | WAISTCOAT | 3 | JACK MITCHELL | 314/–/–/– |
+| 3 | PHILANTHROPIST | 6,1 | GEORGE WOOD | –/581/–/– |
+| 4 | DO BRONXS | 6,1 | DAVID EGAN | 312/847/–/63 |
+| 9 | CHALK MOUNTAIN | 6,1 | MARCO GHIANI | 376/–/–/– |
+| 11 | RAGE OF THUNDER | 6,1 | BILLY LOUGHNANE | 223/687/–/– |
+| 12 | SIWA OASIS | 6,1 | JASON WATSON | 369/832/–/2464 |
 | 1 | BLUE PRINCE | – | ROSSA RYAN | 215/–/–/– |
-| 5 | DR STRANGELOVE | – | MASON PAETEL | –/447/–/1600 |
 | 6 | MARENGO STORM | – | FINLEY MARSH | –/253/–/– |
 | 8 | SPY KINGDOM | – | CHARLES BISHOP | –/–/–/– |
 | 10 | MUSICAL ANGEL | – | PADDY BRADLEY | –/–/–/– |
-| 12 | SIWA OASIS | – | JASON WATSON | 369/832/–/2464 |
 | 13 | ENRICHER | – | LEWIS EDMUNDS | 410/–/–/– |
 | 14 | PINTS IN PEACE | – | WILLIAM COX | –/–/–/101 |
 
@@ -111,16 +110,16 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 6 | AIGEAS | 2,2 | MASON PAETEL | –/447/–/1619 |
-| 10 | MESAAFI | 2,2 | JACK MITCHELL | 314/–/–/– |
-| 5 | DAPPER VALLEY | 4,4 | DARRAGH KEENAN | 195/–/–/– |
-| 1 | BERKSHIRE WHISPER | – | JASON WATSON | 369/116/–/– |
-| 2 | FAST TRACK HARRY | – | ROSSA RYAN | 215/815/–/173 |
+| 1 | BERKSHIRE WHISPER | 2,1 | JASON WATSON | 369/116/–/– |
+| 2 | FAST TRACK HARRY | 2,1 | ROSSA RYAN | 215/815/–/173 |
+| 6 | AIGEAS | 7,8 | MASON PAETEL | –/447/–/1619 |
+| 10 | MESAAFI | 18 | JACK MITCHELL | 314/–/–/– |
+| 5 | DAPPER VALLEY | 54 | DARRAGH KEENAN | 195/–/–/– |
+| 11 | BINTARYANA | 54 | MARCO GHIANI | 376/823/–/1518 |
 | 3 | KNEBWORTH | – | FINLEY MARSH | –/253/–/– |
 | 4 | BOLO NEIGHS | – | JACK DACE | –/158/–/– |
 | 7 | SPACE BEAR | – | HARRY DAVIES | 381/–/–/– |
 | 9 | ART LOVER | – | CIEREN FALLON | 321/24/–/– |
-| 11 | BINTARYANA | – | MARCO GHIANI | 376/823/–/1518 |
 | 12 | AUGUSTUS GLOOP | – | GEORGE WOOD | –/581/–/3323 |
 
 ### 8. HANDICAP (CLASS 4) (LONDON MIDDLE DISTANCE QUALIFIER)
@@ -129,19 +128,19 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 12 | NICATOR | 1,1 | DAVID EGAN | 312/358/–/– |
-| 3 | WAR HAWK | 12 | JACK MITCHELL | 314/35/–/1734 |
-| 4 | TRYFAN | 18 | LEWIS EDMUNDS | 410/855/–/– |
-| 10 | CARNIVAL DAY | 18 | PAT COSGRAVE | 387/540/–/– |
-| 6 | WONDER | 37 | GEORGE WOOD | –/581/–/– |
-| 9 | METAL MERCHANT | 37 | SEAN LEVEY | 266/–/–/– |
-| 13 | CHARLIE'S CHOICE | 37 | TARYN LANGLEY | –/–/–/– |
+| 12 | NICATOR | 1,3 | DAVID EGAN | 312/358/–/– |
+| 13 | CHARLIE'S CHOICE | 10 | TARYN LANGLEY | –/–/–/– |
+| 3 | WAR HAWK | 14 | JACK MITCHELL | 314/35/–/1734 |
+| 11 | YOUTHFUL KING | 14 | JACK DACE | –/–/–/– |
+| 4 | TRYFAN | 21 | LEWIS EDMUNDS | 410/855/–/– |
+| 10 | CARNIVAL DAY | 21 | PAT COSGRAVE | 387/540/–/– |
+| 6 | WONDER | 42 | GEORGE WOOD | –/581/–/– |
+| 9 | METAL MERCHANT | 42 | SEAN LEVEY | 266/–/–/– |
 | 1 | LONDONER | – | BILLY LOUGHNANE | 223/–/–/– |
 | 2 | CHARMAINE | – | KAIYA FRASER | 412/581/–/– |
 | 5 | LYRIC | – | CIEREN FALLON | 321/599/–/2464 |
 | 7 | ASSAIL | – | ROSSA RYAN | 215/–/–/– |
 | 8 | MARHABA THE CHAMP | – | ROISIN LEECH | –/–/–/– |
-| 11 | YOUTHFUL KING | – | JACK DACE | –/–/–/– |
 
 ### 9. FILLIES' HANDICAP (CLASS 5) (LONDON MIDDLE DISTANCE SERIES QUALIFIER)
 
@@ -149,12 +148,12 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | ABLON | 2,6 | SEAN LEVEY | 266/279/–/– |
-| 3 | KASHEL SPRING | 2,6 | FINLEY MARSH | –/–/–/– |
-| 5 | THUNDER GODDESS | 2,6 | JASON WATSON | 369/116/–/– |
+| 2 | ABLON | 3,5 | SEAN LEVEY | 266/279/–/– |
+| 3 | KASHEL SPRING | 3,5 | FINLEY MARSH | –/–/–/– |
+| 5 | THUNDER GODDESS | 3,5 | JASON WATSON | 369/116/–/– |
+| 7 | TENISON | 3,5 | BILLY LOUGHNANE | 223/866/–/– |
 | 1 | ROYALE GOODNIGHT | – | LEWIS EDMUNDS | 410/855/–/– |
 | 4 | GLENNA | – | ROSSA RYAN | 215/–/–/– |
 | 6 | SPINNEY | – | DAVID EGAN | 312/541/–/– |
-| 7 | TENISON | – | BILLY LOUGHNANE | 223/866/–/– |
 | 8 | DINAH MYTE | – | WILLIAM PYLE | –/–/–/– |
 | 9 | MAYWEDANCE | – | ASHLEY LEWIS | –/–/–/– |

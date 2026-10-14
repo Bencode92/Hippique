@@ -105,19 +105,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 5 | ENORA SENORA | 3,7 | 4,1 | 3,60 | **+2,7 %** | E.HARDOUIN | 27/135/52/83 |
-| 7 | LADIVA | 4,9 | 5 | 5,18 | -5,4 % | M.FAVRIAUX | 51/285/550/1330 |
-| 8 | LADY ACE | 6,8 | 11 | 6,48 | **+5,0 %** | A.MADAMET | 10/210/170/1974 |
-| 1 | PALAZZO | 8,6 | 7,4 | 8,81 | -2,4 % | F.VALLE SKAR | 35/135/12/1774 |
-| 6 | BECH RIVER | 14 | 12 | 18,50 | -24,3 % | A.LE LAY MARTIN | 83/237/7/580 |
-| 10 | SOHO VICKY | 14 | 7,4 | 16,90 | -17,1 % | L.BOISSEAU | 36/432/332/218 |
-| 2 | THE WASP | 19 | 44 | 25,90 | -26,6 % | C.COLLET-VIDAL | 119/292/4072/401 |
-| 4 | CLAIR DE LUNE | 19 | 13 | 23,69 | -19,8 % | L.GALLO | 45/214/2191/342 |
-| 14 | PADDY WHITE HEART | 24 | 23 | 27,56 | -12,9 % | R.MANGIONE | 78/499/2234/3712 |
-| 3 | PUERTA DEL SOL | 25 | 31 | 31,68 | -21,1 % | A.VILCHIEN | 93/532/560/218 |
-| 15 | LADYSHOW | 25 | 22 | 28,90 | -13,5 % | M.ROMARY | 47/81/36/38 |
-| 11 | SILVER CONDOR | 47 | 75 | 66,98 | -29,8 % | C.CARBONI | 105/320/417/502 |
-| 13 | PALETUVIER | 50 | 28 | 65,37 | -23,5 % | B.MARIE | 69/864/1044/5170 |
+| 5 | ENORA SENORA | 3,7 | 4,2 | 3,60 | **+2,7 %** | E.HARDOUIN | 27/135/52/83 |
+| 7 | LADIVA | 4,9 | 4,5 | 5,18 | -5,4 % | M.FAVRIAUX | 51/285/550/1330 |
+| 8 | LADY ACE | 6,8 | 5,3 | 6,48 | **+5,0 %** | A.MADAMET | 10/210/170/1974 |
+| 1 | PALAZZO | 8,6 | 10 | 8,81 | -2,4 % | F.VALLE SKAR | 35/135/12/1774 |
+| 6 | BECH RIVER | 14 | 13 | 18,50 | -24,3 % | A.LE LAY MARTIN | 83/237/7/580 |
+| 10 | SOHO VICKY | 14 | 11 | 16,90 | -17,1 % | L.BOISSEAU | 36/432/332/218 |
+| 2 | THE WASP | 19 | 17 | 25,90 | -26,6 % | C.COLLET-VIDAL | 119/292/4072/401 |
+| 4 | CLAIR DE LUNE | 19 | 17 | 23,69 | -19,8 % | L.GALLO | 45/214/2191/342 |
+| 14 | PADDY WHITE HEART | 24 | 28 | 27,56 | -12,9 % | R.MANGIONE | 78/499/2234/3712 |
+| 15 | LADYSHOW | 25 | 32 | 28,90 | -13,5 % | M.ROMARY | 47/81/36/38 |
+| 3 | PUERTA DEL SOL | 25 | 34 | 31,68 | -21,1 % | A.VILCHIEN | 93/532/560/218 |
+| 11 | SILVER CONDOR | 47 | 65 | 66,98 | -29,8 % | C.CARBONI | 105/320/417/502 |
+| 13 | PALETUVIER | 50 | 58 | 65,37 | -23,5 % | B.MARIE | 69/864/1044/5170 |
 
 ### 8. PRIX DES FALAISES DE CRAIE
 
@@ -125,22 +125,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 6 | QUEENFLEUR | 3,1 | 2,3 | 3,13 | -1,0 % | T.BACHELOT | 16/53/77/1069 |
-| 1 | BLUE OCEAN DREAM | 8,4 | 76 | 8,33 | **+0,8 %** | B.MARIE | 69/173/1284/943 |
-| 7 | FELICIA STORM | 10 | 12 | 12,61 | -20,7 % | C.DEMURO | 1/48/3458/3401 |
-| 10 | ORANGE VIF | 10 | 9,4 | 12,91 | -22,5 % | R.THOMAS | 75/90/108/66 |
-| 8 | PANZER | 12 | 29 | 12,56 | -4,5 % | PC.BOUDOT | 8/257/702/1543 |
+| 6 | QUEENFLEUR | 3,1 | 3,5 | 3,35 | -7,3 % | T.BACHELOT | 16/53/77/1069 |
+| 1 | BLUE OCEAN DREAM | 8,4 | 6,7 | 8,33 | **+0,8 %** | B.MARIE | 69/173/1284/943 |
+| 10 | ORANGE VIF | 10 | 9,3 | 13,49 | -25,9 % | R.THOMAS | 75/90/108/66 |
+| 7 | FELICIA STORM | 10 | 11 | 12,61 | -20,7 % | C.DEMURO | 1/48/3458/3401 |
+| 8 | PANZER | 12 | 15 | 12,56 | -4,5 % | PC.BOUDOT | 8/257/702/1543 |
+| 15 | CAREGIVER | 14 | 14 | 15,01 | -6,7 % | R.MANGIONE | 78/57/920/2533 |
 | 14 | JOYCE GALESTE | 14 | 15 | 17,11 | -18,2 % | E.HARDOUIN | 27/46/132/170 |
-| 15 | CAREGIVER | 14 | 14 | 14,35 | -2,4 % | R.MANGIONE | 78/57/920/2533 |
-| 4 | CATHERINE'S GIFT | 17 | 20 | 21,45 | -20,8 % | T.PICCONE | 9/40/54/1582 |
-| 9 | FLAMBOYANTE | 20 | 12 | 24,73 | -19,1 % | M.FAVRIAUX | 51/285/1206/2396 |
-| 13 | RUE DE L'ODEON | 20 | 16 | 29,12 | -31,3 % | L.BOISSEAU | 36/53/13/62 |
-| 2 | LIKING | 29 | 19 | 36,21 | -19,9 % | J.MOUTARD | 61/149/450/1854 |
-| 3 | ORLHENA | 33 | 29 | 41,86 | -21,2 % | H.BOUTIN | 14/28/98/16 |
-| 12 | MASSA CHOP | 44 | 36 | 69,24 | -36,5 % | A.MADAMET | 10/214/6/342 |
-| 5 | JURMALA | 47 | 59 | 74,42 | -36,8 % | C. LECOEUVRE | 13/533/4176/3424 |
-| 16 | ASTON JUAN | 54 | 109 | 78,74 | -31,4 % | C.BELMONT | 171/280/1001/485 |
-| 11 | GOLDEN VALE | 124 | 85 | 177,26 | -30,0 % | G.MEURY | 68/249/4136/1011 |
+| 4 | CATHERINE'S GIFT | 17 | 18 | 21,45 | -20,8 % | T.PICCONE | 9/40/54/1582 |
+| 13 | RUE DE L'ODEON | 20 | 12 | 29,12 | -31,3 % | L.BOISSEAU | 36/53/13/62 |
+| 9 | FLAMBOYANTE | 20 | 21 | 24,73 | -19,1 % | M.FAVRIAUX | 51/285/1206/2396 |
+| 2 | LIKING | 29 | 26 | 36,21 | -19,9 % | J.MOUTARD | 61/149/450/1854 |
+| 3 | ORLHENA | 33 | 38 | 43,88 | -24,8 % | H.BOUTIN | 14/28/98/16 |
+| 12 | MASSA CHOP | 44 | 45 | 66,03 | -33,4 % | A.MADAMET | 10/214/6/342 |
+| 5 | JURMALA | 47 | 50 | 74,42 | -36,8 % | C. LECOEUVRE | 13/533/4176/3424 |
+| 16 | ASTON JUAN | 54 | 61 | 78,74 | -31,4 % | C.BELMONT | 171/280/1001/485 |
+| 11 | GOLDEN VALE | 124 | 178 | 177,26 | -30,0 % | G.MEURY | 68/249/4136/1011 |
 
 ### 9. PRIX DES BOUCLES DE LA SEINE
 
@@ -148,19 +148,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 16 | LARLIB | 5,9 | 11 | 6,65 | -11,2 % | T.BACHELOT | 16/23/866/2194 |
-| 9 | CLICCLIC PANPANPAN | 6,4 | 5,3 | 6,44 | -0,6 % | L.BOISSEAU | 36/53/77/2192 |
-| 2 | MON COMEDIEN | 7,6 | 4,2 | 8,28 | -8,3 % | PC.BOUDOT | 8/91/377/1494 |
-| 8 | SEPTIMUS | 8,4 | 8,1 | 8,95 | -6,1 % | C.BELMONT | 171/220/1023/1522 |
-| 1 | LONDONPOLO | 9,7 | 21 | 10,09 | -3,8 % | C.SOUMILLON 2e | 7/66/129/2694 |
-| 13 | TOKYO DREAMER | 10 | 22 | 10,74 | -6,9 % | E.HARDOUIN | 27/46/3253/170 |
-| 3 | SIJOUX | 11 | 8,5 | 11,70 | -6,0 % | L.BAILS | 77/152/2773/863 |
-| 6 | FROMONTINE | 18 | 19 | 23,69 | -24,0 % | A.MOLINS | 34/197/748/3364 |
-| 12 | PINGO | 20 | 18 | 28,74 | -30,4 % | H.BOUTIN | 14/28/701/49 |
-| 5 | JAGUARE PRECIEUSE | 25 | 28 | 33,04 | -24,3 % | C.DEMURO | 1/200/244/206 |
-| 10 | CALLA FONDA | 26 | 26 | 36,19 | -28,2 % | L.GALLO | 45/126/18/887 |
-| 15 | READY KING | 32 | 46 | 38,12 | -16,1 % | M.VELON | 28/388/25/827 |
-| 7 | ADLAN SENORA | 41 | 29 | 47,88 | -14,4 % | C.LECOEUVRE | 13/149/52/83 |
-| 14 | KEEN APPROACH | 54 | 32 | 74,45 | -27,5 % | E.CORALLO | 57/231/1142/935 |
-| 11 | RIDE ON | 92 | 50 | 142,72 | -35,5 % | A.MADAMET | 10/157/158/3558 |
-| 4 | DSCHINGIS POWER | 103 | 76 | 160,12 | -35,7 % | M. FAVRIAUX | 51/593/67/2325 |
+| 16 | LARLIB | 5,9 | 4,8 | 7,21 | -18,2 % | T.BACHELOT | 16/23/866/2194 |
+| 9 | CLICCLIC PANPANPAN | 6,4 | 6,4 | 6,98 | -8,4 % | L.BOISSEAU | 36/53/77/2192 |
+| 2 | MON COMEDIEN | 7,6 | 7,4 | 7,94 | -4,3 % | PC.BOUDOT | 8/91/377/1494 |
+| 8 | SEPTIMUS | 8,4 | 9,1 | 8,22 | **+2,1 %** | C.BELMONT | 171/220/1023/1522 |
+| 1 | LONDONPOLO | 9,7 | 9,6 | 10,09 | -3,8 % | C.SOUMILLON 2e | 7/66/129/2694 |
+| 13 | TOKYO DREAMER | 10 | 11 | 10,74 | -6,9 % | E.HARDOUIN | 27/46/3253/170 |
+| 3 | SIJOUX | 11 | 13 | 12,23 | -10,1 % | L.BAILS | 77/152/2773/863 |
+| 6 | FROMONTINE | 18 | 18 | 24,81 | -27,4 % | A.MOLINS | 34/197/748/3364 |
+| 12 | PINGO | 20 | 23 | 27,47 | -27,2 % | H.BOUTIN | 14/28/701/49 |
+| 5 | JAGUARE PRECIEUSE | 25 | 25 | 33,04 | -24,3 % | C.DEMURO | 1/200/244/206 |
+| 10 | CALLA FONDA | 26 | 40 | 37,93 | -31,4 % | L.GALLO | 45/126/18/887 |
+| 15 | READY KING | 32 | 35 | 38,12 | -16,1 % | M.VELON | 28/388/25/827 |
+| 7 | ADLAN SENORA | 41 | 20 | 50,19 | -18,3 % | C.LECOEUVRE | 13/149/52/83 |
+| 14 | KEEN APPROACH | 54 | 66 | 70,99 | -23,9 % | E.CORALLO | 57/231/1142/935 |
+| 11 | RIDE ON | 92 | 119 | 142,72 | -35,5 % | A.MADAMET | 10/157/158/3558 |
+| 4 | DSCHINGIS POWER | 103 | 137 | 160,12 | -35,7 % | M. FAVRIAUX | 51/593/67/2325 |

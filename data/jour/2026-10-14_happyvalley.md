@@ -117,18 +117,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 5 | CLOUD NINE | 2,7 | PURTON Z. |
-| 6 | BITS SUPERSTAR | 6,3 | CHAU C.L. |
-| 4 | GAMEPLAYER ELITE | 8,9 | BENTLEY H. |
-| 1 | SPEEDY SMARTIE | 9,2 | TEETAN K. |
-| 3 | FLASHING FIGHTER | 9,5 | YUEN H.Y. |
-| 12 | LEGEND STAR | 9,8 | HEWITSON L. |
-| 2 | OUTGATE | 14 | CHUNG Y.L. |
-| 10 | PERFECT TRIUMPH | 16 | HO C.Y. |
-| 8 | A TIME FOR US | 19 | ORMAN J. |
-| 11 | HAPPY UNITED | 42 | BADEL A. |
-| 9 | CLASSIC TRIPLE | 43 | YEUNG M.L. |
-| 7 | GOLDEN ELITE | 58 | WONG E.C.W. |
+| 5 | CLOUD NINE | 2,2 | PURTON Z. |
+| 6 | BITS SUPERSTAR | 5,4 | CHAU C.L. |
+| 3 | FLASHING FIGHTER | 7,7 | YUEN H.Y. |
+| 4 | GAMEPLAYER ELITE | 9,7 | BENTLEY H. |
+| 12 | LEGEND STAR | 12 | HEWITSON L. |
+| 1 | SPEEDY SMARTIE | 12 | TEETAN K. |
+| 2 | OUTGATE | 19 | CHUNG Y.L. |
+| 10 | PERFECT TRIUMPH | 23 | HO C.Y. |
+| 8 | A TIME FOR US | 27 | ORMAN J. |
+| 11 | HAPPY UNITED | 37 | BADEL A. |
+| 9 | CLASSIC TRIPLE | 66 | YEUNG M.L. |
+| 7 | GOLDEN ELITE | 110 | WONG E.C.W. |
 
 ### 8. GAGE HANDICAP
 
@@ -136,18 +136,18 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 9 | CHINA WIN | 3,5 | PURTON Z. | –/–/–/– |
-| 3 | FIVEFORTWO | 5,3 | CHAU C.L. | –/–/–/– |
-| 1 | FORTUNATE SON | 5,4 | HO C.Y. | –/–/–/– |
-| 8 | GLITTERING LEGEND | 11 | FERRARIS L. | –/–/–/– |
-| 6 | FALLON | 12 | YEUNG M.L. | –/–/–/– |
-| 10 | VIOLET STAR | 13 | ATZENI A. | –/–/–/– |
-| 12 | FOREVER FOLKS | 13 | LEUNG K.C. | –/–/–/– |
-| 7 | THE AUSPICIOUS | 16 | BADEL A. | –/–/–/– |
-| 2 | SERAPH GABRIEL | 18 | AVDULLA B. | –/–/–/– |
-| 11 | SAMARKAND | 23 | HEWITSON L. | –/–/–/– |
-| 4 | LO RIDER | 24 | TEETAN K. | –/–/–/– |
-| 5 | CORLEONE | 27 | WONG E.C.W. | –/–/–/– |
+| 9 | CHINA WIN | 3,4 | PURTON Z. | –/–/–/– |
+| 1 | FORTUNATE SON | 6,3 | HO C.Y. | –/–/–/– |
+| 10 | VIOLET STAR | 6,4 | ATZENI A. | –/–/–/– |
+| 3 | FIVEFORTWO | 9,5 | CHAU C.L. | –/–/–/– |
+| 8 | GLITTERING LEGEND | 9,5 | FERRARIS L. | –/–/–/– |
+| 2 | SERAPH GABRIEL | 11 | AVDULLA B. | –/–/–/– |
+| 6 | FALLON | 13 | YEUNG M.L. | –/–/–/– |
+| 4 | LO RIDER | 15 | TEETAN K. | –/–/–/– |
+| 12 | FOREVER FOLKS | 18 | LEUNG K.C. | –/–/–/– |
+| 5 | CORLEONE | 19 | WONG E.C.W. | –/–/–/– |
+| 11 | SAMARKAND | 33 | HEWITSON L. | –/–/–/– |
+| 7 | THE AUSPICIOUS | 34 | BADEL A. | –/–/–/– |
 
 ### 9. HARBOUR VIEW HANDICAP
 
@@ -155,15 +155,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 10 | WUKONG JEWELLERY | 4,3 | ATZENI A. |
-| 5 | ACE CHAMPION | 6,1 | HO C.Y. |
-| 8 | ROBOT LUCKY STAR | 7,3 | PURTON Z. |
-| 7 | FOUR STARS ALIGN | 7,6 | YEUNG M.L. |
-| 12 | GOLDEN CHAMP | 7,7 | BADEL A. |
-| 1 | AURORA PATCH | 13 | WONG E.C.W. |
-| 6 | ALL OUT FOR SIX | 15 | TEETAN K. |
-| 3 | MY DAY MY WAY | 16 | CHAU C.L. |
-| 11 | CALIFORNIA BLITZ | 16 | CHADWICK M. |
-| 2 | STRAIGHT TO GLORY | 17 | LEUNG K.C. |
-| 4 | SYMBOL OF STRENGTH | 19 | AVDULLA B. |
-| 9 | NORTHERN FIRE BALL | 23 | YUEN H.Y. |
+| 10 | WUKONG JEWELLERY | 4,5 | ATZENI A. |
+| 8 | ROBOT LUCKY STAR | 5,7 | PURTON Z. |
+| 5 | ACE CHAMPION | 5,8 | HO C.Y. |
+| 6 | ALL OUT FOR SIX | 6,6 | TEETAN K. |
+| 7 | FOUR STARS ALIGN | 9,3 | YEUNG M.L. |
+| 12 | GOLDEN CHAMP | 9,6 | BADEL A. |
+| 11 | CALIFORNIA BLITZ | 17 | CHADWICK M. |
+| 3 | MY DAY MY WAY | 19 | CHAU C.L. |
+| 1 | AURORA PATCH | 20 | WONG E.C.W. |
+| 4 | SYMBOL OF STRENGTH | 20 | AVDULLA B. |
+| 2 | STRAIGHT TO GLORY | 25 | LEUNG K.C. |
+| 9 | NORTHERN FIRE BALL | 28 | YUEN H.Y. |
