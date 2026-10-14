@@ -1,6 +1,6 @@
 # SAINT-CLOUD — 14/10/2026
 
-9 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -144,23 +144,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 9. PRIX DES BOUCLES DE LA SEINE
 
-*16h33 · plat · 2000 m · 16 partants · cotes de l'extraction*
+*16h33 · plat · 2000 m · 16 partants · cotes à T−29:45*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 2 | MON COMEDIEN | 4,2 | 4,26 | -1,3 % | PC.BOUDOT | 8/91/377/1494 |
-| 9 | CLICCLIC PANPANPAN | 5,3 | 5,25 | **+0,9 %** | L.BOISSEAU | 36/53/77/2192 |
-| 8 | SEPTIMUS | 8,1 | 8,63 | -6,1 % | C.BELMONT | 171/220/1023/1522 |
-| 3 | SIJOUX | 8,5 | 9,12 | -6,8 % | L.BAILS | 77/152/2773/863 |
-| 16 | LARLIB | 11 | 14,00 | -21,4 % | T.BACHELOT | 16/23/866/2194 |
-| 12 | PINGO | 18 | 25,58 | -29,6 % | H.BOUTIN | 14/28/701/49 |
-| 6 | FROMONTINE | 19 | 25,37 | -25,1 % | A.MOLINS | 34/197/748/3364 |
-| 1 | LONDONPOLO | 21 | 27,20 | -22,8 % | C.SOUMILLON 2e | 7/66/129/2694 |
-| 13 | TOKYO DREAMER | 22 | 28,20 | -22,0 % | E.HARDOUIN | 27/46/3253/170 |
-| 10 | CALLA FONDA | 26 | 36,40 | -28,6 % | L.GALLO | 45/126/18/887 |
-| 5 | JAGUARE PRECIEUSE | 28 | 37,79 | -25,9 % | C.DEMURO | 1/200/244/206 |
-| 7 | ADLAN SENORA | 29 | 34,32 | -15,5 % | C.LECOEUVRE | 13/149/52/83 |
-| 14 | KEEN APPROACH | 32 | 38,37 | -16,6 % | E.CORALLO | 57/231/1142/935 |
-| 15 | READY KING | 46 | 54,60 | -15,7 % | M.VELON | 28/388/25/827 |
-| 11 | RIDE ON | 50 | 79,07 | -36,8 % | A.MADAMET | 10/157/158/3558 |
-| 4 | DSCHINGIS POWER | 76 | 117,74 | -35,4 % | M. FAVRIAUX | 51/593/67/2325 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 2 | MON COMEDIEN | 5,3 | 4,2 | 5,95 | -10,9 % | PC.BOUDOT | 8/91/377/1494 |
+| 9 | CLICCLIC PANPANPAN | 5,3 | 5,3 | 5,63 | -5,9 % | L.BOISSEAU | 36/53/77/2192 |
+| 16 | LARLIB | 7,2 | 11 | 7,87 | -8,5 % | T.BACHELOT | 16/23/866/2194 |
+| 3 | SIJOUX | 10 | 8,5 | 10,59 | -5,6 % | L.BAILS | 77/152/2773/863 |
+| 8 | SEPTIMUS | 11 | 8,1 | 12,36 | -11,0 % | C.BELMONT | 171/220/1023/1522 |
+| 6 | FROMONTINE | 13 | 19 | 16,37 | -20,6 % | A.MOLINS | 34/197/748/3364 |
+| 1 | LONDONPOLO | 15 | 21 | 18,50 | -18,9 % | C.SOUMILLON 2e | 7/66/129/2694 |
+| 13 | TOKYO DREAMER | 18 | 22 | 22,48 | -19,9 % | E.HARDOUIN | 27/46/3253/170 |
+| 5 | JAGUARE PRECIEUSE | 22 | 28 | 26,31 | -16,4 % | C.DEMURO | 1/200/244/206 |
+| 10 | CALLA FONDA | 22 | 26 | 30,20 | -27,1 % | L.GALLO | 45/126/18/887 |
+| 12 | PINGO | 24 | 18 | 35,85 | -33,1 % | H.BOUTIN | 14/28/701/49 |
+| 15 | READY KING | 33 | 46 | 39,86 | -17,2 % | M.VELON | 28/388/25/827 |
+| 7 | ADLAN SENORA | 35 | 29 | 42,56 | -17,8 % | C.LECOEUVRE | 13/149/52/83 |
+| 14 | KEEN APPROACH | 36 | 32 | 43,95 | -18,1 % | E.CORALLO | 57/231/1142/935 |
+| 11 | RIDE ON | 50 | 50 | 79,42 | -37,0 % | A.MADAMET | 10/157/158/3558 |
+| 4 | DSCHINGIS POWER | 71 | 76 | 115,50 | -38,5 % | M. FAVRIAUX | 51/593/67/2325 |
