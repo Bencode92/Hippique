@@ -101,23 +101,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE LA POINTE DU HODE
 
-*15h22 · plat · 2000 m · 13 partants · cotes à T−2:45*
+*15h22 · plat · 2000 m · 13 partants · cotes à T−0:05*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 5 | ENORA SENORA | 3,8 | 4,1 | 3,76 | **+1,0 %** | E.HARDOUIN | 27/135/52/83 |
-| 7 | LADIVA | 4,3 | 5 | 4,25 | **+1,2 %** | M.FAVRIAUX | 51/285/550/1330 |
-| 1 | PALAZZO | 7,6 | 7,4 | 8,12 | -6,4 % | F.VALLE SKAR | 35/135/12/1774 |
-| 10 | SOHO VICKY | 10 | 7,4 | 11,61 | -13,9 % | L.BOISSEAU | 36/432/332/218 |
-| 6 | BECH RIVER | 11 | 12 | 14,19 | -22,5 % | A.LE LAY MARTIN | 83/237/7/580 |
-| 8 | LADY ACE | 12 | 11 | 13,80 | -13,0 % | A.MADAMET | 10/210/170/1974 |
-| 4 | CLAIR DE LUNE | 15 | 13 | 18,34 | -18,2 % | L.GALLO | 45/214/2191/342 |
-| 14 | PADDY WHITE HEART | 21 | 23 | 24,09 | -12,8 % | R.MANGIONE | 78/499/2234/3712 |
-| 3 | PUERTA DEL SOL | 26 | 31 | 33,73 | -22,9 % | A.VILCHIEN | 93/532/560/218 |
-| 15 | LADYSHOW | 27 | 22 | 32,10 | -15,9 % | M.ROMARY | 47/81/36/38 |
-| 13 | PALETUVIER | 29 | 28 | 38,17 | -24,0 % | B.MARIE | 69/864/1044/5170 |
-| 2 | THE WASP | 37 | 44 | 56,32 | -34,3 % | C.COLLET-VIDAL | 119/292/4072/401 |
-| 11 | SILVER CONDOR | 70 | 75 | 104,36 | -32,9 % | C.CARBONI | 105/320/417/502 |
+| 5 | ENORA SENORA | 3,7 | 4,1 | 3,60 | **+2,7 %** | E.HARDOUIN | 27/135/52/83 |
+| 7 | LADIVA | 4,9 | 5 | 5,18 | -5,4 % | M.FAVRIAUX | 51/285/550/1330 |
+| 8 | LADY ACE | 6,8 | 11 | 6,48 | **+5,0 %** | A.MADAMET | 10/210/170/1974 |
+| 1 | PALAZZO | 8,6 | 7,4 | 8,81 | -2,4 % | F.VALLE SKAR | 35/135/12/1774 |
+| 6 | BECH RIVER | 14 | 12 | 18,50 | -24,3 % | A.LE LAY MARTIN | 83/237/7/580 |
+| 10 | SOHO VICKY | 14 | 7,4 | 16,90 | -17,1 % | L.BOISSEAU | 36/432/332/218 |
+| 2 | THE WASP | 19 | 44 | 25,90 | -26,6 % | C.COLLET-VIDAL | 119/292/4072/401 |
+| 4 | CLAIR DE LUNE | 19 | 13 | 23,69 | -19,8 % | L.GALLO | 45/214/2191/342 |
+| 14 | PADDY WHITE HEART | 24 | 23 | 27,56 | -12,9 % | R.MANGIONE | 78/499/2234/3712 |
+| 3 | PUERTA DEL SOL | 25 | 31 | 31,68 | -21,1 % | A.VILCHIEN | 93/532/560/218 |
+| 15 | LADYSHOW | 25 | 22 | 28,90 | -13,5 % | M.ROMARY | 47/81/36/38 |
+| 11 | SILVER CONDOR | 47 | 75 | 66,98 | -29,8 % | C.CARBONI | 105/320/417/502 |
+| 13 | PALETUVIER | 50 | 28 | 65,37 | -23,5 % | B.MARIE | 69/864/1044/5170 |
 
 ### 8. PRIX DES FALAISES DE CRAIE
 
