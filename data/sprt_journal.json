@@ -1,10 +1,10 @@
 {
   "_doc": "Journal des paris réels du test séquentiel. Le pari est le relevé le plus proche de T-2:00 dans [T-2:40 ; T-1:20] (releve = 'T-m:ss') ; une course de la règle sans relevé dans la fenêtre est EXCLUE (liste exclues), jamais remplacée par la clôture. Écrit par bench/sprt_regle.mjs.",
   "debut": "2026-10-01",
-  "paris": 8,
-  "exclues_sans_releve": 4,
+  "paris": 9,
+  "exclues_sans_releve": 8,
   "favori_change_avant_cloture": 1,
-  "taux_bascule_favori": 0.125,
+  "taux_bascule_favori": 0.111,
   "lignes": [
     {
       "date": "2026-10-03",
@@ -141,6 +141,23 @@
       "dividende": 0,
       "gain_20e": -20,
       "S": 0.146
+    },
+    {
+      "date": "2026-10-13",
+      "hippodrome": "ParisLongchamp",
+      "R": 1,
+      "C": 4,
+      "cheval": "GOOD MEMORY",
+      "numero": 5,
+      "cote_misee": 4.3,
+      "releve": "T-1:59",
+      "cote_finale": 4.2,
+      "favori_final_identique": true,
+      "derive": 0.283,
+      "gagne": false,
+      "dividende": 0,
+      "gain_20e": -20,
+      "S": 0.113
     }
   ],
   "exclues": [
@@ -170,6 +187,34 @@
       "hip": "SAINT-CLOUD",
       "r": 1,
       "c": 1,
+      "motif": "aucun relevé dans [T-2:40 ; T-1:20]"
+    },
+    {
+      "date": "2026-10-13",
+      "hip": "ParisLongchamp",
+      "r": 1,
+      "c": 1,
+      "motif": "aucun relevé dans [T-2:40 ; T-1:20]"
+    },
+    {
+      "date": "2026-10-13",
+      "hip": "ParisLongchamp",
+      "r": 1,
+      "c": 5,
+      "motif": "aucun relevé dans [T-2:40 ; T-1:20]"
+    },
+    {
+      "date": "2026-10-13",
+      "hip": "ParisLongchamp",
+      "r": 1,
+      "c": 6,
+      "motif": "aucun relevé dans [T-2:40 ; T-1:20]"
+    },
+    {
+      "date": "2026-10-13",
+      "hip": "ParisLongchamp",
+      "r": 1,
+      "c": 7,
       "motif": "aucun relevé dans [T-2:40 ; T-1:20]"
     }
   ]

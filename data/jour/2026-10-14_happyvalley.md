@@ -1,8 +1,8 @@
 # HAPPY VALLEY — 14/10/2026
 
-9 courses.
+9 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -12,18 +12,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | CHEERFUL WONGCHOY | – | PURTON Z. |
-| 2 | THE LION KING | – | ATZENI A. |
-| 3 | WHOWROTETHATSONG | – | FERRARIS L. |
-| 4 | FLASH STAR | – | HEWITSON L. |
-| 5 | THE ALL ROUNDER | – | HO C.Y. |
-| 6 | MADE FOR LIFE | – | LEUNG K.C. |
-| 7 | OUR LUCKY GLORY | – | BENTLEY H. |
-| 8 | SETANTA | – | CHUNG Y.L. |
-| 9 | KASA PAPA | – | CHAU C.L. |
-| 10 | ORIENTAL SURPRISE | – | YUEN H.Y. |
-| 11 | WINDICATOR FAMILY | – | TEETAN K. |
-| 12 | WINNING DIAMOND | – | KINGSCOTE R. |
+| 1 | CHEERFUL WONGCHOY | 4,9 | PURTON Z. |
+| 11 | WINDICATOR FAMILY | 5,9 | TEETAN K. |
+| 5 | THE ALL ROUNDER | 6,3 | HO C.Y. |
+| 10 | ORIENTAL SURPRISE | 6,9 | YUEN H.Y. |
+| 3 | WHOWROTETHATSONG | 9,3 | FERRARIS L. |
+| 8 | SETANTA | 10 | CHUNG Y.L. |
+| 6 | MADE FOR LIFE | 12 | LEUNG K.C. |
+| 12 | WINNING DIAMOND | 13 | KINGSCOTE R. |
+| 7 | OUR LUCKY GLORY | 18 | BENTLEY H. |
+| 9 | KASA PAPA | 18 | CHAU C.L. |
+| 2 | THE LION KING | 22 | ATZENI A. |
+| 4 | FLASH STAR | 36 | HEWITSON L. |
 
 ### 2. ELGIN HANDICAP - SECTION 2
 
@@ -31,16 +31,16 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | SHAMZ | – | FERRARIS L. |
-| 2 | DRAGON ON SNOW | – | ATZENI A. |
-| 3 | AKERMANIS GOLD | – | CHAU C.L. |
-| 4 | CASA ROCHESTER | – | PURTON Z. |
-| 5 | IVY LEAGUE | – | KINGSCOTE R. |
-| 6 | VERMILION TEMPEST | – | HO C.Y. |
-| 7 | LUCKY TOGETHER | – | LEUNG K.C. |
-| 8 | GAZELEY | – | CHADWICK M. |
-| 9 | MASSIVE REWARD | – | CHUNG Y.L. |
-| 10 | SURE JOYFUL | – | TEETAN K. |
+| 3 | AKERMANIS GOLD | 3,2 | CHAU C.L. |
+| 10 | SURE JOYFUL | 5,6 | TEETAN K. |
+| 8 | GAZELEY | 5,8 | CHADWICK M. |
+| 4 | CASA ROCHESTER | 7,8 | PURTON Z. |
+| 1 | SHAMZ | 9,2 | FERRARIS L. |
+| 6 | VERMILION TEMPEST | 10 | HO C.Y. |
+| 5 | IVY LEAGUE | 11 | KINGSCOTE R. |
+| 7 | LUCKY TOGETHER | 18 | LEUNG K.C. |
+| 9 | MASSIVE REWARD | 22 | CHUNG Y.L. |
+| 2 | DRAGON ON SNOW | 41 | ATZENI A. |
 
 ### 3. ELGIN HANDICAP - SECTION 1
 
@@ -48,16 +48,16 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | EXCEED THE LIMIT | – | HEWITSON L. |
-| 2 | SHOOTING TO TOP | – | PURTON Z. |
-| 3 | CALIFORNIA MOXIE | – | AVDULLA B. |
-| 4 | RAINBOW SEVEN | – | HO C.Y. |
-| 5 | THE AZURE | – | CHAU C.L. |
-| 6 | DECISION LINK | – | FERRARIS L. |
-| 7 | KYOTO SPRING | – | LEUNG K.C. |
-| 8 | FAMILY KNIGHT | – | YEUNG M.L. |
-| 9 | RED BRICK WARRIOR | – | ATZENI A. |
-| 10 | PRESTIGE RICKY | – | TEETAN K. |
+| 2 | SHOOTING TO TOP | 2,7 | PURTON Z. |
+| 6 | DECISION LINK | 5,6 | FERRARIS L. |
+| 10 | PRESTIGE RICKY | 7,4 | TEETAN K. |
+| 1 | EXCEED THE LIMIT | 8,8 | HEWITSON L. |
+| 3 | CALIFORNIA MOXIE | 10 | AVDULLA B. |
+| 8 | FAMILY KNIGHT | 10 | YEUNG M.L. |
+| 9 | RED BRICK WARRIOR | 10 | ATZENI A. |
+| 7 | KYOTO SPRING | 19 | LEUNG K.C. |
+| 5 | THE AZURE | 24 | CHAU C.L. |
+| 4 | RAINBOW SEVEN | 27 | HO C.Y. |
 
 ### 4. FINANCE HANDICAP - SECTION 1
 
@@ -65,18 +65,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | DRAGON FOUR SEAS | – | FERRARIS L. |
-| 2 | FORERUNNER | – | LEUNG K.C. |
-| 3 | FIND MY LOVE | – | YEUNG M.L. |
-| 4 | ELEGANT LIFE | – | WONG E.C.W. |
-| 5 | LEADING DRAGON | – | YUEN H.Y. |
-| 6 | LOOKING BRIGHT | – | TEETAN K. |
-| 7 | THE PERFECT MATCH | – | CHAU C.L. |
-| 8 | CHAMP'S DOMAIN | – | ORMAN J. |
-| 9 | WINNING COMBO | – | CHUNG Y.L. |
-| 10 | COUNTRY PRIDE | – | PURTON Z. |
-| 11 | CASA BUDDY | – | MO H.T. |
-| 12 | SAME TO YOU | – | BADEL A. |
+| 10 | COUNTRY PRIDE | 4,6 | PURTON Z. |
+| 2 | FORERUNNER | 5 | LEUNG K.C. |
+| 5 | LEADING DRAGON | 6,3 | YUEN H.Y. |
+| 7 | THE PERFECT MATCH | 6,8 | CHAU C.L. |
+| 12 | SAME TO YOU | 9,2 | BADEL A. |
+| 1 | DRAGON FOUR SEAS | 11 | FERRARIS L. |
+| 3 | FIND MY LOVE | 11 | YEUNG M.L. |
+| 4 | ELEGANT LIFE | 14 | WONG E.C.W. |
+| 6 | LOOKING BRIGHT | 20 | TEETAN K. |
+| 9 | WINNING COMBO | 25 | CHUNG Y.L. |
+| 11 | CASA BUDDY | 40 | MO H.T. |
+| 8 | CHAMP'S DOMAIN | 43 | ORMAN J. |
 
 ### 5. FINANCE HANDICAP - SECTION 3
 
@@ -84,18 +84,18 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | BROWNNEEDSFURTHER | – | AVDULLA B. | –/–/–/– |
-| 2 | FRIENDS OF SHAJING | – | CHAU C.L. | –/–/–/– |
-| 3 | GOLDEN BRILLIANT | – | BADEL A. | –/–/–/– |
-| 4 | RUN RUN SUNRISE | – | LEUNG K.C. | –/–/–/– |
-| 5 | CHARMING BABE | – | YUEN H.Y. | –/–/–/– |
-| 6 | DAN ATTACK | – | BENTLEY H. | –/–/–/– |
-| 7 | VICTOR THE RAPID | – | HO C.Y. | –/–/–/– |
-| 8 | CORNERSTONE | – | KINGSCOTE R. | –/–/–/– |
-| 9 | MEGA AWESOME | – | ATZENI A. | –/–/–/– |
-| 10 | EVERSTAR | – | TEETAN K. | –/–/–/– |
-| 11 | LUCKY TWENTY | – | POON M.F. | –/–/–/– |
-| 12 | FREE PONY | – | YEUNG M.L. | –/–/–/– |
+| 2 | FRIENDS OF SHAJING | 5,3 | CHAU C.L. | –/–/–/– |
+| 6 | DAN ATTACK | 5,8 | BENTLEY H. | –/–/–/– |
+| 1 | BROWNNEEDSFURTHER | 6,3 | AVDULLA B. | –/–/–/– |
+| 7 | VICTOR THE RAPID | 7 | HO C.Y. | –/–/–/– |
+| 12 | FREE PONY | 8 | YEUNG M.L. | –/–/–/– |
+| 5 | CHARMING BABE | 10 | YUEN H.Y. | –/–/–/– |
+| 3 | GOLDEN BRILLIANT | 11 | BADEL A. | –/–/–/– |
+| 4 | RUN RUN SUNRISE | 17 | LEUNG K.C. | –/–/–/– |
+| 11 | LUCKY TWENTY | 19 | POON M.F. | –/–/–/– |
+| 8 | CORNERSTONE | 21 | KINGSCOTE R. | –/–/–/– |
+| 10 | EVERSTAR | 21 | TEETAN K. | –/–/–/– |
+| 9 | MEGA AWESOME | 29 | ATZENI A. | –/–/–/– |
 
 ### 6. THE HKEX TECH 100 CUP (HANDICAP)
 
@@ -103,15 +103,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | SPEED DRAGON | – | HEWITSON L. |
-| 2 | MASSIVE SOVEREIGN | – | CHAU C.L. |
-| 3 | HELENE FEELING | – | WONG E.C.W. |
-| 4 | TALENTS AMBITION | – | KINGSCOTE R. |
-| 5 | SILVERY BREEZE | – | PURTON Z. |
-| 6 | GENTLEMEN LEGACY | – | FERRARIS L. |
-| 7 | LE ZONDA | – | HO C.Y. |
-| 8 | STUNNING PEACH | – | CHUNG Y.L. |
-| 9 | CALIFORNIATOTALITY | – | ATZENI A. |
+| 7 | LE ZONDA | 2,4 | HO C.Y. |
+| 2 | MASSIVE SOVEREIGN | 4,8 | CHAU C.L. |
+| 5 | SILVERY BREEZE | 7,7 | PURTON Z. |
+| 9 | CALIFORNIATOTALITY | 8,2 | ATZENI A. |
+| 1 | SPEED DRAGON | 11 | HEWITSON L. |
+| 3 | HELENE FEELING | 13 | WONG E.C.W. |
+| 6 | GENTLEMEN LEGACY | 15 | FERRARIS L. |
+| 8 | STUNNING PEACH | 16 | CHUNG Y.L. |
+| 4 | TALENTS AMBITION | 22 | KINGSCOTE R. |
 
 ### 7. FINANCE HANDICAP - SECTION 2
 
@@ -119,18 +119,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | SPEEDY SMARTIE | – | TEETAN K. |
-| 2 | OUTGATE | – | CHUNG Y.L. |
-| 3 | FLASHING FIGHTER | – | YUEN H.Y. |
-| 4 | GAMEPLAYER ELITE | – | BENTLEY H. |
-| 5 | CLOUD NINE | – | PURTON Z. |
-| 6 | BITS SUPERSTAR | – | CHAU C.L. |
-| 7 | GOLDEN ELITE | – | WONG E.C.W. |
-| 8 | A TIME FOR US | – | ORMAN J. |
-| 9 | CLASSIC TRIPLE | – | YEUNG M.L. |
-| 10 | PERFECT TRIUMPH | – | HO C.Y. |
-| 11 | HAPPY UNITED | – | BADEL A. |
-| 12 | LEGEND STAR | – | HEWITSON L. |
+| 5 | CLOUD NINE | 3 | PURTON Z. |
+| 12 | LEGEND STAR | 8,2 | HEWITSON L. |
+| 3 | FLASHING FIGHTER | 8,3 | YUEN H.Y. |
+| 6 | BITS SUPERSTAR | 8,6 | CHAU C.L. |
+| 1 | SPEEDY SMARTIE | 10 | TEETAN K. |
+| 4 | GAMEPLAYER ELITE | 10 | BENTLEY H. |
+| 2 | OUTGATE | 11 | CHUNG Y.L. |
+| 10 | PERFECT TRIUMPH | 11 | HO C.Y. |
+| 8 | A TIME FOR US | 18 | ORMAN J. |
+| 9 | CLASSIC TRIPLE | 28 | YEUNG M.L. |
+| 11 | HAPPY UNITED | 29 | BADEL A. |
+| 7 | GOLDEN ELITE | 39 | WONG E.C.W. |
 
 ### 8. GAGE HANDICAP
 
@@ -138,18 +138,18 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | FORTUNATE SON | – | HO C.Y. | –/–/–/– |
-| 2 | SERAPH GABRIEL | – | AVDULLA B. | –/–/–/– |
-| 3 | FIVEFORTWO | – | CHAU C.L. | –/–/–/– |
-| 4 | LO RIDER | – | TEETAN K. | –/–/–/– |
-| 5 | CORLEONE | – | WONG E.C.W. | –/–/–/– |
-| 6 | FALLON | – | YEUNG M.L. | –/–/–/– |
-| 7 | THE AUSPICIOUS | – | BADEL A. | –/–/–/– |
-| 8 | GLITTERING LEGEND | – | FERRARIS L. | –/–/–/– |
-| 9 | CHINA WIN | – | PURTON Z. | –/–/–/– |
-| 10 | VIOLET STAR | – | ATZENI A. | –/–/–/– |
-| 11 | SAMARKAND | – | HEWITSON L. | –/–/–/– |
-| 12 | FOREVER FOLKS | – | LEUNG K.C. | –/–/–/– |
+| 1 | FORTUNATE SON | 3,8 | HO C.Y. | –/–/–/– |
+| 9 | CHINA WIN | 4,7 | PURTON Z. | –/–/–/– |
+| 3 | FIVEFORTWO | 5,9 | CHAU C.L. | –/–/–/– |
+| 6 | FALLON | 10 | YEUNG M.L. | –/–/–/– |
+| 12 | FOREVER FOLKS | 11 | LEUNG K.C. | –/–/–/– |
+| 8 | GLITTERING LEGEND | 12 | FERRARIS L. | –/–/–/– |
+| 10 | VIOLET STAR | 14 | ATZENI A. | –/–/–/– |
+| 2 | SERAPH GABRIEL | 19 | AVDULLA B. | –/–/–/– |
+| 5 | CORLEONE | 20 | WONG E.C.W. | –/–/–/– |
+| 7 | THE AUSPICIOUS | 21 | BADEL A. | –/–/–/– |
+| 11 | SAMARKAND | 22 | HEWITSON L. | –/–/–/– |
+| 4 | LO RIDER | 24 | TEETAN K. | –/–/–/– |
 
 ### 9. HARBOUR VIEW HANDICAP
 
@@ -157,15 +157,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | AURORA PATCH | – | WONG E.C.W. |
-| 2 | STRAIGHT TO GLORY | – | LEUNG K.C. |
-| 3 | MY DAY MY WAY | – | CHAU C.L. |
-| 4 | SYMBOL OF STRENGTH | – | AVDULLA B. |
-| 5 | ACE CHAMPION | – | HO C.Y. |
-| 6 | ALL OUT FOR SIX | – | TEETAN K. |
-| 7 | FOUR STARS ALIGN | – | YEUNG M.L. |
-| 8 | ROBOT LUCKY STAR | – | PURTON Z. |
-| 9 | NORTHERN FIRE BALL | – | YUEN H.Y. |
-| 10 | WUKONG JEWELLERY | – | ATZENI A. |
-| 11 | CALIFORNIA BLITZ | – | CHADWICK M. |
-| 12 | GOLDEN CHAMP | – | BADEL A. |
+| 10 | WUKONG JEWELLERY | 4,3 | ATZENI A. |
+| 5 | ACE CHAMPION | 7,1 | HO C.Y. |
+| 7 | FOUR STARS ALIGN | 7,8 | YEUNG M.L. |
+| 12 | GOLDEN CHAMP | 7,9 | BADEL A. |
+| 8 | ROBOT LUCKY STAR | 9,2 | PURTON Z. |
+| 6 | ALL OUT FOR SIX | 12 | TEETAN K. |
+| 2 | STRAIGHT TO GLORY | 14 | LEUNG K.C. |
+| 11 | CALIFORNIA BLITZ | 14 | CHADWICK M. |
+| 3 | MY DAY MY WAY | 15 | CHAU C.L. |
+| 4 | SYMBOL OF STRENGTH | 15 | AVDULLA B. |
+| 9 | NORTHERN FIRE BALL | 15 | YUEN H.Y. |
+| 1 | AURORA PATCH | 16 | WONG E.C.W. |
