@@ -121,26 +121,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DES FALAISES DE CRAIE
 
-*15h57 · plat · 2000 m · 16 partants · cotes à T−25:44*
+*15h57 · plat · 2000 m · 16 partants · cotes à T−21:05*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 6 | QUEENFLEUR | 2,7 | 2,3 | 2,77 | -2,7 % | T.BACHELOT | 16/53/77/1069 |
-| 10 | ORANGE VIF | 9,1 | 9,4 | 11,66 | -22,0 % | R.THOMAS | 75/90/108/66 |
-| 7 | FELICIA STORM | 10 | 12 | 12,73 | -21,4 % | C.DEMURO | 1/48/3458/3401 |
-| 13 | RUE DE L'ODEON | 13 | 16 | 18,59 | -30,1 % | L.BOISSEAU | 36/53/13/62 |
-| 14 | JOYCE GALESTE | 13 | 15 | 15,84 | -17,9 % | E.HARDOUIN | 27/46/132/170 |
-| 15 | CAREGIVER | 14 | 14 | 14,49 | -3,4 % | R.MANGIONE | 78/57/920/2533 |
-| 9 | FLAMBOYANTE | 15 | 12 | 17,89 | -16,2 % | M.FAVRIAUX | 51/285/1206/2396 |
-| 4 | CATHERINE'S GIFT | 17 | 20 | 21,66 | -21,5 % | T.PICCONE | 9/40/54/1582 |
-| 2 | LIKING | 19 | 19 | 23,63 | -19,6 % | J.MOUTARD | 61/149/450/1854 |
-| 8 | PANZER | 21 | 29 | 24,20 | -13,2 % | PC.BOUDOT | 8/257/702/1543 |
-| 3 | ORLHENA | 28 | 29 | 36,82 | -23,9 % | H.BOUTIN | 14/28/98/16 |
-| 12 | MASSA CHOP | 33 | 36 | 50,79 | -35,0 % | A.MADAMET | 10/214/6/342 |
-| 1 | BLUE OCEAN DREAM | 47 | 76 | 65,43 | -28,2 % | B.MARIE | 69/173/1284/943 |
-| 11 | GOLDEN VALE | 48 | 85 | 69,90 | -31,3 % | G.MEURY | 68/249/4136/1011 |
-| 5 | JURMALA | 50 | 59 | 80,32 | -37,8 % | C. LECOEUVRE | 13/533/4176/3424 |
-| 16 | ASTON JUAN | 81 | 109 | 121,90 | -33,6 % | C.BELMONT | 171/280/1001/485 |
+| 6 | QUEENFLEUR | 2,9 | 2,3 | 2,95 | -1,7 % | T.BACHELOT | 16/53/77/1069 |
+| 10 | ORANGE VIF | 9,5 | 9,4 | 12,20 | -22,1 % | R.THOMAS | 75/90/108/66 |
+| 7 | FELICIA STORM | 10 | 12 | 12,66 | -21,0 % | C.DEMURO | 1/48/3458/3401 |
+| 13 | RUE DE L'ODEON | 12 | 16 | 16,81 | -28,6 % | L.BOISSEAU | 36/53/13/62 |
+| 14 | JOYCE GALESTE | 12 | 15 | 14,34 | -16,3 % | E.HARDOUIN | 27/46/132/170 |
+| 9 | FLAMBOYANTE | 14 | 12 | 16,41 | -14,7 % | M.FAVRIAUX | 51/285/1206/2396 |
+| 15 | CAREGIVER | 14 | 14 | 14,40 | -2,8 % | R.MANGIONE | 78/57/920/2533 |
+| 4 | CATHERINE'S GIFT | 18 | 20 | 23,01 | -21,8 % | T.PICCONE | 9/40/54/1582 |
+| 3 | ORLHENA | 19 | 29 | 23,49 | -19,1 % | H.BOUTIN | 14/28/98/16 |
+| 2 | LIKING | 22 | 19 | 27,81 | -20,9 % | J.MOUTARD | 61/149/450/1854 |
+| 8 | PANZER | 22 | 29 | 25,38 | -13,3 % | PC.BOUDOT | 8/257/702/1543 |
+| 12 | MASSA CHOP | 30 | 36 | 45,37 | -33,9 % | A.MADAMET | 10/214/6/342 |
+| 5 | JURMALA | 49 | 59 | 78,16 | -37,3 % | C. LECOEUVRE | 13/533/4176/3424 |
+| 1 | BLUE OCEAN DREAM | 51 | 76 | 67,81 | -24,8 % | B.MARIE | 69/173/1284/943 |
+| 11 | GOLDEN VALE | 51 | 85 | 74,24 | -31,3 % | G.MEURY | 68/249/4136/1011 |
+| 16 | ASTON JUAN | 70 | 109 | 104,14 | -32,8 % | C.BELMONT | 171/280/1001/485 |
 
 ### 9. PRIX DES BOUCLES DE LA SEINE
 
