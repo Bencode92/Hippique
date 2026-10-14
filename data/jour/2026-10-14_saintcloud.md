@@ -1,6 +1,6 @@
 # SAINT-CLOUD — 14/10/2026
 
-9 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -101,23 +101,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE LA POINTE DU HODE
 
-*15h22 · plat · 2000 m · 13 partants · cotes de l'extraction*
+*15h22 · plat · 2000 m · 13 partants · cotes à T−5:25*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 5 | ENORA SENORA | 4,1 | 4,16 | -1,4 % | E.HARDOUIN | 27/135/52/83 |
-| 7 | LADIVA | 5 | 5,35 | -6,5 % | M.FAVRIAUX | 51/285/550/1330 |
-| 1 | PALAZZO | 7,4 | 7,81 | -5,3 % | F.VALLE SKAR | 35/135/12/1774 |
-| 10 | SOHO VICKY | 7,4 | 7,47 | -0,9 % | L.BOISSEAU | 36/432/332/218 |
-| 8 | LADY ACE | 11 | 12,36 | -11,0 % | A.MADAMET | 10/210/170/1974 |
-| 6 | BECH RIVER | 12 | 15,58 | -23,0 % | A.LE LAY MARTIN | 83/237/7/580 |
-| 4 | CLAIR DE LUNE | 13 | 16,09 | -19,2 % | L.GALLO | 45/214/2191/342 |
-| 15 | LADYSHOW | 22 | 25,21 | -12,7 % | M.ROMARY | 47/81/36/38 |
-| 14 | PADDY WHITE HEART | 23 | 26,51 | -13,2 % | R.MANGIONE | 78/499/2234/3712 |
-| 13 | PALETUVIER | 28 | 36,37 | -23,0 % | B.MARIE | 69/864/1044/5170 |
-| 3 | PUERTA DEL SOL | 31 | 40,80 | -24,0 % | A.VILCHIEN | 93/532/560/218 |
-| 2 | THE WASP | 44 | 74,28 | -40,8 % | C.COLLET-VIDAL | 119/292/4072/401 |
-| 11 | SILVER CONDOR | 75 | 111,29 | -32,6 % | C.CARBONI | 105/320/417/502 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 5 | ENORA SENORA | 4,2 | 4,1 | 4,25 | -1,3 % | E.HARDOUIN | 27/135/52/83 |
+| 7 | LADIVA | 4,2 | 5 | 4,51 | -6,8 % | M.FAVRIAUX | 51/285/550/1330 |
+| 1 | PALAZZO | 7,6 | 7,4 | 8,03 | -5,4 % | F.VALLE SKAR | 35/135/12/1774 |
+| 10 | SOHO VICKY | 9,5 | 7,4 | 10,82 | -12,2 % | L.BOISSEAU | 36/432/332/218 |
+| 6 | BECH RIVER | 11 | 12 | 14,03 | -21,6 % | A.LE LAY MARTIN | 83/237/7/580 |
+| 4 | CLAIR DE LUNE | 12 | 13 | 14,61 | -17,9 % | L.GALLO | 45/214/2191/342 |
+| 8 | LADY ACE | 13 | 11 | 14,98 | -13,2 % | A.MADAMET | 10/210/170/1974 |
+| 14 | PADDY WHITE HEART | 19 | 23 | 21,24 | -10,6 % | R.MANGIONE | 78/499/2234/3712 |
+| 15 | LADYSHOW | 26 | 22 | 30,43 | -14,5 % | M.ROMARY | 47/81/36/38 |
+| 3 | PUERTA DEL SOL | 27 | 31 | 34,82 | -22,5 % | A.VILCHIEN | 93/532/560/218 |
+| 13 | PALETUVIER | 35 | 28 | 44,48 | -21,3 % | B.MARIE | 69/864/1044/5170 |
+| 2 | THE WASP | 43 | 44 | 72,26 | -40,5 % | C.COLLET-VIDAL | 119/292/4072/401 |
+| 11 | SILVER CONDOR | 85 | 75 | 138,99 | -38,8 % | C.CARBONI | 105/320/417/502 |
 
 ### 8. PRIX DES FALAISES DE CRAIE
 
