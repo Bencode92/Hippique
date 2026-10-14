@@ -4,71 +4,71 @@
   "reunion": 3,
   "heure_depart": 1791977220000,
   "distance": 2400,
-  "scraped_at": "2026-10-14T13:22:39.106680+02:00",
-  "minutes_avant_depart": 4,
+  "scraped_at": "2026-10-14T13:25:18.912660+02:00",
+  "minutes_avant_depart": 2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "TSAVERNA",
-      "cote_live": 6.2,
+      "cote_live": 7.8,
       "cote_reference": 9.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791976936000
+      "timestamp_cote": 1791977110000
     },
     {
       "numPmu": 2,
       "nom": "LE FUTUR",
-      "cote_live": 8.4,
+      "cote_live": 4.7,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791976936000
+      "timestamp_cote": 1791977110000
     },
     {
       "numPmu": 3,
       "nom": "NEVADOS",
-      "cote_live": 7.2,
+      "cote_live": 8.8,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791976936000
+      "timestamp_cote": 1791977110000
     },
     {
       "numPmu": 4,
       "nom": "MARANTAO",
-      "cote_live": 21.0,
+      "cote_live": 34.0,
       "cote_reference": 33.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791976936000
+      "timestamp_cote": 1791977110000
     },
     {
       "numPmu": 5,
       "nom": "DAYTONINE",
-      "cote_live": 37.0,
+      "cote_live": 39.0,
       "cote_reference": 64.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791976936000
+      "timestamp_cote": 1791977110000
     },
     {
       "numPmu": 6,
       "nom": "HOUSE OF TUDOR",
-      "cote_live": 4.7,
+      "cote_live": 4.6,
       "cote_reference": 9.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791976936000
+      "timestamp_cote": 1791977110000
     },
     {
       "numPmu": 7,
       "nom": "NATIVE RULER",
-      "cote_live": 40.0,
+      "cote_live": 57.0,
       "cote_reference": 81.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791976936000
+      "timestamp_cote": 1791977110000
     },
     {
       "numPmu": 8,
@@ -77,7 +77,7 @@
       "cote_reference": 1.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1791976936000
+      "timestamp_cote": 1791977110000
     },
     {
       "numPmu": 9,
@@ -86,16 +86,16 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791976936000
+      "timestamp_cote": 1791977110000
     },
     {
       "numPmu": 10,
       "nom": "SWEET SUMMER SWEET",
-      "cote_live": 15.0,
+      "cote_live": 18.0,
       "cote_reference": 36.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1791976936000
+      "timestamp_cote": 1791977110000
     }
   ],
   "hippodrome": "SAINT-CLOUD",
@@ -210,6 +210,70 @@
         "8": 3.9,
         "9": 11.0,
         "10": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-14T13:23:19.226335+02:00",
+      "minutes_avant_depart": 3.6884678833333333,
+      "cotes": {
+        "1": 5.8,
+        "2": 7.7,
+        "3": 7.5,
+        "4": 23.0,
+        "5": 34.0,
+        "6": 4.4,
+        "7": 44.0,
+        "8": 4.4,
+        "9": 10.0,
+        "10": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-14T13:23:59.279798+02:00",
+      "minutes_avant_depart": 3.0164528166666664,
+      "cotes": {
+        "1": 6.5,
+        "2": 8.3,
+        "3": 7.4,
+        "4": 28.0,
+        "5": 37.0,
+        "6": 4.1,
+        "7": 52.0,
+        "8": 3.8,
+        "9": 12.0,
+        "10": 17.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-14T13:24:38.910993+02:00",
+      "minutes_avant_depart": 2.35513015,
+      "cotes": {
+        "1": 7.6,
+        "2": 4.6,
+        "3": 8.7,
+        "4": 35.0,
+        "5": 41.0,
+        "6": 4.5,
+        "7": 55.0,
+        "8": 4.2,
+        "9": 11.0,
+        "10": 18.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-14T13:25:18.912660+02:00",
+      "minutes_avant_depart": 1.6884608833333334,
+      "cotes": {
+        "1": 7.8,
+        "2": 4.7,
+        "3": 8.8,
+        "4": 34.0,
+        "5": 39.0,
+        "6": 4.6,
+        "7": 57.0,
+        "8": 3.9,
+        "9": 11.0,
+        "10": 18.0
       }
     }
   ]
