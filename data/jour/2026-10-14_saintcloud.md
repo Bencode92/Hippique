@@ -51,20 +51,20 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX MAURICE LARRAUN
 
-*13h27 · plat · 2400 m · 10 partants · cotes à T−19:40*
+*13h27 · plat · 2400 m · 10 partants · cotes à T−15:01*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 8 | INCENTIVE VICTORY | 2 | 2,15 | -6,8 % | G.MEURY | 68/60/305/730 |
-| 3 | NEVADOS | 6,7 | 7,60 | -11,8 % | M.PROTTI | 30/6/36/34 |
-| 1 | TSAVERNA | 8,5 | 10,01 | -15,1 % | M.FAVRIAUX | 51/826/50/5311 |
-| 6 | HOUSE OF TUDOR | 9,1 | 11,60 | -21,5 % | L.MABROUK | 326/10/3082/523 |
-| 2 | LE FUTUR | 11 | 13,55 | -18,8 % | G.ROTH LE VAILLANT | 130/8/24/608 |
-| 9 | RUSH TO WAIT | 12 | 15,01 | -20,0 % | T.BREBION | 99/44/449/228 |
-| 10 | SWEET SUMMER SWEET | 29 | 44,88 | -35,4 % | L.PLOMMEE | 31/74/1388/2145 |
-| 4 | MARANTAO | 32 | 46,67 | -31,4 % | G.SEIGNEUL | 193/176/1814/1820 |
-| 5 | DAYTONINE | 62 | 96,37 | -35,7 % | C.BELMONT | 171/8/3873/1438 |
-| 7 | NATIVE RULER | 79 | 124,38 | -36,5 % | A.DUQUESNOY | 121/126/3115/4217 |
+| 8 | INCENTIVE VICTORY | 2,2 | 2,33 | -5,5 % | G.MEURY | 68/60/305/730 |
+| 3 | NEVADOS | 6,5 | 7,39 | -12,1 % | M.PROTTI | 30/6/36/34 |
+| 6 | HOUSE OF TUDOR | 8 | 10,05 | -20,4 % | L.MABROUK | 326/10/3082/523 |
+| 1 | TSAVERNA | 8,3 | 9,82 | -15,4 % | M.FAVRIAUX | 51/826/50/5311 |
+| 2 | LE FUTUR | 9,9 | 12,07 | -18,0 % | G.ROTH LE VAILLANT | 130/8/24/608 |
+| 9 | RUSH TO WAIT | 11 | 13,66 | -19,5 % | T.BREBION | 99/44/449/228 |
+| 10 | SWEET SUMMER SWEET | 22 | 32,96 | -33,3 % | L.PLOMMEE | 31/74/1388/2145 |
+| 4 | MARANTAO | 32 | 47,03 | -32,0 % | G.SEIGNEUL | 193/176/1814/1820 |
+| 5 | DAYTONINE | 59 | 92,06 | -35,9 % | C.BELMONT | 171/8/3873/1438 |
+| 7 | NATIVE RULER | 72 | 113,68 | -36,7 % | A.DUQUESNOY | 121/126/3115/4217 |
 
 ### 5. PRIX DE LA FONTAINE
 
