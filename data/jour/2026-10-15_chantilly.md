@@ -1,6 +1,6 @@
 # CHANTILLY — 15/10/2026
 
-8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 6 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -141,22 +141,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DU CHENE DU COUP DE FOUDRE
 
-*18h00 · plat · 1800 m · 15 partants · cotes de l'extraction*
+*18h00 · plat · 1800 m · 15 partants · cotes à T−29:25*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 8 | CRISZILLA | 2,9 | 3,01 | -3,6 % | T.BACHELOT | 16/17/10/102 |
-| 3 | AMIE AMOUR | 3,3 | 3,20 | **+3,0 %** | M.GUYON 4e | 4/19/3095/33 |
-| 2 | MIA LOT | 11 | 12,56 | -12,4 % | S.PASQUIER | 23/83/38/1054 |
-| 10 | PASANG | 19 | 23,74 | -20,0 % | A.MADAMET | 10/7/997/1026 |
-| 6 | WARAMINI | 21 | 24,30 | -13,6 % | F.VALLE SKAR | 35/11/13/527 |
-| 7 | MAURICIA | 21 | 24,30 | -13,6 % | L.BAILS | 77/211/343/181 |
-| 4 | PERFECTDAY | 22 | 30,81 | -28,6 % | PC.BOUDOT | 8/156/81/225 |
-| 13 | RED SCOTCH | 23 | 32,43 | -29,1 % | M.PROTTI | 30/6/85/300 |
-| 9 | GWADA CONCEPT | 27 | 38,96 | -30,7 % | C.DEMURO | 1/43/45/562 |
-| 11 | ESPARTINAS | 28 | 35,29 | -20,7 % | L.BOISSEAU | 36/83/497/2246 |
-| 12 | EMERALD ANGEL | 36 | 52,76 | -31,8 % | P.BAZIRE | 58/438/4253/2245 |
-| 1 | CHICA SUERTE | 40 | 60,57 | -34,0 % | H.JOURNIAC | 43/43/2820/448 |
-| 14 | ARTOA | 44 | 65,87 | -33,2 % | M.VELON | 28/11/818/1446 |
-| 15 | MARASI DRIVE | 52 | 79,01 | -34,2 % | A.LEMAITRE | 11/45/594/1712 |
-| 5 | NEPETA | 85 | 112,23 | -24,3 % | H.LEBOUC | 19/43/974/2626 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 8 | CRISZILLA | 2,5 | 2,9 | 2,62 | -4,8 % | T.BACHELOT | 16/17/10/102 |
+| 3 | AMIE AMOUR | 4,7 | 3,3 | 4,59 | **+2,4 %** | M.GUYON 4e | 4/19/3095/33 |
+| 9 | GWADA CONCEPT | 12 | 27 | 13,89 | -13,6 % | C.DEMURO | 1/43/45/562 |
+| 2 | MIA LOT | 14 | 11 | 16,63 | -15,8 % | S.PASQUIER | 23/83/38/1054 |
+| 4 | PERFECTDAY | 18 | 22 | 24,41 | -26,3 % | PC.BOUDOT | 8/156/81/225 |
+| 10 | PASANG | 21 | 19 | 29,18 | -28,0 % | A.MADAMET | 10/7/997/1026 |
+| 6 | WARAMINI | 22 | 21 | 25,61 | -14,1 % | F.VALLE SKAR | 35/11/13/527 |
+| 7 | MAURICIA | 23 | 21 | 26,94 | -14,6 % | L.BAILS | 77/211/343/181 |
+| 13 | RED SCOTCH | 23 | 23 | 32,41 | -29,0 % | M.PROTTI | 30/6/85/300 |
+| 11 | ESPARTINAS | 29 | 28 | 36,69 | -21,0 % | L.BOISSEAU | 36/83/497/2246 |
+| 1 | CHICA SUERTE | 35 | 40 | 47,53 | -26,4 % | H.JOURNIAC | 43/43/2820/448 |
+| 12 | EMERALD ANGEL | 36 | 36 | 52,73 | -31,7 % | P.BAZIRE | 58/438/4253/2245 |
+| 14 | ARTOA | 39 | 44 | 57,63 | -32,3 % | M.VELON | 28/11/818/1446 |
+| 15 | MARASI DRIVE | 45 | 52 | 67,47 | -33,3 % | A.LEMAITRE | 11/45/594/1712 |
+| 5 | NEPETA | 81 | 85 | 106,72 | -24,1 % | H.LEBOUC | 19/43/974/2626 |
