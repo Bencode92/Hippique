@@ -141,22 +141,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DU CHENE DU COUP DE FOUDRE
 
-*18h00 · plat · 1800 m · 15 partants · cotes à T−29:25*
+*18h00 · plat · 1800 m · 15 partants · cotes à T−25:25*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 8 | CRISZILLA | 2,5 | 2,9 | 2,62 | -4,8 % | T.BACHELOT | 16/17/10/102 |
-| 3 | AMIE AMOUR | 4,7 | 3,3 | 4,59 | **+2,4 %** | M.GUYON 4e | 4/19/3095/33 |
-| 9 | GWADA CONCEPT | 12 | 27 | 13,89 | -13,6 % | C.DEMURO | 1/43/45/562 |
-| 2 | MIA LOT | 14 | 11 | 16,63 | -15,8 % | S.PASQUIER | 23/83/38/1054 |
-| 4 | PERFECTDAY | 18 | 22 | 24,41 | -26,3 % | PC.BOUDOT | 8/156/81/225 |
-| 10 | PASANG | 21 | 19 | 29,18 | -28,0 % | A.MADAMET | 10/7/997/1026 |
-| 6 | WARAMINI | 22 | 21 | 25,61 | -14,1 % | F.VALLE SKAR | 35/11/13/527 |
-| 7 | MAURICIA | 23 | 21 | 26,94 | -14,6 % | L.BAILS | 77/211/343/181 |
-| 13 | RED SCOTCH | 23 | 23 | 32,41 | -29,0 % | M.PROTTI | 30/6/85/300 |
-| 11 | ESPARTINAS | 29 | 28 | 36,69 | -21,0 % | L.BOISSEAU | 36/83/497/2246 |
-| 1 | CHICA SUERTE | 35 | 40 | 47,53 | -26,4 % | H.JOURNIAC | 43/43/2820/448 |
-| 12 | EMERALD ANGEL | 36 | 36 | 52,73 | -31,7 % | P.BAZIRE | 58/438/4253/2245 |
-| 14 | ARTOA | 39 | 44 | 57,63 | -32,3 % | M.VELON | 28/11/818/1446 |
-| 15 | MARASI DRIVE | 45 | 52 | 67,47 | -33,3 % | A.LEMAITRE | 11/45/594/1712 |
-| 5 | NEPETA | 81 | 85 | 106,72 | -24,1 % | H.LEBOUC | 19/43/974/2626 |
+| 8 | CRISZILLA | 2,7 | 2,9 | 2,82 | -4,3 % | T.BACHELOT | 16/17/10/102 |
+| 3 | AMIE AMOUR | 4,3 | 3,3 | 4,19 | **+2,6 %** | M.GUYON 4e | 4/19/3095/33 |
+| 9 | GWADA CONCEPT | 12 | 27 | 13,93 | -13,9 % | C.DEMURO | 1/43/45/562 |
+| 4 | PERFECTDAY | 13 | 22 | 15,30 | -15,0 % | PC.BOUDOT | 8/156/81/225 |
+| 2 | MIA LOT | 14 | 11 | 16,68 | -16,1 % | S.PASQUIER | 23/83/38/1054 |
+| 6 | WARAMINI | 22 | 21 | 25,68 | -14,3 % | F.VALLE SKAR | 35/11/13/527 |
+| 10 | PASANG | 23 | 19 | 32,50 | -29,2 % | A.MADAMET | 10/7/997/1026 |
+| 13 | RED SCOTCH | 23 | 23 | 32,50 | -29,2 % | M.PROTTI | 30/6/85/300 |
+| 7 | MAURICIA | 24 | 21 | 28,36 | -15,4 % | L.BAILS | 77/211/343/181 |
+| 11 | ESPARTINAS | 29 | 28 | 36,79 | -21,2 % | L.BOISSEAU | 36/83/497/2246 |
+| 12 | EMERALD ANGEL | 37 | 36 | 54,51 | -32,1 % | P.BAZIRE | 58/438/4253/2245 |
+| 1 | CHICA SUERTE | 38 | 40 | 52,22 | -27,2 % | H.JOURNIAC | 43/43/2820/448 |
+| 14 | ARTOA | 42 | 44 | 62,71 | -33,0 % | M.VELON | 28/11/818/1446 |
+| 15 | MARASI DRIVE | 44 | 52 | 66,00 | -33,3 % | A.LEMAITRE | 11/45/594/1712 |
+| 5 | NEPETA | 72 | 85 | 94,63 | -23,9 % | H.LEBOUC | 19/43/974/2626 |
