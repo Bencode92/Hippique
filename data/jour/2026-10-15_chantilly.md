@@ -97,26 +97,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DE L'AMANTE INQUIETE
 
-*16h50 · plat · 1200 m · 16 partants · cotes à T−2:45*
+*16h50 · plat · 1200 m · 16 partants · cotes à T−0:05*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 9 | TERRITOIRE | 5,4 | 6,8 | 6,33 | -14,7 % | M.BARZALONA 2e | 2/127/43/2290 |
-| 6 | ALPARSLAN | 6,5 | 10 | 7,02 | -7,4 % | M.GUYON | 4/242/524/488 |
-| 10 | SOIF DE VIVRE | 6,8 | 14 | 7,88 | -13,7 % | C.DEMURO | 1/123/45/59 |
-| 1 | FATA MORGANA | 10 | 9,2 | 12,30 | -18,7 % | T.PICCONE | 9/83/48/1015 |
-| 12 | WHITE PLATIN | 11 | 6,7 | 13,49 | -18,5 % | R.THOMAS | 75/90/894/1347 |
-| 2 | REGALIEN | 12 | 9,2 | 14,29 | -16,0 % | M.VELON | 28/81/41/1742 |
-| 14 | HATFAVILLE | 13 | 14 | 13,78 | -5,6 % | A.POUCHIN | 6/237/356/483 |
-| 3 | KING ROBBE | 14 | 11 | 18,74 | -25,3 % | L.GALLO | 45/15/15/2896 |
-| 16 | DROGO | 15 | 15 | 21,80 | -31,2 % | M.GRANDIN | 3/133/84/1970 |
-| 5 | DAISY DAISY | 23 | 14 | 28,30 | -18,7 % | A.MADAMET | 10/27/3586/1023 |
-| 7 | TUDO BEM | 28 | 24 | 41,83 | -33,1 % | H.BOUTIN | 14/15/15/314 |
-| 15 | PRADARO | 28 | 28 | 41,83 | -33,1 % | A.LEMAITRE | 11/123/4/59 |
-| 11 | QUIET WIFE | 38 | 24 | 51,17 | -25,7 % | E.HARDOUIN | 27/15/335/379 |
-| 13 | DREAM OP FAL | 59 | 45 | 90,80 | -35,0 % | L.BOISSEAU | 36/334/34/546 |
-| 8 | ANDARTIS | 65 | 49 | 83,60 | -22,3 % | C.LECOEUVRE | 13/117/3124/784 |
-| 4 | EMPATHIC | 107 | 81 | 146,65 | -27,0 % | M.TEVELS | 264/432/23/4854 |
+| 9 | TERRITOIRE | 4,7 | 6,8 | 5,41 | -13,2 % | M.BARZALONA 2e | 2/127/43/2290 |
+| 6 | ALPARSLAN | 5,7 | 10 | 6,05 | -5,7 % | M.GUYON | 4/242/524/488 |
+| 10 | SOIF DE VIVRE | 6,3 | 14 | 7,21 | -12,6 % | C.DEMURO | 1/123/45/59 |
+| 1 | FATA MORGANA | 11 | 9,2 | 13,14 | -16,3 % | T.PICCONE | 9/83/48/1015 |
+| 12 | WHITE PLATIN | 12 | 6,7 | 14,92 | -19,6 % | R.THOMAS | 75/90/894/1347 |
+| 14 | HATFAVILLE | 13 | 14 | 13,76 | -5,5 % | A.POUCHIN | 6/237/356/483 |
+| 2 | REGALIEN | 15 | 9,2 | 17,70 | -15,3 % | M.VELON | 28/81/41/1742 |
+| 3 | KING ROBBE | 15 | 11 | 20,30 | -26,1 % | L.GALLO | 45/15/15/2896 |
+| 16 | DROGO | 16 | 15 | 23,49 | -31,9 % | M.GRANDIN | 3/133/84/1970 |
+| 5 | DAISY DAISY | 28 | 14 | 35,35 | -20,8 % | A.MADAMET | 10/27/3586/1023 |
+| 15 | PRADARO | 29 | 28 | 43,47 | -33,3 % | A.LEMAITRE | 11/123/4/59 |
+| 7 | TUDO BEM | 31 | 24 | 44,72 | -30,7 % | H.BOUTIN | 14/15/15/314 |
+| 11 | QUIET WIFE | 46 | 24 | 63,05 | -27,0 % | E.HARDOUIN | 27/15/335/379 |
+| 13 | DREAM OP FAL | 60 | 45 | 92,34 | -35,0 % | L.BOISSEAU | 36/334/34/546 |
+| 8 | ANDARTIS | 77 | 49 | 95,10 | -19,0 % | C.LECOEUVRE | 13/117/3124/784 |
+| 4 | EMPATHIC | 109 | 81 | 149,24 | -27,0 % | M.TEVELS | 264/432/23/4854 |
 
 ### 7. PRIX DU CHENE DES GRES
 
