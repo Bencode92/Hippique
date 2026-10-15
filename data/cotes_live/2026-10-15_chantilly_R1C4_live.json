@@ -4,62 +4,62 @@
   "reunion": 1,
   "heure_depart": 1792071600000,
   "distance": 1200,
-  "scraped_at": "2026-10-15T15:35:07.762581+02:00",
-  "minutes_avant_depart": 5,
+  "scraped_at": "2026-10-15T15:37:47.979284+02:00",
+  "minutes_avant_depart": 2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "AMOUNE",
-      "cote_live": 7.1,
+      "cote_live": 8.5,
       "cote_reference": 6.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792071305000
+      "timestamp_cote": 1792071461000
     },
     {
       "numPmu": 2,
       "nom": "KARAKOUM",
-      "cote_live": 5.9,
+      "cote_live": 6.5,
       "cote_reference": 4.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792071305000
+      "timestamp_cote": 1792071461000
     },
     {
       "numPmu": 3,
       "nom": "ALAIN ROSE",
-      "cote_live": 23.0,
+      "cote_live": 21.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792071305000
+      "timestamp_cote": 1792071461000
     },
     {
       "numPmu": 4,
       "nom": "WONDER BAILEYS",
-      "cote_live": 20.0,
+      "cote_live": 29.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792071305000
+      "timestamp_cote": 1792071461000
     },
     {
       "numPmu": 5,
       "nom": "MONDAY CABARET",
-      "cote_live": 4.2,
+      "cote_live": 2.8,
       "cote_reference": 4.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792071305000
+      "timestamp_cote": 1792071461000
     },
     {
       "numPmu": 7,
       "nom": "EXTREME DREAM",
-      "cote_live": 2.0,
+      "cote_live": 2.3,
       "cote_reference": 2.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792071305000
+      "timestamp_cote": 1792071461000
     }
   ],
   "hippodrome": "CHANTILLY",
@@ -158,6 +158,54 @@
         "4": 20.0,
         "5": 4.2,
         "7": 2.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-15T15:35:47.739172+02:00",
+      "minutes_avant_depart": 4.208398116666666,
+      "cotes": {
+        "1": 7.1,
+        "2": 5.5,
+        "3": 21.0,
+        "4": 21.0,
+        "5": 4.3,
+        "7": 2.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-15T15:36:27.796955+02:00",
+      "minutes_avant_depart": 3.5417295666666666,
+      "cotes": {
+        "1": 7.6,
+        "2": 5.8,
+        "3": 17.0,
+        "4": 23.0,
+        "5": 4.4,
+        "7": 1.9
+      }
+    },
+    {
+      "scraped_at": "2026-10-15T15:37:07.874851+02:00",
+      "minutes_avant_depart": 2.8750605166666667,
+      "cotes": {
+        "1": 7.2,
+        "2": 5.7,
+        "3": 17.0,
+        "4": 24.0,
+        "5": 4.5,
+        "7": 1.9
+      }
+    },
+    {
+      "scraped_at": "2026-10-15T15:37:47.979284+02:00",
+      "minutes_avant_depart": 2.2048104333333334,
+      "cotes": {
+        "1": 8.5,
+        "2": 6.5,
+        "3": 21.0,
+        "4": 29.0,
+        "5": 2.8,
+        "7": 2.3
       }
     }
   ]
