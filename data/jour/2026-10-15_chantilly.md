@@ -1,6 +1,6 @@
 # CHANTILLY — 15/10/2026
 
-8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -74,26 +74,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DU CHENE DE LA BASSE POMMERAIE
 
-*16h15 · plat · 1800 m · 16 partants · cotes de l'extraction*
+*16h15 · plat · 1800 m · 16 partants · cotes à T−29:52*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 3 | TOCOA | 4 | 4,45 | -10,1 % | PC.BOUDOT | 8/66/296/2904 |
-| 1 | CHARMING CECILIA | 9 | 10,41 | -13,6 % | A.MOLINS | 34/108/888/1560 |
-| 13 | DIVA CHIQUITA | 9,6 | 9,86 | -2,7 % | A.HAMELIN | 22/74/47/762 |
-| 14 | VIENNA'S PRIDE | 10 | 11,28 | -11,4 % | E.HARDOUIN | 27/89/2667/– |
-| 4 | PERCEVAL | 11 | 12,60 | -12,7 % | T.PICCONE | 9/6/117/524 |
-| 6 | FEE ZELEE | 12 | 15,25 | -21,3 % | M.VELON | 28/59/971/961 |
-| 10 | NAZGUL BLOU | 12 | 12,77 | -6,0 % | S.PASQUIER | 23/37/908/398 |
-| 2 | ICE CRACKER | 13 | 16,75 | -22,4 % | M.PROTTI | 30/6/85/300 |
-| 5 | BACHEROVKA | 17 | 22,94 | -25,9 % | M.FAVRIAUX | 51/173/13/2800 |
-| 8 | ZEUDI | 17 | 22,94 | -25,9 % | A.POUCHIN | 6/59/175/669 |
-| 15 | AUSTRALIPS | 18 | 24,02 | -25,1 % | C.DEMURO | 1/41/7/61 |
-| 9 | BIG RED SOLO | 41 | 51,77 | -20,8 % | G.TROLLEY DE PREVAUX | 46/68/3982/4011 |
-| 7 | VILLA ADRIENNE | 48 | 72,70 | -34,0 % | A.DUQUESNOY | 121/28/18/49 |
-| 11 | CAPITOL HILL | 52 | 79,29 | -34,4 % | L.GALLO | 45/15/99/925 |
-| 12 | LA TRAVERSETTE | 79 | 114,73 | -31,1 % | F.VALLE SKAR | 35/48/1448/880 |
-| 16 | EMPTY STREET | 113 | 165,44 | -31,7 % | G.MEURY | 68/851/30/5126 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 3 | TOCOA | 5,2 | 4 | 5,94 | -12,4 % | PC.BOUDOT | 8/66/296/2904 |
+| 1 | CHARMING CECILIA | 8,6 | 9 | 9,87 | -12,9 % | A.MOLINS | 34/108/888/1560 |
+| 4 | PERCEVAL | 9,1 | 11 | 10,10 | -9,9 % | T.PICCONE | 9/6/117/524 |
+| 13 | DIVA CHIQUITA | 10 | 9,6 | 10,34 | -3,3 % | A.HAMELIN | 22/74/47/762 |
+| 6 | FEE ZELEE | 11 | 12 | 13,76 | -20,1 % | M.VELON | 28/59/971/961 |
+| 10 | NAZGUL BLOU | 11 | 12 | 11,54 | -4,7 % | S.PASQUIER | 23/37/908/398 |
+| 2 | ICE CRACKER | 12 | 13 | 15,25 | -21,3 % | M.PROTTI | 30/6/85/300 |
+| 14 | VIENNA'S PRIDE | 13 | 10 | 15,32 | -15,1 % | E.HARDOUIN | 27/89/2667/– |
+| 5 | BACHEROVKA | 16 | 17 | 21,37 | -25,1 % | M.FAVRIAUX | 51/173/13/2800 |
+| 8 | ZEUDI | 17 | 17 | 22,93 | -25,9 % | A.POUCHIN | 6/59/175/669 |
+| 15 | AUSTRALIPS | 17 | 18 | 22,47 | -24,3 % | C.DEMURO | 1/41/7/61 |
+| 7 | VILLA ADRIENNE | 29 | 48 | 41,53 | -30,2 % | A.DUQUESNOY | 121/28/18/49 |
+| 9 | BIG RED SOLO | 36 | 41 | 44,83 | -19,7 % | G.TROLLEY DE PREVAUX | 46/68/3982/4011 |
+| 11 | CAPITOL HILL | 40 | 52 | 59,51 | -32,8 % | L.GALLO | 45/15/99/925 |
+| 12 | LA TRAVERSETTE | 44 | 79 | 55,93 | -21,3 % | F.VALLE SKAR | 35/48/1448/880 |
+| 16 | EMPTY STREET | 124 | 113 | 181,47 | -31,7 % | G.MEURY | 68/851/30/5126 |
 
 ### 6. PRIX DE L'AMANTE INQUIETE
 
