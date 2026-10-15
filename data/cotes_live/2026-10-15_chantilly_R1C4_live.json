@@ -4,62 +4,62 @@
   "reunion": 1,
   "heure_depart": 1792071600000,
   "distance": 1200,
-  "scraped_at": "2026-10-15T15:23:07.739077+02:00",
-  "minutes_avant_depart": 17,
+  "scraped_at": "2026-10-15T15:27:08.001125+02:00",
+  "minutes_avant_depart": 13,
   "participants": [
     {
       "numPmu": 1,
       "nom": "AMOUNE",
-      "cote_live": 7.9,
+      "cote_live": 9.0,
       "cote_reference": 6.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792070579000
+      "timestamp_cote": 1792070821000
     },
     {
       "numPmu": 2,
       "nom": "KARAKOUM",
-      "cote_live": 5.7,
+      "cote_live": 6.7,
       "cote_reference": 4.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792070579000
+      "timestamp_cote": 1792070821000
     },
     {
       "numPmu": 3,
       "nom": "ALAIN ROSE",
-      "cote_live": 24.0,
+      "cote_live": 26.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792070579000
+      "timestamp_cote": 1792070821000
     },
     {
       "numPmu": 4,
       "nom": "WONDER BAILEYS",
-      "cote_live": 18.0,
+      "cote_live": 21.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792070579000
+      "timestamp_cote": 1792070821000
     },
     {
       "numPmu": 5,
       "nom": "MONDAY CABARET",
-      "cote_live": 4.5,
+      "cote_live": 5.4,
       "cote_reference": 4.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792070579000
+      "timestamp_cote": 1792070821000
     },
     {
       "numPmu": 7,
       "nom": "EXTREME DREAM",
-      "cote_live": 1.9,
+      "cote_live": 1.6,
       "cote_reference": 2.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792070579000
+      "timestamp_cote": 1792070821000
     }
   ],
   "hippodrome": "CHANTILLY",
@@ -110,6 +110,18 @@
         "4": 18.0,
         "5": 4.5,
         "7": 1.9
+      }
+    },
+    {
+      "scraped_at": "2026-10-15T15:27:08.001125+02:00",
+      "minutes_avant_depart": 12.875092616666667,
+      "cotes": {
+        "1": 9.0,
+        "2": 6.7,
+        "3": 26.0,
+        "4": 21.0,
+        "5": 5.4,
+        "7": 1.6
       }
     }
   ]
