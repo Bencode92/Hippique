@@ -1,8 +1,8 @@
 # BELMONT PARK — 15/10/2026
 
-8 courses.
+8 courses (7 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -12,12 +12,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MR R T | – | C ELLIOTT |
-| 2 | GO DHARMA | – | R SANTANA, JR. |
+| 4 | UNCLE BARRIE | 2,6 | C GONZALEZ |
+| 6 | PRIVATE FLIGHT | 2,6 | K CARMOUCHE |
+| 1 | MR R T | 5,2 | C ELLIOTT |
+| 2 | GO DHARMA | 5,2 | R SANTANA, JR. |
 | 3 | IN FRONT RUNNER | – | E J ZAYAS |
-| 4 | UNCLE BARRIE | – | C GONZALEZ |
 | 5 | SORRENTINO | – | A FRESU |
-| 6 | PRIVATE FLIGHT | – | K CARMOUCHE |
 | 7 | WHERE'S YOUR BOOM | – | S MARIN |
 
 ### 2. CLAIMING 1200
@@ -26,15 +26,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 3 | PICTURE THIS | 3 | R SANTANA, JR. |
+| 2 | TRUST ISSUES | 6,1 | R GUTIERREZ |
+| 5 | BIG HAT WILLIE | 6,1 | R MARAGH |
+| 6 | BURNINHUNKOFLOVE | 6,1 | F PRAT |
+| 7 | DISARMED | 6,1 | P PENA |
+| 9 | STEWIE | 6,1 | M FRANCO |
 | 1 | BEACH COLT | – | C ELLIOTT |
-| 2 | TRUST ISSUES | – | R GUTIERREZ |
-| 3 | PICTURE THIS | – | R SANTANA, JR. |
 | 4 | KID BILLY | – | A FRESU |
-| 5 | BIG HAT WILLIE | – | R MARAGH |
-| 6 | BURNINHUNKOFLOVE | – | F PRAT |
-| 7 | DISARMED | – | P PENA |
 | 8 | PRIVATE DESIRE | – | J NOLASCO |
-| 9 | STEWIE | – | M FRANCO |
 
 ### 3. ALLOWANCE OPTIONAL CLAIMING 1700
 
@@ -42,12 +42,12 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | SHERLOCK'S JEWEL | – | K CARMOUCHE | –/–/–/– |
-| 2 | RISK TOLERANCE | – | F PRAT | –/–/–/– |
-| 3 | TEE AT ONE | – | J CASTELLANO | –/–/–/– |
+| 2 | RISK TOLERANCE | 1,1 | F PRAT | –/–/–/– |
+| 1 | SHERLOCK'S JEWEL | 11 | K CARMOUCHE | –/–/–/– |
+| 3 | TEE AT ONE | 22 | J CASTELLANO | –/–/–/– |
+| 5 | DISCREET DANCER | 22 | J LEZCANO | –/–/–/– |
+| 6 | ENERGIZE | 22 | A FRESU | –/–/–/46 |
 | 4 | CAPTURE THE FLAG | – | M FRANCO | –/–/–/– |
-| 5 | DISCREET DANCER | – | J LEZCANO | –/–/–/– |
-| 6 | ENERGIZE | – | A FRESU | –/–/–/46 |
 | 7 | VERSUS | – | D DAVIS | –/–/–/– |
 
 ### 4. STARTER OPTIONAL CLAIMING 1200M
@@ -56,12 +56,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | DISPARATE IMPACT | – | J LEZCANO |
-| 2 | HELMET OF WILL | – | F PRAT |
-| 3 | TARTABULL | – | J CASTELLANO |
-| 4 | BOLD LOVE | – | L R RIVERA, JR. |
-| 5 | MATH TUTOR | – | M FRANCO |
-| 6 | SEA VISTA | – | R SANTANA, JR. |
+| 1 | DISPARATE IMPACT | 4,7 | J LEZCANO |
+| 4 | BOLD LOVE | 4,7 | L R RIVERA, JR. |
+| 5 | MATH TUTOR | 4,7 | M FRANCO |
+| 6 | SEA VISTA | 4,7 | R SANTANA, JR. |
+| 2 | HELMET OF WILL | 7 | F PRAT |
+| 3 | TARTABULL | 7 | J CASTELLANO |
 
 ### 5. CLAIMING 1300M
 
@@ -69,14 +69,14 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 6 | NEUSCHWANSTEIN | 1,7 | J LEZCANO | –/–/–/– |
+| 8 | GRAYWING | 3,5 | F VILLA PINO | –/–/–/– |
+| 4 | SIN NOMBRE | 7 | K DAVIS | –/–/–/– |
+| 7 | APOLLO CODE | 7 | C HARGROVE | –/–/–/– |
 | 1 | ANCIENT WORLD | – | M FRANCO | –/–/–/– |
 | 2 | TENEBRIS | – | L R RIVERA, JR. | –/–/–/– |
 | 3 | BOOTLEG RUNNER | – | P PENA | –/–/–/– |
-| 4 | SIN NOMBRE | – | K DAVIS | –/–/–/– |
 | 5 | LAUGHING BOY | – | R BOWEN | –/–/–/– |
-| 6 | NEUSCHWANSTEIN | – | J LEZCANO | –/–/–/– |
-| 7 | APOLLO CODE | – | C HARGROVE | –/–/–/– |
-| 8 | GRAYWING | – | F VILLA PINO | –/–/–/– |
 | 9 | HE'S GOT THIS | – | J CASTELLANO | –/–/–/– |
 
 ### 6. MAIDEN CLAIMING 1700M
@@ -85,14 +85,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | SANTIS | – | S MARIN |
+| 1 | SANTIS | 2,6 | S MARIN |
+| 4 | CUYLLE | 2,6 | R SILVERA |
+| 8 | PAPA BREZ | 2,6 | D DAVIS |
 | 2 | FALCONER | – | R SANTANA, JR. |
 | 3 | EPIC PRAYER | – | F PRAT |
-| 4 | CUYLLE | – | R SILVERA |
 | 5 | MINDFUL OF YOU | – | J LEZCANO |
 | 6 | CREAM AND CRIMSON | – | L R RIVERA, JR. |
 | 7 | MOTORCYCLE COP | – | M FRANCO |
-| 8 | PAPA BREZ | – | D DAVIS |
 | 9 | BECKETT | – | C ELLIOTT |
 | 10 | CREAM OF THE CROP | – | A FRESU |
 
@@ -102,12 +102,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 4 | TUNING IN | 1,3 | E J ZAYAS |
+| 6 | PROBABILITY | 2,6 | S MARIN |
 | 1 | MAX MONEY | – | R SANTANA, JR. |
 | 2 | TWOHONESTMISCHIEF | – | F PRAT |
 | 3 | KAZ OIL CHANGER | – | L R RIVERA, JR. |
-| 4 | TUNING IN | – | E J ZAYAS |
 | 5 | CALLING CARD | – | M FRANCO |
-| 6 | PROBABILITY | – | S MARIN |
 | 7 | SOLO JIM | – | A FRESU |
 
 ### 8. MAIDEN OPTIONAL CLAIMING 1200M
