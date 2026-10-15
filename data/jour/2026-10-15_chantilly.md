@@ -1,6 +1,6 @@
 # CHANTILLY — 15/10/2026
 
-8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -61,16 +61,16 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX DU JARDIN ANGLAIS
 
-*15h40 · plat · 1200 m · 6 partants · cotes de l'extraction*
+*15h40 · plat · 1200 m · 6 partants · cotes à T−29:32*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 7 | EXTREME DREAM | 2,4 | 2,39 | **+0,3 %** | M.BARZALONA 2e | 2/1/3172/154 |
-| 5 | MONDAY CABARET | 3,8 | 4,21 | -9,7 % | PC.BOUDOT | 8/2/–/6 |
-| 2 | KARAKOUM | 4,7 | 5,41 | -13,1 % | C.DEMURO | 1/201/480/3010 |
-| 1 | AMOUNE | 6,5 | 8,15 | -20,3 % | C.SOUMILLON | 7/126/345/250 |
-| 3 | ALAIN ROSE | 15 | 19,47 | -22,9 % | M.GUYON | 4/16/2877/288 |
-| 4 | WONDER BAILEYS | 23 | 32,81 | -29,9 % | E.VERHESTRAETEN | 53/12/172/1659 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 7 | EXTREME DREAM | 2 | 2,4 | 2,09 | -4,1 % | M.BARZALONA 2e | 2/1/3172/154 |
+| 5 | MONDAY CABARET | 4,5 | 3,8 | 4,91 | -8,3 % | PC.BOUDOT | 8/2/–/6 |
+| 2 | KARAKOUM | 4,8 | 4,7 | 5,60 | -14,2 % | C.DEMURO | 1/201/480/3010 |
+| 1 | AMOUNE | 7,2 | 6,5 | 9,29 | -22,5 % | C.SOUMILLON | 7/126/345/250 |
+| 3 | ALAIN ROSE | 17 | 15 | 22,80 | -25,4 % | M.GUYON | 4/16/2877/288 |
+| 4 | WONDER BAILEYS | 25 | 23 | 36,52 | -31,6 % | E.VERHESTRAETEN | 53/12/172/1659 |
 
 ### 5. PRIX DU CHENE DE LA BASSE POMMERAIE
 

@@ -1,0 +1,80 @@
+{
+  "course": "PRIX DU JARDIN ANGLAIS",
+  "numero": 4,
+  "reunion": 1,
+  "heure_depart": 1792071600000,
+  "distance": 1200,
+  "scraped_at": "2026-10-15T15:10:27.735184+02:00",
+  "minutes_avant_depart": 30,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "AMOUNE",
+      "cote_live": 7.2,
+      "cote_reference": 6.9,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792069231000
+    },
+    {
+      "numPmu": 2,
+      "nom": "KARAKOUM",
+      "cote_live": 4.8,
+      "cote_reference": 4.4,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792069231000
+    },
+    {
+      "numPmu": 3,
+      "nom": "ALAIN ROSE",
+      "cote_live": 17.0,
+      "cote_reference": 19.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792069231000
+    },
+    {
+      "numPmu": 4,
+      "nom": "WONDER BAILEYS",
+      "cote_live": 25.0,
+      "cote_reference": 27.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792069231000
+    },
+    {
+      "numPmu": 5,
+      "nom": "MONDAY CABARET",
+      "cote_live": 4.5,
+      "cote_reference": 4.8,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792069231000
+    },
+    {
+      "numPmu": 7,
+      "nom": "EXTREME DREAM",
+      "cote_live": 2.0,
+      "cote_reference": 2.1,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1792069231000
+    }
+  ],
+  "hippodrome": "CHANTILLY",
+  "releves": [
+    {
+      "scraped_at": "2026-10-15T15:10:27.735184+02:00",
+      "minutes_avant_depart": 29.541811983333332,
+      "cotes": {
+        "1": 7.2,
+        "2": 4.8,
+        "3": 17.0,
+        "4": 25.0,
+        "5": 4.5,
+        "7": 2.0
+      }
+    }
+  ]
+}
