@@ -1,10 +1,10 @@
 {
   "_doc": "Journal des paris réels du test séquentiel. Le pari est le relevé le plus proche de T-2:00 dans [T-2:40 ; T-1:20] (releve = 'T-m:ss') ; une course de la règle sans relevé dans la fenêtre est EXCLUE (liste exclues), jamais remplacée par la clôture. Écrit par bench/sprt_regle.mjs.",
   "debut": "2026-10-01",
-  "paris": 9,
+  "paris": 11,
   "exclues_sans_releve": 8,
-  "favori_change_avant_cloture": 1,
-  "taux_bascule_favori": 0.111,
+  "favori_change_avant_cloture": 2,
+  "taux_bascule_favori": 0.182,
   "lignes": [
     {
       "date": "2026-10-03",
@@ -158,6 +158,40 @@
       "dividende": 0,
       "gain_20e": -20,
       "S": 0.113
+    },
+    {
+      "date": "2026-10-14",
+      "hippodrome": "SAINT-CLOUD",
+      "R": 3,
+      "C": 8,
+      "cheval": "QUEENFLEUR",
+      "numero": 6,
+      "cote_misee": 3.1,
+      "releve": "T-1:45",
+      "cote_finale": 3.5,
+      "favori_final_identique": true,
+      "derive": -0.192,
+      "gagne": false,
+      "dividende": 0,
+      "gain_20e": -20,
+      "S": 0.062
+    },
+    {
+      "date": "2026-10-14",
+      "hippodrome": "SAINT-CLOUD",
+      "R": 3,
+      "C": 9,
+      "cheval": "CLICCLIC PANPANPAN",
+      "numero": 9,
+      "cote_misee": 6.3,
+      "releve": "T-1:44",
+      "cote_finale": 6.4,
+      "favori_final_identique": false,
+      "derive": -0.105,
+      "gagne": false,
+      "dividende": 0,
+      "gain_20e": -20,
+      "S": 0.042
     }
   ],
   "exclues": [
