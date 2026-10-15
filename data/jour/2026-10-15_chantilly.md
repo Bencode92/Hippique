@@ -120,24 +120,24 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DU CHENE DES GRES
 
-*17h25 · plat · 1800 m · 14 partants · cotes à T−3:05*
+*17h25 · plat · 1800 m · 14 partants · cotes à T−0:25*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | LIKE A DOVE | 5,4 | 6,4 | 6,32 | -14,5 % | M.GUYON 4e | 4/7/4/15 |
-| 15 | MIA FAST | 6,6 | 6,3 | 6,96 | -5,2 % | F.VALLE SKAR | 35/132/993/3292 |
-| 1 | GUNS AND ROSES | 7,8 | 10 | 9,79 | -20,4 % | H.LEBOUC | 19/26/177/1822 |
-| 4 | TOMOE GOZEN | 8 | 9,6 | 9,44 | -15,3 % | H.BOUTIN | 14/28/24/77 |
-| 11 | MANGAS | 9,5 | 21 | 10,59 | -10,3 % | T.BACHELOT | 16/117/3984/784 |
-| 5 | STEEL DRUM | 10 | 6,4 | 11,73 | -14,8 % | C.LECOEUVRE | 13/117/1078/784 |
-| 3 | SPARKS OF LOVE | 11 | 10 | 13,72 | -19,8 % | L.BOISSEAU | 36/53/19/62 |
-| 10 | PETITE ABEILLE | 14 | 25 | 18,21 | -23,1 % | M.VELON | 28/26/1735/624 |
-| 9 | DARYOZA | 15 | 11 | 21,18 | -29,2 % | B.FLAMENT | 161/137/369/541 |
-| 6 | KOELLE ALAAF | 16 | 11 | 19,44 | -17,7 % | D.SANTIAGO | 15/220/835/3394 |
-| 13 | PARISA | 43 | 35 | 59,74 | -28,0 % | C.BELMONT | 171/271/32/1112 |
-| 7 | THE WHEEL OF TIME | 50 | 32 | 70,37 | -28,9 % | J.MOUTARD | 61/133/2201/388 |
-| 14 | VOGUE A L'AME | 75 | 35 | 103,29 | -27,4 % | A.CRASTUS | 17/163/178/2161 |
-| 12 | KARLITO | 87 | 47 | 120,47 | -27,8 % | L.PLOMMEE | 31/352/199/4114 |
+| 2 | LIKE A DOVE | 6 | 6,4 | 5,74 | **+4,5 %** | M.GUYON 4e | 4/7/4/15 |
+| 4 | TOMOE GOZEN | 6,3 | 9,6 | 7,21 | -12,6 % | H.BOUTIN | 14/28/24/77 |
+| 15 | MIA FAST | 7,2 | 6,3 | 7,74 | -6,9 % | F.VALLE SKAR | 35/132/993/3292 |
+| 1 | GUNS AND ROSES | 8,4 | 10 | 10,76 | -21,9 % | H.LEBOUC | 19/26/177/1822 |
+| 9 | DARYOZA | 10 | 11 | 12,10 | -17,4 % | B.FLAMENT | 161/137/369/541 |
+| 5 | STEEL DRUM | 11 | 6,4 | 13,21 | -16,7 % | C.LECOEUVRE | 13/117/1078/784 |
+| 11 | MANGAS | 11 | 21 | 12,65 | -13,0 % | T.BACHELOT | 16/117/3984/784 |
+| 6 | KOELLE ALAAF | 12 | 11 | 13,99 | -14,2 % | D.SANTIAGO | 15/220/835/3394 |
+| 3 | SPARKS OF LOVE | 13 | 10 | 16,80 | -22,6 % | L.BOISSEAU | 36/53/19/62 |
+| 10 | PETITE ABEILLE | 14 | 25 | 18,33 | -23,6 % | M.VELON | 28/26/1735/624 |
+| 13 | PARISA | 43 | 35 | 60,12 | -28,5 % | C.BELMONT | 171/271/32/1112 |
+| 7 | THE WHEEL OF TIME | 48 | 32 | 67,74 | -29,1 % | J.MOUTARD | 61/133/2201/388 |
+| 14 | VOGUE A L'AME | 87 | 35 | 121,18 | -28,2 % | A.CRASTUS | 17/163/178/2161 |
+| 12 | KARLITO | 112 | 47 | 156,60 | -28,5 % | L.PLOMMEE | 31/352/199/4114 |
 
 ### 8. PRIX DU CHENE DU COUP DE FOUDRE
 
