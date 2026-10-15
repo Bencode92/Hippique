@@ -74,26 +74,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DU CHENE DE LA BASSE POMMERAIE
 
-*16h15 · plat · 1800 m · 16 partants · cotes à T−29:52*
+*16h15 · plat · 1800 m · 16 partants · cotes à T−25:52*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | TOCOA | 5,2 | 4 | 5,94 | -12,4 % | PC.BOUDOT | 8/66/296/2904 |
-| 1 | CHARMING CECILIA | 8,6 | 9 | 9,87 | -12,9 % | A.MOLINS | 34/108/888/1560 |
-| 4 | PERCEVAL | 9,1 | 11 | 10,10 | -9,9 % | T.PICCONE | 9/6/117/524 |
-| 13 | DIVA CHIQUITA | 10 | 9,6 | 10,34 | -3,3 % | A.HAMELIN | 22/74/47/762 |
-| 6 | FEE ZELEE | 11 | 12 | 13,76 | -20,1 % | M.VELON | 28/59/971/961 |
-| 10 | NAZGUL BLOU | 11 | 12 | 11,54 | -4,7 % | S.PASQUIER | 23/37/908/398 |
-| 2 | ICE CRACKER | 12 | 13 | 15,25 | -21,3 % | M.PROTTI | 30/6/85/300 |
-| 14 | VIENNA'S PRIDE | 13 | 10 | 15,32 | -15,1 % | E.HARDOUIN | 27/89/2667/– |
-| 5 | BACHEROVKA | 16 | 17 | 21,37 | -25,1 % | M.FAVRIAUX | 51/173/13/2800 |
-| 8 | ZEUDI | 17 | 17 | 22,93 | -25,9 % | A.POUCHIN | 6/59/175/669 |
-| 15 | AUSTRALIPS | 17 | 18 | 22,47 | -24,3 % | C.DEMURO | 1/41/7/61 |
-| 7 | VILLA ADRIENNE | 29 | 48 | 41,53 | -30,2 % | A.DUQUESNOY | 121/28/18/49 |
-| 9 | BIG RED SOLO | 36 | 41 | 44,83 | -19,7 % | G.TROLLEY DE PREVAUX | 46/68/3982/4011 |
-| 11 | CAPITOL HILL | 40 | 52 | 59,51 | -32,8 % | L.GALLO | 45/15/99/925 |
-| 12 | LA TRAVERSETTE | 44 | 79 | 55,93 | -21,3 % | F.VALLE SKAR | 35/48/1448/880 |
-| 16 | EMPTY STREET | 124 | 113 | 181,47 | -31,7 % | G.MEURY | 68/851/30/5126 |
+| 3 | TOCOA | 5,9 | 4 | 6,85 | -13,8 % | PC.BOUDOT | 8/66/296/2904 |
+| 1 | CHARMING CECILIA | 7,5 | 9 | 8,78 | -14,6 % | A.MOLINS | 34/108/888/1560 |
+| 4 | PERCEVAL | 8,5 | 11 | 9,32 | -8,8 % | T.PICCONE | 9/6/117/524 |
+| 10 | NAZGUL BLOU | 9,8 | 12 | 10,09 | -2,9 % | S.PASQUIER | 23/37/908/398 |
+| 13 | DIVA CHIQUITA | 11 | 9,6 | 11,53 | -4,6 % | A.HAMELIN | 22/74/47/762 |
+| 2 | ICE CRACKER | 13 | 13 | 16,73 | -22,3 % | M.PROTTI | 30/6/85/300 |
+| 6 | FEE ZELEE | 13 | 12 | 15,99 | -18,7 % | M.VELON | 28/59/971/961 |
+| 14 | VIENNA'S PRIDE | 13 | 10 | 15,31 | -15,1 % | E.HARDOUIN | 27/89/2667/– |
+| 5 | BACHEROVKA | 16 | 17 | 21,35 | -25,0 % | M.FAVRIAUX | 51/173/13/2800 |
+| 15 | AUSTRALIPS | 16 | 18 | 20,92 | -23,5 % | C.DEMURO | 1/41/7/61 |
+| 8 | ZEUDI | 19 | 17 | 26,08 | -27,1 % | A.POUCHIN | 6/59/175/669 |
+| 7 | VILLA ADRIENNE | 26 | 48 | 36,65 | -29,1 % | A.DUQUESNOY | 121/28/18/49 |
+| 11 | CAPITOL HILL | 28 | 52 | 39,87 | -29,8 % | L.GALLO | 45/15/99/925 |
+| 9 | BIG RED SOLO | 38 | 41 | 47,56 | -20,1 % | G.TROLLEY DE PREVAUX | 46/68/3982/4011 |
+| 12 | LA TRAVERSETTE | 41 | 79 | 51,72 | -20,7 % | F.VALLE SKAR | 35/48/1448/880 |
+| 16 | EMPTY STREET | 90 | 113 | 131,23 | -31,4 % | G.MEURY | 68/851/30/5126 |
 
 ### 6. PRIX DE L'AMANTE INQUIETE
 
