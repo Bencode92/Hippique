@@ -61,16 +61,16 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX DU JARDIN ANGLAIS
 
-*15h40 · plat · 1200 m · 6 partants · cotes à T−12:52*
+*15h40 · plat · 1200 m · 6 partants · cotes à T−8:52*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 7 | EXTREME DREAM | 1,6 | 2,4 | 1,77 | -9,6 % | M.BARZALONA 2e | 2/1/3172/154 |
-| 5 | MONDAY CABARET | 5,4 | 3,8 | 5,94 | -9,1 % | PC.BOUDOT | 8/2/–/6 |
-| 2 | KARAKOUM | 6,7 | 4,7 | 8,09 | -17,2 % | C.DEMURO | 1/201/480/3010 |
-| 1 | AMOUNE | 9 | 6,5 | 11,43 | -21,3 % | C.SOUMILLON | 7/126/345/250 |
-| 4 | WONDER BAILEYS | 21 | 23 | 29,55 | -28,9 % | E.VERHESTRAETEN | 53/12/172/1659 |
-| 3 | ALAIN ROSE | 26 | 15 | 36,79 | -29,3 % | M.GUYON | 4/16/2877/288 |
+| 7 | EXTREME DREAM | 1,8 | 2,4 | 1,92 | -6,4 % | M.BARZALONA 2e | 2/1/3172/154 |
+| 5 | MONDAY CABARET | 4,3 | 3,8 | 4,64 | -7,4 % | PC.BOUDOT | 8/2/–/6 |
+| 2 | KARAKOUM | 6,6 | 4,7 | 7,99 | -17,4 % | C.DEMURO | 1/201/480/3010 |
+| 1 | AMOUNE | 7,7 | 6,5 | 9,56 | -19,5 % | C.SOUMILLON | 7/126/345/250 |
+| 4 | WONDER BAILEYS | 20 | 23 | 28,05 | -28,7 % | E.VERHESTRAETEN | 53/12/172/1659 |
+| 3 | ALAIN ROSE | 24 | 15 | 33,72 | -28,8 % | M.GUYON | 4/16/2877/288 |
 
 ### 5. PRIX DU CHENE DE LA BASSE POMMERAIE
 
