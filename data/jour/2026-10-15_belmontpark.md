@@ -12,10 +12,10 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 4 | UNCLE BARRIE | 2,6 | C GONZALEZ |
-| 6 | PRIVATE FLIGHT | 2,6 | K CARMOUCHE |
-| 1 | MR R T | 5,2 | C ELLIOTT |
-| 2 | GO DHARMA | 5,2 | R SANTANA, JR. |
+| 6 | PRIVATE FLIGHT | 1,2 | K CARMOUCHE |
+| 4 | UNCLE BARRIE | 5,7 | C GONZALEZ |
+| 1 | MR R T | 11 | C ELLIOTT |
+| 2 | GO DHARMA | 11 | R SANTANA, JR. |
 | 3 | IN FRONT RUNNER | – | E J ZAYAS |
 | 5 | SORRENTINO | – | A FRESU |
 | 7 | WHERE'S YOUR BOOM | – | S MARIN |
@@ -26,12 +26,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 3 | PICTURE THIS | 3 | R SANTANA, JR. |
-| 2 | TRUST ISSUES | 6,1 | R GUTIERREZ |
-| 5 | BIG HAT WILLIE | 6,1 | R MARAGH |
-| 6 | BURNINHUNKOFLOVE | 6,1 | F PRAT |
-| 7 | DISARMED | 6,1 | P PENA |
-| 9 | STEWIE | 6,1 | M FRANCO |
+| 3 | PICTURE THIS | 3,5 | R SANTANA, JR. |
+| 9 | STEWIE | 3,5 | M FRANCO |
+| 2 | TRUST ISSUES | 7 | R GUTIERREZ |
+| 5 | BIG HAT WILLIE | 7 | R MARAGH |
+| 6 | BURNINHUNKOFLOVE | 7 | F PRAT |
+| 7 | DISARMED | 7 | P PENA |
 | 1 | BEACH COLT | – | C ELLIOTT |
 | 4 | KID BILLY | – | A FRESU |
 | 8 | PRIVATE DESIRE | – | J NOLASCO |
@@ -56,12 +56,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | DISPARATE IMPACT | 4,7 | J LEZCANO |
-| 4 | BOLD LOVE | 4,7 | L R RIVERA, JR. |
-| 5 | MATH TUTOR | 4,7 | M FRANCO |
-| 6 | SEA VISTA | 4,7 | R SANTANA, JR. |
-| 2 | HELMET OF WILL | 7 | F PRAT |
-| 3 | TARTABULL | 7 | J CASTELLANO |
+| 1 | DISPARATE IMPACT | 4,9 | J LEZCANO |
+| 2 | HELMET OF WILL | 4,9 | F PRAT |
+| 4 | BOLD LOVE | 4,9 | L R RIVERA, JR. |
+| 5 | MATH TUTOR | 4,9 | M FRANCO |
+| 6 | SEA VISTA | 4,9 | R SANTANA, JR. |
+| 3 | TARTABULL | 7,4 | J CASTELLANO |
 
 ### 5. CLAIMING 1300M
 
@@ -69,15 +69,15 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 6 | NEUSCHWANSTEIN | 1,7 | J LEZCANO | –/–/–/– |
-| 8 | GRAYWING | 3,5 | F VILLA PINO | –/–/–/– |
-| 4 | SIN NOMBRE | 7 | K DAVIS | –/–/–/– |
-| 7 | APOLLO CODE | 7 | C HARGROVE | –/–/–/– |
+| 6 | NEUSCHWANSTEIN | 1,9 | J LEZCANO | –/–/–/– |
+| 8 | GRAYWING | 3,9 | F VILLA PINO | –/–/–/– |
+| 4 | SIN NOMBRE | 7,9 | K DAVIS | –/–/–/– |
+| 7 | APOLLO CODE | 7,9 | C HARGROVE | –/–/–/– |
+| 9 | HE'S GOT THIS | 7,9 | J CASTELLANO | –/–/–/– |
 | 1 | ANCIENT WORLD | – | M FRANCO | –/–/–/– |
 | 2 | TENEBRIS | – | L R RIVERA, JR. | –/–/–/– |
 | 3 | BOOTLEG RUNNER | – | P PENA | –/–/–/– |
 | 5 | LAUGHING BOY | – | R BOWEN | –/–/–/– |
-| 9 | HE'S GOT THIS | – | J CASTELLANO | –/–/–/– |
 
 ### 6. MAIDEN CLAIMING 1700M
 
