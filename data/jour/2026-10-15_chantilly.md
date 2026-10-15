@@ -46,18 +46,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX D'HOTOT-EN-AUGE
 
-*15h05 · plat · 1600 m · 8 partants · cotes à T−1:52*
+*15h05 · plat · 1600 m · 8 partants · cotes à T−0:32*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | VADAJA | 1,5 | 1,5 | 1,77 | -15,2 % | M.BARZALONA 2e | 2/1/–/1 |
-| 8 | NEW LOVE | 5,9 | 6,3 | 7,28 | -18,9 % | S.PASQUIER | 23/37/28/2667 |
-| 1 | CANNTARA | 13 | 11 | 16,44 | -20,9 % | A.HAMELIN | 22/23/–/1 |
-| 3 | LADY OF MERCIA | 14 | 17 | 20,13 | -30,4 % | PC.BOUDOT 3e | 8/45/14/1142 |
-| 6 | RAFLER LA MISE | 19 | 19 | 25,60 | -25,8 % | M.GRANDIN | 3/66/345/921 |
-| 4 | LA SUISSESSE | 20 | 18 | 27,17 | -26,4 % | C.DEMURO | 1/16/3438/1259 |
-| 7 | KATSIOUX | 22 | 19 | 32,58 | -32,5 % | M.VELON | 28/1/3249/261 |
-| 5 | HUNTRIX | 42 | 35 | 62,89 | -33,2 % | A.LEMAITRE | 11/76/26/1578 |
+| 2 | VADAJA | 1,5 | 1,5 | 1,78 | -15,6 % | M.BARZALONA 2e | 2/1/–/1 |
+| 8 | NEW LOVE | 5,3 | 6,3 | 6,49 | -18,3 % | S.PASQUIER | 23/37/28/2667 |
+| 3 | LADY OF MERCIA | 13 | 17 | 18,60 | -30,1 % | PC.BOUDOT 3e | 8/45/14/1142 |
+| 1 | CANNTARA | 14 | 11 | 18,08 | -22,6 % | A.HAMELIN | 22/23/–/1 |
+| 4 | LA SUISSESSE | 20 | 18 | 27,40 | -27,0 % | C.DEMURO | 1/16/3438/1259 |
+| 6 | RAFLER LA MISE | 22 | 19 | 30,59 | -28,1 % | M.GRANDIN | 3/66/345/921 |
+| 7 | KATSIOUX | 23 | 19 | 34,58 | -33,5 % | M.VELON | 28/1/3249/261 |
+| 5 | HUNTRIX | 45 | 35 | 68,39 | -34,2 % | A.LEMAITRE | 11/76/26/1578 |
 
 ### 4. PRIX DU JARDIN ANGLAIS
 
