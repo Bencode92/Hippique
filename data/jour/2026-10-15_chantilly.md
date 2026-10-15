@@ -120,24 +120,24 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DU CHENE DES GRES
 
-*17h25 · plat · 1800 m · 14 partants · cotes à T−29:45*
+*17h25 · plat · 1800 m · 14 partants · cotes à T−25:45*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 15 | MIA FAST | 6 | 6,3 | 5,35 | **+12,2 %** | F.VALLE SKAR | 35/132/993/3292 |
-| 2 | LIKE A DOVE | 6,3 | 6,4 | 7,00 | -10,0 % | M.GUYON 4e | 4/7/4/15 |
-| 5 | STEEL DRUM | 7,1 | 6,4 | 7,85 | -9,5 % | C.LECOEUVRE | 13/117/1078/784 |
-| 9 | DARYOZA | 9,4 | 11 | 11,13 | -15,6 % | B.FLAMENT | 161/137/369/541 |
+| 5 | STEEL DRUM | 4,5 | 6,4 | 5,22 | -13,7 % | C.LECOEUVRE | 13/117/1078/784 |
+| 15 | MIA FAST | 5,6 | 6,3 | 5,76 | -2,8 % | F.VALLE SKAR | 35/132/993/3292 |
+| 2 | LIKE A DOVE | 7,7 | 6,4 | 9,60 | -19,8 % | M.GUYON 4e | 4/7/4/15 |
+| 4 | TOMOE GOZEN | 9,5 | 9,6 | 11,00 | -13,6 % | H.BOUTIN | 14/28/24/77 |
 | 3 | SPARKS OF LOVE | 10 | 10 | 12,21 | -18,1 % | L.BOISSEAU | 36/53/19/62 |
-| 4 | TOMOE GOZEN | 10 | 9,6 | 11,68 | -14,4 % | H.BOUTIN | 14/28/24/77 |
-| 1 | GUNS AND ROSES | 11 | 10 | 13,98 | -21,3 % | H.LEBOUC | 19/26/177/1822 |
-| 6 | KOELLE ALAAF | 12 | 11 | 13,83 | -13,2 % | D.SANTIAGO | 15/220/835/3394 |
+| 9 | DARYOZA | 11 | 11 | 13,39 | -17,8 % | B.FLAMENT | 161/137/369/541 |
+| 1 | GUNS AND ROSES | 14 | 10 | 18,57 | -24,6 % | H.LEBOUC | 19/26/177/1822 |
+| 6 | KOELLE ALAAF | 16 | 11 | 19,35 | -17,3 % | D.SANTIAGO | 15/220/835/3394 |
 | 10 | PETITE ABEILLE | 18 | 25 | 24,32 | -26,0 % | M.VELON | 28/26/1735/624 |
-| 11 | MANGAS | 23 | 21 | 32,30 | -28,8 % | T.BACHELOT | 16/117/3984/784 |
-| 7 | THE WHEEL OF TIME | 33 | 32 | 40,38 | -18,3 % | J.MOUTARD | 61/133/2201/388 |
-| 13 | PARISA | 36 | 35 | 48,88 | -26,4 % | C.BELMONT | 171/271/32/1112 |
-| 14 | VOGUE A L'AME | 38 | 35 | 49,47 | -23,2 % | A.CRASTUS | 17/163/178/2161 |
-| 12 | KARLITO | 50 | 47 | 70,07 | -28,6 % | L.PLOMMEE | 31/352/199/4114 |
+| 11 | MANGAS | 18 | 21 | 22,20 | -18,9 % | T.BACHELOT | 16/117/3984/784 |
+| 7 | THE WHEEL OF TIME | 42 | 32 | 52,76 | -20,4 % | J.MOUTARD | 61/133/2201/388 |
+| 13 | PARISA | 47 | 35 | 65,57 | -28,3 % | C.BELMONT | 171/271/32/1112 |
+| 14 | VOGUE A L'AME | 53 | 35 | 71,17 | -25,5 % | A.CRASTUS | 17/163/178/2161 |
+| 12 | KARLITO | 69 | 47 | 98,87 | -30,2 % | L.PLOMMEE | 31/352/199/4114 |
 
 ### 8. PRIX DU CHENE DU COUP DE FOUDRE
 
