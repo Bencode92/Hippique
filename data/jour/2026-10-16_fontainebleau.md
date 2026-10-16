@@ -113,24 +113,24 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE LA MARE AUX EVEES
 
-*16h38 · plat · 1200 m · 14 partants · cotes à T−16:19*
+*16h38 · plat · 1200 m · 14 partants · cotes à T−12:19*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 9 | HOLLIE WOOD | 3,8 | 3,1 | 4,16 | -8,7 % | M.GUYON | 4/54/547/535 |
-| 4 | LIKE LINDY | 7 | 10 | 7,44 | -5,9 % | M.GRANDIN | 3/75/129/30 |
-| 2 | ZAHARA | 7,9 | 6,2 | 8,19 | -3,5 % | G.MEURY | 68/22/80/32 |
-| 3 | MISTY CITY | 7,9 | 14 | 9,13 | -13,5 % | H.BOUTIN | 14/15/91/273 |
-| 12 | TERRA PROXIMA | 13 | 15 | 15,95 | -18,5 % | F.VALLE SKAR | 35/11/170/1743 |
-| 7 | ORINOCO | 15 | 15 | 18,04 | -16,9 % | E.HARDOUIN | 27/15/231/123 |
-| 11 | ZENADIA | 15 | 17 | 18,03 | -16,8 % | C.LECOEUVRE | 13/81/948/120 |
-| 13 | HELLO VEGA | 15 | 20 | 19,35 | -22,5 % | C.GROSBOIS | 25/127/531/761 |
-| 14 | TEN ICE | 20 | 25 | 27,61 | -27,6 % | A.LEMAITRE | 11/118/3195/3387 |
-| 15 | AMAZING GIRL | 21 | 19 | 26,65 | -21,2 % | M.RIEHL | 331/222/3084/4321 |
-| 5 | WELL RAIN | 26 | 22 | 37,33 | -30,3 % | L.BOISSEAU | 36/93/1084/264 |
-| 6 | SANTA LUZIA | 26 | 16 | 32,45 | -19,9 % | C.PACAUT | 48/33/5/267 |
-| 1 | CHACUN SA VIE | 44 | 62 | 61,26 | -28,2 % | C.COLLET-VIDAL | 119/15/15/36 |
-| 8 | BAILEYS HIP HOP | 47 | 24 | 62,74 | -25,1 % | R.MANGIONE | 78/161/172/1659 |
+| 9 | HOLLIE WOOD | 3,6 | 3,1 | 3,94 | -8,5 % | M.GUYON | 4/54/547/535 |
+| 4 | LIKE LINDY | 7 | 10 | 7,45 | -6,1 % | M.GRANDIN | 3/75/129/30 |
+| 2 | ZAHARA | 7,8 | 6,2 | 8,08 | -3,5 % | G.MEURY | 68/22/80/32 |
+| 3 | MISTY CITY | 9,9 | 14 | 11,90 | -16,8 % | H.BOUTIN | 14/15/91/273 |
+| 12 | TERRA PROXIMA | 11 | 15 | 13,73 | -19,9 % | F.VALLE SKAR | 35/11/170/1743 |
+| 13 | HELLO VEGA | 15 | 20 | 19,37 | -22,6 % | C.GROSBOIS | 25/127/531/761 |
+| 7 | ORINOCO | 17 | 15 | 20,90 | -18,6 % | E.HARDOUIN | 27/15/231/123 |
+| 11 | ZENADIA | 17 | 17 | 19,94 | -14,8 % | C.LECOEUVRE | 13/81/948/120 |
+| 15 | AMAZING GIRL | 19 | 19 | 23,77 | -20,1 % | M.RIEHL | 331/222/3084/4321 |
+| 14 | TEN ICE | 20 | 25 | 27,64 | -27,6 % | A.LEMAITRE | 11/118/3195/3387 |
+| 5 | WELL RAIN | 26 | 22 | 37,37 | -30,4 % | L.BOISSEAU | 36/93/1084/264 |
+| 6 | SANTA LUZIA | 26 | 16 | 32,49 | -20,0 % | C.PACAUT | 48/33/5/267 |
+| 1 | CHACUN SA VIE | 35 | 62 | 47,63 | -26,5 % | C.COLLET-VIDAL | 119/15/15/36 |
+| 8 | BAILEYS HIP HOP | 44 | 24 | 58,45 | -24,7 % | R.MANGIONE | 78/161/172/1659 |
 
 ### 8. PRIX DU SOUTIEN A LA FORET DE FONTAINEBLEAU
 
