@@ -74,22 +74,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DES BICHES
 
-*15h28 · plat · 2200 m · 12 partants · cotes à T−5:59*
+*15h28 · plat · 2200 m · 12 partants · cotes à T−3:19*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | GOLD STANDARD | 4 | 5,5 | 4,38 | -8,7 % | C.DEMURO | 1/204/3/177 |
-| 3 | CHIPRANA | 6,9 | 4,8 | 7,88 | -12,5 % | A.MOLINS | 34/105/121/101 |
-| 5 | GREY WOLF | 7,5 | 7,2 | 8,32 | -9,8 % | P.REMOUE | 37/211/754/181 |
-| 1 | BIG VICTOR | 8,4 | 7,9 | 9,91 | -15,2 % | E.VERHESTRAETEN | 53/12/236/58 |
-| 9 | LIKE NO OTHER | 8,5 | 10 | 10,04 | -15,4 % | M.GUYON 3e | 4/40/246/1868 |
-| 10 | BROMUS | 8,6 | 8,7 | 8,58 | **+0,2 %** | R.THOMAS | 75/132/437/3221 |
-| 13 | BLUE GARRETT | 16 | 17 | 21,10 | -24,2 % | D.SANTIAGO | 15/39/1467/173 |
-| 4 | INDY | 18 | 21 | 25,99 | -30,7 % | J.MOUTARD | 61/40/1883/2769 |
-| 8 | PULP FICTION | 18 | 11 | 23,12 | -22,1 % | E.SOLINAS | 140/215/305/341 |
-| 12 | SAINT PHONIE | 26 | 32 | 36,24 | -28,3 % | C.GROSBOIS | 25/206/660/1033 |
-| 7 | LABELLEGNAC | 31 | 37 | 44,25 | -29,9 % | M.JUSTUM | 88/352/2806/1163 |
-| 11 | CAPOUCHINE | 51 | 35 | 64,92 | -21,4 % | P.CHEYER | 109/126/297/247 |
+| 5 | GREY WOLF | 3,4 | 7,2 | 3,60 | -5,6 % | P.REMOUE | 37/211/754/181 |
+| 2 | GOLD STANDARD | 4,9 | 5,5 | 4,97 | -1,3 % | C.DEMURO | 1/204/3/177 |
+| 1 | BIG VICTOR | 6,6 | 7,9 | 7,51 | -12,1 % | E.VERHESTRAETEN | 53/12/236/58 |
+| 3 | CHIPRANA | 8,8 | 4,8 | 10,04 | -12,4 % | A.MOLINS | 34/105/121/101 |
+| 10 | BROMUS | 9,4 | 8,7 | 10,38 | -9,5 % | R.THOMAS | 75/132/437/3221 |
+| 9 | LIKE NO OTHER | 12 | 10 | 15,10 | -20,5 % | M.GUYON 3e | 4/40/246/1868 |
+| 4 | INDY | 22 | 21 | 32,90 | -33,1 % | J.MOUTARD | 61/40/1883/2769 |
+| 8 | PULP FICTION | 24 | 11 | 32,31 | -25,7 % | E.SOLINAS | 140/215/305/341 |
+| 13 | BLUE GARRETT | 24 | 17 | 32,31 | -25,7 % | D.SANTIAGO | 15/39/1467/173 |
+| 12 | SAINT PHONIE | 31 | 32 | 44,36 | -30,1 % | C.GROSBOIS | 25/206/660/1033 |
+| 7 | LABELLEGNAC | 47 | 37 | 70,40 | -33,2 % | M.JUSTUM | 88/352/2806/1163 |
+| 11 | CAPOUCHINE | 81 | 35 | 116,72 | -30,6 % | P.CHEYER | 109/126/297/247 |
 
 ### 6. PRIX ARTUS DE MAILLE
 
