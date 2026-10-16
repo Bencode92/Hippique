@@ -4,8 +4,8 @@
   "reunion": 4,
   "heure_depart": 1792159500000,
   "distance": 2200,
-  "scraped_at": "2026-10-16T16:03:00.538886+02:00",
-  "minutes_avant_depart": 2,
+  "scraped_at": "2026-10-16T16:04:20.460107+02:00",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
@@ -14,70 +14,70 @@
       "cote_reference": 9.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792159368000
+      "timestamp_cote": 1792159448000
     },
     {
       "numPmu": 2,
       "nom": "SPRING LAUREL",
-      "cote_live": 9.3,
+      "cote_live": 8.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792159368000
+      "timestamp_cote": 1792159448000
     },
     {
       "numPmu": 3,
       "nom": "LIGHTASS FAL",
-      "cote_live": 16.0,
+      "cote_live": 18.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792159368000
+      "timestamp_cote": 1792159448000
     },
     {
       "numPmu": 4,
       "nom": "RUSAIR FAL",
-      "cote_live": 28.0,
+      "cote_live": 32.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792159368000
+      "timestamp_cote": 1792159448000
     },
     {
       "numPmu": 5,
       "nom": "MY LOVE SONG",
-      "cote_live": 28.0,
+      "cote_live": 30.0,
       "cote_reference": 35.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792159368000
+      "timestamp_cote": 1792159448000
     },
     {
       "numPmu": 6,
       "nom": "SAINTE SARAH",
-      "cote_live": 14.0,
+      "cote_live": 18.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792159368000
+      "timestamp_cote": 1792159448000
     },
     {
       "numPmu": 7,
       "nom": "NOVA DU CHENET",
-      "cote_live": 12.0,
+      "cote_live": 11.0,
       "cote_reference": 8.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792159368000
+      "timestamp_cote": 1792159448000
     },
     {
       "numPmu": 8,
       "nom": "PADOVA",
-      "cote_live": 4.1,
+      "cote_live": 4.0,
       "cote_reference": 4.9,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792159368000
+      "timestamp_cote": 1792159448000
     },
     {
       "numPmu": 9,
@@ -86,43 +86,43 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792159368000
+      "timestamp_cote": 1792159448000
     },
     {
       "numPmu": 10,
       "nom": "BLUE DAHLIA",
-      "cote_live": 17.0,
+      "cote_live": 11.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792159368000
+      "timestamp_cote": 1792159448000
     },
     {
       "numPmu": 11,
       "nom": "SAYULITA",
-      "cote_live": 10.0,
+      "cote_live": 12.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792159368000
+      "timestamp_cote": 1792159448000
     },
     {
       "numPmu": 12,
       "nom": "LA ALMADIA",
-      "cote_live": 17.0,
+      "cote_live": 18.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792159368000
+      "timestamp_cote": 1792159448000
     },
     {
       "numPmu": 14,
       "nom": "CHERRY PIE",
-      "cote_live": 14.0,
+      "cote_live": 17.0,
       "cote_reference": 9.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792159368000
+      "timestamp_cote": 1792159448000
     }
   ],
   "hippodrome": "FONTAINEBLEAU",
@@ -391,6 +391,44 @@
         "11": 10.0,
         "12": 17.0,
         "14": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-16T16:03:41.461268+02:00",
+      "minutes_avant_depart": 1.31539205,
+      "cotes": {
+        "1": 6.3,
+        "2": 8.6,
+        "3": 15.0,
+        "4": 28.0,
+        "5": 28.0,
+        "6": 16.0,
+        "7": 11.0,
+        "8": 4.0,
+        "9": 14.0,
+        "10": 18.0,
+        "11": 11.0,
+        "12": 16.0,
+        "14": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-16T16:04:20.460107+02:00",
+      "minutes_avant_depart": 0.6604953333333333,
+      "cotes": {
+        "1": 5.9,
+        "2": 8.0,
+        "3": 18.0,
+        "4": 32.0,
+        "5": 30.0,
+        "6": 18.0,
+        "7": 11.0,
+        "8": 4.0,
+        "9": 15.0,
+        "10": 11.0,
+        "11": 12.0,
+        "12": 18.0,
+        "14": 17.0
       }
     }
   ]
