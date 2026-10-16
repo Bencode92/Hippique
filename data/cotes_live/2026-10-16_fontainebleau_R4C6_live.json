@@ -4,17 +4,17 @@
   "reunion": 4,
   "heure_depart": 1792159380000,
   "distance": 2200,
-  "scraped_at": "2026-10-16T15:37:00.995458+02:00",
-  "minutes_avant_depart": 26,
+  "scraped_at": "2026-10-16T15:41:40.660746+02:00",
+  "minutes_avant_depart": 21,
   "participants": [
     {
       "numPmu": 1,
       "nom": "SARENZO",
-      "cote_live": 10.0,
+      "cote_live": 9.9,
       "cote_reference": 9.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792157804000
+      "timestamp_cote": 1792158090000
     },
     {
       "numPmu": 2,
@@ -23,61 +23,61 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792157804000
+      "timestamp_cote": 1792158090000
     },
     {
       "numPmu": 3,
       "nom": "LIGHTASS FAL",
-      "cote_live": 17.0,
+      "cote_live": 19.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792157804000
+      "timestamp_cote": 1792158090000
     },
     {
       "numPmu": 4,
       "nom": "RUSAIR FAL",
-      "cote_live": 20.0,
+      "cote_live": 17.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792157804000
+      "timestamp_cote": 1792158090000
     },
     {
       "numPmu": 5,
       "nom": "MY LOVE SONG",
-      "cote_live": 26.0,
+      "cote_live": 28.0,
       "cote_reference": 35.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792157804000
+      "timestamp_cote": 1792158090000
     },
     {
       "numPmu": 6,
       "nom": "SAINTE SARAH",
-      "cote_live": 13.0,
+      "cote_live": 12.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792157804000
+      "timestamp_cote": 1792158090000
     },
     {
       "numPmu": 7,
       "nom": "NOVA DU CHENET",
-      "cote_live": 7.3,
+      "cote_live": 8.4,
       "cote_reference": 8.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792157804000
+      "timestamp_cote": 1792158090000
     },
     {
       "numPmu": 8,
       "nom": "PADOVA",
-      "cote_live": 5.9,
+      "cote_live": 5.7,
       "cote_reference": 4.9,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792157804000
+      "timestamp_cote": 1792158090000
     },
     {
       "numPmu": 9,
@@ -86,43 +86,43 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792157804000
+      "timestamp_cote": 1792158090000
     },
     {
       "numPmu": 10,
       "nom": "BLUE DAHLIA",
-      "cote_live": 11.0,
+      "cote_live": 13.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792157804000
+      "timestamp_cote": 1792158090000
     },
     {
       "numPmu": 11,
       "nom": "SAYULITA",
-      "cote_live": 9.7,
+      "cote_live": 8.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792157804000
+      "timestamp_cote": 1792158090000
     },
     {
       "numPmu": 12,
       "nom": "LA ALMADIA",
-      "cote_live": 15.0,
+      "cote_live": 17.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792157804000
+      "timestamp_cote": 1792158090000
     },
     {
       "numPmu": 14,
       "nom": "CHERRY PIE",
-      "cote_live": 8.8,
+      "cote_live": 9.8,
       "cote_reference": 9.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792157804000
+      "timestamp_cote": 1792158090000
     }
   ],
   "hippodrome": "FONTAINEBLEAU",
@@ -163,6 +163,25 @@
         "11": 9.7,
         "12": 15.0,
         "14": 8.8
+      }
+    },
+    {
+      "scraped_at": "2026-10-16T15:41:40.660746+02:00",
+      "minutes_avant_depart": 21.327247033333332,
+      "cotes": {
+        "1": 9.9,
+        "2": 11.0,
+        "3": 19.0,
+        "4": 17.0,
+        "5": 28.0,
+        "6": 12.0,
+        "7": 8.4,
+        "8": 5.7,
+        "9": 14.0,
+        "10": 13.0,
+        "11": 8.0,
+        "12": 17.0,
+        "14": 9.8
       }
     }
   ]
