@@ -4,116 +4,116 @@
   "reunion": 4,
   "heure_depart": 1792157280000,
   "distance": 2200,
-  "scraped_at": "2026-10-16T14:58:21.082605+02:00",
-  "minutes_avant_depart": 30,
+  "scraped_at": "2026-10-16T15:03:00.757137+02:00",
+  "minutes_avant_depart": 25,
   "participants": [
     {
       "numPmu": 1,
       "nom": "BIG VICTOR",
-      "cote_live": 7.9,
+      "cote_live": 7.8,
       "cote_reference": 8.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792154734000
+      "timestamp_cote": 1792155778000
     },
     {
       "numPmu": 2,
       "nom": "GOLD STANDARD",
-      "cote_live": 5.5,
+      "cote_live": 4.3,
       "cote_reference": 5.6,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1792154734000
+      "favoris": true,
+      "timestamp_cote": 1792155778000
     },
     {
       "numPmu": 3,
       "nom": "CHIPRANA",
-      "cote_live": 4.8,
+      "cote_live": 7.1,
       "cote_reference": 5.5,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1792154734000
+      "favoris": false,
+      "timestamp_cote": 1792155778000
     },
     {
       "numPmu": 4,
       "nom": "INDY",
-      "cote_live": 21.0,
+      "cote_live": 15.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792154734000
+      "timestamp_cote": 1792155778000
     },
     {
       "numPmu": 5,
       "nom": "GREY WOLF",
-      "cote_live": 7.2,
+      "cote_live": 6.9,
       "cote_reference": 7.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792154734000
+      "timestamp_cote": 1792155778000
     },
     {
       "numPmu": 7,
       "nom": "LABELLEGNAC",
-      "cote_live": 37.0,
+      "cote_live": 26.0,
       "cote_reference": 40.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792154734000
+      "timestamp_cote": 1792155778000
     },
     {
       "numPmu": 8,
       "nom": "PULP FICTION",
-      "cote_live": 11.0,
+      "cote_live": 16.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792154734000
+      "timestamp_cote": 1792155778000
     },
     {
       "numPmu": 9,
       "nom": "LIKE NO OTHER",
-      "cote_live": 10.0,
+      "cote_live": 12.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792154734000
+      "timestamp_cote": 1792155778000
     },
     {
       "numPmu": 10,
       "nom": "BROMUS",
-      "cote_live": 8.7,
+      "cote_live": 8.9,
       "cote_reference": 7.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792154734000
+      "timestamp_cote": 1792155778000
     },
     {
       "numPmu": 11,
       "nom": "CAPOUCHINE",
-      "cote_live": 35.0,
+      "cote_live": 57.0,
       "cote_reference": 40.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792154734000
+      "timestamp_cote": 1792155778000
     },
     {
       "numPmu": 12,
       "nom": "SAINT PHONIE",
-      "cote_live": 32.0,
+      "cote_live": 18.0,
       "cote_reference": 33.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792154734000
+      "timestamp_cote": 1792155778000
     },
     {
       "numPmu": 13,
       "nom": "BLUE GARRETT",
-      "cote_live": 17.0,
+      "cote_live": 16.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792154734000
+      "timestamp_cote": 1792155778000
     }
   ],
   "hippodrome": "FONTAINEBLEAU",
@@ -134,6 +134,24 @@
         "11": 35.0,
         "12": 32.0,
         "13": 17.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-16T15:03:00.757137+02:00",
+      "minutes_avant_depart": 24.9940531,
+      "cotes": {
+        "1": 7.8,
+        "2": 4.3,
+        "3": 7.1,
+        "4": 15.0,
+        "5": 6.9,
+        "7": 26.0,
+        "8": 16.0,
+        "9": 12.0,
+        "10": 8.9,
+        "11": 57.0,
+        "12": 18.0,
+        "13": 16.0
       }
     }
   ]
