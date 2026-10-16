@@ -4,35 +4,35 @@
   "reunion": 4,
   "heure_depart": 1792157340000,
   "distance": 2200,
-  "scraped_at": "2026-10-16T15:20:21.131384+02:00",
-  "minutes_avant_depart": 9,
+  "scraped_at": "2026-10-16T15:23:00.933388+02:00",
+  "minutes_avant_depart": 6,
   "participants": [
     {
       "numPmu": 1,
       "nom": "BIG VICTOR",
-      "cote_live": 7.8,
+      "cote_live": 8.4,
       "cote_reference": 8.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792156798000
+      "timestamp_cote": 1792156952000
     },
     {
       "numPmu": 2,
       "nom": "GOLD STANDARD",
-      "cote_live": 4.3,
+      "cote_live": 4.0,
       "cote_reference": 5.6,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792156798000
+      "timestamp_cote": 1792156952000
     },
     {
       "numPmu": 3,
       "nom": "CHIPRANA",
-      "cote_live": 6.4,
+      "cote_live": 6.9,
       "cote_reference": 5.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792156798000
+      "timestamp_cote": 1792156952000
     },
     {
       "numPmu": 4,
@@ -41,25 +41,25 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792156798000
+      "timestamp_cote": 1792156952000
     },
     {
       "numPmu": 5,
       "nom": "GREY WOLF",
-      "cote_live": 6.7,
+      "cote_live": 7.5,
       "cote_reference": 7.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792156798000
+      "timestamp_cote": 1792156952000
     },
     {
       "numPmu": 7,
       "nom": "LABELLEGNAC",
-      "cote_live": 37.0,
+      "cote_live": 31.0,
       "cote_reference": 40.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792156798000
+      "timestamp_cote": 1792156952000
     },
     {
       "numPmu": 8,
@@ -68,34 +68,34 @@
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792156798000
+      "timestamp_cote": 1792156952000
     },
     {
       "numPmu": 9,
       "nom": "LIKE NO OTHER",
-      "cote_live": 9.1,
+      "cote_live": 8.5,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792156798000
+      "timestamp_cote": 1792156952000
     },
     {
       "numPmu": 10,
       "nom": "BROMUS",
-      "cote_live": 8.2,
+      "cote_live": 8.6,
       "cote_reference": 7.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792156798000
+      "timestamp_cote": 1792156952000
     },
     {
       "numPmu": 11,
       "nom": "CAPOUCHINE",
-      "cote_live": 55.0,
+      "cote_live": 51.0,
       "cote_reference": 40.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792156798000
+      "timestamp_cote": 1792156952000
     },
     {
       "numPmu": 12,
@@ -104,16 +104,16 @@
       "cote_reference": 33.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792156798000
+      "timestamp_cote": 1792156952000
     },
     {
       "numPmu": 13,
       "nom": "BLUE GARRETT",
-      "cote_live": 17.0,
+      "cote_live": 16.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792156798000
+      "timestamp_cote": 1792156952000
     }
   ],
   "hippodrome": "FONTAINEBLEAU",
@@ -224,6 +224,24 @@
         "11": 55.0,
         "12": 26.0,
         "13": 17.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-16T15:23:00.933388+02:00",
+      "minutes_avant_depart": 5.993981649999999,
+      "cotes": {
+        "1": 8.4,
+        "2": 4.0,
+        "3": 6.9,
+        "4": 18.0,
+        "5": 7.5,
+        "7": 31.0,
+        "8": 18.0,
+        "9": 8.5,
+        "10": 8.6,
+        "11": 51.0,
+        "12": 26.0,
+        "13": 16.0
       }
     }
   ]
