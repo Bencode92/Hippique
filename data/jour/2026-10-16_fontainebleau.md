@@ -2,24 +2,26 @@
 
 9 courses.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+**Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
+La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
+Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classements ci-dessus.
 
 ---
 
 ### 1. PRIX DES BOULEAUX
 
-*13h08 · plat · 1600 m · 8 partants · cotes de l'extraction*
+*13h08 · plat · 1600 m · 8 partants · cotes à T−29:47*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | CAUDRY | – | V.DUPONT | 100/25/349/3980 |
-| 2 | MONARCO | – | E.MUNTWYLER | 181/15/76/16 |
-| 3 | FANZI CHOP | – | J.MOUTARD | 61/70/6/16 |
-| 4 | NORMANDONNA | – | T.ROMAN | 271/199/128/3667 |
-| 5 | DON GERASIMOS | – | G.MEURY | 68/117/3939/1421 |
-| 6 | ZODIACO | – | C.BELMONT | 171/118/256/279 |
-| 7 | SOUTTER | – | L.MABROUK | 326/10/20/1381 |
-| 8 | HONEY PEARL | – | R.MANGIONE | 78/43/253/417 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 8 | HONEY PEARL | 3,6 | 4,54 | -20,8 % | R.MANGIONE | 78/43/253/417 |
+| 6 | ZODIACO | 3,8 | 4,10 | -7,3 % | C.BELMONT | 171/118/256/279 |
+| 1 | CAUDRY | 3,9 | 4,21 | -7,4 % | V.DUPONT | 100/25/349/3980 |
+| 3 | FANZI CHOP | 6,1 | 6,90 | -11,6 % | J.MOUTARD | 61/70/6/16 |
+| 2 | MONARCO | 15 | 21,18 | -29,2 % | E.MUNTWYLER | 181/15/76/16 |
+| 7 | SOUTTER | 15 | 19,75 | -24,0 % | L.MABROUK | 326/10/20/1381 |
+| 4 | NORMANDONNA | 24 | 34,07 | -29,6 % | T.ROMAN | 271/199/128/3667 |
+| 5 | DON GERASIMOS | 62 | 104,92 | -40,9 % | G.MEURY | 68/117/3939/1421 |
 
 ### 2. PRIX DES MYOSOTIS
 
