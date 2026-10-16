@@ -134,24 +134,24 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DU SOUTIEN A LA FORET DE FONTAINEBLEAU
 
-*17h13 · plat · 1200 m · 14 partants · cotes à T−29:56*
+*17h13 · plat · 1200 m · 14 partants · cotes à T−25:56*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 7 | LES TROIS VALLEES | 5,1 | 5,5 | 5,42 | -5,8 % | C.COLLET-VIDAL | 119/180/544/1037 |
-| 2 | HUR CAT | 7 | 7 | 7,64 | -8,4 % | C.DEMURO | 1/108/344/1560 |
-| 4 | HY DREAM | 7,2 | 6,9 | 8,59 | -16,2 % | H.BOUTIN | 14/36/50/357 |
-| 3 | CLEAN BOWLED | 8,9 | 8 | 10,54 | -15,5 % | L.BOISSEAU | 36/287/15/385 |
-| 1 | HOLLYHOCK | 10 | 12 | 12,92 | -22,6 % | F.VALLE SKAR | 35/123/3758/59 |
-| 5 | JASMIN DORE | 11 | 11 | 14,12 | -22,1 % | D.SANTIAGO | 15/319/83/1583 |
-| 8 | LOVELY DREAM | 15 | 15 | 20,34 | -26,3 % | M.JUSTUM | 88/129/102/2654 |
-| 15 | MADDOX | 16 | 16 | 18,82 | -15,0 % | P.CHEYER | 109/485/850/1379 |
-| 6 | AUDELADESETOILES | 18 | 16 | 22,96 | -21,6 % | C.BELMONT | 171/108/1016/84 |
-| 12 | TWO TWO TWO | 18 | 15 | 18,36 | -2,0 % | E.HARDOUIN | 27/396/39/379 |
-| 13 | STRANGER | 18 | 21 | 20,97 | -14,2 % | J.LACROIX | 94/141/56/1531 |
-| 10 | CHUNKA WAKAN | 22 | 24 | 25,32 | -13,1 % | C.GROSBOIS | 25/141/657/– |
-| 11 | DENVER CHOP | 47 | 40 | 59,16 | -20,5 % | P.REMOUE | 37/377/6/769 |
-| 14 | KOREM | 67 | 58 | 99,30 | -32,5 % | C.CARBONI | 105/81/2255/2868 |
+| 4 | HY DREAM | 5,6 | 6,9 | 6,83 | -18,0 % | H.BOUTIN | 14/36/50/357 |
+| 7 | LES TROIS VALLEES | 5,9 | 5,5 | 5,92 | -0,3 % | C.COLLET-VIDAL | 119/180/544/1037 |
+| 2 | HUR CAT | 7,2 | 7 | 7,83 | -8,1 % | C.DEMURO | 1/108/344/1560 |
+| 3 | CLEAN BOWLED | 8,7 | 8 | 10,18 | -14,5 % | L.BOISSEAU | 36/287/15/385 |
+| 1 | HOLLYHOCK | 10 | 12 | 12,82 | -22,0 % | F.VALLE SKAR | 35/123/3758/59 |
+| 5 | JASMIN DORE | 13 | 11 | 17,06 | -23,8 % | D.SANTIAGO | 15/319/83/1583 |
+| 13 | STRANGER | 14 | 21 | 15,54 | -9,9 % | J.LACROIX | 94/141/56/1531 |
+| 8 | LOVELY DREAM | 16 | 15 | 20,79 | -23,0 % | M.JUSTUM | 88/129/102/2654 |
+| 12 | TWO TWO TWO | 18 | 15 | 18,22 | -1,2 % | E.HARDOUIN | 27/396/39/379 |
+| 15 | MADDOX | 18 | 16 | 21,40 | -15,9 % | P.CHEYER | 109/485/850/1379 |
+| 6 | AUDELADESETOILES | 19 | 16 | 23,16 | -18,0 % | C.BELMONT | 171/108/1016/84 |
+| 10 | CHUNKA WAKAN | 27 | 24 | 31,72 | -14,9 % | C.GROSBOIS | 25/141/657/– |
+| 11 | DENVER CHOP | 51 | 40 | 64,15 | -20,5 % | P.REMOUE | 37/377/6/769 |
+| 14 | KOREM | 57 | 58 | 83,01 | -31,3 % | C.CARBONI | 105/81/2255/2868 |
 
 ### 9. PRIX DE LA MALMONTAGNE
 
