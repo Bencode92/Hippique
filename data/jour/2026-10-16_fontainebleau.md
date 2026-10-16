@@ -93,23 +93,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX ARTUS DE MAILLE
 
-*16h03 · plat · 2200 m · 13 partants · cotes à T−29:59*
+*16h03 · plat · 2200 m · 13 partants · cotes à T−25:59*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 8 | PADOVA | 4,8 | 4,3 | 5,40 | -11,2 % | PC.BOUDOT | 8/132/88/141 |
-| 7 | NOVA DU CHENET | 7,6 | 7,9 | 8,76 | -13,2 % | O.ANDIGNE | 81/80/251/146 |
-| 1 | SARENZO | 9,2 | 6,7 | 9,80 | -6,1 % | G.ROTH LE VAILLANT | 130/8/1/2 |
-| 14 | CHERRY PIE | 10 | 11 | 11,28 | -11,4 % | A.POUCHIN | 6/59/953/1906 |
-| 2 | SPRING LAUREL | 11 | 14 | 12,61 | -12,8 % | J.MOUTARD | 61/70/107/160 |
-| 10 | BLUE DAHLIA | 11 | 12 | 12,60 | -12,7 % | R.MANGIONE | 78/34/167/2051 |
-| 9 | EDEN ROC | 13 | 15 | 16,42 | -20,8 % | L.BOISSEAU | 36/526/3127/1709 |
-| 11 | SAYULITA | 13 | 11 | 17,16 | -24,3 % | M.GRANDIN | 3/68/3157/149 |
-| 6 | SAINTE SARAH | 15 | 12 | 18,11 | -17,2 % | C.GROSBOIS | 25/75/75/30 |
-| 3 | LIGHTASS FAL | 16 | 15 | 20,41 | -21,6 % | A.LEMAITRE | 11/231/34/31 |
-| 12 | LA ALMADIA | 17 | 27 | 20,95 | -18,9 % | C.DEMURO | 1/207/333/627 |
-| 4 | RUSAIR FAL | 18 | 19 | 24,52 | -26,6 % | C.LECOEUVRE | 13/57/34/31 |
-| 5 | MY LOVE SONG | 33 | 75 | 44,71 | -26,2 % | P.LE DIGABEL | 106/110/2700/214 |
+| 8 | PADOVA | 5,9 | 4,3 | 6,60 | -10,6 % | PC.BOUDOT | 8/132/88/141 |
+| 7 | NOVA DU CHENET | 7,3 | 7,9 | 8,44 | -13,5 % | O.ANDIGNE | 81/80/251/146 |
+| 14 | CHERRY PIE | 8,8 | 11 | 9,81 | -10,3 % | A.POUCHIN | 6/59/953/1906 |
+| 11 | SAYULITA | 9,7 | 11 | 12,83 | -24,4 % | M.GRANDIN | 3/68/3157/149 |
+| 1 | SARENZO | 10 | 6,7 | 10,89 | -8,2 % | G.ROTH LE VAILLANT | 130/8/1/2 |
+| 2 | SPRING LAUREL | 11 | 14 | 12,73 | -13,6 % | J.MOUTARD | 61/70/107/160 |
+| 10 | BLUE DAHLIA | 11 | 12 | 12,72 | -13,5 % | R.MANGIONE | 78/34/167/2051 |
+| 6 | SAINTE SARAH | 13 | 12 | 15,47 | -16,0 % | C.GROSBOIS | 25/75/75/30 |
+| 9 | EDEN ROC | 14 | 15 | 18,08 | -22,6 % | L.BOISSEAU | 36/526/3127/1709 |
+| 12 | LA ALMADIA | 15 | 27 | 18,28 | -17,9 % | C.DEMURO | 1/207/333/627 |
+| 3 | LIGHTASS FAL | 17 | 15 | 22,11 | -23,1 % | A.LEMAITRE | 11/231/34/31 |
+| 4 | RUSAIR FAL | 20 | 19 | 26,70 | -25,1 % | C.LECOEUVRE | 13/57/34/31 |
+| 5 | MY LOVE SONG | 26 | 75 | 34,47 | -24,6 % | P.LE DIGABEL | 106/110/2700/214 |
 
 ### 7. PRIX DE LA MARE AUX EVEES
 
