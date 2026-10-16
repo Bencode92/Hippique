@@ -1,6 +1,6 @@
 # FONTAINEBLEAU — 16/10/2026
 
-9 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -93,23 +93,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX ARTUS DE MAILLE
 
-*16h03 · plat · 2200 m · 13 partants · cotes de l'extraction*
+*16h03 · plat · 2200 m · 13 partants · cotes à T−29:59*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 8 | PADOVA | 4,3 | 4,82 | -10,7 % | PC.BOUDOT | 8/132/88/141 |
-| 1 | SARENZO | 6,7 | 6,86 | -2,3 % | G.ROTH LE VAILLANT | 130/8/1/2 |
-| 7 | NOVA DU CHENET | 7,9 | 9,22 | -14,3 % | O.ANDIGNE | 81/80/251/146 |
-| 11 | SAYULITA | 11 | 14,84 | -25,9 % | M.GRANDIN | 3/68/3157/149 |
-| 14 | CHERRY PIE | 11 | 12,69 | -13,3 % | A.POUCHIN | 6/59/953/1906 |
-| 6 | SAINTE SARAH | 12 | 14,05 | -14,6 % | C.GROSBOIS | 25/75/75/30 |
-| 10 | BLUE DAHLIA | 12 | 13,42 | -10,6 % | R.MANGIONE | 78/34/167/2051 |
-| 2 | SPRING LAUREL | 14 | 16,82 | -16,8 % | J.MOUTARD | 61/70/107/160 |
-| 3 | LIGHTASS FAL | 15 | 19,06 | -21,3 % | A.LEMAITRE | 11/231/34/31 |
-| 9 | EDEN ROC | 15 | 19,55 | -23,3 % | L.BOISSEAU | 36/526/3127/1709 |
-| 4 | RUSAIR FAL | 19 | 26,28 | -27,7 % | C.LECOEUVRE | 13/57/34/31 |
-| 12 | LA ALMADIA | 27 | 39,36 | -31,4 % | C.DEMURO | 1/207/333/627 |
-| 5 | MY LOVE SONG | 75 | 109,44 | -31,5 % | P.LE DIGABEL | 106/110/2700/214 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 8 | PADOVA | 4,8 | 4,3 | 5,40 | -11,2 % | PC.BOUDOT | 8/132/88/141 |
+| 7 | NOVA DU CHENET | 7,6 | 7,9 | 8,76 | -13,2 % | O.ANDIGNE | 81/80/251/146 |
+| 1 | SARENZO | 9,2 | 6,7 | 9,80 | -6,1 % | G.ROTH LE VAILLANT | 130/8/1/2 |
+| 14 | CHERRY PIE | 10 | 11 | 11,28 | -11,4 % | A.POUCHIN | 6/59/953/1906 |
+| 2 | SPRING LAUREL | 11 | 14 | 12,61 | -12,8 % | J.MOUTARD | 61/70/107/160 |
+| 10 | BLUE DAHLIA | 11 | 12 | 12,60 | -12,7 % | R.MANGIONE | 78/34/167/2051 |
+| 9 | EDEN ROC | 13 | 15 | 16,42 | -20,8 % | L.BOISSEAU | 36/526/3127/1709 |
+| 11 | SAYULITA | 13 | 11 | 17,16 | -24,3 % | M.GRANDIN | 3/68/3157/149 |
+| 6 | SAINTE SARAH | 15 | 12 | 18,11 | -17,2 % | C.GROSBOIS | 25/75/75/30 |
+| 3 | LIGHTASS FAL | 16 | 15 | 20,41 | -21,6 % | A.LEMAITRE | 11/231/34/31 |
+| 12 | LA ALMADIA | 17 | 27 | 20,95 | -18,9 % | C.DEMURO | 1/207/333/627 |
+| 4 | RUSAIR FAL | 18 | 19 | 24,52 | -26,6 % | C.LECOEUVRE | 13/57/34/31 |
+| 5 | MY LOVE SONG | 33 | 75 | 44,71 | -26,2 % | P.LE DIGABEL | 106/110/2700/214 |
 
 ### 7. PRIX DE LA MARE AUX EVEES
 
