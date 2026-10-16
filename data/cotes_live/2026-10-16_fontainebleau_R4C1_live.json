@@ -4,17 +4,17 @@
   "reunion": 4,
   "heure_depart": 1792148880000,
   "distance": 1600,
-  "scraped_at": "2026-10-16T12:38:12.746291+02:00",
-  "minutes_avant_depart": 30,
+  "scraped_at": "2026-10-16T12:42:51.579732+02:00",
+  "minutes_avant_depart": 25,
   "participants": [
     {
       "numPmu": 1,
       "nom": "CAUDRY",
-      "cote_live": 3.9,
+      "cote_live": 4.1,
       "cote_reference": 4.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792146621000
+      "timestamp_cote": 1792147365000
     },
     {
       "numPmu": 2,
@@ -23,34 +23,34 @@
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792146621000
+      "timestamp_cote": 1792147365000
     },
     {
       "numPmu": 3,
       "nom": "FANZI CHOP",
-      "cote_live": 6.1,
+      "cote_live": 6.2,
       "cote_reference": 6.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792146621000
+      "timestamp_cote": 1792147365000
     },
     {
       "numPmu": 4,
       "nom": "NORMANDONNA",
-      "cote_live": 24.0,
+      "cote_live": 26.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792146621000
+      "timestamp_cote": 1792147365000
     },
     {
       "numPmu": 5,
       "nom": "DON GERASIMOS",
-      "cote_live": 62.0,
+      "cote_live": 53.0,
       "cote_reference": 51.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792146621000
+      "timestamp_cote": 1792147365000
     },
     {
       "numPmu": 6,
@@ -59,25 +59,25 @@
       "cote_reference": 3.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792146621000
+      "timestamp_cote": 1792147365000
     },
     {
       "numPmu": 7,
       "nom": "SOUTTER",
-      "cote_live": 15.0,
+      "cote_live": 14.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792146621000
+      "timestamp_cote": 1792147365000
     },
     {
       "numPmu": 8,
       "nom": "HONEY PEARL",
-      "cote_live": 3.6,
+      "cote_live": 3.5,
       "cote_reference": 3.6,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792146621000
+      "timestamp_cote": 1792147365000
     }
   ],
   "hippodrome": "FONTAINEBLEAU",
@@ -94,6 +94,20 @@
         "6": 3.8,
         "7": 15.0,
         "8": 3.6
+      }
+    },
+    {
+      "scraped_at": "2026-10-16T12:42:51.579732+02:00",
+      "minutes_avant_depart": 25.150212099999997,
+      "cotes": {
+        "1": 4.1,
+        "2": 15.0,
+        "3": 6.2,
+        "4": 26.0,
+        "5": 53.0,
+        "6": 3.8,
+        "7": 14.0,
+        "8": 3.5
       }
     }
   ]
