@@ -1,6 +1,6 @@
 # FONTAINEBLEAU — 16/10/2026
 
-9 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 6 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -155,21 +155,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 9. PRIX DE LA MALMONTAGNE
 
-*17h48 · plat · 1200 m · 14 partants · cotes de l'extraction*
+*17h48 · plat · 1200 m · 14 partants · cotes à T−29:36*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 14 | RED GUST | 4,2 | 4,95 | -15,1 % | M.GUYON | 4/161/832/158 |
-| 5 | EAGLE GATE | 7 | 7,59 | -7,8 % | H.BOUTIN | 14/15/312/16 |
-| 11 | JESS LIVERMORE | 7,2 | 6,95 | **+3,6 %** | C.LECOEUVRE | 13/57/13/4 |
-| 10 | YAKFEEK | 8,3 | 8,49 | -2,2 % | C.DEMURO | 1/377/3104/769 |
-| 1 | BACCHILIDE | 12 | 15,53 | -22,7 % | M.GRANDIN | 3/87/460/4483 |
-| 2 | FUCHSIA | 12 | 14,20 | -15,5 % | F.VALLE SKAR | 35/249/3122/452 |
-| 9 | IRISHKAMAYA | 12 | 14,60 | -17,8 % | T.BACHELOT | 16/239/1106/2521 |
-| 8 | IMPITOYABLE | 15 | 19,29 | -22,2 % | A.LEMAITRE | 11/123/1/59 |
-| 4 | GALLIUS | 17 | 23,38 | -27,3 % | E.HARDOUIN | 27/15/572/273 |
-| 12 | KING RETURN | 29 | 46,49 | -37,6 % | R.MANGIONE | 78/252/41/468 |
-| 13 | ALBERTINELLI | 30 | 42,88 | -30,0 % | D.SANTIAGO | 15/319/42/1583 |
-| 3 | CLAIM THE STARS | 38 | 55,88 | -32,0 % | C.PACAUT | 48/501/3210/1483 |
-| 7 | SWEET AS | 44 | 54,67 | -19,5 % | M.PIEN | 150/15/15/36 |
-| 15 | CULCOR | 54 | 74,66 | -27,7 % | P.CHEYER | 109/377/3080/769 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 14 | RED GUST | 3,8 | 4,2 | 4,32 | -12,1 % | M.GUYON | 4/161/832/158 |
+| 5 | EAGLE GATE | 8,8 | 7 | 9,52 | -7,5 % | H.BOUTIN | 14/15/312/16 |
+| 11 | JESS LIVERMORE | 8,8 | 7,2 | 9,55 | -7,9 % | C.LECOEUVRE | 13/57/13/4 |
+| 8 | IMPITOYABLE | 10 | 15 | 12,59 | -20,6 % | A.LEMAITRE | 11/123/1/59 |
+| 1 | BACCHILIDE | 11 | 12 | 14,09 | -21,9 % | M.GRANDIN | 3/87/460/4483 |
+| 9 | IRISHKAMAYA | 11 | 12 | 13,25 | -17,0 % | T.BACHELOT | 16/239/1106/2521 |
+| 10 | YAKFEEK | 11 | 8,3 | 11,81 | -6,9 % | C.DEMURO | 1/377/3104/769 |
+| 2 | FUCHSIA | 13 | 12 | 15,67 | -17,1 % | F.VALLE SKAR | 35/249/3122/452 |
+| 4 | GALLIUS | 20 | 17 | 27,10 | -26,2 % | E.HARDOUIN | 27/15/572/273 |
+| 13 | ALBERTINELLI | 24 | 30 | 33,43 | -28,2 % | D.SANTIAGO | 15/319/42/1583 |
+| 7 | SWEET AS | 25 | 44 | 29,23 | -14,5 % | M.PIEN | 150/15/15/36 |
+| 12 | KING RETURN | 25 | 29 | 35,96 | -30,5 % | R.MANGIONE | 78/252/41/468 |
+| 3 | CLAIM THE STARS | 37 | 38 | 54,52 | -32,1 % | C.PACAUT | 48/501/3210/1483 |
+| 15 | CULCOR | 57 | 54 | 79,50 | -28,3 % | P.CHEYER | 109/377/3080/769 |
