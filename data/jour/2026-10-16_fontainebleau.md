@@ -155,21 +155,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 9. PRIX DE LA MALMONTAGNE
 
-*17h48 · plat · 1200 m · 14 partants · cotes à T−24:56*
+*17h48 · plat · 1200 m · 14 partants · cotes à T−20:56*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 14 | RED GUST | 4,4 | 4,2 | 5,23 | -15,8 % | M.GUYON | 4/161/832/158 |
-| 11 | JESS LIVERMORE | 6,8 | 7,2 | 6,55 | **+3,9 %** | C.LECOEUVRE | 13/57/13/4 |
-| 5 | EAGLE GATE | 10 | 7 | 11,03 | -9,3 % | H.BOUTIN | 14/15/312/16 |
-| 10 | YAKFEEK | 10 | 8,3 | 10,57 | -5,4 % | C.DEMURO | 1/377/3104/769 |
-| 1 | BACCHILIDE | 11 | 12 | 14,08 | -21,9 % | M.GRANDIN | 3/87/460/4483 |
-| 8 | IMPITOYABLE | 11 | 15 | 14,08 | -21,9 % | A.LEMAITRE | 11/123/1/59 |
-| 9 | IRISHKAMAYA | 12 | 12 | 14,67 | -18,2 % | T.BACHELOT | 16/239/1106/2521 |
-| 2 | FUCHSIA | 14 | 12 | 17,08 | -18,0 % | F.VALLE SKAR | 35/249/3122/452 |
-| 12 | KING RETURN | 16 | 29 | 21,43 | -25,3 % | R.MANGIONE | 78/252/41/468 |
-| 13 | ALBERTINELLI | 19 | 30 | 26,73 | -28,9 % | D.SANTIAGO | 15/319/42/1583 |
-| 4 | GALLIUS | 20 | 17 | 27,08 | -26,1 % | E.HARDOUIN | 27/15/572/273 |
-| 7 | SWEET AS | 29 | 44 | 34,55 | -16,1 % | M.PIEN | 150/15/15/36 |
-| 3 | CLAIM THE STARS | 36 | 38 | 52,84 | -31,9 % | C.PACAUT | 48/501/3210/1483 |
-| 15 | CULCOR | 58 | 54 | 80,93 | -28,3 % | P.CHEYER | 109/377/3080/769 |
+| 14 | RED GUST | 3,8 | 4,2 | 4,35 | -12,6 % | M.GUYON | 4/161/832/158 |
+| 11 | JESS LIVERMORE | 7,8 | 7,2 | 8,36 | -6,7 % | C.LECOEUVRE | 13/57/13/4 |
+| 5 | EAGLE GATE | 10 | 7 | 11,10 | -9,9 % | H.BOUTIN | 14/15/312/16 |
+| 8 | IMPITOYABLE | 11 | 15 | 14,17 | -22,4 % | A.LEMAITRE | 11/123/1/59 |
+| 10 | YAKFEEK | 11 | 8,3 | 11,88 | -7,4 % | C.DEMURO | 1/377/3104/769 |
+| 1 | BACCHILIDE | 12 | 12 | 15,70 | -23,6 % | M.GRANDIN | 3/87/460/4483 |
+| 2 | FUCHSIA | 14 | 12 | 17,19 | -18,6 % | F.VALLE SKAR | 35/249/3122/452 |
+| 9 | IRISHKAMAYA | 14 | 12 | 17,68 | -20,8 % | T.BACHELOT | 16/239/1106/2521 |
+| 12 | KING RETURN | 14 | 29 | 18,44 | -24,1 % | R.MANGIONE | 78/252/41/468 |
+| 13 | ALBERTINELLI | 15 | 30 | 20,41 | -26,5 % | D.SANTIAGO | 15/319/42/1583 |
+| 4 | GALLIUS | 22 | 17 | 30,42 | -27,7 % | E.HARDOUIN | 27/15/572/273 |
+| 7 | SWEET AS | 28 | 44 | 33,41 | -16,2 % | M.PIEN | 150/15/15/36 |
+| 3 | CLAIM THE STARS | 40 | 38 | 59,75 | -33,1 % | C.PACAUT | 48/501/3210/1483 |
+| 15 | CULCOR | 55 | 54 | 76,90 | -28,5 % | P.CHEYER | 109/377/3080/769 |
