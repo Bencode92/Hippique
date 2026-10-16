@@ -4,17 +4,17 @@
   "reunion": 4,
   "heure_depart": 1792159380000,
   "distance": 2200,
-  "scraped_at": "2026-10-16T15:41:40.660746+02:00",
-  "minutes_avant_depart": 21,
+  "scraped_at": "2026-10-16T15:45:40.610814+02:00",
+  "minutes_avant_depart": 17,
   "participants": [
     {
       "numPmu": 1,
       "nom": "SARENZO",
-      "cote_live": 9.9,
+      "cote_live": 10.0,
       "cote_reference": 9.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792158090000
+      "timestamp_cote": 1792158332000
     },
     {
       "numPmu": 2,
@@ -23,7 +23,7 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792158090000
+      "timestamp_cote": 1792158332000
     },
     {
       "numPmu": 3,
@@ -32,25 +32,25 @@
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792158090000
+      "timestamp_cote": 1792158332000
     },
     {
       "numPmu": 4,
       "nom": "RUSAIR FAL",
-      "cote_live": 17.0,
+      "cote_live": 18.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792158090000
+      "timestamp_cote": 1792158332000
     },
     {
       "numPmu": 5,
       "nom": "MY LOVE SONG",
-      "cote_live": 28.0,
+      "cote_live": 31.0,
       "cote_reference": 35.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792158090000
+      "timestamp_cote": 1792158332000
     },
     {
       "numPmu": 6,
@@ -59,25 +59,25 @@
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792158090000
+      "timestamp_cote": 1792158332000
     },
     {
       "numPmu": 7,
       "nom": "NOVA DU CHENET",
-      "cote_live": 8.4,
+      "cote_live": 9.1,
       "cote_reference": 8.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792158090000
+      "timestamp_cote": 1792158332000
     },
     {
       "numPmu": 8,
       "nom": "PADOVA",
-      "cote_live": 5.7,
+      "cote_live": 5.0,
       "cote_reference": 4.9,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792158090000
+      "timestamp_cote": 1792158332000
     },
     {
       "numPmu": 9,
@@ -86,7 +86,7 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792158090000
+      "timestamp_cote": 1792158332000
     },
     {
       "numPmu": 10,
@@ -95,34 +95,34 @@
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792158090000
+      "timestamp_cote": 1792158332000
     },
     {
       "numPmu": 11,
       "nom": "SAYULITA",
-      "cote_live": 8.0,
+      "cote_live": 8.4,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792158090000
+      "timestamp_cote": 1792158332000
     },
     {
       "numPmu": 12,
       "nom": "LA ALMADIA",
-      "cote_live": 17.0,
+      "cote_live": 16.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792158090000
+      "timestamp_cote": 1792158332000
     },
     {
       "numPmu": 14,
       "nom": "CHERRY PIE",
-      "cote_live": 9.8,
+      "cote_live": 10.0,
       "cote_reference": 9.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792158090000
+      "timestamp_cote": 1792158332000
     }
   ],
   "hippodrome": "FONTAINEBLEAU",
@@ -182,6 +182,25 @@
         "11": 8.0,
         "12": 17.0,
         "14": 9.8
+      }
+    },
+    {
+      "scraped_at": "2026-10-16T15:45:40.610814+02:00",
+      "minutes_avant_depart": 17.327231716666667,
+      "cotes": {
+        "1": 10.0,
+        "2": 11.0,
+        "3": 19.0,
+        "4": 18.0,
+        "5": 31.0,
+        "6": 12.0,
+        "7": 9.1,
+        "8": 5.0,
+        "9": 14.0,
+        "10": 13.0,
+        "11": 8.4,
+        "12": 16.0,
+        "14": 10.0
       }
     }
   ]
