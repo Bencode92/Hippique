@@ -1,6 +1,6 @@
 # FONTAINEBLEAU — 16/10/2026
 
-9 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -134,24 +134,24 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DU SOUTIEN A LA FORET DE FONTAINEBLEAU
 
-*17h13 · plat · 1200 m · 14 partants · cotes de l'extraction*
+*17h13 · plat · 1200 m · 14 partants · cotes à T−29:56*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 7 | LES TROIS VALLEES | 5,5 | 5,89 | -6,6 % | C.COLLET-VIDAL | 119/180/544/1037 |
-| 4 | HY DREAM | 6,9 | 8,18 | -15,6 % | H.BOUTIN | 14/36/50/357 |
-| 2 | HUR CAT | 7 | 7,65 | -8,4 % | C.DEMURO | 1/108/344/1560 |
-| 3 | CLEAN BOWLED | 8 | 9,30 | -14,0 % | L.BOISSEAU | 36/287/15/385 |
-| 5 | JASMIN DORE | 11 | 14,12 | -22,1 % | D.SANTIAGO | 15/319/83/1583 |
-| 1 | HOLLYHOCK | 12 | 16,03 | -25,1 % | F.VALLE SKAR | 35/123/3758/59 |
-| 8 | LOVELY DREAM | 15 | 20,34 | -26,3 % | M.JUSTUM | 88/129/102/2654 |
-| 12 | TWO TWO TWO | 15 | 14,89 | **+0,7 %** | E.HARDOUIN | 27/396/39/379 |
-| 6 | AUDELADESETOILES | 16 | 20,02 | -20,1 % | C.BELMONT | 171/108/1016/84 |
-| 15 | MADDOX | 16 | 18,82 | -15,0 % | P.CHEYER | 109/485/850/1379 |
-| 13 | STRANGER | 21 | 25,04 | -16,1 % | J.LACROIX | 94/141/56/1531 |
-| 10 | CHUNKA WAKAN | 24 | 27,97 | -14,2 % | C.GROSBOIS | 25/141/657/– |
-| 11 | DENVER CHOP | 40 | 49,59 | -19,3 % | P.REMOUE | 37/377/6/769 |
-| 14 | KOREM | 58 | 85,20 | -31,9 % | C.CARBONI | 105/81/2255/2868 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 7 | LES TROIS VALLEES | 5,1 | 5,5 | 5,42 | -5,8 % | C.COLLET-VIDAL | 119/180/544/1037 |
+| 2 | HUR CAT | 7 | 7 | 7,64 | -8,4 % | C.DEMURO | 1/108/344/1560 |
+| 4 | HY DREAM | 7,2 | 6,9 | 8,59 | -16,2 % | H.BOUTIN | 14/36/50/357 |
+| 3 | CLEAN BOWLED | 8,9 | 8 | 10,54 | -15,5 % | L.BOISSEAU | 36/287/15/385 |
+| 1 | HOLLYHOCK | 10 | 12 | 12,92 | -22,6 % | F.VALLE SKAR | 35/123/3758/59 |
+| 5 | JASMIN DORE | 11 | 11 | 14,12 | -22,1 % | D.SANTIAGO | 15/319/83/1583 |
+| 8 | LOVELY DREAM | 15 | 15 | 20,34 | -26,3 % | M.JUSTUM | 88/129/102/2654 |
+| 15 | MADDOX | 16 | 16 | 18,82 | -15,0 % | P.CHEYER | 109/485/850/1379 |
+| 6 | AUDELADESETOILES | 18 | 16 | 22,96 | -21,6 % | C.BELMONT | 171/108/1016/84 |
+| 12 | TWO TWO TWO | 18 | 15 | 18,36 | -2,0 % | E.HARDOUIN | 27/396/39/379 |
+| 13 | STRANGER | 18 | 21 | 20,97 | -14,2 % | J.LACROIX | 94/141/56/1531 |
+| 10 | CHUNKA WAKAN | 22 | 24 | 25,32 | -13,1 % | C.GROSBOIS | 25/141/657/– |
+| 11 | DENVER CHOP | 47 | 40 | 59,16 | -20,5 % | P.REMOUE | 37/377/6/769 |
+| 14 | KOREM | 67 | 58 | 99,30 | -32,5 % | C.CARBONI | 105/81/2255/2868 |
 
 ### 9. PRIX DE LA MALMONTAGNE
 
