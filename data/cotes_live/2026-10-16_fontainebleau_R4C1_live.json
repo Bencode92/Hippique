@@ -4,8 +4,8 @@
   "reunion": 4,
   "heure_depart": 1792149000000,
   "distance": 1600,
-  "scraped_at": "2026-10-16T12:51:32.054323+02:00",
-  "minutes_avant_depart": 18,
+  "scraped_at": "2026-10-16T12:56:12.034203+02:00",
+  "minutes_avant_depart": 14,
   "participants": [
     {
       "numPmu": 1,
@@ -14,7 +14,7 @@
       "cote_reference": 4.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792147870000
+      "timestamp_cote": 1792148156000
     },
     {
       "numPmu": 2,
@@ -23,52 +23,52 @@
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792147870000
+      "timestamp_cote": 1792148156000
     },
     {
       "numPmu": 3,
       "nom": "FANZI CHOP",
-      "cote_live": 6.7,
+      "cote_live": 6.6,
       "cote_reference": 6.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792147870000
+      "timestamp_cote": 1792148156000
     },
     {
       "numPmu": 4,
       "nom": "NORMANDONNA",
-      "cote_live": 30.0,
+      "cote_live": 28.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792147870000
+      "timestamp_cote": 1792148156000
     },
     {
       "numPmu": 5,
       "nom": "DON GERASIMOS",
-      "cote_live": 58.0,
+      "cote_live": 52.0,
       "cote_reference": 51.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792147870000
+      "timestamp_cote": 1792148156000
     },
     {
       "numPmu": 6,
       "nom": "ZODIACO",
-      "cote_live": 4.0,
+      "cote_live": 4.2,
       "cote_reference": 3.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792147870000
+      "timestamp_cote": 1792148156000
     },
     {
       "numPmu": 7,
       "nom": "SOUTTER",
-      "cote_live": 15.0,
+      "cote_live": 12.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792147870000
+      "timestamp_cote": 1792148156000
     },
     {
       "numPmu": 8,
@@ -77,7 +77,7 @@
       "cote_reference": 3.6,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792147870000
+      "timestamp_cote": 1792148156000
     }
   ],
   "hippodrome": "FONTAINEBLEAU",
@@ -135,6 +135,20 @@
         "5": 58.0,
         "6": 4.0,
         "7": 15.0,
+        "8": 3.5
+      }
+    },
+    {
+      "scraped_at": "2026-10-16T12:56:12.034203+02:00",
+      "minutes_avant_depart": 13.816834866666666,
+      "cotes": {
+        "1": 4.0,
+        "2": 10.0,
+        "3": 6.6,
+        "4": 28.0,
+        "5": 52.0,
+        "6": 4.2,
+        "7": 12.0,
         "8": 3.5
       }
     }

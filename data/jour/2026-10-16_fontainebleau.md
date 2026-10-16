@@ -10,18 +10,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 1. PRIX DES BOULEAUX
 
-*13h08 · plat · 1600 m · 8 partants · cotes à T−18:28*
+*13h08 · plat · 1600 m · 8 partants · cotes à T−13:48*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 8 | HONEY PEARL | 3,5 | 4,41 | -20,6 % | R.MANGIONE | 78/43/253/417 |
-| 1 | CAUDRY | 4 | 4,33 | -7,6 % | V.DUPONT | 100/25/349/3980 |
-| 6 | ZODIACO | 4 | 4,33 | -7,6 % | C.BELMONT | 171/118/256/279 |
-| 3 | FANZI CHOP | 6,7 | 7,69 | -12,8 % | J.MOUTARD | 61/70/6/16 |
-| 2 | MONARCO | 10 | 13,12 | -23,8 % | E.MUNTWYLER | 181/15/76/16 |
-| 7 | SOUTTER | 15 | 19,74 | -24,0 % | L.MABROUK | 326/10/20/1381 |
-| 4 | NORMANDONNA | 30 | 43,92 | -31,7 % | T.ROMAN | 271/199/128/3667 |
-| 5 | DON GERASIMOS | 58 | 97,69 | -40,6 % | G.MEURY | 68/117/3939/1421 |
+| 8 | HONEY PEARL | 3,5 | 4,45 | -21,4 % | R.MANGIONE | 78/43/253/417 |
+| 1 | CAUDRY | 4 | 4,37 | -8,5 % | V.DUPONT | 100/25/349/3980 |
+| 6 | ZODIACO | 4,2 | 4,61 | -8,8 % | C.BELMONT | 171/118/256/279 |
+| 3 | FANZI CHOP | 6,6 | 7,64 | -13,6 % | J.MOUTARD | 61/70/6/16 |
+| 2 | MONARCO | 10 | 13,28 | -24,7 % | E.MUNTWYLER | 181/15/76/16 |
+| 7 | SOUTTER | 12 | 15,37 | -21,9 % | L.MABROUK | 326/10/20/1381 |
+| 4 | NORMANDONNA | 28 | 41,08 | -31,8 % | T.ROMAN | 271/199/128/3667 |
+| 5 | DON GERASIMOS | 52 | 87,77 | -40,8 % | G.MEURY | 68/117/3939/1421 |
 
 ### 2. PRIX DES MYOSOTIS
 
