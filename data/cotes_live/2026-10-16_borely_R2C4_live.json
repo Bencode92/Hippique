@@ -4,89 +4,89 @@
   "reunion": 2,
   "heure_depart": 1792147980000,
   "distance": 3000,
-  "scraped_at": "2026-10-16T12:42:51.285294+02:00",
-  "minutes_avant_depart": 10,
+  "scraped_at": "2026-10-16T12:48:12.234877+02:00",
+  "minutes_avant_depart": 5,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MYSTERE TURGOT",
-      "cote_live": 54.0,
+      "cote_live": 55.0,
       "cote_reference": 91.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792147349000
+      "timestamp_cote": 1792147679000
     },
     {
       "numPmu": 2,
       "nom": "MIGUEL DU CHERISAY",
-      "cote_live": 7.3,
+      "cote_live": 7.6,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792147349000
+      "timestamp_cote": 1792147679000
     },
     {
       "numPmu": 3,
       "nom": "MISS DE LA COTE",
-      "cote_live": 6.0,
+      "cote_live": 7.2,
       "cote_reference": 4.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792147349000
+      "timestamp_cote": 1792147679000
     },
     {
       "numPmu": 4,
       "nom": "MONEY AIMEF",
-      "cote_live": 5.5,
+      "cote_live": 5.4,
       "cote_reference": 4.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792147349000
+      "timestamp_cote": 1792147679000
     },
     {
       "numPmu": 5,
       "nom": "MYSTIC BOND",
-      "cote_live": 5.8,
+      "cote_live": 5.4,
       "cote_reference": 6.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792147349000
+      "timestamp_cote": 1792147679000
     },
     {
       "numPmu": 6,
       "nom": "MYSTERE DE L'AVRE",
-      "cote_live": 41.0,
+      "cote_live": 43.0,
       "cote_reference": 48.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792147349000
+      "timestamp_cote": 1792147679000
     },
     {
       "numPmu": 7,
       "nom": "MADE IN CARLESS",
-      "cote_live": 98.0,
+      "cote_live": 85.0,
       "cote_reference": 97.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792147349000
+      "timestamp_cote": 1792147679000
     },
     {
       "numPmu": 8,
       "nom": "MISTRAL LOMIG",
-      "cote_live": 31.0,
+      "cote_live": 16.0,
       "cote_reference": 41.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792147349000
+      "timestamp_cote": 1792147679000
     },
     {
       "numPmu": 9,
       "nom": "MAASAI",
-      "cote_live": 39.0,
+      "cote_live": 35.0,
       "cote_reference": 50.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792147349000
+      "timestamp_cote": 1792147679000
     },
     {
       "numPmu": 10,
@@ -95,25 +95,25 @@
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792147349000
+      "timestamp_cote": 1792147679000
     },
     {
       "numPmu": 11,
       "nom": "MIDNIGHT EXPRESS",
-      "cote_live": 3.4,
+      "cote_live": 3.6,
       "cote_reference": 3.0,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792147349000
+      "timestamp_cote": 1792147679000
     },
     {
       "numPmu": 12,
       "nom": "MATIGNON",
-      "cote_live": 56.0,
+      "cote_live": 57.0,
       "cote_reference": 91.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792147349000
+      "timestamp_cote": 1792147679000
     }
   ],
   "hippodrome": "BORELY",
@@ -152,6 +152,60 @@
         "10": 16.0,
         "11": 3.4,
         "12": 56.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-16T12:46:51.548722+02:00",
+      "minutes_avant_depart": 6.1501989,
+      "cotes": {
+        "1": 60.0,
+        "2": 6.8,
+        "3": 7.0,
+        "4": 6.0,
+        "5": 6.1,
+        "6": 47.0,
+        "7": 101.0,
+        "8": 19.0,
+        "9": 42.0,
+        "10": 16.0,
+        "11": 3.1,
+        "12": 54.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-16T12:47:31.480502+02:00",
+      "minutes_avant_depart": 5.483530166666667,
+      "cotes": {
+        "1": 62.0,
+        "2": 7.3,
+        "3": 7.1,
+        "4": 5.5,
+        "5": 5.8,
+        "6": 49.0,
+        "7": 97.0,
+        "8": 16.0,
+        "9": 37.0,
+        "10": 16.0,
+        "11": 3.4,
+        "12": 55.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-16T12:48:12.234877+02:00",
+      "minutes_avant_depart": 4.806777133333333,
+      "cotes": {
+        "1": 55.0,
+        "2": 7.6,
+        "3": 7.2,
+        "4": 5.4,
+        "5": 5.4,
+        "6": 43.0,
+        "7": 85.0,
+        "8": 16.0,
+        "9": 35.0,
+        "10": 16.0,
+        "11": 3.6,
+        "12": 57.0
       }
     }
   ]
