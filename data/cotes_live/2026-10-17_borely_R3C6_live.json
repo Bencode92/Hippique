@@ -4,62 +4,62 @@
   "reunion": 3,
   "heure_depart": 1792239300000,
   "distance": 2000,
-  "scraped_at": "2026-10-17T13:45:11.829425+02:00",
-  "minutes_avant_depart": 30,
+  "scraped_at": "2026-10-17T13:49:12.251821+02:00",
+  "minutes_avant_depart": 26,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MERANO",
-      "cote_live": 6.6,
+      "cote_live": 5.8,
       "cote_reference": 5.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792236619000
+      "timestamp_cote": 1792237739000
     },
     {
       "numPmu": 2,
       "nom": "HORIZON DORE",
-      "cote_live": 1.6,
+      "cote_live": 1.8,
       "cote_reference": 1.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792236619000
+      "timestamp_cote": 1792237739000
     },
     {
       "numPmu": 3,
       "nom": "BEVAN",
-      "cote_live": 7.9,
+      "cote_live": 7.7,
       "cote_reference": 7.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792236619000
+      "timestamp_cote": 1792237739000
     },
     {
       "numPmu": 4,
       "nom": "ALSABA",
-      "cote_live": 13.0,
+      "cote_live": 12.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792236619000
+      "timestamp_cote": 1792237739000
     },
     {
       "numPmu": 5,
       "nom": "SAINT MARTIN",
-      "cote_live": 11.0,
+      "cote_live": 10.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792236619000
+      "timestamp_cote": 1792237739000
     },
     {
       "numPmu": 6,
       "nom": "TESTIFY",
-      "cote_live": 11.0,
+      "cote_live": 7.3,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792236619000
+      "timestamp_cote": 1792237739000
     }
   ],
   "hippodrome": "BORELY",
@@ -74,6 +74,18 @@
         "4": 13.0,
         "5": 11.0,
         "6": 11.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T13:49:12.251821+02:00",
+      "minutes_avant_depart": 25.810529116666665,
+      "cotes": {
+        "1": 5.8,
+        "2": 1.8,
+        "3": 7.7,
+        "4": 12.0,
+        "5": 10.0,
+        "6": 7.3
       }
     }
   ]
