@@ -1,0 +1,90 @@
+{
+  "course": "PRIX ORCADA",
+  "numero": 2,
+  "reunion": 1,
+  "heure_depart": 1792240380000,
+  "distance": 4400,
+  "scraped_at": "2026-10-17T14:03:26.092204+02:00",
+  "minutes_avant_depart": 30,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "METRONOMIQUE",
+      "cote_live": 1.4,
+      "cote_reference": 1.4,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1792238438000
+    },
+    {
+      "numPmu": 2,
+      "nom": "MATMATAH",
+      "cote_live": 31.0,
+      "cote_reference": 30.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792238438000
+    },
+    {
+      "numPmu": 3,
+      "nom": "FRENCH LOVER",
+      "cote_live": 7.5,
+      "cote_reference": 7.6,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792238438000
+    },
+    {
+      "numPmu": 4,
+      "nom": "MARINELLO",
+      "cote_live": 20.0,
+      "cote_reference": 21.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792238438000
+    },
+    {
+      "numPmu": 5,
+      "nom": "MACIMO CONTI",
+      "cote_live": 69.0,
+      "cote_reference": 70.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792238438000
+    },
+    {
+      "numPmu": 6,
+      "nom": "VICTRIX DU MESNIL",
+      "cote_live": 8.1,
+      "cote_reference": 7.5,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792238438000
+    },
+    {
+      "numPmu": 7,
+      "nom": "MELISSE DU MATHAN",
+      "cote_live": 10.0,
+      "cote_reference": 10.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792238438000
+    }
+  ],
+  "hippodrome": "AUTEUIL",
+  "releves": [
+    {
+      "scraped_at": "2026-10-17T14:03:26.092204+02:00",
+      "minutes_avant_depart": 29.572705933333335,
+      "cotes": {
+        "1": 1.4,
+        "2": 31.0,
+        "3": 7.5,
+        "4": 20.0,
+        "5": 69.0,
+        "6": 8.1,
+        "7": 10.0
+      }
+    }
+  ]
+}
