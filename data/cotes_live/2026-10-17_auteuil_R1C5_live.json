@@ -4,8 +4,8 @@
   "reunion": 1,
   "heure_depart": 1792247700000,
   "distance": 3900,
-  "scraped_at": "2026-10-17T16:31:05.735715+02:00",
-  "minutes_avant_depart": 4,
+  "scraped_at": "2026-10-17T16:33:45.486837+02:00",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
@@ -14,7 +14,7 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792247463000
+      "timestamp_cote": 1792247615000
     },
     {
       "numPmu": 2,
@@ -23,7 +23,7 @@
       "cote_reference": 2.4,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792247463000
+      "timestamp_cote": 1792247615000
     },
     {
       "numPmu": 3,
@@ -32,16 +32,16 @@
       "cote_reference": 8.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792247463000
+      "timestamp_cote": 1792247615000
     },
     {
       "numPmu": 4,
       "nom": "PINOT BLANC",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 7.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792247463000
+      "timestamp_cote": 1792247615000
     },
     {
       "numPmu": 5,
@@ -50,25 +50,25 @@
       "cote_reference": 3.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792247463000
+      "timestamp_cote": 1792247615000
     },
     {
       "numPmu": 6,
       "nom": "MYSOKO STAR",
-      "cote_live": 19.0,
+      "cote_live": 18.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792247463000
+      "timestamp_cote": 1792247615000
     },
     {
       "numPmu": 7,
       "nom": "JUST HAPPY",
-      "cote_live": 42.0,
+      "cote_live": 43.0,
       "cote_reference": 32.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792247463000
+      "timestamp_cote": 1792247615000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -201,6 +201,58 @@
         "5": 3.3,
         "6": 19.0,
         "7": 42.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T16:31:45.552894+02:00",
+      "minutes_avant_depart": 3.244007483333333,
+      "cotes": {
+        "1": 12.0,
+        "2": 1.9,
+        "3": 9.6,
+        "4": 13.0,
+        "5": 3.2,
+        "6": 19.0,
+        "7": 41.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T16:32:25.587275+02:00",
+      "minutes_avant_depart": 2.5773390666666667,
+      "cotes": {
+        "1": 11.0,
+        "2": 2.0,
+        "3": 9.9,
+        "4": 11.0,
+        "5": 3.2,
+        "6": 19.0,
+        "7": 40.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T16:33:05.511242+02:00",
+      "minutes_avant_depart": 1.9106696333333335,
+      "cotes": {
+        "1": 12.0,
+        "2": 1.9,
+        "3": 10.0,
+        "4": 13.0,
+        "5": 3.3,
+        "6": 16.0,
+        "7": 42.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T16:33:45.486837+02:00",
+      "minutes_avant_depart": 1.24400085,
+      "cotes": {
+        "1": 13.0,
+        "2": 1.9,
+        "3": 9.9,
+        "4": 14.0,
+        "5": 3.3,
+        "6": 18.0,
+        "7": 43.0
       }
     }
   ]
