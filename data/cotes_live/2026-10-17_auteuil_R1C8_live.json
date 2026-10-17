@@ -4,35 +4,35 @@
   "reunion": 1,
   "heure_depart": 1792254600000,
   "distance": 4400,
-  "scraped_at": "2026-10-17T18:14:52.852747+02:00",
-  "minutes_avant_depart": 15,
+  "scraped_at": "2026-10-17T18:19:32.511068+02:00",
+  "minutes_avant_depart": 10,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ITIEPY",
-      "cote_live": 9.2,
+      "cote_live": 8.1,
       "cote_reference": 9.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792253682000
+      "timestamp_cote": 1792253946000
     },
     {
       "numPmu": 2,
       "nom": "ILTONE",
-      "cote_live": 4.5,
+      "cote_live": 4.9,
       "cote_reference": 5.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792253682000
+      "timestamp_cote": 1792253946000
     },
     {
       "numPmu": 3,
       "nom": "KARAM LE ROUGE",
-      "cote_live": 27.0,
+      "cote_live": 28.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792253682000
+      "timestamp_cote": 1792253946000
     },
     {
       "numPmu": 4,
@@ -41,52 +41,52 @@
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792253682000
+      "timestamp_cote": 1792253946000
     },
     {
       "numPmu": 5,
       "nom": "JEU DE ROLE",
-      "cote_live": 15.0,
+      "cote_live": 10.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792253682000
+      "timestamp_cote": 1792253946000
     },
     {
       "numPmu": 6,
       "nom": "KATOVICE",
-      "cote_live": 8.0,
+      "cote_live": 8.9,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792253682000
+      "timestamp_cote": 1792253946000
     },
     {
       "numPmu": 7,
       "nom": "DUNSTALL RAMBLER",
-      "cote_live": 9.4,
+      "cote_live": 10.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792253682000
+      "timestamp_cote": 1792253946000
     },
     {
       "numPmu": 8,
       "nom": "LORD BRETT",
-      "cote_live": 2.9,
+      "cote_live": 3.0,
       "cote_reference": 2.0,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792253682000
+      "timestamp_cote": 1792253946000
     },
     {
       "numPmu": 9,
       "nom": "LESTRU",
-      "cote_live": 18.0,
+      "cote_live": 16.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792253682000
+      "timestamp_cote": 1792253946000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -164,6 +164,21 @@
         "7": 9.4,
         "8": 2.9,
         "9": 18.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T18:19:32.511068+02:00",
+      "minutes_avant_depart": 10.462218283333334,
+      "cotes": {
+        "1": 8.1,
+        "2": 4.9,
+        "3": 28.0,
+        "4": 13.0,
+        "5": 10.0,
+        "6": 8.9,
+        "7": 10.0,
+        "8": 3.0,
+        "9": 16.0
       }
     }
   ]
