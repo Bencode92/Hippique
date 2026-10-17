@@ -4,62 +4,62 @@
   "reunion": 3,
   "heure_depart": 1792235160000,
   "distance": 1700,
-  "scraped_at": "2026-10-17T13:01:51.839938+02:00",
-  "minutes_avant_depart": 4,
+  "scraped_at": "2026-10-17T13:04:31.580109+02:00",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "WITCHWAY",
-      "cote_live": 6.1,
+      "cote_live": 7.2,
       "cote_reference": 3.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792234895000
+      "timestamp_cote": 1792235069000
     },
     {
       "numPmu": 2,
       "nom": "LITERARY SONG",
-      "cote_live": 7.9,
+      "cote_live": 8.7,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792234895000
+      "timestamp_cote": 1792235069000
     },
     {
       "numPmu": 3,
       "nom": "PLEASETOMEETYOU",
-      "cote_live": 2.2,
+      "cote_live": 2.1,
       "cote_reference": 2.2,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792234895000
+      "timestamp_cote": 1792235069000
     },
     {
       "numPmu": 4,
       "nom": "BLACK ARMOR",
-      "cote_live": 5.1,
+      "cote_live": 5.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792234895000
+      "timestamp_cote": 1792235069000
     },
     {
       "numPmu": 5,
       "nom": "TIMIDE",
-      "cote_live": 10.0,
+      "cote_live": 11.0,
       "cote_reference": 6.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792234895000
+      "timestamp_cote": 1792235069000
     },
     {
       "numPmu": 6,
       "nom": "HODAYA",
-      "cote_live": 8.2,
+      "cote_live": 8.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792234895000
+      "timestamp_cote": 1792235069000
     }
   ],
   "hippodrome": "BORELY",
@@ -170,6 +170,54 @@
         "4": 5.1,
         "5": 10.0,
         "6": 8.2
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T13:02:31.705297+02:00",
+      "minutes_avant_depart": 3.4773584166666667,
+      "cotes": {
+        "1": 6.1,
+        "2": 8.3,
+        "3": 2.2,
+        "4": 5.2,
+        "5": 10.0,
+        "6": 8.8
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T13:03:12.048572+02:00",
+      "minutes_avant_depart": 2.8036595666666666,
+      "cotes": {
+        "1": 6.4,
+        "2": 8.1,
+        "3": 2.2,
+        "4": 4.8,
+        "5": 10.0,
+        "6": 9.1
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T13:03:51.903409+02:00",
+      "minutes_avant_depart": 2.1440199833333335,
+      "cotes": {
+        "1": 6.7,
+        "2": 8.3,
+        "3": 2.2,
+        "4": 4.7,
+        "5": 10.0,
+        "6": 8.6
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T13:04:31.580109+02:00",
+      "minutes_avant_depart": 1.4773514666666665,
+      "cotes": {
+        "1": 7.2,
+        "2": 8.7,
+        "3": 2.1,
+        "4": 5.0,
+        "5": 11.0,
+        "6": 8.0
       }
     }
   ]
