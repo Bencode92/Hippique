@@ -4,107 +4,107 @@
   "reunion": 1,
   "heure_depart": 1792238280000,
   "distance": 3600,
-  "scraped_at": "2026-10-17T13:28:31.600328+02:00",
-  "minutes_avant_depart": 29,
+  "scraped_at": "2026-10-17T13:32:31.614813+02:00",
+  "minutes_avant_depart": 25,
   "participants": [
     {
       "numPmu": 1,
       "nom": "NUMEROBIS",
-      "cote_live": 12.0,
+      "cote_live": 13.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792236488000
+      "timestamp_cote": 1792236730000
     },
     {
       "numPmu": 2,
       "nom": "NELSON DU SEUIL",
-      "cote_live": 7.9,
+      "cote_live": 8.6,
       "cote_reference": 7.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792236488000
+      "timestamp_cote": 1792236730000
     },
     {
       "numPmu": 3,
       "nom": "NOUVEAUMONDE ALLEN",
-      "cote_live": 11.0,
+      "cote_live": 12.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792236488000
+      "timestamp_cote": 1792236730000
     },
     {
       "numPmu": 4,
       "nom": "NOIRCI",
-      "cote_live": 5.0,
+      "cote_live": 4.1,
       "cote_reference": 5.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792236488000
+      "timestamp_cote": 1792236730000
     },
     {
       "numPmu": 5,
       "nom": "NEUF FOIS SUR DIX",
-      "cote_live": 6.4,
+      "cote_live": 6.5,
       "cote_reference": 6.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792236488000
+      "timestamp_cote": 1792236730000
     },
     {
       "numPmu": 6,
       "nom": "NERODY",
-      "cote_live": 23.0,
+      "cote_live": 26.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792236488000
+      "timestamp_cote": 1792236730000
     },
     {
       "numPmu": 7,
       "nom": "NEMES DES BRUYERES",
-      "cote_live": 35.0,
+      "cote_live": 36.0,
       "cote_reference": 34.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792236488000
+      "timestamp_cote": 1792236730000
     },
     {
       "numPmu": 8,
       "nom": "NOBLE RAFFLES",
-      "cote_live": 30.0,
+      "cote_live": 34.0,
       "cote_reference": 29.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792236488000
+      "timestamp_cote": 1792236730000
     },
     {
       "numPmu": 9,
       "nom": "NATURAL CLASS",
-      "cote_live": 7.4,
+      "cote_live": 8.1,
       "cote_reference": 7.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792236488000
+      "timestamp_cote": 1792236730000
     },
     {
       "numPmu": 10,
       "nom": "NAGURSKI",
-      "cote_live": 6.4,
+      "cote_live": 5.7,
       "cote_reference": 6.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792236488000
+      "timestamp_cote": 1792236730000
     },
     {
       "numPmu": 11,
       "nom": "NICO TEAM",
-      "cote_live": 11.0,
+      "cote_live": 12.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792236488000
+      "timestamp_cote": 1792236730000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -124,6 +124,23 @@
         "9": 7.4,
         "10": 6.4,
         "11": 11.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T13:32:31.614813+02:00",
+      "minutes_avant_depart": 25.477254583333334,
+      "cotes": {
+        "1": 13.0,
+        "2": 8.6,
+        "3": 12.0,
+        "4": 4.1,
+        "5": 6.5,
+        "6": 26.0,
+        "7": 36.0,
+        "8": 34.0,
+        "9": 8.1,
+        "10": 5.7,
+        "11": 12.0
       }
     }
   ]
