@@ -4,8 +4,8 @@
   "reunion": 1,
   "heure_depart": 1792240380000,
   "distance": 4400,
-  "scraped_at": "2026-10-17T14:08:06.014625+02:00",
-  "minutes_avant_depart": 25,
+  "scraped_at": "2026-10-17T14:12:06.277459+02:00",
+  "minutes_avant_depart": 21,
   "participants": [
     {
       "numPmu": 1,
@@ -14,25 +14,25 @@
       "cote_reference": 1.4,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792238882000
+      "timestamp_cote": 1792239102000
     },
     {
       "numPmu": 2,
       "nom": "MATMATAH",
-      "cote_live": 29.0,
+      "cote_live": 30.0,
       "cote_reference": 30.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792238882000
+      "timestamp_cote": 1792239102000
     },
     {
       "numPmu": 3,
       "nom": "FRENCH LOVER",
-      "cote_live": 7.5,
+      "cote_live": 7.7,
       "cote_reference": 7.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792238882000
+      "timestamp_cote": 1792239102000
     },
     {
       "numPmu": 4,
@@ -41,16 +41,16 @@
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792238882000
+      "timestamp_cote": 1792239102000
     },
     {
       "numPmu": 5,
       "nom": "MACIMO CONTI",
-      "cote_live": 63.0,
+      "cote_live": 61.0,
       "cote_reference": 70.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792238882000
+      "timestamp_cote": 1792239102000
     },
     {
       "numPmu": 6,
@@ -59,16 +59,16 @@
       "cote_reference": 7.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792238882000
+      "timestamp_cote": 1792239102000
     },
     {
       "numPmu": 7,
       "nom": "MELISSE DU MATHAN",
-      "cote_live": 10.0,
+      "cote_live": 11.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792238882000
+      "timestamp_cote": 1792239102000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -97,6 +97,19 @@
         "5": 63.0,
         "6": 6.8,
         "7": 10.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T14:12:06.277459+02:00",
+      "minutes_avant_depart": 20.899157816666666,
+      "cotes": {
+        "1": 1.4,
+        "2": 30.0,
+        "3": 7.7,
+        "4": 21.0,
+        "5": 61.0,
+        "6": 6.8,
+        "7": 11.0
       }
     }
   ]
