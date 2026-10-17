@@ -4,71 +4,71 @@
   "reunion": 1,
   "heure_depart": 1792240380000,
   "distance": 4400,
-  "scraped_at": "2026-10-17T14:24:46.021929+02:00",
-  "minutes_avant_depart": 8,
+  "scraped_at": "2026-10-17T14:29:25.842551+02:00",
+  "minutes_avant_depart": 4,
   "participants": [
     {
       "numPmu": 1,
       "nom": "METRONOMIQUE",
-      "cote_live": 1.4,
+      "cote_live": 1.3,
       "cote_reference": 1.4,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792239872000
+      "timestamp_cote": 1792240158000
     },
     {
       "numPmu": 2,
       "nom": "MATMATAH",
-      "cote_live": 26.0,
+      "cote_live": 27.0,
       "cote_reference": 30.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792239872000
+      "timestamp_cote": 1792240158000
     },
     {
       "numPmu": 3,
       "nom": "FRENCH LOVER",
-      "cote_live": 7.1,
+      "cote_live": 8.5,
       "cote_reference": 7.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792239872000
+      "timestamp_cote": 1792240158000
     },
     {
       "numPmu": 4,
       "nom": "MARINELLO",
-      "cote_live": 20.0,
+      "cote_live": 29.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792239872000
+      "timestamp_cote": 1792240158000
     },
     {
       "numPmu": 5,
       "nom": "MACIMO CONTI",
-      "cote_live": 56.0,
+      "cote_live": 63.0,
       "cote_reference": 70.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792239872000
+      "timestamp_cote": 1792240158000
     },
     {
       "numPmu": 6,
       "nom": "VICTRIX DU MESNIL",
-      "cote_live": 7.1,
+      "cote_live": 8.4,
       "cote_reference": 7.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792239872000
+      "timestamp_cote": 1792240158000
     },
     {
       "numPmu": 7,
       "nom": "MELISSE DU MATHAN",
-      "cote_live": 13.0,
+      "cote_live": 15.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792239872000
+      "timestamp_cote": 1792240158000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -149,6 +149,58 @@
         "5": 56.0,
         "6": 7.1,
         "7": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T14:27:26.037329+02:00",
+      "minutes_avant_depart": 5.5726262,
+      "cotes": {
+        "1": 1.4,
+        "2": 22.0,
+        "3": 6.9,
+        "4": 22.0,
+        "5": 64.0,
+        "6": 7.1,
+        "7": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T14:28:05.718342+02:00",
+      "minutes_avant_depart": 4.9059581833333334,
+      "cotes": {
+        "1": 1.3,
+        "2": 25.0,
+        "3": 7.9,
+        "4": 26.0,
+        "5": 64.0,
+        "6": 8.2,
+        "7": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T14:28:46.528950+02:00",
+      "minutes_avant_depart": 4.230502016666667,
+      "cotes": {
+        "1": 1.3,
+        "2": 27.0,
+        "3": 8.7,
+        "4": 29.0,
+        "5": 65.0,
+        "6": 9.2,
+        "7": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T14:29:25.842551+02:00",
+      "minutes_avant_depart": 3.5726209,
+      "cotes": {
+        "1": 1.3,
+        "2": 27.0,
+        "3": 8.5,
+        "4": 29.0,
+        "5": 63.0,
+        "6": 8.4,
+        "7": 15.0
       }
     }
   ]
