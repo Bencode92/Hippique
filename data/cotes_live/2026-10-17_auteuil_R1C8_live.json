@@ -4,89 +4,89 @@
   "reunion": 1,
   "heure_depart": 1792254600000,
   "distance": 4400,
-  "scraped_at": "2026-10-17T18:28:12.683398+02:00",
-  "minutes_avant_depart": 2,
+  "scraped_at": "2026-10-17T18:30:52.417865+02:00",
+  "minutes_avant_depart": -1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ITIEPY",
-      "cote_live": 8.9,
+      "cote_live": 10.0,
       "cote_reference": 9.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792254482000
+      "timestamp_cote": 1792254642000
     },
     {
       "numPmu": 2,
       "nom": "ILTONE",
-      "cote_live": 4.6,
+      "cote_live": 4.9,
       "cote_reference": 5.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792254482000
+      "timestamp_cote": 1792254642000
     },
     {
       "numPmu": 3,
       "nom": "KARAM LE ROUGE",
-      "cote_live": 21.0,
+      "cote_live": 17.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792254482000
+      "timestamp_cote": 1792254642000
     },
     {
       "numPmu": 4,
       "nom": "LINGOT DE MEE",
-      "cote_live": 14.0,
+      "cote_live": 15.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792254482000
+      "timestamp_cote": 1792254642000
     },
     {
       "numPmu": 5,
       "nom": "JEU DE ROLE",
-      "cote_live": 11.0,
+      "cote_live": 14.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792254482000
+      "timestamp_cote": 1792254642000
     },
     {
       "numPmu": 6,
       "nom": "KATOVICE",
-      "cote_live": 7.9,
+      "cote_live": 8.1,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792254482000
+      "timestamp_cote": 1792254642000
     },
     {
       "numPmu": 7,
       "nom": "DUNSTALL RAMBLER",
-      "cote_live": 13.0,
+      "cote_live": 10.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792254482000
+      "timestamp_cote": 1792254642000
     },
     {
       "numPmu": 8,
       "nom": "LORD BRETT",
-      "cote_live": 2.9,
+      "cote_live": 2.6,
       "cote_reference": 2.0,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792254482000
+      "timestamp_cote": 1792254642000
     },
     {
       "numPmu": 9,
       "nom": "LESTRU",
-      "cote_live": 17.0,
+      "cote_live": 22.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792254482000
+      "timestamp_cote": 1792254642000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -299,6 +299,66 @@
         "7": 13.0,
         "8": 2.9,
         "9": 17.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T18:28:52.418136+02:00",
+      "minutes_avant_depart": 1.1288543666666666,
+      "cotes": {
+        "1": 8.9,
+        "2": 4.7,
+        "3": 22.0,
+        "4": 14.0,
+        "5": 12.0,
+        "6": 8.4,
+        "7": 13.0,
+        "8": 2.7,
+        "9": 18.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T18:29:32.659418+02:00",
+      "minutes_avant_depart": 0.4621852166666667,
+      "cotes": {
+        "1": 9.0,
+        "2": 4.7,
+        "3": 20.0,
+        "4": 14.0,
+        "5": 12.0,
+        "6": 7.8,
+        "7": 11.0,
+        "8": 2.7,
+        "9": 19.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T18:30:12.444239+02:00",
+      "minutes_avant_depart": -0.20448386666666665,
+      "cotes": {
+        "1": 10.0,
+        "2": 4.8,
+        "3": 19.0,
+        "4": 15.0,
+        "5": 13.0,
+        "6": 8.5,
+        "7": 11.0,
+        "8": 2.5,
+        "9": 22.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T18:30:52.417865+02:00",
+      "minutes_avant_depart": -0.8711524833333333,
+      "cotes": {
+        "1": 10.0,
+        "2": 4.9,
+        "3": 17.0,
+        "4": 15.0,
+        "5": 14.0,
+        "6": 8.1,
+        "7": 10.0,
+        "8": 2.6,
+        "9": 22.0
       }
     }
   ]
