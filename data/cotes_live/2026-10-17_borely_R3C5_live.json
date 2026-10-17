@@ -4,35 +4,35 @@
   "reunion": 3,
   "heure_depart": 1792237200000,
   "distance": 1800,
-  "scraped_at": "2026-10-17T13:41:51.425213+02:00",
-  "minutes_avant_depart": -2,
+  "scraped_at": "2026-10-17T13:44:31.583431+02:00",
+  "minutes_avant_depart": -5,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ARION",
-      "cote_live": 66.0,
+      "cote_live": 58.0,
       "cote_reference": 28.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237298000
+      "timestamp_cote": 1792237330000
     },
     {
       "numPmu": 2,
       "nom": "KINI",
-      "cote_live": 9.2,
+      "cote_live": 9.1,
       "cote_reference": 5.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237298000
+      "timestamp_cote": 1792237330000
     },
     {
       "numPmu": 3,
       "nom": "ROMANUS PONTIFEX",
-      "cote_live": 6.8,
+      "cote_live": 6.9,
       "cote_reference": 6.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237298000
+      "timestamp_cote": 1792237330000
     },
     {
       "numPmu": 4,
@@ -41,16 +41,16 @@
       "cote_reference": 5.2,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792237298000
+      "timestamp_cote": 1792237330000
     },
     {
       "numPmu": 5,
       "nom": "GOLDY MAN",
-      "cote_live": 75.0,
+      "cote_live": 70.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237298000
+      "timestamp_cote": 1792237330000
     },
     {
       "numPmu": 6,
@@ -59,16 +59,16 @@
       "cote_reference": 5.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237298000
+      "timestamp_cote": 1792237330000
     },
     {
       "numPmu": 7,
       "nom": "TROPHY WINNER",
-      "cote_live": 5.2,
+      "cote_live": 5.3,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237298000
+      "timestamp_cote": 1792237330000
     },
     {
       "numPmu": 8,
@@ -77,25 +77,25 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237298000
+      "timestamp_cote": 1792237330000
     },
     {
       "numPmu": 9,
       "nom": "OUD ILAM",
-      "cote_live": 44.0,
+      "cote_live": 46.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237298000
+      "timestamp_cote": 1792237330000
     },
     {
       "numPmu": 10,
       "nom": "NOUVELLE ZELANDE",
-      "cote_live": 17.0,
+      "cote_live": 15.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237298000
+      "timestamp_cote": 1792237330000
     }
   ],
   "hippodrome": "BORELY",
@@ -386,6 +386,70 @@
         "8": 11.0,
         "9": 44.0,
         "10": 17.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T13:42:31.635480+02:00",
+      "minutes_avant_depart": -2.5227795666666664,
+      "cotes": {
+        "1": 58.0,
+        "2": 9.1,
+        "3": 6.9,
+        "4": 3.1,
+        "5": 70.0,
+        "6": 5.7,
+        "7": 5.3,
+        "8": 11.0,
+        "9": 46.0,
+        "10": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T13:43:12.456454+02:00",
+      "minutes_avant_depart": -3.2019962333333334,
+      "cotes": {
+        "1": 58.0,
+        "2": 9.1,
+        "3": 6.9,
+        "4": 3.1,
+        "5": 70.0,
+        "6": 5.7,
+        "7": 5.3,
+        "8": 11.0,
+        "9": 46.0,
+        "10": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T13:43:51.728068+02:00",
+      "minutes_avant_depart": -3.8561178333333337,
+      "cotes": {
+        "1": 58.0,
+        "2": 9.1,
+        "3": 6.9,
+        "4": 3.1,
+        "5": 70.0,
+        "6": 5.7,
+        "7": 5.3,
+        "8": 11.0,
+        "9": 46.0,
+        "10": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T13:44:31.583431+02:00",
+      "minutes_avant_depart": -4.52278675,
+      "cotes": {
+        "1": 58.0,
+        "2": 9.1,
+        "3": 6.9,
+        "4": 3.1,
+        "5": 70.0,
+        "6": 5.7,
+        "7": 5.3,
+        "8": 11.0,
+        "9": 46.0,
+        "10": 15.0
       }
     }
   ]
