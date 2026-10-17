@@ -4,8 +4,8 @@
   "reunion": 1,
   "heure_depart": 1792240380000,
   "distance": 4400,
-  "scraped_at": "2026-10-17T14:20:45.900960+02:00",
-  "minutes_avant_depart": 12,
+  "scraped_at": "2026-10-17T14:24:46.021929+02:00",
+  "minutes_avant_depart": 8,
   "participants": [
     {
       "numPmu": 1,
@@ -14,52 +14,52 @@
       "cote_reference": 1.4,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792239630000
+      "timestamp_cote": 1792239872000
     },
     {
       "numPmu": 2,
       "nom": "MATMATAH",
-      "cote_live": 28.0,
+      "cote_live": 26.0,
       "cote_reference": 30.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792239630000
+      "timestamp_cote": 1792239872000
     },
     {
       "numPmu": 3,
       "nom": "FRENCH LOVER",
-      "cote_live": 7.6,
+      "cote_live": 7.1,
       "cote_reference": 7.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792239630000
+      "timestamp_cote": 1792239872000
     },
     {
       "numPmu": 4,
       "nom": "MARINELLO",
-      "cote_live": 17.0,
+      "cote_live": 20.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792239630000
+      "timestamp_cote": 1792239872000
     },
     {
       "numPmu": 5,
       "nom": "MACIMO CONTI",
-      "cote_live": 57.0,
+      "cote_live": 56.0,
       "cote_reference": 70.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792239630000
+      "timestamp_cote": 1792239872000
     },
     {
       "numPmu": 6,
       "nom": "VICTRIX DU MESNIL",
-      "cote_live": 7.3,
+      "cote_live": 7.1,
       "cote_reference": 7.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792239630000
+      "timestamp_cote": 1792239872000
     },
     {
       "numPmu": 7,
@@ -68,7 +68,7 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792239630000
+      "timestamp_cote": 1792239872000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -135,6 +135,19 @@
         "4": 17.0,
         "5": 57.0,
         "6": 7.3,
+        "7": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T14:24:46.021929+02:00",
+      "minutes_avant_depart": 8.239302766666666,
+      "cotes": {
+        "1": 1.4,
+        "2": 26.0,
+        "3": 7.1,
+        "4": 20.0,
+        "5": 56.0,
+        "6": 7.1,
         "7": 13.0
       }
     }
