@@ -4,107 +4,107 @@
   "reunion": 1,
   "heure_depart": 1792238340000,
   "distance": 3600,
-  "scraped_at": "2026-10-17T13:49:12.017219+02:00",
-  "minutes_avant_depart": 10,
+  "scraped_at": "2026-10-17T13:57:25.727277+02:00",
+  "minutes_avant_depart": 2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "NUMEROBIS",
-      "cote_live": 12.0,
+      "cote_live": 13.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237739000
+      "timestamp_cote": 1792238242000
     },
     {
       "numPmu": 2,
       "nom": "NELSON DU SEUIL",
-      "cote_live": 9.8,
+      "cote_live": 8.7,
       "cote_reference": 7.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237739000
+      "timestamp_cote": 1792238242000
     },
     {
       "numPmu": 3,
       "nom": "NOUVEAUMONDE ALLEN",
-      "cote_live": 14.0,
+      "cote_live": 13.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237739000
+      "timestamp_cote": 1792238242000
     },
     {
       "numPmu": 4,
       "nom": "NOIRCI",
-      "cote_live": 3.2,
+      "cote_live": 3.7,
       "cote_reference": 5.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792237739000
+      "timestamp_cote": 1792238242000
     },
     {
       "numPmu": 5,
       "nom": "NEUF FOIS SUR DIX",
-      "cote_live": 6.4,
+      "cote_live": 6.8,
       "cote_reference": 6.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237739000
+      "timestamp_cote": 1792238242000
     },
     {
       "numPmu": 6,
       "nom": "NERODY",
-      "cote_live": 25.0,
+      "cote_live": 37.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237739000
+      "timestamp_cote": 1792238242000
     },
     {
       "numPmu": 7,
       "nom": "NEMES DES BRUYERES",
-      "cote_live": 34.0,
+      "cote_live": 51.0,
       "cote_reference": 34.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237739000
+      "timestamp_cote": 1792238242000
     },
     {
       "numPmu": 8,
       "nom": "NOBLE RAFFLES",
-      "cote_live": 36.0,
+      "cote_live": 39.0,
       "cote_reference": 29.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237739000
+      "timestamp_cote": 1792238242000
     },
     {
       "numPmu": 9,
       "nom": "NATURAL CLASS",
-      "cote_live": 11.0,
+      "cote_live": 10.0,
       "cote_reference": 7.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237739000
+      "timestamp_cote": 1792238242000
     },
     {
       "numPmu": 10,
       "nom": "NAGURSKI",
-      "cote_live": 5.7,
+      "cote_live": 3.9,
       "cote_reference": 6.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237739000
+      "timestamp_cote": 1792238242000
     },
     {
       "numPmu": 11,
       "nom": "NICO TEAM",
-      "cote_live": 15.0,
+      "cote_live": 23.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237739000
+      "timestamp_cote": 1792238242000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -209,6 +209,74 @@
         "9": 11.0,
         "10": 5.7,
         "11": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T13:55:26.619860+02:00",
+      "minutes_avant_depart": 3.5606447833333332,
+      "cotes": {
+        "1": 11.0,
+        "2": 7.7,
+        "3": 16.0,
+        "4": 3.4,
+        "5": 5.9,
+        "6": 28.0,
+        "7": 39.0,
+        "8": 36.0,
+        "9": 12.0,
+        "10": 5.7,
+        "11": 18.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T13:56:05.696656+02:00",
+      "minutes_avant_depart": 2.9060672833333334,
+      "cotes": {
+        "1": 11.0,
+        "2": 7.8,
+        "3": 17.0,
+        "4": 3.2,
+        "5": 6.2,
+        "6": 31.0,
+        "7": 43.0,
+        "8": 35.0,
+        "9": 11.0,
+        "10": 5.6,
+        "11": 19.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T13:56:45.877982+02:00",
+      "minutes_avant_depart": 2.2393980833333336,
+      "cotes": {
+        "1": 11.0,
+        "2": 7.9,
+        "3": 15.0,
+        "4": 3.4,
+        "5": 6.0,
+        "6": 33.0,
+        "7": 45.0,
+        "8": 38.0,
+        "9": 10.0,
+        "10": 5.5,
+        "11": 21.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T13:57:25.727277+02:00",
+      "minutes_avant_depart": 1.5727291,
+      "cotes": {
+        "1": 13.0,
+        "2": 8.7,
+        "3": 13.0,
+        "4": 3.7,
+        "5": 6.8,
+        "6": 37.0,
+        "7": 51.0,
+        "8": 39.0,
+        "9": 10.0,
+        "10": 3.9,
+        "11": 23.0
       }
     }
   ]

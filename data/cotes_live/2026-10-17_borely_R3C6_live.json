@@ -4,8 +4,8 @@
   "reunion": 3,
   "heure_depart": 1792239300000,
   "distance": 2000,
-  "scraped_at": "2026-10-17T13:49:12.251821+02:00",
-  "minutes_avant_depart": 26,
+  "scraped_at": "2026-10-17T13:55:26.832465+02:00",
+  "minutes_avant_depart": 20,
   "participants": [
     {
       "numPmu": 1,
@@ -14,52 +14,52 @@
       "cote_reference": 5.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237739000
+      "timestamp_cote": 1792238113000
     },
     {
       "numPmu": 2,
       "nom": "HORIZON DORE",
-      "cote_live": 1.8,
+      "cote_live": 1.9,
       "cote_reference": 1.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792237739000
+      "timestamp_cote": 1792238113000
     },
     {
       "numPmu": 3,
       "nom": "BEVAN",
-      "cote_live": 7.7,
+      "cote_live": 8.3,
       "cote_reference": 7.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237739000
+      "timestamp_cote": 1792238113000
     },
     {
       "numPmu": 4,
       "nom": "ALSABA",
-      "cote_live": 12.0,
+      "cote_live": 8.6,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237739000
+      "timestamp_cote": 1792238113000
     },
     {
       "numPmu": 5,
       "nom": "SAINT MARTIN",
-      "cote_live": 10.0,
+      "cote_live": 11.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237739000
+      "timestamp_cote": 1792238113000
     },
     {
       "numPmu": 6,
       "nom": "TESTIFY",
-      "cote_live": 7.3,
+      "cote_live": 7.4,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792237739000
+      "timestamp_cote": 1792238113000
     }
   ],
   "hippodrome": "BORELY",
@@ -86,6 +86,18 @@
         "4": 12.0,
         "5": 10.0,
         "6": 7.3
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T13:55:26.832465+02:00",
+      "minutes_avant_depart": 19.56064478333333,
+      "cotes": {
+        "1": 5.8,
+        "2": 1.9,
+        "3": 8.3,
+        "4": 8.6,
+        "5": 11.0,
+        "6": 7.4
       }
     }
   ]
