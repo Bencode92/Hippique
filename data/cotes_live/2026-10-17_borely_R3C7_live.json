@@ -4,62 +4,62 @@
   "reunion": 3,
   "heure_depart": 1792241400000,
   "distance": 2600,
-  "scraped_at": "2026-10-17T14:48:05.711399+02:00",
-  "minutes_avant_depart": 2,
+  "scraped_at": "2026-10-17T14:49:25.906028+02:00",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "LAGOONE CHOPE",
-      "cote_live": 5.4,
+      "cote_live": 5.9,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792241273000
+      "timestamp_cote": 1792241353000
     },
     {
       "numPmu": 2,
       "nom": "SINGEL MALT",
-      "cote_live": 4.4,
+      "cote_live": 3.8,
       "cote_reference": 7.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792241273000
+      "timestamp_cote": 1792241353000
     },
     {
       "numPmu": 3,
       "nom": "SYLVER SAMBA",
-      "cote_live": 15.0,
+      "cote_live": 10.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792241273000
+      "timestamp_cote": 1792241353000
     },
     {
       "numPmu": 4,
       "nom": "MADGIC'M",
-      "cote_live": 13.0,
+      "cote_live": 11.0,
       "cote_reference": 7.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792241273000
+      "timestamp_cote": 1792241353000
     },
     {
       "numPmu": 5,
       "nom": "HASHTAG JOA",
-      "cote_live": 9.6,
+      "cote_live": 8.7,
       "cote_reference": 9.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792241273000
+      "timestamp_cote": 1792241353000
     },
     {
       "numPmu": 6,
       "nom": "QUEEN BAY",
-      "cote_live": 34.0,
+      "cote_live": 40.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792241273000
+      "timestamp_cote": 1792241353000
     },
     {
       "numPmu": 7,
@@ -68,34 +68,34 @@
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792241273000
+      "timestamp_cote": 1792241353000
     },
     {
       "numPmu": 8,
       "nom": "GOOD QUESTION",
-      "cote_live": 12.0,
+      "cote_live": 14.0,
       "cote_reference": 8.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792241273000
+      "timestamp_cote": 1792241353000
     },
     {
       "numPmu": 9,
       "nom": "VINO",
-      "cote_live": 6.2,
+      "cote_live": 7.4,
       "cote_reference": 3.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792241273000
+      "timestamp_cote": 1792241353000
     },
     {
       "numPmu": 10,
       "nom": "LONDON WAY",
-      "cote_live": 5.2,
+      "cote_live": 6.2,
       "cote_reference": 9.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792241273000
+      "timestamp_cote": 1792241353000
     }
   ],
   "hippodrome": "BORELY",
@@ -306,6 +306,38 @@
         "8": 12.0,
         "9": 6.2,
         "10": 5.2
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T14:48:46.445117+02:00",
+      "minutes_avant_depart": 1.2297751000000001,
+      "cotes": {
+        "1": 6.1,
+        "2": 3.6,
+        "3": 16.0,
+        "4": 11.0,
+        "5": 8.5,
+        "6": 39.0,
+        "7": 37.0,
+        "8": 14.0,
+        "9": 6.8,
+        "10": 6.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T14:49:25.906028+02:00",
+      "minutes_avant_depart": 0.5725533333333334,
+      "cotes": {
+        "1": 5.9,
+        "2": 3.8,
+        "3": 10.0,
+        "4": 11.0,
+        "5": 8.7,
+        "6": 40.0,
+        "7": 36.0,
+        "8": 14.0,
+        "9": 7.4,
+        "10": 6.2
       }
     }
   ]
