@@ -4,8 +4,8 @@
   "reunion": 1,
   "heure_depart": 1792254600000,
   "distance": 4400,
-  "scraped_at": "2026-10-17T18:19:32.511068+02:00",
-  "minutes_avant_depart": 10,
+  "scraped_at": "2026-10-17T18:25:32.404485+02:00",
+  "minutes_avant_depart": 4,
   "participants": [
     {
       "numPmu": 1,
@@ -14,34 +14,34 @@
       "cote_reference": 9.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792253946000
+      "timestamp_cote": 1792254320000
     },
     {
       "numPmu": 2,
       "nom": "ILTONE",
-      "cote_live": 4.9,
+      "cote_live": 4.4,
       "cote_reference": 5.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792253946000
+      "timestamp_cote": 1792254320000
     },
     {
       "numPmu": 3,
       "nom": "KARAM LE ROUGE",
-      "cote_live": 28.0,
+      "cote_live": 21.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792253946000
+      "timestamp_cote": 1792254320000
     },
     {
       "numPmu": 4,
       "nom": "LINGOT DE MEE",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792253946000
+      "timestamp_cote": 1792254320000
     },
     {
       "numPmu": 5,
@@ -50,25 +50,25 @@
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792253946000
+      "timestamp_cote": 1792254320000
     },
     {
       "numPmu": 6,
       "nom": "KATOVICE",
-      "cote_live": 8.9,
+      "cote_live": 9.1,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792253946000
+      "timestamp_cote": 1792254320000
     },
     {
       "numPmu": 7,
       "nom": "DUNSTALL RAMBLER",
-      "cote_live": 10.0,
+      "cote_live": 11.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792253946000
+      "timestamp_cote": 1792254320000
     },
     {
       "numPmu": 8,
@@ -77,7 +77,7 @@
       "cote_reference": 2.0,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792253946000
+      "timestamp_cote": 1792254320000
     },
     {
       "numPmu": 9,
@@ -86,7 +86,7 @@
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792253946000
+      "timestamp_cote": 1792254320000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -177,6 +177,66 @@
         "5": 10.0,
         "6": 8.9,
         "7": 10.0,
+        "8": 3.0,
+        "9": 16.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T18:23:32.455743+02:00",
+      "minutes_avant_depart": 6.462204883333333,
+      "cotes": {
+        "1": 7.9,
+        "2": 4.6,
+        "3": 28.0,
+        "4": 13.0,
+        "5": 9.7,
+        "6": 8.9,
+        "7": 11.0,
+        "8": 3.2,
+        "9": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T18:24:12.460817+02:00",
+      "minutes_avant_depart": 5.795536216666666,
+      "cotes": {
+        "1": 8.0,
+        "2": 4.5,
+        "3": 26.0,
+        "4": 14.0,
+        "5": 10.0,
+        "6": 8.9,
+        "7": 11.0,
+        "8": 3.1,
+        "9": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T18:24:52.688104+02:00",
+      "minutes_avant_depart": 5.125578450000001,
+      "cotes": {
+        "1": 8.3,
+        "2": 4.4,
+        "3": 24.0,
+        "4": 14.0,
+        "5": 10.0,
+        "6": 9.2,
+        "7": 11.0,
+        "8": 3.0,
+        "9": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T18:25:32.404485+02:00",
+      "minutes_avant_depart": 4.462198266666666,
+      "cotes": {
+        "1": 8.1,
+        "2": 4.4,
+        "3": 21.0,
+        "4": 14.0,
+        "5": 10.0,
+        "6": 9.1,
+        "7": 11.0,
         "8": 3.0,
         "9": 16.0
       }
