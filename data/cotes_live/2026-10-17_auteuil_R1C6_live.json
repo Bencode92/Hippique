@@ -4,8 +4,8 @@
   "reunion": 1,
   "heure_depart": 1792250280000,
   "distance": 4400,
-  "scraped_at": "2026-10-17T17:00:52.679398+02:00",
-  "minutes_avant_depart": 17,
+  "scraped_at": "2026-10-17T17:04:52.771558+02:00",
+  "minutes_avant_depart": 13,
   "participants": [
     {
       "numPmu": 1,
@@ -14,7 +14,7 @@
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792249228000
+      "timestamp_cote": 1792249470000
     },
     {
       "numPmu": 2,
@@ -23,61 +23,61 @@
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792249228000
+      "timestamp_cote": 1792249470000
     },
     {
       "numPmu": 3,
       "nom": "GOLIATH DU RHEU",
-      "cote_live": 3.1,
+      "cote_live": 3.2,
       "cote_reference": 2.9,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792249228000
+      "timestamp_cote": 1792249470000
     },
     {
       "numPmu": 4,
       "nom": "KILOMETRE ILLIMITE",
-      "cote_live": 4.4,
+      "cote_live": 5.0,
       "cote_reference": 4.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792249228000
+      "timestamp_cote": 1792249470000
     },
     {
       "numPmu": 5,
       "nom": "IN LOVE",
-      "cote_live": 49.0,
+      "cote_live": 53.0,
       "cote_reference": 53.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792249228000
+      "timestamp_cote": 1792249470000
     },
     {
       "numPmu": 6,
       "nom": "JAZZ MANOUCHE",
-      "cote_live": 18.0,
+      "cote_live": 21.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792249228000
+      "timestamp_cote": 1792249470000
     },
     {
       "numPmu": 7,
       "nom": "ROYAL SAGA",
-      "cote_live": 10.0,
+      "cote_live": 8.5,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792249228000
+      "timestamp_cote": 1792249470000
     },
     {
       "numPmu": 8,
       "nom": "KOLOKICO",
-      "cote_live": 5.9,
+      "cote_live": 5.5,
       "cote_reference": 6.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792249228000
+      "timestamp_cote": 1792249470000
     },
     {
       "numPmu": 9,
@@ -86,16 +86,16 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792249228000
+      "timestamp_cote": 1792249470000
     },
     {
       "numPmu": 10,
       "nom": "LACOKOKELDY",
-      "cote_live": 21.0,
+      "cote_live": 18.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792249228000
+      "timestamp_cote": 1792249470000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -162,6 +162,22 @@
         "8": 5.9,
         "9": 13.0,
         "10": 21.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T17:04:52.771558+02:00",
+      "minutes_avant_depart": 13.12453855,
+      "cotes": {
+        "1": 14.0,
+        "2": 14.0,
+        "3": 3.2,
+        "4": 5.0,
+        "5": 53.0,
+        "6": 21.0,
+        "7": 8.5,
+        "8": 5.5,
+        "9": 13.0,
+        "10": 18.0
       }
     }
   ]
