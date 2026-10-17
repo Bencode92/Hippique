@@ -2,64 +2,64 @@
   "course": "PRIX ADRIEN BESNOUIN",
   "numero": 4,
   "reunion": 1,
-  "heure_depart": 1792245000000,
+  "heure_depart": 1792245060000,
   "distance": 3600,
-  "scraped_at": "2026-10-17T15:36:25.479765+02:00",
-  "minutes_avant_depart": 14,
+  "scraped_at": "2026-10-17T15:40:25.777729+02:00",
+  "minutes_avant_depart": 11,
   "participants": [
     {
       "numPmu": 1,
       "nom": "LEWIS DU SEUIL",
-      "cote_live": 29.0,
+      "cote_live": 20.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792244165000
+      "timestamp_cote": 1792244407000
     },
     {
       "numPmu": 2,
       "nom": "MONDIALITO D'HUEZ",
-      "cote_live": 1.9,
+      "cote_live": 2.2,
       "cote_reference": 3.4,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792244165000
+      "timestamp_cote": 1792244407000
     },
     {
       "numPmu": 3,
       "nom": "MAGIC DE FREGANDE",
-      "cote_live": 38.0,
+      "cote_live": 35.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792244165000
+      "timestamp_cote": 1792244407000
     },
     {
       "numPmu": 4,
       "nom": "MARIE DES OBEAUX",
-      "cote_live": 20.0,
+      "cote_live": 19.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792244165000
+      "timestamp_cote": 1792244407000
     },
     {
       "numPmu": 5,
       "nom": "MOX",
-      "cote_live": 4.9,
+      "cote_live": 4.3,
       "cote_reference": 3.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792244165000
+      "timestamp_cote": 1792244407000
     },
     {
       "numPmu": 6,
       "nom": "MONSIEUR SUN",
-      "cote_live": 8.8,
+      "cote_live": 8.4,
       "cote_reference": 5.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792244165000
+      "timestamp_cote": 1792244407000
     },
     {
       "numPmu": 7,
@@ -68,34 +68,34 @@
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792244165000
+      "timestamp_cote": 1792244407000
     },
     {
       "numPmu": 8,
       "nom": "MITSUKO",
-      "cote_live": 44.0,
+      "cote_live": 52.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792244165000
+      "timestamp_cote": 1792244407000
     },
     {
       "numPmu": 9,
       "nom": "MANQUE DE RIEN",
-      "cote_live": 53.0,
+      "cote_live": 55.0,
       "cote_reference": 37.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792244165000
+      "timestamp_cote": 1792244407000
     },
     {
       "numPmu": 10,
       "nom": "MONSIEUR MAURICE",
-      "cote_live": 36.0,
+      "cote_live": 32.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792244165000
+      "timestamp_cote": 1792244407000
     },
     {
       "numPmu": 11,
@@ -104,25 +104,25 @@
       "cote_reference": 75.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792244165000
+      "timestamp_cote": 1792244407000
     },
     {
       "numPmu": 12,
       "nom": "MEXICO",
-      "cote_live": 25.0,
+      "cote_live": 24.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792244165000
+      "timestamp_cote": 1792244407000
     },
     {
       "numPmu": 14,
       "nom": "MANATHAN KABOUL",
-      "cote_live": 26.0,
+      "cote_live": 27.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792244165000
+      "timestamp_cote": 1792244407000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -220,6 +220,25 @@
         "11": 69.0,
         "12": 25.0,
         "14": 26.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T15:40:25.777729+02:00",
+      "minutes_avant_depart": 10.577509333333333,
+      "cotes": {
+        "1": 20.0,
+        "2": 2.2,
+        "3": 35.0,
+        "4": 19.0,
+        "5": 4.3,
+        "6": 8.4,
+        "7": 21.0,
+        "8": 52.0,
+        "9": 55.0,
+        "10": 32.0,
+        "11": 69.0,
+        "12": 24.0,
+        "14": 27.0
       }
     }
   ]
