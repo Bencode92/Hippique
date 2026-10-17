@@ -4,125 +4,125 @@
   "reunion": 1,
   "heure_depart": 1792245000000,
   "distance": 3600,
-  "scraped_at": "2026-10-17T15:27:46.036496+02:00",
-  "minutes_avant_depart": 22,
+  "scraped_at": "2026-10-17T15:32:25.591873+02:00",
+  "minutes_avant_depart": 18,
   "participants": [
     {
       "numPmu": 1,
       "nom": "LEWIS DU SEUIL",
-      "cote_live": 20.0,
+      "cote_live": 31.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792243649000
+      "timestamp_cote": 1792243935000
     },
     {
       "numPmu": 2,
       "nom": "MONDIALITO D'HUEZ",
-      "cote_live": 3.4,
+      "cote_live": 1.8,
       "cote_reference": 3.4,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792243649000
+      "timestamp_cote": 1792243935000
     },
     {
       "numPmu": 3,
       "nom": "MAGIC DE FREGANDE",
-      "cote_live": 24.0,
+      "cote_live": 36.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792243649000
+      "timestamp_cote": 1792243935000
     },
     {
       "numPmu": 4,
       "nom": "MARIE DES OBEAUX",
-      "cote_live": 18.0,
+      "cote_live": 21.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792243649000
+      "timestamp_cote": 1792243935000
     },
     {
       "numPmu": 5,
       "nom": "MOX",
-      "cote_live": 3.8,
+      "cote_live": 5.4,
       "cote_reference": 3.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792243649000
+      "timestamp_cote": 1792243935000
     },
     {
       "numPmu": 6,
       "nom": "MONSIEUR SUN",
-      "cote_live": 5.8,
+      "cote_live": 8.6,
       "cote_reference": 5.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792243649000
+      "timestamp_cote": 1792243935000
     },
     {
       "numPmu": 7,
       "nom": "MISS GONAGALL",
-      "cote_live": 17.0,
+      "cote_live": 24.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792243649000
+      "timestamp_cote": 1792243935000
     },
     {
       "numPmu": 8,
       "nom": "MITSUKO",
-      "cote_live": 32.0,
+      "cote_live": 49.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792243649000
+      "timestamp_cote": 1792243935000
     },
     {
       "numPmu": 9,
       "nom": "MANQUE DE RIEN",
-      "cote_live": 38.0,
+      "cote_live": 64.0,
       "cote_reference": 37.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792243649000
+      "timestamp_cote": 1792243935000
     },
     {
       "numPmu": 10,
       "nom": "MONSIEUR MAURICE",
-      "cote_live": 28.0,
+      "cote_live": 37.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792243649000
+      "timestamp_cote": 1792243935000
     },
     {
       "numPmu": 11,
       "nom": "M'SIEURS DAMES",
-      "cote_live": 53.0,
+      "cote_live": 82.0,
       "cote_reference": 75.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792243649000
+      "timestamp_cote": 1792243935000
     },
     {
       "numPmu": 12,
       "nom": "MEXICO",
-      "cote_live": 20.0,
+      "cote_live": 22.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792243649000
+      "timestamp_cote": 1792243935000
     },
     {
       "numPmu": 14,
       "nom": "MANATHAN KABOUL",
-      "cote_live": 21.0,
+      "cote_live": 30.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792243649000
+      "timestamp_cote": 1792243935000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -182,6 +182,25 @@
         "11": 53.0,
         "12": 20.0,
         "14": 21.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T15:32:25.591873+02:00",
+      "minutes_avant_depart": 17.577536000000002,
+      "cotes": {
+        "1": 31.0,
+        "2": 1.8,
+        "3": 36.0,
+        "4": 21.0,
+        "5": 5.4,
+        "6": 8.6,
+        "7": 24.0,
+        "8": 49.0,
+        "9": 64.0,
+        "10": 37.0,
+        "11": 82.0,
+        "12": 22.0,
+        "14": 30.0
       }
     }
   ]
