@@ -4,98 +4,98 @@
   "reunion": 3,
   "heure_depart": 1792237200000,
   "distance": 1800,
-  "scraped_at": "2026-10-17T13:15:12.042706+02:00",
-  "minutes_avant_depart": 25,
+  "scraped_at": "2026-10-17T13:19:11.700526+02:00",
+  "minutes_avant_depart": 21,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ARION",
-      "cote_live": 11.0,
+      "cote_live": 15.0,
       "cote_reference": 28.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792235692000
+      "timestamp_cote": 1792235934000
     },
     {
       "numPmu": 2,
       "nom": "KINI",
-      "cote_live": 5.0,
+      "cote_live": 5.9,
       "cote_reference": 5.1,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1792235692000
+      "favoris": false,
+      "timestamp_cote": 1792235934000
     },
     {
       "numPmu": 3,
       "nom": "ROMANUS PONTIFEX",
-      "cote_live": 7.2,
+      "cote_live": 7.7,
       "cote_reference": 6.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792235692000
+      "timestamp_cote": 1792235934000
     },
     {
       "numPmu": 4,
       "nom": "WOODSTARS",
-      "cote_live": 5.2,
+      "cote_live": 6.3,
       "cote_reference": 5.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792235692000
+      "timestamp_cote": 1792235934000
     },
     {
       "numPmu": 5,
       "nom": "GOLDY MAN",
-      "cote_live": 22.0,
+      "cote_live": 31.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792235692000
+      "timestamp_cote": 1792235934000
     },
     {
       "numPmu": 6,
       "nom": "STARSHIP",
-      "cote_live": 5.0,
+      "cote_live": 3.1,
       "cote_reference": 5.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792235692000
+      "timestamp_cote": 1792235934000
     },
     {
       "numPmu": 7,
       "nom": "TROPHY WINNER",
-      "cote_live": 10.0,
+      "cote_live": 13.0,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792235692000
+      "timestamp_cote": 1792235934000
     },
     {
       "numPmu": 8,
       "nom": "NOOR AL AYN",
-      "cote_live": 12.0,
+      "cote_live": 11.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792235692000
+      "timestamp_cote": 1792235934000
     },
     {
       "numPmu": 9,
       "nom": "OUD ILAM",
-      "cote_live": 26.0,
+      "cote_live": 31.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792235692000
+      "timestamp_cote": 1792235934000
     },
     {
       "numPmu": 10,
       "nom": "NOUVELLE ZELANDE",
-      "cote_live": 14.0,
+      "cote_live": 13.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792235692000
+      "timestamp_cote": 1792235934000
     }
   ],
   "hippodrome": "BORELY",
@@ -130,6 +130,22 @@
         "8": 12.0,
         "9": 26.0,
         "10": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T13:19:11.700526+02:00",
+      "minutes_avant_depart": 20.81063305,
+      "cotes": {
+        "1": 15.0,
+        "2": 5.9,
+        "3": 7.7,
+        "4": 6.3,
+        "5": 31.0,
+        "6": 3.1,
+        "7": 13.0,
+        "8": 11.0,
+        "9": 31.0,
+        "10": 13.0
       }
     }
   ]
