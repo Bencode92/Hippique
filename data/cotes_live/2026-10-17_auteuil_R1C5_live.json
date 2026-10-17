@@ -4,7 +4,7 @@
   "reunion": 1,
   "heure_depart": 1792247700000,
   "distance": 3900,
-  "scraped_at": "2026-10-17T16:33:45.486837+02:00",
+  "scraped_at": "2026-10-17T16:34:25.847443+02:00",
   "minutes_avant_depart": 1,
   "participants": [
     {
@@ -14,7 +14,7 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792247615000
+      "timestamp_cote": 1792247655000
     },
     {
       "numPmu": 2,
@@ -23,16 +23,16 @@
       "cote_reference": 2.4,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792247615000
+      "timestamp_cote": 1792247655000
     },
     {
       "numPmu": 3,
       "nom": "OLGA DE KIEV",
-      "cote_live": 9.9,
+      "cote_live": 9.5,
       "cote_reference": 8.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792247615000
+      "timestamp_cote": 1792247655000
     },
     {
       "numPmu": 4,
@@ -41,34 +41,34 @@
       "cote_reference": 7.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792247615000
+      "timestamp_cote": 1792247655000
     },
     {
       "numPmu": 5,
       "nom": "ILLYADAME",
-      "cote_live": 3.3,
+      "cote_live": 3.5,
       "cote_reference": 3.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792247615000
+      "timestamp_cote": 1792247655000
     },
     {
       "numPmu": 6,
       "nom": "MYSOKO STAR",
-      "cote_live": 18.0,
+      "cote_live": 17.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792247615000
+      "timestamp_cote": 1792247655000
     },
     {
       "numPmu": 7,
       "nom": "JUST HAPPY",
-      "cote_live": 43.0,
+      "cote_live": 41.0,
       "cote_reference": 32.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792247615000
+      "timestamp_cote": 1792247655000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -253,6 +253,19 @@
         "5": 3.3,
         "6": 18.0,
         "7": 43.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T16:34:25.847443+02:00",
+      "minutes_avant_depart": 0.5740047,
+      "cotes": {
+        "1": 13.0,
+        "2": 1.9,
+        "3": 9.5,
+        "4": 14.0,
+        "5": 3.5,
+        "6": 17.0,
+        "7": 41.0
       }
     }
   ]
