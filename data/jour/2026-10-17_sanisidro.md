@@ -1,8 +1,8 @@
 # SAN ISIDRO — 17/10/2026
 
-7 courses.
+7 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -12,6 +12,7 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 8 | THE BEST BLOOD HORSE | 1,1 | EDUARDO ORTEGA PAVON |
 | 1 | DONACIANO | – | NON COMMUNIQUE |
 | 2 | INTI DANCING | – | ENRIQUE CARLOS E. WEISHEIM |
 | 3 | PASSAPORTO | – | NON COMMUNIQUE. |
@@ -19,7 +20,6 @@
 | 5 | TEMIDO PAIS | – | RODRIGUEZ MAXIM ASERITO |
 | 6 | TEQUILA CLUB | – | RAFAEL FACUNDO TONANEZ |
 | 7 | DADDY BLUES | – | MAXIMILIANO HERNAN MACHADO |
-| 8 | THE BEST BLOOD HORSE | – | EDUARDO ORTEGA PAVON |
 | 9 | ULTRA MANIPULADOR | – | GONZALO DAMIAN BORDA |
 | 10 | EL ARREGLO | – | RAMON ARIEL AGUIRRE |
 
@@ -29,14 +29,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 8 | THE GREAT EQUAL | 1,6 | JORGE LUIS PERALTA |
+| 2 | BENJALEZ | 3,6 | GUSTAVO EMILIANO CALVENTE |
+| 6 | ROMAN ORP | 3,6 | WILFREDO ANDRES TORRES MALDONADO |
 | 1 | BARDERO | – | CRISTIAN ERNESTO VELAZQUEZ |
-| 2 | BENJALEZ | – | GUSTAVO EMILIANO CALVENTE |
 | 3 | LONDON PRIDE | – | BRIAN RODRIGO ENRIQUE |
 | 4 | LOS GIRASOLES | – | ELVIO G CANDIA GUTIERREZ |
 | 5 | REW BESITOS | – | LEO NICOLAS ACUNA |
-| 6 | ROMAN ORP | – | WILFREDO ANDRES TORRES MALDONADO |
 | 7 | ARGUMENT WON | – | IVAN MONASTEROLO |
-| 8 | THE GREAT EQUAL | – | JORGE LUIS PERALTA |
 
 ### 8. HANDICAP JERRY HONOR
 
@@ -44,13 +44,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 7 | BELIEVER | 1,1 | LEO NICOLAS ACUNA | –/–/–/– |
+| 4 | FOREVER RIM | 3,5 | ANIBAL JOSE CABRERA | –/–/–/– |
 | 1 | BLESSED OF GLORY | – | MARIA EUGENIA SCHNEIDER | –/–/–/– |
 | 2 | ELKARA | – | JORGE LUIS CORDOBA | –/–/–/– |
 | 3 | ESPOUSE | – | THIAGO EVER LARREA FRUTOS | –/–/–/– |
-| 4 | FOREVER RIM | – | ANIBAL JOSE CABRERA | –/–/–/– |
 | 5 | GRAN CELESTIAL | – | JUAN PABLO PAOLONI | –/–/–/– |
 | 6 | MAXIMA RISK | – | JORGE MARCELINO ORTIZ | –/–/–/– |
-| 7 | BELIEVER | – | LEO NICOLAS ACUNA | –/–/–/– |
 
 ### 9. PREMIO BELLEZA DE ARTEAGA 2022
 
@@ -58,16 +58,16 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | DIGANME BARRABAS | – | KEVIN BANEGAS |
+| 8 | SOUTH ROCK | 2,9 | ADRIAN MAXIMILIANO GIANNETTI |
+| 6 | PETER TOSH | 3,1 | CRISTIAN ERNESTO VELAZQUEZ |
+| 1 | DIGANME BARRABAS | 6,3 | KEVIN BANEGAS |
+| 5 | PALERMO CHICO | 6,3 | NON COMMUNIQUE |
+| 10 | DR PETER | 6,3 | OSVALDO ADRIAN ALDERETE |
 | 2 | GOOD BEAT | – | IVAN MONASTEROLO |
 | 3 | MARRUECOS | – | BRIAN RODRIGO ENRIQUE |
 | 4 | NIGHT CRAWLER | – | GUSTAVO EMILIANO CALVENTE |
-| 5 | PALERMO CHICO | – | NON COMMUNIQUE |
-| 6 | PETER TOSH | – | CRISTIAN ERNESTO VELAZQUEZ |
 | 7 | DIA DE HONOR | – | JUAN CRUZ VILLAGRA |
-| 8 | SOUTH ROCK | – | ADRIAN MAXIMILIANO GIANNETTI |
 | 9 | THE GREAT WELLS | – | EDUARDO ORTEGA PAVON |
-| 10 | DR PETER | – | OSVALDO ADRIAN ALDERETE |
 | 11 | TIGRE DE BENGALA | – | JORGE LUIS CORDOBA |
 
 ### 10. PREMIO BUENA BRUJULA 2021
@@ -76,6 +76,7 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 8 | YA LO BERAN CORRER | 1,1 | GONZALO DAMIAN BORDA |
 | 1 | DESCONFIADA INC | – | NON COMMUNIQUE |
 | 2 | DON LEUCADIO | – | LEO NICOLAS ACUNA |
 | 3 | EL SONADOR DESPIERTO | – | ADRIAN MAXIMILIANO GIANNETTI |
@@ -83,7 +84,6 @@
 | 5 | ISIDORO CANONES | – | BRIAN RODRIGO ENRIQUE |
 | 6 | PAXOS | – | JUAN PABLO PAOLONI |
 | 7 | COLMADA DE FLORES | – | IVAN MONASTEROLO |
-| 8 | YA LO BERAN CORRER | – | GONZALO DAMIAN BORDA |
 
 ### 11. PREMIO PERPETUAL LIGHT 2014
 
@@ -91,6 +91,7 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 8 | UPENDS | 1,1 | THIAGO EVER LARREA FRUTOS |
 | 1 | CONI BELLA | – | GONZALO LAUTARO MANSILLA |
 | 2 | INTRA SOUND | – | MAXIMILIANO HERNAN MACHADO |
 | 3 | LUMINICA ES | – | RODRIGO ALEJANDRO ORTIZ |
@@ -98,7 +99,6 @@
 | 5 | MEHORA | – | LUCIANO MATIAS RECUERO |
 | 6 | TREASURE BACK | – | BRIAN RODRIGO ENRIQUE |
 | 7 | CHARAMBITA | – | ENRIQUE CARLOS E. WEISHEIM |
-| 8 | UPENDS | – | THIAGO EVER LARREA FRUTOS |
 
 ### 12. PREMIO VOLCANA 2008
 
@@ -106,11 +106,11 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 3 | LADYBUG | 1,8 | OSVALDO ADRIAN ALDERETE | –/–/–/– |
+| 8 | TIA PYG | 2,5 | RODRIGO DANIEL BASCUNAN | –/–/–/– |
+| 2 | ESTOPA LIS | 5,4 | GONZALO DAMIAN BORDA | –/–/–/– |
 | 1 | ENDORS RULLER | – | MAXIMILIANO HERNAN MACHADO | –/–/–/– |
-| 2 | ESTOPA LIS | – | GONZALO DAMIAN BORDA | –/–/–/– |
-| 3 | LADYBUG | – | OSVALDO ADRIAN ALDERETE | –/–/–/– |
 | 4 | M' QUEDE MIRANDOLA | – | ENRIQUE CARLOS E. WEISHEIM | –/–/–/– |
 | 5 | PIOGGIA | – | DIEGO NICOLAS CARDOZO | –/–/–/– |
 | 6 | TEEN ANGEL | – | RAMIRO RODOLFO BARRUECO | –/–/–/– |
 | 7 | BRUNNHILDE | – | THIAGO EVER LARREA FRUTOS | –/–/–/– |
-| 8 | TIA PYG | – | RODRIGO DANIEL BASCUNAN | –/–/–/– |
