@@ -12,11 +12,11 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 6 | COMMUTED | 2,6 | R SANTANA, JR. |
-| 1 | COOL ANDY | 5,2 | K CARMOUCHE |
-| 2 | RUN CLASSIC | 5,2 | E J ZAYAS |
-| 3 | BRESLAU | 5,2 | D DAVIS |
-| 5 | CONNIVING | 5,2 | K DAVIS |
+| 3 | BRESLAU | 3,5 | D DAVIS |
+| 5 | CONNIVING | 3,5 | K DAVIS |
+| 6 | COMMUTED | 3,5 | R SANTANA, JR. |
+| 1 | COOL ANDY | 7 | K CARMOUCHE |
+| 2 | RUN CLASSIC | 7 | E J ZAYAS |
 | 4 | KUNSHAN BRIDGE | – | M FRANCO |
 
 ### 2. STARTER ALLOWANCE (3 YO & UP - FILLIES & MARES - DIRT)
@@ -51,10 +51,10 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 4 | BOW DRAW | 3,5 | S MARIN |
-| 6 | SEAT AT THE TABLE | 3,5 | R SANTANA, JR. |
-| 7 | BABY SASSICAIA | 3,5 | H K HARKIE |
-| 8 | PLANET CLARE | 3,5 | A FRESU |
+| 8 | PLANET CLARE | 2,2 | A FRESU |
+| 4 | BOW DRAW | 4,4 | S MARIN |
+| 6 | SEAT AT THE TABLE | 4,4 | R SANTANA, JR. |
+| 7 | BABY SASSICAIA | 4,4 | H K HARKIE |
 | 1 | NOTABLE EXCHANGE | – | M FRANCO |
 | 2 | SAVE US MELANIA | – | J LEZCANO |
 | 3 | GREYJOY | – | J CASTELLANO |
@@ -141,10 +141,10 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 3 | PAROS | 3,5 | K CARMOUCHE |
-| 5 | URGENCY | 3,5 | J LEZCANO |
-| 6 | BLOWN COVER | 3,5 | R SILVERA |
-| 9 | EMIRATES ROAD | 3,5 | R SANTANA, JR. |
+| 3 | PAROS | 1,1 | K CARMOUCHE |
+| 5 | URGENCY | 13 | J LEZCANO |
+| 6 | BLOWN COVER | 13 | R SILVERA |
+| 9 | EMIRATES ROAD | 13 | R SANTANA, JR. |
 | 1 | HIGHLANDS WAY | – | M FRANCO |
 | 2 | WHAT SAY THEE | – | S MARIN |
 | 4 | HAMMERHEAD | – | A FRESU |
@@ -157,10 +157,10 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 9 | PINEAPPLE MAN | 1,7 | H K HARKIE |
-| 2 | NORMANDY COAST | 5,2 | R SANTANA, JR. |
-| 4 | SECURED LANDING | 5,2 | K CARMOUCHE |
-| 5 | PRINCIP | 5,2 | J CASTELLANO |
+| 9 | PINEAPPLE MAN | 1,5 | H K HARKIE |
+| 2 | NORMANDY COAST | 6,1 | R SANTANA, JR. |
+| 4 | SECURED LANDING | 6,1 | K CARMOUCHE |
+| 5 | PRINCIP | 6,1 | J CASTELLANO |
 | 1 | SARA'S SHAMAN | – | S GONZALEZ |
 | 3 | CONCORDE SPIRIT | – | S MARIN |
 | 6 | TAPWRITS TEMPER | – | M FRANCO |

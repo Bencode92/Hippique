@@ -1,7 +1,7 @@
 {
   "hippodrome": "AUTEUIL",
   "type_reunion": "HAIE",
-  "date_extraction": "2026-10-17T13:49:14.577552",
+  "date_extraction": "2026-10-17T15:25:14.335491",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/17102026/R1",
   "courses": [
     {
@@ -12,75 +12,6 @@
       "distance": "3600m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "NUMEROBIS H.AQPS. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: WALDPARK et TESKALINE (MARTALINE)",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261017/AUT/1/20261017-AUT-1-1.png",
-          "propriétaire": "B.JUHEN/EC. J.CYPRES/N.CYPRES",
-          "entraineur": "E.CLAYEUX (S)",
-          "éleveurs": "MR JACQUES CYPRES",
-          "jockey": "L.ZULIANI",
-          "poids": "68 kg",
-          "gains": "",
-          "musique": "1p3p",
-          "valeur": "68.0",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0,
-          "cote": 12.0,
-          "cote_tendance": "",
-          "cote_reference": 11.0
-        },
-        {
-          "n°": "2",
-          "cheval": "NELSON DU SEUIL H.AQPS. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: GOLIATH DU BERLAIS et TULIPE DU SEUIL (EQUERRY)",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261017/AUT/1/20261017-AUT-1-2.png",
-          "propriétaire": "MME M.BOUDOT",
-          "entraineur": "M.SEROR (S)",
-          "éleveurs": "MME MARC BOUDOT",
-          "jockey": "L.PHILIPPERON",
-          "poids": "68 kg",
-          "gains": "",
-          "musique": "2p",
-          "valeur": "68.0",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0,
-          "cote": 9.8,
-          "cote_tendance": "",
-          "cote_reference": 7.8
-        },
-        {
-          "n°": "3",
-          "cheval": "NOUVEAUMONDE ALLEN H.AQPS. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: COKORIKO et EUROPE ALLEN (KHALKEVI)",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261017/AUT/1/20261017-AUT-1-3.png",
-          "propriétaire": "EC. H.GUERIN/GAEC ALLEN",
-          "entraineur": "GAB.LEENDERS (S)",
-          "éleveurs": "GAEC ALLEN",
-          "jockey": "T.CHEVILLARD",
-          "poids": "68 kg",
-          "gains": "",
-          "musique": "",
-          "valeur": "68.0",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0,
-          "cote": 14.0,
-          "cote_tendance": "",
-          "cote_reference": 11.0
-        },
         {
           "n°": "4",
           "cheval": "NOIRCI H.AQPS. 3 a.",
@@ -100,9 +31,10 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 3.2,
+          "cote": 4.0,
           "cote_tendance": "",
-          "cote_reference": 5.1
+          "cote_reference": 5.1,
+          "arrivee": 1
         },
         {
           "n°": "5",
@@ -123,9 +55,58 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 6.4,
+          "cote": 6.2,
           "cote_tendance": "",
-          "cote_reference": 6.4
+          "cote_reference": 6.4,
+          "arrivee": 2
+        },
+        {
+          "n°": "2",
+          "cheval": "NELSON DU SEUIL H.AQPS. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: GOLIATH DU BERLAIS et TULIPE DU SEUIL (EQUERRY)",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261017/AUT/1/20261017-AUT-1-2.png",
+          "propriétaire": "MME M.BOUDOT",
+          "entraineur": "M.SEROR (S)",
+          "éleveurs": "MME MARC BOUDOT",
+          "jockey": "L.PHILIPPERON",
+          "poids": "68 kg",
+          "gains": "",
+          "musique": "2p",
+          "valeur": "68.0",
+          "equipement(s)": "",
+          "nb_courses": 0,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 7.6,
+          "cote_tendance": "",
+          "cote_reference": 7.8,
+          "arrivee": 3
+        },
+        {
+          "n°": "11",
+          "cheval": "NICO TEAM F.AQPS. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: PRINCE GIBRALTAR et GRANDE DAME (COKORIKO)",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261017/AUT/1/20261017-AUT-1-11.png",
+          "propriétaire": "N.CYPRES",
+          "entraineur": "E.GRALL (S)",
+          "éleveurs": "MR NICOLAS CYPRES",
+          "jockey": "THO .JOURNIAC",
+          "poids": "66 kg",
+          "gains": "",
+          "musique": "3p3p6p",
+          "valeur": "66.0",
+          "equipement(s)": "",
+          "nb_courses": 0,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 28.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0,
+          "arrivee": 4
         },
         {
           "n°": "6",
@@ -146,9 +127,10 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 25.0,
+          "cote": 40.0,
           "cote_tendance": "",
-          "cote_reference": 23.0
+          "cote_reference": 23.0,
+          "arrivee": 5
         },
         {
           "n°": "7",
@@ -169,9 +151,10 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 34.0,
+          "cote": 26.0,
           "cote_tendance": "",
-          "cote_reference": 34.0
+          "cote_reference": 34.0,
+          "arrivee": 6
         },
         {
           "n°": "8",
@@ -192,9 +175,56 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 36.0,
+          "cote": 29.0,
           "cote_tendance": "",
-          "cote_reference": 29.0
+          "cote_reference": 29.0,
+          "arrivee": 7
+        },
+        {
+          "n°": "1",
+          "cheval": "NUMEROBIS H.AQPS. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: WALDPARK et TESKALINE (MARTALINE)",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261017/AUT/1/20261017-AUT-1-1.png",
+          "propriétaire": "B.JUHEN/EC. J.CYPRES/N.CYPRES",
+          "entraineur": "E.CLAYEUX (S)",
+          "éleveurs": "MR JACQUES CYPRES",
+          "jockey": "L.ZULIANI",
+          "poids": "68 kg",
+          "gains": "",
+          "musique": "1p3p",
+          "valeur": "68.0",
+          "equipement(s)": "",
+          "nb_courses": 0,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0
+        },
+        {
+          "n°": "3",
+          "cheval": "NOUVEAUMONDE ALLEN H.AQPS. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: COKORIKO et EUROPE ALLEN (KHALKEVI)",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261017/AUT/1/20261017-AUT-1-3.png",
+          "propriétaire": "EC. H.GUERIN/GAEC ALLEN",
+          "entraineur": "GAB.LEENDERS (S)",
+          "éleveurs": "GAEC ALLEN",
+          "jockey": "T.CHEVILLARD",
+          "poids": "68 kg",
+          "gains": "",
+          "musique": "",
+          "valeur": "68.0",
+          "equipement(s)": "",
+          "nb_courses": 0,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 18.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0
         },
         {
           "n°": "9",
@@ -215,7 +245,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 11.0,
+          "cote": 9.2,
           "cote_tendance": "",
           "cote_reference": 7.3
         },
@@ -238,37 +268,15 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 5.7,
+          "cote": 4.4,
           "cote_tendance": "",
           "cote_reference": 6.5
-        },
-        {
-          "n°": "11",
-          "cheval": "NICO TEAM F.AQPS. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: PRINCE GIBRALTAR et GRANDE DAME (COKORIKO)",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261017/AUT/1/20261017-AUT-1-11.png",
-          "propriétaire": "N.CYPRES",
-          "entraineur": "E.GRALL (S)",
-          "éleveurs": "MR NICOLAS CYPRES",
-          "jockey": "THO .JOURNIAC",
-          "poids": "66 kg",
-          "gains": "",
-          "musique": "3p3p6p",
-          "valeur": "66.0",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0,
-          "cote": 15.0,
-          "cote_tendance": "",
-          "cote_reference": 11.0
         }
       ],
       "typePiste": "HERBE",
       "terrain": "Très souple",
-      "penetrometre": "4,0"
+      "penetrometre": "4,0",
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX ORCADA",
@@ -278,6 +286,30 @@
       "distance": "4400m",
       "url": "",
       "participants": [
+        {
+          "n°": "7",
+          "cheval": "MELISSE DU MATHAN F.AQPS. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: BEAUMEC DE HOUELLE et DELICE NOUBA (TURGEON)",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261017/AUT/2/20261017-AUT-2-7.png",
+          "propriétaire": "ECURIE DU MATHAN",
+          "entraineur": "CHAILLE-CHAILLE & PAMART",
+          "éleveurs": "MR JEAN-MARIE BARADEAU",
+          "jockey": "G.MASURE",
+          "poids": "64 kg",
+          "gains": "14110000",
+          "musique": "7sTs1s1s(25)3h4h1h3h4h",
+          "valeur": "64.0",
+          "equipement(s)": "",
+          "nb_courses": 9,
+          "nb_victoires": 3,
+          "nb_places": 5,
+          "cote": 9.4,
+          "cote_tendance": "",
+          "cote_reference": 10.0,
+          "arrivee": 1
+        },
         {
           "n°": "1",
           "cheval": "METRONOMIQUE H.AQPS. 4 a.",
@@ -297,32 +329,10 @@
           "nb_courses": 10,
           "nb_victoires": 7,
           "nb_places": 2,
-          "cote": 1.4,
+          "cote": 1.3,
           "cote_tendance": "",
-          "cote_reference": 1.5
-        },
-        {
-          "n°": "2",
-          "cheval": "MATMATAH H.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: BANDE et LA PLEINE LUNE (EARLY MARCH)",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261017/AUT/2/20261017-AUT-2-2.png",
-          "propriétaire": "SCUDERIA AICHNER SRL",
-          "entraineur": "J.VANA JR",
-          "éleveurs": "MME VANESSA OGER",
-          "jockey": "F.GILES",
-          "poids": "68 kg",
-          "gains": "5335700",
-          "musique": "1s1s3s4s1s(25)7h",
-          "valeur": "68.0",
-          "equipement(s)": "",
-          "nb_courses": 6,
-          "nb_victoires": 3,
-          "nb_places": 3,
-          "cote": 31.0,
-          "cote_tendance": "",
-          "cote_reference": 27.0
+          "cote_reference": 1.4,
+          "arrivee": 2
         },
         {
           "n°": "3",
@@ -343,9 +353,10 @@
           "nb_courses": 8,
           "nb_victoires": 1,
           "nb_places": 7,
-          "cote": 7.9,
+          "cote": 9.1,
           "cote_tendance": "",
-          "cote_reference": 6.5
+          "cote_reference": 7.6,
+          "arrivee": 3
         },
         {
           "n°": "4",
@@ -366,9 +377,34 @@
           "nb_courses": 6,
           "nb_victoires": 2,
           "nb_places": 3,
-          "cote": 26.0,
+          "cote": 37.0,
           "cote_tendance": "",
-          "cote_reference": 29.0
+          "cote_reference": 21.0,
+          "arrivee": 4
+        },
+        {
+          "n°": "2",
+          "cheval": "MATMATAH H.PU. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: BANDE et LA PLEINE LUNE (EARLY MARCH)",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261017/AUT/2/20261017-AUT-2-2.png",
+          "propriétaire": "SCUDERIA AICHNER SRL",
+          "entraineur": "J.VANA JR",
+          "éleveurs": "MME VANESSA OGER",
+          "jockey": "F.GILES",
+          "poids": "68 kg",
+          "gains": "5335700",
+          "musique": "1s1s3s4s1s(25)7h",
+          "valeur": "68.0",
+          "equipement(s)": "",
+          "nb_courses": 6,
+          "nb_victoires": 3,
+          "nb_places": 3,
+          "cote": 32.0,
+          "cote_tendance": "",
+          "cote_reference": 30.0,
+          "arrivee": 5
         },
         {
           "n°": "5",
@@ -389,9 +425,10 @@
           "nb_courses": 7,
           "nb_victoires": 2,
           "nb_places": 4,
-          "cote": 63.0,
+          "cote": 51.0,
           "cote_tendance": "",
-          "cote_reference": 62.0
+          "cote_reference": 70.0,
+          "arrivee": 6
         },
         {
           "n°": "6",
@@ -412,37 +449,15 @@
           "nb_courses": 6,
           "nb_victoires": 1,
           "nb_places": 5,
-          "cote": 7.7,
+          "cote": 8.9,
           "cote_tendance": "",
-          "cote_reference": 6.6
-        },
-        {
-          "n°": "7",
-          "cheval": "MELISSE DU MATHAN F.AQPS. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: BEAUMEC DE HOUELLE et DELICE NOUBA (TURGEON)",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261017/AUT/2/20261017-AUT-2-7.png",
-          "propriétaire": "ECURIE DU MATHAN",
-          "entraineur": "CHAILLE-CHAILLE & PAMART",
-          "éleveurs": "MR JEAN-MARIE BARADEAU",
-          "jockey": "G.MASURE",
-          "poids": "64 kg",
-          "gains": "14110000",
-          "musique": "7sTs1s1s(25)3h4h1h3h4h",
-          "valeur": "64.0",
-          "equipement(s)": "",
-          "nb_courses": 9,
-          "nb_victoires": 3,
-          "nb_places": 5,
-          "cote": 11.0,
-          "cote_tendance": "",
-          "cote_reference": 9.0
+          "cote_reference": 7.5
         }
       ],
       "typePiste": "HERBE",
       "terrain": "Très souple",
-      "penetrometre": "4,0"
+      "penetrometre": "4,0",
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX PRINCE D'ECOUEN - GRAND HANDICAP D'AUTOMNE",
@@ -462,7 +477,7 @@
           "propriétaire": "D.O'DONOHOE",
           "entraineur": "N. GEORGE & A. ZETTERHOLM",
           "éleveurs": "MR FREDERIC FOUCHER",
-          "jockey": "F.GILES",
+          "jockey": "J. CHARRON",
           "poids": "72.5 kg",
           "gains": "9041500",
           "musique": "6h1h(25)1h1h",
@@ -471,101 +486,10 @@
           "nb_courses": 4,
           "nb_victoires": 3,
           "nb_places": 1,
-          "cote": 18.0,
+          "cote": 14.0,
           "cote_tendance": "",
-          "cote_reference": 20.0
-        },
-        {
-          "n°": "2",
-          "cheval": "LOQUAS H.PU. 8 a.",
-          "cheval_url": "",
-          "père_mère": "Par: IT'S GINO et HERA BONITAS (KALDOU STAR)",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261017/AUT/3/20261017-AUT-3-2.png",
-          "propriétaire": "ECURIE ENZO ET MICHAEL RI",
-          "entraineur": "Y.FOUIN (S)",
-          "éleveurs": "MR FRANCK VAN HAAREN",
-          "jockey": "K.NABET",
-          "poids": "71.5 kg",
-          "gains": "37861000",
-          "musique": "2h6s1h2hAh6h(25)9h7h5h",
-          "valeur": "71.5",
-          "equipement(s)": "",
-          "nb_courses": 28,
-          "nb_victoires": 5,
-          "nb_places": 17,
-          "cote": 7.1,
-          "cote_tendance": "",
-          "cote_reference": 6.7
-        },
-        {
-          "n°": "3",
-          "cheval": "KIRIKOU DES MERS H.AQPS. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: NOM DE D'LA et VUE SUR MER (DOM ALCO)",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261017/AUT/3/20261017-AUT-3-3.png",
-          "propriétaire": "JL.DA SILVA",
-          "entraineur": "MME G.MENATO",
-          "éleveurs": "MR THIERRY CYPRES",
-          "jockey": "B.LE CLERC",
-          "poids": "71 kg",
-          "gains": "16017000",
-          "musique": "4h7h3h1h(25)5h3h4s6s7s",
-          "valeur": "71.0",
-          "equipement(s)": "",
-          "nb_courses": 17,
-          "nb_victoires": 3,
-          "nb_places": 12,
-          "cote": 18.0,
-          "cote_tendance": "",
-          "cote_reference": 20.0
-        },
-        {
-          "n°": "4",
-          "cheval": "GARDONS LE SOURIRE H.PU. 10 a.",
-          "cheval_url": "",
-          "père_mère": "Par: FAME AND GLORY et PLACE AU SOLEIL (TREMPOLINO)",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261017/AUT/3/20261017-AUT-3-4.png",
-          "propriétaire": "HARAS DE SAINT-VOIR",
-          "entraineur": "GAB.LEENDERS (S)",
-          "éleveurs": "HARAS DE SAINT-VOIR",
-          "jockey": "T.CHEVILLARD",
-          "poids": "70.5 kg",
-          "gains": "63331000",
-          "musique": "1h5h3s1h7s3s0s9s(25)2s",
-          "valeur": "70.5",
-          "equipement(s)": "",
-          "nb_courses": 44,
-          "nb_victoires": 8,
-          "nb_places": 28,
-          "cote": 17.0,
-          "cote_tendance": "",
-          "cote_reference": 19.0
-        },
-        {
-          "n°": "5",
-          "cheval": "KEL STORY H.AQPS. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: JEU ST ELOI et UNE HISTOIRE (VOIX DU NORD)",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261017/AUT/3/20261017-AUT-3-5.png",
-          "propriétaire": "J.FINCH",
-          "entraineur": "M.SEROR (S)",
-          "éleveurs": "MME KARINE PERREAU",
-          "jockey": "L.PHILIPPERON",
-          "poids": "68 kg",
-          "gains": "27158000",
-          "musique": "1h2h7h5h0hAh6hAh6s9h",
-          "valeur": "68.0",
-          "equipement(s)": "",
-          "nb_courses": 37,
-          "nb_victoires": 6,
-          "nb_places": 17,
-          "cote": 9.5,
-          "cote_tendance": "",
-          "cote_reference": 8.8
+          "cote_reference": 17.0,
+          "arrivee": 1
         },
         {
           "n°": "6",
@@ -586,9 +510,128 @@
           "nb_courses": 11,
           "nb_victoires": 2,
           "nb_places": 6,
-          "cote": 4.8,
+          "cote": 5.5,
           "cote_tendance": "",
-          "cote_reference": 4.7
+          "cote_reference": 5.0,
+          "arrivee": 2
+        },
+        {
+          "n°": "4",
+          "cheval": "GARDONS LE SOURIRE H.PU. 10 a.",
+          "cheval_url": "",
+          "père_mère": "Par: FAME AND GLORY et PLACE AU SOLEIL (TREMPOLINO)",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261017/AUT/3/20261017-AUT-3-4.png",
+          "propriétaire": "HARAS DE SAINT-VOIR",
+          "entraineur": "GAB.LEENDERS (S)",
+          "éleveurs": "HARAS DE SAINT-VOIR",
+          "jockey": "T.CHEVILLARD",
+          "poids": "70.5 kg",
+          "gains": "63331000",
+          "musique": "1h5h3s1h7s3s0s9s(25)2s",
+          "valeur": "70.5",
+          "equipement(s)": "",
+          "nb_courses": 44,
+          "nb_victoires": 8,
+          "nb_places": 28,
+          "cote": 24.0,
+          "cote_tendance": "",
+          "cote_reference": 17.0,
+          "arrivee": 3
+        },
+        {
+          "n°": "11",
+          "cheval": "ROBIN HILL H.PU. 6 a.",
+          "cheval_url": "",
+          "père_mère": "Par: BATTLE OF MARENGO et TRASIMENE (SINNDAR)",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261017/AUT/3/20261017-AUT-3-11.png",
+          "propriétaire": "M.NAYLOR",
+          "entraineur": "L.CARBERRY (S)",
+          "éleveurs": "MR MATHIEU DAGUZAN-GARROS",
+          "jockey": "T.BEAURAIN",
+          "poids": "64.5 kg",
+          "gains": "9205500",
+          "musique": "4hAh3h0h(25)1h5h3h(24)4h",
+          "valeur": "64.5",
+          "equipement(s)": "",
+          "nb_courses": 10,
+          "nb_victoires": 2,
+          "nb_places": 5,
+          "cote": 8.8,
+          "cote_tendance": "",
+          "cote_reference": 9.5,
+          "arrivee": 4
+        },
+        {
+          "n°": "2",
+          "cheval": "LOQUAS H.PU. 8 a.",
+          "cheval_url": "",
+          "père_mère": "Par: IT'S GINO et HERA BONITAS (KALDOU STAR)",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261017/AUT/3/20261017-AUT-3-2.png",
+          "propriétaire": "ECURIE ENZO ET MICHAEL RI",
+          "entraineur": "Y.FOUIN (S)",
+          "éleveurs": "MR FRANCK VAN HAAREN",
+          "jockey": "K.NABET",
+          "poids": "71.5 kg",
+          "gains": "37861000",
+          "musique": "2h6s1h2hAh6h(25)9h7h5h",
+          "valeur": "71.5",
+          "equipement(s)": "",
+          "nb_courses": 28,
+          "nb_victoires": 5,
+          "nb_places": 17,
+          "cote": 8.2,
+          "cote_tendance": "",
+          "cote_reference": 7.6,
+          "arrivee": 5
+        },
+        {
+          "n°": "3",
+          "cheval": "KIRIKOU DES MERS H.AQPS. 6 a.",
+          "cheval_url": "",
+          "père_mère": "Par: NOM DE D'LA et VUE SUR MER (DOM ALCO)",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261017/AUT/3/20261017-AUT-3-3.png",
+          "propriétaire": "JL.DA SILVA",
+          "entraineur": "MME G.MENATO",
+          "éleveurs": "MR THIERRY CYPRES",
+          "jockey": "B.LE CLERC",
+          "poids": "71 kg",
+          "gains": "16017000",
+          "musique": "4h7h3h1h(25)5h3h4s6s7s",
+          "valeur": "71.0",
+          "equipement(s)": "",
+          "nb_courses": 17,
+          "nb_victoires": 3,
+          "nb_places": 12,
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 16.0
+        },
+        {
+          "n°": "5",
+          "cheval": "KEL STORY H.AQPS. 6 a.",
+          "cheval_url": "",
+          "père_mère": "Par: JEU ST ELOI et UNE HISTOIRE (VOIX DU NORD)",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261017/AUT/3/20261017-AUT-3-5.png",
+          "propriétaire": "J.FINCH",
+          "entraineur": "M.SEROR (S)",
+          "éleveurs": "MME KARINE PERREAU",
+          "jockey": "L.PHILIPPERON",
+          "poids": "68 kg",
+          "gains": "27158000",
+          "musique": "1h2h7h5h0hAh6hAh6s9h",
+          "valeur": "68.0",
+          "equipement(s)": "",
+          "nb_courses": 37,
+          "nb_victoires": 6,
+          "nb_places": 17,
+          "cote": 7.4,
+          "cote_tendance": "",
+          "cote_reference": 10.0
         },
         {
           "n°": "7",
@@ -632,9 +675,9 @@
           "nb_courses": 19,
           "nb_victoires": 4,
           "nb_places": 11,
-          "cote": 160.0,
+          "cote": 145.0,
           "cote_tendance": "",
-          "cote_reference": 190.0
+          "cote_reference": 117.0
         },
         {
           "n°": "9",
@@ -655,32 +698,9 @@
           "nb_courses": 35,
           "nb_victoires": 4,
           "nb_places": 23,
-          "cote": 31.0,
+          "cote": 44.0,
           "cote_tendance": "",
-          "cote_reference": 31.0
-        },
-        {
-          "n°": "11",
-          "cheval": "ROBIN HILL H.PU. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: BATTLE OF MARENGO et TRASIMENE (SINNDAR)",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261017/AUT/3/20261017-AUT-3-11.png",
-          "propriétaire": "M.NAYLOR",
-          "entraineur": "L.CARBERRY (S)",
-          "éleveurs": "MR MATHIEU DAGUZAN-GARROS",
-          "jockey": "T.BEAURAIN",
-          "poids": "64.5 kg",
-          "gains": "9205500",
-          "musique": "4hAh3h0h(25)1h5h3h(24)4h",
-          "valeur": "64.5",
-          "equipement(s)": "",
-          "nb_courses": 10,
-          "nb_victoires": 2,
-          "nb_places": 5,
-          "cote": 9.3,
-          "cote_tendance": "",
-          "cote_reference": 10.0
+          "cote_reference": 35.0
         },
         {
           "n°": "12",
@@ -724,9 +744,9 @@
           "nb_courses": 17,
           "nb_victoires": 1,
           "nb_places": 10,
-          "cote": 59.0,
+          "cote": 57.0,
           "cote_tendance": "",
-          "cote_reference": 60.0
+          "cote_reference": 57.0
         },
         {
           "n°": "15",
@@ -747,9 +767,9 @@
           "nb_courses": 27,
           "nb_victoires": 4,
           "nb_places": 17,
-          "cote": 60.0,
+          "cote": 63.0,
           "cote_tendance": "",
-          "cote_reference": 53.0
+          "cote_reference": 65.0
         },
         {
           "n°": "16",
@@ -770,9 +790,9 @@
           "nb_courses": 24,
           "nb_victoires": 6,
           "nb_places": 12,
-          "cote": 94.0,
+          "cote": 101.0,
           "cote_tendance": "",
-          "cote_reference": 100.0
+          "cote_reference": 90.0
         },
         {
           "n°": "17",
@@ -793,9 +813,9 @@
           "nb_courses": 29,
           "nb_victoires": 3,
           "nb_places": 13,
-          "cote": 70.0,
+          "cote": 94.0,
           "cote_tendance": "",
-          "cote_reference": 77.0
+          "cote_reference": 66.0
         },
         {
           "n°": "18",
@@ -816,9 +836,9 @@
           "nb_courses": 11,
           "nb_victoires": 2,
           "nb_places": 8,
-          "cote": 94.0,
+          "cote": 81.0,
           "cote_tendance": "",
-          "cote_reference": 111.0
+          "cote_reference": 100.0
         },
         {
           "n°": "19",
@@ -839,9 +859,9 @@
           "nb_courses": 8,
           "nb_victoires": 2,
           "nb_places": 4,
-          "cote": 10.0,
+          "cote": 9.9,
           "cote_tendance": "",
-          "cote_reference": 10.0
+          "cote_reference": 8.9
         },
         {
           "n°": "20",
@@ -862,14 +882,15 @@
           "nb_courses": 16,
           "nb_victoires": 2,
           "nb_places": 10,
-          "cote": 102.0,
+          "cote": 64.0,
           "cote_tendance": "",
-          "cote_reference": 112.0
+          "cote_reference": 108.0
         }
       ],
       "typePiste": "HERBE",
       "terrain": "Très souple",
-      "penetrometre": "4,0"
+      "penetrometre": "4,0",
+      "arrivee_definitive": false
     },
     {
       "nom": "PRIX ADRIEN BESNOUIN",
@@ -898,9 +919,9 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 13.0,
+          "cote": 22.0,
           "cote_tendance": "",
-          "cote_reference": 13.0
+          "cote_reference": 22.0
         },
         {
           "n°": "2",
@@ -921,9 +942,9 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 4.8,
+          "cote": 3.4,
           "cote_tendance": "",
-          "cote_reference": 4.9
+          "cote_reference": 3.4
         },
         {
           "n°": "3",
@@ -935,7 +956,7 @@
           "propriétaire": "E.E.CLAYEUX (S)",
           "entraineur": "E.CLAYEUX (S)",
           "éleveurs": "MR JEAN-BAPTISTE DEVILLARD",
-          "jockey": "F.GILES",
+          "jockey": "T. SPORLI",
           "poids": "68 kg",
           "gains": "1008000",
           "musique": "3h2h",
@@ -944,9 +965,9 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 16.0,
+          "cote": 29.0,
           "cote_tendance": "",
-          "cote_reference": 17.0
+          "cote_reference": 27.0
         },
         {
           "n°": "4",
@@ -967,9 +988,9 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 12.0,
+          "cote": 16.0,
           "cote_tendance": "",
-          "cote_reference": 13.0
+          "cote_reference": 16.0
         },
         {
           "n°": "5",
@@ -992,7 +1013,7 @@
           "nb_places": 1,
           "cote": 3.9,
           "cote_tendance": "",
-          "cote_reference": 3.8
+          "cote_reference": 3.7
         },
         {
           "n°": "6",
@@ -1013,9 +1034,9 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 8.0,
+          "cote": 5.4,
           "cote_tendance": "",
-          "cote_reference": 7.4
+          "cote_reference": 5.8
         },
         {
           "n°": "7",
@@ -1036,7 +1057,7 @@
           "nb_courses": 4,
           "nb_victoires": 1,
           "nb_places": 2,
-          "cote": 18.0,
+          "cote": 15.0,
           "cote_tendance": "",
           "cote_reference": 17.0
         },
@@ -1059,9 +1080,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 25.0,
+          "cote": 29.0,
           "cote_tendance": "",
-          "cote_reference": 21.0
+          "cote_reference": 27.0
         },
         {
           "n°": "9",
@@ -1082,9 +1103,9 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 23.0,
+          "cote": 36.0,
           "cote_tendance": "",
-          "cote_reference": 19.0
+          "cote_reference": 37.0
         },
         {
           "n°": "10",
@@ -1105,9 +1126,9 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 17.0,
+          "cote": 26.0,
           "cote_tendance": "",
-          "cote_reference": 15.0
+          "cote_reference": 25.0
         },
         {
           "n°": "11",
@@ -1128,9 +1149,9 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 43.0,
+          "cote": 78.0,
           "cote_tendance": "",
-          "cote_reference": 63.0
+          "cote_reference": 75.0
         },
         {
           "n°": "12",
@@ -1151,7 +1172,7 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 17.0,
+          "cote": 24.0,
           "cote_tendance": "",
           "cote_reference": 24.0
         },
@@ -1174,9 +1195,9 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 16.0,
+          "cote": 19.0,
           "cote_tendance": "",
-          "cote_reference": 20.0
+          "cote_reference": 18.0
         }
       ],
       "typePiste": "HERBE",
@@ -1210,7 +1231,7 @@
           "nb_courses": 11,
           "nb_victoires": 1,
           "nb_places": 8,
-          "cote": 16.0,
+          "cote": 18.0,
           "cote_tendance": "",
           "cote_reference": 16.0
         },
@@ -1233,7 +1254,7 @@
           "nb_courses": 10,
           "nb_victoires": 5,
           "nb_places": 5,
-          "cote": 2.1,
+          "cote": 2.5,
           "cote_tendance": "",
           "cote_reference": 1.9
         },
@@ -1256,7 +1277,7 @@
           "nb_courses": 8,
           "nb_victoires": 2,
           "nb_places": 6,
-          "cote": 11.0,
+          "cote": 10.0,
           "cote_tendance": "",
           "cote_reference": 15.0
         },
@@ -1279,7 +1300,7 @@
           "nb_courses": 4,
           "nb_victoires": 2,
           "nb_places": 0,
-          "cote": 4.6,
+          "cote": 5.9,
           "cote_tendance": "",
           "cote_reference": 4.0
         },
@@ -1302,7 +1323,7 @@
           "nb_courses": 3,
           "nb_victoires": 3,
           "nb_places": 0,
-          "cote": 3.8,
+          "cote": 2.6,
           "cote_tendance": "",
           "cote_reference": 5.2
         },
@@ -1325,7 +1346,7 @@
           "nb_courses": 4,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 27.0,
+          "cote": 37.0,
           "cote_tendance": "",
           "cote_reference": 30.0
         },
@@ -1348,7 +1369,7 @@
           "nb_courses": 8,
           "nb_victoires": 1,
           "nb_places": 7,
-          "cote": 37.0,
+          "cote": 53.0,
           "cote_tendance": "",
           "cote_reference": 39.0
         }
@@ -1384,7 +1405,7 @@
           "nb_courses": 41,
           "nb_victoires": 5,
           "nb_places": 25,
-          "cote": 10.0,
+          "cote": 12.0,
           "cote_tendance": "",
           "cote_reference": 9.1
         },
@@ -1407,7 +1428,7 @@
           "nb_courses": 21,
           "nb_victoires": 3,
           "nb_places": 14,
-          "cote": 13.0,
+          "cote": 17.0,
           "cote_tendance": "",
           "cote_reference": 15.0
         },
@@ -1430,7 +1451,7 @@
           "nb_courses": 13,
           "nb_victoires": 5,
           "nb_places": 7,
-          "cote": 3.1,
+          "cote": 3.2,
           "cote_tendance": "",
           "cote_reference": 2.8
         },
@@ -1453,7 +1474,7 @@
           "nb_courses": 13,
           "nb_victoires": 4,
           "nb_places": 7,
-          "cote": 4.9,
+          "cote": 3.4,
           "cote_tendance": "",
           "cote_reference": 6.6
         },
@@ -1476,7 +1497,7 @@
           "nb_courses": 34,
           "nb_victoires": 3,
           "nb_places": 27,
-          "cote": 30.0,
+          "cote": 42.0,
           "cote_tendance": "",
           "cote_reference": 32.0
         },
@@ -1499,7 +1520,7 @@
           "nb_courses": 16,
           "nb_victoires": 3,
           "nb_places": 9,
-          "cote": 17.0,
+          "cote": 18.0,
           "cote_tendance": "",
           "cote_reference": 17.0
         },
@@ -1522,7 +1543,7 @@
           "nb_courses": 15,
           "nb_victoires": 2,
           "nb_places": 11,
-          "cote": 9.6,
+          "cote": 11.0,
           "cote_tendance": "",
           "cote_reference": 8.2
         },
@@ -1545,7 +1566,7 @@
           "nb_courses": 17,
           "nb_victoires": 4,
           "nb_places": 10,
-          "cote": 7.1,
+          "cote": 9.1,
           "cote_tendance": "",
           "cote_reference": 7.7
         },
@@ -1591,7 +1612,7 @@
           "nb_courses": 11,
           "nb_victoires": 3,
           "nb_places": 7,
-          "cote": 25.0,
+          "cote": 16.0,
           "cote_tendance": "",
           "cote_reference": 21.0
         }
@@ -1627,7 +1648,7 @@
           "nb_courses": 22,
           "nb_victoires": 4,
           "nb_places": 13,
-          "cote": 83.0,
+          "cote": 80.0,
           "cote_tendance": "",
           "cote_reference": 133.0
         },
@@ -1650,7 +1671,7 @@
           "nb_courses": 14,
           "nb_victoires": 1,
           "nb_places": 10,
-          "cote": 34.0,
+          "cote": 38.0,
           "cote_tendance": "",
           "cote_reference": 36.0
         },
@@ -1673,7 +1694,7 @@
           "nb_courses": 12,
           "nb_victoires": 1,
           "nb_places": 6,
-          "cote": 23.0,
+          "cote": 21.0,
           "cote_tendance": "",
           "cote_reference": 26.0
         },
@@ -1696,7 +1717,7 @@
           "nb_courses": 39,
           "nb_victoires": 3,
           "nb_places": 22,
-          "cote": 11.0,
+          "cote": 12.0,
           "cote_tendance": "",
           "cote_reference": 15.0
         },
@@ -1719,7 +1740,7 @@
           "nb_courses": 53,
           "nb_victoires": 4,
           "nb_places": 27,
-          "cote": 18.0,
+          "cote": 19.0,
           "cote_tendance": "",
           "cote_reference": 21.0
         },
@@ -1742,7 +1763,7 @@
           "nb_courses": 12,
           "nb_victoires": 0,
           "nb_places": 12,
-          "cote": 20.0,
+          "cote": 24.0,
           "cote_tendance": "",
           "cote_reference": 18.0
         },
@@ -1765,7 +1786,7 @@
           "nb_courses": 15,
           "nb_victoires": 1,
           "nb_places": 11,
-          "cote": 32.0,
+          "cote": 30.0,
           "cote_tendance": "",
           "cote_reference": 25.0
         },
@@ -1788,7 +1809,7 @@
           "nb_courses": 14,
           "nb_victoires": 4,
           "nb_places": 7,
-          "cote": 30.0,
+          "cote": 36.0,
           "cote_tendance": "",
           "cote_reference": 22.0
         },
@@ -1834,7 +1855,7 @@
           "nb_courses": 37,
           "nb_victoires": 3,
           "nb_places": 19,
-          "cote": 25.0,
+          "cote": 26.0,
           "cote_tendance": "",
           "cote_reference": 28.0
         },
@@ -1857,7 +1878,7 @@
           "nb_courses": 33,
           "nb_victoires": 2,
           "nb_places": 23,
-          "cote": 5.0,
+          "cote": 3.8,
           "cote_tendance": "",
           "cote_reference": 5.4
         },
@@ -1880,7 +1901,7 @@
           "nb_courses": 9,
           "nb_victoires": 0,
           "nb_places": 7,
-          "cote": 5.2,
+          "cote": 5.9,
           "cote_tendance": "",
           "cote_reference": 5.4
         },
@@ -1917,7 +1938,7 @@
           "propriétaire": "JDG BLOODSTOCK SERVICES",
           "entraineur": "M.ROLLAND (S)",
           "éleveurs": "MR GEORGE CLOHESSY",
-          "jockey": "F.GILES",
+          "jockey": "F. BAYLE",
           "poids": "69.5 kg",
           "gains": "3621000",
           "musique": "1h8h9h8h8h3h(25)9h4h2h",
@@ -1972,7 +1993,7 @@
           "nb_courses": 11,
           "nb_victoires": 1,
           "nb_places": 9,
-          "cote": 23.0,
+          "cote": 25.0,
           "cote_tendance": "",
           "cote_reference": 21.0
         },
@@ -1995,7 +2016,7 @@
           "nb_courses": 12,
           "nb_victoires": 1,
           "nb_places": 4,
-          "cote": 9.6,
+          "cote": 10.0,
           "cote_tendance": "",
           "cote_reference": 9.7
         },
@@ -2018,7 +2039,7 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 58.0,
+          "cote": 65.0,
           "cote_tendance": "",
           "cote_reference": 57.0
         }
@@ -2054,7 +2075,7 @@
           "nb_courses": 16,
           "nb_victoires": 1,
           "nb_places": 13,
-          "cote": 16.0,
+          "cote": 13.0,
           "cote_tendance": "",
           "cote_reference": 20.0
         },
@@ -2077,7 +2098,7 @@
           "nb_courses": 18,
           "nb_victoires": 8,
           "nb_places": 7,
-          "cote": 9.1,
+          "cote": 7.7,
           "cote_tendance": "",
           "cote_reference": 10.0
         },
@@ -2100,7 +2121,7 @@
           "nb_courses": 11,
           "nb_victoires": 2,
           "nb_places": 8,
-          "cote": 29.0,
+          "cote": 23.0,
           "cote_tendance": "",
           "cote_reference": 54.0
         },
@@ -2123,7 +2144,7 @@
           "nb_courses": 8,
           "nb_victoires": 2,
           "nb_places": 5,
-          "cote": 25.0,
+          "cote": 22.0,
           "cote_tendance": "",
           "cote_reference": 30.0
         },
@@ -2146,7 +2167,7 @@
           "nb_courses": 16,
           "nb_victoires": 3,
           "nb_places": 10,
-          "cote": 38.0,
+          "cote": 31.0,
           "cote_tendance": "",
           "cote_reference": 49.0
         },
@@ -2169,7 +2190,7 @@
           "nb_courses": 18,
           "nb_victoires": 4,
           "nb_places": 11,
-          "cote": 19.0,
+          "cote": 17.0,
           "cote_tendance": "",
           "cote_reference": 28.0
         },
@@ -2192,7 +2213,7 @@
           "nb_courses": 26,
           "nb_victoires": 4,
           "nb_places": 10,
-          "cote": 47.0,
+          "cote": 31.0,
           "cote_tendance": "",
           "cote_reference": 49.0
         },
@@ -2215,7 +2236,7 @@
           "nb_courses": 7,
           "nb_victoires": 1,
           "nb_places": 5,
-          "cote": 1.3,
+          "cote": 1.5,
           "cote_tendance": "",
           "cote_reference": 1.2
         },
