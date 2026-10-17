@@ -4,62 +4,62 @@
   "reunion": 3,
   "heure_depart": 1792239360000,
   "distance": 2000,
-  "scraped_at": "2026-10-17T14:04:45.915143+02:00",
-  "minutes_avant_depart": 11,
+  "scraped_at": "2026-10-17T14:10:45.957977+02:00",
+  "minutes_avant_depart": 5,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MERANO",
-      "cote_live": 5.7,
+      "cote_live": 4.7,
       "cote_reference": 5.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792238668000
+      "timestamp_cote": 1792239020000
     },
     {
       "numPmu": 2,
       "nom": "HORIZON DORE",
-      "cote_live": 2.0,
+      "cote_live": 1.9,
       "cote_reference": 1.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792238668000
+      "timestamp_cote": 1792239020000
     },
     {
       "numPmu": 3,
       "nom": "BEVAN",
-      "cote_live": 8.6,
+      "cote_live": 11.0,
       "cote_reference": 7.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792238668000
+      "timestamp_cote": 1792239020000
     },
     {
       "numPmu": 4,
       "nom": "ALSABA",
-      "cote_live": 9.2,
+      "cote_live": 11.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792238668000
+      "timestamp_cote": 1792239020000
     },
     {
       "numPmu": 5,
       "nom": "SAINT MARTIN",
-      "cote_live": 11.0,
+      "cote_live": 13.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792238668000
+      "timestamp_cote": 1792239020000
     },
     {
       "numPmu": 6,
       "nom": "TESTIFY",
-      "cote_live": 6.4,
+      "cote_live": 6.5,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792238668000
+      "timestamp_cote": 1792239020000
     }
   ],
   "hippodrome": "BORELY",
@@ -122,6 +122,42 @@
         "4": 9.2,
         "5": 11.0,
         "6": 6.4
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T14:08:46.854535+02:00",
+      "minutes_avant_depart": 7.22790925,
+      "cotes": {
+        "1": 4.6,
+        "2": 1.9,
+        "3": 10.0,
+        "4": 10.0,
+        "5": 13.0,
+        "6": 7.3
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T14:10:05.749530+02:00",
+      "minutes_avant_depart": 5.906019333333333,
+      "cotes": {
+        "1": 4.9,
+        "2": 1.8,
+        "3": 11.0,
+        "4": 11.0,
+        "5": 14.0,
+        "6": 7.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T14:10:45.957977+02:00",
+      "minutes_avant_depart": 5.2393501166666665,
+      "cotes": {
+        "1": 4.7,
+        "2": 1.9,
+        "3": 11.0,
+        "4": 11.0,
+        "5": 13.0,
+        "6": 6.5
       }
     }
   ]
