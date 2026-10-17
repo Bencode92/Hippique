@@ -4,8 +4,8 @@
   "reunion": 1,
   "heure_depart": 1792252380000,
   "distance": 4300,
-  "scraped_at": "2026-10-17T17:56:12.440410+02:00",
-  "minutes_avant_depart": -3,
+  "scraped_at": "2026-10-17T17:57:32.435456+02:00",
+  "minutes_avant_depart": -5,
   "participants": [
     {
       "numPmu": 1,
@@ -14,16 +14,16 @@
       "cote_reference": 41.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792252559000
+      "timestamp_cote": 1792252600000
     },
     {
       "numPmu": 2,
       "nom": "LE PRETENDANT",
-      "cote_live": 35.0,
+      "cote_live": 36.0,
       "cote_reference": 30.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792252559000
+      "timestamp_cote": 1792252600000
     },
     {
       "numPmu": 3,
@@ -32,7 +32,7 @@
       "cote_reference": 32.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792252559000
+      "timestamp_cote": 1792252600000
     },
     {
       "numPmu": 4,
@@ -41,34 +41,34 @@
       "cote_reference": 9.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792252559000
+      "timestamp_cote": 1792252600000
     },
     {
       "numPmu": 5,
       "nom": "IGLOO IGLOO",
-      "cote_live": 50.0,
+      "cote_live": 51.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792252559000
+      "timestamp_cote": 1792252600000
     },
     {
       "numPmu": 6,
       "nom": "KESIUS DU GRANIT",
-      "cote_live": 17.0,
+      "cote_live": 16.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792252559000
+      "timestamp_cote": 1792252600000
     },
     {
       "numPmu": 7,
       "nom": "LYCAON DE BERCE",
-      "cote_live": 100.0,
+      "cote_live": 93.0,
       "cote_reference": 67.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792252559000
+      "timestamp_cote": 1792252600000
     },
     {
       "numPmu": 8,
@@ -77,25 +77,25 @@
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792252559000
+      "timestamp_cote": 1792252600000
     },
     {
       "numPmu": 9,
       "nom": "KIDNAPPEUR",
-      "cote_live": 7.4,
+      "cote_live": 7.2,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792252559000
+      "timestamp_cote": 1792252600000
     },
     {
       "numPmu": 10,
       "nom": "JUMPER BAIE",
-      "cote_live": 24.0,
+      "cote_live": 23.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792252559000
+      "timestamp_cote": 1792252600000
     },
     {
       "numPmu": 11,
@@ -104,7 +104,7 @@
       "cote_reference": 4.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792252559000
+      "timestamp_cote": 1792252600000
     },
     {
       "numPmu": 12,
@@ -113,25 +113,25 @@
       "cote_reference": 9.4,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792252559000
+      "timestamp_cote": 1792252600000
     },
     {
       "numPmu": 13,
       "nom": "BOOM BOOM CIAO",
-      "cote_live": 38.0,
+      "cote_live": 39.0,
       "cote_reference": 28.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792252559000
+      "timestamp_cote": 1792252600000
     },
     {
       "numPmu": 14,
       "nom": "KING LANE",
-      "cote_live": 16.0,
+      "cote_live": 17.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792252559000
+      "timestamp_cote": 1792252600000
     },
     {
       "numPmu": 15,
@@ -140,7 +140,7 @@
       "cote_reference": 9.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792252559000
+      "timestamp_cote": 1792252600000
     },
     {
       "numPmu": 16,
@@ -149,7 +149,7 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792252559000
+      "timestamp_cote": 1792252600000
     },
     {
       "numPmu": 17,
@@ -158,16 +158,16 @@
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792252559000
+      "timestamp_cote": 1792252600000
     },
     {
       "numPmu": 18,
       "nom": "KOKTAIL BRESILIEN",
-      "cote_live": 87.0,
+      "cote_live": 77.0,
       "cote_reference": 56.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792252559000
+      "timestamp_cote": 1792252600000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -650,6 +650,54 @@
         "16": 18.0,
         "17": 12.0,
         "18": 87.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T17:56:52.624761+02:00",
+      "minutes_avant_depart": -3.8710381166666665,
+      "cotes": {
+        "1": 60.0,
+        "2": 36.0,
+        "3": 37.0,
+        "4": 14.0,
+        "5": 51.0,
+        "6": 16.0,
+        "7": 93.0,
+        "8": 19.0,
+        "9": 7.2,
+        "10": 23.0,
+        "11": 5.8,
+        "12": 5.7,
+        "13": 39.0,
+        "14": 17.0,
+        "15": 10.0,
+        "16": 18.0,
+        "17": 12.0,
+        "18": 77.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T17:57:32.435456+02:00",
+      "minutes_avant_depart": -4.5377066500000005,
+      "cotes": {
+        "1": 60.0,
+        "2": 36.0,
+        "3": 37.0,
+        "4": 14.0,
+        "5": 51.0,
+        "6": 16.0,
+        "7": 93.0,
+        "8": 19.0,
+        "9": 7.2,
+        "10": 23.0,
+        "11": 5.8,
+        "12": 5.7,
+        "13": 39.0,
+        "14": 17.0,
+        "15": 10.0,
+        "16": 18.0,
+        "17": 12.0,
+        "18": 77.0
       }
     }
   ]
