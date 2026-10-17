@@ -4,62 +4,62 @@
   "reunion": 1,
   "heure_depart": 1792250280000,
   "distance": 4400,
-  "scraped_at": "2026-10-17T17:18:52.500038+02:00",
-  "minutes_avant_depart": -1,
+  "scraped_at": "2026-10-17T17:21:32.779936+02:00",
+  "minutes_avant_depart": -4,
   "participants": [
     {
       "numPmu": 1,
       "nom": "TOSCANA DU BERLAIS",
-      "cote_live": 23.0,
+      "cote_live": 24.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792250324000
+      "timestamp_cote": 1792250370000
     },
     {
       "numPmu": 2,
       "nom": "BON GARCON",
-      "cote_live": 19.0,
+      "cote_live": 20.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792250324000
+      "timestamp_cote": 1792250370000
     },
     {
       "numPmu": 3,
       "nom": "GOLIATH DU RHEU",
-      "cote_live": 2.0,
+      "cote_live": 1.9,
       "cote_reference": 2.9,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792250324000
+      "timestamp_cote": 1792250370000
     },
     {
       "numPmu": 4,
       "nom": "KILOMETRE ILLIMITE",
-      "cote_live": 9.4,
+      "cote_live": 9.8,
       "cote_reference": 4.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792250324000
+      "timestamp_cote": 1792250370000
     },
     {
       "numPmu": 5,
       "nom": "IN LOVE",
-      "cote_live": 107.0,
+      "cote_live": 113.0,
       "cote_reference": 53.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792250324000
+      "timestamp_cote": 1792250370000
     },
     {
       "numPmu": 6,
       "nom": "JAZZ MANOUCHE",
-      "cote_live": 29.0,
+      "cote_live": 28.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792250324000
+      "timestamp_cote": 1792250370000
     },
     {
       "numPmu": 7,
@@ -68,16 +68,16 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792250324000
+      "timestamp_cote": 1792250370000
     },
     {
       "numPmu": 8,
       "nom": "KOLOKICO",
-      "cote_live": 5.0,
+      "cote_live": 4.9,
       "cote_reference": 6.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792250324000
+      "timestamp_cote": 1792250370000
     },
     {
       "numPmu": 9,
@@ -86,7 +86,7 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792250324000
+      "timestamp_cote": 1792250370000
     },
     {
       "numPmu": 10,
@@ -95,7 +95,7 @@
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792250324000
+      "timestamp_cote": 1792250370000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -368,6 +368,70 @@
         "6": 29.0,
         "7": 11.0,
         "8": 5.0,
+        "9": 17.0,
+        "10": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T17:19:32.736847+02:00",
+      "minutes_avant_depart": -1.5375810166666668,
+      "cotes": {
+        "1": 24.0,
+        "2": 20.0,
+        "3": 1.9,
+        "4": 9.8,
+        "5": 113.0,
+        "6": 28.0,
+        "7": 11.0,
+        "8": 4.9,
+        "9": 17.0,
+        "10": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T17:20:12.428848+02:00",
+      "minutes_avant_depart": -2.2042501333333333,
+      "cotes": {
+        "1": 24.0,
+        "2": 20.0,
+        "3": 1.9,
+        "4": 9.8,
+        "5": 113.0,
+        "6": 28.0,
+        "7": 11.0,
+        "8": 4.9,
+        "9": 17.0,
+        "10": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T17:20:52.404578+02:00",
+      "minutes_avant_depart": -2.8709188333333335,
+      "cotes": {
+        "1": 24.0,
+        "2": 20.0,
+        "3": 1.9,
+        "4": 9.8,
+        "5": 113.0,
+        "6": 28.0,
+        "7": 11.0,
+        "8": 4.9,
+        "9": 17.0,
+        "10": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-17T17:21:32.779936+02:00",
+      "minutes_avant_depart": -3.5422202166666663,
+      "cotes": {
+        "1": 24.0,
+        "2": 20.0,
+        "3": 1.9,
+        "4": 9.8,
+        "5": 113.0,
+        "6": 28.0,
+        "7": 11.0,
+        "8": 4.9,
         "9": 17.0,
         "10": 20.0
       }
