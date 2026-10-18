@@ -4,89 +4,89 @@
   "reunion": 9,
   "heure_depart": 1792336500000,
   "distance": 2850,
-  "scraped_at": "2026-10-18T17:13:32.236960+02:00",
-  "minutes_avant_depart": 1,
+  "scraped_at": "2026-10-18T17:16:12.169423+02:00",
+  "minutes_avant_depart": -1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "GOLD SPEED",
-      "cote_live": 120.0,
+      "cote_live": 153.0,
       "cote_reference": 147.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792336411000
+      "timestamp_cote": 1792336530000
     },
     {
       "numPmu": 2,
       "nom": "GALOPIN DE BIANCA",
-      "cote_live": 106.0,
+      "cote_live": 130.0,
       "cote_reference": 129.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792336411000
+      "timestamp_cote": 1792336530000
     },
     {
       "numPmu": 3,
       "nom": "GEDEON DAIRPET",
-      "cote_live": 116.0,
+      "cote_live": 157.0,
       "cote_reference": 86.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792336411000
+      "timestamp_cote": 1792336530000
     },
     {
       "numPmu": 4,
       "nom": "IMPERIAL KEY",
-      "cote_live": 100.0,
+      "cote_live": 111.0,
       "cote_reference": 172.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792336411000
+      "timestamp_cote": 1792336530000
     },
     {
       "numPmu": 5,
       "nom": "IMPERATRICE VITELA",
-      "cote_live": 15.0,
+      "cote_live": 12.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792336411000
+      "timestamp_cote": 1792336530000
     },
     {
       "numPmu": 6,
       "nom": "FLASH MONEY",
-      "cote_live": 22.0,
+      "cote_live": 31.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792336411000
+      "timestamp_cote": 1792336530000
     },
     {
       "numPmu": 7,
       "nom": "ISTORIC MAUZUN",
-      "cote_live": 4.2,
+      "cote_live": 3.6,
       "cote_reference": 5.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792336411000
+      "timestamp_cote": 1792336530000
     },
     {
       "numPmu": 8,
       "nom": "INHERIT",
-      "cote_live": 8.3,
+      "cote_live": 7.9,
       "cote_reference": 6.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792336411000
+      "timestamp_cote": 1792336530000
     },
     {
       "numPmu": 9,
       "nom": "JOLIVERT DU GERS",
-      "cote_live": 1.5,
+      "cote_live": 1.6,
       "cote_reference": 1.4,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792336411000
+      "timestamp_cote": 1792336530000
     }
   ],
   "hippodrome": "LYON-PARILLY",
@@ -284,6 +284,66 @@
         "7": 4.2,
         "8": 8.3,
         "9": 1.5
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T17:14:12.486004+02:00",
+      "minutes_avant_depart": 0.8027202333333334,
+      "cotes": {
+        "1": 145.0,
+        "2": 118.0,
+        "3": 141.0,
+        "4": 110.0,
+        "5": 12.0,
+        "6": 27.0,
+        "7": 4.3,
+        "8": 9.6,
+        "9": 1.5
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T17:14:52.221374+02:00",
+      "minutes_avant_depart": 0.13605156666666665,
+      "cotes": {
+        "1": 147.0,
+        "2": 123.0,
+        "3": 152.0,
+        "4": 110.0,
+        "5": 12.0,
+        "6": 30.0,
+        "7": 3.6,
+        "8": 7.2,
+        "9": 1.7
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T17:15:32.432980+02:00",
+      "minutes_avant_depart": -0.5306172333333333,
+      "cotes": {
+        "1": 153.0,
+        "2": 130.0,
+        "3": 157.0,
+        "4": 109.0,
+        "5": 12.0,
+        "6": 31.0,
+        "7": 3.6,
+        "8": 7.9,
+        "9": 1.6
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T17:16:12.169423+02:00",
+      "minutes_avant_depart": -1.2011667666666668,
+      "cotes": {
+        "1": 153.0,
+        "2": 130.0,
+        "3": 157.0,
+        "4": 111.0,
+        "5": 12.0,
+        "6": 31.0,
+        "7": 3.6,
+        "8": 7.9,
+        "9": 1.6
       }
     }
   ]
