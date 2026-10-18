@@ -164,22 +164,22 @@
 
 ### 8. PRIX DE BEAULAC
 
-*17h30 · attelé · 2550 m · 15 partants · cotes à T−5:48*
+*17h30 · attelé · 2550 m · 15 partants · cotes à T−3:08*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 4 | HORIZON DE LARRE | 3,8 | 4,3 | M. RAHAULT |
-| 12 | JASMIN DU PERRE | 8,5 | 7,2 | V. MARC-MARTIN |
-| 2 | IPANO STAR | 9,6 | 43 | TH. MARTIN |
-| 9 | ICARE PASSION | 10 | 18 | P. BESSON |
-| 15 | JACODUS DU MELEUC | 10 | 18 | C. LANGLOIS |
-| 14 | HARMAKHIS | 11 | 12 | Mlle ADELINE HARET |
-| 6 | HOBBY DE L'EVRE | 13 | 12 | C. CHESNE |
-| 3 | IBACA | 16 | 4,1 | B. CANDELLE-GARDENQ |
-| 7 | IPAD LILA | 16 | 18 | J.M. BOINOT |
-| 1 | HAUGAIN | 17 | 18 | C. MAROLLEAU |
+| 4 | HORIZON DE LARRE | 3,9 | 4,3 | M. RAHAULT |
+| 2 | IPANO STAR | 7,7 | 43 | TH. MARTIN |
+| 9 | ICARE PASSION | 8,5 | 18 | P. BESSON |
+| 12 | JASMIN DU PERRE | 9,1 | 7,2 | V. MARC-MARTIN |
+| 15 | JACODUS DU MELEUC | 9,6 | 18 | C. LANGLOIS |
+| 3 | IBACA | 11 | 4,1 | B. CANDELLE-GARDENQ |
+| 6 | HOBBY DE L'EVRE | 12 | 12 | C. CHESNE |
+| 14 | HARMAKHIS | 17 | 12 | Mlle ADELINE HARET |
+| 1 | HAUGAIN | 18 | 18 | C. MAROLLEAU |
+| 7 | IPAD LILA | 22 | 18 | J.M. BOINOT |
 | 5 | INDIGO SIMARDIERE | 29 | 43 | H. JOUAULT |
-| 8 | JUSTICE PROUVEE | 35 | 64 | L. POUTREL |
-| 13 | HARDI | 43 | 64 | R. FARRUGIA |
-| 11 | JADE DALAMEDA | 63 | 21 | TH. CORBES |
-| 10 | HENRI GAILLARD | 70 | 32 | G. COCARD |
+| 13 | HARDI | 48 | 64 | R. FARRUGIA |
+| 8 | JUSTICE PROUVEE | 56 | 64 | L. POUTREL |
+| 11 | JADE DALAMEDA | 81 | 21 | TH. CORBES |
+| 10 | HENRI GAILLARD | 109 | 32 | G. COCARD |
