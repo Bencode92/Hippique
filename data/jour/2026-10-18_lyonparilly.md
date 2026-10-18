@@ -1,6 +1,6 @@
 # LYON-PARILLY — 18/10/2026
 
-9 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -94,24 +94,24 @@
 
 ### 7. PRIX DU BRIONNAIS (GR.B)
 
-*16h05 · attelé · 2850 m · 14 partants · cotes de l'extraction*
+*16h05 · attelé · 2850 m · 14 partants · cotes à T−29:23*
 
-| n° | cheval | cote | jockey |
-|--:|:--|--:|:--|
-| 6 | NEW BOSS | 2,2 | A. TINTILLIER |
-| 5 | NELLY DE BERTRANGE | 3,8 | M. ABRIVARD |
-| 10 | NEXPRESSO BLEU | 9,5 | N. CORMY |
-| 8 | NOELLE DES ATIAUX | 12 | B. RUET |
-| 14 | NEO WYNN | 17 | ALEXIS LERENARD |
-| 7 | NEVER GIVE UP | 28 | M. DUJMIC |
-| 9 | NOUVEAU DE LARRE | 28 | Q. CHAUVE-LAFFAY |
-| 13 | NAOMIE FAMILY | 28 | F.J. PELTIER |
-| 2 | NANIE ONE | 42 | B. CHOURRE |
-| 3 | NICE GALAXIE | 42 | M. AOUDIA |
-| 4 | NOEMIE RIDGEHEAD | 42 | F. BROUST |
-| 12 | NIMBUS DES BROUETS | 85 | F. BONNEFOY |
-| 1 | NEW ONE PAT | – | CH.A. BUFFAVAND |
-| 11 | NUIT DES AUDICHONS | – | P. CALLIER |
+| n° | cheval | cote | matin | jockey |
+|--:|:--|--:|--:|:--|
+| 6 | NEW BOSS | 2,8 | 2,2 | A. TINTILLIER |
+| 5 | NELLY DE BERTRANGE | 4 | 3,8 | M. ABRIVARD |
+| 10 | NEXPRESSO BLEU | 6,8 | 9,5 | N. CORMY |
+| 8 | NOELLE DES ATIAUX | 12 | 12 | B. RUET |
+| 14 | NEO WYNN | 13 | 17 | ALEXIS LERENARD |
+| 9 | NOUVEAU DE LARRE | 15 | 28 | Q. CHAUVE-LAFFAY |
+| 7 | NEVER GIVE UP | 27 | 28 | M. DUJMIC |
+| 13 | NAOMIE FAMILY | 27 | 28 | F.J. PELTIER |
+| 11 | NUIT DES AUDICHONS | 36 | – | P. CALLIER |
+| 2 | NANIE ONE | 54 | 42 | B. CHOURRE |
+| 3 | NICE GALAXIE | 54 | 42 | M. AOUDIA |
+| 4 | NOEMIE RIDGEHEAD | 54 | 42 | F. BROUST |
+| 1 | NEW ONE PAT | 109 | – | CH.A. BUFFAVAND |
+| 12 | NIMBUS DES BROUETS | 109 | 85 | F. BONNEFOY |
 
 ### 8. PRIX DE LA CORSE DU SUD
 
