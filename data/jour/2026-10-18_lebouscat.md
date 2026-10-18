@@ -1,6 +1,6 @@
 # LE BOUSCAT — 18/10/2026
 
-8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
@@ -53,50 +53,50 @@
 
 ### 3. PRIX SISYPHE II - PRIX JEANOT LAMAISON
 
-*15h00 · attelé · 2550 m · 15 partants · cotes à T−2:23*
+*15h00 · attelé · 2550 m · 15 partants · cotes à T−0:24*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 11 | JADE DES BRETTES | 3,8 | 4,9 | P. BEASSE |
-| 2 | JUMPIE PURPLE | 8,3 | 11 | L. CHUPIN |
-| 1 | JOBERT DU MOULIN | 8,5 | 7 | TH. GOUT |
-| 3 | JOSVIL | 10 | 7,3 | D. BARANGER |
-| 4 | JADOR JOSSELYN | 10 | 21 | CH. MANEGAT |
-| 6 | JUNIOR DU GADE | 11 | 10 | Mlle A. DUPUIS |
-| 8 | JOSS GRAND PRE | 11 | 25 | E. SALMON |
-| 7 | JOYEUSE D'ATOUT | 22 | 19 | J.B. PAREY |
-| 13 | JAGUAR BLEU | 22 | 16 | G. TOQUE |
-| 5 | JAVA DE LIGNY | 27 | 21 | M. CATHERINE-PEZET |
+| 11 | JADE DES BRETTES | 2,3 | 4,9 | P. BEASSE |
+| 1 | JOBERT DU MOULIN | 7 | 7 | TH. GOUT |
+| 6 | JUNIOR DU GADE | 9,2 | 10 | Mlle A. DUPUIS |
+| 2 | JUMPIE PURPLE | 9,3 | 11 | L. CHUPIN |
+| 4 | JADOR JOSSELYN | 12 | 21 | CH. MANEGAT |
+| 8 | JOSS GRAND PRE | 17 | 25 | E. SALMON |
+| 3 | JOSVIL | 21 | 7,3 | D. BARANGER |
 | 10 | JACY DE NARMONT | 27 | 29 | NOE BRUN |
-| 9 | JOYAU WINNER | 28 | 12 | Mlle L. VOISIN |
-| 14 | JINKGO VEETA | 31 | 29 | Mlle A. ANDRIEUX |
-| 12 | JEANBAT DANOVER | 51 | 23 | N. BRUN |
-| 15 | JASMIN DE COEUR | 57 | 25 | R. FOUZER |
+| 13 | JAGUAR BLEU | 37 | 16 | G. TOQUE |
+| 5 | JAVA DE LIGNY | 44 | 21 | M. CATHERINE-PEZET |
+| 7 | JOYEUSE D'ATOUT | 45 | 19 | J.B. PAREY |
+| 12 | JEANBAT DANOVER | 57 | 23 | N. BRUN |
+| 9 | JOYAU WINNER | 63 | 12 | Mlle L. VOISIN |
+| 14 | JINKGO VEETA | 70 | 29 | Mlle A. ANDRIEUX |
+| 15 | JASMIN DE COEUR | 102 | 25 | R. FOUZER |
 
 ### 4. PRIX DE TIVOLI
 
-*15h30 · attelé · 2650 m · 18 partants · cotes de l'extraction*
+*15h30 · attelé · 2650 m · 18 partants · cotes à T−29:43*
 
-| n° | cheval | cote | jockey |
-|--:|:--|--:|:--|
-| 7 | LUDO DES LUCAS | 4,3 | PIERRICK LE MOEL |
-| 18 | LOUXOR BOCAIN | 4,3 | M. CRIADO |
-| 1 | LAZIO POTERIE | 10 | E. AUDEBERT |
-| 14 | LUCKY DESIR | 10 | A. MILLET |
-| 2 | LOROSYO | 13 | A.A. CHAVATTE |
-| 15 | LASCO DES LUCAS | 16 | A. HONORE |
-| 16 | LORD THOMAS | 17 | J. CHAVATTE |
-| 10 | LE GEANT D'ATTAQUE | 20 | O. PICARD |
-| 4 | LECCE MARIS | 22 | R. BOUVIER |
-| 3 | LOUSTIC DU MIDI | 32 | PH. MASSCHAELE |
-| 8 | LYOUBOV SEVEN | 32 | Mme LANA HENRY |
-| 17 | LOVE QUEEN | 32 | TH. DUCOS |
-| 9 | LE KADOR | 40 | E. SALMON |
-| 13 | LUCRECE | 40 | F. JEANNEAU |
-| 12 | LOUISE D'ERPION | 53 | ET. CLOZIER |
-| 5 | LAMAGISTERE | 80 | K. BUSNEL |
-| 11 | LAUREATE SPEED | 80 | D. BROSSARD |
-| 6 | LISBETH DU BOCAGE | 160 | M. TIJOU |
+| n° | cheval | cote | matin | jockey |
+|--:|:--|--:|--:|:--|
+| 7 | LUDO DES LUCAS | 4,7 | 4,3 | PIERRICK LE MOEL |
+| 18 | LOUXOR BOCAIN | 4,7 | 4,3 | M. CRIADO |
+| 1 | LAZIO POTERIE | 10 | 10 | E. AUDEBERT |
+| 14 | LUCKY DESIR | 10 | 10 | A. MILLET |
+| 17 | LOVE QUEEN | 10 | 32 | TH. DUCOS |
+| 2 | LOROSYO | 13 | 13 | A.A. CHAVATTE |
+| 15 | LASCO DES LUCAS | 13 | 16 | A. HONORE |
+| 16 | LORD THOMAS | 17 | 17 | J. CHAVATTE |
+| 13 | LUCRECE | 19 | 40 | F. JEANNEAU |
+| 10 | LE GEANT D'ATTAQUE | 20 | 20 | O. PICARD |
+| 4 | LECCE MARIS | 24 | 22 | R. BOUVIER |
+| 8 | LYOUBOV SEVEN | 29 | 32 | Mme LANA HENRY |
+| 3 | LOUSTIC DU MIDI | 34 | 32 | PH. MASSCHAELE |
+| 9 | LE KADOR | 43 | 40 | E. SALMON |
+| 12 | LOUISE D'ERPION | 43 | 53 | ET. CLOZIER |
+| 5 | LAMAGISTERE | 87 | 80 | K. BUSNEL |
+| 11 | LAUREATE SPEED | 87 | 80 | D. BROSSARD |
+| 6 | LISBETH DU BOCAGE | 174 | 160 | M. TIJOU |
 
 ### 5. PRIX DE MONADEY
 
