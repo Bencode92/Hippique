@@ -1,6 +1,6 @@
 # LE BOUSCAT — 18/10/2026
 
-8 courses. 6 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 7 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
@@ -144,42 +144,42 @@
 
 ### 7. PRIX DE L'HIPPODROME DE LUXE (GR.B)
 
-*17h00 · attelé · 2550 m · 13 partants · cotes à T−2:28*
+*17h00 · attelé · 2550 m · 13 partants · cotes à T−0:28*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 2 | MAYERLING LEGACY | 3,2 | 2,6 | Mme LANA HENRY |
-| 8 | MON REVE | 4,8 | 3,8 | L. DELANOE |
-| 1 | MIMI D'AMBRI | 6,6 | 21 | J. CHAVATTE |
-| 3 | MOOGLI HEULINOIS | 8,4 | 8,7 | E. AUDEBERT |
-| 6 | MARCUS DECHAMBOU | 10 | 16 | TH. DUCOS |
-| 7 | MANGO KALOUMA | 10 | 8,1 | F. CLOZIER |
-| 11 | MEDOC DES GLENAN | 12 | 18 | N. PICARD |
-| 10 | MATIS DU VIGNAC | 45 | 40 | A. HONORE |
-| 9 | MILWAUKEE D'OYSE | 51 | – | N. PACHA |
-| 12 | MORIAC | 63 | 25 | M. TIJOU |
-| 4 | MELODY DU CEBE | 98 | 93 | PIERRICK LE MOEL |
-| 13 | MALDIVE DE TILLARD | 120 | 56 | N. BRUN |
-| 5 | MUSE DU LOISIR | 154 | 70 | D.G. CHAVATTE |
+| 2 | MAYERLING LEGACY | 2,7 | 2,6 | Mme LANA HENRY |
+| 8 | MON REVE | 5,3 | 3,8 | L. DELANOE |
+| 1 | MIMI D'AMBRI | 5,4 | 21 | J. CHAVATTE |
+| 7 | MANGO KALOUMA | 9,5 | 8,1 | F. CLOZIER |
+| 3 | MOOGLI HEULINOIS | 10 | 8,7 | E. AUDEBERT |
+| 6 | MARCUS DECHAMBOU | 13 | 16 | TH. DUCOS |
+| 11 | MEDOC DES GLENAN | 15 | 18 | N. PICARD |
+| 9 | MILWAUKEE D'OYSE | 49 | – | N. PACHA |
+| 10 | MATIS DU VIGNAC | 82 | 40 | A. HONORE |
+| 12 | MORIAC | 90 | 25 | M. TIJOU |
+| 4 | MELODY DU CEBE | 116 | 93 | PIERRICK LE MOEL |
+| 13 | MALDIVE DE TILLARD | 220 | 56 | N. BRUN |
+| 5 | MUSE DU LOISIR | 283 | 70 | D.G. CHAVATTE |
 
 ### 8. PRIX DE BEAULAC
 
-*17h30 · attelé · 2550 m · 15 partants · cotes de l'extraction*
+*17h30 · attelé · 2550 m · 15 partants · cotes à T−29:48*
 
-| n° | cheval | cote | jockey |
-|--:|:--|--:|:--|
-| 3 | IBACA | 4,1 | B. CANDELLE-GARDENQ |
-| 4 | HORIZON DE LARRE | 4,3 | M. RAHAULT |
-| 12 | JASMIN DU PERRE | 7,2 | V. MARC-MARTIN |
-| 6 | HOBBY DE L'EVRE | 12 | C. CHESNE |
-| 14 | HARMAKHIS | 12 | Mlle ADELINE HARET |
-| 1 | HAUGAIN | 18 | C. MAROLLEAU |
-| 7 | IPAD LILA | 18 | J.M. BOINOT |
-| 9 | ICARE PASSION | 18 | P. BESSON |
-| 15 | JACODUS DU MELEUC | 18 | C. LANGLOIS |
-| 11 | JADE DALAMEDA | 21 | TH. CORBES |
-| 10 | HENRI GAILLARD | 32 | G. COCARD |
-| 2 | IPANO STAR | 43 | TH. MARTIN |
-| 5 | INDIGO SIMARDIERE | 43 | H. JOUAULT |
-| 8 | JUSTICE PROUVEE | 64 | L. POUTREL |
-| 13 | HARDI | 64 | R. FARRUGIA |
+| n° | cheval | cote | matin | jockey |
+|--:|:--|--:|--:|:--|
+| 4 | HORIZON DE LARRE | 4,5 | 4,3 | M. RAHAULT |
+| 3 | IBACA | 5,4 | 4,1 | B. CANDELLE-GARDENQ |
+| 12 | JASMIN DU PERRE | 7,9 | 7,2 | V. MARC-MARTIN |
+| 6 | HOBBY DE L'EVRE | 9,1 | 12 | C. CHESNE |
+| 7 | IPAD LILA | 14 | 18 | J.M. BOINOT |
+| 9 | ICARE PASSION | 15 | 18 | P. BESSON |
+| 15 | JACODUS DU MELEUC | 15 | 18 | C. LANGLOIS |
+| 1 | HAUGAIN | 17 | 18 | C. MAROLLEAU |
+| 8 | JUSTICE PROUVEE | 17 | 64 | L. POUTREL |
+| 14 | HARMAKHIS | 17 | 12 | Mlle ADELINE HARET |
+| 5 | INDIGO SIMARDIERE | 29 | 43 | H. JOUAULT |
+| 11 | JADE DALAMEDA | 29 | 21 | TH. CORBES |
+| 2 | IPANO STAR | 34 | 43 | TH. MARTIN |
+| 10 | HENRI GAILLARD | 43 | 32 | G. COCARD |
+| 13 | HARDI | 87 | 64 | R. FARRUGIA |
