@@ -2,118 +2,118 @@
   "course": "PRIX LE TREFLE - BEAUCAMPS LE VIEUX",
   "numero": 2,
   "reunion": 4,
-  "heure_depart": 1792334520000,
+  "heure_depart": 1792334580000,
   "distance": 2900,
-  "scraped_at": "2026-10-18T16:20:52.277591+02:00",
-  "minutes_avant_depart": 21,
+  "scraped_at": "2026-10-18T16:24:52.344730+02:00",
+  "minutes_avant_depart": 18,
   "participants": [
     {
       "numPmu": 1,
       "nom": "LETS GO HAPPY",
-      "cote_live": 40.0,
+      "cote_live": 42.0,
       "cote_reference": 35.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792333229000
+      "timestamp_cote": 1792333471000
     },
     {
       "numPmu": 2,
       "nom": "LUGANO DU CADRAN",
-      "cote_live": 21.0,
-      "cote_reference": 18.0,
-      "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1792333229000
-    },
-    {
-      "numPmu": 3,
-      "nom": "LATINO FLIGNY",
-      "cote_live": 39.0,
-      "cote_reference": 30.0,
-      "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1792333229000
-    },
-    {
-      "numPmu": 4,
-      "nom": "LUPIN DU BOURG",
-      "cote_live": 6.7,
-      "cote_reference": 7.0,
-      "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1792333229000
-    },
-    {
-      "numPmu": 5,
-      "nom": "LACLOS",
       "cote_live": 22.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792333229000
+      "timestamp_cote": 1792333471000
+    },
+    {
+      "numPmu": 3,
+      "nom": "LATINO FLIGNY",
+      "cote_live": 42.0,
+      "cote_reference": 30.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792333471000
+    },
+    {
+      "numPmu": 4,
+      "nom": "LUPIN DU BOURG",
+      "cote_live": 6.9,
+      "cote_reference": 7.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792333471000
+    },
+    {
+      "numPmu": 5,
+      "nom": "LACLOS",
+      "cote_live": 23.0,
+      "cote_reference": 18.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792333471000
     },
     {
       "numPmu": 6,
       "nom": "LOUP SOLITAIRE",
-      "cote_live": 4.8,
+      "cote_live": 5.0,
       "cote_reference": 4.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792333229000
+      "timestamp_cote": 1792333471000
     },
     {
       "numPmu": 7,
       "nom": "LOKI DE BEAUCAMPS",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792333229000
+      "timestamp_cote": 1792333471000
     },
     {
       "numPmu": 8,
       "nom": "L'ALPHA DE LAUNI",
-      "cote_live": 10.0,
+      "cote_live": 8.5,
       "cote_reference": 9.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792333229000
+      "timestamp_cote": 1792333471000
     },
     {
       "numPmu": 9,
       "nom": "LAMSOU SAN",
-      "cote_live": 7.1,
+      "cote_live": 7.0,
       "cote_reference": 7.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792333229000
+      "timestamp_cote": 1792333471000
     },
     {
       "numPmu": 10,
       "nom": "LIFOU IRIS'EYES",
-      "cote_live": 19.0,
+      "cote_live": 17.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792333229000
+      "timestamp_cote": 1792333471000
     },
     {
       "numPmu": 11,
       "nom": "LUTIN DE BOISNEY",
-      "cote_live": 19.0,
+      "cote_live": 18.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792333229000
+      "timestamp_cote": 1792333471000
     },
     {
       "numPmu": 12,
       "nom": "LUDO PAROYO",
-      "cote_live": 4.4,
+      "cote_live": 4.5,
       "cote_reference": 5.0,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792333229000
+      "timestamp_cote": 1792333471000
     }
   ],
   "hippodrome": "AMIENS",
@@ -170,6 +170,24 @@
         "10": 19.0,
         "11": 19.0,
         "12": 4.4
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T16:24:52.344730+02:00",
+      "minutes_avant_depart": 18.136213433333335,
+      "cotes": {
+        "1": 42.0,
+        "2": 22.0,
+        "3": 42.0,
+        "4": 6.9,
+        "5": 23.0,
+        "6": 5.0,
+        "7": 14.0,
+        "8": 8.5,
+        "9": 7.0,
+        "10": 17.0,
+        "11": 18.0,
+        "12": 4.5
       }
     }
   ]
