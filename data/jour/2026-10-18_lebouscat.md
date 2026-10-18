@@ -1,6 +1,6 @@
 # LE BOUSCAT — 18/10/2026
 
-8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
@@ -99,48 +99,48 @@
 
 ### 5. PRIX DE MONADEY
 
-*16h00 · attelé · 2650 m · 18 partants · cotes à T−1:08*
+*16h00 · attelé · 2650 m · 18 partants · cotes à T−0:27*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 17 | KETAMINE D'UZE | 4,2 | 4,6 | A.A. CHAVATTE |
-| 18 | KISS ME | 4,3 | 3,9 | J.ET. ABRIVARD |
-| 7 | KASHMIR DU BOCAGE | 7,4 | 10 | M. CHAMPENOIS |
-| 13 | KROONER D'ORION | 10 | 13 | M. CRIADO |
-| 15 | KIANNICK OF NOUIC | 14 | 15 | Y. VIDAL |
-| 10 | KADEO JOSSELYN | 17 | 8,8 | E. AUDEBERT |
-| 14 | KNOCK OUT | 17 | 20 | TH. DUCOS |
-| 11 | KENZA D'OURVILLE | 20 | 26 | MAXENCE LECOQ |
-| 12 | KIWI A TROIS | 28 | 16 | PH. BOUTIN |
-| 1 | KISS YOU PIYA | 33 | 29 | A. DE VAUGIRAUD |
-| 16 | KELYO DU SOLNAN | 33 | 42 | N. PACHA |
-| 2 | KING TURGOT | 39 | 32 | K. BUSNEL |
-| 9 | KLINT D'ESPOIR | 44 | 81 | J. CHAVATTE |
-| 4 | KROKEUSE | 49 | 28 | PH. MASSCHAELE |
-| 6 | KAISER STAR | 51 | 50 | PIERRICK LE MOEL |
-| 8 | KINCI DE BERCE | 117 | – | D. BROSSARD |
-| 3 | KEEP TIME | 132 | 135 | R. BOUVIER |
-| 5 | KISS ME MAZELI | 192 | 135 | AXEL LAIGRON |
+| 18 | KISS ME | 3,1 | 3,9 | J.ET. ABRIVARD |
+| 17 | KETAMINE D'UZE | 4,8 | 4,6 | A.A. CHAVATTE |
+| 7 | KASHMIR DU BOCAGE | 8,4 | 10 | M. CHAMPENOIS |
+| 13 | KROONER D'ORION | 11 | 13 | M. CRIADO |
+| 15 | KIANNICK OF NOUIC | 16 | 15 | Y. VIDAL |
+| 14 | KNOCK OUT | 18 | 20 | TH. DUCOS |
+| 10 | KADEO JOSSELYN | 20 | 8,8 | E. AUDEBERT |
+| 11 | KENZA D'OURVILLE | 22 | 26 | MAXENCE LECOQ |
+| 12 | KIWI A TROIS | 26 | 16 | PH. BOUTIN |
+| 16 | KELYO DU SOLNAN | 32 | 42 | N. PACHA |
+| 1 | KISS YOU PIYA | 38 | 29 | A. DE VAUGIRAUD |
+| 2 | KING TURGOT | 42 | 32 | K. BUSNEL |
+| 9 | KLINT D'ESPOIR | 46 | 81 | J. CHAVATTE |
+| 4 | KROKEUSE | 48 | 28 | PH. MASSCHAELE |
+| 6 | KAISER STAR | 52 | 50 | PIERRICK LE MOEL |
+| 3 | KEEP TIME | 133 | 135 | R. BOUVIER |
+| 8 | KINCI DE BERCE | 140 | – | D. BROSSARD |
+| 5 | KISS ME MAZELI | 229 | 135 | AXEL LAIGRON |
 
 ### 6. PRIX DE L'HIPPODROME DE LUXE (GR.A)
 
-*16h30 · attelé · 2550 m · 13 partants · cotes de l'extraction*
+*16h30 · attelé · 2550 m · 13 partants · cotes à T−29:48*
 
-| n° | cheval | cote | jockey |
-|--:|:--|--:|:--|
-| 6 | MANZONI | 1,4 | C. GAZENGEL |
-| 5 | MONA VILI | 8,1 | M.J. BARCELO BISQUERRA |
-| 2 | MEDINA DU CHATELET | 18 | L. GOETZ |
-| 3 | MOHITO DE GUEZ | 20 | M. CRIADO |
-| 11 | MASH POOK | 27 | D. BROSSARD |
-| 10 | MAJOR DE CHOC | 29 | Y. LACOMBE |
-| 7 | MILTON D'OURVILLE | 31 | TH. DUCOS |
-| 9 | MONT VENTOUX | 39 | R. BOUVIER |
-| 1 | MON FAVORI | 43 | V. GONIN |
-| 8 | MARENGO ATALANTE | 43 | AXEL LAIGRON |
-| 4 | MARIE D'ATTAQUE | 87 | N. PACHA |
-| 12 | MILORD DU PERCHE | 87 | R.W. DENECHERRE |
-| 13 | MUSTANG D'ARLINE | 117 | MAXENCE LECOQ |
+| n° | cheval | cote | matin | jockey |
+|--:|:--|--:|--:|:--|
+| 6 | MANZONI | 1,4 | 1,4 | C. GAZENGEL |
+| 5 | MONA VILI | 8,2 | 8,1 | M.J. BARCELO BISQUERRA |
+| 2 | MEDINA DU CHATELET | 17 | 18 | L. GOETZ |
+| 8 | MARENGO ATALANTE | 19 | 43 | AXEL LAIGRON |
+| 3 | MOHITO DE GUEZ | 20 | 20 | M. CRIADO |
+| 7 | MILTON D'OURVILLE | 26 | 31 | TH. DUCOS |
+| 11 | MASH POOK | 28 | 27 | D. BROSSARD |
+| 10 | MAJOR DE CHOC | 30 | 29 | Y. LACOMBE |
+| 1 | MON FAVORI | 41 | 43 | V. GONIN |
+| 9 | MONT VENTOUX | 41 | 39 | R. BOUVIER |
+| 12 | MILORD DU PERCHE | 74 | 87 | R.W. DENECHERRE |
+| 4 | MARIE D'ATTAQUE | 92 | 87 | N. PACHA |
+| 13 | MUSTANG D'ARLINE | 123 | 117 | MAXENCE LECOQ |
 
 ### 7. PRIX DE L'HIPPODROME DE LUXE (GR.B)
 
