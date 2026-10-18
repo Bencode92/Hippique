@@ -74,23 +74,23 @@
 
 ### 6. PRIX DU BRIONNAIS (GR.A)
 
-*15h35 · attelé · 2850 m · 13 partants · cotes à T−2:43*
+*15h35 · attelé · 2850 m · 13 partants · cotes à T−0:03*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 12 | NOBLE COEUR | 3,9 | 4,2 | A. TINTILLIER |
-| 6 | NORIA DU VALLON | 5,7 | 6,3 | M. ABRIVARD |
-| 5 | NOBLESSE DU ROI | 6,5 | 7,6 | A. GAUDIN |
-| 11 | NONO LE ROBOT | 6,8 | 5,4 | F.J. PELTIER |
-| 4 | NELSON D'ECOTAY | 7,6 | 25 | Q. CHAUVE-LAFFAY |
-| 14 | NAKILI D'ALEX | 13 | 6,9 | B. RUET |
-| 9 | NOUKI DES SOURCES | 15 | 9,5 | P. CALLIER |
-| 7 | NOISETTE DOREE | 24 | 25 | B. THOMAS |
-| 10 | NATIF DE BERTRANGE | 29 | 38 | ALEXIS LERENARD |
-| 1 | NAHAR MARCEAUX | 33 | 76 | MARTIAL GAUVIN |
-| 2 | NORIGOULET | 44 | 19 | PH. DANTHU |
-| 13 | NEMO DES ANDRAUX | 89 | 76 | L. BRECHAT |
-| 3 | NEWTON DE RATILLY | – | – | J. CUOQ |
+| 12 | NOBLE COEUR | 4,1 | 4,2 | A. TINTILLIER |
+| 6 | NORIA DU VALLON | 4,9 | 6,3 | M. ABRIVARD |
+| 4 | NELSON D'ECOTAY | 5,8 | 25 | Q. CHAUVE-LAFFAY |
+| 5 | NOBLESSE DU ROI | 7,6 | 7,6 | A. GAUDIN |
+| 11 | NONO LE ROBOT | 8,8 | 5,4 | F.J. PELTIER |
+| 9 | NOUKI DES SOURCES | 18 | 9,5 | P. CALLIER |
+| 14 | NAKILI D'ALEX | 18 | 6,9 | B. RUET |
+| 10 | NATIF DE BERTRANGE | 19 | 38 | ALEXIS LERENARD |
+| 7 | NOISETTE DOREE | 22 | 25 | B. THOMAS |
+| 1 | NAHAR MARCEAUX | 34 | 76 | MARTIAL GAUVIN |
+| 2 | NORIGOULET | 42 | 19 | PH. DANTHU |
+| 13 | NEMO DES ANDRAUX | 64 | 76 | L. BRECHAT |
+| 3 | NEWTON DE RATILLY | 171 | – | J. CUOQ |
 
 ### 7. PRIX DU BRIONNAIS (GR.B)
 

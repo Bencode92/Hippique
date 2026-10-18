@@ -68,19 +68,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX DU CONSEIL DE PARIS
 
-*15h50 · plat · 2200 m · 9 partants · cotes à T−21:04*
+*15h50 · plat · 2200 m · 9 partants · cotes à T−17:04*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 8 | ZARAKI | 2,4 | 1,8 | 2,39 | **+0,6 %** | M.GUYON | 4/2/1/2 |
-| 4 | BEST SECRET | 7,1 | 8,6 | 7,63 | -7,0 % | JW.DOYLE 🏆4e | 162/17/97/8 |
-| 1 | HERBAL | 8,3 | 12 | 9,14 | -9,2 % | C.DEMURO | 1/56/3149/60 |
-| 9 | LAPOTHEOSE | 8,7 | 11 | 10,06 | -13,5 % | A.POUCHIN 🏆8e | 6/8/71/131 |
-| 6 | SINILEO | 9,5 | 7,5 | 12,48 | -23,9 % | A.MADAMET | 10/2/1/2 |
-| 5 | NITOI | 12 | 14 | 14,05 | -14,6 % | S.PASQUIER | 23/2/1/2 |
-| 3 | AMINACO | 14 | 26 | 16,82 | -16,8 % | A.HAMELIN | 22/19/3095/33 |
-| 7 | EUBOA | 21 | 30 | 25,29 | -17,0 % | D.PROVOST | 33/111/179/50 |
-| 2 | REMBRAND TO GO | 24 | 29 | 34,46 | -30,4 % | M.GRANDIN | 3/79/22/325 |
+| 4 | BEST SECRET | 2,9 | 8,6 | 3,28 | -11,5 % | JW.DOYLE 🏆4e | 162/17/97/8 |
+| 8 | ZARAKI | 3,1 | 1,8 | 3,23 | -4,0 % | M.GUYON | 4/2/1/2 |
+| 1 | HERBAL | 10 | 12 | 11,54 | -13,4 % | C.DEMURO | 1/56/3149/60 |
+| 9 | LAPOTHEOSE | 10 | 11 | 13,15 | -24,0 % | A.POUCHIN 🏆8e | 6/8/71/131 |
+| 6 | SINILEO | 12 | 7,5 | 16,73 | -28,3 % | A.MADAMET | 10/2/1/2 |
+| 5 | NITOI | 14 | 14 | 17,11 | -18,2 % | S.PASQUIER | 23/2/1/2 |
+| 3 | AMINACO | 18 | 26 | 22,93 | -21,5 % | A.HAMELIN | 22/19/3095/33 |
+| 2 | REMBRAND TO GO | 22 | 29 | 28,91 | -23,9 % | M.GRANDIN | 3/79/22/325 |
+| 7 | EUBOA | 28 | 30 | 39,17 | -28,5 % | D.PROVOST | 33/111/179/50 |
 
 ### 5. PRIX CASIMIR DELAMARRE
 

@@ -4,125 +4,125 @@
   "reunion": 9,
   "heure_depart": 1792330500000,
   "distance": 2850,
-  "scraped_at": "2026-10-18T15:32:16.704748+02:00",
-  "minutes_avant_depart": 3,
+  "scraped_at": "2026-10-18T15:34:56.880553+02:00",
+  "minutes_avant_depart": 0,
   "participants": [
     {
       "numPmu": 1,
       "nom": "NAHAR MARCEAUX",
-      "cote_live": 33.0,
+      "cote_live": 34.0,
       "cote_reference": 111.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792330314000
+      "timestamp_cote": 1792330490000
     },
     {
       "numPmu": 2,
       "nom": "NORIGOULET",
-      "cote_live": 44.0,
+      "cote_live": 42.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792330314000
+      "timestamp_cote": 1792330490000
     },
     {
       "numPmu": 3,
       "nom": "NEWTON DE RATILLY",
-      "cote_live": null,
+      "cote_live": 171.0,
       "cote_reference": 0.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": null
+      "timestamp_cote": 1792330490000
     },
     {
       "numPmu": 4,
       "nom": "NELSON D'ECOTAY",
-      "cote_live": 7.6,
+      "cote_live": 5.8,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792330314000
+      "timestamp_cote": 1792330490000
     },
     {
       "numPmu": 5,
       "nom": "NOBLESSE DU ROI",
-      "cote_live": 6.5,
+      "cote_live": 7.6,
       "cote_reference": 7.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792330314000
+      "timestamp_cote": 1792330490000
     },
     {
       "numPmu": 6,
       "nom": "NORIA DU VALLON",
-      "cote_live": 5.7,
+      "cote_live": 4.9,
       "cote_reference": 7.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792330314000
+      "timestamp_cote": 1792330490000
     },
     {
       "numPmu": 7,
       "nom": "NOISETTE DOREE",
-      "cote_live": 24.0,
+      "cote_live": 22.0,
       "cote_reference": 37.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792330314000
+      "timestamp_cote": 1792330490000
     },
     {
       "numPmu": 9,
       "nom": "NOUKI DES SOURCES",
-      "cote_live": 15.0,
+      "cote_live": 18.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792330314000
+      "timestamp_cote": 1792330490000
     },
     {
       "numPmu": 10,
       "nom": "NATIF DE BERTRANGE",
-      "cote_live": 29.0,
+      "cote_live": 19.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792330314000
+      "timestamp_cote": 1792330490000
     },
     {
       "numPmu": 11,
       "nom": "NONO LE ROBOT",
-      "cote_live": 6.8,
+      "cote_live": 8.8,
       "cote_reference": 3.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792330314000
+      "timestamp_cote": 1792330490000
     },
     {
       "numPmu": 12,
       "nom": "NOBLE COEUR",
-      "cote_live": 3.9,
+      "cote_live": 4.1,
       "cote_reference": 5.2,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792330314000
+      "timestamp_cote": 1792330490000
     },
     {
       "numPmu": 13,
       "nom": "NEMO DES ANDRAUX",
-      "cote_live": 89.0,
+      "cote_live": 64.0,
       "cote_reference": 55.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792330314000
+      "timestamp_cote": 1792330490000
     },
     {
       "numPmu": 14,
       "nom": "NAKILI D'ALEX",
-      "cote_live": 13.0,
+      "cote_live": 18.0,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792330314000
+      "timestamp_cote": 1792330490000
     }
   ],
   "hippodrome": "LYON-PARILLY",
@@ -334,6 +334,82 @@
         "12": 3.9,
         "13": 89.0,
         "14": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T15:32:56.858486+02:00",
+      "minutes_avant_depart": 2.062727983333333,
+      "cotes": {
+        "1": 35.0,
+        "2": 46.0,
+        "3": null,
+        "4": 7.5,
+        "5": 6.8,
+        "6": 5.8,
+        "7": 23.0,
+        "9": 15.0,
+        "10": 31.0,
+        "11": 7.0,
+        "12": 3.7,
+        "13": 93.0,
+        "14": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T15:33:36.899706+02:00",
+      "minutes_avant_depart": 1.3916677666666668,
+      "cotes": {
+        "1": 34.0,
+        "2": 51.0,
+        "3": 153.0,
+        "4": 7.1,
+        "5": 7.1,
+        "6": 6.4,
+        "7": 18.0,
+        "9": 15.0,
+        "10": 30.0,
+        "11": 7.6,
+        "12": 3.5,
+        "13": 76.0,
+        "14": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T15:34:16.560614+02:00",
+      "minutes_avant_depart": 0.7293902666666666,
+      "cotes": {
+        "1": 34.0,
+        "2": 47.0,
+        "3": 188.0,
+        "4": 7.8,
+        "5": 8.5,
+        "6": 6.3,
+        "7": 17.0,
+        "9": 13.0,
+        "10": 15.0,
+        "11": 7.7,
+        "12": 3.5,
+        "13": 75.0,
+        "14": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T15:34:56.880553+02:00",
+      "minutes_avant_depart": 0.06272141666666667,
+      "cotes": {
+        "1": 34.0,
+        "2": 42.0,
+        "3": 171.0,
+        "4": 5.8,
+        "5": 7.6,
+        "6": 4.9,
+        "7": 22.0,
+        "9": 18.0,
+        "10": 19.0,
+        "11": 8.8,
+        "12": 4.1,
+        "13": 64.0,
+        "14": 18.0
       }
     }
   ]
