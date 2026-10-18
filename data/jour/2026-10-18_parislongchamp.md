@@ -26,22 +26,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 2. PRIX DE BELLEVILLE
 
-*14h33 · plat · 1800 m · 12 partants · cotes à T−11:23*
+*14h33 · plat · 1800 m · 12 partants · cotes à T−6:44*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 12 | SOLMARIS | 2,2 | 2,2 | 2,28 | -3,5 % | M.GUYON 4e | 4/2/1/2 |
-| 2 | SHUWAIB | 5,4 | 5,8 | 5,71 | -5,4 % | C.LECOEUVRE | 13/1/–/148 |
-| 1 | GENERAL ROCHAMBEAU | 8,3 | 8,8 | 10,14 | -18,2 % | C.SOUMILLON | 7/11/3272/9 |
-| 6 | EREMOS | 10 | 9,3 | 12,62 | -20,8 % | A.POUCHIN | 6/31/3151/12 |
-| 11 | ARAKI | 11 | 11 | 14,12 | -22,1 % | S.PASQUIER | 23/7/1/2 |
-| 8 | VEGAWAN | 14 | 12 | 20,12 | -30,4 % | J.MOUTARD | 61/14/–/– |
-| 7 | PYROIS | 31 | 34 | 46,00 | -32,6 % | C.DEMURO | 1/22/33/1357 |
-| 3 | JE VAIS A RIO | 32 | 55 | 44,35 | -27,8 % | T.BACHELOT | 16/17/10/40 |
-| 10 | DOUBLE BID | 33 | 38 | 54,18 | -39,1 % | A.HAMELIN | 22/19/88/– |
-| 4 | VARAK | 49 | 51 | 77,99 | -37,2 % | A.MADAMET | 10/22/–/4044 |
-| 5 | MENKENT | 67 | 55 | 109,06 | -38,6 % | A.LEMAITRE | 11/57/117/1956 |
-| 9 | AMBRE SULTAN | 95 | 100 | 142,47 | -33,3 % | M.GRANDIN | 3/92/84/245 |
+| 12 | SOLMARIS | 2,2 | 2,2 | 2,29 | -3,9 % | M.GUYON 4e | 4/2/1/2 |
+| 2 | SHUWAIB | 5,6 | 5,8 | 6,47 | -13,4 % | C.LECOEUVRE | 13/1/–/148 |
+| 1 | GENERAL ROCHAMBEAU | 8,3 | 8,8 | 10,19 | -18,6 % | C.SOUMILLON | 7/11/3272/9 |
+| 11 | ARAKI | 10 | 11 | 12,69 | -21,2 % | S.PASQUIER | 23/7/1/2 |
+| 6 | EREMOS | 12 | 9,3 | 15,04 | -20,2 % | A.POUCHIN | 6/31/3151/12 |
+| 8 | VEGAWAN | 14 | 12 | 20,22 | -30,8 % | J.MOUTARD | 61/14/–/– |
+| 3 | JE VAIS A RIO | 26 | 55 | 35,25 | -26,2 % | T.BACHELOT | 16/17/10/40 |
+| 10 | DOUBLE BID | 32 | 38 | 47,91 | -33,2 % | A.HAMELIN | 22/19/88/– |
+| 7 | PYROIS | 33 | 34 | 54,44 | -39,4 % | C.DEMURO | 1/22/33/1357 |
+| 4 | VARAK | 38 | 51 | 53,98 | -29,6 % | A.MADAMET | 10/22/–/4044 |
+| 9 | AMBRE SULTAN | 54 | 100 | 72,07 | -25,1 % | M.GRANDIN | 3/92/84/245 |
+| 5 | MENKENT | 71 | 55 | 116,46 | -39,0 % | A.LEMAITRE | 11/57/117/1956 |
 
 ### 3. PRIX RIEUSSEC
 
