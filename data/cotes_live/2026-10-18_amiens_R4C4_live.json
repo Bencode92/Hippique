@@ -4,107 +4,107 @@
   "reunion": 4,
   "heure_depart": 1792338720000,
   "distance": 2900,
-  "scraped_at": "2026-10-18T17:50:52.213102+02:00",
-  "minutes_avant_depart": 1,
+  "scraped_at": "2026-10-18T17:53:32.135205+02:00",
+  "minutes_avant_depart": -2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MAMBO DE L'AUMOY",
-      "cote_live": 82.0,
+      "cote_live": 104.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792338643000
+      "timestamp_cote": 1792338740000
     },
     {
       "numPmu": 2,
       "nom": "MANHATTAN BEAT",
-      "cote_live": 62.0,
+      "cote_live": 80.0,
       "cote_reference": 48.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792338643000
+      "timestamp_cote": 1792338740000
     },
     {
       "numPmu": 3,
       "nom": "MERLIN DE MAHEY",
-      "cote_live": 4.1,
+      "cote_live": 3.9,
       "cote_reference": 4.1,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1792338643000
+      "favoris": true,
+      "timestamp_cote": 1792338740000
     },
     {
       "numPmu": 4,
       "nom": "MY SPIRIT ERA",
-      "cote_live": 44.0,
+      "cote_live": 46.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792338643000
+      "timestamp_cote": 1792338740000
     },
     {
       "numPmu": 5,
       "nom": "MIKA RENARDIERE",
-      "cote_live": 5.1,
+      "cote_live": 4.5,
       "cote_reference": 4.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792338643000
+      "timestamp_cote": 1792338740000
     },
     {
       "numPmu": 6,
       "nom": "MAESTRO DE FERFAY",
-      "cote_live": 37.0,
+      "cote_live": 38.0,
       "cote_reference": 26.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792338643000
+      "timestamp_cote": 1792338740000
     },
     {
       "numPmu": 7,
       "nom": "METEORE",
-      "cote_live": 16.0,
+      "cote_live": 18.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792338643000
+      "timestamp_cote": 1792338740000
     },
     {
       "numPmu": 8,
       "nom": "MERCURE",
-      "cote_live": 8.8,
+      "cote_live": 9.2,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792338643000
+      "timestamp_cote": 1792338740000
     },
     {
       "numPmu": 9,
       "nom": "MYLKO DE REM",
-      "cote_live": 3.6,
+      "cote_live": 4.3,
       "cote_reference": 5.0,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1792338643000
+      "favoris": false,
+      "timestamp_cote": 1792338740000
     },
     {
       "numPmu": 10,
       "nom": "MEC DES RACQUES",
-      "cote_live": 10.0,
+      "cote_live": 8.7,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792338643000
+      "timestamp_cote": 1792338740000
     },
     {
       "numPmu": 11,
       "nom": "MAX DU CAMPDOS",
-      "cote_live": 65.0,
+      "cote_live": 81.0,
       "cote_reference": 29.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792338643000
+      "timestamp_cote": 1792338740000
     },
     {
       "numPmu": 12,
@@ -113,7 +113,7 @@
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792338643000
+      "timestamp_cote": 1792338740000
     }
   ],
   "hippodrome": "AMIENS",
@@ -367,6 +367,78 @@
         "9": 3.6,
         "10": 10.0,
         "11": 65.0,
+        "12": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T17:51:32.342914+02:00",
+      "minutes_avant_depart": 0.46926618333333336,
+      "cotes": {
+        "1": 87.0,
+        "2": 66.0,
+        "3": 4.2,
+        "4": 43.0,
+        "5": 4.7,
+        "6": 35.0,
+        "7": 15.0,
+        "8": 8.8,
+        "9": 3.8,
+        "10": 10.0,
+        "11": 64.0,
+        "12": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T17:52:12.107064+02:00",
+      "minutes_avant_depart": -0.19740283333333333,
+      "cotes": {
+        "1": 92.0,
+        "2": 73.0,
+        "3": 4.1,
+        "4": 41.0,
+        "5": 5.0,
+        "6": 35.0,
+        "7": 17.0,
+        "8": 8.7,
+        "9": 4.1,
+        "10": 8.4,
+        "11": 73.0,
+        "12": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T17:52:52.334185+02:00",
+      "minutes_avant_depart": -0.867911,
+      "cotes": {
+        "1": 104.0,
+        "2": 80.0,
+        "3": 3.9,
+        "4": 46.0,
+        "5": 4.5,
+        "6": 38.0,
+        "7": 18.0,
+        "8": 9.2,
+        "9": 4.3,
+        "10": 8.7,
+        "11": 81.0,
+        "12": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T17:53:32.135205+02:00",
+      "minutes_avant_depart": -1.5307401833333332,
+      "cotes": {
+        "1": 104.0,
+        "2": 80.0,
+        "3": 3.9,
+        "4": 46.0,
+        "5": 4.5,
+        "6": 38.0,
+        "7": 18.0,
+        "8": 9.2,
+        "9": 4.3,
+        "10": 8.7,
+        "11": 81.0,
         "12": 14.0
       }
     }

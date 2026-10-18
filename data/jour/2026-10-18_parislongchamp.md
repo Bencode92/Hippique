@@ -142,18 +142,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DES ERABLES
 
-*18h10 · plat · 3100 m · 11 partants · cotes à T−21:08*
+*18h10 · plat · 3100 m · 11 partants · cotes à T−17:08*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 4 | GRAND ART | 3,3 | 3,7 | 3,60 | -8,4 % | C.SOUMILLON | 7/64/14/23 |
-| 3 | EMBIEZ | 5,2 | 5,3 | 5,62 | -7,4 % | C.DEMURO | 1/111/192/50 |
-| 1 | ALLEZ FRERES | 6,7 | 5,7 | 7,73 | -13,4 % | A.POUCHIN | 6/14/92/1025 |
-| 10 | BARBADIN | 10 | 7 | 12,10 | -17,4 % | A.HAMELIN | 22/74/1/– |
-| 2 | GOOD TO SEE YOU | 13 | 27 | 16,89 | -23,0 % | M.GRANDIN | 3/120/87/368 |
-| 8 | ANDOUINS | 13 | 21 | 13,83 | -6,0 % | E.HARDOUIN | 27/86/41/954 |
-| 7 | ASTREDARGENT | 15 | 13 | 18,97 | -20,9 % | M.VELON | 28/27/750/785 |
-| 11 | BECQUATHUNDER | 15 | 10 | 21,87 | -31,4 % | M.FAVRIAUX | 51/86/1684/1227 |
-| 6 | KLASSIC PRECIEUX | 17 | 60 | 18,86 | -9,9 % | T.PICCONE 2e | 9/200/244/206 |
-| 5 | NUMERUS BORGET | 22 | 14 | 29,03 | -24,2 % | A.NICCO | 167/213/280/1091 |
-| 9 | ALMACADO GREE | 36 | 38 | 53,08 | -32,2 % | E.MUNTWYLER | 181/89/329/– |
+| 4 | GRAND ART | 3,7 | 3,7 | 4,05 | -8,5 % | C.SOUMILLON | 7/64/14/23 |
+| 3 | EMBIEZ | 5,5 | 5,3 | 5,97 | -7,8 % | C.DEMURO | 1/111/192/50 |
+| 1 | ALLEZ FRERES | 5,8 | 5,7 | 6,54 | -11,4 % | A.POUCHIN | 6/14/92/1025 |
+| 2 | GOOD TO SEE YOU | 10 | 27 | 12,38 | -19,2 % | M.GRANDIN | 3/120/87/368 |
+| 10 | BARBADIN | 10 | 7 | 12,08 | -17,2 % | A.HAMELIN | 22/74/1/– |
+| 8 | ANDOUINS | 12 | 21 | 12,58 | -4,6 % | E.HARDOUIN | 27/86/41/954 |
+| 11 | BECQUATHUNDER | 15 | 10 | 21,82 | -31,3 % | M.FAVRIAUX | 51/86/1684/1227 |
+| 7 | ASTREDARGENT | 16 | 13 | 20,41 | -21,6 % | M.VELON | 28/27/750/785 |
+| 6 | KLASSIC PRECIEUX | 18 | 60 | 20,11 | -10,5 % | T.PICCONE 2e | 9/200/244/206 |
+| 5 | NUMERUS BORGET | 23 | 14 | 33,43 | -31,2 % | A.NICCO | 167/213/280/1091 |
+| 9 | ALMACADO GREE | 39 | 38 | 57,90 | -32,6 % | E.MUNTWYLER | 181/89/329/– |
