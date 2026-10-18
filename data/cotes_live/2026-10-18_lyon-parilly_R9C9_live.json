@@ -2,91 +2,91 @@
   "course": "PRIX DU VAL DE SAONE",
   "numero": 9,
   "reunion": 9,
-  "heure_depart": 1792335900000,
+  "heure_depart": 1792336500000,
   "distance": 2850,
-  "scraped_at": "2026-10-18T16:48:52.003580+02:00",
-  "minutes_avant_depart": 16,
+  "scraped_at": "2026-10-18T17:00:52.665878+02:00",
+  "minutes_avant_depart": 14,
   "participants": [
     {
       "numPmu": 1,
       "nom": "GOLD SPEED",
-      "cote_live": 155.0,
+      "cote_live": 100.0,
       "cote_reference": 147.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334916000
+      "timestamp_cote": 1792335645000
     },
     {
       "numPmu": 2,
       "nom": "GALOPIN DE BIANCA",
-      "cote_live": 136.0,
+      "cote_live": 23.0,
       "cote_reference": 129.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334916000
+      "timestamp_cote": 1792335645000
     },
     {
       "numPmu": 3,
       "nom": "GEDEON DAIRPET",
-      "cote_live": 83.0,
+      "cote_live": 82.0,
       "cote_reference": 86.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334916000
+      "timestamp_cote": 1792335645000
     },
     {
       "numPmu": 4,
       "nom": "IMPERIAL KEY",
-      "cote_live": 181.0,
+      "cote_live": 155.0,
       "cote_reference": 172.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334916000
+      "timestamp_cote": 1792335645000
     },
     {
       "numPmu": 5,
       "nom": "IMPERATRICE VITELA",
-      "cote_live": 20.0,
+      "cote_live": 22.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334916000
+      "timestamp_cote": 1792335645000
     },
     {
       "numPmu": 6,
       "nom": "FLASH MONEY",
-      "cote_live": 22.0,
+      "cote_live": 25.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334916000
+      "timestamp_cote": 1792335645000
     },
     {
       "numPmu": 7,
       "nom": "ISTORIC MAUZUN",
-      "cote_live": 5.8,
+      "cote_live": 6.4,
       "cote_reference": 5.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334916000
+      "timestamp_cote": 1792335645000
     },
     {
       "numPmu": 8,
       "nom": "INHERIT",
-      "cote_live": 6.2,
+      "cote_live": 4.3,
       "cote_reference": 6.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334916000
+      "timestamp_cote": 1792335645000
     },
     {
       "numPmu": 9,
       "nom": "JOLIVERT DU GERS",
-      "cote_live": 1.4,
+      "cote_live": 1.6,
       "cote_reference": 1.4,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792334916000
+      "timestamp_cote": 1792335645000
     }
   ],
   "hippodrome": "LYON-PARILLY",
@@ -149,6 +149,21 @@
         "7": 5.8,
         "8": 6.2,
         "9": 1.4
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T17:00:52.665878+02:00",
+      "minutes_avant_depart": 14.136098266666666,
+      "cotes": {
+        "1": 100.0,
+        "2": 23.0,
+        "3": 82.0,
+        "4": 155.0,
+        "5": 22.0,
+        "6": 25.0,
+        "7": 6.4,
+        "8": 4.3,
+        "9": 1.6
       }
     }
   ]
