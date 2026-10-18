@@ -45,31 +45,31 @@
 
 ### 4. PRIX LOUIS TRESCA
 
-*14h35 · haies · 3400 m · 6 partants · cotes à T−5:23*
+*14h35 · haies · 3400 m · 6 partants · cotes à T−3:24*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 3 | MARIUS | 3 | 3,6 | D.UBEDA | –/576/638/2892 |
-| 4 | CAMPO GRANDE | 4,4 | 4 | J.CHARRON | –/459/–/– |
-| 2 | MATADOR WOOD | 5,6 | 5,9 | A.ZULIANI | 165/635/3967/1871 |
-| 6 | SCILLA | 7,1 | 6 | J.PHELIPPE | 330/91/675/952 |
-| 1 | MARY POPPINS | 7,4 | 7,3 | G.CHAMPIER | 385/25/3468/3246 |
-| 5 | MEURSAULT CHARME | 8 | 6,6 | T.BEAURAIN | 267/410/182/90 |
+| 5 | MEURSAULT CHARME | 2,5 | 6,6 | T.BEAURAIN | 267/410/182/90 |
+| 2 | MATADOR WOOD | 4,7 | 5,9 | A.ZULIANI | 165/635/3967/1871 |
+| 3 | MARIUS | 4,7 | 3,6 | D.UBEDA | –/576/638/2892 |
+| 6 | SCILLA | 6,5 | 6 | J.PHELIPPE | 330/91/675/952 |
+| 1 | MARY POPPINS | 11 | 7,3 | G.CHAMPIER | 385/25/3468/3246 |
+| 4 | CAMPO GRANDE | 12 | 4 | J.CHARRON | –/459/–/– |
 
 ### 5. PRIX DU MAINE-ET-LOIRE
 
-*15h05 · monté · 2850 m · 9 partants · cotes à T−29:23*
+*15h05 · monté · 2850 m · 9 partants · cotes à T−25:23*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
 | 5 | MOLLY FLIGNY | 1,7 | 1,5 | Q. SEGUIN |
-| 7 | MERITE JULRY | 6,1 | 6,3 | M. LAFFAY |
+| 7 | MERITE JULRY | 6,4 | 6,3 | M. LAFFAY |
 | 6 | MAMZELLE DES PLANS | 7,5 | 7,2 | T. AGUIAR |
-| 4 | MUSE JULRY | 11 | 13 | Mlle S. CORTIAL |
-| 9 | MAYBE LOUANGES | 16 | 19 | F. BROUST |
-| 2 | MAGHEERA GRIFF | 23 | 30 | D.A. HAON |
-| 8 | MAYA DU RADON | 23 | 30 | A.P. GIRAUD |
-| 3 | MERCI MERCY | 33 | 50 | Mme S. BUSSET |
+| 4 | MUSE JULRY | 12 | 13 | Mlle S. CORTIAL |
+| 9 | MAYBE LOUANGES | 15 | 19 | F. BROUST |
+| 8 | MAYA DU RADON | 21 | 30 | A.P. GIRAUD |
+| 2 | MAGHEERA GRIFF | 24 | 30 | D.A. HAON |
+| 3 | MERCI MERCY | 28 | 50 | Mme S. BUSSET |
 | 1 | MAJESTRIA FILI | – | – | Mlle M. HEYMANS |
 
 ### 6. PRIX DU BRIONNAIS (GR.A)
