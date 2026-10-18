@@ -4,53 +4,53 @@
   "reunion": 1,
   "heure_depart": 1792339800000,
   "distance": 3100,
-  "scraped_at": "2026-10-18T18:09:32.535570+02:00",
-  "minutes_avant_depart": 0,
+  "scraped_at": "2026-10-18T18:12:12.309366+02:00",
+  "minutes_avant_depart": -2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ALLEZ FRERES",
-      "cote_live": 5.7,
+      "cote_live": 5.5,
       "cote_reference": 8.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792339757000
+      "timestamp_cote": 1792339860000
     },
     {
       "numPmu": 2,
       "nom": "GOOD TO SEE YOU",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792339757000
+      "timestamp_cote": 1792339860000
     },
     {
       "numPmu": 3,
       "nom": "EMBIEZ",
-      "cote_live": 5.2,
+      "cote_live": 4.9,
       "cote_reference": 5.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792339757000
+      "timestamp_cote": 1792339860000
     },
     {
       "numPmu": 4,
       "nom": "GRAND ART",
-      "cote_live": 3.1,
+      "cote_live": 3.3,
       "cote_reference": 3.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792339757000
+      "timestamp_cote": 1792339860000
     },
     {
       "numPmu": 5,
       "nom": "NUMERUS BORGET",
-      "cote_live": 22.0,
+      "cote_live": 23.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792339757000
+      "timestamp_cote": 1792339860000
     },
     {
       "numPmu": 6,
@@ -59,16 +59,16 @@
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792339757000
+      "timestamp_cote": 1792339860000
     },
     {
       "numPmu": 7,
       "nom": "ASTREDARGENT",
-      "cote_live": 18.0,
+      "cote_live": 19.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792339757000
+      "timestamp_cote": 1792339860000
     },
     {
       "numPmu": 8,
@@ -77,16 +77,16 @@
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792339757000
+      "timestamp_cote": 1792339860000
     },
     {
       "numPmu": 9,
       "nom": "ALMACADO GREE",
-      "cote_live": 55.0,
+      "cote_live": 62.0,
       "cote_reference": 31.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792339757000
+      "timestamp_cote": 1792339860000
     },
     {
       "numPmu": 10,
@@ -95,16 +95,16 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792339757000
+      "timestamp_cote": 1792339860000
     },
     {
       "numPmu": 11,
       "nom": "BECQUATHUNDER",
-      "cote_live": 16.0,
+      "cote_live": 13.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792339757000
+      "timestamp_cote": 1792339860000
     }
   ],
   "hippodrome": "PARISLONGCHAMP",
@@ -362,6 +362,74 @@
         "9": 55.0,
         "10": 10.0,
         "11": 16.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T18:10:11.997124+02:00",
+      "minutes_avant_depart": -0.1974627,
+      "cotes": {
+        "1": 5.6,
+        "2": 14.0,
+        "3": 5.0,
+        "4": 3.3,
+        "5": 23.0,
+        "6": 25.0,
+        "7": 18.0,
+        "8": 14.0,
+        "9": 56.0,
+        "10": 10.0,
+        "11": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T18:10:52.102727+02:00",
+      "minutes_avant_depart": -0.8641314833333333,
+      "cotes": {
+        "1": 5.9,
+        "2": 15.0,
+        "3": 4.9,
+        "4": 3.2,
+        "5": 23.0,
+        "6": 25.0,
+        "7": 18.0,
+        "8": 14.0,
+        "9": 60.0,
+        "10": 10.0,
+        "11": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T18:11:32.005071+02:00",
+      "minutes_avant_depart": -1.5308001666666666,
+      "cotes": {
+        "1": 5.5,
+        "2": 14.0,
+        "3": 4.9,
+        "4": 3.3,
+        "5": 23.0,
+        "6": 25.0,
+        "7": 19.0,
+        "8": 14.0,
+        "9": 62.0,
+        "10": 10.0,
+        "11": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T18:12:12.309366+02:00",
+      "minutes_avant_depart": -2.1974692333333334,
+      "cotes": {
+        "1": 5.5,
+        "2": 14.0,
+        "3": 4.9,
+        "4": 3.3,
+        "5": 23.0,
+        "6": 25.0,
+        "7": 19.0,
+        "8": 14.0,
+        "9": 62.0,
+        "10": 10.0,
+        "11": 13.0
       }
     }
   ]
