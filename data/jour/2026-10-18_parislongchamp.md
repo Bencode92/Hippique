@@ -124,21 +124,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE LA CHAUSSEE
 
-*17h35 · plat · 1400 m · 11 partants · cotes à T−2:08*
+*17h35 · plat · 1400 m · 11 partants · cotes à T−0:08*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 7 | MA MOME | 4,5 | 13 | 4,56 | -1,2 % | E.HARDOUIN | 27/81/278/38 |
-| 5 | MARKSWOMAN | 5,4 | 5,6 | 5,78 | -6,5 % | C.SOUMILLON 4e | 7/126/301/247 |
-| 11 | ZASYMOKA | 6,5 | 7,4 | 7,12 | -8,7 % | D.PROVOST | 33/77/100/688 |
-| 1 | MAYA CHOP | 7,5 | 5,2 | 8,53 | -12,1 % | A.MOLINS | 34/67/6/86 |
-| 4 | MOOREA | 7,6 | 10 | 8,31 | -8,5 % | A.POUCHIN | 6/48/778/945 |
-| 10 | ASTON CLINTON | 10 | 12 | 11,43 | -12,5 % | C.LECOEUVRE | 13/57/3522/1133 |
-| 6 | NO TIME | 16 | 18 | 18,97 | -15,7 % | M.GRANDIN | 3/108/22/749 |
-| 9 | GRAN HABANO | 16 | 9,4 | 20,35 | -21,4 % | T.PICCONE | 9/485/181/1379 |
-| 8 | SLEIPNIR NORMANDY | 22 | 9 | 26,17 | -15,9 % | J.MOUTARD | 61/34/302/1169 |
-| 2 | WOFF | 32 | 21 | 45,89 | -30,3 % | W.LEVESQUE | 79/94/1/164 |
-| 3 | MISTER BRYAN | 46 | 16 | 68,63 | -33,0 % | M.VELON | 28/81/213/38 |
+| 7 | MA MOME | 4,1 | 13 | 4,14 | -0,9 % | E.HARDOUIN | 27/81/278/38 |
+| 11 | ZASYMOKA | 5,3 | 7,4 | 5,24 | **+1,1 %** | D.PROVOST | 33/77/100/688 |
+| 5 | MARKSWOMAN | 6,6 | 5,6 | 6,97 | -5,3 % | C.SOUMILLON 4e | 7/126/301/247 |
+| 1 | MAYA CHOP | 8,1 | 5,2 | 9,34 | -13,3 % | A.MOLINS | 34/67/6/86 |
+| 4 | MOOREA | 9 | 10 | 10,13 | -11,1 % | A.POUCHIN | 6/48/778/945 |
+| 10 | ASTON CLINTON | 10 | 12 | 11,45 | -12,7 % | C.LECOEUVRE | 13/57/3522/1133 |
+| 8 | SLEIPNIR NORMANDY | 12 | 9 | 13,00 | -7,7 % | J.MOUTARD | 61/34/302/1169 |
+| 6 | NO TIME | 19 | 18 | 23,20 | -18,1 % | M.GRANDIN | 3/108/22/749 |
+| 9 | GRAN HABANO | 19 | 9,4 | 24,90 | -23,7 % | T.PICCONE | 9/485/181/1379 |
+| 2 | WOFF | 37 | 21 | 54,08 | -31,6 % | W.LEVESQUE | 79/94/1/164 |
+| 3 | MISTER BRYAN | 58 | 16 | 88,36 | -34,4 % | M.VELON | 28/81/213/38 |
 
 ### 8. PRIX DES ERABLES
 
