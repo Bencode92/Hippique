@@ -144,23 +144,23 @@
 
 ### 7. PRIX DE L'HIPPODROME DE LUXE (GR.B)
 
-*17h00 · attelé · 2550 m · 13 partants · cotes à T−12:28*
+*17h00 · attelé · 2550 m · 13 partants · cotes à T−7:48*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 2 | MAYERLING LEGACY | 2,8 | 2,6 | Mme LANA HENRY |
-| 8 | MON REVE | 4,2 | 3,8 | L. DELANOE |
-| 3 | MOOGLI HEULINOIS | 8,1 | 8,7 | E. AUDEBERT |
-| 6 | MARCUS DECHAMBOU | 9,8 | 16 | TH. DUCOS |
-| 7 | MANGO KALOUMA | 12 | 8,1 | F. CLOZIER |
-| 11 | MEDOC DES GLENAN | 13 | 18 | N. PICARD |
-| 1 | MIMI D'AMBRI | 15 | 21 | J. CHAVATTE |
-| 10 | MATIS DU VIGNAC | 24 | 40 | A. HONORE |
-| 12 | MORIAC | 34 | 25 | M. TIJOU |
-| 13 | MALDIVE DE TILLARD | 65 | 56 | N. BRUN |
-| 5 | MUSE DU LOISIR | 104 | 70 | D.G. CHAVATTE |
-| 9 | MILWAUKEE D'OYSE | 104 | – | N. PACHA |
-| 4 | MELODY DU CEBE | 130 | 93 | PIERRICK LE MOEL |
+| 2 | MAYERLING LEGACY | 3,1 | 2,6 | Mme LANA HENRY |
+| 8 | MON REVE | 4,4 | 3,8 | L. DELANOE |
+| 3 | MOOGLI HEULINOIS | 7,2 | 8,7 | E. AUDEBERT |
+| 6 | MARCUS DECHAMBOU | 9 | 16 | TH. DUCOS |
+| 11 | MEDOC DES GLENAN | 10 | 18 | N. PICARD |
+| 7 | MANGO KALOUMA | 13 | 8,1 | F. CLOZIER |
+| 1 | MIMI D'AMBRI | 14 | 21 | J. CHAVATTE |
+| 10 | MATIS DU VIGNAC | 26 | 40 | A. HONORE |
+| 12 | MORIAC | 36 | 25 | M. TIJOU |
+| 9 | MILWAUKEE D'OYSE | 73 | – | N. PACHA |
+| 13 | MALDIVE DE TILLARD | 73 | 56 | N. BRUN |
+| 5 | MUSE DU LOISIR | 98 | 70 | D.G. CHAVATTE |
+| 4 | MELODY DU CEBE | 118 | 93 | PIERRICK LE MOEL |
 
 ### 8. PRIX DE BEAULAC
 
