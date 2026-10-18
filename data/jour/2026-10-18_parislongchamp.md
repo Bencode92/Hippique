@@ -1,6 +1,6 @@
 # PARISLONGCHAMP — 18/10/2026
 
-8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -84,21 +84,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX CASIMIR DELAMARRE
 
-*16h25 · plat · 1800 m · 11 partants · cotes de l'extraction*
+*16h25 · plat · 1800 m · 11 partants · cotes à T−29:28*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 9 | PIERCHIC | 2,2 | 2,18 | **+0,8 %** | C.DEMURO | 1/6/–/6 |
-| 11 | LAND OF LIBERTY | 9,9 | 12,97 | -23,7 % | C.SOUMILLON | 7/60/4/– |
-| 6 | EKLLEEL | 10 | 11,24 | -11,0 % | C.LECOEUVRE | 13/1/–/148 |
-| 8 | HELLO AVENUE | 10 | 12,02 | -16,8 % | A.MADAMET | 10/64/14/23 |
-| 7 | VANTA | 11 | 13,72 | -19,8 % | D.PROVOST | 33/91/392/– |
-| 5 | DARNATION | 12 | 11,47 | **+4,6 %** | C.LEE | 246/42/3253/4892 |
-| 12 | SHE COMMANDS | 15 | 18,04 | -16,9 % | R.CLUTTERBUCK | –/158/–/104 |
-| 4 | NARGIZ | 20 | 28,34 | -29,4 % | J.MOUTARD | 61/156/12/– |
-| 10 | SANGOMAR | 25 | 35,69 | -29,9 % | A.LEMAITRE | 11/45/24/588 |
-| 2 | MALA WYSKA | 28 | 38,00 | -26,3 % | A.HAMELIN | 22/165/688/955 |
-| 3 | BUBBLE GUM | 28 | 39,10 | -28,4 % | M.GRANDIN | 3/41/23/2691 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 9 | PIERCHIC | 2,4 | 2,2 | 2,34 | **+2,6 %** | C.DEMURO | 1/6/–/6 |
+| 6 | EKLLEEL | 7,9 | 10 | 8,55 | -7,6 % | C.LECOEUVRE | 13/1/–/148 |
+| 11 | LAND OF LIBERTY | 9,4 | 9,9 | 11,18 | -15,9 % | C.SOUMILLON | 7/60/4/– |
+| 7 | VANTA | 10 | 11 | 11,24 | -11,0 % | D.PROVOST | 33/91/392/– |
+| 8 | HELLO AVENUE | 11 | 10 | 14,69 | -25,1 % | A.MADAMET | 10/64/14/23 |
+| 5 | DARNATION | 13 | 12 | 13,74 | -5,4 % | C.LEE | 246/42/3253/4892 |
+| 12 | SHE COMMANDS | 16 | 15 | 19,45 | -17,7 % | R.CLUTTERBUCK | –/158/–/104 |
+| 10 | SANGOMAR | 18 | 25 | 22,30 | -19,3 % | A.LEMAITRE | 11/45/24/588 |
+| 4 | NARGIZ | 20 | 20 | 28,34 | -29,4 % | J.MOUTARD | 61/156/12/– |
+| 2 | MALA WYSKA | 25 | 28 | 33,40 | -25,2 % | A.HAMELIN | 22/165/688/955 |
+| 3 | BUBBLE GUM | 31 | 28 | 43,86 | -29,3 % | M.GRANDIN | 3/41/23/2691 |
 
 ### 6. PRIX DE SAINT-CYR
 
