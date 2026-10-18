@@ -1,7 +1,7 @@
 {
   "hippodrome": "TARBES",
   "type_reunion": "Plat",
-  "date_extraction": "2026-10-18T12:37:07.612731",
+  "date_extraction": "2026-10-18T14:15:45.360947",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/18102026/R6",
   "courses": [
     {
@@ -12,52 +12,6 @@
       "distance": "2300m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "MAXIGENE D'AYZA AA H.AN. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: WAR COMMAND et AUXIGENE D'AYZA (NOMBRE PREMIER)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261018/TAR/1/20261018-TAR-1-1.png",
-          "propriétaire": "MME M.PRUNET-FOCH",
-          "entraineur": "MME M.PRUNET-FOCH",
-          "éleveurs": "MME MARGUERITE PRUNET-FOCH",
-          "jockey": "S.BOUYSSOU",
-          "poids": "66 kg",
-          "gains": "",
-          "musique": "8p6p",
-          "valeur": "66.0",
-          "equipement(s)": "",
-          "nb_courses": 2,
-          "nb_victoires": 0,
-          "nb_places": 0,
-          "cote": 8.8,
-          "cote_tendance": "",
-          "cote_reference": 8.3
-        },
-        {
-          "n°": "2",
-          "cheval": "LUCIE CROIXNOIRE AA F.AN. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: FREE PORT LUX et FANY CROIXNOIRE AA (MAIGURI)",
-          "corde": "(Corde:02)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261018/TAR/1/20261018-TAR-1-2.png",
-          "propriétaire": "T.DE LAURIERE",
-          "entraineur": "T.LAURIERE DE",
-          "éleveurs": "MR JEAN-LUC DANGUILHEN",
-          "jockey": "Q.SOGORB",
-          "poids": "64.5 kg",
-          "gains": "63000",
-          "musique": "9p(25)5p8p",
-          "valeur": "64.5",
-          "equipement(s)": "",
-          "nb_courses": 3,
-          "nb_victoires": 0,
-          "nb_places": 1,
-          "cote": 61.0,
-          "cote_tendance": "",
-          "cote_reference": 58.0
-        },
         {
           "n°": "3",
           "cheval": "ENTRE ROSETNORA AA F.AN. 4 a.",
@@ -77,32 +31,10 @@
           "nb_courses": 10,
           "nb_victoires": 1,
           "nb_places": 7,
-          "cote": 1.8,
+          "cote": 2.1,
           "cote_tendance": "",
-          "cote_reference": 1.7
-        },
-        {
-          "n°": "4",
-          "cheval": "LASTROGENE D'AYZA AA H.AN. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: FRISSON DU PECOS et AUXIGENE D'AYZA (NOMBRE PREMIER)",
-          "corde": "(Corde:05)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261018/TAR/1/20261018-TAR-1-4.png",
-          "propriétaire": "MME M.PRUNET-FOCH",
-          "entraineur": "MME M.PRUNET-FOCH",
-          "éleveurs": "MME MARGUERITE PRUNET-FOCH",
-          "jockey": "H.SOURBE",
-          "poids": "62 kg",
-          "gains": "2960400",
-          "musique": "8p9p4p1p3p1p9p(25)7p8p",
-          "valeur": "62.0",
-          "equipement(s)": "A",
-          "nb_courses": 22,
-          "nb_victoires": 2,
-          "nb_places": 10,
-          "cote": 4.4,
-          "cote_tendance": "",
-          "cote_reference": 5.8
+          "cote_reference": 1.9,
+          "arrivee": 1
         },
         {
           "n°": "5",
@@ -125,7 +57,80 @@
           "nb_places": 2,
           "cote": 6.1,
           "cote_tendance": "",
-          "cote_reference": 5.8
+          "cote_reference": 6.3,
+          "arrivee": 2
+        },
+        {
+          "n°": "4",
+          "cheval": "LASTROGENE D'AYZA AA H.AN. 5 a.",
+          "cheval_url": "",
+          "père_mère": "Par: FRISSON DU PECOS et AUXIGENE D'AYZA (NOMBRE PREMIER)",
+          "corde": "(Corde:05)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261018/TAR/1/20261018-TAR-1-4.png",
+          "propriétaire": "MME M.PRUNET-FOCH",
+          "entraineur": "MME M.PRUNET-FOCH",
+          "éleveurs": "MME MARGUERITE PRUNET-FOCH",
+          "jockey": "H.SOURBE",
+          "poids": "62 kg",
+          "gains": "2960400",
+          "musique": "8p9p4p1p3p1p9p(25)7p8p",
+          "valeur": "62.0",
+          "equipement(s)": "A",
+          "nb_courses": 22,
+          "nb_victoires": 2,
+          "nb_places": 10,
+          "cote": 3.5,
+          "cote_tendance": "",
+          "cote_reference": 4.5,
+          "arrivee": 3
+        },
+        {
+          "n°": "2",
+          "cheval": "LUCIE CROIXNOIRE AA F.AN. 5 a.",
+          "cheval_url": "",
+          "père_mère": "Par: FREE PORT LUX et FANY CROIXNOIRE AA (MAIGURI)",
+          "corde": "(Corde:02)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261018/TAR/1/20261018-TAR-1-2.png",
+          "propriétaire": "T.DE LAURIERE",
+          "entraineur": "T.LAURIERE DE",
+          "éleveurs": "MR JEAN-LUC DANGUILHEN",
+          "jockey": "Q.SOGORB",
+          "poids": "64.5 kg",
+          "gains": "63000",
+          "musique": "9p(25)5p8p",
+          "valeur": "64.5",
+          "equipement(s)": "",
+          "nb_courses": 3,
+          "nb_victoires": 0,
+          "nb_places": 1,
+          "cote": 8.3,
+          "cote_tendance": "",
+          "cote_reference": 38.0,
+          "arrivee": 4
+        },
+        {
+          "n°": "1",
+          "cheval": "MAXIGENE D'AYZA AA H.AN. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: WAR COMMAND et AUXIGENE D'AYZA (NOMBRE PREMIER)",
+          "corde": "(Corde:01)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261018/TAR/1/20261018-TAR-1-1.png",
+          "propriétaire": "MME M.PRUNET-FOCH",
+          "entraineur": "MME M.PRUNET-FOCH",
+          "éleveurs": "MME MARGUERITE PRUNET-FOCH",
+          "jockey": "S.BOUYSSOU",
+          "poids": "66 kg",
+          "gains": "",
+          "musique": "8p6p",
+          "valeur": "66.0",
+          "equipement(s)": "",
+          "nb_courses": 2,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 19.0,
+          "cote_tendance": "",
+          "cote_reference": 8.5,
+          "arrivee": 5
         },
         {
           "n°": "6",
@@ -146,15 +151,17 @@
           "nb_courses": 16,
           "nb_victoires": 0,
           "nb_places": 9,
-          "cote": 12.0,
+          "cote": 18.0,
           "cote_tendance": "",
-          "cote_reference": 11.0
+          "cote_reference": 9.5,
+          "arrivee": 6
         }
       ],
       "typePiste": "HERBE",
       "terrain": "Souple",
       "penetrometre": "3,6",
-      "cordeCourse": "CORDE_DROITE"
+      "cordeCourse": "CORDE_DROITE",
+      "arrivee_definitive": true
     },
     {
       "nom": "GRAND PRIX DES POULICHES A 12,5%",
@@ -182,7 +189,9 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 278.0,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -203,9 +212,9 @@
           "nb_courses": 4,
           "nb_victoires": 2,
           "nb_places": 2,
-          "cote": 8.7,
+          "cote": 8.6,
           "cote_tendance": "",
-          "cote_reference": 8.7
+          "cote_reference": 7.8
         },
         {
           "n°": "3",
@@ -226,9 +235,9 @@
           "nb_courses": 5,
           "nb_victoires": 1,
           "nb_places": 2,
-          "cote": 52.0,
+          "cote": 15.0,
           "cote_tendance": "",
-          "cote_reference": 52.0
+          "cote_reference": 24.0
         },
         {
           "n°": "4",
@@ -249,9 +258,9 @@
           "nb_courses": 7,
           "nb_victoires": 2,
           "nb_places": 4,
-          "cote": 4.5,
+          "cote": 3.3,
           "cote_tendance": "",
-          "cote_reference": 4.5
+          "cote_reference": 4.0
         },
         {
           "n°": "5",
@@ -272,9 +281,9 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 26.0,
+          "cote": 34.0,
           "cote_tendance": "",
-          "cote_reference": 26.0
+          "cote_reference": 28.0
         },
         {
           "n°": "6",
@@ -295,9 +304,9 @@
           "nb_courses": 6,
           "nb_victoires": 1,
           "nb_places": 4,
-          "cote": 2.2,
+          "cote": 3.8,
           "cote_tendance": "",
-          "cote_reference": 2.2
+          "cote_reference": 2.7
         },
         {
           "n°": "7",
@@ -318,9 +327,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 20.0,
+          "cote": 16.0,
           "cote_tendance": "",
-          "cote_reference": 20.0
+          "cote_reference": 15.0
         },
         {
           "n°": "8",
@@ -341,9 +350,9 @@
           "nb_courses": 5,
           "nb_victoires": 1,
           "nb_places": 4,
-          "cote": 26.0,
+          "cote": 9.9,
           "cote_tendance": "",
-          "cote_reference": 26.0
+          "cote_reference": 15.0
         },
         {
           "n°": "9",
@@ -364,9 +373,9 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 5.2,
+          "cote": 8.7,
           "cote_tendance": "",
-          "cote_reference": 5.2
+          "cote_reference": 7.1
         },
         {
           "n°": "10",
@@ -387,9 +396,9 @@
           "nb_courses": 6,
           "nb_victoires": 0,
           "nb_places": 5,
-          "cote": 34.0,
+          "cote": 12.0,
           "cote_tendance": "",
-          "cote_reference": 34.0
+          "cote_reference": 17.0
         }
       ],
       "typePiste": "HERBE",
@@ -424,7 +433,7 @@
           "nb_courses": 4,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 8.3,
+          "cote": 1.9,
           "cote_tendance": "",
           "cote_reference": 8.3
         },
@@ -447,7 +456,7 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 9.7,
+          "cote": 23.0,
           "cote_tendance": "",
           "cote_reference": 9.7
         },
@@ -470,7 +479,7 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 8.3,
+          "cote": 18.0,
           "cote_tendance": "",
           "cote_reference": 8.3
         },
@@ -493,7 +502,7 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 9.7,
+          "cote": 23.0,
           "cote_tendance": "",
           "cote_reference": 9.7
         },
@@ -516,7 +525,7 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 29.0,
+          "cote": 81.0,
           "cote_tendance": "",
           "cote_reference": 29.0
         },
@@ -539,7 +548,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 29.0,
+          "cote": 54.0,
           "cote_tendance": "",
           "cote_reference": 29.0
         },
@@ -562,7 +571,7 @@
           "nb_courses": 4,
           "nb_victoires": 2,
           "nb_places": 2,
-          "cote": 1.6,
+          "cote": 2.2,
           "cote_tendance": "",
           "cote_reference": 1.6
         }
@@ -599,7 +608,7 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 46.0,
+          "cote": 52.0,
           "cote_tendance": "",
           "cote_reference": 46.0
         },
@@ -642,7 +651,7 @@
           "nb_courses": 6,
           "nb_victoires": 1,
           "nb_places": 4,
-          "cote": 5.1,
+          "cote": 5.2,
           "cote_tendance": "",
           "cote_reference": 5.1
         },
@@ -665,7 +674,7 @@
           "nb_courses": 7,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 23.0,
+          "cote": 26.0,
           "cote_tendance": "",
           "cote_reference": 23.0
         },
@@ -688,7 +697,7 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 5,
-          "cote": 2.1,
+          "cote": 2.3,
           "cote_tendance": "",
           "cote_reference": 2.1
         },
@@ -711,7 +720,7 @@
           "nb_courses": 7,
           "nb_victoires": 1,
           "nb_places": 5,
-          "cote": 9.3,
+          "cote": 7.5,
           "cote_tendance": "",
           "cote_reference": 9.3
         },
@@ -734,7 +743,7 @@
           "nb_courses": 5,
           "nb_victoires": 3,
           "nb_places": 2,
-          "cote": 3.3,
+          "cote": 3.1,
           "cote_tendance": "",
           "cote_reference": 3.3
         }
@@ -771,7 +780,7 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 7.3,
+          "cote": 11.0,
           "cote_tendance": "",
           "cote_reference": 7.3
         },
@@ -814,7 +823,7 @@
           "nb_courses": 5,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 7.3,
+          "cote": 11.0,
           "cote_tendance": "",
           "cote_reference": 7.3
         },
@@ -837,7 +846,7 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 3.6,
+          "cote": 2.0,
           "cote_tendance": "",
           "cote_reference": 3.6
         },
@@ -860,7 +869,7 @@
           "nb_courses": 7,
           "nb_victoires": 2,
           "nb_places": 5,
-          "cote": 5.5,
+          "cote": 6.2,
           "cote_tendance": "",
           "cote_reference": 5.5
         },
@@ -883,7 +892,7 @@
           "nb_courses": 5,
           "nb_victoires": 1,
           "nb_places": 4,
-          "cote": 3.1,
+          "cote": 4.4,
           "cote_tendance": "",
           "cote_reference": 3.1
         },
@@ -943,7 +952,7 @@
           "nb_courses": 15,
           "nb_victoires": 8,
           "nb_places": 7,
-          "cote": 1.8,
+          "cote": 1.7,
           "cote_tendance": "",
           "cote_reference": 1.8
         },
@@ -966,7 +975,7 @@
           "nb_courses": 10,
           "nb_victoires": 2,
           "nb_places": 6,
-          "cote": 11.0,
+          "cote": 12.0,
           "cote_tendance": "",
           "cote_reference": 11.0
         },
@@ -989,7 +998,7 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 23.0,
+          "cote": 27.0,
           "cote_tendance": "",
           "cote_reference": 23.0
         },
@@ -1012,7 +1021,7 @@
           "nb_courses": 12,
           "nb_victoires": 3,
           "nb_places": 8,
-          "cote": 4.2,
+          "cote": 5.0,
           "cote_tendance": "",
           "cote_reference": 4.2
         },
@@ -1035,7 +1044,7 @@
           "nb_courses": 14,
           "nb_victoires": 2,
           "nb_places": 9,
-          "cote": 57.0,
+          "cote": 45.0,
           "cote_tendance": "",
           "cote_reference": 57.0
         },
@@ -1058,7 +1067,7 @@
           "nb_courses": 9,
           "nb_victoires": 2,
           "nb_places": 4,
-          "cote": 57.0,
+          "cote": 27.0,
           "cote_tendance": "",
           "cote_reference": 57.0
         },
@@ -1104,7 +1113,7 @@
           "nb_courses": 26,
           "nb_victoires": 3,
           "nb_places": 20,
-          "cote": 28.0,
+          "cote": 27.0,
           "cote_tendance": "",
           "cote_reference": 28.0
         },
@@ -1127,7 +1136,7 @@
           "nb_courses": 13,
           "nb_victoires": 1,
           "nb_places": 10,
-          "cote": 23.0,
+          "cote": 27.0,
           "cote_tendance": "",
           "cote_reference": 23.0
         },
@@ -1150,7 +1159,7 @@
           "nb_courses": 8,
           "nb_victoires": 1,
           "nb_places": 7,
-          "cote": 23.0,
+          "cote": 27.0,
           "cote_tendance": "",
           "cote_reference": 23.0
         },
@@ -1173,7 +1182,7 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 57.0,
+          "cote": 45.0,
           "cote_tendance": "",
           "cote_reference": 57.0
         }
@@ -1210,7 +1219,7 @@
           "nb_courses": 36,
           "nb_victoires": 8,
           "nb_places": 24,
-          "cote": 38.0,
+          "cote": 13.0,
           "cote_tendance": "",
           "cote_reference": 38.0
         },
@@ -1233,7 +1242,7 @@
           "nb_courses": 30,
           "nb_victoires": 7,
           "nb_places": 23,
-          "cote": 7.0,
+          "cote": 11.0,
           "cote_tendance": "",
           "cote_reference": 6.9
         },
@@ -1256,7 +1265,7 @@
           "nb_courses": 25,
           "nb_victoires": 9,
           "nb_places": 13,
-          "cote": 15.0,
+          "cote": 26.0,
           "cote_tendance": "",
           "cote_reference": 15.0
         },
@@ -1279,7 +1288,7 @@
           "nb_courses": 20,
           "nb_victoires": 5,
           "nb_places": 8,
-          "cote": 3.1,
+          "cote": 2.0,
           "cote_tendance": "",
           "cote_reference": 3.1
         },
@@ -1302,7 +1311,7 @@
           "nb_courses": 27,
           "nb_victoires": 5,
           "nb_places": 19,
-          "cote": 19.0,
+          "cote": 33.0,
           "cote_tendance": "",
           "cote_reference": 19.0
         },
@@ -1325,7 +1334,7 @@
           "nb_courses": 10,
           "nb_victoires": 4,
           "nb_places": 5,
-          "cote": 12.0,
+          "cote": 16.0,
           "cote_tendance": "",
           "cote_reference": 12.0
         },
@@ -1348,7 +1357,7 @@
           "nb_courses": 19,
           "nb_victoires": 3,
           "nb_places": 10,
-          "cote": 7.7,
+          "cote": 6.6,
           "cote_tendance": "",
           "cote_reference": 7.6
         },
@@ -1391,7 +1400,7 @@
           "nb_courses": 12,
           "nb_victoires": 3,
           "nb_places": 7,
-          "cote": 25.0,
+          "cote": 26.0,
           "cote_tendance": "",
           "cote_reference": 25.0
         },
@@ -1414,7 +1423,7 @@
           "nb_courses": 11,
           "nb_victoires": 3,
           "nb_places": 8,
-          "cote": 3.5,
+          "cote": 6.0,
           "cote_tendance": "",
           "cote_reference": 3.4
         }
