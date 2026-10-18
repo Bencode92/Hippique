@@ -53,25 +53,25 @@
 
 ### 3. PRIX SISYPHE II - PRIX JEANOT LAMAISON
 
-*15h00 · attelé · 2550 m · 15 partants · cotes à T−16:23*
+*15h00 · attelé · 2550 m · 15 partants · cotes à T−11:44*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 1 | JOBERT DU MOULIN | 2,9 | 7 | TH. GOUT |
-| 11 | JADE DES BRETTES | 5,5 | 4,9 | P. BEASSE |
+| 1 | JOBERT DU MOULIN | 3,1 | 7 | TH. GOUT |
+| 11 | JADE DES BRETTES | 5,9 | 4,9 | P. BEASSE |
+| 4 | JADOR JOSSELYN | 9,4 | 21 | CH. MANEGAT |
 | 3 | JOSVIL | 11 | 7,3 | D. BARANGER |
-| 4 | JADOR JOSSELYN | 11 | 21 | CH. MANEGAT |
-| 6 | JUNIOR DU GADE | 14 | 10 | Mlle A. DUPUIS |
-| 2 | JUMPIE PURPLE | 18 | 11 | L. CHUPIN |
-| 7 | JOYEUSE D'ATOUT | 18 | 19 | J.B. PAREY |
-| 13 | JAGUAR BLEU | 22 | 16 | G. TOQUE |
-| 5 | JAVA DE LIGNY | 23 | 21 | M. CATHERINE-PEZET |
-| 9 | JOYAU WINNER | 23 | 12 | Mlle L. VOISIN |
-| 8 | JOSS GRAND PRE | 26 | 25 | E. SALMON |
+| 6 | JUNIOR DU GADE | 13 | 10 | Mlle A. DUPUIS |
+| 2 | JUMPIE PURPLE | 15 | 11 | L. CHUPIN |
+| 7 | JOYEUSE D'ATOUT | 19 | 19 | J.B. PAREY |
+| 13 | JAGUAR BLEU | 20 | 16 | G. TOQUE |
+| 8 | JOSS GRAND PRE | 21 | 25 | E. SALMON |
+| 5 | JAVA DE LIGNY | 25 | 21 | M. CATHERINE-PEZET |
+| 9 | JOYAU WINNER | 25 | 12 | Mlle L. VOISIN |
+| 14 | JINKGO VEETA | 35 | 29 | Mlle A. ANDRIEUX |
 | 10 | JACY DE NARMONT | 41 | 29 | NOE BRUN |
-| 12 | JEANBAT DANOVER | 41 | 23 | N. BRUN |
-| 15 | JASMIN DE COEUR | 46 | 25 | R. FOUZER |
-| 14 | JINKGO VEETA | 52 | 29 | Mlle A. ANDRIEUX |
+| 12 | JEANBAT DANOVER | 45 | 23 | N. BRUN |
+| 15 | JASMIN DE COEUR | 50 | 25 | R. FOUZER |
 
 ### 4. PRIX DE TIVOLI
 
