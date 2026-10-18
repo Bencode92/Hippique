@@ -114,28 +114,28 @@
 
 ### 8. PRIX DE LA CORSE DU SUD
 
-*16h35 · attelé · 2850 m · 14 partants · cotes à T−3:28*
+*16h35 · attelé · 2850 m · 14 partants · cotes à T−0:48*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 5 | MERLIN D'YVEL | 2,6 | 3,5 | Q. CHAUVE-LAFFAY |
-| 11 | MA DALTON | 7,3 | 9,5 | M. ABRIVARD |
-| 6 | MYLOVE DES RIVIERE | 8,2 | 15 | B. RUET |
-| 8 | MALICE BERRY | 8,4 | 8,1 | P. CALLIER |
-| 12 | MAIN D'OR | 9,4 | 6,2 | MARTIAL GAUVIN |
+| 5 | MERLIN D'YVEL | 2,4 | 3,5 | Q. CHAUVE-LAFFAY |
+| 8 | MALICE BERRY | 4,9 | 8,1 | P. CALLIER |
+| 6 | MYLOVE DES RIVIERE | 6,7 | 15 | B. RUET |
+| 11 | MA DALTON | 9,3 | 9,5 | M. ABRIVARD |
 | 13 | MACLOBEL DE FADAJE | 12 | – | ALEXIS LERENARD |
-| 1 | MALIKOVE | 16 | 4,7 | A. GAUDIN |
-| 14 | MARIA DU MATO | 30 | 105 | B. THOMAS |
-| 9 | MAESTRO GRIFF | 39 | 17 | A. TINTILLIER |
-| 7 | MAGNUS ROMO | 49 | 35 | PH. DANTHU |
-| 4 | MY NAME IS JONES | 56 | 52 | F.J. PELTIER |
-| 10 | MONIE DU LOISIR | 56 | 21 | M. DUJMIC |
-| 2 | MISS DE GODINIERE | 66 | 105 | J. CUOQ |
-| 3 | MISS FLEUR | 99 | 52 | G. TOURON |
+| 12 | MAIN D'OR | 17 | 6,2 | MARTIAL GAUVIN |
+| 1 | MALIKOVE | 30 | 4,7 | A. GAUDIN |
+| 4 | MY NAME IS JONES | 40 | 52 | F.J. PELTIER |
+| 14 | MARIA DU MATO | 66 | 105 | B. THOMAS |
+| 9 | MAESTRO GRIFF | 71 | 17 | A. TINTILLIER |
+| 10 | MONIE DU LOISIR | 77 | 21 | M. DUJMIC |
+| 7 | MAGNUS ROMO | 84 | 35 | PH. DANTHU |
+| 2 | MISS DE GODINIERE | 92 | 105 | J. CUOQ |
+| 3 | MISS FLEUR | 154 | 52 | G. TOURON |
 
 ### 9. PRIX DU VAL DE SAONE
 
-*17h05 · attelé · 2850 m · 9 partants · cotes à T−25:27*
+*17h05 · attelé · 2850 m · 9 partants · cotes à T−20:48*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
@@ -144,7 +144,7 @@
 | 8 | INHERIT | 6 | 3,9 | G. BEAUFILS |
 | 5 | IMPERATRICE VITELA | 19 | 16 | Q. CHAUVE-LAFFAY |
 | 6 | FLASH MONEY | 22 | 16 | A. TINTILLIER |
-| 3 | GEDEON DAIRPET | 80 | 44 | PH. DANTHU |
-| 2 | GALOPIN DE BIANCA | 130 | 76 | P. CALLIER |
-| 1 | GOLD SPEED | 149 | 89 | Y. LAVIGNE |
-| 4 | IMPERIAL KEY | 174 | 134 | J. CUOQ |
+| 3 | GEDEON DAIRPET | 81 | 44 | PH. DANTHU |
+| 2 | GALOPIN DE BIANCA | 131 | 76 | P. CALLIER |
+| 1 | GOLD SPEED | 150 | 89 | Y. LAVIGNE |
+| 4 | IMPERIAL KEY | 175 | 134 | J. CUOQ |
