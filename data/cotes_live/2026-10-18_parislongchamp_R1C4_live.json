@@ -1,0 +1,110 @@
+{
+  "course": "PRIX DU CONSEIL DE PARIS",
+  "numero": 4,
+  "reunion": 1,
+  "heure_depart": 1792331400000,
+  "distance": 2200,
+  "scraped_at": "2026-10-18T15:20:16.877896+02:00",
+  "minutes_avant_depart": 30,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "HERBAL",
+      "cote_live": 11.0,
+      "cote_reference": 11.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792329343000
+    },
+    {
+      "numPmu": 2,
+      "nom": "REMBRAND TO GO",
+      "cote_live": 22.0,
+      "cote_reference": 22.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792329343000
+    },
+    {
+      "numPmu": 3,
+      "nom": "AMINACO",
+      "cote_live": 14.0,
+      "cote_reference": 14.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792329343000
+    },
+    {
+      "numPmu": 4,
+      "nom": "BEST SECRET",
+      "cote_live": 8.6,
+      "cote_reference": 8.5,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792329343000
+    },
+    {
+      "numPmu": 5,
+      "nom": "NITOI",
+      "cote_live": 14.0,
+      "cote_reference": 14.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792329343000
+    },
+    {
+      "numPmu": 6,
+      "nom": "SINILEO",
+      "cote_live": 8.1,
+      "cote_reference": 8.2,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792329343000
+    },
+    {
+      "numPmu": 7,
+      "nom": "EUBOA",
+      "cote_live": 19.0,
+      "cote_reference": 19.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792329343000
+    },
+    {
+      "numPmu": 8,
+      "nom": "ZARAKI",
+      "cote_live": 2.1,
+      "cote_reference": 2.1,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1792329343000
+    },
+    {
+      "numPmu": 9,
+      "nom": "LAPOTHEOSE",
+      "cote_live": 10.0,
+      "cote_reference": 9.7,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792329343000
+    }
+  ],
+  "hippodrome": "PARISLONGCHAMP",
+  "releves": [
+    {
+      "scraped_at": "2026-10-18T15:20:16.877896+02:00",
+      "minutes_avant_depart": 29.720825166666668,
+      "cotes": {
+        "1": 11.0,
+        "2": 22.0,
+        "3": 14.0,
+        "4": 8.6,
+        "5": 14.0,
+        "6": 8.1,
+        "7": 19.0,
+        "8": 2.1,
+        "9": 10.0
+      }
+    }
+  ]
+}

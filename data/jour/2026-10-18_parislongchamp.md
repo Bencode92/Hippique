@@ -1,6 +1,6 @@
 # PARISLONGCHAMP — 18/10/2026
 
-8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -68,19 +68,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX DU CONSEIL DE PARIS
 
-*15h50 · plat · 2200 m · 9 partants · cotes de l'extraction*
+*15h50 · plat · 2200 m · 9 partants · cotes à T−29:43*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 8 | ZARAKI | 1,8 | 1,98 | -8,9 % | M.GUYON | 4/2/1/2 |
-| 6 | SINILEO | 7,5 | 8,81 | -14,8 % | A.MADAMET | 10/2/1/2 |
-| 4 | BEST SECRET | 8,6 | 10,53 | -18,3 % | JW.DOYLE 🏆4e | 162/17/97/8 |
-| 9 | LAPOTHEOSE | 11 | 14,69 | -25,1 % | A.POUCHIN 🏆8e | 6/8/71/131 |
-| 1 | HERBAL | 12 | 15,59 | -23,0 % | C.DEMURO | 1/56/3149/60 |
-| 5 | NITOI | 14 | 17,08 | -18,0 % | S.PASQUIER | 23/2/1/2 |
-| 3 | AMINACO | 26 | 38,33 | -32,2 % | A.HAMELIN | 22/19/3095/33 |
-| 2 | REMBRAND TO GO | 29 | 43,40 | -33,2 % | M.GRANDIN | 3/79/22/325 |
-| 7 | EUBOA | 30 | 42,28 | -29,0 % | D.PROVOST | 33/111/179/50 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 8 | ZARAKI | 2,1 | 1,8 | 2,15 | -2,4 % | M.GUYON | 4/2/1/2 |
+| 6 | SINILEO | 8,1 | 7,5 | 9,54 | -15,1 % | A.MADAMET | 10/2/1/2 |
+| 4 | BEST SECRET | 8,6 | 8,6 | 10,43 | -17,6 % | JW.DOYLE 🏆4e | 162/17/97/8 |
+| 9 | LAPOTHEOSE | 10 | 11 | 13,00 | -23,1 % | A.POUCHIN 🏆8e | 6/8/71/131 |
+| 1 | HERBAL | 11 | 12 | 12,76 | -13,8 % | C.DEMURO | 1/56/3149/60 |
+| 3 | AMINACO | 14 | 26 | 16,92 | -17,3 % | A.HAMELIN | 22/19/3095/33 |
+| 5 | NITOI | 14 | 14 | 16,92 | -17,3 % | S.PASQUIER | 23/2/1/2 |
+| 7 | EUBOA | 19 | 30 | 22,66 | -16,2 % | D.PROVOST | 33/111/179/50 |
+| 2 | REMBRAND TO GO | 22 | 29 | 28,59 | -23,1 % | M.GRANDIN | 3/79/22/325 |
 
 ### 5. PRIX CASIMIR DELAMARRE
 
