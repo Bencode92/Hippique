@@ -93,45 +93,45 @@
 
 ### 7. PRIX DU BRIONNAIS (GR.B)
 
-*16h05 · attelé · 2850 m · 14 partants · cotes à T−9:27*
+*16h05 · attelé · 2850 m · 14 partants · cotes à T−5:07*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 10 | NEXPRESSO BLEU | 2,8 | 7 | N. CORMY |
-| 5 | NELLY DE BERTRANGE | 5,2 | 4,5 | M. ABRIVARD |
-| 6 | NEW BOSS | 5,7 | 3 | A. TINTILLIER |
-| 8 | NOELLE DES ATIAUX | 10 | 12 | B. RUET |
-| 14 | NEO WYNN | 11 | 12 | ALEXIS LERENARD |
-| 9 | NOUVEAU DE LARRE | 18 | 14 | Q. CHAUVE-LAFFAY |
-| 11 | NUIT DES AUDICHONS | 28 | 31 | P. CALLIER |
-| 7 | NEVER GIVE UP | 31 | 31 | M. DUJMIC |
-| 12 | NIMBUS DES BROUETS | 36 | 31 | F. BONNEFOY |
-| 13 | NAOMIE FAMILY | 42 | 31 | F.J. PELTIER |
-| 4 | NOEMIE RIDGEHEAD | 50 | 31 | F. BROUST |
-| 3 | NICE GALAXIE | 63 | 63 | M. AOUDIA |
-| 1 | NEW ONE PAT | 84 | 63 | CH.A. BUFFAVAND |
-| 2 | NANIE ONE | 84 | 42 | B. CHOURRE |
+| 10 | NEXPRESSO BLEU | 3,3 | 7 | N. CORMY |
+| 5 | NELLY DE BERTRANGE | 4,1 | 4,5 | M. ABRIVARD |
+| 9 | NOUVEAU DE LARRE | 8,8 | 14 | Q. CHAUVE-LAFFAY |
+| 6 | NEW BOSS | 10 | 3 | A. TINTILLIER |
+| 14 | NEO WYNN | 15 | 12 | ALEXIS LERENARD |
+| 13 | NAOMIE FAMILY | 16 | 31 | F.J. PELTIER |
+| 12 | NIMBUS DES BROUETS | 17 | 31 | F. BONNEFOY |
+| 8 | NOELLE DES ATIAUX | 18 | 12 | B. RUET |
+| 11 | NUIT DES AUDICHONS | 21 | 31 | P. CALLIER |
+| 7 | NEVER GIVE UP | 26 | 31 | M. DUJMIC |
+| 2 | NANIE ONE | 55 | 42 | B. CHOURRE |
+| 4 | NOEMIE RIDGEHEAD | 55 | 31 | F. BROUST |
+| 1 | NEW ONE PAT | 62 | 63 | CH.A. BUFFAVAND |
+| 3 | NICE GALAXIE | 71 | 63 | M. AOUDIA |
 
 ### 8. PRIX DE LA CORSE DU SUD
 
-*16h35 · attelé · 2850 m · 14 partants · cotes à T−29:28*
+*16h35 · attelé · 2850 m · 14 partants · cotes à T−25:27*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 5 | MERLIN D'YVEL | 2,6 | 3,5 | Q. CHAUVE-LAFFAY |
-| 1 | MALIKOVE | 6,2 | 4,7 | A. GAUDIN |
-| 11 | MA DALTON | 8 | 9,5 | M. ABRIVARD |
-| 12 | MAIN D'OR | 8 | 6,2 | MARTIAL GAUVIN |
+| 5 | MERLIN D'YVEL | 2,7 | 3,5 | Q. CHAUVE-LAFFAY |
+| 1 | MALIKOVE | 6,6 | 4,7 | A. GAUDIN |
+| 12 | MAIN D'OR | 7,3 | 6,2 | MARTIAL GAUVIN |
+| 11 | MA DALTON | 8,6 | 9,5 | M. ABRIVARD |
 | 8 | MALICE BERRY | 9,1 | 8,1 | P. CALLIER |
-| 6 | MYLOVE DES RIVIERE | 19 | 15 | B. RUET |
-| 9 | MAESTRO GRIFF | 22 | 17 | A. TINTILLIER |
-| 10 | MONIE DU LOISIR | 27 | 21 | M. DUJMIC |
-| 13 | MACLOBEL DE FADAJE | 27 | – | ALEXIS LERENARD |
-| 7 | MAGNUS ROMO | 45 | 35 | PH. DANTHU |
-| 3 | MISS FLEUR | 68 | 52 | G. TOURON |
-| 4 | MY NAME IS JONES | 68 | 52 | F.J. PELTIER |
-| 2 | MISS DE GODINIERE | 137 | 105 | J. CUOQ |
-| 14 | MARIA DU MATO | 137 | 105 | B. THOMAS |
+| 6 | MYLOVE DES RIVIERE | 13 | 15 | B. RUET |
+| 9 | MAESTRO GRIFF | 24 | 17 | A. TINTILLIER |
+| 10 | MONIE DU LOISIR | 24 | 21 | M. DUJMIC |
+| 13 | MACLOBEL DE FADAJE | 29 | – | ALEXIS LERENARD |
+| 7 | MAGNUS ROMO | 36 | 35 | PH. DANTHU |
+| 3 | MISS FLEUR | 73 | 52 | G. TOURON |
+| 4 | MY NAME IS JONES | 73 | 52 | F.J. PELTIER |
+| 2 | MISS DE GODINIERE | 146 | 105 | J. CUOQ |
+| 14 | MARIA DU MATO | 146 | 105 | B. THOMAS |
 
 ### 9. PRIX DU VAL DE SAONE
 
