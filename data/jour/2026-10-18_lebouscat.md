@@ -124,23 +124,23 @@
 
 ### 6. PRIX DE L'HIPPODROME DE LUXE (GR.A)
 
-*16h30 · attelé · 2550 m · 13 partants · cotes à T−4:28*
+*16h30 · attelé · 2550 m · 13 partants · cotes à T−1:48*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 6 | MANZONI | 2,2 | 1,4 | C. GAZENGEL |
-| 2 | MEDINA DU CHATELET | 7,1 | 18 | L. GOETZ |
-| 9 | MONT VENTOUX | 7,9 | 39 | R. BOUVIER |
-| 7 | MILTON D'OURVILLE | 9,9 | 31 | TH. DUCOS |
-| 5 | MONA VILI | 11 | 8,1 | M.J. BARCELO BISQUERRA |
+| 6 | MANZONI | 2,7 | 1,4 | C. GAZENGEL |
+| 7 | MILTON D'OURVILLE | 6,2 | 31 | TH. DUCOS |
+| 9 | MONT VENTOUX | 7,3 | 39 | R. BOUVIER |
+| 2 | MEDINA DU CHATELET | 7,8 | 18 | L. GOETZ |
+| 5 | MONA VILI | 12 | 8,1 | M.J. BARCELO BISQUERRA |
+| 3 | MOHITO DE GUEZ | 17 | 20 | M. CRIADO |
+| 12 | MILORD DU PERCHE | 17 | 87 | R.W. DENECHERRE |
 | 10 | MAJOR DE CHOC | 20 | 29 | Y. LACOMBE |
-| 3 | MOHITO DE GUEZ | 22 | 20 | M. CRIADO |
-| 8 | MARENGO ATALANTE | 25 | 43 | AXEL LAIGRON |
-| 11 | MASH POOK | 34 | 27 | D. BROSSARD |
-| 12 | MILORD DU PERCHE | 40 | 87 | R.W. DENECHERRE |
+| 8 | MARENGO ATALANTE | 30 | 43 | AXEL LAIGRON |
+| 4 | MARIE D'ATTAQUE | 39 | 87 | N. PACHA |
+| 11 | MASH POOK | 41 | 27 | D. BROSSARD |
 | 1 | MON FAVORI | 49 | 43 | V. GONIN |
-| 4 | MARIE D'ATTAQUE | 57 | 87 | N. PACHA |
-| 13 | MUSTANG D'ARLINE | 137 | 117 | MAXENCE LECOQ |
+| 13 | MUSTANG D'ARLINE | 99 | 117 | MAXENCE LECOQ |
 
 ### 7. PRIX DE L'HIPPODROME DE LUXE (GR.B)
 
