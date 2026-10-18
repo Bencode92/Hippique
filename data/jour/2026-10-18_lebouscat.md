@@ -75,28 +75,28 @@
 
 ### 4. PRIX DE TIVOLI
 
-*15h30 · attelé · 2650 m · 18 partants · cotes à T−16:23*
+*15h30 · attelé · 2650 m · 18 partants · cotes à T−11:43*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 18 | LOUXOR BOCAIN | 4,7 | 4,3 | M. CRIADO |
-| 7 | LUDO DES LUCAS | 5,6 | 4,3 | PIERRICK LE MOEL |
-| 2 | LOROSYO | 9,1 | 13 | A.A. CHAVATTE |
-| 17 | LOVE QUEEN | 9,8 | 32 | TH. DUCOS |
-| 14 | LUCKY DESIR | 12 | 10 | A. MILLET |
-| 15 | LASCO DES LUCAS | 12 | 16 | A. HONORE |
-| 8 | LYOUBOV SEVEN | 13 | 32 | Mme LANA HENRY |
-| 1 | LAZIO POTERIE | 15 | 10 | E. AUDEBERT |
-| 16 | LORD THOMAS | 18 | 17 | J. CHAVATTE |
+| 18 | LOUXOR BOCAIN | 5,5 | 4,3 | M. CRIADO |
+| 2 | LOROSYO | 6,1 | 13 | A.A. CHAVATTE |
+| 7 | LUDO DES LUCAS | 6,3 | 4,3 | PIERRICK LE MOEL |
+| 17 | LOVE QUEEN | 6,6 | 32 | TH. DUCOS |
+| 1 | LAZIO POTERIE | 14 | 10 | E. AUDEBERT |
+| 14 | LUCKY DESIR | 14 | 10 | A. MILLET |
+| 15 | LASCO DES LUCAS | 15 | 16 | A. HONORE |
+| 8 | LYOUBOV SEVEN | 16 | 32 | Mme LANA HENRY |
 | 10 | LE GEANT D'ATTAQUE | 20 | 20 | O. PICARD |
-| 3 | LOUSTIC DU MIDI | 27 | 32 | PH. MASSCHAELE |
-| 6 | LISBETH DU BOCAGE | 27 | 160 | M. TIJOU |
-| 13 | LUCRECE | 27 | 40 | F. JEANNEAU |
-| 4 | LECCE MARIS | 30 | 22 | R. BOUVIER |
-| 9 | LE KADOR | 61 | 40 | E. SALMON |
-| 12 | LOUISE D'ERPION | 61 | 53 | ET. CLOZIER |
-| 5 | LAMAGISTERE | 123 | 80 | K. BUSNEL |
-| 11 | LAUREATE SPEED | 123 | 80 | D. BROSSARD |
+| 16 | LORD THOMAS | 21 | 17 | J. CHAVATTE |
+| 6 | LISBETH DU BOCAGE | 29 | 160 | M. TIJOU |
+| 3 | LOUSTIC DU MIDI | 33 | 32 | PH. MASSCHAELE |
+| 13 | LUCRECE | 33 | 40 | F. JEANNEAU |
+| 4 | LECCE MARIS | 37 | 22 | R. BOUVIER |
+| 9 | LE KADOR | 42 | 40 | E. SALMON |
+| 12 | LOUISE D'ERPION | 74 | 53 | ET. CLOZIER |
+| 11 | LAUREATE SPEED | 99 | 80 | D. BROSSARD |
+| 5 | LAMAGISTERE | 148 | 80 | K. BUSNEL |
 
 ### 5. PRIX DE MONADEY
 
