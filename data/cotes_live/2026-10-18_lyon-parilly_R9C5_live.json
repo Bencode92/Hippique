@@ -4,44 +4,44 @@
   "reunion": 9,
   "heure_depart": 1792329180000,
   "distance": 2850,
-  "scraped_at": "2026-10-18T15:10:56.522620+02:00",
-  "minutes_avant_depart": 2,
+  "scraped_at": "2026-10-18T15:13:37.319034+02:00",
+  "minutes_avant_depart": -1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MAJESTRIA FILI",
-      "cote_live": 105.0,
+      "cote_live": 92.0,
       "cote_reference": null,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792329051000
+      "timestamp_cote": 1792329214000
     },
     {
       "numPmu": 2,
       "nom": "MAGHEERA GRIFF",
-      "cote_live": 40.0,
+      "cote_live": 42.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792329051000
+      "timestamp_cote": 1792329214000
     },
     {
       "numPmu": 3,
       "nom": "MERCI MERCY",
-      "cote_live": 31.0,
+      "cote_live": 26.0,
       "cote_reference": 33.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792329051000
+      "timestamp_cote": 1792329214000
     },
     {
       "numPmu": 4,
       "nom": "MUSE JULRY",
-      "cote_live": 16.0,
+      "cote_live": 9.3,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792329051000
+      "timestamp_cote": 1792329214000
     },
     {
       "numPmu": 5,
@@ -50,43 +50,43 @@
       "cote_reference": 1.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792329051000
+      "timestamp_cote": 1792329214000
     },
     {
       "numPmu": 6,
       "nom": "MAMZELLE DES PLANS",
-      "cote_live": 6.6,
+      "cote_live": 6.1,
       "cote_reference": 7.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792329051000
+      "timestamp_cote": 1792329214000
     },
     {
       "numPmu": 7,
       "nom": "MERITE JULRY",
-      "cote_live": 6.3,
+      "cote_live": 9.9,
       "cote_reference": 6.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792329051000
+      "timestamp_cote": 1792329214000
     },
     {
       "numPmu": 8,
       "nom": "MAYA DU RADON",
-      "cote_live": 27.0,
+      "cote_live": 26.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792329051000
+      "timestamp_cote": 1792329214000
     },
     {
       "numPmu": 9,
       "nom": "MAYBE LOUANGES",
-      "cote_live": 16.0,
+      "cote_live": 17.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792329051000
+      "timestamp_cote": 1792329214000
     }
   ],
   "hippodrome": "LYON-PARILLY",
@@ -284,6 +284,66 @@
         "7": 6.3,
         "8": 27.0,
         "9": 16.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T15:11:36.692976+02:00",
+      "minutes_avant_depart": 1.3961299833333334,
+      "cotes": {
+        "1": 94.0,
+        "2": 44.0,
+        "3": 31.0,
+        "4": 14.0,
+        "5": 1.7,
+        "6": 4.5,
+        "7": 7.7,
+        "8": 31.0,
+        "9": 18.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T15:12:16.733560+02:00",
+      "minutes_avant_depart": 0.72946095,
+      "cotes": {
+        "1": 72.0,
+        "2": 40.0,
+        "3": 29.0,
+        "4": 11.0,
+        "5": 1.8,
+        "6": 4.6,
+        "7": 8.2,
+        "8": 30.0,
+        "9": 18.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T15:12:56.711272+02:00",
+      "minutes_avant_depart": 0.06279156666666667,
+      "cotes": {
+        "1": 70.0,
+        "2": 35.0,
+        "3": 23.0,
+        "4": 8.3,
+        "5": 2.0,
+        "6": 4.8,
+        "7": 8.0,
+        "8": 23.0,
+        "9": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T15:13:37.319034+02:00",
+      "minutes_avant_depart": -0.6134591,
+      "cotes": {
+        "1": 92.0,
+        "2": 42.0,
+        "3": 26.0,
+        "4": 9.3,
+        "5": 1.6,
+        "6": 6.1,
+        "7": 9.9,
+        "8": 26.0,
+        "9": 17.0
       }
     }
   ]

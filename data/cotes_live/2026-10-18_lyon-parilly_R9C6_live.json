@@ -4,26 +4,26 @@
   "reunion": 9,
   "heure_depart": 1792330500000,
   "distance": 2850,
-  "scraped_at": "2026-10-18T15:09:37.078947+02:00",
-  "minutes_avant_depart": 25,
+  "scraped_at": "2026-10-18T15:13:37.469889+02:00",
+  "minutes_avant_depart": 21,
   "participants": [
     {
       "numPmu": 1,
       "nom": "NAHAR MARCEAUX",
-      "cote_live": 113.0,
+      "cote_live": 60.0,
       "cote_reference": 111.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328967000
+      "timestamp_cote": 1792329209000
     },
     {
       "numPmu": 2,
       "nom": "NORIGOULET",
-      "cote_live": 28.0,
+      "cote_live": 30.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328967000
+      "timestamp_cote": 1792329209000
     },
     {
       "numPmu": 3,
@@ -41,34 +41,34 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328967000
+      "timestamp_cote": 1792329209000
     },
     {
       "numPmu": 5,
       "nom": "NOBLESSE DU ROI",
-      "cote_live": 8.1,
+      "cote_live": 8.0,
       "cote_reference": 7.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328967000
+      "timestamp_cote": 1792329209000
     },
     {
       "numPmu": 6,
       "nom": "NORIA DU VALLON",
-      "cote_live": 7.5,
+      "cote_live": 6.3,
       "cote_reference": 7.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328967000
+      "timestamp_cote": 1792329209000
     },
     {
       "numPmu": 7,
       "nom": "NOISETTE DOREE",
-      "cote_live": 28.0,
+      "cote_live": 30.0,
       "cote_reference": 37.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328967000
+      "timestamp_cote": 1792329209000
     },
     {
       "numPmu": 9,
@@ -77,52 +77,52 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328967000
+      "timestamp_cote": 1792329209000
     },
     {
       "numPmu": 10,
       "nom": "NATIF DE BERTRANGE",
-      "cote_live": 22.0,
+      "cote_live": 24.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328967000
+      "timestamp_cote": 1792329209000
     },
     {
       "numPmu": 11,
       "nom": "NONO LE ROBOT",
-      "cote_live": 3.7,
+      "cote_live": 4.0,
       "cote_reference": 3.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792328967000
+      "timestamp_cote": 1792329209000
     },
     {
       "numPmu": 12,
       "nom": "NOBLE COEUR",
-      "cote_live": 5.4,
+      "cote_live": 5.7,
       "cote_reference": 5.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328967000
+      "timestamp_cote": 1792329209000
     },
     {
       "numPmu": 13,
       "nom": "NEMO DES ANDRAUX",
-      "cote_live": 56.0,
+      "cote_live": 60.0,
       "cote_reference": 55.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328967000
+      "timestamp_cote": 1792329209000
     },
     {
       "numPmu": 14,
       "nom": "NAKILI D'ALEX",
-      "cote_live": 8.7,
+      "cote_live": 9.2,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328967000
+      "timestamp_cote": 1792329209000
     }
   ],
   "hippodrome": "LYON-PARILLY",
@@ -163,6 +163,25 @@
         "12": 5.4,
         "13": 56.0,
         "14": 8.7
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T15:13:37.469889+02:00",
+      "minutes_avant_depart": 21.3865409,
+      "cotes": {
+        "1": 60.0,
+        "2": 30.0,
+        "3": null,
+        "4": 12.0,
+        "5": 8.0,
+        "6": 6.3,
+        "7": 30.0,
+        "9": 10.0,
+        "10": 24.0,
+        "11": 4.0,
+        "12": 5.7,
+        "13": 60.0,
+        "14": 9.2
       }
     }
   ]
