@@ -4,125 +4,125 @@
   "reunion": 8,
   "heure_depart": 1792333800000,
   "distance": 2550,
-  "scraped_at": "2026-10-18T16:00:12.121989+02:00",
-  "minutes_avant_depart": 30,
+  "scraped_at": "2026-10-18T16:04:12.528687+02:00",
+  "minutes_avant_depart": 26,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MON FAVORI",
-      "cote_live": 41.0,
+      "cote_live": 44.0,
       "cote_reference": 43.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331112000
+      "timestamp_cote": 1792332232000
     },
     {
       "numPmu": 2,
       "nom": "MEDINA DU CHATELET",
-      "cote_live": 17.0,
+      "cote_live": 12.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331112000
+      "timestamp_cote": 1792332232000
     },
     {
       "numPmu": 3,
       "nom": "MOHITO DE GUEZ",
-      "cote_live": 20.0,
+      "cote_live": 17.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331112000
+      "timestamp_cote": 1792332232000
     },
     {
       "numPmu": 4,
       "nom": "MARIE D'ATTAQUE",
-      "cote_live": 92.0,
+      "cote_live": 101.0,
       "cote_reference": 97.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331112000
+      "timestamp_cote": 1792332232000
     },
     {
       "numPmu": 5,
       "nom": "MONA VILI",
-      "cote_live": 8.2,
+      "cote_live": 8.6,
       "cote_reference": 8.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331112000
+      "timestamp_cote": 1792332232000
     },
     {
       "numPmu": 6,
       "nom": "MANZONI",
-      "cote_live": 1.4,
+      "cote_live": 1.6,
       "cote_reference": 1.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792331112000
+      "timestamp_cote": 1792332232000
     },
     {
       "numPmu": 7,
       "nom": "MILTON D'OURVILLE",
-      "cote_live": 26.0,
+      "cote_live": 22.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331112000
+      "timestamp_cote": 1792332232000
     },
     {
       "numPmu": 8,
       "nom": "MARENGO ATALANTE",
-      "cote_live": 19.0,
+      "cote_live": 21.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331112000
+      "timestamp_cote": 1792332232000
     },
     {
       "numPmu": 9,
       "nom": "MONT VENTOUX",
-      "cote_live": 41.0,
+      "cote_live": 40.0,
       "cote_reference": 43.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331112000
+      "timestamp_cote": 1792332232000
     },
     {
       "numPmu": 10,
       "nom": "MAJOR DE CHOC",
-      "cote_live": 30.0,
+      "cote_live": 17.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331112000
+      "timestamp_cote": 1792332232000
     },
     {
       "numPmu": 11,
       "nom": "MASH POOK",
-      "cote_live": 28.0,
+      "cote_live": 31.0,
       "cote_reference": 29.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331112000
+      "timestamp_cote": 1792332232000
     },
     {
       "numPmu": 12,
       "nom": "MILORD DU PERCHE",
-      "cote_live": 74.0,
+      "cote_live": 57.0,
       "cote_reference": 64.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331112000
+      "timestamp_cote": 1792332232000
     },
     {
       "numPmu": 13,
       "nom": "MUSTANG D'ARLINE",
-      "cote_live": 123.0,
+      "cote_live": 134.0,
       "cote_reference": 129.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331112000
+      "timestamp_cote": 1792332232000
     }
   ],
   "hippodrome": "LE BOUSCAT",
@@ -144,6 +144,25 @@
         "11": 28.0,
         "12": 74.0,
         "13": 123.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T16:04:12.528687+02:00",
+      "minutes_avant_depart": 25.802946666666667,
+      "cotes": {
+        "1": 44.0,
+        "2": 12.0,
+        "3": 17.0,
+        "4": 101.0,
+        "5": 8.6,
+        "6": 1.6,
+        "7": 22.0,
+        "8": 21.0,
+        "9": 40.0,
+        "10": 17.0,
+        "11": 31.0,
+        "12": 57.0,
+        "13": 134.0
       }
     }
   ]

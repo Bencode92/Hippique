@@ -4,8 +4,8 @@
   "reunion": 4,
   "heure_depart": 1792332540000,
   "distance": 2900,
-  "scraped_at": "2026-10-18T15:59:32.721898+02:00",
-  "minutes_avant_depart": 9,
+  "scraped_at": "2026-10-18T16:04:12.265724+02:00",
+  "minutes_avant_depart": 5,
   "participants": [
     {
       "numPmu": 1,
@@ -14,97 +14,97 @@
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331953000
+      "timestamp_cote": 1792332239000
     },
     {
       "numPmu": 2,
       "nom": "LOVELY BRUYERE",
-      "cote_live": 42.0,
+      "cote_live": 64.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331953000
+      "timestamp_cote": 1792332239000
     },
     {
       "numPmu": 3,
       "nom": "LAST CHANCE",
-      "cote_live": 18.0,
+      "cote_live": 17.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331953000
+      "timestamp_cote": 1792332239000
     },
     {
       "numPmu": 4,
       "nom": "L'ULKA DI LEONE",
-      "cote_live": 6.6,
+      "cote_live": 4.9,
       "cote_reference": 9.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331953000
+      "timestamp_cote": 1792332239000
     },
     {
       "numPmu": 5,
       "nom": "LOVE WITH YOU",
-      "cote_live": 16.0,
+      "cote_live": 24.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331953000
+      "timestamp_cote": 1792332239000
     },
     {
       "numPmu": 6,
       "nom": "LO IKA FOSSAVIE",
-      "cote_live": 16.0,
+      "cote_live": 22.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331953000
+      "timestamp_cote": 1792332239000
     },
     {
       "numPmu": 7,
       "nom": "LUTTE IMPERIALE",
-      "cote_live": 45.0,
+      "cote_live": 76.0,
       "cote_reference": 30.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331953000
+      "timestamp_cote": 1792332239000
     },
     {
       "numPmu": 8,
       "nom": "LEGENDE DU GERS",
-      "cote_live": 25.0,
+      "cote_live": 27.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331953000
+      "timestamp_cote": 1792332239000
     },
     {
       "numPmu": 9,
       "nom": "LADY JIELHEM",
-      "cote_live": 6.7,
+      "cote_live": 5.3,
       "cote_reference": 5.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331953000
+      "timestamp_cote": 1792332239000
     },
     {
       "numPmu": 10,
       "nom": "LEGENDE DE VAUVERT",
-      "cote_live": 8.2,
+      "cote_live": 9.3,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331953000
+      "timestamp_cote": 1792332239000
     },
     {
       "numPmu": 11,
       "nom": "LOUMIA CASTELETS",
-      "cote_live": 20.0,
+      "cote_live": 27.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331953000
+      "timestamp_cote": 1792332239000
     },
     {
       "numPmu": 12,
@@ -113,7 +113,7 @@
       "cote_reference": 3.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792331953000
+      "timestamp_cote": 1792332239000
     }
   ],
   "hippodrome": "AMIENS",
@@ -223,6 +223,42 @@
         "9": 6.7,
         "10": 8.2,
         "11": 20.0,
+        "12": 2.8
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T16:03:32.159842+02:00",
+      "minutes_avant_depart": 5.469615483333333,
+      "cotes": {
+        "1": 19.0,
+        "2": 60.0,
+        "3": 16.0,
+        "4": 5.5,
+        "5": 21.0,
+        "6": 20.0,
+        "7": 71.0,
+        "8": 29.0,
+        "9": 5.5,
+        "10": 8.4,
+        "11": 25.0,
+        "12": 2.9
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T16:04:12.265724+02:00",
+      "minutes_avant_depart": 4.802946666666667,
+      "cotes": {
+        "1": 20.0,
+        "2": 64.0,
+        "3": 17.0,
+        "4": 4.9,
+        "5": 24.0,
+        "6": 22.0,
+        "7": 76.0,
+        "8": 27.0,
+        "9": 5.3,
+        "10": 9.3,
+        "11": 27.0,
         "12": 2.8
       }
     }
