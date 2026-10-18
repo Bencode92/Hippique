@@ -93,24 +93,24 @@
 
 ### 7. PRIX DU BRIONNAIS (GR.B)
 
-*16h05 · attelé · 2850 m · 14 partants · cotes à T−25:23*
+*16h05 · attelé · 2850 m · 14 partants · cotes à T−18:47*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 6 | NEW BOSS | 3 | 3 | A. TINTILLIER |
+| 6 | NEW BOSS | 3,1 | 3 | A. TINTILLIER |
 | 5 | NELLY DE BERTRANGE | 4,4 | 4,5 | M. ABRIVARD |
-| 10 | NEXPRESSO BLEU | 6,7 | 7 | N. CORMY |
+| 10 | NEXPRESSO BLEU | 7,1 | 7 | N. CORMY |
 | 8 | NOELLE DES ATIAUX | 12 | 12 | B. RUET |
-| 9 | NOUVEAU DE LARRE | 13 | 14 | Q. CHAUVE-LAFFAY |
-| 14 | NEO WYNN | 13 | 12 | ALEXIS LERENARD |
-| 7 | NEVER GIVE UP | 30 | 31 | M. DUJMIC |
-| 11 | NUIT DES AUDICHONS | 30 | 31 | P. CALLIER |
-| 13 | NAOMIE FAMILY | 30 | 31 | F.J. PELTIER |
-| 4 | NOEMIE RIDGEHEAD | 40 | 31 | F. BROUST |
-| 12 | NIMBUS DES BROUETS | 40 | 31 | F. BONNEFOY |
-| 1 | NEW ONE PAT | 60 | 63 | CH.A. BUFFAVAND |
-| 2 | NANIE ONE | 60 | 42 | B. CHOURRE |
-| 3 | NICE GALAXIE | 60 | 63 | M. AOUDIA |
+| 9 | NOUVEAU DE LARRE | 12 | 14 | Q. CHAUVE-LAFFAY |
+| 14 | NEO WYNN | 12 | 12 | ALEXIS LERENARD |
+| 13 | NAOMIE FAMILY | 25 | 31 | F.J. PELTIER |
+| 4 | NOEMIE RIDGEHEAD | 32 | 31 | F. BROUST |
+| 7 | NEVER GIVE UP | 32 | 31 | M. DUJMIC |
+| 11 | NUIT DES AUDICHONS | 32 | 31 | P. CALLIER |
+| 12 | NIMBUS DES BROUETS | 32 | 31 | F. BONNEFOY |
+| 2 | NANIE ONE | 42 | 42 | B. CHOURRE |
+| 1 | NEW ONE PAT | 64 | 63 | CH.A. BUFFAVAND |
+| 3 | NICE GALAXIE | 64 | 63 | M. AOUDIA |
 
 ### 8. PRIX DE LA CORSE DU SUD
 
