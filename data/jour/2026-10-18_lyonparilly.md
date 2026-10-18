@@ -93,24 +93,24 @@
 
 ### 7. PRIX DU BRIONNAIS (GR.B)
 
-*16h05 · attelé · 2850 m · 14 partants · cotes à T−5:07*
+*16h05 · attelé · 2850 m · 14 partants · cotes à T−2:48*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 10 | NEXPRESSO BLEU | 3,3 | 7 | N. CORMY |
-| 5 | NELLY DE BERTRANGE | 4,1 | 4,5 | M. ABRIVARD |
-| 9 | NOUVEAU DE LARRE | 8,8 | 14 | Q. CHAUVE-LAFFAY |
-| 6 | NEW BOSS | 10 | 3 | A. TINTILLIER |
-| 14 | NEO WYNN | 15 | 12 | ALEXIS LERENARD |
-| 13 | NAOMIE FAMILY | 16 | 31 | F.J. PELTIER |
+| 5 | NELLY DE BERTRANGE | 3,2 | 4,5 | M. ABRIVARD |
+| 10 | NEXPRESSO BLEU | 4,3 | 7 | N. CORMY |
+| 9 | NOUVEAU DE LARRE | 9,1 | 14 | Q. CHAUVE-LAFFAY |
+| 6 | NEW BOSS | 12 | 3 | A. TINTILLIER |
+| 8 | NOELLE DES ATIAUX | 14 | 12 | B. RUET |
+| 13 | NAOMIE FAMILY | 15 | 31 | F.J. PELTIER |
 | 12 | NIMBUS DES BROUETS | 17 | 31 | F. BONNEFOY |
-| 8 | NOELLE DES ATIAUX | 18 | 12 | B. RUET |
-| 11 | NUIT DES AUDICHONS | 21 | 31 | P. CALLIER |
-| 7 | NEVER GIVE UP | 26 | 31 | M. DUJMIC |
-| 2 | NANIE ONE | 55 | 42 | B. CHOURRE |
-| 4 | NOEMIE RIDGEHEAD | 55 | 31 | F. BROUST |
-| 1 | NEW ONE PAT | 62 | 63 | CH.A. BUFFAVAND |
-| 3 | NICE GALAXIE | 71 | 63 | M. AOUDIA |
+| 14 | NEO WYNN | 18 | 12 | ALEXIS LERENARD |
+| 7 | NEVER GIVE UP | 19 | 31 | M. DUJMIC |
+| 11 | NUIT DES AUDICHONS | 26 | 31 | P. CALLIER |
+| 1 | NEW ONE PAT | 39 | 63 | CH.A. BUFFAVAND |
+| 4 | NOEMIE RIDGEHEAD | 53 | 31 | F. BROUST |
+| 2 | NANIE ONE | 72 | 42 | B. CHOURRE |
+| 3 | NICE GALAXIE | 114 | 63 | M. AOUDIA |
 
 ### 8. PRIX DE LA CORSE DU SUD
 

@@ -84,21 +84,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX CASIMIR DELAMARRE
 
-*16h25 · plat · 1800 m · 11 partants · cotes à T−16:48*
+*16h25 · plat · 1800 m · 11 partants · cotes à T−12:48*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 9 | PIERCHIC | 2,9 | 2,2 | 3,16 | -8,3 % | C.DEMURO | 1/6/–/6 |
-| 6 | EKLLEEL | 7,4 | 10 | 7,83 | -5,5 % | C.LECOEUVRE | 13/1/–/148 |
-| 7 | VANTA | 8,3 | 11 | 8,94 | -7,1 % | D.PROVOST | 33/91/392/– |
-| 8 | HELLO AVENUE | 8,3 | 10 | 9,54 | -13,0 % | A.MADAMET | 10/64/14/23 |
-| 11 | LAND OF LIBERTY | 8,9 | 9,9 | 10,35 | -14,0 % | C.SOUMILLON | 7/60/4/– |
-| 5 | DARNATION | 16 | 12 | 17,25 | -7,2 % | C.LEE | 246/42/3253/4892 |
-| 10 | SANGOMAR | 17 | 25 | 20,60 | -17,5 % | A.LEMAITRE | 11/45/24/588 |
-| 2 | MALA WYSKA | 19 | 28 | 24,05 | -21,0 % | A.HAMELIN | 22/165/688/955 |
-| 12 | SHE COMMANDS | 19 | 15 | 25,67 | -26,0 % | R.CLUTTERBUCK | –/158/–/104 |
-| 4 | NARGIZ | 23 | 20 | 32,88 | -30,0 % | J.MOUTARD | 61/156/12/– |
-| 3 | BUBBLE GUM | 24 | 28 | 29,53 | -18,7 % | M.GRANDIN | 3/41/23/2691 |
+| 9 | PIERCHIC | 2,6 | 2,2 | 2,88 | -9,6 % | C.DEMURO | 1/6/–/6 |
+| 6 | EKLLEEL | 8,1 | 10 | 8,78 | -7,8 % | C.LECOEUVRE | 13/1/–/148 |
+| 11 | LAND OF LIBERTY | 8,2 | 9,9 | 9,52 | -13,8 % | C.SOUMILLON | 7/60/4/– |
+| 8 | HELLO AVENUE | 8,6 | 10 | 10,06 | -14,5 % | A.MADAMET | 10/64/14/23 |
+| 7 | VANTA | 8,8 | 11 | 9,67 | -9,0 % | D.PROVOST | 33/91/392/– |
+| 5 | DARNATION | 17 | 12 | 18,70 | -9,1 % | C.LEE | 246/42/3253/4892 |
+| 10 | SANGOMAR | 18 | 25 | 22,26 | -19,1 % | A.LEMAITRE | 11/45/24/588 |
+| 2 | MALA WYSKA | 20 | 28 | 25,81 | -22,5 % | A.HAMELIN | 22/165/688/955 |
+| 12 | SHE COMMANDS | 20 | 15 | 27,55 | -27,4 % | R.CLUTTERBUCK | –/158/–/104 |
+| 4 | NARGIZ | 24 | 20 | 34,90 | -31,2 % | J.MOUTARD | 61/156/12/– |
+| 3 | BUBBLE GUM | 25 | 28 | 31,28 | -20,1 % | M.GRANDIN | 3/41/23/2691 |
 
 ### 6. PRIX DE SAINT-CYR
 
