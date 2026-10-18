@@ -1,6 +1,6 @@
 # LYON-PARILLY — 18/10/2026
 
-9 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 6 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -114,24 +114,24 @@
 
 ### 8. PRIX DE LA CORSE DU SUD
 
-*16h35 · attelé · 2850 m · 14 partants · cotes de l'extraction*
+*16h35 · attelé · 2850 m · 14 partants · cotes à T−29:28*
 
-| n° | cheval | cote | jockey |
-|--:|:--|--:|:--|
-| 5 | MERLIN D'YVEL | 3,5 | Q. CHAUVE-LAFFAY |
-| 1 | MALIKOVE | 4,7 | A. GAUDIN |
-| 12 | MAIN D'OR | 6,2 | MARTIAL GAUVIN |
-| 8 | MALICE BERRY | 8,1 | P. CALLIER |
-| 11 | MA DALTON | 9,5 | M. ABRIVARD |
-| 6 | MYLOVE DES RIVIERE | 15 | B. RUET |
-| 9 | MAESTRO GRIFF | 17 | A. TINTILLIER |
-| 10 | MONIE DU LOISIR | 21 | M. DUJMIC |
-| 7 | MAGNUS ROMO | 35 | PH. DANTHU |
-| 3 | MISS FLEUR | 52 | G. TOURON |
-| 4 | MY NAME IS JONES | 52 | F.J. PELTIER |
-| 2 | MISS DE GODINIERE | 105 | J. CUOQ |
-| 14 | MARIA DU MATO | 105 | B. THOMAS |
-| 13 | MACLOBEL DE FADAJE | – | ALEXIS LERENARD |
+| n° | cheval | cote | matin | jockey |
+|--:|:--|--:|--:|:--|
+| 5 | MERLIN D'YVEL | 2,6 | 3,5 | Q. CHAUVE-LAFFAY |
+| 1 | MALIKOVE | 6,2 | 4,7 | A. GAUDIN |
+| 11 | MA DALTON | 8 | 9,5 | M. ABRIVARD |
+| 12 | MAIN D'OR | 8 | 6,2 | MARTIAL GAUVIN |
+| 8 | MALICE BERRY | 9,1 | 8,1 | P. CALLIER |
+| 6 | MYLOVE DES RIVIERE | 19 | 15 | B. RUET |
+| 9 | MAESTRO GRIFF | 22 | 17 | A. TINTILLIER |
+| 10 | MONIE DU LOISIR | 27 | 21 | M. DUJMIC |
+| 13 | MACLOBEL DE FADAJE | 27 | – | ALEXIS LERENARD |
+| 7 | MAGNUS ROMO | 45 | 35 | PH. DANTHU |
+| 3 | MISS FLEUR | 68 | 52 | G. TOURON |
+| 4 | MY NAME IS JONES | 68 | 52 | F.J. PELTIER |
+| 2 | MISS DE GODINIERE | 137 | 105 | J. CUOQ |
+| 14 | MARIA DU MATO | 137 | 105 | B. THOMAS |
 
 ### 9. PRIX DU VAL DE SAONE
 
