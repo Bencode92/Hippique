@@ -1,6 +1,6 @@
 # LYON-PARILLY — 18/10/2026
 
-9 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -58,19 +58,19 @@
 
 ### 5. PRIX DU MAINE-ET-LOIRE
 
-*15h05 · monté · 2850 m · 9 partants · cotes de l'extraction*
+*15h05 · monté · 2850 m · 9 partants · cotes à T−29:23*
 
-| n° | cheval | cote | jockey |
-|--:|:--|--:|:--|
-| 5 | MOLLY FLIGNY | 1,5 | Q. SEGUIN |
-| 7 | MERITE JULRY | 6,3 | M. LAFFAY |
-| 6 | MAMZELLE DES PLANS | 7,2 | T. AGUIAR |
-| 4 | MUSE JULRY | 13 | Mlle S. CORTIAL |
-| 9 | MAYBE LOUANGES | 19 | F. BROUST |
-| 2 | MAGHEERA GRIFF | 30 | D.A. HAON |
-| 8 | MAYA DU RADON | 30 | A.P. GIRAUD |
-| 3 | MERCI MERCY | 50 | Mme S. BUSSET |
-| 1 | MAJESTRIA FILI | – | Mlle M. HEYMANS |
+| n° | cheval | cote | matin | jockey |
+|--:|:--|--:|--:|:--|
+| 5 | MOLLY FLIGNY | 1,7 | 1,5 | Q. SEGUIN |
+| 7 | MERITE JULRY | 6,1 | 6,3 | M. LAFFAY |
+| 6 | MAMZELLE DES PLANS | 7,5 | 7,2 | T. AGUIAR |
+| 4 | MUSE JULRY | 11 | 13 | Mlle S. CORTIAL |
+| 9 | MAYBE LOUANGES | 16 | 19 | F. BROUST |
+| 2 | MAGHEERA GRIFF | 23 | 30 | D.A. HAON |
+| 8 | MAYA DU RADON | 23 | 30 | A.P. GIRAUD |
+| 3 | MERCI MERCY | 33 | 50 | Mme S. BUSSET |
+| 1 | MAJESTRIA FILI | – | – | Mlle M. HEYMANS |
 
 ### 6. PRIX DU BRIONNAIS (GR.A)
 

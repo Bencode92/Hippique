@@ -53,25 +53,25 @@
 
 ### 3. PRIX SISYPHE II - PRIX JEANOT LAMAISON
 
-*15h00 · attelé · 2550 m · 15 partants · cotes à T−29:43*
+*15h00 · attelé · 2550 m · 15 partants · cotes à T−25:03*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 11 | JADE DES BRETTES | 5,2 | 4,9 | P. BEASSE |
-| 1 | JOBERT DU MOULIN | 5,7 | 7 | TH. GOUT |
-| 3 | JOSVIL | 7,2 | 7,3 | D. BARANGER |
-| 6 | JUNIOR DU GADE | 10 | 10 | Mlle A. DUPUIS |
+| 11 | JADE DES BRETTES | 5,5 | 4,9 | P. BEASSE |
+| 1 | JOBERT DU MOULIN | 6,4 | 7 | TH. GOUT |
+| 3 | JOSVIL | 8,1 | 7,3 | D. BARANGER |
+| 4 | JADOR JOSSELYN | 8,3 | 21 | CH. MANEGAT |
 | 2 | JUMPIE PURPLE | 12 | 11 | L. CHUPIN |
-| 9 | JOYAU WINNER | 14 | 12 | Mlle L. VOISIN |
-| 13 | JAGUAR BLEU | 16 | 16 | G. TOQUE |
-| 7 | JOYEUSE D'ATOUT | 19 | 19 | J.B. PAREY |
-| 4 | JADOR JOSSELYN | 21 | 21 | CH. MANEGAT |
-| 5 | JAVA DE LIGNY | 21 | 21 | M. CATHERINE-PEZET |
-| 8 | JOSS GRAND PRE | 25 | 25 | E. SALMON |
-| 12 | JEANBAT DANOVER | 25 | 23 | N. BRUN |
-| 15 | JASMIN DE COEUR | 28 | 25 | R. FOUZER |
+| 6 | JUNIOR DU GADE | 12 | 10 | Mlle A. DUPUIS |
+| 5 | JAVA DE LIGNY | 15 | 21 | M. CATHERINE-PEZET |
+| 9 | JOYAU WINNER | 15 | 12 | Mlle L. VOISIN |
+| 13 | JAGUAR BLEU | 17 | 16 | G. TOQUE |
+| 7 | JOYEUSE D'ATOUT | 20 | 19 | J.B. PAREY |
+| 8 | JOSS GRAND PRE | 23 | 25 | E. SALMON |
+| 12 | JEANBAT DANOVER | 28 | 23 | N. BRUN |
 | 10 | JACY DE NARMONT | 31 | 29 | NOE BRUN |
-| 14 | JINKGO VEETA | 31 | 29 | Mlle A. ANDRIEUX |
+| 15 | JASMIN DE COEUR | 31 | 25 | R. FOUZER |
+| 14 | JINKGO VEETA | 35 | 29 | Mlle A. ANDRIEUX |
 
 ### 4. PRIX DE TIVOLI
 
