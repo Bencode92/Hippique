@@ -45,26 +45,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX RIEUSSEC
 
-*15h15 · plat · 3100 m · 16 partants · cotes à T−25:24*
+*15h15 · plat · 3100 m · 16 partants · cotes à T−21:23*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 8 | MIGHTY BOY | 4,9 | 4,8 | 5,95 | -17,6 % | S.PASQUIER | 23/27/163/1199 |
-| 4 | PRINCESSE D'AMOUR | 5,8 | 5,6 | 5,85 | -0,8 % | C.SOUMILLON | 7/64/14/23 |
-| 10 | DEMPY | 10 | 10 | 10,49 | -4,7 % | C.DEMURO | 1/119/65/486 |
-| 2 | DON'T SHUT ME DOWN | 11 | 10 | 13,33 | -17,5 % | M.GUYON 3e | 4/19/174/151 |
-| 7 | STEP MORNING | 11 | 12 | 12,20 | -9,8 % | T.BACHELOT | 16/429/1175/4133 |
-| 3 | BLACK SAXON | 14 | 14 | 14,19 | -1,4 % | A.MADAMET | 10/96/59/269 |
-| 12 | VENDOMYA | 14 | 14 | 18,98 | -26,2 % | A.LEMAITRE | 11/83/556/1047 |
-| 1 | YES ZARA | 16 | 16 | 18,13 | -11,8 % | M.VELON | 28/89/164/– |
-| 9 | RAM SEA | 22 | 21 | 30,00 | -26,7 % | L.BRECHET | 50/63/1504/56 |
-| 13 | RECOLETTY | 24 | 25 | 28,97 | -17,2 % | E.HARDOUIN | 27/94/146/235 |
-| 11 | IKKO | 28 | 32 | 32,86 | -14,8 % | R.THOMAS | 75/14/644/1708 |
-| 14 | ZARFLIGHT | 29 | 33 | 35,94 | -19,3 % | A.CRASTUS | 17/241/1057/2123 |
-| 6 | FERDINAND PREMIER | 37 | 36 | 54,19 | -31,7 % | C.LECOEUVRE | 13/826/18/5288 |
-| 16 | MEASTER OWEN | 43 | 47 | 60,00 | -28,3 % | L.PLOMMEE | 31/77/176/866 |
-| 5 | A BEAUREGARD | 52 | 46 | 59,59 | -12,7 % | D.PROVOST | 33/77/317/908 |
-| 15 | FANTASTICO | 59 | 55 | 90,35 | -34,7 % | C.PACAUT | 48/218/460/948 |
+| 8 | MIGHTY BOY | 4,9 | 4,8 | 5,97 | -17,9 % | S.PASQUIER | 23/27/163/1199 |
+| 4 | PRINCESSE D'AMOUR | 6 | 5,6 | 6,09 | -1,5 % | C.SOUMILLON | 7/64/14/23 |
+| 10 | DEMPY | 9,5 | 10 | 9,92 | -4,2 % | C.DEMURO | 1/119/65/486 |
+| 7 | STEP MORNING | 10 | 12 | 10,05 | -0,5 % | T.BACHELOT | 16/429/1175/4133 |
+| 2 | DON'T SHUT ME DOWN | 11 | 10 | 13,38 | -17,8 % | M.GUYON 3e | 4/19/174/151 |
+| 3 | BLACK SAXON | 14 | 14 | 14,25 | -1,7 % | A.MADAMET | 10/96/59/269 |
+| 12 | VENDOMYA | 14 | 14 | 19,05 | -26,5 % | A.LEMAITRE | 11/83/556/1047 |
+| 1 | YES ZARA | 17 | 16 | 19,53 | -13,0 % | M.VELON | 28/89/164/– |
+| 9 | RAM SEA | 21 | 21 | 28,54 | -26,4 % | L.BRECHET | 50/63/1504/56 |
+| 13 | RECOLETTY | 25 | 25 | 30,47 | -17,9 % | E.HARDOUIN | 27/94/146/235 |
+| 11 | IKKO | 29 | 32 | 37,64 | -23,0 % | R.THOMAS | 75/14/644/1708 |
+| 14 | ZARFLIGHT | 30 | 33 | 37,48 | -20,0 % | A.CRASTUS | 17/241/1057/2123 |
+| 6 | FERDINAND PREMIER | 37 | 36 | 54,39 | -32,0 % | C.LECOEUVRE | 13/826/18/5288 |
+| 16 | MEASTER OWEN | 43 | 47 | 60,22 | -28,6 % | L.PLOMMEE | 31/77/176/866 |
+| 5 | A BEAUREGARD | 53 | 46 | 61,04 | -13,2 % | D.PROVOST | 33/77/317/908 |
+| 15 | FANTASTICO | 56 | 55 | 85,72 | -34,7 % | C.PACAUT | 48/218/460/948 |
 
 ### 4. PRIX DU CONSEIL DE PARIS
 

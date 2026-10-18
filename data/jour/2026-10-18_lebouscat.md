@@ -53,25 +53,25 @@
 
 ### 3. PRIX SISYPHE II - PRIX JEANOT LAMAISON
 
-*15h00 · attelé · 2550 m · 15 partants · cotes à T−7:43*
+*15h00 · attelé · 2550 m · 15 partants · cotes à T−5:03*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 1 | JOBERT DU MOULIN | 3,3 | 7 | TH. GOUT |
-| 11 | JADE DES BRETTES | 5,8 | 4,9 | P. BEASSE |
-| 2 | JUMPIE PURPLE | 10 | 11 | L. CHUPIN |
-| 4 | JADOR JOSSELYN | 10 | 21 | CH. MANEGAT |
-| 3 | JOSVIL | 11 | 7,3 | D. BARANGER |
-| 6 | JUNIOR DU GADE | 12 | 10 | Mlle A. DUPUIS |
-| 7 | JOYEUSE D'ATOUT | 21 | 19 | J.B. PAREY |
-| 8 | JOSS GRAND PRE | 21 | 25 | E. SALMON |
-| 13 | JAGUAR BLEU | 22 | 16 | G. TOQUE |
-| 5 | JAVA DE LIGNY | 27 | 21 | M. CATHERINE-PEZET |
-| 9 | JOYAU WINNER | 27 | 12 | Mlle L. VOISIN |
-| 14 | JINKGO VEETA | 37 | 29 | Mlle A. ANDRIEUX |
-| 10 | JACY DE NARMONT | 40 | 29 | NOE BRUN |
-| 12 | JEANBAT DANOVER | 44 | 23 | N. BRUN |
-| 15 | JASMIN DE COEUR | 54 | 25 | R. FOUZER |
+| 11 | JADE DES BRETTES | 4,7 | 4,9 | P. BEASSE |
+| 1 | JOBERT DU MOULIN | 8,2 | 7 | TH. GOUT |
+| 4 | JADOR JOSSELYN | 8,4 | 21 | CH. MANEGAT |
+| 2 | JUMPIE PURPLE | 8,7 | 11 | L. CHUPIN |
+| 3 | JOSVIL | 9,5 | 7,3 | D. BARANGER |
+| 6 | JUNIOR DU GADE | 10 | 10 | Mlle A. DUPUIS |
+| 8 | JOSS GRAND PRE | 16 | 25 | E. SALMON |
+| 7 | JOYEUSE D'ATOUT | 18 | 19 | J.B. PAREY |
+| 13 | JAGUAR BLEU | 19 | 16 | G. TOQUE |
+| 5 | JAVA DE LIGNY | 23 | 21 | M. CATHERINE-PEZET |
+| 9 | JOYAU WINNER | 23 | 12 | Mlle L. VOISIN |
+| 10 | JACY DE NARMONT | 28 | 29 | NOE BRUN |
+| 14 | JINKGO VEETA | 32 | 29 | Mlle A. ANDRIEUX |
+| 12 | JEANBAT DANOVER | 38 | 23 | N. BRUN |
+| 15 | JASMIN DE COEUR | 42 | 25 | R. FOUZER |
 
 ### 4. PRIX DE TIVOLI
 
