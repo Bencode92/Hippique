@@ -35,42 +35,41 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 6 | LE COLOMBAR | 3,5 | J.PHELIPPE | 330/91/–/– |
-| 7 | ROI DU REVE | 3,5 | T.BEAURAIN | 267/283/–/– |
-| 2 | IRADIUS | 5,3 | R.POINCOT | 354/283/1329/3207 |
-| 4 | SOISFRANC | 5,3 | A. ZULIANI | 165/635/3580/4868 |
-| 1 | JACKPOT DE REVE | 12 | G.SANCHEZ | 128/257/–/– |
-| 3 | KACOU | 15 | B.GELHAY | –/25/–/436 |
+| 6 | LE COLOMBAR | 3 | J.PHELIPPE | 330/91/–/– |
+| 7 | ROI DU REVE | 3,8 | T.BEAURAIN | 267/283/–/– |
+| 4 | SOISFRANC | 4,8 | A. ZULIANI | 165/635/3580/4868 |
+| 2 | IRADIUS | 6,2 | R.POINCOT | 354/283/1329/3207 |
+| 1 | JACKPOT DE REVE | 13 | G.SANCHEZ | 128/257/–/– |
+| 3 | KACOU | 17 | B.GELHAY | –/25/–/436 |
 | 5 | IN VICTIS | 20 | D.UBEDA | –/576/1589/3301 |
 
 ### 4. PRIX LOUIS TRESCA
 
-*14h35 · haies · 3400 m · 6 partants · cotes à T−0:03*
+*14h45 · haies · 3400 m · 6 partants · cotes à T−0:03*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 5 | MEURSAULT CHARME | 3 | 6,6 | T.BEAURAIN | 267/410/182/90 |
-| 2 | MATADOR WOOD | 4,8 | 5,9 | A.ZULIANI | 165/635/3967/1871 |
-| 6 | SCILLA | 4,8 | 6 | J.PHELIPPE | 330/91/675/952 |
-| 3 | MARIUS | 5,1 | 3,6 | D.UBEDA | –/576/638/2892 |
-| 4 | CAMPO GRANDE | 8,8 | 4 | J.CHARRON | –/459/–/– |
-| 1 | MARY POPPINS | 12 | 7,3 | G.CHAMPIER | 385/25/3468/3246 |
+| 5 | MEURSAULT CHARME | 3 | 3,7 | T.BEAURAIN | 267/410/182/90 |
+| 6 | SCILLA | 4,8 | 5,2 | J.PHELIPPE | 330/91/675/952 |
+| 2 | MATADOR WOOD | 4,8 | 3,8 | A.ZULIANI | 165/635/3967/1871 |
+| 3 | MARIUS | 5,1 | 4,3 | D.UBEDA | –/576/638/2892 |
+| 4 | CAMPO GRANDE | 8,8 | 10 | J.CHARRON | –/459/–/– |
+| 1 | MARY POPPINS | 12 | 11 | G.CHAMPIER | 385/25/3468/3246 |
 
 ### 5. PRIX DU MAINE-ET-LOIRE
 
-*15h05 · monté · 2850 m · 9 partants · cotes à T−0:03*
+*15h13 · monté · 2850 m · 8 partants · cotes à T−0:03*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 5 | MOLLY FLIGNY | 2 | 1,5 | Q. SEGUIN |
-| 6 | MAMZELLE DES PLANS | 4,8 | 7,2 | T. AGUIAR |
-| 7 | MERITE JULRY | 8 | 6,3 | M. LAFFAY |
-| 4 | MUSE JULRY | 8,3 | 13 | Mlle S. CORTIAL |
-| 9 | MAYBE LOUANGES | 15 | 19 | F. BROUST |
-| 3 | MERCI MERCY | 23 | 50 | Mme S. BUSSET |
-| 8 | MAYA DU RADON | 23 | 30 | A.P. GIRAUD |
-| 2 | MAGHEERA GRIFF | 35 | 30 | D.A. HAON |
-| 1 | MAJESTRIA FILI | 70 | – | Mlle M. HEYMANS |
+| 5 | MOLLY FLIGNY | 2 | 1,6 | Q. SEGUIN |
+| 6 | MAMZELLE DES PLANS | 4,8 | 6 | T. AGUIAR |
+| 7 | MERITE JULRY | 8 | 10 | M. LAFFAY |
+| 4 | MUSE JULRY | 8,3 | 8,2 | Mlle S. CORTIAL |
+| 9 | MAYBE LOUANGES | 15 | 15 | F. BROUST |
+| 3 | MERCI MERCY | 23 | 28 | Mme S. BUSSET |
+| 2 | MAGHEERA GRIFF | 35 | 41 | D.A. HAON |
+| 1 | MAJESTRIA FILI | 70 | 90 | Mlle M. HEYMANS |
 
 ### 6. PRIX DU BRIONNAIS (GR.A)
 
@@ -78,19 +77,19 @@
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 12 | NOBLE COEUR | 4,1 | 4,2 | A. TINTILLIER |
-| 6 | NORIA DU VALLON | 4,9 | 6,3 | M. ABRIVARD |
-| 4 | NELSON D'ECOTAY | 5,8 | 25 | Q. CHAUVE-LAFFAY |
-| 5 | NOBLESSE DU ROI | 7,6 | 7,6 | A. GAUDIN |
-| 11 | NONO LE ROBOT | 8,8 | 5,4 | F.J. PELTIER |
-| 9 | NOUKI DES SOURCES | 18 | 9,5 | P. CALLIER |
-| 14 | NAKILI D'ALEX | 18 | 6,9 | B. RUET |
-| 10 | NATIF DE BERTRANGE | 19 | 38 | ALEXIS LERENARD |
-| 7 | NOISETTE DOREE | 22 | 25 | B. THOMAS |
-| 1 | NAHAR MARCEAUX | 34 | 76 | MARTIAL GAUVIN |
-| 2 | NORIGOULET | 42 | 19 | PH. DANTHU |
-| 13 | NEMO DES ANDRAUX | 64 | 76 | L. BRECHAT |
-| 3 | NEWTON DE RATILLY | 171 | – | J. CUOQ |
+| 12 | NOBLE COEUR | 4,1 | 2,8 | A. TINTILLIER |
+| 6 | NORIA DU VALLON | 4,9 | 5,3 | M. ABRIVARD |
+| 4 | NELSON D'ECOTAY | 5,8 | 8,9 | Q. CHAUVE-LAFFAY |
+| 5 | NOBLESSE DU ROI | 7,6 | 5,4 | A. GAUDIN |
+| 11 | NONO LE ROBOT | 8,8 | 10 | F.J. PELTIER |
+| 9 | NOUKI DES SOURCES | 18 | 20 | P. CALLIER |
+| 14 | NAKILI D'ALEX | 18 | 32 | B. RUET |
+| 10 | NATIF DE BERTRANGE | 19 | 18 | ALEXIS LERENARD |
+| 7 | NOISETTE DOREE | 22 | 38 | B. THOMAS |
+| 1 | NAHAR MARCEAUX | 34 | 60 | MARTIAL GAUVIN |
+| 2 | NORIGOULET | 42 | 116 | PH. DANTHU |
+| 13 | NEMO DES ANDRAUX | 64 | 67 | L. BRECHAT |
+| 3 | NEWTON DE RATILLY | 171 | 156 | J. CUOQ |
 
 ### 7. PRIX DU BRIONNAIS (GR.B)
 
@@ -98,20 +97,20 @@
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 6 | NEW BOSS | 3 | 2,2 | A. TINTILLIER |
-| 5 | NELLY DE BERTRANGE | 4,4 | 3,8 | M. ABRIVARD |
-| 10 | NEXPRESSO BLEU | 6,7 | 9,5 | N. CORMY |
+| 6 | NEW BOSS | 3 | 3 | A. TINTILLIER |
+| 5 | NELLY DE BERTRANGE | 4,4 | 4,5 | M. ABRIVARD |
+| 10 | NEXPRESSO BLEU | 6,7 | 7 | N. CORMY |
 | 8 | NOELLE DES ATIAUX | 12 | 12 | B. RUET |
-| 9 | NOUVEAU DE LARRE | 13 | 28 | Q. CHAUVE-LAFFAY |
-| 14 | NEO WYNN | 13 | 17 | ALEXIS LERENARD |
-| 7 | NEVER GIVE UP | 30 | 28 | M. DUJMIC |
-| 11 | NUIT DES AUDICHONS | 30 | – | P. CALLIER |
-| 13 | NAOMIE FAMILY | 30 | 28 | F.J. PELTIER |
-| 4 | NOEMIE RIDGEHEAD | 40 | 42 | F. BROUST |
-| 12 | NIMBUS DES BROUETS | 40 | 85 | F. BONNEFOY |
-| 1 | NEW ONE PAT | 60 | – | CH.A. BUFFAVAND |
+| 9 | NOUVEAU DE LARRE | 13 | 14 | Q. CHAUVE-LAFFAY |
+| 14 | NEO WYNN | 13 | 12 | ALEXIS LERENARD |
+| 7 | NEVER GIVE UP | 30 | 31 | M. DUJMIC |
+| 11 | NUIT DES AUDICHONS | 30 | 31 | P. CALLIER |
+| 13 | NAOMIE FAMILY | 30 | 31 | F.J. PELTIER |
+| 4 | NOEMIE RIDGEHEAD | 40 | 31 | F. BROUST |
+| 12 | NIMBUS DES BROUETS | 40 | 31 | F. BONNEFOY |
+| 1 | NEW ONE PAT | 60 | 63 | CH.A. BUFFAVAND |
 | 2 | NANIE ONE | 60 | 42 | B. CHOURRE |
-| 3 | NICE GALAXIE | 60 | 42 | M. AOUDIA |
+| 3 | NICE GALAXIE | 60 | 63 | M. AOUDIA |
 
 ### 8. PRIX DE LA CORSE DU SUD
 
@@ -119,19 +118,19 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 5 | MERLIN D'YVEL | 2,7 | Q. CHAUVE-LAFFAY |
-| 12 | MAIN D'OR | 5 | MARTIAL GAUVIN |
-| 8 | MALICE BERRY | 6 | P. CALLIER |
-| 11 | MA DALTON | 9,4 | M. ABRIVARD |
-| 6 | MYLOVE DES RIVIERE | 13 | B. RUET |
-| 10 | MONIE DU LOISIR | 13 | M. DUJMIC |
-| 9 | MAESTRO GRIFF | 22 | A. TINTILLIER |
-| 1 | MALIKOVE | 33 | A. GAUDIN |
-| 7 | MAGNUS ROMO | 33 | PH. DANTHU |
-| 2 | MISS DE GODINIERE | 66 | J. CUOQ |
-| 4 | MY NAME IS JONES | 66 | F.J. PELTIER |
-| 14 | MARIA DU MATO | 66 | B. THOMAS |
-| 3 | MISS FLEUR | – | G. TOURON |
+| 5 | MERLIN D'YVEL | 3,5 | Q. CHAUVE-LAFFAY |
+| 1 | MALIKOVE | 4,7 | A. GAUDIN |
+| 12 | MAIN D'OR | 6,2 | MARTIAL GAUVIN |
+| 8 | MALICE BERRY | 8,1 | P. CALLIER |
+| 11 | MA DALTON | 9,5 | M. ABRIVARD |
+| 6 | MYLOVE DES RIVIERE | 15 | B. RUET |
+| 9 | MAESTRO GRIFF | 17 | A. TINTILLIER |
+| 10 | MONIE DU LOISIR | 21 | M. DUJMIC |
+| 7 | MAGNUS ROMO | 35 | PH. DANTHU |
+| 3 | MISS FLEUR | 52 | G. TOURON |
+| 4 | MY NAME IS JONES | 52 | F.J. PELTIER |
+| 2 | MISS DE GODINIERE | 105 | J. CUOQ |
+| 14 | MARIA DU MATO | 105 | B. THOMAS |
 | 13 | MACLOBEL DE FADAJE | – | ALEXIS LERENARD |
 
 ### 9. PRIX DU VAL DE SAONE
@@ -140,12 +139,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 9 | JOLIVERT DU GERS | 1,9 | M. ABRIVARD |
-| 7 | ISTORIC MAUZUN | 4,1 | J.PH. DUCHER |
-| 8 | INHERIT | 4,7 | G. BEAUFILS |
-| 6 | FLASH MONEY | 20 | A. TINTILLIER |
-| 5 | IMPERATRICE VITELA | 23 | Q. CHAUVE-LAFFAY |
-| 3 | GEDEON DAIRPET | 34 | PH. DANTHU |
-| 2 | GALOPIN DE BIANCA | 63 | P. CALLIER |
-| 1 | GOLD SPEED | 76 | Y. LAVIGNE |
-| 4 | IMPERIAL KEY | 95 | J. CUOQ |
+| 9 | JOLIVERT DU GERS | 2 | M. ABRIVARD |
+| 8 | INHERIT | 3,9 | G. BEAUFILS |
+| 7 | ISTORIC MAUZUN | 4,6 | J.PH. DUCHER |
+| 5 | IMPERATRICE VITELA | 16 | Q. CHAUVE-LAFFAY |
+| 6 | FLASH MONEY | 16 | A. TINTILLIER |
+| 3 | GEDEON DAIRPET | 44 | PH. DANTHU |
+| 2 | GALOPIN DE BIANCA | 76 | P. CALLIER |
+| 1 | GOLD SPEED | 89 | Y. LAVIGNE |
+| 4 | IMPERIAL KEY | 134 | J. CUOQ |
