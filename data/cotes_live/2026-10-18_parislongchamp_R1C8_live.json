@@ -4,8 +4,8 @@
   "reunion": 1,
   "heure_depart": 1792339800000,
   "distance": 3100,
-  "scraped_at": "2026-10-18T18:06:52.194747+02:00",
-  "minutes_avant_depart": 3,
+  "scraped_at": "2026-10-18T18:09:32.535570+02:00",
+  "minutes_avant_depart": 0,
   "participants": [
     {
       "numPmu": 1,
@@ -14,25 +14,25 @@
       "cote_reference": 8.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792339597000
+      "timestamp_cote": 1792339757000
     },
     {
       "numPmu": 2,
       "nom": "GOOD TO SEE YOU",
-      "cote_live": 12.0,
+      "cote_live": 13.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792339597000
+      "timestamp_cote": 1792339757000
     },
     {
       "numPmu": 3,
       "nom": "EMBIEZ",
-      "cote_live": 5.3,
+      "cote_live": 5.2,
       "cote_reference": 5.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792339597000
+      "timestamp_cote": 1792339757000
     },
     {
       "numPmu": 4,
@@ -41,70 +41,70 @@
       "cote_reference": 3.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792339597000
+      "timestamp_cote": 1792339757000
     },
     {
       "numPmu": 5,
       "nom": "NUMERUS BORGET",
-      "cote_live": 23.0,
+      "cote_live": 22.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792339597000
+      "timestamp_cote": 1792339757000
     },
     {
       "numPmu": 6,
       "nom": "KLASSIC PRECIEUX",
-      "cote_live": 27.0,
+      "cote_live": 25.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792339597000
+      "timestamp_cote": 1792339757000
     },
     {
       "numPmu": 7,
       "nom": "ASTREDARGENT",
-      "cote_live": 19.0,
+      "cote_live": 18.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792339597000
+      "timestamp_cote": 1792339757000
     },
     {
       "numPmu": 8,
       "nom": "ANDOUINS",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792339597000
+      "timestamp_cote": 1792339757000
     },
     {
       "numPmu": 9,
       "nom": "ALMACADO GREE",
-      "cote_live": 49.0,
+      "cote_live": 55.0,
       "cote_reference": 31.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792339597000
+      "timestamp_cote": 1792339757000
     },
     {
       "numPmu": 10,
       "nom": "BARBADIN",
-      "cote_live": 11.0,
+      "cote_live": 10.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792339597000
+      "timestamp_cote": 1792339757000
     },
     {
       "numPmu": 11,
       "nom": "BECQUATHUNDER",
-      "cote_live": 15.0,
+      "cote_live": 16.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792339597000
+      "timestamp_cote": 1792339757000
     }
   ],
   "hippodrome": "PARISLONGCHAMP",
@@ -294,6 +294,74 @@
         "9": 49.0,
         "10": 11.0,
         "11": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T18:07:31.975419+02:00",
+      "minutes_avant_depart": 2.4692132166666667,
+      "cotes": {
+        "1": 5.8,
+        "2": 12.0,
+        "3": 5.3,
+        "4": 3.1,
+        "5": 22.0,
+        "6": 24.0,
+        "7": 19.0,
+        "8": 13.0,
+        "9": 48.0,
+        "10": 11.0,
+        "11": 16.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T18:08:12.216233+02:00",
+      "minutes_avant_depart": 1.8025442333333332,
+      "cotes": {
+        "1": 5.7,
+        "2": 13.0,
+        "3": 5.2,
+        "4": 3.2,
+        "5": 21.0,
+        "6": 24.0,
+        "7": 18.0,
+        "8": 13.0,
+        "9": 51.0,
+        "10": 11.0,
+        "11": 16.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T18:08:52.140035+02:00",
+      "minutes_avant_depart": 1.1358755,
+      "cotes": {
+        "1": 5.6,
+        "2": 14.0,
+        "3": 5.3,
+        "4": 3.2,
+        "5": 21.0,
+        "6": 23.0,
+        "7": 18.0,
+        "8": 13.0,
+        "9": 53.0,
+        "10": 10.0,
+        "11": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T18:09:32.535570+02:00",
+      "minutes_avant_depart": 0.46426808333333336,
+      "cotes": {
+        "1": 5.7,
+        "2": 13.0,
+        "3": 5.2,
+        "4": 3.1,
+        "5": 22.0,
+        "6": 25.0,
+        "7": 18.0,
+        "8": 14.0,
+        "9": 55.0,
+        "10": 10.0,
+        "11": 16.0
       }
     }
   ]

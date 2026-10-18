@@ -142,18 +142,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DES ERABLES
 
-*18h10 · plat · 3100 m · 11 partants · cotes à T−3:08*
+*18h10 · plat · 3100 m · 11 partants · cotes à T−0:27*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 4 | GRAND ART | 3,1 | 3,7 | 3,37 | -7,9 % | C.SOUMILLON | 7/64/14/23 |
-| 3 | EMBIEZ | 5,3 | 5,3 | 5,70 | -7,1 % | C.DEMURO | 1/111/192/50 |
-| 1 | ALLEZ FRERES | 5,7 | 5,7 | 6,39 | -10,8 % | A.POUCHIN | 6/14/92/1025 |
-| 10 | BARBADIN | 11 | 7 | 13,46 | -18,2 % | A.HAMELIN | 22/74/1/– |
-| 2 | GOOD TO SEE YOU | 12 | 27 | 15,28 | -21,5 % | M.GRANDIN | 3/120/87/368 |
-| 8 | ANDOUINS | 13 | 21 | 13,75 | -5,5 % | E.HARDOUIN | 27/86/41/954 |
-| 11 | BECQUATHUNDER | 15 | 10 | 21,74 | -31,0 % | M.FAVRIAUX | 51/86/1684/1227 |
-| 7 | ASTREDARGENT | 19 | 13 | 24,84 | -23,5 % | M.VELON | 28/27/750/785 |
-| 5 | NUMERUS BORGET | 23 | 14 | 33,31 | -30,9 % | A.NICCO | 167/213/280/1091 |
-| 6 | KLASSIC PRECIEUX | 27 | 60 | 31,85 | -15,2 % | T.PICCONE 2e | 9/200/244/206 |
-| 9 | ALMACADO GREE | 49 | 38 | 74,11 | -33,9 % | E.MUNTWYLER | 181/89/329/– |
+| 4 | GRAND ART | 3,1 | 3,7 | 3,37 | -8,1 % | C.SOUMILLON | 7/64/14/23 |
+| 3 | EMBIEZ | 5,2 | 5,3 | 5,60 | -7,1 % | C.DEMURO | 1/111/192/50 |
+| 1 | ALLEZ FRERES | 5,7 | 5,7 | 6,41 | -11,0 % | A.POUCHIN | 6/14/92/1025 |
+| 10 | BARBADIN | 10 | 7 | 12,06 | -17,1 % | A.HAMELIN | 22/74/1/– |
+| 2 | GOOD TO SEE YOU | 13 | 27 | 16,83 | -22,7 % | M.GRANDIN | 3/120/87/368 |
+| 8 | ANDOUINS | 14 | 21 | 15,02 | -6,8 % | E.HARDOUIN | 27/86/41/954 |
+| 11 | BECQUATHUNDER | 16 | 10 | 22,45 | -28,7 % | M.FAVRIAUX | 51/86/1684/1227 |
+| 7 | ASTREDARGENT | 18 | 13 | 23,38 | -23,0 % | M.VELON | 28/27/750/785 |
+| 5 | NUMERUS BORGET | 22 | 14 | 28,93 | -24,0 % | A.NICCO | 167/213/280/1091 |
+| 6 | KLASSIC PRECIEUX | 25 | 60 | 29,25 | -14,5 % | T.PICCONE 2e | 9/200/244/206 |
+| 9 | ALMACADO GREE | 55 | 38 | 84,15 | -34,6 % | E.MUNTWYLER | 181/89/329/– |
