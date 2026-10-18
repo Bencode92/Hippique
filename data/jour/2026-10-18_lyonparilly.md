@@ -74,22 +74,22 @@
 
 ### 6. PRIX DU BRIONNAIS (GR.A)
 
-*15h35 · attelé · 2850 m · 13 partants · cotes à T−16:43*
+*15h35 · attelé · 2850 m · 13 partants · cotes à T−12:03*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 12 | NOBLE COEUR | 4,3 | 4,2 | A. TINTILLIER |
-| 11 | NONO LE ROBOT | 4,5 | 5,4 | F.J. PELTIER |
-| 6 | NORIA DU VALLON | 6,7 | 6,3 | M. ABRIVARD |
-| 5 | NOBLESSE DU ROI | 7,5 | 7,6 | A. GAUDIN |
-| 14 | NAKILI D'ALEX | 9,7 | 6,9 | B. RUET |
+| 12 | NOBLE COEUR | 4,1 | 4,2 | A. TINTILLIER |
+| 11 | NONO LE ROBOT | 4,9 | 5,4 | F.J. PELTIER |
+| 6 | NORIA DU VALLON | 6,4 | 6,3 | M. ABRIVARD |
+| 5 | NOBLESSE DU ROI | 7,4 | 7,6 | A. GAUDIN |
+| 14 | NAKILI D'ALEX | 10 | 6,9 | B. RUET |
 | 9 | NOUKI DES SOURCES | 11 | 9,5 | P. CALLIER |
-| 4 | NELSON D'ECOTAY | 13 | 25 | Q. CHAUVE-LAFFAY |
-| 7 | NOISETTE DOREE | 22 | 25 | B. THOMAS |
-| 10 | NATIF DE BERTRANGE | 27 | 38 | ALEXIS LERENARD |
-| 2 | NORIGOULET | 33 | 19 | PH. DANTHU |
-| 1 | NAHAR MARCEAUX | 67 | 76 | MARTIAL GAUVIN |
-| 13 | NEMO DES ANDRAUX | 67 | 76 | L. BRECHAT |
+| 4 | NELSON D'ECOTAY | 14 | 25 | Q. CHAUVE-LAFFAY |
+| 10 | NATIF DE BERTRANGE | 21 | 38 | ALEXIS LERENARD |
+| 7 | NOISETTE DOREE | 24 | 25 | B. THOMAS |
+| 2 | NORIGOULET | 37 | 19 | PH. DANTHU |
+| 1 | NAHAR MARCEAUX | 49 | 76 | MARTIAL GAUVIN |
+| 13 | NEMO DES ANDRAUX | 74 | 76 | L. BRECHAT |
 | 3 | NEWTON DE RATILLY | – | – | J. CUOQ |
 
 ### 7. PRIX DU BRIONNAIS (GR.B)
