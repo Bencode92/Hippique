@@ -8,15 +8,15 @@
 
 ### 1. PRIX DU CERCLE DE L'ETRIER
 
-*13h05 · cross · 5200 m · 5 partants · cotes de l'extraction*
+*13h05 · cross · 5200 m · 5 partants · cotes à T−29:54*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | IRUNDO | – | T.SPORLI | 233/203/2480/416 |
-| 2 | NICAR DEL AVIGNON | – | Q.DEFONTAINE | –/453/865/3537 |
-| 3 | HEMEVOICI | – | A.ZULIANI | 165/288/–/4714 |
-| 4 | GARALUI DE BALME | – | E.LABAISSE | 203/635/1132/4959 |
-| 5 | INOUIE TIEPY | – | T.BEAURAIN | 267/203/966/416 |
+| 1 | IRUNDO | 2,2 | T.SPORLI | 233/203/2480/416 |
+| 2 | NICAR DEL AVIGNON | 3,9 | Q.DEFONTAINE | –/453/865/3537 |
+| 3 | HEMEVOICI | 5,3 | A.ZULIANI | 165/288/–/4714 |
+| 5 | INOUIE TIEPY | 6 | T.BEAURAIN | 267/203/966/416 |
+| 4 | GARALUI DE BALME | 11 | E.LABAISSE | 203/635/1132/4959 |
 
 ### 2. PRIX MISSILE
 
