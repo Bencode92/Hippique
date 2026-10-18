@@ -1,6 +1,6 @@
 # LYON-PARILLY — 18/10/2026
 
-9 courses. 6 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 7 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -114,37 +114,37 @@
 
 ### 8. PRIX DE LA CORSE DU SUD
 
-*16h35 · attelé · 2850 m · 14 partants · cotes à T−12:08*
+*16h35 · attelé · 2850 m · 14 partants · cotes à T−8:48*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 5 | MERLIN D'YVEL | 3,2 | 3,5 | Q. CHAUVE-LAFFAY |
-| 11 | MA DALTON | 6,1 | 9,5 | M. ABRIVARD |
-| 12 | MAIN D'OR | 7,1 | 6,2 | MARTIAL GAUVIN |
-| 1 | MALIKOVE | 8,1 | 4,7 | A. GAUDIN |
-| 8 | MALICE BERRY | 8,9 | 8,1 | P. CALLIER |
-| 6 | MYLOVE DES RIVIERE | 12 | 15 | B. RUET |
-| 13 | MACLOBEL DE FADAJE | 14 | – | ALEXIS LERENARD |
-| 9 | MAESTRO GRIFF | 29 | 17 | A. TINTILLIER |
-| 10 | MONIE DU LOISIR | 29 | 21 | M. DUJMIC |
-| 4 | MY NAME IS JONES | 35 | 52 | F.J. PELTIER |
-| 7 | MAGNUS ROMO | 44 | 35 | PH. DANTHU |
-| 2 | MISS DE GODINIERE | 89 | 105 | J. CUOQ |
-| 3 | MISS FLEUR | 89 | 52 | G. TOURON |
-| 14 | MARIA DU MATO | 89 | 105 | B. THOMAS |
+| 5 | MERLIN D'YVEL | 3,7 | 3,5 | Q. CHAUVE-LAFFAY |
+| 11 | MA DALTON | 5,4 | 9,5 | M. ABRIVARD |
+| 8 | MALICE BERRY | 7,7 | 8,1 | P. CALLIER |
+| 6 | MYLOVE DES RIVIERE | 8,1 | 15 | B. RUET |
+| 12 | MAIN D'OR | 9,6 | 6,2 | MARTIAL GAUVIN |
+| 13 | MACLOBEL DE FADAJE | 10 | – | ALEXIS LERENARD |
+| 1 | MALIKOVE | 12 | 4,7 | A. GAUDIN |
+| 9 | MAESTRO GRIFF | 27 | 17 | A. TINTILLIER |
+| 10 | MONIE DU LOISIR | 38 | 21 | M. DUJMIC |
+| 2 | MISS DE GODINIERE | 45 | 105 | J. CUOQ |
+| 4 | MY NAME IS JONES | 45 | 52 | F.J. PELTIER |
+| 7 | MAGNUS ROMO | 54 | 35 | PH. DANTHU |
+| 3 | MISS FLEUR | 90 | 52 | G. TOURON |
+| 14 | MARIA DU MATO | 90 | 105 | B. THOMAS |
 
 ### 9. PRIX DU VAL DE SAONE
 
-*17h05 · attelé · 2850 m · 9 partants · cotes de l'extraction*
+*17h05 · attelé · 2850 m · 9 partants · cotes à T−29:28*
 
-| n° | cheval | cote | jockey |
-|--:|:--|--:|:--|
-| 9 | JOLIVERT DU GERS | 2 | M. ABRIVARD |
-| 8 | INHERIT | 3,9 | G. BEAUFILS |
-| 7 | ISTORIC MAUZUN | 4,6 | J.PH. DUCHER |
-| 5 | IMPERATRICE VITELA | 16 | Q. CHAUVE-LAFFAY |
-| 6 | FLASH MONEY | 16 | A. TINTILLIER |
-| 3 | GEDEON DAIRPET | 44 | PH. DANTHU |
-| 2 | GALOPIN DE BIANCA | 76 | P. CALLIER |
-| 1 | GOLD SPEED | 89 | Y. LAVIGNE |
-| 4 | IMPERIAL KEY | 134 | J. CUOQ |
+| n° | cheval | cote | matin | jockey |
+|--:|:--|--:|--:|:--|
+| 9 | JOLIVERT DU GERS | 1,4 | 2 | M. ABRIVARD |
+| 7 | ISTORIC MAUZUN | 5,8 | 4,6 | J.PH. DUCHER |
+| 8 | INHERIT | 6,1 | 3,9 | G. BEAUFILS |
+| 5 | IMPERATRICE VITELA | 19 | 16 | Q. CHAUVE-LAFFAY |
+| 6 | FLASH MONEY | 25 | 16 | A. TINTILLIER |
+| 3 | GEDEON DAIRPET | 86 | 44 | PH. DANTHU |
+| 2 | GALOPIN DE BIANCA | 129 | 76 | P. CALLIER |
+| 1 | GOLD SPEED | 147 | 89 | Y. LAVIGNE |
+| 4 | IMPERIAL KEY | 172 | 134 | J. CUOQ |
