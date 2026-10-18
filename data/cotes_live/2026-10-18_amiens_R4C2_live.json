@@ -4,62 +4,62 @@
   "reunion": 4,
   "heure_depart": 1792334580000,
   "distance": 2900,
-  "scraped_at": "2026-10-18T16:38:52.287762+02:00",
-  "minutes_avant_depart": 4,
+  "scraped_at": "2026-10-18T16:41:32.260960+02:00",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "LETS GO HAPPY",
-      "cote_live": 49.0,
+      "cote_live": 66.0,
       "cote_reference": 35.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334307000
+      "timestamp_cote": 1792334482000
     },
     {
       "numPmu": 2,
       "nom": "LUGANO DU CADRAN",
-      "cote_live": 20.0,
+      "cote_live": 29.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334307000
+      "timestamp_cote": 1792334482000
     },
     {
       "numPmu": 3,
       "nom": "LATINO FLIGNY",
-      "cote_live": 43.0,
+      "cote_live": 41.0,
       "cote_reference": 30.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334307000
+      "timestamp_cote": 1792334482000
     },
     {
       "numPmu": 4,
       "nom": "LUPIN DU BOURG",
-      "cote_live": 4.2,
+      "cote_live": 4.3,
       "cote_reference": 7.0,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1792334307000
+      "favoris": false,
+      "timestamp_cote": 1792334482000
     },
     {
       "numPmu": 5,
       "nom": "LACLOS",
-      "cote_live": 39.0,
+      "cote_live": 24.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334307000
+      "timestamp_cote": 1792334482000
     },
     {
       "numPmu": 6,
       "nom": "LOUP SOLITAIRE",
-      "cote_live": 7.4,
+      "cote_live": 8.3,
       "cote_reference": 4.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334307000
+      "timestamp_cote": 1792334482000
     },
     {
       "numPmu": 7,
@@ -68,52 +68,52 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334307000
+      "timestamp_cote": 1792334482000
     },
     {
       "numPmu": 8,
       "nom": "L'ALPHA DE LAUNI",
-      "cote_live": 8.0,
+      "cote_live": 8.9,
       "cote_reference": 9.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334307000
+      "timestamp_cote": 1792334482000
     },
     {
       "numPmu": 9,
       "nom": "LAMSOU SAN",
-      "cote_live": 5.9,
+      "cote_live": 7.1,
       "cote_reference": 7.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334307000
+      "timestamp_cote": 1792334482000
     },
     {
       "numPmu": 10,
       "nom": "LIFOU IRIS'EYES",
-      "cote_live": 28.0,
+      "cote_live": 40.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334307000
+      "timestamp_cote": 1792334482000
     },
     {
       "numPmu": 11,
       "nom": "LUTIN DE BOISNEY",
-      "cote_live": 14.0,
+      "cote_live": 15.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334307000
+      "timestamp_cote": 1792334482000
     },
     {
       "numPmu": 12,
       "nom": "LUDO PAROYO",
-      "cote_live": 4.9,
+      "cote_live": 3.6,
       "cote_reference": 5.0,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1792334307000
+      "favoris": true,
+      "timestamp_cote": 1792334482000
     }
   ],
   "hippodrome": "AMIENS",
@@ -278,6 +278,78 @@
         "10": 28.0,
         "11": 14.0,
         "12": 4.9
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T16:39:32.348237+02:00",
+      "minutes_avant_depart": 3.463037933333333,
+      "cotes": {
+        "1": 55.0,
+        "2": 24.0,
+        "3": 51.0,
+        "4": 4.4,
+        "5": 48.0,
+        "6": 8.9,
+        "7": 23.0,
+        "8": 8.9,
+        "9": 6.9,
+        "10": 35.0,
+        "11": 17.0,
+        "12": 3.1
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T16:40:12.055035+02:00",
+      "minutes_avant_depart": 2.80283235,
+      "cotes": {
+        "1": 58.0,
+        "2": 26.0,
+        "3": 36.0,
+        "4": 4.5,
+        "5": 23.0,
+        "6": 9.2,
+        "7": 23.0,
+        "8": 9.0,
+        "9": 7.0,
+        "10": 36.0,
+        "11": 16.0,
+        "12": 3.3
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T16:40:52.023882+02:00",
+      "minutes_avant_depart": 2.136163516666667,
+      "cotes": {
+        "1": 62.0,
+        "2": 28.0,
+        "3": 36.0,
+        "4": 4.5,
+        "5": 23.0,
+        "6": 9.4,
+        "7": 21.0,
+        "8": 9.4,
+        "9": 7.2,
+        "10": 38.0,
+        "11": 14.0,
+        "12": 3.3
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T16:41:32.260960+02:00",
+      "minutes_avant_depart": 1.46949485,
+      "cotes": {
+        "1": 66.0,
+        "2": 29.0,
+        "3": 41.0,
+        "4": 4.3,
+        "5": 24.0,
+        "6": 8.3,
+        "7": 19.0,
+        "8": 8.9,
+        "9": 7.1,
+        "10": 40.0,
+        "11": 15.0,
+        "12": 3.6
       }
     }
   ]
