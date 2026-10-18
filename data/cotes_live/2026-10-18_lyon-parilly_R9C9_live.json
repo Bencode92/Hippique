@@ -4,80 +4,80 @@
   "reunion": 9,
   "heure_depart": 1792336500000,
   "distance": 2850,
-  "scraped_at": "2026-10-18T17:10:52.050872+02:00",
-  "minutes_avant_depart": 4,
+  "scraped_at": "2026-10-18T17:13:32.236960+02:00",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "GOLD SPEED",
-      "cote_live": 89.0,
+      "cote_live": 120.0,
       "cote_reference": 147.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792336239000
+      "timestamp_cote": 1792336411000
     },
     {
       "numPmu": 2,
       "nom": "GALOPIN DE BIANCA",
-      "cote_live": 109.0,
+      "cote_live": 106.0,
       "cote_reference": 129.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792336239000
+      "timestamp_cote": 1792336411000
     },
     {
       "numPmu": 3,
       "nom": "GEDEON DAIRPET",
-      "cote_live": 105.0,
+      "cote_live": 116.0,
       "cote_reference": 86.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792336239000
+      "timestamp_cote": 1792336411000
     },
     {
       "numPmu": 4,
       "nom": "IMPERIAL KEY",
-      "cote_live": 89.0,
+      "cote_live": 100.0,
       "cote_reference": 172.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792336239000
+      "timestamp_cote": 1792336411000
     },
     {
       "numPmu": 5,
       "nom": "IMPERATRICE VITELA",
-      "cote_live": 13.0,
+      "cote_live": 15.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792336239000
+      "timestamp_cote": 1792336411000
     },
     {
       "numPmu": 6,
       "nom": "FLASH MONEY",
-      "cote_live": 23.0,
+      "cote_live": 22.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792336239000
+      "timestamp_cote": 1792336411000
     },
     {
       "numPmu": 7,
       "nom": "ISTORIC MAUZUN",
-      "cote_live": 5.5,
+      "cote_live": 4.2,
       "cote_reference": 5.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792336239000
+      "timestamp_cote": 1792336411000
     },
     {
       "numPmu": 8,
       "nom": "INHERIT",
-      "cote_live": 5.8,
+      "cote_live": 8.3,
       "cote_reference": 6.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792336239000
+      "timestamp_cote": 1792336411000
     },
     {
       "numPmu": 9,
@@ -86,7 +86,7 @@
       "cote_reference": 1.4,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792336239000
+      "timestamp_cote": 1792336411000
     }
   ],
   "hippodrome": "LYON-PARILLY",
@@ -223,6 +223,66 @@
         "6": 23.0,
         "7": 5.5,
         "8": 5.8,
+        "9": 1.5
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T17:11:32.079280+02:00",
+      "minutes_avant_depart": 3.4693961166666667,
+      "cotes": {
+        "1": 99.0,
+        "2": 106.0,
+        "3": 111.0,
+        "4": 92.0,
+        "5": 14.0,
+        "6": 24.0,
+        "7": 4.2,
+        "8": 6.7,
+        "9": 1.6
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T17:12:11.962290+02:00",
+      "minutes_avant_depart": 2.80272735,
+      "cotes": {
+        "1": 106.0,
+        "2": 106.0,
+        "3": 106.0,
+        "4": 88.0,
+        "5": 14.0,
+        "6": 25.0,
+        "7": 4.4,
+        "8": 7.5,
+        "9": 1.5
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T17:12:52.311469+02:00",
+      "minutes_avant_depart": 2.13310515,
+      "cotes": {
+        "1": 117.0,
+        "2": 106.0,
+        "3": 117.0,
+        "4": 94.0,
+        "5": 14.0,
+        "6": 24.0,
+        "7": 4.7,
+        "8": 8.2,
+        "9": 1.5
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T17:13:32.236960+02:00",
+      "minutes_avant_depart": 1.46938905,
+      "cotes": {
+        "1": 120.0,
+        "2": 106.0,
+        "3": 116.0,
+        "4": 100.0,
+        "5": 15.0,
+        "6": 22.0,
+        "7": 4.2,
+        "8": 8.3,
         "9": 1.5
       }
     }

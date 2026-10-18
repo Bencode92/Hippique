@@ -164,22 +164,22 @@
 
 ### 8. PRIX DE BEAULAC
 
-*17h30 · attelé · 2550 m · 15 partants · cotes à T−21:08*
+*17h30 · attelé · 2550 m · 15 partants · cotes à T−17:08*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 4 | HORIZON DE LARRE | 5,6 | 4,3 | M. RAHAULT |
-| 12 | JASMIN DU PERRE | 6,9 | 7,2 | V. MARC-MARTIN |
-| 3 | IBACA | 7,3 | 4,1 | B. CANDELLE-GARDENQ |
+| 4 | HORIZON DE LARRE | 5,2 | 4,3 | M. RAHAULT |
+| 12 | JASMIN DU PERRE | 7,8 | 7,2 | V. MARC-MARTIN |
+| 3 | IBACA | 8,3 | 4,1 | B. CANDELLE-GARDENQ |
 | 7 | IPAD LILA | 8,9 | 18 | J.M. BOINOT |
-| 6 | HOBBY DE L'EVRE | 11 | 12 | C. CHESNE |
-| 9 | ICARE PASSION | 11 | 18 | P. BESSON |
+| 6 | HOBBY DE L'EVRE | 9,8 | 12 | C. CHESNE |
+| 9 | ICARE PASSION | 12 | 18 | P. BESSON |
+| 14 | HARMAKHIS | 13 | 12 | Mlle ADELINE HARET |
 | 2 | IPANO STAR | 15 | 43 | TH. MARTIN |
-| 8 | JUSTICE PROUVEE | 15 | 64 | L. POUTREL |
-| 14 | HARMAKHIS | 16 | 12 | Mlle ADELINE HARET |
-| 15 | JACODUS DU MELEUC | 18 | 18 | C. LANGLOIS |
-| 1 | HAUGAIN | 20 | 18 | C. MAROLLEAU |
-| 5 | INDIGO SIMARDIERE | 34 | 43 | H. JOUAULT |
+| 15 | JACODUS DU MELEUC | 15 | 18 | C. LANGLOIS |
+| 8 | JUSTICE PROUVEE | 17 | 64 | L. POUTREL |
+| 1 | HAUGAIN | 23 | 18 | C. MAROLLEAU |
+| 5 | INDIGO SIMARDIERE | 30 | 43 | H. JOUAULT |
 | 11 | JADE DALAMEDA | 34 | 21 | TH. CORBES |
-| 10 | HENRI GAILLARD | 48 | 32 | G. COCARD |
-| 13 | HARDI | 60 | 64 | R. FARRUGIA |
+| 10 | HENRI GAILLARD | 55 | 32 | G. COCARD |
+| 13 | HARDI | 55 | 64 | R. FARRUGIA |

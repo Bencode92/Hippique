@@ -135,16 +135,16 @@
 
 ### 9. PRIX DU VAL DE SAONE
 
-*17h05 · attelé · 2850 m · 9 partants · cotes à T−4:08*
+*17h05 · attelé · 2850 m · 9 partants · cotes à T−1:28*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
 | 9 | JOLIVERT DU GERS | 1,5 | 2 | M. ABRIVARD |
-| 7 | ISTORIC MAUZUN | 5,5 | 4,6 | J.PH. DUCHER |
-| 8 | INHERIT | 5,8 | 3,9 | G. BEAUFILS |
-| 5 | IMPERATRICE VITELA | 13 | 16 | Q. CHAUVE-LAFFAY |
-| 6 | FLASH MONEY | 23 | 16 | A. TINTILLIER |
-| 1 | GOLD SPEED | 89 | 89 | Y. LAVIGNE |
-| 4 | IMPERIAL KEY | 89 | 134 | J. CUOQ |
-| 3 | GEDEON DAIRPET | 105 | 44 | PH. DANTHU |
-| 2 | GALOPIN DE BIANCA | 109 | 76 | P. CALLIER |
+| 7 | ISTORIC MAUZUN | 4,2 | 4,6 | J.PH. DUCHER |
+| 8 | INHERIT | 8,3 | 3,9 | G. BEAUFILS |
+| 5 | IMPERATRICE VITELA | 15 | 16 | Q. CHAUVE-LAFFAY |
+| 6 | FLASH MONEY | 22 | 16 | A. TINTILLIER |
+| 4 | IMPERIAL KEY | 100 | 134 | J. CUOQ |
+| 2 | GALOPIN DE BIANCA | 106 | 76 | P. CALLIER |
+| 3 | GEDEON DAIRPET | 116 | 44 | PH. DANTHU |
+| 1 | GOLD SPEED | 120 | 89 | Y. LAVIGNE |
