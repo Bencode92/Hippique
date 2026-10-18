@@ -4,89 +4,89 @@
   "reunion": 9,
   "heure_depart": 1792329180000,
   "distance": 2850,
-  "scraped_at": "2026-10-18T15:08:16.600194+02:00",
-  "minutes_avant_depart": 5,
+  "scraped_at": "2026-10-18T15:10:56.522620+02:00",
+  "minutes_avant_depart": 2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MAJESTRIA FILI",
-      "cote_live": 92.0,
+      "cote_live": 105.0,
       "cote_reference": null,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328875000
+      "timestamp_cote": 1792329051000
     },
     {
       "numPmu": 2,
       "nom": "MAGHEERA GRIFF",
-      "cote_live": 41.0,
+      "cote_live": 40.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328875000
+      "timestamp_cote": 1792329051000
     },
     {
       "numPmu": 3,
       "nom": "MERCI MERCY",
-      "cote_live": 28.0,
+      "cote_live": 31.0,
       "cote_reference": 33.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328875000
+      "timestamp_cote": 1792329051000
     },
     {
       "numPmu": 4,
       "nom": "MUSE JULRY",
-      "cote_live": 13.0,
+      "cote_live": 16.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328875000
+      "timestamp_cote": 1792329051000
     },
     {
       "numPmu": 5,
       "nom": "MOLLY FLIGNY",
-      "cote_live": 1.7,
+      "cote_live": 1.6,
       "cote_reference": 1.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792328875000
+      "timestamp_cote": 1792329051000
     },
     {
       "numPmu": 6,
       "nom": "MAMZELLE DES PLANS",
-      "cote_live": 5.9,
+      "cote_live": 6.6,
       "cote_reference": 7.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328875000
+      "timestamp_cote": 1792329051000
     },
     {
       "numPmu": 7,
       "nom": "MERITE JULRY",
-      "cote_live": 5.7,
+      "cote_live": 6.3,
       "cote_reference": 6.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328875000
+      "timestamp_cote": 1792329051000
     },
     {
       "numPmu": 8,
       "nom": "MAYA DU RADON",
-      "cote_live": 28.0,
+      "cote_live": 27.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328875000
+      "timestamp_cote": 1792329051000
     },
     {
       "numPmu": 9,
       "nom": "MAYBE LOUANGES",
-      "cote_live": 17.0,
+      "cote_live": 16.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328875000
+      "timestamp_cote": 1792329051000
     }
   ],
   "hippodrome": "LYON-PARILLY",
@@ -224,6 +224,66 @@
         "7": 5.7,
         "8": 28.0,
         "9": 17.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T15:08:56.363284+02:00",
+      "minutes_avant_depart": 4.062806083333333,
+      "cotes": {
+        "1": 90.0,
+        "2": 41.0,
+        "3": 30.0,
+        "4": 13.0,
+        "5": 1.7,
+        "6": 6.0,
+        "7": 6.0,
+        "8": 27.0,
+        "9": 17.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T15:09:36.831749+02:00",
+      "minutes_avant_depart": 3.39613635,
+      "cotes": {
+        "1": 101.0,
+        "2": 44.0,
+        "3": 29.0,
+        "4": 15.0,
+        "5": 1.7,
+        "6": 5.9,
+        "7": 5.6,
+        "8": 29.0,
+        "9": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T15:10:17.148588+02:00",
+      "minutes_avant_depart": 2.722047416666667,
+      "cotes": {
+        "1": 117.0,
+        "2": 47.0,
+        "3": 29.0,
+        "4": 16.0,
+        "5": 1.6,
+        "6": 6.7,
+        "7": 6.5,
+        "8": 29.0,
+        "9": 16.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T15:10:56.522620+02:00",
+      "minutes_avant_depart": 2.0627984666666666,
+      "cotes": {
+        "1": 105.0,
+        "2": 40.0,
+        "3": 31.0,
+        "4": 16.0,
+        "5": 1.6,
+        "6": 6.6,
+        "7": 6.3,
+        "8": 27.0,
+        "9": 16.0
       }
     }
   ]

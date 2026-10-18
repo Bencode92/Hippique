@@ -58,38 +58,38 @@
 
 ### 5. PRIX DU MAINE-ET-LOIRE
 
-*15h05 · monté · 2850 m · 9 partants · cotes à T−4:43*
+*15h05 · monté · 2850 m · 9 partants · cotes à T−2:03*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 5 | MOLLY FLIGNY | 1,7 | 1,5 | Q. SEGUIN |
-| 7 | MERITE JULRY | 5,7 | 6,3 | M. LAFFAY |
-| 6 | MAMZELLE DES PLANS | 5,9 | 7,2 | T. AGUIAR |
-| 4 | MUSE JULRY | 13 | 13 | Mlle S. CORTIAL |
-| 9 | MAYBE LOUANGES | 17 | 19 | F. BROUST |
-| 3 | MERCI MERCY | 28 | 50 | Mme S. BUSSET |
-| 8 | MAYA DU RADON | 28 | 30 | A.P. GIRAUD |
-| 2 | MAGHEERA GRIFF | 41 | 30 | D.A. HAON |
-| 1 | MAJESTRIA FILI | 92 | – | Mlle M. HEYMANS |
+| 5 | MOLLY FLIGNY | 1,6 | 1,5 | Q. SEGUIN |
+| 7 | MERITE JULRY | 6,3 | 6,3 | M. LAFFAY |
+| 6 | MAMZELLE DES PLANS | 6,6 | 7,2 | T. AGUIAR |
+| 4 | MUSE JULRY | 16 | 13 | Mlle S. CORTIAL |
+| 9 | MAYBE LOUANGES | 16 | 19 | F. BROUST |
+| 8 | MAYA DU RADON | 27 | 30 | A.P. GIRAUD |
+| 3 | MERCI MERCY | 31 | 50 | Mme S. BUSSET |
+| 2 | MAGHEERA GRIFF | 40 | 30 | D.A. HAON |
+| 1 | MAJESTRIA FILI | 105 | – | Mlle M. HEYMANS |
 
 ### 6. PRIX DU BRIONNAIS (GR.A)
 
-*15h35 · attelé · 2850 m · 13 partants · cotes à T−29:23*
+*15h35 · attelé · 2850 m · 13 partants · cotes à T−25:23*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
 | 11 | NONO LE ROBOT | 3,7 | 5,4 | F.J. PELTIER |
-| 12 | NOBLE COEUR | 5,2 | 4,2 | A. TINTILLIER |
-| 5 | NOBLESSE DU ROI | 7,9 | 7,6 | A. GAUDIN |
-| 6 | NORIA DU VALLON | 7,9 | 6,3 | M. ABRIVARD |
-| 14 | NAKILI D'ALEX | 8,5 | 6,9 | B. RUET |
+| 12 | NOBLE COEUR | 5,4 | 4,2 | A. TINTILLIER |
+| 6 | NORIA DU VALLON | 7,5 | 6,3 | M. ABRIVARD |
+| 5 | NOBLESSE DU ROI | 8,1 | 7,6 | A. GAUDIN |
+| 14 | NAKILI D'ALEX | 8,7 | 6,9 | B. RUET |
 | 9 | NOUKI DES SOURCES | 10 | 9,5 | P. CALLIER |
 | 4 | NELSON D'ECOTAY | 12 | 25 | Q. CHAUVE-LAFFAY |
-| 2 | NORIGOULET | 27 | 19 | PH. DANTHU |
-| 10 | NATIF DE BERTRANGE | 27 | 38 | ALEXIS LERENARD |
-| 7 | NOISETTE DOREE | 37 | 25 | B. THOMAS |
-| 13 | NEMO DES ANDRAUX | 55 | 76 | L. BRECHAT |
-| 1 | NAHAR MARCEAUX | 111 | 76 | MARTIAL GAUVIN |
+| 10 | NATIF DE BERTRANGE | 22 | 38 | ALEXIS LERENARD |
+| 2 | NORIGOULET | 28 | 19 | PH. DANTHU |
+| 7 | NOISETTE DOREE | 28 | 25 | B. THOMAS |
+| 13 | NEMO DES ANDRAUX | 56 | 76 | L. BRECHAT |
+| 1 | NAHAR MARCEAUX | 113 | 76 | MARTIAL GAUVIN |
 | 3 | NEWTON DE RATILLY | – | – | J. CUOQ |
 
 ### 7. PRIX DU BRIONNAIS (GR.B)

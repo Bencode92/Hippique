@@ -75,28 +75,28 @@
 
 ### 4. PRIX DE TIVOLI
 
-*15h30 · attelé · 2650 m · 18 partants · cotes à T−25:03*
+*15h30 · attelé · 2650 m · 18 partants · cotes à T−20:23*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 18 | LOUXOR BOCAIN | 4,8 | 4,3 | M. CRIADO |
-| 7 | LUDO DES LUCAS | 5,1 | 4,3 | PIERRICK LE MOEL |
-| 2 | LOROSYO | 8,6 | 13 | A.A. CHAVATTE |
-| 15 | LASCO DES LUCAS | 11 | 16 | A. HONORE |
-| 17 | LOVE QUEEN | 11 | 32 | TH. DUCOS |
-| 1 | LAZIO POTERIE | 13 | 10 | E. AUDEBERT |
+| 18 | LOUXOR BOCAIN | 5,2 | 4,3 | M. CRIADO |
+| 7 | LUDO DES LUCAS | 5,6 | 4,3 | PIERRICK LE MOEL |
+| 2 | LOROSYO | 8,7 | 13 | A.A. CHAVATTE |
+| 17 | LOVE QUEEN | 9,4 | 32 | TH. DUCOS |
+| 14 | LUCKY DESIR | 12 | 10 | A. MILLET |
 | 8 | LYOUBOV SEVEN | 13 | 32 | Mme LANA HENRY |
-| 14 | LUCKY DESIR | 13 | 10 | A. MILLET |
+| 15 | LASCO DES LUCAS | 13 | 16 | A. HONORE |
+| 1 | LAZIO POTERIE | 14 | 10 | E. AUDEBERT |
+| 16 | LORD THOMAS | 18 | 17 | J. CHAVATTE |
 | 10 | LE GEANT D'ATTAQUE | 20 | 20 | O. PICARD |
-| 16 | LORD THOMAS | 21 | 17 | J. CHAVATTE |
-| 13 | LUCRECE | 23 | 40 | F. JEANNEAU |
-| 4 | LECCE MARIS | 26 | 22 | R. BOUVIER |
-| 3 | LOUSTIC DU MIDI | 35 | 32 | PH. MASSCHAELE |
-| 9 | LE KADOR | 53 | 40 | E. SALMON |
-| 12 | LOUISE D'ERPION | 53 | 53 | ET. CLOZIER |
-| 6 | LISBETH DU BOCAGE | 71 | 160 | M. TIJOU |
-| 5 | LAMAGISTERE | 107 | 80 | K. BUSNEL |
-| 11 | LAUREATE SPEED | 107 | 80 | D. BROSSARD |
+| 13 | LUCRECE | 26 | 40 | F. JEANNEAU |
+| 3 | LOUSTIC DU MIDI | 29 | 32 | PH. MASSCHAELE |
+| 4 | LECCE MARIS | 29 | 22 | R. BOUVIER |
+| 6 | LISBETH DU BOCAGE | 29 | 160 | M. TIJOU |
+| 9 | LE KADOR | 58 | 40 | E. SALMON |
+| 12 | LOUISE D'ERPION | 58 | 53 | ET. CLOZIER |
+| 5 | LAMAGISTERE | 117 | 80 | K. BUSNEL |
+| 11 | LAUREATE SPEED | 117 | 80 | D. BROSSARD |
 
 ### 5. PRIX DE MONADEY
 
