@@ -2,91 +2,91 @@
   "course": "PRIX DU MAINE-ET-LOIRE",
   "numero": 5,
   "reunion": 9,
-  "heure_depart": 1792328700000,
+  "heure_depart": 1792329180000,
   "distance": 2850,
-  "scraped_at": "2026-10-18T14:56:16.743488+02:00",
-  "minutes_avant_depart": 9,
+  "scraped_at": "2026-10-18T15:04:56.824312+02:00",
+  "minutes_avant_depart": 8,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MAJESTRIA FILI",
-      "cote_live": 118.0,
+      "cote_live": 92.0,
       "cote_reference": null,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328171000
+      "timestamp_cote": 1792328677000
     },
     {
       "numPmu": 2,
       "nom": "MAGHEERA GRIFF",
-      "cote_live": 26.0,
+      "cote_live": 34.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328171000
+      "timestamp_cote": 1792328677000
     },
     {
       "numPmu": 3,
       "nom": "MERCI MERCY",
-      "cote_live": 16.0,
+      "cote_live": 24.0,
       "cote_reference": 33.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328171000
+      "timestamp_cote": 1792328677000
     },
     {
       "numPmu": 4,
       "nom": "MUSE JULRY",
-      "cote_live": 11.0,
+      "cote_live": 15.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328171000
+      "timestamp_cote": 1792328677000
     },
     {
       "numPmu": 5,
       "nom": "MOLLY FLIGNY",
-      "cote_live": 1.8,
+      "cote_live": 1.7,
       "cote_reference": 1.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792328171000
+      "timestamp_cote": 1792328677000
     },
     {
       "numPmu": 6,
       "nom": "MAMZELLE DES PLANS",
-      "cote_live": 7.4,
+      "cote_live": 5.2,
       "cote_reference": 7.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328171000
+      "timestamp_cote": 1792328677000
     },
     {
       "numPmu": 7,
       "nom": "MERITE JULRY",
-      "cote_live": 6.9,
+      "cote_live": 7.1,
       "cote_reference": 6.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328171000
+      "timestamp_cote": 1792328677000
     },
     {
       "numPmu": 8,
       "nom": "MAYA DU RADON",
-      "cote_live": 21.0,
+      "cote_live": 25.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328171000
+      "timestamp_cote": 1792328677000
     },
     {
       "numPmu": 9,
       "nom": "MAYBE LOUANGES",
-      "cote_live": 13.0,
+      "cote_live": 21.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792328171000
+      "timestamp_cote": 1792328677000
     }
   ],
   "hippodrome": "LYON-PARILLY",
@@ -179,6 +179,21 @@
         "7": 6.9,
         "8": 21.0,
         "9": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T15:04:56.824312+02:00",
+      "minutes_avant_depart": 8.062818866666667,
+      "cotes": {
+        "1": 92.0,
+        "2": 34.0,
+        "3": 24.0,
+        "4": 15.0,
+        "5": 1.7,
+        "6": 5.2,
+        "7": 7.1,
+        "8": 25.0,
+        "9": 21.0
       }
     }
   ]
