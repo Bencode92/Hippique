@@ -4,89 +4,89 @@
   "reunion": 1,
   "heure_depart": 1792335600000,
   "distance": 1400,
-  "scraped_at": "2026-10-18T16:34:11.967622+02:00",
-  "minutes_avant_depart": 26,
+  "scraped_at": "2026-10-18T16:38:11.962203+02:00",
+  "minutes_avant_depart": 22,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MADAME FAYETTE",
-      "cote_live": 31.0,
+      "cote_live": 23.0,
       "cote_reference": 32.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334045000
+      "timestamp_cote": 1792334265000
     },
     {
       "numPmu": 2,
       "nom": "VADIROUMA",
-      "cote_live": 5.6,
+      "cote_live": 5.4,
       "cote_reference": 5.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334045000
+      "timestamp_cote": 1792334265000
     },
     {
       "numPmu": 3,
       "nom": "WILD PACIFIC",
-      "cote_live": 26.0,
+      "cote_live": 25.0,
       "cote_reference": 28.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334045000
+      "timestamp_cote": 1792334265000
     },
     {
       "numPmu": 4,
       "nom": "FIRE FLY",
-      "cote_live": 36.0,
+      "cote_live": 35.0,
       "cote_reference": 37.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334045000
+      "timestamp_cote": 1792334265000
     },
     {
       "numPmu": 5,
       "nom": "ALMA MATER",
-      "cote_live": 47.0,
+      "cote_live": 46.0,
       "cote_reference": 44.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334045000
+      "timestamp_cote": 1792334265000
     },
     {
       "numPmu": 6,
       "nom": "ROSENINSEL",
-      "cote_live": 126.0,
+      "cote_live": 117.0,
       "cote_reference": 119.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334045000
+      "timestamp_cote": 1792334265000
     },
     {
       "numPmu": 7,
       "nom": "DACHKOVA",
-      "cote_live": 19.0,
+      "cote_live": 20.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334045000
+      "timestamp_cote": 1792334265000
     },
     {
       "numPmu": 8,
       "nom": "FIGJAM",
-      "cote_live": 52.0,
+      "cote_live": 55.0,
       "cote_reference": 53.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334045000
+      "timestamp_cote": 1792334265000
     },
     {
       "numPmu": 9,
       "nom": "ABBEY ROAD",
-      "cote_live": 17.0,
+      "cote_live": 18.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334045000
+      "timestamp_cote": 1792334265000
     },
     {
       "numPmu": 10,
@@ -95,7 +95,7 @@
       "cote_reference": 79.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334045000
+      "timestamp_cote": 1792334265000
     },
     {
       "numPmu": 11,
@@ -104,34 +104,34 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334045000
+      "timestamp_cote": 1792334265000
     },
     {
       "numPmu": 13,
       "nom": "LEADING DANCER",
-      "cote_live": 3.4,
+      "cote_live": 3.5,
       "cote_reference": 3.3,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792334045000
+      "timestamp_cote": 1792334265000
     },
     {
       "numPmu": 14,
       "nom": "QUIESCENT",
-      "cote_live": 22.0,
+      "cote_live": 20.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334045000
+      "timestamp_cote": 1792334265000
     },
     {
       "numPmu": 15,
       "nom": "CERAMIC",
-      "cote_live": 4.8,
+      "cote_live": 5.0,
       "cote_reference": 4.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334045000
+      "timestamp_cote": 1792334265000
     },
     {
       "numPmu": 16,
@@ -140,7 +140,7 @@
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334045000
+      "timestamp_cote": 1792334265000
     }
   ],
   "hippodrome": "PARISLONGCHAMP",
@@ -184,6 +184,27 @@
         "13": 3.4,
         "14": 22.0,
         "15": 4.8,
+        "16": 16.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T16:38:11.962203+02:00",
+      "minutes_avant_depart": 21.80283895,
+      "cotes": {
+        "1": 23.0,
+        "2": 5.4,
+        "3": 25.0,
+        "4": 35.0,
+        "5": 46.0,
+        "6": 117.0,
+        "7": 20.0,
+        "8": 55.0,
+        "9": 18.0,
+        "10": 67.0,
+        "11": 11.0,
+        "13": 3.5,
+        "14": 20.0,
+        "15": 5.0,
         "16": 16.0
       }
     }
