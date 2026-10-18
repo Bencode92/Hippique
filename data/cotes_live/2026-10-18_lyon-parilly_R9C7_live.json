@@ -4,134 +4,134 @@
   "reunion": 9,
   "heure_depart": 1792332300000,
   "distance": 2850,
-  "scraped_at": "2026-10-18T15:46:12.936207+02:00",
-  "minutes_avant_depart": 19,
+  "scraped_at": "2026-10-18T15:50:54.108821+02:00",
+  "minutes_avant_depart": 14,
   "participants": [
     {
       "numPmu": 1,
       "nom": "NEW ONE PAT",
-      "cote_live": 64.0,
+      "cote_live": 100.0,
       "cote_reference": 114.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331152000
+      "timestamp_cote": 1792331438000
     },
     {
       "numPmu": 2,
       "nom": "NANIE ONE",
-      "cote_live": 42.0,
+      "cote_live": 67.0,
       "cote_reference": 57.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331152000
+      "timestamp_cote": 1792331438000
     },
     {
       "numPmu": 3,
       "nom": "NICE GALAXIE",
-      "cote_live": 64.0,
+      "cote_live": 100.0,
       "cote_reference": 57.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331152000
+      "timestamp_cote": 1792331438000
     },
     {
       "numPmu": 4,
       "nom": "NOEMIE RIDGEHEAD",
-      "cote_live": 32.0,
+      "cote_live": 50.0,
       "cote_reference": 57.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331152000
+      "timestamp_cote": 1792331438000
     },
     {
       "numPmu": 5,
       "nom": "NELLY DE BERTRANGE",
-      "cote_live": 4.4,
+      "cote_live": 6.1,
       "cote_reference": 4.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331152000
+      "timestamp_cote": 1792331438000
     },
     {
       "numPmu": 6,
       "nom": "NEW BOSS",
-      "cote_live": 3.1,
+      "cote_live": 4.6,
       "cote_reference": 2.8,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1792331152000
+      "favoris": false,
+      "timestamp_cote": 1792331438000
     },
     {
       "numPmu": 7,
       "nom": "NEVER GIVE UP",
-      "cote_live": 32.0,
+      "cote_live": 40.0,
       "cote_reference": 28.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331152000
+      "timestamp_cote": 1792331438000
     },
     {
       "numPmu": 8,
       "nom": "NOELLE DES ATIAUX",
-      "cote_live": 12.0,
+      "cote_live": 9.1,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331152000
+      "timestamp_cote": 1792331438000
     },
     {
       "numPmu": 9,
       "nom": "NOUVEAU DE LARRE",
-      "cote_live": 12.0,
+      "cote_live": 16.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331152000
+      "timestamp_cote": 1792331438000
     },
     {
       "numPmu": 10,
       "nom": "NEXPRESSO BLEU",
-      "cote_live": 7.1,
+      "cote_live": 2.5,
       "cote_reference": 7.1,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1792331152000
+      "favoris": true,
+      "timestamp_cote": 1792331438000
     },
     {
       "numPmu": 11,
       "nom": "NUIT DES AUDICHONS",
-      "cote_live": 32.0,
+      "cote_live": 50.0,
       "cote_reference": 38.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331152000
+      "timestamp_cote": 1792331438000
     },
     {
       "numPmu": 12,
       "nom": "NIMBUS DES BROUETS",
-      "cote_live": 32.0,
+      "cote_live": 50.0,
       "cote_reference": 114.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331152000
+      "timestamp_cote": 1792331438000
     },
     {
       "numPmu": 13,
       "nom": "NAOMIE FAMILY",
-      "cote_live": 25.0,
+      "cote_live": 40.0,
       "cote_reference": 28.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331152000
+      "timestamp_cote": 1792331438000
     },
     {
       "numPmu": 14,
       "nom": "NEO WYNN",
-      "cote_live": 12.0,
+      "cote_live": 20.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331152000
+      "timestamp_cote": 1792331438000
     }
   ],
   "hippodrome": "LYON-PARILLY",
@@ -194,6 +194,26 @@
         "12": 32.0,
         "13": 25.0,
         "14": 12.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T15:50:54.108821+02:00",
+      "minutes_avant_depart": 14.136322183333334,
+      "cotes": {
+        "1": 100.0,
+        "2": 67.0,
+        "3": 100.0,
+        "4": 50.0,
+        "5": 6.1,
+        "6": 4.6,
+        "7": 40.0,
+        "8": 9.1,
+        "9": 16.0,
+        "10": 2.5,
+        "11": 50.0,
+        "12": 50.0,
+        "13": 40.0,
+        "14": 20.0
       }
     }
   ]

@@ -4,8 +4,8 @@
   "reunion": 1,
   "heure_depart": 1792331400000,
   "distance": 2200,
-  "scraped_at": "2026-10-18T15:48:11.926466+02:00",
-  "minutes_avant_depart": 2,
+  "scraped_at": "2026-10-18T15:50:52.563370+02:00",
+  "minutes_avant_depart": -1,
   "participants": [
     {
       "numPmu": 1,
@@ -14,79 +14,79 @@
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331283000
+      "timestamp_cote": 1792331443000
     },
     {
       "numPmu": 2,
       "nom": "REMBRAND TO GO",
-      "cote_live": 16.0,
+      "cote_live": 19.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331283000
+      "timestamp_cote": 1792331443000
     },
     {
       "numPmu": 3,
       "nom": "AMINACO",
-      "cote_live": 17.0,
+      "cote_live": 18.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331283000
+      "timestamp_cote": 1792331443000
     },
     {
       "numPmu": 4,
       "nom": "BEST SECRET",
-      "cote_live": 3.1,
+      "cote_live": 2.7,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792331283000
+      "timestamp_cote": 1792331443000
     },
     {
       "numPmu": 5,
       "nom": "NITOI",
-      "cote_live": 13.0,
+      "cote_live": 16.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331283000
+      "timestamp_cote": 1792331443000
     },
     {
       "numPmu": 6,
       "nom": "SINILEO",
-      "cote_live": 14.0,
+      "cote_live": 17.0,
       "cote_reference": 8.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331283000
+      "timestamp_cote": 1792331443000
     },
     {
       "numPmu": 7,
       "nom": "EUBOA",
-      "cote_live": 29.0,
+      "cote_live": 34.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331283000
+      "timestamp_cote": 1792331443000
     },
     {
       "numPmu": 8,
       "nom": "ZARAKI",
-      "cote_live": 4.1,
+      "cote_live": 4.3,
       "cote_reference": 2.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331283000
+      "timestamp_cote": 1792331443000
     },
     {
       "numPmu": 9,
       "nom": "LAPOTHEOSE",
-      "cote_live": 6.6,
+      "cote_live": 6.4,
       "cote_reference": 9.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792331283000
+      "timestamp_cote": 1792331443000
     }
   ],
   "hippodrome": "PARISLONGCHAMP",
@@ -239,6 +239,66 @@
         "7": 29.0,
         "8": 4.1,
         "9": 6.6
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T15:48:52.031885+02:00",
+      "minutes_avant_depart": 1.1363284333333332,
+      "cotes": {
+        "1": 7.9,
+        "2": 15.0,
+        "3": 14.0,
+        "4": 3.3,
+        "5": 13.0,
+        "6": 14.0,
+        "7": 30.0,
+        "8": 4.0,
+        "9": 6.5
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T15:49:32.200995+02:00",
+      "minutes_avant_depart": 0.46561721666666667,
+      "cotes": {
+        "1": 7.8,
+        "2": 16.0,
+        "3": 15.0,
+        "4": 3.2,
+        "5": 13.0,
+        "6": 15.0,
+        "7": 31.0,
+        "8": 4.0,
+        "9": 6.3
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T15:50:12.401804+02:00",
+      "minutes_avant_depart": -0.19700974999999998,
+      "cotes": {
+        "1": 8.2,
+        "2": 17.0,
+        "3": 17.0,
+        "4": 2.8,
+        "5": 15.0,
+        "6": 16.0,
+        "7": 31.0,
+        "8": 4.3,
+        "9": 6.4
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T15:50:52.563370+02:00",
+      "minutes_avant_depart": -0.8636778166666667,
+      "cotes": {
+        "1": 7.8,
+        "2": 19.0,
+        "3": 18.0,
+        "4": 2.7,
+        "5": 16.0,
+        "6": 17.0,
+        "7": 34.0,
+        "8": 4.3,
+        "9": 6.4
       }
     }
   ]

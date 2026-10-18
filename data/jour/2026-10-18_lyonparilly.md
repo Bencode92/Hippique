@@ -93,24 +93,24 @@
 
 ### 7. PRIX DU BRIONNAIS (GR.B)
 
-*16h05 · attelé · 2850 m · 14 partants · cotes à T−18:47*
+*16h05 · attelé · 2850 m · 14 partants · cotes à T−14:06*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 6 | NEW BOSS | 3,1 | 3 | A. TINTILLIER |
-| 5 | NELLY DE BERTRANGE | 4,4 | 4,5 | M. ABRIVARD |
-| 10 | NEXPRESSO BLEU | 7,1 | 7 | N. CORMY |
-| 8 | NOELLE DES ATIAUX | 12 | 12 | B. RUET |
-| 9 | NOUVEAU DE LARRE | 12 | 14 | Q. CHAUVE-LAFFAY |
-| 14 | NEO WYNN | 12 | 12 | ALEXIS LERENARD |
-| 13 | NAOMIE FAMILY | 25 | 31 | F.J. PELTIER |
-| 4 | NOEMIE RIDGEHEAD | 32 | 31 | F. BROUST |
-| 7 | NEVER GIVE UP | 32 | 31 | M. DUJMIC |
-| 11 | NUIT DES AUDICHONS | 32 | 31 | P. CALLIER |
-| 12 | NIMBUS DES BROUETS | 32 | 31 | F. BONNEFOY |
-| 2 | NANIE ONE | 42 | 42 | B. CHOURRE |
-| 1 | NEW ONE PAT | 64 | 63 | CH.A. BUFFAVAND |
-| 3 | NICE GALAXIE | 64 | 63 | M. AOUDIA |
+| 10 | NEXPRESSO BLEU | 2,5 | 7 | N. CORMY |
+| 6 | NEW BOSS | 4,6 | 3 | A. TINTILLIER |
+| 5 | NELLY DE BERTRANGE | 6,1 | 4,5 | M. ABRIVARD |
+| 8 | NOELLE DES ATIAUX | 9,1 | 12 | B. RUET |
+| 9 | NOUVEAU DE LARRE | 16 | 14 | Q. CHAUVE-LAFFAY |
+| 14 | NEO WYNN | 20 | 12 | ALEXIS LERENARD |
+| 7 | NEVER GIVE UP | 40 | 31 | M. DUJMIC |
+| 13 | NAOMIE FAMILY | 40 | 31 | F.J. PELTIER |
+| 4 | NOEMIE RIDGEHEAD | 50 | 31 | F. BROUST |
+| 11 | NUIT DES AUDICHONS | 50 | 31 | P. CALLIER |
+| 12 | NIMBUS DES BROUETS | 50 | 31 | F. BONNEFOY |
+| 2 | NANIE ONE | 67 | 42 | B. CHOURRE |
+| 1 | NEW ONE PAT | 100 | 63 | CH.A. BUFFAVAND |
+| 3 | NICE GALAXIE | 100 | 63 | M. AOUDIA |
 
 ### 8. PRIX DE LA CORSE DU SUD
 
