@@ -1,6 +1,6 @@
 # PARISLONGCHAMP — 18/10/2026
 
-8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -102,25 +102,25 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DE SAINT-CYR
 
-*17h00 · plat · 1400 m · 15 partants · cotes de l'extraction*
+*17h00 · plat · 1400 m · 15 partants · cotes à T−29:48*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 13 | LEADING DANCER | 2,7 | 2,80 | -3,5 % | C.LEE | 246/42/3218/5588 |
-| 15 | CERAMIC | 4,1 | 4,50 | -8,9 % | M.GUYON | 4/10/1/2 |
-| 2 | VADIROUMA | 8,6 | 10,19 | -15,6 % | C.LECOEUVRE | 13/1/–/1 |
-| 11 | CLASSIC CUVEE | 11 | 13,93 | -21,0 % | A.POUCHIN | 6/14/3081/4844 |
-| 16 | INDIFFERENTE | 13 | 15,82 | -17,8 % | H.JOURNIAC | 43/8/1/2 |
-| 9 | ABBEY ROAD | 20 | 24,96 | -19,9 % | C.DEMURO | 1/16/59/313 |
-| 14 | QUIESCENT | 23 | 26,74 | -14,0 % | JW.DOYLE | 162/238/3144/8 |
-| 7 | DACHKOVA | 35 | 49,40 | -29,2 % | T.BACHELOT | 16/22/2700/9 |
-| 3 | WILD PACIFIC | 41 | 58,88 | -30,4 % | A.LEMAITRE | 11/16/204/288 |
-| 5 | ALMA MATER | 43 | 63,71 | -32,5 % | J.MOUTARD | 61/14/–/225 |
-| 4 | FIRE FLY | 45 | 56,67 | -20,6 % | A.MADAMET | 10/22/50/328 |
-| 8 | FIGJAM | 45 | 62,28 | -27,7 % | T.PICCONE | 9/311/3307/– |
-| 1 | MADAME FAYETTE | 53 | 81,72 | -35,1 % | A.HAMELIN | 22/208/66/349 |
-| 10 | ALARMING | 81 | 116,42 | -30,4 % | R.CLUTTERBUCK | –/158/4202/1824 |
-| 6 | ROSENINSEL | 135 | 204,59 | -34,0 % | M.GRANDIN | 3/92/546/44 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 13 | LEADING DANCER | 3 | 2,7 | 3,08 | -2,5 % | C.LEE | 246/42/3218/5588 |
+| 15 | CERAMIC | 4,5 | 4,1 | 4,96 | -9,2 % | M.GUYON | 4/10/1/2 |
+| 2 | VADIROUMA | 6,7 | 8,6 | 6,99 | -4,2 % | C.LECOEUVRE | 13/1/–/1 |
+| 11 | CLASSIC CUVEE | 11 | 11 | 13,86 | -20,6 % | A.POUCHIN | 6/14/3081/4844 |
+| 16 | INDIFFERENTE | 15 | 13 | 18,61 | -19,4 % | H.JOURNIAC | 43/8/1/2 |
+| 9 | ABBEY ROAD | 18 | 20 | 21,99 | -18,1 % | C.DEMURO | 1/16/59/313 |
+| 14 | QUIESCENT | 24 | 23 | 27,94 | -14,1 % | JW.DOYLE | 162/238/3144/8 |
+| 7 | DACHKOVA | 27 | 35 | 38,46 | -29,8 % | T.BACHELOT | 16/22/2700/9 |
+| 3 | WILD PACIFIC | 30 | 41 | 43,34 | -30,8 % | A.LEMAITRE | 11/16/204/288 |
+| 1 | MADAME FAYETTE | 35 | 53 | 46,96 | -25,5 % | A.HAMELIN | 22/208/66/349 |
+| 4 | FIRE FLY | 38 | 45 | 46,84 | -18,9 % | A.MADAMET | 10/22/50/328 |
+| 5 | ALMA MATER | 45 | 43 | 66,66 | -32,5 % | J.MOUTARD | 61/14/–/225 |
+| 8 | FIGJAM | 52 | 45 | 72,54 | -28,3 % | T.PICCONE | 9/311/3307/– |
+| 10 | ALARMING | 87 | 81 | 124,80 | -30,3 % | R.CLUTTERBUCK | –/158/4202/1824 |
+| 6 | ROSENINSEL | 118 | 135 | 178,29 | -33,8 % | M.GRANDIN | 3/92/546/44 |
 
 ### 7. PRIX DE LA CHAUSSEE
 

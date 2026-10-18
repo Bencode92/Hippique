@@ -1,6 +1,6 @@
 # LE BOUSCAT — 18/10/2026
 
-8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 6 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
@@ -124,43 +124,43 @@
 
 ### 6. PRIX DE L'HIPPODROME DE LUXE (GR.A)
 
-*16h30 · attelé · 2550 m · 13 partants · cotes à T−1:48*
+*16h30 · attelé · 2550 m · 13 partants · cotes à T−0:27*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 6 | MANZONI | 2,7 | 1,4 | C. GAZENGEL |
-| 7 | MILTON D'OURVILLE | 6,2 | 31 | TH. DUCOS |
-| 9 | MONT VENTOUX | 7,3 | 39 | R. BOUVIER |
-| 2 | MEDINA DU CHATELET | 7,8 | 18 | L. GOETZ |
+| 6 | MANZONI | 2,5 | 1,4 | C. GAZENGEL |
+| 2 | MEDINA DU CHATELET | 6 | 18 | L. GOETZ |
+| 7 | MILTON D'OURVILLE | 7,8 | 31 | TH. DUCOS |
+| 9 | MONT VENTOUX | 9,5 | 39 | R. BOUVIER |
 | 5 | MONA VILI | 12 | 8,1 | M.J. BARCELO BISQUERRA |
-| 3 | MOHITO DE GUEZ | 17 | 20 | M. CRIADO |
-| 12 | MILORD DU PERCHE | 17 | 87 | R.W. DENECHERRE |
-| 10 | MAJOR DE CHOC | 20 | 29 | Y. LACOMBE |
-| 8 | MARENGO ATALANTE | 30 | 43 | AXEL LAIGRON |
-| 4 | MARIE D'ATTAQUE | 39 | 87 | N. PACHA |
-| 11 | MASH POOK | 41 | 27 | D. BROSSARD |
-| 1 | MON FAVORI | 49 | 43 | V. GONIN |
-| 13 | MUSTANG D'ARLINE | 99 | 117 | MAXENCE LECOQ |
+| 3 | MOHITO DE GUEZ | 18 | 20 | M. CRIADO |
+| 12 | MILORD DU PERCHE | 18 | 87 | R.W. DENECHERRE |
+| 10 | MAJOR DE CHOC | 23 | 29 | Y. LACOMBE |
+| 4 | MARIE D'ATTAQUE | 28 | 87 | N. PACHA |
+| 8 | MARENGO ATALANTE | 37 | 43 | AXEL LAIGRON |
+| 11 | MASH POOK | 38 | 27 | D. BROSSARD |
+| 1 | MON FAVORI | 54 | 43 | V. GONIN |
+| 13 | MUSTANG D'ARLINE | 104 | 117 | MAXENCE LECOQ |
 
 ### 7. PRIX DE L'HIPPODROME DE LUXE (GR.B)
 
-*17h00 · attelé · 2550 m · 13 partants · cotes de l'extraction*
+*17h00 · attelé · 2550 m · 13 partants · cotes à T−29:48*
 
-| n° | cheval | cote | jockey |
-|--:|:--|--:|:--|
-| 2 | MAYERLING LEGACY | 2,6 | Mme LANA HENRY |
-| 8 | MON REVE | 3,8 | L. DELANOE |
-| 7 | MANGO KALOUMA | 8,1 | F. CLOZIER |
-| 3 | MOOGLI HEULINOIS | 8,7 | E. AUDEBERT |
-| 6 | MARCUS DECHAMBOU | 16 | TH. DUCOS |
-| 11 | MEDOC DES GLENAN | 18 | N. PICARD |
-| 1 | MIMI D'AMBRI | 21 | J. CHAVATTE |
-| 12 | MORIAC | 25 | M. TIJOU |
-| 10 | MATIS DU VIGNAC | 40 | A. HONORE |
-| 13 | MALDIVE DE TILLARD | 56 | N. BRUN |
-| 5 | MUSE DU LOISIR | 70 | D.G. CHAVATTE |
-| 4 | MELODY DU CEBE | 93 | PIERRICK LE MOEL |
-| 9 | MILWAUKEE D'OYSE | – | N. PACHA |
+| n° | cheval | cote | matin | jockey |
+|--:|:--|--:|--:|:--|
+| 2 | MAYERLING LEGACY | 2,5 | 2,6 | Mme LANA HENRY |
+| 8 | MON REVE | 4 | 3,8 | L. DELANOE |
+| 3 | MOOGLI HEULINOIS | 8,3 | 8,7 | E. AUDEBERT |
+| 7 | MANGO KALOUMA | 10 | 8,1 | F. CLOZIER |
+| 1 | MIMI D'AMBRI | 14 | 21 | J. CHAVATTE |
+| 6 | MARCUS DECHAMBOU | 20 | 16 | TH. DUCOS |
+| 11 | MEDOC DES GLENAN | 20 | 18 | N. PICARD |
+| 12 | MORIAC | 26 | 25 | M. TIJOU |
+| 10 | MATIS DU VIGNAC | 30 | 40 | A. HONORE |
+| 13 | MALDIVE DE TILLARD | 61 | 56 | N. BRUN |
+| 5 | MUSE DU LOISIR | 91 | 70 | D.G. CHAVATTE |
+| 4 | MELODY DU CEBE | 122 | 93 | PIERRICK LE MOEL |
+| 9 | MILWAUKEE D'OYSE | 183 | – | N. PACHA |
 
 ### 8. PRIX DE BEAULAC
 
