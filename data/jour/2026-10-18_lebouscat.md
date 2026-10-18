@@ -1,6 +1,6 @@
 # LE BOUSCAT — 18/10/2026
 
-8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
@@ -30,26 +30,26 @@
 
 ### 2. PRIX MICHEL-GUY BOURGUIGNON
 
-*14h30 · attelé · 2550 m · 16 partants · cotes de l'extraction*
+*14h30 · attelé · 2550 m · 16 partants · cotes à T−4:24*
 
-| n° | cheval | cote | jockey |
-|--:|:--|--:|:--|
-| 7 | NORMA DES CHARMES | 1,8 | F. GENCE |
-| 13 | NERLY D'OURVILLE | 7 | J.ET. ABRIVARD |
-| 12 | NATALIA MELODY | 13 | L. GOETZ |
-| 1 | NUVOLA BARAKA | 14 | M. CRIADO |
-| 14 | NOSOTROS GABINLEA | 16 | Q. MACHET |
-| 5 | NETWORK | 19 | M.J. BARCELO BISQUERRA |
-| 8 | NUN WARRIOR | 32 | Mme LANA HENRY |
-| 2 | NOT TOO BAD | 34 | D. BROSSARD |
-| 6 | NANCY DIDJEAP | 39 | D. BARANGER |
-| 3 | NEZHA DU PATURAL | 46 | F. CLOZIER |
-| 9 | NIKE RIVER | 46 | M. TIJOU |
-| 10 | NAELIE DU GUESCLIN | 49 | PIERRICK LE MOEL |
-| 11 | NOIRAUD DES GLENAN | 62 | N. PICARD |
-| 4 | NARNIA PAN | 107 | AXEL LAIGRON |
-| 16 | NINIA DOUNA | 124 | G. CRESPEL |
-| 15 | NEVIDENCE ROC | 187 | ET. CLOZIER |
+| n° | cheval | cote | matin | jockey |
+|--:|:--|--:|--:|:--|
+| 7 | NORMA DES CHARMES | 2,2 | 1,8 | F. GENCE |
+| 13 | NERLY D'OURVILLE | 5,6 | 7 | J.ET. ABRIVARD |
+| 1 | NUVOLA BARAKA | 13 | 14 | M. CRIADO |
+| 12 | NATALIA MELODY | 13 | 13 | L. GOETZ |
+| 5 | NETWORK | 17 | 19 | M.J. BARCELO BISQUERRA |
+| 14 | NOSOTROS GABINLEA | 17 | 16 | Q. MACHET |
+| 10 | NAELIE DU GUESCLIN | 22 | 49 | PIERRICK LE MOEL |
+| 8 | NUN WARRIOR | 25 | 32 | Mme LANA HENRY |
+| 2 | NOT TOO BAD | 26 | 34 | D. BROSSARD |
+| 3 | NEZHA DU PATURAL | 31 | 46 | F. CLOZIER |
+| 11 | NOIRAUD DES GLENAN | 44 | 62 | N. PICARD |
+| 6 | NANCY DIDJEAP | 51 | 39 | D. BARANGER |
+| 9 | NIKE RIVER | 54 | 46 | M. TIJOU |
+| 15 | NEVIDENCE ROC | 68 | 187 | ET. CLOZIER |
+| 4 | NARNIA PAN | 114 | 107 | AXEL LAIGRON |
+| 16 | NINIA DOUNA | 128 | 124 | G. CRESPEL |
 
 ### 3. PRIX SISYPHE II - PRIX JEANOT LAMAISON
 

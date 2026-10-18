@@ -1,6 +1,6 @@
 # LYON-PARILLY — 18/10/2026
 
-9 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -45,16 +45,16 @@
 
 ### 4. PRIX LOUIS TRESCA
 
-*14h35 · haies · 3400 m · 6 partants · cotes de l'extraction*
+*14h35 · haies · 3400 m · 6 partants · cotes à T−11:23*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 3 | MARIUS | 3,6 | D.UBEDA | –/576/638/2892 |
-| 4 | CAMPO GRANDE | 4 | J.CHARRON | –/459/–/– |
-| 2 | MATADOR WOOD | 5,9 | A.ZULIANI | 165/635/3967/1871 |
-| 6 | SCILLA | 6 | J.PHELIPPE | 330/91/675/952 |
-| 5 | MEURSAULT CHARME | 6,6 | T.BEAURAIN | 267/410/182/90 |
-| 1 | MARY POPPINS | 7,3 | G.CHAMPIER | 385/25/3468/3246 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 3 | MARIUS | 3,5 | 3,6 | D.UBEDA | –/576/638/2892 |
+| 4 | CAMPO GRANDE | 4,4 | 4 | J.CHARRON | –/459/–/– |
+| 2 | MATADOR WOOD | 6,1 | 5,9 | A.ZULIANI | 165/635/3967/1871 |
+| 6 | SCILLA | 6,3 | 6 | J.PHELIPPE | 330/91/675/952 |
+| 1 | MARY POPPINS | 6,5 | 7,3 | G.CHAMPIER | 385/25/3468/3246 |
+| 5 | MEURSAULT CHARME | 6,5 | 6,6 | T.BEAURAIN | 267/410/182/90 |
 
 ### 5. PRIX DU MAINE-ET-LOIRE
 

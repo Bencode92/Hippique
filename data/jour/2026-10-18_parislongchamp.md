@@ -1,6 +1,6 @@
 # PARISLONGCHAMP — 18/10/2026
 
-8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -26,22 +26,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 2. PRIX DE BELLEVILLE
 
-*14h33 · plat · 1800 m · 12 partants · cotes de l'extraction*
+*14h33 · plat · 1800 m · 12 partants · cotes à T−11:23*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 12 | SOLMARIS | 2,2 | 2,25 | -2,3 % | M.GUYON 4e | 4/2/1/2 |
-| 2 | SHUWAIB | 5,8 | 6,58 | -11,8 % | C.LECOEUVRE | 13/1/–/148 |
-| 1 | GENERAL ROCHAMBEAU | 8,8 | 10,66 | -17,5 % | C.SOUMILLON | 7/11/3272/9 |
-| 6 | EREMOS | 9,3 | 11,38 | -18,3 % | A.POUCHIN | 6/31/3151/12 |
-| 11 | ARAKI | 11 | 13,86 | -20,7 % | S.PASQUIER | 23/7/1/2 |
-| 8 | VEGAWAN | 12 | 15,06 | -20,3 % | J.MOUTARD | 61/14/–/– |
-| 7 | PYROIS | 34 | 55,04 | -38,2 % | C.DEMURO | 1/22/33/1357 |
-| 10 | DOUBLE BID | 38 | 62,33 | -39,0 % | A.HAMELIN | 22/19/88/– |
-| 4 | VARAK | 51 | 80,07 | -36,3 % | A.MADAMET | 10/22/–/4044 |
-| 3 | JE VAIS A RIO | 55 | 86,88 | -36,7 % | T.BACHELOT | 16/17/10/40 |
-| 5 | MENKENT | 55 | 86,88 | -36,7 % | A.LEMAITRE | 11/57/117/1956 |
-| 9 | AMBRE SULTAN | 100 | 147,72 | -32,3 % | M.GRANDIN | 3/92/84/245 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 12 | SOLMARIS | 2,2 | 2,2 | 2,28 | -3,5 % | M.GUYON 4e | 4/2/1/2 |
+| 2 | SHUWAIB | 5,4 | 5,8 | 5,71 | -5,4 % | C.LECOEUVRE | 13/1/–/148 |
+| 1 | GENERAL ROCHAMBEAU | 8,3 | 8,8 | 10,14 | -18,2 % | C.SOUMILLON | 7/11/3272/9 |
+| 6 | EREMOS | 10 | 9,3 | 12,62 | -20,8 % | A.POUCHIN | 6/31/3151/12 |
+| 11 | ARAKI | 11 | 11 | 14,12 | -22,1 % | S.PASQUIER | 23/7/1/2 |
+| 8 | VEGAWAN | 14 | 12 | 20,12 | -30,4 % | J.MOUTARD | 61/14/–/– |
+| 7 | PYROIS | 31 | 34 | 46,00 | -32,6 % | C.DEMURO | 1/22/33/1357 |
+| 3 | JE VAIS A RIO | 32 | 55 | 44,35 | -27,8 % | T.BACHELOT | 16/17/10/40 |
+| 10 | DOUBLE BID | 33 | 38 | 54,18 | -39,1 % | A.HAMELIN | 22/19/88/– |
+| 4 | VARAK | 49 | 51 | 77,99 | -37,2 % | A.MADAMET | 10/22/–/4044 |
+| 5 | MENKENT | 67 | 55 | 109,06 | -38,6 % | A.LEMAITRE | 11/57/117/1956 |
+| 9 | AMBRE SULTAN | 95 | 100 | 142,47 | -33,3 % | M.GRANDIN | 3/92/84/245 |
 
 ### 3. PRIX RIEUSSEC
 
