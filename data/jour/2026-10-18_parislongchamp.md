@@ -1,6 +1,6 @@
 # PARISLONGCHAMP — 18/10/2026
 
-8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 6 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -124,21 +124,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE LA CHAUSSEE
 
-*17h35 · plat · 1400 m · 11 partants · cotes de l'extraction*
+*17h35 · plat · 1400 m · 11 partants · cotes à T−29:28*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 1 | MAYA CHOP | 5,2 | 6,47 | -19,7 % | A.MOLINS | 34/67/6/86 |
-| 5 | MARKSWOMAN | 5,6 | 6,02 | -6,9 % | C.SOUMILLON 4e | 7/126/301/247 |
-| 11 | ZASYMOKA | 7,4 | 8,26 | -10,5 % | D.PROVOST | 33/77/100/688 |
-| 8 | SLEIPNIR NORMANDY | 9 | 9,30 | -3,2 % | J.MOUTARD | 61/34/302/1169 |
-| 9 | GRAN HABANO | 9,4 | 10,01 | -6,1 % | T.PICCONE | 9/485/181/1379 |
-| 4 | MOOREA | 10 | 11,42 | -12,5 % | A.POUCHIN | 6/48/778/945 |
-| 10 | ASTON CLINTON | 12 | 14,14 | -15,1 % | C.LECOEUVRE | 13/57/3522/1133 |
-| 7 | MA MOME | 13 | 14,89 | -12,7 % | E.HARDOUIN | 27/81/278/38 |
-| 3 | MISTER BRYAN | 16 | 20,69 | -22,7 % | M.VELON | 28/81/213/38 |
-| 6 | NO TIME | 18 | 21,75 | -17,2 % | M.GRANDIN | 3/108/22/749 |
-| 2 | WOFF | 21 | 28,38 | -26,0 % | W.LEVESQUE | 79/94/1/164 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 5 | MARKSWOMAN | 4,3 | 5,6 | 5,00 | -13,9 % | C.SOUMILLON 4e | 7/126/301/247 |
+| 11 | ZASYMOKA | 5,7 | 7,4 | 5,72 | -0,3 % | D.PROVOST | 33/77/100/688 |
+| 1 | MAYA CHOP | 7,2 | 5,2 | 8,20 | -12,2 % | A.MOLINS | 34/67/6/86 |
+| 4 | MOOREA | 8,2 | 10 | 9,15 | -10,4 % | A.POUCHIN | 6/48/778/945 |
+| 10 | ASTON CLINTON | 10 | 12 | 11,52 | -13,2 % | C.LECOEUVRE | 13/57/3522/1133 |
+| 9 | GRAN HABANO | 11 | 9,4 | 12,12 | -9,3 % | T.PICCONE | 9/485/181/1379 |
+| 7 | MA MOME | 12 | 13 | 13,68 | -12,3 % | E.HARDOUIN | 27/81/278/38 |
+| 8 | SLEIPNIR NORMANDY | 13 | 9 | 14,36 | -9,5 % | J.MOUTARD | 61/34/302/1169 |
+| 6 | NO TIME | 18 | 18 | 21,94 | -17,9 % | M.GRANDIN | 3/108/22/749 |
+| 3 | MISTER BRYAN | 22 | 16 | 30,20 | -27,2 % | M.VELON | 28/81/213/38 |
+| 2 | WOFF | 27 | 21 | 38,18 | -29,3 % | W.LEVESQUE | 79/94/1/164 |
 
 ### 8. PRIX DES ERABLES
 
