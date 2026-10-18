@@ -164,22 +164,22 @@
 
 ### 8. PRIX DE BEAULAC
 
-*17h30 · attelé · 2550 m · 15 partants · cotes à T−9:08*
+*17h30 · attelé · 2550 m · 15 partants · cotes à T−5:48*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 4 | HORIZON DE LARRE | 6,1 | 4,3 | M. RAHAULT |
-| 12 | JASMIN DU PERRE | 6,8 | 7,2 | V. MARC-MARTIN |
-| 9 | ICARE PASSION | 8,1 | 18 | P. BESSON |
-| 14 | HARMAKHIS | 8,3 | 12 | Mlle ADELINE HARET |
-| 6 | HOBBY DE L'EVRE | 11 | 12 | C. CHESNE |
-| 15 | JACODUS DU MELEUC | 11 | 18 | C. LANGLOIS |
-| 3 | IBACA | 12 | 4,1 | B. CANDELLE-GARDENQ |
-| 7 | IPAD LILA | 12 | 18 | J.M. BOINOT |
-| 2 | IPANO STAR | 15 | 43 | TH. MARTIN |
-| 1 | HAUGAIN | 21 | 18 | C. MAROLLEAU |
-| 8 | JUSTICE PROUVEE | 23 | 64 | L. POUTREL |
-| 5 | INDIGO SIMARDIERE | 31 | 43 | H. JOUAULT |
-| 11 | JADE DALAMEDA | 44 | 21 | TH. CORBES |
-| 13 | HARDI | 49 | 64 | R. FARRUGIA |
-| 10 | HENRI GAILLARD | 62 | 32 | G. COCARD |
+| 4 | HORIZON DE LARRE | 3,8 | 4,3 | M. RAHAULT |
+| 12 | JASMIN DU PERRE | 8,5 | 7,2 | V. MARC-MARTIN |
+| 2 | IPANO STAR | 9,6 | 43 | TH. MARTIN |
+| 9 | ICARE PASSION | 10 | 18 | P. BESSON |
+| 15 | JACODUS DU MELEUC | 10 | 18 | C. LANGLOIS |
+| 14 | HARMAKHIS | 11 | 12 | Mlle ADELINE HARET |
+| 6 | HOBBY DE L'EVRE | 13 | 12 | C. CHESNE |
+| 3 | IBACA | 16 | 4,1 | B. CANDELLE-GARDENQ |
+| 7 | IPAD LILA | 16 | 18 | J.M. BOINOT |
+| 1 | HAUGAIN | 17 | 18 | C. MAROLLEAU |
+| 5 | INDIGO SIMARDIERE | 29 | 43 | H. JOUAULT |
+| 8 | JUSTICE PROUVEE | 35 | 64 | L. POUTREL |
+| 13 | HARDI | 43 | 64 | R. FARRUGIA |
+| 11 | JADE DALAMEDA | 63 | 21 | TH. CORBES |
+| 10 | HENRI GAILLARD | 70 | 32 | G. COCARD |

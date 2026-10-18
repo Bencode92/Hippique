@@ -124,21 +124,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE LA CHAUSSEE
 
-*17h35 · plat · 1400 m · 11 partants · cotes à T−18:48*
+*17h35 · plat · 1400 m · 11 partants · cotes à T−14:48*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 5 | MARKSWOMAN | 4,1 | 5,6 | 4,70 | -12,8 % | C.SOUMILLON 4e | 7/126/301/247 |
-| 4 | MOOREA | 7,3 | 10 | 7,92 | -7,9 % | A.POUCHIN | 6/48/778/945 |
-| 11 | ZASYMOKA | 7,3 | 7,4 | 8,13 | -10,2 % | D.PROVOST | 33/77/100/688 |
-| 1 | MAYA CHOP | 8,2 | 5,2 | 9,45 | -13,2 % | A.MOLINS | 34/67/6/86 |
-| 10 | ASTON CLINTON | 8,8 | 12 | 9,84 | -10,5 % | C.LECOEUVRE | 13/57/3522/1133 |
-| 7 | MA MOME | 10 | 13 | 10,96 | -8,8 % | E.HARDOUIN | 27/81/278/38 |
-| 9 | GRAN HABANO | 13 | 9,4 | 15,95 | -18,5 % | T.PICCONE | 9/485/181/1379 |
-| 6 | NO TIME | 14 | 18 | 14,84 | -5,7 % | M.GRANDIN | 3/108/22/749 |
-| 8 | SLEIPNIR NORMANDY | 14 | 9 | 15,51 | -9,7 % | J.MOUTARD | 61/34/302/1169 |
-| 2 | WOFF | 26 | 21 | 36,24 | -28,3 % | W.LEVESQUE | 79/94/1/164 |
-| 3 | MISTER BRYAN | 27 | 16 | 37,83 | -28,6 % | M.VELON | 28/81/213/38 |
+| 5 | MARKSWOMAN | 4,3 | 5,6 | 4,98 | -13,7 % | C.SOUMILLON 4e | 7/126/301/247 |
+| 4 | MOOREA | 6,7 | 10 | 7,23 | -7,3 % | A.POUCHIN | 6/48/778/945 |
+| 11 | ZASYMOKA | 7,6 | 7,4 | 8,57 | -11,3 % | D.PROVOST | 33/77/100/688 |
+| 1 | MAYA CHOP | 7,8 | 5,2 | 8,97 | -13,0 % | A.MOLINS | 34/67/6/86 |
+| 10 | ASTON CLINTON | 9 | 12 | 10,16 | -11,4 % | C.LECOEUVRE | 13/57/3522/1133 |
+| 7 | MA MOME | 10 | 13 | 11,03 | -9,3 % | E.HARDOUIN | 27/81/278/38 |
+| 9 | GRAN HABANO | 12 | 9,4 | 13,37 | -10,2 % | T.PICCONE | 9/485/181/1379 |
+| 8 | SLEIPNIR NORMANDY | 14 | 9 | 15,60 | -10,3 % | J.MOUTARD | 61/34/302/1169 |
+| 6 | NO TIME | 15 | 18 | 16,17 | -7,3 % | M.GRANDIN | 3/108/22/749 |
+| 2 | WOFF | 23 | 21 | 31,68 | -27,4 % | W.LEVESQUE | 79/94/1/164 |
+| 3 | MISTER BRYAN | 27 | 16 | 38,05 | -29,0 % | M.VELON | 28/81/213/38 |
 
 ### 8. PRIX DES ERABLES
 
