@@ -114,24 +114,24 @@
 
 ### 8. PRIX DE LA CORSE DU SUD
 
-*16h35 · attelé · 2850 m · 14 partants · cotes à T−20:47*
+*16h35 · attelé · 2850 m · 14 partants · cotes à T−16:08*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 5 | MERLIN D'YVEL | 2,8 | 3,5 | Q. CHAUVE-LAFFAY |
-| 11 | MA DALTON | 6,7 | 9,5 | M. ABRIVARD |
-| 1 | MALIKOVE | 7 | 4,7 | A. GAUDIN |
-| 12 | MAIN D'OR | 7,7 | 6,2 | MARTIAL GAUVIN |
-| 8 | MALICE BERRY | 9,6 | 8,1 | P. CALLIER |
-| 6 | MYLOVE DES RIVIERE | 14 | 15 | B. RUET |
-| 9 | MAESTRO GRIFF | 25 | 17 | A. TINTILLIER |
-| 10 | MONIE DU LOISIR | 25 | 21 | M. DUJMIC |
-| 4 | MY NAME IS JONES | 30 | 52 | F.J. PELTIER |
-| 13 | MACLOBEL DE FADAJE | 30 | – | ALEXIS LERENARD |
-| 7 | MAGNUS ROMO | 38 | 35 | PH. DANTHU |
-| 3 | MISS FLEUR | 77 | 52 | G. TOURON |
-| 2 | MISS DE GODINIERE | 154 | 105 | J. CUOQ |
-| 14 | MARIA DU MATO | 154 | 105 | B. THOMAS |
+| 5 | MERLIN D'YVEL | 3,1 | 3,5 | Q. CHAUVE-LAFFAY |
+| 12 | MAIN D'OR | 6,9 | 6,2 | MARTIAL GAUVIN |
+| 11 | MA DALTON | 7,2 | 9,5 | M. ABRIVARD |
+| 1 | MALIKOVE | 7,5 | 4,7 | A. GAUDIN |
+| 8 | MALICE BERRY | 8,7 | 8,1 | P. CALLIER |
+| 6 | MYLOVE DES RIVIERE | 13 | 15 | B. RUET |
+| 13 | MACLOBEL DE FADAJE | 20 | – | ALEXIS LERENARD |
+| 9 | MAESTRO GRIFF | 27 | 17 | A. TINTILLIER |
+| 10 | MONIE DU LOISIR | 27 | 21 | M. DUJMIC |
+| 4 | MY NAME IS JONES | 33 | 52 | F.J. PELTIER |
+| 7 | MAGNUS ROMO | 41 | 35 | PH. DANTHU |
+| 2 | MISS DE GODINIERE | 83 | 105 | J. CUOQ |
+| 3 | MISS FLEUR | 83 | 52 | G. TOURON |
+| 14 | MARIA DU MATO | 83 | 105 | B. THOMAS |
 
 ### 9. PRIX DU VAL DE SAONE
 
