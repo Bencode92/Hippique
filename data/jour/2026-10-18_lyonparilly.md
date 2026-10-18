@@ -45,16 +45,16 @@
 
 ### 4. PRIX LOUIS TRESCA
 
-*14h35 · haies · 3400 m · 6 partants · cotes à T−6:43*
+*14h35 · haies · 3400 m · 6 partants · cotes à T−5:23*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 3 | MARIUS | 2,9 | 3,6 | D.UBEDA | –/576/638/2892 |
-| 4 | CAMPO GRANDE | 5,2 | 4 | J.CHARRON | –/459/–/– |
-| 2 | MATADOR WOOD | 5,4 | 5,9 | A.ZULIANI | 165/635/3967/1871 |
-| 1 | MARY POPPINS | 6,8 | 7,3 | G.CHAMPIER | 385/25/3468/3246 |
-| 5 | MEURSAULT CHARME | 7,3 | 6,6 | T.BEAURAIN | 267/410/182/90 |
-| 6 | SCILLA | 7,3 | 6 | J.PHELIPPE | 330/91/675/952 |
+| 3 | MARIUS | 3 | 3,6 | D.UBEDA | –/576/638/2892 |
+| 4 | CAMPO GRANDE | 4,4 | 4 | J.CHARRON | –/459/–/– |
+| 2 | MATADOR WOOD | 5,6 | 5,9 | A.ZULIANI | 165/635/3967/1871 |
+| 6 | SCILLA | 7,1 | 6 | J.PHELIPPE | 330/91/675/952 |
+| 1 | MARY POPPINS | 7,4 | 7,3 | G.CHAMPIER | 385/25/3468/3246 |
+| 5 | MEURSAULT CHARME | 8 | 6,6 | T.BEAURAIN | 267/410/182/90 |
 
 ### 5. PRIX DU MAINE-ET-LOIRE
 

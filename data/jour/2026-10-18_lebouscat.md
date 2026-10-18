@@ -1,6 +1,6 @@
 # LE BOUSCAT — 18/10/2026
 
-8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
@@ -30,48 +30,48 @@
 
 ### 2. PRIX MICHEL-GUY BOURGUIGNON
 
-*14h30 · attelé · 2550 m · 16 partants · cotes à T−1:43*
+*14h30 · attelé · 2550 m · 16 partants · cotes à T−0:23*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 7 | NORMA DES CHARMES | 2,9 | 1,8 | F. GENCE |
+| 7 | NORMA DES CHARMES | 2,7 | 1,8 | F. GENCE |
 | 13 | NERLY D'OURVILLE | 4,8 | 7 | J.ET. ABRIVARD |
+| 5 | NETWORK | 11 | 19 | M.J. BARCELO BISQUERRA |
 | 8 | NUN WARRIOR | 11 | 32 | Mme LANA HENRY |
-| 5 | NETWORK | 14 | 19 | M.J. BARCELO BISQUERRA |
-| 12 | NATALIA MELODY | 16 | 13 | L. GOETZ |
-| 14 | NOSOTROS GABINLEA | 16 | 16 | Q. MACHET |
-| 1 | NUVOLA BARAKA | 17 | 14 | M. CRIADO |
-| 10 | NAELIE DU GUESCLIN | 21 | 49 | PIERRICK LE MOEL |
-| 2 | NOT TOO BAD | 26 | 34 | D. BROSSARD |
-| 3 | NEZHA DU PATURAL | 27 | 46 | F. CLOZIER |
+| 12 | NATALIA MELODY | 17 | 13 | L. GOETZ |
+| 14 | NOSOTROS GABINLEA | 18 | 16 | Q. MACHET |
+| 1 | NUVOLA BARAKA | 21 | 14 | M. CRIADO |
+| 3 | NEZHA DU PATURAL | 25 | 46 | F. CLOZIER |
+| 10 | NAELIE DU GUESCLIN | 26 | 49 | PIERRICK LE MOEL |
+| 2 | NOT TOO BAD | 27 | 34 | D. BROSSARD |
 | 11 | NOIRAUD DES GLENAN | 29 | 62 | N. PICARD |
-| 6 | NANCY DIDJEAP | 36 | 39 | D. BARANGER |
-| 9 | NIKE RIVER | 40 | 46 | M. TIJOU |
-| 15 | NEVIDENCE ROC | 57 | 187 | ET. CLOZIER |
-| 16 | NINIA DOUNA | 68 | 124 | G. CRESPEL |
-| 4 | NARNIA PAN | 74 | 107 | AXEL LAIGRON |
+| 6 | NANCY DIDJEAP | 40 | 39 | D. BARANGER |
+| 9 | NIKE RIVER | 44 | 46 | M. TIJOU |
+| 16 | NINIA DOUNA | 59 | 124 | G. CRESPEL |
+| 4 | NARNIA PAN | 73 | 107 | AXEL LAIGRON |
+| 15 | NEVIDENCE ROC | 73 | 187 | ET. CLOZIER |
 
 ### 3. PRIX SISYPHE II - PRIX JEANOT LAMAISON
 
-*15h00 · attelé · 2550 m · 15 partants · cotes de l'extraction*
+*15h00 · attelé · 2550 m · 15 partants · cotes à T−29:43*
 
-| n° | cheval | cote | jockey |
-|--:|:--|--:|:--|
-| 11 | JADE DES BRETTES | 4,9 | P. BEASSE |
-| 1 | JOBERT DU MOULIN | 7 | TH. GOUT |
-| 3 | JOSVIL | 7,3 | D. BARANGER |
-| 6 | JUNIOR DU GADE | 10 | Mlle A. DUPUIS |
-| 2 | JUMPIE PURPLE | 11 | L. CHUPIN |
-| 9 | JOYAU WINNER | 12 | Mlle L. VOISIN |
-| 13 | JAGUAR BLEU | 16 | G. TOQUE |
-| 7 | JOYEUSE D'ATOUT | 19 | J.B. PAREY |
-| 4 | JADOR JOSSELYN | 21 | CH. MANEGAT |
-| 5 | JAVA DE LIGNY | 21 | M. CATHERINE-PEZET |
-| 12 | JEANBAT DANOVER | 23 | N. BRUN |
-| 8 | JOSS GRAND PRE | 25 | E. SALMON |
-| 15 | JASMIN DE COEUR | 25 | R. FOUZER |
-| 10 | JACY DE NARMONT | 29 | NOE BRUN |
-| 14 | JINKGO VEETA | 29 | Mlle A. ANDRIEUX |
+| n° | cheval | cote | matin | jockey |
+|--:|:--|--:|--:|:--|
+| 11 | JADE DES BRETTES | 5,2 | 4,9 | P. BEASSE |
+| 1 | JOBERT DU MOULIN | 5,7 | 7 | TH. GOUT |
+| 3 | JOSVIL | 7,2 | 7,3 | D. BARANGER |
+| 6 | JUNIOR DU GADE | 10 | 10 | Mlle A. DUPUIS |
+| 2 | JUMPIE PURPLE | 12 | 11 | L. CHUPIN |
+| 9 | JOYAU WINNER | 14 | 12 | Mlle L. VOISIN |
+| 13 | JAGUAR BLEU | 16 | 16 | G. TOQUE |
+| 7 | JOYEUSE D'ATOUT | 19 | 19 | J.B. PAREY |
+| 4 | JADOR JOSSELYN | 21 | 21 | CH. MANEGAT |
+| 5 | JAVA DE LIGNY | 21 | 21 | M. CATHERINE-PEZET |
+| 8 | JOSS GRAND PRE | 25 | 25 | E. SALMON |
+| 12 | JEANBAT DANOVER | 25 | 23 | N. BRUN |
+| 15 | JASMIN DE COEUR | 28 | 25 | R. FOUZER |
+| 10 | JACY DE NARMONT | 31 | 29 | NOE BRUN |
+| 14 | JINKGO VEETA | 31 | 29 | Mlle A. ANDRIEUX |
 
 ### 4. PRIX DE TIVOLI
 
