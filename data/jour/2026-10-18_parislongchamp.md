@@ -102,25 +102,25 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DE SAINT-CYR
 
-*17h00 · plat · 1400 m · 15 partants · cotes à T−7:08*
+*17h00 · plat · 1400 m · 15 partants · cotes à T−4:28*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 13 | LEADING DANCER | 3,7 | 2,7 | 3,81 | -2,8 % | C.LEE | 246/42/3218/5588 |
-| 15 | CERAMIC | 5,9 | 4,1 | 6,75 | -12,5 % | M.GUYON | 4/10/1/2 |
-| 2 | VADIROUMA | 6,2 | 8,6 | 6,44 | -3,7 % | C.LECOEUVRE | 13/1/–/1 |
-| 11 | CLASSIC CUVEE | 10 | 11 | 12,46 | -19,7 % | A.POUCHIN | 6/14/3081/4844 |
-| 9 | ABBEY ROAD | 12 | 20 | 12,63 | -5,0 % | C.DEMURO | 1/16/59/313 |
-| 14 | QUIESCENT | 13 | 23 | 13,86 | -6,2 % | JW.DOYLE | 162/238/3144/8 |
-| 16 | INDIFFERENTE | 17 | 13 | 21,66 | -21,5 % | H.JOURNIAC | 43/8/1/2 |
-| 7 | DACHKOVA | 19 | 35 | 25,82 | -26,4 % | T.BACHELOT | 16/22/2700/9 |
-| 1 | MADAME FAYETTE | 25 | 53 | 32,30 | -22,6 % | A.HAMELIN | 22/208/66/349 |
-| 3 | WILD PACIFIC | 25 | 41 | 35,42 | -29,4 % | A.LEMAITRE | 11/16/204/288 |
-| 4 | FIRE FLY | 30 | 45 | 36,17 | -17,1 % | A.MADAMET | 10/22/50/328 |
-| 5 | ALMA MATER | 41 | 43 | 60,50 | -32,2 % | J.MOUTARD | 61/14/–/225 |
-| 8 | FIGJAM | 58 | 45 | 82,01 | -29,3 % | T.PICCONE | 9/311/3307/– |
-| 10 | ALARMING | 74 | 81 | 96,50 | -23,3 % | R.CLUTTERBUCK | –/158/4202/1824 |
-| 6 | ROSENINSEL | 94 | 135 | 149,37 | -37,1 % | M.GRANDIN | 3/92/546/44 |
+| 13 | LEADING DANCER | 3,6 | 2,7 | 3,73 | -3,5 % | C.LEE | 246/42/3218/5588 |
+| 15 | CERAMIC | 6,3 | 4,1 | 7,34 | -14,2 % | M.GUYON | 4/10/1/2 |
+| 2 | VADIROUMA | 6,5 | 8,6 | 6,86 | -5,2 % | C.LECOEUVRE | 13/1/–/1 |
+| 11 | CLASSIC CUVEE | 10 | 11 | 12,58 | -20,5 % | A.POUCHIN | 6/14/3081/4844 |
+| 14 | QUIESCENT | 11 | 23 | 11,53 | -4,6 % | JW.DOYLE | 162/238/3144/8 |
+| 9 | ABBEY ROAD | 13 | 20 | 15,29 | -15,0 % | C.DEMURO | 1/16/59/313 |
+| 7 | DACHKOVA | 15 | 35 | 18,08 | -17,0 % | T.BACHELOT | 16/22/2700/9 |
+| 16 | INDIFFERENTE | 16 | 13 | 20,38 | -21,5 % | H.JOURNIAC | 43/8/1/2 |
+| 1 | MADAME FAYETTE | 25 | 53 | 32,61 | -23,3 % | A.HAMELIN | 22/208/66/349 |
+| 3 | WILD PACIFIC | 26 | 41 | 37,40 | -30,5 % | A.LEMAITRE | 11/16/204/288 |
+| 4 | FIRE FLY | 29 | 45 | 35,15 | -17,5 % | A.MADAMET | 10/22/50/328 |
+| 5 | ALMA MATER | 46 | 43 | 69,28 | -33,6 % | J.MOUTARD | 61/14/–/225 |
+| 8 | FIGJAM | 58 | 45 | 82,75 | -29,9 % | T.PICCONE | 9/311/3307/– |
+| 10 | ALARMING | 76 | 81 | 100,09 | -24,1 % | R.CLUTTERBUCK | –/158/4202/1824 |
+| 6 | ROSENINSEL | 110 | 135 | 176,65 | -37,7 % | M.GRANDIN | 3/92/546/44 |
 
 ### 7. PRIX DE LA CHAUSSEE
 
