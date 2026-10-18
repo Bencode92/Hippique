@@ -58,19 +58,19 @@
 
 ### 5. PRIX DU MAINE-ET-LOIRE
 
-*15h05 · monté · 2850 m · 9 partants · cotes à T−12:43*
+*15h05 · monté · 2850 m · 9 partants · cotes à T−8:43*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 5 | MOLLY FLIGNY | 1,7 | 1,5 | Q. SEGUIN |
-| 7 | MERITE JULRY | 6,8 | 6,3 | M. LAFFAY |
-| 6 | MAMZELLE DES PLANS | 7,3 | 7,2 | T. AGUIAR |
-| 4 | MUSE JULRY | 10 | 13 | Mlle S. CORTIAL |
-| 9 | MAYBE LOUANGES | 12 | 19 | F. BROUST |
-| 8 | MAYA DU RADON | 20 | 30 | A.P. GIRAUD |
-| 2 | MAGHEERA GRIFF | 28 | 30 | D.A. HAON |
-| 3 | MERCI MERCY | 37 | 50 | Mme S. BUSSET |
-| 1 | MAJESTRIA FILI | 113 | – | Mlle M. HEYMANS |
+| 5 | MOLLY FLIGNY | 1,8 | 1,5 | Q. SEGUIN |
+| 7 | MERITE JULRY | 6,9 | 6,3 | M. LAFFAY |
+| 6 | MAMZELLE DES PLANS | 7,4 | 7,2 | T. AGUIAR |
+| 4 | MUSE JULRY | 11 | 13 | Mlle S. CORTIAL |
+| 9 | MAYBE LOUANGES | 13 | 19 | F. BROUST |
+| 3 | MERCI MERCY | 16 | 50 | Mme S. BUSSET |
+| 8 | MAYA DU RADON | 21 | 30 | A.P. GIRAUD |
+| 2 | MAGHEERA GRIFF | 26 | 30 | D.A. HAON |
+| 1 | MAJESTRIA FILI | 118 | – | Mlle M. HEYMANS |
 
 ### 6. PRIX DU BRIONNAIS (GR.A)
 
