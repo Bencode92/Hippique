@@ -124,21 +124,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE LA CHAUSSEE
 
-*17h35 · plat · 1400 m · 11 partants · cotes à T−4:48*
+*17h35 · plat · 1400 m · 11 partants · cotes à T−2:08*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 11 | ZASYMOKA | 5,1 | 7,4 | 5,60 | -9,0 % | D.PROVOST | 33/77/100/688 |
-| 5 | MARKSWOMAN | 5,3 | 5,6 | 5,72 | -7,4 % | C.SOUMILLON 4e | 7/126/301/247 |
-| 1 | MAYA CHOP | 7 | 5,2 | 8,31 | -15,8 % | A.MOLINS | 34/67/6/86 |
-| 4 | MOOREA | 7,2 | 10 | 7,90 | -8,8 % | A.POUCHIN | 6/48/778/945 |
-| 10 | ASTON CLINTON | 8,3 | 12 | 9,31 | -10,8 % | C.LECOEUVRE | 13/57/3522/1133 |
-| 7 | MA MOME | 11 | 13 | 12,40 | -11,3 % | E.HARDOUIN | 27/81/278/38 |
-| 9 | GRAN HABANO | 13 | 9,4 | 16,15 | -19,5 % | T.PICCONE | 9/485/181/1379 |
-| 6 | NO TIME | 14 | 18 | 15,03 | -6,9 % | M.GRANDIN | 3/108/22/749 |
-| 8 | SLEIPNIR NORMANDY | 16 | 9 | 18,34 | -12,8 % | J.MOUTARD | 61/34/302/1169 |
-| 2 | WOFF | 22 | 21 | 30,30 | -27,4 % | W.LEVESQUE | 79/94/1/164 |
-| 3 | MISTER BRYAN | 37 | 16 | 54,59 | -32,2 % | M.VELON | 28/81/213/38 |
+| 7 | MA MOME | 4,5 | 13 | 4,56 | -1,2 % | E.HARDOUIN | 27/81/278/38 |
+| 5 | MARKSWOMAN | 5,4 | 5,6 | 5,78 | -6,5 % | C.SOUMILLON 4e | 7/126/301/247 |
+| 11 | ZASYMOKA | 6,5 | 7,4 | 7,12 | -8,7 % | D.PROVOST | 33/77/100/688 |
+| 1 | MAYA CHOP | 7,5 | 5,2 | 8,53 | -12,1 % | A.MOLINS | 34/67/6/86 |
+| 4 | MOOREA | 7,6 | 10 | 8,31 | -8,5 % | A.POUCHIN | 6/48/778/945 |
+| 10 | ASTON CLINTON | 10 | 12 | 11,43 | -12,5 % | C.LECOEUVRE | 13/57/3522/1133 |
+| 6 | NO TIME | 16 | 18 | 18,97 | -15,7 % | M.GRANDIN | 3/108/22/749 |
+| 9 | GRAN HABANO | 16 | 9,4 | 20,35 | -21,4 % | T.PICCONE | 9/485/181/1379 |
+| 8 | SLEIPNIR NORMANDY | 22 | 9 | 26,17 | -15,9 % | J.MOUTARD | 61/34/302/1169 |
+| 2 | WOFF | 32 | 21 | 45,89 | -30,3 % | W.LEVESQUE | 79/94/1/164 |
+| 3 | MISTER BRYAN | 46 | 16 | 68,63 | -33,0 % | M.VELON | 28/81/213/38 |
 
 ### 8. PRIX DES ERABLES
 
