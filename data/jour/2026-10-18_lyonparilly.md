@@ -114,24 +114,24 @@
 
 ### 8. PRIX DE LA CORSE DU SUD
 
-*16h35 · attelé · 2850 m · 14 partants · cotes à T−0:48*
+*16h35 · attelé · 2850 m · 14 partants · cotes à T−0:08*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 5 | MERLIN D'YVEL | 2,4 | 3,5 | Q. CHAUVE-LAFFAY |
-| 8 | MALICE BERRY | 4,9 | 8,1 | P. CALLIER |
+| 5 | MERLIN D'YVEL | 3 | 3,5 | Q. CHAUVE-LAFFAY |
+| 13 | MACLOBEL DE FADAJE | 4,8 | – | ALEXIS LERENARD |
+| 8 | MALICE BERRY | 6,2 | 8,1 | P. CALLIER |
 | 6 | MYLOVE DES RIVIERE | 6,7 | 15 | B. RUET |
-| 11 | MA DALTON | 9,3 | 9,5 | M. ABRIVARD |
-| 13 | MACLOBEL DE FADAJE | 12 | – | ALEXIS LERENARD |
-| 12 | MAIN D'OR | 17 | 6,2 | MARTIAL GAUVIN |
-| 1 | MALIKOVE | 30 | 4,7 | A. GAUDIN |
-| 4 | MY NAME IS JONES | 40 | 52 | F.J. PELTIER |
-| 14 | MARIA DU MATO | 66 | 105 | B. THOMAS |
-| 9 | MAESTRO GRIFF | 71 | 17 | A. TINTILLIER |
-| 10 | MONIE DU LOISIR | 77 | 21 | M. DUJMIC |
-| 7 | MAGNUS ROMO | 84 | 35 | PH. DANTHU |
-| 2 | MISS DE GODINIERE | 92 | 105 | J. CUOQ |
-| 3 | MISS FLEUR | 154 | 52 | G. TOURON |
+| 11 | MA DALTON | 9,4 | 9,5 | M. ABRIVARD |
+| 12 | MAIN D'OR | 20 | 6,2 | MARTIAL GAUVIN |
+| 4 | MY NAME IS JONES | 27 | 52 | F.J. PELTIER |
+| 1 | MALIKOVE | 33 | 4,7 | A. GAUDIN |
+| 14 | MARIA DU MATO | 49 | 105 | B. THOMAS |
+| 9 | MAESTRO GRIFF | 69 | 17 | A. TINTILLIER |
+| 7 | MAGNUS ROMO | 104 | 35 | PH. DANTHU |
+| 10 | MONIE DU LOISIR | 104 | 21 | M. DUJMIC |
+| 2 | MISS DE GODINIERE | 113 | 105 | J. CUOQ |
+| 3 | MISS FLEUR | 156 | 52 | G. TOURON |
 
 ### 9. PRIX DU VAL DE SAONE
 
