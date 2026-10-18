@@ -4,26 +4,26 @@
   "reunion": 9,
   "heure_depart": 1792330500000,
   "distance": 2850,
-  "scraped_at": "2026-10-18T15:26:56.647596+02:00",
-  "minutes_avant_depart": 8,
+  "scraped_at": "2026-10-18T15:29:36.619247+02:00",
+  "minutes_avant_depart": 5,
   "participants": [
     {
       "numPmu": 1,
       "nom": "NAHAR MARCEAUX",
-      "cote_live": 30.0,
+      "cote_live": 27.0,
       "cote_reference": 111.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792330006000
+      "timestamp_cote": 1792330160000
     },
     {
       "numPmu": 2,
       "nom": "NORIGOULET",
-      "cote_live": 36.0,
+      "cote_live": 43.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792330006000
+      "timestamp_cote": 1792330160000
     },
     {
       "numPmu": 3,
@@ -37,92 +37,92 @@
     {
       "numPmu": 4,
       "nom": "NELSON D'ECOTAY",
-      "cote_live": 16.0,
+      "cote_live": 6.4,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792330006000
+      "timestamp_cote": 1792330160000
     },
     {
       "numPmu": 5,
       "nom": "NOBLESSE DU ROI",
-      "cote_live": 6.8,
+      "cote_live": 7.5,
       "cote_reference": 7.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792330006000
+      "timestamp_cote": 1792330160000
     },
     {
       "numPmu": 6,
       "nom": "NORIA DU VALLON",
-      "cote_live": 4.9,
+      "cote_live": 5.5,
       "cote_reference": 7.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792330006000
+      "timestamp_cote": 1792330160000
     },
     {
       "numPmu": 7,
       "nom": "NOISETTE DOREE",
-      "cote_live": 26.0,
+      "cote_live": 24.0,
       "cote_reference": 37.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792330006000
+      "timestamp_cote": 1792330160000
     },
     {
       "numPmu": 9,
       "nom": "NOUKI DES SOURCES",
-      "cote_live": 14.0,
+      "cote_live": 16.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792330006000
+      "timestamp_cote": 1792330160000
     },
     {
       "numPmu": 10,
       "nom": "NATIF DE BERTRANGE",
-      "cote_live": 26.0,
+      "cote_live": 27.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792330006000
+      "timestamp_cote": 1792330160000
     },
     {
       "numPmu": 11,
       "nom": "NONO LE ROBOT",
-      "cote_live": 6.1,
+      "cote_live": 7.0,
       "cote_reference": 3.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792330006000
+      "timestamp_cote": 1792330160000
     },
     {
       "numPmu": 12,
       "nom": "NOBLE COEUR",
-      "cote_live": 4.0,
+      "cote_live": 4.2,
       "cote_reference": 5.2,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792330006000
+      "timestamp_cote": 1792330160000
     },
     {
       "numPmu": 13,
       "nom": "NEMO DES ANDRAUX",
-      "cote_live": 61.0,
+      "cote_live": 72.0,
       "cote_reference": 55.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792330006000
+      "timestamp_cote": 1792330160000
     },
     {
       "numPmu": 14,
       "nom": "NAKILI D'ALEX",
-      "cote_live": 10.0,
+      "cote_live": 12.0,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792330006000
+      "timestamp_cote": 1792330160000
     }
   ],
   "hippodrome": "LYON-PARILLY",
@@ -239,6 +239,25 @@
         "12": 4.0,
         "13": 61.0,
         "14": 10.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T15:29:36.619247+02:00",
+      "minutes_avant_depart": 5.396071916666667,
+      "cotes": {
+        "1": 27.0,
+        "2": 43.0,
+        "3": null,
+        "4": 6.4,
+        "5": 7.5,
+        "6": 5.5,
+        "7": 24.0,
+        "9": 16.0,
+        "10": 27.0,
+        "11": 7.0,
+        "12": 4.2,
+        "13": 72.0,
+        "14": 12.0
       }
     }
   ]
