@@ -4,62 +4,62 @@
   "reunion": 9,
   "heure_depart": 1792327500000,
   "distance": 3400,
-  "scraped_at": "2026-10-18T14:44:16.363654+02:00",
-  "minutes_avant_depart": 1,
+  "scraped_at": "2026-10-18T14:46:56.836858+02:00",
+  "minutes_avant_depart": -2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MARY POPPINS",
-      "cote_live": 10.0,
+      "cote_live": 11.0,
       "cote_reference": 7.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792327450000
+      "timestamp_cote": 1792327610000
     },
     {
       "numPmu": 2,
       "nom": "MATADOR WOOD",
-      "cote_live": 5.4,
+      "cote_live": 3.9,
       "cote_reference": 6.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792327450000
+      "timestamp_cote": 1792327610000
     },
     {
       "numPmu": 3,
       "nom": "MARIUS",
-      "cote_live": 5.1,
+      "cote_live": 4.1,
       "cote_reference": 4.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792327450000
+      "timestamp_cote": 1792327610000
     },
     {
       "numPmu": 4,
       "nom": "CAMPO GRANDE",
-      "cote_live": 7.8,
+      "cote_live": 10.0,
       "cote_reference": 3.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792327450000
+      "timestamp_cote": 1792327610000
     },
     {
       "numPmu": 5,
       "nom": "MEURSAULT CHARME",
-      "cote_live": 3.2,
+      "cote_live": 3.6,
       "cote_reference": 6.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792327450000
+      "timestamp_cote": 1792327610000
     },
     {
       "numPmu": 6,
       "nom": "SCILLA",
-      "cote_live": 4.4,
+      "cote_live": 5.4,
       "cote_reference": 5.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792327450000
+      "timestamp_cote": 1792327610000
     }
   ],
   "hippodrome": "LYON-PARILLY",
@@ -182,6 +182,54 @@
         "4": 7.8,
         "5": 3.2,
         "6": 4.4
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T14:44:56.661271+02:00",
+      "minutes_avant_depart": 0.0628862,
+      "cotes": {
+        "1": 12.0,
+        "2": 4.8,
+        "3": 5.1,
+        "4": 8.8,
+        "5": 3.0,
+        "6": 4.8
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T14:45:36.788278+02:00",
+      "minutes_avant_depart": -0.60378255,
+      "cotes": {
+        "1": 11.0,
+        "2": 4.7,
+        "3": 4.8,
+        "4": 9.3,
+        "5": 3.1,
+        "6": 4.7
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T14:46:16.477335+02:00",
+      "minutes_avant_depart": -1.2704513666666666,
+      "cotes": {
+        "1": 10.0,
+        "2": 4.4,
+        "3": 4.5,
+        "4": 9.6,
+        "5": 3.3,
+        "6": 5.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T14:46:56.836858+02:00",
+      "minutes_avant_depart": -1.9439753833333335,
+      "cotes": {
+        "1": 11.0,
+        "2": 3.9,
+        "3": 4.1,
+        "4": 10.0,
+        "5": 3.6,
+        "6": 5.4
       }
     }
   ]
