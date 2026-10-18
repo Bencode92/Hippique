@@ -142,18 +142,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DES ERABLES
 
-*18h10 · plat · 3100 m · 11 partants · cotes à T−29:48*
+*18h10 · plat · 3100 m · 11 partants · cotes à T−25:08*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 4 | GRAND ART | 3 | 3,7 | 3,26 | -7,9 % | C.SOUMILLON | 7/64/14/23 |
-| 3 | EMBIEZ | 5 | 5,3 | 5,34 | -6,4 % | C.DEMURO | 1/111/192/50 |
-| 1 | ALLEZ FRERES | 7,9 | 5,7 | 9,29 | -15,0 % | A.POUCHIN | 6/14/92/1025 |
-| 10 | BARBADIN | 10 | 7 | 12,01 | -16,8 % | A.HAMELIN | 22/74/1/– |
-| 8 | ANDOUINS | 13 | 21 | 13,73 | -5,3 % | E.HARDOUIN | 27/86/41/954 |
-| 11 | BECQUATHUNDER | 13 | 10 | 18,34 | -29,1 % | M.FAVRIAUX | 51/86/1684/1227 |
-| 7 | ASTREDARGENT | 14 | 13 | 17,38 | -19,4 % | M.VELON | 28/27/750/785 |
-| 2 | GOOD TO SEE YOU | 15 | 27 | 21,71 | -30,9 % | M.GRANDIN | 3/120/87/368 |
-| 5 | NUMERUS BORGET | 25 | 14 | 36,60 | -31,7 % | A.NICCO | 167/213/280/1091 |
-| 6 | KLASSIC PRECIEUX | 29 | 60 | 34,47 | -15,9 % | T.PICCONE 2e | 9/200/244/206 |
-| 9 | ALMACADO GREE | 33 | 38 | 47,83 | -31,0 % | E.MUNTWYLER | 181/89/329/– |
+| 4 | GRAND ART | 3,2 | 3,7 | 3,47 | -7,7 % | C.SOUMILLON | 7/64/14/23 |
+| 3 | EMBIEZ | 5,3 | 5,3 | 5,69 | -6,8 % | C.DEMURO | 1/111/192/50 |
+| 1 | ALLEZ FRERES | 8,1 | 5,7 | 9,56 | -15,2 % | A.POUCHIN | 6/14/92/1025 |
+| 10 | BARBADIN | 10 | 7 | 12,00 | -16,7 % | A.HAMELIN | 22/74/1/– |
+| 2 | GOOD TO SEE YOU | 12 | 27 | 15,24 | -21,2 % | M.GRANDIN | 3/120/87/368 |
+| 8 | ANDOUINS | 13 | 21 | 13,71 | -5,2 % | E.HARDOUIN | 27/86/41/954 |
+| 11 | BECQUATHUNDER | 14 | 10 | 19,99 | -30,0 % | M.FAVRIAUX | 51/86/1684/1227 |
+| 7 | ASTREDARGENT | 15 | 13 | 18,81 | -20,3 % | M.VELON | 28/27/750/785 |
+| 6 | KLASSIC PRECIEUX | 18 | 60 | 19,98 | -9,9 % | T.PICCONE 2e | 9/200/244/206 |
+| 5 | NUMERUS BORGET | 23 | 14 | 33,22 | -30,8 % | A.NICCO | 167/213/280/1091 |
+| 9 | ALMACADO GREE | 30 | 38 | 42,91 | -30,1 % | E.MUNTWYLER | 181/89/329/– |
