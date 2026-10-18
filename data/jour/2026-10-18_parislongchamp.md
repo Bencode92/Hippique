@@ -124,21 +124,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE LA CHAUSSEE
 
-*17h35 · plat · 1400 m · 11 partants · cotes à T−10:48*
+*17h35 · plat · 1400 m · 11 partants · cotes à T−4:48*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 11 | ZASYMOKA | 4,5 | 7,4 | 4,85 | -7,3 % | D.PROVOST | 33/77/100/688 |
-| 5 | MARKSWOMAN | 4,9 | 5,6 | 5,21 | -6,0 % | C.SOUMILLON 4e | 7/126/301/247 |
-| 4 | MOOREA | 7,4 | 10 | 8,10 | -8,6 % | A.POUCHIN | 6/48/778/945 |
-| 1 | MAYA CHOP | 8,3 | 5,2 | 9,65 | -13,9 % | A.MOLINS | 34/67/6/86 |
-| 10 | ASTON CLINTON | 8,9 | 12 | 10,03 | -11,3 % | C.LECOEUVRE | 13/57/3522/1133 |
-| 7 | MA MOME | 12 | 13 | 13,64 | -12,0 % | E.HARDOUIN | 27/81/278/38 |
-| 9 | GRAN HABANO | 13 | 9,4 | 16,05 | -19,0 % | T.PICCONE | 9/485/181/1379 |
-| 6 | NO TIME | 15 | 18 | 16,18 | -7,3 % | M.GRANDIN | 3/108/22/749 |
-| 8 | SLEIPNIR NORMANDY | 16 | 9 | 18,22 | -12,2 % | J.MOUTARD | 61/34/302/1169 |
-| 2 | WOFF | 25 | 21 | 34,87 | -28,3 % | W.LEVESQUE | 79/94/1/164 |
-| 3 | MISTER BRYAN | 32 | 16 | 46,13 | -30,6 % | M.VELON | 28/81/213/38 |
+| 11 | ZASYMOKA | 5,1 | 7,4 | 5,60 | -9,0 % | D.PROVOST | 33/77/100/688 |
+| 5 | MARKSWOMAN | 5,3 | 5,6 | 5,72 | -7,4 % | C.SOUMILLON 4e | 7/126/301/247 |
+| 1 | MAYA CHOP | 7 | 5,2 | 8,31 | -15,8 % | A.MOLINS | 34/67/6/86 |
+| 4 | MOOREA | 7,2 | 10 | 7,90 | -8,8 % | A.POUCHIN | 6/48/778/945 |
+| 10 | ASTON CLINTON | 8,3 | 12 | 9,31 | -10,8 % | C.LECOEUVRE | 13/57/3522/1133 |
+| 7 | MA MOME | 11 | 13 | 12,40 | -11,3 % | E.HARDOUIN | 27/81/278/38 |
+| 9 | GRAN HABANO | 13 | 9,4 | 16,15 | -19,5 % | T.PICCONE | 9/485/181/1379 |
+| 6 | NO TIME | 14 | 18 | 15,03 | -6,9 % | M.GRANDIN | 3/108/22/749 |
+| 8 | SLEIPNIR NORMANDY | 16 | 9 | 18,34 | -12,8 % | J.MOUTARD | 61/34/302/1169 |
+| 2 | WOFF | 22 | 21 | 30,30 | -27,4 % | W.LEVESQUE | 79/94/1/164 |
+| 3 | MISTER BRYAN | 37 | 16 | 54,59 | -32,2 % | M.VELON | 28/81/213/38 |
 
 ### 8. PRIX DES ERABLES
 
