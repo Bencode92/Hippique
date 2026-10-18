@@ -1,6 +1,6 @@
 # LE BOUSCAT — 18/10/2026
 
-8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
@@ -100,28 +100,28 @@
 
 ### 5. PRIX DE MONADEY
 
-*16h00 · attelé · 2650 m · 18 partants · cotes de l'extraction*
+*16h00 · attelé · 2650 m · 18 partants · cotes à T−29:43*
 
-| n° | cheval | cote | jockey |
-|--:|:--|--:|:--|
-| 18 | KISS ME | 3,8 | J.ET. ABRIVARD |
-| 10 | KADEO JOSSELYN | 4,7 | E. AUDEBERT |
-| 17 | KETAMINE D'UZE | 5,9 | A.A. CHAVATTE |
-| 7 | KASHMIR DU BOCAGE | 9,2 | M. CHAMPENOIS |
-| 12 | KIWI A TROIS | 15 | PH. BOUTIN |
-| 13 | KROONER D'ORION | 15 | M. CRIADO |
-| 14 | KNOCK OUT | 17 | TH. DUCOS |
-| 1 | KISS YOU PIYA | 28 | A. DE VAUGIRAUD |
-| 15 | KIANNICK OF NOUIC | 28 | Y. VIDAL |
-| 2 | KING TURGOT | 33 | K. BUSNEL |
-| 16 | KELYO DU SOLNAN | 33 | N. PACHA |
-| 4 | KROKEUSE | 39 | PH. MASSCHAELE |
-| 3 | KEEP TIME | 79 | R. BOUVIER |
-| 9 | KLINT D'ESPOIR | 99 | J. CHAVATTE |
-| 11 | KENZA D'OURVILLE | 132 | MAXENCE LECOQ |
-| 6 | KAISER STAR | 198 | PIERRICK LE MOEL |
-| 5 | KISS ME MAZELI | 396 | AXEL LAIGRON |
-| 8 | KINCI DE BERCE | – | D. BROSSARD |
+| n° | cheval | cote | matin | jockey |
+|--:|:--|--:|--:|:--|
+| 18 | KISS ME | 3,5 | 3,8 | J.ET. ABRIVARD |
+| 10 | KADEO JOSSELYN | 6,1 | 4,7 | E. AUDEBERT |
+| 17 | KETAMINE D'UZE | 6,2 | 5,9 | A.A. CHAVATTE |
+| 7 | KASHMIR DU BOCAGE | 10 | 9,2 | M. CHAMPENOIS |
+| 12 | KIWI A TROIS | 12 | 15 | PH. BOUTIN |
+| 13 | KROONER D'ORION | 15 | 15 | M. CRIADO |
+| 14 | KNOCK OUT | 19 | 17 | TH. DUCOS |
+| 4 | KROKEUSE | 22 | 39 | PH. MASSCHAELE |
+| 15 | KIANNICK OF NOUIC | 22 | 28 | Y. VIDAL |
+| 1 | KISS YOU PIYA | 27 | 28 | A. DE VAUGIRAUD |
+| 2 | KING TURGOT | 28 | 33 | K. BUSNEL |
+| 16 | KELYO DU SOLNAN | 32 | 33 | N. PACHA |
+| 6 | KAISER STAR | 86 | 198 | PIERRICK LE MOEL |
+| 3 | KEEP TIME | 104 | 79 | R. BOUVIER |
+| 9 | KLINT D'ESPOIR | 104 | 99 | J. CHAVATTE |
+| 11 | KENZA D'OURVILLE | 104 | 132 | MAXENCE LECOQ |
+| 5 | KISS ME MAZELI | 520 | 396 | AXEL LAIGRON |
+| 8 | KINCI DE BERCE | – | – | D. BROSSARD |
 
 ### 6. PRIX DE L'HIPPODROME DE LUXE (GR.A)
 
