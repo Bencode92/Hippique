@@ -58,18 +58,18 @@
 
 ### 5. PRIX DU MAINE-ET-LOIRE
 
-*15h05 · monté · 2850 m · 9 partants · cotes à T−8:03*
+*15h05 · monté · 2850 m · 9 partants · cotes à T−4:43*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
 | 5 | MOLLY FLIGNY | 1,7 | 1,5 | Q. SEGUIN |
-| 6 | MAMZELLE DES PLANS | 5,2 | 7,2 | T. AGUIAR |
-| 7 | MERITE JULRY | 7,1 | 6,3 | M. LAFFAY |
-| 4 | MUSE JULRY | 15 | 13 | Mlle S. CORTIAL |
-| 9 | MAYBE LOUANGES | 21 | 19 | F. BROUST |
-| 3 | MERCI MERCY | 24 | 50 | Mme S. BUSSET |
-| 8 | MAYA DU RADON | 25 | 30 | A.P. GIRAUD |
-| 2 | MAGHEERA GRIFF | 34 | 30 | D.A. HAON |
+| 7 | MERITE JULRY | 5,7 | 6,3 | M. LAFFAY |
+| 6 | MAMZELLE DES PLANS | 5,9 | 7,2 | T. AGUIAR |
+| 4 | MUSE JULRY | 13 | 13 | Mlle S. CORTIAL |
+| 9 | MAYBE LOUANGES | 17 | 19 | F. BROUST |
+| 3 | MERCI MERCY | 28 | 50 | Mme S. BUSSET |
+| 8 | MAYA DU RADON | 28 | 30 | A.P. GIRAUD |
+| 2 | MAGHEERA GRIFF | 41 | 30 | D.A. HAON |
 | 1 | MAJESTRIA FILI | 92 | – | Mlle M. HEYMANS |
 
 ### 6. PRIX DU BRIONNAIS (GR.A)
