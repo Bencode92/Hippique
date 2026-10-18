@@ -4,26 +4,26 @@
   "reunion": 8,
   "heure_depart": 1792333800000,
   "distance": 2550,
-  "scraped_at": "2026-10-18T16:08:52.561685+02:00",
-  "minutes_avant_depart": 21,
+  "scraped_at": "2026-10-18T16:13:32.135911+02:00",
+  "minutes_avant_depart": 16,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MON FAVORI",
-      "cote_live": 46.0,
+      "cote_live": 48.0,
       "cote_reference": 43.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792332518000
+      "timestamp_cote": 1792332804000
     },
     {
       "numPmu": 2,
       "nom": "MEDINA DU CHATELET",
-      "cote_live": 13.0,
+      "cote_live": 11.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792332518000
+      "timestamp_cote": 1792332804000
     },
     {
       "numPmu": 3,
@@ -32,34 +32,34 @@
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792332518000
+      "timestamp_cote": 1792332804000
     },
     {
       "numPmu": 4,
       "nom": "MARIE D'ATTAQUE",
-      "cote_live": 104.0,
+      "cote_live": 108.0,
       "cote_reference": 97.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792332518000
+      "timestamp_cote": 1792332804000
     },
     {
       "numPmu": 5,
       "nom": "MONA VILI",
-      "cote_live": 8.9,
+      "cote_live": 9.0,
       "cote_reference": 8.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792332518000
+      "timestamp_cote": 1792332804000
     },
     {
       "numPmu": 6,
       "nom": "MANZONI",
-      "cote_live": 1.6,
+      "cote_live": 1.7,
       "cote_reference": 1.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792332518000
+      "timestamp_cote": 1792332804000
     },
     {
       "numPmu": 7,
@@ -68,7 +68,7 @@
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792332518000
+      "timestamp_cote": 1792332804000
     },
     {
       "numPmu": 8,
@@ -77,52 +77,52 @@
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792332518000
+      "timestamp_cote": 1792332804000
     },
     {
       "numPmu": 9,
       "nom": "MONT VENTOUX",
-      "cote_live": 41.0,
+      "cote_live": 36.0,
       "cote_reference": 43.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792332518000
+      "timestamp_cote": 1792332804000
     },
     {
       "numPmu": 10,
       "nom": "MAJOR DE CHOC",
-      "cote_live": 18.0,
+      "cote_live": 17.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792332518000
+      "timestamp_cote": 1792332804000
     },
     {
       "numPmu": 11,
       "nom": "MASH POOK",
-      "cote_live": 32.0,
+      "cote_live": 33.0,
       "cote_reference": 29.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792332518000
+      "timestamp_cote": 1792332804000
     },
     {
       "numPmu": 12,
       "nom": "MILORD DU PERCHE",
-      "cote_live": 59.0,
+      "cote_live": 61.0,
       "cote_reference": 64.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792332518000
+      "timestamp_cote": 1792332804000
     },
     {
       "numPmu": 13,
       "nom": "MUSTANG D'ARLINE",
-      "cote_live": 139.0,
+      "cote_live": 108.0,
       "cote_reference": 129.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792332518000
+      "timestamp_cote": 1792332804000
     }
   ],
   "hippodrome": "LE BOUSCAT",
@@ -182,6 +182,25 @@
         "11": 32.0,
         "12": 59.0,
         "13": 139.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T16:13:32.135911+02:00",
+      "minutes_avant_depart": 16.469582566666666,
+      "cotes": {
+        "1": 48.0,
+        "2": 11.0,
+        "3": 17.0,
+        "4": 108.0,
+        "5": 9.0,
+        "6": 1.7,
+        "7": 12.0,
+        "8": 22.0,
+        "9": 36.0,
+        "10": 17.0,
+        "11": 33.0,
+        "12": 61.0,
+        "13": 108.0
       }
     }
   ]

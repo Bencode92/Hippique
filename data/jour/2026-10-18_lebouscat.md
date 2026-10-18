@@ -124,23 +124,23 @@
 
 ### 6. PRIX DE L'HIPPODROME DE LUXE (GR.A)
 
-*16h30 · attelé · 2550 m · 13 partants · cotes à T−21:07*
+*16h30 · attelé · 2550 m · 13 partants · cotes à T−16:28*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 6 | MANZONI | 1,6 | 1,4 | C. GAZENGEL |
-| 5 | MONA VILI | 8,9 | 8,1 | M.J. BARCELO BISQUERRA |
+| 6 | MANZONI | 1,7 | 1,4 | C. GAZENGEL |
+| 5 | MONA VILI | 9 | 8,1 | M.J. BARCELO BISQUERRA |
+| 2 | MEDINA DU CHATELET | 11 | 18 | L. GOETZ |
 | 7 | MILTON D'OURVILLE | 12 | 31 | TH. DUCOS |
-| 2 | MEDINA DU CHATELET | 13 | 18 | L. GOETZ |
 | 3 | MOHITO DE GUEZ | 17 | 20 | M. CRIADO |
-| 10 | MAJOR DE CHOC | 18 | 29 | Y. LACOMBE |
+| 10 | MAJOR DE CHOC | 17 | 29 | Y. LACOMBE |
 | 8 | MARENGO ATALANTE | 22 | 43 | AXEL LAIGRON |
-| 11 | MASH POOK | 32 | 27 | D. BROSSARD |
-| 9 | MONT VENTOUX | 41 | 39 | R. BOUVIER |
-| 1 | MON FAVORI | 46 | 43 | V. GONIN |
-| 12 | MILORD DU PERCHE | 59 | 87 | R.W. DENECHERRE |
-| 4 | MARIE D'ATTAQUE | 104 | 87 | N. PACHA |
-| 13 | MUSTANG D'ARLINE | 139 | 117 | MAXENCE LECOQ |
+| 11 | MASH POOK | 33 | 27 | D. BROSSARD |
+| 9 | MONT VENTOUX | 36 | 39 | R. BOUVIER |
+| 1 | MON FAVORI | 48 | 43 | V. GONIN |
+| 12 | MILORD DU PERCHE | 61 | 87 | R.W. DENECHERRE |
+| 4 | MARIE D'ATTAQUE | 108 | 87 | N. PACHA |
+| 13 | MUSTANG D'ARLINE | 108 | 117 | MAXENCE LECOQ |
 
 ### 7. PRIX DE L'HIPPODROME DE LUXE (GR.B)
 
