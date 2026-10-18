@@ -135,16 +135,16 @@
 
 ### 9. PRIX DU VAL DE SAONE
 
-*17h05 · attelé · 2850 m · 9 partants · cotes à T−20:48*
+*17h05 · attelé · 2850 m · 9 partants · cotes à T−16:08*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
 | 9 | JOLIVERT DU GERS | 1,4 | 2 | M. ABRIVARD |
 | 7 | ISTORIC MAUZUN | 5,8 | 4,6 | J.PH. DUCHER |
-| 8 | INHERIT | 6 | 3,9 | G. BEAUFILS |
-| 5 | IMPERATRICE VITELA | 19 | 16 | Q. CHAUVE-LAFFAY |
+| 8 | INHERIT | 6,2 | 3,9 | G. BEAUFILS |
+| 5 | IMPERATRICE VITELA | 20 | 16 | Q. CHAUVE-LAFFAY |
 | 6 | FLASH MONEY | 22 | 16 | A. TINTILLIER |
-| 3 | GEDEON DAIRPET | 81 | 44 | PH. DANTHU |
-| 2 | GALOPIN DE BIANCA | 131 | 76 | P. CALLIER |
-| 1 | GOLD SPEED | 150 | 89 | Y. LAVIGNE |
-| 4 | IMPERIAL KEY | 175 | 134 | J. CUOQ |
+| 3 | GEDEON DAIRPET | 83 | 44 | PH. DANTHU |
+| 2 | GALOPIN DE BIANCA | 136 | 76 | P. CALLIER |
+| 1 | GOLD SPEED | 155 | 89 | Y. LAVIGNE |
+| 4 | IMPERIAL KEY | 181 | 134 | J. CUOQ |

@@ -4,8 +4,8 @@
   "reunion": 8,
   "heure_depart": 1792335600000,
   "distance": 2550,
-  "scraped_at": "2026-10-18T16:42:52.420338+02:00",
-  "minutes_avant_depart": 17,
+  "scraped_at": "2026-10-18T16:47:32.431717+02:00",
+  "minutes_avant_depart": 12,
   "participants": [
     {
       "numPmu": 1,
@@ -14,115 +14,115 @@
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334560000
+      "timestamp_cote": 1792334846000
     },
     {
       "numPmu": 2,
       "nom": "MAYERLING LEGACY",
-      "cote_live": 2.7,
+      "cote_live": 2.8,
       "cote_reference": 2.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792334560000
+      "timestamp_cote": 1792334846000
     },
     {
       "numPmu": 3,
       "nom": "MOOGLI HEULINOIS",
-      "cote_live": 9.4,
+      "cote_live": 8.1,
       "cote_reference": 9.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334560000
+      "timestamp_cote": 1792334846000
     },
     {
       "numPmu": 4,
       "nom": "MELODY DU CEBE",
-      "cote_live": 160.0,
+      "cote_live": 130.0,
       "cote_reference": 141.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334560000
+      "timestamp_cote": 1792334846000
     },
     {
       "numPmu": 5,
       "nom": "MUSE DU LOISIR",
-      "cote_live": 96.0,
+      "cote_live": 104.0,
       "cote_reference": 85.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334560000
+      "timestamp_cote": 1792334846000
     },
     {
       "numPmu": 6,
       "nom": "MARCUS DECHAMBOU",
-      "cote_live": 9.2,
+      "cote_live": 9.8,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334560000
+      "timestamp_cote": 1792334846000
     },
     {
       "numPmu": 7,
       "nom": "MANGO KALOUMA",
-      "cote_live": 11.0,
+      "cote_live": 12.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334560000
+      "timestamp_cote": 1792334846000
     },
     {
       "numPmu": 8,
       "nom": "MON REVE",
-      "cote_live": 4.5,
+      "cote_live": 4.2,
       "cote_reference": 4.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334560000
+      "timestamp_cote": 1792334846000
     },
     {
       "numPmu": 9,
       "nom": "MILWAUKEE D'OYSE",
-      "cote_live": 160.0,
+      "cote_live": 104.0,
       "cote_reference": 212.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334560000
+      "timestamp_cote": 1792334846000
     },
     {
       "numPmu": 10,
       "nom": "MATIS DU VIGNAC",
-      "cote_live": 22.0,
+      "cote_live": 24.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334560000
+      "timestamp_cote": 1792334846000
     },
     {
       "numPmu": 11,
       "nom": "MEDOC DES GLENAN",
-      "cote_live": 12.0,
+      "cote_live": 13.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334560000
+      "timestamp_cote": 1792334846000
     },
     {
       "numPmu": 12,
       "nom": "MORIAC",
-      "cote_live": 32.0,
+      "cote_live": 34.0,
       "cote_reference": 28.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334560000
+      "timestamp_cote": 1792334846000
     },
     {
       "numPmu": 13,
       "nom": "MALDIVE DE TILLARD",
-      "cote_live": 68.0,
+      "cote_live": 65.0,
       "cote_reference": 60.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792334560000
+      "timestamp_cote": 1792334846000
     }
   ],
   "hippodrome": "LE BOUSCAT",
@@ -201,6 +201,25 @@
         "11": 12.0,
         "12": 32.0,
         "13": 68.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T16:47:32.431717+02:00",
+      "minutes_avant_depart": 12.469475816666666,
+      "cotes": {
+        "1": 15.0,
+        "2": 2.8,
+        "3": 8.1,
+        "4": 130.0,
+        "5": 104.0,
+        "6": 9.8,
+        "7": 12.0,
+        "8": 4.2,
+        "9": 104.0,
+        "10": 24.0,
+        "11": 13.0,
+        "12": 34.0,
+        "13": 65.0
       }
     }
   ]

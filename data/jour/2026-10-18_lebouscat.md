@@ -144,23 +144,23 @@
 
 ### 7. PRIX DE L'HIPPODROME DE LUXE (GR.B)
 
-*17h00 · attelé · 2550 m · 13 partants · cotes à T−17:08*
+*17h00 · attelé · 2550 m · 13 partants · cotes à T−12:28*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 2 | MAYERLING LEGACY | 2,7 | 2,6 | Mme LANA HENRY |
-| 8 | MON REVE | 4,5 | 3,8 | L. DELANOE |
-| 6 | MARCUS DECHAMBOU | 9,2 | 16 | TH. DUCOS |
-| 3 | MOOGLI HEULINOIS | 9,4 | 8,7 | E. AUDEBERT |
-| 7 | MANGO KALOUMA | 11 | 8,1 | F. CLOZIER |
-| 11 | MEDOC DES GLENAN | 12 | 18 | N. PICARD |
+| 2 | MAYERLING LEGACY | 2,8 | 2,6 | Mme LANA HENRY |
+| 8 | MON REVE | 4,2 | 3,8 | L. DELANOE |
+| 3 | MOOGLI HEULINOIS | 8,1 | 8,7 | E. AUDEBERT |
+| 6 | MARCUS DECHAMBOU | 9,8 | 16 | TH. DUCOS |
+| 7 | MANGO KALOUMA | 12 | 8,1 | F. CLOZIER |
+| 11 | MEDOC DES GLENAN | 13 | 18 | N. PICARD |
 | 1 | MIMI D'AMBRI | 15 | 21 | J. CHAVATTE |
-| 10 | MATIS DU VIGNAC | 22 | 40 | A. HONORE |
-| 12 | MORIAC | 32 | 25 | M. TIJOU |
-| 13 | MALDIVE DE TILLARD | 68 | 56 | N. BRUN |
-| 5 | MUSE DU LOISIR | 96 | 70 | D.G. CHAVATTE |
-| 4 | MELODY DU CEBE | 160 | 93 | PIERRICK LE MOEL |
-| 9 | MILWAUKEE D'OYSE | 160 | – | N. PACHA |
+| 10 | MATIS DU VIGNAC | 24 | 40 | A. HONORE |
+| 12 | MORIAC | 34 | 25 | M. TIJOU |
+| 13 | MALDIVE DE TILLARD | 65 | 56 | N. BRUN |
+| 5 | MUSE DU LOISIR | 104 | 70 | D.G. CHAVATTE |
+| 9 | MILWAUKEE D'OYSE | 104 | – | N. PACHA |
+| 4 | MELODY DU CEBE | 130 | 93 | PIERRICK LE MOEL |
 
 ### 8. PRIX DE BEAULAC
 
