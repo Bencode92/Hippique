@@ -1,6 +1,6 @@
 # PARISLONGCHAMP — 18/10/2026
 
-8 courses. 6 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 7 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -142,18 +142,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DES ERABLES
 
-*18h10 · plat · 3100 m · 11 partants · cotes de l'extraction*
+*18h10 · plat · 3100 m · 11 partants · cotes à T−29:48*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 4 | GRAND ART | 3,7 | 4,01 | -7,8 % | C.SOUMILLON | 7/64/14/23 |
-| 3 | EMBIEZ | 5,3 | 5,68 | -6,7 % | C.DEMURO | 1/111/192/50 |
-| 1 | ALLEZ FRERES | 5,7 | 6,36 | -10,4 % | A.POUCHIN | 6/14/92/1025 |
-| 10 | BARBADIN | 7 | 7,90 | -11,4 % | A.HAMELIN | 22/74/1/– |
-| 11 | BECQUATHUNDER | 10 | 13,40 | -25,4 % | M.FAVRIAUX | 51/86/1684/1227 |
-| 7 | ASTREDARGENT | 13 | 15,88 | -18,1 % | M.VELON | 28/27/750/785 |
-| 5 | NUMERUS BORGET | 14 | 17,00 | -17,6 % | A.NICCO | 167/213/280/1091 |
-| 8 | ANDOUINS | 21 | 26,08 | -19,5 % | E.HARDOUIN | 27/86/41/954 |
-| 2 | GOOD TO SEE YOU | 27 | 40,83 | -33,9 % | M.GRANDIN | 3/120/87/368 |
-| 9 | ALMACADO GREE | 38 | 55,80 | -31,9 % | E.MUNTWYLER | 181/89/329/– |
-| 6 | KLASSIC PRECIEUX | 60 | 76,30 | -21,4 % | T.PICCONE 2e | 9/200/244/206 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 4 | GRAND ART | 3 | 3,7 | 3,26 | -7,9 % | C.SOUMILLON | 7/64/14/23 |
+| 3 | EMBIEZ | 5 | 5,3 | 5,34 | -6,4 % | C.DEMURO | 1/111/192/50 |
+| 1 | ALLEZ FRERES | 7,9 | 5,7 | 9,29 | -15,0 % | A.POUCHIN | 6/14/92/1025 |
+| 10 | BARBADIN | 10 | 7 | 12,01 | -16,8 % | A.HAMELIN | 22/74/1/– |
+| 8 | ANDOUINS | 13 | 21 | 13,73 | -5,3 % | E.HARDOUIN | 27/86/41/954 |
+| 11 | BECQUATHUNDER | 13 | 10 | 18,34 | -29,1 % | M.FAVRIAUX | 51/86/1684/1227 |
+| 7 | ASTREDARGENT | 14 | 13 | 17,38 | -19,4 % | M.VELON | 28/27/750/785 |
+| 2 | GOOD TO SEE YOU | 15 | 27 | 21,71 | -30,9 % | M.GRANDIN | 3/120/87/368 |
+| 5 | NUMERUS BORGET | 25 | 14 | 36,60 | -31,7 % | A.NICCO | 167/213/280/1091 |
+| 6 | KLASSIC PRECIEUX | 29 | 60 | 34,47 | -15,9 % | T.PICCONE 2e | 9/200/244/206 |
+| 9 | ALMACADO GREE | 33 | 38 | 47,83 | -31,0 % | E.MUNTWYLER | 181/89/329/– |
