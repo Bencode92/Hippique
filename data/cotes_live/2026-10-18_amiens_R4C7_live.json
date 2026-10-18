@@ -4,44 +4,44 @@
   "reunion": 4,
   "heure_depart": 1792344840000,
   "distance": 2400,
-  "scraped_at": "2026-10-18T19:21:51.422988+02:00",
-  "minutes_avant_depart": 12,
+  "scraped_at": "2026-10-18T19:25:51.596870+02:00",
+  "minutes_avant_depart": 8,
   "participants": [
     {
       "numPmu": 1,
       "nom": "NALIUS",
-      "cote_live": 2.6,
+      "cote_live": 2.7,
       "cote_reference": 2.2,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792344100000
+      "timestamp_cote": 1792344342000
     },
     {
       "numPmu": 2,
       "nom": "NOBLE BOY",
-      "cote_live": 12.0,
+      "cote_live": 11.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792344100000
+      "timestamp_cote": 1792344342000
     },
     {
       "numPmu": 3,
       "nom": "NUAGE DU LUDE",
-      "cote_live": 7.5,
+      "cote_live": 7.3,
       "cote_reference": 9.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792344100000
+      "timestamp_cote": 1792344342000
     },
     {
       "numPmu": 4,
       "nom": "NERVAL PAN",
-      "cote_live": 30.0,
+      "cote_live": 32.0,
       "cote_reference": 34.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792344100000
+      "timestamp_cote": 1792344342000
     },
     {
       "numPmu": 5,
@@ -50,70 +50,70 @@
       "cote_reference": 9.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792344100000
+      "timestamp_cote": 1792344342000
     },
     {
       "numPmu": 6,
       "nom": "NARUTO DE PALMA",
-      "cote_live": 33.0,
+      "cote_live": 36.0,
       "cote_reference": 35.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792344100000
+      "timestamp_cote": 1792344342000
     },
     {
       "numPmu": 7,
       "nom": "NEVADA DU VIVIER",
-      "cote_live": 29.0,
+      "cote_live": 30.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792344100000
+      "timestamp_cote": 1792344342000
     },
     {
       "numPmu": 8,
       "nom": "NIRO DE FAVEROL",
-      "cote_live": 29.0,
+      "cote_live": 33.0,
       "cote_reference": 34.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792344100000
+      "timestamp_cote": 1792344342000
     },
     {
       "numPmu": 9,
       "nom": "NARUTO DU DOME",
-      "cote_live": 21.0,
+      "cote_live": 22.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792344100000
+      "timestamp_cote": 1792344342000
     },
     {
       "numPmu": 10,
       "nom": "NOBEL DU PERCHE",
-      "cote_live": 8.6,
+      "cote_live": 8.8,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792344100000
+      "timestamp_cote": 1792344342000
     },
     {
       "numPmu": 11,
       "nom": "NICO DU COJEUL",
-      "cote_live": 68.0,
+      "cote_live": 72.0,
       "cote_reference": 75.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792344100000
+      "timestamp_cote": 1792344342000
     },
     {
       "numPmu": 12,
       "nom": "NEO DOM",
-      "cote_live": 6.8,
+      "cote_live": 6.5,
       "cote_reference": 8.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792344100000
+      "timestamp_cote": 1792344342000
     }
   ],
   "hippodrome": "AMIENS",
@@ -206,6 +206,24 @@
         "10": 8.6,
         "11": 68.0,
         "12": 6.8
+      }
+    },
+    {
+      "scraped_at": "2026-10-18T19:25:51.596870+02:00",
+      "minutes_avant_depart": 8.148691316666666,
+      "cotes": {
+        "1": 2.7,
+        "2": 11.0,
+        "3": 7.3,
+        "4": 32.0,
+        "5": 10.0,
+        "6": 36.0,
+        "7": 30.0,
+        "8": 33.0,
+        "9": 22.0,
+        "10": 8.8,
+        "11": 72.0,
+        "12": 6.5
       }
     }
   ]
