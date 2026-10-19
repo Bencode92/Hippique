@@ -4,89 +4,89 @@
   "reunion": 3,
   "heure_depart": 1792412040000,
   "distance": 3400,
-  "scraped_at": "2026-10-19T14:09:07.735078+02:00",
-  "minutes_avant_depart": 5,
+  "scraped_at": "2026-10-19T14:11:48.503819+02:00",
+  "minutes_avant_depart": 2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "PRINCESS DINO",
-      "cote_live": 8.2,
+      "cote_live": 10.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792411732000
+      "timestamp_cote": 1792411902000
     },
     {
       "numPmu": 2,
       "nom": "FORTALEZA",
-      "cote_live": 29.0,
+      "cote_live": 42.0,
       "cote_reference": 65.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792411732000
+      "timestamp_cote": 1792411902000
     },
     {
       "numPmu": 3,
       "nom": "SCARLANA DE GREZ",
-      "cote_live": 7.9,
+      "cote_live": 7.1,
       "cote_reference": 6.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792411732000
+      "timestamp_cote": 1792411902000
     },
     {
       "numPmu": 4,
       "nom": "LA SAGRA",
-      "cote_live": 3.7,
+      "cote_live": 3.3,
       "cote_reference": 2.9,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792411732000
+      "timestamp_cote": 1792411902000
     },
     {
       "numPmu": 5,
       "nom": "NEATIKAT",
-      "cote_live": 5.2,
+      "cote_live": 4.7,
       "cote_reference": 6.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792411732000
+      "timestamp_cote": 1792411902000
     },
     {
       "numPmu": 6,
       "nom": "KELLY CHIRON",
-      "cote_live": 8.4,
+      "cote_live": 9.9,
       "cote_reference": 7.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792411732000
+      "timestamp_cote": 1792411902000
     },
     {
       "numPmu": 8,
       "nom": "TENDERISTHENIGHT",
-      "cote_live": 23.0,
+      "cote_live": 25.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792411732000
+      "timestamp_cote": 1792411902000
     },
     {
       "numPmu": 9,
       "nom": "ROSA BLEUE",
-      "cote_live": 5.2,
+      "cote_live": 5.1,
       "cote_reference": 6.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792411732000
+      "timestamp_cote": 1792411902000
     },
     {
       "numPmu": 10,
       "nom": "BUGAWAY",
-      "cote_live": 25.0,
+      "cote_live": 34.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792411732000
+      "timestamp_cote": 1792411902000
     }
   ],
   "hippodrome": "COMPIEGNE",
@@ -149,6 +149,66 @@
         "8": 23.0,
         "9": 5.2,
         "10": 25.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-19T14:09:47.999505+02:00",
+      "minutes_avant_depart": 4.2053644666666665,
+      "cotes": {
+        "1": 8.8,
+        "2": 32.0,
+        "3": 7.3,
+        "4": 3.7,
+        "5": 4.9,
+        "6": 8.7,
+        "8": 21.0,
+        "9": 5.3,
+        "10": 28.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-19T14:10:28.406189+02:00",
+      "minutes_avant_depart": 3.5386955999999996,
+      "cotes": {
+        "1": 9.4,
+        "2": 35.0,
+        "3": 7.3,
+        "4": 3.2,
+        "5": 5.0,
+        "6": 9.4,
+        "8": 22.0,
+        "9": 5.5,
+        "10": 29.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-19T14:11:08.245596+02:00",
+      "minutes_avant_depart": 2.872026566666667,
+      "cotes": {
+        "1": 9.6,
+        "2": 38.0,
+        "3": 7.3,
+        "4": 3.2,
+        "5": 5.1,
+        "6": 9.3,
+        "8": 23.0,
+        "9": 5.2,
+        "10": 32.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-19T14:11:48.503819+02:00",
+      "minutes_avant_depart": 2.19470915,
+      "cotes": {
+        "1": 10.0,
+        "2": 42.0,
+        "3": 7.1,
+        "4": 3.3,
+        "5": 4.7,
+        "6": 9.9,
+        "8": 25.0,
+        "9": 5.1,
+        "10": 34.0
       }
     }
   ]
