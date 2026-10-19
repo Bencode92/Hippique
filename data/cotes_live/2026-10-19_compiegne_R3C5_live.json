@@ -2,91 +2,91 @@
   "course": "PRIX DE COYE",
   "numero": 5,
   "reunion": 3,
-  "heure_depart": 1792411920000,
+  "heure_depart": 1792412040000,
   "distance": 3400,
-  "scraped_at": "2026-10-19T14:01:48.656537+02:00",
-  "minutes_avant_depart": 10,
+  "scraped_at": "2026-10-19T14:06:28.129007+02:00",
+  "minutes_avant_depart": 8,
   "participants": [
     {
       "numPmu": 1,
       "nom": "PRINCESS DINO",
-      "cote_live": 8.3,
+      "cote_live": 9.5,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792411292000
+      "timestamp_cote": 1792411578000
     },
     {
       "numPmu": 2,
       "nom": "FORTALEZA",
-      "cote_live": 52.0,
+      "cote_live": 22.0,
       "cote_reference": 65.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792411292000
+      "timestamp_cote": 1792411578000
     },
     {
       "numPmu": 3,
       "nom": "SCARLANA DE GREZ",
-      "cote_live": 7.1,
+      "cote_live": 7.8,
       "cote_reference": 6.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792411292000
+      "timestamp_cote": 1792411578000
     },
     {
       "numPmu": 4,
       "nom": "LA SAGRA",
-      "cote_live": 3.0,
+      "cote_live": 4.4,
       "cote_reference": 2.9,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792411292000
+      "timestamp_cote": 1792411578000
     },
     {
       "numPmu": 5,
       "nom": "NEATIKAT",
-      "cote_live": 5.4,
+      "cote_live": 4.8,
       "cote_reference": 6.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792411292000
+      "timestamp_cote": 1792411578000
     },
     {
       "numPmu": 6,
       "nom": "KELLY CHIRON",
-      "cote_live": 7.8,
+      "cote_live": 8.1,
       "cote_reference": 7.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792411292000
+      "timestamp_cote": 1792411578000
     },
     {
       "numPmu": 8,
       "nom": "TENDERISTHENIGHT",
-      "cote_live": 18.0,
+      "cote_live": 19.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792411292000
+      "timestamp_cote": 1792411578000
     },
     {
       "numPmu": 9,
       "nom": "ROSA BLEUE",
-      "cote_live": 8.1,
+      "cote_live": 4.9,
       "cote_reference": 6.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792411292000
+      "timestamp_cote": 1792411578000
     },
     {
       "numPmu": 10,
       "nom": "BUGAWAY",
-      "cote_live": 21.0,
+      "cote_live": 20.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792411292000
+      "timestamp_cote": 1792411578000
     }
   ],
   "hippodrome": "COMPIEGNE",
@@ -104,6 +104,21 @@
         "8": 18.0,
         "9": 8.1,
         "10": 21.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-19T14:06:28.129007+02:00",
+      "minutes_avant_depart": 7.538710699999999,
+      "cotes": {
+        "1": 9.5,
+        "2": 22.0,
+        "3": 7.8,
+        "4": 4.4,
+        "5": 4.8,
+        "6": 8.1,
+        "8": 19.0,
+        "9": 4.9,
+        "10": 20.0
       }
     }
   ]
