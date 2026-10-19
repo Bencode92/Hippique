@@ -1,0 +1,110 @@
+{
+  "course": "PRIX DE COYE",
+  "numero": 5,
+  "reunion": 3,
+  "heure_depart": 1792411920000,
+  "distance": 3400,
+  "scraped_at": "2026-10-19T14:01:48.656537+02:00",
+  "minutes_avant_depart": 10,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "PRINCESS DINO",
+      "cote_live": 8.3,
+      "cote_reference": 13.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792411292000
+    },
+    {
+      "numPmu": 2,
+      "nom": "FORTALEZA",
+      "cote_live": 52.0,
+      "cote_reference": 65.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792411292000
+    },
+    {
+      "numPmu": 3,
+      "nom": "SCARLANA DE GREZ",
+      "cote_live": 7.1,
+      "cote_reference": 6.6,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792411292000
+    },
+    {
+      "numPmu": 4,
+      "nom": "LA SAGRA",
+      "cote_live": 3.0,
+      "cote_reference": 2.9,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1792411292000
+    },
+    {
+      "numPmu": 5,
+      "nom": "NEATIKAT",
+      "cote_live": 5.4,
+      "cote_reference": 6.2,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792411292000
+    },
+    {
+      "numPmu": 6,
+      "nom": "KELLY CHIRON",
+      "cote_live": 7.8,
+      "cote_reference": 7.1,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792411292000
+    },
+    {
+      "numPmu": 8,
+      "nom": "TENDERISTHENIGHT",
+      "cote_live": 18.0,
+      "cote_reference": 19.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792411292000
+    },
+    {
+      "numPmu": 9,
+      "nom": "ROSA BLEUE",
+      "cote_live": 8.1,
+      "cote_reference": 6.8,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792411292000
+    },
+    {
+      "numPmu": 10,
+      "nom": "BUGAWAY",
+      "cote_live": 21.0,
+      "cote_reference": 17.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792411292000
+    }
+  ],
+  "hippodrome": "COMPIEGNE",
+  "releves": [
+    {
+      "scraped_at": "2026-10-19T14:01:48.656537+02:00",
+      "minutes_avant_depart": 10.196348166666667,
+      "cotes": {
+        "1": 8.3,
+        "2": 52.0,
+        "3": 7.1,
+        "4": 3.0,
+        "5": 5.4,
+        "6": 7.8,
+        "8": 18.0,
+        "9": 8.1,
+        "10": 21.0
+      }
+    }
+  ]
+}

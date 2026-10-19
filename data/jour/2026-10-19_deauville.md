@@ -2,7 +2,9 @@
 
 9 courses.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+**Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
+La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
+Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classements ci-dessus.
 
 ---
 
@@ -31,17 +33,17 @@
 
 ### 2. PRIX EQUIDAYS (PRIX HABITAT)
 
-*14h30 · plat · 1900 m · 7 partants · cotes de l'extraction*
+*14h30 · plat · 1900 m · 7 partants · cotes à T−28:12*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | ALLEZ PAPA | – | C.DEMURO | 1/16/826/1935 |
-| 2 | ATOSSA | – | A.POUCHIN | 6/8/1/2 |
-| 3 | JAMINUS | – | H.LEBOUC | 19/81/3597/1590 |
-| 4 | CAPTAIN AMERICWAN | – | A.MADAMET | 10/21/4211/2489 |
-| 5 | GOLEM | – | C.LECOEUVRE | 13/26/1490/110 |
-| 6 | JIEPIE ET JO | – | D.SANTIAGO | 15/81/213/38 |
-| 7 | ALIAS | – | M.GUYON 4e | 4/10/1/2 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 7 | ALIAS | 2,1 | 2,35 | -10,7 % | M.GUYON 4e | 4/10/1/2 |
+| 1 | ALLEZ PAPA | 3,4 | 3,94 | -13,7 % | C.DEMURO | 1/16/826/1935 |
+| 5 | GOLEM | 6,9 | 8,15 | -15,4 % | C.LECOEUVRE | 13/26/1490/110 |
+| 2 | ATOSSA | 7,8 | 9,40 | -17,0 % | A.POUCHIN | 6/8/1/2 |
+| 6 | JIEPIE ET JO | 20 | 30,47 | -34,4 % | D.SANTIAGO | 15/81/213/38 |
+| 4 | CAPTAIN AMERICWAN | 31 | 46,86 | -33,9 % | A.MADAMET | 10/21/4211/2489 |
+| 3 | JAMINUS | 37 | 57,15 | -35,3 % | H.LEBOUC | 19/81/3597/1590 |
 
 ### 3. PRIX DU PRE D'AUGE
 
