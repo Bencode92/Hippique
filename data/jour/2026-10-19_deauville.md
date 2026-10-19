@@ -33,17 +33,17 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 2. PRIX EQUIDAYS (PRIX HABITAT)
 
-*14h30 · plat · 1900 m · 7 partants · cotes à T−16:32*
+*14h30 · plat · 1900 m · 7 partants · cotes à T−12:32*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 7 | ALIAS | 1,9 | 2,19 | -13,4 % | M.GUYON 4e | 4/10/1/2 |
-| 1 | ALLEZ PAPA | 3,7 | 4,37 | -15,4 % | C.DEMURO | 1/16/826/1935 |
-| 2 | ATOSSA | 5,7 | 6,65 | -14,3 % | A.POUCHIN | 6/8/1/2 |
-| 5 | GOLEM | 10 | 12,80 | -21,9 % | C.LECOEUVRE | 13/26/1490/110 |
-| 6 | JIEPIE ET JO | 28 | 45,63 | -38,6 % | D.SANTIAGO | 15/81/213/38 |
-| 3 | JAMINUS | 31 | 47,63 | -34,9 % | H.LEBOUC | 19/81/3597/1590 |
-| 4 | CAPTAIN AMERICWAN | 34 | 52,84 | -35,7 % | A.MADAMET | 10/21/4211/2489 |
+| 7 | ALIAS | 2 | 2,28 | -12,1 % | M.GUYON 4e | 4/10/1/2 |
+| 1 | ALLEZ PAPA | 3,7 | 4,35 | -14,9 % | C.DEMURO | 1/16/826/1935 |
+| 2 | ATOSSA | 5,5 | 6,35 | -13,4 % | A.POUCHIN | 6/8/1/2 |
+| 5 | GOLEM | 10 | 12,72 | -21,4 % | C.LECOEUVRE | 13/26/1490/110 |
+| 6 | JIEPIE ET JO | 24 | 38,00 | -36,9 % | D.SANTIAGO | 15/81/213/38 |
+| 3 | JAMINUS | 28 | 42,18 | -33,6 % | H.LEBOUC | 19/81/3597/1590 |
+| 4 | CAPTAIN AMERICWAN | 30 | 45,61 | -34,2 % | A.MADAMET | 10/21/4211/2489 |
 
 ### 3. PRIX DU PRE D'AUGE
 
