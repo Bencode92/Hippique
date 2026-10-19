@@ -147,26 +147,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DU MARAIS VERNIER
 
-*18h10 · plat · 1900 m · 16 partants · cotes à T−13:54*
+*18h10 · plat · 1900 m · 16 partants · cotes à T−9:15*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 5 | SOEUR | 5,4 | 4,9 | 5,87 | -7,9 % | T.BACHELOT | 16/17/1214/1412 |
-| 8 | DARI RIVER | 5,4 | 6,2 | 5,76 | -6,3 % | H.JOURNIAC | 43/8/1490/2425 |
-| 2 | ALMAROMY | 9,5 | 7,3 | 11,87 | -19,9 % | E.HARDOUIN | 27/119/297/1081 |
-| 4 | ANOTHER LIGHT | 9,9 | 8,9 | 11,42 | -13,3 % | S.PASQUIER | 23/1/3241/– |
-| 7 | SAMWEST | 10 | 12 | 12,60 | -20,7 % | M.BARZALONA 3e | 2/120/70/2834 |
-| 3 | LAVENDIN | 14 | 15 | 14,35 | -2,4 % | M.GRANDIN | 3/26/40/113 |
-| 16 | EFFIRA | 16 | 16 | 17,51 | -8,6 % | M.VELON | 28/102/26/2029 |
-| 13 | AURA | 17 | 21 | 19,60 | -13,3 % | C.DEMURO | 1/16/1520/4 |
-| 15 | DRIMYS | 20 | 19 | 22,65 | -11,7 % | A.MADAMET | 10/398/438/875 |
-| 10 | WHEELER | 22 | 21 | 32,52 | -32,3 % | G.TROLLEY DE PREVAUX | 46/68/1/2246 |
-| 11 | SPEEDSTER | 22 | 24 | 24,13 | -8,8 % | C.LECOEUVRE | 13/102/33/2433 |
-| 6 | FAMOSO | 29 | 58 | 37,18 | -22,0 % | I.MENDIZABAL | 32/190/239/981 |
-| 9 | CHEVALDOR | 30 | 34 | 41,20 | -27,2 % | A.POUCHIN | 6/59/834/1191 |
-| 1 | GO LOVE | 32 | 31 | 44,30 | -27,8 % | A.CRASTUS | 17/18/182/372 |
-| 12 | KER WELEN | 39 | 29 | 60,64 | -35,7 % | L.ROUSSEL | 26/138/2034/2062 |
-| 14 | TREASURE KEEPER | 44 | 45 | 63,07 | -30,2 % | T.PICCONE | 9/321/144/509 |
+| 5 | SOEUR | 5,5 | 4,9 | 5,98 | -8,0 % | T.BACHELOT | 16/17/1214/1412 |
+| 8 | DARI RIVER | 6 | 6,2 | 6,56 | -8,5 % | H.JOURNIAC | 43/8/1490/2425 |
+| 7 | SAMWEST | 8,8 | 12 | 10,83 | -18,7 % | M.BARZALONA 3e | 2/120/70/2834 |
+| 4 | ANOTHER LIGHT | 9,7 | 8,9 | 11,13 | -12,8 % | S.PASQUIER | 23/1/3241/– |
+| 2 | ALMAROMY | 10 | 7,3 | 12,58 | -20,5 % | E.HARDOUIN | 27/119/297/1081 |
+| 3 | LAVENDIN | 14 | 15 | 14,32 | -2,3 % | M.GRANDIN | 3/26/40/113 |
+| 13 | AURA | 17 | 21 | 19,57 | -13,1 % | C.DEMURO | 1/16/1520/4 |
+| 16 | EFFIRA | 17 | 16 | 18,75 | -9,4 % | M.VELON | 28/102/26/2029 |
+| 11 | SPEEDSTER | 19 | 24 | 20,36 | -6,7 % | C.LECOEUVRE | 13/102/33/2433 |
+| 10 | WHEELER | 21 | 21 | 30,77 | -31,7 % | G.TROLLEY DE PREVAUX | 46/68/1/2246 |
+| 15 | DRIMYS | 21 | 19 | 23,92 | -12,2 % | A.MADAMET | 10/398/438/875 |
+| 1 | GO LOVE | 27 | 31 | 36,50 | -26,0 % | A.CRASTUS | 17/18/182/372 |
+| 6 | FAMOSO | 27 | 58 | 34,24 | -21,1 % | I.MENDIZABAL | 32/190/239/981 |
+| 9 | CHEVALDOR | 30 | 34 | 41,13 | -27,1 % | A.POUCHIN | 6/59/834/1191 |
+| 14 | TREASURE KEEPER | 42 | 45 | 59,84 | -29,8 % | T.PICCONE | 9/321/144/509 |
+| 12 | KER WELEN | 44 | 29 | 65,96 | -33,3 % | L.ROUSSEL | 26/138/2034/2062 |
 
 ### 9. PRIX DE LA FORET DE CERISY
 
