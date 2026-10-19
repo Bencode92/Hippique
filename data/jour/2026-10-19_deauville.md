@@ -170,23 +170,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 9. PRIX DE LA FORET DE CERISY
 
-*18h45 · plat · 1900 m · 16 partants · cotes à T−12:54*
+*18h45 · plat · 1900 m · 16 partants · cotes à T−8:54*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 10 | DARIYANGEL | 7,5 | 7,3 | 7,61 | -1,5 % | L.PLOMMEE | 31/114/576/895 |
-| 5 | POLMINHAC | 8,6 | 9,3 | 9,01 | -4,6 % | J.MOUTARD | 61/94/1323/1495 |
-| 2 | SIETE MISTERIOS | 8,7 | 9,5 | 9,94 | -12,5 % | L.BAILS | 77/146/31/1692 |
-| 6 | ANGEL CHARLY | 10 | 8,9 | 11,24 | -11,0 % | D.SANTIAGO | 15/71/3910/1456 |
-| 8 | LUNALA | 11 | 20 | 11,51 | -4,4 % | M.GRANDIN | 3/322/45/513 |
-| 16 | POKROV | 11 | 11 | 14,29 | -23,0 % | H.JOURNIAC | 43/136/16/2234 |
-| 15 | SICILIA | 12 | 8,5 | 14,48 | -17,1 % | A.LEMAITRE | 11/69/3/1395 |
-| 1 | ETERNAL BLESSING | 14 | 13 | 18,14 | -22,8 % | E.VERHESTRAETEN | 53/12/1260/897 |
-| 3 | DRIP | 14 | 9,1 | 18,98 | -26,2 % | E.CORALLO | 57/505/1/1499 |
-| 11 | ANTINEA | 15 | 23 | 20,58 | -27,1 % | A.MOLINS | 34/108/173/1560 |
-| 12 | INMATE | 15 | 22 | 20,17 | -25,6 % | M.FAVRIAUX | 51/157/844/147 |
-| 14 | JOUKOVKA | 22 | 32 | 26,72 | -17,7 % | E.HARDOUIN | 27/214/16/342 |
-| 9 | GOLDEN RIVER | 26 | 35 | 32,42 | -19,8 % | O.ANDIGNE | 81/114/676/1992 |
-| 13 | ESKANDANI | 26 | 42 | 33,98 | -23,5 % | C.GROSBOIS | 25/81/1227/120 |
-| 4 | COPAN | 35 | 17 | 53,32 | -34,4 % | E.GAY LE BRETON | –/168/11/1699 |
-| 7 | ACCORD PARFAIT | 71 | 80 | 92,80 | -23,5 % | Y.BARILLE | 82/431/242/986 |
+| 10 | DARIYANGEL | 6,8 | 7,3 | 6,70 | **+1,5 %** | L.PLOMMEE | 31/114/576/895 |
+| 5 | POLMINHAC | 8,5 | 9,3 | 8,74 | -2,8 % | J.MOUTARD | 61/94/1323/1495 |
+| 2 | SIETE MISTERIOS | 9,1 | 9,5 | 10,30 | -11,7 % | L.BAILS | 77/146/31/1692 |
+| 6 | ANGEL CHARLY | 10 | 8,9 | 11,05 | -9,5 % | D.SANTIAGO | 15/71/3910/1456 |
+| 16 | POKROV | 11 | 11 | 14,05 | -21,7 % | H.JOURNIAC | 43/136/16/2234 |
+| 8 | LUNALA | 12 | 20 | 13,67 | -12,2 % | M.GRANDIN | 3/322/45/513 |
+| 15 | SICILIA | 12 | 8,5 | 14,23 | -15,7 % | A.LEMAITRE | 11/69/3/1395 |
+| 1 | ETERNAL BLESSING | 15 | 13 | 19,33 | -22,4 % | E.VERHESTRAETEN | 53/12/1260/897 |
+| 3 | DRIP | 15 | 9,1 | 19,33 | -22,4 % | E.CORALLO | 57/505/1/1499 |
+| 11 | ANTINEA | 15 | 23 | 20,24 | -25,9 % | A.MOLINS | 34/108/173/1560 |
+| 12 | INMATE | 16 | 22 | 21,39 | -25,2 % | M.FAVRIAUX | 51/157/844/147 |
+| 14 | JOUKOVKA | 23 | 32 | 30,31 | -24,1 % | E.HARDOUIN | 27/214/16/342 |
+| 9 | GOLDEN RIVER | 27 | 35 | 33,29 | -18,9 % | O.ANDIGNE | 81/114/676/1992 |
+| 13 | ESKANDANI | 27 | 42 | 34,88 | -22,6 % | C.GROSBOIS | 25/81/1227/120 |
+| 4 | COPAN | 36 | 17 | 59,44 | -39,4 % | E.GAY LE BRETON | –/168/11/1699 |
+| 7 | ACCORD PARFAIT | 71 | 80 | 91,40 | -22,3 % | Y.BARILLE | 82/431/242/986 |
