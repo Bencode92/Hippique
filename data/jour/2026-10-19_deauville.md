@@ -1,6 +1,6 @@
 # DEAUVILLE — 19/10/2026
 
-9 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -170,23 +170,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 9. PRIX DE LA FORET DE CERISY
 
-*18h45 · plat · 1900 m · 16 partants · cotes de l'extraction*
+*18h45 · plat · 1900 m · 16 partants · cotes à T−29:35*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 10 | DARIYANGEL | 7,3 | 7,24 | **+0,8 %** | L.PLOMMEE | 31/114/576/895 |
-| 15 | SICILIA | 8,5 | 8,72 | -2,5 % | A.LEMAITRE | 11/69/3/1395 |
-| 6 | ANGEL CHARLY | 8,9 | 9,62 | -7,5 % | D.SANTIAGO | 15/71/3910/1456 |
-| 3 | DRIP | 9,1 | 11,21 | -18,8 % | E.CORALLO | 57/505/1/1499 |
-| 5 | POLMINHAC | 9,3 | 10,54 | -11,7 % | J.MOUTARD | 61/94/1323/1495 |
-| 2 | SIETE MISTERIOS | 9,5 | 10,80 | -12,1 % | L.BAILS | 77/146/31/1692 |
-| 16 | POKROV | 11 | 14,01 | -21,5 % | H.JOURNIAC | 43/136/16/2234 |
-| 1 | ETERNAL BLESSING | 13 | 16,30 | -20,3 % | E.VERHESTRAETEN | 53/12/1260/897 |
-| 4 | COPAN | 17 | 22,89 | -25,7 % | E.GAY LE BRETON | –/168/11/1699 |
-| 8 | LUNALA | 20 | 23,56 | -15,1 % | M.GRANDIN | 3/322/45/513 |
-| 12 | INMATE | 22 | 30,88 | -28,7 % | M.FAVRIAUX | 51/157/844/147 |
-| 11 | ANTINEA | 23 | 31,66 | -27,4 % | A.MOLINS | 34/108/173/1560 |
-| 14 | JOUKOVKA | 32 | 43,99 | -27,3 % | E.HARDOUIN | 27/214/16/342 |
-| 9 | GOLDEN RIVER | 35 | 44,45 | -21,3 % | O.ANDIGNE | 81/114/676/1992 |
-| 13 | ESKANDANI | 42 | 54,38 | -22,8 % | C.GROSBOIS | 25/81/1227/120 |
-| 7 | ACCORD PARFAIT | 80 | 103,26 | -22,5 % | Y.BARILLE | 82/431/242/986 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 2 | SIETE MISTERIOS | 5,5 | 9,5 | 5,69 | -3,3 % | L.BAILS | 77/146/31/1692 |
+| 10 | DARIYANGEL | 8,7 | 7,3 | 11,34 | -23,3 % | L.PLOMMEE | 31/114/576/895 |
+| 3 | DRIP | 8,9 | 9,1 | 10,89 | -18,3 % | E.CORALLO | 57/505/1/1499 |
+| 5 | POLMINHAC | 9 | 9,3 | 10,12 | -11,0 % | J.MOUTARD | 61/94/1323/1495 |
+| 6 | ANGEL CHARLY | 9,4 | 8,9 | 10,23 | -8,1 % | D.SANTIAGO | 15/71/3910/1456 |
+| 15 | SICILIA | 10 | 8,5 | 11,44 | -12,6 % | A.LEMAITRE | 11/69/3/1395 |
+| 16 | POKROV | 14 | 11 | 17,74 | -21,1 % | H.JOURNIAC | 43/136/16/2234 |
+| 8 | LUNALA | 17 | 20 | 20,40 | -16,7 % | M.GRANDIN | 3/322/45/513 |
+| 1 | ETERNAL BLESSING | 18 | 13 | 23,79 | -24,3 % | E.VERHESTRAETEN | 53/12/1260/897 |
+| 11 | ANTINEA | 20 | 23 | 26,88 | -25,6 % | A.MOLINS | 34/108/173/1560 |
+| 14 | JOUKOVKA | 23 | 32 | 30,16 | -23,7 % | E.HARDOUIN | 27/214/16/342 |
+| 12 | INMATE | 25 | 22 | 39,13 | -36,1 % | M.FAVRIAUX | 51/157/844/147 |
+| 4 | COPAN | 26 | 17 | 37,31 | -30,3 % | E.GAY LE BRETON | –/168/11/1699 |
+| 9 | GOLDEN RIVER | 34 | 35 | 42,93 | -20,8 % | O.ANDIGNE | 81/114/676/1992 |
+| 13 | ESKANDANI | 54 | 42 | 71,31 | -24,3 % | C.GROSBOIS | 25/81/1227/120 |
+| 7 | ACCORD PARFAIT | 60 | 80 | 69,32 | -13,4 % | Y.BARILLE | 82/431/242/986 |
