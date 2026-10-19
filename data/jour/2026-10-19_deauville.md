@@ -124,26 +124,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE LA FORET D'ECOUVES
 
-*17h33 · plat · 1900 m · 16 partants · cotes à T−7:34*
+*17h33 · plat · 1900 m · 16 partants · cotes à T−4:55*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | CORONADO | 7,6 | 4,9 | 6,63 | **+14,6 %** | A.MOLINS | 34/73/119/191 |
-| 8 | HAUTE GAMME | 7,6 | 6,1 | 6,91 | **+10,0 %** | A.MEKOUCHE | 135/216/295/346 |
-| 9 | KIEVSKY | 8,5 | 9,5 | 9,84 | -13,6 % | E.HARDOUIN | 27/262/366/292 |
-| 2 | LA DOLOISE | 8,7 | 9 | 9,46 | -8,0 % | S.PASQUIER | 23/149/350/2924 |
-| 4 | KALAFA | 10 | 13 | 10,61 | -5,8 % | M.GUYON 4e | 4/44/2/1643 |
-| 11 | JUDICIOUS GAME | 13 | 14 | 17,22 | -24,5 % | D.PROVOST | 33/34/291/405 |
-| 1 | SOGYNT | 16 | 24 | 20,07 | -20,3 % | M.VELON | 28/81/899/2074 |
-| 5 | CARLSTON | 16 | 18 | 20,63 | -22,4 % | C.DEMURO | 1/136/22/623 |
-| 13 | TWARAB | 17 | 21 | 23,58 | -27,9 % | A.MADAMET | 10/147/15/3025 |
-| 15 | GEOPOLITIC | 17 | 34 | 19,65 | -13,5 % | H.LEBOUC | 19/26/3131/1822 |
-| 6 | FURY BOXING | 19 | 20 | 28,82 | -34,1 % | M.GRANDIN | 3/108/2447/1560 |
-| 10 | MANNE | 19 | 17 | 24,48 | -22,4 % | L.GALLO | 45/187/618/305 |
-| 7 | HARRISON POINT | 22 | 28 | 29,01 | -24,2 % | C.BELMONT | 171/271/101/1112 |
-| 12 | TIMEA | 27 | 24 | 40,22 | -32,9 % | Y.BARILLE | 82/146/53/771 |
-| 16 | INTENTION BORGET | 27 | 37 | 33,40 | -19,2 % | A.BARON | 39/206/280/4325 |
-| 14 | LOVE THE STARS | 49 | 30 | 67,76 | -27,7 % | A.DUQUESNOY | 121/126/1336/247 |
+| 3 | CORONADO | 5,6 | 4,9 | 6,11 | -8,4 % | A.MOLINS | 34/73/119/191 |
+| 8 | HAUTE GAMME | 6,7 | 6,1 | 6,99 | -4,2 % | A.MEKOUCHE | 135/216/295/346 |
+| 9 | KIEVSKY | 9 | 9,5 | 10,49 | -14,2 % | E.HARDOUIN | 27/262/366/292 |
+| 2 | LA DOLOISE | 9,5 | 9 | 10,45 | -9,1 % | S.PASQUIER | 23/149/350/2924 |
+| 4 | KALAFA | 11 | 13 | 12,91 | -14,8 % | M.GUYON 4e | 4/44/2/1643 |
+| 11 | JUDICIOUS GAME | 13 | 14 | 17,17 | -24,3 % | D.PROVOST | 33/34/291/405 |
+| 1 | SOGYNT | 16 | 24 | 20,02 | -20,1 % | M.VELON | 28/81/899/2074 |
+| 6 | FURY BOXING | 18 | 20 | 26,99 | -33,3 % | M.GRANDIN | 3/108/2447/1560 |
+| 5 | CARLSTON | 19 | 18 | 25,13 | -24,4 % | C.DEMURO | 1/136/22/623 |
+| 13 | TWARAB | 19 | 21 | 26,78 | -29,0 % | A.MADAMET | 10/147/15/3025 |
+| 10 | MANNE | 20 | 17 | 25,91 | -22,8 % | L.GALLO | 45/187/618/305 |
+| 15 | GEOPOLITIC | 21 | 34 | 25,01 | -16,0 % | H.LEBOUC | 19/26/3131/1822 |
+| 7 | HARRISON POINT | 24 | 28 | 31,98 | -24,9 % | C.BELMONT | 171/271/101/1112 |
+| 12 | TIMEA | 31 | 24 | 46,93 | -33,9 % | Y.BARILLE | 82/146/53/771 |
+| 16 | INTENTION BORGET | 33 | 37 | 41,76 | -21,0 % | A.BARON | 39/206/280/4325 |
+| 14 | LOVE THE STARS | 48 | 30 | 66,11 | -27,4 % | A.DUQUESNOY | 121/126/1336/247 |
 
 ### 8. PRIX DU MARAIS VERNIER
 
