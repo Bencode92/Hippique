@@ -4,53 +4,53 @@
   "reunion": 3,
   "heure_depart": 1792412040000,
   "distance": 3400,
-  "scraped_at": "2026-10-19T14:14:28.124962+02:00",
-  "minutes_avant_depart": 0,
+  "scraped_at": "2026-10-19T14:17:07.865817+02:00",
+  "minutes_avant_depart": -3,
   "participants": [
     {
       "numPmu": 1,
       "nom": "PRINCESS DINO",
-      "cote_live": 11.0,
+      "cote_live": 12.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792412052000
+      "timestamp_cote": 1792412090000
     },
     {
       "numPmu": 2,
       "nom": "FORTALEZA",
-      "cote_live": 49.0,
+      "cote_live": 55.0,
       "cote_reference": 65.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792412052000
+      "timestamp_cote": 1792412090000
     },
     {
       "numPmu": 3,
       "nom": "SCARLANA DE GREZ",
-      "cote_live": 8.8,
+      "cote_live": 8.4,
       "cote_reference": 6.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792412052000
+      "timestamp_cote": 1792412090000
     },
     {
       "numPmu": 4,
       "nom": "LA SAGRA",
-      "cote_live": 2.5,
+      "cote_live": 2.6,
       "cote_reference": 2.9,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792412052000
+      "timestamp_cote": 1792412090000
     },
     {
       "numPmu": 5,
       "nom": "NEATIKAT",
-      "cote_live": 4.7,
+      "cote_live": 4.4,
       "cote_reference": 6.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792412052000
+      "timestamp_cote": 1792412090000
     },
     {
       "numPmu": 6,
@@ -59,34 +59,34 @@
       "cote_reference": 7.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792412052000
+      "timestamp_cote": 1792412090000
     },
     {
       "numPmu": 8,
       "nom": "TENDERISTHENIGHT",
-      "cote_live": 34.0,
+      "cote_live": 30.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792412052000
+      "timestamp_cote": 1792412090000
     },
     {
       "numPmu": 9,
       "nom": "ROSA BLEUE",
-      "cote_live": 5.6,
+      "cote_live": 6.0,
       "cote_reference": 6.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792412052000
+      "timestamp_cote": 1792412090000
     },
     {
       "numPmu": 10,
       "nom": "BUGAWAY",
-      "cote_live": 46.0,
+      "cote_live": 39.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792412052000
+      "timestamp_cote": 1792412090000
     }
   ],
   "hippodrome": "COMPIEGNE",
@@ -269,6 +269,66 @@
         "8": 34.0,
         "9": 5.6,
         "10": 46.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-19T14:15:08.373510+02:00",
+      "minutes_avant_depart": -1.1349963166666666,
+      "cotes": {
+        "1": 12.0,
+        "2": 55.0,
+        "3": 8.4,
+        "4": 2.6,
+        "5": 4.4,
+        "6": 11.0,
+        "8": 30.0,
+        "9": 6.0,
+        "10": 39.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-19T14:15:47.862677+02:00",
+      "minutes_avant_depart": -1.7946567999999998,
+      "cotes": {
+        "1": 12.0,
+        "2": 55.0,
+        "3": 8.4,
+        "4": 2.6,
+        "5": 4.4,
+        "6": 11.0,
+        "8": 30.0,
+        "9": 6.0,
+        "10": 39.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-19T14:16:27.901328+02:00",
+      "minutes_avant_depart": -2.461325883333333,
+      "cotes": {
+        "1": 12.0,
+        "2": 55.0,
+        "3": 8.4,
+        "4": 2.6,
+        "5": 4.4,
+        "6": 11.0,
+        "8": 30.0,
+        "9": 6.0,
+        "10": 39.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-19T14:17:07.865817+02:00",
+      "minutes_avant_depart": -3.127995233333333,
+      "cotes": {
+        "1": 12.0,
+        "2": 55.0,
+        "3": 8.4,
+        "4": 2.6,
+        "5": 4.4,
+        "6": 11.0,
+        "8": 30.0,
+        "9": 6.0,
+        "10": 39.0
       }
     }
   ]
