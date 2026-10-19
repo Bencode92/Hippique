@@ -1,7 +1,7 @@
 {
   "hippodrome": "SANTIAGO",
   "type_reunion": "Plat",
-  "date_extraction": "2026-10-19T17:07:14.540170",
+  "date_extraction": "2026-10-19T18:46:03.956335",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/19102026/R6",
   "courses": [
     {
@@ -30,7 +30,9 @@
           "equipement(s)": "",
           "nb_courses": 54,
           "nb_victoires": 10,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 45.0,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -51,7 +53,7 @@
           "nb_courses": 17,
           "nb_victoires": 4,
           "nb_places": 7,
-          "cote": 5.4,
+          "cote": 9.0,
           "cote_tendance": "",
           "cote_reference": 6.8
         },
@@ -73,7 +75,9 @@
           "equipement(s)": "",
           "nb_courses": 23,
           "nb_victoires": 4,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 22.0,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -94,7 +98,7 @@
           "nb_courses": 31,
           "nb_victoires": 9,
           "nb_places": 8,
-          "cote": 3.6,
+          "cote": 4.5,
           "cote_tendance": "",
           "cote_reference": 3.4
         },
@@ -140,7 +144,7 @@
           "nb_courses": 31,
           "nb_victoires": 6,
           "nb_places": 21,
-          "cote": 3.6,
+          "cote": 2.8,
           "cote_tendance": "",
           "cote_reference": 3.4
         }
@@ -196,7 +200,7 @@
           "nb_courses": 12,
           "nb_victoires": 0,
           "nb_places": 7,
-          "cote": 3.3,
+          "cote": 4.8,
           "cote_tendance": "",
           "cote_reference": 1.1
         },
@@ -219,7 +223,7 @@
           "nb_courses": 8,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 6.6,
+          "cote": 4.8,
           "cote_tendance": ""
         },
         {
@@ -240,7 +244,9 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 14.0,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -261,7 +267,7 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 13.0,
+          "cote": 29.0,
           "cote_tendance": "",
           "cote_reference": 4.4
         },
@@ -284,7 +290,7 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 6.6,
+          "cote": 4.8,
           "cote_tendance": ""
         },
         {
@@ -305,7 +311,9 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 14.0,
+          "cote_tendance": ""
         },
         {
           "n°": "8",
@@ -386,7 +394,7 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 3.3,
+          "cote": 4.8,
           "cote_tendance": ""
         },
         {
@@ -408,7 +416,7 @@
           "nb_courses": 12,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 6.6,
+          "cote": 14.0,
           "cote_tendance": ""
         },
         {
@@ -429,7 +437,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 14.0,
+          "cote_tendance": ""
         }
       ],
       "terrain": "PSF RAPIDE",
@@ -463,28 +473,8 @@
           "nb_courses": 26,
           "nb_victoires": 1,
           "nb_places": 2,
-          "cote": 2.0,
+          "cote": 2.3,
           "cote_tendance": ""
-        },
-        {
-          "n°": "2",
-          "cheval": "MAGNUS AURELIUS M.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: GRAND DADDY et PONTINA (INDY VIDUAL)",
-          "corde": "(Corde:02)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261019/S88/8/20261019-S88-8-2.png",
-          "propriétaire": "JAVIERA JOSEFA",
-          "entraineur": "CLAUDIO MARCELO NAVARRO ARROYO",
-          "éleveurs": "",
-          "jockey": "BENJAMIN IGNACIO AYALA",
-          "poids": "57 kg",
-          "gains": "697950000",
-          "musique": "1p0p2p6p7p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 39,
-          "nb_victoires": 3,
-          "nb_places": 8
         },
         {
           "n°": "3",
@@ -505,7 +495,7 @@
           "nb_courses": 116,
           "nb_victoires": 8,
           "nb_places": 31,
-          "cote": 20.0,
+          "cote": 26.0,
           "cote_tendance": ""
         },
         {
@@ -527,7 +517,7 @@
           "nb_courses": 12,
           "nb_victoires": 2,
           "nb_places": 1,
-          "cote": 6.9,
+          "cote": 6.5,
           "cote_tendance": ""
         },
         {
@@ -549,7 +539,7 @@
           "nb_courses": 97,
           "nb_victoires": 3,
           "nb_places": 27,
-          "cote": 5.9,
+          "cote": 5.7,
           "cote_tendance": "",
           "cote_reference": 2.2
         },
@@ -572,7 +562,7 @@
           "nb_courses": 74,
           "nb_victoires": 5,
           "nb_places": 18,
-          "cote": 20.0,
+          "cote": 13.0,
           "cote_tendance": "",
           "cote_reference": 5.7
         },
@@ -594,7 +584,9 @@
           "equipement(s)": "",
           "nb_courses": 39,
           "nb_victoires": 4,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 13.0,
+          "cote_tendance": ""
         },
         {
           "n°": "8",
@@ -615,7 +607,7 @@
           "nb_courses": 113,
           "nb_victoires": 9,
           "nb_places": 24,
-          "cote": 4.1,
+          "cote": 5.2,
           "cote_tendance": "",
           "cote_reference": 1.9
         },
@@ -670,7 +662,9 @@
           "equipement(s)": "",
           "nb_courses": 45,
           "nb_victoires": 4,
-          "nb_places": 14
+          "nb_places": 14,
+          "cote": 5.4,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -690,7 +684,9 @@
           "equipement(s)": "",
           "nb_courses": 49,
           "nb_victoires": 4,
-          "nb_places": 16
+          "nb_places": 16,
+          "cote": 16.0,
+          "cote_tendance": ""
         },
         {
           "n°": "3",
@@ -710,30 +706,9 @@
           "equipement(s)": "",
           "nb_courses": 46,
           "nb_victoires": 6,
-          "nb_places": 10
-        },
-        {
-          "n°": "4",
-          "cheval": "VERSE BIEN M.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: ADMIRAL et MONONA VERSE (VISION AND VERSE)",
-          "corde": "(Corde:04)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261019/S88/9/20261019-S88-9-4.png",
-          "propriétaire": "EL GANCHITO",
-          "entraineur": "OSCAR FELIPE GONZALEZ SOBARZO",
-          "éleveurs": "",
-          "jockey": "RICARDO ANDRES SOLORZA FERNANDEZ",
-          "poids": "58 kg",
-          "gains": "1077840000",
-          "musique": "0p6p3p4p2p",
-          "valeur": "58.0",
-          "equipement(s)": "",
-          "nb_courses": 43,
-          "nb_victoires": 3,
-          "nb_places": 15,
-          "cote": 10.0,
-          "cote_tendance": "",
-          "cote_reference": 3.0
+          "nb_places": 10,
+          "cote": 16.0,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -754,9 +729,9 @@
           "nb_courses": 43,
           "nb_victoires": 5,
           "nb_places": 16,
-          "cote": 20.0,
+          "cote": 32.0,
           "cote_tendance": "",
-          "cote_reference": 6.1
+          "cote_reference": 4.4
         },
         {
           "n°": "6",
@@ -777,31 +752,9 @@
           "nb_courses": 13,
           "nb_victoires": 3,
           "nb_places": 5,
-          "cote": 1.4,
+          "cote": 1.8,
           "cote_tendance": "",
-          "cote_reference": 3.0
-        },
-        {
-          "n°": "7",
-          "cheval": "IMANOL M.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: GOOD SAMARITAN et LUDOVICA (NEWFOUNDLAND)",
-          "corde": "(Corde:07)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261019/S88/9/20261019-S88-9-7.png",
-          "propriétaire": "EL MERO MERO",
-          "entraineur": "JOSE ARAYA BAHAMONDES",
-          "éleveurs": "",
-          "jockey": "CARLOS ALEJANDRO ORTEGA TAPIA",
-          "poids": "55 kg",
-          "gains": "1149570000",
-          "musique": "0p5p1p0p8p",
-          "valeur": "55.0",
-          "equipement(s)": "",
-          "nb_courses": 44,
-          "nb_victoires": 6,
-          "nb_places": 6,
-          "cote": 10.0,
-          "cote_tendance": ""
+          "cote_reference": 2.2
         },
         {
           "n°": "8",
@@ -822,9 +775,9 @@
           "nb_courses": 18,
           "nb_victoires": 3,
           "nb_places": 6,
-          "cote": 5.0,
+          "cote": 4.0,
           "cote_tendance": "",
-          "cote_reference": 3.0
+          "cote_reference": 2.2
         }
       ],
       "terrain": "PSF RAPIDE",
@@ -858,7 +811,7 @@
           "nb_courses": 2,
           "nb_victoires": 1,
           "nb_places": 1,
-          "cote": 5.0,
+          "cote": 4.2,
           "cote_tendance": "",
           "cote_reference": 2.4
         },
@@ -921,7 +874,7 @@
           "nb_courses": 27,
           "nb_victoires": 2,
           "nb_places": 10,
-          "cote": 5.0,
+          "cote": 5.7,
           "cote_tendance": ""
         },
         {
@@ -943,7 +896,7 @@
           "nb_courses": 21,
           "nb_victoires": 3,
           "nb_places": 3,
-          "cote": 4.0,
+          "cote": 4.9,
           "cote_tendance": "",
           "cote_reference": 1.9
         },
@@ -966,7 +919,7 @@
           "nb_courses": 38,
           "nb_victoires": 3,
           "nb_places": 14,
-          "cote": 2.5,
+          "cote": 3.4,
           "cote_tendance": "",
           "cote_reference": 4.8
         },
@@ -989,7 +942,7 @@
           "nb_courses": 37,
           "nb_victoires": 2,
           "nb_places": 10,
-          "cote": 10.0,
+          "cote": 5.7,
           "cote_tendance": ""
         },
         {
@@ -1010,7 +963,9 @@
           "equipement(s)": "",
           "nb_courses": 69,
           "nb_victoires": 5,
-          "nb_places": 19
+          "nb_places": 19,
+          "cote": 17.0,
+          "cote_tendance": ""
         },
         {
           "n°": "9",
@@ -1104,7 +1059,7 @@
           "nb_courses": 44,
           "nb_victoires": 5,
           "nb_places": 10,
-          "cote": 7.4,
+          "cote": 7.2,
           "cote_tendance": "",
           "cote_reference": 3.0
         },
@@ -1147,7 +1102,7 @@
           "nb_courses": 212,
           "nb_victoires": 14,
           "nb_places": 72,
-          "cote": 2.4,
+          "cote": 2.9,
           "cote_tendance": "",
           "cote_reference": 3.0
         },
@@ -1170,7 +1125,7 @@
           "nb_courses": 53,
           "nb_victoires": 4,
           "nb_places": 18,
-          "cote": 14.0,
+          "cote": 29.0,
           "cote_tendance": "",
           "cote_reference": 6.1
         },
@@ -1193,7 +1148,7 @@
           "nb_courses": 72,
           "nb_victoires": 8,
           "nb_places": 12,
-          "cote": 3.7,
+          "cote": 3.6,
           "cote_tendance": "",
           "cote_reference": 3.0
         },
@@ -1216,7 +1171,7 @@
           "nb_courses": 57,
           "nb_victoires": 3,
           "nb_places": 24,
-          "cote": 3.7,
+          "cote": 3.6,
           "cote_tendance": ""
         },
         {
@@ -1257,7 +1212,9 @@
           "equipement(s)": "",
           "nb_courses": 24,
           "nb_victoires": 2,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 14.0,
+          "cote_tendance": ""
         }
       ],
       "terrain": "Bon",
