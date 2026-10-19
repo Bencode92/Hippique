@@ -1,10 +1,10 @@
 {
   "_doc": "Journal des paris réels du test séquentiel. Le pari est le relevé le plus proche de T-2:00 dans [T-2:40 ; T-1:20] (releve = 'T-m:ss') ; une course de la règle sans relevé dans la fenêtre est EXCLUE (liste exclues), jamais remplacée par la clôture. Écrit par bench/sprt_regle.mjs.",
   "debut": "2026-10-01",
-  "paris": 11,
+  "paris": 13,
   "exclues_sans_releve": 8,
   "favori_change_avant_cloture": 2,
-  "taux_bascule_favori": 0.182,
+  "taux_bascule_favori": 0.154,
   "lignes": [
     {
       "date": "2026-10-03",
@@ -192,6 +192,40 @@
       "dividende": 0,
       "gain_20e": -20,
       "S": 0.042
+    },
+    {
+      "date": "2026-10-18",
+      "hippodrome": "ParisLongchamp",
+      "R": 1,
+      "C": 3,
+      "cheval": "MIGHTY BOY",
+      "numero": 8,
+      "cote_misee": 4.6,
+      "releve": "T-2:04",
+      "cote_finale": 5.5,
+      "favori_final_identique": true,
+      "derive": 0.08,
+      "gagne": false,
+      "dividende": 0,
+      "gain_20e": -20,
+      "S": 0.012
+    },
+    {
+      "date": "2026-10-18",
+      "hippodrome": "ParisLongchamp",
+      "R": 1,
+      "C": 6,
+      "cheval": "LEADING DANCER",
+      "numero": 13,
+      "cote_misee": 3.4,
+      "releve": "T-1:48",
+      "cote_finale": 2.9,
+      "favori_final_identique": true,
+      "derive": -0.03,
+      "gagne": false,
+      "dividende": 0,
+      "gain_20e": -20,
+      "S": -0.033
     }
   ],
   "exclues": [
