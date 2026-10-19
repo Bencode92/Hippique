@@ -4,89 +4,89 @@
   "reunion": 3,
   "heure_depart": 1792414020000,
   "distance": 3400,
-  "scraped_at": "2026-10-19T14:21:48.962301+02:00",
-  "minutes_avant_depart": 25,
+  "scraped_at": "2026-10-19T14:26:28.600689+02:00",
+  "minutes_avant_depart": 21,
   "participants": [
     {
       "numPmu": 1,
       "nom": "BEST MATCH",
-      "cote_live": 6.6,
+      "cote_live": 6.9,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792412498000
+      "timestamp_cote": 1792412784000
     },
     {
       "numPmu": 2,
       "nom": "PERFECT SONG",
-      "cote_live": 9.5,
+      "cote_live": 9.9,
       "cote_reference": 7.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792412498000
+      "timestamp_cote": 1792412784000
     },
     {
       "numPmu": 3,
       "nom": "DOCTORINO",
-      "cote_live": 3.3,
+      "cote_live": 2.9,
       "cote_reference": 3.0,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792412498000
+      "timestamp_cote": 1792412784000
     },
     {
       "numPmu": 4,
       "nom": "SEVERAN",
-      "cote_live": 10.0,
+      "cote_live": 11.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792412498000
+      "timestamp_cote": 1792412784000
     },
     {
       "numPmu": 5,
       "nom": "NARNIA DU LARGE",
-      "cote_live": 50.0,
+      "cote_live": 46.0,
       "cote_reference": 47.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792412498000
+      "timestamp_cote": 1792412784000
     },
     {
       "numPmu": 6,
       "nom": "TAJMALY",
-      "cote_live": 3.7,
+      "cote_live": 4.2,
       "cote_reference": 3.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792412498000
+      "timestamp_cote": 1792412784000
     },
     {
       "numPmu": 7,
       "nom": "KING MARCEAU",
-      "cote_live": 8.0,
+      "cote_live": 7.7,
       "cote_reference": 9.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792412498000
+      "timestamp_cote": 1792412784000
     },
     {
       "numPmu": 8,
       "nom": "HORDEARII",
-      "cote_live": 29.0,
+      "cote_live": 28.0,
       "cote_reference": 28.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792412498000
+      "timestamp_cote": 1792412784000
     },
     {
       "numPmu": 9,
       "nom": "SPRINGSTEEL",
-      "cote_live": 24.0,
+      "cote_live": 19.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792412498000
+      "timestamp_cote": 1792412784000
     }
   ],
   "hippodrome": "COMPIEGNE",
@@ -119,6 +119,21 @@
         "7": 8.0,
         "8": 29.0,
         "9": 24.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-19T14:26:28.600689+02:00",
+      "minutes_avant_depart": 20.538636716666666,
+      "cotes": {
+        "1": 6.9,
+        "2": 9.9,
+        "3": 2.9,
+        "4": 11.0,
+        "5": 46.0,
+        "6": 4.2,
+        "7": 7.7,
+        "8": 28.0,
+        "9": 19.0
       }
     }
   ]
