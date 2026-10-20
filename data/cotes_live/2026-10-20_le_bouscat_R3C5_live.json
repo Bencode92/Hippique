@@ -1,0 +1,100 @@
+{
+  "course": "PRIX D'AUTEUIL",
+  "numero": 5,
+  "reunion": 3,
+  "heure_depart": 1792495620000,
+  "distance": 3900,
+  "scraped_at": "2026-10-20T12:57:06.469664+02:00",
+  "minutes_avant_depart": 30,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "LADY DE LA SERRE",
+      "cote_live": 18.0,
+      "cote_reference": 22.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792493110000
+    },
+    {
+      "numPmu": 2,
+      "nom": "MELCASTILLE",
+      "cote_live": 6.0,
+      "cote_reference": 6.1,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792493110000
+    },
+    {
+      "numPmu": 5,
+      "nom": "MASTER DU LARGE",
+      "cote_live": 6.7,
+      "cote_reference": 8.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792493110000
+    },
+    {
+      "numPmu": 6,
+      "nom": "LA PRODIGIEUSE",
+      "cote_live": 3.9,
+      "cote_reference": 3.1,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1792493110000
+    },
+    {
+      "numPmu": 7,
+      "nom": "MAGIE DU ROY",
+      "cote_live": 6.2,
+      "cote_reference": 7.7,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792493110000
+    },
+    {
+      "numPmu": 8,
+      "nom": "SAINTE CO",
+      "cote_live": 5.0,
+      "cote_reference": 5.3,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792493110000
+    },
+    {
+      "numPmu": 9,
+      "nom": "BACCHUS D'ALLIER",
+      "cote_live": 8.9,
+      "cote_reference": 7.4,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792493110000
+    },
+    {
+      "numPmu": 10,
+      "nom": "LA LETTRE",
+      "cote_live": 24.0,
+      "cote_reference": 30.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792493110000
+    }
+  ],
+  "hippodrome": "LE BOUSCAT",
+  "releves": [
+    {
+      "scraped_at": "2026-10-20T12:57:06.469664+02:00",
+      "minutes_avant_depart": 29.8994374,
+      "cotes": {
+        "1": 18.0,
+        "2": 6.0,
+        "5": 6.7,
+        "6": 3.9,
+        "7": 6.2,
+        "8": 5.0,
+        "9": 8.9,
+        "10": 24.0
+      }
+    }
+  ]
+}
