@@ -1,6 +1,6 @@
 # LE BOUSCAT — 20/10/2026
 
-8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -124,21 +124,21 @@
 
 ### 8. PRIX JEAN-CLAUDE GUERIN
 
-*15h22 · plat · 2400 m · 14 partants · cotes de l'extraction*
+*15h22 · plat · 2400 m · 14 partants · cotes à T−9:19*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 2 | MONONOF | 7,2 | R.SAHAJASEIN | 370/60/–/1897 |
-| 4 | CHAI D'OEUVRE | 7,5 | G.GUEDJ-GAY | 20/391/1072/836 |
-| 1 | POCA GEN | 7,7 | M.ROMARY | 47/167/377/406 |
-| 3 | SIGTUNA | 9,6 | H.MOUESAN | 52/58/204/1324 |
-| 6 | SPANISH LIGHT | 9,6 | M.FOULON | 55/52/420/321 |
-| 7 | BLACK ULTRA | 10 | A.WERLE | 29/107/58/1474 |
-| 15 | VARENNE | 11 | C.PACAUT | 48/71/718/– |
-| 9 | LA GUERCHE | 13 | J.GUILLOCHON | 56/40/949/219 |
-| 5 | NIKOLAJ | 17 | F.VERON | 24/182/21/75 |
-| 14 | DZIELNY WOJTEK | 19 | M.PROTTI | 30/6/4102/20 |
-| 8 | HEAVEN CITY | 21 | T.BLANCHOUIN | 92/39/774/1167 |
-| 10 | SHALOHA | 22 | M.FOREST | 72/267/460/1295 |
-| 11 | PLANCKEINSTEIN | 25 | L.POGGIONOVO | 80/71/825/1943 |
-| 16 | LONG KE WAN | 27 | T.BREBION | 99/39/691/1063 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 4 | CHAI D'OEUVRE | 7,6 | 7,5 | G.GUEDJ-GAY | 20/391/1072/836 |
+| 2 | MONONOF | 8 | 7,2 | R.SAHAJASEIN | 370/60/–/1897 |
+| 6 | SPANISH LIGHT | 8,3 | 9,6 | M.FOULON | 55/52/420/321 |
+| 1 | POCA GEN | 10 | 7,7 | M.ROMARY | 47/167/377/406 |
+| 3 | SIGTUNA | 10 | 9,6 | H.MOUESAN | 52/58/204/1324 |
+| 5 | NIKOLAJ | 10 | 17 | F.VERON | 24/182/21/75 |
+| 7 | BLACK ULTRA | 12 | 10 | A.WERLE | 29/107/58/1474 |
+| 9 | LA GUERCHE | 12 | 13 | J.GUILLOCHON | 56/40/949/219 |
+| 15 | VARENNE | 12 | 11 | C.PACAUT | 48/71/718/– |
+| 14 | DZIELNY WOJTEK | 16 | 19 | M.PROTTI | 30/6/4102/20 |
+| 8 | HEAVEN CITY | 22 | 21 | T.BLANCHOUIN | 92/39/774/1167 |
+| 16 | LONG KE WAN | 24 | 27 | T.BREBION | 99/39/691/1063 |
+| 10 | SHALOHA | 25 | 22 | M.FOREST | 72/267/460/1295 |
+| 11 | PLANCKEINSTEIN | 25 | 25 | L.POGGIONOVO | 80/71/825/1943 |
