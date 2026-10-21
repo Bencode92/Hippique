@@ -1,0 +1,80 @@
+{
+  "course": "PRIX DE PROVENCE",
+  "numero": 7,
+  "reunion": 2,
+  "heure_depart": 1792584900000,
+  "distance": 2400,
+  "scraped_at": "2026-10-21T13:45:19.727705+02:00",
+  "minutes_avant_depart": 30,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "ARNAY LE DUC",
+      "cote_live": 4.8,
+      "cote_reference": 5.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792582254000
+    },
+    {
+      "numPmu": 2,
+      "nom": "GOLDEN BLUSH",
+      "cote_live": 1.9,
+      "cote_reference": 1.8,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1792582254000
+    },
+    {
+      "numPmu": 4,
+      "nom": "KINGORI",
+      "cote_live": 6.7,
+      "cote_reference": 7.2,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792582254000
+    },
+    {
+      "numPmu": 5,
+      "nom": "PORT SANTA PONSA",
+      "cote_live": 12.0,
+      "cote_reference": 12.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792582254000
+    },
+    {
+      "numPmu": 6,
+      "nom": "NIAGARO",
+      "cote_live": 9.6,
+      "cote_reference": 11.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792582254000
+    },
+    {
+      "numPmu": 7,
+      "nom": "PERSIANA",
+      "cote_live": 11.0,
+      "cote_reference": 9.9,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792582254000
+    }
+  ],
+  "hippodrome": "LYON LA SOIE",
+  "releves": [
+    {
+      "scraped_at": "2026-10-21T13:45:19.727705+02:00",
+      "minutes_avant_depart": 29.6758733,
+      "cotes": {
+        "1": 4.8,
+        "2": 1.9,
+        "4": 6.7,
+        "5": 12.0,
+        "6": 9.6,
+        "7": 11.0
+      }
+    }
+  ]
+}
