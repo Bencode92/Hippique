@@ -4,62 +4,62 @@
   "reunion": 2,
   "heure_depart": 1792582980000,
   "distance": 1800,
-  "scraped_at": "2026-10-21T13:37:59.812701+02:00",
-  "minutes_avant_depart": 5,
+  "scraped_at": "2026-10-21T13:40:39.673656+02:00",
+  "minutes_avant_depart": 2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ELUSIVE GLORY",
-      "cote_live": 6.4,
+      "cote_live": 6.1,
       "cote_reference": 5.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582665000
+      "timestamp_cote": 1792582819000
     },
     {
       "numPmu": 2,
       "nom": "CANDY CHERIE",
-      "cote_live": 4.7,
+      "cote_live": 4.3,
       "cote_reference": 6.8,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1792582665000
+      "favoris": true,
+      "timestamp_cote": 1792582819000
     },
     {
       "numPmu": 3,
       "nom": "BOOMERANG",
-      "cote_live": 4.3,
+      "cote_live": 4.5,
       "cote_reference": 6.0,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1792582665000
+      "favoris": false,
+      "timestamp_cote": 1792582819000
     },
     {
       "numPmu": 4,
       "nom": "RABBAH",
-      "cote_live": 5.3,
+      "cote_live": 5.0,
       "cote_reference": 7.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582665000
+      "timestamp_cote": 1792582819000
     },
     {
       "numPmu": 6,
       "nom": "JOYEUSE DE ROMAY",
-      "cote_live": 6.2,
+      "cote_live": 6.9,
       "cote_reference": 3.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582665000
+      "timestamp_cote": 1792582819000
     },
     {
       "numPmu": 7,
       "nom": "IDAHO JAMES",
-      "cote_live": 5.2,
+      "cote_live": 5.5,
       "cote_reference": 5.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582665000
+      "timestamp_cote": 1792582819000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -158,6 +158,54 @@
         "4": 5.3,
         "6": 6.2,
         "7": 5.2
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T13:38:39.676389+02:00",
+      "minutes_avant_depart": 4.342561383333333,
+      "cotes": {
+        "1": 6.6,
+        "2": 4.7,
+        "3": 4.2,
+        "4": 5.2,
+        "6": 6.5,
+        "7": 5.1
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T13:39:19.911407+02:00",
+      "minutes_avant_depart": 3.6758929,
+      "cotes": {
+        "1": 6.5,
+        "2": 4.3,
+        "3": 4.3,
+        "4": 5.3,
+        "6": 6.7,
+        "7": 5.3
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T13:39:59.838197+02:00",
+      "minutes_avant_depart": 3.0048501333333335,
+      "cotes": {
+        "1": 6.1,
+        "2": 4.3,
+        "3": 4.3,
+        "4": 5.4,
+        "6": 6.6,
+        "7": 5.4
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T13:40:39.673656+02:00",
+      "minutes_avant_depart": 2.3425553166666666,
+      "cotes": {
+        "1": 6.1,
+        "2": 4.3,
+        "3": 4.5,
+        "4": 5.0,
+        "6": 6.9,
+        "7": 5.5
       }
     }
   ]
