@@ -75,19 +75,19 @@
 
 ### 5. PRIX GERARD NOUGIER
 
-*13h11 · plat · 1800 m · 9 partants · cotes de l'extraction*
+*13h11 · plat · 1800 m · 9 partants · cotes à T−3:20*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | KERNO QUATZ | – | A.ORANI 3e | 5/33/360/267 |
-| 2 | KHELONYX | – | H.BOUTIN | 14/50/4/543 |
-| 4 | NOVA KEN | – | M.VELON | 28/33/7/267 |
-| 5 | REUX | – | A.CRASTUS | 17/92/266/302 |
-| 6 | EKTORIA | – | C.PACAUT | 48/198/54/1085 |
+| 1 | KERNO QUATZ | 4,1 | A.ORANI 3e | 5/33/360/267 |
+| 11 | ATAVAMADA | 5,1 | H.BESNIER | 12/326/1298/2494 |
+| 5 | REUX | 6,7 | A.CRASTUS | 17/92/266/302 |
+| 6 | EKTORIA | 7,3 | C.PACAUT | 48/198/54/1085 |
+| 2 | KHELONYX | 7,6 | H.BOUTIN | 14/50/4/543 |
+| 9 | COME TI AMO | 8,2 | B.LABATE | 113/88/252/450 |
+| 4 | NOVA KEN | 9,9 | M.VELON | 28/33/7/267 |
+| 10 | DENGIE | 16 | A.D'JJI | 252/18/7/387 |
 | 8 | MOKKA LATTE | – | M.GRANDIN | 3/49/187/118 |
-| 9 | COME TI AMO | – | B.LABATE | 113/88/252/450 |
-| 10 | DENGIE | – | A.D'JJI | 252/18/7/387 |
-| 11 | ATAVAMADA | – | H.BESNIER | 12/326/1298/2494 |
 
 ### 6. PRIX JOSEPH CREISSON
 
