@@ -1,6 +1,6 @@
 # DEAUVILLE — 21/10/2026
 
-8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -29,23 +29,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 2. PRIX DE LA FORET DE BORD
 
-*17h07 · plat · 1500 m · 13 partants · cotes de l'extraction*
+*17h07 · plat · 1500 m · 13 partants · cotes à T−29:39*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 11 | PAMELA BOUM | 5,9 | 6,80 | -13,3 % | E.HARDOUIN | 27/89/445/838 |
-| 3 | TIZIAN | 7 | 8,42 | -16,8 % | PC.BOUDOT 4e | 8/34/502/1710 |
-| 4 | MASTER PAT | 7 | 7,45 | -6,0 % | M.GUYON | 4/73/642/380 |
-| 12 | BELVEDERE PALACE | 10 | 11,71 | -14,6 % | A.HAMELIN | 22/79/2767/1593 |
-| 1 | TYSON | 11 | 15,32 | -28,2 % | T.BACHELOT | 16/94/26/1429 |
-| 2 | SPRING HEART | 11 | 12,87 | -14,5 % | B.FLAMENT | 161/137/107/694 |
-| 8 | NOOTKA BAY | 12 | 13,91 | -13,7 % | C.LECOEUVRE | 13/117/433/2263 |
-| 5 | GOGUEN SPAISE | 13 | 13,35 | -2,6 % | L.ROUSSEL | 26/27/22/1199 |
-| 7 | EN PLEIN AIR | 13 | 13,97 | -7,0 % | C.DEMURO | 1/48/117/2410 |
-| 9 | EL KRAKEN | 13 | 15,92 | -18,3 % | R.MANGIONE | 78/132/161/409 |
-| 10 | PAINT IT BLACK | 19 | 27,14 | -30,0 % | D.SANTIAGO | 15/542/2178/1859 |
-| 13 | ROYAL SHAKE | 28 | 36,22 | -22,7 % | T.TRULLIER | 21/214/107/342 |
-| 6 | LIGHTNING RAID | 32 | 44,86 | -28,7 % | P.BAZIRE | 58/161/3114/158 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 4 | MASTER PAT | 6,3 | 7 | 5,82 | **+8,3 %** | M.GUYON | 4/73/642/380 |
+| 3 | TIZIAN | 6,8 | 7 | 8,06 | -15,7 % | PC.BOUDOT 4e | 8/34/502/1710 |
+| 11 | PAMELA BOUM | 7 | 5,9 | 7,08 | -1,1 % | E.HARDOUIN | 27/89/445/838 |
+| 7 | EN PLEIN AIR | 8,1 | 13 | 8,02 | **+1,0 %** | C.DEMURO | 1/48/117/2410 |
+| 2 | SPRING HEART | 10 | 11 | 11,91 | -16,1 % | B.FLAMENT | 161/137/107/694 |
+| 1 | TYSON | 12 | 11 | 16,82 | -28,7 % | T.BACHELOT | 16/94/26/1429 |
+| 12 | BELVEDERE PALACE | 13 | 10 | 15,77 | -17,6 % | A.HAMELIN | 22/79/2767/1593 |
+| 8 | NOOTKA BAY | 15 | 12 | 17,87 | -16,1 % | C.LECOEUVRE | 13/117/433/2263 |
+| 5 | GOGUEN SPAISE | 17 | 13 | 18,03 | -5,7 % | L.ROUSSEL | 26/27/22/1199 |
+| 9 | EL KRAKEN | 17 | 13 | 21,57 | -21,2 % | R.MANGIONE | 78/132/161/409 |
+| 6 | LIGHTNING RAID | 18 | 32 | 21,03 | -14,4 % | P.BAZIRE | 58/161/3114/158 |
+| 13 | ROYAL SHAKE | 22 | 28 | 27,27 | -19,3 % | T.TRULLIER | 21/214/107/342 |
+| 10 | PAINT IT BLACK | 23 | 19 | 32,00 | -28,1 % | D.SANTIAGO | 15/542/2178/1859 |
 
 ### 3. PRIX DE LA FORET DU ROUVRAY
 
