@@ -4,53 +4,53 @@
   "reunion": 2,
   "heure_depart": 1792586820000,
   "distance": 2150,
-  "scraped_at": "2026-10-21T14:30:00.189690+02:00",
-  "minutes_avant_depart": 17,
+  "scraped_at": "2026-10-21T14:34:39.851476+02:00",
+  "minutes_avant_depart": 12,
   "participants": [
     {
       "numPmu": 1,
       "nom": "TASTEFUL",
-      "cote_live": 2.7,
+      "cote_live": 3.1,
       "cote_reference": 2.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792585789000
+      "timestamp_cote": 1792586075000
     },
     {
       "numPmu": 2,
       "nom": "JUST FOR MEME",
-      "cote_live": 5.6,
+      "cote_live": 5.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792585789000
+      "timestamp_cote": 1792586075000
     },
     {
       "numPmu": 3,
       "nom": "HOLD MY DREAMS",
-      "cote_live": 6.2,
+      "cote_live": 6.0,
       "cote_reference": 7.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792585789000
+      "timestamp_cote": 1792586075000
     },
     {
       "numPmu": 4,
       "nom": "I AM MAELIA",
-      "cote_live": 13.0,
+      "cote_live": 9.1,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792585789000
+      "timestamp_cote": 1792586075000
     },
     {
       "numPmu": 5,
       "nom": "DELIRE D'AMOUR",
-      "cote_live": 6.4,
+      "cote_live": 7.5,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792585789000
+      "timestamp_cote": 1792586075000
     },
     {
       "numPmu": 6,
@@ -59,16 +59,16 @@
       "cote_reference": 5.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792585789000
+      "timestamp_cote": 1792586075000
     },
     {
       "numPmu": 8,
       "nom": "MAC TYSON",
-      "cote_live": 12.0,
+      "cote_live": 10.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792585789000
+      "timestamp_cote": 1792586075000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -123,6 +123,19 @@
         "5": 6.4,
         "6": 8.2,
         "8": 12.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T14:34:39.851476+02:00",
+      "minutes_avant_depart": 12.3423818,
+      "cotes": {
+        "1": 3.1,
+        "2": 5.0,
+        "3": 6.0,
+        "4": 9.1,
+        "5": 7.5,
+        "6": 8.2,
+        "8": 10.0
       }
     }
   ]
