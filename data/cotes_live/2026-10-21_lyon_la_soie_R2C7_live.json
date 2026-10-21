@@ -4,62 +4,62 @@
   "reunion": 2,
   "heure_depart": 1792584900000,
   "distance": 2400,
-  "scraped_at": "2026-10-21T13:45:19.727705+02:00",
-  "minutes_avant_depart": 30,
+  "scraped_at": "2026-10-21T13:50:00.060155+02:00",
+  "minutes_avant_depart": 25,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ARNAY LE DUC",
-      "cote_live": 4.8,
+      "cote_live": 5.5,
       "cote_reference": 5.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582254000
+      "timestamp_cote": 1792583396000
     },
     {
       "numPmu": 2,
       "nom": "GOLDEN BLUSH",
-      "cote_live": 1.9,
+      "cote_live": 2.1,
       "cote_reference": 1.8,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792582254000
+      "timestamp_cote": 1792583396000
     },
     {
       "numPmu": 4,
       "nom": "KINGORI",
-      "cote_live": 6.7,
+      "cote_live": 4.4,
       "cote_reference": 7.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582254000
+      "timestamp_cote": 1792583396000
     },
     {
       "numPmu": 5,
       "nom": "PORT SANTA PONSA",
-      "cote_live": 12.0,
+      "cote_live": 13.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582254000
+      "timestamp_cote": 1792583396000
     },
     {
       "numPmu": 6,
       "nom": "NIAGARO",
-      "cote_live": 9.6,
+      "cote_live": 12.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582254000
+      "timestamp_cote": 1792583396000
     },
     {
       "numPmu": 7,
       "nom": "PERSIANA",
-      "cote_live": 11.0,
+      "cote_live": 10.0,
       "cote_reference": 9.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582254000
+      "timestamp_cote": 1792583396000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -74,6 +74,18 @@
         "5": 12.0,
         "6": 9.6,
         "7": 11.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T13:50:00.060155+02:00",
+      "minutes_avant_depart": 25.001998983333333,
+      "cotes": {
+        "1": 5.5,
+        "2": 2.1,
+        "4": 4.4,
+        "5": 13.0,
+        "6": 12.0,
+        "7": 10.0
       }
     }
   ]

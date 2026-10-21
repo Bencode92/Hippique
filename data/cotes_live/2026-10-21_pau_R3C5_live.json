@@ -4,44 +4,44 @@
   "reunion": 3,
   "heure_depart": 1792584720000,
   "distance": 2000,
-  "scraped_at": "2026-10-21T13:46:40.259426+02:00",
-  "minutes_avant_depart": 25,
+  "scraped_at": "2026-10-21T13:51:19.844862+02:00",
+  "minutes_avant_depart": 21,
   "participants": [
     {
       "numPmu": 1,
       "nom": "TREASURE ISLAND",
-      "cote_live": 33.0,
+      "cote_live": 41.0,
       "cote_reference": 56.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583194000
+      "timestamp_cote": 1792583458000
     },
     {
       "numPmu": 2,
       "nom": "QASWARAH",
-      "cote_live": 8.3,
+      "cote_live": 7.3,
       "cote_reference": 8.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583194000
+      "timestamp_cote": 1792583458000
     },
     {
       "numPmu": 3,
       "nom": "SHEHAB",
-      "cote_live": 8.2,
+      "cote_live": 9.9,
       "cote_reference": 8.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583194000
+      "timestamp_cote": 1792583458000
     },
     {
       "numPmu": 4,
       "nom": "CHIC HASARD",
-      "cote_live": 11.0,
+      "cote_live": 12.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583194000
+      "timestamp_cote": 1792583458000
     },
     {
       "numPmu": 5,
@@ -50,79 +50,79 @@
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583194000
+      "timestamp_cote": 1792583458000
     },
     {
       "numPmu": 6,
       "nom": "AF QASEEMAH",
-      "cote_live": 4.9,
+      "cote_live": 5.0,
       "cote_reference": 4.8,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1792583194000
+      "favoris": true,
+      "timestamp_cote": 1792583458000
     },
     {
       "numPmu": 7,
       "nom": "NOLIMIT MM HIPOLYT",
-      "cote_live": null,
+      "cote_live": 77.0,
       "cote_reference": null,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": null
+      "timestamp_cote": 1792583458000
     },
     {
       "numPmu": 8,
       "nom": "SENNA",
-      "cote_live": 14.0,
+      "cote_live": 13.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583194000
+      "timestamp_cote": 1792583458000
     },
     {
       "numPmu": 9,
       "nom": "GAZI DE MONLAU",
-      "cote_live": 38.0,
+      "cote_live": 34.0,
       "cote_reference": 37.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583194000
+      "timestamp_cote": 1792583458000
     },
     {
       "numPmu": 10,
       "nom": "NEFISA HIPOLYTE",
-      "cote_live": 23.0,
+      "cote_live": 12.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583194000
+      "timestamp_cote": 1792583458000
     },
     {
       "numPmu": 11,
       "nom": "HASNA GRINE",
-      "cote_live": 23.0,
+      "cote_live": 29.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583194000
+      "timestamp_cote": 1792583458000
     },
     {
       "numPmu": 12,
       "nom": "MIRAMAR",
-      "cote_live": 4.5,
+      "cote_live": 5.4,
       "cote_reference": 4.5,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1792583194000
+      "favoris": false,
+      "timestamp_cote": 1792583458000
     },
     {
       "numPmu": 13,
       "nom": "NADIR DE L'ARDUS",
-      "cote_live": 50.0,
+      "cote_live": 38.0,
       "cote_reference": 50.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583194000
+      "timestamp_cote": 1792583458000
     },
     {
       "numPmu": 14,
@@ -131,16 +131,16 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583194000
+      "timestamp_cote": 1792583458000
     },
     {
       "numPmu": 15,
       "nom": "DU'AIJ",
-      "cote_live": 29.0,
+      "cote_live": 28.0,
       "cote_reference": 45.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583194000
+      "timestamp_cote": 1792583458000
     }
   ],
   "hippodrome": "PAU",
@@ -185,6 +185,27 @@
         "13": 50.0,
         "14": 12.0,
         "15": 29.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T13:51:19.844862+02:00",
+      "minutes_avant_depart": 20.675854566666665,
+      "cotes": {
+        "1": 41.0,
+        "2": 7.3,
+        "3": 9.9,
+        "4": 12.0,
+        "5": 23.0,
+        "6": 5.0,
+        "7": 77.0,
+        "8": 13.0,
+        "9": 34.0,
+        "10": 12.0,
+        "11": 29.0,
+        "12": 5.4,
+        "13": 38.0,
+        "14": 12.0,
+        "15": 28.0
       }
     }
   ]
