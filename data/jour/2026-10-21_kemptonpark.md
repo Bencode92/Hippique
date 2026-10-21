@@ -1,8 +1,8 @@
 # KEMPTON PARK — 21/10/2026
 
-8 courses.
+8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -12,11 +12,11 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | BAYSIDE WALTZ | – | DAVID PROBERT | 368/116/–/621 |
-| 2 | CHARIOTS OF FIRE | – | OISIN MURPHY | 144/116/–/– |
-| 3 | STRIKE FORCE MAX | – | BILLY LOUGHNANE | 223/179/–/418 |
-| 4 | WOOTTON KING | – | ROBERT HAVLIN | 493/55/–/2338 |
-| 5 | STAR CAMELOT | – | FINLEY MARSH | –/253/–/124 |
+| 4 | WOOTTON KING | 1,7 | ROBERT HAVLIN | 493/55/–/2338 |
+| 2 | CHARIOTS OF FIRE | 3,9 | OISIN MURPHY | 144/116/–/– |
+| 1 | BAYSIDE WALTZ | 8,3 | DAVID PROBERT | 368/116/–/621 |
+| 3 | STRIKE FORCE MAX | 10 | BILLY LOUGHNANE | 223/179/–/418 |
+| 5 | STAR CAMELOT | 10 | FINLEY MARSH | –/253/–/124 |
 
 ### 2. EBF FILLIES' NOVICE STAKES (CLASS 3)
 
@@ -24,33 +24,32 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 7 | OUT LATE | 1,1 | SEAN DYLAN BOWEN | –/510/–/5309 |
+| 6 | MY SPRITELY | 8,5 | TYLER HEARD | –/540/–/4009 |
+| 8 | STILTON | 12 | DAVID PROBERT | 368/209/–/– |
+| 5 | INTANGIBLE TRUTH | 25 | OISIN MURPHY | 144/116/–/– |
 | 1 | ALANAH BANANAH | – | CIEREN FALLON | 321/24/–/– |
 | 2 | BLISTERING | – | ROSSA RYAN | 215/307/–/– |
 | 3 | DADDY STAR | – | BILLY LOUGHNANE | 223/253/–/124 |
 | 4 | FRIENDLY FORCE | – | ROWAN SCOTT | 509/358/–/– |
-| 5 | INTANGIBLE TRUTH | – | OISIN MURPHY | 144/116/–/– |
-| 6 | MY SPRITELY | – | TYLER HEARD | –/540/–/4009 |
-| 7 | OUT LATE | – | SEAN DYLAN BOWEN | –/510/–/5309 |
-| 8 | STILTON | – | DAVID PROBERT | 368/209/–/– |
 
 ### 3. EBF FILLIES' RESTRICTED NOVICE STAKES (CLASS 4)
 
-*19h00 · plat · 1400 m · 12 partants · cotes de l'extraction*
+*19h00 · plat · 1400 m · 11 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 5 | LADY'S GRACE | 1,5 | ROBERT HAVLIN | 493/55/–/521 |
+| 9 | ANOTHER SKY | 3,7 | DAVID PROBERT | 368/274/–/– |
+| 2 | WANNABE PERFECT | 16 | BILLY LOUGHNANE | 223/433/–/– |
+| 3 | ZEPHYRA | 16 | MARCO GHIANI | 376/105/–/1445 |
+| 6 | MEHEN | 16 | OISIN MURPHY | 144/657/–/– |
+| 12 | WEATHERINGWITHYOU | 33 | HARRY DAVIES | 381/35/–/– |
 | 1 | LIGHT FINGERED | – | PADDY BRADLEY | –/643/–/– |
-| 2 | WANNABE PERFECT | – | BILLY LOUGHNANE | 223/433/–/– |
-| 3 | ZEPHYRA | – | MARCO GHIANI | 376/105/–/1445 |
 | 4 | AUGUSTA SAVAGE | – | OWEN LEWIS | –/–/–/– |
-| 5 | LADY'S GRACE | – | ROBERT HAVLIN | 493/55/–/521 |
-| 6 | MEHEN | – | OISIN MURPHY | 144/657/–/– |
 | 7 | MESOLITHIC | – | DANIEL MUSCUTT | 452/581/–/521 |
-| 8 | MO ROCKO | – | FINLEY MARSH | –/253/–/– |
-| 9 | ANOTHER SKY | – | DAVID PROBERT | 368/274/–/– |
 | 10 | FABULOVA | – | CIEREN FALLON | 321/541/–/– |
 | 11 | HIGHLAND GREY | – | CALLUM HUTCHINSON | –/204/–/– |
-| 12 | WEATHERINGWITHYOU | – | HARRY DAVIES | 381/35/–/– |
 
 ### 4. NURSERY HANDICAP (CLASS 5)
 
@@ -58,20 +57,20 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | SOMERS ISLES | – | DAVID PROBERT | 368/116/–/2888 |
-| 2 | ARTHUR CARROT | – | BILLY LOUGHNANE | 223/433/–/– |
-| 3 | GREAT OAK | – | PIERRE-LOUIS JAMIN | 199/42/–/– |
-| 4 | ALJOON | – | LUKE MORRIS | 247/–/–/– |
-| 5 | FARASAN | – | OISIN MURPHY | 144/55/–/– |
-| 6 | TANSY LANE | – | ROBERT HAVLIN | 493/813/–/– |
+| 3 | GREAT OAK | 3,5 | PIERRE-LOUIS JAMIN | 199/42/–/– |
+| 14 | SOVEREIGNS HIGH | 7 | JACK DACE | –/158/–/– |
+| 1 | SOMERS ISLES | 10 | DAVID PROBERT | 368/116/–/2888 |
+| 2 | ARTHUR CARROT | 10 | BILLY LOUGHNANE | 223/433/–/– |
+| 5 | FARASAN | 10 | OISIN MURPHY | 144/55/–/– |
+| 6 | TANSY LANE | 10 | ROBERT HAVLIN | 493/813/–/– |
+| 10 | BOYSOFWALLSTREET | 10 | CALLUM SHEPHERD | 189/433/–/5543 |
+| 12 | SAKOWIN | 10 | FINLEY MARSH | –/253/–/– |
+| 4 | ALJOON | 21 | LUKE MORRIS | 247/–/–/– |
+| 9 | FAST PERFORMER | 21 | CIEREN FALLON | 321/24/–/2338 |
+| 11 | BABZINI | 21 | CHARLES BISHOP | –/550/–/2118 |
 | 7 | HORNDEAN | – | DANIEL MUSCUTT | 452/–/–/2806 |
 | 8 | KING OF MONTENEGRO | – | ROB HORNBY | 257/179/–/– |
-| 9 | FAST PERFORMER | – | CIEREN FALLON | 321/24/–/2338 |
-| 10 | BOYSOFWALLSTREET | – | CALLUM SHEPHERD | 189/433/–/5543 |
-| 11 | BABZINI | – | CHARLES BISHOP | –/550/–/2118 |
-| 12 | SAKOWIN | – | FINLEY MARSH | –/253/–/– |
 | 13 | GOLD REEF CITY | – | ROSSA RYAN | 215/158/–/2465 |
-| 14 | SOVEREIGNS HIGH | – | JACK DACE | –/158/–/– |
 
 ### 5. HANDICAP (CLASS 2) (LONDON STAYERS' SERIES QUALIFIER)
 
@@ -79,20 +78,20 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 2 | HOT FUSS | 4,1 | PIERRE-LOUIS JAMIN | 199/796/–/– |
+| 6 | GUILDMASTER | 4,1 | ROBERT HAVLIN | 493/55/–/46 |
+| 10 | SQUIRE DANAGHER | 4,1 | CHARLES BISHOP | –/–/–/– |
+| 5 | REAL DREAM | 8,3 | ROSSA RYAN | 215/599/–/– |
+| 14 | ARC ZOOSVE | 8,3 | ROB HORNBY | 257/–/–/– |
+| 3 | DURAJI | 16 | FINLEY MARSH | –/253/–/5648 |
+| 4 | BRASIL POWER | 16 | BILLY LOUGHNANE | 223/433/–/– |
+| 11 | LEVEL LOOK | 16 | OISIN MURPHY | 144/116/–/– |
 | 1 | ROARING LEGEND | – | H. J. HORGAN | –/–/–/– |
-| 2 | HOT FUSS | – | PIERRE-LOUIS JAMIN | 199/796/–/– |
-| 3 | DURAJI | – | FINLEY MARSH | –/253/–/5648 |
-| 4 | BRASIL POWER | – | BILLY LOUGHNANE | 223/433/–/– |
-| 5 | REAL DREAM | – | ROSSA RYAN | 215/599/–/– |
-| 6 | GUILDMASTER | – | ROBERT HAVLIN | 493/55/–/46 |
 | 7 | SYNERGISM | – | LUKE MORRIS | 247/–/–/– |
 | 8 | BOATSWAIN | – | HARRY DAVIES | 381/35/–/– |
 | 9 | CODIAK | – | OISIN ORR | –/221/–/– |
-| 10 | SQUIRE DANAGHER | – | CHARLES BISHOP | –/–/–/– |
-| 11 | LEVEL LOOK | – | OISIN MURPHY | 144/116/–/– |
 | 12 | SAX APPEAL | – | CALLUM SHEPHERD | 189/99/–/– |
 | 13 | INDEMNITY | – | DAVID PROBERT | 368/–/–/– |
-| 14 | ARC ZOOSVE | – | ROB HORNBY | 257/–/–/– |
 
 ### 6. HANDICAP (CLASS 5) (LONDON SPRINT SERIES QUALIFIER)
 
@@ -100,15 +99,15 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 9 | ROYAL ACCORD | 2,4 | MARCO GHIANI | 376/866/–/– |
+| 3 | SERENITY DREAM | 3,2 | JACK DOUGHTY | 485/–/–/– |
+| 2 | MODERN TIMES | 9,7 | LUKE MORRIS | 247/813/–/– |
+| 5 | BUCCABAY | 9,7 | BILLY LOUGHNANE | 223/550/–/– |
+| 6 | MARLBOROUGH PLACE | 9,7 | TARYN LANGLEY | –/–/–/– |
+| 8 | LIOSA | 9,7 | JACK DACE | –/–/–/– |
 | 1 | CARAGIO | – | SHAY FARMER | –/–/–/– |
-| 2 | MODERN TIMES | – | LUKE MORRIS | 247/813/–/– |
-| 3 | SERENITY DREAM | – | JACK DOUGHTY | 485/–/–/– |
 | 4 | INITIAL BLUE | – | ROSSA RYAN | 215/325/–/– |
-| 5 | BUCCABAY | – | BILLY LOUGHNANE | 223/550/–/– |
-| 6 | MARLBOROUGH PLACE | – | TARYN LANGLEY | –/–/–/– |
 | 7 | HUNDRED CAPS | – | DYLAN HOGAN | –/–/–/– |
-| 8 | LIOSA | – | JACK DACE | –/–/–/– |
-| 9 | ROYAL ACCORD | – | MARCO GHIANI | 376/866/–/– |
 | 10 | RECEIPT | – | ROB HORNBY | 257/–/–/– |
 | 11 | ELVETHAM | – | CIEREN FALLON | 321/–/–/– |
 | 12 | INDEPENDENT EXPERT | – | FINLEY MARSH | –/–/–/– |
@@ -119,34 +118,32 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | LADY MARIKO | – | SEAN LEVEY | 266/461/–/– |
+| 10 | NZURI | 3,3 | ROSE DAWES | –/–/–/– |
+| 5 | HAPPIER | 4 | TOBY MOORE | 287/–/–/– |
+| 1 | LADY MARIKO | 5 | SEAN LEVEY | 266/461/–/– |
+| 6 | LEONIE | 5 | OISIN MURPHY | 144/116/–/– |
+| 8 | DUSKAURA | 10 | KIEREN FOX | –/–/–/– |
+| 11 | JENNY JEROME | 10 | CHARLIE TUCKER | –/–/–/– |
 | 2 | LAHAN KINGMAN | – | FINLEY MARSH | –/253/–/– |
 | 3 | VISHAKA | – | CALLUM SHEPHERD | 189/–/–/– |
 | 4 | DIAMONDINTHEDARK | – | BILLY LOUGHNANE | 223/–/–/– |
-| 5 | HAPPIER | – | TOBY MOORE | 287/–/–/– |
-| 6 | LEONIE | – | OISIN MURPHY | 144/116/–/– |
 | 7 | AMELIA'S JOY | – | DAVID PROBERT | 368/–/–/– |
-| 8 | DUSKAURA | – | KIEREN FOX | –/–/–/– |
 | 9 | MAGNA | – | ROSSA RYAN | 215/–/–/– |
-| 10 | NZURI | – | ROSE DAWES | –/–/–/– |
-| 11 | JENNY JEROME | – | CHARLIE TUCKER | –/–/–/– |
 
 ### 8. HANDICAP (CLASS 6)
 
-*21h30 · plat · 1400 m · 13 partants · cotes de l'extraction*
+*21h30 · plat · 1400 m · 11 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | GLADIADORA | – | LIAM WRIGHT | –/–/–/– |
-| 2 | PENFOLDS GRANGE | – | KIEREN FOX | –/–/–/– |
-| 3 | ICONIC TIMES | – | SEAN DYLAN BOWEN | –/448/–/– |
-| 4 | TRAVEL AGENT | – | WILLIAM CARSON | –/–/–/– |
-| 5 | BERLINETTA | – | BILLY LOUGHNANE | 223/861/–/– |
-| 6 | EYES FRONT | – | ASHLEY LEWIS | –/658/–/– |
+| 3 | ICONIC TIMES | 3 | SEAN DYLAN BOWEN | –/448/–/– |
+| 5 | BERLINETTA | 3,7 | BILLY LOUGHNANE | 223/861/–/– |
+| 2 | PENFOLDS GRANGE | 9,2 | KIEREN FOX | –/–/–/– |
+| 4 | TRAVEL AGENT | 9,2 | WILLIAM CARSON | –/–/–/– |
+| 6 | EYES FRONT | 9,2 | ASHLEY LEWIS | –/658/–/– |
+| 8 | VIKING GLORY | 9,2 | CIEREN FALLON | 321/813/–/– |
+| 11 | MANHATTAN MIRAGE | 9,2 | LUKE MORRIS | 247/–/–/– |
 | 7 | DARK MANDATE | – | CHARLES BISHOP | –/550/–/– |
-| 8 | VIKING GLORY | – | CIEREN FALLON | 321/813/–/– |
 | 9 | BRAVE BYREFLECTION | – | TOM KIELY-MARSHALL | –/–/–/– |
 | 10 | CREDIT FORGEDD IT | – | SEAN LEVEY | 266/–/–/– |
-| 11 | MANHATTAN MIRAGE | – | LUKE MORRIS | 247/–/–/– |
-| 12 | RIDGER | – | OISIN MURPHY | 144/307/–/– |
 | 13 | PINK DIAMOND GIRL | – | JOSEPHINE GORDON | –/42/–/– |

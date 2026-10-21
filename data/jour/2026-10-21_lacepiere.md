@@ -1,8 +1,8 @@
 # LA CEPIERE — 21/10/2026
 
-8 courses.
+8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
@@ -12,19 +12,19 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | ENEA FONT | – | J. CHAVATTE |
-| 2 | I AM PHYT'S | – | J.H. TREICH |
-| 3 | INVICTUS NAR | – | F. MARTY |
-| 4 | HARLEM DE L'ITON | – | M. CINIER |
-| 5 | GHOST DE BEAULIEU | – | P. GERAY |
-| 6 | IRRATI DUEM | – | PIERRICK LE MOEL |
-| 7 | INCREDIBLE GO | – | TH. DUCOS |
-| 8 | ICARE DE PHYT'S | – | M. GRASSET |
-| 9 | HELIOS D'ELA | – | C. GAZENGEL |
-| 10 | FREEDOM | – | O. RAFFIN |
-| 11 | GALANT DE CAREL | – | M. TIJOU |
-| 12 | GERICAULT | – | TH. BRIAND |
-| 13 | ICARE DU BERYL | – | M. CRIADO |
+| 12 | GERICAULT | 3,7 | TH. BRIAND |
+| 13 | ICARE DU BERYL | 4,5 | M. CRIADO |
+| 10 | FREEDOM | 4,7 | O. RAFFIN |
+| 1 | ENEA FONT | 5,5 | J. CHAVATTE |
+| 4 | HARLEM DE L'ITON | 15 | M. CINIER |
+| 7 | INCREDIBLE GO | 21 | TH. DUCOS |
+| 5 | GHOST DE BEAULIEU | 32 | P. GERAY |
+| 8 | ICARE DE PHYT'S | 53 | M. GRASSET |
+| 6 | IRRATI DUEM | 60 | PIERRICK LE MOEL |
+| 3 | INVICTUS NAR | 79 | F. MARTY |
+| 2 | I AM PHYT'S | 81 | J.H. TREICH |
+| 11 | GALANT DE CAREL | 193 | M. TIJOU |
+| 9 | HELIOS D'ELA | 235 | C. GAZENGEL |
 
 ### 2. PRIX DE L'UNAT
 
@@ -32,16 +32,16 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | JOYAU DE FAEL | – | D. BOUYNE |
-| 2 | ISABELLE GRAND PRE | – | E. PEREKRESTOFF |
-| 3 | IVANHOE DU FIER | – | CHARLY CLOZIER |
-| 4 | KEEPER DREAM | – | M. RAHAULT |
-| 5 | GALAXIE LIMOUSINE | – | J. BOUYNE |
-| 6 | GENIUS DE BRAYE | – | A. GENESTE |
-| 7 | JASMIN D'AVENIR | – | C. LANGLOIS |
-| 8 | JOURNEE A LA GRAVE | – | A. GONCALVES DA SILVA |
-| 9 | HARKONNEN | – | B. CANDELLE-GARDENQ |
-| 10 | GRAND RESTAURANT | – | F. JULIEN |
+| 4 | KEEPER DREAM | 1,7 | M. RAHAULT |
+| 7 | JASMIN D'AVENIR | 5,7 | C. LANGLOIS |
+| 10 | GRAND RESTAURANT | 7,7 | F. JULIEN |
+| 1 | JOYAU DE FAEL | 10 | D. BOUYNE |
+| 9 | HARKONNEN | 17 | B. CANDELLE-GARDENQ |
+| 6 | GENIUS DE BRAYE | 24 | A. GENESTE |
+| 8 | JOURNEE A LA GRAVE | 56 | A. GONCALVES DA SILVA |
+| 3 | IVANHOE DU FIER | 59 | CHARLY CLOZIER |
+| 2 | ISABELLE GRAND PRE | 72 | E. PEREKRESTOFF |
+| 5 | GALAXIE LIMOUSINE | 88 | J. BOUYNE |
 
 ### 3. PRIX DE L'HIPPODROME DE BORDEAUX
 
@@ -49,17 +49,17 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | NEPTUNE DE KACY | – | C. GAZENGEL |
-| 2 | NAPOLEON PAN | – | M. GERGOUIL |
-| 3 | NUMBER ONE PIEMONT | – | M.X. CHARLOT |
-| 4 | NATIF DES CAILLONS | – | A. HONORE |
-| 5 | NICE BOY BOURBON | – | H. MONTHULE |
-| 6 | NOUBA D'ATOUT | – | M. CRIADO |
-| 7 | NOSTARMAGNAC | – | Q. MACHET |
-| 8 | NUIT A LA GRAVE | – | N. LANGLOIS |
-| 9 | NUBA DE PERVENCHE | – | M. GRASSET |
-| 10 | NONONINO | – | A. ABRIVARD |
-| 11 | NANO UP STAR | – | V. CABOS |
+| 10 | NONONINO | 2,9 | A. ABRIVARD |
+| 5 | NICE BOY BOURBON | 4 | H. MONTHULE |
+| 11 | NANO UP STAR | 5,2 | V. CABOS |
+| 8 | NUIT A LA GRAVE | 8,9 | N. LANGLOIS |
+| 6 | NOUBA D'ATOUT | 11 | M. CRIADO |
+| 7 | NOSTARMAGNAC | 14 | Q. MACHET |
+| 9 | NUBA DE PERVENCHE | 31 | M. GRASSET |
+| 1 | NEPTUNE DE KACY | 46 | C. GAZENGEL |
+| 3 | NUMBER ONE PIEMONT | 67 | M.X. CHARLOT |
+| 4 | NATIF DES CAILLONS | 67 | A. HONORE |
+| 2 | NAPOLEON PAN | 91 | M. GERGOUIL |
 
 ### 4. PRIX PMU +
 
@@ -67,17 +67,17 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | IMOKO DU BOUILLON | – | M. TIJOU |
-| 2 | INCUDINE | – | CH. BOUTEILLER |
-| 3 | IDEALE D'ABBEVILLE | – | Mlle C. SAOUT |
-| 4 | JULIE DU CLOS | – | Mlle S. TREICH |
-| 5 | IMHOTEP BUROIS | – | NOE BRUN |
-| 6 | GALIBOT DE L'ISOP | – | Mme CH. SCHOTTER |
-| 7 | INSTANT GRAVE | – | Mlle M. COLLET |
-| 8 | HUGO OCCAGNES | – | P. GERAY |
-| 9 | INDICE DELADOU | – | Mlle E. BOUCLET |
-| 10 | FALTO DES LANDIERS | – | J. CERISIER |
-| 11 | INSTINCT SAINT BAR | – | A. ABRIVARD |
+| 11 | INSTINCT SAINT BAR | 2,6 | A. ABRIVARD |
+| 9 | INDICE DELADOU | 3,7 | Mlle E. BOUCLET |
+| 7 | INSTANT GRAVE | 6,3 | Mlle M. COLLET |
+| 8 | HUGO OCCAGNES | 7,1 | P. GERAY |
+| 4 | JULIE DU CLOS | 22 | Mlle S. TREICH |
+| 10 | FALTO DES LANDIERS | 22 | J. CERISIER |
+| 1 | IMOKO DU BOUILLON | 29 | M. TIJOU |
+| 3 | IDEALE D'ABBEVILLE | 32 | Mlle C. SAOUT |
+| 5 | IMHOTEP BUROIS | 50 | NOE BRUN |
+| 2 | INCUDINE | 76 | CH. BOUTEILLER |
+| 6 | GALIBOT DE L'ISOP | 86 | Mme CH. SCHOTTER |
 
 ### 5. GRAND PRIX DE LA CEPIERE
 
@@ -85,17 +85,17 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KAVALEUR D'ENFER | – | M. CRIADO |
-| 2 | JOLIE DE L'AUMANCE | – | P. GERAY |
-| 3 | CAMERON | – | TH. BRIAND |
-| 4 | HASHTAG DUB'S | – | F. MARTY |
-| 5 | KAPORAL VISAIS | – | N. CINIER |
-| 6 | IVRE DE TOI | – | M. GRASSET |
-| 7 | KENTUCKY IDEAL | – | CH. HESLOUIN |
-| 8 | JACANA | – | Mme LANA HENRY |
-| 9 | DUNA DI GIRIFALCO | – | N. BRUN |
-| 10 | JEU INTERDIT | – | J.H. TREICH |
-| 11 | KLASSICA BLEUE | – | A. ABRIVARD |
+| 11 | KLASSICA BLEUE | 3,5 | A. ABRIVARD |
+| 1 | KAVALEUR D'ENFER | 4,3 | M. CRIADO |
+| 7 | KENTUCKY IDEAL | 4,5 | CH. HESLOUIN |
+| 5 | KAPORAL VISAIS | 6,2 | N. CINIER |
+| 3 | CAMERON | 8,7 | TH. BRIAND |
+| 8 | JACANA | 28 | Mme LANA HENRY |
+| 2 | JOLIE DE L'AUMANCE | 32 | P. GERAY |
+| 10 | JEU INTERDIT | 54 | J.H. TREICH |
+| 6 | IVRE DE TOI | 57 | M. GRASSET |
+| 9 | DUNA DI GIRIFALCO | 59 | N. BRUN |
+| 4 | HASHTAG DUB'S | 96 | F. MARTY |
 
 ### 6. 49ÈME GRAND PRIX DU SUD-OUEST - PARIS TURF
 
@@ -103,14 +103,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | FILOU D'ANJOU | – | F. CLOZIER |
-| 2 | JEANNETTE PRIORY | – | T. LE BELLER |
-| 3 | HYMNE DU GERS | – | Mme LANA HENRY |
-| 4 | FAKIR MERITE | – | F. MARTY |
-| 5 | IDAO DE TILLARD | – | CL. DUVALDESTIN |
-| 6 | INEXESS BLEU | – | A. ABRIVARD |
-| 7 | IDEAL DU ROCHER | – | ALEXANDRE BODIN |
-| 8 | NINEPOINTS LASSE | – | TH. BRIAND |
+| 5 | IDAO DE TILLARD | 1,8 | CL. DUVALDESTIN |
+| 6 | INEXESS BLEU | 3,1 | A. ABRIVARD |
+| 2 | JEANNETTE PRIORY | 8,1 | T. LE BELLER |
+| 7 | IDEAL DU ROCHER | 14 | ALEXANDRE BODIN |
+| 1 | FILOU D'ANJOU | 46 | F. CLOZIER |
+| 4 | FAKIR MERITE | 56 | F. MARTY |
+| 8 | NINEPOINTS LASSE | 60 | TH. BRIAND |
+| 3 | HYMNE DU GERS | 62 | Mme LANA HENRY |
 
 ### 7. PRIX DE L'HIPPODROME D'AGEN
 
@@ -118,14 +118,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MILANO DE LIGNY | – | M. GRASSET |
-| 2 | MAGNUM DAIRPET | – | ET. CLOZIER |
-| 3 | MAZAR DE VANDEL | – | TH. DUCOS |
-| 4 | MISTER SOLO | – | F. MARTY |
-| 5 | MALICE D'ATOUT | – | PIERRICK LE MOEL |
-| 6 | MISTER DU CHOQUEL | – | M. GERGOUIL |
-| 7 | MAURICIEN | – | F. CLOZIER |
-| 8 | MANHATTAN EMGE | – | Mme LANA HENRY |
+| 8 | MANHATTAN EMGE | 1,5 | Mme LANA HENRY |
+| 7 | MAURICIEN | 5,2 | F. CLOZIER |
+| 6 | MISTER DU CHOQUEL | 7 | M. GERGOUIL |
+| 4 | MISTER SOLO | 22 | F. MARTY |
+| 5 | MALICE D'ATOUT | 29 | PIERRICK LE MOEL |
+| 3 | MAZAR DE VANDEL | 35 | TH. DUCOS |
+| 2 | MAGNUM DAIRPET | 38 | ET. CLOZIER |
+| 1 | MILANO DE LIGNY | 39 | M. GRASSET |
 
 ### 8. PRIX DE L'HIPPODROME DE BEAUMONT
 
@@ -133,17 +133,17 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | LIBERTINE DE FRECA | – | N.R. BROSSARD |
-| 2 | LADIVINA | – | TH. DUCOS |
-| 3 | LAURENCE MADRIK | – | H. MONTHULE |
-| 4 | LOVE ME TRUE | – | M. GRASSET |
-| 5 | LUNA DOMA | – | F. CLOZIER |
-| 6 | LUCIDE CASTELETS | – | M. TIJOU |
-| 7 | LEWIS D'EVRON | – | D. LAISIS |
-| 8 | LEWIS D'ALEXIANE | – | J. BESCHER |
-| 9 | LIBERTINE ECAJEUL | – | A. HONORE |
-| 10 | LEADER DE L'ITON | – | TH. BRIAND |
-| 11 | LAST KNIGHT MAYBE | – | J. ASSELIE |
-| 12 | LE WINNER AS | – | PIERRICK LE MOEL |
-| 13 | LUZ DES CHARENTES | – | P. GERAY |
-| 14 | LOULOU'S TEAM | – | M. CRIADO |
+| 3 | LAURENCE MADRIK | 4,8 | H. MONTHULE |
+| 2 | LADIVINA | 5,1 | TH. DUCOS |
+| 10 | LEADER DE L'ITON | 5,7 | TH. BRIAND |
+| 8 | LEWIS D'ALEXIANE | 7,1 | J. BESCHER |
+| 14 | LOULOU'S TEAM | 12 | M. CRIADO |
+| 1 | LIBERTINE DE FRECA | 13 | N.R. BROSSARD |
+| 5 | LUNA DOMA | 14 | F. CLOZIER |
+| 6 | LUCIDE CASTELETS | 19 | M. TIJOU |
+| 7 | LEWIS D'EVRON | 34 | D. LAISIS |
+| 11 | LAST KNIGHT MAYBE | 34 | J. ASSELIE |
+| 13 | LUZ DES CHARENTES | 36 | P. GERAY |
+| 4 | LOVE ME TRUE | 41 | M. GRASSET |
+| 12 | LE WINNER AS | 44 | PIERRICK LE MOEL |
+| 9 | LIBERTINE ECAJEUL | 76 | A. HONORE |
