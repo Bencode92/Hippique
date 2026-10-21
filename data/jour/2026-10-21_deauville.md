@@ -138,17 +138,17 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DE LA LONDE
 
-*20h15 · plat · 1500 m · 10 partants · cotes à T−2:28*
+*20h15 · plat · 1500 m · 10 partants · cotes à T−0:27*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 8 | SPANISH BREEZE CEN | 3,8 | 6,3 | 4,13 | -7,9 % | A.LEMAITRE | 11/78/25/22 |
-| 10 | ABIAT | 6,6 | 10 | 6,30 | **+4,8 %** | E.HARDOUIN | 27/79/91/422 |
-| 3 | CENTRAL PARK WEST | 7,5 | 5 | 8,56 | -12,4 % | T.TRULLIER | 21/54/14/535 |
-| 2 | CIEL DE PARIS | 8,3 | 5,7 | 10,29 | -19,3 % | T.BACHELOT | 16/17/20/295 |
-| 6 | TASHANKA | 8,7 | 14 | 9,19 | -5,4 % | C.DEMURO | 1/47/70/14 |
-| 7 | CHARENGO | 9,9 | 23 | 11,34 | -12,7 % | M.GUYON | 4/148/30/3196 |
-| 9 | ZAWAN | 10 | 11 | 12,52 | -20,1 % | A.POUCHIN | 6/66/247/287 |
-| 5 | ROSAPENNA | 17 | 6 | 22,30 | -23,8 % | S.PASQUIER | 23/142/62/4 |
-| 1 | ZELMAN | 18 | 12 | 20,86 | -13,7 % | A.HAMELIN | 22/196/217/350 |
-| 4 | MARKUS | 20 | 15 | 28,93 | -30,9 % | A.MOLINS | 34/73/4/191 |
+| 8 | SPANISH BREEZE CEN | 3,6 | 6,3 | 3,92 | -8,2 % | A.LEMAITRE | 11/78/25/22 |
+| 10 | ABIAT | 7,6 | 10 | 7,42 | **+2,4 %** | E.HARDOUIN | 27/79/91/422 |
+| 3 | CENTRAL PARK WEST | 7,7 | 5 | 8,87 | -13,2 % | T.TRULLIER | 21/54/14/535 |
+| 2 | CIEL DE PARIS | 8 | 5,7 | 9,91 | -19,3 % | T.BACHELOT | 16/17/20/295 |
+| 6 | TASHANKA | 8,4 | 14 | 8,87 | -5,3 % | C.DEMURO | 1/47/70/14 |
+| 9 | ZAWAN | 9,7 | 11 | 12,14 | -20,1 % | A.POUCHIN | 6/66/247/287 |
+| 7 | CHARENGO | 11 | 23 | 12,89 | -14,7 % | M.GUYON | 4/148/30/3196 |
+| 5 | ROSAPENNA | 15 | 6 | 19,37 | -22,6 % | S.PASQUIER | 23/142/62/4 |
+| 1 | ZELMAN | 16 | 12 | 18,30 | -12,5 % | A.HAMELIN | 22/196/217/350 |
+| 4 | MARKUS | 21 | 15 | 30,77 | -31,8 % | A.MOLINS | 34/73/4/191 |
