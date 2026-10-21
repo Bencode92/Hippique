@@ -4,44 +4,44 @@
   "reunion": 2,
   "heure_depart": 1792584900000,
   "distance": 2400,
-  "scraped_at": "2026-10-21T14:02:39.804446+02:00",
-  "minutes_avant_depart": 12,
+  "scraped_at": "2026-10-21T14:06:39.977600+02:00",
+  "minutes_avant_depart": 8,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ARNAY LE DUC",
-      "cote_live": 8.0,
+      "cote_live": 7.9,
       "cote_reference": 5.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792584144000
+      "timestamp_cote": 1792584386000
     },
     {
       "numPmu": 2,
       "nom": "GOLDEN BLUSH",
-      "cote_live": 2.7,
+      "cote_live": 2.5,
       "cote_reference": 1.8,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792584144000
+      "timestamp_cote": 1792584386000
     },
     {
       "numPmu": 4,
       "nom": "KINGORI",
-      "cote_live": 5.4,
+      "cote_live": 4.9,
       "cote_reference": 7.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792584144000
+      "timestamp_cote": 1792584386000
     },
     {
       "numPmu": 5,
       "nom": "PORT SANTA PONSA",
-      "cote_live": 3.9,
+      "cote_live": 4.6,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792584144000
+      "timestamp_cote": 1792584386000
     },
     {
       "numPmu": 6,
@@ -50,16 +50,16 @@
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792584144000
+      "timestamp_cote": 1792584386000
     },
     {
       "numPmu": 7,
       "nom": "PERSIANA",
-      "cote_live": 7.3,
+      "cote_live": 7.9,
       "cote_reference": 9.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792584144000
+      "timestamp_cote": 1792584386000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -122,6 +122,18 @@
         "5": 3.9,
         "6": 15.0,
         "7": 7.3
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T14:06:39.977600+02:00",
+      "minutes_avant_depart": 8.335861900000001,
+      "cotes": {
+        "1": 7.9,
+        "2": 2.5,
+        "4": 4.9,
+        "5": 4.6,
+        "6": 15.0,
+        "7": 7.9
       }
     }
   ]
