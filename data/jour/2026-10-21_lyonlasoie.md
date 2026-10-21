@@ -91,16 +91,16 @@
 
 ### 6. PRIX JOSEPH CREISSON
 
-*13h43 · plat · 1800 m · 6 partants · cotes à T−8:20*
+*13h43 · plat · 1800 m · 6 partants · cotes à T−5:00*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | CANDY CHERIE | 4,4 | B.LABATE | 113/88/252/450 |
-| 3 | BOOMERANG | 4,4 | M.VELON | 28/4/27/91 |
-| 7 | IDAHO JAMES | 4,8 | A.CRASTUS | 17/50/839/1508 |
-| 6 | JOYEUSE DE ROMAY | 5,3 | N.ASTIER | 160/50/1803/791 |
-| 4 | RABBAH | 6,2 | H.BESNIER | 12/4/592/1475 |
-| 1 | ELUSIVE GLORY | 7,7 | C.BILLARDELLO | 118/306/7/504 |
+| 3 | BOOMERANG | 4,3 | M.VELON | 28/4/27/91 |
+| 2 | CANDY CHERIE | 4,7 | B.LABATE | 113/88/252/450 |
+| 7 | IDAHO JAMES | 5,2 | A.CRASTUS | 17/50/839/1508 |
+| 4 | RABBAH | 5,3 | H.BESNIER | 12/4/592/1475 |
+| 6 | JOYEUSE DE ROMAY | 6,2 | N.ASTIER | 160/50/1803/791 |
+| 1 | ELUSIVE GLORY | 6,4 | C.BILLARDELLO | 118/306/7/504 |
 
 ### 7. PRIX DE PROVENCE
 
