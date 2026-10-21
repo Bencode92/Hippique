@@ -1,6 +1,6 @@
 # DEAUVILLE — 21/10/2026
 
-8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 6 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -122,33 +122,33 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DU CHATEAU DE CREVECOEUR
 
-*19h45 · plat · 1500 m · 9 partants · cotes à T−2:28*
+*19h45 · plat · 1500 m · 9 partants · cotes à T−0:28*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 7 | MAGIC INSPIRATION | 3,7 | 5,4 | 4,19 | -11,7 % | T.TRULLIER | 21/37/335/398 |
-| 3 | OZARK JAMES | 4,5 | 6,3 | 5,32 | -15,4 % | C.DEMURO | 1/196/597/1452 |
-| 8 | SHABAZI | 4,7 | 5,8 | 5,58 | -15,8 % | H.JOURNIAC | 43/8/954/90 |
-| 1 | MEDRONHO | 6,4 | 6 | 7,45 | -14,1 % | A.MADAMET | 10/109/11/134 |
-| 6 | HEILIGENSTEIN | 11 | 4,8 | 13,43 | -18,1 % | A.POUCHIN | 6/31/58/163 |
-| 9 | BHASKARI | 14 | 6,3 | 17,05 | -17,9 % | R.MANGIONE | 78/2/53/129 |
-| 2 | TASHARRAFNA | 16 | 41 | 19,93 | -19,7 % | D.PILITTA | 267/32/88/141 |
-| 4 | ALCANE | 29 | 23 | 44,44 | -34,7 % | C.GROSBOIS | 25/153/2393/– |
-| 5 | POWER CELESTE | 33 | 41 | 47,83 | -31,0 % | C.BELMONT | 171/142/829/3061 |
+| 7 | MAGIC INSPIRATION | 3,1 | 5,4 | 3,48 | -10,8 % | T.TRULLIER | 21/37/335/398 |
+| 1 | MEDRONHO | 4,8 | 6 | 4,97 | -3,4 % | A.MADAMET | 10/109/11/134 |
+| 8 | SHABAZI | 5 | 5,8 | 5,73 | -12,8 % | H.JOURNIAC | 43/8/954/90 |
+| 3 | OZARK JAMES | 5,4 | 6,3 | 6,51 | -17,0 % | C.DEMURO | 1/196/597/1452 |
+| 6 | HEILIGENSTEIN | 14 | 4,8 | 17,75 | -21,1 % | A.POUCHIN | 6/31/58/163 |
+| 9 | BHASKARI | 17 | 6,3 | 21,30 | -20,2 % | R.MANGIONE | 78/2/53/129 |
+| 2 | TASHARRAFNA | 21 | 41 | 27,21 | -22,8 % | D.PILITTA | 267/32/88/141 |
+| 4 | ALCANE | 37 | 23 | 58,23 | -36,5 % | C.GROSBOIS | 25/153/2393/– |
+| 5 | POWER CELESTE | 38 | 41 | 55,79 | -31,9 % | C.BELMONT | 171/142/829/3061 |
 
 ### 8. PRIX DE LA LONDE
 
-*20h15 · plat · 1500 m · 10 partants · cotes de l'extraction*
+*20h15 · plat · 1500 m · 10 partants · cotes à T−29:48*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 3 | CENTRAL PARK WEST | 5 | 6,26 | -20,2 % | T.TRULLIER | 21/54/14/535 |
-| 2 | CIEL DE PARIS | 5,7 | 6,99 | -18,4 % | T.BACHELOT | 16/17/20/295 |
-| 5 | ROSAPENNA | 6 | 6,96 | -13,8 % | S.PASQUIER | 23/142/62/4 |
-| 8 | SPANISH BREEZE CEN | 6,3 | 6,78 | -7,1 % | A.LEMAITRE | 11/78/25/22 |
-| 10 | ABIAT | 10 | 11,10 | -9,9 % | E.HARDOUIN | 27/79/91/422 |
-| 9 | ZAWAN | 11 | 14,12 | -22,1 % | A.POUCHIN | 6/66/247/287 |
-| 1 | ZELMAN | 12 | 13,13 | -8,6 % | A.HAMELIN | 22/196/217/350 |
-| 6 | TASHANKA | 14 | 17,62 | -20,5 % | C.DEMURO | 1/47/70/14 |
-| 4 | MARKUS | 15 | 20,83 | -28,0 % | A.MOLINS | 34/73/4/191 |
-| 7 | CHARENGO | 23 | 33,42 | -31,2 % | M.GUYON | 4/148/30/3196 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 2 | CIEL DE PARIS | 5,8 | 5,7 | 7,93 | -26,8 % | T.BACHELOT | 16/17/20/295 |
+| 3 | CENTRAL PARK WEST | 6,7 | 5 | 7,91 | -15,2 % | T.TRULLIER | 21/54/14/535 |
+| 6 | TASHANKA | 7,2 | 14 | 7,46 | -3,5 % | C.DEMURO | 1/47/70/14 |
+| 10 | ABIAT | 7,9 | 10 | 7,78 | **+1,6 %** | E.HARDOUIN | 27/79/91/422 |
+| 8 | SPANISH BREEZE CEN | 8,2 | 6,3 | 10,00 | -18,0 % | A.LEMAITRE | 11/78/25/22 |
+| 9 | ZAWAN | 10 | 11 | 12,63 | -20,8 % | A.POUCHIN | 6/66/247/287 |
+| 5 | ROSAPENNA | 11 | 6 | 13,51 | -18,6 % | S.PASQUIER | 23/142/62/4 |
+| 7 | CHARENGO | 11 | 23 | 12,94 | -15,0 % | M.GUYON | 4/148/30/3196 |
+| 1 | ZELMAN | 12 | 12 | 13,14 | -8,7 % | A.HAMELIN | 22/196/217/350 |
+| 4 | MARKUS | 12 | 15 | 16,78 | -28,5 % | A.MOLINS | 34/73/4/191 |
