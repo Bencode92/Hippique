@@ -117,14 +117,14 @@
 
 ### 8. PRIX DES CIGALES
 
-*14h47 · plat · 2150 m · 7 partants · cotes à T−8:20*
+*14h47 · plat · 2150 m · 7 partants · cotes à T−5:00*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | TASTEFUL | 3,5 | A.ORANI | 5/9/1/1283 |
-| 3 | HOLD MY DREAMS | 4,9 | A.CRASTUS | 17/36/81/1327 |
-| 5 | DELIRE D'AMOUR | 5,2 | M.GRANDIN | 3/445/15/1147 |
-| 2 | JUST FOR MEME | 6,2 | M.VELON | 28/4/354/1250 |
-| 4 | I AM MAELIA | 9,7 | E.PUILLET-RODA | 73/93/585/1465 |
-| 6 | DANCE DE LUNE | 9,9 | H.BOUTIN | 14/18/257/1223 |
+| 1 | TASTEFUL | 3,8 | A.ORANI | 5/9/1/1283 |
+| 3 | HOLD MY DREAMS | 4,4 | A.CRASTUS | 17/36/81/1327 |
+| 2 | JUST FOR MEME | 5,6 | M.VELON | 28/4/354/1250 |
+| 5 | DELIRE D'AMOUR | 6 | M.GRANDIN | 3/445/15/1147 |
+| 6 | DANCE DE LUNE | 9,1 | H.BOUTIN | 14/18/257/1223 |
+| 4 | I AM MAELIA | 9,9 | E.PUILLET-RODA | 73/93/585/1465 |
 | 8 | MAC TYSON | 10 | J.NICOLEAU | 137/4/21/2950 |
