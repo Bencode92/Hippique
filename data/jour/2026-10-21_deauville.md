@@ -122,19 +122,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DU CHATEAU DE CREVECOEUR
 
-*19h45 · plat · 1500 m · 9 partants · cotes à T−20:28*
+*19h45 · plat · 1500 m · 9 partants · cotes à T−16:28*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | OZARK JAMES | 4,3 | 6,3 | 5,82 | -26,2 % | C.DEMURO | 1/196/597/1452 |
-| 7 | MAGIC INSPIRATION | 4,5 | 5,4 | 4,64 | -3,1 % | T.TRULLIER | 21/37/335/398 |
-| 8 | SHABAZI | 5,9 | 5,8 | 6,93 | -14,9 % | H.JOURNIAC | 43/8/954/90 |
-| 6 | HEILIGENSTEIN | 6,8 | 4,8 | 7,98 | -14,8 % | A.POUCHIN | 6/31/58/163 |
-| 1 | MEDRONHO | 8,7 | 6 | 10,64 | -18,2 % | A.MADAMET | 10/109/11/134 |
-| 9 | BHASKARI | 11 | 6,3 | 12,84 | -14,3 % | R.MANGIONE | 78/2/53/129 |
-| 5 | POWER CELESTE | 13 | 41 | 15,61 | -16,7 % | C.BELMONT | 171/142/829/3061 |
-| 2 | TASHARRAFNA | 20 | 41 | 25,78 | -22,4 % | D.PILITTA | 267/32/88/141 |
-| 4 | ALCANE | 22 | 23 | 32,34 | -32,0 % | C.GROSBOIS | 25/153/2393/– |
+| 3 | OZARK JAMES | 3,2 | 6,3 | 3,80 | -15,8 % | C.DEMURO | 1/196/597/1452 |
+| 7 | MAGIC INSPIRATION | 4,4 | 5,4 | 4,54 | -3,0 % | T.TRULLIER | 21/37/335/398 |
+| 6 | HEILIGENSTEIN | 6,6 | 4,8 | 7,72 | -14,5 % | A.POUCHIN | 6/31/58/163 |
+| 8 | SHABAZI | 7,1 | 5,8 | 8,60 | -17,4 % | H.JOURNIAC | 43/8/954/90 |
+| 1 | MEDRONHO | 10 | 6 | 12,01 | -16,7 % | A.MADAMET | 10/109/11/134 |
+| 9 | BHASKARI | 13 | 6,3 | 15,64 | -16,9 % | R.MANGIONE | 78/2/53/129 |
+| 5 | POWER CELESTE | 17 | 41 | 21,39 | -20,5 % | C.BELMONT | 171/142/829/3061 |
+| 2 | TASHARRAFNA | 21 | 41 | 27,32 | -23,1 % | D.PILITTA | 267/32/88/141 |
+| 4 | ALCANE | 28 | 23 | 42,71 | -34,4 % | C.GROSBOIS | 25/153/2393/– |
 
 ### 8. PRIX DE LA LONDE
 
