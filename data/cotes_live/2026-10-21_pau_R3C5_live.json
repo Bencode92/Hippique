@@ -4,8 +4,8 @@
   "reunion": 3,
   "heure_depart": 1792584720000,
   "distance": 2000,
-  "scraped_at": "2026-10-21T13:59:19.866127+02:00",
-  "minutes_avant_depart": 13,
+  "scraped_at": "2026-10-21T14:03:19.833808+02:00",
+  "minutes_avant_depart": 9,
   "participants": [
     {
       "numPmu": 1,
@@ -14,25 +14,25 @@
       "cote_reference": 56.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583942000
+      "timestamp_cote": 1792584184000
     },
     {
       "numPmu": 2,
       "nom": "QASWARAH",
-      "cote_live": 7.3,
+      "cote_live": 6.3,
       "cote_reference": 8.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583942000
+      "timestamp_cote": 1792584184000
     },
     {
       "numPmu": 3,
       "nom": "SHEHAB",
-      "cote_live": 10.0,
+      "cote_live": 12.0,
       "cote_reference": 8.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583942000
+      "timestamp_cote": 1792584184000
     },
     {
       "numPmu": 4,
@@ -41,7 +41,7 @@
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583942000
+      "timestamp_cote": 1792584184000
     },
     {
       "numPmu": 5,
@@ -50,25 +50,25 @@
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583942000
+      "timestamp_cote": 1792584184000
     },
     {
       "numPmu": 6,
       "nom": "AF QASEEMAH",
-      "cote_live": 4.9,
+      "cote_live": 5.1,
       "cote_reference": 4.8,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792583942000
+      "timestamp_cote": 1792584184000
     },
     {
       "numPmu": 7,
       "nom": "NOLIMIT MM HIPOLYT",
-      "cote_live": 76.0,
+      "cote_live": 52.0,
       "cote_reference": null,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583942000
+      "timestamp_cote": 1792584184000
     },
     {
       "numPmu": 8,
@@ -77,34 +77,34 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583942000
+      "timestamp_cote": 1792584184000
     },
     {
       "numPmu": 9,
       "nom": "GAZI DE MONLAU",
-      "cote_live": 22.0,
+      "cote_live": 20.0,
       "cote_reference": 37.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583942000
+      "timestamp_cote": 1792584184000
     },
     {
       "numPmu": 10,
       "nom": "NEFISA HIPOLYTE",
-      "cote_live": 13.0,
+      "cote_live": 15.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583942000
+      "timestamp_cote": 1792584184000
     },
     {
       "numPmu": 11,
       "nom": "HASNA GRINE",
-      "cote_live": 32.0,
+      "cote_live": 33.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583942000
+      "timestamp_cote": 1792584184000
     },
     {
       "numPmu": 12,
@@ -113,34 +113,34 @@
       "cote_reference": 4.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583942000
+      "timestamp_cote": 1792584184000
     },
     {
       "numPmu": 13,
       "nom": "NADIR DE L'ARDUS",
-      "cote_live": 42.0,
+      "cote_live": 37.0,
       "cote_reference": 50.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583942000
+      "timestamp_cote": 1792584184000
     },
     {
       "numPmu": 14,
       "nom": "AWWAAD",
-      "cote_live": 13.0,
+      "cote_live": 15.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583942000
+      "timestamp_cote": 1792584184000
     },
     {
       "numPmu": 15,
       "nom": "DU'AIJ",
-      "cote_live": 30.0,
+      "cote_live": 23.0,
       "cote_reference": 45.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792583942000
+      "timestamp_cote": 1792584184000
     }
   ],
   "hippodrome": "PAU",
@@ -248,6 +248,27 @@
         "13": 42.0,
         "14": 13.0,
         "15": 30.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T14:03:19.833808+02:00",
+      "minutes_avant_depart": 8.67166695,
+      "cotes": {
+        "1": 33.0,
+        "2": 6.3,
+        "3": 12.0,
+        "4": 14.0,
+        "5": 19.0,
+        "6": 5.1,
+        "7": 52.0,
+        "8": 10.0,
+        "9": 20.0,
+        "10": 15.0,
+        "11": 33.0,
+        "12": 6.3,
+        "13": 37.0,
+        "14": 15.0,
+        "15": 23.0
       }
     }
   ]
