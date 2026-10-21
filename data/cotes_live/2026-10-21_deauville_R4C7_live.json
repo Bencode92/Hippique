@@ -4,89 +4,89 @@
   "reunion": 4,
   "heure_depart": 1792604700000,
   "distance": 1500,
-  "scraped_at": "2026-10-21T19:15:12.385853+02:00",
-  "minutes_avant_depart": 30,
+  "scraped_at": "2026-10-21T19:19:52.979228+02:00",
+  "minutes_avant_depart": 25,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MEDRONHO",
-      "cote_live": 8.9,
+      "cote_live": 9.0,
       "cote_reference": 9.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792602015000
+      "timestamp_cote": 1792603179000
     },
     {
       "numPmu": 2,
       "nom": "TASHARRAFNA",
-      "cote_live": 27.0,
+      "cote_live": 24.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792602015000
+      "timestamp_cote": 1792603179000
     },
     {
       "numPmu": 3,
       "nom": "OZARK JAMES",
-      "cote_live": 4.6,
+      "cote_live": 4.7,
       "cote_reference": 4.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792602015000
+      "timestamp_cote": 1792603179000
     },
     {
       "numPmu": 4,
       "nom": "ALCANE",
-      "cote_live": 26.0,
+      "cote_live": 19.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792602015000
+      "timestamp_cote": 1792603179000
     },
     {
       "numPmu": 5,
       "nom": "POWER CELESTE",
-      "cote_live": 17.0,
+      "cote_live": 18.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792602015000
+      "timestamp_cote": 1792603179000
     },
     {
       "numPmu": 6,
       "nom": "HEILIGENSTEIN",
-      "cote_live": 8.4,
+      "cote_live": 6.6,
       "cote_reference": 8.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792602015000
+      "timestamp_cote": 1792603179000
     },
     {
       "numPmu": 7,
       "nom": "MAGIC INSPIRATION",
-      "cote_live": 3.5,
+      "cote_live": 4.0,
       "cote_reference": 4.0,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792602015000
+      "timestamp_cote": 1792603179000
     },
     {
       "numPmu": 8,
       "nom": "SHABAZI",
-      "cote_live": 6.2,
+      "cote_live": 5.6,
       "cote_reference": 5.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792602015000
+      "timestamp_cote": 1792603179000
     },
     {
       "numPmu": 9,
       "nom": "BHASKARI",
-      "cote_live": 8.7,
+      "cote_live": 10.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792602015000
+      "timestamp_cote": 1792603179000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -104,6 +104,21 @@
         "7": 3.5,
         "8": 6.2,
         "9": 8.7
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T19:19:52.979228+02:00",
+      "minutes_avant_depart": 25.130707616666665,
+      "cotes": {
+        "1": 9.0,
+        "2": 24.0,
+        "3": 4.7,
+        "4": 19.0,
+        "5": 18.0,
+        "6": 6.6,
+        "7": 4.0,
+        "8": 5.6,
+        "9": 10.0
       }
     }
   ]
