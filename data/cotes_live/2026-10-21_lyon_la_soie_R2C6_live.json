@@ -1,0 +1,80 @@
+{
+  "course": "PRIX JOSEPH CREISSON",
+  "numero": 6,
+  "reunion": 2,
+  "heure_depart": 1792582980000,
+  "distance": 1800,
+  "scraped_at": "2026-10-21T13:13:20.219615+02:00",
+  "minutes_avant_depart": 30,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "ELUSIVE GLORY",
+      "cote_live": 4.8,
+      "cote_reference": 5.2,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792580455000
+    },
+    {
+      "numPmu": 2,
+      "nom": "CANDY CHERIE",
+      "cote_live": 7.4,
+      "cote_reference": 6.8,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792580455000
+    },
+    {
+      "numPmu": 3,
+      "nom": "BOOMERANG",
+      "cote_live": 6.6,
+      "cote_reference": 6.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792580455000
+    },
+    {
+      "numPmu": 4,
+      "nom": "RABBAH",
+      "cote_live": 7.1,
+      "cote_reference": 7.2,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792580455000
+    },
+    {
+      "numPmu": 6,
+      "nom": "JOYEUSE DE ROMAY",
+      "cote_live": 3.1,
+      "cote_reference": 3.3,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1792580455000
+    },
+    {
+      "numPmu": 7,
+      "nom": "IDAHO JAMES",
+      "cote_live": 5.2,
+      "cote_reference": 5.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792580455000
+    }
+  ],
+  "hippodrome": "LYON LA SOIE",
+  "releves": [
+    {
+      "scraped_at": "2026-10-21T13:13:20.219615+02:00",
+      "minutes_avant_depart": 29.66895705,
+      "cotes": {
+        "1": 4.8,
+        "2": 7.4,
+        "3": 6.6,
+        "4": 7.1,
+        "6": 3.1,
+        "7": 5.2
+      }
+    }
+  ]
+}
