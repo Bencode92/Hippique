@@ -117,14 +117,14 @@
 
 ### 8. PRIX DES CIGALES
 
-*14h47 · plat · 2150 m · 7 partants · cotes de l'extraction*
+*14h47 · plat · 2150 m · 7 partants · cotes à T−29:40*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | TASTEFUL | – | A.ORANI | 5/9/1/1283 |
-| 2 | JUST FOR MEME | – | M.VELON | 28/4/354/1250 |
-| 3 | HOLD MY DREAMS | – | A.CRASTUS | 17/36/81/1327 |
-| 4 | I AM MAELIA | – | E.PUILLET-RODA | 73/93/585/1465 |
-| 5 | DELIRE D'AMOUR | – | M.GRANDIN | 3/445/15/1147 |
-| 6 | DANCE DE LUNE | – | H.BOUTIN | 14/18/257/1223 |
-| 8 | MAC TYSON | – | J.NICOLEAU | 137/4/21/2950 |
+| 1 | TASTEFUL | 2,2 | A.ORANI | 5/9/1/1283 |
+| 6 | DANCE DE LUNE | 5,8 | H.BOUTIN | 14/18/257/1223 |
+| 3 | HOLD MY DREAMS | 7,5 | A.CRASTUS | 17/36/81/1327 |
+| 2 | JUST FOR MEME | 9,6 | M.VELON | 28/4/354/1250 |
+| 8 | MAC TYSON | 9,9 | J.NICOLEAU | 137/4/21/2950 |
+| 5 | DELIRE D'AMOUR | 10 | M.GRANDIN | 3/445/15/1147 |
+| 4 | I AM MAELIA | 12 | E.PUILLET-RODA | 73/93/585/1465 |
