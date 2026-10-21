@@ -10,22 +10,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 1. PRIX DU BESSIN
 
-*16h32 · plat · 2500 m · 12 partants · cotes à T−17:19*
+*16h32 · plat · 2500 m · 12 partants · cotes à T−12:39*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 5 | SIR PATRICK | 5,5 | 6,9 | 6,66 | -17,5 % | T.BACHELOT | 16/17/1413/420 |
-| 3 | PASHANG | 5,8 | 4,5 | 6,65 | -12,7 % | C.LECOEUVRE | 13/185/3118/2678 |
-| 1 | MUST BE CRACKERS | 6,2 | 6,3 | 6,47 | -4,2 % | E.VERHESTRAETEN | 53/12/472/1400 |
-| 7 | DAYTONINE | 9 | 10 | 9,92 | -9,3 % | PC.BOUDOT | 8/8/3873/1438 |
-| 8 | DECLA | 10 | 8,9 | 12,23 | -18,3 % | H.LEBOUC | 19/245/531/660 |
-| 9 | VENT DU LARGE | 10 | 8,7 | 11,71 | -14,6 % | M.GUYON | 4/31/1993/2528 |
-| 4 | MOUNTAIN BLUES | 12 | 23 | 12,70 | -5,5 % | A.MADAMET | 10/175/84/332 |
-| 11 | CRACKELITA | 15 | 12 | 18,00 | -16,7 % | C.GROSBOIS | 25/172/413/262 |
-| 6 | GAME OF STARS | 16 | 22 | 19,41 | -17,6 % | A.POUCHIN | 6/173/3175/3983 |
-| 10 | ZOLIA D'OROUX | 22 | 21 | 31,53 | -30,2 % | T.BREBION | 99/27/1551/– |
-| 12 | WELL DONE | 24 | 20 | 31,00 | -22,6 % | M.FAVRIAUX | 51/175/3402/332 |
-| 2 | MARTINVAST | 39 | 36 | 56,07 | -30,4 % | C.BELMONT | 171/142/8/4 |
+| 5 | SIR PATRICK | 5,2 | 6,9 | 6,28 | -17,1 % | T.BACHELOT | 16/17/1413/420 |
+| 3 | PASHANG | 6,4 | 4,5 | 7,47 | -14,3 % | C.LECOEUVRE | 13/185/3118/2678 |
+| 1 | MUST BE CRACKERS | 6,7 | 6,3 | 7,09 | -5,5 % | E.VERHESTRAETEN | 53/12/472/1400 |
+| 9 | VENT DU LARGE | 7,1 | 8,7 | 7,89 | -10,0 % | M.GUYON | 4/31/1993/2528 |
+| 7 | DAYTONINE | 10 | 10 | 11,26 | -11,2 % | PC.BOUDOT | 8/8/3873/1438 |
+| 8 | DECLA | 11 | 8,9 | 13,74 | -19,9 % | H.LEBOUC | 19/245/531/660 |
+| 4 | MOUNTAIN BLUES | 12 | 23 | 12,74 | -5,8 % | A.MADAMET | 10/175/84/332 |
+| 6 | GAME OF STARS | 14 | 22 | 16,67 | -16,0 % | A.POUCHIN | 6/173/3175/3983 |
+| 11 | CRACKELITA | 16 | 12 | 19,48 | -17,9 % | C.GROSBOIS | 25/172/413/262 |
+| 10 | ZOLIA D'OROUX | 21 | 21 | 29,99 | -30,0 % | T.BREBION | 99/27/1551/– |
+| 12 | WELL DONE | 26 | 20 | 34,09 | -23,7 % | M.FAVRIAUX | 51/175/3402/332 |
+| 2 | MARTINVAST | 44 | 36 | 64,27 | -31,5 % | C.BELMONT | 171/142/8/4 |
 
 ### 2. PRIX DE LA FORET DE BORD
 
