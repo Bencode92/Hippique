@@ -89,22 +89,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DE LA FORET DE BIZY
 
-*18h45 · plat · 1500 m · 12 partants · cotes à T−21:48*
+*18h45 · plat · 1500 m · 12 partants · cotes à T−17:08*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | PARISIAN BELLE | 3,7 | 10 | 3,76 | -1,5 % | A.LEMAITRE | 11/239/867/1358 |
-| 7 | GIN GEMBRE | 5,3 | 5,3 | 6,03 | -12,1 % | A.HAMELIN | 22/214/24/342 |
-| 3 | LOUVE PRECIEUSE | 6,1 | 10 | 7,07 | -13,8 % | F.VALLE SKAR | 35/108/95/1560 |
-| 5 | ASTERALE | 7,4 | 4,4 | 7,82 | -5,4 % | C.DEMURO | 1/108/605/84 |
-| 8 | LAGOA SANTA | 8,7 | 7,5 | 11,43 | -23,9 % | M.GUYON | 4/147/1010/1760 |
-| 4 | ORLOVKA | 10 | 14 | 13,48 | -25,8 % | A.MOLINS | 34/527/16/1715 |
-| 6 | MINO PICO | 16 | 12 | 21,88 | -26,9 % | D.SANTIAGO | 15/511/3123/1546 |
-| 9 | PALIMERO | 27 | 16 | 43,06 | -37,3 % | S.TISON | 98/515/3371/1585 |
-| 1 | BLACK MAGIC WOMAN | 33 | 16 | 41,83 | -21,1 % | M.JUSTUM | 88/542/2178/1859 |
-| 10 | CAP SKIRRING | 50 | 21 | 75,87 | -34,1 % | T.TRULLIER | 21/399/38/877 |
-| 11 | ALPENGEIST | 58 | 20 | 89,03 | -34,9 % | G.MEURY | 68/432/60/218 |
-| 12 | MADRAS | 66 | 38 | 102,15 | -35,4 % | C.GROSBOIS | 25/705/3104/3515 |
+| 2 | PARISIAN BELLE | 4,6 | 10 | 4,83 | -4,8 % | A.LEMAITRE | 11/239/867/1358 |
+| 5 | ASTERALE | 5 | 4,4 | 4,64 | **+7,8 %** | C.DEMURO | 1/108/605/84 |
+| 3 | LOUVE PRECIEUSE | 5,9 | 10 | 6,75 | -12,6 % | F.VALLE SKAR | 35/108/95/1560 |
+| 7 | GIN GEMBRE | 6,8 | 5,3 | 7,62 | -10,8 % | A.HAMELIN | 22/214/24/342 |
+| 8 | LAGOA SANTA | 7,8 | 7,5 | 9,96 | -21,7 % | M.GUYON | 4/147/1010/1760 |
+| 4 | ORLOVKA | 10 | 14 | 13,36 | -25,1 % | A.MOLINS | 34/527/16/1715 |
+| 6 | MINO PICO | 18 | 12 | 24,89 | -27,7 % | D.SANTIAGO | 15/511/3123/1546 |
+| 9 | PALIMERO | 28 | 16 | 42,46 | -34,1 % | S.TISON | 98/515/3371/1585 |
+| 1 | BLACK MAGIC WOMAN | 31 | 16 | 38,68 | -19,8 % | M.JUSTUM | 88/542/2178/1859 |
+| 10 | CAP SKIRRING | 43 | 21 | 63,83 | -32,6 % | T.TRULLIER | 21/399/38/877 |
+| 12 | MADRAS | 52 | 38 | 78,53 | -33,8 % | C.GROSBOIS | 25/705/3104/3515 |
+| 11 | ALPENGEIST | 54 | 20 | 81,79 | -34,0 % | G.MEURY | 68/432/60/218 |
 
 ### 6. PRIX DE CAEN
 
