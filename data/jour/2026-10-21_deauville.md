@@ -1,6 +1,6 @@
 # DEAUVILLE — 21/10/2026
 
-8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -10,22 +10,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 1. PRIX DU BESSIN
 
-*16h32 · plat · 2500 m · 12 partants · cotes de l'extraction*
+*16h32 · plat · 2500 m · 12 partants · cotes à T−29:59*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 3 | PASHANG | 4,5 | 5,52 | -18,4 % | C.LECOEUVRE | 13/185/3118/2678 |
-| 1 | MUST BE CRACKERS | 6,3 | 6,58 | -4,3 % | E.VERHESTRAETEN | 53/12/472/1400 |
-| 5 | SIR PATRICK | 6,9 | 8,46 | -18,4 % | T.BACHELOT | 16/17/1413/420 |
-| 9 | VENT DU LARGE | 8,7 | 9,94 | -12,5 % | M.GUYON | 4/31/1993/2528 |
-| 8 | DECLA | 8,9 | 9,78 | -9,0 % | H.LEBOUC | 19/245/531/660 |
-| 7 | DAYTONINE | 10 | 11,20 | -10,7 % | PC.BOUDOT | 8/8/3873/1438 |
-| 11 | CRACKELITA | 12 | 13,86 | -13,4 % | C.GROSBOIS | 25/172/413/262 |
-| 12 | WELL DONE | 20 | 25,11 | -20,4 % | M.FAVRIAUX | 51/175/3402/332 |
-| 10 | ZOLIA D'OROUX | 21 | 29,85 | -29,6 % | T.BREBION | 99/27/1551/– |
-| 6 | GAME OF STARS | 22 | 30,72 | -28,4 % | A.POUCHIN | 6/173/3175/3983 |
-| 4 | MOUNTAIN BLUES | 23 | 26,88 | -14,4 % | A.MADAMET | 10/175/84/332 |
-| 2 | MARTINVAST | 36 | 51,25 | -29,8 % | C.BELMONT | 171/142/8/4 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 3 | PASHANG | 5,4 | 4,5 | 6,78 | -20,4 % | C.LECOEUVRE | 13/185/3118/2678 |
+| 5 | SIR PATRICK | 5,7 | 6,9 | 6,25 | -8,8 % | T.BACHELOT | 16/17/1413/420 |
+| 1 | MUST BE CRACKERS | 6,2 | 6,3 | 6,46 | -4,0 % | E.VERHESTRAETEN | 53/12/472/1400 |
+| 7 | DAYTONINE | 9 | 10 | 9,90 | -9,1 % | PC.BOUDOT | 8/8/3873/1438 |
+| 9 | VENT DU LARGE | 9 | 8,7 | 10,33 | -12,9 % | M.GUYON | 4/31/1993/2528 |
+| 8 | DECLA | 10 | 8,9 | 12,21 | -18,1 % | H.LEBOUC | 19/245/531/660 |
+| 11 | CRACKELITA | 13 | 12 | 15,21 | -14,5 % | C.GROSBOIS | 25/172/413/262 |
+| 4 | MOUNTAIN BLUES | 18 | 23 | 20,27 | -11,2 % | A.MADAMET | 10/175/84/332 |
+| 6 | GAME OF STARS | 18 | 22 | 24,33 | -26,0 % | A.POUCHIN | 6/173/3175/3983 |
+| 10 | ZOLIA D'OROUX | 20 | 21 | 29,53 | -32,3 % | T.BREBION | 99/27/1551/– |
+| 12 | WELL DONE | 24 | 20 | 30,94 | -22,4 % | M.FAVRIAUX | 51/175/3402/332 |
+| 2 | MARTINVAST | 38 | 36 | 54,39 | -30,1 % | C.BELMONT | 171/142/8/4 |
 
 ### 2. PRIX DE LA FORET DE BORD
 
