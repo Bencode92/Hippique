@@ -1,6 +1,6 @@
 # DEAUVILLE — 21/10/2026
 
-8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -89,22 +89,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DE LA FORET DE BIZY
 
-*18h45 · plat · 1500 m · 12 partants · cotes de l'extraction*
+*18h45 · plat · 1500 m · 12 partants · cotes à T−21:48*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 5 | ASTERALE | 4,4 | 4,48 | -1,7 % | C.DEMURO | 1/108/605/84 |
-| 7 | GIN GEMBRE | 5,3 | 6,02 | -11,9 % | A.HAMELIN | 22/214/24/342 |
-| 8 | LAGOA SANTA | 7,5 | 9,57 | -21,7 % | M.GUYON | 4/147/1010/1760 |
-| 2 | PARISIAN BELLE | 10 | 10,55 | -5,2 % | A.LEMAITRE | 11/239/867/1358 |
-| 3 | LOUVE PRECIEUSE | 10 | 12,02 | -16,8 % | F.VALLE SKAR | 35/108/95/1560 |
-| 6 | MINO PICO | 12 | 14,25 | -15,8 % | D.SANTIAGO | 15/511/3123/1546 |
-| 4 | ORLOVKA | 14 | 20,02 | -30,1 % | A.MOLINS | 34/527/16/1715 |
-| 1 | BLACK MAGIC WOMAN | 16 | 18,26 | -12,4 % | M.JUSTUM | 88/542/2178/1859 |
-| 9 | PALIMERO | 16 | 21,39 | -25,2 % | S.TISON | 98/515/3371/1585 |
-| 11 | ALPENGEIST | 20 | 27,03 | -26,0 % | G.MEURY | 68/432/60/218 |
-| 10 | CAP SKIRRING | 21 | 29,96 | -29,9 % | T.TRULLIER | 21/399/38/877 |
-| 12 | MADRAS | 38 | 56,02 | -32,2 % | C.GROSBOIS | 25/705/3104/3515 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 2 | PARISIAN BELLE | 3,7 | 10 | 3,76 | -1,5 % | A.LEMAITRE | 11/239/867/1358 |
+| 7 | GIN GEMBRE | 5,3 | 5,3 | 6,03 | -12,1 % | A.HAMELIN | 22/214/24/342 |
+| 3 | LOUVE PRECIEUSE | 6,1 | 10 | 7,07 | -13,8 % | F.VALLE SKAR | 35/108/95/1560 |
+| 5 | ASTERALE | 7,4 | 4,4 | 7,82 | -5,4 % | C.DEMURO | 1/108/605/84 |
+| 8 | LAGOA SANTA | 8,7 | 7,5 | 11,43 | -23,9 % | M.GUYON | 4/147/1010/1760 |
+| 4 | ORLOVKA | 10 | 14 | 13,48 | -25,8 % | A.MOLINS | 34/527/16/1715 |
+| 6 | MINO PICO | 16 | 12 | 21,88 | -26,9 % | D.SANTIAGO | 15/511/3123/1546 |
+| 9 | PALIMERO | 27 | 16 | 43,06 | -37,3 % | S.TISON | 98/515/3371/1585 |
+| 1 | BLACK MAGIC WOMAN | 33 | 16 | 41,83 | -21,1 % | M.JUSTUM | 88/542/2178/1859 |
+| 10 | CAP SKIRRING | 50 | 21 | 75,87 | -34,1 % | T.TRULLIER | 21/399/38/877 |
+| 11 | ALPENGEIST | 58 | 20 | 89,03 | -34,9 % | G.MEURY | 68/432/60/218 |
+| 12 | MADRAS | 66 | 38 | 102,15 | -35,4 % | C.GROSBOIS | 25/705/3104/3515 |
 
 ### 6. PRIX DE CAEN
 
