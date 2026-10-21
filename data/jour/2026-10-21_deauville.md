@@ -108,17 +108,17 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DE CAEN
 
-*19h15 · plat · 1500 m · 7 partants · cotes à T−21:47*
+*19h15 · plat · 1500 m · 7 partants · cotes à T−17:08*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | LOOP | 1,9 | 2,1 | 1,98 | -3,9 % | M.GUYON | 4/2/1/2 |
-| 2 | DRIBBLE | 4,1 | 3,5 | 4,44 | -7,6 % | H.JOURNIAC | 43/8/1/2 |
-| 1 | DIVINO AMORE | 5,8 | 4,8 | 6,36 | -8,8 % | PC.BOUDOT 4e | 8/32/34/906 |
-| 7 | ASSEMBLAGE | 10 | 7,8 | 12,49 | -19,9 % | A.LEMAITRE | 11/100/3342/1571 |
-| 4 | CODREA | 24 | 39 | 37,34 | -35,7 % | A.POUCHIN | 6/220/591/1845 |
-| 6 | DRITA | 31 | 47 | 46,52 | -33,4 % | D.SANTIAGO | 15/197/4078/– |
-| 5 | COLCHESTER | 35 | 83 | 52,21 | -33,0 % | A.MADAMET | 10/70/555/4416 |
+| 3 | LOOP | 1,9 | 2,1 | 2,00 | -5,2 % | M.GUYON | 4/2/1/2 |
+| 2 | DRIBBLE | 4,4 | 3,5 | 4,88 | -9,9 % | H.JOURNIAC | 43/8/1/2 |
+| 1 | DIVINO AMORE | 5,4 | 4,8 | 5,99 | -9,9 % | PC.BOUDOT 4e | 8/32/34/906 |
+| 7 | ASSEMBLAGE | 10 | 7,8 | 12,76 | -21,6 % | A.LEMAITRE | 11/100/3342/1571 |
+| 5 | COLCHESTER | 20 | 83 | 28,18 | -29,0 % | A.MADAMET | 10/70/555/4416 |
+| 4 | CODREA | 22 | 39 | 34,50 | -36,2 % | A.POUCHIN | 6/220/591/1845 |
+| 6 | DRITA | 31 | 47 | 47,50 | -34,7 % | D.SANTIAGO | 15/197/4078/– |
 
 ### 7. PRIX DU CHATEAU DE CREVECOEUR
 

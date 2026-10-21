@@ -4,26 +4,26 @@
   "reunion": 4,
   "heure_depart": 1792602900000,
   "distance": 1500,
-  "scraped_at": "2026-10-21T18:53:12.769601+02:00",
-  "minutes_avant_depart": 22,
+  "scraped_at": "2026-10-21T18:57:52.275335+02:00",
+  "minutes_avant_depart": 17,
   "participants": [
     {
       "numPmu": 1,
       "nom": "DIVINO AMORE",
-      "cote_live": 5.8,
+      "cote_live": 5.4,
       "cote_reference": 5.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792601572000
+      "timestamp_cote": 1792601858000
     },
     {
       "numPmu": 2,
       "nom": "DRIBBLE",
-      "cote_live": 4.1,
+      "cote_live": 4.4,
       "cote_reference": 5.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792601572000
+      "timestamp_cote": 1792601858000
     },
     {
       "numPmu": 3,
@@ -32,25 +32,25 @@
       "cote_reference": 1.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792601572000
+      "timestamp_cote": 1792601858000
     },
     {
       "numPmu": 4,
       "nom": "CODREA",
-      "cote_live": 24.0,
+      "cote_live": 22.0,
       "cote_reference": 26.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792601572000
+      "timestamp_cote": 1792601858000
     },
     {
       "numPmu": 5,
       "nom": "COLCHESTER",
-      "cote_live": 35.0,
+      "cote_live": 20.0,
       "cote_reference": 40.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792601572000
+      "timestamp_cote": 1792601858000
     },
     {
       "numPmu": 6,
@@ -59,7 +59,7 @@
       "cote_reference": 33.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792601572000
+      "timestamp_cote": 1792601858000
     },
     {
       "numPmu": 7,
@@ -68,7 +68,7 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792601572000
+      "timestamp_cote": 1792601858000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -108,6 +108,19 @@
         "3": 1.9,
         "4": 24.0,
         "5": 35.0,
+        "6": 31.0,
+        "7": 10.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T18:57:52.275335+02:00",
+      "minutes_avant_depart": 17.13645766666667,
+      "cotes": {
+        "1": 5.4,
+        "2": 4.4,
+        "3": 1.9,
+        "4": 22.0,
+        "5": 20.0,
         "6": 31.0,
         "7": 10.0
       }
