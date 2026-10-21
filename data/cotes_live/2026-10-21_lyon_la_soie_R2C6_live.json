@@ -4,62 +4,62 @@
   "reunion": 2,
   "heure_depart": 1792582980000,
   "distance": 1800,
-  "scraped_at": "2026-10-21T13:29:59.983245+02:00",
-  "minutes_avant_depart": 13,
+  "scraped_at": "2026-10-21T13:34:39.791473+02:00",
+  "minutes_avant_depart": 8,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ELUSIVE GLORY",
-      "cote_live": 7.0,
+      "cote_live": 7.7,
       "cote_reference": 5.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582181000
+      "timestamp_cote": 1792582467000
     },
     {
       "numPmu": 2,
       "nom": "CANDY CHERIE",
-      "cote_live": 6.5,
+      "cote_live": 4.4,
       "cote_reference": 6.8,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1792582181000
+      "favoris": true,
+      "timestamp_cote": 1792582467000
     },
     {
       "numPmu": 3,
       "nom": "BOOMERANG",
-      "cote_live": 4.7,
+      "cote_live": 4.4,
       "cote_reference": 6.0,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1792582181000
+      "favoris": true,
+      "timestamp_cote": 1792582467000
     },
     {
       "numPmu": 4,
       "nom": "RABBAH",
-      "cote_live": 5.0,
+      "cote_live": 6.2,
       "cote_reference": 7.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582181000
+      "timestamp_cote": 1792582467000
     },
     {
       "numPmu": 6,
       "nom": "JOYEUSE DE ROMAY",
-      "cote_live": 4.2,
+      "cote_live": 5.3,
       "cote_reference": 3.3,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1792582181000
+      "favoris": false,
+      "timestamp_cote": 1792582467000
     },
     {
       "numPmu": 7,
       "nom": "IDAHO JAMES",
-      "cote_live": 5.1,
+      "cote_live": 4.8,
       "cote_reference": 5.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582181000
+      "timestamp_cote": 1792582467000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -122,6 +122,18 @@
         "4": 5.0,
         "6": 4.2,
         "7": 5.1
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T13:34:39.791473+02:00",
+      "minutes_avant_depart": 8.342573433333333,
+      "cotes": {
+        "1": 7.7,
+        "2": 4.4,
+        "3": 4.4,
+        "4": 6.2,
+        "6": 5.3,
+        "7": 4.8
       }
     }
   ]
