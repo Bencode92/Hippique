@@ -4,17 +4,17 @@
   "reunion": 2,
   "heure_depart": 1792586820000,
   "distance": 2150,
-  "scraped_at": "2026-10-21T14:17:19.941743+02:00",
-  "minutes_avant_depart": 30,
+  "scraped_at": "2026-10-21T14:21:59.688733+02:00",
+  "minutes_avant_depart": 25,
   "participants": [
     {
       "numPmu": 1,
       "nom": "TASTEFUL",
-      "cote_live": 2.2,
+      "cote_live": 2.1,
       "cote_reference": 2.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792584921000
+      "timestamp_cote": 1792585305000
     },
     {
       "numPmu": 2,
@@ -23,16 +23,16 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792584921000
+      "timestamp_cote": 1792585305000
     },
     {
       "numPmu": 3,
       "nom": "HOLD MY DREAMS",
-      "cote_live": 7.5,
+      "cote_live": 7.6,
       "cote_reference": 7.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792584921000
+      "timestamp_cote": 1792585305000
     },
     {
       "numPmu": 4,
@@ -41,34 +41,34 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792584921000
+      "timestamp_cote": 1792585305000
     },
     {
       "numPmu": 5,
       "nom": "DELIRE D'AMOUR",
-      "cote_live": 10.0,
+      "cote_live": 9.6,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792584921000
+      "timestamp_cote": 1792585305000
     },
     {
       "numPmu": 6,
       "nom": "DANCE DE LUNE",
-      "cote_live": 5.8,
+      "cote_live": 6.0,
       "cote_reference": 5.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792584921000
+      "timestamp_cote": 1792585305000
     },
     {
       "numPmu": 8,
       "nom": "MAC TYSON",
-      "cote_live": 9.9,
+      "cote_live": 11.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792584921000
+      "timestamp_cote": 1792585305000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -84,6 +84,19 @@
         "5": 10.0,
         "6": 5.8,
         "8": 9.9
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T14:21:59.688733+02:00",
+      "minutes_avant_depart": 25.009088216666665,
+      "cotes": {
+        "1": 2.1,
+        "2": 9.6,
+        "3": 7.6,
+        "4": 12.0,
+        "5": 9.6,
+        "6": 6.0,
+        "8": 11.0
       }
     }
   ]
