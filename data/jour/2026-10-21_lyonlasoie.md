@@ -75,18 +75,18 @@
 
 ### 5. PRIX GERARD NOUGIER
 
-*13h11 · plat · 1800 m · 9 partants · cotes à T−3:20*
+*13h11 · plat · 1800 m · 9 partants · cotes à T−0:40*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | KERNO QUATZ | 4,1 | A.ORANI 3e | 5/33/360/267 |
-| 11 | ATAVAMADA | 5,1 | H.BESNIER | 12/326/1298/2494 |
-| 5 | REUX | 6,7 | A.CRASTUS | 17/92/266/302 |
-| 6 | EKTORIA | 7,3 | C.PACAUT | 48/198/54/1085 |
-| 2 | KHELONYX | 7,6 | H.BOUTIN | 14/50/4/543 |
-| 9 | COME TI AMO | 8,2 | B.LABATE | 113/88/252/450 |
-| 4 | NOVA KEN | 9,9 | M.VELON | 28/33/7/267 |
-| 10 | DENGIE | 16 | A.D'JJI | 252/18/7/387 |
+| 1 | KERNO QUATZ | 3,3 | A.ORANI 3e | 5/33/360/267 |
+| 11 | ATAVAMADA | 4,3 | H.BESNIER | 12/326/1298/2494 |
+| 9 | COME TI AMO | 7,1 | B.LABATE | 113/88/252/450 |
+| 2 | KHELONYX | 8,8 | H.BOUTIN | 14/50/4/543 |
+| 6 | EKTORIA | 8,9 | C.PACAUT | 48/198/54/1085 |
+| 5 | REUX | 9,4 | A.CRASTUS | 17/92/266/302 |
+| 4 | NOVA KEN | 11 | M.VELON | 28/33/7/267 |
+| 10 | DENGIE | 20 | A.D'JJI | 252/18/7/387 |
 | 8 | MOKKA LATTE | – | M.GRANDIN | 3/49/187/118 |
 
 ### 6. PRIX JOSEPH CREISSON
