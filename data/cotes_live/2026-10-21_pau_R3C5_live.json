@@ -4,35 +4,35 @@
   "reunion": 3,
   "heure_depart": 1792584720000,
   "distance": 2000,
-  "scraped_at": "2026-10-21T13:42:39.881667+02:00",
-  "minutes_avant_depart": 29,
+  "scraped_at": "2026-10-21T13:46:40.259426+02:00",
+  "minutes_avant_depart": 25,
   "participants": [
     {
       "numPmu": 1,
       "nom": "TREASURE ISLAND",
-      "cote_live": 57.0,
+      "cote_live": 33.0,
       "cote_reference": 56.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582952000
+      "timestamp_cote": 1792583194000
     },
     {
       "numPmu": 2,
       "nom": "QASWARAH",
-      "cote_live": 7.8,
+      "cote_live": 8.3,
       "cote_reference": 8.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582952000
+      "timestamp_cote": 1792583194000
     },
     {
       "numPmu": 3,
       "nom": "SHEHAB",
-      "cote_live": 7.8,
+      "cote_live": 8.2,
       "cote_reference": 8.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582952000
+      "timestamp_cote": 1792583194000
     },
     {
       "numPmu": 4,
@@ -41,25 +41,25 @@
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582952000
+      "timestamp_cote": 1792583194000
     },
     {
       "numPmu": 5,
       "nom": "RB KINNIDY",
-      "cote_live": 24.0,
+      "cote_live": 23.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582952000
+      "timestamp_cote": 1792583194000
     },
     {
       "numPmu": 6,
       "nom": "AF QASEEMAH",
-      "cote_live": 4.8,
+      "cote_live": 4.9,
       "cote_reference": 4.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582952000
+      "timestamp_cote": 1792583194000
     },
     {
       "numPmu": 7,
@@ -77,7 +77,7 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582952000
+      "timestamp_cote": 1792583194000
     },
     {
       "numPmu": 9,
@@ -86,7 +86,7 @@
       "cote_reference": 37.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582952000
+      "timestamp_cote": 1792583194000
     },
     {
       "numPmu": 10,
@@ -95,52 +95,52 @@
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582952000
+      "timestamp_cote": 1792583194000
     },
     {
       "numPmu": 11,
       "nom": "HASNA GRINE",
-      "cote_live": 22.0,
+      "cote_live": 23.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582952000
+      "timestamp_cote": 1792583194000
     },
     {
       "numPmu": 12,
       "nom": "MIRAMAR",
-      "cote_live": 4.6,
+      "cote_live": 4.5,
       "cote_reference": 4.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792582952000
+      "timestamp_cote": 1792583194000
     },
     {
       "numPmu": 13,
       "nom": "NADIR DE L'ARDUS",
-      "cote_live": 51.0,
+      "cote_live": 50.0,
       "cote_reference": 50.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582952000
+      "timestamp_cote": 1792583194000
     },
     {
       "numPmu": 14,
       "nom": "AWWAAD",
-      "cote_live": 11.0,
+      "cote_live": 12.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582952000
+      "timestamp_cote": 1792583194000
     },
     {
       "numPmu": 15,
       "nom": "DU'AIJ",
-      "cote_live": 46.0,
+      "cote_live": 29.0,
       "cote_reference": 45.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792582952000
+      "timestamp_cote": 1792583194000
     }
   ],
   "hippodrome": "PAU",
@@ -164,6 +164,27 @@
         "13": 51.0,
         "14": 11.0,
         "15": 46.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T13:46:40.259426+02:00",
+      "minutes_avant_depart": 25.335270733333335,
+      "cotes": {
+        "1": 33.0,
+        "2": 8.3,
+        "3": 8.2,
+        "4": 11.0,
+        "5": 23.0,
+        "6": 4.9,
+        "7": null,
+        "8": 14.0,
+        "9": 38.0,
+        "10": 23.0,
+        "11": 23.0,
+        "12": 4.5,
+        "13": 50.0,
+        "14": 12.0,
+        "15": 29.0
       }
     }
   ]
