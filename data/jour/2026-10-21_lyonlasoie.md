@@ -104,16 +104,16 @@
 
 ### 7. PRIX DE PROVENCE
 
-*14h15 · plat · 2400 m · 6 partants · cotes à T−8:20*
+*14h15 · plat · 2400 m · 6 partants · cotes à T−5:00*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
 | 2 | GOLDEN BLUSH | 2,5 | M.GRANDIN | 3/4/39/47 |
-| 5 | PORT SANTA PONSA | 4,6 | M.BRUNELLI | 123/728/7/580 |
-| 4 | KINGORI | 4,9 | M.VELON | 28/4/563/280 |
-| 1 | ARNAY LE DUC | 7,9 | H.BESNIER | 12/127/262/2953 |
-| 7 | PERSIANA | 7,9 | A.ORANI | 5/33/270/– |
-| 6 | NIAGARO | 15 | K.GAUDEFFROY | 129/326/3120/4153 |
+| 5 | PORT SANTA PONSA | 4,9 | M.BRUNELLI | 123/728/7/580 |
+| 4 | KINGORI | 5 | M.VELON | 28/4/563/280 |
+| 1 | ARNAY LE DUC | 7,3 | H.BESNIER | 12/127/262/2953 |
+| 7 | PERSIANA | 8,2 | A.ORANI | 5/33/270/– |
+| 6 | NIAGARO | 11 | K.GAUDEFFROY | 129/326/3120/4153 |
 
 ### 8. PRIX DES CIGALES
 
