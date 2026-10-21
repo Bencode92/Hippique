@@ -120,18 +120,18 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 5 | KOL | 4,3 | PURTON Z. | –/–/–/– |
-| 3 | COPARTNER FLEET | 5,5 | CHAU C.L. | –/–/–/– |
-| 10 | QUICK CONTRIBUTION | 5,8 | POON M.F. | –/–/–/– |
-| 4 | GOLDEN ACE | 6,1 | AVDULLA B. | –/–/–/– |
-| 11 | FORZA LEADER | 6,9 | BADEL A. | –/–/–/– |
-| 2 | MALPENSA | 11 | ORMAN J. | –/–/–/– |
-| 12 | MONTA FRUTTA | 16 | CHUNG Y.L. | –/–/–/– |
-| 6 | SPICY BONUS | 21 | FERRARIS L. | –/–/–/– |
-| 1 | HEALTHY HEALTHY | 26 | ATZENI A. | –/–/–/– |
-| 8 | ENJOY GOLF | 27 | BENTLEY H. | –/–/–/– |
-| 9 | TOP TO SKY | 38 | LEUNG K.C. | –/–/–/– |
-| 7 | HERO MASTERMIND | 48 | HEWITSON L. | –/–/–/– |
+| 10 | QUICK CONTRIBUTION | 3,6 | POON M.F. | –/–/–/– |
+| 5 | KOL | 4,9 | PURTON Z. | –/–/–/– |
+| 2 | MALPENSA | 6,6 | ORMAN J. | –/–/–/– |
+| 11 | FORZA LEADER | 7,5 | BADEL A. | –/–/–/– |
+| 4 | GOLDEN ACE | 8,2 | AVDULLA B. | –/–/–/– |
+| 3 | COPARTNER FLEET | 9,5 | CHAU C.L. | –/–/–/– |
+| 12 | MONTA FRUTTA | 10 | CHUNG Y.L. | –/–/–/– |
+| 6 | SPICY BONUS | 20 | FERRARIS L. | –/–/–/– |
+| 8 | ENJOY GOLF | 41 | BENTLEY H. | –/–/–/– |
+| 1 | HEALTHY HEALTHY | 49 | ATZENI A. | –/–/–/– |
+| 9 | TOP TO SKY | 60 | LEUNG K.C. | –/–/–/– |
+| 7 | HERO MASTERMIND | 92 | HEWITSON L. | –/–/–/– |
 
 ### 8. FLYING HANDICAP
 
@@ -139,18 +139,18 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 8 | PEGAS | 3,3 | CHAU C.L. | –/–/–/– |
-| 7 | LUCKY RIVER | 6,1 | AVDULLA B. | –/–/–/– |
-| 5 | GREATER BAE | 6,5 | FERRARIS L. | –/–/–/– |
-| 12 | LEADING AGILITY | 7,3 | WONG E.C.W. | –/–/–/– |
-| 6 | ROYAL BLITZ | 10 | PURTON Z. | –/–/–/– |
-| 2 | PERFECT GENERAL | 11 | HO C.Y. | –/–/–/– |
-| 1 | PERFECTDAY | 12 | LEUNG K.C. | –/–/–/– |
-| 4 | JUBILANT WINNER | 21 | BENTLEY H. | –/–/–/– |
-| 9 | SMART OINK | 21 | YUEN H.Y. | –/–/–/– |
-| 3 | KYRUS DRAGON | 28 | ORMAN J. | –/–/–/– |
-| 10 | DUKE ATREIDES | 35 | BADEL A. | –/–/–/– |
-| 11 | KING MILES | 41 | CHADWICK M. | –/–/–/– |
+| 12 | LEADING AGILITY | 4,7 | WONG E.C.W. | –/–/–/– |
+| 5 | GREATER BAE | 4,7 | FERRARIS L. | –/–/–/– |
+| 7 | LUCKY RIVER | 4,7 | AVDULLA B. | –/–/–/– |
+| 8 | PEGAS | 5,6 | CHAU C.L. | –/–/–/– |
+| 2 | PERFECT GENERAL | 9,1 | HO C.Y. | –/–/–/– |
+| 6 | ROYAL BLITZ | 11 | PURTON Z. | –/–/–/– |
+| 1 | PERFECTDAY | 16 | LEUNG K.C. | –/–/–/– |
+| 4 | JUBILANT WINNER | 24 | BENTLEY H. | –/–/–/– |
+| 3 | KYRUS DRAGON | 26 | ORMAN J. | –/–/–/– |
+| 9 | SMART OINK | 36 | YUEN H.Y. | –/–/–/– |
+| 11 | KING MILES | 64 | CHADWICK M. | –/–/–/– |
+| 10 | DUKE ATREIDES | 67 | BADEL A. | –/–/–/– |
 
 ### 9. SONGS OF VICTORY HANDICAP
 
@@ -158,15 +158,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 9 | EMBRACES | 4,1 | CHAU C.L. |
-| 2 | POPE CODY | 4,3 | BADEL A. |
-| 12 | WIN METHOD | 9,2 | POON M.F. |
-| 10 | FORZA TORO | 9,4 | WONG E.C.W. |
-| 6 | HIGHLAND RAHY | 10 | HEWITSON L. |
-| 11 | I | 10 | HO C.Y. |
-| 4 | SOLID WIN | 12 | ORMAN J. |
-| 1 | LUCKY SAM GOR | 13 | FERRARIS L. |
+| 2 | POPE CODY | 4 | BADEL A. |
+| 10 | FORZA TORO | 6,3 | WONG E.C.W. |
+| 9 | EMBRACES | 6,5 | CHAU C.L. |
+| 12 | WIN METHOD | 7,9 | POON M.F. |
+| 4 | SOLID WIN | 8,6 | ORMAN J. |
+| 1 | LUCKY SAM GOR | 11 | FERRARIS L. |
+| 6 | HIGHLAND RAHY | 11 | HEWITSON L. |
+| 11 | I | 13 | HO C.Y. |
 | 3 | THE RED HARE | 17 | LEUNG K.C. |
-| 5 | RIDING TOGETHER | 19 | YUEN H.Y. |
-| 8 | PASS LINE | 30 | P N WONG |
-| 7 | WROTE A NEW PAGE | 36 | BENTLEY H. |
+| 5 | RIDING TOGETHER | 21 | YUEN H.Y. |
+| 7 | WROTE A NEW PAGE | 39 | BENTLEY H. |
+| 8 | PASS LINE | 44 | P N WONG |

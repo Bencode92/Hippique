@@ -12,11 +12,11 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 4 | WOOTTON KING | 1,7 | ROBERT HAVLIN | 493/55/–/2338 |
-| 2 | CHARIOTS OF FIRE | 3,9 | OISIN MURPHY | 144/116/–/– |
-| 1 | BAYSIDE WALTZ | 8,3 | DAVID PROBERT | 368/116/–/621 |
-| 3 | STRIKE FORCE MAX | 10 | BILLY LOUGHNANE | 223/179/–/418 |
-| 5 | STAR CAMELOT | 10 | FINLEY MARSH | –/253/–/124 |
+| 4 | WOOTTON KING | 2,3 | ROBERT HAVLIN | 493/55/–/2338 |
+| 2 | CHARIOTS OF FIRE | 3,5 | OISIN MURPHY | 144/116/–/– |
+| 1 | BAYSIDE WALTZ | 4,7 | DAVID PROBERT | 368/116/–/621 |
+| 3 | STRIKE FORCE MAX | 7,6 | BILLY LOUGHNANE | 223/179/–/418 |
+| 5 | STAR CAMELOT | 13 | FINLEY MARSH | –/253/–/124 |
 
 ### 2. EBF FILLIES' NOVICE STAKES (CLASS 3)
 
@@ -25,11 +25,11 @@
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
 | 7 | OUT LATE | 1,1 | SEAN DYLAN BOWEN | –/510/–/5309 |
-| 6 | MY SPRITELY | 8,5 | TYLER HEARD | –/540/–/4009 |
-| 8 | STILTON | 12 | DAVID PROBERT | 368/209/–/– |
-| 5 | INTANGIBLE TRUTH | 25 | OISIN MURPHY | 144/116/–/– |
+| 6 | MY SPRITELY | 7,4 | TYLER HEARD | –/540/–/4009 |
+| 8 | STILTON | 14 | DAVID PROBERT | 368/209/–/– |
+| 2 | BLISTERING | 29 | ROSSA RYAN | 215/307/–/– |
+| 5 | INTANGIBLE TRUTH | 29 | OISIN MURPHY | 144/116/–/– |
 | 1 | ALANAH BANANAH | – | CIEREN FALLON | 321/24/–/– |
-| 2 | BLISTERING | – | ROSSA RYAN | 215/307/–/– |
 | 3 | DADDY STAR | – | BILLY LOUGHNANE | 223/253/–/124 |
 | 4 | FRIENDLY FORCE | – | ROWAN SCOTT | 509/358/–/– |
 
@@ -40,16 +40,16 @@
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
 | 5 | LADY'S GRACE | 1,5 | ROBERT HAVLIN | 493/55/–/521 |
-| 9 | ANOTHER SKY | 3,7 | DAVID PROBERT | 368/274/–/– |
-| 2 | WANNABE PERFECT | 16 | BILLY LOUGHNANE | 223/433/–/– |
-| 3 | ZEPHYRA | 16 | MARCO GHIANI | 376/105/–/1445 |
-| 6 | MEHEN | 16 | OISIN MURPHY | 144/657/–/– |
-| 12 | WEATHERINGWITHYOU | 33 | HARRY DAVIES | 381/35/–/– |
+| 9 | ANOTHER SKY | 4,3 | DAVID PROBERT | 368/274/–/– |
+| 6 | MEHEN | 12 | OISIN MURPHY | 144/657/–/– |
+| 2 | WANNABE PERFECT | 19 | BILLY LOUGHNANE | 223/433/–/– |
+| 3 | ZEPHYRA | 19 | MARCO GHIANI | 376/105/–/1445 |
+| 7 | MESOLITHIC | 38 | DANIEL MUSCUTT | 452/581/–/521 |
+| 11 | HIGHLAND GREY | 38 | CALLUM HUTCHINSON | –/204/–/– |
+| 12 | WEATHERINGWITHYOU | 38 | HARRY DAVIES | 381/35/–/– |
 | 1 | LIGHT FINGERED | – | PADDY BRADLEY | –/643/–/– |
 | 4 | AUGUSTA SAVAGE | – | OWEN LEWIS | –/–/–/– |
-| 7 | MESOLITHIC | – | DANIEL MUSCUTT | 452/581/–/521 |
 | 10 | FABULOVA | – | CIEREN FALLON | 321/541/–/– |
-| 11 | HIGHLAND GREY | – | CALLUM HUTCHINSON | –/204/–/– |
 
 ### 4. NURSERY HANDICAP (CLASS 5)
 
@@ -78,16 +78,16 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | HOT FUSS | 4,1 | PIERRE-LOUIS JAMIN | 199/796/–/– |
-| 6 | GUILDMASTER | 4,1 | ROBERT HAVLIN | 493/55/–/46 |
-| 10 | SQUIRE DANAGHER | 4,1 | CHARLES BISHOP | –/–/–/– |
-| 5 | REAL DREAM | 8,3 | ROSSA RYAN | 215/599/–/– |
-| 14 | ARC ZOOSVE | 8,3 | ROB HORNBY | 257/–/–/– |
-| 3 | DURAJI | 16 | FINLEY MARSH | –/253/–/5648 |
-| 4 | BRASIL POWER | 16 | BILLY LOUGHNANE | 223/433/–/– |
-| 11 | LEVEL LOOK | 16 | OISIN MURPHY | 144/116/–/– |
+| 6 | GUILDMASTER | 3,8 | ROBERT HAVLIN | 493/55/–/46 |
+| 2 | HOT FUSS | 4,8 | PIERRE-LOUIS JAMIN | 199/796/–/– |
+| 10 | SQUIRE DANAGHER | 4,8 | CHARLES BISHOP | –/–/–/– |
+| 5 | REAL DREAM | 9,7 | ROSSA RYAN | 215/599/–/– |
+| 7 | SYNERGISM | 9,7 | LUKE MORRIS | 247/–/–/– |
+| 14 | ARC ZOOSVE | 9,7 | ROB HORNBY | 257/–/–/– |
+| 3 | DURAJI | 19 | FINLEY MARSH | –/253/–/5648 |
+| 4 | BRASIL POWER | 19 | BILLY LOUGHNANE | 223/433/–/– |
+| 11 | LEVEL LOOK | 19 | OISIN MURPHY | 144/116/–/– |
 | 1 | ROARING LEGEND | – | H. J. HORGAN | –/–/–/– |
-| 7 | SYNERGISM | – | LUKE MORRIS | 247/–/–/– |
 | 8 | BOATSWAIN | – | HARRY DAVIES | 381/35/–/– |
 | 9 | CODIAK | – | OISIN ORR | –/221/–/– |
 | 12 | SAX APPEAL | – | CALLUM SHEPHERD | 189/99/–/– |
@@ -99,18 +99,18 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 9 | ROYAL ACCORD | 2,4 | MARCO GHIANI | 376/866/–/– |
-| 3 | SERENITY DREAM | 3,2 | JACK DOUGHTY | 485/–/–/– |
-| 2 | MODERN TIMES | 9,7 | LUKE MORRIS | 247/813/–/– |
-| 5 | BUCCABAY | 9,7 | BILLY LOUGHNANE | 223/550/–/– |
-| 6 | MARLBOROUGH PLACE | 9,7 | TARYN LANGLEY | –/–/–/– |
-| 8 | LIOSA | 9,7 | JACK DACE | –/–/–/– |
+| 9 | ROYAL ACCORD | 2,8 | MARCO GHIANI | 376/866/–/– |
+| 3 | SERENITY DREAM | 3,8 | JACK DOUGHTY | 485/–/–/– |
+| 5 | BUCCABAY | 5,7 | BILLY LOUGHNANE | 223/550/–/– |
+| 2 | MODERN TIMES | 11 | LUKE MORRIS | 247/813/–/– |
+| 6 | MARLBOROUGH PLACE | 11 | TARYN LANGLEY | –/–/–/– |
+| 8 | LIOSA | 11 | JACK DACE | –/–/–/– |
+| 12 | INDEPENDENT EXPERT | 11 | FINLEY MARSH | –/–/–/– |
 | 1 | CARAGIO | – | SHAY FARMER | –/–/–/– |
 | 4 | INITIAL BLUE | – | ROSSA RYAN | 215/325/–/– |
 | 7 | HUNDRED CAPS | – | DYLAN HOGAN | –/–/–/– |
 | 10 | RECEIPT | – | ROB HORNBY | 257/–/–/– |
 | 11 | ELVETHAM | – | CIEREN FALLON | 321/–/–/– |
-| 12 | INDEPENDENT EXPERT | – | FINLEY MARSH | –/–/–/– |
 
 ### 7. FILLIES' HANDICAP (CLASS 5)
 
@@ -118,16 +118,16 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 10 | NZURI | 3,3 | ROSE DAWES | –/–/–/– |
-| 5 | HAPPIER | 4 | TOBY MOORE | 287/–/–/– |
-| 1 | LADY MARIKO | 5 | SEAN LEVEY | 266/461/–/– |
-| 6 | LEONIE | 5 | OISIN MURPHY | 144/116/–/– |
-| 8 | DUSKAURA | 10 | KIEREN FOX | –/–/–/– |
-| 11 | JENNY JEROME | 10 | CHARLIE TUCKER | –/–/–/– |
+| 1 | LADY MARIKO | 4 | SEAN LEVEY | 266/461/–/– |
+| 6 | LEONIE | 5,4 | OISIN MURPHY | 144/116/–/– |
+| 10 | NZURI | 5,4 | ROSE DAWES | –/–/–/– |
+| 5 | HAPPIER | 6,5 | TOBY MOORE | 287/–/–/– |
+| 7 | AMELIA'S JOY | 8,1 | DAVID PROBERT | 368/–/–/– |
+| 3 | VISHAKA | 16 | CALLUM SHEPHERD | 189/–/–/– |
+| 4 | DIAMONDINTHEDARK | 16 | BILLY LOUGHNANE | 223/–/–/– |
+| 8 | DUSKAURA | 16 | KIEREN FOX | –/–/–/– |
+| 11 | JENNY JEROME | 16 | CHARLIE TUCKER | –/–/–/– |
 | 2 | LAHAN KINGMAN | – | FINLEY MARSH | –/253/–/– |
-| 3 | VISHAKA | – | CALLUM SHEPHERD | 189/–/–/– |
-| 4 | DIAMONDINTHEDARK | – | BILLY LOUGHNANE | 223/–/–/– |
-| 7 | AMELIA'S JOY | – | DAVID PROBERT | 368/–/–/– |
 | 9 | MAGNA | – | ROSSA RYAN | 215/–/–/– |
 
 ### 8. HANDICAP (CLASS 6)
@@ -136,14 +136,14 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 3 | ICONIC TIMES | 3 | SEAN DYLAN BOWEN | –/448/–/– |
-| 5 | BERLINETTA | 3,7 | BILLY LOUGHNANE | 223/861/–/– |
-| 2 | PENFOLDS GRANGE | 9,2 | KIEREN FOX | –/–/–/– |
-| 4 | TRAVEL AGENT | 9,2 | WILLIAM CARSON | –/–/–/– |
-| 6 | EYES FRONT | 9,2 | ASHLEY LEWIS | –/658/–/– |
-| 8 | VIKING GLORY | 9,2 | CIEREN FALLON | 321/813/–/– |
-| 11 | MANHATTAN MIRAGE | 9,2 | LUKE MORRIS | 247/–/–/– |
-| 7 | DARK MANDATE | – | CHARLES BISHOP | –/550/–/– |
-| 9 | BRAVE BYREFLECTION | – | TOM KIELY-MARSHALL | –/–/–/– |
+| 5 | BERLINETTA | 4,4 | BILLY LOUGHNANE | 223/861/–/– |
+| 2 | PENFOLDS GRANGE | 5,1 | KIEREN FOX | –/–/–/– |
+| 3 | ICONIC TIMES | 5,1 | SEAN DYLAN BOWEN | –/448/–/– |
+| 13 | PINK DIAMOND GIRL | 7,1 | JOSEPHINE GORDON | –/42/–/– |
+| 4 | TRAVEL AGENT | 15 | WILLIAM CARSON | –/–/–/– |
+| 6 | EYES FRONT | 15 | ASHLEY LEWIS | –/658/–/– |
+| 7 | DARK MANDATE | 15 | CHARLES BISHOP | –/550/–/– |
+| 8 | VIKING GLORY | 15 | CIEREN FALLON | 321/813/–/– |
+| 9 | BRAVE BYREFLECTION | 15 | TOM KIELY-MARSHALL | –/–/–/– |
+| 11 | MANHATTAN MIRAGE | 15 | LUKE MORRIS | 247/–/–/– |
 | 10 | CREDIT FORGEDD IT | – | SEAN LEVEY | 266/–/–/– |
-| 13 | PINK DIAMOND GIRL | – | JOSEPHINE GORDON | –/42/–/– |
