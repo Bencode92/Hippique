@@ -1,6 +1,6 @@
 # DEAUVILLE — 21/10/2026
 
-8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -89,36 +89,36 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DE LA FORET DE BIZY
 
-*18h45 · plat · 1500 m · 12 partants · cotes à T−1:08*
+*18h45 · plat · 1500 m · 12 partants · cotes à T−0:26*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 5 | ASTERALE | 4,5 | 4,4 | 4,54 | -0,9 % | C.DEMURO | 1/108/605/84 |
-| 8 | LAGOA SANTA | 6,3 | 7,5 | 7,73 | -18,5 % | M.GUYON | 4/147/1010/1760 |
-| 2 | PARISIAN BELLE | 7 | 10 | 6,94 | **+0,9 %** | A.LEMAITRE | 11/239/867/1358 |
-| 3 | LOUVE PRECIEUSE | 7 | 10 | 8,19 | -14,5 % | F.VALLE SKAR | 35/108/95/1560 |
-| 4 | ORLOVKA | 7,6 | 14 | 8,84 | -14,0 % | A.MOLINS | 34/527/16/1715 |
-| 7 | GIN GEMBRE | 9,7 | 5,3 | 11,47 | -15,4 % | A.HAMELIN | 22/214/24/342 |
-| 6 | MINO PICO | 13 | 12 | 15,48 | -16,0 % | D.SANTIAGO | 15/511/3123/1546 |
-| 1 | BLACK MAGIC WOMAN | 23 | 16 | 27,46 | -16,2 % | M.JUSTUM | 88/542/2178/1859 |
-| 9 | PALIMERO | 23 | 16 | 35,37 | -35,0 % | S.TISON | 98/515/3371/1585 |
-| 10 | CAP SKIRRING | 26 | 21 | 36,16 | -28,1 % | T.TRULLIER | 21/399/38/877 |
-| 12 | MADRAS | 45 | 38 | 66,83 | -32,7 % | C.GROSBOIS | 25/705/3104/3515 |
-| 11 | ALPENGEIST | 60 | 20 | 91,23 | -34,2 % | G.MEURY | 68/432/60/218 |
+| 5 | ASTERALE | 4,3 | 4,4 | 4,34 | -1,0 % | C.DEMURO | 1/108/605/84 |
+| 8 | LAGOA SANTA | 6,7 | 7,5 | 8,33 | -19,6 % | M.GUYON | 4/147/1010/1760 |
+| 3 | LOUVE PRECIEUSE | 7,1 | 10 | 8,35 | -15,0 % | F.VALLE SKAR | 35/108/95/1560 |
+| 2 | PARISIAN BELLE | 7,6 | 10 | 7,64 | -0,6 % | A.LEMAITRE | 11/239/867/1358 |
+| 4 | ORLOVKA | 7,7 | 14 | 9,01 | -14,5 % | A.MOLINS | 34/527/16/1715 |
+| 7 | GIN GEMBRE | 8 | 5,3 | 9,20 | -13,0 % | A.HAMELIN | 22/214/24/342 |
+| 6 | MINO PICO | 13 | 12 | 15,54 | -16,3 % | D.SANTIAGO | 15/511/3123/1546 |
+| 9 | PALIMERO | 22 | 16 | 33,73 | -34,8 % | S.TISON | 98/515/3371/1585 |
+| 1 | BLACK MAGIC WOMAN | 23 | 16 | 27,56 | -16,5 % | M.JUSTUM | 88/542/2178/1859 |
+| 10 | CAP SKIRRING | 29 | 21 | 41,10 | -29,4 % | T.TRULLIER | 21/399/38/877 |
+| 12 | MADRAS | 47 | 38 | 70,34 | -33,2 % | C.GROSBOIS | 25/705/3104/3515 |
+| 11 | ALPENGEIST | 64 | 20 | 98,07 | -34,7 % | G.MEURY | 68/432/60/218 |
 
 ### 6. PRIX DE CAEN
 
-*19h15 · plat · 1500 m · 7 partants · cotes de l'extraction*
+*19h15 · plat · 1500 m · 7 partants · cotes à T−29:48*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 3 | LOOP | 2,1 | 2,15 | -2,3 % | M.GUYON | 4/2/1/2 |
-| 2 | DRIBBLE | 3,5 | 3,80 | -7,9 % | H.JOURNIAC | 43/8/1/2 |
-| 1 | DIVINO AMORE | 4,8 | 5,21 | -7,9 % | PC.BOUDOT 4e | 8/32/34/906 |
-| 7 | ASSEMBLAGE | 7,8 | 9,45 | -17,4 % | A.LEMAITRE | 11/100/3342/1571 |
-| 4 | CODREA | 39 | 62,41 | -37,5 % | A.POUCHIN | 6/220/591/1845 |
-| 6 | DRITA | 47 | 71,26 | -34,0 % | D.SANTIAGO | 15/197/4078/– |
-| 5 | COLCHESTER | 83 | 147,21 | -43,6 % | A.MADAMET | 10/70/555/4416 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 3 | LOOP | 1,9 | 2,1 | 1,98 | -4,0 % | M.GUYON | 4/2/1/2 |
+| 1 | DIVINO AMORE | 4,6 | 4,8 | 4,92 | -6,6 % | PC.BOUDOT 4e | 8/32/34/906 |
+| 2 | DRIBBLE | 4,9 | 3,5 | 5,39 | -9,1 % | H.JOURNIAC | 43/8/1/2 |
+| 7 | ASSEMBLAGE | 9,3 | 7,8 | 11,48 | -19,0 % | A.LEMAITRE | 11/100/3342/1571 |
+| 4 | CODREA | 25 | 39 | 39,19 | -36,2 % | A.POUCHIN | 6/220/591/1845 |
+| 6 | DRITA | 34 | 47 | 49,29 | -31,0 % | D.SANTIAGO | 15/197/4078/– |
+| 5 | COLCHESTER | 46 | 83 | 70,73 | -35,0 % | A.MADAMET | 10/70/555/4416 |
 
 ### 7. PRIX DU CHATEAU DE CREVECOEUR
 
