@@ -4,44 +4,44 @@
   "reunion": 4,
   "heure_depart": 1792606500000,
   "distance": 1500,
-  "scraped_at": "2026-10-21T19:53:12.542787+02:00",
-  "minutes_avant_depart": 22,
+  "scraped_at": "2026-10-21T19:57:52.138720+02:00",
+  "minutes_avant_depart": 17,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ZELMAN",
-      "cote_live": 13.0,
+      "cote_live": 15.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792605181000
+      "timestamp_cote": 1792605467000
     },
     {
       "numPmu": 2,
       "nom": "CIEL DE PARIS",
-      "cote_live": 6.1,
+      "cote_live": 6.7,
       "cote_reference": 5.8,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1792605181000
+      "favoris": false,
+      "timestamp_cote": 1792605467000
     },
     {
       "numPmu": 3,
       "nom": "CENTRAL PARK WEST",
-      "cote_live": 6.6,
+      "cote_live": 5.6,
       "cote_reference": 6.7,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1792605181000
+      "favoris": true,
+      "timestamp_cote": 1792605467000
     },
     {
       "numPmu": 4,
       "nom": "MARKUS",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792605181000
+      "timestamp_cote": 1792605467000
     },
     {
       "numPmu": 5,
@@ -50,52 +50,52 @@
       "cote_reference": 9.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792605181000
+      "timestamp_cote": 1792605467000
     },
     {
       "numPmu": 6,
       "nom": "TASHANKA",
-      "cote_live": 7.2,
+      "cote_live": 6.9,
       "cote_reference": 7.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792605181000
+      "timestamp_cote": 1792605467000
     },
     {
       "numPmu": 7,
       "nom": "CHARENGO",
-      "cote_live": 9.2,
+      "cote_live": 10.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792605181000
+      "timestamp_cote": 1792605467000
     },
     {
       "numPmu": 8,
       "nom": "SPANISH BREEZE CEN",
-      "cote_live": 6.8,
+      "cote_live": 7.0,
       "cote_reference": 7.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792605181000
+      "timestamp_cote": 1792605467000
     },
     {
       "numPmu": 9,
       "nom": "ZAWAN",
-      "cote_live": 11.0,
+      "cote_live": 10.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792605181000
+      "timestamp_cote": 1792605467000
     },
     {
       "numPmu": 10,
       "nom": "ABIAT",
-      "cote_live": 9.6,
+      "cote_live": 8.7,
       "cote_reference": 8.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792605181000
+      "timestamp_cote": 1792605467000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -146,6 +146,22 @@
         "8": 6.8,
         "9": 11.0,
         "10": 9.6
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T19:57:52.138720+02:00",
+      "minutes_avant_depart": 17.13624533333333,
+      "cotes": {
+        "1": 15.0,
+        "2": 6.7,
+        "3": 5.6,
+        "4": 14.0,
+        "5": 11.0,
+        "6": 6.9,
+        "7": 10.0,
+        "8": 7.0,
+        "9": 10.0,
+        "10": 8.7
       }
     }
   ]
