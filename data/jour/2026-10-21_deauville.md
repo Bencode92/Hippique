@@ -1,6 +1,6 @@
 # DEAUVILLE — 21/10/2026
 
-8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -108,33 +108,33 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DE CAEN
 
-*19h15 · plat · 1500 m · 7 partants · cotes à T−1:47*
+*19h15 · plat · 1500 m · 7 partants · cotes à T−0:28*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | LOOP | 2,3 | 2,1 | 2,32 | -1,0 % | M.GUYON | 4/2/1/2 |
-| 1 | DIVINO AMORE | 3,1 | 4,8 | 3,32 | -6,6 % | PC.BOUDOT 4e | 8/32/34/906 |
-| 2 | DRIBBLE | 6,2 | 3,5 | 7,16 | -13,4 % | H.JOURNIAC | 43/8/1/2 |
-| 7 | ASSEMBLAGE | 12 | 7,8 | 15,10 | -20,5 % | A.LEMAITRE | 11/100/3342/1571 |
-| 4 | CODREA | 13 | 39 | 17,01 | -23,6 % | A.POUCHIN | 6/220/591/1845 |
-| 5 | COLCHESTER | 19 | 83 | 26,51 | -28,3 % | A.MADAMET | 10/70/555/4416 |
-| 6 | DRITA | 30 | 47 | 45,70 | -34,4 % | D.SANTIAGO | 15/197/4078/– |
+| 3 | LOOP | 1,8 | 2,1 | 1,92 | -6,1 % | M.GUYON | 4/2/1/2 |
+| 1 | DIVINO AMORE | 3,6 | 4,8 | 3,83 | -6,0 % | PC.BOUDOT 4e | 8/32/34/906 |
+| 2 | DRIBBLE | 8,3 | 3,5 | 10,85 | -23,5 % | H.JOURNIAC | 43/8/1/2 |
+| 7 | ASSEMBLAGE | 13 | 7,8 | 16,45 | -21,0 % | A.LEMAITRE | 11/100/3342/1571 |
+| 4 | CODREA | 15 | 39 | 19,95 | -24,8 % | A.POUCHIN | 6/220/591/1845 |
+| 5 | COLCHESTER | 28 | 83 | 41,05 | -31,8 % | A.MADAMET | 10/70/555/4416 |
+| 6 | DRITA | 43 | 47 | 64,58 | -33,4 % | D.SANTIAGO | 15/197/4078/– |
 
 ### 7. PRIX DU CHATEAU DE CREVECOEUR
 
-*19h45 · plat · 1500 m · 9 partants · cotes de l'extraction*
+*19h45 · plat · 1500 m · 9 partants · cotes à T−29:48*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 6 | HEILIGENSTEIN | 4,8 | 6,16 | -22,1 % | A.POUCHIN | 6/31/58/163 |
-| 7 | MAGIC INSPIRATION | 5,4 | 6,09 | -11,3 % | T.TRULLIER | 21/37/335/398 |
-| 8 | SHABAZI | 5,8 | 6,75 | -14,0 % | H.JOURNIAC | 43/8/954/90 |
-| 1 | MEDRONHO | 6 | 6,86 | -12,6 % | A.MADAMET | 10/109/11/134 |
-| 3 | OZARK JAMES | 6,3 | 7,73 | -18,6 % | C.DEMURO | 1/196/597/1452 |
-| 9 | BHASKARI | 6,3 | 6,69 | -5,8 % | R.MANGIONE | 78/2/53/129 |
-| 4 | ALCANE | 23 | 33,79 | -31,9 % | C.GROSBOIS | 25/153/2393/– |
-| 2 | TASHARRAFNA | 41 | 63,32 | -35,3 % | D.PILITTA | 267/32/88/141 |
-| 5 | POWER CELESTE | 41 | 60,39 | -32,1 % | C.BELMONT | 171/142/829/3061 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 7 | MAGIC INSPIRATION | 3,5 | 5,4 | 3,93 | -10,9 % | T.TRULLIER | 21/37/335/398 |
+| 3 | OZARK JAMES | 4,6 | 6,3 | 5,42 | -15,1 % | C.DEMURO | 1/196/597/1452 |
+| 8 | SHABAZI | 6,2 | 5,8 | 7,30 | -15,1 % | H.JOURNIAC | 43/8/954/90 |
+| 6 | HEILIGENSTEIN | 8,4 | 4,8 | 9,73 | -13,7 % | A.POUCHIN | 6/31/58/163 |
+| 9 | BHASKARI | 8,7 | 6,3 | 9,72 | -10,5 % | R.MANGIONE | 78/2/53/129 |
+| 1 | MEDRONHO | 8,9 | 6 | 10,88 | -18,2 % | A.MADAMET | 10/109/11/134 |
+| 5 | POWER CELESTE | 17 | 41 | 21,25 | -20,0 % | C.BELMONT | 171/142/829/3061 |
+| 4 | ALCANE | 26 | 23 | 39,01 | -33,3 % | C.GROSBOIS | 25/153/2393/– |
+| 2 | TASHARRAFNA | 27 | 41 | 36,21 | -25,4 % | D.PILITTA | 267/32/88/141 |
 
 ### 8. PRIX DE LA LONDE
 

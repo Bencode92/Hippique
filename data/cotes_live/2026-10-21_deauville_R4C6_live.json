@@ -4,71 +4,71 @@
   "reunion": 4,
   "heure_depart": 1792602900000,
   "distance": 1500,
-  "scraped_at": "2026-10-21T19:13:12.510447+02:00",
-  "minutes_avant_depart": 2,
+  "scraped_at": "2026-10-21T19:15:52.239233+02:00",
+  "minutes_avant_depart": -1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "DIVINO AMORE",
-      "cote_live": 3.1,
+      "cote_live": 3.2,
       "cote_reference": 5.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792602784000
+      "timestamp_cote": 1792602944000
     },
     {
       "numPmu": 2,
       "nom": "DRIBBLE",
-      "cote_live": 6.2,
+      "cote_live": 9.1,
       "cote_reference": 5.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792602784000
+      "timestamp_cote": 1792602944000
     },
     {
       "numPmu": 3,
       "nom": "LOOP",
-      "cote_live": 2.3,
+      "cote_live": 1.8,
       "cote_reference": 1.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792602784000
+      "timestamp_cote": 1792602944000
     },
     {
       "numPmu": 4,
       "nom": "CODREA",
-      "cote_live": 13.0,
+      "cote_live": 18.0,
       "cote_reference": 26.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792602784000
+      "timestamp_cote": 1792602944000
     },
     {
       "numPmu": 5,
       "nom": "COLCHESTER",
-      "cote_live": 19.0,
+      "cote_live": 30.0,
       "cote_reference": 40.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792602784000
+      "timestamp_cote": 1792602944000
     },
     {
       "numPmu": 6,
       "nom": "DRITA",
-      "cote_live": 30.0,
+      "cote_live": 45.0,
       "cote_reference": 33.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792602784000
+      "timestamp_cote": 1792602944000
     },
     {
       "numPmu": 7,
       "nom": "ASSEMBLAGE",
-      "cote_live": 12.0,
+      "cote_live": 13.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792602784000
+      "timestamp_cote": 1792602944000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -240,6 +240,58 @@
         "5": 19.0,
         "6": 30.0,
         "7": 12.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T19:13:52.064627+02:00",
+      "minutes_avant_depart": 1.1364022833333334,
+      "cotes": {
+        "1": 3.7,
+        "2": 7.2,
+        "3": 1.8,
+        "4": 14.0,
+        "5": 27.0,
+        "6": 37.0,
+        "7": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T19:14:32.429578+02:00",
+      "minutes_avant_depart": 0.4697335,
+      "cotes": {
+        "1": 3.6,
+        "2": 8.3,
+        "3": 1.8,
+        "4": 15.0,
+        "5": 28.0,
+        "6": 43.0,
+        "7": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T19:15:12.050046+02:00",
+      "minutes_avant_depart": -0.19693573333333333,
+      "cotes": {
+        "1": 3.3,
+        "2": 8.5,
+        "3": 1.9,
+        "4": 16.0,
+        "5": 26.0,
+        "6": 47.0,
+        "7": 12.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T19:15:52.239233+02:00",
+      "minutes_avant_depart": -0.8636043166666667,
+      "cotes": {
+        "1": 3.2,
+        "2": 9.1,
+        "3": 1.8,
+        "4": 18.0,
+        "5": 30.0,
+        "6": 45.0,
+        "7": 13.0
       }
     }
   ]
