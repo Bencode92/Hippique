@@ -29,23 +29,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 2. PRIX DE LA FORET DE BORD
 
-*17h07 · plat · 1500 m · 13 partants · cotes à T−29:39*
+*17h07 · plat · 1500 m · 13 partants · cotes à T−24:59*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 4 | MASTER PAT | 6,3 | 7 | 5,82 | **+8,3 %** | M.GUYON | 4/73/642/380 |
-| 3 | TIZIAN | 6,8 | 7 | 8,06 | -15,7 % | PC.BOUDOT 4e | 8/34/502/1710 |
-| 11 | PAMELA BOUM | 7 | 5,9 | 7,08 | -1,1 % | E.HARDOUIN | 27/89/445/838 |
-| 7 | EN PLEIN AIR | 8,1 | 13 | 8,02 | **+1,0 %** | C.DEMURO | 1/48/117/2410 |
-| 2 | SPRING HEART | 10 | 11 | 11,91 | -16,1 % | B.FLAMENT | 161/137/107/694 |
-| 1 | TYSON | 12 | 11 | 16,82 | -28,7 % | T.BACHELOT | 16/94/26/1429 |
-| 12 | BELVEDERE PALACE | 13 | 10 | 15,77 | -17,6 % | A.HAMELIN | 22/79/2767/1593 |
-| 8 | NOOTKA BAY | 15 | 12 | 17,87 | -16,1 % | C.LECOEUVRE | 13/117/433/2263 |
-| 5 | GOGUEN SPAISE | 17 | 13 | 18,03 | -5,7 % | L.ROUSSEL | 26/27/22/1199 |
-| 9 | EL KRAKEN | 17 | 13 | 21,57 | -21,2 % | R.MANGIONE | 78/132/161/409 |
-| 6 | LIGHTNING RAID | 18 | 32 | 21,03 | -14,4 % | P.BAZIRE | 58/161/3114/158 |
-| 13 | ROYAL SHAKE | 22 | 28 | 27,27 | -19,3 % | T.TRULLIER | 21/214/107/342 |
-| 10 | PAINT IT BLACK | 23 | 19 | 32,00 | -28,1 % | D.SANTIAGO | 15/542/2178/1859 |
+| 4 | MASTER PAT | 6,3 | 7 | 5,79 | **+8,8 %** | M.GUYON | 4/73/642/380 |
+| 11 | PAMELA BOUM | 6,3 | 5,9 | 5,79 | **+8,8 %** | E.HARDOUIN | 27/89/445/838 |
+| 3 | TIZIAN | 6,7 | 7 | 7,89 | -15,1 % | PC.BOUDOT 4e | 8/34/502/1710 |
+| 7 | EN PLEIN AIR | 8,4 | 13 | 8,32 | **+0,9 %** | C.DEMURO | 1/48/117/2410 |
+| 2 | SPRING HEART | 12 | 11 | 14,04 | -14,5 % | B.FLAMENT | 161/137/107/694 |
+| 8 | NOOTKA BAY | 12 | 12 | 13,71 | -12,5 % | C.LECOEUVRE | 13/117/433/2263 |
+| 1 | TYSON | 13 | 11 | 17,58 | -26,1 % | T.BACHELOT | 16/94/26/1429 |
+| 12 | BELVEDERE PALACE | 14 | 10 | 17,12 | -18,2 % | A.HAMELIN | 22/79/2767/1593 |
+| 5 | GOGUEN SPAISE | 16 | 13 | 16,73 | -4,4 % | L.ROUSSEL | 26/27/22/1199 |
+| 9 | EL KRAKEN | 18 | 13 | 22,94 | -21,5 % | R.MANGIONE | 78/132/161/409 |
+| 6 | LIGHTNING RAID | 20 | 32 | 23,63 | -15,4 % | P.BAZIRE | 58/161/3114/158 |
+| 10 | PAINT IT BLACK | 21 | 19 | 30,05 | -30,1 % | D.SANTIAGO | 15/542/2178/1859 |
+| 13 | ROYAL SHAKE | 25 | 28 | 31,41 | -20,4 % | T.TRULLIER | 21/214/107/342 |
 
 ### 3. PRIX DE LA FORET DU ROUVRAY
 

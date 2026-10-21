@@ -4,35 +4,35 @@
   "reunion": 4,
   "heure_depart": 1792595220000,
   "distance": 1500,
-  "scraped_at": "2026-10-21T16:37:20.954087+02:00",
-  "minutes_avant_depart": 30,
+  "scraped_at": "2026-10-21T16:42:00.946274+02:00",
+  "minutes_avant_depart": 25,
   "participants": [
     {
       "numPmu": 1,
       "nom": "TYSON",
-      "cote_live": 12.0,
+      "cote_live": 13.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792593032000
+      "timestamp_cote": 1792593694000
     },
     {
       "numPmu": 2,
       "nom": "SPRING HEART",
-      "cote_live": 10.0,
+      "cote_live": 12.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792593032000
+      "timestamp_cote": 1792593694000
     },
     {
       "numPmu": 3,
       "nom": "TIZIAN",
-      "cote_live": 6.8,
+      "cote_live": 6.7,
       "cote_reference": 6.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792593032000
+      "timestamp_cote": 1792593694000
     },
     {
       "numPmu": 4,
@@ -41,88 +41,88 @@
       "cote_reference": 6.3,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792593032000
+      "timestamp_cote": 1792593694000
     },
     {
       "numPmu": 5,
       "nom": "GOGUEN SPAISE",
-      "cote_live": 17.0,
+      "cote_live": 16.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792593032000
+      "timestamp_cote": 1792593694000
     },
     {
       "numPmu": 6,
       "nom": "LIGHTNING RAID",
-      "cote_live": 18.0,
+      "cote_live": 20.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792593032000
+      "timestamp_cote": 1792593694000
     },
     {
       "numPmu": 7,
       "nom": "EN PLEIN AIR",
-      "cote_live": 8.1,
+      "cote_live": 8.4,
       "cote_reference": 8.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792593032000
+      "timestamp_cote": 1792593694000
     },
     {
       "numPmu": 8,
       "nom": "NOOTKA BAY",
-      "cote_live": 15.0,
+      "cote_live": 12.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792593032000
+      "timestamp_cote": 1792593694000
     },
     {
       "numPmu": 9,
       "nom": "EL KRAKEN",
-      "cote_live": 17.0,
+      "cote_live": 18.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792593032000
+      "timestamp_cote": 1792593694000
     },
     {
       "numPmu": 10,
       "nom": "PAINT IT BLACK",
-      "cote_live": 23.0,
+      "cote_live": 21.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792593032000
+      "timestamp_cote": 1792593694000
     },
     {
       "numPmu": 11,
       "nom": "PAMELA BOUM",
-      "cote_live": 7.0,
+      "cote_live": 6.3,
       "cote_reference": 7.3,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1792593032000
+      "favoris": true,
+      "timestamp_cote": 1792593694000
     },
     {
       "numPmu": 12,
       "nom": "BELVEDERE PALACE",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792593032000
+      "timestamp_cote": 1792593694000
     },
     {
       "numPmu": 13,
       "nom": "ROYAL SHAKE",
-      "cote_live": 22.0,
+      "cote_live": 25.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792593032000
+      "timestamp_cote": 1792593694000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -144,6 +144,25 @@
         "11": 7.0,
         "12": 13.0,
         "13": 22.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T16:42:00.946274+02:00",
+      "minutes_avant_depart": 24.987128700000003,
+      "cotes": {
+        "1": 13.0,
+        "2": 12.0,
+        "3": 6.7,
+        "4": 6.3,
+        "5": 16.0,
+        "6": 20.0,
+        "7": 8.4,
+        "8": 12.0,
+        "9": 18.0,
+        "10": 21.0,
+        "11": 6.3,
+        "12": 14.0,
+        "13": 25.0
       }
     }
   ]
