@@ -4,62 +4,62 @@
   "reunion": 2,
   "heure_depart": 1792584900000,
   "distance": 2400,
-  "scraped_at": "2026-10-21T14:09:59.728184+02:00",
-  "minutes_avant_depart": 5,
+  "scraped_at": "2026-10-21T14:12:39.588475+02:00",
+  "minutes_avant_depart": 2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ARNAY LE DUC",
-      "cote_live": 7.3,
+      "cote_live": 7.6,
       "cote_reference": 5.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792584584000
+      "timestamp_cote": 1792584738000
     },
     {
       "numPmu": 2,
       "nom": "GOLDEN BLUSH",
-      "cote_live": 2.5,
+      "cote_live": 2.2,
       "cote_reference": 1.8,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792584584000
+      "timestamp_cote": 1792584738000
     },
     {
       "numPmu": 4,
       "nom": "KINGORI",
-      "cote_live": 5.0,
+      "cote_live": 5.1,
       "cote_reference": 7.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792584584000
+      "timestamp_cote": 1792584738000
     },
     {
       "numPmu": 5,
       "nom": "PORT SANTA PONSA",
-      "cote_live": 4.9,
+      "cote_live": 6.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792584584000
+      "timestamp_cote": 1792584738000
     },
     {
       "numPmu": 6,
       "nom": "NIAGARO",
-      "cote_live": 11.0,
+      "cote_live": 14.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792584584000
+      "timestamp_cote": 1792584738000
     },
     {
       "numPmu": 7,
       "nom": "PERSIANA",
-      "cote_live": 8.2,
+      "cote_live": 7.8,
       "cote_reference": 9.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792584584000
+      "timestamp_cote": 1792584738000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -158,6 +158,54 @@
         "5": 4.9,
         "6": 11.0,
         "7": 8.2
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T14:10:39.747781+02:00",
+      "minutes_avant_depart": 4.3424576,
+      "cotes": {
+        "1": 7.5,
+        "2": 2.6,
+        "4": 4.9,
+        "5": 4.8,
+        "6": 12.0,
+        "7": 7.7
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T14:11:19.680130+02:00",
+      "minutes_avant_depart": 3.6757889666666665,
+      "cotes": {
+        "1": 7.4,
+        "2": 2.6,
+        "4": 4.5,
+        "5": 5.1,
+        "6": 12.0,
+        "7": 7.8
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T14:11:59.800568+02:00",
+      "minutes_avant_depart": 3.0091202999999997,
+      "cotes": {
+        "1": 8.2,
+        "2": 2.2,
+        "4": 4.8,
+        "5": 5.8,
+        "6": 14.0,
+        "7": 8.8
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T14:12:39.588475+02:00",
+      "minutes_avant_depart": 2.3424514333333333,
+      "cotes": {
+        "1": 7.6,
+        "2": 2.2,
+        "4": 5.1,
+        "5": 6.0,
+        "6": 14.0,
+        "7": 7.8
       }
     }
   ]
