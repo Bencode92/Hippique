@@ -4,26 +4,26 @@
   "reunion": 3,
   "heure_depart": 1792586820000,
   "distance": 1600,
-  "scraped_at": "2026-10-21T14:34:40.147100+02:00",
-  "minutes_avant_depart": 12,
+  "scraped_at": "2026-10-21T14:39:19.901665+02:00",
+  "minutes_avant_depart": 8,
   "participants": [
     {
       "numPmu": 1,
       "nom": "DAKOVKA",
-      "cote_live": 14.0,
+      "cote_live": 16.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792586061000
+      "timestamp_cote": 1792586347000
     },
     {
       "numPmu": 2,
       "nom": "SNATCHER",
-      "cote_live": 10.0,
+      "cote_live": 11.0,
       "cote_reference": 8.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792586061000
+      "timestamp_cote": 1792586347000
     },
     {
       "numPmu": 3,
@@ -32,16 +32,16 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792586061000
+      "timestamp_cote": 1792586347000
     },
     {
       "numPmu": 4,
       "nom": "LA PORTUGAISE",
-      "cote_live": 19.0,
+      "cote_live": 18.0,
       "cote_reference": 32.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792586061000
+      "timestamp_cote": 1792586347000
     },
     {
       "numPmu": 5,
@@ -50,52 +50,52 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792586061000
+      "timestamp_cote": 1792586347000
     },
     {
       "numPmu": 6,
       "nom": "MANA SIS",
-      "cote_live": 15.0,
+      "cote_live": 13.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792586061000
+      "timestamp_cote": 1792586347000
     },
     {
       "numPmu": 7,
       "nom": "TOP GLORY",
-      "cote_live": 8.2,
+      "cote_live": 10.0,
       "cote_reference": 7.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792586061000
+      "timestamp_cote": 1792586347000
     },
     {
       "numPmu": 8,
       "nom": "MARQUISE VERA",
-      "cote_live": 7.5,
+      "cote_live": 8.2,
       "cote_reference": 7.6,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1792586061000
+      "favoris": false,
+      "timestamp_cote": 1792586347000
     },
     {
       "numPmu": 9,
       "nom": "ADELA",
-      "cote_live": 10.0,
+      "cote_live": 8.0,
       "cote_reference": 11.0,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1792586061000
+      "favoris": true,
+      "timestamp_cote": 1792586347000
     },
     {
       "numPmu": 10,
       "nom": "SHOWMAN",
-      "cote_live": 21.0,
+      "cote_live": 19.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792586061000
+      "timestamp_cote": 1792586347000
     },
     {
       "numPmu": 11,
@@ -104,34 +104,34 @@
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792586061000
+      "timestamp_cote": 1792586347000
     },
     {
       "numPmu": 12,
       "nom": "LA KARAGOOL",
-      "cote_live": 65.0,
+      "cote_live": 48.0,
       "cote_reference": 68.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792586061000
+      "timestamp_cote": 1792586347000
     },
     {
       "numPmu": 13,
       "nom": "LILY OFTHE KINGDON",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792586061000
+      "timestamp_cote": 1792586347000
     },
     {
       "numPmu": 14,
       "nom": "AL RASSOUL",
-      "cote_live": 10.0,
+      "cote_live": 11.0,
       "cote_reference": 8.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792586061000
+      "timestamp_cote": 1792586347000
     }
   ],
   "hippodrome": "PAU",
@@ -234,6 +234,26 @@
         "12": 65.0,
         "13": 13.0,
         "14": 10.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-21T14:39:19.901665+02:00",
+      "minutes_avant_depart": 7.675698883333333,
+      "cotes": {
+        "1": 16.0,
+        "2": 11.0,
+        "3": 10.0,
+        "4": 18.0,
+        "5": 11.0,
+        "6": 13.0,
+        "7": 10.0,
+        "8": 8.2,
+        "9": 8.0,
+        "10": 19.0,
+        "11": 10.0,
+        "12": 48.0,
+        "13": 14.0,
+        "14": 11.0
       }
     }
   ]
