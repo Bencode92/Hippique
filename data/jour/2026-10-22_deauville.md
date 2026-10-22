@@ -26,19 +26,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 2. PRIX D'ARGENTAN
 
-*16h32 · plat · 1500 m · 9 partants · cotes à T−29:43*
+*16h32 · plat · 1500 m · 9 partants · cotes à T−25:03*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | BUKORISHIA | 2,6 | 2,1 | 3,14 | -17,3 % | M.BARZALONA 3e | 2/1/10/102 |
-| 9 | PALOMA FLASH | 4,1 | 8 | 4,55 | -9,9 % | A.LEMAITRE | 11/170/84/1062 |
-| 6 | CARLA VELOSSO | 8,3 | 7,1 | 9,93 | -16,4 % | C.DEMURO | 1/66/1763/2705 |
-| 7 | QUEEN OF DIAMONDS | 9,5 | 9,7 | 11,64 | -18,4 % | S.PASQUIER | 23/21/78/90 |
-| 4 | OPEN ARMS | 11 | 9,4 | 13,49 | -18,4 % | A.HAMELIN | 22/23/29/18 |
-| 8 | DOLOROSA | 15 | 14 | 19,41 | -22,7 % | A.POUCHIN | 6/59/827/1173 |
-| 5 | BELLE DE REVE | 16 | 20 | 20,01 | -20,0 % | E.VERHESTRAETEN | 53/12/185/– |
-| 1 | NEW EVE | 21 | 23 | 27,43 | -23,4 % | R.THOMAS | 75/132/26/3920 |
-| 10 | BLUE STAR | 30 | 33 | 44,29 | -32,3 % | A.VILCHIEN | 93/–/2683/– |
+| 3 | BUKORISHIA | 1,5 | 2,1 | 1,72 | -12,6 % | M.BARZALONA 3e | 2/1/10/102 |
+| 9 | PALOMA FLASH | 7,4 | 8 | 8,66 | -14,5 % | A.LEMAITRE | 11/170/84/1062 |
+| 6 | CARLA VELOSSO | 10 | 7,1 | 13,77 | -27,4 % | C.DEMURO | 1/66/1763/2705 |
+| 7 | QUEEN OF DIAMONDS | 15 | 9,7 | 22,25 | -32,6 % | S.PASQUIER | 23/21/78/90 |
+| 4 | OPEN ARMS | 16 | 9,4 | 21,36 | -25,1 % | A.HAMELIN | 22/23/29/18 |
+| 8 | DOLOROSA | 20 | 14 | 27,68 | -27,7 % | A.POUCHIN | 6/59/827/1173 |
+| 5 | BELLE DE REVE | 22 | 20 | 32,37 | -32,0 % | E.VERHESTRAETEN | 53/12/185/– |
+| 1 | NEW EVE | 33 | 23 | 46,77 | -29,4 % | R.THOMAS | 75/132/26/3920 |
+| 10 | BLUE STAR | 53 | 33 | 93,02 | -43,0 % | A.VILCHIEN | 93/–/2683/– |
 
 ### 3. PRIX DE VILLEPELEE
 
