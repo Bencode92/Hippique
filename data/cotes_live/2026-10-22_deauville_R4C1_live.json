@@ -4,26 +4,26 @@
   "reunion": 4,
   "heure_depart": 1792677420000,
   "distance": 1500,
-  "scraped_at": "2026-10-22T15:40:16.758385+02:00",
-  "minutes_avant_depart": 17,
+  "scraped_at": "2026-10-22T15:44:16.692175+02:00",
+  "minutes_avant_depart": 13,
   "participants": [
     {
       "numPmu": 1,
       "nom": "LOUKPAN",
-      "cote_live": 9.5,
+      "cote_live": 9.7,
       "cote_reference": 7.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792676414000
+      "timestamp_cote": 1792676634000
     },
     {
       "numPmu": 2,
       "nom": "MONSIEUR CHARLIE",
-      "cote_live": 6.4,
+      "cote_live": 6.7,
       "cote_reference": 4.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792676414000
+      "timestamp_cote": 1792676634000
     },
     {
       "numPmu": 3,
@@ -32,25 +32,25 @@
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792676414000
+      "timestamp_cote": 1792676634000
     },
     {
       "numPmu": 4,
       "nom": "VALIANTUS",
-      "cote_live": 5.3,
+      "cote_live": 4.9,
       "cote_reference": 4.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792676414000
+      "timestamp_cote": 1792676634000
     },
     {
       "numPmu": 5,
       "nom": "DRYAS",
-      "cote_live": 54.0,
+      "cote_live": 55.0,
       "cote_reference": 56.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792676414000
+      "timestamp_cote": 1792676634000
     },
     {
       "numPmu": 6,
@@ -59,16 +59,16 @@
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792676414000
+      "timestamp_cote": 1792676634000
     },
     {
       "numPmu": 7,
       "nom": "OURGAME",
-      "cote_live": 2.7,
+      "cote_live": 2.8,
       "cote_reference": 4.3,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792676414000
+      "timestamp_cote": 1792676634000
     },
     {
       "numPmu": 8,
@@ -77,16 +77,16 @@
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792676414000
+      "timestamp_cote": 1792676634000
     },
     {
       "numPmu": 9,
       "nom": "FRIAR TUCK",
-      "cote_live": 8.1,
+      "cote_live": 7.9,
       "cote_reference": 7.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792676414000
+      "timestamp_cote": 1792676634000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -149,6 +149,21 @@
         "7": 2.7,
         "8": 10.0,
         "9": 8.1
+      }
+    },
+    {
+      "scraped_at": "2026-10-22T15:44:16.692175+02:00",
+      "minutes_avant_depart": 12.729467016666666,
+      "cotes": {
+        "1": 9.7,
+        "2": 6.7,
+        "3": 21.0,
+        "4": 4.9,
+        "5": 55.0,
+        "6": 21.0,
+        "7": 2.8,
+        "8": 10.0,
+        "9": 7.9
       }
     }
   ]
