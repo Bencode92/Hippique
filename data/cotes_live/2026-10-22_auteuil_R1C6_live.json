@@ -4,107 +4,107 @@
   "reunion": 1,
   "heure_depart": 1792680720000,
   "distance": 3600,
-  "scraped_at": "2026-10-22T16:37:36.725323+02:00",
-  "minutes_avant_depart": 14,
+  "scraped_at": "2026-10-22T16:41:36.704786+02:00",
+  "minutes_avant_depart": 10,
   "participants": [
     {
       "numPmu": 1,
       "nom": "BULREO DESJY",
-      "cote_live": 10.0,
+      "cote_live": 8.7,
       "cote_reference": 8.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792679847000
+      "timestamp_cote": 1792680089000
     },
     {
       "numPmu": 2,
       "nom": "NIRVANA DELABRUNIE",
-      "cote_live": 14.0,
+      "cote_live": 16.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792679847000
+      "timestamp_cote": 1792680089000
     },
     {
       "numPmu": 3,
       "nom": "PREMIER CHANT",
-      "cote_live": 7.7,
+      "cote_live": 6.9,
       "cote_reference": 8.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792679847000
+      "timestamp_cote": 1792680089000
     },
     {
       "numPmu": 4,
       "nom": "TONKAWA",
-      "cote_live": 3.1,
+      "cote_live": 3.4,
       "cote_reference": 3.9,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792679847000
+      "timestamp_cote": 1792680089000
     },
     {
       "numPmu": 5,
       "nom": "KAMALA",
-      "cote_live": 6.0,
+      "cote_live": 4.6,
       "cote_reference": 5.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792679847000
+      "timestamp_cote": 1792680089000
     },
     {
       "numPmu": 6,
       "nom": "TROTINETTE",
-      "cote_live": 13.0,
+      "cote_live": 16.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792679847000
+      "timestamp_cote": 1792680089000
     },
     {
       "numPmu": 7,
       "nom": "SUMAVA",
-      "cote_live": 8.1,
+      "cote_live": 9.6,
       "cote_reference": 7.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792679847000
+      "timestamp_cote": 1792680089000
     },
     {
       "numPmu": 9,
       "nom": "MAESTRO",
-      "cote_live": 20.0,
-      "cote_reference": 18.0,
-      "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1792679847000
-    },
-    {
-      "numPmu": 10,
-      "nom": "THE FIST",
-      "cote_live": 17.0,
-      "cote_reference": 16.0,
-      "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1792679847000
-    },
-    {
-      "numPmu": 11,
-      "nom": "RUMEX",
       "cote_live": 23.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792679847000
+      "timestamp_cote": 1792680089000
+    },
+    {
+      "numPmu": 10,
+      "nom": "THE FIST",
+      "cote_live": 18.0,
+      "cote_reference": 16.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792680089000
+    },
+    {
+      "numPmu": 11,
+      "nom": "RUMEX",
+      "cote_live": 26.0,
+      "cote_reference": 18.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1792680089000
     },
     {
       "numPmu": 12,
       "nom": "KASYMIR",
-      "cote_live": 70.0,
+      "cote_live": 87.0,
       "cote_reference": 56.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792679847000
+      "timestamp_cote": 1792680089000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -192,6 +192,23 @@
         "10": 17.0,
         "11": 23.0,
         "12": 70.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-22T16:41:36.704786+02:00",
+      "minutes_avant_depart": 10.395972183333333,
+      "cotes": {
+        "1": 8.7,
+        "2": 16.0,
+        "3": 6.9,
+        "4": 3.4,
+        "5": 4.6,
+        "6": 16.0,
+        "7": 9.6,
+        "9": 23.0,
+        "10": 18.0,
+        "11": 26.0,
+        "12": 87.0
       }
     }
   ]
