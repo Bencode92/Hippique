@@ -106,18 +106,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DE CASTILLON
 
-*18h55 · plat · 1900 m · 8 partants · cotes à T−17:19*
+*18h55 · plat · 1900 m · 8 partants · cotes à T−13:19*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 4 | DIVO TWO TIMES | 3,4 | 7,3 | 3,85 | -11,8 % | C.DEMURO | 1/242/666/1000 |
-| 2 | AFFIRMATIF | 3,7 | 8,3 | 4,02 | -8,0 % | M.GRANDIN | 3/58/233/2384 |
-| 1 | LAST CARAT FAL | 6,5 | 2,3 | 7,81 | -16,7 % | H.LEBOUC | 19/43/181/31 |
-| 8 | GADZART | 8,5 | 11 | 9,58 | -11,3 % | S.PASQUIER | 23/6/172/1274 |
-| 3 | ARIZONA'S VICTORIA | 8,6 | 14 | 9,71 | -11,4 % | P.BAZIRE | 58/106/3213/1714 |
-| 5 | TWISTING RING | 12 | 6,4 | 14,33 | -16,2 % | T.TRULLIER | 21/27/3187/4269 |
-| 6 | NINAO | 16 | 9,6 | 20,97 | -23,7 % | F.VALLE SKAR | 35/163/1907/2282 |
-| 7 | ETOLE DE BEAUM | 17 | 26 | 23,09 | -26,4 % | J.LACROIX | 94/141/2156/– |
+| 4 | DIVO TWO TIMES | 3 | 7,3 | 3,39 | -11,6 % | C.DEMURO | 1/242/666/1000 |
+| 2 | AFFIRMATIF | 4 | 8,3 | 4,36 | -8,3 % | M.GRANDIN | 3/58/233/2384 |
+| 1 | LAST CARAT FAL | 7 | 2,3 | 8,50 | -17,7 % | H.LEBOUC | 19/43/181/31 |
+| 3 | ARIZONA'S VICTORIA | 8,5 | 14 | 9,57 | -11,2 % | P.BAZIRE | 58/106/3213/1714 |
+| 8 | GADZART | 9 | 11 | 10,23 | -12,0 % | S.PASQUIER | 23/6/172/1274 |
+| 5 | TWISTING RING | 12 | 6,4 | 14,32 | -16,2 % | T.TRULLIER | 21/27/3187/4269 |
+| 6 | NINAO | 16 | 9,6 | 20,96 | -23,7 % | F.VALLE SKAR | 35/163/1907/2282 |
+| 7 | ETOLE DE BEAUM | 18 | 26 | 24,67 | -27,0 % | J.LACROIX | 94/141/2156/– |
 
 ### 7. PRIX DU CHATEAU D'AUVERS-SUR-OISE
 
