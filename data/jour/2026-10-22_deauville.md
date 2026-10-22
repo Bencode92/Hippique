@@ -1,6 +1,6 @@
 # DEAUVILLE — 22/10/2026
 
-8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -26,19 +26,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 2. PRIX D'ARGENTAN
 
-*16h32 · plat · 1500 m · 9 partants · cotes de l'extraction*
+*16h32 · plat · 1500 m · 9 partants · cotes à T−29:43*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 3 | BUKORISHIA | 2,1 | 2,25 | -6,5 % | M.BARZALONA 3e | 2/1/10/102 |
-| 6 | CARLA VELOSSO | 7,1 | 8,21 | -13,5 % | C.DEMURO | 1/66/1763/2705 |
-| 9 | PALOMA FLASH | 8 | 9,21 | -13,1 % | A.LEMAITRE | 11/170/84/1062 |
-| 4 | OPEN ARMS | 9,4 | 11,62 | -19,1 % | A.HAMELIN | 22/23/29/18 |
-| 7 | QUEEN OF DIAMONDS | 9,7 | 11,82 | -17,9 % | S.PASQUIER | 23/21/78/90 |
-| 8 | DOLOROSA | 14 | 17,74 | -21,1 % | A.POUCHIN | 6/59/827/1173 |
-| 5 | BELLE DE REVE | 20 | 28,17 | -29,0 % | E.VERHESTRAETEN | 53/12/185/– |
-| 1 | NEW EVE | 23 | 30,20 | -23,8 % | R.THOMAS | 75/132/26/3920 |
-| 10 | BLUE STAR | 33 | 48,90 | -32,5 % | A.VILCHIEN | 93/–/2683/– |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 3 | BUKORISHIA | 2,6 | 2,1 | 3,14 | -17,3 % | M.BARZALONA 3e | 2/1/10/102 |
+| 9 | PALOMA FLASH | 4,1 | 8 | 4,55 | -9,9 % | A.LEMAITRE | 11/170/84/1062 |
+| 6 | CARLA VELOSSO | 8,3 | 7,1 | 9,93 | -16,4 % | C.DEMURO | 1/66/1763/2705 |
+| 7 | QUEEN OF DIAMONDS | 9,5 | 9,7 | 11,64 | -18,4 % | S.PASQUIER | 23/21/78/90 |
+| 4 | OPEN ARMS | 11 | 9,4 | 13,49 | -18,4 % | A.HAMELIN | 22/23/29/18 |
+| 8 | DOLOROSA | 15 | 14 | 19,41 | -22,7 % | A.POUCHIN | 6/59/827/1173 |
+| 5 | BELLE DE REVE | 16 | 20 | 20,01 | -20,0 % | E.VERHESTRAETEN | 53/12/185/– |
+| 1 | NEW EVE | 21 | 23 | 27,43 | -23,4 % | R.THOMAS | 75/132/26/3920 |
+| 10 | BLUE STAR | 30 | 33 | 44,29 | -32,3 % | A.VILCHIEN | 93/–/2683/– |
 
 ### 3. PRIX DE VILLEPELEE
 
