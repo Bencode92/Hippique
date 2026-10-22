@@ -4,89 +4,89 @@
   "reunion": 1,
   "heure_depart": 1792682700000,
   "distance": 3600,
-  "scraped_at": "2026-10-22T16:59:01.569638+02:00",
-  "minutes_avant_depart": 26,
+  "scraped_at": "2026-10-22T17:03:40.740029+02:00",
+  "minutes_avant_depart": 21,
   "participants": [
     {
       "numPmu": 1,
       "nom": "FAMILY SPEED",
-      "cote_live": 16.0,
+      "cote_live": 18.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792681121000
+      "timestamp_cote": 1792681407000
     },
     {
       "numPmu": 2,
       "nom": "GOOD GIRL DE FAUST",
-      "cote_live": 11.0,
+      "cote_live": 10.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792681121000
+      "timestamp_cote": 1792681407000
     },
     {
       "numPmu": 3,
       "nom": "GORSTELLA",
-      "cote_live": 4.8,
+      "cote_live": 4.9,
       "cote_reference": 4.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792681121000
+      "timestamp_cote": 1792681407000
     },
     {
       "numPmu": 4,
       "nom": "NADURRA",
-      "cote_live": 39.0,
+      "cote_live": 43.0,
       "cote_reference": 41.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792681121000
+      "timestamp_cote": 1792681407000
     },
     {
       "numPmu": 5,
       "nom": "CHOUCHOU D'ANJOU",
-      "cote_live": 11.0,
+      "cote_live": 12.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792681121000
+      "timestamp_cote": 1792681407000
     },
     {
       "numPmu": 6,
       "nom": "BELIZE",
-      "cote_live": 6.8,
+      "cote_live": 7.3,
       "cote_reference": 6.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792681121000
+      "timestamp_cote": 1792681407000
     },
     {
       "numPmu": 7,
       "nom": "DINADAME",
-      "cote_live": 3.0,
+      "cote_live": 3.2,
       "cote_reference": 3.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792681121000
+      "timestamp_cote": 1792681407000
     },
     {
       "numPmu": 9,
       "nom": "CHOEUR DE GRIVE",
-      "cote_live": 9.4,
+      "cote_live": 5.9,
       "cote_reference": 9.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792681121000
+      "timestamp_cote": 1792681407000
     },
     {
       "numPmu": 10,
       "nom": "MISSDENUO",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792681121000
+      "timestamp_cote": 1792681407000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -119,6 +119,21 @@
         "7": 3.0,
         "9": 9.4,
         "10": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-22T17:03:40.740029+02:00",
+      "minutes_avant_depart": 21.325159516666666,
+      "cotes": {
+        "1": 18.0,
+        "2": 10.0,
+        "3": 4.9,
+        "4": 43.0,
+        "5": 12.0,
+        "6": 7.3,
+        "7": 3.2,
+        "9": 5.9,
+        "10": 14.0
       }
     }
   ]
