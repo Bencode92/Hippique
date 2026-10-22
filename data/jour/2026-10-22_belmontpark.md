@@ -8,15 +8,14 @@
 
 ### 1. ALLOWANCE 1700
 
-*19h10 · plat · 1700 m · 5 partants · cotes de l'extraction*
+*19h10 · plat · 1700 m · 4 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 3 | LADY WISDOM | 1,7 | R SANTANA, JR. |
-| 2 | KATIE KING | 5,3 | K CARMOUCHE |
-| 5 | FEDUPWITHTHEFED | 6,5 | F PRAT |
-| 4 | FULL POUR | 7,6 | P LOPEZ |
-| 1 | GRACE REFORMED | 9,8 | M GONZALEZ |
+| 3 | LADY WISDOM | 1,8 | R SANTANA, JR. |
+| 5 | FEDUPWITHTHEFED | 3,8 | F PRAT |
+| 2 | KATIE KING | 5 | K CARMOUCHE |
+| 4 | FULL POUR | 7,5 | A FRESU |
 
 ### 2. CLAIMING 1200
 
@@ -24,12 +23,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 2 | ABRIGADO | 3,3 | M FRANCO |
-| 3 | THE MARKINATER | 3,3 | D HADDOCK |
-| 5 | ICAN | 4,4 | J LEZCANO |
-| 4 | MOUQEER | 6,6 | R BOWEN |
-| 6 | RULE SIXTY TWO | 6,6 | A FRESU |
-| 1 | WAITIN'ONASUNNYDAY | – | P PENA |
+| 3 | THE MARKINATER | 3,4 | D HADDOCK |
+| 1 | WAITIN'ONASUNNYDAY | 4,7 | P PENA |
+| 2 | ABRIGADO | 5,1 | M FRANCO |
+| 4 | MOUQEER | 5,1 | R BOWEN |
+| 5 | ICAN | 6,8 | J LEZCANO |
+| 6 | RULE SIXTY TWO | 10 | A FRESU |
 
 ### 3. MAIDEN SPECIAL WEIGHT 1400
 
@@ -37,27 +36,24 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 2 | HE'S MY KIND | 4,6 | F PRAT |
-| 6 | BAMBOOZIE | 4,6 | R SANTANA, JR. |
-| 7 | WESEEULATOR | 4,6 | J CASTELLANO |
-| 5 | DAYTHEMUSICLIVED | 6,1 | M FRANCO |
-| 3 | ABOUT FACE | 9,2 | S MARIN |
-| 4 | SPHERICAL | 9,2 | L R RIVERA, JR. |
-| 8 | I'M A GUNNER | 9,2 | E J ZAYAS |
+| 2 | HE'S MY KIND | 2,1 | F PRAT |
+| 6 | BAMBOOZIE | 6,3 | R SANTANA, JR. |
+| 7 | WESEEULATOR | 6,3 | J CASTELLANO |
+| 5 | DAYTHEMUSICLIVED | 8,5 | M FRANCO |
+| 3 | ABOUT FACE | 12 | S MARIN |
+| 4 | SPHERICAL | 12 | L R RIVERA, JR. |
+| 8 | I'M A GUNNER | 12 | E J ZAYAS |
 | 1 | FORT GRIFFIN | – | K CARMOUCHE |
 
 ### 4. CLAIMING 1200
 
-*20h49 · plat · 1200 m · 7 partants · cotes de l'extraction*
+*20h49 · plat · 1200 m · 4 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 4 | PRINCE OF BROADWAY | 2,7 | M FRANCO |
-| 2 | EXPECTO PATRONUM | 4,1 | R SANTANA, JR. |
-| 7 | EMERALD EMBER | 4,1 | A FRESU |
-| 1 | AMELIA'S ECHO | 8,3 | S GONZALEZ |
-| 6 | BIG HELEONORA | 8,3 | K CARMOUCHE |
-| 5 | MAXISURE | 16 | D A RIVERA |
+| 2 | EXPECTO PATRONUM | 2,2 | R SANTANA, JR. |
+| 7 | EMERALD EMBER | 2,2 | A FRESU |
+| 1 | AMELIA'S ECHO | 4,4 | S GONZALEZ |
 | 3 | MARGARITA MOLLY | – | L R RIVERA, JR. |
 
 ### 5. MAIDEN SPECIAL WEIGHT 1200
@@ -66,11 +62,11 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 8 | LIBERTY'S ADVANCE | 2,8 | J LEZCANO | –/–/–/– |
-| 5 | IT'SGOODTOBEQUEEN | 3,8 | M FRANCO | –/–/–/– |
-| 6 | CITY WAR | 5,7 | P PENA | –/–/–/– |
-| 10 | FUNNY GAL | 5,7 | D DAVIS | –/–/–/– |
-| 11 | MIGHTY MISS | 5,7 | J CASTELLANO | –/–/–/– |
+| 8 | LIBERTY'S ADVANCE | 1,5 | J LEZCANO | –/–/–/– |
+| 5 | IT'SGOODTOBEQUEEN | 6,1 | M FRANCO | –/–/–/– |
+| 6 | CITY WAR | 9,2 | P PENA | –/–/–/– |
+| 10 | FUNNY GAL | 9,2 | D DAVIS | –/–/–/– |
+| 11 | MIGHTY MISS | 9,2 | J CASTELLANO | –/–/–/– |
 | 1 | BOCAGE BELLE | – | J VENTURA | –/–/–/– |
 | 2 | PROBABLE CHOICE | – | R BOWEN | –/–/–/– |
 | 3 | LADY VORTEX | – | R SANTANA, JR. | –/–/–/– |
@@ -84,39 +80,36 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 6 | OUTRO | 2,8 | J LEZCANO |
-| 9 | JUST TELL ANNE | 2,8 | M FRANCO |
-| 5 | OLATZ | 3,8 | P LOPEZ |
-| 1 | TIMELESS MELODY | 5,7 | A FRESU |
+| 3 | MAJESTIC MOONLIGHT | 3,6 | F PRAT |
+| 9 | JUST TELL ANNE | 3,6 | M FRANCO |
+| 6 | OUTRO | 5,5 | J LEZCANO |
+| 5 | OLATZ | 7,3 | P LOPEZ |
+| 1 | TIMELESS MELODY | 11 | A FRESU |
+| 4 | PORTIXOL | 11 | R SANTANA, JR. |
+| 10 | HONOR THE NUMBERS | 11 | S MARIN |
 | 2 | NO DIFFERENCE | – | D A RIVERA |
-| 3 | MAJESTIC MOONLIGHT | – | F PRAT |
-| 4 | PORTIXOL | – | R SANTANA, JR. |
 | 7 | AL LATAFAH | – | D DAVIS |
 | 8 | RED BEACH | – | E J ZAYAS |
-| 10 | HONOR THE NUMBERS | – | C SUTHERLAND |
 | 11 | BATTLE WINNER | – | K CARMOUCHE |
 
 ### 7. CLAIMING 1700
 
-*22h31 · plat · 1700 m · 7 partants · cotes de l'extraction*
+*22h31 · plat · 1700 m · 5 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | EXPENSIVE CUT | 3 | R SANTANA, JR. | –/–/–/287 |
-| 3 | JACKSON HEIGHTS | 3 | M FRANCO | –/–/–/– |
-| 6 | SUPERPOWER | 3 | C ELLIOTT | –/–/–/– |
-| 5 | NANTZ | 6,1 | S MARIN | –/–/–/– |
+| 1 | EXPENSIVE CUT | 1,9 | R SANTANA, JR. | –/–/–/287 |
+| 3 | JACKSON HEIGHTS | 1,9 | M FRANCO | –/–/–/– |
+| 5 | NANTZ | 7,9 | S MARIN | –/–/–/– |
 | 2 | LAUGHING BOY | – | R BOWEN | –/–/–/– |
-| 4 | THREE TECHNIQUE | – | R GUTIERREZ | –/–/–/– |
 | 7 | SCREAMING UNCLE | – | K CARMOUCHE | –/–/–/– |
 
 ### 8. CLAIMING 1700
 
-*23h05 · plat · 1800 m · 15 partants · cotes de l'extraction*
+*23h05 · plat · 1800 m · 10 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | NEWLYN | – | S MARIN |
 | 2 | EPICO | – | F PRAT |
 | 3 | CITY NIGHTS | – | R MARAGH |
 | 4 | MAXIMUM HEAT | – | R BOWEN |
@@ -127,7 +120,3 @@
 | 9 | LIGHT CAV | – | R SANTANA, JR. |
 | 10 | NOBLE ONE | – | O HERNANDEZ MORENO |
 | 11 | BERMAN | – | RESERVISTE 1 |
-| 12 | BLUE PILL | – | RESERVISTE 2 |
-| 13 | BENJIS BENEFIT | – | RESERVISTE 3 |
-| 14 | D'ORO CAVALLO | – | RESERVISTE 4 |
-| 15 | SHARONS PHAROAH | – | RESERVISTE 5 |
