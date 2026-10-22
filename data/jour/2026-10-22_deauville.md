@@ -1,6 +1,6 @@
 # DEAUVILLE — 22/10/2026
 
-8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 6 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -106,18 +106,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DE CASTILLON
 
-*18h55 · plat · 1900 m · 8 partants · cotes de l'extraction*
+*18h55 · plat · 1900 m · 8 partants · cotes à T−29:59*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 1 | LAST CARAT FAL | 2,3 | 2,54 | -9,6 % | H.LEBOUC | 19/43/181/31 |
-| 5 | TWISTING RING | 6,4 | 6,89 | -7,1 % | T.TRULLIER | 21/27/3187/4269 |
-| 4 | DIVO TWO TIMES | 7,3 | 8,34 | -12,5 % | C.DEMURO | 1/242/666/1000 |
-| 2 | AFFIRMATIF | 8,3 | 10,81 | -23,2 % | M.GRANDIN | 3/58/233/2384 |
-| 6 | NINAO | 9,6 | 11,48 | -16,4 % | F.VALLE SKAR | 35/163/1907/2282 |
-| 8 | GADZART | 11 | 12,90 | -14,7 % | S.PASQUIER | 23/6/172/1274 |
-| 3 | ARIZONA'S VICTORIA | 14 | 18,71 | -25,2 % | P.BAZIRE | 58/106/3213/1714 |
-| 7 | ETOLE DE BEAUM | 26 | 37,60 | -30,8 % | J.LACROIX | 94/141/2156/– |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 1 | LAST CARAT FAL | 3,4 | 2,3 | 4,17 | -18,5 % | H.LEBOUC | 19/43/181/31 |
+| 4 | DIVO TWO TIMES | 4,6 | 7,3 | 5,11 | -9,9 % | C.DEMURO | 1/242/666/1000 |
+| 2 | AFFIRMATIF | 5,5 | 8,3 | 6,12 | -10,2 % | M.GRANDIN | 3/58/233/2384 |
+| 8 | GADZART | 8,3 | 11 | 9,20 | -9,8 % | S.PASQUIER | 23/6/172/1274 |
+| 3 | ARIZONA'S VICTORIA | 8,5 | 14 | 9,46 | -10,2 % | P.BAZIRE | 58/106/3213/1714 |
+| 5 | TWISTING RING | 9,5 | 6,4 | 10,77 | -11,8 % | T.TRULLIER | 21/27/3187/4269 |
+| 6 | NINAO | 16 | 9,6 | 20,71 | -22,8 % | F.VALLE SKAR | 35/163/1907/2282 |
+| 7 | ETOLE DE BEAUM | 22 | 26 | 30,77 | -28,5 % | J.LACROIX | 94/141/2156/– |
 
 ### 7. PRIX DU CHATEAU D'AUVERS-SUR-OISE
 
