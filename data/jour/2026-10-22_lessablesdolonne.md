@@ -13,7 +13,7 @@
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
 | 1 | THE BLACK FRIDAY | – | C.GROSBOIS | 25/361/177/3915 |
-| 2 | OROPENDOLA | – | M.ROMARY 5e | 47/15/15/36 |
+| 2 | OROPENDOLA | – | M.ROMARY | 47/15/15/36 |
 | 3 | SKAROS | – | L.GALLO | 45/15/15/36 |
 | 4 | DICANTO | – | E.CRUBLET | 141/81/518/38 |
 | 5 | NYMPHENBURG | – | R.MANGIONE | 78/81/106/38 |
@@ -121,7 +121,7 @@
 | 1 | CALIFANO | – | Y.ROUSSET | 62/122/33/133 |
 | 2 | MICHELANGELO | – | P.REMOUE | 37/53/300/2592 |
 | 3 | MISTER MAEL | – | A.SUBIAS | 122/347/13/1792 |
-| 4 | ALBERTINELLI | – | M.ROMARY 5e | 47/319/42/1583 |
+| 4 | ALBERTINELLI | – | M.ROMARY | 47/319/42/1583 |
 | 5 | KOREM | – | R.MANGIONE | 78/81/2255/2868 |
 | 6 | ISMAEL PAINT | – | C.GROSBOIS | 25/81/1136/120 |
 | 7 | COOLMEEN ROYAL | – | J.MOUTARD | 61/174/12/277 |
