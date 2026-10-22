@@ -85,24 +85,24 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DE L'ECLUSE FRANCOIS I ER
 
-*18h20 · plat · 1300 m · 14 partants · cotes à T−10:59*
+*18h20 · plat · 1300 m · 14 partants · cotes à T−4:59*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | AVEC DES SI | 4,7 | 7 | 5,53 | -15,0 % | T.TRULLIER | 21/54/74/535 |
-| 9 | PERSIAN DEVA | 6,2 | 9,7 | 6,52 | -4,9 % | A.MADAMET | 10/34/67/919 |
-| 1 | DINA QUEEN | 11 | 20 | 12,63 | -12,9 % | T.PICCONE | 9/112/214/278 |
-| 6 | CHACUN SA VIE | 11 | 12 | 12,62 | -12,8 % | F.VALLE SKAR | 35/15/15/36 |
-| 5 | MISTY CITY | 12 | 18 | 14,98 | -19,9 % | H.BOUTIN | 14/15/91/273 |
-| 14 | POSSI | 13 | 6,7 | 16,04 | -19,0 % | H.LEBOUC | 19/15/4/16 |
-| 13 | NIOUININON | 14 | 9,7 | 16,74 | -16,4 % | E.HARDOUIN | 27/320/–/502 |
-| 7 | FERDY | 15 | 19 | 19,46 | -22,9 % | M.GUYON | 4/40/913/787 |
-| 8 | FIVESTARS | 15 | 13 | 18,97 | -20,9 % | C.DEMURO | 1/129/155/3251 |
-| 3 | LANDED | 16 | 11 | 18,67 | -14,3 % | C.LECOEUVRE | 13/87/335/2695 |
-| 12 | MANUAE | 16 | 15 | 17,86 | -10,4 % | R.THOMAS | 75/132/1310/2701 |
-| 4 | AMA DABLAM | 20 | 10 | 26,50 | -24,5 % | M.GRANDIN | 3/120/117/2045 |
-| 11 | HATSLIANA | 22 | 21 | 28,27 | -22,2 % | D.SANTIAGO | 15/197/2489/1750 |
-| 10 | LANDSCAPE | 53 | 24 | 84,94 | -37,6 % | C.BELMONT | 171/537/1363/1849 |
+| 2 | AVEC DES SI | 4,4 | 7 | 4,73 | -7,0 % | T.TRULLIER | 21/54/74/535 |
+| 9 | PERSIAN DEVA | 6,5 | 9,7 | 6,83 | -4,8 % | A.MADAMET | 10/34/67/919 |
+| 1 | DINA QUEEN | 9,6 | 20 | 10,70 | -10,3 % | T.PICCONE | 9/112/214/278 |
+| 5 | MISTY CITY | 9,9 | 18 | 11,86 | -16,5 % | H.BOUTIN | 14/15/91/273 |
+| 6 | CHACUN SA VIE | 13 | 12 | 15,23 | -14,6 % | F.VALLE SKAR | 35/15/15/36 |
+| 12 | MANUAE | 13 | 15 | 13,94 | -6,7 % | R.THOMAS | 75/132/1310/2701 |
+| 4 | AMA DABLAM | 15 | 10 | 18,83 | -20,3 % | M.GRANDIN | 3/120/117/2045 |
+| 3 | LANDED | 17 | 11 | 19,89 | -14,5 % | C.LECOEUVRE | 13/87/335/2695 |
+| 7 | FERDY | 17 | 19 | 22,36 | -24,0 % | M.GUYON | 4/40/913/787 |
+| 14 | POSSI | 18 | 6,7 | 23,29 | -22,7 % | H.LEBOUC | 19/15/4/16 |
+| 13 | NIOUININON | 19 | 9,7 | 23,70 | -19,8 % | E.HARDOUIN | 27/320/–/502 |
+| 8 | FIVESTARS | 20 | 13 | 26,31 | -24,0 % | C.DEMURO | 1/129/155/3251 |
+| 11 | HATSLIANA | 22 | 21 | 28,07 | -21,6 % | D.SANTIAGO | 15/197/2489/1750 |
+| 10 | LANDSCAPE | 40 | 24 | 65,04 | -38,5 % | C.BELMONT | 171/537/1363/1849 |
 
 ### 6. PRIX DE CASTILLON
 
