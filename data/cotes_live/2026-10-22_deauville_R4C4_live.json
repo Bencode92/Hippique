@@ -4,35 +4,35 @@
   "reunion": 4,
   "heure_depart": 1792683720000,
   "distance": 1300,
-  "scraped_at": "2026-10-22T17:12:21.314195+02:00",
-  "minutes_avant_depart": 30,
+  "scraped_at": "2026-10-22T17:17:00.658683+02:00",
+  "minutes_avant_depart": 25,
   "participants": [
     {
       "numPmu": 1,
       "nom": "GOLDEN HIND",
-      "cote_live": 16.0,
+      "cote_live": 14.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792681226000
+      "timestamp_cote": 1792682210000
     },
     {
       "numPmu": 2,
       "nom": "REVUELTO",
-      "cote_live": 32.0,
+      "cote_live": 36.0,
       "cote_reference": 31.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792681226000
+      "timestamp_cote": 1792682210000
     },
     {
       "numPmu": 3,
       "nom": "SEESHAUPT",
-      "cote_live": 19.0,
+      "cote_live": 15.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792681226000
+      "timestamp_cote": 1792682210000
     },
     {
       "numPmu": 4,
@@ -41,34 +41,34 @@
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792681226000
+      "timestamp_cote": 1792682210000
     },
     {
       "numPmu": 5,
       "nom": "SBIKHA",
-      "cote_live": 13.0,
+      "cote_live": 9.2,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792681226000
+      "timestamp_cote": 1792682210000
     },
     {
       "numPmu": 6,
       "nom": "THIBERVILLE",
-      "cote_live": 8.8,
+      "cote_live": 10.0,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792681226000
+      "timestamp_cote": 1792682210000
     },
     {
       "numPmu": 7,
       "nom": "WHY AM I BEAUTIFUL",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792681226000
+      "timestamp_cote": 1792682210000
     },
     {
       "numPmu": 8,
@@ -77,52 +77,52 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792681226000
+      "timestamp_cote": 1792682210000
     },
     {
       "numPmu": 9,
       "nom": "KENDARO",
-      "cote_live": 16.0,
+      "cote_live": 15.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792681226000
+      "timestamp_cote": 1792682210000
     },
     {
       "numPmu": 10,
       "nom": "STAR FIXX",
-      "cote_live": 7.7,
+      "cote_live": 7.2,
       "cote_reference": 7.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792681226000
+      "timestamp_cote": 1792682210000
     },
     {
       "numPmu": 11,
       "nom": "AKSAKOVA",
-      "cote_live": 31.0,
+      "cote_live": 32.0,
       "cote_reference": 28.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792681226000
+      "timestamp_cote": 1792682210000
     },
     {
       "numPmu": 12,
       "nom": "MY GIRL MOLLY",
-      "cote_live": 4.5,
+      "cote_live": 5.5,
       "cote_reference": 5.0,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792681226000
+      "timestamp_cote": 1792682210000
     },
     {
       "numPmu": 13,
       "nom": "KAIRA",
-      "cote_live": 29.0,
+      "cote_live": 35.0,
       "cote_reference": 32.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792681226000
+      "timestamp_cote": 1792682210000
     },
     {
       "numPmu": 14,
@@ -131,16 +131,16 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792681226000
+      "timestamp_cote": 1792682210000
     },
     {
       "numPmu": 15,
       "nom": "DAR ES SALAAM",
-      "cote_live": 29.0,
+      "cote_live": 35.0,
       "cote_reference": 31.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792681226000
+      "timestamp_cote": 1792682210000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -164,6 +164,27 @@
         "13": 29.0,
         "14": 11.0,
         "15": 29.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-22T17:17:00.658683+02:00",
+      "minutes_avant_depart": 24.99178176666667,
+      "cotes": {
+        "1": 14.0,
+        "2": 36.0,
+        "3": 15.0,
+        "4": 16.0,
+        "5": 9.2,
+        "6": 10.0,
+        "7": 14.0,
+        "8": 13.0,
+        "9": 15.0,
+        "10": 7.2,
+        "11": 32.0,
+        "12": 5.5,
+        "13": 35.0,
+        "14": 11.0,
+        "15": 35.0
       }
     }
   ]
