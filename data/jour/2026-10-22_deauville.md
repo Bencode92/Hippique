@@ -85,24 +85,24 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DE L'ECLUSE FRANCOIS I ER
 
-*18h20 · plat · 1300 m · 14 partants · cotes à T−17:39*
+*18h20 · plat · 1300 m · 14 partants · cotes à T−14:59*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | AVEC DES SI | 5,1 | 7 | 6,07 | -15,9 % | T.TRULLIER | 21/54/74/535 |
-| 9 | PERSIAN DEVA | 7,6 | 9,7 | 8,23 | -7,7 % | A.MADAMET | 10/34/67/919 |
-| 14 | POSSI | 10 | 6,7 | 11,81 | -15,3 % | H.LEBOUC | 19/15/4/16 |
-| 5 | MISTY CITY | 11 | 18 | 13,54 | -18,8 % | H.BOUTIN | 14/15/91/273 |
-| 8 | FIVESTARS | 11 | 13 | 13,21 | -16,7 % | C.DEMURO | 1/129/155/3251 |
-| 6 | CHACUN SA VIE | 13 | 12 | 15,36 | -15,4 % | F.VALLE SKAR | 35/15/15/36 |
-| 13 | NIOUININON | 13 | 9,7 | 15,37 | -15,4 % | E.HARDOUIN | 27/320/–/502 |
-| 3 | LANDED | 14 | 11 | 16,01 | -12,5 % | C.LECOEUVRE | 13/87/335/2695 |
-| 1 | DINA QUEEN | 15 | 20 | 18,17 | -17,4 % | T.PICCONE | 9/112/214/278 |
-| 7 | FERDY | 15 | 19 | 19,48 | -23,0 % | M.GUYON | 4/40/913/787 |
-| 12 | MANUAE | 16 | 15 | 17,88 | -10,5 % | R.THOMAS | 75/132/1310/2701 |
-| 4 | AMA DABLAM | 18 | 10 | 23,49 | -23,4 % | M.GRANDIN | 3/120/117/2045 |
-| 11 | HATSLIANA | 19 | 21 | 23,90 | -20,5 % | D.SANTIAGO | 15/197/2489/1750 |
-| 10 | LANDSCAPE | 44 | 24 | 72,83 | -39,6 % | C.BELMONT | 171/537/1363/1849 |
+| 2 | AVEC DES SI | 5,3 | 7 | 6,29 | -15,7 % | T.TRULLIER | 21/54/74/535 |
+| 9 | PERSIAN DEVA | 5,5 | 9,7 | 5,67 | -2,9 % | A.MADAMET | 10/34/67/919 |
+| 5 | MISTY CITY | 12 | 18 | 14,88 | -19,3 % | H.BOUTIN | 14/15/91/273 |
+| 14 | POSSI | 12 | 6,7 | 14,51 | -17,3 % | H.LEBOUC | 19/15/4/16 |
+| 6 | CHACUN SA VIE | 13 | 12 | 15,24 | -14,7 % | F.VALLE SKAR | 35/15/15/36 |
+| 8 | FIVESTARS | 13 | 13 | 15,94 | -18,4 % | C.DEMURO | 1/129/155/3251 |
+| 3 | LANDED | 14 | 11 | 15,88 | -11,8 % | C.LECOEUVRE | 13/87/335/2695 |
+| 7 | FERDY | 14 | 19 | 17,82 | -21,5 % | M.GUYON | 4/40/913/787 |
+| 13 | NIOUININON | 14 | 9,7 | 16,63 | -15,8 % | E.HARDOUIN | 27/320/–/502 |
+| 1 | DINA QUEEN | 16 | 20 | 19,43 | -17,6 % | T.PICCONE | 9/112/214/278 |
+| 12 | MANUAE | 16 | 15 | 17,74 | -9,8 % | R.THOMAS | 75/132/1310/2701 |
+| 4 | AMA DABLAM | 20 | 10 | 26,33 | -24,0 % | M.GRANDIN | 3/120/117/2045 |
+| 11 | HATSLIANA | 20 | 21 | 25,16 | -20,5 % | D.SANTIAGO | 15/197/2489/1750 |
+| 10 | LANDSCAPE | 43 | 24 | 70,48 | -39,0 % | C.BELMONT | 171/537/1363/1849 |
 
 ### 6. PRIX DE CASTILLON
 
