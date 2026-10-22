@@ -10,19 +10,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 1. PRIX DE FIERVILLE
 
-*15h57 · plat · 1500 m · 9 partants · cotes à T−25:23*
+*15h57 · plat · 1500 m · 9 partants · cotes à T−21:23*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 7 | OURGAME | 4,2 | 4,1 | 5,71 | -26,5 % | M.GUYON | 4/7/1/2 |
-| 4 | VALIANTUS | 4,4 | 4,7 | 4,92 | -10,6 % | M.BARZALONA 3e | 2/12/3583/1511 |
-| 2 | MONSIEUR CHARLIE | 4,9 | 4,7 | 5,89 | -16,8 % | A.LEMAITRE | 11/10/3293/381 |
-| 1 | LOUKPAN | 7,2 | 8,5 | 8,44 | -14,7 % | C.DEMURO | 1/6/17/19 |
-| 9 | FRIAR TUCK | 7,6 | 8 | 9,16 | -17,0 % | PC.BOUDOT 4e | 8/2/–/6 |
-| 8 | CAPTAIN HENRY | 10 | 10 | 12,63 | -20,9 % | A.HAMELIN | 22/23/696/1846 |
-| 6 | SAN ROQUE | 20 | 17 | 27,19 | -26,4 % | A.MADAMET | 10/22/80/32 |
-| 3 | MAG MAS | 22 | 18 | 31,80 | -30,8 % | T.BACHELOT | 16/48/3/1945 |
-| 5 | DRYAS | 45 | 49 | 71,18 | -36,8 % | H.LEBOUC | 19/147/59/4318 |
+| 4 | VALIANTUS | 4,2 | 4,7 | 5,34 | -21,3 % | M.BARZALONA 3e | 2/12/3583/1511 |
+| 7 | OURGAME | 4,3 | 4,1 | 5,05 | -14,9 % | M.GUYON | 4/7/1/2 |
+| 2 | MONSIEUR CHARLIE | 5,5 | 4,7 | 6,67 | -17,5 % | A.LEMAITRE | 11/10/3293/381 |
+| 9 | FRIAR TUCK | 7,4 | 8 | 8,81 | -16,0 % | PC.BOUDOT 4e | 8/2/–/6 |
+| 1 | LOUKPAN | 7,5 | 8,5 | 8,78 | -14,6 % | C.DEMURO | 1/6/17/19 |
+| 8 | CAPTAIN HENRY | 9,7 | 10 | 12,10 | -19,8 % | A.HAMELIN | 22/23/696/1846 |
+| 3 | MAG MAS | 18 | 18 | 22,83 | -21,1 % | T.BACHELOT | 16/48/3/1945 |
+| 6 | SAN ROQUE | 20 | 17 | 26,98 | -25,9 % | A.MADAMET | 10/22/80/32 |
+| 5 | DRYAS | 49 | 49 | 77,56 | -36,8 % | H.LEBOUC | 19/147/59/4318 |
 
 ### 2. PRIX D'ARGENTAN
 
