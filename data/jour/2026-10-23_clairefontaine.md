@@ -1,0 +1,203 @@
+# CLAIREFONTAINE — 23/10/2026
+
+9 courses.
+
+*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+
+---
+
+### 1. PRIX UN HIPPOWEEN SIGNE AGATHA CHRISTIE (PRIX DE LA CROIX FERRET)
+
+*13h08 · plat · 2400 m · 14 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey | jk/ent/él/pr |
+|--:|:--|--:|:--|--:|
+| 1 | ERA CHO | – | J.LACROIX | 94/262/1346/292 |
+| 2 | ZANZARE'S | – | J.MOUTARD | 61/91/314/3002 |
+| 3 | WINNETOU | – | H.BOUTIN | 14/677/60/675 |
+| 4 | TOO DARN QUICK | – | M.GUYON 4e | 4/159/3793/41 |
+| 5 | SOUDYA | – | A.LEMAITRE | 11/201/480/3403 |
+| 6 | ZOAR | – | G.TROLLEY DE PREVAUX | 46/68/348/1335 |
+| 7 | JANNET | – | PC.BOUDOT | 8/2/3501/69 |
+| 8 | NITRO PRECIEUSE | – | T.PICCONE | 9/200/244/206 |
+| 9 | FAUSTIMINE | – | F.VALLE SKAR | 35/135/532/2322 |
+| 10 | ENOLA D'OLIVERIE | – | A.SUBIAS | 122/183/2491/3790 |
+| 11 | BAY OF LOVE | – | T.BACHELOT | 16/53/3095/2304 |
+| 12 | NIGHT AFTER STAR | – | R.MANGIONE | 78/423/1188/3659 |
+| 13 | MITCHELL'S COMET | – | B.LABATE | 113/2/–/6 |
+| 14 | MANAMA GOLD | – | C.LECOEUVRE | 13/117/433/2598 |
+
+### 2. PRIX ZOO DE JURQUES (PRIX DES CYCLAMENS - CHALL. FRANCE SIRE)
+
+*13h43 · plat · 1400 m · 16 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey | jk/ent/él/pr |
+|--:|:--|--:|:--|--:|
+| 1 | UNE PEINTURE | – | LHW .GHYS-DIETEREN | –/375/50/759 |
+| 2 | TERANGA | – | L.HAYERES FOUCHARD | –/141/1647/– |
+| 3 | BATESCA | – | R.VALAIS | –/67/34/182 |
+| 4 | AMORE MIA | – | J.MAURER | –/4/33/38 |
+| 5 | EYWA | – | M.COLLOMB | –/54/43/1727 |
+| 6 | IRIDIA | – | M.ROLLANDO | –/280/1001/1431 |
+| 7 | POLO BABY | – | C.BRECHON | –/53/504/62 |
+| 8 | LE CHAT BOTTE | – | A.HAFFREINGUE | –/180/544/1870 |
+| 9 | TOOGOODFORSCHOOL | – | A.PELTIER | –/67/347/3764 |
+| 10 | ARNAGA | – | E.DAVEAU-COUDRAY | –/754/116/4234 |
+| 11 | REDRUNNER | – | J.BENECH | –/53/609/715 |
+| 12 | SUNRISE DREAM | – | C.THELIER-MELE | –/537/1937/1849 |
+| 13 | CIACCINO | – | E.GRANVILLIERS | –/15/15/2158 |
+| 14 | BAWE ISLAND | – | E.NOBILE | –/15/15/36 |
+| 15 | WHIZALIO | – | L.LENGLART | –/292/1119/401 |
+| 16 | SHAMSOUN | – | A.PELAUD | –/609/2/2640 |
+
+### 3. PRIX DU JEU DU JUST EQUILIBRE 2026 AC B-PX A.LEQUEUX (CM PT DES AJJ)
+
+*14h18 · plat · 1800 m · 10 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey | jk/ent/él/pr |
+|--:|:--|--:|:--|--:|
+| 1 | SEONA | – | G.MEURY | 68/40/432/609 |
+| 2 | POSCHIAVO | – | C.BELMONT | 171/220/10/508 |
+| 3 | STANGHELI | – | B.LABATE | 113/2/53/497 |
+| 4 | CLIMATE CHANGE | – | A.VILCHIEN | 93/17/271/602 |
+| 5 | NOBLE AMBER | – | L.GALLO | 45/4/195/26 |
+| 6 | GALAGHER | – | E.SOLINAS | 140/21/4/1086 |
+| 7 | SIYOUKING | – | C.CARBONI | 105/610/2126/3706 |
+| 8 | SERENISSIMUS | – | A.LE LAY MARTIN | 83/1/12/1020 |
+| 10 | HAVE DANCER | – | M.GRONDIN | 145/14/12/– |
+| 11 | ASTROPARK | – | M.PROTTI | 30/2/1/2 |
+
+### 4. PRIX LA GRANDE RECRE TOUQUES (PRIX DU LIEU ROUSSEL)
+
+*14h53 · plat · 2200 m · 16 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey | jk/ent/él/pr |
+|--:|:--|--:|:--|--:|
+| 1 | MAVERICK PREMIER | – | C.GROSBOIS | 25/352/2072/1163 |
+| 2 | LA CRACK PRECIEUSE | – | T.PICCONE | 9/200/244/206 |
+| 3 | VESINABA | – | PC.BOUDOT | 8/136/377/359 |
+| 4 | ANNA MANDARA | – | J.GUILLOCHON | 56/466/1356/1248 |
+| 5 | KARIOITAHI | – | L.BRECHET | 50/631/3104/2567 |
+| 6 | NATH SHOW | – | A.BERNARD | 91/146/38/1692 |
+| 7 | MAGNETIQUE | – | A.MOLINS | 34/67/3229/86 |
+| 8 | ACATANA | – | C.CARBONI | 105/67/803/603 |
+| 9 | BECH RIVER | – | A.LE LAY MARTIN | 83/237/7/580 |
+| 10 | RIVER DAVEN | – | J.CLAUDIC | 38/282/995/476 |
+| 11 | CHARLES LEGEND | – | M.FAVRIAUX | 51/360/878/754 |
+| 12 | NATHEPOLO | – | P.BAZIRE | 58/106/274/121 |
+| 13 | EMPRESS STAR | – | LHW .GHYS-DIETEREN | –/375/510/759 |
+| 14 | BOKRA FIL MISHMISH | – | A.MENARD-LEDAUPHIN | 154/609/317/2640 |
+| 15 | LADYSHOW | – | D.SANTIAGO | 15/81/36/38 |
+| 16 | FORZA BELLA | – | M.FLEURY | 124/754/1093/4234 |
+
+### 5. PRIX CLOTURE DU MEETING 2026 HIPPIPIK HOURRA ! (PRIX DU LIEU GODEFROY)
+
+*15h28 · plat · 2200 m · 16 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey | jk/ent/él/pr |
+|--:|:--|--:|:--|--:|
+| 1 | MEARAS STYLE | – | J.LACROIX | 94/141/382/– |
+| 2 | PISORNO | – | H.BOUTIN | 14/125/22/2156 |
+| 3 | RHIPPER | – | T.BREBION | 99/369/711/1075 |
+| 4 | MARYLIN CITY | – | Y.BARILLE | 82/114/1831/895 |
+| 5 | KALEOBAYANE | – | A.CRASTUS | 17/215/287/341 |
+| 6 | BLEKOU | – | C.LECOEUVRE | 13/93/1084/774 |
+| 7 | AL SKA | – | M.GUYON 3e | 4/102/2089/3896 |
+| 8 | STORMY NIGHT | – | L.BRECHET | 50/631/2628/2567 |
+| 9 | PALAZZO | – | J.CLAUDIC | 38/135/12/1774 |
+| 10 | BELLA CIAO | – | L.POGGIONOVO | 80/270/144/937 |
+| 11 | FRIENDS DREAM | – | M.FLEURY | 124/104/22/1677 |
+| 12 | VIVAHENY | – | P.CHEYER | 109/266/3645/2785 |
+| 13 | LHASA | – | D.SANTIAGO | 15/344/30/610 |
+| 14 | TREIZE DIAMANT | – | A.BARON | 39/262/469/292 |
+| 15 | THE WASP | – | C.COLLET-VIDAL | 119/292/4072/401 |
+| 16 | COCO LIGHT | – | A.MOLINS | 34/325/538/746 |
+
+### 6. PRIX DEAUVILLE AVENTURE (PRIX DU LIEU GAMARD)
+
+*16h03 · plat · 2200 m · 16 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey | jk/ent/él/pr |
+|--:|:--|--:|:--|--:|
+| 1 | MISSION D'ESPOIR | – | T.PICCONE | 9/200/858/1322 |
+| 2 | NEVER COME BACK | – | L.ROUSSEL | 26/102/46/686 |
+| 3 | HAPPY HUNTER | – | A.BARON | 39/220/328/2116 |
+| 4 | LOUIS DEUX | – | M.FAVRIAUX | 51/136/11/1411 |
+| 5 | IN THE ARMY NOW | – | A.BERNARD | 91/146/246/1777 |
+| 6 | HANDHY | – | M.VELON | 28/26/1307/78 |
+| 7 | JURMALA | – | A.HAMELIN | 22/533/4176/3424 |
+| 8 | MISS BRESIL DELF | – | A.POUCHIN | 6/168/2117/335 |
+| 9 | MARVEL MAX | – | PC.BOUDOT | 8/91/1897/– |
+| 10 | PRINCESS KARA | – | H.LEBOUC | 19/114/1596/1754 |
+| 11 | SCAT LADY | – | P.REMOUE | 37/86/1092/525 |
+| 12 | BLOWN BY THE WIND | – | A.SUBIAS | 122/183/236/3726 |
+| 13 | ESTELLA MOBRAY | – | M.MARQUETTE | 54/333/3117/1779 |
+| 14 | CAMELARUA | – | H.JOURNIAC | 43/8/394/281 |
+| 15 | ZOLIYANKA | – | P.CHEYER | 109/266/243/531 |
+| 16 | TRIPTAJIKA | – | D.SANTIAGO | 15/67/84/86 |
+
+### 7. PRIX JOUEURZ BY LOISIRS NORMANDIE (PRIX DE LA BRECHE AU DIABLE)
+
+*16h38 · plat · 1600 m · 15 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey | jk/ent/él/pr |
+|--:|:--|--:|:--|--:|
+| 1 | MEXICANA | – | J.MOUTARD | 61/93/20/1639 |
+| 2 | NOCTURNE BLOU | – | M.GUYON 5e | 4/50/908/543 |
+| 3 | TOMOE GOZEN | – | H.BOUTIN | 14/28/24/77 |
+| 4 | EXCESSIVE | – | O.ANDIGNE | 81/372/1029/989 |
+| 5 | RENVERSANTE | – | M.VELON | 28/26/3/161 |
+| 6 | ANDRESY | – | H.LEBOUC | 19/73/1427/380 |
+| 7 | DEUX DE COUPE | – | A.BARON | 39/84/50/973 |
+| 8 | LADIES DAY | – | M.MARQUETTE | 54/363/1029/684 |
+| 9 | TACT | – | L.POGGIONOVO | 80/127/348/106 |
+| 10 | TANA MA | – | G.MEURY | 68/22/20/175 |
+| 11 | FIDJI | – | A.CRASTUS | 17/215/305/341 |
+| 12 | RAGE CHOPE | – | C.GROSBOIS | 25/70/6/16 |
+| 13 | DANAFLO | – | L.ARMANCE | 234/8/1761/1189 |
+| 14 | PRINCESS ALICE | – | A.LEMAITRE | 11/395/546/1176 |
+| 15 | CHARM PLATIN | – | P.CHEYER | 109/90/894/1347 |
+
+### 8. PRIX AGATHA CHRISTIE LA REINE DU CRIME LE MASQUE (PX DE LA MARE A T.)
+
+*17h13 · plat · 1600 m · 14 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey | jk/ent/él/pr |
+|--:|:--|--:|:--|--:|
+| 1 | SILILLY | – | M.VELON | 28/341/1765/2707 |
+| 2 | DIVO | – | F.VALLE SKAR | 35/282/666/476 |
+| 3 | PIYANGO | – | M.GUYON 5e | 4/32/4/47 |
+| 4 | AEDION | – | A.LEMAITRE | 11/156/330/1617 |
+| 5 | PROTAGONIST | – | PC.BOUDOT 2e | 8/46/3761/53 |
+| 6 | NOBLE APPROACH | – | E.VERHESTRAETEN | 53/12/521/58 |
+| 8 | BLANQUETTE | – | A.MOLINS | 34/95/368/861 |
+| 9 | NUENCE'K | – | M.JUSTUM | 88/129/1031/1286 |
+| 10 | FILLETTE DU HOULEY | – | A.POUCHIN | 6/8/238/573 |
+| 11 | ROMANCIER NOCTURNE | – | R.MANGIONE | 78/32/1179/1035 |
+| 12 | AL PASO | – | E.SOLINAS | 140/21/20/90 |
+| 13 | AQUA AURA | – | A.MADAMET | 10/157/18/147 |
+| 14 | ALINKA | – | L.GALLO | 45/15/41/2186 |
+| 15 | PLAY THE GAME | – | P.REMOUE | 37/70/185/16 |
+
+### 9. PRIX LA VILLA DU TEMPS RETROUVE - CABOURG (PRIX DU LIEU BILL)
+
+*17h48 · plat · 2200 m · 16 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey | jk/ent/él/pr |
+|--:|:--|--:|:--|--:|
+| 1 | SIM CARD | – | M.GUYON 3e | 4/21/395/534 |
+| 2 | LE ROI LEON | – | A.MOLINS | 34/73/876/380 |
+| 3 | SWIFT FLIGHT | – | E.HARDOUIN | 27/94/29/424 |
+| 4 | SPRING EVE | – | P.BAZIRE | 58/106/737/817 |
+| 5 | LADY MADELEINE | – | F.VALLE SKAR | 35/11/591/465 |
+| 6 | SPLENDINO | – | L.GALLO | 45/15/7/273 |
+| 7 | KAMAKURA ONE | – | A.CRASTUS | 17/26/1404/601 |
+| 8 | LA PELEMOISE | – | C.GROSBOIS | 25/183/969/808 |
+| 9 | ZOLIA | – | J.MOUTARD | 61/357/4/659 |
+| 10 | KING KARA | – | H.LEBOUC | 19/114/1596/1754 |
+| 11 | APPLEBLOSSOMWHITE | – | E.VERHESTRAETEN | 53/12/3168/367 |
+| 12 | MAYAMAR | – | C.LECOEUVRE | 13/135/1018/1541 |
+| 13 | HOT COLD | – | H.JOURNIAC | 43/170/377/183 |
+| 14 | ATHINEOS | – | A.HAMELIN | 22/117/582/844 |
+| 15 | HAUTE GAMME | – | A.MEKOUCHE | 135/216/295/346 |
+| 16 | NICE RULER | – | A.MADAMET | 10/147/87/331 |
