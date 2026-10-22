@@ -4,89 +4,89 @@
   "reunion": 4,
   "heure_depart": 1792677540000,
   "distance": 1500,
-  "scraped_at": "2026-10-22T15:58:56.994830+02:00",
-  "minutes_avant_depart": 0,
+  "scraped_at": "2026-10-22T16:01:36.736859+02:00",
+  "minutes_avant_depart": -3,
   "participants": [
     {
       "numPmu": 1,
       "nom": "LOUKPAN",
-      "cote_live": 11.0,
+      "cote_live": 13.0,
       "cote_reference": 7.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792677527000
+      "timestamp_cote": 1792677580000
     },
     {
       "numPmu": 2,
       "nom": "MONSIEUR CHARLIE",
-      "cote_live": 3.6,
+      "cote_live": 3.4,
       "cote_reference": 4.8,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792677527000
+      "timestamp_cote": 1792677580000
     },
     {
       "numPmu": 3,
       "nom": "MAG MAS",
-      "cote_live": 41.0,
+      "cote_live": 49.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792677527000
+      "timestamp_cote": 1792677580000
     },
     {
       "numPmu": 4,
       "nom": "VALIANTUS",
-      "cote_live": 6.5,
+      "cote_live": 7.5,
       "cote_reference": 4.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792677527000
+      "timestamp_cote": 1792677580000
     },
     {
       "numPmu": 5,
       "nom": "DRYAS",
-      "cote_live": 50.0,
+      "cote_live": 60.0,
       "cote_reference": 56.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792677527000
+      "timestamp_cote": 1792677580000
     },
     {
       "numPmu": 6,
       "nom": "SAN ROQUE",
-      "cote_live": 23.0,
+      "cote_live": 20.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792677527000
+      "timestamp_cote": 1792677580000
     },
     {
       "numPmu": 7,
       "nom": "OURGAME",
-      "cote_live": 4.1,
+      "cote_live": 4.2,
       "cote_reference": 4.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792677527000
+      "timestamp_cote": 1792677580000
     },
     {
       "numPmu": 8,
       "nom": "CAPTAIN HENRY",
-      "cote_live": 9.6,
+      "cote_live": 6.8,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792677527000
+      "timestamp_cote": 1792677580000
     },
     {
       "numPmu": 9,
       "nom": "FRIAR TUCK",
-      "cote_live": 5.2,
+      "cote_live": 5.6,
       "cote_reference": 7.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792677527000
+      "timestamp_cote": 1792677580000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -314,6 +314,66 @@
         "7": 4.1,
         "8": 9.6,
         "9": 5.2
+      }
+    },
+    {
+      "scraped_at": "2026-10-22T15:59:36.616309+02:00",
+      "minutes_avant_depart": -0.6039050666666667,
+      "cotes": {
+        "1": 13.0,
+        "2": 3.4,
+        "3": 48.0,
+        "4": 7.5,
+        "5": 59.0,
+        "6": 19.0,
+        "7": 4.2,
+        "8": 7.1,
+        "9": 5.6
+      }
+    },
+    {
+      "scraped_at": "2026-10-22T16:00:16.780960+02:00",
+      "minutes_avant_depart": -1.2705733666666668,
+      "cotes": {
+        "1": 13.0,
+        "2": 3.4,
+        "3": 49.0,
+        "4": 7.5,
+        "5": 60.0,
+        "6": 20.0,
+        "7": 4.2,
+        "8": 6.8,
+        "9": 5.6
+      }
+    },
+    {
+      "scraped_at": "2026-10-22T16:00:56.604462+02:00",
+      "minutes_avant_depart": -1.9372415666666667,
+      "cotes": {
+        "1": 13.0,
+        "2": 3.4,
+        "3": 49.0,
+        "4": 7.5,
+        "5": 60.0,
+        "6": 20.0,
+        "7": 4.2,
+        "8": 6.8,
+        "9": 5.6
+      }
+    },
+    {
+      "scraped_at": "2026-10-22T16:01:36.736859+02:00",
+      "minutes_avant_depart": -2.603909966666667,
+      "cotes": {
+        "1": 13.0,
+        "2": 3.4,
+        "3": 49.0,
+        "4": 7.5,
+        "5": 60.0,
+        "6": 20.0,
+        "7": 4.2,
+        "8": 6.8,
+        "9": 5.6
       }
     }
   ]
