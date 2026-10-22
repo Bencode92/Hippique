@@ -1,6 +1,6 @@
 # DEAUVILLE — 22/10/2026
 
-8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -63,25 +63,25 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX DU CANAL DU HAVRE
 
-*17h42 · plat · 1300 m · 15 partants · cotes de l'extraction*
+*17h42 · plat · 1300 m · 15 partants · cotes à T−29:39*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 12 | MY GIRL MOLLY | 4,3 | 5,01 | -14,2 % | M.BARZALONA 3e | 2/1/746/74 |
-| 10 | STAR FIXX | 7,5 | 9,42 | -20,3 % | M.LERNER | 185/11/171/249 |
-| 6 | THIBERVILLE | 9,2 | 10,26 | -10,3 % | D.SANTIAGO | 15/142/388/4 |
-| 7 | WHY AM I BEAUTIFUL | 12 | 13,99 | -14,2 % | M.VELON | 28/34/1346/292 |
-| 8 | SUGAR DADDY | 12 | 14,99 | -20,0 % | C.LECOEUVRE | 13/40/21/219 |
-| 5 | SBIKHA | 13 | 18,02 | -27,8 % | A.MOLINS | 34/34/297/726 |
-| 14 | NAVACERRADA | 14 | 16,76 | -16,5 % | C.DEMURO | 1/66/199/61 |
-| 4 | ROCK OF ROSHA | 15 | 18,16 | -17,4 % | R.THOMAS | 75/132/3116/5272 |
-| 1 | GOLDEN HIND | 16 | 19,56 | -18,2 % | A.LEMAITRE | 11/45/284/89 |
-| 9 | KENDARO | 16 | 20,47 | -21,9 % | M.GUYON | 4/21/4/612 |
-| 3 | SEESHAUPT | 21 | 28,07 | -25,2 % | M.GRANDIN | 3/4/30/17 |
-| 15 | DAR ES SALAAM | 28 | 39,00 | -28,2 % | V.DUPONT | 100/25/–/871 |
-| 13 | KAIRA | 29 | 35,31 | -17,9 % | H.JOURNIAC | 43/8/1676/2594 |
-| 11 | AKSAKOVA | 31 | 45,87 | -32,4 % | A.POUCHIN | 6/8/16/281 |
-| 2 | REVUELTO | 33 | 44,83 | -26,4 % | A.HAMELIN | 22/48/186/1279 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 12 | MY GIRL MOLLY | 4,5 | 4,3 | 5,26 | -14,5 % | M.BARZALONA 3e | 2/1/746/74 |
+| 10 | STAR FIXX | 7,7 | 7,5 | 9,69 | -20,6 % | M.LERNER | 185/11/171/249 |
+| 6 | THIBERVILLE | 8,8 | 9,2 | 9,73 | -9,5 % | D.SANTIAGO | 15/142/388/4 |
+| 14 | NAVACERRADA | 11 | 14 | 12,62 | -12,9 % | C.DEMURO | 1/66/199/61 |
+| 5 | SBIKHA | 13 | 13 | 17,99 | -27,7 % | A.MOLINS | 34/34/297/726 |
+| 7 | WHY AM I BEAUTIFUL | 13 | 12 | 14,66 | -11,3 % | M.VELON | 28/34/1346/292 |
+| 8 | SUGAR DADDY | 13 | 12 | 17,99 | -27,7 % | C.LECOEUVRE | 13/40/21/219 |
+| 1 | GOLDEN HIND | 16 | 16 | 19,53 | -18,1 % | A.LEMAITRE | 11/45/284/89 |
+| 4 | ROCK OF ROSHA | 16 | 15 | 19,55 | -18,2 % | R.THOMAS | 75/132/3116/5272 |
+| 9 | KENDARO | 16 | 16 | 20,44 | -21,7 % | M.GUYON | 4/21/4/612 |
+| 3 | SEESHAUPT | 19 | 21 | 24,96 | -23,9 % | M.GRANDIN | 3/4/30/17 |
+| 13 | KAIRA | 29 | 29 | 35,25 | -17,7 % | H.JOURNIAC | 43/8/1676/2594 |
+| 15 | DAR ES SALAAM | 29 | 28 | 40,52 | -28,4 % | V.DUPONT | 100/25/–/871 |
+| 11 | AKSAKOVA | 31 | 31 | 45,79 | -32,3 % | A.POUCHIN | 6/8/16/281 |
+| 2 | REVUELTO | 32 | 33 | 43,24 | -26,0 % | A.HAMELIN | 22/48/186/1279 |
 
 ### 5. PRIX DE L'ECLUSE FRANCOIS I ER
 
