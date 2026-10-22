@@ -4,62 +4,62 @@
   "reunion": 4,
   "heure_depart": 1792690020000,
   "distance": 1900,
-  "scraped_at": "2026-10-22T19:10:20.745744+02:00",
-  "minutes_avant_depart": 17,
+  "scraped_at": "2026-10-22T19:14:20.766607+02:00",
+  "minutes_avant_depart": 13,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ARLONG FAL",
-      "cote_live": 4.0,
+      "cote_live": 4.1,
       "cote_reference": 6.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792689000000
+      "timestamp_cote": 1792689242000
     },
     {
       "numPmu": 2,
       "nom": "HELLO JO",
-      "cote_live": 2.7,
+      "cote_live": 2.6,
       "cote_reference": 2.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792689000000
+      "timestamp_cote": 1792689242000
     },
     {
       "numPmu": 3,
       "nom": "PAUL DE TARSE",
-      "cote_live": 6.2,
+      "cote_live": 5.8,
       "cote_reference": 8.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792689000000
+      "timestamp_cote": 1792689242000
     },
     {
       "numPmu": 4,
       "nom": "OCEAN STAR",
-      "cote_live": 5.9,
+      "cote_live": 6.2,
       "cote_reference": 5.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792689000000
+      "timestamp_cote": 1792689242000
     },
     {
       "numPmu": 5,
       "nom": "REVE BLEU",
-      "cote_live": 7.8,
+      "cote_live": 8.3,
       "cote_reference": 5.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792689000000
+      "timestamp_cote": 1792689242000
     },
     {
       "numPmu": 6,
       "nom": "MARYCHA",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792689000000
+      "timestamp_cote": 1792689242000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -110,6 +110,18 @@
         "4": 5.9,
         "5": 7.8,
         "6": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-22T19:14:20.766607+02:00",
+      "minutes_avant_depart": 12.658057316666666,
+      "cotes": {
+        "1": 4.1,
+        "2": 2.6,
+        "3": 5.8,
+        "4": 6.2,
+        "5": 8.3,
+        "6": 14.0
       }
     }
   ]
