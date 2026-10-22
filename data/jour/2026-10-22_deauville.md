@@ -42,24 +42,24 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX DE VILLEPELEE
 
-*17h09 · plat · 1500 m · 14 partants · cotes à T−3:59*
+*17h09 · plat · 1500 m · 14 partants · cotes à T−3:19*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 11 | IMDALA | 3,9 | 3,5 | 4,36 | -10,5 % | M.BARZALONA 3e | 2/1/–/1 |
-| 3 | SAYVILLE | 7,8 | 10 | 7,76 | **+0,5 %** | PC.BOUDOT 4e | 8/133/527/237 |
-| 14 | DELAJA | 7,8 | 8,4 | 9,19 | -15,1 % | T.BACHELOT | 16/17/10/102 |
-| 13 | RUBENESQUE | 11 | 10 | 13,14 | -16,3 % | T.TRULLIER | 21/299/39/1598 |
-| 8 | ARAYA | 12 | 14 | 13,93 | -13,9 % | F.VALLE SKAR | 35/32/29/18 |
-| 2 | MIDNIGHT RODEO | 13 | 12 | 16,73 | -22,3 % | M.GRANDIN | 3/120/3144/5228 |
-| 6 | FILIGRANE | 13 | 11 | 17,13 | -24,1 % | T.PICCONE | 9/106/170/1714 |
-| 12 | INDY B | 18 | 18 | 24,48 | -26,5 % | A.CRASTUS | 17/9/3316/4 |
-| 15 | SOLEIL SUISSE | 20 | 23 | 25,22 | -20,7 % | S.PASQUIER | 23/6/191/251 |
-| 4 | NEBULAE | 21 | 17 | 29,27 | -28,3 % | C.DEMURO | 1/16/204/288 |
-| 10 | QUEMAZAL | 22 | 29 | 28,17 | -21,9 % | SMR .ALKIRAYW | –/48/155/24 |
-| 9 | HOWITZER | 24 | 22 | 31,10 | -22,8 % | A.MADAMET | 10/46/155/137 |
-| 7 | REMENBER CHOPE | 26 | 33 | 36,63 | -29,0 % | H.LEBOUC | 19/73/6/593 |
-| 5 | MACKAYA | 27 | 26 | 35,56 | -24,1 % | C.LECOEUVRE | 13/87/125/987 |
+| 11 | IMDALA | 3,5 | 3,5 | 3,90 | -10,1 % | M.BARZALONA 3e | 2/1/–/1 |
+| 3 | SAYVILLE | 7,5 | 10 | 7,44 | **+0,8 %** | PC.BOUDOT 4e | 8/133/527/237 |
+| 14 | DELAJA | 7,7 | 8,4 | 9,07 | -15,1 % | T.BACHELOT | 16/17/10/102 |
+| 8 | ARAYA | 11 | 14 | 12,62 | -12,8 % | F.VALLE SKAR | 35/32/29/18 |
+| 6 | FILIGRANE | 13 | 11 | 17,18 | -24,3 % | T.PICCONE | 9/106/170/1714 |
+| 13 | RUBENESQUE | 13 | 10 | 16,03 | -18,9 % | T.TRULLIER | 21/299/39/1598 |
+| 2 | MIDNIGHT RODEO | 14 | 12 | 18,29 | -23,5 % | M.GRANDIN | 3/120/3144/5228 |
+| 12 | INDY B | 18 | 18 | 24,54 | -26,6 % | A.CRASTUS | 17/9/3316/4 |
+| 4 | NEBULAE | 21 | 17 | 29,34 | -28,4 % | C.DEMURO | 1/16/204/288 |
+| 15 | SOLEIL SUISSE | 23 | 23 | 29,69 | -22,5 % | S.PASQUIER | 23/6/191/251 |
+| 10 | QUEMAZAL | 25 | 29 | 35,85 | -30,3 % | SMR .ALKIRAYW | –/48/155/24 |
+| 7 | REMENBER CHOPE | 27 | 33 | 42,06 | -35,8 % | H.LEBOUC | 19/73/6/593 |
+| 9 | HOWITZER | 27 | 22 | 35,65 | -24,3 % | A.MADAMET | 10/46/155/137 |
+| 5 | MACKAYA | 30 | 26 | 40,16 | -25,3 % | C.LECOEUVRE | 13/87/125/987 |
 
 ### 4. PRIX DU CANAL DU HAVRE
 
