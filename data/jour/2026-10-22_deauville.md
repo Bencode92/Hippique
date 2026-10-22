@@ -1,6 +1,6 @@
 # DEAUVILLE — 22/10/2026
 
-8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -42,24 +42,24 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX DE VILLEPELEE
 
-*17h07 · plat · 1500 m · 14 partants · cotes de l'extraction*
+*17h07 · plat · 1500 m · 14 partants · cotes à T−29:21*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 11 | IMDALA | 4,3 | 5,00 | -14,0 % | M.BARZALONA 3e | 2/1/–/1 |
-| 13 | RUBENESQUE | 5,9 | 6,67 | -11,5 % | T.TRULLIER | 21/299/39/1598 |
-| 6 | FILIGRANE | 9,1 | 11,78 | -22,8 % | T.PICCONE | 9/106/170/1714 |
-| 3 | SAYVILLE | 10 | 10,78 | -7,3 % | PC.BOUDOT 4e | 8/133/527/237 |
-| 14 | DELAJA | 10 | 12,30 | -18,7 % | T.BACHELOT | 16/17/10/102 |
-| 8 | ARAYA | 14 | 18,27 | -23,4 % | F.VALLE SKAR | 35/32/29/18 |
-| 2 | MIDNIGHT RODEO | 15 | 18,92 | -20,7 % | M.GRANDIN | 3/120/3144/5228 |
-| 4 | NEBULAE | 19 | 23,82 | -20,2 % | C.DEMURO | 1/16/204/288 |
-| 12 | INDY B | 19 | 23,82 | -20,2 % | A.CRASTUS | 17/9/3316/4 |
-| 10 | QUEMAZAL | 22 | 28,21 | -22,0 % | SMR .ALKIRAYW | –/48/155/24 |
-| 15 | SOLEIL SUISSE | 22 | 25,71 | -14,4 % | S.PASQUIER | 23/6/191/251 |
-| 5 | MACKAYA | 25 | 29,75 | -16,0 % | C.LECOEUVRE | 13/87/125/987 |
-| 9 | HOWITZER | 26 | 34,11 | -23,8 % | A.MADAMET | 10/46/155/137 |
-| 7 | REMENBER CHOPE | 30 | 43,15 | -30,5 % | H.LEBOUC | 19/73/6/593 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 11 | IMDALA | 3,4 | 4,3 | 3,75 | -9,3 % | M.BARZALONA 3e | 2/1/–/1 |
+| 13 | RUBENESQUE | 7,8 | 5,9 | 8,74 | -10,7 % | T.TRULLIER | 21/299/39/1598 |
+| 14 | DELAJA | 8,1 | 10 | 9,53 | -15,0 % | T.BACHELOT | 16/17/10/102 |
+| 6 | FILIGRANE | 10 | 9,1 | 12,49 | -19,9 % | T.PICCONE | 9/106/170/1714 |
+| 3 | SAYVILLE | 12 | 10 | 13,22 | -9,2 % | PC.BOUDOT 4e | 8/133/527/237 |
+| 2 | MIDNIGHT RODEO | 13 | 15 | 16,60 | -21,7 % | M.GRANDIN | 3/120/3144/5228 |
+| 8 | ARAYA | 15 | 14 | 19,64 | -23,6 % | F.VALLE SKAR | 35/32/29/18 |
+| 15 | SOLEIL SUISSE | 21 | 22 | 24,17 | -13,1 % | S.PASQUIER | 23/6/191/251 |
+| 12 | INDY B | 22 | 19 | 27,96 | -21,3 % | A.CRASTUS | 17/9/3316/4 |
+| 4 | NEBULAE | 23 | 19 | 29,43 | -21,8 % | C.DEMURO | 1/16/204/288 |
+| 5 | MACKAYA | 27 | 25 | 32,19 | -16,1 % | C.LECOEUVRE | 13/87/125/987 |
+| 9 | HOWITZER | 27 | 26 | 35,31 | -23,5 % | A.MADAMET | 10/46/155/137 |
+| 10 | QUEMAZAL | 28 | 22 | 36,82 | -24,0 % | SMR .ALKIRAYW | –/48/155/24 |
+| 7 | REMENBER CHOPE | 33 | 30 | 52,29 | -36,9 % | H.LEBOUC | 19/73/6/593 |
 
 ### 4. PRIX DU CANAL DU HAVRE
 
