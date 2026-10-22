@@ -14,15 +14,15 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 7 | OURGAME | 3,5 | 4,49 | -22,1 % | M.GUYON | 4/7/1/2 |
-| 4 | VALIANTUS | 4,9 | 5,50 | -10,9 % | M.BARZALONA 3e | 2/12/3583/1511 |
-| 2 | MONSIEUR CHARLIE | 5,5 | 6,67 | -17,5 % | A.LEMAITRE | 11/10/3293/381 |
-| 9 | FRIAR TUCK | 6,2 | 7,18 | -13,6 % | PC.BOUDOT 4e | 8/2/–/6 |
-| 6 | SAN ROQUE | 11 | 14,03 | -21,6 % | A.MADAMET | 10/22/80/32 |
-| 8 | CAPTAIN HENRY | 12 | 15,54 | -22,8 % | A.HAMELIN | 22/23/696/1846 |
-| 3 | MAG MAS | 16 | 19,91 | -19,6 % | T.BACHELOT | 16/48/3/1945 |
-| 1 | LOUKPAN | 18 | 26,85 | -33,0 % | C.DEMURO | 1/6/17/19 |
-| 5 | DRYAS | 40 | 62,09 | -35,6 % | H.LEBOUC | 19/147/59/4318 |
+| 7 | OURGAME | 4,1 | 5,50 | -25,5 % | M.GUYON | 4/7/1/2 |
+| 2 | MONSIEUR CHARLIE | 4,7 | 5,15 | -8,7 % | A.LEMAITRE | 11/10/3293/381 |
+| 4 | VALIANTUS | 4,7 | 5,24 | -10,3 % | M.BARZALONA 3e | 2/12/3583/1511 |
+| 9 | FRIAR TUCK | 8 | 9,21 | -13,1 % | PC.BOUDOT 4e | 8/2/–/6 |
+| 1 | LOUKPAN | 8,5 | 10,13 | -16,1 % | C.DEMURO | 1/6/17/19 |
+| 8 | CAPTAIN HENRY | 10 | 12,50 | -20,0 % | A.HAMELIN | 22/23/696/1846 |
+| 6 | SAN ROQUE | 17 | 22,27 | -23,7 % | A.MADAMET | 10/22/80/32 |
+| 3 | MAG MAS | 18 | 22,76 | -20,9 % | T.BACHELOT | 16/48/3/1945 |
+| 5 | DRYAS | 49 | 77,33 | -36,6 % | H.LEBOUC | 19/147/59/4318 |
 
 ### 2. PRIX D'ARGENTAN
 
@@ -30,15 +30,15 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 3 | BUKORISHIA | 1,8 | 1,93 | -6,6 % | M.BARZALONA 3e | 2/1/10/102 |
-| 9 | PALOMA FLASH | 5,8 | 6,50 | -10,7 % | A.LEMAITRE | 11/170/84/1062 |
-| 4 | OPEN ARMS | 8,5 | 10,54 | -19,4 % | A.HAMELIN | 22/23/29/18 |
-| 7 | QUEEN OF DIAMONDS | 10 | 12,51 | -20,1 % | S.PASQUIER | 23/21/78/90 |
-| 8 | DOLOROSA | 11 | 14,28 | -23,0 % | A.POUCHIN | 6/59/827/1173 |
-| 6 | CARLA VELOSSO | 14 | 20,34 | -31,2 % | C.DEMURO | 1/66/1763/2705 |
-| 5 | BELLE DE REVE | 35 | 51,90 | -32,6 % | E.VERHESTRAETEN | 53/12/185/– |
-| 1 | NEW EVE | 51 | 82,33 | -38,1 % | R.THOMAS | 75/132/26/3920 |
-| 10 | BLUE STAR | 89 | 151,96 | -41,4 % | A.VILCHIEN | 93/–/2683/– |
+| 3 | BUKORISHIA | 2,1 | 2,25 | -6,5 % | M.BARZALONA 3e | 2/1/10/102 |
+| 6 | CARLA VELOSSO | 7,1 | 8,21 | -13,5 % | C.DEMURO | 1/66/1763/2705 |
+| 9 | PALOMA FLASH | 8 | 9,21 | -13,1 % | A.LEMAITRE | 11/170/84/1062 |
+| 4 | OPEN ARMS | 9,4 | 11,62 | -19,1 % | A.HAMELIN | 22/23/29/18 |
+| 7 | QUEEN OF DIAMONDS | 9,7 | 11,82 | -17,9 % | S.PASQUIER | 23/21/78/90 |
+| 8 | DOLOROSA | 14 | 17,74 | -21,1 % | A.POUCHIN | 6/59/827/1173 |
+| 5 | BELLE DE REVE | 20 | 28,17 | -29,0 % | E.VERHESTRAETEN | 53/12/185/– |
+| 1 | NEW EVE | 23 | 30,20 | -23,8 % | R.THOMAS | 75/132/26/3920 |
+| 10 | BLUE STAR | 33 | 48,90 | -32,5 % | A.VILCHIEN | 93/–/2683/– |
 
 ### 3. PRIX DE VILLEPELEE
 
@@ -46,20 +46,20 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 11 | IMDALA | 4,2 | 4,81 | -12,6 % | M.BARZALONA 3e | 2/1/–/1 |
-| 13 | RUBENESQUE | 5,7 | 6,32 | -9,8 % | T.TRULLIER | 21/299/39/1598 |
-| 6 | FILIGRANE | 7,1 | 8,68 | -18,2 % | T.PICCONE | 9/106/170/1714 |
-| 3 | SAYVILLE | 8 | 8,57 | -6,7 % | PC.BOUDOT 4e | 8/133/527/237 |
-| 14 | DELAJA | 8,8 | 10,44 | -15,7 % | T.BACHELOT | 16/17/10/102 |
-| 8 | ARAYA | 12 | 15,02 | -20,1 % | F.VALLE SKAR | 35/32/29/18 |
-| 2 | MIDNIGHT RODEO | 13 | 16,51 | -21,2 % | M.GRANDIN | 3/120/3144/5228 |
-| 9 | HOWITZER | 21 | 26,34 | -20,3 % | A.MADAMET | 10/46/155/137 |
-| 10 | QUEMAZAL | 28 | 36,62 | -23,5 % | SMR .ALKIRAYW | –/48/155/24 |
-| 7 | REMENBER CHOPE | 34 | 53,78 | -36,8 % | H.LEBOUC | 19/73/6/593 |
-| 12 | INDY B | 45 | 68,25 | -34,1 % | A.CRASTUS | 17/9/3316/4 |
-| 15 | SOLEIL SUISSE | 45 | 62,09 | -27,5 % | S.PASQUIER | 23/6/191/251 |
-| 4 | NEBULAE | 50 | 69,70 | -28,3 % | C.DEMURO | 1/16/204/288 |
-| 5 | MACKAYA | 75 | 107,27 | -30,1 % | C.LECOEUVRE | 13/87/125/987 |
+| 11 | IMDALA | 4,3 | 5,00 | -14,0 % | M.BARZALONA 3e | 2/1/–/1 |
+| 13 | RUBENESQUE | 5,9 | 6,67 | -11,5 % | T.TRULLIER | 21/299/39/1598 |
+| 6 | FILIGRANE | 9,1 | 11,78 | -22,8 % | T.PICCONE | 9/106/170/1714 |
+| 3 | SAYVILLE | 10 | 10,78 | -7,3 % | PC.BOUDOT 4e | 8/133/527/237 |
+| 14 | DELAJA | 10 | 12,30 | -18,7 % | T.BACHELOT | 16/17/10/102 |
+| 8 | ARAYA | 14 | 18,27 | -23,4 % | F.VALLE SKAR | 35/32/29/18 |
+| 2 | MIDNIGHT RODEO | 15 | 18,92 | -20,7 % | M.GRANDIN | 3/120/3144/5228 |
+| 4 | NEBULAE | 19 | 23,82 | -20,2 % | C.DEMURO | 1/16/204/288 |
+| 12 | INDY B | 19 | 23,82 | -20,2 % | A.CRASTUS | 17/9/3316/4 |
+| 10 | QUEMAZAL | 22 | 28,21 | -22,0 % | SMR .ALKIRAYW | –/48/155/24 |
+| 15 | SOLEIL SUISSE | 22 | 25,71 | -14,4 % | S.PASQUIER | 23/6/191/251 |
+| 5 | MACKAYA | 25 | 29,75 | -16,0 % | C.LECOEUVRE | 13/87/125/987 |
+| 9 | HOWITZER | 26 | 34,11 | -23,8 % | A.MADAMET | 10/46/155/137 |
+| 7 | REMENBER CHOPE | 30 | 43,15 | -30,5 % | H.LEBOUC | 19/73/6/593 |
 
 ### 4. PRIX DU CANAL DU HAVRE
 
@@ -67,21 +67,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 12 | MY GIRL MOLLY | 4,5 | 5,22 | -13,8 % | M.BARZALONA 3e | 2/1/746/74 |
-| 10 | STAR FIXX | 8,4 | 10,65 | -21,1 % | M.LERNER | 185/11/171/249 |
-| 6 | THIBERVILLE | 8,9 | 9,78 | -9,0 % | D.SANTIAGO | 15/142/388/4 |
-| 7 | WHY AM I BEAUTIFUL | 10 | 11,19 | -10,7 % | M.VELON | 28/34/1346/292 |
-| 9 | KENDARO | 10 | 12,22 | -18,2 % | M.GUYON | 4/21/4/612 |
-| 5 | SBIKHA | 11 | 14,64 | -24,9 % | A.MOLINS | 34/34/297/726 |
-| 3 | SEESHAUPT | 12 | 15,14 | -20,8 % | M.GRANDIN | 3/4/30/17 |
-| 1 | GOLDEN HIND | 14 | 16,58 | -15,6 % | A.LEMAITRE | 11/45/284/89 |
-| 8 | SUGAR DADDY | 15 | 21,11 | -28,9 % | C.LECOEUVRE | 13/40/21/219 |
-| 15 | DAR ES SALAAM | 16 | 21,22 | -24,6 % | V.DUPONT | 100/25/–/871 |
-| 14 | NAVACERRADA | 24 | 30,96 | -22,5 % | C.DEMURO | 1/66/199/61 |
-| 11 | AKSAKOVA | 40 | 60,39 | -33,8 % | A.POUCHIN | 6/8/16/281 |
-| 4 | ROCK OF ROSHA | 45 | 62,60 | -28,1 % | R.THOMAS | 75/132/3116/5272 |
-| 2 | REVUELTO | 53 | 82,15 | -35,5 % | A.HAMELIN | 22/48/186/1279 |
-| 13 | KAIRA | 64 | 91,41 | -30,0 % | H.JOURNIAC | 43/8/1676/2594 |
+| 12 | MY GIRL MOLLY | 6,2 | 5,77 | **+7,4 %** | M.BARZALONA 3e | 2/1/746/74 |
+| 6 | THIBERVILLE | 6,4 | 6,19 | **+3,5 %** | D.SANTIAGO | 15/142/388/4 |
+| 7 | WHY AM I BEAUTIFUL | 8,7 | 9,53 | -8,7 % | M.VELON | 28/34/1346/292 |
+| 5 | SBIKHA | 9,9 | 12,94 | -23,5 % | A.MOLINS | 34/34/297/726 |
+| 10 | STAR FIXX | 11 | 14,66 | -25,0 % | M.LERNER | 185/11/171/249 |
+| 14 | NAVACERRADA | 14 | 16,61 | -15,7 % | C.DEMURO | 1/66/199/61 |
+| 1 | GOLDEN HIND | 15 | 17,99 | -16,6 % | A.LEMAITRE | 11/45/284/89 |
+| 3 | SEESHAUPT | 15 | 19,71 | -23,9 % | M.GRANDIN | 3/4/30/17 |
+| 4 | ROCK OF ROSHA | 15 | 18,01 | -16,7 % | R.THOMAS | 75/132/3116/5272 |
+| 9 | KENDARO | 15 | 18,83 | -20,3 % | M.GUYON | 4/21/4/612 |
+| 8 | SUGAR DADDY | 18 | 26,17 | -31,2 % | C.LECOEUVRE | 13/40/21/219 |
+| 11 | AKSAKOVA | 21 | 26,60 | -21,0 % | A.POUCHIN | 6/8/16/281 |
+| 15 | DAR ES SALAAM | 29 | 40,25 | -27,9 % | V.DUPONT | 100/25/–/871 |
+| 13 | KAIRA | 30 | 36,38 | -17,5 % | H.JOURNIAC | 43/8/1676/2594 |
+| 2 | REVUELTO | 51 | 78,89 | -35,4 % | A.HAMELIN | 22/48/186/1279 |
 
 ### 5. PRIX DE L'ECLUSE FRANCOIS I ER
 
@@ -89,20 +89,20 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 2 | AVEC DES SI | 5,6 | 6,65 | -15,8 % | T.TRULLIER | 21/54/74/535 |
-| 14 | POSSI | 5,7 | 6,34 | -10,1 % | H.LEBOUC | 19/15/4/16 |
-| 4 | AMA DABLAM | 8,3 | 9,78 | -15,1 % | M.GRANDIN | 3/120/117/2045 |
-| 8 | FIVESTARS | 8,5 | 10,05 | -15,5 % | C.DEMURO | 1/129/155/3251 |
-| 3 | LANDED | 12 | 13,78 | -12,9 % | C.LECOEUVRE | 13/87/335/2695 |
-| 9 | PERSIAN DEVA | 12 | 15,07 | -20,4 % | A.MADAMET | 10/34/67/919 |
-| 13 | NIOUININON | 12 | 13,79 | -13,0 % | E.HARDOUIN | 27/320/–/502 |
-| 6 | CHACUN SA VIE | 16 | 18,42 | -13,1 % | F.VALLE SKAR | 35/15/15/36 |
-| 5 | MISTY CITY | 17 | 24,33 | -30,1 % | H.BOUTIN | 14/15/91/273 |
-| 7 | FERDY | 18 | 23,74 | -24,2 % | M.GUYON | 4/40/913/787 |
-| 1 | DINA QUEEN | 22 | 27,89 | -21,1 % | T.PICCONE | 9/112/214/278 |
-| 10 | LANDSCAPE | 30 | 42,68 | -29,7 % | C.BELMONT | 171/537/1363/1849 |
-| 12 | MANUAE | 38 | 51,69 | -26,5 % | R.THOMAS | 75/132/1310/2701 |
-| 11 | HATSLIANA | 44 | 60,81 | -27,6 % | D.SANTIAGO | 15/197/2489/1750 |
+| 14 | POSSI | 5,6 | 6,76 | -17,2 % | H.LEBOUC | 19/15/4/16 |
+| 2 | AVEC DES SI | 6,8 | 7,89 | -13,8 % | T.TRULLIER | 21/54/74/535 |
+| 13 | NIOUININON | 9,5 | 10,69 | -11,1 % | E.HARDOUIN | 27/320/–/502 |
+| 3 | LANDED | 10 | 11,33 | -11,8 % | C.LECOEUVRE | 13/87/335/2695 |
+| 4 | AMA DABLAM | 10 | 11,84 | -15,5 % | M.GRANDIN | 3/120/117/2045 |
+| 8 | FIVESTARS | 10 | 11,84 | -15,5 % | C.DEMURO | 1/129/155/3251 |
+| 9 | PERSIAN DEVA | 13 | 16,85 | -22,8 % | A.MADAMET | 10/34/67/919 |
+| 6 | CHACUN SA VIE | 17 | 20,10 | -15,4 % | F.VALLE SKAR | 35/15/15/36 |
+| 7 | FERDY | 18 | 24,15 | -25,5 % | M.GUYON | 4/40/913/787 |
+| 11 | HATSLIANA | 18 | 22,51 | -20,0 % | D.SANTIAGO | 15/197/2489/1750 |
+| 5 | MISTY CITY | 19 | 28,19 | -32,6 % | H.BOUTIN | 14/15/91/273 |
+| 10 | LANDSCAPE | 20 | 27,29 | -26,7 % | C.BELMONT | 171/537/1363/1849 |
+| 1 | DINA QUEEN | 23 | 29,85 | -23,0 % | T.PICCONE | 9/112/214/278 |
+| 12 | MANUAE | 25 | 29,92 | -16,5 % | R.THOMAS | 75/132/1310/2701 |
 
 ### 6. PRIX DE CASTILLON
 
@@ -110,14 +110,14 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 1 | LAST CARAT FAL | 2,2 | 2,43 | -9,6 % | H.LEBOUC | 19/43/181/31 |
-| 4 | DIVO TWO TIMES | 4,8 | 5,36 | -10,4 % | C.DEMURO | 1/242/666/1000 |
-| 6 | NINAO | 5,3 | 5,98 | -11,4 % | F.VALLE SKAR | 35/163/1907/2282 |
-| 2 | AFFIRMATIF | 7,3 | 9,22 | -20,8 % | M.GRANDIN | 3/58/233/2384 |
-| 3 | ARIZONA'S VICTORIA | 16 | 21,70 | -26,3 % | P.BAZIRE | 58/106/3213/1714 |
-| 5 | TWISTING RING | 30 | 44,81 | -33,1 % | T.TRULLIER | 21/27/3187/4269 |
-| 8 | GADZART | 30 | 44,81 | -33,1 % | S.PASQUIER | 23/6/172/1274 |
-| 7 | ETOLE DE BEAUM | 36 | 59,14 | -39,1 % | J.LACROIX | 94/141/2156/– |
+| 1 | LAST CARAT FAL | 2,3 | 2,55 | -9,9 % | H.LEBOUC | 19/43/181/31 |
+| 4 | DIVO TWO TIMES | 5,2 | 5,93 | -12,3 % | C.DEMURO | 1/242/666/1000 |
+| 6 | NINAO | 5,9 | 6,84 | -13,7 % | F.VALLE SKAR | 35/163/1907/2282 |
+| 2 | AFFIRMATIF | 8 | 10,40 | -23,1 % | M.GRANDIN | 3/58/233/2384 |
+| 3 | ARIZONA'S VICTORIA | 11 | 12,96 | -15,1 % | P.BAZIRE | 58/106/3213/1714 |
+| 5 | TWISTING RING | 18 | 23,03 | -21,8 % | T.TRULLIER | 21/27/3187/4269 |
+| 8 | GADZART | 20 | 26,01 | -23,1 % | S.PASQUIER | 23/6/172/1274 |
+| 7 | ETOLE DE BEAUM | 25 | 36,11 | -30,8 % | J.LACROIX | 94/141/2156/– |
 
 ### 7. PRIX DU CHATEAU D'AUVERS-SUR-OISE
 
@@ -125,12 +125,12 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 2 | HELLO JO | 2,2 | 2,32 | -5,0 % | C.DEMURO | 1/16/13/1319 |
-| 5 | REVE BLEU | 4,7 | 5,50 | -14,5 % | A.MADAMET | 10/14/24/576 |
-| 1 | ARLONG FAL | 5,9 | 7,12 | -17,1 % | H.LEBOUC | 19/43/715/31 |
-| 3 | PAUL DE TARSE | 7,9 | 9,36 | -15,6 % | A.POUCHIN | 6/31/656/328 |
-| 6 | MARYCHA | 8,6 | 10,33 | -16,8 % | A.CRASTUS | 17/119/100/2462 |
-| 4 | OCEAN STAR | 13 | 18,00 | -27,8 % | T.TRULLIER | 21/54/63/275 |
+| 2 | HELLO JO | 2,3 | 2,39 | -3,6 % | C.DEMURO | 1/16/13/1319 |
+| 6 | MARYCHA | 4,5 | 4,54 | -0,8 % | A.CRASTUS | 17/119/100/2462 |
+| 5 | REVE BLEU | 6,6 | 8,02 | -17,7 % | A.MADAMET | 10/14/24/576 |
+| 1 | ARLONG FAL | 7,9 | 9,47 | -16,6 % | H.LEBOUC | 19/43/715/31 |
+| 3 | PAUL DE TARSE | 8,3 | 9,81 | -15,4 % | A.POUCHIN | 6/31/656/328 |
+| 4 | OCEAN STAR | 11 | 13,38 | -17,8 % | T.TRULLIER | 21/54/63/275 |
 
 ### 8. PRIX DE PUTANGES
 
@@ -138,14 +138,14 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 10 | KUUTAMO | 6,2 | 6,27 | -1,1 % | PC.BOUDOT 2e | 8/2/563/6 |
-| 6 | VALIKA | 6,7 | 7,73 | -13,3 % | L.PLOMMEE | 31/1/–/1 |
-| 8 | AUSPICIOUS | 6,7 | 7,73 | -13,3 % | T.BREBION | 99/44/312/1534 |
-| 4 | FOREST GALORE | 6,9 | 7,85 | -12,1 % | S.PASQUIER | 23/21/37/90 |
-| 3 | MAGUELONE | 8,8 | 10,61 | -17,1 % | C.DEMURO | 1/16/78/18 |
-| 2 | NOT LIKE US | 9,8 | 12,89 | -24,0 % | T.BACHELOT | 16/56/944/155 |
-| 11 | INOUI | 11 | 13,79 | -20,3 % | M.GUYON 4e | 4/8/1/2 |
-| 12 | PRECIOUS LADY | 11 | 14,77 | -25,5 % | O.LONGUET | 256/63/109/56 |
-| 1 | SIRAT | 12 | 13,98 | -14,2 % | A.MADAMET | 10/46/1051/137 |
-| 5 | PUCK | 18 | 24,57 | -26,7 % | M.FAVRIAUX | 51/2/1/2 |
-| 9 | WOOTIQUE | 55 | 86,21 | -36,2 % | T.TRULLIER | 21/37/3195/2667 |
+| 3 | MAGUELONE | 5,7 | 6,51 | -12,4 % | C.DEMURO | 1/16/78/18 |
+| 6 | VALIKA | 5,7 | 7,05 | -19,2 % | L.PLOMMEE | 31/1/–/1 |
+| 8 | AUSPICIOUS | 7,7 | 8,61 | -10,6 % | T.BREBION | 99/44/312/1534 |
+| 1 | SIRAT | 8,1 | 8,76 | -7,5 % | A.MADAMET | 10/46/1051/137 |
+| 10 | KUUTAMO | 8,1 | 9,13 | -11,3 % | PC.BOUDOT 2e | 8/2/563/6 |
+| 4 | FOREST GALORE | 8,4 | 9,76 | -13,9 % | S.PASQUIER | 23/21/37/90 |
+| 12 | PRECIOUS LADY | 11 | 14,62 | -24,8 % | O.LONGUET | 256/63/109/56 |
+| 11 | INOUI | 13 | 15,88 | -18,1 % | M.GUYON 4e | 4/8/1/2 |
+| 2 | NOT LIKE US | 14 | 18,57 | -24,6 % | T.BACHELOT | 16/56/944/155 |
+| 5 | PUCK | 19 | 25,90 | -26,6 % | M.FAVRIAUX | 51/2/1/2 |
+| 9 | WOOTIQUE | 95 | 144,46 | -34,2 % | T.TRULLIER | 21/37/3195/2667 |

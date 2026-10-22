@@ -12,11 +12,11 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 3 | LADY WISDOM | 1,1 | R SANTANA, JR. |
-| 5 | FEDUPWITHTHEFED | 6,9 | F PRAT |
-| 2 | KATIE KING | 12 | K CARMOUCHE |
-| 4 | FULL POUR | 19 | P LOPEZ |
-| 1 | GRACE REFORMED | 38 | M GONZALEZ |
+| 3 | LADY WISDOM | 1,7 | R SANTANA, JR. |
+| 2 | KATIE KING | 5,3 | K CARMOUCHE |
+| 5 | FEDUPWITHTHEFED | 6,5 | F PRAT |
+| 4 | FULL POUR | 7,6 | P LOPEZ |
+| 1 | GRACE REFORMED | 9,8 | M GONZALEZ |
 
 ### 2. CLAIMING 1200
 
@@ -24,11 +24,11 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 3 | THE MARKINATER | 2,4 | D HADDOCK |
-| 2 | ABRIGADO | 4,8 | M FRANCO |
-| 4 | MOUQEER | 4,8 | R BOWEN |
-| 6 | RULE SIXTY TWO | 4,8 | A FRESU |
-| 5 | ICAN | 9,7 | J LEZCANO |
+| 2 | ABRIGADO | 3,3 | M FRANCO |
+| 3 | THE MARKINATER | 3,3 | D HADDOCK |
+| 5 | ICAN | 4,4 | J LEZCANO |
+| 4 | MOUQEER | 6,6 | R BOWEN |
+| 6 | RULE SIXTY TWO | 6,6 | A FRESU |
 | 1 | WAITIN'ONASUNNYDAY | – | P PENA |
 
 ### 3. MAIDEN SPECIAL WEIGHT 1400
@@ -37,14 +37,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 6 | BAMBOOZIE | 2,8 | R SANTANA, JR. |
-| 2 | HE'S MY KIND | 5,7 | F PRAT |
-| 3 | ABOUT FACE | 5,7 | S MARIN |
-| 4 | SPHERICAL | 5,7 | L R RIVERA, JR. |
-| 7 | WESEEULATOR | 5,7 | J CASTELLANO |
-| 5 | DAYTHEMUSICLIVED | 11 | M FRANCO |
+| 2 | HE'S MY KIND | 4,6 | F PRAT |
+| 6 | BAMBOOZIE | 4,6 | R SANTANA, JR. |
+| 7 | WESEEULATOR | 4,6 | J CASTELLANO |
+| 5 | DAYTHEMUSICLIVED | 6,1 | M FRANCO |
+| 3 | ABOUT FACE | 9,2 | S MARIN |
+| 4 | SPHERICAL | 9,2 | L R RIVERA, JR. |
+| 8 | I'M A GUNNER | 9,2 | E J ZAYAS |
 | 1 | FORT GRIFFIN | – | K CARMOUCHE |
-| 8 | I'M A GUNNER | – | E J ZAYAS |
 
 ### 4. CLAIMING 1200
 
@@ -52,12 +52,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 4 | PRINCE OF BROADWAY | 2,8 | M FRANCO |
-| 1 | AMELIA'S ECHO | 5,7 | S GONZALEZ |
-| 2 | EXPECTO PATRONUM | 5,7 | R SANTANA, JR. |
-| 6 | BIG HELEONORA | 5,7 | K CARMOUCHE |
-| 7 | EMERALD EMBER | 5,7 | A FRESU |
-| 5 | MAXISURE | 11 | D A RIVERA |
+| 4 | PRINCE OF BROADWAY | 2,7 | M FRANCO |
+| 2 | EXPECTO PATRONUM | 4,1 | R SANTANA, JR. |
+| 7 | EMERALD EMBER | 4,1 | A FRESU |
+| 1 | AMELIA'S ECHO | 8,3 | S GONZALEZ |
+| 6 | BIG HELEONORA | 8,3 | K CARMOUCHE |
+| 5 | MAXISURE | 16 | D A RIVERA |
 | 3 | MARGARITA MOLLY | – | L R RIVERA, JR. |
 
 ### 5. MAIDEN SPECIAL WEIGHT 1200
@@ -66,17 +66,17 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 5 | IT'SGOODTOBEQUEEN | 2 | M FRANCO | –/–/–/– |
-| 6 | CITY WAR | 3 | P PENA | –/–/–/– |
-| 8 | LIBERTY'S ADVANCE | 3 | J LEZCANO | –/–/–/– |
+| 8 | LIBERTY'S ADVANCE | 2,8 | J LEZCANO | –/–/–/– |
+| 5 | IT'SGOODTOBEQUEEN | 3,8 | M FRANCO | –/–/–/– |
+| 6 | CITY WAR | 5,7 | P PENA | –/–/–/– |
+| 10 | FUNNY GAL | 5,7 | D DAVIS | –/–/–/– |
+| 11 | MIGHTY MISS | 5,7 | J CASTELLANO | –/–/–/– |
 | 1 | BOCAGE BELLE | – | J VENTURA | –/–/–/– |
 | 2 | PROBABLE CHOICE | – | R BOWEN | –/–/–/– |
 | 3 | LADY VORTEX | – | R SANTANA, JR. | –/–/–/– |
 | 4 | SEIZE THE STORM | – | D A RIVERA | –/–/–/– |
 | 7 | GALLIPOLI GIRL | – | R GUTIERREZ | –/–/–/4107 |
 | 9 | GREAT HAPPENINGS | – | K DAVIS | –/–/–/– |
-| 10 | FUNNY GAL | – | D DAVIS | –/–/–/– |
-| 11 | MIGHTY MISS | – | J CASTELLANO | –/–/–/– |
 
 ### 6. MAIDEN CLAIMING 1600
 
