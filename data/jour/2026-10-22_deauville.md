@@ -121,16 +121,16 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DU CHATEAU D'AUVERS-SUR-OISE
 
-*19h27 · plat · 1900 m · 6 partants · cotes à T−25:19*
+*19h27 · plat · 1900 m · 6 partants · cotes à T−21:19*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | HELLO JO | 2,8 | 2,4 | 3,20 | -12,4 % | C.DEMURO | 1/16/13/1319 |
-| 1 | ARLONG FAL | 4,7 | 5,1 | 5,05 | -7,0 % | H.LEBOUC | 19/43/715/31 |
-| 5 | REVE BLEU | 5,5 | 5,5 | 6,52 | -15,6 % | A.MADAMET | 10/14/24/576 |
-| 4 | OCEAN STAR | 6 | 10 | 6,64 | -9,6 % | T.TRULLIER | 21/54/63/275 |
-| 3 | PAUL DE TARSE | 6,5 | 9,6 | 7,41 | -12,3 % | A.POUCHIN | 6/31/656/328 |
-| 6 | MARYCHA | 13 | 6,3 | 15,92 | -18,4 % | A.CRASTUS | 17/119/100/2462 |
+| 2 | HELLO JO | 2,7 | 2,4 | 3,20 | -15,7 % | C.DEMURO | 1/16/13/1319 |
+| 1 | ARLONG FAL | 4,1 | 5,1 | 4,39 | -6,5 % | H.LEBOUC | 19/43/715/31 |
+| 4 | OCEAN STAR | 6,1 | 10 | 6,80 | -10,3 % | T.TRULLIER | 21/54/63/275 |
+| 3 | PAUL DE TARSE | 6,9 | 9,6 | 7,98 | -13,6 % | A.POUCHIN | 6/31/656/328 |
+| 5 | REVE BLEU | 7,1 | 5,5 | 8,44 | -15,9 % | A.MADAMET | 10/14/24/576 |
+| 6 | MARYCHA | 11 | 6,3 | 13,77 | -20,1 % | A.CRASTUS | 17/119/100/2462 |
 
 ### 8. PRIX DE PUTANGES
 
