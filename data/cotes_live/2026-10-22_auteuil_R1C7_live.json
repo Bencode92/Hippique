@@ -4,89 +4,89 @@
   "reunion": 1,
   "heure_depart": 1792682760000,
   "distance": 3600,
-  "scraped_at": "2026-10-22T17:26:20.726020+02:00",
-  "minutes_avant_depart": 0,
+  "scraped_at": "2026-10-22T17:29:01.081840+02:00",
+  "minutes_avant_depart": -3,
   "participants": [
     {
       "numPmu": 1,
       "nom": "FAMILY SPEED",
-      "cote_live": 25.0,
+      "cote_live": 28.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792682772000
+      "timestamp_cote": 1792682910000
     },
     {
       "numPmu": 2,
       "nom": "GOOD GIRL DE FAUST",
-      "cote_live": 8.7,
+      "cote_live": 8.4,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792682772000
+      "timestamp_cote": 1792682910000
     },
     {
       "numPmu": 3,
       "nom": "GORSTELLA",
-      "cote_live": 3.7,
+      "cote_live": 4.1,
       "cote_reference": 4.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792682772000
+      "timestamp_cote": 1792682910000
     },
     {
       "numPmu": 4,
       "nom": "NADURRA",
-      "cote_live": 39.0,
+      "cote_live": 30.0,
       "cote_reference": 41.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792682772000
+      "timestamp_cote": 1792682910000
     },
     {
       "numPmu": 5,
       "nom": "CHOUCHOU D'ANJOU",
-      "cote_live": 20.0,
+      "cote_live": 15.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792682772000
+      "timestamp_cote": 1792682910000
     },
     {
       "numPmu": 6,
       "nom": "BELIZE",
-      "cote_live": 7.3,
+      "cote_live": 6.2,
       "cote_reference": 6.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792682772000
+      "timestamp_cote": 1792682910000
     },
     {
       "numPmu": 7,
       "nom": "DINADAME",
-      "cote_live": 3.6,
+      "cote_live": 3.7,
       "cote_reference": 3.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792682772000
+      "timestamp_cote": 1792682910000
     },
     {
       "numPmu": 9,
       "nom": "CHOEUR DE GRIVE",
-      "cote_live": 6.4,
+      "cote_live": 7.0,
       "cote_reference": 9.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792682772000
+      "timestamp_cote": 1792682910000
     },
     {
       "numPmu": 10,
       "nom": "MISSDENUO",
-      "cote_live": 14.0,
+      "cote_live": 15.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792682772000
+      "timestamp_cote": 1792682910000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -329,6 +329,66 @@
         "7": 3.6,
         "9": 6.4,
         "10": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-22T17:27:00.816035+02:00",
+      "minutes_avant_depart": -1.00825145,
+      "cotes": {
+        "1": 28.0,
+        "2": 8.5,
+        "3": 3.9,
+        "4": 32.0,
+        "5": 16.0,
+        "6": 6.6,
+        "7": 3.6,
+        "9": 6.7,
+        "10": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-22T17:27:40.726855+02:00",
+      "minutes_avant_depart": -1.6749203666666665,
+      "cotes": {
+        "1": 28.0,
+        "2": 8.5,
+        "3": 3.9,
+        "4": 31.0,
+        "5": 15.0,
+        "6": 6.1,
+        "7": 3.7,
+        "9": 6.9,
+        "10": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-22T17:28:20.904088+02:00",
+      "minutes_avant_depart": -2.3415890333333333,
+      "cotes": {
+        "1": 28.0,
+        "2": 8.5,
+        "3": 4.1,
+        "4": 30.0,
+        "5": 14.0,
+        "6": 6.2,
+        "7": 3.6,
+        "9": 7.0,
+        "10": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-22T17:29:01.081840+02:00",
+      "minutes_avant_depart": -3.0156676166666667,
+      "cotes": {
+        "1": 28.0,
+        "2": 8.4,
+        "3": 4.1,
+        "4": 30.0,
+        "5": 15.0,
+        "6": 6.2,
+        "7": 3.7,
+        "9": 7.0,
+        "10": 15.0
       }
     }
   ]

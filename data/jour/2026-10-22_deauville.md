@@ -63,25 +63,25 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX DU CANAL DU HAVRE
 
-*17h42 · plat · 1300 m · 15 partants · cotes à T−17:59*
+*17h42 · plat · 1300 m · 15 partants · cotes à T−13:59*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 12 | MY GIRL MOLLY | 5,4 | 4,3 | 6,47 | -16,6 % | M.BARZALONA 3e | 2/1/746/74 |
-| 10 | STAR FIXX | 6,7 | 7,5 | 7,60 | -11,8 % | M.LERNER | 185/11/171/249 |
-| 5 | SBIKHA | 9,9 | 13 | 13,06 | -24,2 % | A.MOLINS | 34/34/297/726 |
-| 6 | THIBERVILLE | 10 | 9,2 | 11,31 | -11,6 % | D.SANTIAGO | 15/142/388/4 |
-| 14 | NAVACERRADA | 10 | 14 | 11,31 | -11,6 % | C.DEMURO | 1/66/199/61 |
-| 9 | KENDARO | 12 | 16 | 15,30 | -21,5 % | M.GUYON | 4/21/4/612 |
-| 1 | GOLDEN HIND | 14 | 16 | 16,75 | -16,4 % | A.LEMAITRE | 11/45/284/89 |
-| 8 | SUGAR DADDY | 14 | 12 | 19,66 | -28,8 % | C.LECOEUVRE | 13/40/21/219 |
-| 3 | SEESHAUPT | 16 | 21 | 20,47 | -21,9 % | M.GRANDIN | 3/4/30/17 |
-| 4 | ROCK OF ROSHA | 16 | 15 | 19,58 | -18,3 % | R.THOMAS | 75/132/3116/5272 |
-| 7 | WHY AM I BEAUTIFUL | 16 | 12 | 18,69 | -14,4 % | M.VELON | 28/34/1346/292 |
-| 11 | AKSAKOVA | 30 | 31 | 44,20 | -32,1 % | A.POUCHIN | 6/8/16/281 |
-| 13 | KAIRA | 35 | 29 | 43,59 | -19,7 % | H.JOURNIAC | 43/8/1676/2594 |
-| 15 | DAR ES SALAAM | 39 | 28 | 56,54 | -31,0 % | V.DUPONT | 100/25/–/871 |
-| 2 | REVUELTO | 40 | 33 | 60,96 | -34,4 % | A.HAMELIN | 22/48/186/1279 |
+| 12 | MY GIRL MOLLY | 5,8 | 4,3 | 7,08 | -18,0 % | M.BARZALONA 3e | 2/1/746/74 |
+| 10 | STAR FIXX | 6,7 | 7,5 | 7,65 | -12,5 % | M.LERNER | 185/11/171/249 |
+| 5 | SBIKHA | 9,3 | 13 | 11,20 | -17,0 % | A.MOLINS | 34/34/297/726 |
+| 6 | THIBERVILLE | 10 | 9,2 | 11,39 | -12,2 % | D.SANTIAGO | 15/142/388/4 |
+| 9 | KENDARO | 10 | 16 | 12,44 | -19,6 % | M.GUYON | 4/21/4/612 |
+| 14 | NAVACERRADA | 10 | 14 | 11,40 | -12,3 % | C.DEMURO | 1/66/199/61 |
+| 1 | GOLDEN HIND | 14 | 16 | 16,88 | -17,0 % | A.LEMAITRE | 11/45/284/89 |
+| 7 | WHY AM I BEAUTIFUL | 15 | 12 | 17,48 | -14,2 % | M.VELON | 28/34/1346/292 |
+| 8 | SUGAR DADDY | 15 | 12 | 21,49 | -30,2 % | C.LECOEUVRE | 13/40/21/219 |
+| 3 | SEESHAUPT | 17 | 21 | 22,14 | -23,2 % | M.GRANDIN | 3/4/30/17 |
+| 4 | ROCK OF ROSHA | 17 | 15 | 21,17 | -19,7 % | R.THOMAS | 75/132/3116/5272 |
+| 11 | AKSAKOVA | 29 | 31 | 42,86 | -32,3 % | A.POUCHIN | 6/8/16/281 |
+| 13 | KAIRA | 29 | 29 | 35,57 | -18,5 % | H.JOURNIAC | 43/8/1676/2594 |
+| 15 | DAR ES SALAAM | 40 | 28 | 58,57 | -31,7 % | V.DUPONT | 100/25/–/871 |
+| 2 | REVUELTO | 42 | 33 | 64,80 | -35,2 % | A.HAMELIN | 22/48/186/1279 |
 
 ### 5. PRIX DE L'ECLUSE FRANCOIS I ER
 
