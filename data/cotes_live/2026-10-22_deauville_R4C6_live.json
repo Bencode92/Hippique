@@ -4,80 +4,80 @@
   "reunion": 4,
   "heure_depart": 1792688100000,
   "distance": 1900,
-  "scraped_at": "2026-10-22T18:25:00.879906+02:00",
-  "minutes_avant_depart": 30,
+  "scraped_at": "2026-10-22T18:29:01.344274+02:00",
+  "minutes_avant_depart": 26,
   "participants": [
     {
       "numPmu": 1,
       "nom": "LAST CARAT FAL",
-      "cote_live": 3.4,
-      "cote_reference": 2.1,
+      "cote_live": 4.6,
+      "cote_reference": 3.5,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1792685745000
+      "favoris": false,
+      "timestamp_cote": 1792686521000
     },
     {
       "numPmu": 2,
       "nom": "AFFIRMATIF",
-      "cote_live": 5.5,
-      "cote_reference": 7.4,
+      "cote_live": 3.9,
+      "cote_reference": 5.5,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1792685745000
+      "favoris": true,
+      "timestamp_cote": 1792686521000
     },
     {
       "numPmu": 3,
       "nom": "ARIZONA'S VICTORIA",
-      "cote_live": 8.5,
-      "cote_reference": 15.0,
+      "cote_live": 6.9,
+      "cote_reference": 9.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792685745000
+      "timestamp_cote": 1792686521000
     },
     {
       "numPmu": 4,
       "nom": "DIVO TWO TIMES",
-      "cote_live": 4.6,
-      "cote_reference": 5.1,
+      "cote_live": 5.0,
+      "cote_reference": 4.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792685745000
+      "timestamp_cote": 1792686521000
     },
     {
       "numPmu": 5,
       "nom": "TWISTING RING",
-      "cote_live": 9.5,
-      "cote_reference": 28.0,
+      "cote_live": 11.0,
+      "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792685745000
+      "timestamp_cote": 1792686521000
     },
     {
       "numPmu": 6,
       "nom": "NINAO",
-      "cote_live": 16.0,
-      "cote_reference": 5.6,
+      "cote_live": 15.0,
+      "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792685745000
+      "timestamp_cote": 1792686521000
     },
     {
       "numPmu": 7,
       "nom": "ETOLE DE BEAUM",
-      "cote_live": 22.0,
-      "cote_reference": 42.0,
+      "cote_live": 18.0,
+      "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792685745000
+      "timestamp_cote": 1792686521000
     },
     {
       "numPmu": 8,
       "nom": "GADZART",
-      "cote_live": 8.3,
-      "cote_reference": 34.0,
+      "cote_live": 8.9,
+      "cote_reference": 8.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792685745000
+      "timestamp_cote": 1792686521000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -94,6 +94,20 @@
         "6": 16.0,
         "7": 22.0,
         "8": 8.3
+      }
+    },
+    {
+      "scraped_at": "2026-10-22T18:29:01.344274+02:00",
+      "minutes_avant_depart": 25.980540383333334,
+      "cotes": {
+        "1": 4.6,
+        "2": 3.9,
+        "3": 6.9,
+        "4": 5.0,
+        "5": 11.0,
+        "6": 15.0,
+        "7": 18.0,
+        "8": 8.9
       }
     }
   ]
