@@ -2,91 +2,91 @@
   "course": "PRIX D'ARGENTAN",
   "numero": 2,
   "reunion": 4,
-  "heure_depart": 1792679640000,
+  "heure_depart": 1792679700000,
   "distance": 1500,
-  "scraped_at": "2026-10-22T16:20:16.896045+02:00",
-  "minutes_avant_depart": 14,
+  "scraped_at": "2026-10-22T16:24:57.302870+02:00",
+  "minutes_avant_depart": 10,
   "participants": [
     {
       "numPmu": 1,
       "nom": "NEW EVE",
-      "cote_live": 40.0,
+      "cote_live": 45.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792678813000
+      "timestamp_cote": 1792679096000
     },
     {
       "numPmu": 3,
       "nom": "BUKORISHIA",
-      "cote_live": 2.2,
+      "cote_live": 2.4,
       "cote_reference": 2.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792678813000
+      "timestamp_cote": 1792679096000
     },
     {
       "numPmu": 4,
       "nom": "OPEN ARMS",
-      "cote_live": 4.7,
+      "cote_live": 4.8,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792678813000
+      "timestamp_cote": 1792679096000
     },
     {
       "numPmu": 5,
       "nom": "BELLE DE REVE",
-      "cote_live": 21.0,
+      "cote_live": 22.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792678813000
+      "timestamp_cote": 1792679096000
     },
     {
       "numPmu": 6,
       "nom": "CARLA VELOSSO",
-      "cote_live": 8.8,
+      "cote_live": 7.1,
       "cote_reference": 7.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792678813000
+      "timestamp_cote": 1792679096000
     },
     {
       "numPmu": 7,
       "nom": "QUEEN OF DIAMONDS",
-      "cote_live": 10.0,
+      "cote_live": 9.7,
       "cote_reference": 9.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792678813000
+      "timestamp_cote": 1792679096000
     },
     {
       "numPmu": 8,
       "nom": "DOLOROSA",
-      "cote_live": 18.0,
+      "cote_live": 15.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792678813000
+      "timestamp_cote": 1792679096000
     },
     {
       "numPmu": 9,
       "nom": "PALOMA FLASH",
-      "cote_live": 8.4,
+      "cote_live": 8.3,
       "cote_reference": 4.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792678813000
+      "timestamp_cote": 1792679096000
     },
     {
       "numPmu": 10,
       "nom": "BLUE STAR",
-      "cote_live": 42.0,
+      "cote_live": 43.0,
       "cote_reference": 31.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792678813000
+      "timestamp_cote": 1792679096000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -164,6 +164,21 @@
         "8": 18.0,
         "9": 8.4,
         "10": 42.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-22T16:24:57.302870+02:00",
+      "minutes_avant_depart": 10.062687616666667,
+      "cotes": {
+        "1": 45.0,
+        "3": 2.4,
+        "4": 4.8,
+        "5": 22.0,
+        "6": 7.1,
+        "7": 9.7,
+        "8": 15.0,
+        "9": 8.3,
+        "10": 43.0
       }
     }
   ]
