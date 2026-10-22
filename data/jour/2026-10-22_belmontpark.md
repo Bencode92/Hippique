@@ -1,8 +1,8 @@
 # BELMONT PARK — 22/10/2026
 
-8 courses.
+8 courses (7 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -12,11 +12,11 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | GRACE REFORMED | – | M GONZALEZ |
-| 2 | KATIE KING | – | K CARMOUCHE |
-| 3 | LADY WISDOM | – | R SANTANA, JR. |
-| 4 | FULL POUR | – | P LOPEZ |
-| 5 | FEDUPWITHTHEFED | – | F PRAT |
+| 3 | LADY WISDOM | 1,1 | R SANTANA, JR. |
+| 5 | FEDUPWITHTHEFED | 6,9 | F PRAT |
+| 2 | KATIE KING | 12 | K CARMOUCHE |
+| 4 | FULL POUR | 19 | P LOPEZ |
+| 1 | GRACE REFORMED | 38 | M GONZALEZ |
 
 ### 2. CLAIMING 1200
 
@@ -24,12 +24,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 3 | THE MARKINATER | 2,4 | D HADDOCK |
+| 2 | ABRIGADO | 4,8 | M FRANCO |
+| 4 | MOUQEER | 4,8 | R BOWEN |
+| 6 | RULE SIXTY TWO | 4,8 | A FRESU |
+| 5 | ICAN | 9,7 | J LEZCANO |
 | 1 | WAITIN'ONASUNNYDAY | – | P PENA |
-| 2 | ABRIGADO | – | M FRANCO |
-| 3 | THE MARKINATER | – | D HADDOCK |
-| 4 | MOUQEER | – | R BOWEN |
-| 5 | ICAN | – | J LEZCANO |
-| 6 | RULE SIXTY TWO | – | A FRESU |
 
 ### 3. MAIDEN SPECIAL WEIGHT 1400
 
@@ -37,13 +37,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 6 | BAMBOOZIE | 2,8 | R SANTANA, JR. |
+| 2 | HE'S MY KIND | 5,7 | F PRAT |
+| 3 | ABOUT FACE | 5,7 | S MARIN |
+| 4 | SPHERICAL | 5,7 | L R RIVERA, JR. |
+| 7 | WESEEULATOR | 5,7 | J CASTELLANO |
+| 5 | DAYTHEMUSICLIVED | 11 | M FRANCO |
 | 1 | FORT GRIFFIN | – | K CARMOUCHE |
-| 2 | HE'S MY KIND | – | F PRAT |
-| 3 | ABOUT FACE | – | S MARIN |
-| 4 | SPHERICAL | – | L R RIVERA, JR. |
-| 5 | DAYTHEMUSICLIVED | – | M FRANCO |
-| 6 | BAMBOOZIE | – | R SANTANA, JR. |
-| 7 | WESEEULATOR | – | J CASTELLANO |
 | 8 | I'M A GUNNER | – | E J ZAYAS |
 
 ### 4. CLAIMING 1200
@@ -52,13 +52,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | AMELIA'S ECHO | – | S GONZALEZ |
-| 2 | EXPECTO PATRONUM | – | R SANTANA, JR. |
+| 4 | PRINCE OF BROADWAY | 2,8 | M FRANCO |
+| 1 | AMELIA'S ECHO | 5,7 | S GONZALEZ |
+| 2 | EXPECTO PATRONUM | 5,7 | R SANTANA, JR. |
+| 6 | BIG HELEONORA | 5,7 | K CARMOUCHE |
+| 7 | EMERALD EMBER | 5,7 | A FRESU |
+| 5 | MAXISURE | 11 | D A RIVERA |
 | 3 | MARGARITA MOLLY | – | L R RIVERA, JR. |
-| 4 | PRINCE OF BROADWAY | – | M FRANCO |
-| 5 | MAXISURE | – | D A RIVERA |
-| 6 | BIG HELEONORA | – | K CARMOUCHE |
-| 7 | EMERALD EMBER | – | A FRESU |
 
 ### 5. MAIDEN SPECIAL WEIGHT 1200
 
@@ -66,14 +66,14 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 5 | IT'SGOODTOBEQUEEN | 2 | M FRANCO | –/–/–/– |
+| 6 | CITY WAR | 3 | P PENA | –/–/–/– |
+| 8 | LIBERTY'S ADVANCE | 3 | J LEZCANO | –/–/–/– |
 | 1 | BOCAGE BELLE | – | J VENTURA | –/–/–/– |
 | 2 | PROBABLE CHOICE | – | R BOWEN | –/–/–/– |
 | 3 | LADY VORTEX | – | R SANTANA, JR. | –/–/–/– |
 | 4 | SEIZE THE STORM | – | D A RIVERA | –/–/–/– |
-| 5 | IT'SGOODTOBEQUEEN | – | M FRANCO | –/–/–/– |
-| 6 | CITY WAR | – | P PENA | –/–/–/– |
 | 7 | GALLIPOLI GIRL | – | R GUTIERREZ | –/–/–/4107 |
-| 8 | LIBERTY'S ADVANCE | – | J LEZCANO | –/–/–/– |
 | 9 | GREAT HAPPENINGS | – | K DAVIS | –/–/–/– |
 | 10 | FUNNY GAL | – | D DAVIS | –/–/–/– |
 | 11 | MIGHTY MISS | – | J CASTELLANO | –/–/–/– |
@@ -84,15 +84,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | TIMELESS MELODY | – | A FRESU |
+| 6 | OUTRO | 2,8 | J LEZCANO |
+| 9 | JUST TELL ANNE | 2,8 | M FRANCO |
+| 5 | OLATZ | 3,8 | P LOPEZ |
+| 1 | TIMELESS MELODY | 5,7 | A FRESU |
 | 2 | NO DIFFERENCE | – | D A RIVERA |
 | 3 | MAJESTIC MOONLIGHT | – | F PRAT |
 | 4 | PORTIXOL | – | R SANTANA, JR. |
-| 5 | OLATZ | – | P LOPEZ |
-| 6 | OUTRO | – | J LEZCANO |
 | 7 | AL LATAFAH | – | D DAVIS |
 | 8 | RED BEACH | – | E J ZAYAS |
-| 9 | JUST TELL ANNE | – | M FRANCO |
 | 10 | HONOR THE NUMBERS | – | C SUTHERLAND |
 | 11 | BATTLE WINNER | – | K CARMOUCHE |
 
@@ -102,12 +102,12 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | EXPENSIVE CUT | – | R SANTANA, JR. | –/–/–/287 |
+| 1 | EXPENSIVE CUT | 3 | R SANTANA, JR. | –/–/–/287 |
+| 3 | JACKSON HEIGHTS | 3 | M FRANCO | –/–/–/– |
+| 6 | SUPERPOWER | 3 | C ELLIOTT | –/–/–/– |
+| 5 | NANTZ | 6,1 | S MARIN | –/–/–/– |
 | 2 | LAUGHING BOY | – | R BOWEN | –/–/–/– |
-| 3 | JACKSON HEIGHTS | – | M FRANCO | –/–/–/– |
 | 4 | THREE TECHNIQUE | – | R GUTIERREZ | –/–/–/– |
-| 5 | NANTZ | – | S MARIN | –/–/–/– |
-| 6 | SUPERPOWER | – | C ELLIOTT | –/–/–/– |
 | 7 | SCREAMING UNCLE | – | K CARMOUCHE | –/–/–/– |
 
 ### 8. CLAIMING 1700
