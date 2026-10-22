@@ -4,35 +4,35 @@
   "reunion": 1,
   "heure_depart": 1792676460000,
   "distance": 3600,
-  "scraped_at": "2026-10-22T15:26:56.488145+02:00",
-  "minutes_avant_depart": 14,
+  "scraped_at": "2026-10-22T15:30:56.541258+02:00",
+  "minutes_avant_depart": 10,
   "participants": [
     {
       "numPmu": 1,
       "nom": "NEVIS",
-      "cote_live": 17.0,
+      "cote_live": 18.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792675601000
+      "timestamp_cote": 1792675843000
     },
     {
       "numPmu": 2,
       "nom": "MISTER PARAMOUNT",
-      "cote_live": 32.0,
+      "cote_live": 36.0,
       "cote_reference": 41.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792675601000
+      "timestamp_cote": 1792675843000
     },
     {
       "numPmu": 3,
       "nom": "MAGNUM VALLEY",
-      "cote_live": 8.0,
+      "cote_live": 6.9,
       "cote_reference": 7.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792675601000
+      "timestamp_cote": 1792675843000
     },
     {
       "numPmu": 4,
@@ -41,34 +41,34 @@
       "cote_reference": 8.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792675601000
+      "timestamp_cote": 1792675843000
     },
     {
       "numPmu": 5,
       "nom": "NAVIGATEUR AND CO",
-      "cote_live": 20.0,
+      "cote_live": 22.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792675601000
+      "timestamp_cote": 1792675843000
     },
     {
       "numPmu": 6,
       "nom": "CELTIC HEIR",
-      "cote_live": 12.0,
+      "cote_live": 13.0,
       "cote_reference": 9.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792675601000
+      "timestamp_cote": 1792675843000
     },
     {
       "numPmu": 7,
       "nom": "MA'O MANA",
-      "cote_live": 77.0,
+      "cote_live": 74.0,
       "cote_reference": 76.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792675601000
+      "timestamp_cote": 1792675843000
     },
     {
       "numPmu": 8,
@@ -77,61 +77,61 @@
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792675601000
+      "timestamp_cote": 1792675843000
     },
     {
       "numPmu": 9,
       "nom": "NOUS Y VOILA",
-      "cote_live": 10.0,
+      "cote_live": 9.2,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792675601000
+      "timestamp_cote": 1792675843000
     },
     {
       "numPmu": 10,
       "nom": "IRONHORSE HAS",
-      "cote_live": 9.4,
+      "cote_live": 10.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792675601000
+      "timestamp_cote": 1792675843000
     },
     {
       "numPmu": 11,
       "nom": "PINOTCALO",
-      "cote_live": 24.0,
+      "cote_live": 23.0,
       "cote_reference": 33.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792675601000
+      "timestamp_cote": 1792675843000
     },
     {
       "numPmu": 12,
       "nom": "NOUVEAU CHAPITRE",
-      "cote_live": 5.2,
+      "cote_live": 6.3,
       "cote_reference": 3.9,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792675601000
+      "timestamp_cote": 1792675843000
     },
     {
       "numPmu": 13,
       "nom": "HOUSE OF LORDS",
-      "cote_live": 14.0,
+      "cote_live": 12.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792675601000
+      "timestamp_cote": 1792675843000
     },
     {
       "numPmu": 14,
       "nom": "POLYDAMAS",
-      "cote_live": 18.0,
+      "cote_live": 14.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792675601000
+      "timestamp_cote": 1792675843000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -174,6 +174,26 @@
         "12": 5.2,
         "13": 14.0,
         "14": 18.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-22T15:30:56.541258+02:00",
+      "minutes_avant_depart": 10.062843633333333,
+      "cotes": {
+        "1": 18.0,
+        "2": 36.0,
+        "3": 6.9,
+        "4": 7.9,
+        "5": 22.0,
+        "6": 13.0,
+        "7": 74.0,
+        "8": 10.0,
+        "9": 9.2,
+        "10": 10.0,
+        "11": 23.0,
+        "12": 6.3,
+        "13": 12.0,
+        "14": 14.0
       }
     }
   ]
