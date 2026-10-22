@@ -1,6 +1,6 @@
 # DEAUVILLE — 22/10/2026
 
-8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -10,19 +10,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 1. PRIX DE FIERVILLE
 
-*15h57 · plat · 1500 m · 9 partants · cotes de l'extraction*
+*15h57 · plat · 1500 m · 9 partants · cotes à T−29:23*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 7 | OURGAME | 4,1 | 5,50 | -25,5 % | M.GUYON | 4/7/1/2 |
-| 2 | MONSIEUR CHARLIE | 4,7 | 5,15 | -8,7 % | A.LEMAITRE | 11/10/3293/381 |
-| 4 | VALIANTUS | 4,7 | 5,24 | -10,3 % | M.BARZALONA 3e | 2/12/3583/1511 |
-| 9 | FRIAR TUCK | 8 | 9,21 | -13,1 % | PC.BOUDOT 4e | 8/2/–/6 |
-| 1 | LOUKPAN | 8,5 | 10,13 | -16,1 % | C.DEMURO | 1/6/17/19 |
-| 8 | CAPTAIN HENRY | 10 | 12,50 | -20,0 % | A.HAMELIN | 22/23/696/1846 |
-| 6 | SAN ROQUE | 17 | 22,27 | -23,7 % | A.MADAMET | 10/22/80/32 |
-| 3 | MAG MAS | 18 | 22,76 | -20,9 % | T.BACHELOT | 16/48/3/1945 |
-| 5 | DRYAS | 49 | 77,33 | -36,6 % | H.LEBOUC | 19/147/59/4318 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 4 | VALIANTUS | 4,2 | 4,7 | 5,32 | -21,0 % | M.BARZALONA 3e | 2/12/3583/1511 |
+| 7 | OURGAME | 4,2 | 4,1 | 5,65 | -25,6 % | M.GUYON | 4/7/1/2 |
+| 2 | MONSIEUR CHARLIE | 4,9 | 4,7 | 5,82 | -15,8 % | A.LEMAITRE | 11/10/3293/381 |
+| 1 | LOUKPAN | 7,4 | 8,5 | 8,61 | -14,0 % | C.DEMURO | 1/6/17/19 |
+| 9 | FRIAR TUCK | 7,9 | 8 | 9,07 | -12,9 % | PC.BOUDOT 4e | 8/2/–/6 |
+| 8 | CAPTAIN HENRY | 11 | 10 | 13,96 | -21,2 % | A.HAMELIN | 22/23/696/1846 |
+| 3 | MAG MAS | 21 | 18 | 29,78 | -29,5 % | T.BACHELOT | 16/48/3/1945 |
+| 6 | SAN ROQUE | 21 | 17 | 28,43 | -26,1 % | A.MADAMET | 10/22/80/32 |
+| 5 | DRYAS | 57 | 49 | 90,96 | -37,3 % | H.LEBOUC | 19/147/59/4318 |
 
 ### 2. PRIX D'ARGENTAN
 
