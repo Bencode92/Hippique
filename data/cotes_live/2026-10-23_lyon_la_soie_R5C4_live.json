@@ -4,62 +4,62 @@
   "reunion": 5,
   "heure_depart": 1792769400000,
   "distance": 1800,
-  "scraped_at": "2026-10-23T17:12:48.963163+02:00",
-  "minutes_avant_depart": 17,
+  "scraped_at": "2026-10-23T17:16:49.162268+02:00",
+  "minutes_avant_depart": 13,
   "participants": [
     {
       "numPmu": 1,
       "nom": "BINOTTO",
-      "cote_live": 25.0,
+      "cote_live": 30.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792768367000
+      "timestamp_cote": 1792768587000
     },
     {
       "numPmu": 2,
       "nom": "CORBUSIER",
-      "cote_live": 3.1,
+      "cote_live": 3.0,
       "cote_reference": 3.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792768367000
+      "timestamp_cote": 1792768587000
     },
     {
       "numPmu": 3,
       "nom": "LINTERCEPTOR",
-      "cote_live": 16.0,
+      "cote_live": 17.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792768367000
+      "timestamp_cote": 1792768587000
     },
     {
       "numPmu": 4,
       "nom": "ALPSEE",
-      "cote_live": 6.5,
+      "cote_live": 5.8,
       "cote_reference": 6.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792768367000
+      "timestamp_cote": 1792768587000
     },
     {
       "numPmu": 5,
       "nom": "LORENZO",
-      "cote_live": 20.0,
+      "cote_live": 22.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792768367000
+      "timestamp_cote": 1792768587000
     },
     {
       "numPmu": 6,
       "nom": "BEST FIGHTER",
-      "cote_live": 9.1,
+      "cote_live": 9.9,
       "cote_reference": 6.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792768367000
+      "timestamp_cote": 1792768587000
     },
     {
       "numPmu": 7,
@@ -68,25 +68,25 @@
       "cote_reference": 9.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792768367000
+      "timestamp_cote": 1792768587000
     },
     {
       "numPmu": 8,
       "nom": "RUN LIWAY",
-      "cote_live": 12.0,
+      "cote_live": 10.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792768367000
+      "timestamp_cote": 1792768587000
     },
     {
       "numPmu": 9,
       "nom": "NAQOURA",
-      "cote_live": 7.4,
+      "cote_live": 8.1,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792768367000
+      "timestamp_cote": 1792768587000
     },
     {
       "numPmu": 10,
@@ -95,16 +95,16 @@
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792768367000
+      "timestamp_cote": 1792768587000
     },
     {
       "numPmu": 11,
       "nom": "SHAARWIN",
-      "cote_live": 20.0,
+      "cote_live": 24.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792768367000
+      "timestamp_cote": 1792768587000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -175,6 +175,23 @@
         "9": 7.4,
         "10": 21.0,
         "11": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-23T17:16:49.162268+02:00",
+      "minutes_avant_depart": 13.182954566666666,
+      "cotes": {
+        "1": 30.0,
+        "2": 3.0,
+        "3": 17.0,
+        "4": 5.8,
+        "5": 22.0,
+        "6": 9.9,
+        "7": 10.0,
+        "8": 10.0,
+        "9": 8.1,
+        "10": 21.0,
+        "11": 24.0
       }
     }
   ]
