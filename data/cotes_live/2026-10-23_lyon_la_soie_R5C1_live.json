@@ -4,17 +4,17 @@
   "reunion": 5,
   "heure_depart": 1792763100000,
   "distance": 2150,
-  "scraped_at": "2026-10-23T15:19:37.851861+02:00",
-  "minutes_avant_depart": 25,
+  "scraped_at": "2026-10-23T15:23:37.814622+02:00",
+  "minutes_avant_depart": 21,
   "participants": [
     {
       "numPmu": 1,
       "nom": "BI BOISY",
-      "cote_live": 8.1,
+      "cote_live": 7.2,
       "cote_reference": 8.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792761575000
+      "timestamp_cote": 1792761795000
     },
     {
       "numPmu": 2,
@@ -23,16 +23,16 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792761575000
+      "timestamp_cote": 1792761795000
     },
     {
       "numPmu": 3,
       "nom": "JOYPHORIA",
-      "cote_live": 6.2,
+      "cote_live": 5.2,
       "cote_reference": 6.4,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1792761575000
+      "favoris": true,
+      "timestamp_cote": 1792761795000
     },
     {
       "numPmu": 4,
@@ -41,43 +41,43 @@
       "cote_reference": 6.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792761575000
+      "timestamp_cote": 1792761795000
     },
     {
       "numPmu": 5,
       "nom": "PURPLE DAHLIA",
-      "cote_live": 21.0,
+      "cote_live": 27.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792761575000
+      "timestamp_cote": 1792761795000
     },
     {
       "numPmu": 6,
       "nom": "SAINT LAURENT",
-      "cote_live": 9.1,
+      "cote_live": 8.6,
       "cote_reference": 9.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792761575000
+      "timestamp_cote": 1792761795000
     },
     {
       "numPmu": 7,
       "nom": "NEW PEARL",
-      "cote_live": 4.3,
+      "cote_live": 5.3,
       "cote_reference": 4.3,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1792761575000
+      "favoris": false,
+      "timestamp_cote": 1792761795000
     },
     {
       "numPmu": 8,
       "nom": "FIRST LADY STAR",
-      "cote_live": 7.9,
+      "cote_live": 7.6,
       "cote_reference": 7.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792761575000
+      "timestamp_cote": 1792761795000
     },
     {
       "numPmu": 9,
@@ -86,16 +86,16 @@
       "cote_reference": 40.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792761575000
+      "timestamp_cote": 1792761795000
     },
     {
       "numPmu": 10,
       "nom": "TEMADIVA",
-      "cote_live": 13.0,
+      "cote_live": 16.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792761575000
+      "timestamp_cote": 1792761795000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -130,6 +130,22 @@
         "8": 7.9,
         "9": 37.0,
         "10": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-23T15:23:37.814622+02:00",
+      "minutes_avant_depart": 21.373932266666667,
+      "cotes": {
+        "1": 7.2,
+        "2": 10.0,
+        "3": 5.2,
+        "4": 6.7,
+        "5": 27.0,
+        "6": 8.6,
+        "7": 5.3,
+        "8": 7.6,
+        "9": 37.0,
+        "10": 16.0
       }
     }
   ]
