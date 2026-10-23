@@ -1,6 +1,6 @@
 # LYON LA SOIE — 23/10/2026
 
-8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -82,20 +82,20 @@
 
 ### 5. PRIX DE LA ROSERAIE
 
-*18h05 · plat · 1800 m · 10 partants · cotes de l'extraction*
+*18h05 · plat · 1800 m · 10 partants · cotes à T−29:31*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 7 | ART PIECE | 4,8 | P.MENGES | –/400/103/879 |
-| 5 | COSMO BEAU | 4,9 | M.LEBAS | –/112/218/848 |
-| 1 | KAPETANIOS | 6,3 | F.GUY | –/326/771/793 |
-| 6 | BLANC BLEU | 6,6 | L.SCOTTO | –/5/40/113 |
-| 3 | COGOLIN | 9,7 | A.FERLAND | –/169/474/308 |
-| 8 | ANCOLIE | 10 | K.BRAYE | –/227/13/5181 |
-| 2 | RESOLUTION | 15 | D.SANNA | –/171/1486/185 |
-| 10 | WICKBURY | 15 | L.LE GEAY | –/112/262/1399 |
-| 9 | THREE DREAMS | 17 | J.PLASSARD | –/160/719/254 |
-| 4 | WILMOT | 28 | T.GUINEHEUX | –/210/3102/1619 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 6 | BLANC BLEU | 4,9 | 6,6 | L.SCOTTO | –/5/40/113 |
+| 5 | COSMO BEAU | 5,7 | 4,9 | M.LEBAS | –/112/218/848 |
+| 1 | KAPETANIOS | 6 | 6,3 | F.GUY | –/326/771/793 |
+| 7 | ART PIECE | 7 | 4,8 | P.MENGES | –/400/103/879 |
+| 3 | COGOLIN | 10 | 9,7 | A.FERLAND | –/169/474/308 |
+| 10 | WICKBURY | 11 | 15 | L.LE GEAY | –/112/262/1399 |
+| 2 | RESOLUTION | 12 | 15 | D.SANNA | –/171/1486/185 |
+| 8 | ANCOLIE | 14 | 10 | K.BRAYE | –/227/13/5181 |
+| 4 | WILMOT | 15 | 28 | T.GUINEHEUX | –/210/3102/1619 |
+| 9 | THREE DREAMS | 19 | 17 | J.PLASSARD | –/160/719/254 |
 
 ### 6. PRIX DROIT DIVIN
 
