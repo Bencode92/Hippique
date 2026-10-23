@@ -64,21 +64,21 @@
 
 ### 4. PRIX DU HARAS DE POUJUX
 
-*17h30 · plat · 1800 m · 11 partants · cotes à T−5:11*
+*17h30 · plat · 1800 m · 11 partants · cotes à T−2:31*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 2 | CORBUSIER | 3 | 3,6 | H.BESNIER | 12/5/19/7 |
+| 2 | CORBUSIER | 2,8 | 3,6 | H.BESNIER | 12/5/19/7 |
 | 4 | ALPSEE | 6,4 | 7,4 | M.GRANDIN | 3/4/25/28 |
-| 7 | BARSAC | 8,6 | 8,1 | R.THOMAS | 75/11/–/469 |
-| 6 | BEST FIGHTER | 8,7 | 9,4 | B.MARIE | 69/176/793/4932 |
-| 9 | NAQOURA | 9,3 | 13 | A.ORANI 3e | 5/25/862/375 |
-| 8 | RUN LIWAY | 9,5 | 10 | D.PROVOST | 33/93/24/16 |
-| 3 | LINTERCEPTOR | 20 | 10 | V.DUPONT | 100/25/199/– |
-| 5 | LORENZO | 20 | 14 | T.TRULLIER | 21/100/13/87 |
-| 10 | INVICTUS GLADIATOR | 20 | 20 | D.VIRGILIO | 332/32/10/729 |
-| 11 | SHAARWIN | 31 | 21 | F.VERON | 24/175/–/1914 |
-| 1 | BINOTTO | 35 | 14 | P.LE DIGABEL | 106/49/19/7 |
+| 7 | BARSAC | 7,6 | 8,1 | R.THOMAS | 75/11/–/469 |
+| 6 | BEST FIGHTER | 8,9 | 9,4 | B.MARIE | 69/176/793/4932 |
+| 8 | RUN LIWAY | 9,6 | 10 | D.PROVOST | 33/93/24/16 |
+| 9 | NAQOURA | 10 | 13 | A.ORANI 3e | 5/25/862/375 |
+| 3 | LINTERCEPTOR | 22 | 10 | V.DUPONT | 100/25/199/– |
+| 5 | LORENZO | 22 | 14 | T.TRULLIER | 21/100/13/87 |
+| 10 | INVICTUS GLADIATOR | 22 | 20 | D.VIRGILIO | 332/32/10/729 |
+| 11 | SHAARWIN | 35 | 21 | F.VERON | 24/175/–/1914 |
+| 1 | BINOTTO | 41 | 14 | P.LE DIGABEL | 106/49/19/7 |
 
 ### 5. PRIX DE LA ROSERAIE
 
