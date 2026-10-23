@@ -1,6 +1,6 @@
 # LYON LA SOIE — 23/10/2026
 
-8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -8,20 +8,20 @@
 
 ### 1. LONGINES EQUITA LYON C.H.I. - PRIX ROUVIGNAC
 
-*15h45 · plat · 2150 m · 10 partants · cotes de l'extraction*
+*15h45 · plat · 2150 m · 10 partants · cotes à T−29:22*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 7 | NEW PEARL | 5,2 | F.VERON | 24/125/112/207 |
-| 1 | BI BOISY | 6,6 | T.TRULLIER | 21/160/439/1771 |
-| 3 | JOYPHORIA | 6,8 | H.BESNIER | 12/5/319/3089 |
-| 4 | JOJO FANTAISIE | 6,9 | A.ORANI | 5/160/27/600 |
-| 2 | NIGHT MARY | 7,2 | M.GRANDIN | 3/125/562/207 |
-| 8 | FIRST LADY STAR | 8,9 | D.PROVOST | 33/93/14/2431 |
-| 6 | SAINT LAURENT | 9,5 | E.PUILLET-RODA | 73/112/4/278 |
-| 10 | TEMADIVA | 13 | C.PACAUT | 48/47/3/1718 |
-| 5 | PURPLE DAHLIA | 22 | K.GAUDEFFROY | 129/326/1959/793 |
-| 9 | BIRDY SUN | 34 | S.AKARI-SOUIDANE | 112/512/1591/1553 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 7 | NEW PEARL | 4,5 | 5,2 | F.VERON | 24/125/112/207 |
+| 4 | JOJO FANTAISIE | 6,2 | 6,9 | A.ORANI | 5/160/27/600 |
+| 3 | JOYPHORIA | 6,7 | 6,8 | H.BESNIER | 12/5/319/3089 |
+| 1 | BI BOISY | 7,5 | 6,6 | T.TRULLIER | 21/160/439/1771 |
+| 8 | FIRST LADY STAR | 7,8 | 8,9 | D.PROVOST | 33/93/14/2431 |
+| 2 | NIGHT MARY | 8,8 | 7,2 | M.GRANDIN | 3/125/562/207 |
+| 6 | SAINT LAURENT | 10 | 9,5 | E.PUILLET-RODA | 73/112/4/278 |
+| 10 | TEMADIVA | 15 | 13 | C.PACAUT | 48/47/3/1718 |
+| 5 | PURPLE DAHLIA | 23 | 22 | K.GAUDEFFROY | 129/326/1959/793 |
+| 9 | BIRDY SUN | 37 | 34 | S.AKARI-SOUIDANE | 112/512/1591/1553 |
 
 ### 2. PRIX DE SAINT RAMBERT-L'ILE-BARBE
 
