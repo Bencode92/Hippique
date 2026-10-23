@@ -4,8 +4,8 @@
   "reunion": 5,
   "heure_depart": 1792771500000,
   "distance": 1800,
-  "scraped_at": "2026-10-23T17:56:08.975449+02:00",
-  "minutes_avant_depart": 9,
+  "scraped_at": "2026-10-23T17:59:29.007446+02:00",
+  "minutes_avant_depart": 6,
   "participants": [
     {
       "numPmu": 1,
@@ -14,7 +14,7 @@
       "cote_reference": 6.0,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792770950000
+      "timestamp_cote": 1792771148000
     },
     {
       "numPmu": 2,
@@ -23,52 +23,52 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792770950000
+      "timestamp_cote": 1792771148000
     },
     {
       "numPmu": 3,
       "nom": "COGOLIN",
-      "cote_live": 8.3,
+      "cote_live": 8.1,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792770950000
+      "timestamp_cote": 1792771148000
     },
     {
       "numPmu": 4,
       "nom": "WILMOT",
-      "cote_live": 22.0,
+      "cote_live": 26.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792770950000
+      "timestamp_cote": 1792771148000
     },
     {
       "numPmu": 5,
       "nom": "COSMO BEAU",
-      "cote_live": 6.5,
+      "cote_live": 5.8,
       "cote_reference": 5.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792770950000
+      "timestamp_cote": 1792771148000
     },
     {
       "numPmu": 6,
       "nom": "BLANC BLEU",
-      "cote_live": 8.4,
+      "cote_live": 8.5,
       "cote_reference": 4.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792770950000
+      "timestamp_cote": 1792771148000
     },
     {
       "numPmu": 7,
       "nom": "ART PIECE",
-      "cote_live": 9.6,
+      "cote_live": 9.1,
       "cote_reference": 7.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792770950000
+      "timestamp_cote": 1792771148000
     },
     {
       "numPmu": 8,
@@ -77,25 +77,25 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792770950000
+      "timestamp_cote": 1792771148000
     },
     {
       "numPmu": 9,
       "nom": "THREE DREAMS",
-      "cote_live": 7.4,
+      "cote_live": 8.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792770950000
+      "timestamp_cote": 1792771148000
     },
     {
       "numPmu": 10,
       "nom": "WICKBURY",
-      "cote_live": 7.8,
+      "cote_live": 9.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792770950000
+      "timestamp_cote": 1792771148000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -194,6 +194,22 @@
         "8": 14.0,
         "9": 7.4,
         "10": 7.8
+      }
+    },
+    {
+      "scraped_at": "2026-10-23T17:59:29.007446+02:00",
+      "minutes_avant_depart": 5.52505745,
+      "cotes": {
+        "1": 5.7,
+        "2": 10.0,
+        "3": 8.1,
+        "4": 26.0,
+        "5": 5.8,
+        "6": 8.5,
+        "7": 9.1,
+        "8": 14.0,
+        "9": 8.0,
+        "10": 9.0
       }
     }
   ]
