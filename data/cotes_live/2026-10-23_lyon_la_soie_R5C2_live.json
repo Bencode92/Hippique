@@ -4,26 +4,26 @@
   "reunion": 5,
   "heure_depart": 1792765200000,
   "distance": 2150,
-  "scraped_at": "2026-10-23T16:14:57.977567+02:00",
-  "minutes_avant_depart": 5,
+  "scraped_at": "2026-10-23T16:17:38.712247+02:00",
+  "minutes_avant_depart": 2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "SPIRIT GREY",
-      "cote_live": 5.4,
+      "cote_live": 5.3,
       "cote_reference": 8.0,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1792764877000
+      "favoris": true,
+      "timestamp_cote": 1792765055000
     },
     {
       "numPmu": 2,
       "nom": "LOS SUENOS",
-      "cote_live": 8.0,
+      "cote_live": 7.6,
       "cote_reference": 7.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792764877000
+      "timestamp_cote": 1792765055000
     },
     {
       "numPmu": 3,
@@ -32,34 +32,34 @@
       "cote_reference": 7.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792764877000
+      "timestamp_cote": 1792765055000
     },
     {
       "numPmu": 4,
       "nom": "PUMPY GIRL",
-      "cote_live": 14.0,
+      "cote_live": 13.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792764877000
+      "timestamp_cote": 1792765055000
     },
     {
       "numPmu": 5,
       "nom": "INSPIRADO",
-      "cote_live": 8.0,
+      "cote_live": 8.1,
       "cote_reference": 9.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792764877000
+      "timestamp_cote": 1792765055000
     },
     {
       "numPmu": 7,
       "nom": "BRONTE SISTER",
-      "cote_live": 19.0,
+      "cote_live": 17.0,
       "cote_reference": 28.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792764877000
+      "timestamp_cote": 1792765055000
     },
     {
       "numPmu": 8,
@@ -68,16 +68,16 @@
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792764877000
+      "timestamp_cote": 1792765055000
     },
     {
       "numPmu": 9,
       "nom": "SECOND TO NONE",
-      "cote_live": 5.2,
+      "cote_live": 5.6,
       "cote_reference": 4.4,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1792764877000
+      "favoris": false,
+      "timestamp_cote": 1792765055000
     },
     {
       "numPmu": 10,
@@ -86,34 +86,34 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792764877000
+      "timestamp_cote": 1792765055000
     },
     {
       "numPmu": 12,
       "nom": "GRACEHILL",
-      "cote_live": 47.0,
+      "cote_live": 46.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792764877000
+      "timestamp_cote": 1792765055000
     },
     {
       "numPmu": 13,
       "nom": "VENT DU REVE",
-      "cote_live": 30.0,
+      "cote_live": 27.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792764877000
+      "timestamp_cote": 1792765055000
     },
     {
       "numPmu": 14,
       "nom": "CALAS QUEEN",
-      "cote_live": 20.0,
+      "cote_live": 21.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792764877000
+      "timestamp_cote": 1792765055000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -260,6 +260,78 @@
         "12": 47.0,
         "13": 30.0,
         "14": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-23T16:15:38.225776+02:00",
+      "minutes_avant_depart": 4.373760016666666,
+      "cotes": {
+        "1": 5.4,
+        "2": 8.3,
+        "3": 6.0,
+        "4": 14.0,
+        "5": 8.1,
+        "7": 18.0,
+        "8": 19.0,
+        "9": 5.1,
+        "10": 14.0,
+        "12": 44.0,
+        "13": 28.0,
+        "14": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-23T16:16:17.778281+02:00",
+      "minutes_avant_depart": 3.70709145,
+      "cotes": {
+        "1": 5.4,
+        "2": 8.3,
+        "3": 6.1,
+        "4": 14.0,
+        "5": 8.2,
+        "7": 17.0,
+        "8": 19.0,
+        "9": 5.1,
+        "10": 14.0,
+        "12": 44.0,
+        "13": 29.0,
+        "14": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-23T16:16:57.980148+02:00",
+      "minutes_avant_depart": 3.040422466666667,
+      "cotes": {
+        "1": 5.3,
+        "2": 8.5,
+        "3": 6.0,
+        "4": 13.0,
+        "5": 7.9,
+        "7": 18.0,
+        "8": 19.0,
+        "9": 5.3,
+        "10": 14.0,
+        "12": 45.0,
+        "13": 28.0,
+        "14": 21.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-23T16:17:38.712247+02:00",
+      "minutes_avant_depart": 2.3598218333333336,
+      "cotes": {
+        "1": 5.3,
+        "2": 7.6,
+        "3": 5.9,
+        "4": 13.0,
+        "5": 8.1,
+        "7": 17.0,
+        "8": 19.0,
+        "9": 5.6,
+        "10": 14.0,
+        "12": 46.0,
+        "13": 27.0,
+        "14": 21.0
       }
     }
   ]
