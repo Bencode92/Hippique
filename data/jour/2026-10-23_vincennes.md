@@ -1,53 +1,51 @@
 # VINCENNES — 23/10/2026
 
-8 courses.
+8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
 ### 1. PRIX PIERRE VAN TROYEN
 
-*18h23 · attelé · 2700 m · 14 partants · cotes de l'extraction*
+*18h23 · attelé · 2700 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MATISSE DU PONT | – | CL. DUVALDESTIN |
-| 2 | MOUSKIE DE GUEZ | – | N. BAZIRE |
-| 3 | LILIUS DE GUEZ | – | J.ET. ABRIVARD |
-| 4 | L'AMOUR | – | J.M. BAZIRE |
-| 5 | MAGICO DE LOU | – | E. RAFFIN |
-| 6 | LYRIKO BELLO | – | D. BONNE |
-| 7 | LOUVE DE REVE D'OR | – | A. GENDROT |
-| 8 | LOUIS VITTON MIJO | – | B. ROCHARD |
-| 9 | LAROZE DU GERS | – | A. ABRIVARD |
-| 10 | LILAS CASTELLE | – | M. MOTTIER |
-| 11 | MAGNUM DU CHOQUEL | – | F. LAGADEUC |
-| 12 | MONZON NORMAND | – | A. COLLETTE |
-| 13 | LALUNA DES FORGES | – | P.PH. PLOQUIN |
-| 14 | LITTLE BROWN | – | D. THOMAIN |
+| 9 | LAROZE DU GERS | 2,3 | A. ABRIVARD |
+| 13 | LALUNA DES FORGES | 7,7 | P.PH. PLOQUIN |
+| 12 | MONZON NORMAND | 9,6 | A. COLLETTE |
+| 14 | LITTLE BROWN | 10 | D. THOMAIN |
+| 8 | LOUIS VITTON MIJO | 13 | B. ROCHARD |
+| 10 | LILAS CASTELLE | 13 | M. MOTTIER |
+| 5 | MAGICO DE LOU | 14 | E. RAFFIN |
+| 1 | MATISSE DU PONT | 18 | CL. DUVALDESTIN |
+| 7 | LOUVE DE REVE D'OR | 24 | A. GENDROT |
+| 11 | MAGNUM DU CHOQUEL | 30 | F. LAGADEUC |
+| 6 | LYRIKO BELLO | 49 | D. BONNE |
+| 3 | LILIUS DE GUEZ | 120 | J.ET. ABRIVARD |
+| 2 | MOUSKIE DE GUEZ | 180 | N. BAZIRE |
 
 ### 2. PRIX JUNO
 
-*18h58 · attelé · 2100 m · 15 partants · cotes de l'extraction*
+*18h58 · attelé · 2100 m · 14 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | IDEFIX JIHEM | – | E. DE JESUS |
-| 2 | JOG JELOCA | – | J.L.CL. DERSOIR |
-| 3 | JAZZ D'OURVILLE | – | A. ABRIVARD |
-| 4 | JOKER D'OLAINE | – | F. LAGADEUC |
-| 5 | JOB DES LOUANGES | – | B. ROCHARD |
-| 6 | JACKSON D'ARC | – | A. BARRIER |
-| 7 | INSTINCTIF | – | D. BONNE |
-| 8 | HEROS DHELPA | – | F. OUVRIE |
-| 9 | HAPPY ATOUT | – | G. GELORMINI |
-| 10 | JOYEUSE ENTREE | – | P.PH. PLOQUIN |
-| 11 | HISTORY MAJYC | – | F. TABESSE |
-| 12 | JILANZA DU MOULIN | – | N. PACHA |
-| 13 | JOHORE | – | M. MOTTIER |
-| 14 | JAZZMAN | – | J.PH. DUBOIS |
-| 15 | HISCO DE PARNIERE | – | J.M. MARIE |
+| 13 | JOHORE | 2,7 | M. MOTTIER |
+| 5 | JOB DES LOUANGES | 3,4 | B. ROCHARD |
+| 3 | JAZZ D'OURVILLE | 9,2 | A. ABRIVARD |
+| 14 | JAZZMAN | 10 | J.PH. DUBOIS |
+| 2 | JOG JELOCA | 15 | J.L.CL. DERSOIR |
+| 6 | JACKSON D'ARC | 17 | A. BARRIER |
+| 4 | JOKER D'OLAINE | 18 | F. LAGADEUC |
+| 1 | IDEFIX JIHEM | 24 | E. DE JESUS |
+| 10 | JOYEUSE ENTREE | 42 | P.PH. PLOQUIN |
+| 11 | HISTORY MAJYC | 65 | F. TABESSE |
+| 8 | HEROS DHELPA | 109 | F. OUVRIE |
+| 9 | HAPPY ATOUT | 164 | G. GELORMINI |
+| 12 | JILANZA DU MOULIN | 164 | N. PACHA |
+| 15 | HISCO DE PARNIERE | 196 | J.M. MARIE |
 
 ### 3. PRIX ZOSMA
 
@@ -55,24 +53,24 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | LILI DRY | – | A. ANDRE |
-| 2 | L'AMOUR SUPREME | – | CL. DUVALDESTIN |
-| 3 | FLASH NP | – | F. NIVARD |
-| 4 | LINNA DE VANDEL | – | A. ABRIVARD |
-| 5 | FORCE OF NATURE | – | D. THOMAIN |
-| 6 | LE RETOUR VRIE | – | LEO ABRIVARD |
-| 7 | LIMO DE MER | – | F. OUVRIE |
-| 8 | LAURELINA | – | A. REBECHE |
-| 9 | OROSEI BOKO | – | E. RAFFIN |
-| 10 | SAHARA FIREBIRD | – | B. ROCHARD |
-| 11 | SECRET OF LAW | – | P. PELLEROT |
-| 12 | FREISA ROC | – | A. BARRIER |
-| 13 | FEDORA KEY COL | – | F. LAGADEUC |
-| 14 | FAHARAJAH ONE | – | E. LOCCISANO |
-| 15 | LEA D'ATOUT | – | PIERRE ABRIVARD |
-| 16 | OLYMPUS DRAGON | – | D.P. TESSELAAR |
-| 17 | READY HILL | – | G. GELORMINI |
-| 18 | LOUISA D'ATOUT | – | J.ET. ABRIVARD |
+| 2 | L'AMOUR SUPREME | 5,5 | CL. DUVALDESTIN |
+| 4 | LINNA DE VANDEL | 5,7 | A. ABRIVARD |
+| 9 | OROSEI BOKO | 6,9 | E. RAFFIN |
+| 7 | LIMO DE MER | 10 | F. OUVRIE |
+| 1 | LILI DRY | 11 | A. ANDRE |
+| 12 | FREISA ROC | 11 | A. BARRIER |
+| 10 | SAHARA FIREBIRD | 18 | B. ROCHARD |
+| 17 | READY HILL | 18 | G. GELORMINI |
+| 11 | SECRET OF LAW | 19 | P. PELLEROT |
+| 8 | LAURELINA | 23 | A. REBECHE |
+| 5 | FORCE OF NATURE | 29 | D. THOMAIN |
+| 6 | LE RETOUR VRIE | 30 | LEO ABRIVARD |
+| 13 | FEDORA KEY COL | 32 | F. LAGADEUC |
+| 3 | FLASH NP | 44 | F. NIVARD |
+| 16 | OLYMPUS DRAGON | 47 | D.P. TESSELAAR |
+| 18 | LOUISA D'ATOUT | 78 | J.ET. ABRIVARD |
+| 15 | LEA D'ATOUT | 141 | PIERRE ABRIVARD |
+| 14 | FAHARAJAH ONE | 235 | E. LOCCISANO |
 
 ### 4. PRIX ORIONIS
 
@@ -80,24 +78,24 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | JARDYLAND | – | L. JUBLOT |
-| 2 | GITANO JACK | – | F. NIVARD |
-| 3 | IROISE DE MADKER | – | F. LAGADEUC |
-| 4 | GENERAL DE CONNEE | – | D. THOMAIN |
-| 5 | IN RACE LORRAINE | – | G.A. POU POU |
-| 6 | JOKER GEMA | – | B. ROCHARD |
-| 7 | IENISSE DE BARBRAY | – | E. RAFFIN |
-| 8 | HALFAN SPEED | – | P.PH. PLOQUIN |
-| 9 | JEWEL DE LA COTE | – | G. GELORMINI |
-| 10 | JADOU DU LUPIN | – | A. WIELS |
-| 11 | JAZZ DE PADD | – | A. ABRIVARD |
-| 12 | IN LOVE REGLISSE | – | E. DE JESUS |
-| 13 | JIBI DU FRUITIER | – | M. MOTTIER |
-| 14 | IOUPY TOLLEVILLE | – | F. OUVRIE |
-| 15 | JUST DU CHATELET | – | D. BONNE |
-| 16 | HINDEN | – | A. BARRIER |
-| 17 | IVOIRE DAIRPET | – | CEDRIC TERRY |
-| 18 | JEZABELLE BIE | – | M. IZZO |
+| 15 | JUST DU CHATELET | 3,6 | D. BONNE |
+| 11 | JAZZ DE PADD | 5,9 | A. ABRIVARD |
+| 10 | JADOU DU LUPIN | 6,2 | A. WIELS |
+| 7 | IENISSE DE BARBRAY | 10 | E. RAFFIN |
+| 8 | HALFAN SPEED | 16 | P.PH. PLOQUIN |
+| 6 | JOKER GEMA | 19 | B. ROCHARD |
+| 17 | IVOIRE DAIRPET | 21 | CEDRIC TERRY |
+| 13 | JIBI DU FRUITIER | 28 | M. MOTTIER |
+| 12 | IN LOVE REGLISSE | 31 | E. DE JESUS |
+| 9 | JEWEL DE LA COTE | 47 | G. GELORMINI |
+| 2 | GITANO JACK | 49 | F. NIVARD |
+| 14 | IOUPY TOLLEVILLE | 49 | F. OUVRIE |
+| 3 | IROISE DE MADKER | 50 | F. LAGADEUC |
+| 5 | IN RACE LORRAINE | 52 | G.A. POU POU |
+| 4 | GENERAL DE CONNEE | 54 | D. THOMAIN |
+| 16 | HINDEN | 58 | A. BARRIER |
+| 1 | JARDYLAND | 69 | L. JUBLOT |
+| 18 | JEZABELLE BIE | 165 | M. IZZO |
 
 ### 5. PRIX VICTOR REGIS
 
@@ -105,15 +103,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | NEWTON DES FORGES | – | P.PH. PLOQUIN |
-| 2 | NON STOP DE FOOT | – | R. LAMY |
-| 3 | NOBEL SPEED | – | E. RAFFIN |
-| 4 | NOT THIS TIME | – | F. NIVARD |
-| 5 | NOVECENTO | – | M. MOTTIER |
-| 6 | NELSON EMGE | – | B. ROCHARD |
-| 7 | NOBEL DU RIB | – | J.L.CL. DERSOIR |
-| 8 | NUEVO CASH | – | THEO DUVALDESTIN |
-| 9 | NAT KING COLE | – | D. THOMAIN |
+| 7 | NOBEL DU RIB | 3,2 | J.L.CL. DERSOIR |
+| 9 | NAT KING COLE | 3,2 | D. THOMAIN |
+| 1 | NEWTON DES FORGES | 5,3 | P.PH. PLOQUIN |
+| 8 | NUEVO CASH | 9,6 | THEO DUVALDESTIN |
+| 3 | NOBEL SPEED | 13 | E. RAFFIN |
+| 6 | NELSON EMGE | 15 | B. ROCHARD |
+| 5 | NOVECENTO | 20 | M. MOTTIER |
+| 2 | NON STOP DE FOOT | 51 | R. LAMY |
+| 4 | NOT THIS TIME | 113 | F. NIVARD |
 
 ### 6. PRIX URANIE
 
@@ -121,43 +119,42 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | NIGHT FOR YOU | – | R. LAMY |
-| 2 | NEVALE VET | – | B. LE BELLER |
-| 3 | NO ONE | – | M. MOTTIER |
-| 4 | NONEKA | – | E. RAFFIN |
-| 5 | NAFI DE REVE D'OR | – | A. BARRIER |
-| 6 | NACRE DU MOUTHIEUX | – | THEO DUVALDESTIN |
-| 7 | NYMPHE D'ELLE | – | B. ROCHARD |
-| 8 | NIKITA | – | A. COLLETTE |
-| 9 | NYASSA DAXEL | – | P.PH. PLOQUIN |
-| 10 | NORMA JEANE | – | A. ABRIVARD |
-| 11 | NOELA JOSSELYN | – | N. BAZIRE |
-| 12 | NAYA D'ERONVILLE | – | CL. DUVALDESTIN |
-| 13 | NORMANDIE NIEMEN | – | D. THOMAIN |
-| 14 | NOCIVE DU CHOQUEL | – | F. LAGADEUC |
+| 12 | NAYA D'ERONVILLE | 2,3 | CL. DUVALDESTIN |
+| 14 | NOCIVE DU CHOQUEL | 3,4 | F. LAGADEUC |
+| 13 | NORMANDIE NIEMEN | 7,6 | D. THOMAIN |
+| 2 | NEVALE VET | 16 | B. LE BELLER |
+| 8 | NIKITA | 17 | A. COLLETTE |
+| 6 | NACRE DU MOUTHIEUX | 31 | THEO DUVALDESTIN |
+| 7 | NYMPHE D'ELLE | 36 | B. ROCHARD |
+| 9 | NYASSA DAXEL | 36 | P.PH. PLOQUIN |
+| 3 | NO ONE | 56 | M. MOTTIER |
+| 4 | NONEKA | 67 | E. RAFFIN |
+| 11 | NOELA JOSSELYN | 67 | N. BAZIRE |
+| 5 | NAFI DE REVE D'OR | 78 | A. BARRIER |
+| 1 | NIGHT FOR YOU | 84 | R. LAMY |
+| 10 | NORMA JEANE | 112 | A. ABRIVARD |
 
 ### 7. PRIX BELLONA
 
-*21h45 · attelé · 2100 m · 16 partants · cotes de l'extraction*
+*21h45 · attelé · 2100 m · 15 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MAMACITA | – | L.M. DAVID |
-| 2 | MONTEQUILLO | – | E. RAFFIN |
-| 3 | MONI MAKING PACE | – | D.P. TESSELAAR |
-| 4 | MEMPHIS ELLIS | – | E. ALLARD |
-| 5 | SLIPSTREAM ZON | – | M. MOTTIER |
-| 6 | MARQUISE DE MAGNY | – | AURELIEN DESMARRES |
-| 7 | METIDJA | – | E. DE JESUS |
-| 8 | BROWNIE DIAMANT | – | G. GELORMINI |
-| 9 | MON PLAISIR | – | A. REBECHE |
-| 10 | GIAVA WISE L | – | P.PH. PLOQUIN |
-| 11 | MAMOUNIA SEVEN | – | N. BAZIRE |
-| 12 | GIULIA PLAY | – | B. ROCHARD |
-| 13 | MEA CULPA | – | M. LELIEVRE |
-| 14 | MISS MATTERS | – | THEO DUVALDESTIN |
-| 15 | MASAI MARA | – | F. NIVARD |
-| 16 | MYRTILLE MARBOULA | – | R. LAMY |
+| 1 | MAMACITA | 3,6 | L.M. DAVID |
+| 8 | BROWNIE DIAMANT | 3,9 | G. GELORMINI |
+| 14 | MISS MATTERS | 6,2 | THEO DUVALDESTIN |
+| 15 | MASAI MARA | 9,6 | F. NIVARD |
+| 9 | MON PLAISIR | 13 | A. REBECHE |
+| 2 | MONTEQUILLO | 15 | E. RAFFIN |
+| 5 | SLIPSTREAM ZON | 16 | M. MOTTIER |
+| 12 | GIULIA PLAY | 20 | B. ROCHARD |
+| 4 | MEMPHIS ELLIS | 34 | E. ALLARD |
+| 7 | METIDJA | 51 | E. DE JESUS |
+| 6 | MARQUISE DE MAGNY | 58 | AURELIEN DESMARRES |
+| 10 | GIAVA WISE L | 72 | P.PH. PLOQUIN |
+| 3 | MONI MAKING PACE | 109 | D.P. TESSELAAR |
+| 11 | MAMOUNIA SEVEN | 174 | N. BAZIRE |
+| 13 | MEA CULPA | 874 | M. LELIEVRE |
 
 ### 8. PRIX LETO
 
@@ -165,14 +162,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | LIGHTNING ARCTIC | – | A. ABRIVARD |
-| 2 | LOOKING FOREXPRESS | – | A. GENDROT |
-| 3 | LUCKY NUMBER | – | AURELIEN DESMARRES |
-| 4 | L'INCORRUPTIBLE | – | J.Y. RICART |
-| 5 | LARGINO BRAVOURE | – | B. ROCHARD |
-| 6 | LATINO ELDE | – | P.PH. PLOQUIN |
-| 7 | LOUSTIC DE DALINE | – | M. MOTTIER |
-| 8 | LE VENT DU HOULET | – | M. LELIEVRE |
-| 9 | LAPIX HOSTMAIL | – | Mme C. BLAIZOT |
-| 10 | L'ONCLE SAM | – | S.E. PASQUIER |
-| 11 | LAGON DU DEZERT | – | M. DURVILLE |
+| 5 | LARGINO BRAVOURE | 3,2 | B. ROCHARD |
+| 7 | LOUSTIC DE DALINE | 7 | M. MOTTIER |
+| 9 | LAPIX HOSTMAIL | 7,7 | Mme C. BLAIZOT |
+| 10 | L'ONCLE SAM | 9 | S.E. PASQUIER |
+| 11 | LAGON DU DEZERT | 9,3 | M. DURVILLE |
+| 6 | LATINO ELDE | 9,9 | P.PH. PLOQUIN |
+| 8 | LE VENT DU HOULET | 13 | M. LELIEVRE |
+| 4 | L'INCORRUPTIBLE | 15 | J.Y. RICART |
+| 1 | LIGHTNING ARCTIC | 32 | A. ABRIVARD |
+| 2 | LOOKING FOREXPRESS | 32 | A. GENDROT |
+| 3 | LUCKY NUMBER | 32 | AURELIEN DESMARRES |

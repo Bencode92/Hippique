@@ -1,86 +1,84 @@
 # STRASBOURG — 23/10/2026
 
-8 courses.
+8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
 ### 1. PRIX DE LA MEINAU
 
-*11h14 · attelé · 2800 m · 15 partants · cotes de l'extraction*
+*11h16 · attelé · 2800 m · 14 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KAMARO DU DONJON | – | F. ROBIN |
-| 2 | JERIDAN | – | TH. HUCHEDE |
-| 3 | KING GATE | – | M. ELTER |
-| 4 | JOCKO MESLOIS | – | Mme B. DEMOULIN |
-| 5 | KARYNNDO ROBSEN | – | JEAN MAXIME LESNE |
-| 6 | JAMIN DE BRY | – | Mme L. VERPLANCKEN |
-| 7 | JESSIE METEOR | – | J. SMITS |
-| 8 | JOCKEY CADENCE | – | B. SCHWARTZ |
-| 9 | HALLO DE MANCHE | – | J. LEBOSSE |
-| 10 | KANDAR JIEL | – | E. FREMIOT |
-| 11 | HASHTAG DU LION | – | Y. ACKER |
-| 12 | JUST LOVE D'ALSACE | – | F. JAEGLER |
-| 13 | HELLO CAUVELLIERE | – | Mme B. GUENET |
-| 14 | GIORGIO DU VIVIER | – | Mme M. VER HULST |
-| 15 | HOT SHOT | – | G. DEPYPERE |
+| 10 | KANDAR JIEL | 1,9 | E. FREMIOT |
+| 8 | JOCKEY CADENCE | 6,2 | B. SCHWARTZ |
+| 13 | HELLO CAUVELLIERE | 8,1 | Mme B. GUENET |
+| 5 | KARYNNDO ROBSEN | 9,9 | JEAN MAXIME LESNE |
+| 14 | GIORGIO DU VIVIER | 12 | Mme M. VER HULST |
+| 1 | KAMARO DU DONJON | 15 | F. ROBIN |
+| 11 | HASHTAG DU LION | 50 | Y. ACKER |
+| 12 | JUST LOVE D'ALSACE | 56 | F. JAEGLER |
+| 6 | JAMIN DE BRY | 66 | Mme L. VERPLANCKEN |
+| 2 | JERIDAN | 71 | TH. HUCHEDE |
+| 7 | JESSIE METEOR | 72 | J. SMITS |
+| 15 | HOT SHOT | 94 | G. DEPYPERE |
+| 3 | KING GATE | 142 | M. ELTER |
+| 9 | HALLO DE MANCHE | 293 | J. LEBOSSE |
 
 ### 2. PRIX FLORESTAN
 
-*11h46 · monté · 2800 m · 9 partants · cotes de l'extraction*
+*11h47 · monté · 2800 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KOSTA BRAVA | – | Mlle MANON ROTSAERT |
-| 2 | LARGO FLIGNY | – | P.Y. VERVA |
-| 3 | LAHRANA DU HAUTY | – | LILIAN BERTIN |
-| 4 | LOUISE ATTAQUE ERA | – | J. FERRON |
-| 5 | LE DIAMANT DE JAFA | – | Mme H. HUYGENS |
-| 6 | LIGHTNING JIEL | – | M. LELIEVRE |
-| 7 | KENTUCKY SCARLET | – | L. PITON |
-| 8 | LE CADOR DE SIMM | – | ALEXANDRE BODIN |
-| 9 | KAMAY DES CORONS | – | A. VOISIN |
+| 9 | KAMAY DES CORONS | 2,8 | A. VOISIN |
+| 6 | LIGHTNING JIEL | 2,8 | M. LELIEVRE |
+| 8 | LE CADOR DE SIMM | 8 | ALEXANDRE BODIN |
+| 4 | LOUISE ATTAQUE ERA | 10 | J. FERRON |
+| 2 | LARGO FLIGNY | 16 | P.Y. VERVA |
+| 7 | KENTUCKY SCARLET | 16 | L. PITON |
+| 3 | LAHRANA DU HAUTY | 21 | LILIAN BERTIN |
+| 5 | LE DIAMANT DE JAFA | 32 | Mme H. HUYGENS |
+| 1 | KOSTA BRAVA | 99 | Mlle MANON ROTSAERT |
 
 ### 3. PRIX TITAN
 
-*12h18 · attelé · 2800 m · 10 partants · cotes de l'extraction*
+*12h20 · attelé · 2800 m · 10 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | NEVADA JIEL | – | P.Y. VERVA |
-| 2 | NOIR C'EST BLACK | – | M. VERVA |
-| 3 | NUAGE DU RABUTIN | – | F. GIARD |
-| 4 | NOXUS JIEL | – | G. GELORMINI |
-| 5 | NUANCE DE HOERDT | – | F. DESMIGNEUX |
-| 6 | NETSUKE | – | F. GUERINEAU |
-| 7 | NEW GIRL MELOC | – | O. BIZOUX |
-| 8 | NACHO DU CAMPUS | – | G. SUCAET |
-| 9 | NILANO DE HOUELLE | – | ALEXANDRE BODIN |
-| 10 | NIGHTSHIFT | – | J. FERRON |
+| 8 | NACHO DU CAMPUS | 3,8 | G. SUCAET |
+| 4 | NOXUS JIEL | 5,5 | G. GELORMINI |
+| 9 | NILANO DE HOUELLE | 7,6 | ALEXANDRE BODIN |
+| 6 | NETSUKE | 8,5 | F. GUERINEAU |
+| 2 | NOIR C'EST BLACK | 8,8 | M. VERVA |
+| 1 | NEVADA JIEL | 8,8 | P.Y. VERVA |
+| 10 | NIGHTSHIFT | 10 | J. FERRON |
+| 5 | NUANCE DE HOERDT | 19 | F. DESMIGNEUX |
+| 3 | NUAGE DU RABUTIN | 25 | F. GIARD |
+| 7 | NEW GIRL MELOC | 30 | O. BIZOUX |
 
 ### 4. PRIX ALSANETT
 
-*12h50 · attelé · 2750 m · 14 partants · cotes de l'extraction*
+*12h50 · attelé · 2750 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MICTOIRE QUEEN | – | L. KOUBICHE |
-| 2 | MIA DU BLEQUIN | – | M. VERVA |
-| 3 | MISS WINNER | – | P. OLLITRAULT |
-| 4 | MUSIKER | – | P.Y. VERVA |
-| 5 | MAESTRIA D'EURVAD | – | F. GUERINEAU |
-| 6 | MOETE DE BELFOND | – | ALEXANDRE BODIN |
-| 7 | MUSE D'EURVAD | – | R. ROIG-BALAGUER |
-| 8 | MON CARAT | – | O. BIZOUX |
-| 9 | MAROUBRA | – | PH. MASSCHAELE |
-| 10 | MARACANA DU VIVIER | – | M. LEGROS |
-| 11 | MON AMIRAL DU TAY | – | G. GELORMINI |
-| 12 | MAGICIEN D'OZ | – | K. DEPUYDT |
-| 13 | MAGNIFIK BOSDARROS | – | CH. HESLOUIN |
-| 14 | MISS DU RABUTIN | – | F. GIARD |
+| 1 | MICTOIRE QUEEN | 3,2 | L. KOUBICHE |
+| 2 | MIA DU BLEQUIN | 6,3 | M. VERVA |
+| 10 | MARACANA DU VIVIER | 6,7 | M. LEGROS |
+| 4 | MUSIKER | 6,9 | P.Y. VERVA |
+| 5 | MAESTRIA D'EURVAD | 8,2 | F. GUERINEAU |
+| 7 | MUSE D'EURVAD | 12 | R. ROIG-BALAGUER |
+| 3 | MISS WINNER | 24 | P. OLLITRAULT |
+| 11 | MON AMIRAL DU TAY | 26 | G. GELORMINI |
+| 14 | MISS DU RABUTIN | 37 | F. GIARD |
+| 8 | MON CARAT | 37 | O. BIZOUX |
+| 6 | MOETE DE BELFOND | 56 | ALEXANDRE BODIN |
+| 12 | MAGICIEN D'OZ | 65 | K. DEPUYDT |
+| 13 | MAGNIFIK BOSDARROS | 93 | CH. HESLOUIN |
 
 ### 5. PRIX DE GROSBOIS
 
@@ -88,40 +86,39 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | LIVE MY DREAM | – | F. ROCHETTE |
-| 2 | LOVER DES BROUSSES | – | PH. MASSCHAELE |
-| 3 | LINDIR | – | F. GIARD |
-| 4 | LUCKY BELLAY | – | F. DESMIGNEUX |
-| 5 | L'ARC EN CIEL | – | L. PITON |
-| 6 | LEXI BIRDIE | – | P.CH. JEAN |
-| 7 | LARGE LEVEL | – | G. GELORMINI |
-| 8 | LIPINSKA | – | O. BIZOUX |
-| 9 | LEAD ME ON | – | M. VERVA |
-| 10 | LITTLE DRAGON | – | F. GUERINEAU |
-| 11 | LUCKY BOY VERTRAC | – | K. DEPUYDT |
-| 12 | LITTLE CROWN | – | CH. MARTENS |
-| 13 | LERWICK PERRINE | – | P.Y. VERVA |
+| 7 | LARGE LEVEL | 1,9 | G. GELORMINI |
+| 12 | LITTLE CROWN | 7,3 | CH. MARTENS |
+| 11 | LUCKY BOY VERTRAC | 11 | K. DEPUYDT |
+| 3 | LINDIR | 13 | F. GIARD |
+| 8 | LIPINSKA | 15 | O. BIZOUX |
+| 10 | LITTLE DRAGON | 17 | F. GUERINEAU |
+| 4 | LUCKY BELLAY | 21 | F. DESMIGNEUX |
+| 9 | LEAD ME ON | 22 | M. VERVA |
+| 6 | LEXI BIRDIE | 32 | P.CH. JEAN |
+| 2 | LOVER DES BROUSSES | 33 | PH. MASSCHAELE |
+| 13 | LERWICK PERRINE | 59 | P.Y. VERVA |
+| 1 | LIVE MY DREAM | 84 | F. ROCHETTE |
+| 5 | L'ARC EN CIEL | 86 | L. PITON |
 
 ### 6. PRIX OURASI
 
-*14h00 · attelé · 2150 m · 14 partants · cotes de l'extraction*
+*14h00 · attelé · 2150 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KERIA FLEURY | – | P.Y. VERVA |
-| 2 | KALINA DE LAURIERE | – | PH. MASSCHAELE |
-| 3 | KASIMODO DREAM | – | F. GUERINEAU |
-| 4 | KATUDI | – | F. GIARD |
-| 5 | KING GEORGES ELLIS | – | LORIS BIZOUX |
-| 6 | KAZEG TALVA | – | V. HERARD |
-| 7 | KING TURGOT | – | K. BUSNEL |
-| 8 | KATTEGAT CITY | – | P. OLLITRAULT |
-| 9 | KAKI DE VAL | – | F. ROCHETTE |
-| 10 | KEEP SMILING | – | F. DESMIGNEUX |
-| 11 | KARAMEL TENDRE | – | M. VERVA |
-| 12 | KADOLINE WEST | – | Mme H. HUYGENS |
-| 13 | KURLY DE MONGOCHY | – | ALEXANDRE BODIN |
-| 14 | KISS MAKER | – | G. GELORMINI |
+| 10 | KEEP SMILING | 2,9 | F. DESMIGNEUX |
+| 5 | KING GEORGES ELLIS | 3,7 | LORIS BIZOUX |
+| 1 | KERIA FLEURY | 10 | P.Y. VERVA |
+| 3 | KASIMODO DREAM | 11 | F. GUERINEAU |
+| 4 | KATUDI | 13 | F. GIARD |
+| 13 | KURLY DE MONGOCHY | 16 | ALEXANDRE BODIN |
+| 2 | KALINA DE LAURIERE | 18 | PH. MASSCHAELE |
+| 7 | KING TURGOT | 19 | K. BUSNEL |
+| 12 | KADOLINE WEST | 27 | Mme H. HUYGENS |
+| 8 | KATTEGAT CITY | 37 | P. OLLITRAULT |
+| 14 | KISS MAKER | 51 | CH. MARTENS |
+| 11 | KARAMEL TENDRE | 68 | M. VERVA |
+| 9 | KAKI DE VAL | 102 | F. ROCHETTE |
 
 ### 7. PRIX FRANCE 3 ALSACE
 
@@ -129,20 +126,20 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | JULIAN DARK | – | F. GIARD |
-| 2 | JERIMOW | – | P.Y. VERVA |
-| 3 | JACKSON TOUCH | – | L. KOUBICHE |
-| 4 | JALACTIC | – | M. LEGROS |
-| 5 | IXCES BUROIS | – | K. BUSNEL |
-| 6 | JAPPELOU | – | CH. HESLOUIN |
-| 7 | IVAJALE | – | F. DESMIGNEUX |
-| 8 | JOKER DE LA BRETTE | – | P. OLLITRAULT |
-| 9 | JACKPOT DES BORDES | – | ALEXANDRE BODIN |
-| 10 | IDUNN | – | PH. MASSCHAELE |
-| 11 | JUMBO DES PRES | – | K. DEPUYDT |
-| 12 | IGOLO | – | M. VERVA |
-| 13 | JOYAU DARLING | – | F. GUERINEAU |
-| 14 | JANARDAL CLUB | – | G. DESPREZ |
+| 2 | JERIMOW | 4,1 | P.Y. VERVA |
+| 3 | JACKSON TOUCH | 4,2 | L. KOUBICHE |
+| 6 | JAPPELOU | 7,3 | CH. HESLOUIN |
+| 1 | JULIAN DARK | 9,2 | F. GIARD |
+| 7 | IVAJALE | 14 | F. DESMIGNEUX |
+| 10 | IDUNN | 14 | PH. MASSCHAELE |
+| 8 | JOKER DE LA BRETTE | 16 | P. OLLITRAULT |
+| 9 | JACKPOT DES BORDES | 20 | ALEXANDRE BODIN |
+| 13 | JOYAU DARLING | 22 | F. GUERINEAU |
+| 4 | JALACTIC | 28 | M. LEGROS |
+| 11 | JUMBO DES PRES | 33 | K. DEPUYDT |
+| 5 | IXCES BUROIS | 35 | K. BUSNEL |
+| 14 | JANARDAL CLUB | 57 | G. DESPREZ |
+| 12 | IGOLO | 71 | M. VERVA |
 
 ### 8. PRIX JAMIN
 
@@ -150,19 +147,19 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | BOTTNAS JUSTIN | – | L. KOUBICHE |
-| 2 | THAT'S IT | – | F. ROCHETTE |
-| 3 | HIDAO DE LA GOUTTE | – | I. ZENDELI |
-| 4 | UCCELLONE | – | CH. SCHWARZ |
-| 5 | ICLO | – | ALEXANDRE BODIN |
-| 6 | INDY DE MAI | – | LILIAN BERTIN |
-| 7 | HORIZON D'AMARO | – | P. OLLITRAULT |
-| 8 | TYRON HILL | – | J. FRANZL |
-| 9 | JOYEUX DU VIVIEN | – | K. BUSNEL |
-| 10 | ROSSI GARLINE | – | F. GUERINEAU |
-| 11 | JALDO D'OCQUE | – | PH. MASSCHAELE |
-| 12 | JOSS AIMEF | – | P.Y. VERVA |
-| 13 | RUGER | – | F. DESMIGNEUX |
-| 14 | NICE PRESENT | – | K. DEPUYDT |
-| 15 | IF I TELL YOU | – | M. VERVA |
-| 16 | GENERAL DU NORD | – | Mme H. HUYGENS |
+| 13 | RUGER | 3,7 | F. DESMIGNEUX |
+| 6 | INDY DE MAI | 6,1 | LILIAN BERTIN |
+| 12 | JOSS AIMEF | 6,4 | P.Y. VERVA |
+| 8 | TYRON HILL | 12 | J. FRANZL |
+| 4 | UCCELLONE | 16 | CH. SCHWARZ |
+| 11 | JALDO D'OCQUE | 17 | PH. MASSCHAELE |
+| 1 | BOTTNAS JUSTIN | 21 | L. KOUBICHE |
+| 3 | HIDAO DE LA GOUTTE | 21 | I. ZENDELI |
+| 14 | NICE PRESENT | 22 | K. DEPUYDT |
+| 15 | IF I TELL YOU | 22 | M. VERVA |
+| 7 | HORIZON D'AMARO | 25 | P. OLLITRAULT |
+| 9 | JOYEUX DU VIVIEN | 27 | K. BUSNEL |
+| 10 | ROSSI GARLINE | 30 | F. GUERINEAU |
+| 2 | THAT'S IT | 39 | F. ROCHETTE |
+| 5 | ICLO | 39 | ALEXANDRE BODIN |
+| 16 | GENERAL DU NORD | 85 | Mme H. HUYGENS |
