@@ -99,20 +99,20 @@
 
 ### 6. PRIX DROIT DIVIN
 
-*18h40 · plat · 2400 m · 11 partants · cotes à T−29:51*
+*18h40 · plat · 2400 m · 11 partants · cotes à T−25:11*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 1 | CANDIZAL | 3 | 4,3 | D.PROVOST 5e | 33/1/–/1 |
-| 3 | MAGNUS | 3,9 | 3,2 | M.GRANDIN | 3/66/195/47 |
-| 7 | ENDORPHIN | 8,3 | 7,3 | K.BRAYE | –/217/3945/747 |
+| 1 | CANDIZAL | 3,3 | 4,3 | D.PROVOST 5e | 33/1/–/1 |
+| 3 | MAGNUS | 4,2 | 3,2 | M.GRANDIN | 3/66/195/47 |
+| 7 | ENDORPHIN | 8,6 | 7,3 | K.BRAYE | –/217/3945/747 |
+| 10 | AMILA | 11 | 12 | D.VIRGILIO | 332/32/250/1225 |
 | 5 | INTER GLORY | 12 | 17 | A.ORANI | 5/48/661/5032 |
-| 10 | AMILA | 13 | 12 | D.VIRGILIO | 332/32/250/1225 |
-| 11 | MOTRAFF | 14 | 12 | R.THOMAS | 75/11/2057/426 |
-| 6 | PEGASUS D'AZUR | 18 | 14 | B.FLANDRIN | 102/307/2787/3847 |
-| 8 | GAITA | 22 | 21 | B.MARIE | 69/445/3175/– |
-| 4 | FANTASTIC FIGHTER | 24 | 20 | G.SIAS | 96/155/820/786 |
-| 2 | SOHAR | 26 | 18 | T.TRULLIER | 21/370/1695/2555 |
+| 11 | MOTRAFF | 15 | 12 | R.THOMAS | 75/11/2057/426 |
+| 6 | PEGASUS D'AZUR | 16 | 14 | B.FLANDRIN | 102/307/2787/3847 |
+| 8 | GAITA | 16 | 21 | B.MARIE | 69/445/3175/– |
+| 4 | FANTASTIC FIGHTER | 19 | 20 | G.SIAS | 96/155/820/786 |
+| 2 | SOHAR | 21 | 18 | T.TRULLIER | 21/370/1695/2555 |
 | 9 | KAILALI | 31 | 45 | F.VERON | 24/413/2848/4431 |
 
 ### 7. PRIX DES JUNIORS
