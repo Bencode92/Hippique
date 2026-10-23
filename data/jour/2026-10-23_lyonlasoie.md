@@ -82,20 +82,20 @@
 
 ### 5. PRIX DE LA ROSERAIE
 
-*18h05 · plat · 1800 m · 10 partants · cotes à T−2:51*
+*18h05 · plat · 1800 m · 10 partants · cotes à T−0:11*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 1 | KAPETANIOS | 5,5 | 6,3 | F.GUY | –/326/771/793 |
-| 5 | COSMO BEAU | 6 | 4,9 | M.LEBAS | –/112/218/848 |
-| 3 | COGOLIN | 7,6 | 9,7 | A.FERLAND | –/169/474/308 |
-| 7 | ART PIECE | 8,6 | 4,8 | P.MENGES | –/400/103/879 |
-| 9 | THREE DREAMS | 8,6 | 17 | J.PLASSARD | –/160/719/254 |
-| 10 | WICKBURY | 8,6 | 15 | L.LE GEAY | –/112/262/1399 |
-| 6 | BLANC BLEU | 9,1 | 6,6 | L.SCOTTO | –/5/40/113 |
-| 2 | RESOLUTION | 10 | 15 | D.SANNA | –/171/1486/185 |
-| 8 | ANCOLIE | 14 | 10 | K.BRAYE | –/227/13/5181 |
-| 4 | WILMOT | 27 | 28 | T.GUINEHEUX | –/210/3102/1619 |
+| 1 | KAPETANIOS | 5 | 6,3 | F.GUY | –/326/771/793 |
+| 5 | COSMO BEAU | 5,4 | 4,9 | M.LEBAS | –/112/218/848 |
+| 7 | ART PIECE | 6,4 | 4,8 | P.MENGES | –/400/103/879 |
+| 3 | COGOLIN | 8,1 | 9,7 | A.FERLAND | –/169/474/308 |
+| 9 | THREE DREAMS | 9,3 | 17 | J.PLASSARD | –/160/719/254 |
+| 10 | WICKBURY | 9,7 | 15 | L.LE GEAY | –/112/262/1399 |
+| 6 | BLANC BLEU | 10 | 6,6 | L.SCOTTO | –/5/40/113 |
+| 2 | RESOLUTION | 12 | 15 | D.SANNA | –/171/1486/185 |
+| 8 | ANCOLIE | 18 | 10 | K.BRAYE | –/227/13/5181 |
+| 4 | WILMOT | 28 | 28 | T.GUINEHEUX | –/210/3102/1619 |
 
 ### 6. PRIX DROIT DIVIN
 
