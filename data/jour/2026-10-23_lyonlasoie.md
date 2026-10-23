@@ -99,21 +99,21 @@
 
 ### 6. PRIX DROIT DIVIN
 
-*18h40 · plat · 2400 m · 11 partants · cotes à T−5:51*
+*18h40 · plat · 2400 m · 11 partants · cotes à T−3:11*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 1 | CANDIZAL | 2,6 | 4,3 | D.PROVOST 5e | 33/1/–/1 |
+| 1 | CANDIZAL | 2,8 | 4,3 | D.PROVOST 5e | 33/1/–/1 |
 | 3 | MAGNUS | 3,3 | 3,2 | M.GRANDIN | 3/66/195/47 |
+| 10 | AMILA | 8,8 | 12 | D.VIRGILIO | 332/32/250/1225 |
 | 11 | MOTRAFF | 10 | 12 | R.THOMAS | 75/11/2057/426 |
-| 10 | AMILA | 12 | 12 | D.VIRGILIO | 332/32/250/1225 |
 | 7 | ENDORPHIN | 14 | 7,3 | K.BRAYE | –/217/3945/747 |
 | 5 | INTER GLORY | 20 | 17 | A.ORANI | 5/48/661/5032 |
-| 8 | GAITA | 21 | 21 | B.MARIE | 69/445/3175/– |
+| 8 | GAITA | 23 | 21 | B.MARIE | 69/445/3175/– |
 | 2 | SOHAR | 26 | 18 | T.TRULLIER | 21/370/1695/2555 |
-| 6 | PEGASUS D'AZUR | 28 | 14 | B.FLANDRIN | 102/307/2787/3847 |
-| 4 | FANTASTIC FIGHTER | 45 | 20 | G.SIAS | 96/155/820/786 |
-| 9 | KAILALI | 48 | 45 | F.VERON | 24/413/2848/4431 |
+| 6 | PEGASUS D'AZUR | 26 | 14 | B.FLANDRIN | 102/307/2787/3847 |
+| 9 | KAILALI | 42 | 45 | F.VERON | 24/413/2848/4431 |
+| 4 | FANTASTIC FIGHTER | 50 | 20 | G.SIAS | 96/155/820/786 |
 
 ### 7. PRIX DES JUNIORS
 
