@@ -64,21 +64,21 @@
 
 ### 4. PRIX DU HARAS DE POUJUX
 
-*17h30 · plat · 1800 m · 11 partants · cotes à T−21:11*
+*17h30 · plat · 1800 m · 11 partants · cotes à T−17:11*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 2 | CORBUSIER | 3,3 | 3,6 | H.BESNIER | 12/5/19/7 |
-| 4 | ALPSEE | 6,3 | 7,4 | M.GRANDIN | 3/4/25/28 |
-| 9 | NAQOURA | 7,2 | 13 | A.ORANI 3e | 5/25/862/375 |
-| 6 | BEST FIGHTER | 8,3 | 9,4 | B.MARIE | 69/176/793/4932 |
-| 7 | BARSAC | 9,4 | 8,1 | R.THOMAS | 75/11/–/469 |
+| 2 | CORBUSIER | 3,1 | 3,6 | H.BESNIER | 12/5/19/7 |
+| 4 | ALPSEE | 6,5 | 7,4 | M.GRANDIN | 3/4/25/28 |
+| 9 | NAQOURA | 7,4 | 13 | A.ORANI 3e | 5/25/862/375 |
+| 6 | BEST FIGHTER | 9,1 | 9,4 | B.MARIE | 69/176/793/4932 |
+| 7 | BARSAC | 10 | 8,1 | R.THOMAS | 75/11/–/469 |
 | 8 | RUN LIWAY | 12 | 10 | D.PROVOST | 33/93/24/16 |
-| 3 | LINTERCEPTOR | 17 | 10 | V.DUPONT | 100/25/199/– |
-| 10 | INVICTUS GLADIATOR | 20 | 20 | D.VIRGILIO | 332/32/10/729 |
-| 5 | LORENZO | 21 | 14 | T.TRULLIER | 21/100/13/87 |
-| 11 | SHAARWIN | 22 | 21 | F.VERON | 24/175/–/1914 |
-| 1 | BINOTTO | 27 | 14 | P.LE DIGABEL | 106/49/19/7 |
+| 3 | LINTERCEPTOR | 16 | 10 | V.DUPONT | 100/25/199/– |
+| 5 | LORENZO | 20 | 14 | T.TRULLIER | 21/100/13/87 |
+| 11 | SHAARWIN | 20 | 21 | F.VERON | 24/175/–/1914 |
+| 10 | INVICTUS GLADIATOR | 21 | 20 | D.VIRGILIO | 332/32/10/729 |
+| 1 | BINOTTO | 25 | 14 | P.LE DIGABEL | 106/49/19/7 |
 
 ### 5. PRIX DE LA ROSERAIE
 
