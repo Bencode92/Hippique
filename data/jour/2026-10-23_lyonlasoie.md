@@ -99,21 +99,21 @@
 
 ### 6. PRIX DROIT DIVIN
 
-*18h40 · plat · 2400 m · 11 partants · cotes à T−17:11*
+*18h40 · plat · 2400 m · 11 partants · cotes à T−13:11*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 3 | MAGNUS | 2,9 | 3,2 | M.GRANDIN | 3/66/195/47 |
-| 1 | CANDIZAL | 4 | 4,3 | D.PROVOST 5e | 33/1/–/1 |
-| 10 | AMILA | 8,8 | 12 | D.VIRGILIO | 332/32/250/1225 |
-| 7 | ENDORPHIN | 9,3 | 7,3 | K.BRAYE | –/217/3945/747 |
-| 5 | INTER GLORY | 16 | 17 | A.ORANI | 5/48/661/5032 |
-| 6 | PEGASUS D'AZUR | 16 | 14 | B.FLANDRIN | 102/307/2787/3847 |
-| 11 | MOTRAFF | 18 | 12 | R.THOMAS | 75/11/2057/426 |
-| 8 | GAITA | 22 | 21 | B.MARIE | 69/445/3175/– |
-| 2 | SOHAR | 23 | 18 | T.TRULLIER | 21/370/1695/2555 |
+| 3 | MAGNUS | 3,1 | 3,2 | M.GRANDIN | 3/66/195/47 |
+| 1 | CANDIZAL | 3,8 | 4,3 | D.PROVOST 5e | 33/1/–/1 |
+| 10 | AMILA | 8,6 | 12 | D.VIRGILIO | 332/32/250/1225 |
+| 7 | ENDORPHIN | 9,5 | 7,3 | K.BRAYE | –/217/3945/747 |
+| 5 | INTER GLORY | 17 | 17 | A.ORANI | 5/48/661/5032 |
+| 6 | PEGASUS D'AZUR | 17 | 14 | B.FLANDRIN | 102/307/2787/3847 |
+| 11 | MOTRAFF | 17 | 12 | R.THOMAS | 75/11/2057/426 |
+| 2 | SOHAR | 20 | 18 | T.TRULLIER | 21/370/1695/2555 |
+| 8 | GAITA | 21 | 21 | B.MARIE | 69/445/3175/– |
 | 4 | FANTASTIC FIGHTER | 27 | 20 | G.SIAS | 96/155/820/786 |
-| 9 | KAILALI | 31 | 45 | F.VERON | 24/413/2848/4431 |
+| 9 | KAILALI | 27 | 45 | F.VERON | 24/413/2848/4431 |
 
 ### 7. PRIX DES JUNIORS
 
