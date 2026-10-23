@@ -1,6 +1,6 @@
 # LYON LA SOIE — 23/10/2026
 
-8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -25,22 +25,22 @@
 
 ### 2. PRIX DE SAINT RAMBERT-L'ILE-BARBE
 
-*16h20 · plat · 2150 m · 12 partants · cotes de l'extraction*
+*16h20 · plat · 2150 m · 12 partants · cotes à T−29:42*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 9 | SECOND TO NONE | 6 | T.TRULLIER | 21/290/3269/391 |
-| 1 | SPIRIT GREY | 6,6 | A.ORANI | 5/33/187/231 |
-| 2 | LOS SUENOS | 6,6 | B.MARIE | 69/155/1565/1904 |
-| 10 | PARVA SCURRA | 8,5 | H.BESNIER | 12/546/3105/1508 |
-| 3 | FETE JOYEUSE | 9,5 | M.GRANDIN | 3/223/1414/2398 |
-| 14 | CALAS QUEEN | 9,9 | F.VERON | 24/592/1600/2324 |
-| 4 | PUMPY GIRL | 10 | V.DUPONT | 100/223/672/285 |
-| 5 | INSPIRADO | 10 | C.PACAUT | 48/708/59/3556 |
-| 8 | RIDWAAN | 20 | B.FLANDRIN | 102/263/2/368 |
-| 12 | GRACEHILL | 25 | S.AKARI-SOUIDANE | 112/512/118/1553 |
-| 7 | BRONTE SISTER | 31 | E.PUILLET-RODA | 73/304/2036/489 |
-| 13 | VENT DU REVE | 31 | S.ST LARY LEROY | 163/304/3008/489 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 9 | SECOND TO NONE | 4,2 | 6 | T.TRULLIER | 21/290/3269/391 |
+| 2 | LOS SUENOS | 7,7 | 6,6 | B.MARIE | 69/155/1565/1904 |
+| 1 | SPIRIT GREY | 8 | 6,6 | A.ORANI | 5/33/187/231 |
+| 3 | FETE JOYEUSE | 8 | 9,5 | M.GRANDIN | 3/223/1414/2398 |
+| 5 | INSPIRADO | 9,1 | 10 | C.PACAUT | 48/708/59/3556 |
+| 4 | PUMPY GIRL | 11 | 10 | V.DUPONT | 100/223/672/285 |
+| 10 | PARVA SCURRA | 11 | 8,5 | H.BESNIER | 12/546/3105/1508 |
+| 14 | CALAS QUEEN | 13 | 9,9 | F.VERON | 24/592/1600/2324 |
+| 8 | RIDWAAN | 20 | 20 | B.FLANDRIN | 102/263/2/368 |
+| 13 | VENT DU REVE | 21 | 31 | S.ST LARY LEROY | 163/304/3008/489 |
+| 12 | GRACEHILL | 26 | 25 | S.AKARI-SOUIDANE | 112/512/118/1553 |
+| 7 | BRONTE SISTER | 30 | 31 | E.PUILLET-RODA | 73/304/2036/489 |
 
 ### 3. PRIX DE CONFLUENCE
 
