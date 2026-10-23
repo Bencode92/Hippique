@@ -117,17 +117,17 @@
 
 ### 7. PRIX DES JUNIORS
 
-*19h15 · plat · 2400 m · 7 partants · cotes à T−8:51*
+*19h15 · plat · 2400 m · 7 partants · cotes à T−5:31*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 2 | WARHOLM | 2,1 | 1,7 | G.SIAS | 96/19/54/1733 |
-| 4 | LEIA ORGANA | 3,3 | 5,6 | V.DUPONT | 100/5/19/7 |
-| 5 | MARANELLO | 7,7 | 6,3 | P.LE DIGABEL | 106/169/242/– |
-| 3 | WALERICO | 9,6 | 13 | G.SEIGNEUL | 193/176/688/2373 |
-| 6 | CARRERA | 14 | 11 | T.LE GRAET | 261/169/111/672 |
-| 7 | SECRET QUEEN | 26 | 31 | M.CABAL | 127/261/608/3636 |
-| 1 | FARES | 34 | 20 | K.GAUDEFFROY | 129/25/516/375 |
+| 2 | WARHOLM | 1,7 | 1,7 | G.SIAS | 96/19/54/1733 |
+| 4 | LEIA ORGANA | 4 | 5,6 | V.DUPONT | 100/5/19/7 |
+| 5 | MARANELLO | 7,6 | 6,3 | P.LE DIGABEL | 106/169/242/– |
+| 3 | WALERICO | 11 | 13 | G.SEIGNEUL | 193/176/688/2373 |
+| 6 | CARRERA | 20 | 11 | T.LE GRAET | 261/169/111/672 |
+| 7 | SECRET QUEEN | 32 | 31 | M.CABAL | 127/261/608/3636 |
+| 1 | FARES | 46 | 20 | K.GAUDEFFROY | 129/25/516/375 |
 
 ### 8. PRIX DES PENTES DE LA CROIX-ROUSSE
 
