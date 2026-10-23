@@ -4,53 +4,53 @@
   "reunion": 5,
   "heure_depart": 1792767300000,
   "distance": 2150,
-  "scraped_at": "2026-10-23T16:25:37.815671+02:00",
-  "minutes_avant_depart": 29,
+  "scraped_at": "2026-10-23T16:29:38.131726+02:00",
+  "minutes_avant_depart": 25,
   "participants": [
     {
       "numPmu": 1,
       "nom": "BOIS REGNY",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792765529000
+      "timestamp_cote": 1792765771000
     },
     {
       "numPmu": 2,
       "nom": "ARTURO",
-      "cote_live": 4.4,
+      "cote_live": 4.7,
       "cote_reference": 4.3,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792765529000
+      "timestamp_cote": 1792765771000
     },
     {
       "numPmu": 3,
       "nom": "BEST SHALAA",
-      "cote_live": 5.5,
+      "cote_live": 5.7,
       "cote_reference": 5.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792765529000
+      "timestamp_cote": 1792765771000
     },
     {
       "numPmu": 4,
       "nom": "WALDKAUZ",
-      "cote_live": 14.0,
+      "cote_live": 16.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792765529000
+      "timestamp_cote": 1792765771000
     },
     {
       "numPmu": 5,
       "nom": "SIR WALTER",
-      "cote_live": 21.0,
+      "cote_live": 18.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792765529000
+      "timestamp_cote": 1792765771000
     },
     {
       "numPmu": 6,
@@ -59,52 +59,52 @@
       "cote_reference": 4.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792765529000
+      "timestamp_cote": 1792765771000
     },
     {
       "numPmu": 8,
       "nom": "BIALYSTOK",
-      "cote_live": 33.0,
+      "cote_live": 37.0,
       "cote_reference": 34.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792765529000
+      "timestamp_cote": 1792765771000
     },
     {
       "numPmu": 9,
       "nom": "JAGDA",
-      "cote_live": 35.0,
+      "cote_live": 32.0,
       "cote_reference": 44.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792765529000
+      "timestamp_cote": 1792765771000
     },
     {
       "numPmu": 10,
       "nom": "MASINDHAL",
-      "cote_live": 28.0,
+      "cote_live": 21.0,
       "cote_reference": 28.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792765529000
+      "timestamp_cote": 1792765771000
     },
     {
       "numPmu": 11,
       "nom": "AGOUREIL",
-      "cote_live": 14.0,
+      "cote_live": 13.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792765529000
+      "timestamp_cote": 1792765771000
     },
     {
       "numPmu": 12,
       "nom": "CASCADEO",
-      "cote_live": 22.0,
+      "cote_live": 21.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792765529000
+      "timestamp_cote": 1792765771000
     },
     {
       "numPmu": 13,
@@ -113,16 +113,16 @@
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792765529000
+      "timestamp_cote": 1792765771000
     },
     {
       "numPmu": 14,
       "nom": "INDIAN SUNSET",
-      "cote_live": 29.0,
+      "cote_live": 23.0,
       "cote_reference": 30.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792765529000
+      "timestamp_cote": 1792765771000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -144,6 +144,25 @@
         "12": 22.0,
         "13": 10.0,
         "14": 29.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-23T16:29:38.131726+02:00",
+      "minutes_avant_depart": 25.373715049999998,
+      "cotes": {
+        "1": 14.0,
+        "2": 4.7,
+        "3": 5.7,
+        "4": 16.0,
+        "5": 18.0,
+        "6": 4.8,
+        "8": 37.0,
+        "9": 32.0,
+        "10": 21.0,
+        "11": 13.0,
+        "12": 21.0,
+        "13": 10.0,
+        "14": 23.0
       }
     }
   ]

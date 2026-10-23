@@ -44,23 +44,23 @@
 
 ### 3. PRIX DE CONFLUENCE
 
-*16h55 · plat · 2150 m · 13 partants · cotes à T−29:22*
+*16h55 · plat · 2150 m · 13 partants · cotes à T−25:22*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 2 | ARTURO | 4,4 | 7,1 | A.ORANI | 5/148/1/913 |
+| 2 | ARTURO | 4,7 | 7,1 | A.ORANI | 5/148/1/913 |
 | 6 | VIZINDI | 4,8 | 2,6 | B.FLANDRIN | 102/217/95/747 |
-| 3 | BEST SHALAA | 5,5 | 6,9 | M.GRANDIN | 3/33/46/4 |
+| 3 | BEST SHALAA | 5,7 | 6,9 | M.GRANDIN | 3/33/46/4 |
 | 13 | MOWGLI | 10 | 21 | D.PROVOST | 33/464/53/1232 |
-| 1 | BOIS REGNY | 13 | 15 | F.VERON | 24/160/652/600 |
-| 4 | WALDKAUZ | 14 | 15 | V.DUPONT | 100/93/1066/1089 |
-| 11 | AGOUREIL | 14 | 24 | T.TRULLIER | 21/160/7/2820 |
-| 5 | SIR WALTER | 21 | 17 | C.PACAUT | 48/155/734/1104 |
-| 12 | CASCADEO | 22 | 29 | B.MARIE | 69/315/1725/481 |
-| 10 | MASINDHAL | 28 | 26 | H.BESNIER | 12/93/360/774 |
-| 14 | INDIAN SUNSET | 29 | 18 | G.SIAS | 96/155/25/1950 |
-| 8 | BIALYSTOK | 33 | 22 | A.NICCO | 167/213/167/4092 |
-| 9 | JAGDA | 35 | 33 | A.GIREL | 114/321/10/509 |
+| 11 | AGOUREIL | 13 | 24 | T.TRULLIER | 21/160/7/2820 |
+| 1 | BOIS REGNY | 14 | 15 | F.VERON | 24/160/652/600 |
+| 4 | WALDKAUZ | 16 | 15 | V.DUPONT | 100/93/1066/1089 |
+| 5 | SIR WALTER | 18 | 17 | C.PACAUT | 48/155/734/1104 |
+| 10 | MASINDHAL | 21 | 26 | H.BESNIER | 12/93/360/774 |
+| 12 | CASCADEO | 21 | 29 | B.MARIE | 69/315/1725/481 |
+| 14 | INDIAN SUNSET | 23 | 18 | G.SIAS | 96/155/25/1950 |
+| 9 | JAGDA | 32 | 33 | A.GIREL | 114/321/10/509 |
+| 8 | BIALYSTOK | 37 | 22 | A.NICCO | 167/213/167/4092 |
 
 ### 4. PRIX DU HARAS DE POUJUX
 
