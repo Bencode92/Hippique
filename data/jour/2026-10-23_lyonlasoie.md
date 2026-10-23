@@ -1,6 +1,6 @@
 # LYON LA SOIE — 23/10/2026
 
-8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -64,21 +64,21 @@
 
 ### 4. PRIX DU HARAS DE POUJUX
 
-*17h30 · plat · 1800 m · 11 partants · cotes de l'extraction*
+*17h30 · plat · 1800 m · 11 partants · cotes à T−29:51*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 2 | CORBUSIER | 3,6 | H.BESNIER | 12/5/19/7 |
-| 4 | ALPSEE | 7,4 | M.GRANDIN | 3/4/25/28 |
-| 7 | BARSAC | 8,1 | R.THOMAS | 75/11/–/469 |
-| 6 | BEST FIGHTER | 9,4 | B.MARIE | 69/176/793/4932 |
-| 3 | LINTERCEPTOR | 10 | V.DUPONT | 100/25/199/– |
-| 8 | RUN LIWAY | 10 | D.PROVOST | 33/93/24/16 |
-| 9 | NAQOURA | 13 | A.ORANI 3e | 5/25/862/375 |
-| 1 | BINOTTO | 14 | P.LE DIGABEL | 106/49/19/7 |
-| 5 | LORENZO | 14 | T.TRULLIER | 21/100/13/87 |
-| 10 | INVICTUS GLADIATOR | 20 | D.VIRGILIO | 332/32/10/729 |
-| 11 | SHAARWIN | 21 | F.VERON | 24/175/–/1914 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 2 | CORBUSIER | 3,4 | 3,6 | H.BESNIER | 12/5/19/7 |
+| 4 | ALPSEE | 6,6 | 7,4 | M.GRANDIN | 3/4/25/28 |
+| 6 | BEST FIGHTER | 7,1 | 9,4 | B.MARIE | 69/176/793/4932 |
+| 7 | BARSAC | 8,5 | 8,1 | R.THOMAS | 75/11/–/469 |
+| 8 | RUN LIWAY | 12 | 10 | D.PROVOST | 33/93/24/16 |
+| 3 | LINTERCEPTOR | 14 | 10 | V.DUPONT | 100/25/199/– |
+| 9 | NAQOURA | 14 | 13 | A.ORANI 3e | 5/25/862/375 |
+| 5 | LORENZO | 16 | 14 | T.TRULLIER | 21/100/13/87 |
+| 1 | BINOTTO | 17 | 14 | P.LE DIGABEL | 106/49/19/7 |
+| 10 | INVICTUS GLADIATOR | 20 | 20 | D.VIRGILIO | 332/32/10/729 |
+| 11 | SHAARWIN | 20 | 21 | F.VERON | 24/175/–/1914 |
 
 ### 5. PRIX DE LA ROSERAIE
 
