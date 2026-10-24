@@ -1,6 +1,6 @@
 # COMPIEGNE — 24/10/2026
 
-8 courses. 6 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 7 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -107,34 +107,34 @@
 
 ### 7. PRIX DE BESANCON
 
-*17h35 · haies · 3600 m · 8 partants · cotes à T−1:29*
+*17h35 · haies · 3600 m · 8 partants · cotes à T−0:09*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 4 | ILLUSION MACHINE | 2,4 | 3,2 | J.REVELEY | –/438/344/1246 |
-| 3 | OLYMPIC STORY | 6,2 | 10 | A.ZULIANI | 165/288/2740/9 |
-| 5 | GARDIEN DE MUSEE | 6,2 | 5,6 | G.MEUNIER | 337/410/182/9 |
-| 7 | ANATOLE | 9,3 | 5,4 | T.BEAURAIN | 267/600/5/248 |
-| 8 | AL FONCE | 9,5 | 7,5 | L.BRECHET | 50/438/947/– |
-| 2 | STYLE D'EMIRS | 11 | 11 | A.CHESNEAU | 258/410/1640/898 |
-| 1 | GALLIPOLI | 16 | 8,8 | J.HONDIER | 438/438/153/228 |
-| 6 | CAF'CONC | 19 | 27 | A.DUVACHER | 409/630/881/4025 |
+| 4 | ILLUSION MACHINE | 2,3 | 3,2 | J.REVELEY | –/438/344/1246 |
+| 5 | GARDIEN DE MUSEE | 5,8 | 5,6 | G.MEUNIER | 337/410/182/9 |
+| 3 | OLYMPIC STORY | 7,1 | 10 | A.ZULIANI | 165/288/2740/9 |
+| 8 | AL FONCE | 8,9 | 7,5 | L.BRECHET | 50/438/947/– |
+| 7 | ANATOLE | 10 | 5,4 | T.BEAURAIN | 267/600/5/248 |
+| 6 | CAF'CONC | 13 | 27 | A.DUVACHER | 409/630/881/4025 |
+| 2 | STYLE D'EMIRS | 14 | 11 | A.CHESNEAU | 258/410/1640/898 |
+| 1 | GALLIPOLI | 20 | 8,8 | J.HONDIER | 438/438/153/228 |
 
 ### 8. PRIX CERILLY
 
-*18h10 · steeple · 3450 m · 12 partants · cotes de l'extraction*
+*18h10 · steeple · 3450 m · 12 partants · cotes à T−29:30*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | MACARENA DU RIB | 5,4 | Q.DEFONTAINE | –/453/–/526 |
-| 12 | CIEL MON CASTOR | 6,1 | F.GILES | –/370/1270/5005 |
-| 10 | MIKI BILLY | 6,7 | T.BEAURAIN | 267/376/2538/3777 |
-| 8 | MEC DE LA BARRIERE | 8,9 | THO .JOURNIAC | 238/232/2812/4714 |
-| 2 | DIAMANT DU RHEU | 9,8 | A.ZULIANI | 165/288/1374/4714 |
-| 3 | NEVER SEEN | 9,8 | K.DUBOURG | 357/453/–/2187 |
-| 6 | DANCE ALL NIGHT | 11 | L.PHILIPPERON | 269/370/69/97 |
-| 4 | LEWIS GREY | 15 | J.CHARRON | –/43/129/43 |
-| 11 | POPY | 17 | B.LE CLERC | 210/157/3595/5119 |
-| 5 | THE PRINCE | 22 | A.LEPAGE | 377/474/344/2720 |
-| 7 | MALESSIA | 22 | T.CHEVILLARD | 156/43/1699/2311 |
-| 9 | MON AUDACE | 31 | G.SANCHEZ | 128/459/–/4 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 12 | CIEL MON CASTOR | 4,6 | 6,1 | F.GILES | –/370/1270/5005 |
+| 1 | MACARENA DU RIB | 7,1 | 5,4 | Q.DEFONTAINE | –/453/–/526 |
+| 8 | MEC DE LA BARRIERE | 8,9 | 8,9 | THO .JOURNIAC | 238/232/2812/4714 |
+| 10 | MIKI BILLY | 9,6 | 6,7 | T.BEAURAIN | 267/376/2538/3777 |
+| 4 | LEWIS GREY | 10 | 15 | J.CHARRON | –/43/129/43 |
+| 5 | THE PRINCE | 11 | 22 | A.LEPAGE | 377/474/344/2720 |
+| 7 | MALESSIA | 12 | 22 | T.CHEVILLARD | 156/43/1699/2311 |
+| 3 | NEVER SEEN | 13 | 9,8 | K.DUBOURG | 357/453/–/2187 |
+| 6 | DANCE ALL NIGHT | 13 | 11 | L.PHILIPPERON | 269/370/69/97 |
+| 2 | DIAMANT DU RHEU | 14 | 9,8 | A.ZULIANI | 165/288/1374/4714 |
+| 11 | POPY | 14 | 17 | B.LE CLERC | 210/157/3595/5119 |
+| 9 | MON AUDACE | 50 | 31 | G.SANCHEZ | 128/459/–/4 |
