@@ -62,15 +62,15 @@
 
 ### 4. PRIX VATELYS
 
-*15h50 · steeple · 3450 m · 7 partants · cotes à T−29:59*
+*15h50 · steeple · 3450 m · 7 partants · cotes à T−25:58*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 3 | NORTHMAN | 3,5 | 3,6 | A.ZULIANI | 165/288/–/5279 |
-| 1 | MOSSDAM | 3,7 | 3,3 | G.MASURE | 226/380/2209/2646 |
-| 4 | VANEADI | 6,2 | 6 | L.BRECHET | 50/438/–/2245 |
+| 3 | NORTHMAN | 3,6 | 3,6 | A.ZULIANI | 165/288/–/5279 |
+| 1 | MOSSDAM | 3,8 | 3,3 | G.MASURE | 226/380/2209/2646 |
+| 4 | VANEADI | 6,1 | 6 | L.BRECHET | 50/438/–/2245 |
 | 2 | SOMMERKONIG | 6,7 | 5,8 | F.GILES | –/438/903/878 |
-| 7 | NOVALLY | 7,8 | 11 | L.ZULIANI | 115/438/690/– |
+| 7 | NOVALLY | 7,5 | 11 | L.ZULIANI | 115/438/690/– |
 | 6 | DOUBLE BE | 9,4 | 9,2 | K.DUBOURG | 357/453/–/526 |
 | 5 | NEVER GIVE UP THOM | 21 | 30 | THO .JOURNIAC | 238/408/1494/5279 |
 

@@ -4,71 +4,71 @@
   "reunion": 1,
   "heure_depart": 1792849800000,
   "distance": 3450,
-  "scraped_at": "2026-10-24T15:20:01.405462+02:00",
-  "minutes_avant_depart": 30,
+  "scraped_at": "2026-10-24T15:24:01.812726+02:00",
+  "minutes_avant_depart": 26,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MOSSDAM",
-      "cote_live": 3.7,
-      "cote_reference": 2.8,
+      "cote_live": 3.8,
+      "cote_reference": 3.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847744000
+      "timestamp_cote": 1792848220000
     },
     {
       "numPmu": 2,
       "nom": "SOMMERKONIG",
       "cote_live": 6.7,
-      "cote_reference": 10.0,
+      "cote_reference": 6.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847744000
+      "timestamp_cote": 1792848220000
     },
     {
       "numPmu": 3,
       "nom": "NORTHMAN",
-      "cote_live": 3.5,
-      "cote_reference": 3.4,
+      "cote_live": 3.6,
+      "cote_reference": 3.6,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792847744000
+      "timestamp_cote": 1792848220000
     },
     {
       "numPmu": 4,
       "nom": "VANEADI",
-      "cote_live": 6.2,
-      "cote_reference": 6.1,
+      "cote_live": 6.1,
+      "cote_reference": 6.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847744000
+      "timestamp_cote": 1792848220000
     },
     {
       "numPmu": 5,
       "nom": "NEVER GIVE UP THOM",
       "cote_live": 21.0,
-      "cote_reference": 24.0,
+      "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847744000
+      "timestamp_cote": 1792848220000
     },
     {
       "numPmu": 6,
       "nom": "DOUBLE BE",
       "cote_live": 9.4,
-      "cote_reference": 8.6,
+      "cote_reference": 9.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847744000
+      "timestamp_cote": 1792848220000
     },
     {
       "numPmu": 7,
       "nom": "NOVALLY",
-      "cote_live": 7.8,
-      "cote_reference": 12.0,
+      "cote_live": 7.5,
+      "cote_reference": 7.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847744000
+      "timestamp_cote": 1792848220000
     }
   ],
   "hippodrome": "COMPIEGNE",
@@ -84,6 +84,19 @@
         "5": 21.0,
         "6": 9.4,
         "7": 7.8
+      }
+    },
+    {
+      "scraped_at": "2026-10-24T15:24:01.812726+02:00",
+      "minutes_avant_depart": 25.973137883333333,
+      "cotes": {
+        "1": 3.8,
+        "2": 6.7,
+        "3": 3.6,
+        "4": 6.1,
+        "5": 21.0,
+        "6": 9.4,
+        "7": 7.5
       }
     }
   ]
