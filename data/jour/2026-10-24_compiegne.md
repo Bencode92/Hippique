@@ -76,16 +76,16 @@
 
 ### 5. PRIX DOMINIQUE SARTINI
 
-*16h25 · haies · 3600 m · 7 partants · cotes à T−12:30*
+*16h25 · haies · 3600 m · 7 partants · cotes à T−11:29*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 1 | SHABRACK | 4,5 | 4,6 | L.PHILIPPERON | 269/370/748/228 |
-| 6 | MADISON ROQUE | 4,6 | 4,1 | K.NABET | 390/438/1213/4564 |
-| 7 | KILLING BID | 5,2 | 4,2 | M.BEHOCARAY | 404/739/201/2219 |
-| 5 | KILL PASS | 5,3 | 6,1 | L.BRECHET | 50/283/2044/9 |
+| 1 | SHABRACK | 4,4 | 4,6 | L.PHILIPPERON | 269/370/748/228 |
+| 6 | MADISON ROQUE | 4,8 | 4,1 | K.NABET | 390/438/1213/4564 |
+| 5 | KILL PASS | 5,5 | 6,1 | L.BRECHET | 50/283/2044/9 |
+| 7 | KILLING BID | 5,5 | 4,2 | M.BEHOCARAY | 404/739/201/2219 |
 | 2 | BOYSTONE | 6,8 | 9,4 | A.ZULIANI | 165/288/2811/3245 |
-| 3 | FANFARON | 9,5 | 11 | N.FERREIRA | 489/376/675/2087 |
+| 3 | FANFARON | 8,6 | 11 | N.FERREIRA | 489/376/675/2087 |
 | 4 | FRECKLES | 13 | 12 | J.PHELIPPE | 330/91/713/5148 |
 
 ### 6. GRAND STEEPLE-CHASE DE COMPIEGNE
