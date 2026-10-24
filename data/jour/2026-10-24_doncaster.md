@@ -29,13 +29,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 6 | NOBLE EXHIBIT | 2,7 | RYAN MOORE | 151/3/–/523 |
-| 1 | AL HUDAIBA | 3,1 | WILLIAM BUICK | 168/101/–/46 |
-| 3 | BURNING UP | 7,1 | CLIFFORD LEE | 246/42/–/– |
-| 5 | GRAN DIA | 10 | OISIN MURPHY | 144/116/–/93 |
-| 4 | GIANT SEQUOIA | 12 | DYLAN BROWNE MCMONAGLE | 176/3/–/– |
-| 7 | SERGEI DIAGHILEV | 12 | W.M. LORDAN | 265/3/–/574 |
-| 2 | BREACHER | 19 | LEWIS EDMUNDS | 410/–/–/– |
+| 6 | NOBLE EXHIBIT | 3,5 | RYAN MOORE | 151/3/–/523 |
+| 1 | AL HUDAIBA | 3,6 | WILLIAM BUICK | 168/101/–/46 |
+| 7 | SERGEI DIAGHILEV | 5,9 | W.M. LORDAN | 265/3/–/574 |
+| 3 | BURNING UP | 6,4 | CLIFFORD LEE | 246/42/–/– |
+| 5 | GRAN DIA | 8,4 | OISIN MURPHY | 144/116/–/93 |
+| 4 | GIANT SEQUOIA | 9,4 | DYLAN BROWNE MCMONAGLE | 176/3/–/– |
+| 2 | BREACHER | 28 | LEWIS EDMUNDS | 410/–/–/– |
 
 ### 3. PROSPECT STAKES (LISTED RACE) (REGISTERED AS THE DONCASTER STAKES)
 
@@ -43,13 +43,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | BENGAL TIGER | 1,2 | RYAN MOORE | 151/3/–/574 |
-| 6 | CRYSTAL QUEEN | 8,7 | WILLIAM BUICK | 168/–/–/1566 |
-| 5 | BIG HITTER | 14 | P. J. MCDONALD | 256/–/–/381 |
-| 8 | ROGUE JEWEL | 20 | CIEREN FALLON | 321/221/–/2466 |
-| 3 | HI CORBETT COURT | 23 | W. J. LEE | 255/232/–/– |
-| 7 | ELEVATING | 23 | SEAN LEVEY | 266/279/–/1867 |
-| 4 | ANGELS PASSING | 33 | OISIN MURPHY | 144/337/–/– |
+| 1 | BENGAL TIGER | 2 | RYAN MOORE | 151/3/–/574 |
+| 3 | HI CORBETT COURT | 4,2 | W. J. LEE | 255/232/–/– |
+| 4 | ANGELS PASSING | 7,3 | OISIN MURPHY | 144/337/–/– |
+| 5 | BIG HITTER | 11 | P. J. MCDONALD | 256/–/–/381 |
+| 6 | CRYSTAL QUEEN | 12 | WILLIAM BUICK | 168/–/–/1566 |
+| 8 | ROGUE JEWEL | 15 | CIEREN FALLON | 321/221/–/2466 |
+| 7 | ELEVATING | 18 | SEAN LEVEY | 266/279/–/1867 |
 
 ### 4. NURSERY HANDICAP (CLASS 3)
 
@@ -57,10 +57,10 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | NATIONAL HONOUR | 1,4 | WILLIAM BUICK | 168/101/–/46 |
-| 2 | SHADOW KING | 3,7 | SEAN LEVEY | 266/279/–/– |
-| 4 | ROCK STEADY BEAT | 11 | CONNOR PLANAS | –/42/–/– |
-| 3 | SCIENZA | 12 | NICOLA CURRIE | –/116/–/– |
+| 1 | NATIONAL HONOUR | 2 | WILLIAM BUICK | 168/101/–/46 |
+| 4 | ROCK STEADY BEAT | 4,1 | CONNOR PLANAS | –/42/–/– |
+| 3 | SCIENZA | 4,6 | NICOLA CURRIE | –/116/–/– |
+| 2 | SHADOW KING | 5,5 | SEAN LEVEY | 266/279/–/– |
 
 ### 5. HANDICAP (CLASS 3)
 
@@ -68,16 +68,16 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 4 | SHIPBOURNE | 1,7 | ROSSA RYAN | 215/158/–/– |
-| 5 | ANYASI | 5,9 | RAY DAWSON | 315/510/–/– |
-| 11 | ON THE RIVER | 11 | SEAN DYLAN BOWEN | –/–/–/– |
-| 3 | CAVOLO NERO | 12 | OISIN MURPHY | 144/259/–/– |
-| 2 | RIVER KING | 20 | SEAN LEVEY | 266/279/–/– |
-| 6 | MR PROFESSOR | 20 | D. EGAN | 312/358/–/63 |
-| 9 | MONOCEROS | 20 | ANDREW MULLEN | –/–/–/– |
-| 10 | LIR SPECIALE | 31 | WILLIAM BUICK | 168/424/–/1094 |
-| 7 | ANDESITE | 62 | DAVID NOLAN | –/–/–/– |
-| 8 | DESPERATE DAN | 62 | PAUL MULRENNAN | –/866/–/– |
+| 4 | SHIPBOURNE | 3,2 | ROSSA RYAN | 215/158/–/– |
+| 3 | CAVOLO NERO | 7 | OISIN MURPHY | 144/259/–/– |
+| 5 | ANYASI | 8,1 | RAY DAWSON | 315/510/–/– |
+| 10 | LIR SPECIALE | 8,4 | WILLIAM BUICK | 168/424/–/1094 |
+| 11 | ON THE RIVER | 10 | SEAN DYLAN BOWEN | –/–/–/– |
+| 2 | RIVER KING | 11 | SEAN LEVEY | 266/279/–/– |
+| 8 | DESPERATE DAN | 11 | PAUL MULRENNAN | –/866/–/– |
+| 7 | ANDESITE | 15 | DAVID NOLAN | –/–/–/– |
+| 9 | MONOCEROS | 18 | ANDREW MULLEN | –/–/–/– |
+| 6 | MR PROFESSOR | 19 | D. EGAN | 312/358/–/63 |
 
 ### 6. HANDICAP (CLASS 2)
 
@@ -85,20 +85,20 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | CASTLEMONT | 2 | WILLIAM BUICK | 168/101/–/46 |
-| 14 | WAHDAN | 9,9 | DAVID ALLAN | 317/539/–/– |
-| 4 | BUNYOLA BAY | 11 | SEAN LEVEY | 266/279/–/– |
-| 5 | PRINCIPALITY | 12 | P. J. MCDONALD | 256/259/–/– |
-| 12 | HAVE SECRET | 13 | CAM HARDIE | –/–/–/– |
-| 3 | ULTRASOUL | 17 | RAY DAWSON | 315/510/–/5300 |
-| 6 | SHAFDAR | 17 | EDWARD GREATREX | 414/599/–/– |
-| 13 | DEVIL'S PEAK | 23 | BENOIT DE LA SAYETTE | –/55/–/2465 |
-| 15 | GALYX | 23 | GEORGE BASS | 367/861/–/– |
-| 8 | CITY OF DELIGHT | 34 | CIEREN FALLON | 321/150/–/– |
-| 9 | A MAJOR PAYNE | 34 | OISIN MURPHY | 144/657/–/– |
-| 16 | PEARL EYE | 34 | RHYS ELLIOTT | –/–/–/– |
-| 7 | JANEY MACKERS | 69 | ROSSA RYAN | 215/150/–/3252 |
-| 10 | MUSTAZEED | 69 | ALISTAIR RAWLINSON | –/–/–/– |
+| 2 | CASTLEMONT | 2,8 | WILLIAM BUICK | 168/101/–/46 |
+| 4 | BUNYOLA BAY | 5,9 | SEAN LEVEY | 266/279/–/– |
+| 14 | WAHDAN | 8,2 | DAVID ALLAN | 317/539/–/– |
+| 13 | DEVIL'S PEAK | 11 | BENOIT DE LA SAYETTE | –/55/–/2465 |
+| 3 | ULTRASOUL | 14 | RAY DAWSON | 315/510/–/5300 |
+| 12 | HAVE SECRET | 16 | CAM HARDIE | –/–/–/– |
+| 15 | GALYX | 16 | GEORGE BASS | 367/861/–/– |
+| 5 | PRINCIPALITY | 18 | P. J. MCDONALD | 256/259/–/– |
+| 6 | SHAFDAR | 25 | EDWARD GREATREX | 414/599/–/– |
+| 8 | CITY OF DELIGHT | 25 | CIEREN FALLON | 321/150/–/– |
+| 16 | PEARL EYE | 25 | RHYS ELLIOTT | –/–/–/– |
+| 9 | A MAJOR PAYNE | 50 | OISIN MURPHY | 144/657/–/– |
+| 7 | JANEY MACKERS | 100 | ROSSA RYAN | 215/150/–/3252 |
+| 10 | MUSTAZEED | 100 | ALISTAIR RAWLINSON | –/–/–/– |
 
 ### 7. DONCASTER RACECOURSE HANDICAP (CLASS 4) - DIV 1
 
@@ -106,17 +106,17 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 5 | SALAM DUBAWI | 1,1 | PAUL MULRENNAN | –/–/–/– |
-| 1 | IT JUST TAKES TIME | 15 | JACK GARRITTY | –/–/–/– |
-| 6 | CROWN OFFICE | 15 | CIEREN FALLON | 321/24/–/621 |
-| 8 | QUEST FOR FUN | 15 | DAVID ALLAN | 317/539/–/– |
-| 3 | TERRITORIAL KNIGHT | 47 | TOM EAVES | 486/337/–/– |
-| 9 | CEO STEALTH MODE | 47 | TOM KIELY-MARSHALL | –/–/–/– |
-| 10 | COTAI BELLE | 47 | ETHAN TINDALL | –/–/–/– |
-| 11 | CARGIN BHUI | 47 | JOANNA MASON | –/–/–/– |
-| 12 | BEALE STREET | 47 | OISIN MCSWEENEY | –/–/–/– |
+| 5 | SALAM DUBAWI | 1,3 | PAUL MULRENNAN | –/–/–/– |
+| 8 | QUEST FOR FUN | 10 | DAVID ALLAN | 317/539/–/– |
+| 6 | CROWN OFFICE | 13 | CIEREN FALLON | 321/24/–/621 |
+| 1 | IT JUST TAKES TIME | 17 | JACK GARRITTY | –/–/–/– |
+| 12 | BEALE STREET | 17 | OISIN MCSWEENEY | –/–/–/– |
+| 13 | GOLDEN PHARAOH | 26 | CHRISTIAN HOWARTH | –/–/–/– |
+| 3 | TERRITORIAL KNIGHT | 53 | TOM EAVES | 486/337/–/– |
+| 9 | CEO STEALTH MODE | 53 | TOM KIELY-MARSHALL | –/–/–/– |
+| 10 | COTAI BELLE | 53 | ETHAN TINDALL | –/–/–/– |
+| 11 | CARGIN BHUI | 53 | JOANNA MASON | –/–/–/– |
 | 7 | SPY KINGDOM | – | TOM QUEALLY | –/–/–/– |
-| 13 | GOLDEN PHARAOH | – | CHRISTIAN HOWARTH | –/–/–/– |
 | 14 | ZARVALI | – | DAVID NOLAN | –/–/–/– |
 | 15 | TRUST AMY | – | CONNOR PLANAS | –/–/–/– |
 

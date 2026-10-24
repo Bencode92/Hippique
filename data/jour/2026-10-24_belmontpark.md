@@ -13,13 +13,13 @@
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
 | 9 | SAMARTINA | 2,5 | J LEZCANO | –/–/–/– |
-| 6 | BELLA KNOWS | 4,5 | M FRANCO | –/–/–/– |
-| 3 | RIVER TAY | 6 | D DAVIS | –/–/–/– |
-| 2 | HAUNTRESS | 9 | D A RIVERA | –/–/–/– |
-| 4 | CRAVINGS | 9 | R SANTANA, JR. | –/–/–/– |
-| 5 | MIDNIGHTLOVEAFFAIR | 12 | A FRESU | –/–/–/– |
-| 7 | OKLAHOMA SMOKE | 18 | F PRAT | –/–/–/– |
-| 1 | VOLUNTARY | – | K CARMOUCHE | –/–/–/– |
+| 6 | BELLA KNOWS | 5 | M FRANCO | –/–/–/– |
+| 5 | MIDNIGHTLOVEAFFAIR | 7,1 | A FRESU | –/–/–/– |
+| 3 | RIVER TAY | 8,3 | D DAVIS | –/–/–/– |
+| 2 | HAUNTRESS | 12 | D A RIVERA | –/–/–/– |
+| 4 | CRAVINGS | 12 | R SANTANA, JR. | –/–/–/– |
+| 7 | OKLAHOMA SMOKE | 12 | F PRAT | –/–/–/– |
+| 1 | VOLUNTARY | 25 | K CARMOUCHE | –/–/–/– |
 | 8 | SO SOPHIA | – | K DAVIS | –/–/–/– |
 
 ### 2. MAID OF THE MIST S.
@@ -28,11 +28,11 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 5 | B YUTIFUL CARLY | 3,3 | R SANTANA, JR. | –/–/–/803 |
-| 1 | DAVIDSON | 4,1 | M FRANCO | –/–/–/620 |
-| 3 | CASH BURN | 4,1 | F PRAT | –/–/–/– |
-| 4 | SUN KISSED BLISS | 4,1 | K CARMOUCHE | –/–/–/– |
-| 2 | FANTASY FORTUNE | 8,3 | E J ZAYAS | –/–/–/– |
+| 4 | SUN KISSED BLISS | 3 | K CARMOUCHE | –/–/–/– |
+| 5 | B YUTIFUL CARLY | 3,7 | R SANTANA, JR. | –/–/–/803 |
+| 1 | DAVIDSON | 4,6 | M FRANCO | –/–/–/620 |
+| 3 | CASH BURN | 4,6 | F PRAT | –/–/–/– |
+| 2 | FANTASY FORTUNE | 9,2 | E J ZAYAS | –/–/–/– |
 
 ### 3. IROQUOIS S.
 
@@ -54,9 +54,9 @@
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
 | 4 | GRAZIE | 1,8 | F PRAT | –/–/–/5309 |
-| 5 | IRON ORCHARD | 3,7 | M FRANCO | –/–/–/– |
-| 6 | RACING COLORS | 4,6 | H K HARKIE | –/–/–/– |
-| 2 | BERNIETAKESCHARGE | 9,2 | K CARMOUCHE | –/–/–/– |
+| 5 | IRON ORCHARD | 3,1 | M FRANCO | –/–/–/– |
+| 6 | RACING COLORS | 5,5 | H K HARKIE | –/–/–/– |
+| 2 | BERNIETAKESCHARGE | 11 | K CARMOUCHE | –/–/–/– |
 | 1 | BOXED WINE | – | R SANTANA, JR. | –/–/–/– |
 | 3 | VALTELLINA | – | D DAVIS | –/–/–/– |
 
@@ -66,12 +66,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 6 | GEORGE BRIGGS | 1,5 | F PRAT |
-| 4 | ANNEXPERIENCE | 3 | J ALVARADO |
-| 5 | CHUMMERS | 6,1 | D DAVIS |
+| 6 | GEORGE BRIGGS | 1,6 | F PRAT |
+| 3 | SPIRIT OF ST LOUIS | 4,8 | M FRANCO |
+| 4 | ANNEXPERIENCE | 4,8 | J ALVARADO |
+| 5 | CHUMMERS | 9,7 | D DAVIS |
 | 1 | SOUNDS LIKE A PLAN | – | R SANTANA, JR. |
 | 2 | FUNNY FACTOR | – | K CARMOUCHE |
-| 3 | SPIRIT OF ST LOUIS | – | M FRANCO |
 
 ### 6. NEW YORK FILLY AND MARE TURF SPRINT CHAMPIONSHIP S.
 
@@ -79,15 +79,15 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 3 | SHOOT IT TRUE | 1,9 | A FRESU | –/478/–/– |
-| 4 | BOSTON'S PHINEST | 5,7 | M FRANCO | –/–/–/– |
-| 6 | LATEST EDITION | 5,7 | M FERNANDEZ | –/–/–/– |
-| 8 | FAIRY GODMOTHER | 5,7 | D DAVIS | –/–/–/– |
-| 5 | HIGHWAY HARMONY | 11 | E J ZAYAS | –/–/–/– |
+| 3 | SHOOT IT TRUE | 2 | A FRESU | –/478/–/– |
+| 8 | FAIRY GODMOTHER | 4,1 | D DAVIS | –/–/–/– |
+| 4 | BOSTON'S PHINEST | 8,3 | M FRANCO | –/–/–/– |
+| 6 | LATEST EDITION | 8,3 | M FERNANDEZ | –/–/–/– |
+| 9 | ANNASCAUL | 8,3 | F PRAT | –/–/–/– |
+| 5 | HIGHWAY HARMONY | 16 | E J ZAYAS | –/–/–/– |
 | 1 | SWEET BROWN SUGAR | – | J ALVARADO | –/–/–/– |
 | 2 | SILSBEE | – | K CARMOUCHE | –/–/–/– |
 | 7 | KAZ FARM GIRL | – | D HADDOCK | –/–/–/– |
-| 9 | ANNASCAUL | – | F PRAT | –/–/–/– |
 
 ### 7. SLEEPY HOLLOW S.
 
@@ -95,13 +95,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | SCRAMJET | 1,9 | K CARMOUCHE |
-| 3 | COVERED OPTION | 5,7 | A FRESU |
-| 4 | PROFESSOR PLUM | 5,7 | M FRANCO |
-| 6 | INALIENABLE | 5,7 | R SANTANA, JR. |
-| 5 | HAMMERIN HENRY | 11 | S MARIN |
+| 1 | SCRAMJET | 2,7 | K CARMOUCHE |
+| 4 | PROFESSOR PLUM | 2,7 | M FRANCO |
+| 3 | COVERED OPTION | 8,3 | A FRESU |
+| 6 | INALIENABLE | 8,3 | R SANTANA, JR. |
+| 7 | BIG HANDSOME | 8,3 | F PRAT |
+| 5 | HAMMERIN HENRY | 16 | S MARIN |
 | 2 | FULLCUP | – | J ALVARADO |
-| 7 | BIG HANDSOME | – | F PRAT |
 | 8 | MIDNIGHT RAIDER | – | C ELLIOTT |
 
 ### 8. HUDSON S.
@@ -110,12 +110,12 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 9 | SCULCOS FOLLY | 2,8 | F PRAT | –/–/–/– |
-| 1 | BUTTAH | 5,7 | R SANTANA, JR. | –/–/–/– |
-| 6 | ACOUSTIC AVE | 5,7 | J LEZCANO | –/–/–/– |
-| 7 | THE WINE STEWARD | 5,7 | K CARMOUCHE | –/–/–/– |
-| 8 | SACROSANCT | 5,7 | M FRANCO | –/–/–/3618 |
-| 5 | FACTUALLY CORRECT | 11 | E J ZAYAS | –/–/–/– |
+| 9 | SCULCOS FOLLY | 2,4 | F PRAT | –/–/–/– |
+| 8 | SACROSANCT | 3,7 | M FRANCO | –/–/–/3618 |
+| 1 | BUTTAH | 7,4 | R SANTANA, JR. | –/–/–/– |
+| 6 | ACOUSTIC AVE | 7,4 | J LEZCANO | –/–/–/– |
+| 7 | THE WINE STEWARD | 7,4 | K CARMOUCHE | –/–/–/– |
+| 5 | FACTUALLY CORRECT | 14 | E J ZAYAS | –/–/–/– |
 | 2 | EL GRANDE O | – | A FRESU | –/–/–/– |
 | 3 | HIT THE POST | – | C ELLIOTT | –/–/–/– |
 | 4 | CALDO CANDY | – | S MARIN | –/–/–/– |
