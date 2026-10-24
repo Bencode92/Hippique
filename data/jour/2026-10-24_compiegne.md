@@ -76,17 +76,17 @@
 
 ### 5. PRIX DOMINIQUE SARTINI
 
-*16h25 · haies · 3600 m · 7 partants · cotes à T−25:09*
+*16h25 · haies · 3600 m · 7 partants · cotes à T−20:29*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 6 | MADISON ROQUE | 3,8 | 4,1 | K.NABET | 390/438/1213/4564 |
-| 1 | SHABRACK | 4,5 | 4,6 | L.PHILIPPERON | 269/370/748/228 |
-| 7 | KILLING BID | 4,5 | 4,2 | M.BEHOCARAY | 404/739/201/2219 |
-| 5 | KILL PASS | 6 | 6,1 | L.BRECHET | 50/283/2044/9 |
-| 2 | BOYSTONE | 9,4 | 9,4 | A.ZULIANI | 165/288/2811/3245 |
-| 3 | FANFARON | 11 | 11 | N.FERREIRA | 489/376/675/2087 |
-| 4 | FRECKLES | 12 | 12 | J.PHELIPPE | 330/91/713/5148 |
+| 1 | SHABRACK | 3,8 | 4,6 | L.PHILIPPERON | 269/370/748/228 |
+| 6 | MADISON ROQUE | 4,2 | 4,1 | K.NABET | 390/438/1213/4564 |
+| 7 | KILLING BID | 4,7 | 4,2 | M.BEHOCARAY | 404/739/201/2219 |
+| 5 | KILL PASS | 7,1 | 6,1 | L.BRECHET | 50/283/2044/9 |
+| 2 | BOYSTONE | 8,7 | 9,4 | A.ZULIANI | 165/288/2811/3245 |
+| 3 | FANFARON | 9 | 11 | N.FERREIRA | 489/376/675/2087 |
+| 4 | FRECKLES | 14 | 12 | J.PHELIPPE | 330/91/713/5148 |
 
 ### 6. GRAND STEEPLE-CHASE DE COMPIEGNE
 
