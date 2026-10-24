@@ -1,6 +1,6 @@
 # COMPIEGNE — 24/10/2026
 
-8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -27,16 +27,16 @@
 
 ### 2. PRIX D'IENA
 
-*14h33 · haies · 3400 m · 6 partants · cotes de l'extraction*
+*14h33 · haies · 3400 m · 6 partants · cotes à T−13:58*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | MAGIC DES CHARMES | 2,3 | J.REVELEY | –/438/88/141 |
-| 6 | MAHADEVI | 3,8 | F.GILES | –/438/–/– |
-| 4 | LA TURBIE | 6,8 | B.LE CLERC | 210/31/69/97 |
-| 5 | ALMARITA | 7,2 | L.PHILIPPERON | 269/91/13/87 |
-| 2 | PURPLE POWER | 8,8 | T.CHEVILLARD | 156/43/388/1798 |
-| 3 | ZOOK | 21 | BR.LE CLERC | 210/369/624/– |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 1 | MAGIC DES CHARMES | 2,3 | 2,3 | J.REVELEY | –/438/88/141 |
+| 6 | MAHADEVI | 4,1 | 3,8 | F.GILES | –/438/–/– |
+| 5 | ALMARITA | 6,3 | 7,2 | L.PHILIPPERON | 269/91/13/87 |
+| 4 | LA TURBIE | 6,7 | 6,8 | B.LE CLERC | 210/31/69/97 |
+| 2 | PURPLE POWER | 8,7 | 8,8 | T.CHEVILLARD | 156/43/388/1798 |
+| 3 | ZOOK | 23 | 21 | BR.LE CLERC | 210/369/624/– |
 
 ### 3. PRIX DE BEAUNE
 
