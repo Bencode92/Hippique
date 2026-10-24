@@ -4,26 +4,26 @@
   "reunion": 1,
   "heure_depart": 1792845480000,
   "distance": 3400,
-  "scraped_at": "2026-10-24T14:24:01.699310+02:00",
-  "minutes_avant_depart": 14,
+  "scraped_at": "2026-10-24T14:28:41.673009+02:00",
+  "minutes_avant_depart": 9,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MAGIC DES CHARMES",
-      "cote_live": 2.3,
+      "cote_live": 2.7,
       "cote_reference": 2.0,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792844629000
+      "timestamp_cote": 1792844915000
     },
     {
       "numPmu": 2,
       "nom": "PURPLE POWER",
-      "cote_live": 8.7,
+      "cote_live": 7.0,
       "cote_reference": 9.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792844629000
+      "timestamp_cote": 1792844915000
     },
     {
       "numPmu": 3,
@@ -32,34 +32,34 @@
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792844629000
+      "timestamp_cote": 1792844915000
     },
     {
       "numPmu": 4,
       "nom": "LA TURBIE",
-      "cote_live": 6.7,
+      "cote_live": 4.7,
       "cote_reference": 6.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792844629000
+      "timestamp_cote": 1792844915000
     },
     {
       "numPmu": 5,
       "nom": "ALMARITA",
-      "cote_live": 6.3,
+      "cote_live": 5.8,
       "cote_reference": 8.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792844629000
+      "timestamp_cote": 1792844915000
     },
     {
       "numPmu": 6,
       "nom": "MAHADEVI",
-      "cote_live": 4.1,
+      "cote_live": 4.8,
       "cote_reference": 3.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792844629000
+      "timestamp_cote": 1792844915000
     }
   ],
   "hippodrome": "COMPIEGNE",
@@ -74,6 +74,18 @@
         "4": 6.7,
         "5": 6.3,
         "6": 4.1
+      }
+    },
+    {
+      "scraped_at": "2026-10-24T14:28:41.673009+02:00",
+      "minutes_avant_depart": 9.314298683333334,
+      "cotes": {
+        "1": 2.7,
+        "2": 7.0,
+        "3": 23.0,
+        "4": 4.7,
+        "5": 5.8,
+        "6": 4.8
       }
     }
   ]
