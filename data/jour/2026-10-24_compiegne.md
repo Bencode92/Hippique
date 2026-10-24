@@ -1,6 +1,6 @@
 # COMPIEGNE — 24/10/2026
 
-8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -76,7 +76,7 @@
 
 ### 5. PRIX DOMINIQUE SARTINI
 
-*16h25 · haies · 3600 m · 7 partants · cotes de l'extraction*
+*16h25 · haies · 3600 m · 7 partants · cotes à T−29:49*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
