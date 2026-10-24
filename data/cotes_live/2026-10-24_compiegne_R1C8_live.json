@@ -4,8 +4,8 @@
   "reunion": 1,
   "heure_depart": 1792858200000,
   "distance": 3450,
-  "scraped_at": "2026-10-24T17:40:30.402978+02:00",
-  "minutes_avant_depart": 29,
+  "scraped_at": "2026-10-24T17:44:30.650088+02:00",
+  "minutes_avant_depart": 25,
   "participants": [
     {
       "numPmu": 1,
@@ -14,7 +14,7 @@
       "cote_reference": 7.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792856412000
+      "timestamp_cote": 1792856654000
     },
     {
       "numPmu": 2,
@@ -23,7 +23,7 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792856412000
+      "timestamp_cote": 1792856654000
     },
     {
       "numPmu": 3,
@@ -32,7 +32,7 @@
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792856412000
+      "timestamp_cote": 1792856654000
     },
     {
       "numPmu": 4,
@@ -41,7 +41,7 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792856412000
+      "timestamp_cote": 1792856654000
     },
     {
       "numPmu": 5,
@@ -50,7 +50,7 @@
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792856412000
+      "timestamp_cote": 1792856654000
     },
     {
       "numPmu": 6,
@@ -59,7 +59,7 @@
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792856412000
+      "timestamp_cote": 1792856654000
     },
     {
       "numPmu": 7,
@@ -68,34 +68,34 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792856412000
+      "timestamp_cote": 1792856654000
     },
     {
       "numPmu": 8,
       "nom": "MEC DE LA BARRIERE",
-      "cote_live": 8.9,
+      "cote_live": 9.0,
       "cote_reference": 8.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792856412000
+      "timestamp_cote": 1792856654000
     },
     {
       "numPmu": 9,
       "nom": "MON AUDACE",
-      "cote_live": 50.0,
+      "cote_live": 51.0,
       "cote_reference": 50.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792856412000
+      "timestamp_cote": 1792856654000
     },
     {
       "numPmu": 10,
       "nom": "MIKI BILLY",
-      "cote_live": 9.6,
+      "cote_live": 9.8,
       "cote_reference": 9.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792856412000
+      "timestamp_cote": 1792856654000
     },
     {
       "numPmu": 11,
@@ -104,7 +104,7 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792856412000
+      "timestamp_cote": 1792856654000
     },
     {
       "numPmu": 12,
@@ -113,7 +113,7 @@
       "cote_reference": 4.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792856412000
+      "timestamp_cote": 1792856654000
     }
   ],
   "hippodrome": "COMPIEGNE",
@@ -132,6 +132,24 @@
         "8": 8.9,
         "9": 50.0,
         "10": 9.6,
+        "11": 14.0,
+        "12": 4.6
+      }
+    },
+    {
+      "scraped_at": "2026-10-24T17:44:30.650088+02:00",
+      "minutes_avant_depart": 25.499768616666664,
+      "cotes": {
+        "1": 7.1,
+        "2": 14.0,
+        "3": 13.0,
+        "4": 10.0,
+        "5": 11.0,
+        "6": 13.0,
+        "7": 12.0,
+        "8": 9.0,
+        "9": 51.0,
+        "10": 9.8,
         "11": 14.0,
         "12": 4.6
       }
