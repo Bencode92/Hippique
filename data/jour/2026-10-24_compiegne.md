@@ -1,6 +1,6 @@
 # COMPIEGNE — 24/10/2026
 
-8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 6 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -107,18 +107,18 @@
 
 ### 7. PRIX DE BESANCON
 
-*17h35 · haies · 3600 m · 8 partants · cotes de l'extraction*
+*17h35 · haies · 3600 m · 8 partants · cotes à T−29:50*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 4 | ILLUSION MACHINE | 3,2 | J.REVELEY | –/438/344/1246 |
-| 7 | ANATOLE | 5,4 | T.BEAURAIN | 267/600/5/248 |
-| 5 | GARDIEN DE MUSEE | 5,6 | G.MEUNIER | 337/410/182/9 |
-| 8 | AL FONCE | 7,5 | L.BRECHET | 50/438/947/– |
-| 1 | GALLIPOLI | 8,8 | J.HONDIER | 438/438/153/228 |
-| 3 | OLYMPIC STORY | 10 | A.ZULIANI | 165/288/2740/9 |
-| 2 | STYLE D'EMIRS | 11 | A.CHESNEAU | 258/410/1640/898 |
-| 6 | CAF'CONC | 27 | A.DUVACHER | 409/630/881/4025 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 4 | ILLUSION MACHINE | 3,1 | 3,2 | J.REVELEY | –/438/344/1246 |
+| 7 | ANATOLE | 5,3 | 5,4 | T.BEAURAIN | 267/600/5/248 |
+| 5 | GARDIEN DE MUSEE | 5,8 | 5,6 | G.MEUNIER | 337/410/182/9 |
+| 2 | STYLE D'EMIRS | 8,5 | 11 | A.CHESNEAU | 258/410/1640/898 |
+| 8 | AL FONCE | 8,6 | 7,5 | L.BRECHET | 50/438/947/– |
+| 1 | GALLIPOLI | 10 | 8,8 | J.HONDIER | 438/438/153/228 |
+| 3 | OLYMPIC STORY | 10 | 10 | A.ZULIANI | 165/288/2740/9 |
+| 6 | CAF'CONC | 29 | 27 | A.DUVACHER | 409/630/881/4025 |
 
 ### 8. PRIX CERILLY
 
