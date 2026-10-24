@@ -1,7 +1,7 @@
 {
   "hippodrome": "PRUNELLI",
   "type_reunion": "Plat",
-  "date_extraction": "2026-10-24T00:25:32.311098",
+  "date_extraction": "2026-10-24T12:32:19.292919",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/24102026/R2",
   "courses": [
     {
@@ -12,46 +12,6 @@
       "distance": "2400m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "BAROUKI AA H.AN. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: OLZARTE DE COLLONGUES et BAROUKA (KHANJER JOLI)",
-          "corde": "(Corde:05)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/PDF/1/20261024-PDF-1-1.png",
-          "propriétaire": "G.LECA",
-          "entraineur": "MME P.VANHOVE",
-          "éleveurs": "SUCC MR MATHIEU MAURIZI",
-          "jockey": "M.WENDEL",
-          "poids": "58 kg",
-          "gains": "12582000",
-          "musique": "1p1p1p1p1p(25)3p3p3p5p",
-          "valeur": "58.0",
-          "equipement(s)": "",
-          "nb_courses": 26,
-          "nb_victoires": 16,
-          "nb_places": 10
-        },
-        {
-          "n°": "2",
-          "cheval": "LILA DE BRAVONE AA F.AN. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: BORN TO SEA et LALINE DE BERSAC (FAIRLY RANSOM)",
-          "corde": "(Corde:02)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/PDF/1/20261024-PDF-1-2.png",
-          "propriétaire": "A.LORENZONI",
-          "entraineur": "A.LORENZONI",
-          "éleveurs": "SUCC MR MATHIEU MAURIZI",
-          "jockey": "J.PLATEAUX",
-          "poids": "56.5 kg",
-          "gains": "3405000",
-          "musique": "3p4p4p4p6p2p5p(25)4p1p",
-          "valeur": "56.5",
-          "equipement(s)": "",
-          "nb_courses": 14,
-          "nb_victoires": 2,
-          "nb_places": 11
-        },
         {
           "n°": "3",
           "cheval": "KISS D'ALBITRONE AA H.AN. 6 a.",
@@ -70,7 +30,11 @@
           "equipement(s)": "",
           "nb_courses": 18,
           "nb_victoires": 5,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 4.5,
+          "cote_tendance": "",
+          "cote_reference": 4.7,
+          "arrivee": 1
         },
         {
           "n°": "4",
@@ -90,27 +54,59 @@
           "equipement(s)": "",
           "nb_courses": 20,
           "nb_victoires": 7,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 9.6,
+          "cote_tendance": "",
+          "cote_reference": 5.8,
+          "arrivee": 2
         },
         {
-          "n°": "5",
-          "cheval": "SCUPICCIA AA F.AN. 4 a.",
+          "n°": "1",
+          "cheval": "BAROUKI AA H.AN. 6 a.",
           "cheval_url": "",
-          "père_mère": "Par: CROUCRACQ AA et AGUACALIENTE AA (MARTALINE)",
-          "corde": "(Corde:03)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/PDF/1/20261024-PDF-1-5.png",
+          "père_mère": "Par: OLZARTE DE COLLONGUES et BAROUKA (KHANJER JOLI)",
+          "corde": "(Corde:05)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/PDF/1/20261024-PDF-1-1.png",
+          "propriétaire": "G.LECA",
+          "entraineur": "MME P.VANHOVE",
+          "éleveurs": "SUCC MR MATHIEU MAURIZI",
+          "jockey": "M.WENDEL",
+          "poids": "58 kg",
+          "gains": "12582000",
+          "musique": "1p1p1p1p1p(25)3p3p3p5p",
+          "valeur": "58.0",
+          "equipement(s)": "",
+          "nb_courses": 26,
+          "nb_victoires": 16,
+          "nb_places": 10,
+          "cote": 1.5,
+          "cote_tendance": "",
+          "cote_reference": 1.9,
+          "arrivee": 3
+        },
+        {
+          "n°": "2",
+          "cheval": "LILA DE BRAVONE AA F.AN. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: BORN TO SEA et LALINE DE BERSAC (FAIRLY RANSOM)",
+          "corde": "(Corde:02)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/PDF/1/20261024-PDF-1-2.png",
           "propriétaire": "A.LORENZONI",
           "entraineur": "A.LORENZONI",
-          "éleveurs": "MR ANTOINE LORENZONI",
-          "jockey": "M.BRUNELLI",
-          "poids": "53.5 kg",
-          "gains": "3863500",
-          "musique": "2p3p3p7p1p4p(25)5p1p1p",
-          "valeur": "53.5",
+          "éleveurs": "SUCC MR MATHIEU MAURIZI",
+          "jockey": "P. LE DIGABEL",
+          "poids": "56.5 kg",
+          "gains": "3405000",
+          "musique": "3p4p4p4p6p2p5p(25)4p1p",
+          "valeur": "56.5",
           "equipement(s)": "",
-          "nb_courses": 16,
-          "nb_victoires": 3,
-          "nb_places": 12
+          "nb_courses": 14,
+          "nb_victoires": 2,
+          "nb_places": 11,
+          "cote": 26.0,
+          "cote_tendance": "",
+          "cote_reference": 19.0,
+          "arrivee": 4
         },
         {
           "n°": "6",
@@ -130,10 +126,41 @@
           "equipement(s)": "",
           "nb_courses": 48,
           "nb_victoires": 3,
-          "nb_places": 38
+          "nb_places": 38,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 9.1,
+          "arrivee": 5
+        },
+        {
+          "n°": "5",
+          "cheval": "SCUPICCIA AA F.AN. 4 a.",
+          "cheval_url": "",
+          "père_mère": "Par: CROUCRACQ AA et AGUACALIENTE AA (MARTALINE)",
+          "corde": "(Corde:03)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/PDF/1/20261024-PDF-1-5.png",
+          "propriétaire": "A.LORENZONI",
+          "entraineur": "A.LORENZONI",
+          "éleveurs": "MR ANTOINE LORENZONI",
+          "jockey": "M.BRUNELLI",
+          "poids": "53.5 kg",
+          "gains": "3863500",
+          "musique": "2p3p3p7p1p4p(25)5p1p1p",
+          "valeur": "53.5",
+          "equipement(s)": "",
+          "nb_courses": 16,
+          "nb_victoires": 3,
+          "nb_places": 12,
+          "cote": 18.0,
+          "cote_tendance": "",
+          "cote_reference": 13.0,
+          "arrivee": 6
         }
       ],
-      "cordeCourse": "CORDE_GAUCHE"
+      "terrain": "Très souple",
+      "penetrometre": "3,8",
+      "cordeCourse": "CORDE_GAUCHE",
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX DU CONSEIL MUNICIPAL DE PRUNELLI",
@@ -143,6 +170,30 @@
       "distance": "2400m",
       "url": "",
       "participants": [
+        {
+          "n°": "6",
+          "cheval": "KALIS DE LA BRUNIE AA F.AN. 6 a.",
+          "cheval_url": "",
+          "père_mère": "Par: GENTLEWAVE et ALOA DE LA BRUNIE (CARGHESE DES LANDES)",
+          "corde": "(Corde:02)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/PDF/2/20261024-PDF-2-6.png",
+          "propriétaire": "A.DE LANFRANCHI",
+          "entraineur": "C.ESCUDER",
+          "éleveurs": "MR JACQUES CROUZILLAC",
+          "jockey": "M. GERMAIN",
+          "poids": "58.5 kg",
+          "gains": "17682500",
+          "musique": "4p1p1p2p(25)1p1p1p1p1p",
+          "valeur": "58.5",
+          "equipement(s)": "",
+          "nb_courses": 25,
+          "nb_victoires": 9,
+          "nb_places": 16,
+          "cote": 2.1,
+          "cote_tendance": "",
+          "cote_reference": 2.5,
+          "arrivee": 1
+        },
         {
           "n°": "1",
           "cheval": "DUC D'ALIENOR AA H.AN. 6 a.",
@@ -161,27 +212,11 @@
           "equipement(s)": "",
           "nb_courses": 24,
           "nb_victoires": 5,
-          "nb_places": 17
-        },
-        {
-          "n°": "2",
-          "cheval": "MOSSKY AA H.AN. 10 a.",
-          "cheval_url": "",
-          "père_mère": "Par: KENTUCKY DYNAMITE et MOSSAKA (FAST)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/PDF/2/20261024-PDF-2-2.png",
-          "propriétaire": "MME C.LEONI",
-          "entraineur": "C.TOLAINI",
-          "éleveurs": "HARAS DU BOSQUET",
-          "jockey": "L.DOREAU",
-          "poids": "62 kg",
-          "gains": "18690000",
-          "musique": "1p3p2p(25)2p1p3p1p(24)1p",
-          "valeur": "62.0",
-          "equipement(s)": "",
-          "nb_courses": 33,
-          "nb_victoires": 18,
-          "nb_places": 14
+          "nb_places": 17,
+          "cote": 6.7,
+          "cote_tendance": "",
+          "cote_reference": 6.5,
+          "arrivee": 2
         },
         {
           "n°": "3",
@@ -201,7 +236,11 @@
           "equipement(s)": "",
           "nb_courses": 32,
           "nb_victoires": 11,
-          "nb_places": 18
+          "nb_places": 18,
+          "cote": 6.8,
+          "cote_tendance": "",
+          "cote_reference": 6.3,
+          "arrivee": 3
         },
         {
           "n°": "4",
@@ -221,7 +260,11 @@
           "equipement(s)": "A",
           "nb_courses": 23,
           "nb_victoires": 3,
-          "nb_places": 17
+          "nb_places": 17,
+          "cote": 22.0,
+          "cote_tendance": "",
+          "cote_reference": 13.0,
+          "arrivee": 4
         },
         {
           "n°": "5",
@@ -241,30 +284,41 @@
           "equipement(s)": "",
           "nb_courses": 26,
           "nb_victoires": 1,
-          "nb_places": 23
+          "nb_places": 23,
+          "cote": 18.0,
+          "cote_tendance": "",
+          "cote_reference": 9.3,
+          "arrivee": 5
         },
         {
-          "n°": "6",
-          "cheval": "KALIS DE LA BRUNIE AA F.AN. 6 a.",
+          "n°": "2",
+          "cheval": "MOSSKY AA H.AN. 10 a.",
           "cheval_url": "",
-          "père_mère": "Par: GENTLEWAVE et ALOA DE LA BRUNIE (CARGHESE DES LANDES)",
-          "corde": "(Corde:02)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/PDF/2/20261024-PDF-2-6.png",
-          "propriétaire": "A.DE LANFRANCHI",
-          "entraineur": "C.ESCUDER",
-          "éleveurs": "MR JACQUES CROUZILLAC",
-          "jockey": "J.PLATEAUX",
-          "poids": "58.5 kg",
-          "gains": "17682500",
-          "musique": "4p1p1p2p(25)1p1p1p1p1p",
-          "valeur": "58.5",
+          "père_mère": "Par: KENTUCKY DYNAMITE et MOSSAKA (FAST)",
+          "corde": "(Corde:01)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/PDF/2/20261024-PDF-2-2.png",
+          "propriétaire": "MME C.LEONI",
+          "entraineur": "C.TOLAINI",
+          "éleveurs": "HARAS DU BOSQUET",
+          "jockey": "L.DOREAU",
+          "poids": "62 kg",
+          "gains": "18690000",
+          "musique": "1p3p2p(25)2p1p3p1p(24)1p",
+          "valeur": "62.0",
           "equipement(s)": "",
-          "nb_courses": 25,
-          "nb_victoires": 9,
-          "nb_places": 16
+          "nb_courses": 33,
+          "nb_victoires": 18,
+          "nb_places": 14,
+          "cote": 3.6,
+          "cote_tendance": "",
+          "cote_reference": 4.0,
+          "arrivee": 6
         }
       ],
-      "cordeCourse": "CORDE_GAUCHE"
+      "terrain": "Très souple",
+      "penetrometre": "3,8",
+      "cordeCourse": "CORDE_GAUCHE",
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX DU FIUM'ORBU",
@@ -275,24 +329,28 @@
       "url": "",
       "participants": [
         {
-          "n°": "1",
-          "cheval": "HALDAWAD AA M.AN. 3 a.",
+          "n°": "5",
+          "cheval": "NIPTON DE LAGARDE AA H.AN. 3 a.",
           "cheval_url": "",
-          "père_mère": "Par: IVAWOOD et HALDAWYRA (SLEEPING CAR)",
-          "corde": "(Corde:07)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/PDF/3/20261024-PDF-3-1.png",
-          "propriétaire": "TENUTA DEI PRINCIPI/MME C.LEONI",
-          "entraineur": "C.TOLAINI",
-          "éleveurs": "MR DIDIER CLOS",
-          "jockey": "M.WENDEL",
-          "poids": "66 kg",
-          "gains": "1900500",
-          "musique": "5p5p3p1p1p3p5p7p",
-          "valeur": "66.0",
+          "père_mère": "Par: CROUCRACQ AA et CIGALE DE LAGARDE (GREY RISK)",
+          "corde": "(Corde:01)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/PDF/3/20261024-PDF-3-5.png",
+          "propriétaire": "MME A.CASAROLI",
+          "entraineur": "MME A.CASAROLI",
+          "éleveurs": "MR PHILIPPE COUDERC",
+          "jockey": "L.ROUSSEAU",
+          "poids": "60 kg",
+          "gains": "737000",
+          "musique": "2p2p4p5p",
+          "valeur": "60.0",
           "equipement(s)": "",
-          "nb_courses": 8,
-          "nb_victoires": 2,
-          "nb_places": 6
+          "nb_courses": 4,
+          "nb_victoires": 0,
+          "nb_places": 4,
+          "cote": 7.2,
+          "cote_tendance": "",
+          "cote_reference": 10.0,
+          "arrivee": 1
         },
         {
           "n°": "2",
@@ -312,27 +370,11 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 2,
-          "nb_places": 2
-        },
-        {
-          "n°": "3",
-          "cheval": "SONOLINA AA F.AN. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: FRISSON DU PECOS et ATELINA (KAP ROCK)",
-          "corde": "(Corde:05)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/PDF/3/20261024-PDF-3-3.png",
-          "propriétaire": "A.DE LANFRANCHI",
-          "entraineur": "C.ESCUDER",
-          "éleveurs": "MR ANDRE DUCOS",
-          "jockey": "M.GERMAIN",
-          "poids": "62.5 kg",
-          "gains": "2731500",
-          "musique": "3p1p2p2p2p6p1p",
-          "valeur": "62.5",
-          "equipement(s)": "A",
-          "nb_courses": 7,
-          "nb_victoires": 2,
-          "nb_places": 5
+          "nb_places": 2,
+          "cote": 1.8,
+          "cote_tendance": "",
+          "cote_reference": 2.4,
+          "arrivee": 2
         },
         {
           "n°": "4",
@@ -352,27 +394,58 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 5.2,
+          "arrivee": 3
         },
         {
-          "n°": "5",
-          "cheval": "NIPTON DE LAGARDE AA H.AN. 3 a.",
+          "n°": "3",
+          "cheval": "SONOLINA AA F.AN. 3 a.",
           "cheval_url": "",
-          "père_mère": "Par: CROUCRACQ AA et CIGALE DE LAGARDE (GREY RISK)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/PDF/3/20261024-PDF-3-5.png",
-          "propriétaire": "MME A.CASAROLI",
-          "entraineur": "MME A.CASAROLI",
-          "éleveurs": "MR PHILIPPE COUDERC",
-          "jockey": "L.ROUSSEAU",
-          "poids": "60 kg",
-          "gains": "737000",
-          "musique": "2p2p4p5p",
-          "valeur": "60.0",
+          "père_mère": "Par: FRISSON DU PECOS et ATELINA (KAP ROCK)",
+          "corde": "(Corde:05)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/PDF/3/20261024-PDF-3-3.png",
+          "propriétaire": "A.DE LANFRANCHI",
+          "entraineur": "C.ESCUDER",
+          "éleveurs": "MR ANDRE DUCOS",
+          "jockey": "M.GERMAIN",
+          "poids": "62.5 kg",
+          "gains": "2731500",
+          "musique": "3p1p2p2p2p6p1p",
+          "valeur": "62.5",
+          "equipement(s)": "A",
+          "nb_courses": 7,
+          "nb_victoires": 2,
+          "nb_places": 5,
+          "cote": 3.5,
+          "cote_tendance": "",
+          "cote_reference": 4.3,
+          "arrivee": 4
+        },
+        {
+          "n°": "1",
+          "cheval": "HALDAWAD AA M.AN. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: IVAWOOD et HALDAWYRA (SLEEPING CAR)",
+          "corde": "(Corde:07)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/PDF/3/20261024-PDF-3-1.png",
+          "propriétaire": "TENUTA DEI PRINCIPI/MME C.LEONI",
+          "entraineur": "C.TOLAINI",
+          "éleveurs": "MR DIDIER CLOS",
+          "jockey": "M.WENDEL",
+          "poids": "66 kg",
+          "gains": "1900500",
+          "musique": "5p5p3p1p1p3p5p7p",
+          "valeur": "66.0",
           "equipement(s)": "",
-          "nb_courses": 4,
-          "nb_victoires": 0,
-          "nb_places": 4
+          "nb_courses": 8,
+          "nb_victoires": 2,
+          "nb_places": 6,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 15.0
         },
         {
           "n°": "6",
@@ -392,30 +465,16 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
-          "n°": "7",
-          "cheval": "DON RAYNAL AA H.AN. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: DON MAGNO AA et DJENELINA (JEBELAND PONTADOUR)",
-          "corde": "(Corde:03)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/PDF/3/20261024-PDF-3-7.png",
-          "propriétaire": "MME P.VANHOVE",
-          "entraineur": "MME P.VANHOVE",
-          "éleveurs": "EARL DU RAYNAL",
-          "jockey": "B.HOBART",
-          "poids": "60 kg",
-          "gains": "78500",
-          "musique": "6p5p",
-          "valeur": "60.0",
-          "equipement(s)": "",
-          "nb_courses": 2,
-          "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 0,
+          "cote": 43.0,
+          "cote_tendance": "",
+          "cote_reference": 7.0
         }
       ],
-      "cordeCourse": "CORDE_GAUCHE"
+      "terrain": "Très souple",
+      "penetrometre": "3,8",
+      "cordeCourse": "CORDE_GAUCHE",
+      "arrivee_definitive": false
     },
     {
       "nom": "PRIX DU PRESIDENT GAMBOTTI",
@@ -443,7 +502,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 3,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 1.8,
+          "cote_tendance": "",
+          "cote_reference": 1.8
         },
         {
           "n°": "2",
@@ -463,7 +525,10 @@
           "equipement(s)": "",
           "nb_courses": 42,
           "nb_victoires": 10,
-          "nb_places": 24
+          "nb_places": 24,
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         },
         {
           "n°": "3",
@@ -483,7 +548,10 @@
           "equipement(s)": "",
           "nb_courses": 24,
           "nb_victoires": 0,
-          "nb_places": 19
+          "nb_places": 19,
+          "cote": 3.5,
+          "cote_tendance": "",
+          "cote_reference": 3.4
         },
         {
           "n°": "4",
@@ -503,7 +571,10 @@
           "equipement(s)": "A",
           "nb_courses": 7,
           "nb_victoires": 1,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 15.0
         },
         {
           "n°": "5",
@@ -523,7 +594,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 52.0,
+          "cote_tendance": "",
+          "cote_reference": 56.0
         },
         {
           "n°": "6",
@@ -543,7 +617,10 @@
           "equipement(s)": "",
           "nb_courses": 15,
           "nb_victoires": 1,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 16.0
         },
         {
           "n°": "7",
@@ -563,9 +640,14 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 2,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 13.0
         }
       ],
+      "terrain": "Très souple",
+      "penetrometre": "3,8",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -594,7 +676,10 @@
           "equipement(s)": "A",
           "nb_courses": 26,
           "nb_victoires": 4,
-          "nb_places": 17
+          "nb_places": 17,
+          "cote": 2.7,
+          "cote_tendance": "",
+          "cote_reference": 2.7
         },
         {
           "n°": "2",
@@ -614,7 +699,10 @@
           "equipement(s)": "",
           "nb_courses": 55,
           "nb_victoires": 2,
-          "nb_places": 29
+          "nb_places": 29,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 12.0
         },
         {
           "n°": "3",
@@ -634,7 +722,10 @@
           "equipement(s)": "",
           "nb_courses": 34,
           "nb_victoires": 3,
-          "nb_places": 14
+          "nb_places": 14,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 12.0
         },
         {
           "n°": "4",
@@ -654,7 +745,10 @@
           "equipement(s)": "",
           "nb_courses": 75,
           "nb_victoires": 7,
-          "nb_places": 33
+          "nb_places": 33,
+          "cote": 7.0,
+          "cote_tendance": "",
+          "cote_reference": 7.0
         },
         {
           "n°": "5",
@@ -674,7 +768,10 @@
           "equipement(s)": "A",
           "nb_courses": 49,
           "nb_victoires": 2,
-          "nb_places": 21
+          "nb_places": 21,
+          "cote": 21.0,
+          "cote_tendance": "",
+          "cote_reference": 21.0
         },
         {
           "n°": "6",
@@ -694,7 +791,10 @@
           "equipement(s)": "",
           "nb_courses": 38,
           "nb_victoires": 3,
-          "nb_places": 21
+          "nb_places": 21,
+          "cote": 7.2,
+          "cote_tendance": "",
+          "cote_reference": 7.2
         },
         {
           "n°": "7",
@@ -714,7 +814,10 @@
           "equipement(s)": "",
           "nb_courses": 61,
           "nb_victoires": 3,
-          "nb_places": 34
+          "nb_places": 34,
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 15.0
         },
         {
           "n°": "8",
@@ -734,7 +837,10 @@
           "equipement(s)": "",
           "nb_courses": 29,
           "nb_victoires": 2,
-          "nb_places": 19
+          "nb_places": 19,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 10.0
         },
         {
           "n°": "9",
@@ -754,7 +860,10 @@
           "equipement(s)": "",
           "nb_courses": 74,
           "nb_victoires": 4,
-          "nb_places": 30
+          "nb_places": 30,
+          "cote": 18.0,
+          "cote_tendance": "",
+          "cote_reference": 18.0
         },
         {
           "n°": "10",
@@ -774,9 +883,14 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 1,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         }
       ],
+      "terrain": "Très souple",
+      "penetrometre": "3,8",
       "cordeCourse": "CORDE_GAUCHE"
     }
   ]

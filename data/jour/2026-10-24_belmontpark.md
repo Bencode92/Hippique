@@ -1,8 +1,8 @@
 # BELMONT PARK — 24/10/2026
 
-11 courses.
+11 courses (10 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -12,15 +12,15 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 9 | SAMARTINA | 2,4 | J LEZCANO | –/–/–/– |
+| 6 | BELLA KNOWS | 4,2 | M FRANCO | –/–/–/– |
+| 3 | RIVER TAY | 5,7 | D DAVIS | –/–/–/– |
+| 4 | CRAVINGS | 8,5 | R SANTANA, JR. | –/–/–/– |
+| 5 | MIDNIGHTLOVEAFFAIR | 11 | A FRESU | –/–/–/– |
+| 2 | HAUNTRESS | 17 | D A RIVERA | –/–/–/– |
+| 7 | OKLAHOMA SMOKE | 17 | F PRAT | –/–/–/– |
 | 1 | VOLUNTARY | – | K CARMOUCHE | –/–/–/– |
-| 2 | HAUNTRESS | – | D A RIVERA | –/–/–/– |
-| 3 | RIVER TAY | – | D DAVIS | –/–/–/– |
-| 4 | CRAVINGS | – | R SANTANA, JR. | –/–/–/– |
-| 5 | MIDNIGHTLOVEAFFAIR | – | A FRESU | –/–/–/– |
-| 6 | BELLA KNOWS | – | M FRANCO | –/–/–/– |
-| 7 | OKLAHOMA SMOKE | – | F PRAT | –/–/–/– |
 | 8 | SO SOPHIA | – | K DAVIS | –/–/–/– |
-| 9 | SAMARTINA | – | J LEZCANO | –/–/–/– |
 
 ### 2. MAID OF THE MIST S.
 
@@ -28,11 +28,11 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | DAVIDSON | – | M FRANCO | –/–/–/620 |
-| 2 | FANTASY FORTUNE | – | E J ZAYAS | –/–/–/– |
-| 3 | CASH BURN | – | F PRAT | –/–/–/– |
-| 4 | SUN KISSED BLISS | – | K CARMOUCHE | –/–/–/– |
-| 5 | B YUTIFUL CARLY | – | R SANTANA, JR. | –/–/–/803 |
+| 5 | B YUTIFUL CARLY | 3,3 | R SANTANA, JR. | –/–/–/803 |
+| 1 | DAVIDSON | 4,1 | M FRANCO | –/–/–/620 |
+| 3 | CASH BURN | 4,1 | F PRAT | –/–/–/– |
+| 4 | SUN KISSED BLISS | 4,1 | K CARMOUCHE | –/–/–/– |
+| 2 | FANTASY FORTUNE | 8,3 | E J ZAYAS | –/–/–/– |
 
 ### 3. IROQUOIS S.
 
@@ -40,12 +40,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 2 | CELTIC DAWN | 1,5 | A FRESU |
+| 5 | VENETTA | 3,3 | F PRAT |
+| 6 | KAY CUP | 4,9 | R SANTANA, JR. |
 | 1 | QUEENS CAT | – | N ALVARADO |
-| 2 | CELTIC DAWN | – | A FRESU |
 | 3 | MUNNINGS EXPRESS | – | M FRANCO |
 | 4 | SUNDAY GIRL | – | K DAVIS |
-| 5 | VENETTA | – | F PRAT |
-| 6 | KAY CUP | – | R SANTANA, JR. |
 
 ### 4. EMPIRE DISTAFF S.
 
@@ -53,12 +53,12 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 4 | GRAZIE | 1,8 | F PRAT | –/–/–/5309 |
+| 5 | IRON ORCHARD | 3,7 | M FRANCO | –/–/–/– |
+| 6 | RACING COLORS | 4,6 | H K HARKIE | –/–/–/– |
+| 2 | BERNIETAKESCHARGE | 9,2 | K CARMOUCHE | –/–/–/– |
 | 1 | BOXED WINE | – | R SANTANA, JR. | –/–/–/– |
-| 2 | BERNIETAKESCHARGE | – | K CARMOUCHE | –/–/–/– |
 | 3 | VALTELLINA | – | D DAVIS | –/–/–/– |
-| 4 | GRAZIE | – | F PRAT | –/–/–/5309 |
-| 5 | IRON ORCHARD | – | M FRANCO | –/–/–/– |
-| 6 | RACING COLORS | – | H K HARKIE | –/–/–/– |
 
 ### 5. MOHAWK S.
 
@@ -66,12 +66,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 6 | GEORGE BRIGGS | 1,5 | F PRAT |
+| 4 | ANNEXPERIENCE | 3 | J ALVARADO |
+| 5 | CHUMMERS | 6,1 | D DAVIS |
 | 1 | SOUNDS LIKE A PLAN | – | R SANTANA, JR. |
 | 2 | FUNNY FACTOR | – | K CARMOUCHE |
 | 3 | SPIRIT OF ST LOUIS | – | M FRANCO |
-| 4 | ANNEXPERIENCE | – | J ALVARADO |
-| 5 | CHUMMERS | – | D DAVIS |
-| 6 | GEORGE BRIGGS | – | F PRAT |
 
 ### 6. NEW YORK FILLY AND MARE TURF SPRINT CHAMPIONSHIP S.
 
@@ -79,14 +79,14 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 3 | SHOOT IT TRUE | 1,9 | A FRESU | –/478/–/– |
+| 4 | BOSTON'S PHINEST | 5,7 | M FRANCO | –/–/–/– |
+| 6 | LATEST EDITION | 5,7 | M FERNANDEZ | –/–/–/– |
+| 8 | FAIRY GODMOTHER | 5,7 | D DAVIS | –/–/–/– |
+| 5 | HIGHWAY HARMONY | 11 | E J ZAYAS | –/–/–/– |
 | 1 | SWEET BROWN SUGAR | – | J ALVARADO | –/–/–/– |
 | 2 | SILSBEE | – | K CARMOUCHE | –/–/–/– |
-| 3 | SHOOT IT TRUE | – | A FRESU | –/478/–/– |
-| 4 | BOSTON'S PHINEST | – | M FRANCO | –/–/–/– |
-| 5 | HIGHWAY HARMONY | – | E J ZAYAS | –/–/–/– |
-| 6 | LATEST EDITION | – | M FERNANDEZ | –/–/–/– |
 | 7 | KAZ FARM GIRL | – | D HADDOCK | –/–/–/– |
-| 8 | FAIRY GODMOTHER | – | D DAVIS | –/–/–/– |
 | 9 | ANNASCAUL | – | F PRAT | –/–/–/– |
 
 ### 7. SLEEPY HOLLOW S.
@@ -95,12 +95,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | SCRAMJET | – | K CARMOUCHE |
+| 1 | SCRAMJET | 1,9 | K CARMOUCHE |
+| 3 | COVERED OPTION | 5,7 | A FRESU |
+| 4 | PROFESSOR PLUM | 5,7 | M FRANCO |
+| 6 | INALIENABLE | 5,7 | R SANTANA, JR. |
+| 5 | HAMMERIN HENRY | 11 | S MARIN |
 | 2 | FULLCUP | – | J ALVARADO |
-| 3 | COVERED OPTION | – | A FRESU |
-| 4 | PROFESSOR PLUM | – | M FRANCO |
-| 5 | HAMMERIN HENRY | – | S MARIN |
-| 6 | INALIENABLE | – | R SANTANA, JR. |
 | 7 | BIG HANDSOME | – | F PRAT |
 | 8 | MIDNIGHT RAIDER | – | C ELLIOTT |
 
@@ -110,15 +110,15 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | BUTTAH | – | R SANTANA, JR. | –/–/–/– |
+| 9 | SCULCOS FOLLY | 2,8 | F PRAT | –/–/–/– |
+| 1 | BUTTAH | 5,7 | R SANTANA, JR. | –/–/–/– |
+| 6 | ACOUSTIC AVE | 5,7 | J LEZCANO | –/–/–/– |
+| 7 | THE WINE STEWARD | 5,7 | K CARMOUCHE | –/–/–/– |
+| 8 | SACROSANCT | 5,7 | M FRANCO | –/–/–/3618 |
+| 5 | FACTUALLY CORRECT | 11 | E J ZAYAS | –/–/–/– |
 | 2 | EL GRANDE O | – | A FRESU | –/–/–/– |
 | 3 | HIT THE POST | – | C ELLIOTT | –/–/–/– |
 | 4 | CALDO CANDY | – | S MARIN | –/–/–/– |
-| 5 | FACTUALLY CORRECT | – | E J ZAYAS | –/–/–/– |
-| 6 | ACOUSTIC AVE | – | J LEZCANO | –/–/–/– |
-| 7 | THE WINE STEWARD | – | K CARMOUCHE | –/–/–/– |
-| 8 | SACROSANCT | – | M FRANCO | –/–/–/3618 |
-| 9 | SCULCOS FOLLY | – | F PRAT | –/–/–/– |
 
 ### 9. NEW YORK TURF SPRINT CHAMPIONSHIP S.
 
@@ -126,13 +126,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 4 | DAKOTA COUNTRY | 3,3 | A FRESU |
+| 6 | BOSUN | 3,3 | K CARMOUCHE |
+| 7 | TRUMAN'S COMMANDER | 3,3 | E J ZAYAS |
+| 3 | TWENTY SIX BLACK | 6,6 | M FRANCO |
+| 5 | BOLD JOURNEY | 13 | J ALVARADO |
 | 1 | OUT ON BAIL | – | R SANTANA, JR. |
 | 2 | WARALO | – | J LEZCANO |
-| 3 | TWENTY SIX BLACK | – | M FRANCO |
-| 4 | DAKOTA COUNTRY | – | A FRESU |
-| 5 | BOLD JOURNEY | – | J ALVARADO |
-| 6 | BOSUN | – | K CARMOUCHE |
-| 7 | TRUMAN'S COMMANDER | – | E J ZAYAS |
 | 8 | SENBEI | – | F PRAT |
 
 ### 10. EMPIRE CLASSIC S.
@@ -141,12 +141,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 2 | EZ ROLL | 2,2 | J A VARGAS, JR. |
+| 6 | BANK FRENZY | 2,2 | M FRANCO |
+| 5 | LEON BLUE | 4,4 | A FRESU |
 | 1 | DONEGAL SURGES | – | J LEZCANO |
-| 2 | EZ ROLL | – | J A VARGAS, JR. |
 | 3 | ALAN TURING | – | J ALVARADO |
 | 4 | PANDAGATE | – | D DAVIS |
-| 5 | LEON BLUE | – | A FRESU |
-| 6 | BANK FRENZY | – | M FRANCO |
 | 7 | IRON DOME | – | R SANTANA, JR. |
 | 8 | WYNSTOCK | – | K CARMOUCHE |
 | 9 | DOC SULLIVAN | – | S MARIN |

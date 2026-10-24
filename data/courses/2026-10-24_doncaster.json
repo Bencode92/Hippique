@@ -1,7 +1,7 @@
 {
   "hippodrome": "DONCASTER",
   "type_reunion": "Plat",
-  "date_extraction": "2026-10-24T00:26:03.777361",
+  "date_extraction": "2026-10-24T12:32:49.245908",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/24102026/R8",
   "courses": [
     {
@@ -30,7 +30,10 @@
           "equipement(s)": "",
           "nb_courses": 25,
           "nb_victoires": 5,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0
         },
         {
           "n°": "2",
@@ -50,7 +53,10 @@
           "equipement(s)": "",
           "nb_courses": 19,
           "nb_victoires": 6,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         },
         {
           "n°": "3",
@@ -70,7 +76,10 @@
           "equipement(s)": "",
           "nb_courses": 28,
           "nb_victoires": 5,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 2.2,
+          "cote_tendance": "",
+          "cote_reference": 2.2
         },
         {
           "n°": "4",
@@ -90,7 +99,10 @@
           "equipement(s)": "A",
           "nb_courses": 20,
           "nb_victoires": 6,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         },
         {
           "n°": "5",
@@ -102,7 +114,7 @@
           "propriétaire": "AMO RACING LIMITED",
           "entraineur": "KEVIN PHILIPPART DE FOY",
           "éleveurs": "",
-          "jockey": "ROWAN SCOTT",
+          "jockey": "D. EGAN",
           "poids": "55 kg",
           "gains": "4390600",
           "musique": "0p7p1p1p",
@@ -110,7 +122,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 2,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 10.0
         },
         {
           "n°": "6",
@@ -130,7 +145,10 @@
           "equipement(s)": "A",
           "nb_courses": 44,
           "nb_victoires": 9,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         },
         {
           "n°": "7",
@@ -150,7 +168,10 @@
           "equipement(s)": "A",
           "nb_courses": 29,
           "nb_victoires": 3,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0
         },
         {
           "n°": "8",
@@ -170,7 +191,10 @@
           "equipement(s)": "",
           "nb_courses": 22,
           "nb_victoires": 1,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 9.1,
+          "cote_tendance": "",
+          "cote_reference": 9.1
         },
         {
           "n°": "9",
@@ -190,7 +214,10 @@
           "equipement(s)": "",
           "nb_courses": 20,
           "nb_victoires": 2,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 33.0,
+          "cote_tendance": "",
+          "cote_reference": 33.0
         },
         {
           "n°": "10",
@@ -210,9 +237,15 @@
           "equipement(s)": "",
           "nb_courses": 20,
           "nb_victoires": 2,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 16.0,
+          "cote_tendance": "",
+          "cote_reference": 16.0
         }
       ],
+      "typePiste": "HERBE",
+      "terrain": "Très souple",
+      "penetrometre": "3,8",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -241,7 +274,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 4,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 3.7,
+          "cote_tendance": "",
+          "cote_reference": 3.7
         },
         {
           "n°": "2",
@@ -261,7 +297,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 81.0,
+          "cote_tendance": "",
+          "cote_reference": 81.0
         },
         {
           "n°": "3",
@@ -281,7 +320,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 2,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 4.4,
+          "cote_tendance": "",
+          "cote_reference": 4.4
         },
         {
           "n°": "4",
@@ -301,7 +343,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 2,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 30.0,
+          "cote_tendance": "",
+          "cote_reference": 30.0
         },
         {
           "n°": "5",
@@ -321,7 +366,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 16.0,
+          "cote_tendance": "",
+          "cote_reference": 16.0
         },
         {
           "n°": "6",
@@ -341,7 +389,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 2,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 2.0,
+          "cote_tendance": "",
+          "cote_reference": 2.0
         },
         {
           "n°": "7",
@@ -361,9 +412,15 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 2,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 27.0,
+          "cote_tendance": "",
+          "cote_reference": 27.0
         }
       ],
+      "typePiste": "HERBE",
+      "terrain": "Très souple",
+      "penetrometre": "3,8",
       "cordeCourse": "LIGNE_DROITE"
     },
     {
@@ -392,27 +449,10 @@
           "equipement(s)": "A",
           "nb_courses": 3,
           "nb_victoires": 1,
-          "nb_places": 1
-        },
-        {
-          "n°": "2",
-          "cheval": "BIG TRIBE M.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: SIOUX NATION et ROSEAU CITY (CITYSCAPE)",
-          "corde": "(Corde:07)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/DON/3/20261024-DON-3-2.png",
-          "propriétaire": "RP RACING LTD",
-          "entraineur": "MICHAEL APPLEBY",
-          "éleveurs": "",
-          "jockey": "JASON HART",
-          "poids": "58.5 kg",
-          "gains": "540000",
-          "musique": "1p",
-          "valeur": "58.5",
-          "equipement(s)": "",
-          "nb_courses": 1,
-          "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 1,
+          "cote": 1.1,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         },
         {
           "n°": "3",
@@ -432,7 +472,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 32.0,
+          "cote_tendance": "",
+          "cote_reference": 32.0
         },
         {
           "n°": "4",
@@ -452,7 +495,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 43.0,
+          "cote_tendance": "",
+          "cote_reference": 43.0
         },
         {
           "n°": "5",
@@ -472,7 +518,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 1,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 28.0,
+          "cote_tendance": "",
+          "cote_reference": 28.0
         },
         {
           "n°": "6",
@@ -492,7 +541,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 25.0,
+          "cote_tendance": "",
+          "cote_reference": 25.0
         },
         {
           "n°": "7",
@@ -512,7 +564,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 129.0,
+          "cote_tendance": "",
+          "cote_reference": 129.0
         },
         {
           "n°": "8",
@@ -532,9 +587,15 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 2,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 43.0,
+          "cote_tendance": "",
+          "cote_reference": 43.0
         }
       ],
+      "typePiste": "HERBE",
+      "terrain": "Très souple",
+      "penetrometre": "3,8",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -563,7 +624,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 2,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 1.1,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         },
         {
           "n°": "2",
@@ -583,7 +647,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 2,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 10.0
         },
         {
           "n°": "3",
@@ -603,7 +670,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 23.0,
+          "cote_tendance": "",
+          "cote_reference": 23.0
         },
         {
           "n°": "4",
@@ -623,9 +693,15 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 1,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 18.0,
+          "cote_tendance": "",
+          "cote_reference": 21.0
         }
       ],
+      "typePiste": "HERBE",
+      "terrain": "Très souple",
+      "penetrometre": "3,8",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -636,26 +712,6 @@
       "distance": "1600m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "GODWINSON H.PU. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: SAXON WARRIOR et MALABAR (RAVEN'S PASS)",
-          "corde": "(Corde:09)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/DON/5/20261024-DON-5-1.png",
-          "propriétaire": "JON AND JULIA AISBITT",
-          "entraineur": "JACK CHANNON",
-          "éleveurs": "",
-          "jockey": "CIEREN FALLON",
-          "poids": "64 kg",
-          "gains": "14706400",
-          "musique": "0p0p0p(25)0p",
-          "valeur": "64.0",
-          "equipement(s)": "",
-          "nb_courses": 17,
-          "nb_victoires": 4,
-          "nb_places": 2
-        },
         {
           "n°": "2",
           "cheval": "RIVER KING H.PU. 4 a.",
@@ -674,7 +730,10 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 2,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 50.0,
+          "cote_tendance": "",
+          "cote_reference": 50.0
         },
         {
           "n°": "3",
@@ -694,7 +753,10 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 4,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 12.0
         },
         {
           "n°": "4",
@@ -714,7 +776,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 3,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 1.3,
+          "cote_tendance": "",
+          "cote_reference": 1.3
         },
         {
           "n°": "5",
@@ -734,7 +799,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 2,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 9.2,
+          "cote_tendance": "",
+          "cote_reference": 9.2
         },
         {
           "n°": "6",
@@ -746,7 +814,7 @@
           "propriétaire": "AMO RACING LIMITED",
           "entraineur": "KEVIN PHILIPPART DE FOY",
           "éleveurs": "",
-          "jockey": "ROWAN SCOTT",
+          "jockey": "D. EGAN",
           "poids": "59.5 kg",
           "gains": "18491100",
           "musique": "5p2p6p(25)6p",
@@ -754,7 +822,10 @@
           "equipement(s)": "",
           "nb_courses": 39,
           "nb_victoires": 5,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 25.0,
+          "cote_tendance": "",
+          "cote_reference": 25.0
         },
         {
           "n°": "7",
@@ -814,7 +885,10 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 2,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 25.0,
+          "cote_tendance": "",
+          "cote_reference": 25.0
         },
         {
           "n°": "10",
@@ -834,7 +908,10 @@
           "equipement(s)": "A",
           "nb_courses": 42,
           "nb_victoires": 6,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 25.0,
+          "cote_tendance": "",
+          "cote_reference": 25.0
         },
         {
           "n°": "11",
@@ -854,9 +931,15 @@
           "equipement(s)": "",
           "nb_courses": 63,
           "nb_victoires": 11,
-          "nb_places": 14
+          "nb_places": 14,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0
         }
       ],
+      "typePiste": "HERBE",
+      "terrain": "Très souple",
+      "penetrometre": "3,8",
       "cordeCourse": "LIGNE_DROITE"
     },
     {
@@ -867,26 +950,6 @@
       "distance": "2040m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "MONDO MAN H.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MONDIALISTE et MOGHRAMA (HARBOUR WATCH)",
-          "corde": "(Corde:14)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/DON/6/20261024-DON-6-1.png",
-          "propriétaire": "JOHN AND YVONNE STONE",
-          "entraineur": "JAMIE MOORE & JOSH MOORE",
-          "éleveurs": "",
-          "jockey": "TOM QUEALLY",
-          "poids": "63.5 kg",
-          "gains": "9846200",
-          "musique": "0p6h1h1h",
-          "valeur": "63.5",
-          "equipement(s)": "",
-          "nb_courses": 9,
-          "nb_victoires": 1,
-          "nb_places": 3
-        },
         {
           "n°": "2",
           "cheval": "CASTLEMONT H.PU. 3 a.",
@@ -905,7 +968,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 2,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 1.5,
+          "cote_tendance": "",
+          "cote_reference": 1.5
         },
         {
           "n°": "3",
@@ -925,7 +991,10 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 3,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 51.0,
+          "cote_tendance": "",
+          "cote_reference": 51.0
         },
         {
           "n°": "4",
@@ -945,7 +1014,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 2,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 10.0
         },
         {
           "n°": "5",
@@ -965,7 +1037,10 @@
           "equipement(s)": "",
           "nb_courses": 22,
           "nb_victoires": 4,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 34.0,
+          "cote_tendance": "",
+          "cote_reference": 34.0
         },
         {
           "n°": "6",
@@ -985,7 +1060,10 @@
           "equipement(s)": "",
           "nb_courses": 13,
           "nb_victoires": 3,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 51.0,
+          "cote_tendance": "",
+          "cote_reference": 51.0
         },
         {
           "n°": "7",
@@ -1005,7 +1083,10 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 2,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 51.0,
+          "cote_tendance": "",
+          "cote_reference": 51.0
         },
         {
           "n°": "8",
@@ -1025,7 +1106,10 @@
           "equipement(s)": "",
           "nb_courses": 22,
           "nb_victoires": 6,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 51.0,
+          "cote_tendance": "",
+          "cote_reference": 51.0
         },
         {
           "n°": "9",
@@ -1045,7 +1129,10 @@
           "equipement(s)": "A",
           "nb_courses": 22,
           "nb_victoires": 3,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 51.0,
+          "cote_tendance": "",
+          "cote_reference": 51.0
         },
         {
           "n°": "10",
@@ -1065,27 +1152,10 @@
           "equipement(s)": "",
           "nb_courses": 37,
           "nb_victoires": 6,
-          "nb_places": 8
-        },
-        {
-          "n°": "11",
-          "cheval": "SPIORADALTA H.PU. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: RAJASINGHE et BROUGHTONS SECRET (AQLAAM)",
-          "corde": "(Corde:15)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/DON/6/20261024-DON-6-11.png",
-          "propriétaire": "CLAYTON MANNING, S MORRELL & HAT",
-          "entraineur": "MARK WALFORD",
-          "éleveurs": "",
-          "jockey": "JASON HART",
-          "poids": "58.5 kg",
-          "gains": "13622500",
-          "musique": "8p0p2p6p0p",
-          "valeur": "58.5",
-          "equipement(s)": "",
-          "nb_courses": 51,
-          "nb_victoires": 10,
-          "nb_places": 14
+          "nb_places": 8,
+          "cote": 51.0,
+          "cote_tendance": "",
+          "cote_reference": 51.0
         },
         {
           "n°": "12",
@@ -1105,7 +1175,10 @@
           "equipement(s)": "",
           "nb_courses": 43,
           "nb_victoires": 5,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 25.0,
+          "cote_tendance": "",
+          "cote_reference": 25.0
         },
         {
           "n°": "13",
@@ -1125,7 +1198,10 @@
           "equipement(s)": "",
           "nb_courses": 13,
           "nb_victoires": 2,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 25.0,
+          "cote_tendance": "",
+          "cote_reference": 25.0
         },
         {
           "n°": "14",
@@ -1145,7 +1221,10 @@
           "equipement(s)": "",
           "nb_courses": 21,
           "nb_victoires": 2,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 7.3,
+          "cote_tendance": "",
+          "cote_reference": 7.3
         },
         {
           "n°": "15",
@@ -1185,9 +1264,15 @@
           "equipement(s)": "A",
           "nb_courses": 50,
           "nb_victoires": 10,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 51.0,
+          "cote_tendance": "",
+          "cote_reference": 51.0
         }
       ],
+      "typePiste": "HERBE",
+      "terrain": "Très souple",
+      "penetrometre": "3,8",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1216,27 +1301,10 @@
           "equipement(s)": "",
           "nb_courses": 78,
           "nb_victoires": 15,
-          "nb_places": 15
-        },
-        {
-          "n°": "2",
-          "cheval": "BELL SHOT H.PU. 7 a.",
-          "cheval_url": "",
-          "père_mère": "Par: DARK ANGEL et MERRY ME (INVINCIBLE SPIRIT)",
-          "corde": "(Corde:10)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/DON/7/20261024-DON-7-2.png",
-          "propriétaire": "SBK RACING & B & J PARR RACING L",
-          "entraineur": "MICHAEL APPLEBY",
-          "éleveurs": "",
-          "jockey": "CLIFFORD LEE",
-          "poids": "64 kg",
-          "gains": "9646600",
-          "musique": "7p2p0p2p4p",
-          "valeur": "64.0",
-          "equipement(s)": "A",
-          "nb_courses": 58,
-          "nb_victoires": 9,
-          "nb_places": 15
+          "nb_places": 15,
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 15.0
         },
         {
           "n°": "3",
@@ -1256,27 +1324,10 @@
           "equipement(s)": "",
           "nb_courses": 19,
           "nb_victoires": 2,
-          "nb_places": 5
-        },
-        {
-          "n°": "4",
-          "cheval": "COUNT PALATINE H.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: PROFITABLE et SOVANA (DESERT KING)",
-          "corde": "(Corde:14)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/DON/7/20261024-DON-7-4.png",
-          "propriétaire": "ANNE ELLIOTT AND M DODS",
-          "entraineur": "MICHAEL DODS",
-          "éleveurs": "",
-          "jockey": "SEAN KIRRANE",
-          "poids": "63 kg",
-          "gains": "3965900",
-          "musique": "7p7p6p1p6p",
-          "valeur": "63.0",
-          "equipement(s)": "",
-          "nb_courses": 35,
-          "nb_victoires": 5,
-          "nb_places": 8
+          "nb_places": 5,
+          "cote": 47.0,
+          "cote_tendance": "",
+          "cote_reference": 47.0
         },
         {
           "n°": "5",
@@ -1296,7 +1347,10 @@
           "equipement(s)": "A",
           "nb_courses": 19,
           "nb_victoires": 2,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 1.1,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         },
         {
           "n°": "6",
@@ -1316,7 +1370,10 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 15.0
         },
         {
           "n°": "7",
@@ -1356,7 +1413,10 @@
           "equipement(s)": "",
           "nb_courses": 54,
           "nb_victoires": 5,
-          "nb_places": 14
+          "nb_places": 14,
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 15.0
         },
         {
           "n°": "9",
@@ -1376,7 +1436,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 47.0,
+          "cote_tendance": "",
+          "cote_reference": 47.0
         },
         {
           "n°": "10",
@@ -1396,7 +1459,10 @@
           "equipement(s)": "",
           "nb_courses": 15,
           "nb_victoires": 2,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 47.0,
+          "cote_tendance": "",
+          "cote_reference": 47.0
         },
         {
           "n°": "11",
@@ -1416,7 +1482,10 @@
           "equipement(s)": "",
           "nb_courses": 28,
           "nb_victoires": 3,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 47.0,
+          "cote_tendance": "",
+          "cote_reference": 47.0
         },
         {
           "n°": "12",
@@ -1436,7 +1505,10 @@
           "equipement(s)": "",
           "nb_courses": 29,
           "nb_victoires": 6,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 47.0,
+          "cote_tendance": "",
+          "cote_reference": 47.0
         },
         {
           "n°": "13",
@@ -1499,6 +1571,9 @@
           "nb_places": 1
         }
       ],
+      "typePiste": "HERBE",
+      "terrain": "Très souple",
+      "penetrometre": "3,8",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1527,27 +1602,10 @@
           "equipement(s)": "",
           "nb_courses": 11,
           "nb_victoires": 3,
-          "nb_places": 0
-        },
-        {
-          "n°": "2",
-          "cheval": "KOSOMETSUKE H.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: KODIAC et INVITATIONAL (POET'S VOICE)",
-          "corde": "(Corde:07)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/DON/8/20261024-DON-8-2.png",
-          "propriétaire": "MR J BLACKBURN & PARTNER",
-          "entraineur": "MICHAEL DODS",
-          "éleveurs": "",
-          "jockey": "SEAN KIRRANE",
-          "poids": "63.5 kg",
-          "gains": "2763500",
-          "musique": "3p9p4p8p5p",
-          "valeur": "63.5",
-          "equipement(s)": "",
-          "nb_courses": 16,
-          "nb_victoires": 3,
-          "nb_places": 4
+          "nb_places": 0,
+          "cote": 6.8,
+          "cote_tendance": "",
+          "cote_reference": 6.8
         },
         {
           "n°": "3",
@@ -1567,7 +1625,10 @@
           "equipement(s)": "A",
           "nb_courses": 12,
           "nb_victoires": 2,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0
         },
         {
           "n°": "4",
@@ -1587,7 +1648,10 @@
           "equipement(s)": "",
           "nb_courses": 11,
           "nb_victoires": 1,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 23.0,
+          "cote_tendance": "",
+          "cote_reference": 23.0
         },
         {
           "n°": "5",
@@ -1607,7 +1671,10 @@
           "equipement(s)": "",
           "nb_courses": 35,
           "nb_victoires": 6,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 95.0,
+          "cote_tendance": "",
+          "cote_reference": 95.0
         },
         {
           "n°": "6",
@@ -1627,7 +1694,10 @@
           "equipement(s)": "",
           "nb_courses": 23,
           "nb_victoires": 3,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 1.4,
+          "cote_tendance": "",
+          "cote_reference": 1.4
         },
         {
           "n°": "7",
@@ -1687,7 +1757,10 @@
           "equipement(s)": "A",
           "nb_courses": 35,
           "nb_victoires": 6,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 15.0
         },
         {
           "n°": "10",
@@ -1707,7 +1780,10 @@
           "equipement(s)": "",
           "nb_courses": 50,
           "nb_victoires": 5,
-          "nb_places": 11
+          "nb_places": 11,
+          "cote": 23.0,
+          "cote_tendance": "",
+          "cote_reference": 23.0
         },
         {
           "n°": "11",
@@ -1767,29 +1843,15 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 1,
-          "nb_places": 2
-        },
-        {
-          "n°": "14",
-          "cheval": "KODY B H.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: DARK ANGEL et KODINAR (KODIAC)",
-          "corde": "(Corde:11)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261024/DON/8/20261024-DON-8-14.png",
-          "propriétaire": "MR DAVID K. BARKER",
-          "entraineur": "CRAIG LIDSTER",
-          "éleveurs": "",
-          "jockey": "P. J. MCDONALD",
-          "poids": "58 kg",
-          "gains": "1359400",
-          "musique": "8p1p7p6p6p",
-          "valeur": "58.0",
-          "equipement(s)": "A",
-          "nb_courses": 12,
-          "nb_victoires": 2,
-          "nb_places": 1
+          "nb_places": 2,
+          "cote": 23.0,
+          "cote_tendance": "",
+          "cote_reference": 23.0
         }
       ],
+      "typePiste": "HERBE",
+      "terrain": "Très souple",
+      "penetrometre": "3,8",
       "cordeCourse": "CORDE_GAUCHE"
     }
   ]
