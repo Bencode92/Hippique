@@ -27,16 +27,16 @@
 
 ### 2. PRIX D'IENA
 
-*14h33 · haies · 3400 m · 6 partants · cotes à T−3:58*
+*14h33 · haies · 3400 m · 6 partants · cotes à T−1:19*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 1 | MAGIC DES CHARMES | 2,8 | 2,3 | J.REVELEY | –/438/88/141 |
-| 4 | LA TURBIE | 4,6 | 6,8 | B.LE CLERC | 210/31/69/97 |
-| 6 | MAHADEVI | 4,6 | 3,8 | F.GILES | –/438/–/– |
-| 5 | ALMARITA | 6 | 7,2 | L.PHILIPPERON | 269/91/13/87 |
-| 2 | PURPLE POWER | 6,4 | 8,8 | T.CHEVILLARD | 156/43/388/1798 |
-| 3 | ZOOK | 25 | 21 | BR.LE CLERC | 210/369/624/– |
+| 1 | MAGIC DES CHARMES | 2,6 | 2,3 | J.REVELEY | –/438/88/141 |
+| 4 | LA TURBIE | 4,3 | 6,8 | B.LE CLERC | 210/31/69/97 |
+| 6 | MAHADEVI | 4,4 | 3,8 | F.GILES | –/438/–/– |
+| 5 | ALMARITA | 6,9 | 7,2 | L.PHILIPPERON | 269/91/13/87 |
+| 2 | PURPLE POWER | 8,5 | 8,8 | T.CHEVILLARD | 156/43/388/1798 |
+| 3 | ZOOK | 27 | 21 | BR.LE CLERC | 210/369/624/– |
 
 ### 3. PRIX DE BEAUNE
 
