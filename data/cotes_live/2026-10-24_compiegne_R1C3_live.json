@@ -4,8 +4,8 @@
   "reunion": 1,
   "heure_depart": 1792847700000,
   "distance": 3600,
-  "scraped_at": "2026-10-24T15:11:21.676588+02:00",
-  "minutes_avant_depart": 4,
+  "scraped_at": "2026-10-24T15:14:01.573621+02:00",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
@@ -14,25 +14,25 @@
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847477000
+      "timestamp_cote": 1792847627000
     },
     {
       "numPmu": 2,
       "nom": "COUTE QUE COUTE",
-      "cote_live": 10.0,
+      "cote_live": 11.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847477000
+      "timestamp_cote": 1792847627000
     },
     {
       "numPmu": 3,
       "nom": "BELLE GOSSE",
-      "cote_live": 22.0,
+      "cote_live": 23.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847477000
+      "timestamp_cote": 1792847627000
     },
     {
       "numPmu": 4,
@@ -41,34 +41,34 @@
       "cote_reference": 4.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792847477000
+      "timestamp_cote": 1792847627000
     },
     {
       "numPmu": 5,
       "nom": "LADY LADY LAY",
-      "cote_live": 22.0,
+      "cote_live": 24.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847477000
+      "timestamp_cote": 1792847627000
     },
     {
       "numPmu": 6,
       "nom": "LE COLOMBAR",
-      "cote_live": 19.0,
+      "cote_live": 17.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847477000
+      "timestamp_cote": 1792847627000
     },
     {
       "numPmu": 7,
       "nom": "MON PETIT PRINCE",
-      "cote_live": 5.3,
+      "cote_live": 5.6,
       "cote_reference": 5.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847477000
+      "timestamp_cote": 1792847627000
     },
     {
       "numPmu": 8,
@@ -77,25 +77,25 @@
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847477000
+      "timestamp_cote": 1792847627000
     },
     {
       "numPmu": 9,
       "nom": "LE COEUR SAUVAGE",
-      "cote_live": 8.9,
+      "cote_live": 8.1,
       "cote_reference": 9.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847477000
+      "timestamp_cote": 1792847627000
     },
     {
       "numPmu": 10,
       "nom": "FLYING TRIX",
-      "cote_live": 23.0,
+      "cote_live": 22.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847477000
+      "timestamp_cote": 1792847627000
     },
     {
       "numPmu": 11,
@@ -104,7 +104,7 @@
       "cote_reference": 28.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847477000
+      "timestamp_cote": 1792847627000
     },
     {
       "numPmu": 12,
@@ -113,34 +113,34 @@
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847477000
+      "timestamp_cote": 1792847627000
     },
     {
       "numPmu": 13,
       "nom": "KING LANE",
-      "cote_live": 56.0,
+      "cote_live": 47.0,
       "cote_reference": 58.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847477000
+      "timestamp_cote": 1792847627000
     },
     {
       "numPmu": 14,
       "nom": "CAPTAIN FLAG",
-      "cote_live": 21.0,
+      "cote_live": 22.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847477000
+      "timestamp_cote": 1792847627000
     },
     {
       "numPmu": 15,
       "nom": "LERIKA",
-      "cote_live": 44.0,
+      "cote_live": 48.0,
       "cote_reference": 43.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847477000
+      "timestamp_cote": 1792847627000
     }
   ],
   "hippodrome": "COMPIEGNE",
@@ -353,6 +353,90 @@
         "13": 56.0,
         "14": 21.0,
         "15": 44.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-24T15:12:01.698281+02:00",
+      "minutes_avant_depart": 2.9808146166666663,
+      "cotes": {
+        "1": 13.0,
+        "2": 10.0,
+        "3": 22.0,
+        "4": 5.1,
+        "5": 23.0,
+        "6": 19.0,
+        "7": 5.4,
+        "8": 14.0,
+        "9": 8.2,
+        "10": 23.0,
+        "11": 26.0,
+        "12": 22.0,
+        "13": 57.0,
+        "14": 21.0,
+        "15": 45.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-24T15:12:41.407326+02:00",
+      "minutes_avant_depart": 2.3141450999999997,
+      "cotes": {
+        "1": 13.0,
+        "2": 10.0,
+        "3": 22.0,
+        "4": 5.1,
+        "5": 23.0,
+        "6": 19.0,
+        "7": 5.5,
+        "8": 13.0,
+        "9": 8.3,
+        "10": 21.0,
+        "11": 27.0,
+        "12": 22.0,
+        "13": 58.0,
+        "14": 21.0,
+        "15": 47.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-24T15:13:21.954296+02:00",
+      "minutes_avant_depart": 1.6474763000000001,
+      "cotes": {
+        "1": 13.0,
+        "2": 10.0,
+        "3": 22.0,
+        "4": 5.1,
+        "5": 24.0,
+        "6": 18.0,
+        "7": 5.6,
+        "8": 14.0,
+        "9": 8.0,
+        "10": 22.0,
+        "11": 25.0,
+        "12": 21.0,
+        "13": 60.0,
+        "14": 22.0,
+        "15": 47.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-24T15:14:01.573621+02:00",
+      "minutes_avant_depart": 0.9742763833333333,
+      "cotes": {
+        "1": 13.0,
+        "2": 11.0,
+        "3": 23.0,
+        "4": 5.1,
+        "5": 24.0,
+        "6": 17.0,
+        "7": 5.6,
+        "8": 14.0,
+        "9": 8.1,
+        "10": 22.0,
+        "11": 25.0,
+        "12": 22.0,
+        "13": 47.0,
+        "14": 22.0,
+        "15": 48.0
       }
     }
   ]
