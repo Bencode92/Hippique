@@ -1,6 +1,6 @@
 # COMPIEGNE — 24/10/2026
 
-8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -90,20 +90,20 @@
 
 ### 6. GRAND STEEPLE-CHASE DE COMPIEGNE
 
-*17h00 · steeple · 4100 m · 10 partants · cotes de l'extraction*
+*17h00 · steeple · 4100 m · 10 partants · cotes à T−29:30*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 2 | LE PHILOSOPHE | 3 | G.MASURE | 226/380/1737/– |
-| 1 | GAME OF STORM | 3,1 | K.NABET | 390/288/1922/5279 |
-| 8 | VICTORY VALLEY | 8,3 | F.BAYLE | 385/380/–/4498 |
-| 3 | JAGUAR DU BERLAIS | 14 | THO .JOURNIAC | 238/232/705/842 |
-| 10 | BUBBLE PRETTY | 16 | N.FERREIRA | 489/376/695/1846 |
-| 6 | IMPRESSIVE | 18 | Q.DEFONTAINE | –/453/1473/2219 |
-| 7 | PICKLAND | 19 | T.CHEVILLARD | 156/241/3771/2527 |
-| 4 | GIACOSA | 20 | F.GILES | –/438/–/2038 |
-| 9 | CI PPO RA | 20 | B.LE CLERC | 210/157/3595/5119 |
-| 5 | KENTUCKY WOOD | 28 | A.ZULIANI | 165/288/3967/9 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 2 | LE PHILOSOPHE | 2,9 | 3 | G.MASURE | 226/380/1737/– |
+| 1 | GAME OF STORM | 3,3 | 3,1 | K.NABET | 390/288/1922/5279 |
+| 8 | VICTORY VALLEY | 9,7 | 8,3 | F.BAYLE | 385/380/–/4498 |
+| 3 | JAGUAR DU BERLAIS | 14 | 14 | THO .JOURNIAC | 238/232/705/842 |
+| 10 | BUBBLE PRETTY | 14 | 16 | N.FERREIRA | 489/376/695/1846 |
+| 6 | IMPRESSIVE | 15 | 18 | Q.DEFONTAINE | –/453/1473/2219 |
+| 4 | GIACOSA | 18 | 20 | F.GILES | –/438/–/2038 |
+| 9 | CI PPO RA | 18 | 20 | B.LE CLERC | 210/157/3595/5119 |
+| 7 | PICKLAND | 19 | 19 | T.CHEVILLARD | 156/241/3771/2527 |
+| 5 | KENTUCKY WOOD | 25 | 28 | A.ZULIANI | 165/288/3967/9 |
 
 ### 7. PRIX DE BESANCON
 
