@@ -4,17 +4,17 @@
   "reunion": 1,
   "heure_depart": 1792851900000,
   "distance": 3600,
-  "scraped_at": "2026-10-24T15:55:10.598422+02:00",
-  "minutes_avant_depart": 30,
+  "scraped_at": "2026-10-24T15:59:50.886910+02:00",
+  "minutes_avant_depart": 25,
   "participants": [
     {
       "numPmu": 1,
       "nom": "SHABRACK",
-      "cote_live": 4.6,
+      "cote_live": 4.5,
       "cote_reference": 4.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792849547000
+      "timestamp_cote": 1792850367000
     },
     {
       "numPmu": 2,
@@ -23,7 +23,7 @@
       "cote_reference": 9.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792849547000
+      "timestamp_cote": 1792850367000
     },
     {
       "numPmu": 3,
@@ -32,7 +32,7 @@
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792849547000
+      "timestamp_cote": 1792850367000
     },
     {
       "numPmu": 4,
@@ -41,34 +41,34 @@
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792849547000
+      "timestamp_cote": 1792850367000
     },
     {
       "numPmu": 5,
       "nom": "KILL PASS",
-      "cote_live": 6.1,
+      "cote_live": 6.0,
       "cote_reference": 5.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792849547000
+      "timestamp_cote": 1792850367000
     },
     {
       "numPmu": 6,
       "nom": "MADISON ROQUE",
-      "cote_live": 4.1,
+      "cote_live": 3.8,
       "cote_reference": 4.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792849547000
+      "timestamp_cote": 1792850367000
     },
     {
       "numPmu": 7,
       "nom": "KILLING BID",
-      "cote_live": 4.2,
+      "cote_live": 4.5,
       "cote_reference": 4.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792849547000
+      "timestamp_cote": 1792850367000
     }
   ],
   "hippodrome": "COMPIEGNE",
@@ -84,6 +84,19 @@
         "5": 6.1,
         "6": 4.1,
         "7": 4.2
+      }
+    },
+    {
+      "scraped_at": "2026-10-24T15:59:50.886910+02:00",
+      "minutes_avant_depart": 25.155173333333334,
+      "cotes": {
+        "1": 4.5,
+        "2": 9.4,
+        "3": 11.0,
+        "4": 12.0,
+        "5": 6.0,
+        "6": 3.8,
+        "7": 4.5
       }
     }
   ]
