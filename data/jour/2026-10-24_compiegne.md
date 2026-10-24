@@ -107,18 +107,18 @@
 
 ### 7. PRIX DE BESANCON
 
-*17h35 · haies · 3600 m · 8 partants · cotes à T−12:30*
+*17h35 · haies · 3600 m · 8 partants · cotes à T−8:50*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 4 | ILLUSION MACHINE | 3,5 | 3,2 | J.REVELEY | –/438/344/1246 |
-| 3 | OLYMPIC STORY | 6,2 | 10 | A.ZULIANI | 165/288/2740/9 |
-| 7 | ANATOLE | 6,6 | 5,4 | T.BEAURAIN | 267/600/5/248 |
+| 4 | ILLUSION MACHINE | 3,1 | 3,2 | J.REVELEY | –/438/344/1246 |
+| 3 | OLYMPIC STORY | 5 | 10 | A.ZULIANI | 165/288/2740/9 |
 | 5 | GARDIEN DE MUSEE | 6,7 | 5,6 | G.MEUNIER | 337/410/182/9 |
-| 8 | AL FONCE | 7 | 7,5 | L.BRECHET | 50/438/947/– |
-| 2 | STYLE D'EMIRS | 8,4 | 11 | A.CHESNEAU | 258/410/1640/898 |
-| 1 | GALLIPOLI | 11 | 8,8 | J.HONDIER | 438/438/153/228 |
-| 6 | CAF'CONC | 23 | 27 | A.DUVACHER | 409/630/881/4025 |
+| 7 | ANATOLE | 8,1 | 5,4 | T.BEAURAIN | 267/600/5/248 |
+| 8 | AL FONCE | 8,7 | 7,5 | L.BRECHET | 50/438/947/– |
+| 2 | STYLE D'EMIRS | 9,7 | 11 | A.CHESNEAU | 258/410/1640/898 |
+| 1 | GALLIPOLI | 12 | 8,8 | J.HONDIER | 438/438/153/228 |
+| 6 | CAF'CONC | 17 | 27 | A.DUVACHER | 409/630/881/4025 |
 
 ### 8. PRIX CERILLY
 

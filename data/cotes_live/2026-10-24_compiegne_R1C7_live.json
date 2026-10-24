@@ -2,46 +2,46 @@
   "course": "PRIX DE BESANCON",
   "numero": 7,
   "reunion": 1,
-  "heure_depart": 1792856100000,
+  "heure_depart": 1792856400000,
   "distance": 3600,
-  "scraped_at": "2026-10-24T17:22:30.311089+02:00",
-  "minutes_avant_depart": 12,
+  "scraped_at": "2026-10-24T17:31:10.282949+02:00",
+  "minutes_avant_depart": 9,
   "participants": [
     {
       "numPmu": 1,
       "nom": "GALLIPOLI",
-      "cote_live": 11.0,
+      "cote_live": 12.0,
       "cote_reference": 8.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792855335000
+      "timestamp_cote": 1792855859000
     },
     {
       "numPmu": 2,
       "nom": "STYLE D'EMIRS",
-      "cote_live": 8.4,
+      "cote_live": 9.7,
       "cote_reference": 8.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792855335000
+      "timestamp_cote": 1792855859000
     },
     {
       "numPmu": 3,
       "nom": "OLYMPIC STORY",
-      "cote_live": 6.2,
+      "cote_live": 5.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792855335000
+      "timestamp_cote": 1792855859000
     },
     {
       "numPmu": 4,
       "nom": "ILLUSION MACHINE",
-      "cote_live": 3.5,
+      "cote_live": 3.1,
       "cote_reference": 3.2,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792855335000
+      "timestamp_cote": 1792855859000
     },
     {
       "numPmu": 5,
@@ -50,34 +50,34 @@
       "cote_reference": 5.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792855335000
+      "timestamp_cote": 1792855859000
     },
     {
       "numPmu": 6,
       "nom": "CAF'CONC",
-      "cote_live": 23.0,
+      "cote_live": 17.0,
       "cote_reference": 30.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792855335000
+      "timestamp_cote": 1792855859000
     },
     {
       "numPmu": 7,
       "nom": "ANATOLE",
-      "cote_live": 6.6,
+      "cote_live": 8.1,
       "cote_reference": 5.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792855335000
+      "timestamp_cote": 1792855859000
     },
     {
       "numPmu": 8,
       "nom": "AL FONCE",
-      "cote_live": 7.0,
+      "cote_live": 8.7,
       "cote_reference": 8.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792855335000
+      "timestamp_cote": 1792855859000
     }
   ],
   "hippodrome": "COMPIEGNE",
@@ -150,6 +150,20 @@
         "6": 23.0,
         "7": 6.6,
         "8": 7.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-24T17:31:10.282949+02:00",
+      "minutes_avant_depart": 8.833141483333332,
+      "cotes": {
+        "1": 12.0,
+        "2": 9.7,
+        "3": 5.0,
+        "4": 3.1,
+        "5": 6.7,
+        "6": 17.0,
+        "7": 8.1,
+        "8": 8.7
       }
     }
   ]
