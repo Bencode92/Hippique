@@ -4,26 +4,26 @@
   "reunion": 1,
   "heure_depart": 1792858380000,
   "distance": 3450,
-  "scraped_at": "2026-10-24T18:13:10.438437+02:00",
-  "minutes_avant_depart": 0,
+  "scraped_at": "2026-10-24T18:15:50.249839+02:00",
+  "minutes_avant_depart": -3,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MACARENA DU RIB",
-      "cote_live": 5.2,
+      "cote_live": 5.0,
       "cote_reference": 7.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792858378000
+      "timestamp_cote": 1792858440000
     },
     {
       "numPmu": 2,
       "nom": "DIAMANT DU RHEU",
-      "cote_live": 6.2,
+      "cote_live": 6.7,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792858378000
+      "timestamp_cote": 1792858440000
     },
     {
       "numPmu": 3,
@@ -32,25 +32,25 @@
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792858378000
+      "timestamp_cote": 1792858440000
     },
     {
       "numPmu": 4,
       "nom": "LEWIS GREY",
-      "cote_live": 14.0,
+      "cote_live": 12.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792858378000
+      "timestamp_cote": 1792858440000
     },
     {
       "numPmu": 5,
       "nom": "THE PRINCE",
-      "cote_live": 13.0,
+      "cote_live": 11.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792858378000
+      "timestamp_cote": 1792858440000
     },
     {
       "numPmu": 6,
@@ -59,16 +59,16 @@
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792858378000
+      "timestamp_cote": 1792858440000
     },
     {
       "numPmu": 7,
       "nom": "MALESSIA",
-      "cote_live": 17.0,
+      "cote_live": 18.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792858378000
+      "timestamp_cote": 1792858440000
     },
     {
       "numPmu": 8,
@@ -77,43 +77,43 @@
       "cote_reference": 8.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792858378000
+      "timestamp_cote": 1792858440000
     },
     {
       "numPmu": 9,
       "nom": "MON AUDACE",
-      "cote_live": 70.0,
+      "cote_live": 77.0,
       "cote_reference": 50.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792858378000
+      "timestamp_cote": 1792858440000
     },
     {
       "numPmu": 10,
       "nom": "MIKI BILLY",
-      "cote_live": 14.0,
+      "cote_live": 15.0,
       "cote_reference": 9.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792858378000
+      "timestamp_cote": 1792858440000
     },
     {
       "numPmu": 11,
       "nom": "POPY",
-      "cote_live": 8.2,
+      "cote_live": 8.7,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792858378000
+      "timestamp_cote": 1792858440000
     },
     {
       "numPmu": 12,
       "nom": "CIEL MON CASTOR",
-      "cote_live": 7.7,
+      "cote_live": 7.9,
       "cote_reference": 4.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792858378000
+      "timestamp_cote": 1792858440000
     }
   ],
   "hippodrome": "COMPIEGNE",
@@ -422,6 +422,78 @@
         "10": 14.0,
         "11": 8.2,
         "12": 7.7
+      }
+    },
+    {
+      "scraped_at": "2026-10-24T18:13:50.087433+02:00",
+      "minutes_avant_depart": -0.8336552333333334,
+      "cotes": {
+        "1": 5.0,
+        "2": 6.6,
+        "3": 15.0,
+        "4": 14.0,
+        "5": 11.0,
+        "6": 15.0,
+        "7": 17.0,
+        "8": 7.9,
+        "9": 74.0,
+        "10": 15.0,
+        "11": 8.5,
+        "12": 8.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-24T18:14:30.286050+02:00",
+      "minutes_avant_depart": -1.5003241666666667,
+      "cotes": {
+        "1": 5.0,
+        "2": 6.7,
+        "3": 14.0,
+        "4": 12.0,
+        "5": 11.0,
+        "6": 15.0,
+        "7": 18.0,
+        "8": 8.3,
+        "9": 77.0,
+        "10": 15.0,
+        "11": 8.7,
+        "12": 7.9
+      }
+    },
+    {
+      "scraped_at": "2026-10-24T18:15:10.281193+02:00",
+      "minutes_avant_depart": -2.1669924833333334,
+      "cotes": {
+        "1": 5.0,
+        "2": 6.7,
+        "3": 14.0,
+        "4": 12.0,
+        "5": 11.0,
+        "6": 15.0,
+        "7": 18.0,
+        "8": 8.3,
+        "9": 77.0,
+        "10": 15.0,
+        "11": 8.7,
+        "12": 7.9
+      }
+    },
+    {
+      "scraped_at": "2026-10-24T18:15:50.249839+02:00",
+      "minutes_avant_depart": -2.8336612833333334,
+      "cotes": {
+        "1": 5.0,
+        "2": 6.7,
+        "3": 14.0,
+        "4": 12.0,
+        "5": 11.0,
+        "6": 15.0,
+        "7": 18.0,
+        "8": 8.3,
+        "9": 77.0,
+        "10": 15.0,
+        "11": 8.7,
+        "12": 7.9
       }
     }
   ]
