@@ -40,23 +40,23 @@
 
 ### 3. PRIX DE BEAUNE
 
-*15h15 · haies · 3600 m · 15 partants · cotes à T−17:38*
+*15h15 · haies · 3600 m · 15 partants · cotes à T−12:59*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
 | 4 | LOUBA | 4,8 | 4,4 | B.LE CLERC | 210/157/3595/5119 |
-| 7 | MON PETIT PRINCE | 5,1 | 5,4 | T.CHEVILLARD | 156/241/–/2241 |
-| 9 | LE COEUR SAUVAGE | 8,9 | 9,3 | K.NABET | 390/228/3388/2631 |
+| 7 | MON PETIT PRINCE | 5,2 | 5,4 | T.CHEVILLARD | 156/241/–/2241 |
+| 9 | LE COEUR SAUVAGE | 8,8 | 9,3 | K.NABET | 390/228/3388/2631 |
 | 2 | COUTE QUE COUTE | 11 | 12 | J.REVELEY | –/376/–/– |
 | 1 | SIR MARVEL | 14 | 13 | L.PHILIPPERON | 269/91/2900/396 |
 | 8 | LADY ANGE WIN | 14 | 12 | BR.LE CLERC | 210/369/4285/– |
-| 12 | LIBRE ARBITRE | 19 | 21 | F.GILES | –/376/55/3370 |
 | 3 | BELLE GOSSE | 20 | 20 | A.ZULIANI | 165/288/–/3405 |
 | 6 | LE COLOMBAR | 20 | 21 | J.PHELIPPE | 330/91/–/– |
+| 12 | LIBRE ARBITRE | 20 | 21 | F.GILES | –/376/55/3370 |
 | 14 | CAPTAIN FLAG | 20 | 20 | N.FERREIRA | 489/586/2594/5188 |
 | 5 | LADY LADY LAY | 23 | 25 | J.CHARRON | –/241/510/– |
 | 10 | FLYING TRIX | 25 | 28 | T.BEAURAIN | 267/240/4314/3731 |
-| 11 | JOCASTA | 31 | 30 | T.SERVIER | 289/423/1604/3722 |
+| 11 | JOCASTA | 28 | 30 | T.SERVIER | 289/423/1604/3722 |
 | 15 | LERIKA | 44 | 46 | L.BEAUBOIS | –/626/764/1742 |
 | 13 | KING LANE | 61 | 56 | F.BAYLE | 385/370/–/5460 |
 
