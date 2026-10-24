@@ -1,8 +1,8 @@
 # FLEMINGTON — 24/10/2026
 
-1 courses.
+1 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -12,15 +12,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | CEOLWULF | – | CHAD SCHOFIELD |
-| 2 | LIGHT INFANTRY MAN | – | HARRY COFFEY |
-| 3 | SIR DELIUS | – | CRAIG WILLIAMS |
-| 4 | ATTRITION | – | JAMIE MOTT |
-| 5 | COSMIC CRUSADER | – | WILLIAM PIKE |
-| 6 | BIRDMAN | – | BEN MELHAM |
-| 7 | LAND LEGEND | – | ETHAN BROWN |
-| 8 | MIDDLE EARTH | – | JOHN ALLEN |
-| 9 | SAINT GEORGE | – | BLAKE SHINN |
-| 10 | AELIANA | – | JAMES MCDONALD |
-| 11 | WARWOVEN | – | RACHEL KING |
-| 12 | BLIND RAISE | – | JAMIE MELHAM |
+| 10 | AELIANA | 4,6 | JAMES MCDONALD |
+| 3 | SIR DELIUS | 4,7 | CRAIG WILLIAMS |
+| 11 | WARWOVEN | 5,3 | RACHEL KING |
+| 1 | CEOLWULF | 8,6 | CHAD SCHOFIELD |
+| 5 | COSMIC CRUSADER | 9 | WILLIAM PIKE |
+| 6 | BIRDMAN | 11 | BEN MELHAM |
+| 12 | BLIND RAISE | 13 | JAMIE MELHAM |
+| 9 | SAINT GEORGE | 14 | BLAKE SHINN |
+| 2 | LIGHT INFANTRY MAN | 17 | HARRY COFFEY |
+| 7 | LAND LEGEND | 30 | ETHAN BROWN |
+| 4 | ATTRITION | 39 | JAMIE MOTT |
+| 8 | MIDDLE EARTH | 49 | JOHN ALLEN |
