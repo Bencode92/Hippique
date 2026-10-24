@@ -4,71 +4,71 @@
   "reunion": 1,
   "heure_depart": 1792851900000,
   "distance": 3600,
-  "scraped_at": "2026-10-24T16:04:30.528354+02:00",
-  "minutes_avant_depart": 21,
+  "scraped_at": "2026-10-24T16:08:30.195532+02:00",
+  "minutes_avant_depart": 17,
   "participants": [
     {
       "numPmu": 1,
       "nom": "SHABRACK",
-      "cote_live": 3.8,
+      "cote_live": 4.3,
       "cote_reference": 4.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792850653000
+      "timestamp_cote": 1792850895000
     },
     {
       "numPmu": 2,
       "nom": "BOYSTONE",
-      "cote_live": 8.7,
+      "cote_live": 7.0,
       "cote_reference": 9.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792850653000
+      "timestamp_cote": 1792850895000
     },
     {
       "numPmu": 3,
       "nom": "FANFARON",
-      "cote_live": 9.0,
+      "cote_live": 9.6,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792850653000
+      "timestamp_cote": 1792850895000
     },
     {
       "numPmu": 4,
       "nom": "FRECKLES",
-      "cote_live": 14.0,
+      "cote_live": 13.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792850653000
+      "timestamp_cote": 1792850895000
     },
     {
       "numPmu": 5,
       "nom": "KILL PASS",
-      "cote_live": 7.1,
+      "cote_live": 6.2,
       "cote_reference": 5.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792850653000
+      "timestamp_cote": 1792850895000
     },
     {
       "numPmu": 6,
       "nom": "MADISON ROQUE",
-      "cote_live": 4.2,
+      "cote_live": 4.5,
       "cote_reference": 4.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792850653000
+      "timestamp_cote": 1792850895000
     },
     {
       "numPmu": 7,
       "nom": "KILLING BID",
-      "cote_live": 4.7,
+      "cote_live": 4.8,
       "cote_reference": 4.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792850653000
+      "timestamp_cote": 1792850895000
     }
   ],
   "hippodrome": "COMPIEGNE",
@@ -110,6 +110,19 @@
         "5": 7.1,
         "6": 4.2,
         "7": 4.7
+      }
+    },
+    {
+      "scraped_at": "2026-10-24T16:08:30.195532+02:00",
+      "minutes_avant_depart": 16.500066483333335,
+      "cotes": {
+        "1": 4.3,
+        "2": 7.0,
+        "3": 9.6,
+        "4": 13.0,
+        "5": 6.2,
+        "6": 4.5,
+        "7": 4.8
       }
     }
   ]
