@@ -12,16 +12,16 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 3 | KING OF LIGHT | 2,2 | ROSSA RYAN | 215/–/–/– |
-| 8 | MILFORD | 9,1 | TOM KIELY-MARSHALL | –/–/–/– |
-| 5 | SOVEREIGN SPELL | 10 | D. EGAN | 312/358/–/63 |
-| 1 | AL SHABAB STORM | 11 | HARRY VIGORS | –/–/–/– |
-| 7 | ROSARIO | 11 | CAM HARDIE | –/204/–/– |
-| 2 | LUNA A INBHIR NIS | 14 | JASON HART | 492/311/–/408 |
-| 4 | ANCIENT STATE | 14 | CIEREN FALLON | 321/–/–/– |
-| 6 | ETERNAL SUNSHINE | 14 | LAUREN YOUNG | –/–/–/– |
-| 10 | BOSTON DAN | 16 | DURAN FENTIMAN | –/539/–/– |
-| 9 | SCHRODINGER'S CAT | 33 | ANDREW MULLEN | –/–/–/– |
+| 1 | AL SHABAB STORM | 4,2 | HARRY VIGORS | –/–/–/– |
+| 4 | ANCIENT STATE | 5,7 | CIEREN FALLON | 321/–/–/– |
+| 3 | KING OF LIGHT | 6,3 | ROSSA RYAN | 215/–/–/– |
+| 8 | MILFORD | 9,9 | TOM KIELY-MARSHALL | –/–/–/– |
+| 6 | ETERNAL SUNSHINE | 9,9 | LAUREN YOUNG | –/–/–/– |
+| 7 | ROSARIO | 10 | CAM HARDIE | –/204/–/– |
+| 5 | SOVEREIGN SPELL | 12 | D. EGAN | 312/358/–/63 |
+| 10 | BOSTON DAN | 14 | DURAN FENTIMAN | –/539/–/– |
+| 9 | SCHRODINGER'S CAT | 16 | ANDREW MULLEN | –/–/–/– |
+| 2 | LUNA A INBHIR NIS | 16 | JASON HART | 492/311/–/408 |
 
 ### 2. FUTURITY TROPHY STAKES (CLASS 1) (GROUP 1)
 
@@ -29,13 +29,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 6 | NOBLE EXHIBIT | 2 | RYAN MOORE | 151/3/–/523 |
-| 1 | AL HUDAIBA | 3,7 | WILLIAM BUICK | 168/101/–/46 |
-| 3 | BURNING UP | 4,4 | CLIFFORD LEE | 246/42/–/– |
-| 5 | GRAN DIA | 16 | OISIN MURPHY | 144/116/–/93 |
-| 7 | SERGEI DIAGHILEV | 27 | W.M. LORDAN | 265/3/–/574 |
-| 4 | GIANT SEQUOIA | 30 | DYLAN BROWNE MCMONAGLE | 176/3/–/– |
-| 2 | BREACHER | 81 | LEWIS EDMUNDS | 410/–/–/– |
+| 6 | NOBLE EXHIBIT | 2,7 | RYAN MOORE | 151/3/–/523 |
+| 1 | AL HUDAIBA | 3,1 | WILLIAM BUICK | 168/101/–/46 |
+| 3 | BURNING UP | 7,1 | CLIFFORD LEE | 246/42/–/– |
+| 5 | GRAN DIA | 10 | OISIN MURPHY | 144/116/–/93 |
+| 4 | GIANT SEQUOIA | 12 | DYLAN BROWNE MCMONAGLE | 176/3/–/– |
+| 7 | SERGEI DIAGHILEV | 12 | W.M. LORDAN | 265/3/–/574 |
+| 2 | BREACHER | 19 | LEWIS EDMUNDS | 410/–/–/– |
 
 ### 3. PROSPECT STAKES (LISTED RACE) (REGISTERED AS THE DONCASTER STAKES)
 
@@ -43,13 +43,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | BENGAL TIGER | 1,1 | RYAN MOORE | 151/3/–/574 |
-| 6 | CRYSTAL QUEEN | 25 | WILLIAM BUICK | 168/–/–/1566 |
-| 5 | BIG HITTER | 28 | P. J. MCDONALD | 256/–/–/381 |
-| 3 | HI CORBETT COURT | 32 | W. J. LEE | 255/232/–/– |
-| 4 | ANGELS PASSING | 43 | OISIN MURPHY | 144/337/–/– |
-| 8 | ROGUE JEWEL | 43 | CIEREN FALLON | 321/221/–/2466 |
-| 7 | ELEVATING | 129 | SEAN LEVEY | 266/279/–/1867 |
+| 1 | BENGAL TIGER | 1,2 | RYAN MOORE | 151/3/–/574 |
+| 6 | CRYSTAL QUEEN | 8,7 | WILLIAM BUICK | 168/–/–/1566 |
+| 5 | BIG HITTER | 14 | P. J. MCDONALD | 256/–/–/381 |
+| 8 | ROGUE JEWEL | 20 | CIEREN FALLON | 321/221/–/2466 |
+| 3 | HI CORBETT COURT | 23 | W. J. LEE | 255/232/–/– |
+| 7 | ELEVATING | 23 | SEAN LEVEY | 266/279/–/1867 |
+| 4 | ANGELS PASSING | 33 | OISIN MURPHY | 144/337/–/– |
 
 ### 4. NURSERY HANDICAP (CLASS 3)
 
@@ -57,10 +57,10 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | NATIONAL HONOUR | 1,1 | WILLIAM BUICK | 168/101/–/46 |
-| 2 | SHADOW KING | 10 | SEAN LEVEY | 266/279/–/– |
-| 4 | ROCK STEADY BEAT | 18 | CONNOR PLANAS | –/42/–/– |
-| 3 | SCIENZA | 23 | NICOLA CURRIE | –/116/–/– |
+| 1 | NATIONAL HONOUR | 1,4 | WILLIAM BUICK | 168/101/–/46 |
+| 2 | SHADOW KING | 3,7 | SEAN LEVEY | 266/279/–/– |
+| 4 | ROCK STEADY BEAT | 11 | CONNOR PLANAS | –/42/–/– |
+| 3 | SCIENZA | 12 | NICOLA CURRIE | –/116/–/– |
 
 ### 5. HANDICAP (CLASS 3)
 
@@ -68,16 +68,16 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 4 | SHIPBOURNE | 1,3 | ROSSA RYAN | 215/158/–/– |
-| 5 | ANYASI | 9,2 | RAY DAWSON | 315/510/–/– |
+| 4 | SHIPBOURNE | 1,7 | ROSSA RYAN | 215/158/–/– |
+| 5 | ANYASI | 5,9 | RAY DAWSON | 315/510/–/– |
 | 11 | ON THE RIVER | 11 | SEAN DYLAN BOWEN | –/–/–/– |
 | 3 | CAVOLO NERO | 12 | OISIN MURPHY | 144/259/–/– |
-| 6 | MR PROFESSOR | 25 | D. EGAN | 312/358/–/63 |
-| 9 | MONOCEROS | 25 | ANDREW MULLEN | –/–/–/– |
-| 10 | LIR SPECIALE | 25 | WILLIAM BUICK | 168/424/–/1094 |
-| 2 | RIVER KING | 50 | SEAN LEVEY | 266/279/–/– |
-| 7 | ANDESITE | – | DAVID NOLAN | –/–/–/– |
-| 8 | DESPERATE DAN | – | PAUL MULRENNAN | –/866/–/– |
+| 2 | RIVER KING | 20 | SEAN LEVEY | 266/279/–/– |
+| 6 | MR PROFESSOR | 20 | D. EGAN | 312/358/–/63 |
+| 9 | MONOCEROS | 20 | ANDREW MULLEN | –/–/–/– |
+| 10 | LIR SPECIALE | 31 | WILLIAM BUICK | 168/424/–/1094 |
+| 7 | ANDESITE | 62 | DAVID NOLAN | –/–/–/– |
+| 8 | DESPERATE DAN | 62 | PAUL MULRENNAN | –/866/–/– |
 
 ### 6. HANDICAP (CLASS 2)
 
@@ -85,20 +85,20 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | CASTLEMONT | 1,5 | WILLIAM BUICK | 168/101/–/46 |
-| 14 | WAHDAN | 7,3 | DAVID ALLAN | 317/539/–/– |
-| 4 | BUNYOLA BAY | 10 | SEAN LEVEY | 266/279/–/– |
-| 12 | HAVE SECRET | 25 | CAM HARDIE | –/–/–/– |
-| 13 | DEVIL'S PEAK | 25 | BENOIT DE LA SAYETTE | –/55/–/2465 |
-| 5 | PRINCIPALITY | 34 | P. J. MCDONALD | 256/259/–/– |
-| 3 | ULTRASOUL | 51 | RAY DAWSON | 315/510/–/5300 |
-| 6 | SHAFDAR | 51 | EDWARD GREATREX | 414/599/–/– |
-| 7 | JANEY MACKERS | 51 | ROSSA RYAN | 215/150/–/3252 |
-| 8 | CITY OF DELIGHT | 51 | CIEREN FALLON | 321/150/–/– |
-| 9 | A MAJOR PAYNE | 51 | OISIN MURPHY | 144/657/–/– |
-| 10 | MUSTAZEED | 51 | ALISTAIR RAWLINSON | –/–/–/– |
-| 16 | PEARL EYE | 51 | RHYS ELLIOTT | –/–/–/– |
-| 15 | GALYX | – | GEORGE BASS | 367/861/–/– |
+| 2 | CASTLEMONT | 2 | WILLIAM BUICK | 168/101/–/46 |
+| 14 | WAHDAN | 9,9 | DAVID ALLAN | 317/539/–/– |
+| 4 | BUNYOLA BAY | 11 | SEAN LEVEY | 266/279/–/– |
+| 5 | PRINCIPALITY | 12 | P. J. MCDONALD | 256/259/–/– |
+| 12 | HAVE SECRET | 13 | CAM HARDIE | –/–/–/– |
+| 3 | ULTRASOUL | 17 | RAY DAWSON | 315/510/–/5300 |
+| 6 | SHAFDAR | 17 | EDWARD GREATREX | 414/599/–/– |
+| 13 | DEVIL'S PEAK | 23 | BENOIT DE LA SAYETTE | –/55/–/2465 |
+| 15 | GALYX | 23 | GEORGE BASS | 367/861/–/– |
+| 8 | CITY OF DELIGHT | 34 | CIEREN FALLON | 321/150/–/– |
+| 9 | A MAJOR PAYNE | 34 | OISIN MURPHY | 144/657/–/– |
+| 16 | PEARL EYE | 34 | RHYS ELLIOTT | –/–/–/– |
+| 7 | JANEY MACKERS | 69 | ROSSA RYAN | 215/150/–/3252 |
+| 10 | MUSTAZEED | 69 | ALISTAIR RAWLINSON | –/–/–/– |
 
 ### 7. DONCASTER RACECOURSE HANDICAP (CLASS 4) - DIV 1
 
@@ -126,14 +126,14 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 6 | STANAGE | 1,4 | JOANNA MASON | –/–/–/– |
-| 1 | ITSATENFROMLEN | 6,8 | JASON HART | 492/–/–/– |
-| 3 | PROSPERITAS | 11 | RAY DAWSON | 315/–/–/– |
-| 9 | HIGHLAND OLLY | 15 | ALISTAIR RAWLINSON | –/–/–/– |
-| 4 | GOLD QUEEN KINDLY | 23 | DAVID NOLAN | –/–/–/– |
-| 10 | FEEL THE NEED | 23 | SEAN LEVEY | 266/–/–/– |
-| 13 | INVINCIBLE BOY | 23 | CAM HARDIE | –/–/–/– |
-| 5 | SPIRIT GENIE | 95 | PAUL MULRENNAN | –/448/–/– |
+| 6 | STANAGE | 1,5 | JOANNA MASON | –/–/–/– |
+| 1 | ITSATENFROMLEN | 5,9 | JASON HART | 492/–/–/– |
+| 3 | PROSPERITAS | 6,7 | RAY DAWSON | 315/–/–/– |
+| 9 | HIGHLAND OLLY | 17 | ALISTAIR RAWLINSON | –/–/–/– |
+| 4 | GOLD QUEEN KINDLY | 26 | DAVID NOLAN | –/–/–/– |
+| 10 | FEEL THE NEED | 26 | SEAN LEVEY | 266/–/–/– |
+| 13 | INVINCIBLE BOY | 26 | CAM HARDIE | –/–/–/– |
+| 5 | SPIRIT GENIE | 107 | PAUL MULRENNAN | –/448/–/– |
 | 7 | MAGIC BOY | – | ALEX JARY | –/–/–/– |
 | 8 | FREDDIE STEADY GO | – | HARRY RUSSELL | –/–/–/– |
 | 11 | KING'S SCHOOL | – | MOLLY KEEGAN-PRICE | –/–/–/– |

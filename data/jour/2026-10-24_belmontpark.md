@@ -12,13 +12,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 9 | SAMARTINA | 2,4 | J LEZCANO | –/–/–/– |
-| 6 | BELLA KNOWS | 4,2 | M FRANCO | –/–/–/– |
-| 3 | RIVER TAY | 5,7 | D DAVIS | –/–/–/– |
-| 4 | CRAVINGS | 8,5 | R SANTANA, JR. | –/–/–/– |
-| 5 | MIDNIGHTLOVEAFFAIR | 11 | A FRESU | –/–/–/– |
-| 2 | HAUNTRESS | 17 | D A RIVERA | –/–/–/– |
-| 7 | OKLAHOMA SMOKE | 17 | F PRAT | –/–/–/– |
+| 9 | SAMARTINA | 2,5 | J LEZCANO | –/–/–/– |
+| 6 | BELLA KNOWS | 4,5 | M FRANCO | –/–/–/– |
+| 3 | RIVER TAY | 6 | D DAVIS | –/–/–/– |
+| 2 | HAUNTRESS | 9 | D A RIVERA | –/–/–/– |
+| 4 | CRAVINGS | 9 | R SANTANA, JR. | –/–/–/– |
+| 5 | MIDNIGHTLOVEAFFAIR | 12 | A FRESU | –/–/–/– |
+| 7 | OKLAHOMA SMOKE | 18 | F PRAT | –/–/–/– |
 | 1 | VOLUNTARY | – | K CARMOUCHE | –/–/–/– |
 | 8 | SO SOPHIA | – | K DAVIS | –/–/–/– |
 
@@ -40,9 +40,9 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 2 | CELTIC DAWN | 1,5 | A FRESU |
-| 5 | VENETTA | 3,3 | F PRAT |
-| 6 | KAY CUP | 4,9 | R SANTANA, JR. |
+| 5 | VENETTA | 2 | F PRAT |
+| 2 | CELTIC DAWN | 3 | A FRESU |
+| 6 | KAY CUP | 3 | R SANTANA, JR. |
 | 1 | QUEENS CAT | – | N ALVARADO |
 | 3 | MUNNINGS EXPRESS | – | M FRANCO |
 | 4 | SUNDAY GIRL | – | K DAVIS |
