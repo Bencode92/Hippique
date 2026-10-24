@@ -4,8 +4,8 @@
   "reunion": 1,
   "heure_depart": 1792847700000,
   "distance": 3600,
-  "scraped_at": "2026-10-24T15:02:01.474340+02:00",
-  "minutes_avant_depart": 13,
+  "scraped_at": "2026-10-24T15:06:01.721808+02:00",
+  "minutes_avant_depart": 9,
   "participants": [
     {
       "numPmu": 1,
@@ -14,34 +14,34 @@
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792846905000
+      "timestamp_cote": 1792847147000
     },
     {
       "numPmu": 2,
       "nom": "COUTE QUE COUTE",
-      "cote_live": 11.0,
+      "cote_live": 10.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792846905000
+      "timestamp_cote": 1792847147000
     },
     {
       "numPmu": 3,
       "nom": "BELLE GOSSE",
-      "cote_live": 20.0,
+      "cote_live": 21.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792846905000
+      "timestamp_cote": 1792847147000
     },
     {
       "numPmu": 4,
       "nom": "LOUBA",
-      "cote_live": 4.8,
+      "cote_live": 4.9,
       "cote_reference": 4.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792846905000
+      "timestamp_cote": 1792847147000
     },
     {
       "numPmu": 5,
@@ -50,7 +50,7 @@
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792846905000
+      "timestamp_cote": 1792847147000
     },
     {
       "numPmu": 6,
@@ -59,16 +59,16 @@
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792846905000
+      "timestamp_cote": 1792847147000
     },
     {
       "numPmu": 7,
       "nom": "MON PETIT PRINCE",
-      "cote_live": 5.2,
+      "cote_live": 5.3,
       "cote_reference": 5.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792846905000
+      "timestamp_cote": 1792847147000
     },
     {
       "numPmu": 8,
@@ -77,34 +77,34 @@
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792846905000
+      "timestamp_cote": 1792847147000
     },
     {
       "numPmu": 9,
       "nom": "LE COEUR SAUVAGE",
-      "cote_live": 8.8,
+      "cote_live": 8.5,
       "cote_reference": 9.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792846905000
+      "timestamp_cote": 1792847147000
     },
     {
       "numPmu": 10,
       "nom": "FLYING TRIX",
-      "cote_live": 25.0,
+      "cote_live": 26.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792846905000
+      "timestamp_cote": 1792847147000
     },
     {
       "numPmu": 11,
       "nom": "JOCASTA",
-      "cote_live": 28.0,
+      "cote_live": 29.0,
       "cote_reference": 28.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792846905000
+      "timestamp_cote": 1792847147000
     },
     {
       "numPmu": 12,
@@ -113,16 +113,16 @@
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792846905000
+      "timestamp_cote": 1792847147000
     },
     {
       "numPmu": 13,
       "nom": "KING LANE",
-      "cote_live": 61.0,
+      "cote_live": 55.0,
       "cote_reference": 58.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792846905000
+      "timestamp_cote": 1792847147000
     },
     {
       "numPmu": 14,
@@ -131,7 +131,7 @@
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792846905000
+      "timestamp_cote": 1792847147000
     },
     {
       "numPmu": 15,
@@ -140,7 +140,7 @@
       "cote_reference": 43.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792846905000
+      "timestamp_cote": 1792847147000
     }
   ],
   "hippodrome": "COMPIEGNE",
@@ -246,6 +246,27 @@
         "11": 28.0,
         "12": 20.0,
         "13": 61.0,
+        "14": 20.0,
+        "15": 44.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-24T15:06:01.721808+02:00",
+      "minutes_avant_depart": 8.980836,
+      "cotes": {
+        "1": 14.0,
+        "2": 10.0,
+        "3": 21.0,
+        "4": 4.9,
+        "5": 23.0,
+        "6": 20.0,
+        "7": 5.3,
+        "8": 14.0,
+        "9": 8.5,
+        "10": 26.0,
+        "11": 29.0,
+        "12": 20.0,
+        "13": 55.0,
         "14": 20.0,
         "15": 44.0
       }
