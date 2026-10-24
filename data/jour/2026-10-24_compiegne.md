@@ -62,17 +62,17 @@
 
 ### 4. PRIX VATELYS
 
-*15h50 · steeple · 3450 m · 7 partants · cotes à T−21:19*
+*15h50 · steeple · 3450 m · 7 partants · cotes à T−17:18*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 3 | NORTHMAN | 3,4 | 3,6 | A.ZULIANI | 165/288/–/5279 |
-| 1 | MOSSDAM | 4 | 3,3 | G.MASURE | 226/380/2209/2646 |
-| 4 | VANEADI | 6,4 | 6 | L.BRECHET | 50/438/–/2245 |
-| 2 | SOMMERKONIG | 6,7 | 5,8 | F.GILES | –/438/903/878 |
-| 7 | NOVALLY | 8,1 | 11 | L.ZULIANI | 115/438/690/– |
-| 6 | DOUBLE BE | 8,8 | 9,2 | K.DUBOURG | 357/453/–/526 |
-| 5 | NEVER GIVE UP THOM | 17 | 30 | THO .JOURNIAC | 238/408/1494/5279 |
+| 1 | MOSSDAM | 3,6 | 3,3 | G.MASURE | 226/380/2209/2646 |
+| 3 | NORTHMAN | 3,6 | 3,6 | A.ZULIANI | 165/288/–/5279 |
+| 2 | SOMMERKONIG | 6,3 | 5,8 | F.GILES | –/438/903/878 |
+| 6 | DOUBLE BE | 7,7 | 9,2 | K.DUBOURG | 357/453/–/526 |
+| 7 | NOVALLY | 8,3 | 11 | L.ZULIANI | 115/438/690/– |
+| 4 | VANEADI | 8,9 | 6 | L.BRECHET | 50/438/–/2245 |
+| 5 | NEVER GIVE UP THOM | 13 | 30 | THO .JOURNIAC | 238/408/1494/5279 |
 
 ### 5. PRIX DOMINIQUE SARTINI
 
