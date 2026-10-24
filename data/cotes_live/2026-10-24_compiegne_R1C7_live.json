@@ -4,17 +4,17 @@
   "reunion": 1,
   "heure_depart": 1792856400000,
   "distance": 3600,
-  "scraped_at": "2026-10-24T17:35:50.133262+02:00",
-  "minutes_avant_depart": 4,
+  "scraped_at": "2026-10-24T17:38:30.620324+02:00",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "GALLIPOLI",
-      "cote_live": 13.0,
+      "cote_live": 16.0,
       "cote_reference": 8.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792856123000
+      "timestamp_cote": 1792856293000
     },
     {
       "numPmu": 2,
@@ -23,61 +23,61 @@
       "cote_reference": 8.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792856123000
+      "timestamp_cote": 1792856293000
     },
     {
       "numPmu": 3,
       "nom": "OLYMPIC STORY",
-      "cote_live": 5.5,
+      "cote_live": 6.2,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792856123000
+      "timestamp_cote": 1792856293000
     },
     {
       "numPmu": 4,
       "nom": "ILLUSION MACHINE",
-      "cote_live": 2.8,
+      "cote_live": 2.4,
       "cote_reference": 3.2,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792856123000
+      "timestamp_cote": 1792856293000
     },
     {
       "numPmu": 5,
       "nom": "GARDIEN DE MUSEE",
-      "cote_live": 5.2,
+      "cote_live": 6.2,
       "cote_reference": 5.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792856123000
+      "timestamp_cote": 1792856293000
     },
     {
       "numPmu": 6,
       "nom": "CAF'CONC",
-      "cote_live": 15.0,
+      "cote_live": 19.0,
       "cote_reference": 30.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792856123000
+      "timestamp_cote": 1792856293000
     },
     {
       "numPmu": 7,
       "nom": "ANATOLE",
-      "cote_live": 10.0,
+      "cote_live": 9.3,
       "cote_reference": 5.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792856123000
+      "timestamp_cote": 1792856293000
     },
     {
       "numPmu": 8,
       "nom": "AL FONCE",
-      "cote_live": 11.0,
+      "cote_live": 9.5,
       "cote_reference": 8.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792856123000
+      "timestamp_cote": 1792856293000
     }
   ],
   "hippodrome": "COMPIEGNE",
@@ -206,6 +206,62 @@
         "6": 15.0,
         "7": 10.0,
         "8": 11.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-24T17:36:30.430089+02:00",
+      "minutes_avant_depart": 3.4935557333333334,
+      "cotes": {
+        "1": 14.0,
+        "2": 12.0,
+        "3": 5.6,
+        "4": 3.1,
+        "5": 5.7,
+        "6": 17.0,
+        "7": 7.7,
+        "8": 8.1
+      }
+    },
+    {
+      "scraped_at": "2026-10-24T17:37:10.711582+02:00",
+      "minutes_avant_depart": 2.8331235833333333,
+      "cotes": {
+        "1": 14.0,
+        "2": 11.0,
+        "3": 5.6,
+        "4": 3.1,
+        "5": 5.7,
+        "6": 17.0,
+        "7": 7.7,
+        "8": 8.2
+      }
+    },
+    {
+      "scraped_at": "2026-10-24T17:37:50.532140+02:00",
+      "minutes_avant_depart": 2.166455,
+      "cotes": {
+        "1": 16.0,
+        "2": 11.0,
+        "3": 6.3,
+        "4": 2.5,
+        "5": 6.2,
+        "6": 19.0,
+        "7": 8.8,
+        "8": 9.2
+      }
+    },
+    {
+      "scraped_at": "2026-10-24T17:38:30.620324+02:00",
+      "minutes_avant_depart": 1.4997862833333333,
+      "cotes": {
+        "1": 16.0,
+        "2": 11.0,
+        "3": 6.2,
+        "4": 2.4,
+        "5": 6.2,
+        "6": 19.0,
+        "7": 9.3,
+        "8": 9.5
       }
     }
   ]
