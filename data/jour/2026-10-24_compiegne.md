@@ -1,6 +1,6 @@
 # COMPIEGNE — 24/10/2026
 
-8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -40,25 +40,25 @@
 
 ### 3. PRIX DE BEAUNE
 
-*15h15 · haies · 3600 m · 15 partants · cotes de l'extraction*
+*15h15 · haies · 3600 m · 15 partants · cotes à T−29:38*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 4 | LOUBA | 4,4 | B.LE CLERC | 210/157/3595/5119 |
-| 7 | MON PETIT PRINCE | 5,4 | T.CHEVILLARD | 156/241/–/2241 |
-| 9 | LE COEUR SAUVAGE | 9,3 | K.NABET | 390/228/3388/2631 |
-| 2 | COUTE QUE COUTE | 12 | J.REVELEY | –/376/–/– |
-| 8 | LADY ANGE WIN | 12 | BR.LE CLERC | 210/369/4285/– |
-| 1 | SIR MARVEL | 13 | L.PHILIPPERON | 269/91/2900/396 |
-| 3 | BELLE GOSSE | 20 | A.ZULIANI | 165/288/–/3405 |
-| 14 | CAPTAIN FLAG | 20 | N.FERREIRA | 489/586/2594/5188 |
-| 6 | LE COLOMBAR | 21 | J.PHELIPPE | 330/91/–/– |
-| 12 | LIBRE ARBITRE | 21 | F.GILES | –/376/55/3370 |
-| 5 | LADY LADY LAY | 25 | J.CHARRON | –/241/510/– |
-| 10 | FLYING TRIX | 28 | T.BEAURAIN | 267/240/4314/3731 |
-| 11 | JOCASTA | 30 | T.SERVIER | 289/423/1604/3722 |
-| 15 | LERIKA | 46 | L.BEAUBOIS | –/626/764/1742 |
-| 13 | KING LANE | 56 | F.BAYLE | 385/370/–/5460 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 4 | LOUBA | 4,7 | 4,4 | B.LE CLERC | 210/157/3595/5119 |
+| 7 | MON PETIT PRINCE | 5,3 | 5,4 | T.CHEVILLARD | 156/241/–/2241 |
+| 9 | LE COEUR SAUVAGE | 9,5 | 9,3 | K.NABET | 390/228/3388/2631 |
+| 2 | COUTE QUE COUTE | 12 | 12 | J.REVELEY | –/376/–/– |
+| 1 | SIR MARVEL | 13 | 13 | L.PHILIPPERON | 269/91/2900/396 |
+| 8 | LADY ANGE WIN | 13 | 12 | BR.LE CLERC | 210/369/4285/– |
+| 12 | LIBRE ARBITRE | 19 | 21 | F.GILES | –/376/55/3370 |
+| 14 | CAPTAIN FLAG | 19 | 20 | N.FERREIRA | 489/586/2594/5188 |
+| 6 | LE COLOMBAR | 20 | 21 | J.PHELIPPE | 330/91/–/– |
+| 3 | BELLE GOSSE | 21 | 20 | A.ZULIANI | 165/288/–/3405 |
+| 5 | LADY LADY LAY | 24 | 25 | J.CHARRON | –/241/510/– |
+| 10 | FLYING TRIX | 26 | 28 | T.BEAURAIN | 267/240/4314/3731 |
+| 11 | JOCASTA | 28 | 30 | T.SERVIER | 289/423/1604/3722 |
+| 15 | LERIKA | 43 | 46 | L.BEAUBOIS | –/626/764/1742 |
+| 13 | KING LANE | 57 | 56 | F.BAYLE | 385/370/–/5460 |
 
 ### 4. PRIX VATELYS
 
