@@ -4,8 +4,8 @@
   "reunion": 1,
   "heure_depart": 1792847700000,
   "distance": 3600,
-  "scraped_at": "2026-10-24T15:14:01.573621+02:00",
-  "minutes_avant_depart": 1,
+  "scraped_at": "2026-10-24T15:16:41.204722+02:00",
+  "minutes_avant_depart": -2,
   "participants": [
     {
       "numPmu": 1,
@@ -14,43 +14,43 @@
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847627000
+      "timestamp_cote": 1792847787000
     },
     {
       "numPmu": 2,
       "nom": "COUTE QUE COUTE",
-      "cote_live": 11.0,
+      "cote_live": 12.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847627000
+      "timestamp_cote": 1792847787000
     },
     {
       "numPmu": 3,
       "nom": "BELLE GOSSE",
-      "cote_live": 23.0,
+      "cote_live": 26.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847627000
+      "timestamp_cote": 1792847787000
     },
     {
       "numPmu": 4,
       "nom": "LOUBA",
-      "cote_live": 5.1,
+      "cote_live": 5.9,
       "cote_reference": 4.7,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1792847627000
+      "favoris": false,
+      "timestamp_cote": 1792847787000
     },
     {
       "numPmu": 5,
       "nom": "LADY LADY LAY",
-      "cote_live": 24.0,
+      "cote_live": 19.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847627000
+      "timestamp_cote": 1792847787000
     },
     {
       "numPmu": 6,
@@ -59,88 +59,88 @@
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847627000
+      "timestamp_cote": 1792847787000
     },
     {
       "numPmu": 7,
       "nom": "MON PETIT PRINCE",
-      "cote_live": 5.6,
+      "cote_live": 4.9,
       "cote_reference": 5.3,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1792847627000
+      "favoris": true,
+      "timestamp_cote": 1792847787000
     },
     {
       "numPmu": 8,
       "nom": "LADY ANGE WIN",
-      "cote_live": 14.0,
+      "cote_live": 16.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847627000
+      "timestamp_cote": 1792847787000
     },
     {
       "numPmu": 9,
       "nom": "LE COEUR SAUVAGE",
-      "cote_live": 8.1,
+      "cote_live": 7.0,
       "cote_reference": 9.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847627000
+      "timestamp_cote": 1792847787000
     },
     {
       "numPmu": 10,
       "nom": "FLYING TRIX",
-      "cote_live": 22.0,
+      "cote_live": 26.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847627000
+      "timestamp_cote": 1792847787000
     },
     {
       "numPmu": 11,
       "nom": "JOCASTA",
-      "cote_live": 25.0,
+      "cote_live": 29.0,
       "cote_reference": 28.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847627000
+      "timestamp_cote": 1792847787000
     },
     {
       "numPmu": 12,
       "nom": "LIBRE ARBITRE",
-      "cote_live": 22.0,
+      "cote_live": 25.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847627000
+      "timestamp_cote": 1792847787000
     },
     {
       "numPmu": 13,
       "nom": "KING LANE",
-      "cote_live": 47.0,
+      "cote_live": 39.0,
       "cote_reference": 58.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847627000
+      "timestamp_cote": 1792847787000
     },
     {
       "numPmu": 14,
       "nom": "CAPTAIN FLAG",
-      "cote_live": 22.0,
+      "cote_live": 20.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847627000
+      "timestamp_cote": 1792847787000
     },
     {
       "numPmu": 15,
       "nom": "LERIKA",
-      "cote_live": 48.0,
+      "cote_live": 37.0,
       "cote_reference": 43.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792847627000
+      "timestamp_cote": 1792847787000
     }
   ],
   "hippodrome": "COMPIEGNE",
@@ -437,6 +437,90 @@
         "13": 47.0,
         "14": 22.0,
         "15": 48.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-24T15:14:41.630670+02:00",
+      "minutes_avant_depart": 0.3141375666666667,
+      "cotes": {
+        "1": 13.0,
+        "2": 12.0,
+        "3": 25.0,
+        "4": 5.6,
+        "5": 18.0,
+        "6": 17.0,
+        "7": 5.5,
+        "8": 15.0,
+        "9": 7.4,
+        "10": 23.0,
+        "11": 27.0,
+        "12": 23.0,
+        "13": 43.0,
+        "14": 18.0,
+        "15": 47.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-24T15:15:21.204508+02:00",
+      "minutes_avant_depart": -0.35253245,
+      "cotes": {
+        "1": 13.0,
+        "2": 12.0,
+        "3": 25.0,
+        "4": 5.5,
+        "5": 18.0,
+        "6": 17.0,
+        "7": 5.6,
+        "8": 16.0,
+        "9": 7.4,
+        "10": 23.0,
+        "11": 27.0,
+        "12": 24.0,
+        "13": 43.0,
+        "14": 19.0,
+        "15": 35.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-24T15:16:01.481098+02:00",
+      "minutes_avant_depart": -1.0192010166666667,
+      "cotes": {
+        "1": 13.0,
+        "2": 12.0,
+        "3": 26.0,
+        "4": 5.8,
+        "5": 18.0,
+        "6": 17.0,
+        "7": 5.2,
+        "8": 16.0,
+        "9": 7.1,
+        "10": 25.0,
+        "11": 28.0,
+        "12": 25.0,
+        "13": 38.0,
+        "14": 20.0,
+        "15": 36.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-24T15:16:41.204722+02:00",
+      "minutes_avant_depart": -1.6858700333333334,
+      "cotes": {
+        "1": 13.0,
+        "2": 12.0,
+        "3": 26.0,
+        "4": 5.9,
+        "5": 19.0,
+        "6": 17.0,
+        "7": 4.9,
+        "8": 16.0,
+        "9": 7.0,
+        "10": 26.0,
+        "11": 29.0,
+        "12": 25.0,
+        "13": 39.0,
+        "14": 20.0,
+        "15": 37.0
       }
     }
   ]
