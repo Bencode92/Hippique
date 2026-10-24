@@ -1,6 +1,6 @@
 # COMPIEGNE — 24/10/2026
 
-8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -62,17 +62,17 @@
 
 ### 4. PRIX VATELYS
 
-*15h50 · steeple · 3450 m · 7 partants · cotes de l'extraction*
+*15h50 · steeple · 3450 m · 7 partants · cotes à T−29:59*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | MOSSDAM | 3,3 | G.MASURE | 226/380/2209/2646 |
-| 3 | NORTHMAN | 3,6 | A.ZULIANI | 165/288/–/5279 |
-| 2 | SOMMERKONIG | 5,8 | F.GILES | –/438/903/878 |
-| 4 | VANEADI | 6 | L.BRECHET | 50/438/–/2245 |
-| 6 | DOUBLE BE | 9,2 | K.DUBOURG | 357/453/–/526 |
-| 7 | NOVALLY | 11 | L.ZULIANI | 115/438/690/– |
-| 5 | NEVER GIVE UP THOM | 30 | THO .JOURNIAC | 238/408/1494/5279 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 3 | NORTHMAN | 3,5 | 3,6 | A.ZULIANI | 165/288/–/5279 |
+| 1 | MOSSDAM | 3,7 | 3,3 | G.MASURE | 226/380/2209/2646 |
+| 4 | VANEADI | 6,2 | 6 | L.BRECHET | 50/438/–/2245 |
+| 2 | SOMMERKONIG | 6,7 | 5,8 | F.GILES | –/438/903/878 |
+| 7 | NOVALLY | 7,8 | 11 | L.ZULIANI | 115/438/690/– |
+| 6 | DOUBLE BE | 9,4 | 9,2 | K.DUBOURG | 357/453/–/526 |
+| 5 | NEVER GIVE UP THOM | 21 | 30 | THO .JOURNIAC | 238/408/1494/5279 |
 
 ### 5. PRIX DOMINIQUE SARTINI
 
