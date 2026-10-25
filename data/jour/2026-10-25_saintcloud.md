@@ -1,6 +1,6 @@
 # SAINT-CLOUD — 25/10/2026
 
-8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -109,23 +109,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX BELLE DE NUIT
 
-*17h25 · plat · 2800 m · 13 partants · cotes de l'extraction*
+*17h25 · plat · 2800 m · 13 partants · cotes à T−1:57*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 11 | BRILLIANT STAR | 5 | 6,05 | -17,4 % | C.SOUMILLON 🏆4e | 7/55/3143/– |
-| 13 | ZLATA | 6,1 | 7,00 | -12,9 % | M.GUYON 🏆1er | 4/2/134/2 |
-| 9 | QUEST FOR MAGIC | 6,2 | 7,14 | -13,2 % | T.BACHELOT | 16/17/54/607 |
-| 2 | ELEGANZ | 6,4 | 7,90 | -19,0 % | O.MURPHY 🏆3e | 144/2/3102/69 |
-| 6 | LE COMBAT CONTINUE | 8 | 7,80 | **+2,6 %** | A.MADAMET | 10/17/477/1688 |
-| 3 | BESET | 13 | 14,90 | -12,7 % | D.BROWNE MCMONAGLE | 176/82/3654/– |
-| 5 | MAHIYA | 16 | 21,67 | -26,2 % | A.POUCHIN 🏆8e | 6/430/53/129 |
-| 1 | RYKA | 17 | 21,23 | -19,9 % | PC.BOUDOT | 8/381/3233/960 |
-| 7 | CARDINAL POINT | 18 | 24,87 | -27,6 % | M.GRANDIN | 3/56/–/153 |
-| 8 | FRANCES ETHEL | 18 | 21,75 | -17,3 % | M.BARZALONA 🏆2e | 2/24/3605/1663 |
-| 4 | LITTLE DORRIT | 73 | 127,02 | -42,5 % | R.DAWSON | 315/510/3799/4967 |
-| 10 | LADY VIVIAN | 78 | 115,03 | -32,2 % | H.CROUCH | 222/158/1520/8 |
-| 12 | PIERIAN | 122 | 176,66 | -30,9 % | C.FALLON | 321/24/3674/2171 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 3 | BESET | 4,1 | 13 | 4,12 | -0,5 % | D.BROWNE MCMONAGLE | 176/82/3654/– |
+| 11 | BRILLIANT STAR | 4,2 | 5 | 4,52 | -7,0 % | C.SOUMILLON 🏆4e | 7/55/3143/– |
+| 9 | QUEST FOR MAGIC | 8,1 | 6,2 | 9,72 | -16,6 % | T.BACHELOT | 16/17/54/607 |
+| 2 | ELEGANZ | 8,8 | 6,4 | 10,96 | -19,7 % | O.MURPHY 🏆3e | 144/2/3102/69 |
+| 13 | ZLATA | 10 | 6,1 | 12,42 | -19,5 % | M.GUYON 🏆1er | 4/2/134/2 |
+| 5 | MAHIYA | 15 | 16 | 18,32 | -18,1 % | A.POUCHIN 🏆8e | 6/430/53/129 |
+| 6 | LE COMBAT CONTINUE | 15 | 8 | 16,78 | -10,6 % | A.MADAMET | 10/17/477/1688 |
+| 1 | RYKA | 19 | 17 | 24,09 | -21,1 % | PC.BOUDOT | 8/381/3233/960 |
+| 4 | LITTLE DORRIT | 21 | 73 | 29,07 | -27,8 % | R.DAWSON | 315/510/3799/4967 |
+| 8 | FRANCES ETHEL | 28 | 18 | 34,37 | -18,5 % | M.BARZALONA 🏆2e | 2/24/3605/1663 |
+| 7 | CARDINAL POINT | 32 | 18 | 45,79 | -30,1 % | M.GRANDIN | 3/56/–/153 |
+| 12 | PIERIAN | 55 | 122 | 77,26 | -28,8 % | C.FALLON | 321/24/3674/2171 |
+| 10 | LADY VIVIAN | 96 | 78 | 135,54 | -29,2 % | H.CROUCH | 222/158/1520/8 |
 
 ### 8. PRIX DES HARAS
 
