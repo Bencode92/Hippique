@@ -57,17 +57,17 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. CRITERIUM DE SAINT-CLOUD
 
-*15h33 · plat · 2000 m · 7 partants · cotes à T−3:05*
+*15h33 · plat · 2000 m · 7 partants · cotes à T−0:26*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 6 | DRUMBEAT | 2,5 | 2,6 | 2,82 | -11,2 % | RL.MOORE 🏆5e | 151/3/1448/574 |
-| 5 | JESUS GREEN | 3,5 | 2,4 | 3,68 | -4,8 % | D.BROWNE MCMONAGLE | 176/82/3726/– |
-| 7 | JUST YET | 7,4 | 10 | 9,35 | -20,8 % | M.GRANDIN | 3/110/2194/315 |
-| 1 | SHAKESPEARE | 8 | 8,7 | 9,58 | -16,5 % | C.SOUMILLON 🏆1er | 7/3/–/– |
-| 2 | AL JABBAR | 11 | 14 | 13,93 | -21,1 % | W.BUICK 🏆6e | 168/101/–/46 |
-| 3 | ROYAL ACCLAMATION | 14 | 22 | 18,14 | -22,8 % | B.LOUGHNANE | 223/101/–/46 |
-| 4 | VICTORY SPEECH | 26 | 30 | 40,81 | -36,3 % | WM.LORDAN | 265/3/3082/520 |
+| 6 | DRUMBEAT | 1,7 | 2,6 | 1,86 | -8,7 % | RL.MOORE 🏆5e | 151/3/1448/574 |
+| 5 | JESUS GREEN | 4,5 | 2,4 | 4,94 | -8,8 % | D.BROWNE MCMONAGLE | 176/82/3726/– |
+| 1 | SHAKESPEARE | 10 | 8,7 | 12,86 | -22,3 % | C.SOUMILLON 🏆1er | 7/3/–/– |
+| 7 | JUST YET | 10 | 10 | 13,77 | -27,4 % | M.GRANDIN | 3/110/2194/315 |
+| 2 | AL JABBAR | 13 | 14 | 17,52 | -25,8 % | W.BUICK 🏆6e | 168/101/–/46 |
+| 3 | ROYAL ACCLAMATION | 17 | 22 | 25,75 | -34,0 % | B.LOUGHNANE | 223/101/–/46 |
+| 4 | VICTORY SPEECH | 31 | 30 | 51,42 | -39,7 % | WM.LORDAN | 265/3/3082/520 |
 
 ### 5. PRIX DE L'ELEVAGE
 

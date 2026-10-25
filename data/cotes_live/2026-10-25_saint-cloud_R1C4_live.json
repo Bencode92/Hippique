@@ -4,71 +4,71 @@
   "reunion": 1,
   "heure_depart": 1792935240000,
   "distance": 2000,
-  "scraped_at": "2026-10-25T14:30:55.007561+01:00",
-  "minutes_avant_depart": 3,
+  "scraped_at": "2026-10-25T14:33:34.270561+01:00",
+  "minutes_avant_depart": 0,
   "participants": [
     {
       "numPmu": 1,
       "nom": "SHAKESPEARE",
-      "cote_live": 8.0,
+      "cote_live": 10.0,
       "cote_reference": 8.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792935044000
+      "timestamp_cote": 1792935202000
     },
     {
       "numPmu": 2,
       "nom": "AL JABBAR",
-      "cote_live": 11.0,
+      "cote_live": 13.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792935044000
+      "timestamp_cote": 1792935202000
     },
     {
       "numPmu": 3,
       "nom": "ROYAL ACCLAMATION",
-      "cote_live": 14.0,
+      "cote_live": 17.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792935044000
+      "timestamp_cote": 1792935202000
     },
     {
       "numPmu": 4,
       "nom": "VICTORY SPEECH",
-      "cote_live": 26.0,
+      "cote_live": 31.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792935044000
+      "timestamp_cote": 1792935202000
     },
     {
       "numPmu": 5,
       "nom": "JESUS GREEN",
-      "cote_live": 3.5,
+      "cote_live": 4.5,
       "cote_reference": 2.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792935044000
+      "timestamp_cote": 1792935202000
     },
     {
       "numPmu": 6,
       "nom": "DRUMBEAT",
-      "cote_live": 2.5,
+      "cote_live": 1.7,
       "cote_reference": 2.6,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792935044000
+      "timestamp_cote": 1792935202000
     },
     {
       "numPmu": 7,
       "nom": "JUST YET",
-      "cote_live": 7.4,
+      "cote_live": 10.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792935044000
+      "timestamp_cote": 1792935202000
     }
   ],
   "hippodrome": "SAINT-CLOUD",
@@ -214,6 +214,58 @@
         "5": 3.5,
         "6": 2.5,
         "7": 7.4
+      }
+    },
+    {
+      "scraped_at": "2026-10-25T14:31:34.130537+01:00",
+      "minutes_avant_depart": 2.4330091,
+      "cotes": {
+        "1": 9.6,
+        "2": 12.0,
+        "3": 16.0,
+        "4": 29.0,
+        "5": 4.2,
+        "6": 1.9,
+        "7": 9.1
+      }
+    },
+    {
+      "scraped_at": "2026-10-25T14:32:14.078434+01:00",
+      "minutes_avant_depart": 1.7663387833333333,
+      "cotes": {
+        "1": 9.5,
+        "2": 12.0,
+        "3": 16.0,
+        "4": 28.0,
+        "5": 4.3,
+        "6": 1.9,
+        "7": 9.4
+      }
+    },
+    {
+      "scraped_at": "2026-10-25T14:32:54.203535+01:00",
+      "minutes_avant_depart": 1.0996695333333333,
+      "cotes": {
+        "1": 10.0,
+        "2": 14.0,
+        "3": 18.0,
+        "4": 31.0,
+        "5": 4.6,
+        "6": 1.7,
+        "7": 10.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-25T14:33:34.270561+01:00",
+      "minutes_avant_depart": 0.4330016,
+      "cotes": {
+        "1": 10.0,
+        "2": 13.0,
+        "3": 17.0,
+        "4": 31.0,
+        "5": 4.5,
+        "6": 1.7,
+        "7": 10.0
       }
     }
   ]
