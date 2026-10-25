@@ -4,17 +4,17 @@
   "reunion": 1,
   "heure_depart": 1792935180000,
   "distance": 2000,
-  "scraped_at": "2026-10-25T14:03:34.636006+01:00",
-  "minutes_avant_depart": 29,
+  "scraped_at": "2026-10-25T14:07:34.749313+01:00",
+  "minutes_avant_depart": 25,
   "participants": [
     {
       "numPmu": 1,
       "nom": "SHAKESPEARE",
-      "cote_live": 8.8,
+      "cote_live": 8.4,
       "cote_reference": 8.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792933400000
+      "timestamp_cote": 1792933642000
     },
     {
       "numPmu": 2,
@@ -23,34 +23,34 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792933400000
+      "timestamp_cote": 1792933642000
     },
     {
       "numPmu": 3,
       "nom": "ROYAL ACCLAMATION",
-      "cote_live": 24.0,
+      "cote_live": 23.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792933400000
+      "timestamp_cote": 1792933642000
     },
     {
       "numPmu": 4,
       "nom": "VICTORY SPEECH",
-      "cote_live": 24.0,
+      "cote_live": 25.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792933400000
+      "timestamp_cote": 1792933642000
     },
     {
       "numPmu": 5,
       "nom": "JESUS GREEN",
-      "cote_live": 2.6,
+      "cote_live": 2.7,
       "cote_reference": 2.6,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1792933400000
+      "favoris": false,
+      "timestamp_cote": 1792933642000
     },
     {
       "numPmu": 6,
@@ -59,7 +59,7 @@
       "cote_reference": 2.6,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792933400000
+      "timestamp_cote": 1792933642000
     },
     {
       "numPmu": 7,
@@ -68,7 +68,7 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792933400000
+      "timestamp_cote": 1792933642000
     }
   ],
   "hippodrome": "SAINT-CLOUD",
@@ -82,6 +82,19 @@
         "3": 24.0,
         "4": 24.0,
         "5": 2.6,
+        "6": 2.6,
+        "7": 10.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-25T14:07:34.749313+01:00",
+      "minutes_avant_depart": 25.424465950000002,
+      "cotes": {
+        "1": 8.4,
+        "2": 10.0,
+        "3": 23.0,
+        "4": 25.0,
+        "5": 2.7,
         "6": 2.6,
         "7": 10.0
       }
