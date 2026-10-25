@@ -1,6 +1,6 @@
 # SAINT-CLOUD — 25/10/2026
 
-8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -57,17 +57,17 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. CRITERIUM DE SAINT-CLOUD
 
-*15h33 · plat · 2000 m · 7 partants · cotes de l'extraction*
+*15h33 · plat · 2000 m · 7 partants · cotes à T−29:25*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 5 | JESUS GREEN | 2,4 | 2,54 | -5,6 % | D.BROWNE MCMONAGLE | 176/82/3726/– |
-| 6 | DRUMBEAT | 2,6 | 2,89 | -10,1 % | RL.MOORE 🏆5e | 151/3/1448/574 |
-| 1 | SHAKESPEARE | 8,7 | 10,79 | -19,4 % | C.SOUMILLON 🏆1er | 7/3/–/– |
-| 7 | JUST YET | 10 | 13,60 | -26,5 % | M.GRANDIN | 3/110/2194/315 |
-| 2 | AL JABBAR | 14 | 18,88 | -25,9 % | W.BUICK 🏆6e | 168/101/–/46 |
-| 3 | ROYAL ACCLAMATION | 22 | 34,35 | -36,0 % | B.LOUGHNANE | 223/101/–/46 |
-| 4 | VICTORY SPEECH | 30 | 48,98 | -38,7 % | WM.LORDAN | 265/3/3082/520 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 5 | JESUS GREEN | 2,6 | 2,4 | 3,16 | -17,8 % | D.BROWNE MCMONAGLE | 176/82/3726/– |
+| 6 | DRUMBEAT | 2,6 | 2,6 | 3,16 | -17,8 % | RL.MOORE 🏆5e | 151/3/1448/574 |
+| 1 | SHAKESPEARE | 8,8 | 8,7 | 10,93 | -19,5 % | C.SOUMILLON 🏆1er | 7/3/–/– |
+| 2 | AL JABBAR | 10 | 14 | 12,70 | -21,3 % | W.BUICK 🏆6e | 168/101/–/46 |
+| 7 | JUST YET | 10 | 10 | 13,60 | -26,5 % | M.GRANDIN | 3/110/2194/315 |
+| 3 | ROYAL ACCLAMATION | 24 | 22 | 36,22 | -33,7 % | B.LOUGHNANE | 223/101/–/46 |
+| 4 | VICTORY SPEECH | 24 | 30 | 37,96 | -36,8 % | WM.LORDAN | 265/3/3082/520 |
 
 ### 5. PRIX DE L'ELEVAGE
 
