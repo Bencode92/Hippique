@@ -4,53 +4,53 @@
   "reunion": 1,
   "heure_depart": 1792935240000,
   "distance": 2000,
-  "scraped_at": "2026-10-25T14:16:14.305980+01:00",
-  "minutes_avant_depart": 18,
+  "scraped_at": "2026-10-25T14:20:14.108336+01:00",
+  "minutes_avant_depart": 14,
   "participants": [
     {
       "numPmu": 1,
       "nom": "SHAKESPEARE",
-      "cote_live": 8.4,
+      "cote_live": 7.2,
       "cote_reference": 8.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792934164000
+      "timestamp_cote": 1792934406000
     },
     {
       "numPmu": 2,
       "nom": "AL JABBAR",
-      "cote_live": 11.0,
+      "cote_live": 9.5,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792934164000
+      "timestamp_cote": 1792934406000
     },
     {
       "numPmu": 3,
       "nom": "ROYAL ACCLAMATION",
-      "cote_live": 20.0,
+      "cote_live": 16.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792934164000
+      "timestamp_cote": 1792934406000
     },
     {
       "numPmu": 4,
       "nom": "VICTORY SPEECH",
-      "cote_live": 29.0,
+      "cote_live": 25.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792934164000
+      "timestamp_cote": 1792934406000
     },
     {
       "numPmu": 5,
       "nom": "JESUS GREEN",
-      "cote_live": 2.8,
+      "cote_live": 3.1,
       "cote_reference": 2.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792934164000
+      "timestamp_cote": 1792934406000
     },
     {
       "numPmu": 6,
@@ -59,16 +59,16 @@
       "cote_reference": 2.6,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792934164000
+      "timestamp_cote": 1792934406000
     },
     {
       "numPmu": 7,
       "nom": "JUST YET",
-      "cote_live": 9.4,
+      "cote_live": 9.6,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792934164000
+      "timestamp_cote": 1792934406000
     }
   ],
   "hippodrome": "SAINT-CLOUD",
@@ -123,6 +123,19 @@
         "5": 2.8,
         "6": 2.6,
         "7": 9.4
+      }
+    },
+    {
+      "scraped_at": "2026-10-25T14:20:14.108336+01:00",
+      "minutes_avant_depart": 13.766395266666667,
+      "cotes": {
+        "1": 7.2,
+        "2": 9.5,
+        "3": 16.0,
+        "4": 25.0,
+        "5": 3.1,
+        "6": 2.6,
+        "7": 9.6
       }
     }
   ]
