@@ -4,8 +4,8 @@
   "reunion": 1,
   "heure_depart": 1792944000000,
   "distance": 2500,
-  "scraped_at": "2026-10-25T16:57:43.568440+01:00",
-  "minutes_avant_depart": 2,
+  "scraped_at": "2026-10-25T17:00:23.356410+01:00",
+  "minutes_avant_depart": 0,
   "participants": [
     {
       "numPmu": 1,
@@ -14,52 +14,52 @@
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792943863000
+      "timestamp_cote": 1792944023000
     },
     {
       "numPmu": 2,
       "nom": "SEVENNA'S BAY",
-      "cote_live": 10.0,
+      "cote_live": 6.2,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792943863000
+      "timestamp_cote": 1792944023000
     },
     {
       "numPmu": 3,
       "nom": "WASABI",
-      "cote_live": 8.2,
+      "cote_live": 7.9,
       "cote_reference": 8.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792943863000
+      "timestamp_cote": 1792944023000
     },
     {
       "numPmu": 4,
       "nom": "LOFSONGUR ISLANDE",
-      "cote_live": 32.0,
+      "cote_live": 31.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792943863000
+      "timestamp_cote": 1792944023000
     },
     {
       "numPmu": 5,
       "nom": "BRIONA",
-      "cote_live": 21.0,
+      "cote_live": 28.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792943863000
+      "timestamp_cote": 1792944023000
     },
     {
       "numPmu": 6,
       "nom": "ALPE MOTTA",
-      "cote_live": 64.0,
+      "cote_live": 70.0,
       "cote_reference": 39.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792943863000
+      "timestamp_cote": 1792944023000
     },
     {
       "numPmu": 7,
@@ -68,79 +68,79 @@
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792943863000
+      "timestamp_cote": 1792944023000
     },
     {
       "numPmu": 8,
       "nom": "QUEEN D'AUNOU",
-      "cote_live": 64.0,
+      "cote_live": 67.0,
       "cote_reference": 52.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792943863000
+      "timestamp_cote": 1792944023000
     },
     {
       "numPmu": 9,
       "nom": "CLICCLIC PANPANPAN",
-      "cote_live": 4.2,
+      "cote_live": 4.9,
       "cote_reference": 3.9,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1792943863000
+      "timestamp_cote": 1792944023000
     },
     {
       "numPmu": 10,
       "nom": "FLEUR D'ORANGER",
-      "cote_live": 10.0,
+      "cote_live": 12.0,
       "cote_reference": 8.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792943863000
+      "timestamp_cote": 1792944023000
     },
     {
       "numPmu": 11,
       "nom": "ILUMINE PRECIEUSE",
-      "cote_live": 12.0,
+      "cote_live": 13.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792943863000
+      "timestamp_cote": 1792944023000
     },
     {
       "numPmu": 12,
       "nom": "AUTOROUTE",
-      "cote_live": 27.0,
+      "cote_live": 23.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792943863000
+      "timestamp_cote": 1792944023000
     },
     {
       "numPmu": 13,
       "nom": "LORNE",
-      "cote_live": 17.0,
+      "cote_live": 20.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792943863000
+      "timestamp_cote": 1792944023000
     },
     {
       "numPmu": 14,
       "nom": "PINGO",
-      "cote_live": 31.0,
+      "cote_live": 38.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792943863000
+      "timestamp_cote": 1792944023000
     },
     {
       "numPmu": 15,
       "nom": "QUEENFLEUR",
-      "cote_live": 7.4,
+      "cote_live": 7.1,
       "cote_reference": 9.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1792943863000
+      "timestamp_cote": 1792944023000
     }
   ],
   "hippodrome": "SAINT-CLOUD",
@@ -395,6 +395,90 @@
         "13": 17.0,
         "14": 31.0,
         "15": 7.4
+      }
+    },
+    {
+      "scraped_at": "2026-10-25T16:58:23.427941+01:00",
+      "minutes_avant_depart": 1.6151875666666666,
+      "cotes": {
+        "1": 14.0,
+        "2": 10.0,
+        "3": 8.2,
+        "4": 32.0,
+        "5": 22.0,
+        "6": 66.0,
+        "7": 14.0,
+        "8": 62.0,
+        "9": 4.3,
+        "10": 10.0,
+        "11": 12.0,
+        "12": 26.0,
+        "13": 16.0,
+        "14": 32.0,
+        "15": 7.4
+      }
+    },
+    {
+      "scraped_at": "2026-10-25T16:59:03.243515+01:00",
+      "minutes_avant_depart": 0.9485194,
+      "cotes": {
+        "1": 14.0,
+        "2": 5.7,
+        "3": 8.6,
+        "4": 35.0,
+        "5": 24.0,
+        "6": 67.0,
+        "7": 15.0,
+        "8": 69.0,
+        "9": 4.8,
+        "10": 11.0,
+        "11": 13.0,
+        "12": 29.0,
+        "13": 17.0,
+        "14": 34.0,
+        "15": 7.6
+      }
+    },
+    {
+      "scraped_at": "2026-10-25T16:59:43.342378+01:00",
+      "minutes_avant_depart": 0.2818512833333333,
+      "cotes": {
+        "1": 14.0,
+        "2": 5.9,
+        "3": 7.9,
+        "4": 31.0,
+        "5": 25.0,
+        "6": 71.0,
+        "7": 15.0,
+        "8": 69.0,
+        "9": 4.7,
+        "10": 12.0,
+        "11": 14.0,
+        "12": 29.0,
+        "13": 18.0,
+        "14": 36.0,
+        "15": 7.5
+      }
+    },
+    {
+      "scraped_at": "2026-10-25T17:00:23.356410+01:00",
+      "minutes_avant_depart": -0.38481689999999996,
+      "cotes": {
+        "1": 14.0,
+        "2": 6.2,
+        "3": 7.9,
+        "4": 31.0,
+        "5": 28.0,
+        "6": 70.0,
+        "7": 14.0,
+        "8": 67.0,
+        "9": 4.9,
+        "10": 12.0,
+        "11": 13.0,
+        "12": 23.0,
+        "13": 20.0,
+        "14": 38.0,
+        "15": 7.1
       }
     }
   ]

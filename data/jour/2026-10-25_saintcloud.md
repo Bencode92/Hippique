@@ -129,22 +129,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DES HARAS
 
-*18h00 · plat · 2500 m · 15 partants · cotes à T−2:16*
+*18h00 · plat · 2500 m · 15 partants · cotes à T−0:17*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 9 | CLICCLIC PANPANPAN | 4,2 | 3,6 | 4,45 | -5,6 % | M.BARZALONA 3e | 2/53/77/2192 |
-| 15 | QUEENFLEUR | 7,4 | 9,9 | 7,20 | **+2,8 %** | T.BACHELOT | 16/53/77/1069 |
-| 3 | WASABI | 8,2 | 6,4 | 9,00 | -8,9 % | A.POUCHIN | 6/166/1909/655 |
-| 2 | SEVENNA'S BAY | 10 | 15 | 10,56 | -5,3 % | A.HAMELIN | 22/205/3091/2083 |
-| 10 | FLEUR D'ORANGER | 10 | 11 | 12,27 | -18,5 % | C.SOUMILLON | 7/30/232/371 |
-| 11 | ILUMINE PRECIEUSE | 12 | 16 | 14,27 | -15,9 % | M.GUYON | 4/200/244/206 |
-| 1 | NOTIONI FAL | 14 | 24 | 16,65 | -15,9 % | C.LECOEUVRE | 13/57/34/31 |
-| 7 | VIANETA | 14 | 28 | 16,06 | -12,8 % | PC.BOUDOT | 8/168/258/335 |
-| 13 | LORNE | 17 | 8,9 | 22,41 | -24,1 % | A.CRASTUS | 17/26/150/1021 |
-| 5 | BRIONA | 21 | 14 | 26,21 | -19,9 % | M.GRANDIN | 3/163/161/1530 |
-| 12 | AUTOROUTE | 27 | 40 | 38,97 | -30,7 % | T.PICCONE | 9/6/11/605 |
-| 14 | PINGO | 31 | 26 | 40,65 | -23,7 % | A.DUQUESNOY | 121/28/701/49 |
-| 4 | LOFSONGUR ISLANDE | 32 | 30 | 38,52 | -16,9 % | M.VELON | 28/26/68/1021 |
-| 6 | ALPE MOTTA | 64 | 52 | 111,40 | -42,5 % | F.VALLE SKAR | 35/87/3132/92 |
-| 8 | QUEEN D'AUNOU | 64 | 56 | 94,15 | -32,0 % | R.MANGIONE | 78/75/1165/1066 |
+| 9 | CLICCLIC PANPANPAN | 4,7 | 3,6 | 4,99 | -5,9 % | M.BARZALONA 3e | 2/53/77/2192 |
+| 2 | SEVENNA'S BAY | 5,9 | 15 | 5,76 | **+2,4 %** | A.HAMELIN | 22/205/3091/2083 |
+| 15 | QUEENFLEUR | 7,5 | 9,9 | 7,26 | **+3,2 %** | T.BACHELOT | 16/53/77/1069 |
+| 3 | WASABI | 7,9 | 6,4 | 8,57 | -7,8 % | A.POUCHIN | 6/166/1909/655 |
+| 10 | FLEUR D'ORANGER | 12 | 11 | 15,11 | -20,6 % | C.SOUMILLON | 7/30/232/371 |
+| 1 | NOTIONI FAL | 14 | 24 | 16,55 | -15,4 % | C.LECOEUVRE | 13/57/34/31 |
+| 11 | ILUMINE PRECIEUSE | 14 | 16 | 16,98 | -17,6 % | M.GUYON | 4/200/244/206 |
+| 7 | VIANETA | 15 | 28 | 17,30 | -13,3 % | PC.BOUDOT | 8/168/258/335 |
+| 13 | LORNE | 18 | 8,9 | 23,81 | -24,4 % | A.CRASTUS | 17/26/150/1021 |
+| 5 | BRIONA | 25 | 14 | 31,81 | -21,4 % | M.GRANDIN | 3/163/161/1530 |
+| 12 | AUTOROUTE | 29 | 40 | 42,02 | -31,0 % | T.PICCONE | 9/6/11/605 |
+| 4 | LOFSONGUR ISLANDE | 31 | 30 | 36,97 | -16,1 % | M.VELON | 28/26/68/1021 |
+| 14 | PINGO | 36 | 26 | 47,78 | -24,6 % | A.DUQUESNOY | 121/28/701/49 |
+| 8 | QUEEN D'AUNOU | 69 | 56 | 101,39 | -31,9 % | R.MANGIONE | 78/75/1165/1066 |
+| 6 | ALPE MOTTA | 71 | 52 | 123,64 | -42,6 % | F.VALLE SKAR | 35/87/3132/92 |
