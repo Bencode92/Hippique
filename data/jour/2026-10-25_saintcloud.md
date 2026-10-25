@@ -1,6 +1,6 @@
 # SAINT-CLOUD — 25/10/2026
 
-8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -71,26 +71,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DE L'ELEVAGE
 
-*16h15 · plat · 2500 m · 16 partants · cotes de l'extraction*
+*16h15 · plat · 2500 m · 16 partants · cotes à T−29:26*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 2 | SHRIHARA | 5,3 | 6,15 | -13,9 % | A.HAMELIN | 22/89/3150/2213 |
-| 15 | JANAH | 7,7 | 7,47 | **+3,1 %** | S.PASQUIER | 23/37/575/184 |
-| 3 | MAIA STAR | 9,5 | 9,13 | **+4,1 %** | PC.BOUDOT | 8/64/14/23 |
-| 8 | CRISTABEL | 10 | 11,99 | -16,6 % | O.ANDIGNE | 81/80/225/3084 |
-| 13 | NANCY DES PLACES | 11 | 14,01 | -21,5 % | E.HARDOUIN | 27/89/686/464 |
-| 11 | GOLDEN BELLE | 13 | 14,33 | -9,3 % | M.GUYON | 4/26/79/193 |
-| 7 | AME D'OR | 14 | 16,28 | -14,0 % | M.BARZALONA 3e | 2/1/142/74 |
-| 9 | MARINALEDA | 16 | 20,42 | -21,7 % | C.LECOEUVRE | 13/16/28/892 |
-| 4 | AMERICAN GLORY | 20 | 23,64 | -15,4 % | A.LEMAITRE | 11/18/802/432 |
-| 6 | WEEMAGATEE | 20 | 24,66 | -18,9 % | M.GRANDIN | 3/47/361/241 |
-| 10 | BRITANIA | 22 | 32,43 | -32,2 % | I.MENDIZABAL | 32/30/450/1738 |
-| 16 | GAREYA | 24 | 32,51 | -26,2 % | A.MADAMET | 10/23/–/1 |
-| 1 | AGILE | 31 | 40,70 | -23,8 % | M.VELON | 28/201/3331/– |
-| 5 | HASAPIKO | 37 | 47,55 | -22,2 % | T.BACHELOT | 16/17/39/939 |
-| 14 | TEARDROP EXPLODES | 47 | 61,90 | -24,1 % | F.VERON | 24/28/312/16 |
-| 12 | FOXEY LADY | 49 | 64,78 | -24,4 % | M.FAVRIAUX | 51/201/508/294 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 2 | SHRIHARA | 5,3 | 5,3 | 6,13 | -13,5 % | A.HAMELIN | 22/89/3150/2213 |
+| 15 | JANAH | 8,5 | 7,7 | 9,05 | -6,1 % | S.PASQUIER | 23/37/575/184 |
+| 3 | MAIA STAR | 10 | 9,5 | 9,64 | **+3,8 %** | PC.BOUDOT | 8/64/14/23 |
+| 8 | CRISTABEL | 10 | 10 | 11,93 | -16,2 % | O.ANDIGNE | 81/80/225/3084 |
+| 13 | NANCY DES PLACES | 11 | 11 | 13,94 | -21,1 % | E.HARDOUIN | 27/89/686/464 |
+| 11 | GOLDEN BELLE | 13 | 13 | 14,26 | -8,8 % | M.GUYON | 4/26/79/193 |
+| 7 | AME D'OR | 14 | 14 | 16,20 | -13,6 % | M.BARZALONA 3e | 2/1/142/74 |
+| 9 | MARINALEDA | 15 | 16 | 18,84 | -20,4 % | C.LECOEUVRE | 13/16/28/892 |
+| 4 | AMERICAN GLORY | 19 | 20 | 22,17 | -14,3 % | A.LEMAITRE | 11/18/802/432 |
+| 6 | WEEMAGATEE | 20 | 20 | 24,54 | -18,5 % | M.GRANDIN | 3/47/361/241 |
+| 16 | GAREYA | 22 | 24 | 29,27 | -24,8 % | A.MADAMET | 10/23/–/1 |
+| 10 | BRITANIA | 23 | 22 | 33,98 | -32,3 % | I.MENDIZABAL | 32/30/450/1738 |
+| 1 | AGILE | 27 | 31 | 34,64 | -22,0 % | M.VELON | 28/201/3331/– |
+| 5 | HASAPIKO | 36 | 37 | 45,90 | -21,6 % | T.BACHELOT | 16/17/39/939 |
+| 14 | TEARDROP EXPLODES | 48 | 47 | 63,05 | -23,9 % | F.VERON | 24/28/312/16 |
+| 12 | FOXEY LADY | 51 | 49 | 67,35 | -24,3 % | M.FAVRIAUX | 51/201/508/294 |
 
 ### 6. PRIX ROYAL-OAK
 
