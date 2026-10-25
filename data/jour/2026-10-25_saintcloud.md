@@ -1,6 +1,6 @@
 # SAINT-CLOUD — 25/10/2026
 
-8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -129,22 +129,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DES HARAS
 
-*18h00 · plat · 2500 m · 15 partants · cotes de l'extraction*
+*18h00 · plat · 2500 m · 15 partants · cotes à T−29:37*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 9 | CLICCLIC PANPANPAN | 3,6 | 3,41 | **+5,6 %** | M.BARZALONA 3e | 2/53/77/2192 |
-| 3 | WASABI | 6,4 | 6,99 | -8,5 % | A.POUCHIN | 6/166/1909/655 |
-| 13 | LORNE | 8,9 | 10,40 | -14,4 % | A.CRASTUS | 17/26/150/1021 |
-| 15 | QUEENFLEUR | 9,9 | 10,84 | -8,6 % | T.BACHELOT | 16/53/77/1069 |
-| 10 | FLEUR D'ORANGER | 11 | 13,59 | -19,1 % | C.SOUMILLON | 7/30/232/371 |
-| 5 | BRIONA | 14 | 14,84 | -5,7 % | M.GRANDIN | 3/163/161/1530 |
-| 2 | SEVENNA'S BAY | 15 | 18,33 | -18,2 % | A.HAMELIN | 22/205/3091/2083 |
-| 11 | ILUMINE PRECIEUSE | 16 | 19,78 | -19,1 % | M.GUYON | 4/200/244/206 |
-| 1 | NOTIONI FAL | 24 | 33,75 | -28,9 % | C.LECOEUVRE | 13/57/34/31 |
-| 14 | PINGO | 26 | 33,01 | -21,2 % | A.DUQUESNOY | 121/28/701/49 |
-| 7 | VIANETA | 28 | 35,32 | -20,7 % | PC.BOUDOT | 8/168/258/335 |
-| 4 | LOFSONGUR ISLANDE | 30 | 35,51 | -15,5 % | M.VELON | 28/26/68/1021 |
-| 12 | AUTOROUTE | 40 | 57,25 | -30,1 % | T.PICCONE | 9/6/11/605 |
-| 6 | ALPE MOTTA | 52 | 88,38 | -41,2 % | F.VALLE SKAR | 35/87/3132/92 |
-| 8 | QUEEN D'AUNOU | 56 | 80,94 | -30,8 % | R.MANGIONE | 78/75/1165/1066 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 9 | CLICCLIC PANPANPAN | 3,9 | 3,6 | 3,99 | -2,2 % | M.BARZALONA 3e | 2/53/77/2192 |
+| 3 | WASABI | 8,7 | 6,4 | 9,62 | -9,6 % | A.POUCHIN | 6/166/1909/655 |
+| 10 | FLEUR D'ORANGER | 8,9 | 11 | 10,69 | -16,7 % | C.SOUMILLON | 7/30/232/371 |
+| 15 | QUEENFLEUR | 9,3 | 9,9 | 10,16 | -8,5 % | T.BACHELOT | 16/53/77/1069 |
+| 2 | SEVENNA'S BAY | 12 | 15 | 13,04 | -7,9 % | A.HAMELIN | 22/205/3091/2083 |
+| 11 | ILUMINE PRECIEUSE | 12 | 16 | 14,25 | -15,8 % | M.GUYON | 4/200/244/206 |
+| 13 | LORNE | 12 | 8,9 | 14,89 | -19,4 % | A.CRASTUS | 17/26/150/1021 |
+| 5 | BRIONA | 17 | 14 | 20,51 | -17,1 % | M.GRANDIN | 3/163/161/1530 |
+| 7 | VIANETA | 17 | 28 | 20,09 | -15,4 % | PC.BOUDOT | 8/168/258/335 |
+| 1 | NOTIONI FAL | 23 | 24 | 32,40 | -29,0 % | C.LECOEUVRE | 13/57/34/31 |
+| 4 | LOFSONGUR ISLANDE | 27 | 30 | 31,78 | -15,0 % | M.VELON | 28/26/68/1021 |
+| 12 | AUTOROUTE | 27 | 40 | 38,92 | -30,6 % | T.PICCONE | 9/6/11/605 |
+| 14 | PINGO | 27 | 26 | 34,74 | -22,3 % | A.DUQUESNOY | 121/28/701/49 |
+| 6 | ALPE MOTTA | 39 | 52 | 59,17 | -34,1 % | F.VALLE SKAR | 35/87/3132/92 |
+| 8 | QUEEN D'AUNOU | 52 | 56 | 75,31 | -30,9 % | R.MANGIONE | 78/75/1165/1066 |
