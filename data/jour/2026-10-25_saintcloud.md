@@ -1,6 +1,6 @@
 # SAINT-CLOUD — 25/10/2026
 
-8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -40,20 +40,20 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX PERTH
 
-*14h59 · plat · 1600 m · 10 partants · cotes de l'extraction*
+*14h59 · plat · 1600 m · 10 partants · cotes à T−2:46*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 4 | HALF HALF | 4,4 | 5,09 | -13,6 % | C.SOUMILLON 4e | 7/97/137/171 |
-| 8 | ELASTIC | 4,4 | 5,58 | -21,1 % | M.GUYON 5e | 4/7/1/2 |
-| 1 | DREAMLINER | 7 | 8,23 | -14,9 % | T.BACHELOT | 16/17/529/420 |
-| 3 | CALAS | 7,3 | 7,04 | **+3,7 %** | PC.BOUDOT 2e | 8/19/121/165 |
-| 2 | CLAVUS | 8,7 | 9,35 | -6,9 % | M.BARZALONA 3e | 2/19/10/29 |
-| 5 | TUMBLER | 9,8 | 11,67 | -16,0 % | S.PASQUIER | 23/21/1/90 |
-| 9 | FORTUNA DIAMOND | 15 | 21,03 | -28,7 % | W.BUICK | 168/6/–/6 |
-| 7 | PRINCESS CHILD | 17 | 20,39 | -16,6 % | D.BROWNE MCMONAGLE | 176/82/75/– |
-| 6 | CROWN OF OAKS | 21 | 27,17 | -22,7 % | C.FALLON | 321/24/–/– |
-| 10 | MERIDEN | 38 | 56,85 | -33,2 % | CD.HAYES | 254/–/3080/– |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 6 | CROWN OF OAKS | 3,9 | 21 | 4,26 | -8,4 % | C.FALLON | 321/24/–/– |
+| 1 | DREAMLINER | 4,8 | 7 | 4,99 | -3,8 % | T.BACHELOT | 16/17/529/420 |
+| 4 | HALF HALF | 5,8 | 4,4 | 6,05 | -4,2 % | C.SOUMILLON 4e | 7/97/137/171 |
+| 8 | ELASTIC | 6,2 | 4,4 | 7,18 | -13,7 % | M.GUYON 5e | 4/7/1/2 |
+| 3 | CALAS | 11 | 7,3 | 12,35 | -10,9 % | PC.BOUDOT 2e | 8/19/121/165 |
+| 2 | CLAVUS | 12 | 8,7 | 13,07 | -8,2 % | M.BARZALONA 3e | 2/19/10/29 |
+| 5 | TUMBLER | 17 | 9,8 | 22,38 | -24,0 % | S.PASQUIER | 23/21/1/90 |
+| 9 | FORTUNA DIAMOND | 17 | 15 | 24,50 | -30,6 % | W.BUICK | 168/6/–/6 |
+| 7 | PRINCESS CHILD | 23 | 17 | 27,74 | -17,1 % | D.BROWNE MCMONAGLE | 176/82/75/– |
+| 10 | MERIDEN | 44 | 38 | 64,09 | -31,3 % | CD.HAYES | 254/–/3080/– |
 
 ### 4. CRITERIUM DE SAINT-CLOUD
 
