@@ -40,20 +40,20 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX PERTH
 
-*14h59 · plat · 1600 m · 10 partants · cotes à T−2:46*
+*14h59 · plat · 1600 m · 10 partants · cotes à T−0:06*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 6 | CROWN OF OAKS | 3,9 | 21 | 4,26 | -8,4 % | C.FALLON | 321/24/–/– |
-| 1 | DREAMLINER | 4,8 | 7 | 4,99 | -3,8 % | T.BACHELOT | 16/17/529/420 |
-| 4 | HALF HALF | 5,8 | 4,4 | 6,05 | -4,2 % | C.SOUMILLON 4e | 7/97/137/171 |
-| 8 | ELASTIC | 6,2 | 4,4 | 7,18 | -13,7 % | M.GUYON 5e | 4/7/1/2 |
-| 3 | CALAS | 11 | 7,3 | 12,35 | -10,9 % | PC.BOUDOT 2e | 8/19/121/165 |
-| 2 | CLAVUS | 12 | 8,7 | 13,07 | -8,2 % | M.BARZALONA 3e | 2/19/10/29 |
-| 5 | TUMBLER | 17 | 9,8 | 22,38 | -24,0 % | S.PASQUIER | 23/21/1/90 |
-| 9 | FORTUNA DIAMOND | 17 | 15 | 24,50 | -30,6 % | W.BUICK | 168/6/–/6 |
-| 7 | PRINCESS CHILD | 23 | 17 | 27,74 | -17,1 % | D.BROWNE MCMONAGLE | 176/82/75/– |
-| 10 | MERIDEN | 44 | 38 | 64,09 | -31,3 % | CD.HAYES | 254/–/3080/– |
+| 6 | CROWN OF OAKS | 4,7 | 21 | 5,40 | -13,0 % | C.FALLON | 321/24/–/– |
+| 1 | DREAMLINER | 4,9 | 7 | 5,12 | -4,4 % | T.BACHELOT | 16/17/529/420 |
+| 8 | ELASTIC | 4,9 | 4,4 | 5,75 | -14,8 % | M.GUYON 5e | 4/7/1/2 |
+| 4 | HALF HALF | 6,1 | 4,4 | 6,43 | -5,2 % | C.SOUMILLON 4e | 7/97/137/171 |
+| 2 | CLAVUS | 11 | 8,7 | 11,87 | -7,3 % | M.BARZALONA 3e | 2/19/10/29 |
+| 3 | CALAS | 11 | 7,3 | 12,41 | -11,3 % | PC.BOUDOT 2e | 8/19/121/165 |
+| 9 | FORTUNA DIAMOND | 16 | 15 | 22,93 | -30,2 % | W.BUICK | 168/6/–/6 |
+| 5 | TUMBLER | 18 | 9,8 | 24,03 | -25,1 % | S.PASQUIER | 23/21/1/90 |
+| 7 | PRINCESS CHILD | 20 | 17 | 24,86 | -19,5 % | D.BROWNE MCMONAGLE | 176/82/75/– |
+| 10 | MERIDEN | 38 | 38 | 57,41 | -33,8 % | CD.HAYES | 254/–/3080/– |
 
 ### 4. CRITERIUM DE SAINT-CLOUD
 
