@@ -136,14 +136,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 3 | NO SECRET | 2,7 | D. BEKAERT |
-| 8 | NIKI DU GOUTIER | 2,9 | R. DERIEUX |
-| 6 | NANUCHKA | 5,1 | TH. BRIAND |
-| 4 | NOUMEA D'AMOUR | 12 | L. GOETZ |
+| 3 | NO SECRET | 2,9 | D. BEKAERT |
+| 6 | NANUCHKA | 3,1 | TH. BRIAND |
+| 8 | NIKI DU GOUTIER | 5,1 | R. DERIEUX |
+| 4 | NOUMEA D'AMOUR | 8,4 | L. GOETZ |
 | 1 | NICE PARIS | 13 | LORENZO TALPO |
-| 2 | NOLANN DES AGETS | 26 | CL. MATHE |
-| 5 | NIKITA DANCER | 30 | R. BOUVIER |
-| 7 | NACRE DU VALLON | 63 | S. CINGLAND |
+| 5 | NIKITA DANCER | 19 | R. BOUVIER |
+| 7 | NACRE DU VALLON | 33 | S. CINGLAND |
+| 2 | NOLANN DES AGETS | 81 | CL. MATHE |
 
 ### 8. PRIX ROTARY CLUB SALON DE PROVENCE
 
@@ -151,12 +151,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 7 | JANGA DU BELLAY | 4,9 | Mme I. METZEMAEKERS |
-| 6 | JINA FAST | 5,7 | L. LIGOT |
-| 8 | JOLIE MOME CHIC | 5,8 | Mlle S. BLANCHETIERE |
-| 4 | JEWELKIM | 6,3 | Mme M. ROUBAUD |
-| 5 | HATOUT DE CONNEE | 8,4 | F. YVANES |
-| 9 | HACKER JULRY | 8,4 | R.F. PERRET |
-| 3 | IOWA DE TOUCHYVON | 13 | Mlle K. FRESNEAU |
-| 2 | JAGUAR ATOUT | 14 | K. AXISA |
-| 1 | INCAS D'EURVAD | 22 | Mme A. ROMAN |
+| 6 | JINA FAST | 4,4 | L. LIGOT |
+| 3 | IOWA DE TOUCHYVON | 6 | Mlle K. FRESNEAU |
+| 9 | HACKER JULRY | 8 | R.F. PERRET |
+| 1 | INCAS D'EURVAD | 8,3 | Mme A. ROMAN |
+| 4 | JEWELKIM | 9 | Mme M. ROUBAUD |
+| 7 | JANGA DU BELLAY | 9,2 | Mme I. METZEMAEKERS |
+| 8 | JOLIE MOME CHIC | 9,4 | Mlle S. BLANCHETIERE |
+| 5 | HATOUT DE CONNEE | 11 | F. YVANES |
+| 2 | JAGUAR ATOUT | 11 | K. AXISA |
