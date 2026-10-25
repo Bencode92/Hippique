@@ -1,8 +1,8 @@
 # SHA TIN (HONG KONG) — 25/10/2026
 
-5 courses.
+5 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -12,20 +12,20 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | FAST RESPONDER | – | YUEN H.Y. |
-| 2 | FULL METAL | – | TEETAN K. |
-| 3 | YEE CHEONG BRIGHT | – | ORMAN J. |
-| 4 | CASA OF HONOR | – | POON M.F. |
-| 5 | DYNAMIC BROSE | – | YEUNG M.L. |
-| 6 | KA YING LIGHTNING | – | ATZENI A. |
-| 7 | LIGHTNESS OF MUSIC | – | PURTON Z. |
-| 8 | CALIFORNIA COMMAND | – | CHUNG Y.L. |
-| 9 | KING OF THE SKY | – | LEUNG K.C. |
-| 10 | TURBO GRANNY | – | HO C.Y. |
-| 11 | JIN SHENG | – | CHAU C.L. |
-| 12 | VULCANUS | – | MO H.T. |
-| 13 | DEVAS TWELVE | – | WONG P.N. |
-| 14 | LAHORE | – | BADEL A. |
+| 6 | KA YING LIGHTNING | 2,9 | ATZENI A. |
+| 7 | LIGHTNESS OF MUSIC | 3,9 | PURTON Z. |
+| 3 | YEE CHEONG BRIGHT | 4,6 | ORMAN J. |
+| 14 | LAHORE | 7,2 | BADEL A. |
+| 4 | CASA OF HONOR | 19 | POON M.F. |
+| 2 | FULL METAL | 22 | TEETAN K. |
+| 11 | JIN SHENG | 24 | CHAU C.L. |
+| 1 | FAST RESPONDER | 26 | YUEN H.Y. |
+| 10 | TURBO GRANNY | 42 | HO C.Y. |
+| 5 | DYNAMIC BROSE | 71 | YEUNG M.L. |
+| 13 | DEVAS TWELVE | 78 | WONG P.N. |
+| 8 | CALIFORNIA COMMAND | 86 | CHUNG Y.L. |
+| 9 | KING OF THE SKY | 96 | LEUNG K.C. |
+| 12 | VULCANUS | 124 | MO H.T. |
 
 ### 7. THE LUKFOOK JEWELLERY PREMIER BOWL (HANDICAP)
 
@@ -33,15 +33,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | RAGING BLIZZARD | – | AVDULLA B. |
-| 2 | COLOURFUL KING | – | CHAU C.L. |
-| 3 | COPARTNER PRANCE | – | YEUNG M.L. |
-| 4 | CRIMSON FLASH | – | ATZENI A. |
-| 5 | BEAUTY WAVES | – | BADEL A. |
-| 6 | TOMODACHI KOKOROE | – | BENTLEY H. |
-| 7 | KA YING ATTACK | – | POON M.F. |
-| 8 | AERIS NOVA | – | LEUNG K.C. |
-| 9 | SING DRAGON | – | CHADWICK M. |
+| 7 | KA YING ATTACK | 2,8 | POON M.F. |
+| 1 | RAGING BLIZZARD | 4,6 | AVDULLA B. |
+| 3 | COPARTNER PRANCE | 5,9 | YEUNG M.L. |
+| 8 | AERIS NOVA | 7,2 | LEUNG K.C. |
+| 2 | COLOURFUL KING | 9,1 | CHAU C.L. |
+| 4 | CRIMSON FLASH | 9,2 | ATZENI A. |
+| 9 | SING DRAGON | 18 | CHADWICK M. |
+| 6 | TOMODACHI KOKOROE | 27 | BENTLEY H. |
+| 5 | BEAUTY WAVES | 46 | BADEL A. |
 
 ### 8. LUKFOOK JEWELLERY HEIRLOOM FORTUNE COLLECTION HANDICAP
 
@@ -49,20 +49,20 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | STORM MIRROR | – | YUEN H.Y. |
-| 2 | TANG HEART | – | WONG E.C.W. |
-| 3 | MR COOL | – | TEETAN K. |
-| 4 | OLDTOWN | – | FERRARIS L. |
-| 5 | GRAND PATCH | – | HO C.Y. |
-| 6 | NATURAL HIGH | – | WONG P.N. |
-| 7 | FLASH CURRENT | – | LEUNG K.C. |
-| 8 | ROAD TO GLORY | – | PURTON Z. |
-| 9 | KING ZOOM | – | ORMAN J. |
-| 10 | PRESTIGE COME | – | KINGSCOTE R. |
-| 11 | TURF QUEST | – | YEUNG M.L. |
-| 12 | GENIUS BABY | – | BADEL A. |
-| 13 | LET'S HAVE FUN | – | POON M.F. |
-| 14 | ALABAMA SONG | – | ATZENI A. |
+| 1 | STORM MIRROR | 3,5 | YUEN H.Y. |
+| 7 | FLASH CURRENT | 5 | LEUNG K.C. |
+| 3 | MR COOL | 5,4 | TEETAN K. |
+| 5 | GRAND PATCH | 6,4 | HO C.Y. |
+| 8 | ROAD TO GLORY | 7,8 | PURTON Z. |
+| 13 | LET'S HAVE FUN | 12 | POON M.F. |
+| 10 | PRESTIGE COME | 15 | KINGSCOTE R. |
+| 14 | ALABAMA SONG | 31 | ATZENI A. |
+| 2 | TANG HEART | 60 | WONG E.C.W. |
+| 4 | OLDTOWN | 62 | FERRARIS L. |
+| 11 | TURF QUEST | 69 | YEUNG M.L. |
+| 12 | GENIUS BABY | 72 | BADEL A. |
+| 6 | NATURAL HIGH | 78 | WONG P.N. |
+| 9 | KING ZOOM | 138 | ORMAN J. |
 
 ### 9. LUKFOOK JOAILLERIE HANDICAP
 
@@ -70,19 +70,19 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | ENSUED | – | ORMAN J. |
-| 2 | SIX PACK | – | FERRARIS L. |
-| 3 | MAX QUE | – | BADEL A. |
-| 4 | CHILL EASY | – | CHAU C.L. |
-| 5 | ROMANTIC THOR | – | POON M.F. |
-| 6 | STUNNING PEACH | – | HO C.Y. |
-| 7 | DEFINITIVE | – | TEETAN K. |
-| 8 | CALIFORNIATOTALITY | – | AVDULLA B. |
-| 9 | BRAVEFIELD | – | PURTON Z. |
-| 10 | INFINITE RESOLVE | – | ATZENI A. |
-| 11 | REGAL GEM | – | LEUNG K.C. |
-| 12 | AWESOME FLUKE | – | YUEN H.Y. |
-| 13 | DROMBEG BANNER | – | CHUNG Y.L. |
+| 13 | DROMBEG BANNER | 4,4 | CHUNG Y.L. |
+| 4 | CHILL EASY | 4,6 | CHAU C.L. |
+| 10 | INFINITE RESOLVE | 5,6 | ATZENI A. |
+| 11 | REGAL GEM | 8,1 | LEUNG K.C. |
+| 2 | SIX PACK | 12 | FERRARIS L. |
+| 3 | MAX QUE | 14 | BADEL A. |
+| 7 | DEFINITIVE | 16 | TEETAN K. |
+| 5 | ROMANTIC THOR | 17 | POON M.F. |
+| 8 | CALIFORNIATOTALITY | 20 | AVDULLA B. |
+| 6 | STUNNING PEACH | 23 | HO C.Y. |
+| 12 | AWESOME FLUKE | 27 | YUEN H.Y. |
+| 9 | BRAVEFIELD | 27 | PURTON Z. |
+| 1 | ENSUED | 28 | ORMAN J. |
 
 ### 10. LUKFOOK JEWELLERY LONGMEN VAJRA COLLECTION HANDICAP
 
@@ -90,17 +90,17 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | PAKISTAN LEGACY | – | YUEN H.Y. |
-| 2 | PI LEGEND | – | TEETAN K. |
-| 3 | AURIO | – | PURTON Z. |
-| 4 | MEGASTAR HEART | – | FERRARIS L. |
-| 5 | DO YOU JUST | – | CHUNG Y.L. |
-| 6 | RADIANT PATH | – | HO C.Y. |
-| 7 | BLUE LIGHTNING | – | AVDULLA B. |
-| 8 | METRO POWER | – | ORMAN J. |
-| 9 | SPICY STANDARD | – | ATZENI A. |
-| 10 | ANOTHER ZONDA | – | CHADWICK M. |
-| 11 | LUCRATIVE EIGHT | – | LEUNG K.C. |
-| 12 | MASK WARRIOR | – | BADEL A. |
-| 13 | ANODE | – | POON M.F. |
-| 14 | GREAT LEGEND | – | WONG P.N. |
+| 4 | MEGASTAR HEART | 1,7 | FERRARIS L. |
+| 2 | PI LEGEND | 6,6 | TEETAN K. |
+| 3 | AURIO | 9,1 | PURTON Z. |
+| 9 | SPICY STANDARD | 12 | ATZENI A. |
+| 11 | LUCRATIVE EIGHT | 14 | LEUNG K.C. |
+| 12 | MASK WARRIOR | 16 | BADEL A. |
+| 1 | PAKISTAN LEGACY | 27 | YUEN H.Y. |
+| 8 | METRO POWER | 32 | ORMAN J. |
+| 13 | ANODE | 52 | POON M.F. |
+| 5 | DO YOU JUST | 52 | CHUNG Y.L. |
+| 7 | BLUE LIGHTNING | 81 | AVDULLA B. |
+| 10 | ANOTHER ZONDA | 112 | CHADWICK M. |
+| 14 | GREAT LEGEND | 152 | WONG P.N. |
+| 6 | RADIANT PATH | 184 | HO C.Y. |
