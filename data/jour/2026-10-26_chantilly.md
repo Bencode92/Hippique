@@ -133,25 +133,25 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DE SEINE-ET-OISE
 
-*17h15 · plat · 1200 m · 18 partants · cotes à T−28:39*
+*17h15 · plat · 1200 m · 18 partants · cotes à T−24:00*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 19 | NO TUNE | 6,4 | 7,3 | 6,41 | -0,1 % | M.GUYON | 4/10/1/2 |
-| 17 | VALASARA | 7,5 | 7 | 8,09 | -7,3 % | M.BARZALONA 🏆5e | 2/1/–/1 |
-| 1 | MISE EN BOITE | 8,7 | 10 | 9,85 | -11,7 % | PC.BOUDOT | 8/76/55/70 |
-| 5 | EXTREMELY ZAIN | 13 | 14 | 17,99 | -27,8 % | C.FALLON | 321/24/1226/– |
-| 18 | KIMI REY | 14 | 13 | 17,50 | -20,0 % | C.LECOEUVRE | 13/1/3249/261 |
-| 2 | SPYCATCHER | 15 | 13 | 18,61 | -19,4 % | P.JAMIN | 199/42/3218/468 |
-| 6 | KAILANI | 17 | 19 | 22,98 | -26,0 % | A.POUCHIN | 6/17/57/79 |
-| 11 | NAVASSA ISLAND | 17 | 14 | 18,86 | -9,8 % | S.PASQUIER | 23/839/563/1534 |
-| 14 | ALREYYAH | 17 | 21 | 19,66 | -13,5 % | T.BACHELOT | 16/9/3181/1784 |
-| 8 | MONTEILLE | 18 | 16 | 20,13 | -10,6 % | C.DEMURO | 1/16/8/4 |
-| 16 | FORTY YEARS ON | 18 | 19 | 25,21 | -28,6 % | H.CROUCH | 222/29/3113/38 |
-| 4 | DOSTOIEVSKY | 19 | 18 | 21,78 | -12,8 % | T. PICCONE | 9/22/16/9 |
-| 13 | TALES OF THE HEART | 20 | 17 | 23,71 | -15,7 % | H.JOURNIAC | 43/1/3218/111 |
-| 7 | MAGNY COURS | 22 | 20 | 26,96 | -18,4 % | B.COEN | 278/535/3966/68 |
-| 10 | CARLA RIDGE | 28 | 29 | 38,18 | -26,7 % | CD.HAYES | 254/–/–/– |
-| 3 | ESTEPONA | 32 | 27 | 44,39 | -27,9 % | A.MADAMET | 10/22/80/32 |
-| 15 | PERSHING | 40 | 38 | 62,54 | -36,0 % | S.VOGT | 126/425/835/2676 |
-| 12 | CANNEZA | 71 | 60 | 113,70 | -37,6 % | J.MOUTARD | 61/156/–/635 |
+| 17 | VALASARA | 5,5 | 7 | 5,59 | -1,6 % | M.BARZALONA 🏆5e | 2/1/–/1 |
+| 19 | NO TUNE | 6,1 | 7,3 | 7,05 | -13,4 % | M.GUYON | 4/10/1/2 |
+| 1 | MISE EN BOITE | 9,3 | 10 | 11,53 | -19,3 % | PC.BOUDOT | 8/76/55/70 |
+| 5 | EXTREMELY ZAIN | 14 | 14 | 19,50 | -28,2 % | C.FALLON | 321/24/1226/– |
+| 18 | KIMI REY | 15 | 13 | 18,83 | -20,4 % | C.LECOEUVRE | 13/1/3249/261 |
+| 2 | SPYCATCHER | 16 | 13 | 19,93 | -19,7 % | P.JAMIN | 199/42/3218/468 |
+| 8 | MONTEILLE | 17 | 16 | 18,71 | -9,2 % | C.DEMURO | 1/16/8/4 |
+| 6 | KAILANI | 19 | 19 | 25,98 | -26,9 % | A.POUCHIN | 6/17/57/79 |
+| 11 | NAVASSA ISLAND | 19 | 14 | 21,29 | -10,8 % | S.PASQUIER | 23/839/563/1534 |
+| 14 | ALREYYAH | 19 | 21 | 22,20 | -14,4 % | T.BACHELOT | 16/9/3181/1784 |
+| 16 | FORTY YEARS ON | 19 | 19 | 26,67 | -28,7 % | H.CROUCH | 222/29/3113/38 |
+| 4 | DOSTOIEVSKY | 21 | 18 | 24,27 | -13,5 % | T. PICCONE | 9/22/16/9 |
+| 13 | TALES OF THE HEART | 24 | 17 | 29,02 | -17,3 % | H.JOURNIAC | 43/1/3218/111 |
+| 7 | MAGNY COURS | 25 | 20 | 30,99 | -19,3 % | B.COEN | 278/535/3966/68 |
+| 3 | ESTEPONA | 28 | 27 | 37,93 | -26,2 % | A.MADAMET | 10/22/80/32 |
+| 10 | CARLA RIDGE | 33 | 29 | 43,54 | -24,2 % | CD.HAYES | 254/–/–/– |
+| 15 | PERSHING | 41 | 38 | 63,85 | -35,8 % | S.VOGT | 126/425/835/2676 |
+| 12 | CANNEZA | 87 | 60 | 153,45 | -43,3 % | J.MOUTARD | 61/156/–/635 |
