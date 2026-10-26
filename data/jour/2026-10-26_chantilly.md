@@ -1,6 +1,6 @@
 # CHANTILLY — 26/10/2026
 
-8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -133,25 +133,25 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DE SEINE-ET-OISE
 
-*17h15 · plat · 1200 m · 18 partants · cotes de l'extraction*
+*17h15 · plat · 1200 m · 18 partants · cotes à T−28:39*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 17 | VALASARA | 7 | 6,45 | **+8,5 %** | M.BARZALONA 🏆5e | 2/1/–/1 |
-| 19 | NO TUNE | 7,3 | 8,81 | -17,2 % | M.GUYON | 4/10/1/2 |
-| 1 | MISE EN BOITE | 10 | 12,77 | -21,7 % | PC.BOUDOT | 8/76/55/70 |
-| 2 | SPYCATCHER | 13 | 15,90 | -18,2 % | P.JAMIN | 199/42/3218/468 |
-| 18 | KIMI REY | 13 | 16,20 | -19,7 % | C.LECOEUVRE | 13/1/3249/261 |
-| 5 | EXTREMELY ZAIN | 14 | 19,83 | -29,4 % | C.FALLON | 321/24/1226/– |
-| 11 | NAVASSA ISLAND | 14 | 15,21 | -7,9 % | S.PASQUIER | 23/839/563/1534 |
-| 8 | MONTEILLE | 16 | 17,73 | -9,8 % | C.DEMURO | 1/16/8/4 |
-| 13 | TALES OF THE HEART | 17 | 19,84 | -14,3 % | H.JOURNIAC | 43/1/3218/111 |
-| 4 | DOSTOIEVSKY | 18 | 20,66 | -12,9 % | T. PICCONE | 9/22/16/9 |
-| 6 | KAILANI | 19 | 26,40 | -28,0 % | A.POUCHIN | 6/17/57/79 |
-| 16 | FORTY YEARS ON | 19 | 27,11 | -29,9 % | H.CROUCH | 222/29/3113/38 |
-| 7 | MAGNY COURS | 20 | 24,39 | -18,0 % | B.COEN | 278/535/3966/68 |
-| 14 | ALREYYAH | 21 | 25,32 | -17,0 % | T.BACHELOT | 16/9/3181/1784 |
-| 3 | ESTEPONA | 27 | 36,98 | -27,0 % | A.MADAMET | 10/22/80/32 |
-| 10 | CARLA RIDGE | 29 | 40,10 | -27,7 % | CD.HAYES | 254/–/–/– |
-| 15 | PERSHING | 38 | 59,63 | -36,3 % | S.VOGT | 126/425/835/2676 |
-| 12 | CANNEZA | 60 | 95,98 | -37,5 % | J.MOUTARD | 61/156/–/635 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 19 | NO TUNE | 6,4 | 7,3 | 6,41 | -0,1 % | M.GUYON | 4/10/1/2 |
+| 17 | VALASARA | 7,5 | 7 | 8,09 | -7,3 % | M.BARZALONA 🏆5e | 2/1/–/1 |
+| 1 | MISE EN BOITE | 8,7 | 10 | 9,85 | -11,7 % | PC.BOUDOT | 8/76/55/70 |
+| 5 | EXTREMELY ZAIN | 13 | 14 | 17,99 | -27,8 % | C.FALLON | 321/24/1226/– |
+| 18 | KIMI REY | 14 | 13 | 17,50 | -20,0 % | C.LECOEUVRE | 13/1/3249/261 |
+| 2 | SPYCATCHER | 15 | 13 | 18,61 | -19,4 % | P.JAMIN | 199/42/3218/468 |
+| 6 | KAILANI | 17 | 19 | 22,98 | -26,0 % | A.POUCHIN | 6/17/57/79 |
+| 11 | NAVASSA ISLAND | 17 | 14 | 18,86 | -9,8 % | S.PASQUIER | 23/839/563/1534 |
+| 14 | ALREYYAH | 17 | 21 | 19,66 | -13,5 % | T.BACHELOT | 16/9/3181/1784 |
+| 8 | MONTEILLE | 18 | 16 | 20,13 | -10,6 % | C.DEMURO | 1/16/8/4 |
+| 16 | FORTY YEARS ON | 18 | 19 | 25,21 | -28,6 % | H.CROUCH | 222/29/3113/38 |
+| 4 | DOSTOIEVSKY | 19 | 18 | 21,78 | -12,8 % | T. PICCONE | 9/22/16/9 |
+| 13 | TALES OF THE HEART | 20 | 17 | 23,71 | -15,7 % | H.JOURNIAC | 43/1/3218/111 |
+| 7 | MAGNY COURS | 22 | 20 | 26,96 | -18,4 % | B.COEN | 278/535/3966/68 |
+| 10 | CARLA RIDGE | 28 | 29 | 38,18 | -26,7 % | CD.HAYES | 254/–/–/– |
+| 3 | ESTEPONA | 32 | 27 | 44,39 | -27,9 % | A.MADAMET | 10/22/80/32 |
+| 15 | PERSHING | 40 | 38 | 62,54 | -36,0 % | S.VOGT | 126/425/835/2676 |
+| 12 | CANNEZA | 71 | 60 | 113,70 | -37,6 % | J.MOUTARD | 61/156/–/635 |
