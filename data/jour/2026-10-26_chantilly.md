@@ -2,7 +2,9 @@
 
 8 courses.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+**Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
+La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
+Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classements ci-dessus.
 
 ---
 
@@ -50,26 +52,26 @@
 
 ### 4. PRIX DE LA ROUTE DES PRINCES
 
-*14h55 · plat · 1600 m · 16 partants · cotes de l'extraction*
+*14h55 · plat · 1600 m · 16 partants · cotes à T−29:24*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | WAPI | – | R.THOMAS | 75/11/20/1266 |
-| 2 | TORTISAMBERT | – | M.GRANDIN | 3/45/33/4 |
-| 3 | OLYMPIC MESSAGE | – | PC.BOUDOT 2e | 8/18/29/223 |
-| 4 | DIVINE CHRISNAT | – | R.MANGIONE | 78/81/738/1533 |
-| 5 | MISTER CHARMES | – | M.GUYON 5e | 4/19/1735/141 |
-| 6 | FAST RAAJ | – | H.JOURNIAC | 43/8/13/9 |
-| 7 | MELUSINE DU HOULEY | – | A.MADAMET | 10/8/238/573 |
-| 8 | FRANCISCANO | – | S.PASQUIER | 23/25/80/17 |
-| 9 | KRASKHOV | – | C.SOUMILLON 4e | 7/22/117/9 |
-| 10 | NOVA LUXOR | – | C.DEMURO | 1/16/33/2983 |
-| 11 | REVE DE VALLARSA | – | D.SANTIAGO | 15/137/294/1414 |
-| 12 | DUBALAA | – | A.LEMAITRE | 11/57/9/260 |
-| 13 | PUMALIN PARK | – | A.POUCHIN | 6/14/29/18 |
-| 14 | PERSIAN GRACE | – | M.BARZALONA 3e | 2/371/67/490 |
-| 15 | MICOCOULIER | – | E.HARDOUIN | 27/193/125/1162 |
-| 16 | APOGEO | – | C.LECOEUVRE | 13/87/91/3068 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 3 | OLYMPIC MESSAGE | 4,7 | 4,47 | **+5,2 %** | PC.BOUDOT 2e | 8/18/29/223 |
+| 10 | NOVA LUXOR | 8,8 | 10,79 | -18,5 % | C.DEMURO | 1/16/33/2983 |
+| 9 | KRASKHOV | 10 | 12,02 | -16,8 % | C.SOUMILLON 4e | 7/22/117/9 |
+| 5 | MISTER CHARMES | 11 | 13,11 | -16,1 % | M.GUYON 5e | 4/19/1735/141 |
+| 12 | DUBALAA | 11 | 13,45 | -18,2 % | A.LEMAITRE | 11/57/9/260 |
+| 13 | PUMALIN PARK | 11 | 12,65 | -13,1 % | A.POUCHIN | 6/14/29/18 |
+| 8 | FRANCISCANO | 14 | 17,87 | -21,6 % | S.PASQUIER | 23/25/80/17 |
+| 14 | PERSIAN GRACE | 16 | 18,59 | -13,9 % | M.BARZALONA 3e | 2/371/67/490 |
+| 7 | MELUSINE DU HOULEY | 18 | 25,08 | -28,2 % | A.MADAMET | 10/8/238/573 |
+| 4 | DIVINE CHRISNAT | 19 | 22,34 | -15,0 % | R.MANGIONE | 78/81/738/1533 |
+| 2 | TORTISAMBERT | 30 | 34,33 | -12,6 % | M.GRANDIN | 3/45/33/4 |
+| 11 | REVE DE VALLARSA | 31 | 39,11 | -20,7 % | D.SANTIAGO | 15/137/294/1414 |
+| 1 | WAPI | 32 | 36,92 | -13,3 % | R.THOMAS | 75/11/20/1266 |
+| 16 | APOGEO | 35 | 51,40 | -31,9 % | C.LECOEUVRE | 13/87/91/3068 |
+| 6 | FAST RAAJ | 43 | 64,62 | -33,5 % | H.JOURNIAC | 43/8/13/9 |
+| 15 | MICOCOULIER | 45 | 60,17 | -25,2 % | E.HARDOUIN | 27/193/125/1162 |
 
 ### 5. CRITERIUM DE VITESSE
 
