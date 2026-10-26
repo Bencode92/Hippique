@@ -4,26 +4,26 @@
   "reunion": 2,
   "heure_depart": 1793017620000,
   "distance": 2000,
-  "scraped_at": "2026-10-26T13:16:55.241456+01:00",
-  "minutes_avant_depart": 10,
+  "scraped_at": "2026-10-26T13:22:15.448235+01:00",
+  "minutes_avant_depart": 5,
   "participants": [
     {
       "numPmu": 1,
       "nom": "SHANVICTUS",
-      "cote_live": 23.0,
+      "cote_live": 30.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793016994000
+      "timestamp_cote": 1793017324000
     },
     {
       "numPmu": 2,
       "nom": "LANDMAN",
-      "cote_live": 6.4,
+      "cote_live": 7.0,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793016994000
+      "timestamp_cote": 1793017324000
     },
     {
       "numPmu": 3,
@@ -32,61 +32,61 @@
       "cote_reference": 3.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793016994000
+      "timestamp_cote": 1793017324000
     },
     {
       "numPmu": 4,
       "nom": "TO BE NICE",
-      "cote_live": 20.0,
+      "cote_live": 18.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793016994000
+      "timestamp_cote": 1793017324000
     },
     {
       "numPmu": 5,
       "nom": "NATURALISTE",
-      "cote_live": 9.8,
+      "cote_live": 12.0,
       "cote_reference": 8.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793016994000
+      "timestamp_cote": 1793017324000
     },
     {
       "numPmu": 6,
       "nom": "RUE MADON",
-      "cote_live": 14.0,
+      "cote_live": 17.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793016994000
+      "timestamp_cote": 1793017324000
     },
     {
       "numPmu": 7,
       "nom": "MAGENTA MELODY",
-      "cote_live": 9.0,
+      "cote_live": 5.8,
       "cote_reference": 7.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793016994000
+      "timestamp_cote": 1793017324000
     },
     {
       "numPmu": 8,
       "nom": "NO PAIN NO GAIN",
-      "cote_live": 25.0,
+      "cote_live": 27.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793016994000
+      "timestamp_cote": 1793017324000
     },
     {
       "numPmu": 9,
       "nom": "AMERICAN STORM",
-      "cote_live": 6.6,
+      "cote_live": 7.1,
       "cote_reference": 6.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793016994000
+      "timestamp_cote": 1793017324000
     },
     {
       "numPmu": 10,
@@ -95,16 +95,16 @@
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793016994000
+      "timestamp_cote": 1793017324000
     },
     {
       "numPmu": 11,
       "nom": "LOVEWHATYOUDO",
-      "cote_live": 32.0,
+      "cote_live": 29.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793016994000
+      "timestamp_cote": 1793017324000
     }
   ],
   "hippodrome": "BORELY",
@@ -141,6 +141,57 @@
         "9": 6.6,
         "10": 10.0,
         "11": 32.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-26T13:20:55.487723+01:00",
+      "minutes_avant_depart": 6.083924499999999,
+      "cotes": {
+        "1": 29.0,
+        "2": 7.0,
+        "3": 3.3,
+        "4": 19.0,
+        "5": 12.0,
+        "6": 17.0,
+        "7": 6.1,
+        "8": 28.0,
+        "9": 7.0,
+        "10": 10.0,
+        "11": 29.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-26T13:21:35.481466+01:00",
+      "minutes_avant_depart": 5.417256733333334,
+      "cotes": {
+        "1": 29.0,
+        "2": 7.2,
+        "3": 3.3,
+        "4": 18.0,
+        "5": 11.0,
+        "6": 17.0,
+        "7": 6.0,
+        "8": 28.0,
+        "9": 7.1,
+        "10": 10.0,
+        "11": 29.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-26T13:22:15.448235+01:00",
+      "minutes_avant_depart": 4.746113116666667,
+      "cotes": {
+        "1": 30.0,
+        "2": 7.0,
+        "3": 3.4,
+        "4": 18.0,
+        "5": 12.0,
+        "6": 17.0,
+        "7": 5.8,
+        "8": 27.0,
+        "9": 7.1,
+        "10": 10.0,
+        "11": 29.0
       }
     }
   ]
