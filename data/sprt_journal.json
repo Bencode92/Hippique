@@ -1,10 +1,10 @@
 {
   "_doc": "Journal des paris réels du test séquentiel. Le pari est le relevé le plus proche de T-2:00 dans [T-2:40 ; T-1:20] (releve = 'T-m:ss') ; une course de la règle sans relevé dans la fenêtre est EXCLUE (liste exclues), jamais remplacée par la clôture. Écrit par bench/sprt_regle.mjs.",
   "debut": "2026-10-01",
-  "paris": 13,
-  "exclues_sans_releve": 8,
+  "paris": 14,
+  "exclues_sans_releve": 9,
   "favori_change_avant_cloture": 2,
-  "taux_bascule_favori": 0.154,
+  "taux_bascule_favori": 0.143,
   "lignes": [
     {
       "date": "2026-10-03",
@@ -226,6 +226,23 @@
       "dividende": 0,
       "gain_20e": -20,
       "S": -0.033
+    },
+    {
+      "date": "2026-10-25",
+      "hippodrome": "SAINT-CLOUD",
+      "R": 1,
+      "C": 8,
+      "cheval": "CLICCLIC PANPANPAN",
+      "numero": 9,
+      "cote_misee": 4.2,
+      "releve": "T-2:16",
+      "cote_finale": 4.5,
+      "favori_final_identique": true,
+      "derive": -0.077,
+      "gagne": false,
+      "dividende": 0,
+      "gain_20e": -20,
+      "S": -0.067
     }
   ],
   "exclues": [
@@ -283,6 +300,13 @@
       "hip": "ParisLongchamp",
       "r": 1,
       "c": 7,
+      "motif": "aucun relevé dans [T-2:40 ; T-1:20]"
+    },
+    {
+      "date": "2026-10-25",
+      "hip": "SAINT-CLOUD",
+      "r": 1,
+      "c": 5,
       "motif": "aucun relevé dans [T-2:40 ; T-1:20]"
     }
   ]
