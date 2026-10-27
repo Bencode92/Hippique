@@ -1,6 +1,6 @@
 # DEAUVILLE — 27/10/2026
 
-8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -81,21 +81,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DU VERGALY
 
-*17h15 · plat · 3400 m · 11 partants · cotes de l'extraction*
+*17h15 · plat · 3400 m · 11 partants · cotes à T−29:27*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 3 | DARK ROCKSTER | 3,1 | 3,36 | -7,7 % | C.PACAUT | 48/17/2120/40 |
-| 4 | STEP MORNING | 4,5 | 5,01 | -10,2 % | T.BACHELOT | 16/429/1175/4133 |
-| 9 | ROUDOUDOU | 8,9 | 9,64 | -7,7 % | P.BAZIRE | 58/378/469/2443 |
-| 5 | GUINESS STAR | 9,8 | 11,53 | -15,0 % | O.ANDIGNE | 81/80/1431/146 |
-| 7 | VENDOMYA | 10 | 13,43 | -25,5 % | J.CLAUDIC | 38/83/556/1047 |
-| 1 | ANNABEL'S GHOST | 11 | 11,30 | -2,7 % | PC.BOUDOT | 8/91/3091/– |
-| 6 | BELLA D'ANJOU | 14 | 19,10 | -26,7 % | M.GRANDIN | 3/168/1195/376 |
-| 11 | KLASSIC PRECIEUX | 21 | 24,97 | -15,9 % | A.BERNARD | 91/200/244/206 |
-| 2 | VAZIRPOUR | 23 | 29,03 | -20,8 % | F.VALLE SKAR | 35/435/–/1048 |
-| 8 | ANIOL | 35 | 53,53 | -34,6 % | H.BOUTIN | 14/207/239/627 |
-| 10 | UNA REVELACION | 98 | 153,51 | -36,2 % | C.GROSBOIS | 25/286/2125/3628 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 3 | DARK ROCKSTER | 3,8 | 3,1 | 4,48 | -15,1 % | C.PACAUT | 48/17/2120/40 |
+| 4 | STEP MORNING | 4,5 | 4,5 | 5,04 | -10,7 % | T.BACHELOT | 16/429/1175/4133 |
+| 7 | VENDOMYA | 6,8 | 10 | 7,89 | -13,8 % | J.CLAUDIC | 38/83/556/1047 |
+| 5 | GUINESS STAR | 9,2 | 9,8 | 10,78 | -14,6 % | O.ANDIGNE | 81/80/1431/146 |
+| 9 | ROUDOUDOU | 11 | 8,9 | 11,87 | -7,4 % | P.BAZIRE | 58/378/469/2443 |
+| 1 | ANNABEL'S GHOST | 12 | 11 | 12,58 | -4,6 % | PC.BOUDOT | 8/91/3091/– |
+| 6 | BELLA D'ANJOU | 13 | 14 | 17,62 | -26,2 % | M.GRANDIN | 3/168/1195/376 |
+| 11 | KLASSIC PRECIEUX | 13 | 21 | 14,42 | -9,8 % | A.BERNARD | 91/200/244/206 |
+| 2 | VAZIRPOUR | 21 | 23 | 26,31 | -20,2 % | F.VALLE SKAR | 35/435/–/1048 |
+| 8 | ANIOL | 32 | 35 | 48,70 | -34,3 % | H.BOUTIN | 14/207/239/627 |
+| 10 | UNA REVELACION | 105 | 98 | 165,54 | -36,6 % | C.GROSBOIS | 25/286/2125/3628 |
 
 ### 6. PRIX GOLD BEACH
 
