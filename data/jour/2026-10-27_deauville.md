@@ -1,6 +1,6 @@
 # DEAUVILLE — 27/10/2026
 
-8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -64,20 +64,20 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX D'AUDRIEU
 
-*16h40 · plat · 1900 m · 10 partants · cotes de l'extraction*
+*16h40 · plat · 1900 m · 10 partants · cotes à T−29:48*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 9 | MON COMEDIEN | 3 | 3,49 | -14,0 % | PC.BOUDOT 3e | 8/91/377/1494 |
-| 4 | NEPALAIS | 5,3 | 6,42 | -17,4 % | T.PICCONE | 9/45/88/89 |
-| 3 | BELLA MEMORIA | 7,2 | 8,57 | -16,0 % | D.SANTIAGO | 15/220/103/508 |
-| 5 | LISEO | 7,9 | 10,20 | -22,6 % | J.MOUTARD | 61/94/1735/949 |
-| 10 | MY QUEEN | 10 | 11,54 | -13,3 % | P.REMOUE | 37/153/1067/949 |
-| 7 | BE TRUE | 12 | 12,55 | -4,4 % | T.BACHELOT | 16/342/965/1888 |
-| 1 | MONTE LINAS | 16 | 19,16 | -16,5 % | E.VERHESTRAETEN | 53/12/563/125 |
-| 8 | GRAND CHELEM | 16 | 23,49 | -31,9 % | G.SIAS | 96/400/418/879 |
-| 6 | ACCLAM | 26 | 36,63 | -29,0 % | A.VILCHIEN | 93/117/74/3580 |
-| 2 | ANONYMA | 49 | 70,89 | -30,9 % | F.VALLE SKAR | 35/435/1358/1048 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 9 | MON COMEDIEN | 3,3 | 3 | 3,86 | -14,4 % | PC.BOUDOT 3e | 8/91/377/1494 |
+| 5 | LISEO | 5,1 | 7,9 | 5,69 | -10,4 % | J.MOUTARD | 61/94/1735/949 |
+| 4 | NEPALAIS | 6,2 | 5,3 | 7,39 | -16,1 % | T.PICCONE | 9/45/88/89 |
+| 3 | BELLA MEMORIA | 8,5 | 7,2 | 10,43 | -18,5 % | D.SANTIAGO | 15/220/103/508 |
+| 1 | MONTE LINAS | 10 | 16 | 10,19 | -1,9 % | E.VERHESTRAETEN | 53/12/563/125 |
+| 7 | BE TRUE | 11 | 12 | 11,38 | -3,3 % | T.BACHELOT | 16/342/965/1888 |
+| 10 | MY QUEEN | 14 | 10 | 17,16 | -18,4 % | P.REMOUE | 37/153/1067/949 |
+| 8 | GRAND CHELEM | 15 | 16 | 21,84 | -31,3 % | G.SIAS | 96/400/418/879 |
+| 6 | ACCLAM | 39 | 26 | 57,96 | -32,7 % | A.VILCHIEN | 93/117/74/3580 |
+| 2 | ANONYMA | 40 | 49 | 56,92 | -29,7 % | F.VALLE SKAR | 35/435/1358/1048 |
 
 ### 5. PRIX DU VERGALY
 
