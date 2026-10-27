@@ -55,29 +55,29 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | LEDESMA | 1,7 | 1,9 | 1,90 | -10,6 % | M.BARZALONA 2e | 2/1/2169/87 |
-| 1 | MEMORY | 3,6 | 4,2 | 3,89 | -7,5 % | PC.BOUDOT 3e | 8/31/3/5 |
-| 6 | SUNDARA | 9 | 8,1 | 10,69 | -15,8 % | M.GRANDIN | 3/75/1520/1554 |
-| 5 | WARAMINI | 11 | 6,8 | 13,19 | -16,6 % | F.VALLE SKAR | 35/11/13/527 |
+| 2 | LEDESMA | 1,7 | 1,8 | 1,90 | -10,6 % | M.BARZALONA 2e | 2/1/2169/87 |
+| 1 | MEMORY | 3,6 | 3,1 | 3,89 | -7,5 % | PC.BOUDOT 3e | 8/31/3/5 |
+| 6 | SUNDARA | 9 | 8,2 | 10,69 | -15,8 % | M.GRANDIN | 3/75/1520/1554 |
+| 5 | WARAMINI | 11 | 13 | 13,19 | -16,6 % | F.VALLE SKAR | 35/11/13/527 |
 | 3 | EQUULEUS | 20 | 17 | 29,81 | -32,9 % | A.WERLE | 29/62/425/199 |
-| 4 | FAMILY SECRET | 26 | 15 | 38,49 | -32,5 % | C.LECOEUVRE | 13/57/142/144 |
+| 4 | FAMILY SECRET | 26 | 27 | 38,49 | -32,5 % | C.LECOEUVRE | 13/57/142/144 |
 
 ### 4. PRIX D'AUDRIEU
 
-*16h40 · plat · 1900 m · 10 partants · cotes à T−0:08*
+*16h41 · plat · 1900 m · 10 partants · cotes à T−0:08*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 9 | MON COMEDIEN | 3,3 | 3 | 3,83 | -13,9 % | PC.BOUDOT 3e | 8/91/377/1494 |
-| 5 | LISEO | 4,8 | 7,9 | 5,29 | -9,2 % | J.MOUTARD | 61/94/1735/949 |
-| 4 | NEPALAIS | 6,9 | 5,3 | 8,31 | -17,0 % | T.PICCONE | 9/45/88/89 |
-| 3 | BELLA MEMORIA | 7,2 | 7,2 | 8,54 | -15,7 % | D.SANTIAGO | 15/220/103/508 |
-| 7 | BE TRUE | 11 | 12 | 11,31 | -2,7 % | T.BACHELOT | 16/342/965/1888 |
-| 8 | GRAND CHELEM | 12 | 16 | 15,24 | -21,3 % | G.SIAS | 96/400/418/879 |
-| 1 | MONTE LINAS | 14 | 16 | 16,34 | -14,3 % | E.VERHESTRAETEN | 53/12/563/125 |
-| 10 | MY QUEEN | 16 | 10 | 21,81 | -26,6 % | P.REMOUE | 37/153/1067/949 |
-| 2 | ANONYMA | 29 | 49 | 39,48 | -26,5 % | F.VALLE SKAR | 35/435/1358/1048 |
-| 6 | ACCLAM | 75 | 26 | 116,52 | -35,6 % | A.VILCHIEN | 93/117/74/3580 |
+| 9 | MON COMEDIEN | 3,3 | 3,2 | 3,83 | -13,9 % | PC.BOUDOT 3e | 8/91/377/1494 |
+| 5 | LISEO | 4,8 | 4,7 | 5,72 | -16,0 % | J.MOUTARD | 61/94/1735/949 |
+| 4 | NEPALAIS | 6,9 | 6,7 | 8,67 | -20,4 % | T.PICCONE | 9/45/88/89 |
+| 3 | BELLA MEMORIA | 7,2 | 8,2 | 8,54 | -15,7 % | D.SANTIAGO | 15/220/103/508 |
+| 7 | BE TRUE | 11 | 8,8 | 12,34 | -10,8 % | T.BACHELOT | 16/342/965/1888 |
+| 8 | GRAND CHELEM | 12 | 13 | 15,24 | -21,3 % | G.SIAS | 96/400/418/879 |
+| 1 | MONTE LINAS | 14 | 15 | 15,62 | -10,4 % | E.VERHESTRAETEN | 53/12/563/125 |
+| 10 | MY QUEEN | 16 | 19 | 21,81 | -26,6 % | P.REMOUE | 37/153/1067/949 |
+| 2 | ANONYMA | 29 | 34 | 43,32 | -33,1 % | F.VALLE SKAR | 35/435/1358/1048 |
+| 6 | ACCLAM | 75 | 73 | 116,52 | -35,6 % | A.VILCHIEN | 93/117/74/3580 |
 
 ### 5. PRIX DU VERGALY
 
@@ -85,17 +85,17 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | DARK ROCKSTER | 3,8 | 3,1 | 4,43 | -14,2 % | C.PACAUT | 48/17/2120/40 |
-| 1 | ANNABEL'S GHOST | 4,5 | 11 | 4,15 | **+8,4 %** | PC.BOUDOT | 8/91/3091/– |
-| 4 | STEP MORNING | 7,7 | 4,5 | 8,80 | -12,5 % | T.BACHELOT | 16/429/1175/4133 |
-| 7 | VENDOMYA | 7,7 | 10 | 9,01 | -14,6 % | J.CLAUDIC | 38/83/556/1047 |
-| 5 | GUINESS STAR | 8,7 | 9,8 | 9,98 | -12,9 % | O.ANDIGNE | 81/80/1431/146 |
-| 6 | BELLA D'ANJOU | 12 | 14 | 15,85 | -24,3 % | M.GRANDIN | 3/168/1195/376 |
-| 9 | ROUDOUDOU | 19 | 8,9 | 22,14 | -14,2 % | P.BAZIRE | 58/378/469/2443 |
+| 3 | DARK ROCKSTER | 3,8 | 3,9 | 4,43 | -14,2 % | C.PACAUT | 48/17/2120/40 |
+| 1 | ANNABEL'S GHOST | 4,5 | 5,1 | 4,15 | **+8,4 %** | PC.BOUDOT | 8/91/3091/– |
+| 7 | VENDOMYA | 7,7 | 5,9 | 9,81 | -21,5 % | J.CLAUDIC | 38/83/556/1047 |
+| 4 | STEP MORNING | 7,7 | 6,2 | 8,80 | -12,5 % | T.BACHELOT | 16/429/1175/4133 |
+| 5 | GUINESS STAR | 8,7 | 9,3 | 9,98 | -12,9 % | O.ANDIGNE | 81/80/1431/146 |
+| 6 | BELLA D'ANJOU | 12 | 13 | 16,58 | -27,6 % | M.GRANDIN | 3/168/1195/376 |
+| 9 | ROUDOUDOU | 19 | 22 | 22,14 | -14,2 % | P.BAZIRE | 58/378/469/2443 |
 | 2 | VAZIRPOUR | 20 | 23 | 24,60 | -18,7 % | F.VALLE SKAR | 35/435/–/1048 |
-| 11 | KLASSIC PRECIEUX | 21 | 21 | 24,85 | -15,5 % | A.BERNARD | 91/200/244/206 |
-| 8 | ANIOL | 24 | 35 | 31,67 | -24,2 % | H.BOUTIN | 14/207/239/627 |
-| 10 | UNA REVELACION | 88 | 98 | 143,63 | -38,7 % | C.GROSBOIS | 25/286/2125/3628 |
+| 11 | KLASSIC PRECIEUX | 21 | 25 | 24,85 | -15,5 % | A.BERNARD | 91/200/244/206 |
+| 8 | ANIOL | 24 | 23 | 31,67 | -24,2 % | H.BOUTIN | 14/207/239/627 |
+| 10 | UNA REVELACION | 88 | 111 | 143,63 | -38,7 % | C.GROSBOIS | 25/286/2125/3628 |
 
 ### 6. PRIX GOLD BEACH
 
@@ -103,20 +103,20 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 1 | KODIACOLOR | 3,8 | 5,7 | 4,03 | -5,7 % | M.GUYON | 4/7/–/– |
-| 11 | LE ROCKEUR | 7,3 | 8,8 | 7,71 | -5,4 % | A.LEMAITRE | 11/69/20/1875 |
-| 2 | CITY BABE | 8,3 | 4,4 | 9,70 | -14,5 % | T.BACHELOT | 16/17/187/40 |
-| 6 | ITAEWON | 9 | 22 | 8,28 | **+8,6 %** | A.DUQUESNOY | 121/28/186/49 |
-| 4 | GOLUPTIOUS | 12 | 18 | 12,57 | -4,5 % | M.FAVRIAUX | 51/439/23/1977 |
-| 5 | FORCEFULL | 15 | 16 | 17,45 | -14,0 % | T.PICCONE | 9/76/215/1721 |
-| 15 | IRISHKAMAYA | 15 | 14 | 19,09 | -21,4 % | F.VALLE SKAR | 35/239/1106/2521 |
-| 13 | ROMAN BOY | 18 | 19 | 24,51 | -26,5 % | A.MADAMET | 10/299/24/218 |
-| 8 | DROGO | 19 | 15 | 25,58 | -25,7 % | M.GRANDIN | 3/133/84/1970 |
-| 9 | GOLDFIELD | 19 | 16 | 19,52 | -2,7 % | A.VILCHIEN | 93/94/95/1495 |
-| 14 | WILD MOOR | 23 | 19 | 35,89 | -35,9 % | D.PILITTA | 267/32/38/216 |
-| 7 | GRIGNETTE | 25 | 14 | 30,64 | -18,4 % | Y.ROUSSET | 62/122/45/133 |
-| 3 | SIGHISH | 28 | 27 | 37,10 | -24,5 % | C.LECOEUVRE | 13/87/102/4 |
-| 12 | DREAM OP FAL | 34 | 16 | 49,68 | -31,6 % | D.SANTIAGO | 15/334/34/546 |
+| 1 | KODIACOLOR | 3,8 | 3,8 | 4,03 | -5,7 % | M.GUYON | 4/7/–/– |
+| 11 | LE ROCKEUR | 7,3 | 7,3 | 7,71 | -5,4 % | A.LEMAITRE | 11/69/20/1875 |
+| 2 | CITY BABE | 8,3 | 8,4 | 9,70 | -14,5 % | T.BACHELOT | 16/17/187/40 |
+| 6 | ITAEWON | 9 | 8,9 | 8,28 | **+8,6 %** | A.DUQUESNOY | 121/28/186/49 |
+| 4 | GOLUPTIOUS | 12 | 12 | 12,57 | -4,5 % | M.FAVRIAUX | 51/439/23/1977 |
+| 5 | FORCEFULL | 15 | 16 | 19,09 | -21,4 % | T.PICCONE | 9/76/215/1721 |
+| 15 | IRISHKAMAYA | 15 | 14 | 18,24 | -17,8 % | F.VALLE SKAR | 35/239/1106/2521 |
+| 13 | ROMAN BOY | 18 | 19 | 23,40 | -23,1 % | A.MADAMET | 10/299/24/218 |
+| 8 | DROGO | 19 | 19 | 26,79 | -29,1 % | M.GRANDIN | 3/133/84/1970 |
+| 9 | GOLDFIELD | 19 | 20 | 21,37 | -11,1 % | A.VILCHIEN | 93/94/95/1495 |
+| 14 | WILD MOOR | 23 | 23 | 35,89 | -35,9 % | D.PILITTA | 267/32/38/216 |
+| 7 | GRIGNETTE | 25 | 26 | 32,10 | -22,1 % | Y.ROUSSET | 62/122/45/133 |
+| 3 | SIGHISH | 28 | 28 | 37,10 | -24,5 % | C.LECOEUVRE | 13/87/102/4 |
+| 12 | DREAM OP FAL | 34 | 35 | 49,68 | -31,6 % | D.SANTIAGO | 15/334/34/546 |
 
 ### 7. PRIX JUNO BEACH
 
@@ -124,21 +124,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 3 | THE CAT'S | 5,1 | 5,11 | -0,2 % | R.MANGIONE | 78/318/248/492 |
-| 10 | AIR DE SAMBA | 5,3 | 5,82 | -8,9 % | P.REMOUE | 37/90/409/66 |
-| 9 | CRACK CITY | 6,2 | 5,48 | **+13,1 %** | T.PICCONE | 9/390/1415/278 |
-| 1 | HAPPY AGAIN | 11 | 13,31 | -17,3 % | A.LEMAITRE | 11/390/29/278 |
-| 12 | MICOLEO | 12 | 14,98 | -19,9 % | H.BOUTIN | 14/28/21/75 |
-| 4 | REGALIENNE | 13 | 18,46 | -29,6 % | M.FAVRIAUX | 51/233/41/1500 |
-| 5 | NIKULYA FAL | 14 | 17,17 | -18,5 % | T.TRULLIER | 21/69/34/2805 |
-| 7 | PAPATEOU | 14 | 13,78 | **+1,6 %** | M.VELON | 28/432/98/2417 |
-| 2 | COSTARMORICAIN | 18 | 23,67 | -23,9 % | A.HAMELIN | 22/542/4083/1859 |
-| 8 | CHARISMATIC CHICK | 24 | 35,17 | -31,8 % | J.MOUTARD | 61/28/383/49 |
-| 6 | L'ELU DE SADDLE | 27 | 30,53 | -11,6 % | A.MADAMET | 10/394/112/864 |
-| 13 | BIG BOOTS | 32 | 48,77 | -34,4 % | D.SANTIAGO | 15/404/3266/896 |
-| 14 | RUE DU SAHEL | 33 | 44,03 | -25,0 % | P.CHEYER | 109/562/59/2009 |
-| 11 | BAILEYS ILLUSION | 77 | 104,95 | -26,6 % | E.VERHESTRAETEN | 53/809/172/4846 |
-| 15 | BREATHE ON | 86 | 102,12 | -15,8 % | C.BELMONT | 171/803/11/3460 |
+| 3 | THE CAT'S | 6,3 | 5,13 | **+22,7 %** | R.MANGIONE | 78/318/248/492 |
+| 10 | AIR DE SAMBA | 7 | 7,88 | -11,2 % | P.REMOUE | 37/90/409/66 |
+| 9 | CRACK CITY | 8,1 | 7,28 | **+11,2 %** | T.PICCONE | 9/390/1415/278 |
+| 1 | HAPPY AGAIN | 8,6 | 9,85 | -12,7 % | A.LEMAITRE | 11/390/29/278 |
+| 12 | MICOLEO | 9,1 | 11,17 | -18,5 % | H.BOUTIN | 14/28/21/75 |
+| 4 | REGALIENNE | 9,5 | 11,52 | -17,6 % | M.FAVRIAUX | 51/233/41/1500 |
+| 7 | PAPATEOU | 13 | 12,49 | **+4,1 %** | M.VELON | 28/432/98/2417 |
+| 5 | NIKULYA FAL | 14 | 16,96 | -17,4 % | T.TRULLIER | 21/69/34/2805 |
+| 8 | CHARISMATIC CHICK | 19 | 26,52 | -28,3 % | J.MOUTARD | 61/28/383/49 |
+| 2 | COSTARMORICAIN | 20 | 26,41 | -24,3 % | A.HAMELIN | 22/542/4083/1859 |
+| 14 | RUE DU SAHEL | 23 | 26,36 | -12,7 % | P.CHEYER | 109/562/59/2009 |
+| 6 | L'ELU DE SADDLE | 24 | 26,39 | -9,1 % | A.MADAMET | 10/394/112/864 |
+| 13 | BIG BOOTS | 35 | 53,27 | -34,3 % | D.SANTIAGO | 15/404/3266/896 |
+| 11 | BAILEYS ILLUSION | 55 | 76,22 | -27,8 % | E.VERHESTRAETEN | 53/809/172/4846 |
+| 15 | BREATHE ON | 116 | 150,35 | -22,8 % | C.BELMONT | 171/803/11/3460 |
 
 ### 8. PRIX OMAHA BEACH
 
@@ -146,18 +146,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 4 | SOLE | 5,3 | 5,83 | -9,1 % | M.GUYON | 4/7/1/2 |
-| 12 | QUARTZ DU HOULEY | 7,5 | 8,49 | -11,7 % | T.BACHELOT | 16/105/238/101 |
-| 5 | SAINT SAENS | 9,2 | 11,93 | -22,9 % | M.VELON | 28/8/18/645 |
-| 13 | WAYZATA MIST | 10 | 12,60 | -20,6 % | S.PASQUIER | 23/170/1722/183 |
-| 1 | NADIR | 11 | 12,60 | -12,7 % | PC.BOUDOT 4e | 8/22/17/106 |
-| 15 | NOFIX | 13 | 15,70 | -17,2 % | L.ROUSSEL | 26/27/1/26 |
-| 9 | CAMBREMER | 14 | 17,14 | -18,3 % | M.GRANDIN | 3/142/236/4 |
-| 14 | AVERSA | 14 | 15,71 | -10,9 % | D.SANTIAGO | 15/21/5/38 |
-| 10 | TORPEN | 15 | 18,56 | -19,2 % | T.TRULLIER | 21/818/3342/4869 |
-| 11 | REGALIEN | 19 | 24,45 | -22,3 % | A.HAMELIN | 22/81/41/1742 |
-| 2 | VILLA MONCEAU | 20 | 25,28 | -20,9 % | A.MADAMET | 10/8/3310/295 |
-| 6 | SKY DREAM | 22 | 28,21 | -22,0 % | C.LECOEUVRE | 13/16/32/2589 |
-| 7 | PAINTELLO | 25 | 32,11 | -22,1 % | J.MOUTARD | 61/127/474/112 |
-| 8 | BARGING THRU | 25 | 33,53 | -25,4 % | S.TISON | 98/357/563/659 |
-| 3 | SPIRITO | 45 | 60,02 | -25,0 % | P.LE DIGABEL | 106/110/580/632 |
+| 5 | SAINT SAENS | 6 | 5,71 | **+5,1 %** | M.VELON | 28/8/18/645 |
+| 4 | SOLE | 6,8 | 7,20 | -5,5 % | M.GUYON | 4/7/1/2 |
+| 1 | NADIR | 8,2 | 8,93 | -8,2 % | PC.BOUDOT 4e | 8/22/17/106 |
+| 12 | QUARTZ DU HOULEY | 8,2 | 9,39 | -12,7 % | T.BACHELOT | 16/105/238/101 |
+| 13 | WAYZATA MIST | 13 | 17,11 | -24,0 % | S.PASQUIER | 23/170/1722/183 |
+| 15 | NOFIX | 13 | 15,66 | -17,0 % | L.ROUSSEL | 26/27/1/26 |
+| 14 | AVERSA | 14 | 15,66 | -10,6 % | D.SANTIAGO | 15/21/5/38 |
+| 9 | CAMBREMER | 15 | 18,52 | -19,0 % | M.GRANDIN | 3/142/236/4 |
+| 10 | TORPEN | 15 | 18,51 | -18,9 % | T.TRULLIER | 21/818/3342/4869 |
+| 11 | REGALIEN | 18 | 22,90 | -21,4 % | A.HAMELIN | 22/81/41/1742 |
+| 2 | VILLA MONCEAU | 20 | 25,20 | -20,6 % | A.MADAMET | 10/8/3310/295 |
+| 6 | SKY DREAM | 24 | 31,07 | -22,8 % | C.LECOEUVRE | 13/16/32/2589 |
+| 7 | PAINTELLO | 28 | 36,41 | -23,1 % | J.MOUTARD | 61/127/474/112 |
+| 8 | BARGING THRU | 29 | 39,57 | -26,7 % | S.TISON | 98/357/563/659 |
+| 3 | SPIRITO | 46 | 61,31 | -25,0 % | P.LE DIGABEL | 106/110/580/632 |
