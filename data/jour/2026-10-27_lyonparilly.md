@@ -160,19 +160,19 @@
 
 ### 8. PRIX DU GARD
 
-*16h22 · attelé · 2850 m · 12 partants · cotes à T−11:48*
+*16h22 · attelé · 2850 m · 12 partants · cotes à T−7:47*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 14 | IMPERIAL BEJI | 3,5 | 3,4 | A. BARRIER |
-| 8 | JITANE VALLEE | 5,9 | 5,8 | TH. BRIAND |
-| 2 | JEREMY D'AS | 6,7 | 6,2 | A. COLLETTE |
-| 11 | JALIMEDE | 6,9 | 7,2 | D. BEKAERT |
-| 6 | INSOLENT SOMOLLI | 7,5 | 10 | K. DEVIENNE |
+| 14 | IMPERIAL BEJI | 4,2 | 3,4 | A. BARRIER |
+| 8 | JITANE VALLEE | 5,7 | 5,8 | TH. BRIAND |
+| 2 | JEREMY D'AS | 6 | 6,2 | A. COLLETTE |
+| 11 | JALIMEDE | 6,7 | 7,2 | D. BEKAERT |
+| 6 | INSOLENT SOMOLLI | 7,2 | 10 | K. DEVIENNE |
+| 4 | GERONIMO MATICA | 11 | 9,8 | E. DE JESUS |
 | 10 | IDOLE ELDE | 13 | 15 | ALEXANDRE BODIN |
-| 4 | GERONIMO MATICA | 14 | 9,8 | E. DE JESUS |
-| 13 | HOLD UP RANAIS | 23 | 37 | X. BOVAY |
-| 9 | INDIGO PIERJI | 28 | 25 | S. STEFANO |
-| 1 | GALOPIN DE BIANCA | 48 | 39 | P. CALLIER |
-| 12 | GLAMOUR YOMA | 96 | 58 | P.J. CORDEAU |
-| 7 | IMPERIAL KEY | 106 | 153 | J. CUOQ |
+| 9 | INDIGO PIERJI | 25 | 25 | S. STEFANO |
+| 13 | HOLD UP RANAIS | 29 | 37 | X. BOVAY |
+| 1 | GALOPIN DE BIANCA | 57 | 39 | P. CALLIER |
+| 12 | GLAMOUR YOMA | 100 | 58 | P.J. CORDEAU |
+| 7 | IMPERIAL KEY | 116 | 153 | J. CUOQ |
