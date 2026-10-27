@@ -142,22 +142,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX OMAHA BEACH
 
-*19h00 · plat · 1300 m · 15 partants · cotes à T−29:49*
+*19h00 · plat · 1300 m · 15 partants · cotes à T−25:10*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 4 | SOLE | 4 | 6,8 | 3,96 | **+0,9 %** | M.GUYON | 4/7/1/2 |
-| 5 | SAINT SAENS | 7,8 | 6 | 9,75 | -20,0 % | M.VELON | 28/8/18/645 |
-| 1 | NADIR | 8,4 | 8,2 | 9,14 | -8,1 % | PC.BOUDOT 4e | 8/22/17/106 |
-| 12 | QUARTZ DU HOULEY | 8,8 | 8,2 | 9,72 | -9,5 % | T.BACHELOT | 16/105/238/101 |
-| 15 | NOFIX | 14 | 13 | 17,00 | -17,6 % | L.ROUSSEL | 26/27/1/26 |
-| 11 | REGALIEN | 15 | 18 | 18,44 | -18,7 % | A.HAMELIN | 22/81/41/1742 |
-| 14 | AVERSA | 15 | 14 | 16,89 | -11,2 % | D.SANTIAGO | 15/21/5/38 |
-| 10 | TORPEN | 17 | 15 | 20,36 | -16,5 % | T.TRULLIER | 21/818/3342/4869 |
-| 13 | WAYZATA MIST | 17 | 13 | 23,33 | -27,1 % | S.PASQUIER | 23/170/1722/183 |
-| 9 | CAMBREMER | 18 | 15 | 24,98 | -27,9 % | M.GRANDIN | 3/142/236/4 |
-| 2 | VILLA MONCEAU | 23 | 20 | 29,47 | -22,0 % | A.MADAMET | 10/8/3310/295 |
-| 7 | PAINTELLO | 30 | 28 | 39,20 | -23,5 % | J.MOUTARD | 61/127/474/112 |
-| 6 | SKY DREAM | 31 | 24 | 41,37 | -25,1 % | C.LECOEUVRE | 13/16/32/2589 |
-| 8 | BARGING THRU | 34 | 29 | 47,12 | -27,9 % | S.TISON | 98/357/563/659 |
-| 3 | SPIRITO | 42 | 46 | 57,95 | -27,5 % | P.LE DIGABEL | 106/110/580/632 |
+| 4 | SOLE | 4,5 | 6,8 | 4,84 | -7,0 % | M.GUYON | 4/7/1/2 |
+| 5 | SAINT SAENS | 7,1 | 6 | 8,05 | -11,8 % | M.VELON | 28/8/18/645 |
+| 12 | QUARTZ DU HOULEY | 7,6 | 8,2 | 8,57 | -11,3 % | T.BACHELOT | 16/105/238/101 |
+| 1 | NADIR | 8,3 | 8,2 | 9,03 | -8,1 % | PC.BOUDOT 4e | 8/22/17/106 |
+| 14 | AVERSA | 14 | 14 | 15,61 | -10,3 % | D.SANTIAGO | 15/21/5/38 |
+| 13 | WAYZATA MIST | 15 | 13 | 20,18 | -25,7 % | S.PASQUIER | 23/170/1722/183 |
+| 11 | REGALIEN | 16 | 18 | 19,91 | -19,6 % | A.HAMELIN | 22/81/41/1742 |
+| 9 | CAMBREMER | 17 | 15 | 23,40 | -27,3 % | M.GRANDIN | 3/142/236/4 |
+| 10 | TORPEN | 17 | 15 | 20,39 | -16,6 % | T.TRULLIER | 21/818/3342/4869 |
+| 15 | NOFIX | 19 | 13 | 23,19 | -18,1 % | L.ROUSSEL | 26/27/1/26 |
+| 2 | VILLA MONCEAU | 21 | 20 | 26,58 | -21,0 % | A.MADAMET | 10/8/3310/295 |
+| 6 | SKY DREAM | 29 | 24 | 38,42 | -24,5 % | C.LECOEUVRE | 13/16/32/2589 |
+| 7 | PAINTELLO | 31 | 28 | 40,73 | -23,9 % | J.MOUTARD | 61/127/474/112 |
+| 3 | SPIRITO | 36 | 46 | 48,93 | -26,4 % | P.LE DIGABEL | 106/110/580/632 |
+| 8 | BARGING THRU | 41 | 29 | 58,09 | -29,4 % | S.TISON | 98/357/563/659 |
