@@ -64,20 +64,20 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX D'AUDRIEU
 
-*16h40 · plat · 1900 m · 10 partants · cotes à T−21:48*
+*16h40 · plat · 1900 m · 10 partants · cotes à T−17:48*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 9 | MON COMEDIEN | 3,2 | 3 | 3,70 | -13,5 % | PC.BOUDOT 3e | 8/91/377/1494 |
-| 5 | LISEO | 5,8 | 7,9 | 6,51 | -10,9 % | J.MOUTARD | 61/94/1735/949 |
-| 4 | NEPALAIS | 6,2 | 5,3 | 7,31 | -15,2 % | T.PICCONE | 9/45/88/89 |
-| 1 | MONTE LINAS | 9 | 16 | 8,93 | **+0,8 %** | E.VERHESTRAETEN | 53/12/563/125 |
-| 3 | BELLA MEMORIA | 9,6 | 7,2 | 11,90 | -19,3 % | D.SANTIAGO | 15/220/103/508 |
-| 7 | BE TRUE | 12 | 12 | 12,44 | -3,6 % | T.BACHELOT | 16/342/965/1888 |
-| 10 | MY QUEEN | 14 | 10 | 16,96 | -17,5 % | P.REMOUE | 37/153/1067/949 |
-| 8 | GRAND CHELEM | 15 | 16 | 21,59 | -30,5 % | G.SIAS | 96/400/418/879 |
-| 2 | ANONYMA | 26 | 49 | 34,71 | -25,1 % | F.VALLE SKAR | 35/435/1358/1048 |
-| 6 | ACCLAM | 40 | 26 | 58,97 | -32,2 % | A.VILCHIEN | 93/117/74/3580 |
+| 9 | MON COMEDIEN | 3,3 | 3 | 3,82 | -13,7 % | PC.BOUDOT 3e | 8/91/377/1494 |
+| 4 | NEPALAIS | 5,9 | 5,3 | 6,92 | -14,7 % | T.PICCONE | 9/45/88/89 |
+| 5 | LISEO | 5,9 | 7,9 | 6,64 | -11,2 % | J.MOUTARD | 61/94/1735/949 |
+| 1 | MONTE LINAS | 9 | 16 | 8,94 | **+0,6 %** | E.VERHESTRAETEN | 53/12/563/125 |
+| 3 | BELLA MEMORIA | 9,9 | 7,2 | 11,82 | -16,3 % | D.SANTIAGO | 15/220/103/508 |
+| 7 | BE TRUE | 12 | 12 | 12,47 | -3,7 % | T.BACHELOT | 16/342/965/1888 |
+| 10 | MY QUEEN | 13 | 10 | 15,58 | -16,6 % | P.REMOUE | 37/153/1067/949 |
+| 8 | GRAND CHELEM | 15 | 16 | 21,62 | -30,6 % | G.SIAS | 96/400/418/879 |
+| 2 | ANONYMA | 25 | 49 | 33,25 | -24,8 % | F.VALLE SKAR | 35/435/1358/1048 |
+| 6 | ACCLAM | 37 | 26 | 54,17 | -31,7 % | A.VILCHIEN | 93/117/74/3580 |
 
 ### 5. PRIX DU VERGALY
 
