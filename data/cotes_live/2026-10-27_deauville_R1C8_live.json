@@ -4,80 +4,80 @@
   "reunion": 1,
   "heure_depart": 1793120520000,
   "distance": 1300,
-  "scraped_at": "2026-10-27T17:51:30.125891+01:00",
-  "minutes_avant_depart": 11,
+  "scraped_at": "2026-10-27T17:57:30.139076+01:00",
+  "minutes_avant_depart": 5,
   "participants": [
     {
       "numPmu": 1,
       "nom": "NADIR",
-      "cote_live": 6.6,
+      "cote_live": 4.1,
       "cote_reference": 8.5,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1793119884000
+      "favoris": true,
+      "timestamp_cote": 1793120236000
     },
     {
       "numPmu": 2,
       "nom": "VILLA MONCEAU",
-      "cote_live": 17.0,
+      "cote_live": 20.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119884000
+      "timestamp_cote": 1793120236000
     },
     {
       "numPmu": 3,
       "nom": "SPIRITO",
-      "cote_live": 35.0,
+      "cote_live": 32.0,
       "cote_reference": 41.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119884000
+      "timestamp_cote": 1793120236000
     },
     {
       "numPmu": 4,
       "nom": "SOLE",
-      "cote_live": 5.4,
+      "cote_live": 6.9,
       "cote_reference": 4.0,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1793119884000
+      "favoris": false,
+      "timestamp_cote": 1793120236000
     },
     {
       "numPmu": 5,
       "nom": "SAINT SAENS",
-      "cote_live": 7.2,
+      "cote_live": 9.1,
       "cote_reference": 8.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119884000
+      "timestamp_cote": 1793120236000
     },
     {
       "numPmu": 6,
       "nom": "SKY DREAM",
-      "cote_live": 27.0,
+      "cote_live": 29.0,
       "cote_reference": 31.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119884000
+      "timestamp_cote": 1793120236000
     },
     {
       "numPmu": 7,
       "nom": "PAINTELLO",
-      "cote_live": 33.0,
+      "cote_live": 20.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119884000
+      "timestamp_cote": 1793120236000
     },
     {
       "numPmu": 8,
       "nom": "BARGING THRU",
-      "cote_live": 33.0,
+      "cote_live": 26.0,
       "cote_reference": 37.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119884000
+      "timestamp_cote": 1793120236000
     },
     {
       "numPmu": 9,
@@ -86,7 +86,7 @@
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119884000
+      "timestamp_cote": 1793120236000
     },
     {
       "numPmu": 10,
@@ -95,7 +95,7 @@
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119884000
+      "timestamp_cote": 1793120236000
     },
     {
       "numPmu": 11,
@@ -104,43 +104,43 @@
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119884000
+      "timestamp_cote": 1793120236000
     },
     {
       "numPmu": 12,
       "nom": "QUARTZ DU HOULEY",
-      "cote_live": 8.2,
+      "cote_live": 8.4,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119884000
+      "timestamp_cote": 1793120236000
     },
     {
       "numPmu": 13,
       "nom": "WAYZATA MIST",
-      "cote_live": 14.0,
+      "cote_live": 17.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119884000
+      "timestamp_cote": 1793120236000
     },
     {
       "numPmu": 14,
       "nom": "AVERSA",
-      "cote_live": 17.0,
+      "cote_live": 21.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119884000
+      "timestamp_cote": 1793120236000
     },
     {
       "numPmu": 15,
       "nom": "NOFIX",
-      "cote_live": 19.0,
+      "cote_live": 22.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119884000
+      "timestamp_cote": 1793120236000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -269,6 +269,90 @@
         "13": 14.0,
         "14": 17.0,
         "15": 19.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-27T17:55:30.173928+01:00",
+      "minutes_avant_depart": 6.501820550000001,
+      "cotes": {
+        "1": 6.4,
+        "2": 17.0,
+        "3": 35.0,
+        "4": 5.9,
+        "5": 7.7,
+        "6": 26.0,
+        "7": 33.0,
+        "8": 24.0,
+        "9": 13.0,
+        "10": 16.0,
+        "11": 16.0,
+        "12": 7.7,
+        "13": 16.0,
+        "14": 19.0,
+        "15": 19.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-27T17:56:10.236268+01:00",
+      "minutes_avant_depart": 5.835152383333334,
+      "cotes": {
+        "1": 6.1,
+        "2": 18.0,
+        "3": 30.0,
+        "4": 5.9,
+        "5": 8.0,
+        "6": 26.0,
+        "7": 33.0,
+        "8": 25.0,
+        "9": 13.0,
+        "10": 15.0,
+        "11": 17.0,
+        "12": 7.8,
+        "13": 17.0,
+        "14": 18.0,
+        "15": 19.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-27T17:56:50.449814+01:00",
+      "minutes_avant_depart": 5.162847816666667,
+      "cotes": {
+        "1": 6.0,
+        "2": 18.0,
+        "3": 29.0,
+        "4": 6.0,
+        "5": 8.1,
+        "6": 26.0,
+        "7": 33.0,
+        "8": 25.0,
+        "9": 13.0,
+        "10": 16.0,
+        "11": 17.0,
+        "12": 7.6,
+        "13": 17.0,
+        "14": 19.0,
+        "15": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-27T17:57:30.139076+01:00",
+      "minutes_avant_depart": 4.5018145,
+      "cotes": {
+        "1": 4.1,
+        "2": 20.0,
+        "3": 32.0,
+        "4": 6.9,
+        "5": 9.1,
+        "6": 29.0,
+        "7": 20.0,
+        "8": 26.0,
+        "9": 14.0,
+        "10": 18.0,
+        "11": 19.0,
+        "12": 8.4,
+        "13": 17.0,
+        "14": 21.0,
+        "15": 22.0
       }
     }
   ]
