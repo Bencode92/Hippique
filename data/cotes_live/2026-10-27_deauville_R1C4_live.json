@@ -4,98 +4,98 @@
   "reunion": 1,
   "heure_depart": 1793112060000,
   "distance": 1900,
-  "scraped_at": "2026-10-27T15:39:31.570915+01:00",
-  "minutes_avant_depart": 1,
+  "scraped_at": "2026-10-27T15:42:11.900110+01:00",
+  "minutes_avant_depart": -1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MONTE LINAS",
-      "cote_live": 13.0,
+      "cote_live": 15.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793111958000
+      "timestamp_cote": 1793112120000
     },
     {
       "numPmu": 2,
       "nom": "ANONYMA",
-      "cote_live": 25.0,
+      "cote_live": 34.0,
       "cote_reference": 31.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793111958000
+      "timestamp_cote": 1793112120000
     },
     {
       "numPmu": 3,
       "nom": "BELLA MEMORIA",
-      "cote_live": 6.9,
+      "cote_live": 8.2,
       "cote_reference": 8.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793111958000
+      "timestamp_cote": 1793112120000
     },
     {
       "numPmu": 4,
       "nom": "NEPALAIS",
-      "cote_live": 7.4,
+      "cote_live": 6.7,
       "cote_reference": 6.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793111958000
+      "timestamp_cote": 1793112120000
     },
     {
       "numPmu": 5,
       "nom": "LISEO",
-      "cote_live": 5.6,
+      "cote_live": 4.7,
       "cote_reference": 4.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793111958000
+      "timestamp_cote": 1793112120000
     },
     {
       "numPmu": 6,
       "nom": "ACCLAM",
-      "cote_live": 78.0,
+      "cote_live": 73.0,
       "cote_reference": 36.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793111958000
+      "timestamp_cote": 1793112120000
     },
     {
       "numPmu": 7,
       "nom": "BE TRUE",
-      "cote_live": 10.0,
+      "cote_live": 8.8,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793111958000
+      "timestamp_cote": 1793112120000
     },
     {
       "numPmu": 8,
       "nom": "GRAND CHELEM",
-      "cote_live": 11.0,
+      "cote_live": 13.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793111958000
+      "timestamp_cote": 1793112120000
     },
     {
       "numPmu": 9,
       "nom": "MON COMEDIEN",
-      "cote_live": 3.3,
+      "cote_live": 3.2,
       "cote_reference": 3.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793111958000
+      "timestamp_cote": 1793112120000
     },
     {
       "numPmu": 10,
       "nom": "MY QUEEN",
-      "cote_live": 15.0,
+      "cote_live": 19.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793111958000
+      "timestamp_cote": 1793112120000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -322,6 +322,70 @@
         "8": 11.0,
         "9": 3.3,
         "10": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-27T15:40:11.696839+01:00",
+      "minutes_avant_depart": 0.8106164,
+      "cotes": {
+        "1": 14.0,
+        "2": 28.0,
+        "3": 7.2,
+        "4": 7.3,
+        "5": 4.9,
+        "6": 81.0,
+        "7": 11.0,
+        "8": 12.0,
+        "9": 3.2,
+        "10": 16.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-27T15:40:51.578854+01:00",
+      "minutes_avant_depart": 0.14394748333333332,
+      "cotes": {
+        "1": 14.0,
+        "2": 29.0,
+        "3": 7.2,
+        "4": 6.9,
+        "5": 4.8,
+        "6": 75.0,
+        "7": 11.0,
+        "8": 12.0,
+        "9": 3.3,
+        "10": 16.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-27T15:41:31.594724+01:00",
+      "minutes_avant_depart": -0.5227212166666667,
+      "cotes": {
+        "1": 16.0,
+        "2": 31.0,
+        "3": 7.6,
+        "4": 6.2,
+        "5": 4.7,
+        "6": 81.0,
+        "7": 11.0,
+        "8": 13.0,
+        "9": 3.2,
+        "10": 17.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-27T15:42:11.900110+01:00",
+      "minutes_avant_depart": -1.1948931666666667,
+      "cotes": {
+        "1": 15.0,
+        "2": 34.0,
+        "3": 8.2,
+        "4": 6.7,
+        "5": 4.7,
+        "6": 73.0,
+        "7": 8.8,
+        "8": 13.0,
+        "9": 3.2,
+        "10": 19.0
       }
     }
   ]
