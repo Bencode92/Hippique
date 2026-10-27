@@ -1,6 +1,6 @@
 # LYON-PARILLY — 27/10/2026
 
-8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
@@ -160,19 +160,19 @@
 
 ### 8. PRIX DU GARD
 
-*16h22 · attelé · 2850 m · 12 partants · cotes de l'extraction*
+*16h22 · attelé · 2850 m · 12 partants · cotes à T−29:47*
 
-| n° | cheval | cote | jockey |
-|--:|:--|--:|:--|
-| 14 | IMPERIAL BEJI | 3,4 | A. BARRIER |
-| 8 | JITANE VALLEE | 5,8 | TH. BRIAND |
-| 2 | JEREMY D'AS | 6,2 | A. COLLETTE |
-| 11 | JALIMEDE | 7,2 | D. BEKAERT |
-| 4 | GERONIMO MATICA | 9,8 | E. DE JESUS |
-| 6 | INSOLENT SOMOLLI | 10 | K. DEVIENNE |
-| 10 | IDOLE ELDE | 15 | ALEXANDRE BODIN |
-| 9 | INDIGO PIERJI | 25 | S. STEFANO |
-| 13 | HOLD UP RANAIS | 37 | X. BOVAY |
-| 1 | GALOPIN DE BIANCA | 39 | P. CALLIER |
-| 12 | GLAMOUR YOMA | 58 | P.J. CORDEAU |
-| 7 | IMPERIAL KEY | 153 | J. CUOQ |
+| n° | cheval | cote | matin | jockey |
+|--:|:--|--:|--:|:--|
+| 14 | IMPERIAL BEJI | 3,8 | 3,4 | A. BARRIER |
+| 11 | JALIMEDE | 5,8 | 7,2 | D. BEKAERT |
+| 8 | JITANE VALLEE | 6 | 5,8 | TH. BRIAND |
+| 2 | JEREMY D'AS | 7,3 | 6,2 | A. COLLETTE |
+| 4 | GERONIMO MATICA | 10 | 9,8 | E. DE JESUS |
+| 6 | INSOLENT SOMOLLI | 10 | 10 | K. DEVIENNE |
+| 10 | IDOLE ELDE | 13 | 15 | ALEXANDRE BODIN |
+| 13 | HOLD UP RANAIS | 17 | 37 | X. BOVAY |
+| 9 | INDIGO PIERJI | 30 | 25 | S. STEFANO |
+| 1 | GALOPIN DE BIANCA | 49 | 39 | P. CALLIER |
+| 12 | GLAMOUR YOMA | 65 | 58 | P.J. CORDEAU |
+| 7 | IMPERIAL KEY | 95 | 153 | J. CUOQ |

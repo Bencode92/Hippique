@@ -1,6 +1,6 @@
 # DEAUVILLE — 27/10/2026
 
-8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -51,16 +51,16 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX D'AUBIGNY
 
-*16h05 · plat · 1900 m · 6 partants · cotes de l'extraction*
+*16h05 · plat · 1900 m · 6 partants · cotes à T−12:48*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 2 | LEDESMA | 1,9 | 2,07 | -8,1 % | M.BARZALONA 2e | 2/1/2169/87 |
-| 1 | MEMORY | 4,2 | 4,60 | -8,7 % | PC.BOUDOT 3e | 8/31/3/5 |
-| 5 | WARAMINI | 6,8 | 7,89 | -13,8 % | F.VALLE SKAR | 35/11/13/527 |
-| 6 | SUNDARA | 8,1 | 9,49 | -14,6 % | M.GRANDIN | 3/75/1520/1554 |
-| 4 | FAMILY SECRET | 15 | 21,38 | -29,9 % | C.LECOEUVRE | 13/57/142/144 |
-| 3 | EQUULEUS | 17 | 24,77 | -31,4 % | A.WERLE | 29/62/425/199 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 2 | LEDESMA | 2 | 1,9 | 2,13 | -6,1 % | M.BARZALONA 2e | 2/1/2169/87 |
+| 1 | MEMORY | 4,5 | 4,2 | 4,89 | -8,0 % | PC.BOUDOT 3e | 8/31/3/5 |
+| 5 | WARAMINI | 6,3 | 6,8 | 7,13 | -11,6 % | F.VALLE SKAR | 35/11/13/527 |
+| 6 | SUNDARA | 7,6 | 8,1 | 8,69 | -12,5 % | M.GRANDIN | 3/75/1520/1554 |
+| 4 | FAMILY SECRET | 14 | 15 | 19,44 | -28,0 % | C.LECOEUVRE | 13/57/142/144 |
+| 3 | EQUULEUS | 16 | 17 | 22,74 | -29,6 % | A.WERLE | 29/62/425/199 |
 
 ### 4. PRIX D'AUDRIEU
 
