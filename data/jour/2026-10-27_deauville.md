@@ -81,21 +81,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DU VERGALY
 
-*17h15 · plat · 3400 m · 11 partants · cotes à T−29:27*
+*17h15 · plat · 3400 m · 11 partants · cotes à T−24:48*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | DARK ROCKSTER | 3,8 | 3,1 | 4,48 | -15,1 % | C.PACAUT | 48/17/2120/40 |
-| 4 | STEP MORNING | 4,5 | 4,5 | 5,04 | -10,7 % | T.BACHELOT | 16/429/1175/4133 |
-| 7 | VENDOMYA | 6,8 | 10 | 7,89 | -13,8 % | J.CLAUDIC | 38/83/556/1047 |
-| 5 | GUINESS STAR | 9,2 | 9,8 | 10,78 | -14,6 % | O.ANDIGNE | 81/80/1431/146 |
-| 9 | ROUDOUDOU | 11 | 8,9 | 11,87 | -7,4 % | P.BAZIRE | 58/378/469/2443 |
-| 1 | ANNABEL'S GHOST | 12 | 11 | 12,58 | -4,6 % | PC.BOUDOT | 8/91/3091/– |
-| 6 | BELLA D'ANJOU | 13 | 14 | 17,62 | -26,2 % | M.GRANDIN | 3/168/1195/376 |
-| 11 | KLASSIC PRECIEUX | 13 | 21 | 14,42 | -9,8 % | A.BERNARD | 91/200/244/206 |
-| 2 | VAZIRPOUR | 21 | 23 | 26,31 | -20,2 % | F.VALLE SKAR | 35/435/–/1048 |
-| 8 | ANIOL | 32 | 35 | 48,70 | -34,3 % | H.BOUTIN | 14/207/239/627 |
-| 10 | UNA REVELACION | 105 | 98 | 165,54 | -36,6 % | C.GROSBOIS | 25/286/2125/3628 |
+| 3 | DARK ROCKSTER | 3,9 | 3,1 | 4,59 | -15,0 % | C.PACAUT | 48/17/2120/40 |
+| 4 | STEP MORNING | 4,3 | 4,5 | 4,78 | -10,0 % | T.BACHELOT | 16/429/1175/4133 |
+| 7 | VENDOMYA | 7,6 | 10 | 8,95 | -15,0 % | J.CLAUDIC | 38/83/556/1047 |
+| 5 | GUINESS STAR | 8,8 | 9,8 | 10,20 | -13,7 % | O.ANDIGNE | 81/80/1431/146 |
+| 1 | ANNABEL'S GHOST | 10 | 11 | 10,15 | -1,5 % | PC.BOUDOT | 8/91/3091/– |
+| 9 | ROUDOUDOU | 12 | 8,9 | 13,09 | -8,3 % | P.BAZIRE | 58/378/469/2443 |
+| 6 | BELLA D'ANJOU | 13 | 14 | 17,55 | -25,9 % | M.GRANDIN | 3/168/1195/376 |
+| 11 | KLASSIC PRECIEUX | 14 | 21 | 15,66 | -10,6 % | A.BERNARD | 91/200/244/206 |
+| 2 | VAZIRPOUR | 21 | 23 | 26,22 | -19,9 % | F.VALLE SKAR | 35/435/–/1048 |
+| 8 | ANIOL | 34 | 35 | 51,96 | -34,6 % | H.BOUTIN | 14/207/239/627 |
+| 10 | UNA REVELACION | 89 | 98 | 146,28 | -39,2 % | C.GROSBOIS | 25/286/2125/3628 |
 
 ### 6. PRIX GOLD BEACH
 
