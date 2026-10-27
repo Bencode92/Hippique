@@ -99,24 +99,24 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX GOLD BEACH
 
-*17h50 · plat · 1300 m · 14 partants · cotes à T−4:30*
+*17h50 · plat · 1300 m · 14 partants · cotes à T−1:50*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 1 | KODIACOLOR | 4 | 3,8 | 4,39 | -9,0 % | M.GUYON | 4/7/–/– |
-| 11 | LE ROCKEUR | 5,9 | 7,3 | 6,08 | -3,0 % | A.LEMAITRE | 11/69/20/1875 |
-| 2 | CITY BABE | 8,6 | 8,4 | 10,15 | -15,2 % | T.BACHELOT | 16/17/187/40 |
-| 6 | ITAEWON | 9,3 | 8,9 | 8,62 | **+7,8 %** | A.DUQUESNOY | 121/28/186/49 |
-| 4 | GOLUPTIOUS | 13 | 12 | 13,83 | -6,0 % | M.FAVRIAUX | 51/439/23/1977 |
-| 15 | IRISHKAMAYA | 15 | 14 | 18,30 | -18,0 % | F.VALLE SKAR | 35/239/1106/2521 |
-| 5 | FORCEFULL | 17 | 16 | 22,16 | -23,3 % | T.PICCONE | 9/76/215/1721 |
-| 9 | GOLDFIELD | 17 | 20 | 18,86 | -9,8 % | A.VILCHIEN | 93/94/95/1495 |
-| 13 | ROMAN BOY | 17 | 19 | 21,96 | -22,6 % | A.MADAMET | 10/299/24/218 |
-| 14 | WILD MOOR | 17 | 23 | 23,13 | -26,5 % | D.PILITTA | 267/32/38/216 |
-| 8 | DROGO | 21 | 19 | 30,18 | -30,4 % | M.GRANDIN | 3/133/84/1970 |
-| 7 | GRIGNETTE | 29 | 26 | 36,36 | -20,2 % | Y.ROUSSET | 62/122/45/133 |
-| 3 | SIGHISH | 33 | 28 | 44,78 | -26,3 % | C.LECOEUVRE | 13/87/102/4 |
-| 12 | DREAM OP FAL | 38 | 35 | 56,40 | -32,6 % | D.SANTIAGO | 15/334/34/546 |
+| 1 | KODIACOLOR | 4,3 | 3,8 | 5,10 | -15,7 % | M.GUYON | 4/7/–/– |
+| 11 | LE ROCKEUR | 7,2 | 7,3 | 7,58 | -5,1 % | A.LEMAITRE | 11/69/20/1875 |
+| 2 | CITY BABE | 8,1 | 8,4 | 9,42 | -14,0 % | T.BACHELOT | 16/17/187/40 |
+| 6 | ITAEWON | 8,7 | 8,9 | 7,96 | **+9,3 %** | A.DUQUESNOY | 121/28/186/49 |
+| 9 | GOLDFIELD | 10 | 20 | 9,33 | **+7,2 %** | A.VILCHIEN | 93/94/95/1495 |
+| 5 | FORCEFULL | 12 | 16 | 14,68 | -18,3 % | T.PICCONE | 9/76/215/1721 |
+| 15 | IRISHKAMAYA | 14 | 14 | 16,81 | -16,7 % | F.VALLE SKAR | 35/239/1106/2521 |
+| 4 | GOLUPTIOUS | 16 | 12 | 19,17 | -16,5 % | M.FAVRIAUX | 51/439/23/1977 |
+| 14 | WILD MOOR | 18 | 23 | 26,97 | -33,3 % | D.PILITTA | 267/32/38/216 |
+| 13 | ROMAN BOY | 19 | 19 | 24,88 | -23,6 % | A.MADAMET | 10/299/24/218 |
+| 8 | DROGO | 24 | 19 | 33,44 | -28,2 % | M.GRANDIN | 3/133/84/1970 |
+| 7 | GRIGNETTE | 34 | 26 | 43,27 | -21,4 % | Y.ROUSSET | 62/122/45/133 |
+| 3 | SIGHISH | 38 | 28 | 49,77 | -23,6 % | C.LECOEUVRE | 13/87/102/4 |
+| 12 | DREAM OP FAL | 42 | 35 | 62,74 | -33,1 % | D.SANTIAGO | 15/334/34/546 |
 
 ### 7. PRIX JUNO BEACH
 
