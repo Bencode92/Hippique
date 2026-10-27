@@ -64,20 +64,20 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX D'AUDRIEU
 
-*16h40 · plat · 1900 m · 10 partants · cotes à T−10:08*
+*16h40 · plat · 1900 m · 10 partants · cotes à T−4:08*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 9 | MON COMEDIEN | 3,1 | 3 | 3,62 | -14,3 % | PC.BOUDOT 3e | 8/91/377/1494 |
-| 4 | NEPALAIS | 5,8 | 5,3 | 6,85 | -15,3 % | T.PICCONE | 9/45/88/89 |
-| 5 | LISEO | 6,2 | 7,9 | 7,10 | -12,7 % | J.MOUTARD | 61/94/1735/949 |
-| 1 | MONTE LINAS | 10 | 16 | 10,20 | -1,9 % | E.VERHESTRAETEN | 53/12/563/125 |
-| 3 | BELLA MEMORIA | 11 | 7,2 | 13,52 | -18,6 % | D.SANTIAGO | 15/220/103/508 |
-| 2 | ANONYMA | 13 | 49 | 15,74 | -17,4 % | F.VALLE SKAR | 35/435/1358/1048 |
-| 7 | BE TRUE | 14 | 12 | 15,05 | -7,0 % | T.BACHELOT | 16/342/965/1888 |
-| 8 | GRAND CHELEM | 14 | 16 | 20,14 | -30,5 % | G.SIAS | 96/400/418/879 |
+| 9 | MON COMEDIEN | 2,8 | 3 | 3,26 | -14,2 % | PC.BOUDOT 3e | 8/91/377/1494 |
+| 5 | LISEO | 6 | 7,9 | 6,84 | -12,3 % | J.MOUTARD | 61/94/1735/949 |
+| 4 | NEPALAIS | 6,8 | 5,3 | 8,23 | -17,3 % | T.PICCONE | 9/45/88/89 |
+| 8 | GRAND CHELEM | 10 | 16 | 12,38 | -19,3 % | G.SIAS | 96/400/418/879 |
+| 1 | MONTE LINAS | 11 | 16 | 11,38 | -3,3 % | E.VERHESTRAETEN | 53/12/563/125 |
+| 3 | BELLA MEMORIA | 11 | 7,2 | 13,51 | -18,6 % | D.SANTIAGO | 15/220/103/508 |
 | 10 | MY QUEEN | 14 | 10 | 17,16 | -18,4 % | P.REMOUE | 37/153/1067/949 |
-| 6 | ACCLAM | 51 | 26 | 77,78 | -34,4 % | A.VILCHIEN | 93/117/74/3580 |
+| 7 | BE TRUE | 15 | 12 | 16,30 | -8,0 % | T.BACHELOT | 16/342/965/1888 |
+| 2 | ANONYMA | 20 | 49 | 25,98 | -23,0 % | F.VALLE SKAR | 35/435/1358/1048 |
+| 6 | ACCLAM | 59 | 26 | 90,96 | -35,1 % | A.VILCHIEN | 93/117/74/3580 |
 
 ### 5. PRIX DU VERGALY
 
