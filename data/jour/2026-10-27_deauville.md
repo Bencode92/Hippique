@@ -1,6 +1,6 @@
 # DEAUVILLE — 27/10/2026
 
-8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 6 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -142,22 +142,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX OMAHA BEACH
 
-*19h00 · plat · 1300 m · 15 partants · cotes de l'extraction*
+*19h00 · plat · 1300 m · 15 partants · cotes à T−29:49*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 5 | SAINT SAENS | 6 | 5,71 | **+5,1 %** | M.VELON | 28/8/18/645 |
-| 4 | SOLE | 6,8 | 7,20 | -5,5 % | M.GUYON | 4/7/1/2 |
-| 1 | NADIR | 8,2 | 8,93 | -8,2 % | PC.BOUDOT 4e | 8/22/17/106 |
-| 12 | QUARTZ DU HOULEY | 8,2 | 9,39 | -12,7 % | T.BACHELOT | 16/105/238/101 |
-| 13 | WAYZATA MIST | 13 | 17,11 | -24,0 % | S.PASQUIER | 23/170/1722/183 |
-| 15 | NOFIX | 13 | 15,66 | -17,0 % | L.ROUSSEL | 26/27/1/26 |
-| 14 | AVERSA | 14 | 15,66 | -10,6 % | D.SANTIAGO | 15/21/5/38 |
-| 9 | CAMBREMER | 15 | 18,52 | -19,0 % | M.GRANDIN | 3/142/236/4 |
-| 10 | TORPEN | 15 | 18,51 | -18,9 % | T.TRULLIER | 21/818/3342/4869 |
-| 11 | REGALIEN | 18 | 22,90 | -21,4 % | A.HAMELIN | 22/81/41/1742 |
-| 2 | VILLA MONCEAU | 20 | 25,20 | -20,6 % | A.MADAMET | 10/8/3310/295 |
-| 6 | SKY DREAM | 24 | 31,07 | -22,8 % | C.LECOEUVRE | 13/16/32/2589 |
-| 7 | PAINTELLO | 28 | 36,41 | -23,1 % | J.MOUTARD | 61/127/474/112 |
-| 8 | BARGING THRU | 29 | 39,57 | -26,7 % | S.TISON | 98/357/563/659 |
-| 3 | SPIRITO | 46 | 61,31 | -25,0 % | P.LE DIGABEL | 106/110/580/632 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 4 | SOLE | 4 | 6,8 | 3,96 | **+0,9 %** | M.GUYON | 4/7/1/2 |
+| 5 | SAINT SAENS | 7,8 | 6 | 9,75 | -20,0 % | M.VELON | 28/8/18/645 |
+| 1 | NADIR | 8,4 | 8,2 | 9,14 | -8,1 % | PC.BOUDOT 4e | 8/22/17/106 |
+| 12 | QUARTZ DU HOULEY | 8,8 | 8,2 | 9,72 | -9,5 % | T.BACHELOT | 16/105/238/101 |
+| 15 | NOFIX | 14 | 13 | 17,00 | -17,6 % | L.ROUSSEL | 26/27/1/26 |
+| 11 | REGALIEN | 15 | 18 | 18,44 | -18,7 % | A.HAMELIN | 22/81/41/1742 |
+| 14 | AVERSA | 15 | 14 | 16,89 | -11,2 % | D.SANTIAGO | 15/21/5/38 |
+| 10 | TORPEN | 17 | 15 | 20,36 | -16,5 % | T.TRULLIER | 21/818/3342/4869 |
+| 13 | WAYZATA MIST | 17 | 13 | 23,33 | -27,1 % | S.PASQUIER | 23/170/1722/183 |
+| 9 | CAMBREMER | 18 | 15 | 24,98 | -27,9 % | M.GRANDIN | 3/142/236/4 |
+| 2 | VILLA MONCEAU | 23 | 20 | 29,47 | -22,0 % | A.MADAMET | 10/8/3310/295 |
+| 7 | PAINTELLO | 30 | 28 | 39,20 | -23,5 % | J.MOUTARD | 61/127/474/112 |
+| 6 | SKY DREAM | 31 | 24 | 41,37 | -25,1 % | C.LECOEUVRE | 13/16/32/2589 |
+| 8 | BARGING THRU | 34 | 29 | 47,12 | -27,9 % | S.TISON | 98/357/563/659 |
+| 3 | SPIRITO | 42 | 46 | 57,95 | -27,5 % | P.LE DIGABEL | 106/110/580/632 |
