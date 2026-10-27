@@ -4,62 +4,62 @@
   "reunion": 1,
   "heure_depart": 1793109900000,
   "distance": 1900,
-  "scraped_at": "2026-10-27T15:02:12.459842+01:00",
-  "minutes_avant_depart": 3,
+  "scraped_at": "2026-10-27T15:04:51.607363+01:00",
+  "minutes_avant_depart": 0,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MEMORY",
-      "cote_live": 4.0,
+      "cote_live": 3.6,
       "cote_reference": 4.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793109717000
+      "timestamp_cote": 1793109883000
     },
     {
       "numPmu": 2,
       "nom": "LEDESMA",
-      "cote_live": 1.8,
+      "cote_live": 1.7,
       "cote_reference": 1.8,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793109717000
+      "timestamp_cote": 1793109883000
     },
     {
       "numPmu": 3,
       "nom": "EQUULEUS",
-      "cote_live": 16.0,
+      "cote_live": 20.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793109717000
+      "timestamp_cote": 1793109883000
     },
     {
       "numPmu": 4,
       "nom": "FAMILY SECRET",
-      "cote_live": 21.0,
+      "cote_live": 26.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793109717000
+      "timestamp_cote": 1793109883000
     },
     {
       "numPmu": 5,
       "nom": "WARAMINI",
-      "cote_live": 9.0,
+      "cote_live": 11.0,
       "cote_reference": 6.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793109717000
+      "timestamp_cote": 1793109883000
     },
     {
       "numPmu": 6,
       "nom": "SUNDARA",
-      "cote_live": 8.4,
+      "cote_live": 9.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793109717000
+      "timestamp_cote": 1793109883000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -146,6 +146,54 @@
         "4": 21.0,
         "5": 9.0,
         "6": 8.4
+      }
+    },
+    {
+      "scraped_at": "2026-10-27T15:02:51.789591+01:00",
+      "minutes_avant_depart": 2.144079966666667,
+      "cotes": {
+        "1": 3.9,
+        "2": 1.7,
+        "3": 18.0,
+        "4": 23.0,
+        "5": 9.6,
+        "6": 8.3
+      }
+    },
+    {
+      "scraped_at": "2026-10-27T15:03:31.662021+01:00",
+      "minutes_avant_depart": 1.4774108333333333,
+      "cotes": {
+        "1": 3.9,
+        "2": 1.7,
+        "3": 18.0,
+        "4": 23.0,
+        "5": 10.0,
+        "6": 8.2
+      }
+    },
+    {
+      "scraped_at": "2026-10-27T15:04:11.564008+01:00",
+      "minutes_avant_depart": 0.8107413833333333,
+      "cotes": {
+        "1": 4.2,
+        "2": 1.7,
+        "3": 18.0,
+        "4": 23.0,
+        "5": 10.0,
+        "6": 8.3
+      }
+    },
+    {
+      "scraped_at": "2026-10-27T15:04:51.607363+01:00",
+      "minutes_avant_depart": 0.14407365,
+      "cotes": {
+        "1": 3.6,
+        "2": 1.7,
+        "3": 20.0,
+        "4": 26.0,
+        "5": 11.0,
+        "6": 9.0
       }
     }
   ]

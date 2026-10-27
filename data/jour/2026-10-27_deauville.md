@@ -51,16 +51,16 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX D'AUBIGNY
 
-*16h05 · plat · 1900 m · 6 partants · cotes à T−2:48*
+*16h05 · plat · 1900 m · 6 partants · cotes à T−0:08*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | LEDESMA | 1,8 | 1,9 | 1,97 | -8,5 % | M.BARZALONA 2e | 2/1/2169/87 |
-| 1 | MEMORY | 4 | 4,2 | 4,31 | -7,1 % | PC.BOUDOT 3e | 8/31/3/5 |
-| 6 | SUNDARA | 8,4 | 8,1 | 9,75 | -13,9 % | M.GRANDIN | 3/75/1520/1554 |
-| 5 | WARAMINI | 9 | 6,8 | 10,32 | -12,8 % | F.VALLE SKAR | 35/11/13/527 |
-| 3 | EQUULEUS | 16 | 17 | 22,73 | -29,6 % | A.WERLE | 29/62/425/199 |
-| 4 | FAMILY SECRET | 21 | 15 | 29,79 | -29,5 % | C.LECOEUVRE | 13/57/142/144 |
+| 2 | LEDESMA | 1,7 | 1,9 | 1,90 | -10,6 % | M.BARZALONA 2e | 2/1/2169/87 |
+| 1 | MEMORY | 3,6 | 4,2 | 3,89 | -7,5 % | PC.BOUDOT 3e | 8/31/3/5 |
+| 6 | SUNDARA | 9 | 8,1 | 10,69 | -15,8 % | M.GRANDIN | 3/75/1520/1554 |
+| 5 | WARAMINI | 11 | 6,8 | 13,19 | -16,6 % | F.VALLE SKAR | 35/11/13/527 |
+| 3 | EQUULEUS | 20 | 17 | 29,81 | -32,9 % | A.WERLE | 29/62/425/199 |
+| 4 | FAMILY SECRET | 26 | 15 | 38,49 | -32,5 % | C.LECOEUVRE | 13/57/142/144 |
 
 ### 4. PRIX D'AUDRIEU
 
