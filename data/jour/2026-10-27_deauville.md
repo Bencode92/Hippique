@@ -1,6 +1,6 @@
 # DEAUVILLE — 27/10/2026
 
-8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -99,24 +99,24 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX GOLD BEACH
 
-*17h50 · plat · 1300 m · 14 partants · cotes de l'extraction*
+*17h50 · plat · 1300 m · 14 partants · cotes à T−29:48*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 2 | CITY BABE | 4,4 | 5,23 | -15,9 % | T.BACHELOT | 16/17/187/40 |
-| 1 | KODIACOLOR | 5,7 | 6,05 | -5,8 % | M.GUYON | 4/7/–/– |
-| 11 | LE ROCKEUR | 8,8 | 9,56 | -7,9 % | A.LEMAITRE | 11/69/20/1875 |
-| 7 | GRIGNETTE | 14 | 16,41 | -14,7 % | Y.ROUSSET | 62/122/45/133 |
-| 15 | IRISHKAMAYA | 14 | 17,59 | -20,4 % | F.VALLE SKAR | 35/239/1106/2521 |
-| 8 | DROGO | 15 | 20,30 | -26,1 % | M.GRANDIN | 3/133/84/1970 |
-| 5 | FORCEFULL | 16 | 18,79 | -14,8 % | T.PICCONE | 9/76/215/1721 |
-| 9 | GOLDFIELD | 16 | 16,01 | 0,0 % | A.VILCHIEN | 93/94/95/1495 |
-| 12 | DREAM OP FAL | 16 | 20,00 | -20,0 % | D.SANTIAGO | 15/334/34/546 |
-| 4 | GOLUPTIOUS | 18 | 21,98 | -18,1 % | M.FAVRIAUX | 51/439/23/1977 |
-| 13 | ROMAN BOY | 19 | 26,06 | -27,1 % | A.MADAMET | 10/299/24/218 |
-| 14 | WILD MOOR | 19 | 28,73 | -33,9 % | D.PILITTA | 267/32/38/216 |
-| 6 | ITAEWON | 22 | 25,26 | -12,9 % | A.DUQUESNOY | 121/28/186/49 |
-| 3 | SIGHISH | 27 | 35,56 | -24,1 % | C.LECOEUVRE | 13/87/102/4 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 1 | KODIACOLOR | 5 | 5,7 | 5,61 | -10,9 % | M.GUYON | 4/7/–/– |
+| 2 | CITY BABE | 5,9 | 4,4 | 6,58 | -10,3 % | T.BACHELOT | 16/17/187/40 |
+| 11 | LE ROCKEUR | 7 | 8,8 | 7,38 | -5,2 % | A.LEMAITRE | 11/69/20/1875 |
+| 15 | IRISHKAMAYA | 10 | 14 | 10,93 | -8,5 % | F.VALLE SKAR | 35/239/1106/2521 |
+| 13 | ROMAN BOY | 13 | 19 | 15,38 | -15,5 % | A.MADAMET | 10/299/24/218 |
+| 5 | FORCEFULL | 14 | 16 | 16,17 | -13,4 % | T.PICCONE | 9/76/215/1721 |
+| 6 | ITAEWON | 14 | 22 | 13,80 | **+1,4 %** | A.DUQUESNOY | 121/28/186/49 |
+| 4 | GOLUPTIOUS | 18 | 18 | 22,10 | -18,5 % | M.FAVRIAUX | 51/439/23/1977 |
+| 8 | DROGO | 18 | 15 | 24,12 | -25,4 % | M.GRANDIN | 3/133/84/1970 |
+| 9 | GOLDFIELD | 20 | 16 | 20,79 | -3,8 % | A.VILCHIEN | 93/94/95/1495 |
+| 14 | WILD MOOR | 21 | 19 | 32,45 | -35,3 % | D.PILITTA | 267/32/38/216 |
+| 7 | GRIGNETTE | 22 | 14 | 26,58 | -17,2 % | Y.ROUSSET | 62/122/45/133 |
+| 12 | DREAM OP FAL | 25 | 16 | 36,92 | -32,3 % | D.SANTIAGO | 15/334/34/546 |
+| 3 | SIGHISH | 28 | 27 | 37,25 | -24,8 % | C.LECOEUVRE | 13/87/102/4 |
 
 ### 7. PRIX JUNO BEACH
 
