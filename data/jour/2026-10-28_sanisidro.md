@@ -1,0 +1,91 @@
+# SAN ISIDRO — 28/10/2026
+
+5 courses.
+
+*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+
+---
+
+### 7. PREMIO FINAL MEETING
+
+*21h45 · plat · 1200 m · 8 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | EL INTERVENTOR | – | PABLO DAMIAN CARRIZO |
+| 2 | FLAMINIUS | – | OSVALDO ADRIAN ALDERETE |
+| 3 | GLORIOSO RIM | – | LAUTARO EMMANUEL BALMACEDA |
+| 4 | HIRAN | – | WILSON ROSARIO MOREYRA |
+| 5 | DON PICHI | – | IVAN MONASTEROLO |
+| 6 | NORGE | – | MARTIN ANTONIO LA PALMA |
+| 7 | PRINCIPE SONADO | – | FACUNDO MARCELO CORIA |
+| 8 | SAY IT FAST | – | BRIAN RODRIGO ENRIQUE |
+
+### 8. PREMIO LIZARD MEETING
+
+*22h15 · plat · 1400 m · 16 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | BALLAD | – | CRISTIAN ERNESTO VELAZQUEZ |
+| 2 | FULL PRIMERA | – | BRIAN RODRIGO ENRIQUE |
+| 3 | GEORGIMORA | – | MARTIN ANTONIO LA PALMA |
+| 4 | GREAT SLEW | – | FRANCISCO JESUS LAVIGNA |
+| 5 | AURORA IRLANDESA | – | LUCRECIA MARIANA CARABAJAL |
+| 6 | INFINITA ILUSION | – | IVAN MONASTEROLO |
+| 7 | JOY KANDA | – | MARTIN JAVIER VALLE |
+| 8 | JUDOCA | – | JORGE LUIS PERALTA |
+| 9 | EMBLEMA NACIONAL | – | JUAN CRUZ VILLAGRA |
+| 10 | MISS ISADORA | – | JUAN PABLO PAOLONI |
+| 11 | MISHIMA | – | LUCIANO MATIAS RECUERO |
+| 12 | MY BAMBUCA | – | JORGE MARCELINO ORTIZ |
+| 13 | PIETAS | – | LEO NICOLAS ACUNA |
+| 14 | SUCUSANA | – | KEVIN BANEGAS |
+| 15 | TENAZ SOY | – | LAUTARO EMMANUEL BALMACEDA |
+| 16 | THE GREAT QUEEN | – | EDUARDO ORTEGA PAVON |
+
+### 9. PREMIO ITAHUE (2012)
+
+*22h45 · plat · 1100 m · 8 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | BIG TEXANA | – | JORGE LUIS PERALTA |
+| 2 | CALLE OSCURA | – | MARTIN JAVIER VALLE |
+| 3 | CUNA DE ORO | – | IVAN MONASTEROLO |
+| 4 | HELENA GLOBAL | – | CESAR LEONOR CUELLAR |
+| 5 | ARCHIVILLE | – | WILSON ROSARIO MOREYRA |
+| 6 | LA LITORALENA | – | GONZALO DAMIAN BORDA |
+| 7 | MUY BUSCADA | – | NON COMMUNIQUE |
+| 8 | THANKS FOR COMING | – | LUCAS JESUS NORIEGA COBIAN |
+
+### 10. PREMIO ORLEANS MEETING
+
+*23h15 · plat · 1400 m · 8 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | EL TACURALENSE | – | MARTIN ANTONIO LA PALMA |
+| 2 | ES MANCHESTER | – | WILFREDO ANDRES TORRES MALDONADO |
+| 3 | HI POWER | – | LUCIANO MATIAS RECUERO |
+| 4 | JUBILEO | – | LUIS FERNANDO VAI |
+| 5 | BUENARDO | – | MARIO ENRIQUE FERNANDEZ |
+| 6 | MACHO IBERICO | – | RODRIGO ALEJANDRO ORTIZ |
+| 7 | MARC MUCHO MAN | – | SERGIO R.E. BARRIONUEVO |
+| 8 | TIMBALAND | – | RAMIRO RODOLFO BARRUECO |
+
+### 11. PREMIO MAGNUM MEETING
+
+*23h45 · plat · 1600 m · 9 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | LA JURADORA | – | JORGE LUIS PERALTA |
+| 2 | MAGICA PRESS | – | RODRIGO DANIEL BASCUNAN |
+| 3 | NORTH FARM | – | LUCAS FERNANDO MARTINEZ |
+| 4 | PRETTY CATALINA | – | MARIA EUGENIA SCHNEIDER |
+| 5 | INNOCENT LADY | – | EDUARDO GABRIEL ORTEGA TORRES |
+| 6 | ROSE FEMME | – | LUCIANO EZEQUIEL FRANCO |
+| 7 | THE GREAT CARRY | – | WILLIAM PEREYRA |
+| 8 | WONDERLAND | – | CRISTIAN ERNESTO VELAZQUEZ |
+| 9 | LAURELINA | – | JORGE LUIS CORDOBA |
