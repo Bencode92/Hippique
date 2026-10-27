@@ -120,25 +120,25 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX JUNO BEACH
 
-*18h25 · plat · 1300 m · 15 partants · cotes à T−4:10*
+*18h25 · plat · 1300 m · 15 partants · cotes à T−1:30*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | THE CAT'S | 5,9 | 6,3 | 6,03 | -2,2 % | R.MANGIONE | 78/318/248/492 |
-| 12 | MICOLEO | 7,4 | 9,1 | 8,93 | -17,2 % | H.BOUTIN | 14/28/21/75 |
-| 9 | CRACK CITY | 8,6 | 8,1 | 7,93 | **+8,4 %** | T.PICCONE | 9/390/1415/278 |
-| 1 | HAPPY AGAIN | 9,3 | 8,6 | 10,99 | -15,4 % | A.LEMAITRE | 11/390/29/278 |
-| 7 | PAPATEOU | 11 | 13 | 10,50 | **+4,8 %** | M.VELON | 28/432/98/2417 |
-| 2 | COSTARMORICAIN | 12 | 20 | 13,56 | -11,5 % | A.HAMELIN | 22/542/4083/1859 |
-| 4 | REGALIENNE | 12 | 9,5 | 16,89 | -29,0 % | M.FAVRIAUX | 51/233/41/1500 |
-| 10 | AIR DE SAMBA | 13 | 7 | 16,55 | -21,5 % | P.REMOUE | 37/90/409/66 |
-| 14 | RUE DU SAHEL | 13 | 23 | 13,90 | -6,5 % | P.CHEYER | 109/562/59/2009 |
-| 6 | L'ELU DE SADDLE | 15 | 24 | 16,40 | -8,5 % | A.MADAMET | 10/394/112/864 |
-| 5 | NIKULYA FAL | 20 | 14 | 28,66 | -30,2 % | T.TRULLIER | 21/69/34/2805 |
-| 8 | CHARISMATIC CHICK | 22 | 19 | 32,00 | -31,2 % | J.MOUTARD | 61/28/383/49 |
-| 13 | BIG BOOTS | 28 | 35 | 42,17 | -33,6 % | D.SANTIAGO | 15/404/3266/896 |
-| 11 | BAILEYS ILLUSION | 59 | 55 | 79,68 | -26,0 % | E.VERHESTRAETEN | 53/809/172/4846 |
-| 15 | BREATHE ON | 87 | 116 | 103,86 | -16,2 % | C.BELMONT | 171/803/11/3460 |
+| 3 | THE CAT'S | 4,3 | 6,3 | 4,27 | **+0,7 %** | R.MANGIONE | 78/318/248/492 |
+| 12 | MICOLEO | 8,5 | 9,1 | 10,48 | -18,9 % | H.BOUTIN | 14/28/21/75 |
+| 1 | HAPPY AGAIN | 9,4 | 8,6 | 11,11 | -15,4 % | A.LEMAITRE | 11/390/29/278 |
+| 9 | CRACK CITY | 10 | 8,1 | 10,23 | -2,3 % | T.PICCONE | 9/390/1415/278 |
+| 7 | PAPATEOU | 11 | 13 | 10,48 | **+5,0 %** | M.VELON | 28/432/98/2417 |
+| 8 | CHARISMATIC CHICK | 11 | 19 | 13,00 | -15,4 % | J.MOUTARD | 61/28/383/49 |
+| 2 | COSTARMORICAIN | 14 | 20 | 16,20 | -13,6 % | A.HAMELIN | 22/542/4083/1859 |
+| 6 | L'ELU DE SADDLE | 15 | 24 | 16,36 | -8,3 % | A.MADAMET | 10/394/112/864 |
+| 10 | AIR DE SAMBA | 16 | 7 | 21,07 | -24,0 % | P.REMOUE | 37/90/409/66 |
+| 14 | RUE DU SAHEL | 16 | 23 | 17,65 | -9,3 % | P.CHEYER | 109/562/59/2009 |
+| 4 | REGALIENNE | 17 | 9,5 | 24,26 | -29,9 % | M.FAVRIAUX | 51/233/41/1500 |
+| 5 | NIKULYA FAL | 20 | 14 | 28,60 | -30,1 % | T.TRULLIER | 21/69/34/2805 |
+| 13 | BIG BOOTS | 34 | 35 | 52,39 | -35,1 % | D.SANTIAGO | 15/404/3266/896 |
+| 11 | BAILEYS ILLUSION | 72 | 55 | 98,17 | -26,7 % | E.VERHESTRAETEN | 53/809/172/4846 |
+| 15 | BREATHE ON | 95 | 116 | 113,43 | -16,2 % | C.BELMONT | 171/803/11/3460 |
 
 ### 8. PRIX OMAHA BEACH
 
