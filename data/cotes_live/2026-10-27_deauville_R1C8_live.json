@@ -4,26 +4,26 @@
   "reunion": 1,
   "heure_depart": 1793120520000,
   "distance": 1300,
-  "scraped_at": "2026-10-27T17:42:50.258298+01:00",
-  "minutes_avant_depart": 19,
+  "scraped_at": "2026-10-27T17:46:50.835969+01:00",
+  "minutes_avant_depart": 15,
   "participants": [
     {
       "numPmu": 1,
       "nom": "NADIR",
-      "cote_live": 7.3,
+      "cote_live": 7.1,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119356000
+      "timestamp_cote": 1793119598000
     },
     {
       "numPmu": 2,
       "nom": "VILLA MONCEAU",
-      "cote_live": 19.0,
+      "cote_live": 17.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119356000
+      "timestamp_cote": 1793119598000
     },
     {
       "numPmu": 3,
@@ -32,16 +32,16 @@
       "cote_reference": 41.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119356000
+      "timestamp_cote": 1793119598000
     },
     {
       "numPmu": 4,
       "nom": "SOLE",
-      "cote_live": 4.5,
+      "cote_live": 4.8,
       "cote_reference": 4.0,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793119356000
+      "timestamp_cote": 1793119598000
     },
     {
       "numPmu": 5,
@@ -50,7 +50,7 @@
       "cote_reference": 8.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119356000
+      "timestamp_cote": 1793119598000
     },
     {
       "numPmu": 6,
@@ -59,34 +59,34 @@
       "cote_reference": 31.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119356000
+      "timestamp_cote": 1793119598000
     },
     {
       "numPmu": 7,
       "nom": "PAINTELLO",
-      "cote_live": 32.0,
+      "cote_live": 33.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119356000
+      "timestamp_cote": 1793119598000
     },
     {
       "numPmu": 8,
       "nom": "BARGING THRU",
-      "cote_live": 33.0,
+      "cote_live": 35.0,
       "cote_reference": 37.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119356000
+      "timestamp_cote": 1793119598000
     },
     {
       "numPmu": 9,
       "nom": "CAMBREMER",
-      "cote_live": 16.0,
+      "cote_live": 15.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119356000
+      "timestamp_cote": 1793119598000
     },
     {
       "numPmu": 10,
@@ -95,34 +95,34 @@
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119356000
+      "timestamp_cote": 1793119598000
     },
     {
       "numPmu": 11,
       "nom": "REGALIEN",
-      "cote_live": 17.0,
+      "cote_live": 18.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119356000
+      "timestamp_cote": 1793119598000
     },
     {
       "numPmu": 12,
       "nom": "QUARTZ DU HOULEY",
-      "cote_live": 7.8,
+      "cote_live": 7.4,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119356000
+      "timestamp_cote": 1793119598000
     },
     {
       "numPmu": 13,
       "nom": "WAYZATA MIST",
-      "cote_live": 16.0,
+      "cote_live": 17.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119356000
+      "timestamp_cote": 1793119598000
     },
     {
       "numPmu": 14,
@@ -131,16 +131,16 @@
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119356000
+      "timestamp_cote": 1793119598000
     },
     {
       "numPmu": 15,
       "nom": "NOFIX",
-      "cote_live": 20.0,
+      "cote_live": 19.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793119356000
+      "timestamp_cote": 1793119598000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -227,6 +227,27 @@
         "13": 16.0,
         "14": 16.0,
         "15": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-27T17:46:50.835969+01:00",
+      "minutes_avant_depart": 15.157980083333333,
+      "cotes": {
+        "1": 7.1,
+        "2": 17.0,
+        "3": 43.0,
+        "4": 4.8,
+        "5": 7.1,
+        "6": 27.0,
+        "7": 33.0,
+        "8": 35.0,
+        "9": 15.0,
+        "10": 18.0,
+        "11": 18.0,
+        "12": 7.4,
+        "13": 17.0,
+        "14": 16.0,
+        "15": 19.0
       }
     }
   ]
