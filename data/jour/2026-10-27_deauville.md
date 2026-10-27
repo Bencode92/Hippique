@@ -142,22 +142,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX OMAHA BEACH
 
-*19h00 · plat · 1300 m · 15 partants · cotes à T−1:49*
+*19h00 · plat · 1300 m · 15 partants · cotes à T−0:30*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 1 | NADIR | 4,2 | 8,2 | 4,51 | -6,9 % | PC.BOUDOT 4e | 8/22/17/106 |
-| 5 | SAINT SAENS | 7,1 | 6 | 8,08 | -12,1 % | M.VELON | 28/8/18/645 |
-| 4 | SOLE | 7,3 | 6,8 | 7,49 | -2,6 % | M.GUYON | 4/7/1/2 |
-| 12 | QUARTZ DU HOULEY | 8,7 | 8,2 | 9,64 | -9,8 % | T.BACHELOT | 16/105/238/101 |
-| 15 | NOFIX | 13 | 13 | 15,67 | -17,0 % | L.ROUSSEL | 26/27/1/26 |
-| 9 | CAMBREMER | 15 | 15 | 18,54 | -19,1 % | M.GRANDIN | 3/142/236/4 |
-| 13 | WAYZATA MIST | 17 | 13 | 23,45 | -27,5 % | S.PASQUIER | 23/170/1722/183 |
-| 10 | TORPEN | 19 | 15 | 23,28 | -18,4 % | T.TRULLIER | 21/818/3342/4869 |
-| 11 | REGALIEN | 20 | 18 | 28,38 | -29,5 % | A.HAMELIN | 22/81/41/1742 |
-| 2 | VILLA MONCEAU | 21 | 20 | 26,69 | -21,3 % | A.MADAMET | 10/8/3310/295 |
-| 7 | PAINTELLO | 25 | 28 | 32,04 | -22,0 % | J.MOUTARD | 61/127/474/112 |
-| 14 | AVERSA | 27 | 14 | 33,38 | -19,1 % | D.SANTIAGO | 15/21/5/38 |
-| 8 | BARGING THRU | 30 | 29 | 41,15 | -27,1 % | S.TISON | 98/357/563/659 |
-| 3 | SPIRITO | 32 | 46 | 43,06 | -25,7 % | P.LE DIGABEL | 106/110/580/632 |
-| 6 | SKY DREAM | 32 | 24 | 43,09 | -25,7 % | C.LECOEUVRE | 13/16/32/2589 |
+| 1 | NADIR | 4,3 | 8,2 | 4,59 | -6,4 % | PC.BOUDOT 4e | 8/22/17/106 |
+| 12 | QUARTZ DU HOULEY | 7,1 | 8,2 | 7,89 | -10,1 % | T.BACHELOT | 16/105/238/101 |
+| 5 | SAINT SAENS | 7,3 | 6 | 9,00 | -18,9 % | M.VELON | 28/8/18/645 |
+| 4 | SOLE | 8,2 | 6,8 | 8,49 | -3,4 % | M.GUYON | 4/7/1/2 |
+| 9 | CAMBREMER | 14 | 15 | 16,97 | -17,5 % | M.GRANDIN | 3/142/236/4 |
+| 15 | NOFIX | 14 | 13 | 16,95 | -17,4 % | L.ROUSSEL | 26/27/1/26 |
+| 13 | WAYZATA MIST | 16 | 13 | 21,68 | -26,2 % | S.PASQUIER | 23/170/1722/183 |
+| 10 | TORPEN | 20 | 15 | 24,51 | -18,4 % | T.TRULLIER | 21/818/3342/4869 |
+| 11 | REGALIEN | 20 | 18 | 28,16 | -29,0 % | A.HAMELIN | 22/81/41/1742 |
+| 2 | VILLA MONCEAU | 21 | 20 | 26,48 | -20,7 % | A.MADAMET | 10/8/3310/295 |
+| 7 | PAINTELLO | 27 | 28 | 34,71 | -22,2 % | J.MOUTARD | 61/127/474/112 |
+| 6 | SKY DREAM | 30 | 24 | 39,77 | -24,6 % | C.LECOEUVRE | 13/16/32/2589 |
+| 14 | AVERSA | 31 | 14 | 38,71 | -19,9 % | D.SANTIAGO | 15/21/5/38 |
+| 3 | SPIRITO | 33 | 46 | 44,23 | -25,4 % | P.LE DIGABEL | 106/110/580/632 |
+| 8 | BARGING THRU | 33 | 29 | 45,46 | -27,4 % | S.TISON | 98/357/563/659 |
