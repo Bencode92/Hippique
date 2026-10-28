@@ -1,8 +1,8 @@
 # PONT DE VIVAUX — 28/10/2026
 
-8 courses.
+8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
@@ -12,19 +12,19 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | LEONITO STAR | – | J. GUELPA |
-| 2 | LE DOCTOR | – | TH. BRIAND |
-| 3 | LITCHI JULRY | – | B. RUET |
-| 4 | LAIOS JULRY | – | J.P. GAUVIN |
-| 5 | LENNON | – | Y.A. BRIAND |
-| 6 | LOS ANGELES LAKERS | – | R. BOUVIER |
-| 7 | LITTLE KING ELEVEN | – | K. DEVIENNE |
-| 8 | LINGFIELD | – | P. REPICHET |
-| 9 | LORENZO PAULOIS | – | J.CH. FERON |
-| 10 | LUCKY DAY | – | J.CH. SOREL |
-| 11 | LIDO DE LOU | – | S. CINGLAND |
-| 12 | LOGO DE BERTRANGE | – | B. CHAUVE-LAFFAY |
-| 13 | LOOKING SIXTY ONE | – | D. BEKAERT |
+| 12 | LOGO DE BERTRANGE | 2,9 | B. CHAUVE-LAFFAY |
+| 2 | LE DOCTOR | 5,7 | TH. BRIAND |
+| 13 | LOOKING SIXTY ONE | 6,5 | D. BEKAERT |
+| 3 | LITCHI JULRY | 8,6 | B. RUET |
+| 5 | LENNON | 11 | Y.A. BRIAND |
+| 10 | LUCKY DAY | 15 | J.CH. SOREL |
+| 11 | LIDO DE LOU | 22 | S. CINGLAND |
+| 6 | LOS ANGELES LAKERS | 23 | R. BOUVIER |
+| 9 | LORENZO PAULOIS | 35 | J.CH. FERON |
+| 1 | LEONITO STAR | 41 | J. GUELPA |
+| 7 | LITTLE KING ELEVEN | 41 | K. DEVIENNE |
+| 8 | LINGFIELD | 45 | P. REPICHET |
+| 4 | LAIOS JULRY | 50 | J.P. GAUVIN |
 
 ### 2. PRIX DE LA BRIANDE
 
@@ -32,21 +32,21 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KELINA SUPREME | – | B. RUET |
-| 2 | KYOTO DES DURIEZ | – | J. GUELPA |
+| 12 | KADOR DU MONT | 3,1 | K. DEVIENNE |
+| 6 | KLAUR VET | 5,8 | L. FRESNEAU |
+| 8 | KALIMERO DE RIO | 7,1 | L. GOETZ |
+| 11 | KEOPS DU CHATAULT | 9,9 | TH. BRIAND |
+| 2 | KYOTO DES DURIEZ | 10 | J. GUELPA |
+| 9 | KATIEU DE COUZAN | 11 | D. BEKAERT |
+| 13 | KHERMES D'URZY | 13 | S. STEFANO |
+| 14 | KANEA DE L'ABBAYE | 19 | J.CH. SOREL |
+| 4 | KING DE CHANLECY | 43 | J.CH. FERON |
+| 10 | KISS ME FIRST | 43 | S. CINGLAND |
+| 1 | KELINA SUPREME | 48 | B. RUET |
+| 15 | KING'S DAY | 54 | E. GOUT |
+| 5 | KIRIKOU DU JAYLE | 87 | CH. BOUTEILLER |
 | 3 | KALINE D'ARDENNES | – | R. BOUVIER |
-| 4 | KING DE CHANLECY | – | J.CH. FERON |
-| 5 | KIRIKOU DU JAYLE | – | CH. BOUTEILLER |
-| 6 | KLAUR VET | – | L. FRESNEAU |
 | 7 | KOLBY DE GORGERE | – | J. ASSELIE |
-| 8 | KALIMERO DE RIO | – | L. GOETZ |
-| 9 | KATIEU DE COUZAN | – | D. BEKAERT |
-| 10 | KISS ME FIRST | – | S. CINGLAND |
-| 11 | KEOPS DU CHATAULT | – | TH. BRIAND |
-| 12 | KADOR DU MONT | – | K. DEVIENNE |
-| 13 | KHERMES D'URZY | – | S. STEFANO |
-| 14 | KANEA DE L'ABBAYE | – | J.CH. SOREL |
-| 15 | KING'S DAY | – | E. GOUT |
 
 ### 3. PRIX DE LA TREILLE
 
@@ -54,19 +54,19 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KEMEUNEUR | – | P. REPICHET |
-| 2 | KALINA VENDEENNE | – | M. CINIER |
-| 3 | IBERNATUS | – | S. CINGLAND |
-| 4 | JUSTIFY MY LOVE | – | B. RUET |
-| 5 | KATE METEOR | – | D. BEKAERT |
-| 6 | KEL COPAIN | – | J. GUELPA |
-| 7 | KRAC GAILLARD | – | S. STEFANO |
-| 8 | KOUGAR DE SIMM | – | N. CINIER |
-| 9 | JOSE DU CHERISAY | – | G. TUGEND |
-| 10 | HOUSTON D'ARIANE | – | W. BAUDY |
-| 11 | KIROMAN | – | K. DEVIENNE |
-| 12 | KISS ME JULRY | – | J.P. GAUVIN |
-| 13 | KRAK DE BUSSIERES | – | B. CHAUVE-LAFFAY |
+| 13 | KRAK DE BUSSIERES | 2,2 | B. CHAUVE-LAFFAY |
+| 12 | KISS ME JULRY | 5,7 | J.P. GAUVIN |
+| 7 | KRAC GAILLARD | 5,8 | S. STEFANO |
+| 5 | KATE METEOR | 7,2 | D. BEKAERT |
+| 1 | KEMEUNEUR | 13 | P. REPICHET |
+| 4 | JUSTIFY MY LOVE | 23 | B. RUET |
+| 11 | KIROMAN | 37 | K. DEVIENNE |
+| 6 | KEL COPAIN | 47 | J. GUELPA |
+| 3 | IBERNATUS | 65 | S. CINGLAND |
+| 8 | KOUGAR DE SIMM | 87 | N. CINIER |
+| 2 | KALINA VENDEENNE | 174 | M. CINIER |
+| 9 | JOSE DU CHERISAY | 174 | G. TUGEND |
+| 10 | HOUSTON D'ARIANE | 262 | W. BAUDY |
 
 ### 4. PRIX DE L'ILE DU PLANIER
 
@@ -74,19 +74,19 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | GREENHILL'S DANCER | – | N. CINIER |
-| 2 | INDESKAYA BIRD | – | J. GUELPA |
-| 3 | ILLYTRASS | – | M. CINIER |
-| 4 | JASMIN BLEU | – | L. GOETZ |
-| 5 | JUPITER FRANCE | – | Y.A. BRIAND |
-| 6 | HOUSTON PEJI | – | J.CH. SOREL |
-| 7 | JOLI MEC D'AMOUR | – | D. BEKAERT |
-| 8 | HAVRE DE PAIX | – | W. BAUDY |
-| 9 | HUDSON BAIE | – | S. STEFANO |
-| 10 | JOCONDE TURGOT | – | R. THONNERIEUX |
-| 11 | HEYDAY | – | R. BOUVIER |
-| 12 | IQUEM D'AMER | – | TH. BRIAND |
-| 13 | GYS | – | S. CINGLAND |
+| 7 | JOLI MEC D'AMOUR | 2,1 | D. BEKAERT |
+| 4 | JASMIN BLEU | 7 | L. GOETZ |
+| 11 | HEYDAY | 9,8 | R. BOUVIER |
+| 12 | IQUEM D'AMER | 10 | TH. BRIAND |
+| 3 | ILLYTRASS | 12 | M. CINIER |
+| 13 | GYS | 13 | S. CINGLAND |
+| 9 | HUDSON BAIE | 18 | S. STEFANO |
+| 6 | HOUSTON PEJI | 22 | J.CH. SOREL |
+| 2 | INDESKAYA BIRD | 25 | J. GUELPA |
+| 10 | JOCONDE TURGOT | 50 | R. THONNERIEUX |
+| 5 | JUPITER FRANCE | 88 | Y.A. BRIAND |
+| 8 | HAVRE DE PAIX | 88 | W. BAUDY |
+| 1 | GREENHILL'S DANCER | 176 | N. CINIER |
 
 ### 5. PRIX DE VERNEGUES
 
@@ -94,15 +94,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MIDLAND D'OYSE | – | K. DEVIENNE |
-| 2 | MIGUEL DU CHERISAY | – | G. TUGEND |
-| 3 | MYSTIC BOND | – | TH. BRIAND |
-| 4 | MYSTERE DE L'AVRE | – | F. TUGEND |
-| 5 | MADE IN CARLESS | – | N. MORTAGNE |
-| 6 | MONEY CASH | – | N. CINIER |
+| 3 | MYSTIC BOND | 2,7 | TH. BRIAND |
+| 9 | MATIGNON | 4,3 | Y.A. BRIAND |
+| 2 | MIGUEL DU CHERISAY | 5 | G. TUGEND |
+| 4 | MYSTERE DE L'AVRE | 6,6 | F. TUGEND |
+| 8 | MAASAI | 9,4 | S. CINGLAND |
+| 1 | MIDLAND D'OYSE | 17 | K. DEVIENNE |
+| 5 | MADE IN CARLESS | 80 | N. MORTAGNE |
+| 6 | MONEY CASH | 80 | N. CINIER |
 | 7 | MISTRAL LOMIG | – | LAURENT GOUT |
-| 8 | MAASAI | – | S. CINGLAND |
-| 9 | MATIGNON | – | Y.A. BRIAND |
 
 ### 6. PRIX D'AVIGNON
 
@@ -110,15 +110,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KANSAS DE LUBEL | – | Mme LAETITIA GOUT |
-| 2 | LA HORSE | – | Mlle C. SALAMANI |
-| 3 | LUCIFER | – | Q. SEGUIN |
-| 4 | KLYDE DU PUY | – | R. THONNERIEUX |
-| 5 | LOVE SHACK | – | M. GRUMETZ |
-| 6 | LOUIS GAILLARD | – | CH. BOUTEILLER |
-| 7 | LILI | – | Mlle M. COLLET |
-| 8 | JENNY LEGEND | – | Mlle E. CALLIER |
-| 9 | JALNO MADRIK | – | B. CHAUVE-LAFFAY |
+| 6 | LOUIS GAILLARD | 1,9 | CH. BOUTEILLER |
+| 7 | LILI | 6,1 | Mlle M. COLLET |
+| 5 | LOVE SHACK | 8 | M. GRUMETZ |
+| 2 | LA HORSE | 11 | Mlle C. SALAMANI |
+| 4 | KLYDE DU PUY | 13 | R. THONNERIEUX |
+| 3 | LUCIFER | 14 | Q. SEGUIN |
+| 9 | JALNO MADRIK | 18 | B. CHAUVE-LAFFAY |
+| 8 | JENNY LEGEND | 23 | Mlle E. CALLIER |
+| 1 | KANSAS DE LUBEL | 92 | Mme LAETITIA GOUT |
 
 ### 7. PRIX DU CLOS SIMONETTE
 
@@ -126,15 +126,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | NELSON D'HERMES | – | D. BEKAERT |
-| 2 | NIRVANA D'HERMES | – | S. STEFANO |
-| 3 | NORMAND VILLETOT | – | TH. BRIAND |
-| 4 | NICKEL CHROME | – | S. CINGLAND |
-| 5 | NORIA DE BERTRANGE | – | E. GOUT |
-| 6 | NOVELTY | – | Y.A. BRIAND |
-| 7 | NATALIA JAMES | – | P. VERCRUYSSE |
-| 8 | NIGHT OF CARLESS | – | N. MORTAGNE |
-| 9 | NOT ALONE | – | J. ASSELIE |
+| 8 | NIGHT OF CARLESS | 2,3 | N. MORTAGNE |
+| 7 | NATALIA JAMES | 4,8 | P. VERCRUYSSE |
+| 3 | NORMAND VILLETOT | 6,3 | TH. BRIAND |
+| 6 | NOVELTY | 6,6 | Y.A. BRIAND |
+| 1 | NELSON D'HERMES | 8,5 | D. BEKAERT |
+| 5 | NORIA DE BERTRANGE | 31 | E. GOUT |
+| 2 | NIRVANA D'HERMES | 40 | S. STEFANO |
+| 4 | NICKEL CHROME | 56 | S. CINGLAND |
+| 9 | NOT ALONE | 93 | J. ASSELIE |
 
 ### 8. PRIX DE MALMOUSQUE
 
@@ -142,14 +142,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KINGSTON SPORT | – | F. YVANES |
-| 2 | KATIA MON NEVEU | – | Mlle G. AMBROGIO |
+| 2 | KATIA MON NEVEU | 2,9 | Mlle G. AMBROGIO |
+| 10 | KLIMT MERITE | 3,5 | Mme V. BOUDIER-CORMY |
+| 9 | JUSSIE | 5,8 | Mlle S. BLANCHETIERE |
+| 4 | KATY DU CHERISAY | 7 | Mlle K. FRESNEAU |
+| 5 | JERONIMO | 9,8 | A. MAZZU |
+| 7 | ISIS DE REYNALD | 24 | Mlle S. OYER |
+| 6 | KIWI D'AUVRECY | 32 | Mlle V. GRELIN |
+| 1 | KINGSTON SPORT | 49 | F. YVANES |
+| 8 | KHEOPS DU PERRON | 98 | Mlle E. ROUSSEAU |
 | 3 | KRUNCH FOR MONEY | – | PH. TERME |
-| 4 | KATY DU CHERISAY | – | Mlle K. FRESNEAU |
-| 5 | JERONIMO | – | A. MAZZU |
-| 6 | KIWI D'AUVRECY | – | Mlle V. GRELIN |
-| 7 | ISIS DE REYNALD | – | Mlle S. OYER |
-| 8 | KHEOPS DU PERRON | – | Mlle E. ROUSSEAU |
-| 9 | JUSSIE | – | Mlle S. BLANCHETIERE |
-| 10 | KLIMT MERITE | – | Mme V. BOUDIER-CORMY |
 | 11 | INIMITABLE | – | J. HAMELET |
