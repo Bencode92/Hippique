@@ -87,18 +87,18 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 6 | RAGING WARRIOR | 4,1 | ORMAN J. | –/–/–/– |
-| 1 | ARMOUR WAR EAGLE | 5,6 | LEUNG K.C. | –/–/–/– |
-| 8 | GOOD LUCK HAPPY | 6,4 | CHUNG Y.L. | –/–/–/– |
-| 5 | LEADING DRAGON | 8,2 | ATZENI A. | –/–/–/– |
-| 2 | ENDURANCE EXPRESS | 9,8 | YUEN H.Y. | –/–/–/– |
-| 3 | CENTRAL BANK | 9,8 | CHAU C.L. | –/–/–/– |
-| 9 | BETTER AND BETTER | 9,9 | BADEL A. | –/–/–/– |
-| 4 | FLOWING RICHES | 12 | HO C.Y. | –/–/–/– |
-| 7 | STARRY SHOW | 18 | KINGSCOTE R. | –/–/–/– |
-| 11 | EVERSTAR | 37 | MO H.T. | –/–/–/– |
-| 10 | GOOD POWER | 45 | YEUNG M.L. | –/–/–/– |
-| 12 | VIEW OF COSMOS | 50 | POON M.F. | –/–/–/– |
+| 6 | RAGING WARRIOR | 4,9 | ORMAN J. | –/–/–/– |
+| 9 | BETTER AND BETTER | 5,5 | BADEL A. | –/–/–/– |
+| 3 | CENTRAL BANK | 5,7 | CHAU C.L. | –/–/–/– |
+| 4 | FLOWING RICHES | 6,3 | HO C.Y. | –/–/–/– |
+| 1 | ARMOUR WAR EAGLE | 7,3 | LEUNG K.C. | –/–/–/– |
+| 8 | GOOD LUCK HAPPY | 10 | CHUNG Y.L. | –/–/–/– |
+| 2 | ENDURANCE EXPRESS | 11 | YUEN H.Y. | –/–/–/– |
+| 5 | LEADING DRAGON | 12 | ATZENI A. | –/–/–/– |
+| 11 | EVERSTAR | 27 | MO H.T. | –/–/–/– |
+| 7 | STARRY SHOW | 38 | KINGSCOTE R. | –/–/–/– |
+| 10 | GOOD POWER | 68 | YEUNG M.L. | –/–/–/– |
+| 12 | VIEW OF COSMOS | 88 | POON M.F. | –/–/–/– |
 
 ### 6. TIN HA SHAN HANDICAP
 
@@ -106,20 +106,20 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | HAPPY UNIVERSE | 5,1 | LEUNG K.C. |
-| 5 | NIGHT PUROSANGUE | 5,6 | ATZENI A. |
-| 9 | PERFECT TEAM | 6,3 | TEETAN K. |
-| 10 | JOLTIN | 7,1 | POON M.F. |
-| 2 | ANOTHER WORLD | 9,9 | HO C.Y. |
-| 7 | CALIFORNIA STAR | 10 | CHUNG Y.L. |
-| 6 | CHILL KAKA | 12 | KINGSCOTE R. |
-| 13 | FAMILY KNIGHT | 17 | YUEN H.Y. |
-| 3 | HAPPY TERCENTENARY | 18 | BADEL A. |
-| 8 | HERO RISING | 18 | HEWITSON L. |
-| 4 | EXCELLENCE VALUE | 31 | MO H.T. |
-| 14 | MASSIVE GLORY | 36 | WONG P.N. |
-| 11 | KYOTO SPRING | 52 | YEUNG M.L. |
-| 12 | LUCKY BID | 55 | CHADWICK M. |
+| 5 | NIGHT PUROSANGUE | 5,4 | ATZENI A. |
+| 9 | PERFECT TEAM | 6,2 | TEETAN K. |
+| 10 | JOLTIN | 6,5 | POON M.F. |
+| 1 | HAPPY UNIVERSE | 7,3 | LEUNG K.C. |
+| 8 | HERO RISING | 7,7 | HEWITSON L. |
+| 7 | CALIFORNIA STAR | 9,3 | CHUNG Y.L. |
+| 2 | ANOTHER WORLD | 12 | HO C.Y. |
+| 13 | FAMILY KNIGHT | 13 | YUEN H.Y. |
+| 3 | HAPPY TERCENTENARY | 14 | BADEL A. |
+| 6 | CHILL KAKA | 16 | KINGSCOTE R. |
+| 14 | MASSIVE GLORY | 50 | WONG P.N. |
+| 4 | EXCELLENCE VALUE | 67 | MO H.T. |
+| 12 | LUCKY BID | 78 | CHADWICK M. |
+| 11 | KYOTO SPRING | 92 | YEUNG M.L. |
 
 ### 7. SHEK UK SHAN HANDICAP - SECTION 2
 
@@ -127,18 +127,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 3 | WOLF COMING | 4,5 | CHAU C.L. |
-| 4 | GIANT LEAP | 4,7 | YUEN H.Y. |
-| 2 | MEGA CAPTAIN | 4,8 | HO C.Y. |
-| 1 | HONEST WITNESS | 10 | WONG P.N. |
-| 8 | CALIFORNIA BAY | 12 | TEETAN K. |
-| 12 | LOVING VIBES | 12 | HEWITSON L. |
-| 5 | GOOD CHAP | 13 | ATZENI A. |
+| 4 | GIANT LEAP | 3 | YUEN H.Y. |
+| 3 | WOLF COMING | 5,8 | CHAU C.L. |
+| 2 | MEGA CAPTAIN | 6,5 | HO C.Y. |
+| 11 | CALL ME SUCCESS | 10 | KINGSCOTE R. |
+| 1 | HONEST WITNESS | 11 | WONG P.N. |
+| 12 | LOVING VIBES | 14 | HEWITSON L. |
+| 5 | GOOD CHAP | 14 | ATZENI A. |
 | 9 | RISING FROM ASHES | 14 | ORMAN J. |
-| 11 | CALL ME SUCCESS | 21 | KINGSCOTE R. |
-| 7 | TROPHY RAIDER | 22 | BADEL A. |
-| 10 | NOBLE DELUXE | 24 | YEUNG M.L. |
-| 6 | ONE MAN SHOW | 26 | POON M.F. |
+| 8 | CALIFORNIA BAY | 15 | TEETAN K. |
+| 6 | ONE MAN SHOW | 18 | POON M.F. |
+| 7 | TROPHY RAIDER | 49 | BADEL A. |
+| 10 | NOBLE DELUXE | 49 | YEUNG M.L. |
 
 ### 8. HEBE HILL HANDICAP
 
@@ -147,17 +147,17 @@
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
 | 4 | BUSTLING CITY | 1,6 | AVDULLA B. |
-| 2 | BLAZING WIND | 11 | KINGSCOTE R. |
-| 8 | CAUSEWAY KING | 11 | YUEN H.Y. |
-| 1 | SELF IMPROVEMENT | 13 | WONG P.N. |
-| 3 | LUCY IN THE SKY | 13 | CHAU C.L. |
-| 11 | NOTTHESILLYONE | 17 | CHADWICK M. |
-| 6 | SKY CAP | 20 | YEUNG M.L. |
-| 5 | STRAIGHT TO GLORY | 22 | LEUNG K.C. |
-| 7 | MUST GO | 27 | ATZENI A. |
-| 10 | ZHUANG YUAN GLORY | 29 | BADEL A. |
-| 9 | RED SEA | 34 | TEETAN K. |
-| 12 | HOTT SHOTT | 36 | POON M.F. |
+| 8 | CAUSEWAY KING | 6,2 | YUEN H.Y. |
+| 3 | LUCY IN THE SKY | 7,4 | CHAU C.L. |
+| 2 | BLAZING WIND | 13 | KINGSCOTE R. |
+| 7 | MUST GO | 24 | ATZENI A. |
+| 5 | STRAIGHT TO GLORY | 27 | LEUNG K.C. |
+| 9 | RED SEA | 32 | TEETAN K. |
+| 1 | SELF IMPROVEMENT | 36 | WONG P.N. |
+| 11 | NOTTHESILLYONE | 39 | CHADWICK M. |
+| 6 | SKY CAP | 43 | YEUNG M.L. |
+| 10 | ZHUANG YUAN GLORY | 57 | BADEL A. |
+| 12 | HOTT SHOTT | 83 | POON M.F. |
 
 ### 9. PYRAMID HILL HANDICAP
 
@@ -165,17 +165,17 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 6 | DRAGON AIR FORCE | 4,7 | CHADWICK M. |
-| 11 | NEZHA | 6,3 | POON M.F. |
-| 4 | SKY VINO | 7,2 | HO C.Y. |
-| 1 | TOP DRAGON | 8,8 | ORMAN J. |
-| 13 | PRAY FOR JUSTICE | 9,9 | TEETAN K. |
-| 3 | LUCKY SAM GOR | 11 | CHAU C.L. |
-| 2 | GORGEOUS WIN | 13 | YUEN H.Y. |
-| 7 | THUNDER BLAZE | 18 | AVDULLA B. |
-| 8 | UNITED HUA STEED | 18 | WONG P.N. |
-| 9 | ALL ROUND WINNER | 18 | BENTLEY H. |
-| 10 | MIGHTY STEED | 19 | CHUNG Y.L. |
-| 14 | SUPREME AGILITY | 23 | ATZENI A. |
-| 5 | SOVEREIGN FUND | 29 | LEUNG K.C. |
-| 12 | YOUNG ACHIEVER | 34 | BADEL A. |
+| 6 | DRAGON AIR FORCE | 4,4 | CHADWICK M. |
+| 11 | NEZHA | 6,5 | POON M.F. |
+| 4 | SKY VINO | 6,6 | HO C.Y. |
+| 1 | TOP DRAGON | 7,6 | ORMAN J. |
+| 13 | PRAY FOR JUSTICE | 9,6 | TEETAN K. |
+| 2 | GORGEOUS WIN | 12 | YUEN H.Y. |
+| 3 | LUCKY SAM GOR | 12 | CHAU C.L. |
+| 9 | ALL ROUND WINNER | 17 | BENTLEY H. |
+| 7 | THUNDER BLAZE | 21 | AVDULLA B. |
+| 10 | MIGHTY STEED | 22 | CHUNG Y.L. |
+| 8 | UNITED HUA STEED | 24 | WONG P.N. |
+| 14 | SUPREME AGILITY | 26 | ATZENI A. |
+| 5 | SOVEREIGN FUND | 35 | LEUNG K.C. |
+| 12 | YOUNG ACHIEVER | 39 | BADEL A. |
