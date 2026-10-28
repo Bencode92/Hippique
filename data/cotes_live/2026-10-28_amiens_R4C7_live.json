@@ -1,0 +1,130 @@
+{
+  "course": "PRIX DE SALOUEL",
+  "numero": 7,
+  "reunion": 4,
+  "heure_depart": 1793214900000,
+  "distance": 2900,
+  "scraped_at": "2026-10-28T19:45:36.965662+01:00",
+  "minutes_avant_depart": 29,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "ABRONZAL",
+      "cote_live": 3.5,
+      "cote_reference": 4.2,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1793212247000
+    },
+    {
+      "numPmu": 2,
+      "nom": "EDEN ROC",
+      "cote_live": 9.5,
+      "cote_reference": 8.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1793212247000
+    },
+    {
+      "numPmu": 3,
+      "nom": "WILDSTAR",
+      "cote_live": 15.0,
+      "cote_reference": 16.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1793212247000
+    },
+    {
+      "numPmu": 4,
+      "nom": "TESTANA",
+      "cote_live": 32.0,
+      "cote_reference": 17.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1793212247000
+    },
+    {
+      "numPmu": 5,
+      "nom": "DONNALUCATA",
+      "cote_live": 6.2,
+      "cote_reference": 7.2,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1793212247000
+    },
+    {
+      "numPmu": 6,
+      "nom": "DESERONTO",
+      "cote_live": 18.0,
+      "cote_reference": 18.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1793212247000
+    },
+    {
+      "numPmu": 7,
+      "nom": "ANNALIGHT",
+      "cote_live": 6.4,
+      "cote_reference": 7.3,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1793212247000
+    },
+    {
+      "numPmu": 8,
+      "nom": "OCTOBRE ROSE",
+      "cote_live": 5.9,
+      "cote_reference": 7.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1793212247000
+    },
+    {
+      "numPmu": 9,
+      "nom": "ZARALADY",
+      "cote_live": 35.0,
+      "cote_reference": 21.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1793212247000
+    },
+    {
+      "numPmu": 10,
+      "nom": "SMOLAR",
+      "cote_live": 23.0,
+      "cote_reference": 21.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1793212247000
+    },
+    {
+      "numPmu": 11,
+      "nom": "L'ESPELETTE",
+      "cote_live": 23.0,
+      "cote_reference": 10.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1793212247000
+    }
+  ],
+  "hippodrome": "AMIENS",
+  "releves": [
+    {
+      "scraped_at": "2026-10-28T19:45:36.965662+01:00",
+      "minutes_avant_depart": 29.388506716666665,
+      "cotes": {
+        "1": 3.5,
+        "2": 9.5,
+        "3": 15.0,
+        "4": 32.0,
+        "5": 6.2,
+        "6": 18.0,
+        "7": 6.4,
+        "8": 5.9,
+        "9": 35.0,
+        "10": 23.0,
+        "11": 23.0
+      }
+    }
+  ]
+}
