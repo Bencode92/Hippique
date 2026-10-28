@@ -4,35 +4,35 @@
   "reunion": 1,
   "heure_depart": 1793200500000,
   "distance": 4400,
-  "scraped_at": "2026-10-28T15:55:00.017498+01:00",
-  "minutes_avant_depart": 20,
+  "scraped_at": "2026-10-28T15:59:00.085445+01:00",
+  "minutes_avant_depart": 16,
   "participants": [
     {
       "numPmu": 1,
       "nom": "KELLE KIFF",
-      "cote_live": 8.6,
+      "cote_live": 8.0,
       "cote_reference": 9.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793199281000
+      "timestamp_cote": 1793199523000
     },
     {
       "numPmu": 2,
       "nom": "BEL ENJEU",
-      "cote_live": 7.1,
+      "cote_live": 6.6,
       "cote_reference": 7.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793199281000
+      "timestamp_cote": 1793199523000
     },
     {
       "numPmu": 3,
       "nom": "PETRUS DE HOUELLE",
-      "cote_live": 9.0,
+      "cote_live": 8.2,
       "cote_reference": 9.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793199281000
+      "timestamp_cote": 1793199523000
     },
     {
       "numPmu": 4,
@@ -41,88 +41,88 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793199281000
+      "timestamp_cote": 1793199523000
     },
     {
       "numPmu": 5,
       "nom": "MARNAGE",
-      "cote_live": 26.0,
+      "cote_live": 30.0,
       "cote_reference": 45.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793199281000
+      "timestamp_cote": 1793199523000
     },
     {
       "numPmu": 6,
       "nom": "PAQUISTO",
-      "cote_live": 38.0,
+      "cote_live": 42.0,
       "cote_reference": 37.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793199281000
+      "timestamp_cote": 1793199523000
     },
     {
       "numPmu": 7,
       "nom": "MAJOR DU LARGE",
-      "cote_live": 47.0,
+      "cote_live": 49.0,
       "cote_reference": 45.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793199281000
+      "timestamp_cote": 1793199523000
     },
     {
       "numPmu": 8,
       "nom": "MOTU KOTA",
-      "cote_live": 8.3,
+      "cote_live": 9.0,
       "cote_reference": 8.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793199281000
+      "timestamp_cote": 1793199523000
     },
     {
       "numPmu": 9,
       "nom": "MELCHIOR DU LARGE",
-      "cote_live": 11.0,
+      "cote_live": 10.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793199281000
+      "timestamp_cote": 1793199523000
     },
     {
       "numPmu": 10,
       "nom": "MENTION BIEN",
-      "cote_live": 18.0,
+      "cote_live": 20.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793199281000
+      "timestamp_cote": 1793199523000
     },
     {
       "numPmu": 11,
       "nom": "MASTER FALCON",
-      "cote_live": 44.0,
+      "cote_live": 46.0,
       "cote_reference": 44.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793199281000
+      "timestamp_cote": 1793199523000
     },
     {
       "numPmu": 12,
       "nom": "CHEZ DOUCET",
-      "cote_live": 3.0,
+      "cote_live": 3.2,
       "cote_reference": 2.8,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793199281000
+      "timestamp_cote": 1793199523000
     },
     {
       "numPmu": 13,
       "nom": "CHASING GREAT",
-      "cote_live": 85.0,
+      "cote_live": 88.0,
       "cote_reference": 91.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793199281000
+      "timestamp_cote": 1793199523000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -182,6 +182,25 @@
         "11": 44.0,
         "12": 3.0,
         "13": 85.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-28T15:59:00.085445+01:00",
+      "minutes_avant_depart": 16.007712433333335,
+      "cotes": {
+        "1": 8.0,
+        "2": 6.6,
+        "3": 8.2,
+        "4": 14.0,
+        "5": 30.0,
+        "6": 42.0,
+        "7": 49.0,
+        "8": 9.0,
+        "9": 10.0,
+        "10": 20.0,
+        "11": 46.0,
+        "12": 3.2,
+        "13": 88.0
       }
     }
   ]
