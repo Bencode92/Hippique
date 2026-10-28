@@ -4,17 +4,17 @@
   "reunion": 1,
   "heure_depart": 1793189520000,
   "distance": 4400,
-  "scraped_at": "2026-10-28T13:03:41.071142+01:00",
-  "minutes_avant_depart": 8,
+  "scraped_at": "2026-10-28T13:08:20.637139+01:00",
+  "minutes_avant_depart": 4,
   "participants": [
     {
       "numPmu": 1,
       "nom": "LUA MATER",
-      "cote_live": 7.2,
+      "cote_live": 6.5,
       "cote_reference": 8.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793189006000
+      "timestamp_cote": 1793189292000
     },
     {
       "numPmu": 2,
@@ -23,52 +23,52 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793189006000
+      "timestamp_cote": 1793189292000
     },
     {
       "numPmu": 3,
       "nom": "MIRAVAL DE GRUGY",
-      "cote_live": 2.1,
+      "cote_live": 2.0,
       "cote_reference": 2.2,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793189006000
+      "timestamp_cote": 1793189292000
     },
     {
       "numPmu": 4,
       "nom": "LA PAGAILLE",
-      "cote_live": 18.0,
+      "cote_live": 20.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793189006000
+      "timestamp_cote": 1793189292000
     },
     {
       "numPmu": 5,
       "nom": "MOI SACHA",
-      "cote_live": 4.4,
+      "cote_live": 4.9,
       "cote_reference": 4.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793189006000
+      "timestamp_cote": 1793189292000
     },
     {
       "numPmu": 6,
       "nom": "LOUISE LAMBERN",
-      "cote_live": 15.0,
+      "cote_live": 14.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793189006000
+      "timestamp_cote": 1793189292000
     },
     {
       "numPmu": 7,
       "nom": "MISSTIME D'ANJOU",
-      "cote_live": 9.8,
+      "cote_live": 11.0,
       "cote_reference": 7.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793189006000
+      "timestamp_cote": 1793189292000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -84,6 +84,58 @@
         "5": 4.4,
         "6": 15.0,
         "7": 9.8
+      }
+    },
+    {
+      "scraped_at": "2026-10-28T13:06:20.677080+01:00",
+      "minutes_avant_depart": 5.659816683333333,
+      "cotes": {
+        "1": 6.4,
+        "2": 12.0,
+        "3": 2.0,
+        "4": 20.0,
+        "5": 4.6,
+        "6": 17.0,
+        "7": 10.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-28T13:07:00.828161+01:00",
+      "minutes_avant_depart": 4.9902508,
+      "cotes": {
+        "1": 6.3,
+        "2": 12.0,
+        "3": 2.0,
+        "4": 19.0,
+        "5": 4.7,
+        "6": 15.0,
+        "7": 10.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-28T13:07:40.849581+01:00",
+      "minutes_avant_depart": 4.32647865,
+      "cotes": {
+        "1": 6.9,
+        "2": 12.0,
+        "3": 1.9,
+        "4": 20.0,
+        "5": 4.9,
+        "6": 14.0,
+        "7": 11.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-28T13:08:20.637139+01:00",
+      "minutes_avant_depart": 3.6598094333333333,
+      "cotes": {
+        "1": 6.5,
+        "2": 12.0,
+        "3": 2.0,
+        "4": 20.0,
+        "5": 4.9,
+        "6": 14.0,
+        "7": 11.0
       }
     }
   ]
