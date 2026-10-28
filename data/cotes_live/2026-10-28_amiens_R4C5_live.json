@@ -4,17 +4,17 @@
   "reunion": 4,
   "heure_depart": 1793211060000,
   "distance": 1650,
-  "scraped_at": "2026-10-28T18:48:16.996834+01:00",
-  "minutes_avant_depart": 23,
+  "scraped_at": "2026-10-28T18:52:16.936048+01:00",
+  "minutes_avant_depart": 19,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MR SAY",
-      "cote_live": 8.7,
+      "cote_live": 8.8,
       "cote_reference": 8.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793209674000
+      "timestamp_cote": 1793209916000
     },
     {
       "numPmu": 2,
@@ -23,43 +23,43 @@
       "cote_reference": 3.3,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793209674000
+      "timestamp_cote": 1793209916000
     },
     {
       "numPmu": 3,
       "nom": "PETIT GENIE",
-      "cote_live": 4.4,
+      "cote_live": 4.5,
       "cote_reference": 4.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793209674000
+      "timestamp_cote": 1793209916000
     },
     {
       "numPmu": 4,
       "nom": "SAINT JIMMY",
-      "cote_live": 60.0,
+      "cote_live": 57.0,
       "cote_reference": 57.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793209674000
+      "timestamp_cote": 1793209916000
     },
     {
       "numPmu": 5,
       "nom": "DICIAMO",
-      "cote_live": 4.3,
+      "cote_live": 4.4,
       "cote_reference": 4.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793209674000
+      "timestamp_cote": 1793209916000
     },
     {
       "numPmu": 6,
       "nom": "EGERIA",
-      "cote_live": 33.0,
+      "cote_live": 30.0,
       "cote_reference": 35.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793209674000
+      "timestamp_cote": 1793209916000
     },
     {
       "numPmu": 7,
@@ -68,7 +68,7 @@
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793209674000
+      "timestamp_cote": 1793209916000
     },
     {
       "numPmu": 8,
@@ -77,16 +77,16 @@
       "cote_reference": 31.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793209674000
+      "timestamp_cote": 1793209916000
     },
     {
       "numPmu": 9,
       "nom": "GHIRLANDA",
-      "cote_live": 20.0,
+      "cote_live": 19.0,
       "cote_reference": 31.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793209674000
+      "timestamp_cote": 1793209916000
     },
     {
       "numPmu": 10,
@@ -95,16 +95,16 @@
       "cote_reference": 26.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793209674000
+      "timestamp_cote": 1793209916000
     },
     {
       "numPmu": 11,
       "nom": "NAMIBIA",
-      "cote_live": 28.0,
+      "cote_live": 24.0,
       "cote_reference": 31.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793209674000
+      "timestamp_cote": 1793209916000
     }
   ],
   "hippodrome": "AMIENS",
@@ -141,6 +141,23 @@
         "9": 20.0,
         "10": 25.0,
         "11": 28.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-28T18:52:16.936048+01:00",
+      "minutes_avant_depart": 18.721981016666668,
+      "cotes": {
+        "1": 8.8,
+        "2": 3.4,
+        "3": 4.5,
+        "4": 57.0,
+        "5": 4.4,
+        "6": 30.0,
+        "7": 13.0,
+        "8": 32.0,
+        "9": 19.0,
+        "10": 25.0,
+        "11": 24.0
       }
     }
   ]
