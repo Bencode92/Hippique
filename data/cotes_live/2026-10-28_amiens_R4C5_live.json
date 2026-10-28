@@ -4,98 +4,98 @@
   "reunion": 4,
   "heure_depart": 1793211060000,
   "distance": 1650,
-  "scraped_at": "2026-10-28T19:00:17.511533+01:00",
-  "minutes_avant_depart": 11,
+  "scraped_at": "2026-10-28T19:06:17.068452+01:00",
+  "minutes_avant_depart": 5,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MR SAY",
-      "cote_live": 6.5,
+      "cote_live": 6.8,
       "cote_reference": 8.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793210400000
+      "timestamp_cote": 1793210752000
     },
     {
       "numPmu": 2,
       "nom": "LUCKY VOWS",
-      "cote_live": 4.0,
+      "cote_live": 4.3,
       "cote_reference": 3.3,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793210400000
+      "timestamp_cote": 1793210752000
     },
     {
       "numPmu": 3,
       "nom": "PETIT GENIE",
-      "cote_live": 4.8,
+      "cote_live": 4.5,
       "cote_reference": 4.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793210400000
+      "timestamp_cote": 1793210752000
     },
     {
       "numPmu": 4,
       "nom": "SAINT JIMMY",
-      "cote_live": 59.0,
+      "cote_live": 43.0,
       "cote_reference": 57.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793210400000
+      "timestamp_cote": 1793210752000
     },
     {
       "numPmu": 5,
       "nom": "DICIAMO",
-      "cote_live": 5.5,
+      "cote_live": 6.3,
       "cote_reference": 4.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793210400000
+      "timestamp_cote": 1793210752000
     },
     {
       "numPmu": 6,
       "nom": "EGERIA",
-      "cote_live": 16.0,
+      "cote_live": 14.0,
       "cote_reference": 35.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793210400000
+      "timestamp_cote": 1793210752000
     },
     {
       "numPmu": 7,
       "nom": "PAJERO",
-      "cote_live": 10.0,
+      "cote_live": 8.2,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793210400000
+      "timestamp_cote": 1793210752000
     },
     {
       "numPmu": 8,
       "nom": "GOLDEN PACO",
-      "cote_live": 32.0,
+      "cote_live": 31.0,
       "cote_reference": 31.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793210400000
+      "timestamp_cote": 1793210752000
     },
     {
       "numPmu": 9,
       "nom": "GHIRLANDA",
-      "cote_live": 17.0,
+      "cote_live": 19.0,
       "cote_reference": 31.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793210400000
+      "timestamp_cote": 1793210752000
     },
     {
       "numPmu": 10,
       "nom": "ILES VANILLE",
-      "cote_live": 26.0,
+      "cote_live": 23.0,
       "cote_reference": 26.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793210400000
+      "timestamp_cote": 1793210752000
     },
     {
       "numPmu": 11,
@@ -104,7 +104,7 @@
       "cote_reference": 31.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793210400000
+      "timestamp_cote": 1793210752000
     }
   ],
   "hippodrome": "AMIENS",
@@ -191,6 +191,57 @@
         "8": 32.0,
         "9": 17.0,
         "10": 26.0,
+        "11": 21.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-28T19:04:57.033136+01:00",
+      "minutes_avant_depart": 6.055281416666667,
+      "cotes": {
+        "1": 6.7,
+        "2": 4.2,
+        "3": 4.8,
+        "4": 48.0,
+        "5": 6.1,
+        "6": 14.0,
+        "7": 8.4,
+        "8": 32.0,
+        "9": 18.0,
+        "10": 23.0,
+        "11": 22.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-28T19:05:36.918454+01:00",
+      "minutes_avant_depart": 5.3886133,
+      "cotes": {
+        "1": 6.7,
+        "2": 4.2,
+        "3": 4.8,
+        "4": 47.0,
+        "5": 6.2,
+        "6": 14.0,
+        "7": 8.3,
+        "8": 32.0,
+        "9": 18.0,
+        "10": 23.0,
+        "11": 21.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-28T19:06:17.068452+01:00",
+      "minutes_avant_depart": 4.721944916666667,
+      "cotes": {
+        "1": 6.8,
+        "2": 4.3,
+        "3": 4.5,
+        "4": 43.0,
+        "5": 6.3,
+        "6": 14.0,
+        "7": 8.2,
+        "8": 31.0,
+        "9": 19.0,
+        "10": 23.0,
         "11": 21.0
       }
     }
