@@ -1,7 +1,7 @@
 {
   "hippodrome": "SAN ISIDRO",
   "type_reunion": "Plat",
-  "date_extraction": "2026-10-28T15:40:48.378527",
+  "date_extraction": "2026-10-28T17:25:55.516400",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/28102026/R7",
   "courses": [
     {
@@ -31,7 +31,7 @@
           "nb_courses": 17,
           "nb_victoires": 5,
           "nb_places": 12,
-          "cote": 4.9,
+          "cote": 6.7,
           "cote_tendance": "",
           "cote_reference": 4.9
         },
@@ -54,7 +54,7 @@
           "nb_courses": 8,
           "nb_victoires": 3,
           "nb_places": 5,
-          "cote": 2.3,
+          "cote": 3.1,
           "cote_tendance": "",
           "cote_reference": 2.3
         },
@@ -77,7 +77,7 @@
           "nb_courses": 19,
           "nb_victoires": 4,
           "nb_places": 12,
-          "cote": 3.3,
+          "cote": 2.7,
           "cote_tendance": "",
           "cote_reference": 3.3
         },
@@ -140,7 +140,7 @@
           "nb_courses": 15,
           "nb_victoires": 6,
           "nb_places": 9,
-          "cote": 4.9,
+          "cote": 6.7,
           "cote_tendance": "",
           "cote_reference": 4.9
         },
@@ -182,9 +182,13 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 5,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 6.7,
+          "cote_tendance": ""
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -195,26 +199,6 @@
       "distance": "1400m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "BALLAD F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: SIXTIES SONG et BAHAMA (EQUAL STRIPES)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261028/SIO/8/20261028-SIO-8-1.png",
-          "propriétaire": "EL TURF",
-          "entraineur": "HUGO MIGUEL PEREZ",
-          "éleveurs": "",
-          "jockey": "CRISTIAN ERNESTO VELAZQUEZ",
-          "poids": "56 kg",
-          "gains": "",
-          "musique": "0p",
-          "valeur": "56.0",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
-        },
         {
           "n°": "2",
           "cheval": "FULL PRIMERA F.PU. 3 a.",
@@ -236,7 +220,7 @@
           "nb_places": 2,
           "cote": 3.9,
           "cote_tendance": "",
-          "cote_reference": 2.7
+          "cote_reference": 2.3
         },
         {
           "n°": "3",
@@ -259,7 +243,7 @@
           "nb_places": 0,
           "cote": 17.0,
           "cote_tendance": "",
-          "cote_reference": 11.0
+          "cote_reference": 10.0
         },
         {
           "n°": "4",
@@ -279,7 +263,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.5,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -342,7 +328,7 @@
           "nb_places": 0,
           "cote": 8.5,
           "cote_tendance": "",
-          "cote_reference": 5.8
+          "cote_reference": 5.0
         },
         {
           "n°": "8",
@@ -385,29 +371,6 @@
           "nb_places": 3
         },
         {
-          "n°": "10",
-          "cheval": "MISS ISADORA F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: STRATEGOS et HEIDY HUSSON (HUSSON)",
-          "corde": "(Corde:10)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261028/SIO/8/20261028-SIO-8-10.png",
-          "propriétaire": "CRIADOR DON MEMO",
-          "entraineur": "JOAQUIN ALEJANDRO PAOLUCCI",
-          "éleveurs": "",
-          "jockey": "JUAN PABLO PAOLONI",
-          "poids": "56 kg",
-          "gains": "33880000",
-          "musique": "5p",
-          "valeur": "56.0",
-          "equipement(s)": "",
-          "nb_courses": 1,
-          "nb_victoires": 0,
-          "nb_places": 1,
-          "cote": 8.5,
-          "cote_tendance": "",
-          "cote_reference": 5.8
-        },
-        {
           "n°": "11",
           "cheval": "MISHIMA F.PU. 3 a.",
           "cheval_url": "",
@@ -428,7 +391,7 @@
           "nb_places": 0,
           "cote": 8.5,
           "cote_tendance": "",
-          "cote_reference": 5.8
+          "cote_reference": 5.0
         },
         {
           "n°": "12",
@@ -535,9 +498,11 @@
           "nb_places": 0,
           "cote": 4.2,
           "cote_tendance": "",
-          "cote_reference": 5.8
+          "cote_reference": 5.0
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -587,7 +552,7 @@
           "nb_courses": 3,
           "nb_victoires": 1,
           "nb_places": 2,
-          "cote": 2.1,
+          "cote": 2.6,
           "cote_tendance": "",
           "cote_reference": 2.1
         },
@@ -610,7 +575,7 @@
           "nb_courses": 2,
           "nb_victoires": 1,
           "nb_places": 1,
-          "cote": 13.0,
+          "cote": 17.0,
           "cote_tendance": "",
           "cote_reference": 13.0
         },
@@ -633,7 +598,7 @@
           "nb_courses": 6,
           "nb_victoires": 1,
           "nb_places": 1,
-          "cote": 3.3,
+          "cote": 4.2,
           "cote_tendance": "",
           "cote_reference": 3.3
         },
@@ -656,7 +621,7 @@
           "nb_courses": 11,
           "nb_victoires": 1,
           "nb_places": 10,
-          "cote": 6.7,
+          "cote": 8.5,
           "cote_tendance": "",
           "cote_reference": 6.7
         },
@@ -679,29 +644,9 @@
           "nb_courses": 6,
           "nb_victoires": 1,
           "nb_places": 4,
-          "cote": 6.7,
+          "cote": 2.8,
           "cote_tendance": "",
           "cote_reference": 6.7
-        },
-        {
-          "n°": "7",
-          "cheval": "MUY BUSCADA F.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: GRAND REWARD et IBI MUY COSTOSA (IBICENCO)",
-          "corde": "(Corde:07)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261028/SIO/9/20261028-SIO-9-7.png",
-          "propriétaire": "MASAMA",
-          "entraineur": "FABIAN OSVALDO DAVID",
-          "éleveurs": "",
-          "jockey": "K.BANEGAS",
-          "poids": "57 kg",
-          "gains": "1055320000",
-          "musique": "0p5p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 9,
-          "nb_victoires": 1,
-          "nb_places": 7
         },
         {
           "n°": "8",
@@ -724,6 +669,8 @@
           "nb_places": 7
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -910,6 +857,8 @@
           "cote_reference": 27.0
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -938,7 +887,9 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 1.8,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -959,7 +910,7 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 2.3,
+          "cote": 6.7,
           "cote_tendance": "",
           "cote_reference": 2.3
         },
@@ -982,7 +933,7 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 3.3,
+          "cote": 9.7,
           "cote_tendance": "",
           "cote_reference": 3.3
         },
@@ -1045,7 +996,7 @@
           "nb_courses": 10,
           "nb_victoires": 0,
           "nb_places": 8,
-          "cote": 4.9,
+          "cote": 7.3,
           "cote_tendance": "",
           "cote_reference": 4.9
         },
@@ -1108,11 +1059,13 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 4.9,
+          "cote": 4.8,
           "cote_tendance": "",
           "cote_reference": 4.9
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     }
   ]
