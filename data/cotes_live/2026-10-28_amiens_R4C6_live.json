@@ -4,71 +4,71 @@
   "reunion": 4,
   "heure_depart": 1793212980000,
   "distance": 1650,
-  "scraped_at": "2026-10-28T19:18:17.043993+01:00",
-  "minutes_avant_depart": 25,
+  "scraped_at": "2026-10-28T19:22:17.075050+01:00",
+  "minutes_avant_depart": 21,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MODERN SPIRIT",
-      "cote_live": 2.4,
+      "cote_live": 2.6,
       "cote_reference": 2.3,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793211481000
+      "timestamp_cote": 1793211723000
     },
     {
       "numPmu": 2,
       "nom": "TAKEO",
-      "cote_live": 17.0,
+      "cote_live": 19.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793211481000
+      "timestamp_cote": 1793211723000
     },
     {
       "numPmu": 4,
       "nom": "LIKETHEWIND",
-      "cote_live": 5.5,
+      "cote_live": 6.1,
       "cote_reference": 5.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793211481000
+      "timestamp_cote": 1793211723000
     },
     {
       "numPmu": 5,
       "nom": "CANET DE SALARS",
-      "cote_live": 6.8,
+      "cote_live": 6.9,
       "cote_reference": 7.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793211481000
+      "timestamp_cote": 1793211723000
     },
     {
       "numPmu": 6,
       "nom": "CEROS GOLD",
-      "cote_live": 22.0,
+      "cote_live": 24.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793211481000
+      "timestamp_cote": 1793211723000
     },
     {
       "numPmu": 7,
       "nom": "LILAS TREZY",
-      "cote_live": 6.5,
+      "cote_live": 4.3,
       "cote_reference": 6.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793211481000
+      "timestamp_cote": 1793211723000
     },
     {
       "numPmu": 8,
       "nom": "LORIA",
-      "cote_live": 7.0,
+      "cote_live": 7.4,
       "cote_reference": 6.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793211481000
+      "timestamp_cote": 1793211723000
     }
   ],
   "hippodrome": "AMIENS",
@@ -97,6 +97,19 @@
         "6": 22.0,
         "7": 6.5,
         "8": 7.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-28T19:22:17.075050+01:00",
+      "minutes_avant_depart": 20.721902866666667,
+      "cotes": {
+        "1": 2.6,
+        "2": 19.0,
+        "4": 6.1,
+        "5": 6.9,
+        "6": 24.0,
+        "7": 4.3,
+        "8": 7.4
       }
     }
   ]
