@@ -4,17 +4,17 @@
   "reunion": 4,
   "heure_depart": 1793214900000,
   "distance": 2900,
-  "scraped_at": "2026-10-28T20:06:57.208848+01:00",
-  "minutes_avant_depart": 8,
+  "scraped_at": "2026-10-28T20:09:37.069421+01:00",
+  "minutes_avant_depart": 5,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ABRONZAL",
-      "cote_live": 4.3,
+      "cote_live": 4.2,
       "cote_reference": 4.2,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793214401000
+      "timestamp_cote": 1793214560000
     },
     {
       "numPmu": 2,
@@ -23,7 +23,7 @@
       "cote_reference": 8.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793214401000
+      "timestamp_cote": 1793214560000
     },
     {
       "numPmu": 3,
@@ -32,25 +32,25 @@
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793214401000
+      "timestamp_cote": 1793214560000
     },
     {
       "numPmu": 4,
       "nom": "TESTANA",
-      "cote_live": 16.0,
+      "cote_live": 17.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793214401000
+      "timestamp_cote": 1793214560000
     },
     {
       "numPmu": 5,
       "nom": "DONNALUCATA",
-      "cote_live": 6.0,
+      "cote_live": 5.9,
       "cote_reference": 7.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793214401000
+      "timestamp_cote": 1793214560000
     },
     {
       "numPmu": 6,
@@ -59,25 +59,25 @@
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793214401000
+      "timestamp_cote": 1793214560000
     },
     {
       "numPmu": 7,
       "nom": "ANNALIGHT",
-      "cote_live": 8.0,
+      "cote_live": 8.3,
       "cote_reference": 7.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793214401000
+      "timestamp_cote": 1793214560000
     },
     {
       "numPmu": 8,
       "nom": "OCTOBRE ROSE",
-      "cote_live": 6.6,
+      "cote_live": 6.5,
       "cote_reference": 7.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793214401000
+      "timestamp_cote": 1793214560000
     },
     {
       "numPmu": 9,
@@ -86,7 +86,7 @@
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793214401000
+      "timestamp_cote": 1793214560000
     },
     {
       "numPmu": 10,
@@ -95,7 +95,7 @@
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793214401000
+      "timestamp_cote": 1793214560000
     },
     {
       "numPmu": 11,
@@ -104,7 +104,7 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793214401000
+      "timestamp_cote": 1793214560000
     }
   ],
   "hippodrome": "AMIENS",
@@ -206,6 +206,23 @@
         "6": 21.0,
         "7": 8.0,
         "8": 6.6,
+        "9": 27.0,
+        "10": 22.0,
+        "11": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-28T20:09:37.069421+01:00",
+      "minutes_avant_depart": 5.388442800000001,
+      "cotes": {
+        "1": 4.2,
+        "2": 7.5,
+        "3": 14.0,
+        "4": 17.0,
+        "5": 5.9,
+        "6": 21.0,
+        "7": 8.3,
+        "8": 6.5,
         "9": 27.0,
         "10": 22.0,
         "11": 13.0
