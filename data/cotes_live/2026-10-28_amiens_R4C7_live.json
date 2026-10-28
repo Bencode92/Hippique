@@ -4,26 +4,26 @@
   "reunion": 4,
   "heure_depart": 1793214900000,
   "distance": 2900,
-  "scraped_at": "2026-10-28T19:53:37.757344+01:00",
-  "minutes_avant_depart": 21,
+  "scraped_at": "2026-10-28T19:58:17.287863+01:00",
+  "minutes_avant_depart": 17,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ABRONZAL",
-      "cote_live": 4.5,
+      "cote_live": 4.3,
       "cote_reference": 4.2,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793213609000
+      "timestamp_cote": 1793213873000
     },
     {
       "numPmu": 2,
       "nom": "EDEN ROC",
-      "cote_live": 6.7,
+      "cote_live": 6.5,
       "cote_reference": 8.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793213609000
+      "timestamp_cote": 1793213873000
     },
     {
       "numPmu": 3,
@@ -32,16 +32,16 @@
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793213609000
+      "timestamp_cote": 1793213873000
     },
     {
       "numPmu": 4,
       "nom": "TESTANA",
-      "cote_live": 18.0,
+      "cote_live": 19.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793213609000
+      "timestamp_cote": 1793213873000
     },
     {
       "numPmu": 5,
@@ -50,7 +50,7 @@
       "cote_reference": 7.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793213609000
+      "timestamp_cote": 1793213873000
     },
     {
       "numPmu": 6,
@@ -59,34 +59,34 @@
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793213609000
+      "timestamp_cote": 1793213873000
     },
     {
       "numPmu": 7,
       "nom": "ANNALIGHT",
-      "cote_live": 7.1,
+      "cote_live": 7.4,
       "cote_reference": 7.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793213609000
+      "timestamp_cote": 1793213873000
     },
     {
       "numPmu": 8,
       "nom": "OCTOBRE ROSE",
-      "cote_live": 7.2,
+      "cote_live": 7.3,
       "cote_reference": 7.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793213609000
+      "timestamp_cote": 1793213873000
     },
     {
       "numPmu": 9,
       "nom": "ZARALADY",
-      "cote_live": 23.0,
+      "cote_live": 24.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793213609000
+      "timestamp_cote": 1793213873000
     },
     {
       "numPmu": 10,
@@ -95,7 +95,7 @@
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793213609000
+      "timestamp_cote": 1793213873000
     },
     {
       "numPmu": 11,
@@ -104,7 +104,7 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793213609000
+      "timestamp_cote": 1793213873000
     }
   ],
   "hippodrome": "AMIENS",
@@ -156,6 +156,23 @@
         "7": 7.1,
         "8": 7.2,
         "9": 23.0,
+        "10": 22.0,
+        "11": 11.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-28T19:58:17.287863+01:00",
+      "minutes_avant_depart": 16.721806983333334,
+      "cotes": {
+        "1": 4.3,
+        "2": 6.5,
+        "3": 15.0,
+        "4": 19.0,
+        "5": 7.1,
+        "6": 18.0,
+        "7": 7.4,
+        "8": 7.3,
+        "9": 24.0,
         "10": 22.0,
         "11": 11.0
       }
