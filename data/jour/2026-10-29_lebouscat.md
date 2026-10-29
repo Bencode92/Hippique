@@ -45,17 +45,17 @@
 
 ### 4. GRAND STEEPLE-CHASE DE BORDEAUX
 
-*14h27 · steeple · 5300 m · 7 partants · cotes à T−1:29*
+*14h27 · steeple · 5300 m · 7 partants · cotes à T−0:09*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 3 | FLANKER | 3,8 | G.RICHARD | 407/380/3546/4856 |
-| 4 | SACRED UNION | 4,2 | Q.DEFONTAINE | –/286/312/1668 |
-| 1 | GRIFFON D'AUBRELLE | 4,5 | E.LABAISSE | 203/635/2335/4099 |
-| 5 | JOYFULL | 7,2 | J.REVELEY | –/168/2257/4724 |
-| 7 | KIROGA | 7,9 | L.ZULIANI | 115/–/–/– |
-| 2 | MALBEC DU MATHAN | 9,6 | G.RE | –/380/2408/– |
-| 6 | SPECIALS ONE | 20 | A.RENARD | 220/277/702/– |
+| 4 | SACRED UNION | 3,6 | Q.DEFONTAINE | –/286/312/1668 |
+| 3 | FLANKER | 3,7 | G.RICHARD | 407/380/3546/4856 |
+| 1 | GRIFFON D'AUBRELLE | 4,9 | E.LABAISSE | 203/635/2335/4099 |
+| 5 | JOYFULL | 7,6 | J.REVELEY | –/168/2257/4724 |
+| 7 | KIROGA | 7,6 | L.ZULIANI | 115/–/–/– |
+| 2 | MALBEC DU MATHAN | 11 | G.RE | –/380/2408/– |
+| 6 | SPECIALS ONE | 23 | A.RENARD | 220/277/702/– |
 
 ### 5. PRIX DE PAUILLAC
 
