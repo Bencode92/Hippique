@@ -1,6 +1,6 @@
 # LE BOUSCAT — 29/10/2026
 
-8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -107,21 +107,21 @@
 
 ### 8. GRANDE COURSE DE HAIES DE BORDEAUX
 
-*16h57 · haies · 3900 m · 14 partants · cotes de l'extraction*
+*16h57 · haies · 3900 m · 14 partants · cotes à T−1:52*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 5 | FUNWAY | 5,8 | J.REVELEY | –/509/4/1510 |
-| 2 | CLARTE DU SOURIRE | 6,2 | L.SALMON | –/380/–/– |
-| 1 | WHYMPER | 7,1 | J.BRYAN | –/453/1284/526 |
-| 8 | LUZERAISE | 11 | L.COLSON | 360/635/1940/– |
-| 12 | GINO'S LINE | 11 | THO .JOURNIAC | 238/328/353/1469 |
-| 13 | PABLO | 12 | L.ZULIANI | 115/255/–/5028 |
-| 3 | ALERIC | 14 | A.GAUTRON | 348/361/413/262 |
-| 10 | LORENZO DU CHENET | 16 | A.ZULIANI | 165/647/251/1162 |
-| 7 | EXUPERY | 17 | Q.DEFONTAINE | –/392/3356/4742 |
-| 6 | BOOPER DU POUEY | 18 | E.LABAISSE | 203/255/2097/3071 |
-| 9 | LE LASCAR | 19 | G.RICHARD | 407/255/3359/910 |
-| 4 | MAGIC FLIGHT | 20 | T.VABOIS | 292/64/14/23 |
-| 14 | SUPER FLAM | 25 | A.RENARD | 220/300/2602/4775 |
-| 11 | DROP | 28 | G.FRADELIN | 183/462/3546/4886 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 5 | FUNWAY | 2,9 | 5,8 | J.REVELEY | –/509/4/1510 |
+| 1 | WHYMPER | 6,7 | 7,1 | J.BRYAN | –/453/1284/526 |
+| 2 | CLARTE DU SOURIRE | 7,3 | 6,2 | L.SALMON | –/380/–/– |
+| 12 | GINO'S LINE | 13 | 11 | THO .JOURNIAC | 238/328/353/1469 |
+| 10 | LORENZO DU CHENET | 15 | 16 | A.ZULIANI | 165/647/251/1162 |
+| 6 | BOOPER DU POUEY | 16 | 18 | E.LABAISSE | 203/255/2097/3071 |
+| 8 | LUZERAISE | 18 | 11 | L.COLSON | 360/635/1940/– |
+| 7 | EXUPERY | 19 | 17 | Q.DEFONTAINE | –/392/3356/4742 |
+| 9 | LE LASCAR | 20 | 19 | G.RICHARD | 407/255/3359/910 |
+| 13 | PABLO | 21 | 12 | L.ZULIANI | 115/255/–/5028 |
+| 3 | ALERIC | 24 | 14 | A.GAUTRON | 348/361/413/262 |
+| 4 | MAGIC FLIGHT | 31 | 20 | T.VABOIS | 292/64/14/23 |
+| 14 | SUPER FLAM | 44 | 25 | A.RENARD | 220/300/2602/4775 |
+| 11 | DROP | 65 | 28 | G.FRADELIN | 183/462/3546/4886 |
