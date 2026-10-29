@@ -1,7 +1,7 @@
 {
   "hippodrome": "CHILE",
   "type_reunion": "Plat",
-  "date_extraction": "2026-10-29T15:45:39.386987",
+  "date_extraction": "2026-10-29T17:34:19.786279",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/29102026/R7",
   "courses": [
     {
@@ -51,7 +51,7 @@
           "nb_courses": 11,
           "nb_victoires": 2,
           "nb_places": 0,
-          "cote": 4.1,
+          "cote": 4.9,
           "cote_tendance": "",
           "cote_reference": 2.5
         },
@@ -73,7 +73,9 @@
           "equipement(s)": "",
           "nb_courses": 118,
           "nb_victoires": 4,
-          "nb_places": 27
+          "nb_places": 27,
+          "cote": 10.0,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -114,7 +116,7 @@
           "nb_courses": 30,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 5.9,
+          "cote": 7.1,
           "cote_tendance": "",
           "cote_reference": 3.6
         },
@@ -137,31 +139,9 @@
           "nb_courses": 98,
           "nb_victoires": 3,
           "nb_places": 28,
-          "cote": 8.9,
+          "cote": 10.0,
           "cote_tendance": "",
           "cote_reference": 5.4
-        },
-        {
-          "n°": "7",
-          "cheval": "TU MI CUNCA F.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: CUNCO et TU MI NEGRITA (SEEKING THE DIA)",
-          "corde": "(Corde:07)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261029/S85/1/20261029-S85-1-7.png",
-          "propriétaire": "CINCAR",
-          "entraineur": "JUAN SILVA SERRANO",
-          "éleveurs": "",
-          "jockey": "FRANCISCO MORALES UBILLA",
-          "poids": "57 kg",
-          "gains": "331920000",
-          "musique": "0p0p0p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 24,
-          "nb_victoires": 1,
-          "nb_places": 4,
-          "cote": 8.9,
-          "cote_tendance": ""
         },
         {
           "n°": "8",
@@ -182,7 +162,7 @@
           "nb_courses": 79,
           "nb_victoires": 5,
           "nb_places": 19,
-          "cote": 8.9,
+          "cote": 10.0,
           "cote_tendance": "",
           "cote_reference": 5.4
         },
@@ -205,7 +185,7 @@
           "nb_courses": 21,
           "nb_victoires": 2,
           "nb_places": 3,
-          "cote": 5.9,
+          "cote": 7.1,
           "cote_tendance": "",
           "cote_reference": 10.0
         },
@@ -268,7 +248,7 @@
           "nb_courses": 9,
           "nb_victoires": 1,
           "nb_places": 0,
-          "cote": 8.9,
+          "cote": 5.3,
           "cote_tendance": ""
         },
         {
@@ -290,7 +270,7 @@
           "nb_courses": 199,
           "nb_victoires": 12,
           "nb_places": 41,
-          "cote": 8.9,
+          "cote": 10.0,
           "cote_tendance": ""
         },
         {
@@ -311,10 +291,14 @@
           "equipement(s)": "",
           "nb_courses": 105,
           "nb_victoires": 6,
-          "nb_places": 25
+          "nb_places": 25,
+          "cote": 10.0,
+          "cote_tendance": ""
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -364,9 +348,9 @@
           "nb_courses": 43,
           "nb_victoires": 2,
           "nb_places": 11,
-          "cote": 3.3,
+          "cote": 3.1,
           "cote_tendance": "",
-          "cote_reference": 3.3
+          "cote_reference": 3.1
         },
         {
           "n°": "3",
@@ -427,9 +411,9 @@
           "nb_courses": 85,
           "nb_victoires": 2,
           "nb_places": 18,
-          "cote": 2.0,
+          "cote": 1.9,
           "cote_tendance": "",
-          "cote_reference": 2.0
+          "cote_reference": 1.9
         },
         {
           "n°": "6",
@@ -450,9 +434,9 @@
           "nb_courses": 203,
           "nb_victoires": 7,
           "nb_places": 45,
-          "cote": 7.1,
+          "cote": 6.7,
           "cote_tendance": "",
-          "cote_reference": 7.1
+          "cote_reference": 6.7
         },
         {
           "n°": "7",
@@ -553,9 +537,9 @@
           "nb_courses": 63,
           "nb_victoires": 3,
           "nb_places": 16,
-          "cote": 7.1,
+          "cote": 6.7,
           "cote_tendance": "",
-          "cote_reference": 7.1
+          "cote_reference": 6.7
         },
         {
           "n°": "12",
@@ -576,29 +560,6 @@
           "nb_courses": 38,
           "nb_victoires": 4,
           "nb_places": 11
-        },
-        {
-          "n°": "13",
-          "cheval": "ASTRO SOL H.PU. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: GOOD SAMARITAN et GOLDEN RIDE (CANDY RIDE)",
-          "corde": "(Corde:13)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261029/S85/2/20261029-S85-2-13.png",
-          "propriétaire": "RAFAEL QUIROZ F.",
-          "entraineur": "RAFAEL QUIROZ FERRARI",
-          "éleveurs": "",
-          "jockey": "BENJAMIN  SANCHO",
-          "poids": "55 kg",
-          "gains": "1654020000",
-          "musique": "5p2p3p",
-          "valeur": "55.0",
-          "equipement(s)": "",
-          "nb_courses": 99,
-          "nb_victoires": 5,
-          "nb_places": 24,
-          "cote": 14.0,
-          "cote_tendance": "",
-          "cote_reference": 14.0
         },
         {
           "n°": "14",
@@ -642,6 +603,8 @@
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -889,6 +852,8 @@
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1200,6 +1165,8 @@
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1249,7 +1216,7 @@
           "nb_courses": 79,
           "nb_victoires": 8,
           "nb_places": 24,
-          "cote": 5.3,
+          "cote": 5.7,
           "cote_tendance": "",
           "cote_reference": 4.5
         },
@@ -1272,7 +1239,7 @@
           "nb_courses": 11,
           "nb_victoires": 2,
           "nb_places": 5,
-          "cote": 7.7,
+          "cote": 4.9,
           "cote_tendance": "",
           "cote_reference": 19.0
         },
@@ -1315,7 +1282,7 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 4.6,
+          "cote": 4.9,
           "cote_tendance": "",
           "cote_reference": 6.5
         },
@@ -1338,7 +1305,7 @@
           "nb_courses": 109,
           "nb_victoires": 8,
           "nb_places": 27,
-          "cote": 5.8,
+          "cote": 6.2,
           "cote_tendance": "",
           "cote_reference": 4.9
         },
@@ -1381,7 +1348,7 @@
           "nb_courses": 18,
           "nb_victoires": 4,
           "nb_places": 4,
-          "cote": 3.8,
+          "cote": 4.1,
           "cote_tendance": "",
           "cote_reference": 3.2
         },
@@ -1424,7 +1391,7 @@
           "nb_courses": 44,
           "nb_victoires": 2,
           "nb_places": 23,
-          "cote": 11.0,
+          "cote": 12.0,
           "cote_tendance": "",
           "cote_reference": 9.8
         },
@@ -1487,7 +1454,7 @@
           "nb_courses": 23,
           "nb_victoires": 2,
           "nb_places": 6,
-          "cote": 11.0,
+          "cote": 12.0,
           "cote_tendance": "",
           "cote_reference": 9.8
         },
@@ -1513,6 +1480,8 @@
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1542,7 +1511,7 @@
           "nb_courses": 58,
           "nb_victoires": 6,
           "nb_places": 18,
-          "cote": 29.0,
+          "cote": 31.0,
           "cote_tendance": "",
           "cote_reference": 29.0
         },
@@ -1565,7 +1534,7 @@
           "nb_courses": 8,
           "nb_victoires": 2,
           "nb_places": 1,
-          "cote": 4.6,
+          "cote": 3.7,
           "cote_tendance": "",
           "cote_reference": 4.6
         },
@@ -1628,7 +1597,7 @@
           "nb_courses": 8,
           "nb_victoires": 2,
           "nb_places": 4,
-          "cote": 9.7,
+          "cote": 10.0,
           "cote_tendance": "",
           "cote_reference": 9.7
         },
@@ -1651,7 +1620,7 @@
           "nb_courses": 10,
           "nb_victoires": 1,
           "nb_places": 4,
-          "cote": 14.0,
+          "cote": 15.0,
           "cote_tendance": "",
           "cote_reference": 14.0
         },
@@ -1714,7 +1683,7 @@
           "nb_courses": 55,
           "nb_victoires": 6,
           "nb_places": 16,
-          "cote": 9.7,
+          "cote": 10.0,
           "cote_tendance": "",
           "cote_reference": 9.7
         },
@@ -1757,7 +1726,7 @@
           "nb_courses": 55,
           "nb_victoires": 6,
           "nb_places": 13,
-          "cote": 14.0,
+          "cote": 15.0,
           "cote_tendance": "",
           "cote_reference": 14.0
         },
@@ -1820,12 +1789,14 @@
           "nb_courses": 10,
           "nb_victoires": 2,
           "nb_places": 3,
-          "cote": 1.8,
+          "cote": 1.9,
           "cote_tendance": "",
           "cote_reference": 1.8
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     }
   ]
