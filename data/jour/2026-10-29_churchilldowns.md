@@ -12,11 +12,11 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | BEMIS | 1,8 | F ARRIETA | –/–/–/– |
-| 6 | BRIGHT SKITTLE | 4,5 | J ALVARADO | –/–/–/2736 |
-| 2 | CIRCLE ME | 5,7 | C A TORRES | –/–/–/– |
-| 5 | DARK FORCE | 7,2 | L SAEZ | –/–/–/– |
-| 4 | QUENTIN B | 18 | G CORRALES | –/–/–/2228 |
+| 1 | BEMIS | 1,6 | F ARRIETA | –/–/–/– |
+| 6 | BRIGHT SKITTLE | 5,2 | J ALVARADO | –/–/–/2736 |
+| 2 | CIRCLE ME | 6,2 | C A TORRES | –/–/–/– |
+| 5 | DARK FORCE | 10 | L SAEZ | –/–/–/– |
+| 4 | QUENTIN B | 13 | G CORRALES | –/–/–/2228 |
 | 3 | MR. TALLYMON | – | M FERNANDEZ | –/–/–/– |
 
 ### 2. CLAIMING 1200
@@ -25,27 +25,26 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 2 | SWIFTWIND | 1,6 | E ASMUSSEN |
-| 6 | TAQDEER | 3,4 | T GAFFALIONE |
-| 5 | SPENCERIAN | 6,8 | B CURTIS |
-| 4 | MARGOINABUBBLEBATH | 10 | A CONCEPCION |
+| 2 | SWIFTWIND | 1,5 | E ASMUSSEN |
+| 6 | TAQDEER | 4,3 | T GAFFALIONE |
+| 5 | SPENCERIAN | 5,1 | B CURTIS |
+| 4 | MARGOINABUBBLEBATH | 12 | A CONCEPCION |
 | 1 | MUSICAL PRAYER | – | K J ASMUSSEN |
 | 3 | UP THE CREEK | – | F ARRIETA |
 
 ### 3. ALLOWANCE 1000
 
-*19h58 · plat · 1000 m · 8 partants · cotes de l'extraction*
+*19h58 · plat · 1000 m · 7 partants · cotes de l'extraction*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 6 | RUIVA | 1,4 | I ORTIZ, JR. | –/478/–/– |
-| 2 | SKEPTICISM | 2,7 | L SAEZ | –/–/–/– |
-| 5 | ALLURA | 11 | T GAFFALIONE | –/–/–/– |
-| 1 | INTO MUSIC | – | F H DA SILVA | –/–/–/– |
-| 3 | TRIM CASTLE | – | E MORALES | –/–/–/– |
-| 4 | NESSY | – | G CORRALES | –/–/–/– |
-| 7 | REZA | – | J L ORTIZ | –/–/–/– |
-| 8 | CACTUS CLOSER | – | J ALVARADO | –/–/–/– |
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 2 | SKEPTICISM | 2,1 | L SAEZ |
+| 7 | REZA | 3,3 | J L ORTIZ |
+| 5 | ALLURA | 4,5 | T GAFFALIONE |
+| 8 | CACTUS CLOSER | 6,7 | J ALVARADO |
+| 1 | INTO MUSIC | – | F H DA SILVA |
+| 3 | TRIM CASTLE | – | E MORALES |
+| 4 | NESSY | – | G CORRALES |
 
 ### 4. CLAIMING 1700
 
@@ -53,13 +52,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 3 | QUINN'S PROMISE | 1,1 | L SAEZ |
-| 4 | MUSTANG LADY | 11 | K J ASMUSSEN |
-| 2 | WATERSHED MOMENT | 17 | R BEJARANO |
-| 1 | FRENCH MISTRESS | 36 | J A TORRES |
-| 6 | BAMTWENTYKLATER | 36 | S PAULY |
-| 7 | GETTING AFTER IT | 36 | F ARRIETA |
-| 5 | WILL BELIEVE | 73 | J LOVEBERRY |
+| 3 | QUINN'S PROMISE | 1,3 | L SAEZ |
+| 2 | WATERSHED MOMENT | 8,3 | R BEJARANO |
+| 4 | MUSTANG LADY | 13 | K J ASMUSSEN |
+| 5 | WILL BELIEVE | 17 | J LOVEBERRY |
+| 1 | FRENCH MISTRESS | 21 | J A TORRES |
+| 7 | GETTING AFTER IT | 21 | F ARRIETA |
+| 6 | BAMTWENTYKLATER | 43 | S PAULY |
 
 ### 5. MAIDEN CLAIMING 1600
 
@@ -85,32 +84,31 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 2 | MARCINKOWSKI | 2,3 | L SAEZ |
-| 4 | PASEO | 2,4 | B J HERNANDEZ, JR. |
-| 1 | STRUCK AT MIDNIGHT | 4,9 | J L ORTIZ |
-| 5 | HEART SPIN | 9,9 | W A RODRIGUEZ |
+| 4 | PASEO | 2,2 | B J HERNANDEZ, JR. |
+| 2 | MARCINKOWSKI | 3,1 | L SAEZ |
+| 1 | STRUCK AT MIDNIGHT | 6,7 | J L ORTIZ |
+| 6 | CHARM OF VENICE | 6,7 | T GAFFALIONE |
+| 5 | HEART SPIN | 13 | W A RODRIGUEZ |
 | 3 | ONEHOTMESS | – | I ORTIZ, JR. |
-| 6 | CHARM OF VENICE | – | T GAFFALIONE |
 | 7 | RING RIGHTS | – | S PAULY |
 
 ### 7. CLAIMING 1200
 
-*21h55 · plat · 1200 m · 8 partants · cotes de l'extraction*
+*21h55 · plat · 1200 m · 7 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
 | 2 | WHITE WHALE | 1,8 | B J HERNANDEZ, JR. | –/–/–/– |
 | 3 | GUARDIAN | 2,9 | T GAFFALIONE | –/–/–/– |
-| 6 | TROUBLE AHEAD | 5,8 | F ARRIETA | –/–/–/– |
+| 7 | COLONEL COMPTON | 5,8 | E MORALES | –/–/–/– |
 | 5 | HESPER | 11 | D CANNON | –/–/–/– |
 | 1 | MALEVAJE | – | J MEZA | –/–/–/– |
 | 4 | STAY FOR THE BOOM | – | L SAEZ | –/–/–/– |
-| 7 | COLONEL COMPTON | – | E MORALES | –/–/–/– |
 | 8 | DR FENN | – | D SHEEHY | –/–/–/– |
 
 ### 8. MAIDEN SPECIAL WEIGHT 1400
 
-*22h25 · plat · 1400 m · 12 partants · cotes de l'extraction*
+*22h25 · plat · 1400 m · 10 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -119,9 +117,7 @@
 | 5 | NOMOLIMBO | 12 | F ARRIETA |
 | 1 | COWBOYS TIME | – | T GAFFALIONE |
 | 4 | BEIJING | – | R BEJARANO |
-| 6 | MAGIC MOOSE | – | A CEDILLO |
 | 7 | MOJACAR | – | J L ORTIZ |
-| 8 | NAVIGATE | – | D SHEEHY |
 | 9 | HAPPY MISCHIEF | – | B J HERNANDEZ, JR. |
 | 10 | ALWORTH | – | L SAEZ |
 | 11 | STELVIO PASS | – | L MACHADO |
@@ -129,7 +125,7 @@
 
 ### 9. ALLOWANCE OPTIONAL CLAIMING 1100
 
-*22h55 · plat · 1100 m · 8 partants · cotes de l'extraction*
+*22h55 · plat · 1100 m · 7 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -138,13 +134,12 @@
 | 6 | EMOJI | 5,5 | E MORALES |
 | 7 | MOBULA | 5,5 | J L ORTIZ |
 | 8 | GRADE A | 5,5 | J ROSADO |
-| 4 | WISCONSIN GAL | 11 | I ORTIZ, JR. |
-| 5 | DREAM ON STORMY | 22 | R BEJARANO |
+| 5 | DREAM ON STORMY | 7,4 | R BEJARANO |
 | 1 | SPRING DANCER | – | F ARRIETA |
 
 ### 10. MAIDEN CLAIMING 1200
 
-*23h24 · plat · 1200 m · 16 partants · cotes de l'extraction*
+*23h24 · plat · 1200 m · 15 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -162,5 +157,4 @@
 | 12 | WAVEFRONT | – | J L ORTIZ |
 | 13 | MAJOR MACK | – | RESEVISTE 1 |
 | 14 | PICK A SWITCH | – | RESEVISTE 2 |
-| 15 | MELODY MAN | – | RESEVISTE 3 |
 | 16 | CRAZY DIAMOND | – | RESEVISTE 4 |
