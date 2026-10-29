@@ -1,0 +1,90 @@
+{
+  "course": "PRIX DU MASSIF FORESTIER",
+  "numero": 6,
+  "reunion": 2,
+  "heure_depart": 1793277780000,
+  "distance": 3550,
+  "scraped_at": "2026-10-29T13:14:51.225907+01:00",
+  "minutes_avant_depart": 28,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "METRONOMY",
+      "cote_live": 4.9,
+      "cote_reference": 5.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1793276071000
+    },
+    {
+      "numPmu": 2,
+      "nom": "HEART AND SOUL",
+      "cote_live": 4.3,
+      "cote_reference": 4.3,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1793276071000
+    },
+    {
+      "numPmu": 3,
+      "nom": "GYPSE",
+      "cote_live": 14.0,
+      "cote_reference": 14.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1793276071000
+    },
+    {
+      "numPmu": 4,
+      "nom": "JUMBALAYA",
+      "cote_live": 7.9,
+      "cote_reference": 7.8,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1793276071000
+    },
+    {
+      "numPmu": 5,
+      "nom": "VENETIAN BEAUTY",
+      "cote_live": 2.3,
+      "cote_reference": 2.3,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1793276071000
+    },
+    {
+      "numPmu": 6,
+      "nom": "KADA LATROBE",
+      "cote_live": 29.0,
+      "cote_reference": 29.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1793276071000
+    },
+    {
+      "numPmu": 7,
+      "nom": "MAKANI DU FENOIR",
+      "cote_live": 19.0,
+      "cote_reference": 19.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1793276071000
+    }
+  ],
+  "hippodrome": "FONTAINEBLEAU",
+  "releves": [
+    {
+      "scraped_at": "2026-10-29T13:14:51.225907+01:00",
+      "minutes_avant_depart": 28.154008649999998,
+      "cotes": {
+        "1": 4.9,
+        "2": 4.3,
+        "3": 14.0,
+        "4": 7.9,
+        "5": 2.3,
+        "6": 29.0,
+        "7": 19.0
+      }
+    }
+  ]
+}
