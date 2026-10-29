@@ -4,71 +4,71 @@
   "reunion": 3,
   "heure_depart": 1793276940000,
   "distance": 5300,
-  "scraped_at": "2026-10-29T13:19:30.960690+01:00",
-  "minutes_avant_depart": 9,
+  "scraped_at": "2026-10-29T13:24:50.912403+01:00",
+  "minutes_avant_depart": 4,
   "participants": [
     {
       "numPmu": 1,
       "nom": "GRIFFON D'AUBRELLE",
-      "cote_live": 6.0,
+      "cote_live": 4.4,
       "cote_reference": 5.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793276356000
+      "timestamp_cote": 1793276686000
     },
     {
       "numPmu": 2,
       "nom": "MALBEC DU MATHAN",
-      "cote_live": 6.3,
+      "cote_live": 8.8,
       "cote_reference": 3.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793276356000
+      "timestamp_cote": 1793276686000
     },
     {
       "numPmu": 3,
       "nom": "FLANKER",
-      "cote_live": 5.7,
+      "cote_live": 6.0,
       "cote_reference": 3.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793276356000
+      "timestamp_cote": 1793276686000
     },
     {
       "numPmu": 4,
       "nom": "SACRED UNION",
-      "cote_live": 2.5,
+      "cote_live": 3.2,
       "cote_reference": 5.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793276356000
+      "timestamp_cote": 1793276686000
     },
     {
       "numPmu": 5,
       "nom": "JOYFULL",
-      "cote_live": 8.7,
+      "cote_live": 7.7,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793276356000
+      "timestamp_cote": 1793276686000
     },
     {
       "numPmu": 6,
       "nom": "SPECIALS ONE",
-      "cote_live": 23.0,
+      "cote_live": 17.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793276356000
+      "timestamp_cote": 1793276686000
     },
     {
       "numPmu": 7,
       "nom": "KIROGA",
-      "cote_live": 11.0,
+      "cote_live": 7.3,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793276356000
+      "timestamp_cote": 1793276686000
     }
   ],
   "hippodrome": "LE BOUSCAT",
@@ -97,6 +97,45 @@
         "5": 8.7,
         "6": 23.0,
         "7": 11.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-29T13:23:31.095344+01:00",
+      "minutes_avant_depart": 5.493246,
+      "cotes": {
+        "1": 5.0,
+        "2": 7.8,
+        "3": 5.5,
+        "4": 3.0,
+        "5": 8.1,
+        "6": 22.0,
+        "7": 7.5
+      }
+    },
+    {
+      "scraped_at": "2026-10-29T13:24:10.786191+01:00",
+      "minutes_avant_depart": 4.82657725,
+      "cotes": {
+        "1": 4.9,
+        "2": 8.0,
+        "3": 5.6,
+        "4": 3.1,
+        "5": 7.6,
+        "6": 20.0,
+        "7": 7.5
+      }
+    },
+    {
+      "scraped_at": "2026-10-29T13:24:50.912403+01:00",
+      "minutes_avant_depart": 4.1539488,
+      "cotes": {
+        "1": 4.4,
+        "2": 8.8,
+        "3": 6.0,
+        "4": 3.2,
+        "5": 7.7,
+        "6": 17.0,
+        "7": 7.3
       }
     }
   ]
