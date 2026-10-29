@@ -1,31 +1,31 @@
 # VINCENNES — 29/10/2026
 
-8 courses.
+8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
 ### 1. PRIX DES CEVENNES
 
-*14h55 · attelé · 2850 m · 14 partants · cotes de l'extraction*
+*14h57 · attelé · 2850 m · 14 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KARAMBAR | – | A. ABRIVARD |
-| 2 | HUBBLE DU VIVIER | – | Mme T. MATHIAS-MAISONNETTE |
-| 3 | JINGLE DU PONT | – | N. BAZIRE |
-| 4 | HARMONY DU RABUTIN | – | D. BONNE |
-| 5 | HULYSSE DIGEO | – | J.W. HALLAIS |
-| 6 | JUSTIN BOLD | – | P.Y. VERVA |
-| 7 | HANNIBAL TUILERIE | – | G. LENAIN |
-| 8 | JABALPUR | – | E. RAFFIN |
-| 9 | KAPAULA DE L'EPINE | – | J.G. VAN EECKHAUTE |
-| 10 | HARLEY GEMA | – | B. ROCHARD |
-| 11 | HORCHESTRO | – | D. BEKAERT |
-| 12 | KRACK TIME ATOUT | – | F. NIVARD |
-| 13 | IGUSKI SAUTONNE | – | J.ET. ABRIVARD |
-| 14 | INMAROSA | – | LEO ABRIVARD |
+| 3 | JINGLE DU PONT | 3,7 | N. BAZIRE |
+| 12 | KRACK TIME ATOUT | 4,1 | F. NIVARD |
+| 14 | INMAROSA | 7,2 | LEO ABRIVARD |
+| 8 | JABALPUR | 8,2 | E. RAFFIN |
+| 11 | HORCHESTRO | 14 | D. BEKAERT |
+| 5 | HULYSSE DIGEO | 16 | J.W. HALLAIS |
+| 10 | HARLEY GEMA | 18 | B. ROCHARD |
+| 1 | KARAMBAR | 20 | A. ABRIVARD |
+| 4 | HARMONY DU RABUTIN | 33 | D. BONNE |
+| 13 | IGUSKI SAUTONNE | 62 | J.ET. ABRIVARD |
+| 7 | HANNIBAL TUILERIE | 64 | G. LENAIN |
+| 2 | HUBBLE DU VIVIER | 66 | Mme T. MATHIAS-MAISONNETTE |
+| 6 | JUSTIN BOLD | 107 | P.Y. VERVA |
+| 9 | KAPAULA DE L'EPINE | 143 | J.G. VAN EECKHAUTE |
 
 ### 2. PRIX DE FOUILLOY
 
@@ -33,21 +33,21 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | NEW DELHI HAUFOR | – | CH.J. BIGEON |
-| 2 | NOVA JOSSELYN | – | N. BAZIRE |
-| 3 | NAOMI DE LA VALLEE | – | A. MARIE |
-| 4 | NUANCE DE STAR | – | A. DABOUIS |
-| 5 | NORIEGA | – | B. ROCHARD |
-| 6 | NEBELINE LEMAN | – | A. TRINQUART |
-| 7 | NEW FAIRY | – | A. ABRIVARD |
-| 8 | NESTA DE VANDEL | – | A. COLLETTE |
-| 9 | NEWMARKET | – | E. RAFFIN |
-| 10 | NEW GIRL DU CHENE | – | P.PH. PLOQUIN |
-| 11 | NESSENCE | – | P.Y. VERVA |
-| 12 | NIMOSA | – | A. THOMAS |
-| 13 | NACRE GLAM | – | H. SIONNEAU |
-| 14 | NOUMEA DES FLOTS | – | D. BEKAERT |
-| 15 | NOOR DE MONCHEL | – | F. OUVRIE |
+| 7 | NEW FAIRY | 4,7 | A. ABRIVARD |
+| 5 | NORIEGA | 5,3 | B. ROCHARD |
+| 2 | NOVA JOSSELYN | 5,5 | N. BAZIRE |
+| 9 | NEWMARKET | 7,3 | E. RAFFIN |
+| 1 | NEW DELHI HAUFOR | 7,8 | CH.J. BIGEON |
+| 8 | NESTA DE VANDEL | 15 | A. COLLETTE |
+| 10 | NEW GIRL DU CHENE | 16 | P.PH. PLOQUIN |
+| 11 | NESSENCE | 25 | P.Y. VERVA |
+| 15 | NOOR DE MONCHEL | 39 | F. OUVRIE |
+| 12 | NIMOSA | 41 | A. THOMAS |
+| 13 | NACRE GLAM | 44 | H. SIONNEAU |
+| 14 | NOUMEA DES FLOTS | 52 | D. BEKAERT |
+| 3 | NAOMI DE LA VALLEE | 69 | A. MARIE |
+| 4 | NUANCE DE STAR | 101 | A. DABOUIS |
+| 6 | NEBELINE LEMAN | 101 | A. TRINQUART |
 
 ### 3. PRIX D'EMBRUN
 
@@ -55,18 +55,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MANNINEN SEVEN | – | N. BAZIRE |
-| 2 | MARCUS BERRY | – | F. OUVRIE |
-| 3 | MOZART DU DOLLAR | – | P.PH. PLOQUIN |
-| 4 | MY DREAM | – | E. RAFFIN |
-| 5 | MADISON SEVEN | – | J.M. BAZIRE |
-| 6 | MAESTRO VET | – | B. LE BELLER |
-| 7 | MAESTRO JAMINI | – | D. BONNE |
-| 8 | MAGIC JOHN | – | P.Y. VERVA |
-| 9 | MANY DREAMS | – | A. COLLETTE |
-| 10 | MATADOR | – | THEO DUVALDESTIN |
-| 11 | MILAN DU BOSQUET | – | A. BARRIER |
-| 12 | MAESTRO DU CHOQUEL | – | B. ROCHARD |
+| 5 | MADISON SEVEN | 2,2 | J.M. BAZIRE |
+| 10 | MATADOR | 5,2 | THEO DUVALDESTIN |
+| 11 | MILAN DU BOSQUET | 6,2 | A. BARRIER |
+| 8 | MAGIC JOHN | 16 | P.Y. VERVA |
+| 4 | MY DREAM | 17 | E. RAFFIN |
+| 6 | MAESTRO VET | 17 | B. LE BELLER |
+| 7 | MAESTRO JAMINI | 22 | D. BONNE |
+| 3 | MOZART DU DOLLAR | 26 | P.PH. PLOQUIN |
+| 9 | MANY DREAMS | 33 | A. COLLETTE |
+| 12 | MAESTRO DU CHOQUEL | 35 | B. ROCHARD |
+| 2 | MARCUS BERRY | 77 | F. OUVRIE |
+| 1 | MANNINEN SEVEN | 224 | N. BAZIRE |
 
 ### 4. PRIX D'AUBAGNE
 
@@ -74,18 +74,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | NEW SPIRIT | – | J. DUBOIS |
-| 2 | NEW DOLLAR | – | THEO DUVALDESTIN |
-| 3 | NOBLE SUPREME | – | M. MOTTIER |
-| 4 | NAPOLEON AS | – | J.M. BAZIRE |
-| 5 | NEW LOOK SENOVILLE | – | J.ET. ABRIVARD |
-| 6 | NICOLO DE FELLIERE | – | A. BARRIER |
-| 7 | NUNCHI | – | K. CHAMPENOIS |
-| 8 | NICKY DU VERGER | – | A. LELODET |
-| 9 | NOUGAYORQUE | – | A. COLLETTE |
-| 10 | NAMOUR DAB | – | D. BONNE |
-| 11 | NICKEL DU GOUTIER | – | E. RAFFIN |
-| 12 | NOBEL DE PAIL | – | E. DE JESUS |
+| 2 | NEW DOLLAR | 2,5 | THEO DUVALDESTIN |
+| 4 | NAPOLEON AS | 6,9 | J.M. BAZIRE |
+| 7 | NUNCHI | 9,3 | K. CHAMPENOIS |
+| 3 | NOBLE SUPREME | 9,8 | M. MOTTIER |
+| 11 | NICKEL DU GOUTIER | 12 | E. RAFFIN |
+| 12 | NOBEL DE PAIL | 12 | E. DE JESUS |
+| 6 | NICOLO DE FELLIERE | 15 | A. BARRIER |
+| 9 | NOUGAYORQUE | 16 | A. COLLETTE |
+| 5 | NEW LOOK SENOVILLE | 26 | J.ET. ABRIVARD |
+| 10 | NAMOUR DAB | 34 | D. BONNE |
+| 8 | NICKY DU VERGER | 39 | A. LELODET |
+| 1 | NEW SPIRIT | 53 | J. DUBOIS |
 
 ### 5. PRIX D'AVESNES
 
@@ -93,18 +93,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | TREND | – | Mlle E. BOUCLET |
-| 2 | OLIVER SCHERMER | – | P.PH. PLOQUIN |
-| 3 | LEMPICKA SEPT | – | A. BARRIER |
-| 4 | LEDETROIT CHENOU | – | B. ROCHARD |
-| 5 | KINGSTON | – | M. MOTTIER |
-| 6 | MISTER LION | – | TH. ROULLIER |
-| 7 | LITTLE DAIDOU | – | D. BONNE |
-| 8 | LOOKING D'AURCY | – | A. ABRIVARD |
-| 9 | LUNGA DES BROUSSES | – | A. COLLETTE |
-| 10 | LILOU D'ATOUT | – | Mme CLARA DERSOIR |
-| 11 | LUKAS D'OLIVERIE | – | A. LAMY |
-| 12 | LELIA FRANCE | – | S.E. PASQUIER |
+| 8 | LOOKING D'AURCY | 2 | A. ABRIVARD |
+| 5 | KINGSTON | 7 | M. MOTTIER |
+| 11 | LUKAS D'OLIVERIE | 8,5 | A. LAMY |
+| 4 | LEDETROIT CHENOU | 9,3 | B. ROCHARD |
+| 2 | OLIVER SCHERMER | 11 | P.PH. PLOQUIN |
+| 3 | LEMPICKA SEPT | 19 | A. BARRIER |
+| 10 | LILOU D'ATOUT | 22 | Mme CLARA DERSOIR |
+| 9 | LUNGA DES BROUSSES | 35 | A. COLLETTE |
+| 12 | LELIA FRANCE | 35 | S.E. PASQUIER |
+| 7 | LITTLE DAIDOU | 45 | D. BONNE |
+| 1 | TREND | 93 | Mlle E. BOUCLET |
+| 6 | MISTER LION | 109 | TH. ROULLIER |
 
 ### 6. PRIX DU DORAT
 
@@ -112,20 +112,20 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KERALDO | – | P.Y. VERVA |
-| 2 | KOALA BLUE | – | M. MOTTIER |
-| 3 | KALITA D'HENINEL | – | J.G. VAN EECKHAUTE |
-| 4 | KEY LADY | – | G. JUNOD |
-| 5 | KNOCKONWOOD | – | R. LAMY |
-| 6 | KOMPANY VINCENT | – | CH. MARTENS |
-| 7 | KESITO D'URVILLE | – | Y. LEBOURGEOIS |
-| 8 | KENO PETTEVINIERE | – | F. OUVRIE |
-| 9 | KROONER D'HERIPRE | – | A.A. BOULARD |
-| 10 | KOUFRA IRIS'EYES | – | A. COLLETTE |
-| 11 | KIKA JOSSELYN | – | B. ROCHARD |
-| 12 | KANO | – | E. RAFFIN |
-| 13 | KISS ME HONEY | – | L. BAUDOUIN |
-| 14 | KEMIA DU CHENE | – | P.PH. PLOQUIN |
+| 11 | KIKA JOSSELYN | 3,5 | B. ROCHARD |
+| 6 | KOMPANY VINCENT | 4,5 | CH. MARTENS |
+| 14 | KEMIA DU CHENE | 6,5 | P.PH. PLOQUIN |
+| 7 | KESITO D'URVILLE | 8,4 | Y. LEBOURGEOIS |
+| 12 | KANO | 8,8 | E. RAFFIN |
+| 10 | KOUFRA IRIS'EYES | 12 | A. COLLETTE |
+| 5 | KNOCKONWOOD | 17 | R. LAMY |
+| 13 | KISS ME HONEY | 26 | L. BAUDOUIN |
+| 2 | KOALA BLUE | 37 | M. MOTTIER |
+| 1 | KERALDO | 65 | P.Y. VERVA |
+| 8 | KENO PETTEVINIERE | 98 | F. OUVRIE |
+| 9 | KROONER D'HERIPRE | 121 | A.A. BOULARD |
+| 4 | KEY LADY | 131 | G. JUNOD |
+| 3 | KALITA D'HENINEL | 175 | J.G. VAN EECKHAUTE |
 
 ### 7. PRIX D'AMIENS
 
@@ -133,24 +133,24 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | LILIUS DE GUEZ | – | N. BAZIRE |
-| 2 | LEADER BOY | – | Y. DREUX |
-| 3 | LEXINGTON DANICA | – | A. BESCHER |
-| 4 | LE METEQUE | – | D. BONNE |
-| 5 | LE BIEF | – | A. BARRIER |
-| 6 | LAST DES BROUSSES | – | F. GUERINEAU |
-| 7 | LE LAUREAT DU PARC | – | CH. MARTENS |
-| 8 | LETIKALIN | – | F. NIVARD |
-| 9 | LOCO FLIGNY | – | A. COLLETTE |
-| 10 | LOOK MESLOIS | – | M. MOTTIER |
-| 11 | LIQUIDATEUR | – | A. ABRIVARD |
-| 12 | LORD DE BRION | – | P.PH. PLOQUIN |
-| 13 | LOUISON | – | E. RAFFIN |
-| 14 | LEVEL ONE SYGA | – | A. LAURENT |
-| 15 | LOYAL DU CHOQUEL | – | B. ROCHARD |
-| 16 | LE BOLIDE | – | A. MARIE |
-| 17 | LIKE MESLOIS | – | F. OUVRIE |
-| 18 | LEXCELLENT DU METZ | – | Y. LEBOURGEOIS |
+| 14 | LEVEL ONE SYGA | 5,3 | A. LAURENT |
+| 12 | LORD DE BRION | 5,7 | P.PH. PLOQUIN |
+| 10 | LOOK MESLOIS | 6,7 | M. MOTTIER |
+| 15 | LOYAL DU CHOQUEL | 10 | B. ROCHARD |
+| 18 | LEXCELLENT DU METZ | 11 | Y. LEBOURGEOIS |
+| 17 | LIKE MESLOIS | 12 | F. OUVRIE |
+| 16 | LE BOLIDE | 13 | A. MARIE |
+| 11 | LIQUIDATEUR | 19 | A. ABRIVARD |
+| 13 | LOUISON | 23 | E. RAFFIN |
+| 4 | LE METEQUE | 29 | D. BONNE |
+| 5 | LE BIEF | 30 | A. BARRIER |
+| 7 | LE LAUREAT DU PARC | 39 | CH. MARTENS |
+| 8 | LETIKALIN | 51 | F. NIVARD |
+| 1 | LILIUS DE GUEZ | 57 | N. BAZIRE |
+| 3 | LEXINGTON DANICA | 57 | A. BESCHER |
+| 2 | LEADER BOY | 64 | Y. DREUX |
+| 6 | LAST DES BROUSSES | 64 | F. GUERINEAU |
+| 9 | LOCO FLIGNY | 69 | A. COLLETTE |
 
 ### 8. PRIX DE SOULAC
 
@@ -158,15 +158,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | JOURNEY OF DREAM | – | A.A. BOULARD |
-| 2 | HIDALGO DE VARENNE | – | E. LELIEVRE |
-| 3 | GOLD D'ECROVILLE | – | M. LEGROS |
-| 4 | IRISH NICE ELGE | – | B. ROCHARD |
-| 5 | JIPET DE CREPIN | – | S. ERNAULT |
-| 6 | INFERNO PIPER | – | S. FERRARA |
-| 7 | JASON | – | M. MOTTIER |
-| 8 | IL VIENT DU LUDE | – | P.PH. PLOQUIN |
-| 9 | JOYCE DELTO | – | A. THOMAS |
-| 10 | HEUREUX DE FLEUR | – | Y. LEBOURGEOIS |
-| 11 | JACOMO BELLO | – | R. LAMY |
-| 12 | ILEO PIERJI | – | A. BARRIER |
+| 5 | JIPET DE CREPIN | 2,5 | S. ERNAULT |
+| 7 | JASON | 6,7 | M. MOTTIER |
+| 9 | JOYCE DELTO | 8,2 | A. THOMAS |
+| 10 | HEUREUX DE FLEUR | 9,5 | Y. LEBOURGEOIS |
+| 11 | JACOMO BELLO | 10 | R. LAMY |
+| 12 | ILEO PIERJI | 11 | A. BARRIER |
+| 4 | IRISH NICE ELGE | 16 | B. ROCHARD |
+| 8 | IL VIENT DU LUDE | 20 | P.PH. PLOQUIN |
+| 3 | GOLD D'ECROVILLE | 22 | M. LEGROS |
+| 2 | HIDALGO DE VARENNE | 87 | E. LELIEVRE |
+| 1 | JOURNEY OF DREAM | 94 | A.A. BOULARD |
+| 6 | INFERNO PIPER | 113 | S. FERRARA |
