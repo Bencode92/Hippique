@@ -41,26 +41,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX D'ESSAY
 
-*14h43 · plat · 1900 m · 16 partants · cotes à T−29:33*
+*14h43 · plat · 1900 m · 16 partants · cotes à T−25:33*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 7 | ZYGFRYD | 6,3 | 5,78 | **+9,1 %** | E.HARDOUIN | 27/214/474/342 |
-| 15 | LA MOMY | 7,2 | 8,06 | -10,6 % | PC.BOUDOT 4e | 8/520/1736/1651 |
-| 5 | DAYAK | 7,6 | 7,39 | **+2,8 %** | A.MADAMET | 10/190/607/2728 |
-| 13 | NOT SO SILLY | 8,6 | 10,51 | -18,1 % | L.BAILS | 77/485/13/1379 |
-| 3 | ZELINA | 9 | 9,77 | -7,8 % | S.PASQUIER | 23/94/1444/424 |
-| 9 | MAESTRO CHOP | 13 | 17,08 | -23,9 % | P.CHEYER | 109/252/6/1377 |
-| 10 | ECLAIR DE VATI | 13 | 17,08 | -23,9 % | D.SANTIAGO | 15/114/599/2026 |
-| 1 | JUST FOR GAB'S | 14 | 18,64 | -24,9 % | C.PACAUT | 48/190/84/3686 |
-| 4 | BECH RIVER | 18 | 22,82 | -21,1 % | A.LE LAY MARTIN | 83/237/7/580 |
-| 12 | PRINCESS LAURA | 18 | 21,88 | -17,7 % | J.LACROIX | 94/141/22/5310 |
-| 8 | SEMEUR | 21 | 29,92 | -29,8 % | H.LEBOUC | 19/114/1284/3928 |
-| 2 | ROXANA OF CECCA | 35 | 46,66 | -25,0 % | G.SIAS | 96/135/370/873 |
-| 11 | PARISIAN BELLE | 35 | 57,54 | -39,2 % | T.TRULLIER | 21/239/867/1358 |
-| 14 | CHONBURI | 43 | 72,31 | -40,5 % | F.LEFEBVRE | 41/699/3714/3349 |
-| 6 | QUI EVIDAMENT QUI | 51 | 73,68 | -30,8 % | X.BERGERON | 70/81/213/38 |
-| 16 | L'HORLOGE | 81 | 104,75 | -22,7 % | A.VILCHIEN | 93/699/7/3349 |
+| 7 | ZYGFRYD | 7 | 6,45 | **+8,5 %** | E.HARDOUIN | 27/214/474/342 |
+| 15 | LA MOMY | 7,5 | 8,39 | -10,6 % | PC.BOUDOT 4e | 8/520/1736/1651 |
+| 5 | DAYAK | 7,8 | 7,56 | **+3,1 %** | A.MADAMET | 10/190/607/2728 |
+| 13 | NOT SO SILLY | 8 | 9,59 | -16,6 % | L.BAILS | 77/485/13/1379 |
+| 3 | ZELINA | 9 | 9,70 | -7,2 % | S.PASQUIER | 23/94/1444/424 |
+| 9 | MAESTRO CHOP | 11 | 13,94 | -21,1 % | P.CHEYER | 109/252/6/1377 |
+| 10 | ECLAIR DE VATI | 12 | 15,45 | -22,3 % | D.SANTIAGO | 15/114/599/2026 |
+| 1 | JUST FOR GAB'S | 16 | 21,66 | -26,1 % | C.PACAUT | 48/190/84/3686 |
+| 4 | BECH RIVER | 19 | 24,14 | -21,3 % | A.LE LAY MARTIN | 83/237/7/580 |
+| 12 | PRINCESS LAURA | 21 | 25,98 | -19,2 % | J.LACROIX | 94/141/22/5310 |
+| 8 | SEMEUR | 23 | 33,02 | -30,3 % | H.LEBOUC | 19/114/1284/3928 |
+| 11 | PARISIAN BELLE | 27 | 42,64 | -36,7 % | T.TRULLIER | 21/239/867/1358 |
+| 2 | ROXANA OF CECCA | 29 | 37,55 | -22,8 % | G.SIAS | 96/135/370/873 |
+| 14 | CHONBURI | 44 | 73,72 | -40,3 % | F.LEFEBVRE | 41/699/3714/3349 |
+| 6 | QUI EVIDAMENT QUI | 53 | 76,35 | -30,6 % | X.BERGERON | 70/81/213/38 |
+| 16 | L'HORLOGE | 80 | 102,82 | -22,2 % | A.VILCHIEN | 93/699/7/3349 |
 
 ### 4. PRIX DE LA ROCQUE
 
