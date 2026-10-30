@@ -117,26 +117,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DU CHATEAU DE BEAUFOSSE
 
-*17h03 · plat · 1900 m · 16 partants · cotes à T−9:06*
+*17h03 · plat · 1900 m · 16 partants · cotes à T−5:06*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 4 | SIN CITY | 6,8 | 6,4 | 6,92 | -1,7 % | J.MOUTARD | 61/94/24/424 |
-| 10 | LADIVA | 8,3 | 11 | 8,86 | -6,3 % | M.FAVRIAUX | 51/285/550/1330 |
-| 3 | BAILEYS ECLAIR | 8,4 | 9,6 | 9,15 | -8,2 % | T.BACHELOT | 16/287/172/385 |
-| 15 | LUCAS TREZY | 10 | 10 | 13,63 | -26,7 % | L.ROUSSEL | 26/26/896/78 |
-| 5 | ESKANDANI | 11 | 15 | 11,46 | -4,1 % | G.TROLLEY DE PREVAUX | 46/81/1227/120 |
-| 14 | AMICIS | 12 | 6,8 | 12,13 | -1,1 % | Y.BARILLE | 82/114/2308/3866 |
-| 7 | GREAT CHARLIE | 14 | 15 | 17,30 | -19,1 % | H.LEBOUC | 19/351/86/633 |
-| 9 | PACO | 14 | 12 | 16,52 | -15,2 % | C.PACAUT | 48/28/7/49 |
-| 1 | INMATE | 15 | 15 | 22,02 | -31,9 % | A.MADAMET | 10/157/844/147 |
-| 13 | MISS PARANO | 15 | 16 | 17,97 | -16,5 % | A.MEROU | 65/437/33/383 |
-| 6 | JOUKOVKA | 16 | 30 | 20,21 | -20,8 % | E.HARDOUIN | 27/214/16/342 |
-| 16 | SPINNING MIST | 25 | 25 | 37,11 | -32,6 % | L.PLOMMEE | 31/114/3081/116 |
-| 2 | ACCORD PARFAIT | 26 | 28 | 30,87 | -15,8 % | I.MENDIZABAL | 32/431/242/986 |
-| 8 | GALILEE DREAM | 30 | 28 | 39,83 | -24,7 % | P. BAZIRE | 58/161/759/3733 |
-| 11 | PROXIMA CENTAURI | 33 | 21 | 44,33 | -25,6 % | X.BERGERON | 70/81/117/120 |
-| 12 | JOAO | 38 | 33 | 54,14 | -29,8 % | L.POGGIONOVO | 80/593/1602/2325 |
+| 10 | LADIVA | 6,7 | 11 | 5,86 | **+14,3 %** | M.FAVRIAUX | 51/285/550/1330 |
+| 4 | SIN CITY | 7,8 | 6,4 | 9,38 | -16,8 % | J.MOUTARD | 61/94/24/424 |
+| 15 | LUCAS TREZY | 7,8 | 10 | 9,20 | -15,2 % | L.ROUSSEL | 26/26/896/78 |
+| 3 | BAILEYS ECLAIR | 8,9 | 9,6 | 9,65 | -7,8 % | T.BACHELOT | 16/287/172/385 |
+| 14 | AMICIS | 12 | 6,8 | 11,96 | **+0,3 %** | Y.BARILLE | 82/114/2308/3866 |
+| 5 | ESKANDANI | 13 | 15 | 13,72 | -5,2 % | G.TROLLEY DE PREVAUX | 46/81/1227/120 |
+| 7 | GREAT CHARLIE | 15 | 15 | 18,48 | -18,8 % | H.LEBOUC | 19/351/86/633 |
+| 9 | PACO | 15 | 12 | 17,65 | -15,0 % | C.PACAUT | 48/28/7/49 |
+| 13 | MISS PARANO | 15 | 16 | 17,72 | -15,4 % | A.MEROU | 65/437/33/383 |
+| 1 | INMATE | 16 | 15 | 23,41 | -31,7 % | A.MADAMET | 10/157/844/147 |
+| 6 | JOUKOVKA | 20 | 30 | 25,82 | -22,5 % | E.HARDOUIN | 27/214/16/342 |
+| 2 | ACCORD PARFAIT | 22 | 28 | 25,17 | -12,6 % | I.MENDIZABAL | 32/431/242/986 |
+| 16 | SPINNING MIST | 26 | 25 | 38,27 | -32,1 % | L.PLOMMEE | 31/114/3081/116 |
+| 8 | GALILEE DREAM | 36 | 28 | 48,19 | -25,3 % | P. BAZIRE | 58/161/759/3733 |
+| 11 | PROXIMA CENTAURI | 39 | 21 | 50,23 | -22,4 % | X.BERGERON | 70/81/117/120 |
+| 12 | JOAO | 39 | 33 | 54,97 | -29,1 % | L.POGGIONOVO | 80/593/1602/2325 |
 
 ### 8. PRIX DE BEAUFOSSE
 
