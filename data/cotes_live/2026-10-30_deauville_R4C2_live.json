@@ -4,62 +4,62 @@
   "reunion": 4,
   "heure_depart": 1793362200000,
   "distance": 1900,
-  "scraped_at": "2026-10-30T13:06:46.561999+01:00",
-  "minutes_avant_depart": 3,
+  "scraped_at": "2026-10-30T13:09:26.814552+01:00",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "SALMY",
-      "cote_live": 4.6,
+      "cote_live": 3.7,
       "cote_reference": 4.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793361997000
+      "timestamp_cote": 1793362153000
     },
     {
       "numPmu": 2,
       "nom": "CHERIMINE",
-      "cote_live": 56.0,
+      "cote_live": 61.0,
       "cote_reference": 53.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793361997000
+      "timestamp_cote": 1793362153000
     },
     {
       "numPmu": 3,
       "nom": "JACKSON BAILEYS",
-      "cote_live": 39.0,
+      "cote_live": 41.0,
       "cote_reference": 45.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793361997000
+      "timestamp_cote": 1793362153000
     },
     {
       "numPmu": 4,
       "nom": "QEYNAN",
-      "cote_live": 10.0,
+      "cote_live": 11.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793361997000
+      "timestamp_cote": 1793362153000
     },
     {
       "numPmu": 5,
       "nom": "MADH'WORLD",
-      "cote_live": 60.0,
+      "cote_live": 74.0,
       "cote_reference": 30.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793361997000
+      "timestamp_cote": 1793362153000
     },
     {
       "numPmu": 6,
       "nom": "LOVE IN GLORY",
-      "cote_live": 30.0,
+      "cote_live": 34.0,
       "cote_reference": 32.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793361997000
+      "timestamp_cote": 1793362153000
     },
     {
       "numPmu": 7,
@@ -68,16 +68,16 @@
       "cote_reference": 3.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793361997000
+      "timestamp_cote": 1793362153000
     },
     {
       "numPmu": 8,
       "nom": "OPERATIF",
-      "cote_live": 2.3,
+      "cote_live": 2.5,
       "cote_reference": 2.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793361997000
+      "timestamp_cote": 1793362153000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -136,6 +136,62 @@
         "6": 30.0,
         "7": 3.2,
         "8": 2.3
+      }
+    },
+    {
+      "scraped_at": "2026-10-30T13:07:26.764701+01:00",
+      "minutes_avant_depart": 2.558135716666667,
+      "cotes": {
+        "1": 4.5,
+        "2": 58.0,
+        "3": 41.0,
+        "4": 11.0,
+        "5": 64.0,
+        "6": 31.0,
+        "7": 3.2,
+        "8": 2.3
+      }
+    },
+    {
+      "scraped_at": "2026-10-30T13:08:06.738612+01:00",
+      "minutes_avant_depart": 1.8884810666666667,
+      "cotes": {
+        "1": 4.1,
+        "2": 55.0,
+        "3": 36.0,
+        "4": 11.0,
+        "5": 63.0,
+        "6": 30.0,
+        "7": 3.2,
+        "8": 2.4
+      }
+    },
+    {
+      "scraped_at": "2026-10-30T13:08:46.782530+01:00",
+      "minutes_avant_depart": 1.2247977333333333,
+      "cotes": {
+        "1": 3.5,
+        "2": 61.0,
+        "3": 41.0,
+        "4": 11.0,
+        "5": 69.0,
+        "6": 32.0,
+        "7": 3.3,
+        "8": 2.6
+      }
+    },
+    {
+      "scraped_at": "2026-10-30T13:09:26.814552+01:00",
+      "minutes_avant_depart": 0.5581288333333333,
+      "cotes": {
+        "1": 3.7,
+        "2": 61.0,
+        "3": 41.0,
+        "4": 11.0,
+        "5": 74.0,
+        "6": 34.0,
+        "7": 3.2,
+        "8": 2.5
       }
     }
   ]
