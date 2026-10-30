@@ -2,7 +2,9 @@
 
 9 courses.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+**Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
+La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
+Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classements ci-dessus.
 
 ---
 
@@ -24,18 +26,18 @@
 
 ### 2. PRIX DE L'EPINAY
 
-*14h08 · plat · 1900 m · 8 partants · cotes de l'extraction*
+*14h08 · plat · 1900 m · 8 partants · cotes à T−3:13*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | SALMY | – | S.PASQUIER | 23/2/4257/69 |
-| 2 | CHERIMINE | – | M.LERNER | 185/11/532/2322 |
-| 3 | JACKSON BAILEYS | – | E.CORALLO | 57/12/172/1659 |
-| 4 | QEYNAN | – | T.BACHELOT | 16/56/10/102 |
-| 5 | MADH'WORLD | – | M.JUSTUM | 88/129/2922/3348 |
-| 6 | LOVE IN GLORY | – | A.MEROU | 65/437/26/383 |
-| 7 | GELDEN GREY | – | PC.BOUDOT 4e | 8/91/26/527 |
-| 8 | OPERATIF | – | M.GUYON 3e | 4/7/1/2 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 8 | OPERATIF | 2,3 | 2,55 | -9,9 % | M.GUYON 3e | 4/7/1/2 |
+| 7 | GELDEN GREY | 3,2 | 3,72 | -13,9 % | PC.BOUDOT 4e | 8/91/26/527 |
+| 1 | SALMY | 4,6 | 5,17 | -11,1 % | S.PASQUIER | 23/2/4257/69 |
+| 4 | QEYNAN | 10 | 13,54 | -26,1 % | T.BACHELOT | 16/56/10/102 |
+| 6 | LOVE IN GLORY | 30 | 45,37 | -33,9 % | A.MEROU | 65/437/26/383 |
+| 3 | JACKSON BAILEYS | 39 | 60,87 | -35,9 % | E.CORALLO | 57/12/172/1659 |
+| 2 | CHERIMINE | 56 | 90,34 | -38,0 % | M.LERNER | 185/11/532/2322 |
+| 5 | MADH'WORLD | 60 | 97,27 | -38,3 % | M.JUSTUM | 88/129/2922/3348 |
 
 ### 3. PRIX D'ESSAY
 
