@@ -76,7 +76,7 @@
 | 13 | SENECA PARK | – | B J HERNANDEZ, JR. | –/–/–/– |
 | 14 | BALLINEA STAR | – | T GAFFALIONE | –/870/–/– |
 | 15 | SILENT BEAUTY | – | D EGAN | 312/358/–/– |
-| 16 | LUMINOUS BEAUTY | – | RESERVISTE 2 | –/–/–/– |
+| 16 | LUMINOUS BEAUTY | – | A BESCHIZZA | –/–/–/– |
 | 17 | QUIBBLER | – | J A. TORRES | –/–/–/– |
 
 ### 9. FANDUEL BREEDERS' CUP JUVENILE
@@ -100,7 +100,7 @@
 |--:|:--|--:|:--|--:|
 | 2 | AVEC TOI | – | F PRAT | –/10/–/– |
 | 3 | FLORIDA BAY | – | W LORDAN | 265/3/–/– |
-| 4 | HAFFNER | – | C SOUMILLON | 7/3/–/– |
+| 4 | HAFFNER | – | R MOORE | 151/3/–/– |
 | 5 | HOW'S AL TODAY | – | B J HERNANDEZ, JR. | –/–/–/– |
 | 6 | PIKACHU | – | D EGAN | 312/99/–/– |
 | 7 | LET EM KNOW | – | E J ZAYAS | –/–/–/– |
