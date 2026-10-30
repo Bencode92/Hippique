@@ -1,6 +1,6 @@
 # DEAUVILLE — 30/10/2026
 
-9 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -162,17 +162,17 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 9. PRIX DU CHATEAU DE TOCQUEVILLE
 
-*18h13 · plat · 1500 m · 10 partants · cotes de l'extraction*
+*18h13 · plat · 1500 m · 10 partants · cotes à T−29:46*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 10 | RUE ERNESTINE | 2,8 | 3,05 | -8,1 % | M.GUYON | 4/44/20/295 |
-| 1 | WOFF | 4,8 | 5,19 | -7,4 % | W.LEVESQUE | 79/94/1/164 |
-| 8 | ABACUR | 5 | 4,67 | **+7,1 %** | M.PROTTI | 30/52/258/311 |
-| 4 | HERODION | 14 | 18,69 | -25,1 % | C.LECOEUVRE | 13/135/1270/873 |
-| 9 | BELVEDERE PALACE | 14 | 19,15 | -26,9 % | E.HARDOUIN | 27/79/2767/1593 |
-| 5 | OUT OF THE BLUE | 15 | 19,36 | -22,5 % | L.GALLO | 45/15/15/36 |
-| 7 | BLACK STORM | 20 | 30,45 | -34,3 % | T.BACHELOT | 16/378/1678/2452 |
-| 11 | ANTICIPATION ZERO | 20 | 25,87 | -22,7 % | B.MARIE | 69/445/7/1147 |
-| 6 | FAVORY CHOP | 25 | 30,55 | -18,2 % | A.DAIFI | 209/70/6/1497 |
-| 3 | CHARISMATIC CHICK | 26 | 41,21 | -36,9 % | J.MOUTARD | 61/28/383/49 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 10 | RUE ERNESTINE | 3,4 | 2,8 | 3,68 | -7,7 % | M.GUYON | 4/44/20/295 |
+| 1 | WOFF | 4,5 | 4,8 | 4,82 | -6,6 % | W.LEVESQUE | 79/94/1/164 |
+| 8 | ABACUR | 6,7 | 5 | 6,42 | **+4,4 %** | M.PROTTI | 30/52/258/311 |
+| 5 | OUT OF THE BLUE | 11 | 15 | 13,42 | -18,0 % | L.GALLO | 45/15/15/36 |
+| 7 | BLACK STORM | 12 | 20 | 15,24 | -21,3 % | T.BACHELOT | 16/378/1678/2452 |
+| 3 | CHARISMATIC CHICK | 14 | 26 | 18,27 | -23,4 % | J.MOUTARD | 61/28/383/49 |
+| 4 | HERODION | 14 | 14 | 18,64 | -24,9 % | C.LECOEUVRE | 13/135/1270/873 |
+| 11 | ANTICIPATION ZERO | 16 | 20 | 19,91 | -19,6 % | B.MARIE | 69/445/7/1147 |
+| 9 | BELVEDERE PALACE | 18 | 14 | 25,64 | -29,8 % | E.HARDOUIN | 27/79/2767/1593 |
+| 6 | FAVORY CHOP | 20 | 25 | 23,60 | -15,3 % | A.DAIFI | 209/70/6/1497 |
