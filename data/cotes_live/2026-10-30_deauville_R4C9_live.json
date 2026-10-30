@@ -4,98 +4,98 @@
   "reunion": 4,
   "heure_depart": 1793376780000,
   "distance": 1500,
-  "scraped_at": "2026-10-30T17:12:34.145481+01:00",
-  "minutes_avant_depart": 0,
+  "scraped_at": "2026-10-30T17:15:14.279114+01:00",
+  "minutes_avant_depart": -2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "WOFF",
-      "cote_live": 9.8,
+      "cote_live": 12.0,
       "cote_reference": 4.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793376749000
+      "timestamp_cote": 1793376840000
     },
     {
       "numPmu": 3,
       "nom": "CHARISMATIC CHICK",
-      "cote_live": 13.0,
+      "cote_live": 17.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793376749000
+      "timestamp_cote": 1793376840000
     },
     {
       "numPmu": 4,
       "nom": "HERODION",
-      "cote_live": 25.0,
+      "cote_live": 32.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793376749000
+      "timestamp_cote": 1793376840000
     },
     {
       "numPmu": 5,
       "nom": "OUT OF THE BLUE",
-      "cote_live": 6.2,
+      "cote_live": 4.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793376749000
+      "timestamp_cote": 1793376840000
     },
     {
       "numPmu": 6,
       "nom": "FAVORY CHOP",
-      "cote_live": 15.0,
+      "cote_live": 19.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793376749000
+      "timestamp_cote": 1793376840000
     },
     {
       "numPmu": 7,
       "nom": "BLACK STORM",
-      "cote_live": 17.0,
+      "cote_live": 19.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793376749000
+      "timestamp_cote": 1793376840000
     },
     {
       "numPmu": 8,
       "nom": "ABACUR",
-      "cote_live": 5.9,
+      "cote_live": 6.0,
       "cote_reference": 6.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793376749000
+      "timestamp_cote": 1793376840000
     },
     {
       "numPmu": 9,
       "nom": "BELVEDERE PALACE",
-      "cote_live": 9.2,
+      "cote_live": 10.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793376749000
+      "timestamp_cote": 1793376840000
     },
     {
       "numPmu": 10,
       "nom": "RUE ERNESTINE",
-      "cote_live": 3.2,
+      "cote_live": 3.3,
       "cote_reference": 3.4,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793376749000
+      "timestamp_cote": 1793376840000
     },
     {
       "numPmu": 11,
       "nom": "ANTICIPATION ZERO",
-      "cote_live": 17.0,
+      "cote_live": 18.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793376749000
+      "timestamp_cote": 1793376840000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -338,6 +338,70 @@
         "9": 9.2,
         "10": 3.2,
         "11": 17.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-30T17:13:13.888636+01:00",
+      "minutes_avant_depart": -0.22510951666666665,
+      "cotes": {
+        "1": 9.9,
+        "3": 14.0,
+        "4": 27.0,
+        "5": 6.1,
+        "6": 15.0,
+        "7": 17.0,
+        "8": 6.2,
+        "9": 9.2,
+        "10": 3.1,
+        "11": 18.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-30T17:13:53.942772+01:00",
+      "minutes_avant_depart": -0.8917774166666667,
+      "cotes": {
+        "1": 12.0,
+        "3": 17.0,
+        "4": 31.0,
+        "5": 3.9,
+        "6": 18.0,
+        "7": 19.0,
+        "8": 6.1,
+        "9": 10.0,
+        "10": 3.3,
+        "11": 18.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-30T17:14:33.993521+01:00",
+      "minutes_avant_depart": -1.5584456833333333,
+      "cotes": {
+        "1": 12.0,
+        "3": 17.0,
+        "4": 32.0,
+        "5": 4.0,
+        "6": 19.0,
+        "7": 19.0,
+        "8": 6.0,
+        "9": 10.0,
+        "10": 3.3,
+        "11": 18.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-30T17:15:14.279114+01:00",
+      "minutes_avant_depart": -2.2345910166666667,
+      "cotes": {
+        "1": 12.0,
+        "3": 17.0,
+        "4": 32.0,
+        "5": 4.0,
+        "6": 19.0,
+        "7": 19.0,
+        "8": 6.0,
+        "9": 10.0,
+        "10": 3.3,
+        "11": 18.0
       }
     }
   ]
