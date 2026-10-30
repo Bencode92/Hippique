@@ -162,17 +162,17 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 9. PRIX DU CHATEAU DE TOCQUEVILLE
 
-*18h13 · plat · 1500 m · 10 partants · cotes à T−8:26*
+*18h13 · plat · 1500 m · 10 partants · cotes à T−5:46*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 10 | RUE ERNESTINE | 3 | 2,8 | 3,27 | -8,2 % | M.GUYON | 4/44/20/295 |
-| 1 | WOFF | 6,7 | 4,8 | 7,57 | -11,5 % | W.LEVESQUE | 79/94/1/164 |
-| 8 | ABACUR | 9,4 | 5 | 10,33 | -9,0 % | M.PROTTI | 30/52/258/311 |
-| 7 | BLACK STORM | 9,8 | 20 | 12,08 | -18,9 % | T.BACHELOT | 16/378/1678/2452 |
-| 3 | CHARISMATIC CHICK | 10 | 26 | 12,37 | -19,2 % | J.MOUTARD | 61/28/383/49 |
-| 5 | OUT OF THE BLUE | 11 | 15 | 13,50 | -18,5 % | L.GALLO | 45/15/15/36 |
-| 6 | FAVORY CHOP | 11 | 25 | 12,40 | -11,3 % | A.DAIFI | 209/70/6/1497 |
-| 4 | HERODION | 16 | 14 | 21,93 | -27,0 % | C.LECOEUVRE | 13/135/1270/873 |
-| 9 | BELVEDERE PALACE | 16 | 14 | 22,47 | -28,8 % | E.HARDOUIN | 27/79/2767/1593 |
-| 11 | ANTICIPATION ZERO | 17 | 20 | 21,49 | -20,9 % | B.MARIE | 69/445/7/1147 |
+| 10 | RUE ERNESTINE | 2,7 | 2,8 | 2,98 | -9,4 % | M.GUYON | 4/44/20/295 |
+| 1 | WOFF | 7,8 | 4,8 | 9,14 | -14,6 % | W.LEVESQUE | 79/94/1/164 |
+| 8 | ABACUR | 7,9 | 5 | 8,55 | -7,6 % | M.PROTTI | 30/52/258/311 |
+| 5 | OUT OF THE BLUE | 10 | 15 | 12,22 | -18,1 % | L.GALLO | 45/15/15/36 |
+| 3 | CHARISMATIC CHICK | 11 | 26 | 14,01 | -21,5 % | J.MOUTARD | 61/28/383/49 |
+| 6 | FAVORY CHOP | 11 | 25 | 12,55 | -12,4 % | A.DAIFI | 209/70/6/1497 |
+| 7 | BLACK STORM | 11 | 20 | 14,01 | -21,5 % | T.BACHELOT | 16/378/1678/2452 |
+| 9 | BELVEDERE PALACE | 16 | 14 | 22,74 | -29,7 % | E.HARDOUIN | 27/79/2767/1593 |
+| 11 | ANTICIPATION ZERO | 18 | 20 | 23,25 | -22,6 % | B.MARIE | 69/445/7/1147 |
+| 4 | HERODION | 19 | 14 | 27,12 | -29,9 % | C.LECOEUVRE | 13/135/1270/873 |
