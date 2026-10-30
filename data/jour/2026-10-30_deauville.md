@@ -140,25 +140,25 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DE BEAUFOSSE
 
-*17h38 · plat · 1900 m · 15 partants · cotes à T−29:25*
+*17h38 · plat · 1900 m · 15 partants · cotes à T−24:46*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 1 | MELANIES JOY | 3,1 | 2,9 | 2,98 | **+4,0 %** | M.GUYON 3e | 4/21/3176/673 |
-| 2 | ORANGE VIF | 9,4 | 11 | 11,22 | -16,2 % | R.THOMAS | 75/90/108/66 |
-| 7 | POLMINHAC | 10 | 8,1 | 10,59 | -5,6 % | A.VILCHIEN | 93/94/1323/1495 |
-| 15 | DARIYANGEL | 10 | 10 | 12,92 | -22,6 % | L.PLOMMEE | 31/114/576/895 |
-| 9 | LUNALA | 11 | 10 | 11,87 | -7,3 % | F.LEFEBVRE | 41/322/45/513 |
-| 8 | DAHARIZ | 15 | 19 | 19,92 | -24,7 % | L.POGGIONOVO | 80/270/283/2628 |
-| 10 | AMBRA ANTICA | 15 | 22 | 16,96 | -11,6 % | T.BACHELOT | 16/382/1280/803 |
-| 4 | ELAUNEIL | 16 | 18 | 17,54 | -8,8 % | C.PACAUT | 48/389/163/833 |
-| 5 | PIANO BAR | 16 | 18 | 16,75 | -4,5 % | M. MARQUETTE | 54/84/384/2724 |
-| 6 | INKIOSTRO | 20 | 18 | 22,69 | -11,8 % | D.SANTIAGO | 15/382/22/803 |
-| 13 | CLOSE UP | 34 | 35 | 47,41 | -28,3 % | H.JOURNIAC | 43/34/44/99 |
-| 16 | GOLDEN RIVER | 35 | 30 | 44,75 | -21,8 % | O.ANDIGNE | 81/114/676/1992 |
-| 14 | MURANO | 37 | 36 | 45,43 | -18,6 % | J.LACROIX | 94/141/443/1531 |
-| 11 | JACK OF TRADES | 40 | 39 | 62,42 | -35,9 % | A.MADAMET | 10/388/3991/827 |
-| 12 | KITTEN DREAM | 50 | 44 | 69,43 | -28,0 % | M.JUSTUM | 88/129/751/3600 |
+| 1 | MELANIES JOY | 3,3 | 2,9 | 3,38 | -2,3 % | M.GUYON 3e | 4/21/3176/673 |
+| 2 | ORANGE VIF | 8,9 | 11 | 10,99 | -19,0 % | R.THOMAS | 75/90/108/66 |
+| 7 | POLMINHAC | 9,3 | 8,1 | 9,74 | -4,5 % | A.VILCHIEN | 93/94/1323/1495 |
+| 15 | DARIYANGEL | 10 | 10 | 12,91 | -22,5 % | L.PLOMMEE | 31/114/576/895 |
+| 9 | LUNALA | 11 | 10 | 11,86 | -7,3 % | F.LEFEBVRE | 41/322/45/513 |
+| 4 | ELAUNEIL | 14 | 18 | 15,02 | -6,8 % | C.PACAUT | 48/389/163/833 |
+| 10 | AMBRA ANTICA | 15 | 22 | 16,96 | -11,5 % | T.BACHELOT | 16/382/1280/803 |
+| 8 | DAHARIZ | 16 | 19 | 21,47 | -25,5 % | L.POGGIONOVO | 80/270/283/2628 |
+| 5 | PIANO BAR | 17 | 18 | 17,96 | -5,3 % | M. MARQUETTE | 54/84/384/2724 |
+| 6 | INKIOSTRO | 21 | 18 | 23,98 | -12,4 % | D.SANTIAGO | 15/382/22/803 |
+| 14 | MURANO | 31 | 36 | 33,99 | -8,8 % | J.LACROIX | 94/141/443/1531 |
+| 16 | GOLDEN RIVER | 34 | 30 | 43,31 | -21,5 % | O.ANDIGNE | 81/114/676/1992 |
+| 13 | CLOSE UP | 35 | 35 | 48,95 | -28,5 % | H.JOURNIAC | 43/34/44/99 |
+| 11 | JACK OF TRADES | 38 | 39 | 58,94 | -35,5 % | A.MADAMET | 10/388/3991/827 |
+| 12 | KITTEN DREAM | 49 | 44 | 67,90 | -27,8 % | M.JUSTUM | 88/129/751/3600 |
 
 ### 9. PRIX DU CHATEAU DE TOCQUEVILLE
 
