@@ -43,26 +43,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX DU PAYS DE BRAY
 
-*16h15 · plat · 1900 m · 16 partants · cotes à T−0:55*
+*16h15 · plat · 1900 m · 16 partants · cotes à T−0:14*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 6 | VICTORY PACE | 3,4 | 5,4 | 3,34 | **+1,8 %** | M.GRANDIN | 3/14/293/144 |
-| 9 | AMIE AMOUR | 5,8 | 6,6 | 6,15 | -5,7 % | M.GUYON 4e | 4/19/3095/33 |
-| 11 | MISTER BLACK | 7,4 | 5,8 | 8,12 | -8,9 % | M.LERNER | 185/11/448/24 |
-| 7 | PALM SPRINGS | 10 | 9,4 | 12,35 | -19,0 % | C.LECOEUVRE | 13/16/20/1445 |
-| 3 | LOUIZA | 18 | 17 | 20,98 | -14,2 % | PC.BOUDOT 3e | 8/23/3/5 |
-| 1 | ZELZARA | 19 | 14 | 21,34 | -11,0 % | H.JOURNIAC | 43/8/206/1273 |
-| 4 | BON VIVEUR | 21 | 17 | 23,95 | -12,3 % | S.PASQUIER | 23/73/31/191 |
-| 8 | NATORSPEED ESSEF | 21 | 17 | 26,26 | -20,0 % | T.PICCONE | 9/6/310/20 |
-| 5 | CRACKON | 25 | 19 | 34,48 | -27,5 % | I.MENDIZABAL | 32/22/1744/1057 |
-| 16 | MARASI DRIVE | 27 | 21 | 36,73 | -26,5 % | A.LEMAITRE | 11/45/594/1712 |
-| 15 | PARVAGE | 36 | 32 | 50,86 | -29,2 % | D.PROVOST | 33/8/67/938 |
-| 2 | WOOD MING | 49 | 51 | 71,52 | -31,5 % | R.THOMAS | 75/90/269/66 |
-| 10 | IL MAGISTERO | 50 | 43 | 73,11 | -31,6 % | L.PLOMMEE | 31/77/156/1206 |
-| 13 | BLANC CARAT | 58 | 44 | 88,07 | -34,1 % | G.SIAS | 96/428/418/1010 |
-| 12 | INGEBORG | 67 | 49 | 86,86 | -22,9 % | H.BOUTIN | 14/43/253/417 |
-| 14 | HONEY PEARL | 69 | 49 | 89,60 | -23,0 % | A.CRASTUS | 17/296/253/219 |
+| 6 | VICTORY PACE | 3,4 | 5,4 | 3,36 | **+1,1 %** | M.GRANDIN | 3/14/293/144 |
+| 9 | AMIE AMOUR | 5,8 | 6,6 | 6,20 | -6,4 % | M.GUYON 4e | 4/19/3095/33 |
+| 11 | MISTER BLACK | 7,1 | 5,8 | 7,80 | -9,0 % | M.LERNER | 185/11/448/24 |
+| 7 | PALM SPRINGS | 10 | 9,4 | 12,45 | -19,7 % | C.LECOEUVRE | 13/16/20/1445 |
+| 3 | LOUIZA | 18 | 17 | 21,15 | -14,9 % | PC.BOUDOT 3e | 8/23/3/5 |
+| 1 | ZELZARA | 19 | 14 | 21,51 | -11,7 % | H.JOURNIAC | 43/8/206/1273 |
+| 4 | BON VIVEUR | 20 | 17 | 23,90 | -16,3 % | S.PASQUIER | 23/73/31/191 |
+| 8 | NATORSPEED ESSEF | 21 | 17 | 26,48 | -20,7 % | T.PICCONE | 9/6/310/20 |
+| 5 | CRACKON | 25 | 19 | 34,76 | -28,1 % | I.MENDIZABAL | 32/22/1744/1057 |
+| 16 | MARASI DRIVE | 27 | 21 | 37,03 | -27,1 % | A.LEMAITRE | 11/45/594/1712 |
+| 15 | PARVAGE | 35 | 32 | 49,67 | -29,5 % | D.PROVOST | 33/8/67/938 |
+| 2 | WOOD MING | 48 | 51 | 70,46 | -31,9 % | R.THOMAS | 75/90/269/66 |
+| 10 | IL MAGISTERO | 51 | 43 | 75,28 | -32,3 % | L.PLOMMEE | 31/77/156/1206 |
+| 13 | BLANC CARAT | 60 | 44 | 92,02 | -34,8 % | G.SIAS | 96/428/418/1010 |
+| 12 | INGEBORG | 69 | 49 | 90,27 | -23,6 % | H.BOUTIN | 14/43/253/417 |
+| 14 | HONEY PEARL | 70 | 49 | 91,65 | -23,6 % | A.CRASTUS | 17/296/253/219 |
 
 ### 4. PRIX ZEDDAAN
 
