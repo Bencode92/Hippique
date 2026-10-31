@@ -138,22 +138,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DU PLATEAU DE LA MADRIE
 
-*19h10 · plat · 1900 m · 12 partants · cotes à T−29:26*
+*19h10 · plat · 1900 m · 12 partants · cotes à T−24:47*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 9 | RITMICA | 4,7 | 4,5 | 5,71 | -17,7 % | M.GUYON 4e | 4/16/911/1137 |
-| 8 | NAZGUL BLOU | 5,2 | 8,3 | 4,95 | **+5,0 %** | S.PASQUIER | 23/37/908/398 |
-| 2 | ICE CRACKER | 6,7 | 10 | 7,11 | -5,7 % | PC.BOUDOT 3e | 8/6/85/300 |
-| 13 | ON THE DOUBLE | 7,9 | 7 | 9,34 | -15,4 % | C.LECOEUVRE | 13/57/2194/315 |
-| 11 | AUSTRALIPS | 12 | 10 | 15,25 | -21,3 % | G.TROLLEY DE PREVAUX | 46/41/7/61 |
-| 7 | XTRAMOUR | 14 | 13 | 16,70 | -16,2 % | A.LEMAITRE | 11/76/84/1721 |
-| 10 | VIENNA'S PRIDE | 14 | 10 | 18,28 | -23,4 % | E.HARDOUIN | 27/89/2667/– |
-| 4 | FRANCQUEVILLE | 15 | 14 | 18,10 | -17,1 % | D.PROVOST | 33/8/18/131 |
-| 5 | GOT LOOK | 17 | 13 | 23,52 | -27,7 % | A.MADAMET | 10/27/70/1076 |
-| 12 | BLUE DAHLIA | 23 | 19 | 32,57 | -29,4 % | R.MANGIONE | 78/34/167/2051 |
-| 14 | CORYPHEENE | 23 | 19 | 33,39 | -31,1 % | R.THOMAS | 75/296/78/3358 |
-| 3 | ORASHI | 26 | 20 | 35,76 | -27,3 % | T.TRULLIER | 21/102/1325/257 |
+| 9 | RITMICA | 3,5 | 4,5 | 3,73 | -6,2 % | M.GUYON 4e | 4/16/911/1137 |
+| 8 | NAZGUL BLOU | 5,9 | 8,3 | 5,67 | **+4,1 %** | S.PASQUIER | 23/37/908/398 |
+| 2 | ICE CRACKER | 7,4 | 10 | 8,63 | -14,3 % | PC.BOUDOT 3e | 8/6/85/300 |
+| 13 | ON THE DOUBLE | 8,9 | 7 | 10,71 | -16,9 % | C.LECOEUVRE | 13/57/2194/315 |
+| 11 | AUSTRALIPS | 14 | 10 | 17,42 | -19,6 % | G.TROLLEY DE PREVAUX | 46/41/7/61 |
+| 12 | BLUE DAHLIA | 15 | 19 | 18,06 | -17,0 % | R.MANGIONE | 78/34/167/2051 |
+| 4 | FRANCQUEVILLE | 16 | 14 | 19,46 | -17,8 % | D.PROVOST | 33/8/18/131 |
+| 7 | XTRAMOUR | 16 | 13 | 19,46 | -17,8 % | A.LEMAITRE | 11/76/84/1721 |
+| 10 | VIENNA'S PRIDE | 17 | 10 | 21,85 | -22,2 % | E.HARDOUIN | 27/89/2667/– |
+| 5 | GOT LOOK | 18 | 13 | 25,07 | -28,2 % | A.MADAMET | 10/27/70/1076 |
+| 14 | CORYPHEENE | 24 | 19 | 34,96 | -31,4 % | R.THOMAS | 75/296/78/3358 |
+| 3 | ORASHI | 30 | 20 | 41,95 | -28,5 % | T.TRULLIER | 21/102/1325/257 |
 
 ### 9. PRIX DU BRAY NORMAND
 
