@@ -47,13 +47,13 @@
 |--:|:--|--:|:--|--:|
 | 1 | ZELZARA | – | H.JOURNIAC | 43/8/206/1273 |
 | 2 | WOOD MING | – | R.THOMAS | 75/90/269/66 |
-| 3 | LOUIZA | – | PC.BOUDOT 4e | 8/23/3/5 |
+| 3 | LOUIZA | – | PC.BOUDOT 3e | 8/23/3/5 |
 | 4 | BON VIVEUR | – | S.PASQUIER | 23/73/31/191 |
 | 5 | CRACKON | – | I.MENDIZABAL | 32/22/1744/1057 |
 | 6 | VICTORY PACE | – | M.GRANDIN | 3/14/293/144 |
 | 7 | PALM SPRINGS | – | C.LECOEUVRE | 13/16/20/1445 |
 | 8 | NATORSPEED ESSEF | – | T.PICCONE | 9/6/310/20 |
-| 9 | AMIE AMOUR | – | M.GUYON 3e | 4/19/3095/33 |
+| 9 | AMIE AMOUR | – | M.GUYON 4e | 4/19/3095/33 |
 | 10 | IL MAGISTERO | – | L.PLOMMEE | 31/77/156/1206 |
 | 11 | MISTER BLACK | – | M.LERNER | 185/11/448/24 |
 | 12 | INGEBORG | – | H.BOUTIN | 14/43/253/417 |
@@ -120,11 +120,11 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | TOCOA | – | PC.BOUDOT 4e | 8/66/296/2904 |
+| 1 | TOCOA | – | PC.BOUDOT 3e | 8/66/296/2904 |
 | 2 | ELUSIVE WAY | – | A.MADAMET | 10/64/14/23 |
 | 3 | LAMIYA | – | A.CRASTUS | 17/9/17/19 |
 | 4 | STRATOVULCANO | – | T.TRULLIER | 21/19/3429/151 |
-| 5 | SAMOR | – | M.GUYON 3e | 4/7/1/2 |
+| 5 | SAMOR | – | M.GUYON 4e | 4/7/1/2 |
 | 6 | FRAYA MAS | – | C.LECOEUVRE | 13/156/37/982 |
 | 7 | INVENTER | – | D.PROVOST | 33/77/200/1206 |
 | 8 | ENCORE RIDGE | – | M.GRANDIN | 3/44/752/469 |
@@ -142,13 +142,13 @@
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
 | 1 | LACALAS | – | L.GALLO | 45/126/40/887 |
-| 2 | ICE CRACKER | – | PC.BOUDOT 4e | 8/6/85/300 |
+| 2 | ICE CRACKER | – | PC.BOUDOT 3e | 8/6/85/300 |
 | 3 | ORASHI | – | T.TRULLIER | 21/102/1325/257 |
 | 4 | FRANCQUEVILLE | – | D.PROVOST | 33/8/18/131 |
 | 5 | GOT LOOK | – | A.MADAMET | 10/27/70/1076 |
 | 7 | XTRAMOUR | – | A.LEMAITRE | 11/76/84/1721 |
 | 8 | NAZGUL BLOU | – | S.PASQUIER | 23/37/908/398 |
-| 9 | RITMICA | – | M.GUYON 3e | 4/16/911/1137 |
+| 9 | RITMICA | – | M.GUYON 4e | 4/16/911/1137 |
 | 10 | VIENNA'S PRIDE | – | E.HARDOUIN | 27/89/2667/– |
 | 11 | AUSTRALIPS | – | G.TROLLEY DE PREVAUX | 46/41/7/61 |
 | 12 | BLUE DAHLIA | – | R.MANGIONE | 78/34/167/2051 |
@@ -163,12 +163,12 @@
 |--:|:--|--:|:--|--:|
 | 1 | PETITE ABEILLE | – | M.VELON | 28/26/1735/624 |
 | 2 | TOMOE GOZEN | – | H.BOUTIN | 14/28/24/2604 |
-| 3 | MARIA JOANA | – | M.GUYON 3e | 4/40/246/3111 |
+| 3 | MARIA JOANA | – | M.GUYON 4e | 4/40/246/3111 |
 | 4 | STEEL DRUM | – | C.LECOEUVRE | 13/117/1078/784 |
 | 5 | KOELLE ALAAF | – | D.SANTIAGO | 15/220/835/3394 |
 | 6 | RENVERSANTE | – | P.CHEYER | 109/26/3/161 |
 | 7 | DEUX DE COUPE | – | C.PACAUT | 48/84/50/973 |
-| 8 | PRESSURE TEST | – | PC.BOUDOT 4e | 8/87/175/2095 |
+| 8 | PRESSURE TEST | – | PC.BOUDOT 3e | 8/87/175/2095 |
 | 9 | MANGAS | – | T.BACHELOT | 16/117/3984/784 |
 | 10 | JOHNNY DRIVE | – | E.HARDOUIN | 27/287/33/385 |
 | 11 | EVEROSE | – | T.PICCONE | 9/112/3293/278 |
