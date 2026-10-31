@@ -1,6 +1,6 @@
 # DEAUVILLE — 31/10/2026
 
-9 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -80,41 +80,41 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX LODD BY CHLOE (PRIX LITTLE MANJO)
 
-*17h25 · plat · 1900 m · 11 partants · cotes à T−3:14*
+*17h25 · plat · 1900 m · 11 partants · cotes à T−0:35*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | COSMO BEAU | 4,1 | 7,3 | 4,92 | -16,7 % | M.LEBAS | –/112/218/848 |
-| 3 | SCREEN SHOT | 4,6 | 6,2 | 6,53 | -29,6 % | R.VALAIS | –/23/633/3458 |
-| 8 | GOLFEUR | 5,1 | 5,1 | 5,66 | -10,0 % | L.HAYERES FOUCHARD | –/44/1/1071 |
-| 10 | SEPTIMUS | 5,9 | 4,5 | 7,23 | -18,4 % | I.CHABIRON | –/220/1023/1522 |
-| 4 | MR FILERIN | 7,1 | 21 | 9,93 | -28,5 % | A.PELTIER | –/26/42/525 |
-| 5 | LINTERPRETE | 8,5 | 12 | 11,01 | -22,8 % | M.BOURGEAIS | –/351/1210/633 |
-| 9 | ART PIECE | 10 | 13 | 13,87 | -27,9 % | P.MENGES | –/400/103/879 |
-| 1 | CHARLESQUINT | 11 | 13 | 15,50 | -29,0 % | C.BRECHON | –/15/18/16 |
-| 6 | LUCERO | 33 | 27 | 47,59 | -30,7 % | C.BOUTIN | –/28/889/49 |
-| 7 | SIR SPARKALOT | 35 | 16 | 65,60 | -46,6 % | L.GROUALLE | –/804/719/3419 |
-| 11 | ORLHENA | 61 | 22 | 96,62 | -36,9 % | C.THELIER-MELE | –/28/98/16 |
+| 2 | COSMO BEAU | 3,3 | 7,3 | 3,78 | -12,7 % | M.LEBAS | –/112/218/848 |
+| 8 | GOLFEUR | 5,1 | 5,1 | 5,63 | -9,5 % | L.HAYERES FOUCHARD | –/44/1/1071 |
+| 3 | SCREEN SHOT | 5,2 | 6,2 | 7,48 | -30,4 % | R.VALAIS | –/23/633/3458 |
+| 10 | SEPTIMUS | 5,5 | 4,5 | 6,64 | -17,1 % | I.CHABIRON | –/220/1023/1522 |
+| 4 | MR FILERIN | 8,2 | 21 | 11,69 | -29,9 % | A.PELTIER | –/26/42/525 |
+| 5 | LINTERPRETE | 9,3 | 12 | 12,15 | -23,5 % | M.BOURGEAIS | –/351/1210/633 |
+| 9 | ART PIECE | 11 | 13 | 16,85 | -34,7 % | P.MENGES | –/400/103/879 |
+| 1 | CHARLESQUINT | 13 | 13 | 18,74 | -30,6 % | C.BRECHON | –/15/18/16 |
+| 6 | LUCERO | 37 | 27 | 58,93 | -37,2 % | C.BOUTIN | –/28/889/49 |
+| 7 | SIR SPARKALOT | 40 | 16 | 75,54 | -47,1 % | L.GROUALLE | –/804/719/3419 |
+| 11 | ORLHENA | 45 | 22 | 69,54 | -35,3 % | C.THELIER-MELE | –/28/98/16 |
 
 ### 6. PRIX IRISH RIVER
 
-*18h00 · plat · 1400 m · 13 partants · cotes de l'extraction*
+*18h00 · plat · 1400 m · 13 partants · cotes à T−29:54*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 1 | NO LUNCH | 1,6 | 1,71 | -6,3 % | M.GUYON | 4/7/1/2 |
-| 13 | SONATINE | 9,7 | 11,49 | -15,6 % | A.MADAMET | 10/2/1/2 |
-| 6 | SYNARAN | 10 | 12,20 | -18,1 % | C.LECOEUVRE | 13/1/–/1 |
-| 10 | CHARIBELLE | 15 | 18,79 | -20,2 % | T.BACHELOT | 16/17/10/102 |
-| 4 | FERRARI FEVER | 21 | 26,59 | -21,0 % | T.TRULLIER | 21/54/6/663 |
-| 9 | ZZODIAC | 22 | 29,29 | -24,9 % | S.PASQUIER | 23/14/1735/60 |
-| 5 | PALMAR BAY | 24 | 26,96 | -11,0 % | I.MENDIZABAL | 32/158/29/18 |
-| 7 | IMPERIOR | 25 | 38,92 | -35,8 % | M.GRANDIN | 3/68/542/200 |
-| 2 | MOUNT ATHOS | 33 | 46,37 | -28,8 % | PC.BOUDOT 2e | 8/834/563/– |
-| 12 | VIVA LA SKIDS | 39 | 61,27 | -36,3 % | S.KIRRANE | –/197/78/975 |
-| 8 | RENCONTRE SPORTIVE | 50 | 78,44 | -36,3 % | J.NICOLEAU | 137/166/147/1118 |
-| 11 | CARNIVAL OF LIGHT | 63 | 103,26 | -39,0 % | O.STAMMERS | –/99/–/– |
-| 3 | DINO | 127 | 202,05 | -37,1 % | P.FORET | 216/208/66/569 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 1 | NO LUNCH | 1,4 | 1,6 | 1,58 | -11,3 % | M.GUYON | 4/7/1/2 |
+| 6 | SYNARAN | 13 | 10 | 18,14 | -28,3 % | C.LECOEUVRE | 13/1/–/1 |
+| 9 | ZZODIAC | 18 | 22 | 23,20 | -22,4 % | S.PASQUIER | 23/14/1735/60 |
+| 13 | SONATINE | 18 | 9,7 | 23,64 | -23,9 % | A.MADAMET | 10/2/1/2 |
+| 4 | FERRARI FEVER | 19 | 21 | 23,66 | -19,7 % | T.TRULLIER | 21/54/6/663 |
+| 10 | CHARIBELLE | 20 | 15 | 26,20 | -23,7 % | T.BACHELOT | 16/17/10/102 |
+| 5 | PALMAR BAY | 30 | 24 | 34,64 | -13,4 % | I.MENDIZABAL | 32/158/29/18 |
+| 2 | MOUNT ATHOS | 32 | 33 | 40,76 | -21,5 % | PC.BOUDOT 2e | 8/834/563/– |
+| 7 | IMPERIOR | 35 | 25 | 54,24 | -35,5 % | M.GRANDIN | 3/68/542/200 |
+| 12 | VIVA LA SKIDS | 48 | 39 | 76,85 | -37,5 % | S.KIRRANE | –/197/78/975 |
+| 11 | CARNIVAL OF LIGHT | 52 | 63 | 83,95 | -38,1 % | O.STAMMERS | –/99/–/– |
+| 8 | RENCONTRE SPORTIVE | 62 | 50 | 98,67 | -37,2 % | J.NICOLEAU | 137/166/147/1118 |
+| 3 | DINO | 75 | 127 | 123,90 | -39,5 % | P.FORET | 216/208/66/569 |
 
 ### 7. PRIX DU PAYS DE CAUX
 
