@@ -1,8 +1,8 @@
 # MAUQUENCHY — 31/10/2026
 
-10 courses.
+10 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
@@ -12,18 +12,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | NASDAQ DU POHOSE | – | P. HOUEL |
+| 7 | NASDAQ LYMM | 3 | E. DE JESUS |
+| 4 | NIRVANA D'ARRY | 6,2 | D. BROHIER |
+| 12 | NARCISSE DE BLAY | 7 | A. DE VAUGIRAUD |
+| 3 | NOBLE DU MOUCHEL | 9,6 | F. LAGADEUC |
+| 11 | NOE DES MONTS | 9,6 | J.CH. PITON |
+| 6 | NABHI DU DOME | 13 | PH. DAUGEARD |
+| 1 | NASDAQ DU POHOSE | 17 | P. HOUEL |
+| 10 | NICETIME DE BAILLE | 17 | ANTOINE BOUTIN |
+| 5 | NARUTO DU DOME | 21 | S. OLIVIER |
+| 8 | NASH ROYAL | 26 | T. OUVRIE |
+| 9 | NELSON DE REVE | 52 | P.A. DELACOUR |
 | 2 | NORTH OF GOLD | – | F. DUCROCQ |
-| 3 | NOBLE DU MOUCHEL | – | F. LAGADEUC |
-| 4 | NIRVANA D'ARRY | – | D. BROHIER |
-| 5 | NARUTO DU DOME | – | S. OLIVIER |
-| 6 | NABHI DU DOME | – | PH. DAUGEARD |
-| 7 | NASDAQ LYMM | – | E. DE JESUS |
-| 8 | NASH ROYAL | – | T. OUVRIE |
-| 9 | NELSON DE REVE | – | P.A. DELACOUR |
-| 10 | NICETIME DE BAILLE | – | ANTOINE BOUTIN |
-| 11 | NOE DES MONTS | – | J.CH. PITON |
-| 12 | NARCISSE DE BLAY | – | A. DE VAUGIRAUD |
 
 ### 2. PRIX DE LA FEDERATION REGIONALE (GR B)
 
@@ -31,18 +31,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | NEARCO | – | F. LAGADEUC |
-| 2 | NARUTO DE PALMA | – | G. DEMOULIN |
-| 3 | NEVER BETTER WELL | – | G. BLANDIN |
-| 4 | NIGLO DE BELLANDE | – | E. DE JESUS |
-| 5 | NORTHFIELDS | – | A.A. BOULARD |
-| 6 | NEGUE DE VIETTE | – | PH. MASSCHAELE |
-| 7 | NO WIN NO GIN | – | P. PACAUD |
-| 8 | NOW WITH US | – | THEO DUVALDESTIN |
-| 9 | NUMEROSEPT | – | V. VIEL |
-| 10 | NARCO DRY | – | D. DE JESUS REIS |
-| 11 | NICKEL CASH | – | A. GUARATO |
-| 12 | NARSEO | – | A. ANDRE |
+| 8 | NOW WITH US | 2 | THEO DUVALDESTIN |
+| 10 | NARCO DRY | 3,3 | D. DE JESUS REIS |
+| 1 | NEARCO | 16 | F. LAGADEUC |
+| 4 | NIGLO DE BELLANDE | 17 | E. DE JESUS |
+| 9 | NUMEROSEPT | 17 | V. VIEL |
+| 12 | NARSEO | 22 | A. ANDRE |
+| 5 | NORTHFIELDS | 35 | A.A. BOULARD |
+| 7 | NO WIN NO GIN | 35 | P. PACAUD |
+| 11 | NICKEL CASH | 44 | A. GUARATO |
+| 6 | NEGUE DE VIETTE | 58 | PH. MASSCHAELE |
+| 2 | NARUTO DE PALMA | 88 | G. DEMOULIN |
+| 3 | NEVER BETTER WELL | 88 | G. BLANDIN |
 
 ### 3. PRIX MYHN DIAG EXPERTISE (GR A)
 
@@ -50,19 +50,19 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 8 | MORILLON BERCHERES | 2,4 | A. ANDRE |
+| 9 | MAY BLUE | 4,7 | F. LAGADEUC |
+| 7 | MEZCAL | 5,8 | L.J. LEGROS |
+| 11 | MERVEILLE DE JIEL | 13 | M. BIZOUX |
+| 4 | MOON DES RIOULTS | 15 | P. HOUEL |
+| 5 | MUFASA DU MAXFRAN | 15 | S. BAUDE |
+| 6 | MINOS DU FOSSE | 18 | E. DE JESUS |
+| 13 | MAJOR ONE | 23 | P.A. DELACOUR |
+| 3 | MIRIFIQUE | 47 | G. D'HAENENS |
+| 10 | MATCHO NUMBER FIVE | 47 | G. BLANDIN |
 | 1 | MILADY DE WALD | – | G. DEMOULIN |
 | 2 | MISTRAL D'OCQUE | – | R. CHAUSSIER |
-| 3 | MIRIFIQUE | – | G. D'HAENENS |
-| 4 | MOON DES RIOULTS | – | P. HOUEL |
-| 5 | MUFASA DU MAXFRAN | – | S. BAUDE |
-| 6 | MINOS DU FOSSE | – | E. DE JESUS |
-| 7 | MEZCAL | – | L.J. LEGROS |
-| 8 | MORILLON BERCHERES | – | A. ANDRE |
-| 9 | MAY BLUE | – | F. LAGADEUC |
-| 10 | MATCHO NUMBER FIVE | – | G. BLANDIN |
-| 11 | MERVEILLE DE JIEL | – | M. BIZOUX |
 | 12 | MAMAMIA EL | – | CH. PETREMENT |
-| 13 | MAJOR ONE | – | P.A. DELACOUR |
 
 ### 4. PRIX LEVASSEUR RECEPTIONS (GR B)
 
@@ -70,19 +70,19 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 7 | MICHELANGELO ZEN | 3,6 | PH. MASSCHAELE |
+| 13 | MAILLON DU CHENE | 4,5 | E. DE JESUS |
+| 11 | MISTRAL DE TRAMON | 4,8 | A. ANDRE |
+| 3 | MYSTREAM DU DOME | 7,3 | PH. DAUGEARD |
+| 10 | MEDINA DU RIB | 8,1 | Mme C. HALLAIS-DERSOIR |
+| 6 | MIDNIGHT WAY | 18 | P. HOUEL |
+| 9 | MALTA TEGE | 24 | M. BRUN |
+| 12 | MISS COQUINE | 24 | T. OUVRIE |
+| 8 | MAJESTY TECE | 36 | S. BAUDE |
+| 5 | MAESTRO DU COQ | 73 | G. BLANDIN |
 | 1 | MAJORFLASH | – | CH. PETREMENT |
 | 2 | MALICIO | – | P. PACAUD |
-| 3 | MYSTREAM DU DOME | – | PH. DAUGEARD |
 | 4 | MALTESE KNIGHT | – | R. CHAUSSIER |
-| 5 | MAESTRO DU COQ | – | G. BLANDIN |
-| 6 | MIDNIGHT WAY | – | P. HOUEL |
-| 7 | MICHELANGELO ZEN | – | PH. MASSCHAELE |
-| 8 | MAJESTY TECE | – | S. BAUDE |
-| 9 | MALTA TEGE | – | M. BRUN |
-| 10 | MEDINA DU RIB | – | Mme C. HALLAIS-DERSOIR |
-| 11 | MISTRAL DE TRAMON | – | A. ANDRE |
-| 12 | MISS COQUINE | – | T. OUVRIE |
-| 13 | MAILLON DU CHENE | – | E. DE JESUS |
 
 ### 5. PRIX HIPPODROME DE GOURNAY EN BRAY (GR C)
 
@@ -90,19 +90,19 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MARVA KILY | – | M. BRUN |
+| 12 | MELO DU LOCHEUR | 3,7 | D. BROHIER |
+| 7 | MARIOL DE VAUVERT | 4,2 | A. ANDRE |
+| 11 | MANHATTAN BEAT | 4,4 | G. BLANDIN |
+| 8 | MY QUEEN BLUE | 11 | P. HOUEL |
+| 6 | MACKER DU SCION | 14 | A. POPOT |
+| 3 | MOONSTONE | 17 | S. BAUDE |
+| 5 | MELODY DE SASSY | 17 | GH. DANNEVILLE |
+| 9 | MIDNIGHT | 17 | E. DE JESUS |
+| 1 | MARVA KILY | 35 | M. BRUN |
+| 4 | MAMBA BERRY | 35 | J. JAMAULT |
+| 10 | MY TOP GIFT | 71 | P.E. COLLARD |
+| 13 | MUSTANG D'ARLINE | 71 | H. LECOQ |
 | 2 | MAJOR MAB | – | R. DOUYERE |
-| 3 | MOONSTONE | – | S. BAUDE |
-| 4 | MAMBA BERRY | – | J. JAMAULT |
-| 5 | MELODY DE SASSY | – | GH. DANNEVILLE |
-| 6 | MACKER DU SCION | – | A. POPOT |
-| 7 | MARIOL DE VAUVERT | – | A. ANDRE |
-| 8 | MY QUEEN BLUE | – | P. HOUEL |
-| 9 | MIDNIGHT | – | E. DE JESUS |
-| 10 | MY TOP GIFT | – | P.E. COLLARD |
-| 11 | MANHATTAN BEAT | – | G. BLANDIN |
-| 12 | MELO DU LOCHEUR | – | D. BROHIER |
-| 13 | MUSTANG D'ARLINE | – | H. LECOQ |
 
 ### 6. PRIX COMMUNAUTE DE COMMUNES 4 RIV (GR A)
 
@@ -110,18 +110,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | NESLA D'OUVILLE | – | P. HOUEL |
+| 7 | NORIA JOSSELYN | 2,9 | A. ANDRE |
+| 12 | NAMI JIEL | 3,6 | S. BAUDE |
+| 10 | NALAGA | 5,4 | E. DE JESUS |
+| 9 | NARISSA DE PLAY | 8,1 | FLORENT PELTIER |
+| 1 | NESLA D'OUVILLE | 16 | P. HOUEL |
+| 6 | NOMINEE | 16 | L. SWITA |
+| 3 | NOUBA DU DOLLAR | 32 | P. PACAUD |
+| 4 | NEMESIS DE BOISNEY | 32 | J. VANMEERBECK |
+| 5 | NARNIA DE L'AVRE | 32 | T. OUVRIE |
 | 2 | NANA AR MOR | – | F. LAGADEUC |
-| 3 | NOUBA DU DOLLAR | – | P. PACAUD |
-| 4 | NEMESIS DE BOISNEY | – | J. VANMEERBECK |
-| 5 | NARNIA DE L'AVRE | – | T. OUVRIE |
-| 6 | NOMINEE | – | L. SWITA |
-| 7 | NORIA JOSSELYN | – | A. ANDRE |
 | 8 | NAHEMA BLUES | – | J.CH. PITON |
-| 9 | NARISSA DE PLAY | – | FLORENT PELTIER |
-| 10 | NALAGA | – | E. DE JESUS |
 | 11 | NONORICOTTE GARDEN | – | G. BLANDIN |
-| 12 | NAMI JIEL | – | S. BAUDE |
 
 ### 7. PRIX DES BENEVOLES (GR B)
 
@@ -129,18 +129,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 3 | NATURE DES HETRES | 4 | D. BROHIER |
+| 11 | NIKITA JIEL | 4,5 | M. BIZOUX |
+| 6 | NICE NORMANDIE | 5,1 | F. LAGADEUC |
+| 12 | NEW STAR ROC | 7,2 | B. LE BELLER |
+| 4 | NEIGE DE TILLARD | 9 | E. DE JESUS |
+| 10 | NAOMI NICE | 12 | T. OUVRIE |
+| 8 | NICE QUALITY | 18 | P.A. DELACOUR |
+| 9 | NERVOUS GIRL | 18 | CH. NICOLE |
+| 7 | NIKITA DU SAPTEL | 36 | J.F. VALLETTE |
 | 1 | NICE DU FOSSE | – | F. DUCROCQ |
 | 2 | NIRVANA QUEEN | – | J.CH. PITON |
-| 3 | NATURE DES HETRES | – | D. BROHIER |
-| 4 | NEIGE DE TILLARD | – | E. DE JESUS |
 | 5 | NEW GIRL DU MATIN | – | G. MOINON |
-| 6 | NICE NORMANDIE | – | F. LAGADEUC |
-| 7 | NIKITA DU SAPTEL | – | J.F. VALLETTE |
-| 8 | NICE QUALITY | – | P.A. DELACOUR |
-| 9 | NERVOUS GIRL | – | CH. NICOLE |
-| 10 | NAOMI NICE | – | T. OUVRIE |
-| 11 | NIKITA JIEL | – | M. BIZOUX |
-| 12 | NEW STAR ROC | – | B. LE BELLER |
 
 ### 8. PRIX EDEY COM
 
@@ -148,65 +148,63 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | INSOMNIA ERCA | – | T. OUVRIE |
+| 6 | INDY PIQUENARD | 3,2 | D. LOCQUENEUX |
+| 13 | ITALICA | 6,6 | L.J. LEGROS |
+| 17 | IDEAL MOSSA | 8,8 | J. VANMEERBECK |
+| 12 | IOHANNA THIEBEN | 10 | P. HOUEL |
+| 14 | IMPACT SPORT | 14 | E. DE JESUS |
+| 1 | INSOMNIA ERCA | 16 | T. OUVRIE |
+| 15 | IPSO D'AVIGNERE | 16 | PH. DAUGEARD |
+| 16 | HORACIO DE CERISY | 16 | S. BAUDE |
+| 4 | IOLAS | 21 | P. OLLITRAULT |
+| 11 | IYAR | 21 | J.PH. BORODAJKO |
+| 5 | HUTA JAZZ | 23 | F. LAGADEUC |
+| 18 | GOLD DE CHIMAY | 26 | T. PELGRIMS |
+| 3 | HARLEY DE JANEIRO | 106 | PH. MASSCHAELE |
+| 7 | ISIDORO DIDAN | 106 | G. DONIO |
+| 8 | ILOWA D'OHARA | 106 | L. LEGRAND |
+| 10 | HOUBLON BLEU | 106 | CH. NICOLE |
+| 9 | ILLICO FLIGNY | 212 | Mlle NOEMIE HARDY |
 | 2 | HAVANA MOST | – | G. MOINON |
-| 3 | HARLEY DE JANEIRO | – | PH. MASSCHAELE |
-| 4 | IOLAS | – | P. OLLITRAULT |
-| 5 | HUTA JAZZ | – | F. LAGADEUC |
-| 6 | INDY PIQUENARD | – | D. LOCQUENEUX |
-| 7 | ISIDORO DIDAN | – | G. DONIO |
-| 8 | ILOWA D'OHARA | – | L. LEGRAND |
-| 9 | ILLICO FLIGNY | – | Mlle NOEMIE HARDY |
-| 10 | HOUBLON BLEU | – | CH. NICOLE |
-| 11 | IYAR | – | J.PH. BORODAJKO |
-| 12 | IOHANNA THIEBEN | – | P. HOUEL |
-| 13 | ITALICA | – | L.J. LEGROS |
-| 14 | IMPACT SPORT | – | E. DE JESUS |
-| 15 | IPSO D'AVIGNERE | – | PH. DAUGEARD |
-| 16 | HORACIO DE CERISY | – | S. BAUDE |
-| 17 | IDEAL MOSSA | – | J. VANMEERBECK |
-| 18 | GOLD DE CHIMAY | – | T. PELGRIMS |
 
 ### 9. PRIX DE BUCHY
 
-*21h00 · attelé · 2850 m · 16 partants · cotes de l'extraction*
+*21h00 · attelé · 2850 m · 15 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 10 | LUCIFER DU DOME | 4,2 | W. DEVENNE |
+| 14 | LUTIN DE BOISNEY | 5,3 | TH. BELLET |
+| 16 | LORD MIL | 6,4 | FRANCOIS LECATHELINAIS |
+| 7 | LIO DU MESNIL | 7,1 | R. BLACHET |
+| 9 | LUTIN DE LA FYE | 10 | P. VERVA |
+| 15 | LORIQUET | 12 | P.E. COLLARD |
+| 8 | LORD DU GRAIS | 16 | A. FAVRAY |
+| 11 | LIPSTICK QUICK | 16 | A.A. BOULARD |
+| 13 | LOKI DE BEAUCAMPS | 16 | G. DESPREZ |
+| 5 | LOUSTIC CHARENTAIS | 32 | L. LEGRAND |
+| 4 | LEMON DE THABE | 64 | A. TRINQUART |
+| 6 | LASCAR DE BEAUM | 64 | G. MONTHULE |
 | 1 | LOORID SAINT CLAIR | – | J. DUPUIS |
 | 2 | LITTLE LOVE | – | A. GUARATO |
 | 3 | LEGGERO DES RAYERS | – | E. CIVE |
-| 4 | LEMON DE THABE | – | A. TRINQUART |
-| 5 | LOUSTIC CHARENTAIS | – | L. LEGRAND |
-| 6 | LASCAR DE BEAUM | – | G. MONTHULE |
-| 7 | LIO DU MESNIL | – | R. BLACHET |
-| 8 | LORD DU GRAIS | – | A. FAVRAY |
-| 9 | LUTIN DE LA FYE | – | P. VERVA |
-| 10 | LUCIFER DU DOME | – | W. DEVENNE |
-| 11 | LIPSTICK QUICK | – | A.A. BOULARD |
-| 12 | LARIMAR | – | Y. JULIEN |
-| 13 | LOKI DE BEAUCAMPS | – | G. DESPREZ |
-| 14 | LUTIN DE BOISNEY | – | TH. BELLET |
-| 15 | LORIQUET | – | P.E. COLLARD |
-| 16 | LORD MIL | – | FRANCOIS LECATHELINAIS |
 
 ### 10. PRIX FRANCK DECAMPEAUX
 
-*21h30 · attelé · 2850 m · 14 partants · cotes de l'extraction*
+*21h30 · attelé · 2850 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KOM KHALEESI | – | O. FOUILLET |
+| 10 | KISS YOU DU VERGER | 2,9 | MAXIME DAUGEARD |
+| 5 | KAKINANI | 5,8 | Mlle M. TRIHOLLET |
+| 14 | KATUDI | 6,4 | ANDRE DE ALMEIDA |
+| 1 | KOM KHALEESI | 11 | O. FOUILLET |
+| 11 | KISS ME MENCOURT | 11 | S. ROCHER |
+| 12 | JOLIE CLAIRE | 11 | J. ROUX |
+| 8 | KALINA DE LAURIERE | 14 | A. UNTERREINER |
+| 9 | KODAC DE FIERVILLE | 14 | J.PH. BAZIRE |
+| 6 | KASANE DU BISET | 29 | Mme E. LAPEYRE |
+| 3 | HEROS DE BEAUCAMP | 58 | F. KALEK |
+| 13 | JUST PARTY DU FIEF | 58 | A. CLEMENT |
 | 2 | KALINE DE SOYORA | – | Mlle A. RENAULT |
-| 3 | HEROS DE BEAUCAMP | – | F. KALEK |
 | 4 | KING JULMA | – | Mlle D. BERCHER |
-| 5 | KAKINANI | – | Mlle M. TRIHOLLET |
-| 6 | KASANE DU BISET | – | Mme E. LAPEYRE |
-| 7 | JAIN DE JANVILLE | – | N. ENAULT |
-| 8 | KALINA DE LAURIERE | – | A. UNTERREINER |
-| 9 | KODAC DE FIERVILLE | – | J.PH. BAZIRE |
-| 10 | KISS YOU DU VERGER | – | MAXIME DAUGEARD |
-| 11 | KISS ME MENCOURT | – | S. ROCHER |
-| 12 | JOLIE CLAIRE | – | J. ROUX |
-| 13 | JUST PARTY DU FIEF | – | A. CLEMENT |
-| 14 | KATUDI | – | ANDRE DE ALMEIDA |
