@@ -80,21 +80,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX LODD BY CHLOE (PRIX LITTLE MANJO)
 
-*17h25 · plat · 1900 m · 11 partants · cotes à T−24:54*
+*17h25 · plat · 1900 m · 11 partants · cotes à T−20:54*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | COSMO BEAU | 5,9 | 7,3 | 6,69 | -11,9 % | M.LEBAS | –/112/218/848 |
-| 3 | SCREEN SHOT | 5,9 | 6,2 | 7,72 | -23,6 % | R.VALAIS | –/23/633/3458 |
-| 9 | ART PIECE | 6,2 | 13 | 6,63 | -6,5 % | P.MENGES | –/400/103/879 |
-| 8 | GOLFEUR | 7 | 5,1 | 7,33 | -4,5 % | L.HAYERES FOUCHARD | –/44/1/1071 |
-| 10 | SEPTIMUS | 8,2 | 4,5 | 8,42 | -2,6 % | I.CHABIRON | –/220/1023/1522 |
-| 5 | LINTERPRETE | 10 | 12 | 11,06 | -9,6 % | M.BOURGEAIS | –/351/1210/633 |
-| 4 | MR FILERIN | 12 | 21 | 15,27 | -21,4 % | A.PELTIER | –/26/42/525 |
-| 1 | CHARLESQUINT | 14 | 13 | 17,07 | -18,0 % | C.BRECHON | –/15/18/16 |
-| 7 | SIR SPARKALOT | 14 | 16 | 18,31 | -23,5 % | L.GROUALLE | –/804/719/3419 |
-| 6 | LUCERO | 28 | 27 | 33,18 | -15,6 % | C.BOUTIN | –/28/889/49 |
-| 11 | ORLHENA | 38 | 22 | 48,87 | -22,2 % | C.THELIER-MELE | –/28/98/16 |
+| 3 | SCREEN SHOT | 3,7 | 6,2 | 4,57 | -19,0 % | R.VALAIS | –/23/633/3458 |
+| 2 | COSMO BEAU | 6 | 7,3 | 6,13 | -2,2 % | M.LEBAS | –/112/218/848 |
+| 9 | ART PIECE | 7,2 | 13 | 7,84 | -8,1 % | P.MENGES | –/400/103/879 |
+| 8 | GOLFEUR | 8,4 | 5,1 | 9,00 | -6,7 % | L.HAYERES FOUCHARD | –/44/1/1071 |
+| 10 | SEPTIMUS | 9 | 4,5 | 9,34 | -3,6 % | I.CHABIRON | –/220/1023/1522 |
+| 4 | MR FILERIN | 12 | 21 | 15,21 | -21,1 % | A.PELTIER | –/26/42/525 |
+| 5 | LINTERPRETE | 12 | 12 | 13,03 | -7,9 % | M.BOURGEAIS | –/351/1210/633 |
+| 1 | CHARLESQUINT | 14 | 13 | 17,01 | -17,7 % | C.BRECHON | –/15/18/16 |
+| 7 | SIR SPARKALOT | 18 | 16 | 24,46 | -26,4 % | L.GROUALLE | –/804/719/3419 |
+| 6 | LUCERO | 35 | 27 | 46,59 | -24,9 % | C.BOUTIN | –/28/889/49 |
+| 11 | ORLHENA | 47 | 22 | 61,49 | -23,6 % | C.THELIER-MELE | –/28/98/16 |
 
 ### 6. PRIX IRISH RIVER
 
