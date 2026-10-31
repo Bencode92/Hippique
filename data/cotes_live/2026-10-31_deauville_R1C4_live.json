@@ -4,71 +4,71 @@
   "reunion": 1,
   "heure_depart": 1793458200000,
   "distance": 1400,
-  "scraped_at": "2026-10-31T15:24:05.399816+01:00",
-  "minutes_avant_depart": 26,
+  "scraped_at": "2026-10-31T15:28:05.492217+01:00",
+  "minutes_avant_depart": 22,
   "participants": [
     {
       "numPmu": 1,
       "nom": "VIGNELLI",
-      "cote_live": 2.2,
+      "cote_live": 2.6,
       "cote_reference": 2.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793456622000
+      "timestamp_cote": 1793456864000
     },
     {
       "numPmu": 2,
       "nom": "ROSZAL",
-      "cote_live": 3.4,
+      "cote_live": 3.9,
       "cote_reference": 2.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793456622000
+      "timestamp_cote": 1793456864000
     },
     {
       "numPmu": 3,
       "nom": "MISS CHOCO",
-      "cote_live": 17.0,
+      "cote_live": 14.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793456622000
+      "timestamp_cote": 1793456864000
     },
     {
       "numPmu": 4,
       "nom": "ASKAM CHOPE",
-      "cote_live": 17.0,
+      "cote_live": 19.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793456622000
+      "timestamp_cote": 1793456864000
     },
     {
       "numPmu": 5,
       "nom": "MOONDANCE",
-      "cote_live": 8.9,
+      "cote_live": 7.8,
       "cote_reference": 7.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793456622000
+      "timestamp_cote": 1793456864000
     },
     {
       "numPmu": 6,
       "nom": "AMETIS CHOPE",
-      "cote_live": 9.3,
+      "cote_live": 5.4,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793456622000
+      "timestamp_cote": 1793456864000
     },
     {
       "numPmu": 7,
       "nom": "TAXXI",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793456622000
+      "timestamp_cote": 1793456864000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -97,6 +97,19 @@
         "5": 8.9,
         "6": 9.3,
         "7": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-31T15:28:05.492217+01:00",
+      "minutes_avant_depart": 21.913873000000002,
+      "cotes": {
+        "1": 2.6,
+        "2": 3.9,
+        "3": 14.0,
+        "4": 19.0,
+        "5": 7.8,
+        "6": 5.4,
+        "7": 14.0
       }
     }
   ]
