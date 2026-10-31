@@ -66,17 +66,17 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX ZEDDAAN
 
-*16h50 · plat · 1400 m · 7 partants · cotes à T−13:15*
+*16h50 · plat · 1400 m · 7 partants · cotes à T−9:15*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 1 | VIGNELLI | 2,5 | 2,8 | 3,17 | -21,1 % | PC.BOUDOT 2e | 8/1/101/2126 |
-| 2 | ROSZAL | 4,1 | 2,5 | 4,53 | -9,5 % | M.GUYON | 4/16/201/1422 |
-| 6 | AMETIS CHOPE | 5,9 | 11 | 6,66 | -11,5 % | E.HARDOUIN | 27/70/6/1684 |
-| 5 | MOONDANCE | 7,4 | 7,8 | 8,45 | -12,4 % | R.THOMAS | 75/11/26/184 |
-| 3 | MISS CHOCO | 11 | 22 | 14,04 | -21,6 % | A.MADAMET | 10/208/66/569 |
-| 7 | TAXXI | 15 | 10 | 19,32 | -22,3 % | F.VALLE SKAR | 35/11/30/– |
-| 4 | ASKAM CHOPE | 23 | 20 | 34,08 | -32,5 % | A.WERLE | 29/62/6/984 |
+| 1 | VIGNELLI | 2,5 | 2,8 | 3,19 | -21,5 % | PC.BOUDOT 2e | 8/1/101/2126 |
+| 2 | ROSZAL | 4,6 | 2,5 | 5,17 | -10,9 % | M.GUYON | 4/16/201/1422 |
+| 6 | AMETIS CHOPE | 6 | 11 | 6,84 | -12,3 % | E.HARDOUIN | 27/70/6/1684 |
+| 5 | MOONDANCE | 6,4 | 7,8 | 7,50 | -14,7 % | R.THOMAS | 75/11/26/184 |
+| 3 | MISS CHOCO | 11 | 22 | 14,13 | -22,2 % | A.MADAMET | 10/208/66/569 |
+| 7 | TAXXI | 12 | 10 | 14,97 | -19,8 % | F.VALLE SKAR | 35/11/30/– |
+| 4 | ASKAM CHOPE | 24 | 20 | 36,03 | -33,4 % | A.WERLE | 29/62/6/984 |
 
 ### 5. PRIX LODD BY CHLOE (PRIX LITTLE MANJO)
 
