@@ -77,7 +77,7 @@
 
 ### 5. PREVAGEN BREEDERS' CUP TURF SPRINT (GRADE I)
 
-*19h50 · plat · 1100 m · 18 partants · cotes de l'extraction*
+*19h50 · plat · 1100 m · 14 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -95,14 +95,10 @@
 | 12 | SORRENTO SKY | – | U RISPOLI | –/–/–/– |
 | 13 | STARLUST | – | R RYAN | 215/158/–/2464 |
 | 14 | MISS YECHANCE | – | J NICHOLLS | –/42/–/– |
-| 15 | BIG MOJO | – | RESERVISTE 1 | –/–/–/– |
-| 16 | NO NAY HUDSON | – | RESERVISTE 2 | –/478/–/– |
-| 17 | DONCHO | – | RESERVISTE 3 | –/–/–/– |
-| 18 | OUTFIELDER | – | RESERVISTE 4 | –/478/–/– |
 
 ### 6. BREEDERS' CUP DIRT MILE (GRADE I)
 
-*20h28 · plat · 1600 m · 11 partants · cotes de l'extraction*
+*20h28 · plat · 1600 m · 10 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -114,13 +110,12 @@
 | 6 | LORD FONS | – | K YOKOYAMA |
 | 7 | BRACKET BUSTER | – | J R VELAZQUEZ |
 | 8 | MOONLIGHT | – | M FRANCO |
-| 9 | FORGED STEEL | – | E GONZALEZ |
 | 10 | OWEN ALMIGHTY | – | L SAEZ |
 | 11 | IRON MAN CAL | – | T GAFFALIONE |
 
 ### 7. MAKER'S MARK BREEDERS' CUP FILLY & MARE TURF (GRADE I)
 
-*21h06 · plat · 1900 m · 13 partants · cotes de l'extraction*
+*21h06 · plat · 1900 m · 12 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -128,7 +123,6 @@
 | 3 | CLASSIC Q | – | J CASTELLANO | –/–/–/– |
 | 4 | RED LETTER | – | D B MCMONAGLE | 176/816/–/– |
 | 5 | KATHYNMARISSA | – | J L ORTIZ | –/–/–/– |
-| 6 | THOUGHT PROCESS | – | M FRANCO | –/–/–/– |
 | 7 | BLESS THE BROKEN | – | O MURPHY | 144/–/–/435 |
 | 8 | JANCIS | – | B LEE | –/–/–/– |
 | 10 | EXPENSIVE QUEEN | – | L SAEZ | –/–/–/– |
@@ -194,7 +188,7 @@
 
 ### 11. LONGINES BREEDERS' CUP TURF (GRADE I)
 
-*23h38 · plat · 2400 m · 15 partants · cotes de l'extraction*
+*23h38 · plat · 2400 m · 14 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -211,8 +205,7 @@
 | 12 | DIAMOND NECKLACE | – | C SOUMILLON | 7/3/–/523 |
 | 13 | BAY CITY ROLLER | – | O MURPHY | 144/29/–/– |
 | 14 | DEEP MONSTER | – | T MARQUAND | 188/–/–/– |
-| 15 | MAP OF STARS | – | RESERVISTE 1 | –/1/–/– |
-| 16 | TELESCOPIC | – | RESERVISTE 2 | –/–/–/– |
+| 15 | MAP OF STARS | – | J DOYLE | 162/1/–/– |
 
 ### 12. LONGINES BREEDERS' CUP CLASSIC (GRADE I)
 
