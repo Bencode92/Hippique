@@ -1,0 +1,118 @@
+# SAN ISIDRO — 01/11/2026
+
+7 courses.
+
+*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+
+---
+
+### 6. PREMIO EL CONSORTE 2019 (2 TURNO)
+
+*21h15 · plat · 1200 m · 10 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | ATILA | – | RODRIGO GONZALO BLANCO |
+| 2 | MY MYSTERY | – | KEVIN BANEGAS |
+| 3 | NAMASTE | – | GUSTAVO EMILIANO CALVENTE |
+| 4 | PNEUS MESTRA | – | NON COMMUNIQUE |
+| 5 | PURO POETA | – | IVAN MONASTEROLO |
+| 6 | QUE GRAN REY | – | LEO NICOLAS ACUNA |
+| 7 | ROBLE TIME | – | FRANCO JAVIER CORREA |
+| 8 | ARCH WIZARD | – | WILSON ROSARIO MOREYRA |
+| 9 | HAPPY ANGEL | – | ANIBAL JOSE CABRERA |
+| 10 | TREASUREANDO | – | JUAN PABLO PAOLONI |
+
+### 7. PREMIO WILD ONES 2021 (2 TURNO)
+
+*21h45 · plat · 1200 m · 11 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | BELL BEACH | – | LUCRECIA MARIANA CARABAJAL |
+| 2 | CATOLICA Y ROMANA | – | JUAN PABLO PAOLONI |
+| 3 | CELINE STYLE | – | IVAN MONASTEROLO |
+| 4 | CONI GRIEGA | – | CRISTIAN ERNESTO VELAZQUEZ |
+| 5 | ENTRECATA | – | GONZALO DAMIAN BORDA |
+| 6 | ISABELLI | – | WILLIAM PEREYRA |
+| 7 | ONDA REAL HIT | – | LAUTARO EMMANUEL BALMACEDA |
+| 8 | ADONDE VAS MARIA | – | TOMAS DANIEL BAEZ |
+| 9 | CASINO DRIVE | – | MARTIN JAVIER VALLE |
+| 10 | VILALICA | – | RODRIGO DANIEL BASCUNAN |
+| 11 | QUEEN MARILYN | – | OSVALDO ADRIAN ALDERETE |
+
+### 8. PREMIO LOS HARAS ( GRADE II )
+
+*22h15 · plat · 2000 m · 11 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | ARGOMASA | – | KEVIN BANEGAS |
+| 2 | EXISTING | – | LAUTARO EMMANUEL BALMACEDA |
+| 3 | IGUAL NO SOY | – | JUAN PABLO PAOLONI |
+| 4 | LANCARA | – | WILSON ROSARIO MOREYRA |
+| 5 | MAREJADA | – | JORGE MARCELINO ORTIZ |
+| 6 | PLAYA CHOPERA | – | GUSTAVO EMILIANO CALVENTE |
+| 7 | ROMANA CRAF | – | JUAN CRUZ VILLAGRA |
+| 8 | ABRAZO AL CIELO | – | ANIBAL JOSE CABRERA |
+| 9 | CHARM | – | MARTIN JAVIER VALLE |
+| 10 | TIA CORAZON | – | LEO NICOLAS ACUNA |
+| 11 | SAMBA DO BRAZIL | – | IVAN MONASTEROLO |
+
+### 9. PEDRO CHAPAR S. ( GRADE III )
+
+*22h45 · plat · 1400 m · 7 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | AUTORRETRATO | – | ADRIAN MAXIMILIANO GIANNETTI |
+| 2 | BABY DADDY | – | LUCAS FERNANDO MARTINEZ |
+| 3 | CAPITAL BOSS | – | LAUTARO EMMANUEL BALMACEDA |
+| 4 | EARTH DAY | – | OSVALDO ADRIAN ALDERETE |
+| 5 | ENGUALICHAO | – | EDUARDO ORTEGA PAVON |
+| 6 | QUEMETOMO | – | RAMON ARIEL AGUIRRE |
+| 7 | SEVERINO HIT | – | GONZALO LAUTARO MANSILLA |
+
+### 10. LAMADRID S. (L.)
+
+*23h15 · plat · 1000 m · 8 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | BLESSED OF GLORY | – | MARIA EUGENIA SCHNEIDER |
+| 2 | CAMUFLAJE | – | IVAN MONASTEROLO |
+| 3 | CONTRA PRONOSTICO | – | CRISTIAN ERNESTO VELAZQUEZ |
+| 4 | ES POR AMOR | – | PABLO DAMIAN CARRIZO |
+| 5 | MACHU PICHU | – | ELVIO G CANDIA GUTIERREZ |
+| 6 | SECRETO A VOCES | – | LUCAS FRANCISCO GONZALEZ |
+| 7 | VENDAVAL JOY | – | LUCAS IGNACIO CHAVEZ |
+| 8 | ALCAZAR | – | JUAN PABLO PAOLONI |
+
+### 11. PREMIO EL ESTELAR 2022
+
+*23h45 · plat · 1000 m · 7 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | ANGLE OF LIGHT | – | WILSON ROSARIO MOREYRA |
+| 2 | EMPERADOR SOUND | – | RODRIGO DANIEL BASCUNAN |
+| 3 | HUDSON | – | IVAN MONASTEROLO |
+| 4 | LIBERTADOR | – | KEVIN BANEGAS |
+| 5 | SEGERMAN | – | WILLIAM PEREYRA |
+| 6 | SUNDAY | – | JUAN PABLO PAOLONI |
+| 7 | THINK NICE | – | BRIAN RODRIGO ENRIQUE |
+
+### 12. PREMIO SER SINCERO 2023
+
+*00h15 · plat · 1200 m · 8 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | EL SONADOR DESPIERTO | – | GONZALO DAMIAN BORDA |
+| 2 | ESPICHEL | – | WILFREDO ANDRES TORRES MALDONADO |
+| 3 | GIAPONESE | – | CRISTIAN ERNESTO VELAZQUEZ |
+| 4 | MIRALO BIEN | – | WILSON ROSARIO MOREYRA |
+| 5 | ROMAN FLAME | – | EDUARDO ORTEGA PAVON |
+| 6 | SIMPLE RULE | – | IVAN MONASTEROLO |
+| 7 | TIEMPO DE ESTAR | – | KEVIN BANEGAS |
+| 8 | CURIOSO HONEY | – | JOAQUIN ALEJANDRO ESCUDERO |
