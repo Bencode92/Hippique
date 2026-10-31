@@ -1,6 +1,6 @@
 # DEAUVILLE — 31/10/2026
 
-9 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+9 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -43,26 +43,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX DU PAYS DE BRAY
 
-*16h15 · plat · 1900 m · 16 partants · cotes de l'extraction*
+*16h15 · plat · 1900 m · 16 partants · cotes à T−0:55*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 6 | VICTORY PACE | 5,4 | 6,09 | -11,3 % | M.GRANDIN | 3/14/293/144 |
-| 11 | MISTER BLACK | 5,8 | 6,17 | -6,1 % | M.LERNER | 185/11/448/24 |
-| 9 | AMIE AMOUR | 6,6 | 7,15 | -7,7 % | M.GUYON 4e | 4/19/3095/33 |
-| 7 | PALM SPRINGS | 9,4 | 11,53 | -18,5 % | C.LECOEUVRE | 13/16/20/1445 |
-| 1 | ZELZARA | 14 | 15,73 | -11,0 % | H.JOURNIAC | 43/8/206/1273 |
-| 3 | LOUIZA | 17 | 19,72 | -13,8 % | PC.BOUDOT 3e | 8/23/3/5 |
-| 4 | BON VIVEUR | 17 | 19,72 | -13,8 % | S.PASQUIER | 23/73/31/191 |
-| 8 | NATORSPEED ESSEF | 17 | 21,61 | -21,3 % | T.PICCONE | 9/6/310/20 |
-| 5 | CRACKON | 19 | 26,41 | -28,1 % | I.MENDIZABAL | 32/22/1744/1057 |
-| 16 | MARASI DRIVE | 21 | 27,64 | -24,0 % | A.LEMAITRE | 11/45/594/1712 |
-| 15 | PARVAGE | 32 | 44,75 | -28,5 % | D.PROVOST | 33/8/67/938 |
-| 10 | IL MAGISTERO | 43 | 62,23 | -30,9 % | L.PLOMMEE | 31/77/156/1206 |
-| 13 | BLANC CARAT | 44 | 68,65 | -35,9 % | G.SIAS | 96/428/418/1010 |
-| 12 | INGEBORG | 49 | 65,34 | -25,0 % | H.BOUTIN | 14/43/253/417 |
-| 14 | HONEY PEARL | 49 | 65,34 | -25,0 % | A.CRASTUS | 17/296/253/219 |
-| 2 | WOOD MING | 51 | 75,03 | -32,0 % | R.THOMAS | 75/90/269/66 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 6 | VICTORY PACE | 3,4 | 5,4 | 3,34 | **+1,8 %** | M.GRANDIN | 3/14/293/144 |
+| 9 | AMIE AMOUR | 5,8 | 6,6 | 6,15 | -5,7 % | M.GUYON 4e | 4/19/3095/33 |
+| 11 | MISTER BLACK | 7,4 | 5,8 | 8,12 | -8,9 % | M.LERNER | 185/11/448/24 |
+| 7 | PALM SPRINGS | 10 | 9,4 | 12,35 | -19,0 % | C.LECOEUVRE | 13/16/20/1445 |
+| 3 | LOUIZA | 18 | 17 | 20,98 | -14,2 % | PC.BOUDOT 3e | 8/23/3/5 |
+| 1 | ZELZARA | 19 | 14 | 21,34 | -11,0 % | H.JOURNIAC | 43/8/206/1273 |
+| 4 | BON VIVEUR | 21 | 17 | 23,95 | -12,3 % | S.PASQUIER | 23/73/31/191 |
+| 8 | NATORSPEED ESSEF | 21 | 17 | 26,26 | -20,0 % | T.PICCONE | 9/6/310/20 |
+| 5 | CRACKON | 25 | 19 | 34,48 | -27,5 % | I.MENDIZABAL | 32/22/1744/1057 |
+| 16 | MARASI DRIVE | 27 | 21 | 36,73 | -26,5 % | A.LEMAITRE | 11/45/594/1712 |
+| 15 | PARVAGE | 36 | 32 | 50,86 | -29,2 % | D.PROVOST | 33/8/67/938 |
+| 2 | WOOD MING | 49 | 51 | 71,52 | -31,5 % | R.THOMAS | 75/90/269/66 |
+| 10 | IL MAGISTERO | 50 | 43 | 73,11 | -31,6 % | L.PLOMMEE | 31/77/156/1206 |
+| 13 | BLANC CARAT | 58 | 44 | 88,07 | -34,1 % | G.SIAS | 96/428/418/1010 |
+| 12 | INGEBORG | 67 | 49 | 86,86 | -22,9 % | H.BOUTIN | 14/43/253/417 |
+| 14 | HONEY PEARL | 69 | 49 | 89,60 | -23,0 % | A.CRASTUS | 17/296/253/219 |
 
 ### 4. PRIX ZEDDAAN
 
