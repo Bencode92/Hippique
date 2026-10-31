@@ -1,6 +1,6 @@
 # DEAUVILLE — 31/10/2026
 
-9 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 6 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -138,22 +138,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DU PLATEAU DE LA MADRIE
 
-*19h10 · plat · 1900 m · 12 partants · cotes de l'extraction*
+*19h10 · plat · 1900 m · 12 partants · cotes à T−29:26*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 9 | RITMICA | 4,5 | 5,48 | -17,9 % | M.GUYON 4e | 4/16/911/1137 |
-| 13 | ON THE DOUBLE | 7 | 7,53 | -7,1 % | C.LECOEUVRE | 13/57/2194/315 |
-| 8 | NAZGUL BLOU | 8,3 | 9,15 | -9,3 % | S.PASQUIER | 23/37/908/398 |
-| 2 | ICE CRACKER | 10 | 12,41 | -19,4 % | PC.BOUDOT 3e | 8/6/85/300 |
-| 10 | VIENNA'S PRIDE | 10 | 12,41 | -19,4 % | E.HARDOUIN | 27/89/2667/– |
-| 11 | AUSTRALIPS | 10 | 12,41 | -19,4 % | G.TROLLEY DE PREVAUX | 46/41/7/61 |
-| 5 | GOT LOOK | 13 | 17,31 | -24,9 % | A.MADAMET | 10/27/70/1076 |
-| 7 | XTRAMOUR | 13 | 15,44 | -15,8 % | A.LEMAITRE | 11/76/84/1721 |
-| 4 | FRANCQUEVILLE | 14 | 16,84 | -16,9 % | D.PROVOST | 33/8/18/131 |
-| 12 | BLUE DAHLIA | 19 | 24,03 | -20,9 % | R.MANGIONE | 78/34/167/2051 |
-| 14 | CORYPHEENE | 19 | 26,99 | -29,6 % | R.THOMAS | 75/296/78/3358 |
-| 3 | ORASHI | 20 | 27,94 | -28,4 % | T.TRULLIER | 21/102/1325/257 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 9 | RITMICA | 4,7 | 4,5 | 5,71 | -17,7 % | M.GUYON 4e | 4/16/911/1137 |
+| 8 | NAZGUL BLOU | 5,2 | 8,3 | 4,95 | **+5,0 %** | S.PASQUIER | 23/37/908/398 |
+| 2 | ICE CRACKER | 6,7 | 10 | 7,11 | -5,7 % | PC.BOUDOT 3e | 8/6/85/300 |
+| 13 | ON THE DOUBLE | 7,9 | 7 | 9,34 | -15,4 % | C.LECOEUVRE | 13/57/2194/315 |
+| 11 | AUSTRALIPS | 12 | 10 | 15,25 | -21,3 % | G.TROLLEY DE PREVAUX | 46/41/7/61 |
+| 7 | XTRAMOUR | 14 | 13 | 16,70 | -16,2 % | A.LEMAITRE | 11/76/84/1721 |
+| 10 | VIENNA'S PRIDE | 14 | 10 | 18,28 | -23,4 % | E.HARDOUIN | 27/89/2667/– |
+| 4 | FRANCQUEVILLE | 15 | 14 | 18,10 | -17,1 % | D.PROVOST | 33/8/18/131 |
+| 5 | GOT LOOK | 17 | 13 | 23,52 | -27,7 % | A.MADAMET | 10/27/70/1076 |
+| 12 | BLUE DAHLIA | 23 | 19 | 32,57 | -29,4 % | R.MANGIONE | 78/34/167/2051 |
+| 14 | CORYPHEENE | 23 | 19 | 33,39 | -31,1 % | R.THOMAS | 75/296/78/3358 |
+| 3 | ORASHI | 26 | 20 | 35,76 | -27,3 % | T.TRULLIER | 21/102/1325/257 |
 
 ### 9. PRIX DU BRAY NORMAND
 
