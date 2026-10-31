@@ -1,6 +1,6 @@
 # DEAUVILLE — 31/10/2026
 
-9 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -80,21 +80,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX LODD BY CHLOE (PRIX LITTLE MANJO)
 
-*17h25 · plat · 1900 m · 11 partants · cotes de l'extraction*
+*17h25 · plat · 1900 m · 11 partants · cotes à T−29:34*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 10 | SEPTIMUS | 4,5 | 4,91 | -8,4 % | I.CHABIRON | –/220/1023/1522 |
-| 8 | GOLFEUR | 5,1 | 4,74 | **+7,7 %** | L.HAYERES FOUCHARD | –/44/1/1071 |
-| 3 | SCREEN SHOT | 6,2 | 7,31 | -15,1 % | R.VALAIS | –/23/633/3458 |
-| 2 | COSMO BEAU | 7,3 | 7,64 | -4,4 % | M.LEBAS | –/112/218/848 |
-| 5 | LINTERPRETE | 12 | 12,99 | -7,6 % | M.BOURGEAIS | –/351/1210/633 |
-| 1 | CHARLESQUINT | 13 | 15,55 | -16,4 % | C.BRECHON | –/15/18/16 |
-| 9 | ART PIECE | 13 | 17,00 | -23,5 % | P.MENGES | –/400/103/879 |
-| 7 | SIR SPARKALOT | 16 | 21,26 | -24,7 % | L.GROUALLE | –/804/719/3419 |
-| 4 | MR FILERIN | 21 | 31,98 | -34,3 % | A.PELTIER | –/26/42/525 |
-| 11 | ORLHENA | 22 | 25,05 | -12,2 % | C.THELIER-MELE | –/28/98/16 |
-| 6 | LUCERO | 27 | 31,62 | -14,6 % | C.BOUTIN | –/28/889/49 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 2 | COSMO BEAU | 5,3 | 7,3 | 5,94 | -10,7 % | M.LEBAS | –/112/218/848 |
+| 9 | ART PIECE | 5,7 | 13 | 6,04 | -5,6 % | P.MENGES | –/400/103/879 |
+| 3 | SCREEN SHOT | 5,9 | 6,2 | 6,96 | -15,2 % | R.VALAIS | –/23/633/3458 |
+| 10 | SEPTIMUS | 6,9 | 4,5 | 6,92 | -0,3 % | I.CHABIRON | –/220/1023/1522 |
+| 8 | GOLFEUR | 7,2 | 5,1 | 7,58 | -5,0 % | L.HAYERES FOUCHARD | –/44/1/1071 |
+| 5 | LINTERPRETE | 11 | 12 | 12,37 | -11,1 % | M.BOURGEAIS | –/351/1210/633 |
+| 1 | CHARLESQUINT | 12 | 13 | 14,27 | -15,9 % | C.BRECHON | –/15/18/16 |
+| 4 | MR FILERIN | 16 | 21 | 23,47 | -31,8 % | A.PELTIER | –/26/42/525 |
+| 7 | SIR SPARKALOT | 23 | 16 | 35,81 | -35,8 % | L.GROUALLE | –/804/719/3419 |
+| 11 | ORLHENA | 31 | 22 | 40,86 | -24,1 % | C.THELIER-MELE | –/28/98/16 |
+| 6 | LUCERO | 41 | 27 | 55,77 | -26,5 % | C.BOUTIN | –/28/889/49 |
 
 ### 6. PRIX IRISH RIVER
 
