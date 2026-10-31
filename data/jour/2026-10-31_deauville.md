@@ -1,6 +1,6 @@
 # DEAUVILLE — 31/10/2026
 
-9 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -117,24 +117,24 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DU PAYS DE CAUX
 
-*18h35 · plat · 1900 m · 14 partants · cotes de l'extraction*
+*18h35 · plat · 1900 m · 14 partants · cotes à T−0:07*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 2 | ELUSIVE WAY | 4,1 | 4,40 | -6,7 % | A.MADAMET | 10/64/14/23 |
-| 5 | SAMOR | 6,7 | 7,38 | -9,2 % | M.GUYON 4e | 4/7/1/2 |
-| 13 | BACHEROVKA | 7,7 | 8,31 | -7,3 % | S.PASQUIER | 23/173/13/2800 |
-| 1 | TOCOA | 8,4 | 10,00 | -16,0 % | PC.BOUDOT 3e | 8/66/296/2904 |
-| 11 | GLORY KING | 13 | 13,97 | -7,0 % | A.LEMAITRE | 11/76/524/112 |
-| 3 | LAMIYA | 14 | 19,55 | -28,4 % | A.CRASTUS | 17/9/17/19 |
-| 7 | INVENTER | 15 | 18,06 | -16,9 % | D.PROVOST | 33/77/200/1206 |
-| 8 | ENCORE RIDGE | 17 | 24,55 | -30,8 % | M.GRANDIN | 3/44/752/469 |
-| 9 | PIYANGO | 17 | 19,94 | -14,7 % | I.MENDIZABAL | 32/32/4/47 |
-| 6 | FRAYA MAS | 22 | 28,12 | -21,8 % | C.LECOEUVRE | 13/156/37/982 |
-| 4 | STRATOVULCANO | 26 | 34,06 | -23,7 % | T.TRULLIER | 21/19/3429/151 |
-| 12 | EL VEGAS | 30 | 43,96 | -31,7 % | T.BACHELOT | 16/48/715/993 |
-| 14 | TROPA | 30 | 47,25 | -36,5 % | H.JOURNIAC | 43/8/569/1084 |
-| 10 | ARTOA | 33 | 44,58 | -26,0 % | C.PACAUT | 48/11/818/1446 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 1 | TOCOA | 3,4 | 8,4 | 3,51 | -3,2 % | PC.BOUDOT 3e | 8/66/296/2904 |
+| 13 | BACHEROVKA | 5,6 | 7,7 | 5,78 | -3,1 % | S.PASQUIER | 23/173/13/2800 |
+| 5 | SAMOR | 6,4 | 6,7 | 6,99 | -8,4 % | M.GUYON 4e | 4/7/1/2 |
+| 2 | ELUSIVE WAY | 9,4 | 4,1 | 10,90 | -13,8 % | A.MADAMET | 10/64/14/23 |
+| 4 | STRATOVULCANO | 13 | 26 | 15,25 | -14,8 % | T.TRULLIER | 21/19/3429/151 |
+| 8 | ENCORE RIDGE | 18 | 17 | 26,20 | -31,3 % | M.GRANDIN | 3/44/752/469 |
+| 3 | LAMIYA | 19 | 14 | 26,64 | -28,7 % | A.CRASTUS | 17/9/17/19 |
+| 7 | INVENTER | 20 | 15 | 25,17 | -20,5 % | D.PROVOST | 33/77/200/1206 |
+| 9 | PIYANGO | 22 | 17 | 26,79 | -17,9 % | I.MENDIZABAL | 32/32/4/47 |
+| 6 | FRAYA MAS | 23 | 22 | 29,53 | -22,1 % | C.LECOEUVRE | 13/156/37/982 |
+| 11 | GLORY KING | 34 | 13 | 41,89 | -18,8 % | A.LEMAITRE | 11/76/524/112 |
+| 14 | TROPA | 38 | 30 | 58,64 | -35,2 % | H.JOURNIAC | 43/8/569/1084 |
+| 12 | EL VEGAS | 43 | 30 | 62,51 | -31,2 % | T.BACHELOT | 16/48/715/993 |
+| 10 | ARTOA | 65 | 33 | 102,40 | -36,5 % | C.PACAUT | 48/11/818/1446 |
 
 ### 8. PRIX DU PLATEAU DE LA MADRIE
 
