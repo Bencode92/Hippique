@@ -157,21 +157,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 9. PRIX DU BRAY NORMAND
 
-*19h48 · plat · 1900 m · 14 partants · cotes à T−25:27*
+*19h48 · plat · 1900 m · 14 partants · cotes à T−21:27*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 14 | BROMUS | 4,1 | 3,8 | 4,68 | -12,4 % | R.THOMAS | 75/132/437/3221 |
-| 2 | TOMOE GOZEN | 6,4 | 9,7 | 7,08 | -9,6 % | H.BOUTIN | 14/28/24/2604 |
-| 13 | MIA FAST | 7 | 5 | 7,67 | -8,7 % | F.VALLE SKAR | 35/132/993/3292 |
-| 1 | PETITE ABEILLE | 8,2 | 6,3 | 9,61 | -14,7 % | M.VELON | 28/26/1735/624 |
-| 5 | KOELLE ALAAF | 11 | 13 | 13,56 | -18,9 % | D.SANTIAGO | 15/220/835/3394 |
-| 3 | MARIA JOANA | 14 | 19 | 16,45 | -14,9 % | M.GUYON 4e | 4/40/246/3111 |
-| 9 | MANGAS | 14 | 30 | 16,46 | -15,0 % | T.BACHELOT | 16/117/3984/784 |
-| 11 | EVEROSE | 15 | 11 | 17,84 | -15,9 % | T.PICCONE | 9/112/3293/278 |
-| 8 | PRESSURE TEST | 16 | 27 | 21,06 | -24,0 % | PC.BOUDOT 3e | 8/87/175/2095 |
-| 7 | DEUX DE COUPE | 33 | 42 | 44,07 | -25,1 % | C.PACAUT | 48/84/50/973 |
-| 10 | JOHNNY DRIVE | 35 | 24 | 44,86 | -22,0 % | E.HARDOUIN | 27/287/33/385 |
-| 4 | STEEL DRUM | 42 | 42 | 68,03 | -38,3 % | C.LECOEUVRE | 13/117/1078/784 |
-| 6 | RENVERSANTE | 53 | 60 | 74,17 | -28,5 % | P.CHEYER | 109/26/3/161 |
-| 12 | PARISA | 70 | 31 | 118,06 | -40,7 % | C.BELMONT | 171/271/32/1112 |
+| 14 | BROMUS | 4,1 | 3,8 | 4,71 | -13,0 % | R.THOMAS | 75/132/437/3221 |
+| 2 | TOMOE GOZEN | 5,7 | 9,7 | 6,26 | -8,9 % | H.BOUTIN | 14/28/24/2604 |
+| 13 | MIA FAST | 6,3 | 5 | 6,85 | -8,0 % | F.VALLE SKAR | 35/132/993/3292 |
+| 1 | PETITE ABEILLE | 9,1 | 6,3 | 10,94 | -16,8 % | M.VELON | 28/26/1735/624 |
+| 5 | KOELLE ALAAF | 11 | 13 | 13,67 | -19,5 % | D.SANTIAGO | 15/220/835/3394 |
+| 3 | MARIA JOANA | 14 | 19 | 16,57 | -15,5 % | M.GUYON 4e | 4/40/246/3111 |
+| 9 | MANGAS | 15 | 30 | 17,98 | -16,6 % | T.BACHELOT | 16/117/3984/784 |
+| 8 | PRESSURE TEST | 16 | 27 | 21,22 | -24,6 % | PC.BOUDOT 3e | 8/87/175/2095 |
+| 11 | EVEROSE | 16 | 11 | 19,38 | -17,4 % | T.PICCONE | 9/112/3293/278 |
+| 10 | JOHNNY DRIVE | 30 | 24 | 38,02 | -21,1 % | E.HARDOUIN | 27/287/33/385 |
+| 7 | DEUX DE COUPE | 38 | 42 | 51,95 | -26,9 % | C.PACAUT | 48/84/50/973 |
+| 4 | STEEL DRUM | 49 | 42 | 81,13 | -39,6 % | C.LECOEUVRE | 13/117/1078/784 |
+| 6 | RENVERSANTE | 58 | 60 | 82,29 | -29,5 % | P.CHEYER | 109/26/3/161 |
+| 12 | PARISA | 84 | 31 | 143,79 | -41,6 % | C.BELMONT | 171/271/32/1112 |
