@@ -1,6 +1,6 @@
 # DEAUVILLE — 31/10/2026
 
-9 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -66,17 +66,17 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX ZEDDAAN
 
-*16h50 · plat · 1400 m · 7 partants · cotes de l'extraction*
+*16h50 · plat · 1400 m · 7 partants · cotes à T−29:55*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 2 | ROSZAL | 2,5 | 2,88 | -13,3 % | M.GUYON | 4/16/201/1422 |
-| 1 | VIGNELLI | 2,8 | 3,29 | -14,8 % | PC.BOUDOT 2e | 8/1/101/2126 |
-| 5 | MOONDANCE | 7,8 | 9,18 | -15,0 % | R.THOMAS | 75/11/26/184 |
-| 7 | TAXXI | 10 | 12,27 | -18,5 % | F.VALLE SKAR | 35/11/30/– |
-| 6 | AMETIS CHOPE | 11 | 14,70 | -25,2 % | E.HARDOUIN | 27/70/6/1684 |
-| 4 | ASKAM CHOPE | 20 | 31,06 | -35,6 % | A.WERLE | 29/62/6/984 |
-| 3 | MISS CHOCO | 22 | 30,81 | -28,6 % | A.MADAMET | 10/208/66/569 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 1 | VIGNELLI | 2,5 | 2,8 | 3,17 | -21,2 % | PC.BOUDOT 2e | 8/1/101/2126 |
+| 2 | ROSZAL | 2,9 | 2,5 | 2,98 | -2,7 % | M.GUYON | 4/16/201/1422 |
+| 5 | MOONDANCE | 7,7 | 7,8 | 8,86 | -13,1 % | R.THOMAS | 75/11/26/184 |
+| 6 | AMETIS CHOPE | 9,8 | 11 | 13,13 | -25,4 % | E.HARDOUIN | 27/70/6/1684 |
+| 7 | TAXXI | 11 | 10 | 13,44 | -18,2 % | F.VALLE SKAR | 35/11/30/– |
+| 3 | MISS CHOCO | 24 | 22 | 33,36 | -28,1 % | A.MADAMET | 10/208/66/569 |
+| 4 | ASKAM CHOPE | 24 | 20 | 35,84 | -33,0 % | A.WERLE | 29/62/6/984 |
 
 ### 5. PRIX LODD BY CHLOE (PRIX LITTLE MANJO)
 
