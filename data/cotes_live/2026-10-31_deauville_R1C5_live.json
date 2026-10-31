@@ -4,107 +4,98 @@
   "reunion": 1,
   "heure_depart": 1793460300000,
   "distance": 1900,
-  "scraped_at": "2026-10-31T16:04:05.509720+01:00",
-  "minutes_avant_depart": 21,
+  "scraped_at": "2026-10-31T16:08:05.438575+01:00",
+  "minutes_avant_depart": 17,
   "participants": [
     {
       "numPmu": 1,
       "nom": "CHARLESQUINT",
-      "cote_live": 14.0,
-      "cote_reference": 13.0,
-      "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1793459039000
-    },
-    {
-      "numPmu": 2,
-      "nom": "COSMO BEAU",
-      "cote_live": 6.0,
-      "cote_reference": 5.9,
-      "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1793459039000
-    },
-    {
-      "numPmu": 3,
-      "nom": "SCREEN SHOT",
-      "cote_live": 3.7,
-      "cote_reference": 6.3,
-      "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1793459039000
-    },
-    {
-      "numPmu": 4,
-      "nom": "MR FILERIN",
-      "cote_live": 12.0,
-      "cote_reference": 12.0,
-      "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1793459039000
-    },
-    {
-      "numPmu": 5,
-      "nom": "LINTERPRETE",
       "cote_live": 12.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793459039000
+      "timestamp_cote": 1793459281000
+    },
+    {
+      "numPmu": 2,
+      "nom": "COSMO BEAU",
+      "cote_live": 5.3,
+      "cote_reference": 5.2,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1793459281000
+    },
+    {
+      "numPmu": 3,
+      "nom": "SCREEN SHOT",
+      "cote_live": 3.4,
+      "cote_reference": 5.5,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1793459281000
+    },
+    {
+      "numPmu": 4,
+      "nom": "MR FILERIN",
+      "cote_live": 11.0,
+      "cote_reference": 11.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1793459281000
+    },
+    {
+      "numPmu": 5,
+      "nom": "LINTERPRETE",
+      "cote_live": 9.3,
+      "cote_reference": 9.9,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1793459281000
     },
     {
       "numPmu": 6,
       "nom": "LUCERO",
-      "cote_live": 35.0,
-      "cote_reference": 27.0,
+      "cote_live": 29.0,
+      "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793459039000
+      "timestamp_cote": 1793459281000
     },
     {
       "numPmu": 7,
       "nom": "SIR SPARKALOT",
       "cote_live": 18.0,
-      "cote_reference": 12.0,
+      "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793459039000
-    },
-    {
-      "numPmu": 8,
-      "nom": "GOLFEUR",
-      "cote_live": 8.4,
-      "cote_reference": 7.4,
-      "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1793459039000
+      "timestamp_cote": 1793459281000
     },
     {
       "numPmu": 9,
       "nom": "ART PIECE",
       "cote_live": 7.2,
-      "cote_reference": 6.3,
+      "cote_reference": 5.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793459039000
+      "timestamp_cote": 1793459281000
     },
     {
       "numPmu": 10,
       "nom": "SEPTIMUS",
-      "cote_live": 9.0,
-      "cote_reference": 7.6,
+      "cote_live": 7.8,
+      "cote_reference": 6.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793459039000
+      "timestamp_cote": 1793459281000
     },
     {
       "numPmu": 11,
       "nom": "ORLHENA",
-      "cote_live": 47.0,
-      "cote_reference": 33.0,
+      "cote_live": 35.0,
+      "cote_reference": 29.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793459039000
+      "timestamp_cote": 1793459281000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -158,6 +149,22 @@
         "9": 7.2,
         "10": 9.0,
         "11": 47.0
+      }
+    },
+    {
+      "scraped_at": "2026-10-31T16:08:05.438575+01:00",
+      "minutes_avant_depart": 16.913735683333336,
+      "cotes": {
+        "1": 12.0,
+        "2": 5.3,
+        "3": 3.4,
+        "4": 11.0,
+        "5": 9.3,
+        "6": 29.0,
+        "7": 18.0,
+        "9": 7.2,
+        "10": 7.8,
+        "11": 35.0
       }
     }
   ]
