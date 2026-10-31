@@ -1,28 +1,27 @@
 # KEENELAND — 31/10/2026
 
-12 courses.
+12 courses (3 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
 ### 1. MAIDEN SPECIAL WEIGHT 1400M
 
-*17h17 · plat · 1400 m · 11 partants · cotes de l'extraction*
+*17h17 · plat · 1400 m · 10 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | HIGHWAYMEN | – | J L ORTIZ | –/–/–/– |
-| 3 | TACAMO | – | A P ULLOA | –/–/–/– |
-| 4 | KNICKS DIAMONDS | – | F ARRIETA | –/–/–/– |
-| 5 | POWERLINE | – | F PRAT | –/–/–/– |
-| 6 | YOU WANT SOME | – | J ROSARIO | –/–/–/– |
-| 7 | BOURBON NEAT | – | A CONCEPCION | –/–/–/– |
-| 8 | SUPREME COMMANDER | – | T GAFFALIONE | –/–/–/435 |
-| 9 | MAHOGANY DREAM | – | B CURTIS | –/–/–/– |
-| 10 | BAYTOWN THRACIAN | – | O MOJICA, JR. | –/–/–/– |
-| 11 | OVERTIME BONUS | – | L SAEZ | –/–/–/– |
-| 12 | SHOCK VALUE | – | M FRANCO | –/–/–/– |
+| 5 | POWERLINE | 2,4 | F PRAT | –/–/–/– |
+| 2 | HIGHWAYMEN | 5 | J L ORTIZ | –/–/–/– |
+| 7 | BOURBON NEAT | 7,3 | A CONCEPCION | –/–/–/– |
+| 11 | OVERTIME BONUS | 7,7 | L SAEZ | –/–/–/– |
+| 8 | SUPREME COMMANDER | 9,2 | T GAFFALIONE | –/–/–/435 |
+| 4 | KNICKS DIAMONDS | 9,6 | F ARRIETA | –/–/–/– |
+| 9 | MAHOGANY DREAM | 25 | B CURTIS | –/–/–/– |
+| 12 | SHOCK VALUE | 27 | M FRANCO | –/–/–/– |
+| 6 | YOU WANT SOME | 45 | J ROSARIO | –/–/–/– |
+| 3 | TACAMO | 101 | A P ULLOA | –/–/–/– |
 
 ### 2. ALLOWANCE OPTIONAL CLAIMING 1400M
 
@@ -30,15 +29,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | BETTY SUE | – | A ESPINOZA |
-| 2 | GIRLS WEAR PEARLS | – | U RISPOLI |
-| 3 | MASTER QUEEN | – | J A TORRES |
-| 4 | HARMONIOUSLY | – | J L ORTIZ |
-| 5 | VIRABHADRASANA | – | F PRAT |
-| 6 | SHE'S TOASTY | – | L SAEZ |
-| 7 | FIZZYPOPBERRYTWIST | – | O MOJICA, JR. |
-| 8 | DON'T TELL MOM | – | J R VELAZQUEZ |
-| 9 | RIGHT IN TIME | – | J ALVARADO |
+| 9 | RIGHT IN TIME | 3,3 | J ALVARADO |
+| 8 | DON'T TELL MOM | 4,3 | J R VELAZQUEZ |
+| 4 | HARMONIOUSLY | 5,2 | J L ORTIZ |
+| 6 | SHE'S TOASTY | 5,7 | L SAEZ |
+| 5 | VIRABHADRASANA | 9,3 | F PRAT |
+| 3 | MASTER QUEEN | 13 | J A TORRES |
+| 2 | GIRLS WEAR PEARLS | 18 | U RISPOLI |
+| 1 | BETTY SUE | 23 | A ESPINOZA |
+| 7 | FIZZYPOPBERRYTWIST | 72 | O MOJICA, JR. |
 
 ### 3. ALLOWANCE OPTIONAL CLAIMING 1300M
 
@@ -66,7 +65,7 @@
 | 1 | LOOK FORWARD | – | U RISPOLI |
 | 2 | WAYS AND MEANS | – | F PRAT |
 | 4 | R DISASTER | – | T GAFFALIONE |
-| 5 | FOIE GRAS | – | R SANTANA, JR. |
+| 5 | FOIE GRAS | – | J ROSARIO |
 | 6 | MAJESTIC OOPS | – | F ARRIETA |
 | 7 | EVANESCENCE | – | L SAEZ |
 | 8 | KERRY'S KISS | – | E GONZALEZ |
@@ -141,7 +140,7 @@
 | 1 | MAD HOUSE | – | P LOPEZ | –/–/–/– |
 | 2 | DARK SAFFRON | – | C BEASLEY | –/–/–/– |
 | 3 | LIAM SMITH | – | M FRANCO | –/–/–/– |
-| 4 | HYMN | – | R SANTANA, JR. | –/–/–/– |
+| 4 | HYMN | – | R BEJARANO | –/–/–/– |
 | 5 | LISTENUPSHANCE | – | E JARAMILLO | –/–/–/– |
 | 6 | AMERICAN STAGE | – | O MURPHY | 144/684/–/– |
 | 7 | BUILT | – | L SAEZ | –/–/–/– |
@@ -213,10 +212,10 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | T O PASSWORD | – | K KIMURA | –/–/–/– |
-| 2 | SOVEREIGNTY | – | J ALVARADO | –/–/–/46 |
-| 3 | GOLDEN TEMPO | – | J L ORTIZ | –/–/–/– |
-| 4 | THE PUMA | – | J CASTELLANO | –/–/–/– |
-| 5 | FOREVER YOUNG | – | R SAKAI | –/684/–/2841 |
-| 7 | KNIGHTSBRIDGE | – | L SAEZ | –/–/–/46 |
-| 8 | NAPOLEON SOLO | – | J R VELAZQUEZ | –/–/–/– |
+| 5 | FOREVER YOUNG | 2,8 | R SAKAI | –/684/–/2841 |
+| 2 | SOVEREIGNTY | 3,1 | J ALVARADO | –/–/–/46 |
+| 3 | GOLDEN TEMPO | 5,1 | J L ORTIZ | –/–/–/– |
+| 7 | KNIGHTSBRIDGE | 7 | L SAEZ | –/–/–/46 |
+| 4 | THE PUMA | 12 | J CASTELLANO | –/–/–/– |
+| 8 | NAPOLEON SOLO | 12 | J R VELAZQUEZ | –/–/–/– |
+| 1 | T O PASSWORD | 37 | K KIMURA | –/–/–/– |

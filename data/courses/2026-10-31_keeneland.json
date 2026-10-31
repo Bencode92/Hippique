@@ -1,7 +1,7 @@
 {
   "hippodrome": "KEENELAND",
   "type_reunion": "Plat",
-  "date_extraction": "2026-10-31T14:59:43.286342",
+  "date_extraction": "2026-10-31T16:35:30.471192",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/31102026/R4",
   "courses": [
     {
@@ -12,6 +12,29 @@
       "distance": "1400m",
       "url": "",
       "participants": [
+        {
+          "n°": "5",
+          "cheval": "POWERLINE M.PU. 2 a.",
+          "cheval_url": "",
+          "père_mère": "Par: FLIGHTLINE et PARK AVENUE (QUALITY ROAD)",
+          "corde": "(Corde:05)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261031/U14/1/20261031-U14-1-5.png",
+          "propriétaire": "WEST POINT THOROUGHBREDS (TERREN",
+          "entraineur": "S M ASMUSSEN",
+          "éleveurs": "",
+          "jockey": "F PRAT",
+          "poids": "54 kg",
+          "gains": "2990000",
+          "musique": "4p2p",
+          "valeur": "54.0",
+          "equipement(s)": "",
+          "nb_courses": 2,
+          "nb_victoires": 0,
+          "nb_places": 2,
+          "cote": 2.4,
+          "cote_tendance": "",
+          "arrivee": 1
+        },
         {
           "n°": "2",
           "cheval": "HIGHWAYMEN M.PU. 2 a.",
@@ -30,27 +53,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
-          "n°": "3",
-          "cheval": "TACAMO H.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: TACITUS et PURR (BLUEGRASS CAT)",
-          "corde": "(Corde:03)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261031/U14/1/20261031-U14-1-3.png",
-          "propriétaire": "KENIA HERNANDEZ",
-          "entraineur": "K HERNANDEZ",
-          "éleveurs": "",
-          "jockey": "A P ULLOA",
-          "poids": "54 kg",
-          "gains": "676000",
-          "musique": "2p5p",
-          "valeur": "54.0",
-          "equipement(s)": "",
-          "nb_courses": 2,
-          "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 0,
+          "cote": 5.0,
+          "cote_tendance": "",
+          "arrivee": 2
         },
         {
           "n°": "4",
@@ -70,47 +76,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 1
-        },
-        {
-          "n°": "5",
-          "cheval": "POWERLINE M.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: FLIGHTLINE et PARK AVENUE (QUALITY ROAD)",
-          "corde": "(Corde:05)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261031/U14/1/20261031-U14-1-5.png",
-          "propriétaire": "WEST POINT THOROUGHBREDS (TERREN",
-          "entraineur": "S M ASMUSSEN",
-          "éleveurs": "",
-          "jockey": "F PRAT",
-          "poids": "54 kg",
-          "gains": "2990000",
-          "musique": "4p2p",
-          "valeur": "54.0",
-          "equipement(s)": "",
-          "nb_courses": 2,
-          "nb_victoires": 0,
-          "nb_places": 2
-        },
-        {
-          "n°": "6",
-          "cheval": "YOU WANT SOME M.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: VOLATILE et CHANEL'S LEGACY (DOMINUS)",
-          "corde": "(Corde:06)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261031/U14/1/20261031-U14-1-6.png",
-          "propriétaire": "RAYMOND C. BRYNER",
-          "entraineur": "R C BRYNER",
-          "éleveurs": "",
-          "jockey": "J ROSARIO",
-          "poids": "54 kg",
-          "gains": "550000",
-          "musique": "5p7p5p",
-          "valeur": "54.0",
-          "equipement(s)": "",
-          "nb_courses": 3,
-          "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 1,
+          "cote": 9.6,
+          "cote_tendance": "",
+          "arrivee": 3
         },
         {
           "n°": "7",
@@ -130,7 +99,54 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.3,
+          "cote_tendance": "",
+          "arrivee": 4
+        },
+        {
+          "n°": "3",
+          "cheval": "TACAMO H.PU. 2 a.",
+          "cheval_url": "",
+          "père_mère": "Par: TACITUS et PURR (BLUEGRASS CAT)",
+          "corde": "(Corde:03)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261031/U14/1/20261031-U14-1-3.png",
+          "propriétaire": "KENIA HERNANDEZ",
+          "entraineur": "K HERNANDEZ",
+          "éleveurs": "",
+          "jockey": "A P ULLOA",
+          "poids": "54 kg",
+          "gains": "676000",
+          "musique": "2p5p",
+          "valeur": "54.0",
+          "equipement(s)": "",
+          "nb_courses": 2,
+          "nb_victoires": 0,
+          "nb_places": 2,
+          "cote": 101.0,
+          "cote_tendance": ""
+        },
+        {
+          "n°": "6",
+          "cheval": "YOU WANT SOME M.PU. 2 a.",
+          "cheval_url": "",
+          "père_mère": "Par: VOLATILE et CHANEL'S LEGACY (DOMINUS)",
+          "corde": "(Corde:06)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261031/U14/1/20261031-U14-1-6.png",
+          "propriétaire": "RAYMOND C. BRYNER",
+          "entraineur": "R C BRYNER",
+          "éleveurs": "",
+          "jockey": "J ROSARIO",
+          "poids": "54 kg",
+          "gains": "550000",
+          "musique": "5p7p5p",
+          "valeur": "54.0",
+          "equipement(s)": "",
+          "nb_courses": 3,
+          "nb_victoires": 0,
+          "nb_places": 2,
+          "cote": 45.0,
+          "cote_tendance": ""
         },
         {
           "n°": "8",
@@ -150,7 +166,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 9.2,
+          "cote_tendance": ""
         },
         {
           "n°": "9",
@@ -170,27 +188,9 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 0,
-          "nb_places": 3
-        },
-        {
-          "n°": "10",
-          "cheval": "BAYTOWN THRACIAN M.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: SHARP AZTECA et CROSS ROADS (QUALITY ROAD)",
-          "corde": "(Corde:10)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261031/U14/1/20261031-U14-1-10.png",
-          "propriétaire": "BAYTOWN PARTNERSHIPS (CHERYL MCE",
-          "entraineur": "P MCENTEE",
-          "éleveurs": "",
-          "jockey": "O MOJICA, JR.",
-          "poids": "51.5 kg",
-          "gains": "50000",
-          "musique": "7p",
-          "valeur": "51.5",
-          "equipement(s)": "",
-          "nb_courses": 1,
-          "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 3,
+          "cote": 25.0,
+          "cote_tendance": ""
         },
         {
           "n°": "11",
@@ -210,7 +210,9 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 7.7,
+          "cote_tendance": ""
         },
         {
           "n°": "12",
@@ -230,13 +232,16 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 27.0,
+          "cote_tendance": ""
         }
       ],
       "typePiste": "GAZON",
       "terrain": "PSF RAPIDE",
       "penetrometre": "",
-      "cordeCourse": "CORDE_GAUCHE"
+      "cordeCourse": "CORDE_GAUCHE",
+      "arrivee_definitive": true
     },
     {
       "nom": "ALLOWANCE OPTIONAL CLAIMING 1400M",
@@ -264,7 +269,9 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 23.0,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -284,7 +291,9 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 18.0,
+          "cote_tendance": ""
         },
         {
           "n°": "3",
@@ -304,7 +313,9 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 13.0,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -324,7 +335,9 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 5.2,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -344,7 +357,9 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 9.3,
+          "cote_tendance": ""
         },
         {
           "n°": "6",
@@ -364,7 +379,9 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 5.7,
+          "cote_tendance": ""
         },
         {
           "n°": "7",
@@ -384,7 +401,9 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 1,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 72.0,
+          "cote_tendance": ""
         },
         {
           "n°": "8",
@@ -404,7 +423,9 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 4.3,
+          "cote_tendance": ""
         },
         {
           "n°": "9",
@@ -424,7 +445,9 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.3,
+          "cote_tendance": ""
         }
       ],
       "typePiste": "GAZON",
@@ -724,7 +747,7 @@
           "propriétaire": "PARADISE FARMS CORP. (PETER PROS",
           "entraineur": "M J MAKER",
           "éleveurs": "",
-          "jockey": "R SANTANA, JR.",
+          "jockey": "J ROSARIO",
           "poids": "56 kg",
           "gains": "69717600",
           "musique": "1p2p3p2p1p",
@@ -1720,7 +1743,7 @@
           "propriétaire": "FLEUR DE LIS STABLES (NAVEED CHO",
           "entraineur": "R MOQUETT",
           "éleveurs": "",
-          "jockey": "R SANTANA, JR.",
+          "jockey": "R BEJARANO",
           "poids": "57 kg",
           "gains": "76363900",
           "musique": "1p2p1p1p1p",
@@ -2664,7 +2687,9 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 5,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 37.0,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -2684,7 +2709,9 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 7,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 3.1,
+          "cote_tendance": ""
         },
         {
           "n°": "3",
@@ -2704,7 +2731,9 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 4,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 5.1,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -2724,7 +2753,9 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 2,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 12.0,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -2744,7 +2775,9 @@
           "equipement(s)": "",
           "nb_courses": 16,
           "nb_victoires": 12,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 2.8,
+          "cote_tendance": ""
         },
         {
           "n°": "7",
@@ -2764,7 +2797,9 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 8,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 7.0,
+          "cote_tendance": ""
         },
         {
           "n°": "8",
@@ -2784,7 +2819,9 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 3,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 12.0,
+          "cote_tendance": ""
         }
       ],
       "typePiste": "GAZON",
