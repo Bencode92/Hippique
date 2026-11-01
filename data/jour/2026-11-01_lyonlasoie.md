@@ -1,6 +1,6 @@
 # LYON LA SOIE — 01/11/2026
 
-8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
@@ -121,25 +121,25 @@
 
 ### 7. PRIX #RACEANDCARE - PX DU LOT ET GARONNE
 
-*16h45 · attelé · 2700 m · 15 partants · cotes de l'extraction*
+*16h45 · attelé · 2700 m · 15 partants · cotes à T−2:12*
 
-| n° | cheval | cote | jockey |
-|--:|:--|--:|:--|
-| 13 | KISS ME JULRY | 3,5 | J.P. GAUVIN |
-| 6 | JASTAR | 5 | D. BEKAERT |
-| 15 | KRISTAL DREAM | 5,1 | TH. BRIAND |
-| 10 | KEROS DES BAUX | 5,9 | B. CHAUVE-LAFFAY |
-| 2 | KHAZIM | 11 | L. LAMAZIERE |
-| 11 | KONDOR | 13 | M.J. BARCELO BISQUERRA |
-| 12 | IBIZA DE BOURGOGNE | 23 | P. CALLIER |
-| 7 | KAMA HIGHLAND | 38 | F.J. PELTIER |
-| 8 | IMPACT OAKS | 53 | G. VIDAL |
-| 14 | GOLDEN VIKING | 62 | A. TINTILLIER |
-| 4 | IDEAL LOVER | 98 | M. MESSAGER |
-| 3 | JAMBEROO | 138 | F. BROUST |
-| 9 | ILOVIROIZ DI LEONE | 138 | J. FILOGRASSO |
-| 1 | JAMY DE SAMPANGES | 172 | B. THIENNE |
-| 5 | KIM BLUE | – | A. BONNEFOY |
+| n° | cheval | cote | matin | jockey |
+|--:|:--|--:|--:|:--|
+| 13 | KISS ME JULRY | 3 | 3,5 | J.P. GAUVIN |
+| 15 | KRISTAL DREAM | 4,8 | 5,1 | TH. BRIAND |
+| 10 | KEROS DES BAUX | 6,1 | 5,9 | B. CHAUVE-LAFFAY |
+| 6 | JASTAR | 6,7 | 5 | D. BEKAERT |
+| 2 | KHAZIM | 13 | 11 | L. LAMAZIERE |
+| 11 | KONDOR | 16 | 13 | M.J. BARCELO BISQUERRA |
+| 12 | IBIZA DE BOURGOGNE | 24 | 23 | P. CALLIER |
+| 7 | KAMA HIGHLAND | 34 | 38 | F.J. PELTIER |
+| 8 | IMPACT OAKS | 54 | 53 | G. VIDAL |
+| 14 | GOLDEN VIKING | 59 | 62 | A. TINTILLIER |
+| 9 | ILOVIROIZ DI LEONE | 75 | 138 | J. FILOGRASSO |
+| 3 | JAMBEROO | 81 | 138 | F. BROUST |
+| 4 | IDEAL LOVER | 81 | 98 | M. MESSAGER |
+| 1 | JAMY DE SAMPANGES | 103 | 172 | B. THIENNE |
+| 5 | KIM BLUE | 162 | – | A. BONNEFOY |
 
 ### 8. PRIX ROLAND THEVENOUX
 
