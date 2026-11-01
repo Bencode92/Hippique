@@ -143,19 +143,19 @@
 
 ### 8. PRIX ROLAND THEVENOUX
 
-*17h15 · attelé · 2700 m · 12 partants · cotes à T−16:12*
+*17h15 · attelé · 2700 m · 12 partants · cotes à T−12:12*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 11 | JESCO DE LA VALLEE | 3,1 | 4,8 | Mme V. BOUDIER-CORMY |
-| 12 | JEANNOT DU SABLIER | 3,4 | 3,1 | Mlle S. BLANCHETIERE |
-| 4 | JOJO DE BOURGOGNE | 9,1 | 6,9 | G. BLANCHARD |
-| 1 | KASHMIR GRIFF | 13 | 19 | R. TURCAN |
-| 13 | JE REVE DE TOI | 15 | 11 | S. ZEGHOUANI |
-| 10 | IDRA DESBOIS | 16 | 13 | Mme L. CURY |
-| 5 | KALINE LAURA | 20 | 13 | PHILIPPE SEILER |
-| 7 | IALTA DE BERTRANGE | 22 | 23 | A. LEGRAND |
-| 8 | ISIS DE REYNALD | 22 | 23 | B. FEDRY |
-| 6 | KIMBRA DJOC | 25 | 29 | Mlle M. GOBET |
+| 11 | JESCO DE LA VALLEE | 2,6 | 4,8 | Mme V. BOUDIER-CORMY |
+| 12 | JEANNOT DU SABLIER | 3,9 | 3,1 | Mlle S. BLANCHETIERE |
+| 4 | JOJO DE BOURGOGNE | 9,8 | 6,9 | G. BLANCHARD |
+| 13 | JE REVE DE TOI | 12 | 11 | S. ZEGHOUANI |
+| 1 | KASHMIR GRIFF | 15 | 19 | R. TURCAN |
+| 10 | IDRA DESBOIS | 18 | 13 | Mme L. CURY |
+| 5 | KALINE LAURA | 24 | 13 | PHILIPPE SEILER |
+| 7 | IALTA DE BERTRANGE | 24 | 23 | A. LEGRAND |
+| 8 | ISIS DE REYNALD | 24 | 23 | B. FEDRY |
+| 6 | KIMBRA DJOC | 30 | 29 | Mlle M. GOBET |
 | 2 | JAVA DE NERET | 40 | 23 | A. PISTILLI |
-| 3 | KARMA KILY | 66 | 58 | N. CHAMBION |
+| 3 | KARMA KILY | 49 | 58 | N. CHAMBION |
