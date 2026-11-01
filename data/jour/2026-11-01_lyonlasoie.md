@@ -143,19 +143,19 @@
 
 ### 8. PRIX ROLAND THEVENOUX
 
-*17h15 · attelé · 2700 m · 12 partants · cotes à T−12:12*
+*17h15 · attelé · 2700 m · 12 partants · cotes à T−8:12*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 11 | JESCO DE LA VALLEE | 2,6 | 4,8 | Mme V. BOUDIER-CORMY |
-| 12 | JEANNOT DU SABLIER | 3,9 | 3,1 | Mlle S. BLANCHETIERE |
-| 4 | JOJO DE BOURGOGNE | 9,8 | 6,9 | G. BLANCHARD |
+| 11 | JESCO DE LA VALLEE | 2,5 | 4,8 | Mme V. BOUDIER-CORMY |
+| 12 | JEANNOT DU SABLIER | 3,6 | 3,1 | Mlle S. BLANCHETIERE |
+| 4 | JOJO DE BOURGOGNE | 11 | 6,9 | G. BLANCHARD |
 | 13 | JE REVE DE TOI | 12 | 11 | S. ZEGHOUANI |
-| 1 | KASHMIR GRIFF | 15 | 19 | R. TURCAN |
-| 10 | IDRA DESBOIS | 18 | 13 | Mme L. CURY |
-| 5 | KALINE LAURA | 24 | 13 | PHILIPPE SEILER |
-| 7 | IALTA DE BERTRANGE | 24 | 23 | A. LEGRAND |
-| 8 | ISIS DE REYNALD | 24 | 23 | B. FEDRY |
-| 6 | KIMBRA DJOC | 30 | 29 | Mlle M. GOBET |
-| 2 | JAVA DE NERET | 40 | 23 | A. PISTILLI |
-| 3 | KARMA KILY | 49 | 58 | N. CHAMBION |
+| 1 | KASHMIR GRIFF | 16 | 19 | R. TURCAN |
+| 10 | IDRA DESBOIS | 19 | 13 | Mme L. CURY |
+| 7 | IALTA DE BERTRANGE | 20 | 23 | A. LEGRAND |
+| 5 | KALINE LAURA | 26 | 13 | PHILIPPE SEILER |
+| 8 | ISIS DE REYNALD | 29 | 23 | B. FEDRY |
+| 6 | KIMBRA DJOC | 36 | 29 | Mlle M. GOBET |
+| 2 | JAVA DE NERET | 48 | 23 | A. PISTILLI |
+| 3 | KARMA KILY | 48 | 58 | N. CHAMBION |
