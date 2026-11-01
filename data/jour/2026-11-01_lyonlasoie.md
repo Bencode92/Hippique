@@ -1,8 +1,8 @@
 # LYON LA SOIE — 01/11/2026
 
-8 courses.
+8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
@@ -12,16 +12,16 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | ORAGE NIVERNAIS | – | P. CALLIER |
-| 2 | OAKLANDER | – | ALEXIS LERENARD |
-| 3 | OREADE D'URZY | – | B. THIENNE |
-| 4 | OLIGO ONE | – | B. CHOURRE |
-| 5 | OUTLAND DE BUSSET | – | L. LAMAZIERE |
-| 6 | ORNELLA IROISE | – | MARTIN CORMY |
-| 7 | ORAGE D'AVRIL | – | TH. BRIAND |
-| 8 | OPEN D'OAM | – | M.J. BARCELO BISQUERRA |
-| 9 | ONDINE STAR | – | L. VERRIERE |
-| 10 | OASIS SIXTY ONE | – | D. BEKAERT |
+| 10 | OASIS SIXTY ONE | 3,2 | D. BEKAERT |
+| 5 | OUTLAND DE BUSSET | 5 | L. LAMAZIERE |
+| 7 | ORAGE D'AVRIL | 5,4 | TH. BRIAND |
+| 8 | OPEN D'OAM | 7,6 | M.J. BARCELO BISQUERRA |
+| 9 | ONDINE STAR | 13 | L. VERRIERE |
+| 1 | ORAGE NIVERNAIS | 16 | P. CALLIER |
+| 6 | ORNELLA IROISE | 16 | MARTIN CORMY |
+| 4 | OLIGO ONE | 18 | B. CHOURRE |
+| 3 | OREADE D'URZY | 31 | B. THIENNE |
+| 2 | OAKLANDER | 31 | ALEXIS LERENARD |
 
 ### 2. PRIX DES CHEVALIERS (GR A)
 
@@ -29,56 +29,56 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | NEZ AU VENT LARZIZ | – | B. CHAUVE-LAFFAY |
-| 2 | NIKAIA WIND | – | L. DURANTET |
-| 3 | NAPOLEON DE CHENOU | – | P. CALLIER |
-| 4 | NOISETTE DOREE | – | B. THOMAS |
-| 5 | NIKITA D'ALEX | – | F. BROUST |
-| 6 | NOISETTE D'HAGUE | – | A. TINTILLIER |
-| 7 | NOOR DE JOUDES | – | TH. BRIAND |
-| 8 | NEIGE FELINE | – | L. VERRIERE |
-| 9 | NO ONE D'AUBIGNY | – | B. CHOURRE |
-| 10 | NEIGE DE CORMATIN | – | MARTIN CORMY |
-| 11 | NEBULEUSE LOUANGES | – | PH. DANTHU |
-| 12 | NIMBUS DES BROUETS | – | D. BEKAERT |
+| 12 | NIMBUS DES BROUETS | 3,5 | D. BEKAERT |
+| 10 | NEIGE DE CORMATIN | 4,3 | MARTIN CORMY |
+| 7 | NOOR DE JOUDES | 4,6 | TH. BRIAND |
+| 9 | NO ONE D'AUBIGNY | 13 | B. CHOURRE |
+| 6 | NOISETTE D'HAGUE | 17 | A. TINTILLIER |
+| 2 | NIKAIA WIND | 18 | L. DURANTET |
+| 11 | NEBULEUSE LOUANGES | 22 | PH. DANTHU |
+| 1 | NEZ AU VENT LARZIZ | 26 | B. CHAUVE-LAFFAY |
+| 5 | NIKITA D'ALEX | 26 | F. BROUST |
+| 3 | NAPOLEON DE CHENOU | 26 | P. CALLIER |
+| 4 | NOISETTE DOREE | 31 | B. THOMAS |
+| 8 | NEIGE FELINE | 32 | L. VERRIERE |
 
 ### 3. PRIX DES CHEVALIERS (GR B)
 
 *14h45 · attelé · 2050 m · 12 partants · cotes à T−0:09*
 
-| n° | cheval | cote | jockey |
-|--:|:--|--:|:--|
-| 10 | NEW SCOTT | 2,3 | TH. BRIAND |
-| 8 | NELLY DE BERTRANGE | 5,9 | D. BEKAERT |
-| 4 | NEED YOU D'EMOTION | 11 | B. CHAUVE-LAFFAY |
-| 5 | NOBEL DU LOISIR | 11 | ALEXIS LERENARD |
-| 6 | NOUKI DES SOURCES | 11 | P. CALLIER |
-| 7 | NECTAR DE CHANLECY | 12 | F.J. PELTIER |
-| 11 | NICKEL DE VAUVILLE | 19 | MARTIN CORMY |
-| 12 | NASKO DU HAUTVENT | 19 | B. THOMAS |
-| 1 | NOBLE SMILE | 23 | L. LAMAZIERE |
-| 2 | NEW YORK DU BOURG | 43 | L. DURANTET |
-| 3 | NOEMIE RIDGEHEAD | 63 | F. BROUST |
-| 9 | NEMO DES ANDRAUX | 82 | L. BRECHAT |
+| n° | cheval | cote | matin | jockey |
+|--:|:--|--:|--:|:--|
+| 10 | NEW SCOTT | 2,3 | 2,5 | TH. BRIAND |
+| 8 | NELLY DE BERTRANGE | 5,9 | 5 | D. BEKAERT |
+| 5 | NOBEL DU LOISIR | 11 | 11 | ALEXIS LERENARD |
+| 4 | NEED YOU D'EMOTION | 11 | 14 | B. CHAUVE-LAFFAY |
+| 6 | NOUKI DES SOURCES | 11 | 11 | P. CALLIER |
+| 7 | NECTAR DE CHANLECY | 12 | 10 | F.J. PELTIER |
+| 11 | NICKEL DE VAUVILLE | 19 | 14 | MARTIN CORMY |
+| 12 | NASKO DU HAUTVENT | 19 | 20 | B. THOMAS |
+| 1 | NOBLE SMILE | 23 | 26 | L. LAMAZIERE |
+| 2 | NEW YORK DU BOURG | 43 | 50 | L. DURANTET |
+| 3 | NOEMIE RIDGEHEAD | 63 | 66 | F. BROUST |
+| 9 | NEMO DES ANDRAUX | 82 | 81 | L. BRECHAT |
 
 ### 4. PRIX DES COLVERTS (GR A)
 
 *15h15 · attelé · 2700 m · 12 partants · cotes à T−24:50*
 
-| n° | cheval | cote | jockey |
-|--:|:--|--:|:--|
-| 9 | MERCI RAFALE | 2,4 | J.P. GAUVIN |
-| 8 | MALICE BERRY | 5,8 | B. CHAUVE-LAFFAY |
-| 10 | MOON DE MONTCIANT | 7,5 | A. TINTILLIER |
-| 3 | MIAMI JULRY | 8,8 | D. BEKAERT |
-| 1 | MON LUCERNAIS | 9,9 | P. CALLIER |
-| 2 | MAGIC DU SABLIER | 22 | B. THOMAS |
-| 6 | MOLLY D'ACADIE | 22 | D. JAMARD |
-| 7 | MERCI MERCY | 26 | L. LAMAZIERE |
-| 4 | MARQUIS DES CHAMPS | 39 | O. MERLE |
-| 12 | MILADY OAKS | 39 | G. VIDAL |
-| 5 | MISS DE MAI | 79 | D. MARASCO |
-| 11 | MOME DES ANDRAUX | 79 | L. BRECHAT |
+| n° | cheval | cote | matin | jockey |
+|--:|:--|--:|--:|:--|
+| 9 | MERCI RAFALE | 2,4 | 2,6 | J.P. GAUVIN |
+| 8 | MALICE BERRY | 5,8 | 6,3 | B. CHAUVE-LAFFAY |
+| 10 | MOON DE MONTCIANT | 7,5 | 8 | A. TINTILLIER |
+| 3 | MIAMI JULRY | 8,8 | 8 | D. BEKAERT |
+| 1 | MON LUCERNAIS | 9,9 | 11 | P. CALLIER |
+| 2 | MAGIC DU SABLIER | 22 | 25 | B. THOMAS |
+| 6 | MOLLY D'ACADIE | 22 | 12 | D. JAMARD |
+| 7 | MERCI MERCY | 26 | 29 | L. LAMAZIERE |
+| 4 | MARQUIS DES CHAMPS | 39 | 17 | O. MERLE |
+| 12 | MILADY OAKS | 39 | 35 | G. VIDAL |
+| 5 | MISS DE MAI | 79 | 88 | D. MARASCO |
+| 11 | MOME DES ANDRAUX | 79 | 88 | L. BRECHAT |
 
 ### 5. PRIX DES COLVERTS (GR B)
 
@@ -86,18 +86,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MERIDIA MENUET | – | L. VERRIERE |
+| 12 | MAESTRA DU PRATOU | 3,4 | J.PH. DUCHER |
+| 5 | MERLIN D'YVEL | 4,9 | G. FOURNIGAULT |
+| 11 | MODIANO MAY | 6,2 | TH. BRIAND |
+| 4 | MAGNUS SEN | 7,6 | M. MESSAGER |
+| 3 | MUSE JULRY | 11 | J.P. GAUVIN |
+| 8 | MORNINGSUN DU RHIN | 13 | MARTIN CORMY |
+| 9 | MAIK DU HAUTVENT | 17 | B. THOMAS |
+| 10 | MAYBE LOUANGES | 19 | F. BROUST |
+| 7 | MAESTRO GRIFF | 22 | P. CALLIER |
+| 6 | MAGNUS ROMO | 34 | PH. DANTHU |
+| 1 | MERIDIA MENUET | 137 | L. VERRIERE |
 | 2 | MAGHEERA GRIFF | – | ALEXIS LERENARD |
-| 3 | MUSE JULRY | – | J.P. GAUVIN |
-| 4 | MAGNUS SEN | – | M. MESSAGER |
-| 5 | MERLIN D'YVEL | – | G. FOURNIGAULT |
-| 6 | MAGNUS ROMO | – | PH. DANTHU |
-| 7 | MAESTRO GRIFF | – | P. CALLIER |
-| 8 | MORNINGSUN DU RHIN | – | MARTIN CORMY |
-| 9 | MAIK DU HAUTVENT | – | B. THOMAS |
-| 10 | MAYBE LOUANGES | – | F. BROUST |
-| 11 | MODIANO MAY | – | TH. BRIAND |
-| 12 | MAESTRA DU PRATOU | – | J.PH. DUCHER |
 
 ### 6. PRIX DES GRIVES
 
@@ -105,19 +105,19 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | LOMBARDO | – | C. TRIBOLET |
-| 2 | LEMON JULRY | – | TH. BRIAND |
-| 3 | LILY CARNOIS | – | MARTIN CORMY |
-| 4 | LOVE LAND LOVA | – | L. GARCIA |
-| 5 | LUPIN D'ETE | – | J.PH. DUCHER |
-| 6 | L'ESPOIR | – | D. BEKAERT |
-| 7 | LAGON DES BROUETS | – | P. CALLIER |
-| 8 | LULU JIVE | – | M.J. BARCELO BISQUERRA |
-| 9 | LE SAP | – | A. TINTILLIER |
-| 10 | LOVER MAUZUN | – | B. CHAUVE-LAFFAY |
-| 11 | LIZZY DE JOUDES | – | G. LAURENT |
-| 12 | LORD JULRY | – | J.P. GAUVIN |
-| 13 | LEI E BELLA | – | L. LAMAZIERE |
+| 5 | LUPIN D'ETE | 3,5 | J.PH. DUCHER |
+| 8 | LULU JIVE | 6,6 | M.J. BARCELO BISQUERRA |
+| 12 | LORD JULRY | 6,7 | J.P. GAUVIN |
+| 4 | LOVE LAND LOVA | 8,2 | L. GARCIA |
+| 2 | LEMON JULRY | 11 | TH. BRIAND |
+| 10 | LOVER MAUZUN | 11 | B. CHAUVE-LAFFAY |
+| 9 | LE SAP | 13 | A. TINTILLIER |
+| 7 | LAGON DES BROUETS | 14 | P. CALLIER |
+| 3 | LILY CARNOIS | 26 | MARTIN CORMY |
+| 11 | LIZZY DE JOUDES | 36 | G. LAURENT |
+| 6 | L'ESPOIR | 48 | D. BEKAERT |
+| 1 | LOMBARDO | 57 | C. TRIBOLET |
+| 13 | LEI E BELLA | 288 | L. LAMAZIERE |
 
 ### 7. PRIX #RACEANDCARE - PX DU LOT ET GARONNE
 
@@ -125,38 +125,37 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | JAMY DE SAMPANGES | – | B. THIENNE |
-| 2 | KHAZIM | – | L. LAMAZIERE |
-| 3 | JAMBEROO | – | F. BROUST |
-| 4 | IDEAL LOVER | – | M. MESSAGER |
+| 10 | KEROS DES BAUX | 3,9 | B. CHAUVE-LAFFAY |
+| 6 | JASTAR | 4,6 | D. BEKAERT |
+| 13 | KISS ME JULRY | 4,6 | J.P. GAUVIN |
+| 15 | KRISTAL DREAM | 5,8 | TH. BRIAND |
+| 11 | KONDOR | 13 | M.J. BARCELO BISQUERRA |
+| 2 | KHAZIM | 19 | L. LAMAZIERE |
+| 14 | GOLDEN VIKING | 24 | A. TINTILLIER |
+| 12 | IBIZA DE BOURGOGNE | 27 | P. CALLIER |
+| 9 | ILOVIROIZ DI LEONE | 39 | J. FILOGRASSO |
+| 4 | IDEAL LOVER | 48 | M. MESSAGER |
+| 3 | JAMBEROO | 65 | F. BROUST |
+| 1 | JAMY DE SAMPANGES | 97 | B. THIENNE |
+| 8 | IMPACT OAKS | 97 | G. VIDAL |
 | 5 | KIM BLUE | – | A. BONNEFOY |
-| 6 | JASTAR | – | D. BEKAERT |
 | 7 | KAMA HIGHLAND | – | F.J. PELTIER |
-| 8 | IMPACT OAKS | – | G. VIDAL |
-| 9 | ILOVIROIZ DI LEONE | – | J. FILOGRASSO |
-| 10 | KEROS DES BAUX | – | B. CHAUVE-LAFFAY |
-| 11 | KONDOR | – | M.J. BARCELO BISQUERRA |
-| 12 | IBIZA DE BOURGOGNE | – | P. CALLIER |
-| 13 | KISS ME JULRY | – | J.P. GAUVIN |
-| 14 | GOLDEN VIKING | – | A. TINTILLIER |
-| 15 | KRISTAL DREAM | – | TH. BRIAND |
 
 ### 8. PRIX ROLAND THEVENOUX
 
-*17h15 · attelé · 2700 m · 13 partants · cotes de l'extraction*
+*17h15 · attelé · 2700 m · 12 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KASHMIR GRIFF | – | R. TURCAN |
-| 2 | JAVA DE NERET | – | A. PISTILLI |
+| 12 | JEANNOT DU SABLIER | 3,1 | Mlle S. BLANCHETIERE |
+| 11 | JESCO DE LA VALLEE | 4,8 | Mme V. BOUDIER-CORMY |
+| 4 | JOJO DE BOURGOGNE | 8 | G. BLANCHARD |
+| 10 | IDRA DESBOIS | 9,7 | Mme L. CURY |
+| 13 | JE REVE DE TOI | 11 | S. ZEGHOUANI |
+| 5 | KALINE LAURA | 12 | PHILIPPE SEILER |
+| 1 | KASHMIR GRIFF | 17 | R. TURCAN |
+| 8 | ISIS DE REYNALD | 17 | B. FEDRY |
+| 2 | JAVA DE NERET | 22 | A. PISTILLI |
+| 6 | KIMBRA DJOC | 22 | Mlle M. GOBET |
+| 7 | IALTA DE BERTRANGE | 88 | A. LEGRAND |
 | 3 | KARMA KILY | – | N. CHAMBION |
-| 4 | JOJO DE BOURGOGNE | – | G. BLANCHARD |
-| 5 | KALINE LAURA | – | PHILIPPE SEILER |
-| 6 | KIMBRA DJOC | – | Mlle M. GOBET |
-| 7 | IALTA DE BERTRANGE | – | A. LEGRAND |
-| 8 | ISIS DE REYNALD | – | B. FEDRY |
-| 9 | HARKANSAS DE L'OZE | – | D. LAPRAY |
-| 10 | IDRA DESBOIS | – | Mme L. CURY |
-| 11 | JESCO DE LA VALLEE | – | Mme V. BOUDIER-CORMY |
-| 12 | JEANNOT DU SABLIER | – | Mlle S. BLANCHETIERE |
-| 13 | JE REVE DE TOI | – | S. ZEGHOUANI |

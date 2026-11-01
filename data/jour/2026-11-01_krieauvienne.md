@@ -1,8 +1,8 @@
 # KRIEAU (VIENNE) — 01/11/2026
 
-6 courses.
+6 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
@@ -12,18 +12,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | SUPER TRACK | – | WOLFGANG RUTH |
-| 2 | PROSECCO DANCING | – | HUBERT BRANDSTATTER |
+| 1 | SUPER TRACK | 5,2 | WOLFGANG RUTH |
+| 2 | PROSECCO DANCING | 5,2 | HUBERT BRANDSTATTER |
+| 4 | JOCELYN DAY | 5,2 | FRANZ KONLECHNER |
+| 7 | ODIN VRIJTHOUT | 5,2 | HANS ORTNER |
+| 11 | TRUE BLUE | 5,2 | ERICH HANDLOS |
+| 12 | OBERON VRIJTHOUT | 5,2 | MARIO ZANDERIGO |
 | 3 | PERON GREENWOOD | – | Mme CORNELIA MAYR |
-| 4 | JOCELYN DAY | – | FRANZ KONLECHNER |
 | 5 | OGI CROWDTROTTER | – | PETER SNAJDER |
 | 6 | SHARIF VENUS | – | DOMINIK DUDA |
-| 7 | ODIN VRIJTHOUT | – | HANS ORTNER |
 | 8 | CORA Q6 | – | ERICH KUBES |
 | 9 | JULIUS BR | – | GERHARD MAYR |
 | 10 | EMIL | – | HARALD SYKORA |
-| 11 | TRUE BLUE | – | ERICH HANDLOS |
-| 12 | OBERON VRIJTHOUT | – | MARIO ZANDERIGO |
 
 ### 7. PRIX ENGHIEN                            AUTRICHE
 
@@ -31,13 +31,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | TIK TAK J'ESO | – | TOBIAS HEIZL |
+| 1 | TIK TAK J'ESO | 1,7 | TOBIAS HEIZL |
+| 7 | MS FIRE | 1,7 | JOSEF MAIER |
 | 2 | NOTHING TO LOSE | – | Mme JENNIFER GETZINGER |
 | 3 | CUORE | – | JOHANN PREINING JUN. |
 | 4 | VELTEN BODYGUARD | – | MAG. ANDREAS BINDER |
 | 5 | POWER GAAGAA | – | PAUL HELLMEIER |
 | 6 | OSBORN BOKO | – | Mme NINA JELLESCHITZ |
-| 7 | MS FIRE | – | JOSEF MAIER |
 | 8 | KONNICHIWA | – | MANUEL HAGLEITNER |
 | 9 | LAURINA SHADOW | – | WILFRIED NUBBACHER |
 | 10 | GRACIAS | – | Mme REGINA OHLINGER |
@@ -50,12 +50,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 2 | SUPER CROWN | 3,5 | FRANZ KONLECHNER |
+| 3 | HUGO CAESAR | 3,5 | MARIO ZANDERIGO |
+| 5 | SAMA PRIDE VENUS | 3,5 | MATTHIAS SCHAMBECK |
+| 6 | GIOLITTI GRIF | 3,5 | KLAUS DRESEL |
 | 1 | FOR LOVE AS | – | THOMAS PRIBIL |
-| 2 | SUPER CROWN | – | FRANZ KONLECHNER |
-| 3 | HUGO CAESAR | – | MARIO ZANDERIGO |
 | 4 | SUPER CROWNING | – | JONAS STEINER |
-| 5 | SAMA PRIDE VENUS | – | MATTHIAS SCHAMBECK |
-| 6 | GIOLITTI GRIF | – | KLAUS DRESEL |
 | 7 | JO JO HARLEY | – | KURT PLETSCHACHER |
 | 8 | POWER HILL | – | GERHARD MAYR |
 
@@ -65,14 +65,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 2 | PORSCHE BOKO | 2,6 | HUBERT BRANDSTATTER |
+| 4 | POWER WINNER | 2,6 | GERHARD MAYR |
+| 6 | ZLATAN TOLL | 5,2 | MARIO ZANDERIGO |
+| 8 | DIESEL BI | 5,2 | ROMAN JEROVSEK |
 | 1 | KI A | – | ERICH KUBES |
-| 2 | PORSCHE BOKO | – | HUBERT BRANDSTATTER |
 | 3 | RUNNING BO | – | FRANZ KONLECHNER |
-| 4 | POWER WINNER | – | GERHARD MAYR |
 | 5 | HIGH KITE | – | JOHAN BUIJS |
-| 6 | ZLATAN TOLL | – | MARIO ZANDERIGO |
 | 7 | MUSCLE MAGIC | – | PETER SNAJDER |
-| 8 | DIESEL BI | – | ROMAN JEROVSEK |
 
 ### 10. PRIX TOULOUSE                           AUTRICHE
 
@@ -80,12 +80,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 2 | GUNFIRE | 3,5 | FRANZ KONLECHNER |
+| 3 | MUS MUSCULUS | 3,5 | THOMAS PRIBIL |
+| 4 | VELVET VENUS | 3,5 | ERICH HANDLOS |
+| 6 | DANILO HS | 3,5 | MATTHIAS SCHAMBECK |
 | 1 | DA ANSER | – | ERICH KUBES |
-| 2 | GUNFIRE | – | FRANZ KONLECHNER |
-| 3 | MUS MUSCULUS | – | THOMAS PRIBIL |
-| 4 | VELVET VENUS | – | ERICH HANDLOS |
 | 5 | MINDFUL LIGHT K.V. | – | TEIJO AHOLA |
-| 6 | DANILO HS | – | MATTHIAS SCHAMBECK |
 | 7 | TERRIFIC TILE | – | GERHARD OBERMAIER |
 | 8 | SHIVA VENUS | – | HUBERT BRANDSTATTER |
 | 9 | POWER FABULOUS | – | GERHARD MAYR |
@@ -96,11 +96,11 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 4 | JACE RENKA | 2,2 | KARL HOBART |
+| 2 | LUCKY DU DOUET | 4,4 | JOHAN BUIJS |
+| 6 | KIL MISTER | 4,4 | THOMAS PRIBIL |
+| 8 | INVICTUS MENCOURT | 4,4 | GERHARD MAYR |
 | 1 | LYNETTE CAT | – | Mme JULIA ZANDERIGO |
-| 2 | LUCKY DU DOUET | – | JOHAN BUIJS |
 | 3 | JARNO DU BOCAGE | – | MARIO ZANDERIGO |
-| 4 | JACE RENKA | – | KARL HOBART |
 | 5 | IMPENSABLE | – | HUBERT BRANDSTATTER |
-| 6 | KIL MISTER | – | THOMAS PRIBIL |
 | 7 | FULL D'AMOUR | – | HARALD SYKORA |
-| 8 | INVICTUS MENCOURT | – | GERHARD MAYR |

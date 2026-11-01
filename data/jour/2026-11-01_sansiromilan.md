@@ -1,8 +1,8 @@
 # SAN SIRO (MILAN) — 01/11/2026
 
-1 courses.
+1 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
@@ -12,15 +12,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | EDGAR SABA | – | F. FACCI |
-| 2 | FREE TIME JEPSON | – | A. GUZZINATI |
-| 3 | DUBHE PRAV | – | SANTO MOLLO |
-| 4 | FIRST OF MIND | – | A. DI NARDO |
-| 5 | FALCO KILLER GAR | – | R. VECCHIONE |
-| 6 | WORKING CLASS HERO | – | A. GOCCIADORO |
-| 7 | IDEAL LIGNERIES | – | A. BARRIER |
-| 8 | FENICIA AS | – | E. BELLEI |
-| 9 | GO ON BOY | – | R. DERIEUX |
-| 10 | COBRA KILLER GAR | – | G. GELORMINI |
-| 11 | FIL EK | – | P. GUBELLINI |
-| 12 | FOLLIA D'ESI | – | M. STEFANI |
+| 9 | GO ON BOY | 2 | R. DERIEUX |
+| 7 | IDEAL LIGNERIES | 3,2 | A. BARRIER |
+| 2 | FREE TIME JEPSON | 11 | A. GUZZINATI |
+| 6 | WORKING CLASS HERO | 13 | A. GOCCIADORO |
+| 10 | COBRA KILLER GAR | 16 | G. GELORMINI |
+| 4 | FIRST OF MIND | 30 | A. DI NARDO |
+| 5 | FALCO KILLER GAR | 40 | R. VECCHIONE |
+| 8 | FENICIA AS | 51 | E. BELLEI |
+| 1 | EDGAR SABA | 72 | F. FACCI |
+| 3 | DUBHE PRAV | 90 | SANTO MOLLO |
+| 11 | FIL EK | 121 | P. GUBELLINI |
+| 12 | FOLLIA D'ESI | 121 | M. STEFANI |

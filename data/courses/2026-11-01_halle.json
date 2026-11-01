@@ -1,7 +1,7 @@
 {
   "hippodrome": "HALLE",
   "type_reunion": "Plat",
-  "date_extraction": "2026-11-01T00:52:55.149011",
+  "date_extraction": "2026-11-01T13:52:49.740093",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/01112026/R4",
   "courses": [
     {
@@ -30,47 +30,11 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 1
-        },
-        {
-          "n°": "2",
-          "cheval": "KUTAY M.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: WALDPFAD et SAND (PIVOTAL)",
-          "corde": "(Corde:06)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261101/D17/1/20261101-D17-1-2.png",
-          "propriétaire": "DENIS CENGIZ",
-          "entraineur": "HENK GREWE",
-          "éleveurs": "",
-          "jockey": "THORE HAMMER-HANSEN",
-          "poids": "58 kg",
-          "gains": "112500",
-          "musique": "9p3p",
-          "valeur": "58.0",
-          "equipement(s)": "",
-          "nb_courses": 2,
-          "nb_victoires": 0,
-          "nb_places": 1
-        },
-        {
-          "n°": "3",
-          "cheval": "DONNIE CREED M.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: AMARON et DANUBIA SUN (LORD OF ENGLAND)",
-          "corde": "(Corde:05)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261101/D17/1/20261101-D17-1-3.png",
-          "propriétaire": "FELIX SCHROEDER",
-          "entraineur": "ANDREAS WOEHLER",
-          "éleveurs": "",
-          "jockey": "ESENTUR TURGANAALY UULU",
-          "poids": "55.5 kg",
-          "gains": "",
-          "musique": "7p",
-          "valeur": "55.5",
-          "equipement(s)": "",
-          "nb_courses": 1,
-          "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 1,
+          "cote": 1.9,
+          "cote_tendance": "",
+          "cote_reference": 2.2,
+          "arrivee": 1
         },
         {
           "n°": "4",
@@ -90,7 +54,11 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 8.5,
+          "arrivee": 2
         },
         {
           "n°": "5",
@@ -110,27 +78,59 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.2,
+          "cote_tendance": "",
+          "cote_reference": 5.9,
+          "arrivee": 3
         },
         {
-          "n°": "6",
-          "cheval": "LIPS MILAN M.PU. 2 a.",
+          "n°": "2",
+          "cheval": "KUTAY M.PU. 2 a.",
           "cheval_url": "",
-          "père_mère": "Par: WALDPFAD et LIPS EAGLE (GLENEAGLES)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261101/D17/1/20261101-D17-1-6.png",
-          "propriétaire": "STALL LINTEC",
-          "entraineur": "EVA FABIANOVA",
+          "père_mère": "Par: WALDPFAD et SAND (PIVOTAL)",
+          "corde": "(Corde:06)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261101/D17/1/20261101-D17-1-2.png",
+          "propriétaire": "DENIS CENGIZ",
+          "entraineur": "HENK GREWE",
           "éleveurs": "",
-          "jockey": "RENE PIECHULEK",
-          "poids": "57.5 kg",
-          "gains": "",
-          "musique": "",
-          "valeur": "57.5",
+          "jockey": "THORE HAMMER-HANSEN",
+          "poids": "58 kg",
+          "gains": "112500",
+          "musique": "9p3p",
+          "valeur": "58.0",
           "equipement(s)": "",
-          "nb_courses": 0,
+          "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 1,
+          "cote": 4.6,
+          "cote_tendance": "",
+          "cote_reference": 9.5,
+          "arrivee": 4
+        },
+        {
+          "n°": "3",
+          "cheval": "DONNIE CREED M.PU. 2 a.",
+          "cheval_url": "",
+          "père_mère": "Par: AMARON et DANUBIA SUN (LORD OF ENGLAND)",
+          "corde": "(Corde:05)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261101/D17/1/20261101-D17-1-3.png",
+          "propriétaire": "FELIX SCHROEDER",
+          "entraineur": "ANDREAS WOEHLER",
+          "éleveurs": "",
+          "jockey": "ESENTUR TURGANAALY UULU",
+          "poids": "55.5 kg",
+          "gains": "",
+          "musique": "7p",
+          "valeur": "55.5",
+          "equipement(s)": "",
+          "nb_courses": 1,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 37.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0,
+          "arrivee": 5
         },
         {
           "n°": "7",
@@ -150,14 +150,44 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 9.1,
+          "cote_tendance": "",
+          "cote_reference": 8.8,
+          "arrivee": 6
+        },
+        {
+          "n°": "6",
+          "cheval": "LIPS MILAN M.PU. 2 a.",
+          "cheval_url": "",
+          "père_mère": "Par: WALDPFAD et LIPS EAGLE (GLENEAGLES)",
+          "corde": "(Corde:01)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261101/D17/1/20261101-D17-1-6.png",
+          "propriétaire": "STALL LINTEC",
+          "entraineur": "EVA FABIANOVA",
+          "éleveurs": "",
+          "jockey": "RENE PIECHULEK",
+          "poids": "57.5 kg",
+          "gains": "",
+          "musique": "",
+          "valeur": "57.5",
+          "equipement(s)": "",
+          "nb_courses": 0,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 8.8,
+          "arrivee": 7
         }
       ],
-      "cordeCourse": "CORDE_DROITE"
+      "typePiste": "HERBE",
+      "cordeCourse": "CORDE_DROITE",
+      "arrivee_definitive": true
     },
     {
       "nom": "WOHNEN IST FREIHEIT RENNEN",
-      "horaire": "12h11",
+      "horaire": "12h31",
       "numero": "2",
       "type": "Plat",
       "distance": "1350m",
@@ -181,7 +211,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 0,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 4.0,
+          "cote_tendance": "",
+          "cote_reference": 4.4
         },
         {
           "n°": "2",
@@ -201,7 +234,10 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0
         },
         {
           "n°": "3",
@@ -221,7 +257,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 3.4,
+          "cote_tendance": "",
+          "cote_reference": 3.3
         },
         {
           "n°": "4",
@@ -241,7 +280,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 4.7,
+          "cote_tendance": "",
+          "cote_reference": 4.7
         },
         {
           "n°": "5",
@@ -261,7 +303,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 16.0,
+          "cote_tendance": "",
+          "cote_reference": 16.0
         },
         {
           "n°": "7",
@@ -281,7 +326,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         },
         {
           "n°": "8",
@@ -301,7 +349,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0
         },
         {
           "n°": "9",
@@ -321,9 +372,13 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 9.7
         }
       ],
+      "typePiste": "HERBE",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -352,7 +407,10 @@
           "equipement(s)": "",
           "nb_courses": 16,
           "nb_victoires": 4,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 17.0,
+          "cote_tendance": "",
+          "cote_reference": 18.0
         },
         {
           "n°": "2",
@@ -372,7 +430,10 @@
           "equipement(s)": "",
           "nb_courses": 32,
           "nb_victoires": 5,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 16.0,
+          "cote_tendance": "",
+          "cote_reference": 19.0
         },
         {
           "n°": "3",
@@ -392,7 +453,10 @@
           "equipement(s)": "",
           "nb_courses": 44,
           "nb_victoires": 7,
-          "nb_places": 15
+          "nb_places": 15,
+          "cote": 4.3,
+          "cote_tendance": "",
+          "cote_reference": 5.2
         },
         {
           "n°": "4",
@@ -412,7 +476,10 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 2,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 8.8,
+          "cote_tendance": "",
+          "cote_reference": 9.0
         },
         {
           "n°": "5",
@@ -432,7 +499,10 @@
           "equipement(s)": "",
           "nb_courses": 26,
           "nb_victoires": 5,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 13.0
         },
         {
           "n°": "6",
@@ -452,7 +522,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 3,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 9.9,
+          "cote_tendance": "",
+          "cote_reference": 8.8
         },
         {
           "n°": "7",
@@ -472,7 +545,10 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 4,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 6.4,
+          "cote_tendance": "",
+          "cote_reference": 5.7
         },
         {
           "n°": "8",
@@ -484,7 +560,7 @@
           "propriétaire": "STALL GRAFENBERG",
           "entraineur": "WALDEMAR HICKST",
           "éleveurs": "",
-          "jockey": "ALEXANDER PIETSCH",
+          "jockey": "MICHAL ABIK",
           "poids": "59 kg",
           "gains": "3762500",
           "musique": "1p5p9p3p3p",
@@ -492,7 +568,10 @@
           "equipement(s)": "",
           "nb_courses": 18,
           "nb_victoires": 4,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         },
         {
           "n°": "9",
@@ -512,7 +591,10 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 2,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 10.0
         },
         {
           "n°": "10",
@@ -532,7 +614,10 @@
           "equipement(s)": "",
           "nb_courses": 17,
           "nb_victoires": 4,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 19.0,
+          "cote_tendance": "",
+          "cote_reference": 18.0
         },
         {
           "n°": "11",
@@ -552,7 +637,10 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 3,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 16.0,
+          "cote_tendance": "",
+          "cote_reference": 16.0
         },
         {
           "n°": "12",
@@ -572,9 +660,13 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0
         }
       ],
+      "typePiste": "HERBE",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -603,7 +695,10 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 1,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 6.2,
+          "cote_tendance": "",
+          "cote_reference": 6.2
         },
         {
           "n°": "2",
@@ -623,7 +718,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 8.9,
+          "cote_tendance": "",
+          "cote_reference": 9.5
         },
         {
           "n°": "3",
@@ -643,7 +741,10 @@
           "equipement(s)": "",
           "nb_courses": 32,
           "nb_victoires": 5,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 161.0,
+          "cote_tendance": "",
+          "cote_reference": 143.0
         },
         {
           "n°": "4",
@@ -663,7 +764,10 @@
           "equipement(s)": "",
           "nb_courses": 23,
           "nb_victoires": 6,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 20.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         },
         {
           "n°": "5",
@@ -683,7 +787,10 @@
           "equipement(s)": "",
           "nb_courses": 13,
           "nb_victoires": 1,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 5.7,
+          "cote_tendance": "",
+          "cote_reference": 5.7
         },
         {
           "n°": "6",
@@ -703,7 +810,10 @@
           "equipement(s)": "",
           "nb_courses": 18,
           "nb_victoires": 7,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 6.4,
+          "cote_tendance": "",
+          "cote_reference": 5.9
         },
         {
           "n°": "7",
@@ -723,7 +833,10 @@
           "equipement(s)": "",
           "nb_courses": 47,
           "nb_victoires": 8,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 23.0,
+          "cote_tendance": "",
+          "cote_reference": 20.0
         },
         {
           "n°": "8",
@@ -743,7 +856,10 @@
           "equipement(s)": "",
           "nb_courses": 20,
           "nb_victoires": 3,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 17.0
         },
         {
           "n°": "9",
@@ -763,7 +879,10 @@
           "equipement(s)": "",
           "nb_courses": 32,
           "nb_victoires": 4,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 26.0,
+          "cote_tendance": "",
+          "cote_reference": 23.0
         },
         {
           "n°": "10",
@@ -783,7 +902,10 @@
           "equipement(s)": "",
           "nb_courses": 15,
           "nb_victoires": 2,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0
         },
         {
           "n°": "11",
@@ -803,7 +925,10 @@
           "equipement(s)": "",
           "nb_courses": 78,
           "nb_victoires": 8,
-          "nb_places": 19
+          "nb_places": 19,
+          "cote": 23.0,
+          "cote_tendance": "",
+          "cote_reference": 20.0
         },
         {
           "n°": "12",
@@ -823,9 +948,13 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 0,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 5.3,
+          "cote_tendance": "",
+          "cote_reference": 5.9
         }
       ],
+      "typePiste": "HERBE",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -854,7 +983,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 3.0,
+          "cote_tendance": "",
+          "cote_reference": 2.8
         },
         {
           "n°": "2",
@@ -874,7 +1006,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 16.0,
+          "cote_tendance": "",
+          "cote_reference": 13.0
         },
         {
           "n°": "3",
@@ -894,7 +1029,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 16.0,
+          "cote_tendance": "",
+          "cote_reference": 13.0
         },
         {
           "n°": "4",
@@ -914,7 +1052,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 6.9,
+          "cote_tendance": "",
+          "cote_reference": 5.6
         },
         {
           "n°": "5",
@@ -946,7 +1087,7 @@
           "propriétaire": "KARSTEN URBAN",
           "entraineur": "ROLAND DZUBASZ",
           "éleveurs": "",
-          "jockey": "ALEXANDER PIETSCH",
+          "jockey": "MICHAL ABIK",
           "poids": "57 kg",
           "gains": "3295000",
           "musique": "4p1p7p4p(25)",
@@ -954,7 +1095,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 2,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 6.0,
+          "cote_tendance": "",
+          "cote_reference": 4.9
         },
         {
           "n°": "7",
@@ -974,9 +1118,13 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 0,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 2.6,
+          "cote_tendance": "",
+          "cote_reference": 3.9
         }
       ],
+      "typePiste": "HERBE",
       "cordeCourse": "CORDE_DROITE"
     }
   ]
