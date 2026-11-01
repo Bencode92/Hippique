@@ -1,0 +1,177 @@
+# VALPARAISO — 02/11/2026
+
+10 courses.
+
+*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+
+---
+
+### 1. GANA BIEN H.
+
+*19h50 · plat · 1100 m · 12 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey | jk/ent/él/pr |
+|--:|:--|--:|:--|--:|
+| 1 | JAPONEITOR | – | WLADIMIR EMILIANO QUINTEROS GONZ | –/–/–/– |
+| 2 | TUYARAK | – | CLAUDIO SEBASTIAN POBLETE BRAVO | –/–/–/– |
+| 3 | MONTERRICO | – | CARLOS ALEJANDRO ORTEGA TAPIA | –/–/–/– |
+| 4 | ONE VISION | – | RAFAEL FRANCISCO CISTERNAS AYALA | –/–/–/– |
+| 5 | BLACK OLIVES | – | MAXIMILIANO JOSE SALINAS | –/–/–/– |
+| 6 | SHIVERS | – | JESUS SEBASTIAN REYES | –/–/–/– |
+| 7 | GERASIMOVA | – | NICOLAS ALEJANDRO RAMIREZ MUNOZ | –/–/–/– |
+| 8 | EL FLORITO | – | BENJAMIN  SANCHO | –/–/–/– |
+| 9 | BRUNO SALVAJE | – | JOSE MATIAS EYZAGUIRRE CEPEDA | –/–/–/– |
+| 10 | BAPKIZA | – | SEBASTIAN ANDRES MARIN QUEZADA | –/–/–/– |
+| 11 | ROJO BURGUES | – | MATIAS ANDRES CARO AVILES | –/–/–/– |
+| 12 | MARINO SIN VACILAR | – | GUILLERMO ANTONIO PEREZ ASTUDILL | –/–/–/– |
+
+### 2. FITO
+
+*20h22 · plat · 1100 m · 10 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey | jk/ent/él/pr |
+|--:|:--|--:|:--|--:|
+| 1 | KARAKOY | – | NICOLAS ALEJANDRO RAMIREZ MUNOZ | –/–/–/– |
+| 2 | SKIN GHOST | – | FERNANDO JESUS MORENO | –/–/–/– |
+| 3 | MI AMIGO PIRI | – | MOISES ABRAHAM DONOSO | –/–/–/– |
+| 4 | PEHOE | – | WLADIMIR EMILIANO QUINTEROS GONZ | –/–/–/– |
+| 5 | BEST HORSE | – | SEBASTIAN ANDRES MARIN QUEZADA | –/–/–/– |
+| 6 | REY VULCANO | – | IGNACIO ISAIAS VALDIVIA | –/–/–/– |
+| 7 | FAFIFO | – | JAIME FABIAN MEDINA | –/–/–/– |
+| 8 | ESTRELLON CRUCINO | – | GERALD ANDRES RODRIGUEZ SEPULVED | –/–/–/– |
+| 9 | BIG MATEO | – | MATIAS ANDRES CARO AVILES | –/–/–/– |
+| 10 | APADRINADOR | – | BENJAMIN  SANCHO | –/–/–/– |
+
+### 3. GOLCONDA
+
+*20h54 · plat · 1100 m · 9 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | PRETTA | – | MATIAS ANDRES CARO AVILES |
+| 2 | STAY TUNED | – | IGNACIO ISAIAS VALDIVIA |
+| 3 | RUNA | – | JAIME FABIAN MEDINA |
+| 4 | SABIA PALABRA | – | MAXIMILIANO JOSE SALINAS |
+| 5 | ARZAK | – | JAIME ADOLFO MINO FICA |
+| 6 | SOY DAMITA | – | FELIPE TAPIA |
+| 7 | MADAME ELIANA | – | DIEGO ANDRES CARVACHO AZUA |
+| 8 | ENTRE PARENTESIS | – | JOSE MATIAS EYZAGUIRRE CEPEDA |
+| 9 | DELL AMORE | – | MOISES ABRAHAM DONOSO |
+
+### 4. GHEREZAD H.
+
+*21h25 · plat · 1300 m · 10 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | LUCA BRASI | – | FELIPE TAPIA |
+| 2 | SEVERUS SNAPE | – | CARLOS ALEJANDRO ORTEGA TAPIA |
+| 3 | LYNGOTE | – | GUILLERMO ANTONIO PEREZ ASTUDILL |
+| 4 | MONO MONIN | – | MOISES ABRAHAM DONOSO |
+| 5 | BIG WALLACE | – | RAFAEL FRANCISCO CISTERNAS AYALA |
+| 6 | RUBIO ALOCADO | – | BENJAMIN  SANCHO |
+| 7 | LIUCURA PARK | – | JOSE MATIAS EYZAGUIRRE CEPEDA |
+| 8 | JARRA DE VINO | – | IGNACIO ISAIAS VALDIVIA |
+| 9 | ESPERA UN POQUITO | – | JOSE DANIEL VILLAGRAN |
+| 10 | ALQASWA | – | RODRIGO ANTONIO VERGARA |
+
+### 5. GRAN VINO H.
+
+*21h55 · plat · 1100 m · 9 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | PETIROSSA | – | JAIME FABIAN MEDINA |
+| 2 | PELUKA | – | MAXIMILIANO JOSE SALINAS |
+| 3 | EL RENACIDO | – | RAFAEL FRANCISCO CISTERNAS AYALA |
+| 4 | KRASNYY AND RED | – | RODRIGO ANTONIO VERGARA |
+| 5 | ANTIYAL | – | JOSE MATIAS EYZAGUIRRE CEPEDA |
+| 6 | LATEN GOOD | – | IGNACIO ISAIAS VALDIVIA |
+| 7 | EL RODO | – | CLAUDIO SEBASTIAN POBLETE BRAVO |
+| 8 | MORNING MELODY | – | GUILLERMO ANTONIO PEREZ ASTUDILL |
+| 9 | HOVLAND | – | PIERO IGNACIO REYES PODESTA |
+
+### 6. GIRADOR
+
+*22h25 · plat · 1100 m · 8 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey | jk/ent/él/pr |
+|--:|:--|--:|:--|--:|
+| 1 | DAFNE | – | PIERO IGNACIO REYES PODESTA | –/–/–/– |
+| 2 | LINDAYNOEMI | – | RAFAEL FRANCISCO CISTERNAS AYALA | –/–/–/– |
+| 3 | DEJA REIR | – | DIEGO ANDRES CARVACHO AZUA | –/–/–/– |
+| 4 | KAROLY | – | ISRAEL ROBINSON VILLAGRAN CASTIL | –/–/–/– |
+| 5 | BELLA CLARA | – | JOSE DANIEL VILLAGRAN | –/–/–/– |
+| 6 | KITTOY | – | MATIAS ANDRES CARO AVILES | –/–/–/– |
+| 7 | CUCHI KICHI | – | FERNANDO JESUS MORENO | –/–/–/– |
+| 8 | CIUDAD PIRATA | – | MOISES ABRAHAM DONOSO | –/–/–/– |
+
+### 7. GERT H.
+
+*22h55 · plat · 1100 m · 10 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | TE QUIERO TODAVIA | – | GERALD ANDRES RODRIGUEZ SEPULVED |
+| 2 | PANCHOTE SURENO | – | RODRIGO ANTONIO VERGARA |
+| 3 | VELETA DE PROA | – | MOISES ABRAHAM DONOSO |
+| 4 | ZIM | – | FELIPE TAPIA |
+| 5 | DONNARUMMA | – | MAXIMILIANO JOSE SALINAS |
+| 6 | LA GIOCONDA | – | NELSON ANDRES ROJAS |
+| 7 | ALTO FOREVER | – | MATIAS ANDRES CARO AVILES |
+| 8 | VIDA SALVAJE | – | JOSE DANIEL VILLAGRAN |
+| 9 | NOEL | – | BENJAMIN  SANCHO |
+| 10 | DAYS OF FUTURE | – | NICOLAS ALEJANDRO RAMIREZ MUNOZ |
+
+### 8. GANA IGUAL H.
+
+*23h25 · plat · 1100 m · 10 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | TONADA VIEJA | – | MOISES ABRAHAM DONOSO |
+| 2 | LA LETE | – | CARLOS ALEJANDRO ORTEGA TAPIA |
+| 3 | BREEZY STAR | – | SEBASTIAN ANDRES MARIN QUEZADA |
+| 4 | LA TIA ELENA | – | JOSE MATIAS EYZAGUIRRE CEPEDA |
+| 5 | RAMSES | – | PIERO IGNACIO REYES PODESTA |
+| 6 | VINCERO | – | BENJAMIN  SANCHO |
+| 7 | KAPU | – | GERALD ANDRES RODRIGUEZ SEPULVED |
+| 8 | SALADO | – | FELIPE TAPIA |
+| 9 | CALVETI | – | RAFAEL FRANCISCO CISTERNAS AYALA |
+| 10 | IL VENTO | – | JAIME FABIAN MEDINA |
+
+### 9. EL MILAGRITO S.
+
+*23h55 · plat · 1100 m · 8 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | SIBARATO | – | SEBASTIAN EDUARDO GONZALEZ |
+| 2 | PETIT PROFESOR | – | JAIME FABIAN MEDINA |
+| 3 | SUGAR LIGHT | – | NELSON ANDRES ROJAS |
+| 4 | CAMPO DE BATALLA | – | IGNACIO ISAIAS VALDIVIA |
+| 5 | EL APOSTOL | – | NICOLAS ALEJANDRO RAMIREZ MUNOZ |
+| 6 | GIACOMO PUCCINI | – | GUILLERMO ANTONIO PEREZ ASTUDILL |
+| 7 | MUY AMIGO | – | RAFAEL FRANCISCO CISTERNAS AYALA |
+| 8 | SALISBURY | – | GERALD ANDRES RODRIGUEZ SEPULVED |
+
+### 10. GUARDIAN H.
+
+*00h25 · plat · 1100 m · 14 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | JUSTINSITO CRACK | – | MOISES ABRAHAM DONOSO |
+| 2 | PAZZELLE | – | JOSE MATIAS EYZAGUIRRE CEPEDA |
+| 3 | MICKY | – | NELSON ANDRES ROJAS |
+| 4 | MISTER CESAR | – | SEBASTIAN ANDRES MARIN QUEZADA |
+| 5 | ALTIRO VOY | – | WLADIMIR EMILIANO QUINTEROS GONZ |
+| 6 | MUY RESPETADA | – | PIERO IGNACIO REYES PODESTA |
+| 7 | EL NEGRO TOMAS | – | MAXIMILIANO JOSE SALINAS |
+| 8 | DUBAI GIRL | – | JOSE DANIEL VILLAGRAN |
+| 9 | ARENA DE VERONA | – | GUILLERMO ANTONIO PEREZ ASTUDILL |
+| 10 | AFIRMATE GATO | – | PEDRO ROBERTO ROBLES |
+| 11 | MONTESOR | – | DIEGO ANDRES CARVACHO AZUA |
+| 12 | LUCKY BOSS | – | FELIPE TAPIA |
+| 13 | RESPECT | – | JESUS SEBASTIAN REYES |
+| 14 | ALIVES | – | JAIME ADOLFO MINO FICA |
