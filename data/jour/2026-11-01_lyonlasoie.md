@@ -1,6 +1,6 @@
 # LYON LA SOIE — 01/11/2026
 
-8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
@@ -121,29 +121,29 @@
 
 ### 7. PRIX #RACEANDCARE - PX DU LOT ET GARONNE
 
-*16h45 · attelé · 2700 m · 15 partants · cotes à T−2:12*
+*16h45 · attelé · 2700 m · 15 partants · cotes à T−0:12*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 13 | KISS ME JULRY | 3 | 3,5 | J.P. GAUVIN |
-| 15 | KRISTAL DREAM | 4,8 | 5,1 | TH. BRIAND |
-| 10 | KEROS DES BAUX | 6,1 | 5,9 | B. CHAUVE-LAFFAY |
-| 6 | JASTAR | 6,7 | 5 | D. BEKAERT |
+| 13 | KISS ME JULRY | 3,8 | 3,5 | J.P. GAUVIN |
+| 10 | KEROS DES BAUX | 4,1 | 5,9 | B. CHAUVE-LAFFAY |
+| 15 | KRISTAL DREAM | 6,1 | 5,1 | TH. BRIAND |
+| 6 | JASTAR | 6,8 | 5 | D. BEKAERT |
+| 11 | KONDOR | 12 | 13 | M.J. BARCELO BISQUERRA |
 | 2 | KHAZIM | 13 | 11 | L. LAMAZIERE |
-| 11 | KONDOR | 16 | 13 | M.J. BARCELO BISQUERRA |
-| 12 | IBIZA DE BOURGOGNE | 24 | 23 | P. CALLIER |
-| 7 | KAMA HIGHLAND | 34 | 38 | F.J. PELTIER |
-| 8 | IMPACT OAKS | 54 | 53 | G. VIDAL |
-| 14 | GOLDEN VIKING | 59 | 62 | A. TINTILLIER |
-| 9 | ILOVIROIZ DI LEONE | 75 | 138 | J. FILOGRASSO |
-| 3 | JAMBEROO | 81 | 138 | F. BROUST |
-| 4 | IDEAL LOVER | 81 | 98 | M. MESSAGER |
-| 1 | JAMY DE SAMPANGES | 103 | 172 | B. THIENNE |
-| 5 | KIM BLUE | 162 | – | A. BONNEFOY |
+| 7 | KAMA HIGHLAND | 26 | 38 | F.J. PELTIER |
+| 12 | IBIZA DE BOURGOGNE | 30 | 23 | P. CALLIER |
+| 8 | IMPACT OAKS | 40 | 53 | G. VIDAL |
+| 14 | GOLDEN VIKING | 61 | 62 | A. TINTILLIER |
+| 9 | ILOVIROIZ DI LEONE | 63 | 138 | J. FILOGRASSO |
+| 4 | IDEAL LOVER | 79 | 98 | M. MESSAGER |
+| 3 | JAMBEROO | 84 | 138 | F. BROUST |
+| 1 | JAMY DE SAMPANGES | 105 | 172 | B. THIENNE |
+| 5 | KIM BLUE | 168 | – | A. BONNEFOY |
 
 ### 8. PRIX ROLAND THEVENOUX
 
-*17h15 · attelé · 2700 m · 12 partants · cotes de l'extraction*
+*17h15 · attelé · 2700 m · 12 partants · cotes à T−29:32*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|

@@ -4,17 +4,17 @@
   "reunion": 12,
   "heure_depart": 1793544300000,
   "distance": 2700,
-  "scraped_at": "2026-11-01T15:42:48.033517+01:00",
-  "minutes_avant_depart": 2,
+  "scraped_at": "2026-11-01T15:45:28.155107+01:00",
+  "minutes_avant_depart": 0,
   "participants": [
     {
       "numPmu": 1,
       "nom": "JAMY DE SAMPANGES",
-      "cote_live": 103.0,
+      "cote_live": 119.0,
       "cote_reference": 106.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793544161000
+      "timestamp_cote": 1793544321000
     },
     {
       "numPmu": 2,
@@ -23,16 +23,16 @@
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793544161000
+      "timestamp_cote": 1793544321000
     },
     {
       "numPmu": 3,
       "nom": "JAMBEROO",
-      "cote_live": 81.0,
+      "cote_live": 92.0,
       "cote_reference": 79.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793544161000
+      "timestamp_cote": 1793544321000
     },
     {
       "numPmu": 4,
@@ -41,106 +41,106 @@
       "cote_reference": 53.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793544161000
+      "timestamp_cote": 1793544321000
     },
     {
       "numPmu": 5,
       "nom": "KIM BLUE",
-      "cote_live": 162.0,
+      "cote_live": 151.0,
       "cote_reference": null,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793544161000
+      "timestamp_cote": 1793544321000
     },
     {
       "numPmu": 6,
       "nom": "JASTAR",
-      "cote_live": 6.7,
+      "cote_live": 7.9,
       "cote_reference": 4.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793544161000
+      "timestamp_cote": 1793544321000
     },
     {
       "numPmu": 7,
       "nom": "KAMA HIGHLAND",
-      "cote_live": 34.0,
+      "cote_live": 32.0,
       "cote_reference": 53.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793544161000
+      "timestamp_cote": 1793544321000
     },
     {
       "numPmu": 8,
       "nom": "IMPACT OAKS",
-      "cote_live": 54.0,
+      "cote_live": 47.0,
       "cote_reference": 79.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793544161000
+      "timestamp_cote": 1793544321000
     },
     {
       "numPmu": 9,
       "nom": "ILOVIROIZ DI LEONE",
-      "cote_live": 75.0,
+      "cote_live": 74.0,
       "cote_reference": 63.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793544161000
+      "timestamp_cote": 1793544321000
     },
     {
       "numPmu": 10,
       "nom": "KEROS DES BAUX",
-      "cote_live": 6.1,
+      "cote_live": 3.4,
       "cote_reference": 4.6,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1793544161000
+      "favoris": true,
+      "timestamp_cote": 1793544321000
     },
     {
       "numPmu": 11,
       "nom": "KONDOR",
-      "cote_live": 16.0,
+      "cote_live": 14.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793544161000
+      "timestamp_cote": 1793544321000
     },
     {
       "numPmu": 12,
       "nom": "IBIZA DE BOURGOGNE",
-      "cote_live": 24.0,
+      "cote_live": 34.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793544161000
+      "timestamp_cote": 1793544321000
     },
     {
       "numPmu": 13,
       "nom": "KISS ME JULRY",
-      "cote_live": 3.0,
+      "cote_live": 3.5,
       "cote_reference": 3.2,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1793544161000
+      "favoris": false,
+      "timestamp_cote": 1793544321000
     },
     {
       "numPmu": 14,
       "nom": "GOLDEN VIKING",
-      "cote_live": 59.0,
+      "cote_live": 77.0,
       "cote_reference": 39.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793544161000
+      "timestamp_cote": 1793544321000
     },
     {
       "numPmu": 15,
       "nom": "KRISTAL DREAM",
-      "cote_live": 4.8,
+      "cote_live": 6.7,
       "cote_reference": 8.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793544161000
+      "timestamp_cote": 1793544321000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -227,6 +227,90 @@
         "13": 3.0,
         "14": 59.0,
         "15": 4.8
+      }
+    },
+    {
+      "scraped_at": "2026-11-01T15:43:28.181026+01:00",
+      "minutes_avant_depart": 1.53346495,
+      "cotes": {
+        "1": 77.0,
+        "2": 12.0,
+        "3": 82.0,
+        "4": 77.0,
+        "5": 127.0,
+        "6": 5.9,
+        "7": 37.0,
+        "8": 51.0,
+        "9": 58.0,
+        "10": 6.8,
+        "11": 16.0,
+        "12": 27.0,
+        "13": 3.0,
+        "14": 56.0,
+        "15": 5.2
+      }
+    },
+    {
+      "scraped_at": "2026-11-01T15:44:08.366092+01:00",
+      "minutes_avant_depart": 0.8627392833333333,
+      "cotes": {
+        "1": 93.0,
+        "2": 13.0,
+        "3": 89.0,
+        "4": 85.0,
+        "5": 133.0,
+        "6": 6.9,
+        "7": 26.0,
+        "8": 50.0,
+        "9": 64.0,
+        "10": 5.3,
+        "11": 9.9,
+        "12": 29.0,
+        "13": 3.5,
+        "14": 62.0,
+        "15": 5.5
+      }
+    },
+    {
+      "scraped_at": "2026-11-01T15:44:48.450172+01:00",
+      "minutes_avant_depart": 0.20012825,
+      "cotes": {
+        "1": 105.0,
+        "2": 13.0,
+        "3": 84.0,
+        "4": 79.0,
+        "5": 168.0,
+        "6": 6.8,
+        "7": 26.0,
+        "8": 40.0,
+        "9": 63.0,
+        "10": 4.1,
+        "11": 12.0,
+        "12": 30.0,
+        "13": 3.8,
+        "14": 61.0,
+        "15": 6.1
+      }
+    },
+    {
+      "scraped_at": "2026-11-01T15:45:28.155107+01:00",
+      "minutes_avant_depart": -0.4665405833333333,
+      "cotes": {
+        "1": 119.0,
+        "2": 13.0,
+        "3": 92.0,
+        "4": 81.0,
+        "5": 151.0,
+        "6": 7.9,
+        "7": 32.0,
+        "8": 47.0,
+        "9": 74.0,
+        "10": 3.4,
+        "11": 14.0,
+        "12": 34.0,
+        "13": 3.5,
+        "14": 77.0,
+        "15": 6.7
       }
     }
   ]
