@@ -63,22 +63,22 @@
 
 ### 4. PRIX DES COLVERTS (GR A)
 
-*15h15 · attelé · 2700 m · 12 partants · cotes à T−29:29*
+*15h15 · attelé · 2700 m · 12 partants · cotes à T−24:50*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 9 | MERCI RAFALE | 2,1 | J.P. GAUVIN |
-| 10 | MOON DE MONTCIANT | 6,6 | A. TINTILLIER |
-| 3 | MIAMI JULRY | 8,1 | D. BEKAERT |
-| 8 | MALICE BERRY | 8,7 | B. CHAUVE-LAFFAY |
-| 2 | MAGIC DU SABLIER | 19 | B. THOMAS |
-| 6 | MOLLY D'ACADIE | 19 | D. JAMARD |
-| 1 | MON LUCERNAIS | 23 | P. CALLIER |
-| 7 | MERCI MERCY | 23 | L. LAMAZIERE |
-| 4 | MARQUIS DES CHAMPS | 34 | O. MERLE |
-| 12 | MILADY OAKS | 34 | G. VIDAL |
-| 5 | MISS DE MAI | 69 | D. MARASCO |
-| 11 | MOME DES ANDRAUX | 69 | L. BRECHAT |
+| 9 | MERCI RAFALE | 2,4 | J.P. GAUVIN |
+| 8 | MALICE BERRY | 5,8 | B. CHAUVE-LAFFAY |
+| 10 | MOON DE MONTCIANT | 7,5 | A. TINTILLIER |
+| 3 | MIAMI JULRY | 8,8 | D. BEKAERT |
+| 1 | MON LUCERNAIS | 9,9 | P. CALLIER |
+| 2 | MAGIC DU SABLIER | 22 | B. THOMAS |
+| 6 | MOLLY D'ACADIE | 22 | D. JAMARD |
+| 7 | MERCI MERCY | 26 | L. LAMAZIERE |
+| 4 | MARQUIS DES CHAMPS | 39 | O. MERLE |
+| 12 | MILADY OAKS | 39 | G. VIDAL |
+| 5 | MISS DE MAI | 79 | D. MARASCO |
+| 11 | MOME DES ANDRAUX | 79 | L. BRECHAT |
 
 ### 5. PRIX DES COLVERTS (GR B)
 
