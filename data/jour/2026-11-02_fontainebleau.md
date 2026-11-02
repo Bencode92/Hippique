@@ -126,45 +126,45 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DU CENTRE D'ECOTOURISME DE FRANCHARD
 
-*17h23 · plat · 1400 m · 16 partants · cotes à T−11:54*
+*17h24 · plat · 1400 m · 16 partants · cotes à T−11:54*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 12 | WHITE PLATIN | 3,3 | 3,3 | 3,66 | -9,8 % | R.THOMAS | 75/90/894/1347 |
-| 5 | NOBLE MEMORY | 6,6 | 6,6 | 6,94 | -4,9 % | PC.BOUDOT 2e | 8/57/71/360 |
-| 15 | ARKEN | 9,1 | 9,3 | 10,03 | -9,3 % | F.VALLE SKAR | 35/163/26/1513 |
-| 2 | MORGAN BAY | 9,9 | 9,7 | 11,35 | -12,8 % | E.VERHESTRAETEN | 53/12/3604/– |
-| 4 | VERDANSK | 10 | 10 | 11,03 | -9,3 % | D.SANTIAGO | 15/472/563/1303 |
+| 12 | WHITE PLATIN | 3,3 | 7,6 | 3,66 | -9,8 % | R.THOMAS | 75/90/894/1347 |
+| 5 | NOBLE MEMORY | 6,6 | 5 | 6,94 | -4,9 % | PC.BOUDOT 2e | 8/57/71/360 |
+| 15 | ARKEN | 9,1 | 9,6 | 10,03 | -9,3 % | F.VALLE SKAR | 35/163/26/1513 |
+| 2 | MORGAN BAY | 9,9 | 12 | 11,35 | -12,8 % | E.VERHESTRAETEN | 53/12/3604/– |
+| 4 | VERDANSK | 10 | 12 | 11,03 | -9,3 % | D.SANTIAGO | 15/472/563/1303 |
 | 3 | YOKEN | 11 | 11 | 13,19 | -16,6 % | S.PASQUIER | 23/239/158/757 |
-| 16 | BACCHILIDE | 16 | 16 | 21,79 | -26,6 % | M.VELON | 28/87/460/4483 |
-| 9 | BEAU GARS | 18 | 18 | 25,00 | -28,0 % | E.HARDOUIN | 27/89/70/– |
-| 7 | ELUSIVE BELARDO | 24 | 22 | 37,47 | -35,9 % | C.LECOEUVRE | 13/21/7/801 |
-| 6 | LISIPPO | 34 | 33 | 51,78 | -34,3 % | A.HAMELIN | 22/280/1001/485 |
-| 8 | MEISHO SUGAR | 43 | 41 | 59,52 | -27,8 % | R.SAHAJASEIN | 370/60/1131/734 |
-| 13 | KIMBIA | 46 | 40 | 69,01 | -33,3 % | M.GUYON | 4/21/805/2182 |
-| 10 | SHUTTERWOOD | 51 | 49 | 73,64 | -30,7 % | V.ALONSO VIDAL DE LA PENA | 179/207/829/691 |
-| 11 | DAY DREAMING | 60 | 62 | 87,70 | -31,6 % | M.GRANDIN | 3/66/107/160 |
-| 1 | PEDRITO | 77 | 79 | 108,77 | -29,2 % | M.PIEN | 150/432/289/4854 |
-| 14 | EMPATHIC | 79 | 81 | 112,20 | -29,6 % | M.TEVELS | 264/432/23/4854 |
+| 16 | BACCHILIDE | 16 | 15 | 21,79 | -26,6 % | M.VELON | 28/87/460/4483 |
+| 9 | BEAU GARS | 18 | 21 | 25,00 | -28,0 % | E.HARDOUIN | 27/89/70/– |
+| 7 | ELUSIVE BELARDO | 24 | 16 | 37,47 | -35,9 % | C.LECOEUVRE | 13/21/7/801 |
+| 6 | LISIPPO | 34 | 5,9 | 51,78 | -34,3 % | A.HAMELIN | 22/280/1001/485 |
+| 8 | MEISHO SUGAR | 43 | 65 | 59,52 | -27,8 % | R.SAHAJASEIN | 370/60/1131/734 |
+| 13 | KIMBIA | 46 | 24 | 69,01 | -33,3 % | M.GUYON | 4/21/805/2182 |
+| 10 | SHUTTERWOOD | 51 | 56 | 73,64 | -30,7 % | V.ALONSO VIDAL DE LA PENA | 179/207/829/691 |
+| 11 | DAY DREAMING | 60 | 48 | 87,70 | -31,6 % | M.GRANDIN | 3/66/107/160 |
+| 1 | PEDRITO | 77 | 89 | 108,77 | -29,2 % | M.PIEN | 150/432/289/4854 |
+| 14 | EMPATHIC | 79 | 170 | 112,20 | -29,6 % | M.TEVELS | 264/432/23/4854 |
 
 ### 8. PRIX DE LA CROIX DU GRAND VENEUR
 
-*17h50 · plat · 1600 m · 15 partants · cotes de l'extraction*
+*18h01 · plat · 1600 m · 15 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 9 | FASTER | 7,9 | 7,60 | **+3,9 %** | D.SANTIAGO | 15/137/1392/226 |
-| 15 | CAREGIVER | 8,6 | 7,99 | **+7,6 %** | R.MANGIONE | 78/57/920/2533 |
-| 10 | MEISHO VELITE | 10 | 11,28 | -11,4 % | L.GROSSO | 136/60/462/734 |
-| 14 | BOAVISTA | 10 | 11,75 | -14,9 % | I.MENDIZABAL | 32/53/116/2900 |
-| 2 | LEOPARDUCCIO | 11 | 11,54 | -4,7 % | R.THOMAS | 75/90/1070/1989 |
-| 13 | MARKSWOMAN | 11 | 11,54 | -4,7 % | F.VERON | 24/126/301/247 |
-| 1 | AMORCITA | 12 | 13,95 | -14,0 % | M.PROTTI | 30/6/191/251 |
-| 3 | PRIMA LUCE | 12 | 14,17 | -15,3 % | J.MOUTARD | 61/14/13/225 |
-| 11 | EVER FAST | 12 | 15,20 | -21,0 % | J.CLAUDIC | 38/83/48/1047 |
-| 8 | JAHIDIN | 16 | 20,93 | -23,5 % | A.HAMELIN | 22/163/630/2282 |
-| 4 | GUARDIAN | 18 | 22,36 | -19,5 % | C.LECOEUVRE | 13/84/3175/2603 |
-| 12 | JACK O'BOY | 19 | 24,83 | -23,5 % | M.VELON | 28/117/289/382 |
-| 7 | CAHAGNES | 20 | 29,62 | -32,5 % | F.VALLE SKAR | 35/155/12/1144 |
-| 16 | THE WHEEL | 23 | 33,96 | -32,3 % | A.CRASTUS | 17/197/967/3165 |
-| 5 | BEST LOOKING | 28 | 35,40 | -20,9 % | A.MADAMET | 10/155/793/664 |
+| 3 | PRIMA LUCE | 5,2 | 5,30 | -1,9 % | J.MOUTARD | 61/14/13/225 |
+| 10 | MEISHO VELITE | 7,4 | 7,25 | **+2,1 %** | L.GROSSO | 136/60/462/734 |
+| 15 | CAREGIVER | 8,5 | 8,48 | **+0,2 %** | R.MANGIONE | 78/57/920/2533 |
+| 13 | MARKSWOMAN | 9 | 9,06 | -0,6 % | F.VERON | 24/126/301/247 |
+| 1 | AMORCITA | 11 | 12,46 | -11,7 % | M.PROTTI | 30/6/191/251 |
+| 9 | FASTER | 12 | 15,02 | -20,1 % | D.SANTIAGO | 15/137/1392/226 |
+| 8 | JAHIDIN | 12 | 13,52 | -11,3 % | A.HAMELIN | 22/163/630/2282 |
+| 11 | EVER FAST | 15 | 20,43 | -26,6 % | J.CLAUDIC | 38/83/48/1047 |
+| 14 | BOAVISTA | 18 | 24,14 | -25,4 % | I.MENDIZABAL | 32/53/116/2900 |
+| 7 | CAHAGNES | 19 | 28,91 | -34,3 % | F.VALLE SKAR | 35/155/12/1144 |
+| 2 | LEOPARDUCCIO | 22 | 24,26 | -9,3 % | R.THOMAS | 75/90/1070/1989 |
+| 5 | BEST LOOKING | 26 | 30,76 | -15,5 % | A.MADAMET | 10/155/793/664 |
+| 16 | THE WHEEL | 30 | 45,46 | -34,0 % | A.CRASTUS | 17/197/967/3165 |
+| 12 | JACK O'BOY | 34 | 45,44 | -25,2 % | M.VELON | 28/117/289/382 |
+| 4 | GUARDIAN | 36 | 46,39 | -22,4 % | C.LECOEUVRE | 13/84/3175/2603 |
