@@ -104,49 +104,49 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DES FRENES
 
-*16h40 · plat · 1400 m · 16 partants · cotes à T−5:14*
+*16h40 · plat · 1400 m · 16 partants · cotes à T−2:34*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 11 | PAMELA BOUM | 3,6 | 3,91 | -7,8 % | E.HARDOUIN | 27/89/445/838 |
-| 16 | TRUE VALUE | 6,2 | 6,44 | -3,7 % | R.THOMAS | 75/90/1127/66 |
-| 2 | HERACLES | 10 | 12,66 | -21,0 % | M.GRANDIN | 3/79/1567/1523 |
-| 3 | BELL SONG | 11 | 12,45 | -11,7 % | H.BOUTIN | 14/181/563/143 |
-| 5 | MA MOME | 14 | 16,50 | -15,1 % | D.SANTIAGO | 15/81/278/38 |
-| 4 | LADY SOFIA | 15 | 18,16 | -17,4 % | M.PROTTI | 30/6/240/20 |
-| 1 | IRBIS | 17 | 23,63 | -28,1 % | A.HAMELIN | 22/88/66/459 |
-| 15 | KILOECHO | 20 | 26,02 | -23,1 % | P.BAZIRE | 58/161/832/158 |
-| 8 | NO TIME | 21 | 26,39 | -20,4 % | B.MARIE | 69/108/22/749 |
-| 13 | PERFECT MOON | 22 | 31,04 | -29,1 % | C.COLLET-VIDAL | 119/180/1137/709 |
-| 7 | I LIKED IT | 24 | 31,25 | -23,2 % | G.SIAS | 96/60/81/858 |
-| 10 | ISCREAMFORICECREAM | 26 | 36,20 | -28,2 % | A.LEMAITRE | 11/197/967/3165 |
-| 14 | ISMAEL PAINT | 28 | 38,25 | -26,8 % | F.VERON | 24/81/1136/120 |
-| 6 | SWEET AS | 34 | 41,51 | -18,1 % | M.PIEN | 150/15/15/36 |
-| 12 | CHARLESTON DANCER | 40 | 65,59 | -39,0 % | A.CRASTUS | 17/163/2248/3838 |
-| 9 | GALLIUS | 45 | 71,32 | -36,9 % | E.MUNTWYLER | 181/15/572/273 |
+| 11 | PAMELA BOUM | 3,7 | 3,98 | -7,0 % | E.HARDOUIN | 27/89/445/838 |
+| 16 | TRUE VALUE | 6,2 | 6,37 | -2,6 % | R.THOMAS | 75/90/1127/66 |
+| 2 | HERACLES | 7,4 | 8,80 | -15,9 % | M.GRANDIN | 3/79/1567/1523 |
+| 3 | BELL SONG | 9,9 | 10,89 | -9,1 % | H.BOUTIN | 14/181/563/143 |
+| 4 | LADY SOFIA | 14 | 16,57 | -15,5 % | M.PROTTI | 30/6/240/20 |
+| 1 | IRBIS | 18 | 24,98 | -27,9 % | A.HAMELIN | 22/88/66/459 |
+| 5 | MA MOME | 18 | 21,85 | -17,6 % | D.SANTIAGO | 15/81/278/38 |
+| 8 | NO TIME | 23 | 28,98 | -20,6 % | B.MARIE | 69/108/22/749 |
+| 15 | KILOECHO | 23 | 30,24 | -23,9 % | P.BAZIRE | 58/161/832/158 |
+| 13 | PERFECT MOON | 24 | 33,93 | -29,3 % | C.COLLET-VIDAL | 119/180/1137/709 |
+| 7 | I LIKED IT | 27 | 35,36 | -23,6 % | G.SIAS | 96/60/81/858 |
+| 6 | SWEET AS | 30 | 35,70 | -16,0 % | M.PIEN | 150/15/15/36 |
+| 10 | ISCREAMFORICECREAM | 31 | 43,71 | -29,1 % | A.LEMAITRE | 11/197/967/3165 |
+| 14 | ISMAEL PAINT | 35 | 48,64 | -28,0 % | F.VERON | 24/81/1136/120 |
+| 12 | CHARLESTON DANCER | 45 | 73,90 | -39,1 % | A.CRASTUS | 17/163/2248/3838 |
+| 9 | GALLIUS | 52 | 82,62 | -37,1 % | E.MUNTWYLER | 181/15/572/273 |
 
 ### 7. PRIX DU CENTRE D'ECOTOURISME DE FRANCHARD
 
-*17h15 · plat · 1400 m · 16 partants · cotes de l'extraction*
+*17h15 · plat · 1400 m · 16 partants · cotes à T−29:53*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | PEDRITO | – | M.PIEN | 150/432/289/4854 |
-| 2 | MORGAN BAY | – | E.VERHESTRAETEN | 53/12/3604/– |
-| 3 | YOKEN | – | S.PASQUIER | 23/239/158/757 |
-| 4 | VERDANSK | – | D.SANTIAGO | 15/472/563/1303 |
-| 5 | NOBLE MEMORY | – | PC.BOUDOT 2e | 8/57/71/360 |
-| 6 | LISIPPO | – | A.HAMELIN | 22/280/1001/485 |
-| 7 | ELUSIVE BELARDO | – | C.LECOEUVRE | 13/21/7/801 |
-| 8 | MEISHO SUGAR | – | R.SAHAJASEIN | 370/60/1131/734 |
-| 9 | BEAU GARS | – | E.HARDOUIN | 27/89/70/– |
-| 10 | SHUTTERWOOD | – | V.ALONSO VIDAL DE LA PENA | 179/207/829/691 |
-| 11 | DAY DREAMING | – | M.GRANDIN | 3/66/107/160 |
-| 12 | WHITE PLATIN | – | R.THOMAS | 75/90/894/1347 |
-| 13 | KIMBIA | – | M.GUYON | 4/21/805/2182 |
-| 14 | EMPATHIC | – | M.TEVELS | 264/432/23/4854 |
-| 15 | ARKEN | – | F.VALLE SKAR | 35/163/26/1513 |
-| 16 | BACCHILIDE | – | M.VELON | 28/87/460/4483 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 12 | WHITE PLATIN | 4,7 | 5,96 | -21,2 % | R.THOMAS | 75/90/894/1347 |
+| 4 | VERDANSK | 7,3 | 7,67 | -4,9 % | D.SANTIAGO | 15/472/563/1303 |
+| 15 | ARKEN | 7,6 | 8,15 | -6,8 % | F.VALLE SKAR | 35/163/26/1513 |
+| 3 | YOKEN | 8,6 | 9,90 | -13,1 % | S.PASQUIER | 23/239/158/757 |
+| 5 | NOBLE MEMORY | 10 | 12,23 | -18,2 % | PC.BOUDOT 2e | 8/57/71/360 |
+| 16 | BACCHILIDE | 13 | 17,08 | -23,9 % | M.VELON | 28/87/460/4483 |
+| 2 | MORGAN BAY | 14 | 18,64 | -24,9 % | E.VERHESTRAETEN | 53/12/3604/– |
+| 9 | BEAU GARS | 14 | 18,64 | -24,9 % | E.HARDOUIN | 27/89/70/– |
+| 7 | ELUSIVE BELARDO | 17 | 25,12 | -32,3 % | C.LECOEUVRE | 13/21/7/801 |
+| 6 | LISIPPO | 28 | 41,61 | -32,7 % | A.HAMELIN | 22/280/1001/485 |
+| 8 | MEISHO SUGAR | 32 | 42,89 | -25,4 % | R.SAHAJASEIN | 370/60/1131/734 |
+| 13 | KIMBIA | 35 | 53,51 | -34,6 % | M.GUYON | 4/21/805/2182 |
+| 10 | SHUTTERWOOD | 40 | 56,49 | -29,2 % | V.ALONSO VIDAL DE LA PENA | 179/207/829/691 |
+| 1 | PEDRITO | 45 | 64,29 | -30,0 % | M.PIEN | 150/432/289/4854 |
+| 11 | DAY DREAMING | 50 | 72,11 | -30,7 % | M.GRANDIN | 3/66/107/160 |
+| 14 | EMPATHIC | 72 | 101,88 | -29,3 % | M.TEVELS | 264/432/23/4854 |
 
 ### 8. PRIX DE LA CROIX DU GRAND VENEUR
 

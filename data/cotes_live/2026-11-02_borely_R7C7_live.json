@@ -4,71 +4,71 @@
   "reunion": 7,
   "heure_depart": 1793631600000,
   "distance": 2300,
-  "scraped_at": "2026-11-02T15:41:46.503220+01:00",
-  "minutes_avant_depart": 18,
+  "scraped_at": "2026-11-02T15:46:26.290431+01:00",
+  "minutes_avant_depart": 14,
   "participants": [
     {
       "numPmu": 1,
       "nom": "KAPTA JELOCA",
-      "cote_live": 10.0,
+      "cote_live": 7.6,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793630482000
+      "timestamp_cote": 1793630768000
     },
     {
       "numPmu": 2,
       "nom": "JOLI CHARMEUR",
-      "cote_live": 9.5,
+      "cote_live": 8.0,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793630482000
+      "timestamp_cote": 1793630768000
     },
     {
       "numPmu": 3,
       "nom": "KALIE WOOD",
-      "cote_live": 13.0,
+      "cote_live": 12.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793630482000
+      "timestamp_cote": 1793630768000
     },
     {
       "numPmu": 4,
       "nom": "JACQUOT DU DOME",
-      "cote_live": 6.2,
+      "cote_live": 6.1,
       "cote_reference": 6.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793630482000
+      "timestamp_cote": 1793630768000
     },
     {
       "numPmu": 5,
       "nom": "KATIMINNIE BROUETS",
-      "cote_live": 28.0,
+      "cote_live": 24.0,
       "cote_reference": 47.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793630482000
+      "timestamp_cote": 1793630768000
     },
     {
       "numPmu": 6,
       "nom": "JIMMYZ",
-      "cote_live": 5.3,
+      "cote_live": 5.2,
       "cote_reference": 5.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793630482000
+      "timestamp_cote": 1793630768000
     },
     {
       "numPmu": 7,
       "nom": "JARNAC DE L'ITON",
-      "cote_live": 2.3,
+      "cote_live": 2.8,
       "cote_reference": 2.0,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793630482000
+      "timestamp_cote": 1793630768000
     },
     {
       "numPmu": 8,
@@ -77,16 +77,16 @@
       "cote_reference": 37.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793630482000
+      "timestamp_cote": 1793630768000
     },
     {
       "numPmu": 9,
       "nom": "KOREDE",
-      "cote_live": 43.0,
+      "cote_live": 33.0,
       "cote_reference": 41.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793630482000
+      "timestamp_cote": 1793630768000
     }
   ],
   "hippodrome": "BORELY",
@@ -104,6 +104,21 @@
         "7": 2.3,
         "8": 43.0,
         "9": 43.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-02T15:46:26.290431+01:00",
+      "minutes_avant_depart": 13.570111616666667,
+      "cotes": {
+        "1": 7.6,
+        "2": 8.0,
+        "3": 12.0,
+        "4": 6.1,
+        "5": 24.0,
+        "6": 5.2,
+        "7": 2.8,
+        "8": 43.0,
+        "9": 33.0
       }
     }
   ]
