@@ -104,26 +104,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DES FRENES
 
-*16h40 · plat · 1400 m · 16 partants · cotes à T−2:34*
+*16h40 · plat · 1400 m · 16 partants · cotes à T−0:34*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 11 | PAMELA BOUM | 3,7 | 3,98 | -7,0 % | E.HARDOUIN | 27/89/445/838 |
-| 16 | TRUE VALUE | 6,2 | 6,37 | -2,6 % | R.THOMAS | 75/90/1127/66 |
-| 2 | HERACLES | 7,4 | 8,80 | -15,9 % | M.GRANDIN | 3/79/1567/1523 |
-| 3 | BELL SONG | 9,9 | 10,89 | -9,1 % | H.BOUTIN | 14/181/563/143 |
-| 4 | LADY SOFIA | 14 | 16,57 | -15,5 % | M.PROTTI | 30/6/240/20 |
-| 1 | IRBIS | 18 | 24,98 | -27,9 % | A.HAMELIN | 22/88/66/459 |
-| 5 | MA MOME | 18 | 21,85 | -17,6 % | D.SANTIAGO | 15/81/278/38 |
-| 8 | NO TIME | 23 | 28,98 | -20,6 % | B.MARIE | 69/108/22/749 |
-| 15 | KILOECHO | 23 | 30,24 | -23,9 % | P.BAZIRE | 58/161/832/158 |
-| 13 | PERFECT MOON | 24 | 33,93 | -29,3 % | C.COLLET-VIDAL | 119/180/1137/709 |
-| 7 | I LIKED IT | 27 | 35,36 | -23,6 % | G.SIAS | 96/60/81/858 |
-| 6 | SWEET AS | 30 | 35,70 | -16,0 % | M.PIEN | 150/15/15/36 |
-| 10 | ISCREAMFORICECREAM | 31 | 43,71 | -29,1 % | A.LEMAITRE | 11/197/967/3165 |
-| 14 | ISMAEL PAINT | 35 | 48,64 | -28,0 % | F.VERON | 24/81/1136/120 |
-| 12 | CHARLESTON DANCER | 45 | 73,90 | -39,1 % | A.CRASTUS | 17/163/2248/3838 |
-| 9 | GALLIUS | 52 | 82,62 | -37,1 % | E.MUNTWYLER | 181/15/572/273 |
+| 11 | PAMELA BOUM | 3,9 | 4,23 | -7,7 % | E.HARDOUIN | 27/89/445/838 |
+| 16 | TRUE VALUE | 4,7 | 4,72 | -0,4 % | R.THOMAS | 75/90/1127/66 |
+| 2 | HERACLES | 8,8 | 10,84 | -18,8 % | M.GRANDIN | 3/79/1567/1523 |
+| 3 | BELL SONG | 10 | 11,08 | -9,8 % | H.BOUTIN | 14/181/563/143 |
+| 1 | IRBIS | 13 | 17,15 | -24,2 % | A.HAMELIN | 22/88/66/459 |
+| 4 | LADY SOFIA | 15 | 18,06 | -16,9 % | M.PROTTI | 30/6/240/20 |
+| 5 | MA MOME | 20 | 24,81 | -19,4 % | D.SANTIAGO | 15/81/278/38 |
+| 15 | KILOECHO | 22 | 28,88 | -23,8 % | P.BAZIRE | 58/161/832/158 |
+| 7 | I LIKED IT | 25 | 32,57 | -23,2 % | G.SIAS | 96/60/81/858 |
+| 13 | PERFECT MOON | 26 | 37,39 | -30,5 % | C.COLLET-VIDAL | 119/180/1137/709 |
+| 8 | NO TIME | 27 | 34,98 | -22,8 % | B.MARIE | 69/108/22/749 |
+| 6 | SWEET AS | 32 | 38,59 | -17,1 % | M.PIEN | 150/15/15/36 |
+| 10 | ISCREAMFORICECREAM | 36 | 51,96 | -30,7 % | A.LEMAITRE | 11/197/967/3165 |
+| 14 | ISMAEL PAINT | 44 | 62,97 | -30,1 % | F.VERON | 24/81/1136/120 |
+| 9 | GALLIUS | 51 | 81,31 | -37,3 % | E.MUNTWYLER | 181/15/572/273 |
+| 12 | CHARLESTON DANCER | 55 | 92,37 | -40,5 % | A.CRASTUS | 17/163/2248/3838 |
 
 ### 7. PRIX DU CENTRE D'ECOTOURISME DE FRANCHARD
 
