@@ -127,26 +127,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DU CENTRE D'ECOTOURISME DE FRANCHARD
 
-*17h15 · plat · 1400 m · 16 partants · cotes à T−16:34*
+*17h15 · plat · 1400 m · 16 partants · cotes à T−11:54*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 12 | WHITE PLATIN | 4,5 | 5,65 | -20,4 % | R.THOMAS | 75/90/894/1347 |
-| 15 | ARKEN | 7,9 | 8,49 | -6,9 % | F.VALLE SKAR | 35/163/26/1513 |
-| 5 | NOBLE MEMORY | 8 | 9,38 | -14,7 % | PC.BOUDOT 2e | 8/57/71/360 |
-| 4 | VERDANSK | 8,8 | 9,48 | -7,1 % | D.SANTIAGO | 15/472/563/1303 |
-| 3 | YOKEN | 9,6 | 11,21 | -14,4 % | S.PASQUIER | 23/239/158/757 |
-| 2 | MORGAN BAY | 10 | 12,49 | -19,9 % | E.VERHESTRAETEN | 53/12/3604/– |
-| 16 | BACCHILIDE | 13 | 17,01 | -23,6 % | M.VELON | 28/87/460/4483 |
-| 9 | BEAU GARS | 15 | 20,13 | -25,5 % | E.HARDOUIN | 27/89/70/– |
-| 7 | ELUSIVE BELARDO | 19 | 28,49 | -33,3 % | C.LECOEUVRE | 13/21/7/801 |
-| 6 | LISIPPO | 33 | 49,90 | -33,9 % | A.HAMELIN | 22/280/1001/485 |
-| 8 | MEISHO SUGAR | 34 | 45,73 | -25,7 % | R.SAHAJASEIN | 370/60/1131/734 |
-| 13 | KIMBIA | 36 | 55,01 | -34,6 % | M.GUYON | 4/21/805/2182 |
-| 10 | SHUTTERWOOD | 46 | 65,61 | -29,9 % | V.ALONSO VIDAL DE LA PENA | 179/207/829/691 |
-| 11 | DAY DREAMING | 55 | 79,64 | -30,9 % | M.GRANDIN | 3/66/107/160 |
-| 1 | PEDRITO | 57 | 82,75 | -31,1 % | M.PIEN | 150/432/289/4854 |
-| 14 | EMPATHIC | 62 | 86,69 | -28,5 % | M.TEVELS | 264/432/23/4854 |
+| 12 | WHITE PLATIN | 3,3 | 3,92 | -15,9 % | R.THOMAS | 75/90/894/1347 |
+| 5 | NOBLE MEMORY | 6,6 | 7,53 | -12,4 % | PC.BOUDOT 2e | 8/57/71/360 |
+| 15 | ARKEN | 9,1 | 10,03 | -9,3 % | F.VALLE SKAR | 35/163/26/1513 |
+| 2 | MORGAN BAY | 9,9 | 12,39 | -20,1 % | E.VERHESTRAETEN | 53/12/3604/– |
+| 4 | VERDANSK | 10 | 11,03 | -9,3 % | D.SANTIAGO | 15/472/563/1303 |
+| 3 | YOKEN | 11 | 13,19 | -16,6 % | S.PASQUIER | 23/239/158/757 |
+| 16 | BACCHILIDE | 16 | 21,79 | -26,6 % | M.VELON | 28/87/460/4483 |
+| 9 | BEAU GARS | 18 | 25,00 | -28,0 % | E.HARDOUIN | 27/89/70/– |
+| 7 | ELUSIVE BELARDO | 24 | 37,47 | -35,9 % | C.LECOEUVRE | 13/21/7/801 |
+| 6 | LISIPPO | 34 | 51,78 | -34,3 % | A.HAMELIN | 22/280/1001/485 |
+| 8 | MEISHO SUGAR | 43 | 59,52 | -27,8 % | R.SAHAJASEIN | 370/60/1131/734 |
+| 13 | KIMBIA | 46 | 72,36 | -36,4 % | M.GUYON | 4/21/805/2182 |
+| 10 | SHUTTERWOOD | 51 | 73,64 | -30,7 % | V.ALONSO VIDAL DE LA PENA | 179/207/829/691 |
+| 11 | DAY DREAMING | 60 | 87,70 | -31,6 % | M.GRANDIN | 3/66/107/160 |
+| 1 | PEDRITO | 77 | 114,09 | -32,5 % | M.PIEN | 150/432/289/4854 |
+| 14 | EMPATHIC | 79 | 112,20 | -29,6 % | M.TEVELS | 264/432/23/4854 |
 
 ### 8. PRIX DE LA CROIX DU GRAND VENEUR
 
