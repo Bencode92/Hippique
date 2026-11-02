@@ -1,8 +1,8 @@
 # STRAUBING — 02/11/2026
 
-6 courses.
+6 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
@@ -12,12 +12,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MERCURY | – | FRANZL JOSEF |
-| 2 | ESCUDO DI MASI | – | HALLER RUDOLF |
-| 3 | MISTRAL | – | PLETSCHACHER ROBERT |
-| 4 | DELMONICA REINA | – | HIENDLMEIER STEFAN |
-| 5 | JOSHUA KS | – | FISCHER CHRISTOPH |
-| 6 | VACATION MEMORY | – | GEINEDER ANDREAS |
+| 1 | MERCURY | 2,2 | FRANZL JOSEF |
+| 6 | VACATION MEMORY | 3,9 | GEINEDER ANDREAS |
+| 2 | ESCUDO DI MASI | 6,8 | HALLER RUDOLF |
+| 4 | DELMONICA REINA | 7,6 | HIENDLMEIER STEFAN |
+| 5 | JOSHUA KS | 9,3 | FISCHER CHRISTOPH |
+| 3 | MISTRAL | 15 | PLETSCHACHER ROBERT |
 
 ### 2. BAYERNLOS-PREIS                         ALLEMAGNE
 
@@ -25,15 +25,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | DELAWARE BRO | – | FRICK MAXIMILIAN |
-| 2 | RINGO LA ROQUE | – | Mme SCHULZ DR.CONNY |
-| 3 | UBERLANDIA | – | GEINEDER MARTIN CH. |
-| 4 | ROZMARIN | – | BACHMEIER GEORG |
-| 5 | SPEEDY ELA SU | – | Mme WIESNER JULIA |
+| 7 | GRI BARACK | 2,4 | TUSCHER HERBERT |
+| 3 | UBERLANDIA | 2,8 | GEINEDER MARTIN CH. |
+| 2 | RINGO LA ROQUE | 6,3 | Mme SCHULZ DR.CONNY |
+| 5 | SPEEDY ELA SU | 10 | Mme WIESNER JULIA |
+| 1 | DELAWARE BRO | 31 | FRICK MAXIMILIAN |
+| 4 | ROZMARIN | 31 | BACHMEIER GEORG |
+| 8 | BEST OF JOKER | 31 | ORTNER ALOIS |
+| 9 | LENNARTH | 31 | SCHWAIGER VITUS |
 | 6 | SLY | – | PRILLER BENJAMIN |
-| 7 | GRI BARACK | – | TUSCHER HERBERT |
-| 8 | BEST OF JOKER | – | ORTNER ALOIS |
-| 9 | LENNARTH | – | SCHWAIGER VITUS |
 | 10 | L'ULTIME ESPOIR | – | Mme GEINEDER ROMINA |
 
 ### 3. LOTTO BAYERN-GRAND PRIX 2026            ALLEMAGNE
@@ -42,66 +42,62 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | DAFNA | – | Mme MAKINEN PINJA |
-| 2 | GRI MY DREAM | – | GRUNDHOFER LASSE |
-| 3 | VEYRON BROS | – | Mme BISS ANJA |
-| 4 | KADOR DU CHOQUEL | – | VEIT FERDINAND |
-| 5 | ZODIAK PS | – | STROBL LUKAS |
-| 6 | ACONCAGUA | – | HALLER RUDOLF |
-| 7 | INDOOR | – | ORTNER ALOIS |
+| 4 | KADOR DU CHOQUEL | 2,3 | VEIT FERDINAND |
+| 6 | ACONCAGUA | 4,2 | HALLER RUDOLF |
+| 1 | DAFNA | 8,5 | Mme MAKINEN PINJA |
+| 9 | DREAM OF ACTION | 12 | FISCHER CHRISTOPH |
+| 2 | GRI MY DREAM | 25 | GRUNDHOFER LASSE |
+| 3 | VEYRON BROS | 25 | Mme BISS ANJA |
+| 5 | ZODIAK PS | 25 | STROBL LUKAS |
+| 7 | INDOOR | 25 | ORTNER ALOIS |
+| 10 | MAGNUM STONE | 25 | LARSEN MICHAEL |
+| 11 | BILLY KIMBER | 25 | PLATZER PETER |
+| 12 | REMUS ECK | 25 | PLETSCHACHER ROBERT |
 | 8 | AUGUSTINER | – | Mme SCHULZ DR.CONNY |
-| 9 | DREAM OF ACTION | – | FISCHER CHRISTOPH |
-| 10 | MAGNUM STONE | – | LARSEN MICHAEL |
-| 11 | BILLY KIMBER | – | PLATZER PETER |
-| 12 | REMUS ECK | – | PLETSCHACHER ROBERT |
 
 ### 4. PREIS DER BAYERISCHEN SPIELBANKEN       ALLEMAGNE
 
-*19h34 · attelé · 1925 m · 10 partants · cotes de l'extraction*
+*19h34 · attelé · 1925 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 6 | SUPER PRO LR | 1,5 | HALLER RUDOLF |
+| 2 | UMBESI | 4,1 | GRUNDHOFER LASSE |
+| 4 | MERCEDES AMG | 12 | GEINEDER ANDREAS |
+| 7 | FRANCHETTO EFFE | 12 | FRANZL JOSEF |
+| 10 | JERRY BOX | 12 | VEIT FERDINAND |
 | 1 | OTHELLO VENUS | – | Mme ENGEL SELINA |
-| 2 | UMBESI | – | GRUNDHOFER LASSE |
 | 3 | ALLEGRO BYD | – | PLETSCHACHER ROBERT |
-| 4 | MERCEDES AMG | – | GEINEDER ANDREAS |
 | 5 | JUSTWALKONBY | – | Mme BOCK MARISA |
-| 6 | SUPER PRO LR | – | HALLER RUDOLF |
-| 7 | FRANCHETTO EFFE | – | FRANZL JOSEF |
 | 8 | QUARCIA BO | – | FERSTL CHRISTIAN |
-| 9 | PEARL NEWPORT | – | SCHWARZ CHRISTOPH |
-| 10 | JERRY BOX | – | VEIT FERDINAND |
 
 ### 5. PREIS DES LOTTO 6 AUS 49                ALLEMAGNE
 
-*20h06 · attelé · 1925 m · 10 partants · cotes de l'extraction*
+*20h06 · attelé · 1925 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | AYRA | – | VOIGT CHRISTIAN |
+| 9 | EXCELLENT GRANDCRU | 3,9 | PRILLER BENJAMIN |
+| 10 | UNFINISHED BUSINESS | 3,9 | HIENDLMEIER STEFAN |
+| 1 | AYRA | 7,9 | VOIGT CHRISTIAN |
+| 3 | RIBANNA | 7,9 | Mme GRUBER ANNA |
+| 4 | GLORY CG | 7,9 | Mme GEINEDER ROMINA |
+| 7 | IDEOLOG | 7,9 | SCHWAIGER VITUS |
+| 8 | FLY HOME | 7,9 | GEINEDER MARTIN CH. |
 | 2 | VAIANA | – | LORENZ HERBERT |
-| 3 | RIBANNA | – | Mme GRUBER ANNA |
-| 4 | GLORY CG | – | Mme GEINEDER ROMINA |
 | 5 | JIVAGO DU GERS | – | FRICK MAXIMILIAN |
-| 6 | IT'S ME | – | Mme WIESNER JULIA |
-| 7 | IDEOLOG | – | SCHWAIGER VITUS |
-| 8 | FLY HOME | – | GEINEDER MARTIN CH. |
-| 9 | EXCELLENT GRANDCRU | – | PRILLER BENJAMIN |
-| 10 | UNFINISHED BUSINESS | – | HIENDLMEIER STEFAN |
 
 ### 6. PREIS DER TOTO 13ER-WETTE               ALLEMAGNE
 
-*20h38 · attelé · 1925 m · 10 partants · cotes de l'extraction*
+*20h38 · attelé · 1925 m · 8 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | LUKE DANES | – | Mme FRANZL LENA |
-| 2 | CRAZY GAAGAA RL | – | Mme MAKINEN PINJA |
-| 3 | VELTEN STELLA | – | Mme BISS ANJA |
-| 4 | MISS JHONS | – | FISCHER CHRISTOPH |
-| 5 | ONATA FORTUNA | – | GEINEDER ANDREAS |
+| 1 | LUKE DANES | 2,3 | Mme FRANZL LENA |
+| 9 | ILLYPOP BAR | 2,3 | FRANZL JOSEF |
+| 2 | CRAZY GAAGAA RL | 7 | Mme MAKINEN PINJA |
+| 5 | ONATA FORTUNA | 7 | GEINEDER ANDREAS |
 | 6 | ROMASHKA | – | BACHMEIER GEORG |
 | 7 | KIAN | – | PLETSCHACHER ROBERT |
 | 8 | NEPTUNE NEWPORT | – | Mme ERTEL JULIA |
-| 9 | ILLYPOP BAR | – | FRANZL JOSEF |
 | 10 | GREAT DARKNESS FIRE | – | Mme BOCK MARISA |
