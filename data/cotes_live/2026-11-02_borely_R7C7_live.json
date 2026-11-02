@@ -4,26 +4,26 @@
   "reunion": 7,
   "heure_depart": 1793631600000,
   "distance": 2300,
-  "scraped_at": "2026-11-02T15:57:05.844953+01:00",
-  "minutes_avant_depart": 3,
+  "scraped_at": "2026-11-02T15:59:45.834080+01:00",
+  "minutes_avant_depart": 0,
   "participants": [
     {
       "numPmu": 1,
       "nom": "KAPTA JELOCA",
-      "cote_live": 5.9,
+      "cote_live": 3.4,
       "cote_reference": 14.0,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1793631420000
+      "favoris": true,
+      "timestamp_cote": 1793631580000
     },
     {
       "numPmu": 2,
       "nom": "JOLI CHARMEUR",
-      "cote_live": 7.8,
+      "cote_live": 11.0,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793631420000
+      "timestamp_cote": 1793631580000
     },
     {
       "numPmu": 3,
@@ -32,61 +32,61 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793631420000
+      "timestamp_cote": 1793631580000
     },
     {
       "numPmu": 4,
       "nom": "JACQUOT DU DOME",
-      "cote_live": 9.3,
+      "cote_live": 9.1,
       "cote_reference": 6.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793631420000
+      "timestamp_cote": 1793631580000
     },
     {
       "numPmu": 5,
       "nom": "KATIMINNIE BROUETS",
-      "cote_live": 17.0,
+      "cote_live": 26.0,
       "cote_reference": 47.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793631420000
+      "timestamp_cote": 1793631580000
     },
     {
       "numPmu": 6,
       "nom": "JIMMYZ",
-      "cote_live": 3.7,
+      "cote_live": 3.6,
       "cote_reference": 5.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793631420000
+      "timestamp_cote": 1793631580000
     },
     {
       "numPmu": 7,
       "nom": "JARNAC DE L'ITON",
-      "cote_live": 3.4,
+      "cote_live": 4.4,
       "cote_reference": 2.0,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1793631420000
+      "favoris": false,
+      "timestamp_cote": 1793631580000
     },
     {
       "numPmu": 8,
       "nom": "JERICHO DU BELLAY",
-      "cote_live": 52.0,
+      "cote_live": 61.0,
       "cote_reference": 37.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793631420000
+      "timestamp_cote": 1793631580000
     },
     {
       "numPmu": 9,
       "nom": "KOREDE",
-      "cote_live": 36.0,
+      "cote_live": 54.0,
       "cote_reference": 41.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793631420000
+      "timestamp_cote": 1793631580000
     }
   ],
   "hippodrome": "BORELY",
@@ -209,6 +209,66 @@
         "7": 3.4,
         "8": 52.0,
         "9": 36.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-02T15:57:46.050448+01:00",
+      "minutes_avant_depart": 2.236745116666667,
+      "cotes": {
+        "1": 5.8,
+        "2": 8.1,
+        "3": 14.0,
+        "4": 10.0,
+        "5": 21.0,
+        "6": 4.0,
+        "7": 2.9,
+        "8": 46.0,
+        "9": 44.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-02T15:58:26.487994+01:00",
+      "minutes_avant_depart": 1.5645987000000001,
+      "cotes": {
+        "1": 5.3,
+        "2": 9.3,
+        "3": 14.0,
+        "4": 11.0,
+        "5": 22.0,
+        "6": 3.5,
+        "7": 3.1,
+        "8": 46.0,
+        "9": 46.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-02T15:59:05.836222+01:00",
+      "minutes_avant_depart": 0.9034079833333333,
+      "cotes": {
+        "1": 4.0,
+        "2": 9.4,
+        "3": 11.0,
+        "4": 11.0,
+        "5": 23.0,
+        "6": 3.8,
+        "7": 3.7,
+        "8": 55.0,
+        "9": 51.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-02T15:59:45.834080+01:00",
+      "minutes_avant_depart": 0.2367394,
+      "cotes": {
+        "1": 3.4,
+        "2": 11.0,
+        "3": 13.0,
+        "4": 9.1,
+        "5": 26.0,
+        "6": 3.6,
+        "7": 4.4,
+        "8": 61.0,
+        "9": 54.0
       }
     }
   ]
