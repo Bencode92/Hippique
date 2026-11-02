@@ -2,7 +2,9 @@
 
 8 courses.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+**Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
+La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
+Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classements ci-dessus.
 
 ---
 
@@ -102,26 +104,26 @@
 
 ### 6. PRIX DES FRENES
 
-*16h40 · plat · 1400 m · 16 partants · cotes de l'extraction*
+*16h40 · plat · 1400 m · 16 partants · cotes à T−5:14*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | IRBIS | – | A.HAMELIN | 22/88/66/459 |
-| 2 | HERACLES | – | M.GRANDIN | 3/79/1567/1523 |
-| 3 | BELL SONG | – | H.BOUTIN | 14/181/563/143 |
-| 4 | LADY SOFIA | – | M.PROTTI | 30/6/240/20 |
-| 5 | MA MOME | – | D.SANTIAGO | 15/81/278/38 |
-| 6 | SWEET AS | – | M.PIEN | 150/15/15/36 |
-| 7 | I LIKED IT | – | G.SIAS | 96/60/81/858 |
-| 8 | NO TIME | – | B.MARIE | 69/108/22/749 |
-| 9 | GALLIUS | – | E.MUNTWYLER | 181/15/572/273 |
-| 10 | ISCREAMFORICECREAM | – | A.LEMAITRE | 11/197/967/3165 |
-| 11 | PAMELA BOUM | – | E.HARDOUIN | 27/89/445/838 |
-| 12 | CHARLESTON DANCER | – | A.CRASTUS | 17/163/2248/3838 |
-| 13 | PERFECT MOON | – | C.COLLET-VIDAL | 119/180/1137/709 |
-| 14 | ISMAEL PAINT | – | F.VERON | 24/81/1136/120 |
-| 15 | KILOECHO | – | P.BAZIRE | 58/161/832/158 |
-| 16 | TRUE VALUE | – | R.THOMAS | 75/90/1127/66 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 11 | PAMELA BOUM | 3,6 | 3,91 | -7,8 % | E.HARDOUIN | 27/89/445/838 |
+| 16 | TRUE VALUE | 6,2 | 6,44 | -3,7 % | R.THOMAS | 75/90/1127/66 |
+| 2 | HERACLES | 10 | 12,66 | -21,0 % | M.GRANDIN | 3/79/1567/1523 |
+| 3 | BELL SONG | 11 | 12,45 | -11,7 % | H.BOUTIN | 14/181/563/143 |
+| 5 | MA MOME | 14 | 16,50 | -15,1 % | D.SANTIAGO | 15/81/278/38 |
+| 4 | LADY SOFIA | 15 | 18,16 | -17,4 % | M.PROTTI | 30/6/240/20 |
+| 1 | IRBIS | 17 | 23,63 | -28,1 % | A.HAMELIN | 22/88/66/459 |
+| 15 | KILOECHO | 20 | 26,02 | -23,1 % | P.BAZIRE | 58/161/832/158 |
+| 8 | NO TIME | 21 | 26,39 | -20,4 % | B.MARIE | 69/108/22/749 |
+| 13 | PERFECT MOON | 22 | 31,04 | -29,1 % | C.COLLET-VIDAL | 119/180/1137/709 |
+| 7 | I LIKED IT | 24 | 31,25 | -23,2 % | G.SIAS | 96/60/81/858 |
+| 10 | ISCREAMFORICECREAM | 26 | 36,20 | -28,2 % | A.LEMAITRE | 11/197/967/3165 |
+| 14 | ISMAEL PAINT | 28 | 38,25 | -26,8 % | F.VERON | 24/81/1136/120 |
+| 6 | SWEET AS | 34 | 41,51 | -18,1 % | M.PIEN | 150/15/15/36 |
+| 12 | CHARLESTON DANCER | 40 | 65,59 | -39,0 % | A.CRASTUS | 17/163/2248/3838 |
+| 9 | GALLIUS | 45 | 71,32 | -36,9 % | E.MUNTWYLER | 181/15/572/273 |
 
 ### 7. PRIX DU CENTRE D'ECOTOURISME DE FRANCHARD
 
