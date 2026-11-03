@@ -1,6 +1,6 @@
 # CONCEPCION — 03/11/2026
 
-6 courses (1 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+6 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -12,14 +12,14 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 4 | CHARMING STAR | 1,3 | LUIS AROS HARVEY | –/–/–/– |
+| 2 | LUDMILA | 7,9 | JUAN A. CAMPOS | –/–/–/– |
+| 3 | CEDERIC | 8,6 | JAIME ADOLFO MINO FICA | –/–/–/– |
+| 6 | MACKLIN | 17 | VICENTE ALEXANDER MARDONES GONZA | –/–/–/– |
+| 8 | LA RECAUDADORA | 17 | GABRIEL  URZUA | –/–/–/– |
+| 5 | AMERICAN BUNNY | 34 | JELY BRAYAN BARRIL CURIN | –/–/–/– |
 | 1 | GOLDEN WARRIOR | – | BENJAMIN  DIAZ | –/–/–/– |
-| 2 | LUDMILA | – | JUAN A. CAMPOS | –/–/–/– |
-| 3 | CEDERIC | – | JAIME ADOLFO MINO FICA | –/–/–/– |
-| 4 | CHARMING STAR | – | LUIS AROS HARVEY | –/–/–/– |
-| 5 | AMERICAN BUNNY | – | JELY BRAYAN BARRIL CURIN | –/–/–/– |
-| 6 | MACKLIN | – | VICENTE ALEXANDER MARDONES GONZA | –/–/–/– |
 | 7 | BY THE BOOK | – | ANYELO GERMAN SOTO GARCES | –/–/–/– |
-| 8 | LA RECAUDADORA | – | GABRIEL  URZUA | –/–/–/– |
 
 ### 3. I.MUNICIPALIDAD DE TALCAHUANO
 
@@ -27,14 +27,14 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 4 | LOCO Y DEMENTE | 3,4 | JOSE MANUEL MOYA SEPULVEDA | –/–/–/– |
+| 5 | CORONADO | 4,1 | LUIS AROS HARVEY | –/–/–/– |
+| 2 | BIG RED | 4,7 | IVAN CARCAMO | –/–/–/– |
+| 6 | KASHGAR | 5,1 | LUIS EDUARDO ROJAS ARANGUREN | –/–/–/– |
+| 3 | COPAYAPU | 10 | ANDRES  VEGA PEREZ JANS | –/–/–/– |
+| 8 | MI NINA QUERIDA | 10 | JAIME ADOLFO MINO FICA | –/–/–/– |
 | 1 | PECADO INCONFESABLE | – | VICENTE ALEXANDER MARDONES GONZA | –/–/–/– |
-| 2 | BIG RED | – | IVAN CARCAMO | –/–/–/– |
-| 3 | COPAYAPU | – | ANDRES  VEGA PEREZ JANS | –/–/–/– |
-| 4 | LOCO Y DEMENTE | – | JOSE MANUEL MOYA SEPULVEDA | –/–/–/– |
-| 5 | CORONADO | – | LUIS AROS HARVEY | –/–/–/– |
-| 6 | KASHGAR | – | LUIS EDUARDO ROJAS ARANGUREN | –/–/–/– |
 | 7 | MUY DONOSO | – | GUSTAVO VERA | –/–/–/– |
-| 8 | MI NINA QUERIDA | – | JAIME ADOLFO MINO FICA | –/–/–/– |
 
 ### 4. ORGULLO CHORERO
 
@@ -42,15 +42,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 2 | OLIMPIC BLUE | 3,5 | ANDRES  VEGA PEREZ JANS |
+| 4 | SIN EL | 3,8 | LUIS AROS HARVEY |
+| 5 | LA MELYTANS | 5,1 | LUIS EDUARDO ROJAS ARANGUREN |
+| 3 | TROMBONCITO | 7,6 | ANYELO GERMAN SOTO GARCES |
+| 6 | RETOBADO | 7,6 | VICENTE ALEXANDER MARDONES GONZA |
+| 9 | GENUINE COMAND | 7,6 | JUAN A. INOSTROZA |
 | 1 | DRIYANKA | – | JAIME ADOLFO MINO FICA |
-| 2 | OLIMPIC BLUE | – | ANDRES  VEGA PEREZ JANS |
-| 3 | TROMBONCITO | – | ANYELO GERMAN SOTO GARCES |
-| 4 | SIN EL | – | LUIS AROS HARVEY |
-| 5 | LA MELYTANS | – | LUIS EDUARDO ROJAS ARANGUREN |
-| 6 | RETOBADO | – | VICENTE ALEXANDER MARDONES GONZA |
 | 7 | WENA CASTILLO | – | JOSE MANUEL MOYA SEPULVEDA |
 | 8 | CHACAYALINO | – | GUSTAVO VERA |
-| 9 | GENUINE COMAND | – | JUAN A. INOSTROZA |
 
 ### 5. TRADICION Y PATRIMONIO NAVAL
 
@@ -58,11 +58,11 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 2 | PERDON SENORITA | 2,1 | JUAN A. CAMPOS |
+| 5 | MI TIO RAUL | 2,7 | VICENTE ALEXANDER MARDONES GONZA |
+| 4 | ANGEL PENQUISTA | 3,3 | ANYELO GERMAN SOTO GARCES |
 | 1 | GRAN CALEB | – | GUSTAVO VERA |
-| 2 | PERDON SENORITA | – | JUAN A. CAMPOS |
 | 3 | STELLARIO | – | JUAN P. TORRES |
-| 4 | ANGEL PENQUISTA | – | ANYELO GERMAN SOTO GARCES |
-| 5 | MI TIO RAUL | – | VICENTE ALEXANDER MARDONES GONZA |
 | 6 | LADY ASHLEY | – | JAIME ADOLFO MINO FICA |
 | 7 | FIN DE UNA ERA | – | BENJAMIN  DIAZ |
 | 8 | TE QUIERO A TI | – | LUIS EDUARDO ROJAS ARANGUREN |
@@ -75,15 +75,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 4 | FURIA DE TROYA | 1,1 | LUIS AROS HARVEY |
+| 2 | YERKO | 2,8 | VICENTE ALEXANDER MARDONES GONZA |
+| 4 | FURIA DE TROYA | 3 | LUIS AROS HARVEY |
+| 9 | I AM BLACKLIST | 4 | JUAN A. INOSTROZA |
+| 3 | ENGLA | 12 | JOSE MANUEL MOYA SEPULVEDA |
+| 7 | JUDGE ROOM | 12 | GUSTAVO VERA |
+| 5 | FLOFLI | 24 | JELY BRAYAN BARRIL CURIN |
 | 1 | SANTA YAPA | – | BRYAN  RETAMAL |
-| 2 | YERKO | – | VICENTE ALEXANDER MARDONES GONZA |
-| 3 | ENGLA | – | JOSE MANUEL MOYA SEPULVEDA |
-| 5 | FLOFLI | – | JELY BRAYAN BARRIL CURIN |
 | 6 | BILLY JANE | – | BENJAMIN  DIAZ |
-| 7 | JUDGE ROOM | – | GUSTAVO VERA |
 | 8 | GRAN DREAMER | – | LUIS EDUARDO ROJAS ARANGUREN |
-| 9 | I AM BLACKLIST | – | JUAN A. INOSTROZA |
 | 10 | COMPADRE CRISTIAN | – | GABRIEL  URZUA |
 
 ### 7. CENTINELAS DE LA BAHIA
@@ -92,15 +92,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 2 | ULTRASONIDO | 3,1 | JUAN P. TORRES |
+| 4 | CHILLY WILLY | 3,3 | JUAN A. CAMPOS |
+| 8 | MAGICO SECRETO | 6,7 | LUIS AROS HARVEY |
+| 9 | THE REAL FAFA | 6,7 | GABRIEL  URZUA |
+| 10 | HEY NINA | 6,7 | GUSTAVO VERA |
+| 5 | CATAPOS | 13 | VICENTE ALEXANDER MARDONES GONZA |
 | 1 | FIESTERA LINDA | – | JAIME ADOLFO MINO FICA |
-| 2 | ULTRASONIDO | – | JUAN P. TORRES |
 | 3 | JOHN SUNDAY | – | ANYELO GERMAN SOTO GARCES |
-| 4 | CHILLY WILLY | – | JUAN A. CAMPOS |
-| 5 | CATAPOS | – | VICENTE ALEXANDER MARDONES GONZA |
 | 6 | FORTINATTO | – | BENJAMIN  DIAZ |
 | 7 | COMO YO NINGUNO | – | LUIS EDUARDO ROJAS ARANGUREN |
-| 8 | MAGICO SECRETO | – | LUIS AROS HARVEY |
-| 9 | THE REAL FAFA | – | GABRIEL  URZUA |
-| 10 | HEY NINA | – | GUSTAVO VERA |
 | 11 | WITTY GIRL | – | JOSE MANUEL MOYA SEPULVEDA |
 | 12 | KALANIT | – | JUAN A. INOSTROZA |

@@ -1,6 +1,6 @@
 # FLEMINGTON — 03/11/2026
 
-4 courses (1 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+4 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -8,52 +8,51 @@
 
 ### 7. LEXUS MELBOURNE CUP
 
-*06h00 · plat · 3200 m · 24 partants · cotes de l'extraction*
+*06h00 · plat · 3200 m · 23 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | TRUSTYOURINSTINCT | 8,4 | JAMES MCDONALD | –/82/–/– |
-| 20 | POINT OF LAW | 8,8 | ETHAN BROWN | –/–/–/– |
-| 12 | HOPEWELL ROCK | 10 | ZAC LLOYD | –/433/–/– |
-| 24 | SHOCKLETZ | 10 | HARRY COFFEY | –/–/–/– |
-| 16 | SO YOU ARE | 11 | RACHEL KING | –/–/–/– |
+| 20 | POINT OF LAW | 7,8 | ETHAN BROWN | –/–/–/– |
+| 12 | HOPEWELL ROCK | 8 | ZAC LLOYD | –/433/–/– |
+| 2 | TRUSTYOURINSTINCT | 9 | JAMES MCDONALD | –/82/–/– |
+| 16 | SO YOU ARE | 9,9 | RACHEL KING | –/–/–/– |
+| 24 | SHOCKLETZ | 12 | HARRY COFFEY | –/–/–/– |
 | 11 | JUJA KIBO | 13 | SAM CLIPPERTON | –/–/–/– |
-| 4 | MIDDLE EARTH | 14 | MARK ZAHRA | –/–/–/– |
-| 10 | GOODIE TWO SHOES | 19 | W M LORDAN | 265/82/–/– |
-| 1 | SONS AND LOVERS | 22 | DYLAN BROWNE MCMONAGLE | 176/82/–/232 |
-| 14 | SOUL OF SPAIN | 25 | TOMMY BERRY | –/–/–/2019 |
-| 22 | MR MONACO | 26 | JABEZ JOHNSTONE | –/–/–/– |
-| 23 | ZAKOUMA | 26 | WILLIAM PIKE | –/–/–/– |
-| 3 | KNIGHT'S CHOICE | 27 | ROBBIE DOLAN | –/–/–/– |
-| 6 | ENFJAAR | 29 | RAY DAWSON | 315/510/–/– |
-| 18 | JAMES J BRADDOCK | 29 | CRAIG WILLIAMS | –/82/–/– |
-| 8 | WINE DARK SEA | 35 | DAMIAN LANE | –/855/–/– |
-| 7 | ROYAL SUPREMACY | 36 | BEN ALLEN | –/–/–/– |
-| 15 | ZAHRANN | 36 | BEN MELHAM | –/–/–/– |
-| 5 | VAUBAN | 37 | JORDAN CHILDS | –/–/–/– |
-| 13 | ONESMOOTHOPERATOR | 37 | DECLAN BATES | –/–/–/– |
-| 17 | FUTURE HISTORY | 37 | JAMIE MELHAM | –/–/–/– |
-| 21 | STRICTLY BUSINESS | 47 | DEAN YENDALL | –/–/–/– |
-| 19 | KIZLYAR | 52 | BEAU MERTENS | –/82/–/232 |
-| 9 | ASTERIX | – | JYE MCNEIL | –/–/–/– |
+| 4 | MIDDLE EARTH | 17 | MARK ZAHRA | –/–/–/– |
+| 18 | JAMES J BRADDOCK | 19 | CRAIG WILLIAMS | –/82/–/– |
+| 23 | ZAKOUMA | 22 | WILLIAM PIKE | –/–/–/– |
+| 1 | SONS AND LOVERS | 24 | DYLAN BROWNE MCMONAGLE | 176/82/–/232 |
+| 14 | SOUL OF SPAIN | 24 | TOMMY BERRY | –/–/–/2019 |
+| 22 | MR MONACO | 24 | JABEZ JOHNSTONE | –/–/–/– |
+| 10 | GOODIE TWO SHOES | 24 | W M LORDAN | 265/82/–/– |
+| 6 | ENFJAAR | 25 | RAY DAWSON | 315/510/–/– |
+| 3 | KNIGHT'S CHOICE | 34 | ROBBIE DOLAN | –/–/–/– |
+| 15 | ZAHRANN | 35 | BEN MELHAM | –/–/–/– |
+| 8 | WINE DARK SEA | 40 | DAMIAN LANE | –/855/–/– |
+| 7 | ROYAL SUPREMACY | 44 | BEN ALLEN | –/–/–/– |
+| 13 | ONESMOOTHOPERATOR | 46 | DECLAN BATES | –/–/–/– |
+| 17 | FUTURE HISTORY | 47 | JAMIE MELHAM | –/–/–/– |
+| 5 | VAUBAN | 47 | JORDAN CHILDS | –/–/–/– |
+| 21 | STRICTLY BUSINESS | 58 | DEAN YENDALL | –/–/–/– |
+| 19 | KIZLYAR | 60 | BEAU MERTENS | –/82/–/232 |
 
 ### 8. CROWN AMANDA ELLIOTT
 
-*06h50 · plat · 1400 m · 11 partants · cotes de l'extraction*
+*06h55 · plat · 1400 m · 11 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | MILSONS POINT | – | BEN ALLEN | –/–/–/46 |
-| 2 | BARRACKS | – | ETHAN BROWN | –/–/–/– |
-| 3 | OUR EMPEROR | – | TIM CLARK | –/–/–/– |
-| 5 | RANARSSON | – | BEN MELHAM | –/–/–/– |
-| 7 | TOLAGA BAY | – | CRAIG WILLIAMS | –/–/–/– |
-| 8 | SHOOTING BRAKE | – | BILLY EGAN | –/–/–/– |
-| 9 | HARRY LIME | – | RACHEL KING | –/–/–/– |
-| 12 | MERRY CHASE | – | BEAU MERTENS | –/–/–/– |
-| 13 | MR NATURAL | – | DAMIAN LANE | –/–/–/– |
-| 14 | THE THORNCASTER | – | ZAC LLOYD | –/–/–/– |
-| 15 | BOY FROM ZADAR | – | CRAIG NEWITT | –/–/–/– |
+| 5 | RANARSSON | 2,2 | BEN MELHAM | –/–/–/– |
+| 13 | MR NATURAL | 5 | DAMIAN LANE | –/–/–/– |
+| 9 | HARRY LIME | 7,8 | RACHEL KING | –/–/–/– |
+| 2 | BARRACKS | 10 | ETHAN BROWN | –/–/–/– |
+| 3 | OUR EMPEROR | 13 | TIM CLARK | –/–/–/– |
+| 12 | MERRY CHASE | 17 | BEAU MERTENS | –/–/–/– |
+| 1 | MILSONS POINT | 20 | BEN ALLEN | –/–/–/46 |
+| 7 | TOLAGA BAY | 25 | CRAIG WILLIAMS | –/–/–/– |
+| 8 | SHOOTING BRAKE | 25 | BILLY EGAN | –/–/–/– |
+| 14 | THE THORNCASTER | 35 | ZAC LLOYD | –/–/–/– |
+| 15 | BOY FROM ZADAR | 83 | CRAIG NEWITT | –/–/–/– |
 
 ### 9. THE HONG KONG JOCKEY CLUB STAKES
 
@@ -61,22 +60,22 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | STYLISH | – | ETHAN BROWN |
-| 2 | SHADHAVAR | – | CRAIG WILLIAMS |
-| 3 | OH TOO GOOD | – | DAMIAN LANE |
-| 4 | DANCE TO THE BOOM | – | RACHEL KING |
-| 5 | MISS FREELOVE | – | BLAKE SHINN |
-| 6 | RUSKA ROMA | – | JORDAN CHILDS |
-| 7 | SO YOU PENCE | – | TOMMY BERRY |
-| 8 | TERILEE | – | WILLIAM PIKE |
-| 9 | BETWITCHERY | – | LUKE CURRIE |
-| 10 | BON MISTRESS | – | JETT STANLEY |
-| 11 | GOLD MEDALLIST | – | LUKE NOLEN |
-| 12 | BUTTERNUT PRINCESS | – | BEN MELHAM |
-| 13 | STEALTH OF NIGHT | – | ZAC LLOYD |
-| 14 | MILOS FILOS | – | ALANA KELLY |
-| 15 | TOMATO TOASTIE | – | TIM CLARK |
-| 17 | COOLY | – | JAMES MCDONALD |
+| 2 | SHADHAVAR | 3 | CRAIG WILLIAMS |
+| 8 | TERILEE | 5,6 | WILLIAM PIKE |
+| 7 | SO YOU PENCE | 6,8 | TOMMY BERRY |
+| 4 | DANCE TO THE BOOM | 11 | RACHEL KING |
+| 1 | STYLISH | 12 | ETHAN BROWN |
+| 11 | GOLD MEDALLIST | 14 | LUKE NOLEN |
+| 5 | MISS FREELOVE | 23 | BLAKE SHINN |
+| 14 | MILOS FILOS | 24 | ALANA KELLY |
+| 12 | BUTTERNUT PRINCESS | 26 | BEN MELHAM |
+| 13 | STEALTH OF NIGHT | 27 | ZAC LLOYD |
+| 15 | TOMATO TOASTIE | 39 | TIM CLARK |
+| 17 | COOLY | 39 | JAMES MCDONALD |
+| 3 | OH TOO GOOD | 41 | DAMIAN LANE |
+| 6 | RUSKA ROMA | 51 | JORDAN CHILDS |
+| 9 | BETWITCHERY | 86 | LUKE CURRIE |
+| 10 | BON MISTRESS | 123 | JETT STANLEY |
 
 ### 10. CHANNEL 9 TROPHY
 
@@ -84,15 +83,15 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | BUCCLEUCH | – | BILLY EGAN | –/–/–/– |
-| 2 | KEEP YOUR COOL | – | BEN MELHAM | –/–/–/– |
-| 4 | SPACE RIDER | – | MARK ZAHRA | –/–/–/– |
-| 6 | HE'LL RIP | – | BEN ALLEN | –/–/–/– |
-| 7 | JETT SMASH | – | DAMIAN LANE | –/184/–/– |
-| 8 | CASH | – | ETHAN BROWN | –/–/–/– |
-| 9 | FERIVIA | – | JAMIE MELHAM | –/–/–/– |
-| 11 | QUISEEN | – | CRAIG WILLIAMS | –/–/–/– |
-| 12 | EVERAIN | – | ZAC LLOYD | –/–/–/– |
-| 13 | NO FUSS | – | JOHN ALLEN | –/–/–/– |
-| 14 | FUNDAMENTAL NATURE | – | WILLIAM PIKE | –/–/–/– |
-| 15 | ITAZURA | – | LUKE NOLEN | –/–/–/– |
+| 1 | BUCCLEUCH | 2,7 | BILLY EGAN | –/–/–/– |
+| 7 | JETT SMASH | 5 | DAMIAN LANE | –/184/–/– |
+| 12 | EVERAIN | 6,3 | ZAC LLOYD | –/–/–/– |
+| 14 | FUNDAMENTAL NATURE | 12 | WILLIAM PIKE | –/–/–/– |
+| 4 | SPACE RIDER | 13 | MARK ZAHRA | –/–/–/– |
+| 6 | HE'LL RIP | 14 | BEN ALLEN | –/–/–/– |
+| 13 | NO FUSS | 14 | JOHN ALLEN | –/–/–/– |
+| 8 | CASH | 23 | ETHAN BROWN | –/–/–/– |
+| 2 | KEEP YOUR COOL | 24 | BEN MELHAM | –/–/–/– |
+| 15 | ITAZURA | 34 | LUKE NOLEN | –/–/–/– |
+| 11 | QUISEEN | 45 | CRAIG WILLIAMS | –/–/–/– |
+| 9 | FERIVIA | 45 | JAMIE MELHAM | –/–/–/– |
