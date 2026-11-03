@@ -91,23 +91,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DU HOGUENET
 
-*19h20 · plat · 1900 m · 13 partants · cotes à T−3:24*
+*19h20 · plat · 1900 m · 13 partants · cotes à T−0:44*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 4 | JUST INSPIRATION | 2,9 | 3,7 | 3,33 | -12,8 % | M.BARZALONA 2e | 2/1/3236/43 |
-| 6 | SATURDAY NIGHT | 6,7 | 9,2 | 7,30 | -8,2 % | M.GRANDIN | 3/73/4/380 |
-| 3 | WALMA | 8,9 | 8,1 | 10,13 | -12,2 % | T.TRULLIER | 21/54/353/663 |
-| 2 | LACE FLOWER | 9,3 | 9,6 | 11,35 | -18,0 % | T.PICCONE | 9/6/–/6 |
-| 5 | ESPARTINAS | 10 | 7,5 | 12,65 | -20,9 % | J.CLAUDIC | 38/83/497/2246 |
-| 10 | ROSA DEI VENTI | 12 | 10 | 15,01 | -20,0 % | A.HAMELIN | 22/45/567/1559 |
-| 8 | UTXA | 13 | 17 | 14,07 | -7,6 % | M.FAVRIAUX | 51/56/3146/153 |
-| 9 | ALLEGRESSE | 21 | 22 | 25,61 | -18,0 % | C.PACAUT | 48/17/482/1463 |
-| 13 | DIVA CHIQUITA | 27 | 22 | 39,26 | -31,2 % | A.MADAMET | 10/74/47/762 |
-| 1 | KOYA | 30 | 14 | 42,20 | -28,9 % | M.PROTTI | 30/6/85/300 |
-| 7 | MISS GEORGINA | 39 | 30 | 59,33 | -34,3 % | M.MARQUETTE | 54/14/1741/2120 |
-| 12 | ALYAQUT | 41 | 27 | 53,54 | -23,4 % | E.HARDOUIN | 27/79/2080/953 |
-| 11 | ZOLIA | 51 | 44 | 80,06 | -36,3 % | J.MOUTARD | 61/357/4/659 |
+| 4 | JUST INSPIRATION | 2,9 | 3,7 | 3,28 | -11,5 % | M.BARZALONA 2e | 2/1/3236/43 |
+| 6 | SATURDAY NIGHT | 6,8 | 9,2 | 7,93 | -14,3 % | M.GRANDIN | 3/73/4/380 |
+| 3 | WALMA | 9,5 | 8,1 | 10,75 | -11,6 % | T.TRULLIER | 21/54/353/663 |
+| 2 | LACE FLOWER | 9,8 | 9,6 | 11,86 | -17,4 % | T.PICCONE | 9/6/–/6 |
+| 5 | ESPARTINAS | 10 | 7,5 | 12,43 | -19,6 % | J.CLAUDIC | 38/83/497/2246 |
+| 10 | ROSA DEI VENTI | 10 | 10 | 11,91 | -16,0 % | A.HAMELIN | 22/45/567/1559 |
+| 8 | UTXA | 16 | 17 | 17,59 | -9,1 % | M.FAVRIAUX | 51/56/3146/153 |
+| 9 | ALLEGRESSE | 21 | 22 | 25,18 | -16,6 % | C.PACAUT | 48/17/482/1463 |
+| 1 | KOYA | 27 | 14 | 36,84 | -26,7 % | M.PROTTI | 30/6/85/300 |
+| 13 | DIVA CHIQUITA | 29 | 22 | 41,87 | -30,7 % | A.MADAMET | 10/74/47/762 |
+| 12 | ALYAQUT | 40 | 27 | 51,27 | -22,0 % | E.HARDOUIN | 27/79/2080/953 |
+| 7 | MISS GEORGINA | 44 | 30 | 66,68 | -34,0 % | M.MARQUETTE | 54/14/1741/2120 |
+| 11 | ZOLIA | 61 | 44 | 95,53 | -36,1 % | J.MOUTARD | 61/357/4/659 |
 
 ### 6. PRIX VODKATO
 
