@@ -1,6 +1,6 @@
 # DEAUVILLE — 03/11/2026
 
-8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -111,17 +111,17 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX VODKATO
 
-*19h55 · plat · 1900 m · 7 partants · cotes de l'extraction*
+*19h55 · plat · 1900 m · 7 partants · cotes à T−29:44*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 4 | LORAXED | 1,7 | 1,91 | -11,1 % | M.GRANDIN | 3/120/1167/103 |
-| 1 | MATAURI BAY | 6,6 | 7,98 | -17,3 % | PC.BOUDOT 4e | 8/14/88/60 |
-| 5 | TIEGO THE FIRST | 7 | 8,92 | -21,5 % | M.GUYON 3e | 4/19/90/– |
-| 3 | ANSSIO | 9,8 | 11,86 | -17,3 % | C.LECOEUVRE | 13/96/20/242 |
-| 2 | DIOPTASE | 13 | 16,52 | -21,3 % | M.BARZALONA 2e | 2/137/54/115 |
-| 6 | SERIE | 14 | 15,80 | -11,4 % | A.LEMAITRE | 11/69/65/1874 |
-| 7 | TSUKI | 36 | 53,28 | -32,4 % | T.PICCONE | 9/12/–/979 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 4 | LORAXED | 1,8 | 1,7 | 2,01 | -10,5 % | M.GRANDIN | 3/120/1167/103 |
+| 1 | MATAURI BAY | 6,3 | 6,6 | 7,68 | -18,0 % | PC.BOUDOT 4e | 8/14/88/60 |
+| 3 | ANSSIO | 7,7 | 9,8 | 9,48 | -18,8 % | C.LECOEUVRE | 13/96/20/242 |
+| 5 | TIEGO THE FIRST | 8,8 | 7 | 11,35 | -22,5 % | M.GUYON 3e | 4/19/90/– |
+| 2 | DIOPTASE | 9,3 | 13 | 11,33 | -17,9 % | M.BARZALONA 2e | 2/137/54/115 |
+| 6 | SERIE | 12 | 14 | 13,41 | -10,5 % | A.LEMAITRE | 11/69/65/1874 |
+| 7 | TSUKI | 36 | 36 | 54,08 | -33,4 % | T.PICCONE | 9/12/–/979 |
 
 ### 7. PRIX GEOFF LEWIS (CHMPT PARIS TURF DES APPRENTIS & JEUNES JOCKEYS)
 
