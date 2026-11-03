@@ -68,26 +68,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX DE COMMEAUX
 
-*18h42 · plat · 1500 m · 16 partants · cotes à T−10:44*
+*18h42 · plat · 1500 m · 16 partants · cotes à T−4:44*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 8 | IDEE DE CHEVAL | 4,5 | 7,8 | 4,79 | -6,1 % | C.GROSBOIS | 25/119/86/1563 |
-| 4 | AURORA BOREALIS | 7,6 | 8,6 | 9,90 | -23,2 % | M.FAVRIAUX | 51/120/12/2425 |
-| 1 | MOOREA | 8,2 | 13 | 11,57 | -29,1 % | PC.BOUDOT 4e | 8/48/778/945 |
-| 3 | WOFF | 10 | 11 | 13,66 | -26,8 % | W.LEVESQUE | 79/94/1/164 |
-| 7 | NOOTKA BAY | 10 | 13 | 12,01 | -16,7 % | C.LECOEUVRE | 13/117/433/2263 |
-| 2 | GRAN HABANO | 11 | 11 | 14,99 | -26,6 % | E.VERHESTRAETEN | 53/12/3218/2011 |
-| 5 | BAUHINIA RHAPSODY | 11 | 12 | 13,42 | -18,1 % | C.PACAUT | 48/161/3234/4518 |
-| 14 | MYBOYFRIEND | 16 | 22 | 21,67 | -26,2 % | E.HARDOUIN | 27/256/1042/2187 |
-| 15 | MRS HOLIDAY | 18 | 16 | 23,80 | -24,4 % | H.LEBOUC | 19/129/263/2733 |
-| 11 | EL KRAKEN | 21 | 20 | 32,54 | -35,5 % | C.BELMONT | 171/132/161/409 |
-| 10 | MONARCH HUNZA | 23 | 11 | 30,01 | -23,4 % | H.JOURNIAC | 43/170/1074/183 |
-| 16 | COUR DU ROI | 23 | 22 | 32,91 | -30,1 % | R.MANGIONE | 78/335/47/547 |
-| 9 | PAINT IT BLACK | 26 | 14 | 36,10 | -28,0 % | D.SANTIAGO | 15/542/2178/1859 |
-| 13 | MISS YORKSHIRE | 30 | 19 | 44,46 | -32,5 % | A.LEMAITRE | 11/40/33/2112 |
-| 6 | IRISHKAMAYA | 31 | 17 | 38,39 | -19,3 % | T.BACHELOT | 16/239/1106/2521 |
-| 12 | GRAN HABANO | 39 | 42 | 55,83 | -30,1 % | T.PICCONE | 9/485/181/1379 |
+| 8 | IDEE DE CHEVAL | 5,1 | 7,8 | 5,50 | -7,3 % | C.GROSBOIS | 25/119/86/1563 |
+| 1 | MOOREA | 5,7 | 13 | 6,97 | -18,2 % | PC.BOUDOT 4e | 8/48/778/945 |
+| 4 | AURORA BOREALIS | 7,2 | 8,6 | 9,30 | -22,6 % | M.FAVRIAUX | 51/120/12/2425 |
+| 3 | WOFF | 9,4 | 11 | 12,72 | -26,1 % | W.LEVESQUE | 79/94/1/164 |
+| 2 | GRAN HABANO | 11 | 11 | 15,01 | -26,7 % | E.VERHESTRAETEN | 53/12/3218/2011 |
+| 7 | NOOTKA BAY | 11 | 13 | 13,44 | -18,2 % | C.LECOEUVRE | 13/117/433/2263 |
+| 5 | BAUHINIA RHAPSODY | 15 | 12 | 18,43 | -18,6 % | C.PACAUT | 48/161/3234/4518 |
+| 11 | EL KRAKEN | 20 | 20 | 30,80 | -35,1 % | C.BELMONT | 171/132/161/409 |
+| 14 | MYBOYFRIEND | 21 | 22 | 32,58 | -35,5 % | E.HARDOUIN | 27/256/1042/2187 |
+| 15 | MRS HOLIDAY | 21 | 16 | 28,46 | -26,2 % | H.LEBOUC | 19/129/263/2733 |
+| 16 | COUR DU ROI | 21 | 22 | 29,69 | -29,3 % | R.MANGIONE | 78/335/47/547 |
+| 6 | IRISHKAMAYA | 22 | 17 | 26,12 | -15,8 % | T.BACHELOT | 16/239/1106/2521 |
+| 9 | PAINT IT BLACK | 24 | 14 | 33,01 | -27,3 % | D.SANTIAGO | 15/542/2178/1859 |
+| 10 | MONARCH HUNZA | 27 | 11 | 36,04 | -25,1 % | H.JOURNIAC | 43/170/1074/183 |
+| 12 | GRAN HABANO | 32 | 42 | 44,90 | -28,7 % | T.PICCONE | 9/485/181/1379 |
+| 13 | MISS YORKSHIRE | 36 | 19 | 52,04 | -30,8 % | A.LEMAITRE | 11/40/33/2112 |
 
 ### 5. PRIX DU HOGUENET
 
