@@ -4,44 +4,44 @@
   "reunion": 4,
   "heure_depart": 1793732580000,
   "distance": 1900,
-  "scraped_at": "2026-11-03T19:54:31.722422+01:00",
-  "minutes_avant_depart": 8,
+  "scraped_at": "2026-11-03T19:59:10.831575+01:00",
+  "minutes_avant_depart": 4,
   "participants": [
     {
       "numPmu": 1,
       "nom": "REGAL RESOLVE",
-      "cote_live": 1.7,
+      "cote_live": 1.8,
       "cote_reference": 1.4,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793732064000
+      "timestamp_cote": 1793732328000
     },
     {
       "numPmu": 2,
       "nom": "HATANKA FAL",
-      "cote_live": 7.2,
+      "cote_live": 7.1,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793732064000
+      "timestamp_cote": 1793732328000
     },
     {
       "numPmu": 3,
       "nom": "CITY SOLACE",
-      "cote_live": 7.2,
+      "cote_live": 6.7,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793732064000
+      "timestamp_cote": 1793732328000
     },
     {
       "numPmu": 4,
       "nom": "FRANKISH",
-      "cote_live": 3.3,
+      "cote_live": 3.1,
       "cote_reference": 3.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793732064000
+      "timestamp_cote": 1793732328000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -54,6 +54,46 @@
         "2": 7.2,
         "3": 7.2,
         "4": 3.3
+      }
+    },
+    {
+      "scraped_at": "2026-11-03T19:57:11.142970+01:00",
+      "minutes_avant_depart": 5.821122183333333,
+      "cotes": {
+        "1": 1.7,
+        "2": 7.1,
+        "3": 7.4,
+        "4": 3.3
+      }
+    },
+    {
+      "scraped_at": "2026-11-03T19:57:51.320827+01:00",
+      "minutes_avant_depart": 5.147914716666667,
+      "cotes": {
+        "1": 1.8,
+        "2": 7.3,
+        "3": 7.1,
+        "4": 3.2
+      }
+    },
+    {
+      "scraped_at": "2026-11-03T19:58:31.172756+01:00",
+      "minutes_avant_depart": 4.4877848,
+      "cotes": {
+        "1": 1.8,
+        "2": 7.1,
+        "3": 6.8,
+        "4": 3.3
+      }
+    },
+    {
+      "scraped_at": "2026-11-03T19:59:10.831575+01:00",
+      "minutes_avant_depart": 3.8211164,
+      "cotes": {
+        "1": 1.8,
+        "2": 7.1,
+        "3": 6.7,
+        "4": 3.1
       }
     }
   ]

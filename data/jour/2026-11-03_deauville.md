@@ -140,11 +140,11 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DE FERGAND
 
-*20h59 · plat · 1900 m · 4 partants · cotes à T−8:28*
+*20h59 · plat · 1900 m · 4 partants · cotes à T−3:49*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 1 | REGAL RESOLVE | 1,7 | 2,7 | M.BARZALONA 2e | 2/1/3884/12 |
-| 4 | FRANKISH | 3,3 | 1,6 | M.GUYON 3e | 4/8/134/2 |
-| 2 | HATANKA FAL | 7,2 | 12 | C.LECOEUVRE | 13/57/34/31 |
-| 3 | CITY SOLACE | 7,2 | 10 | PC.BOUDOT 4e | 8/12/39/306 |
+| 1 | REGAL RESOLVE | 1,8 | 2,7 | M.BARZALONA 2e | 2/1/3884/12 |
+| 4 | FRANKISH | 3,1 | 1,6 | M.GUYON 3e | 4/8/134/2 |
+| 3 | CITY SOLACE | 6,7 | 10 | PC.BOUDOT 4e | 8/12/39/306 |
+| 2 | HATANKA FAL | 7,1 | 12 | C.LECOEUVRE | 13/57/34/31 |
