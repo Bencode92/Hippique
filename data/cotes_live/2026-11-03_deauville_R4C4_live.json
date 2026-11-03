@@ -4,71 +4,71 @@
   "reunion": 4,
   "heure_depart": 1793724240000,
   "distance": 1500,
-  "scraped_at": "2026-11-03T17:41:55.960559+01:00",
-  "minutes_avant_depart": 2,
+  "scraped_at": "2026-11-03T17:44:35.862991+01:00",
+  "minutes_avant_depart": -1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MOOREA",
-      "cote_live": 6.4,
+      "cote_live": 4.9,
       "cote_reference": 7.3,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1793724103000
+      "favoris": true,
+      "timestamp_cote": 1793724263000
     },
     {
       "numPmu": 3,
       "nom": "WOFF",
-      "cote_live": 5.2,
+      "cote_live": 6.6,
       "cote_reference": 10.0,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1793724103000
+      "favoris": false,
+      "timestamp_cote": 1793724263000
     },
     {
       "numPmu": 4,
       "nom": "AURORA BOREALIS",
-      "cote_live": 7.8,
+      "cote_live": 7.3,
       "cote_reference": 5.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793724103000
+      "timestamp_cote": 1793724263000
     },
     {
       "numPmu": 5,
       "nom": "BAUHINIA RHAPSODY",
-      "cote_live": 15.0,
+      "cote_live": 11.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793724103000
+      "timestamp_cote": 1793724263000
     },
     {
       "numPmu": 6,
       "nom": "IRISHKAMAYA",
-      "cote_live": 24.0,
+      "cote_live": 21.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793724103000
+      "timestamp_cote": 1793724263000
     },
     {
       "numPmu": 7,
       "nom": "NOOTKA BAY",
-      "cote_live": 12.0,
+      "cote_live": 11.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793724103000
+      "timestamp_cote": 1793724263000
     },
     {
       "numPmu": 8,
       "nom": "IDEE DE CHEVAL",
-      "cote_live": 6.0,
+      "cote_live": 7.3,
       "cote_reference": 8.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793724103000
+      "timestamp_cote": 1793724263000
     },
     {
       "numPmu": 9,
@@ -77,43 +77,43 @@
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793724103000
+      "timestamp_cote": 1793724263000
     },
     {
       "numPmu": 10,
       "nom": "MONARCH HUNZA",
-      "cote_live": 31.0,
+      "cote_live": 44.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793724103000
+      "timestamp_cote": 1793724263000
     },
     {
       "numPmu": 11,
       "nom": "EL KRAKEN",
-      "cote_live": 18.0,
+      "cote_live": 20.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793724103000
+      "timestamp_cote": 1793724263000
     },
     {
       "numPmu": 12,
       "nom": "GRAN HABANO",
-      "cote_live": 38.0,
+      "cote_live": 43.0,
       "cote_reference": 42.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793724103000
+      "timestamp_cote": 1793724263000
     },
     {
       "numPmu": 13,
       "nom": "MISS YORKSHIRE",
-      "cote_live": 42.0,
+      "cote_live": 53.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793724103000
+      "timestamp_cote": 1793724263000
     },
     {
       "numPmu": 14,
@@ -122,16 +122,16 @@
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793724103000
+      "timestamp_cote": 1793724263000
     },
     {
       "numPmu": 15,
       "nom": "MRS HOLIDAY",
-      "cote_live": 23.0,
+      "cote_live": 27.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793724103000
+      "timestamp_cote": 1793724263000
     },
     {
       "numPmu": 16,
@@ -140,7 +140,7 @@
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793724103000
+      "timestamp_cote": 1793724263000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -415,6 +415,90 @@
         "13": 42.0,
         "14": 21.0,
         "15": 23.0,
+        "16": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-03T17:42:35.825662+01:00",
+      "minutes_avant_depart": 1.4070887333333333,
+      "cotes": {
+        "1": 6.6,
+        "3": 5.9,
+        "4": 7.3,
+        "5": 10.0,
+        "6": 24.0,
+        "7": 9.7,
+        "8": 6.9,
+        "9": 20.0,
+        "10": 35.0,
+        "11": 18.0,
+        "12": 42.0,
+        "13": 48.0,
+        "14": 25.0,
+        "15": 25.0,
+        "16": 21.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-03T17:43:15.954779+01:00",
+      "minutes_avant_depart": 0.7404209666666667,
+      "cotes": {
+        "1": 6.3,
+        "3": 6.0,
+        "4": 7.7,
+        "5": 11.0,
+        "6": 23.0,
+        "7": 10.0,
+        "8": 7.2,
+        "9": 20.0,
+        "10": 36.0,
+        "11": 18.0,
+        "12": 43.0,
+        "13": 48.0,
+        "14": 17.0,
+        "15": 25.0,
+        "16": 22.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-03T17:43:56.273839+01:00",
+      "minutes_avant_depart": 0.06873221666666667,
+      "cotes": {
+        "1": 5.4,
+        "3": 6.1,
+        "4": 7.8,
+        "5": 12.0,
+        "6": 20.0,
+        "7": 10.0,
+        "8": 7.4,
+        "9": 21.0,
+        "10": 39.0,
+        "11": 19.0,
+        "12": 46.0,
+        "13": 45.0,
+        "14": 19.0,
+        "15": 26.0,
+        "16": 21.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-03T17:44:35.862991+01:00",
+      "minutes_avant_depart": -0.5929185166666666,
+      "cotes": {
+        "1": 4.9,
+        "3": 6.6,
+        "4": 7.3,
+        "5": 11.0,
+        "6": 21.0,
+        "7": 11.0,
+        "8": 7.3,
+        "9": 24.0,
+        "10": 44.0,
+        "11": 20.0,
+        "12": 43.0,
+        "13": 53.0,
+        "14": 21.0,
+        "15": 27.0,
         "16": 20.0
       }
     }
