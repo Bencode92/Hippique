@@ -1,6 +1,6 @@
 # DEAUVILLE — 03/11/2026
 
-8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -68,26 +68,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX DE COMMEAUX
 
-*18h42 · plat · 1500 m · 16 partants · cotes de l'extraction*
+*18h42 · plat · 1500 m · 16 partants · cotes à T−29:24*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 8 | IDEE DE CHEVAL | 7,8 | 7,14 | **+9,3 %** | C.GROSBOIS | 25/119/86/1563 |
-| 4 | AURORA BOREALIS | 8,6 | 10,63 | -19,1 % | M.FAVRIAUX | 51/120/12/2425 |
-| 2 | GRAN HABANO | 11 | 13,92 | -21,0 % | E.VERHESTRAETEN | 53/12/3218/2011 |
-| 3 | WOFF | 11 | 14,20 | -22,5 % | W.LEVESQUE | 79/94/1/164 |
-| 10 | MONARCH HUNZA | 11 | 11,90 | -7,6 % | H.JOURNIAC | 43/170/1074/183 |
-| 5 | BAUHINIA RHAPSODY | 12 | 13,81 | -13,1 % | C.PACAUT | 48/161/3234/4518 |
-| 1 | MOOREA | 13 | 17,71 | -26,6 % | PC.BOUDOT 4e | 8/48/778/945 |
-| 7 | NOOTKA BAY | 13 | 14,49 | -10,3 % | C.LECOEUVRE | 13/117/433/2263 |
-| 9 | PAINT IT BLACK | 14 | 17,22 | -18,7 % | D.SANTIAGO | 15/542/2178/1859 |
-| 15 | MRS HOLIDAY | 16 | 19,31 | -17,1 % | H.LEBOUC | 19/129/263/2733 |
-| 6 | IRISHKAMAYA | 17 | 18,91 | -10,1 % | T.BACHELOT | 16/239/1106/2521 |
-| 13 | MISS YORKSHIRE | 19 | 22,43 | -15,3 % | A.LEMAITRE | 11/40/33/2112 |
-| 11 | EL KRAKEN | 20 | 28,60 | -30,1 % | C.BELMONT | 171/132/161/409 |
-| 14 | MYBOYFRIEND | 22 | 31,93 | -31,1 % | E.HARDOUIN | 27/256/1042/2187 |
-| 16 | COUR DU ROI | 22 | 29,10 | -24,4 % | R.MANGIONE | 78/335/47/547 |
-| 12 | GRAN HABANO | 42 | 56,53 | -25,7 % | T.PICCONE | 9/485/181/1379 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 4 | AURORA BOREALIS | 5,4 | 8,6 | 6,64 | -18,6 % | M.FAVRIAUX | 51/120/12/2425 |
+| 1 | MOOREA | 7,3 | 13 | 9,34 | -21,9 % | PC.BOUDOT 4e | 8/48/778/945 |
+| 8 | IDEE DE CHEVAL | 8 | 7,8 | 9,35 | -14,4 % | C.GROSBOIS | 25/119/86/1563 |
+| 3 | WOFF | 10 | 11 | 13,79 | -27,5 % | W.LEVESQUE | 79/94/1/164 |
+| 2 | GRAN HABANO | 11 | 11 | 15,12 | -27,2 % | E.VERHESTRAETEN | 53/12/3218/2011 |
+| 5 | BAUHINIA RHAPSODY | 12 | 12 | 14,99 | -19,9 % | C.PACAUT | 48/161/3234/4518 |
+| 7 | NOOTKA BAY | 12 | 13 | 14,33 | -16,3 % | C.LECOEUVRE | 13/117/433/2263 |
+| 10 | MONARCH HUNZA | 14 | 11 | 17,09 | -18,1 % | H.JOURNIAC | 43/170/1074/183 |
+| 15 | MRS HOLIDAY | 16 | 16 | 20,95 | -23,6 % | H.LEBOUC | 19/129/263/2733 |
+| 9 | PAINT IT BLACK | 18 | 14 | 23,91 | -24,7 % | D.SANTIAGO | 15/542/2178/1859 |
+| 11 | EL KRAKEN | 19 | 20 | 29,24 | -35,0 % | C.BELMONT | 171/132/161/409 |
+| 6 | IRISHKAMAYA | 21 | 17 | 24,95 | -15,8 % | T.BACHELOT | 16/239/1106/2521 |
+| 16 | COUR DU ROI | 21 | 22 | 29,91 | -29,8 % | R.MANGIONE | 78/335/47/547 |
+| 13 | MISS YORKSHIRE | 24 | 19 | 34,84 | -31,1 % | A.LEMAITRE | 11/40/33/2112 |
+| 14 | MYBOYFRIEND | 24 | 22 | 38,25 | -37,3 % | E.HARDOUIN | 27/256/1042/2187 |
+| 12 | GRAN HABANO | 42 | 42 | 61,05 | -31,2 % | T.PICCONE | 9/485/181/1379 |
 
 ### 5. PRIX DU HOGUENET
 
