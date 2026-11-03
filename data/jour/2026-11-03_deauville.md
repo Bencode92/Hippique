@@ -46,25 +46,25 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX D'OCCAGNES
 
-*18h07 · plat · 1500 m · 15 partants · cotes à T−14:24*
+*18h07 · plat · 1500 m · 15 partants · cotes à T−10:24*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 11 | MISSOURI | 4,3 | 3,7 | 4,53 | -5,1 % | A.MADAMET | 10/398/3125/875 |
-| 2 | HAPPY AGAIN | 5,6 | 7 | 6,03 | -7,1 % | T.PICCONE | 9/390/29/278 |
-| 9 | NURTURE | 6,7 | 7,7 | 6,39 | **+4,9 %** | PC.BOUDOT 4e | 8/207/29/2179 |
-| 3 | KELLY KEY | 8,4 | 8,2 | 8,61 | -2,4 % | T.TRULLIER | 21/54/630/1762 |
-| 13 | FECAMP | 12 | 10 | 16,60 | -27,7 % | S.CHUETTE | 166/381/8/2697 |
-| 4 | NOBLE COTAI | 13 | 26 | 13,66 | -4,9 % | B.LABATE | 113/88/3256/701 |
-| 8 | SI CAPO SI | 16 | 10 | 19,01 | -15,8 % | L.GALLO | 45/15/15/16 |
-| 10 | LOVELY DREAM | 16 | 15 | 21,28 | -24,8 % | M.JUSTUM | 88/129/102/2654 |
-| 15 | AKAMASOA | 17 | 19 | 21,27 | -20,1 % | A.LEMAITRE | 11/69/1398/515 |
-| 1 | ROYAL SHAKE | 25 | 24 | 30,36 | -17,6 % | E.HARDOUIN | 27/214/107/342 |
-| 12 | BOBBY JEAN | 37 | 40 | 56,73 | -34,8 % | S.PASQUIER | 23/136/13/359 |
-| 5 | MATCH ANTHEM | 59 | 50 | 78,42 | -24,8 % | F.VERON | 24/174/3196/277 |
-| 6 | MORUS | 63 | 81 | 87,81 | -28,3 % | R.MANGIONE | 78/390/438/278 |
-| 14 | THE CHARM | 73 | 54 | 112,81 | -35,3 % | M.TEVELS | 264/471/1907/1293 |
-| 7 | COPAN | 85 | 63 | 120,16 | -29,3 % | E.GAY LE BRETON | –/168/11/1699 |
+| 11 | MISSOURI | 4,4 | 3,7 | 4,65 | -5,5 % | A.MADAMET | 10/398/3125/875 |
+| 2 | HAPPY AGAIN | 6,1 | 7 | 6,65 | -8,3 % | T.PICCONE | 9/390/29/278 |
+| 9 | NURTURE | 6,5 | 7,7 | 6,19 | **+5,0 %** | PC.BOUDOT 4e | 8/207/29/2179 |
+| 3 | KELLY KEY | 9,4 | 8,2 | 9,81 | -4,2 % | T.TRULLIER | 21/54/630/1762 |
+| 13 | FECAMP | 10 | 10 | 12,27 | -18,5 % | S.CHUETTE | 166/381/8/2697 |
+| 4 | NOBLE COTAI | 13 | 26 | 13,69 | -5,0 % | B.LABATE | 113/88/3256/701 |
+| 8 | SI CAPO SI | 17 | 10 | 20,44 | -16,8 % | L.GALLO | 45/15/15/16 |
+| 10 | LOVELY DREAM | 17 | 15 | 22,88 | -25,7 % | M.JUSTUM | 88/129/102/2654 |
+| 1 | ROYAL SHAKE | 18 | 24 | 21,84 | -17,6 % | E.HARDOUIN | 27/214/107/342 |
+| 15 | AKAMASOA | 18 | 19 | 22,77 | -21,0 % | A.LEMAITRE | 11/69/1398/515 |
+| 12 | BOBBY JEAN | 31 | 40 | 46,60 | -33,5 % | S.PASQUIER | 23/136/13/359 |
+| 6 | MORUS | 50 | 81 | 68,65 | -27,2 % | R.MANGIONE | 78/390/438/278 |
+| 5 | MATCH ANTHEM | 62 | 50 | 82,82 | -25,1 % | F.VERON | 24/174/3196/277 |
+| 14 | THE CHARM | 70 | 54 | 108,13 | -35,3 % | M.TEVELS | 264/471/1907/1293 |
+| 7 | COPAN | 92 | 63 | 130,56 | -29,5 % | E.GAY LE BRETON | –/168/11/1699 |
 
 ### 4. PRIX DE COMMEAUX
 
