@@ -50,44 +50,43 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | HAPPY AGAIN | 5,7 | 7 | 6,57 | -13,3 % | T.PICCONE | 9/390/29/278 |
-| 11 | MISSOURI | 6,3 | 3,7 | 6,46 | -2,5 % | A.MADAMET | 10/398/3125/875 |
-| 9 | NURTURE | 7 | 7,7 | 6,71 | **+4,3 %** | PC.BOUDOT 4e | 8/207/29/2179 |
-| 3 | KELLY KEY | 7,7 | 8,2 | 7,79 | -1,1 % | T.TRULLIER | 21/54/630/1762 |
-| 1 | ROYAL SHAKE | 11 | 24 | 11,26 | -2,3 % | E.HARDOUIN | 27/214/107/342 |
-| 13 | FECAMP | 13 | 10 | 18,24 | -28,7 % | S.CHUETTE | 166/381/8/2697 |
-| 4 | NOBLE COTAI | 14 | 26 | 14,88 | -5,9 % | B.LABATE | 113/88/3256/701 |
-| 10 | LOVELY DREAM | 15 | 15 | 19,72 | -23,9 % | M.JUSTUM | 88/129/102/2654 |
-| 8 | SI CAPO SI | 16 | 10 | 19,01 | -15,8 % | L.GALLO | 45/15/15/16 |
-| 15 | AKAMASOA | 16 | 19 | 19,81 | -19,2 % | A.LEMAITRE | 11/69/1398/515 |
-| 12 | BOBBY JEAN | 32 | 40 | 48,20 | -33,6 % | S.PASQUIER | 23/136/13/359 |
-| 5 | MATCH ANTHEM | 44 | 50 | 57,08 | -22,9 % | F.VERON | 24/174/3196/277 |
-| 6 | MORUS | 45 | 81 | 64,04 | -29,7 % | R.MANGIONE | 78/390/438/278 |
-| 14 | THE CHARM | 45 | 54 | 67,13 | -33,0 % | M.TEVELS | 264/471/1907/1293 |
-| 7 | COPAN | 82 | 63 | 115,74 | -29,2 % | E.GAY LE BRETON | –/168/11/1699 |
+| 2 | HAPPY AGAIN | 5,7 | 5,5 | 6,57 | -13,3 % | T.PICCONE | 9/390/29/278 |
+| 11 | MISSOURI | 6,3 | 7,1 | 6,21 | **+1,5 %** | A.MADAMET | 10/398/3125/875 |
+| 9 | NURTURE | 7 | 5,9 | 6,71 | **+4,3 %** | PC.BOUDOT 4e | 8/207/29/2179 |
+| 3 | KELLY KEY | 7,7 | 8 | 8,12 | -5,2 % | T.TRULLIER | 21/54/630/1762 |
+| 1 | ROYAL SHAKE | 11 | 9,7 | 11,26 | -2,3 % | E.HARDOUIN | 27/214/107/342 |
+| 13 | FECAMP | 13 | 15 | 18,24 | -28,7 % | S.CHUETTE | 166/381/8/2697 |
+| 4 | NOBLE COTAI | 14 | 17 | 14,88 | -5,9 % | B.LABATE | 113/88/3256/701 |
+| 10 | LOVELY DREAM | 15 | 19 | 21,59 | -30,5 % | M.JUSTUM | 88/129/102/2654 |
+| 8 | SI CAPO SI | 16 | 11 | 18,16 | -11,9 % | L.GALLO | 45/15/15/16 |
+| 15 | AKAMASOA | 16 | 16 | 19,81 | -19,2 % | A.LEMAITRE | 11/69/1398/515 |
+| 12 | BOBBY JEAN | 32 | 39 | 43,91 | -27,1 % | S.PASQUIER | 23/136/13/359 |
+| 5 | MATCH ANTHEM | 44 | 46 | 59,85 | -26,5 % | F.VERON | 24/174/3196/277 |
+| 14 | THE CHARM | 45 | 53 | 70,40 | -36,1 % | M.TEVELS | 264/471/1907/1293 |
+| 6 | MORUS | 45 | 42 | 58,32 | -22,8 % | R.MANGIONE | 78/390/438/278 |
+| 7 | COPAN | 82 | 94 | 121,40 | -32,5 % | E.GAY LE BRETON | –/168/11/1699 |
 
 ### 4. PRIX DE COMMEAUX
 
-*18h42 · plat · 1500 m · 16 partants · cotes à T−0:04*
+*18h44 · plat · 1500 m · 15 partants · cotes à T−0:04*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 1 | MOOREA | 5,4 | 13 | 7,04 | -23,3 % | PC.BOUDOT 4e | 8/48/778/945 |
-| 3 | WOFF | 6,1 | 11 | 7,09 | -14,0 % | W.LEVESQUE | 79/94/1/164 |
-| 8 | IDEE DE CHEVAL | 7,4 | 7,8 | 8,51 | -13,1 % | C.GROSBOIS | 25/119/86/1563 |
-| 4 | AURORA BOREALIS | 7,8 | 8,6 | 10,25 | -23,9 % | M.FAVRIAUX | 51/120/12/2425 |
-| 7 | NOOTKA BAY | 10 | 13 | 12,07 | -17,2 % | C.LECOEUVRE | 13/117/433/2263 |
-| 2 | GRAN HABANO | 11 | 11 | 15,06 | -27,0 % | E.VERHESTRAETEN | 53/12/3218/2011 |
-| 5 | BAUHINIA RHAPSODY | 12 | 12 | 14,93 | -19,6 % | C.PACAUT | 48/161/3234/4518 |
-| 11 | EL KRAKEN | 19 | 20 | 29,13 | -34,8 % | C.BELMONT | 171/132/161/409 |
-| 14 | MYBOYFRIEND | 19 | 22 | 26,58 | -28,5 % | E.HARDOUIN | 27/256/1042/2187 |
-| 6 | IRISHKAMAYA | 20 | 17 | 24,63 | -18,8 % | T.BACHELOT | 16/239/1106/2521 |
-| 9 | PAINT IT BLACK | 21 | 14 | 28,44 | -26,2 % | D.SANTIAGO | 15/542/2178/1859 |
-| 16 | COUR DU ROI | 21 | 22 | 29,80 | -29,5 % | R.MANGIONE | 78/335/47/547 |
-| 15 | MRS HOLIDAY | 26 | 16 | 34,77 | -25,2 % | H.LEBOUC | 19/129/263/2733 |
-| 10 | MONARCH HUNZA | 39 | 11 | 59,80 | -34,8 % | H.JOURNIAC | 43/170/1074/183 |
-| 13 | MISS YORKSHIRE | 45 | 19 | 66,69 | -32,5 % | A.LEMAITRE | 11/40/33/2112 |
-| 12 | GRAN HABANO | 46 | 42 | 73,77 | -37,6 % | T.PICCONE | 9/485/181/1379 |
+| 1 | MOOREA | 5,4 | 4,7 | 6,46 | -16,4 % | PC.BOUDOT 4e | 8/48/778/945 |
+| 3 | WOFF | 6,1 | 6,4 | 6,51 | -6,3 % | W.LEVESQUE | 79/94/1/164 |
+| 8 | IDEE DE CHEVAL | 7,4 | 7,2 | 7,81 | -5,2 % | C.GROSBOIS | 25/119/86/1563 |
+| 4 | AURORA BOREALIS | 7,8 | 7,2 | 8,99 | -13,3 % | M.FAVRIAUX | 51/120/12/2425 |
+| 7 | NOOTKA BAY | 10 | 11 | 11,06 | -9,5 % | C.LECOEUVRE | 13/117/433/2263 |
+| 5 | BAUHINIA RHAPSODY | 12 | 12 | 13,67 | -12,2 % | C.PACAUT | 48/161/3234/4518 |
+| 11 | EL KRAKEN | 19 | 19 | 26,69 | -28,8 % | C.BELMONT | 171/132/161/409 |
+| 14 | MYBOYFRIEND | 19 | 24 | 24,35 | -22,0 % | E.HARDOUIN | 27/256/1042/2187 |
+| 6 | IRISHKAMAYA | 20 | 23 | 22,58 | -11,4 % | T.BACHELOT | 16/239/1106/2521 |
+| 16 | COUR DU ROI | 21 | 21 | 27,32 | -23,1 % | R.MANGIONE | 78/335/47/547 |
+| 9 | PAINT IT BLACK | 21 | 22 | 27,32 | -23,1 % | D.SANTIAGO | 15/542/2178/1859 |
+| 15 | MRS HOLIDAY | 26 | 29 | 31,91 | -18,5 % | H.LEBOUC | 19/129/263/2733 |
+| 10 | MONARCH HUNZA | 39 | 40 | 52,48 | -25,7 % | H.JOURNIAC | 43/170/1074/183 |
+| 13 | MISS YORKSHIRE | 45 | 46 | 61,42 | -26,7 % | A.LEMAITRE | 11/40/33/2112 |
+| 12 | GRAN HABANO | 46 | 44 | 67,95 | -32,3 % | T.PICCONE | 9/485/181/1379 |
 
 ### 5. PRIX DU HOGUENET
 
@@ -95,33 +94,32 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 4 | JUST INSPIRATION | 2,5 | 3,7 | 2,89 | -13,4 % | M.BARZALONA 2e | 2/1/3236/43 |
-| 6 | SATURDAY NIGHT | 7,2 | 9,2 | 8,64 | -16,7 % | M.GRANDIN | 3/73/4/380 |
-| 3 | WALMA | 9,8 | 8,1 | 11,37 | -13,8 % | T.TRULLIER | 21/54/353/663 |
-| 2 | LACE FLOWER | 10 | 9,6 | 12,38 | -19,3 % | T.PICCONE | 9/6/–/6 |
-| 10 | ROSA DEI VENTI | 10 | 10 | 12,14 | -17,7 % | A.HAMELIN | 22/45/567/1559 |
-| 5 | ESPARTINAS | 11 | 7,5 | 14,19 | -22,5 % | J.CLAUDIC | 38/83/497/2246 |
-| 8 | UTXA | 17 | 17 | 21,06 | -19,3 % | M.FAVRIAUX | 51/56/3146/153 |
-| 9 | ALLEGRESSE | 21 | 22 | 25,67 | -18,2 % | C.PACAUT | 48/17/482/1463 |
-| 1 | KOYA | 29 | 14 | 40,71 | -28,8 % | M.PROTTI | 30/6/85/300 |
-| 13 | DIVA CHIQUITA | 31 | 22 | 46,01 | -32,6 % | A.MADAMET | 10/74/47/762 |
-| 12 | ALYAQUT | 44 | 27 | 57,98 | -24,1 % | E.HARDOUIN | 27/79/2080/953 |
-| 7 | MISS GEORGINA | 48 | 30 | 74,69 | -35,7 % | M.MARQUETTE | 54/14/1741/2120 |
-| 11 | ZOLIA | 64 | 44 | 102,34 | -37,5 % | J.MOUTARD | 61/357/4/659 |
+| 4 | JUST INSPIRATION | 2,5 | 2,2 | 2,72 | -8,0 % | M.BARZALONA 2e | 2/1/3236/43 |
+| 6 | SATURDAY NIGHT | 7,2 | 7,2 | 8,64 | -16,7 % | M.GRANDIN | 3/73/4/380 |
+| 3 | WALMA | 9,8 | 11 | 12,40 | -21,0 % | T.TRULLIER | 21/54/353/663 |
+| 2 | LACE FLOWER | 10 | 10 | 11,85 | -15,6 % | T.PICCONE | 9/6/–/6 |
+| 10 | ROSA DEI VENTI | 10 | 11 | 13,26 | -24,6 % | A.HAMELIN | 22/45/567/1559 |
+| 5 | ESPARTINAS | 11 | 13 | 14,84 | -25,9 % | J.CLAUDIC | 38/83/497/2246 |
+| 8 | UTXA | 17 | 19 | 21,06 | -19,3 % | M.FAVRIAUX | 51/56/3146/153 |
+| 9 | ALLEGRESSE | 21 | 24 | 26,89 | -21,9 % | C.PACAUT | 48/17/482/1463 |
+| 1 | KOYA | 29 | 28 | 40,71 | -28,8 % | M.PROTTI | 30/6/85/300 |
+| 13 | DIVA CHIQUITA | 31 | 38 | 46,01 | -32,6 % | A.MADAMET | 10/74/47/762 |
+| 12 | ALYAQUT | 44 | 50 | 57,98 | -24,1 % | E.HARDOUIN | 27/79/2080/953 |
+| 7 | MISS GEORGINA | 48 | 57 | 71,22 | -32,6 % | M.MARQUETTE | 54/14/1741/2120 |
+| 11 | ZOLIA | 64 | 70 | 107,21 | -40,3 % | J.MOUTARD | 61/357/4/659 |
 
 ### 6. PRIX VODKATO
 
-*19h55 · plat · 1900 m · 7 partants · cotes à T−25:44*
+*19h55 · plat · 1900 m · 6 partants · cotes à T−25:44*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 4 | LORAXED | 2,4 | 1,7 | 2,56 | -6,2 % | M.GRANDIN | 3/120/1167/103 |
-| 1 | MATAURI BAY | 4,1 | 6,6 | 4,98 | -17,6 % | PC.BOUDOT 4e | 8/14/88/60 |
-| 3 | ANSSIO | 5,3 | 9,8 | 5,76 | -8,0 % | C.LECOEUVRE | 13/96/20/242 |
-| 5 | TIEGO THE FIRST | 9 | 7 | 11,79 | -23,7 % | M.GUYON 3e | 4/19/90/– |
-| 2 | DIOPTASE | 10 | 13 | 12,48 | -19,8 % | M.BARZALONA 2e | 2/137/54/115 |
-| 6 | SERIE | 10 | 14 | 10,98 | -8,9 % | A.LEMAITRE | 11/69/65/1874 |
-| 7 | TSUKI | 36 | 36 | 54,68 | -34,2 % | T.PICCONE | 9/12/–/979 |
+| 4 | LORAXED | 2,4 | 2,4 | 2,66 | -9,7 % | M.GRANDIN | 3/120/1167/103 |
+| 1 | MATAURI BAY | 4,1 | 3,8 | 4,85 | -15,5 % | PC.BOUDOT 4e | 8/14/88/60 |
+| 3 | ANSSIO | 5,3 | 5,9 | 5,62 | -5,6 % | C.LECOEUVRE | 13/96/20/242 |
+| 5 | TIEGO THE FIRST | 9 | 8,3 | 11,99 | -25,0 % | M.GUYON 3e | 4/19/90/– |
+| 2 | DIOPTASE | 10 | 10 | 12,69 | -21,2 % | M.BARZALONA 2e | 2/137/54/115 |
+| 6 | SERIE | 10 | 12 | 10,24 | -2,4 % | A.LEMAITRE | 11/69/65/1874 |
 
 ### 7. PRIX GEOFF LEWIS (CHMPT PARIS TURF DES APPRENTIS & JEUNES JOCKEYS)
 
@@ -129,16 +127,16 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 3 | MERVEILLE | 3,9 | 4,17 | -6,5 % | L.PLOMMEE | 31/48/12/1116 |
-| 1 | KOMET CHOP | 5,2 | 6,13 | -15,1 % | C.BELMONT | 171/62/6/1164 |
-| 5 | NISSAKIA | 5,6 | 6,01 | -6,9 % | P.LE DIGABEL | 106/57/197/159 |
-| 8 | TARQUINI | 6,4 | 7,29 | -12,2 % | M.PROTTI | 30/44/326/351 |
-| 6 | RUE RECAMIER | 9 | 10,83 | -16,9 % | T.BREBION | 99/44/131/295 |
-| 2 | NOBLE APPROACH | 10 | 12,26 | -18,4 % | G.MEURY | 68/12/521/58 |
-| 4 | KENDELYA | 20 | 26,35 | -24,1 % | E.SOLINAS | 140/21/172/90 |
-| 9 | GAMBERRA | 22 | 28,10 | -21,7 % | M.PIEN | 150/15/15/36 |
-| 10 | NUITS PARISIENNES | 28 | 39,77 | -29,6 % | G.SEIGNEUL | 193/15/15/36 |
-| 7 | LIGHTASS FAL | 37 | 54,40 | -32,0 % | A.LE LAY MARTIN | 83/231/34/31 |
+| 1 | KOMET CHOP | 3,8 | 4,59 | -17,2 % | C.BELMONT | 171/62/6/1164 |
+| 2 | NOBLE APPROACH | 5,6 | 5,75 | -2,5 % | G.MEURY | 68/12/521/58 |
+| 3 | MERVEILLE | 5,6 | 6,22 | -10,0 % | L.PLOMMEE | 31/48/12/1116 |
+| 6 | RUE RECAMIER | 5,9 | 6,09 | -3,1 % | T.BREBION | 99/44/131/295 |
+| 5 | NISSAKIA | 7,8 | 8,72 | -10,5 % | P.LE DIGABEL | 106/57/197/159 |
+| 8 | TARQUINI | 9,5 | 11,46 | -17,1 % | M.PROTTI | 30/44/326/351 |
+| 4 | KENDELYA | 14 | 18,07 | -22,5 % | E.SOLINAS | 140/21/172/90 |
+| 7 | LIGHTASS FAL | 42 | 62,18 | -32,4 % | A.LE LAY MARTIN | 83/231/34/31 |
+| 9 | GAMBERRA | 70 | 104,99 | -33,3 % | M.PIEN | 150/15/15/36 |
+| 10 | NUITS PARISIENNES | 76 | 123,14 | -38,3 % | G.SEIGNEUL | 193/15/15/36 |
 
 ### 8. PRIX DE FERGAND
 
@@ -146,7 +144,7 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 4 | FRANKISH | 2 | M.GUYON 3e | 4/8/134/2 |
-| 1 | REGAL RESOLVE | 2,1 | M.BARZALONA 2e | 2/1/3884/12 |
-| 3 | CITY SOLACE | 9,9 | PC.BOUDOT 4e | 8/12/39/306 |
-| 2 | HATANKA FAL | 11 | C.LECOEUVRE | 13/57/34/31 |
+| 4 | FRANKISH | 1,6 | M.GUYON 3e | 4/8/134/2 |
+| 1 | REGAL RESOLVE | 2,7 | M.BARZALONA 2e | 2/1/3884/12 |
+| 3 | CITY SOLACE | 10 | PC.BOUDOT 4e | 8/12/39/306 |
+| 2 | HATANKA FAL | 12 | C.LECOEUVRE | 13/57/34/31 |
