@@ -4,35 +4,35 @@
   "reunion": 4,
   "heure_depart": 1793722020000,
   "distance": 1500,
-  "scraped_at": "2026-11-03T17:07:16.268346+01:00",
-  "minutes_avant_depart": 0,
+  "scraped_at": "2026-11-03T17:09:55.974706+01:00",
+  "minutes_avant_depart": -3,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ROYAL SHAKE",
-      "cote_live": 10.0,
+      "cote_live": 9.7,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722020000
+      "timestamp_cote": 1793722120000
     },
     {
       "numPmu": 2,
       "nom": "HAPPY AGAIN",
-      "cote_live": 5.8,
+      "cote_live": 5.5,
       "cote_reference": 6.0,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793722020000
+      "timestamp_cote": 1793722120000
     },
     {
       "numPmu": 3,
       "nom": "KELLY KEY",
-      "cote_live": 7.5,
+      "cote_live": 8.0,
       "cote_reference": 8.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722020000
+      "timestamp_cote": 1793722120000
     },
     {
       "numPmu": 4,
@@ -41,25 +41,25 @@
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722020000
+      "timestamp_cote": 1793722120000
     },
     {
       "numPmu": 5,
       "nom": "MATCH ANTHEM",
-      "cote_live": 44.0,
+      "cote_live": 46.0,
       "cote_reference": 50.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722020000
+      "timestamp_cote": 1793722120000
     },
     {
       "numPmu": 6,
       "nom": "MORUS",
-      "cote_live": 44.0,
+      "cote_live": 42.0,
       "cote_reference": 86.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722020000
+      "timestamp_cote": 1793722120000
     },
     {
       "numPmu": 7,
@@ -68,79 +68,79 @@
       "cote_reference": 67.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722020000
+      "timestamp_cote": 1793722120000
     },
     {
       "numPmu": 8,
       "nom": "SI CAPO SI",
-      "cote_live": 12.0,
+      "cote_live": 11.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722020000
+      "timestamp_cote": 1793722120000
     },
     {
       "numPmu": 9,
       "nom": "NURTURE",
-      "cote_live": 5.8,
+      "cote_live": 5.9,
       "cote_reference": 7.7,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1793722020000
+      "favoris": false,
+      "timestamp_cote": 1793722120000
     },
     {
       "numPmu": 10,
       "nom": "LOVELY DREAM",
-      "cote_live": 17.0,
+      "cote_live": 19.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722020000
+      "timestamp_cote": 1793722120000
     },
     {
       "numPmu": 11,
       "nom": "MISSOURI",
-      "cote_live": 7.0,
+      "cote_live": 7.1,
       "cote_reference": 3.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722020000
+      "timestamp_cote": 1793722120000
     },
     {
       "numPmu": 12,
       "nom": "BOBBY JEAN",
-      "cote_live": 40.0,
+      "cote_live": 39.0,
       "cote_reference": 43.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722020000
+      "timestamp_cote": 1793722120000
     },
     {
       "numPmu": 13,
       "nom": "FECAMP",
-      "cote_live": 13.0,
+      "cote_live": 15.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722020000
+      "timestamp_cote": 1793722120000
     },
     {
       "numPmu": 14,
       "nom": "THE CHARM",
-      "cote_live": 51.0,
+      "cote_live": 53.0,
       "cote_reference": 56.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722020000
+      "timestamp_cote": 1793722120000
     },
     {
       "numPmu": 15,
       "nom": "AKAMASOA",
-      "cote_live": 18.0,
+      "cote_live": 16.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722020000
+      "timestamp_cote": 1793722120000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -458,6 +458,90 @@
         "13": 13.0,
         "14": 51.0,
         "15": 18.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-03T17:07:55.965463+01:00",
+      "minutes_avant_depart": -0.9261331333333334,
+      "cotes": {
+        "1": 10.0,
+        "2": 5.7,
+        "3": 7.5,
+        "4": 16.0,
+        "5": 48.0,
+        "6": 40.0,
+        "7": 92.0,
+        "8": 12.0,
+        "9": 6.1,
+        "10": 19.0,
+        "11": 6.8,
+        "12": 37.0,
+        "13": 15.0,
+        "14": 54.0,
+        "15": 16.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-03T17:08:35.818267+01:00",
+      "minutes_avant_depart": -1.5928022666666666,
+      "cotes": {
+        "1": 10.0,
+        "2": 5.4,
+        "3": 7.8,
+        "4": 16.0,
+        "5": 47.0,
+        "6": 41.0,
+        "7": 92.0,
+        "8": 12.0,
+        "9": 5.7,
+        "10": 19.0,
+        "11": 7.1,
+        "12": 38.0,
+        "13": 15.0,
+        "14": 53.0,
+        "15": 16.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-03T17:09:15.904422+01:00",
+      "minutes_avant_depart": -2.2594729166666667,
+      "cotes": {
+        "1": 9.7,
+        "2": 5.5,
+        "3": 8.0,
+        "4": 17.0,
+        "5": 46.0,
+        "6": 42.0,
+        "7": 94.0,
+        "8": 11.0,
+        "9": 5.9,
+        "10": 19.0,
+        "11": 7.1,
+        "12": 39.0,
+        "13": 15.0,
+        "14": 53.0,
+        "15": 16.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-03T17:09:55.974706+01:00",
+      "minutes_avant_depart": -2.9261424000000003,
+      "cotes": {
+        "1": 9.7,
+        "2": 5.5,
+        "3": 8.0,
+        "4": 17.0,
+        "5": 46.0,
+        "6": 42.0,
+        "7": 94.0,
+        "8": 11.0,
+        "9": 5.9,
+        "10": 19.0,
+        "11": 7.1,
+        "12": 39.0,
+        "13": 15.0,
+        "14": 53.0,
+        "15": 16.0
       }
     }
   ]
