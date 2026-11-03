@@ -1,6 +1,6 @@
 # DEAUVILLE — 03/11/2026
 
-8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -140,11 +140,11 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DE FERGAND
 
-*20h59 · plat · 1900 m · 4 partants · cotes de l'extraction*
+*20h59 · plat · 1900 m · 4 partants · cotes à T−8:28*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 4 | FRANKISH | 1,6 | M.GUYON 3e | 4/8/134/2 |
-| 1 | REGAL RESOLVE | 2,7 | M.BARZALONA 2e | 2/1/3884/12 |
-| 3 | CITY SOLACE | 10 | PC.BOUDOT 4e | 8/12/39/306 |
-| 2 | HATANKA FAL | 12 | C.LECOEUVRE | 13/57/34/31 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 1 | REGAL RESOLVE | 1,7 | 2,7 | M.BARZALONA 2e | 2/1/3884/12 |
+| 4 | FRANKISH | 3,3 | 1,6 | M.GUYON 3e | 4/8/134/2 |
+| 2 | HATANKA FAL | 7,2 | 12 | C.LECOEUVRE | 13/57/34/31 |
+| 3 | CITY SOLACE | 7,2 | 10 | PC.BOUDOT 4e | 8/12/39/306 |
