@@ -4,35 +4,35 @@
   "reunion": 4,
   "heure_depart": 1793724120000,
   "distance": 1500,
-  "scraped_at": "2026-11-03T17:16:35.820442+01:00",
-  "minutes_avant_depart": 25,
+  "scraped_at": "2026-11-03T17:20:36.728747+01:00",
+  "minutes_avant_depart": 21,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MOOREA",
-      "cote_live": 7.1,
+      "cote_live": 8.0,
       "cote_reference": 7.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722587000
+      "timestamp_cote": 1793722829000
     },
     {
       "numPmu": 3,
       "nom": "WOFF",
-      "cote_live": 8.2,
+      "cote_live": 8.9,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722587000
+      "timestamp_cote": 1793722829000
     },
     {
       "numPmu": 4,
       "nom": "AURORA BOREALIS",
-      "cote_live": 5.4,
+      "cote_live": 6.2,
       "cote_reference": 5.3,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1793722587000
+      "favoris": false,
+      "timestamp_cote": 1793722829000
     },
     {
       "numPmu": 5,
@@ -41,52 +41,52 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722587000
+      "timestamp_cote": 1793722829000
     },
     {
       "numPmu": 6,
       "nom": "IRISHKAMAYA",
-      "cote_live": 23.0,
+      "cote_live": 27.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722587000
+      "timestamp_cote": 1793722829000
     },
     {
       "numPmu": 7,
       "nom": "NOOTKA BAY",
-      "cote_live": 12.0,
+      "cote_live": 10.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722587000
+      "timestamp_cote": 1793722829000
     },
     {
       "numPmu": 8,
       "nom": "IDEE DE CHEVAL",
-      "cote_live": 7.3,
+      "cote_live": 5.5,
       "cote_reference": 8.1,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1793722587000
+      "favoris": true,
+      "timestamp_cote": 1793722829000
     },
     {
       "numPmu": 9,
       "nom": "PAINT IT BLACK",
-      "cote_live": 21.0,
+      "cote_live": 19.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722587000
+      "timestamp_cote": 1793722829000
     },
     {
       "numPmu": 10,
       "nom": "MONARCH HUNZA",
-      "cote_live": 14.0,
+      "cote_live": 17.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722587000
+      "timestamp_cote": 1793722829000
     },
     {
       "numPmu": 11,
@@ -95,52 +95,52 @@
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722587000
+      "timestamp_cote": 1793722829000
     },
     {
       "numPmu": 12,
       "nom": "GRAN HABANO",
-      "cote_live": 39.0,
+      "cote_live": 42.0,
       "cote_reference": 42.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722587000
+      "timestamp_cote": 1793722829000
     },
     {
       "numPmu": 13,
       "nom": "MISS YORKSHIRE",
-      "cote_live": 27.0,
+      "cote_live": 29.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722587000
+      "timestamp_cote": 1793722829000
     },
     {
       "numPmu": 14,
       "nom": "MYBOYFRIEND",
-      "cote_live": 29.0,
+      "cote_live": 33.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722587000
+      "timestamp_cote": 1793722829000
     },
     {
       "numPmu": 15,
       "nom": "MRS HOLIDAY",
-      "cote_live": 15.0,
+      "cote_live": 17.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722587000
+      "timestamp_cote": 1793722829000
     },
     {
       "numPmu": 16,
       "nom": "COUR DU ROI",
-      "cote_live": 24.0,
+      "cote_live": 22.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793722587000
+      "timestamp_cote": 1793722829000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -185,6 +185,27 @@
         "14": 29.0,
         "15": 15.0,
         "16": 24.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-03T17:20:36.728747+01:00",
+      "minutes_avant_depart": 21.392016249999998,
+      "cotes": {
+        "1": 8.0,
+        "3": 8.9,
+        "4": 6.2,
+        "5": 13.0,
+        "6": 27.0,
+        "7": 10.0,
+        "8": 5.5,
+        "9": 19.0,
+        "10": 17.0,
+        "11": 21.0,
+        "12": 42.0,
+        "13": 29.0,
+        "14": 33.0,
+        "15": 17.0,
+        "16": 22.0
       }
     }
   ]
