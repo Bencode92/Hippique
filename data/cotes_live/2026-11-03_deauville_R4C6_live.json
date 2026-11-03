@@ -4,62 +4,62 @@
   "reunion": 4,
   "heure_depart": 1793728500000,
   "distance": 1900,
-  "scraped_at": "2026-11-03T18:25:16.027623+01:00",
-  "minutes_avant_depart": 30,
+  "scraped_at": "2026-11-03T18:29:16.248004+01:00",
+  "minutes_avant_depart": 26,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MATAURI BAY",
-      "cote_live": 6.3,
+      "cote_live": 4.1,
       "cote_reference": 4.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793726117000
+      "timestamp_cote": 1793726937000
     },
     {
       "numPmu": 2,
       "nom": "DIOPTASE",
-      "cote_live": 9.3,
+      "cote_live": 10.0,
       "cote_reference": 9.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793726117000
+      "timestamp_cote": 1793726937000
     },
     {
       "numPmu": 3,
       "nom": "ANSSIO",
-      "cote_live": 7.7,
+      "cote_live": 5.3,
       "cote_reference": 8.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793726117000
+      "timestamp_cote": 1793726937000
     },
     {
       "numPmu": 4,
       "nom": "LORAXED",
-      "cote_live": 1.8,
+      "cote_live": 2.4,
       "cote_reference": 1.9,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793726117000
+      "timestamp_cote": 1793726937000
     },
     {
       "numPmu": 5,
       "nom": "TIEGO THE FIRST",
-      "cote_live": 8.8,
+      "cote_live": 9.0,
       "cote_reference": 8.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793726117000
+      "timestamp_cote": 1793726937000
     },
     {
       "numPmu": 6,
       "nom": "SERIE",
-      "cote_live": 12.0,
+      "cote_live": 10.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793726117000
+      "timestamp_cote": 1793726937000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -74,6 +74,18 @@
         "4": 1.8,
         "5": 8.8,
         "6": 12.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-03T18:29:16.248004+01:00",
+      "minutes_avant_depart": 25.740266466666665,
+      "cotes": {
+        "1": 4.1,
+        "2": 10.0,
+        "3": 5.3,
+        "4": 2.4,
+        "5": 9.0,
+        "6": 10.0
       }
     }
   ]

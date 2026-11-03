@@ -111,17 +111,17 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX VODKATO
 
-*19h55 · plat · 1900 m · 7 partants · cotes à T−29:44*
+*19h55 · plat · 1900 m · 7 partants · cotes à T−25:44*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 4 | LORAXED | 1,8 | 1,7 | 2,01 | -10,5 % | M.GRANDIN | 3/120/1167/103 |
-| 1 | MATAURI BAY | 6,3 | 6,6 | 7,68 | -18,0 % | PC.BOUDOT 4e | 8/14/88/60 |
-| 3 | ANSSIO | 7,7 | 9,8 | 9,48 | -18,8 % | C.LECOEUVRE | 13/96/20/242 |
-| 5 | TIEGO THE FIRST | 8,8 | 7 | 11,35 | -22,5 % | M.GUYON 3e | 4/19/90/– |
-| 2 | DIOPTASE | 9,3 | 13 | 11,33 | -17,9 % | M.BARZALONA 2e | 2/137/54/115 |
-| 6 | SERIE | 12 | 14 | 13,41 | -10,5 % | A.LEMAITRE | 11/69/65/1874 |
-| 7 | TSUKI | 36 | 36 | 54,08 | -33,4 % | T.PICCONE | 9/12/–/979 |
+| 4 | LORAXED | 2,4 | 1,7 | 2,56 | -6,2 % | M.GRANDIN | 3/120/1167/103 |
+| 1 | MATAURI BAY | 4,1 | 6,6 | 4,98 | -17,6 % | PC.BOUDOT 4e | 8/14/88/60 |
+| 3 | ANSSIO | 5,3 | 9,8 | 5,76 | -8,0 % | C.LECOEUVRE | 13/96/20/242 |
+| 5 | TIEGO THE FIRST | 9 | 7 | 11,79 | -23,7 % | M.GUYON 3e | 4/19/90/– |
+| 2 | DIOPTASE | 10 | 13 | 12,48 | -19,8 % | M.BARZALONA 2e | 2/137/54/115 |
+| 6 | SERIE | 10 | 14 | 10,98 | -8,9 % | A.LEMAITRE | 11/69/65/1874 |
+| 7 | TSUKI | 36 | 36 | 54,68 | -34,2 % | T.PICCONE | 9/12/–/979 |
 
 ### 7. PRIX GEOFF LEWIS (CHMPT PARIS TURF DES APPRENTIS & JEUNES JOCKEYS)
 
