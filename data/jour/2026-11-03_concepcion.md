@@ -1,8 +1,8 @@
 # CONCEPCION — 03/11/2026
 
-6 courses.
+6 courses (1 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -75,10 +75,10 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 4 | FURIA DE TROYA | 1,1 | LUIS AROS HARVEY |
 | 1 | SANTA YAPA | – | BRYAN  RETAMAL |
 | 2 | YERKO | – | VICENTE ALEXANDER MARDONES GONZA |
 | 3 | ENGLA | – | JOSE MANUEL MOYA SEPULVEDA |
-| 4 | FURIA DE TROYA | – | LUIS AROS HARVEY |
 | 5 | FLOFLI | – | JELY BRAYAN BARRIL CURIN |
 | 6 | BILLY JANE | – | BENJAMIN  DIAZ |
 | 7 | JUDGE ROOM | – | GUSTAVO VERA |

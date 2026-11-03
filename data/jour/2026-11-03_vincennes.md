@@ -1,8 +1,8 @@
 # VINCENNES — 03/11/2026
 
-8 courses.
+8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
@@ -12,23 +12,23 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KOCKTAIL WOOD | – | N. BAZIRE |
-| 2 | KYNTE FLUSH | – | A. ABRIVARD |
-| 3 | KING GEORGES | – | D. BONNE |
-| 4 | KANSAS QUESNOT | – | P.Y. VERVA |
-| 5 | KANNABIS JELOCA | – | M. GOETZ |
-| 6 | KHARNAS | – | A. ANDRE |
-| 7 | KOSY D'ERONVILLE | – | D. THOMAIN |
-| 8 | KARMA | – | R. LAMY |
-| 9 | KISS ME SIMON | – | F. OUVRIE |
-| 10 | KAZY MERITE | – | A. BARRIER |
-| 11 | KEJAIME DE HOUELLE | – | A. COLLETTE |
-| 12 | KAISER DES GRANGES | – | G. GELORMINI |
-| 13 | KAPITANO DE LOU | – | P.PH. PLOQUIN |
-| 14 | KOMEO DU DOME | – | PH. DAUGEARD |
-| 15 | KANCALAIS | – | B. ROCHARD |
-| 16 | KISMET | – | M. ABRIVARD |
-| 17 | KAPUSHA MIP | – | E. RAFFIN |
+| 13 | KAPITANO DE LOU | 4,9 | P.PH. PLOQUIN |
+| 14 | KOMEO DU DOME | 5 | PH. DAUGEARD |
+| 8 | KARMA | 6,3 | R. LAMY |
+| 5 | KANNABIS JELOCA | 7,4 | M. GOETZ |
+| 16 | KISMET | 10 | M. ABRIVARD |
+| 11 | KEJAIME DE HOUELLE | 14 | A. COLLETTE |
+| 2 | KYNTE FLUSH | 29 | A. ABRIVARD |
+| 12 | KAISER DES GRANGES | 32 | G. GELORMINI |
+| 15 | KANCALAIS | 32 | B. ROCHARD |
+| 17 | KAPUSHA MIP | 41 | E. RAFFIN |
+| 4 | KANSAS QUESNOT | 48 | P.Y. VERVA |
+| 7 | KOSY D'ERONVILLE | 48 | D. THOMAIN |
+| 3 | KING GEORGES | 58 | D. BONNE |
+| 10 | KAZY MERITE | 58 | A. BARRIER |
+| 1 | KOCKTAIL WOOD | 73 | N. BAZIRE |
+| 6 | KHARNAS | 73 | A. ANDRE |
+| 9 | KISS ME SIMON | 146 | F. OUVRIE |
 
 ### 2. PRIX DE SENONNES
 
@@ -36,21 +36,21 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | NUNZIATA | – | F. OUVRIE |
-| 2 | NABUCA | – | TH. DROMIGNY |
-| 3 | NELEA MIP | – | M. ABRIVARD |
-| 4 | NYMPHE DE FLEUR | – | D. THOMAIN |
-| 5 | NIGHT SESSION | – | W. BIGEON |
+| 15 | NETCHKA | 2,3 | E. RAFFIN |
+| 2 | NABUCA | 6,7 | TH. DROMIGNY |
+| 11 | NIKITA DU PONT | 6,7 | N. BAZIRE |
+| 8 | NINA DAIDOU | 13 | Y. LEBOURGEOIS |
+| 13 | NORDIC GIRL | 13 | P.PH. PLOQUIN |
+| 14 | NAUSICAA | 13 | A. COLLETTE |
+| 3 | NELEA MIP | 20 | M. ABRIVARD |
+| 5 | NIGHT SESSION | 20 | W. BIGEON |
+| 1 | NUNZIATA | 40 | F. OUVRIE |
+| 4 | NYMPHE DE FLEUR | 40 | D. THOMAIN |
+| 7 | NINKASI SOYER | 40 | A. FAVRIS |
+| 10 | NASHVILLE | 40 | B. ROCHARD |
 | 6 | NORMA DU TRIEUX | – | GUILLAUME MARTIN |
-| 7 | NINKASI SOYER | – | A. FAVRIS |
-| 8 | NINA DAIDOU | – | Y. LEBOURGEOIS |
 | 9 | NOUCHKA ROYALE | – | G. GELORMINI |
-| 10 | NASHVILLE | – | B. ROCHARD |
-| 11 | NIKITA DU PONT | – | N. BAZIRE |
 | 12 | NOLLY WOOD | – | G. D'HAENENS |
-| 13 | NORDIC GIRL | – | P.PH. PLOQUIN |
-| 14 | NAUSICAA | – | A. COLLETTE |
-| 15 | NETCHKA | – | E. RAFFIN |
 
 ### 3. PRIX DE GORRON
 
@@ -58,17 +58,17 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | LEMILIE SAINT BAR | – | LILIAN BERTIN |
-| 2 | LASCA PRIOR | – | K. PETITJEAN |
+| 10 | LUCIA DU CHATELET | 1,1 | GUILLAUME MARTIN |
+| 9 | LOKA LOKA | 10 | E. RAFFIN |
+| 8 | LEELY DE BLARY | 20 | Mme C. LEVESQUE |
+| 1 | LEMILIE SAINT BAR | 30 | LILIAN BERTIN |
+| 5 | LADY STARLIGHT | 30 | B. ROCHARD |
+| 11 | LUNA DE JOUDES | 30 | P.Y. VERVA |
+| 2 | LASCA PRIOR | 61 | K. PETITJEAN |
+| 6 | LIBERTY CASH | 61 | Mme T. MATHIAS-MAISONNETTE |
 | 3 | LIO RENKA | – | Mme H. HUYGENS |
 | 4 | LOU DU DERBY | – | Mlle AURIANE MEUNIER |
-| 5 | LADY STARLIGHT | – | B. ROCHARD |
-| 6 | LIBERTY CASH | – | Mme T. MATHIAS-MAISONNETTE |
 | 7 | LILA D'OCTAV | – | M. CHAMPENOIS |
-| 8 | LEELY DE BLARY | – | Mme C. LEVESQUE |
-| 9 | LOKA LOKA | – | E. RAFFIN |
-| 10 | LUCIA DU CHATELET | – | GUILLAUME MARTIN |
-| 11 | LUNA DE JOUDES | – | P.Y. VERVA |
 
 ### 4. PRIX D'ARCACHON
 
@@ -76,16 +76,16 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | JACOMO BELLO | – | R. LAMY |
-| 2 | IGUANE DE CAPONET | – | Y. LEBOURGEOIS |
-| 3 | COLBERT WF | – | E. RAFFIN |
-| 4 | IRON DU GERS | – | J.M. BAZIRE |
-| 5 | KINGSLAYER PELLINI | – | CH. MARTENS |
-| 6 | NINEPOINTS LASSE | – | A. ABRIVARD |
-| 7 | CHARMY CHARLY AS | – | M. ABRIVARD |
+| 9 | CHITCHAT | 2,9 | B. ROCHARD |
+| 10 | IMAGE D'ATALANTE | 4,4 | A. BARRIER |
+| 1 | JACOMO BELLO | 7,5 | R. LAMY |
+| 4 | IRON DU GERS | 7,5 | J.M. BAZIRE |
+| 6 | NINEPOINTS LASSE | 8,8 | A. ABRIVARD |
+| 3 | COLBERT WF | 10 | E. RAFFIN |
+| 5 | KINGSLAYER PELLINI | 26 | CH. MARTENS |
+| 7 | CHARMY CHARLY AS | 26 | M. ABRIVARD |
+| 2 | IGUANE DE CAPONET | 52 | Y. LEBOURGEOIS |
 | 8 | IMPLORA MAUZUN | – | J.PH. DUCHER |
-| 9 | CHITCHAT | – | B. ROCHARD |
-| 10 | IMAGE D'ATALANTE | – | A. BARRIER |
 
 ### 5. PRIX DE GANNAT
 
@@ -93,23 +93,23 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MAMOUNIA SEVEN | – | J.M. BAZIRE |
-| 2 | MOANA MESLOISE | – | P. BELLOCHE |
-| 3 | METSUYANE ERA | – | A. ABRIVARD |
+| 5 | MELVIANA | 2,5 | E. RAFFIN |
+| 11 | MAGIE DES MOLLES | 3,2 | B. ROCHARD |
+| 3 | METSUYANE ERA | 11 | A. ABRIVARD |
+| 7 | MACARENA | 11 | M. ABRIVARD |
+| 1 | MAMOUNIA SEVEN | 22 | J.M. BAZIRE |
+| 2 | MOANA MESLOISE | 22 | P. BELLOCHE |
+| 6 | MEDINA DREAM | 22 | L.M. DAVID |
+| 12 | MY DARLING HAUFOR | 22 | D. THOMAIN |
+| 15 | MI CASA | 22 | D. BONNE |
+| 17 | METALLICA SMART | 22 | A. BARRIER |
 | 4 | MILKA DES THUYAS | – | P.Y. VERVA |
-| 5 | MELVIANA | – | E. RAFFIN |
-| 6 | MEDINA DREAM | – | L.M. DAVID |
-| 7 | MACARENA | – | M. ABRIVARD |
 | 8 | MINDIE DES PRES | – | M. BEZIER |
 | 9 | MAERLINE D'AVEL | – | R. CONGARD |
 | 10 | MALICE DELADOU | – | Y. LEBOURGEOIS |
-| 11 | MAGIE DES MOLLES | – | B. ROCHARD |
-| 12 | MY DARLING HAUFOR | – | D. THOMAIN |
 | 13 | MELITTE DE RIVIERE | – | K. DAVID |
 | 14 | MIMI DU MESNIL | – | D. BROHIER |
-| 15 | MI CASA | – | D. BONNE |
 | 16 | MELISSA MATCH | – | C. MESNIL |
-| 17 | METALLICA SMART | – | A. BARRIER |
 
 ### 6. PRIX DE CORMELLES
 
@@ -117,20 +117,20 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | LYA DU VIVIER | – | Y. LEBOURGEOIS |
-| 2 | LIGUE MESLOISE | – | P. BELLOCHE |
-| 3 | LIBRA SUPREME | – | A. COLLETTE |
-| 4 | LOLA DE VILLARD | – | ARNAUD DESMOTTES |
-| 5 | LOUISIANE GIRL | – | E. RAFFIN |
+| 3 | LIBRA SUPREME | 3,5 | A. COLLETTE |
+| 7 | LESLEY ARCTIC | 4,4 | P.PH. PLOQUIN |
+| 5 | LOUISIANE GIRL | 5,8 | E. RAFFIN |
+| 2 | LIGUE MESLOISE | 8,8 | P. BELLOCHE |
+| 11 | LEONE MAGNIFIQUE | 8,8 | CH. MARTENS |
+| 1 | LYA DU VIVIER | 17 | Y. LEBOURGEOIS |
+| 4 | LOLA DE VILLARD | 17 | ARNAUD DESMOTTES |
+| 10 | LEZIRA SPORT | 17 | A. BARRIER |
+| 14 | LOVE TO RUN | 17 | M. ABRIVARD |
 | 6 | LOVELY DES BROUETS | – | F. GIARD |
-| 7 | LESLEY ARCTIC | – | P.PH. PLOQUIN |
 | 8 | LIBERTY HEROLD | – | R. LAMY |
 | 9 | LOUMIA CASTELETS | – | A. ABRIVARD |
-| 10 | LEZIRA SPORT | – | A. BARRIER |
-| 11 | LEONE MAGNIFIQUE | – | CH. MARTENS |
 | 12 | LIBERTY JIEL | – | F. OUVRIE |
 | 13 | LADIVA DE PARIS | – | CH.J. BIGEON |
-| 14 | LOVE TO RUN | – | M. ABRIVARD |
 
 ### 7. PRIX BERNARD ET RAOUL SIMONARD
 
@@ -138,17 +138,17 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | JOLLY CHIC | – | Mlle E. LACOMBLEZ |
-| 2 | JAZZY THOURJAN | – | J. MAILLARD |
+| 7 | JOKER DE FROULAY | 3,8 | Mlle E. BOUCLET |
+| 1 | JOLLY CHIC | 5,7 | Mlle E. LACOMBLEZ |
+| 4 | KATCHINA FOR CLARA | 5,7 | Mlle M. MENDIBOURE |
+| 2 | JAZZY THOURJAN | 11 | J. MAILLARD |
+| 5 | GIFTOVER | 11 | Mme R. HAGHIGHAT |
+| 6 | HEVA BLONDE | 11 | F. POISSON |
+| 8 | INSTANT GRAVE | 11 | Mme L. MAGNENAT |
+| 10 | IMELDA | 11 | Mme C. BLAIZOT |
+| 11 | IGO CLEA | 11 | Mlle CL. SAUVAGE |
 | 3 | JUBLA VIKING | – | Mlle A. GERVAIS |
-| 4 | KATCHINA FOR CLARA | – | Mlle M. MENDIBOURE |
-| 5 | GIFTOVER | – | Mme R. HAGHIGHAT |
-| 6 | HEVA BLONDE | – | F. POISSON |
-| 7 | JOKER DE FROULAY | – | Mlle E. BOUCLET |
-| 8 | INSTANT GRAVE | – | Mme L. MAGNENAT |
 | 9 | HUGO OCCAGNES | – | L. PITON |
-| 10 | IMELDA | – | Mme C. BLAIZOT |
-| 11 | IGO CLEA | – | Mlle CL. SAUVAGE |
 | 12 | IMPERIAL COGLAIS | – | TH. ROULLIER |
 | 13 | IMPERIAL DURABUTIN | – | M. POTIER |
 
@@ -158,19 +158,19 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 7 | LIPA STAR | 2,1 | E. LELIEVRE |
+| 3 | LARA DE CHENU | 6,3 | E. RAFFIN |
+| 10 | LYANA D'ARC | 6,3 | A. COLLETTE |
+| 16 | LOUANGE CASTELETS | 8,5 | A. BARRIER |
+| 15 | LITTLE ITALY | 12 | R. LAMY |
+| 5 | LAMIE DU MESNIL | 25 | P.Y. VERVA |
+| 6 | LAREDO BAY | 25 | P.PH. PLOQUIN |
+| 8 | LA DAME DE COEUR | 25 | J. DUBOIS |
+| 11 | LETTRE D'AMOUR | 25 | D. THOMAIN |
 | 1 | LAVALLOISE GIRL | – | D. BONNE |
 | 2 | LUTELLIA MONNERIE | – | B. ROCHARD |
-| 3 | LARA DE CHENU | – | E. RAFFIN |
 | 4 | LOUNA DU LOCHEUR | – | D. BROHIER |
-| 5 | LAMIE DU MESNIL | – | P.Y. VERVA |
-| 6 | LAREDO BAY | – | P.PH. PLOQUIN |
-| 7 | LIPA STAR | – | E. LELIEVRE |
-| 8 | LA DAME DE COEUR | – | J. DUBOIS |
 | 9 | LEA D'ATOUT | – | J.ET. ABRIVARD |
-| 10 | LYANA D'ARC | – | A. COLLETTE |
-| 11 | LETTRE D'AMOUR | – | D. THOMAIN |
 | 12 | LOLA DU CAMPUS | – | Y. LEBOURGEOIS |
 | 13 | LADY BIRD JENILAT | – | A. ABRIVARD |
 | 14 | LOUISA D'ATOUT | – | M. ABRIVARD |
-| 15 | LITTLE ITALY | – | R. LAMY |
-| 16 | LOUANGE CASTELETS | – | A. BARRIER |

@@ -12,29 +12,29 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | TRUSTYOURINSTINCT | 8,6 | JAMES MCDONALD | –/82/–/– |
-| 20 | POINT OF LAW | 9,1 | ETHAN BROWN | –/–/–/– |
+| 2 | TRUSTYOURINSTINCT | 8,4 | JAMES MCDONALD | –/82/–/– |
+| 20 | POINT OF LAW | 8,8 | ETHAN BROWN | –/–/–/– |
 | 12 | HOPEWELL ROCK | 10 | ZAC LLOYD | –/433/–/– |
 | 24 | SHOCKLETZ | 10 | HARRY COFFEY | –/–/–/– |
-| 16 | SO YOU ARE | 12 | RACHEL KING | –/–/–/– |
+| 16 | SO YOU ARE | 11 | RACHEL KING | –/–/–/– |
 | 11 | JUJA KIBO | 13 | SAM CLIPPERTON | –/–/–/– |
 | 4 | MIDDLE EARTH | 14 | MARK ZAHRA | –/–/–/– |
 | 10 | GOODIE TWO SHOES | 19 | W M LORDAN | 265/82/–/– |
 | 1 | SONS AND LOVERS | 22 | DYLAN BROWNE MCMONAGLE | 176/82/–/232 |
 | 14 | SOUL OF SPAIN | 25 | TOMMY BERRY | –/–/–/2019 |
-| 22 | MR MONACO | 25 | JABEZ JOHNSTONE | –/–/–/– |
+| 22 | MR MONACO | 26 | JABEZ JOHNSTONE | –/–/–/– |
 | 23 | ZAKOUMA | 26 | WILLIAM PIKE | –/–/–/– |
 | 3 | KNIGHT'S CHOICE | 27 | ROBBIE DOLAN | –/–/–/– |
-| 18 | JAMES J BRADDOCK | 27 | CRAIG WILLIAMS | –/82/–/– |
-| 6 | ENFJAAR | 28 | RAY DAWSON | 315/510/–/– |
-| 8 | WINE DARK SEA | 34 | DAMIAN LANE | –/855/–/– |
-| 15 | ZAHRANN | 34 | BEN MELHAM | –/–/–/– |
-| 7 | ROYAL SUPREMACY | 35 | BEN ALLEN | –/–/–/– |
-| 17 | FUTURE HISTORY | 36 | JAMIE MELHAM | –/–/–/– |
+| 6 | ENFJAAR | 29 | RAY DAWSON | 315/510/–/– |
+| 18 | JAMES J BRADDOCK | 29 | CRAIG WILLIAMS | –/82/–/– |
+| 8 | WINE DARK SEA | 35 | DAMIAN LANE | –/855/–/– |
+| 7 | ROYAL SUPREMACY | 36 | BEN ALLEN | –/–/–/– |
+| 15 | ZAHRANN | 36 | BEN MELHAM | –/–/–/– |
 | 5 | VAUBAN | 37 | JORDAN CHILDS | –/–/–/– |
 | 13 | ONESMOOTHOPERATOR | 37 | DECLAN BATES | –/–/–/– |
-| 21 | STRICTLY BUSINESS | 48 | DEAN YENDALL | –/–/–/– |
-| 19 | KIZLYAR | 49 | BEAU MERTENS | –/82/–/232 |
+| 17 | FUTURE HISTORY | 37 | JAMIE MELHAM | –/–/–/– |
+| 21 | STRICTLY BUSINESS | 47 | DEAN YENDALL | –/–/–/– |
+| 19 | KIZLYAR | 52 | BEAU MERTENS | –/82/–/232 |
 | 9 | ASTERIX | – | JYE MCNEIL | –/–/–/– |
 
 ### 8. CROWN AMANDA ELLIOTT
