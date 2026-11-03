@@ -1,6 +1,6 @@
 # DEAUVILLE — 03/11/2026
 
-8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -46,25 +46,25 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX D'OCCAGNES
 
-*18h07 · plat · 1500 m · 15 partants · cotes de l'extraction*
+*18h07 · plat · 1500 m · 15 partants · cotes à T−23:04*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 11 | MISSOURI | 3,7 | 3,53 | **+4,8 %** | A.MADAMET | 10/398/3125/875 |
-| 2 | HAPPY AGAIN | 7 | 7,82 | -10,5 % | T.PICCONE | 9/390/29/278 |
-| 9 | NURTURE | 7,7 | 7,53 | **+2,3 %** | PC.BOUDOT 4e | 8/207/29/2179 |
-| 3 | KELLY KEY | 8,2 | 8,43 | -2,8 % | T.TRULLIER | 21/54/630/1762 |
-| 8 | SI CAPO SI | 10 | 10,16 | -1,6 % | L.GALLO | 45/15/15/16 |
-| 13 | FECAMP | 10 | 12,34 | -19,0 % | S.CHUETTE | 166/381/8/2697 |
-| 10 | LOVELY DREAM | 15 | 19,88 | -24,5 % | M.JUSTUM | 88/129/102/2654 |
-| 15 | AKAMASOA | 19 | 24,38 | -22,1 % | A.LEMAITRE | 11/69/1398/515 |
-| 1 | ROYAL SHAKE | 24 | 29,18 | -17,8 % | E.HARDOUIN | 27/214/107/342 |
-| 4 | NOBLE COTAI | 26 | 30,55 | -14,9 % | B.LABATE | 113/88/3256/701 |
-| 12 | BOBBY JEAN | 40 | 62,29 | -35,8 % | S.PASQUIER | 23/136/13/359 |
-| 5 | MATCH ANTHEM | 50 | 66,08 | -24,3 % | F.VERON | 24/174/3196/277 |
-| 14 | THE CHARM | 54 | 82,43 | -34,5 % | M.TEVELS | 264/471/1907/1293 |
-| 7 | COPAN | 63 | 92,72 | -32,1 % | E.GAY LE BRETON | –/168/11/1699 |
-| 6 | MORUS | 81 | 115,07 | -29,6 % | R.MANGIONE | 78/390/438/278 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 11 | MISSOURI | 4,3 | 3,7 | 4,55 | -5,5 % | A.MADAMET | 10/398/3125/875 |
+| 2 | HAPPY AGAIN | 6,5 | 7 | 7,16 | -9,2 % | T.PICCONE | 9/390/29/278 |
+| 9 | NURTURE | 7 | 7,7 | 6,73 | **+3,9 %** | PC.BOUDOT 4e | 8/207/29/2179 |
+| 3 | KELLY KEY | 8 | 8,2 | 8,17 | -2,0 % | T.TRULLIER | 21/54/630/1762 |
+| 13 | FECAMP | 10 | 10 | 12,30 | -18,7 % | S.CHUETTE | 166/381/8/2697 |
+| 8 | SI CAPO SI | 13 | 10 | 14,98 | -13,2 % | L.GALLO | 45/15/15/16 |
+| 10 | LOVELY DREAM | 13 | 15 | 16,74 | -22,3 % | M.JUSTUM | 88/129/102/2654 |
+| 15 | AKAMASOA | 18 | 19 | 22,81 | -21,1 % | A.LEMAITRE | 11/69/1398/515 |
+| 1 | ROYAL SHAKE | 21 | 24 | 26,14 | -19,7 % | E.HARDOUIN | 27/214/107/342 |
+| 4 | NOBLE COTAI | 22 | 26 | 25,16 | -12,6 % | B.LABATE | 113/88/3256/701 |
+| 12 | BOBBY JEAN | 34 | 40 | 51,80 | -34,4 % | S.PASQUIER | 23/136/13/359 |
+| 5 | MATCH ANTHEM | 48 | 50 | 63,00 | -23,8 % | F.VERON | 24/174/3196/277 |
+| 6 | MORUS | 61 | 81 | 85,14 | -28,3 % | R.MANGIONE | 78/390/438/278 |
+| 14 | THE CHARM | 61 | 54 | 93,61 | -34,8 % | M.TEVELS | 264/471/1907/1293 |
+| 7 | COPAN | 79 | 63 | 117,22 | -32,6 % | E.GAY LE BRETON | –/168/11/1699 |
 
 ### 4. PRIX DE COMMEAUX
 
