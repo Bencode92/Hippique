@@ -4,98 +4,98 @@
   "reunion": 3,
   "heure_depart": 1793802120000,
   "distance": 3600,
-  "scraped_at": "2026-11-04T14:52:31.393331+01:00",
-  "minutes_avant_depart": 29,
+  "scraped_at": "2026-11-04T14:56:31.416275+01:00",
+  "minutes_avant_depart": 25,
   "participants": [
     {
       "numPmu": 1,
       "nom": "OJIBWE",
-      "cote_live": 9.5,
+      "cote_live": 10.0,
       "cote_reference": 9.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793799934000
+      "timestamp_cote": 1793800574000
     },
     {
       "numPmu": 2,
       "nom": "MYRIA DE BERCE",
-      "cote_live": 7.0,
+      "cote_live": 8.4,
       "cote_reference": 7.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793799934000
+      "timestamp_cote": 1793800574000
     },
     {
       "numPmu": 3,
       "nom": "MARIE DES OBEAUX",
-      "cote_live": 18.0,
+      "cote_live": 20.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793799934000
+      "timestamp_cote": 1793800574000
     },
     {
       "numPmu": 4,
       "nom": "MOUSSE DU CHEF",
-      "cote_live": 13.0,
+      "cote_live": 9.1,
       "cote_reference": 9.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793799934000
+      "timestamp_cote": 1793800574000
     },
     {
       "numPmu": 5,
       "nom": "SAUTERN DE HOUELLE",
-      "cote_live": 8.2,
+      "cote_live": 6.9,
       "cote_reference": 8.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793799934000
+      "timestamp_cote": 1793800574000
     },
     {
       "numPmu": 6,
       "nom": "JEANNE D'O",
-      "cote_live": 28.0,
+      "cote_live": 32.0,
       "cote_reference": 29.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793799934000
+      "timestamp_cote": 1793800574000
     },
     {
       "numPmu": 7,
       "nom": "SCILLA",
-      "cote_live": 12.0,
+      "cote_live": 13.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793799934000
+      "timestamp_cote": 1793800574000
     },
     {
       "numPmu": 8,
       "nom": "MISS GONAGALL",
-      "cote_live": 20.0,
+      "cote_live": 21.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793799934000
+      "timestamp_cote": 1793800574000
     },
     {
       "numPmu": 9,
       "nom": "MAMAZARA",
-      "cote_live": 48.0,
+      "cote_live": 59.0,
       "cote_reference": 52.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793799934000
+      "timestamp_cote": 1793800574000
     },
     {
       "numPmu": 10,
       "nom": "MARY POPPINS",
-      "cote_live": 23.0,
+      "cote_live": 28.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793799934000
+      "timestamp_cote": 1793800574000
     },
     {
       "numPmu": 11,
@@ -104,25 +104,25 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793799934000
+      "timestamp_cote": 1793800574000
     },
     {
       "numPmu": 12,
       "nom": "MAGIE DU CHENET",
-      "cote_live": 3.2,
+      "cote_live": 3.1,
       "cote_reference": 3.2,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793799934000
+      "timestamp_cote": 1793800574000
     },
     {
       "numPmu": 13,
       "nom": "GOOD FORTUNE",
-      "cote_live": 34.0,
+      "cote_live": 40.0,
       "cote_reference": 36.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793799934000
+      "timestamp_cote": 1793800574000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -144,6 +144,25 @@
         "11": 12.0,
         "12": 3.2,
         "13": 34.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-04T14:56:31.416275+01:00",
+      "minutes_avant_depart": 25.488749583333334,
+      "cotes": {
+        "1": 10.0,
+        "2": 8.4,
+        "3": 20.0,
+        "4": 9.1,
+        "5": 6.9,
+        "6": 32.0,
+        "7": 13.0,
+        "8": 21.0,
+        "9": 59.0,
+        "10": 28.0,
+        "11": 12.0,
+        "12": 3.1,
+        "13": 40.0
       }
     }
   ]
