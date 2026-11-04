@@ -1,7 +1,7 @@
 {
   "hippodrome": "SOLVALLA",
   "type_reunion": "ATTELE",
-  "date_extraction": "2026-11-04T02:04:38.740284",
+  "date_extraction": "2026-11-04T14:58:43.516195",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/04112026/R7",
   "courses": [
     {
@@ -50,7 +50,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 5.3
         },
         {
           "n°": "3",
@@ -70,7 +73,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 53.0,
+          "cote_tendance": "",
+          "cote_reference": 23.0
         },
         {
           "n°": "4",
@@ -90,7 +96,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 26.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0
         },
         {
           "n°": "5",
@@ -110,7 +119,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.5,
+          "cote_tendance": "",
+          "cote_reference": 2.1
         },
         {
           "n°": "6",
@@ -130,7 +142,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 1.9,
+          "cote_tendance": "",
+          "cote_reference": 3.8
         },
         {
           "n°": "7",
@@ -150,9 +165,13 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX DE LA TERRE                        SUEDE",
@@ -200,7 +219,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 1.4,
+          "cote_tendance": "",
+          "cote_reference": 1.4
         },
         {
           "n°": "3",
@@ -220,7 +242,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 10.0
         },
         {
           "n°": "4",
@@ -260,7 +285,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.0,
+          "cote_tendance": "",
+          "cote_reference": 3.0
         },
         {
           "n°": "6",
@@ -292,7 +320,7 @@
           "propriétaire": "SVENSK APPARATSERV.C NILSSON HB",
           "entraineur": "C. NILSSON",
           "éleveurs": "",
-          "jockey": "C.J. JEPSON",
+          "jockey": "R. BAKKER",
           "poids": "",
           "gains": "96100",
           "musique": "8aDa0aDaDa",
@@ -360,7 +388,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 21.0,
+          "cote_tendance": "",
+          "cote_reference": 21.0
         }
       ],
       "cordeCourse": "CORDE_GAUCHE"
@@ -391,7 +422,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         },
         {
           "n°": "2",
@@ -411,7 +445,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.3,
+          "cote_tendance": "",
+          "cote_reference": 3.3
         },
         {
           "n°": "3",
@@ -471,7 +508,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.0,
+          "cote_tendance": "",
+          "cote_reference": 2.0
         },
         {
           "n°": "6",
@@ -507,26 +547,6 @@
           "poids": "",
           "gains": "1314400",
           "musique": "0a3a1aDa3a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
-          "n°": "8",
-          "cheval": "LION JOURNEY H.TR. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: CHAPTER SEVEN et TAHITI JOURNEY",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261104/SOL/3/20261104-SOL-3-8.png",
-          "propriétaire": "STALL ON A JOURNEY - OFCOURSE",
-          "entraineur": "T. NURMOS",
-          "éleveurs": "",
-          "jockey": "M.A. DJUSE",
-          "poids": "",
-          "gains": "792300",
-          "musique": "3aDa(24)3a0a",
           "valeur": "",
           "equipement(s)": "",
           "nb_courses": 0,
@@ -571,7 +591,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.2,
+          "cote_tendance": "",
+          "cote_reference": 7.2
         },
         {
           "n°": "11",
@@ -591,7 +614,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.2,
+          "cote_tendance": "",
+          "cote_reference": 7.2
         },
         {
           "n°": "12",
@@ -642,7 +668,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.9,
+          "cote_tendance": "",
+          "cote_reference": 3.9
         },
         {
           "n°": "2",
@@ -662,7 +691,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 1.8,
+          "cote_tendance": "",
+          "cote_reference": 1.8
         },
         {
           "n°": "3",
@@ -705,26 +737,6 @@
           "nb_places": 0
         },
         {
-          "n°": "5",
-          "cheval": "PURE ISLAND M.TR. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: ECURIE D. et IDOLE SMART",
-          "corde": "(Corde:05)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261104/SOL/4/20261104-SOL-4-5.png",
-          "propriétaire": "GUF AB",
-          "entraineur": "J. BARDUN",
-          "éleveurs": "",
-          "jockey": "J. BARDUN",
-          "poids": "",
-          "gains": "991500",
-          "musique": "Da3a2a3a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
           "n°": "6",
           "cheval": "DEFENSEMAN M.TR. 2 a.",
           "cheval_url": "",
@@ -742,7 +754,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 5.8,
+          "cote_tendance": "",
+          "cote_reference": 5.8
         },
         {
           "n°": "7",
@@ -762,9 +777,13 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 5.8,
+          "cote_tendance": "",
+          "cote_reference": 5.8
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX DE LA LUNE                         SUEDE",
@@ -812,7 +831,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.3,
+          "cote_tendance": "",
+          "cote_reference": 3.3
         },
         {
           "n°": "3",
@@ -872,7 +894,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.0,
+          "cote_tendance": "",
+          "cote_reference": 2.0
         },
         {
           "n°": "6",
@@ -892,7 +917,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.2,
+          "cote_tendance": "",
+          "cote_reference": 7.2
         },
         {
           "n°": "7",
@@ -912,7 +940,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.2,
+          "cote_tendance": "",
+          "cote_reference": 7.2
         },
         {
           "n°": "8",
@@ -952,9 +983,13 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX DE URANUS                          SUEDE",
@@ -982,7 +1017,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 17.0,
+          "cote_tendance": "",
+          "cote_reference": 17.0
         },
         {
           "n°": "2",
@@ -1002,7 +1040,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.3,
+          "cote_tendance": "",
+          "cote_reference": 3.3
         },
         {
           "n°": "3",
@@ -1042,7 +1083,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.6,
+          "cote_tendance": "",
+          "cote_reference": 8.6
         },
         {
           "n°": "5",
@@ -1062,7 +1106,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.6,
+          "cote_tendance": "",
+          "cote_reference": 2.6
         },
         {
           "n°": "6",
@@ -1122,7 +1169,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.4,
+          "cote_tendance": "",
+          "cote_reference": 3.4
         },
         {
           "n°": "9",
@@ -1144,7 +1194,8 @@
           "nb_victoires": 0,
           "nb_places": 0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX DE NEPTUNE                         SUEDE",
@@ -1192,7 +1243,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.5,
+          "cote_tendance": "",
+          "cote_reference": 3.5
         },
         {
           "n°": "3",
@@ -1232,7 +1286,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.6,
+          "cote_tendance": "",
+          "cote_reference": 7.6
         },
         {
           "n°": "5",
@@ -1252,7 +1309,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.1,
+          "cote_tendance": "",
+          "cote_reference": 2.1
         },
         {
           "n°": "6",
@@ -1292,7 +1352,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.6,
+          "cote_tendance": "",
+          "cote_reference": 7.6
         },
         {
           "n°": "8",
@@ -1312,7 +1375,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.6,
+          "cote_tendance": "",
+          "cote_reference": 7.6
         },
         {
           "n°": "9",
@@ -1394,7 +1460,8 @@
           "nb_victoires": 0,
           "nb_places": 0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX DE JUPITER                         SUEDE",
@@ -1442,7 +1509,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 4.0,
+          "cote_tendance": "",
+          "cote_reference": 4.0
         },
         {
           "n°": "3",
@@ -1502,7 +1572,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.0,
+          "cote_tendance": "",
+          "cote_reference": 3.0
         },
         {
           "n°": "6",
@@ -1522,7 +1595,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 10.0
         },
         {
           "n°": "7",
@@ -1582,7 +1658,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.1,
+          "cote_tendance": "",
+          "cote_reference": 2.1
         },
         {
           "n°": "10",
@@ -1624,7 +1703,8 @@
           "nb_victoires": 0,
           "nb_places": 0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX DE MARS                            SUEDE",
@@ -1652,7 +1732,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.9,
+          "cote_tendance": "",
+          "cote_reference": 8.9
         },
         {
           "n°": "2",
@@ -1672,7 +1755,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 4.1,
+          "cote_tendance": "",
+          "cote_reference": 4.1
         },
         {
           "n°": "3",
@@ -1732,7 +1818,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.5,
+          "cote_tendance": "",
+          "cote_reference": 2.5
         },
         {
           "n°": "6",
@@ -1772,7 +1861,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.9,
+          "cote_tendance": "",
+          "cote_reference": 8.9
         },
         {
           "n°": "8",
@@ -1792,7 +1884,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 17.0,
+          "cote_tendance": "",
+          "cote_reference": 17.0
         },
         {
           "n°": "9",
@@ -1812,7 +1907,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.9,
+          "cote_tendance": "",
+          "cote_reference": 8.9
         },
         {
           "n°": "10",
@@ -1852,7 +1950,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.9,
+          "cote_tendance": "",
+          "cote_reference": 8.9
         },
         {
           "n°": "12",
@@ -1874,7 +1975,8 @@
           "nb_victoires": 0,
           "nb_places": 0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX DE VENUS                           SUEDE",
@@ -1922,7 +2024,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.9,
+          "cote_tendance": "",
+          "cote_reference": 3.9
         },
         {
           "n°": "3",
@@ -1942,7 +2047,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.5,
+          "cote_tendance": "",
+          "cote_reference": 8.5
         },
         {
           "n°": "4",
@@ -1962,7 +2070,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.5,
+          "cote_tendance": "",
+          "cote_reference": 8.5
         },
         {
           "n°": "5",
@@ -1982,7 +2093,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.4,
+          "cote_tendance": "",
+          "cote_reference": 2.4
         },
         {
           "n°": "6",
@@ -2022,7 +2136,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.5,
+          "cote_tendance": "",
+          "cote_reference": 8.5
         },
         {
           "n°": "8",
@@ -2122,9 +2239,13 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.5,
+          "cote_tendance": "",
+          "cote_reference": 8.5
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     }
   ]
 }
