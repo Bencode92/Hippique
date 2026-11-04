@@ -1,0 +1,90 @@
+# VALPARAISO — 04/11/2026
+
+5 courses.
+
+*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+
+---
+
+### 6. HEGEMONIA H.
+
+*21h00 · plat · 1100 m · 9 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | VIDEL | – | PIERO IGNACIO REYES PODESTA |
+| 2 | PRIMO JULERO | – | GERALD ANDRES RODRIGUEZ SEPULVED |
+| 3 | TUTTO A PIACCERE | – | BRYAN IGNACIO RUBILAR ROMERO |
+| 4 | MI CHUNCHITA | – | BENJAMIN  SANCHO |
+| 5 | MARINO SIN VACILAR | – | GUILLERMO ANTONIO PEREZ ASTUDILL |
+| 6 | STORMY LUCKY | – | NICOLAS ALEJANDRO RAMIREZ MUNOZ |
+| 7 | ONE VISION | – | RAFAEL FRANCISCO CISTERNAS AYALA |
+| 8 | LANCELOT | – | JOSE MATIAS EYZAGUIRRE CEPEDA |
+| 9 | WITTENBURG | – | ALVARO IGNACIO APABLAZA ESPINOZA |
+
+### 7. HEIKA H.
+
+*21h30 · plat · 1100 m · 10 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | HIKARI | – | JAIME FABIAN MEDINA |
+| 2 | ALL IN | – | BENJAMIN  SANCHO |
+| 3 | DESERT DANCER | – | GERALD ANDRES RODRIGUEZ SEPULVED |
+| 4 | GUERRERO ARABE | – | MAXIMILIANO JOSE SALINAS |
+| 5 | GRAN CAFRUNE | – | JOSE MATIAS EYZAGUIRRE CEPEDA |
+| 6 | BENDITO OCHO | – | FELIPE TAPIA |
+| 7 | LUIVERAR | – | BRYAN IGNACIO RUBILAR ROMERO |
+| 8 | BLUE LABEL | – | PEDRO ROBERTO ROBLES |
+| 9 | INDIA CORAZON | – | RAFAEL FRANCISCO CISTERNAS AYALA |
+| 10 | KILAN | – | CARLOS ALEJANDRO ORTEGA TAPIA |
+
+### 8. PREMIO HUINGAL
+
+*22h00 · plat · 1100 m · 10 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | PIRATA BIGOTON | – | MATIAS ANDRES CARO AVILES |
+| 2 | FAFIFO | – | JAIME FABIAN MEDINA |
+| 3 | MI PARIENTE | – | IGNACIO ISAIAS VALDIVIA |
+| 4 | EL PARTNER | – | PIERO IGNACIO REYES PODESTA |
+| 5 | CORAZON COBARDE | – | FERNANDO JESUS MORENO |
+| 6 | GUAPO LIMENO | – | GUILLERMO ANTONIO PEREZ ASTUDILL |
+| 7 | ESTRELLON CRUCINO | – | GERALD ANDRES RODRIGUEZ SEPULVED |
+| 8 | CHEVALIER NOIRE | – | JOSE MATIAS EYZAGUIRRE CEPEDA |
+| 9 | SKIN GHOST | – | NELSON ANDRES ROJAS |
+| 10 | WINKAT | – | JOSE DANIEL VILLAGRAN |
+
+### 9. ILDEFONSO MOLINA ACHONDO S.
+
+*22h30 · plat · 1400 m · 8 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | EXHAUSTING | – | SEBASTIAN ANDRES MARIN QUEZADA |
+| 2 | OCHO DE ABRIL | – | SEBASTIAN EDUARDO GONZALEZ |
+| 3 | POGACAR | – | NELSON ANDRES ROJAS |
+| 4 | POPOVICH | – | IGNACIO ISAIAS VALDIVIA |
+| 5 | LIVE IN FEAR | – | JAIME FABIAN MEDINA |
+| 6 | GOT TALENT | – | RAFAEL FRANCISCO CISTERNAS AYALA |
+| 7 | HIMALAYA SPIRIT | – | NICOLAS ALEJANDRO RAMIREZ MUNOZ |
+| 8 | BAND OF BROTHERS | – | BENJAMIN  SANCHO |
+
+### 10. HEBRAICO H.
+
+*23h00 · plat · 1100 m · 11 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey | jk/ent/él/pr |
+|--:|:--|--:|:--|--:|
+| 1 | POTRO QUERIDO | – | NELSON ANDRES ROJAS | –/–/–/– |
+| 2 | JALONADO | – | CARLOS ALEJANDRO ORTEGA TAPIA | –/–/–/– |
+| 3 | MORGAN SOUL | – | WLADIMIR EMILIANO QUINTEROS GONZ | –/–/–/– |
+| 4 | GLADIATORE | – | MATIAS ANDRES CARO AVILES | –/–/–/– |
+| 5 | EL KING | – | SEBASTIAN ANDRES MARIN QUEZADA | –/–/–/– |
+| 6 | MEDFORD | – | ALVARO IGNACIO APABLAZA ESPINOZA | –/–/–/– |
+| 7 | GRAND SURI | – | NICOLAS ALEJANDRO RAMIREZ MUNOZ | –/–/–/– |
+| 8 | ANAHEIM | – | GUILLERMO ANTONIO PEREZ ASTUDILL | –/–/–/– |
+| 9 | SILVER SPIRIT | – | RAFAEL FRANCISCO CISTERNAS AYALA | –/–/–/– |
+| 10 | THE GREAT TEXAS | – | JORGE IGNACIO BAEZA RIVEROS | –/–/–/– |
+| 11 | LA CHAVELA | – | FERNANDO JESUS MORENO | –/–/–/– |
