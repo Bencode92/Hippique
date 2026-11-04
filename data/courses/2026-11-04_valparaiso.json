@@ -1,7 +1,7 @@
 {
   "hippodrome": "VALPARAISO",
   "type_reunion": "Plat",
-  "date_extraction": "2026-11-04T14:58:52.328671",
+  "date_extraction": "2026-11-04T16:51:48.837974",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/04112026/R8",
   "courses": [
     {
@@ -51,7 +51,7 @@
           "nb_courses": 44,
           "nb_victoires": 1,
           "nb_places": 14,
-          "cote": 1.6,
+          "cote": 3.0,
           "cote_tendance": "",
           "cote_reference": 1.6
         },
@@ -94,7 +94,7 @@
           "nb_courses": 20,
           "nb_victoires": 1,
           "nb_places": 8,
-          "cote": 7.3,
+          "cote": 1.7,
           "cote_tendance": "",
           "cote_reference": 7.3
         },
@@ -117,7 +117,7 @@
           "nb_courses": 20,
           "nb_victoires": 1,
           "nb_places": 5,
-          "cote": 7.3,
+          "cote": 13.0,
           "cote_tendance": "",
           "cote_reference": 7.3
         },
@@ -140,7 +140,7 @@
           "nb_courses": 35,
           "nb_victoires": 4,
           "nb_places": 7,
-          "cote": 3.6,
+          "cote": 6.6,
           "cote_tendance": "",
           "cote_reference": 3.6
         },
@@ -205,6 +205,8 @@
           "nb_places": 8
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -406,28 +408,10 @@
           "nb_courses": 6,
           "nb_victoires": 0,
           "nb_places": 2
-        },
-        {
-          "n°": "10",
-          "cheval": "KILAN M.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: VISCOUNT NELSON et SUTADELA (PROUD CITIZEN)",
-          "corde": "(Corde:10)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261104/VPR/7/20261104-VPR-7-10.png",
-          "propriétaire": "SAGARDIA HNOS.",
-          "entraineur": "ENRIQUE SIMON LAGUNAS",
-          "éleveurs": "",
-          "jockey": "CARLOS ALEJANDRO ORTEGA TAPIA",
-          "poids": "57 kg",
-          "gains": "682200000",
-          "musique": "8p3p1p2p2p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 33,
-          "nb_victoires": 3,
-          "nb_places": 9
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -608,26 +592,6 @@
           "nb_places": 0
         },
         {
-          "n°": "9",
-          "cheval": "SKIN GHOST M.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: FANTASMAGORICO et FLOR DE PIEL (PROUD CITIZEN)",
-          "corde": "(Corde:09)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261104/VPR/8/20261104-VPR-8-9.png",
-          "propriétaire": "CRIADERO DON VICENTE",
-          "entraineur": "MAXIMO TOMAS SILVA",
-          "éleveurs": "",
-          "jockey": "NELSON ANDRES ROJAS",
-          "poids": "57 kg",
-          "gains": "",
-          "musique": "7p8p0p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 3,
-          "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
           "n°": "10",
           "cheval": "WINKAT M.PU. 3 a.",
           "cheval_url": "",
@@ -648,6 +612,8 @@
           "nb_places": 1
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -677,7 +643,7 @@
           "nb_courses": 60,
           "nb_victoires": 6,
           "nb_places": 31,
-          "cote": 4.4,
+          "cote": 7.9,
           "cote_tendance": "",
           "cote_reference": 4.4
         },
@@ -700,7 +666,7 @@
           "nb_courses": 71,
           "nb_victoires": 10,
           "nb_places": 37,
-          "cote": 6.1,
+          "cote": 10.0,
           "cote_tendance": "",
           "cote_reference": 6.1
         },
@@ -763,7 +729,7 @@
           "nb_courses": 23,
           "nb_victoires": 9,
           "nb_places": 9,
-          "cote": 1.7,
+          "cote": 1.2,
           "cote_tendance": "",
           "cote_reference": 1.7
         },
@@ -786,7 +752,7 @@
           "nb_courses": 30,
           "nb_victoires": 5,
           "nb_places": 11,
-          "cote": 13.0,
+          "cote": 23.0,
           "cote_tendance": "",
           "cote_reference": 13.0
         },
@@ -829,11 +795,13 @@
           "nb_courses": 21,
           "nb_victoires": 4,
           "nb_places": 9,
-          "cote": 8.9,
+          "cote": 15.0,
           "cote_tendance": "",
           "cote_reference": 8.9
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -883,7 +851,7 @@
           "nb_courses": 39,
           "nb_victoires": 2,
           "nb_places": 10,
-          "cote": 1.8,
+          "cote": 2.2,
           "cote_tendance": "",
           "cote_reference": 1.8
         },
@@ -946,7 +914,7 @@
           "nb_courses": 26,
           "nb_victoires": 3,
           "nb_places": 6,
-          "cote": 8.2,
+          "cote": 10.0,
           "cote_tendance": "",
           "cote_reference": 8.2
         },
@@ -1008,7 +976,9 @@
           "equipement(s)": "",
           "nb_courses": 28,
           "nb_victoires": 3,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 5.0,
+          "cote_tendance": ""
         },
         {
           "n°": "9",
@@ -1029,7 +999,7 @@
           "nb_courses": 16,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 4.1,
+          "cote": 5.0,
           "cote_tendance": "",
           "cote_reference": 4.1
         },
@@ -1052,7 +1022,7 @@
           "nb_courses": 47,
           "nb_victoires": 8,
           "nb_places": 9,
-          "cote": 4.1,
+          "cote": 5.0,
           "cote_tendance": "",
           "cote_reference": 4.1
         },
@@ -1077,6 +1047,8 @@
           "nb_places": 7
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     }
   ]

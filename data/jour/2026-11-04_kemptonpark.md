@@ -8,43 +8,41 @@
 
 ### 1. APPRENTICE HANDICAP (CLASS 5)
 
-*16h25 · plat · 1400 m · 12 partants · cotes de l'extraction*
+*16h25 · plat · 1400 m · 11 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 3 | MYTHICAL COMPOSER | 2,7 | SHAY FARMER | –/815/–/– |
-| 8 | MISTER MOJITO | 5,3 | CONNOR PLANAS | –/–/–/– |
-| 9 | KING OF ITHACA | 7,8 | HARRY VIGORS | –/834/–/– |
-| 6 | PANAMA BLACK | 10 | CHARLIE TUCKER | –/–/–/– |
-| 5 | MISS LADY GRACE | 11 | ALEXANDRA EGAN | –/–/–/– |
-| 4 | KITARO KICH | 14 | JACK CALLAN | 316/460/–/– |
-| 1 | DOCUMENTING | 16 | MATTHEW LLOYD SLATER | –/–/–/– |
-| 10 | ARCTICIAN | 25 | JAMES GLENNON | –/–/–/– |
-| 12 | WIND SUMMER | 25 | JACK DACE | –/–/–/– |
-| 2 | AMAZONIAN DREAM | 31 | RYAN KAVANAGH | –/–/–/– |
-| 7 | CUBAN LADY | 33 | ALFIE REDMAN | –/–/–/– |
-| 11 | RHYTHM N ROCK | 101 | LUKE CATTON | –/–/–/– |
+| 3 | MYTHICAL COMPOSER | 3,5 | SHAY FARMER | –/815/–/– |
+| 8 | MISTER MOJITO | 4,7 | CONNOR PLANAS | –/–/–/– |
+| 4 | KITARO KICH | 5,4 | JACK CALLAN | 316/460/–/– |
+| 9 | KING OF ITHACA | 6,5 | HARRY VIGORS | –/834/–/– |
+| 11 | RHYTHM N ROCK | 10 | LUKE CATTON | –/–/–/– |
+| 2 | AMAZONIAN DREAM | 20 | RYAN KAVANAGH | –/–/–/– |
+| 1 | DOCUMENTING | 23 | MATTHEW LLOYD SLATER | –/–/–/– |
+| 12 | WIND SUMMER | 27 | JACK DACE | –/–/–/– |
+| 10 | ARCTICIAN | 28 | JAMES GLENNON | –/–/–/– |
+| 6 | PANAMA BLACK | 34 | CHARLIE TUCKER | –/–/–/– |
+| 7 | CUBAN LADY | 54 | ALFIE REDMAN | –/–/–/– |
 
 ### 2. HANDICAP (CLASS 6)
 
-*17h00 · plat · 1600 m · 14 partants · cotes de l'extraction*
+*17h00 · plat · 1600 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 12 | PALLISER | 1,7 | HOLLIE DOYLE | 319/284/–/– |
-| 13 | SENOR CAMPANARO | 7 | BILLY LOUGHNANE | 223/–/–/– |
-| 5 | PORT ERIN | 12 | DAVID PROBERT | 368/–/–/– |
-| 10 | BEACHBOROUGH GIRL | 14 | DYLAN HOGAN | –/–/–/– |
-| 2 | BOBACIOUS | 17 | ASHLEY LEWIS | –/–/–/– |
-| 4 | ROYAL JET | 18 | MOLLY GUNN | –/–/–/– |
-| 8 | DANDY G BOY | 18 | EDWARD GREATREX | 414/–/–/– |
-| 14 | BLUE CELESTIAL | 28 | LEWIS EDMUNDS | 410/834/–/– |
-| 3 | SNOOKER MCCREW | 56 | ALFIE REDMAN | –/–/–/– |
-| 6 | SOY LOCO | 56 | PADDY BRADLEY | –/–/–/– |
-| 9 | SOUTH KENSINGTON | 56 | CHARLES BISHOP | –/–/–/– |
-| 7 | WIELD | 112 | LUKE MORRIS | 247/–/–/– |
-| 1 | VALENTINE BOY | – | JACK DACE | –/–/–/– |
-| 11 | HINT OF THE JUNGLE | – | KIERAN O'NEILL | 373/–/–/– |
+| 3 | SNOOKER MCCREW | 2,9 | ALFIE REDMAN | –/–/–/– |
+| 12 | PALLISER | 3,8 | HOLLIE DOYLE | 319/284/–/– |
+| 1 | VALENTINE BOY | 5,4 | JACK DACE | –/–/–/– |
+| 14 | BLUE CELESTIAL | 13 | LEWIS EDMUNDS | 410/834/–/– |
+| 10 | BEACHBOROUGH GIRL | 16 | DYLAN HOGAN | –/–/–/– |
+| 9 | SOUTH KENSINGTON | 17 | CHARLES BISHOP | –/–/–/– |
+| 8 | DANDY G BOY | 17 | EDWARD GREATREX | 414/–/–/– |
+| 5 | PORT ERIN | 26 | DAVID PROBERT | 368/–/–/– |
+| 7 | WIELD | 37 | LUKE MORRIS | 247/–/–/– |
+| 6 | SOY LOCO | 81 | PADDY BRADLEY | –/–/–/– |
+| 11 | HINT OF THE JUNGLE | 89 | KIERAN O'NEILL | 373/–/–/– |
+| 2 | BOBACIOUS | 94 | ASHLEY LEWIS | –/–/–/– |
+| 4 | ROYAL JET | 109 | MOLLY GUNN | –/–/–/– |
 
 ### 3. FILLIES' NOVICE STAKES (CLASS 3) - DIV 1
 
@@ -52,19 +50,19 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 11 | VALENTIA LIGHT | 1,7 | WILLIAM BUICK | 168/101/–/46 |
-| 13 | WISE TIMES | 6,2 | MARCO GHIANI | 376/105/–/– |
-| 3 | CLOAK OF POWER | 7,6 | BILLY LOUGHNANE | 223/433/–/– |
-| 10 | TROPICAL RAIN | 15 | SEAN DYLAN BOWEN | –/307/–/– |
-| 5 | FINAL DASH | 17 | DANIEL MUSCUTT | 452/581/–/– |
-| 2 | CHOIR OF ANGELS | 27 | HECTOR CROUCH | 222/834/–/1533 |
-| 4 | ENDEARMENT | 30 | HOLLIE DOYLE | 319/24/–/– |
-| 7 | NOBLE LIGHT | 30 | ROBERT HAVLIN | 493/55/–/– |
-| 8 | RED CURRY | 30 | JAMES DOYLE | 162/55/–/– |
-| 14 | YAMANA | 60 | COLIN KEANE | 153/158/–/– |
-| 1 | ALMANUEVA | – | JASON WATSON | 369/116/–/957 |
-| 6 | MARRWAA | – | CALLUM RODRIGUEZ | 205/274/–/431 |
-| 9 | SPEAKING TREE | – | KIERAN SHOEMARK | 279/103/–/4823 |
+| 8 | RED CURRY | 3,5 | JAMES DOYLE | 162/55/–/– |
+| 14 | YAMANA | 4,3 | COLIN KEANE | 153/158/–/– |
+| 11 | VALENTIA LIGHT | 5,9 | WILLIAM BUICK | 168/101/–/46 |
+| 3 | CLOAK OF POWER | 7,8 | BILLY LOUGHNANE | 223/433/–/– |
+| 7 | NOBLE LIGHT | 12 | ROBERT HAVLIN | 493/55/–/– |
+| 6 | MARRWAA | 13 | CALLUM RODRIGUEZ | 205/274/–/431 |
+| 4 | ENDEARMENT | 19 | HOLLIE DOYLE | 319/24/–/– |
+| 13 | WISE TIMES | 28 | MARCO GHIANI | 376/105/–/– |
+| 5 | FINAL DASH | 29 | DANIEL MUSCUTT | 452/581/–/– |
+| 1 | ALMANUEVA | 59 | JASON WATSON | 369/116/–/957 |
+| 2 | CHOIR OF ANGELS | 74 | HECTOR CROUCH | 222/834/–/1533 |
+| 9 | SPEAKING TREE | 107 | KIERAN SHOEMARK | 279/103/–/4823 |
+| 10 | TROPICAL RAIN | 114 | SEAN DYLAN BOWEN | –/307/–/– |
 
 ### 4. FILLIES' NOVICE STAKES (CLASS 3) - DIV 2
 
@@ -73,17 +71,17 @@
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
 | 7 | LIGHT OF THE STARS | 1,4 | WILLIAM BUICK | 168/101/–/46 |
-| 5 | EL GHANEMA | 6,1 | BILLY LOUGHNANE | 223/510/–/114 |
-| 3 | CHERRY AMBER | 11 | LUKE MORRIS | 247/–/–/– |
-| 10 | SPICEY BEAR | 12 | DANIEL MUSCUTT | 452/581/–/– |
-| 2 | AQUILA D'ORO | 23 | HECTOR CROUCH | 222/447/–/38 |
-| 4 | COULIN ROUGE | 51 | JASON WATSON | 369/460/–/– |
-| 6 | HUMBLE PYLE | 51 | LEWIS EDMUNDS | 410/–/–/– |
-| 8 | POPPY GRACE | 51 | KIERAN SHOEMARK | 279/103/–/– |
-| 13 | YOU'RE SENSATIONAL | 51 | ROBERT HAVLIN | 493/55/–/– |
-| 1 | ACCOYA | – | HOLLIE DOYLE | 319/279/–/– |
-| 9 | PRINCESS AURELIA | – | CHARLES BISHOP | –/–/–/– |
-| 12 | WAILAKI | – | DAVID PROBERT | 368/150/–/5882 |
+| 5 | EL GHANEMA | 8,2 | BILLY LOUGHNANE | 223/510/–/114 |
+| 12 | WAILAKI | 13 | DAVID PROBERT | 368/150/–/5882 |
+| 2 | AQUILA D'ORO | 20 | HECTOR CROUCH | 222/447/–/38 |
+| 13 | YOU'RE SENSATIONAL | 23 | ROBERT HAVLIN | 493/55/–/– |
+| 8 | POPPY GRACE | 26 | KIERAN SHOEMARK | 279/103/–/– |
+| 10 | SPICEY BEAR | 27 | DANIEL MUSCUTT | 452/581/–/– |
+| 1 | ACCOYA | 39 | HOLLIE DOYLE | 319/279/–/– |
+| 6 | HUMBLE PYLE | 47 | LEWIS EDMUNDS | 410/–/–/– |
+| 3 | CHERRY AMBER | 50 | LUKE MORRIS | 247/–/–/– |
+| 4 | COULIN ROUGE | 50 | JASON WATSON | 369/460/–/– |
+| 9 | PRINCESS AURELIA | 57 | CHARLES BISHOP | –/–/–/– |
 
 ### 5. STAYERS MAIDEN STAKES (CLASS 3)
 
@@ -91,19 +89,19 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 12 | SILKEN WARRIOR | 1,5 | WILLIAM BUICK | 168/101/–/46 |
-| 11 | SEASIDE LAD | 4,2 | KIERAN SHOEMARK | 279/103/–/48 |
-| 2 | BASICS | 9,9 | BILLY LOUGHNANE | 223/35/–/104 |
-| 10 | PRINCE OF PETRA | 14 | SEAN DYLAN BOWEN | –/510/–/– |
-| 5 | ENSCONCED | 20 | DANIEL MUSCUTT | 452/581/–/– |
-| 8 | IS THIS THE HORSE | 71 | CALLUM RODRIGUEZ | 205/274/–/– |
-| 13 | SUBMARINE | 71 | MARCO GHIANI | 376/832/–/– |
-| 1 | ARAGONAISE | – | HECTOR CROUCH | 222/815/–/– |
-| 3 | CABECEO | – | DAVID PROBERT | 368/209/–/– |
-| 4 | CRACKSDOWN | – | CHARLES BISHOP | –/599/–/– |
-| 6 | GHOST FIRE | – | WILLIAM CARVER | –/116/–/2464 |
-| 7 | IMPERIAL SOLDIER | – | CALLUM HUTCHINSON | –/116/–/– |
-| 9 | NOBLE ARCHER | – | JASON WATSON | 369/116/–/– |
+| 12 | SILKEN WARRIOR | 1,1 | WILLIAM BUICK | 168/101/–/46 |
+| 11 | SEASIDE LAD | 19 | KIERAN SHOEMARK | 279/103/–/48 |
+| 9 | NOBLE ARCHER | 28 | JASON WATSON | 369/116/–/– |
+| 2 | BASICS | 30 | BILLY LOUGHNANE | 223/35/–/104 |
+| 8 | IS THIS THE HORSE | 30 | CALLUM RODRIGUEZ | 205/274/–/– |
+| 13 | SUBMARINE | 31 | MARCO GHIANI | 376/832/–/– |
+| 5 | ENSCONCED | 46 | DANIEL MUSCUTT | 452/581/–/– |
+| 10 | PRINCE OF PETRA | 57 | SEAN DYLAN BOWEN | –/510/–/– |
+| 6 | GHOST FIRE | 69 | WILLIAM CARVER | –/116/–/2464 |
+| 1 | ARAGONAISE | 138 | HECTOR CROUCH | 222/815/–/– |
+| 4 | CRACKSDOWN | 138 | CHARLES BISHOP | –/599/–/– |
+| 7 | IMPERIAL SOLDIER | 138 | CALLUM HUTCHINSON | –/116/–/– |
+| 3 | CABECEO | 345 | DAVID PROBERT | 368/209/–/– |
 
 ### 6. HANDICAP (CLASS 2)
 
@@ -111,15 +109,15 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | VALVANO | 1,5 | HECTOR CROUCH | 222/158/–/38 |
 | 6 | FORCE AND VALOUR | 2,8 | BILLY LOUGHNANE | 223/29/–/104 |
-| 4 | BRIAN | 15 | DAVID PROBERT | 368/–/–/– |
-| 10 | PHILANTHROPIST | 15 | HOLLIE DOYLE | 319/–/–/– |
-| 9 | SEA BAAEED | 31 | EDWARD GREATREX | 414/599/–/– |
-| 3 | HEATHCLIFF | – | DANIEL MUSCUTT | 452/581/–/– |
-| 5 | COSI BELLO | – | PADDY BRADLEY | –/643/–/– |
-| 7 | COLOMBIER | – | JAMES DOYLE | 162/238/–/8 |
-| 8 | BERKSHIRE WHISPER | – | ALFIE REDMAN | –/116/–/– |
+| 1 | VALVANO | 3,5 | HECTOR CROUCH | 222/158/–/38 |
+| 8 | BERKSHIRE WHISPER | 6,4 | ALFIE REDMAN | –/116/–/– |
+| 3 | HEATHCLIFF | 7,8 | DANIEL MUSCUTT | 452/581/–/– |
+| 4 | BRIAN | 17 | DAVID PROBERT | 368/–/–/– |
+| 5 | COSI BELLO | 17 | PADDY BRADLEY | –/643/–/– |
+| 10 | PHILANTHROPIST | 23 | HOLLIE DOYLE | 319/–/–/– |
+| 7 | COLOMBIER | 35 | JAMES DOYLE | 162/238/–/8 |
+| 9 | SEA BAAEED | 35 | EDWARD GREATREX | 414/599/–/– |
 
 ### 7. FILLIES' HANDICAP (CLASS 5)
 
@@ -128,12 +126,12 @@
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
 | 5 | MIRACLEOFTHEANDES | 1,8 | EDWARD GREATREX | 414/–/–/– |
-| 3 | AMELIA'S JOY | 2,9 | DAVID PROBERT | 368/–/–/– |
-| 1 | PERSIAN SPIRIT | 5,9 | BILLY LOUGHNANE | 223/221/–/– |
-| 6 | INDEPENDENT EXPERT | 13 | FINLEY MARSH | –/–/–/– |
+| 3 | AMELIA'S JOY | 3,8 | DAVID PROBERT | 368/–/–/– |
+| 1 | PERSIAN SPIRIT | 4 | BILLY LOUGHNANE | 223/221/–/– |
+| 6 | INDEPENDENT EXPERT | 14 | FINLEY MARSH | –/–/–/– |
+| 7 | PHOENIX MOON | 57 | HOLLIE DOYLE | 319/–/–/– |
 | 2 | QUEUE DOS | – | MARCO GHIANI | 376/–/–/– |
 | 4 | DAWN ROMANCE | – | LUKE MORRIS | 247/–/–/– |
-| 7 | PHOENIX MOON | – | HOLLIE DOYLE | 319/–/–/– |
 
 ### 8. HANDICAP (CLASS 5)
 
@@ -141,16 +139,16 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 4 | LIEUTENANT KIJE | 1,8 | DAVID PROBERT | 368/–/–/– |
-| 1 | INVINCIBLE SPEED | 4,1 | BILLY LOUGHNANE | 223/–/–/– |
-| 3 | AN OUTLAW'S GRACE | 5,2 | BEN POLLARD | –/279/–/– |
-| 7 | MONSIEUR PATAT | 12 | FINLEY MARSH | –/–/–/– |
-| 8 | TIGER TULIP | 37 | LUKE MORRIS | 247/–/–/– |
-| 9 | DARK ALLEY | 37 | EDWARD GREATREX | 414/–/–/– |
-| 10 | THE COFFEE POD | 37 | LEWIS EDMUNDS | 410/–/–/– |
+| 4 | LIEUTENANT KIJE | 2,2 | DAVID PROBERT | 368/–/–/– |
+| 1 | INVINCIBLE SPEED | 4 | BILLY LOUGHNANE | 223/–/–/– |
+| 3 | AN OUTLAW'S GRACE | 5,6 | BEN POLLARD | –/279/–/– |
+| 5 | HK FOURTEEN | 14 | HOLLIE DOYLE | 319/–/–/– |
+| 7 | MONSIEUR PATAT | 14 | FINLEY MARSH | –/–/–/– |
+| 9 | DARK ALLEY | 22 | EDWARD GREATREX | 414/–/–/– |
+| 10 | THE COFFEE POD | 22 | LEWIS EDMUNDS | 410/–/–/– |
+| 6 | EARLY RELEASE | 44 | CHARLES BISHOP | –/–/–/– |
+| 8 | TIGER TULIP | 44 | LUKE MORRIS | 247/–/–/– |
 | 2 | RECEIPT | – | KIERAN O'NEILL | 373/–/–/– |
-| 5 | HK FOURTEEN | – | HOLLIE DOYLE | 319/–/–/– |
-| 6 | EARLY RELEASE | – | CHARLES BISHOP | –/–/–/– |
 | 11 | FREDDIE'S STAR | – | MARCO GHIANI | 376/204/–/– |
 
 ### 9. HANDICAP (CLASS 6)
@@ -159,17 +157,17 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 9 | ATATURK | 1,4 | HECTOR CROUCH | 222/–/–/– |
-| 5 | PSEUDONYM | 5,8 | BILLY LOUGHNANE | 223/307/–/– |
-| 2 | LITTLE MISS INDIA | 14 | LUKE MORRIS | 247/813/–/– |
-| 4 | FAIR DINKUM | 14 | TARYN LANGLEY | –/–/–/– |
-| 1 | KURIOS LADY | 29 | JACK DACE | –/–/–/– |
-| 3 | SUPER HIT | 29 | JASON WATSON | 369/813/–/– |
-| 8 | THREE SOCKS ON | 29 | LEWIS EDMUNDS | 410/204/–/– |
-| 12 | TALES OLD AS TIME | 29 | ASHLEY LEWIS | –/658/–/– |
+| 9 | ATATURK | 1,9 | HECTOR CROUCH | 222/–/–/– |
+| 5 | PSEUDONYM | 5,6 | BILLY LOUGHNANE | 223/307/–/– |
+| 2 | LITTLE MISS INDIA | 9,9 | LUKE MORRIS | 247/813/–/– |
+| 4 | FAIR DINKUM | 9,9 | TARYN LANGLEY | –/–/–/– |
+| 13 | HEAD GIRL | 9,9 | CALLUM HUTCHINSON | –/896/–/– |
+| 3 | SUPER HIT | 19 | JASON WATSON | 369/813/–/– |
+| 1 | KURIOS LADY | 39 | JACK DACE | –/–/–/– |
+| 8 | THREE SOCKS ON | 39 | LEWIS EDMUNDS | 410/204/–/– |
+| 10 | GOLDFINDER | 39 | DAVID PROBERT | 368/–/–/919 |
+| 12 | TALES OLD AS TIME | 39 | ASHLEY LEWIS | –/658/–/– |
 | 6 | IN THE POST | – | MARCO GHIANI | 376/461/–/– |
 | 7 | EMERALD SPIRIT | – | JONNY PEATE | –/–/–/– |
-| 10 | GOLDFINDER | – | DAVID PROBERT | 368/–/–/919 |
 | 11 | KATALYST | – | RYAN KAVANAGH | –/–/–/– |
-| 13 | HEAD GIRL | – | CALLUM HUTCHINSON | –/896/–/– |
 | 14 | FOINIX | – | FINLEY MARSH | –/–/–/– |
