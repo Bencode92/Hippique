@@ -95,24 +95,24 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DE L'ABBAYE DE LA VICTOIRE
 
-*16h22 · plat · 1600 m · 14 partants · cotes à T−20:22*
+*16h22 · plat · 1600 m · 14 partants · cotes à T−16:22*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 3 | PROTAGONIST | 4,7 | 5,07 | -7,3 % | PC.BOUDOT 3e | 8/46/3761/53 |
-| 4 | GRECIAN CONQUEST | 5,1 | 5,62 | -9,3 % | T.BACHELOT | 16/17/127/3376 |
-| 1 | CHARMING CECILIA | 6 | 6,75 | -11,2 % | A.MOLINS | 34/108/888/1560 |
-| 6 | KAPKAN | 7,3 | 9,03 | -19,2 % | L.BAILS | 77/201/480/1745 |
-| 5 | ZEUDI | 8,5 | 10,10 | -15,9 % | M.GUYON 5e | 4/59/175/669 |
-| 13 | SAINT LAURENT | 13 | 16,64 | -21,9 % | T.PICCONE | 9/112/4/278 |
-| 11 | MARYCHA | 19 | 27,84 | -31,8 % | D.SANTIAGO | 15/119/100/2462 |
-| 12 | LANDED | 20 | 25,09 | -20,3 % | C.LECOEUVRE | 13/87/335/2695 |
-| 14 | GRANDALA | 23 | 32,34 | -28,9 % | A.MADAMET | 10/21/360/122 |
-| 7 | GARIGA | 36 | 53,73 | -33,0 % | F.VALLE SKAR | 35/87/84/1975 |
-| 9 | TERRA PROXIMA | 40 | 60,40 | -33,8 % | S.PASQUIER | 23/622/170/2487 |
-| 2 | YOHIO | 49 | 68,64 | -28,6 % | F.LEFEBVRE | 41/26/79/780 |
-| 8 | RUN VICTORIA | 62 | 104,57 | -40,7 % | L.ROUSSEL | 26/73/91/191 |
-| 10 | LA TRAVERSETTE | 110 | 176,00 | -37,5 % | A.HAMELIN | 22/48/1448/880 |
+| 3 | PROTAGONIST | 4,8 | 5,19 | -7,5 % | PC.BOUDOT 3e | 8/46/3761/53 |
+| 4 | GRECIAN CONQUEST | 5,4 | 5,99 | -9,9 % | T.BACHELOT | 16/17/127/3376 |
+| 1 | CHARMING CECILIA | 5,6 | 6,24 | -10,3 % | A.MOLINS | 34/108/888/1560 |
+| 6 | KAPKAN | 7,4 | 9,17 | -19,3 % | L.BAILS | 77/201/480/1745 |
+| 5 | ZEUDI | 8,5 | 10,10 | -15,8 % | M.GUYON 5e | 4/59/175/669 |
+| 13 | SAINT LAURENT | 13 | 16,63 | -21,8 % | T.PICCONE | 9/112/4/278 |
+| 11 | MARYCHA | 19 | 27,83 | -31,7 % | D.SANTIAGO | 15/119/100/2462 |
+| 14 | GRANDALA | 20 | 27,51 | -27,3 % | A.MADAMET | 10/21/360/122 |
+| 12 | LANDED | 23 | 29,46 | -21,9 % | C.LECOEUVRE | 13/87/335/2695 |
+| 7 | GARIGA | 36 | 53,71 | -33,0 % | F.VALLE SKAR | 35/87/84/1975 |
+| 9 | TERRA PROXIMA | 42 | 63,72 | -34,1 % | S.PASQUIER | 23/622/170/2487 |
+| 2 | YOHIO | 49 | 68,61 | -28,6 % | F.LEFEBVRE | 41/26/79/780 |
+| 8 | RUN VICTORIA | 61 | 102,73 | -40,6 % | L.ROUSSEL | 26/73/91/191 |
+| 10 | LA TRAVERSETTE | 67 | 105,50 | -36,5 % | A.HAMELIN | 22/48/1448/880 |
 
 ### 7. PRIX DU DOMAINE DE VALGENCEUSE
 
