@@ -12,19 +12,19 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | MACANUDO | 3 | CONOR WHITELEY | –/599/–/– |
-| 4 | FLETCHER'S FLIGHT | 7,4 | COLIN KEANE | 153/–/–/– |
-| 1 | LITTLE JAYBEE | 8,1 | EDWARD GREATREX | 414/–/–/– |
-| 6 | ROGUE DE VEGA | 9 | CAM HARDIE | –/–/–/– |
-| 11 | TEN CUIDADO | 11 | ROSE DAWES | –/–/–/– |
-| 13 | LOCHABER | 13 | LAURA COUGHLAN | –/–/–/– |
-| 8 | ALEPPO PEPPER | 16 | LUKE MORRIS | 247/618/–/– |
-| 5 | MAYFLYER | 18 | SEAN DYLAN BOWEN | –/–/–/– |
-| 12 | A LADY FOREVER | 24 | JUDE MAHER | –/–/–/– |
-| 9 | SANDS OF SEVE | 25 | BARRY MCHUGH | –/–/–/– |
-| 3 | WILD ACT | 30 | JOHN EGAN | –/–/–/– |
-| 7 | LIKEADYINWASP | 33 | ZAK WHEATLEY | –/–/–/– |
-| 10 | VANNESSA | 40 | JACK DACE | –/–/–/– |
+| 2 | MACANUDO | 3,2 | CONOR WHITELEY | –/599/–/– |
+| 4 | FLETCHER'S FLIGHT | 4,2 | COLIN KEANE | 153/–/–/– |
+| 1 | LITTLE JAYBEE | 8,5 | EDWARD GREATREX | 414/–/–/– |
+| 6 | ROGUE DE VEGA | 10 | CAM HARDIE | –/–/–/– |
+| 11 | TEN CUIDADO | 10 | ROSE DAWES | –/–/–/– |
+| 8 | ALEPPO PEPPER | 13 | LUKE MORRIS | 247/618/–/– |
+| 5 | MAYFLYER | 17 | SEAN DYLAN BOWEN | –/–/–/– |
+| 13 | LOCHABER | 28 | LAURA COUGHLAN | –/–/–/– |
+| 10 | VANNESSA | 32 | JACK DACE | –/–/–/– |
+| 9 | SANDS OF SEVE | 34 | BARRY MCHUGH | –/–/–/– |
+| 7 | LIKEADYINWASP | 35 | ZAK WHEATLEY | –/–/–/– |
+| 12 | A LADY FOREVER | 47 | JUDE MAHER | –/–/–/– |
+| 3 | WILD ACT | 58 | JOHN EGAN | –/–/–/– |
 
 ### 2. HANDICAP (CLASS 4)
 
@@ -32,15 +32,15 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | NOLTON CROSS | 2,2 | DAVID PROBERT | 368/209/–/– |
-| 4 | OPTICIAN | 4,9 | JASON HART | 492/–/–/– |
-| 5 | LADY MAGU | 6,2 | SEAN DYLAN BOWEN | –/510/–/– |
-| 6 | JOHN T | 8,8 | CLIFFORD LEE | 246/896/–/– |
-| 8 | WITHOUT COMPROMISE | 12 | CAM HARDIE | –/–/–/– |
-| 3 | PRINCE OF CALYPSO | 21 | JACK CALLAN | 316/221/–/– |
-| 9 | NAVAL COMMAND | 28 | HOLLIE DOYLE | 319/–/–/– |
-| 1 | ONEFORTHEGUTTER | 42 | EDWARD GREATREX | 414/599/–/– |
-| 7 | JOSEPH | 42 | LUKE MORRIS | 247/–/–/– |
+| 6 | JOHN T | 5 | CLIFFORD LEE | 246/896/–/– |
+| 3 | PRINCE OF CALYPSO | 5,3 | JACK CALLAN | 316/221/–/– |
+| 7 | JOSEPH | 6,6 | LUKE MORRIS | 247/–/–/– |
+| 2 | NOLTON CROSS | 6,8 | DAVID PROBERT | 368/209/–/– |
+| 4 | OPTICIAN | 7 | JASON HART | 492/–/–/– |
+| 1 | ONEFORTHEGUTTER | 7,7 | EDWARD GREATREX | 414/599/–/– |
+| 8 | WITHOUT COMPROMISE | 13 | CAM HARDIE | –/–/–/– |
+| 5 | LADY MAGU | 13 | SEAN DYLAN BOWEN | –/510/–/– |
+| 9 | NAVAL COMMAND | 29 | HOLLIE DOYLE | 319/–/–/– |
 
 ### 3. HANDICAP (CLASS 5)
 
@@ -48,18 +48,18 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 4 | SIGNCASTLE CITY | 2 | SEAN LEVEY | 266/279/–/– |
-| 5 | BENACRE | 5 | JASON HART | 492/99/–/– |
-| 2 | DOVEY MOON | 7,1 | MARCO GHIANI | 376/–/–/4343 |
-| 7 | LILLIE MARGOT | 18 | JACK GARRITTY | –/–/–/– |
-| 10 | DIDAAR | 18 | TOM EAVES | 486/–/–/– |
-| 13 | ALESSIA FERNANDA | 20 | CONOR WHITELEY | –/–/–/– |
-| 6 | ORANGESANDLEMONS | 24 | CIAN HORGAN | –/221/–/– |
-| 12 | EY UP HE'S A STAR | 24 | DAVID NOLAN | –/–/–/– |
-| 8 | MIDSUMMER STORM | 36 | ALISTAIR RAWLINSON | –/–/–/– |
-| 9 | PACKETOFBISCUITS | 36 | LUKE MORRIS | 247/–/–/– |
-| 11 | RUSHEEN BOY | 73 | DYLAN HOGAN | –/–/–/– |
-| 1 | CALYXOH | – | JACK CALLAN | 316/–/–/– |
+| 2 | DOVEY MOON | 3,1 | MARCO GHIANI | 376/–/–/4343 |
+| 4 | SIGNCASTLE CITY | 5,1 | SEAN LEVEY | 266/279/–/– |
+| 12 | EY UP HE'S A STAR | 8,4 | DAVID NOLAN | –/–/–/– |
+| 5 | BENACRE | 9,9 | JASON HART | 492/99/–/– |
+| 7 | LILLIE MARGOT | 12 | JACK GARRITTY | –/–/–/– |
+| 6 | ORANGESANDLEMONS | 14 | CIAN HORGAN | –/221/–/– |
+| 13 | ALESSIA FERNANDA | 17 | CONOR WHITELEY | –/–/–/– |
+| 9 | PACKETOFBISCUITS | 18 | LUKE MORRIS | 247/–/–/– |
+| 10 | DIDAAR | 23 | TOM EAVES | 486/–/–/– |
+| 1 | CALYXOH | 26 | JACK CALLAN | 316/–/–/– |
+| 8 | MIDSUMMER STORM | 29 | ALISTAIR RAWLINSON | –/–/–/– |
+| 11 | RUSHEEN BOY | 30 | DYLAN HOGAN | –/–/–/– |
 
 ### 4. NOVICE STAKES (CLASS 3)
 
@@ -68,14 +68,14 @@
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
 | 2 | FENAROLI | 1,1 | COLIN KEANE | 153/855/–/– |
-| 1 | BOMBORA | 35 | CLIFFORD LEE | 246/42/–/93 |
-| 5 | KNIGHTBOLT | 35 | SHANE GRAY | 463/337/–/2338 |
-| 3 | HARROW ON THE HILL | 53 | DANIEL MUSCUTT | 452/29/–/– |
-| 4 | KESARI | 80 | LUKE MORRIS | 247/–/–/– |
-| 6 | LEABANK | 80 | TOM KIELY-MARSHALL | –/–/–/– |
-| 8 | ROGUE INFERNO | 80 | DAVID PROBERT | 368/221/–/– |
-| 9 | THE DARK PRINCE | 80 | MARCO GHIANI | 376/–/–/– |
-| 7 | MUNAJAD | – | KAIYA FRASER | 412/259/–/– |
+| 1 | BOMBORA | 25 | CLIFFORD LEE | 246/42/–/93 |
+| 5 | KNIGHTBOLT | 67 | SHANE GRAY | 463/337/–/2338 |
+| 3 | HARROW ON THE HILL | 69 | DANIEL MUSCUTT | 452/29/–/– |
+| 4 | KESARI | 77 | LUKE MORRIS | 247/–/–/– |
+| 9 | THE DARK PRINCE | 103 | MARCO GHIANI | 376/–/–/– |
+| 7 | MUNAJAD | 133 | KAIYA FRASER | 412/259/–/– |
+| 8 | ROGUE INFERNO | 133 | DAVID PROBERT | 368/221/–/– |
+| 6 | LEABANK | 147 | TOM KIELY-MARSHALL | –/–/–/– |
 
 ### 5. FILLIES HANDICAP (CLASS 5)
 
@@ -83,16 +83,16 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 4 | ENOLA GREY | 1,8 | LAURA COUGHLAN | –/–/–/– |
-| 9 | MAYO COUNTY | 3,4 | RYAN SEXTON | –/–/–/– |
+| 4 | ENOLA GREY | 2,6 | LAURA COUGHLAN | –/–/–/– |
+| 9 | MAYO COUNTY | 4 | RYAN SEXTON | –/–/–/– |
+| 8 | SPIRIT OF JENNY | 5,9 | CLIFFORD LEE | 246/–/–/– |
 | 5 | LOPE EL FUEGO | 10 | EDWARD GREATREX | 414/–/–/– |
-| 10 | FISTRAL BEACH | 13 | LEWIS EDMUNDS | 410/–/–/– |
-| 7 | FORBIDDEN COLOURS | 17 | KIERAN SHOEMARK | 279/103/–/48 |
+| 7 | FORBIDDEN COLOURS | 13 | KIERAN SHOEMARK | 279/103/–/48 |
 | 2 | DIAMONDINTHEDARK | 21 | LUKE MORRIS | 247/–/–/– |
-| 8 | SPIRIT OF JENNY | 46 | CLIFFORD LEE | 246/–/–/– |
-| 1 | LADY MARIKO | 69 | MARCO GHIANI | 376/461/–/– |
+| 1 | LADY MARIKO | 22 | MARCO GHIANI | 376/461/–/– |
+| 10 | FISTRAL BEACH | 22 | LEWIS EDMUNDS | 410/–/–/– |
+| 6 | MOUNTAIN OF LIGHT | 27 | DANIEL MUSCUTT | 452/491/–/621 |
 | 3 | RIBENSKA | – | DAVID PROBERT | 368/643/–/– |
-| 6 | MOUNTAIN OF LIGHT | – | DANIEL MUSCUTT | 452/491/–/621 |
 
 ### 6. HANDICAP (CLASS 6)
 
@@ -100,19 +100,19 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | NORTH STAR KODI | 1,2 | OISIN ORR | –/–/–/– |
-| 5 | VENTURA POWER | 7,1 | JACK CALLAN | 316/433/–/– |
-| 10 | CURIOUS MINX | 13 | SEAN LEVEY | 266/279/–/– |
-| 3 | QUIET SOUL | 40 | JASON HART | 492/–/–/– |
-| 8 | GET ON THAT BABY | 40 | JOANNA MASON | –/–/–/– |
-| 11 | PRIDE'S QUEEN | 40 | MARCO GHIANI | 376/105/–/– |
-| 12 | ADELAIDES TURN | 40 | EDWARD GREATREX | 414/851/–/– |
-| 13 | RUM POINT | 80 | ZAK WHEATLEY | –/–/–/– |
-| 4 | THAI BAHT | – | CALLUM RODRIGUEZ | 205/274/–/– |
+| 1 | NORTH STAR KODI | 2,6 | OISIN ORR | –/–/–/– |
+| 9 | DREAM ON KENT | 5 | HOLLIE DOYLE | 319/–/–/– |
+| 10 | CURIOUS MINX | 6,9 | SEAN LEVEY | 266/279/–/– |
+| 8 | GET ON THAT BABY | 7,5 | JOANNA MASON | –/–/–/– |
+| 5 | VENTURA POWER | 9,1 | JACK CALLAN | 316/433/–/– |
+| 4 | THAI BAHT | 17 | CALLUM RODRIGUEZ | 205/274/–/– |
+| 11 | PRIDE'S QUEEN | 22 | MARCO GHIANI | 376/105/–/– |
+| 3 | QUIET SOUL | 44 | JASON HART | 492/–/–/– |
+| 12 | ADELAIDES TURN | 59 | EDWARD GREATREX | 414/851/–/– |
+| 14 | COMMANDER KEITH | 59 | WILLIAM PYLE | –/–/–/– |
+| 13 | RUM POINT | 88 | ZAK WHEATLEY | –/–/–/– |
+| 7 | BLACK GIN | 177 | LUKE MORRIS | 247/–/–/– |
 | 6 | ANGELIC MELODY | – | RYAN SEXTON | –/–/–/– |
-| 7 | BLACK GIN | – | LUKE MORRIS | 247/–/–/– |
-| 9 | DREAM ON KENT | – | HOLLIE DOYLE | 319/–/–/– |
-| 14 | COMMANDER KEITH | – | WILLIAM PYLE | –/–/–/– |
 
 ### 7. MAIDEN FILLIES' STAKES
 
@@ -120,16 +120,16 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | CELESTIAL FIRE | 1,7 | HOLLIE DOYLE | 319/284/–/– |
-| 2 | MOULTON QUEEN | 3,5 | JACK CALLAN | 316/541/–/– |
-| 12 | MISS CLARICE | 3,5 | CLIFFORD LEE | 246/896/–/– |
+| 4 | ALANKA | 2,9 | OISIN ORR | –/–/–/– |
+| 1 | CELESTIAL FIRE | 4,4 | HOLLIE DOYLE | 319/284/–/– |
+| 12 | MISS CLARICE | 4,4 | CLIFFORD LEE | 246/896/–/– |
+| 2 | MOULTON QUEEN | 8,8 | JACK CALLAN | 316/541/–/– |
+| 8 | WADIMA | 8,8 | MARCO GHIANI | 376/105/–/– |
+| 10 | CLASSIC BELLINI | 8,8 | DAVID ALLAN | 317/539/–/– |
 | 3 | THRIVING MISS LACY | – | GEORGE BASS | 367/–/–/– |
-| 4 | ALANKA | – | OISIN ORR | –/–/–/– |
 | 5 | COTAI POWER | – | LUKE MORRIS | 247/–/–/– |
 | 6 | HOYA BELLA | – | DAVID PROBERT | 368/813/–/– |
-| 8 | WADIMA | – | MARCO GHIANI | 376/105/–/– |
 | 9 | CANDY IS DANDY | – | DYLAN HOGAN | –/493/–/– |
-| 10 | CLASSIC BELLINI | – | DAVID ALLAN | 317/539/–/– |
 | 11 | LOVE ALWAYS | – | SEAN DYLAN BOWEN | –/307/–/– |
 
 ### 8. HANDICAP (CLASS 5) (DIV I)
@@ -138,13 +138,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | JELLYSTONE PARK | 2,6 | GEORGE BASS | 367/861/–/– |
-| 2 | MODERN TIMES | 5,2 | MASON PAETEL | –/813/–/– |
-| 5 | PROJECT WALLACE | 5,2 | ZAK WHEATLEY | –/–/–/– |
-| 6 | MR DREAMSELLER | 5,2 | OISIN ORR | –/–/–/– |
-| 9 | TOUGH ENOUGH | 5,2 | CAM HARDIE | –/–/–/– |
-| 3 | STYLE KING | – | HOLLIE DOYLE | 319/–/–/– |
-| 4 | FAIR Y ISLE | – | SEAN DYLAN BOWEN | –/–/–/– |
+| 1 | JELLYSTONE PARK | 3,9 | GEORGE BASS | 367/861/–/– |
+| 5 | PROJECT WALLACE | 3,9 | ZAK WHEATLEY | –/–/–/– |
+| 2 | MODERN TIMES | 7,9 | MASON PAETEL | –/813/–/– |
+| 3 | STYLE KING | 7,9 | HOLLIE DOYLE | 319/–/–/– |
+| 4 | FAIR Y ISLE | 7,9 | SEAN DYLAN BOWEN | –/–/–/– |
+| 6 | MR DREAMSELLER | 7,9 | OISIN ORR | –/–/–/– |
+| 9 | TOUGH ENOUGH | 7,9 | CAM HARDIE | –/–/–/– |
 | 7 | NORTH VIEW | – | MOLLY GUNN | –/–/–/– |
 | 8 | THAT'S RANDOM | – | LEWIS EDMUNDS | 410/855/–/– |
 
@@ -154,12 +154,12 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 4 | CURIOUS ROVER | 2,6 | JASON HART | 492/311/–/– |
-| 6 | PRINCE OF PILLO | 2,6 | JACK GARRITTY | –/–/–/– |
-| 7 | MALDEVIOUS | 2,6 | DALE SWIFT | –/424/–/– |
+| 2 | STRAIGHT AHEAD | 4,4 | TOM EAVES | 486/–/–/– |
+| 4 | CURIOUS ROVER | 4,4 | JASON HART | 492/311/–/– |
+| 5 | ORMOLULU | 4,4 | CONOR WHITELEY | –/–/–/– |
+| 6 | PRINCE OF PILLO | 4,4 | JACK GARRITTY | –/–/–/– |
+| 7 | MALDEVIOUS | 4,4 | DALE SWIFT | –/424/–/– |
 | 1 | STANLEY SPENCER | – | OISIN ORR | –/–/–/– |
-| 2 | STRAIGHT AHEAD | – | TOM EAVES | 486/–/–/– |
 | 3 | LOGI BEAR | – | LUKE MORRIS | 247/–/–/– |
-| 5 | ORMOLULU | – | CONOR WHITELEY | –/–/–/– |
 | 8 | INFINITY BLUE | – | TOM KIELY-MARSHALL | –/–/–/– |
 | 9 | DOUBLE EAGLE | – | JOHN EGAN | –/–/–/– |

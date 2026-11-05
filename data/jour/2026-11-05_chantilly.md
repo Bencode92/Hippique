@@ -99,20 +99,20 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | PROTAGONIST | 5,4 | 4,5 | 5,90 | -8,5 % | PC.BOUDOT 3e | 8/46/3761/53 |
-| 4 | GRECIAN CONQUEST | 5,9 | 5,2 | 6,35 | -7,1 % | T.BACHELOT | 16/17/127/3376 |
-| 1 | CHARMING CECILIA | 6 | 5,7 | 6,74 | -11,0 % | A.MOLINS | 34/108/888/1560 |
+| 3 | PROTAGONIST | 5,4 | 3,8 | 5,90 | -8,5 % | PC.BOUDOT 3e | 8/46/3761/53 |
+| 4 | GRECIAN CONQUEST | 5,9 | 4,4 | 6,35 | -7,1 % | T.BACHELOT | 16/17/127/3376 |
+| 1 | CHARMING CECILIA | 6 | 6,1 | 6,74 | -11,0 % | A.MOLINS | 34/108/888/1560 |
 | 5 | ZEUDI | 8 | 8,9 | 9,39 | -14,8 % | M.GUYON 5e | 4/59/175/669 |
-| 6 | KAPKAN | 8,4 | 10 | 10,18 | -17,5 % | L.BAILS | 77/201/480/1745 |
-| 13 | SAINT LAURENT | 11 | 14 | 12,50 | -12,0 % | T.PICCONE | 9/112/4/278 |
-| 11 | MARYCHA | 14 | 16 | 17,76 | -21,2 % | D.SANTIAGO | 15/119/100/2462 |
-| 14 | GRANDALA | 15 | 18 | 17,95 | -16,4 % | A.MADAMET | 10/21/360/122 |
-| 12 | LANDED | 25 | 30 | 30,88 | -19,1 % | C.LECOEUVRE | 13/87/335/2695 |
-| 2 | YOHIO | 28 | 30 | 33,56 | -16,6 % | F.LEFEBVRE | 41/26/79/780 |
-| 7 | GARIGA | 40 | 29 | 60,29 | -33,7 % | F.VALLE SKAR | 35/87/84/1975 |
-| 9 | TERRA PROXIMA | 43 | 44 | 59,46 | -27,7 % | S.PASQUIER | 23/622/170/2487 |
-| 8 | RUN VICTORIA | 57 | 61 | 95,41 | -40,3 % | L.ROUSSEL | 26/73/91/191 |
-| 10 | LA TRAVERSETTE | 72 | 62 | 113,66 | -36,7 % | A.HAMELIN | 22/48/1448/880 |
+| 6 | KAPKAN | 8,4 | 11 | 10,18 | -17,5 % | L.BAILS | 77/201/480/1745 |
+| 13 | SAINT LAURENT | 11 | 13 | 12,50 | -12,0 % | T.PICCONE | 9/112/4/278 |
+| 11 | MARYCHA | 14 | 23 | 17,76 | -21,2 % | D.SANTIAGO | 15/119/100/2462 |
+| 14 | GRANDALA | 15 | 37 | 17,95 | -16,4 % | A.MADAMET | 10/21/360/122 |
+| 12 | LANDED | 25 | 45 | 30,88 | -19,1 % | C.LECOEUVRE | 13/87/335/2695 |
+| 2 | YOHIO | 28 | 18 | 33,56 | -16,6 % | F.LEFEBVRE | 41/26/79/780 |
+| 7 | GARIGA | 40 | 40 | 60,29 | -33,7 % | F.VALLE SKAR | 35/87/84/1975 |
+| 9 | TERRA PROXIMA | 43 | 59 | 59,46 | -27,7 % | S.PASQUIER | 23/622/170/2487 |
+| 8 | RUN VICTORIA | 57 | 56 | 95,41 | -40,3 % | L.ROUSSEL | 26/73/91/191 |
+| 10 | LA TRAVERSETTE | 72 | 86 | 113,66 | -36,7 % | A.HAMELIN | 22/48/1448/880 |
 
 ### 7. PRIX DU DOMAINE DE VALGENCEUSE
 
@@ -120,20 +120,20 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 2 | OSHIA | 4,9 | 5,32 | -8,0 % | M.BARZALONA 2e | 2/117/29/3019 |
-| 14 | RUBENESQUE | 5,5 | 5,67 | -3,0 % | T.TRULLIER | 21/299/39/1598 |
-| 9 | ALJADARA | 8,2 | 10,38 | -21,0 % | T.PICCONE | 9/6/–/6 |
-| 3 | MAURICIA | 9,8 | 11,97 | -18,1 % | L.BAILS | 77/211/343/181 |
-| 6 | NEBULAE | 10 | 13,12 | -23,8 % | PC.BOUDOT 3e | 8/16/204/288 |
-| 5 | MACKAYA | 12 | 13,90 | -13,7 % | C.LECOEUVRE | 13/87/125/987 |
-| 1 | CHILL Y FLAMA | 14 | 17,40 | -19,5 % | M.PROTTI | 30/6/1565/136 |
-| 11 | IKOTOFETSY | 18 | 23,32 | -22,8 % | D.SANTIAGO | 15/295/48/423 |
-| 8 | SILVER REEL | 20 | 25,19 | -20,6 % | D.PROVOST | 33/70/107/160 |
-| 13 | DREAMFORFUTURE | 21 | 26,65 | -21,2 % | A.HAMELIN | 22/415/1037/2943 |
-| 10 | CADEAU DE NOEL | 25 | 35,69 | -30,0 % | S.PASQUIER | 23/32/3274/1496 |
-| 12 | DIVO | 26 | 32,45 | -19,9 % | F.VALLE SKAR | 35/282/666/476 |
-| 4 | THE TINKER | 30 | 39,98 | -25,0 % | L.PLOMMEE | 31/74/1035/– |
-| 7 | SOCIETY PRINCESSE | 40 | 65,14 | -38,6 % | A.MADAMET | 10/134/81/2619 |
+| 9 | ALJADARA | 4,3 | 4,88 | -11,9 % | T.PICCONE | 9/6/–/6 |
+| 6 | NEBULAE | 6,1 | 6,76 | -9,7 % | PC.BOUDOT 3e | 8/16/204/288 |
+| 2 | OSHIA | 7,9 | 8,16 | -3,2 % | M.BARZALONA 2e | 2/117/29/3019 |
+| 3 | MAURICIA | 8 | 8,65 | -7,5 % | L.BAILS | 77/211/343/181 |
+| 14 | RUBENESQUE | 8,2 | 9,28 | -11,6 % | T.TRULLIER | 21/299/39/1598 |
+| 8 | SILVER REEL | 12 | 13,86 | -13,4 % | D.PROVOST | 33/70/107/160 |
+| 10 | CADEAU DE NOEL | 18 | 22,23 | -19,0 % | S.PASQUIER | 23/32/3274/1496 |
+| 5 | MACKAYA | 20 | 26,27 | -23,9 % | C.LECOEUVRE | 13/87/125/987 |
+| 11 | IKOTOFETSY | 21 | 29,11 | -27,9 % | D.SANTIAGO | 15/295/48/423 |
+| 1 | CHILL Y FLAMA | 26 | 35,50 | -26,8 % | M.PROTTI | 30/6/1565/136 |
+| 7 | SOCIETY PRINCESSE | 31 | 48,83 | -36,5 % | A.MADAMET | 10/134/81/2619 |
+| 13 | DREAMFORFUTURE | 37 | 52,83 | -30,0 % | A.HAMELIN | 22/415/1037/2943 |
+| 12 | DIVO | 41 | 53,86 | -23,9 % | F.VALLE SKAR | 35/282/666/476 |
+| 4 | THE TINKER | 44 | 58,20 | -24,4 % | L.PLOMMEE | 31/74/1035/– |
 
 ### 8. PRIX DU POTEAU DES BRULIS
 
@@ -141,19 +141,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 11 | SEAYA | 2,9 | 3,19 | -9,1 % | M.GUYON 3e | 4/2/1/2 |
-| 1 | CANDIZAL | 4,7 | 5,20 | -9,6 % | L.PLOMMEE | 31/1/–/1 |
-| 3 | SIRAT | 9,9 | 12,24 | -19,1 % | PC.BOUDOT 4e | 8/46/1051/137 |
-| 8 | NINA'S VICTORIA | 10 | 11,85 | -15,6 % | B.LABATE | 113/2/3403/– |
-| 5 | CZAJKOWSKI | 16 | 18,75 | -14,7 % | J.MOUTARD | 61/68/74/200 |
-| 13 | VADAZAL | 20 | 25,44 | -21,4 % | D.PROVOST | 33/91/4064/2231 |
-| 7 | SAINTE MARTHE | 22 | 30,49 | -27,8 % | T.TRULLIER | 21/37/8/4 |
-| 4 | WHITE MIRACLE | 23 | 32,76 | -29,8 % | S.PASQUIER | 23/227/848/1467 |
-| 6 | BIG RED SOLO | 23 | 35,19 | -34,6 % | G.TROLLEY DE PREVAUX | 46/68/3982/4011 |
-| 10 | DUSKWIND | 29 | 38,89 | -25,4 % | L.MABROUK | 326/10/3657/4200 |
-| 15 | ERICE | 29 | 38,86 | -25,4 % | S.CHUETTE | 166/23/29/18 |
-| 12 | ANNE'S FAVOURITE | 34 | 44,32 | -23,3 % | M.PROTTI | 30/6/–/20 |
-| 16 | LIAH | 44 | 58,93 | -25,3 % | A.MADAMET | 10/154/541/511 |
-| 9 | CODED ELEGANCE | 56 | 80,24 | -30,2 % | X.BERGERON | 70/87/–/– |
-| 14 | MOUSHALE | 72 | 104,82 | -31,3 % | M.FAVRIAUX | 51/21/805/2182 |
-| 2 | ALBATH'OR | 113 | 174,29 | -35,2 % | J.CLAUDIC | 38/631/4001/2567 |
+| 11 | SEAYA | 3,4 | 3,94 | -13,8 % | M.GUYON 3e | 4/2/1/2 |
+| 5 | CZAJKOWSKI | 6,2 | 5,93 | **+4,6 %** | J.MOUTARD | 61/68/74/200 |
+| 3 | SIRAT | 7,8 | 8,70 | -10,4 % | PC.BOUDOT 4e | 8/46/1051/137 |
+| 1 | CANDIZAL | 8 | 9,35 | -14,5 % | L.PLOMMEE | 31/1/–/1 |
+| 8 | NINA'S VICTORIA | 8,4 | 9,90 | -15,2 % | B.LABATE | 113/2/3403/– |
+| 4 | WHITE MIRACLE | 15 | 17,87 | -16,1 % | S.PASQUIER | 23/227/848/1467 |
+| 7 | SAINTE MARTHE | 16 | 20,67 | -22,6 % | T.TRULLIER | 21/37/8/4 |
+| 16 | LIAH | 21 | 24,07 | -12,8 % | A.MADAMET | 10/154/541/511 |
+| 9 | CODED ELEGANCE | 28 | 36,65 | -23,6 % | X.BERGERON | 70/87/–/– |
+| 13 | VADAZAL | 34 | 47,78 | -28,8 % | D.PROVOST | 33/91/4064/2231 |
+| 12 | ANNE'S FAVOURITE | 52 | 69,39 | -25,1 % | M.PROTTI | 30/6/–/20 |
+| 15 | ERICE | 66 | 89,53 | -26,3 % | S.CHUETTE | 166/23/29/18 |
+| 14 | MOUSHALE | 80 | 120,46 | -33,6 % | M.FAVRIAUX | 51/21/805/2182 |
+| 6 | BIG RED SOLO | 82 | 132,97 | -38,3 % | G.TROLLEY DE PREVAUX | 46/68/3982/4011 |
+| 10 | DUSKWIND | 93 | 140,69 | -33,9 % | L.MABROUK | 326/10/3657/4200 |
+| 2 | ALBATH'OR | 154 | 232,64 | -33,8 % | J.CLAUDIC | 38/631/4001/2567 |
