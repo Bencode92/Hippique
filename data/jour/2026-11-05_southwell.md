@@ -67,15 +67,15 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | FENAROLI | 1,1 | COLIN KEANE | 153/855/–/– |
-| 1 | BOMBORA | 25 | CLIFFORD LEE | 246/42/–/93 |
-| 5 | KNIGHTBOLT | 67 | SHANE GRAY | 463/337/–/2338 |
-| 3 | HARROW ON THE HILL | 69 | DANIEL MUSCUTT | 452/29/–/– |
-| 4 | KESARI | 77 | LUKE MORRIS | 247/–/–/– |
-| 9 | THE DARK PRINCE | 103 | MARCO GHIANI | 376/–/–/– |
-| 7 | MUNAJAD | 133 | KAIYA FRASER | 412/259/–/– |
-| 8 | ROGUE INFERNO | 133 | DAVID PROBERT | 368/221/–/– |
-| 6 | LEABANK | 147 | TOM KIELY-MARSHALL | –/–/–/– |
+| 2 | FENAROLI | 1,2 | COLIN KEANE | 153/855/–/– |
+| 1 | BOMBORA | 7,6 | CLIFFORD LEE | 246/42/–/93 |
+| 3 | HARROW ON THE HILL | 15 | DANIEL MUSCUTT | 452/29/–/– |
+| 9 | THE DARK PRINCE | 18 | MARCO GHIANI | 376/–/–/– |
+| 5 | KNIGHTBOLT | 39 | SHANE GRAY | 463/337/–/2338 |
+| 4 | KESARI | 39 | LUKE MORRIS | 247/–/–/– |
+| 7 | MUNAJAD | 76 | KAIYA FRASER | 412/259/–/– |
+| 8 | ROGUE INFERNO | 81 | DAVID PROBERT | 368/221/–/– |
+| 6 | LEABANK | 112 | TOM KIELY-MARSHALL | –/–/–/– |
 
 ### 5. FILLIES HANDICAP (CLASS 5)
 
@@ -83,16 +83,16 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 4 | ENOLA GREY | 2,6 | LAURA COUGHLAN | –/–/–/– |
-| 9 | MAYO COUNTY | 4 | RYAN SEXTON | –/–/–/– |
-| 8 | SPIRIT OF JENNY | 5,9 | CLIFFORD LEE | 246/–/–/– |
-| 5 | LOPE EL FUEGO | 10 | EDWARD GREATREX | 414/–/–/– |
-| 7 | FORBIDDEN COLOURS | 13 | KIERAN SHOEMARK | 279/103/–/48 |
-| 2 | DIAMONDINTHEDARK | 21 | LUKE MORRIS | 247/–/–/– |
-| 1 | LADY MARIKO | 22 | MARCO GHIANI | 376/461/–/– |
-| 10 | FISTRAL BEACH | 22 | LEWIS EDMUNDS | 410/–/–/– |
-| 6 | MOUNTAIN OF LIGHT | 27 | DANIEL MUSCUTT | 452/491/–/621 |
-| 3 | RIBENSKA | – | DAVID PROBERT | 368/643/–/– |
+| 5 | LOPE EL FUEGO | 5,7 | EDWARD GREATREX | 414/–/–/– |
+| 1 | LADY MARIKO | 6,2 | MARCO GHIANI | 376/461/–/– |
+| 3 | RIBENSKA | 6,8 | DAVID PROBERT | 368/643/–/– |
+| 6 | MOUNTAIN OF LIGHT | 7,3 | DANIEL MUSCUTT | 452/491/–/621 |
+| 8 | SPIRIT OF JENNY | 8,4 | CLIFFORD LEE | 246/–/–/– |
+| 4 | ENOLA GREY | 9,2 | LAURA COUGHLAN | –/–/–/– |
+| 7 | FORBIDDEN COLOURS | 11 | KIERAN SHOEMARK | 279/103/–/48 |
+| 9 | MAYO COUNTY | 11 | RYAN SEXTON | –/–/–/– |
+| 2 | DIAMONDINTHEDARK | 17 | LUKE MORRIS | 247/–/–/– |
+| 10 | FISTRAL BEACH | 18 | LEWIS EDMUNDS | 410/–/–/– |
 
 ### 6. HANDICAP (CLASS 6)
 
@@ -100,19 +100,19 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | NORTH STAR KODI | 2,6 | OISIN ORR | –/–/–/– |
-| 9 | DREAM ON KENT | 5 | HOLLIE DOYLE | 319/–/–/– |
-| 10 | CURIOUS MINX | 6,9 | SEAN LEVEY | 266/279/–/– |
-| 8 | GET ON THAT BABY | 7,5 | JOANNA MASON | –/–/–/– |
-| 5 | VENTURA POWER | 9,1 | JACK CALLAN | 316/433/–/– |
-| 4 | THAI BAHT | 17 | CALLUM RODRIGUEZ | 205/274/–/– |
-| 11 | PRIDE'S QUEEN | 22 | MARCO GHIANI | 376/105/–/– |
-| 3 | QUIET SOUL | 44 | JASON HART | 492/–/–/– |
-| 12 | ADELAIDES TURN | 59 | EDWARD GREATREX | 414/851/–/– |
-| 14 | COMMANDER KEITH | 59 | WILLIAM PYLE | –/–/–/– |
-| 13 | RUM POINT | 88 | ZAK WHEATLEY | –/–/–/– |
-| 7 | BLACK GIN | 177 | LUKE MORRIS | 247/–/–/– |
-| 6 | ANGELIC MELODY | – | RYAN SEXTON | –/–/–/– |
+| 1 | NORTH STAR KODI | 3,9 | OISIN ORR | –/–/–/– |
+| 14 | COMMANDER KEITH | 5,4 | WILLIAM PYLE | –/–/–/– |
+| 11 | PRIDE'S QUEEN | 7,2 | MARCO GHIANI | 376/105/–/– |
+| 9 | DREAM ON KENT | 9,7 | HOLLIE DOYLE | 319/–/–/– |
+| 13 | RUM POINT | 10 | ZAK WHEATLEY | –/–/–/– |
+| 4 | THAI BAHT | 14 | CALLUM RODRIGUEZ | 205/274/–/– |
+| 3 | QUIET SOUL | 14 | JASON HART | 492/–/–/– |
+| 10 | CURIOUS MINX | 17 | SEAN LEVEY | 266/279/–/– |
+| 6 | ANGELIC MELODY | 23 | RYAN SEXTON | –/–/–/– |
+| 8 | GET ON THAT BABY | 26 | JOANNA MASON | –/–/–/– |
+| 5 | VENTURA POWER | 30 | JACK CALLAN | 316/433/–/– |
+| 7 | BLACK GIN | 33 | LUKE MORRIS | 247/–/–/– |
+| 12 | ADELAIDES TURN | 48 | EDWARD GREATREX | 414/851/–/– |
 
 ### 7. MAIDEN FILLIES' STAKES
 
@@ -120,17 +120,17 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 4 | ALANKA | 2,9 | OISIN ORR | –/–/–/– |
-| 1 | CELESTIAL FIRE | 4,4 | HOLLIE DOYLE | 319/284/–/– |
-| 12 | MISS CLARICE | 4,4 | CLIFFORD LEE | 246/896/–/– |
-| 2 | MOULTON QUEEN | 8,8 | JACK CALLAN | 316/541/–/– |
-| 8 | WADIMA | 8,8 | MARCO GHIANI | 376/105/–/– |
-| 10 | CLASSIC BELLINI | 8,8 | DAVID ALLAN | 317/539/–/– |
-| 3 | THRIVING MISS LACY | – | GEORGE BASS | 367/–/–/– |
-| 5 | COTAI POWER | – | LUKE MORRIS | 247/–/–/– |
-| 6 | HOYA BELLA | – | DAVID PROBERT | 368/813/–/– |
-| 9 | CANDY IS DANDY | – | DYLAN HOGAN | –/493/–/– |
-| 11 | LOVE ALWAYS | – | SEAN DYLAN BOWEN | –/307/–/– |
+| 1 | CELESTIAL FIRE | 3,2 | HOLLIE DOYLE | 319/284/–/– |
+| 2 | MOULTON QUEEN | 4,3 | JACK CALLAN | 316/541/–/– |
+| 6 | HOYA BELLA | 5,2 | DAVID PROBERT | 368/813/–/– |
+| 10 | CLASSIC BELLINI | 8,6 | DAVID ALLAN | 317/539/–/– |
+| 8 | WADIMA | 9,4 | MARCO GHIANI | 376/105/–/– |
+| 4 | ALANKA | 20 | OISIN ORR | –/–/–/– |
+| 5 | COTAI POWER | 21 | LUKE MORRIS | 247/–/–/– |
+| 12 | MISS CLARICE | 38 | JOANNA MASON | –/896/–/– |
+| 3 | THRIVING MISS LACY | 45 | GEORGE BASS | 367/–/–/– |
+| 9 | CANDY IS DANDY | 46 | DYLAN HOGAN | –/493/–/– |
+| 11 | LOVE ALWAYS | 67 | SEAN DYLAN BOWEN | –/307/–/– |
 
 ### 8. HANDICAP (CLASS 5) (DIV I)
 
@@ -138,15 +138,15 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | JELLYSTONE PARK | 3,9 | GEORGE BASS | 367/861/–/– |
-| 5 | PROJECT WALLACE | 3,9 | ZAK WHEATLEY | –/–/–/– |
-| 2 | MODERN TIMES | 7,9 | MASON PAETEL | –/813/–/– |
-| 3 | STYLE KING | 7,9 | HOLLIE DOYLE | 319/–/–/– |
-| 4 | FAIR Y ISLE | 7,9 | SEAN DYLAN BOWEN | –/–/–/– |
-| 6 | MR DREAMSELLER | 7,9 | OISIN ORR | –/–/–/– |
-| 9 | TOUGH ENOUGH | 7,9 | CAM HARDIE | –/–/–/– |
-| 7 | NORTH VIEW | – | MOLLY GUNN | –/–/–/– |
-| 8 | THAT'S RANDOM | – | LEWIS EDMUNDS | 410/855/–/– |
+| 5 | PROJECT WALLACE | 3,6 | ZAK WHEATLEY | –/–/–/– |
+| 2 | MODERN TIMES | 5,8 | MASON PAETEL | –/813/–/– |
+| 8 | THAT'S RANDOM | 6,6 | LEWIS EDMUNDS | 410/855/–/– |
+| 3 | STYLE KING | 7,6 | HOLLIE DOYLE | 319/–/–/– |
+| 1 | JELLYSTONE PARK | 8,3 | GEORGE BASS | 367/861/–/– |
+| 4 | FAIR Y ISLE | 9,4 | SEAN DYLAN BOWEN | –/–/–/– |
+| 7 | NORTH VIEW | 13 | MOLLY GUNN | –/–/–/– |
+| 6 | MR DREAMSELLER | 16 | OISIN ORR | –/–/–/– |
+| 9 | TOUGH ENOUGH | 21 | CAM HARDIE | –/–/–/– |
 
 ### 9. HANDICAP (CLASS 5) (DIV II)
 
@@ -154,12 +154,12 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | STRAIGHT AHEAD | 4,4 | TOM EAVES | 486/–/–/– |
-| 4 | CURIOUS ROVER | 4,4 | JASON HART | 492/311/–/– |
-| 5 | ORMOLULU | 4,4 | CONOR WHITELEY | –/–/–/– |
-| 6 | PRINCE OF PILLO | 4,4 | JACK GARRITTY | –/–/–/– |
-| 7 | MALDEVIOUS | 4,4 | DALE SWIFT | –/424/–/– |
-| 1 | STANLEY SPENCER | – | OISIN ORR | –/–/–/– |
-| 3 | LOGI BEAR | – | LUKE MORRIS | 247/–/–/– |
-| 8 | INFINITY BLUE | – | TOM KIELY-MARSHALL | –/–/–/– |
-| 9 | DOUBLE EAGLE | – | JOHN EGAN | –/–/–/– |
+| 7 | MALDEVIOUS | 2,4 | DALE SWIFT | –/424/–/– |
+| 3 | LOGI BEAR | 4,9 | LUKE MORRIS | 247/–/–/– |
+| 5 | ORMOLULU | 9,6 | CONOR WHITELEY | –/–/–/– |
+| 6 | PRINCE OF PILLO | 9,6 | JACK GARRITTY | –/–/–/– |
+| 8 | INFINITY BLUE | 9,6 | TOM KIELY-MARSHALL | –/–/–/– |
+| 2 | STRAIGHT AHEAD | 14 | TOM EAVES | 486/–/–/– |
+| 4 | CURIOUS ROVER | 14 | JASON HART | 492/311/–/– |
+| 1 | STANLEY SPENCER | 28 | OISIN ORR | –/–/–/– |
+| 9 | DOUBLE EAGLE | 28 | JOHN EGAN | –/–/–/– |

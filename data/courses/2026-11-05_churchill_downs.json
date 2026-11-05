@@ -1,7 +1,7 @@
 {
   "hippodrome": "CHURCHILL DOWNS",
   "type_reunion": "Plat",
-  "date_extraction": "2026-11-05T16:54:28.851497",
+  "date_extraction": "2026-11-05T18:49:58.117484",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/05112026/R6",
   "courses": [
     {
@@ -31,31 +31,9 @@
           "nb_courses": 13,
           "nb_victoires": 0,
           "nb_places": 12,
-          "cote": 13.0,
-          "cote_tendance": ""
-        },
-        {
-          "n°": "2",
-          "cheval": "FLASHY AVIATOR F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: DIALED IN et CAHOOTS (GIANT'S CAUSEWAY)",
-          "corde": "(Corde:02)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261105/CHD/1/20261105-CHD-1-2.png",
-          "propriétaire": "SPECIAL AVIATORS, LLC (ROHAN G.",
-          "entraineur": "R G CRICHTON",
-          "éleveurs": "",
-          "jockey": "T GAFFALIONE",
-          "poids": "55.5 kg",
-          "gains": "1000000",
-          "musique": "3p3p4p",
-          "valeur": "55.5",
-          "equipement(s)": "",
-          "nb_courses": 3,
-          "nb_victoires": 0,
-          "nb_places": 3,
-          "cote": 1.3,
+          "cote": 9.6,
           "cote_tendance": "",
-          "cote_reference": 1.5
+          "cote_reference": 11.0
         },
         {
           "n°": "3",
@@ -76,8 +54,9 @@
           "nb_courses": 12,
           "nb_victoires": 0,
           "nb_places": 7,
-          "cote": 6.9,
-          "cote_tendance": ""
+          "cote": 1.5,
+          "cote_tendance": "",
+          "cote_reference": 1.3
         },
         {
           "n°": "4",
@@ -98,8 +77,9 @@
           "nb_courses": 7,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 13.0,
-          "cote_tendance": ""
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0
         },
         {
           "n°": "5",
@@ -111,7 +91,7 @@
           "propriétaire": "ISMAEL BAHENA",
           "entraineur": "I BAHENA",
           "éleveurs": "",
-          "jockey": "Y L CORREA",
+          "jockey": "D GRISALES RAVE",
           "poids": "55.5 kg",
           "gains": "2375600",
           "musique": "0p0p2p6p(25)",
@@ -120,9 +100,9 @@
           "nb_courses": 9,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 27.0,
+          "cote": 18.0,
           "cote_tendance": "",
-          "cote_reference": 6.1
+          "cote_reference": 17.0
         },
         {
           "n°": "6",
@@ -143,9 +123,9 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 13.0,
+          "cote": 7.6,
           "cote_tendance": "",
-          "cote_reference": 3.0
+          "cote_reference": 19.0
         },
         {
           "n°": "7",
@@ -165,7 +145,10 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 0,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 17.0,
+          "cote_tendance": "",
+          "cote_reference": 78.0
         },
         {
           "n°": "8",
@@ -185,10 +168,15 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 0,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 15.0
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -218,7 +206,7 @@
           "nb_courses": 8,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 3.9,
+          "cote": 15.0,
           "cote_tendance": ""
         },
         {
@@ -240,7 +228,7 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 3.9,
+          "cote": 45.0,
           "cote_tendance": ""
         },
         {
@@ -261,7 +249,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 90.0,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -282,7 +272,7 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 7.9,
+          "cote": 7.2,
           "cote_tendance": "",
           "cote_reference": 4.4
         },
@@ -305,7 +295,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 3.9,
+          "cote": 15.0,
           "cote_tendance": "",
           "cote_reference": 2.2
         },
@@ -328,7 +318,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 3.9,
+          "cote": 15.0,
           "cote_tendance": "",
           "cote_reference": 2.2
         },
@@ -350,7 +340,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 90.0,
+          "cote_tendance": ""
         },
         {
           "n°": "10",
@@ -370,7 +362,9 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 1.5,
+          "cote_tendance": ""
         },
         {
           "n°": "11",
@@ -390,10 +384,14 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 9.0,
+          "cote_tendance": ""
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -423,7 +421,7 @@
           "nb_courses": 4,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 8.5,
+          "cote": 7.8,
           "cote_tendance": ""
         },
         {
@@ -445,7 +443,7 @@
           "nb_courses": 7,
           "nb_victoires": 1,
           "nb_places": 5,
-          "cote": 2.6,
+          "cote": 4.5,
           "cote_tendance": "",
           "cote_reference": 2.2
         },
@@ -488,7 +486,7 @@
           "nb_courses": 3,
           "nb_victoires": 1,
           "nb_places": 1,
-          "cote": 8.5,
+          "cote": 23.0,
           "cote_tendance": ""
         },
         {
@@ -510,7 +508,7 @@
           "nb_courses": 2,
           "nb_victoires": 1,
           "nb_places": 1,
-          "cote": 8.5,
+          "cote": 2.1,
           "cote_tendance": "",
           "cote_reference": 2.2
         },
@@ -532,7 +530,9 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 23.0,
+          "cote_tendance": ""
         },
         {
           "n°": "8",
@@ -553,12 +553,14 @@
           "nb_courses": 1,
           "nb_victoires": 1,
           "nb_places": 0,
-          "cote": 2.4,
+          "cote": 4.2,
           "cote_tendance": "",
           "cote_reference": 4.4
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -588,7 +590,7 @@
           "nb_courses": 10,
           "nb_victoires": 4,
           "nb_places": 4,
-          "cote": 3.9,
+          "cote": 4.1,
           "cote_tendance": ""
         },
         {
@@ -601,7 +603,7 @@
           "propriétaire": "SHADYBROOK FARM, INC. (MICHAEL Y",
           "entraineur": "M YATES",
           "éleveurs": "",
-          "jockey": "M A VASQUEZ",
+          "jockey": "J ALVARADO",
           "poids": "53.5 kg",
           "gains": "22738200",
           "musique": "1p1p1p6p(25)",
@@ -621,7 +623,7 @@
           "propriétaire": "REDEEMER RACING (STEPHEN HORN)",
           "entraineur": "W WALDEN",
           "éleveurs": "",
-          "jockey": "A CONCEPCION",
+          "jockey": "T GAFFALIONE",
           "poids": "52 kg",
           "gains": "21905600",
           "musique": "1p7p2p2p(25)",
@@ -630,7 +632,7 @@
           "nb_courses": 6,
           "nb_victoires": 2,
           "nb_places": 3,
-          "cote": 7.9,
+          "cote": 5.5,
           "cote_tendance": "",
           "cote_reference": 2.6
         },
@@ -653,7 +655,7 @@
           "nb_courses": 6,
           "nb_victoires": 2,
           "nb_places": 2,
-          "cote": 3.9,
+          "cote": 4.1,
           "cote_tendance": "",
           "cote_reference": 1.3
         },
@@ -676,7 +678,7 @@
           "nb_courses": 10,
           "nb_victoires": 2,
           "nb_places": 7,
-          "cote": 1.9,
+          "cote": 2.0,
           "cote_tendance": ""
         },
         {
@@ -701,6 +703,8 @@
         }
       ],
       "typePiste": "HERBE",
+      "terrain": "Léger",
+      "penetrometre": "2,3",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -729,7 +733,9 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 1,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 10.0,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -750,7 +756,7 @@
           "nb_courses": 3,
           "nb_victoires": 2,
           "nb_places": 0,
-          "cote": 3.1,
+          "cote": 4.7,
           "cote_tendance": ""
         },
         {
@@ -771,7 +777,9 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 1,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 5.1,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -812,7 +820,7 @@
           "nb_courses": 16,
           "nb_victoires": 1,
           "nb_places": 12,
-          "cote": 4.5,
+          "cote": 4.1,
           "cote_tendance": "",
           "cote_reference": 3.2
         },
@@ -835,7 +843,7 @@
           "nb_courses": 15,
           "nb_victoires": 3,
           "nb_places": 4,
-          "cote": 6.7,
+          "cote": 10.0,
           "cote_tendance": "",
           "cote_reference": 4.8
         },
@@ -849,7 +857,7 @@
           "propriétaire": "KATIERICH STABLES, LLC (LAWRENCE",
           "entraineur": "D LEITCH",
           "éleveurs": "",
-          "jockey": "B J HERNANDEZ, JR.",
+          "jockey": "J ALVARADO",
           "poids": "53.5 kg",
           "gains": "6062000",
           "musique": "(25)6p3p1p",
@@ -858,7 +866,7 @@
           "nb_courses": 3,
           "nb_victoires": 1,
           "nb_places": 1,
-          "cote": 2.2,
+          "cote": 3.4,
           "cote_tendance": "",
           "cote_reference": 1.6
         },
@@ -884,6 +892,8 @@
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -912,7 +922,9 @@
           "equipement(s)": "",
           "nb_courses": 25,
           "nb_victoires": 3,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 6.1,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -932,7 +944,9 @@
           "equipement(s)": "",
           "nb_courses": 16,
           "nb_victoires": 2,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 6.1,
+          "cote_tendance": ""
         },
         {
           "n°": "3",
@@ -1012,7 +1026,9 @@
           "equipement(s)": "",
           "nb_courses": 48,
           "nb_victoires": 14,
-          "nb_places": 17
+          "nb_places": 17,
+          "cote": 12.0,
+          "cote_tendance": ""
         },
         {
           "n°": "8",
@@ -1052,7 +1068,9 @@
           "equipement(s)": "",
           "nb_courses": 21,
           "nb_victoires": 4,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 6.1,
+          "cote_tendance": ""
         },
         {
           "n°": "10",
@@ -1072,7 +1090,9 @@
           "equipement(s)": "",
           "nb_courses": 24,
           "nb_victoires": 3,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 6.1,
+          "cote_tendance": ""
         },
         {
           "n°": "11",
@@ -1112,10 +1132,14 @@
           "equipement(s)": "",
           "nb_courses": 31,
           "nb_victoires": 7,
-          "nb_places": 16
+          "nb_places": 16,
+          "cote": 2.4,
+          "cote_tendance": ""
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1144,7 +1168,9 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 13.0,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -1165,7 +1191,7 @@
           "nb_courses": 8,
           "nb_victoires": 1,
           "nb_places": 5,
-          "cote": 1.4,
+          "cote": 2.2,
           "cote_tendance": ""
         },
         {
@@ -1218,7 +1244,7 @@
           "propriétaire": "BEANIE AND JUBI, LLC (JULIAN HIL",
           "entraineur": "A M STALL, JR.",
           "éleveurs": "",
-          "jockey": "B J HERNANDEZ, JR.",
+          "jockey": "B CURTIS",
           "poids": "54.5 kg",
           "gains": "5108000",
           "musique": "6p6p6p(25)3p",
@@ -1227,7 +1253,7 @@
           "nb_courses": 7,
           "nb_victoires": 1,
           "nb_places": 2,
-          "cote": 6.4,
+          "cote": 27.0,
           "cote_tendance": "",
           "cote_reference": 2.6
         },
@@ -1249,7 +1275,9 @@
           "equipement(s)": "",
           "nb_courses": 11,
           "nb_victoires": 1,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 13.0,
+          "cote_tendance": ""
         },
         {
           "n°": "7",
@@ -1269,7 +1297,9 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 1,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 13.0,
+          "cote_tendance": ""
         },
         {
           "n°": "8",
@@ -1329,7 +1359,9 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 1,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 2.7,
+          "cote_tendance": ""
         },
         {
           "n°": "11",
@@ -1350,12 +1382,14 @@
           "nb_courses": 7,
           "nb_victoires": 1,
           "nb_places": 2,
-          "cote": 3.2,
+          "cote": 13.0,
           "cote_tendance": "",
           "cote_reference": 1.3
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1424,7 +1458,9 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 1.5,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -1464,7 +1500,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.9,
+          "cote_tendance": ""
         },
         {
           "n°": "7",
@@ -1484,7 +1522,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.9,
+          "cote_tendance": ""
         },
         {
           "n°": "9",
@@ -1524,27 +1564,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
-          "n°": "11",
-          "cheval": "ARIA THUNDER F.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MUNNINGS et THUNDER SONATA (MENDELSSOHN)",
-          "corde": "(Corde:11)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261105/CHD/8/20261105-CHD-8-11.png",
-          "propriétaire": "TIM HOESE",
-          "entraineur": "N G GOODWIN",
-          "éleveurs": "",
-          "jockey": "RESERVISTE 1",
-          "poids": "54 kg",
-          "gains": "98000",
-          "musique": "7p0p",
-          "valeur": "54.0",
-          "equipement(s)": "",
-          "nb_courses": 2,
-          "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.9,
+          "cote_tendance": ""
         },
         {
           "n°": "12",
@@ -1556,7 +1578,7 @@
           "propriétaire": "SPENDTHRIFT FARM, LLC (TAMMY AND",
           "entraineur": "A M STALL, JR.",
           "éleveurs": "",
-          "jockey": "RESERVISTE 2",
+          "jockey": "F PRAT",
           "poids": "54 kg",
           "gains": "115000",
           "musique": "8p",
@@ -1565,89 +1587,11 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 0
-        },
-        {
-          "n°": "13",
-          "cheval": "AVALON BEACH F.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: OMAHA BEACH et CHELSEA ROAD (SPEIGHTSTOWN)",
-          "corde": "(Corde:13)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261105/CHD/8/20261105-CHD-8-13.png",
-          "propriétaire": "THREE DIAMONDS FARM (KIRK WYCOFF",
-          "entraineur": "M J MAKER",
-          "éleveurs": "",
-          "jockey": "RESERVISTE 3",
-          "poids": "54 kg",
-          "gains": "1175000",
-          "musique": "4p4p",
-          "valeur": "54.0",
-          "equipement(s)": "",
-          "nb_courses": 2,
-          "nb_victoires": 0,
-          "nb_places": 2
-        },
-        {
-          "n°": "14",
-          "cheval": "DISCHARGED F.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: OMAHA BEACH et JAZZ LADY (MIZZEN MAST)",
-          "corde": "(Corde:14)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261105/CHD/8/20261105-CHD-8-14.png",
-          "propriétaire": "REDDAM RACING, LLC (J. PAUL REDD",
-          "entraineur": "D F O'NEILL",
-          "éleveurs": "",
-          "jockey": "RESERVISTE 4",
-          "poids": "54 kg",
-          "gains": "",
-          "musique": "",
-          "valeur": "54.0",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
-          "n°": "15",
-          "cheval": "R LAST LAUGH F.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: PRACTICAL JOKE et MEDEA (DANEHILL DANCER)",
-          "corde": "(Corde:15)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261105/CHD/8/20261105-CHD-8-15.png",
-          "propriétaire": "AVERILL RACING, LLC (RICHARD N.",
-          "entraineur": "B P WALSH",
-          "éleveurs": "",
-          "jockey": "RESERVISTE 5",
-          "poids": "54 kg",
-          "gains": "2025000",
-          "musique": "4p3p",
-          "valeur": "54.0",
-          "equipement(s)": "",
-          "nb_courses": 2,
-          "nb_victoires": 0,
-          "nb_places": 2
-        },
-        {
-          "n°": "16",
-          "cheval": "CHARIANNA F.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: CENTRAL BANKER et SHELLEY ANN (WARRIOR'S REWARD)",
-          "corde": "(Corde:16)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261105/CHD/8/20261105-CHD-8-16.png",
-          "propriétaire": "PHILIP S. BIRSH",
-          "entraineur": "W L MACKEY",
-          "éleveurs": "",
-          "jockey": "RESERVISTE 6",
-          "poids": "54 kg",
-          "gains": "",
-          "musique": "",
-          "valeur": "54.0",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
         }
       ],
       "typePiste": "HERBE",
+      "terrain": "Léger",
+      "penetrometre": "2,3",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1677,26 +1621,6 @@
           "nb_courses": 1,
           "nb_victoires": 1,
           "nb_places": 0
-        },
-        {
-          "n°": "2",
-          "cheval": "CHARLIE FOXTROT H.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: ARMY MULE et MADAGASCAT (TALE OF THE CAT)",
-          "corde": "(Corde:02)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261105/CHD/9/20261105-CHD-9-2.png",
-          "propriétaire": "R. TOWNSEND SPARKS",
-          "entraineur": "R HILES",
-          "éleveurs": "",
-          "jockey": "M GUTIERREZ",
-          "poids": "55 kg",
-          "gains": "10056800",
-          "musique": "1p1p5p(25)6p",
-          "valeur": "55.0",
-          "equipement(s)": "",
-          "nb_courses": 9,
-          "nb_victoires": 3,
-          "nb_places": 4
         },
         {
           "n°": "4",
@@ -1868,7 +1792,7 @@
           "propriétaire": "AARON KENNEDY, ROUSTABOUT RACING",
           "entraineur": "D L ANDERSON",
           "éleveurs": "",
-          "jockey": "RESERVISTE 1",
+          "jockey": "F ARRIETA",
           "poids": "55 kg",
           "gains": "12033200",
           "musique": "7p5p5p9p3p",
@@ -1888,7 +1812,7 @@
           "propriétaire": "PHS RACING, LLC (PAUL SAYLOR AND",
           "entraineur": "M W MCCARTHY",
           "éleveurs": "",
-          "jockey": "RESERVISTE 4",
+          "jockey": "Y ORTIZ, JR.",
           "poids": "50.5 kg",
           "gains": "16601000",
           "musique": "1p3p(25)1p2p",
@@ -1900,6 +1824,8 @@
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1920,7 +1846,7 @@
           "propriétaire": "JOEL POLITI",
           "entraineur": "K LAROSE",
           "éleveurs": "",
-          "jockey": "B J HERNANDEZ, JR.",
+          "jockey": "A CONCEPCION",
           "poids": "54 kg",
           "gains": "4953800",
           "musique": "3p6p3p2p",
@@ -1929,7 +1855,7 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 10.0,
+          "cote": 8.8,
           "cote_tendance": "",
           "cote_reference": 6.1
         },
@@ -1952,7 +1878,7 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 4.9,
+          "cote": 8.1,
           "cote_tendance": ""
         },
         {
@@ -1993,7 +1919,9 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.5,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -2014,7 +1942,7 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 21.0,
+          "cote": 7.1,
           "cote_tendance": "",
           "cote_reference": 12.0
         },
@@ -2037,7 +1965,7 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 7.1,
+          "cote": 11.0,
           "cote_tendance": "",
           "cote_reference": 12.0
         },
@@ -2100,7 +2028,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 10.0,
+          "cote": 17.0,
           "cote_tendance": "",
           "cote_reference": 6.1
         },
@@ -2123,7 +2051,7 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 5.3,
+          "cote": 8.8,
           "cote_tendance": "",
           "cote_reference": 6.1
         },
@@ -2146,7 +2074,7 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 2.6,
+          "cote": 4.4,
           "cote_tendance": "",
           "cote_reference": 2.0
         },
@@ -2172,6 +2100,8 @@
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     }
   ]
