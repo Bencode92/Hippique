@@ -2,7 +2,9 @@
 
 8 courses.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+**Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
+La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
+Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classements ci-dessus.
 
 ---
 
@@ -93,24 +95,24 @@
 
 ### 6. PRIX DE L'ABBAYE DE LA VICTOIRE
 
-*16h22 · plat · 1600 m · 14 partants · cotes de l'extraction*
+*16h22 · plat · 1600 m · 14 partants · cotes à T−25:02*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | CHARMING CECILIA | – | A.MOLINS | 34/108/888/1560 |
-| 2 | YOHIO | – | F.LEFEBVRE | 41/26/79/780 |
-| 3 | PROTAGONIST | – | PC.BOUDOT 3e | 8/46/3761/53 |
-| 4 | GRECIAN CONQUEST | – | T.BACHELOT | 16/17/127/3376 |
-| 5 | ZEUDI | – | M.GUYON 5e | 4/59/175/669 |
-| 6 | KAPKAN | – | L.BAILS | 77/201/480/1745 |
-| 7 | GARIGA | – | F.VALLE SKAR | 35/87/84/1975 |
-| 8 | RUN VICTORIA | – | L.ROUSSEL | 26/73/91/191 |
-| 9 | TERRA PROXIMA | – | S.PASQUIER | 23/622/170/2487 |
-| 10 | LA TRAVERSETTE | – | A.HAMELIN | 22/48/1448/880 |
-| 11 | MARYCHA | – | D.SANTIAGO | 15/119/100/2462 |
-| 12 | LANDED | – | C.LECOEUVRE | 13/87/335/2695 |
-| 13 | SAINT LAURENT | – | T.PICCONE | 9/112/4/278 |
-| 14 | GRANDALA | – | A.MADAMET | 10/21/360/122 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 3 | PROTAGONIST | 4,5 | 4,80 | -6,2 % | PC.BOUDOT 3e | 8/46/3761/53 |
+| 4 | GRECIAN CONQUEST | 4,9 | 5,33 | -8,1 % | T.BACHELOT | 16/17/127/3376 |
+| 1 | CHARMING CECILIA | 6,3 | 7,08 | -11,0 % | A.MOLINS | 34/108/888/1560 |
+| 6 | KAPKAN | 6,7 | 8,10 | -17,3 % | L.BAILS | 77/201/480/1745 |
+| 5 | ZEUDI | 8,2 | 9,60 | -14,6 % | M.GUYON 5e | 4/59/175/669 |
+| 13 | SAINT LAURENT | 16 | 21,04 | -24,0 % | T.PICCONE | 9/112/4/278 |
+| 12 | LANDED | 20 | 24,88 | -19,6 % | C.LECOEUVRE | 13/87/335/2695 |
+| 11 | MARYCHA | 25 | 37,90 | -34,0 % | D.SANTIAGO | 15/119/100/2462 |
+| 14 | GRANDALA | 28 | 40,14 | -30,3 % | A.MADAMET | 10/21/360/122 |
+| 7 | GARIGA | 35 | 51,63 | -32,2 % | F.VALLE SKAR | 35/87/84/1975 |
+| 2 | YOHIO | 46 | 63,55 | -27,6 % | F.LEFEBVRE | 41/26/79/780 |
+| 9 | TERRA PROXIMA | 48 | 73,18 | -34,4 % | S.PASQUIER | 23/622/170/2487 |
+| 8 | RUN VICTORIA | 58 | 96,59 | -40,0 % | L.ROUSSEL | 26/73/91/191 |
+| 10 | LA TRAVERSETTE | 99 | 157,00 | -36,9 % | A.HAMELIN | 22/48/1448/880 |
 
 ### 7. PRIX DU DOMAINE DE VALGENCEUSE
 
