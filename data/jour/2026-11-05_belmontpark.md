@@ -1,8 +1,8 @@
 # BELMONT PARK — 05/11/2026
 
-8 courses.
+8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -12,13 +12,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | ACIDENTLYONPRPSE | – | L R RIVERA, JR. | –/–/–/3906 |
-| 2 | GHOST BUSTA | – | K DAVIS | –/–/–/– |
-| 3 | B MY LADY | – | S MARIN | –/–/–/– |
-| 4 | SO ANGELINA | – | D A RIVERA | –/–/–/– |
-| 5 | CARA'S CHROME | – | D DAVIS | –/–/–/– |
-| 6 | BOXAJOE N TOOTZROL | – | E J ZAYAS | –/–/–/– |
-| 7 | MIAMI BEACH | – | P PENA | –/–/–/– |
+| 3 | B MY LADY | 2,1 | S MARIN | –/–/–/– |
+| 2 | GHOST BUSTA | 6 | K DAVIS | –/–/–/– |
+| 5 | CARA'S CHROME | 7,6 | D DAVIS | –/–/–/– |
+| 4 | SO ANGELINA | 9,5 | D A RIVERA | –/–/–/– |
+| 6 | BOXAJOE N TOOTZROL | 9,5 | E J ZAYAS | –/–/–/– |
+| 7 | MIAMI BEACH | 9,5 | P PENA | –/–/–/– |
+| 1 | ACIDENTLYONPRPSE | 19 | L R RIVERA, JR. | –/–/–/3906 |
 
 ### 2. MAIDEN SPECIAL WEIGHT 1600
 
@@ -26,12 +26,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 3 | SKY CHART | 1,1 | J R VELAZQUEZ |
+| 2 | FANGO CREEK | 13 | J LEZCANO |
+| 4 | MANANA ISLAND | 14 | A FRESU |
+| 6 | GLOBAL INVESTMENT | 14 | S MARIN |
+| 5 | BLACK MOUNTAIN | 19 | D DAVIS |
 | 1 | MISS SNAFFLES | – | J A GOMEZ |
-| 2 | FANGO CREEK | – | J LEZCANO |
-| 3 | SKY CHART | – | J R VELAZQUEZ |
-| 4 | MANANA ISLAND | – | A FRESU |
-| 5 | BLACK MOUNTAIN | – | D DAVIS |
-| 6 | GLOBAL INVESTMENT | – | S MARIN |
 
 ### 3. CLAIMING 1200
 
@@ -39,12 +39,12 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | AZIZAM | – | J CASTELLANO | –/–/–/– |
-| 2 | FROSTELLE | – | J LEZCANO | –/–/–/– |
+| 2 | FROSTELLE | 2 | J LEZCANO | –/–/–/– |
+| 1 | AZIZAM | 3 | J CASTELLANO | –/–/–/– |
+| 6 | THE MARKINATER | 4,5 | D HADDOCK | –/–/–/– |
+| 5 | EXTRAORDINARY ONE | 9,1 | K DAVIS | –/–/–/1564 |
 | 3 | SHANGRALA ROAD | – | D A RIVERA | –/–/–/– |
 | 4 | LIFE IS GRAVY | – | L R RIVERA, JR. | –/–/–/– |
-| 5 | EXTRAORDINARY ONE | – | K DAVIS | –/–/–/1564 |
-| 6 | THE MARKINATER | – | D HADDOCK | –/–/–/– |
 | 7 | NAVY CHIEF | – | S MARIN | –/–/–/– |
 | 8 | LORD CHATHAM | – | E J ZAYAS | –/–/–/– |
 
@@ -54,13 +54,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | LOUGH CURRANE | – | S MARIN |
-| 2 | OURS TO START | – | E J ZAYAS |
+| 7 | SUMMER OF GEORGE | 3,1 | J INFANTE |
+| 2 | OURS TO START | 4,3 | E J ZAYAS |
+| 1 | LOUGH CURRANE | 4,7 | S MARIN |
+| 5 | ACE IN HAND | 6,2 | C ELLIOTT |
+| 4 | BOURBON HANGOVER | 9,4 | L R RIVERA, JR. |
+| 6 | CRUISIN CROSSBAY | 9,4 | K CARMOUCHE |
 | 3 | ENDERNITE | – | J A GOMEZ |
-| 4 | BOURBON HANGOVER | – | L R RIVERA, JR. |
-| 5 | ACE IN HAND | – | C ELLIOTT |
-| 6 | CRUISIN CROSSBAY | – | K CARMOUCHE |
-| 7 | SUMMER OF GEORGE | – | J INFANTE |
 
 ### 5. MAIDEN OPTIONAL CLAIMING 1600
 
@@ -68,13 +68,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 2 | PROPER JACK | 1,9 | J CASTELLANO | –/–/–/– |
+| 4 | MY MAN MAX | 3,6 | S MARIN | –/–/–/– |
+| 6 | THE WRATH OF DAVID | 7,2 | K CARMOUCHE | –/–/–/– |
+| 7 | HETCH HETCHY | 7,2 | A FRESU | –/–/–/720 |
+| 5 | IRON CONFESSOR | 14 | J R VELAZQUEZ | –/–/–/– |
 | 1 | TICKET TO FAME | – | E J ZAYAS | –/–/–/– |
-| 2 | PROPER JACK | – | J CASTELLANO | –/–/–/– |
 | 3 | SUMMER BROTHER | – | C ELLIOTT | –/–/–/– |
-| 4 | MY MAN MAX | – | S MARIN | –/–/–/– |
-| 5 | IRON CONFESSOR | – | J R VELAZQUEZ | –/–/–/– |
-| 6 | THE WRATH OF DAVID | – | K CARMOUCHE | –/–/–/– |
-| 7 | HETCH HETCHY | – | A FRESU | –/–/–/720 |
 | 8 | BARTOLITO | – | P PENA | –/–/–/– |
 | 9 | RIDDLE ME THIS | – | D DAVIS | –/–/–/– |
 
@@ -84,12 +84,12 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 2 | TWO EAGLES RIVER | 2,8 | C ELLIOTT | –/–/–/– |
+| 6 | AWESOME NATIVE | 3,5 | J CASTELLANO | –/–/–/– |
+| 3 | ELIMINATE | 4,4 | K CARMOUCHE | –/–/–/– |
+| 5 | LUNAR MODULE | 5,9 | J LEZCANO | –/–/–/– |
+| 4 | GENERAL PARTNER | 8,9 | S MARIN | –/–/–/– |
 | 1 | AMBERJACK | – | E J ZAYAS | –/–/–/1224 |
-| 2 | TWO EAGLES RIVER | – | C ELLIOTT | –/–/–/– |
-| 3 | ELIMINATE | – | K CARMOUCHE | –/–/–/– |
-| 4 | GENERAL PARTNER | – | S MARIN | –/–/–/– |
-| 5 | LUNAR MODULE | – | J LEZCANO | –/–/–/– |
-| 6 | AWESOME NATIVE | – | J CASTELLANO | –/–/–/– |
 
 ### 7. CLAIMING 1800
 
@@ -97,14 +97,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 2 | CLEAR CONSCIENCE | 2 | E J ZAYAS |
+| 6 | CLASSIC CREATION | 2,2 | A FRESU |
+| 5 | LIFE AND LIGHT | 9,1 | P PENA |
+| 8 | ICE CHOCOLAT | 9,1 | J CASTELLANO |
 | 1 | POLAR BEAR PLUNGE | – | H K HARKIE |
-| 2 | CLEAR CONSCIENCE | – | E J ZAYAS |
 | 3 | LATE CALL | – | L R RIVERA, JR. |
 | 4 | AMERICAN GRANT | – | D DAVIS |
-| 5 | LIFE AND LIGHT | – | P PENA |
-| 6 | CLASSIC CREATION | – | A FRESU |
 | 7 | RELAMPAGO VERDE | – | S MARIN |
-| 8 | ICE CHOCOLAT | – | J CASTELLANO |
 | 9 | BELOUNI | – | K CARMOUCHE |
 
 ### 8. STARTER OPTIONAL CLAIMING 1700
@@ -113,11 +113,11 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | CALL ME PRECIOUS | – | J R VELAZQUEZ |
-| 2 | DETERMIND PRINCESS | – | J CASTELLANO |
+| 1 | CALL ME PRECIOUS | 1,5 | J R VELAZQUEZ |
+| 2 | DETERMIND PRINCESS | 2,3 | J CASTELLANO |
+| 5 | ARTISTIC SUCCESS | 12 | L R RIVERA, JR. |
 | 3 | GRISELDA | – | E J ZAYAS |
 | 4 | SPINNING CLASS | – | J LEZCANO |
-| 5 | ARTISTIC SUCCESS | – | L R RIVERA, JR. |
 | 6 | HIDDEN PRESENCE | – | C ELLIOTT |
 | 7 | SWEET DUTCHESS | – | K CARMOUCHE |
 | 8 | BERTRILLE | – | R MARAGH |

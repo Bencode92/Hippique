@@ -1,8 +1,8 @@
 # CHURCHILL DOWNS — 05/11/2026
 
-10 courses.
+10 courses (7 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -12,12 +12,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 2 | FLASHY AVIATOR | 1,1 | T GAFFALIONE |
+| 3 | GIVEMETHEBEAT | 10 | J L ORTIZ |
+| 6 | MARKET STRATEGY | 10 | J A TORRES |
+| 5 | MURIEL SAX | 20 | Y L CORREA |
 | 1 | FLAMING MAMA | – | L SAEZ |
-| 2 | FLASHY AVIATOR | – | T GAFFALIONE |
-| 3 | GIVEMETHEBEAT | – | J L ORTIZ |
 | 4 | BUCKEYE FAVORITE | – | C JIMENEZ |
-| 5 | MURIEL SAX | – | Y L CORREA |
-| 6 | MARKET STRATEGY | – | J A TORRES |
 | 7 | DIAMOND TIARA | – | M FERNANDEZ |
 | 8 | SUPER PACHI | – | J MEZA |
 
@@ -27,14 +27,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 2 | CITY OF ROME | 1,5 | J L ORTIZ |
+| 7 | MISSION ACHIEVED | 5 | T GAFFALIONE |
+| 8 | SLEEPER | 5 | R BEJARANO |
+| 5 | COUGAR MAGNET | 10 | M FERNANDEZ |
 | 1 | JOE JOE DUDE | – | Y ORTIZ, JR. |
-| 2 | CITY OF ROME | – | J L ORTIZ |
 | 3 | MARTONE | – | L SAEZ |
 | 4 | UNKNOWN MISCHIEF | – | W A RODRIGUEZ |
-| 5 | COUGAR MAGNET | – | M FERNANDEZ |
 | 6 | CLONMACNOISE | – | D SHEEHY |
-| 7 | MISSION ACHIEVED | – | T GAFFALIONE |
-| 8 | SLEEPER | – | R BEJARANO |
 | 9 | MY PAL PIERCE | – | A BESCHIZZA |
 | 10 | FARROKH | – | F ARRIETA |
 | 11 | COLDSPRING | – | J A TORRES |
@@ -45,14 +45,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 2 | CARDIO CAT | 1,7 | J L ORTIZ |
+| 8 | SMOTED | 3,6 | F PRAT |
+| 6 | ANNA BO BANNA | 5,4 | E ESQUIVEL |
+| 5 | CIARLATANO | 10 | C A EMIGH |
 | 1 | SPEECH AND DRAMA | – | L SAEZ |
-| 2 | CARDIO CAT | – | J L ORTIZ |
 | 3 | SONGADEEWIN | – | D SHEEHY |
 | 4 | DONIE MARONIE | – | F GEROUX |
-| 5 | CIARLATANO | – | C A EMIGH |
-| 6 | ANNA BO BANNA | – | E ESQUIVEL |
 | 7 | DREAM WAVE | – | K J ASMUSSEN |
-| 8 | SMOTED | – | F PRAT |
 
 ### 4. ALLOWANCE 1100
 
@@ -60,15 +60,15 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 3 | OUTFIELDER | 1,5 | T GAFFALIONE | –/478/–/1224 |
+| 2 | DICIASSETTE | 4,3 | K J ASMUSSEN | –/–/–/– |
+| 6 | SCHWARZENEGGER | 9,4 | F GEROUX | –/478/–/– |
+| 9 | BOBROVSKY | 9,4 | J ALVARADO | –/–/–/– |
+| 5 | BEACH HEIST | 18 | A CONCEPCION | –/–/–/– |
 | 1 | TROUBLE CALLING | – | L SAEZ | –/–/–/– |
-| 2 | DICIASSETTE | – | K J ASMUSSEN | –/–/–/– |
-| 3 | OUTFIELDER | – | T GAFFALIONE | –/478/–/1224 |
 | 4 | FOURTH AND CENTRAL | – | M A VASQUEZ | –/–/–/– |
-| 5 | BEACH HEIST | – | A CONCEPCION | –/–/–/– |
-| 6 | SCHWARZENEGGER | – | F GEROUX | –/478/–/– |
 | 7 | THROCKMORTON | – | J L ORTIZ | –/–/–/– |
 | 8 | STREET BEAST | – | L MACHADO | –/–/–/– |
-| 9 | BOBROVSKY | – | J ALVARADO | –/–/–/– |
 
 ### 5. STARTER ALLOWANC 1400
 
@@ -76,13 +76,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 7 | BIG APPLE PATRICK | 2,2 | B J HERNANDEZ, JR. |
+| 2 | HILLBILLY DAYDREAM | 3,1 | W ANTONGEORGI III |
+| 5 | GOOD MOJO | 4,5 | T GAFFALIONE |
+| 6 | SKYNET | 6,7 | A CEDILLO |
 | 1 | JOIN | – | L SAEZ |
-| 2 | HILLBILLY DAYDREAM | – | W ANTONGEORGI III |
 | 3 | GHOSTWRITTEN | – | J L ORTIZ |
 | 4 | MERITED | – | J LOVEBERRY |
-| 5 | GOOD MOJO | – | T GAFFALIONE |
-| 6 | SKYNET | – | A CEDILLO |
-| 7 | BIG APPLE PATRICK | – | B J HERNANDEZ, JR. |
 | 8 | WHITE CARGO | – | S PAULY |
 
 ### 6. CLAIMING 1700
@@ -112,17 +112,17 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 2 | EIGHT SEVEN MAGIC | 1,4 | K J ASMUSSEN |
+| 11 | ROCHESTER | 3,2 | R BEJARANO |
+| 5 | DAIQUIRI SOMMELIER | 6,4 | B J HERNANDEZ, JR. |
 | 1 | BOONESBORO | – | A BESCHIZZA |
-| 2 | EIGHT SEVEN MAGIC | – | K J ASMUSSEN |
 | 3 | HONORABLEDISCHARGE | – | J A TORRES |
 | 4 | ROMANTIC LEAD | – | D GRISALES RAVE |
-| 5 | DAIQUIRI SOMMELIER | – | B J HERNANDEZ, JR. |
 | 6 | GRAY IS OKAY | – | F ARRIETA |
 | 7 | LINE OF REASON | – | D SHEEHY |
 | 8 | WILD RECRUIT | – | T GAFFALIONE |
 | 9 | FAST JOKER | – | C A TORRES |
 | 10 | DEWY'S DENALI | – | S PAULY |
-| 11 | ROCHESTER | – | R BEJARANO |
 
 ### 8. MAIDEN SPECIAL WEIGHT 1000
 
@@ -176,15 +176,15 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | ENERGY FLOWS | – | B J HERNANDEZ, JR. | –/–/–/– |
-| 2 | STARS IN MY EYES | – | J L ORTIZ | –/–/–/– |
+| 11 | PEONY PARK | 2,4 | T GAFFALIONE | –/–/–/– |
+| 2 | STARS IN MY EYES | 4,5 | J L ORTIZ | –/–/–/– |
+| 6 | CLEVER MISS | 6,5 | F PRAT | –/–/–/– |
+| 1 | ENERGY FLOWS | 9,8 | B J HERNANDEZ, JR. | –/–/–/– |
+| 9 | NAGANO | 9,8 | L MACHADO | –/–/–/– |
+| 10 | JOY OF LIFE | 9,8 | J ALVARADO | –/–/–/46 |
+| 5 | PEARL LAKE | 19 | F ARRIETA | –/–/–/– |
 | 3 | MISS MCCLOUD | – | J GRAHAM | –/–/–/– |
 | 4 | MAYBE IT'S DESTINY | – | E MORALES | –/–/–/– |
-| 5 | PEARL LAKE | – | F ARRIETA | –/–/–/– |
-| 6 | CLEVER MISS | – | F PRAT | –/–/–/– |
 | 7 | E TEE AYE | – | R BEJARANO | –/–/–/– |
 | 8 | UPPITY | – | L SAEZ | –/–/–/– |
-| 9 | NAGANO | – | L MACHADO | –/–/–/– |
-| 10 | JOY OF LIFE | – | J ALVARADO | –/–/–/46 |
-| 11 | PEONY PARK | – | T GAFFALIONE | –/–/–/– |
 | 12 | BARBEY POURTALES | – | E ESQUIVEL | –/–/–/– |
