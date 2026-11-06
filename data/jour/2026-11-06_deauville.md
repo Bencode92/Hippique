@@ -10,19 +10,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 1. PRIX DE LA BANCHE
 
-*16h10 · plat · 1900 m · 9 partants · cotes à T−27:43*
+*16h10 · plat · 1900 m · 9 partants · cotes à T−23:04*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 3 | CORBUSIER | 2,3 | 2,43 | -5,5 % | M.BARZALONA 2e | 2/5/19/7 |
-| 1 | CANNCITY | 4,6 | 5,15 | -10,7 % | D.SANTIAGO | 15/39/50/1063 |
-| 5 | LENDAS | 5,3 | 6,03 | -12,1 % | H.LEBOUC | 19/43/18/3309 |
-| 7 | MINX | 10 | 12,59 | -20,6 % | C.LECOEUVRE | 13/25/2804/1117 |
-| 4 | INVICTUS GLADIATOR | 15 | 21,77 | -31,1 % | M.GUYON 3e | 4/32/10/729 |
-| 6 | IT'S ONLY LOVE | 19 | 28,72 | -33,9 % | B.MARIE | 69/242/177/1000 |
-| 2 | GATSBY GO | 21 | 30,04 | -30,1 % | A.MADAMET | 10/421/39/134 |
-| 8 | SOLEA | 37 | 57,17 | -35,3 % | J.CLAUDIC | 38/83/13/3539 |
-| 9 | MOUNELA | 51 | 87,49 | -41,7 % | C.GROSBOIS | 25/172/801/262 |
+| 3 | CORBUSIER | 2,1 | 2,25 | -6,6 % | M.BARZALONA 2e | 2/5/19/7 |
+| 1 | CANNCITY | 5,1 | 5,75 | -11,2 % | D.SANTIAGO | 15/39/50/1063 |
+| 5 | LENDAS | 5,8 | 6,64 | -12,7 % | H.LEBOUC | 19/43/18/3309 |
+| 7 | MINX | 11 | 14,01 | -21,5 % | C.LECOEUVRE | 13/25/2804/1117 |
+| 4 | INVICTUS GLADIATOR | 16 | 23,35 | -31,5 % | M.GUYON 3e | 4/32/10/729 |
+| 6 | IT'S ONLY LOVE | 18 | 26,81 | -32,9 % | B.MARIE | 69/242/177/1000 |
+| 2 | GATSBY GO | 21 | 29,87 | -29,7 % | A.MADAMET | 10/421/39/134 |
+| 8 | SOLEA | 35 | 53,44 | -34,5 % | J.CLAUDIC | 38/83/13/3539 |
+| 9 | MOUNELA | 53 | 90,73 | -41,6 % | C.GROSBOIS | 25/172/801/262 |
 
 ### 2. PRIX DE CROISSANVILLE
 

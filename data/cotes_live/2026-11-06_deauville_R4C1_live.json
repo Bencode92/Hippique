@@ -4,17 +4,17 @@
   "reunion": 4,
   "heure_depart": 1793974200000,
   "distance": 1900,
-  "scraped_at": "2026-11-06T14:42:16.954599+01:00",
-  "minutes_avant_depart": 28,
+  "scraped_at": "2026-11-06T14:46:56.070155+01:00",
+  "minutes_avant_depart": 23,
   "participants": [
     {
       "numPmu": 1,
       "nom": "CANNCITY",
-      "cote_live": 4.6,
+      "cote_live": 5.1,
       "cote_reference": 4.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793972532000
+      "timestamp_cote": 1793972796000
     },
     {
       "numPmu": 2,
@@ -23,70 +23,70 @@
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793972532000
+      "timestamp_cote": 1793972796000
     },
     {
       "numPmu": 3,
       "nom": "CORBUSIER",
-      "cote_live": 2.3,
+      "cote_live": 2.1,
       "cote_reference": 2.2,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793972532000
+      "timestamp_cote": 1793972796000
     },
     {
       "numPmu": 4,
       "nom": "INVICTUS GLADIATOR",
-      "cote_live": 15.0,
+      "cote_live": 16.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793972532000
+      "timestamp_cote": 1793972796000
     },
     {
       "numPmu": 5,
       "nom": "LENDAS",
-      "cote_live": 5.3,
+      "cote_live": 5.8,
       "cote_reference": 5.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793972532000
+      "timestamp_cote": 1793972796000
     },
     {
       "numPmu": 6,
       "nom": "IT'S ONLY LOVE",
-      "cote_live": 19.0,
+      "cote_live": 18.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793972532000
+      "timestamp_cote": 1793972796000
     },
     {
       "numPmu": 7,
       "nom": "MINX",
-      "cote_live": 10.0,
+      "cote_live": 11.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793972532000
+      "timestamp_cote": 1793972796000
     },
     {
       "numPmu": 8,
       "nom": "SOLEA",
-      "cote_live": 37.0,
+      "cote_live": 35.0,
       "cote_reference": 35.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793972532000
+      "timestamp_cote": 1793972796000
     },
     {
       "numPmu": 9,
       "nom": "MOUNELA",
-      "cote_live": 51.0,
+      "cote_live": 53.0,
       "cote_reference": 63.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793972532000
+      "timestamp_cote": 1793972796000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -104,6 +104,21 @@
         "7": 10.0,
         "8": 37.0,
         "9": 51.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-06T14:46:56.070155+01:00",
+      "minutes_avant_depart": 23.067747633333333,
+      "cotes": {
+        "1": 5.1,
+        "2": 21.0,
+        "3": 2.1,
+        "4": 16.0,
+        "5": 5.8,
+        "6": 18.0,
+        "7": 11.0,
+        "8": 35.0,
+        "9": 53.0
       }
     }
   ]
