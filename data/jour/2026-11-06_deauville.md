@@ -127,26 +127,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE BRAUDIERE
 
-*19h40 · plat · 2500 m · 16 partants · cotes à T−12:38*
+*19h40 · plat · 2500 m · 16 partants · cotes à T−5:58*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 6 | LOOK OF CECCA | 4 | 4,4 | 4,10 | -2,4 % | F.VALLE SKAR | 35/135/673/1032 |
-| 4 | MISTER POWER | 8,7 | 9,6 | 8,74 | -0,4 % | D.SANTIAGO | 15/417/407/962 |
-| 1 | SCAT LADY | 9,2 | 10 | 10,15 | -9,3 % | P.REMOUE | 37/86/1092/525 |
-| 10 | LA JAVANAISE | 10 | 9,1 | 11,63 | -14,0 % | M.VELON | 28/432/24/218 |
-| 14 | AND WE DANCED | 11 | 12 | 14,22 | -22,6 % | A.LEMAITRE | 11/443/1599/3222 |
-| 3 | INTENTION BORGET | 13 | 9,1 | 17,73 | -26,7 % | A.BARON | 39/206/280/4325 |
-| 11 | MONSIEUR GEORGE | 14 | 13 | 18,88 | -25,9 % | H.LEBOUC | 19/168/2477/3649 |
-| 13 | SUPERCLASS | 16 | 14 | 21,64 | -26,1 % | M.JUSTUM | 88/372/1158/989 |
-| 16 | CHARLES LEGEND | 17 | 25 | 23,22 | -26,8 % | M.FAVRIAUX | 51/360/878/754 |
-| 9 | BORN TO WIN | 19 | 15 | 22,53 | -15,7 % | A.MOLINS | 34/381/76/1038 |
-| 2 | BECQUANIENTE | 20 | 34 | 20,85 | -4,1 % | C.PACAUT | 48/145/551/1447 |
-| 15 | KONIG CHOUCHEN | 23 | 18 | 32,11 | -28,4 % | J.GUILLOCHON | 56/285/1945/2323 |
-| 7 | ZILCOVER | 36 | 34 | 48,53 | -25,8 % | C.GROSBOIS | 25/452/–/917 |
-| 8 | RHIPPER | 48 | 78 | 69,88 | -31,3 % | T.BREBION | 99/369/711/1075 |
-| 5 | POTTER NICOLIERE | 54 | 60 | 79,37 | -32,0 % | A.LE LAY MARTIN | 83/431/1705/986 |
-| 12 | KNIGHTOFTHEFOREST | 55 | 55 | 73,63 | -25,3 % | L.POGGIONOVO | 80/183/118/3520 |
+| 6 | LOOK OF CECCA | 4 | 4,4 | 4,04 | -1,0 % | F.VALLE SKAR | 35/135/673/1032 |
+| 1 | SCAT LADY | 7,7 | 10 | 7,48 | **+2,9 %** | P.REMOUE | 37/86/1092/525 |
+| 4 | MISTER POWER | 9 | 9,6 | 8,94 | **+0,6 %** | D.SANTIAGO | 15/417/407/962 |
+| 10 | LA JAVANAISE | 10 | 9,1 | 11,45 | -12,7 % | M.VELON | 28/432/24/218 |
+| 9 | BORN TO WIN | 13 | 15 | 14,28 | -9,0 % | A.MOLINS | 34/381/76/1038 |
+| 14 | AND WE DANCED | 13 | 12 | 16,28 | -20,1 % | A.LEMAITRE | 11/443/1599/3222 |
+| 11 | MONSIEUR GEORGE | 15 | 13 | 20,15 | -25,6 % | H.LEBOUC | 19/168/2477/3649 |
+| 13 | SUPERCLASS | 16 | 14 | 21,30 | -24,9 % | M.JUSTUM | 88/372/1158/989 |
+| 3 | INTENTION BORGET | 17 | 9,1 | 23,91 | -28,9 % | A.BARON | 39/206/280/4325 |
+| 2 | BECQUANIENTE | 19 | 34 | 19,36 | -1,8 % | C.PACAUT | 48/145/551/1447 |
+| 16 | CHARLES LEGEND | 21 | 25 | 32,04 | -34,4 % | M.FAVRIAUX | 51/360/878/754 |
+| 15 | KONIG CHOUCHEN | 28 | 18 | 39,58 | -29,3 % | J.GUILLOCHON | 56/285/1945/2323 |
+| 7 | ZILCOVER | 35 | 34 | 46,33 | -24,4 % | C.GROSBOIS | 25/452/–/917 |
+| 8 | RHIPPER | 50 | 78 | 71,97 | -30,5 % | T.BREBION | 99/369/711/1075 |
+| 5 | POTTER NICOLIERE | 56 | 60 | 81,34 | -31,2 % | A.LE LAY MARTIN | 83/431/1705/986 |
+| 12 | KNIGHTOFTHEFOREST | 68 | 55 | 90,94 | -25,2 % | L.POGGIONOVO | 80/183/118/3520 |
 
 ### 8. PRIX DU VEXIN NORMAND
 
