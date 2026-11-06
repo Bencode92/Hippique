@@ -107,23 +107,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DE BEAUFAI
 
-*19h05 · plat · 2500 m · 13 partants · cotes à T−29:42*
+*19h05 · plat · 2500 m · 13 partants · cotes à T−25:42*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | BOOGIE | 3,8 | 7 | 4,38 | -13,2 % | A.CRASTUS | 17/18/105/2613 |
-| 4 | TAMYZ | 6,3 | 6,3 | 6,92 | -8,9 % | T.BACHELOT | 16/17/17/4 |
-| 5 | HASAPIKO | 8,1 | 6,1 | 8,65 | -6,4 % | A.VILCHIEN | 93/17/39/939 |
-| 7 | SAPRISTI | 9,8 | 10 | 10,79 | -9,1 % | M.GUYON | 4/21/1015/612 |
-| 1 | GUILLERETTE | 10 | 11 | 12,55 | -20,3 % | F.VALLE SKAR | 35/90/327/66 |
-| 9 | SAMWEST | 12 | 8,1 | 13,60 | -11,8 % | M.BARZALONA 3e | 2/120/70/2834 |
-| 12 | LE GAST | 14 | 10 | 15,63 | -10,4 % | H.LEBOUC | 19/120/8/3228 |
-| 10 | STARAC | 16 | 17 | 20,83 | -23,2 % | M.GRANDIN | 3/45/517/901 |
-| 3 | MISTERWINNER | 19 | 20 | 26,66 | -28,7 % | M.VELON | 28/102/823/1470 |
-| 8 | CEDRUS | 21 | 20 | 23,88 | -12,0 % | D.PROVOST 4e | 33/112/437/278 |
-| 13 | SONNAZ | 22 | 14 | 28,79 | -23,6 % | A.LEMAITRE | 11/56/955/1346 |
-| 11 | FAVOLO | 38 | 36 | 50,94 | -25,4 % | T.TRULLIER | 21/32/1788/1973 |
-| 14 | LADY ACHILLIA | 63 | 49 | 104,31 | -39,6 % | C.BELMONT | 171/73/976/4813 |
+| 2 | BOOGIE | 4,2 | 7 | 5,02 | -16,4 % | A.CRASTUS | 17/18/105/2613 |
+| 4 | TAMYZ | 6,6 | 6,3 | 7,27 | -9,2 % | T.BACHELOT | 16/17/17/4 |
+| 5 | HASAPIKO | 7,5 | 6,1 | 7,90 | -5,0 % | A.VILCHIEN | 93/17/39/939 |
+| 7 | SAPRISTI | 9,6 | 10 | 9,64 | -0,4 % | M.GUYON | 4/21/1015/612 |
+| 1 | GUILLERETTE | 10 | 11 | 12,51 | -20,1 % | F.VALLE SKAR | 35/90/327/66 |
+| 9 | SAMWEST | 12 | 8,1 | 13,56 | -11,5 % | M.BARZALONA 3e | 2/120/70/2834 |
+| 12 | LE GAST | 14 | 10 | 15,58 | -10,1 % | H.LEBOUC | 19/120/8/3228 |
+| 10 | STARAC | 17 | 17 | 22,30 | -23,8 % | M.GRANDIN | 3/45/517/901 |
+| 3 | MISTERWINNER | 18 | 20 | 24,96 | -27,9 % | M.VELON | 28/102/823/1470 |
+| 13 | SONNAZ | 18 | 14 | 22,77 | -20,9 % | A.LEMAITRE | 11/56/955/1346 |
+| 8 | CEDRUS | 19 | 20 | 21,22 | -10,5 % | D.PROVOST 4e | 33/112/437/278 |
+| 11 | FAVOLO | 36 | 36 | 50,15 | -28,2 % | T.TRULLIER | 21/32/1788/1973 |
+| 14 | LADY ACHILLIA | 57 | 49 | 93,49 | -39,0 % | C.BELMONT | 171/73/976/4813 |
 
 ### 7. PRIX DE BRAUDIERE
 
