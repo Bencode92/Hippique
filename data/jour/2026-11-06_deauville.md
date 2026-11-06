@@ -67,11 +67,11 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | MUGHADIR | – | C.SOUMILLON 3e | 7/11/3/5 |
+| 1 | MUGHADIR | – | C.SOUMILLON 4e | 7/11/3/5 |
 | 2 | THIBERVILLE | – | D.SANTIAGO | 15/142/388/4 |
 | 3 | NO REMORSE | – | C.LECOEUVRE | 13/21/3/977 |
 | 4 | BUDOKAN | – | E.VERHESTRAETEN | 53/12/4162/2061 |
-| 5 | D'ARTAGNAN | – | M.BARZALONA 4e | 2/124/3/644 |
+| 5 | D'ARTAGNAN | – | M.BARZALONA 3e | 2/124/3/644 |
 | 6 | WINGS OF GLORY | – | B.MARIE | 69/176/3248/3096 |
 | 7 | VEGAMIX | – | M.GUYON | 4/27/1/2 |
 | 8 | COLINER | – | M.PROTTI | 30/6/–/20 |
