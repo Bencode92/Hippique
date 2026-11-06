@@ -2,25 +2,27 @@
 
 8 courses.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+**Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
+La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
+Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classements ci-dessus.
 
 ---
 
 ### 1. PRIX DE LA BANCHE
 
-*16h10 · plat · 1900 m · 9 partants · cotes de l'extraction*
+*16h10 · plat · 1900 m · 9 partants · cotes à T−27:43*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | CANNCITY | – | D.SANTIAGO | 15/39/50/1063 |
-| 2 | GATSBY GO | – | A.MADAMET | 10/421/39/134 |
-| 3 | CORBUSIER | – | M.BARZALONA 2e | 2/5/19/7 |
-| 4 | INVICTUS GLADIATOR | – | M.GUYON 3e | 4/32/10/729 |
-| 5 | LENDAS | – | H.LEBOUC | 19/43/18/3309 |
-| 6 | IT'S ONLY LOVE | – | B.MARIE | 69/242/177/1000 |
-| 7 | MINX | – | C.LECOEUVRE | 13/25/2804/1117 |
-| 8 | SOLEA | – | J.CLAUDIC | 38/83/13/3539 |
-| 9 | MOUNELA | – | C.GROSBOIS | 25/172/801/262 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 3 | CORBUSIER | 2,3 | 2,43 | -5,5 % | M.BARZALONA 2e | 2/5/19/7 |
+| 1 | CANNCITY | 4,6 | 5,15 | -10,7 % | D.SANTIAGO | 15/39/50/1063 |
+| 5 | LENDAS | 5,3 | 6,03 | -12,1 % | H.LEBOUC | 19/43/18/3309 |
+| 7 | MINX | 10 | 12,59 | -20,6 % | C.LECOEUVRE | 13/25/2804/1117 |
+| 4 | INVICTUS GLADIATOR | 15 | 21,77 | -31,1 % | M.GUYON 3e | 4/32/10/729 |
+| 6 | IT'S ONLY LOVE | 19 | 28,72 | -33,9 % | B.MARIE | 69/242/177/1000 |
+| 2 | GATSBY GO | 21 | 30,04 | -30,1 % | A.MADAMET | 10/421/39/134 |
+| 8 | SOLEA | 37 | 57,17 | -35,3 % | J.CLAUDIC | 38/83/13/3539 |
+| 9 | MOUNELA | 51 | 87,49 | -41,7 % | C.GROSBOIS | 25/172/801/262 |
 
 ### 2. PRIX DE CROISSANVILLE
 
