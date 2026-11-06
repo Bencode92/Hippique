@@ -150,13 +150,13 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DU VEXIN NORMAND
 
-*20h15 · plat · 2500 m · 6 partants · cotes à T−0:57*
+*20h15 · plat · 2500 m · 6 partants · cotes à T−0:18*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 1 | HUGO CABRET | 1,5 | 1,3 | 1,80 | -16,5 % | M.BARZALONA 3e | 2/5/49/127 |
-| 3 | SET APART | 6,2 | 12 | 6,87 | -9,7 % | A.LEMAITRE | 11/100/330/15 |
-| 2 | CUELLAR | 8,4 | 14 | 9,13 | -8,0 % | T.PICCONE | 9/45/18/103 |
-| 6 | SONNY ANGEL | 8,6 | 10 | 10,22 | -15,8 % | D.PROVOST 4e | 33/111/192/50 |
-| 4 | NOVA MOON | 22 | 9,5 | 29,27 | -24,8 % | A.MOLINS | 34/196/1841/554 |
-| 5 | MANAMA GOLD | 27 | 15 | 39,76 | -32,1 % | C.LECOEUVRE | 13/117/433/2598 |
+| 1 | HUGO CABRET | 1,4 | 1,3 | 1,75 | -20,0 % | M.BARZALONA 3e | 2/5/49/127 |
+| 3 | SET APART | 6,2 | 12 | 7,10 | -12,7 % | A.LEMAITRE | 11/100/330/15 |
+| 2 | CUELLAR | 8,6 | 14 | 9,70 | -11,4 % | T.PICCONE | 9/45/18/103 |
+| 6 | SONNY ANGEL | 9,1 | 10 | 11,30 | -19,5 % | D.PROVOST 4e | 33/111/192/50 |
+| 4 | NOVA MOON | 23 | 9,5 | 31,85 | -27,8 % | A.MOLINS | 34/196/1841/554 |
+| 5 | MANAMA GOLD | 29 | 15 | 44,57 | -34,9 % | C.LECOEUVRE | 13/117/433/2598 |
