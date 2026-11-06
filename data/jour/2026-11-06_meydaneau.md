@@ -73,13 +73,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 4 | SIROCCO WINDS | 3,1 | TADHG O'SHEA | –/–/–/– |
-| 2 | BROTHERLY LOVE | 3,4 | DANIEL TUDHOPE | 245/–/–/– |
-| 1 | ROYAL FAVOUR | 5,5 | OISIN MURPHY | 144/35/–/– |
-| 5 | NYAAR | 6,9 | PATRICK DOBBS | –/–/–/– |
-| 6 | LAASUDOOD | 11 | RAY DAWSON | 315/–/–/– |
-| 3 | GUN CARRIAGE | 14 | ANDREW SLATTERY | –/461/–/– |
-| 7 | ARABIAN TRIBE | 22 | HAMED AL BUSAIDI | –/–/–/– |
+| 4 | SIROCCO WINDS | 2,8 | TADHG O'SHEA | –/–/–/– |
+| 2 | BROTHERLY LOVE | 3,7 | DANIEL TUDHOPE | 245/–/–/– |
+| 3 | GUN CARRIAGE | 7,9 | ANDREW SLATTERY | –/461/–/– |
+| 1 | ROYAL FAVOUR | 8,1 | OISIN MURPHY | 144/35/–/– |
+| 6 | LAASUDOOD | 10 | RAY DAWSON | 315/–/–/– |
+| 5 | NYAAR | 10 | PATRICK DOBBS | –/–/–/– |
+| 7 | ARABIAN TRIBE | 14 | HAMED AL BUSAIDI | –/–/–/– |
 
 ### 6. EMIRATES SKYCARGO
 
@@ -87,19 +87,19 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 10 | MARSOOD | 2,5 | OISIN MURPHY | 144/35/–/431 |
-| 12 | NA EEM | 8,1 | TADHG O'SHEA | –/–/–/– |
-| 7 | BENGHAZI STAR | 9 | CONNOR BEASLEY | –/–/–/– |
-| 14 | AZTEC ROSE | 10 | HAMED AL BUSAIDI | –/–/–/– |
-| 5 | UNTOLD MYSTERY | 12 | MOHAMED DAHANI | –/–/–/– |
-| 9 | JABAL JAIS | 12 | BERNARDO PINHEIRO | –/–/–/– |
-| 8 | CRUZAMENTO | 15 | SILVESTRE DE SOUSA | 177/–/–/– |
-| 2 | KLIMT STREET | 19 | QAIS AL BUSAIDI | –/–/–/– |
-| 13 | HOME FROM HOME | 24 | SANDRO PAIVA | –/–/–/– |
-| 4 | TOP SEASON | 28 | JULES MOBIAN | 213/–/–/– |
-| 11 | MUSIC THEORY | 34 | JACK MITCHELL | 314/–/–/– |
-| 6 | BATO | 42 | RAY DAWSON | 315/–/–/1099 |
-| 1 | ALNAYAZEK | – | DANIEL TUDHOPE | 245/–/–/– |
+| 10 | MARSOOD | 2 | OISIN MURPHY | 144/35/–/431 |
+| 12 | NA EEM | 6,8 | TADHG O'SHEA | –/–/–/– |
+| 9 | JABAL JAIS | 8,9 | BERNARDO PINHEIRO | –/–/–/– |
+| 7 | BENGHAZI STAR | 10 | CONNOR BEASLEY | –/–/–/– |
+| 8 | CRUZAMENTO | 16 | SILVESTRE DE SOUSA | 177/–/–/– |
+| 11 | MUSIC THEORY | 20 | JACK MITCHELL | 314/–/–/– |
+| 14 | AZTEC ROSE | 28 | HAMED AL BUSAIDI | –/–/–/– |
+| 4 | TOP SEASON | 32 | JULES MOBIAN | 213/–/–/– |
+| 6 | BATO | 32 | RAY DAWSON | 315/–/–/1099 |
+| 2 | KLIMT STREET | 36 | QAIS AL BUSAIDI | –/–/–/– |
+| 5 | UNTOLD MYSTERY | 36 | MOHAMED DAHANI | –/–/–/– |
+| 1 | ALNAYAZEK | 41 | DANIEL TUDHOPE | 245/–/–/– |
+| 13 | HOME FROM HOME | 57 | SANDRO PAIVA | –/–/–/– |
 
 ### 7. ARABIAN ADVENTURES (BENCHMARK 85 HANDICAP)
 
@@ -107,12 +107,12 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 5 | STRAIGHT AND LEVEL | 2,2 | TADHG O'SHEA | –/–/–/– |
-| 1 | NAM PHRIK | 6,1 | DANIEL TUDHOPE | 245/–/–/– |
-| 6 | CROWN ESTATE | 8,1 | BERNARDO PINHEIRO | –/–/–/– |
-| 8 | ARABIAN TALE | 9,1 | RAY DAWSON | 315/–/–/– |
-| 2 | ALSAYEL | 9,3 | PATRICK DOBBS | –/–/–/– |
-| 7 | QUALITY HUMOR | 13 | CONNOR BEASLEY | –/–/–/– |
-| 3 | MAWHOOB | 16 | RICHARD MULLEN | –/–/–/– |
-| 4 | TARLAN SARBAZ | 21 | JAMIE POWELL | –/–/–/– |
-| 9 | GOLDSPUR | – | HAMED AL BUSAIDI | –/–/–/2442 |
+| 1 | NAM PHRIK | 4,7 | DANIEL TUDHOPE | 245/–/–/– |
+| 2 | ALSAYEL | 5,5 | PATRICK DOBBS | –/–/–/– |
+| 6 | CROWN ESTATE | 5,9 | BERNARDO PINHEIRO | –/–/–/– |
+| 7 | QUALITY HUMOR | 8,6 | CONNOR BEASLEY | –/–/–/– |
+| 5 | STRAIGHT AND LEVEL | 8,8 | TADHG O'SHEA | –/–/–/– |
+| 3 | MAWHOOB | 9,2 | RICHARD MULLEN | –/–/–/– |
+| 9 | GOLDSPUR | 10 | HAMED AL BUSAIDI | –/–/–/2442 |
+| 4 | TARLAN SARBAZ | 11 | JAMIE POWELL | –/–/–/– |
+| 8 | ARABIAN TALE | 18 | RAY DAWSON | 315/–/–/– |

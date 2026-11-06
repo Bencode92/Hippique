@@ -68,19 +68,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 5 | D'ARTAGNAN | 3 | 6,5 | 3,19 | -6,1 % | M.BARZALONA 3e | 2/124/3/644 |
-| 1 | MUGHADIR | 5,4 | 2,3 | 5,55 | -2,7 % | C.SOUMILLON 4e | 7/11/3/5 |
-| 9 | TIMES JUBILEE | 6,4 | 8,9 | 7,77 | -17,6 % | P.BAZIRE | 58/100/3558/1124 |
-| 7 | VEGAMIX | 8,8 | 17 | 10,34 | -14,9 % | M.GUYON | 4/27/1/2 |
-| 13 | BELLE HARMONIE | 12 | 13 | 14,51 | -17,3 % | J.MOUTARD | 61/14/831/1605 |
-| 8 | COLINER | 16 | 13 | 21,79 | -26,6 % | M.PROTTI | 30/6/–/20 |
-| 6 | WINGS OF GLORY | 18 | 21 | 24,40 | -26,2 % | B.MARIE | 69/176/3248/3096 |
+| 5 | D'ARTAGNAN | 3 | 3,2 | 3,19 | -6,1 % | M.BARZALONA 3e | 2/124/3/644 |
+| 1 | MUGHADIR | 5,4 | 5,9 | 5,55 | -2,7 % | C.SOUMILLON 4e | 7/11/3/5 |
+| 9 | TIMES JUBILEE | 6,4 | 5,5 | 7,77 | -17,6 % | P.BAZIRE | 58/100/3558/1124 |
+| 7 | VEGAMIX | 8,8 | 8,4 | 10,34 | -14,9 % | M.GUYON | 4/27/1/2 |
+| 13 | BELLE HARMONIE | 12 | 9,8 | 14,51 | -17,3 % | J.MOUTARD | 61/14/831/1605 |
+| 8 | COLINER | 16 | 18 | 21,79 | -26,6 % | M.PROTTI | 30/6/–/20 |
+| 6 | WINGS OF GLORY | 18 | 19 | 24,40 | -26,2 % | B.MARIE | 69/176/3248/3096 |
 | 4 | BUDOKAN | 23 | 22 | 30,93 | -25,6 % | E.VERHESTRAETEN | 53/12/4162/2061 |
-| 3 | NO REMORSE | 26 | 22 | 35,58 | -26,9 % | C.LECOEUVRE | 13/21/3/977 |
-| 15 | YULARA | 35 | 34 | 45,30 | -22,7 % | E.CORALLO | 57/7/3180/1175 |
-| 10 | MATERIAL GIRL | 46 | 30 | 67,30 | -31,6 % | M.GRANDIN | 3/205/284/2098 |
-| 16 | SEVENTH STRIDE | 59 | 44 | 88,07 | -33,0 % | A.LEMAITRE | 11/94/2615/3639 |
-| 11 | VILLA D'ESTE | 70 | 58 | 96,00 | -27,1 % | T.PICCONE | 9/43/39/43 |
+| 3 | NO REMORSE | 26 | 26 | 35,58 | -26,9 % | C.LECOEUVRE | 13/21/3/977 |
+| 15 | YULARA | 35 | 45 | 45,30 | -22,7 % | E.CORALLO | 57/7/3180/1175 |
+| 10 | MATERIAL GIRL | 46 | 50 | 67,30 | -31,6 % | M.GRANDIN | 3/205/284/2098 |
+| 16 | SEVENTH STRIDE | 59 | 63 | 88,07 | -33,0 % | A.LEMAITRE | 11/94/2615/3639 |
+| 11 | VILLA D'ESTE | 70 | 95 | 96,00 | -27,1 % | T.PICCONE | 9/43/39/43 |
 
 ### 5. PRIX DE BERD'HUIS
 
@@ -88,42 +88,42 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | APPLEBLOSSOMWHITE | 6,1 | 17 | 5,61 | **+8,8 %** | E.VERHESTRAETEN | 53/12/3168/367 |
-| 5 | MAYAMAR | 7,1 | 6,3 | 8,44 | -15,9 % | C.LECOEUVRE | 13/135/1018/1541 |
-| 9 | LADY AGATA | 7,7 | 8,7 | 9,28 | -17,0 % | T.PICCONE | 9/105/3746/894 |
-| 14 | NICK BOUTIQUE | 7,9 | 8,6 | 8,78 | -10,1 % | F.VALLE SKAR | 35/87/735/92 |
-| 8 | WATT OHM | 10 | 9,6 | 11,09 | -9,9 % | A.BARON | 39/84/1061/973 |
-| 11 | SANAH | 14 | 16 | 20,10 | -30,3 % | M.GRANDIN | 3/120/2/1350 |
-| 10 | PLUMBAGO | 16 | 35 | 17,54 | -8,8 % | P.REMOUE | 37/153/438/353 |
-| 6 | THE LAST FOAL | 17 | 32 | 19,61 | -13,3 % | M.VELON | 28/102/350/1922 |
-| 1 | MEXICAN DREAM | 20 | 14 | 27,13 | -26,3 % | E.HARDOUIN | 27/256/543/1222 |
-| 2 | SOGYNT | 21 | 12 | 27,41 | -23,4 % | J.CLAUDIC | 38/81/899/2074 |
-| 4 | MAITRE D'ARMES | 21 | 23 | 25,75 | -18,4 % | L.BAILS | 77/211/42/181 |
-| 7 | HOT COLD | 21 | 11 | 26,17 | -19,8 % | H.JOURNIAC 5e | 43/170/377/183 |
-| 16 | FLAMBOYANTE | 24 | 11 | 30,50 | -21,3 % | L.ROUSSEL | 26/285/1206/2396 |
-| 15 | IN THE ARMY NOW | 39 | 38 | 52,88 | -26,3 % | A.BERNARD | 91/146/246/1777 |
-| 13 | LOUIS DEUX | 44 | 53 | 63,05 | -30,2 % | M.FAVRIAUX | 51/136/11/1411 |
-| 12 | APRIL FLOWER | 47 | 17 | 76,39 | -38,5 % | L.POGGIONOVO | 80/270/20/3488 |
+| 3 | APPLEBLOSSOMWHITE | 6,1 | 5,8 | 5,61 | **+8,8 %** | E.VERHESTRAETEN | 53/12/3168/367 |
+| 5 | MAYAMAR | 7,1 | 6,5 | 8,44 | -15,9 % | C.LECOEUVRE | 13/135/1018/1541 |
+| 9 | LADY AGATA | 7,7 | 6,9 | 8,53 | -9,7 % | T.PICCONE | 9/105/3746/894 |
+| 14 | NICK BOUTIQUE | 7,9 | 8,6 | 9,56 | -17,4 % | F.VALLE SKAR | 35/87/735/92 |
+| 8 | WATT OHM | 10 | 11 | 11,09 | -9,9 % | A.BARON | 39/84/1061/973 |
+| 11 | SANAH | 14 | 12 | 20,10 | -30,3 % | M.GRANDIN | 3/120/2/1350 |
+| 10 | PLUMBAGO | 16 | 18 | 17,54 | -8,8 % | P.REMOUE | 37/153/438/353 |
+| 6 | THE LAST FOAL | 17 | 20 | 19,61 | -13,3 % | M.VELON | 28/102/350/1922 |
+| 1 | MEXICAN DREAM | 20 | 26 | 27,13 | -26,3 % | E.HARDOUIN | 27/256/543/1222 |
+| 2 | SOGYNT | 21 | 22 | 26,17 | -19,8 % | J.CLAUDIC | 38/81/899/2074 |
+| 7 | HOT COLD | 21 | 22 | 26,17 | -19,8 % | H.JOURNIAC 5e | 43/170/377/183 |
+| 4 | MAITRE D'ARMES | 21 | 20 | 28,22 | -25,6 % | L.BAILS | 77/211/42/181 |
+| 16 | FLAMBOYANTE | 24 | 23 | 30,50 | -21,3 % | L.ROUSSEL | 26/285/1206/2396 |
+| 15 | IN THE ARMY NOW | 39 | 46 | 50,44 | -22,7 % | A.BERNARD | 91/146/246/1777 |
+| 13 | LOUIS DEUX | 44 | 57 | 63,05 | -30,2 % | M.FAVRIAUX | 51/136/11/1411 |
+| 12 | APRIL FLOWER | 47 | 48 | 76,39 | -38,5 % | L.POGGIONOVO | 80/270/20/3488 |
 
 ### 6. PRIX DE BEAUFAI
 
-*19h05 · plat · 2500 m · 13 partants · cotes à T−0:02*
+*19h06 · plat · 2500 m · 13 partants · cotes à T−0:02*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 4 | TAMYZ | 4,4 | 6,3 | 5,15 | -14,5 % | T.BACHELOT | 16/17/17/4 |
-| 10 | STARAC | 6,5 | 17 | 7,04 | -7,6 % | M.GRANDIN | 3/45/517/901 |
-| 5 | HASAPIKO | 7,8 | 6,1 | 8,34 | -6,5 % | A.VILCHIEN | 93/17/39/939 |
-| 12 | LE GAST | 8 | 10 | 7,90 | **+1,3 %** | H.LEBOUC | 19/120/8/3228 |
-| 7 | SAPRISTI | 8,4 | 10 | 8,35 | **+0,6 %** | M.GUYON | 4/21/1015/612 |
-| 2 | BOOGIE | 10 | 7 | 13,53 | -26,1 % | A.CRASTUS | 17/18/105/2613 |
-| 9 | SAMWEST | 12 | 8,1 | 13,70 | -12,4 % | M.BARZALONA 3e | 2/120/70/2834 |
-| 3 | MISTERWINNER | 16 | 20 | 21,97 | -27,2 % | M.VELON | 28/102/823/1470 |
-| 1 | GUILLERETTE | 20 | 11 | 27,20 | -26,5 % | F.VALLE SKAR | 35/90/327/66 |
-| 13 | SONNAZ | 25 | 14 | 33,56 | -25,5 % | A.LEMAITRE | 11/56/955/1346 |
-| 11 | FAVOLO | 32 | 36 | 44,39 | -27,9 % | T.TRULLIER | 21/32/1788/1973 |
-| 8 | CEDRUS | 35 | 20 | 47,01 | -25,5 % | D.PROVOST 4e | 33/112/437/278 |
-| 14 | LADY ACHILLIA | 94 | 49 | 159,35 | -41,0 % | C.BELMONT | 171/73/976/4813 |
+| 4 | TAMYZ | 4,4 | 4,8 | 4,77 | -7,8 % | T.BACHELOT | 16/17/17/4 |
+| 10 | STARAC | 6,5 | 6,3 | 7,04 | -7,6 % | M.GRANDIN | 3/45/517/901 |
+| 5 | HASAPIKO | 7,8 | 8,4 | 8,34 | -6,5 % | A.VILCHIEN | 93/17/39/939 |
+| 12 | LE GAST | 8 | 7,8 | 7,90 | **+1,3 %** | H.LEBOUC | 19/120/8/3228 |
+| 7 | SAPRISTI | 8,4 | 9,2 | 9,09 | -7,5 % | M.GUYON | 4/21/1015/612 |
+| 2 | BOOGIE | 10 | 11 | 12,94 | -22,7 % | A.CRASTUS | 17/18/105/2613 |
+| 9 | SAMWEST | 12 | 10 | 14,33 | -16,2 % | M.BARZALONA 3e | 2/120/70/2834 |
+| 3 | MISTERWINNER | 16 | 14 | 21,97 | -27,2 % | M.VELON | 28/102/823/1470 |
+| 1 | GUILLERETTE | 20 | 18 | 27,20 | -26,5 % | F.VALLE SKAR | 35/90/327/66 |
+| 13 | SONNAZ | 25 | 21 | 33,56 | -25,5 % | A.LEMAITRE | 11/56/955/1346 |
+| 11 | FAVOLO | 32 | 29 | 44,39 | -27,9 % | T.TRULLIER | 21/32/1788/1973 |
+| 8 | CEDRUS | 35 | 41 | 44,85 | -22,0 % | D.PROVOST 4e | 33/112/437/278 |
+| 14 | LADY ACHILLIA | 94 | 119 | 159,35 | -41,0 % | C.BELMONT | 171/73/976/4813 |
 
 ### 7. PRIX DE BRAUDIERE
 
@@ -131,22 +131,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 6 | LOOK OF CECCA | 6,2 | 5,77 | **+7,5 %** | F.VALLE SKAR | 35/135/673/1032 |
-| 10 | LA JAVANAISE | 7,4 | 8,23 | -10,1 % | M.VELON | 28/432/24/218 |
-| 11 | MONSIEUR GEORGE | 8,2 | 9,28 | -11,6 % | H.LEBOUC | 19/168/2477/3649 |
-| 1 | SCAT LADY | 10 | 11,22 | -10,9 % | P.REMOUE | 37/86/1092/525 |
-| 9 | BORN TO WIN | 10 | 11,22 | -10,9 % | A.MOLINS | 34/381/76/1038 |
-| 13 | SUPERCLASS | 10 | 12,51 | -20,1 % | M.JUSTUM | 88/372/1158/989 |
-| 15 | KONIG CHOUCHEN | 10 | 12,21 | -18,1 % | J.GUILLOCHON | 56/285/1945/2323 |
-| 4 | MISTER POWER | 13 | 15,24 | -14,7 % | D.SANTIAGO | 15/417/407/962 |
-| 14 | AND WE DANCED | 14 | 18,12 | -22,7 % | A.LEMAITRE | 11/443/1599/3222 |
-| 3 | INTENTION BORGET | 16 | 22,72 | -29,6 % | A.BARON | 39/206/280/4325 |
-| 7 | ZILCOVER | 24 | 30,85 | -22,2 % | C.GROSBOIS | 25/452/–/917 |
-| 16 | CHARLES LEGEND | 30 | 49,17 | -39,0 % | M.FAVRIAUX | 51/360/878/754 |
-| 2 | BECQUANIENTE | 31 | 34,37 | -9,8 % | C.PACAUT | 48/145/551/1447 |
-| 8 | RHIPPER | 67 | 100,25 | -33,2 % | T.BREBION | 99/369/711/1075 |
-| 12 | KNIGHTOFTHEFOREST | 100 | 137,90 | -27,5 % | L.POGGIONOVO | 80/183/118/3520 |
-| 5 | POTTER NICOLIERE | 120 | 200,27 | -40,1 % | A.LE LAY MARTIN | 83/431/1705/986 |
+| 6 | LOOK OF CECCA | 4,4 | 4,47 | -1,7 % | F.VALLE SKAR | 35/135/673/1032 |
+| 3 | INTENTION BORGET | 9,1 | 11,99 | -24,1 % | A.BARON | 39/206/280/4325 |
+| 10 | LA JAVANAISE | 9,1 | 10,28 | -11,4 % | M.VELON | 28/432/24/218 |
+| 4 | MISTER POWER | 9,6 | 9,65 | -0,5 % | D.SANTIAGO | 15/417/407/962 |
+| 1 | SCAT LADY | 10 | 11,02 | -9,3 % | P.REMOUE | 37/86/1092/525 |
+| 14 | AND WE DANCED | 12 | 15,53 | -22,7 % | A.LEMAITRE | 11/443/1599/3222 |
+| 11 | MONSIEUR GEORGE | 13 | 17,06 | -23,8 % | H.LEBOUC | 19/168/2477/3649 |
+| 13 | SUPERCLASS | 14 | 18,24 | -23,3 % | M.JUSTUM | 88/372/1158/989 |
+| 9 | BORN TO WIN | 15 | 16,90 | -11,2 % | A.MOLINS | 34/381/76/1038 |
+| 15 | KONIG CHOUCHEN | 18 | 23,85 | -24,5 % | J.GUILLOCHON | 56/285/1945/2323 |
+| 16 | CHARLES LEGEND | 25 | 39,24 | -36,3 % | M.FAVRIAUX | 51/360/878/754 |
+| 2 | BECQUANIENTE | 34 | 41,08 | -17,2 % | C.PACAUT | 48/145/551/1447 |
+| 7 | ZILCOVER | 34 | 44,93 | -24,3 % | C.GROSBOIS | 25/452/–/917 |
+| 12 | KNIGHTOFTHEFOREST | 55 | 72,68 | -24,3 % | L.POGGIONOVO | 80/183/118/3520 |
+| 5 | POTTER NICOLIERE | 60 | 87,71 | -31,6 % | A.LE LAY MARTIN | 83/431/1705/986 |
+| 8 | RHIPPER | 78 | 115,65 | -32,6 % | T.BREBION | 99/369/711/1075 |
 
 ### 8. PRIX DU VEXIN NORMAND
 
@@ -154,9 +154,9 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 1 | HUGO CABRET | 1,3 | 1,69 | -23,0 % | M.BARZALONA 3e | 2/5/49/127 |
-| 4 | NOVA MOON | 10 | 11,81 | -15,3 % | A.MOLINS | 34/196/1841/554 |
-| 5 | MANAMA GOLD | 10 | 13,80 | -27,5 % | C.LECOEUVRE | 13/117/433/2598 |
-| 3 | SET APART | 12 | 17,12 | -29,9 % | A.LEMAITRE | 11/100/330/15 |
-| 6 | SONNY ANGEL | 13 | 16,77 | -22,5 % | D.PROVOST 4e | 33/111/192/50 |
-| 2 | CUELLAR | 14 | 19,14 | -26,9 % | T.PICCONE | 9/45/18/103 |
+| 1 | HUGO CABRET | 1,3 | 1,68 | -22,8 % | M.BARZALONA 3e | 2/5/49/127 |
+| 4 | NOVA MOON | 9,5 | 11,07 | -14,2 % | A.MOLINS | 34/196/1841/554 |
+| 6 | SONNY ANGEL | 10 | 12,82 | -22,0 % | D.PROVOST 4e | 33/111/192/50 |
+| 3 | SET APART | 12 | 17,03 | -29,5 % | A.LEMAITRE | 11/100/330/15 |
+| 2 | CUELLAR | 14 | 19,05 | -26,5 % | T.PICCONE | 9/45/18/103 |
+| 5 | MANAMA GOLD | 15 | 21,16 | -29,1 % | C.LECOEUVRE | 13/117/433/2598 |
