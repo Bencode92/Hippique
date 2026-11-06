@@ -1,6 +1,6 @@
 # DEAUVILLE — 06/11/2026
 
-8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -107,23 +107,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DE BEAUFAI
 
-*19h05 · plat · 2500 m · 13 partants · cotes de l'extraction*
+*19h05 · plat · 2500 m · 13 partants · cotes à T−29:42*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 5 | HASAPIKO | 6,1 | 5,18 | **+17,7 %** | A.VILCHIEN | 93/17/39/939 |
-| 4 | TAMYZ | 6,3 | 6,96 | -9,4 % | T.BACHELOT | 16/17/17/4 |
-| 2 | BOOGIE | 7 | 8,16 | -14,2 % | A.CRASTUS | 17/18/105/2613 |
-| 9 | SAMWEST | 8,1 | 9,05 | -10,4 % | M.BARZALONA 3e | 2/120/70/2834 |
-| 7 | SAPRISTI | 10 | 11,11 | -10,0 % | M.GUYON | 4/21/1015/612 |
-| 12 | LE GAST | 10 | 11,11 | -10,0 % | H.LEBOUC | 19/120/8/3228 |
-| 1 | GUILLERETTE | 11 | 14,12 | -22,1 % | F.VALLE SKAR | 35/90/327/66 |
-| 13 | SONNAZ | 14 | 15,67 | -10,7 % | A.LEMAITRE | 11/56/955/1346 |
-| 10 | STARAC | 17 | 22,49 | -24,4 % | M.GRANDIN | 3/45/517/901 |
-| 3 | MISTERWINNER | 20 | 28,46 | -29,7 % | M.VELON | 28/102/823/1470 |
-| 8 | CEDRUS | 20 | 22,71 | -11,9 % | D.PROVOST 4e | 33/112/437/278 |
-| 11 | FAVOLO | 36 | 50,57 | -28,8 % | T.TRULLIER | 21/32/1788/1973 |
-| 14 | LADY ACHILLIA | 49 | 80,03 | -38,8 % | C.BELMONT | 171/73/976/4813 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 2 | BOOGIE | 3,8 | 7 | 4,38 | -13,2 % | A.CRASTUS | 17/18/105/2613 |
+| 4 | TAMYZ | 6,3 | 6,3 | 6,92 | -8,9 % | T.BACHELOT | 16/17/17/4 |
+| 5 | HASAPIKO | 8,1 | 6,1 | 8,65 | -6,4 % | A.VILCHIEN | 93/17/39/939 |
+| 7 | SAPRISTI | 9,8 | 10 | 10,79 | -9,1 % | M.GUYON | 4/21/1015/612 |
+| 1 | GUILLERETTE | 10 | 11 | 12,55 | -20,3 % | F.VALLE SKAR | 35/90/327/66 |
+| 9 | SAMWEST | 12 | 8,1 | 13,60 | -11,8 % | M.BARZALONA 3e | 2/120/70/2834 |
+| 12 | LE GAST | 14 | 10 | 15,63 | -10,4 % | H.LEBOUC | 19/120/8/3228 |
+| 10 | STARAC | 16 | 17 | 20,83 | -23,2 % | M.GRANDIN | 3/45/517/901 |
+| 3 | MISTERWINNER | 19 | 20 | 26,66 | -28,7 % | M.VELON | 28/102/823/1470 |
+| 8 | CEDRUS | 21 | 20 | 23,88 | -12,0 % | D.PROVOST 4e | 33/112/437/278 |
+| 13 | SONNAZ | 22 | 14 | 28,79 | -23,6 % | A.LEMAITRE | 11/56/955/1346 |
+| 11 | FAVOLO | 38 | 36 | 50,94 | -25,4 % | T.TRULLIER | 21/32/1788/1973 |
+| 14 | LADY ACHILLIA | 63 | 49 | 104,31 | -39,6 % | C.BELMONT | 171/73/976/4813 |
 
 ### 7. PRIX DE BRAUDIERE
 
