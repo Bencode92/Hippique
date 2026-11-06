@@ -4,17 +4,17 @@
   "reunion": 4,
   "heure_depart": 1793980500000,
   "distance": 1400,
-  "scraped_at": "2026-11-06T16:54:38.563736+01:00",
-  "minutes_avant_depart": 0,
+  "scraped_at": "2026-11-06T16:57:19.002447+01:00",
+  "minutes_avant_depart": -2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MUGHADIR",
-      "cote_live": 5.4,
+      "cote_live": 5.9,
       "cote_reference": 6.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793980466000
+      "timestamp_cote": 1793980590000
     },
     {
       "numPmu": 3,
@@ -23,106 +23,106 @@
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793980466000
+      "timestamp_cote": 1793980590000
     },
     {
       "numPmu": 4,
       "nom": "BUDOKAN",
-      "cote_live": 23.0,
+      "cote_live": 22.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793980466000
+      "timestamp_cote": 1793980590000
     },
     {
       "numPmu": 5,
       "nom": "D'ARTAGNAN",
-      "cote_live": 3.0,
+      "cote_live": 3.2,
       "cote_reference": 4.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793980466000
+      "timestamp_cote": 1793980590000
     },
     {
       "numPmu": 6,
       "nom": "WINGS OF GLORY",
-      "cote_live": 18.0,
+      "cote_live": 19.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793980466000
+      "timestamp_cote": 1793980590000
     },
     {
       "numPmu": 7,
       "nom": "VEGAMIX",
-      "cote_live": 8.8,
+      "cote_live": 8.4,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793980466000
+      "timestamp_cote": 1793980590000
     },
     {
       "numPmu": 8,
       "nom": "COLINER",
-      "cote_live": 16.0,
+      "cote_live": 18.0,
       "cote_reference": 9.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793980466000
+      "timestamp_cote": 1793980590000
     },
     {
       "numPmu": 9,
       "nom": "TIMES JUBILEE",
-      "cote_live": 6.4,
+      "cote_live": 5.5,
       "cote_reference": 7.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793980466000
+      "timestamp_cote": 1793980590000
     },
     {
       "numPmu": 10,
       "nom": "MATERIAL GIRL",
-      "cote_live": 46.0,
+      "cote_live": 50.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793980466000
+      "timestamp_cote": 1793980590000
     },
     {
       "numPmu": 11,
       "nom": "VILLA D'ESTE",
-      "cote_live": 70.0,
+      "cote_live": 95.0,
       "cote_reference": 46.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793980466000
+      "timestamp_cote": 1793980590000
     },
     {
       "numPmu": 13,
       "nom": "BELLE HARMONIE",
-      "cote_live": 12.0,
+      "cote_live": 9.8,
       "cote_reference": 7.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793980466000
+      "timestamp_cote": 1793980590000
     },
     {
       "numPmu": 15,
       "nom": "YULARA",
-      "cote_live": 35.0,
+      "cote_live": 45.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793980466000
+      "timestamp_cote": 1793980590000
     },
     {
       "numPmu": 16,
       "nom": "SEVENTH STRIDE",
-      "cote_live": 59.0,
+      "cote_live": 63.0,
       "cote_reference": 40.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793980466000
+      "timestamp_cote": 1793980590000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -372,6 +372,82 @@
         "13": 12.0,
         "15": 35.0,
         "16": 59.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-06T16:55:18.598624+01:00",
+      "minutes_avant_depart": -0.30527299999999996,
+      "cotes": {
+        "1": 5.7,
+        "3": 29.0,
+        "4": 25.0,
+        "5": 2.9,
+        "6": 18.0,
+        "7": 8.1,
+        "8": 16.0,
+        "9": 6.2,
+        "10": 47.0,
+        "11": 76.0,
+        "13": 12.0,
+        "15": 40.0,
+        "16": 57.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-06T16:55:58.456344+01:00",
+      "minutes_avant_depart": -0.9719412999999999,
+      "cotes": {
+        "1": 6.0,
+        "3": 26.0,
+        "4": 22.0,
+        "5": 3.0,
+        "6": 19.0,
+        "7": 8.4,
+        "8": 18.0,
+        "9": 5.5,
+        "10": 53.0,
+        "11": 93.0,
+        "13": 11.0,
+        "15": 45.0,
+        "16": 63.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-06T16:56:38.430627+01:00",
+      "minutes_avant_depart": -1.6386099333333335,
+      "cotes": {
+        "1": 5.9,
+        "3": 26.0,
+        "4": 22.0,
+        "5": 3.2,
+        "6": 19.0,
+        "7": 8.4,
+        "8": 18.0,
+        "9": 5.5,
+        "10": 50.0,
+        "11": 95.0,
+        "13": 9.8,
+        "15": 45.0,
+        "16": 63.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-06T16:57:19.002447+01:00",
+      "minutes_avant_depart": -2.3147874333333336,
+      "cotes": {
+        "1": 5.9,
+        "3": 26.0,
+        "4": 22.0,
+        "5": 3.2,
+        "6": 19.0,
+        "7": 8.4,
+        "8": 18.0,
+        "9": 5.5,
+        "10": 50.0,
+        "11": 95.0,
+        "13": 9.8,
+        "15": 45.0,
+        "16": 63.0
       }
     }
   ]
