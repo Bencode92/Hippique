@@ -4,62 +4,62 @@
   "reunion": 4,
   "heure_depart": 1793988900000,
   "distance": 2500,
-  "scraped_at": "2026-11-06T19:11:21.773935+01:00",
-  "minutes_avant_depart": 4,
+  "scraped_at": "2026-11-06T19:14:03.036119+01:00",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "HUGO CABRET",
-      "cote_live": 1.4,
+      "cote_live": 1.5,
       "cote_reference": 1.6,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793988655000
+      "timestamp_cote": 1793988827000
     },
     {
       "numPmu": 2,
       "nom": "CUELLAR",
-      "cote_live": 8.6,
+      "cote_live": 8.4,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793988655000
+      "timestamp_cote": 1793988827000
     },
     {
       "numPmu": 3,
       "nom": "SET APART",
-      "cote_live": 6.3,
+      "cote_live": 6.2,
       "cote_reference": 6.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793988655000
+      "timestamp_cote": 1793988827000
     },
     {
       "numPmu": 4,
       "nom": "NOVA MOON",
-      "cote_live": 15.0,
+      "cote_live": 22.0,
       "cote_reference": 8.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793988655000
+      "timestamp_cote": 1793988827000
     },
     {
       "numPmu": 5,
       "nom": "MANAMA GOLD",
-      "cote_live": 20.0,
+      "cote_live": 27.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793988655000
+      "timestamp_cote": 1793988827000
     },
     {
       "numPmu": 6,
       "nom": "SONNY ANGEL",
-      "cote_live": 15.0,
+      "cote_live": 8.6,
       "cote_reference": 9.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793988655000
+      "timestamp_cote": 1793988827000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -182,6 +182,54 @@
         "4": 15.0,
         "5": 20.0,
         "6": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-06T19:12:01.441243+01:00",
+      "minutes_avant_depart": 2.9798476,
+      "cotes": {
+        "1": 1.2,
+        "2": 10.0,
+        "3": 7.9,
+        "4": 20.0,
+        "5": 25.0,
+        "6": 19.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-06T19:12:41.430572+01:00",
+      "minutes_avant_depart": 2.3131788833333333,
+      "cotes": {
+        "1": 1.5,
+        "2": 9.3,
+        "3": 6.7,
+        "4": 19.0,
+        "5": 23.0,
+        "6": 7.1
+      }
+    },
+    {
+      "scraped_at": "2026-11-06T19:13:21.399333+01:00",
+      "minutes_avant_depart": 1.6465103833333332,
+      "cotes": {
+        "1": 1.5,
+        "2": 8.3,
+        "3": 6.5,
+        "4": 22.0,
+        "5": 27.0,
+        "6": 7.9
+      }
+    },
+    {
+      "scraped_at": "2026-11-06T19:14:03.036119+01:00",
+      "minutes_avant_depart": 0.9598466999999999,
+      "cotes": {
+        "1": 1.5,
+        "2": 8.4,
+        "3": 6.2,
+        "4": 22.0,
+        "5": 27.0,
+        "6": 8.6
       }
     }
   ]
