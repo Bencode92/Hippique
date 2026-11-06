@@ -84,26 +84,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DE BERD'HUIS
 
-*18h30 · plat · 2500 m · 16 partants · cotes à T−3:21*
+*18h30 · plat · 2500 m · 16 partants · cotes à T−0:41*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 5 | MAYAMAR | 6,7 | 6,3 | 6,75 | -0,7 % | C.LECOEUVRE | 13/135/1018/1541 |
-| 3 | APPLEBLOSSOMWHITE | 6,8 | 17 | 7,40 | -8,1 % | E.VERHESTRAETEN | 53/12/3168/367 |
-| 9 | LADY AGATA | 8 | 8,7 | 9,71 | -17,6 % | T.PICCONE | 9/105/3746/894 |
-| 14 | NICK BOUTIQUE | 9 | 8,6 | 10,23 | -12,0 % | F.VALLE SKAR | 35/87/735/92 |
-| 8 | WATT OHM | 11 | 9,6 | 11,87 | -7,4 % | A.BARON | 39/84/1061/973 |
-| 10 | PLUMBAGO | 13 | 35 | 13,80 | -5,8 % | P.REMOUE | 37/153/438/353 |
-| 11 | SANAH | 16 | 16 | 23,54 | -32,0 % | M.GRANDIN | 3/120/2/1350 |
-| 7 | HOT COLD | 17 | 11 | 20,52 | -17,2 % | H.JOURNIAC 5e | 43/170/377/183 |
-| 1 | MEXICAN DREAM | 18 | 14 | 24,04 | -25,1 % | E.HARDOUIN | 27/256/543/1222 |
-| 4 | MAITRE D'ARMES | 18 | 23 | 21,58 | -16,6 % | L.BAILS | 77/211/42/181 |
-| 6 | THE LAST FOAL | 18 | 32 | 20,97 | -14,2 % | M.VELON | 28/102/350/1922 |
-| 2 | SOGYNT | 20 | 12 | 25,94 | -22,9 % | J.CLAUDIC | 38/81/899/2074 |
-| 16 | FLAMBOYANTE | 21 | 11 | 26,20 | -19,8 % | L.ROUSSEL | 26/285/1206/2396 |
-| 15 | IN THE ARMY NOW | 36 | 38 | 48,44 | -25,7 % | A.BERNARD | 91/146/246/1777 |
-| 13 | LOUIS DEUX | 42 | 53 | 59,97 | -30,0 % | M.FAVRIAUX | 51/136/11/1411 |
-| 12 | APRIL FLOWER | 46 | 17 | 74,69 | -38,4 % | L.POGGIONOVO | 80/270/20/3488 |
+| 3 | APPLEBLOSSOMWHITE | 6,3 | 17 | 5,77 | **+9,1 %** | E.VERHESTRAETEN | 53/12/3168/367 |
+| 5 | MAYAMAR | 7 | 6,3 | 8,25 | -15,2 % | C.LECOEUVRE | 13/135/1018/1541 |
+| 9 | LADY AGATA | 8 | 8,7 | 9,64 | -17,0 % | T.PICCONE | 9/105/3746/894 |
+| 14 | NICK BOUTIQUE | 8,2 | 8,6 | 9,11 | -10,0 % | F.VALLE SKAR | 35/87/735/92 |
+| 8 | WATT OHM | 10 | 9,6 | 11,02 | -9,3 % | A.BARON | 39/84/1061/973 |
+| 11 | SANAH | 15 | 16 | 21,65 | -30,7 % | M.GRANDIN | 3/120/2/1350 |
+| 6 | THE LAST FOAL | 16 | 32 | 18,16 | -11,9 % | M.VELON | 28/102/350/1922 |
+| 10 | PLUMBAGO | 16 | 35 | 17,42 | -8,2 % | P.REMOUE | 37/153/438/353 |
+| 7 | HOT COLD | 19 | 11 | 23,17 | -18,0 % | H.JOURNIAC 5e | 43/170/377/183 |
+| 1 | MEXICAN DREAM | 20 | 14 | 26,96 | -25,8 % | E.HARDOUIN | 27/256/543/1222 |
+| 4 | MAITRE D'ARMES | 20 | 23 | 24,18 | -17,3 % | L.BAILS | 77/211/42/181 |
+| 2 | SOGYNT | 22 | 12 | 28,73 | -23,4 % | J.CLAUDIC | 38/81/899/2074 |
+| 16 | FLAMBOYANTE | 24 | 11 | 30,30 | -20,8 % | L.ROUSSEL | 26/285/1206/2396 |
+| 15 | IN THE ARMY NOW | 39 | 38 | 52,55 | -25,8 % | A.BERNARD | 91/146/246/1777 |
+| 12 | APRIL FLOWER | 43 | 17 | 68,87 | -37,6 % | L.POGGIONOVO | 80/270/20/3488 |
+| 13 | LOUIS DEUX | 44 | 53 | 62,66 | -29,8 % | M.FAVRIAUX | 51/136/11/1411 |
 
 ### 6. PRIX DE BEAUFAI
 
