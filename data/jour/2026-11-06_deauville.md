@@ -1,6 +1,6 @@
 # DEAUVILLE — 06/11/2026
 
-8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 6 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -150,13 +150,13 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DU VEXIN NORMAND
 
-*20h15 · plat · 2500 m · 6 partants · cotes de l'extraction*
+*20h15 · plat · 2500 m · 6 partants · cotes à T−29:39*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 1 | HUGO CABRET | 1,3 | 1,68 | -22,8 % | M.BARZALONA 3e | 2/5/49/127 |
-| 4 | NOVA MOON | 9,5 | 11,07 | -14,2 % | A.MOLINS | 34/196/1841/554 |
-| 6 | SONNY ANGEL | 10 | 12,82 | -22,0 % | D.PROVOST 4e | 33/111/192/50 |
-| 3 | SET APART | 12 | 17,03 | -29,5 % | A.LEMAITRE | 11/100/330/15 |
-| 2 | CUELLAR | 14 | 19,05 | -26,5 % | T.PICCONE | 9/45/18/103 |
-| 5 | MANAMA GOLD | 15 | 21,16 | -29,1 % | C.LECOEUVRE | 13/117/433/2598 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 1 | HUGO CABRET | 1,6 | 1,3 | 1,89 | -15,1 % | M.BARZALONA 3e | 2/5/49/127 |
+| 3 | SET APART | 7 | 12 | 7,96 | -12,1 % | A.LEMAITRE | 11/100/330/15 |
+| 6 | SONNY ANGEL | 8,9 | 10 | 10,73 | -17,1 % | D.PROVOST 4e | 33/111/192/50 |
+| 4 | NOVA MOON | 10 | 9,5 | 11,28 | -11,3 % | A.MOLINS | 34/196/1841/554 |
+| 2 | CUELLAR | 11 | 14 | 12,60 | -12,7 % | T.PICCONE | 9/45/18/103 |
+| 5 | MANAMA GOLD | 12 | 15 | 16,34 | -26,6 % | C.LECOEUVRE | 13/117/433/2598 |
