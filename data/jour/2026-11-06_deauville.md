@@ -64,23 +64,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX DE LA PIGEONNIERE
 
-*17h55 · plat · 1400 m · 13 partants · cotes à T−12:21*
+*17h55 · plat · 1400 m · 13 partants · cotes à T−8:22*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 1 | MUGHADIR | 2,8 | 2,3 | 2,98 | -6,0 % | C.SOUMILLON 4e | 7/11/3/5 |
-| 5 | D'ARTAGNAN | 5 | 6,5 | 5,49 | -8,9 % | M.BARZALONA 3e | 2/124/3/644 |
-| 9 | TIMES JUBILEE | 6,9 | 8,9 | 8,44 | -18,2 % | P.BAZIRE | 58/100/3558/1124 |
-| 8 | COLINER | 13 | 13 | 17,00 | -23,5 % | M.PROTTI | 30/6/–/20 |
-| 13 | BELLE HARMONIE | 14 | 13 | 17,30 | -19,1 % | J.MOUTARD | 61/14/831/1605 |
-| 7 | VEGAMIX | 15 | 17 | 21,06 | -28,8 % | M.GUYON | 4/27/1/2 |
-| 4 | BUDOKAN | 20 | 22 | 26,21 | -23,7 % | E.VERHESTRAETEN | 53/12/4162/2061 |
-| 6 | WINGS OF GLORY | 20 | 21 | 26,21 | -23,7 % | B.MARIE | 69/176/3248/3096 |
-| 3 | NO REMORSE | 25 | 22 | 33,87 | -26,2 % | C.LECOEUVRE | 13/21/3/977 |
-| 10 | MATERIAL GIRL | 32 | 30 | 46,97 | -31,9 % | M.GRANDIN | 3/205/284/2098 |
-| 15 | YULARA | 45 | 34 | 59,52 | -24,4 % | E.CORALLO | 57/7/3180/1175 |
-| 11 | VILLA D'ESTE | 51 | 58 | 71,51 | -28,7 % | T.PICCONE | 9/43/39/43 |
-| 16 | SEVENTH STRIDE | 54 | 44 | 79,74 | -32,3 % | A.LEMAITRE | 11/94/2615/3639 |
+| 1 | MUGHADIR | 3,2 | 2,3 | 3,43 | -6,6 % | C.SOUMILLON 4e | 7/11/3/5 |
+| 5 | D'ARTAGNAN | 4,1 | 6,5 | 4,47 | -8,3 % | M.BARZALONA 3e | 2/124/3/644 |
+| 9 | TIMES JUBILEE | 6,8 | 8,9 | 8,39 | -19,0 % | P.BAZIRE | 58/100/3558/1124 |
+| 7 | VEGAMIX | 12 | 17 | 16,39 | -26,8 % | M.GUYON | 4/27/1/2 |
+| 8 | COLINER | 15 | 13 | 20,36 | -26,3 % | M.PROTTI | 30/6/–/20 |
+| 13 | BELLE HARMONIE | 16 | 13 | 20,47 | -21,8 % | J.MOUTARD | 61/14/831/1605 |
+| 4 | BUDOKAN | 19 | 22 | 24,99 | -24,0 % | E.VERHESTRAETEN | 53/12/4162/2061 |
+| 3 | NO REMORSE | 22 | 22 | 29,60 | -25,7 % | C.LECOEUVRE | 13/21/3/977 |
+| 6 | WINGS OF GLORY | 22 | 21 | 29,60 | -25,7 % | B.MARIE | 69/176/3248/3096 |
+| 10 | MATERIAL GIRL | 29 | 30 | 42,53 | -31,8 % | M.GRANDIN | 3/205/284/2098 |
+| 16 | SEVENTH STRIDE | 38 | 44 | 57,58 | -34,0 % | A.LEMAITRE | 11/94/2615/3639 |
+| 15 | YULARA | 45 | 34 | 60,20 | -25,2 % | E.CORALLO | 57/7/3180/1175 |
+| 11 | VILLA D'ESTE | 55 | 58 | 78,45 | -29,9 % | T.PICCONE | 9/43/39/43 |
 
 ### 5. PRIX DE BERD'HUIS
 
