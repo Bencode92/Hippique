@@ -4,125 +4,125 @@
   "reunion": 4,
   "heure_depart": 1793984760000,
   "distance": 2500,
-  "scraped_at": "2026-11-06T18:01:18.560938+01:00",
-  "minutes_avant_depart": 5,
+  "scraped_at": "2026-11-06T18:03:58.891002+01:00",
+  "minutes_avant_depart": 2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "GUILLERETTE",
-      "cote_live": 17.0,
+      "cote_live": 18.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793984472000
+      "timestamp_cote": 1793984625000
     },
     {
       "numPmu": 2,
       "nom": "BOOGIE",
-      "cote_live": 7.9,
+      "cote_live": 8.9,
       "cote_reference": 3.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793984472000
+      "timestamp_cote": 1793984625000
     },
     {
       "numPmu": 3,
       "nom": "MISTERWINNER",
-      "cote_live": 14.0,
+      "cote_live": 16.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793984472000
+      "timestamp_cote": 1793984625000
     },
     {
       "numPmu": 4,
       "nom": "TAMYZ",
-      "cote_live": 5.7,
+      "cote_live": 6.6,
       "cote_reference": 6.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793984472000
+      "timestamp_cote": 1793984625000
     },
     {
       "numPmu": 5,
       "nom": "HASAPIKO",
-      "cote_live": 5.9,
+      "cote_live": 7.1,
       "cote_reference": 7.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793984472000
+      "timestamp_cote": 1793984625000
     },
     {
       "numPmu": 7,
       "nom": "SAPRISTI",
-      "cote_live": 5.8,
+      "cote_live": 6.6,
       "cote_reference": 9.7,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1793984472000
+      "favoris": true,
+      "timestamp_cote": 1793984625000
     },
     {
       "numPmu": 8,
       "nom": "CEDRUS",
-      "cote_live": 28.0,
+      "cote_live": 34.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793984472000
+      "timestamp_cote": 1793984625000
     },
     {
       "numPmu": 9,
       "nom": "SAMWEST",
-      "cote_live": 10.0,
+      "cote_live": 12.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793984472000
+      "timestamp_cote": 1793984625000
     },
     {
       "numPmu": 10,
       "nom": "STARAC",
-      "cote_live": 17.0,
+      "cote_live": 6.6,
       "cote_reference": 17.0,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1793984472000
+      "favoris": true,
+      "timestamp_cote": 1793984625000
     },
     {
       "numPmu": 11,
       "nom": "FAVOLO",
-      "cote_live": 41.0,
+      "cote_live": 48.0,
       "cote_reference": 38.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793984472000
+      "timestamp_cote": 1793984625000
     },
     {
       "numPmu": 12,
       "nom": "LE GAST",
-      "cote_live": 10.0,
+      "cote_live": 8.3,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793984472000
+      "timestamp_cote": 1793984625000
     },
     {
       "numPmu": 13,
       "nom": "SONNAZ",
-      "cote_live": 21.0,
+      "cote_live": 22.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793984472000
+      "timestamp_cote": 1793984625000
     },
     {
       "numPmu": 14,
       "nom": "LADY ACHILLIA",
-      "cote_live": 55.0,
+      "cote_live": 63.0,
       "cote_reference": 61.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793984472000
+      "timestamp_cote": 1793984625000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -296,6 +296,82 @@
         "12": 10.0,
         "13": 21.0,
         "14": 55.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-06T18:01:58.456062+01:00",
+      "minutes_avant_depart": 4.027868799999999,
+      "cotes": {
+        "1": 18.0,
+        "2": 8.8,
+        "3": 16.0,
+        "4": 6.3,
+        "5": 6.5,
+        "7": 6.1,
+        "8": 31.0,
+        "9": 11.0,
+        "10": 7.1,
+        "11": 45.0,
+        "12": 10.0,
+        "13": 23.0,
+        "14": 61.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-06T18:02:38.573726+01:00",
+      "minutes_avant_depart": 3.3612001333333335,
+      "cotes": {
+        "1": 18.0,
+        "2": 8.4,
+        "3": 15.0,
+        "4": 6.4,
+        "5": 6.6,
+        "7": 6.2,
+        "8": 33.0,
+        "9": 11.0,
+        "10": 7.4,
+        "11": 46.0,
+        "12": 9.9,
+        "13": 22.0,
+        "14": 63.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-06T18:03:18.617907+01:00",
+      "minutes_avant_depart": 2.694531566666667,
+      "cotes": {
+        "1": 17.0,
+        "2": 8.8,
+        "3": 15.0,
+        "4": 6.6,
+        "5": 6.8,
+        "7": 6.5,
+        "8": 32.0,
+        "9": 11.0,
+        "10": 7.9,
+        "11": 49.0,
+        "12": 8.2,
+        "13": 20.0,
+        "14": 60.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-06T18:03:58.891002+01:00",
+      "minutes_avant_depart": 2.0208678,
+      "cotes": {
+        "1": 18.0,
+        "2": 8.9,
+        "3": 16.0,
+        "4": 6.6,
+        "5": 7.1,
+        "7": 6.6,
+        "8": 34.0,
+        "9": 12.0,
+        "10": 6.6,
+        "11": 48.0,
+        "12": 8.3,
+        "13": 22.0,
+        "14": 63.0
       }
     }
   ]
