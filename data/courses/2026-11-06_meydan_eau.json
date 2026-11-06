@@ -1,7 +1,7 @@
 {
   "hippodrome": "MEYDAN (E.A.U)",
   "type_reunion": "Plat",
-  "date_extraction": "2026-11-06T02:09:09.862751",
+  "date_extraction": "2026-11-06T14:56:12.003040",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/06112026/R6",
   "courses": [
     {
@@ -12,46 +12,6 @@
       "distance": "1200m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "BILLY WEBSTER H.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: PROFITABLE et SOME SITE (NAYEF)",
-          "corde": "(Corde:03)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261106/DUB/1/20261106-DUB-1-1.png",
-          "propriétaire": "AKAREM RACING",
-          "entraineur": "DOUG WATSON",
-          "éleveurs": "",
-          "jockey": "JAMIE POWELL",
-          "poids": "57 kg",
-          "gains": "37411000",
-          "musique": "2p5p6p1p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 20,
-          "nb_victoires": 6,
-          "nb_places": 6
-        },
-        {
-          "n°": "2",
-          "cheval": "CITY WALK H.PU. 9 a.",
-          "cheval_url": "",
-          "père_mère": "Par: BRAZEN BEAU et MY LUCKY LIZ (EXCEED AND EXCEL)",
-          "corde": "(Corde:04)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261106/DUB/1/20261106-DUB-1-2.png",
-          "propriétaire": "SOUKAINA ELHAMILI",
-          "entraineur": "KAREEM RAMADAN",
-          "éleveurs": "",
-          "jockey": "BERNARDO PINHEIRO",
-          "poids": "57 kg",
-          "gains": "5600000",
-          "musique": "1p(25)0p9p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 22,
-          "nb_victoires": 5,
-          "nb_places": 5
-        },
         {
           "n°": "3",
           "cheval": "COLOUR UP H.PU. 8 a.",
@@ -70,27 +30,11 @@
           "equipement(s)": "",
           "nb_courses": 24,
           "nb_victoires": 5,
-          "nb_places": 5
-        },
-        {
-          "n°": "4",
-          "cheval": "ECHO POINT H.PU. 8 a.",
-          "cheval_url": "",
-          "père_mère": "Par: DUBAWI et YODELLING (MEDAGLIA D'ORO)",
-          "corde": "(Corde:06)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261106/DUB/1/20261106-DUB-1-4.png",
-          "propriétaire": "NASER ASKAR",
-          "entraineur": "MUSABBEH AL MHEIRI",
-          "éleveurs": "",
-          "jockey": "SILVESTRE DE SOUSA",
-          "poids": "57 kg",
-          "gains": "99220000",
-          "musique": "0p0p0p2p2p",
-          "valeur": "57.0",
-          "equipement(s)": "",
-          "nb_courses": 32,
-          "nb_victoires": 4,
-          "nb_places": 4
+          "nb_places": 5,
+          "cote": 2.9,
+          "cote_tendance": "",
+          "cote_reference": 4.0,
+          "arrivee": 1
         },
         {
           "n°": "5",
@@ -110,7 +54,35 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 2,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0,
+          "arrivee": 2
+        },
+        {
+          "n°": "4",
+          "cheval": "ECHO POINT H.PU. 8 a.",
+          "cheval_url": "",
+          "père_mère": "Par: DUBAWI et YODELLING (MEDAGLIA D'ORO)",
+          "corde": "(Corde:06)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261106/DUB/1/20261106-DUB-1-4.png",
+          "propriétaire": "NASER ASKAR",
+          "entraineur": "MUSABBEH AL MHEIRI",
+          "éleveurs": "",
+          "jockey": "SILVESTRE DE SOUSA",
+          "poids": "57 kg",
+          "gains": "99220000",
+          "musique": "0p0p0p2p2p",
+          "valeur": "57.0",
+          "equipement(s)": "",
+          "nb_courses": 32,
+          "nb_victoires": 4,
+          "nb_places": 4,
+          "cote": 6.1,
+          "cote_tendance": "",
+          "cote_reference": 4.3,
+          "arrivee": 3
         },
         {
           "n°": "6",
@@ -130,10 +102,66 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 2,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 3.4,
+          "cote_tendance": "",
+          "cote_reference": 3.1,
+          "arrivee": 4
+        },
+        {
+          "n°": "1",
+          "cheval": "BILLY WEBSTER H.PU. 5 a.",
+          "cheval_url": "",
+          "père_mère": "Par: PROFITABLE et SOME SITE (NAYEF)",
+          "corde": "(Corde:03)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261106/DUB/1/20261106-DUB-1-1.png",
+          "propriétaire": "AKAREM RACING",
+          "entraineur": "DOUG WATSON",
+          "éleveurs": "",
+          "jockey": "JAMIE POWELL",
+          "poids": "57 kg",
+          "gains": "37411000",
+          "musique": "2p5p6p1p",
+          "valeur": "57.0",
+          "equipement(s)": "",
+          "nb_courses": 20,
+          "nb_victoires": 6,
+          "nb_places": 6,
+          "cote": 8.0,
+          "cote_tendance": "",
+          "cote_reference": 6.2,
+          "arrivee": 5
+        },
+        {
+          "n°": "2",
+          "cheval": "CITY WALK H.PU. 9 a.",
+          "cheval_url": "",
+          "père_mère": "Par: BRAZEN BEAU et MY LUCKY LIZ (EXCEED AND EXCEL)",
+          "corde": "(Corde:04)",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261106/DUB/1/20261106-DUB-1-2.png",
+          "propriétaire": "SOUKAINA ELHAMILI",
+          "entraineur": "KAREEM RAMADAN",
+          "éleveurs": "",
+          "jockey": "BERNARDO PINHEIRO",
+          "poids": "57 kg",
+          "gains": "5600000",
+          "musique": "1p(25)0p9p",
+          "valeur": "57.0",
+          "equipement(s)": "",
+          "nb_courses": 22,
+          "nb_victoires": 5,
+          "nb_places": 5,
+          "cote": 7.5,
+          "cote_tendance": "",
+          "cote_reference": 10.0,
+          "arrivee": 6
         }
       ],
-      "cordeCourse": "CORDE_GAUCHE"
+      "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
+      "cordeCourse": "CORDE_GAUCHE",
+      "arrivee_definitive": true
     },
     {
       "nom": "EMIRATES SKYWARDS",
@@ -161,7 +189,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 4.8,
+          "cote_tendance": "",
+          "cote_reference": 2.5
         },
         {
           "n°": "2",
@@ -181,7 +212,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.5,
+          "cote_tendance": "",
+          "cote_reference": 5.7
         },
         {
           "n°": "3",
@@ -201,7 +235,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 9.9,
+          "cote_tendance": "",
+          "cote_reference": 12.0
         },
         {
           "n°": "4",
@@ -221,7 +258,10 @@
           "equipement(s)": "",
           "nb_courses": 15,
           "nb_victoires": 7,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 3.4,
+          "cote_tendance": "",
+          "cote_reference": 4.9
         },
         {
           "n°": "5",
@@ -241,7 +281,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 3.7,
+          "cote_tendance": "",
+          "cote_reference": 4.7
         },
         {
           "n°": "6",
@@ -261,9 +304,15 @@
           "equipement(s)": "",
           "nb_courses": 13,
           "nb_victoires": 2,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 6.6,
+          "cote_tendance": "",
+          "cote_reference": 13.0
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -292,7 +341,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 18.0,
+          "cote_tendance": "",
+          "cote_reference": 29.0
         },
         {
           "n°": "2",
@@ -312,7 +364,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 29.0
         },
         {
           "n°": "3",
@@ -332,7 +387,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 29.0
         },
         {
           "n°": "4",
@@ -352,7 +410,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.7,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         },
         {
           "n°": "5",
@@ -372,7 +433,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 5.8
         },
         {
           "n°": "6",
@@ -392,7 +456,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 29.0,
+          "cote_tendance": "",
+          "cote_reference": 58.0
         },
         {
           "n°": "7",
@@ -412,7 +479,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.0,
+          "cote_tendance": "",
+          "cote_reference": 1.9
         },
         {
           "n°": "8",
@@ -432,7 +502,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 6.9,
+          "cote_tendance": "",
+          "cote_reference": 5.1
         },
         {
           "n°": "9",
@@ -452,7 +525,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 36.0,
+          "cote_tendance": "",
+          "cote_reference": 19.0
         },
         {
           "n°": "10",
@@ -472,9 +548,15 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 32.0,
+          "cote_tendance": "",
+          "cote_reference": 58.0
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -503,7 +585,10 @@
           "equipement(s)": "",
           "nb_courses": 15,
           "nb_victoires": 3,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 32.0,
+          "cote_tendance": "",
+          "cote_reference": 36.0
         },
         {
           "n°": "2",
@@ -523,7 +608,10 @@
           "equipement(s)": "",
           "nb_courses": 11,
           "nb_victoires": 2,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 29.0
         },
         {
           "n°": "3",
@@ -563,7 +651,10 @@
           "equipement(s)": "A",
           "nb_courses": 16,
           "nb_victoires": 3,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 8.4,
+          "cote_tendance": "",
+          "cote_reference": 4.2
         },
         {
           "n°": "5",
@@ -583,7 +674,10 @@
           "equipement(s)": "",
           "nb_courses": 18,
           "nb_victoires": 6,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 20.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         },
         {
           "n°": "6",
@@ -603,7 +697,10 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 2,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 1.8,
+          "cote_tendance": "",
+          "cote_reference": 3.3
         },
         {
           "n°": "7",
@@ -623,7 +720,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 20.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         },
         {
           "n°": "8",
@@ -643,7 +743,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 3,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 6.6
         },
         {
           "n°": "9",
@@ -663,7 +766,10 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 2,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 20.0,
+          "cote_tendance": "",
+          "cote_reference": 24.0
         },
         {
           "n°": "10",
@@ -683,7 +789,10 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 45.0,
+          "cote_tendance": "",
+          "cote_reference": 48.0
         },
         {
           "n°": "11",
@@ -703,7 +812,10 @@
           "equipement(s)": "",
           "nb_courses": 16,
           "nb_victoires": 3,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 64.0,
+          "cote_tendance": "",
+          "cote_reference": 48.0
         },
         {
           "n°": "12",
@@ -723,9 +835,15 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 6.0
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -754,7 +872,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 2.9,
+          "cote_tendance": "",
+          "cote_reference": 2.6
         },
         {
           "n°": "2",
@@ -774,7 +895,10 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 2,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 4.1,
+          "cote_tendance": "",
+          "cote_reference": 7.5
         },
         {
           "n°": "3",
@@ -794,7 +918,9 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 171.0,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -814,7 +940,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 2,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 2.4,
+          "cote_tendance": "",
+          "cote_reference": 2.1
         },
         {
           "n°": "5",
@@ -834,7 +963,10 @@
           "equipement(s)": "",
           "nb_courses": 22,
           "nb_victoires": 3,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 10.0
         },
         {
           "n°": "6",
@@ -854,7 +986,10 @@
           "equipement(s)": "",
           "nb_courses": 28,
           "nb_victoires": 4,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 21.0,
+          "cote_tendance": "",
+          "cote_reference": 22.0
         },
         {
           "n°": "7",
@@ -874,9 +1009,15 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 57.0,
+          "cote_tendance": "",
+          "cote_reference": 45.0
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -925,7 +1066,9 @@
           "equipement(s)": "",
           "nb_courses": 17,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 16.0,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -945,7 +1088,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 24.0,
+          "cote_tendance": "",
+          "cote_reference": 24.0
         },
         {
           "n°": "5",
@@ -965,7 +1111,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 18.0,
+          "cote_tendance": "",
+          "cote_reference": 16.0
         },
         {
           "n°": "6",
@@ -985,7 +1134,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 36.0,
+          "cote_tendance": "",
+          "cote_reference": 49.0
         },
         {
           "n°": "7",
@@ -1005,7 +1157,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 16.0
         },
         {
           "n°": "8",
@@ -1025,7 +1180,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 16.0,
+          "cote_tendance": "",
+          "cote_reference": 19.0
         },
         {
           "n°": "9",
@@ -1045,7 +1203,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 7.1
         },
         {
           "n°": "10",
@@ -1065,7 +1226,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.3,
+          "cote_tendance": "",
+          "cote_reference": 1.9
         },
         {
           "n°": "11",
@@ -1085,7 +1249,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 49.0,
+          "cote_tendance": "",
+          "cote_reference": 33.0
         },
         {
           "n°": "12",
@@ -1105,7 +1272,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.6,
+          "cote_tendance": "",
+          "cote_reference": 7.1
         },
         {
           "n°": "13",
@@ -1125,7 +1295,10 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 21.0,
+          "cote_tendance": "",
+          "cote_reference": 16.0
         },
         {
           "n°": "14",
@@ -1145,9 +1318,15 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.6,
+          "cote_tendance": "",
+          "cote_reference": 33.0
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1176,7 +1355,10 @@
           "equipement(s)": "",
           "nb_courses": 16,
           "nb_victoires": 4,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 5.7,
+          "cote_tendance": "",
+          "cote_reference": 6.4
         },
         {
           "n°": "2",
@@ -1196,7 +1378,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 8.0,
+          "cote_tendance": "",
+          "cote_reference": 16.0
         },
         {
           "n°": "3",
@@ -1216,7 +1401,10 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 2,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 25.0,
+          "cote_tendance": "",
+          "cote_reference": 24.0
         },
         {
           "n°": "4",
@@ -1236,7 +1424,10 @@
           "equipement(s)": "",
           "nb_courses": 13,
           "nb_victoires": 3,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 18.0,
+          "cote_tendance": "",
+          "cote_reference": 48.0
         },
         {
           "n°": "5",
@@ -1256,7 +1447,10 @@
           "equipement(s)": "",
           "nb_courses": 16,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 2.1,
+          "cote_tendance": "",
+          "cote_reference": 1.6
         },
         {
           "n°": "6",
@@ -1276,7 +1470,10 @@
           "equipement(s)": "",
           "nb_courses": 22,
           "nb_victoires": 3,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 7.0,
+          "cote_tendance": "",
+          "cote_reference": 6.0
         },
         {
           "n°": "7",
@@ -1296,7 +1493,10 @@
           "equipement(s)": "",
           "nb_courses": 27,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 31.0,
+          "cote_tendance": "",
+          "cote_reference": 24.0
         },
         {
           "n°": "8",
@@ -1316,7 +1516,10 @@
           "equipement(s)": "",
           "nb_courses": 21,
           "nb_victoires": 3,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 9.0,
+          "cote_tendance": "",
+          "cote_reference": 24.0
         },
         {
           "n°": "9",
@@ -1339,6 +1542,9 @@
           "nb_places": 3
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     }
   ]
