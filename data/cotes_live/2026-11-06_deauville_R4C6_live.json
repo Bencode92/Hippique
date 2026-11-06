@@ -4,125 +4,125 @@
   "reunion": 4,
   "heure_depart": 1793984760000,
   "distance": 2500,
-  "scraped_at": "2026-11-06T18:06:38.565881+01:00",
-  "minutes_avant_depart": -1,
+  "scraped_at": "2026-11-06T18:10:41.822464+01:00",
+  "minutes_avant_depart": -5,
   "participants": [
     {
       "numPmu": 1,
       "nom": "GUILLERETTE",
-      "cote_live": 20.0,
+      "cote_live": 19.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793984785000
+      "timestamp_cote": 1793984850000
     },
     {
       "numPmu": 2,
       "nom": "BOOGIE",
-      "cote_live": 10.0,
+      "cote_live": 11.0,
       "cote_reference": 3.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793984785000
+      "timestamp_cote": 1793984850000
     },
     {
       "numPmu": 3,
       "nom": "MISTERWINNER",
-      "cote_live": 14.0,
+      "cote_live": 15.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793984785000
+      "timestamp_cote": 1793984850000
     },
     {
       "numPmu": 4,
       "nom": "TAMYZ",
-      "cote_live": 4.5,
+      "cote_live": 4.8,
       "cote_reference": 6.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1793984785000
+      "timestamp_cote": 1793984850000
     },
     {
       "numPmu": 5,
       "nom": "HASAPIKO",
-      "cote_live": 7.5,
+      "cote_live": 8.0,
       "cote_reference": 7.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793984785000
+      "timestamp_cote": 1793984850000
     },
     {
       "numPmu": 7,
       "nom": "SAPRISTI",
-      "cote_live": 8.6,
+      "cote_live": 9.2,
       "cote_reference": 9.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793984785000
+      "timestamp_cote": 1793984850000
     },
     {
       "numPmu": 8,
       "nom": "CEDRUS",
-      "cote_live": 36.0,
+      "cote_live": 43.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793984785000
+      "timestamp_cote": 1793984850000
     },
     {
       "numPmu": 9,
       "nom": "SAMWEST",
-      "cote_live": 11.0,
+      "cote_live": 10.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793984785000
+      "timestamp_cote": 1793984850000
     },
     {
       "numPmu": 10,
       "nom": "STARAC",
-      "cote_live": 7.3,
+      "cote_live": 6.2,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793984785000
+      "timestamp_cote": 1793984850000
     },
     {
       "numPmu": 11,
       "nom": "FAVOLO",
-      "cote_live": 32.0,
+      "cote_live": 27.0,
       "cote_reference": 38.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793984785000
+      "timestamp_cote": 1793984850000
     },
     {
       "numPmu": 12,
       "nom": "LE GAST",
-      "cote_live": 8.2,
+      "cote_live": 8.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793984785000
+      "timestamp_cote": 1793984850000
     },
     {
       "numPmu": 13,
       "nom": "SONNAZ",
-      "cote_live": 25.0,
+      "cote_live": 21.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793984785000
+      "timestamp_cote": 1793984850000
     },
     {
       "numPmu": 14,
       "nom": "LADY ACHILLIA",
-      "cote_live": 104.0,
+      "cote_live": 123.0,
       "cote_reference": 61.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1793984785000
+      "timestamp_cote": 1793984850000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -448,6 +448,25 @@
         "12": 8.2,
         "13": 25.0,
         "14": 104.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-06T18:10:41.822464+01:00",
+      "minutes_avant_depart": -4.690636083333334,
+      "cotes": {
+        "1": 19.0,
+        "2": 11.0,
+        "3": 15.0,
+        "4": 4.8,
+        "5": 8.0,
+        "7": 9.2,
+        "8": 43.0,
+        "9": 10.0,
+        "10": 6.2,
+        "11": 27.0,
+        "12": 8.0,
+        "13": 21.0,
+        "14": 123.0
       }
     }
   ]
