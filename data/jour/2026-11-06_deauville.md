@@ -1,6 +1,6 @@
 # DEAUVILLE — 06/11/2026
 
-8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -84,26 +84,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DE BERD'HUIS
 
-*18h30 · plat · 2500 m · 16 partants · cotes de l'extraction*
+*18h30 · plat · 2500 m · 16 partants · cotes à T−29:21*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 5 | MAYAMAR | 6,3 | 6,30 | **+0,1 %** | C.LECOEUVRE | 13/135/1018/1541 |
-| 14 | NICK BOUTIQUE | 8,6 | 9,70 | -11,4 % | F.VALLE SKAR | 35/87/735/92 |
-| 9 | LADY AGATA | 8,7 | 10,26 | -15,2 % | T.PICCONE | 9/105/3746/894 |
-| 8 | WATT OHM | 9,6 | 10,59 | -9,4 % | A.BARON | 39/84/1061/973 |
-| 7 | HOT COLD | 11 | 12,92 | -14,9 % | H.JOURNIAC 5e | 43/170/377/183 |
-| 16 | FLAMBOYANTE | 11 | 12,36 | -11,0 % | L.ROUSSEL | 26/285/1206/2396 |
-| 2 | SOGYNT | 12 | 13,10 | -8,4 % | J.CLAUDIC | 38/81/899/2074 |
-| 1 | MEXICAN DREAM | 14 | 17,93 | -21,9 % | E.HARDOUIN | 27/256/543/1222 |
-| 11 | SANAH | 16 | 23,55 | -32,1 % | M.GRANDIN | 3/120/2/1350 |
-| 3 | APPLEBLOSSOMWHITE | 17 | 21,51 | -21,0 % | E.VERHESTRAETEN | 53/12/3168/367 |
-| 12 | APRIL FLOWER | 17 | 25,28 | -32,8 % | L.POGGIONOVO | 80/270/20/3488 |
-| 4 | MAITRE D'ARMES | 23 | 28,61 | -19,6 % | L.BAILS | 77/211/42/181 |
-| 6 | THE LAST FOAL | 32 | 40,40 | -20,8 % | M.VELON | 28/102/350/1922 |
-| 10 | PLUMBAGO | 35 | 42,78 | -18,2 % | P.REMOUE | 37/153/438/353 |
-| 15 | IN THE ARMY NOW | 38 | 51,44 | -26,1 % | A.BERNARD | 91/146/246/1777 |
-| 13 | LOUIS DEUX | 53 | 77,27 | -31,4 % | M.FAVRIAUX | 51/136/11/1411 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 5 | MAYAMAR | 5,7 | 6,3 | 6,45 | -11,6 % | C.LECOEUVRE | 13/135/1018/1541 |
+| 14 | NICK BOUTIQUE | 9,3 | 8,6 | 10,58 | -12,1 % | F.VALLE SKAR | 35/87/735/92 |
+| 9 | LADY AGATA | 9,4 | 8,7 | 11,18 | -15,9 % | T.PICCONE | 9/105/3746/894 |
+| 8 | WATT OHM | 10 | 9,6 | 11,05 | -9,5 % | A.BARON | 39/84/1061/973 |
+| 7 | HOT COLD | 11 | 11 | 12,86 | -14,5 % | H.JOURNIAC 5e | 43/170/377/183 |
+| 2 | SOGYNT | 12 | 12 | 13,04 | -7,9 % | J.CLAUDIC | 38/81/899/2074 |
+| 16 | FLAMBOYANTE | 13 | 11 | 14,95 | -13,0 % | L.ROUSSEL | 26/285/1206/2396 |
+| 11 | SANAH | 14 | 16 | 20,02 | -30,1 % | M.GRANDIN | 3/120/2/1350 |
+| 1 | MEXICAN DREAM | 15 | 14 | 19,34 | -22,4 % | E.HARDOUIN | 27/256/543/1222 |
+| 3 | APPLEBLOSSOMWHITE | 17 | 17 | 21,40 | -20,6 % | E.VERHESTRAETEN | 53/12/3168/367 |
+| 4 | MAITRE D'ARMES | 19 | 23 | 22,86 | -16,9 % | L.BAILS | 77/211/42/181 |
+| 12 | APRIL FLOWER | 19 | 17 | 28,65 | -33,7 % | L.POGGIONOVO | 80/270/20/3488 |
+| 6 | THE LAST FOAL | 30 | 32 | 37,39 | -19,8 % | M.VELON | 28/102/350/1922 |
+| 13 | LOUIS DEUX | 34 | 53 | 47,22 | -28,0 % | M.FAVRIAUX | 51/136/11/1411 |
+| 10 | PLUMBAGO | 35 | 35 | 42,58 | -17,8 % | P.REMOUE | 37/153/438/353 |
+| 15 | IN THE ARMY NOW | 49 | 38 | 67,67 | -27,6 % | A.BERNARD | 91/146/246/1777 |
 
 ### 6. PRIX DE BEAUFAI
 
