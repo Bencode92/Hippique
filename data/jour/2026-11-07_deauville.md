@@ -103,26 +103,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DE L'OPERATION SPRING
 
-*18h00 · plat · 1900 m · 16 partants · cotes à T−29:35*
+*18h00 · plat · 1900 m · 16 partants · cotes à T−25:35*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 1 | KIEVSKY | 6,2 | 4,9 | 5,46 | **+13,6 %** | E.HARDOUIN | 27/262/366/292 |
-| 5 | NEUSCHWANSTEIN | 7,1 | 7,9 | 8,94 | -20,6 % | M.GUYON 3e | 4/133/866/47 |
-| 4 | TIMEA | 9 | 9,7 | 10,57 | -14,9 % | Y.BARILLE | 82/146/53/771 |
-| 13 | HARTWOOD MAN | 9,5 | 8,5 | 11,26 | -15,7 % | C.LECOEUVRE | 13/133/816/237 |
-| 3 | JUDICIOUS GAME | 9,6 | 16 | 10,92 | -12,1 % | D.PROVOST | 33/34/291/405 |
-| 9 | SIN CITY | 13 | 9,3 | 18,26 | -28,8 % | J.MOUTARD | 61/94/24/424 |
-| 14 | INMATE | 13 | 16 | 15,57 | -16,5 % | A.MADAMET | 10/157/844/147 |
-| 8 | ANTINEA | 15 | 14 | 16,82 | -10,8 % | A.MOLINS | 34/108/173/1560 |
-| 11 | LADY LUCK | 18 | 16 | 22,76 | -20,9 % | A.LEMAITRE | 11/295/871/423 |
-| 2 | MANNE | 19 | 19 | 24,21 | -21,5 % | M.PROTTI | 30/187/618/305 |
-| 15 | ARYVESAN | 19 | 28 | 22,11 | -14,1 % | A.CRASTUS | 17/187/1960/2599 |
-| 10 | SIETE MISTERIOS | 21 | 18 | 28,47 | -26,2 % | L.BAILS | 77/146/31/1692 |
-| 6 | COMTE NOIR | 25 | 27 | 29,02 | -13,9 % | A.NICCO | 167/213/175/167 |
-| 7 | LOVE THE STARS | 43 | 42 | 55,54 | -22,6 % | L.GALLO | 45/126/1336/247 |
-| 16 | WITH ZEST | 55 | 78 | 79,70 | -31,0 % | F.VALLE SKAR | 35/396/29/379 |
-| 12 | TAKE ME I'M YOURS | 60 | 44 | 98,67 | -39,2 % | M.FAVRIAUX | 51/239/312/757 |
+| 1 | KIEVSKY | 5,9 | 4,9 | 6,51 | -9,4 % | E.HARDOUIN | 27/262/366/292 |
+| 5 | NEUSCHWANSTEIN | 6,6 | 7,9 | 8,32 | -20,6 % | M.GUYON 3e | 4/133/866/47 |
+| 4 | TIMEA | 9,1 | 9,7 | 10,85 | -16,1 % | Y.BARILLE | 82/146/53/771 |
+| 3 | JUDICIOUS GAME | 10 | 16 | 11,61 | -13,9 % | D.PROVOST | 33/34/291/405 |
+| 13 | HARTWOOD MAN | 10 | 8,5 | 12,12 | -17,5 % | C.LECOEUVRE | 13/133/816/237 |
+| 9 | SIN CITY | 11 | 9,3 | 15,18 | -27,6 % | J.MOUTARD | 61/94/24/424 |
+| 14 | INMATE | 11 | 16 | 12,98 | -15,2 % | A.MADAMET | 10/157/844/147 |
+| 8 | ANTINEA | 16 | 14 | 18,36 | -12,9 % | A.MOLINS | 34/108/173/1560 |
+| 11 | LADY LUCK | 18 | 16 | 23,06 | -22,0 % | A.LEMAITRE | 11/295/871/423 |
+| 15 | ARYVESAN | 19 | 28 | 22,40 | -15,2 % | A.CRASTUS | 17/187/1960/2599 |
+| 2 | MANNE | 22 | 19 | 29,05 | -24,3 % | M.PROTTI | 30/187/618/305 |
+| 10 | SIETE MISTERIOS | 22 | 18 | 30,43 | -27,7 % | L.BAILS | 77/146/31/1692 |
+| 6 | COMTE NOIR | 28 | 27 | 36,66 | -23,6 % | A.NICCO | 167/213/175/167 |
+| 7 | LOVE THE STARS | 48 | 42 | 63,40 | -24,3 % | L.GALLO | 45/126/1336/247 |
+| 16 | WITH ZEST | 58 | 78 | 85,40 | -32,1 % | F.VALLE SKAR | 35/396/29/379 |
+| 12 | TAKE ME I'M YOURS | 68 | 44 | 114,06 | -40,4 % | M.FAVRIAUX | 51/239/312/757 |
 
 ### 7. PRIX DE L'OPERATION WINDSOR
 
