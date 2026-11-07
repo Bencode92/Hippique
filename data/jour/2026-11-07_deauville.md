@@ -1,6 +1,6 @@
 # DEAUVILLE — 07/11/2026
 
-8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -103,26 +103,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DE L'OPERATION SPRING
 
-*18h00 · plat · 1900 m · 16 partants · cotes de l'extraction*
+*18h00 · plat · 1900 m · 16 partants · cotes à T−29:35*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 1 | KIEVSKY | 4,9 | 5,27 | -7,0 % | E.HARDOUIN | 27/262/366/292 |
-| 5 | NEUSCHWANSTEIN | 7,9 | 10,22 | -22,7 % | M.GUYON 3e | 4/133/866/47 |
-| 13 | HARTWOOD MAN | 8,5 | 9,97 | -14,8 % | C.LECOEUVRE | 13/133/816/237 |
-| 9 | SIN CITY | 9,3 | 11,35 | -18,1 % | J.MOUTARD | 61/94/24/424 |
-| 4 | TIMEA | 9,7 | 11,64 | -16,7 % | Y.BARILLE | 82/146/53/771 |
-| 8 | ANTINEA | 14 | 15,65 | -10,6 % | A.MOLINS | 34/108/173/1560 |
-| 3 | JUDICIOUS GAME | 16 | 21,92 | -27,0 % | D.PROVOST | 33/34/291/405 |
-| 11 | LADY LUCK | 16 | 20,02 | -20,1 % | A.LEMAITRE | 11/295/871/423 |
-| 14 | INMATE | 16 | 21,92 | -27,0 % | A.MADAMET | 10/157/844/147 |
-| 10 | SIETE MISTERIOS | 18 | 25,15 | -28,4 % | L.BAILS | 77/146/31/1692 |
-| 2 | MANNE | 19 | 24,42 | -22,2 % | M.PROTTI | 30/187/618/305 |
-| 6 | COMTE NOIR | 27 | 35,02 | -22,9 % | A.NICCO | 167/213/175/167 |
-| 15 | ARYVESAN | 28 | 34,72 | -19,4 % | A.CRASTUS | 17/187/1960/2599 |
-| 7 | LOVE THE STARS | 42 | 54,56 | -23,0 % | L.GALLO | 45/126/1336/247 |
-| 12 | TAKE ME I'M YOURS | 44 | 71,07 | -38,1 % | M.FAVRIAUX | 51/239/312/757 |
-| 16 | WITH ZEST | 78 | 116,24 | -32,9 % | F.VALLE SKAR | 35/396/29/379 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 1 | KIEVSKY | 6,2 | 4,9 | 5,46 | **+13,6 %** | E.HARDOUIN | 27/262/366/292 |
+| 5 | NEUSCHWANSTEIN | 7,1 | 7,9 | 8,94 | -20,6 % | M.GUYON 3e | 4/133/866/47 |
+| 4 | TIMEA | 9 | 9,7 | 10,57 | -14,9 % | Y.BARILLE | 82/146/53/771 |
+| 13 | HARTWOOD MAN | 9,5 | 8,5 | 11,26 | -15,7 % | C.LECOEUVRE | 13/133/816/237 |
+| 3 | JUDICIOUS GAME | 9,6 | 16 | 10,92 | -12,1 % | D.PROVOST | 33/34/291/405 |
+| 9 | SIN CITY | 13 | 9,3 | 18,26 | -28,8 % | J.MOUTARD | 61/94/24/424 |
+| 14 | INMATE | 13 | 16 | 15,57 | -16,5 % | A.MADAMET | 10/157/844/147 |
+| 8 | ANTINEA | 15 | 14 | 16,82 | -10,8 % | A.MOLINS | 34/108/173/1560 |
+| 11 | LADY LUCK | 18 | 16 | 22,76 | -20,9 % | A.LEMAITRE | 11/295/871/423 |
+| 2 | MANNE | 19 | 19 | 24,21 | -21,5 % | M.PROTTI | 30/187/618/305 |
+| 15 | ARYVESAN | 19 | 28 | 22,11 | -14,1 % | A.CRASTUS | 17/187/1960/2599 |
+| 10 | SIETE MISTERIOS | 21 | 18 | 28,47 | -26,2 % | L.BAILS | 77/146/31/1692 |
+| 6 | COMTE NOIR | 25 | 27 | 29,02 | -13,9 % | A.NICCO | 167/213/175/167 |
+| 7 | LOVE THE STARS | 43 | 42 | 55,54 | -22,6 % | L.GALLO | 45/126/1336/247 |
+| 16 | WITH ZEST | 55 | 78 | 79,70 | -31,0 % | F.VALLE SKAR | 35/396/29/379 |
+| 12 | TAKE ME I'M YOURS | 60 | 44 | 98,67 | -39,2 % | M.FAVRIAUX | 51/239/312/757 |
 
 ### 7. PRIX DE L'OPERATION WINDSOR
 
