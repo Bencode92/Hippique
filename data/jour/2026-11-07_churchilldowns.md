@@ -12,12 +12,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 2 | ALL ABOUT CROGE | 1,4 | M NICHOLLS |
-| 6 | L RANKIN | 3,2 | V R CARRASCO |
-| 3 | VALIANT HUMOR | 6,5 | L SAEZ |
+| 3 | VALIANT HUMOR | 3 | L SAEZ |
+| 2 | ALL ABOUT CROGE | 3,5 | M NICHOLLS |
+| 4 | ANTRAX | 3,8 | E MORALES |
+| 5 | MUIR WOODS | 7,6 | T GAFFALIONE |
+| 6 | L RANKIN | 7,6 | V R CARRASCO |
 | 1 | CITY OF LIFE | – | C A TORRES |
-| 4 | ANTRAX | – | E MORALES |
-| 5 | MUIR WOODS | – | T GAFFALIONE |
 
 ### 2. MAIDEN CLAIMING (3 YO & UP - DIRT)
 
@@ -26,9 +26,9 @@
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
 | 2 | MISTER LANDRY | 1,8 | A JIMENEZ |
-| 1 | DIVERSIFICATION | 5 | T GAFFALIONE |
-| 4 | MONEY MAN | 5 | R BEJARANO |
-| 6 | HEY DEY | 5 | B J HERNANDEZ, JR. |
+| 1 | DIVERSIFICATION | 3,3 | T GAFFALIONE |
+| 4 | MONEY MAN | 6,7 | R BEJARANO |
+| 6 | HEY DEY | 6,7 | B J HERNANDEZ, JR. |
 | 3 | INGLEBOROUGH | – | K J ASMUSSEN |
 | 5 | HAYBURN'S CASE | – | F ARRIETA |
 | 7 | LIBERTY VALANCE | – | E MORALES |
@@ -39,12 +39,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 2 | SCAT FREE | 1,8 | D GRISALES RAVE |
-| 6 | COOL COWBOY | 2,7 | L SAEZ |
-| 4 | RAVIN'S RANSOM | 4,1 | W A RODRIGUEZ |
+| 2 | SCAT FREE | 2,6 | D GRISALES RAVE |
+| 4 | RAVIN'S RANSOM | 2,9 | W A RODRIGUEZ |
+| 6 | COOL COWBOY | 3,9 | L SAEZ |
+| 5 | BARKSDALE | 5,8 | C A TORRES |
 | 1 | NO EASY DAYS | – | R BEJARANO |
 | 3 | FORT SAM | – | E ESQUIVEL |
-| 5 | BARKSDALE | – | C A TORRES |
 | 7 | ELI'S PROMISE | – | K J ASMUSSEN |
 
 ### 4. CLAIMING (3 YO & UP - FILLIES & MARES - DIRT)
@@ -67,12 +67,12 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | LUCKY BERNADINE | 1,6 | F GEROUX | –/–/–/– |
-| 2 | ILLUSTRATING | 3 | W A RODRIGUEZ | –/–/–/– |
-| 3 | NEW PURPOSE | 6,7 | J L ORTIZ | –/–/–/46 |
-| 7 | EARLY AUTUMN | 13 | L SAEZ | –/–/–/– |
+| 1 | LUCKY BERNADINE | 2,1 | F GEROUX | –/–/–/– |
+| 2 | ILLUSTRATING | 3,9 | W A RODRIGUEZ | –/–/–/– |
+| 5 | JERRI JO | 4,2 | A ACHARD | –/–/–/– |
+| 3 | NEW PURPOSE | 8,5 | J L ORTIZ | –/–/–/46 |
+| 7 | EARLY AUTUMN | 17 | L SAEZ | –/–/–/– |
 | 4 | LECOMPTE'S RUN | – | L MACHADO | –/–/–/– |
-| 5 | JERRI JO | – | A ACHARD | –/–/–/– |
 | 6 | OLYMPIC BELLE | – | D SHEEHY | –/–/–/– |
 | 8 | KIPLIN | – | E ESQUIVEL | –/–/–/– |
 | 9 | MAKE IT SKATE | – | T GAFFALIONE | –/–/–/– |
@@ -116,14 +116,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 6 | TEAO | 3,2 | L SAEZ |
-| 8 | OLE CRAZY BONE | 3,7 | T GAFFALIONE |
-| 2 | MERCANTE | 5,4 | W A RODRIGUEZ |
-| 4 | LAMBETH | 5,4 | J L ORTIZ |
-| 5 | KUPUNA | 5,4 | F ARRIETA |
+| 8 | OLE CRAZY BONE | 2,5 | T GAFFALIONE |
+| 7 | PLENSA | 4,1 | A CONCEPCION |
+| 6 | TEAO | 5,6 | L SAEZ |
+| 2 | MERCANTE | 9,4 | W A RODRIGUEZ |
+| 4 | LAMBETH | 9,4 | J L ORTIZ |
+| 5 | KUPUNA | 9,4 | F ARRIETA |
 | 1 | CARCANO | – | J A TORRES |
 | 3 | VOTE NO | – | U RISPOLI |
-| 7 | PLENSA | – | A CONCEPCION |
 
 ### 9. MAIDEN CLAIMING (2 YO - FILLIES - DIRT)
 
@@ -151,17 +151,17 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 7 | OBLITERATION | 2,3 | L SAEZ |
-| 2 | TEJANO TWIST | 2,6 | F ARRIETA |
-| 1 | GOLDEN AFTERNOON | 5,8 | U RISPOLI |
-| 3 | VIKING | 5,8 | T GAFFALIONE |
+| 2 | TEJANO TWIST | 2,2 | F ARRIETA |
+| 7 | OBLITERATION | 3,3 | L SAEZ |
+| 1 | GOLDEN AFTERNOON | 4,5 | U RISPOLI |
+| 11 | TAP ME A SONG | 9,1 | E ESQUIVEL |
+| 3 | VIKING | 18 | T GAFFALIONE |
 | 4 | C K WONDER | – | M GARCIA |
 | 5 | LIPS SAY BLISS | – | C A TORRES |
 | 6 | ECHO AGAIN | – | J A TORRES |
 | 8 | GREENWICH VILLAGE | – | J L ORTIZ |
 | 9 | DREAMINBLUE | – | R BEJARANO |
 | 10 | JIMMY RULES | – | W A RODRIGUEZ |
-| 11 | TAP ME A SONG | – | E ESQUIVEL |
 | 12 | YO BANANA BOY | – | G CORRALES |
 | 13 | JACK'S PROMISE | – | B J HERNANDEZ, JR. |
 

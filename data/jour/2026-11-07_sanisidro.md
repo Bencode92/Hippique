@@ -12,11 +12,11 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | FUTURE MIND | 1,7 | KEVIN BANEGAS | –/–/–/– |
-| 6 | MR MORRIS | 1,7 | WILSON ROSARIO MOREYRA | –/–/–/– |
+| 2 | FUTURE MIND | 1,5 | KEVIN BANEGAS | –/–/–/– |
+| 4 | MASHAL | 3,5 | MARTIN JAVIER VALLE | –/–/–/– |
+| 6 | MR MORRIS | 5,2 | WILSON ROSARIO MOREYRA | –/–/–/– |
 | 1 | BEST SELLER | – | LEO NICOLAS ACUNA | –/–/–/– |
 | 3 | GO DANCING GO | – | IVAN MONASTEROLO | –/–/–/– |
-| 4 | MASHAL | – | MARTIN JAVIER VALLE | –/–/–/– |
 | 5 | MESSIAS | – | BRIAN RODRIGO ENRIQUE | –/–/–/– |
 | 7 | PASOS AL COSTADO | – | JUAN CRUZ VILLAGRA | –/–/–/– |
 
@@ -56,10 +56,10 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 2 | EGOCENTRIC | 1,6 | FACUNDO MARCELO CORIA |
-| 4 | MATUTE JOY | 3,6 | JORGE MARCELINO ORTIZ |
-| 3 | MAJO CANDY | 7,3 | KEVIN BANEGAS |
-| 5 | NUESTRO | 7,3 | IVAN MONASTEROLO |
+| 2 | EGOCENTRIC | 2 | FACUNDO MARCELO CORIA |
+| 3 | MAJO CANDY | 3 | KEVIN BANEGAS |
+| 4 | MATUTE JOY | 4,5 | JORGE MARCELINO ORTIZ |
+| 5 | NUESTRO | 9,1 | IVAN MONASTEROLO |
 
 ### 6. PREMIO PINBALL WIZARD 2020
 
@@ -95,13 +95,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | EQUAL MOSTAZA | 2,6 | JUAN CARLOS NORIEGA | –/–/–/– |
-| 4 | ACENTO FINAL | 5,8 | GUSTAVO EMILIANO CALVENTE | –/–/–/– |
-| 7 | HONEST BOY | 5,8 | EDUARDO ORTEGA PAVON | –/–/–/– |
-| 11 | CAZADOR DE ARECO | 5,8 | MARTIN JAVIER VALLE | –/–/–/– |
-| 1 | DON LOGRADO | 11 | KEVIN BANEGAS | –/–/–/– |
-| 8 | SENOR SANDRO | 11 | WILLIAM PEREYRA | –/–/–/– |
-| 9 | CURIOUS SONG | 11 | IVAN MONASTEROLO | –/–/–/– |
+| 7 | HONEST BOY | 1,3 | EDUARDO ORTEGA PAVON | –/–/–/– |
+| 2 | EQUAL MOSTAZA | 6,7 | JUAN CARLOS NORIEGA | –/–/–/– |
+| 4 | ACENTO FINAL | 14 | GUSTAVO EMILIANO CALVENTE | –/–/–/– |
+| 11 | CAZADOR DE ARECO | 14 | MARTIN JAVIER VALLE | –/–/–/– |
+| 1 | DON LOGRADO | 29 | KEVIN BANEGAS | –/–/–/– |
+| 8 | SENOR SANDRO | 29 | WILLIAM PEREYRA | –/–/–/– |
+| 9 | CURIOUS SONG | 29 | IVAN MONASTEROLO | –/–/–/– |
 | 3 | FULL KEYNOTE | – | BRIAN RODRIGO ENRIQUE | –/–/–/– |
 | 5 | ORPEN AGAIN | – | PABLO DAMIAN CARRIZO | –/–/–/– |
 | 6 | OUT OF THE BLUE | – | ADRIAN MAXIMILIANO GIANNETTI | –/–/–/– |
@@ -114,11 +114,12 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | RUBY ROSE | 2,2 | RODRIGO DANIEL BASCUNAN | –/–/–/– |
-| 14 | OASIS MOON | 2,5 | JUAN PABLO PAOLONI | –/–/–/– |
-| 3 | LOOK AT TO ME | 10 | WILLIAM PEREYRA | –/–/–/– |
-| 6 | LA SANTA CANDIDA | 10 | IVAN MONASTEROLO | –/–/–/– |
-| 8 | FLOR DEL VALLE | 10 | KEVIN BANEGAS | –/–/–/– |
+| 2 | RUBY ROSE | 2,6 | RODRIGO DANIEL BASCUNAN | –/–/–/– |
+| 14 | OASIS MOON | 2,9 | JUAN PABLO PAOLONI | –/–/–/– |
+| 13 | CONI CHIC | 5,8 | TOMAS DANIEL BAEZ | –/–/–/– |
+| 3 | LOOK AT TO ME | 11 | WILLIAM PEREYRA | –/–/–/– |
+| 6 | LA SANTA CANDIDA | 11 | IVAN MONASTEROLO | –/–/–/– |
+| 8 | FLOR DEL VALLE | 11 | KEVIN BANEGAS | –/–/–/– |
 | 1 | DEEP FEELING | – | URBANO JOSE CHAVES | –/–/–/– |
 | 4 | SIESTA | – | GONZALO DAMIAN BORDA | –/–/–/– |
 | 5 | KOREAN GIRL | – | JORGE LUIS PERALTA | –/–/–/– |
@@ -127,7 +128,6 @@
 | 10 | SALEIA | – | LEO NICOLAS ACUNA | –/–/–/– |
 | 11 | GUNAKALI | – | MARTIN JAVIER VALLE | –/–/–/– |
 | 12 | ASPEN BEACH | – | THIAGO EVER LARREA FRUTOS | –/–/–/– |
-| 13 | CONI CHIC | – | TOMAS DANIEL BAEZ | –/–/–/– |
 
 ### 10. PREMIO SIXTIES SONG 2018
 
