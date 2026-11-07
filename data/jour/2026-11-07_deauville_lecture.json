@@ -1,0 +1,5372 @@
+{
+"date": "2026-11-07",
+"hippodrome": "DEAUVILLE",
+"releve": "2026-11-07 17:54",
+"cotes_publiees": true,
+"histo": {
+"plat": 201184,
+"obstacle": 32711
+},
+"courses": [
+{
+"num": 1,
+"nom": "PRIX DE BRICQUEBEC-EN-COTENTIN",
+"heure": "13h58",
+"disc": "plat",
+"plat": true,
+"dist": 2500,
+"cat": "handicap divise",
+"alloc": 20200,
+"bandes": {
+"h": 200,
+"f": 100,
+"g": 200
+},
+"groupe_dispo": true,
+"partants": [
+{
+"n": 1,
+"nom": "ADVENTURA",
+"cote": 3.1,
+"jk": "A.MADAMET",
+"en": "JPH .DUBOIS",
+"musique": "6p2p4p3p0p4p3p4p3p4p",
+"hb": {
+"r": 31,
+"tot": 61,
+"n": 88,
+"v": 6,
+"tx": 7,
+"rp": 0.87
+},
+"hb_brut": {
+"n": 88,
+"v": 6
+},
+"fb": {
+"r": 43,
+"tot": 131,
+"n": 596,
+"v": 61,
+"tx": 10,
+"rp": 1.11
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 64,
+"tot": 141,
+"n": 626,
+"v": 42,
+"tx": 7,
+"rp": 0.93
+},
+"ici": [
+4
+],
+"en_ici": {
+"r": 262,
+"tot": 858,
+"n": 67,
+"v": 4,
+"tx": 6,
+"rp": 0.73
+}
+},
+{
+"n": 2,
+"nom": "ATALAYA",
+"cote": 18.0,
+"jk": "N.BOUVRY",
+"en": "FR.MONFORT (S)",
+"musique": "6p2p2p4p1p2p5p0p2p7p",
+"hb": null,
+"hb_brut": null,
+"fb": null,
+"fb_brut": null,
+"g": null,
+"h": null,
+"ici": [
+4,
+12
+],
+"en_ici": {
+"r": 193,
+"tot": 858,
+"n": 341,
+"v": 29,
+"tx": 9,
+"rp": 1.04
+}
+},
+{
+"n": 3,
+"nom": "PRINCENOIR",
+"cote": 3.2,
+"jk": "H.LEBOUC",
+"en": "A.FOUASSIER",
+"musique": "4p3p1p0p0p1p6p0p(25)0p",
+"hb": {
+"r": 16,
+"tot": 61,
+"n": 67,
+"v": 7,
+"tx": 10,
+"rp": 1.65
+},
+"hb_brut": {
+"n": 67,
+"v": 7
+},
+"fb": {
+"r": 86,
+"tot": 131,
+"n": 432,
+"v": 31,
+"tx": 7,
+"rp": 0.86
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 68,
+"tot": 141,
+"n": 350,
+"v": 23,
+"tx": 7,
+"rp": 1.14
+},
+"ici": [],
+"en_ici": {
+"r": 245,
+"tot": 858,
+"n": 199,
+"v": 13,
+"tx": 7,
+"rp": 0.77
+}
+},
+{
+"n": 4,
+"nom": "CHERRY PIE",
+"cote": 5.5,
+"jk": "M.GUYON",
+"en": "E.LIBAUD (S)",
+"musique": "8p2p0p7p0p5p",
+"hb": {
+"r": 8,
+"tot": 61,
+"n": 118,
+"v": 15,
+"tx": 13,
+"rp": 0.93
+},
+"hb_brut": {
+"n": 118,
+"v": 15
+},
+"fb": {
+"r": 6,
+"tot": 131,
+"n": 765,
+"v": 128,
+"tx": 17,
+"rp": 1.02
+},
+"fb_brut": null,
+"g": {
+"r": 4,
+"tot": 6,
+"n": 55,
+"v": 8,
+"tx": 14,
+"rp": 0.94
+},
+"h": {
+"r": 16,
+"tot": 141,
+"n": 1121,
+"v": 156,
+"tx": 14,
+"rp": 0.94
+},
+"ici": [
+11
+],
+"en_ici": {
+"r": 181,
+"tot": 858,
+"n": 123,
+"v": 11,
+"tx": 9,
+"rp": 1.04
+}
+},
+{
+"n": 5,
+"nom": "DECLA",
+"cote": 18.0,
+"jk": "A.MENARD-LEDAUPHIN",
+"en": "L&M.VIEL (S)",
+"musique": "7p5p3p5p2p2p2p2p6p7p",
+"hb": null,
+"hb_brut": null,
+"fb": null,
+"fb_brut": null,
+"g": null,
+"h": null,
+"ici": [
+7
+],
+"en_ici": {
+"r": 230,
+"tot": 858,
+"n": 14,
+"v": 1,
+"tx": 7,
+"rp": 0.73
+}
+},
+{
+"n": 6,
+"nom": "ZOLIA D'OROUX",
+"cote": 8.0,
+"jk": "T.BREBION",
+"en": "ED.MONFORT (S)",
+"musique": "4p4p9p2p5p2p6p8p",
+"hb": null,
+"hb_brut": {
+"n": 2,
+"v": 1
+},
+"fb": null,
+"fb_brut": null,
+"g": null,
+"h": null,
+"ici": [
+4
+],
+"en_ici": {
+"r": 280,
+"tot": 858,
+"n": 218,
+"v": 12,
+"tx": 6,
+"rp": 0.61
+}
+},
+{
+"n": 7,
+"nom": "MASTER EMERY",
+"cote": 41.0,
+"jk": "A.MOLINS",
+"en": "J.PLANQUE (S)",
+"musique": "6p5p8p9p",
+"hb": {
+"r": 35,
+"tot": 61,
+"n": 46,
+"v": 3,
+"tx": 7,
+"rp": 1.24
+},
+"hb_brut": {
+"n": 46,
+"v": 3
+},
+"fb": {
+"r": 57,
+"tot": 131,
+"n": 303,
+"v": 27,
+"tx": 9,
+"rp": 1.22
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 60,
+"tot": 141,
+"n": 244,
+"v": 17,
+"tx": 7,
+"rp": 1.18
+},
+"ici": [],
+"en_ici": {
+"r": 273,
+"tot": 858,
+"n": 36,
+"v": 2,
+"tx": 6,
+"rp": 1.17
+}
+},
+{
+"n": 8,
+"nom": "SLALOM",
+"cote": 16.0,
+"jk": "F.VALLE SKAR",
+"en": "ALEX.FRACAS",
+"musique": "4p7p4p1p5p6p3p",
+"hb": {
+"r": 40,
+"tot": 61,
+"n": 41,
+"v": 2,
+"tx": 5,
+"rp": 0.81
+},
+"hb_brut": {
+"n": 41,
+"v": 2
+},
+"fb": {
+"r": 82,
+"tot": 131,
+"n": 241,
+"v": 18,
+"tx": 8,
+"rp": 1.07
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 70,
+"tot": 141,
+"n": 326,
+"v": 21,
+"tx": 6,
+"rp": 1.07
+},
+"ici": [],
+"en_ici": {
+"r": 360,
+"tot": 858,
+"n": 27,
+"v": 0,
+"tx": 0,
+"rp": 0.0
+}
+},
+{
+"n": 9,
+"nom": "INDY",
+"cote": 56.0,
+"jk": "J.MOUTARD",
+"en": "FR.MONFORT (S)",
+"musique": "0p8p0p3p5p5p",
+"hb": {
+"r": 28,
+"tot": 61,
+"n": 40,
+"v": 3,
+"tx": 8,
+"rp": 1.17
+},
+"hb_brut": {
+"n": 40,
+"v": 3
+},
+"fb": {
+"r": 62,
+"tot": 131,
+"n": 206,
+"v": 18,
+"tx": 9,
+"rp": 1.28
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 73,
+"tot": 141,
+"n": 207,
+"v": 13,
+"tx": 6,
+"rp": 0.99
+},
+"ici": [],
+"en_ici": {
+"r": 193,
+"tot": 858,
+"n": 341,
+"v": 29,
+"tx": 9,
+"rp": 1.04
+}
+}
+]
+},
+{
+"num": 2,
+"nom": "PRIX DU PONT D'OUILLY",
+"heure": "14h33",
+"disc": "plat",
+"plat": true,
+"dist": 2500,
+"cat": "handicap divise",
+"alloc": 24000,
+"bandes": {
+"h": 200,
+"f": 100,
+"g": 200
+},
+"groupe_dispo": true,
+"partants": [
+{
+"n": 1,
+"nom": "MOONEY VISION",
+"cote": 16.0,
+"jk": "A.LEMAITRE",
+"en": "H.BOUJARDINE",
+"musique": "8p3p3p4p5p1p2p(25)9p",
+"hb": {
+"r": 13,
+"tot": 61,
+"n": 93,
+"v": 11,
+"tx": 12,
+"rp": 1.46
+},
+"hb_brut": {
+"n": 93,
+"v": 11
+},
+"fb": {
+"r": 78,
+"tot": 131,
+"n": 511,
+"v": 40,
+"tx": 8,
+"rp": 0.87
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 48,
+"tot": 141,
+"n": 746,
+"v": 64,
+"tx": 9,
+"rp": 1.07
+},
+"ici": [
+9,
+3
+],
+"en_ici": {
+"r": 192,
+"tot": 858,
+"n": 35,
+"v": 3,
+"tx": 9,
+"rp": 1.06
+}
+},
+{
+"n": 2,
+"nom": "DERNI CHOP",
+"cote": 16.0,
+"jk": "D.PROVOST",
+"en": "M.CESANDRI (S)",
+"musique": "4p1p2p3p7p4p2p2p3p6p",
+"hb": {
+"r": 2,
+"tot": 61,
+"n": 29,
+"v": 6,
+"tx": 21,
+"rp": 1.65
+},
+"hb_brut": {
+"n": 29,
+"v": 6
+},
+"fb": {
+"r": 4,
+"tot": 131,
+"n": 224,
+"v": 40,
+"tx": 18,
+"rp": 1.57
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 53,
+"tot": 141,
+"n": 213,
+"v": 16,
+"tx": 8,
+"rp": 0.9
+},
+"ici": [],
+"en_ici": {
+"r": 87,
+"tot": 858,
+"n": 40,
+"v": 6,
+"tx": 15,
+"rp": 2.03
+}
+},
+{
+"n": 3,
+"nom": "ADICTA",
+"cote": 2.1,
+"jk": "M.BARZALONA",
+"en": "VH.MENDES DOS SANTOS",
+"musique": "2p4p1p3p2p7p(25)2p2p4p",
+"hb": {
+"r": 6,
+"tot": 61,
+"n": 77,
+"v": 10,
+"tx": 13,
+"rp": 0.76
+},
+"hb_brut": {
+"n": 77,
+"v": 10
+},
+"fb": {
+"r": 3,
+"tot": 131,
+"n": 598,
+"v": 116,
+"tx": 19,
+"rp": 1.02
+},
+"fb_brut": null,
+"g": {
+"r": 1,
+"tot": 6,
+"n": 50,
+"v": 13,
+"tx": 26,
+"rp": 1.31
+},
+"h": {
+"r": 9,
+"tot": 141,
+"n": 776,
+"v": 125,
+"tx": 16,
+"rp": 1.01
+},
+"ici": [],
+"en_ici": {
+"r": 857,
+"tot": 858,
+"n": 1,
+"v": 0,
+"tx": 0,
+"rp": 0.0
+}
+},
+{
+"n": 4,
+"nom": "SAINT MONCHIK",
+"cote": 7.1,
+"jk": "A.CRASTUS",
+"en": "MME A.WATTEL",
+"musique": "5p9p1p4p4p4p2p8p",
+"hb": {
+"r": 41,
+"tot": 61,
+"n": 72,
+"v": 3,
+"tx": 4,
+"rp": 0.63
+},
+"hb_brut": {
+"n": 72,
+"v": 3
+},
+"fb": {
+"r": 54,
+"tot": 131,
+"n": 675,
+"v": 62,
+"tx": 9,
+"rp": 1.01
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 87,
+"tot": 141,
+"n": 521,
+"v": 28,
+"tx": 5,
+"rp": 0.87
+},
+"ici": [],
+"en_ici": {
+"r": 103,
+"tot": 858,
+"n": 79,
+"v": 11,
+"tx": 14,
+"rp": 1.43
+}
+},
+{
+"n": 5,
+"nom": "LADY GATSBY",
+"cote": 23.0,
+"jk": "L.GALLO",
+"en": "J.LEROY",
+"musique": "6p7p0p3p7p2p4p5p3p",
+"hb": null,
+"hb_brut": {
+"n": 14,
+"v": 3
+},
+"fb": {
+"r": 106,
+"tot": 131,
+"n": 71,
+"v": 4,
+"tx": 6,
+"rp": 0.69
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 39,
+"tot": 141,
+"n": 98,
+"v": 9,
+"tx": 9,
+"rp": 1.3
+},
+"ici": [],
+"en_ici": {
+"r": 195,
+"tot": 858,
+"n": 107,
+"v": 9,
+"tx": 8,
+"rp": 1.74
+}
+},
+{
+"n": 6,
+"nom": "LILLY'S LIGHT",
+"cote": 18.0,
+"jk": "A.MADAMET",
+"en": "M.BRASME (S)",
+"musique": "4p4p3p5p2p1p1p9p",
+"hb": {
+"r": 31,
+"tot": 61,
+"n": 88,
+"v": 6,
+"tx": 7,
+"rp": 0.87
+},
+"hb_brut": {
+"n": 88,
+"v": 6
+},
+"fb": {
+"r": 43,
+"tot": 131,
+"n": 596,
+"v": 61,
+"tx": 10,
+"rp": 1.11
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 64,
+"tot": 141,
+"n": 626,
+"v": 42,
+"tx": 7,
+"rp": 0.93
+},
+"ici": [],
+"en_ici": {
+"r": 236,
+"tot": 858,
+"n": 160,
+"v": 11,
+"tx": 7,
+"rp": 0.92
+}
+},
+{
+"n": 7,
+"nom": "SYDNEY SUNSET",
+"cote": 55.0,
+"jk": "C.GROSBOIS",
+"en": "D.BONILLA (S)",
+"musique": "0p4p7p0p0p0p0p4p(25)3p",
+"hb": {
+"r": 50,
+"tot": 61,
+"n": 44,
+"v": 1,
+"tx": 2,
+"rp": 0.39
+},
+"hb_brut": {
+"n": 44,
+"v": 1
+},
+"fb": {
+"r": 64,
+"tot": 131,
+"n": 270,
+"v": 23,
+"tx": 8,
+"rp": 0.92
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 110,
+"tot": 141,
+"n": 121,
+"v": 4,
+"tx": 3,
+"rp": 0.67
+},
+"ici": [
+3
+],
+"en_ici": {
+"r": 191,
+"tot": 858,
+"n": 23,
+"v": 2,
+"tx": 9,
+"rp": 1.09
+}
+},
+{
+"n": 8,
+"nom": "AUSTRALIAN ROMANCE",
+"cote": 5.6,
+"jk": "E.HARDOUIN",
+"en": "CLEMENT & HERMANS (S)",
+"musique": "2p6p2p2p2p2p7p3p0p6p",
+"hb": {
+"r": 48,
+"tot": 61,
+"n": 74,
+"v": 2,
+"tx": 3,
+"rp": 0.39
+},
+"hb_brut": {
+"n": 74,
+"v": 2
+},
+"fb": {
+"r": 99,
+"tot": 131,
+"n": 471,
+"v": 31,
+"tx": 7,
+"rp": 0.84
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 82,
+"tot": 141,
+"n": 583,
+"v": 34,
+"tx": 6,
+"rp": 0.84
+},
+"ici": [
+2
+],
+"en_ici": {
+"r": 146,
+"tot": 858,
+"n": 48,
+"v": 5,
+"tx": 10,
+"rp": 0.98
+}
+},
+{
+"n": 9,
+"nom": "SQUARE DU CROISIC",
+"cote": 13.0,
+"jk": "P.REMOUE",
+"en": "K.TAVARES (S)",
+"musique": "4p5p6p0p",
+"hb": {
+"r": 49,
+"tot": 61,
+"n": 39,
+"v": 1,
+"tx": 3,
+"rp": 0.34
+},
+"hb_brut": {
+"n": 39,
+"v": 1
+},
+"fb": {
+"r": 80,
+"tot": 131,
+"n": 206,
+"v": 16,
+"tx": 8,
+"rp": 0.9
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 102,
+"tot": 141,
+"n": 118,
+"v": 5,
+"tx": 4,
+"rp": 0.65
+},
+"ici": [],
+"en_ici": {
+"r": 125,
+"tot": 858,
+"n": 8,
+"v": 1,
+"tx": 12,
+"rp": 1.24
+}
+},
+{
+"n": 10,
+"nom": "DONNALUCATA",
+"cote": 23.0,
+"jk": "D.SANTIAGO",
+"en": "S.CERULIS",
+"musique": "9p3p3p2p3p4p6p2p8p0p",
+"hb": {
+"r": 34,
+"tot": 61,
+"n": 61,
+"v": 4,
+"tx": 7,
+"rp": 0.93
+},
+"hb_brut": {
+"n": 61,
+"v": 4
+},
+"fb": {
+"r": 87,
+"tot": 131,
+"n": 407,
+"v": 29,
+"tx": 7,
+"rp": 0.85
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 79,
+"tot": 141,
+"n": 371,
+"v": 22,
+"tx": 6,
+"rp": 0.91
+},
+"ici": [
+5,
+2
+],
+"en_ici": {
+"r": 203,
+"tot": 858,
+"n": 483,
+"v": 40,
+"tx": 8,
+"rp": 1.03
+}
+}
+]
+},
+{
+"num": 3,
+"nom": "PRIX DE L'OPERATION EPSOM",
+"heure": "15h15",
+"disc": "plat",
+"plat": true,
+"dist": 1900,
+"cat": "handicap divise",
+"alloc": 50900,
+"bandes": {
+"h": 200,
+"f": 100,
+"g": 200
+},
+"groupe_dispo": false,
+"partants": [
+{
+"n": 1,
+"nom": "ZELORO",
+"cote": 3.2,
+"jk": "M.GUYON",
+"en": "P&J.BRANDT (S)",
+"musique": "2p4p2p6p1p4p4p(25)2p1p",
+"hb": {
+"r": 5,
+"tot": 88,
+"n": 358,
+"v": 54,
+"tx": 15,
+"rp": 1.0
+},
+"hb_brut": {
+"n": 358,
+"v": 54
+},
+"fb": {
+"r": 3,
+"tot": 154,
+"n": 1723,
+"v": 285,
+"tx": 16,
+"rp": 1.0
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 16,
+"tot": 141,
+"n": 1121,
+"v": 156,
+"tx": 14,
+"rp": 0.94
+},
+"ici": [
+8,
+8,
+6,
+6,
+2,
+2
+],
+"en_ici": {
+"r": 127,
+"tot": 858,
+"n": 192,
+"v": 23,
+"tx": 12,
+"rp": 1.17
+}
+},
+{
+"n": 2,
+"nom": "QUIET KING",
+"cote": 7.5,
+"jk": "T.BACHELOT",
+"en": "S.WATTEL (S)",
+"musique": "6p0p6p2p2p(25)3p1p1p9p",
+"hb": {
+"r": 19,
+"tot": 88,
+"n": 265,
+"v": 27,
+"tx": 10,
+"rp": 1.07
+},
+"hb_brut": {
+"n": 265,
+"v": 27
+},
+"fb": {
+"r": 46,
+"tot": 154,
+"n": 1075,
+"v": 97,
+"tx": 9,
+"rp": 0.89
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 33,
+"tot": 141,
+"n": 793,
+"v": 83,
+"tx": 10,
+"rp": 1.08
+},
+"ici": [
+5,
+1,
+1
+],
+"en_ici": {
+"r": 113,
+"tot": 858,
+"n": 404,
+"v": 52,
+"tx": 13,
+"rp": 1.17
+}
+},
+{
+"n": 3,
+"nom": "HUMAN EVOLUTION",
+"cote": 39.0,
+"jk": "M.PROTTI",
+"en": "HA.PANTALL (S)",
+"musique": "0p8p0p1p4p1p5p1p2p",
+"hb": null,
+"hb_brut": {
+"n": 4,
+"v": 0
+},
+"fb": {
+"r": 50,
+"tot": 154,
+"n": 125,
+"v": 11,
+"tx": 9,
+"rp": 0.88
+},
+"fb_brut": null,
+"g": null,
+"h": null,
+"ici": [
+5,
+6,
+10,
+3,
+2,
+12
+],
+"en_ici": {
+"r": 251,
+"tot": 858,
+"n": 272,
+"v": 17,
+"tx": 6,
+"rp": 0.8
+}
+},
+{
+"n": 4,
+"nom": "AL MAX",
+"cote": 7.8,
+"jk": "A.LEMAITRE",
+"en": "P.DECOUZ (S)",
+"musique": "7p7p9p0p2p5p3p1p(25)9p",
+"hb": {
+"r": 25,
+"tot": 88,
+"n": 249,
+"v": 23,
+"tx": 9,
+"rp": 1.26
+},
+"hb_brut": {
+"n": 249,
+"v": 23
+},
+"fb": {
+"r": 36,
+"tot": 154,
+"n": 1226,
+"v": 115,
+"tx": 9,
+"rp": 1.13
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 48,
+"tot": 141,
+"n": 746,
+"v": 64,
+"tx": 9,
+"rp": 1.07
+},
+"ici": [
+7
+],
+"en_ici": {
+"r": 196,
+"tot": 858,
+"n": 132,
+"v": 11,
+"tx": 8,
+"rp": 0.89
+}
+},
+{
+"n": 5,
+"nom": "OPALUS ROAD",
+"cote": 102.0,
+"jk": "L.PLOMMEE",
+"en": "JM.BEGUIGNE",
+"musique": "0p0p(25)1p3p(24)8p4p0p7p",
+"hb": {
+"r": 75,
+"tot": 88,
+"n": 41,
+"v": 1,
+"tx": 2,
+"rp": 0.33
+},
+"hb_brut": {
+"n": 41,
+"v": 1
+},
+"fb": {
+"r": 57,
+"tot": 154,
+"n": 154,
+"v": 13,
+"tx": 8,
+"rp": 0.88
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 45,
+"tot": 141,
+"n": 67,
+"v": 6,
+"tx": 9,
+"rp": 1.2
+},
+"ici": [
+13,
+8
+],
+"en_ici": {
+"r": 198,
+"tot": 858,
+"n": 48,
+"v": 4,
+"tx": 8,
+"rp": 1.18
+}
+},
+{
+"n": 6,
+"nom": "PIQUOISEAU",
+"cote": 17.0,
+"jk": "S.PASQUIER",
+"en": "D.ARTU (S)",
+"musique": "6p0p0p9p5p9p4p(25)1p0p",
+"hb": {
+"r": 16,
+"tot": 88,
+"n": 227,
+"v": 26,
+"tx": 11,
+"rp": 1.15
+},
+"hb_brut": {
+"n": 227,
+"v": 26
+},
+"fb": {
+"r": 17,
+"tot": 154,
+"n": 918,
+"v": 110,
+"tx": 12,
+"rp": 1.13
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 31,
+"tot": 141,
+"n": 669,
+"v": 71,
+"tx": 11,
+"rp": 0.99
+},
+"ici": [
+1
+],
+"en_ici": {
+"r": 332,
+"tot": 858,
+"n": 61,
+"v": 2,
+"tx": 3,
+"rp": 0.63
+}
+},
+{
+"n": 7,
+"nom": "FEARLESS CHEETAH",
+"cote": 14.0,
+"jk": "J.CLAUDIC",
+"en": "F.BRESSON (S)",
+"musique": "5p0p6p0p0p6p1p2p6p8p",
+"hb": {
+"r": 44,
+"tot": 88,
+"n": 50,
+"v": 3,
+"tx": 6,
+"rp": 1.01
+},
+"hb_brut": {
+"n": 50,
+"v": 3
+},
+"fb": {
+"r": 98,
+"tot": 154,
+"n": 282,
+"v": 18,
+"tx": 6,
+"rp": 1.16
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 91,
+"tot": 141,
+"n": 123,
+"v": 6,
+"tx": 5,
+"rp": 0.97
+},
+"ici": [
+13,
+3,
+1,
+12,
+6,
+5
+],
+"en_ici": {
+"r": 268,
+"tot": 858,
+"n": 53,
+"v": 3,
+"tx": 6,
+"rp": 0.72
+}
+},
+{
+"n": 8,
+"nom": "WEDGEWOOD PEARL",
+"cote": 100.0,
+"jk": "A.MOLINS",
+"en": "P.CHEVIGNY DE",
+"musique": "0p1p5p(25)4p4p6p4p3p6p",
+"hb": {
+"r": 73,
+"tot": 88,
+"n": 92,
+"v": 3,
+"tx": 3,
+"rp": 0.58
+},
+"hb_brut": {
+"n": 92,
+"v": 3
+},
+"fb": {
+"r": 99,
+"tot": 154,
+"n": 567,
+"v": 36,
+"tx": 6,
+"rp": 0.98
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 60,
+"tot": 141,
+"n": 244,
+"v": 17,
+"tx": 7,
+"rp": 1.18
+},
+"ici": [
+6,
+2,
+9,
+3,
+6,
+16
+],
+"en_ici": {
+"r": 110,
+"tot": 858,
+"n": 69,
+"v": 9,
+"tx": 13,
+"rp": 1.7
+}
+},
+{
+"n": 9,
+"nom": "EAST GREY",
+"cote": 24.0,
+"jk": "M.FAVRIAUX",
+"en": "E.LIBAUD (S)",
+"musique": "0p1p0p3p1p(25)8p0p8p4p",
+"hb": {
+"r": 72,
+"tot": 88,
+"n": 59,
+"v": 2,
+"tx": 3,
+"rp": 0.42
+},
+"hb_brut": {
+"n": 59,
+"v": 2
+},
+"fb": {
+"r": 30,
+"tot": 154,
+"n": 313,
+"v": 31,
+"tx": 10,
+"rp": 1.12
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 107,
+"tot": 141,
+"n": 187,
+"v": 7,
+"tx": 4,
+"rp": 0.56
+},
+"ici": [
+8,
+1,
+11,
+13
+],
+"en_ici": {
+"r": 181,
+"tot": 858,
+"n": 123,
+"v": 11,
+"tx": 9,
+"rp": 1.04
+}
+},
+{
+"n": 10,
+"nom": "ALLURRE",
+"cote": 53.0,
+"jk": "A.MADAMET",
+"en": "M.CESANDRI (S)",
+"musique": "9p1p6p4p0p1p9p9p(25)0p",
+"hb": {
+"r": 59,
+"tot": 88,
+"n": 213,
+"v": 10,
+"tx": 5,
+"rp": 0.65
+},
+"hb_brut": {
+"n": 213,
+"v": 10
+},
+"fb": {
+"r": 87,
+"tot": 154,
+"n": 1078,
+"v": 77,
+"tx": 7,
+"rp": 0.85
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 64,
+"tot": 141,
+"n": 626,
+"v": 42,
+"tx": 7,
+"rp": 0.93
+},
+"ici": [
+1,
+3,
+7,
+12,
+14,
+9
+],
+"en_ici": {
+"r": 87,
+"tot": 858,
+"n": 40,
+"v": 6,
+"tx": 15,
+"rp": 2.03
+}
+},
+{
+"n": 11,
+"nom": "CICCIO BOY",
+"cote": 47.0,
+"jk": "M.JUSTUM",
+"en": "M.JUSTUM",
+"musique": "6p9p0p0p0p5p5p0p2p0p",
+"hb": {
+"r": 63,
+"tot": 88,
+"n": 45,
+"v": 2,
+"tx": 4,
+"rp": 1.14
+},
+"hb_brut": {
+"n": 45,
+"v": 2
+},
+"fb": {
+"r": 129,
+"tot": 154,
+"n": 220,
+"v": 10,
+"tx": 4,
+"rp": 0.94
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 121,
+"tot": 141,
+"n": 90,
+"v": 2,
+"tx": 2,
+"rp": 0.54
+},
+"ici": [
+13,
+3,
+7,
+7,
+10,
+6
+],
+"en_ici": {
+"r": 329,
+"tot": 858,
+"n": 29,
+"v": 1,
+"tx": 3,
+"rp": 0.89
+}
+},
+{
+"n": 12,
+"nom": "ALMAROMY",
+"cote": 34.0,
+"jk": "A.CRASTUS",
+"en": "D.BONILLA (S)",
+"musique": "3p8p1p3p0p5p3p0p4p7p",
+"hb": {
+"r": 45,
+"tot": 88,
+"n": 186,
+"v": 11,
+"tx": 6,
+"rp": 0.98
+},
+"hb_brut": {
+"n": 186,
+"v": 11
+},
+"fb": {
+"r": 88,
+"tot": 154,
+"n": 1381,
+"v": 96,
+"tx": 7,
+"rp": 0.79
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 87,
+"tot": 141,
+"n": 521,
+"v": 28,
+"tx": 5,
+"rp": 0.87
+},
+"ici": [
+3,
+11,
+3,
+3
+],
+"en_ici": {
+"r": 191,
+"tot": 858,
+"n": 23,
+"v": 2,
+"tx": 9,
+"rp": 1.09
+}
+},
+{
+"n": 13,
+"nom": "HERMES WOOD",
+"cote": 22.0,
+"jk": "E.HARDOUIN",
+"en": "C.FEY (S)",
+"musique": "1p0p0p0p4p3p4p1p6p4p",
+"hb": {
+"r": 39,
+"tot": 88,
+"n": 229,
+"v": 15,
+"tx": 7,
+"rp": 0.92
+},
+"hb_brut": {
+"n": 229,
+"v": 15
+},
+"fb": {
+"r": 60,
+"tot": 154,
+"n": 1097,
+"v": 90,
+"tx": 8,
+"rp": 1.1
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 82,
+"tot": 141,
+"n": 583,
+"v": 34,
+"tx": 6,
+"rp": 0.84
+},
+"ici": [
+6,
+3,
+13,
+12,
+1
+],
+"en_ici": {
+"r": 270,
+"tot": 858,
+"n": 71,
+"v": 4,
+"tx": 6,
+"rp": 0.8
+}
+},
+{
+"n": 14,
+"nom": "HER CHRISTOPHER",
+"cote": 11.0,
+"jk": "D.PROVOST",
+"en": "M.CESANDRI (S)",
+"musique": "1p9p6p1p7p4p2p2p(25)3p",
+"hb": {
+"r": 20,
+"tot": 88,
+"n": 79,
+"v": 8,
+"tx": 10,
+"rp": 1.21
+},
+"hb_brut": {
+"n": 79,
+"v": 8
+},
+"fb": {
+"r": 31,
+"tot": 154,
+"n": 389,
+"v": 38,
+"tx": 10,
+"rp": 1.15
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 53,
+"tot": 141,
+"n": 213,
+"v": 16,
+"tx": 8,
+"rp": 0.9
+},
+"ici": [
+4,
+1,
+6,
+1
+],
+"en_ici": {
+"r": 87,
+"tot": 858,
+"n": 40,
+"v": 6,
+"tx": 15,
+"rp": 2.03
+}
+},
+{
+"n": 15,
+"nom": "LAVENDIN",
+"cote": 15.0,
+"jk": "H.LEBOUC",
+"en": "A.FOUASSIER",
+"musique": "7p7p5p2p3p2p5p1p1p1p",
+"hb": {
+"r": 56,
+"tot": 88,
+"n": 144,
+"v": 7,
+"tx": 5,
+"rp": 0.83
+},
+"hb_brut": {
+"n": 144,
+"v": 7
+},
+"fb": {
+"r": 63,
+"tot": 154,
+"n": 558,
+"v": 45,
+"tx": 8,
+"rp": 1.08
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 68,
+"tot": 141,
+"n": 350,
+"v": 23,
+"tx": 7,
+"rp": 1.14
+},
+"ici": [
+1,
+6,
+5,
+7
+],
+"en_ici": {
+"r": 245,
+"tot": 858,
+"n": 199,
+"v": 13,
+"tx": 7,
+"rp": 0.77
+}
+},
+{
+"n": 16,
+"nom": "SPEEDY GREEN",
+"cote": 22.0,
+"jk": "C.GROSBOIS",
+"en": "D.BONILLA (S)",
+"musique": "6p3p1p9p1p6p0p0p4p6p",
+"hb": {
+"r": 64,
+"tot": 88,
+"n": 46,
+"v": 2,
+"tx": 4,
+"rp": 1.08
+},
+"hb_brut": {
+"n": 46,
+"v": 2
+},
+"fb": {
+"r": 75,
+"tot": 154,
+"n": 278,
+"v": 21,
+"tx": 8,
+"rp": 1.35
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 110,
+"tot": 141,
+"n": 121,
+"v": 4,
+"tx": 3,
+"rp": 0.67
+},
+"ici": [
+1,
+1
+],
+"en_ici": {
+"r": 191,
+"tot": 858,
+"n": 23,
+"v": 2,
+"tx": 9,
+"rp": 1.09
+}
+}
+]
+},
+{
+"num": 4,
+"nom": "PRIX PORLEZZA",
+"heure": "15h50",
+"disc": "plat",
+"plat": true,
+"dist": 1500,
+"cat": "course a conditions",
+"alloc": 24700,
+"bandes": {
+"h": 200,
+"f": 100,
+"g": 200
+},
+"groupe_dispo": false,
+"partants": [
+{
+"n": 1,
+"nom": "TUMBLER",
+"cote": 23.0,
+"jk": "C.LECOEUVRE",
+"en": "N.CAULLERY",
+"musique": "0p5p7p8p7p9p3p(25)5p4p",
+"hb": {
+"r": 29,
+"tot": 89,
+"n": 277,
+"v": 24,
+"tx": 9,
+"rp": 1.25
+},
+"hb_brut": {
+"n": 277,
+"v": 24
+},
+"fb": {
+"r": 61,
+"tot": 148,
+"n": 1237,
+"v": 102,
+"tx": 8,
+"rp": 1.0
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 40,
+"tot": 141,
+"n": 638,
+"v": 58,
+"tx": 9,
+"rp": 1.2
+},
+"ici": [
+12,
+10,
+4,
+2,
+4,
+5
+],
+"en_ici": {
+"r": 235,
+"tot": 858,
+"n": 578,
+"v": 40,
+"tx": 7,
+"rp": 0.87
+}
+},
+{
+"n": 2,
+"nom": "CHICA DE CIUDAD",
+"cote": 14.0,
+"jk": "A.MOLINS",
+"en": "P.CHEVIGNY DE",
+"musique": "8p0p2p3p5p(25)3p0p3p1p",
+"hb": {
+"r": 16,
+"tot": 89,
+"n": 94,
+"v": 11,
+"tx": 12,
+"rp": 1.79
+},
+"hb_brut": {
+"n": 94,
+"v": 11
+},
+"fb": {
+"r": 74,
+"tot": 148,
+"n": 535,
+"v": 39,
+"tx": 7,
+"rp": 1.07
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 60,
+"tot": 141,
+"n": 244,
+"v": 17,
+"tx": 7,
+"rp": 1.18
+},
+"ici": [
+1,
+1,
+10,
+1,
+3,
+2
+],
+"en_ici": {
+"r": 110,
+"tot": 858,
+"n": 69,
+"v": 9,
+"tx": 13,
+"rp": 1.7
+}
+},
+{
+"n": 3,
+"nom": "QUASAR",
+"cote": 5.8,
+"jk": "A.MADAMET",
+"en": "X.BLANCHET (S)",
+"musique": "4p5p9pDp(25)1p1p5p5p3p",
+"hb": {
+"r": 43,
+"tot": 89,
+"n": 271,
+"v": 18,
+"tx": 7,
+"rp": 0.94
+},
+"hb_brut": {
+"n": 271,
+"v": 18
+},
+"fb": {
+"r": 63,
+"tot": 148,
+"n": 1220,
+"v": 99,
+"tx": 8,
+"rp": 1.04
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 64,
+"tot": 141,
+"n": 626,
+"v": 42,
+"tx": 7,
+"rp": 0.93
+},
+"ici": [
+1,
+3,
+1
+],
+"en_ici": {
+"r": 189,
+"tot": 858,
+"n": 46,
+"v": 4,
+"tx": 9,
+"rp": 1.26
+}
+},
+{
+"n": 4,
+"nom": "VERTBOIS",
+"cote": 5.1,
+"jk": "B.LABATE",
+"en": "A&L.FABRE (S)",
+"musique": "(25)3p2p3p8p5p2p6p1p",
+"hb": null,
+"hb_brut": {
+"n": 4,
+"v": 0
+},
+"fb": null,
+"fb_brut": null,
+"g": null,
+"h": null,
+"ici": [
+5,
+3,
+1,
+2,
+3,
+3
+],
+"en_ici": {
+"r": 45,
+"tot": 858,
+"n": 52,
+"v": 11,
+"tx": 21,
+"rp": 1.06
+}
+},
+{
+"n": 5,
+"nom": "SIAM PARAGON",
+"cote": 2.4,
+"jk": "A.LEMAITRE",
+"en": "G.DOLEUZE",
+"musique": "4p2p3p6p(25)6p8p3p7p2p",
+"hb": {
+"r": 34,
+"tot": 89,
+"n": 336,
+"v": 27,
+"tx": 8,
+"rp": 0.91
+},
+"hb_brut": {
+"n": 336,
+"v": 27
+},
+"fb": {
+"r": 32,
+"tot": 148,
+"n": 1370,
+"v": 131,
+"tx": 10,
+"rp": 1.05
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 48,
+"tot": 141,
+"n": 746,
+"v": 64,
+"tx": 9,
+"rp": 1.07
+},
+"ici": [
+1,
+1,
+4,
+8,
+6,
+2
+],
+"en_ici": {
+"r": 109,
+"tot": 858,
+"n": 152,
+"v": 20,
+"tx": 13,
+"rp": 1.42
+}
+},
+{
+"n": 6,
+"nom": "ABLOOM",
+"cote": 5.1,
+"jk": "M.BARZALONA",
+"en": "FH.GRAFFARD (S)",
+"musique": "6p(25)0p1p1p2p2p6p5p",
+"hb": {
+"r": 5,
+"tot": 89,
+"n": 349,
+"v": 58,
+"tx": 17,
+"rp": 1.07
+},
+"hb_brut": {
+"n": 349,
+"v": 58
+},
+"fb": {
+"r": 3,
+"tot": 148,
+"n": 1604,
+"v": 308,
+"tx": 19,
+"rp": 1.06
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 9,
+"tot": 141,
+"n": 776,
+"v": 125,
+"tx": 16,
+"rp": 1.01
+},
+"ici": [],
+"en_ici": {
+"r": 58,
+"tot": 858,
+"n": 358,
+"v": 71,
+"tx": 20,
+"rp": 1.1
+}
+},
+{
+"n": 7,
+"nom": "LADY ILZE",
+"cote": 16.0,
+"jk": "S.PASQUIER",
+"en": "HA.PANTALL (S)",
+"musique": "8p7p2p4p5p(25)7p5p1p4p",
+"hb": {
+"r": 23,
+"tot": 89,
+"n": 309,
+"v": 33,
+"tx": 11,
+"rp": 0.98
+},
+"hb_brut": {
+"n": 309,
+"v": 33
+},
+"fb": {
+"r": 18,
+"tot": 148,
+"n": 1133,
+"v": 132,
+"tx": 12,
+"rp": 1.04
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 31,
+"tot": 141,
+"n": 669,
+"v": 71,
+"tx": 11,
+"rp": 0.99
+},
+"ici": [],
+"en_ici": {
+"r": 251,
+"tot": 858,
+"n": 272,
+"v": 17,
+"tx": 6,
+"rp": 0.8
+}
+}
+]
+},
+{
+"num": 5,
+"nom": "PRIX DE L'OPERATION MARTLET",
+"heure": "16h25",
+"disc": "plat",
+"plat": true,
+"dist": 1900,
+"cat": "handicap divise",
+"alloc": 17300,
+"bandes": {
+"h": 200,
+"f": 100,
+"g": 200
+},
+"groupe_dispo": false,
+"partants": [
+{
+"n": 1,
+"nom": "RIVER QUARTZ",
+"cote": 5.2,
+"jk": "R.MANGIONE",
+"en": "X.RICHARD",
+"musique": "2p0p0p9p0p0p(25)2p2p2p",
+"hb": {
+"r": 51,
+"tot": 88,
+"n": 131,
+"v": 7,
+"tx": 5,
+"rp": 1.15
+},
+"hb_brut": {
+"n": 131,
+"v": 7
+},
+"fb": {
+"r": 100,
+"tot": 154,
+"n": 585,
+"v": 37,
+"tx": 6,
+"rp": 1.16
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 52,
+"tot": 141,
+"n": 387,
+"v": 30,
+"tx": 8,
+"rp": 1.41
+},
+"ici": [
+4,
+11,
+2
+],
+"en_ici": {
+"r": 381,
+"tot": 858,
+"n": 16,
+"v": 0,
+"tx": 0,
+"rp": 0.0
+}
+},
+{
+"n": 2,
+"nom": "KAHOUNA",
+"cote": 10.0,
+"jk": "M.FLEURY",
+"en": "MME I.MONNIER",
+"musique": "2p4p3p5p0p9p3p4p2p5p",
+"hb": {
+"r": 61,
+"tot": 88,
+"n": 22,
+"v": 1,
+"tx": 5,
+"rp": 0.95
+},
+"hb_brut": {
+"n": 22,
+"v": 1
+},
+"fb": {
+"r": 53,
+"tot": 154,
+"n": 81,
+"v": 7,
+"tx": 9,
+"rp": 1.57
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 120,
+"tot": 141,
+"n": 44,
+"v": 1,
+"tx": 2,
+"rp": 0.51
+},
+"ici": [
+13,
+11,
+2,
+12
+],
+"en_ici": {
+"r": 531,
+"tot": 858,
+"n": 4,
+"v": 0,
+"tx": 0,
+"rp": 0.0
+}
+},
+{
+"n": 3,
+"nom": "ESKANDANI",
+"cote": 31.0,
+"jk": "L.ROUSSEL",
+"en": "CH.PLISSON (S)",
+"musique": "0p0p0p0p3p2p9p1p8p0p",
+"hb": {
+"r": 55,
+"tot": 88,
+"n": 60,
+"v": 3,
+"tx": 5,
+"rp": 1.07
+},
+"hb_brut": {
+"n": 60,
+"v": 3
+},
+"fb": {
+"r": 55,
+"tot": 154,
+"n": 379,
+"v": 32,
+"tx": 8,
+"rp": 1.02
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 85,
+"tot": 141,
+"n": 129,
+"v": 7,
+"tx": 5,
+"rp": 0.92
+},
+"ici": [
+9,
+6,
+7,
+5,
+16,
+16
+],
+"en_ici": {
+"r": 238,
+"tot": 858,
+"n": 225,
+"v": 15,
+"tx": 7,
+"rp": 1.4
+}
+},
+{
+"n": 4,
+"nom": "JOUKOVKA",
+"cote": 7.5,
+"jk": "E.HARDOUIN",
+"en": "MME C.AUVRAY",
+"musique": "0p9p0p6p4p8p8p2p4p1p",
+"hb": {
+"r": 39,
+"tot": 88,
+"n": 229,
+"v": 15,
+"tx": 7,
+"rp": 0.92
+},
+"hb_brut": {
+"n": 229,
+"v": 15
+},
+"fb": {
+"r": 60,
+"tot": 154,
+"n": 1097,
+"v": 90,
+"tx": 8,
+"rp": 1.1
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 82,
+"tot": 141,
+"n": 583,
+"v": 34,
+"tx": 6,
+"rp": 0.84
+},
+"ici": [
+9,
+11,
+2,
+8,
+9,
+13
+],
+"en_ici": {
+"r": 302,
+"tot": 858,
+"n": 66,
+"v": 3,
+"tx": 5,
+"rp": 0.65
+}
+},
+{
+"n": 5,
+"nom": "PROXIMA CENTAURI",
+"cote": 13.0,
+"jk": "J.CLAUDIC",
+"en": "CH.PLISSON (S)",
+"musique": "8p8p0p0p0p0p0p0p0p8p",
+"hb": {
+"r": 44,
+"tot": 88,
+"n": 50,
+"v": 3,
+"tx": 6,
+"rp": 1.01
+},
+"hb_brut": {
+"n": 50,
+"v": 3
+},
+"fb": {
+"r": 98,
+"tot": 154,
+"n": 282,
+"v": 18,
+"tx": 6,
+"rp": 1.16
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 91,
+"tot": 141,
+"n": 123,
+"v": 6,
+"tx": 5,
+"rp": 0.97
+},
+"ici": [
+11,
+16,
+11,
+11,
+8,
+8
+],
+"en_ici": {
+"r": 238,
+"tot": 858,
+"n": 225,
+"v": 15,
+"tx": 7,
+"rp": 1.4
+}
+},
+{
+"n": 6,
+"nom": "PURBRIGHT DRALLIV",
+"cote": 72.0,
+"jk": "Y.BARILLE",
+"en": "G.JUILLET",
+"musique": "5p6p3p0p6p0p2p0p4p0p",
+"hb": null,
+"hb_brut": {
+"n": 8,
+"v": 0
+},
+"fb": {
+"r": 28,
+"tot": 154,
+"n": 80,
+"v": 8,
+"tx": 10,
+"rp": 1.68
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 133,
+"tot": 141,
+"n": 19,
+"v": 0,
+"tx": 0,
+"rp": 0.0
+},
+"ici": [
+4,
+4
+],
+"en_ici": {
+"r": 356,
+"tot": 858,
+"n": 39,
+"v": 0,
+"tx": 0,
+"rp": 0.0
+}
+},
+{
+"n": 7,
+"nom": "SEVEN TIMER",
+"cote": 6.6,
+"jk": "A.LEMAITRE",
+"en": "S.CERULIS",
+"musique": "1p0p7p0p0p0p0p0p5p",
+"hb": {
+"r": 25,
+"tot": 88,
+"n": 249,
+"v": 23,
+"tx": 9,
+"rp": 1.26
+},
+"hb_brut": {
+"n": 249,
+"v": 23
+},
+"fb": {
+"r": 36,
+"tot": 154,
+"n": 1226,
+"v": 115,
+"tx": 9,
+"rp": 1.13
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 48,
+"tot": 141,
+"n": 746,
+"v": 64,
+"tx": 9,
+"rp": 1.07
+},
+"ici": [
+1
+],
+"en_ici": {
+"r": 203,
+"tot": 858,
+"n": 483,
+"v": 40,
+"tx": 8,
+"rp": 1.03
+}
+},
+{
+"n": 8,
+"nom": "MANA SIS",
+"cote": 16.0,
+"jk": "P.REMOUE",
+"en": "J.RESIMONT",
+"musique": "5p0p0p(25)3p3p4p9p0p",
+"hb": {
+"r": 78,
+"tot": 88,
+"n": 38,
+"v": 0,
+"tx": 0,
+"rp": 0.0
+},
+"hb_brut": {
+"n": 38,
+"v": 0
+},
+"fb": {
+"r": 135,
+"tot": 154,
+"n": 229,
+"v": 10,
+"tx": 4,
+"rp": 0.64
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 102,
+"tot": 141,
+"n": 118,
+"v": 5,
+"tx": 4,
+"rp": 0.65
+},
+"ici": [
+4,
+4
+],
+"en_ici": {
+"r": 164,
+"tot": 858,
+"n": 31,
+"v": 3,
+"tx": 10,
+"rp": 1.58
+}
+},
+{
+"n": 9,
+"nom": "PARMENIDE",
+"cote": 41.0,
+"jk": "C.GROSBOIS",
+"en": "MME S.JAFFRELOT-BEDON",
+"musique": "0p7p0p7p3p0p(25)9p4p3p",
+"hb": {
+"r": 64,
+"tot": 88,
+"n": 46,
+"v": 2,
+"tx": 4,
+"rp": 1.08
+},
+"hb_brut": {
+"n": 46,
+"v": 2
+},
+"fb": {
+"r": 75,
+"tot": 154,
+"n": 278,
+"v": 21,
+"tx": 8,
+"rp": 1.35
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 110,
+"tot": 141,
+"n": 121,
+"v": 4,
+"tx": 3,
+"rp": 0.67
+},
+"ici": [
+6,
+3,
+3,
+4,
+9,
+14
+],
+"en_ici": {
+"r": 362,
+"tot": 858,
+"n": 23,
+"v": 0,
+"tx": 0,
+"rp": 0.0
+}
+},
+{
+"n": 10,
+"nom": "KARKHOV",
+"cote": 13.0,
+"jk": "D.SANTIAGO",
+"en": "J.RESIMONT",
+"musique": "8p8p7p(25)0p6p1p5p7p",
+"hb": {
+"r": 68,
+"tot": 88,
+"n": 122,
+"v": 5,
+"tx": 4,
+"rp": 0.66
+},
+"hb_brut": {
+"n": 122,
+"v": 5
+},
+"fb": {
+"r": 102,
+"tot": 154,
+"n": 620,
+"v": 37,
+"tx": 6,
+"rp": 0.78
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 79,
+"tot": 141,
+"n": 371,
+"v": 22,
+"tx": 6,
+"rp": 0.91
+},
+"ici": [
+11
+],
+"en_ici": {
+"r": 164,
+"tot": 858,
+"n": 31,
+"v": 3,
+"tx": 10,
+"rp": 1.58
+}
+},
+{
+"n": 11,
+"nom": "ZOUBAREVA",
+"cote": 8.9,
+"jk": "C.BELMONT",
+"en": "M.ANDRIANTSOA RATSIMIHAH",
+"musique": "6p3p0p6p8p8p0p0p0p1p",
+"hb": {
+"r": 47,
+"tot": 88,
+"n": 35,
+"v": 2,
+"tx": 6,
+"rp": 1.05
+},
+"hb_brut": {
+"n": 35,
+"v": 2
+},
+"fb": {
+"r": 78,
+"tot": 154,
+"n": 224,
+"v": 17,
+"tx": 8,
+"rp": 1.12
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 112,
+"tot": 141,
+"n": 93,
+"v": 3,
+"tx": 3,
+"rp": 0.59
+},
+"ici": [
+8,
+4,
+14,
+6,
+10,
+6
+],
+"en_ici": {
+"r": 389,
+"tot": 858,
+"n": 15,
+"v": 0,
+"tx": 0,
+"rp": 0.0
+}
+},
+{
+"n": 12,
+"nom": "SECRET GLORY",
+"cote": 22.0,
+"jk": "F.VALLE SKAR",
+"en": "M.KREBS (S)",
+"musique": "0p5p7p8p9p3p6p6p9p0p",
+"hb": {
+"r": 17,
+"tot": 88,
+"n": 90,
+"v": 10,
+"tx": 11,
+"rp": 1.91
+},
+"hb_brut": {
+"n": 90,
+"v": 10
+},
+"fb": {
+"r": 81,
+"tot": 154,
+"n": 573,
+"v": 42,
+"tx": 7,
+"rp": 1.16
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 70,
+"tot": 141,
+"n": 326,
+"v": 21,
+"tx": 6,
+"rp": 1.07
+},
+"ici": [
+15,
+9,
+9,
+12,
+5,
+8
+],
+"en_ici": {
+"r": 250,
+"tot": 858,
+"n": 175,
+"v": 11,
+"tx": 6,
+"rp": 0.81
+}
+},
+{
+"n": 13,
+"nom": "LA FILLE DE BERLIN",
+"cote": 31.0,
+"jk": "H.LEBOUC",
+"en": "J.RESIMONT",
+"musique": "7p0p0p0p(25)0p0p1p2p5p",
+"hb": {
+"r": 56,
+"tot": 88,
+"n": 144,
+"v": 7,
+"tx": 5,
+"rp": 0.83
+},
+"hb_brut": {
+"n": 144,
+"v": 7
+},
+"fb": {
+"r": 63,
+"tot": 154,
+"n": 558,
+"v": 45,
+"tx": 8,
+"rp": 1.08
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 68,
+"tot": 141,
+"n": 350,
+"v": 23,
+"tx": 7,
+"rp": 1.14
+},
+"ici": [
+12,
+15
+],
+"en_ici": {
+"r": 164,
+"tot": 858,
+"n": 31,
+"v": 3,
+"tx": 10,
+"rp": 1.58
+}
+},
+{
+"n": 14,
+"nom": "MAESTRO CHOP",
+"cote": 15.0,
+"jk": "P.CHEYER",
+"en": "P.DOLLE",
+"musique": "4p0p2p0p0p6p0p4p7p8p",
+"hb": {
+"r": 31,
+"tot": 88,
+"n": 54,
+"v": 4,
+"tx": 7,
+"rp": 1.67
+},
+"hb_brut": {
+"n": 54,
+"v": 4
+},
+"fb": {
+"r": 89,
+"tot": 154,
+"n": 379,
+"v": 26,
+"tx": 7,
+"rp": 1.46
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 88,
+"tot": 141,
+"n": 150,
+"v": 8,
+"tx": 5,
+"rp": 1.18
+},
+"ici": [
+10,
+6,
+12,
+3,
+13,
+4
+],
+"en_ici": {
+"r": 358,
+"tot": 858,
+"n": 33,
+"v": 0,
+"tx": 0,
+"rp": 0.0
+}
+},
+{
+"n": 15,
+"nom": "PRINCESS LAURA",
+"cote": 51.0,
+"jk": "J.LACROIX",
+"en": "B.LEGROS (S)",
+"musique": "0p0p7p5p2p0p6p0p5p7p",
+"hb": {
+"r": 83,
+"tot": 88,
+"n": 21,
+"v": 0,
+"tx": 0,
+"rp": 0.0
+},
+"hb_brut": {
+"n": 21,
+"v": 0
+},
+"fb": {
+"r": 123,
+"tot": 154,
+"n": 99,
+"v": 5,
+"tx": 5,
+"rp": 1.14
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 124,
+"tot": 141,
+"n": 54,
+"v": 1,
+"tx": 2,
+"rp": 0.49
+},
+"ici": [
+12,
+8,
+4,
+1,
+2,
+13
+],
+"en_ici": {
+"r": 344,
+"tot": 858,
+"n": 110,
+"v": 3,
+"tx": 3,
+"rp": 0.61
+}
+},
+{
+"n": 16,
+"nom": "ALPENGEIST",
+"cote": 68.0,
+"jk": "G.MEURY",
+"en": "B.DE KONINCK",
+"musique": "9p0p0p0p0p8p0p0p5p0p",
+"hb": {
+"r": 15,
+"tot": 88,
+"n": 26,
+"v": 3,
+"tx": 12,
+"rp": 1.3
+},
+"hb_brut": {
+"n": 26,
+"v": 3
+},
+"fb": {
+"r": 114,
+"tot": 154,
+"n": 176,
+"v": 10,
+"tx": 6,
+"rp": 0.93
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 109,
+"tot": 141,
+"n": 118,
+"v": 4,
+"tx": 3,
+"rp": 0.52
+},
+"ici": [
+9,
+3,
+8,
+5,
+13,
+9
+],
+"en_ici": {
+"r": 374,
+"tot": 858,
+"n": 19,
+"v": 0,
+"tx": 0,
+"rp": 0.0
+}
+}
+]
+},
+{
+"num": 6,
+"nom": "PRIX DE L'OPERATION SPRING",
+"heure": "17h02",
+"disc": "plat",
+"plat": true,
+"dist": 1900,
+"cat": "handicap divise",
+"alloc": 19200,
+"bandes": {
+"h": 200,
+"f": 100,
+"g": 200
+},
+"groupe_dispo": false,
+"partants": [
+{
+"n": 1,
+"nom": "KIEVSKY",
+"cote": 7.6,
+"jk": "E.HARDOUIN",
+"en": "MME G.GADBLED",
+"musique": "0p2p0p4p1p8p0p7p0p9p",
+"hb": {
+"r": 39,
+"tot": 88,
+"n": 229,
+"v": 15,
+"tx": 7,
+"rp": 0.92
+},
+"hb_brut": {
+"n": 229,
+"v": 15
+},
+"fb": {
+"r": 60,
+"tot": 154,
+"n": 1097,
+"v": 90,
+"tx": 8,
+"rp": 1.1
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 82,
+"tot": 141,
+"n": 583,
+"v": 34,
+"tx": 6,
+"rp": 0.84
+},
+"ici": [
+9,
+6,
+12,
+14,
+1,
+12
+],
+"en_ici": {
+"r": 335,
+"tot": 858,
+"n": 31,
+"v": 1,
+"tx": 3,
+"rp": 0.78
+}
+},
+{
+"n": 2,
+"nom": "MANNE",
+"cote": 41.0,
+"jk": "M.PROTTI",
+"en": "J.PIEDNOEL",
+"musique": "0p4p5p4p1p2p3p3p5p8p",
+"hb": null,
+"hb_brut": {
+"n": 4,
+"v": 0
+},
+"fb": {
+"r": 50,
+"tot": 154,
+"n": 125,
+"v": 11,
+"tx": 9,
+"rp": 0.88
+},
+"fb_brut": null,
+"g": null,
+"h": null,
+"ici": [
+7,
+2,
+7,
+12,
+7,
+14
+],
+"en_ici": {
+"r": 390,
+"tot": 858,
+"n": 14,
+"v": 0,
+"tx": 0,
+"rp": 0.0
+}
+},
+{
+"n": 3,
+"nom": "JUDICIOUS GAME",
+"cote": 12.0,
+"jk": "D.PROVOST",
+"en": "M.BRASME (S)",
+"musique": "5p0p5p5p(25)2p0p3p1p2p",
+"hb": {
+"r": 20,
+"tot": 88,
+"n": 79,
+"v": 8,
+"tx": 10,
+"rp": 1.21
+},
+"hb_brut": {
+"n": 79,
+"v": 8
+},
+"fb": {
+"r": 31,
+"tot": 154,
+"n": 389,
+"v": 38,
+"tx": 10,
+"rp": 1.15
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 53,
+"tot": 141,
+"n": 213,
+"v": 16,
+"tx": 8,
+"rp": 0.9
+},
+"ici": [
+5,
+11,
+2,
+2,
+5
+],
+"en_ici": {
+"r": 236,
+"tot": 858,
+"n": 160,
+"v": 11,
+"tx": 7,
+"rp": 0.92
+}
+},
+{
+"n": 4,
+"nom": "TIMEA",
+"cote": 12.0,
+"jk": "Y.BARILLE",
+"en": "S.GOUYETTE (S)",
+"musique": "3p8p3p3p8p2p0p0p7p2p",
+"hb": null,
+"hb_brut": {
+"n": 8,
+"v": 0
+},
+"fb": {
+"r": 28,
+"tot": 154,
+"n": 80,
+"v": 8,
+"tx": 10,
+"rp": 1.68
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 133,
+"tot": 141,
+"n": 19,
+"v": 0,
+"tx": 0,
+"rp": 0.0
+},
+"ici": [
+6,
+2,
+9,
+3
+],
+"en_ici": {
+"r": 305,
+"tot": 858,
+"n": 68,
+"v": 3,
+"tx": 4,
+"rp": 1.14
+}
+},
+{
+"n": 5,
+"nom": "NEUSCHWANSTEIN",
+"cote": 3.5,
+"jk": "M.GUYON",
+"en": "MME V.DISSAUX",
+"musique": "4p0p2p3p2p4p8p0p0p7p",
+"hb": {
+"r": 5,
+"tot": 88,
+"n": 358,
+"v": 54,
+"tx": 15,
+"rp": 1.0
+},
+"hb_brut": {
+"n": 358,
+"v": 54
+},
+"fb": {
+"r": 3,
+"tot": 154,
+"n": 1723,
+"v": 285,
+"tx": 16,
+"rp": 1.0
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 16,
+"tot": 141,
+"n": 1121,
+"v": 156,
+"tx": 14,
+"rp": 0.94
+},
+"ici": [
+4,
+2,
+3,
+2
+],
+"en_ici": {
+"r": 342,
+"tot": 858,
+"n": 35,
+"v": 1,
+"tx": 3,
+"rp": 0.51
+}
+},
+{
+"n": 6,
+"nom": "COMTE NOIR",
+"cote": 29.0,
+"jk": "A.NICCO",
+"en": "D.SATALIA",
+"musique": "0p6p2p0p2p2p7p1p5p",
+"hb": null,
+"hb_brut": {
+"n": 13,
+"v": 1
+},
+"fb": {
+"r": 120,
+"tot": 154,
+"n": 256,
+"v": 13,
+"tx": 5,
+"rp": 0.93
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 92,
+"tot": 141,
+"n": 41,
+"v": 2,
+"tx": 5,
+"rp": 1.11
+},
+"ici": [
+7,
+11,
+1,
+6,
+11
+],
+"en_ici": {
+"r": 177,
+"tot": 858,
+"n": 11,
+"v": 1,
+"tx": 9,
+"rp": 1.56
+}
+},
+{
+"n": 7,
+"nom": "LOVE THE STARS",
+"cote": 56.0,
+"jk": "L.GALLO",
+"en": "J.LEROY",
+"musique": "0p2p6p0p0p7p6p(25)0p5p",
+"hb": {
+"r": 21,
+"tot": 88,
+"n": 20,
+"v": 2,
+"tx": 10,
+"rp": 1.19
+},
+"hb_brut": {
+"n": 20,
+"v": 2
+},
+"fb": {
+"r": 41,
+"tot": 154,
+"n": 153,
+"v": 14,
+"tx": 9,
+"rp": 1.41
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 39,
+"tot": 141,
+"n": 98,
+"v": 9,
+"tx": 9,
+"rp": 1.3
+},
+"ici": [
+13,
+12,
+5,
+14,
+16
+],
+"en_ici": {
+"r": 195,
+"tot": 858,
+"n": 107,
+"v": 9,
+"tx": 8,
+"rp": 1.74
+}
+},
+{
+"n": 8,
+"nom": "ANTINEA",
+"cote": 20.0,
+"jk": "A.MOLINS",
+"en": "M.KREBS (S)",
+"musique": "1p0p0p0p0p9p1p1p6p2p",
+"hb": {
+"r": 73,
+"tot": 88,
+"n": 92,
+"v": 3,
+"tx": 3,
+"rp": 0.58
+},
+"hb_brut": {
+"n": 92,
+"v": 3
+},
+"fb": {
+"r": 99,
+"tot": 154,
+"n": 567,
+"v": 36,
+"tx": 6,
+"rp": 0.98
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 60,
+"tot": 141,
+"n": 244,
+"v": 17,
+"tx": 7,
+"rp": 1.18
+},
+"ici": [
+1,
+5,
+4,
+7,
+8,
+1
+],
+"en_ici": {
+"r": 250,
+"tot": 858,
+"n": 175,
+"v": 11,
+"tx": 6,
+"rp": 0.81
+}
+},
+{
+"n": 9,
+"nom": "SIN CITY",
+"cote": 12.0,
+"jk": "J.MOUTARD",
+"en": "S.CERULIS",
+"musique": "1p3p7p8p6p(25)0p",
+"hb": {
+"r": 29,
+"tot": 88,
+"n": 85,
+"v": 7,
+"tx": 8,
+"rp": 1.2
+},
+"hb_brut": {
+"n": 85,
+"v": 7
+},
+"fb": {
+"r": 72,
+"tot": 154,
+"n": 386,
+"v": 30,
+"tx": 8,
+"rp": 1.08
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 73,
+"tot": 141,
+"n": 207,
+"v": 13,
+"tx": 6,
+"rp": 0.99
+},
+"ici": [
+3,
+1
+],
+"en_ici": {
+"r": 203,
+"tot": 858,
+"n": 483,
+"v": 40,
+"tx": 8,
+"rp": 1.03
+}
+},
+{
+"n": 10,
+"nom": "SIETE MISTERIOS",
+"cote": 15.0,
+"jk": "L.BAILS",
+"en": "S.GOUYETTE (S)",
+"musique": "7p6p4p0p(25)8p7p0p9p5p",
+"hb": {
+"r": 54,
+"tot": 88,
+"n": 80,
+"v": 4,
+"tx": 5,
+"rp": 1.08
+},
+"hb_brut": {
+"n": 80,
+"v": 4
+},
+"fb": {
+"r": 117,
+"tot": 154,
+"n": 280,
+"v": 15,
+"tx": 5,
+"rp": 0.94
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 94,
+"tot": 141,
+"n": 169,
+"v": 8,
+"tx": 5,
+"rp": 1.01
+},
+"ici": [
+10,
+1,
+9,
+7,
+6,
+7
+],
+"en_ici": {
+"r": 305,
+"tot": 858,
+"n": 68,
+"v": 3,
+"tx": 4,
+"rp": 1.14
+}
+},
+{
+"n": 11,
+"nom": "LADY LUCK",
+"cote": 18.0,
+"jk": "A.LEMAITRE",
+"en": "M.ANDRIANTSOA RATSIMIHAH",
+"musique": "5p1p7p0p0p2p1p3p2p0p",
+"hb": {
+"r": 25,
+"tot": 88,
+"n": 249,
+"v": 23,
+"tx": 9,
+"rp": 1.26
+},
+"hb_brut": {
+"n": 249,
+"v": 23
+},
+"fb": {
+"r": 36,
+"tot": 154,
+"n": 1226,
+"v": 115,
+"tx": 9,
+"rp": 1.13
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 48,
+"tot": 141,
+"n": 746,
+"v": 64,
+"tx": 9,
+"rp": 1.07
+},
+"ici": [
+7,
+7,
+10,
+8,
+7,
+5
+],
+"en_ici": {
+"r": 389,
+"tot": 858,
+"n": 15,
+"v": 0,
+"tx": 0,
+"rp": 0.0
+}
+},
+{
+"n": 12,
+"nom": "TAKE ME I'M YOURS",
+"cote": 87.0,
+"jk": "M.FAVRIAUX",
+"en": "MME J.DUPONT-FAHN",
+"musique": "0p0p0p0p0p4p8p7p0p",
+"hb": {
+"r": 72,
+"tot": 88,
+"n": 59,
+"v": 2,
+"tx": 3,
+"rp": 0.42
+},
+"hb_brut": {
+"n": 59,
+"v": 2
+},
+"fb": {
+"r": 30,
+"tot": 154,
+"n": 313,
+"v": 31,
+"tx": 10,
+"rp": 1.12
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 107,
+"tot": 141,
+"n": 187,
+"v": 7,
+"tx": 4,
+"rp": 0.56
+},
+"ici": [
+5,
+0,
+5,
+11,
+15,
+14
+],
+"en_ici": {
+"r": 289,
+"tot": 858,
+"n": 59,
+"v": 3,
+"tx": 5,
+"rp": 0.87
+}
+},
+{
+"n": 13,
+"nom": "HARTWOOD MAN",
+"cote": 15.0,
+"jk": "C.LECOEUVRE",
+"en": "MME V.DISSAUX",
+"musique": "0p0p9p8p5p7p0p0p3p0p",
+"hb": {
+"r": 26,
+"tot": 88,
+"n": 222,
+"v": 20,
+"tx": 9,
+"rp": 1.1
+},
+"hb_brut": {
+"n": 222,
+"v": 20
+},
+"fb": {
+"r": 48,
+"tot": 154,
+"n": 1016,
+"v": 90,
+"tx": 9,
+"rp": 0.99
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 40,
+"tot": 141,
+"n": 638,
+"v": 58,
+"tx": 9,
+"rp": 1.2
+},
+"ici": [
+6,
+7,
+6,
+0,
+8,
+9
+],
+"en_ici": {
+"r": 342,
+"tot": 858,
+"n": 35,
+"v": 1,
+"tx": 3,
+"rp": 0.51
+}
+},
+{
+"n": 14,
+"nom": "INMATE",
+"cote": 8.5,
+"jk": "A.MADAMET",
+"en": "F.BELLEMERE",
+"musique": "3p8p8p9p4p2p1p0p5p0p",
+"hb": {
+"r": 59,
+"tot": 88,
+"n": 213,
+"v": 10,
+"tx": 5,
+"rp": 0.65
+},
+"hb_brut": {
+"n": 213,
+"v": 10
+},
+"fb": {
+"r": 87,
+"tot": 154,
+"n": 1078,
+"v": 77,
+"tx": 7,
+"rp": 0.85
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 64,
+"tot": 141,
+"n": 626,
+"v": 42,
+"tx": 7,
+"rp": 0.93
+},
+"ici": [
+10,
+8,
+3
+],
+"en_ici": {
+"r": 212,
+"tot": 858,
+"n": 26,
+"v": 2,
+"tx": 8,
+"rp": 1.66
+}
+},
+{
+"n": 15,
+"nom": "ARYVESAN",
+"cote": 32.0,
+"jk": "A.CRASTUS",
+"en": "J.PIEDNOEL",
+"musique": "5p5p3p6p7p0p9p0p6p",
+"hb": {
+"r": 45,
+"tot": 88,
+"n": 186,
+"v": 11,
+"tx": 6,
+"rp": 0.98
+},
+"hb_brut": {
+"n": 186,
+"v": 11
+},
+"fb": {
+"r": 88,
+"tot": 154,
+"n": 1381,
+"v": 96,
+"tx": 7,
+"rp": 0.79
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 87,
+"tot": 141,
+"n": 521,
+"v": 28,
+"tx": 5,
+"rp": 0.87
+},
+"ici": [
+1,
+5
+],
+"en_ici": {
+"r": 390,
+"tot": 858,
+"n": 14,
+"v": 0,
+"tx": 0,
+"rp": 0.0
+}
+},
+{
+"n": 16,
+"nom": "WITH ZEST",
+"cote": 67.0,
+"jk": "F.VALLE SKAR",
+"en": "MME C.JANSSEN",
+"musique": "0p0p0p6p5p7p8p9p8p0p",
+"hb": {
+"r": 17,
+"tot": 88,
+"n": 90,
+"v": 10,
+"tx": 11,
+"rp": 1.91
+},
+"hb_brut": {
+"n": 90,
+"v": 10
+},
+"fb": {
+"r": 81,
+"tot": 154,
+"n": 573,
+"v": 42,
+"tx": 7,
+"rp": 1.16
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 70,
+"tot": 141,
+"n": 326,
+"v": 21,
+"tx": 6,
+"rp": 1.07
+},
+"ici": [
+6,
+4,
+15
+],
+"en_ici": {
+"r": 283,
+"tot": 858,
+"n": 19,
+"v": 1,
+"tx": 5,
+"rp": 1.48
+}
+}
+]
+},
+{
+"num": 7,
+"nom": "PRIX DE L'OPERATION WINDSOR",
+"heure": "17h35",
+"disc": "plat",
+"plat": true,
+"dist": 1900,
+"cat": "handicap divise",
+"alloc": 21100,
+"bandes": {
+"h": 200,
+"f": 100,
+"g": 200
+},
+"groupe_dispo": false,
+"partants": [
+{
+"n": 2,
+"nom": "DALYAMIX",
+"cote": 4.7,
+"jk": "M.JUSTUM",
+"en": "M.JUSTUM",
+"musique": "2p2p6p1p3p6p2p3p5p3p",
+"hb": {
+"r": 63,
+"tot": 88,
+"n": 45,
+"v": 2,
+"tx": 4,
+"rp": 1.14
+},
+"hb_brut": {
+"n": 45,
+"v": 2
+},
+"fb": {
+"r": 129,
+"tot": 154,
+"n": 220,
+"v": 10,
+"tx": 4,
+"rp": 0.94
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 121,
+"tot": 141,
+"n": 90,
+"v": 2,
+"tx": 2,
+"rp": 0.54
+},
+"ici": [
+8,
+6,
+2
+],
+"en_ici": {
+"r": 329,
+"tot": 858,
+"n": 29,
+"v": 1,
+"tx": 3,
+"rp": 0.89
+}
+},
+{
+"n": 3,
+"nom": "LA DOLOISE",
+"cote": 19.0,
+"jk": "S.PASQUIER",
+"en": "MME S.PENOT",
+"musique": "8p1p1p4p0p0p0p(25)0p1p",
+"hb": {
+"r": 16,
+"tot": 88,
+"n": 227,
+"v": 26,
+"tx": 11,
+"rp": 1.15
+},
+"hb_brut": {
+"n": 227,
+"v": 26
+},
+"fb": {
+"r": 17,
+"tot": 154,
+"n": 918,
+"v": 110,
+"tx": 12,
+"rp": 1.13
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 31,
+"tot": 141,
+"n": 669,
+"v": 71,
+"tx": 11,
+"rp": 0.99
+},
+"ici": [
+3,
+4,
+13,
+4,
+1,
+8
+],
+"en_ici": {
+"r": 165,
+"tot": 858,
+"n": 31,
+"v": 3,
+"tx": 10,
+"rp": 1.13
+}
+},
+{
+"n": 4,
+"nom": "CORONADO",
+"cote": 11.0,
+"jk": "L.ROUSSEL",
+"en": "G.PANNIER",
+"musique": "0p3p1p5p2p4p0p0p0p0p",
+"hb": {
+"r": 55,
+"tot": 88,
+"n": 60,
+"v": 3,
+"tx": 5,
+"rp": 1.07
+},
+"hb_brut": {
+"n": 60,
+"v": 3
+},
+"fb": {
+"r": 55,
+"tot": 154,
+"n": 379,
+"v": 32,
+"tx": 8,
+"rp": 1.02
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 85,
+"tot": 141,
+"n": 129,
+"v": 7,
+"tx": 5,
+"rp": 0.92
+},
+"ici": [
+4,
+6,
+5,
+1,
+3,
+15
+],
+"en_ici": {
+"r": 313,
+"tot": 858,
+"n": 123,
+"v": 5,
+"tx": 4,
+"rp": 0.68
+}
+},
+{
+"n": 5,
+"nom": "KALAFA",
+"cote": 7.9,
+"jk": "M.GUYON",
+"en": "L.GADBIN (S)",
+"musique": "2p0p4p1p2p8p0p(25)0p2p",
+"hb": {
+"r": 5,
+"tot": 88,
+"n": 358,
+"v": 54,
+"tx": 15,
+"rp": 1.0
+},
+"hb_brut": {
+"n": 358,
+"v": 54
+},
+"fb": {
+"r": 3,
+"tot": 154,
+"n": 1723,
+"v": 285,
+"tx": 16,
+"rp": 1.0
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 16,
+"tot": 141,
+"n": 1121,
+"v": 156,
+"tx": 14,
+"rp": 0.94
+},
+"ici": [
+2,
+12,
+2
+],
+"en_ici": {
+"r": 206,
+"tot": 858,
+"n": 112,
+"v": 9,
+"tx": 8,
+"rp": 0.89
+}
+},
+{
+"n": 6,
+"nom": "RUE POUSSIN",
+"cote": 26.0,
+"jk": "C.LECOEUVRE",
+"en": "MONTAUBAN VAN SWIJNDREGT",
+"musique": "0p4p9p2p0p0p0p2p1p",
+"hb": {
+"r": 26,
+"tot": 88,
+"n": 222,
+"v": 20,
+"tx": 9,
+"rp": 1.1
+},
+"hb_brut": {
+"n": 222,
+"v": 20
+},
+"fb": {
+"r": 48,
+"tot": 154,
+"n": 1016,
+"v": 90,
+"tx": 9,
+"rp": 0.99
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 40,
+"tot": 141,
+"n": 638,
+"v": 58,
+"tx": 9,
+"rp": 1.2
+},
+"ici": [
+10,
+2,
+3,
+4,
+13
+],
+"en_ici": {
+"r": 471,
+"tot": 858,
+"n": 7,
+"v": 0,
+"tx": 0,
+"rp": 0.0
+}
+},
+{
+"n": 7,
+"nom": "SEE THE LIGHT",
+"cote": 19.0,
+"jk": "E.HARDOUIN",
+"en": "C.LOTOUX (S)",
+"musique": "6p6p7p4p2p6p5p2p9p",
+"hb": {
+"r": 39,
+"tot": 88,
+"n": 229,
+"v": 15,
+"tx": 7,
+"rp": 0.92
+},
+"hb_brut": {
+"n": 229,
+"v": 15
+},
+"fb": {
+"r": 60,
+"tot": 154,
+"n": 1097,
+"v": 90,
+"tx": 8,
+"rp": 1.1
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 82,
+"tot": 141,
+"n": 583,
+"v": 34,
+"tx": 6,
+"rp": 0.84
+},
+"ici": [
+11,
+1,
+2,
+4,
+7,
+6
+],
+"en_ici": {
+"r": 133,
+"tot": 858,
+"n": 212,
+"v": 24,
+"tx": 11,
+"rp": 1.32
+}
+},
+{
+"n": 8,
+"nom": "HAVANA SIX",
+"cote": 17.0,
+"jk": "J.MOUTARD",
+"en": "G.MOSSE (S)",
+"musique": "8p3p6p4p0p5p0p7p0p5p",
+"hb": {
+"r": 29,
+"tot": 88,
+"n": 85,
+"v": 7,
+"tx": 8,
+"rp": 1.2
+},
+"hb_brut": {
+"n": 85,
+"v": 7
+},
+"fb": {
+"r": 72,
+"tot": 154,
+"n": 386,
+"v": 30,
+"tx": 8,
+"rp": 1.08
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 73,
+"tot": 141,
+"n": 207,
+"v": 13,
+"tx": 6,
+"rp": 0.99
+},
+"ici": [
+3,
+5,
+9,
+4,
+6,
+8
+],
+"en_ici": {
+"r": 132,
+"tot": 858,
+"n": 105,
+"v": 12,
+"tx": 11,
+"rp": 1.32
+}
+},
+{
+"n": 9,
+"nom": "WILLOWER",
+"cote": 6.3,
+"jk": "A.MADAMET",
+"en": "E.LIBAUD (S)",
+"musique": "1p4p3p2p4p8p5p7p2p",
+"hb": {
+"r": 59,
+"tot": 88,
+"n": 213,
+"v": 10,
+"tx": 5,
+"rp": 0.65
+},
+"hb_brut": {
+"n": 213,
+"v": 10
+},
+"fb": {
+"r": 87,
+"tot": 154,
+"n": 1078,
+"v": 77,
+"tx": 7,
+"rp": 0.85
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 64,
+"tot": 141,
+"n": 626,
+"v": 42,
+"tx": 7,
+"rp": 0.93
+},
+"ici": [
+10
+],
+"en_ici": {
+"r": 181,
+"tot": 858,
+"n": 123,
+"v": 11,
+"tx": 9,
+"rp": 1.04
+}
+},
+{
+"n": 10,
+"nom": "AZ ZEIVA",
+"cote": 16.0,
+"jk": "D.SANTIAGO",
+"en": "S.NIGGE (S)",
+"musique": "9p6p4p0p(25)2p2p2p7p9p",
+"hb": {
+"r": 68,
+"tot": 88,
+"n": 122,
+"v": 5,
+"tx": 4,
+"rp": 0.66
+},
+"hb_brut": {
+"n": 122,
+"v": 5
+},
+"fb": {
+"r": 102,
+"tot": 154,
+"n": 620,
+"v": 37,
+"tx": 6,
+"rp": 0.78
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 79,
+"tot": 141,
+"n": 371,
+"v": 22,
+"tx": 6,
+"rp": 0.91
+},
+"ici": [
+7,
+7,
+2,
+2,
+4,
+9
+],
+"en_ici": {
+"r": 294,
+"tot": 858,
+"n": 164,
+"v": 8,
+"tx": 5,
+"rp": 0.73
+}
+},
+{
+"n": 11,
+"nom": "PIERRE LE GRAND",
+"cote": 29.0,
+"jk": "J.CLAUDIC",
+"en": "E.LACAILLE",
+"musique": "6p7p2p1p2p2p4p2p0p7p",
+"hb": {
+"r": 44,
+"tot": 88,
+"n": 50,
+"v": 3,
+"tx": 6,
+"rp": 1.01
+},
+"hb_brut": {
+"n": 50,
+"v": 3
+},
+"fb": {
+"r": 98,
+"tot": 154,
+"n": 282,
+"v": 18,
+"tx": 6,
+"rp": 1.16
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 91,
+"tot": 141,
+"n": 123,
+"v": 6,
+"tx": 5,
+"rp": 0.97
+},
+"ici": [
+5,
+1,
+6,
+1,
+2,
+7
+],
+"en_ici": {
+"r": 75,
+"tot": 858,
+"n": 6,
+"v": 1,
+"tx": 17,
+"rp": 1.42
+}
+},
+{
+"n": 12,
+"nom": "MELANIES JOY",
+"cote": 9.4,
+"jk": "M.FAVRIAUX",
+"en": "N.CAULLERY",
+"musique": "1p2p2p2p2p8p9p0p0p7p",
+"hb": {
+"r": 72,
+"tot": 88,
+"n": 59,
+"v": 2,
+"tx": 3,
+"rp": 0.42
+},
+"hb_brut": {
+"n": 59,
+"v": 2
+},
+"fb": {
+"r": 30,
+"tot": 154,
+"n": 313,
+"v": 31,
+"tx": 10,
+"rp": 1.12
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 107,
+"tot": 141,
+"n": 187,
+"v": 7,
+"tx": 4,
+"rp": 0.56
+},
+"ici": [
+1,
+12,
+2,
+7,
+3,
+1
+],
+"en_ici": {
+"r": 235,
+"tot": 858,
+"n": 578,
+"v": 40,
+"tx": 7,
+"rp": 0.87
+}
+},
+{
+"n": 13,
+"nom": "HARRISON POINT",
+"cote": 12.0,
+"jk": "C.BELMONT",
+"en": "F.BELMONT",
+"musique": "4p8p0p4p6p2p6p0p5p1p",
+"hb": {
+"r": 47,
+"tot": 88,
+"n": 35,
+"v": 2,
+"tx": 6,
+"rp": 1.05
+},
+"hb_brut": {
+"n": 35,
+"v": 2
+},
+"fb": {
+"r": 78,
+"tot": 154,
+"n": 224,
+"v": 17,
+"tx": 8,
+"rp": 1.12
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 112,
+"tot": 141,
+"n": 93,
+"v": 3,
+"tx": 3,
+"rp": 0.59
+},
+"ici": [
+15,
+7,
+2,
+4,
+10,
+4
+],
+"en_ici": {
+"r": 278,
+"tot": 858,
+"n": 18,
+"v": 1,
+"tx": 6,
+"rp": 0.84
+}
+},
+{
+"n": 14,
+"nom": "EMINENCE GRISE",
+"cote": 16.0,
+"jk": "T.BACHELOT",
+"en": "E.LIBAUD (S)",
+"musique": "5p4p0p6p0p8p0p1p(25)7p",
+"hb": {
+"r": 19,
+"tot": 88,
+"n": 265,
+"v": 27,
+"tx": 10,
+"rp": 1.07
+},
+"hb_brut": {
+"n": 265,
+"v": 27
+},
+"fb": {
+"r": 46,
+"tot": 154,
+"n": 1075,
+"v": 97,
+"tx": 9,
+"rp": 0.89
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 33,
+"tot": 141,
+"n": 793,
+"v": 83,
+"tx": 10,
+"rp": 1.08
+},
+"ici": [
+8,
+7
+],
+"en_ici": {
+"r": 181,
+"tot": 858,
+"n": 123,
+"v": 11,
+"tx": 9,
+"rp": 1.04
+}
+},
+{
+"n": 15,
+"nom": "WARDAMA",
+"cote": 53.0,
+"jk": "C.GROSBOIS",
+"en": "A.BARON",
+"musique": "6p5p8p4p0p9p3p0p8p",
+"hb": {
+"r": 64,
+"tot": 88,
+"n": 46,
+"v": 2,
+"tx": 4,
+"rp": 1.08
+},
+"hb_brut": {
+"n": 46,
+"v": 2
+},
+"fb": {
+"r": 75,
+"tot": 154,
+"n": 278,
+"v": 21,
+"tx": 8,
+"rp": 1.35
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 110,
+"tot": 141,
+"n": 121,
+"v": 4,
+"tx": 3,
+"rp": 0.67
+},
+"ici": [
+10,
+5
+],
+"en_ici": {
+"r": 197,
+"tot": 858,
+"n": 84,
+"v": 7,
+"tx": 8,
+"rp": 1.26
+}
+}
+]
+},
+{
+"num": 8,
+"nom": "PRIX DE L'OPERATION GOODWOOD",
+"heure": "18h10",
+"disc": "plat",
+"plat": true,
+"dist": 1900,
+"cat": "handicap divise",
+"alloc": 25900,
+"bandes": {
+"h": 200,
+"f": 100,
+"g": 200
+},
+"groupe_dispo": false,
+"partants": [
+{
+"n": 1,
+"nom": "STANGHELI",
+"cote": 11.0,
+"jk": "B.LABATE",
+"en": "A&L.FABRE (S)",
+"musique": "0p2p0p2p0p5p0p(25)0p0p",
+"hb": null,
+"hb_brut": {
+"n": 1,
+"v": 0
+},
+"fb": null,
+"fb_brut": null,
+"g": null,
+"h": null,
+"ici": [
+3,
+3,
+2,
+15,
+11,
+2
+],
+"en_ici": {
+"r": 45,
+"tot": 858,
+"n": 52,
+"v": 11,
+"tx": 21,
+"rp": 1.06
+}
+},
+{
+"n": 2,
+"nom": "SOEUR",
+"cote": 4.1,
+"jk": "T.BACHELOT",
+"en": "S.WATTEL (S)",
+"musique": "3p3p6p2p5p(25)3p2p8p1p",
+"hb": {
+"r": 19,
+"tot": 88,
+"n": 265,
+"v": 27,
+"tx": 10,
+"rp": 1.07
+},
+"hb_brut": {
+"n": 265,
+"v": 27
+},
+"fb": {
+"r": 46,
+"tot": 154,
+"n": 1075,
+"v": 97,
+"tx": 9,
+"rp": 0.89
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 33,
+"tot": 141,
+"n": 793,
+"v": 83,
+"tx": 10,
+"rp": 1.08
+},
+"ici": [
+3,
+1,
+2,
+3,
+2,
+3
+],
+"en_ici": {
+"r": 113,
+"tot": 858,
+"n": 404,
+"v": 52,
+"tx": 13,
+"rp": 1.17
+}
+},
+{
+"n": 3,
+"nom": "FAMOSO",
+"cote": 17.0,
+"jk": "A.MADAMET",
+"en": "C.PAUTIER",
+"musique": "5p9p0p0p1p1p2p2p4p4p",
+"hb": {
+"r": 59,
+"tot": 88,
+"n": 213,
+"v": 10,
+"tx": 5,
+"rp": 0.65
+},
+"hb_brut": {
+"n": 213,
+"v": 10
+},
+"fb": {
+"r": 87,
+"tot": 154,
+"n": 1078,
+"v": 77,
+"tx": 7,
+"rp": 0.85
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 64,
+"tot": 141,
+"n": 626,
+"v": 42,
+"tx": 7,
+"rp": 0.93
+},
+"ici": [
+15,
+7,
+5
+],
+"en_ici": {
+"r": 265,
+"tot": 858,
+"n": 17,
+"v": 1,
+"tx": 6,
+"rp": 1.04
+}
+},
+{
+"n": 4,
+"nom": "GITANO",
+"cote": 20.0,
+"jk": "M.GUYON",
+"en": "S.CERULIS",
+"musique": "6p3p9p2p0p0p9p7p4p",
+"hb": {
+"r": 5,
+"tot": 88,
+"n": 358,
+"v": 54,
+"tx": 15,
+"rp": 1.0
+},
+"hb_brut": {
+"n": 358,
+"v": 54
+},
+"fb": {
+"r": 3,
+"tot": 154,
+"n": 1723,
+"v": 285,
+"tx": 16,
+"rp": 1.0
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 16,
+"tot": 141,
+"n": 1121,
+"v": 156,
+"tx": 14,
+"rp": 0.94
+},
+"ici": [
+14,
+2,
+9,
+6
+],
+"en_ici": {
+"r": 203,
+"tot": 858,
+"n": 483,
+"v": 40,
+"tx": 8,
+"rp": 1.03
+}
+},
+{
+"n": 5,
+"nom": "SPEEDSTER",
+"cote": 12.0,
+"jk": "C.LECOEUVRE",
+"en": "C.LOTOUX (S)",
+"musique": "0p3p1p2p5p6p2p4p0p0p",
+"hb": {
+"r": 26,
+"tot": 88,
+"n": 222,
+"v": 20,
+"tx": 9,
+"rp": 1.1
+},
+"hb_brut": {
+"n": 222,
+"v": 20
+},
+"fb": {
+"r": 48,
+"tot": 154,
+"n": 1016,
+"v": 90,
+"tx": 9,
+"rp": 0.99
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 40,
+"tot": 141,
+"n": 638,
+"v": 58,
+"tx": 9,
+"rp": 1.2
+},
+"ici": [
+2,
+10,
+5,
+1,
+10
+],
+"en_ici": {
+"r": 133,
+"tot": 858,
+"n": 212,
+"v": 24,
+"tx": 11,
+"rp": 1.32
+}
+},
+{
+"n": 6,
+"nom": "BEETLEJUICE",
+"cote": 20.0,
+"jk": "E.HARDOUIN",
+"en": "L.BAUDRON (S)",
+"musique": "0p2p0p6p8p4p3p2p1p0p",
+"hb": {
+"r": 39,
+"tot": 88,
+"n": 229,
+"v": 15,
+"tx": 7,
+"rp": 0.92
+},
+"hb_brut": {
+"n": 229,
+"v": 15
+},
+"fb": {
+"r": 60,
+"tot": 154,
+"n": 1097,
+"v": 90,
+"tx": 8,
+"rp": 1.1
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 82,
+"tot": 141,
+"n": 583,
+"v": 34,
+"tx": 6,
+"rp": 0.84
+},
+"ici": [
+1,
+3,
+3,
+9,
+10,
+2
+],
+"en_ici": {
+"r": 171,
+"tot": 858,
+"n": 65,
+"v": 6,
+"tx": 9,
+"rp": 1.24
+}
+},
+{
+"n": 7,
+"nom": "DRIMYS",
+"cote": 38.0,
+"jk": "R.MANGIONE",
+"en": "L.GUILLOUX",
+"musique": "0p4p0p(25)3p(24)8p1p2p2p",
+"hb": {
+"r": 51,
+"tot": 88,
+"n": 131,
+"v": 7,
+"tx": 5,
+"rp": 1.15
+},
+"hb_brut": {
+"n": 131,
+"v": 7
+},
+"fb": {
+"r": 100,
+"tot": 154,
+"n": 585,
+"v": 37,
+"tx": 6,
+"rp": 1.16
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 52,
+"tot": 141,
+"n": 387,
+"v": 30,
+"tx": 8,
+"rp": 1.41
+},
+"ici": [
+3,
+13,
+12
+],
+"en_ici": {
+"r": 321,
+"tot": 858,
+"n": 27,
+"v": 1,
+"tx": 4,
+"rp": 0.81
+}
+},
+{
+"n": 8,
+"nom": "EFFIRA",
+"cote": 18.0,
+"jk": "A.MOLINS",
+"en": "C.LOTOUX (S)",
+"musique": "0p9p6p3p4p1p(25)1p2p2p",
+"hb": {
+"r": 73,
+"tot": 88,
+"n": 92,
+"v": 3,
+"tx": 3,
+"rp": 0.58
+},
+"hb_brut": {
+"n": 92,
+"v": 3
+},
+"fb": {
+"r": 99,
+"tot": 154,
+"n": 567,
+"v": 36,
+"tx": 6,
+"rp": 0.98
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 60,
+"tot": 141,
+"n": 244,
+"v": 17,
+"tx": 7,
+"rp": 1.18
+},
+"ici": [
+7,
+2,
+2,
+1,
+9,
+15
+],
+"en_ici": {
+"r": 133,
+"tot": 858,
+"n": 212,
+"v": 24,
+"tx": 11,
+"rp": 1.32
+}
+},
+{
+"n": 9,
+"nom": "DARI RIVER",
+"cote": 8.9,
+"jk": "H.JOURNIAC",
+"en": "Y.BARBEROT (S)",
+"musique": "4p8p8p8p0p0p8p6p0p0p",
+"hb": {
+"r": 62,
+"tot": 88,
+"n": 112,
+"v": 5,
+"tx": 4,
+"rp": 0.8
+},
+"hb_brut": {
+"n": 112,
+"v": 5
+},
+"fb": {
+"r": 108,
+"tot": 154,
+"n": 471,
+"v": 28,
+"tx": 6,
+"rp": 0.85
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 58,
+"tot": 141,
+"n": 294,
+"v": 21,
+"tx": 7,
+"rp": 1.11
+},
+"ici": [
+1,
+5,
+7,
+8,
+8,
+4
+],
+"en_ici": {
+"r": 116,
+"tot": 858,
+"n": 447,
+"v": 57,
+"tx": 13,
+"rp": 1.19
+}
+},
+{
+"n": 10,
+"nom": "PRINCESSE BLONDE",
+"cote": 21.0,
+"jk": "J.MOUTARD",
+"en": "MME J.LE STANG",
+"musique": "5p1p2p5p6p2p1p(25)3p8p",
+"hb": {
+"r": 29,
+"tot": 88,
+"n": 85,
+"v": 7,
+"tx": 8,
+"rp": 1.2
+},
+"hb_brut": {
+"n": 85,
+"v": 7
+},
+"fb": {
+"r": 72,
+"tot": 154,
+"n": 386,
+"v": 30,
+"tx": 8,
+"rp": 1.08
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 73,
+"tot": 141,
+"n": 207,
+"v": 13,
+"tx": 6,
+"rp": 0.99
+},
+"ici": [
+1,
+8,
+1,
+2,
+1,
+5
+],
+"en_ici": {
+"r": 148,
+"tot": 858,
+"n": 59,
+"v": 6,
+"tx": 10,
+"rp": 2.27
+}
+},
+{
+"n": 11,
+"nom": "CARLSTON",
+"cote": 22.0,
+"jk": "D.SANTIAGO",
+"en": "J.DA SILVA",
+"musique": "1p0p8p8p1p5p0p1p0p0p",
+"hb": {
+"r": 68,
+"tot": 88,
+"n": 122,
+"v": 5,
+"tx": 4,
+"rp": 0.66
+},
+"hb_brut": {
+"n": 122,
+"v": 5
+},
+"fb": {
+"r": 102,
+"tot": 154,
+"n": 620,
+"v": 37,
+"tx": 6,
+"rp": 0.78
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 79,
+"tot": 141,
+"n": 371,
+"v": 22,
+"tx": 6,
+"rp": 0.91
+},
+"ici": [
+13,
+1,
+8,
+8,
+1
+],
+"en_ici": {
+"r": 209,
+"tot": 858,
+"n": 52,
+"v": 4,
+"tx": 8,
+"rp": 1.61
+}
+},
+{
+"n": 12,
+"nom": "OXALIS",
+"cote": 28.0,
+"jk": "P.REMOUE",
+"en": "J.RESIMONT",
+"musique": "0pDp1p0p0p(25)6p1p7p3p",
+"hb": {
+"r": 78,
+"tot": 88,
+"n": 38,
+"v": 0,
+"tx": 0,
+"rp": 0.0
+},
+"hb_brut": {
+"n": 38,
+"v": 0
+},
+"fb": {
+"r": 135,
+"tot": 154,
+"n": 229,
+"v": 10,
+"tx": 4,
+"rp": 0.64
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 102,
+"tot": 141,
+"n": 118,
+"v": 5,
+"tx": 4,
+"rp": 0.65
+},
+"ici": [
+1,
+8,
+2,
+0,
+1
+],
+"en_ici": {
+"r": 164,
+"tot": 858,
+"n": 31,
+"v": 3,
+"tx": 10,
+"rp": 1.58
+}
+},
+{
+"n": 13,
+"nom": "HAMILTON",
+"cote": 30.0,
+"jk": "F.VALLE SKAR",
+"en": "P.ADDA (S)",
+"musique": "0p0p0p9p1p6p1p0p3p7p",
+"hb": {
+"r": 17,
+"tot": 88,
+"n": 90,
+"v": 10,
+"tx": 11,
+"rp": 1.91
+},
+"hb_brut": {
+"n": 90,
+"v": 10
+},
+"fb": {
+"r": 81,
+"tot": 154,
+"n": 573,
+"v": 42,
+"tx": 7,
+"rp": 1.16
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 70,
+"tot": 141,
+"n": 326,
+"v": 21,
+"tx": 6,
+"rp": 1.07
+},
+"ici": [
+9,
+14,
+15,
+12
+],
+"en_ici": {
+"r": 210,
+"tot": 858,
+"n": 26,
+"v": 2,
+"tx": 8,
+"rp": 1.52
+}
+},
+{
+"n": 14,
+"nom": "BRAMANS",
+"cote": 6.2,
+"jk": "S.PASQUIER",
+"en": "HA.PANTALL (S)",
+"musique": "8p6p0p0p0p0p(25)0p1p2p",
+"hb": {
+"r": 16,
+"tot": 88,
+"n": 227,
+"v": 26,
+"tx": 11,
+"rp": 1.15
+},
+"hb_brut": {
+"n": 227,
+"v": 26
+},
+"fb": {
+"r": 17,
+"tot": 154,
+"n": 918,
+"v": 110,
+"tx": 12,
+"rp": 1.13
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 31,
+"tot": 141,
+"n": 669,
+"v": 71,
+"tx": 11,
+"rp": 0.99
+},
+"ici": [
+9,
+2,
+1,
+12,
+10,
+8
+],
+"en_ici": {
+"r": 251,
+"tot": 858,
+"n": 272,
+"v": 17,
+"tx": 6,
+"rp": 0.8
+}
+},
+{
+"n": 15,
+"nom": "LIGHTNING RAID",
+"cote": 37.0,
+"jk": "P.BAZIRE",
+"en": "JV.TOUX",
+"musique": "4p0p9p3p1p3p3p6p",
+"hb": {
+"r": 77,
+"tot": 88,
+"n": 48,
+"v": 1,
+"tx": 2,
+"rp": 0.29
+},
+"hb_brut": {
+"n": 48,
+"v": 1
+},
+"fb": {
+"r": 96,
+"tot": 154,
+"n": 345,
+"v": 22,
+"tx": 6,
+"rp": 0.85
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 105,
+"tot": 141,
+"n": 149,
+"v": 6,
+"tx": 4,
+"rp": 0.64
+},
+"ici": [
+9,
+0,
+4
+],
+"en_ici": {
+"r": 252,
+"tot": 858,
+"n": 144,
+"v": 9,
+"tx": 6,
+"rp": 1.13
+}
+},
+{
+"n": 16,
+"nom": "HIGHFIELD WORLD",
+"cote": 29.0,
+"jk": "A.LEMAITRE",
+"en": "MME J.DUPONT-FAHN",
+"musique": "6p4p0p0p0p(25)1p4p7p",
+"hb": {
+"r": 25,
+"tot": 88,
+"n": 249,
+"v": 23,
+"tx": 9,
+"rp": 1.26
+},
+"hb_brut": {
+"n": 249,
+"v": 23
+},
+"fb": {
+"r": 36,
+"tot": 154,
+"n": 1226,
+"v": 115,
+"tx": 9,
+"rp": 1.13
+},
+"fb_brut": null,
+"g": null,
+"h": {
+"r": 48,
+"tot": 141,
+"n": 746,
+"v": 64,
+"tx": 9,
+"rp": 1.07
+},
+"ici": [
+1,
+6
+],
+"en_ici": {
+"r": 289,
+"tot": 858,
+"n": 59,
+"v": 3,
+"tx": 5,
+"rp": 0.87
+}
+}
+]
+}
+]
+}
