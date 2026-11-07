@@ -70,7 +70,7 @@
 | 1 | LUCKY BERNADINE | 2,1 | F GEROUX | –/–/–/– |
 | 2 | ILLUSTRATING | 3,9 | W A RODRIGUEZ | –/–/–/– |
 | 5 | JERRI JO | 4,2 | A ACHARD | –/–/–/– |
-| 3 | NEW PURPOSE | 8,5 | J L ORTIZ | –/–/–/46 |
+| 3 | NEW PURPOSE | 8,5 | J L ORTIZ | –/–/–/50 |
 | 7 | EARLY AUTUMN | 17 | L SAEZ | –/–/–/– |
 | 4 | LECOMPTE'S RUN | – | L MACHADO | –/–/–/– |
 | 6 | OLYMPIC BELLE | – | D SHEEHY | –/–/–/– |
@@ -86,7 +86,7 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | POSTER | 1,8 | R BEJARANO | –/–/–/46 |
+| 2 | POSTER | 1,8 | R BEJARANO | –/–/–/50 |
 | 4 | COOKE CREEK | 2,5 | T GAFFALIONE | –/–/–/– |
 | 6 | MACHO MUSIC | 5,1 | L SAEZ | –/–/–/– |
 | 1 | GEARING UP | – | C A TORRES | –/–/–/– |
@@ -138,7 +138,7 @@
 | 5 | DEVARIM | – | J ROSADO | –/–/–/– |
 | 6 | HER ESSENCE | – | A BESCHIZZA | –/–/–/– |
 | 7 | CLEAR THINKING | – | Y ORTIZ, JR. | –/–/–/– |
-| 8 | STORMED OFF | – | J L ORTIZ | –/–/–/2736 |
+| 8 | STORMED OFF | – | J L ORTIZ | –/–/–/2925 |
 | 9 | GREATEST BLAZE | – | R BEJARANO | –/–/–/– |
 | 10 | MAKER RUN | – | D GRISALES RAVE | –/–/–/– |
 | 11 | GODDESS OF SPEED | – | L SAEZ | –/–/–/– |
