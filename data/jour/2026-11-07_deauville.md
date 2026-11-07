@@ -80,26 +80,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DE L'OPERATION MARTLET
 
-*17h25 · plat · 1900 m · 16 partants · cotes à T−9:15*
+*17h25 · plat · 1900 m · 16 partants · cotes à T−3:55*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 7 | SEVEN TIMER | 6,5 | 13 | 5,96 | **+9,1 %** | A.LEMAITRE | 11/94/2615/3639 |
-| 4 | JOUKOVKA | 6,7 | 4,2 | 7,50 | -10,6 % | E.HARDOUIN | 27/214/16/342 |
-| 2 | KAHOUNA | 8,1 | 9 | 9,56 | -15,3 % | M.FLEURY | 124/523/932/1690 |
-| 1 | RIVER QUARTZ | 9 | 9 | 9,28 | -3,1 % | R.MANGIONE | 78/318/248/492 |
-| 14 | MAESTRO CHOP | 9,1 | 13 | 10,96 | -17,0 % | P.CHEYER | 109/252/6/1377 |
-| 10 | KARKHOV | 11 | 10 | 13,97 | -21,2 % | D.SANTIAGO | 15/309/16/1224 |
-| 8 | MANA SIS | 13 | 15 | 14,92 | -12,8 % | P.REMOUE | 37/309/27/365 |
-| 11 | ZOUBAREVA | 13 | 10 | 14,92 | -12,8 % | C.BELMONT | 171/295/201/423 |
-| 13 | LA FILLE DE BERLIN | 17 | 21 | 23,29 | -27,0 % | H.LEBOUC | 19/309/3411/365 |
-| 12 | SECRET GLORY | 20 | 23 | 30,22 | -33,8 % | F.VALLE SKAR | 35/108/312/84 |
-| 3 | ESKANDANI | 22 | 24 | 25,03 | -12,1 % | L.ROUSSEL | 26/81/1227/120 |
-| 5 | PROXIMA CENTAURI | 35 | 27 | 40,35 | -13,3 % | J.CLAUDIC | 38/81/117/120 |
-| 9 | PARMENIDE | 47 | 34 | 61,32 | -23,4 % | C.GROSBOIS | 25/206/168/3321 |
-| 6 | PURBRIGHT DRALLIV | 52 | 31 | 68,21 | -23,8 % | Y.BARILLE | 82/183/2059/3913 |
-| 15 | PRINCESS LAURA | 58 | 31 | 76,94 | -24,6 % | J.LACROIX | 94/141/22/5310 |
-| 16 | ALPENGEIST | 65 | 66 | 90,70 | -28,3 % | G.MEURY | 68/432/60/218 |
+| 1 | RIVER QUARTZ | 5,4 | 9 | 5,58 | -3,1 % | R.MANGIONE | 78/318/248/492 |
+| 7 | SEVEN TIMER | 6,4 | 13 | 6,84 | -6,4 % | A.LEMAITRE | 11/94/2615/3639 |
+| 4 | JOUKOVKA | 7,4 | 4,2 | 8,41 | -12,0 % | E.HARDOUIN | 27/214/16/342 |
+| 2 | KAHOUNA | 8,3 | 9 | 9,85 | -15,7 % | M.FLEURY | 124/523/932/1690 |
+| 14 | MAESTRO CHOP | 10 | 13 | 12,25 | -18,4 % | P.CHEYER | 109/252/6/1377 |
+| 10 | KARKHOV | 13 | 10 | 16,26 | -20,1 % | D.SANTIAGO | 15/309/16/1224 |
+| 8 | MANA SIS | 15 | 15 | 17,64 | -14,9 % | P.REMOUE | 37/309/27/365 |
+| 11 | ZOUBAREVA | 15 | 10 | 17,64 | -14,9 % | C.BELMONT | 171/295/201/423 |
+| 12 | SECRET GLORY | 18 | 23 | 26,75 | -32,7 % | F.VALLE SKAR | 35/108/312/84 |
+| 3 | ESKANDANI | 23 | 24 | 26,35 | -12,7 % | L.ROUSSEL | 26/81/1227/120 |
+| 13 | LA FILLE DE BERLIN | 23 | 21 | 31,59 | -27,2 % | H.LEBOUC | 19/309/3411/365 |
+| 5 | PROXIMA CENTAURI | 37 | 27 | 42,94 | -13,8 % | J.CLAUDIC | 38/81/117/120 |
+| 9 | PARMENIDE | 40 | 34 | 53,91 | -25,8 % | C.GROSBOIS | 25/206/168/3321 |
+| 15 | PRINCESS LAURA | 55 | 31 | 72,73 | -24,4 % | J.LACROIX | 94/141/22/5310 |
+| 6 | PURBRIGHT DRALLIV | 64 | 31 | 93,64 | -31,7 % | Y.BARILLE | 82/183/2059/3913 |
+| 16 | ALPENGEIST | 75 | 66 | 105,50 | -28,9 % | G.MEURY | 68/432/60/218 |
 
 ### 6. PRIX DE L'OPERATION SPRING
 
