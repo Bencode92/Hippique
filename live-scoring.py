@@ -11,6 +11,7 @@ Ou : python3 live-scoring.py R1 C3
   → Scoring d'une course spécifique (Réunion 1, Course 3)
 """
 
+from zoneinfo import ZoneInfo
 import requests
 import json
 import sys
@@ -212,7 +213,7 @@ def main():
             depart_ts = course.get('heureDepart')
             depart = ''
             if depart_ts:
-                dt = datetime.fromtimestamp(depart_ts / 1000, tz=timezone.utc) + timedelta(hours=2)
+                dt = datetime.fromtimestamp(depart_ts / 1000, tz=ZoneInfo("Europe/Paris"))  # +2 h figé = faux l'hiver
                 depart = dt.strftime("%Hh%M")
 
             # Charger les participants

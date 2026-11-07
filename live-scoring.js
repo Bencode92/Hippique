@@ -762,7 +762,7 @@ _log('✅ Données chargées');
 
       const distance = course.distance || 0;
       const depart = course.heureDepart
-        ? new Date(course.heureDepart + 7200000).toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' }).replace(':', 'h')
+        ? new Date(course.heureDepart).toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Paris' }).replace(':', 'h')
         : '?';
 
       await sleep(300);

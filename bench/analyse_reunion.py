@@ -21,6 +21,7 @@ LECTURE, PAS SIGNAL : la spécialité d'un jockey ne persiste pas d'une période
 """
 import json, glob, sys, collections, urllib.request
 from datetime import datetime
+from zoneinfo import ZoneInfo
 
 BASE = "https://online.turfinfo.api.pmu.fr/rest/client/61"
 DISC_LIB = {"PLAT": "plat", "HAIE": "haies", "STEEPLECHASE": "steeple", "CROSS": "cross"}
@@ -112,8 +113,9 @@ for c in reu.get("courses", []):
                           hb=hb.get(jk), hb_brut=hb_b.get(jk), fb=fb.get(jk), fb_brut=fb_b.get(jk),
                           g=(g or {}).get(jk) if g is not None else None, h=h.get(jk),
                           ici=[m["a"] or 0 for m in passe], en_ici=en.get(ent)))
+    # heureDepart est un instant UTC : on l'affiche à l'heure de Paris (été comme hiver)
     hd = c.get("heureDepart")
-    courses.append(dict(num=c.get("numOrdre"), nom=c.get("libelle"), heure=datetime.fromtimestamp(hd / 1000).strftime("%Hh%M") if hd else "?",
+    courses.append(dict(num=c.get("numOrdre"), nom=c.get("libelle"), heure=datetime.fromtimestamp(hd / 1000, tz=ZoneInfo("Europe/Paris")).strftime("%Hh%M") if hd else "?",
                         disc=DISC_LIB[disc], plat=est_plat, dist=dist, cat=(c.get("categorieParticularite") or "").replace("_", " ").lower(),
                         alloc=c.get("montantPrix"), bandes=dict(h=BH, f=BF, g=JD["belles_par_distance"]["bande"] if est_plat else None),
                         groupe_dispo=bool(g), partants=parts))
