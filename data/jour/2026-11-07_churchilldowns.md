@@ -1,8 +1,8 @@
 # CHURCHILL DOWNS — 07/11/2026
 
-11 courses.
+11 courses (9 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -12,12 +12,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 2 | ALL ABOUT CROGE | 1,4 | M NICHOLLS |
+| 6 | L RANKIN | 3,2 | V R CARRASCO |
+| 3 | VALIANT HUMOR | 6,5 | L SAEZ |
 | 1 | CITY OF LIFE | – | C A TORRES |
-| 2 | ALL ABOUT CROGE | – | M NICHOLLS |
-| 3 | VALIANT HUMOR | – | L SAEZ |
 | 4 | ANTRAX | – | E MORALES |
 | 5 | MUIR WOODS | – | T GAFFALIONE |
-| 6 | L RANKIN | – | V R CARRASCO |
 
 ### 2. MAIDEN CLAIMING (3 YO & UP - DIRT)
 
@@ -25,12 +25,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | DIVERSIFICATION | – | T GAFFALIONE |
-| 2 | MISTER LANDRY | – | A JIMENEZ |
+| 2 | MISTER LANDRY | 1,8 | A JIMENEZ |
+| 1 | DIVERSIFICATION | 5 | T GAFFALIONE |
+| 4 | MONEY MAN | 5 | R BEJARANO |
+| 6 | HEY DEY | 5 | B J HERNANDEZ, JR. |
 | 3 | INGLEBOROUGH | – | K J ASMUSSEN |
-| 4 | MONEY MAN | – | R BEJARANO |
 | 5 | HAYBURN'S CASE | – | F ARRIETA |
-| 6 | HEY DEY | – | B J HERNANDEZ, JR. |
 | 7 | LIBERTY VALANCE | – | E MORALES |
 
 ### 3. CLAIMING (3 YO & UP - DIRT)
@@ -39,12 +39,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 2 | SCAT FREE | 1,8 | D GRISALES RAVE |
+| 6 | COOL COWBOY | 2,7 | L SAEZ |
+| 4 | RAVIN'S RANSOM | 4,1 | W A RODRIGUEZ |
 | 1 | NO EASY DAYS | – | R BEJARANO |
-| 2 | SCAT FREE | – | D GRISALES RAVE |
 | 3 | FORT SAM | – | E ESQUIVEL |
-| 4 | RAVIN'S RANSOM | – | W A RODRIGUEZ |
 | 5 | BARKSDALE | – | C A TORRES |
-| 6 | COOL COWBOY | – | L SAEZ |
 | 7 | ELI'S PROMISE | – | K J ASMUSSEN |
 
 ### 4. CLAIMING (3 YO & UP - FILLIES & MARES - DIRT)
@@ -53,13 +53,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 3 | TURKISH PISTACHIO | 1,8 | A MENDOZA | –/–/–/– |
+| 2 | DANCEWHENYOUCAN | 4,3 | E ESQUIVEL | –/–/–/– |
+| 5 | QUEEN OF QUEENS | 6,2 | Y ORTIZ, JR. | –/–/–/– |
+| 6 | NO WHAT IFS | 9,4 | J LOVEBERRY | –/–/–/– |
+| 7 | MADELINE'S PROMISE | 9,4 | M GARCIA | –/–/–/– |
 | 1 | VIRAL PLANE LADY | – | W A RODRIGUEZ | –/–/–/– |
-| 2 | DANCEWHENYOUCAN | – | E ESQUIVEL | –/–/–/– |
-| 3 | TURKISH PISTACHIO | – | A MENDOZA | –/–/–/– |
 | 4 | TIZ IN SIGHT | – | D SHEEHY | –/–/–/– |
-| 5 | QUEEN OF QUEENS | – | Y ORTIZ, JR. | –/–/–/– |
-| 6 | NO WHAT IFS | – | J LOVEBERRY | –/–/–/– |
-| 7 | MADELINE'S PROMISE | – | M GARCIA | –/–/–/– |
 
 ### 5. ALLOWANCE (2 YO - FILLIES - TURF)
 
@@ -67,13 +67,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | LUCKY BERNADINE | – | F GEROUX | –/–/–/– |
-| 2 | ILLUSTRATING | – | W A RODRIGUEZ | –/–/–/– |
-| 3 | NEW PURPOSE | – | J L ORTIZ | –/–/–/46 |
+| 1 | LUCKY BERNADINE | 1,6 | F GEROUX | –/–/–/– |
+| 2 | ILLUSTRATING | 3 | W A RODRIGUEZ | –/–/–/– |
+| 3 | NEW PURPOSE | 6,7 | J L ORTIZ | –/–/–/46 |
+| 7 | EARLY AUTUMN | 13 | L SAEZ | –/–/–/– |
 | 4 | LECOMPTE'S RUN | – | L MACHADO | –/–/–/– |
 | 5 | JERRI JO | – | A ACHARD | –/–/–/– |
 | 6 | OLYMPIC BELLE | – | D SHEEHY | –/–/–/– |
-| 7 | EARLY AUTUMN | – | L SAEZ | –/–/–/– |
 | 8 | KIPLIN | – | E ESQUIVEL | –/–/–/– |
 | 9 | MAKE IT SKATE | – | T GAFFALIONE | –/–/–/– |
 | 10 | MIGHTILY | – | J ROSADO | –/–/–/– |
@@ -86,12 +86,12 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 2 | POSTER | 1,8 | R BEJARANO | –/–/–/46 |
+| 4 | COOKE CREEK | 2,5 | T GAFFALIONE | –/–/–/– |
+| 6 | MACHO MUSIC | 5,1 | L SAEZ | –/–/–/– |
 | 1 | GEARING UP | – | C A TORRES | –/–/–/– |
-| 2 | POSTER | – | R BEJARANO | –/–/–/46 |
 | 3 | PRINCE OF POWER | – | F ARRIETA | –/–/–/– |
-| 4 | COOKE CREEK | – | T GAFFALIONE | –/–/–/– |
 | 5 | MACKMAN | – | J L ORTIZ | –/–/–/– |
-| 6 | MACHO MUSIC | – | L SAEZ | –/–/–/– |
 
 ### 7. MAIDEN CLAIMING (3 YO & UP - FILLIES & MARES - DIRT)
 
@@ -99,8 +99,8 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | WEDELIA | – | L SAEZ |
-| 2 | SOMETHING NAVY | – | T GAFFALIONE |
+| 2 | SOMETHING NAVY | 1,1 | T GAFFALIONE |
+| 1 | WEDELIA | 4,7 | L SAEZ |
 | 3 | BLACK MAGIC RIVER | – | R BEJARANO |
 | 4 | MAXI MAXI | – | L MACHADO |
 | 5 | CLEAR FORK | – | F ARRIETA |
@@ -116,14 +116,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 6 | TEAO | 3,2 | L SAEZ |
+| 8 | OLE CRAZY BONE | 3,7 | T GAFFALIONE |
+| 2 | MERCANTE | 5,4 | W A RODRIGUEZ |
+| 4 | LAMBETH | 5,4 | J L ORTIZ |
+| 5 | KUPUNA | 5,4 | F ARRIETA |
 | 1 | CARCANO | – | J A TORRES |
-| 2 | MERCANTE | – | W A RODRIGUEZ |
 | 3 | VOTE NO | – | U RISPOLI |
-| 4 | LAMBETH | – | J L ORTIZ |
-| 5 | KUPUNA | – | F ARRIETA |
-| 6 | TEAO | – | L SAEZ |
 | 7 | PLENSA | – | A CONCEPCION |
-| 8 | OLE CRAZY BONE | – | T GAFFALIONE |
 
 ### 9. MAIDEN CLAIMING (2 YO - FILLIES - DIRT)
 
@@ -151,13 +151,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | GOLDEN AFTERNOON | – | U RISPOLI |
-| 2 | TEJANO TWIST | – | F ARRIETA |
-| 3 | VIKING | – | T GAFFALIONE |
+| 7 | OBLITERATION | 2,3 | L SAEZ |
+| 2 | TEJANO TWIST | 2,6 | F ARRIETA |
+| 1 | GOLDEN AFTERNOON | 5,8 | U RISPOLI |
+| 3 | VIKING | 5,8 | T GAFFALIONE |
 | 4 | C K WONDER | – | M GARCIA |
 | 5 | LIPS SAY BLISS | – | C A TORRES |
 | 6 | ECHO AGAIN | – | J A TORRES |
-| 7 | OBLITERATION | – | L SAEZ |
 | 8 | GREENWICH VILLAGE | – | J L ORTIZ |
 | 9 | DREAMINBLUE | – | R BEJARANO |
 | 10 | JIMMY RULES | – | W A RODRIGUEZ |

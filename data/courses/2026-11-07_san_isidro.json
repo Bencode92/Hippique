@@ -1,7 +1,7 @@
 {
   "hippodrome": "SAN ISIDRO",
   "type_reunion": "Plat",
-  "date_extraction": "2026-11-07T01:45:33.238034",
+  "date_extraction": "2026-11-07T13:40:37.982566",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/07112026/R6",
   "courses": [
     {
@@ -50,7 +50,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 1,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 1.7,
+          "cote_tendance": "",
+          "cote_reference": 1.7
         },
         {
           "n°": "3",
@@ -130,7 +133,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 1.7,
+          "cote_tendance": "",
+          "cote_reference": 1.7
         },
         {
           "n°": "7",
@@ -181,7 +187,9 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 1.1,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -281,7 +289,10 @@
           "equipement(s)": "A",
           "nb_courses": 1,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 5.2,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         }
       ],
       "cordeCourse": "CORDE_GAUCHE"
@@ -492,7 +503,10 @@
           "equipement(s)": "A",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 1.1,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         }
       ],
       "cordeCourse": "CORDE_GAUCHE"
@@ -505,26 +519,6 @@
       "distance": "1200m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "ARMONK M.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MUSEUM SECURITY et LA ROCHELLE (ENDORSEMENT)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261107/SIO/5/20261107-SIO-5-1.png",
-          "propriétaire": "LOS MACHITOS",
-          "entraineur": "CRISTIAN PATRICIO VILLABONA",
-          "éleveurs": "",
-          "jockey": "THIAGO EVER LARREA FRUTOS",
-          "poids": "54 kg",
-          "gains": "2569980000",
-          "musique": "1p1p2p3p0p",
-          "valeur": "54.0",
-          "equipement(s)": "",
-          "nb_courses": 12,
-          "nb_victoires": 3,
-          "nb_places": 9
-        },
         {
           "n°": "2",
           "cheval": "EGOCENTRIC M.PU. 4 a.",
@@ -543,7 +537,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 3,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 1.6,
+          "cote_tendance": "",
+          "cote_reference": 1.6
         },
         {
           "n°": "3",
@@ -563,7 +560,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 2,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.3,
+          "cote_tendance": "",
+          "cote_reference": 7.3
         },
         {
           "n°": "4",
@@ -583,7 +583,10 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 3,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 3.6,
+          "cote_tendance": "",
+          "cote_reference": 3.6
         },
         {
           "n°": "5",
@@ -603,7 +606,10 @@
           "equipement(s)": "",
           "nb_courses": 15,
           "nb_victoires": 3,
-          "nb_places": 11
+          "nb_places": 11,
+          "cote": 7.3,
+          "cote_tendance": "",
+          "cote_reference": 7.3
         }
       ],
       "cordeCourse": "CORDE_GAUCHE"
@@ -654,7 +660,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 2.5,
+          "cote_tendance": "",
+          "cote_reference": 2.5
         },
         {
           "n°": "3",
@@ -674,7 +683,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 6.2,
+          "cote_tendance": "",
+          "cote_reference": 6.2
         },
         {
           "n°": "4",
@@ -694,7 +706,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 4.3,
+          "cote_tendance": "",
+          "cote_reference": 4.3
         },
         {
           "n°": "5",
@@ -714,7 +729,10 @@
           "equipement(s)": "A",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 27.0,
+          "cote_tendance": "",
+          "cote_reference": 27.0
         },
         {
           "n°": "6",
@@ -754,7 +772,10 @@
           "equipement(s)": "A",
           "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 6.2,
+          "cote_tendance": "",
+          "cote_reference": 6.2
         },
         {
           "n°": "8",
@@ -794,7 +815,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 6.2,
+          "cote_tendance": "",
+          "cote_reference": 6.2
         }
       ],
       "cordeCourse": "CORDE_GAUCHE"
@@ -845,7 +869,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 1.4,
+          "cote_tendance": "",
+          "cote_reference": 1.4
         },
         {
           "n°": "3",
@@ -885,7 +912,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.1,
+          "cote_tendance": "",
+          "cote_reference": 2.1
         },
         {
           "n°": "5",
@@ -936,7 +966,10 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 4,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0
         },
         {
           "n°": "2",
@@ -956,7 +989,10 @@
           "equipement(s)": "",
           "nb_courses": 13,
           "nb_victoires": 3,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 2.6,
+          "cote_tendance": "",
+          "cote_reference": 2.6
         },
         {
           "n°": "3",
@@ -996,7 +1032,10 @@
           "equipement(s)": "",
           "nb_courses": 17,
           "nb_victoires": 4,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 5.8,
+          "cote_tendance": "",
+          "cote_reference": 5.8
         },
         {
           "n°": "5",
@@ -1056,7 +1095,10 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 4,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 5.8,
+          "cote_tendance": "",
+          "cote_reference": 5.8
         },
         {
           "n°": "8",
@@ -1076,7 +1118,10 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 3,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0
         },
         {
           "n°": "9",
@@ -1096,7 +1141,10 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 3,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0
         },
         {
           "n°": "10",
@@ -1136,7 +1184,10 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 2,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 5.8,
+          "cote_tendance": "",
+          "cote_reference": 5.8
         },
         {
           "n°": "12",
@@ -1207,7 +1258,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 1,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 2.2,
+          "cote_tendance": "",
+          "cote_reference": 2.2
         },
         {
           "n°": "3",
@@ -1227,7 +1281,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 2,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 10.0
         },
         {
           "n°": "4",
@@ -1287,7 +1344,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 3,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 10.0
         },
         {
           "n°": "7",
@@ -1327,7 +1387,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 10.0
         },
         {
           "n°": "9",
@@ -1447,7 +1510,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 2.5,
+          "cote_tendance": "",
+          "cote_reference": 2.5
         }
       ],
       "cordeCourse": "CORDE_GAUCHE"
@@ -1498,7 +1564,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 5.8,
+          "cote_tendance": "",
+          "cote_reference": 5.8
         },
         {
           "n°": "3",
@@ -1518,7 +1587,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 5.8,
+          "cote_tendance": "",
+          "cote_reference": 5.8
         },
         {
           "n°": "4",
@@ -1538,7 +1610,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 0,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 5.8,
+          "cote_tendance": "",
+          "cote_reference": 5.8
         },
         {
           "n°": "5",
@@ -1558,7 +1633,10 @@
           "equipement(s)": "A",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 5.8,
+          "cote_tendance": "",
+          "cote_reference": 5.8
         },
         {
           "n°": "6",
@@ -1578,7 +1656,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 12.0
         },
         {
           "n°": "7",
@@ -1598,7 +1679,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 4.7,
+          "cote_tendance": "",
+          "cote_reference": 4.7
         },
         {
           "n°": "8",
@@ -1618,27 +1702,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 2
-        },
-        {
-          "n°": "9",
-          "cheval": "MAGO SONADOR F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MAGICAL TOUCH et MOTHER ALL BOMBS (JOHN F KENNEDY)",
-          "corde": "(Corde:09)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261107/SIO/10/20261107-SIO-10-9.png",
-          "propriétaire": "SIN DUENO (AZL)",
-          "entraineur": "LUCAS CARU",
-          "éleveurs": "",
-          "jockey": "MARIO ENRIQUE FERNANDEZ",
-          "poids": "56 kg",
-          "gains": "43540000",
-          "musique": "8p6p",
-          "valeur": "56.0",
-          "equipement(s)": "",
-          "nb_courses": 2,
-          "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 5.8,
+          "cote_tendance": "",
+          "cote_reference": 5.8
         }
       ],
       "cordeCourse": "CORDE_GAUCHE"
@@ -1689,7 +1756,10 @@
           "equipement(s)": "",
           "nb_courses": 19,
           "nb_victoires": 2,
-          "nb_places": 15
+          "nb_places": 15,
+          "cote": 1.7,
+          "cote_tendance": "",
+          "cote_reference": 1.7
         },
         {
           "n°": "3",
@@ -1729,7 +1799,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 2,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 3.6,
+          "cote_tendance": "",
+          "cote_reference": 3.6
         },
         {
           "n°": "5",
@@ -1749,7 +1822,10 @@
           "equipement(s)": "A",
           "nb_courses": 16,
           "nb_victoires": 1,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 10.0
         },
         {
           "n°": "6",
@@ -1769,7 +1845,10 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 3,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 5.4,
+          "cote_tendance": "",
+          "cote_reference": 5.4
         },
         {
           "n°": "7",

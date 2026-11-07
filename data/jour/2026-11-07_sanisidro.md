@@ -1,8 +1,8 @@
 # SAN ISIDRO — 07/11/2026
 
-10 courses.
+10 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -12,12 +12,12 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 2 | FUTURE MIND | 1,7 | KEVIN BANEGAS | –/–/–/– |
+| 6 | MR MORRIS | 1,7 | WILSON ROSARIO MOREYRA | –/–/–/– |
 | 1 | BEST SELLER | – | LEO NICOLAS ACUNA | –/–/–/– |
-| 2 | FUTURE MIND | – | KEVIN BANEGAS | –/–/–/– |
 | 3 | GO DANCING GO | – | IVAN MONASTEROLO | –/–/–/– |
 | 4 | MASHAL | – | MARTIN JAVIER VALLE | –/–/–/– |
 | 5 | MESSIAS | – | BRIAN RODRIGO ENRIQUE | –/–/–/– |
-| 6 | MR MORRIS | – | WILSON ROSARIO MOREYRA | –/–/–/– |
 | 7 | PASOS AL COSTADO | – | JUAN CRUZ VILLAGRA | –/–/–/– |
 
 ### 3. PREMIO DONA VAINILLA 2025
@@ -26,12 +26,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | ANGELA DE ARECO | – | MAURICIO EMANUEL VILLARUEL |
+| 1 | ANGELA DE ARECO | 1,1 | MAURICIO EMANUEL VILLARUEL |
+| 6 | THE GREAT FANTASTIC | 5,2 | GONZALO DAMIAN BORDA |
 | 2 | DUBAI ONE | – | MAXIMILIANO HERNAN MACHADO |
 | 3 | GLAFIRA | – | WILLIAM PEREYRA |
 | 4 | SCABREZZA | – | JORGE LUIS PERALTA |
 | 5 | SIFRIA | – | EDUARDO ORTEGA PAVON |
-| 6 | THE GREAT FANTASTIC | – | GONZALO DAMIAN BORDA |
 
 ### 4. PREMIO MIRTA 2018
 
@@ -39,6 +39,7 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 10 | SWEET TIME | 1,1 | LEO NICOLAS ACUNA |
 | 1 | ANGIE TOP | – | BRIAN RODRIGO ENRIQUE |
 | 2 | DEAR DAMA | – | JORGE LUIS CORDOBA |
 | 3 | GRAND TEODESIA | – | WILFRIDO TORRES MALDONADO |
@@ -48,19 +49,17 @@
 | 7 | SALOOMA | – | FACUNDO MARCELO CORIA |
 | 8 | SIEMPRE CONTENTA | – | IVAN MONASTEROLO |
 | 9 | QUEEN OF ROCK | – | LUCRECIA MARIANA CARABAJAL |
-| 10 | SWEET TIME | – | LEO NICOLAS ACUNA |
 
 ### 5. PREMIO TREASURE ISLAND 2023
 
-*21h22 · plat · 1200 m · 5 partants · cotes de l'extraction*
+*21h22 · plat · 1200 m · 4 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | ARMONK | – | THIAGO EVER LARREA FRUTOS |
-| 2 | EGOCENTRIC | – | FACUNDO MARCELO CORIA |
-| 3 | MAJO CANDY | – | KEVIN BANEGAS |
-| 4 | MATUTE JOY | – | JORGE MARCELINO ORTIZ |
-| 5 | NUESTRO | – | IVAN MONASTEROLO |
+| 2 | EGOCENTRIC | 1,6 | FACUNDO MARCELO CORIA |
+| 4 | MATUTE JOY | 3,6 | JORGE MARCELINO ORTIZ |
+| 3 | MAJO CANDY | 7,3 | KEVIN BANEGAS |
+| 5 | NUESTRO | 7,3 | IVAN MONASTEROLO |
 
 ### 6. PREMIO PINBALL WIZARD 2020
 
@@ -68,15 +67,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 2 | DANIEL TRACY | 2,5 | JUAN PABLO PAOLONI |
+| 4 | LOVE AND PEACE | 4,3 | JORGE MARCELINO ORTIZ |
+| 3 | DESAFIALO | 6,2 | RODRIGO DANIEL BASCUNAN |
+| 7 | TELEO | 6,2 | FRANCISCO JESUS LAVIGNA |
+| 9 | ROYAL STRAIGHT | 6,2 | ADRIAN MAXIMILIANO GIANNETTI |
+| 5 | MONTI | 27 | JUAN CRUZ VILLAGRA |
 | 1 | BARBA ROJA | – | WILSON ROSARIO MOREYRA |
-| 2 | DANIEL TRACY | – | JUAN PABLO PAOLONI |
-| 3 | DESAFIALO | – | RODRIGO DANIEL BASCUNAN |
-| 4 | LOVE AND PEACE | – | JORGE MARCELINO ORTIZ |
-| 5 | MONTI | – | JUAN CRUZ VILLAGRA |
 | 6 | SAN GREGORIO | – | MARTIN ANTONIO LA PALMA |
-| 7 | TELEO | – | FRANCISCO JESUS LAVIGNA |
 | 8 | TICHOLAS | – | EDUARDO ORTEGA PAVON |
-| 9 | ROYAL STRAIGHT | – | ADRIAN MAXIMILIANO GIANNETTI |
 
 ### 7. PREMIO DE LA PROVINCIA DE BUENOS AIRES ( GRADE III )
 
@@ -84,10 +83,10 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 2 | HEROE CON GLORIA | 1,4 | GONZALO DAMIAN BORDA |
+| 4 | OTIS BLUE | 2,1 | IVAN MONASTEROLO |
 | 1 | AKI | – | JUAN PABLO PAOLONI |
-| 2 | HEROE CON GLORIA | – | GONZALO DAMIAN BORDA |
 | 3 | LICITADOR | – | MARTIN JAVIER VALLE |
-| 4 | OTIS BLUE | – | IVAN MONASTEROLO |
 | 5 | RIO CLARO | – | ADRIAN MAXIMILIANO GIANNETTI |
 
 ### 8. COPA DE ORO S. ( GRADE I )
@@ -96,17 +95,17 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | DON LOGRADO | – | KEVIN BANEGAS | –/–/–/– |
-| 2 | EQUAL MOSTAZA | – | JUAN CARLOS NORIEGA | –/–/–/– |
+| 2 | EQUAL MOSTAZA | 2,6 | JUAN CARLOS NORIEGA | –/–/–/– |
+| 4 | ACENTO FINAL | 5,8 | GUSTAVO EMILIANO CALVENTE | –/–/–/– |
+| 7 | HONEST BOY | 5,8 | EDUARDO ORTEGA PAVON | –/–/–/– |
+| 11 | CAZADOR DE ARECO | 5,8 | MARTIN JAVIER VALLE | –/–/–/– |
+| 1 | DON LOGRADO | 11 | KEVIN BANEGAS | –/–/–/– |
+| 8 | SENOR SANDRO | 11 | WILLIAM PEREYRA | –/–/–/– |
+| 9 | CURIOUS SONG | 11 | IVAN MONASTEROLO | –/–/–/– |
 | 3 | FULL KEYNOTE | – | BRIAN RODRIGO ENRIQUE | –/–/–/– |
-| 4 | ACENTO FINAL | – | GUSTAVO EMILIANO CALVENTE | –/–/–/– |
 | 5 | ORPEN AGAIN | – | PABLO DAMIAN CARRIZO | –/–/–/– |
 | 6 | OUT OF THE BLUE | – | ADRIAN MAXIMILIANO GIANNETTI | –/–/–/– |
-| 7 | HONEST BOY | – | EDUARDO ORTEGA PAVON | –/–/–/– |
-| 8 | SENOR SANDRO | – | WILLIAM PEREYRA | –/–/–/– |
-| 9 | CURIOUS SONG | – | IVAN MONASTEROLO | –/–/–/– |
 | 10 | GORDIANUS | – | CRISTIAN ERNESTO VELAZQUEZ | –/–/–/– |
-| 11 | CAZADOR DE ARECO | – | MARTIN JAVIER VALLE | –/–/–/– |
 | 12 | NEAT COLT | – | JUAN CRUZ VILLAGRA | –/–/–/– |
 
 ### 9. PREMIO ENRIQUE ACEBAL S. ( GRADE I )
@@ -115,36 +114,35 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 2 | RUBY ROSE | 2,2 | RODRIGO DANIEL BASCUNAN | –/–/–/– |
+| 14 | OASIS MOON | 2,5 | JUAN PABLO PAOLONI | –/–/–/– |
+| 3 | LOOK AT TO ME | 10 | WILLIAM PEREYRA | –/–/–/– |
+| 6 | LA SANTA CANDIDA | 10 | IVAN MONASTEROLO | –/–/–/– |
+| 8 | FLOR DEL VALLE | 10 | KEVIN BANEGAS | –/–/–/– |
 | 1 | DEEP FEELING | – | URBANO JOSE CHAVES | –/–/–/– |
-| 2 | RUBY ROSE | – | RODRIGO DANIEL BASCUNAN | –/–/–/– |
-| 3 | LOOK AT TO ME | – | WILLIAM PEREYRA | –/–/–/– |
 | 4 | SIESTA | – | GONZALO DAMIAN BORDA | –/–/–/– |
 | 5 | KOREAN GIRL | – | JORGE LUIS PERALTA | –/–/–/– |
-| 6 | LA SANTA CANDIDA | – | IVAN MONASTEROLO | –/–/–/– |
 | 7 | JUSTA PROMESA | – | EDUARDO ORTEGA PAVON | –/–/–/– |
-| 8 | FLOR DEL VALLE | – | KEVIN BANEGAS | –/–/–/– |
 | 9 | RISK FREE | – | ADRIAN MAXIMILIANO GIANNETTI | –/–/–/– |
 | 10 | SALEIA | – | LEO NICOLAS ACUNA | –/–/–/– |
 | 11 | GUNAKALI | – | MARTIN JAVIER VALLE | –/–/–/– |
 | 12 | ASPEN BEACH | – | THIAGO EVER LARREA FRUTOS | –/–/–/– |
 | 13 | CONI CHIC | – | TOMAS DANIEL BAEZ | –/–/–/– |
-| 14 | OASIS MOON | – | JUAN PABLO PAOLONI | –/–/–/– |
 
 ### 10. PREMIO SIXTIES SONG 2018
 
-*23h55 · plat · 1400 m · 9 partants · cotes de l'extraction*
+*23h55 · plat · 1400 m · 8 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 7 | SANDI GALAN | 4,7 | WILLIAM PEREYRA |
+| 2 | CHAPARRITO | 5,8 | LEO NICOLAS ACUNA |
+| 3 | EL ARREGLO | 5,8 | RAMON ARIEL AGUIRRE |
+| 4 | EMPENOSO RIM | 5,8 | LAUTARO EMMANUEL BALMACEDA |
+| 5 | HI GREEDO | 5,8 | JUAN CRUZ VILLAGRA |
+| 8 | TINCHINIO | 5,8 | THIAGO EVER LARREA FRUTOS |
+| 6 | MAXIMUS NIK | 12 | THOMAS EMANUEL MIRANDA |
 | 1 | BANDURRION | – | OSVALDO ADRIAN ALDERETE |
-| 2 | CHAPARRITO | – | LEO NICOLAS ACUNA |
-| 3 | EL ARREGLO | – | RAMON ARIEL AGUIRRE |
-| 4 | EMPENOSO RIM | – | LAUTARO EMMANUEL BALMACEDA |
-| 5 | HI GREEDO | – | JUAN CRUZ VILLAGRA |
-| 6 | MAXIMUS NIK | – | THOMAS EMANUEL MIRANDA |
-| 7 | SANDI GALAN | – | WILLIAM PEREYRA |
-| 8 | TINCHINIO | – | THIAGO EVER LARREA FRUTOS |
-| 9 | MAGO SONADOR | – | MARIO ENRIQUE FERNANDEZ |
 
 ### 11. PREMIO CIMA DE ARECO 2024
 
@@ -152,10 +150,10 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 2 | DONA CUCHA | 1,7 | JAIRO FLORES |
+| 4 | LIVE IT UP | 3,6 | IVAN MONASTEROLO |
+| 6 | PILAR | 5,4 | ADRIAN MAXIMILIANO GIANNETTI |
+| 5 | MAXIMA RISK | 10 | KEVIN BANEGAS |
 | 1 | DESCONFIADA INC | – | OSVALDO ADRIAN FLORES |
-| 2 | DONA CUCHA | – | JAIRO FLORES |
 | 3 | EMPRESS GIRL | – | FACUNDO MARCELO CORIA |
-| 4 | LIVE IT UP | – | IVAN MONASTEROLO |
-| 5 | MAXIMA RISK | – | KEVIN BANEGAS |
-| 6 | PILAR | – | ADRIAN MAXIMILIANO GIANNETTI |
 | 7 | STRANGER KEY | – | BRIAN RODRIGO ENRIQUE |
