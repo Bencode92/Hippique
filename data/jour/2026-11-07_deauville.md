@@ -1,6 +1,6 @@
 # DEAUVILLE — 07/11/2026
 
-8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -66,17 +66,17 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX PORLEZZA
 
-*16h50 · plat · 1500 m · 7 partants · cotes de l'extraction*
+*16h50 · plat · 1500 m · 7 partants · cotes à T−13:35*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 5 | SIAM PARAGON | 2,3 | 2,32 | -1,0 % | A.LEMAITRE | 11/170/247/183 |
-| 6 | ABLOOM | 5 | 6,07 | -17,7 % | M.BARZALONA 3e | 2/1/–/– |
-| 2 | CHICA DE CIUDAD | 6,8 | 7,19 | -5,4 % | A.MOLINS | 34/95/3749/1220 |
-| 4 | VERTBOIS | 7,5 | 8,04 | -6,7 % | B.LABATE | 113/2/95/6 |
-| 1 | TUMBLER | 10 | 13,64 | -26,7 % | C.LECOEUVRE | 13/21/1/90 |
-| 3 | QUASAR | 11 | 12,53 | -12,2 % | A.MADAMET | 10/76/12/112 |
-| 7 | LADY ILZE | 17 | 25,52 | -33,4 % | S.PASQUIER | 23/6/–/20 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 5 | SIAM PARAGON | 2,6 | 2,3 | 3,16 | -17,7 % | A.LEMAITRE | 11/170/247/183 |
+| 6 | ABLOOM | 4,1 | 5 | 4,85 | -15,4 % | M.BARZALONA 3e | 2/1/–/– |
+| 4 | VERTBOIS | 6,7 | 7,5 | 7,03 | -4,7 % | B.LABATE | 113/2/95/6 |
+| 2 | CHICA DE CIUDAD | 7,8 | 6,8 | 8,37 | -6,8 % | A.MOLINS | 34/95/3749/1220 |
+| 3 | QUASAR | 9,6 | 11 | 9,76 | -1,7 % | A.MADAMET | 10/76/12/112 |
+| 1 | TUMBLER | 12 | 10 | 16,10 | -25,5 % | C.LECOEUVRE | 13/21/1/90 |
+| 7 | LADY ILZE | 15 | 17 | 21,93 | -31,6 % | S.PASQUIER | 23/6/–/20 |
 
 ### 5. PRIX DE L'OPERATION MARTLET
 
