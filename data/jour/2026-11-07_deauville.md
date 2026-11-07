@@ -2,25 +2,27 @@
 
 8 courses.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+**Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
+La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
+Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classements ci-dessus.
 
 ---
 
 ### 1. PRIX DE BRICQUEBEC-EN-COTENTIN
 
-*14h58 · plat · 2500 m · 9 partants · cotes de l'extraction*
+*14h58 · plat · 2500 m · 9 partants · cotes à T−29:36*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | ADVENTURA | – | A.MADAMET | 10/64/14/23 |
-| 2 | ATALAYA | – | N.BOUVRY | 253/40/58/680 |
-| 3 | PRINCENOIR | – | H.LEBOUC | 19/26/25/1604 |
-| 4 | CHERRY PIE | – | M.GUYON | 4/59/953/1906 |
-| 5 | DECLA | – | A.MENARD-LEDAUPHIN | 154/245/531/660 |
-| 6 | ZOLIA D'OROUX | – | T.BREBION | 99/27/1551/– |
-| 7 | MASTER EMERY | – | A.MOLINS | 34/230/1739/355 |
-| 8 | SLALOM | – | F.VALLE SKAR | 35/536/12/1833 |
-| 9 | INDY | – | J.MOUTARD | 61/40/1883/2769 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 3 | PRINCENOIR | 1,3 | 1,62 | -19,5 % | H.LEBOUC | 19/26/25/1604 |
+| 1 | ADVENTURA | 6,5 | 8,06 | -19,4 % | A.MADAMET | 10/64/14/23 |
+| 4 | CHERRY PIE | 14 | 18,56 | -24,5 % | M.GUYON | 4/59/953/1906 |
+| 6 | ZOLIA D'OROUX | 21 | 29,76 | -29,4 % | T.BREBION | 99/27/1551/– |
+| 8 | SLALOM | 24 | 34,70 | -30,8 % | F.VALLE SKAR | 35/536/12/1833 |
+| 2 | ATALAYA | 26 | 38,02 | -31,6 % | N.BOUVRY | 253/40/58/680 |
+| 5 | DECLA | 45 | 75,50 | -40,4 % | A.MENARD-LEDAUPHIN | 154/245/531/660 |
+| 7 | MASTER EMERY | 66 | 114,02 | -42,1 % | A.MOLINS | 34/230/1739/355 |
+| 9 | INDY | 85 | 138,01 | -38,4 % | J.MOUTARD | 61/40/1883/2769 |
 
 ### 2. PRIX DU PONT D'OUILLY
 
