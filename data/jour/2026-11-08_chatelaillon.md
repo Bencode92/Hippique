@@ -60,14 +60,13 @@
 
 ### 4. PRIX GREGORY COUTANCEAU
 
-*13h05 · attelé · 2500 m · 15 partants · cotes de l'extraction*
+*13h05 · attelé · 2500 m · 14 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
 | 1 | MAMZELLE BLANCHE | – | L. KOUBICHE |
 | 2 | MIRA DES ILES | – | M. ABRIVARD |
 | 3 | MELANIA DU CLOS | – | J. PAILLE |
-| 4 | MAGE DU BUIS | – | I.P. BLANCHON |
 | 5 | MONJAMA | – | O. RAFFIN |
 | 6 | MEANDRE | – | S. LALOUM |
 | 7 | MUSICIENNE | – | P. BELLOCHE |
