@@ -1,6 +1,6 @@
 # DEAUVILLE — 07/11/2026
 
-8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -126,24 +126,24 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE L'OPERATION WINDSOR
 
-*18h35 · plat · 1900 m · 14 partants · cotes de l'extraction*
+*18h35 · plat · 1900 m · 14 partants · cotes à T−28:55*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 2 | DALYAMIX | 4,8 | 5,74 | -16,4 % | M.JUSTUM | 87/130/443/642 |
-| 9 | WILLOWER | 5,7 | 6,17 | -7,6 % | A.MADAMET | 12/63/193/179 |
-| 5 | KALAFA | 6,7 | 6,66 | **+0,6 %** | M.GUYON 3e | 4/45/2/1529 |
-| 13 | HARRISON POINT | 9,2 | 9,98 | -7,8 % | C.BELMONT | 146/258/75/1098 |
-| 8 | HAVANA SIX | 11 | 13,75 | -20,0 % | J.MOUTARD | 42/15/317/119 |
-| 12 | MELANIES JOY | 12 | 13,65 | -12,1 % | M.FAVRIAUX | 54/23/3246/528 |
-| 3 | LA DOLOISE | 14 | 14,93 | -6,2 % | S.PASQUIER | 20/153/393/3112 |
-| 7 | SEE THE LIGHT | 16 | 15,93 | **+0,4 %** | E.HARDOUIN | 30/117/40/757 |
-| 10 | AZ ZEIVA | 19 | 26,63 | -28,7 % | D.SANTIAGO | 19/150/666/5 |
-| 4 | CORONADO | 26 | 30,44 | -14,6 % | L.ROUSSEL | 18/81/108/188 |
-| 14 | EMINENCE GRISE | 26 | 34,82 | -25,3 % | T.BACHELOT | 16/63/899/1295 |
-| 11 | PIERRE LE GRAND | 29 | 43,29 | -33,0 % | J.CLAUDIC | 40/268/408/700 |
-| 6 | RUE POUSSIN | 46 | 77,85 | -40,9 % | C.LECOEUVRE | 13/353/127/1913 |
-| 15 | WARDAMA | 61 | 98,18 | -37,9 % | C.GROSBOIS | 26/98/1978/4236 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 5 | KALAFA | 5,4 | 6,7 | 5,67 | -4,7 % | M.GUYON 3e | 4/45/2/1529 |
+| 9 | WILLOWER | 6,7 | 5,7 | 7,20 | -7,0 % | A.MADAMET | 12/63/193/179 |
+| 2 | DALYAMIX | 6,9 | 4,8 | 7,89 | -12,6 % | M.JUSTUM | 87/130/443/642 |
+| 13 | HARRISON POINT | 9,4 | 9,2 | 10,36 | -9,3 % | C.BELMONT | 146/258/75/1098 |
+| 7 | SEE THE LIGHT | 11 | 16 | 10,49 | **+4,8 %** | E.HARDOUIN | 30/117/40/757 |
+| 12 | MELANIES JOY | 11 | 12 | 12,49 | -12,0 % | M.FAVRIAUX | 54/23/3246/528 |
+| 3 | LA DOLOISE | 12 | 14 | 12,65 | -5,2 % | S.PASQUIER | 20/153/393/3112 |
+| 8 | HAVANA SIX | 12 | 11 | 16,88 | -28,9 % | J.MOUTARD | 42/15/317/119 |
+| 4 | CORONADO | 21 | 26 | 24,17 | -13,1 % | L.ROUSSEL | 18/81/108/188 |
+| 11 | PIERRE LE GRAND | 21 | 29 | 27,65 | -24,0 % | J.CLAUDIC | 40/268/408/700 |
+| 10 | AZ ZEIVA | 22 | 19 | 31,98 | -31,2 % | D.SANTIAGO | 19/150/666/5 |
+| 6 | RUE POUSSIN | 25 | 46 | 36,28 | -31,1 % | C.LECOEUVRE | 13/353/127/1913 |
+| 14 | EMINENCE GRISE | 29 | 26 | 38,10 | -23,9 % | T.BACHELOT | 16/63/899/1295 |
+| 15 | WARDAMA | 63 | 61 | 102,86 | -38,7 % | C.GROSBOIS | 26/98/1978/4236 |
 
 ### 8. PRIX DE L'OPERATION GOODWOOD
 
