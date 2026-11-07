@@ -73,3 +73,16 @@ dd { margin: 0; min-width: 0; overflow-wrap: anywhere }
 .mute { color: var(--mute) }
 footer { margin-top: 32px; color: var(--mute); font-size: .8rem }
 @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth } }
+.jeu { margin-top: 18px; background: var(--surface); border: 2px solid var(--turf); border-radius: 10px; padding: 14px }
+.jeu h2 { font-size: 1.7rem; color: var(--turf) }
+.consigne { margin: 6px 0 10px; font-size: .92rem }
+.jeu table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; font-size: .9rem }
+.jeu th { text-align: left; font-size: .66rem; text-transform: uppercase; letter-spacing: .05em; color: var(--mute); padding: 4px 6px; border-bottom: 1px solid var(--line) }
+.jeu td { padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top }
+.jeu td.h { font-family: var(--display); font-weight: 700; font-size: 1.1rem; color: var(--brass); white-space: nowrap }
+.jeu td.r { font-family: var(--display); font-weight: 700; color: var(--turf) }
+.jeu td.ch { display: grid; gap: 2px; min-width: 0 }
+.jeu td.c { text-align: right; white-space: nowrap; font-weight: 600 }
+.pick { font-weight: 600 }
+.small2 { font-size: .76rem }
+.tag { justify-self: start; font-size: .68rem; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: var(--brass); border: 1px solid var(--brass); border-radius: 3px; padding: 0 4px }

@@ -115,6 +115,27 @@ for c in doc["courses"]:
   <ol class="chevaux">{"".join(cards)}</ol>
 </section>''')
 
+MISE = int(sys.argv[3]) if len(sys.argv) > 3 else 20
+REGLE = doc["hippodrome"].replace(" ", "").replace("-", "") in ("LONGCHAMP", "SAINTCLOUD")
+lignes = []
+for c in doc["courses"]:
+    ps = c["partants"]; regle = REGLE and len(ps) >= 14
+    fav = ps[0] if cotes else None
+    if fav:
+        jkr = f'{rang(fav["fb"]["r"])} France' if fav["fb"] else "jockey non classé"
+        cheval = f'<b class="pick">n°{fav["n"]} {e(fav["nom"])}</b><span class="mute small2">{e(fav["jk"])} · {jkr}</span>'
+        cote = cote_txt(fav["cote"])
+    else:
+        cheval = '<b class="pick">le favori</b><span class="mute small2">la plus petite cote au moment de jouer</span>'
+        cote = "–"
+    lignes.append(f'<tr{" class=regle" if regle else ""}><td class="h">{e(c["heure"])}</td><td class="r">C{c["num"]}</td>'
+                  f'<td class="ch">{cheval}{"<span class=tag>règle 14+</span>" if regle else ""}</td><td class="c">{cote}</td><td class="c">{MISE} €</td></tr>')
+jeu = f'''<section class="jeu">
+  <h2>À jouer</h2>
+  <p class="consigne"><b>Simple gagnant, {MISE} € par course, sur le favori.</b> {"Les noms s'affichent dès que le PMU publie les cotes ; d'ici là, jouer le cheval à la plus petite cote dans l'appli au moment du pari." if not cotes else f"Favoris d'après les cotes PMU relevées à {releve} : si un autre cheval est passé favori au moment de jouer, garder celui de la fiche."}</p>
+  <div class="scroll"><table><thead><tr><th>Heure</th><th>Course</th><th>Cheval</th><th>Cote</th><th>Mise</th></tr></thead><tbody>{"".join(lignes)}</tbody></table></div>
+  <p class="mute small">Total : {MISE * len(doc["courses"])} € sur {len(doc["courses"])} courses.{" Les courses marquées « règle 14+ » (14 partants ou plus) sont celles de notre règle en test ; les autres sont jouées sur le favori sans avantage mesuré (en moyenne le favori rend environ −14 %)." if REGLE else ""}</p>
+</section>'''
 nav = "".join(f'<a href="#c{c["num"]}">C{c["num"]}</a>' for c in doc["courses"])
 discs = sorted({c["disc"] for c in doc["courses"]})
 sous_titre = (f"{len(doc['courses'])} courses · {', '.join(discs)} · " +
@@ -134,6 +155,7 @@ out = f'''<title>{e(titre)}</title>
     <span><b>Ici</b> : 6 dernières places du cheval sur l'hippodrome (0 = non classé).</span>
     <span>Historique PMU depuis 2022 en plat, 2024 en obstacle. Une lecture du passé, pas un conseil de pari : la cote intègre déjà la réputation des jockeys.</span>
   </div>
+  {jeu}
   <nav aria-label="Courses">{nav}</nav>
   {"".join(sections)}
   <footer>Relevé PMU à {releve} le {doc["releve"][8:10]}/{doc["releve"][5:7]}. Calcul : bench/analyse_reunion.py.</footer>
