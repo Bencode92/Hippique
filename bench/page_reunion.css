@@ -1,0 +1,75 @@
+/* Layout : programme de réunion, une colonne au téléphone, onglets de courses collants en haut */
+:root {
+  --bg: #eef2ee; --surface: #ffffff; --fg: #17241c; --mute: #5d6c63; --line: #d3ddd5;
+  --turf: #1f5a3a; --brass: #a8740f; --good: #1d7a45; --bad: #b0433a; --chip: #e5ece6;
+  --display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f1612; --surface: #18221c; --fg: #e3ebe5; --mute: #93a39a; --line: #2a3830;
+  --turf: #6fc394; --brass: #e2ad4a; --good: #6fd197; --bad: #ef8a80; --chip: #223029; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0f1612; --surface: #18221c; --fg: #e3ebe5; --mute: #93a39a; --line: #2a3830;
+  --turf: #6fc394; --brass: #e2ad4a; --good: #6fd197; --bad: #ef8a80; --chip: #223029; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 15px; line-height: 1.45; }
+.wrap { max-width: 760px; margin: 0 auto; padding-inline: 16px; padding-block: 20px 48px; }
+h1 { font-family: var(--display); font-weight: 700; font-size: 2.3rem; line-height: 1; margin: 0; letter-spacing: .01em; text-wrap: balance }
+.sous { color: var(--mute); margin: 6px 0 0; font-size: .9rem }
+.legende { margin: 14px 0 0; padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); font-size: .85rem; color: var(--mute); display: grid; gap: 6px }
+.legende b { color: var(--fg); font-weight: 600 }
+.legende b.g { color: var(--good) } .legende b.b { color: var(--bad) }
+nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); margin: 16px -16px 0; padding: 10px 16px; display: flex; gap: 6px; overflow-x: auto; border-bottom: 1px solid var(--line) }
+nav a { font-family: var(--display); font-weight: 600; font-size: 1.05rem; text-decoration: none; color: var(--turf); padding: 4px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); flex: none }
+nav a:focus-visible { outline: 2px solid var(--brass); outline-offset: 2px }
+.course { margin-top: 28px; scroll-margin-top: 64px }
+.course header { display: grid; gap: 2px }
+.heure { font-family: var(--display); font-weight: 600; color: var(--brass); font-size: 1.1rem; letter-spacing: .04em }
+h2 { font-family: var(--display); font-weight: 700; font-size: 1.5rem; line-height: 1.1; margin: 0; text-wrap: balance }
+.cn { color: var(--turf) }
+.meta { margin: 0; color: var(--mute); font-size: .85rem }
+.lecture { display: grid; gap: 4px; margin: 10px 0 0; padding: 10px 12px; border-left: 3px solid var(--turf); background: var(--surface); border-radius: 0 6px 6px 0; font-size: .92rem }
+.lecture p { margin: 0 }
+.jtab { margin-top: 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; min-width: 0 }
+.jtab h3 { font-family: var(--display); font-weight: 600; font-size: 1.15rem; margin: 0 0 6px; letter-spacing: .02em }
+.scroll { overflow-x: auto }
+.jtab table { width: 100%; border-collapse: collapse; font-size: .84rem; font-variant-numeric: tabular-nums }
+.jtab th { text-align: left; font-weight: 600; font-size: .66rem; text-transform: uppercase; letter-spacing: .05em; color: var(--mute); padding: 4px 5px 6px; border-bottom: 1px solid var(--line); white-space: nowrap }
+.jtab th:last-child { text-align: right }
+.jtab td { padding: 6px 5px; border-bottom: 1px solid var(--line); vertical-align: baseline }
+.jtab tr:last-child td { border-bottom: 0 }
+.jtab td.r { font-family: var(--display); font-weight: 700; font-size: 1.05rem; color: var(--turf); width: 1.6em }
+.jtab td.g { white-space: nowrap; font-size: .8rem }
+.jtab td.g b { font-weight: 600 }
+.jtab td.c { white-space: nowrap; text-align: right; font-weight: 600 }
+.jtab i { font-style: normal; color: var(--mute); font-weight: 400 }
+.jtab tr.sous td.r, .jtab tr.sous td.c { color: var(--good) }
+.jtab tr.sur td.c { color: var(--bad) }
+.jtab tr.peu td { color: var(--mute) }
+.small { font-size: .78rem; margin: 6px 0 0 }
+.chevaux { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px }
+.cheval { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; display: grid; gap: 6px; min-width: 0 }
+.tete { display: flex; align-items: baseline; gap: 10px }
+.n { font-family: var(--display); font-weight: 700; font-size: 1.3rem; min-width: 1.6em; color: var(--turf); font-variant-numeric: tabular-nums }
+.nom { font-weight: 600; flex: 1; min-width: 0 }
+.cote { font-family: var(--display); font-weight: 700; font-size: 1.35rem; font-variant-numeric: tabular-nums }
+.jk { font-size: .88rem; font-weight: 500; color: var(--mute); letter-spacing: .03em }
+.chips { display: flex; flex-wrap: wrap; gap: 6px }
+.chip { font-size: .8rem; background: var(--chip); border-radius: 4px; padding: 2px 7px; font-variant-numeric: tabular-nums; white-space: nowrap }
+.chip b { font-weight: 600; text-transform: uppercase; font-size: .66rem; letter-spacing: .05em; color: var(--mute); margin-right: 2px }
+.chip i { font-style: normal; color: var(--mute) }
+.chip.top { box-shadow: inset 0 0 0 1.5px var(--brass); font-weight: 600 }
+.chip.bas { opacity: .65 }
+.chip.peu { color: var(--mute) }
+.rp.plus { color: var(--good); font-weight: 600 }
+.rp.moins { color: var(--bad); font-weight: 600 }
+dl { margin: 0; display: grid; gap: 2px; font-size: .84rem }
+dl div { display: grid; grid-template-columns: 4.6em 1fr; gap: 6px }
+dt { color: var(--mute) }
+dd { margin: 0; min-width: 0; overflow-wrap: anywhere }
+.hist { font-variant-numeric: tabular-nums; letter-spacing: .08em }
+.hist .v { color: var(--good) }
+.mus { font-family: ui-monospace, Menlo, monospace; font-size: .8rem }
+.mute { color: var(--mute) }
+footer { margin-top: 32px; color: var(--mute); font-size: .8rem }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth } }
