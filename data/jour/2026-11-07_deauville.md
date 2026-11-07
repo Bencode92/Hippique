@@ -1,6 +1,6 @@
 # DEAUVILLE — 07/11/2026
 
-8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -80,26 +80,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DE L'OPERATION MARTLET
 
-*17h25 · plat · 1900 m · 16 partants · cotes de l'extraction*
+*17h25 · plat · 1900 m · 16 partants · cotes à T−29:55*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 4 | JOUKOVKA | 4,2 | 4,98 | -15,7 % | E.HARDOUIN | 27/214/16/342 |
-| 1 | RIVER QUARTZ | 9 | 9,39 | -4,2 % | R.MANGIONE | 78/318/248/492 |
-| 2 | KAHOUNA | 9 | 11,94 | -24,6 % | M.FLEURY | 124/523/932/1690 |
-| 10 | KARKHOV | 10 | 12,63 | -20,8 % | D.SANTIAGO | 15/309/16/1224 |
-| 11 | ZOUBAREVA | 10 | 10,19 | -1,9 % | C.BELMONT | 171/295/201/423 |
-| 7 | SEVEN TIMER | 13 | 17,20 | -24,4 % | A.LEMAITRE | 11/94/2615/3639 |
-| 14 | MAESTRO CHOP | 13 | 16,86 | -22,9 % | P.CHEYER | 109/252/6/1377 |
-| 8 | MANA SIS | 15 | 17,83 | -15,9 % | P.REMOUE | 37/309/27/365 |
-| 13 | LA FILLE DE BERLIN | 21 | 28,75 | -27,0 % | H.LEBOUC | 19/309/3411/365 |
-| 12 | SECRET GLORY | 23 | 35,94 | -36,0 % | F.VALLE SKAR | 35/108/312/84 |
-| 3 | ESKANDANI | 24 | 27,96 | -14,2 % | L.ROUSSEL | 26/81/1227/120 |
-| 5 | PROXIMA CENTAURI | 27 | 31,96 | -15,5 % | J.CLAUDIC | 38/81/117/120 |
-| 6 | PURBRIGHT DRALLIV | 31 | 39,00 | -20,5 % | Y.BARILLE | 82/183/2059/3913 |
-| 15 | PRINCESS LAURA | 31 | 41,00 | -24,4 % | J.LACROIX | 94/141/22/5310 |
-| 9 | PARMENIDE | 34 | 45,47 | -25,2 % | C.GROSBOIS | 25/206/168/3321 |
-| 16 | ALPENGEIST | 66 | 93,15 | -29,1 % | G.MEURY | 68/432/60/218 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 4 | JOUKOVKA | 5,2 | 4,2 | 6,02 | -13,6 % | E.HARDOUIN | 27/214/16/342 |
+| 14 | MAESTRO CHOP | 8,1 | 13 | 9,58 | -15,4 % | P.CHEYER | 109/252/6/1377 |
+| 2 | KAHOUNA | 8,3 | 9 | 9,85 | -15,8 % | M.FLEURY | 124/523/932/1690 |
+| 1 | RIVER QUARTZ | 9,3 | 9 | 9,66 | -3,7 % | R.MANGIONE | 78/318/248/492 |
+| 7 | SEVEN TIMER | 9,5 | 13 | 10,79 | -12,0 % | A.LEMAITRE | 11/94/2615/3639 |
+| 10 | KARKHOV | 12 | 10 | 15,50 | -22,6 % | D.SANTIAGO | 15/309/16/1224 |
+| 11 | ZOUBAREVA | 12 | 10 | 13,61 | -11,8 % | C.BELMONT | 171/295/201/423 |
+| 8 | MANA SIS | 15 | 15 | 17,65 | -15,0 % | P.REMOUE | 37/309/27/365 |
+| 12 | SECRET GLORY | 18 | 23 | 26,77 | -32,8 % | F.VALLE SKAR | 35/108/312/84 |
+| 3 | ESKANDANI | 22 | 24 | 25,07 | -12,2 % | L.ROUSSEL | 26/81/1227/120 |
+| 13 | LA FILLE DE BERLIN | 23 | 21 | 31,61 | -27,2 % | H.LEBOUC | 19/309/3411/365 |
+| 6 | PURBRIGHT DRALLIV | 35 | 31 | 44,24 | -20,9 % | Y.BARILLE | 82/183/2059/3913 |
+| 15 | PRINCESS LAURA | 35 | 31 | 46,52 | -24,8 % | J.LACROIX | 94/141/22/5310 |
+| 5 | PROXIMA CENTAURI | 37 | 27 | 42,97 | -13,9 % | J.CLAUDIC | 38/81/117/120 |
+| 9 | PARMENIDE | 42 | 34 | 54,30 | -22,6 % | C.GROSBOIS | 25/206/168/3321 |
+| 16 | ALPENGEIST | 67 | 66 | 93,78 | -28,6 % | G.MEURY | 68/432/60/218 |
 
 ### 6. PRIX DE L'OPERATION SPRING
 
