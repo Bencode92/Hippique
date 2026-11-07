@@ -66,17 +66,17 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX PORLEZZA
 
-*16h50 · plat · 1500 m · 7 partants · cotes à T−8:55*
+*16h50 · plat · 1500 m · 7 partants · cotes à T−3:35*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 5 | SIAM PARAGON | 3 | 2,3 | 3,61 | -16,9 % | A.LEMAITRE | 11/170/247/183 |
-| 6 | ABLOOM | 3,8 | 5 | 4,42 | -14,0 % | M.BARZALONA 3e | 2/1/–/– |
-| 4 | VERTBOIS | 5,6 | 7,5 | 5,69 | -1,6 % | B.LABATE | 113/2/95/6 |
-| 3 | QUASAR | 7,6 | 11 | 7,39 | **+2,8 %** | A.MADAMET | 10/76/12/112 |
-| 2 | CHICA DE CIUDAD | 8,9 | 6,8 | 9,64 | -7,7 % | A.MOLINS | 34/95/3749/1220 |
-| 1 | TUMBLER | 14 | 10 | 19,10 | -26,7 % | C.LECOEUVRE | 13/21/1/90 |
-| 7 | LADY ILZE | 17 | 17 | 25,12 | -32,3 % | S.PASQUIER | 23/6/–/20 |
+| 5 | SIAM PARAGON | 2,8 | 2,3 | 3,38 | -17,1 % | A.LEMAITRE | 11/170/247/183 |
+| 4 | VERTBOIS | 4,2 | 7,5 | 3,89 | **+7,8 %** | B.LABATE | 113/2/95/6 |
+| 6 | ABLOOM | 4,5 | 5 | 5,33 | -15,6 % | M.BARZALONA 3e | 2/1/–/– |
+| 3 | QUASAR | 8,5 | 11 | 8,43 | **+0,8 %** | A.MADAMET | 10/76/12/112 |
+| 2 | CHICA DE CIUDAD | 10 | 6,8 | 11,07 | -9,7 % | A.MOLINS | 34/95/3749/1220 |
+| 1 | TUMBLER | 17 | 10 | 24,07 | -29,4 % | C.LECOEUVRE | 13/21/1/90 |
+| 7 | LADY ILZE | 17 | 17 | 25,21 | -32,6 % | S.PASQUIER | 23/6/–/20 |
 
 ### 5. PRIX DE L'OPERATION MARTLET
 
