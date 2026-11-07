@@ -8,7 +8,7 @@
 
 ### 1. PRIX CATHARINA
 
-*14h40 · plat · 2500 m · 6 partants · cotes de l'extraction*
+*13h40 · plat · 2500 m · 6 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -21,7 +21,7 @@
 
 ### 2. PRIX ANDRE SUBRA
 
-*15h10 · plat · 2500 m · 8 partants · cotes de l'extraction*
+*14h10 · plat · 2500 m · 8 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -36,7 +36,7 @@
 
 ### 3. PRIX DE GABARRET
 
-*15h40 · plat · 1850 m · 6 partants · cotes de l'extraction*
+*14h40 · plat · 1850 m · 6 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -49,7 +49,7 @@
 
 ### 4. PRIX SERGE DAVY
 
-*16h10 · haies · 3600 m · 8 partants · cotes de l'extraction*
+*15h10 · haies · 3600 m · 8 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -64,7 +64,7 @@
 
 ### 5. PRIX CATHULUS
 
-*16h40 · haies · 3600 m · 5 partants · cotes de l'extraction*
+*15h40 · haies · 3600 m · 5 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -76,7 +76,7 @@
 
 ### 6. PRIX ARMAND BASTOUL
 
-*17h10 · haies · 3600 m · 5 partants · cotes de l'extraction*
+*16h10 · haies · 3600 m · 5 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -88,7 +88,7 @@
 
 ### 7. PRIX NICOLAS BOICHOT
 
-*17h40 · cross · 4900 m · 7 partants · cotes de l'extraction*
+*16h40 · cross · 4900 m · 7 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|

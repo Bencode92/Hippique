@@ -8,7 +8,7 @@
 
 ### 6. PRIX HAUTS-DE-FRANCE                    AUTRICHE
 
-*18h00 · attelé · 2100 m · 12 partants · cotes de l'extraction*
+*17h00 · attelé · 2100 m · 12 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -27,7 +27,7 @@
 
 ### 7. GOLD-CUP 2026 DES TRABERSPORTKLUBS      AUTRICHE
 
-*18h34 · attelé · 2600 m · 11 partants · cotes de l'extraction*
+*17h34 · attelé · 2600 m · 11 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -45,7 +45,7 @@
 
 ### 8. PRIX NORMANDIE                          AUTRICHE
 
-*19h09 · attelé · 2100 m · 10 partants · cotes de l'extraction*
+*18h09 · attelé · 2100 m · 10 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -62,7 +62,7 @@
 
 ### 9. PRIX CÔTE D'AZUR                        AUTRICHE
 
-*19h44 · attelé · 1600 m · 12 partants · cotes de l'extraction*
+*18h44 · attelé · 1600 m · 12 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -81,7 +81,7 @@
 
 ### 10. PRIX BRETAGNE                           AUTRICHE
 
-*20h18 · attelé · 2100 m · 9 partants · cotes de l'extraction*
+*19h18 · attelé · 2100 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -97,7 +97,7 @@
 
 ### 11. PRIX GRAND EST                          AUTRICHE
 
-*20h50 · attelé · 2100 m · 7 partants · cotes de l'extraction*
+*19h50 · attelé · 2100 m · 7 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -111,7 +111,7 @@
 
 ### 12. PRIX TOUR TROTTEUR FRANCAIS             AUTRICHE
 
-*21h22 · attelé · 2620 m · 7 partants · cotes de l'extraction*
+*20h22 · attelé · 2620 m · 7 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|

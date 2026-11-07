@@ -8,7 +8,7 @@
 
 ### 8. THE SA SA LADIES' PURSE (HANDICAP)
 
-*10h05 · plat · 1800 m · 13 partants · cotes de l'extraction*
+*09h05 · plat · 1800 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -28,7 +28,7 @@
 
 ### 9. NEUE HANDICAP - SEC 1
 
-*10h40 · plat · 1400 m · 14 partants · cotes de l'extraction*
+*09h40 · plat · 1400 m · 14 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -49,7 +49,7 @@
 
 ### 10. SUISSE PROGRAMME HANDICAP - SEC 1
 
-*11h15 · plat · 1200 m · 12 partants · cotes de l'extraction*
+*10h15 · plat · 1200 m · 12 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -68,7 +68,7 @@
 
 ### 11. SANTA MONICA HANDICAP
 
-*11h50 · plat · 1400 m · 14 partants · cotes de l'extraction*
+*10h50 · plat · 1400 m · 14 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|

@@ -8,7 +8,7 @@
 
 ### 1. PRIX DE LA MFR - CFA DE VITRE
 
-*12h26 · attelé · 2500 m · 11 partants · cotes de l'extraction*
+*11h26 · attelé · 2500 m · 11 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -26,7 +26,7 @@
 
 ### 2. PRIX DE LA COMPAGNIE INTER ILE
 
-*12h58 · monté · 2625 m · 9 partants · cotes de l'extraction*
+*11h58 · monté · 2625 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -42,7 +42,7 @@
 
 ### 3. PRIX KIA GROUPE BARBIER
 
-*13h30 · attelé · 2625 m · 11 partants · cotes de l'extraction*
+*12h30 · attelé · 2625 m · 11 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -60,7 +60,7 @@
 
 ### 4. PRIX GREGORY COUTANCEAU
 
-*14h05 · attelé · 2500 m · 15 partants · cotes de l'extraction*
+*13h05 · attelé · 2500 m · 15 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -82,7 +82,7 @@
 
 ### 5. PRIX DE LA TOUSSAINT
 
-*14h40 · attelé · 2625 m · 12 partants · cotes de l'extraction*
+*13h40 · attelé · 2625 m · 12 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -101,7 +101,7 @@
 
 ### 6. PRIX ALLIANZ CHATELAILLON
 
-*15h15 · attelé · 2625 m · 10 partants · cotes de l'extraction*
+*14h15 · attelé · 2625 m · 10 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -118,7 +118,7 @@
 
 ### 7. PRIX DU CASINO JOA DE CHATELAILLON
 
-*15h50 · attelé · 2500 m · 14 partants · cotes de l'extraction*
+*14h50 · attelé · 2500 m · 14 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -139,7 +139,7 @@
 
 ### 8. GRAND PRIX HIPPODROME DE CHATELAILLON
 
-*16h32 · attelé · 2625 m · 12 partants · cotes de l'extraction*
+*15h32 · attelé · 2625 m · 12 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|

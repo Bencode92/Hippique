@@ -8,7 +8,7 @@
 
 ### 1. PRIX ANTIVARI
 
-*13h48 · plat · 1500 m · 10 partants · cotes de l'extraction*
+*12h48 · plat · 1500 m · 10 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -25,7 +25,7 @@
 
 ### 2. PRIX HEROD
 
-*14h23 · plat · 1400 m · 8 partants · cotes de l'extraction*
+*13h23 · plat · 1400 m · 8 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -40,7 +40,7 @@
 
 ### 3. PRIX DOUVE
 
-*14h58 · plat · 1500 m · 11 partants · cotes de l'extraction*
+*13h58 · plat · 1500 m · 11 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -58,7 +58,7 @@
 
 ### 4. PRIX TANTIEME
 
-*15h33 · plat · 1600 m · 8 partants · cotes de l'extraction*
+*14h33 · plat · 1600 m · 8 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -73,7 +73,7 @@
 
 ### 5. PRIX SAGARO
 
-*16h15 · plat · 3100 m · 15 partants · cotes de l'extraction*
+*15h15 · plat · 3100 m · 15 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -95,7 +95,7 @@
 
 ### 6. PRIX VULCAIN
 
-*16h50 · plat · 2500 m · 10 partants · cotes de l'extraction*
+*15h50 · plat · 2500 m · 10 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -112,7 +112,7 @@
 
 ### 7. PRIX BUCKSKIN
 
-*17h25 · plat · 3100 m · 15 partants · cotes de l'extraction*
+*16h25 · plat · 3100 m · 15 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -134,7 +134,7 @@
 
 ### 8. PRIX SOLITUDE
 
-*18h00 · plat · 2000 m · 14 partants · cotes de l'extraction*
+*17h00 · plat · 2000 m · 14 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|

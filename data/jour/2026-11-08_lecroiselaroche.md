@@ -8,7 +8,7 @@
 
 ### 1. PRIX DES JOURNALISTES
 
-*17h07 · attelé · 2700 m · 16 partants · cotes de l'extraction*
+*16h07 · attelé · 2700 m · 16 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -31,7 +31,7 @@
 
 ### 2. PRIX DES ELEVEURS
 
-*17h42 · attelé · 2825 m · 16 partants · cotes de l'extraction*
+*16h42 · attelé · 2825 m · 16 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -54,7 +54,7 @@
 
 ### 3. GRAND PRIX DES 5 ANS
 
-*18h17 · attelé · 2825 m · 12 partants · cotes de l'extraction*
+*17h17 · attelé · 2825 m · 12 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -73,7 +73,7 @@
 
 ### 4. GRAND PRIX DES 4 ANS
 
-*18h52 · attelé · 2825 m · 10 partants · cotes de l'extraction*
+*17h52 · attelé · 2825 m · 10 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -90,7 +90,7 @@
 
 ### 5. GRAND PRIX DES 3 ANS
 
-*19h27 · attelé · 2825 m · 11 partants · cotes de l'extraction*
+*18h27 · attelé · 2825 m · 11 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -108,7 +108,7 @@
 
 ### 6. PRIX DU TROT
 
-*20h02 · attelé · 2700 m · 13 partants · cotes de l'extraction*
+*19h02 · attelé · 2700 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -128,7 +128,7 @@
 
 ### 7. PRIX DE LA BOULANGERIE MATHIEU
 
-*20h34 · attelé · 2700 m · 12 partants · cotes de l'extraction*
+*19h34 · attelé · 2700 m · 12 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -147,7 +147,7 @@
 
 ### 8. PRIX METROPOLYS
 
-*21h06 · monté · 2825 m · 14 partants · cotes de l'extraction*
+*20h06 · monté · 2825 m · 14 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
