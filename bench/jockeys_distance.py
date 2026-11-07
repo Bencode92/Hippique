@@ -20,14 +20,15 @@ lecture, pas un signal de pari.
 
     python3 bench/jockeys_distance.py
 """
-import json, glob, math, collections
+import json, glob, math, collections, os
 
 MIN_MONTES, BANDE = 50, 100
 MIN_BELLE = 40          # belles courses : 543 groupes seulement, 20 jockeys à 50+ montes
 MIN_BELLE_D, BANDE_BELLE = 20, 200   # par longueur EN GROUPES : fenêtre élargie, 4 334 montes en tout
 rows, belles, noms_belles = [], [], set()
 def _cle(t): return ''.join(ch for ch in (t or '').upper() if ch.isalpha())
-for f in sorted(glob.glob('data/histo/*.jsonl')):
+_fs = sorted(glob.glob('data/histo/*.jsonl'))
+for f in _fs:
     for l in open(f, encoding='utf-8'):
         d = json.loads(l)
         if d.get('spe') != 'PLAT': continue
@@ -121,7 +122,7 @@ doc = {
              "2022-24 rendent -15,6 %% ± 8 sur 2025-26, bench/jockeys_par_type.py). Ce n'est pas un "
              "signal de pari.") % (BANDE, MIN_MONTES),
     'genere_le': __import__('datetime').date.today().isoformat(),
-    'periode': [min(r[1] for r in rows) and '2022-01', '2026-10'],
+    'periode': [os.path.basename(_fs[0])[:7], os.path.basename(_fs[-1])[:7]],
     'montes_totales': len(rows), 'bandes': out,
     'belles_courses': dict(montes=len(belles), courses=len(noms_belles), jockeys=len(casesb), classement=casesb),
     'belles_par_distance': dict(bande=BANDE_BELLE, min_montes=MIN_BELLE_D, bandes=outb),
