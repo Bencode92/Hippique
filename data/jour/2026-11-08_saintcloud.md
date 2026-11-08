@@ -136,21 +136,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX SOLITUDE
 
-*17h00 · plat · 2000 m · 14 partants · cotes à T−29:49*
+*17h00 · plat · 2000 m · 14 partants · cotes à T−25:49*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 14 | RUMPUMPEL | 2,2 | 1,9 | 2,12 | **+3,6 %** | M.BARZALONA | 1/1/163/724 |
-| 7 | LEGACY LINK | 4,6 | 3,9 | 5,00 | -8,0 % | C.KEANE | 150/16/3199/19 |
-| 3 | ECIJA | 9,6 | 11 | 11,38 | -15,7 % | S.PASQUIER | 20/40/27/244 |
-| 4 | AURORA BEAU REAL | 14 | 18 | 16,53 | -15,3 % | C.SOUMILLON 3e | 8/36/98/165 |
-| 5 | HELLO AVENUE | 18 | 25 | 22,13 | -18,7 % | A.MADAMET | 12/62/15/25 |
-| 12 | GLYFADA | 27 | 44 | 35,28 | -23,5 % | G.RYAN | 365/208/1566/– |
-| 2 | YMEEELIH | 28 | 30 | 40,33 | -30,6 % | A.LEMAITRE | 10/122/238/107 |
-| 10 | BLANCHE DE MEDICIS | 31 | 51 | 41,24 | -24,8 % | PC.BOUDOT | 7/3/675/48 |
-| 8 | MUSIC'S GIRL | 34 | 39 | 53,97 | -37,0 % | A.CRASTUS | 15/11/3369/1083 |
-| 13 | LAND OF LIBERTY | 38 | 39 | 51,72 | -26,5 % | T.BACHELOT | 16/65/4/– |
-| 9 | VANIR | 39 | 40 | 53,28 | -26,8 % | B.COEN | 278/350/3787/2046 |
-| 1 | SODA ZABEEL | 41 | 71 | 60,54 | -32,3 % | M.GRANDIN | 3/122/400/107 |
-| 6 | CLEA CHOPE | 42 | 45 | 57,81 | -27,4 % | H.BESNIER | 11/4/6/12 |
-| 11 | ARCTIC BAY | 69 | 98 | 89,73 | -23,1 % | R.THOMAS | 68/12/90/2492 |
+| 14 | RUMPUMPEL | 2,3 | 1,9 | 2,22 | **+3,5 %** | M.BARZALONA | 1/1/163/724 |
+| 7 | LEGACY LINK | 4,9 | 3,9 | 5,44 | -10,0 % | C.KEANE | 150/16/3199/19 |
+| 3 | ECIJA | 8,7 | 11 | 10,31 | -15,6 % | S.PASQUIER | 20/40/27/244 |
+| 4 | AURORA BEAU REAL | 12 | 18 | 14,03 | -14,5 % | C.SOUMILLON 3e | 8/36/98/165 |
+| 5 | HELLO AVENUE | 13 | 25 | 14,09 | -7,7 % | A.MADAMET | 12/62/15/25 |
+| 12 | GLYFADA | 27 | 44 | 35,83 | -24,6 % | G.RYAN | 365/208/1566/– |
+| 2 | YMEEELIH | 28 | 30 | 40,96 | -31,6 % | A.LEMAITRE | 10/122/238/107 |
+| 9 | VANIR | 32 | 40 | 43,40 | -26,3 % | B.COEN | 278/350/3787/2046 |
+| 10 | BLANCHE DE MEDICIS | 32 | 51 | 43,40 | -26,3 % | PC.BOUDOT | 7/3/675/48 |
+| 8 | MUSIC'S GIRL | 37 | 39 | 60,24 | -38,6 % | A.CRASTUS | 15/11/3369/1083 |
+| 1 | SODA ZABEEL | 38 | 71 | 56,51 | -32,8 % | M.GRANDIN | 3/122/400/107 |
+| 13 | LAND OF LIBERTY | 39 | 39 | 54,04 | -27,8 % | T.BACHELOT | 16/65/4/– |
+| 6 | CLEA CHOPE | 41 | 45 | 57,16 | -28,3 % | H.BESNIER | 11/4/6/12 |
+| 11 | ARCTIC BAY | 65 | 98 | 85,48 | -24,0 % | R.THOMAS | 68/12/90/2492 |
