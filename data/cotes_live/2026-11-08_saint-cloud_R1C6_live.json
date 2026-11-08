@@ -4,71 +4,71 @@
   "reunion": 1,
   "heure_depart": 1794149400000,
   "distance": 2500,
-  "scraped_at": "2026-11-08T15:44:10.671777+01:00",
-  "minutes_avant_depart": 6,
+  "scraped_at": "2026-11-08T15:46:50.650644+01:00",
+  "minutes_avant_depart": 3,
   "participants": [
     {
       "numPmu": 1,
       "nom": "TARDAR",
-      "cote_live": 20.0,
+      "cote_live": 22.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149033000
+      "timestamp_cote": 1794149209000
     },
     {
       "numPmu": 2,
       "nom": "SHANOUR",
-      "cote_live": 4.7,
+      "cote_live": 4.6,
       "cote_reference": 5.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149033000
+      "timestamp_cote": 1794149209000
     },
     {
       "numPmu": 3,
       "nom": "COSY BEAR",
-      "cote_live": 4.2,
+      "cote_live": 3.9,
       "cote_reference": 6.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794149033000
+      "timestamp_cote": 1794149209000
     },
     {
       "numPmu": 4,
       "nom": "PORTAL",
-      "cote_live": 32.0,
+      "cote_live": 35.0,
       "cote_reference": 43.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149033000
+      "timestamp_cote": 1794149209000
     },
     {
       "numPmu": 5,
       "nom": "WIZARD OF LIPS",
-      "cote_live": 6.4,
+      "cote_live": 5.6,
       "cote_reference": 3.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149033000
+      "timestamp_cote": 1794149209000
     },
     {
       "numPmu": 6,
       "nom": "MARIA APOLLONIA",
-      "cote_live": 13.0,
+      "cote_live": 16.0,
       "cote_reference": 35.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149033000
+      "timestamp_cote": 1794149209000
     },
     {
       "numPmu": 7,
       "nom": "STEALITWITHAKISS",
-      "cote_live": 17.0,
+      "cote_live": 20.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149033000
+      "timestamp_cote": 1794149209000
     },
     {
       "numPmu": 8,
@@ -77,25 +77,25 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149033000
+      "timestamp_cote": 1794149209000
     },
     {
       "numPmu": 9,
       "nom": "MARYLENE DU SERRE",
-      "cote_live": 50.0,
+      "cote_live": 41.0,
       "cote_reference": 51.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149033000
+      "timestamp_cote": 1794149209000
     },
     {
       "numPmu": 10,
       "nom": "LAMELOISE",
-      "cote_live": 4.7,
+      "cote_live": 5.1,
       "cote_reference": 4.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149033000
+      "timestamp_cote": 1794149209000
     }
   ],
   "hippodrome": "SAINT-CLOUD",
@@ -130,6 +130,70 @@
         "8": 10.0,
         "9": 50.0,
         "10": 4.7
+      }
+    },
+    {
+      "scraped_at": "2026-11-08T15:44:50.714170+01:00",
+      "minutes_avant_depart": 5.158636616666667,
+      "cotes": {
+        "1": 20.0,
+        "2": 4.4,
+        "3": 4.2,
+        "4": 34.0,
+        "5": 6.6,
+        "6": 14.0,
+        "7": 18.0,
+        "8": 11.0,
+        "9": 39.0,
+        "10": 4.8
+      }
+    },
+    {
+      "scraped_at": "2026-11-08T15:45:31.127186+01:00",
+      "minutes_avant_depart": 4.484456016666667,
+      "cotes": {
+        "1": 21.0,
+        "2": 4.6,
+        "3": 4.1,
+        "4": 34.0,
+        "5": 6.4,
+        "6": 14.0,
+        "7": 18.0,
+        "8": 10.0,
+        "9": 39.0,
+        "10": 4.8
+      }
+    },
+    {
+      "scraped_at": "2026-11-08T15:46:10.711691+01:00",
+      "minutes_avant_depart": 3.8252992333333333,
+      "cotes": {
+        "1": 20.0,
+        "2": 4.6,
+        "3": 3.9,
+        "4": 34.0,
+        "5": 6.0,
+        "6": 15.0,
+        "7": 19.0,
+        "8": 10.0,
+        "9": 41.0,
+        "10": 5.1
+      }
+    },
+    {
+      "scraped_at": "2026-11-08T15:46:50.650644+01:00",
+      "minutes_avant_depart": 3.15863035,
+      "cotes": {
+        "1": 22.0,
+        "2": 4.6,
+        "3": 3.9,
+        "4": 35.0,
+        "5": 5.6,
+        "6": 16.0,
+        "7": 20.0,
+        "8": 10.0,
+        "9": 41.0,
+        "10": 5.1
       }
     }
   ]

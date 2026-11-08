@@ -4,8 +4,8 @@
   "reunion": 7,
   "heure_depart": 1794150000000,
   "distance": 3600,
-  "scraped_at": "2026-11-08T15:42:11.409849+01:00",
-  "minutes_avant_depart": 18,
+  "scraped_at": "2026-11-08T15:46:50.857480+01:00",
+  "minutes_avant_depart": 13,
   "participants": [
     {
       "numPmu": 1,
@@ -14,25 +14,25 @@
       "cote_reference": 1.6,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794148906000
+      "timestamp_cote": 1794149192000
     },
     {
       "numPmu": 2,
       "nom": "RED RECRUIT",
-      "cote_live": 3.3,
+      "cote_live": 3.8,
       "cote_reference": 3.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794148906000
+      "timestamp_cote": 1794149192000
     },
     {
       "numPmu": 3,
       "nom": "NIGHTSPEED",
-      "cote_live": 59.0,
+      "cote_live": 34.0,
       "cote_reference": 100.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794148906000
+      "timestamp_cote": 1794149192000
     },
     {
       "numPmu": 4,
@@ -41,16 +41,16 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794148906000
+      "timestamp_cote": 1794149192000
     },
     {
       "numPmu": 5,
       "nom": "ROYALE CAKE HAS",
-      "cote_live": 11.0,
+      "cote_live": 10.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794148906000
+      "timestamp_cote": 1794149192000
     },
     {
       "numPmu": 7,
@@ -59,16 +59,16 @@
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794148906000
+      "timestamp_cote": 1794149192000
     },
     {
       "numPmu": 8,
       "nom": "SOURIS BLEUE",
-      "cote_live": 39.0,
+      "cote_live": 23.0,
       "cote_reference": 100.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794148906000
+      "timestamp_cote": 1794149192000
     }
   ],
   "hippodrome": "ARGENTAN",
@@ -84,6 +84,19 @@
         "5": 11.0,
         "7": 13.0,
         "8": 39.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-08T15:46:50.857480+01:00",
+      "minutes_avant_depart": 13.158630350000001,
+      "cotes": {
+        "1": 1.7,
+        "2": 3.8,
+        "3": 34.0,
+        "4": 13.0,
+        "5": 10.0,
+        "7": 13.0,
+        "8": 23.0
       }
     }
   ]

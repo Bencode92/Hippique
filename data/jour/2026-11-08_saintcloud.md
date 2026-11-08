@@ -97,20 +97,20 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX VULCAIN
 
-*15h50 · plat · 2500 m · 10 partants · cotes à T−5:49*
+*15h50 · plat · 2500 m · 10 partants · cotes à T−3:09*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | COSY BEAR | 4,2 | 4,3 | 4,65 | -9,7 % | M.GUYON | 4/22/41/38 |
-| 2 | SHANOUR | 4,7 | 5 | 5,47 | -14,1 % | M.BARZALONA 3e | 1/24/2/1 |
-| 10 | LAMELOISE | 4,7 | 6,5 | 5,47 | -14,1 % | C.LECOEUVRE | 13/9/14/123 |
-| 5 | WIZARD OF LIPS | 6,4 | 5 | 6,99 | -8,5 % | H.BOUTIN | 17/956/3793/5647 |
-| 8 | VANTA | 10 | 12 | 12,25 | -18,4 % | PC.BOUDOT | 7/75/161/– |
-| 6 | MARIA APOLLONIA | 13 | 9,9 | 16,35 | -20,5 % | H.BESNIER | 11/4/507/829 |
-| 7 | STEALITWITHAKISS | 17 | 15 | 22,84 | -25,6 % | M.FAVRIAUX | 54/3/3264/328 |
-| 1 | TARDAR | 20 | 17 | 27,59 | -27,5 % | M.GRANDIN | 3/73/213/1484 |
-| 4 | PORTAL | 32 | 35 | 43,00 | -25,6 % | P.FORET | 215/210/79/499 |
-| 9 | MARYLENE DU SERRE | 50 | 43 | 77,28 | -35,3 % | S.PASQUIER | 20/46/487/360 |
+| 3 | COSY BEAR | 3,9 | 4,3 | 4,18 | -6,7 % | M.GUYON | 4/22/41/38 |
+| 2 | SHANOUR | 4,6 | 5 | 5,35 | -14,1 % | M.BARZALONA 3e | 1/24/2/1 |
+| 10 | LAMELOISE | 5,1 | 6,5 | 6,01 | -15,1 % | C.LECOEUVRE | 13/9/14/123 |
+| 5 | WIZARD OF LIPS | 5,6 | 5 | 6,03 | -7,1 % | H.BOUTIN | 17/956/3793/5647 |
+| 8 | VANTA | 10 | 12 | 12,29 | -18,6 % | PC.BOUDOT | 7/75/161/– |
+| 6 | MARIA APOLLONIA | 16 | 9,9 | 20,90 | -23,5 % | H.BESNIER | 11/4/507/829 |
+| 7 | STEALITWITHAKISS | 20 | 15 | 27,66 | -27,7 % | M.FAVRIAUX | 54/3/3264/328 |
+| 1 | TARDAR | 22 | 17 | 30,87 | -28,7 % | M.GRANDIN | 3/73/213/1484 |
+| 4 | PORTAL | 35 | 35 | 52,30 | -33,1 % | P.FORET | 215/210/79/499 |
+| 9 | MARYLENE DU SERRE | 41 | 43 | 62,35 | -34,2 % | S.PASQUIER | 20/46/487/360 |
 
 ### 7. PRIX BUCKSKIN
 
