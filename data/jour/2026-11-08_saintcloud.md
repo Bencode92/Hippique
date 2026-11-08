@@ -42,21 +42,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX DOUVE
 
-*13h58 · plat · 1500 m · 11 partants · cotes à T−5:34*
+*13h58 · plat · 1500 m · 11 partants · cotes à T−2:54*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | MALIKA | 2,9 | 3,1 | 3,35 | -13,5 % | M.BARZALONA 3e | 1/1/16/18 |
-| 11 | ROMANTIQUE | 6,1 | 3,3 | 6,74 | -9,6 % | M.GUYON | 4/9/1/2 |
-| 1 | KASSKA | 6,6 | 11 | 7,55 | -12,6 % | PC.BOUDOT 4e | 7/3/4414/18 |
-| 6 | LOUISIANA | 6,9 | 18 | 7,46 | -7,4 % | M.GRANDIN | 3/177/2200/– |
-| 3 | PASABAN | 12 | 9,4 | 14,81 | -19,0 % | C.LECOEUVRE | 13/19/303/1054 |
-| 4 | PATH OF THE STAR | 13 | 11 | 17,03 | -23,7 % | C.SOUMILLON 5e | 8/25/41/106 |
-| 5 | COEUR D'OR | 15 | 22 | 18,41 | -18,5 % | A.MADAMET | 12/25/45/3342 |
-| 10 | KIMYA | 16 | 11 | 20,75 | -22,9 % | A.LEMAITRE | 10/91/329/13 |
-| 7 | CUBAN SUNRISE | 37 | 40 | 61,01 | -39,4 % | E.VERHESTRAETEN | 50/13/–/820 |
-| 8 | ROMANTIC SHOW | 52 | 91 | 80,72 | -35,6 % | T.TRULLIER | 24/46/106/– |
-| 9 | BEAUTIFUL APPLAUSE | 88 | 61 | 136,98 | -35,8 % | R.MANGIONE | 86/341/233/578 |
+| 2 | MALIKA | 2,5 | 3,1 | 2,73 | -8,6 % | M.BARZALONA 3e | 1/1/16/18 |
+| 11 | ROMANTIQUE | 6,4 | 3,3 | 7,14 | -10,3 % | M.GUYON | 4/9/1/2 |
+| 1 | KASSKA | 6,6 | 11 | 7,57 | -12,8 % | PC.BOUDOT 4e | 7/3/4414/18 |
+| 6 | LOUISIANA | 8,6 | 18 | 9,63 | -10,7 % | M.GRANDIN | 3/177/2200/– |
+| 3 | PASABAN | 12 | 9,4 | 14,84 | -19,1 % | C.LECOEUVRE | 13/19/303/1054 |
+| 4 | PATH OF THE STAR | 15 | 11 | 20,18 | -25,7 % | C.SOUMILLON 5e | 8/25/41/106 |
+| 5 | COEUR D'OR | 17 | 22 | 21,33 | -20,3 % | A.MADAMET | 12/25/45/3342 |
+| 10 | KIMYA | 17 | 11 | 22,31 | -23,8 % | A.LEMAITRE | 10/91/329/13 |
+| 7 | CUBAN SUNRISE | 40 | 40 | 66,64 | -40,0 % | E.VERHESTRAETEN | 50/13/–/820 |
+| 8 | ROMANTIC SHOW | 42 | 91 | 64,04 | -34,4 % | T.TRULLIER | 24/46/106/– |
+| 9 | BEAUTIFUL APPLAUSE | 74 | 61 | 120,22 | -38,4 % | R.MANGIONE | 86/341/233/578 |
 
 ### 4. PRIX TANTIEME
 
