@@ -27,42 +27,42 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 6 | LA SAYNIORITA | 3,8 | 4,39 | -13,5 % | A.WERLE | 34/138/438/150 |
-| 5 | SIMPLY GAME | 4,3 | 4,61 | -6,7 % | M.ROMARY | 52/60/792/3190 |
-| 4 | PANTHERINA | 5,3 | 5,46 | -2,9 % | M.LAURON | 74/133/4/2171 |
-| 1 | WOOD STORM | 9,3 | 10,81 | -14,0 % | M.COLLET | 288/167/2774/419 |
-| 7 | LILYBOY | 9,3 | 10,81 | -14,0 % | N.M..LOPES DUARTE | 62/182/3076/4521 |
-| 2 | NARCO NISED | 10 | 13,17 | -24,1 % | W.LEVESQUE | 88/78/2154/3807 |
-| 3 | EARN DREAM | 11 | 13,16 | -16,4 % | C.CADEL | 79/244/1148/1057 |
-| 8 | ZARA WOOD | 18 | 26,33 | -31,6 % | C.MERILLE | 96/136/3958/5171 |
+| 2 | NARCO NISED | 3 | 3,53 | -15,1 % | W.LEVESQUE | 88/78/2154/3807 |
+| 3 | EARN DREAM | 5,9 | 6,73 | -12,4 % | C.CADEL | 79/244/1148/1057 |
+| 5 | SIMPLY GAME | 6,9 | 7,91 | -12,8 % | M.ROMARY | 52/60/792/3190 |
+| 4 | PANTHERINA | 7,1 | 8,33 | -14,8 % | M.LAURON | 74/133/4/2171 |
+| 6 | LA SAYNIORITA | 8,2 | 9,44 | -13,1 % | A.WERLE | 34/138/438/150 |
+| 7 | LILYBOY | 10 | 11,90 | -16,0 % | N.M..LOPES DUARTE | 62/182/3076/4521 |
+| 8 | ZARA WOOD | 12 | 16,52 | -27,4 % | C.MERILLE | 96/136/3958/5171 |
+| 1 | WOOD STORM | 16 | 20,64 | -22,5 % | M.COLLET | 288/167/2774/419 |
 
 ### 3. PRIX DE GABARRET
 
-*14h40 · plat · 1850 m · 6 partants · cotes de l'extraction*
+*14h46 · plat · 1850 m · 6 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 3 | ROUTES | 1,2 | 1,60 | -25,0 % | G.GUEDJ-GAY | 14/14/11/5 |
-| 1 | LEHA | 5,9 | 7,34 | -19,6 % | C.MERILLE | 96/74/897/364 |
-| 5 | MISSES LILY | 10 | 12,73 | -21,4 % | A.WERLE | 34/64/608/942 |
-| 6 | HISTO CHOP | 20 | 26,16 | -23,5 % | N.M..LOPES DUARTE | 62/115/6/397 |
-| 4 | MADONNA DES PLACES | 41 | 61,60 | -33,4 % | H.MOUESAN | 49/211/600/320 |
-| 2 | GENERAL CHOP | – | – |  | W.LEVESQUE | 88/78/6/518 |
+| 1 | LEHA | 1,9 | 2,06 | -7,7 % | C.MERILLE | 96/74/897/364 |
+| 2 | GENERAL CHOP | 4,4 | 4,80 | -8,4 % | W.LEVESQUE | 88/78/6/518 |
+| 3 | ROUTES | 5,6 | 6,53 | -14,2 % | G.GUEDJ-GAY | 14/14/11/5 |
+| 5 | MISSES LILY | 7,5 | 8,22 | -8,7 % | A.WERLE | 34/64/608/942 |
+| 6 | HISTO CHOP | 13 | 16,29 | -20,2 % | N.M..LOPES DUARTE | 62/115/6/397 |
+| 4 | MADONNA DES PLACES | 52 | 82,45 | -36,9 % | H.MOUESAN | 49/211/600/320 |
 
 ### 4. PRIX SERGE DAVY
 
-*15h10 · haies · 3600 m · 8 partants · cotes de l'extraction*
+*15h14 · haies · 3600 m · 8 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | TEDERINO | 2,1 | L.NOMIS | 374/312/40/209 |
-| 2 | NAEROBI SIBEY | 2,3 | M.FOX | –/312/–/– |
-| 7 | GLWA'DOCH | 5,6 | L.COLSON | 373/653/2811/1982 |
-| 5 | ST KILDA | 31 | D.GALLON | 435/241/932/3648 |
-| 6 | MA OUI CHOP | 62 | G.JAYR | –/–/6/– |
-| 8 | SUBLI CHOPE | 62 | Z.DONNAIS | –/411/6/3428 |
-| 3 | NICE DAYS | – | G.FRADELIN | 188/540/2676/3233 |
-| 4 | LOUDEJUMI | – | T.FIGUEIRA | 398/315/3525/4968 |
+| 1 | TEDERINO | 3,4 | L.NOMIS | 374/312/40/209 |
+| 2 | NAEROBI SIBEY | 4,1 | M.FOX | –/312/–/– |
+| 5 | ST KILDA | 5,3 | D.GALLON | 435/241/932/3648 |
+| 8 | SUBLI CHOPE | 7,6 | Z.DONNAIS | –/411/6/3428 |
+| 7 | GLWA'DOCH | 8,4 | L.COLSON | 373/653/2811/1982 |
+| 3 | NICE DAYS | 12 | G.FRADELIN | 188/540/2676/3233 |
+| 4 | LOUDEJUMI | 21 | T.FIGUEIRA | 398/315/3525/4968 |
+| 6 | MA OUI CHOP | 27 | G.JAYR | –/–/6/– |
 
 ### 5. PRIX CATHULUS
 
@@ -70,11 +70,11 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | POP LIGHT | 3,2 | D.GALLON | 435/241/713/482 |
-| 2 | MON GETAWAY | 3,4 | L.COLSON | 373/653/–/4482 |
-| 3 | HELSINKI NOLIMIT | 5,6 | Z.DONNAIS | –/–/2038/– |
-| 4 | BLOUZEUR | 5,6 | G.FRADELIN | 188/351/2651/870 |
-| 5 | BIENBATHY | 5,6 | L.NOMIS | 374/–/3660/– |
+| 5 | BIENBATHY | 2,4 | L.NOMIS | 374/–/3660/– |
+| 2 | MON GETAWAY | 3,5 | L.COLSON | 373/653/–/4482 |
+| 4 | BLOUZEUR | 5,3 | G.FRADELIN | 188/351/2651/870 |
+| 1 | POP LIGHT | 6,9 | D.GALLON | 435/241/713/482 |
+| 3 | HELSINKI NOLIMIT | 9,2 | Z.DONNAIS | –/–/2038/– |
 
 ### 6. PRIX ARMAND BASTOUL
 
@@ -82,10 +82,10 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 4 | MAITRE D'OEUVRE | 1,5 | K.DUBOURG | 369/473/52/67 |
-| 1 | MATADOR WOOD | 3,1 | E.LABAISSE | 210/653/3162/2037 |
-| 5 | TERESITA | 7 | L.NOMIS | 374/244/1537/2599 |
-| 2 | JOLI SHAW | 28 | D.GALLON | 435/241/4213/5094 |
+| 4 | MAITRE D'OEUVRE | 2 | K.DUBOURG | 369/473/52/67 |
+| 1 | MATADOR WOOD | 3,8 | E.LABAISSE | 210/653/3162/2037 |
+| 2 | JOLI SHAW | 4,4 | D.GALLON | 435/241/4213/5094 |
+| 5 | TERESITA | 5,9 | L.NOMIS | 374/244/1537/2599 |
 | 3 | MARCELLINO AA | – | G.JAYR | –/845/3826/5101 |
 
 ### 7. PRIX NICOLAS BOICHOT
@@ -94,10 +94,10 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | LORA DE LA BRUNIE AA | 2,6 | K.DUBOURG | 369/473/306/1790 |
-| 1 | NIKOS DE CANDALE AA | 3,7 | E.LABAISSE | 210/806/595/4910 |
-| 3 | SHIVA DE CANDALE AA | 4,4 | B.FOUCHET | 491/510/595/1523 |
-| 5 | MAGIC DE LA RUE AA | 7,4 | T.FIGUEIRA | 398/211/3794/3417 |
-| 7 | NEVIS DE CANDALE AA | 8,3 | L.COLSON | 373/806/595/5051 |
-| 6 | IREMMA AA | 74 | G.JAYR | –/845/3826/5101 |
-| 4 | KASTLE DE LAGARDE AA | – | G.FRADELIN | 188/806/870/4703 |
+| 2 | LORA DE LA BRUNIE AA | 2,7 | K.DUBOURG | 369/473/306/1790 |
+| 1 | NIKOS DE CANDALE AA | 4,2 | E.LABAISSE | 210/806/595/4910 |
+| 3 | SHIVA DE CANDALE AA | 4,6 | B.FOUCHET | 491/510/595/1523 |
+| 5 | MAGIC DE LA RUE AA | 5,8 | T.FIGUEIRA | 398/211/3794/3417 |
+| 7 | NEVIS DE CANDALE AA | 8 | L.COLSON | 373/806/595/5051 |
+| 4 | KASTLE DE LAGARDE AA | 88 | G.FRADELIN | 188/806/870/4703 |
+| 6 | IREMMA AA | 88 | G.JAYR | –/845/3826/5101 |
