@@ -1,6 +1,6 @@
 # SAINT-CLOUD — 08/11/2026
 
-8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -114,25 +114,25 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX BUCKSKIN
 
-*16h25 · plat · 3100 m · 15 partants · cotes de l'extraction*
+*16h25 · plat · 3100 m · 15 partants · cotes à T−29:29*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 14 | ATHINEOS | 3,7 | 4,04 | -8,4 % | M.GRANDIN | 3/121/641/955 |
-| 2 | GRAND ART | 4,8 | 5,29 | -9,3 % | C.SOUMILLON | 8/62/15/25 |
-| 10 | BRIGHTON SPORT | 6,7 | 6,94 | -3,4 % | A.MADAMET | 12/166/452/1538 |
-| 4 | SUMMER WAY | 10 | 11,49 | -13,0 % | C.PACAUT | 44/125/1366/1239 |
-| 5 | INSEPARABLE | 10 | 10,54 | -5,1 % | H.BOUTIN | 17/102/1816/129 |
-| 15 | BARBADIN | 15 | 19,81 | -24,3 % | S.PASQUIER | 20/84/1/– |
-| 6 | ROOSTER CROWING | 18 | 19,99 | -10,0 % | PC.BOUDOT | 7/75/96/442 |
-| 13 | ILUMINE PRECIEUSE | 20 | 28,28 | -29,3 % | F.VALLE SKAR | 32/212/263/227 |
-| 8 | KING KARA | 27 | 33,15 | -18,6 % | H.LEBOUC | 22/116/1666/1891 |
-| 9 | BOUSSANT | 33 | 45,64 | -27,7 % | A.HAMELIN | 23/24/70/657 |
-| 7 | VIANETA | 39 | 51,52 | -24,3 % | E.HARDOUIN | 30/170/253/393 |
-| 12 | M'GLAMOUR | 46 | 72,39 | -36,5 % | B.FLANDRIN | 103/224/247/926 |
-| 1 | VINGT SEPT | 48 | 69,03 | -30,5 % | J.CLAUDIC | 40/26/814/903 |
-| 3 | EXTRAPOL | 81 | 120,37 | -32,7 % | T.PICCONE 2e | 9/42/1/1314 |
-| 11 | ALMACADO GREE | 108 | 177,53 | -39,2 % | E.MUNTWYLER | 186/87/369/– |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 14 | ATHINEOS | 4,7 | 3,7 | 5,42 | -13,3 % | M.GRANDIN | 3/121/641/955 |
+| 2 | GRAND ART | 5,1 | 4,8 | 5,69 | -10,3 % | C.SOUMILLON | 8/62/15/25 |
+| 10 | BRIGHTON SPORT | 8,5 | 6,7 | 9,16 | -7,2 % | A.MADAMET | 12/166/452/1538 |
+| 4 | SUMMER WAY | 10 | 10 | 11,55 | -13,4 % | C.PACAUT | 44/125/1366/1239 |
+| 6 | ROOSTER CROWING | 11 | 18 | 11,37 | -3,2 % | PC.BOUDOT | 7/75/96/442 |
+| 5 | INSEPARABLE | 12 | 10 | 14,29 | -16,1 % | H.BOUTIN | 17/102/1816/129 |
+| 13 | ILUMINE PRECIEUSE | 13 | 20 | 15,71 | -17,2 % | F.VALLE SKAR | 32/212/263/227 |
+| 15 | BARBADIN | 13 | 15 | 16,84 | -22,8 % | S.PASQUIER | 20/84/1/– |
+| 9 | BOUSSANT | 20 | 33 | 25,93 | -22,9 % | A.HAMELIN | 23/24/70/657 |
+| 8 | KING KARA | 25 | 27 | 30,53 | -18,1 % | H.LEBOUC | 22/116/1666/1891 |
+| 7 | VIANETA | 27 | 39 | 34,30 | -21,3 % | E.HARDOUIN | 30/170/253/393 |
+| 1 | VINGT SEPT | 39 | 48 | 55,24 | -29,4 % | J.CLAUDIC | 40/26/814/903 |
+| 12 | M'GLAMOUR | 41 | 46 | 64,10 | -36,0 % | B.FLANDRIN | 103/224/247/926 |
+| 3 | EXTRAPOL | 61 | 81 | 89,77 | -32,0 % | T.PICCONE 2e | 9/42/1/1314 |
+| 11 | ALMACADO GREE | 70 | 108 | 103,84 | -32,6 % | E.MUNTWYLER | 186/87/369/– |
 
 ### 8. PRIX SOLITUDE
 
