@@ -1,6 +1,6 @@
 # SAINT-CLOUD — 08/11/2026
 
-8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -136,21 +136,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX SOLITUDE
 
-*17h00 · plat · 2000 m · 14 partants · cotes de l'extraction*
+*17h00 · plat · 2000 m · 14 partants · cotes à T−29:49*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 14 | RUMPUMPEL | 1,9 | 1,97 | -3,6 % | M.BARZALONA | 1/1/163/724 |
-| 7 | LEGACY LINK | 3,9 | 3,95 | -1,4 % | C.KEANE | 150/16/3199/19 |
-| 3 | ECIJA | 11 | 14,82 | -25,8 % | S.PASQUIER | 20/40/27/244 |
-| 4 | AURORA BEAU REAL | 18 | 22,49 | -20,0 % | C.SOUMILLON 3e | 8/36/98/165 |
-| 5 | HELLO AVENUE | 25 | 31,29 | -20,1 % | A.MADAMET | 12/62/15/25 |
-| 2 | YMEEELIH | 30 | 44,27 | -32,2 % | A.LEMAITRE | 10/122/238/107 |
-| 8 | MUSIC'S GIRL | 39 | 60,88 | -35,9 % | A.CRASTUS | 15/11/3369/1083 |
-| 13 | LAND OF LIBERTY | 39 | 54,02 | -27,8 % | T.BACHELOT | 16/65/4/– |
-| 9 | VANIR | 40 | 55,60 | -28,1 % | B.COEN | 278/350/3787/2046 |
-| 12 | GLYFADA | 44 | 61,74 | -28,7 % | G.RYAN | 365/208/1566/– |
-| 6 | CLEA CHOPE | 45 | 69,49 | -35,2 % | H.BESNIER | 11/4/6/12 |
-| 10 | BLANCHE DE MEDICIS | 51 | 79,63 | -36,0 % | PC.BOUDOT | 7/3/675/48 |
-| 1 | SODA ZABEEL | 71 | 121,91 | -41,8 % | M.GRANDIN | 3/122/400/107 |
-| 11 | ARCTIC BAY | 98 | 130,74 | -25,0 % | R.THOMAS | 68/12/90/2492 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 14 | RUMPUMPEL | 2,2 | 1,9 | 2,12 | **+3,6 %** | M.BARZALONA | 1/1/163/724 |
+| 7 | LEGACY LINK | 4,6 | 3,9 | 5,00 | -8,0 % | C.KEANE | 150/16/3199/19 |
+| 3 | ECIJA | 9,6 | 11 | 11,38 | -15,7 % | S.PASQUIER | 20/40/27/244 |
+| 4 | AURORA BEAU REAL | 14 | 18 | 16,53 | -15,3 % | C.SOUMILLON 3e | 8/36/98/165 |
+| 5 | HELLO AVENUE | 18 | 25 | 22,13 | -18,7 % | A.MADAMET | 12/62/15/25 |
+| 12 | GLYFADA | 27 | 44 | 35,28 | -23,5 % | G.RYAN | 365/208/1566/– |
+| 2 | YMEEELIH | 28 | 30 | 40,33 | -30,6 % | A.LEMAITRE | 10/122/238/107 |
+| 10 | BLANCHE DE MEDICIS | 31 | 51 | 41,24 | -24,8 % | PC.BOUDOT | 7/3/675/48 |
+| 8 | MUSIC'S GIRL | 34 | 39 | 53,97 | -37,0 % | A.CRASTUS | 15/11/3369/1083 |
+| 13 | LAND OF LIBERTY | 38 | 39 | 51,72 | -26,5 % | T.BACHELOT | 16/65/4/– |
+| 9 | VANIR | 39 | 40 | 53,28 | -26,8 % | B.COEN | 278/350/3787/2046 |
+| 1 | SODA ZABEEL | 41 | 71 | 60,54 | -32,3 % | M.GRANDIN | 3/122/400/107 |
+| 6 | CLEA CHOPE | 42 | 45 | 57,81 | -27,4 % | H.BESNIER | 11/4/6/12 |
+| 11 | ARCTIC BAY | 69 | 98 | 89,73 | -23,1 % | R.THOMAS | 68/12/90/2492 |
