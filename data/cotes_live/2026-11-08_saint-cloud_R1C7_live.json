@@ -4,35 +4,35 @@
   "reunion": 1,
   "heure_depart": 1794151500000,
   "distance": 3100,
-  "scraped_at": "2026-11-08T15:55:31.186833+01:00",
-  "minutes_avant_depart": 29,
+  "scraped_at": "2026-11-08T16:00:10.699882+01:00",
+  "minutes_avant_depart": 25,
   "participants": [
     {
       "numPmu": 1,
       "nom": "VINGT SEPT",
-      "cote_live": 39.0,
+      "cote_live": 44.0,
       "cote_reference": 39.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149719000
+      "timestamp_cote": 1794149983000
     },
     {
       "numPmu": 2,
       "nom": "GRAND ART",
-      "cote_live": 5.1,
+      "cote_live": 4.4,
       "cote_reference": 5.2,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1794149719000
+      "favoris": true,
+      "timestamp_cote": 1794149983000
     },
     {
       "numPmu": 3,
       "nom": "EXTRAPOL",
-      "cote_live": 61.0,
+      "cote_live": 63.0,
       "cote_reference": 60.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149719000
+      "timestamp_cote": 1794149983000
     },
     {
       "numPmu": 4,
@@ -41,16 +41,16 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149719000
+      "timestamp_cote": 1794149983000
     },
     {
       "numPmu": 5,
       "nom": "INSEPARABLE",
-      "cote_live": 12.0,
+      "cote_live": 10.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149719000
+      "timestamp_cote": 1794149983000
     },
     {
       "numPmu": 6,
@@ -59,7 +59,7 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149719000
+      "timestamp_cote": 1794149983000
     },
     {
       "numPmu": 7,
@@ -68,16 +68,16 @@
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149719000
+      "timestamp_cote": 1794149983000
     },
     {
       "numPmu": 8,
       "nom": "KING KARA",
-      "cote_live": 25.0,
+      "cote_live": 23.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149719000
+      "timestamp_cote": 1794149983000
     },
     {
       "numPmu": 9,
@@ -86,61 +86,61 @@
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149719000
+      "timestamp_cote": 1794149983000
     },
     {
       "numPmu": 10,
       "nom": "BRIGHTON SPORT",
-      "cote_live": 8.5,
+      "cote_live": 9.1,
       "cote_reference": 8.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149719000
+      "timestamp_cote": 1794149983000
     },
     {
       "numPmu": 11,
       "nom": "ALMACADO GREE",
-      "cote_live": 70.0,
+      "cote_live": 79.0,
       "cote_reference": 70.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149719000
+      "timestamp_cote": 1794149983000
     },
     {
       "numPmu": 12,
       "nom": "M'GLAMOUR",
-      "cote_live": 41.0,
+      "cote_live": 43.0,
       "cote_reference": 41.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149719000
+      "timestamp_cote": 1794149983000
     },
     {
       "numPmu": 13,
       "nom": "ILUMINE PRECIEUSE",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149719000
+      "timestamp_cote": 1794149983000
     },
     {
       "numPmu": 14,
       "nom": "ATHINEOS",
-      "cote_live": 4.7,
+      "cote_live": 5.2,
       "cote_reference": 4.7,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1794149719000
+      "favoris": false,
+      "timestamp_cote": 1794149983000
     },
     {
       "numPmu": 15,
       "nom": "BARBADIN",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149719000
+      "timestamp_cote": 1794149983000
     }
   ],
   "hippodrome": "SAINT-CLOUD",
@@ -164,6 +164,27 @@
         "13": 13.0,
         "14": 4.7,
         "15": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-08T16:00:10.699882+01:00",
+      "minutes_avant_depart": 24.82525765,
+      "cotes": {
+        "1": 44.0,
+        "2": 4.4,
+        "3": 63.0,
+        "4": 10.0,
+        "5": 10.0,
+        "6": 11.0,
+        "7": 27.0,
+        "8": 23.0,
+        "9": 20.0,
+        "10": 9.1,
+        "11": 79.0,
+        "12": 43.0,
+        "13": 14.0,
+        "14": 5.2,
+        "15": 14.0
       }
     }
   ]
