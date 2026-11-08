@@ -36,8 +36,8 @@ def fleche(p, base="cote_ref", seuil=0.10):
     return f' <span class="drift {cls}" title="{fr(p.get(base))} → {fr(p["cote"])}">{"↘" if r < 0 else "↗"}{abs(round(100 * r))} %</span>'
 
 def fiab(masse):
-    if masse < 10000: return ("mince", f"pool gagnant {masse:,} € : trop mince, dérives peu fiables".replace(",", " "))
-    if masse < 30000: return ("moyen", f"pool gagnant {masse:,} € : dérives à confirmer".replace(",", " "))
+    if masse < 5000: return ("mince", f"pool gagnant {masse:,} € : trop mince, dérives peu fiables".replace(",", " "))
+    if masse < 15000: return ("moyen", f"pool gagnant {masse:,} € : dérives à confirmer".replace(",", " "))
     return ("ok", f"pool gagnant {masse:,} € : dérives fiables".replace(",", " "))
 
 def cell(d):
@@ -190,7 +190,7 @@ out = f'''<title>{e(titre)}</title>
     <span><b>Tableau jockeys</b> : les jockeys de la course classés <b>à {e(HIP)} sur la longueur</b> (même discipline), puis leur rang <b>France</b> sur la longueur{", et en <b>courses de groupe</b> sur la longueur" if any(c["plat"] for c in doc["courses"]) else ""}. Rang = taux de victoire parmi tous les jockeys classés.</span>
     <span>En plat, la colonne France est exactement la pastille de la carte (« 5e · 2000m ») et la colonne Groupes la pastille 🏆.</span>
     <span><b class="g">Vert</b> = jockey mieux classé que sa cote d'au moins 3 places. <b class="b">Rouge</b> = cote nettement meilleure que son jockey. <b>rp</b> (réel/promis) = victoires ÷ ce que ses cotes annonçaient.</span>
-    <span><b>Dérives</b> : ↘ cote en baisse (le cheval est joué), ↗ en hausse (délaissé), en % de la cote de référence du matin. Une dérive ne compte que si le pool gagnant est assez gros : sous 10 000 € misés, quelques paris suffisent à déplacer une cote.</span>
+    <span><b>Dérives</b> : ↘ cote en baisse (le cheval est joué), ↗ en hausse (délaissé), en % de la cote de référence du matin. Une dérive ne compte que si le pool gagnant est assez gros : sous 5 000 € misés, quelques paris suffisent à déplacer une cote.</span>
     <span><b>Ici</b> : 6 dernières places du cheval sur l'hippodrome (0 = non classé).</span>
     <span>Historique PMU depuis 2022 en plat, 2024 en obstacle. Une lecture du passé, pas un conseil de pari : la cote intègre déjà la réputation des jockeys.</span>
   </div>
