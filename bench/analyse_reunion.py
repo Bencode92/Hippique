@@ -124,7 +124,9 @@ for c in reu.get("courses", []):
         cote_ref = (p.get("dernierRapportReference") or {}).get("rapport")
         pv = PREV.get((c.get("numOrdre"), p.get("numPmu"))) or {}
         passe = sorted((m for m in rows_h if m["ch"] == ch), key=lambda m: m["date"])[-6:]
-        parts.append(dict(n=p.get("numPmu"), nom=ch, cote=cote, cote_ref=cote_ref, cote_prec=pv.get("cote"),
+        # le PMU réécrit sa cote de référence dans la journée (Grand Art 12 → 5,2 le 08/11) :
+        # la cote de départ est la PREMIÈRE référence vue, figée ensuite
+        parts.append(dict(n=p.get("numPmu"), nom=ch, cote=cote, cote_ref=pv.get("ref_matin") or cote_ref, ref_matin=pv.get("ref_matin") or cote_ref, ref_pmu=cote_ref, cote_prec=pv.get("cote"),
                           cote_ouv=pv.get("cote_ouv") or pv.get("cote") or cote, jk=jk, en=ent, musique=p.get("musique") or "",
                           hb=hb.get(jk), hb_brut=hb_b.get(jk), fb=fb.get(jk), fb_brut=fb_b.get(jk),
                           g=(g or {}).get(jk) if g is not None else None, h=h.get(jk),
