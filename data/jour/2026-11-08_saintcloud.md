@@ -114,25 +114,25 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX BUCKSKIN
 
-*16h25 · plat · 3100 m · 15 partants · cotes à T−20:49*
+*16h25 · plat · 3100 m · 15 partants · cotes à T−16:49*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | GRAND ART | 4,1 | 4,8 | 4,74 | -13,5 % | C.SOUMILLON | 8/62/15/25 |
-| 14 | ATHINEOS | 5,9 | 3,7 | 6,51 | -9,4 % | M.GRANDIN | 3/121/641/955 |
-| 10 | BRIGHTON SPORT | 8,7 | 6,7 | 9,35 | -7,0 % | A.MADAMET | 12/166/452/1538 |
-| 5 | INSEPARABLE | 10 | 10 | 10,53 | -5,1 % | H.BOUTIN | 17/102/1816/129 |
-| 6 | ROOSTER CROWING | 10 | 18 | 10,12 | -1,2 % | PC.BOUDOT | 7/75/96/442 |
-| 4 | SUMMER WAY | 11 | 10 | 12,84 | -14,3 % | C.PACAUT | 44/125/1366/1239 |
-| 15 | BARBADIN | 15 | 15 | 19,80 | -24,2 % | S.PASQUIER | 20/84/1/– |
-| 13 | ILUMINE PRECIEUSE | 16 | 20 | 21,79 | -26,6 % | F.VALLE SKAR | 32/212/263/227 |
-| 9 | BOUSSANT | 21 | 33 | 27,28 | -23,0 % | A.HAMELIN | 23/24/70/657 |
-| 7 | VIANETA | 25 | 39 | 31,25 | -20,0 % | E.HARDOUIN | 30/170/253/393 |
-| 8 | KING KARA | 25 | 27 | 30,36 | -17,7 % | H.LEBOUC | 22/116/1666/1891 |
-| 12 | M'GLAMOUR | 37 | 46 | 56,90 | -35,0 % | B.FLANDRIN | 103/224/247/926 |
-| 1 | VINGT SEPT | 40 | 48 | 56,50 | -29,2 % | J.CLAUDIC | 40/26/814/903 |
-| 3 | EXTRAPOL | 59 | 81 | 86,18 | -31,5 % | T.PICCONE 2e | 9/42/1/1314 |
-| 11 | ALMACADO GREE | 86 | 108 | 127,99 | -32,8 % | E.MUNTWYLER | 186/87/369/– |
+| 2 | GRAND ART | 3,5 | 4,8 | 3,90 | -10,2 % | C.SOUMILLON | 8/62/15/25 |
+| 14 | ATHINEOS | 6,4 | 3,7 | 7,16 | -10,7 % | M.GRANDIN | 3/121/641/955 |
+| 10 | BRIGHTON SPORT | 9,5 | 6,7 | 10,38 | -8,5 % | A.MADAMET | 12/166/452/1538 |
+| 5 | INSEPARABLE | 10 | 10 | 10,56 | -5,3 % | H.BOUTIN | 17/102/1816/129 |
+| 6 | ROOSTER CROWING | 10 | 18 | 10,15 | -1,5 % | PC.BOUDOT | 7/75/96/442 |
+| 4 | SUMMER WAY | 12 | 10 | 14,25 | -15,8 % | C.PACAUT | 44/125/1366/1239 |
+| 15 | BARBADIN | 15 | 15 | 19,85 | -24,4 % | S.PASQUIER | 20/84/1/– |
+| 13 | ILUMINE PRECIEUSE | 18 | 20 | 25,07 | -28,2 % | F.VALLE SKAR | 32/212/263/227 |
+| 9 | BOUSSANT | 21 | 33 | 27,35 | -23,2 % | A.HAMELIN | 23/24/70/657 |
+| 7 | VIANETA | 25 | 39 | 31,33 | -20,2 % | E.HARDOUIN | 30/170/253/393 |
+| 8 | KING KARA | 27 | 27 | 33,22 | -18,7 % | H.LEBOUC | 22/116/1666/1891 |
+| 12 | M'GLAMOUR | 37 | 46 | 57,04 | -35,1 % | B.FLANDRIN | 103/224/247/926 |
+| 1 | VINGT SEPT | 42 | 48 | 59,76 | -29,7 % | J.CLAUDIC | 40/26/814/903 |
+| 3 | EXTRAPOL | 53 | 81 | 77,00 | -31,2 % | T.PICCONE 2e | 9/42/1/1314 |
+| 11 | ALMACADO GREE | 83 | 108 | 123,66 | -32,9 % | E.MUNTWYLER | 186/87/369/– |
 
 ### 8. PRIX SOLITUDE
 
