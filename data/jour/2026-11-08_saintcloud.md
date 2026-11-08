@@ -1,6 +1,6 @@
 # SAINT-CLOUD — 08/11/2026
 
-8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -97,20 +97,20 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX VULCAIN
 
-*15h50 · plat · 2500 m · 10 partants · cotes de l'extraction*
+*15h50 · plat · 2500 m · 10 partants · cotes à T−5:49*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 3 | COSY BEAR | 4,3 | 4,73 | -9,2 % | M.GUYON | 4/22/41/38 |
-| 2 | SHANOUR | 5 | 5,81 | -14,0 % | M.BARZALONA 3e | 1/24/2/1 |
-| 5 | WIZARD OF LIPS | 5 | 5,26 | -4,9 % | H.BOUTIN | 17/956/3793/5647 |
-| 10 | LAMELOISE | 6,5 | 7,52 | -13,6 % | C.LECOEUVRE | 13/9/14/123 |
-| 6 | MARIA APOLLONIA | 9,9 | 11,77 | -15,9 % | H.BESNIER | 11/4/507/829 |
-| 8 | VANTA | 12 | 15,05 | -20,3 % | PC.BOUDOT | 7/75/161/– |
-| 7 | STEALITWITHAKISS | 15 | 19,55 | -23,3 % | M.FAVRIAUX | 54/3/3264/328 |
-| 1 | TARDAR | 17 | 22,64 | -24,9 % | M.GRANDIN | 3/73/213/1484 |
-| 4 | PORTAL | 35 | 51,73 | -32,3 % | P.FORET | 215/210/79/499 |
-| 9 | MARYLENE DU SERRE | 43 | 65,00 | -33,8 % | S.PASQUIER | 20/46/487/360 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 3 | COSY BEAR | 4,2 | 4,3 | 4,65 | -9,7 % | M.GUYON | 4/22/41/38 |
+| 2 | SHANOUR | 4,7 | 5 | 5,47 | -14,1 % | M.BARZALONA 3e | 1/24/2/1 |
+| 10 | LAMELOISE | 4,7 | 6,5 | 5,47 | -14,1 % | C.LECOEUVRE | 13/9/14/123 |
+| 5 | WIZARD OF LIPS | 6,4 | 5 | 6,99 | -8,5 % | H.BOUTIN | 17/956/3793/5647 |
+| 8 | VANTA | 10 | 12 | 12,25 | -18,4 % | PC.BOUDOT | 7/75/161/– |
+| 6 | MARIA APOLLONIA | 13 | 9,9 | 16,35 | -20,5 % | H.BESNIER | 11/4/507/829 |
+| 7 | STEALITWITHAKISS | 17 | 15 | 22,84 | -25,6 % | M.FAVRIAUX | 54/3/3264/328 |
+| 1 | TARDAR | 20 | 17 | 27,59 | -27,5 % | M.GRANDIN | 3/73/213/1484 |
+| 4 | PORTAL | 32 | 35 | 43,00 | -25,6 % | P.FORET | 215/210/79/499 |
+| 9 | MARYLENE DU SERRE | 50 | 43 | 77,28 | -35,3 % | S.PASQUIER | 20/46/487/360 |
 
 ### 7. PRIX BUCKSKIN
 
