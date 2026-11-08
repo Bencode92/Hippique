@@ -1,6 +1,6 @@
 # SAINT-CLOUD — 08/11/2026
 
-8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -42,21 +42,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX DOUVE
 
-*13h58 · plat · 1500 m · 11 partants · cotes de l'extraction*
+*13h58 · plat · 1500 m · 11 partants · cotes à T−15:34*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 2 | MALIKA | 3,1 | 3,60 | -14,0 % | M.BARZALONA 3e | 1/1/16/18 |
-| 11 | ROMANTIQUE | 3,3 | 3,62 | -8,8 % | M.GUYON | 4/9/1/2 |
-| 3 | PASABAN | 9,4 | 11,69 | -19,6 % | C.LECOEUVRE | 13/19/303/1054 |
-| 1 | KASSKA | 11 | 15,07 | -27,0 % | PC.BOUDOT 4e | 7/3/4414/18 |
-| 4 | PATH OF THE STAR | 11 | 14,07 | -21,8 % | C.SOUMILLON 5e | 8/25/41/106 |
-| 10 | KIMYA | 11 | 14,07 | -21,8 % | A.LEMAITRE | 10/91/329/13 |
-| 6 | LOUISIANA | 18 | 25,08 | -28,2 % | M.GRANDIN | 3/177/2200/– |
-| 5 | COEUR D'OR | 22 | 31,65 | -30,5 % | A.MADAMET | 12/25/45/3342 |
-| 7 | CUBAN SUNRISE | 40 | 66,91 | -40,2 % | E.VERHESTRAETEN | 50/13/–/820 |
-| 9 | BEAUTIFUL APPLAUSE | 61 | 98,40 | -38,0 % | R.MANGIONE | 86/341/233/578 |
-| 8 | ROMANTIC SHOW | 91 | 146,36 | -37,8 % | T.TRULLIER | 24/46/106/– |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 2 | MALIKA | 2,7 | 3,1 | 3,14 | -14,1 % | M.BARZALONA 3e | 1/1/16/18 |
+| 11 | ROMANTIQUE | 5,5 | 3,3 | 6,04 | -8,9 % | M.GUYON | 4/9/1/2 |
+| 6 | LOUISIANA | 6,1 | 18 | 6,52 | -6,4 % | M.GRANDIN | 3/177/2200/– |
+| 1 | KASSKA | 8,3 | 11 | 9,92 | -16,3 % | PC.BOUDOT 4e | 7/3/4414/18 |
+| 3 | PASABAN | 10 | 9,4 | 12,58 | -20,5 % | C.LECOEUVRE | 13/19/303/1054 |
+| 4 | PATH OF THE STAR | 14 | 11 | 18,69 | -25,1 % | C.SOUMILLON 5e | 8/25/41/106 |
+| 5 | COEUR D'OR | 18 | 22 | 22,90 | -21,4 % | A.MADAMET | 12/25/45/3342 |
+| 10 | KIMYA | 20 | 11 | 27,07 | -26,1 % | A.LEMAITRE | 10/91/329/13 |
+| 7 | CUBAN SUNRISE | 45 | 40 | 76,20 | -40,9 % | E.VERHESTRAETEN | 50/13/–/820 |
+| 8 | ROMANTIC SHOW | 68 | 91 | 108,13 | -37,1 % | T.TRULLIER | 24/46/106/– |
+| 9 | BEAUTIFUL APPLAUSE | 126 | 61 | 197,89 | -36,3 % | R.MANGIONE | 86/341/233/578 |
 
 ### 4. PRIX TANTIEME
 
