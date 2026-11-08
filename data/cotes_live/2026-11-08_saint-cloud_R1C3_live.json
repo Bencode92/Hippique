@@ -4,107 +4,107 @@
   "reunion": 1,
   "heure_depart": 1794142680000,
   "distance": 1500,
-  "scraped_at": "2026-11-08T13:47:05.493851+01:00",
-  "minutes_avant_depart": 11,
+  "scraped_at": "2026-11-08T13:52:25.753675+01:00",
+  "minutes_avant_depart": 6,
   "participants": [
     {
       "numPmu": 1,
       "nom": "KASSKA",
-      "cote_live": 7.9,
+      "cote_live": 6.6,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794142012000
+      "timestamp_cote": 1794142320000
     },
     {
       "numPmu": 2,
       "nom": "MALIKA",
-      "cote_live": 2.6,
+      "cote_live": 2.9,
       "cote_reference": 2.4,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794142012000
+      "timestamp_cote": 1794142320000
     },
     {
       "numPmu": 3,
       "nom": "PASABAN",
-      "cote_live": 11.0,
+      "cote_live": 12.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794142012000
+      "timestamp_cote": 1794142320000
     },
     {
       "numPmu": 4,
       "nom": "PATH OF THE STAR",
-      "cote_live": 14.0,
+      "cote_live": 13.0,
       "cote_reference": 9.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794142012000
+      "timestamp_cote": 1794142320000
     },
     {
       "numPmu": 5,
       "nom": "COEUR D'OR",
-      "cote_live": 16.0,
+      "cote_live": 15.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794142012000
+      "timestamp_cote": 1794142320000
     },
     {
       "numPmu": 6,
       "nom": "LOUISIANA",
-      "cote_live": 7.2,
+      "cote_live": 6.9,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794142012000
+      "timestamp_cote": 1794142320000
     },
     {
       "numPmu": 7,
       "nom": "CUBAN SUNRISE",
-      "cote_live": 46.0,
+      "cote_live": 37.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794142012000
+      "timestamp_cote": 1794142320000
     },
     {
       "numPmu": 8,
       "nom": "ROMANTIC SHOW",
-      "cote_live": 51.0,
+      "cote_live": 52.0,
       "cote_reference": 65.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794142012000
+      "timestamp_cote": 1794142320000
     },
     {
       "numPmu": 9,
       "nom": "BEAUTIFUL APPLAUSE",
-      "cote_live": 115.0,
+      "cote_live": 88.0,
       "cote_reference": 83.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794142012000
+      "timestamp_cote": 1794142320000
     },
     {
       "numPmu": 10,
       "nom": "KIMYA",
-      "cote_live": 20.0,
+      "cote_live": 16.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794142012000
+      "timestamp_cote": 1794142320000
     },
     {
       "numPmu": 11,
       "nom": "ROMANTIQUE",
-      "cote_live": 5.7,
+      "cote_live": 6.1,
       "cote_reference": 6.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794142012000
+      "timestamp_cote": 1794142320000
     }
   ],
   "hippodrome": "SAINT-CLOUD",
@@ -141,6 +141,40 @@
         "9": 115.0,
         "10": 20.0,
         "11": 5.7
+      }
+    },
+    {
+      "scraped_at": "2026-11-08T13:51:05.272395+01:00",
+      "minutes_avant_depart": 6.913881450000001,
+      "cotes": {
+        "1": 6.8,
+        "2": 2.8,
+        "3": 13.0,
+        "4": 14.0,
+        "5": 16.0,
+        "6": 6.3,
+        "7": 36.0,
+        "8": 51.0,
+        "9": 113.0,
+        "10": 19.0,
+        "11": 6.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-08T13:52:25.753675+01:00",
+      "minutes_avant_depart": 5.5735399999999995,
+      "cotes": {
+        "1": 6.6,
+        "2": 2.9,
+        "3": 12.0,
+        "4": 13.0,
+        "5": 15.0,
+        "6": 6.9,
+        "7": 37.0,
+        "8": 52.0,
+        "9": 88.0,
+        "10": 16.0,
+        "11": 6.1
       }
     }
   ]
