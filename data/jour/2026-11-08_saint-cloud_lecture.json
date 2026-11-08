@@ -1,10 +1,10 @@
 {
 "date": "2026-11-08",
 "hippodrome": "SAINT-CLOUD",
-"releve": "2026-11-07 21:26",
-"cotes_publiees": false,
+"releve": "2026-11-08 10:10",
+"cotes_publiees": true,
 "histo": {
-"plat": 201184,
+"plat": 201360,
 "obstacle": 32711
 },
 "courses": [
@@ -27,7 +27,7 @@
 {
 "n": 1,
 "nom": "DUTCHMAN",
-"cote": null,
+"cote": 17.0,
 "jk": "E.VERHESTRAETEN",
 "en": "A.MURPHY (S)",
 "musique": "",
@@ -74,7 +74,7 @@
 {
 "n": 2,
 "nom": "LE HAM",
-"cote": null,
+"cote": 8.1,
 "jk": "C.SOUMILLON",
 "en": "CHR.HEAD (S)",
 "musique": "",
@@ -121,7 +121,7 @@
 {
 "n": 3,
 "nom": "TRYSTAR",
-"cote": null,
+"cote": 7.9,
 "jk": "T.BACHELOT",
 "en": "S.WATTEL (S)",
 "musique": "",
@@ -168,7 +168,7 @@
 {
 "n": 4,
 "nom": "BATUKHAN",
-"cote": null,
+"cote": 5.1,
 "jk": "PC.BOUDOT",
 "en": "A&L.FABRE (S)",
 "musique": "",
@@ -215,7 +215,7 @@
 {
 "n": 5,
 "nom": "SZECHUAN",
-"cote": null,
+"cote": 36.0,
 "jk": "C.BELMONT",
 "en": "M.NIGGE (S)",
 "musique": "",
@@ -262,7 +262,7 @@
 {
 "n": 6,
 "nom": "KUBANGO",
-"cote": null,
+"cote": 16.0,
 "jk": "A.MADAMET",
 "en": "M.DELCHER SANCHEZ",
 "musique": "",
@@ -281,7 +281,7 @@
 "fb": {
 "r": 63,
 "tot": 148,
-"n": 1220,
+"n": 1221,
 "v": 99,
 "tx": 8,
 "rp": 1.04
@@ -309,7 +309,7 @@
 {
 "n": 7,
 "nom": "GUARACI",
-"cote": null,
+"cote": 5.5,
 "jk": "J.MOUTARD",
 "en": "D.ARTU (S)",
 "musique": "",
@@ -356,7 +356,7 @@
 {
 "n": 8,
 "nom": "PEARL EXPRESS",
-"cote": null,
+"cote": 28.0,
 "jk": "T.PICCONE",
 "en": "M.DELCHER SANCHEZ",
 "musique": "",
@@ -403,7 +403,7 @@
 {
 "n": 9,
 "nom": "THE PYRENEES",
-"cote": null,
+"cote": 3.8,
 "jk": "M.BARZALONA",
 "en": "FH.GRAFFARD (S)",
 "musique": "",
@@ -422,10 +422,10 @@
 "fb": {
 "r": 3,
 "tot": 148,
-"n": 1604,
-"v": 308,
+"n": 1605,
+"v": 309,
 "tx": 19,
-"rp": 1.06
+"rp": 1.07
 },
 "fb_brut": null,
 "g": null,
@@ -450,7 +450,7 @@
 {
 "n": 10,
 "nom": "LIMIT UP",
-"cote": null,
+"cote": 13.0,
 "jk": "A.HAMELIN",
 "en": "H.GREWE",
 "musique": "",
@@ -515,7 +515,7 @@
 {
 "n": 1,
 "nom": "SYDNEY MOON",
-"cote": null,
+"cote": 23.0,
 "jk": "E.VERHESTRAETEN",
 "en": "A.MURPHY (S)",
 "musique": "7p1p4p4p1p3p2p",
@@ -564,7 +564,7 @@
 {
 "n": 2,
 "nom": "TIMUR",
-"cote": null,
+"cote": 5.4,
 "jk": "S.PASQUIER",
 "en": "D.ARTU (S)",
 "musique": "1p2p2p9p1p1p5p1p",
@@ -583,7 +583,7 @@
 "fb": {
 "r": 19,
 "tot": 122,
-"n": 686,
+"n": 687,
 "v": 78,
 "tx": 11,
 "rp": 0.99
@@ -618,7 +618,7 @@
 {
 "n": 3,
 "nom": "BELISA BAY",
-"cote": null,
+"cote": 5.5,
 "jk": "PC.BOUDOT",
 "en": "A.SOTO LORING",
 "musique": "3p1p1p1p1p3p2p",
@@ -667,7 +667,7 @@
 {
 "n": 4,
 "nom": "RISCAL",
-"cote": null,
+"cote": 15.0,
 "jk": "M.GUYON",
 "en": "M.BARATTI (S)",
 "musique": "2p6p",
@@ -723,7 +723,7 @@
 {
 "n": 5,
 "nom": "HINATA GREY",
-"cote": null,
+"cote": 11.0,
 "jk": "C.SOUMILLON",
 "en": "MME V.HEAD",
 "musique": "3p4p4p3p1p",
@@ -777,7 +777,7 @@
 {
 "n": 6,
 "nom": "FLYING SPUR",
-"cote": null,
+"cote": 2.9,
 "jk": "C.LECOEUVRE",
 "en": "H.GHABRI",
 "musique": "3p8p4p1p4p",
@@ -796,7 +796,7 @@
 "fb": {
 "r": 49,
 "tot": 122,
-"n": 803,
+"n": 804,
 "v": 70,
 "tx": 9,
 "rp": 1.06
@@ -834,7 +834,7 @@
 {
 "n": 7,
 "nom": "NOUVEAUTE",
-"cote": null,
+"cote": 6.0,
 "jk": "M.BARZALONA",
 "en": "H.GREWE",
 "musique": "6p1p",
@@ -853,10 +853,10 @@
 "fb": {
 "r": 3,
 "tot": 122,
-"n": 904,
-"v": 160,
+"n": 905,
+"v": 161,
 "tx": 18,
-"rp": 1.01
+"rp": 1.02
 },
 "fb_brut": null,
 "g": {
@@ -888,7 +888,7 @@
 {
 "n": 8,
 "nom": "GOLDY GLORY",
-"cote": null,
+"cote": 13.0,
 "jk": "M.PROTTI",
 "en": "HA.PANTALL (S)",
 "musique": "1p9p1p2p1p0p",
@@ -939,7 +939,7 @@
 {
 "n": 1,
 "nom": "KASSKA",
-"cote": null,
+"cote": 11.0,
 "jk": "PC.BOUDOT",
 "en": "A&L.FABRE (S)",
 "musique": "",
@@ -986,7 +986,7 @@
 {
 "n": 2,
 "nom": "MALIKA",
-"cote": null,
+"cote": 4.0,
 "jk": "M.BARZALONA",
 "en": "FH.GRAFFARD (S)",
 "musique": "",
@@ -1005,10 +1005,10 @@
 "fb": {
 "r": 3,
 "tot": 148,
-"n": 1604,
-"v": 308,
+"n": 1605,
+"v": 309,
 "tx": 19,
-"rp": 1.06
+"rp": 1.07
 },
 "fb_brut": null,
 "g": null,
@@ -1033,7 +1033,7 @@
 {
 "n": 3,
 "nom": "PASABAN",
-"cote": null,
+"cote": 7.8,
 "jk": "C.LECOEUVRE",
 "en": "M.BARATTI (S)",
 "musique": "",
@@ -1052,7 +1052,7 @@
 "fb": {
 "r": 61,
 "tot": 148,
-"n": 1237,
+"n": 1238,
 "v": 102,
 "tx": 8,
 "rp": 1.0
@@ -1080,7 +1080,7 @@
 {
 "n": 4,
 "nom": "PATH OF THE STAR",
-"cote": null,
+"cote": 12.0,
 "jk": "C.SOUMILLON",
 "en": "M.DELCHER SANCHEZ",
 "musique": "",
@@ -1127,7 +1127,7 @@
 {
 "n": 5,
 "nom": "COEUR D'OR",
-"cote": null,
+"cote": 26.0,
 "jk": "A.MADAMET",
 "en": "M.DELCHER SANCHEZ",
 "musique": "",
@@ -1146,7 +1146,7 @@
 "fb": {
 "r": 63,
 "tot": 148,
-"n": 1220,
+"n": 1221,
 "v": 99,
 "tx": 8,
 "rp": 1.04
@@ -1174,7 +1174,7 @@
 {
 "n": 6,
 "nom": "LOUISIANA",
-"cote": null,
+"cote": 22.0,
 "jk": "M.GRANDIN",
 "en": "MME J.SOUDAN",
 "musique": "",
@@ -1221,7 +1221,7 @@
 {
 "n": 7,
 "nom": "CUBAN SUNRISE",
-"cote": null,
+"cote": 48.0,
 "jk": "E.VERHESTRAETEN",
 "en": "A.MURPHY (S)",
 "musique": "",
@@ -1268,7 +1268,7 @@
 {
 "n": 8,
 "nom": "ROMANTIC SHOW",
-"cote": null,
+"cote": 96.0,
 "jk": "T.TRULLIER",
 "en": "TIM.DONWORTH (S)",
 "musique": "",
@@ -1315,7 +1315,7 @@
 {
 "n": 9,
 "nom": "BEAUTIFUL APPLAUSE",
-"cote": null,
+"cote": 48.0,
 "jk": "R.MANGIONE",
 "en": "X.RICHARD",
 "musique": "",
@@ -1362,7 +1362,7 @@
 {
 "n": 10,
 "nom": "KIMYA",
-"cote": null,
+"cote": 9.9,
 "jk": "A.LEMAITRE",
 "en": "MME V.HEAD",
 "musique": "",
@@ -1381,7 +1381,7 @@
 "fb": {
 "r": 32,
 "tot": 148,
-"n": 1370,
+"n": 1371,
 "v": 131,
 "tx": 10,
 "rp": 1.05
@@ -1409,7 +1409,7 @@
 {
 "n": 11,
 "nom": "ROMANTIQUE",
-"cote": null,
+"cote": 2.8,
 "jk": "M.GUYON",
 "en": "Y.BARBEROT (S)",
 "musique": "",
@@ -1474,7 +1474,7 @@
 {
 "n": 1,
 "nom": "SKYTREE",
-"cote": null,
+"cote": 16.0,
 "jk": "C.SOUMILLON",
 "en": "A.SOTO LORING",
 "musique": "1p3p1p5p1p(25)1p2p5p1p",
@@ -1521,7 +1521,7 @@
 {
 "n": 2,
 "nom": "CROWN OF OAKS",
-"cote": null,
+"cote": 2.7,
 "jk": "PC.BOUDOT",
 "en": "WJ.HAGGAS",
 "musique": "2p2p9p7p(25)1p3p1p1p3p",
@@ -1570,7 +1570,7 @@
 {
 "n": 3,
 "nom": "DARIUS CEN",
-"cote": null,
+"cote": 8.4,
 "jk": "A.LEMAITRE",
 "en": "P.OLAVE VALDIVIELSO",
 "musique": "5p2p3p1p(25)7p9p2p7p5p",
@@ -1589,7 +1589,7 @@
 "fb": {
 "r": 26,
 "tot": 136,
-"n": 922,
+"n": 923,
 "v": 91,
 "tx": 10,
 "rp": 1.04
@@ -1627,7 +1627,7 @@
 {
 "n": 4,
 "nom": "VATICANA",
-"cote": null,
+"cote": 5.0,
 "jk": "M.BARZALONA",
 "en": "P.COTTIER",
 "musique": "1p7p6p2p9p1p1p2p3p",
@@ -1646,8 +1646,8 @@
 "fb": {
 "r": 2,
 "tot": 136,
-"n": 1080,
-"v": 218,
+"n": 1081,
+"v": 219,
 "tx": 20,
 "rp": 1.1
 },
@@ -1683,7 +1683,7 @@
 {
 "n": 5,
 "nom": "TAKE ME ON",
-"cote": null,
+"cote": 6.6,
 "jk": "M.GUYON",
 "en": "P&J.BRANDT (S)",
 "musique": "3p3p2p1p0p6p(25)1p",
@@ -1739,7 +1739,7 @@
 {
 "n": 6,
 "nom": "MALA WYSKA",
-"cote": null,
+"cote": 17.0,
 "jk": "B.MURZABAYEV",
 "en": "P.SCHIERGEN",
 "musique": "9p3p6p3p4p2p4p(25)6p4p",
@@ -1795,7 +1795,7 @@
 {
 "n": 7,
 "nom": "TRUE DAWN",
-"cote": null,
+"cote": 9.0,
 "jk": "M.PROTTI",
 "en": "HA.PANTALL (S)",
 "musique": "1p1p9p",
@@ -1828,7 +1828,7 @@
 {
 "n": 8,
 "nom": "ETINCELLE",
-"cote": null,
+"cote": 13.0,
 "jk": "C.LECOEUVRE",
 "en": "M.BARATTI (S)",
 "musique": "2p5p6p1p2p",
@@ -1847,7 +1847,7 @@
 "fb": {
 "r": 53,
 "tot": 136,
-"n": 849,
+"n": 850,
 "v": 71,
 "tx": 8,
 "rp": 1.0
@@ -1903,7 +1903,7 @@
 {
 "n": 1,
 "nom": "DON'T SHUT ME DOWN",
-"cote": null,
+"cote": 7.7,
 "jk": "M.GUYON",
 "en": "P&J.BRANDT (S)",
 "musique": "6p5p1p5p7p0p7p6p(25)9p",
@@ -1960,7 +1960,7 @@
 {
 "n": 2,
 "nom": "HOMO DEUS",
-"cote": null,
+"cote": 32.0,
 "jk": "PC.BOUDOT",
 "en": "H.GHABRI",
 "musique": "8p9p5p(25)5p1p8p9p(24)4p",
@@ -2000,7 +2000,7 @@
 {
 "n": 3,
 "nom": "BLACK SAXON",
-"cote": null,
+"cote": 33.0,
 "jk": "A.MADAMET",
 "en": "N.BELLANGER (S)",
 "musique": "0p2p4p5p0p1p1p2p2p",
@@ -2051,7 +2051,7 @@
 {
 "n": 4,
 "nom": "MISTER GATZ",
-"cote": null,
+"cote": 33.0,
 "jk": "S.PASQUIER",
 "en": "S.NIGGE (S)",
 "musique": "0p1p7p7p6p2p4p0p(25)7p",
@@ -2112,7 +2112,7 @@
 {
 "n": 5,
 "nom": "A BEAUREGARD",
-"cote": null,
+"cote": 11.0,
 "jk": "D.PROVOST",
 "en": "M.CESANDRI (S)",
 "musique": "2p0p1p7p7p0p6p0p6p",
@@ -2154,7 +2154,7 @@
 {
 "n": 6,
 "nom": "MON RICIN",
-"cote": null,
+"cote": 11.0,
 "jk": "A.LEMAITRE",
 "en": "TIM.DONWORTH (S)",
 "musique": "0p0p1p0p3p(25)3p3p6p1p",
@@ -2199,7 +2199,7 @@
 {
 "n": 7,
 "nom": "ORAGEUX",
-"cote": null,
+"cote": 4.1,
 "jk": "M.BARZALONA",
 "en": "J.REYNIER (S)",
 "musique": "1p1p1p2p",
@@ -2253,7 +2253,7 @@
 {
 "n": 8,
 "nom": "RAM SEA",
-"cote": null,
+"cote": 12.0,
 "jk": "L.BRECHET",
 "en": "D.MELE (S)",
 "musique": "3p0p0p1p3p5p8p2p(25)5p",
@@ -2287,7 +2287,7 @@
 {
 "n": 9,
 "nom": "PAOLINO",
-"cote": null,
+"cote": 16.0,
 "jk": "A.HAMELIN",
 "en": "D&P.PROD'HOMME (S)",
 "musique": "9p0p0p1p5p0p7p(25)0p8p",
@@ -2317,7 +2317,7 @@
 {
 "n": 10,
 "nom": "DARK ROCKSTER",
-"cote": null,
+"cote": 15.0,
 "jk": "C.LECOEUVRE",
 "en": "S.WATTEL (S)",
 "musique": "6p4p(25)1p4p2p",
@@ -2366,7 +2366,7 @@
 {
 "n": 11,
 "nom": "DEMPY",
-"cote": null,
+"cote": 9.6,
 "jk": "C.SOUMILLON",
 "en": "D.BONILLA (S)",
 "musique": "4p0p2p7p1p0p7p3p4p5p",
@@ -2418,7 +2418,7 @@
 {
 "n": 12,
 "nom": "LUCIO VERO",
-"cote": null,
+"cote": 35.0,
 "jk": "A.MEKOUCHE",
 "en": "R.AVIAL LOPEZ",
 "musique": "1p7p1p6p4p2p1p0p1p0p",
@@ -2447,7 +2447,7 @@
 {
 "n": 13,
 "nom": "GARVEY",
-"cote": null,
+"cote": 23.0,
 "jk": "E.HARDOUIN",
 "en": "MME E.MADER",
 "musique": "2p4p3p3p2p2p4p4p4p",
@@ -2487,7 +2487,7 @@
 {
 "n": 14,
 "nom": "ZARFLIGHT",
-"cote": null,
+"cote": 34.0,
 "jk": "F.VERON",
 "en": "GAB.LEENDERS (S)",
 "musique": "0p5p7p1p6p1p(25)8sAh8h",
@@ -2529,7 +2529,7 @@
 {
 "n": 15,
 "nom": "GOOD TO SEE YOU",
-"cote": null,
+"cote": 25.0,
 "jk": "A.CRASTUS",
 "en": "MME A.WATTEL",
 "musique": "2p1p0p4p1p3p3p2p5p4p",
@@ -2596,7 +2596,7 @@
 {
 "n": 1,
 "nom": "TARDAR",
-"cote": null,
+"cote": 16.0,
 "jk": "M.GRANDIN",
 "en": "MME A.KARKOSA",
 "musique": "1p7p6p2p4p4p9p",
@@ -2613,10 +2613,10 @@
 "v": 2
 },
 "fb": {
-"r": 25,
+"r": 23,
 "tot": 131,
-"n": 466,
-"v": 54,
+"n": 468,
+"v": 55,
 "tx": 12,
 "rp": 1.02
 },
@@ -2645,7 +2645,7 @@
 {
 "n": 2,
 "nom": "SHANOUR",
-"cote": null,
+"cote": 3.8,
 "jk": "M.BARZALONA",
 "en": "M.DELZANGLES",
 "musique": "1p4p2p1p8p(25)2p9p",
@@ -2664,10 +2664,10 @@
 "fb": {
 "r": 3,
 "tot": 131,
-"n": 598,
+"n": 599,
 "v": 116,
 "tx": 19,
-"rp": 1.02
+"rp": 1.01
 },
 "fb_brut": null,
 "g": {
@@ -2702,7 +2702,7 @@
 {
 "n": 3,
 "nom": "COSY BEAR",
-"cote": null,
+"cote": 3.4,
 "jk": "M.GUYON",
 "en": "P&J.BRANDT (S)",
 "musique": "5p1p1p6p1p8p3p(25)2p2p",
@@ -2721,7 +2721,7 @@
 "fb": {
 "r": 6,
 "tot": 131,
-"n": 765,
+"n": 766,
 "v": 128,
 "tx": 17,
 "rp": 1.02
@@ -2760,7 +2760,7 @@
 {
 "n": 4,
 "nom": "PORTAL",
-"cote": null,
+"cote": 43.0,
 "jk": "P.FORET",
 "en": "D.TOROK",
 "musique": "7p1p1p2p5p(25)5p4p",
@@ -2783,7 +2783,7 @@
 {
 "n": 5,
 "nom": "WIZARD OF LIPS",
-"cote": null,
+"cote": 6.0,
 "jk": "H.BOUTIN",
 "en": "MME E.FABIANOVA",
 "musique": "2p1p1p5p1p2p",
@@ -2823,7 +2823,7 @@
 {
 "n": 6,
 "nom": "MARIA APOLLONIA",
-"cote": null,
+"cote": 54.0,
 "jk": "H.BESNIER",
 "en": "P.COTTIER",
 "musique": "4p2p8p1p1p2p1p0p5p",
@@ -2833,12 +2833,12 @@
 "v": 1
 },
 "fb": {
-"r": 20,
+"r": 21,
 "tot": 131,
-"n": 267,
+"n": 268,
 "v": 32,
 "tx": 12,
-"rp": 1.1
+"rp": 1.09
 },
 "fb_brut": null,
 "g": null,
@@ -2865,7 +2865,7 @@
 {
 "n": 7,
 "nom": "STEALITWITHAKISS",
-"cote": null,
+"cote": 12.0,
 "jk": "M.FAVRIAUX",
 "en": "A&L.FABRE (S)",
 "musique": "9p1p5p1p2p2p(25)7p6p",
@@ -2912,7 +2912,7 @@
 {
 "n": 8,
 "nom": "VANTA",
-"cote": null,
+"cote": 15.0,
 "jk": "PC.BOUDOT",
 "en": "M.SEROR (S)",
 "musique": "6p5p1p1p6p8p4p3p5p6p",
@@ -2929,7 +2929,7 @@
 "v": 1
 },
 "fb": {
-"r": 21,
+"r": 20,
 "tot": 131,
 "n": 83,
 "v": 10,
@@ -2961,7 +2961,7 @@
 {
 "n": 9,
 "nom": "MARYLENE DU SERRE",
-"cote": null,
+"cote": 54.0,
 "jk": "S.PASQUIER",
 "en": "TIM.DONWORTH (S)",
 "musique": "7p7p4p9p4p(25)1p1p7p6p",
@@ -3017,7 +3017,7 @@
 {
 "n": 10,
 "nom": "LAMELOISE",
-"cote": null,
+"cote": 6.3,
 "jk": "C.LECOEUVRE",
 "en": "Y.BARBEROT (S)",
 "musique": "1p1p5p",
@@ -3084,7 +3084,7 @@
 {
 "n": 1,
 "nom": "VINGT SEPT",
-"cote": null,
+"cote": 26.0,
 "jk": "J.CLAUDIC",
 "en": "M.PITART",
 "musique": "0p9p5p1p3p1p4p(25)3p2p",
@@ -3119,7 +3119,7 @@
 {
 "n": 2,
 "nom": "GRAND ART",
-"cote": null,
+"cote": 7.7,
 "jk": "C.SOUMILLON",
 "en": "JPH .DUBOIS",
 "musique": "3p1p4p4p(25)5h2h6p9p6p",
@@ -3168,7 +3168,7 @@
 {
 "n": 3,
 "nom": "EXTRAPOL",
-"cote": null,
+"cote": 58.0,
 "jk": "T.PICCONE",
 "en": "FR.MONFORT (S)",
 "musique": "1p6p4p4p4p1p2p0p4p3p",
@@ -3217,7 +3217,7 @@
 {
 "n": 4,
 "nom": "SUMMER WAY",
-"cote": null,
+"cote": 5.9,
 "jk": "C.PACAUT",
 "en": "S.ZULIANI (S)",
 "musique": "3p5p3p1p(25)Dp5p3p3p1p",
@@ -3261,7 +3261,7 @@
 {
 "n": 5,
 "nom": "INSEPARABLE",
-"cote": null,
+"cote": 6.9,
 "jk": "H.BOUTIN",
 "en": "B.AUDOUIN (S)",
 "musique": "1p6p1p4p5p(25)3p",
@@ -3296,7 +3296,7 @@
 {
 "n": 6,
 "nom": "ROOSTER CROWING",
-"cote": null,
+"cote": 8.7,
 "jk": "PC.BOUDOT",
 "en": "M.SEROR (S)",
 "musique": "3p7h1h6h6hAh3h0p(25)1h",
@@ -3332,7 +3332,7 @@
 {
 "n": 7,
 "nom": "VIANETA",
-"cote": null,
+"cote": 58.0,
 "jk": "E.HARDOUIN",
 "en": "E.LECOIFFIER",
 "musique": "6p0p1p1p5p2p0p0p1p6p",
@@ -3379,7 +3379,7 @@
 {
 "n": 8,
 "nom": "KING KARA",
-"cote": null,
+"cote": 31.0,
 "jk": "H.LEBOUC",
 "en": "T.POCHE",
 "musique": "0p0p9p8p4p3p8p0p7p",
@@ -3422,7 +3422,7 @@
 {
 "n": 9,
 "nom": "BOUSSANT",
-"cote": null,
+"cote": 24.0,
 "jk": "A.HAMELIN",
 "en": "M.DELZANGLES",
 "musique": "9p0p1p3p7p4p4p6p4p",
@@ -3454,7 +3454,7 @@
 {
 "n": 10,
 "nom": "BRIGHTON SPORT",
-"cote": null,
+"cote": 12.0,
 "jk": "A.MADAMET",
 "en": "A.SUBORICS",
 "musique": "5p2p1p4p8p",
@@ -3501,7 +3501,7 @@
 {
 "n": 11,
 "nom": "ALMACADO GREE",
-"cote": null,
+"cote": 116.0,
 "jk": "E.MUNTWYLER",
 "en": "C.FEY (S)",
 "musique": "8p6p7p8p0p0p(25)4p2p0p",
@@ -3528,7 +3528,7 @@
 {
 "n": 12,
 "nom": "M'GLAMOUR",
-"cote": null,
+"cote": 18.0,
 "jk": "B.FLANDRIN",
 "en": "G.GEISLER",
 "musique": "2p1p3p4p3p4p6p9p4p6p",
@@ -3551,7 +3551,7 @@
 {
 "n": 13,
 "nom": "ILUMINE PRECIEUSE",
-"cote": null,
+"cote": 15.0,
 "jk": "F.VALLE SKAR",
 "en": "MME M.DESVAUX",
 "musique": "0p6p7p6p7p3p5p0p7p",
@@ -3597,7 +3597,7 @@
 {
 "n": 14,
 "nom": "ATHINEOS",
-"cote": null,
+"cote": 7.2,
 "jk": "M.GRANDIN",
 "en": "JESUS",
 "musique": "7p6p0p6p4p0p9p7p8p0p",
@@ -3637,7 +3637,7 @@
 {
 "n": 15,
 "nom": "BARBADIN",
-"cote": null,
+"cote": 12.0,
 "jk": "S.PASQUIER",
 "en": "D&P.PROD'HOMME (S)",
 "musique": "5p3p0p3p3p0p6p3p9p4p",
@@ -3716,7 +3716,7 @@
 {
 "n": 1,
 "nom": "SODA ZABEEL",
-"cote": null,
+"cote": 36.0,
 "jk": "M.GRANDIN",
 "en": "A.SCHUTZ (S)",
 "musique": "1p3p2p9p5p6p3p(25)8p5p",
@@ -3766,7 +3766,7 @@
 {
 "n": 2,
 "nom": "YMEEELIH",
-"cote": null,
+"cote": 34.0,
 "jk": "A.LEMAITRE",
 "en": "A.SCHUTZ (S)",
 "musique": "6p7p2p4p2p4p0p2p1p",
@@ -3785,7 +3785,7 @@
 "fb": {
 "r": 37,
 "tot": 150,
-"n": 1017,
+"n": 1021,
 "v": 98,
 "tx": 10,
 "rp": 1.16
@@ -3823,7 +3823,7 @@
 {
 "n": 3,
 "nom": "ECIJA",
-"cote": null,
+"cote": 7.2,
 "jk": "S.PASQUIER",
 "en": "CLEMENT & HERMANS (S)",
 "musique": "3p5p3p2p1p(25)2p6p",
@@ -3842,7 +3842,7 @@
 "fb": {
 "r": 21,
 "tot": 150,
-"n": 783,
+"n": 786,
 "v": 89,
 "tx": 11,
 "rp": 1.05
@@ -3879,7 +3879,7 @@
 {
 "n": 4,
 "nom": "AURORA BEAU REAL",
-"cote": null,
+"cote": 11.0,
 "jk": "C.SOUMILLON",
 "en": "A.BOTTI (S)",
 "musique": "1p2p3p2p",
@@ -3935,7 +3935,7 @@
 {
 "n": 5,
 "nom": "HELLO AVENUE",
-"cote": null,
+"cote": 21.0,
 "jk": "A.MADAMET",
 "en": "JPH .DUBOIS",
 "musique": "2p3p5p1p2p6p1p3p4p7p",
@@ -3954,7 +3954,7 @@
 "fb": {
 "r": 100,
 "tot": 150,
-"n": 907,
+"n": 911,
 "v": 59,
 "tx": 6,
 "rp": 0.76
@@ -3985,7 +3985,7 @@
 {
 "n": 6,
 "nom": "CLEA CHOPE",
-"cote": null,
+"cote": 59.0,
 "jk": "H.BESNIER",
 "en": "P.COTTIER",
 "musique": "1p4p0p9p(25)6p3p8p1p1p",
@@ -4032,7 +4032,7 @@
 {
 "n": 7,
 "nom": "LEGACY LINK",
-"cote": null,
+"cote": 19.0,
 "jk": "C.KEANE",
 "en": "JOHN & THADY GOSDEN",
 "musique": "9p7p2p1p(25)4p1p3p",
@@ -4058,7 +4058,7 @@
 {
 "n": 8,
 "nom": "MUSIC'S GIRL",
-"cote": null,
+"cote": 12.0,
 "jk": "A.CRASTUS",
 "en": "J.REYNIER (S)",
 "musique": "2p9p1p0p",
@@ -4077,7 +4077,7 @@
 "fb": {
 "r": 84,
 "tot": 150,
-"n": 1272,
+"n": 1274,
 "v": 91,
 "tx": 7,
 "rp": 0.8
@@ -4105,7 +4105,7 @@
 {
 "n": 9,
 "nom": "VANIR",
-"cote": null,
+"cote": 31.0,
 "jk": "B.COEN",
 "en": "JP.MURTAGH",
 "musique": "1p2p8p3p1p2p8p",
@@ -4121,7 +4121,7 @@
 {
 "n": 10,
 "nom": "BLANCHE DE MEDICIS",
-"cote": null,
+"cote": 28.0,
 "jk": "PC.BOUDOT",
 "en": "A&L.FABRE (S)",
 "musique": "5p5p3p6p(25)1p",
@@ -4171,7 +4171,7 @@
 {
 "n": 11,
 "nom": "ARCTIC BAY",
-"cote": null,
+"cote": 95.0,
 "jk": "R.THOMAS",
 "en": "C&Y.LERNER (S)",
 "musique": "6p5p(25)1p2p",
@@ -4188,7 +4188,7 @@
 "v": 2
 },
 "fb": {
-"r": 25,
+"r": 24,
 "tot": 150,
 "n": 260,
 "v": 29,
@@ -4218,7 +4218,7 @@
 {
 "n": 12,
 "nom": "GLYFADA",
-"cote": null,
+"cote": 119.0,
 "jk": "G.RYAN",
 "en": "D.O'BRIEN",
 "musique": "3p5p1p1p2p",
@@ -4241,7 +4241,7 @@
 {
 "n": 13,
 "nom": "LAND OF LIBERTY",
-"cote": null,
+"cote": 23.0,
 "jk": "T.BACHELOT",
 "en": "S.KOBAYASHI (S)",
 "musique": "7p0p5p8p9p2p0p(25)1p2p",
@@ -4258,12 +4258,12 @@
 "v": 6
 },
 "fb": {
-"r": 41,
+"r": 40,
 "tot": 150,
-"n": 921,
-"v": 86,
+"n": 924,
+"v": 87,
 "tx": 9,
-"rp": 0.92
+"rp": 0.93
 },
 "fb_brut": null,
 "g": {
@@ -4297,7 +4297,7 @@
 {
 "n": 14,
 "nom": "RUMPUMPEL",
-"cote": null,
+"cote": 1.8,
 "jk": "M.BARZALONA",
 "en": "FH.GRAFFARD (S)",
 "musique": "1p1p3p",
