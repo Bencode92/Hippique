@@ -78,6 +78,15 @@ plat = charge("data/histo/*.jsonl")
 obst = charge("data/histo_obstacle/*.jsonl")
 JD = json.load(open("data/jockeys_distance.json", encoding="utf-8"))
 
+# relevé précédent (même jour) : cote vue la fois d'avant et première cote vue
+dest = f"data/jour/{jour_iso}_{hip_cible.lower().replace(' ', '')}_lecture.json"
+try:
+    _prev = json.load(open(dest, encoding="utf-8"))
+    PREV = {(c["num"], p["n"]): p for c in _prev["courses"] for p in c["partants"]}
+    PREV_T = _prev.get("releve")
+except Exception:
+    PREV, PREV_T = {}, None
+
 prog = get(f"{BASE}/programme/{jj}?specialisation=INTERNET")
 reu = next((r for r in (prog or {}).get("programme", {}).get("reunions", [])
             if hip_cible in ((r.get("hippodrome") or {}).get("libelleCourt") or "").upper()), None)
@@ -103,13 +112,20 @@ for c in reu.get("courses", []):
         fb, fb_b = classement([m for m in rows_d if abs(m["dist"] - dist) <= BF], "jk", MF); g = None
     en, _ = classement(rows_h, "en", 1)
     data = get(f"{BASE}/programme/{jj}/R{reu.get('numOfficiel')}/C{c.get('numOrdre')}/participants?specialisation=INTERNET") or {}
+    # masse du pool simple gagnant (centimes → €) : juge si une dérive est du bruit
+    cb = get(f"{BASE}/programme/{jj}/R{reu.get('numOfficiel')}/C{c.get('numOrdre')}/combinaisons?specialisation=INTERNET") or {}
+    sg = next((x for x in cb.get("combinaisons", []) if x.get("pariType") == "E_SIMPLE_GAGNANT"), {})
+    masse = round((sg.get("totalEnjeu") or 0) / 100)
     parts = []
     for p in data.get("participants", []):
         if p.get("statut") == "NON_PARTANT": continue
         jk, ent, ch = nom(p.get("driver")), nom(p.get("entraineur")), (p.get("nom") or "").upper()
         cote = (p.get("dernierRapportDirect") or {}).get("rapport") or (p.get("dernierRapportReference") or {}).get("rapport")
+        cote_ref = (p.get("dernierRapportReference") or {}).get("rapport")
+        pv = PREV.get((c.get("numOrdre"), p.get("numPmu"))) or {}
         passe = sorted((m for m in rows_h if m["ch"] == ch), key=lambda m: m["date"])[-6:]
-        parts.append(dict(n=p.get("numPmu"), nom=ch, cote=cote, jk=jk, en=ent, musique=p.get("musique") or "",
+        parts.append(dict(n=p.get("numPmu"), nom=ch, cote=cote, cote_ref=cote_ref, cote_prec=pv.get("cote"),
+                          cote_ouv=pv.get("cote_ouv") or pv.get("cote") or cote, jk=jk, en=ent, musique=p.get("musique") or "",
                           hb=hb.get(jk), hb_brut=hb_b.get(jk), fb=fb.get(jk), fb_brut=fb_b.get(jk),
                           g=(g or {}).get(jk) if g is not None else None, h=h.get(jk),
                           ici=[m["a"] or 0 for m in passe], en_ici=en.get(ent)))
@@ -117,12 +133,11 @@ for c in reu.get("courses", []):
     hd = c.get("heureDepart")
     courses.append(dict(num=c.get("numOrdre"), nom=c.get("libelle"), heure=datetime.fromtimestamp(hd / 1000, tz=ZoneInfo("Europe/Paris")).strftime("%Hh%M") if hd else "?",
                         disc=DISC_LIB[disc], plat=est_plat, dist=dist, cat=(c.get("categorieParticularite") or "").replace("_", " ").lower(),
-                        alloc=c.get("montantPrix"), bandes=dict(h=BH, f=BF, g=JD["belles_par_distance"]["bande"] if est_plat else None),
+                        alloc=c.get("montantPrix"), masse=masse, bandes=dict(h=BH, f=BF, g=JD["belles_par_distance"]["bande"] if est_plat else None),
                         groupe_dispo=bool(g), partants=parts))
 
-doc = dict(date=jour_iso, hippodrome=hip_cible, releve=datetime.now().strftime("%Y-%m-%d %H:%M"),
+doc = dict(date=jour_iso, hippodrome=hip_cible, releve=datetime.now().strftime("%Y-%m-%d %H:%M"), releve_prec=PREV_T,
            cotes_publiees=any(p["cote"] for c in courses for p in c["partants"]),
            histo=dict(plat=len(plat), obstacle=len(obst)), courses=courses)
-dest = f"data/jour/{jour_iso}_{hip_cible.lower().replace(' ', '')}_lecture.json"
 json.dump(doc, open(dest, "w", encoding="utf-8"), ensure_ascii=False, indent=0)
 print(dest, "·", len(courses), "courses ·", "cotes publiées" if doc["cotes_publiees"] else "pas encore de cotes")

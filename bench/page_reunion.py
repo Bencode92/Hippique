@@ -26,6 +26,20 @@ def chip(d, label, brut=None):
     return (f'<span class="chip {cls}"><b>{label}</b> {rang(d["r"])}<i>/{d["tot"]}</i> · {d["tx"]} % '
             f'<span class="rp {rpc}">rp {fr(d["rp"])}</span></span>')
 
+def rel(a, b):
+    return (a / b - 1) if a and b else None
+
+def fleche(p, base="cote_ref", seuil=0.10):
+    r = rel(p["cote"], p.get(base))
+    if r is None or abs(r) < seuil: return ""
+    cls = "baisse" if r < 0 else "hausse"
+    return f' <span class="drift {cls}" title="{fr(p.get(base))} → {fr(p["cote"])}">{"↘" if r < 0 else "↗"}{abs(round(100 * r))} %</span>'
+
+def fiab(masse):
+    if masse < 10000: return ("mince", f"pool gagnant {masse:,} € : trop mince, dérives peu fiables".replace(",", " "))
+    if masse < 30000: return ("moyen", f"pool gagnant {masse:,} € : dérives à confirmer".replace(",", " "))
+    return ("ok", f"pool gagnant {masse:,} € : dérives fiables".replace(",", " "))
+
 def cell(d):
     if not d: return '<span class="mute">–</span>'
     return f'<b>{rang(d["r"])}</b><i>/{d["tot"]}</i> · {d["tx"]} %'
@@ -60,7 +74,7 @@ for c in doc["courses"]:
         tds = [f'<td class="r">{r}</td>', f'<td>{e(p["jk"])} <span class="mute">n°{p["n"]}</span></td>',
                f'<td class="g">{cell(p["hb"])}</td>', f'<td class="g">{cell(p["fb"])}</td>']
         if gcol: tds.append(f'<td class="g">{cell(p["g"]) if c["groupe_dispo"] else "<span class=mute>–</span>"}</td>')
-        tds.append(f'<td class="c">{cote_txt(p["cote"])}{f" <i>({p[chr(114)+chr(99)]})</i>" if p.get("rc") else ""}</td>')
+        tds.append(f'<td class="c">{cote_txt(p["cote"])}{fleche(p)}{f" <i>({p[chr(114)+chr(99)]})</i>" if p.get("rc") else ""}</td>')
         trs.append(f"<tr{flag}>{''.join(tds)}</tr>")
     head = ["#", "Jockey", f"{HIP} ±{c['bandes']['h']}", f"France ±{c['bandes']['f']}"]
     if gcol: head.append(f"Groupes ±{c['bandes']['g']}")
@@ -86,6 +100,29 @@ for c in doc["courses"]:
                      (f"son jockey est {rang(fav['rj'])} sur {len(cl)} classés de la course." if fav.get("rj") else f"jockey avec trop peu de montes à {HIP} sur cette longueur."))
         sous = [p for p in cl if p["rcc"] - p["rj"] >= 3]
         if sous: notes.append("Jockeys mieux classés que leur cote : " + ", ".join(f"{e(p['jk'])} (n°{p['n']}, {cote_txt(p['cote'])})" for p in sous) + ".")
+    derive = ""
+    if cotes:
+        fc, ft = fiab(c.get("masse") or 0)
+        mv = []
+        for p in ps:
+            r = rel(p["cote"], p.get("cote_ref"))
+            if r is not None and abs(r) >= 0.20 and (p["cote"] <= 30 or (p.get("cote_ref") or 99) <= 30):
+                mv.append((r, p))
+        mv = sorted(sorted(mv, key=lambda t: -abs(t[0]))[:5], key=lambda t: t[0])
+        rec = []
+        for p in ps:
+            r = rel(p["cote"], p.get("cote_prec"))
+            if r is not None and abs(r) >= 0.15 and p["cote"] <= 30: rec.append((r, p))
+        rec = sorted(sorted(rec, key=lambda t: -abs(t[0]))[:5], key=lambda t: t[0])
+        def li(r, p, base):
+            sens = "joué (l'argent arrive)" if r < 0 else "délaissé"
+            return (f'<li class="{"baisse" if r < 0 else "hausse"}"><b>n°{p["n"]} {e(p["nom"])}</b> {fr(p[base])} → {fr(p["cote"])} '
+                    f'<span class="drift {"baisse" if r < 0 else "hausse"}">{"↘" if r < 0 else "↗"}{abs(round(100 * r))} %</span> <span class="mute">{sens}</span></li>')
+        corps = ""
+        if mv: corps += '<p class="dt">Depuis la cote de référence du matin</p><ul>' + "".join(li(r, p, "cote_ref") for r, p in mv) + "</ul>"
+        if rec and doc.get("releve_prec"): corps += f'<p class="dt">Depuis mon relevé de {doc["releve_prec"][11:16].replace(":", "h")}</p><ul>' + "".join(li(r, p, "cote_prec") for r, p in rec) + "</ul>"
+        if not corps: corps = '<p class="mute">Aucune dérive de 20 % ou plus.</p>'
+        derive = f'<div class="derive {fc}"><h3>Dérives de cote <span class="fiab">{e(ft)}</span></h3>{corps}</div>'
     gagne = [p for p in ps if 1 in p["ici"]]
     if gagne: notes.append(f"Déjà gagnant à {HIP} : " + ", ".join(f"n°{p['n']} {e(p['nom'])}" for p in gagne) + ".")
     cards = []
@@ -97,7 +134,7 @@ for c in doc["courses"]:
         if gcol and c["groupe_dispo"]: chips += chip(p["g"], "Groupes · longueur")
         chips += chip(p["h"], f"{HIP} · tout")
         cards.append(f'''<li class="cheval">
-  <div class="tete"><span class="n">{p["n"]}</span><span class="nom">{e(p["nom"])}</span><span class="cote">{cote_txt(p["cote"])}</span></div>
+  <div class="tete"><span class="n">{p["n"]}</span><span class="nom">{e(p["nom"])}</span><span class="cote">{cote_txt(p["cote"])}</span>{fleche(p)}</div>
   <div class="jk">{e(p["jk"])}</div>
   <div class="chips">{chips}</div>
   <dl>
@@ -111,6 +148,7 @@ for c in doc["courses"]:
   <header><span class="heure">{e(c["heure"])}</span><h2><span class="cn">C{c["num"]}</span> {e(c["nom"])}</h2>
   <p class="meta">{e(c["disc"])} · {c["dist"]} m · {len(ps)} partants · {e(c["cat"])}{alloc}</p></header>
   <div class="lecture">{"".join(f"<p>{n}</p>" for n in notes)}</div>
+  {derive}
   {jtab}
   <ol class="chevaux">{"".join(cards)}</ol>
 </section>''')
@@ -124,7 +162,7 @@ for c in doc["courses"]:
     if fav:
         jkr = f'{rang(fav["fb"]["r"])} France' if fav["fb"] else "jockey non classé"
         cheval = f'<b class="pick">n°{fav["n"]} {e(fav["nom"])}</b><span class="mute small2">{e(fav["jk"])} · {jkr}</span>'
-        cote = cote_txt(fav["cote"])
+        cote = cote_txt(fav["cote"]) + fleche(fav)
     else:
         cheval = '<b class="pick">le favori</b><span class="mute small2">la plus petite cote au moment de jouer</span>'
         cote = "–"
@@ -152,6 +190,7 @@ out = f'''<title>{e(titre)}</title>
     <span><b>Tableau jockeys</b> : les jockeys de la course classés <b>à {e(HIP)} sur la longueur</b> (même discipline), puis leur rang <b>France</b> sur la longueur{", et en <b>courses de groupe</b> sur la longueur" if any(c["plat"] for c in doc["courses"]) else ""}. Rang = taux de victoire parmi tous les jockeys classés.</span>
     <span>En plat, la colonne France est exactement la pastille de la carte (« 5e · 2000m ») et la colonne Groupes la pastille 🏆.</span>
     <span><b class="g">Vert</b> = jockey mieux classé que sa cote d'au moins 3 places. <b class="b">Rouge</b> = cote nettement meilleure que son jockey. <b>rp</b> (réel/promis) = victoires ÷ ce que ses cotes annonçaient.</span>
+    <span><b>Dérives</b> : ↘ cote en baisse (le cheval est joué), ↗ en hausse (délaissé), en % de la cote de référence du matin. Une dérive ne compte que si le pool gagnant est assez gros : sous 10 000 € misés, quelques paris suffisent à déplacer une cote.</span>
     <span><b>Ici</b> : 6 dernières places du cheval sur l'hippodrome (0 = non classé).</span>
     <span>Historique PMU depuis 2022 en plat, 2024 en obstacle. Une lecture du passé, pas un conseil de pari : la cote intègre déjà la réputation des jockeys.</span>
   </div>
