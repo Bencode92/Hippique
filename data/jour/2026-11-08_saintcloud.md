@@ -101,16 +101,16 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | COSY BEAR | 3,6 | 4,3 | 3,80 | -5,3 % | M.GUYON | 4/22/41/38 |
-| 10 | LAMELOISE | 4,5 | 6,5 | 5,16 | -12,7 % | C.LECOEUVRE | 13/9/14/123 |
-| 5 | WIZARD OF LIPS | 5,5 | 5 | 5,83 | -5,7 % | H.BOUTIN | 17/956/3793/5647 |
-| 2 | SHANOUR | 5,6 | 5 | 6,59 | -15,1 % | M.BARZALONA 3e | 1/24/2/1 |
-| 8 | VANTA | 10 | 12 | 12,12 | -17,5 % | PC.BOUDOT | 7/75/161/– |
-| 6 | MARIA APOLLONIA | 21 | 9,9 | 28,28 | -25,7 % | H.BESNIER | 11/4/507/829 |
-| 7 | STEALITWITHAKISS | 22 | 15 | 30,46 | -27,8 % | M.FAVRIAUX | 54/3/3264/328 |
-| 1 | TARDAR | 25 | 17 | 33,67 | -25,7 % | M.GRANDIN | 3/73/213/1484 |
-| 4 | PORTAL | 33 | 35 | 44,04 | -25,1 % | P.FORET | 215/210/79/499 |
-| 9 | MARYLENE DU SERRE | 45 | 43 | 68,19 | -34,0 % | S.PASQUIER | 20/46/487/360 |
+| 3 | COSY BEAR | 3,6 | 3,8 | 3,80 | -5,3 % | M.GUYON | 4/22/41/38 |
+| 10 | LAMELOISE | 4,5 | 4,5 | 5,16 | -12,7 % | C.LECOEUVRE | 13/9/14/123 |
+| 5 | WIZARD OF LIPS | 5,5 | 5,5 | 5,83 | -5,7 % | H.BOUTIN | 17/956/3793/5647 |
+| 2 | SHANOUR | 5,6 | 4,5 | 6,59 | -15,1 % | M.BARZALONA 3e | 1/24/2/1 |
+| 8 | VANTA | 10 | 10 | 12,12 | -17,5 % | PC.BOUDOT | 7/75/161/– |
+| 6 | MARIA APOLLONIA | 21 | 28 | 28,28 | -25,7 % | H.BESNIER | 11/4/507/829 |
+| 7 | STEALITWITHAKISS | 22 | 25 | 30,46 | -27,8 % | M.FAVRIAUX | 54/3/3264/328 |
+| 1 | TARDAR | 25 | 27 | 33,67 | -25,7 % | M.GRANDIN | 3/73/213/1484 |
+| 4 | PORTAL | 33 | 48 | 44,04 | -25,1 % | P.FORET | 215/210/79/499 |
+| 9 | MARYLENE DU SERRE | 45 | 36 | 68,19 | -34,0 % | S.PASQUIER | 20/46/487/360 |
 
 ### 7. PRIX BUCKSKIN
 
@@ -118,21 +118,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | GRAND ART | 3,6 | 4,8 | 3,98 | -9,6 % | C.SOUMILLON | 8/62/15/25 |
-| 5 | INSEPARABLE | 6,2 | 10 | 6,07 | **+2,2 %** | H.BOUTIN | 17/102/1816/129 |
-| 6 | ROOSTER CROWING | 7,5 | 18 | 7,24 | **+3,6 %** | PC.BOUDOT | 7/75/96/442 |
-| 14 | ATHINEOS | 9,5 | 3,7 | 11,22 | -15,3 % | M.GRANDIN | 3/121/641/955 |
-| 10 | BRIGHTON SPORT | 9,8 | 6,7 | 10,66 | -8,1 % | A.MADAMET | 12/166/452/1538 |
-| 15 | BARBADIN | 13 | 15 | 16,62 | -21,8 % | S.PASQUIER | 20/84/1/– |
-| 4 | SUMMER WAY | 17 | 10 | 20,25 | -16,0 % | C.PACAUT | 44/125/1366/1239 |
-| 9 | BOUSSANT | 19 | 33 | 24,14 | -21,3 % | A.HAMELIN | 23/24/70/657 |
-| 13 | ILUMINE PRECIEUSE | 27 | 20 | 37,82 | -28,6 % | F.VALLE SKAR | 32/212/263/227 |
-| 3 | EXTRAPOL | 28 | 81 | 37,65 | -25,6 % | T.PICCONE 2e | 9/42/1/1314 |
-| 7 | VIANETA | 33 | 39 | 42,48 | -22,3 % | E.HARDOUIN | 30/170/253/393 |
-| 12 | M'GLAMOUR | 36 | 46 | 54,83 | -34,3 % | B.FLANDRIN | 103/224/247/926 |
-| 8 | KING KARA | 50 | 27 | 71,60 | -30,2 % | H.LEBOUC | 22/116/1666/1891 |
-| 1 | VINGT SEPT | 58 | 48 | 92,39 | -37,2 % | J.CLAUDIC | 40/26/814/903 |
-| 11 | ALMACADO GREE | 73 | 108 | 107,29 | -32,0 % | E.MUNTWYLER | 186/87/369/– |
+| 2 | GRAND ART | 3,6 | 3,8 | 3,98 | -9,6 % | C.SOUMILLON | 8/62/15/25 |
+| 5 | INSEPARABLE | 6,2 | 5,9 | 6,07 | **+2,2 %** | H.BOUTIN | 17/102/1816/129 |
+| 6 | ROOSTER CROWING | 7,5 | 7,7 | 7,24 | **+3,6 %** | PC.BOUDOT | 7/75/96/442 |
+| 14 | ATHINEOS | 9,5 | 11 | 11,22 | -15,3 % | M.GRANDIN | 3/121/641/955 |
+| 10 | BRIGHTON SPORT | 9,8 | 8,8 | 11,14 | -12,0 % | A.MADAMET | 12/166/452/1538 |
+| 15 | BARBADIN | 13 | 15 | 18,18 | -28,5 % | S.PASQUIER | 20/84/1/– |
+| 4 | SUMMER WAY | 17 | 18 | 20,25 | -16,0 % | C.PACAUT | 44/125/1366/1239 |
+| 9 | BOUSSANT | 19 | 20 | 26,45 | -28,2 % | A.HAMELIN | 23/24/70/657 |
+| 13 | ILUMINE PRECIEUSE | 27 | 16 | 37,82 | -28,6 % | F.VALLE SKAR | 32/212/263/227 |
+| 3 | EXTRAPOL | 28 | 30 | 37,65 | -25,6 % | T.PICCONE 2e | 9/42/1/1314 |
+| 7 | VIANETA | 33 | 36 | 46,62 | -29,2 % | E.HARDOUIN | 30/170/253/393 |
+| 12 | M'GLAMOUR | 36 | 36 | 54,83 | -34,3 % | B.FLANDRIN | 103/224/247/926 |
+| 8 | KING KARA | 50 | 45 | 68,28 | -26,8 % | H.LEBOUC | 22/116/1666/1891 |
+| 1 | VINGT SEPT | 58 | 68 | 88,09 | -34,2 % | J.CLAUDIC | 40/26/814/903 |
+| 11 | ALMACADO GREE | 73 | 49 | 117,90 | -38,1 % | E.MUNTWYLER | 186/87/369/– |
 
 ### 8. PRIX SOLITUDE
 
@@ -140,17 +140,17 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 14 | RUMPUMPEL | 2,9 | 1,9 | 3,11 | -6,8 % | M.BARZALONA | 1/1/163/724 |
-| 7 | LEGACY LINK | 3,9 | 3,9 | 3,93 | -0,8 % | C.KEANE | 150/16/3199/19 |
-| 3 | ECIJA | 11 | 11 | 14,72 | -25,3 % | S.PASQUIER | 20/40/27/244 |
-| 4 | AURORA BEAU REAL | 11 | 18 | 12,59 | -12,6 % | C.SOUMILLON 3e | 8/36/98/165 |
-| 12 | GLYFADA | 12 | 44 | 13,93 | -13,9 % | G.RYAN | 365/208/1566/– |
-| 9 | VANIR | 15 | 40 | 18,08 | -17,0 % | B.COEN | 278/350/3787/2046 |
-| 5 | HELLO AVENUE | 16 | 25 | 19,47 | -17,8 % | A.MADAMET | 12/62/15/25 |
-| 10 | BLANCHE DE MEDICIS | 22 | 51 | 28,16 | -21,9 % | PC.BOUDOT | 7/3/675/48 |
-| 2 | YMEEELIH | 35 | 30 | 52,30 | -33,1 % | A.LEMAITRE | 10/122/238/107 |
-| 8 | MUSIC'S GIRL | 45 | 39 | 70,82 | -36,5 % | A.CRASTUS | 15/11/3369/1083 |
-| 1 | SODA ZABEEL | 48 | 71 | 72,55 | -33,8 % | M.GRANDIN | 3/122/400/107 |
-| 6 | CLEA CHOPE | 49 | 45 | 75,78 | -35,3 % | H.BESNIER | 11/4/6/12 |
-| 13 | LAND OF LIBERTY | 61 | 39 | 83,17 | -26,7 % | T.BACHELOT | 16/65/4/– |
-| 11 | ARCTIC BAY | 87 | 98 | 115,09 | -24,4 % | R.THOMAS | 68/12/90/2492 |
+| 14 | RUMPUMPEL | 2,9 | 2,4 | 3,22 | -9,9 % | M.BARZALONA | 1/1/163/724 |
+| 7 | LEGACY LINK | 3,9 | 4,3 | 4,22 | -7,6 % | C.KEANE | 150/16/3199/19 |
+| 4 | AURORA BEAU REAL | 11 | 14 | 12,59 | -12,6 % | C.SOUMILLON 3e | 8/36/98/165 |
+| 3 | ECIJA | 11 | 13 | 14,72 | -25,3 % | S.PASQUIER | 20/40/27/244 |
+| 12 | GLYFADA | 12 | 11 | 13,93 | -13,9 % | G.RYAN | 365/208/1566/– |
+| 9 | VANIR | 15 | 13 | 18,08 | -17,0 % | B.COEN | 278/350/3787/2046 |
+| 5 | HELLO AVENUE | 16 | 18 | 19,47 | -17,8 % | A.MADAMET | 12/62/15/25 |
+| 10 | BLANCHE DE MEDICIS | 22 | 22 | 28,16 | -21,9 % | PC.BOUDOT | 7/3/675/48 |
+| 2 | YMEEELIH | 35 | 38 | 52,30 | -33,1 % | A.LEMAITRE | 10/122/238/107 |
+| 8 | MUSIC'S GIRL | 45 | 62 | 74,27 | -39,4 % | A.CRASTUS | 15/11/3369/1083 |
+| 1 | SODA ZABEEL | 48 | 61 | 75,99 | -36,8 % | M.GRANDIN | 3/122/400/107 |
+| 6 | CLEA CHOPE | 49 | 63 | 75,78 | -35,3 % | H.BESNIER | 11/4/6/12 |
+| 13 | LAND OF LIBERTY | 61 | 80 | 83,17 | -26,7 % | T.BACHELOT | 16/65/4/– |
+| 11 | ARCTIC BAY | 87 | 107 | 120,58 | -27,8 % | R.THOMAS | 68/12/90/2492 |

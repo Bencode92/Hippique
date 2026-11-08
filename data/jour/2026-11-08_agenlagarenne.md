@@ -66,38 +66,38 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX CATHULUS
 
-*15h40 · haies · 3600 m · 5 partants · cotes de l'extraction*
+*15h49 · haies · 3600 m · 5 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 5 | BIENBATHY | 2,4 | L.NOMIS | 374/–/3660/– |
-| 2 | MON GETAWAY | 3,5 | L.COLSON | 373/653/–/4482 |
-| 4 | BLOUZEUR | 5,3 | G.FRADELIN | 188/351/2651/870 |
-| 1 | POP LIGHT | 6,9 | D.GALLON | 435/241/713/482 |
-| 3 | HELSINKI NOLIMIT | 9,2 | Z.DONNAIS | –/–/2038/– |
+| 5 | BIENBATHY | 2,2 | L.NOMIS | 374/–/3660/– |
+| 2 | MON GETAWAY | 3,1 | L.COLSON | 373/653/–/4482 |
+| 1 | POP LIGHT | 6,4 | D.GALLON | 435/241/713/482 |
+| 3 | HELSINKI NOLIMIT | 8,5 | Z.DONNAIS | –/–/2038/– |
+| 4 | BLOUZEUR | 11 | G.FRADELIN | 188/351/2651/870 |
 
 ### 6. PRIX ARMAND BASTOUL
 
-*16h10 · haies · 3600 m · 5 partants · cotes de l'extraction*
+*16h22 · haies · 3600 m · 5 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 4 | MAITRE D'OEUVRE | 2 | K.DUBOURG | 369/473/52/67 |
-| 1 | MATADOR WOOD | 3,8 | E.LABAISSE | 210/653/3162/2037 |
-| 2 | JOLI SHAW | 4,4 | D.GALLON | 435/241/4213/5094 |
-| 5 | TERESITA | 5,9 | L.NOMIS | 374/244/1537/2599 |
-| 3 | MARCELLINO AA | – | G.JAYR | –/845/3826/5101 |
+| 4 | MAITRE D'OEUVRE | 2,1 | K.DUBOURG | 369/473/52/67 |
+| 5 | TERESITA | 3,5 | L.NOMIS | 374/244/1537/2599 |
+| 1 | MATADOR WOOD | 4,3 | E.LABAISSE | 210/653/3162/2037 |
+| 2 | JOLI SHAW | 9 | D.GALLON | 435/241/4213/5094 |
+| 3 | MARCELLINO AA | 21 | G.JAYR | –/845/3826/5101 |
 
 ### 7. PRIX NICOLAS BOICHOT
 
-*16h40 · cross · 4900 m · 7 partants · cotes de l'extraction*
+*16h57 · cross · 4900 m · 7 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | LORA DE LA BRUNIE AA | 2,7 | K.DUBOURG | 369/473/306/1790 |
-| 1 | NIKOS DE CANDALE AA | 4,2 | E.LABAISSE | 210/806/595/4910 |
-| 3 | SHIVA DE CANDALE AA | 4,6 | B.FOUCHET | 491/510/595/1523 |
-| 5 | MAGIC DE LA RUE AA | 5,8 | T.FIGUEIRA | 398/211/3794/3417 |
-| 7 | NEVIS DE CANDALE AA | 8 | L.COLSON | 373/806/595/5051 |
-| 4 | KASTLE DE LAGARDE AA | 88 | G.FRADELIN | 188/806/870/4703 |
-| 6 | IREMMA AA | 88 | G.JAYR | –/845/3826/5101 |
+| 2 | LORA DE LA BRUNIE AA | 2,1 | K.DUBOURG | 369/473/306/1790 |
+| 7 | NEVIS DE CANDALE AA | 3,6 | L.COLSON | 373/806/595/5051 |
+| 1 | NIKOS DE CANDALE AA | 8,1 | E.LABAISSE | 210/806/595/4910 |
+| 5 | MAGIC DE LA RUE AA | 8,9 | T.FIGUEIRA | 398/211/3794/3417 |
+| 3 | SHIVA DE CANDALE AA | 9,5 | B.FOUCHET | 491/510/595/1523 |
+| 6 | IREMMA AA | 41 | G.JAYR | –/845/3826/5101 |
+| 4 | KASTLE DE LAGARDE AA | 44 | G.FRADELIN | 188/806/870/4703 |
