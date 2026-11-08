@@ -74,11 +74,12 @@ for c in doc["courses"]:
         tds = [f'<td class="r">{r}</td>', f'<td>{e(p["jk"])} <span class="mute">n°{p["n"]}</span></td>',
                f'<td class="g">{cell(p["hb"])}</td>', f'<td class="g">{cell(p["fb"])}</td>']
         if gcol: tds.append(f'<td class="g">{cell(p["g"]) if c["groupe_dispo"] else "<span class=mute>–</span>"}</td>')
+        tds.append(f'<td class="c ref">{cote_txt(p.get("cote_ref"))}</td>')
         tds.append(f'<td class="c">{cote_txt(p["cote"])}{fleche(p)}{f" <i>({p[chr(114)+chr(99)]})</i>" if p.get("rc") else ""}</td>')
         trs.append(f"<tr{flag}>{''.join(tds)}</tr>")
     head = ["#", "Jockey", f"{HIP} ±{c['bandes']['h']}", f"France ±{c['bandes']['f']}"]
     if gcol: head.append(f"Groupes ±{c['bandes']['g']}")
-    head.append("Cote (rg)")
+    head += ["Cote départ", "Actuelle (rg)"]
     groupe_note = "" if not gcol or c["groupe_dispo"] else f'<p class="mute small">Pas de classement « groupes » à {c["dist"]} m : trop peu de courses de groupe sur cette longueur.</p>'
     jtab = (f'<div class="jtab"><h3>Jockeys sur {c["dist"]} m <span class="mute">· {e(c["disc"])}</span></h3>'
             f'<div class="scroll"><table><thead><tr>{"".join(f"<th>{e(h)}</th>" for h in head)}</tr></thead>'
@@ -134,7 +135,7 @@ for c in doc["courses"]:
         if gcol and c["groupe_dispo"]: chips += chip(p["g"], "Groupes · longueur")
         chips += chip(p["h"], f"{HIP} · tout")
         cards.append(f'''<li class="cheval">
-  <div class="tete"><span class="n">{p["n"]}</span><span class="nom">{e(p["nom"])}</span><span class="cote">{cote_txt(p["cote"])}</span>{fleche(p)}</div>
+  <div class="tete"><span class="n">{p["n"]}</span><span class="nom">{e(p["nom"])}</span><span class="cote"><span class="cref">{cote_txt(p.get("cote_ref"))} →</span> {cote_txt(p["cote"])}</span>{fleche(p)}</div>
   <div class="jk">{e(p["jk"])}</div>
   <div class="chips">{chips}</div>
   <dl>
@@ -162,16 +163,17 @@ for c in doc["courses"]:
     if fav:
         jkr = f'{rang(fav["fb"]["r"])} France' if fav["fb"] else "jockey non classé"
         cheval = f'<b class="pick">n°{fav["n"]} {e(fav["nom"])}</b><span class="mute small2">{e(fav["jk"])} · {jkr}</span>'
+        cote_d = cote_txt(fav.get("cote_ref"))
         cote = cote_txt(fav["cote"]) + fleche(fav)
     else:
         cheval = '<b class="pick">le favori</b><span class="mute small2">la plus petite cote au moment de jouer</span>'
-        cote = "–"
+        cote = "–"; cote_d = "–"
     lignes.append(f'<tr{" class=regle" if regle else ""}><td class="h">{e(c["heure"])}</td><td class="r">C{c["num"]}</td>'
-                  f'<td class="ch">{cheval}{"<span class=tag>règle 14+</span>" if regle else ""}</td><td class="c">{cote}</td><td class="c">{MISE} €</td></tr>')
+                  f'<td class="ch">{cheval}{"<span class=tag>règle 14+</span>" if regle else ""}</td><td class="c ref">{cote_d}</td><td class="c">{cote}</td><td class="c">{MISE} €</td></tr>')
 jeu = f'''<section class="jeu">
   <h2>À jouer</h2>
   <p class="consigne"><b>Simple gagnant, {MISE} € par course, sur le favori.</b> {"Les noms s'affichent dès que le PMU publie les cotes ; d'ici là, jouer le cheval à la plus petite cote dans l'appli au moment du pari." if not cotes else f"Favoris d'après les cotes PMU relevées à {releve} : si un autre cheval est passé favori au moment de jouer, garder celui de la fiche."}</p>
-  <div class="scroll"><table><thead><tr><th>Heure</th><th>Course</th><th>Cheval</th><th>Cote</th><th>Mise</th></tr></thead><tbody>{"".join(lignes)}</tbody></table></div>
+  <div class="scroll"><table><thead><tr><th>Heure</th><th>Course</th><th>Cheval</th><th>Cote départ</th><th>Actuelle</th><th>Mise</th></tr></thead><tbody>{"".join(lignes)}</tbody></table></div>
   <p class="mute small">Total : {MISE * len(doc["courses"])} € sur {len(doc["courses"])} courses.{" Les courses marquées « règle 14+ » (14 partants ou plus) sont celles de notre règle en test ; les autres sont jouées sur le favori sans avantage mesuré (en moyenne le favori rend environ −14 %)." if REGLE else ""}</p>
 </section>'''
 nav = "".join(f'<a href="#c{c["num"]}">C{c["num"]}</a>' for c in doc["courses"])
@@ -190,7 +192,7 @@ out = f'''<title>{e(titre)}</title>
     <span><b>Tableau jockeys</b> : les jockeys de la course classés <b>à {e(HIP)} sur la longueur</b> (même discipline), puis leur rang <b>France</b> sur la longueur{", et en <b>courses de groupe</b> sur la longueur" if any(c["plat"] for c in doc["courses"]) else ""}. Rang = taux de victoire parmi tous les jockeys classés.</span>
     <span>En plat, la colonne France est exactement la pastille de la carte (« 5e · 2000m ») et la colonne Groupes la pastille 🏆.</span>
     <span><b class="g">Vert</b> = jockey mieux classé que sa cote d'au moins 3 places. <b class="b">Rouge</b> = cote nettement meilleure que son jockey. <b>rp</b> (réel/promis) = victoires ÷ ce que ses cotes annonçaient.</span>
-    <span><b>Dérives</b> : ↘ cote en baisse (le cheval est joué), ↗ en hausse (délaissé), en % de la cote de référence du matin. Une dérive ne compte que si le pool gagnant est assez gros : sous 5 000 € misés, quelques paris suffisent à déplacer une cote.</span>
+    <span><b>Cote départ</b> = cote de référence du PMU le matin, à gauche ; <b>Actuelle</b> = dernier relevé, à droite. <b>Dérives</b> : ↘ cote en baisse (le cheval est joué), ↗ en hausse (délaissé), en % de la cote de référence du matin. Une dérive ne compte que si le pool gagnant est assez gros : sous 5 000 € misés, quelques paris suffisent à déplacer une cote.</span>
     <span><b>Ici</b> : 6 dernières places du cheval sur l'hippodrome (0 = non classé).</span>
     <span>Historique PMU depuis 2022 en plat, 2024 en obstacle. Une lecture du passé, pas un conseil de pari : la cote intègre déjà la réputation des jockeys.</span>
   </div>
