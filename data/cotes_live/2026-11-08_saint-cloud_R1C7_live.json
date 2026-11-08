@@ -4,143 +4,143 @@
   "reunion": 1,
   "heure_depart": 1794151500000,
   "distance": 3100,
-  "scraped_at": "2026-11-08T16:24:10.617068+01:00",
-  "minutes_avant_depart": 1,
+  "scraped_at": "2026-11-08T16:26:50.731925+01:00",
+  "minutes_avant_depart": -2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "VINGT SEPT",
-      "cote_live": 58.0,
+      "cote_live": 68.0,
       "cote_reference": 39.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151570000
     },
     {
       "numPmu": 2,
       "nom": "GRAND ART",
-      "cote_live": 3.4,
+      "cote_live": 3.8,
       "cote_reference": 5.2,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151570000
     },
     {
       "numPmu": 3,
       "nom": "EXTRAPOL",
-      "cote_live": 49.0,
+      "cote_live": 30.0,
       "cote_reference": 60.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151570000
     },
     {
       "numPmu": 4,
       "nom": "SUMMER WAY",
-      "cote_live": 16.0,
+      "cote_live": 18.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151570000
     },
     {
       "numPmu": 5,
       "nom": "INSEPARABLE",
-      "cote_live": 5.5,
+      "cote_live": 5.9,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151570000
     },
     {
       "numPmu": 6,
       "nom": "ROOSTER CROWING",
-      "cote_live": 7.5,
+      "cote_live": 7.7,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151570000
     },
     {
       "numPmu": 7,
       "nom": "VIANETA",
-      "cote_live": 32.0,
+      "cote_live": 36.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151570000
     },
     {
       "numPmu": 8,
       "nom": "KING KARA",
-      "cote_live": 47.0,
+      "cote_live": 45.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151570000
     },
     {
       "numPmu": 9,
       "nom": "BOUSSANT",
-      "cote_live": 19.0,
+      "cote_live": 20.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151570000
     },
     {
       "numPmu": 10,
       "nom": "BRIGHTON SPORT",
-      "cote_live": 12.0,
+      "cote_live": 8.8,
       "cote_reference": 8.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151570000
     },
     {
       "numPmu": 11,
       "nom": "ALMACADO GREE",
-      "cote_live": 75.0,
+      "cote_live": 49.0,
       "cote_reference": 70.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151570000
     },
     {
       "numPmu": 12,
       "nom": "M'GLAMOUR",
-      "cote_live": 37.0,
+      "cote_live": 36.0,
       "cote_reference": 41.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151570000
     },
     {
       "numPmu": 13,
       "nom": "ILUMINE PRECIEUSE",
-      "cote_live": 26.0,
+      "cote_live": 16.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151570000
     },
     {
       "numPmu": 14,
       "nom": "ATHINEOS",
-      "cote_live": 9.4,
+      "cote_live": 11.0,
       "cote_reference": 4.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151570000
     },
     {
       "numPmu": 15,
       "nom": "BARBADIN",
-      "cote_live": 13.0,
+      "cote_live": 15.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151570000
     }
   ],
   "hippodrome": "SAINT-CLOUD",
@@ -437,6 +437,90 @@
         "13": 26.0,
         "14": 9.4,
         "15": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-08T16:24:50.509538+01:00",
+      "minutes_avant_depart": 0.15851906666666665,
+      "cotes": {
+        "1": 58.0,
+        "2": 3.6,
+        "3": 28.0,
+        "4": 17.0,
+        "5": 6.2,
+        "6": 7.5,
+        "7": 33.0,
+        "8": 50.0,
+        "9": 19.0,
+        "10": 9.8,
+        "11": 73.0,
+        "12": 36.0,
+        "13": 27.0,
+        "14": 9.5,
+        "15": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-08T16:25:31.181989+01:00",
+      "minutes_avant_depart": -0.51569495,
+      "cotes": {
+        "1": 67.0,
+        "2": 3.8,
+        "3": 27.0,
+        "4": 17.0,
+        "5": 6.3,
+        "6": 7.8,
+        "7": 35.0,
+        "8": 44.0,
+        "9": 20.0,
+        "10": 8.8,
+        "11": 45.0,
+        "12": 35.0,
+        "13": 16.0,
+        "14": 10.0,
+        "15": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-08T16:26:10.689727+01:00",
+      "minutes_avant_depart": -1.1748193333333332,
+      "cotes": {
+        "1": 67.0,
+        "2": 3.7,
+        "3": 29.0,
+        "4": 18.0,
+        "5": 6.0,
+        "6": 7.7,
+        "7": 36.0,
+        "8": 45.0,
+        "9": 20.0,
+        "10": 8.8,
+        "11": 48.0,
+        "12": 36.0,
+        "13": 16.0,
+        "14": 11.0,
+        "15": 15.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-08T16:26:50.731925+01:00",
+      "minutes_avant_depart": -1.8414873333333333,
+      "cotes": {
+        "1": 68.0,
+        "2": 3.8,
+        "3": 30.0,
+        "4": 18.0,
+        "5": 5.9,
+        "6": 7.7,
+        "7": 36.0,
+        "8": 45.0,
+        "9": 20.0,
+        "10": 8.8,
+        "11": 49.0,
+        "12": 36.0,
+        "13": 16.0,
+        "14": 11.0,
+        "15": 15.0
       }
     }
   ]

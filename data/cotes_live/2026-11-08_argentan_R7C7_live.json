@@ -4,62 +4,62 @@
   "reunion": 7,
   "heure_depart": 1794151800000,
   "distance": 4200,
-  "scraped_at": "2026-11-08T16:24:10.798750+01:00",
-  "minutes_avant_depart": 6,
+  "scraped_at": "2026-11-08T16:26:50.974819+01:00",
+  "minutes_avant_depart": 3,
   "participants": [
     {
       "numPmu": 1,
       "nom": "STAR DE LA BLAIRIE",
-      "cote_live": 19.0,
+      "cote_live": 18.0,
       "cote_reference": 68.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151600000
     },
     {
       "numPmu": 2,
       "nom": "KONIAC WOOD",
-      "cote_live": 9.2,
+      "cote_live": 8.6,
       "cote_reference": 7.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151600000
     },
     {
       "numPmu": 3,
       "nom": "LIZZY DU QUARTIER",
-      "cote_live": 13.0,
+      "cote_live": 12.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151600000
     },
     {
       "numPmu": 4,
       "nom": "SOLIDE",
-      "cote_live": 2.7,
+      "cote_live": 3.0,
       "cote_reference": 1.9,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151600000
     },
     {
       "numPmu": 5,
       "nom": "YEMASKA",
-      "cote_live": 14.0,
+      "cote_live": 12.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151600000
     },
     {
       "numPmu": 6,
       "nom": "FRIPON DE BALLON",
-      "cote_live": 20.0,
+      "cote_live": 24.0,
       "cote_reference": 30.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151600000
     },
     {
       "numPmu": 7,
@@ -68,34 +68,34 @@
       "cote_reference": 39.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151600000
     },
     {
       "numPmu": 8,
       "nom": "DIMITRI",
-      "cote_live": 12.0,
+      "cote_live": 14.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151600000
     },
     {
       "numPmu": 9,
       "nom": "KIMLEEN ST ELOI",
-      "cote_live": 6.2,
+      "cote_live": 6.8,
       "cote_reference": 7.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151600000
     },
     {
       "numPmu": 10,
       "nom": "BARON DE FLANDRES",
-      "cote_live": 8.1,
+      "cote_live": 6.3,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794151439000
+      "timestamp_cote": 1794151600000
     }
   ],
   "hippodrome": "ARGENTAN",
@@ -210,6 +210,70 @@
         "8": 12.0,
         "9": 6.2,
         "10": 8.1
+      }
+    },
+    {
+      "scraped_at": "2026-11-08T16:24:50.678513+01:00",
+      "minutes_avant_depart": 5.158519066666667,
+      "cotes": {
+        "1": 19.0,
+        "2": 9.5,
+        "3": 13.0,
+        "4": 2.7,
+        "5": 14.0,
+        "6": 21.0,
+        "7": 17.0,
+        "8": 12.0,
+        "9": 6.4,
+        "10": 7.6
+      }
+    },
+    {
+      "scraped_at": "2026-11-08T16:25:31.426797+01:00",
+      "minutes_avant_depart": 4.484305050000001,
+      "cotes": {
+        "1": 20.0,
+        "2": 8.9,
+        "3": 14.0,
+        "4": 2.8,
+        "5": 13.0,
+        "6": 23.0,
+        "7": 18.0,
+        "8": 13.0,
+        "9": 6.8,
+        "10": 6.1
+      }
+    },
+    {
+      "scraped_at": "2026-11-08T16:26:10.863915+01:00",
+      "minutes_avant_depart": 3.825180666666667,
+      "cotes": {
+        "1": 18.0,
+        "2": 8.9,
+        "3": 14.0,
+        "4": 2.8,
+        "5": 13.0,
+        "6": 23.0,
+        "7": 18.0,
+        "8": 13.0,
+        "9": 6.8,
+        "10": 6.1
+      }
+    },
+    {
+      "scraped_at": "2026-11-08T16:26:50.974819+01:00",
+      "minutes_avant_depart": 3.1585126666666667,
+      "cotes": {
+        "1": 18.0,
+        "2": 8.6,
+        "3": 12.0,
+        "4": 3.0,
+        "5": 12.0,
+        "6": 24.0,
+        "7": 17.0,
+        "8": 14.0,
+        "9": 6.8,
+        "10": 6.3
       }
     }
   ]
