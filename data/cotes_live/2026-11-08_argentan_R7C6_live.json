@@ -4,71 +4,71 @@
   "reunion": 7,
   "heure_depart": 1794150000000,
   "distance": 3600,
-  "scraped_at": "2026-11-08T15:50:50.887106+01:00",
-  "minutes_avant_depart": 9,
+  "scraped_at": "2026-11-08T15:54:51.064718+01:00",
+  "minutes_avant_depart": 5,
   "participants": [
     {
       "numPmu": 1,
       "nom": "KIRKITA",
-      "cote_live": 1.9,
+      "cote_live": 2.1,
       "cote_reference": 1.6,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794149434000
+      "timestamp_cote": 1794149668000
     },
     {
       "numPmu": 2,
       "nom": "RED RECRUIT",
-      "cote_live": 4.1,
+      "cote_live": 4.8,
       "cote_reference": 3.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149434000
+      "timestamp_cote": 1794149668000
     },
     {
       "numPmu": 3,
       "nom": "NIGHTSPEED",
-      "cote_live": 30.0,
+      "cote_live": 18.0,
       "cote_reference": 100.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149434000
+      "timestamp_cote": 1794149668000
     },
     {
       "numPmu": 4,
       "nom": "MADONNA BELLA",
-      "cote_live": 15.0,
+      "cote_live": 11.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149434000
+      "timestamp_cote": 1794149668000
     },
     {
       "numPmu": 5,
       "nom": "ROYALE CAKE HAS",
-      "cote_live": 6.0,
+      "cote_live": 7.9,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149434000
+      "timestamp_cote": 1794149668000
     },
     {
       "numPmu": 7,
       "nom": "MAMZELLE D'AUTHIE",
-      "cote_live": 13.0,
+      "cote_live": 7.3,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149434000
+      "timestamp_cote": 1794149668000
     },
     {
       "numPmu": 8,
       "nom": "SOURIS BLEUE",
-      "cote_live": 21.0,
+      "cote_live": 16.0,
       "cote_reference": 100.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794149434000
+      "timestamp_cote": 1794149668000
     }
   ],
   "hippodrome": "ARGENTAN",
@@ -110,6 +110,32 @@
         "5": 6.0,
         "7": 13.0,
         "8": 21.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-08T15:54:11.077565+01:00",
+      "minutes_avant_depart": 5.8252759833333325,
+      "cotes": {
+        "1": 2.1,
+        "2": 4.8,
+        "3": 18.0,
+        "4": 11.0,
+        "5": 7.9,
+        "7": 7.3,
+        "8": 16.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-08T15:54:51.064718+01:00",
+      "minutes_avant_depart": 5.158607633333333,
+      "cotes": {
+        "1": 2.1,
+        "2": 4.8,
+        "3": 18.0,
+        "4": 11.0,
+        "5": 7.9,
+        "7": 7.3,
+        "8": 16.0
       }
     }
   ]
