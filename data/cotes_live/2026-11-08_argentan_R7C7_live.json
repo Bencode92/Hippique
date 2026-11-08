@@ -4,44 +4,44 @@
   "reunion": 7,
   "heure_depart": 1794151800000,
   "distance": 4200,
-  "scraped_at": "2026-11-08T16:08:51.044237+01:00",
-  "minutes_avant_depart": 21,
+  "scraped_at": "2026-11-08T16:13:30.824222+01:00",
+  "minutes_avant_depart": 16,
   "participants": [
     {
       "numPmu": 1,
       "nom": "STAR DE LA BLAIRIE",
-      "cote_live": 23.0,
+      "cote_live": 24.0,
       "cote_reference": 68.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794150515000
+      "timestamp_cote": 1794150801000
     },
     {
       "numPmu": 2,
       "nom": "KONIAC WOOD",
-      "cote_live": 8.4,
+      "cote_live": 8.6,
       "cote_reference": 7.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794150515000
+      "timestamp_cote": 1794150801000
     },
     {
       "numPmu": 3,
       "nom": "LIZZY DU QUARTIER",
-      "cote_live": 14.0,
+      "cote_live": 15.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794150515000
+      "timestamp_cote": 1794150801000
     },
     {
       "numPmu": 4,
       "nom": "SOLIDE",
-      "cote_live": 2.2,
+      "cote_live": 2.3,
       "cote_reference": 1.9,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794150515000
+      "timestamp_cote": 1794150801000
     },
     {
       "numPmu": 5,
@@ -50,25 +50,25 @@
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794150515000
+      "timestamp_cote": 1794150801000
     },
     {
       "numPmu": 6,
       "nom": "FRIPON DE BALLON",
-      "cote_live": 32.0,
+      "cote_live": 30.0,
       "cote_reference": 30.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794150515000
+      "timestamp_cote": 1794150801000
     },
     {
       "numPmu": 7,
       "nom": "KENDOR KERGADOR",
-      "cote_live": 41.0,
+      "cote_live": 33.0,
       "cote_reference": 39.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794150515000
+      "timestamp_cote": 1794150801000
     },
     {
       "numPmu": 8,
@@ -77,25 +77,25 @@
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794150515000
+      "timestamp_cote": 1794150801000
     },
     {
       "numPmu": 9,
       "nom": "KIMLEEN ST ELOI",
-      "cote_live": 5.6,
+      "cote_live": 5.3,
       "cote_reference": 7.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794150515000
+      "timestamp_cote": 1794150801000
     },
     {
       "numPmu": 10,
       "nom": "BARON DE FLANDRES",
-      "cote_live": 7.9,
+      "cote_live": 7.7,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794150515000
+      "timestamp_cote": 1794150801000
     }
   ],
   "hippodrome": "ARGENTAN",
@@ -146,6 +146,22 @@
         "8": 16.0,
         "9": 5.6,
         "10": 7.9
+      }
+    },
+    {
+      "scraped_at": "2026-11-08T16:13:30.824222+01:00",
+      "minutes_avant_depart": 16.491885683333333,
+      "cotes": {
+        "1": 24.0,
+        "2": 8.6,
+        "3": 15.0,
+        "4": 2.3,
+        "5": 19.0,
+        "6": 30.0,
+        "7": 33.0,
+        "8": 16.0,
+        "9": 5.3,
+        "10": 7.7
       }
     }
   ]
