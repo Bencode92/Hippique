@@ -1,8 +1,8 @@
 {
 "date": "2026-11-08",
 "hippodrome": "SAINT-CLOUD",
-"releve": "2026-11-08 16:31",
-"releve_prec": "2026-11-08 16:04",
+"releve": "2026-11-09 07:40",
+"releve_prec": "2026-11-08 16:31",
 "cotes_publiees": true,
 "histo": {
 "plat": 201360,
@@ -19,6 +19,26 @@
 "cat": "course a conditions",
 "alloc": 45700,
 "masse": 19599,
+"arrivee": [
+3,
+9,
+10,
+4,
+5,
+2,
+1,
+6,
+7,
+8
+],
+"rap_g": {
+"3": 11.7
+},
+"rap_p": {
+"3": 3.9,
+"9": 1.8,
+"10": 4.2
+},
 "bandes": {
 "h": 200,
 "f": 100,
@@ -558,6 +578,24 @@
 "cat": "course a conditions",
 "alloc": 54900,
 "masse": 18907,
+"arrivee": [
+6,
+2,
+5,
+3,
+7,
+8,
+1,
+4
+],
+"rap_g": {
+"6": 3.7
+},
+"rap_p": {
+"6": 1.5,
+"2": 2.1,
+"5": 1.6
+},
 "bandes": {
 "h": 200,
 "f": 100,
@@ -1023,6 +1061,27 @@
 "cat": "course a conditions",
 "alloc": 45700,
 "masse": 21932,
+"arrivee": [
+2,
+10,
+3,
+5,
+1,
+4,
+7,
+8,
+6,
+9,
+11
+],
+"rap_g": {
+"2": 2.9
+},
+"rap_p": {
+"2": 1.5,
+"10": 3.3,
+"3": 2.0
+},
 "bandes": {
 "h": 200,
 "f": 100,
@@ -1614,6 +1673,24 @@
 "cat": "course a conditions",
 "alloc": 47600,
 "masse": 27997,
+"arrivee": [
+8,
+1,
+3,
+4,
+5,
+6,
+2,
+7
+],
+"rap_g": {
+"8": 8.8
+},
+"rap_p": {
+"8": 2.8,
+"1": 3.5,
+"3": 5.0
+},
 "bandes": {
 "h": 200,
 "f": 100,
@@ -2084,6 +2161,30 @@
 "cat": "handicap divise",
 "alloc": 50900,
 "masse": 75263,
+"arrivee": [
+7,
+1,
+10,
+11,
+4,
+14,
+9,
+5,
+12,
+3,
+6,
+15,
+13,
+2
+],
+"rap_g": {
+"7": 3.8
+},
+"rap_p": {
+"7": 2.0,
+"1": 2.5,
+"10": 3.1
+},
 "bandes": {
 "h": 200,
 "f": 100,
@@ -2853,6 +2954,26 @@
 "cat": "course a conditions",
 "alloc": 50300,
 "masse": 25751,
+"arrivee": [
+10,
+6,
+9,
+8,
+2,
+5,
+4,
+3,
+7,
+1
+],
+"rap_g": {
+"10": 4.5
+},
+"rap_p": {
+"10": 2.2,
+"6": 5.0,
+"9": 7.6
+},
 "bandes": {
 "h": 200,
 "f": 100,
@@ -3392,6 +3513,31 @@
 "cat": "handicap divise",
 "alloc": 25900,
 "masse": 30033,
+"arrivee": [
+10,
+9,
+8,
+13,
+2,
+15,
+11,
+7,
+14,
+4,
+6,
+12,
+3,
+5,
+1
+],
+"rap_g": {
+"10": 8.8
+},
+"rap_p": {
+"10": 3.3,
+"9": 5.6,
+"8": 11.1
+},
 "bandes": {
 "h": 200,
 "f": 100,
@@ -3406,7 +3552,7 @@
 "cote_ref": 37.0,
 "ref_matin": 37.0,
 "ref_pmu": 39.0,
-"cote_prec": 41.0,
+"cote_prec": 68.0,
 "cote_ouv": 39.0,
 "jk": "J.CLAUDIC",
 "en": "M.PITART",
@@ -3446,7 +3592,7 @@
 "cote_ref": 5.6,
 "ref_matin": 5.6,
 "ref_pmu": 5.2,
-"cote_prec": 4.0,
+"cote_prec": 3.8,
 "cote_ouv": 5.4,
 "jk": "C.SOUMILLON",
 "en": "JPH .DUBOIS",
@@ -3500,7 +3646,7 @@
 "cote_ref": 60.0,
 "ref_matin": 60.0,
 "ref_pmu": 60.0,
-"cote_prec": 59.0,
+"cote_prec": 30.0,
 "cote_ouv": 69.0,
 "jk": "T.PICCONE",
 "en": "FR.MONFORT (S)",
@@ -3554,7 +3700,7 @@
 "cote_ref": 6.2,
 "ref_matin": 6.2,
 "ref_pmu": 10.0,
-"cote_prec": 11.0,
+"cote_prec": 18.0,
 "cote_ouv": 6.3,
 "jk": "C.PACAUT",
 "en": "S.ZULIANI (S)",
@@ -3603,7 +3749,7 @@
 "cote_ref": 6.4,
 "ref_matin": 6.4,
 "ref_pmu": 12.0,
-"cote_prec": 10.0,
+"cote_prec": 5.9,
 "cote_ouv": 7.1,
 "jk": "H.BOUTIN",
 "en": "B.AUDOUIN (S)",
@@ -3643,7 +3789,7 @@
 "cote_ref": 9.4,
 "ref_matin": 9.4,
 "ref_pmu": 12.0,
-"cote_prec": 10.0,
+"cote_prec": 7.7,
 "cote_ouv": 10.0,
 "jk": "PC.BOUDOT",
 "en": "M.SEROR (S)",
@@ -3684,7 +3830,7 @@
 "cote_ref": 60.0,
 "ref_matin": 60.0,
 "ref_pmu": 27.0,
-"cote_prec": 24.0,
+"cote_prec": 36.0,
 "cote_ouv": 61.0,
 "jk": "E.HARDOUIN",
 "en": "E.LECOIFFIER",
@@ -3736,7 +3882,7 @@
 "cote_ref": 32.0,
 "ref_matin": 32.0,
 "ref_pmu": 25.0,
-"cote_prec": 25.0,
+"cote_prec": 45.0,
 "cote_ouv": 32.0,
 "jk": "H.LEBOUC",
 "en": "T.POCHE",
@@ -3784,7 +3930,7 @@
 "cote_ref": 32.0,
 "ref_matin": 32.0,
 "ref_pmu": 20.0,
-"cote_prec": 21.0,
+"cote_prec": 20.0,
 "cote_ouv": 32.0,
 "jk": "A.HAMELIN",
 "en": "M.DELZANGLES",
@@ -3873,7 +4019,7 @@
 "cote_ref": 120.0,
 "ref_matin": 120.0,
 "ref_pmu": 70.0,
-"cote_prec": 82.0,
+"cote_prec": 49.0,
 "cote_ouv": 69.0,
 "jk": "E.MUNTWYLER",
 "en": "C.FEY (S)",
@@ -3905,7 +4051,7 @@
 "cote_ref": 24.0,
 "ref_matin": 24.0,
 "ref_pmu": 41.0,
-"cote_prec": 35.0,
+"cote_prec": 36.0,
 "cote_ouv": 26.0,
 "jk": "B.FLANDRIN",
 "en": "G.GEISLER",
@@ -3984,7 +4130,7 @@
 "cote_ref": 7.5,
 "ref_matin": 7.5,
 "ref_pmu": 4.7,
-"cote_prec": 6.0,
+"cote_prec": 11.0,
 "cote_ouv": 8.1,
 "jk": "M.GRANDIN",
 "en": "JESUS",
@@ -4099,7 +4245,31 @@
 "dist": 2000,
 "cat": "course a conditions",
 "alloc": 50300,
-"masse": 4181,
+"masse": 38852,
+"arrivee": [
+7,
+4,
+3,
+14,
+2,
+10,
+9,
+12,
+5,
+13,
+11,
+6,
+8,
+1
+],
+"rap_g": {
+"7": 4.3
+},
+"rap_p": {
+"7": 2.1,
+"4": 3.6,
+"3": 3.0
+},
 "bandes": {
 "h": 200,
 "f": 100,
@@ -4110,11 +4280,11 @@
 {
 "n": 1,
 "nom": "SODA ZABEEL",
-"cote": 36.0,
+"cote": 61.0,
 "cote_ref": 35.0,
 "ref_matin": 35.0,
 "ref_pmu": 35.0,
-"cote_prec": 56.0,
+"cote_prec": 36.0,
 "cote_ouv": 33.0,
 "jk": "M.GRANDIN",
 "en": "A.SCHUTZ (S)",
@@ -4165,11 +4335,11 @@
 {
 "n": 2,
 "nom": "YMEEELIH",
-"cote": 27.0,
+"cote": 38.0,
 "cote_ref": 27.0,
 "ref_matin": 27.0,
 "ref_pmu": 29.0,
-"cote_prec": 29.0,
+"cote_prec": 27.0,
 "cote_ouv": 20.0,
 "jk": "A.LEMAITRE",
 "en": "A.SCHUTZ (S)",
@@ -4227,11 +4397,11 @@
 {
 "n": 3,
 "nom": "ECIJA",
-"cote": 9.9,
+"cote": 13.0,
 "cote_ref": 6.9,
 "ref_matin": 6.9,
 "ref_pmu": 9.9,
-"cote_prec": 10.0,
+"cote_prec": 9.9,
 "cote_ouv": 7.7,
 "jk": "S.PASQUIER",
 "en": "CLEMENT & HERMANS (S)",
@@ -4292,7 +4462,7 @@
 "cote_ref": 13.0,
 "ref_matin": 13.0,
 "ref_pmu": 14.0,
-"cote_prec": 16.0,
+"cote_prec": 14.0,
 "cote_ouv": 16.0,
 "jk": "C.SOUMILLON",
 "en": "A.BOTTI (S)",
@@ -4349,11 +4519,11 @@
 {
 "n": 5,
 "nom": "HELLO AVENUE",
-"cote": 13.0,
+"cote": 18.0,
 "cote_ref": 17.0,
 "ref_matin": 17.0,
 "ref_pmu": 13.0,
-"cote_prec": 19.0,
+"cote_prec": 13.0,
 "cote_ouv": 12.0,
 "jk": "A.MADAMET",
 "en": "JPH .DUBOIS",
@@ -4404,7 +4574,7 @@
 {
 "n": 6,
 "nom": "CLEA CHOPE",
-"cote": 43.0,
+"cote": 63.0,
 "cote_ref": 57.0,
 "ref_matin": 57.0,
 "ref_pmu": 42.0,
@@ -4456,11 +4626,11 @@
 {
 "n": 7,
 "nom": "LEGACY LINK",
-"cote": 4.8,
+"cote": 4.3,
 "cote_ref": 13.0,
 "ref_matin": 13.0,
 "ref_pmu": 4.8,
-"cote_prec": 4.5,
+"cote_prec": 4.8,
 "cote_ouv": 12.0,
 "jk": "C.KEANE",
 "en": "JOHN & THADY GOSDEN",
@@ -4487,11 +4657,11 @@
 {
 "n": 8,
 "nom": "MUSIC'S GIRL",
-"cote": 37.0,
+"cote": 62.0,
 "cote_ref": 13.0,
 "ref_matin": 13.0,
 "ref_pmu": 37.0,
-"cote_prec": 36.0,
+"cote_prec": 37.0,
 "cote_ouv": 15.0,
 "jk": "A.CRASTUS",
 "en": "J.REYNIER (S)",
@@ -4539,11 +4709,11 @@
 {
 "n": 9,
 "nom": "VANIR",
-"cote": 33.0,
+"cote": 13.0,
 "cote_ref": 33.0,
 "ref_matin": 33.0,
 "ref_pmu": 36.0,
-"cote_prec": 40.0,
+"cote_prec": 33.0,
 "cote_ouv": 39.0,
 "jk": "B.COEN",
 "en": "JP.MURTAGH",
@@ -4560,11 +4730,11 @@
 {
 "n": 10,
 "nom": "BLANCHE DE MEDICIS",
-"cote": 32.0,
+"cote": 22.0,
 "cote_ref": 27.0,
 "ref_matin": 27.0,
 "ref_pmu": 32.0,
-"cote_prec": 30.0,
+"cote_prec": 32.0,
 "cote_ouv": 26.0,
 "jk": "PC.BOUDOT",
 "en": "A&L.FABRE (S)",
@@ -4615,11 +4785,11 @@
 {
 "n": 11,
 "nom": "ARCTIC BAY",
-"cote": 63.0,
+"cote": 107.0,
 "cote_ref": 71.0,
 "ref_matin": 71.0,
 "ref_pmu": 63.0,
-"cote_prec": 65.0,
+"cote_prec": 63.0,
 "cote_ouv": 66.0,
 "jk": "R.THOMAS",
 "en": "C&Y.LERNER (S)",
@@ -4667,11 +4837,11 @@
 {
 "n": 12,
 "nom": "GLYFADA",
-"cote": 27.0,
+"cote": 11.0,
 "cote_ref": 114.0,
 "ref_matin": 114.0,
 "ref_pmu": 27.0,
-"cote_prec": 31.0,
+"cote_prec": 27.0,
 "cote_ouv": 95.0,
 "jk": "G.RYAN",
 "en": "D.O'BRIEN",
@@ -4695,11 +4865,11 @@
 {
 "n": 13,
 "nom": "LAND OF LIBERTY",
-"cote": 38.0,
+"cote": 80.0,
 "cote_ref": 27.0,
 "ref_matin": 27.0,
 "ref_pmu": 37.0,
-"cote_prec": 34.0,
+"cote_prec": 38.0,
 "cote_ouv": 24.0,
 "jk": "T.BACHELOT",
 "en": "S.KOBAYASHI (S)",
@@ -4756,11 +4926,11 @@
 {
 "n": 14,
 "nom": "RUMPUMPEL",
-"cote": 2.3,
+"cote": 2.4,
 "cote_ref": 1.9,
 "ref_matin": 1.9,
 "ref_pmu": 2.3,
-"cote_prec": 2.1,
+"cote_prec": 2.3,
 "cote_ouv": 2.0,
 "jk": "M.BARZALONA",
 "en": "FH.GRAFFARD (S)",

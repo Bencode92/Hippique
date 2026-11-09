@@ -132,10 +132,22 @@ for c in reu.get("courses", []):
                           g=(g or {}).get(jk) if g is not None else None, h=h.get(jk),
                           ici=[m["a"] or 0 for m in passe], en_ici=en.get(ent)))
     # heureDepart est un instant UTC : on l'affiche à l'heure de Paris (été comme hiver)
+    # arrivée et rapports simple gagnant / placé (centimes pour 1 €) une fois la course validée
+    arrivee, rap_g, rap_p = [], {}, {}
+    if "ARRIVEE_DEFINITIVE" in (c.get("statut") or ""):
+        arrivee = [x[0] for x in (c.get("ordreArrivee") or []) if x]
+        rd = get(f"{BASE}/programme/{jj}/R{reu.get('numOfficiel')}/C{c.get('numOrdre')}/rapports-definitifs?specialisation=INTERNET") or []
+        for x in rd:
+            dst = rap_g if x.get("typePari") == "E_SIMPLE_GAGNANT" else rap_p if x.get("typePari") == "E_SIMPLE_PLACE" else None
+            if dst is None: continue
+            for y in x.get("rapports", []):
+                for num in str(y.get("combinaison", "")).split("-"):
+                    if num.isdigit(): dst[int(num)] = (y.get("dividendePourUnEuro") or 0) / 100
     hd = c.get("heureDepart")
+
     courses.append(dict(num=c.get("numOrdre"), nom=c.get("libelle"), heure=datetime.fromtimestamp(hd / 1000, tz=ZoneInfo("Europe/Paris")).strftime("%Hh%M") if hd else "?",
                         disc=DISC_LIB[disc], plat=est_plat, dist=dist, cat=(c.get("categorieParticularite") or "").replace("_", " ").lower(),
-                        alloc=c.get("montantPrix"), masse=masse, bandes=dict(h=BH, f=BF, g=JD["belles_par_distance"]["bande"] if est_plat else None),
+                        alloc=c.get("montantPrix"), masse=masse, arrivee=arrivee, rap_g=rap_g, rap_p=rap_p, bandes=dict(h=BH, f=BF, g=JD["belles_par_distance"]["bande"] if est_plat else None),
                         groupe_dispo=bool(g), partants=parts))
 
 doc = dict(date=jour_iso, hippodrome=hip_cible, releve=datetime.now().strftime("%Y-%m-%d %H:%M"), releve_prec=PREV_T,

@@ -101,3 +101,9 @@ footer { margin-top: 32px; color: var(--mute); font-size: .8rem }
 .jtab th:nth-last-child(2), .jeu th:nth-last-child(2), .jeu th:nth-last-child(3) { text-align: right }
 .jeu th:last-child { text-align: right }
 .cref { font-size: .85rem; font-weight: 500; color: var(--mute); font-family: var(--body) }
+.res.gagne, b.gagne { color: var(--good) }
+.res.perdu, b.perdu { color: var(--bad) }
+.res { display: grid; gap: 1px; justify-items: end }
+.bilan { margin: 10px 0 0; font-size: .95rem }
+.arrivee { margin: 2px 0 0; font-size: .9rem }
+.arrivee b { font-family: var(--display); font-size: 1.1rem; letter-spacing: .04em }

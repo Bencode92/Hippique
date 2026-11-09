@@ -147,7 +147,8 @@ for c in doc["courses"]:
     alloc = f" · {c['alloc']:,} €".replace(",", " ") if c.get("alloc") else ""
     sections.append(f'''<section class="course" id="c{c["num"]}">
   <header><span class="heure">{e(c["heure"])}</span><h2><span class="cn">C{c["num"]}</span> {e(c["nom"])}</h2>
-  <p class="meta">{e(c["disc"])} · {c["dist"]} m · {len(ps)} partants · {e(c["cat"])}{alloc}</p></header>
+  <p class="meta">{e(c["disc"])} · {c["dist"]} m · {len(ps)} partants · {e(c["cat"])}{alloc}</p>
+  {f'<p class="arrivee">Arrivée : <b>{" – ".join(str(x) for x in c["arrivee"][:5])}</b>' + (f' · gagnant {fr((c.get("rap_g") or {}).get(str(c["arrivee"][0])) or 0)} € pour 1 €' if c.get("rap_g") else "") + '</p>' if c.get("arrivee") else ""}</header>
   <div class="lecture">{"".join(f"<p>{n}</p>" for n in notes)}</div>
   {derive}
   {jtab}
@@ -156,7 +157,8 @@ for c in doc["courses"]:
 
 MISE = int(sys.argv[3]) if len(sys.argv) > 3 else 20
 REGLE = doc["hippodrome"].replace(" ", "").replace("-", "") in ("LONGCHAMP", "SAINTCLOUD")
-lignes = []
+lignes = []; bilan = [0.0, 0, 0.0]   # retour, courses jouées, retour des courses de la règle
+mise_regle = 0
 for c in doc["courses"]:
     ps = c["partants"]; regle = REGLE and len(ps) >= 14
     fav = ps[0] if cotes else None
@@ -168,12 +170,20 @@ for c in doc["courses"]:
     else:
         cheval = '<b class="pick">le favori</b><span class="mute small2">la plus petite cote au moment de jouer</span>'
         cote = "–"; cote_d = "–"
+    res = ""
+    if c.get("arrivee") and fav:
+        g = (c.get("rap_g") or {}).get(str(fav["n"])) or (c.get("rap_g") or {}).get(fav["n"])
+        retour = MISE * g if g else 0.0
+        bilan[0] += retour; bilan[1] += 1
+        if regle: bilan[2] += retour; mise_regle += MISE
+        res = (f'<td class="c res gagne">+{fr(round(retour - MISE, 2))} €</td>' if g else f'<td class="c res perdu">−{MISE} €<span class="mute small2">{"-".join(str(x) for x in c["arrivee"][:3])}</span></td>')
     lignes.append(f'<tr{" class=regle" if regle else ""}><td class="h">{e(c["heure"])}</td><td class="r">C{c["num"]}</td>'
-                  f'<td class="ch">{cheval}{"<span class=tag>règle 14+</span>" if regle else ""}</td><td class="c ref">{cote_d}</td><td class="c">{cote}</td><td class="c">{MISE} €</td></tr>')
+                  f'<td class="ch">{cheval}{"<span class=tag>règle 14+</span>" if regle else ""}</td><td class="c ref">{cote_d}</td><td class="c">{cote}</td><td class="c">{MISE} €</td>{res}</tr>')
 jeu = f'''<section class="jeu">
   <h2>À jouer</h2>
   <p class="consigne"><b>Simple gagnant, {MISE} € par course, sur le favori.</b> {"Les noms s'affichent dès que le PMU publie les cotes ; d'ici là, jouer le cheval à la plus petite cote dans l'appli au moment du pari." if not cotes else f"Favoris d'après les cotes PMU relevées à {releve} : si un autre cheval est passé favori au moment de jouer, garder celui de la fiche."}</p>
-  <div class="scroll"><table><thead><tr><th>Heure</th><th>Course</th><th>Cheval</th><th>Cote départ</th><th>Actuelle</th><th>Mise</th></tr></thead><tbody>{"".join(lignes)}</tbody></table></div>
+  <div class="scroll"><table><thead><tr><th>Heure</th><th>Course</th><th>Cheval</th><th>Cote départ</th><th>{"Finale" if bilan[1] else "Actuelle"}</th><th>Mise</th>{"<th>Résultat</th>" if bilan[1] else ""}</tr></thead><tbody>{"".join(lignes)}</tbody></table></div>
+  {f'<p class="bilan">Bilan : {bilan[1] * MISE} € misés, {fr(round(bilan[0], 2))} € reçus, soit <b class="{"gagne" if bilan[0] >= bilan[1] * MISE else "perdu"}">{"+" if bilan[0] >= bilan[1] * MISE else "−"}{fr(abs(round(bilan[0] - bilan[1] * MISE, 2)))} €</b>' + (f' · courses de la règle 14+ : {mise_regle} € misés, {fr(round(bilan[2], 2))} € reçus.' if mise_regle else '.') + '</p>' if bilan[1] else ''}
   <p class="mute small">Total : {MISE * len(doc["courses"])} € sur {len(doc["courses"])} courses.{" Les courses marquées « règle 14+ » (14 partants ou plus) sont celles de notre règle en test ; les autres sont jouées sur le favori sans avantage mesuré (en moyenne le favori rend environ −14 %)." if REGLE else ""}</p>
 </section>'''
 nav = "".join(f'<a href="#c{c["num"]}">C{c["num"]}</a>' for c in doc["courses"])
