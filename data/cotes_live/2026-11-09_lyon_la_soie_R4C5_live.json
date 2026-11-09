@@ -4,17 +4,17 @@
   "reunion": 4,
   "heure_depart": 1794246300000,
   "distance": 1800,
-  "scraped_at": "2026-11-09T18:27:42.119099+01:00",
-  "minutes_avant_depart": 17,
+  "scraped_at": "2026-11-09T18:32:21.815659+01:00",
+  "minutes_avant_depart": 13,
   "participants": [
     {
       "numPmu": 1,
       "nom": "LINFASOMMER",
-      "cote_live": 12.0,
+      "cote_live": 11.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794245252000
+      "timestamp_cote": 1794245516000
     },
     {
       "numPmu": 2,
@@ -23,43 +23,43 @@
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794245252000
+      "timestamp_cote": 1794245516000
     },
     {
       "numPmu": 3,
       "nom": "I AM PARADOU",
-      "cote_live": 14.0,
+      "cote_live": 15.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794245252000
+      "timestamp_cote": 1794245516000
     },
     {
       "numPmu": 4,
       "nom": "RIGOLETTOS",
-      "cote_live": 8.3,
+      "cote_live": 8.7,
       "cote_reference": 6.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794245252000
+      "timestamp_cote": 1794245516000
     },
     {
       "numPmu": 5,
       "nom": "MATT MACHINE",
-      "cote_live": 12.0,
+      "cote_live": 11.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794245252000
+      "timestamp_cote": 1794245516000
     },
     {
       "numPmu": 6,
       "nom": "ARTURO",
-      "cote_live": 6.7,
+      "cote_live": 6.5,
       "cote_reference": 6.8,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1794245252000
+      "favoris": true,
+      "timestamp_cote": 1794245516000
     },
     {
       "numPmu": 7,
@@ -68,25 +68,25 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794245252000
+      "timestamp_cote": 1794245516000
     },
     {
       "numPmu": 8,
       "nom": "BEST SHALAA",
-      "cote_live": 7.1,
+      "cote_live": 6.8,
       "cote_reference": 8.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794245252000
+      "timestamp_cote": 1794245516000
     },
     {
       "numPmu": 9,
       "nom": "CHARLEMAGNE",
-      "cote_live": 32.0,
+      "cote_live": 28.0,
       "cote_reference": 47.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794245252000
+      "timestamp_cote": 1794245516000
     },
     {
       "numPmu": 10,
@@ -95,25 +95,25 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794245252000
+      "timestamp_cote": 1794245516000
     },
     {
       "numPmu": 11,
       "nom": "QUIET SEA",
-      "cote_live": 9.9,
+      "cote_live": 10.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794245252000
+      "timestamp_cote": 1794245516000
     },
     {
       "numPmu": 12,
       "nom": "REDSIA FAL",
-      "cote_live": 6.4,
+      "cote_live": 6.5,
       "cote_reference": 7.2,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794245252000
+      "timestamp_cote": 1794245516000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -188,6 +188,24 @@
         "10": 12.0,
         "11": 9.9,
         "12": 6.4
+      }
+    },
+    {
+      "scraped_at": "2026-11-09T18:32:21.815659+01:00",
+      "minutes_avant_depart": 12.63910375,
+      "cotes": {
+        "1": 11.0,
+        "2": 20.0,
+        "3": 15.0,
+        "4": 8.7,
+        "5": 11.0,
+        "6": 6.5,
+        "7": 12.0,
+        "8": 6.8,
+        "9": 28.0,
+        "10": 12.0,
+        "11": 10.0,
+        "12": 6.5
       }
     }
   ]
