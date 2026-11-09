@@ -113,20 +113,20 @@
 
 ### 7. PRIX LA COTE
 
-*19h53 · plat · 1800 m · 10 partants · cotes à T−24:47*
+*19h53 · plat · 1800 m · 10 partants · cotes à T−20:47*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 7 | NEW PEARL | 5,2 | 5,6 | F.VERON | 25/131/118/215 |
-| 2 | FASOLDOFA | 5,3 | 6,8 | T.BACHELOT | 16/197/233/1019 |
-| 4 | TUWARI | 6,8 | 8,4 | H.BOUTIN | 17/74/3/6 |
+| 7 | NEW PEARL | 4,8 | 5,6 | F.VERON | 25/131/118/215 |
+| 2 | FASOLDOFA | 6 | 6,8 | T.BACHELOT | 16/197/233/1019 |
 | 8 | NAIDEE | 6,8 | 8,8 | A.MOLINS | 28/93/21/567 |
+| 4 | TUWARI | 7 | 8,4 | H.BOUTIN | 17/74/3/6 |
 | 1 | DELIRE D'AMOUR | 7,1 | 5,1 | B.MARIE | 63/306/19/468 |
-| 3 | ANAHEIM | 10 | 8,2 | H.BESNIER | 11/268/5/185 |
-| 6 | RUE MADON | 11 | 10 | N.ASTIER | 164/49/319/867 |
-| 10 | NANALA | 16 | 12 | D.SANTIAGO | 19/532/515/1761 |
-| 5 | PURPLE DAHLIA | 23 | 17 | A.ORANI 3e | 5/268/2005/809 |
-| 9 | PULP FICTION | 25 | 25 | B.FLANDRIN | 103/201/291/308 |
+| 3 | ANAHEIM | 9,3 | 8,2 | H.BESNIER | 11/268/5/185 |
+| 6 | RUE MADON | 13 | 10 | N.ASTIER | 164/49/319/867 |
+| 10 | NANALA | 14 | 12 | D.SANTIAGO | 19/532/515/1761 |
+| 5 | PURPLE DAHLIA | 24 | 17 | A.ORANI 3e | 5/268/2005/809 |
+| 9 | PULP FICTION | 24 | 25 | B.FLANDRIN | 103/201/291/308 |
 
 ### 8. PRIX PEROUGES
 
