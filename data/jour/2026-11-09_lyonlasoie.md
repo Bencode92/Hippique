@@ -113,20 +113,20 @@
 
 ### 7. PRIX LA COTE
 
-*19h53 · plat · 1800 m · 10 partants · cotes à T−3:47*
+*19h53 · plat · 1800 m · 10 partants · cotes à T−1:07*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 4 | TUWARI | 4,1 | 8,4 | H.BOUTIN | 17/74/3/6 |
-| 7 | NEW PEARL | 6,3 | 5,6 | F.VERON | 25/131/118/215 |
-| 2 | FASOLDOFA | 6,7 | 6,8 | T.BACHELOT | 16/197/233/1019 |
-| 3 | ANAHEIM | 7,4 | 8,2 | H.BESNIER | 11/268/5/185 |
-| 1 | DELIRE D'AMOUR | 7,8 | 5,1 | B.MARIE | 63/306/19/468 |
-| 8 | NAIDEE | 8,6 | 8,8 | A.MOLINS | 28/93/21/567 |
-| 10 | NANALA | 13 | 12 | D.SANTIAGO | 19/532/515/1761 |
-| 6 | RUE MADON | 18 | 10 | N.ASTIER | 164/49/319/867 |
-| 9 | PULP FICTION | 21 | 25 | B.FLANDRIN | 103/201/291/308 |
-| 5 | PURPLE DAHLIA | 29 | 17 | A.ORANI 3e | 5/268/2005/809 |
+| 4 | TUWARI | 4,2 | 8,4 | H.BOUTIN | 17/74/3/6 |
+| 2 | FASOLDOFA | 5,8 | 6,8 | T.BACHELOT | 16/197/233/1019 |
+| 7 | NEW PEARL | 6,6 | 5,6 | F.VERON | 25/131/118/215 |
+| 1 | DELIRE D'AMOUR | 7,4 | 5,1 | B.MARIE | 63/306/19/468 |
+| 8 | NAIDEE | 7,5 | 8,8 | A.MOLINS | 28/93/21/567 |
+| 3 | ANAHEIM | 7,7 | 8,2 | H.BESNIER | 11/268/5/185 |
+| 10 | NANALA | 14 | 12 | D.SANTIAGO | 19/532/515/1761 |
+| 6 | RUE MADON | 24 | 10 | N.ASTIER | 164/49/319/867 |
+| 9 | PULP FICTION | 27 | 25 | B.FLANDRIN | 103/201/291/308 |
+| 5 | PURPLE DAHLIA | 30 | 17 | A.ORANI 3e | 5/268/2005/809 |
 
 ### 8. PRIX PEROUGES
 
