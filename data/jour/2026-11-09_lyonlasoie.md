@@ -59,19 +59,19 @@
 
 ### 4. PRIX SIGNORA
 
-*18h11 · plat · 2400 m · 9 partants · cotes à T−8:38*
+*18h11 · plat · 2400 m · 9 partants · cotes à T−4:38*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 5 | MARANELLO | 2,9 | T.BACHELOT | 16/176/274/– |
-| 3 | FIRST LADY STAR | 5,1 | H.BESNIER | 11/100/15/2314 |
-| 4 | DAYTONINE | 6,2 | D.PROVOST 5e | 33/9/4029/1513 |
-| 2 | SFUSATO | 7,9 | F.VERON | 25/42/101/32 |
-| 8 | TEMADIVA | 8,4 | A.ORANI | 5/56/3/1822 |
-| 6 | MARIZONA | 11 | B.MARIE | 63/26/1686/783 |
-| 1 | VILLA ADRIENNE | 17 | H.BOUTIN | 17/33/14/51 |
-| 9 | SECRET QUEEN | 31 | B.FLANDRIN | 103/242/596/3819 |
+| 5 | MARANELLO | 2,5 | T.BACHELOT | 16/176/274/– |
+| 4 | DAYTONINE | 4,6 | D.PROVOST 5e | 33/9/4029/1513 |
+| 3 | FIRST LADY STAR | 6,9 | H.BESNIER | 11/100/15/2314 |
+| 2 | SFUSATO | 9,7 | F.VERON | 25/42/101/32 |
+| 8 | TEMADIVA | 10 | A.ORANI | 5/56/3/1822 |
+| 6 | MARIZONA | 13 | B.MARIE | 63/26/1686/783 |
+| 1 | VILLA ADRIENNE | 19 | H.BOUTIN | 17/33/14/51 |
 | 7 | BIRDY SUN | 38 | S.AKARI-SOUIDANE | 120/530/1718/1727 |
+| 9 | SECRET QUEEN | 39 | B.FLANDRIN | 103/242/596/3819 |
 
 ### 5. PRIX  D'AIX-LES-BAINS
 
