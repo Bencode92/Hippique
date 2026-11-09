@@ -4,116 +4,116 @@
   "reunion": 4,
   "heure_depart": 1794240060000,
   "distance": 2400,
-  "scraped_at": "2026-11-09T16:31:02.386036+01:00",
-  "minutes_avant_depart": 30,
+  "scraped_at": "2026-11-09T16:35:41.925925+01:00",
+  "minutes_avant_depart": 25,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MY SECRET LIGHT",
       "cote_live": 10.0,
-      "cote_reference": 15.0,
+      "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794238243000
+      "timestamp_cote": 1794238523000
     },
     {
       "numPmu": 2,
       "nom": "NOUSDEUX",
-      "cote_live": 8.7,
-      "cote_reference": 6.9,
+      "cote_live": 8.9,
+      "cote_reference": 8.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794238243000
+      "timestamp_cote": 1794238523000
     },
     {
       "numPmu": 3,
       "nom": "HOWABOUTHATNOW",
       "cote_live": 12.0,
-      "cote_reference": 7.3,
+      "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794238243000
+      "timestamp_cote": 1794238523000
     },
     {
       "numPmu": 4,
       "nom": "JAGDA",
-      "cote_live": 15.0,
-      "cote_reference": 12.0,
+      "cote_live": 11.0,
+      "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794238243000
+      "timestamp_cote": 1794238523000
     },
     {
       "numPmu": 5,
       "nom": "CASCADEO",
       "cote_live": 12.0,
-      "cote_reference": 6.9,
+      "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794238243000
+      "timestamp_cote": 1794238523000
     },
     {
       "numPmu": 6,
       "nom": "ROLEXXA",
-      "cote_live": 20.0,
-      "cote_reference": 15.0,
+      "cote_live": 17.0,
+      "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794238243000
+      "timestamp_cote": 1794238523000
     },
     {
       "numPmu": 7,
       "nom": "BONNY WAY",
-      "cote_live": 19.0,
-      "cote_reference": 7.6,
+      "cote_live": 17.0,
+      "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794238243000
+      "timestamp_cote": 1794238523000
     },
     {
       "numPmu": 8,
       "nom": "GALIMIX",
-      "cote_live": 32.0,
-      "cote_reference": 11.0,
+      "cote_live": 31.0,
+      "cote_reference": 32.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794238243000
+      "timestamp_cote": 1794238523000
     },
     {
       "numPmu": 9,
       "nom": "LUCERO",
-      "cote_live": 42.0,
-      "cote_reference": 38.0,
+      "cote_live": 44.0,
+      "cote_reference": 42.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794238243000
+      "timestamp_cote": 1794238523000
     },
     {
       "numPmu": 10,
       "nom": "SICILIA",
-      "cote_live": 18.0,
-      "cote_reference": 5.9,
+      "cote_live": 16.0,
+      "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794238243000
+      "timestamp_cote": 1794238523000
     },
     {
       "numPmu": 11,
       "nom": "FETE JOYEUSE",
-      "cote_live": 18.0,
-      "cote_reference": 12.0,
+      "cote_live": 19.0,
+      "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794238243000
+      "timestamp_cote": 1794238523000
     },
     {
       "numPmu": 12,
       "nom": "SKADOOSH",
-      "cote_live": 2.2,
-      "cote_reference": 76.0,
+      "cote_live": 2.5,
+      "cote_reference": 2.2,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794238243000
+      "timestamp_cote": 1794238523000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -134,6 +134,24 @@
         "10": 18.0,
         "11": 18.0,
         "12": 2.2
+      }
+    },
+    {
+      "scraped_at": "2026-11-09T16:35:41.925925+01:00",
+      "minutes_avant_depart": 25.306149466666668,
+      "cotes": {
+        "1": 10.0,
+        "2": 8.9,
+        "3": 12.0,
+        "4": 11.0,
+        "5": 12.0,
+        "6": 17.0,
+        "7": 17.0,
+        "8": 31.0,
+        "9": 44.0,
+        "10": 16.0,
+        "11": 19.0,
+        "12": 2.5
       }
     }
   ]
