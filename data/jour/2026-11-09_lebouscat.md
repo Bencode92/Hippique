@@ -111,21 +111,21 @@
 
 ### 6. PRIX JEAN-MAURICE BETEAU
 
-*16h13 · attelé · 2550 m · 11 partants · cotes de l'extraction*
+*16h13 · attelé · 2550 m · 11 partants · cotes à T−8:38*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MADISON DANICA | – | C. GAZENGEL |
-| 2 | MIMO DU MESNIL | – | F. GUERINEAU |
-| 3 | MAC VENESI | – | M. DAOUGABEL |
-| 4 | MY JIBAY | – | M. ABRIVARD |
-| 5 | MILLESIME GWEN | – | B. ROCHARD |
-| 6 | MIRABILIS VRIE | – | A. ABRIVARD |
-| 7 | MINA DE BASSIERE | – | N. LANGLOIS |
-| 8 | MACUMBA MESLOISE | – | M. GERGOUIL |
-| 9 | MAYERLING LEGACY | – | Mme LANA HENRY |
-| 10 | MELICIE DU JOAMAX | – | V. CABOS |
-| 11 | MUSE D'ORTUGE | – | F. CORBINEAU |
+| 6 | MIRABILIS VRIE | 3,6 | A. ABRIVARD |
+| 5 | MILLESIME GWEN | 5,2 | B. ROCHARD |
+| 4 | MY JIBAY | 5,4 | M. ABRIVARD |
+| 9 | MAYERLING LEGACY | 7,2 | Mme LANA HENRY |
+| 2 | MIMO DU MESNIL | 7,7 | F. GUERINEAU |
+| 1 | MADISON DANICA | 13 | C. GAZENGEL |
+| 8 | MACUMBA MESLOISE | 24 | M. GERGOUIL |
+| 11 | MUSE D'ORTUGE | 28 | F. CORBINEAU |
+| 10 | MELICIE DU JOAMAX | 32 | V. CABOS |
+| 3 | MAC VENESI | 46 | M. DAOUGABEL |
+| 7 | MINA DE BASSIERE | 51 | N. LANGLOIS |
 
 ### 7. PRIX CHATEAU CHANTEGRIVE
 
