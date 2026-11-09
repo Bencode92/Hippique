@@ -4,8 +4,8 @@
   "reunion": 4,
   "heure_depart": 1794238140000,
   "distance": 2150,
-  "scraped_at": "2026-11-09T16:09:01.881477+01:00",
-  "minutes_avant_depart": 20,
+  "scraped_at": "2026-11-09T16:13:01.951791+01:00",
+  "minutes_avant_depart": 16,
   "participants": [
     {
       "numPmu": 1,
@@ -14,52 +14,52 @@
       "cote_reference": 47.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794236928000
+      "timestamp_cote": 1794237170000
     },
     {
       "numPmu": 2,
       "nom": "INTRIGUING",
-      "cote_live": 5.2,
+      "cote_live": 5.0,
       "cote_reference": 5.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794236928000
+      "timestamp_cote": 1794237170000
     },
     {
       "numPmu": 4,
       "nom": "SHANVICTUS",
-      "cote_live": 17.0,
+      "cote_live": 13.0,
       "cote_reference": 28.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794236928000
+      "timestamp_cote": 1794237170000
     },
     {
       "numPmu": 5,
       "nom": "ZARLAND",
-      "cote_live": 1.5,
+      "cote_live": 1.6,
       "cote_reference": 1.4,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794236928000
+      "timestamp_cote": 1794237170000
     },
     {
       "numPmu": 6,
       "nom": "TO BE NICE",
-      "cote_live": 22.0,
+      "cote_live": 21.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794236928000
+      "timestamp_cote": 1794237170000
     },
     {
       "numPmu": 7,
       "nom": "GAITA",
-      "cote_live": 9.6,
+      "cote_live": 8.5,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794236928000
+      "timestamp_cote": 1794237170000
     },
     {
       "numPmu": 8,
@@ -68,7 +68,7 @@
       "cote_reference": 31.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794236928000
+      "timestamp_cote": 1794237170000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -96,6 +96,19 @@
         "5": 1.5,
         "6": 22.0,
         "7": 9.6,
+        "8": 23.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-09T16:13:01.951791+01:00",
+      "minutes_avant_depart": 15.972885183333334,
+      "cotes": {
+        "1": 26.0,
+        "2": 5.0,
+        "4": 13.0,
+        "5": 1.6,
+        "6": 21.0,
+        "7": 8.5,
         "8": 23.0
       }
     }
