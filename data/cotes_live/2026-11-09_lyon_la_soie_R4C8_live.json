@@ -4,53 +4,53 @@
   "reunion": 4,
   "heure_depart": 1794252540000,
   "distance": 1800,
-  "scraped_at": "2026-11-09T20:26:13.366260+01:00",
-  "minutes_avant_depart": 3,
+  "scraped_at": "2026-11-09T20:28:52.944250+01:00",
+  "minutes_avant_depart": 0,
   "participants": [
     {
       "numPmu": 1,
       "nom": "LEVER DE RIDEAU",
-      "cote_live": 4.9,
+      "cote_live": 5.5,
       "cote_reference": 3.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794252349000
+      "timestamp_cote": 1794252527000
     },
     {
       "numPmu": 2,
       "nom": "TESTERINE",
-      "cote_live": 3.7,
+      "cote_live": 3.5,
       "cote_reference": 4.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794252349000
+      "timestamp_cote": 1794252527000
     },
     {
       "numPmu": 3,
       "nom": "BOCCA AL LUPO",
-      "cote_live": 3.5,
+      "cote_live": 3.4,
       "cote_reference": 4.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794252349000
+      "timestamp_cote": 1794252527000
     },
     {
       "numPmu": 4,
       "nom": "VELOURS",
-      "cote_live": 7.9,
+      "cote_live": 9.5,
       "cote_reference": 7.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794252349000
+      "timestamp_cote": 1794252527000
     },
     {
       "numPmu": 5,
       "nom": "STELLA DU ORO",
-      "cote_live": 6.7,
+      "cote_live": 6.1,
       "cote_reference": 5.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794252349000
+      "timestamp_cote": 1794252527000
     },
     {
       "numPmu": 6,
@@ -59,7 +59,7 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794252349000
+      "timestamp_cote": 1794252527000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -205,6 +205,54 @@
         "3": 3.5,
         "4": 7.9,
         "5": 6.7,
+        "6": 8.8
+      }
+    },
+    {
+      "scraped_at": "2026-11-09T20:26:53.178836+01:00",
+      "minutes_avant_depart": 2.1179582666666668,
+      "cotes": {
+        "1": 4.8,
+        "2": 3.8,
+        "3": 3.5,
+        "4": 7.8,
+        "5": 6.5,
+        "6": 9.3
+      }
+    },
+    {
+      "scraped_at": "2026-11-09T20:27:32.952741+01:00",
+      "minutes_avant_depart": 1.4512893166666667,
+      "cotes": {
+        "1": 4.7,
+        "2": 3.8,
+        "3": 3.4,
+        "4": 7.9,
+        "5": 6.6,
+        "6": 9.4
+      }
+    },
+    {
+      "scraped_at": "2026-11-09T20:28:13.025090+01:00",
+      "minutes_avant_depart": 0.784621,
+      "cotes": {
+        "1": 5.0,
+        "2": 3.9,
+        "3": 3.2,
+        "4": 8.7,
+        "5": 6.7,
+        "6": 8.8
+      }
+    },
+    {
+      "scraped_at": "2026-11-09T20:28:52.944250+01:00",
+      "minutes_avant_depart": 0.11795203333333333,
+      "cotes": {
+        "1": 5.5,
+        "2": 3.5,
+        "3": 3.4,
+        "4": 9.5,
+        "5": 6.1,
         "6": 8.8
       }
     }
