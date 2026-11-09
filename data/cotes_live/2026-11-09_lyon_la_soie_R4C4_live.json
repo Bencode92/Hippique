@@ -4,8 +4,8 @@
   "reunion": 4,
   "heure_depart": 1794244260000,
   "distance": 2400,
-  "scraped_at": "2026-11-09T18:06:21.826427+01:00",
-  "minutes_avant_depart": 5,
+  "scraped_at": "2026-11-09T18:09:01.779544+01:00",
+  "minutes_avant_depart": 2,
   "participants": [
     {
       "numPmu": 1,
@@ -14,43 +14,43 @@
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794243964000
+      "timestamp_cote": 1794244128000
     },
     {
       "numPmu": 2,
       "nom": "SFUSATO",
-      "cote_live": 9.7,
+      "cote_live": 7.2,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794243964000
+      "timestamp_cote": 1794244128000
     },
     {
       "numPmu": 3,
       "nom": "FIRST LADY STAR",
-      "cote_live": 6.9,
+      "cote_live": 6.8,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794243964000
+      "timestamp_cote": 1794244128000
     },
     {
       "numPmu": 4,
       "nom": "DAYTONINE",
-      "cote_live": 4.6,
+      "cote_live": 4.4,
       "cote_reference": 7.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794243964000
+      "timestamp_cote": 1794244128000
     },
     {
       "numPmu": 5,
       "nom": "MARANELLO",
-      "cote_live": 2.5,
+      "cote_live": 2.8,
       "cote_reference": 2.0,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794243964000
+      "timestamp_cote": 1794244128000
     },
     {
       "numPmu": 6,
@@ -59,34 +59,34 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794243964000
+      "timestamp_cote": 1794244128000
     },
     {
       "numPmu": 7,
       "nom": "BIRDY SUN",
-      "cote_live": 38.0,
+      "cote_live": 39.0,
       "cote_reference": 30.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794243964000
+      "timestamp_cote": 1794244128000
     },
     {
       "numPmu": 8,
       "nom": "TEMADIVA",
-      "cote_live": 10.0,
+      "cote_live": 9.7,
       "cote_reference": 6.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794243964000
+      "timestamp_cote": 1794244128000
     },
     {
       "numPmu": 9,
       "nom": "SECRET QUEEN",
-      "cote_live": 39.0,
+      "cote_live": 40.0,
       "cote_reference": 39.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794243964000
+      "timestamp_cote": 1794244128000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -224,6 +224,66 @@
         "7": 38.0,
         "8": 10.0,
         "9": 39.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-09T18:07:01.875654+01:00",
+      "minutes_avant_depart": 3.9725191333333334,
+      "cotes": {
+        "1": 20.0,
+        "2": 7.9,
+        "3": 7.2,
+        "4": 4.5,
+        "5": 2.6,
+        "6": 14.0,
+        "7": 41.0,
+        "8": 9.5,
+        "9": 41.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-09T18:07:42.499189+01:00",
+      "minutes_avant_depart": 3.2964845,
+      "cotes": {
+        "1": 20.0,
+        "2": 7.0,
+        "3": 6.9,
+        "4": 4.6,
+        "5": 2.7,
+        "6": 14.0,
+        "7": 41.0,
+        "8": 9.8,
+        "9": 40.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-09T18:08:21.777022+01:00",
+      "minutes_avant_depart": 2.639181333333333,
+      "cotes": {
+        "1": 20.0,
+        "2": 7.2,
+        "3": 6.8,
+        "4": 4.5,
+        "5": 2.8,
+        "6": 13.0,
+        "7": 40.0,
+        "8": 9.9,
+        "9": 40.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-09T18:09:01.779544+01:00",
+      "minutes_avant_depart": 1.9725136333333333,
+      "cotes": {
+        "1": 19.0,
+        "2": 7.2,
+        "3": 6.8,
+        "4": 4.4,
+        "5": 2.8,
+        "6": 13.0,
+        "7": 39.0,
+        "8": 9.7,
+        "9": 40.0
       }
     }
   ]
