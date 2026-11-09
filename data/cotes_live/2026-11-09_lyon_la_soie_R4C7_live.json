@@ -4,35 +4,35 @@
   "reunion": 4,
   "heure_depart": 1794250680000,
   "distance": 1800,
-  "scraped_at": "2026-11-09T19:48:53.163855+01:00",
-  "minutes_avant_depart": 9,
+  "scraped_at": "2026-11-09T19:54:12.936479+01:00",
+  "minutes_avant_depart": 4,
   "participants": [
     {
       "numPmu": 1,
       "nom": "DELIRE D'AMOUR",
-      "cote_live": 7.3,
+      "cote_live": 7.8,
       "cote_reference": 6.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794250111000
+      "timestamp_cote": 1794250441000
     },
     {
       "numPmu": 2,
       "nom": "FASOLDOFA",
-      "cote_live": 6.5,
+      "cote_live": 6.7,
       "cote_reference": 4.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794250111000
+      "timestamp_cote": 1794250441000
     },
     {
       "numPmu": 3,
       "nom": "ANAHEIM",
-      "cote_live": 9.3,
+      "cote_live": 7.4,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794250111000
+      "timestamp_cote": 1794250441000
     },
     {
       "numPmu": 4,
@@ -41,16 +41,16 @@
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794250111000
+      "timestamp_cote": 1794250441000
     },
     {
       "numPmu": 5,
       "nom": "PURPLE DAHLIA",
-      "cote_live": 27.0,
+      "cote_live": 29.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794250111000
+      "timestamp_cote": 1794250441000
     },
     {
       "numPmu": 6,
@@ -59,43 +59,43 @@
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794250111000
+      "timestamp_cote": 1794250441000
     },
     {
       "numPmu": 7,
       "nom": "NEW PEARL",
-      "cote_live": 6.0,
+      "cote_live": 6.3,
       "cote_reference": 6.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794250111000
+      "timestamp_cote": 1794250441000
     },
     {
       "numPmu": 8,
       "nom": "NAIDEE",
-      "cote_live": 8.0,
+      "cote_live": 8.6,
       "cote_reference": 6.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794250111000
+      "timestamp_cote": 1794250441000
     },
     {
       "numPmu": 9,
       "nom": "PULP FICTION",
-      "cote_live": 20.0,
+      "cote_live": 21.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794250111000
+      "timestamp_cote": 1794250441000
     },
     {
       "numPmu": 10,
       "nom": "NANALA",
-      "cote_live": 14.0,
+      "cote_live": 13.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794250111000
+      "timestamp_cote": 1794250441000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -194,6 +194,70 @@
         "8": 8.0,
         "9": 20.0,
         "10": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-09T19:52:13.164160+01:00",
+      "minutes_avant_depart": 5.7847278499999994,
+      "cotes": {
+        "1": 8.1,
+        "2": 7.1,
+        "3": 8.4,
+        "4": 3.8,
+        "5": 29.0,
+        "6": 18.0,
+        "7": 6.1,
+        "8": 8.1,
+        "9": 20.0,
+        "10": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-09T19:52:53.406478+01:00",
+      "minutes_avant_depart": 5.1129528833333335,
+      "cotes": {
+        "1": 8.1,
+        "2": 7.1,
+        "3": 8.2,
+        "4": 3.8,
+        "5": 29.0,
+        "6": 17.0,
+        "7": 6.1,
+        "8": 8.2,
+        "9": 20.0,
+        "10": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-09T19:53:33.148046+01:00",
+      "minutes_avant_depart": 4.451390766666666,
+      "cotes": {
+        "1": 7.7,
+        "2": 7.3,
+        "3": 8.0,
+        "4": 3.9,
+        "5": 29.0,
+        "6": 17.0,
+        "7": 6.1,
+        "8": 8.3,
+        "9": 20.0,
+        "10": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-09T19:54:12.936479+01:00",
+      "minutes_avant_depart": 3.784722,
+      "cotes": {
+        "1": 7.8,
+        "2": 6.7,
+        "3": 7.4,
+        "4": 4.1,
+        "5": 29.0,
+        "6": 18.0,
+        "7": 6.3,
+        "8": 8.6,
+        "9": 21.0,
+        "10": 13.0
       }
     }
   ]
