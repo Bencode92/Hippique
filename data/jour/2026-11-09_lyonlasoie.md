@@ -98,45 +98,45 @@
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 1 | J'AURAIS DU | 2,8 | 3,5 | H.BOUTIN | 17/33/21/51 |
-| 7 | BELLO LEO | 6,5 | 5,9 | E.PUILLET-RODA | 69/26/279/398 |
-| 2 | SPIRIT GREY | 8,3 | 7,5 | A.ORANI 3e | 5/35/123/182 |
-| 3 | MASINDHAL | 9,1 | 6,9 | H.BESNIER | 11/100/244/755 |
-| 10 | SECRET FEELING | 9,7 | 10 | F.VERON | 25/242/596/857 |
-| 12 | PACO | 11 | 9,6 | M.VELON | 27/33/7/51 |
+| 1 | J'AURAIS DU | 2,8 | 2,9 | H.BOUTIN | 17/33/21/51 |
+| 7 | BELLO LEO | 6,5 | 6,3 | E.PUILLET-RODA | 69/26/279/398 |
+| 2 | SPIRIT GREY | 8,3 | 9,4 | A.ORANI 3e | 5/35/123/182 |
+| 3 | MASINDHAL | 9,1 | 6,1 | H.BESNIER | 11/100/244/755 |
+| 10 | SECRET FEELING | 9,7 | 12 | F.VERON | 25/242/596/857 |
+| 12 | PACO | 11 | 11 | M.VELON | 27/33/7/51 |
 | 4 | BRAVE SHIINA | 20 | 21 | A.MOLINS | 28/77/1947/458 |
-| 8 | MAHJOUBA | 27 | 30 | E.CORALLO | 59/100/421/303 |
-| 9 | IRELIA | 27 | 29 | D.PROVOST | 33/242/5/857 |
-| 11 | COTAI HERO | 27 | 22 | D.SANTIAGO | 19/532/3415/1761 |
-| 5 | MAGIC TREVILLE | 34 | 32 | K.GAUDEFFROY | 128/35/25/535 |
-| 6 | ANCOLIE | 46 | 44 | B.MARIE | 63/227/13/5402 |
+| 11 | COTAI HERO | 27 | 24 | D.SANTIAGO | 19/532/3415/1761 |
+| 8 | MAHJOUBA | 27 | 22 | E.CORALLO | 59/100/421/303 |
+| 9 | IRELIA | 27 | 30 | D.PROVOST | 33/242/5/857 |
+| 5 | MAGIC TREVILLE | 34 | 40 | K.GAUDEFFROY | 128/35/25/535 |
+| 6 | ANCOLIE | 46 | 59 | B.MARIE | 63/227/13/5402 |
 
 ### 7. PRIX LA COTE
 
-*19h53 · plat · 1800 m · 10 partants · cotes à T−0:27*
+*19h58 · plat · 1800 m · 10 partants · cotes à T−0:27*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 4 | TUWARI | 4,2 | 8,4 | H.BOUTIN | 17/74/3/6 |
-| 2 | FASOLDOFA | 6,1 | 6,8 | T.BACHELOT | 16/197/233/1019 |
-| 7 | NEW PEARL | 6,7 | 5,6 | F.VERON | 25/131/118/215 |
-| 8 | NAIDEE | 6,8 | 8,8 | A.MOLINS | 28/93/21/567 |
-| 1 | DELIRE D'AMOUR | 7 | 5,1 | B.MARIE | 63/306/19/468 |
-| 3 | ANAHEIM | 8,3 | 8,2 | H.BESNIER | 11/268/5/185 |
-| 10 | NANALA | 13 | 12 | D.SANTIAGO | 19/532/515/1761 |
-| 6 | RUE MADON | 25 | 10 | N.ASTIER | 164/49/319/867 |
-| 9 | PULP FICTION | 27 | 25 | B.FLANDRIN | 103/201/291/308 |
-| 5 | PURPLE DAHLIA | 30 | 17 | A.ORANI 3e | 5/268/2005/809 |
+| 4 | TUWARI | 4,2 | 4,1 | H.BOUTIN | 17/74/3/6 |
+| 2 | FASOLDOFA | 6,1 | 5,8 | T.BACHELOT | 16/197/233/1019 |
+| 7 | NEW PEARL | 6,7 | 7,5 | F.VERON | 25/131/118/215 |
+| 8 | NAIDEE | 6,8 | 7 | A.MOLINS | 28/93/21/567 |
+| 1 | DELIRE D'AMOUR | 7 | 7,9 | B.MARIE | 63/306/19/468 |
+| 3 | ANAHEIM | 8,3 | 6,1 | H.BESNIER | 11/268/5/185 |
+| 10 | NANALA | 13 | 15 | D.SANTIAGO | 19/532/515/1761 |
+| 6 | RUE MADON | 25 | 28 | N.ASTIER | 164/49/319/867 |
+| 9 | PULP FICTION | 27 | 31 | B.FLANDRIN | 103/201/291/308 |
+| 5 | PURPLE DAHLIA | 30 | 32 | A.ORANI 3e | 5/268/2005/809 |
 
 ### 8. PRIX PEROUGES
 
-*20h27 · plat · 1800 m · 6 partants · cotes à T−0:07*
+*20h29 · plat · 1800 m · 6 partants · cotes à T−0:07*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 3 | BOCCA AL LUPO | 3,4 | 6,7 | A.ORANI 3e | 5/11/13/507 |
-| 2 | TESTERINE | 3,5 | 3,7 | B.MARIE | 63/306/7/468 |
-| 1 | LEVER DE RIDEAU | 5,5 | 2,6 | H.BESNIER | 11/56/7/16 |
-| 5 | STELLA DU ORO | 6,1 | 13 | M.WALDHAUSER | 45/11/100/106 |
-| 6 | MAMA STRALIA | 8,8 | 9,8 | M.VELON | 27/56/7/16 |
-| 4 | VELOURS | 9,5 | 5,7 | D.PROVOST | 33/9/10/1267 |
+| 3 | BOCCA AL LUPO | 3,4 | 2,8 | A.ORANI 3e | 5/11/13/507 |
+| 2 | TESTERINE | 3,5 | 3,2 | B.MARIE | 63/306/7/468 |
+| 1 | LEVER DE RIDEAU | 5,5 | 7,4 | H.BESNIER | 11/56/7/16 |
+| 5 | STELLA DU ORO | 6,1 | 6,4 | M.WALDHAUSER | 45/11/100/106 |
+| 6 | MAMA STRALIA | 8,8 | 10 | M.VELON | 27/56/7/16 |
+| 4 | VELOURS | 9,5 | 10 | D.PROVOST | 33/9/10/1267 |
