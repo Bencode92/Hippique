@@ -94,22 +94,22 @@
 
 ### 6. PRIX DE DIVONNE-LES-BAINS
 
-*19h19 · plat · 1800 m · 12 partants · cotes à T−4:46*
+*19h19 · plat · 1800 m · 12 partants · cotes à T−2:07*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 1 | J'AURAIS DU | 3 | 3,5 | H.BOUTIN | 17/33/21/51 |
-| 7 | BELLO LEO | 7,7 | 5,9 | E.PUILLET-RODA | 69/26/279/398 |
-| 3 | MASINDHAL | 8,4 | 6,9 | H.BESNIER | 11/100/244/755 |
-| 2 | SPIRIT GREY | 8,9 | 7,5 | A.ORANI 3e | 5/35/123/182 |
-| 10 | SECRET FEELING | 9,4 | 10 | F.VERON | 25/242/596/857 |
-| 12 | PACO | 9,9 | 9,6 | M.VELON | 27/33/7/51 |
-| 4 | BRAVE SHIINA | 21 | 21 | A.MOLINS | 28/77/1947/458 |
-| 8 | MAHJOUBA | 22 | 30 | E.CORALLO | 59/100/421/303 |
-| 11 | COTAI HERO | 22 | 22 | D.SANTIAGO | 19/532/3415/1761 |
-| 5 | MAGIC TREVILLE | 25 | 32 | K.GAUDEFFROY | 128/35/25/535 |
-| 9 | IRELIA | 27 | 29 | D.PROVOST | 33/242/5/857 |
-| 6 | ANCOLIE | 36 | 44 | B.MARIE | 63/227/13/5402 |
+| 1 | J'AURAIS DU | 2,9 | 3,5 | H.BOUTIN | 17/33/21/51 |
+| 2 | SPIRIT GREY | 7,6 | 7,5 | A.ORANI 3e | 5/35/123/182 |
+| 3 | MASINDHAL | 8,2 | 6,9 | H.BESNIER | 11/100/244/755 |
+| 7 | BELLO LEO | 8,8 | 5,9 | E.PUILLET-RODA | 69/26/279/398 |
+| 10 | SECRET FEELING | 8,8 | 10 | F.VERON | 25/242/596/857 |
+| 12 | PACO | 10 | 9,6 | M.VELON | 27/33/7/51 |
+| 4 | BRAVE SHIINA | 23 | 21 | A.MOLINS | 28/77/1947/458 |
+| 8 | MAHJOUBA | 23 | 30 | E.CORALLO | 59/100/421/303 |
+| 11 | COTAI HERO | 24 | 22 | D.SANTIAGO | 19/532/3415/1761 |
+| 9 | IRELIA | 26 | 29 | D.PROVOST | 33/242/5/857 |
+| 5 | MAGIC TREVILLE | 29 | 32 | K.GAUDEFFROY | 128/35/25/535 |
+| 6 | ANCOLIE | 39 | 44 | B.MARIE | 63/227/13/5402 |
 
 ### 7. PRIX LA COTE
 
