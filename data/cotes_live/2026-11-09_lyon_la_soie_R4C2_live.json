@@ -4,26 +4,26 @@
   "reunion": 4,
   "heure_depart": 1794240060000,
   "distance": 2400,
-  "scraped_at": "2026-11-09T16:43:42.231779+01:00",
-  "minutes_avant_depart": 17,
+  "scraped_at": "2026-11-09T16:47:42.088396+01:00",
+  "minutes_avant_depart": 13,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MY SECRET LIGHT",
-      "cote_live": 10.0,
+      "cote_live": 9.6,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794239007000
+      "timestamp_cote": 1794239249000
     },
     {
       "numPmu": 2,
       "nom": "NOUSDEUX",
-      "cote_live": 6.8,
+      "cote_live": 5.9,
       "cote_reference": 8.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794239007000
+      "timestamp_cote": 1794239249000
     },
     {
       "numPmu": 3,
@@ -32,7 +32,7 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794239007000
+      "timestamp_cote": 1794239249000
     },
     {
       "numPmu": 4,
@@ -41,7 +41,7 @@
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794239007000
+      "timestamp_cote": 1794239249000
     },
     {
       "numPmu": 5,
@@ -50,43 +50,43 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794239007000
+      "timestamp_cote": 1794239249000
     },
     {
       "numPmu": 6,
       "nom": "ROLEXXA",
-      "cote_live": 11.0,
+      "cote_live": 10.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794239007000
+      "timestamp_cote": 1794239249000
     },
     {
       "numPmu": 7,
       "nom": "BONNY WAY",
-      "cote_live": 18.0,
+      "cote_live": 19.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794239007000
+      "timestamp_cote": 1794239249000
     },
     {
       "numPmu": 8,
       "nom": "GALIMIX",
-      "cote_live": 36.0,
+      "cote_live": 37.0,
       "cote_reference": 32.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794239007000
+      "timestamp_cote": 1794239249000
     },
     {
       "numPmu": 9,
       "nom": "LUCERO",
-      "cote_live": 42.0,
+      "cote_live": 40.0,
       "cote_reference": 42.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794239007000
+      "timestamp_cote": 1794239249000
     },
     {
       "numPmu": 10,
@@ -95,25 +95,25 @@
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794239007000
+      "timestamp_cote": 1794239249000
     },
     {
       "numPmu": 11,
       "nom": "FETE JOYEUSE",
-      "cote_live": 20.0,
+      "cote_live": 21.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794239007000
+      "timestamp_cote": 1794239249000
     },
     {
       "numPmu": 12,
       "nom": "SKADOOSH",
-      "cote_live": 3.0,
+      "cote_live": 3.4,
       "cote_reference": 2.2,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794239007000
+      "timestamp_cote": 1794239249000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -188,6 +188,24 @@
         "10": 17.0,
         "11": 20.0,
         "12": 3.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-09T16:47:42.088396+01:00",
+      "minutes_avant_depart": 13.3027046,
+      "cotes": {
+        "1": 9.6,
+        "2": 5.9,
+        "3": 10.0,
+        "4": 11.0,
+        "5": 11.0,
+        "6": 10.0,
+        "7": 19.0,
+        "8": 37.0,
+        "9": 40.0,
+        "10": 17.0,
+        "11": 21.0,
+        "12": 3.4
       }
     }
   ]

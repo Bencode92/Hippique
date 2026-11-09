@@ -152,23 +152,23 @@
 
 ### 8. PRIX JONNY RUFFATO
 
-*17h17 · attelé · 2650 m · 16 partants · cotes de l'extraction*
+*17h17 · attelé · 2650 m · 16 partants · cotes à T−29:58*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KROME | – | J. DUBREIL |
-| 2 | KIANNICK OF NOUIC | – | M. GRASSET |
-| 3 | KORIOLIS DE ZIETTE | – | M. ABRIVARD |
-| 4 | KELCANTO BELLO | – | A. WIELS |
-| 5 | IDEAL WINNER | – | V. CABOS |
-| 6 | JADE | – | A. COLLETTE |
-| 7 | KATSUMOTO | – | PIERRICK LE MOEL |
-| 8 | KARBONE CASH | – | A. ABRIVARD |
-| 9 | JOLIE DE L'AUMANCE | – | P. GERAY |
-| 10 | JOKER GEMA | – | B. ROCHARD |
-| 11 | JADOU DU LUPIN | – | T. OUVRIE |
-| 12 | JINGLE DELO | – | J.Y. RICART |
-| 13 | ICARE DE PHYT'S | – | S. LALOUM |
-| 14 | HOLDING GIRL | – | M.X. CHARLOT |
-| 15 | GRAHIKA | – | TH. DUCOS |
-| 16 | KESITO D'URVILLE | – | M. CRIADO |
+| 16 | KESITO D'URVILLE | 3,7 | M. CRIADO |
+| 3 | KORIOLIS DE ZIETTE | 4 | M. ABRIVARD |
+| 4 | KELCANTO BELLO | 5 | A. WIELS |
+| 10 | JOKER GEMA | 6,6 | B. ROCHARD |
+| 6 | JADE | 16 | A. COLLETTE |
+| 8 | KARBONE CASH | 19 | A. ABRIVARD |
+| 11 | JADOU DU LUPIN | 21 | T. OUVRIE |
+| 2 | KIANNICK OF NOUIC | 51 | M. GRASSET |
+| 9 | JOLIE DE L'AUMANCE | 52 | P. GERAY |
+| 12 | JINGLE DELO | 57 | J.Y. RICART |
+| 13 | ICARE DE PHYT'S | 70 | S. LALOUM |
+| 7 | KATSUMOTO | 71 | PIERRICK LE MOEL |
+| 5 | IDEAL WINNER | 84 | V. CABOS |
+| 14 | HOLDING GIRL | 91 | M.X. CHARLOT |
+| 15 | GRAHIKA | 211 | TH. DUCOS |
+| 1 | KROME | 225 | J. DUBREIL |
