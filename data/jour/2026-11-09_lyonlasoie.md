@@ -130,13 +130,13 @@
 
 ### 8. PRIX PEROUGES
 
-*20h27 · plat · 1800 m · 6 partants · cotes à T−5:27*
+*20h27 · plat · 1800 m · 6 partants · cotes à T−2:47*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
 | 3 | BOCCA AL LUPO | 3,5 | 6,7 | A.ORANI 3e | 5/11/13/507 |
 | 2 | TESTERINE | 3,7 | 3,7 | B.MARIE | 63/306/7/468 |
-| 1 | LEVER DE RIDEAU | 4,7 | 2,6 | H.BESNIER | 11/56/7/16 |
-| 5 | STELLA DU ORO | 6,6 | 13 | M.WALDHAUSER | 45/11/100/106 |
-| 4 | VELOURS | 7,5 | 5,7 | D.PROVOST | 33/9/10/1267 |
-| 6 | MAMA STRALIA | 11 | 9,8 | M.VELON | 27/56/7/16 |
+| 1 | LEVER DE RIDEAU | 4,9 | 2,6 | H.BESNIER | 11/56/7/16 |
+| 5 | STELLA DU ORO | 6,7 | 13 | M.WALDHAUSER | 45/11/100/106 |
+| 4 | VELOURS | 7,9 | 5,7 | D.PROVOST | 33/9/10/1267 |
+| 6 | MAMA STRALIA | 8,8 | 9,8 | M.VELON | 27/56/7/16 |
