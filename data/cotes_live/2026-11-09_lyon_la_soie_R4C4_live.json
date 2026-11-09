@@ -1,0 +1,110 @@
+{
+  "course": "PRIX SIGNORA",
+  "numero": 4,
+  "reunion": 4,
+  "heure_depart": 1794244260000,
+  "distance": 2400,
+  "scraped_at": "2026-11-09T17:41:02.115805+01:00",
+  "minutes_avant_depart": 30,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "VILLA ADRIENNE",
+      "cote_live": 23.0,
+      "cote_reference": 45.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794241808000
+    },
+    {
+      "numPmu": 2,
+      "nom": "SFUSATO",
+      "cote_live": 10.0,
+      "cote_reference": 20.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794241808000
+    },
+    {
+      "numPmu": 3,
+      "nom": "FIRST LADY STAR",
+      "cote_live": 12.0,
+      "cote_reference": 16.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794241808000
+    },
+    {
+      "numPmu": 4,
+      "nom": "DAYTONINE",
+      "cote_live": 6.9,
+      "cote_reference": 10.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794241808000
+    },
+    {
+      "numPmu": 5,
+      "nom": "MARANELLO",
+      "cote_live": 2.2,
+      "cote_reference": 2.1,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1794241808000
+    },
+    {
+      "numPmu": 6,
+      "nom": "MARIZONA",
+      "cote_live": 10.0,
+      "cote_reference": 11.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794241808000
+    },
+    {
+      "numPmu": 7,
+      "nom": "BIRDY SUN",
+      "cote_live": 30.0,
+      "cote_reference": 91.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794241808000
+    },
+    {
+      "numPmu": 8,
+      "nom": "TEMADIVA",
+      "cote_live": 5.3,
+      "cote_reference": 3.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794241808000
+    },
+    {
+      "numPmu": 9,
+      "nom": "SECRET QUEEN",
+      "cote_live": 45.0,
+      "cote_reference": 45.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794241808000
+    }
+  ],
+  "hippodrome": "LYON LA SOIE",
+  "releves": [
+    {
+      "scraped_at": "2026-11-09T17:41:02.115805+01:00",
+      "minutes_avant_depart": 29.969007316666666,
+      "cotes": {
+        "1": 23.0,
+        "2": 10.0,
+        "3": 12.0,
+        "4": 6.9,
+        "5": 2.2,
+        "6": 10.0,
+        "7": 30.0,
+        "8": 5.3,
+        "9": 45.0
+      }
+    }
+  ]
+}
