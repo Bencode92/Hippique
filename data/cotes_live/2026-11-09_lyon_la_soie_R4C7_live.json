@@ -4,26 +4,26 @@
   "reunion": 4,
   "heure_depart": 1794250380000,
   "distance": 1800,
-  "scraped_at": "2026-11-09T19:23:33.585210+01:00",
-  "minutes_avant_depart": 29,
+  "scraped_at": "2026-11-09T19:28:13.223898+01:00",
+  "minutes_avant_depart": 25,
   "participants": [
     {
       "numPmu": 1,
       "nom": "DELIRE D'AMOUR",
-      "cote_live": 5.9,
+      "cote_live": 7.1,
       "cote_reference": 6.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794248148000
+      "timestamp_cote": 1794248870000
     },
     {
       "numPmu": 2,
       "nom": "FASOLDOFA",
-      "cote_live": 4.8,
+      "cote_live": 5.3,
       "cote_reference": 4.6,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1794248148000
+      "favoris": false,
+      "timestamp_cote": 1794248870000
     },
     {
       "numPmu": 3,
@@ -32,70 +32,70 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794248148000
+      "timestamp_cote": 1794248870000
     },
     {
       "numPmu": 4,
       "nom": "TUWARI",
-      "cote_live": 8.5,
+      "cote_live": 6.8,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794248148000
+      "timestamp_cote": 1794248870000
     },
     {
       "numPmu": 5,
       "nom": "PURPLE DAHLIA",
-      "cote_live": 20.0,
+      "cote_live": 23.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794248148000
+      "timestamp_cote": 1794248870000
     },
     {
       "numPmu": 6,
       "nom": "RUE MADON",
-      "cote_live": 15.0,
+      "cote_live": 11.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794248148000
+      "timestamp_cote": 1794248870000
     },
     {
       "numPmu": 7,
       "nom": "NEW PEARL",
-      "cote_live": 6.5,
+      "cote_live": 5.2,
       "cote_reference": 6.3,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1794248148000
+      "favoris": true,
+      "timestamp_cote": 1794248870000
     },
     {
       "numPmu": 8,
       "nom": "NAIDEE",
-      "cote_live": 5.9,
+      "cote_live": 6.8,
       "cote_reference": 6.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794248148000
+      "timestamp_cote": 1794248870000
     },
     {
       "numPmu": 9,
       "nom": "PULP FICTION",
-      "cote_live": 22.0,
+      "cote_live": 25.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794248148000
+      "timestamp_cote": 1794248870000
     },
     {
       "numPmu": 10,
       "nom": "NANALA",
-      "cote_live": 14.0,
+      "cote_live": 16.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794248148000
+      "timestamp_cote": 1794248870000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -114,6 +114,22 @@
         "8": 5.9,
         "9": 22.0,
         "10": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-09T19:28:13.223898+01:00",
+      "minutes_avant_depart": 24.78480215,
+      "cotes": {
+        "1": 7.1,
+        "2": 5.3,
+        "3": 10.0,
+        "4": 6.8,
+        "5": 23.0,
+        "6": 11.0,
+        "7": 5.2,
+        "8": 6.8,
+        "9": 25.0,
+        "10": 16.0
       }
     }
   ]
