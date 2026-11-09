@@ -8,17 +8,17 @@
 
 ### 1. PRIX CINQ CINQ
 
-*16h29 · plat · 2150 m · 7 partants · cotes à T−3:58*
+*16h29 · plat · 2150 m · 7 partants · cotes à T−1:18*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 5 | ZARLAND | 1,3 | T.BACHELOT | 16/17/110/48 |
-| 2 | INTRIGUING | 6,1 | H.BESNIER | 11/4/46/102 |
-| 7 | GAITA | 9,9 | B.MARIE | 63/306/3305/3965 |
-| 4 | SHANVICTUS | 20 | F.VERON | 25/88/57/451 |
-| 6 | TO BE NICE | 29 | M.WALDHAUSER | 45/94/1497/4212 |
-| 8 | FIDJI | 35 | A.GIREL | 117/201/291/308 |
-| 1 | NUITS DE COUGNY | 46 | M.MARQUETTE | 51/316/2744/524 |
+| 5 | ZARLAND | 1,2 | T.BACHELOT | 16/17/110/48 |
+| 2 | INTRIGUING | 7 | H.BESNIER | 11/4/46/102 |
+| 7 | GAITA | 10 | B.MARIE | 63/306/3305/3965 |
+| 4 | SHANVICTUS | 24 | F.VERON | 25/88/57/451 |
+| 6 | TO BE NICE | 34 | M.WALDHAUSER | 45/94/1497/4212 |
+| 8 | FIDJI | 41 | A.GIREL | 117/201/291/308 |
+| 1 | NUITS DE COUGNY | 56 | M.MARQUETTE | 51/316/2744/524 |
 
 ### 2. PRIX DE VANCIA
 
