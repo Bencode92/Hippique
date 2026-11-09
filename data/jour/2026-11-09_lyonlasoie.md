@@ -1,6 +1,6 @@
 # LYON LA SOIE — 09/11/2026
 
-8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 6 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -94,22 +94,22 @@
 
 ### 6. PRIX DE DIVONNE-LES-BAINS
 
-*19h19 · plat · 1800 m · 12 partants · cotes de l'extraction*
+*19h19 · plat · 1800 m · 12 partants · cotes à T−9:27*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | J'AURAIS DU | 3,5 | H.BOUTIN | 17/33/21/51 |
-| 7 | BELLO LEO | 5,9 | E.PUILLET-RODA | 69/26/279/398 |
-| 3 | MASINDHAL | 6,9 | H.BESNIER | 11/100/244/755 |
-| 2 | SPIRIT GREY | 7,5 | A.ORANI 3e | 5/35/123/182 |
-| 12 | PACO | 9,6 | M.VELON | 27/33/7/51 |
-| 10 | SECRET FEELING | 10 | F.VERON | 25/242/596/857 |
-| 4 | BRAVE SHIINA | 21 | A.MOLINS | 28/77/1947/458 |
-| 11 | COTAI HERO | 22 | D.SANTIAGO | 19/532/3415/1761 |
-| 9 | IRELIA | 29 | D.PROVOST | 33/242/5/857 |
-| 8 | MAHJOUBA | 30 | E.CORALLO | 59/100/421/303 |
-| 5 | MAGIC TREVILLE | 32 | K.GAUDEFFROY | 128/35/25/535 |
-| 6 | ANCOLIE | 44 | B.MARIE | 63/227/13/5402 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 1 | J'AURAIS DU | 3,1 | 3,5 | H.BOUTIN | 17/33/21/51 |
+| 7 | BELLO LEO | 7,5 | 5,9 | E.PUILLET-RODA | 69/26/279/398 |
+| 3 | MASINDHAL | 7,8 | 6,9 | H.BESNIER | 11/100/244/755 |
+| 2 | SPIRIT GREY | 8,9 | 7,5 | A.ORANI 3e | 5/35/123/182 |
+| 10 | SECRET FEELING | 9,4 | 10 | F.VERON | 25/242/596/857 |
+| 12 | PACO | 9,6 | 9,6 | M.VELON | 27/33/7/51 |
+| 4 | BRAVE SHIINA | 21 | 21 | A.MOLINS | 28/77/1947/458 |
+| 8 | MAHJOUBA | 22 | 30 | E.CORALLO | 59/100/421/303 |
+| 5 | MAGIC TREVILLE | 24 | 32 | K.GAUDEFFROY | 128/35/25/535 |
+| 11 | COTAI HERO | 25 | 22 | D.SANTIAGO | 19/532/3415/1761 |
+| 9 | IRELIA | 28 | 29 | D.PROVOST | 33/242/5/857 |
+| 6 | ANCOLIE | 35 | 44 | B.MARIE | 63/227/13/5402 |
 
 ### 7. PRIX LA COTE
 
