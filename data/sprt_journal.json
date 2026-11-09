@@ -1,10 +1,10 @@
 {
   "_doc": "Journal des paris réels du test séquentiel. Le pari est le relevé le plus proche de T-2:00 dans [T-2:40 ; T-1:20] (releve = 'T-m:ss') ; une course de la règle sans relevé dans la fenêtre est EXCLUE (liste exclues), jamais remplacée par la clôture. Écrit par bench/sprt_regle.mjs.",
   "debut": "2026-10-01",
-  "paris": 14,
-  "exclues_sans_releve": 9,
+  "paris": 16,
+  "exclues_sans_releve": 10,
   "favori_change_avant_cloture": 2,
-  "taux_bascule_favori": 0.143,
+  "taux_bascule_favori": 0.125,
   "lignes": [
     {
       "date": "2026-10-03",
@@ -243,6 +243,40 @@
       "dividende": 0,
       "gain_20e": -20,
       "S": -0.067
+    },
+    {
+      "date": "2026-11-08",
+      "hippodrome": "SAINT-CLOUD",
+      "R": 1,
+      "C": 7,
+      "cheval": "GRAND ART",
+      "numero": 2,
+      "cote_misee": 3.2,
+      "releve": "T-2:09",
+      "cote_finale": 3.8,
+      "favori_final_identique": true,
+      "derive": 0.385,
+      "gagne": false,
+      "dividende": 0,
+      "gain_20e": -20,
+      "S": -0.116
+    },
+    {
+      "date": "2026-11-08",
+      "hippodrome": "SAINT-CLOUD",
+      "R": 1,
+      "C": 8,
+      "cheval": "RUMPUMPEL",
+      "numero": 14,
+      "cote_misee": 3.2,
+      "releve": "T-1:49",
+      "cote_finale": 2.4,
+      "favori_final_identique": true,
+      "derive": -0.391,
+      "gagne": false,
+      "dividende": 0,
+      "gain_20e": -20,
+      "S": -0.165
     }
   ],
   "exclues": [
@@ -304,6 +338,13 @@
     },
     {
       "date": "2026-10-25",
+      "hip": "SAINT-CLOUD",
+      "r": 1,
+      "c": 5,
+      "motif": "aucun relevé dans [T-2:40 ; T-1:20]"
+    },
+    {
+      "date": "2026-11-08",
       "hip": "SAINT-CLOUD",
       "r": 1,
       "c": 5,
