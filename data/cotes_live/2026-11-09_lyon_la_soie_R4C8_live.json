@@ -4,62 +4,62 @@
   "reunion": 4,
   "heure_depart": 1794252540000,
   "distance": 1800,
-  "scraped_at": "2026-11-09T20:06:13.616562+01:00",
-  "minutes_avant_depart": 23,
+  "scraped_at": "2026-11-09T20:10:53.102161+01:00",
+  "minutes_avant_depart": 18,
   "participants": [
     {
       "numPmu": 1,
       "nom": "LEVER DE RIDEAU",
-      "cote_live": 3.9,
+      "cote_live": 4.8,
       "cote_reference": 3.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794251161000
+      "timestamp_cote": 1794251447000
     },
     {
       "numPmu": 2,
       "nom": "TESTERINE",
-      "cote_live": 5.1,
+      "cote_live": 4.3,
       "cote_reference": 4.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794251161000
+      "timestamp_cote": 1794251447000
     },
     {
       "numPmu": 3,
       "nom": "BOCCA AL LUPO",
-      "cote_live": 3.7,
+      "cote_live": 2.8,
       "cote_reference": 4.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794251161000
+      "timestamp_cote": 1794251447000
     },
     {
       "numPmu": 4,
       "nom": "VELOURS",
-      "cote_live": 6.9,
+      "cote_live": 8.3,
       "cote_reference": 7.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794251161000
+      "timestamp_cote": 1794251447000
     },
     {
       "numPmu": 5,
       "nom": "STELLA DU ORO",
-      "cote_live": 6.0,
+      "cote_live": 6.7,
       "cote_reference": 5.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794251161000
+      "timestamp_cote": 1794251447000
     },
     {
       "numPmu": 6,
       "nom": "MAMA STRALIA",
-      "cote_live": 9.3,
+      "cote_live": 12.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794251161000
+      "timestamp_cote": 1794251447000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -98,6 +98,18 @@
         "4": 6.9,
         "5": 6.0,
         "6": 9.3
+      }
+    },
+    {
+      "scraped_at": "2026-11-09T20:10:53.102161+01:00",
+      "minutes_avant_depart": 18.1180055,
+      "cotes": {
+        "1": 4.8,
+        "2": 4.3,
+        "3": 2.8,
+        "4": 8.3,
+        "5": 6.7,
+        "6": 12.0
       }
     }
   ]
