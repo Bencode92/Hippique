@@ -1,0 +1,80 @@
+{
+  "course": "PRIX PEROUGES",
+  "numero": 8,
+  "reunion": 4,
+  "heure_depart": 1794252420000,
+  "distance": 1800,
+  "scraped_at": "2026-11-09T19:57:33.129715+01:00",
+  "minutes_avant_depart": 29,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "LEVER DE RIDEAU",
+      "cote_live": 3.7,
+      "cote_reference": 3.7,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1794250632000
+    },
+    {
+      "numPmu": 2,
+      "nom": "TESTERINE",
+      "cote_live": 4.4,
+      "cote_reference": 4.4,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794250632000
+    },
+    {
+      "numPmu": 3,
+      "nom": "BOCCA AL LUPO",
+      "cote_live": 4.1,
+      "cote_reference": 4.1,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794250632000
+    },
+    {
+      "numPmu": 4,
+      "nom": "VELOURS",
+      "cote_live": 7.3,
+      "cote_reference": 7.3,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794250632000
+    },
+    {
+      "numPmu": 5,
+      "nom": "STELLA DU ORO",
+      "cote_live": 5.7,
+      "cote_reference": 5.7,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794250632000
+    },
+    {
+      "numPmu": 6,
+      "nom": "MAMA STRALIA",
+      "cote_live": 10.0,
+      "cote_reference": 10.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794250632000
+    }
+  ],
+  "hippodrome": "LYON LA SOIE",
+  "releves": [
+    {
+      "scraped_at": "2026-11-09T19:57:33.129715+01:00",
+      "minutes_avant_depart": 29.45137825,
+      "cotes": {
+        "1": 3.7,
+        "2": 4.4,
+        "3": 4.1,
+        "4": 7.3,
+        "5": 5.7,
+        "6": 10.0
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # LYON LA SOIE — 09/11/2026
 
-8 courses. 7 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 8 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -113,30 +113,30 @@
 
 ### 7. PRIX LA COTE
 
-*19h53 · plat · 1800 m · 10 partants · cotes à T−1:07*
+*19h53 · plat · 1800 m · 10 partants · cotes à T−0:27*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
 | 4 | TUWARI | 4,2 | 8,4 | H.BOUTIN | 17/74/3/6 |
-| 2 | FASOLDOFA | 5,8 | 6,8 | T.BACHELOT | 16/197/233/1019 |
-| 7 | NEW PEARL | 6,6 | 5,6 | F.VERON | 25/131/118/215 |
-| 1 | DELIRE D'AMOUR | 7,4 | 5,1 | B.MARIE | 63/306/19/468 |
-| 8 | NAIDEE | 7,5 | 8,8 | A.MOLINS | 28/93/21/567 |
-| 3 | ANAHEIM | 7,7 | 8,2 | H.BESNIER | 11/268/5/185 |
-| 10 | NANALA | 14 | 12 | D.SANTIAGO | 19/532/515/1761 |
-| 6 | RUE MADON | 24 | 10 | N.ASTIER | 164/49/319/867 |
+| 2 | FASOLDOFA | 6,1 | 6,8 | T.BACHELOT | 16/197/233/1019 |
+| 7 | NEW PEARL | 6,7 | 5,6 | F.VERON | 25/131/118/215 |
+| 8 | NAIDEE | 6,8 | 8,8 | A.MOLINS | 28/93/21/567 |
+| 1 | DELIRE D'AMOUR | 7 | 5,1 | B.MARIE | 63/306/19/468 |
+| 3 | ANAHEIM | 8,3 | 8,2 | H.BESNIER | 11/268/5/185 |
+| 10 | NANALA | 13 | 12 | D.SANTIAGO | 19/532/515/1761 |
+| 6 | RUE MADON | 25 | 10 | N.ASTIER | 164/49/319/867 |
 | 9 | PULP FICTION | 27 | 25 | B.FLANDRIN | 103/201/291/308 |
 | 5 | PURPLE DAHLIA | 30 | 17 | A.ORANI 3e | 5/268/2005/809 |
 
 ### 8. PRIX PEROUGES
 
-*20h27 · plat · 1800 m · 6 partants · cotes de l'extraction*
+*20h27 · plat · 1800 m · 6 partants · cotes à T−29:27*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | LEVER DE RIDEAU | 2,6 | H.BESNIER | 11/56/7/16 |
-| 2 | TESTERINE | 3,7 | B.MARIE | 63/306/7/468 |
-| 4 | VELOURS | 5,7 | D.PROVOST | 33/9/10/1267 |
-| 3 | BOCCA AL LUPO | 6,7 | A.ORANI 3e | 5/11/13/507 |
-| 6 | MAMA STRALIA | 9,8 | M.VELON | 27/56/7/16 |
-| 5 | STELLA DU ORO | 13 | M.WALDHAUSER | 45/11/100/106 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 1 | LEVER DE RIDEAU | 3,7 | 2,6 | H.BESNIER | 11/56/7/16 |
+| 3 | BOCCA AL LUPO | 4,1 | 6,7 | A.ORANI 3e | 5/11/13/507 |
+| 2 | TESTERINE | 4,4 | 3,7 | B.MARIE | 63/306/7/468 |
+| 5 | STELLA DU ORO | 5,7 | 13 | M.WALDHAUSER | 45/11/100/106 |
+| 4 | VELOURS | 7,3 | 5,7 | D.PROVOST | 33/9/10/1267 |
+| 6 | MAMA STRALIA | 10 | 9,8 | M.VELON | 27/56/7/16 |
