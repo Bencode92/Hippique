@@ -4,71 +4,71 @@
   "reunion": 4,
   "heure_depart": 1794238140000,
   "distance": 2150,
-  "scraped_at": "2026-11-09T16:21:41.649165+01:00",
-  "minutes_avant_depart": 7,
+  "scraped_at": "2026-11-09T16:25:01.747813+01:00",
+  "minutes_avant_depart": 4,
   "participants": [
     {
       "numPmu": 1,
       "nom": "NUITS DE COUGNY",
-      "cote_live": 40.0,
+      "cote_live": 46.0,
       "cote_reference": 47.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794237676000
+      "timestamp_cote": 1794237896000
     },
     {
       "numPmu": 2,
       "nom": "INTRIGUING",
-      "cote_live": 5.4,
+      "cote_live": 6.1,
       "cote_reference": 5.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794237676000
+      "timestamp_cote": 1794237896000
     },
     {
       "numPmu": 4,
       "nom": "SHANVICTUS",
-      "cote_live": 17.0,
+      "cote_live": 20.0,
       "cote_reference": 28.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794237676000
+      "timestamp_cote": 1794237896000
     },
     {
       "numPmu": 5,
       "nom": "ZARLAND",
-      "cote_live": 1.5,
+      "cote_live": 1.3,
       "cote_reference": 1.4,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794237676000
+      "timestamp_cote": 1794237896000
     },
     {
       "numPmu": 6,
       "nom": "TO BE NICE",
-      "cote_live": 23.0,
+      "cote_live": 29.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794237676000
+      "timestamp_cote": 1794237896000
     },
     {
       "numPmu": 7,
       "nom": "GAITA",
-      "cote_live": 7.7,
+      "cote_live": 9.9,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794237676000
+      "timestamp_cote": 1794237896000
     },
     {
       "numPmu": 8,
       "nom": "FIDJI",
-      "cote_live": 33.0,
+      "cote_live": 35.0,
       "cote_reference": 31.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794237676000
+      "timestamp_cote": 1794237896000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -136,6 +136,58 @@
         "6": 23.0,
         "7": 7.7,
         "8": 33.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-09T16:23:01.935336+01:00",
+      "minutes_avant_depart": 5.972856816666667,
+      "cotes": {
+        "1": 43.0,
+        "2": 5.3,
+        "4": 17.0,
+        "5": 1.5,
+        "6": 22.0,
+        "7": 7.5,
+        "8": 34.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-09T16:23:42.051751+01:00",
+      "minutes_avant_depart": 5.306187366666666,
+      "cotes": {
+        "1": 57.0,
+        "2": 7.2,
+        "4": 24.0,
+        "5": 1.2,
+        "6": 29.0,
+        "7": 10.0,
+        "8": 42.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-09T16:24:22.361046+01:00",
+      "minutes_avant_depart": 4.6329362000000005,
+      "cotes": {
+        "1": 49.0,
+        "2": 6.7,
+        "4": 20.0,
+        "5": 1.3,
+        "6": 31.0,
+        "7": 9.6,
+        "8": 39.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-09T16:25:01.747813+01:00",
+      "minutes_avant_depart": 3.972851116666667,
+      "cotes": {
+        "1": 46.0,
+        "2": 6.1,
+        "4": 20.0,
+        "5": 1.3,
+        "6": 29.0,
+        "7": 9.9,
+        "8": 35.0
       }
     }
   ]
