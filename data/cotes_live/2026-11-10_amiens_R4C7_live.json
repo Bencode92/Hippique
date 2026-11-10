@@ -4,26 +4,26 @@
   "reunion": 4,
   "heure_depart": 1794340440000,
   "distance": 2900,
-  "scraped_at": "2026-11-10T20:58:12.935444+01:00",
-  "minutes_avant_depart": -4,
+  "scraped_at": "2026-11-10T20:58:53.177583+01:00",
+  "minutes_avant_depart": -5,
   "participants": [
     {
       "numPmu": 1,
       "nom": "NOMINOHE",
-      "cote_live": 28.0,
+      "cote_live": 29.0,
       "cote_reference": 30.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794340689000
+      "timestamp_cote": 1794340730000
     },
     {
       "numPmu": 2,
       "nom": "GAME OF STARS",
-      "cote_live": 7.2,
+      "cote_live": 6.8,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794340689000
+      "timestamp_cote": 1794340730000
     },
     {
       "numPmu": 3,
@@ -32,16 +32,16 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794340689000
+      "timestamp_cote": 1794340730000
     },
     {
       "numPmu": 4,
       "nom": "GAREYA",
-      "cote_live": 3.2,
+      "cote_live": 3.3,
       "cote_reference": 1.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794340689000
+      "timestamp_cote": 1794340730000
     },
     {
       "numPmu": 5,
@@ -49,17 +49,17 @@
       "cote_live": 3.3,
       "cote_reference": 8.1,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1794340689000
+      "favoris": true,
+      "timestamp_cote": 1794340730000
     },
     {
       "numPmu": 6,
       "nom": "PASTILLE BAM'S",
-      "cote_live": 32.0,
+      "cote_live": 33.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794340689000
+      "timestamp_cote": 1794340730000
     },
     {
       "numPmu": 7,
@@ -68,25 +68,25 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794340689000
+      "timestamp_cote": 1794340730000
     },
     {
       "numPmu": 9,
       "nom": "QUERIDIA MIA",
-      "cote_live": 73.0,
+      "cote_live": 77.0,
       "cote_reference": 55.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794340689000
+      "timestamp_cote": 1794340730000
     },
     {
       "numPmu": 10,
       "nom": "MITCHELL'S COMET",
-      "cote_live": 6.4,
+      "cote_live": 6.0,
       "cote_reference": 9.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794340689000
+      "timestamp_cote": 1794340730000
     }
   ],
   "hippodrome": "AMIENS",
@@ -419,6 +419,21 @@
         "7": 15.0,
         "9": 73.0,
         "10": 6.4
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T20:58:53.177583+01:00",
+      "minutes_avant_depart": -4.880116716666667,
+      "cotes": {
+        "1": 29.0,
+        "2": 6.8,
+        "3": 11.0,
+        "4": 3.3,
+        "5": 3.3,
+        "6": 33.0,
+        "7": 15.0,
+        "9": 77.0,
+        "10": 6.0
       }
     }
   ]
