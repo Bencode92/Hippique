@@ -4,62 +4,62 @@
   "reunion": 4,
   "heure_depart": 1794334080000,
   "distance": 1650,
-  "scraped_at": "2026-11-10T19:00:53.062541+01:00",
-  "minutes_avant_depart": 7,
+  "scraped_at": "2026-11-10T19:03:33.202076+01:00",
+  "minutes_avant_depart": 4,
   "participants": [
     {
       "numPmu": 2,
       "nom": "GRAN HABANO",
-      "cote_live": 10.0,
+      "cote_live": 8.2,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794333633000
+      "timestamp_cote": 1794333791000
     },
     {
       "numPmu": 3,
       "nom": "REKHALE",
-      "cote_live": 6.5,
+      "cote_live": 7.0,
       "cote_reference": 7.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794333633000
+      "timestamp_cote": 1794333791000
     },
     {
       "numPmu": 4,
       "nom": "GRAND MACHO",
-      "cote_live": 10.0,
+      "cote_live": 9.1,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794333633000
+      "timestamp_cote": 1794333791000
     },
     {
       "numPmu": 5,
       "nom": "KARINAS DREAM",
-      "cote_live": 11.0,
+      "cote_live": 12.0,
       "cote_reference": 8.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794333633000
+      "timestamp_cote": 1794333791000
     },
     {
       "numPmu": 6,
       "nom": "CEROS GOLD",
-      "cote_live": 17.0,
+      "cote_live": 19.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794333633000
+      "timestamp_cote": 1794333791000
     },
     {
       "numPmu": 7,
       "nom": "VITESSE",
-      "cote_live": 21.0,
+      "cote_live": 25.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794333633000
+      "timestamp_cote": 1794333791000
     },
     {
       "numPmu": 8,
@@ -68,7 +68,7 @@
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794333633000
+      "timestamp_cote": 1794333791000
     },
     {
       "numPmu": 9,
@@ -77,7 +77,7 @@
       "cote_reference": 4.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794333633000
+      "timestamp_cote": 1794333791000
     },
     {
       "numPmu": 10,
@@ -86,43 +86,43 @@
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794333633000
+      "timestamp_cote": 1794333791000
     },
     {
       "numPmu": 11,
       "nom": "WHATAHERO",
-      "cote_live": 18.0,
+      "cote_live": 21.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794333633000
+      "timestamp_cote": 1794333791000
     },
     {
       "numPmu": 12,
       "nom": "GALILEE DREAM",
-      "cote_live": 14.0,
+      "cote_live": 16.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794333633000
+      "timestamp_cote": 1794333791000
     },
     {
       "numPmu": 13,
       "nom": "DIEGO D'ARTOIS",
-      "cote_live": 84.0,
+      "cote_live": 73.0,
       "cote_reference": 84.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794333633000
+      "timestamp_cote": 1794333791000
     },
     {
       "numPmu": 14,
       "nom": "TOOGOODFORSCHOOL",
-      "cote_live": 9.5,
+      "cote_live": 10.0,
       "cote_reference": 8.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794333633000
+      "timestamp_cote": 1794333791000
     }
   ],
   "hippodrome": "AMIENS",
@@ -239,6 +239,63 @@
         "12": 14.0,
         "13": 84.0,
         "14": 9.5
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T19:02:13.387232+01:00",
+      "minutes_avant_depart": 5.786850966666666,
+      "cotes": {
+        "2": 7.9,
+        "3": 6.8,
+        "4": 9.9,
+        "5": 11.0,
+        "6": 18.0,
+        "7": 23.0,
+        "8": 11.0,
+        "9": 4.8,
+        "10": 15.0,
+        "11": 19.0,
+        "12": 15.0,
+        "13": 73.0,
+        "14": 10.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T19:02:53.583589+01:00",
+      "minutes_avant_depart": 5.109426116666667,
+      "cotes": {
+        "2": 8.2,
+        "3": 7.0,
+        "4": 9.0,
+        "5": 12.0,
+        "6": 19.0,
+        "7": 25.0,
+        "8": 11.0,
+        "9": 4.7,
+        "10": 14.0,
+        "11": 21.0,
+        "12": 16.0,
+        "13": 76.0,
+        "14": 10.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T19:03:33.202076+01:00",
+      "minutes_avant_depart": 4.453514533333333,
+      "cotes": {
+        "2": 8.2,
+        "3": 7.0,
+        "4": 9.1,
+        "5": 12.0,
+        "6": 19.0,
+        "7": 25.0,
+        "8": 11.0,
+        "9": 4.7,
+        "10": 14.0,
+        "11": 21.0,
+        "12": 16.0,
+        "13": 73.0,
+        "14": 10.0
       }
     }
   ]
