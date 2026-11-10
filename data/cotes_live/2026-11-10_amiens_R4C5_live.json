@@ -4,17 +4,17 @@
   "reunion": 4,
   "heure_depart": 1794336780000,
   "distance": 1650,
-  "scraped_at": "2026-11-10T19:51:32.974167+01:00",
-  "minutes_avant_depart": 1,
+  "scraped_at": "2026-11-10T19:54:13.083060+01:00",
+  "minutes_avant_depart": -1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "NIIA",
-      "cote_live": 7.3,
+      "cote_live": 5.3,
       "cote_reference": 9.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794336690000
+      "timestamp_cote": 1794336840000
     },
     {
       "numPmu": 2,
@@ -22,62 +22,62 @@
       "cote_live": 5.0,
       "cote_reference": 8.9,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1794336690000
+      "favoris": true,
+      "timestamp_cote": 1794336840000
     },
     {
       "numPmu": 3,
       "nom": "CIACCINO",
-      "cote_live": 7.3,
+      "cote_live": 6.4,
       "cote_reference": 7.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794336690000
+      "timestamp_cote": 1794336840000
     },
     {
       "numPmu": 4,
       "nom": "BAWE ISLAND",
-      "cote_live": 7.7,
+      "cote_live": 7.1,
       "cote_reference": 5.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794336690000
+      "timestamp_cote": 1794336840000
     },
     {
       "numPmu": 5,
       "nom": "MAYDY DE ROMAY",
-      "cote_live": 17.0,
+      "cote_live": 18.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794336690000
+      "timestamp_cote": 1794336840000
     },
     {
       "numPmu": 6,
       "nom": "TIME TO PARLEY",
-      "cote_live": 25.0,
+      "cote_live": 26.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794336690000
+      "timestamp_cote": 1794336840000
     },
     {
       "numPmu": 7,
       "nom": "PARISIAN BELLE",
-      "cote_live": 27.0,
+      "cote_live": 28.0,
       "cote_reference": 28.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794336690000
+      "timestamp_cote": 1794336840000
     },
     {
       "numPmu": 8,
       "nom": "SWEET DAMIANA",
-      "cote_live": 24.0,
+      "cote_live": 27.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794336690000
+      "timestamp_cote": 1794336840000
     },
     {
       "numPmu": 9,
@@ -86,43 +86,43 @@
       "cote_reference": 32.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794336690000
+      "timestamp_cote": 1794336840000
     },
     {
       "numPmu": 10,
       "nom": "EVER READY",
-      "cote_live": 24.0,
+      "cote_live": 29.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794336690000
+      "timestamp_cote": 1794336840000
     },
     {
       "numPmu": 11,
       "nom": "WHIZALIO",
-      "cote_live": 4.6,
+      "cote_live": 6.1,
       "cote_reference": 9.9,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1794336690000
+      "favoris": false,
+      "timestamp_cote": 1794336840000
     },
     {
       "numPmu": 12,
       "nom": "ROSA TREZY",
-      "cote_live": 45.0,
+      "cote_live": 54.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794336690000
+      "timestamp_cote": 1794336840000
     },
     {
       "numPmu": 13,
       "nom": "MADDOX",
-      "cote_live": 22.0,
+      "cote_live": 27.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794336690000
+      "timestamp_cote": 1794336840000
     }
   ],
   "hippodrome": "AMIENS",
@@ -372,6 +372,82 @@
         "11": 4.6,
         "12": 45.0,
         "13": 22.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T19:52:13.135555+01:00",
+      "minutes_avant_depart": 0.78672635,
+      "cotes": {
+        "1": 5.9,
+        "2": 5.5,
+        "3": 7.2,
+        "4": 7.8,
+        "5": 16.0,
+        "6": 28.0,
+        "7": 27.0,
+        "8": 26.0,
+        "9": 23.0,
+        "10": 26.0,
+        "11": 4.8,
+        "12": 46.0,
+        "13": 23.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T19:52:53.254721+01:00",
+      "minutes_avant_depart": 0.11655436666666666,
+      "cotes": {
+        "1": 6.0,
+        "2": 5.3,
+        "3": 7.6,
+        "4": 7.0,
+        "5": 16.0,
+        "6": 28.0,
+        "7": 27.0,
+        "8": 25.0,
+        "9": 23.0,
+        "10": 28.0,
+        "11": 5.1,
+        "12": 45.0,
+        "13": 23.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T19:53:33.106967+01:00",
+      "minutes_avant_depart": -0.5466107,
+      "cotes": {
+        "1": 5.9,
+        "2": 5.2,
+        "3": 6.3,
+        "4": 7.4,
+        "5": 17.0,
+        "6": 27.0,
+        "7": 26.0,
+        "8": 25.0,
+        "9": 23.0,
+        "10": 27.0,
+        "11": 5.5,
+        "12": 50.0,
+        "13": 25.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T19:54:13.083060+01:00",
+      "minutes_avant_depart": -1.2132788499999998,
+      "cotes": {
+        "1": 5.3,
+        "2": 5.0,
+        "3": 6.4,
+        "4": 7.1,
+        "5": 18.0,
+        "6": 26.0,
+        "7": 28.0,
+        "8": 27.0,
+        "9": 24.0,
+        "10": 29.0,
+        "11": 6.1,
+        "12": 54.0,
+        "13": 27.0
       }
     }
   ]
