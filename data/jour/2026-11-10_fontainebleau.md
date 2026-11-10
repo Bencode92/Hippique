@@ -173,8 +173,8 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 | 10 | MICHELANGELO | 6,6 | 6,75 | -2,2 % | T.BACHELOT | 16/48/231/1658 |
 | 1 | EAGLE GATE | 9,9 | 11,91 | -16,9 % | H.BOUTIN | 17/21/298/21 |
 | 4 | YAKFEEK | 12 | 14,29 | -16,0 % | C.SOUMILLON | 8/391/3229/798 |
-| 2 | MARY JAYNE | 14 | 18,73 | -25,2 % | P.REMOUE | 35/264/66/284 |
 | 6 | IDEE DE CHEVAL | 14 | 17,60 | -20,4 % | E.HARDOUIN | 30/119/85/1576 |
+| 2 | MARY JAYNE | 14 | 18,73 | -25,2 % | P.REMOUE | 35/264/66/284 |
 | 13 | HY DREAM | 17 | 23,51 | -27,7 % | A.CRASTUS | 15/32/45/389 |
 | 5 | HUR CAT | 22 | 27,59 | -20,3 % | M.GRANDIN | 3/103/342/1479 |
 | 12 | CHACUN SA VIE | 27 | 39,06 | -30,9 % | F.VALLE SKAR | 32/21/19/43 |
