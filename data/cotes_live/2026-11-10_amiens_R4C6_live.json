@@ -4,89 +4,89 @@
   "reunion": 4,
   "heure_depart": 1794338640000,
   "distance": 1650,
-  "scraped_at": "2026-11-10T20:18:12.867597+01:00",
-  "minutes_avant_depart": 6,
+  "scraped_at": "2026-11-10T20:20:52.937096+01:00",
+  "minutes_avant_depart": 3,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ZITTO",
-      "cote_live": 7.2,
+      "cote_live": 5.5,
       "cote_reference": 11.0,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1794338276000
+      "favoris": true,
+      "timestamp_cote": 1794338430000
     },
     {
       "numPmu": 2,
       "nom": "NIGHT MARY",
-      "cote_live": 7.0,
+      "cote_live": 8.6,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338276000
+      "timestamp_cote": 1794338430000
     },
     {
       "numPmu": 3,
       "nom": "KAPLYA",
-      "cote_live": 15.0,
+      "cote_live": 20.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338276000
+      "timestamp_cote": 1794338430000
     },
     {
       "numPmu": 4,
       "nom": "PERFECT MOON",
-      "cote_live": 10.0,
+      "cote_live": 12.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338276000
+      "timestamp_cote": 1794338430000
     },
     {
       "numPmu": 5,
       "nom": "PLAY THE GAME",
-      "cote_live": 12.0,
+      "cote_live": 11.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338276000
+      "timestamp_cote": 1794338430000
     },
     {
       "numPmu": 6,
       "nom": "MELKISEDEK",
-      "cote_live": 16.0,
+      "cote_live": 18.0,
       "cote_reference": 9.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338276000
+      "timestamp_cote": 1794338430000
     },
     {
       "numPmu": 7,
       "nom": "ALINKA",
-      "cote_live": 10.0,
+      "cote_live": 9.3,
       "cote_reference": 8.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338276000
+      "timestamp_cote": 1794338430000
     },
     {
       "numPmu": 8,
       "nom": "EXCESSIVE",
-      "cote_live": 8.7,
+      "cote_live": 8.6,
       "cote_reference": 8.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338276000
+      "timestamp_cote": 1794338430000
     },
     {
       "numPmu": 9,
       "nom": "TACT",
-      "cote_live": 9.5,
+      "cote_live": 7.6,
       "cote_reference": 8.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338276000
+      "timestamp_cote": 1794338430000
     },
     {
       "numPmu": 10,
@@ -95,16 +95,16 @@
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338276000
+      "timestamp_cote": 1794338430000
     },
     {
       "numPmu": 11,
       "nom": "CAPOUCHINE",
-      "cote_live": 5.6,
+      "cote_live": 6.3,
       "cote_reference": 4.6,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1794338276000
+      "favoris": false,
+      "timestamp_cote": 1794338430000
     }
   ],
   "hippodrome": "AMIENS",
@@ -243,6 +243,74 @@
         "9": 9.5,
         "10": 16.0,
         "11": 5.6
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T20:18:53.219877+01:00",
+      "minutes_avant_depart": 5.119991733333333,
+      "cotes": {
+        "1": 6.1,
+        "2": 7.5,
+        "3": 16.0,
+        "4": 10.0,
+        "5": 12.0,
+        "6": 17.0,
+        "7": 10.0,
+        "8": 9.0,
+        "9": 9.0,
+        "10": 16.0,
+        "11": 5.8
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T20:19:33.632822+01:00",
+      "minutes_avant_depart": 4.4459192666666665,
+      "cotes": {
+        "1": 6.0,
+        "2": 7.9,
+        "3": 17.0,
+        "4": 10.0,
+        "5": 12.0,
+        "6": 16.0,
+        "7": 11.0,
+        "8": 8.0,
+        "9": 8.6,
+        "10": 16.0,
+        "11": 6.1
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T20:20:13.367895+01:00",
+      "minutes_avant_depart": 3.7866408833333334,
+      "cotes": {
+        "1": 5.6,
+        "2": 8.9,
+        "3": 19.0,
+        "4": 11.0,
+        "5": 11.0,
+        "6": 17.0,
+        "7": 9.6,
+        "8": 8.5,
+        "9": 8.0,
+        "10": 17.0,
+        "11": 6.1
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T20:20:52.937096+01:00",
+      "minutes_avant_depart": 3.119979133333333,
+      "cotes": {
+        "1": 5.5,
+        "2": 8.6,
+        "3": 20.0,
+        "4": 12.0,
+        "5": 11.0,
+        "6": 18.0,
+        "7": 9.3,
+        "8": 8.6,
+        "9": 7.6,
+        "10": 16.0,
+        "11": 6.3
       }
     }
   ]
