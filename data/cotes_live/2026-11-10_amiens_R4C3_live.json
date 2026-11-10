@@ -4,134 +4,125 @@
   "reunion": 4,
   "heure_depart": 1794332700000,
   "distance": 1650,
-  "scraped_at": "2026-11-10T18:44:53.066956+01:00",
-  "minutes_avant_depart": 0,
+  "scraped_at": "2026-11-10T18:47:33.132794+01:00",
+  "minutes_avant_depart": -3,
   "participants": [
     {
       "numPmu": 1,
       "nom": "RUFFANO BELLO",
-      "cote_live": 51.0,
+      "cote_live": 48.0,
       "cote_reference": 28.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794332682000
+      "timestamp_cote": 1794332852000
     },
     {
       "numPmu": 2,
       "nom": "SOUTTER",
-      "cote_live": 23.0,
+      "cote_live": 16.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794332682000
+      "timestamp_cote": 1794332852000
     },
     {
       "numPmu": 3,
       "nom": "HALF MOON BAY",
-      "cote_live": 41.0,
+      "cote_live": 38.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794332682000
+      "timestamp_cote": 1794332852000
     },
     {
       "numPmu": 4,
       "nom": "HIGHBOURNE IMPACT",
-      "cote_live": 9.7,
-      "cote_reference": 9.8,
+      "cote_live": 10.0,
+      "cote_reference": 9.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794332682000
+      "timestamp_cote": 1794332852000
     },
     {
       "numPmu": 5,
       "nom": "DON GERASIMOS",
-      "cote_live": 76.0,
+      "cote_live": 110.0,
       "cote_reference": 40.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794332682000
+      "timestamp_cote": 1794332852000
     },
     {
       "numPmu": 6,
       "nom": "BEST HEAVEN",
-      "cote_live": 4.0,
+      "cote_live": 3.1,
       "cote_reference": 5.5,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1794332682000
+      "favoris": true,
+      "timestamp_cote": 1794332852000
     },
     {
       "numPmu": 7,
       "nom": "ZERIBA",
-      "cote_live": 21.0,
-      "cote_reference": 8.1,
+      "cote_live": 27.0,
+      "cote_reference": 8.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794332682000
+      "timestamp_cote": 1794332852000
     },
     {
       "numPmu": 8,
       "nom": "DELAJA",
-      "cote_live": 3.3,
-      "cote_reference": 4.4,
+      "cote_live": 3.6,
+      "cote_reference": 4.3,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1794332682000
+      "favoris": false,
+      "timestamp_cote": 1794332852000
     },
     {
       "numPmu": 9,
       "nom": "ASSYRIE",
-      "cote_live": 6.7,
-      "cote_reference": 6.3,
+      "cote_live": 7.6,
+      "cote_reference": 6.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794332682000
+      "timestamp_cote": 1794332852000
     },
     {
       "numPmu": 10,
       "nom": "VAPOA",
-      "cote_live": 8.7,
+      "cote_live": 8.4,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794332682000
-    },
-    {
-      "numPmu": 11,
-      "nom": "ZAAZ",
-      "cote_live": 72.0,
-      "cote_reference": 70.0,
-      "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1794332682000
+      "timestamp_cote": 1794332852000
     },
     {
       "numPmu": 12,
       "nom": "MARIUS DEL MYRE",
-      "cote_live": 62.0,
-      "cote_reference": 48.0,
+      "cote_live": 91.0,
+      "cote_reference": 47.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794332682000
+      "timestamp_cote": 1794332852000
     },
     {
       "numPmu": 13,
       "nom": "HELL S THREAT",
-      "cote_live": 33.0,
+      "cote_live": 43.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794332682000
+      "timestamp_cote": 1794332852000
     },
     {
       "numPmu": 14,
       "nom": "KIRKENDE",
-      "cote_live": 55.0,
+      "cote_live": 83.0,
       "cote_reference": 45.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794332682000
+      "timestamp_cote": 1794332852000
     }
   ],
   "hippodrome": "AMIENS",
@@ -434,6 +425,85 @@
         "12": 62.0,
         "13": 33.0,
         "14": 55.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T18:45:33.131423+01:00",
+      "minutes_avant_depart": -0.54644225,
+      "cotes": {
+        "1": 57.0,
+        "2": 24.0,
+        "3": 40.0,
+        "4": 10.0,
+        "5": 92.0,
+        "6": 3.1,
+        "7": 24.0,
+        "8": 3.8,
+        "9": 7.5,
+        "10": 8.6,
+        "11": 81.0,
+        "12": 72.0,
+        "13": 36.0,
+        "14": 67.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T18:46:13.599807+01:00",
+      "minutes_avant_depart": -1.2234786166666667,
+      "cotes": {
+        "1": 63.0,
+        "2": 15.0,
+        "3": 44.0,
+        "4": 10.0,
+        "5": 102.0,
+        "6": 3.0,
+        "7": 26.0,
+        "8": 3.8,
+        "9": 7.9,
+        "10": 9.1,
+        "11": 83.0,
+        "12": 80.0,
+        "13": 38.0,
+        "14": 72.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T18:46:52.917567+01:00",
+      "minutes_avant_depart": -1.8797787166666666,
+      "cotes": {
+        "1": 49.0,
+        "2": 15.0,
+        "3": 45.0,
+        "4": 10.0,
+        "5": 102.0,
+        "6": 3.0,
+        "7": 27.0,
+        "8": 4.0,
+        "9": 7.9,
+        "10": 8.2,
+        "11": 88.0,
+        "12": 87.0,
+        "13": 39.0,
+        "14": 78.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T18:47:33.132794+01:00",
+      "minutes_avant_depart": -2.5464469833333334,
+      "cotes": {
+        "1": 48.0,
+        "2": 16.0,
+        "3": 38.0,
+        "4": 10.0,
+        "5": 110.0,
+        "6": 3.1,
+        "7": 27.0,
+        "8": 3.6,
+        "9": 7.6,
+        "10": 8.4,
+        "12": 91.0,
+        "13": 43.0,
+        "14": 83.0
       }
     }
   ]
