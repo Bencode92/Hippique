@@ -4,26 +4,26 @@
   "reunion": 4,
   "heure_depart": 1794334080000,
   "distance": 1650,
-  "scraped_at": "2026-11-10T18:38:13.446393+01:00",
-  "minutes_avant_depart": 30,
+  "scraped_at": "2026-11-10T18:42:53.628885+01:00",
+  "minutes_avant_depart": 25,
   "participants": [
     {
       "numPmu": 2,
       "nom": "GRAN HABANO",
-      "cote_live": 12.0,
+      "cote_live": 11.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794331811000
+      "timestamp_cote": 1794332555000
     },
     {
       "numPmu": 3,
       "nom": "REKHALE",
-      "cote_live": 7.3,
+      "cote_live": 7.5,
       "cote_reference": 7.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794331811000
+      "timestamp_cote": 1794332555000
     },
     {
       "numPmu": 4,
@@ -32,7 +32,7 @@
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794331811000
+      "timestamp_cote": 1794332555000
     },
     {
       "numPmu": 5,
@@ -41,25 +41,25 @@
       "cote_reference": 8.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794331811000
+      "timestamp_cote": 1794332555000
     },
     {
       "numPmu": 6,
       "nom": "CEROS GOLD",
-      "cote_live": 25.0,
+      "cote_live": 26.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794331811000
+      "timestamp_cote": 1794332555000
     },
     {
       "numPmu": 7,
       "nom": "VITESSE",
-      "cote_live": 14.0,
+      "cote_live": 15.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794331811000
+      "timestamp_cote": 1794332555000
     },
     {
       "numPmu": 8,
@@ -68,16 +68,16 @@
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794331811000
+      "timestamp_cote": 1794332555000
     },
     {
       "numPmu": 9,
       "nom": "LE CHAT BOTTE",
-      "cote_live": 4.1,
+      "cote_live": 4.4,
       "cote_reference": 4.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794331811000
+      "timestamp_cote": 1794332555000
     },
     {
       "numPmu": 10,
@@ -86,43 +86,43 @@
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794331811000
+      "timestamp_cote": 1794332555000
     },
     {
       "numPmu": 11,
       "nom": "WHATAHERO",
-      "cote_live": 22.0,
+      "cote_live": 18.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794331811000
+      "timestamp_cote": 1794332555000
     },
     {
       "numPmu": 12,
       "nom": "GALILEE DREAM",
-      "cote_live": 12.0,
+      "cote_live": 13.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794331811000
+      "timestamp_cote": 1794332555000
     },
     {
       "numPmu": 13,
       "nom": "DIEGO D'ARTOIS",
-      "cote_live": 122.0,
+      "cote_live": 76.0,
       "cote_reference": 84.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794331811000
+      "timestamp_cote": 1794332555000
     },
     {
       "numPmu": 14,
       "nom": "TOOGOODFORSCHOOL",
-      "cote_live": 8.7,
+      "cote_live": 8.5,
       "cote_reference": 8.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794331811000
+      "timestamp_cote": 1794332555000
     }
   ],
   "hippodrome": "AMIENS",
@@ -144,6 +144,25 @@
         "12": 12.0,
         "13": 122.0,
         "14": 8.7
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T18:42:53.628885+01:00",
+      "minutes_avant_depart": 25.11635575,
+      "cotes": {
+        "2": 11.0,
+        "3": 7.5,
+        "4": 10.0,
+        "5": 8.5,
+        "6": 26.0,
+        "7": 15.0,
+        "8": 14.0,
+        "9": 4.4,
+        "10": 21.0,
+        "11": 18.0,
+        "12": 13.0,
+        "13": 76.0,
+        "14": 8.5
       }
     }
   ]
