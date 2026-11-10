@@ -126,60 +126,60 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 5 | ARROW EAGLE | 2,9 | 2,4 | 3,12 | -7,1 % | A.ORANI | 5/11/226/184 |
-| 8 | PRINCESSE D'AMOUR | 6,8 | 7,4 | 7,39 | -8,0 % | PC.BOUDOT | 7/62/15/25 |
-| 6 | MARINALEDA | 9,3 | 10 | 10,61 | -12,4 % | C.LECOEUVRE | 13/19/27/624 |
-| 9 | QUEBELLA | 10 | 11 | 11,56 | -13,5 % | C.SOUMILLON | 8/289/3304/966 |
-| 13 | GALASSI | 11 | 11 | 12,59 | -12,6 % | H.JOURNIAC | 41/9/1/1078 |
-| 12 | URCHIN | 15 | 18 | 21,25 | -29,4 % | C.LEE | 250/34/–/– |
-| 2 | IF HE SAYS SO | 16 | 20 | 17,54 | -8,8 % | B.MARIE | 63/66/–/5332 |
-| 1 | JOUR POLAIRE | 21 | 23 | 30,08 | -30,2 % | A.MADAMET 4e | 12/75/2265/5002 |
-| 11 | MAY IT BE | 21 | 21 | 26,29 | -20,1 % | M.GRANDIN | 3/37/168/275 |
-| 10 | SHRIHARA | 22 | 24 | 34,10 | -35,5 % | E.HARDOUIN | 30/87/3282/2386 |
-| 4 | LE LAVANDOU | 26 | 23 | 33,57 | -22,5 % | O.ANDIGNE | 77/76/204/141 |
-| 7 | SEVENNA'S BAY | 33 | 38 | 50,37 | -34,5 % | A.HAMELIN | 23/177/3209/1766 |
-| 3 | IN THE BREEZE | 35 | 38 | 53,80 | -34,9 % | H.DOYLE | 336/–/3383/– |
+| 5 | ARROW EAGLE | 2,9 | 1,9 | 3,12 | -7,1 % | A.ORANI | 5/11/226/184 |
+| 8 | PRINCESSE D'AMOUR | 6,8 | 8,2 | 7,39 | -8,0 % | PC.BOUDOT | 7/62/15/25 |
+| 6 | MARINALEDA | 9,3 | 13 | 10,61 | -12,4 % | C.LECOEUVRE | 13/19/27/624 |
+| 9 | QUEBELLA | 10 | 12 | 11,56 | -13,5 % | C.SOUMILLON | 8/289/3304/966 |
+| 13 | GALASSI | 11 | 18 | 12,59 | -12,6 % | H.JOURNIAC | 41/9/1/1078 |
+| 12 | URCHIN | 15 | 8,3 | 21,25 | -29,4 % | C.LEE | 250/34/–/– |
+| 2 | IF HE SAYS SO | 16 | 50 | 17,54 | -8,8 % | B.MARIE | 63/66/–/5332 |
+| 11 | MAY IT BE | 21 | 36 | 26,29 | -20,1 % | M.GRANDIN | 3/37/168/275 |
+| 1 | JOUR POLAIRE | 21 | 32 | 30,08 | -30,2 % | A.MADAMET 4e | 12/75/2265/5002 |
+| 10 | SHRIHARA | 22 | 34 | 34,10 | -35,5 % | E.HARDOUIN | 30/87/3282/2386 |
+| 4 | LE LAVANDOU | 26 | 42 | 33,57 | -22,5 % | O.ANDIGNE | 77/76/204/141 |
+| 7 | SEVENNA'S BAY | 33 | 50 | 50,37 | -34,5 % | A.HAMELIN | 23/177/3209/1766 |
+| 3 | IN THE BREEZE | 35 | 39 | 53,80 | -34,9 % | H.DOYLE | 336/–/3383/– |
 
 ### 8. PRIX GUY THIBAULT
 
-*16h15 · plat · 1200 m · 15 partants · cotes de l'extraction*
+*16h18 · plat · 1200 m · 15 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 4 | GOUTTES DE DIEU | 6,5 | 6,33 | **+2,6 %** | C. SOUMILLON | 8/12/67/3171 |
-| 10 | WHITE PLATIN | 6,6 | 7,40 | -10,9 % | R.THOMAS | 68/95/701/1056 |
-| 2 | SIMPLY LOVELY | 9,5 | 10,83 | -12,3 % | F.LEFEBVRE | 46/215/792/343 |
-| 1 | REGALIEN | 9,6 | 10,95 | -12,4 % | F.VERON | 25/86/42/1485 |
-| 3 | DASH DIZZY | 10 | 12,00 | -16,7 % | A.ORANI | 5/11/4082/18 |
-| 12 | PRADARO | 11 | 12,85 | -14,4 % | A.LEMAITRE | 10/127/4/70 |
-| 14 | DROGO | 14 | 15,58 | -10,1 % | M.GRANDIN | 3/141/86/2125 |
-| 15 | FUCHSIA | 16 | 19,90 | -19,6 % | F.VALLE SKAR | 32/256/3251/525 |
-| 8 | AVERSA | 17 | 18,70 | -9,1 % | J.CLAUDIC | 40/23/5/42 |
-| 5 | CROOK | 19 | 23,67 | -19,7 % | M.GUYON 5e | 4/15/447/418 |
-| 11 | SOIF DE VIVRE | 20 | 28,28 | -29,3 % | PC.BOUDOT | 7/127/51/70 |
-| 9 | DHIFFUSHI | 23 | 32,37 | -29,0 % | M.PROTTI | 29/6/36/36 |
-| 6 | ANDARTIS | 24 | 29,86 | -19,6 % | M.VELON | 27/121/3252/727 |
-| 7 | ZENADIA | 29 | 38,44 | -24,6 % | A.MOLINS | 28/86/1062/133 |
-| 13 | QUIET WIFE | 31 | 50,21 | -38,3 % | H.BOUTIN | 17/21/260/454 |
+| 10 | WHITE PLATIN | 5,5 | 6,71 | -18,1 % | R.THOMAS | 68/95/701/1056 |
+| 4 | GOUTTES DE DIEU | 5,6 | 6,26 | -10,5 % | C. SOUMILLON | 8/12/67/3171 |
+| 3 | DASH DIZZY | 6,4 | 6,87 | -6,9 % | A.ORANI | 5/11/4082/18 |
+| 11 | SOIF DE VIVRE | 10 | 11,51 | -13,1 % | PC.BOUDOT | 7/127/51/70 |
+| 12 | PRADARO | 13 | 16,35 | -20,5 % | A.LEMAITRE | 10/127/4/70 |
+| 5 | CROOK | 14 | 15,20 | -7,9 % | M.GUYON 5e | 4/15/447/418 |
+| 1 | REGALIEN | 18 | 21,82 | -17,5 % | F.VERON | 25/86/42/1485 |
+| 2 | SIMPLY LOVELY | 18 | 23,92 | -24,8 % | F.LEFEBVRE | 46/215/792/343 |
+| 15 | FUCHSIA | 18 | 22,85 | -21,2 % | F.VALLE SKAR | 32/256/3251/525 |
+| 6 | ANDARTIS | 19 | 22,86 | -16,9 % | M.VELON | 27/121/3252/727 |
+| 13 | QUIET WIFE | 20 | 30,41 | -34,2 % | H.BOUTIN | 17/21/260/454 |
+| 9 | DHIFFUSHI | 27 | 38,94 | -30,7 % | M.PROTTI | 29/6/36/36 |
+| 8 | AVERSA | 29 | 32,89 | -11,8 % | J.CLAUDIC | 40/23/5/42 |
+| 7 | ZENADIA | 39 | 58,86 | -33,7 % | A.MOLINS | 28/86/1062/133 |
+| 14 | DROGO | 44 | 59,92 | -26,6 % | M.GRANDIN | 3/141/86/2125 |
 
 ### 9. PRIX DE CHATEAU-LANDON
 
-*16h50 · plat · 1200 m · 15 partants · cotes de l'extraction*
+*16h53 · plat · 1200 m · 15 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 8 | RED GUST | 5 | 5,57 | -10,2 % | M.GUYON 5e | 4/157/586/135 |
-| 1 | EAGLE GATE | 5,4 | 5,68 | -4,9 % | H.BOUTIN | 17/21/298/21 |
-| 9 | JESS LIVERMORE | 6,9 | 7,36 | -6,3 % | C.LECOEUVRE | 13/55/13/5 |
-| 13 | HY DREAM | 11 | 12,87 | -14,5 % | A.CRASTUS | 15/32/45/389 |
-| 2 | MARY JAYNE | 13 | 15,64 | -16,9 % | P.REMOUE | 35/264/66/284 |
-| 10 | MICHELANGELO | 14 | 17,53 | -20,2 % | T.BACHELOT | 16/48/231/1658 |
-| 5 | HUR CAT | 15 | 18,48 | -18,8 % | M.GRANDIN | 3/103/342/1479 |
-| 6 | IDEE DE CHEVAL | 15 | 19,01 | -21,1 % | E.HARDOUIN | 30/119/85/1576 |
-| 4 | YAKFEEK | 18 | 25,05 | -28,1 % | C.SOUMILLON | 8/391/3229/798 |
-| 14 | UNE PEINTURE | 22 | 27,61 | -20,3 % | M.VELON | 27/388/45/792 |
-| 3 | IMPITOYABLE | 23 | 27,65 | -16,8 % | A.LEMAITRE | 10/127/1/70 |
-| 15 | COOLMEEN ROYAL | 29 | 41,36 | -29,9 % | J.CLAUDIC | 40/200/10/319 |
-| 12 | CHACUN SA VIE | 30 | 43,86 | -31,6 % | F.VALLE SKAR | 32/21/19/43 |
-| 11 | ISMAEL PAINT | 38 | 53,43 | -28,9 % | F.VERON | 25/86/1141/133 |
-| 7 | TIME LIKE A RIVER | 80 | 110,34 | -27,5 % | F.LEFEBVRE | 46/85/330/94 |
+| 8 | RED GUST | 4,2 | 4,97 | -15,5 % | M.GUYON 5e | 4/157/586/135 |
+| 9 | JESS LIVERMORE | 5,8 | 6,32 | -8,3 % | C.LECOEUVRE | 13/55/13/5 |
+| 10 | MICHELANGELO | 6,6 | 6,75 | -2,2 % | T.BACHELOT | 16/48/231/1658 |
+| 1 | EAGLE GATE | 9,9 | 11,91 | -16,9 % | H.BOUTIN | 17/21/298/21 |
+| 4 | YAKFEEK | 12 | 14,29 | -16,0 % | C.SOUMILLON | 8/391/3229/798 |
+| 2 | MARY JAYNE | 14 | 18,73 | -25,2 % | P.REMOUE | 35/264/66/284 |
+| 6 | IDEE DE CHEVAL | 14 | 17,60 | -20,4 % | E.HARDOUIN | 30/119/85/1576 |
+| 13 | HY DREAM | 17 | 23,51 | -27,7 % | A.CRASTUS | 15/32/45/389 |
+| 5 | HUR CAT | 22 | 27,59 | -20,3 % | M.GRANDIN | 3/103/342/1479 |
+| 12 | CHACUN SA VIE | 27 | 39,06 | -30,9 % | F.VALLE SKAR | 32/21/19/43 |
+| 14 | UNE PEINTURE | 27 | 35,00 | -22,9 % | M.VELON | 27/388/45/792 |
+| 15 | COOLMEEN ROYAL | 30 | 43,12 | -30,4 % | J.CLAUDIC | 40/200/10/319 |
+| 3 | IMPITOYABLE | 34 | 45,19 | -24,8 % | A.LEMAITRE | 10/127/1/70 |
+| 11 | ISMAEL PAINT | 55 | 76,55 | -28,2 % | F.VERON | 25/86/1141/133 |
+| 7 | TIME LIKE A RIVER | 114 | 158,79 | -28,2 % | F.LEFEBVRE | 46/85/330/94 |

@@ -129,41 +129,41 @@
 
 ### 7. PRIX DE PONTORSON
 
-*15h57 · monté · 2700 m · 12 partants · cotes de l'extraction*
+*16h00 · monté · 2700 m · 12 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 9 | MILA CAAL | 3,4 | B. ROCHARD |
-| 13 | MISS DE BAILLE | 5,6 | M. MOTTIER |
-| 6 | MAYA DE CAHOT | 7,1 | W. DERSOIR-HABIB |
-| 11 | MANON DU LEARD | 7,3 | LILIAN BERTIN |
+| 13 | MISS DE BAILLE | 3,8 | M. MOTTIER |
+| 11 | MANON DU LEARD | 4,6 | LILIAN BERTIN |
+| 9 | MILA CAAL | 6,6 | B. ROCHARD |
+| 6 | MAYA DE CAHOT | 8 | W. DERSOIR-HABIB |
+| 5 | MONALISA CELO | 9,5 | A. COLLETTE |
 | 1 | MEVOILA VIVANCIERE | 10 | P.PH. PLOQUIN |
-| 5 | MONALISA CELO | 10 | A. COLLETTE |
-| 10 | MERVEILLE DU GAZON | 14 | A. ABRIVARD |
-| 12 | MALINE DES LANDES | 22 | Mlle NOEMIE HARDY |
-| 8 | MARY PICKFORD | 35 | Mme C. LEVESQUE |
-| 7 | MAHANA OF LOVE | 42 | CL. FRECELLE |
-| 3 | MADELIA | 58 | J. FERRON |
-| 2 | MADONETTE | 65 | L. JUBLOT |
+| 10 | MERVEILLE DU GAZON | 15 | A. ABRIVARD |
+| 12 | MALINE DES LANDES | 18 | Mlle NOEMIE HARDY |
+| 8 | MARY PICKFORD | 44 | Mme C. LEVESQUE |
+| 7 | MAHANA OF LOVE | 57 | CL. FRECELLE |
+| 2 | MADONETTE | 73 | L. JUBLOT |
+| 3 | MADELIA | 95 | J. FERRON |
 
 ### 8. PRIX DE BEAUVAIS
 
-*16h33 · attelé · 2700 m · 15 partants · cotes de l'extraction*
+*16h36 · attelé · 2700 m · 15 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 17 | MAGIC GIRL | 5,6 | P.PH. PLOQUIN |
-| 13 | MOONSTAR JYL | 5,9 | G. GELORMINI |
-| 9 | METSUYANE ERA | 8,1 | A. ABRIVARD |
-| 15 | MAMAMIA DES ARRIS | 8,6 | A. REBECHE |
-| 18 | MANOLA DE MUZE | 8,8 | F. LAGADEUC |
-| 12 | MEXICA BELLA | 12 | D. THOMAIN |
-| 14 | MOON DREAM | 13 | A. COLLETTE |
-| 3 | MOANA MESLOISE | 17 | P. BELLOCHE |
-| 7 | MISS BLACK BERRY | 18 | R. CONGARD |
-| 10 | MACUMBA DU VIVIER | 22 | TH. DROMIGNY |
-| 16 | MENTHE FRAICHE | 27 | D. BONNE |
-| 4 | MISS DE LA FERME | 30 | J. DUBOIS |
-| 2 | MAGIC ROSE | 46 | F. DESMIGNEUX |
-| 5 | MA BICHE NOA | 47 | CH. MARTENS |
-| 11 | MAMMA MIA DE LOU | 83 | A. LHERETE |
+| 17 | MAGIC GIRL | 4,6 | P.PH. PLOQUIN |
+| 18 | MANOLA DE MUZE | 4,9 | F. LAGADEUC |
+| 9 | METSUYANE ERA | 6,5 | A. ABRIVARD |
+| 13 | MOONSTAR JYL | 7,2 | G. GELORMINI |
+| 14 | MOON DREAM | 12 | A. COLLETTE |
+| 12 | MEXICA BELLA | 13 | D. THOMAIN |
+| 7 | MISS BLACK BERRY | 14 | R. CONGARD |
+| 15 | MAMAMIA DES ARRIS | 15 | A. REBECHE |
+| 10 | MACUMBA DU VIVIER | 31 | TH. DROMIGNY |
+| 5 | MA BICHE NOA | 35 | CH. MARTENS |
+| 4 | MISS DE LA FERME | 46 | J. DUBOIS |
+| 16 | MENTHE FRAICHE | 49 | D. BONNE |
+| 3 | MOANA MESLOISE | 56 | P. BELLOCHE |
+| 2 | MAGIC ROSE | 92 | F. DESMIGNEUX |
+| 11 | MAMMA MIA DE LOU | 141 | A. LHERETE |
