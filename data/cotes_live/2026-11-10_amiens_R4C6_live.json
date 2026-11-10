@@ -2,73 +2,73 @@
   "course": "PRIX D'ALBERT",
   "numero": 6,
   "reunion": 4,
-  "heure_depart": 1794337920000,
+  "heure_depart": 1794338520000,
   "distance": 1650,
-  "scraped_at": "2026-11-10T19:59:33.439146+01:00",
-  "minutes_avant_depart": 12,
+  "scraped_at": "2026-11-10T20:12:13.023183+01:00",
+  "minutes_avant_depart": 10,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ZITTO",
-      "cote_live": 7.7,
+      "cote_live": 9.3,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794337167000
+      "timestamp_cote": 1794337924000
     },
     {
       "numPmu": 2,
       "nom": "NIGHT MARY",
-      "cote_live": 11.0,
+      "cote_live": 10.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794337167000
+      "timestamp_cote": 1794337924000
     },
     {
       "numPmu": 3,
       "nom": "KAPLYA",
-      "cote_live": 14.0,
+      "cote_live": 18.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794337167000
+      "timestamp_cote": 1794337924000
     },
     {
       "numPmu": 4,
       "nom": "PERFECT MOON",
-      "cote_live": 11.0,
+      "cote_live": 8.6,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794337167000
+      "timestamp_cote": 1794337924000
     },
     {
       "numPmu": 5,
       "nom": "PLAY THE GAME",
-      "cote_live": 9.5,
+      "cote_live": 12.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794337167000
+      "timestamp_cote": 1794337924000
     },
     {
       "numPmu": 6,
       "nom": "MELKISEDEK",
-      "cote_live": 11.0,
+      "cote_live": 17.0,
       "cote_reference": 9.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794337167000
+      "timestamp_cote": 1794337924000
     },
     {
       "numPmu": 7,
       "nom": "ALINKA",
-      "cote_live": 8.8,
+      "cote_live": 8.9,
       "cote_reference": 8.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794337145000
+      "timestamp_cote": 1794337924000
     },
     {
       "numPmu": 8,
@@ -77,34 +77,34 @@
       "cote_reference": 8.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794337145000
+      "timestamp_cote": 1794337924000
     },
     {
       "numPmu": 9,
       "nom": "TACT",
-      "cote_live": 8.8,
+      "cote_live": 9.8,
       "cote_reference": 8.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794337145000
+      "timestamp_cote": 1794337924000
     },
     {
       "numPmu": 10,
       "nom": "RENVERSANTE",
-      "cote_live": 18.0,
+      "cote_live": 16.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794337145000
+      "timestamp_cote": 1794337924000
     },
     {
       "numPmu": 11,
       "nom": "CAPOUCHINE",
-      "cote_live": 5.4,
+      "cote_live": 3.8,
       "cote_reference": 4.6,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794337145000
+      "timestamp_cote": 1794337924000
     }
   ],
   "hippodrome": "AMIENS",
@@ -192,6 +192,23 @@
         "9": 8.8,
         "10": 18.0,
         "11": 5.4
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T20:12:13.023183+01:00",
+      "minutes_avant_depart": 9.78667605,
+      "cotes": {
+        "1": 9.3,
+        "2": 10.0,
+        "3": 18.0,
+        "4": 8.6,
+        "5": 12.0,
+        "6": 17.0,
+        "7": 8.9,
+        "8": 10.0,
+        "9": 9.8,
+        "10": 16.0,
+        "11": 3.8
       }
     }
   ]
