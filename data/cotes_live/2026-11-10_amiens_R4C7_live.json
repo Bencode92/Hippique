@@ -4,89 +4,89 @@
   "reunion": 4,
   "heure_depart": 1794340440000,
   "distance": 2900,
-  "scraped_at": "2026-11-10T20:55:33.162876+01:00",
-  "minutes_avant_depart": -2,
+  "scraped_at": "2026-11-10T20:58:12.935444+01:00",
+  "minutes_avant_depart": -4,
   "participants": [
     {
       "numPmu": 1,
       "nom": "NOMINOHE",
-      "cote_live": 24.0,
+      "cote_live": 28.0,
       "cote_reference": 30.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794340529000
+      "timestamp_cote": 1794340689000
     },
     {
       "numPmu": 2,
       "nom": "GAME OF STARS",
-      "cote_live": 6.7,
+      "cote_live": 7.2,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794340529000
+      "timestamp_cote": 1794340689000
     },
     {
       "numPmu": 3,
       "nom": "SMOLAR",
-      "cote_live": 9.5,
+      "cote_live": 11.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794340529000
+      "timestamp_cote": 1794340689000
     },
     {
       "numPmu": 4,
       "nom": "GAREYA",
-      "cote_live": 3.0,
+      "cote_live": 3.2,
       "cote_reference": 1.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794340529000
+      "timestamp_cote": 1794340689000
     },
     {
       "numPmu": 5,
       "nom": "NITRO PRECIEUSE",
-      "cote_live": 4.3,
+      "cote_live": 3.3,
       "cote_reference": 8.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794340529000
+      "timestamp_cote": 1794340689000
     },
     {
       "numPmu": 6,
       "nom": "PASTILLE BAM'S",
-      "cote_live": 24.0,
+      "cote_live": 32.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794340529000
+      "timestamp_cote": 1794340689000
     },
     {
       "numPmu": 7,
       "nom": "HENRY MONTMARTRE",
-      "cote_live": 14.0,
+      "cote_live": 15.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794340529000
+      "timestamp_cote": 1794340689000
     },
     {
       "numPmu": 9,
       "nom": "QUERIDIA MIA",
-      "cote_live": 62.0,
+      "cote_live": 73.0,
       "cote_reference": 55.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794340529000
+      "timestamp_cote": 1794340689000
     },
     {
       "numPmu": 10,
       "nom": "MITCHELL'S COMET",
-      "cote_live": 6.3,
+      "cote_live": 6.4,
       "cote_reference": 9.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794340529000
+      "timestamp_cote": 1794340689000
     }
   ],
   "hippodrome": "AMIENS",
@@ -359,6 +359,66 @@
         "7": 14.0,
         "9": 62.0,
         "10": 6.3
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T20:56:13.423866+01:00",
+      "minutes_avant_depart": -2.2214928666666665,
+      "cotes": {
+        "1": 25.0,
+        "2": 6.3,
+        "3": 9.6,
+        "4": 3.0,
+        "5": 4.5,
+        "6": 25.0,
+        "7": 14.0,
+        "9": 64.0,
+        "10": 5.9
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T20:56:53.456464+01:00",
+      "minutes_avant_depart": -2.8801118,
+      "cotes": {
+        "1": 25.0,
+        "2": 6.8,
+        "3": 9.9,
+        "4": 3.0,
+        "5": 4.3,
+        "6": 26.0,
+        "7": 12.0,
+        "9": 64.0,
+        "10": 6.1
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T20:57:32.944003+01:00",
+      "minutes_avant_depart": -3.546780083333333,
+      "cotes": {
+        "1": 26.0,
+        "2": 6.9,
+        "3": 10.0,
+        "4": 2.9,
+        "5": 4.4,
+        "6": 27.0,
+        "7": 13.0,
+        "9": 66.0,
+        "10": 6.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T20:58:12.935444+01:00",
+      "minutes_avant_depart": -4.2134483,
+      "cotes": {
+        "1": 28.0,
+        "2": 7.2,
+        "3": 11.0,
+        "4": 3.2,
+        "5": 3.3,
+        "6": 32.0,
+        "7": 15.0,
+        "9": 73.0,
+        "10": 6.4
       }
     }
   ]
