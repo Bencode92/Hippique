@@ -4,80 +4,80 @@
   "reunion": 4,
   "heure_depart": 1794327900000,
   "distance": 2200,
-  "scraped_at": "2026-11-10T17:20:46.645653+01:00",
-  "minutes_avant_depart": 4,
+  "scraped_at": "2026-11-10T17:23:26.600125+01:00",
+  "minutes_avant_depart": 2,
   "participants": [
     {
       "numPmu": 2,
       "nom": "HANDHY",
-      "cote_live": 3.8,
+      "cote_live": 4.1,
       "cote_reference": 4.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794327624000
+      "timestamp_cote": 1794327800000
     },
     {
       "numPmu": 3,
       "nom": "BLUFF",
-      "cote_live": 2.7,
+      "cote_live": 3.1,
       "cote_reference": 2.8,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794327624000
+      "timestamp_cote": 1794327800000
     },
     {
       "numPmu": 4,
       "nom": "MIAIMAOU",
-      "cote_live": 9.5,
+      "cote_live": 9.9,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794327624000
+      "timestamp_cote": 1794327800000
     },
     {
       "numPmu": 5,
       "nom": "JURMALA",
-      "cote_live": 20.0,
+      "cote_live": 9.7,
       "cote_reference": 9.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794327624000
+      "timestamp_cote": 1794327800000
     },
     {
       "numPmu": 6,
       "nom": "THE WASP",
-      "cote_live": 12.0,
+      "cote_live": 13.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794327624000
+      "timestamp_cote": 1794327800000
     },
     {
       "numPmu": 7,
       "nom": "CAMELARUA",
-      "cote_live": 5.4,
+      "cote_live": 4.3,
       "cote_reference": 6.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794327624000
+      "timestamp_cote": 1794327800000
     },
     {
       "numPmu": 8,
       "nom": "BRAMANTE",
-      "cote_live": 32.0,
+      "cote_live": 41.0,
       "cote_reference": 38.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794327624000
+      "timestamp_cote": 1794327800000
     },
     {
       "numPmu": 9,
       "nom": "SILVER CONDOR",
-      "cote_live": 18.0,
+      "cote_live": 23.0,
       "cote_reference": 9.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794327624000
+      "timestamp_cote": 1794327800000
     }
   ],
   "hippodrome": "AMIENS",
@@ -192,6 +192,62 @@
         "7": 5.4,
         "8": 32.0,
         "9": 18.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T17:21:26.451147+01:00",
+      "minutes_avant_depart": 3.568128016666667,
+      "cotes": {
+        "2": 3.7,
+        "3": 2.6,
+        "4": 9.2,
+        "5": 20.0,
+        "6": 12.0,
+        "7": 5.5,
+        "8": 34.0,
+        "9": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T17:22:05.972073+01:00",
+      "minutes_avant_depart": 2.9014594666666667,
+      "cotes": {
+        "2": 4.1,
+        "3": 3.2,
+        "4": 10.0,
+        "5": 9.1,
+        "6": 14.0,
+        "7": 4.0,
+        "8": 37.0,
+        "9": 23.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T17:22:46.105230+01:00",
+      "minutes_avant_depart": 2.23479095,
+      "cotes": {
+        "2": 4.1,
+        "3": 3.1,
+        "4": 10.0,
+        "5": 9.5,
+        "6": 13.0,
+        "7": 4.2,
+        "8": 41.0,
+        "9": 23.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T17:23:26.600125+01:00",
+      "minutes_avant_depart": 1.5598141,
+      "cotes": {
+        "2": 4.1,
+        "3": 3.1,
+        "4": 9.9,
+        "5": 9.7,
+        "6": 13.0,
+        "7": 4.3,
+        "8": 41.0,
+        "9": 23.0
       }
     }
   ]
