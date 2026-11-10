@@ -1,6 +1,6 @@
 # FONTAINEBLEAU — 10/11/2026
 
-9 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+9 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -123,23 +123,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DENISY
 
-*15h40 · plat · 3000 m · 13 partants · cotes de l'extraction*
+*15h40 · plat · 3000 m · 13 partants · cotes à T−23:17*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 6 | MARINALEDA | 2,1 | 2,17 | -3,4 % | C.LECOEUVRE | 13/19/27/624 |
-| 12 | URCHIN | 5,9 | 7,24 | -18,5 % | C.LEE | 250/34/–/– |
-| 3 | IN THE BREEZE | 7,9 | 9,75 | -19,0 % | H.DOYLE | 336/–/3383/– |
-| 4 | LE LAVANDOU | 11 | 12,64 | -13,0 % | O.ANDIGNE | 77/76/204/141 |
-| 8 | PRINCESSE D'AMOUR | 11 | 14,39 | -23,6 % | PC.BOUDOT | 7/62/15/25 |
-| 9 | QUEBELLA | 11 | 14,39 | -23,6 % | C.SOUMILLON | 8/289/3304/966 |
-| 1 | JOUR POLAIRE | 23 | 34,07 | -32,5 % | A.MADAMET 4e | 12/75/2265/5002 |
-| 2 | IF HE SAYS SO | 23 | 29,75 | -22,7 % | B.MARIE | 63/66/–/5332 |
-| 11 | MAY IT BE | 23 | 29,75 | -22,7 % | M.GRANDIN | 3/37/168/275 |
-| 5 | ARROW EAGLE | – | – |  | A.ORANI | 5/11/226/184 |
-| 7 | SEVENNA'S BAY | – | – |  | A.HAMELIN | 23/177/3209/1766 |
-| 10 | SHRIHARA | – | – |  | E.HARDOUIN | 30/87/3282/2386 |
-| 13 | GALASSI | – | – |  | H.JOURNIAC | 41/9/1/1078 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 5 | ARROW EAGLE | 2,4 | – | 2,35 | **+2,3 %** | A.ORANI | 5/11/226/184 |
+| 8 | PRINCESSE D'AMOUR | 6,7 | 11 | 7,85 | -14,6 % | PC.BOUDOT | 7/62/15/25 |
+| 6 | MARINALEDA | 9,7 | 2,1 | 11,08 | -12,4 % | C.LECOEUVRE | 13/19/27/624 |
+| 13 | GALASSI | 10 | – | 11,19 | -10,7 % | H.JOURNIAC | 41/9/1/1078 |
+| 9 | QUEBELLA | 14 | 11 | 18,63 | -24,8 % | C.SOUMILLON | 8/289/3304/966 |
+| 12 | URCHIN | 15 | 5,9 | 21,11 | -28,9 % | C.LEE | 250/34/–/– |
+| 1 | JOUR POLAIRE | 22 | 23 | 31,55 | -30,3 % | A.MADAMET 4e | 12/75/2265/5002 |
+| 10 | SHRIHARA | 22 | – | 33,89 | -35,1 % | E.HARDOUIN | 30/87/3282/2386 |
+| 11 | MAY IT BE | 22 | 23 | 27,56 | -20,2 % | M.GRANDIN | 3/37/168/275 |
+| 4 | LE LAVANDOU | 28 | 11 | 36,29 | -22,8 % | O.ANDIGNE | 77/76/204/141 |
+| 3 | IN THE BREEZE | 32 | 7,9 | 48,36 | -33,8 % | H.DOYLE | 336/–/3383/– |
+| 7 | SEVENNA'S BAY | 39 | – | 60,33 | -35,4 % | A.HAMELIN | 23/177/3209/1766 |
+| 2 | IF HE SAYS SO | 66 | 23 | 92,92 | -29,0 % | B.MARIE | 63/66/–/5332 |
 
 ### 8. PRIX GUY THIBAULT
 
