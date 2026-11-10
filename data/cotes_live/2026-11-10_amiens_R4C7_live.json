@@ -4,17 +4,17 @@
   "reunion": 4,
   "heure_depart": 1794339840000,
   "distance": 2900,
-  "scraped_at": "2026-11-10T20:26:13.691293+01:00",
-  "minutes_avant_depart": 18,
+  "scraped_at": "2026-11-10T20:30:53.166682+01:00",
+  "minutes_avant_depart": 13,
   "participants": [
     {
       "numPmu": 1,
       "nom": "NOMINOHE",
-      "cote_live": 26.0,
+      "cote_live": 27.0,
       "cote_reference": 30.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338746000
+      "timestamp_cote": 1794339032000
     },
     {
       "numPmu": 2,
@@ -23,7 +23,7 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338746000
+      "timestamp_cote": 1794339032000
     },
     {
       "numPmu": 3,
@@ -32,7 +32,7 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338746000
+      "timestamp_cote": 1794339032000
     },
     {
       "numPmu": 4,
@@ -41,16 +41,16 @@
       "cote_reference": 1.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794338746000
+      "timestamp_cote": 1794339032000
     },
     {
       "numPmu": 5,
       "nom": "NITRO PRECIEUSE",
-      "cote_live": 8.1,
+      "cote_live": 7.3,
       "cote_reference": 8.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338746000
+      "timestamp_cote": 1794339032000
     },
     {
       "numPmu": 6,
@@ -59,25 +59,25 @@
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338746000
+      "timestamp_cote": 1794339032000
     },
     {
       "numPmu": 7,
       "nom": "HENRY MONTMARTRE",
-      "cote_live": 9.9,
+      "cote_live": 10.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338746000
+      "timestamp_cote": 1794339032000
     },
     {
       "numPmu": 9,
       "nom": "QUERIDIA MIA",
-      "cote_live": 51.0,
+      "cote_live": 48.0,
       "cote_reference": 55.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338746000
+      "timestamp_cote": 1794339032000
     },
     {
       "numPmu": 10,
@@ -86,7 +86,7 @@
       "cote_reference": 9.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338746000
+      "timestamp_cote": 1794339032000
     }
   ],
   "hippodrome": "AMIENS",
@@ -148,6 +148,21 @@
         "6": 29.0,
         "7": 9.9,
         "9": 51.0,
+        "10": 8.5
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T20:30:53.166682+01:00",
+      "minutes_avant_depart": 13.119954033333332,
+      "cotes": {
+        "1": 27.0,
+        "2": 11.0,
+        "3": 13.0,
+        "4": 1.8,
+        "5": 7.3,
+        "6": 29.0,
+        "7": 10.0,
+        "9": 48.0,
         "10": 8.5
       }
     }
