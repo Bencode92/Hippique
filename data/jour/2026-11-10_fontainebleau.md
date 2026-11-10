@@ -123,23 +123,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DENISY
 
-*15h40 · plat · 3000 m · 13 partants · cotes à T−23:17*
+*15h40 · plat · 3000 m · 13 partants · cotes à T−18:37*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 5 | ARROW EAGLE | 2,4 | – | 2,35 | **+2,3 %** | A.ORANI | 5/11/226/184 |
-| 8 | PRINCESSE D'AMOUR | 6,7 | 11 | 7,85 | -14,6 % | PC.BOUDOT | 7/62/15/25 |
-| 6 | MARINALEDA | 9,7 | 2,1 | 11,08 | -12,4 % | C.LECOEUVRE | 13/19/27/624 |
-| 13 | GALASSI | 10 | – | 11,19 | -10,7 % | H.JOURNIAC | 41/9/1/1078 |
-| 9 | QUEBELLA | 14 | 11 | 18,63 | -24,8 % | C.SOUMILLON | 8/289/3304/966 |
-| 12 | URCHIN | 15 | 5,9 | 21,11 | -28,9 % | C.LEE | 250/34/–/– |
-| 1 | JOUR POLAIRE | 22 | 23 | 31,55 | -30,3 % | A.MADAMET 4e | 12/75/2265/5002 |
-| 10 | SHRIHARA | 22 | – | 33,89 | -35,1 % | E.HARDOUIN | 30/87/3282/2386 |
-| 11 | MAY IT BE | 22 | 23 | 27,56 | -20,2 % | M.GRANDIN | 3/37/168/275 |
-| 4 | LE LAVANDOU | 28 | 11 | 36,29 | -22,8 % | O.ANDIGNE | 77/76/204/141 |
-| 3 | IN THE BREEZE | 32 | 7,9 | 48,36 | -33,8 % | H.DOYLE | 336/–/3383/– |
-| 7 | SEVENNA'S BAY | 39 | – | 60,33 | -35,4 % | A.HAMELIN | 23/177/3209/1766 |
-| 2 | IF HE SAYS SO | 66 | 23 | 92,92 | -29,0 % | B.MARIE | 63/66/–/5332 |
+| 5 | ARROW EAGLE | 2,4 | – | 2,38 | **+1,0 %** | A.ORANI | 5/11/226/184 |
+| 8 | PRINCESSE D'AMOUR | 6,7 | 11 | 7,98 | -16,1 % | PC.BOUDOT | 7/62/15/25 |
+| 6 | MARINALEDA | 10 | 2,1 | 11,68 | -14,4 % | C.LECOEUVRE | 13/19/27/624 |
+| 13 | GALASSI | 10 | – | 11,39 | -12,2 % | H.JOURNIAC | 41/9/1/1078 |
+| 9 | QUEBELLA | 13 | 11 | 17,37 | -25,2 % | C.SOUMILLON | 8/289/3304/966 |
+| 12 | URCHIN | 16 | 5,9 | 23,18 | -31,0 % | C.LEE | 250/34/–/– |
+| 11 | MAY IT BE | 20 | 23 | 25,13 | -20,4 % | M.GRANDIN | 3/37/168/275 |
+| 1 | JOUR POLAIRE | 21 | 23 | 30,42 | -31,0 % | A.MADAMET 4e | 12/75/2265/5002 |
+| 10 | SHRIHARA | 22 | – | 34,48 | -36,2 % | E.HARDOUIN | 30/87/3282/2386 |
+| 4 | LE LAVANDOU | 24 | 11 | 30,97 | -22,5 % | O.ANDIGNE | 77/76/204/141 |
+| 7 | SEVENNA'S BAY | 32 | – | 49,18 | -34,9 % | A.HAMELIN | 23/177/3209/1766 |
+| 3 | IN THE BREEZE | 33 | 7,9 | 50,91 | -35,2 % | H.DOYLE | 336/–/3383/– |
+| 2 | IF HE SAYS SO | 59 | 23 | 83,81 | -29,6 % | B.MARIE | 63/66/–/5332 |
 
 ### 8. PRIX GUY THIBAULT
 
