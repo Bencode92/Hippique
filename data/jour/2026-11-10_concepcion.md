@@ -1,6 +1,6 @@
 # CONCEPCION — 10/11/2026
 
-6 courses (1 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+6 courses (3 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -43,6 +43,7 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 8 | VICTORY DAVID | 1,1 | GUSTAVO VERA |
 | 1 | WITTY GIRL | – | BRYAN  RETAMAL |
 | 2 | REY IMPETUOSO | – | VICENTE ALEXANDER MARDONES GONZA |
 | 3 | EL TATUADO | – | JUAN A. CAMPOS |
@@ -50,7 +51,6 @@
 | 5 | COFFEE BAY | – | JOSE MANUEL MOYA SEPULVEDA |
 | 6 | OLIMPIC BLUE | – | ANDRES  VEGA PEREZ JANS |
 | 7 | MACKLIN | – | JAIME ADOLFO MINO FICA |
-| 8 | VICTORY DAVID | – | GUSTAVO VERA |
 | 9 | MAGO DE NAIPES | – | BENJAMIN  DIAZ |
 
 ### 7. PREMIO ULTIMA OCASION
@@ -76,8 +76,8 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 2 | NINA SAMARITANA | 1,1 | BENJAMIN  DIAZ |
 | 1 | EL REGENTO | – | VICENTE ALEXANDER MARDONES GONZA |
-| 2 | NINA SAMARITANA | – | BENJAMIN  DIAZ |
 | 3 | GRAN RAI | – | JOSE MANUEL MOYA SEPULVEDA |
 | 4 | EL MANOLO | – | JUAN P. TORRES |
 | 5 | COPAYAPU | – | ANYELO GERMAN SOTO GARCES |
