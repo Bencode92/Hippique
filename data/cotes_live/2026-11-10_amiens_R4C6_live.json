@@ -4,8 +4,8 @@
   "reunion": 4,
   "heure_depart": 1794338640000,
   "distance": 1650,
-  "scraped_at": "2026-11-10T20:26:13.364233+01:00",
-  "minutes_avant_depart": -2,
+  "scraped_at": "2026-11-10T20:28:53.000586+01:00",
+  "minutes_avant_depart": -5,
   "participants": [
     {
       "numPmu": 1,
@@ -14,7 +14,7 @@
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794338765000
+      "timestamp_cote": 1794338920000
     },
     {
       "numPmu": 2,
@@ -23,7 +23,7 @@
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338765000
+      "timestamp_cote": 1794338920000
     },
     {
       "numPmu": 3,
@@ -32,16 +32,16 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338765000
+      "timestamp_cote": 1794338920000
     },
     {
       "numPmu": 4,
       "nom": "PERFECT MOON",
-      "cote_live": 9.3,
+      "cote_live": 9.8,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338765000
+      "timestamp_cote": 1794338920000
     },
     {
       "numPmu": 5,
@@ -50,43 +50,43 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338765000
+      "timestamp_cote": 1794338920000
     },
     {
       "numPmu": 6,
       "nom": "MELKISEDEK",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 9.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338765000
+      "timestamp_cote": 1794338920000
     },
     {
       "numPmu": 7,
       "nom": "ALINKA",
-      "cote_live": 7.7,
+      "cote_live": 7.3,
       "cote_reference": 8.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338765000
+      "timestamp_cote": 1794338920000
     },
     {
       "numPmu": 8,
       "nom": "EXCESSIVE",
-      "cote_live": 7.8,
+      "cote_live": 8.5,
       "cote_reference": 8.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338765000
+      "timestamp_cote": 1794338920000
     },
     {
       "numPmu": 9,
       "nom": "TACT",
-      "cote_live": 6.6,
+      "cote_live": 6.7,
       "cote_reference": 8.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338765000
+      "timestamp_cote": 1794338920000
     },
     {
       "numPmu": 10,
@@ -95,16 +95,16 @@
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338765000
+      "timestamp_cote": 1794338920000
     },
     {
       "numPmu": 11,
       "nom": "CAPOUCHINE",
-      "cote_live": 8.8,
+      "cote_live": 7.4,
       "cote_reference": 4.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794338765000
+      "timestamp_cote": 1794338920000
     }
   ],
   "hippodrome": "AMIENS",
@@ -447,6 +447,74 @@
         "9": 6.6,
         "10": 18.0,
         "11": 8.8
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T20:26:52.967118+01:00",
+      "minutes_avant_depart": -2.8800361166666666,
+      "cotes": {
+        "1": 6.3,
+        "2": 10.0,
+        "3": 29.0,
+        "4": 9.1,
+        "5": 10.0,
+        "6": 13.0,
+        "7": 7.3,
+        "8": 8.2,
+        "9": 6.6,
+        "10": 18.0,
+        "11": 8.7
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T20:27:32.960708+01:00",
+      "minutes_avant_depart": -3.5467047333333332,
+      "cotes": {
+        "1": 6.6,
+        "2": 10.0,
+        "3": 27.0,
+        "4": 9.6,
+        "5": 11.0,
+        "6": 13.0,
+        "7": 7.2,
+        "8": 8.2,
+        "9": 6.5,
+        "10": 19.0,
+        "11": 8.1
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T20:28:13.222763+01:00",
+      "minutes_avant_depart": -4.21337285,
+      "cotes": {
+        "1": 6.2,
+        "2": 10.0,
+        "3": 27.0,
+        "4": 9.6,
+        "5": 12.0,
+        "6": 14.0,
+        "7": 7.3,
+        "8": 8.8,
+        "9": 6.3,
+        "10": 18.0,
+        "11": 7.9
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T20:28:53.000586+01:00",
+      "minutes_avant_depart": -4.880040883333334,
+      "cotes": {
+        "1": 6.3,
+        "2": 10.0,
+        "3": 28.0,
+        "4": 9.8,
+        "5": 11.0,
+        "6": 14.0,
+        "7": 7.3,
+        "8": 8.5,
+        "9": 6.7,
+        "10": 18.0,
+        "11": 7.4
       }
     }
   ]
