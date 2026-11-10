@@ -4,89 +4,89 @@
   "reunion": 4,
   "heure_depart": 1794330300000,
   "distance": 2200,
-  "scraped_at": "2026-11-10T18:03:26.351479+01:00",
-  "minutes_avant_depart": 2,
+  "scraped_at": "2026-11-10T18:06:05.989839+01:00",
+  "minutes_avant_depart": -1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "CAPITOL HILL",
-      "cote_live": 4.1,
+      "cote_live": 4.7,
       "cote_reference": 3.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794330194000
+      "timestamp_cote": 1794330354000
     },
     {
       "numPmu": 2,
       "nom": "ERA CHO",
-      "cote_live": 49.0,
+      "cote_live": 74.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794330194000
+      "timestamp_cote": 1794330354000
     },
     {
       "numPmu": 3,
       "nom": "YZYA",
-      "cote_live": 5.2,
+      "cote_live": 2.9,
       "cote_reference": 5.4,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1794330194000
+      "favoris": true,
+      "timestamp_cote": 1794330354000
     },
     {
       "numPmu": 4,
       "nom": "LA MARCA",
-      "cote_live": 27.0,
+      "cote_live": 43.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794330194000
+      "timestamp_cote": 1794330354000
     },
     {
       "numPmu": 5,
       "nom": "WILELA",
-      "cote_live": 3.2,
+      "cote_live": 4.0,
       "cote_reference": 5.7,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1794330194000
+      "favoris": false,
+      "timestamp_cote": 1794330354000
     },
     {
       "numPmu": 6,
       "nom": "HONEYBLISS",
-      "cote_live": 15.0,
+      "cote_live": 19.0,
       "cote_reference": 8.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794330194000
+      "timestamp_cote": 1794330354000
     },
     {
       "numPmu": 7,
       "nom": "GAMBERRA",
-      "cote_live": 42.0,
+      "cote_live": 63.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794330194000
+      "timestamp_cote": 1794330354000
     },
     {
       "numPmu": 8,
       "nom": "NUITS PARISIENNES",
-      "cote_live": 27.0,
+      "cote_live": 40.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794330194000
+      "timestamp_cote": 1794330354000
     },
     {
       "numPmu": 9,
       "nom": "CATHERINE LA MER",
-      "cote_live": 4.5,
+      "cote_live": 4.8,
       "cote_reference": 7.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794330194000
+      "timestamp_cote": 1794330354000
     }
   ],
   "hippodrome": "AMIENS",
@@ -284,6 +284,66 @@
         "7": 42.0,
         "8": 27.0,
         "9": 4.5
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T18:04:06.401225+01:00",
+      "minutes_avant_depart": 0.9013388333333333,
+      "cotes": {
+        "1": 4.1,
+        "2": 52.0,
+        "3": 4.9,
+        "4": 29.0,
+        "5": 3.4,
+        "6": 14.0,
+        "7": 44.0,
+        "8": 28.0,
+        "9": 4.5
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T18:04:46.071021+01:00",
+      "minutes_avant_depart": 0.23467026666666665,
+      "cotes": {
+        "1": 4.0,
+        "2": 56.0,
+        "3": 5.0,
+        "4": 31.0,
+        "5": 3.5,
+        "6": 15.0,
+        "7": 47.0,
+        "8": 30.0,
+        "9": 4.1
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T18:05:25.962533+01:00",
+      "minutes_avant_depart": -0.4319981333333333,
+      "cotes": {
+        "1": 4.4,
+        "2": 64.0,
+        "3": 3.5,
+        "4": 35.0,
+        "5": 3.8,
+        "6": 17.0,
+        "7": 53.0,
+        "8": 34.0,
+        "9": 4.6
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T18:06:05.989839+01:00",
+      "minutes_avant_depart": -1.0986666999999999,
+      "cotes": {
+        "1": 4.7,
+        "2": 74.0,
+        "3": 2.9,
+        "4": 43.0,
+        "5": 4.0,
+        "6": 19.0,
+        "7": 63.0,
+        "8": 40.0,
+        "9": 4.8
       }
     }
   ]
