@@ -2,28 +2,28 @@
   "course": "PRIX DE LA BAIE DE SOMME (PRIX DE LA HOTOIE)",
   "numero": 7,
   "reunion": 4,
-  "heure_depart": 1794339840000,
+  "heure_depart": 1794340440000,
   "distance": 2900,
-  "scraped_at": "2026-11-10T20:38:52.988313+01:00",
-  "minutes_avant_depart": 5,
+  "scraped_at": "2026-11-10T20:50:12.844122+01:00",
+  "minutes_avant_depart": 4,
   "participants": [
     {
       "numPmu": 1,
       "nom": "NOMINOHE",
-      "cote_live": 19.0,
+      "cote_live": 21.0,
       "cote_reference": 30.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794339526000
+      "timestamp_cote": 1794340186000
     },
     {
       "numPmu": 2,
       "nom": "GAME OF STARS",
-      "cote_live": 13.0,
+      "cote_live": 8.5,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794339526000
+      "timestamp_cote": 1794340186000
     },
     {
       "numPmu": 3,
@@ -32,43 +32,43 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794339526000
+      "timestamp_cote": 1794340186000
     },
     {
       "numPmu": 4,
       "nom": "GAREYA",
-      "cote_live": 2.3,
+      "cote_live": 3.0,
       "cote_reference": 1.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794339526000
+      "timestamp_cote": 1794340186000
     },
     {
       "numPmu": 5,
       "nom": "NITRO PRECIEUSE",
-      "cote_live": 6.5,
+      "cote_live": 4.3,
       "cote_reference": 8.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794339526000
+      "timestamp_cote": 1794340186000
     },
     {
       "numPmu": 6,
       "nom": "PASTILLE BAM'S",
-      "cote_live": 25.0,
+      "cote_live": 15.0,
       "cote_reference": 27.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794339526000
+      "timestamp_cote": 1794340186000
     },
     {
       "numPmu": 7,
       "nom": "HENRY MONTMARTRE",
-      "cote_live": 12.0,
+      "cote_live": 15.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794339526000
+      "timestamp_cote": 1794340186000
     },
     {
       "numPmu": 9,
@@ -77,16 +77,16 @@
       "cote_reference": 55.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794339526000
+      "timestamp_cote": 1794340186000
     },
     {
       "numPmu": 10,
       "nom": "MITCHELL'S COMET",
-      "cote_live": 4.8,
+      "cote_live": 5.4,
       "cote_reference": 9.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794339526000
+      "timestamp_cote": 1794340186000
     }
   ],
   "hippodrome": "AMIENS",
@@ -209,6 +209,36 @@
         "7": 12.0,
         "9": 54.0,
         "10": 4.8
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T20:49:33.373730+01:00",
+      "minutes_avant_depart": 4.446695399999999,
+      "cotes": {
+        "1": 20.0,
+        "2": 8.4,
+        "3": 11.0,
+        "4": 2.9,
+        "5": 4.7,
+        "6": 15.0,
+        "7": 15.0,
+        "9": 60.0,
+        "10": 5.4
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T20:50:12.844122+01:00",
+      "minutes_avant_depart": 3.7865720166666668,
+      "cotes": {
+        "1": 21.0,
+        "2": 8.5,
+        "3": 12.0,
+        "4": 3.0,
+        "5": 4.3,
+        "6": 15.0,
+        "7": 15.0,
+        "9": 54.0,
+        "10": 5.4
       }
     }
   ]
