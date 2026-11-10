@@ -4,89 +4,89 @@
   "reunion": 4,
   "heure_depart": 1794330000000,
   "distance": 2200,
-  "scraped_at": "2026-11-10T17:30:06.400907+01:00",
-  "minutes_avant_depart": 30,
+  "scraped_at": "2026-11-10T17:34:46.320765+01:00",
+  "minutes_avant_depart": 25,
   "participants": [
     {
       "numPmu": 1,
       "nom": "CAPITOL HILL",
-      "cote_live": 3.9,
+      "cote_live": 2.4,
       "cote_reference": 3.3,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794327359000
+      "timestamp_cote": 1794328479000
     },
     {
       "numPmu": 2,
       "nom": "ERA CHO",
-      "cote_live": 17.0,
+      "cote_live": 28.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794327359000
+      "timestamp_cote": 1794328479000
     },
     {
       "numPmu": 3,
       "nom": "YZYA",
-      "cote_live": 5.1,
+      "cote_live": 4.4,
       "cote_reference": 5.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794327359000
+      "timestamp_cote": 1794328479000
     },
     {
       "numPmu": 4,
       "nom": "LA MARCA",
-      "cote_live": 13.0,
+      "cote_live": 21.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794327359000
+      "timestamp_cote": 1794328479000
     },
     {
       "numPmu": 5,
       "nom": "WILELA",
-      "cote_live": 5.5,
+      "cote_live": 6.8,
       "cote_reference": 5.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794327359000
+      "timestamp_cote": 1794328479000
     },
     {
       "numPmu": 6,
       "nom": "HONEYBLISS",
-      "cote_live": 11.0,
+      "cote_live": 12.0,
       "cote_reference": 8.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794327359000
+      "timestamp_cote": 1794328479000
     },
     {
       "numPmu": 7,
       "nom": "GAMBERRA",
-      "cote_live": 17.0,
+      "cote_live": 30.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794327359000
+      "timestamp_cote": 1794328479000
     },
     {
       "numPmu": 8,
       "nom": "NUITS PARISIENNES",
-      "cote_live": 16.0,
+      "cote_live": 23.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794327359000
+      "timestamp_cote": 1794328479000
     },
     {
       "numPmu": 9,
       "nom": "CATHERINE LA MER",
-      "cote_live": 6.0,
+      "cote_live": 7.9,
       "cote_reference": 7.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794327359000
+      "timestamp_cote": 1794328479000
     }
   ],
   "hippodrome": "AMIENS",
@@ -104,6 +104,21 @@
         "7": 17.0,
         "8": 16.0,
         "9": 6.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-10T17:34:46.320765+01:00",
+      "minutes_avant_depart": 25.234755833333335,
+      "cotes": {
+        "1": 2.4,
+        "2": 28.0,
+        "3": 4.4,
+        "4": 21.0,
+        "5": 6.8,
+        "6": 12.0,
+        "7": 30.0,
+        "8": 23.0,
+        "9": 7.9
       }
     }
   ]
