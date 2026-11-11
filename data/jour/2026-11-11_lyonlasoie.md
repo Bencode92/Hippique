@@ -1,6 +1,6 @@
 # LYON LA SOIE — 11/11/2026
 
-8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
@@ -112,41 +112,41 @@
 
 ### 6. PRIX KAISER TROT
 
-*19h02 · monté · 2700 m · 8 partants · cotes à T−0:44*
+*19h02 · monté · 2700 m · 8 partants · cotes à T−0:03*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 5 | KAPELLA FABULET | 3,1 | 3,1 | Mlle CL. THUET |
-| 1 | KROSKOF DE GUEZ | 3,2 | 4 | Mlle E. LACOMBLEZ |
-| 8 | KLEOPATRE D'ALFORT | 3,5 | 6,4 | Mlle M. MENDIBOURE |
-| 7 | KHEOPS DU LOISIR | 12 | 18 | D.A. HAON |
-| 4 | JOUR DU TRESOR | 17 | 7,7 | F. POISSON |
-| 2 | KOKA DE MALAC | 30 | 7,1 | M. LAFFAY |
-| 3 | JAWENN DE KERYANN | 38 | 18 | Mlle H. GODEY |
-| 6 | IDEAL LOVER | 40 | 26 | Mme CH. BELLEC |
+| 1 | KROSKOF DE GUEZ | 2,6 | 4 | Mlle E. LACOMBLEZ |
+| 5 | KAPELLA FABULET | 3,4 | 3,1 | Mlle CL. THUET |
+| 8 | KLEOPATRE D'ALFORT | 3,9 | 6,4 | Mlle M. MENDIBOURE |
+| 7 | KHEOPS DU LOISIR | 11 | 18 | D.A. HAON |
+| 4 | JOUR DU TRESOR | 19 | 7,7 | F. POISSON |
+| 2 | KOKA DE MALAC | 32 | 7,1 | M. LAFFAY |
+| 3 | JAWENN DE KERYANN | 44 | 18 | Mlle H. GODEY |
+| 6 | IDEAL LOVER | 53 | 26 | Mme CH. BELLEC |
 
 ### 7. PRIX ROQUEPINE
 
-*19h34 · attelé · 2700 m · 16 partants · cotes de l'extraction*
+*19h34 · attelé · 2700 m · 16 partants · cotes à T−29:43*
 
-| n° | cheval | cote | jockey |
-|--:|:--|--:|:--|
-| 7 | NEWTON MARCEAUX | 1,3 | TH. BRIAND |
-| 1 | NIKITA BOND | 13 | D. BEKAERT |
-| 14 | NOBLE COEUR | 13 | A. TINTILLIER |
-| 9 | NINA D'ALRE | 22 | J. CUOQ |
-| 2 | NO MORE DREAM | 23 | L. GARCIA |
-| 13 | NATASHA CANTATE | 25 | B. RUET |
-| 16 | NORIA DU VALLON | 55 | Q. CHAUVE-LAFFAY |
-| 3 | NICE GALAXIE | 67 | M. AOUDIA |
-| 5 | NAMA MAHA | 67 | MARTIAL GAUVIN |
-| 6 | NUIT DE LOISIR | 67 | B. THOMAS |
-| 10 | NOVA JIEL | 67 | A. GAUDIN |
-| 12 | NEO WYNN | 67 | ALEXIS LERENARD |
-| 15 | NOBLE DE TESSEL | 83 | TH. BUSSET |
-| 4 | NO COMMENT ONE | 111 | L. VERRIERE |
-| 8 | NOEMIE RIDGEHEAD | 111 | F. BROUST |
-| 11 | NO ONE D'AUBIGNY | 167 | B. CHOURRE |
+| n° | cheval | cote | matin | jockey |
+|--:|:--|--:|--:|:--|
+| 7 | NEWTON MARCEAUX | 1,3 | 1,3 | TH. BRIAND |
+| 14 | NOBLE COEUR | 3,4 | 13 | A. TINTILLIER |
+| 1 | NIKITA BOND | 5,3 | 13 | D. BEKAERT |
+| 16 | NORIA DU VALLON | 8,8 | 55 | Q. CHAUVE-LAFFAY |
+| 15 | NOBLE DE TESSEL | 9,8 | 83 | TH. BUSSET |
+| 13 | NATASHA CANTATE | 11 | 25 | B. RUET |
+| 10 | NOVA JIEL | 14 | 67 | A. GAUDIN |
+| 5 | NAMA MAHA | 19 | 67 | MARTIAL GAUVIN |
+| 2 | NO MORE DREAM | 20 | 23 | L. GARCIA |
+| 12 | NEO WYNN | 20 | 67 | ALEXIS LERENARD |
+| 9 | NINA D'ALRE | 22 | 22 | J. CUOQ |
+| 11 | NO ONE D'AUBIGNY | 38 | 167 | B. CHOURRE |
+| 8 | NOEMIE RIDGEHEAD | 51 | 111 | F. BROUST |
+| 4 | NO COMMENT ONE | 55 | 111 | L. VERRIERE |
+| 3 | NICE GALAXIE | 61 | 67 | M. AOUDIA |
+| 6 | NUIT DE LOISIR | 61 | 67 | B. THOMAS |
 
 ### 8. PRIX DE LA THIERACHE
 
