@@ -1,6 +1,6 @@
 # LYON LA SOIE — 11/11/2026
 
-8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
@@ -69,23 +69,23 @@
 
 ### 4. PRIX HADOL DU VIVIER
 
-*17h52 · attelé · 2700 m · 13 partants · cotes de l'extraction*
+*17h52 · attelé · 2700 m · 13 partants · cotes à T−29:43*
 
-| n° | cheval | cote | jockey |
-|--:|:--|--:|:--|
-| 11 | MERLIN DES CHAMPS | 4,1 | Y.A. BRIAND |
-| 12 | MYSTERE TURGOT | 5,5 | TH. BRIAND |
-| 13 | MOULU JIHEM | 7 | Q. CHAUVE-LAFFAY |
-| 10 | MONSEIGNEUR | 7,4 | A. TINTILLIER |
-| 7 | MERITE JULRY | 9 | J.P. GAUVIN |
-| 8 | MYSTERE DE POULINE | 12 | P. CALLIER |
-| 9 | MATCHO MESLOIS | 14 | N. CORMY |
-| 2 | MAGNUS ROMO | 19 | PH. DANTHU |
-| 4 | MAGNUS SEN | 19 | M. MESSAGER |
-| 5 | MARQUIS FORTIS | 38 | A. ERNAULT |
-| 6 | MAYBE LOUANGES | 54 | F. BROUST |
-| 1 | MORNINGSUN DU RHIN | 63 | MARTIN CORMY |
-| 3 | MAIK DU HAUTVENT | 76 | B. THOMAS |
+| n° | cheval | cote | matin | jockey |
+|--:|:--|--:|--:|:--|
+| 11 | MERLIN DES CHAMPS | 4,6 | 4,1 | Y.A. BRIAND |
+| 12 | MYSTERE TURGOT | 5,2 | 5,5 | TH. BRIAND |
+| 13 | MOULU JIHEM | 5,6 | 7 | Q. CHAUVE-LAFFAY |
+| 7 | MERITE JULRY | 8,6 | 9 | J.P. GAUVIN |
+| 10 | MONSEIGNEUR | 9,7 | 7,4 | A. TINTILLIER |
+| 9 | MATCHO MESLOIS | 11 | 14 | N. CORMY |
+| 8 | MYSTERE DE POULINE | 16 | 12 | P. CALLIER |
+| 4 | MAGNUS SEN | 21 | 19 | M. MESSAGER |
+| 6 | MAYBE LOUANGES | 28 | 54 | F. BROUST |
+| 2 | MAGNUS ROMO | 29 | 19 | PH. DANTHU |
+| 5 | MARQUIS FORTIS | 34 | 38 | A. ERNAULT |
+| 3 | MAIK DU HAUTVENT | 40 | 76 | B. THOMAS |
+| 1 | MORNINGSUN DU RHIN | 46 | 63 | MARTIN CORMY |
 
 ### 5. PRIX BELLINO II
 
