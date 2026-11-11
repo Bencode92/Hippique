@@ -139,8 +139,8 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | KARAFON | 1,5 | N.FERREIRA | 489/390/978/74 |
-| 4 | LA P'TITE SOEUR | 4,3 | J.HONDIER | 438/213/2290/42 |
-| 2 | WORTH A TEAM | 11 | L.BEAUBOIS | –/642/77/4683 |
-| 3 | GEMILL | 11 | E.LABAISSE | 210/621/196/296 |
+| 1 | KARAFON | 1,3 | N.FERREIRA | 489/390/978/74 |
+| 4 | LA P'TITE SOEUR | 6,7 | J.HONDIER | 438/213/2290/42 |
 | 5 | LA FLEUR AU FUSIL | 12 | E.BONNET | 347/213/52/42 |
+| 3 | GEMILL | 13 | E.LABAISSE | 210/621/196/296 |
+| 2 | WORTH A TEAM | 15 | L.BEAUBOIS | –/642/77/4683 |

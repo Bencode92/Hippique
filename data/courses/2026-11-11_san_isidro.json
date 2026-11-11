@@ -1,7 +1,7 @@
 {
   "hippodrome": "SAN ISIDRO",
   "type_reunion": "Plat",
-  "date_extraction": "2026-11-11T14:48:11.438662",
+  "date_extraction": "2026-11-11T16:42:36.458516",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/11112026/R9",
   "courses": [
     {
@@ -30,7 +30,9 @@
           "equipement(s)": "",
           "nb_courses": 10,
           "nb_victoires": 2,
-          "nb_places": 7
+          "nb_places": 7,
+          "cote": 4.8,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -82,7 +84,7 @@
           "propriétaire": "ESECE",
           "entraineur": "CARLOS ALBERTO DAVILA",
           "éleveurs": "",
-          "jockey": "ANIBAL JOSE CABRERA",
+          "jockey": "MAXIMILIANO HERNAN MACHADO",
           "poids": "57 kg",
           "gains": "2644040000",
           "musique": "1p3p3p3p8p",
@@ -111,7 +113,7 @@
           "nb_courses": 24,
           "nb_victoires": 2,
           "nb_places": 19,
-          "cote": 1.5,
+          "cote": 1.9,
           "cote_tendance": "",
           "cote_reference": 1.5
         },
@@ -134,7 +136,7 @@
           "nb_courses": 33,
           "nb_victoires": 2,
           "nb_places": 29,
-          "cote": 1.9,
+          "cote": 2.4,
           "cote_tendance": "",
           "cote_reference": 1.9
         },
@@ -159,6 +161,8 @@
           "nb_places": 6
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -188,7 +192,7 @@
           "nb_courses": 7,
           "nb_victoires": 2,
           "nb_places": 4,
-          "cote": 20.0,
+          "cote": 21.0,
           "cote_tendance": "",
           "cote_reference": 19.0
         },
@@ -234,7 +238,7 @@
           "nb_courses": 8,
           "nb_victoires": 3,
           "nb_places": 4,
-          "cote": 20.0,
+          "cote": 10.0,
           "cote_tendance": "",
           "cote_reference": 19.0
         },
@@ -257,7 +261,7 @@
           "nb_courses": 6,
           "nb_victoires": 2,
           "nb_places": 3,
-          "cote": 1.7,
+          "cote": 1.8,
           "cote_tendance": "",
           "cote_reference": 1.6
         },
@@ -280,11 +284,13 @@
           "nb_courses": 8,
           "nb_victoires": 2,
           "nb_places": 5,
-          "cote": 2.7,
+          "cote": 2.8,
           "cote_tendance": "",
           "cote_reference": 2.6
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -377,9 +383,9 @@
           "nb_courses": 8,
           "nb_victoires": 1,
           "nb_places": 6,
-          "cote": 9.0,
+          "cote": 8.5,
           "cote_tendance": "",
-          "cote_reference": 9.0
+          "cote_reference": 8.5
         },
         {
           "n°": "5",
@@ -400,32 +406,9 @@
           "nb_courses": 6,
           "nb_victoires": 1,
           "nb_places": 5,
-          "cote": 36.0,
+          "cote": 34.0,
           "cote_tendance": "",
-          "cote_reference": 36.0
-        },
-        {
-          "n°": "6",
-          "cheval": "THE MAGIC WISH F.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MOOTASADIR et ARIANE'S WISH (ANGIOLO)",
-          "corde": "(Corde:06)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261111/SIO/8/20261111-SIO-8-6.png",
-          "propriétaire": "DON IRINEO (AR)",
-          "entraineur": "ORLANDO AMADO PERRON",
-          "éleveurs": "",
-          "jockey": "JUAN PABLO PAOLONI",
-          "poids": "57 kg",
-          "gains": "501900000",
-          "musique": "1p2p5p8p5p",
-          "valeur": "57.0",
-          "equipement(s)": "A",
-          "nb_courses": 12,
-          "nb_victoires": 1,
-          "nb_places": 9,
-          "cote": 18.0,
-          "cote_tendance": "",
-          "cote_reference": 18.0
+          "cote_reference": 34.0
         },
         {
           "n°": "7",
@@ -448,6 +431,8 @@
           "nb_places": 3
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -591,6 +576,8 @@
           "cote_reference": 2.8
         }
       ],
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     }
   ]

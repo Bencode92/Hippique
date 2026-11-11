@@ -58,65 +58,65 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX JEAN HUE
 
-*14h55 · haies · 3800 m · 7 partants · cotes de l'extraction*
+*14h58 · haies · 3800 m · 7 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 5 | COSTA BIANCA | 2,8 | G.RE | –/412/1716/2447 |
-| 4 | MEKMOON | 4,6 | THO .JOURNIAC | 246/183/563/327 |
-| 3 | MYMONEYDONTJIGGLE | 5,2 | L.SUISSE | 160/197/1241/1371 |
-| 2 | MUSIC DES BRUYERES | 7,7 | A.COUPU | 316/202/2077/3484 |
-| 1 | MALINE DE GRISSAY | 8,2 | K.GEFFROY | 350/386/1602/2928 |
-| 7 | MIGHTY RAFFLES | 14 | L.VANDAMME | 281/335/2190/2199 |
-| 6 | BAHIARY | 16 | D.CARRE | 415/496/4145/5102 |
+| 5 | COSTA BIANCA | 2 | G.RE | –/412/1716/2447 |
+| 4 | MEKMOON | 5,8 | THO .JOURNIAC | 246/183/563/327 |
+| 3 | MYMONEYDONTJIGGLE | 6,9 | L.SUISSE | 160/197/1241/1371 |
+| 1 | MALINE DE GRISSAY | 8,3 | K.GEFFROY | 350/386/1602/2928 |
+| 7 | MIGHTY RAFFLES | 10 | L.VANDAMME | 281/335/2190/2199 |
+| 2 | MUSIC DES BRUYERES | 12 | A.COUPU | 316/202/2077/3484 |
+| 6 | BAHIARY | 32 | D.CARRE | 415/496/4145/5102 |
 
 ### 5. PRIX DE L'ASSOCIATION REVES
 
-*15h25 · plat · 2400 m · 13 partants · cotes de l'extraction*
+*15h28 · plat · 2400 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 10 | NEFERTITI | 4,1 | 4,53 | -9,4 % | M.PROTTI | 29/67/1728/4550 |
-| 5 | NAIROBI CHABA | 4,9 | 4,99 | -1,8 % | L.ROUSSEL | 18/175/1569/3360 |
-| 1 | NUNCASINTI D'ALESA | 5,3 | 6,25 | -15,3 % | G.TROLLEY DE PREVAUX | 43/355/2108/3492 |
-| 9 | NALYA DES PINS | 5,5 | 6,13 | -10,3 % | C.GROSBOIS | 26/102/673/129 |
-| 6 | NADZIEJA | 8,8 | 10,10 | -12,8 % | H.LEBOUC | 22/553/2435/4251 |
-| 11 | NAIADE D'AINAY | 19 | 22,65 | -16,1 % | L.SUISSE | 160/782/1859/– |
-| 8 | NITOUCHE SIVOLA | 22 | 28,11 | -21,7 % | A.MENARD-LEDAUPHIN | 159/229/2741/623 |
-| 7 | NEW DEFI | 33 | 44,56 | -25,9 % | THO .JOURNIAC | 246/322/3493/4926 |
-| 2 | NOSTALGIE | 44 | 72,42 | -39,2 % | O.ANDIGNE | 77/233/2354/4274 |
-| 14 | NATURALLY DORRELLS | 44 | 55,79 | -21,1 % | S.JUST | 153/116/1082/124 |
-| 12 | NEIPA | 66 | 104,29 | -36,7 % | A.COUPU | 316/375/640/238 |
-| 13 | NOISETTE MOME | 66 | 99,43 | -33,6 % | A.BARON | 38/534/1374/4587 |
-| 3 | NEBULEUSE DE MEE | 133 | 229,89 | -42,1 % | L.VANDAMME | 281/355/1823/2506 |
+| 1 | NUNCASINTI D'ALESA | 3,7 | 4,20 | -11,9 % | G.TROLLEY DE PREVAUX | 43/355/2108/3492 |
+| 10 | NEFERTITI | 3,9 | 3,94 | -1,1 % | M.PROTTI | 29/67/1728/4550 |
+| 6 | NADZIEJA | 9,3 | 11,34 | -18,0 % | H.LEBOUC | 22/553/2435/4251 |
+| 9 | NALYA DES PINS | 9,6 | 11,27 | -14,8 % | C.GROSBOIS | 26/102/673/129 |
+| 5 | NAIROBI CHABA | 9,8 | 11,54 | -15,1 % | L.ROUSSEL | 18/175/1569/3360 |
+| 3 | NEBULEUSE DE MEE | 10 | 12,11 | -17,4 % | L.VANDAMME | 281/355/1823/2506 |
+| 12 | NEIPA | 24 | 34,34 | -30,1 % | A.COUPU | 316/375/640/238 |
+| 14 | NATURALLY DORRELLS | 25 | 31,28 | -20,1 % | S.JUST | 153/116/1082/124 |
+| 8 | NITOUCHE SIVOLA | 26 | 37,63 | -30,9 % | A.MENARD-LEDAUPHIN | 159/229/2741/623 |
+| 2 | NOSTALGIE | 33 | 52,99 | -37,7 % | O.ANDIGNE | 77/233/2354/4274 |
+| 13 | NOISETTE MOME | 38 | 55,04 | -31,0 % | A.BARON | 38/534/1374/4587 |
+| 7 | NEW DEFI | 57 | 85,67 | -33,5 % | THO .JOURNIAC | 246/322/3493/4926 |
+| 11 | NAIADE D'AINAY | 59 | 80,85 | -27,0 % | L.SUISSE | 160/782/1859/– |
 
 ### 6. PRIX CHAMPAGNE A BERGERE
 
-*16h00 · steeple · 3600 m · 9 partants · cotes de l'extraction*
+*16h02 · steeple · 3600 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | SAINT GENY | 2,5 | Q.DEFONTAINE | –/454/–/2412 |
-| 1 | STAR CARIBEAN | 4,2 | G.RE | –/412/1974/4601 |
-| 7 | PROVOKATEUR | 4,8 | M.ZULIANI | 290/67/116/4169 |
-| 8 | MON BONHEUR | 9 | THO .JOURNIAC | 246/322/3538/757 |
-| 5 | JOSHUA'SDREAM | 16 | L.VANDAMME | 281/–/3615/5138 |
-| 4 | MYRTILLE DU LARGE | 24 | Y.DELEPINE | 299/355/2219/3521 |
-| 3 | MUSTANG | 31 | K.MICHEL | 394/203/2639/935 |
-| 6 | MAJOR DU LARGE | 36 | L.SUISSE | 160/203/2219/4657 |
-| 9 | MISS GREEN FEVER | 43 | J.LEBRUN | –/322/2061/1656 |
+| 1 | STAR CARIBEAN | 2,8 | G.RE | –/412/1974/4601 |
+| 2 | SAINT GENY | 4 | Q.DEFONTAINE | –/454/–/2412 |
+| 7 | PROVOKATEUR | 5,7 | M.ZULIANI | 290/67/116/4169 |
+| 8 | MON BONHEUR | 8,6 | THO .JOURNIAC | 246/322/3538/757 |
+| 4 | MYRTILLE DU LARGE | 11 | Y.DELEPINE | 299/355/2219/3521 |
+| 6 | MAJOR DU LARGE | 13 | L.SUISSE | 160/203/2219/4657 |
+| 5 | JOSHUA'SDREAM | 31 | L.VANDAMME | 281/–/3615/5138 |
+| 3 | MUSTANG | 37 | K.MICHEL | 394/203/2639/935 |
+| 9 | MISS GREEN FEVER | 38 | J.LEBRUN | –/322/2061/1656 |
 
 ### 7. PRIX AL CAPONE II
 
-*16h30 · steeple · 4200 m · 8 partants · cotes de l'extraction*
+*16h33 · steeple · 4200 m · 8 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | KASADEPAPEL | 1,9 | K.GEFFROY | 350/194/239/– |
-| 2 | NOTHING EYE'S | 7,6 | L.VANDAMME | 281/355/3898/– |
-| 6 | LA LUNE ROUSSE | 7,6 | K.MICHEL | 394/203/2290/– |
-| 4 | PETIT TRUC | 8,9 | THO .JOURNIAC | 246/553/–/1474 |
-| 3 | WORTH IT | 10 | J.LEBRUN | –/307/1591/3268 |
-| 7 | KOMEKAT | 13 | Y.DELEPINE | 299/183/–/3626 |
-| 8 | KENIE DU BOULAY | 17 | A.GAUTRON | 360/386/1284/2152 |
-| 5 | ILICO DE CHENEAU | 53 | Q.DEFONTAINE | –/279/4102/3238 |
+| 1 | KASADEPAPEL | 2,7 | K.GEFFROY | 350/194/239/– |
+| 2 | NOTHING EYE'S | 4,8 | L.VANDAMME | 281/355/3898/– |
+| 4 | PETIT TRUC | 5,3 | THO .JOURNIAC | 246/553/–/1474 |
+| 3 | WORTH IT | 6,5 | J.LEBRUN | –/307/1591/3268 |
+| 5 | ILICO DE CHENEAU | 11 | Q.DEFONTAINE | –/279/4102/3238 |
+| 6 | LA LUNE ROUSSE | 16 | K.MICHEL | 394/203/2290/– |
+| 8 | KENIE DU BOULAY | 18 | A.GAUTRON | 360/386/1284/2152 |
+| 7 | KOMEKAT | 36 | Y.DELEPINE | 299/183/–/3626 |

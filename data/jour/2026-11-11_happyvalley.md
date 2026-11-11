@@ -126,8 +126,8 @@
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
 | 5 | LEADING AGILITY | 4 | CHAU C.L. |
-| 1 | SWIFT ASCEND | 5,2 | PURTON Z. |
 | 7 | LUCRATIVE EIGHT | 5,2 | YUEN H.Y. |
+| 1 | SWIFT ASCEND | 5,2 | PURTON Z. |
 | 2 | AURORA PATCH | 6,4 | WONG E.C.W. |
 | 11 | DARYL FLASH | 7,3 | OSBORNE S. |
 | 3 | MIGHTY COMMANDER | 11 | HO C.Y. |
@@ -144,18 +144,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 2 | FIVEFORTWO | 3,5 | CHAU C.L. |
-| 12 | HYMNBOOK | 5,5 | BENTLEY H. |
-| 3 | CHINA WIN | 5,8 | PURTON Z. |
-| 1 | POPE CODY | 7,9 | BADEL A. |
-| 7 | VIOLET STAR | 8,9 | ATZENI A. |
-| 5 | CALL ME MAGNIFIQUE | 15 | WONG E.C.W. |
-| 8 | RISING PHOENIX | 15 | ORMAN J. |
-| 6 | FALLON | 17 | YEUNG M.L. |
-| 10 | FLYING FORTUNE | 19 | HO C.Y. |
-| 11 | SHOOTING TO TOP | 19 | TEETAN K. |
-| 4 | MISTER DAPPER | 32 | AVDULLA B. |
-| 9 | SONIC LINER | 54 | HEWITSON L. |
+| 12 | HYMNBOOK | 3,5 | BENTLEY H. |
+| 2 | FIVEFORTWO | 5,4 | CHAU C.L. |
+| 3 | CHINA WIN | 5,4 | PURTON Z. |
+| 7 | VIOLET STAR | 5,6 | ATZENI A. |
+| 1 | POPE CODY | 10 | BADEL A. |
+| 10 | FLYING FORTUNE | 14 | HO C.Y. |
+| 11 | SHOOTING TO TOP | 21 | TEETAN K. |
+| 4 | MISTER DAPPER | 22 | AVDULLA B. |
+| 8 | RISING PHOENIX | 25 | ORMAN J. |
+| 6 | FALLON | 26 | YEUNG M.L. |
+| 5 | CALL ME MAGNIFIQUE | 26 | WONG E.C.W. |
+| 9 | SONIC LINER | 101 | HEWITSON L. |
 
 ### 9. LUNG CHEUNG HANDICAP
 
@@ -163,15 +163,15 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 5 | BRAVEFIELD | 4,4 | PURTON Z. | –/–/–/– |
-| 12 | FORTUNATE SON | 7,1 | HO C.Y. | –/–/–/– |
-| 10 | AWESOME FLUKE | 7,7 | OSBORNE S. | –/–/–/– |
-| 1 | HELENE FEELING | 9,5 | WONG E.C.W. | –/–/–/– |
-| 8 | MIGHTY MASTS | 9,5 | ATZENI A. | –/–/–/– |
+| 12 | FORTUNATE SON | 5,6 | HO C.Y. | –/–/–/– |
+| 5 | BRAVEFIELD | 6 | PURTON Z. | –/–/–/– |
+| 9 | ARMOR GOLDEN EAGLE | 7,3 | BADEL A. | –/–/–/– |
+| 10 | AWESOME FLUKE | 7,5 | OSBORNE S. | –/–/–/– |
+| 11 | REGAL GEM | 9,4 | LEUNG K.C. | –/–/–/– |
 | 3 | PACKING ANGEL | 10 | BENTLEY H. | –/–/–/– |
-| 11 | REGAL GEM | 11 | LEUNG K.C. | –/–/–/– |
-| 6 | NAUTICAL FORCE | 12 | YEUNG M.L. | –/–/–/– |
-| 7 | LUCKY SAM GOR | 14 | CHAU C.L. | –/–/–/– |
-| 9 | ARMOR GOLDEN EAGLE | 16 | BADEL A. | –/–/–/– |
-| 4 | DEFINITIVE | 17 | TEETAN K. | –/–/–/– |
-| 2 | SIX PACK | 20 | FERRARIS L. | –/–/–/– |
+| 1 | HELENE FEELING | 10 | WONG E.C.W. | –/–/–/– |
+| 7 | LUCKY SAM GOR | 11 | CHAU C.L. | –/–/–/– |
+| 4 | DEFINITIVE | 13 | TEETAN K. | –/–/–/– |
+| 8 | MIGHTY MASTS | 14 | ATZENI A. | –/–/–/– |
+| 6 | NAUTICAL FORCE | 26 | YEUNG M.L. | –/–/–/– |
+| 2 | SIX PACK | 39 | FERRARIS L. | –/–/–/– |
