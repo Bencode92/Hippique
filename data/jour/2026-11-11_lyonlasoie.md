@@ -112,18 +112,18 @@
 
 ### 6. PRIX KAISER TROT
 
-*19h02 · monté · 2700 m · 8 partants · cotes à T−6:03*
+*19h02 · monté · 2700 m · 8 partants · cotes à T−3:23*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 1 | KROSKOF DE GUEZ | 2,8 | 4 | Mlle E. LACOMBLEZ |
-| 5 | KAPELLA FABULET | 3,6 | 3,1 | Mlle CL. THUET |
-| 8 | KLEOPATRE D'ALFORT | 3,7 | 6,4 | Mlle M. MENDIBOURE |
-| 7 | KHEOPS DU LOISIR | 12 | 18 | D.A. HAON |
-| 4 | JOUR DU TRESOR | 15 | 7,7 | F. POISSON |
-| 2 | KOKA DE MALAC | 23 | 7,1 | M. LAFFAY |
-| 3 | JAWENN DE KERYANN | 27 | 18 | Mlle H. GODEY |
-| 6 | IDEAL LOVER | 40 | 26 | Mme CH. BELLEC |
+| 8 | KLEOPATRE D'ALFORT | 2,9 | 6,4 | Mlle M. MENDIBOURE |
+| 1 | KROSKOF DE GUEZ | 3 | 4 | Mlle E. LACOMBLEZ |
+| 5 | KAPELLA FABULET | 3,9 | 3,1 | Mlle CL. THUET |
+| 7 | KHEOPS DU LOISIR | 15 | 18 | D.A. HAON |
+| 4 | JOUR DU TRESOR | 16 | 7,7 | F. POISSON |
+| 2 | KOKA DE MALAC | 30 | 7,1 | M. LAFFAY |
+| 3 | JAWENN DE KERYANN | 37 | 18 | Mlle H. GODEY |
+| 6 | IDEAL LOVER | 48 | 26 | Mme CH. BELLEC |
 
 ### 7. PRIX ROQUEPINE
 
