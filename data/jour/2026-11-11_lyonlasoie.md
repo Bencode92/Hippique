@@ -89,26 +89,26 @@
 
 ### 5. PRIX BELLINO II
 
-*18h27 · attelé · 2700 m · 16 partants · cotes à T−25:24*
+*18h27 · attelé · 2700 m · 16 partants · cotes à T−21:23*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 2 | MA BEAUTE D'AMOUR | 3 | 5,1 | TH. BRIAND |
-| 13 | MYSTIQUE LOULOU | 5,1 | 4 | Q. CHAUVE-LAFFAY |
-| 6 | MESSALINE | 8,7 | 9,6 | D. BEKAERT |
-| 16 | MY LADY ISLAND | 9 | 26 | A. TINTILLIER |
+| 2 | MA BEAUTE D'AMOUR | 3,2 | 5,1 | TH. BRIAND |
+| 13 | MYSTIQUE LOULOU | 5 | 4 | Q. CHAUVE-LAFFAY |
+| 6 | MESSALINE | 8,1 | 9,6 | D. BEKAERT |
 | 12 | MAMY BLUE TIT | 10 | 8,3 | L. LAMAZIERE |
+| 16 | MY LADY ISLAND | 10 | 26 | A. TINTILLIER |
+| 5 | MAY BE JULRY | 17 | 11 | J.P. GAUVIN |
 | 8 | MARTINA GIO | 19 | 16 | B. RUET |
-| 5 | MAY BE JULRY | 21 | 11 | J.P. GAUVIN |
-| 15 | MARELLA DALEO | 21 | 15 | Q. DAOUGABEL |
+| 15 | MARELLA DALEO | 22 | 15 | Q. DAOUGABEL |
+| 14 | MAREVA | 24 | 14 | J. CUOQ |
 | 11 | MISS GABRIELLE | 28 | 18 | L. VERRIERE |
-| 14 | MAREVA | 32 | 14 | J. CUOQ |
-| 1 | MONIE DU LOISIR | 48 | 35 | M. DUJMIC |
-| 7 | MARIA DU MATO | 67 | 65 | B. THOMAS |
-| 3 | MISS DE MAI | 70 | 98 | D. MARASCO |
-| 9 | MAELYS DES BORDES | 92 | 98 | ALEXIS LERENARD |
-| 10 | MIMI WILLIAMS | 92 | 39 | TH. BUSSET |
-| 4 | MILADY OAKS | 98 | 131 | G. VIDAL |
+| 1 | MONIE DU LOISIR | 50 | 35 | M. DUJMIC |
+| 7 | MARIA DU MATO | 71 | 65 | B. THOMAS |
+| 3 | MISS DE MAI | 81 | 98 | D. MARASCO |
+| 10 | MIMI WILLIAMS | 95 | 39 | TH. BUSSET |
+| 4 | MILADY OAKS | 100 | 131 | G. VIDAL |
+| 9 | MAELYS DES BORDES | 107 | 98 | ALEXIS LERENARD |
 
 ### 6. PRIX KAISER TROT
 
