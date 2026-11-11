@@ -47,25 +47,25 @@
 
 ### 3. PRIX GELINOTTE
 
-*17h17 · attelé · 2700 m · 15 partants · cotes à T−29:23*
+*17h17 · attelé · 2700 m · 15 partants · cotes à T−24:43*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 11 | LOLA DE CHENU | 3,7 | 3,2 | P. PELLEROT |
-| 10 | LIKE A JULRY | 4,7 | 5,5 | J.P. GAUVIN |
-| 12 | LEGION SMART | 5,5 | 5,7 | TH. BRIAND |
-| 7 | LONDON LADY | 7,5 | 7,2 | D. BEKAERT |
-| 15 | LIBERATA | 15 | 13 | L. LAMAZIERE |
+| 11 | LOLA DE CHENU | 4 | 3,2 | P. PELLEROT |
+| 12 | LEGION SMART | 4,2 | 5,7 | TH. BRIAND |
+| 10 | LIKE A JULRY | 5,1 | 5,5 | J.P. GAUVIN |
+| 7 | LONDON LADY | 8,1 | 7,2 | D. BEKAERT |
+| 15 | LIBERATA | 16 | 13 | L. LAMAZIERE |
 | 13 | LALY DE JADE | 17 | 18 | M.J. BARCELO BISQUERRA |
-| 8 | L'ETOILE DE PAME | 19 | 19 | Q. CHAUVE-LAFFAY |
-| 14 | LILY CARNOIS | 22 | 25 | MARTIN CORMY |
-| 6 | LETTY D'ARGENVIERE | 41 | 67 | B. THIENNE |
-| 3 | LA RAMEE | 48 | 43 | P. CALLIER |
-| 9 | LOLLIPOP THE BEST | 48 | 43 | B. RUET |
-| 5 | LOUNA D'HUCHELOUP | 57 | 59 | Q. DAOUGABEL |
-| 1 | LA BRIERE | 67 | 71 | MARTIAL GAUVIN |
-| 4 | LEYLI DE LA VALLEE | 67 | 77 | A. TINTILLIER |
-| 2 | LOVELY DEVOL | 86 | 100 | Y.A. BRIAND |
+| 8 | L'ETOILE DE PAME | 18 | 19 | Q. CHAUVE-LAFFAY |
+| 14 | LILY CARNOIS | 23 | 25 | MARTIN CORMY |
+| 9 | LOLLIPOP THE BEST | 42 | 43 | B. RUET |
+| 6 | LETTY D'ARGENVIERE | 46 | 67 | B. THIENNE |
+| 3 | LA RAMEE | 53 | 43 | P. CALLIER |
+| 1 | LA BRIERE | 60 | 71 | MARTIAL GAUVIN |
+| 5 | LOUNA D'HUCHELOUP | 60 | 59 | Q. DAOUGABEL |
+| 4 | LEYLI DE LA VALLEE | 77 | 77 | A. TINTILLIER |
+| 2 | LOVELY DEVOL | 99 | 100 | Y.A. BRIAND |
 
 ### 4. PRIX HADOL DU VIVIER
 
