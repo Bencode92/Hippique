@@ -1,7 +1,7 @@
 {
   "hippodrome": "LYON LA SOIE",
   "type_reunion": "ATTELE",
-  "date_extraction": "2026-11-11T01:48:28.062125",
+  "date_extraction": "2026-11-11T14:47:27.793756",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/11112026/R4",
   "courses": [
     {
@@ -31,6 +31,8 @@
           "nb_courses": 15,
           "nb_victoires": 0,
           "nb_places": 9,
+          "cote": 440.0,
+          "cote_tendance": "",
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -52,6 +54,9 @@
           "nb_courses": 29,
           "nb_victoires": 1,
           "nb_places": 16,
+          "cote": 19.0,
+          "cote_tendance": "",
+          "cote_reference": 24.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -73,6 +78,9 @@
           "nb_courses": 29,
           "nb_victoires": 1,
           "nb_places": 23,
+          "cote": 18.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -94,6 +102,9 @@
           "nb_courses": 22,
           "nb_victoires": 5,
           "nb_places": 7,
+          "cote": 9.5,
+          "cote_tendance": "",
+          "cote_reference": 9.1,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -115,6 +126,9 @@
           "nb_courses": 28,
           "nb_victoires": 3,
           "nb_places": 12,
+          "cote": 146.0,
+          "cote_tendance": "",
+          "cote_reference": 88.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -136,6 +150,9 @@
           "nb_courses": 36,
           "nb_victoires": 1,
           "nb_places": 18,
+          "cote": 44.0,
+          "cote_tendance": "",
+          "cote_reference": 29.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -157,6 +174,9 @@
           "nb_courses": 24,
           "nb_victoires": 5,
           "nb_places": 13,
+          "cote": 3.9,
+          "cote_tendance": "",
+          "cote_reference": 3.2,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -178,6 +198,9 @@
           "nb_courses": 25,
           "nb_victoires": 6,
           "nb_places": 14,
+          "cote": 4.2,
+          "cote_tendance": "",
+          "cote_reference": 8.5,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -199,6 +222,9 @@
           "nb_courses": 23,
           "nb_victoires": 7,
           "nb_places": 9,
+          "cote": 3.9,
+          "cote_tendance": "",
+          "cote_reference": 3.4,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -220,9 +246,15 @@
           "nb_courses": 28,
           "nb_victoires": 5,
           "nb_places": 16,
+          "cote": 6.6,
+          "cote_tendance": "",
+          "cote_reference": 6.1,
           "avis_entraineur": "NEUTRE"
         }
       ],
+      "typePiste": "POUZZOLANE",
+      "terrain": "Bon",
+      "penetrometre": "3,0",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -252,6 +284,9 @@
           "nb_courses": 77,
           "nb_victoires": 5,
           "nb_places": 52,
+          "cote": 184.0,
+          "cote_tendance": "",
+          "cote_reference": 237.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -273,6 +308,9 @@
           "nb_courses": 46,
           "nb_victoires": 5,
           "nb_places": 24,
+          "cote": 61.0,
+          "cote_tendance": "",
+          "cote_reference": 43.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -294,6 +332,9 @@
           "nb_courses": 52,
           "nb_victoires": 5,
           "nb_places": 25,
+          "cote": 184.0,
+          "cote_tendance": "",
+          "cote_reference": 237.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -315,6 +356,9 @@
           "nb_courses": 79,
           "nb_victoires": 5,
           "nb_places": 50,
+          "cote": 184.0,
+          "cote_tendance": "",
+          "cote_reference": 118.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -336,6 +380,9 @@
           "nb_courses": 66,
           "nb_victoires": 5,
           "nb_places": 31,
+          "cote": 245.0,
+          "cote_tendance": "",
+          "cote_reference": 158.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -357,27 +404,9 @@
           "nb_courses": 64,
           "nb_victoires": 10,
           "nb_places": 29,
-          "avis_entraineur": "NEUTRE"
-        },
-        {
-          "n°": "7",
-          "cheval": "HONEY DE TOUCHYVON H.TR. 9 a.",
-          "cheval_url": "",
-          "père_mère": "Par: JAM PRIDEM et VONIE DE TOUCHYVON",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261111/VIL/2/20261111-VIL-2-7.png",
-          "propriétaire": "Adrien DELBOVE",
-          "entraineur": "Y. LAVIGNE",
-          "éleveurs": "Mme Marie Laurence ROUET",
-          "jockey": "M. MESSAGER",
-          "poids": "",
-          "gains": "11010000",
-          "musique": "0a9a7a0a9a0a(25)8a8a3a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 79,
-          "nb_victoires": 7,
-          "nb_places": 41,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 12.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -399,6 +428,9 @@
           "nb_courses": 62,
           "nb_victoires": 5,
           "nb_places": 34,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -420,6 +452,9 @@
           "nb_courses": 96,
           "nb_victoires": 11,
           "nb_places": 48,
+          "cote": 29.0,
+          "cote_tendance": "",
+          "cote_reference": 47.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -441,6 +476,9 @@
           "nb_courses": 67,
           "nb_victoires": 8,
           "nb_places": 37,
+          "cote": 20.0,
+          "cote_tendance": "",
+          "cote_reference": 23.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -462,6 +500,9 @@
           "nb_courses": 53,
           "nb_victoires": 11,
           "nb_places": 33,
+          "cote": 19.0,
+          "cote_tendance": "",
+          "cote_reference": 17.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -483,6 +524,9 @@
           "nb_courses": 76,
           "nb_victoires": 10,
           "nb_places": 38,
+          "cote": 2.4,
+          "cote_tendance": "",
+          "cote_reference": 3.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -504,6 +548,9 @@
           "nb_courses": 66,
           "nb_victoires": 8,
           "nb_places": 35,
+          "cote": 22.0,
+          "cote_tendance": "",
+          "cote_reference": 19.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -525,6 +572,9 @@
           "nb_courses": 50,
           "nb_victoires": 8,
           "nb_places": 29,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 7.4,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -546,6 +596,9 @@
           "nb_courses": 66,
           "nb_victoires": 9,
           "nb_places": 50,
+          "cote": 40.0,
+          "cote_tendance": "",
+          "cote_reference": 29.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -567,9 +620,15 @@
           "nb_courses": 60,
           "nb_victoires": 14,
           "nb_places": 27,
+          "cote": 4.6,
+          "cote_tendance": "",
+          "cote_reference": 3.6,
           "avis_entraineur": "NEUTRE"
         }
       ],
+      "typePiste": "POUZZOLANE",
+      "terrain": "Bon",
+      "penetrometre": "3,0",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -599,6 +658,9 @@
           "nb_courses": 31,
           "nb_victoires": 2,
           "nb_places": 15,
+          "cote": 141.0,
+          "cote_tendance": "",
+          "cote_reference": 141.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -620,6 +682,9 @@
           "nb_courses": 39,
           "nb_victoires": 2,
           "nb_places": 16,
+          "cote": 141.0,
+          "cote_tendance": "",
+          "cote_reference": 106.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -641,6 +706,9 @@
           "nb_courses": 29,
           "nb_victoires": 0,
           "nb_places": 19,
+          "cote": 112.0,
+          "cote_tendance": "",
+          "cote_reference": 106.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -662,6 +730,9 @@
           "nb_courses": 28,
           "nb_victoires": 3,
           "nb_places": 7,
+          "cote": 80.0,
+          "cote_tendance": "",
+          "cote_reference": 106.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -683,6 +754,9 @@
           "nb_courses": 37,
           "nb_victoires": 3,
           "nb_places": 10,
+          "cote": 141.0,
+          "cote_tendance": "",
+          "cote_reference": 141.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -704,6 +778,9 @@
           "nb_courses": 21,
           "nb_victoires": 1,
           "nb_places": 17,
+          "cote": 80.0,
+          "cote_tendance": "",
+          "cote_reference": 85.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -725,6 +802,9 @@
           "nb_courses": 26,
           "nb_victoires": 7,
           "nb_places": 8,
+          "cote": 18.0,
+          "cote_tendance": "",
+          "cote_reference": 19.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -746,6 +826,9 @@
           "nb_courses": 22,
           "nb_victoires": 4,
           "nb_places": 11,
+          "cote": 17.0,
+          "cote_tendance": "",
+          "cote_reference": 47.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -767,6 +850,9 @@
           "nb_courses": 32,
           "nb_victoires": 3,
           "nb_places": 16,
+          "cote": 40.0,
+          "cote_tendance": "",
+          "cote_reference": 32.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -788,6 +874,9 @@
           "nb_courses": 11,
           "nb_victoires": 8,
           "nb_places": 2,
+          "cote": 7.4,
+          "cote_tendance": "",
+          "cote_reference": 8.5,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -809,6 +898,9 @@
           "nb_courses": 28,
           "nb_victoires": 4,
           "nb_places": 12,
+          "cote": 2.2,
+          "cote_tendance": "",
+          "cote_reference": 2.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -830,6 +922,9 @@
           "nb_courses": 24,
           "nb_victoires": 6,
           "nb_places": 13,
+          "cote": 5.4,
+          "cote_tendance": "",
+          "cote_reference": 5.5,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -851,6 +946,9 @@
           "nb_courses": 21,
           "nb_victoires": 4,
           "nb_places": 12,
+          "cote": 17.0,
+          "cote_tendance": "",
+          "cote_reference": 17.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -872,6 +970,9 @@
           "nb_courses": 24,
           "nb_victoires": 2,
           "nb_places": 18,
+          "cote": 33.0,
+          "cote_tendance": "",
+          "cote_reference": 26.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -893,9 +994,15 @@
           "nb_courses": 28,
           "nb_victoires": 4,
           "nb_places": 19,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0,
           "avis_entraineur": "NEUTRE"
         }
       ],
+      "typePiste": "POUZZOLANE",
+      "terrain": "Bon",
+      "penetrometre": "3,0",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -925,6 +1032,9 @@
           "nb_courses": 25,
           "nb_victoires": 0,
           "nb_places": 12,
+          "cote": 57.0,
+          "cote_tendance": "",
+          "cote_reference": 47.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -946,6 +1056,9 @@
           "nb_courses": 29,
           "nb_victoires": 0,
           "nb_places": 17,
+          "cote": 23.0,
+          "cote_tendance": "",
+          "cote_reference": 19.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -967,6 +1080,9 @@
           "nb_courses": 19,
           "nb_victoires": 0,
           "nb_places": 9,
+          "cote": 77.0,
+          "cote_tendance": "",
+          "cote_reference": 63.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -988,6 +1104,9 @@
           "nb_courses": 24,
           "nb_victoires": 0,
           "nb_places": 17,
+          "cote": 17.0,
+          "cote_tendance": "",
+          "cote_reference": 17.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1009,6 +1128,9 @@
           "nb_courses": 9,
           "nb_victoires": 2,
           "nb_places": 3,
+          "cote": 33.0,
+          "cote_tendance": "",
+          "cote_reference": 38.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1030,6 +1152,9 @@
           "nb_courses": 19,
           "nb_victoires": 1,
           "nb_places": 13,
+          "cote": 77.0,
+          "cote_tendance": "",
+          "cote_reference": 95.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1051,6 +1176,9 @@
           "nb_courses": 11,
           "nb_victoires": 1,
           "nb_places": 5,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 10.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1072,6 +1200,9 @@
           "nb_courses": 14,
           "nb_victoires": 3,
           "nb_places": 4,
+          "cote": 9.6,
+          "cote_tendance": "",
+          "cote_reference": 8.2,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1093,6 +1224,9 @@
           "nb_courses": 17,
           "nb_victoires": 2,
           "nb_places": 10,
+          "cote": 23.0,
+          "cote_tendance": "",
+          "cote_reference": 23.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1114,6 +1248,9 @@
           "nb_courses": 13,
           "nb_victoires": 1,
           "nb_places": 11,
+          "cote": 6.6,
+          "cote_tendance": "",
+          "cote_reference": 11.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1135,6 +1272,9 @@
           "nb_courses": 13,
           "nb_victoires": 2,
           "nb_places": 8,
+          "cote": 5.6,
+          "cote_tendance": "",
+          "cote_reference": 5.7,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1156,6 +1296,9 @@
           "nb_courses": 18,
           "nb_victoires": 2,
           "nb_places": 9,
+          "cote": 5.3,
+          "cote_tendance": "",
+          "cote_reference": 5.2,
           "avis_entraineur": "POSITIF"
         },
         {
@@ -1177,9 +1320,15 @@
           "nb_courses": 8,
           "nb_victoires": 3,
           "nb_places": 4,
+          "cote": 4.7,
+          "cote_tendance": "",
+          "cote_reference": 4.2,
           "avis_entraineur": "NEUTRE"
         }
       ],
+      "typePiste": "POUZZOLANE",
+      "terrain": "Bon",
+      "penetrometre": "3,0",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -1209,6 +1358,9 @@
           "nb_courses": 25,
           "nb_victoires": 1,
           "nb_places": 10,
+          "cote": 47.0,
+          "cote_tendance": "",
+          "cote_reference": 35.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1230,6 +1382,9 @@
           "nb_courses": 19,
           "nb_victoires": 1,
           "nb_places": 5,
+          "cote": 5.2,
+          "cote_tendance": "",
+          "cote_reference": 4.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1251,6 +1406,9 @@
           "nb_courses": 22,
           "nb_victoires": 1,
           "nb_places": 6,
+          "cote": 94.0,
+          "cote_tendance": "",
+          "cote_reference": 105.0,
           "avis_entraineur": "NEGATIF"
         },
         {
@@ -1272,6 +1430,9 @@
           "nb_courses": 29,
           "nb_victoires": 1,
           "nb_places": 12,
+          "cote": 141.0,
+          "cote_tendance": "",
+          "cote_reference": 210.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1293,6 +1454,9 @@
           "nb_courses": 12,
           "nb_victoires": 2,
           "nb_places": 3,
+          "cote": 17.0,
+          "cote_tendance": "",
+          "cote_reference": 15.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1314,6 +1478,9 @@
           "nb_courses": 11,
           "nb_victoires": 1,
           "nb_places": 7,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 13.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1335,6 +1502,9 @@
           "nb_courses": 14,
           "nb_victoires": 1,
           "nb_places": 7,
+          "cote": 70.0,
+          "cote_tendance": "",
+          "cote_reference": 105.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1356,6 +1526,9 @@
           "nb_courses": 17,
           "nb_victoires": 0,
           "nb_places": 14,
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 13.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1377,6 +1550,9 @@
           "nb_courses": 19,
           "nb_victoires": 2,
           "nb_places": 9,
+          "cote": 70.0,
+          "cote_tendance": "",
+          "cote_reference": 70.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1398,6 +1574,9 @@
           "nb_courses": 17,
           "nb_victoires": 1,
           "nb_places": 10,
+          "cote": 40.0,
+          "cote_tendance": "",
+          "cote_reference": 210.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1419,6 +1598,9 @@
           "nb_courses": 11,
           "nb_victoires": 2,
           "nb_places": 7,
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 52.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1440,6 +1622,9 @@
           "nb_courses": 11,
           "nb_victoires": 4,
           "nb_places": 3,
+          "cote": 7.2,
+          "cote_tendance": "",
+          "cote_reference": 6.1,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1461,6 +1646,9 @@
           "nb_courses": 12,
           "nb_victoires": 3,
           "nb_places": 6,
+          "cote": 3.5,
+          "cote_tendance": "",
+          "cote_reference": 4.3,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1482,6 +1670,9 @@
           "nb_courses": 23,
           "nb_victoires": 2,
           "nb_places": 13,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 9.1,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1503,6 +1694,9 @@
           "nb_courses": 31,
           "nb_victoires": 3,
           "nb_places": 16,
+          "cote": 35.0,
+          "cote_tendance": "",
+          "cote_reference": 30.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1524,9 +1718,15 @@
           "nb_courses": 14,
           "nb_victoires": 2,
           "nb_places": 8,
+          "cote": 23.0,
+          "cote_tendance": "",
+          "cote_reference": 21.0,
           "avis_entraineur": "NEUTRE"
         }
       ],
+      "typePiste": "POUZZOLANE",
+      "terrain": "Bon",
+      "penetrometre": "3,0",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -1556,6 +1756,9 @@
           "nb_courses": 27,
           "nb_victoires": 5,
           "nb_places": 7,
+          "cote": 3.8,
+          "cote_tendance": "",
+          "cote_reference": 4.3,
           "avis_entraineur": "POSITIF"
         },
         {
@@ -1577,6 +1780,9 @@
           "nb_courses": 47,
           "nb_victoires": 3,
           "nb_places": 19,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1598,6 +1804,9 @@
           "nb_courses": 45,
           "nb_victoires": 6,
           "nb_places": 20,
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 17.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1619,6 +1828,9 @@
           "nb_courses": 43,
           "nb_victoires": 4,
           "nb_places": 25,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1640,6 +1852,9 @@
           "nb_courses": 43,
           "nb_victoires": 4,
           "nb_places": 22,
+          "cote": 2.6,
+          "cote_tendance": "",
+          "cote_reference": 2.3,
           "avis_entraineur": "POSITIF"
         },
         {
@@ -1661,6 +1876,9 @@
           "nb_courses": 62,
           "nb_victoires": 3,
           "nb_places": 36,
+          "cote": 24.0,
+          "cote_tendance": "",
+          "cote_reference": 26.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1682,6 +1900,9 @@
           "nb_courses": 49,
           "nb_victoires": 4,
           "nb_places": 22,
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 13.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1703,9 +1924,15 @@
           "nb_courses": 48,
           "nb_victoires": 2,
           "nb_places": 27,
+          "cote": 6.3,
+          "cote_tendance": "",
+          "cote_reference": 6.7,
           "avis_entraineur": "NEUTRE"
         }
       ],
+      "typePiste": "POUZZOLANE",
+      "terrain": "Bon",
+      "penetrometre": "3,0",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -1735,6 +1962,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 32.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1756,6 +1986,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
+          "cote": 27.0,
+          "cote_tendance": "",
+          "cote_reference": 24.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1777,6 +2010,9 @@
           "nb_courses": 12,
           "nb_victoires": 0,
           "nb_places": 3,
+          "cote": 123.0,
+          "cote_tendance": "",
+          "cote_reference": 112.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1798,6 +2034,9 @@
           "nb_courses": 6,
           "nb_victoires": 0,
           "nb_places": 4,
+          "cote": 82.0,
+          "cote_tendance": "",
+          "cote_reference": 74.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1819,6 +2058,9 @@
           "nb_courses": 6,
           "nb_victoires": 0,
           "nb_places": 4,
+          "cote": 123.0,
+          "cote_tendance": "",
+          "cote_reference": 224.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1840,6 +2082,9 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 3,
+          "cote": 82.0,
+          "cote_tendance": "",
+          "cote_reference": 74.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1861,6 +2106,9 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
+          "cote": 1.2,
+          "cote_tendance": "",
+          "cote_reference": 1.2,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1882,6 +2130,9 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 4,
+          "cote": 247.0,
+          "cote_tendance": "",
+          "cote_reference": 224.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1903,6 +2154,9 @@
           "nb_courses": 8,
           "nb_victoires": 0,
           "nb_places": 5,
+          "cote": 16.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1924,6 +2178,9 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 2,
+          "cote": 82.0,
+          "cote_tendance": "",
+          "cote_reference": 74.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1945,6 +2202,9 @@
           "nb_courses": 7,
           "nb_victoires": 1,
           "nb_places": 2,
+          "cote": 123.0,
+          "cote_tendance": "",
+          "cote_reference": 224.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1966,6 +2226,9 @@
           "nb_courses": 10,
           "nb_victoires": 0,
           "nb_places": 6,
+          "cote": 49.0,
+          "cote_tendance": "",
+          "cote_reference": 56.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1987,6 +2250,9 @@
           "nb_courses": 6,
           "nb_victoires": 1,
           "nb_places": 2,
+          "cote": 27.0,
+          "cote_tendance": "",
+          "cote_reference": 37.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2008,6 +2274,9 @@
           "nb_courses": 8,
           "nb_victoires": 0,
           "nb_places": 5,
+          "cote": 20.0,
+          "cote_tendance": "",
+          "cote_reference": 18.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2029,6 +2298,9 @@
           "nb_courses": 9,
           "nb_victoires": 0,
           "nb_places": 5,
+          "cote": 123.0,
+          "cote_tendance": "",
+          "cote_reference": 112.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2050,9 +2322,15 @@
           "nb_courses": 7,
           "nb_victoires": 1,
           "nb_places": 3,
+          "cote": 61.0,
+          "cote_tendance": "",
+          "cote_reference": 74.0,
           "avis_entraineur": "NEUTRE"
         }
       ],
+      "typePiste": "POUZZOLANE",
+      "terrain": "Bon",
+      "penetrometre": "3,0",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -2082,6 +2360,9 @@
           "nb_courses": 38,
           "nb_victoires": 2,
           "nb_places": 17,
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2103,6 +2384,9 @@
           "nb_courses": 79,
           "nb_victoires": 0,
           "nb_places": 50,
+          "cote": 62.0,
+          "cote_tendance": "",
+          "cote_reference": 45.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2166,6 +2450,9 @@
           "nb_courses": 36,
           "nb_victoires": 2,
           "nb_places": 26,
+          "cote": 6.2,
+          "cote_tendance": "",
+          "cote_reference": 5.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2187,6 +2474,9 @@
           "nb_courses": 25,
           "nb_victoires": 4,
           "nb_places": 7,
+          "cote": 24.0,
+          "cote_tendance": "",
+          "cote_reference": 18.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2208,6 +2498,9 @@
           "nb_courses": 24,
           "nb_victoires": 3,
           "nb_places": 14,
+          "cote": 7.7,
+          "cote_tendance": "",
+          "cote_reference": 8.2,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2229,6 +2522,9 @@
           "nb_courses": 66,
           "nb_victoires": 9,
           "nb_places": 29,
+          "cote": 1.7,
+          "cote_tendance": "",
+          "cote_reference": 2.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2250,6 +2546,9 @@
           "nb_courses": 115,
           "nb_victoires": 2,
           "nb_places": 45,
+          "cote": 62.0,
+          "cote_tendance": "",
+          "cote_reference": 45.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2271,6 +2570,9 @@
           "nb_courses": 85,
           "nb_victoires": 6,
           "nb_places": 28,
+          "cote": 31.0,
+          "cote_tendance": "",
+          "cote_reference": 22.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2292,6 +2594,9 @@
           "nb_courses": 66,
           "nb_victoires": 6,
           "nb_places": 32,
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 12.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2313,9 +2618,15 @@
           "nb_courses": 58,
           "nb_victoires": 7,
           "nb_places": 29,
+          "cote": 41.0,
+          "cote_tendance": "",
+          "cote_reference": 45.0,
           "avis_entraineur": "NEUTRE"
         }
       ],
+      "typePiste": "POUZZOLANE",
+      "terrain": "Bon",
+      "penetrometre": "3,0",
       "cordeCourse": "CORDE_DROITE"
     }
   ]

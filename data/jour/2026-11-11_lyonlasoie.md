@@ -1,8 +1,8 @@
 # LYON LA SOIE — 11/11/2026
 
-8 courses.
+8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
@@ -12,39 +12,38 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | LASCAR DE YOR | – | A. GAUDIN |
-| 2 | LIBRE D'EMOTION | – | A. TINTILLIER |
-| 3 | LE TRESOR | – | L. BEILEARD |
-| 4 | LABEL MESS | – | Q. CHAUVE-LAFFAY |
-| 5 | LOMBARDO DE LOU | – | J. CUOQ |
-| 6 | LE MAGNIFIQUE DJOC | – | B. RUET |
-| 7 | LET'S GO SAUTREUIL | – | M.J. BARCELO BISQUERRA |
-| 8 | LEMON JULRY | – | J.P. GAUVIN |
-| 9 | LOVE LAND LOVA | – | TH. BRIAND |
-| 10 | LOOKING SIXTY ONE | – | D. BEKAERT |
+| 7 | LET'S GO SAUTREUIL | 3,9 | M.J. BARCELO BISQUERRA |
+| 9 | LOVE LAND LOVA | 3,9 | TH. BRIAND |
+| 8 | LEMON JULRY | 4,2 | J.P. GAUVIN |
+| 10 | LOOKING SIXTY ONE | 6,6 | D. BEKAERT |
+| 4 | LABEL MESS | 9,5 | Q. CHAUVE-LAFFAY |
+| 3 | LE TRESOR | 18 | L. BEILEARD |
+| 2 | LIBRE D'EMOTION | 19 | A. TINTILLIER |
+| 6 | LE MAGNIFIQUE DJOC | 44 | B. RUET |
+| 5 | LOMBARDO DE LOU | 146 | J. CUOQ |
+| 1 | LASCAR DE YOR | 440 | A. GAUDIN |
 
 ### 2. PRIX OURASI
 
-*16h42 · attelé · 2700 m · 16 partants · cotes de l'extraction*
+*16h42 · attelé · 2700 m · 15 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | ILLUSTRE DE CHENOU | – | MARTIN CORMY |
-| 2 | JOOSTER LE FOL | – | A. GAUDIN |
-| 3 | ICARE DE LA BASLE | – | Q. DAOUGABEL |
-| 4 | IRA STAR | – | B. THOMAS |
-| 5 | INES GRIFF | – | ALEXIS LERENARD |
-| 6 | JUAN LES PINS | – | L. FRESNEAU |
-| 7 | HONEY DE TOUCHYVON | – | M. MESSAGER |
-| 8 | JAVANAIS | – | A. RANDON |
-| 9 | HOUPETTE ROSE | – | L. LAMAZIERE |
-| 10 | HELMA DE BUSSET | – | B. RUET |
-| 11 | JUST D'ERONVILLE | – | A. TINTILLIER |
-| 12 | JOYEUX NONNA | – | TH. BRIAND |
-| 13 | HARLEQUIN | – | P. CALLIER |
-| 14 | INDIC | – | S. STEFANO |
-| 15 | INESKA | – | Q. CHAUVE-LAFFAY |
-| 16 | JEWEL TOUCH | – | D. BEKAERT |
+| 12 | JOYEUX NONNA | 2,4 | TH. BRIAND |
+| 16 | JEWEL TOUCH | 4,6 | D. BEKAERT |
+| 8 | JAVANAIS | 10 | A. RANDON |
+| 14 | INDIC | 10 | S. STEFANO |
+| 6 | JUAN LES PINS | 13 | L. FRESNEAU |
+| 11 | JUST D'ERONVILLE | 19 | A. TINTILLIER |
+| 10 | HELMA DE BUSSET | 20 | B. RUET |
+| 13 | HARLEQUIN | 22 | P. CALLIER |
+| 9 | HOUPETTE ROSE | 29 | L. LAMAZIERE |
+| 15 | INESKA | 40 | Q. CHAUVE-LAFFAY |
+| 2 | JOOSTER LE FOL | 61 | A. GAUDIN |
+| 1 | ILLUSTRE DE CHENOU | 184 | MARTIN CORMY |
+| 3 | ICARE DE LA BASLE | 184 | Q. DAOUGABEL |
+| 4 | IRA STAR | 184 | B. THOMAS |
+| 5 | INES GRIFF | 245 | ALEXIS LERENARD |
 
 ### 3. PRIX GELINOTTE
 
@@ -52,21 +51,21 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | LA BRIERE | – | MARTIAL GAUVIN |
-| 2 | LOVELY DEVOL | – | Y.A. BRIAND |
-| 3 | LA RAMEE | – | P. CALLIER |
-| 4 | LEYLI DE LA VALLEE | – | A. TINTILLIER |
-| 5 | LOUNA D'HUCHELOUP | – | Q. DAOUGABEL |
-| 6 | LETTY D'ARGENVIERE | – | B. THIENNE |
-| 7 | LONDON LADY | – | D. BEKAERT |
-| 8 | L'ETOILE DE PAME | – | Q. CHAUVE-LAFFAY |
-| 9 | LOLLIPOP THE BEST | – | B. RUET |
-| 10 | LIKE A JULRY | – | J.P. GAUVIN |
-| 11 | LOLA DE CHENU | – | P. PELLEROT |
-| 12 | LEGION SMART | – | TH. BRIAND |
-| 13 | LALY DE JADE | – | M.J. BARCELO BISQUERRA |
-| 14 | LILY CARNOIS | – | MARTIN CORMY |
-| 15 | LIBERATA | – | L. LAMAZIERE |
+| 11 | LOLA DE CHENU | 2,2 | P. PELLEROT |
+| 12 | LEGION SMART | 5,4 | TH. BRIAND |
+| 10 | LIKE A JULRY | 7,4 | J.P. GAUVIN |
+| 15 | LIBERATA | 12 | L. LAMAZIERE |
+| 8 | L'ETOILE DE PAME | 17 | Q. CHAUVE-LAFFAY |
+| 13 | LALY DE JADE | 17 | M.J. BARCELO BISQUERRA |
+| 7 | LONDON LADY | 18 | D. BEKAERT |
+| 14 | LILY CARNOIS | 33 | MARTIN CORMY |
+| 9 | LOLLIPOP THE BEST | 40 | B. RUET |
+| 4 | LEYLI DE LA VALLEE | 80 | A. TINTILLIER |
+| 6 | LETTY D'ARGENVIERE | 80 | B. THIENNE |
+| 3 | LA RAMEE | 112 | P. CALLIER |
+| 1 | LA BRIERE | 141 | MARTIAL GAUVIN |
+| 2 | LOVELY DEVOL | 141 | Y.A. BRIAND |
+| 5 | LOUNA D'HUCHELOUP | 141 | Q. DAOUGABEL |
 
 ### 4. PRIX HADOL DU VIVIER
 
@@ -74,19 +73,19 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MORNINGSUN DU RHIN | – | MARTIN CORMY |
-| 2 | MAGNUS ROMO | – | PH. DANTHU |
-| 3 | MAIK DU HAUTVENT | – | B. THOMAS |
-| 4 | MAGNUS SEN | – | M. MESSAGER |
-| 5 | MARQUIS FORTIS | – | A. ERNAULT |
-| 6 | MAYBE LOUANGES | – | F. BROUST |
-| 7 | MERITE JULRY | – | J.P. GAUVIN |
-| 8 | MYSTERE DE POULINE | – | P. CALLIER |
-| 9 | MATCHO MESLOIS | – | N. CORMY |
-| 10 | MONSEIGNEUR | – | A. TINTILLIER |
-| 11 | MERLIN DES CHAMPS | – | Y.A. BRIAND |
-| 12 | MYSTERE TURGOT | – | TH. BRIAND |
-| 13 | MOULU JIHEM | – | Q. CHAUVE-LAFFAY |
+| 13 | MOULU JIHEM | 4,7 | Q. CHAUVE-LAFFAY |
+| 12 | MYSTERE TURGOT | 5,3 | TH. BRIAND |
+| 11 | MERLIN DES CHAMPS | 5,6 | Y.A. BRIAND |
+| 10 | MONSEIGNEUR | 6,6 | A. TINTILLIER |
+| 8 | MYSTERE DE POULINE | 9,6 | P. CALLIER |
+| 7 | MERITE JULRY | 11 | J.P. GAUVIN |
+| 4 | MAGNUS SEN | 17 | M. MESSAGER |
+| 2 | MAGNUS ROMO | 23 | PH. DANTHU |
+| 9 | MATCHO MESLOIS | 23 | N. CORMY |
+| 5 | MARQUIS FORTIS | 33 | A. ERNAULT |
+| 1 | MORNINGSUN DU RHIN | 57 | MARTIN CORMY |
+| 3 | MAIK DU HAUTVENT | 77 | B. THOMAS |
+| 6 | MAYBE LOUANGES | 77 | F. BROUST |
 
 ### 5. PRIX BELLINO II
 
@@ -94,22 +93,22 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MONIE DU LOISIR | – | M. DUJMIC |
-| 2 | MA BEAUTE D'AMOUR | – | TH. BRIAND |
-| 3 | MISS DE MAI | – | D. MARASCO |
-| 4 | MILADY OAKS | – | G. VIDAL |
-| 5 | MAY BE JULRY | – | J.P. GAUVIN |
-| 6 | MESSALINE | – | D. BEKAERT |
-| 7 | MARIA DU MATO | – | B. THOMAS |
-| 8 | MARTINA GIO | – | B. RUET |
-| 9 | MAELYS DES BORDES | – | ALEXIS LERENARD |
-| 10 | MIMI WILLIAMS | – | TH. BUSSET |
-| 11 | MISS GABRIELLE | – | L. VERRIERE |
-| 12 | MAMY BLUE TIT | – | L. LAMAZIERE |
-| 13 | MYSTIQUE LOULOU | – | Q. CHAUVE-LAFFAY |
-| 14 | MAREVA | – | J. CUOQ |
-| 15 | MARELLA DALEO | – | Q. DAOUGABEL |
-| 16 | MY LADY ISLAND | – | A. TINTILLIER |
+| 13 | MYSTIQUE LOULOU | 3,5 | Q. CHAUVE-LAFFAY |
+| 2 | MA BEAUTE D'AMOUR | 5,2 | TH. BRIAND |
+| 12 | MAMY BLUE TIT | 7,2 | L. LAMAZIERE |
+| 6 | MESSALINE | 11 | D. BEKAERT |
+| 14 | MAREVA | 11 | J. CUOQ |
+| 8 | MARTINA GIO | 14 | B. RUET |
+| 11 | MISS GABRIELLE | 14 | L. VERRIERE |
+| 5 | MAY BE JULRY | 17 | J.P. GAUVIN |
+| 16 | MY LADY ISLAND | 23 | A. TINTILLIER |
+| 15 | MARELLA DALEO | 35 | Q. DAOUGABEL |
+| 10 | MIMI WILLIAMS | 40 | TH. BUSSET |
+| 1 | MONIE DU LOISIR | 47 | M. DUJMIC |
+| 7 | MARIA DU MATO | 70 | B. THOMAS |
+| 9 | MAELYS DES BORDES | 70 | ALEXIS LERENARD |
+| 3 | MISS DE MAI | 94 | D. MARASCO |
+| 4 | MILADY OAKS | 141 | G. VIDAL |
 
 ### 6. PRIX KAISER TROT
 
@@ -117,14 +116,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KROSKOF DE GUEZ | – | Mlle E. LACOMBLEZ |
-| 2 | KOKA DE MALAC | – | M. LAFFAY |
-| 3 | JAWENN DE KERYANN | – | Mlle H. GODEY |
-| 4 | JOUR DU TRESOR | – | F. POISSON |
-| 5 | KAPELLA FABULET | – | Mlle CL. THUET |
-| 6 | IDEAL LOVER | – | Mme CH. BELLEC |
-| 7 | KHEOPS DU LOISIR | – | D.A. HAON |
-| 8 | KLEOPATRE D'ALFORT | – | Mlle M. MENDIBOURE |
+| 5 | KAPELLA FABULET | 2,6 | Mlle CL. THUET |
+| 1 | KROSKOF DE GUEZ | 3,8 | Mlle E. LACOMBLEZ |
+| 8 | KLEOPATRE D'ALFORT | 6,3 | Mlle M. MENDIBOURE |
+| 2 | KOKA DE MALAC | 10 | M. LAFFAY |
+| 4 | JOUR DU TRESOR | 13 | F. POISSON |
+| 3 | JAWENN DE KERYANN | 15 | Mlle H. GODEY |
+| 7 | KHEOPS DU LOISIR | 15 | D.A. HAON |
+| 6 | IDEAL LOVER | 24 | Mme CH. BELLEC |
 
 ### 7. PRIX ROQUEPINE
 
@@ -132,22 +131,22 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | NIKITA BOND | – | D. BEKAERT |
-| 2 | NO MORE DREAM | – | L. GARCIA |
-| 3 | NICE GALAXIE | – | M. AOUDIA |
-| 4 | NO COMMENT ONE | – | L. VERRIERE |
-| 5 | NAMA MAHA | – | MARTIAL GAUVIN |
-| 6 | NUIT DE LOISIR | – | B. THOMAS |
-| 7 | NEWTON MARCEAUX | – | TH. BRIAND |
-| 8 | NOEMIE RIDGEHEAD | – | F. BROUST |
-| 9 | NINA D'ALRE | – | J. CUOQ |
-| 10 | NOVA JIEL | – | A. GAUDIN |
-| 11 | NO ONE D'AUBIGNY | – | B. CHOURRE |
-| 12 | NEO WYNN | – | ALEXIS LERENARD |
-| 13 | NATASHA CANTATE | – | B. RUET |
-| 14 | NOBLE COEUR | – | A. TINTILLIER |
-| 15 | NOBLE DE TESSEL | – | TH. BUSSET |
-| 16 | NORIA DU VALLON | – | Q. CHAUVE-LAFFAY |
+| 7 | NEWTON MARCEAUX | 1,2 | TH. BRIAND |
+| 1 | NIKITA BOND | 14 | D. BEKAERT |
+| 9 | NINA D'ALRE | 16 | J. CUOQ |
+| 14 | NOBLE COEUR | 20 | A. TINTILLIER |
+| 2 | NO MORE DREAM | 27 | L. GARCIA |
+| 13 | NATASHA CANTATE | 27 | B. RUET |
+| 12 | NEO WYNN | 49 | ALEXIS LERENARD |
+| 16 | NORIA DU VALLON | 61 | Q. CHAUVE-LAFFAY |
+| 4 | NO COMMENT ONE | 82 | L. VERRIERE |
+| 6 | NUIT DE LOISIR | 82 | B. THOMAS |
+| 10 | NOVA JIEL | 82 | A. GAUDIN |
+| 3 | NICE GALAXIE | 123 | M. AOUDIA |
+| 5 | NAMA MAHA | 123 | MARTIAL GAUVIN |
+| 11 | NO ONE D'AUBIGNY | 123 | B. CHOURRE |
+| 15 | NOBLE DE TESSEL | 123 | TH. BUSSET |
+| 8 | NOEMIE RIDGEHEAD | 247 | F. BROUST |
 
 ### 8. PRIX DE LA THIERACHE
 
@@ -155,15 +154,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KIMBRA DJOC | – | D. LAPRAY |
-| 2 | ISIS DE REYNALD | – | B. FEDRY |
+| 8 | JESCO DE LA VALLEE | 1,7 | Mme V. BOUDIER-CORMY |
+| 5 | JAIKA DES BORDES | 6,2 | E. FAVIER |
+| 7 | KATE BRIONNAISE | 7,7 | Y. LERENARD |
+| 1 | KIMBRA DJOC | 15 | D. LAPRAY |
+| 11 | INJECTABLE | 15 | G. BLANCHARD |
+| 6 | KIYOUNI | 24 | LUC DUMONT |
+| 10 | ICE SCOTT | 31 | PHILIPPE SEILER |
+| 12 | HAMILTON FOUTEAU | 41 | TH. CLAIRET |
+| 2 | ISIS DE REYNALD | 62 | B. FEDRY |
+| 9 | HYPOLIT DE BEL AIR | 62 | H. LAKHRISSI |
 | 3 | JALIX DE NIOUX | – | A. LEGRAND |
 | 4 | JOLIE ARCTIC | – | M.M. MUTEL |
-| 5 | JAIKA DES BORDES | – | E. FAVIER |
-| 6 | KIYOUNI | – | LUC DUMONT |
-| 7 | KATE BRIONNAISE | – | Y. LERENARD |
-| 8 | JESCO DE LA VALLEE | – | Mme V. BOUDIER-CORMY |
-| 9 | HYPOLIT DE BEL AIR | – | H. LAKHRISSI |
-| 10 | ICE SCOTT | – | PHILIPPE SEILER |
-| 11 | INJECTABLE | – | G. BLANCHARD |
-| 12 | HAMILTON FOUTEAU | – | TH. CLAIRET |

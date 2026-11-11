@@ -1,8 +1,8 @@
 # CHATEAUBRIANT — 11/11/2026
 
-8 courses.
+8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
@@ -12,62 +12,60 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | OLYMPE DU PONT | – | R. CONGARD |
-| 2 | OMELA D'AMOUR | – | F. NIVARD |
-| 3 | OPALE TURGOT | – | J.ET. ABRIVARD |
-| 4 | ORALDO BEAUSEJOUR | – | G. JOUVE |
-| 5 | OSMOSE TURGOT | – | B. ROCHARD |
-| 6 | OUI OUI | – | CH. DREUX |
-| 7 | OMA BRISE TIME | – | A. GUARATO |
-| 8 | ORIGINAL ARTIST | – | J.PH. DUBOIS |
-| 9 | OPIO DE LA VALLEE | – | G. BAUDOUIN |
-| 10 | OZO MADRIK | – | R. HUE |
-| 11 | OLGA SOLO | – | J.PH. MONCLIN |
-| 12 | ORCHESTRA | – | L. BAUDOUIN |
-| 13 | OPERA WOOD | – | A. COLLETTE |
-| 14 | OFFICINE | – | A.G. MAILLARD |
+| 1 | OLYMPE DU PONT | 2,4 | R. CONGARD |
+| 5 | OSMOSE TURGOT | 5,5 | B. ROCHARD |
+| 10 | OZO MADRIK | 8,8 | R. HUE |
+| 12 | ORCHESTRA | 9,9 | L. BAUDOUIN |
+| 13 | OPERA WOOD | 14 | A. COLLETTE |
+| 7 | OMA BRISE TIME | 19 | A. GUARATO |
+| 11 | OLGA SOLO | 24 | J.PH. MONCLIN |
+| 3 | OPALE TURGOT | 25 | J.ET. ABRIVARD |
+| 8 | ORIGINAL ARTIST | 32 | J.PH. DUBOIS |
+| 2 | OMELA D'AMOUR | 37 | F. NIVARD |
+| 9 | OPIO DE LA VALLEE | 42 | G. BAUDOUIN |
+| 14 | OFFICINE | 44 | A.G. MAILLARD |
+| 6 | OUI OUI | 56 | CH. DREUX |
+| 4 | ORALDO BEAUSEJOUR | 73 | G. JOUVE |
 
 ### 2. PRIX DU PONT PIREAU
 
-*13h00 · attelé · 2400 m · 14 partants · cotes de l'extraction*
+*13h00 · attelé · 2400 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | NINO DE SAINT JEAN | – | F. HEON |
-| 2 | NIGOUNO PRIOR | – | S. DESMARRES |
-| 3 | NOLDWIN DE GUEZ | – | A. WIELS |
-| 4 | NOAM | – | F. DELANOE |
-| 5 | NO DOUBT WALLIE | – | M. HERRAULT |
-| 6 | NOUREYEV | – | J.PH. MONCLIN |
-| 7 | NUMBER ONE FLIGNY | – | A. COLLETTE |
-| 8 | NOTTINGHAM GABY | – | C. BEDEL |
-| 9 | NEW RUSH | – | G. DONIO |
-| 10 | NOTCH UP | – | L. BAUDRON |
-| 11 | NIAGARA CAUVELIERE | – | PH. DUPRE |
-| 12 | NEWTON D'ARTHENAY | – | M. BARRE |
-| 13 | NOUVEAU PRINCE | – | B. ROCHARD |
-| 14 | NABUCHODONOSOR | – | J. BRUNEAU |
+| 13 | NOUVEAU PRINCE | 1,9 | B. ROCHARD |
+| 7 | NUMBER ONE FLIGNY | 4,4 | A. COLLETTE |
+| 10 | NOTCH UP | 16 | L. BAUDRON |
+| 4 | NOAM | 18 | F. DELANOE |
+| 3 | NOLDWIN DE GUEZ | 18 | A. WIELS |
+| 11 | NIAGARA CAUVELIERE | 22 | PH. DUPRE |
+| 9 | NEW RUSH | 24 | G. DONIO |
+| 5 | NO DOUBT WALLIE | 27 | M. HERRAULT |
+| 8 | NOTTINGHAM GABY | 30 | C. BEDEL |
+| 14 | NABUCHODONOSOR | 39 | J. BRUNEAU |
+| 12 | NEWTON D'ARTHENAY | 57 | M. BARRE |
+| 1 | NINO DE SAINT JEAN | 63 | F. HEON |
+| 2 | NIGOUNO PRIOR | 81 | S. DESMARRES |
 
 ### 3. PRIX GELINOTTE
 
-*13h30 · attelé · 2400 m · 14 partants · cotes de l'extraction*
+*13h30 · attelé · 2400 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | NANCIA DU LUPIN | – | T. OUVRIE |
-| 2 | NANA SAUTREUIL | – | O. POTIER |
-| 3 | NEW YORK GRIFF | – | J. LAVAINNE |
-| 4 | NIGHT QUEEN | – | L. BAUDOUIN |
-| 5 | NOEMIE DAIRPET | – | P. PLOQUIN |
-| 6 | NEVITA LOVE JO | – | E. CIVE |
-| 7 | NARIANA BELLA | – | A. WIELS |
-| 8 | NAISSANCE ROYALE | – | J.PH. MONCLIN |
-| 9 | NICE NORMANDIE | – | T. LE BELLER |
-| 10 | NICE QUALITY | – | F. NIVARD |
-| 11 | NANGAE DE GUEZ | – | B. ROCHARD |
-| 12 | NUANCE ROYALE | – | J.ET. ABRIVARD |
-| 13 | NINA DE SUBLIGNY | – | F. HEON |
-| 14 | NAUSICA DE CHANJAC | – | A.A. DAVID |
+| 8 | NAISSANCE ROYALE | 3,1 | J.PH. MONCLIN |
+| 7 | NARIANA BELLA | 3,2 | A. WIELS |
+| 9 | NICE NORMANDIE | 4,6 | T. LE BELLER |
+| 12 | NUANCE ROYALE | 11 | J.ET. ABRIVARD |
+| 13 | NINA DE SUBLIGNY | 23 | F. HEON |
+| 10 | NICE QUALITY | 24 | F. NIVARD |
+| 5 | NOEMIE DAIRPET | 28 | P. PLOQUIN |
+| 1 | NANCIA DU LUPIN | 38 | T. OUVRIE |
+| 14 | NAUSICA DE CHANJAC | 38 | A.A. DAVID |
+| 4 | NIGHT QUEEN | 55 | L. BAUDOUIN |
+| 6 | NEVITA LOVE JO | 115 | E. CIVE |
+| 3 | NEW YORK GRIFF | 156 | J. LAVAINNE |
+| 2 | NANA SAUTREUIL | 190 | O. POTIER |
 
 ### 4. PRIX JET DU VIVIER
 
@@ -75,18 +73,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KAMELA FLIGNY | – | L. LHOTE |
-| 2 | KANSAS LUDOIS | – | J. LEVESQUE |
-| 3 | KALINE DU LEVANT | – | M. POTIER |
-| 4 | KALINKA FLEURIE | – | J. PLASSAIS |
-| 5 | LET IT OUT | – | D. BARANGER |
-| 6 | LISSANDRO D'ARC | – | A. VELANY |
-| 7 | KAVALE DE BOLERO | – | Q. MICHEL |
-| 8 | KRAC DE CAZOULENE | – | E. CIVE |
-| 9 | KILT DU RADON | – | C. HERIVAUX |
-| 10 | LEGENDE DU BOULAY | – | J.J. BELLEVEAUX |
-| 11 | KERIDA DE MARZY | – | W. PLAIRE |
-| 12 | KALITY LOVE | – | A. GUARATO |
+| 6 | LISSANDRO D'ARC | 2,6 | A. VELANY |
+| 3 | KALINE DU LEVANT | 6,4 | M. POTIER |
+| 11 | KERIDA DE MARZY | 6,9 | W. PLAIRE |
+| 1 | KAMELA FLIGNY | 11 | L. LHOTE |
+| 9 | KILT DU RADON | 12 | C. HERIVAUX |
+| 10 | LEGENDE DU BOULAY | 13 | J.J. BELLEVEAUX |
+| 5 | LET IT OUT | 16 | D. BARANGER |
+| 12 | KALITY LOVE | 24 | A. GUARATO |
+| 7 | KAVALE DE BOLERO | 24 | Q. MICHEL |
+| 2 | KANSAS LUDOIS | 25 | J. LEVESQUE |
+| 8 | KRAC DE CAZOULENE | 35 | E. CIVE |
+| 4 | KALINKA FLEURIE | 72 | J. PLASSAIS |
 
 ### 5. GRAND PRIX DE LA METAIRIE NEUVE
 
@@ -94,47 +92,46 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | ISIDORO DIDAN | – | G. DONIO |
-| 2 | JOYCE DE COSSE | – | AURELIEN DESMARRES |
-| 3 | IRIS RENARDIER | – | J.B. LEMOINE |
-| 4 | ILOWA D'OHARA | – | L. LEGRAND |
-| 5 | ISCHIA | – | D. VALLEE |
-| 6 | JASON DU PERRON | – | A. MALLET |
-| 7 | JOKER CASTILUANNE | – | C. MEGISSIER |
-| 8 | JOUEUR DU LUPIN | – | A. WIELS |
-| 9 | JACKAO DE GUEZ | – | D. BARANGER |
-| 10 | JOUEUR DANICA | – | J.PH. MONCLIN |
-| 11 | JAKA DU RUEL | – | A.G. MAILLARD |
-| 12 | JAZERANE | – | A. COLLETTE |
-| 13 | IMPERIALE MIVENCE | – | J. BALU |
-| 14 | JESTA BUISSONAY | – | N. ROUSSEAU |
-| 15 | IROISE DE MADKER | – | F. NIVARD |
-| 16 | IDEAL D'URZY | – | B. ROCHARD |
-| 17 | JOKER DE CHOISEL | – | S.G. DUPONT |
-| 18 | IRRESISTIBLE PAJ | – | P. PLOQUIN |
+| 16 | IDEAL D'URZY | 1,5 | B. ROCHARD |
+| 12 | JAZERANE | 10 | A. COLLETTE |
+| 10 | JOUEUR DANICA | 13 | J.PH. MONCLIN |
+| 17 | JOKER DE CHOISEL | 13 | S.G. DUPONT |
+| 8 | JOUEUR DU LUPIN | 14 | A. WIELS |
+| 15 | IROISE DE MADKER | 31 | F. NIVARD |
+| 9 | JACKAO DE GUEZ | 35 | D. BARANGER |
+| 13 | IMPERIALE MIVENCE | 39 | J. BALU |
+| 18 | IRRESISTIBLE PAJ | 43 | P. PLOQUIN |
+| 2 | JOYCE DE COSSE | 57 | AURELIEN DESMARRES |
+| 11 | JAKA DU RUEL | 61 | A.G. MAILLARD |
+| 7 | JOKER CASTILUANNE | 75 | C. MEGISSIER |
+| 1 | ISIDORO DIDAN | 104 | G. DONIO |
+| 3 | IRIS RENARDIER | 120 | J.B. LEMOINE |
+| 4 | ILOWA D'OHARA | 143 | L. LEGRAND |
+| 5 | ISCHIA | 143 | D. VALLEE |
+| 6 | JASON DU PERRON | 147 | A. MALLET |
+| 14 | JESTA BUISSONAY | 241 | N. ROUSSEAU |
 
 ### 6. PRIX DES AMATEURS
 
-*15h00 · attelé · 3025 m · 16 partants · cotes de l'extraction*
+*15h00 · attelé · 3025 m · 15 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | IDEFIX HERBLINAIE | – | S. RAFFEGEAU |
-| 2 | HYMNE MERITE | – | J. CANDON |
-| 3 | IRIS D'AVIGNERE | – | J.PH. DERRIAN |
-| 4 | HIMADOR D'AVRAN | – | A. CLEMENT |
-| 5 | INES DE GLADJESS | – | Mlle P. HUGELE |
-| 6 | IDEAL DE BAULON | – | M. COLLIN |
-| 7 | HEROS DE BANVILLE | – | H. JOUAULT |
-| 8 | GALCINOIS | – | M. DURAND |
-| 9 | GOLD DE CHOISEL | – | F. BERTHAULT |
-| 10 | INDY FOUTEAU | – | A. RAFFIN |
-| 11 | JAZZMAN ERDE | – | D. RABILLER |
-| 12 | JARDY DES LANDES | – | D. CAILLET |
-| 13 | KARPANINO | – | P. HERGNO |
-| 14 | JAPPELOUP CARNOIS | – | Mme L. ALUS |
-| 15 | IVAR D'AURCY | – | D. BARRE |
-| 16 | HASARD BLOND | – | A. SCHNABEL |
+| 10 | INDY FOUTEAU | 1,6 | A. RAFFIN |
+| 15 | IVAR D'AURCY | 6,5 | D. BARRE |
+| 7 | HEROS DE BANVILLE | 12 | H. JOUAULT |
+| 8 | GALCINOIS | 22 | M. DURAND |
+| 1 | IDEFIX HERBLINAIE | 25 | S. RAFFEGEAU |
+| 3 | IRIS D'AVIGNERE | 25 | J.PH. DERRIAN |
+| 4 | HIMADOR D'AVRAN | 27 | A. CLEMENT |
+| 16 | HASARD BLOND | 29 | A. SCHNABEL |
+| 5 | INES DE GLADJESS | 35 | Mlle P. HUGELE |
+| 2 | HYMNE MERITE | 38 | J. CANDON |
+| 9 | GOLD DE CHOISEL | 77 | F. BERTHAULT |
+| 11 | JAZZMAN ERDE | 97 | D. RABILLER |
+| 12 | JARDY DES LANDES | 97 | D. CAILLET |
+| 13 | KARPANINO | 97 | P. HERGNO |
+| 14 | JAPPELOUP CARNOIS | 129 | Mme L. ALUS |
 
 ### 7. PRIX DE GATINES (GR.A)
 
@@ -142,20 +139,20 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MAT DES CHARRONS | – | M. BARRE |
-| 2 | MAESTRO DES NOES | – | P.E. COLLARD |
-| 3 | MIDOKING | – | B. ROCHARD |
-| 4 | MATADOR DU PALAIS | – | H. MARIE |
-| 5 | MAGIC DIGEO | – | C. MEGISSIER |
-| 6 | MELODIE DES DAMES | – | J.PH. MONCLIN |
-| 7 | MIGOVE DU CHARME | – | D. BLOND |
-| 8 | MAESTRIA DU PLAIN | – | T. OUVRIE |
-| 9 | MY DARLING DANOVER | – | J. TRAVERS |
-| 10 | MEARAS PAULOIS | – | ANTHONY DOLLION |
-| 11 | MAYFLOWER DULONRAY | – | F. NIVARD |
-| 12 | MAGIE DE GUIBRAY | – | J. BORDAS |
-| 13 | MISS DAM LORRAINE | – | A. COLLETTE |
-| 14 | MARITZA DU PERCHE | – | V. SEGUIN |
+| 3 | MIDOKING | 4,4 | B. ROCHARD |
+| 13 | MISS DAM LORRAINE | 4,7 | A. COLLETTE |
+| 10 | MEARAS PAULOIS | 6,6 | ANTHONY DOLLION |
+| 7 | MIGOVE DU CHARME | 6,8 | D. BLOND |
+| 11 | MAYFLOWER DULONRAY | 10 | F. NIVARD |
+| 5 | MAGIC DIGEO | 11 | C. MEGISSIER |
+| 6 | MELODIE DES DAMES | 20 | J.PH. MONCLIN |
+| 8 | MAESTRIA DU PLAIN | 20 | T. OUVRIE |
+| 4 | MATADOR DU PALAIS | 23 | H. MARIE |
+| 14 | MARITZA DU PERCHE | 34 | V. SEGUIN |
+| 2 | MAESTRO DES NOES | 56 | P.E. COLLARD |
+| 1 | MAT DES CHARRONS | 64 | M. BARRE |
+| 12 | MAGIE DE GUIBRAY | 64 | J. BORDAS |
+| 9 | MY DARLING DANOVER | 226 | J. TRAVERS |
 
 ### 8. PRIX DU ROTARY CLUB (GR.B)
 
@@ -163,17 +160,17 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MORANT DAIRPET | – | M. HERRAULT |
-| 2 | MEDOC PIERJI | – | F. NIVARD |
-| 3 | MIGNON DES MACE | – | J. POUTREL |
-| 4 | MAYA DU PREVALAY | – | A. ANGOT |
-| 5 | MADY CUP | – | A. COLLETTE |
-| 6 | MISTRAL D'ERI | – | B. ROCHARD |
-| 7 | MI AMORE JENILAT | – | AURELIEN DESMARRES |
-| 8 | MARVEL D'ERONVILLE | – | H. LECOT |
-| 9 | MONTE CARLO | – | F. GENCE |
-| 10 | MANGO DU POMMEREUX | – | N. ROUSSEAU |
-| 11 | MIDWAY DE BANVILLE | – | A.A. CHAVATTE |
-| 12 | MAGICIO BELLO | – | A. WIELS |
-| 13 | MIRACULOUS DANOVER | – | J. TRAVERS |
-| 14 | MYSTIC DARK | – | Mlle C. CHERADAME |
+| 6 | MISTRAL D'ERI | 3,8 | B. ROCHARD |
+| 9 | MONTE CARLO | 4,7 | F. GENCE |
+| 12 | MAGICIO BELLO | 4,9 | A. WIELS |
+| 1 | MORANT DAIRPET | 8,8 | M. HERRAULT |
+| 5 | MADY CUP | 10 | A. COLLETTE |
+| 2 | MEDOC PIERJI | 15 | F. NIVARD |
+| 7 | MI AMORE JENILAT | 16 | AURELIEN DESMARRES |
+| 11 | MIDWAY DE BANVILLE | 16 | A.A. CHAVATTE |
+| 8 | MARVEL D'ERONVILLE | 51 | H. LECOT |
+| 4 | MAYA DU PREVALAY | 73 | A. ANGOT |
+| 13 | MIRACULOUS DANOVER | 73 | J. TRAVERS |
+| 14 | MYSTIC DARK | 102 | Mlle C. CHERADAME |
+| 3 | MIGNON DES MACE | 128 | J. POUTREL |
+| 10 | MANGO DU POMMEREUX | 128 | N. ROUSSEAU |
