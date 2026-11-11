@@ -127,26 +127,26 @@
 
 ### 7. PRIX ROQUEPINE
 
-*19h34 · attelé · 2700 m · 16 partants · cotes à T−29:43*
+*19h34 · attelé · 2700 m · 16 partants · cotes à T−25:03*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
 | 7 | NEWTON MARCEAUX | 1,3 | 1,3 | TH. BRIAND |
-| 14 | NOBLE COEUR | 3,4 | 13 | A. TINTILLIER |
-| 1 | NIKITA BOND | 5,3 | 13 | D. BEKAERT |
-| 16 | NORIA DU VALLON | 8,8 | 55 | Q. CHAUVE-LAFFAY |
-| 15 | NOBLE DE TESSEL | 9,8 | 83 | TH. BUSSET |
-| 13 | NATASHA CANTATE | 11 | 25 | B. RUET |
-| 10 | NOVA JIEL | 14 | 67 | A. GAUDIN |
-| 5 | NAMA MAHA | 19 | 67 | MARTIAL GAUVIN |
-| 2 | NO MORE DREAM | 20 | 23 | L. GARCIA |
-| 12 | NEO WYNN | 20 | 67 | ALEXIS LERENARD |
-| 9 | NINA D'ALRE | 22 | 22 | J. CUOQ |
+| 14 | NOBLE COEUR | 4,3 | 13 | A. TINTILLIER |
+| 1 | NIKITA BOND | 4,7 | 13 | D. BEKAERT |
+| 16 | NORIA DU VALLON | 7,9 | 55 | Q. CHAUVE-LAFFAY |
+| 13 | NATASHA CANTATE | 8,7 | 25 | B. RUET |
+| 15 | NOBLE DE TESSEL | 11 | 83 | TH. BUSSET |
+| 10 | NOVA JIEL | 16 | 67 | A. GAUDIN |
+| 5 | NAMA MAHA | 18 | 67 | MARTIAL GAUVIN |
+| 12 | NEO WYNN | 23 | 67 | ALEXIS LERENARD |
+| 9 | NINA D'ALRE | 24 | 22 | J. CUOQ |
+| 2 | NO MORE DREAM | 26 | 23 | L. GARCIA |
+| 6 | NUIT DE LOISIR | 34 | 67 | B. THOMAS |
 | 11 | NO ONE D'AUBIGNY | 38 | 167 | B. CHOURRE |
-| 8 | NOEMIE RIDGEHEAD | 51 | 111 | F. BROUST |
-| 4 | NO COMMENT ONE | 55 | 111 | L. VERRIERE |
-| 3 | NICE GALAXIE | 61 | 67 | M. AOUDIA |
-| 6 | NUIT DE LOISIR | 61 | 67 | B. THOMAS |
+| 3 | NICE GALAXIE | 39 | 67 | M. AOUDIA |
+| 4 | NO COMMENT ONE | 39 | 111 | L. VERRIERE |
+| 8 | NOEMIE RIDGEHEAD | 49 | 111 | F. BROUST |
 
 ### 8. PRIX DE LA THIERACHE
 
