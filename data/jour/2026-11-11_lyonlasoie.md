@@ -69,23 +69,23 @@
 
 ### 4. PRIX HADOL DU VIVIER
 
-*17h52 · attelé · 2700 m · 13 partants · cotes à T−9:03*
+*17h52 · attelé · 2700 m · 13 partants · cotes à T−4:23*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 12 | MYSTERE TURGOT | 3,4 | 5,5 | TH. BRIAND |
-| 11 | MERLIN DES CHAMPS | 5,1 | 4,1 | Y.A. BRIAND |
-| 10 | MONSEIGNEUR | 6,2 | 7,4 | A. TINTILLIER |
-| 13 | MOULU JIHEM | 6,9 | 7 | Q. CHAUVE-LAFFAY |
-| 7 | MERITE JULRY | 10 | 9 | J.P. GAUVIN |
-| 8 | MYSTERE DE POULINE | 16 | 12 | P. CALLIER |
-| 9 | MATCHO MESLOIS | 16 | 14 | N. CORMY |
-| 4 | MAGNUS SEN | 29 | 19 | M. MESSAGER |
-| 5 | MARQUIS FORTIS | 34 | 38 | A. ERNAULT |
-| 6 | MAYBE LOUANGES | 40 | 54 | F. BROUST |
-| 3 | MAIK DU HAUTVENT | 57 | 76 | B. THOMAS |
-| 2 | MAGNUS ROMO | 70 | 19 | PH. DANTHU |
-| 1 | MORNINGSUN DU RHIN | 83 | 63 | MARTIN CORMY |
+| 12 | MYSTERE TURGOT | 2,2 | 5,5 | TH. BRIAND |
+| 11 | MERLIN DES CHAMPS | 7 | 4,1 | Y.A. BRIAND |
+| 13 | MOULU JIHEM | 7 | 7 | Q. CHAUVE-LAFFAY |
+| 10 | MONSEIGNEUR | 7,7 | 7,4 | A. TINTILLIER |
+| 7 | MERITE JULRY | 11 | 9 | J.P. GAUVIN |
+| 8 | MYSTERE DE POULINE | 17 | 12 | P. CALLIER |
+| 9 | MATCHO MESLOIS | 24 | 14 | N. CORMY |
+| 4 | MAGNUS SEN | 39 | 19 | M. MESSAGER |
+| 5 | MARQUIS FORTIS | 41 | 38 | A. ERNAULT |
+| 6 | MAYBE LOUANGES | 66 | 54 | F. BROUST |
+| 2 | MAGNUS ROMO | 77 | 19 | PH. DANTHU |
+| 3 | MAIK DU HAUTVENT | 80 | 76 | B. THOMAS |
+| 1 | MORNINGSUN DU RHIN | 112 | 63 | MARTIN CORMY |
 
 ### 5. PRIX BELLINO II
 
