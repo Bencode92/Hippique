@@ -69,23 +69,23 @@
 
 ### 4. PRIX HADOL DU VIVIER
 
-*17h52 · attelé · 2700 m · 13 partants · cotes à T−4:23*
+*17h52 · attelé · 2700 m · 13 partants · cotes à T−1:43*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 12 | MYSTERE TURGOT | 2,2 | 5,5 | TH. BRIAND |
-| 11 | MERLIN DES CHAMPS | 7 | 4,1 | Y.A. BRIAND |
-| 13 | MOULU JIHEM | 7 | 7 | Q. CHAUVE-LAFFAY |
-| 10 | MONSEIGNEUR | 7,7 | 7,4 | A. TINTILLIER |
+| 12 | MYSTERE TURGOT | 2,9 | 5,5 | TH. BRIAND |
+| 11 | MERLIN DES CHAMPS | 4,8 | 4,1 | Y.A. BRIAND |
+| 13 | MOULU JIHEM | 7,2 | 7 | Q. CHAUVE-LAFFAY |
+| 10 | MONSEIGNEUR | 8,1 | 7,4 | A. TINTILLIER |
 | 7 | MERITE JULRY | 11 | 9 | J.P. GAUVIN |
-| 8 | MYSTERE DE POULINE | 17 | 12 | P. CALLIER |
-| 9 | MATCHO MESLOIS | 24 | 14 | N. CORMY |
-| 4 | MAGNUS SEN | 39 | 19 | M. MESSAGER |
-| 5 | MARQUIS FORTIS | 41 | 38 | A. ERNAULT |
-| 6 | MAYBE LOUANGES | 66 | 54 | F. BROUST |
-| 2 | MAGNUS ROMO | 77 | 19 | PH. DANTHU |
-| 3 | MAIK DU HAUTVENT | 80 | 76 | B. THOMAS |
-| 1 | MORNINGSUN DU RHIN | 112 | 63 | MARTIN CORMY |
+| 8 | MYSTERE DE POULINE | 13 | 12 | P. CALLIER |
+| 9 | MATCHO MESLOIS | 20 | 14 | N. CORMY |
+| 5 | MARQUIS FORTIS | 29 | 38 | A. ERNAULT |
+| 4 | MAGNUS SEN | 37 | 19 | M. MESSAGER |
+| 6 | MAYBE LOUANGES | 65 | 54 | F. BROUST |
+| 3 | MAIK DU HAUTVENT | 77 | 76 | B. THOMAS |
+| 1 | MORNINGSUN DU RHIN | 81 | 63 | MARTIN CORMY |
+| 2 | MAGNUS ROMO | 92 | 19 | PH. DANTHU |
 
 ### 5. PRIX BELLINO II
 
