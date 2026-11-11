@@ -1,6 +1,6 @@
 # LYON LA SOIE — 11/11/2026
 
-8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 6 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
@@ -150,19 +150,19 @@
 
 ### 8. PRIX DE LA THIERACHE
 
-*20h06 · attelé · 2700 m · 12 partants · cotes de l'extraction*
+*20h06 · attelé · 2700 m · 12 partants · cotes à T−1:19*
 
-| n° | cheval | cote | jockey |
-|--:|:--|--:|:--|
-| 8 | JESCO DE LA VALLEE | 1,9 | Mme V. BOUDIER-CORMY |
-| 5 | JAIKA DES BORDES | 7,3 | E. FAVIER |
-| 2 | ISIS DE REYNALD | 8,5 | B. FEDRY |
-| 7 | KATE BRIONNAISE | 9 | Y. LERENARD |
-| 11 | INJECTABLE | 10 | G. BLANCHARD |
-| 1 | KIMBRA DJOC | 16 | D. LAPRAY |
-| 6 | KIYOUNI | 23 | LUC DUMONT |
-| 10 | ICE SCOTT | 40 | PHILIPPE SEILER |
-| 12 | HAMILTON FOUTEAU | 40 | TH. CLAIRET |
-| 9 | HYPOLIT DE BEL AIR | 81 | H. LAKHRISSI |
-| 3 | JALIX DE NIOUX | – | A. LEGRAND |
-| 4 | JOLIE ARCTIC | – | M.M. MUTEL |
+| n° | cheval | cote | matin | jockey |
+|--:|:--|--:|--:|:--|
+| 8 | JESCO DE LA VALLEE | 2,1 | 1,9 | Mme V. BOUDIER-CORMY |
+| 5 | JAIKA DES BORDES | 5,2 | 7,3 | E. FAVIER |
+| 7 | KATE BRIONNAISE | 5,7 | 9 | Y. LERENARD |
+| 11 | INJECTABLE | 17 | 10 | G. BLANCHARD |
+| 12 | HAMILTON FOUTEAU | 17 | 40 | TH. CLAIRET |
+| 1 | KIMBRA DJOC | 21 | 16 | D. LAPRAY |
+| 3 | JALIX DE NIOUX | 22 | – | A. LEGRAND |
+| 2 | ISIS DE REYNALD | 25 | 8,5 | B. FEDRY |
+| 10 | ICE SCOTT | 33 | 40 | PHILIPPE SEILER |
+| 6 | KIYOUNI | 77 | 23 | LUC DUMONT |
+| 4 | JOLIE ARCTIC | 86 | – | M.M. MUTEL |
+| 9 | HYPOLIT DE BEL AIR | 154 | 81 | H. LAKHRISSI |
