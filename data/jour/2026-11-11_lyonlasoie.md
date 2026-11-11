@@ -150,19 +150,19 @@
 
 ### 8. PRIX DE LA THIERACHE
 
-*20h06 · attelé · 2700 m · 12 partants · cotes à T−1:19*
+*20h06 · attelé · 2700 m · 12 partants · cotes à T−0:39*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 8 | JESCO DE LA VALLEE | 2,1 | 1,9 | Mme V. BOUDIER-CORMY |
-| 5 | JAIKA DES BORDES | 5,2 | 7,3 | E. FAVIER |
+| 8 | JESCO DE LA VALLEE | 2,2 | 1,9 | Mme V. BOUDIER-CORMY |
+| 5 | JAIKA DES BORDES | 4,8 | 7,3 | E. FAVIER |
 | 7 | KATE BRIONNAISE | 5,7 | 9 | Y. LERENARD |
+| 12 | HAMILTON FOUTEAU | 16 | 40 | TH. CLAIRET |
 | 11 | INJECTABLE | 17 | 10 | G. BLANCHARD |
-| 12 | HAMILTON FOUTEAU | 17 | 40 | TH. CLAIRET |
 | 1 | KIMBRA DJOC | 21 | 16 | D. LAPRAY |
-| 3 | JALIX DE NIOUX | 22 | – | A. LEGRAND |
+| 3 | JALIX DE NIOUX | 24 | – | A. LEGRAND |
 | 2 | ISIS DE REYNALD | 25 | 8,5 | B. FEDRY |
-| 10 | ICE SCOTT | 33 | 40 | PHILIPPE SEILER |
-| 6 | KIYOUNI | 77 | 23 | LUC DUMONT |
-| 4 | JOLIE ARCTIC | 86 | – | M.M. MUTEL |
-| 9 | HYPOLIT DE BEL AIR | 154 | 81 | H. LAKHRISSI |
+| 10 | ICE SCOTT | 26 | 40 | PHILIPPE SEILER |
+| 6 | KIYOUNI | 84 | 23 | LUC DUMONT |
+| 9 | HYPOLIT DE BEL AIR | 86 | 81 | H. LAKHRISSI |
+| 4 | JOLIE ARCTIC | 100 | – | M.M. MUTEL |

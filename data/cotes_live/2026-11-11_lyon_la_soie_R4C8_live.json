@@ -4,7 +4,7 @@
   "reunion": 4,
   "heure_depart": 1794424080000,
   "distance": 2700,
-  "scraped_at": "2026-11-11T20:06:41.496083+01:00",
+  "scraped_at": "2026-11-11T20:07:21.304657+01:00",
   "minutes_avant_depart": 1,
   "participants": [
     {
@@ -14,7 +14,7 @@
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794423998000
+      "timestamp_cote": 1794424038000
     },
     {
       "numPmu": 2,
@@ -23,43 +23,43 @@
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794423998000
+      "timestamp_cote": 1794424038000
     },
     {
       "numPmu": 3,
       "nom": "JALIX DE NIOUX",
-      "cote_live": 22.0,
+      "cote_live": 24.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794423998000
+      "timestamp_cote": 1794424038000
     },
     {
       "numPmu": 4,
       "nom": "JOLIE ARCTIC",
-      "cote_live": 86.0,
+      "cote_live": 100.0,
       "cote_reference": 80.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794423998000
+      "timestamp_cote": 1794424038000
     },
     {
       "numPmu": 5,
       "nom": "JAIKA DES BORDES",
-      "cote_live": 5.2,
+      "cote_live": 4.8,
       "cote_reference": 6.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794423998000
+      "timestamp_cote": 1794424038000
     },
     {
       "numPmu": 6,
       "nom": "KIYOUNI",
-      "cote_live": 77.0,
+      "cote_live": 84.0,
       "cote_reference": 58.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794423998000
+      "timestamp_cote": 1794424038000
     },
     {
       "numPmu": 7,
@@ -68,34 +68,34 @@
       "cote_reference": 7.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794423998000
+      "timestamp_cote": 1794424038000
     },
     {
       "numPmu": 8,
       "nom": "JESCO DE LA VALLEE",
-      "cote_live": 2.1,
+      "cote_live": 2.2,
       "cote_reference": 1.9,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794423998000
+      "timestamp_cote": 1794424038000
     },
     {
       "numPmu": 9,
       "nom": "HYPOLIT DE BEL AIR",
-      "cote_live": 154.0,
+      "cote_live": 86.0,
       "cote_reference": 48.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794423998000
+      "timestamp_cote": 1794424038000
     },
     {
       "numPmu": 10,
       "nom": "ICE SCOTT",
-      "cote_live": 33.0,
+      "cote_live": 26.0,
       "cote_reference": 44.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794423998000
+      "timestamp_cote": 1794424038000
     },
     {
       "numPmu": 11,
@@ -104,16 +104,16 @@
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794423998000
+      "timestamp_cote": 1794424038000
     },
     {
       "numPmu": 12,
       "nom": "HAMILTON FOUTEAU",
-      "cote_live": 17.0,
+      "cote_live": 16.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794423998000
+      "timestamp_cote": 1794424038000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -188,6 +188,24 @@
         "10": 33.0,
         "11": 17.0,
         "12": 17.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-11T20:07:21.304657+01:00",
+      "minutes_avant_depart": 0.6488644166666667,
+      "cotes": {
+        "1": 21.0,
+        "2": 25.0,
+        "3": 24.0,
+        "4": 100.0,
+        "5": 4.8,
+        "6": 84.0,
+        "7": 5.7,
+        "8": 2.2,
+        "9": 86.0,
+        "10": 26.0,
+        "11": 17.0,
+        "12": 16.0
       }
     }
   ]
