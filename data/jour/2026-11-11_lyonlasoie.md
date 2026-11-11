@@ -1,6 +1,6 @@
 # LYON LA SOIE — 11/11/2026
 
-8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
@@ -47,25 +47,25 @@
 
 ### 3. PRIX GELINOTTE
 
-*17h17 · attelé · 2700 m · 15 partants · cotes de l'extraction*
+*17h17 · attelé · 2700 m · 15 partants · cotes à T−29:23*
 
-| n° | cheval | cote | jockey |
-|--:|:--|--:|:--|
-| 11 | LOLA DE CHENU | 3,2 | P. PELLEROT |
-| 10 | LIKE A JULRY | 5,5 | J.P. GAUVIN |
-| 12 | LEGION SMART | 5,7 | TH. BRIAND |
-| 7 | LONDON LADY | 7,2 | D. BEKAERT |
-| 15 | LIBERATA | 13 | L. LAMAZIERE |
-| 13 | LALY DE JADE | 18 | M.J. BARCELO BISQUERRA |
-| 8 | L'ETOILE DE PAME | 19 | Q. CHAUVE-LAFFAY |
-| 14 | LILY CARNOIS | 25 | MARTIN CORMY |
-| 3 | LA RAMEE | 43 | P. CALLIER |
-| 9 | LOLLIPOP THE BEST | 43 | B. RUET |
-| 5 | LOUNA D'HUCHELOUP | 59 | Q. DAOUGABEL |
-| 6 | LETTY D'ARGENVIERE | 67 | B. THIENNE |
-| 1 | LA BRIERE | 71 | MARTIAL GAUVIN |
-| 4 | LEYLI DE LA VALLEE | 77 | A. TINTILLIER |
-| 2 | LOVELY DEVOL | 100 | Y.A. BRIAND |
+| n° | cheval | cote | matin | jockey |
+|--:|:--|--:|--:|:--|
+| 11 | LOLA DE CHENU | 3,7 | 3,2 | P. PELLEROT |
+| 10 | LIKE A JULRY | 4,7 | 5,5 | J.P. GAUVIN |
+| 12 | LEGION SMART | 5,5 | 5,7 | TH. BRIAND |
+| 7 | LONDON LADY | 7,5 | 7,2 | D. BEKAERT |
+| 15 | LIBERATA | 15 | 13 | L. LAMAZIERE |
+| 13 | LALY DE JADE | 17 | 18 | M.J. BARCELO BISQUERRA |
+| 8 | L'ETOILE DE PAME | 19 | 19 | Q. CHAUVE-LAFFAY |
+| 14 | LILY CARNOIS | 22 | 25 | MARTIN CORMY |
+| 6 | LETTY D'ARGENVIERE | 41 | 67 | B. THIENNE |
+| 3 | LA RAMEE | 48 | 43 | P. CALLIER |
+| 9 | LOLLIPOP THE BEST | 48 | 43 | B. RUET |
+| 5 | LOUNA D'HUCHELOUP | 57 | 59 | Q. DAOUGABEL |
+| 1 | LA BRIERE | 67 | 71 | MARTIAL GAUVIN |
+| 4 | LEYLI DE LA VALLEE | 67 | 77 | A. TINTILLIER |
+| 2 | LOVELY DEVOL | 86 | 100 | Y.A. BRIAND |
 
 ### 4. PRIX HADOL DU VIVIER
 
