@@ -89,26 +89,26 @@
 
 ### 5. PRIX BELLINO II
 
-*18h27 · attelé · 2700 m · 16 partants · cotes à T−8:43*
+*18h27 · attelé · 2700 m · 16 partants · cotes à T−4:43*
 
 | n° | cheval | cote | matin | jockey |
 |--:|:--|--:|--:|:--|
-| 2 | MA BEAUTE D'AMOUR | 3,6 | 5,1 | TH. BRIAND |
-| 13 | MYSTIQUE LOULOU | 5,7 | 4 | Q. CHAUVE-LAFFAY |
-| 6 | MESSALINE | 6,4 | 9,6 | D. BEKAERT |
-| 5 | MAY BE JULRY | 8,8 | 11 | J.P. GAUVIN |
-| 12 | MAMY BLUE TIT | 9,5 | 8,3 | L. LAMAZIERE |
-| 16 | MY LADY ISLAND | 11 | 26 | A. TINTILLIER |
-| 14 | MAREVA | 21 | 14 | J. CUOQ |
-| 15 | MARELLA DALEO | 21 | 15 | Q. DAOUGABEL |
-| 8 | MARTINA GIO | 24 | 16 | B. RUET |
-| 11 | MISS GABRIELLE | 36 | 18 | L. VERRIERE |
-| 7 | MARIA DU MATO | 64 | 65 | B. THOMAS |
-| 3 | MISS DE MAI | 70 | 98 | D. MARASCO |
-| 1 | MONIE DU LOISIR | 81 | 35 | M. DUJMIC |
-| 4 | MILADY OAKS | 96 | 131 | G. VIDAL |
-| 10 | MIMI WILLIAMS | 120 | 39 | TH. BUSSET |
-| 9 | MAELYS DES BORDES | 175 | 98 | ALEXIS LERENARD |
+| 13 | MYSTIQUE LOULOU | 3 | 4 | Q. CHAUVE-LAFFAY |
+| 2 | MA BEAUTE D'AMOUR | 4,6 | 5,1 | TH. BRIAND |
+| 6 | MESSALINE | 8,1 | 9,6 | D. BEKAERT |
+| 5 | MAY BE JULRY | 10 | 11 | J.P. GAUVIN |
+| 12 | MAMY BLUE TIT | 12 | 8,3 | L. LAMAZIERE |
+| 14 | MAREVA | 15 | 14 | J. CUOQ |
+| 16 | MY LADY ISLAND | 16 | 26 | A. TINTILLIER |
+| 15 | MARELLA DALEO | 23 | 15 | Q. DAOUGABEL |
+| 8 | MARTINA GIO | 26 | 16 | B. RUET |
+| 11 | MISS GABRIELLE | 45 | 18 | L. VERRIERE |
+| 7 | MARIA DU MATO | 73 | 65 | B. THOMAS |
+| 4 | MILADY OAKS | 91 | 131 | G. VIDAL |
+| 3 | MISS DE MAI | 93 | 98 | D. MARASCO |
+| 1 | MONIE DU LOISIR | 105 | 35 | M. DUJMIC |
+| 10 | MIMI WILLIAMS | 130 | 39 | TH. BUSSET |
+| 9 | MAELYS DES BORDES | 171 | 98 | ALEXIS LERENARD |
 
 ### 6. PRIX KAISER TROT
 
