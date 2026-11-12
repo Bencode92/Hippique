@@ -4,62 +4,62 @@
   "reunion": 4,
   "heure_depart": 1794507780000,
   "distance": 2400,
-  "scraped_at": "2026-11-12T18:55:24.752521+01:00",
-  "minutes_avant_depart": 28,
+  "scraped_at": "2026-11-12T19:00:03.976096+01:00",
+  "minutes_avant_depart": 23,
   "participants": [
     {
       "numPmu": 1,
       "nom": "KING OF RACE",
-      "cote_live": 5.9,
+      "cote_live": 6.1,
       "cote_reference": 6.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794506113000
+      "timestamp_cote": 1794506377000
     },
     {
       "numPmu": 2,
       "nom": "KYMJO DE BELFOND",
-      "cote_live": 19.0,
+      "cote_live": 25.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794506113000
+      "timestamp_cote": 1794506377000
     },
     {
       "numPmu": 3,
       "nom": "KERMES",
-      "cote_live": 19.0,
+      "cote_live": 13.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794506113000
+      "timestamp_cote": 1794506377000
     },
     {
       "numPmu": 4,
       "nom": "KOOPER",
-      "cote_live": 9.4,
+      "cote_live": 8.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794506113000
+      "timestamp_cote": 1794506377000
     },
     {
       "numPmu": 5,
       "nom": "KING DE L'ORMERIE",
-      "cote_live": 24.0,
+      "cote_live": 26.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794506113000
+      "timestamp_cote": 1794506377000
     },
     {
       "numPmu": 6,
       "nom": "JUST WINNER ROC",
-      "cote_live": 32.0,
+      "cote_live": 36.0,
       "cote_reference": 32.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794506113000
+      "timestamp_cote": 1794506377000
     },
     {
       "numPmu": 7,
@@ -68,34 +68,34 @@
       "cote_reference": 2.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794506113000
+      "timestamp_cote": 1794506377000
     },
     {
       "numPmu": 8,
       "nom": "KING STALLION",
-      "cote_live": 71.0,
+      "cote_live": 55.0,
       "cote_reference": 75.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794506113000
+      "timestamp_cote": 1794506377000
     },
     {
       "numPmu": 9,
       "nom": "KRISTOBAL",
-      "cote_live": 48.0,
+      "cote_live": 46.0,
       "cote_reference": 50.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794506113000
+      "timestamp_cote": 1794506377000
     },
     {
       "numPmu": 10,
       "nom": "KOUIDITCH D'ABOMEY",
-      "cote_live": 8.9,
+      "cote_live": 9.6,
       "cote_reference": 8.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794506113000
+      "timestamp_cote": 1794506377000
     },
     {
       "numPmu": 11,
@@ -104,7 +104,7 @@
       "cote_reference": 40.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794506113000
+      "timestamp_cote": 1794506377000
     },
     {
       "numPmu": 12,
@@ -113,25 +113,25 @@
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794506113000
+      "timestamp_cote": 1794506377000
     },
     {
       "numPmu": 13,
       "nom": "JOYEUX CORDIERE",
-      "cote_live": 35.0,
+      "cote_live": 34.0,
       "cote_reference": 35.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794506113000
+      "timestamp_cote": 1794506377000
     },
     {
       "numPmu": 14,
       "nom": "KAMARAN MADRIK",
-      "cote_live": 13.0,
+      "cote_live": 15.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794506113000
+      "timestamp_cote": 1794506377000
     }
   ],
   "hippodrome": "AMIENS",
@@ -154,6 +154,26 @@
         "12": 19.0,
         "13": 35.0,
         "14": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-12T19:00:03.976096+01:00",
+      "minutes_avant_depart": 22.93622915,
+      "cotes": {
+        "1": 6.1,
+        "2": 25.0,
+        "3": 13.0,
+        "4": 8.0,
+        "5": 26.0,
+        "6": 36.0,
+        "7": 2.7,
+        "8": 55.0,
+        "9": 46.0,
+        "10": 9.6,
+        "11": 41.0,
+        "12": 19.0,
+        "13": 34.0,
+        "14": 15.0
       }
     }
   ]
