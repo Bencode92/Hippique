@@ -109,19 +109,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE MAYSEL
 
-*15h57 · plat · 1600 m · 9 partants · cotes à T−10:01*
+*15h57 · plat · 1600 m · 8 partants · cotes à T−10:01*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | HYPERCORE | 3,2 | 3,3 | 3,50 | -8,5 % | H.BOUTIN | 17/55/3414/1016 |
-| 1 | CENTRAL PARK WEST | 4,2 | 4,2 | 4,49 | -6,4 % | T.TRULLIER | 24/52/15/512 |
-| 7 | CROWDFUNDING | 6,4 | 6,7 | 6,88 | -7,0 % | M.VELON | 27/33/73/21 |
-| 6 | SHIAWASE | 9,7 | 7,9 | 12,99 | -25,3 % | T.BACHELOT | 16/54/78/172 |
-| 5 | FREJA | 9,8 | 9,3 | 12,28 | -20,2 % | A.LEMAITRE | 10/50/13/110 |
-| 9 | MEMENTO MORI | 14 | 14 | 18,70 | -25,1 % | A.MADAMET | 12/108/4208/666 |
-| 8 | BELLATOR | 17 | 18 | 20,54 | -17,2 % | T.PICCONE | 9/108/626/117 |
-| 2 | ABELARD F | 18 | 20 | 26,94 | -33,2 % | R.MANGIONE | 86/73/3410/2259 |
-| 10 | NAKED MEMORIES | 18 | 19 | 25,09 | -28,3 % | M.PROTTI | 29/69/22/111 |
+| 3 | HYPERCORE | 3,2 | 2,1 | 3,28 | -2,5 % | H.BOUTIN | 17/55/3414/1016 |
+| 1 | CENTRAL PARK WEST | 4,2 | 4,6 | 4,20 | **+0,1 %** | T.TRULLIER | 24/52/15/512 |
+| 7 | CROWDFUNDING | 6,4 | 9,1 | 6,41 | -0,1 % | M.VELON | 27/33/73/21 |
+| 6 | SHIAWASE | 9,7 | 6,8 | 12,05 | -19,5 % | T.BACHELOT | 16/54/78/172 |
+| 5 | FREJA | 9,8 | 12 | 11,40 | -14,0 % | A.LEMAITRE | 10/50/13/110 |
+| 8 | BELLATOR | 17 | 27 | 19,08 | -10,9 % | T.PICCONE | 9/108/626/117 |
+| 2 | ABELARD F | 18 | 29 | 23,88 | -24,6 % | R.MANGIONE | 86/73/3410/2259 |
+| 10 | NAKED MEMORIES | 18 | 21 | 23,30 | -22,7 % | M.PROTTI | 29/69/22/111 |
 
 ### 8. PRIX DU CARREFOUR DES HAUTES COUTUMES
 
@@ -129,12 +128,12 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 7 | HERACLES | 3,1 | 3,93 | -21,2 % | M.GRANDIN | 3/71/1400/1594 |
-| 4 | EN PLEIN AIR | 5,8 | 5,45 | **+6,4 %** | T.BACHELOT | 16/59/120/2470 |
-| 1 | SWEET AS | 6,4 | 6,32 | **+1,2 %** | M. PIEN | 155/21/19/43 |
-| 3 | ASTON CLINTON | 7,3 | 9,23 | -20,9 % | C.LECOEUVRE | 13/55/3331/1007 |
-| 8 | BLU METAL JACKET | 9,5 | 12,59 | -24,6 % | D.PROVOST | 33/221/3677/192 |
-| 5 | OUT OF THE BLUE | 10 | 12,50 | -20,0 % | H.BOUTIN | 17/21/19/43 |
-| 9 | PERMENTON | 16 | 19,85 | -19,4 % | M.VELON | 27/418/1789/970 |
-| 2 | CHARISMATIC CHICK | 21 | 29,82 | -29,6 % | J.MOUTARD | 42/33/356/51 |
-| 6 | INSIDE MATTERS | 23 | 28,93 | -20,5 % | A.LEMAITRE | 10/269/10/334 |
+| 3 | ASTON CLINTON | 5,3 | 7,39 | -28,3 % | C.LECOEUVRE | 13/55/3331/1007 |
+| 5 | OUT OF THE BLUE | 6 | 6,36 | -5,6 % | H.BOUTIN | 17/21/19/43 |
+| 1 | SWEET AS | 6,2 | 6,35 | -2,4 % | M. PIEN | 155/21/19/43 |
+| 7 | HERACLES | 6,4 | 7,59 | -15,7 % | M.GRANDIN | 3/71/1400/1594 |
+| 6 | INSIDE MATTERS | 6,7 | 6,40 | **+4,8 %** | A.LEMAITRE | 10/269/10/334 |
+| 4 | EN PLEIN AIR | 6,8 | 7,05 | -3,6 % | T.BACHELOT | 16/59/120/2470 |
+| 8 | BLU METAL JACKET | 10 | 13,38 | -25,2 % | D.PROVOST | 33/221/3677/192 |
+| 9 | PERMENTON | 22 | 31,46 | -30,1 % | M.VELON | 27/418/1789/970 |
+| 2 | CHARISMATIC CHICK | 31 | 44,40 | -30,2 % | J.MOUTARD | 42/33/356/51 |
