@@ -4,71 +4,71 @@
   "reunion": 4,
   "heure_depart": 1794503820000,
   "distance": 2400,
-  "scraped_at": "2026-11-12T18:07:55.289492+01:00",
-  "minutes_avant_depart": 9,
+  "scraped_at": "2026-11-12T18:11:55.285225+01:00",
+  "minutes_avant_depart": 5,
   "participants": [
     {
       "numPmu": 1,
       "nom": "NORMA CASTELLE",
-      "cote_live": 23.0,
+      "cote_live": 17.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794503251000
+      "timestamp_cote": 1794503493000
     },
     {
       "numPmu": 2,
       "nom": "NUANCE DU HOULET",
-      "cote_live": 17.0,
+      "cote_live": 20.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794503251000
+      "timestamp_cote": 1794503493000
     },
     {
       "numPmu": 3,
       "nom": "NIMAGINE",
-      "cote_live": 25.0,
+      "cote_live": 30.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794503251000
+      "timestamp_cote": 1794503493000
     },
     {
       "numPmu": 4,
       "nom": "NANOU DE BONELLE",
-      "cote_live": 7.2,
+      "cote_live": 10.0,
       "cote_reference": 8.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794503251000
+      "timestamp_cote": 1794503493000
     },
     {
       "numPmu": 6,
       "nom": "NALA FAB",
-      "cote_live": 8.2,
+      "cote_live": 5.4,
       "cote_reference": 7.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794503251000
+      "timestamp_cote": 1794503493000
     },
     {
       "numPmu": 7,
       "nom": "NUANCE KADESH",
-      "cote_live": 15.0,
+      "cote_live": 14.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794503251000
+      "timestamp_cote": 1794503493000
     },
     {
       "numPmu": 8,
       "nom": "NEPALE D'ALCI",
-      "cote_live": 32.0,
+      "cote_live": 20.0,
       "cote_reference": 29.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794503251000
+      "timestamp_cote": 1794503493000
     },
     {
       "numPmu": 9,
@@ -77,52 +77,52 @@
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794503251000
+      "timestamp_cote": 1794503493000
     },
     {
       "numPmu": 10,
       "nom": "NIKITA DE MONCHEL",
-      "cote_live": 37.0,
+      "cote_live": 40.0,
       "cote_reference": 29.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794503251000
+      "timestamp_cote": 1794503493000
     },
     {
       "numPmu": 11,
       "nom": "NINA SUPREME",
-      "cote_live": 5.8,
+      "cote_live": 4.1,
       "cote_reference": 7.9,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1794503251000
+      "favoris": true,
+      "timestamp_cote": 1794503493000
     },
     {
       "numPmu": 12,
       "nom": "NAKANO D'OURVILLE",
-      "cote_live": 8.6,
+      "cote_live": 15.0,
       "cote_reference": 6.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794503251000
+      "timestamp_cote": 1794503493000
     },
     {
       "numPmu": 13,
       "nom": "NUIT DE FOLIE",
-      "cote_live": 10.0,
+      "cote_live": 9.9,
       "cote_reference": 7.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794503251000
+      "timestamp_cote": 1794503493000
     },
     {
       "numPmu": 14,
       "nom": "NEW LIFE CHARDET",
-      "cote_live": 5.6,
+      "cote_live": 8.6,
       "cote_reference": 12.0,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1794503251000
+      "favoris": false,
+      "timestamp_cote": 1794503493000
     }
   ],
   "hippodrome": "AMIENS",
@@ -239,6 +239,44 @@
         "12": 8.6,
         "13": 10.0,
         "14": 5.6
+      }
+    },
+    {
+      "scraped_at": "2026-11-12T18:11:15.447862+01:00",
+      "minutes_avant_depart": 5.751703766666666,
+      "cotes": {
+        "1": 22.0,
+        "2": 18.0,
+        "3": 31.0,
+        "4": 10.0,
+        "6": 5.5,
+        "7": 14.0,
+        "8": 22.0,
+        "9": 19.0,
+        "10": 61.0,
+        "11": 3.7,
+        "12": 14.0,
+        "13": 11.0,
+        "14": 8.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-12T18:11:55.285225+01:00",
+      "minutes_avant_depart": 5.085035216666666,
+      "cotes": {
+        "1": 17.0,
+        "2": 20.0,
+        "3": 30.0,
+        "4": 10.0,
+        "6": 5.4,
+        "7": 14.0,
+        "8": 20.0,
+        "9": 20.0,
+        "10": 40.0,
+        "11": 4.1,
+        "12": 15.0,
+        "13": 9.9,
+        "14": 8.6
       }
     }
   ]
