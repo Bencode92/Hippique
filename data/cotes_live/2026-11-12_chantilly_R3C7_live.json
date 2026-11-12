@@ -1,0 +1,110 @@
+{
+  "course": "PRIX DE MAYSEL",
+  "numero": 7,
+  "reunion": 3,
+  "heure_depart": 1794495420000,
+  "distance": 1600,
+  "scraped_at": "2026-11-12T15:34:19.943635+01:00",
+  "minutes_avant_depart": 23,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "CENTRAL PARK WEST",
+      "cote_live": 3.5,
+      "cote_reference": 3.2,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794494054000
+    },
+    {
+      "numPmu": 2,
+      "nom": "ABELARD F",
+      "cote_live": 15.0,
+      "cote_reference": 14.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794494054000
+    },
+    {
+      "numPmu": 3,
+      "nom": "HYPERCORE",
+      "cote_live": 2.8,
+      "cote_reference": 3.5,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1794494054000
+    },
+    {
+      "numPmu": 5,
+      "nom": "FREJA",
+      "cote_live": 10.0,
+      "cote_reference": 9.5,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794494054000
+    },
+    {
+      "numPmu": 6,
+      "nom": "SHIAWASE",
+      "cote_live": 9.7,
+      "cote_reference": 9.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794494054000
+    },
+    {
+      "numPmu": 7,
+      "nom": "CROWDFUNDING",
+      "cote_live": 10.0,
+      "cote_reference": 10.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794494054000
+    },
+    {
+      "numPmu": 8,
+      "nom": "BELLATOR",
+      "cote_live": 23.0,
+      "cote_reference": 19.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794494054000
+    },
+    {
+      "numPmu": 9,
+      "nom": "MEMENTO MORI",
+      "cote_live": 16.0,
+      "cote_reference": 17.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794494054000
+    },
+    {
+      "numPmu": 10,
+      "nom": "NAKED MEMORIES",
+      "cote_live": 22.0,
+      "cote_reference": 17.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794494054000
+    }
+  ],
+  "hippodrome": "CHANTILLY",
+  "releves": [
+    {
+      "scraped_at": "2026-11-12T15:34:19.943635+01:00",
+      "minutes_avant_depart": 22.670898599999997,
+      "cotes": {
+        "1": 3.5,
+        "2": 15.0,
+        "3": 2.8,
+        "5": 10.0,
+        "6": 9.7,
+        "7": 10.0,
+        "8": 23.0,
+        "9": 16.0,
+        "10": 22.0
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # CHANTILLY — 12/11/2026
 
-8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -109,20 +109,20 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE MAYSEL
 
-*15h57 · plat · 1600 m · 10 partants · cotes de l'extraction*
+*15h57 · plat · 1600 m · 10 partants · cotes à T−22:40*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 3 | HYPERCORE | 3,3 | 3,57 | -7,5 % | H.BOUTIN | 17/55/3414/1016 |
-| 6 | SHIAWASE | 4,4 | 5,14 | -14,4 % | T.BACHELOT | 16/54/78/172 |
-| 10 | NAKED MEMORIES | 4,4 | 4,84 | -9,2 % | M.PROTTI | 29/69/22/111 |
-| 5 | FREJA | 6,6 | 7,64 | -13,7 % | A.LEMAITRE | 10/50/13/110 |
-| 1 | CENTRAL PARK WEST | 13 | 16,92 | -23,2 % | T.TRULLIER | 24/52/15/512 |
-| 2 | ABELARD F | 13 | 18,14 | -28,3 % | R.MANGIONE | 86/73/3410/2259 |
-| 8 | BELLATOR | 13 | 14,84 | -12,4 % | T.PICCONE | 9/108/626/117 |
-| 4 | APOGEO | – | – |  | C.CARBONI | 111/85/89/3241 |
-| 7 | CROWDFUNDING | – | – |  | M.VELON | 27/33/73/21 |
-| 9 | MEMENTO MORI | – | – |  | A.MADAMET | 12/108/4208/666 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 3 | HYPERCORE | 2,8 | 3,3 | 3,09 | -9,5 % | H.BOUTIN | 17/55/3414/1016 |
+| 1 | CENTRAL PARK WEST | 3,5 | 13 | 3,88 | -9,8 % | T.TRULLIER | 24/52/15/512 |
+| 6 | SHIAWASE | 9,7 | 4,4 | 13,13 | -26,1 % | T.BACHELOT | 16/54/78/172 |
+| 5 | FREJA | 10 | 6,6 | 12,72 | -21,4 % | A.LEMAITRE | 10/50/13/110 |
+| 7 | CROWDFUNDING | 10 | – | 12,72 | -21,4 % | M.VELON | 27/33/73/21 |
+| 2 | ABELARD F | 15 | 13 | 21,99 | -31,8 % | R.MANGIONE | 86/73/3410/2259 |
+| 9 | MEMENTO MORI | 16 | – | 22,10 | -27,6 % | A.MADAMET | 12/108/4208/666 |
+| 10 | NAKED MEMORIES | 22 | 4,4 | 32,01 | -31,3 % | M.PROTTI | 29/69/22/111 |
+| 8 | BELLATOR | 23 | 13 | 29,42 | -21,8 % | T.PICCONE | 9/108/626/117 |
+| 4 | APOGEO | – | – | – |  | C.CARBONI | 111/85/89/3241 |
 
 ### 8. PRIX DU CARREFOUR DES HAUTES COUTUMES
 
