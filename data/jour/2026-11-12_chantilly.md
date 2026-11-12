@@ -109,19 +109,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE MAYSEL
 
-*15h57 · plat · 1600 m · 10 partants · cotes à T−18:01*
+*15h57 · plat · 1600 m · 10 partants · cotes à T−14:01*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | HYPERCORE | 2,9 | 3,3 | 3,15 | -8,0 % | H.BOUTIN | 17/55/3414/1016 |
-| 1 | CENTRAL PARK WEST | 3,8 | 13 | 4,16 | -8,6 % | T.TRULLIER | 24/52/15/512 |
-| 7 | CROWDFUNDING | 8,7 | – | 10,60 | -17,9 % | M.VELON | 27/33/73/21 |
-| 6 | SHIAWASE | 9,7 | 4,4 | 12,89 | -24,7 % | T.BACHELOT | 16/54/78/172 |
-| 5 | FREJA | 10 | 6,6 | 12,48 | -19,9 % | A.LEMAITRE | 10/50/13/110 |
-| 2 | ABELARD F | 15 | 13 | 21,58 | -30,5 % | R.MANGIONE | 86/73/3410/2259 |
-| 9 | MEMENTO MORI | 17 | – | 23,29 | -27,0 % | A.MADAMET | 12/108/4208/666 |
-| 10 | NAKED MEMORIES | 19 | 4,4 | 26,52 | -28,4 % | M.PROTTI | 29/69/22/111 |
-| 8 | BELLATOR | 24 | 13 | 30,34 | -20,9 % | T.PICCONE | 9/108/626/117 |
+| 3 | HYPERCORE | 2,9 | 3,3 | 3,16 | -8,3 % | H.BOUTIN | 17/55/3414/1016 |
+| 1 | CENTRAL PARK WEST | 4 | 13 | 4,41 | -9,2 % | T.TRULLIER | 24/52/15/512 |
+| 7 | CROWDFUNDING | 8,1 | – | 9,78 | -17,2 % | M.VELON | 27/33/73/21 |
+| 6 | SHIAWASE | 9,5 | 4,4 | 12,62 | -24,7 % | T.BACHELOT | 16/54/78/172 |
+| 5 | FREJA | 9,9 | 6,6 | 12,38 | -20,1 % | A.LEMAITRE | 10/50/13/110 |
+| 2 | ABELARD F | 16 | 13 | 23,38 | -31,6 % | R.MANGIONE | 86/73/3410/2259 |
+| 9 | MEMENTO MORI | 16 | – | 21,78 | -26,5 % | A.MADAMET | 12/108/4208/666 |
+| 8 | BELLATOR | 20 | 13 | 24,70 | -19,0 % | T.PICCONE | 9/108/626/117 |
+| 10 | NAKED MEMORIES | 20 | 4,4 | 28,25 | -29,2 % | M.PROTTI | 29/69/22/111 |
 | 4 | APOGEO | – | – | – |  | C.CARBONI | 111/85/89/3241 |
 
 ### 8. PRIX DU CARREFOUR DES HAUTES COUTUMES

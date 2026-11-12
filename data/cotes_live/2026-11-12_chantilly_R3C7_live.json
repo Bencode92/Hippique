@@ -4,26 +4,26 @@
   "reunion": 3,
   "heure_depart": 1794495420000,
   "distance": 1600,
-  "scraped_at": "2026-11-12T15:38:59.400363+01:00",
-  "minutes_avant_depart": 18,
+  "scraped_at": "2026-11-12T15:42:59.414056+01:00",
+  "minutes_avant_depart": 14,
   "participants": [
     {
       "numPmu": 1,
       "nom": "CENTRAL PARK WEST",
-      "cote_live": 3.8,
+      "cote_live": 4.0,
       "cote_reference": 3.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794494318000
+      "timestamp_cote": 1794494560000
     },
     {
       "numPmu": 2,
       "nom": "ABELARD F",
-      "cote_live": 15.0,
+      "cote_live": 16.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794494318000
+      "timestamp_cote": 1794494560000
     },
     {
       "numPmu": 3,
@@ -32,61 +32,61 @@
       "cote_reference": 3.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794494318000
+      "timestamp_cote": 1794494560000
     },
     {
       "numPmu": 5,
       "nom": "FREJA",
-      "cote_live": 10.0,
+      "cote_live": 9.9,
       "cote_reference": 9.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794494318000
+      "timestamp_cote": 1794494560000
     },
     {
       "numPmu": 6,
       "nom": "SHIAWASE",
-      "cote_live": 9.7,
+      "cote_live": 9.5,
       "cote_reference": 9.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794494318000
+      "timestamp_cote": 1794494560000
     },
     {
       "numPmu": 7,
       "nom": "CROWDFUNDING",
-      "cote_live": 8.7,
+      "cote_live": 8.1,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794494318000
+      "timestamp_cote": 1794494560000
     },
     {
       "numPmu": 8,
       "nom": "BELLATOR",
-      "cote_live": 24.0,
+      "cote_live": 20.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794494318000
+      "timestamp_cote": 1794494560000
     },
     {
       "numPmu": 9,
       "nom": "MEMENTO MORI",
-      "cote_live": 17.0,
+      "cote_live": 16.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794494318000
+      "timestamp_cote": 1794494560000
     },
     {
       "numPmu": 10,
       "nom": "NAKED MEMORIES",
-      "cote_live": 19.0,
+      "cote_live": 20.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794494318000
+      "timestamp_cote": 1794494560000
     }
   ],
   "hippodrome": "CHANTILLY",
@@ -119,6 +119,21 @@
         "8": 24.0,
         "9": 17.0,
         "10": 19.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-12T15:42:59.414056+01:00",
+      "minutes_avant_depart": 14.014575933333333,
+      "cotes": {
+        "1": 4.0,
+        "2": 16.0,
+        "3": 2.9,
+        "5": 9.9,
+        "6": 9.5,
+        "7": 8.1,
+        "8": 20.0,
+        "9": 16.0,
+        "10": 20.0
       }
     }
   ]
