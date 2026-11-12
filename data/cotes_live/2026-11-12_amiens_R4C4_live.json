@@ -4,26 +4,26 @@
   "reunion": 4,
   "heure_depart": 1794505860000,
   "distance": 2400,
-  "scraped_at": "2026-11-12T18:29:56.007151+01:00",
-  "minutes_avant_depart": 21,
+  "scraped_at": "2026-11-12T18:34:35.182077+01:00",
+  "minutes_avant_depart": 16,
   "participants": [
     {
       "numPmu": 1,
       "nom": "JAMAIS",
-      "cote_live": 3.8,
+      "cote_live": 4.1,
       "cote_reference": 3.8,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794504592000
+      "timestamp_cote": 1794504856000
     },
     {
       "numPmu": 2,
       "nom": "JUDY MATIDY",
-      "cote_live": 18.0,
+      "cote_live": 20.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504592000
+      "timestamp_cote": 1794504856000
     },
     {
       "numPmu": 3,
@@ -32,16 +32,16 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504592000
+      "timestamp_cote": 1794504856000
     },
     {
       "numPmu": 4,
       "nom": "ISIA DU CHENE",
-      "cote_live": 15.0,
+      "cote_live": 12.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504592000
+      "timestamp_cote": 1794504856000
     },
     {
       "numPmu": 5,
@@ -50,34 +50,34 @@
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504592000
+      "timestamp_cote": 1794504856000
     },
     {
       "numPmu": 6,
       "nom": "JUNKIES MINDS",
-      "cote_live": 4.7,
+      "cote_live": 4.9,
       "cote_reference": 4.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504592000
+      "timestamp_cote": 1794504856000
     },
     {
       "numPmu": 7,
       "nom": "JACANA",
-      "cote_live": 6.8,
+      "cote_live": 6.0,
       "cote_reference": 7.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504592000
+      "timestamp_cote": 1794504856000
     },
     {
       "numPmu": 8,
       "nom": "INDY DE LA FYE",
-      "cote_live": 46.0,
+      "cote_live": 49.0,
       "cote_reference": 52.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504592000
+      "timestamp_cote": 1794504856000
     },
     {
       "numPmu": 9,
@@ -86,7 +86,7 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504592000
+      "timestamp_cote": 1794504856000
     },
     {
       "numPmu": 10,
@@ -95,43 +95,43 @@
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504592000
+      "timestamp_cote": 1794504856000
     },
     {
       "numPmu": 11,
       "nom": "IDAO NAY",
-      "cote_live": 14.0,
+      "cote_live": 15.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504592000
+      "timestamp_cote": 1794504856000
     },
     {
       "numPmu": 12,
       "nom": "IROKO DU CAIEU",
-      "cote_live": 24.0,
+      "cote_live": 23.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504592000
+      "timestamp_cote": 1794504856000
     },
     {
       "numPmu": 13,
       "nom": "IZIASLAV TEK",
-      "cote_live": 109.0,
+      "cote_live": 121.0,
       "cote_reference": 105.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504592000
+      "timestamp_cote": 1794504856000
     },
     {
       "numPmu": 14,
       "nom": "HILTON DU HOULET",
-      "cote_live": 346.0,
+      "cote_live": 191.0,
       "cote_reference": 337.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504592000
+      "timestamp_cote": 1794504856000
     }
   ],
   "hippodrome": "AMIENS",
@@ -194,6 +194,26 @@
         "12": 24.0,
         "13": 109.0,
         "14": 346.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-12T18:34:35.182077+01:00",
+      "minutes_avant_depart": 16.41830218333333,
+      "cotes": {
+        "1": 4.1,
+        "2": 20.0,
+        "3": 14.0,
+        "4": 12.0,
+        "5": 21.0,
+        "6": 4.9,
+        "7": 6.0,
+        "8": 49.0,
+        "9": 14.0,
+        "10": 14.0,
+        "11": 15.0,
+        "12": 23.0,
+        "13": 121.0,
+        "14": 191.0
       }
     }
   ]
