@@ -4,107 +4,107 @@
   "reunion": 4,
   "heure_depart": 1794509700000,
   "distance": 2400,
-  "scraped_at": "2026-11-12T19:46:44.349135+01:00",
-  "minutes_avant_depart": 8,
+  "scraped_at": "2026-11-12T19:50:44.144521+01:00",
+  "minutes_avant_depart": 4,
   "participants": [
     {
       "numPmu": 2,
       "nom": "LAVATER GEDE",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794509180000
+      "timestamp_cote": 1794509422000
     },
     {
       "numPmu": 3,
       "nom": "LIBRIUM",
-      "cote_live": 12.0,
+      "cote_live": 15.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794509180000
+      "timestamp_cote": 1794509422000
     },
     {
       "numPmu": 4,
       "nom": "LAUTREC D'HERFRAIE",
-      "cote_live": 5.4,
+      "cote_live": 6.4,
       "cote_reference": 7.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794509180000
+      "timestamp_cote": 1794509422000
     },
     {
       "numPmu": 6,
       "nom": "LOPIUM PRIOR",
-      "cote_live": 2.4,
+      "cote_live": 2.2,
       "cote_reference": 3.0,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794509180000
+      "timestamp_cote": 1794509422000
     },
     {
       "numPmu": 7,
       "nom": "LE GRAND DE VIRY",
-      "cote_live": 25.0,
+      "cote_live": 30.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794509180000
+      "timestamp_cote": 1794509422000
     },
     {
       "numPmu": 9,
       "nom": "LORD DE FONTAINE",
-      "cote_live": 15.0,
+      "cote_live": 18.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794509180000
+      "timestamp_cote": 1794509422000
     },
     {
       "numPmu": 10,
       "nom": "LUCKY PIYA",
-      "cote_live": 60.0,
+      "cote_live": 64.0,
       "cote_reference": 29.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794509180000
+      "timestamp_cote": 1794509422000
     },
     {
       "numPmu": 11,
       "nom": "LUCKY ROSE",
-      "cote_live": 32.0,
+      "cote_live": 40.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794509180000
+      "timestamp_cote": 1794509422000
     },
     {
       "numPmu": 12,
       "nom": "LUCKY BELLAY",
-      "cote_live": 15.0,
+      "cote_live": 16.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794509180000
+      "timestamp_cote": 1794509422000
     },
     {
       "numPmu": 13,
       "nom": "LUCKY PRIM",
-      "cote_live": 53.0,
+      "cote_live": 44.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794509180000
+      "timestamp_cote": 1794509422000
     },
     {
       "numPmu": 14,
       "nom": "LOUIMOKO",
-      "cote_live": 6.8,
+      "cote_live": 5.2,
       "cote_reference": 6.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794509180000
+      "timestamp_cote": 1794509422000
     }
   ],
   "hippodrome": "AMIENS",
@@ -209,6 +209,57 @@
         "12": 15.0,
         "13": 53.0,
         "14": 6.8
+      }
+    },
+    {
+      "scraped_at": "2026-11-12T19:49:24.199535+01:00",
+      "minutes_avant_depart": 5.60274525,
+      "cotes": {
+        "2": 12.0,
+        "3": 13.0,
+        "4": 5.5,
+        "6": 2.4,
+        "7": 26.0,
+        "9": 16.0,
+        "10": 54.0,
+        "11": 36.0,
+        "12": 14.0,
+        "13": 42.0,
+        "14": 6.4
+      }
+    },
+    {
+      "scraped_at": "2026-11-12T19:50:03.958957+01:00",
+      "minutes_avant_depart": 4.936076383333333,
+      "cotes": {
+        "2": 13.0,
+        "3": 14.0,
+        "4": 5.9,
+        "6": 2.3,
+        "7": 28.0,
+        "9": 17.0,
+        "10": 58.0,
+        "11": 39.0,
+        "12": 15.0,
+        "13": 46.0,
+        "14": 5.8
+      }
+    },
+    {
+      "scraped_at": "2026-11-12T19:50:44.144521+01:00",
+      "minutes_avant_depart": 4.269407733333334,
+      "cotes": {
+        "2": 14.0,
+        "3": 15.0,
+        "4": 6.4,
+        "6": 2.2,
+        "7": 30.0,
+        "9": 18.0,
+        "10": 64.0,
+        "11": 40.0,
+        "12": 16.0,
+        "13": 44.0,
+        "14": 5.2
       }
     }
   ]
