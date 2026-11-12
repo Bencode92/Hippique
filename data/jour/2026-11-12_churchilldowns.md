@@ -1,8 +1,8 @@
 # CHURCHILL DOWNS — 12/11/2026
 
-9 courses.
+9 courses (1 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -71,12 +71,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 6 | ORDER RESTORED | 1,1 | T GAFFALIONE |
 | 1 | HATHAWAY | – | Y ORTIZ, JR. |
 | 2 | WILL'S ALI | – | W A RODRIGUEZ |
 | 3 | LEEDU | – | J L ORTIZ |
 | 4 | GOT THE RING | – | J R LEPAROUX |
 | 5 | MUNNINGS MONET | – | C A TORRES |
-| 6 | ORDER RESTORED | – | T GAFFALIONE |
 | 7 | BELLA LUNA | – | G RODRIGUEZ |
 
 ### 6. ALLOWANCE 1600

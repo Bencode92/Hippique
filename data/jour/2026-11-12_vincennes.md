@@ -1,8 +1,8 @@
 # VINCENNES — 12/11/2026
 
-9 courses.
+9 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
@@ -12,22 +12,22 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | LOMBOK JIEL | – | P.Y. VERVA |
-| 2 | FRANK GIO | – | M. ABRIVARD |
-| 3 | LIONHEART | – | N. BAZIRE |
-| 4 | MAGIC NIGHT | – | B. ROCHARD |
-| 5 | FALCO KILLER GAR | – | CL. DUVALDESTIN |
-| 6 | LIZA JOSSELYN | – | J.M. BAZIRE |
-| 7 | MAITRE JACQUES | – | LEO ABRIVARD |
-| 8 | BULLET THE BLUESKY | – | D. WAJERSTEN |
-| 9 | L'AS DESBOIS | – | W. BIGEON |
-| 10 | LANCIER DU GOUTIER | – | THEO DUVALDESTIN |
-| 11 | LIBERTE DE CHOISEL | – | A. BARRIER |
-| 12 | LORD DU BASSIN | – | A. ABRIVARD |
-| 13 | MADRID HAUFOR | – | D. BONNE |
-| 14 | KOOGOO GAAGAA | – | R. CONGARD |
+| 2 | FRANK GIO | 3,1 | M. ABRIVARD |
+| 6 | LIZA JOSSELYN | 5 | J.M. BAZIRE |
+| 10 | LANCIER DU GOUTIER | 5 | THEO DUVALDESTIN |
+| 5 | FALCO KILLER GAR | 8,1 | CL. DUVALDESTIN |
+| 12 | LORD DU BASSIN | 13 | A. ABRIVARD |
+| 8 | BULLET THE BLUESKY | 17 | D. WAJERSTEN |
+| 1 | LOMBOK JIEL | 24 | P.Y. VERVA |
+| 13 | MADRID HAUFOR | 43 | D. BONNE |
+| 4 | MAGIC NIGHT | 48 | B. ROCHARD |
+| 7 | MAITRE JACQUES | 65 | LEO ABRIVARD |
+| 9 | L'AS DESBOIS | 97 | W. BIGEON |
+| 3 | LIONHEART | 391 | N. BAZIRE |
+| 11 | LIBERTE DE CHOISEL | 391 | A. BARRIER |
+| 14 | KOOGOO GAAGAA | 391 | R. CONGARD |
+| 16 | L'ECRIN D'OR | 391 | A. REBECHE |
 | 15 | MILA DES COUPERIES | – | L.CL. ABRIVARD |
-| 16 | L'ECRIN D'OR | – | A. REBECHE |
 
 ### 2. COUPE DES AMATEURS (GR A)
 
@@ -35,20 +35,20 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KARINA JOSSELYN | – | Mlle A. RENAULT |
-| 2 | INTRIGUE DE VIETTE | – | F. BERTHAULT |
-| 3 | GIORGIO DU VIVIER | – | Mme M. VER HULST |
+| 8 | JUNON DES ROSES | 2,1 | Mme C. CHAZAL |
+| 14 | JACKSON HILL | 3,9 | Mlle F. AUBER |
+| 10 | KLARCK DE VANDEL | 7,2 | S. LABOUTIQUE |
+| 13 | ILLINOIS | 10 | Mlle AUXANE HALLAIS |
+| 6 | IQUEM MARVIC | 21 | F. CHAPDELAINE |
+| 11 | ILOVIROIZ DI LEONE | 21 | TH. CLAIRET |
+| 1 | KARINA JOSSELYN | 43 | Mlle A. RENAULT |
+| 2 | INTRIGUE DE VIETTE | 43 | F. BERTHAULT |
+| 3 | GIORGIO DU VIVIER | 43 | Mme M. VER HULST |
+| 5 | IVALO DU BOCAGE | 43 | Mlle E. GOETZ |
 | 4 | JARDIN D'ERABLE | – | Y. ACKER |
-| 5 | IVALO DU BOCAGE | – | Mlle E. GOETZ |
-| 6 | IQUEM MARVIC | – | F. CHAPDELAINE |
 | 7 | INGENIOUS BOND | – | CH. BACHE |
-| 8 | JUNON DES ROSES | – | Mme C. CHAZAL |
 | 9 | IOKINA DE KERYANN | – | A. MOURAUD |
-| 10 | KLARCK DE VANDEL | – | S. LABOUTIQUE |
-| 11 | ILOVIROIZ DI LEONE | – | TH. CLAIRET |
 | 12 | HOKITOLOVE | – | J. ROUX |
-| 13 | ILLINOIS | – | Mlle AUXANE HALLAIS |
-| 14 | JACKSON HILL | – | Mlle F. AUBER |
 
 ### 3. PRIX DE VAUMAS
 
@@ -56,18 +56,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | UNDER PRESSURE | – | A. PRAT |
-| 3 | NALA DE SMARVES | – | LEO ABRIVARD |
-| 4 | NINA TIME | – | F. NIVARD |
-| 5 | NISSA LA BELLA | – | A. COLLETTE |
+| 11 | NACRE DU MOUTHIEUX | 2,1 | THEO DUVALDESTIN |
+| 13 | NIKKI BEACH JISCE | 2,2 | E. RAFFIN |
+| 9 | NOIRE INTENSE | 19 | W. BIGEON |
+| 1 | UNDER PRESSURE | 28 | A. PRAT |
+| 4 | NINA TIME | 28 | F. NIVARD |
+| 7 | NEW WAVE | 28 | J. DUBOIS |
+| 3 | NALA DE SMARVES | 57 | LEO ABRIVARD |
+| 5 | NISSA LA BELLA | 57 | A. COLLETTE |
+| 8 | NAFI DE REVE D'OR | 57 | A. BARRIER |
 | 6 | NORD AMERICAINE | – | A. REBECHE |
-| 7 | NEW WAVE | – | J. DUBOIS |
-| 8 | NAFI DE REVE D'OR | – | A. BARRIER |
-| 9 | NOIRE INTENSE | – | W. BIGEON |
 | 10 | NOVA TIM | – | B. ROBIN |
-| 11 | NACRE DU MOUTHIEUX | – | THEO DUVALDESTIN |
 | 12 | NYMPHE D'ELLE | – | B. ROCHARD |
-| 13 | NIKKI BEACH JISCE | – | E. RAFFIN |
 
 ### 4. COUPE DES AMATEURS (GR B)
 
@@ -75,20 +75,20 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | IDUNN | – | P.M. ALLAIS |
-| 2 | JUTLAND | – | JEAN MAXIME LESNE |
-| 3 | KIMI DU DOME | – | MAXIME DAUGEARD |
+| 12 | KARA DE PIERREPONT | 2,9 | Mlle EMILIE DUPERCHE |
+| 6 | JOYCE DREAM | 6,6 | T. PERRIER |
+| 3 | KIMI DU DOME | 8,8 | MAXIME DAUGEARD |
+| 7 | GRAND RESTAURANT | 8,8 | F. JULIEN |
+| 11 | JOCONDE DE RHEVE | 8,8 | C. BATY |
+| 13 | JALMAROSA | 8,8 | Mme B. GUENET |
+| 14 | JAB KISS | 13 | S. DEWULF |
+| 1 | IDUNN | 26 | P.M. ALLAIS |
+| 2 | JUTLAND | 26 | JEAN MAXIME LESNE |
+| 10 | ISA DU PRESSOIR | 26 | Mlle M. TRIHOLLET |
 | 4 | HILKA DE BERTRANGE | – | S. CHARRIAUD |
 | 5 | JOYAU DU GRESSY | – | D. GRIMAULT |
-| 6 | JOYCE DREAM | – | T. PERRIER |
-| 7 | GRAND RESTAURANT | – | F. JULIEN |
 | 8 | KRONOS D'ERPION | – | Mme P. CAVANIE |
 | 9 | IMAGINE GIRL | – | A. RAFFIN |
-| 10 | ISA DU PRESSOIR | – | Mlle M. TRIHOLLET |
-| 11 | JOCONDE DE RHEVE | – | C. BATY |
-| 12 | KARA DE PIERREPONT | – | Mlle EMILIE DUPERCHE |
-| 13 | JALMAROSA | – | Mme B. GUENET |
-| 14 | JAB KISS | – | S. DEWULF |
 
 ### 5. PRIX CENERI FORCINAL
 
@@ -96,16 +96,16 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MINA DRY | – | F. DESMIGNEUX |
-| 2 | MISSY DE JIEL | – | M. LELIEVRE |
-| 3 | MIMI D'AUTHISE | – | A. BARRIER |
-| 4 | MARIO DE LA VALLEE | – | GUILLAUME MARTIN |
-| 5 | MALICE CAILLERIE | – | M. MOTTIER |
-| 6 | MUZE MAKER | – | E. RAFFIN |
-| 7 | MOLLY MADRIK | – | R. MARTY |
-| 8 | MHUM FLYNG | – | A. ABRIVARD |
-| 9 | MUNHOA VEDAQUAISE | – | P.PH. PLOQUIN |
-| 10 | MISS DES BESACES | – | A. GENDROT |
+| 9 | MUNHOA VEDAQUAISE | 1,6 | P.PH. PLOQUIN |
+| 3 | MIMI D'AUTHISE | 6,9 | A. BARRIER |
+| 5 | MALICE CAILLERIE | 11 | M. MOTTIER |
+| 10 | MISS DES BESACES | 13 | A. GENDROT |
+| 4 | MARIO DE LA VALLEE | 18 | GUILLAUME MARTIN |
+| 8 | MHUM FLYNG | 18 | A. ABRIVARD |
+| 6 | MUZE MAKER | 27 | E. RAFFIN |
+| 7 | MOLLY MADRIK | 27 | R. MARTY |
+| 1 | MINA DRY | 55 | F. DESMIGNEUX |
+| 2 | MISSY DE JIEL | 55 | M. LELIEVRE |
 
 ### 6. PRIX DE BEAUVOIR
 
@@ -113,22 +113,22 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 15 | MIGRAINE DE CONNEE | 2,5 | B. ROCHARD |
+| 16 | MARVINA BELLA | 4,8 | C. DELBECQ |
+| 3 | MILANTERA | 8 | F. NIVARD |
+| 5 | MARIBELLA | 12 | CL. DUVALDESTIN |
+| 7 | MA LIBERTE | 12 | P.PH. PLOQUIN |
+| 13 | MELICIANA | 16 | M. MOTTIER |
+| 2 | MALICIA BELLA | 24 | A. WIELS |
+| 12 | MAGIE MESLOISE | 24 | P. BELLOCHE |
+| 14 | MOUSTACHE | 24 | D. THOMAIN |
+| 4 | MELODICA BELLA | 48 | T. OUVRIE |
+| 8 | MERRY RIVER | 48 | A. GUARATO |
+| 10 | MAGIE DE CHAHAINS | 48 | R. LAMY |
 | 1 | MORNING NEWS | – | A. COLLETTE |
-| 2 | MALICIA BELLA | – | A. WIELS |
-| 3 | MILANTERA | – | F. NIVARD |
-| 4 | MELODICA BELLA | – | T. OUVRIE |
-| 5 | MARIBELLA | – | CL. DUVALDESTIN |
 | 6 | MOONLIGHT STAR | – | ALEXANDRE CHEVRIER |
-| 7 | MA LIBERTE | – | P.PH. PLOQUIN |
-| 8 | MERRY RIVER | – | A. GUARATO |
 | 9 | MOUSKIE DE GUEZ | – | N. BAZIRE |
-| 10 | MAGIE DE CHAHAINS | – | R. LAMY |
 | 11 | MANDARINA DE LOU | – | A. ABRIVARD |
-| 12 | MAGIE MESLOISE | – | P. BELLOCHE |
-| 13 | MELICIANA | – | M. MOTTIER |
-| 14 | MOUSTACHE | – | D. THOMAIN |
-| 15 | MIGRAINE DE CONNEE | – | B. ROCHARD |
-| 16 | MARVINA BELLA | – | C. DELBECQ |
 | 17 | MIROITANTE DE PADD | – | M. ABRIVARD |
 | 18 | MERIBEL | – | LEO ABRIVARD |
 
@@ -138,20 +138,20 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 11 | NOTTINGEN | 2,8 | ARNAUD DESMOTTES |
+| 4 | NORMAN PIERJI | 6,5 | THEO DUVALDESTIN |
+| 12 | NOBEL SPEED | 6,5 | E. RAFFIN |
+| 2 | RAM JAM | 7,4 | A. ABRIVARD |
+| 14 | US DARBY | 8,6 | CH. MARTENS |
+| 7 | NOTHINGELSEMATTERS | 17 | D. THOMAIN |
+| 13 | NET MONEY | 17 | CL. DUVALDESTIN |
+| 3 | ICEBERG BI | 26 | G. GELORMINI |
+| 8 | NELSON DU PONT | 26 | N. BAZIRE |
+| 5 | NON STOP DE FOOT | 52 | M. ABRIVARD |
+| 9 | NEMROD BUROIS | 52 | B. ROBIN |
 | 1 | ISMAELE | – | F. NIVARD |
-| 2 | RAM JAM | – | A. ABRIVARD |
-| 3 | ICEBERG BI | – | G. GELORMINI |
-| 4 | NORMAN PIERJI | – | THEO DUVALDESTIN |
-| 5 | NON STOP DE FOOT | – | M. ABRIVARD |
 | 6 | NEW MONEY | – | L. BAUDRON |
-| 7 | NOTHINGELSEMATTERS | – | D. THOMAIN |
-| 8 | NELSON DU PONT | – | N. BAZIRE |
-| 9 | NEMROD BUROIS | – | B. ROBIN |
 | 10 | NOCCATO D'ORLY | – | B. ROCHARD |
-| 11 | NOTTINGEN | – | ARNAUD DESMOTTES |
-| 12 | NOBEL SPEED | – | E. RAFFIN |
-| 13 | NET MONEY | – | CL. DUVALDESTIN |
-| 14 | US DARBY | – | CH. MARTENS |
 
 ### 8. PRIX DE COGNAC
 
@@ -159,21 +159,21 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KING GEORGES | – | D. BONNE |
+| 9 | KING DE L'OUEST | 2,1 | B. ROCHARD |
+| 8 | KNOCKONWOOD | 3,6 | R. LAMY |
+| 12 | KOMPANY VINCENT | 7,2 | CH. MARTENS |
+| 5 | KEEP YOUR DREAMS | 10 | M. MOTTIER |
+| 4 | KEVIN PRINCE | 14 | M. ABRIVARD |
+| 1 | KING GEORGES | 21 | D. BONNE |
+| 7 | JEREMY D'AS | 43 | TH. DROMIGNY |
+| 15 | JERZINHO SPORT | 43 | D. THOMAIN |
 | 2 | KELMEC | – | M. IONESCU |
 | 3 | KOALA BLUE | – | L. BAUDRON |
-| 4 | KEVIN PRINCE | – | M. ABRIVARD |
-| 5 | KEEP YOUR DREAMS | – | M. MOTTIER |
 | 6 | JERICHO DU RIB | – | N. PERRON |
-| 7 | JEREMY D'AS | – | TH. DROMIGNY |
-| 8 | KNOCKONWOOD | – | R. LAMY |
-| 9 | KING DE L'OUEST | – | B. ROCHARD |
 | 10 | KENO PETTEVINIERE | – | P.PH. PLOQUIN |
 | 11 | KINGSLAND DE SIMM | – | A. ABRIVARD |
-| 12 | KOMPANY VINCENT | – | CH. MARTENS |
 | 13 | HAPPY PACHA | – | LEO ABRIVARD |
 | 14 | KROONER D'HERIPRE | – | A.A. BOULARD |
-| 15 | JERZINHO SPORT | – | D. THOMAIN |
 
 ### 9. PRIX D'AZAY LE RIDEAU
 
@@ -181,15 +181,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MARIO DE LOU | – | JULIEN RAFFESTIN |
+| 5 | MALIBU | 2,3 | M. MOTTIER |
+| 12 | MOJI DE VANDEL | 4,7 | A. ABRIVARD |
+| 6 | MILORD DARLING | 9,4 | D. WAJERSTEN |
+| 4 | MEC DE MUTRECY | 14 | P.PH. PLOQUIN |
+| 7 | MY WAY DE QUELETTE | 14 | CH. MARTENS |
+| 10 | MATISSE DU PONT | 14 | J.M. BAZIRE |
+| 11 | MARABOU DODVILLE | 14 | ARNAUD DESMOTTES |
+| 1 | MARIO DE LOU | 28 | JULIEN RAFFESTIN |
+| 3 | MEXICAIN | 28 | A.A. BOULARD |
+| 8 | MARTIN DOL | 28 | B. ROCHARD |
 | 2 | MYTHIQUE JOSSELYN | – | N. BAZIRE |
-| 3 | MEXICAIN | – | A.A. BOULARD |
-| 4 | MEC DE MUTRECY | – | P.PH. PLOQUIN |
-| 5 | MALIBU | – | M. MOTTIER |
-| 6 | MILORD DARLING | – | D. WAJERSTEN |
-| 7 | MY WAY DE QUELETTE | – | CH. MARTENS |
-| 8 | MARTIN DOL | – | B. ROCHARD |
 | 9 | MILLIUM QUESNOT | – | A. COLLETTE |
-| 10 | MATISSE DU PONT | – | J.M. BAZIRE |
-| 11 | MARABOU DODVILLE | – | ARNAUD DESMOTTES |
-| 12 | MOJI DE VANDEL | – | A. ABRIVARD |

@@ -1,8 +1,8 @@
 # CONCEPCION — 12/11/2026
 
-5 courses.
+5 courses (1 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -77,12 +77,12 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 3 | ENGLA | 2,6 | LUIS EDUARDO ROJAS ARANGUREN | –/–/–/– |
+| 6 | MINONI | 2,6 | GABRIEL  URZUA | –/–/–/– |
+| 9 | CHARMING STAR | 2,6 | LUIS AROS HARVEY | –/–/–/– |
 | 1 | VELA AZUL | – | ANYELO GERMAN SOTO GARCES | –/–/–/– |
 | 2 | FORTINATTO | – | BENJAMIN  DIAZ | –/–/–/– |
-| 3 | ENGLA | – | LUIS EDUARDO ROJAS ARANGUREN | –/–/–/– |
 | 4 | DISOLUTO | – | VICENTE ALEXANDER MARDONES GONZA | –/–/–/– |
 | 5 | ARABIAN STORY | – | JUAN P. TORRES | –/–/–/– |
-| 6 | MINONI | – | GABRIEL  URZUA | –/–/–/– |
 | 7 | HEY NINA | – | GUSTAVO VERA | –/–/–/– |
 | 8 | MERCENARIA | – | JUAN A. CAMPOS | –/–/–/– |
-| 9 | CHARMING STAR | – | LUIS AROS HARVEY | –/–/–/– |
