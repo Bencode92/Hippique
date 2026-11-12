@@ -1,7 +1,7 @@
 {
   "hippodrome": "SON PARDO",
   "type_reunion": "ATTELE",
-  "date_extraction": "2026-11-12T02:47:47.253964",
+  "date_extraction": "2026-11-12T15:50:23.859450",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/12112026/R5",
   "courses": [
     {
@@ -50,7 +50,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 5.2,
+          "cote_tendance": "",
+          "cote_reference": 4.2
         },
         {
           "n°": "3",
@@ -70,7 +73,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.4,
+          "cote_tendance": "",
+          "cote_reference": 4.2
         },
         {
           "n°": "4",
@@ -90,7 +96,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 9.2,
+          "cote_tendance": "",
+          "cote_reference": 10.0
         },
         {
           "n°": "5",
@@ -110,7 +119,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 7.0
         },
         {
           "n°": "6",
@@ -170,27 +182,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
-          "n°": "9",
-          "cheval": "OLA VX F.TR. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MAHARAJAH (SE) et BETSY DOS",
-          "corde": "(Corde:09)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261112/SON/1/20261112-SON-1-9.png",
-          "propriétaire": "CUADRA SA GRISA",
-          "entraineur": "J. FLUXA",
-          "éleveurs": "",
-          "jockey": "P.M. VAQUER",
-          "poids": "",
-          "gains": "15600",
-          "musique": "3a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 18.0,
+          "cote_tendance": ""
         },
         {
           "n°": "10",
@@ -210,7 +204,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 9.2,
+          "cote_tendance": "",
+          "cote_reference": 5.2
         },
         {
           "n°": "11",
@@ -270,9 +267,14 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.1,
+          "cote_tendance": "",
+          "cote_reference": 4.2
         }
-      ]
+      ],
+      "typePiste": "SABLE",
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "FINAL TORNEIG TROTADOR FRANCES          ESPAGNE",
@@ -320,7 +322,10 @@
           "equipement(s)": "",
           "nb_courses": 24,
           "nb_victoires": 2,
-          "nb_places": 16
+          "nb_places": 16,
+          "cote": 3.3,
+          "cote_tendance": "",
+          "cote_reference": 10.0
         },
         {
           "n°": "3",
@@ -340,7 +345,10 @@
           "equipement(s)": "",
           "nb_courses": 84,
           "nb_victoires": 8,
-          "nb_places": 40
+          "nb_places": 40,
+          "cote": 5.0,
+          "cote_tendance": "",
+          "cote_reference": 2.7
         },
         {
           "n°": "4",
@@ -360,7 +368,10 @@
           "equipement(s)": "",
           "nb_courses": 52,
           "nb_victoires": 4,
-          "nb_places": 25
+          "nb_places": 25,
+          "cote": 7.1,
+          "cote_tendance": "",
+          "cote_reference": 4.5
         },
         {
           "n°": "5",
@@ -381,8 +392,9 @@
           "nb_courses": 96,
           "nb_victoires": 15,
           "nb_places": 57,
-          "cote": 1.7,
-          "cote_tendance": ""
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 12.0
         },
         {
           "n°": "6",
@@ -402,7 +414,10 @@
           "equipement(s)": "",
           "nb_courses": 67,
           "nb_victoires": 8,
-          "nb_places": 37
+          "nb_places": 37,
+          "cote": 100.0,
+          "cote_tendance": "",
+          "cote_reference": 50.0
         },
         {
           "n°": "7",
@@ -422,7 +437,9 @@
           "equipement(s)": "",
           "nb_courses": 101,
           "nb_victoires": 8,
-          "nb_places": 48
+          "nb_places": 48,
+          "cote": 25.0,
+          "cote_tendance": ""
         },
         {
           "n°": "8",
@@ -442,7 +459,10 @@
           "equipement(s)": "",
           "nb_courses": 61,
           "nb_victoires": 2,
-          "nb_places": 27
+          "nb_places": 27,
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 25.0
         },
         {
           "n°": "9",
@@ -462,7 +482,10 @@
           "equipement(s)": "",
           "nb_courses": 88,
           "nb_victoires": 5,
-          "nb_places": 46
+          "nb_places": 46,
+          "cote": 25.0,
+          "cote_tendance": "",
+          "cote_reference": 50.0
         },
         {
           "n°": "10",
@@ -482,7 +505,10 @@
           "equipement(s)": "",
           "nb_courses": 95,
           "nb_victoires": 8,
-          "nb_places": 38
+          "nb_places": 38,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 6.2
         },
         {
           "n°": "11",
@@ -503,10 +529,13 @@
           "nb_courses": 30,
           "nb_victoires": 10,
           "nb_places": 9,
-          "cote": 1.7,
-          "cote_tendance": ""
+          "cote": 5.5,
+          "cote_tendance": "",
+          "cote_reference": 7.1
         }
-      ]
+      ],
+      "typePiste": "SABLE",
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PREMI APOLO Y.C.                        ESPAGNE",
@@ -534,7 +563,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 19.0,
+          "cote_tendance": "",
+          "cote_reference": 25.0
         },
         {
           "n°": "2",
@@ -574,7 +606,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 8.5
         },
         {
           "n°": "4",
@@ -594,7 +629,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 8.5
         },
         {
           "n°": "5",
@@ -634,27 +672,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
-          "n°": "7",
-          "cheval": "LEANDRO JS M.TR. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: ALGIERS HALL (US) et PABELA ZN (IT)",
-          "corde": "(Corde:07)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261112/SON/3/20261112-SON-3-7.png",
-          "propriétaire": "CUADRA CAFETERIA CALA RATJADA",
-          "entraineur": "F. IZQUIERDO M.",
-          "éleveurs": "",
-          "jockey": "F. IZQUIERDO M.",
-          "poids": "",
-          "gains": "1239300",
-          "musique": "0aRa0aDa0aDa",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 39.0,
+          "cote_tendance": "",
+          "cote_reference": 25.0
         },
         {
           "n°": "8",
@@ -675,8 +696,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 1.1,
-          "cote_tendance": ""
+          "cote": 2.8,
+          "cote_tendance": "",
+          "cote_reference": 2.5
         },
         {
           "n°": "9",
@@ -696,7 +718,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 5.6,
+          "cote_tendance": ""
         },
         {
           "n°": "10",
@@ -736,7 +760,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 19.0,
+          "cote_tendance": "",
+          "cote_reference": 12.0
         },
         {
           "n°": "12",
@@ -756,7 +783,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 39.0,
+          "cote_tendance": "",
+          "cote_reference": 25.0
         },
         {
           "n°": "13",
@@ -776,7 +806,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 9.9,
+          "cote_tendance": "",
+          "cote_reference": 8.5
         },
         {
           "n°": "14",
@@ -796,7 +829,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 19.0,
+          "cote_tendance": "",
+          "cote_reference": 25.0
         },
         {
           "n°": "15",
@@ -816,7 +852,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 25.0
         },
         {
           "n°": "16",
@@ -836,9 +875,14 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 8.5
         }
-      ]
+      ],
+      "typePiste": "SABLE",
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PREMI QUEL ATOUT G                      ESPAGNE",
@@ -866,7 +910,9 @@
           "equipement(s)": "",
           "nb_courses": 29,
           "nb_victoires": 1,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 22.0,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -886,7 +932,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 7.6,
+          "cote_tendance": "",
+          "cote_reference": 13.0
         },
         {
           "n°": "3",
@@ -906,7 +955,10 @@
           "equipement(s)": "",
           "nb_courses": 24,
           "nb_victoires": 0,
-          "nb_places": 10
+          "nb_places": 10,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 13.0
         },
         {
           "n°": "4",
@@ -926,7 +978,10 @@
           "equipement(s)": "",
           "nb_courses": 20,
           "nb_victoires": 1,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 6.6
         },
         {
           "n°": "5",
@@ -986,7 +1041,10 @@
           "equipement(s)": "",
           "nb_courses": 21,
           "nb_victoires": 0,
-          "nb_places": 13
+          "nb_places": 13,
+          "cote": 22.0,
+          "cote_tendance": "",
+          "cote_reference": 13.0
         },
         {
           "n°": "8",
@@ -1006,7 +1064,9 @@
           "equipement(s)": "",
           "nb_courses": 42,
           "nb_victoires": 1,
-          "nb_places": 19
+          "nb_places": 19,
+          "cote": 11.0,
+          "cote_tendance": ""
         },
         {
           "n°": "9",
@@ -1026,7 +1086,10 @@
           "equipement(s)": "",
           "nb_courses": 26,
           "nb_victoires": 1,
-          "nb_places": 14
+          "nb_places": 14,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 13.0
         },
         {
           "n°": "10",
@@ -1046,7 +1109,10 @@
           "equipement(s)": "",
           "nb_courses": 35,
           "nb_victoires": 1,
-          "nb_places": 14
+          "nb_places": 14,
+          "cote": 3.8,
+          "cote_tendance": "",
+          "cote_reference": 3.3
         },
         {
           "n°": "11",
@@ -1066,7 +1132,10 @@
           "equipement(s)": "",
           "nb_courses": 25,
           "nb_victoires": 2,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 5.7,
+          "cote_tendance": "",
+          "cote_reference": 6.6
         },
         {
           "n°": "12",
@@ -1086,7 +1155,10 @@
           "equipement(s)": "",
           "nb_courses": 42,
           "nb_victoires": 3,
-          "nb_places": 16
+          "nb_places": 16,
+          "cote": 7.6,
+          "cote_tendance": "",
+          "cote_reference": 4.4
         },
         {
           "n°": "13",
@@ -1108,7 +1180,9 @@
           "nb_victoires": 0,
           "nb_places": 10
         }
-      ]
+      ],
+      "typePiste": "SABLE",
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PREMI HOURVARI                          ESPAGNE",
@@ -1137,8 +1211,9 @@
           "nb_courses": 49,
           "nb_victoires": 4,
           "nb_places": 22,
-          "cote": 1.7,
-          "cote_tendance": ""
+          "cote": 19.0,
+          "cote_tendance": "",
+          "cote_reference": 29.0
         },
         {
           "n°": "2",
@@ -1158,27 +1233,9 @@
           "equipement(s)": "",
           "nb_courses": 61,
           "nb_victoires": 2,
-          "nb_places": 32
-        },
-        {
-          "n°": "3",
-          "cheval": "JOKER WIND M.TR. 7 a.",
-          "cheval_url": "",
-          "père_mère": "Par: PASSWORD et STAR MAGIK",
-          "corde": "(Corde:03)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261112/SON/5/20261112-SON-5-3.png",
-          "propriétaire": "CUADRA C'AS BOMBERO",
-          "entraineur": "J.A. RIERA",
-          "éleveurs": "Ecurie HARAS DES QUATRE VENTS",
-          "jockey": "C. RIERA M.",
-          "poids": "",
-          "gains": "6543300",
-          "musique": "2a2a4a0a3a2a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 20,
-          "nb_victoires": 4,
-          "nb_places": 3
+          "nb_places": 32,
+          "cote": 9.7,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -1198,7 +1255,10 @@
           "equipement(s)": "",
           "nb_courses": 32,
           "nb_victoires": 4,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 7.7,
+          "cote_tendance": "",
+          "cote_reference": 7.2
         },
         {
           "n°": "5",
@@ -1218,7 +1278,9 @@
           "equipement(s)": "",
           "nb_courses": 61,
           "nb_victoires": 3,
-          "nb_places": 30
+          "nb_places": 30,
+          "cote": 38.0,
+          "cote_tendance": ""
         },
         {
           "n°": "6",
@@ -1258,7 +1320,10 @@
           "equipement(s)": "",
           "nb_courses": 66,
           "nb_victoires": 2,
-          "nb_places": 37
+          "nb_places": 37,
+          "cote": 1.8,
+          "cote_tendance": "",
+          "cote_reference": 1.4
         },
         {
           "n°": "8",
@@ -1278,7 +1343,9 @@
           "equipement(s)": "",
           "nb_courses": 109,
           "nb_victoires": 4,
-          "nb_places": 50
+          "nb_places": 50,
+          "cote": 38.0,
+          "cote_tendance": ""
         },
         {
           "n°": "9",
@@ -1299,8 +1366,9 @@
           "nb_courses": 37,
           "nb_victoires": 2,
           "nb_places": 20,
-          "cote": 1.7,
-          "cote_tendance": ""
+          "cote": 3.8,
+          "cote_tendance": "",
+          "cote_reference": 3.6
         },
         {
           "n°": "10",
@@ -1322,7 +1390,9 @@
           "nb_victoires": 6,
           "nb_places": 42
         }
-      ]
+      ],
+      "typePiste": "SABLE",
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PREMI LEVIATAN                          ESPAGNE",
@@ -1430,7 +1500,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.3,
+          "cote_tendance": "",
+          "cote_reference": 1.7
         },
         {
           "n°": "6",
@@ -1470,7 +1543,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.3,
+          "cote_tendance": "",
+          "cote_reference": 2.6
         },
         {
           "n°": "8",
@@ -1490,7 +1566,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.0,
+          "cote_tendance": "",
+          "cote_reference": 5.2
         },
         {
           "n°": "9",
@@ -1510,7 +1589,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.0,
+          "cote_tendance": ""
         },
         {
           "n°": "10",
@@ -1572,7 +1653,9 @@
           "nb_victoires": 0,
           "nb_places": 0
         }
-      ]
+      ],
+      "typePiste": "SABLE",
+      "cordeCourse": "CORDE_GAUCHE"
     }
   ]
 }

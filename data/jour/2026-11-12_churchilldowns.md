@@ -1,6 +1,6 @@
 # CHURCHILL DOWNS — 12/11/2026
 
-9 courses (1 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+9 courses (7 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -12,12 +12,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | DRAIN THE BOURBON | – | B J HERNANDEZ, JR. |
-| 2 | WITH YOU | – | J L ORTIZ |
+| 2 | WITH YOU | 1,5 | J L ORTIZ |
+| 4 | OSCAR'S CANDY | 3,2 | M FERNANDEZ |
+| 5 | I LIKE TO PARTY | 13 | L SAEZ |
+| 1 | DRAIN THE BOURBON | 16 | B J HERNANDEZ, JR. |
+| 6 | CANDOR | 19 | M GUTIERREZ |
 | 3 | BOSS | – | G CORRALES |
-| 4 | OSCAR'S CANDY | – | M FERNANDEZ |
-| 5 | I LIKE TO PARTY | – | L SAEZ |
-| 6 | CANDOR | – | M GUTIERREZ |
 
 ### 2. CLAIMING  1600
 
@@ -25,12 +25,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 5 | ORAIA | 1,1 | L SAEZ |
+| 3 | YOU'RE IN HEAVEN | 9,4 | C A TORRES |
+| 6 | FULL DOLLY | 11 | E MORALES |
+| 4 | ANGEL BELLA | 14 | T GAFFALIONE |
+| 2 | RED BERETTA | 28 | W A RODRIGUEZ |
 | 1 | JUSTIFIED GIFT | – | B J HERNANDEZ, JR. |
-| 2 | RED BERETTA | – | W A RODRIGUEZ |
-| 3 | YOU'RE IN HEAVEN | – | C A TORRES |
-| 4 | ANGEL BELLA | – | T GAFFALIONE |
-| 5 | ORAIA | – | L SAEZ |
-| 6 | FULL DOLLY | – | E MORALES |
 
 ### 3. MAIDEN SPECIAL WEIGHT 1100
 
@@ -38,15 +38,15 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | HELPFUL HOWIE | – | E ESQUIVEL | –/–/–/– |
+| 1 | HELPFUL HOWIE | 1,1 | E ESQUIVEL | –/–/–/– |
+| 8 | SOULMAN | 12 | R BEJARANO | –/–/–/– |
+| 9 | QUINTILLION | 12 | A BESCHIZZA | –/–/–/– |
+| 4 | UNLIMITED | 25 | T GAFFALIONE | –/–/–/– |
+| 5 | ANTHONY THE GREAT | 25 | M FERNANDEZ | –/–/–/– |
+| 3 | ROCKFEST | 51 | J A TORRES | –/–/–/– |
 | 2 | OUR VEKOMA RIDE | – | A CEDILLO | –/–/–/– |
-| 3 | ROCKFEST | – | J A TORRES | –/–/–/– |
-| 4 | UNLIMITED | – | T GAFFALIONE | –/–/–/– |
-| 5 | ANTHONY THE GREAT | – | M FERNANDEZ | –/–/–/– |
 | 6 | TURNBACK | – | E MORALES | –/–/–/– |
 | 7 | BOSTON TIME | – | M GUTIERREZ | –/–/–/– |
-| 8 | SOULMAN | – | R BEJARANO | –/–/–/– |
-| 9 | QUINTILLION | – | A BESCHIZZA | –/–/–/– |
 | 10 | BRIGHT SKITTLE | – | J ALVARADO | –/–/–/2925 |
 | 11 | COLD DRAFT BEER | – | L SAEZ | –/–/–/– |
 | 12 | STORM COMMANDER | – | S PAULY | –/–/–/– |
@@ -57,13 +57,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 3 | SHARED VISION | 1,1 | Y ORTIZ, JR. |
+| 2 | GETTING AFTER IT | 5,9 | T GAFFALIONE |
+| 7 | LEXICO | 23 | W A RODRIGUEZ |
+| 5 | G ROCKS | 47 | F ARRIETA |
 | 1 | DENISE SAYS NO | – | S PAULY |
-| 2 | GETTING AFTER IT | – | T GAFFALIONE |
-| 3 | SHARED VISION | – | Y ORTIZ, JR. |
 | 4 | RIDE THE BROOM | – | D CANNON |
-| 5 | G ROCKS | – | F ARRIETA |
 | 6 | QUINN'S PROMISE | – | K J ASMUSSEN |
-| 7 | LEXICO | – | W A RODRIGUEZ |
 
 ### 5. MAIDEN CLAIMING 1200
 
@@ -71,12 +71,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 6 | ORDER RESTORED | 1,1 | T GAFFALIONE |
+| 4 | GOT THE RING | 1,1 | J R LEPAROUX |
+| 6 | ORDER RESTORED | 7,3 | T GAFFALIONE |
+| 5 | MUNNINGS MONET | 44 | C A TORRES |
 | 1 | HATHAWAY | – | Y ORTIZ, JR. |
 | 2 | WILL'S ALI | – | W A RODRIGUEZ |
 | 3 | LEEDU | – | J L ORTIZ |
-| 4 | GOT THE RING | – | J R LEPAROUX |
-| 5 | MUNNINGS MONET | – | C A TORRES |
 | 7 | BELLA LUNA | – | G RODRIGUEZ |
 
 ### 6. ALLOWANCE 1600
@@ -108,14 +108,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | CONSEQUENTIAL | – | M FERNANDEZ |
+| 7 | OBRA PRIMA | 1,1 | L MACHADO |
+| 6 | HARRY HOUDINI | 8,8 | G RODRIGUEZ |
+| 1 | CONSEQUENTIAL | 12 | M FERNANDEZ |
+| 8 | FEELING GRAND | 12 | J A TORRES |
+| 5 | BERNIEDOTT | 56 | W A RODRIGUEZ |
 | 2 | DON'T U SHUSH ME | – | A BESCHIZZA |
 | 3 | MOST PROBABLE | – | J MCKEE |
 | 4 | KING LEE | – | D CANNON |
-| 5 | BERNIEDOTT | – | W A RODRIGUEZ |
-| 6 | HARRY HOUDINI | – | G RODRIGUEZ |
-| 7 | OBRA PRIMA | – | L MACHADO |
-| 8 | FEELING GRAND | – | J A TORRES |
 
 ### 8. CLAIMING 1300
 
@@ -123,14 +123,14 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | CHARLIE FOXTROT | – | M GUTIERREZ | –/–/–/– |
-| 2 | ACCRETIVE | – | M FERNANDEZ | –/–/–/– |
+| 8 | ZAMBEZI | 1,4 | E MORALES | –/–/–/– |
+| 2 | ACCRETIVE | 3,3 | M FERNANDEZ | –/–/–/– |
+| 4 | TARANTINO | 18 | T GAFFALIONE | –/–/–/– |
+| 1 | CHARLIE FOXTROT | 24 | M GUTIERREZ | –/–/–/– |
+| 6 | CAN'T HUSH THIS | 36 | A ACHARD | –/–/–/– |
+| 5 | TRACK PHANTOM | 144 | Y ORTIZ, JR. | –/–/–/– |
 | 3 | BANNED FOR LIFE | – | J A TORRES | –/–/–/– |
-| 4 | TARANTINO | – | T GAFFALIONE | –/–/–/– |
-| 5 | TRACK PHANTOM | – | Y ORTIZ, JR. | –/–/–/– |
-| 6 | CAN'T HUSH THIS | – | A ACHARD | –/–/–/– |
 | 7 | RISK IT | – | K J ASMUSSEN | –/–/–/– |
-| 8 | ZAMBEZI | – | E MORALES | –/–/–/– |
 
 ### 9. CLAIMING  1700
 

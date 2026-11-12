@@ -10,18 +10,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 1. PRIX DE L'ALLEE MASSINE
 
-*12h17 · plat · 1600 m · 8 partants · cotes de l'extraction*
+*12h20 · plat · 1600 m · 8 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 7 | QUEEN LAGERTHA | 3,2 | 3,86 | -17,2 % | A.CRASTUS | 15/33/24/21 |
-| 8 | FOOT LOOSE | 3,5 | 3,84 | -8,8 % | B.MARIE | 63/235/1225/2324 |
-| 5 | MAGIC INSPIRATION | 5 | 5,99 | -16,6 % | T.TRULLIER | 24/40/260/448 |
-| 1 | FEEL WELL | 6,5 | 7,59 | -14,4 % | T.PICCONE | 9/4/5/15 |
-| 4 | SHABAZI | 9,1 | 12,03 | -24,3 % | H.JOURNIAC | 41/9/937/91 |
-| 3 | RUN LIWAY | 15 | 21,72 | -30,9 % | D.PROVOST | 33/100/21/21 |
-| 2 | TASHARRAFNA | 45 | 70,81 | -36,5 % | S.PASQUIER | 20/36/98/165 |
-| 6 | OROPENDOLA | – | – |  | M.PIEN | 155/21/19/43 |
+| 4 | SHABAZI | 3,8 | 4,90 | -22,4 % | H.JOURNIAC | 41/9/937/91 |
+| 2 | TASHARRAFNA | 3,9 | 3,98 | -2,0 % | S.PASQUIER | 20/36/98/165 |
+| 5 | MAGIC INSPIRATION | 4,6 | 5,43 | -15,3 % | T.TRULLIER | 24/40/260/448 |
+| 3 | RUN LIWAY | 5,9 | 6,64 | -11,1 % | D.PROVOST | 33/100/21/21 |
+| 1 | FEEL WELL | 7,5 | 8,92 | -15,9 % | T.PICCONE | 9/4/5/15 |
+| 7 | QUEEN LAGERTHA | 19 | 25,34 | -25,0 % | A.CRASTUS | 15/33/24/21 |
+| 8 | FOOT LOOSE | 26 | 36,37 | -28,5 % | B.MARIE | 63/235/1225/2324 |
+| 6 | OROPENDOLA | 65 | 99,88 | -34,9 % | M.PIEN | 155/21/19/43 |
 
 ### 2. PRIX DE L'EPARS
 
@@ -29,14 +29,14 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 6 | RUSH TO WAIT | 2,1 | 2,33 | -9,8 % | T.BREBION | 84/45/487/275 |
-| 4 | ASALET | 3 | 3,25 | -7,6 % | D.SANTIAGO | 19/625/4169/2810 |
-| 8 | YUNA | 8,2 | 9,79 | -16,2 % | B.MARIE | 63/178/590/414 |
-| 1 | MARTINVAST | 16 | 21,46 | -25,4 % | R.MANGIONE | 86/150/11/5 |
-| 3 | VILLA ADRIENNE | 16 | 21,46 | -25,4 % | H.BOUTIN | 17/33/14/51 |
-| 5 | MISS HENGE | 16 | 23,02 | -30,5 % | J.MOUTARD | 42/232/242/1643 |
-| 2 | OCTOBRE ROSE | 49 | 82,00 | -40,2 % | C.PACAUT | 44/159/970/164 |
-| 7 | ZARALADY | 49 | 76,24 | -35,7 % | L.BAILS | 85/424/86/986 |
+| 6 | RUSH TO WAIT | 2,4 | 2,47 | -2,7 % | T.BREBION | 84/45/487/275 |
+| 5 | MISS HENGE | 3,9 | 4,50 | -13,3 % | J.MOUTARD | 42/232/242/1643 |
+| 3 | VILLA ADRIENNE | 7,8 | 9,25 | -15,7 % | H.BOUTIN | 17/33/14/51 |
+| 8 | YUNA | 9 | 10,93 | -17,7 % | B.MARIE | 63/178/590/414 |
+| 4 | ASALET | 12 | 15,33 | -21,7 % | D.SANTIAGO | 19/625/4169/2810 |
+| 1 | MARTINVAST | 15 | 19,93 | -24,7 % | R.MANGIONE | 86/150/11/5 |
+| 2 | OCTOBRE ROSE | 15 | 20,42 | -26,5 % | C.PACAUT | 44/159/970/164 |
+| 7 | ZARALADY | 31 | 43,87 | -29,3 % | L.BAILS | 85/424/86/986 |
 
 ### 3. PRIX DE VEZ
 
@@ -44,15 +44,15 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 3 | L'AGORA GAME | 4,6 | 5,58 | -17,5 % | M.VELON | 27/41/326/472 |
-| 5 | MAC LA TAMBOUILLE | 4,6 | 5,89 | -21,9 % | H.JOURNIAC | 41/77/215/267 |
-| 6 | HERMANO | 4,6 | 5,25 | -12,4 % | M.FAVRIAUX | 54/165/557/4358 |
-| 2 | FIRST CREATION | 6,1 | 7,01 | -13,0 % | A.CRASTUS | 15/314/47/1086 |
-| 1 | PAPILLE D'ARGENT | 9,2 | 12,10 | -24,0 % | E.GAY LE BRETON | 383/170/–/1974 |
-| 9 | MAESTRO CHOP | 9,2 | 12,10 | -24,0 % | P.CHEYER | 101/261/6/1477 |
-| 7 | MILORD DU LEMO | 18 | 24,88 | -27,7 % | J.GUILLOCHON | 61/393/566/2947 |
-| 8 | KENJI | 18 | 21,77 | -17,3 % | A.MOLINS | 28/107/1242/3042 |
-| 4 | BIALYSTOK | – | – |  | A.NICCO | 158/213/168/4297 |
+| 3 | L'AGORA GAME | 4,2 | 5,07 | -17,2 % | M.VELON | 27/41/326/472 |
+| 5 | MAC LA TAMBOUILLE | 4,2 | 4,96 | -15,2 % | H.JOURNIAC | 41/77/215/267 |
+| 6 | HERMANO | 5,5 | 5,59 | -1,5 % | M.FAVRIAUX | 54/165/557/4358 |
+| 2 | FIRST CREATION | 6 | 6,93 | -13,4 % | A.CRASTUS | 15/314/47/1086 |
+| 7 | MILORD DU LEMO | 11 | 14,06 | -21,7 % | J.GUILLOCHON | 61/393/566/2947 |
+| 9 | MAESTRO CHOP | 12 | 15,95 | -24,8 % | P.CHEYER | 101/261/6/1477 |
+| 8 | KENJI | 14 | 16,37 | -14,5 % | A.MOLINS | 28/107/1242/3042 |
+| 1 | PAPILLE D'ARGENT | 24 | 37,56 | -36,1 % | E.GAY LE BRETON | 383/170/–/1974 |
+| 4 | BIALYSTOK | 25 | 34,95 | -28,5 % | A.NICCO | 158/213/168/4297 |
 
 ### 4. PRIX DU VALOIS
 
@@ -60,15 +60,15 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 9 | VALERTA | 2,9 | 3,15 | -7,9 % | B.MARIE | 63/227/405/1242 |
-| 8 | SEEYOUGO | 3,3 | 3,59 | -8,1 % | J.CLAUDIC | 40/107/755/871 |
-| 4 | EMBIEZ | 4,4 | 4,36 | **+1,0 %** | T.PICCONE 4e | 9/106/145/53 |
-| 1 | STEP MORNING | 13 | 16,99 | -23,5 % | A.VILCHIEN | 98/371/1142/4100 |
-| 3 | MACHETE | 13 | 16,99 | -23,5 % | M.VELON | 27/221/25/192 |
-| 5 | MYKISS | 26 | 40,88 | -36,4 % | A.MADAMET | 12/227/73/976 |
-| 6 | LORENZO DE MEDICI | 26 | 40,88 | -36,4 % | F.LEFEBVRE | 46/447/2254/1438 |
-| 7 | DICX | 26 | 35,67 | -27,1 % | A.CRASTUS | 15/28/815/1208 |
-| 2 | ANIOL | – | – |  | H.BOUTIN | 17/181/208/440 |
+| 4 | EMBIEZ | 3,3 | 3,37 | -2,1 % | T.PICCONE 4e | 9/106/145/53 |
+| 8 | SEEYOUGO | 5,7 | 6,54 | -12,9 % | J.CLAUDIC | 40/107/755/871 |
+| 2 | ANIOL | 6,5 | 7,01 | -7,2 % | H.BOUTIN | 17/181/208/440 |
+| 1 | STEP MORNING | 7,8 | 9,01 | -13,4 % | A.VILCHIEN | 98/371/1142/4100 |
+| 9 | VALERTA | 9,3 | 10,18 | -8,6 % | B.MARIE | 63/227/405/1242 |
+| 6 | LORENZO DE MEDICI | 9,7 | 12,99 | -25,3 % | F.LEFEBVRE | 46/447/2254/1438 |
+| 3 | MACHETE | 10 | 11,53 | -13,3 % | M.VELON | 27/221/25/192 |
+| 7 | DICX | 22 | 29,72 | -26,0 % | A.CRASTUS | 15/28/815/1208 |
+| 5 | MYKISS | 27 | 41,07 | -34,3 % | A.MADAMET | 12/227/73/976 |
 
 ### 5. PRIX DU POTEAU DU GATEAU
 
@@ -76,19 +76,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 7 | WESTMINSTER COYOTE | 3,1 | 3,53 | -12,1 % | H.JOURNIAC | 41/9/3254/1398 |
-| 10 | SPEEDY GONZALES | 3,9 | 3,92 | -0,4 % | B.MARIE | 63/166/192/1417 |
-| 9 | ALONIA | 6,3 | 7,63 | -17,4 % | M.FAVRIAUX | 54/163/3206/2072 |
-| 2 | GIZMO | 7,9 | 9,93 | -20,4 % | T.BACHELOT | 16/59/3587/4189 |
-| 8 | EL VEGAS | 7,9 | 9,29 | -15,0 % | T.PICCONE | 9/59/775/842 |
-| 3 | NOBLE APPROACH | 31 | 45,53 | -31,9 % | E.VERHESTRAETEN | 50/13/522/68 |
-| 5 | HADITOUNI | 31 | 41,45 | -25,2 % | C.LECOEUVRE | 13/4/20/10 |
-| 6 | SILVER IMPACT | 31 | 45,53 | -31,9 % | A.MADAMET | 12/191/3729/1620 |
-| 11 | TCHIKITA | 31 | 45,53 | -31,9 % | F.VALLE SKAR | 32/21/40/21 |
-| 13 | NUGHAYA FAL | 31 | 45,53 | -31,9 % | J.CLAUDIC | 40/616/4068/2505 |
-| 1 | CADEAU DE NOEL | – | – |  | S.PASQUIER | 20/36/3407/1666 |
-| 4 | XTRAMOUR | – | – |  | A.LEMAITRE | 10/69/86/1879 |
-| 12 | MADAME MAGIC | – | – |  | M.VELON | 27/140/675/1910 |
+| 1 | CADEAU DE NOEL | 4 | 4,72 | -15,2 % | S.PASQUIER | 20/36/3407/1666 |
+| 7 | WESTMINSTER COYOTE | 4,3 | 4,71 | -8,8 % | H.JOURNIAC | 41/9/3254/1398 |
+| 5 | HADITOUNI | 7,3 | 7,24 | **+0,8 %** | C.LECOEUVRE | 13/4/20/10 |
+| 2 | GIZMO | 9,4 | 11,77 | -20,2 % | T.BACHELOT | 16/59/3587/4189 |
+| 10 | SPEEDY GONZALES | 10 | 10,39 | -3,7 % | B.MARIE | 63/166/192/1417 |
+| 3 | NOBLE APPROACH | 13 | 16,09 | -19,2 % | E.VERHESTRAETEN | 50/13/522/68 |
+| 6 | SILVER IMPACT | 16 | 21,47 | -25,5 % | A.MADAMET | 12/191/3729/1620 |
+| 9 | ALONIA | 17 | 24,74 | -31,3 % | M.FAVRIAUX | 54/163/3206/2072 |
+| 4 | XTRAMOUR | 22 | 29,67 | -25,8 % | A.LEMAITRE | 10/69/86/1879 |
+| 8 | EL VEGAS | 26 | 35,92 | -27,6 % | T.PICCONE | 9/59/775/842 |
+| 11 | TCHIKITA | 33 | 47,02 | -29,8 % | F.VALLE SKAR | 32/21/40/21 |
+| 12 | MADAME MAGIC | 53 | 79,19 | -33,1 % | M.VELON | 27/140/675/1910 |
+| 13 | NUGHAYA FAL | 180 | 274,38 | -34,4 % | J.CLAUDIC | 40/616/4068/2505 |
 
 ### 6. PRIX DE LA REMISE DES LILAS
 
@@ -96,46 +96,45 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 10 | LOCH AWE | 2,9 | 3,35 | -13,4 % | E.HARDOUIN | 30/24/30/22 |
-| 2 | GOLFEUR | 3,3 | 3,46 | -4,6 % | T.BREBION | 84/45/1/1073 |
-| 4 | TAKEO | 6,6 | 8,28 | -20,3 % | B.MARIE | 63/235/3257/2324 |
-| 1 | BEAUTIFUL MEMORY | 11 | 12,41 | -11,4 % | C.LECOEUVRE | 13/374/8/982 |
-| 3 | GRAND CHELEM | 11 | 14,12 | -22,1 % | A.HAMELIN | 23/403/456/868 |
-| 7 | TROPHANE | 15 | 17,82 | -15,8 % | M.GRANDIN | 3/63/139/1887 |
-| 6 | LISEO | 23 | 33,44 | -31,2 % | J.MOUTARD | 42/96/1874/861 |
-| 9 | FELICIA STORM | 23 | 33,44 | -31,2 % | T.BACHELOT | 16/59/3598/3434 |
-| 5 | USER AMISTOSO | 46 | 63,47 | -27,5 % | M.VELON | 27/221/280/192 |
-| 8 | ANTICO | – | – |  | H.BOUTIN | 17/33/1/51 |
+| 6 | LISEO | 3,7 | 4,02 | -7,9 % | J.MOUTARD | 42/96/1874/861 |
+| 3 | GRAND CHELEM | 5,3 | 6,00 | -11,7 % | A.HAMELIN | 23/403/456/868 |
+| 7 | TROPHANE | 5,6 | 5,68 | -1,5 % | M.GRANDIN | 3/63/139/1887 |
+| 10 | LOCH AWE | 6,5 | 7,15 | -9,1 % | E.HARDOUIN | 30/24/30/22 |
+| 2 | GOLFEUR | 10 | 11,79 | -15,2 % | T.BREBION | 84/45/1/1073 |
+| 5 | USER AMISTOSO | 12 | 13,63 | -12,0 % | M.VELON | 27/221/280/192 |
+| 4 | TAKEO | 16 | 23,36 | -31,5 % | B.MARIE | 63/235/3257/2324 |
+| 9 | FELICIA STORM | 24 | 33,26 | -27,8 % | T.BACHELOT | 16/59/3598/3434 |
+| 1 | BEAUTIFUL MEMORY | 26 | 31,82 | -18,3 % | C.LECOEUVRE | 13/374/8/982 |
+| 8 | ANTICO | 31 | 38,82 | -20,1 % | H.BOUTIN | 17/33/1/51 |
 
 ### 7. PRIX DE MAYSEL
 
-*15h57 · plat · 1600 m · 10 partants · cotes à T−10:01*
+*15h57 · plat · 1600 m · 9 partants · cotes à T−10:01*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
 | 3 | HYPERCORE | 3,2 | 3,3 | 3,50 | -8,5 % | H.BOUTIN | 17/55/3414/1016 |
-| 1 | CENTRAL PARK WEST | 4,2 | 13 | 4,66 | -9,9 % | T.TRULLIER | 24/52/15/512 |
-| 7 | CROWDFUNDING | 6,4 | – | 7,47 | -14,3 % | M.VELON | 27/33/73/21 |
-| 6 | SHIAWASE | 9,7 | 4,4 | 12,99 | -25,3 % | T.BACHELOT | 16/54/78/172 |
-| 5 | FREJA | 9,8 | 6,6 | 12,28 | -20,2 % | A.LEMAITRE | 10/50/13/110 |
-| 9 | MEMENTO MORI | 14 | – | 18,70 | -25,1 % | A.MADAMET | 12/108/4208/666 |
-| 8 | BELLATOR | 17 | 13 | 20,54 | -17,2 % | T.PICCONE | 9/108/626/117 |
-| 2 | ABELARD F | 18 | 13 | 26,94 | -33,2 % | R.MANGIONE | 86/73/3410/2259 |
-| 10 | NAKED MEMORIES | 18 | 4,4 | 25,09 | -28,3 % | M.PROTTI | 29/69/22/111 |
-| 4 | APOGEO | – | – | – |  | C.CARBONI | 111/85/89/3241 |
+| 1 | CENTRAL PARK WEST | 4,2 | 4,2 | 4,49 | -6,4 % | T.TRULLIER | 24/52/15/512 |
+| 7 | CROWDFUNDING | 6,4 | 6,7 | 6,88 | -7,0 % | M.VELON | 27/33/73/21 |
+| 6 | SHIAWASE | 9,7 | 7,9 | 12,99 | -25,3 % | T.BACHELOT | 16/54/78/172 |
+| 5 | FREJA | 9,8 | 9,3 | 12,28 | -20,2 % | A.LEMAITRE | 10/50/13/110 |
+| 9 | MEMENTO MORI | 14 | 14 | 18,70 | -25,1 % | A.MADAMET | 12/108/4208/666 |
+| 8 | BELLATOR | 17 | 18 | 20,54 | -17,2 % | T.PICCONE | 9/108/626/117 |
+| 2 | ABELARD F | 18 | 20 | 26,94 | -33,2 % | R.MANGIONE | 86/73/3410/2259 |
+| 10 | NAKED MEMORIES | 18 | 19 | 25,09 | -28,3 % | M.PROTTI | 29/69/22/111 |
 
 ### 8. PRIX DU CARREFOUR DES HAUTES COUTUMES
 
 *16h32 · plat · 1300 m · 9 partants · cotes de l'extraction*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 3 | ASTON CLINTON | 2,4 | C.LECOEUVRE | 13/55/3331/1007 |
-| 7 | HERACLES | 2,4 | M.GRANDIN | 3/71/1400/1594 |
-| 4 | EN PLEIN AIR | 4,8 | T.BACHELOT | 16/59/120/2470 |
-| 2 | CHARISMATIC CHICK | 9,7 | J.MOUTARD | 42/33/356/51 |
-| 1 | SWEET AS | – | L.GALLO | 47/21/19/43 |
-| 5 | OUT OF THE BLUE | – | H.BOUTIN | 17/21/19/43 |
-| 6 | INSIDE MATTERS | – | A.LEMAITRE | 10/269/10/334 |
-| 8 | BLU METAL JACKET | – | D.PROVOST | 33/221/3677/192 |
-| 9 | PERMENTON | – | M.VELON | 27/418/1789/970 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 7 | HERACLES | 3,1 | 3,93 | -21,2 % | M.GRANDIN | 3/71/1400/1594 |
+| 4 | EN PLEIN AIR | 5,8 | 5,45 | **+6,4 %** | T.BACHELOT | 16/59/120/2470 |
+| 1 | SWEET AS | 6,4 | 6,32 | **+1,2 %** | M. PIEN | 155/21/19/43 |
+| 3 | ASTON CLINTON | 7,3 | 9,23 | -20,9 % | C.LECOEUVRE | 13/55/3331/1007 |
+| 8 | BLU METAL JACKET | 9,5 | 12,59 | -24,6 % | D.PROVOST | 33/221/3677/192 |
+| 5 | OUT OF THE BLUE | 10 | 12,50 | -20,0 % | H.BOUTIN | 17/21/19/43 |
+| 9 | PERMENTON | 16 | 19,85 | -19,4 % | M.VELON | 27/418/1789/970 |
+| 2 | CHARISMATIC CHICK | 21 | 29,82 | -29,6 % | J.MOUTARD | 42/33/356/51 |
+| 6 | INSIDE MATTERS | 23 | 28,93 | -20,5 % | A.LEMAITRE | 10/269/10/334 |
