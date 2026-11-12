@@ -4,26 +4,26 @@
   "reunion": 4,
   "heure_depart": 1794505860000,
   "distance": 2400,
-  "scraped_at": "2026-11-12T18:25:55.571085+01:00",
-  "minutes_avant_depart": 25,
+  "scraped_at": "2026-11-12T18:29:56.007151+01:00",
+  "minutes_avant_depart": 21,
   "participants": [
     {
       "numPmu": 1,
       "nom": "JAMAIS",
-      "cote_live": 3.7,
+      "cote_live": 3.8,
       "cote_reference": 3.8,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794504350000
+      "timestamp_cote": 1794504592000
     },
     {
       "numPmu": 2,
       "nom": "JUDY MATIDY",
-      "cote_live": 17.0,
+      "cote_live": 18.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504350000
+      "timestamp_cote": 1794504592000
     },
     {
       "numPmu": 3,
@@ -32,25 +32,25 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504350000
+      "timestamp_cote": 1794504592000
     },
     {
       "numPmu": 4,
       "nom": "ISIA DU CHENE",
-      "cote_live": 14.0,
+      "cote_live": 15.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504350000
+      "timestamp_cote": 1794504592000
     },
     {
       "numPmu": 5,
       "nom": "HORACE D'ARTHENAY",
-      "cote_live": 19.0,
+      "cote_live": 21.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504350000
+      "timestamp_cote": 1794504592000
     },
     {
       "numPmu": 6,
@@ -59,25 +59,25 @@
       "cote_reference": 4.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504350000
+      "timestamp_cote": 1794504592000
     },
     {
       "numPmu": 7,
       "nom": "JACANA",
-      "cote_live": 8.1,
+      "cote_live": 6.8,
       "cote_reference": 7.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504350000
+      "timestamp_cote": 1794504592000
     },
     {
       "numPmu": 8,
       "nom": "INDY DE LA FYE",
-      "cote_live": 43.0,
+      "cote_live": 46.0,
       "cote_reference": 52.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504350000
+      "timestamp_cote": 1794504592000
     },
     {
       "numPmu": 9,
@@ -86,52 +86,52 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504350000
+      "timestamp_cote": 1794504592000
     },
     {
       "numPmu": 10,
       "nom": "JOVIAL HAUFOR",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504350000
+      "timestamp_cote": 1794504592000
     },
     {
       "numPmu": 11,
       "nom": "IDAO NAY",
-      "cote_live": 15.0,
+      "cote_live": 14.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504350000
+      "timestamp_cote": 1794504592000
     },
     {
       "numPmu": 12,
       "nom": "IROKO DU CAIEU",
-      "cote_live": 22.0,
+      "cote_live": 24.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504350000
+      "timestamp_cote": 1794504592000
     },
     {
       "numPmu": 13,
       "nom": "IZIASLAV TEK",
-      "cote_live": 101.0,
+      "cote_live": 109.0,
       "cote_reference": 105.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504350000
+      "timestamp_cote": 1794504592000
     },
     {
       "numPmu": 14,
       "nom": "HILTON DU HOULET",
-      "cote_live": 365.0,
+      "cote_live": 346.0,
       "cote_reference": 337.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794504350000
+      "timestamp_cote": 1794504592000
     }
   ],
   "hippodrome": "AMIENS",
@@ -174,6 +174,26 @@
         "12": 22.0,
         "13": 101.0,
         "14": 365.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-12T18:29:56.007151+01:00",
+      "minutes_avant_depart": 21.0733255,
+      "cotes": {
+        "1": 3.8,
+        "2": 18.0,
+        "3": 14.0,
+        "4": 15.0,
+        "5": 21.0,
+        "6": 4.7,
+        "7": 6.8,
+        "8": 46.0,
+        "9": 14.0,
+        "10": 14.0,
+        "11": 14.0,
+        "12": 24.0,
+        "13": 109.0,
+        "14": 346.0
       }
     }
   ]
