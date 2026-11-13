@@ -124,40 +124,40 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | BERLINETTA | 5,8 | 5,9 | 6,62 | -12,4 % | M.VELON | 27/5/1713/1938 |
-| 11 | ENORA SENORA | 6,9 | 6,7 | 7,25 | -4,9 % | E.HARDOUIN | 30/142/63/95 |
-| 4 | ASTON JUAN | 7,5 | 7,9 | 9,03 | -16,9 % | A.HAMELIN | 23/259/1111/429 |
-| 6 | PALAZZO | 10 | 10 | 11,13 | -10,1 % | J.CLAUDIC | 40/142/10/1852 |
+| 3 | BERLINETTA | 5,8 | 5,6 | 6,62 | -12,4 % | M.VELON | 27/5/1713/1938 |
+| 11 | ENORA SENORA | 6,9 | 6,8 | 7,25 | -4,9 % | E.HARDOUIN | 30/142/63/95 |
+| 4 | ASTON JUAN | 7,5 | 10 | 9,03 | -16,9 % | A.HAMELIN | 23/259/1111/429 |
 | 8 | AMOR A MANI | 10 | 11 | 10,20 | -2,0 % | L.POGGIONOVO | 75/48/65/62 |
-| 12 | BECH RIVER | 11 | 11 | 15,16 | -27,4 % | A.LE LAY MARTIN | 82/238/7/605 |
-| 1 | ANIELSKA | 12 | 13 | 13,76 | -12,8 % | C.LECOEUVRE | 13/153/208/597 |
-| 5 | HAPPY CHRISNAT | 12 | 11 | 15,67 | -23,4 % | A.MOLINS | 28/86/703/133 |
-| 7 | ANNA MANDARA | 16 | 15 | 17,58 | -9,0 % | J.GUILLOCHON | 61/420/930/971 |
-| 2 | MEARAS STYLE | 18 | 19 | 27,07 | -33,5 % | J.LACROIX | 97/144/379/– |
-| 13 | L'ENNEMI | 23 | 21 | 31,41 | -26,8 % | D.SANTIAGO | 19/206/10/4549 |
+| 6 | PALAZZO | 10 | 13 | 11,13 | -10,1 % | J.CLAUDIC | 40/142/10/1852 |
+| 12 | BECH RIVER | 11 | 9,7 | 15,16 | -27,4 % | A.LE LAY MARTIN | 82/238/7/605 |
+| 5 | HAPPY CHRISNAT | 12 | 6,3 | 15,67 | -23,4 % | A.MOLINS | 28/86/703/133 |
+| 1 | ANIELSKA | 12 | 20 | 13,76 | -12,8 % | C.LECOEUVRE | 13/153/208/597 |
+| 7 | ANNA MANDARA | 16 | 11 | 17,58 | -9,0 % | J.GUILLOCHON | 61/420/930/971 |
+| 2 | MEARAS STYLE | 18 | 31 | 27,07 | -33,5 % | J.LACROIX | 97/144/379/– |
+| 13 | L'ENNEMI | 23 | 25 | 31,41 | -26,8 % | D.SANTIAGO | 19/206/10/4549 |
+| 14 | SOHO VICKY | 31 | 41 | 39,03 | -20,6 % | C.BELMONT | 146/400/303/242 |
 | 10 | PROXIMA CENTAURI | 31 | 31 | 37,40 | -17,1 % | X.BERGERON | 71/86/120/133 |
-| 14 | SOHO VICKY | 31 | 31 | 39,03 | -20,6 % | C.BELMONT | 146/400/303/242 |
-| 9 | MAVERICK PREMIER | 33 | 35 | 50,47 | -34,6 % | C.GROSBOIS | 26/379/2204/1302 |
+| 9 | MAVERICK PREMIER | 33 | 29 | 50,47 | -34,6 % | C.GROSBOIS | 26/379/2204/1302 |
 
 ### 8. PRIX DU PLATEAU DE SACLAY
 
-*16h03 · plat · 2000 m · 13 partants · cotes de l'extraction*
+*16h05 · plat · 2000 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 3 | QUEENFLEUR | 3 | 3,08 | -2,5 % | L.POGGIONOVO | 75/48/65/1118 |
-| 8 | ELOISE | 8,5 | 8,84 | -3,8 % | D.PROVOST | 33/41/2817/4310 |
-| 4 | PANZER | 10 | 10,92 | -8,5 % | F.VERON | 25/265/2757/1615 |
-| 5 | ZARAKIVA | 10 | 10,92 | -8,5 % | A.DAIFI | 209/82/557/1618 |
-| 12 | CAREGIVER | 10 | 9,37 | **+6,7 %** | R.MANGIONE | 86/55/962/2499 |
-| 2 | SPRING LILY | 11 | 12,97 | -15,2 % | J.MOUTARD | 42/82/114/176 |
-| 13 | HAKASTE | 15 | 18,64 | -19,5 % | M.GRANDIN | 3/150/13/5 |
-| 10 | JOYCE GALESTE | 17 | 21,56 | -21,2 % | E.HARDOUIN | 30/58/157/181 |
-| 9 | SOLDIERS CHORUS | 20 | 26,03 | -23,2 % | E.VERHESTRAETEN | 50/13/67/901 |
-| 6 | THE PRESIDENT | 22 | 29,02 | -24,2 % | H.LEBOUC | 22/125/225/925 |
-| 14 | COEUR DE ROUME | 23 | 32,83 | -29,9 % | A.MADAMET | 12/307/1410/2307 |
-| 7 | CREEKATTEMPS | 30 | 39,59 | -24,2 % | C.GROSBOIS | 26/217/703/1357 |
-| 1 | HAPPY HUNTER | 39 | 48,29 | -19,2 % | A.BARON | 38/219/327/2146 |
+| 3 | QUEENFLEUR | 4,2 | 4,39 | -4,3 % | L.POGGIONOVO | 75/48/65/1118 |
+| 4 | PANZER | 5,2 | 5,13 | **+1,4 %** | F.VERON | 25/265/2757/1615 |
+| 8 | ELOISE | 7,5 | 7,25 | **+3,5 %** | D.PROVOST | 33/41/2817/4310 |
+| 5 | ZARAKIVA | 10 | 11,74 | -14,8 % | A.DAIFI | 209/82/557/1618 |
+| 14 | COEUR DE ROUME | 11 | 13,68 | -19,6 % | A.MADAMET | 12/307/1410/2307 |
+| 12 | CAREGIVER | 12 | 12,42 | -3,4 % | R.MANGIONE | 86/55/962/2499 |
+| 6 | THE PRESIDENT | 15 | 16,77 | -10,6 % | H.LEBOUC | 22/125/225/925 |
+| 2 | SPRING LILY | 17 | 22,22 | -23,5 % | J.MOUTARD | 42/82/114/176 |
+| 10 | JOYCE GALESTE | 24 | 33,10 | -27,5 % | E.HARDOUIN | 30/58/157/181 |
+| 13 | HAKASTE | 24 | 33,10 | -27,5 % | M.GRANDIN | 3/150/13/5 |
+| 9 | SOLDIERS CHORUS | 25 | 36,35 | -31,2 % | E.VERHESTRAETEN | 50/13/67/901 |
+| 1 | HAPPY HUNTER | 30 | 35,54 | -15,6 % | A.BARON | 38/219/327/2146 |
+| 7 | CREEKATTEMPS | 33 | 43,43 | -24,0 % | C.GROSBOIS | 26/217/703/1357 |
 
 ### 9. PRIX DE LA VALLEE DE CHEVREUSE
 
@@ -165,18 +165,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 8 | CLICCLIC PANPANPAN | 6,2 | 5,54 | **+11,9 %** | L.POGGIONOVO | 75/48/65/2306 |
-| 3 | GRAND TERROIR | 9,8 | 11,37 | -13,8 % | A.LEMAITRE | 10/65/10/1165 |
-| 2 | BALAKOVNA | 10 | 10,24 | -2,4 % | L.ROUSSEL | 18/117/186/2407 |
-| 7 | SEPTIMUS | 11 | 12,49 | -11,9 % | C.BELMONT | 146/219/831/1236 |
-| 11 | APPLEBLOSSOMWHITE | 12 | 15,05 | -20,3 % | E.VERHESTRAETEN | 50/13/3299/370 |
-| 4 | FAMILIAR | 13 | 13,89 | -6,4 % | T.TRULLIER | 24/642/3358/4683 |
-| 5 | ANCTOT | 13 | 16,54 | -21,4 % | M.VELON | 27/342/169/587 |
-| 10 | TOKYO DREAMER | 13 | 14,87 | -12,6 % | E.HARDOUIN | 30/58/3386/181 |
-| 13 | RIDE ON | 13 | 15,81 | -17,8 % | A.MADAMET | 12/159/151/2948 |
-| 12 | NO LIMITS | 14 | 20,25 | -30,9 % | F.VALLE SKAR | 32/108/80/– |
-| 15 | RUE DE L'ODEON | 14 | 20,25 | -30,9 % | T.BACHELOT | 16/48/13/62 |
-| 6 | RAW ENERGY | 18 | 21,09 | -14,7 % | D.PROVOST | 33/100/68/3214 |
-| 1 | YOUNG AND PROUD | 20 | 28,62 | -30,1 % | A.MOLINS | 28/129/460/1578 |
-| 14 | KEEN APPROACH | 23 | 29,38 | -21,7 % | E.CORALLO | 59/243/1246/972 |
-| 9 | STAR CREEK | 31 | 39,20 | -20,9 % | F.VERON | 25/265/551/2098 |
+| 3 | GRAND TERROIR | 5 | 5,57 | -10,3 % | A.LEMAITRE | 10/65/10/1165 |
+| 11 | APPLEBLOSSOMWHITE | 5,4 | 5,69 | -5,0 % | E.VERHESTRAETEN | 50/13/3299/370 |
+| 8 | CLICCLIC PANPANPAN | 7,6 | 8,06 | -5,7 % | L.POGGIONOVO | 75/48/65/2306 |
+| 7 | SEPTIMUS | 10 | 11,06 | -9,6 % | C.BELMONT | 146/219/831/1236 |
+| 13 | RIDE ON | 10 | 10,56 | -5,3 % | A.MADAMET | 12/159/151/2948 |
+| 5 | ANCTOT | 13 | 17,12 | -24,1 % | M.VELON | 27/342/169/587 |
+| 2 | BALAKOVNA | 15 | 16,21 | -7,5 % | L.ROUSSEL | 18/117/186/2407 |
+| 10 | TOKYO DREAMER | 21 | 26,85 | -21,8 % | E.HARDOUIN | 30/58/3386/181 |
+| 12 | NO LIMITS | 21 | 30,73 | -31,7 % | F.VALLE SKAR | 32/108/80/– |
+| 15 | RUE DE L'ODEON | 23 | 34,14 | -32,6 % | T.BACHELOT | 16/48/13/62 |
+| 6 | RAW ENERGY | 24 | 30,41 | -21,1 % | D.PROVOST | 33/100/68/3214 |
+| 9 | STAR CREEK | 25 | 30,44 | -17,9 % | F.VERON | 25/265/551/2098 |
+| 14 | KEEN APPROACH | 33 | 41,76 | -21,0 % | E.CORALLO | 59/243/1246/972 |
+| 1 | YOUNG AND PROUD | 41 | 60,95 | -32,7 % | A.MOLINS | 28/129/460/1578 |
+| 4 | FAMILIAR | 42 | 54,56 | -23,0 % | T.TRULLIER | 24/642/3358/4683 |
