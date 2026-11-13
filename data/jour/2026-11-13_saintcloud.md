@@ -1,6 +1,6 @@
 # SAINT-CLOUD — 13/11/2026
 
-9 courses (4 avec cotes). 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses (4 avec cotes). 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -121,24 +121,24 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE LA VALLEE DE L'YVETTE
 
-*15h28 · plat · 2000 m · 14 partants · cotes de l'extraction*
+*15h28 · plat · 2000 m · 14 partants · cotes à T−29:58*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 3 | BERLINETTA | 3,5 | 3,77 | -7,3 % | M.VELON | 27/5/1713/1938 |
-| 6 | PALAZZO | 6,1 | 6,22 | -2,0 % | J.CLAUDIC | 40/142/10/1852 |
-| 11 | ENORA SENORA | 8,2 | 8,71 | -5,9 % | E.HARDOUIN | 30/142/63/95 |
-| 12 | BECH RIVER | 8,2 | 10,55 | -22,3 % | A.LE LAY MARTIN | 82/238/7/605 |
-| 13 | L'ENNEMI | 8,2 | 9,31 | -11,9 % | D.SANTIAGO | 19/206/10/4549 |
-| 2 | MEARAS STYLE | 12 | 16,56 | -27,5 % | J.LACROIX | 97/144/379/– |
-| 8 | AMOR A MANI | 12 | 12,41 | -3,3 % | L.POGGIONOVO | 75/48/65/62 |
-| 10 | PROXIMA CENTAURI | 12 | 13,56 | -11,5 % | X.BERGERON | 71/86/120/133 |
-| 1 | ANIELSKA | 24 | 30,28 | -20,7 % | C.LECOEUVRE | 13/153/208/597 |
-| 4 | ASTON JUAN | 24 | 34,67 | -30,8 % | A.HAMELIN | 23/259/1111/429 |
-| 5 | HAPPY CHRISNAT | – | – |  | A.MOLINS | 28/86/703/133 |
-| 7 | ANNA MANDARA | – | – |  | J.GUILLOCHON | 61/420/930/971 |
-| 9 | MAVERICK PREMIER | – | – |  | C.GROSBOIS | 26/379/2204/1302 |
-| 14 | SOHO VICKY | – | – |  | C.BELMONT | 146/400/303/242 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 4 | ASTON JUAN | 6 | 24 | 5,90 | **+1,7 %** | A.HAMELIN | 23/259/1111/429 |
+| 3 | BERLINETTA | 6,1 | 3,5 | 6,47 | -5,7 % | M.VELON | 27/5/1713/1938 |
+| 6 | PALAZZO | 7,9 | 6,1 | 8,36 | -5,6 % | J.CLAUDIC | 40/142/10/1852 |
+| 11 | ENORA SENORA | 8,8 | 8,2 | 9,47 | -7,1 % | E.HARDOUIN | 30/142/63/95 |
+| 8 | AMOR A MANI | 9,4 | 12 | 9,38 | **+0,2 %** | L.POGGIONOVO | 75/48/65/62 |
+| 12 | BECH RIVER | 12 | 8,2 | 16,59 | -27,7 % | A.LE LAY MARTIN | 82/238/7/605 |
+| 1 | ANIELSKA | 13 | 24 | 14,92 | -12,9 % | C.LECOEUVRE | 13/153/208/597 |
+| 5 | HAPPY CHRISNAT | 14 | – | 18,56 | -24,5 % | A.MOLINS | 28/86/703/133 |
+| 2 | MEARAS STYLE | 16 | 12 | 23,29 | -31,3 % | J.LACROIX | 97/144/379/– |
+| 13 | L'ENNEMI | 21 | 8,2 | 27,94 | -24,8 % | D.SANTIAGO | 19/206/10/4549 |
+| 7 | ANNA MANDARA | 22 | – | 27,45 | -19,9 % | J.GUILLOCHON | 61/420/930/971 |
+| 9 | MAVERICK PREMIER | 27 | – | 39,74 | -32,1 % | C.GROSBOIS | 26/379/2204/1302 |
+| 14 | SOHO VICKY | 39 | – | 54,67 | -28,7 % | C.BELMONT | 146/400/303/242 |
+| 10 | PROXIMA CENTAURI | 40 | 12 | 53,86 | -25,7 % | X.BERGERON | 71/86/120/133 |
 
 ### 8. PRIX DU PLATEAU DE SACLAY
 
