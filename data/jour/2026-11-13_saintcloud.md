@@ -1,6 +1,6 @@
 # SAINT-CLOUD — 13/11/2026
 
-9 courses (4 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+9 courses (4 avec cotes). 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -100,24 +100,24 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DU HARAS D'OUILLY
 
-*14h53 · plat · 2400 m · 14 partants · cotes de l'extraction*
+*14h53 · plat · 2400 m · 14 partants · cotes à T−0:18*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | NANCY DES PLACES | – | E.HARDOUIN | 30/87/600/320 |
-| 3 | JANNET | – | A.MADAMET | 12/3/3645/61 |
-| 4 | LOVING QUEEN | – | M.VELON | 27/42/90/771 |
-| 5 | SOUDYA | – | A.LEMAITRE | 10/215/475/3600 |
-| 6 | NOTIONI FAL | – | C.LECOEUVRE | 13/55/31/35 |
-| 7 | ZARABABY | – | P.BAZIRE | 57/48/65/416 |
-| 8 | TSAVERNA | – | R.MANGIONE | 86/897/45/5544 |
-| 9 | BOURBON MOON | – | A.HAMELIN | 23/24/177/119 |
-| 10 | ALLEZ FRERES | – | M.MARQUETTE | 51/15/110/1145 |
-| 11 | SHAMBHALLA | – | M.GRANDIN | 3/65/1159/2516 |
-| 12 | LA CHARMETTE | – | G.TROLLEY DE PREVAUX | 43/90/833/2898 |
-| 13 | LA ZARRA | – | J.CLAUDIC | 40/741/2428/3852 |
-| 14 | MEYN ZUN | – | H.LEBOUC | 22/188/1034/269 |
-| 15 | MISS TECH | – | T.BACHELOT | 16/17/463/813 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 1 | NANCY DES PLACES | 3 | 3,50 | -14,2 % | E.HARDOUIN | 30/87/600/320 |
+| 11 | SHAMBHALLA | 8,6 | 9,43 | -8,8 % | M.GRANDIN | 3/65/1159/2516 |
+| 6 | NOTIONI FAL | 9,4 | 11,40 | -17,6 % | C.LECOEUVRE | 13/55/31/35 |
+| 7 | ZARABABY | 9,9 | 11,10 | -10,8 % | P.BAZIRE | 57/48/65/416 |
+| 5 | SOUDYA | 11 | 13,72 | -19,8 % | A.LEMAITRE | 10/215/475/3600 |
+| 15 | MISS TECH | 11 | 13,72 | -19,8 % | T.BACHELOT | 16/17/463/813 |
+| 3 | JANNET | 14 | 18,21 | -23,1 % | A.MADAMET | 12/3/3645/61 |
+| 4 | LOVING QUEEN | 14 | 18,21 | -23,1 % | M.VELON | 27/42/90/771 |
+| 9 | BOURBON MOON | 20 | 27,60 | -27,5 % | A.HAMELIN | 23/24/177/119 |
+| 12 | LA CHARMETTE | 25 | 35,68 | -29,9 % | G.TROLLEY DE PREVAUX | 43/90/833/2898 |
+| 10 | ALLEZ FRERES | 28 | 36,98 | -24,3 % | M.MARQUETTE | 51/15/110/1145 |
+| 8 | TSAVERNA | 54 | 84,02 | -35,7 % | R.MANGIONE | 86/897/45/5544 |
+| 14 | MEYN ZUN | 59 | 99,40 | -40,6 % | H.LEBOUC | 22/188/1034/269 |
+| 13 | LA ZARRA | 62 | 104,80 | -40,8 % | J.CLAUDIC | 40/741/2428/3852 |
 
 ### 7. PRIX DE LA VALLEE DE L'YVETTE
 
