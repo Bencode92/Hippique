@@ -121,24 +121,24 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE LA VALLEE DE L'YVETTE
 
-*15h28 · plat · 2000 m · 14 partants · cotes à T−21:57*
+*15h28 · plat · 2000 m · 14 partants · cotes à T−17:18*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 11 | ENORA SENORA | 6,4 | 8,2 | 5,62 | **+13,9 %** | E.HARDOUIN | 30/142/63/95 |
-| 3 | BERLINETTA | 6,5 | 3,5 | 6,92 | -6,0 % | M.VELON | 27/5/1713/1938 |
-| 4 | ASTON JUAN | 7 | 24 | 8,19 | -14,5 % | A.HAMELIN | 23/259/1111/429 |
-| 8 | AMOR A MANI | 9,3 | 12 | 9,22 | **+0,9 %** | L.POGGIONOVO | 75/48/65/62 |
-| 6 | PALAZZO | 9,4 | 6,1 | 10,17 | -7,6 % | J.CLAUDIC | 40/142/10/1852 |
-| 5 | HAPPY CHRISNAT | 11 | – | 13,90 | -20,9 % | A.MOLINS | 28/86/703/133 |
-| 12 | BECH RIVER | 12 | 8,2 | 16,50 | -27,3 % | A.LE LAY MARTIN | 82/238/7/605 |
-| 1 | ANIELSKA | 14 | 24 | 16,18 | -13,5 % | C.LECOEUVRE | 13/153/208/597 |
-| 2 | MEARAS STYLE | 17 | 12 | 24,87 | -31,7 % | J.LACROIX | 97/144/379/– |
-| 7 | ANNA MANDARA | 20 | – | 24,48 | -18,3 % | J.GUILLOCHON | 61/420/930/971 |
-| 13 | L'ENNEMI | 22 | 8,2 | 29,33 | -25,0 % | D.SANTIAGO | 19/206/10/4549 |
-| 9 | MAVERICK PREMIER | 33 | – | 49,62 | -33,5 % | C.GROSBOIS | 26/379/2204/1302 |
-| 14 | SOHO VICKY | 36 | – | 49,78 | -27,7 % | C.BELMONT | 146/400/303/242 |
-| 10 | PROXIMA CENTAURI | 45 | 12 | 61,01 | -26,2 % | X.BERGERON | 71/86/120/133 |
+| 3 | BERLINETTA | 5,8 | 3,5 | 6,62 | -12,4 % | M.VELON | 27/5/1713/1938 |
+| 11 | ENORA SENORA | 6,9 | 8,2 | 7,25 | -4,9 % | E.HARDOUIN | 30/142/63/95 |
+| 4 | ASTON JUAN | 7,5 | 24 | 9,03 | -16,9 % | A.HAMELIN | 23/259/1111/429 |
+| 6 | PALAZZO | 10 | 6,1 | 11,13 | -10,1 % | J.CLAUDIC | 40/142/10/1852 |
+| 8 | AMOR A MANI | 10 | 12 | 10,20 | -2,0 % | L.POGGIONOVO | 75/48/65/62 |
+| 12 | BECH RIVER | 11 | 8,2 | 15,16 | -27,4 % | A.LE LAY MARTIN | 82/238/7/605 |
+| 1 | ANIELSKA | 12 | 24 | 13,76 | -12,8 % | C.LECOEUVRE | 13/153/208/597 |
+| 5 | HAPPY CHRISNAT | 12 | – | 15,67 | -23,4 % | A.MOLINS | 28/86/703/133 |
+| 7 | ANNA MANDARA | 16 | – | 19,24 | -16,8 % | J.GUILLOCHON | 61/420/930/971 |
+| 2 | MEARAS STYLE | 18 | 12 | 27,07 | -33,5 % | J.LACROIX | 97/144/379/– |
+| 13 | L'ENNEMI | 23 | 8,2 | 31,41 | -26,8 % | D.SANTIAGO | 19/206/10/4549 |
+| 10 | PROXIMA CENTAURI | 31 | 12 | 41,04 | -24,5 % | X.BERGERON | 71/86/120/133 |
+| 14 | SOHO VICKY | 31 | – | 42,83 | -27,6 % | C.BELMONT | 146/400/303/242 |
+| 9 | MAVERICK PREMIER | 33 | – | 50,47 | -34,6 % | C.GROSBOIS | 26/379/2204/1302 |
 
 ### 8. PRIX DU PLATEAU DE SACLAY
 

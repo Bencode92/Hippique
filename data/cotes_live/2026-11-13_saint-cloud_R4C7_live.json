@@ -4,80 +4,80 @@
   "reunion": 4,
   "heure_depart": 1794580080000,
   "distance": 2000,
-  "scraped_at": "2026-11-13T15:06:02.597050+01:00",
-  "minutes_avant_depart": 22,
+  "scraped_at": "2026-11-13T15:10:41.834021+01:00",
+  "minutes_avant_depart": 17,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ANIELSKA",
-      "cote_live": 14.0,
+      "cote_live": 12.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578743000
+      "timestamp_cote": 1794579029000
     },
     {
       "numPmu": 2,
       "nom": "MEARAS STYLE",
-      "cote_live": 17.0,
+      "cote_live": 18.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578743000
+      "timestamp_cote": 1794579029000
     },
     {
       "numPmu": 3,
       "nom": "BERLINETTA",
-      "cote_live": 6.5,
+      "cote_live": 5.8,
       "cote_reference": 6.3,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1794578743000
+      "favoris": true,
+      "timestamp_cote": 1794579029000
     },
     {
       "numPmu": 4,
       "nom": "ASTON JUAN",
-      "cote_live": 7.0,
+      "cote_live": 7.5,
       "cote_reference": 6.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578743000
+      "timestamp_cote": 1794579029000
     },
     {
       "numPmu": 5,
       "nom": "HAPPY CHRISNAT",
-      "cote_live": 11.0,
+      "cote_live": 12.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578743000
+      "timestamp_cote": 1794579029000
     },
     {
       "numPmu": 6,
       "nom": "PALAZZO",
-      "cote_live": 9.4,
+      "cote_live": 10.0,
       "cote_reference": 8.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578743000
+      "timestamp_cote": 1794579029000
     },
     {
       "numPmu": 7,
       "nom": "ANNA MANDARA",
-      "cote_live": 20.0,
+      "cote_live": 16.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578743000
+      "timestamp_cote": 1794579029000
     },
     {
       "numPmu": 8,
       "nom": "AMOR A MANI",
-      "cote_live": 9.3,
+      "cote_live": 10.0,
       "cote_reference": 8.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578743000
+      "timestamp_cote": 1794579029000
     },
     {
       "numPmu": 9,
@@ -86,52 +86,52 @@
       "cote_reference": 29.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578743000
+      "timestamp_cote": 1794579029000
     },
     {
       "numPmu": 10,
       "nom": "PROXIMA CENTAURI",
-      "cote_live": 45.0,
+      "cote_live": 31.0,
       "cote_reference": 41.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578743000
+      "timestamp_cote": 1794579029000
     },
     {
       "numPmu": 11,
       "nom": "ENORA SENORA",
-      "cote_live": 6.4,
+      "cote_live": 6.9,
       "cote_reference": 8.5,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1794578743000
+      "favoris": false,
+      "timestamp_cote": 1794579029000
     },
     {
       "numPmu": 12,
       "nom": "BECH RIVER",
-      "cote_live": 12.0,
+      "cote_live": 11.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578743000
+      "timestamp_cote": 1794579029000
     },
     {
       "numPmu": 13,
       "nom": "L'ENNEMI",
-      "cote_live": 22.0,
+      "cote_live": 23.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578743000
+      "timestamp_cote": 1794579029000
     },
     {
       "numPmu": 14,
       "nom": "SOHO VICKY",
-      "cote_live": 36.0,
+      "cote_live": 31.0,
       "cote_reference": 41.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578743000
+      "timestamp_cote": 1794579029000
     }
   ],
   "hippodrome": "SAINT-CLOUD",
@@ -194,6 +194,26 @@
         "12": 12.0,
         "13": 22.0,
         "14": 36.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-13T15:10:41.834021+01:00",
+      "minutes_avant_depart": 17.307439316666667,
+      "cotes": {
+        "1": 12.0,
+        "2": 18.0,
+        "3": 5.8,
+        "4": 7.5,
+        "5": 12.0,
+        "6": 10.0,
+        "7": 16.0,
+        "8": 10.0,
+        "9": 33.0,
+        "10": 31.0,
+        "11": 6.9,
+        "12": 11.0,
+        "13": 23.0,
+        "14": 31.0
       }
     }
   ]
