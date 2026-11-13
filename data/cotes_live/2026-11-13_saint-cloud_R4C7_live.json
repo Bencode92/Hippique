@@ -4,26 +4,26 @@
   "reunion": 4,
   "heure_depart": 1794580080000,
   "distance": 2000,
-  "scraped_at": "2026-11-13T15:02:01.827416+01:00",
-  "minutes_avant_depart": 26,
+  "scraped_at": "2026-11-13T15:06:02.597050+01:00",
+  "minutes_avant_depart": 22,
   "participants": [
     {
       "numPmu": 1,
       "nom": "ANIELSKA",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578501000
+      "timestamp_cote": 1794578743000
     },
     {
       "numPmu": 2,
       "nom": "MEARAS STYLE",
-      "cote_live": 15.0,
+      "cote_live": 17.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578501000
+      "timestamp_cote": 1794578743000
     },
     {
       "numPmu": 3,
@@ -31,35 +31,35 @@
       "cote_live": 6.5,
       "cote_reference": 6.3,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1794578501000
+      "favoris": false,
+      "timestamp_cote": 1794578743000
     },
     {
       "numPmu": 4,
       "nom": "ASTON JUAN",
-      "cote_live": 6.7,
+      "cote_live": 7.0,
       "cote_reference": 6.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578501000
+      "timestamp_cote": 1794578743000
     },
     {
       "numPmu": 5,
       "nom": "HAPPY CHRISNAT",
-      "cote_live": 13.0,
+      "cote_live": 11.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578501000
+      "timestamp_cote": 1794578743000
     },
     {
       "numPmu": 6,
       "nom": "PALAZZO",
-      "cote_live": 8.5,
+      "cote_live": 9.4,
       "cote_reference": 8.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578501000
+      "timestamp_cote": 1794578743000
     },
     {
       "numPmu": 7,
@@ -68,43 +68,43 @@
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578501000
+      "timestamp_cote": 1794578743000
     },
     {
       "numPmu": 8,
       "nom": "AMOR A MANI",
-      "cote_live": 8.2,
+      "cote_live": 9.3,
       "cote_reference": 8.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578501000
+      "timestamp_cote": 1794578743000
     },
     {
       "numPmu": 9,
       "nom": "MAVERICK PREMIER",
-      "cote_live": 28.0,
+      "cote_live": 33.0,
       "cote_reference": 29.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578501000
+      "timestamp_cote": 1794578743000
     },
     {
       "numPmu": 10,
       "nom": "PROXIMA CENTAURI",
-      "cote_live": 43.0,
+      "cote_live": 45.0,
       "cote_reference": 41.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578501000
+      "timestamp_cote": 1794578743000
     },
     {
       "numPmu": 11,
       "nom": "ENORA SENORA",
-      "cote_live": 8.2,
+      "cote_live": 6.4,
       "cote_reference": 8.5,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1794578501000
+      "favoris": true,
+      "timestamp_cote": 1794578743000
     },
     {
       "numPmu": 12,
@@ -113,25 +113,25 @@
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578501000
+      "timestamp_cote": 1794578743000
     },
     {
       "numPmu": 13,
       "nom": "L'ENNEMI",
-      "cote_live": 21.0,
+      "cote_live": 22.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578501000
+      "timestamp_cote": 1794578743000
     },
     {
       "numPmu": 14,
       "nom": "SOHO VICKY",
-      "cote_live": 41.0,
+      "cote_live": 36.0,
       "cote_reference": 41.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794578501000
+      "timestamp_cote": 1794578743000
     }
   ],
   "hippodrome": "SAINT-CLOUD",
@@ -174,6 +174,26 @@
         "12": 12.0,
         "13": 21.0,
         "14": 41.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-13T15:06:02.597050+01:00",
+      "minutes_avant_depart": 21.959749166666665,
+      "cotes": {
+        "1": 14.0,
+        "2": 17.0,
+        "3": 6.5,
+        "4": 7.0,
+        "5": 11.0,
+        "6": 9.4,
+        "7": 20.0,
+        "8": 9.3,
+        "9": 33.0,
+        "10": 45.0,
+        "11": 6.4,
+        "12": 12.0,
+        "13": 22.0,
+        "14": 36.0
       }
     }
   ]
