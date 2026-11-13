@@ -1,8 +1,10 @@
 # SAINT-CLOUD — 13/11/2026
 
-9 courses.
+9 courses (4 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+**Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
+La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
+Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classements ci-dessus.
 
 ---
 
@@ -57,44 +59,44 @@
 
 *13h43 · plat · 2500 m · 14 partants · cotes de l'extraction*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | LE SAGE | – | J.MOUTARD | 42/117/25/757 |
-| 2 | MOZART DES BRIERES | – | C.BILLARDELLO | 114/5/1236/866 |
-| 3 | CANOUANN | – | C.LECOEUVRE | 13/163/–/5556 |
-| 4 | ELMA DE CHAMBIERS | – | C.GROSBOIS | 26/102/2010/129 |
-| 5 | ACOTANGO | – | L.GALLO | 47/21/192/21 |
-| 6 | LIVIN | – | L.PLOMMEE | 36/140/3793/3149 |
-| 7 | GOLDEN BLUSH | – | M.GRANDIN | 3/5/39/52 |
-| 8 | SALLETO | – | T.TRULLIER | 24/108/–/666 |
-| 9 | POLYAN | – | A.MADAMET | 12/210/79/499 |
-| 10 | MONDIALEO | – | T.PICCONE | 9/108/2119/3067 |
-| 11 | MARCHEMALO | – | M.PIEN | 155/21/308/454 |
-| 12 | KOLUMBAN | – | E.HARDOUIN | 30/166/3212/1515 |
-| 13 | EL CANEY | – | L.POGGIONOVO | 75/48/3394/62 |
-| 14 | ZAMASIYA | – | M.MARQUETTE | 51/197/1662/2523 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 1 | LE SAGE | 1,5 | 1,62 | -7,6 % | J.MOUTARD | 42/117/25/757 |
+| 7 | GOLDEN BLUSH | 5,9 | 6,96 | -15,3 % | M.GRANDIN | 3/5/39/52 |
+| 4 | ELMA DE CHAMBIERS | 7,9 | 9,76 | -19,1 % | C.GROSBOIS | 26/102/2010/129 |
+| 3 | CANOUANN | 23 | 29,77 | -22,7 % | C.LECOEUVRE | 13/163/–/5556 |
+| 5 | ACOTANGO | 23 | 29,77 | -22,7 % | L.GALLO | 47/21/192/21 |
+| 9 | POLYAN | 23 | 34,09 | -32,5 % | A.MADAMET | 12/210/79/499 |
+| 10 | MONDIALEO | 23 | 36,62 | -37,2 % | T.PICCONE | 9/108/2119/3067 |
+| 13 | EL CANEY | 23 | 34,09 | -32,5 % | L.POGGIONOVO | 75/48/3394/62 |
+| 2 | MOZART DES BRIERES | – | – |  | C.BILLARDELLO | 114/5/1236/866 |
+| 6 | LIVIN | – | – |  | L.PLOMMEE | 36/140/3793/3149 |
+| 8 | SALLETO | – | – |  | T.TRULLIER | 24/108/–/666 |
+| 11 | MARCHEMALO | – | – |  | M.PIEN | 155/21/308/454 |
+| 12 | KOLUMBAN | – | – |  | E.HARDOUIN | 30/166/3212/1515 |
+| 14 | ZAMASIYA | – | – |  | M.MARQUETTE | 51/197/1662/2523 |
 
 ### 5. PRIX DE LA GOUBINIERE
 
 *14h18 · plat · 2400 m · 15 partants · cotes de l'extraction*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | AMILA | – | D.VIRGILIO | 282/36/276/1324 |
-| 2 | VICTORIA SECRET | – | L.ROUSSEL | 18/81/261/434 |
-| 3 | EDEN ROC | – | H.BOUTIN | 17/424/3233/986 |
-| 4 | SPRING LAUREL | – | J.MOUTARD | 42/82/114/176 |
-| 5 | MAJARA | – | L.BRECHET | 58/67/954/1965 |
-| 6 | AUTOROUTE | – | T.PICCONE | 9/6/8/708 |
-| 7 | ARKENSTONE | – | F.VALLE SKAR | 32/67/37/1318 |
-| 8 | ABRONZAL | – | L.GALLO | 47/21/103/229 |
-| 9 | STIR CRAZY | – | M.GRANDIN | 3/177/213/1783 |
-| 10 | NELSONN | – | C.POIRIER | 154/76/204/2484 |
-| 11 | FUN ON THE BAY | – | R.MANGIONE | 86/432/1139/1021 |
-| 12 | GREY WOLF | – | A.MADAMET | 12/186/515/154 |
-| 13 | SAYULITA | – | D.SANTIAGO | 19/73/3290/168 |
-| 14 | CHIPRANA | – | T.TRULLIER | 24/108/130/117 |
-| 15 | BROMUS | – | E.HARDOUIN | 30/128/440/3066 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 13 | SAYULITA | 3,7 | 4,37 | -15,4 % | D.SANTIAGO | 19/73/3290/168 |
+| 8 | ABRONZAL | 4,6 | 4,61 | -0,3 % | L.GALLO | 47/21/103/229 |
+| 15 | BROMUS | 4,6 | 4,98 | -7,6 % | E.HARDOUIN | 30/128/440/3066 |
+| 10 | NELSONN | 6,1 | 7,27 | -16,1 % | C.POIRIER | 154/76/204/2484 |
+| 12 | GREY WOLF | 6,1 | 6,82 | -10,6 % | A.MADAMET | 12/186/515/154 |
+| 5 | MAJARA | 18 | 24,14 | -25,4 % | L.BRECHET | 58/67/954/1965 |
+| 7 | ARKENSTONE | 18 | 24,14 | -25,4 % | F.VALLE SKAR | 32/67/37/1318 |
+| 1 | AMILA | – | – |  | D.VIRGILIO | 282/36/276/1324 |
+| 2 | VICTORIA SECRET | – | – |  | L.ROUSSEL | 18/81/261/434 |
+| 3 | EDEN ROC | – | – |  | H.BOUTIN | 17/424/3233/986 |
+| 4 | SPRING LAUREL | – | – |  | J.MOUTARD | 42/82/114/176 |
+| 6 | AUTOROUTE | – | – |  | T.PICCONE | 9/6/8/708 |
+| 9 | STIR CRAZY | – | – |  | M.GRANDIN | 3/177/213/1783 |
+| 11 | FUN ON THE BAY | – | – |  | R.MANGIONE | 86/432/1139/1021 |
+| 14 | CHIPRANA | – | – |  | T.TRULLIER | 24/108/130/117 |
 
 ### 6. PRIX DU HARAS D'OUILLY
 
@@ -121,42 +123,42 @@
 
 *15h28 · plat · 2000 m · 14 partants · cotes de l'extraction*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | ANIELSKA | – | C.LECOEUVRE | 13/153/208/597 |
-| 2 | MEARAS STYLE | – | J.LACROIX | 97/144/379/– |
-| 3 | BERLINETTA | – | M.VELON | 27/5/1713/1938 |
-| 4 | ASTON JUAN | – | A.HAMELIN | 23/259/1111/429 |
-| 5 | HAPPY CHRISNAT | – | A.MOLINS | 28/86/703/133 |
-| 6 | PALAZZO | – | J.CLAUDIC | 40/142/10/1852 |
-| 7 | ANNA MANDARA | – | J.GUILLOCHON | 61/420/930/971 |
-| 8 | AMOR A MANI | – | L.POGGIONOVO | 75/48/65/62 |
-| 9 | MAVERICK PREMIER | – | C.GROSBOIS | 26/379/2204/1302 |
-| 10 | PROXIMA CENTAURI | – | X.BERGERON | 71/86/120/133 |
-| 11 | ENORA SENORA | – | E.HARDOUIN | 30/142/63/95 |
-| 12 | BECH RIVER | – | A.LE LAY MARTIN | 82/238/7/605 |
-| 13 | L'ENNEMI | – | D.SANTIAGO | 19/206/10/4549 |
-| 14 | SOHO VICKY | – | C.BELMONT | 146/400/303/242 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 3 | BERLINETTA | 3,5 | 3,77 | -7,3 % | M.VELON | 27/5/1713/1938 |
+| 6 | PALAZZO | 6,1 | 6,22 | -2,0 % | J.CLAUDIC | 40/142/10/1852 |
+| 11 | ENORA SENORA | 8,2 | 8,71 | -5,9 % | E.HARDOUIN | 30/142/63/95 |
+| 12 | BECH RIVER | 8,2 | 10,55 | -22,3 % | A.LE LAY MARTIN | 82/238/7/605 |
+| 13 | L'ENNEMI | 8,2 | 9,31 | -11,9 % | D.SANTIAGO | 19/206/10/4549 |
+| 2 | MEARAS STYLE | 12 | 16,56 | -27,5 % | J.LACROIX | 97/144/379/– |
+| 8 | AMOR A MANI | 12 | 12,41 | -3,3 % | L.POGGIONOVO | 75/48/65/62 |
+| 10 | PROXIMA CENTAURI | 12 | 13,56 | -11,5 % | X.BERGERON | 71/86/120/133 |
+| 1 | ANIELSKA | 24 | 30,28 | -20,7 % | C.LECOEUVRE | 13/153/208/597 |
+| 4 | ASTON JUAN | 24 | 34,67 | -30,8 % | A.HAMELIN | 23/259/1111/429 |
+| 5 | HAPPY CHRISNAT | – | – |  | A.MOLINS | 28/86/703/133 |
+| 7 | ANNA MANDARA | – | – |  | J.GUILLOCHON | 61/420/930/971 |
+| 9 | MAVERICK PREMIER | – | – |  | C.GROSBOIS | 26/379/2204/1302 |
+| 14 | SOHO VICKY | – | – |  | C.BELMONT | 146/400/303/242 |
 
 ### 8. PRIX DU PLATEAU DE SACLAY
 
 *16h03 · plat · 2000 m · 13 partants · cotes de l'extraction*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | HAPPY HUNTER | – | A.BARON | 38/219/327/2146 |
-| 2 | SPRING LILY | – | J.MOUTARD | 42/82/114/176 |
-| 3 | QUEENFLEUR | – | L.POGGIONOVO | 75/48/65/1118 |
-| 4 | PANZER | – | F.VERON | 25/265/2757/1615 |
-| 5 | ZARAKIVA | – | A.DAIFI | 209/82/557/1618 |
-| 6 | THE PRESIDENT | – | H.LEBOUC | 22/125/225/925 |
-| 7 | CREEKATTEMPS | – | C.GROSBOIS | 26/217/703/1357 |
-| 8 | ELOISE | – | D.PROVOST | 33/41/2817/4310 |
-| 9 | SOLDIERS CHORUS | – | E.VERHESTRAETEN | 50/13/67/901 |
-| 10 | JOYCE GALESTE | – | E.HARDOUIN | 30/58/157/181 |
-| 12 | CAREGIVER | – | R.MANGIONE | 86/55/962/2499 |
-| 13 | HAKASTE | – | M.GRANDIN | 3/150/13/5 |
-| 14 | COEUR DE ROUME | – | A.MADAMET | 12/307/1410/2307 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 8 | ELOISE | 1,1 | 1,45 | -23,9 % | D.PROVOST | 33/41/2817/4310 |
+| 3 | QUEENFLEUR | 5,9 | 6,35 | -7,1 % | L.POGGIONOVO | 75/48/65/1118 |
+| 14 | COEUR DE ROUME | 14 | 21,10 | -33,7 % | A.MADAMET | 12/307/1410/2307 |
+| 10 | JOYCE GALESTE | 29 | 45,61 | -36,4 % | E.HARDOUIN | 30/58/157/181 |
+| 1 | HAPPY HUNTER | 89 | 120,98 | -26,4 % | A.BARON | 38/219/327/2146 |
+| 6 | THE PRESIDENT | 89 | 138,98 | -36,0 % | H.LEBOUC | 22/125/225/925 |
+| 2 | SPRING LILY | – | – |  | J.MOUTARD | 42/82/114/176 |
+| 4 | PANZER | – | – |  | F.VERON | 25/265/2757/1615 |
+| 5 | ZARAKIVA | – | – |  | A.DAIFI | 209/82/557/1618 |
+| 7 | CREEKATTEMPS | – | – |  | C.GROSBOIS | 26/217/703/1357 |
+| 9 | SOLDIERS CHORUS | – | – |  | E.VERHESTRAETEN | 50/13/67/901 |
+| 12 | CAREGIVER | – | – |  | R.MANGIONE | 86/55/962/2499 |
+| 13 | HAKASTE | – | – |  | M.GRANDIN | 3/150/13/5 |
 
 ### 9. PRIX DE LA VALLEE DE CHEVREUSE
 

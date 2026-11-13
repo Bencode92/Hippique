@@ -1,8 +1,8 @@
 # CASABLANCA — 13/11/2026
 
-4 courses.
+4 courses (1 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -43,16 +43,16 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | SEABELLE FAL | – | LAKJAL OUTHMANE | –/–/–/– |
-| 2 | SHAKPOET FAL | – | ARROMALI MOHAMMED | –/–/–/– |
-| 3 | CITINCID FAL | – | ARROMALI AYOUB | –/–/–/– |
-| 4 | ENEILLEN FAL | – | AMENAI RACHID | –/–/–/35 |
+| 10 | LASTRAGLAN FAL | 1,9 | ABOUHAYANE SOUFIANE | –/–/–/– |
+| 3 | CITINCID FAL | 5,7 | ARROMALI AYOUB | –/–/–/– |
+| 4 | ENEILLEN FAL | 5,7 | AMENAI RACHID | –/–/–/35 |
+| 1 | SEABELLE FAL | 11 | LAKJAL OUTHMANE | –/–/–/– |
+| 2 | SHAKPOET FAL | 11 | ARROMALI MOHAMMED | –/–/–/– |
+| 6 | FAKHR ROCH | 11 | FADDOUL KACEM | –/–/–/– |
 | 5 | HERMIBRA | – | EL KANDOUSSI ABDELKADER | –/–/–/– |
-| 6 | FAKHR ROCH | – | FADDOUL KACEM | –/–/–/– |
 | 7 | SANID AL SSAKAB | – | MOUGHAT AMINE | –/–/–/– |
 | 8 | FLAMI GRINE | – | LAKJAL OMAR | –/–/–/– |
 | 9 | BYBLOS | – | TAFTAFI ACHRAF | –/–/–/– |
-| 10 | LASTRAGLAN FAL | – | ABOUHAYANE SOUFIANE | –/–/–/– |
 | 11 | DEPOR QUEEN GRINE | – | SAMIR HAMZA | –/–/–/– |
 
 ### 4. PRIX ARIKA

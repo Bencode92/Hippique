@@ -1,8 +1,8 @@
 # LA CEPIERE — 13/11/2026
 
-8 courses.
+8 courses (3 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
@@ -36,13 +36,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 7 | MAKILA OIHANEKO | 1,1 | M. CRIADO |
 | 1 | MUSTANG DE LAPENCH | – | J.M. LOURTET |
 | 2 | MONAGHAN KID | – | M.X. CHARLOT |
 | 3 | MORICE DE ZIETTE | – | V. CABOS |
 | 4 | MAYFLOWER | – | Mme LANA HENRY |
 | 5 | MERCURE DE CRENNES | – | P. REPICHET |
 | 6 | MATRIX | – | M. LACOMA |
-| 7 | MAKILA OIHANEKO | – | M. CRIADO |
 | 8 | MAJESTIC DU KLAU | – | K. BUSNEL |
 | 9 | MICKEY DE VIVOIN | – | P. GESRET |
 | 10 | MAGNUS DE LUCAS | – | J. CHAVATTE |
@@ -84,6 +84,7 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 10 | LITTERATURE | 1,1 | D. LAISIS |
 | 1 | LA KIFFANCE | – | V. CABOS |
 | 2 | LAMAGISTERE | – | K. BUSNEL |
 | 3 | LANA DE BEAUMEE | – | M. LEGROS |
@@ -93,7 +94,6 @@
 | 7 | LUNA SAN LEANDRO | – | M. GRASSET |
 | 8 | LIBERTY DU RIF | – | M. DAOUGABEL |
 | 9 | LADY DE GINAI | – | Mme LANA HENRY |
-| 10 | LITTERATURE | – | D. LAISIS |
 | 11 | LIBERTY NOIRE | – | M. BARRE |
 | 12 | LIKE A DESTINY | – | D. CRESPEL |
 
@@ -156,13 +156,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 7 | NAOMIE DUEM | 1,1 | P. GESRET |
 | 1 | NABAB DES PLEIGNES | – | N.R. BROSSARD |
 | 2 | NACRE DU VALLON | – | F. MARTY |
 | 3 | NOCTAMBULE SEVEN | – | P. GERAY |
 | 4 | NARNIA PAN | – | AXEL LAIGRON |
 | 5 | NABUCCO JIJI | – | D. LAISIS |
 | 6 | NACRE GALAXY | – | TH. PRUDHON |
-| 7 | NAOMIE DUEM | – | P. GESRET |
 | 8 | NEVIDENCE ROC | – | ET. CLOZIER |
 | 9 | NIKITA DE LAPENCHE | – | J. ASSELIE |
 | 10 | NINIA DOUNA | – | G. CRESPEL |

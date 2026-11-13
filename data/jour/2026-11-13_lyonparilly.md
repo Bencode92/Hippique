@@ -1,8 +1,8 @@
 # LYON-PARILLY — 13/11/2026
 
-8 courses.
+8 courses (1 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
@@ -135,22 +135,22 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 8 | KARAOKE | 2 | MARTIN CORMY |
+| 12 | KERRO DE HOUELLE | 3,1 | A. COLLETTE |
+| 14 | KEROZEN | 11 | MICKAEL CORMY |
+| 16 | KATHARINA DE MAI | 11 | A. GENDROT |
+| 3 | KING OF THE WORLD | 22 | N. BAZIRE |
+| 7 | KATIEU DE COUZAN | 22 | D. BEKAERT |
+| 15 | KASHMIR DU GERS | 22 | TH. BRIAND |
 | 1 | KATY DU CHERISAY | – | G. TUGEND |
 | 2 | KING DE CHANLECY | – | F.J. PELTIER |
-| 3 | KING OF THE WORLD | – | N. BAZIRE |
 | 4 | KOOPER DU CHOQUEL | – | A. TINTILLIER |
 | 5 | KARLITO SCOTT | – | O. MERLE |
 | 6 | KAISER DE CHANLECY | – | L. LAMAZIERE |
-| 7 | KATIEU DE COUZAN | – | D. BEKAERT |
-| 8 | KARAOKE | – | MARTIN CORMY |
 | 9 | KANTARELLINA CHIC | – | B. RUET |
 | 10 | KADOR DU MONT | – | K. DEVIENNE |
 | 11 | KHERMES D'URZY | – | H. SOREL |
-| 12 | KERRO DE HOUELLE | – | A. COLLETTE |
 | 13 | KENJY DE LA VALLEE | – | N. CORMY |
-| 14 | KEROZEN | – | MICKAEL CORMY |
-| 15 | KASHMIR DU GERS | – | TH. BRIAND |
-| 16 | KATHARINA DE MAI | – | A. GENDROT |
 
 ### 8. PRIX DE PROVENCE
 
