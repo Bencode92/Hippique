@@ -1,6 +1,6 @@
 # PORNICHET — 14/11/2026
 
-8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 6 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -114,21 +114,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX LE GUALES DE MEZAUBRAN
 
-*20h05 · plat · 1700 m · 11 partants · cotes de l'extraction*
+*20h05 · plat · 1700 m · 11 partants · cotes à T−29:26*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 8 | VENETIAN BELLE | 3,5 | 3,85 | -9,1 % | E.VERHESTRAETEN | 50/13/–/– |
-| 12 | BREIZH STORY | 4,5 | 5,09 | -11,5 % | H.LEBOUC | 22/47/1098/2784 |
-| 9 | STELLA BEAUTY | 6,2 | 7,00 | -11,5 % | G.MEURY | 73/25/29/818 |
-| 3 | MELEKS | 8,3 | 10,95 | -24,2 % | M.PROTTI | 29/6/–/5266 |
-| 10 | TALIA FAL | 11 | 14,27 | -22,9 % | L.ROUSSEL | 18/47/3/35 |
-| 7 | ACQUIRED | 12 | 14,47 | -17,1 % | T.BREBION | 84/45/–/– |
-| 4 | VIKTOR RAPIDE | 17 | 25,56 | -33,5 % | J.GUILLOCHON | 61/42/–/1150 |
-| 1 | LE TRIOMPHANT | 19 | 27,11 | -29,9 % | J.CLAUDIC | 40/158/833/2440 |
-| 2 | VOCIAL FAL | 24 | 33,88 | -29,2 % | C.GROSBOIS | 26/45/31/35 |
-| 6 | YES OR NO | 34 | 45,77 | -25,7 % | M.FAVRIAUX | 54/42/675/1730 |
-| 5 | SACRED SONG | 87 | 155,99 | -44,2 % | A.SUBIAS | 102/116/298/745 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 12 | BREIZH STORY | 1,1 | 4,5 | 1,38 | -20,0 % | H.LEBOUC | 22/47/1098/2784 |
+| 8 | VENETIAN BELLE | 24 | 3,5 | 31,13 | -22,9 % | E.VERHESTRAETEN | 50/13/–/– |
+| 9 | STELLA BEAUTY | 38 | 6,2 | 52,43 | -27,5 % | G.MEURY | 73/25/29/818 |
+| 3 | MELEKS | 42 | 8,3 | 63,01 | -33,3 % | M.PROTTI | 29/6/–/5266 |
+| 10 | TALIA FAL | 66 | 11 | 95,77 | -31,1 % | L.ROUSSEL | 18/47/3/35 |
+| 4 | VIKTOR RAPIDE | 69 | 17 | 108,01 | -36,1 % | J.GUILLOCHON | 61/42/–/1150 |
+| 7 | ACQUIRED | 81 | 12 | 118,86 | -31,9 % | T.BREBION | 84/45/–/– |
+| 6 | YES OR NO | 88 | 34 | 117,79 | -25,3 % | M.FAVRIAUX | 54/42/675/1730 |
+| 1 | LE TRIOMPHANT | 110 | 19 | 162,84 | -32,5 % | J.CLAUDIC | 40/158/833/2440 |
+| 2 | VOCIAL FAL | 118 | 24 | 174,80 | -32,5 % | C.GROSBOIS | 26/45/31/35 |
+| 5 | SACRED SONG | 266 | 87 | 431,57 | -38,4 % | A.SUBIAS | 102/116/298/745 |
 
 ### 7. PRIX MOULIN D'ARGENT
 
