@@ -2,136 +2,136 @@
   "course": "PRIX SAINT-NAZAIRE AGGLO",
   "numero": 2,
   "reunion": 6,
-  "heure_depart": 1794675120000,
+  "heure_depart": 1794675420000,
   "distance": 2100,
-  "scraped_at": "2026-11-14T17:34:52.638770+01:00",
-  "minutes_avant_depart": 17,
+  "scraped_at": "2026-11-14T17:43:32.632528+01:00",
+  "minutes_avant_depart": 13,
   "participants": [
     {
       "numPmu": 1,
       "nom": "SPRINGBOKS",
-      "cote_live": 28.0,
+      "cote_live": 21.0,
       "cote_reference": 33.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794674080000
+      "timestamp_cote": 1794674593000
     },
     {
       "numPmu": 2,
       "nom": "GABYLOU",
-      "cote_live": 62.0,
+      "cote_live": 53.0,
       "cote_reference": 56.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794674080000
+      "timestamp_cote": 1794674593000
     },
     {
       "numPmu": 3,
       "nom": "RIGEL",
-      "cote_live": 4.0,
+      "cote_live": 4.2,
       "cote_reference": 6.3,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794674080000
+      "timestamp_cote": 1794674593000
     },
     {
       "numPmu": 4,
       "nom": "DAHARIZ",
-      "cote_live": 29.0,
+      "cote_live": 19.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794674080000
+      "timestamp_cote": 1794674593000
     },
     {
       "numPmu": 5,
       "nom": "HARMATTAN",
-      "cote_live": 6.3,
+      "cote_live": 7.4,
       "cote_reference": 7.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794674080000
+      "timestamp_cote": 1794674593000
     },
     {
       "numPmu": 6,
       "nom": "DIONYSOS FORLONGE",
-      "cote_live": 60.0,
+      "cote_live": 39.0,
       "cote_reference": 50.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794674080000
+      "timestamp_cote": 1794674593000
     },
     {
       "numPmu": 7,
       "nom": "TREZY BOUNTY",
-      "cote_live": 20.0,
+      "cote_live": 15.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794674080000
+      "timestamp_cote": 1794674593000
     },
     {
       "numPmu": 9,
       "nom": "DARIYANGEL",
-      "cote_live": 7.6,
+      "cote_live": 8.2,
       "cote_reference": 6.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794674080000
+      "timestamp_cote": 1794674593000
     },
     {
       "numPmu": 10,
       "nom": "GOLDEN RIVER",
-      "cote_live": 30.0,
+      "cote_live": 23.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794674080000
+      "timestamp_cote": 1794674593000
     },
     {
       "numPmu": 11,
       "nom": "SEDITION",
-      "cote_live": 24.0,
+      "cote_live": 18.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794674080000
+      "timestamp_cote": 1794674593000
     },
     {
       "numPmu": 12,
       "nom": "JUREER",
-      "cote_live": 13.0,
+      "cote_live": 17.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794674080000
+      "timestamp_cote": 1794674593000
     },
     {
       "numPmu": 13,
       "nom": "MURANO",
-      "cote_live": 6.6,
+      "cote_live": 8.7,
       "cote_reference": 4.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794674080000
+      "timestamp_cote": 1794674593000
     },
     {
       "numPmu": 14,
       "nom": "DELTA SPIRIT",
-      "cote_live": 62.0,
+      "cote_live": 72.0,
       "cote_reference": 77.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794674080000
+      "timestamp_cote": 1794674593000
     },
     {
       "numPmu": 15,
       "nom": "BAILEYS ECLAIR",
-      "cote_live": 7.4,
+      "cote_live": 6.4,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794674080000
+      "timestamp_cote": 1794674593000
     }
   ],
   "hippodrome": "PORNICHET",
@@ -214,6 +214,26 @@
         "13": 6.6,
         "14": 62.0,
         "15": 7.4
+      }
+    },
+    {
+      "scraped_at": "2026-11-14T17:43:32.632528+01:00",
+      "minutes_avant_depart": 13.46130055,
+      "cotes": {
+        "1": 21.0,
+        "2": 53.0,
+        "3": 4.2,
+        "4": 19.0,
+        "5": 7.4,
+        "6": 39.0,
+        "7": 15.0,
+        "9": 8.2,
+        "10": 23.0,
+        "11": 18.0,
+        "12": 17.0,
+        "13": 8.7,
+        "14": 72.0,
+        "15": 6.4
       }
     }
   ]
