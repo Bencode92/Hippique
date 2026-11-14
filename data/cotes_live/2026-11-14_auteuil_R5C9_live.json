@@ -4,8 +4,8 @@
   "reunion": 5,
   "heure_depart": 1794670920000,
   "distance": 4400,
-  "scraped_at": "2026-11-14T16:16:54.987240+01:00",
-  "minutes_avant_depart": 25,
+  "scraped_at": "2026-11-14T16:20:54.915972+01:00",
+  "minutes_avant_depart": 21,
   "participants": [
     {
       "numPmu": 1,
@@ -14,34 +14,34 @@
       "cote_reference": 3.3,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794669390000
+      "timestamp_cote": 1794669632000
     },
     {
       "numPmu": 2,
       "nom": "LUMINO BELLO",
-      "cote_live": 22.0,
+      "cote_live": 23.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794669390000
+      "timestamp_cote": 1794669632000
     },
     {
       "numPmu": 3,
       "nom": "BENOU",
-      "cote_live": 8.5,
+      "cote_live": 8.6,
       "cote_reference": 9.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794669390000
+      "timestamp_cote": 1794669632000
     },
     {
       "numPmu": 4,
       "nom": "JOIE INTERIEURE",
-      "cote_live": 38.0,
+      "cote_live": 31.0,
       "cote_reference": 40.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794669390000
+      "timestamp_cote": 1794669632000
     },
     {
       "numPmu": 5,
@@ -50,70 +50,70 @@
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794669390000
+      "timestamp_cote": 1794669632000
     },
     {
       "numPmu": 6,
       "nom": "KUARTZ",
-      "cote_live": 8.4,
+      "cote_live": 8.7,
       "cote_reference": 8.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794669390000
+      "timestamp_cote": 1794669632000
     },
     {
       "numPmu": 7,
       "nom": "L'ARRABIATO",
-      "cote_live": 9.3,
+      "cote_live": 8.8,
       "cote_reference": 9.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794669390000
+      "timestamp_cote": 1794669632000
     },
     {
       "numPmu": 8,
       "nom": "KING PINEAU",
-      "cote_live": 25.0,
+      "cote_live": 27.0,
       "cote_reference": 26.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794669390000
+      "timestamp_cote": 1794669632000
     },
     {
       "numPmu": 9,
       "nom": "LE PRETENDANT",
-      "cote_live": 14.0,
+      "cote_live": 15.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794669390000
+      "timestamp_cote": 1794669632000
     },
     {
       "numPmu": 10,
       "nom": "LESTRU",
-      "cote_live": 6.5,
+      "cote_live": 6.6,
       "cote_reference": 7.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794669390000
+      "timestamp_cote": 1794669632000
     },
     {
       "numPmu": 11,
       "nom": "HERALISTE",
-      "cote_live": 9.2,
+      "cote_live": 9.1,
       "cote_reference": 9.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794669390000
+      "timestamp_cote": 1794669632000
     },
     {
       "numPmu": 12,
       "nom": "ITIEPY",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794669390000
+      "timestamp_cote": 1794669632000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -152,6 +152,24 @@
         "10": 6.5,
         "11": 9.2,
         "12": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-14T16:20:54.915972+01:00",
+      "minutes_avant_depart": 21.087195516666668,
+      "cotes": {
+        "1": 4.1,
+        "2": 23.0,
+        "3": 8.6,
+        "4": 31.0,
+        "5": 22.0,
+        "6": 8.7,
+        "7": 8.8,
+        "8": 27.0,
+        "9": 15.0,
+        "10": 6.6,
+        "11": 9.1,
+        "12": 14.0
       }
     }
   ]
