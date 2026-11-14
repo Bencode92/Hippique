@@ -4,17 +4,17 @@
   "reunion": 6,
   "heure_depart": 1794686940000,
   "distance": 2400,
-  "scraped_at": "2026-11-14T20:39:27.426373+01:00",
-  "minutes_avant_depart": 30,
+  "scraped_at": "2026-11-14T20:43:27.847024+01:00",
+  "minutes_avant_depart": 26,
   "participants": [
     {
       "numPmu": 1,
       "nom": "LOFSONGUR ISLANDE",
-      "cote_live": 6.9,
+      "cote_live": 6.8,
       "cote_reference": 6.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794685156000
+      "timestamp_cote": 1794685398000
     },
     {
       "numPmu": 2,
@@ -23,7 +23,7 @@
       "cote_reference": 5.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794685156000
+      "timestamp_cote": 1794685398000
     },
     {
       "numPmu": 3,
@@ -32,43 +32,43 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794685156000
+      "timestamp_cote": 1794685398000
     },
     {
       "numPmu": 4,
       "nom": "MY EDEN JAMES",
-      "cote_live": 25.0,
+      "cote_live": 26.0,
       "cote_reference": 25.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794685156000
+      "timestamp_cote": 1794685398000
     },
     {
       "numPmu": 5,
       "nom": "ALWAYS WELCOME",
-      "cote_live": 1.6,
+      "cote_live": 1.7,
       "cote_reference": 1.6,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794685156000
+      "timestamp_cote": 1794685398000
     },
     {
       "numPmu": 6,
       "nom": "JULDIKO",
-      "cote_live": 32.0,
+      "cote_live": 31.0,
       "cote_reference": 32.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794685156000
+      "timestamp_cote": 1794685398000
     },
     {
       "numPmu": 7,
       "nom": "BY FAR",
-      "cote_live": 23.0,
+      "cote_live": 21.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794685156000
+      "timestamp_cote": 1794685398000
     },
     {
       "numPmu": 8,
@@ -77,7 +77,7 @@
       "cote_reference": 37.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794685156000
+      "timestamp_cote": 1794685398000
     }
   ],
   "hippodrome": "PORNICHET",
@@ -93,6 +93,20 @@
         "5": 1.6,
         "6": 32.0,
         "7": 23.0,
+        "8": 37.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-14T20:43:27.847024+01:00",
+      "minutes_avant_depart": 25.543930983333333,
+      "cotes": {
+        "1": 6.8,
+        "2": 5.6,
+        "3": 12.0,
+        "4": 26.0,
+        "5": 1.7,
+        "6": 31.0,
+        "7": 21.0,
         "8": 37.0
       }
     }
