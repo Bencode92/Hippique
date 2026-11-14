@@ -114,21 +114,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX LE GUALES DE MEZAUBRAN
 
-*20h05 · plat · 1700 m · 11 partants · cotes à T−16:47*
+*20h05 · plat · 1700 m · 11 partants · cotes à T−11:32*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 12 | BREIZH STORY | 1,2 | 4,5 | 1,47 | -18,3 % | H.LEBOUC | 22/47/1098/2784 |
-| 8 | VENETIAN BELLE | 12 | 3,5 | 15,52 | -22,7 % | E.VERHESTRAETEN | 50/13/–/– |
-| 3 | MELEKS | 18 | 8,3 | 25,61 | -29,7 % | M.PROTTI | 29/6/–/5266 |
-| 9 | STELLA BEAUTY | 30 | 6,2 | 42,90 | -30,1 % | G.MEURY | 73/25/29/818 |
-| 10 | TALIA FAL | 33 | 11 | 47,77 | -30,9 % | L.ROUSSEL | 18/47/3/35 |
-| 4 | VIKTOR RAPIDE | 39 | 17 | 61,89 | -37,0 % | J.GUILLOCHON | 61/42/–/1150 |
-| 6 | YES OR NO | 46 | 34 | 62,81 | -26,8 % | M.FAVRIAUX | 54/42/675/1730 |
-| 7 | ACQUIRED | 49 | 12 | 73,97 | -33,8 % | T.BREBION | 84/45/–/– |
-| 1 | LE TRIOMPHANT | 56 | 19 | 85,46 | -34,5 % | J.CLAUDIC | 40/158/833/2440 |
-| 2 | VOCIAL FAL | 76 | 24 | 118,14 | -35,7 % | C.GROSBOIS | 26/45/31/35 |
-| 5 | SACRED SONG | 197 | 87 | 344,34 | -42,8 % | A.SUBIAS | 102/116/298/745 |
+| 12 | BREIZH STORY | 1,3 | 4,5 | 1,54 | -15,6 % | H.LEBOUC | 22/47/1098/2784 |
+| 8 | VENETIAN BELLE | 10 | 3,5 | 11,69 | -14,4 % | E.VERHESTRAETEN | 50/13/–/– |
+| 3 | MELEKS | 14 | 8,3 | 19,43 | -27,9 % | M.PROTTI | 29/6/–/5266 |
+| 9 | STELLA BEAUTY | 25 | 6,2 | 35,50 | -29,6 % | G.MEURY | 73/25/29/818 |
+| 7 | ACQUIRED | 28 | 12 | 40,40 | -30,7 % | T.BREBION | 84/45/–/– |
+| 10 | TALIA FAL | 30 | 11 | 43,68 | -31,3 % | L.ROUSSEL | 18/47/3/35 |
+| 4 | VIKTOR RAPIDE | 31 | 17 | 48,72 | -36,4 % | J.GUILLOCHON | 61/42/–/1150 |
+| 1 | LE TRIOMPHANT | 41 | 19 | 61,91 | -33,8 % | J.CLAUDIC | 40/158/833/2440 |
+| 6 | YES OR NO | 42 | 34 | 57,85 | -27,4 % | M.FAVRIAUX | 54/42/675/1730 |
+| 2 | VOCIAL FAL | 53 | 24 | 81,93 | -35,3 % | C.GROSBOIS | 26/45/31/35 |
+| 5 | SACRED SONG | 112 | 87 | 201,69 | -44,5 % | A.SUBIAS | 102/116/298/745 |
 
 ### 7. PRIX MOULIN D'ARGENT
 
