@@ -4,8 +4,8 @@
   "reunion": 5,
   "heure_depart": 1794662220000,
   "distance": 4300,
-  "scraped_at": "2026-11-14T14:00:31.166899+01:00",
-  "minutes_avant_depart": 16,
+  "scraped_at": "2026-11-14T14:04:31.403159+01:00",
+  "minutes_avant_depart": 12,
   "participants": [
     {
       "numPmu": 1,
@@ -14,7 +14,7 @@
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794661217000
+      "timestamp_cote": 1794661459000
     },
     {
       "numPmu": 2,
@@ -23,43 +23,43 @@
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794661217000
+      "timestamp_cote": 1794661459000
     },
     {
       "numPmu": 3,
       "nom": "HEDENN BIHOUE",
-      "cote_live": 8.7,
+      "cote_live": 7.1,
       "cote_reference": 10.0,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1794661217000
+      "favoris": true,
+      "timestamp_cote": 1794661459000
     },
     {
       "numPmu": 4,
       "nom": "LOUSTIC DE CIERGUE",
-      "cote_live": 8.2,
+      "cote_live": 8.0,
       "cote_reference": 7.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794661217000
+      "timestamp_cote": 1794661459000
     },
     {
       "numPmu": 5,
       "nom": "JIKITO",
-      "cote_live": 8.6,
+      "cote_live": 9.2,
       "cote_reference": 9.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794661217000
+      "timestamp_cote": 1794661459000
     },
     {
       "numPmu": 6,
       "nom": "LE ROI LOTH",
-      "cote_live": 17.0,
+      "cote_live": 18.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794661217000
+      "timestamp_cote": 1794661459000
     },
     {
       "numPmu": 7,
@@ -68,34 +68,34 @@
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794661217000
+      "timestamp_cote": 1794661459000
     },
     {
       "numPmu": 8,
       "nom": "KOKTAIL BRESILIEN",
-      "cote_live": 22.0,
+      "cote_live": 23.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794661217000
+      "timestamp_cote": 1794661459000
     },
     {
       "numPmu": 9,
       "nom": "LES FLOTS BLEUS",
-      "cote_live": 7.4,
+      "cote_live": 7.5,
       "cote_reference": 9.2,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1794661217000
+      "favoris": false,
+      "timestamp_cote": 1794661459000
     },
     {
       "numPmu": 10,
       "nom": "NOVA SCOTIA",
-      "cote_live": 20.0,
+      "cote_live": 22.0,
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794661217000
+      "timestamp_cote": 1794661459000
     },
     {
       "numPmu": 11,
@@ -104,43 +104,43 @@
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794661217000
+      "timestamp_cote": 1794661459000
     },
     {
       "numPmu": 12,
       "nom": "TAFEDNEY",
-      "cote_live": 8.7,
+      "cote_live": 9.0,
       "cote_reference": 7.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794661217000
+      "timestamp_cote": 1794661459000
     },
     {
       "numPmu": 13,
       "nom": "LORELEYE",
-      "cote_live": 94.0,
+      "cote_live": 77.0,
       "cote_reference": 91.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794661217000
+      "timestamp_cote": 1794661459000
     },
     {
       "numPmu": 14,
       "nom": "QUICK DADDY",
-      "cote_live": 30.0,
+      "cote_live": 31.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794661217000
+      "timestamp_cote": 1794661459000
     },
     {
       "numPmu": 15,
       "nom": "JOSIE D 'AJONC",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794661217000
+      "timestamp_cote": 1794661459000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -185,6 +185,27 @@
         "13": 94.0,
         "14": 30.0,
         "15": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-14T14:04:31.403159+01:00",
+      "minutes_avant_depart": 12.486907133333334,
+      "cotes": {
+        "1": 17.0,
+        "2": 16.0,
+        "3": 7.1,
+        "4": 8.0,
+        "5": 9.2,
+        "6": 18.0,
+        "7": 14.0,
+        "8": 23.0,
+        "9": 7.5,
+        "10": 22.0,
+        "11": 12.0,
+        "12": 9.0,
+        "13": 77.0,
+        "14": 31.0,
+        "15": 14.0
       }
     }
   ]
