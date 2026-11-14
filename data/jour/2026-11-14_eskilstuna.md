@@ -1,8 +1,8 @@
 # ESKILSTUNA — 14/11/2026
 
-4 courses.
+4 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
@@ -12,17 +12,17 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | JIOVANHA FALKONE | – | O. KIHLSTROM |
-| 2 | MILADY JOSSELYN | – | D. KOLGJINI |
-| 3 | LOVE TO THE LIMIT | – | B. GOOP |
-| 4 | CHAMBERI | – | M.A. DJUSE |
+| 4 | CHAMBERI | 1,1 | M.A. DJUSE |
+| 2 | MILADY JOSSELYN | 7,7 | D. KOLGJINI |
+| 1 | JIOVANHA FALKONE | 54 | O. KIHLSTROM |
+| 3 | LOVE TO THE LIMIT | 54 | B. GOOP |
+| 6 | JACQUELINE ZET | 54 | C.J. JEPSON |
+| 8 | PREPOSTEROUS | 54 | J. UNTERSTEINER |
+| 11 | GLOBAL GOT IT ALL | 54 | R.N. SKOGLUND |
 | 5 | TIME TO RUN | – | C. SJOSTROM |
-| 6 | JACQUELINE ZET | – | C.J. JEPSON |
 | 7 | NYHARAJAH | – | T. DALBORG |
-| 8 | PREPOSTEROUS | – | J. UNTERSTEINER |
 | 9 | TIMOTEJS ONLINE | – | P. LINDEROTH |
 | 10 | DRAG RACING | – | Mme J. BRUNZELL |
-| 11 | GLOBAL GOT IT ALL | – | R.N. SKOGLUND |
 | 12 | OLYMPIA STING | – | M.E. DJUSE |
 
 ### 7. BREEDERS CROWN 4 ANS MÂLES ET HONGRES   SUEDE
@@ -31,15 +31,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 4 | ZAREX | 1,3 | D. WAJERSTEN |
+| 5 | GAP KRONOS | 5,9 | O. KIHLSTROM |
+| 3 | EJNAR FACE | 11 | A. KOLGJINI |
+| 9 | RAPHAEL | 11 | R.N. SKOGLUND |
+| 2 | RECYCLE CASH | 23 | M.A. DJUSE |
 | 1 | COLD BLAZE | – | C.J. JEPSON |
-| 2 | RECYCLE CASH | – | M.A. DJUSE |
-| 3 | EJNAR FACE | – | A. KOLGJINI |
-| 4 | ZAREX | – | D. WAJERSTEN |
-| 5 | GAP KRONOS | – | O. KIHLSTROM |
 | 6 | GUMSHOE SOX | – | M.E. DJUSE |
 | 7 | DON GAAGAA | – | O.J. OSTRE |
 | 8 | JONTE GODIVA | – | U. OHLSSON |
-| 9 | RAPHAEL | – | R.N. SKOGLUND |
 | 10 | JOKER IMA | – | P.G. NORMAN |
 | 11 | SVEN KUCE | – | G. JOHANSSON |
 | 12 | LUGANO CORTINA | – | B. GOOP |
@@ -50,11 +50,11 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | THAI MEDINA | – | B. GOOP |
+| 3 | ZEEBREEZE | 1,1 | M.E. DJUSE |
+| 1 | THAI MEDINA | 20 | B. GOOP |
+| 5 | MELLBY ORKIDE | 41 | M.A. DJUSE |
 | 2 | I SEE TAIL LIGHTS | – | M.B. SVEDBERG |
-| 3 | ZEEBREEZE | – | M.E. DJUSE |
 | 4 | GRACE IN HEAVEN | – | D. WAJERSTEN |
-| 5 | MELLBY ORKIDE | – | M.A. DJUSE |
 | 6 | WENDY | – | M. FORSS |
 | 7 | HAWTHORNE EFFECT | – | V. ROSLEFF |
 | 8 | ARIZONA TROT | – | A. LINDBLOM |
@@ -69,12 +69,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | COM BEST | – | M.A. DJUSE |
+| 3 | KODIAK ZET | 2,2 | O. KIHLSTROM |
+| 6 | NANDA DEVI CUT | 2,2 | M.E. DJUSE |
+| 1 | COM BEST | 4,4 | M.A. DJUSE |
 | 2 | NO HITTER | – | C.J. JEPSON |
-| 3 | KODIAK ZET | – | O. KIHLSTROM |
 | 4 | STEADY SPENDER | – | O.J. OSTRE |
 | 5 | CITY SLICKER | – | J. UNTERSTEINER |
-| 6 | NANDA DEVI CUT | – | M.E. DJUSE |
 | 7 | VANCOUVER TILE | – | B. GOOP |
 | 8 | NEUTRON STAR | – | C. SJOSTROM |
 | 9 | IN THE WIND GAR | – | R. BAKKER |
