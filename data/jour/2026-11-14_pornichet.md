@@ -74,25 +74,25 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX DE BAGUENEAU
 
-*19h01 · plat · 2100 m · 15 partants · cotes à T−10:47*
+*19h01 · plat · 2100 m · 15 partants · cotes à T−5:27*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | GREAT CHARLIE | 5,4 | 6,7 | 5,64 | -4,2 % | H.LEBOUC | 22/348/85/593 |
-| 7 | PICANES | 7,5 | 9,5 | 7,83 | -4,2 % | L.POGGIONOVO | 75/233/149/3873 |
-| 9 | COCO LIGHT | 8 | 8,7 | 8,93 | -10,4 % | D.SANTIAGO | 19/328/559/760 |
-| 5 | ROSALIE | 9,5 | 14 | 11,90 | -20,2 % | A.BERNARD | 95/233/115/2376 |
-| 12 | SPINNING MIST | 9,6 | 6,2 | 12,05 | -20,3 % | L.PLOMMEE | 36/116/3201/124 |
-| 13 | LA MOMY | 13 | 22 | 14,81 | -12,2 % | A.BARON | 38/459/1525/1223 |
-| 15 | SANPEDRO | 13 | 12 | 16,46 | -21,0 % | J.CLAUDIC | 40/414/5/946 |
-| 11 | AMICIS | 14 | 5,8 | 14,40 | -2,8 % | Y.BARILLE | 81/116/2384/4017 |
-| 4 | MA BARBIE'K | 15 | 13 | 19,47 | -23,0 % | M.JUSTUM | 87/130/510/1353 |
-| 6 | CAZADERO | 16 | 52 | 21,54 | -25,7 % | T.BREBION | 84/404/174/880 |
-| 16 | GALIWAY D'ANGE | 19 | 12 | 23,50 | -19,1 % | A.SUBIAS | 102/251/2103/4000 |
-| 3 | TOOGOODTOBEROOD | 27 | 52 | 36,71 | -26,5 % | E.FOUBERT | 411/130/528/424 |
-| 1 | KATARAFINA | 45 | 78 | 59,08 | -23,8 % | S.JUST | 153/116/1847/124 |
-| 10 | LADY DU SAPHIR | 46 | 52 | 52,75 | -12,8 % | J.GUILLOCHON | 61/130/1679/3795 |
-| 14 | LEGENDE D OSVIN | 103 | 78 | 148,72 | -30,7 % | R.JUTEAU | 144/296/3874/5085 |
+| 2 | GREAT CHARLIE | 5,3 | 6,7 | 5,52 | -4,0 % | H.LEBOUC | 22/348/85/593 |
+| 9 | COCO LIGHT | 5,8 | 8,7 | 5,71 | **+1,6 %** | D.SANTIAGO | 19/328/559/760 |
+| 7 | PICANES | 8,7 | 9,5 | 9,28 | -6,3 % | L.POGGIONOVO | 75/233/149/3873 |
+| 12 | SPINNING MIST | 9,5 | 6,2 | 11,90 | -20,2 % | L.PLOMMEE | 36/116/3201/124 |
+| 5 | ROSALIE | 10 | 14 | 12,64 | -20,9 % | A.BERNARD | 95/233/115/2376 |
+| 11 | AMICIS | 14 | 5,8 | 14,39 | -2,7 % | Y.BARILLE | 81/116/2384/4017 |
+| 13 | LA MOMY | 14 | 22 | 16,14 | -13,3 % | A.BARON | 38/459/1525/1223 |
+| 15 | SANPEDRO | 16 | 12 | 20,99 | -23,8 % | J.CLAUDIC | 40/414/5/946 |
+| 4 | MA BARBIE'K | 17 | 13 | 22,53 | -24,6 % | M.JUSTUM | 87/130/510/1353 |
+| 6 | CAZADERO | 17 | 52 | 23,12 | -26,5 % | T.BREBION | 84/404/174/880 |
+| 16 | GALIWAY D'ANGE | 23 | 12 | 29,27 | -21,4 % | A.SUBIAS | 102/251/2103/4000 |
+| 3 | TOOGOODTOBEROOD | 28 | 52 | 38,25 | -26,8 % | E.FOUBERT | 411/130/528/424 |
+| 10 | LADY DU SAPHIR | 30 | 52 | 32,87 | -8,7 % | J.GUILLOCHON | 61/130/1679/3795 |
+| 1 | KATARAFINA | 43 | 78 | 56,20 | -23,5 % | S.JUST | 153/116/1847/124 |
+| 14 | LEGENDE D OSVIN | 97 | 78 | 139,89 | -30,7 % | R.JUTEAU | 144/296/3874/5085 |
 
 ### 5. PRIX CAP ATLANTIQUE
 
