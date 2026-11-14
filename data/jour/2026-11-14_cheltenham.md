@@ -28,14 +28,14 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | ATOMIC CITY | 2,4 | J. J. SLEVIN | –/39/–/– |
+| 2 | ATOMIC CITY | 2,3 | J. J. SLEVIN | –/39/–/– |
 | 3 | CHARLES DARNAY | 4 | HARRY COBDEN | –/288/–/– |
-| 1 | ADMIRAL WILL BROWN | 6,4 | JOSH WILLIAMSON | –/–/–/– |
-| 5 | DON DANDY | 7,1 | SEAN BOWEN | –/–/–/– |
+| 1 | ADMIRAL WILL BROWN | 6,5 | JOSH WILLIAMSON | –/–/–/– |
+| 5 | DON DANDY | 7,2 | SEAN BOWEN | –/–/–/– |
 | 7 | MAGNETUDE | 12 | JONATHAN BURKE | –/288/–/– |
 | 9 | TINY RIOT | 19 | TOM BELLAMY | –/–/–/– |
 | 6 | ELECTRICAL | 37 | DARRAGH O'KEEFFE | –/–/–/– |
-| 4 | CONFUSED | 45 | RICHIE MCLERNON | –/–/–/– |
+| 4 | CONFUSED | 46 | RICHIE MCLERNON | –/–/–/– |
 
 ### 3. PADDY POWER ARKLE CHALLENGE TROPHY TRIAL NOVICES' CHASE (GRADE 2)
 
@@ -43,11 +43,11 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | NEWTOWN RAMBLER | 3,8 | OAKLEY BROWN | –/690/–/– |
-| 7 | FOLIE GOLITH | 3,8 | SEAN BOWEN | –/–/–/– |
-| 6 | WORKAHEAD | 4,6 | SEAN FLANAGAN | –/843/–/– |
-| 4 | PASSING DIAMOND | 5 | RICHIE MCLERNON | –/948/–/– |
-| 5 | PUTAPOUNDINTHEJAR | 5,1 | DANIEL KING | –/832/–/– |
+| 6 | WORKAHEAD | 2,3 | SEAN FLANAGAN | –/843/–/– |
+| 2 | NEWTOWN RAMBLER | 4,6 | OAKLEY BROWN | –/690/–/– |
+| 5 | PUTAPOUNDINTHEJAR | 5,5 | DANIEL KING | –/832/–/– |
+| 7 | FOLIE GOLITH | 5,9 | SEAN BOWEN | –/–/–/– |
+| 4 | PASSING DIAMOND | 6,8 | RICHIE MCLERNON | –/948/–/– |
 
 ### 4. PADDY POWER GOLD CUP HANDICAP CHASE (CLASS 1) (PREMIER HANDICAP)
 
@@ -55,16 +55,16 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 5 | BLUEKING D'OROUX | 1,7 | HARRY SKELTON | –/–/–/5438 |
-| 3 | MEETMEBYTHESEA | 6,2 | HARRY COBDEN | –/–/–/– |
-| 14 | TORNEO | 7 | GAVIN SHEEHAN | –/–/–/– |
-| 15 | DUNKERQUE | 10 | SEAN QUINLAN | –/448/–/– |
-| 11 | ZURICH | 13 | SEAN BOWEN | –/843/–/– |
-| 8 | QUEBECOIS | 35 | SAM TWISTON-DAVIES | –/–/–/– |
-| 13 | RELEASE THE BEAST | 35 | SEAN FLANAGAN | –/–/–/– |
-| 6 | RISKINTHEGROUND | 53 | HARRY ATKINS | –/–/–/– |
-| 1 | MATATA | 106 | J. J. SLEVIN | –/–/–/– |
-| 9 | O'MOORE PARK | – | FREDDIE KEIGHLEY | –/–/–/– |
+| 5 | BLUEKING D'OROUX | 3,4 | HARRY SKELTON | –/–/–/5438 |
+| 3 | MEETMEBYTHESEA | 3,7 | HARRY COBDEN | –/–/–/– |
+| 8 | QUEBECOIS | 8 | SAM TWISTON-DAVIES | –/–/–/– |
+| 11 | ZURICH | 10 | SEAN BOWEN | –/843/–/– |
+| 13 | RELEASE THE BEAST | 13 | SEAN FLANAGAN | –/–/–/– |
+| 15 | DUNKERQUE | 14 | SEAN QUINLAN | –/448/–/– |
+| 14 | TORNEO | 15 | GAVIN SHEEHAN | –/–/–/– |
+| 1 | MATATA | 19 | J. J. SLEVIN | –/–/–/– |
+| 9 | O'MOORE PARK | 19 | FREDDIE KEIGHLEY | –/–/–/– |
+| 6 | RISKINTHEGROUND | 20 | HARRY ATKINS | –/–/–/– |
 
 ### 5. HANDICAP HURDLE (CLASS 2)
 
@@ -72,16 +72,16 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 16 | WILLIAM YEATS | 2,3 | JONATHAN ENGLAND | –/–/–/– |
-| 2 | SIR GALAHAD | 3,8 | LEWIS SAUNDERS | –/–/–/– |
-| 12 | HARTUR D'ARC | 5,8 | CONOR SMITHERS | –/–/–/– |
-| 8 | IFIWEREARICHMAN | 7,7 | EOIN STAPLES | –/–/–/– |
-| 14 | AIMERIC | 11 | WILLIAM SHANAHAN | –/448/–/– |
-| 9 | MARGARET'S LEGACY | 23 | RICHARD UPTON | –/–/–/– |
-| 3 | RAMBO T | 46 | SEAN BOWEN | –/–/–/– |
+| 2 | SIR GALAHAD | 3,7 | LEWIS SAUNDERS | –/–/–/– |
+| 8 | IFIWEREARICHMAN | 3,9 | EOIN STAPLES | –/–/–/– |
+| 7 | BLIZZARD OF OZ | 5 | RICHIE MCLERNON | –/–/–/– |
+| 16 | WILLIAM YEATS | 6,6 | JONATHAN ENGLAND | –/–/–/– |
+| 14 | AIMERIC | 8,7 | WILLIAM SHANAHAN | –/448/–/– |
+| 9 | MARGARET'S LEGACY | 13 | RICHARD UPTON | –/–/–/– |
+| 12 | HARTUR D'ARC | 25 | CONOR SMITHERS | –/–/–/– |
+| 3 | RAMBO T | 28 | SEAN BOWEN | –/–/–/– |
+| 13 | BLACK BAMBOO | 252 | MICHAEL KENNEALLY | –/895/–/– |
 | 5 | LUCKY LYREEN | – | FREDDIE KEIGHLEY | –/–/–/– |
-| 7 | BLIZZARD OF OZ | – | RICHIE MCLERNON | –/–/–/– |
-| 13 | BLACK BAMBOO | – | MICHAEL KENNEALLY | –/895/–/– |
 
 ### 6. PADDY POWER INTERMEDIATE HANDICAP HURDLE (CLASS 3)
 
@@ -89,12 +89,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | DAYLATEDOLLARSHORT | 1,1 | SEAN BOWEN |
-| 3 | OPEN SECRET | 12 | JOSH WILLIAMSON |
-| 13 | GIVE HIM A CHANCE | 25 | MR ALAN O'SULLIVAN |
-| 5 | SEAMOON STORY | – | DAIRE MCCONVILLE |
-| 9 | HILLBERRY HILL | – | TOM BELLAMY |
-| 10 | SUNNY SOUTH WEST | – | MICHAEL KENNEALLY |
+| 1 | DAYLATEDOLLARSHORT | 1,4 | SEAN BOWEN |
+| 9 | HILLBERRY HILL | 4,5 | TOM BELLAMY |
+| 10 | SUNNY SOUTH WEST | 13 | MICHAEL KENNEALLY |
+| 13 | GIVE HIM A CHANCE | 13 | MR ALAN O'SULLIVAN |
+| 3 | OPEN SECRET | 15 | JOSH WILLIAMSON |
+| 5 | SEAMOON STORY | 47 | DAIRE MCCONVILLE |
 
 ### 7. OPEN NATIONAL HUNT FLAT RACE (CLASS 1)(LISTED RACE)
 
@@ -102,13 +102,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 7 | MISS MASTER | 1,5 | SEAN BOWEN | –/–/–/– |
-| 3 | ELEGANTEMENTE | 5,7 | J L GLEESON | –/843/–/– |
-| 4 | GYPSY SKY | 5,7 | RICHIE MCLERNON | –/–/–/– |
-| 15 | SOLERETTA | 11 | HARRY SKELTON | –/–/–/– |
-| 14 | SHE WAS THE ONE | 17 | DANIEL KING | –/559/–/– |
+| 7 | MISS MASTER | 2 | SEAN BOWEN | –/–/–/– |
+| 3 | ELEGANTEMENTE | 4,5 | J L GLEESON | –/843/–/– |
+| 4 | GYPSY SKY | 8 | RICHIE MCLERNON | –/–/–/– |
+| 15 | SOLERETTA | 8 | HARRY SKELTON | –/–/–/– |
+| 14 | SHE WAS THE ONE | 9,6 | DANIEL KING | –/559/–/– |
+| 6 | KSHIRA SAGARA | 24 | ALEX HARVEY | –/–/–/– |
+| 13 | SARAH'S SISTER | 48 | JONATHAN BURKE | –/–/–/– |
 | 1 | CLOVELLY CHARM | – | SEAN FLANAGAN | –/–/–/– |
 | 2 | EASTERN WHISPER | – | HARRY COBDEN | –/–/–/3870 |
-| 6 | KSHIRA SAGARA | – | ALEX HARVEY | –/–/–/– |
 | 10 | ORDERANDOUT | – | JACK QUINLAN | –/–/–/– |
-| 13 | SARAH'S SISTER | – | JONATHAN BURKE | –/–/–/– |

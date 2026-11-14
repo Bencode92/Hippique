@@ -28,14 +28,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 2 | SHERMAN FURY | 3,2 | D A HERRERA |
-| 6 | COMPLEXED | 5,8 | S LEON |
-| 4 | MAGIC HEART | 7 | L REYES |
-| 1 | TALL STORY | 8,8 | E PEREZ |
-| 3 | TAPSTICK | 8,8 | F VASQUEZ, JR. |
-| 5 | DAVID PEPPERMAN | 8,8 | J E MORELOS |
-| 7 | FINEST GAMBLE | 8,8 | J TORREALBA |
-| 8 | ESPERANZITO | 17 | C MARTINEZ |
+| 2 | SHERMAN FURY | 2,8 | D A HERRERA |
+| 6 | COMPLEXED | 6,1 | S LEON |
+| 4 | MAGIC HEART | 7,4 | L REYES |
+| 1 | TALL STORY | 9,2 | E PEREZ |
+| 3 | TAPSTICK | 9,2 | F VASQUEZ, JR. |
+| 5 | DAVID PEPPERMAN | 9,2 | J E MORELOS |
+| 7 | FINEST GAMBLE | 9,2 | J TORREALBA |
+| 8 | ESPERANZITO | 18 | C MARTINEZ |
 
 ### 3. MAIDEN SPECIAL WEIGHT 1650
 
@@ -57,10 +57,10 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 6 | OTHER LEVEL | 2,2 | J SANTOS | 245/–/–/– |
-| 3 | PARDO | 4,4 | L REYES | –/–/–/– |
-| 7 | EXCUSES | 4,4 | D A HERRERA | –/–/–/– |
-| 8 | RICHEZTOO | 4,4 | S CAMACHO | –/–/–/– |
+| 8 | RICHEZTOO | 2 | S CAMACHO | –/–/–/– |
+| 6 | OTHER LEVEL | 3 | J SANTOS | 245/–/–/– |
+| 3 | PARDO | 6,1 | L REYES | –/–/–/– |
+| 7 | EXCUSES | 6,1 | D A HERRERA | –/–/–/– |
 | 1 | FREDERICKSBURG | – | F VASQUEZ, JR. | –/–/–/– |
 | 2 | POWER FROM ABOVE | – | A THOMAS | –/690/–/– |
 | 4 | WILLING ONE | – | S LEON | –/–/–/– |
@@ -117,13 +117,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 3 | GREAT VENEZUELA | 1,9 | D A HERRERA |
+| 3 | GREAT VENEZUELA | 2,1 | D A HERRERA |
 | 7 | VINDICATE CHA CHA | 7,8 | L REYES |
-| 5 | SECRET REVENGE | 8,8 | C CEDENO |
-| 6 | FANTASTIC FLAME | 8,8 | H FIGUEROA |
-| 1 | TIFFANY GOLD | 11 | E GONZALEZ |
-| 2 | BRAGANZA | 11 | J E MORELOS |
-| 4 | DUBOFF | 11 | P LOPEZ |
+| 1 | TIFFANY GOLD | 8,6 | E GONZALEZ |
+| 5 | SECRET REVENGE | 8,6 | C CEDENO |
+| 6 | FANTASTIC FLAME | 8,6 | H FIGUEROA |
+| 2 | BRAGANZA | 10 | J E MORELOS |
+| 4 | DUBOFF | 10 | P LOPEZ |
 
 ### 9. ALLOWANCE OPTIONAL CLAIMING 1300
 
@@ -131,12 +131,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 4 | IRISH ADIEU | 1,3 | M A VASQUEZ |
-| 5 | JALAPENO | 2,6 | L REYES |
+| 4 | IRISH ADIEU | 2,2 | M A VASQUEZ |
+| 6 | PRACTICALLY DARK | 2,2 | P LOPEZ |
+| 5 | JALAPENO | 4,4 | L REYES |
 | 1 | ICELANDER | – | A CRUZ |
 | 2 | TOP LEVEL | – | S LEON |
 | 3 | ROAR OF THE BEAST | – | E GONZALEZ |
-| 6 | PRACTICALLY DARK | – | P LOPEZ |
 | 7 | PEPPERMINT MAN | – | Y TORRES |
 | 8 | GUNS AND COFFEE | – | M MENESES |
 
