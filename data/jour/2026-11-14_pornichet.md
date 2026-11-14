@@ -10,26 +10,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 1. PRIX CONSEIL DES EQUIDES PAYS DE LOIRE
 
-*17h17 · plat · 2100 m · 16 partants · cotes à T−16:05*
+*17h17 · plat · 2100 m · 16 partants · cotes à T−15:05*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 1 | KER WELEN | 3,7 | 2,5 | 4,49 | -17,5 % | L.POGGIONOVO | 75/145/1905/2105 |
-| 14 | DRIP | 6,2 | 6,7 | 6,70 | -7,5 % | E.CORALLO | 59/485/1/1381 |
-| 5 | ATANASIO | 8,4 | 11 | 9,92 | -15,3 % | H.LEBOUC | 22/47/2243/5 |
-| 4 | GOGUEN SPAISE | 13 | 13 | 14,53 | -10,5 % | Y.BARILLE | 81/31/17/1344 |
-| 6 | MONSIEUR SHELBY | 13 | 12 | 16,56 | -21,5 % | L.ROUSSEL | 18/31/1919/2141 |
-| 10 | LAKES DANCER | 13 | 9,4 | 15,85 | -18,0 % | O.ANDIGNE | 77/47/49/1900 |
-| 8 | LOLLIPOP DES PINS | 15 | 15 | 16,42 | -8,7 % | C.GROSBOIS | 26/102/673/897 |
-| 16 | BAIKAL | 16 | 86 | 20,20 | -20,8 % | A.BERNARD | 95/233/585/3655 |
-| 2 | KEANU | 18 | 28 | 21,14 | -14,8 % | L.GALLO | 47/123/216/148 |
-| 12 | KUMRAN | 22 | 36 | 25,53 | -13,8 % | A.BARON | 38/98/673/1034 |
-| 15 | VESCO | 28 | 22 | 43,29 | -35,3 % | M.PROTTI | 29/349/1176/604 |
-| 7 | DENISJONH | 30 | 43 | 33,07 | -9,3 % | M.ROMARY | 52/477/1228/2434 |
-| 11 | BEST SELLER | 41 | 68 | 63,39 | -35,3 % | J.GUILLOCHON | 61/202/459/2395 |
-| 3 | MAPLE TAFFY | 46 | 95 | 60,85 | -24,4 % | J.LACROIX | 97/130/1315/2598 |
-| 9 | YELLOW HAWK | 64 | 106 | 95,35 | -32,9 % | A.SUBIAS | 102/278/36/357 |
-| 13 | MAESTRAL | 69 | 73 | 103,32 | -33,2 % | C.POIRIER | 154/447/506/3343 |
+| 1 | KER WELEN | 3,9 | 2,5 | 4,73 | -17,6 % | L.POGGIONOVO | 75/145/1905/2105 |
+| 14 | DRIP | 5,6 | 6,7 | 5,96 | -6,0 % | E.CORALLO | 59/485/1/1381 |
+| 5 | ATANASIO | 8,8 | 11 | 10,44 | -15,7 % | H.LEBOUC | 22/47/2243/5 |
+| 6 | MONSIEUR SHELBY | 12 | 12 | 15,02 | -20,1 % | L.ROUSSEL | 18/31/1919/2141 |
+| 4 | GOGUEN SPAISE | 14 | 13 | 15,78 | -11,3 % | Y.BARILLE | 81/31/17/1344 |
+| 10 | LAKES DANCER | 14 | 9,4 | 17,22 | -18,7 % | O.ANDIGNE | 77/47/49/1900 |
+| 8 | LOLLIPOP DES PINS | 15 | 15 | 16,36 | -8,3 % | C.GROSBOIS | 26/102/673/897 |
+| 16 | BAIKAL | 16 | 86 | 20,12 | -20,5 % | A.BERNARD | 95/233/585/3655 |
+| 12 | KUMRAN | 18 | 36 | 20,20 | -10,9 % | A.BARON | 38/98/673/1034 |
+| 2 | KEANU | 19 | 28 | 22,41 | -15,2 % | L.GALLO | 47/123/216/148 |
+| 15 | VESCO | 27 | 22 | 41,38 | -34,8 % | M.PROTTI | 29/349/1176/604 |
+| 7 | DENISJONH | 32 | 43 | 35,42 | -9,6 % | M.ROMARY | 52/477/1228/2434 |
+| 11 | BEST SELLER | 44 | 68 | 68,26 | -35,5 % | J.GUILLOCHON | 61/202/459/2395 |
+| 3 | MAPLE TAFFY | 47 | 95 | 62,07 | -24,3 % | J.LACROIX | 97/130/1315/2598 |
+| 9 | YELLOW HAWK | 70 | 106 | 104,45 | -33,0 % | A.SUBIAS | 102/278/36/357 |
+| 13 | MAESTRAL | 70 | 73 | 104,53 | -33,0 % | C.POIRIER | 154/447/506/3343 |
 
 ### 2. PRIX SAINT-NAZAIRE AGGLO
 
