@@ -4,89 +4,89 @@
   "reunion": 5,
   "heure_depart": 1794668940000,
   "distance": 4800,
-  "scraped_at": "2026-11-14T15:58:55.694154+01:00",
-  "minutes_avant_depart": 10,
+  "scraped_at": "2026-11-14T16:05:35.303708+01:00",
+  "minutes_avant_depart": 3,
   "participants": [
     {
       "numPmu": 1,
       "nom": "KIRIKOU DES MERS",
-      "cote_live": 47.0,
+      "cote_live": 81.0,
       "cote_reference": 40.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794668318000
+      "timestamp_cote": 1794668714000
     },
     {
       "numPmu": 2,
       "nom": "STYLE D'EMIRS",
-      "cote_live": 49.0,
+      "cote_live": 58.0,
       "cote_reference": 40.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794668318000
+      "timestamp_cote": 1794668714000
     },
     {
       "numPmu": 3,
       "nom": "GARDIEN DE MUSEE",
-      "cote_live": 29.0,
+      "cote_live": 49.0,
       "cote_reference": 37.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794668318000
+      "timestamp_cote": 1794668714000
     },
     {
       "numPmu": 4,
       "nom": "THELEME",
-      "cote_live": 3.4,
+      "cote_live": 3.9,
       "cote_reference": 3.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794668318000
+      "timestamp_cote": 1794668714000
     },
     {
       "numPmu": 5,
       "nom": "KINGLAND",
-      "cote_live": 2.3,
+      "cote_live": 1.7,
       "cote_reference": 1.8,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794668318000
+      "timestamp_cote": 1794668714000
     },
     {
       "numPmu": 6,
       "nom": "ZARAKHAN",
-      "cote_live": 18.0,
+      "cote_live": 25.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794668318000
+      "timestamp_cote": 1794668714000
     },
     {
       "numPmu": 7,
       "nom": "JET BLUE",
-      "cote_live": 10.0,
+      "cote_live": 15.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794668318000
+      "timestamp_cote": 1794668714000
     },
     {
       "numPmu": 8,
       "nom": "COEUR D'AMOUR",
-      "cote_live": 26.0,
+      "cote_live": 35.0,
       "cote_reference": 29.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794668318000
+      "timestamp_cote": 1794668714000
     },
     {
       "numPmu": 9,
       "nom": "LEADER SPORT",
-      "cote_live": 6.6,
+      "cote_live": 8.4,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794668318000
+      "timestamp_cote": 1794668714000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -164,6 +164,66 @@
         "7": 10.0,
         "8": 26.0,
         "9": 6.6
+      }
+    },
+    {
+      "scraped_at": "2026-11-14T16:03:35.063934+01:00",
+      "minutes_avant_depart": 5.420579783333333,
+      "cotes": {
+        "1": 75.0,
+        "2": 53.0,
+        "3": 43.0,
+        "4": 5.0,
+        "5": 1.5,
+        "6": 24.0,
+        "7": 15.0,
+        "8": 35.0,
+        "9": 10.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-14T16:04:15.005112+01:00",
+      "minutes_avant_depart": 4.753911283333333,
+      "cotes": {
+        "1": 78.0,
+        "2": 54.0,
+        "3": 44.0,
+        "4": 4.5,
+        "5": 1.5,
+        "6": 23.0,
+        "7": 16.0,
+        "8": 34.0,
+        "9": 10.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-14T16:04:54.926483+01:00",
+      "minutes_avant_depart": 4.08724285,
+      "cotes": {
+        "1": 79.0,
+        "2": 55.0,
+        "3": 46.0,
+        "4": 4.4,
+        "5": 1.6,
+        "6": 23.0,
+        "7": 14.0,
+        "8": 33.0,
+        "9": 10.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-14T16:05:35.303708+01:00",
+      "minutes_avant_depart": 3.4152388,
+      "cotes": {
+        "1": 81.0,
+        "2": 58.0,
+        "3": 49.0,
+        "4": 3.9,
+        "5": 1.7,
+        "6": 25.0,
+        "7": 15.0,
+        "8": 35.0,
+        "9": 8.4
       }
     }
   ]
