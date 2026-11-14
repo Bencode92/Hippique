@@ -96,21 +96,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX CAP ATLANTIQUE
 
-*19h33 · plat · 2100 m · 11 partants · cotes à T−8:07*
+*19h33 · plat · 2100 m · 11 partants · cotes à T−3:28*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 5 | OSER ROSE | 2,9 | 1,3 | 3,52 | -17,5 % | A.SUBIAS | 102/90/247/4019 |
-| 8 | ZELZANA | 5 | 18 | 5,48 | -8,8 % | T.BREBION | 84/123/4/748 |
-| 3 | MICHEL | 8,3 | 10 | 9,56 | -13,2 % | P.BAZIRE | 57/117/105/3694 |
-| 4 | FELINI | 11 | 43 | 12,72 | -13,5 % | Y.BARILLE | 81/31/3/1234 |
-| 7 | MARIA JOANA | 11 | 23 | 13,62 | -19,2 % | J.GUILLOCHON | 61/42/233/3235 |
-| 1 | NEBEK BLAGNY | 12 | 24 | 14,72 | -18,5 % | C.RAIMBAULT | 83/28/1791/997 |
-| 11 | JOHNNY DRIVE | 12 | 62 | 14,09 | -14,8 % | M.FAVRIAUX | 54/276/35/349 |
-| 2 | SHIRDIHENGE | 14 | 13 | 18,45 | -24,1 % | Y.ROUSSET | 56/123/242/148 |
-| 6 | ARVEN GLAZ | 26 | 48 | 37,83 | -31,3 % | L.POGGIONOVO | 75/147/274/1676 |
-| 9 | LADIES DAY | 57 | 36 | 86,12 | -33,8 % | M.JUSTUM | 87/359/914/762 |
-| 10 | CHRISJONH | 66 | 175 | 105,58 | -37,5 % | M.ROMARY | 52/477/1228/1842 |
+| 5 | OSER ROSE | 3,9 | 1,3 | 4,64 | -16,0 % | A.SUBIAS | 102/90/247/4019 |
+| 8 | ZELZANA | 4,3 | 18 | 4,66 | -7,8 % | T.BREBION | 84/123/4/748 |
+| 4 | FELINI | 5,7 | 43 | 5,99 | -4,8 % | Y.BARILLE | 81/31/3/1234 |
+| 3 | MICHEL | 7,5 | 10 | 8,52 | -12,0 % | P.BAZIRE | 57/117/105/3694 |
+| 7 | MARIA JOANA | 11 | 23 | 13,66 | -19,5 % | J.GUILLOCHON | 61/42/233/3235 |
+| 11 | JOHNNY DRIVE | 13 | 62 | 15,51 | -16,2 % | M.FAVRIAUX | 54/276/35/349 |
+| 1 | NEBEK BLAGNY | 14 | 24 | 17,68 | -20,8 % | C.RAIMBAULT | 83/28/1791/997 |
+| 2 | SHIRDIHENGE | 16 | 13 | 21,64 | -26,1 % | Y.ROUSSET | 56/123/242/148 |
+| 6 | ARVEN GLAZ | 31 | 48 | 46,32 | -33,1 % | L.POGGIONOVO | 75/147/274/1676 |
+| 9 | LADIES DAY | 69 | 36 | 105,78 | -34,8 % | M.JUSTUM | 87/359/914/762 |
+| 10 | CHRISJONH | 77 | 175 | 124,46 | -38,1 % | M.ROMARY | 52/477/1228/1842 |
 
 ### 6. PRIX LE GUALES DE MEZAUBRAN
 
