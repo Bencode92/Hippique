@@ -4,35 +4,35 @@
   "reunion": 5,
   "heure_depart": 1794668940000,
   "distance": 4800,
-  "scraped_at": "2026-11-14T16:05:35.303708+01:00",
-  "minutes_avant_depart": 3,
+  "scraped_at": "2026-11-14T16:08:14.982388+01:00",
+  "minutes_avant_depart": 1,
   "participants": [
     {
       "numPmu": 1,
       "nom": "KIRIKOU DES MERS",
-      "cote_live": 81.0,
+      "cote_live": 108.0,
       "cote_reference": 40.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794668714000
+      "timestamp_cote": 1794668888000
     },
     {
       "numPmu": 2,
       "nom": "STYLE D'EMIRS",
-      "cote_live": 58.0,
+      "cote_live": 55.0,
       "cote_reference": 40.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794668714000
+      "timestamp_cote": 1794668888000
     },
     {
       "numPmu": 3,
       "nom": "GARDIEN DE MUSEE",
-      "cote_live": 49.0,
+      "cote_live": 48.0,
       "cote_reference": 37.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794668714000
+      "timestamp_cote": 1794668888000
     },
     {
       "numPmu": 4,
@@ -41,7 +41,7 @@
       "cote_reference": 3.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794668714000
+      "timestamp_cote": 1794668888000
     },
     {
       "numPmu": 5,
@@ -50,43 +50,43 @@
       "cote_reference": 1.8,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794668714000
+      "timestamp_cote": 1794668888000
     },
     {
       "numPmu": 6,
       "nom": "ZARAKHAN",
-      "cote_live": 25.0,
+      "cote_live": 27.0,
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794668714000
+      "timestamp_cote": 1794668888000
     },
     {
       "numPmu": 7,
       "nom": "JET BLUE",
-      "cote_live": 15.0,
+      "cote_live": 13.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794668714000
+      "timestamp_cote": 1794668888000
     },
     {
       "numPmu": 8,
       "nom": "COEUR D'AMOUR",
-      "cote_live": 35.0,
+      "cote_live": 24.0,
       "cote_reference": 29.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794668714000
+      "timestamp_cote": 1794668888000
     },
     {
       "numPmu": 9,
       "nom": "LEADER SPORT",
-      "cote_live": 8.4,
+      "cote_live": 8.2,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794668714000
+      "timestamp_cote": 1794668888000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -224,6 +224,66 @@
         "7": 15.0,
         "8": 35.0,
         "9": 8.4
+      }
+    },
+    {
+      "scraped_at": "2026-11-14T16:06:14.886221+01:00",
+      "minutes_avant_depart": 2.7539059666666663,
+      "cotes": {
+        "1": 83.0,
+        "2": 43.0,
+        "3": 44.0,
+        "4": 3.8,
+        "5": 1.7,
+        "6": 25.0,
+        "7": 15.0,
+        "8": 33.0,
+        "9": 7.9
+      }
+    },
+    {
+      "scraped_at": "2026-11-14T16:06:54.983304+01:00",
+      "minutes_avant_depart": 2.0872372666666665,
+      "cotes": {
+        "1": 92.0,
+        "2": 46.0,
+        "3": 44.0,
+        "4": 3.9,
+        "5": 1.7,
+        "6": 26.0,
+        "7": 14.0,
+        "8": 28.0,
+        "9": 8.3
+      }
+    },
+    {
+      "scraped_at": "2026-11-14T16:07:35.160090+01:00",
+      "minutes_avant_depart": 1.4205689833333333,
+      "cotes": {
+        "1": 99.0,
+        "2": 51.0,
+        "3": 47.0,
+        "4": 3.9,
+        "5": 1.7,
+        "6": 26.0,
+        "7": 14.0,
+        "8": 24.0,
+        "9": 8.3
+      }
+    },
+    {
+      "scraped_at": "2026-11-14T16:08:14.982388+01:00",
+      "minutes_avant_depart": 0.7539005833333333,
+      "cotes": {
+        "1": 108.0,
+        "2": 55.0,
+        "3": 48.0,
+        "4": 3.9,
+        "5": 1.7,
+        "6": 27.0,
+        "7": 13.0,
+        "8": 24.0,
+        "9": 8.2
       }
     }
   ]
