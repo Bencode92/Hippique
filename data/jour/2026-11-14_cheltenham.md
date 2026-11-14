@@ -72,16 +72,16 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | SIR GALAHAD | 3,7 | LEWIS SAUNDERS | –/–/–/– |
-| 8 | IFIWEREARICHMAN | 3,9 | EOIN STAPLES | –/–/–/– |
-| 7 | BLIZZARD OF OZ | 5 | RICHIE MCLERNON | –/–/–/– |
-| 16 | WILLIAM YEATS | 6,6 | JONATHAN ENGLAND | –/–/–/– |
-| 14 | AIMERIC | 8,7 | WILLIAM SHANAHAN | –/448/–/– |
-| 9 | MARGARET'S LEGACY | 13 | RICHARD UPTON | –/–/–/– |
-| 12 | HARTUR D'ARC | 25 | CONOR SMITHERS | –/–/–/– |
-| 3 | RAMBO T | 28 | SEAN BOWEN | –/–/–/– |
-| 13 | BLACK BAMBOO | 252 | MICHAEL KENNEALLY | –/895/–/– |
-| 5 | LUCKY LYREEN | – | FREDDIE KEIGHLEY | –/–/–/– |
+| 16 | WILLIAM YEATS | 4,1 | JONATHAN ENGLAND | –/–/–/– |
+| 14 | AIMERIC | 5,1 | WILLIAM SHANAHAN | –/448/–/– |
+| 3 | RAMBO T | 5,2 | SEAN BOWEN | –/–/–/– |
+| 8 | IFIWEREARICHMAN | 5,4 | EOIN STAPLES | –/–/–/– |
+| 9 | MARGARET'S LEGACY | 8,7 | RICHARD UPTON | –/–/–/– |
+| 2 | SIR GALAHAD | 10 | LEWIS SAUNDERS | –/–/–/– |
+| 13 | BLACK BAMBOO | 19 | MICHAEL KENNEALLY | –/895/–/– |
+| 7 | BLIZZARD OF OZ | 24 | RICHIE MCLERNON | –/–/–/– |
+| 5 | LUCKY LYREEN | 56 | FREDDIE KEIGHLEY | –/–/–/– |
+| 12 | HARTUR D'ARC | 75 | CONOR SMITHERS | –/–/–/– |
 
 ### 6. PADDY POWER INTERMEDIATE HANDICAP HURDLE (CLASS 3)
 
@@ -89,12 +89,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | DAYLATEDOLLARSHORT | 1,4 | SEAN BOWEN |
+| 1 | DAYLATEDOLLARSHORT | 2,2 | SEAN BOWEN |
 | 9 | HILLBERRY HILL | 4,5 | TOM BELLAMY |
-| 10 | SUNNY SOUTH WEST | 13 | MICHAEL KENNEALLY |
-| 13 | GIVE HIM A CHANCE | 13 | MR ALAN O'SULLIVAN |
-| 3 | OPEN SECRET | 15 | JOSH WILLIAMSON |
-| 5 | SEAMOON STORY | 47 | DAIRE MCCONVILLE |
+| 10 | SUNNY SOUTH WEST | 5 | MICHAEL KENNEALLY |
+| 5 | SEAMOON STORY | 6,7 | DAIRE MCCONVILLE |
+| 13 | GIVE HIM A CHANCE | 11 | MR ALAN O'SULLIVAN |
+| 3 | OPEN SECRET | 24 | JOSH WILLIAMSON |
 
 ### 7. OPEN NATIONAL HUNT FLAT RACE (CLASS 1)(LISTED RACE)
 
@@ -102,13 +102,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 7 | MISS MASTER | 2 | SEAN BOWEN | –/–/–/– |
-| 3 | ELEGANTEMENTE | 4,5 | J L GLEESON | –/843/–/– |
-| 4 | GYPSY SKY | 8 | RICHIE MCLERNON | –/–/–/– |
-| 15 | SOLERETTA | 8 | HARRY SKELTON | –/–/–/– |
-| 14 | SHE WAS THE ONE | 9,6 | DANIEL KING | –/559/–/– |
-| 6 | KSHIRA SAGARA | 24 | ALEX HARVEY | –/–/–/– |
-| 13 | SARAH'S SISTER | 48 | JONATHAN BURKE | –/–/–/– |
-| 1 | CLOVELLY CHARM | – | SEAN FLANAGAN | –/–/–/– |
-| 2 | EASTERN WHISPER | – | HARRY COBDEN | –/–/–/3870 |
-| 10 | ORDERANDOUT | – | JACK QUINLAN | –/–/–/– |
+| 3 | ELEGANTEMENTE | 3,2 | J L GLEESON | –/843/–/– |
+| 15 | SOLERETTA | 3,9 | HARRY SKELTON | –/–/–/– |
+| 2 | EASTERN WHISPER | 7,2 | HARRY COBDEN | –/–/–/3870 |
+| 14 | SHE WAS THE ONE | 9,9 | DANIEL KING | –/559/–/– |
+| 4 | GYPSY SKY | 10 | RICHIE MCLERNON | –/–/–/– |
+| 7 | MISS MASTER | 11 | SEAN BOWEN | –/–/–/– |
+| 1 | CLOVELLY CHARM | 15 | SEAN FLANAGAN | –/–/–/– |
+| 13 | SARAH'S SISTER | 25 | JONATHAN BURKE | –/–/–/– |
+| 6 | KSHIRA SAGARA | 36 | ALEX HARVEY | –/–/–/– |
+| 10 | ORDERANDOUT | 39 | JACK QUINLAN | –/–/–/– |

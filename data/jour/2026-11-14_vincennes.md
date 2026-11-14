@@ -94,81 +94,80 @@
 
 ### 5. PRIX DE DUNKERQUE
 
-*15h52 · attelé · 2850 m · 11 partants · cotes de l'extraction*
+*15h52 · attelé · 2850 m · 10 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 11 | MEYDAN VOIRONS | 3,6 | A. LAURENT |
-| 7 | MUST DREAM | 4,9 | CL. DUVALDESTIN |
-| 2 | MISTRAL EXPRESS | 6 | B. ROCHARD |
-| 10 | MUSCLE DREAM | 6,6 | M. MOTTIER |
-| 9 | MALMO DE PUCH | 11 | A. GUARATO |
-| 1 | MILAN DU BOSQUET | 12 | A. BARRIER |
-| 5 | MAGIC JOHN | 15 | P.Y. VERVA |
-| 6 | MON PLAISIR | 19 | A. REBECHE |
-| 8 | MUSCDARCHE | 40 | A. COLLETTE |
-| 4 | MORPHEUS DU LOISIR | 51 | A. ABRIVARD |
-| 3 | MY DREAM DU GRAIS | 55 | M. ABRIVARD |
+| 11 | MEYDAN VOIRONS | 3,3 | A. LAURENT |
+| 2 | MISTRAL EXPRESS | 5,6 | B. ROCHARD |
+| 7 | MUST DREAM | 6,3 | CL. DUVALDESTIN |
+| 10 | MUSCLE DREAM | 6,9 | M. MOTTIER |
+| 5 | MAGIC JOHN | 8,6 | P.Y. VERVA |
+| 9 | MALMO DE PUCH | 10 | A. GUARATO |
+| 1 | MILAN DU BOSQUET | 13 | A. BARRIER |
+| 6 | MON PLAISIR | 33 | A. REBECHE |
+| 8 | MUSCDARCHE | 39 | A. COLLETTE |
+| 4 | MORPHEUS DU LOISIR | 74 | A. ABRIVARD |
 
 ### 6. PRIX DE BRIOUDE
 
-*16h25 · monté · 2700 m · 13 partants · cotes de l'extraction*
+*16h27 · monté · 2700 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 13 | HASHTAG SIMONI | 5,6 | E. RAFFIN |
-| 4 | JADE DU PARC | 6,5 | M. MOTTIER |
-| 5 | DAMISELA | 6,6 | A. ABRIVARD |
-| 9 | JOBALASKO BLEU | 7,5 | A. COLLETTE |
-| 6 | JILANZA DU MOULIN | 7,8 | B. ROCHARD |
-| 7 | JUST A COUET | 9,3 | CL. FRECELLE |
-| 8 | JANTARA DESBOIS | 9,7 | Mme T. MATHIAS-MAISONNETTE |
-| 12 | JUSTE SNOB | 19 | AURELIEN DESMARRES |
-| 11 | HOLLYWOOD GIRL | 28 | GUILLAUME MARTIN |
-| 3 | JAMES OF CARLY | 30 | J.Y. RICART |
-| 10 | INFIEL | 32 | P.Y. VERVA |
-| 1 | IBILI D'OCCAGNES | 56 | Mme CLEA ROGER |
-| 2 | IKITORI | 71 | Mme CL. VERVA |
+| 6 | JILANZA DU MOULIN | 4,4 | B. ROCHARD |
+| 13 | HASHTAG SIMONI | 4,6 | E. RAFFIN |
+| 5 | DAMISELA | 7,4 | A. ABRIVARD |
+| 8 | JANTARA DESBOIS | 7,4 | Mme T. MATHIAS-MAISONNETTE |
+| 7 | JUST A COUET | 9,6 | CL. FRECELLE |
+| 9 | JOBALASKO BLEU | 10 | A. COLLETTE |
+| 4 | JADE DU PARC | 11 | M. MOTTIER |
+| 12 | JUSTE SNOB | 25 | AURELIEN DESMARRES |
+| 11 | HOLLYWOOD GIRL | 25 | GUILLAUME MARTIN |
+| 10 | INFIEL | 38 | P.Y. VERVA |
+| 3 | JAMES OF CARLY | 79 | J.Y. RICART |
+| 1 | IBILI D'OCCAGNES | 99 | Mme CLEA ROGER |
+| 2 | IKITORI | 176 | Mme CL. VERVA |
 
 ### 7. PRIX DU LANGUEDOC
 
-*17h00 · attelé · 2850 m · 13 partants · cotes de l'extraction*
+*17h07 · attelé · 2850 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 9 | ISOFOU DU CHENE | 4 | P.PH. PLOQUIN |
-| 11 | IBISCUS MAN | 4,3 | M. MOTTIER |
-| 13 | HUBBLE DU VIVIER | 4,8 | J.M. BAZIRE |
-| 8 | JILORD VIVA | 6 | E. RAFFIN |
+| 11 | IBISCUS MAN | 3,3 | M. MOTTIER |
+| 8 | JILORD VIVA | 5 | E. RAFFIN |
+| 9 | ISOFOU DU CHENE | 5 | P.PH. PLOQUIN |
+| 13 | HUBBLE DU VIVIER | 5,8 | J.M. BAZIRE |
 | 7 | JANGO VICI | 11 | B. ROCHARD |
-| 12 | KING OPERA | 14 | W. BIGEON |
-| 3 | HURRICANE CARTER | 31 | A. ABRIVARD |
-| 4 | INDUS VAL | 33 | CH. MARTENS |
-| 6 | HORATIUS D'ELA | 35 | M. ABRIVARD |
-| 5 | INVICTUS MADIBA | 55 | A. COLLETTE |
-| 10 | HARLEM DE BUCY | 69 | F. LAGADEUC |
-| 1 | DIVA DEL RONCO | 123 | V. CIOTOLA |
-| 2 | HANNAH | 192 | M. GYRE |
+| 12 | KING OPERA | 11 | W. BIGEON |
+| 3 | HURRICANE CARTER | 50 | A. ABRIVARD |
+| 4 | INDUS VAL | 55 | CH. MARTENS |
+| 6 | HORATIUS D'ELA | 55 | M. ABRIVARD |
+| 10 | HARLEM DE BUCY | 65 | F. LAGADEUC |
+| 5 | INVICTUS MADIBA | 90 | A. COLLETTE |
+| 1 | DIVA DEL RONCO | 280 | V. CIOTOLA |
+| 2 | HANNAH | 528 | M. GYRE |
 
 ### 8. PRIX DE MANDELIEU
 
-*17h35 · monté · 2175 m · 13 partants · cotes de l'extraction*
+*17h40 · monté · 2175 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 6 | KAP ORNE | 3,2 | V. SAUSSAYE |
-| 7 | KENIDILLE | 6,1 | B. ROCHARD |
-| 12 | KELVALSE CASTELETS | 7,8 | GUILLAUME MARTIN |
-| 11 | KEPI ROUGE | 8,1 | A. COLLETTE |
-| 13 | KANSAS QUESNOT | 10 | P.Y. VERVA |
-| 5 | KOPA VRIE | 12 | A. ABRIVARD |
-| 10 | KING OF JIEL | 15 | M. LELIEVRE |
-| 4 | NICE STEEL | 18 | P.PH. PLOQUIN |
-| 8 | GLOBAL ENJOY | 26 | M. MOTTIER |
-| 2 | QUEEN OF THE NIGHT | 31 | E. RAFFIN |
-| 9 | KASBAH PERRINE | 32 | CL. FRECELLE |
-| 3 | BIG LITTLE MAN | 156 | A. GENDROT |
-| 1 | ROCKY OASIS | 223 | Mme C. BLAIZOT |
+| 12 | KELVALSE CASTELETS | 3,4 | GUILLAUME MARTIN |
+| 5 | KOPA VRIE | 6,6 | A. ABRIVARD |
+| 6 | KAP ORNE | 7,4 | V. SAUSSAYE |
+| 7 | KENIDILLE | 7,9 | B. ROCHARD |
+| 11 | KEPI ROUGE | 8 | A. COLLETTE |
+| 13 | KANSAS QUESNOT | 11 | P.Y. VERVA |
+| 8 | GLOBAL ENJOY | 22 | M. MOTTIER |
+| 10 | KING OF JIEL | 22 | M. LELIEVRE |
+| 4 | NICE STEEL | 23 | P.PH. PLOQUIN |
+| 2 | QUEEN OF THE NIGHT | 25 | E. RAFFIN |
+| 9 | KASBAH PERRINE | 26 | CL. FRECELLE |
+| 3 | BIG LITTLE MAN | 113 | A. GENDROT |
+| 1 | ROCKY OASIS | 177 | Mme C. BLAIZOT |
 
 ### 9. PRIX D'ARGENTAN
 
@@ -176,11 +175,11 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 7 | JE TE CHERCHE | 2,3 | THEO DUVALDESTIN |
-| 8 | JIZOU D'ETANG | 2,8 | D. THOMAIN |
-| 2 | JANE AIMEE | 5,4 | E. RAFFIN |
+| 7 | JE TE CHERCHE | 2,1 | THEO DUVALDESTIN |
+| 8 | JIZOU D'ETANG | 2,5 | D. THOMAIN |
+| 2 | JANE AIMEE | 8,4 | E. RAFFIN |
 | 1 | JASMINE DE VAU | 17 | CH. DREUX |
-| 3 | IVRIG VIKING | 22 | P.PH. PLOQUIN |
-| 6 | KID BELLAY | 28 | A. ABRIVARD |
-| 5 | JAPPELOUP TURGOT | 45 | M. ABRIVARD |
-| 4 | INFERNO PIPER | 81 | S. FERRARA |
+| 3 | IVRIG VIKING | 21 | P.PH. PLOQUIN |
+| 6 | KID BELLAY | 32 | A. ABRIVARD |
+| 5 | JAPPELOUP TURGOT | 51 | M. ABRIVARD |
+| 4 | INFERNO PIPER | 86 | S. FERRARA |

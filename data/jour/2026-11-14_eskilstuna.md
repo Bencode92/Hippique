@@ -27,57 +27,57 @@
 
 ### 7. BREEDERS CROWN 4 ANS MÂLES ET HONGRES   SUEDE
 
-*15h44 · attelé · 2140 m · 12 partants · cotes de l'extraction*
+*15h47 · attelé · 2140 m · 12 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 4 | ZAREX | 1,9 | D. WAJERSTEN |
-| 2 | RECYCLE CASH | 6,2 | M.A. DJUSE |
-| 5 | GAP KRONOS | 8 | O. KIHLSTROM |
-| 9 | RAPHAEL | 13 | R.N. SKOGLUND |
-| 1 | COLD BLAZE | 14 | C.J. JEPSON |
-| 6 | GUMSHOE SOX | 14 | M.E. DJUSE |
-| 11 | SVEN KUCE | 26 | G. JOHANSSON |
-| 8 | JONTE GODIVA | 27 | U. OHLSSON |
-| 3 | EJNAR FACE | 34 | A. KOLGJINI |
+| 4 | ZAREX | 3,5 | D. WAJERSTEN |
+| 2 | RECYCLE CASH | 4,5 | M.A. DJUSE |
+| 11 | SVEN KUCE | 6 | G. JOHANSSON |
+| 5 | GAP KRONOS | 8,6 | O. KIHLSTROM |
+| 6 | GUMSHOE SOX | 11 | M.E. DJUSE |
+| 1 | COLD BLAZE | 12 | C.J. JEPSON |
+| 8 | JONTE GODIVA | 12 | U. OHLSSON |
+| 12 | LUGANO CORTINA | 33 | B. GOOP |
+| 3 | EJNAR FACE | 39 | A. KOLGJINI |
 | 7 | DON GAAGAA | 45 | O.J. OSTRE |
-| 10 | JOKER IMA | – | P.G. NORMAN |
-| 12 | LUGANO CORTINA | – | B. GOOP |
+| 9 | RAPHAEL | 50 | R.N. SKOGLUND |
+| 10 | JOKER IMA | 156 | P.G. NORMAN |
 
 ### 9. BREEDERS CROWN 3 ANS FEMELLES           SUEDE
 
-*16h28 · attelé · 2140 m · 12 partants · cotes de l'extraction*
+*16h35 · attelé · 2140 m · 12 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 3 | ZEEBREEZE | 1,3 | M.E. DJUSE |
-| 10 | CRUISER | 8,1 | J. UNTERSTEINER |
-| 4 | GRACE IN HEAVEN | 12 | D. WAJERSTEN |
-| 6 | WENDY | 14 | M. FORSS |
-| 1 | THAI MEDINA | 22 | B. GOOP |
-| 5 | MELLBY ORKIDE | 37 | M.A. DJUSE |
-| 7 | HAWTHORNE EFFECT | 56 | V. ROSLEFF |
-| 9 | MISS BRIGHTON | 56 | O. KIHLSTROM |
-| 11 | GUILIA BAROSSO | 56 | S. PERSSON |
-| 2 | I SEE TAIL LIGHTS | – | M.B. SVEDBERG |
-| 8 | ARIZONA TROT | – | A. LINDBLOM |
-| 12 | GLOBAL HALO | – | T. MIFSUD |
+| 3 | ZEEBREEZE | 3,4 | M.E. DJUSE |
+| 6 | WENDY | 6,2 | M. FORSS |
+| 1 | THAI MEDINA | 6,6 | B. GOOP |
+| 4 | GRACE IN HEAVEN | 7,2 | D. WAJERSTEN |
+| 2 | I SEE TAIL LIGHTS | 9,1 | M.B. SVEDBERG |
+| 12 | GLOBAL HALO | 9,2 | T. MIFSUD |
+| 9 | MISS BRIGHTON | 15 | O. KIHLSTROM |
+| 10 | CRUISER | 20 | J. UNTERSTEINER |
+| 5 | MELLBY ORKIDE | 26 | M.A. DJUSE |
+| 7 | HAWTHORNE EFFECT | 81 | V. ROSLEFF |
+| 8 | ARIZONA TROT | 105 | A. LINDBLOM |
+| 11 | GUILIA BAROSSO | 226 | S. PERSSON |
 
 ### 11. BREEDERS CROWN 3 ANS MÂLES ET HONGRES   SUEDE
 
-*17h13 · attelé · 2140 m · 12 partants · cotes de l'extraction*
+*17h18 · attelé · 2140 m · 12 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 6 | NANDA DEVI CUT | 4,1 | M.E. DJUSE |
-| 7 | VANCOUVER TILE | 4,1 | B. GOOP |
-| 10 | INTRO | 4,1 | F. PLASSEN |
-| 3 | KODIAK ZET | 5,5 | O. KIHLSTROM |
-| 1 | COM BEST | 8,3 | M.A. DJUSE |
-| 4 | STEADY SPENDER | 8,3 | O.J. OSTRE |
-| 2 | NO HITTER | – | C.J. JEPSON |
-| 5 | CITY SLICKER | – | J. UNTERSTEINER |
-| 8 | NEUTRON STAR | – | C. SJOSTROM |
-| 9 | IN THE WIND GAR | – | R. BAKKER |
-| 11 | MISTER NABAB | – | D. WAJERSTEN |
-| 12 | IN FINE FETTLE | – | M. LILIUS |
+| 3 | KODIAK ZET | 2,9 | O. KIHLSTROM |
+| 1 | COM BEST | 6,1 | M.A. DJUSE |
+| 6 | NANDA DEVI CUT | 6,3 | M.E. DJUSE |
+| 10 | INTRO | 8,7 | F. PLASSEN |
+| 5 | CITY SLICKER | 11 | J. UNTERSTEINER |
+| 4 | STEADY SPENDER | 15 | O.J. OSTRE |
+| 2 | NO HITTER | 16 | C.J. JEPSON |
+| 9 | IN THE WIND GAR | 18 | R. BAKKER |
+| 11 | MISTER NABAB | 23 | D. WAJERSTEN |
+| 8 | NEUTRON STAR | 46 | C. SJOSTROM |
+| 7 | VANCOUVER TILE | 58 | B. GOOP |
+| 12 | IN FINE FETTLE | 154 | M. LILIUS |
