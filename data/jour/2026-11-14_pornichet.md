@@ -152,15 +152,15 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX VICOMTE DU BOISPEAN
 
-*21h09 · plat · 2400 m · 8 partants · cotes à T−20:53*
+*21h09 · plat · 2400 m · 8 partants · cotes à T−16:53*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 5 | ALWAYS WELCOME | 1,8 | 1,1 | 1,95 | -7,6 % | A.BAUDRON | –/89/142/39 |
-| 1 | LOFSONGUR ISLANDE | 5 | 12 | 5,00 | **+0,1 %** | A.PELTIER | –/28/73/1103 |
-| 2 | ALMIRO | 6 | 9,7 | 6,10 | -1,7 % | F.ANSART | –/54/53/850 |
-| 3 | HAUSSEZ | 11 | 29 | 14,26 | -22,9 % | L.LE GEAY | –/352/11/619 |
-| 4 | MY EDEN JAMES | 19 | 40 | 27,06 | -29,8 % | P.LOTOUT | –/147/576/2072 |
-| 7 | BY FAR | 23 | 51 | 30,09 | -23,6 % | B.CARON | –/516/1078/1583 |
-| 6 | JULDIKO | 25 | 64 | 34,56 | -27,7 % | T.BRIAND | –/696/557/3257 |
-| 8 | ISTOUTIE | 38 | 70 | 65,36 | -41,9 % | TH.LIMAYRAC | –/–/989/1486 |
+| 5 | ALWAYS WELCOME | 1,9 | 1,1 | 2,00 | -4,8 % | A.BAUDRON | –/89/142/39 |
+| 1 | LOFSONGUR ISLANDE | 5,1 | 12 | 4,99 | **+2,2 %** | A.PELTIER | –/28/73/1103 |
+| 2 | ALMIRO | 5,8 | 9,7 | 5,75 | **+0,9 %** | F.ANSART | –/54/53/850 |
+| 3 | HAUSSEZ | 11 | 29 | 13,92 | -21,0 % | L.LE GEAY | –/352/11/619 |
+| 7 | BY FAR | 19 | 51 | 23,59 | -19,5 % | B.CARON | –/516/1078/1583 |
+| 4 | MY EDEN JAMES | 20 | 40 | 28,05 | -28,7 % | P.LOTOUT | –/147/576/2072 |
+| 6 | JULDIKO | 26 | 64 | 35,31 | -26,4 % | T.BRIAND | –/696/557/3257 |
+| 8 | ISTOUTIE | 40 | 70 | 67,63 | -40,9 % | TH.LIMAYRAC | –/–/989/1486 |
