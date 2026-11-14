@@ -54,23 +54,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX MADAME FRANCOIS ANDRE
 
-*18h27 · plat · 2100 m · 13 partants · cotes à T−29:27*
+*18h27 · plat · 2100 m · 13 partants · cotes à T−25:27*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | PERFECTDAY | 2,5 | 3,3 | 2,88 | -13,2 % | J.MOUTARD | 42/154/80/241 |
-| 6 | AUSPICIOUS | 5,5 | 3,7 | 5,28 | **+4,1 %** | C.GROSBOIS | 26/45/298/1670 |
-| 13 | ROMAN SONG | 7,3 | 11 | 8,40 | -13,1 % | M. ROMARY | 52/215/107/343 |
-| 7 | LES REGATES | 12 | 11 | 14,02 | -14,4 % | J.CLAUDIC | 40/92/1118/3884 |
-| 10 | MRS THUNDERBOLT | 14 | 15 | 18,37 | -23,8 % | M.MARQUETTE | 51/15/13/5063 |
-| 1 | CIRQUE ETOILE | 16 | 9,3 | 21,48 | -25,5 % | T.BREBION | 84/45/4171/2573 |
-| 5 | DREAM D'ARMOR | 22 | 13 | 27,06 | -18,7 % | H.LEBOUC | 22/203/2426/1485 |
-| 11 | WINTERBERRY | 22 | 42 | 30,47 | -27,8 % | T.BLANCHOUIN | 89/90/174/4380 |
-| 9 | LADY YORK | 23 | 17 | 31,24 | -26,4 % | D.SANTIAGO | 19/321/3899/3393 |
-| 8 | BYMOON | 31 | 37 | 46,00 | -32,6 % | A.SUBIAS | 102/116/862/1094 |
-| 2 | RACKHAM DAZ | 45 | 42 | 74,87 | -39,9 % | Y.BARILLE | 81/368/715/3261 |
-| 4 | FAZAYAH | 62 | 74 | 98,41 | -37,0 % | L.POGGIONOVO | 75/251/292/2823 |
-| 12 | NONO DE BEAUCHENE | 85 | 59 | 130,61 | -34,9 % | Y.ROUSSET | 56/883/2067/5373 |
+| 3 | PERFECTDAY | 2,4 | 3,3 | 2,41 | -0,3 % | J.MOUTARD | 42/154/80/241 |
+| 6 | AUSPICIOUS | 5,7 | 3,7 | 5,91 | -3,5 % | C.GROSBOIS | 26/45/298/1670 |
+| 13 | ROMAN SONG | 7,6 | 11 | 8,75 | -13,1 % | M. ROMARY | 52/215/107/343 |
+| 7 | LES REGATES | 13 | 11 | 15,31 | -15,1 % | J.CLAUDIC | 40/92/1118/3884 |
+| 1 | CIRQUE ETOILE | 14 | 9,3 | 16,69 | -16,1 % | T.BREBION | 84/45/4171/2573 |
+| 10 | MRS THUNDERBOLT | 15 | 15 | 19,80 | -24,2 % | M.MARQUETTE | 51/15/13/5063 |
+| 11 | WINTERBERRY | 23 | 42 | 31,87 | -27,8 % | T.BLANCHOUIN | 89/90/174/4380 |
+| 5 | DREAM D'ARMOR | 24 | 13 | 29,72 | -19,2 % | H.LEBOUC | 22/203/2426/1485 |
+| 9 | LADY YORK | 24 | 17 | 32,61 | -26,4 % | D.SANTIAGO | 19/321/3899/3393 |
+| 8 | BYMOON | 32 | 37 | 47,39 | -32,5 % | A.SUBIAS | 102/116/862/1094 |
+| 2 | RACKHAM DAZ | 45 | 42 | 74,44 | -39,6 % | Y.BARILLE | 81/368/715/3261 |
+| 4 | FAZAYAH | 65 | 74 | 102,91 | -36,8 % | L.POGGIONOVO | 75/251/292/2823 |
+| 12 | NONO DE BEAUCHENE | 80 | 59 | 122,00 | -34,4 % | Y.ROUSSET | 56/883/2067/5373 |
 
 ### 4. PRIX DE BAGUENEAU
 
