@@ -1,6 +1,6 @@
 # PORNICHET — 14/11/2026
 
-8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -96,21 +96,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX CAP ATLANTIQUE
 
-*19h33 · plat · 2100 m · 11 partants · cotes de l'extraction*
+*19h33 · plat · 2100 m · 11 partants · cotes à T−29:27*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 5 | OSER ROSE | 1,3 | 1,58 | -17,9 % | A.SUBIAS | 102/90/247/4019 |
-| 3 | MICHEL | 10 | 12,17 | -17,9 % | P.BAZIRE | 57/117/105/3694 |
-| 2 | SHIRDIHENGE | 13 | 17,33 | -25,0 % | Y.ROUSSET | 56/123/242/148 |
-| 8 | ZELZANA | 18 | 27,23 | -33,9 % | T.BREBION | 84/123/4/748 |
-| 7 | MARIA JOANA | 23 | 36,17 | -36,4 % | J.GUILLOCHON | 61/42/233/3235 |
-| 1 | NEBEK BLAGNY | 24 | 33,74 | -28,9 % | C.RAIMBAULT | 83/28/1791/997 |
-| 9 | LADIES DAY | 36 | 53,32 | -32,5 % | M.JUSTUM | 87/359/914/762 |
-| 4 | FELINI | 43 | 64,88 | -33,7 % | Y.BARILLE | 81/31/3/1234 |
-| 6 | ARVEN GLAZ | 48 | 73,15 | -34,4 % | L.POGGIONOVO | 75/147/274/1676 |
-| 11 | JOHNNY DRIVE | 62 | 96,30 | -35,6 % | M.FAVRIAUX | 54/276/35/349 |
-| 10 | CHRISJONH | 175 | 287,68 | -39,2 % | M.ROMARY | 52/477/1228/1842 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 5 | OSER ROSE | 2,1 | 1,3 | 2,16 | -2,8 % | A.SUBIAS | 102/90/247/4019 |
+| 3 | MICHEL | 6,9 | 10 | 7,77 | -11,2 % | P.BAZIRE | 57/117/105/3694 |
+| 8 | ZELZANA | 7,3 | 18 | 8,49 | -14,0 % | T.BREBION | 84/123/4/748 |
+| 4 | FELINI | 10 | 43 | 11,46 | -12,7 % | Y.BARILLE | 81/31/3/1234 |
+| 7 | MARIA JOANA | 12 | 23 | 15,19 | -21,0 % | J.GUILLOCHON | 61/42/233/3235 |
+| 2 | SHIRDIHENGE | 16 | 13 | 21,72 | -26,3 % | Y.ROUSSET | 56/123/242/148 |
+| 1 | NEBEK BLAGNY | 20 | 24 | 26,88 | -25,6 % | C.RAIMBAULT | 83/28/1791/997 |
+| 11 | JOHNNY DRIVE | 24 | 62 | 34,74 | -30,9 % | M.FAVRIAUX | 54/276/35/349 |
+| 6 | ARVEN GLAZ | 31 | 48 | 46,48 | -33,3 % | L.POGGIONOVO | 75/147/274/1676 |
+| 9 | LADIES DAY | 43 | 36 | 63,80 | -32,6 % | M.JUSTUM | 87/359/914/762 |
+| 10 | CHRISJONH | 86 | 175 | 140,01 | -38,6 % | M.ROMARY | 52/477/1228/1842 |
 
 ### 6. PRIX LE GUALES DE MEZAUBRAN
 
