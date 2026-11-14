@@ -33,24 +33,24 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 2. PRIX SAINT-NAZAIRE AGGLO
 
-*17h52 · plat · 2100 m · 14 partants · cotes à T−3:28*
+*17h52 · plat · 2100 m · 14 partants · cotes à T−0:48*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 9 | DARIYANGEL | 5,2 | 6,3 | 6,71 | -22,5 % | L.PLOMMEE | 36/116/591/819 |
-| 3 | RIGEL | 6,3 | 6,2 | 7,34 | -14,1 % | L.ROUSSEL | 18/31/120/2693 |
-| 15 | BAILEYS ECLAIR | 6,4 | 8,7 | 6,11 | **+4,7 %** | M.FAVRIAUX | 54/276/131/349 |
-| 13 | MURANO | 9 | 3,9 | 9,80 | -8,1 % | J.LACROIX | 97/144/444/1550 |
-| 7 | TREZY BOUNTY | 11 | 20 | 10,40 | **+5,8 %** | E.CRUBLET | 137/371/132/2227 |
-| 5 | HARMATTAN | 12 | 6,6 | 14,03 | -14,5 % | M.JUSTUM | 87/296/394/566 |
-| 1 | SPRINGBOKS | 15 | 35 | 19,88 | -24,6 % | A.SUBIAS | 102/145/354/4383 |
-| 11 | SEDITION | 15 | 22 | 18,54 | -19,1 % | H.LEBOUC | 22/188/14/365 |
-| 4 | DAHARIZ | 18 | 23 | 22,93 | -21,5 % | L.POGGIONOVO | 75/251/292/2823 |
-| 12 | JUREER | 20 | 23 | 27,10 | -26,2 % | L.LE GEAY | –/352/3311/619 |
-| 10 | GOLDEN RIVER | 23 | 20 | 25,37 | -9,3 % | O.ANDIGNE | 77/116/662/2160 |
-| 2 | GABYLOU | 29 | 63 | 36,10 | -19,7 % | Y.ROUSSET | 56/188/420/269 |
-| 6 | DIONYSOS FORLONGE | 50 | 55 | 79,67 | -37,2 % | J.GUILLOCHON | 61/202/1615/2088 |
-| 14 | DELTA SPIRIT | 61 | 94 | 89,82 | -32,1 % | Y.BARILLE | 81/233/530/1055 |
+| 9 | DARIYANGEL | 5,3 | 6,3 | 6,91 | -23,3 % | L.PLOMMEE | 36/116/591/819 |
+| 3 | RIGEL | 5,9 | 6,2 | 6,85 | -13,9 % | L.ROUSSEL | 18/31/120/2693 |
+| 15 | BAILEYS ECLAIR | 7,4 | 8,7 | 6,95 | **+6,5 %** | M.FAVRIAUX | 54/276/131/349 |
+| 5 | HARMATTAN | 9,2 | 6,6 | 10,36 | -11,2 % | M.JUSTUM | 87/296/394/566 |
+| 13 | MURANO | 9,9 | 3,9 | 11,02 | -10,2 % | J.LACROIX | 97/144/444/1550 |
+| 7 | TREZY BOUNTY | 10 | 20 | 9,38 | **+6,6 %** | E.CRUBLET | 137/371/132/2227 |
+| 1 | SPRINGBOKS | 17 | 35 | 23,17 | -26,6 % | A.SUBIAS | 102/145/354/4383 |
+| 4 | DAHARIZ | 18 | 23 | 23,08 | -22,0 % | L.POGGIONOVO | 75/251/292/2823 |
+| 2 | GABYLOU | 19 | 63 | 22,42 | -15,2 % | Y.ROUSSET | 56/188/420/269 |
+| 10 | GOLDEN RIVER | 19 | 20 | 20,52 | -7,4 % | O.ANDIGNE | 77/116/662/2160 |
+| 11 | SEDITION | 19 | 22 | 26,93 | -29,4 % | H.LEBOUC | 22/188/14/365 |
+| 12 | JUREER | 22 | 23 | 30,46 | -27,8 % | L.LE GEAY | –/352/3311/619 |
+| 6 | DIONYSOS FORLONGE | 63 | 55 | 97,98 | -35,7 % | J.GUILLOCHON | 61/202/1615/2088 |
+| 14 | DELTA SPIRIT | 63 | 94 | 93,53 | -32,6 % | Y.BARILLE | 81/233/530/1055 |
 
 ### 3. PRIX MADAME FRANCOIS ANDRE
 
