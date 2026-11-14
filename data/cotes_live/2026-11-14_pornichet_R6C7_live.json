@@ -4,44 +4,44 @@
   "reunion": 6,
   "heure_depart": 1794685020000,
   "distance": 1700,
-  "scraped_at": "2026-11-14T20:20:07.713614+01:00",
-  "minutes_avant_depart": 17,
+  "scraped_at": "2026-11-14T20:24:47.146573+01:00",
+  "minutes_avant_depart": 12,
   "participants": [
     {
       "numPmu": 1,
       "nom": "EVERSTAR",
-      "cote_live": 5.6,
+      "cote_live": 5.9,
       "cote_reference": 6.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794683989000
+      "timestamp_cote": 1794684275000
     },
     {
       "numPmu": 2,
       "nom": "GRIGNETTE",
-      "cote_live": 32.0,
+      "cote_live": 30.0,
       "cote_reference": 33.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794683989000
+      "timestamp_cote": 1794684275000
     },
     {
       "numPmu": 3,
       "nom": "RETIRO",
-      "cote_live": 3.4,
+      "cote_live": 3.1,
       "cote_reference": 5.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794683989000
+      "timestamp_cote": 1794684275000
     },
     {
       "numPmu": 4,
       "nom": "WONDER BOY",
-      "cote_live": 9.6,
+      "cote_live": 10.0,
       "cote_reference": 7.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794683989000
+      "timestamp_cote": 1794684275000
     },
     {
       "numPmu": 5,
@@ -50,25 +50,25 @@
       "cote_reference": 16.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794683989000
+      "timestamp_cote": 1794684275000
     },
     {
       "numPmu": 6,
       "nom": "CENTENARIO",
-      "cote_live": 9.0,
+      "cote_live": 9.9,
       "cote_reference": 6.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794683989000
+      "timestamp_cote": 1794684275000
     },
     {
       "numPmu": 7,
       "nom": "VENT D'OUEST",
-      "cote_live": 52.0,
+      "cote_live": 51.0,
       "cote_reference": 72.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794683989000
+      "timestamp_cote": 1794684275000
     },
     {
       "numPmu": 8,
@@ -77,7 +77,7 @@
       "cote_reference": 6.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794683989000
+      "timestamp_cote": 1794684275000
     },
     {
       "numPmu": 9,
@@ -86,43 +86,43 @@
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794683989000
+      "timestamp_cote": 1794684275000
     },
     {
       "numPmu": 10,
       "nom": "ZENBATI",
-      "cote_live": 17.0,
+      "cote_live": 18.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794683989000
+      "timestamp_cote": 1794684275000
     },
     {
       "numPmu": 11,
       "nom": "MOHYRA",
-      "cote_live": 32.0,
+      "cote_live": 31.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794683989000
+      "timestamp_cote": 1794684275000
     },
     {
       "numPmu": 12,
       "nom": "MEKTOUB ELMY",
-      "cote_live": 45.0,
+      "cote_live": 48.0,
       "cote_reference": 76.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794683989000
+      "timestamp_cote": 1794684275000
     },
     {
       "numPmu": 13,
       "nom": "TSUKI",
-      "cote_live": 23.0,
+      "cote_live": 21.0,
       "cote_reference": 22.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794683989000
+      "timestamp_cote": 1794684275000
     }
   ],
   "hippodrome": "PORNICHET",
@@ -201,6 +201,25 @@
         "11": 32.0,
         "12": 45.0,
         "13": 23.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-14T20:24:47.146573+01:00",
+      "minutes_avant_depart": 12.217076350000001,
+      "cotes": {
+        "1": 5.9,
+        "2": 30.0,
+        "3": 3.1,
+        "4": 10.0,
+        "5": 18.0,
+        "6": 9.9,
+        "7": 51.0,
+        "8": 7.4,
+        "9": 15.0,
+        "10": 18.0,
+        "11": 31.0,
+        "12": 48.0,
+        "13": 21.0
       }
     }
   ]
