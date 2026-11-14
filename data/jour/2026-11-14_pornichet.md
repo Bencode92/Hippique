@@ -1,6 +1,6 @@
 # PORNICHET — 14/11/2026
 
-8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -33,44 +33,44 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 2. PRIX SAINT-NAZAIRE AGGLO
 
-*17h52 · plat · 2100 m · 14 partants · cotes à T−0:48*
+*17h52 · plat · 2100 m · 14 partants · cotes à T−0:08*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 9 | DARIYANGEL | 5,3 | 6,3 | 6,91 | -23,3 % | L.PLOMMEE | 36/116/591/819 |
-| 3 | RIGEL | 5,9 | 6,2 | 6,85 | -13,9 % | L.ROUSSEL | 18/31/120/2693 |
-| 15 | BAILEYS ECLAIR | 7,4 | 8,7 | 6,95 | **+6,5 %** | M.FAVRIAUX | 54/276/131/349 |
-| 5 | HARMATTAN | 9,2 | 6,6 | 10,36 | -11,2 % | M.JUSTUM | 87/296/394/566 |
-| 13 | MURANO | 9,9 | 3,9 | 11,02 | -10,2 % | J.LACROIX | 97/144/444/1550 |
-| 7 | TREZY BOUNTY | 10 | 20 | 9,38 | **+6,6 %** | E.CRUBLET | 137/371/132/2227 |
-| 1 | SPRINGBOKS | 17 | 35 | 23,17 | -26,6 % | A.SUBIAS | 102/145/354/4383 |
-| 4 | DAHARIZ | 18 | 23 | 23,08 | -22,0 % | L.POGGIONOVO | 75/251/292/2823 |
-| 2 | GABYLOU | 19 | 63 | 22,42 | -15,2 % | Y.ROUSSET | 56/188/420/269 |
-| 10 | GOLDEN RIVER | 19 | 20 | 20,52 | -7,4 % | O.ANDIGNE | 77/116/662/2160 |
-| 11 | SEDITION | 19 | 22 | 26,93 | -29,4 % | H.LEBOUC | 22/188/14/365 |
-| 12 | JUREER | 22 | 23 | 30,46 | -27,8 % | L.LE GEAY | –/352/3311/619 |
-| 6 | DIONYSOS FORLONGE | 63 | 55 | 97,98 | -35,7 % | J.GUILLOCHON | 61/202/1615/2088 |
-| 14 | DELTA SPIRIT | 63 | 94 | 93,53 | -32,6 % | Y.BARILLE | 81/233/530/1055 |
+| 9 | DARIYANGEL | 5 | 6,3 | 6,45 | -22,5 % | L.PLOMMEE | 36/116/591/819 |
+| 3 | RIGEL | 5,9 | 6,2 | 6,84 | -13,8 % | L.ROUSSEL | 18/31/120/2693 |
+| 15 | BAILEYS ECLAIR | 6,5 | 8,7 | 6,25 | **+4,0 %** | M.FAVRIAUX | 54/276/131/349 |
+| 5 | HARMATTAN | 9,3 | 6,6 | 10,48 | -11,2 % | M.JUSTUM | 87/296/394/566 |
+| 7 | TREZY BOUNTY | 10 | 20 | 9,37 | **+6,7 %** | E.CRUBLET | 137/371/132/2227 |
+| 13 | MURANO | 11 | 3,9 | 12,45 | -11,6 % | J.LACROIX | 97/144/444/1550 |
+| 10 | GOLDEN RIVER | 17 | 20 | 18,87 | -9,9 % | O.ANDIGNE | 77/116/662/2160 |
+| 1 | SPRINGBOKS | 18 | 35 | 24,75 | -27,3 % | A.SUBIAS | 102/145/354/4383 |
+| 4 | DAHARIZ | 19 | 23 | 24,55 | -22,6 % | L.POGGIONOVO | 75/251/292/2823 |
+| 11 | SEDITION | 21 | 22 | 30,21 | -30,5 % | H.LEBOUC | 22/188/14/365 |
+| 2 | GABYLOU | 22 | 63 | 26,51 | -17,0 % | Y.ROUSSET | 56/188/420/269 |
+| 12 | JUREER | 24 | 23 | 33,63 | -28,6 % | L.LE GEAY | –/352/3311/619 |
+| 14 | DELTA SPIRIT | 71 | 94 | 106,02 | -33,0 % | Y.BARILLE | 81/233/530/1055 |
+| 6 | DIONYSOS FORLONGE | 72 | 55 | 112,72 | -36,1 % | J.GUILLOCHON | 61/202/1615/2088 |
 
 ### 3. PRIX MADAME FRANCOIS ANDRE
 
-*18h27 · plat · 2100 m · 13 partants · cotes de l'extraction*
+*18h27 · plat · 2100 m · 13 partants · cotes à T−29:27*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 3 | PERFECTDAY | 3,3 | 3,71 | -11,2 % | J.MOUTARD | 42/154/80/241 |
-| 6 | AUSPICIOUS | 3,7 | 3,54 | **+4,5 %** | C.GROSBOIS | 26/45/298/1670 |
-| 1 | CIRQUE ETOILE | 9,3 | 10,60 | -12,2 % | T.BREBION | 84/45/4171/2573 |
-| 7 | LES REGATES | 11 | 12,89 | -14,7 % | J.CLAUDIC | 40/92/1118/3884 |
-| 13 | ROMAN SONG | 11 | 15,08 | -27,1 % | M. ROMARY | 52/215/107/343 |
-| 5 | DREAM D'ARMOR | 13 | 14,97 | -13,2 % | H.LEBOUC | 22/203/2426/1485 |
-| 10 | MRS THUNDERBOLT | 15 | 20,27 | -26,0 % | M.MARQUETTE | 51/15/13/5063 |
-| 9 | LADY YORK | 17 | 22,41 | -24,1 % | D.SANTIAGO | 19/321/3899/3393 |
-| 8 | BYMOON | 37 | 54,38 | -32,0 % | A.SUBIAS | 102/116/862/1094 |
-| 2 | RACKHAM DAZ | 42 | 70,55 | -40,5 % | Y.BARILLE | 81/368/715/3261 |
-| 11 | WINTERBERRY | 42 | 64,24 | -34,6 % | T.BLANCHOUIN | 89/90/174/4380 |
-| 12 | NONO DE BEAUCHENE | 59 | 90,42 | -34,7 % | Y.ROUSSET | 56/883/2067/5373 |
-| 4 | FAZAYAH | 74 | 120,48 | -38,6 % | L.POGGIONOVO | 75/251/292/2823 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 3 | PERFECTDAY | 2,5 | 3,3 | 2,88 | -13,2 % | J.MOUTARD | 42/154/80/241 |
+| 6 | AUSPICIOUS | 5,5 | 3,7 | 5,28 | **+4,1 %** | C.GROSBOIS | 26/45/298/1670 |
+| 13 | ROMAN SONG | 7,3 | 11 | 8,40 | -13,1 % | M. ROMARY | 52/215/107/343 |
+| 7 | LES REGATES | 12 | 11 | 14,02 | -14,4 % | J.CLAUDIC | 40/92/1118/3884 |
+| 10 | MRS THUNDERBOLT | 14 | 15 | 18,37 | -23,8 % | M.MARQUETTE | 51/15/13/5063 |
+| 1 | CIRQUE ETOILE | 16 | 9,3 | 21,48 | -25,5 % | T.BREBION | 84/45/4171/2573 |
+| 5 | DREAM D'ARMOR | 22 | 13 | 27,06 | -18,7 % | H.LEBOUC | 22/203/2426/1485 |
+| 11 | WINTERBERRY | 22 | 42 | 30,47 | -27,8 % | T.BLANCHOUIN | 89/90/174/4380 |
+| 9 | LADY YORK | 23 | 17 | 31,24 | -26,4 % | D.SANTIAGO | 19/321/3899/3393 |
+| 8 | BYMOON | 31 | 37 | 46,00 | -32,6 % | A.SUBIAS | 102/116/862/1094 |
+| 2 | RACKHAM DAZ | 45 | 42 | 74,87 | -39,9 % | Y.BARILLE | 81/368/715/3261 |
+| 4 | FAZAYAH | 62 | 74 | 98,41 | -37,0 % | L.POGGIONOVO | 75/251/292/2823 |
+| 12 | NONO DE BEAUCHENE | 85 | 59 | 130,61 | -34,9 % | Y.ROUSSET | 56/883/2067/5373 |
 
 ### 4. PRIX DE BAGUENEAU
 
