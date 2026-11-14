@@ -1,6 +1,6 @@
 # PORNICHET — 14/11/2026
 
-8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -10,26 +10,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 1. PRIX CONSEIL DES EQUIDES PAYS DE LOIRE
 
-*17h17 · plat · 2100 m · 16 partants · cotes de l'extraction*
+*17h17 · plat · 2100 m · 16 partants · cotes à T−29:25*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 1 | KER WELEN | 2,5 | 2,84 | -12,1 % | L.POGGIONOVO | 75/145/1905/2105 |
-| 14 | DRIP | 6,7 | 7,39 | -9,3 % | E.CORALLO | 59/485/1/1381 |
-| 10 | LAKES DANCER | 9,4 | 10,94 | -14,1 % | O.ANDIGNE | 77/47/49/1900 |
-| 5 | ATANASIO | 11 | 13,73 | -19,9 % | H.LEBOUC | 22/47/2243/5 |
-| 6 | MONSIEUR SHELBY | 12 | 15,21 | -21,1 % | L.ROUSSEL | 18/31/1919/2141 |
-| 4 | GOGUEN SPAISE | 13 | 14,66 | -11,3 % | Y.BARILLE | 81/31/17/1344 |
-| 8 | LOLLIPOP DES PINS | 15 | 16,57 | -9,5 % | C.GROSBOIS | 26/102/673/897 |
-| 15 | VESCO | 22 | 33,13 | -33,6 % | M.PROTTI | 29/349/1176/604 |
-| 2 | KEANU | 28 | 38,78 | -27,8 % | L.GALLO | 47/123/216/148 |
-| 12 | KUMRAN | 36 | 44,88 | -19,8 % | A.BARON | 38/98/673/1034 |
-| 7 | DENISJONH | 43 | 49,69 | -13,5 % | M.ROMARY | 52/477/1228/2434 |
-| 11 | BEST SELLER | 68 | 121,26 | -43,9 % | J.GUILLOCHON | 61/202/459/2395 |
-| 13 | MAESTRAL | 73 | 110,49 | -33,9 % | C.POIRIER | 154/447/506/3343 |
-| 16 | BAIKAL | 86 | 130,99 | -34,3 % | A.BERNARD | 95/233/585/3655 |
-| 3 | MAPLE TAFFY | 95 | 144,93 | -34,5 % | J.LACROIX | 97/130/1315/2598 |
-| 9 | YELLOW HAWK | 106 | 154,39 | -31,3 % | A.SUBIAS | 102/278/36/357 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 1 | KER WELEN | 3,3 | 2,5 | 4,00 | -17,5 % | L.POGGIONOVO | 75/145/1905/2105 |
+| 14 | DRIP | 6,4 | 6,7 | 7,00 | -8,6 % | E.CORALLO | 59/485/1/1381 |
+| 5 | ATANASIO | 9,8 | 11 | 11,97 | -18,1 % | H.LEBOUC | 22/47/2243/5 |
+| 6 | MONSIEUR SHELBY | 12 | 12 | 15,19 | -21,0 % | L.ROUSSEL | 18/31/1919/2141 |
+| 4 | GOGUEN SPAISE | 13 | 13 | 14,64 | -11,2 % | Y.BARILLE | 81/31/17/1344 |
+| 10 | LAKES DANCER | 13 | 9,4 | 15,96 | -18,6 % | O.ANDIGNE | 77/47/49/1900 |
+| 8 | LOLLIPOP DES PINS | 15 | 15 | 16,54 | -9,3 % | C.GROSBOIS | 26/102/673/897 |
+| 16 | BAIKAL | 15 | 86 | 18,87 | -20,5 % | A.BERNARD | 95/233/585/3655 |
+| 2 | KEANU | 19 | 28 | 22,66 | -16,2 % | L.GALLO | 47/123/216/148 |
+| 12 | KUMRAN | 21 | 36 | 24,38 | -13,9 % | A.BARON | 38/98/673/1034 |
+| 15 | VESCO | 32 | 22 | 50,71 | -36,9 % | M.PROTTI | 29/349/1176/604 |
+| 7 | DENISJONH | 35 | 43 | 39,55 | -11,5 % | M.ROMARY | 52/477/1228/2434 |
+| 11 | BEST SELLER | 36 | 68 | 55,25 | -34,8 % | J.GUILLOCHON | 61/202/459/2395 |
+| 9 | YELLOW HAWK | 59 | 106 | 88,02 | -33,0 % | A.SUBIAS | 102/278/36/357 |
+| 13 | MAESTRAL | 64 | 73 | 96,05 | -33,4 % | C.POIRIER | 154/447/506/3343 |
+| 3 | MAPLE TAFFY | 85 | 95 | 129,12 | -34,2 % | J.LACROIX | 97/130/1315/2598 |
 
 ### 2. PRIX SAINT-NAZAIRE AGGLO
 
