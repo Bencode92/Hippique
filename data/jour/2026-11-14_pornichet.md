@@ -1,6 +1,6 @@
 # PORNICHET — 14/11/2026
 
-8 courses. 7 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 8 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -132,35 +132,35 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX MOULIN D'ARGENT
 
-*20h37 · plat · 1700 m · 13 partants · cotes à T−1:52*
+*20h37 · plat · 1700 m · 13 partants · cotes à T−0:33*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | RETIRO | 4 | 4,1 | 5,19 | -22,9 % | P.BAZIRE | 57/154/86/5 |
-| 8 | BOTICELLI | 5,1 | 8,2 | 5,37 | -5,0 % | M.FAVRIAUX | 54/71/22/222 |
-| 1 | EVERSTAR | 6,3 | 5,4 | 6,04 | **+4,3 %** | T.BREBION | 84/45/742/582 |
-| 6 | CENTENARIO | 9,5 | 4,1 | 11,40 | -16,7 % | M.MARQUETTE | 51/15/203/1081 |
-| 5 | GRECIAN STAR | 10 | 27 | 10,92 | -8,4 % | A.SUBIAS | 102/123/57/748 |
-| 13 | TSUKI | 12 | 43 | 14,36 | -16,4 % | E.VERHESTRAETEN | 50/13/–/1046 |
-| 9 | BREIZHY BOY | 14 | 34 | 17,20 | -18,6 % | C.RAIMBAULT | 83/28/166/675 |
-| 4 | WONDER BOY | 16 | 19 | 22,01 | -27,3 % | Y.BARILLE | 81/31/10/489 |
-| 10 | ZENBATI | 20 | 18 | 24,85 | -19,5 % | M. ROMARY | 52/215/674/343 |
-| 2 | GRIGNETTE | 39 | 20 | 46,15 | -15,5 % | Y.ROUSSET | 56/123/51/148 |
-| 11 | MOHYRA | 44 | 10 | 66,43 | -33,8 % | M.JUSTUM | 87/149/1634/1436 |
-| 7 | VENT D'OUEST | 64 | 153 | 112,33 | -43,0 % | C.POIRIER | 154/757/684/4287 |
-| 12 | MEKTOUB ELMY | 102 | 102 | 169,39 | -39,8 % | T.LIMAYRAC | 372/713/2768/3527 |
+| 3 | RETIRO | 3,9 | 4,1 | 4,84 | -19,4 % | P.BAZIRE | 57/154/86/5 |
+| 8 | BOTICELLI | 5 | 8,2 | 5,20 | -3,8 % | M.FAVRIAUX | 54/71/22/222 |
+| 1 | EVERSTAR | 6,6 | 5,4 | 6,30 | **+4,8 %** | T.BREBION | 84/45/742/582 |
+| 6 | CENTENARIO | 9 | 4,1 | 10,58 | -15,0 % | M.MARQUETTE | 51/15/203/1081 |
+| 5 | GRECIAN STAR | 11 | 27 | 12,07 | -8,8 % | A.SUBIAS | 102/123/57/748 |
+| 13 | TSUKI | 11 | 43 | 12,82 | -14,2 % | E.VERHESTRAETEN | 50/13/–/1046 |
+| 9 | BREIZHY BOY | 14 | 34 | 17,01 | -17,7 % | C.RAIMBAULT | 83/28/166/675 |
+| 4 | WONDER BOY | 18 | 19 | 23,85 | -24,5 % | Y.BARILLE | 81/31/10/489 |
+| 10 | ZENBATI | 21 | 18 | 26,00 | -19,2 % | M. ROMARY | 52/215/674/343 |
+| 2 | GRIGNETTE | 47 | 20 | 56,02 | -16,1 % | Y.ROUSSET | 56/123/51/148 |
+| 11 | MOHYRA | 52 | 10 | 78,86 | -34,1 % | M.JUSTUM | 87/149/1634/1436 |
+| 7 | VENT D'OUEST | 73 | 153 | 127,77 | -42,9 % | C.POIRIER | 154/757/684/4287 |
+| 12 | MEKTOUB ELMY | 96 | 102 | 157,70 | -39,1 % | T.LIMAYRAC | 372/713/2768/3527 |
 
 ### 8. PRIX VICOMTE DU BOISPEAN
 
-*21h09 · plat · 2400 m · 8 partants · cotes de l'extraction*
+*21h09 · plat · 2400 m · 8 partants · cotes à T−29:33*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 5 | ALWAYS WELCOME | 1,1 | 1,47 | -25,2 % | A.BAUDRON | –/89/142/39 |
-| 2 | ALMIRO | 9,7 | 10,87 | -10,8 % | F.ANSART | –/54/53/850 |
-| 1 | LOFSONGUR ISLANDE | 12 | 13,92 | -13,8 % | A.PELTIER | –/28/73/1103 |
-| 3 | HAUSSEZ | 29 | 47,31 | -38,7 % | L.LE GEAY | –/352/11/619 |
-| 4 | MY EDEN JAMES | 40 | 71,06 | -43,7 % | P.LOTOUT | –/147/576/2072 |
-| 7 | BY FAR | 51 | 75,03 | -32,0 % | B.CARON | –/516/1078/1583 |
-| 6 | JULDIKO | 64 | 109,80 | -41,7 % | T.BRIAND | –/696/557/3257 |
-| 8 | ISTOUTIE | 70 | 129,83 | -46,1 % | TH.LIMAYRAC | –/–/989/1486 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 5 | ALWAYS WELCOME | 1,6 | 1,1 | 1,80 | -10,9 % | A.BAUDRON | –/89/142/39 |
+| 2 | ALMIRO | 5,6 | 9,7 | 5,64 | -0,8 % | F.ANSART | –/54/53/850 |
+| 1 | LOFSONGUR ISLANDE | 6,9 | 12 | 7,13 | -3,2 % | A.PELTIER | –/28/73/1103 |
+| 3 | HAUSSEZ | 12 | 29 | 17,25 | -30,4 % | L.LE GEAY | –/352/11/619 |
+| 7 | BY FAR | 23 | 51 | 30,03 | -23,4 % | B.CARON | –/516/1078/1583 |
+| 4 | MY EDEN JAMES | 25 | 40 | 37,06 | -32,5 % | P.LOTOUT | –/147/576/2072 |
+| 6 | JULDIKO | 32 | 64 | 45,61 | -29,8 % | T.BRIAND | –/696/557/3257 |
+| 8 | ISTOUTIE | 37 | 70 | 63,33 | -41,6 % | TH.LIMAYRAC | –/–/989/1486 |
