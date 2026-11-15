@@ -4,53 +4,53 @@
   "reunion": 1,
   "heure_depart": 1794749640000,
   "distance": 3600,
-  "scraped_at": "2026-11-15T14:24:14.392389+01:00",
-  "minutes_avant_depart": 10,
+  "scraped_at": "2026-11-15T14:28:53.523142+01:00",
+  "minutes_avant_depart": 5,
   "participants": [
     {
       "numPmu": 1,
       "nom": "KING DALEE",
-      "cote_live": 36.0,
+      "cote_live": 39.0,
       "cote_reference": 36.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794749033000
+      "timestamp_cote": 1794749319000
     },
     {
       "numPmu": 2,
       "nom": "NAVY DU SEUIL",
-      "cote_live": 17.0,
+      "cote_live": 19.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794749033000
+      "timestamp_cote": 1794749319000
     },
     {
       "numPmu": 3,
       "nom": "MAGNUM VALLEY",
-      "cote_live": 14.0,
+      "cote_live": 18.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794749033000
+      "timestamp_cote": 1794749319000
     },
     {
       "numPmu": 4,
       "nom": "BAGHERA DU BERLAIS",
-      "cote_live": 5.7,
+      "cote_live": 7.4,
       "cote_reference": 4.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794749033000
+      "timestamp_cote": 1794749319000
     },
     {
       "numPmu": 5,
       "nom": "IRRESITIBLEMENT",
-      "cote_live": 20.0,
+      "cote_live": 22.0,
       "cote_reference": 30.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794749033000
+      "timestamp_cote": 1794749319000
     },
     {
       "numPmu": 6,
@@ -59,34 +59,34 @@
       "cote_reference": 43.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794749033000
+      "timestamp_cote": 1794749319000
     },
     {
       "numPmu": 7,
       "nom": "NOM D'UN CHIEN",
-      "cote_live": 31.0,
+      "cote_live": 38.0,
       "cote_reference": 35.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794749033000
+      "timestamp_cote": 1794749319000
     },
     {
       "numPmu": 8,
       "nom": "HURON BLEU",
-      "cote_live": 2.2,
+      "cote_live": 1.7,
       "cote_reference": 2.4,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794749033000
+      "timestamp_cote": 1794749319000
     },
     {
       "numPmu": 9,
       "nom": "VARSOVIE",
-      "cote_live": 3.9,
+      "cote_live": 4.7,
       "cote_reference": 3.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794749033000
+      "timestamp_cote": 1794749319000
     }
   ],
   "hippodrome": "AUTEUIL",
@@ -104,6 +104,36 @@
         "7": 31.0,
         "8": 2.2,
         "9": 3.9
+      }
+    },
+    {
+      "scraped_at": "2026-11-15T14:28:13.477371+01:00",
+      "minutes_avant_depart": 5.778057283333334,
+      "cotes": {
+        "1": 37.0,
+        "2": 17.0,
+        "3": 17.0,
+        "4": 7.1,
+        "5": 22.0,
+        "6": 40.0,
+        "7": 36.0,
+        "8": 1.7,
+        "9": 4.9
+      }
+    },
+    {
+      "scraped_at": "2026-11-15T14:28:53.523142+01:00",
+      "minutes_avant_depart": 5.11138895,
+      "cotes": {
+        "1": 39.0,
+        "2": 19.0,
+        "3": 18.0,
+        "4": 7.4,
+        "5": 22.0,
+        "6": 39.0,
+        "7": 38.0,
+        "8": 1.7,
+        "9": 4.7
       }
     }
   ]
