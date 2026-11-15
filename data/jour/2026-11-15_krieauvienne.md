@@ -1,8 +1,8 @@
 # KRIEAU (VIENNE) — 15/11/2026
 
-5 courses.
+5 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
@@ -12,15 +12,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KNOWU CUCU | – | JOSEF RUPP JUN. |
-| 2 | EXAKT VENDIL | – | Mme SABINE SCHATZDORFER |
-| 3 | VARADERO VENUS | – | MARTIN FLOH |
-| 4 | SONSHINE DI | – | JOSEF DOPPLER |
-| 5 | ZLATAN TOLL | – | FRANZ JOSEF GRUBER |
-| 6 | DARIA | – | Mme STEFANIE MAYR |
-| 7 | DEAR GAL PETIT | – | JOHANN PREINING JUN. |
-| 8 | SECRET VENUS | – | THOMAS ROYER |
-| 9 | MISTERGOODNEWS | – | CHRISTIAN HOBART |
+| 8 | SECRET VENUS | 1,2 | THOMAS ROYER |
+| 1 | KNOWU CUCU | 16 | JOSEF RUPP JUN. |
+| 5 | ZLATAN TOLL | 19 | FRANZ JOSEF GRUBER |
+| 7 | DEAR GAL PETIT | 19 | JOHANN PREINING JUN. |
+| 6 | DARIA | 20 | Mme STEFANIE MAYR |
+| 4 | SONSHINE DI | 24 | JOSEF DOPPLER |
+| 9 | MISTERGOODNEWS | 30 | CHRISTIAN HOBART |
+| 2 | EXAKT VENDIL | 34 | Mme SABINE SCHATZDORFER |
+| 3 | VARADERO VENUS | 44 | MARTIN FLOH |
 
 ### 2. VINDOBONA HANDIKAP 2026                 AUTRICHE
 
@@ -28,13 +28,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | SUPER CROWN | – | FRANZ KONLECHNER |
-| 2 | NETZER BOKO | – | THOMAS ROYER |
-| 3 | SUPER CROWNING | – | GREGOR KRENMAYR |
-| 4 | GIOLITTI GRIF | – | KLAUS DRESEL |
-| 5 | RAY KELLY | – | CHRISTIAN HOBART |
-| 6 | POWER HILL | – | GERHARD MAYR |
-| 7 | HULKEN SISU | – | WOLFGANG RUTH |
+| 7 | HULKEN SISU | 3,3 | WOLFGANG RUTH |
+| 6 | POWER HILL | 4,3 | GERHARD MAYR |
+| 3 | SUPER CROWNING | 5,5 | GREGOR KRENMAYR |
+| 4 | GIOLITTI GRIF | 5,5 | KLAUS DRESEL |
+| 2 | NETZER BOKO | 6,5 | THOMAS ROYER |
+| 1 | SUPER CROWN | 14 | FRANZ KONLECHNER |
+| 5 | RAY KELLY | 43 | CHRISTIAN HOBART |
 
 ### 3. PRIX PARIS                              AUTRICHE
 
@@ -42,45 +42,43 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | SHERIE'S EXPRESS | – | HUBERT BRANDSTATTER |
-| 2 | TRUE BLUE | – | THOMAS PRIBIL |
-| 3 | MUS MUSCULUS | – | JONAS STEINER |
-| 4 | GUNFIRE | – | FRANZ KONLECHNER |
-| 5 | MARBELLA VENUS | – | GREGOR KRENMAYR |
-| 6 | VELVET VENUS | – | ERICH HANDLOS |
-| 7 | MINDFUL LIGHT K.V. | – | TEIJO AHOLA |
-| 8 | WILANDER | – | WOLFGANG RUTH |
-| 9 | CUORE | – | ERICH KUBES |
-| 10 | FRIEDA BR | – | GERHARD MAYR |
+| 5 | MARBELLA VENUS | 1,9 | GREGOR KRENMAYR |
+| 10 | FRIEDA BR | 3,3 | GERHARD MAYR |
+| 1 | SHERIE'S EXPRESS | 6,3 | HUBERT BRANDSTATTER |
+| 9 | CUORE | 33 | ERICH KUBES |
+| 6 | VELVET VENUS | 39 | ERICH HANDLOS |
+| 8 | WILANDER | 45 | WOLFGANG RUTH |
+| 3 | MUS MUSCULUS | 46 | JONAS STEINER |
+| 7 | MINDFUL LIGHT K.V. | 48 | TEIJO AHOLA |
+| 4 | GUNFIRE | 51 | FRANZ KONLECHNER |
+| 2 | TRUE BLUE | 52 | THOMAS PRIBIL |
 
 ### 4. PRIX LYON                               AUTRICHE
 
-*12h11 · attelé · 2100 m · 10 partants · cotes de l'extraction*
+*12h11 · attelé · 2100 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | NERA'S BEST GUY | – | GERHARD MAYR |
-| 2 | MONISHA | – | ERICH KUBES |
-| 3 | HOT STYLE | – | HUBERT BRANDSTATTER |
-| 4 | NORDWIND EM | – | THOMAS PRIBIL |
-| 5 | GIACON GIO BFC | – | FRANZ KONLECHNER |
-| 6 | CORA Q6 | – | DOMINIK DUDA |
-| 7 | EMIL | – | HARALD SYKORA |
-| 8 | ANTONIA O | – | JOHAN BUIJS |
-| 9 | OGI CROWDTROTTER | – | PETER SNAJDER |
-| 10 | AWESOME GARDE | – | Mme SABINE SCHATZDORFER |
+| 5 | GIACON GIO BFC | 2,6 | FRANZ KONLECHNER |
+| 3 | HOT STYLE | 3,1 | HUBERT BRANDSTATTER |
+| 1 | NERA'S BEST GUY | 5,7 | GERHARD MAYR |
+| 10 | AWESOME GARDE | 12 | Mme SABINE SCHATZDORFER |
+| 9 | OGI CROWDTROTTER | 14 | PETER SNAJDER |
+| 2 | MONISHA | 20 | ERICH KUBES |
+| 7 | EMIL | 36 | HARALD SYKORA |
+| 6 | CORA Q6 | 52 | DOMINIK DUDA |
+| 8 | ANTONIA O | 63 | JOHAN BUIJS |
 
 ### 5. PRIX TOULOUSE                           AUTRICHE
 
-*12h43 · attelé · 2100 m · 8 partants · cotes de l'extraction*
+*12h43 · attelé · 2100 m · 7 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | DABIH ETOILE | – | WOLFGANG RUTH |
-| 2 | ATHLETIC POWER | – | JONAS STEINER |
-| 3 | BLEU ROI | – | Mme CORNELIA MAYR |
-| 4 | GARCIA | – | HARALD SYKORA |
-| 5 | TEQUILA TROT | – | KARL HOBART |
-| 6 | KIWI'S SIXTH SENSE | – | GERHARD MAYR |
-| 7 | GLOBAL BRAVEHEART | – | HUBERT BRANDSTATTER |
-| 8 | LAWRENCE BOKO | – | GREGOR KRENMAYR |
+| 7 | GLOBAL BRAVEHEART | 2,4 | HUBERT BRANDSTATTER |
+| 8 | LAWRENCE BOKO | 2,8 | GREGOR KRENMAYR |
+| 6 | KIWI'S SIXTH SENSE | 5,8 | GERHARD MAYR |
+| 3 | BLEU ROI | 7,2 | Mme CORNELIA MAYR |
+| 5 | TEQUILA TROT | 30 | KARL HOBART |
+| 1 | DABIH ETOILE | 36 | WOLFGANG RUTH |
+| 4 | GARCIA | 99 | HARALD SYKORA |
