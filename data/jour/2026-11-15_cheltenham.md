@@ -45,15 +45,15 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 7 | LARZAC | 2,7 | HARRY COBDEN | –/–/–/– |
-| 8 | SHAKEYATAILFEATHER | 2,8 | HARRY SKELTON | –/–/–/– |
-| 3 | HIGHLANDS LEGACY | 4 | JONJO O'NEILL JR. | –/–/–/– |
-| 10 | AUTHOCELTIC | 10 | CIARAN GETHINGS | –/–/–/2017 |
-| 6 | FEMME MAGNIFIQUE | 21 | C. M. QUIRKE | –/–/–/– |
-| 5 | JONY R | 74 | SEAN BOWEN | –/–/–/– |
-| 2 | BOOTHILL | 148 | BRYAN CARVER | –/–/–/– |
-| 9 | TOUR OVALIE | 148 | ADAM WEDGE | –/–/–/– |
-| 4 | CLASSIC MAESTRO | – | LUKE SCOTT | –/448/–/– |
+| 3 | HIGHLANDS LEGACY | 4,7 | JONJO O'NEILL JR. | –/–/–/– |
+| 7 | LARZAC | 5,1 | HARRY COBDEN | –/–/–/– |
+| 8 | SHAKEYATAILFEATHER | 5,3 | HARRY SKELTON | –/–/–/– |
+| 10 | AUTHOCELTIC | 6 | CIARAN GETHINGS | –/–/–/2017 |
+| 6 | FEMME MAGNIFIQUE | 7,2 | C. M. QUIRKE | –/–/–/– |
+| 2 | BOOTHILL | 11 | BRYAN CARVER | –/–/–/– |
+| 9 | TOUR OVALIE | 12 | ADAM WEDGE | –/–/–/– |
+| 5 | JONY R | 24 | SEAN BOWEN | –/–/–/– |
+| 4 | CLASSIC MAESTRO | 28 | LUKE SCOTT | –/448/–/– |
 
 ### 4. HANDICAP CHASE (PREMIER HANDICAP) (THE TOM OLLIVER HANDICAP CHASE)
 
@@ -61,14 +61,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | RESPLENDENT GREY | 1,7 | SEAN BOWEN |
-| 7 | ASK BREWSTER | 3,3 | ADAM WEDGE |
-| 4 | DOUBLE POWERFUL | 6,4 | RICHIE MCLERNON |
-| 6 | GUARD THE MOON | 22 | SAM TWISTON-DAVIES |
-| 9 | U CANT BE SERIOUS | 29 | FREDDIE GINGELL |
-| 2 | KING OF ANSWERS | 44 | DEREK FOX |
-| 3 | MONBEG GENIUS | 89 | JONJO O'NEILL JR. |
-| 8 | HOLOKEA | – | BRIAN HUGHES |
+| 4 | DOUBLE POWERFUL | 3,3 | RICHIE MCLERNON |
+| 2 | KING OF ANSWERS | 5,3 | DEREK FOX |
+| 7 | ASK BREWSTER | 7,1 | ADAM WEDGE |
+| 1 | RESPLENDENT GREY | 7,7 | SEAN BOWEN |
+| 9 | U CANT BE SERIOUS | 9,4 | FREDDIE GINGELL |
+| 6 | GUARD THE MOON | 9,7 | SAM TWISTON-DAVIES |
+| 8 | HOLOKEA | 11 | BRIAN HUGHES |
+| 3 | MONBEG GENIUS | 11 | JONJO O'NEILL JR. |
 
 ### 5. GREATWOOD HANDICAP HURDLE (CLASS 1) (PREMIER HANDICAP)
 
@@ -76,23 +76,23 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 10 | LET IT RAIN | 3,8 | HARRY SKELTON | –/–/–/– |
-| 13 | HARRY LOWES | 3,8 | HARRY COBDEN | –/–/–/– |
-| 1 | IBERICO LORD | 3,9 | NICO DE BOINVILLE | –/–/–/– |
-| 20 | DAY TRADER | 8,2 | DANIEL KING | –/832/–/– |
+| 9 | PIONEER PETE | 5,7 | JONJO O'NEILL JR. | –/–/–/– |
+| 10 | LET IT RAIN | 5,8 | HARRY SKELTON | –/–/–/– |
+| 13 | HARRY LOWES | 5,8 | HARRY COBDEN | –/–/–/– |
+| 1 | IBERICO LORD | 7,9 | NICO DE BOINVILLE | –/–/–/– |
+| 20 | DAY TRADER | 11 | DANIEL KING | –/832/–/– |
 | 19 | THE HARDEST GEEZER | 15 | BEN JONES | –/–/–/– |
-| 17 | TENNESSEE TANGO | 16 | FREDDIE GINGELL | –/–/–/– |
-| 4 | BURDETT ROAD | 18 | SAM TWISTON-DAVIES | –/288/–/– |
-| 6 | CAPTAIN HUGO | 66 | SEAN HOULIHAN | –/–/–/– |
-| 9 | PIONEER PETE | 99 | JONJO O'NEILL JR. | –/–/–/– |
-| 3 | THE KEMBLE BREWERY | 198 | TOM BELLAMY | –/–/–/– |
-| 7 | SERIOUS CHALLENGE | 198 | LIAM HARRISON | –/–/–/– |
-| 8 | KNICKERBOCKERGLORY | 198 | TRISTAN DURRELL | –/–/–/– |
-| 11 | HELNWEIN | 198 | JONATHAN BURKE | –/456/–/– |
-| 15 | MISTER URSUS | 198 | SEAN BOWEN | –/–/–/– |
-| 18 | RACE TO BASE | 198 | JACK QUINLAN | –/–/–/– |
-| 14 | MORNING MAYHEM | – | KIELAN WOODS | –/–/–/– |
-| 16 | LISTENTOYOURHEART | – | CHARLIE TODD | –/–/–/– |
+| 4 | BURDETT ROAD | 20 | SAM TWISTON-DAVIES | –/288/–/– |
+| 17 | TENNESSEE TANGO | 23 | FREDDIE GINGELL | –/–/–/– |
+| 6 | CAPTAIN HUGO | 24 | SEAN HOULIHAN | –/–/–/– |
+| 15 | MISTER URSUS | 24 | SEAN BOWEN | –/–/–/– |
+| 11 | HELNWEIN | 25 | JONATHAN BURKE | –/456/–/– |
+| 3 | THE KEMBLE BREWERY | 35 | TOM BELLAMY | –/–/–/– |
+| 14 | MORNING MAYHEM | 39 | KIELAN WOODS | –/–/–/– |
+| 16 | LISTENTOYOURHEART | 44 | CHARLIE TODD | –/–/–/– |
+| 18 | RACE TO BASE | 48 | JACK QUINLAN | –/–/–/– |
+| 7 | SERIOUS CHALLENGE | 61 | LIAM HARRISON | –/–/–/– |
+| 8 | KNICKERBOCKERGLORY | 92 | TRISTAN DURRELL | –/–/–/– |
 
 ### 6. THREE COUNTIES CHRISTMAS OPEN NATIONAL HUNT FLAT RACE (LISTED RACE)
 
@@ -100,13 +100,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | BERKSTAR | 2,1 | MR P. W. MULLINS | –/789/–/– |
-| 3 | DUNDEE LAW | 2,1 | HARRY SKELTON | –/–/–/– |
-| 9 | NEW GRANGE | 7,9 | HARRY COBDEN | –/–/–/– |
-| 2 | CAMERON DE FIACRE | 21 | GAVIN SHEEHAN | –/–/–/– |
-| 6 | JUNIOR MINISTER | 55 | JONATHAN ENGLAND | –/–/–/– |
-| 10 | PAR AVION | 55 | BRYAN CARVER | –/–/–/– |
+| 1 | BERKSTAR | 2,3 | MR P. W. MULLINS | –/789/–/– |
+| 3 | DUNDEE LAW | 2,7 | HARRY SKELTON | –/–/–/– |
+| 9 | NEW GRANGE | 9,2 | HARRY COBDEN | –/–/–/– |
+| 7 | LORD CHURCHILL | 10 | BEN JONES | –/–/–/– |
+| 2 | CAMERON DE FIACRE | 15 | GAVIN SHEEHAN | –/–/–/– |
+| 10 | PAR AVION | 27 | BRYAN CARVER | –/–/–/– |
+| 6 | JUNIOR MINISTER | 30 | JONATHAN ENGLAND | –/–/–/– |
+| 13 | WILLOW TIDE | 139 | KIELAN WOODS | –/–/–/– |
 | 4 | GROOVY TRAIN | – | SEAN BOWEN | –/–/–/– |
 | 5 | HOO'S THE JET | – | JONATHAN BURKE | –/–/–/– |
-| 7 | LORD CHURCHILL | – | BEN JONES | –/–/–/– |
-| 13 | WILLOW TIDE | – | KIELAN WOODS | –/–/–/– |
