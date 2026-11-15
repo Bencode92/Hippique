@@ -1,7 +1,7 @@
 {
   "hippodrome": "MONT DE MARSAN",
   "type_reunion": "HAIE",
-  "date_extraction": "2026-11-15T16:05:37.774766",
+  "date_extraction": "2026-11-15T17:46:08.536977",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/15112026/R7",
   "courses": [
     {
@@ -774,27 +774,28 @@
       "url": "",
       "participants": [
         {
-          "n°": "1",
-          "cheval": "LUPIN D'OC AA H.AN. 5 a.",
+          "n°": "3",
+          "cheval": "ABOU AA H.AN. 4 a.",
           "cheval_url": "",
-          "père_mère": "Par: CARGHESE DES LANDES et QUICKEN D'OC (SABREHILL)",
+          "père_mère": "Par: PABAN DE FRANCE AA et AURFEVRE AA (LE BALAFRE)",
           "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261115/MAR/6/20261115-MAR-6-1.png",
-          "propriétaire": "B.B.MONTZEY (S)",
-          "entraineur": "B.MONTZEY (S)",
-          "éleveurs": "MR JEAN-MANUEL CHARMES",
-          "jockey": "M.BARS HUGONOT",
-          "poids": "66 kg",
-          "gains": "740000",
-          "musique": "3h(25)5h2p1p3p4p3h7hJh",
-          "valeur": "66.0",
-          "equipement(s)": "",
-          "nb_courses": 5,
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261115/MAR/6/20261115-MAR-6-3.png",
+          "propriétaire": "MME E.KLEPARSKI THOMAS",
+          "entraineur": "X.THOMAS-DEMEAULTE (S)",
+          "éleveurs": "SCEA MINVIELLE",
+          "jockey": "D.GALLON",
+          "poids": "65.5 kg",
+          "gains": "828000",
+          "musique": "3sTs5h(25)6hTh4h0p",
+          "valeur": "65.5",
+          "equipement(s)": "A",
+          "nb_courses": 6,
           "nb_victoires": 0,
-          "nb_places": 3,
-          "cote": 2.6,
+          "nb_places": 4,
+          "cote": 4.9,
           "cote_tendance": "",
-          "cote_reference": 3.4
+          "cote_reference": 3.6,
+          "arrivee": 1
         },
         {
           "n°": "2",
@@ -817,30 +818,32 @@
           "nb_places": 5,
           "cote": 2.5,
           "cote_tendance": "",
-          "cote_reference": 3.5
+          "cote_reference": 3.5,
+          "arrivee": 2
         },
         {
-          "n°": "3",
-          "cheval": "ABOU AA H.AN. 4 a.",
+          "n°": "1",
+          "cheval": "LUPIN D'OC AA H.AN. 5 a.",
           "cheval_url": "",
-          "père_mère": "Par: PABAN DE FRANCE AA et AURFEVRE AA (LE BALAFRE)",
+          "père_mère": "Par: CARGHESE DES LANDES et QUICKEN D'OC (SABREHILL)",
           "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261115/MAR/6/20261115-MAR-6-3.png",
-          "propriétaire": "MME E.KLEPARSKI THOMAS",
-          "entraineur": "X.THOMAS-DEMEAULTE (S)",
-          "éleveurs": "SCEA MINVIELLE",
-          "jockey": "D.GALLON",
-          "poids": "65.5 kg",
-          "gains": "828000",
-          "musique": "3sTs5h(25)6hTh4h0p",
-          "valeur": "65.5",
-          "equipement(s)": "A",
-          "nb_courses": 6,
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261115/MAR/6/20261115-MAR-6-1.png",
+          "propriétaire": "B.B.MONTZEY (S)",
+          "entraineur": "B.MONTZEY (S)",
+          "éleveurs": "MR JEAN-MANUEL CHARMES",
+          "jockey": "M.BARS HUGONOT",
+          "poids": "66 kg",
+          "gains": "740000",
+          "musique": "3h(25)5h2p1p3p4p3h7hJh",
+          "valeur": "66.0",
+          "equipement(s)": "",
+          "nb_courses": 5,
           "nb_victoires": 0,
-          "nb_places": 4,
-          "cote": 4.9,
+          "nb_places": 3,
+          "cote": 2.6,
           "cote_tendance": "",
-          "cote_reference": 3.6
+          "cote_reference": 3.4,
+          "arrivee": 3
         },
         {
           "n°": "4",
@@ -863,12 +866,14 @@
           "nb_places": 6,
           "cote": 6.4,
           "cote_tendance": "",
-          "cote_reference": 3.3
+          "cote_reference": 3.3,
+          "arrivee": 4
         }
       ],
       "typePiste": "HERBE",
       "terrain": "Souple",
-      "penetrometre": "3,5"
+      "penetrometre": "3,5",
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX GENERAL JACQUES SIMON",
@@ -878,52 +883,6 @@
       "distance": "3650m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "HARDI BLUE TROIS AA H.AN. 10 a.",
-          "cheval_url": "",
-          "père_mère": "Par: ANABAA BLUE et HASE TROIS (HASA)",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261115/MAR/7/20261115-MAR-7-1.png",
-          "propriétaire": "T.DE LAURIERE",
-          "entraineur": "T.LAURIERE DE",
-          "éleveurs": "MME STEPHANIE JUTEAU",
-          "jockey": "M.BARS HUGONOT",
-          "poids": "72 kg",
-          "gains": "21369500",
-          "musique": "6s1hJh2h0h5h4h(25)AcJc",
-          "valeur": "72.0",
-          "equipement(s)": "",
-          "nb_courses": 52,
-          "nb_victoires": 8,
-          "nb_places": 25,
-          "cote": 14.0,
-          "cote_tendance": "",
-          "cote_reference": 12.0
-        },
-        {
-          "n°": "2",
-          "cheval": "GANAGO H.PU. 7 a.",
-          "cheval_url": "",
-          "père_mère": "Par: SCALO et NUIT D'EAURAGE (BALLINGARRY)",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261115/MAR/7/20261115-MAR-7-2.png",
-          "propriétaire": "H.BOUBEL",
-          "entraineur": "C.BONIN (S)",
-          "éleveurs": "EARL ECURIE D'OSSAU",
-          "jockey": "E.LABAISSE",
-          "poids": "72 kg",
-          "gains": "5550000",
-          "musique": "1s1s7s4s5h6s(25)1sAh8h",
-          "valeur": "72.0",
-          "equipement(s)": "",
-          "nb_courses": 19,
-          "nb_victoires": 4,
-          "nb_places": 8,
-          "cote": 3.5,
-          "cote_tendance": "",
-          "cote_reference": 4.1
-        },
         {
           "n°": "3",
           "cheval": "KLOE DE LAPRELLE F.PU. 6 a.",
@@ -943,9 +902,10 @@
           "nb_courses": 21,
           "nb_victoires": 4,
           "nb_places": 14,
-          "cote": 6.7,
+          "cote": 3.3,
           "cote_tendance": "",
-          "cote_reference": 5.6
+          "cote_reference": 5.6,
+          "arrivee": 1
         },
         {
           "n°": "4",
@@ -966,32 +926,58 @@
           "nb_courses": 11,
           "nb_victoires": 0,
           "nb_places": 7,
-          "cote": 4.5,
+          "cote": 7.9,
           "cote_tendance": "",
-          "cote_reference": 6.1
+          "cote_reference": 6.1,
+          "arrivee": 2
         },
         {
-          "n°": "5",
-          "cheval": "KATE TO WIN F.AQPS. 6 a.",
+          "n°": "2",
+          "cheval": "GANAGO H.PU. 7 a.",
           "cheval_url": "",
-          "père_mère": "Par: THE ANVIL et SISSIE STAR (CALL ME SAM)",
+          "père_mère": "Par: SCALO et NUIT D'EAURAGE (BALLINGARRY)",
           "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261115/MAR/7/20261115-MAR-7-5.png",
-          "propriétaire": "S.SEIGNOUX",
-          "entraineur": "MME V.SEIGNOUX",
-          "éleveurs": "EARL HARAS DU GRAND CHESNAIE",
-          "jockey": "A.LEPAGE",
-          "poids": "69 kg",
-          "gains": "992000",
-          "musique": "8h1h3hDh(25)6p8p6p5p8p",
-          "valeur": "69.0",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261115/MAR/7/20261115-MAR-7-2.png",
+          "propriétaire": "H.BOUBEL",
+          "entraineur": "C.BONIN (S)",
+          "éleveurs": "EARL ECURIE D'OSSAU",
+          "jockey": "E.LABAISSE",
+          "poids": "72 kg",
+          "gains": "5550000",
+          "musique": "1s1s7s4s5h6s(25)1sAh8h",
+          "valeur": "72.0",
           "equipement(s)": "",
-          "nb_courses": 4,
-          "nb_victoires": 1,
-          "nb_places": 1,
-          "cote": 6.7,
+          "nb_courses": 19,
+          "nb_victoires": 4,
+          "nb_places": 8,
+          "cote": 3.7,
           "cote_tendance": "",
-          "cote_reference": 5.6
+          "cote_reference": 4.1,
+          "arrivee": 3
+        },
+        {
+          "n°": "1",
+          "cheval": "HARDI BLUE TROIS AA H.AN. 10 a.",
+          "cheval_url": "",
+          "père_mère": "Par: ANABAA BLUE et HASE TROIS (HASA)",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261115/MAR/7/20261115-MAR-7-1.png",
+          "propriétaire": "T.DE LAURIERE",
+          "entraineur": "T.LAURIERE DE",
+          "éleveurs": "MME STEPHANIE JUTEAU",
+          "jockey": "M.BARS HUGONOT",
+          "poids": "72 kg",
+          "gains": "21369500",
+          "musique": "6s1hJh2h0h5h4h(25)AcJc",
+          "valeur": "72.0",
+          "equipement(s)": "",
+          "nb_courses": 52,
+          "nb_victoires": 8,
+          "nb_places": 25,
+          "cote": 9.1,
+          "cote_tendance": "",
+          "cote_reference": 12.0,
+          "arrivee": 4
         },
         {
           "n°": "6",
@@ -1012,9 +998,10 @@
           "nb_courses": 23,
           "nb_victoires": 3,
           "nb_places": 14,
-          "cote": 7.0,
+          "cote": 10.0,
           "cote_tendance": "",
-          "cote_reference": 6.7
+          "cote_reference": 6.7,
+          "arrivee": 5
         },
         {
           "n°": "7",
@@ -1035,9 +1022,34 @@
           "nb_courses": 19,
           "nb_victoires": 2,
           "nb_places": 9,
-          "cote": 12.0,
+          "cote": 11.0,
           "cote_tendance": "",
-          "cote_reference": 11.0
+          "cote_reference": 11.0,
+          "arrivee": 6
+        },
+        {
+          "n°": "5",
+          "cheval": "KATE TO WIN F.AQPS. 6 a.",
+          "cheval_url": "",
+          "père_mère": "Par: THE ANVIL et SISSIE STAR (CALL ME SAM)",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261115/MAR/7/20261115-MAR-7-5.png",
+          "propriétaire": "S.SEIGNOUX",
+          "entraineur": "MME V.SEIGNOUX",
+          "éleveurs": "EARL HARAS DU GRAND CHESNAIE",
+          "jockey": "A.LEPAGE",
+          "poids": "69 kg",
+          "gains": "992000",
+          "musique": "8h1h3hDh(25)6p8p6p5p8p",
+          "valeur": "69.0",
+          "equipement(s)": "",
+          "nb_courses": 4,
+          "nb_victoires": 1,
+          "nb_places": 1,
+          "cote": 7.3,
+          "cote_tendance": "",
+          "cote_reference": 5.6,
+          "arrivee": 7
         },
         {
           "n°": "8",
@@ -1058,14 +1070,16 @@
           "nb_courses": 28,
           "nb_victoires": 0,
           "nb_places": 19,
-          "cote": 20.0,
+          "cote": 63.0,
           "cote_tendance": "",
-          "cote_reference": 16.0
+          "cote_reference": 16.0,
+          "arrivee": 8
         }
       ],
       "typePiste": "HERBE",
       "terrain": "Souple",
-      "penetrometre": "3,5"
+      "penetrometre": "3,5",
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX JAMES ET MAURICE HENNESSY",
@@ -1094,9 +1108,10 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 4,
-          "cote": 2.9,
+          "cote": 2.0,
           "cote_tendance": "",
-          "cote_reference": 1.6
+          "cote_reference": 1.5,
+          "arrivee": 1
         },
         {
           "n°": "2",
@@ -1117,9 +1132,10 @@
           "nb_courses": 7,
           "nb_victoires": 1,
           "nb_places": 4,
-          "cote": 2.7,
+          "cote": 3.8,
           "cote_tendance": "",
-          "cote_reference": 19.0
+          "cote_reference": 5.3,
+          "arrivee": 2
         },
         {
           "n°": "3",
@@ -1140,9 +1156,10 @@
           "nb_courses": 9,
           "nb_victoires": 0,
           "nb_places": 5,
-          "cote": 4.9,
+          "cote": 9.2,
           "cote_tendance": "",
-          "cote_reference": 3.2
+          "cote_reference": 7.4,
+          "arrivee": 3
         },
         {
           "n°": "4",
@@ -1163,9 +1180,10 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 7.0,
+          "cote": 4.3,
           "cote_tendance": "",
-          "cote_reference": 9.7
+          "cote_reference": 8.0,
+          "arrivee": 4
         },
         {
           "n°": "5",
@@ -1186,14 +1204,16 @@
           "nb_courses": 8,
           "nb_victoires": 0,
           "nb_places": 5,
-          "cote": 12.0,
+          "cote": 26.0,
           "cote_tendance": "",
-          "cote_reference": 19.0
+          "cote_reference": 17.0,
+          "arrivee": 5
         }
       ],
       "typePiste": "HERBE",
       "terrain": "Souple",
-      "penetrometre": "3,5"
+      "penetrometre": "3,5",
+      "arrivee_definitive": true
     }
   ]
 }
