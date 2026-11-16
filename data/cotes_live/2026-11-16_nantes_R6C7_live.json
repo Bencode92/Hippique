@@ -4,107 +4,107 @@
   "reunion": 6,
   "heure_depart": 1794840600000,
   "distance": 3000,
-  "scraped_at": "2026-11-16T15:51:01.057683+01:00",
-  "minutes_avant_depart": -1,
+  "scraped_at": "2026-11-16T15:53:40.485477+01:00",
+  "minutes_avant_depart": -4,
   "participants": [
     {
       "numPmu": 1,
       "nom": "LETTRE A FRANCE",
-      "cote_live": 48.0,
+      "cote_live": 47.0,
       "cote_reference": 35.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794840648000
+      "timestamp_cote": 1794840720000
     },
     {
       "numPmu": 2,
       "nom": "LIYAVA",
-      "cote_live": 49.0,
+      "cote_live": 55.0,
       "cote_reference": 26.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794840648000
+      "timestamp_cote": 1794840720000
     },
     {
       "numPmu": 3,
       "nom": "LUPIN LA GARETTE",
-      "cote_live": 37.0,
+      "cote_live": 38.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794840648000
+      "timestamp_cote": 1794840720000
     },
     {
       "numPmu": 4,
       "nom": "LARA VRIE",
-      "cote_live": 164.0,
+      "cote_live": 186.0,
       "cote_reference": 36.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794840648000
+      "timestamp_cote": 1794840720000
     },
     {
       "numPmu": 5,
       "nom": "LEADER DE CHOISEL",
-      "cote_live": 29.0,
+      "cote_live": 32.0,
       "cote_reference": 36.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794840648000
+      "timestamp_cote": 1794840720000
     },
     {
       "numPmu": 6,
       "nom": "LOUSTIC D'YVEL",
-      "cote_live": 30.0,
+      "cote_live": 33.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794840648000
+      "timestamp_cote": 1794840720000
     },
     {
       "numPmu": 7,
       "nom": "LE BARON BEZILLAT",
-      "cote_live": 76.0,
+      "cote_live": 86.0,
       "cote_reference": 52.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794840648000
+      "timestamp_cote": 1794840720000
     },
     {
       "numPmu": 8,
       "nom": "LOIC D'AVEL",
-      "cote_live": 4.9,
+      "cote_live": 5.1,
       "cote_reference": 5.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794840648000
+      "timestamp_cote": 1794840720000
     },
     {
       "numPmu": 9,
       "nom": "LORD DE CHENU",
-      "cote_live": 1.8,
+      "cote_live": 1.7,
       "cote_reference": 2.1,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794840648000
+      "timestamp_cote": 1794840720000
     },
     {
       "numPmu": 10,
       "nom": "LANISTER SMART",
-      "cote_live": 5.9,
+      "cote_live": 6.0,
       "cote_reference": 5.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794840648000
+      "timestamp_cote": 1794840720000
     },
     {
       "numPmu": 11,
       "nom": "LARA DE CHENU",
-      "cote_live": 12.0,
+      "cote_live": 14.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794840648000
+      "timestamp_cote": 1794840720000
     }
   ],
   "hippodrome": "NANTES",
@@ -311,6 +311,74 @@
         "9": 1.8,
         "10": 5.9,
         "11": 12.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-16T15:51:40.322497+01:00",
+      "minutes_avant_depart": -1.6713910166666668,
+      "cotes": {
+        "1": 45.0,
+        "2": 49.0,
+        "3": 36.0,
+        "4": 164.0,
+        "5": 29.0,
+        "6": 30.0,
+        "7": 76.0,
+        "8": 4.7,
+        "9": 1.9,
+        "10": 5.7,
+        "11": 12.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-16T15:52:20.490101+01:00",
+      "minutes_avant_depart": -2.3380616166666663,
+      "cotes": {
+        "1": 47.0,
+        "2": 55.0,
+        "3": 38.0,
+        "4": 186.0,
+        "5": 32.0,
+        "6": 33.0,
+        "7": 86.0,
+        "8": 5.1,
+        "9": 1.7,
+        "10": 6.0,
+        "11": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-16T15:53:00.473020+01:00",
+      "minutes_avant_depart": -3.0047297,
+      "cotes": {
+        "1": 47.0,
+        "2": 55.0,
+        "3": 38.0,
+        "4": 186.0,
+        "5": 32.0,
+        "6": 33.0,
+        "7": 86.0,
+        "8": 5.1,
+        "9": 1.7,
+        "10": 6.0,
+        "11": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-16T15:53:40.485477+01:00",
+      "minutes_avant_depart": -3.6713980999999998,
+      "cotes": {
+        "1": 47.0,
+        "2": 55.0,
+        "3": 38.0,
+        "4": 186.0,
+        "5": 32.0,
+        "6": 33.0,
+        "7": 86.0,
+        "8": 5.1,
+        "9": 1.7,
+        "10": 6.0,
+        "11": 14.0
       }
     }
   ]
