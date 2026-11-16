@@ -1,8 +1,8 @@
 # LE CROISE LAROCHE — 16/11/2026
 
-7 courses.
+7 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
@@ -12,21 +12,21 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | HORSY ROYAL | – | N. D'HAENENS |
-| 2 | HAPPY DANOVER | – | J. TRAVERS |
-| 3 | GOLD D'ECROVILLE | – | M. LEGROS |
-| 4 | HERCULE DE LEAU | – | G. GELORMINI |
-| 5 | JUST DU CHATELET | – | D. BONNE |
-| 6 | IPALIO | – | TH. DROMIGNY |
-| 7 | IF I TELL YOU | – | F. OUVRIE |
-| 8 | INES DE LA ROUVRE | – | K. DAVID |
-| 9 | JOYEUX DU LANDRET | – | B. ROBIN |
-| 10 | HANIELLE CREPIN | – | A. RANDON |
-| 11 | ISERIA GRIFF | – | P.Y. VERVA |
-| 12 | JALIMEDE | – | M. VERVA |
-| 13 | HORIZON D'EYMY | – | K. DEPUYDT |
-| 14 | IN LOVE REGLISSE | – | E. DE JESUS |
-| 15 | INTREPIDE DES BOIS | – | F. LAGADEUC |
+| 5 | JUST DU CHATELET | 1,9 | D. BONNE |
+| 9 | JOYEUX DU LANDRET | 5,2 | B. ROBIN |
+| 15 | INTREPIDE DES BOIS | 10 | F. LAGADEUC |
+| 11 | ISERIA GRIFF | 15 | P.Y. VERVA |
+| 8 | INES DE LA ROUVRE | 20 | K. DAVID |
+| 3 | GOLD D'ECROVILLE | 23 | M. LEGROS |
+| 14 | IN LOVE REGLISSE | 25 | E. DE JESUS |
+| 6 | IPALIO | 30 | TH. DROMIGNY |
+| 2 | HAPPY DANOVER | 33 | J. TRAVERS |
+| 13 | HORIZON D'EYMY | 37 | K. DEPUYDT |
+| 7 | IF I TELL YOU | 68 | F. OUVRIE |
+| 4 | HERCULE DE LEAU | 78 | G. GELORMINI |
+| 1 | HORSY ROYAL | 99 | N. D'HAENENS |
+| 12 | JALIMEDE | 137 | M. VERVA |
+| 10 | HANIELLE CREPIN | 999 | A. RANDON |
 
 ### 2. PRIX ROLLING, GU ET UN MEC D' HERIPRE
 
@@ -34,22 +34,22 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KARMEN DE MONTCEAU | – | G.A. POU POU |
-| 2 | KALINE D'ERPION | – | DAVID LEFEVRE |
-| 3 | KARLIE STAR | – | P.Y. VERVA |
-| 4 | KALICINE | – | M. GOETZ |
-| 5 | JAZZY MAKER | – | F. OUVRIE |
-| 6 | KORONA DU CHIFFRES | – | F. NEIRINCK |
-| 7 | KIMMERIDGIENNE | – | D. BONNE |
-| 8 | KENACHA | – | F. LAGADEUC |
-| 9 | JAVA DES AUGERIES | – | R. CEPPARULO |
-| 10 | KARA DES DUNES | – | TH. DROMIGNY |
-| 11 | KAROLINE CADE | – | G. GELORMINI |
-| 12 | KESA DES THIRONS | – | S. OLIVIER |
-| 13 | KARA DU VAUTOUR | – | J.CH. PITON |
-| 14 | KIARHA DE NAPPES | – | J. VANMEERBECK |
-| 15 | KAABA RINGEAT | – | TH.E. LONCKE |
-| 16 | JASMINE DES ETANGS | – | G. LEMAITRE |
+| 3 | KARLIE STAR | 2,7 | P.Y. VERVA |
+| 15 | KAABA RINGEAT | 7,6 | TH.E. LONCKE |
+| 11 | KAROLINE CADE | 9,7 | G. GELORMINI |
+| 12 | KESA DES THIRONS | 12 | S. OLIVIER |
+| 8 | KENACHA | 13 | F. LAGADEUC |
+| 6 | KORONA DU CHIFFRES | 17 | F. NEIRINCK |
+| 14 | KIARHA DE NAPPES | 17 | J. VANMEERBECK |
+| 7 | KIMMERIDGIENNE | 18 | D. BONNE |
+| 4 | KALICINE | 20 | M. GOETZ |
+| 5 | JAZZY MAKER | 25 | F. OUVRIE |
+| 1 | KARMEN DE MONTCEAU | 29 | G.A. POU POU |
+| 2 | KALINE D'ERPION | 32 | DAVID LEFEVRE |
+| 13 | KARA DU VAUTOUR | 41 | J.CH. PITON |
+| 10 | KARA DES DUNES | 47 | TH. DROMIGNY |
+| 16 | JASMINE DES ETANGS | 82 | G. LEMAITRE |
+| 9 | JAVA DES AUGERIES | 164 | R. CEPPARULO |
 
 ### 3. PRIX JUSTIN BOLD
 
@@ -57,38 +57,37 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MANTA BUISSONAY | – | P.Y. VERVA |
-| 2 | MAHINE D'OCCAGNES | – | J.CH. PITON |
-| 3 | MONJAMA | – | F. OUVRIE |
-| 4 | MILLESIME TIKELOLE | – | A. MUIDEBLED |
-| 5 | MERALTO | – | F. LAGADEUC |
-| 6 | MUSE D'EURVAD | – | G. ROIG-BALAGUER |
-| 7 | MYRIADA | – | O. BIZOUX |
-| 8 | MANGALYA | – | J.F. SENET |
+| 3 | MONJAMA | 5,2 | F. OUVRIE |
+| 11 | MUVRINI | 5,6 | G. GELORMINI |
+| 4 | MILLESIME TIKELOLE | 6,3 | A. MUIDEBLED |
+| 1 | MANTA BUISSONAY | 6,8 | P.Y. VERVA |
+| 16 | MILONGA DU CHENE | 7,1 | TH. DROMIGNY |
+| 2 | MAHINE D'OCCAGNES | 7,4 | J.CH. PITON |
+| 5 | MERALTO | 16 | F. LAGADEUC |
+| 14 | MY HOPE FLIGNY | 26 | J. TRAVERS |
+| 6 | MUSE D'EURVAD | 30 | G. ROIG-BALAGUER |
+| 15 | MIGHTY DU DOME | 30 | S. OLIVIER |
+| 8 | MANGALYA | 61 | J.F. SENET |
+| 7 | MYRIADA | 185 | O. BIZOUX |
+| 13 | MODEL DE JOUX | 185 | DAVID LEFEVRE |
 | 9 | MY DU BOIS | – | T. VERDONCK |
 | 10 | MANCHESTER | – | L. STAEL |
-| 11 | MUVRINI | – | G. GELORMINI |
 | 12 | MYSTIC VERTAC | – | G. WILLEMS |
-| 13 | MODEL DE JOUX | – | DAVID LEFEVRE |
-| 14 | MY HOPE FLIGNY | – | J. TRAVERS |
-| 15 | MIGHTY DU DOME | – | S. OLIVIER |
-| 16 | MILONGA DU CHENE | – | TH. DROMIGNY |
 
 ### 4. PRIX BALANDO
 
-*20h15 · attelé · 2700 m · 9 partants · cotes de l'extraction*
+*20h15 · attelé · 2700 m · 8 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | NEWDEAL SAUTREUIL | – | D. BONNE |
-| 2 | NEOH DAIRPET | – | J. VANMEERBECK |
-| 3 | NATIONAL HERO | – | P.Y. VERVA |
-| 4 | NARKOS DU CHATAULT | – | M. GOETZ |
-| 5 | NELSON DE GUELLE | – | G. GELORMINI |
-| 6 | NOMADO | – | K. DEPUYDT |
-| 7 | NIRVANA D'EURVAD | – | G. ROIG-BALAGUER |
-| 8 | NITRY ATALANTE | – | B. ROUER |
-| 9 | NOTUS DU COGLAIS | – | F. OUVRIE |
+| 7 | NIRVANA D'EURVAD | 1,7 | G. ROIG-BALAGUER |
+| 3 | NATIONAL HERO | 6,8 | P.Y. VERVA |
+| 1 | NEWDEAL SAUTREUIL | 12 | D. BONNE |
+| 2 | NEOH DAIRPET | 12 | J. VANMEERBECK |
+| 5 | NELSON DE GUELLE | 13 | G. GELORMINI |
+| 8 | NITRY ATALANTE | 14 | B. ROUER |
+| 9 | NOTUS DU COGLAIS | 14 | F. OUVRIE |
+| 4 | NARKOS DU CHATAULT | 23 | M. GOETZ |
 
 ### 5. PRIX CAPTAIN SPARROW
 
@@ -96,21 +95,21 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | JOKE DU HOUSSEL | – | L. PITON |
-| 2 | IN LOVE DE L'ITON | – | Mlle T. LEVESQUE |
-| 3 | JANARDAL CLUB | – | M. GRUMETZ |
-| 4 | IGOLO | – | Mme CLEA ROGER |
-| 5 | JUSQUIAME | – | M. CHAMPENOIS |
-| 6 | J'ADORE D'EURVAD | – | A. VOISIN |
-| 7 | JOBERMAN DU HOME | – | V. SAUSSAYE |
-| 8 | IL EST LA FIX | – | TH. DROMIGNY |
-| 9 | JALNA DU GERS | – | S.E. PASQUIER |
-| 10 | JET DE LA FERME | – | Mme T. MATHIAS-MAISONNETTE |
-| 11 | IDEAL D'ARTONGES | – | Mlle M. MENDIBOURE |
-| 12 | IYAR | – | M. LELIEVRE |
-| 13 | JOJO DE L'AUNAY | – | L. OTT |
-| 14 | IDEAL DU BRIEU | – | P.Y. VERVA |
-| 15 | IVES DES GLENAN | – | Mme A. OUANELLA |
+| 7 | JOBERMAN DU HOME | 3,5 | V. SAUSSAYE |
+| 9 | JALNA DU GERS | 5,3 | S.E. PASQUIER |
+| 14 | IDEAL DU BRIEU | 6,8 | P.Y. VERVA |
+| 3 | JANARDAL CLUB | 12 | M. GRUMETZ |
+| 13 | JOJO DE L'AUNAY | 12 | L. OTT |
+| 5 | JUSQUIAME | 14 | M. CHAMPENOIS |
+| 2 | IN LOVE DE L'ITON | 15 | Mlle T. LEVESQUE |
+| 10 | JET DE LA FERME | 18 | Mme T. MATHIAS-MAISONNETTE |
+| 4 | IGOLO | 19 | Mme CLEA ROGER |
+| 12 | IYAR | 28 | M. LELIEVRE |
+| 6 | J'ADORE D'EURVAD | 31 | A. VOISIN |
+| 15 | IVES DES GLENAN | 50 | Mme A. OUANELLA |
+| 1 | JOKE DU HOUSSEL | 63 | L. PITON |
+| 8 | IL EST LA FIX | 84 | TH. DROMIGNY |
+| 11 | IDEAL D'ARTONGES | 127 | Mlle M. MENDIBOURE |
 
 ### 6. PRIX DE LA SAINTE CATHERINE
 
@@ -118,18 +117,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | LIPINSKA | – | LORIS BIZOUX |
-| 2 | LE CHEF | – | L. CUEFF |
-| 3 | LUNE DU DOUET | – | J. MAILLARD |
-| 4 | LOUPIAC DE GODREL | – | P.E. COLLARD |
-| 5 | LE BOSS DANOVER | – | Mme M.K. DUVAL |
-| 6 | LOLITA DE MIELOUI | – | G. DESPREZ |
-| 7 | LALDO LOUZEEN | – | A. MALLET |
-| 8 | LORD DES GRANGES | – | R. HOJKA |
-| 9 | LUCIA DU CHATELET | – | L. PITON |
-| 10 | LILY ROSE MYSTIC | – | N. BECQUET |
-| 11 | LARABIEN | – | G. LEMAITRE |
-| 12 | LITTLE CASH | – | K. ACHARD |
+| 12 | LITTLE CASH | 3 | K. ACHARD |
+| 9 | LUCIA DU CHATELET | 7,2 | L. PITON |
+| 7 | LALDO LOUZEEN | 8,3 | A. MALLET |
+| 1 | LIPINSKA | 10 | LORIS BIZOUX |
+| 6 | LOLITA DE MIELOUI | 11 | G. DESPREZ |
+| 11 | LARABIEN | 11 | G. LEMAITRE |
+| 2 | LE CHEF | 16 | L. CUEFF |
+| 5 | LE BOSS DANOVER | 16 | Mme M.K. DUVAL |
+| 3 | LUNE DU DOUET | 18 | J. MAILLARD |
+| 10 | LILY ROSE MYSTIC | 18 | N. BECQUET |
+| 8 | LORD DES GRANGES | 23 | R. HOJKA |
+| 4 | LOUPIAC DE GODREL | 166 | P.E. COLLARD |
 
 ### 7. PRIX DES AMATEURS
 
@@ -137,17 +136,17 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KISS ME MENCOURT | – | L. RIVENET |
-| 2 | KATUDI | – | TH. HUCHEDE |
-| 3 | JOURNAC DIESCHOOT | – | S. HOSTE |
-| 4 | JALOUX | – | JEAN MAXIME LESNE |
-| 5 | JAVA DES TIGARDS | – | Mlle L. MATHIEU PAVARD |
-| 6 | IDEAL DU MAXFRAN | – | S. LABOUTIQUE |
-| 7 | IMPERIAL MIJACK | – | D. LEPERE |
-| 8 | KALINA DE LAURIERE | – | Mlle L. VAN BAEL |
+| 4 | JALOUX | 2,6 | JEAN MAXIME LESNE |
+| 1 | KISS ME MENCOURT | 6,7 | L. RIVENET |
+| 3 | JOURNAC DIESCHOOT | 9,7 | S. HOSTE |
+| 2 | KATUDI | 11 | TH. HUCHEDE |
+| 6 | IDEAL DU MAXFRAN | 12 | S. LABOUTIQUE |
+| 12 | KEEP CONTROL | 12 | L. DE NEVE |
+| 11 | KIPLING IRON | 14 | PH. DE MUNSTER |
+| 8 | KALINA DE LAURIERE | 17 | Mlle L. VAN BAEL |
+| 13 | KAPTAIN DE CRISTAL | 17 | G. HORNEZ |
+| 5 | JAVA DES TIGARDS | 29 | Mlle L. MATHIEU PAVARD |
+| 14 | JULIANO DE GLANE | 44 | MATHIEU VERDEZ |
+| 7 | IMPERIAL MIJACK | 88 | D. LEPERE |
+| 10 | KHALIFA CEKE | 88 | G.B. BADIN |
 | 9 | JOYAU DE RIVERIE | – | G. SELLIER |
-| 10 | KHALIFA CEKE | – | G.B. BADIN |
-| 11 | KIPLING IRON | – | PH. DE MUNSTER |
-| 12 | KEEP CONTROL | – | L. DE NEVE |
-| 13 | KAPTAIN DE CRISTAL | – | G. HORNEZ |
-| 14 | JULIANO DE GLANE | – | MATHIEU VERDEZ |

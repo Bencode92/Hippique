@@ -1,8 +1,8 @@
 # CASABLANCA — 16/11/2026
 
-5 courses.
+5 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -12,14 +12,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | HASMART FAL | – | MADIHI WASSIM |
-| 2 | JONAS TWO YAS | – | ARROMALI MOHAMMED |
-| 3 | MACHIN FAL | – | EL GARCH TARIK |
-| 4 | MAFRIT FAL | – | LAKJAL OUTHMANE |
-| 5 | ENDUBAK FAL | – | FADDOUL ABDERRAHIM |
-| 6 | JOST VAN DYKE | – | MADIHI ZOUHAIR |
-| 7 | MAYOUM FAL | – | MOUSSA MOHAMMED BEN BARJA |
-| 8 | ALFIYAH | – | EL BRIOUIL KAWTHAR |
+| 6 | JOST VAN DYKE | 1,5 | MADIHI ZOUHAIR |
+| 1 | HASMART FAL | 6,8 | MADIHI WASSIM |
+| 2 | JONAS TWO YAS | 9,1 | ARROMALI MOHAMMED |
+| 7 | MAYOUM FAL | 15 | MOUSSA MOHAMMED BEN BARJA |
+| 4 | MAFRIT FAL | 15 | LAKJAL OUTHMANE |
+| 3 | MACHIN FAL | 29 | EL GARCH TARIK |
+| 8 | ALFIYAH | 38 | EL BRIOUIL KAWTHAR |
+| 5 | ENDUBAK FAL | 46 | FADDOUL ABDERRAHIM |
 
 ### 2. EL RELICARIO
 
@@ -27,33 +27,32 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | MISS DYNAMITE | – | MOUGHAT AMINE | –/–/–/– |
-| 2 | ACE | – | FADDOUL ABDERRAHIM | –/–/–/– |
-| 3 | KRACKO BELLO | – | MOUSSA REDA | –/–/–/– |
-| 4 | CASSIES LEGACY | – | EL GARCH TARIK | –/–/–/– |
-| 5 | CLASH ROYALE | – | ZABOUT MOURAD | –/–/–/– |
-| 6 | MIGHTY YOUNG | – | MADIHI WASSIM | –/854/–/– |
-| 7 | ANGAD | – | MADIHI ZOUHAIR | –/–/–/– |
-| 8 | LADY MELISSA | – | LAFRAM HAMZA | –/–/–/– |
-| 9 | LADY NAGIN | – | ARROMALI AYOUB | –/–/–/– |
-| 10 | QUICK STAR | – | EL BRIOUIL KAWTHAR | –/–/–/– |
-| 11 | VOLVER | – | ARROMALI MOHAMMED | –/–/–/– |
-| 12 | DIDECHVER FAL | – | FADDOUL KACEM | –/–/–/– |
+| 5 | CLASH ROYALE | 3,5 | ZABOUT MOURAD | –/–/–/– |
+| 11 | VOLVER | 3,5 | ARROMALI MOHAMMED | –/–/–/– |
+| 1 | MISS DYNAMITE | 9,6 | MOUGHAT AMINE | –/–/–/– |
+| 6 | MIGHTY YOUNG | 9,9 | MADIHI WASSIM | –/854/–/– |
+| 3 | KRACKO BELLO | 11 | MOUSSA REDA | –/–/–/– |
+| 2 | ACE | 11 | FADDOUL ABDERRAHIM | –/–/–/– |
+| 7 | ANGAD | 18 | MADIHI ZOUHAIR | –/–/–/– |
+| 12 | DIDECHVER FAL | 21 | FADDOUL KACEM | –/–/–/– |
+| 4 | CASSIES LEGACY | 23 | EL GARCH TARIK | –/–/–/– |
+| 10 | QUICK STAR | 43 | EL BRIOUIL KAWTHAR | –/–/–/– |
+| 8 | LADY MELISSA | 62 | LAFRAM HAMZA | –/–/–/– |
+| 9 | LADY NAGIN | 83 | ARROMALI AYOUB | –/–/–/– |
 
 ### 3. FAST FOX
 
-*12h07 · plat · 1300 m · 8 partants · cotes de l'extraction*
+*12h07 · plat · 1300 m · 7 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | FIRST AL MORTAJEZ | – | MOUSSA REDA |
-| 2 | FARWANE | – | MADIHI SAID |
-| 3 | BORAQ TAJ | – | LAKJAL OUTHMANE |
-| 4 | DESERT KING ER | – | FADDOUL ABDERRAHIM |
-| 5 | FARAH DU KYKNOS | – | ARROMALI AYOUB |
-| 6 | MAGIC GRINE | – | LAKJAL OMAR |
-| 7 | WITHAL FAL | – | MADIHI ZOUHAIR |
-| 8 | QEEMA | – | ECHAKRI MOHAMED AMINE |
+| 1 | FIRST AL MORTAJEZ | 3,2 | MOUSSA REDA |
+| 2 | FARWANE | 3,9 | MADIHI SAID |
+| 4 | DESERT KING ER | 5,1 | FADDOUL ABDERRAHIM |
+| 7 | WITHAL FAL | 6 | MADIHI ZOUHAIR |
+| 3 | BORAQ TAJ | 10 | LAKJAL OUTHMANE |
+| 6 | MAGIC GRINE | 17 | LAKJAL OMAR |
+| 8 | QEEMA | 17 | ECHAKRI MOHAMED AMINE |
 
 ### 4. AL BADRE
 
@@ -61,34 +60,33 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | ESCALATOR | – | MADIHI SAID | –/–/–/– |
-| 2 | GOLD AL SSAKAB | – | MOUSSA REDA | –/–/–/– |
-| 3 | MIA L'HOMBRE | – | ECHAKRI MOHAMED AMINE | –/–/–/– |
-| 4 | SUMMER GRINE | – | LAKJAL OMAR | –/–/–/– |
-| 5 | ANESIDORA | – | BOUAROUA ICHI | –/–/–/– |
-| 6 | ZACK EARTH | – | MADIHI ZOUHAIR | –/–/–/– |
-| 7 | AL SILVER | – | MOUHIYDDINE AHMED | –/–/–/– |
-| 8 | ASHIPCALLEDDIGNITY | – | EL KANDOUSSI ABDELKADER | –/–/–/– |
-| 9 | STYLE DE LIGHT | – | LAFRAM MOHCINE | –/–/–/– |
-| 10 | DANSPIRIT FAL | – | FADDOUL ABDERRAHIM | –/–/–/– |
-| 11 | SOKIM | – | SAMIR HAMZA | –/–/–/– |
-| 12 | OHDEARYME | – | ARROMALI AYOUB | –/–/–/– |
-| 13 | SIZOUT | – | LAFRAM HAMZA | –/–/–/– |
-| 14 | BABY BEACH | – | EL BRIOUIL KAWTHAR | –/–/–/– |
+| 6 | ZACK EARTH | 3,5 | MADIHI ZOUHAIR | –/–/–/– |
+| 10 | DANSPIRIT FAL | 4,9 | FADDOUL ABDERRAHIM | –/–/–/– |
+| 1 | ESCALATOR | 8,5 | MADIHI SAID | –/–/–/– |
+| 5 | ANESIDORA | 10 | BOUAROUA ICHI | –/–/–/– |
+| 3 | MIA L'HOMBRE | 12 | ECHAKRI MOHAMED AMINE | –/–/–/– |
+| 2 | GOLD AL SSAKAB | 13 | MOUSSA REDA | –/–/–/– |
+| 12 | OHDEARYME | 15 | ARROMALI AYOUB | –/–/–/– |
+| 8 | ASHIPCALLEDDIGNITY | 19 | M. ZABOUT | –/–/–/– |
+| 4 | SUMMER GRINE | 21 | LAKJAL OMAR | –/–/–/– |
+| 7 | AL SILVER | 26 | MOUHIYDDINE AHMED | –/–/–/– |
+| 9 | STYLE DE LIGHT | 35 | LAFRAM MOHCINE | –/–/–/– |
+| 13 | SIZOUT | 50 | LAFRAM HAMZA | –/–/–/– |
+| 14 | BABY BEACH | 61 | EL BRIOUIL KAWTHAR | –/–/–/– |
+| 11 | SOKIM | 92 | SAMIR HAMZA | –/–/–/– |
 
 ### 5. AMEJAD
 
-*13h11 · plat · 2100 m · 10 partants · cotes de l'extraction*
+*13h11 · plat · 2100 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | IBN DOR FAL | – | ABOUHAYANE SOUFIANE | –/–/–/– |
-| 2 | AL RANY | – | MADIHI ZOUHAIR | –/–/–/– |
-| 3 | FAHD ESSARII | – | LAKJAL OMAR | –/–/–/– |
-| 4 | ALBAHMON FAL | – | FADDOUL KACEM | –/–/–/– |
-| 5 | MAHER MAAMORA | – | EL MAYMOUNY TIBARI | –/–/–/– |
-| 6 | MAJILISA | – | MOUGHAT AMINE | –/–/–/– |
-| 7 | NIZAR FAL | – | JBILOU KHALID | –/–/–/35 |
-| 8 | MOUGEG FAL | – | ARROMALI MOHAMMED | –/–/–/– |
-| 9 | MUNABIR FAL | – | MOUSSA REDA | –/–/–/– |
-| 10 | OULD AL LOUB FAL | – | ZABOUT MOURAD | –/–/–/35 |
+| 2 | AL RANY | 2,7 | MADIHI ZOUHAIR | –/–/–/– |
+| 5 | MAHER MAAMORA | 3,5 | EL MAYMOUNY TIBARI | –/–/–/– |
+| 3 | FAHD ESSARII | 6,9 | LAKJAL OMAR | –/–/–/– |
+| 10 | OULD AL LOUB FAL | 7,1 | ZABOUT MOURAD | –/–/–/35 |
+| 7 | NIZAR FAL | 13 | JBILOU KHALID | –/–/–/35 |
+| 6 | MAJILIS | 16 | MOUGHAT AMINE | –/–/–/– |
+| 9 | MUNABIR FAL | 37 | MOUSSA REDA | –/–/–/– |
+| 1 | IBN DOR FAL | 45 | ABOUHAYANE SOUFIANE | –/–/–/– |
+| 8 | MOUGEG FAL | 59 | ARROMALI MOHAMMED | –/–/–/– |
