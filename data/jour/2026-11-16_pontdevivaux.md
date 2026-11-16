@@ -79,13 +79,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 7 | THURY HARCOURT | 2,5 | H.BESNIER | 11/4/128/5 |
-| 2 | CORBUSIER | 4,7 | A. CRASTUS | 15/4/20/10 |
-| 1 | CHRIS SOUFFRE | 4,9 | M.GRANDIN | 3/5/29/17 |
-| 4 | EGLANTINE | 6,6 | N.ASTIER | 164/49/270/794 |
-| 5 | OWANA DU MAUPAS | 13 | M.BRUNELLI | 125/268/1481/809 |
-| 6 | TRUE ALICE | 17 | T.TRULLIER | 24/5/92/46 |
-| 3 | ATARA | 19 | A.D'JJI | 248/20/35/219 |
+| 2 | CORBUSIER | 3 | A. CRASTUS | 15/4/20/10 |
+| 1 | CHRIS SOUFFRE | 3,4 | M.GRANDIN | 3/5/29/17 |
+| 7 | THURY HARCOURT | 3,7 | H.BESNIER | 11/4/128/5 |
+| 4 | EGLANTINE | 6,8 | N.ASTIER | 164/49/270/794 |
+| 6 | TRUE ALICE | 22 | T.TRULLIER | 24/5/92/46 |
+| 3 | ATARA | 29 | A.D'JJI | 248/20/35/219 |
+| 5 | OWANA DU MAUPAS | 50 | M.BRUNELLI | 125/268/1481/809 |
 
 ### 6. PRIX DES PERCE-NEIGES
 
@@ -93,27 +93,27 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 3 | KINGORI | 2,6 | M.VELON | 27/5/571/304 |
-| 1 | CAPMAN FAL | 6,3 | K.GAUDEFFROY | 128/35/31/158 |
-| 5 | LIO DE LA PLATA | 7 | A. CRASTUS | 15/363/826/2242 |
-| 2 | USER KINDLY | 7,8 | M.GRANDIN | 3/5/3214/527 |
-| 8 | AL HABISSET | 8,8 | J.NICOLEAU | 112/236/468/240 |
-| 4 | GLAVIA | 12 | M.GERMAIN | 80/346/140/591 |
-| 7 | MOKKA LATTE | 13 | H.BESNIER | 11/57/123/131 |
-| 6 | QUE VENDRA | 16 | T.PICCONE | 9/184/86/– |
+| 3 | KINGORI | 2,5 | M.VELON | 27/5/571/304 |
+| 2 | USER KINDLY | 4,6 | M.GRANDIN | 3/5/3214/527 |
+| 1 | CAPMAN FAL | 5,6 | K.GAUDEFFROY | 128/35/31/158 |
+| 5 | LIO DE LA PLATA | 8,1 | A. CRASTUS | 15/363/826/2242 |
+| 6 | QUE VENDRA | 14 | T.PICCONE | 9/184/86/– |
+| 4 | GLAVIA | 15 | M.GERMAIN | 80/346/140/591 |
+| 7 | MOKKA LATTE | 17 | H.BESNIER | 11/57/123/131 |
+| 8 | AL HABISSET | 28 | J.NICOLEAU | 112/236/468/240 |
 
 ### 7. PRIX DE LA TIMONE
 
-*19h59 · plat · 1500 m · 6 partants · cotes de l'extraction*
+*20h01 · plat · 1500 m · 6 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | TOMAKAY | 2,1 | H.BESNIER | 11/4/217/5 |
-| 4 | TEN HORNS | 3,6 | A.CRASTUS | 15/4/46/– |
-| 2 | MAXIMILIEN | 6,6 | T.PICCONE | 9/5/40/209 |
-| 6 | EOSTRE | 8,4 | M. WALDHAUSER | 45/11/2615/12 |
-| 3 | IVORY SPRING | 12 | M.GRANDIN | 3/99/598/17 |
-| 5 | TASHANKA | 22 | T.TRULLIER | 24/56/69/16 |
+| 1 | TOMAKAY | 1,6 | H.BESNIER | 11/4/217/5 |
+| 4 | TEN HORNS | 5,2 | A.CRASTUS | 15/4/46/– |
+| 6 | EOSTRE | 7,2 | M. WALDHAUSER | 45/11/2615/12 |
+| 3 | IVORY SPRING | 11 | M.GRANDIN | 3/99/598/17 |
+| 2 | MAXIMILIEN | 14 | T.PICCONE | 9/5/40/209 |
+| 5 | TASHANKA | 24 | T.TRULLIER | 24/56/69/16 |
 
 ### 8. PRIX DU CONSEIL DEPARTEMENTAL
 
@@ -121,10 +121,10 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | TIPERE | 3,4 | T. TRULLIER | 24/11/4401/10 |
-| 3 | LOVELY WARRIOR | 3,6 | H.BESNIER | 11/4/5/5 |
-| 2 | TAKAVOR | 6 | T.PICCONE | 9/105/4/205 |
-| 5 | MARCH MADNESS | 6,4 | A.CRASTUS | 15/216/246/223 |
-| 6 | EXTRAWELL | 8,1 | M.WALDHAUSER | 45/11/3272/10 |
-| 4 | LUDWIG DER ZWEITE | 9,8 | M.GRANDIN | 3/5/102/17 |
-| 7 | OREA DE ROMAY | 31 | N.ASTIER | 164/49/1555/794 |
+| 3 | LOVELY WARRIOR | 3,1 | H.BESNIER | 11/4/5/5 |
+| 2 | TAKAVOR | 3,6 | T.PICCONE | 9/105/4/205 |
+| 1 | TIPERE | 4,3 | T. TRULLIER | 24/11/4401/10 |
+| 4 | LUDWIG DER ZWEITE | 6,6 | M.GRANDIN | 3/5/102/17 |
+| 6 | EXTRAWELL | 13 | M.WALDHAUSER | 45/11/3272/10 |
+| 5 | MARCH MADNESS | 14 | A.CRASTUS | 15/216/246/223 |
+| 7 | OREA DE ROMAY | 67 | N.ASTIER | 164/49/1555/794 |
