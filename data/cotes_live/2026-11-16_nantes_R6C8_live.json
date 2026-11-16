@@ -4,44 +4,44 @@
   "reunion": 6,
   "heure_depart": 1794842400000,
   "distance": 3000,
-  "scraped_at": "2026-11-16T15:50:20.764733+01:00",
-  "minutes_avant_depart": 30,
+  "scraped_at": "2026-11-16T15:55:00.529730+01:00",
+  "minutes_avant_depart": 25,
   "participants": [
     {
       "numPmu": 1,
       "nom": "IPANO STAR",
-      "cote_live": 19.0,
+      "cote_live": 20.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794840610000
+      "timestamp_cote": 1794840874000
     },
     {
       "numPmu": 2,
       "nom": "JINGLE PACA",
-      "cote_live": 59.0,
+      "cote_live": 50.0,
       "cote_reference": 59.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794840610000
+      "timestamp_cote": 1794840874000
     },
     {
       "numPmu": 3,
       "nom": "HORUS DE BOMO",
-      "cote_live": 74.0,
+      "cote_live": 75.0,
       "cote_reference": 74.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794840610000
+      "timestamp_cote": 1794840874000
     },
     {
       "numPmu": 4,
       "nom": "JACOB DE MIENNAIS",
-      "cote_live": 10.0,
+      "cote_live": 9.6,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794840610000
+      "timestamp_cote": 1794840874000
     },
     {
       "numPmu": 5,
@@ -50,16 +50,16 @@
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794840610000
+      "timestamp_cote": 1794840874000
     },
     {
       "numPmu": 6,
       "nom": "INGLORIOUS",
-      "cote_live": 5.6,
+      "cote_live": 5.7,
       "cote_reference": 5.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794840610000
+      "timestamp_cote": 1794840874000
     },
     {
       "numPmu": 7,
@@ -68,7 +68,7 @@
       "cote_reference": 33.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794840610000
+      "timestamp_cote": 1794840874000
     },
     {
       "numPmu": 8,
@@ -77,7 +77,7 @@
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794840610000
+      "timestamp_cote": 1794840874000
     },
     {
       "numPmu": 9,
@@ -86,7 +86,7 @@
       "cote_reference": 37.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794840610000
+      "timestamp_cote": 1794840874000
     },
     {
       "numPmu": 10,
@@ -95,34 +95,34 @@
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794840610000
+      "timestamp_cote": 1794840874000
     },
     {
       "numPmu": 11,
       "nom": "JINGO",
-      "cote_live": 7.9,
+      "cote_live": 8.0,
       "cote_reference": 7.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794840610000
+      "timestamp_cote": 1794840874000
     },
     {
       "numPmu": 12,
       "nom": "JOLI DE CONNEE",
-      "cote_live": 8.5,
+      "cote_live": 8.3,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794840610000
+      "timestamp_cote": 1794840874000
     },
     {
       "numPmu": 13,
       "nom": "JOB KERVILOU",
-      "cote_live": 3.5,
+      "cote_live": 3.6,
       "cote_reference": 3.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794840610000
+      "timestamp_cote": 1794840874000
     }
   ],
   "hippodrome": "NANTES",
@@ -144,6 +144,25 @@
         "11": 7.9,
         "12": 8.5,
         "13": 3.5
+      }
+    },
+    {
+      "scraped_at": "2026-11-16T15:55:00.529730+01:00",
+      "minutes_avant_depart": 24.995264249999998,
+      "cotes": {
+        "1": 20.0,
+        "2": 50.0,
+        "3": 75.0,
+        "4": 9.6,
+        "5": 12.0,
+        "6": 5.7,
+        "7": 33.0,
+        "8": 13.0,
+        "9": 37.0,
+        "10": 21.0,
+        "11": 8.0,
+        "12": 8.3,
+        "13": 3.6
       }
     }
   ]
