@@ -4,62 +4,62 @@
   "reunion": 4,
   "heure_depart": 1794941340000,
   "distance": 3200,
-  "scraped_at": "2026-11-17T19:48:31.875895+01:00",
-  "minutes_avant_depart": 0,
+  "scraped_at": "2026-11-17T19:51:11.500711+01:00",
+  "minutes_avant_depart": -2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "GWO KA",
-      "cote_live": 15.0,
+      "cote_live": 8.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794941296000
+      "timestamp_cote": 1794941370000
     },
     {
       "numPmu": 2,
       "nom": "WATT OHM",
-      "cote_live": 2.1,
+      "cote_live": 4.5,
       "cote_reference": 9.1,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1794941296000
+      "favoris": false,
+      "timestamp_cote": 1794941370000
     },
     {
       "numPmu": 3,
       "nom": "ROOSTER CROWING",
-      "cote_live": 27.0,
+      "cote_live": 7.4,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794941296000
+      "timestamp_cote": 1794941370000
     },
     {
       "numPmu": 4,
       "nom": "TREVOR SENORA",
-      "cote_live": 2.4,
+      "cote_live": 2.3,
       "cote_reference": 1.2,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1794941296000
+      "favoris": true,
+      "timestamp_cote": 1794941370000
     },
     {
       "numPmu": 5,
       "nom": "NICK BOUTIQUE",
-      "cote_live": 7.7,
+      "cote_live": 6.4,
       "cote_reference": 7.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794941296000
+      "timestamp_cote": 1794941370000
     },
     {
       "numPmu": 6,
       "nom": "QUEEN LAURIE",
-      "cote_live": 30.0,
+      "cote_live": 14.0,
       "cote_reference": 28.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794941296000
+      "timestamp_cote": 1794941370000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -242,6 +242,54 @@
         "4": 2.4,
         "5": 7.7,
         "6": 30.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-17T19:49:11.358102+01:00",
+      "minutes_avant_depart": -0.18432400000000002,
+      "cotes": {
+        "1": 12.0,
+        "2": 2.4,
+        "3": 13.0,
+        "4": 2.3,
+        "5": 8.2,
+        "6": 28.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-17T19:49:51.238296+01:00",
+      "minutes_avant_depart": -0.8509927333333334,
+      "cotes": {
+        "1": 8.0,
+        "2": 4.5,
+        "3": 7.4,
+        "4": 2.3,
+        "5": 6.4,
+        "6": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-17T19:50:31.282750+01:00",
+      "minutes_avant_depart": -1.5176611833333333,
+      "cotes": {
+        "1": 8.0,
+        "2": 4.5,
+        "3": 7.4,
+        "4": 2.3,
+        "5": 6.4,
+        "6": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-17T19:51:11.500711+01:00",
+      "minutes_avant_depart": -2.184329583333333,
+      "cotes": {
+        "1": 8.0,
+        "2": 4.5,
+        "3": 7.4,
+        "4": 2.3,
+        "5": 6.4,
+        "6": 14.0
       }
     }
   ]

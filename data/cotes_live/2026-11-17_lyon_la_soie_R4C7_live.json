@@ -4,17 +4,17 @@
   "reunion": 4,
   "heure_depart": 1794942660000,
   "distance": 2400,
-  "scraped_at": "2026-11-17T19:45:12.192422+01:00",
-  "minutes_avant_depart": 26,
+  "scraped_at": "2026-11-17T19:49:51.416583+01:00",
+  "minutes_avant_depart": 21,
   "participants": [
     {
       "numPmu": 1,
       "nom": "BOOGIE",
-      "cote_live": 2.8,
+      "cote_live": 2.9,
       "cote_reference": 2.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794941102000
+      "timestamp_cote": 1794941388000
     },
     {
       "numPmu": 2,
@@ -23,43 +23,43 @@
       "cote_reference": 6.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794941102000
+      "timestamp_cote": 1794941388000
     },
     {
       "numPmu": 3,
       "nom": "I GOT RHYTHM",
-      "cote_live": 3.7,
+      "cote_live": 3.9,
       "cote_reference": 3.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794941102000
+      "timestamp_cote": 1794941388000
     },
     {
       "numPmu": 4,
       "nom": "COUPE D'EUROPE",
-      "cote_live": 8.3,
+      "cote_live": 7.3,
       "cote_reference": 8.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794941102000
+      "timestamp_cote": 1794941388000
     },
     {
       "numPmu": 5,
       "nom": "TIGER ROCK",
-      "cote_live": 7.4,
+      "cote_live": 7.6,
       "cote_reference": 9.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794941102000
+      "timestamp_cote": 1794941388000
     },
     {
       "numPmu": 6,
       "nom": "GOLDEN BELLE",
-      "cote_live": 8.2,
+      "cote_live": 7.7,
       "cote_reference": 7.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794941102000
+      "timestamp_cote": 1794941388000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -86,6 +86,18 @@
         "4": 8.3,
         "5": 7.4,
         "6": 8.2
+      }
+    },
+    {
+      "scraped_at": "2026-11-17T19:49:51.416583+01:00",
+      "minutes_avant_depart": 21.14900726666667,
+      "cotes": {
+        "1": 2.9,
+        "2": 6.9,
+        "3": 3.9,
+        "4": 7.3,
+        "5": 7.6,
+        "6": 7.7
       }
     }
   ]
