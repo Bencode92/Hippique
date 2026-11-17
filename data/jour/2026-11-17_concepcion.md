@@ -1,6 +1,6 @@
 # CONCEPCION — 17/11/2026
 
-6 courses (1 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+6 courses (2 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -75,16 +75,16 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 7 | NINA SAMARITANA | 1,7 | BENJAMIN  DIAZ |
+| 10 | CHARLY CHARLY | 1,7 | VICENTE ALEXANDER MARDONES GONZA |
 | 1 | JUDGE ROOM | – | LUIS EDUARDO ROJAS ARANGUREN |
 | 2 | LA VINAMARINA | – | JUAN P. TORRES |
 | 3 | MILTEO | – | MARTIN  URZUA |
 | 4 | YULITZKA | – | ANYELO GERMAN SOTO GARCES |
 | 5 | EL TATUADO | – | JUAN A. CAMPOS |
 | 6 | CORAZON PURO | – | GABRIEL  URZUA |
-| 7 | NINA SAMARITANA | – | BENJAMIN  DIAZ |
 | 8 | GOLDEN WARRIOR | – | ANDRES  VEGA PEREZ JANS |
 | 9 | SURICATA | – | GERSON  PEREDA |
-| 10 | CHARLY CHARLY | – | VICENTE ALEXANDER MARDONES GONZA |
 | 11 | STROKE OF LUCK | – | JOSE MANUEL MOYA SEPULVEDA |
 | 12 | LA MELYTANS | – | GUSTAVO VERA |
 | 13 | VAN DER SAR | – | JUAN A. INOSTROZA |
@@ -95,13 +95,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 4 | SUENA EL DEMBOW | 1,1 | BENJAMIN  DIAZ |
+| 4 | SUENA EL DEMBOW | 1,7 | BENJAMIN  DIAZ |
+| 7 | NINO DEL SUR | 1,7 | JOSE MANUEL MOYA SEPULVEDA |
 | 1 | ROJO JAMAS | – | GERSON  PEREDA |
 | 2 | SPIRIT ROAD | – | GUSTAVO VERA |
 | 3 | QUE BONITO QUE SOY | – | LUIS EDUARDO ROJAS ARANGUREN |
 | 5 | PERTINAX | – | JUAN A. CAMPOS |
 | 6 | MI AGUS | – | MARTIN  URZUA |
-| 7 | NINO DEL SUR | – | JOSE MANUEL MOYA SEPULVEDA |
 | 8 | ONKEL BRUNO | – | ANDRES  VEGA PEREZ JANS |
 | 9 | IRON STAR | – | GABRIEL  URZUA |
 | 10 | EL MANOLO | – | VICENTE ALEXANDER MARDONES GONZA |
