@@ -4,62 +4,62 @@
   "reunion": 4,
   "heure_depart": 1794943260000,
   "distance": 2400,
-  "scraped_at": "2026-11-17T20:19:50.938867+01:00",
-  "minutes_avant_depart": 1,
+  "scraped_at": "2026-11-17T20:22:30.634695+01:00",
+  "minutes_avant_depart": -2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "BOOGIE",
-      "cote_live": 2.0,
+      "cote_live": 2.7,
       "cote_reference": 2.7,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794943183000
+      "timestamp_cote": 1794943300000
     },
     {
       "numPmu": 2,
       "nom": "ARNAY LE DUC",
-      "cote_live": 4.3,
+      "cote_live": 3.5,
       "cote_reference": 6.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794943183000
+      "timestamp_cote": 1794943300000
     },
     {
       "numPmu": 3,
       "nom": "I GOT RHYTHM",
-      "cote_live": 8.1,
+      "cote_live": 6.6,
       "cote_reference": 3.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794943183000
+      "timestamp_cote": 1794943300000
     },
     {
       "numPmu": 4,
       "nom": "COUPE D'EUROPE",
-      "cote_live": 14.0,
+      "cote_live": 13.0,
       "cote_reference": 8.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794943183000
+      "timestamp_cote": 1794943300000
     },
     {
       "numPmu": 5,
       "nom": "TIGER ROCK",
-      "cote_live": 12.0,
+      "cote_live": 11.0,
       "cote_reference": 9.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794943183000
+      "timestamp_cote": 1794943300000
     },
     {
       "numPmu": 6,
       "nom": "GOLDEN BELLE",
-      "cote_live": 7.5,
+      "cote_live": 5.6,
       "cote_reference": 7.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794943183000
+      "timestamp_cote": 1794943300000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -242,6 +242,54 @@
         "4": 14.0,
         "5": 12.0,
         "6": 7.5
+      }
+    },
+    {
+      "scraped_at": "2026-11-17T20:20:30.701539+01:00",
+      "minutes_avant_depart": 0.4917798333333333,
+      "cotes": {
+        "1": 2.1,
+        "2": 3.9,
+        "3": 7.8,
+        "4": 16.0,
+        "5": 13.0,
+        "6": 6.7
+      }
+    },
+    {
+      "scraped_at": "2026-11-17T20:21:10.731321+01:00",
+      "minutes_avant_depart": -0.17488891666666667,
+      "cotes": {
+        "1": 2.4,
+        "2": 3.5,
+        "3": 7.5,
+        "4": 13.0,
+        "5": 14.0,
+        "6": 6.2
+      }
+    },
+    {
+      "scraped_at": "2026-11-17T20:21:50.867050+01:00",
+      "minutes_avant_depart": -0.8415573999999999,
+      "cotes": {
+        "1": 2.7,
+        "2": 3.5,
+        "3": 6.6,
+        "4": 13.0,
+        "5": 11.0,
+        "6": 5.6
+      }
+    },
+    {
+      "scraped_at": "2026-11-17T20:22:30.634695+01:00",
+      "minutes_avant_depart": -1.50822595,
+      "cotes": {
+        "1": 2.7,
+        "2": 3.5,
+        "3": 6.6,
+        "4": 13.0,
+        "5": 11.0,
+        "6": 5.6
       }
     }
   ]
