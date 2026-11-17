@@ -104,13 +104,13 @@
 
 ### 7. PRIX DE SAINT-PRIEST
 
-*20h11 · plat · 2400 m · 6 partants · cotes à T−3:49*
+*20h11 · plat · 2400 m · 6 partants · cotes à T−1:09*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 1 | BOOGIE | 1,8 | 3,7 | A.CRASTUS | 15/20/115/2754 |
-| 2 | ARNAY LE DUC | 5 | 3 | H.BESNIER | 11/124/280/1733 |
-| 6 | GOLDEN BELLE | 7,2 | 9,2 | M.VELON | 27/28/62/122 |
-| 3 | I GOT RHYTHM | 10 | 5 | M.FAVRIAUX | 54/221/88/192 |
+| 1 | BOOGIE | 2 | 3,7 | A.CRASTUS | 15/20/115/2754 |
+| 2 | ARNAY LE DUC | 4,3 | 3 | H.BESNIER | 11/124/280/1733 |
+| 6 | GOLDEN BELLE | 7,5 | 9,2 | M.VELON | 27/28/62/122 |
+| 3 | I GOT RHYTHM | 8,1 | 5 | M.FAVRIAUX | 54/221/88/192 |
 | 5 | TIGER ROCK | 12 | 8,1 | M. BRUNELLI | 125/35/48/89 |
 | 4 | COUPE D'EUROPE | 14 | 8,6 | X.BERGERON | 71/57/7/1681 |
