@@ -141,22 +141,22 @@
 
 ### 8. PRIX DE VALENCE-SUR-BAISE
 
-*18h27 · attelé · 2700 m · 15 partants · cotes de l'extraction*
+*18h28 · attelé · 2700 m · 15 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
 | 14 | NICE HAUFOR | 1,5 | D. THOMAIN |
-| 7 | NOUVELLE JABA | 9,3 | E. RAFFIN |
+| 7 | NOUVELLE JABA | 8 | E. RAFFIN |
 | 15 | NIKITA JIEL | 14 | F. OUVRIE |
-| 12 | NOUMEA DES FLOTS | 21 | P.PH. PLOQUIN |
-| 6 | NORIA JOSSELYN | 23 | A. ANDRE |
-| 5 | NIMOSA | 24 | A. THOMAS |
+| 12 | NOUMEA DES FLOTS | 19 | P.PH. PLOQUIN |
+| 9 | NINA DU BOCAGE | 24 | CH. CLIN |
 | 8 | NIZZA PRESTANCE | 27 | F. LAGADEUC |
-| 2 | NALA DE VAU | 29 | CH. DREUX |
-| 9 | NINA DU BOCAGE | 29 | CH. CLIN |
-| 10 | NOISETTE MIKA | 29 | M. CHAMPENOIS |
-| 3 | NIJNI NOVGOROD TEK | 44 | CH.J. BIGEON |
-| 1 | NEW GIRL DU MATIN | 67 | P.Y. VERVA |
-| 4 | NINA D'AUVERS | 80 | ANDREA ROUSSEL |
-| 13 | NIGHT ERCA | 93 | N. PERRON |
-| 11 | NACRE JADOR | 279 | D. BERTRAND |
+| 5 | NIMOSA | 29 | A. THOMAS |
+| 6 | NORIA JOSSELYN | 36 | A. ANDRE |
+| 3 | NIJNI NOVGOROD TEK | 36 | CH.J. BIGEON |
+| 10 | NOISETTE MIKA | 37 | M. CHAMPENOIS |
+| 2 | NALA DE VAU | 48 | CH. DREUX |
+| 4 | NINA D'AUVERS | 68 | ANDREA ROUSSEL |
+| 1 | NEW GIRL DU MATIN | 110 | P.Y. VERVA |
+| 13 | NIGHT ERCA | 179 | N. PERRON |
+| 11 | NACRE JADOR | 290 | D. BERTRAND |

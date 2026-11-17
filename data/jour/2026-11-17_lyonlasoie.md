@@ -59,47 +59,47 @@
 
 ### 4. PRIX DES PERVENCHES
 
-*18h34 · plat · 1800 m · 11 partants · cotes à T−0:29*
+*18h43 · plat · 1800 m · 11 partants · cotes à T−0:29*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 2 | BAILA NAK | 2,9 | 1,7 | H.BESNIER | 11/4/5/3040 |
-| 6 | BUKORISHIA | 3 | 4,9 | M.VELON | 27/1/9/63 |
-| 7 | KLEINE STER | 9,8 | 9,8 | A.CRASTUS | 15/50/951/4579 |
-| 3 | CAPITAINE CHARLIE | 12 | 23 | M.FAVRIAUX | 54/177/210/400 |
-| 4 | LATZIA | 13 | 19 | C. BILLARDELLO | 114/26/71/185 |
-| 1 | ALMUNECAR | 17 | 38 | E.PUILLET-RODA | 69/100/572/779 |
-| 11 | CORRICELLA | 25 | 49 | M.WALDHAUSER | 45/226/415/1859 |
-| 10 | MANUIA | 28 | 31 | B.FLANDRIN | 103/100/35/1758 |
-| 5 | AMORE BELLA | 29 | 35 | C. CARBONI | 111/26/34/407 |
-| 9 | SUNSHINE DIVA | 33 | 22 | F.LEFEBVRE | 46/155/351/– |
-| 8 | DICTYNNA | 44 | 46 | M.BRUNELLI | 125/12/22/969 |
+| 2 | BAILA NAK | 2,9 | 2,8 | H.BESNIER | 11/4/5/3040 |
+| 6 | BUKORISHIA | 3 | 2,7 | M.VELON | 27/1/9/63 |
+| 7 | KLEINE STER | 9,8 | 9,3 | A.CRASTUS | 15/50/951/4579 |
+| 3 | CAPITAINE CHARLIE | 12 | 12 | M.FAVRIAUX | 54/177/210/400 |
+| 4 | LATZIA | 13 | 18 | C. BILLARDELLO | 114/26/71/185 |
+| 1 | ALMUNECAR | 17 | 21 | E.PUILLET-RODA | 69/100/572/779 |
+| 11 | CORRICELLA | 25 | 36 | M.WALDHAUSER | 45/226/415/1859 |
+| 10 | MANUIA | 28 | 23 | B.FLANDRIN | 103/100/35/1758 |
+| 5 | AMORE BELLA | 29 | 42 | C. CARBONI | 111/26/34/407 |
+| 9 | SUNSHINE DIVA | 33 | 45 | F.LEFEBVRE | 46/155/351/– |
+| 8 | DICTYNNA | 44 | 44 | M.BRUNELLI | 125/12/22/969 |
 
 ### 5. PRIX DU HARAS DES CHATAIGNIERS
 
-*19h07 · plat · 1800 m · 7 partants · cotes à T−0:29*
+*19h17 · plat · 1800 m · 7 partants · cotes à T−0:29*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 7 | PAINTNAK | 2,5 | 5,1 | H.BESNIER | 11/4/5/12 |
-| 2 | TOUESSROK | 3,3 | 2,5 | F. LEFEBVRE | 46/4/253/10 |
-| 4 | KUTAY | 5,6 | 6,9 | M.FAVRIAUX | 54/191/681/4076 |
-| 3 | LINTERCEPTOR | 13 | 10 | C. CARBONI | 111/26/207/3332 |
-| 5 | FLINTSH DU GROHO | 13 | 7,4 | M.VELON | 27/28/2637/4415 |
-| 6 | PLEASANT RISK | 13 | 10 | A.CRASTUS | 15/26/767/617 |
-| 1 | CHERIMINE | 27 | 12 | M.BRUNELLI | 125/12/570/2381 |
+| 7 | PAINTNAK | 2,5 | 2,3 | H.BESNIER | 11/4/5/12 |
+| 2 | TOUESSROK | 3,3 | 3,4 | F. LEFEBVRE | 46/4/253/10 |
+| 4 | KUTAY | 5,6 | 6,3 | M.FAVRIAUX | 54/191/681/4076 |
+| 3 | LINTERCEPTOR | 13 | 11 | C. CARBONI | 111/26/207/3332 |
+| 5 | FLINTSH DU GROHO | 13 | 13 | M.VELON | 27/28/2637/4415 |
+| 6 | PLEASANT RISK | 13 | 16 | A.CRASTUS | 15/26/767/617 |
+| 1 | CHERIMINE | 27 | 28 | M.BRUNELLI | 125/12/570/2381 |
 
 ### 6. PRIX MICHELINE LEURSON
 
-*19h39 · plat · 3200 m · 6 partants · cotes à T−0:28*
+*19h49 · plat · 3200 m · 6 partants · cotes à T−0:28*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 2 | WATT OHM | 2,1 | 6,3 | L.LE GEAY | –/98/1157/1111 |
-| 4 | TREVOR SENORA | 2,4 | 1,8 | F.GUY | –/75/63/95 |
-| 5 | NICK BOUTIQUE | 7,7 | 3,6 | N.GUARNIERI | –/85/804/94 |
-| 1 | GWO KA | 15 | 17 | P.LOTOUT | –/176/1066/338 |
-| 3 | ROOSTER CROWING | 27 | 26 | D.TRUELLE | –/75/96/442 |
+| 2 | WATT OHM | 2,1 | 4,5 | L.LE GEAY | –/98/1157/1111 |
+| 4 | TREVOR SENORA | 2,4 | 2,3 | F.GUY | –/75/63/95 |
+| 5 | NICK BOUTIQUE | 7,7 | 6,4 | N.GUARNIERI | –/85/804/94 |
+| 1 | GWO KA | 15 | 8 | P.LOTOUT | –/176/1066/338 |
+| 3 | ROOSTER CROWING | 27 | 7,4 | D.TRUELLE | –/75/96/442 |
 | 6 | QUEEN LAURIE | 30 | 14 | A.FERLAND | –/35/1194/369 |
 
 ### 7. PRIX DE SAINT-PRIEST
@@ -108,9 +108,9 @@
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 1 | BOOGIE | 3 | 1,6 | A.CRASTUS | 15/20/115/2754 |
-| 3 | I GOT RHYTHM | 4 | 12 | M.FAVRIAUX | 54/221/88/192 |
-| 2 | ARNAY LE DUC | 6,2 | 7,3 | H.BESNIER | 11/124/280/1733 |
-| 4 | COUPE D'EUROPE | 7,1 | 14 | X.BERGERON | 71/57/7/1681 |
-| 6 | GOLDEN BELLE | 7,3 | 8,6 | M.VELON | 27/28/62/122 |
-| 5 | TIGER ROCK | 7,8 | 7,4 | M. BRUNELLI | 125/35/48/89 |
+| 1 | BOOGIE | 3 | 3,7 | A.CRASTUS | 15/20/115/2754 |
+| 3 | I GOT RHYTHM | 4 | 5 | M.FAVRIAUX | 54/221/88/192 |
+| 2 | ARNAY LE DUC | 6,2 | 3 | H.BESNIER | 11/124/280/1733 |
+| 4 | COUPE D'EUROPE | 7,1 | 8,6 | X.BERGERON | 71/57/7/1681 |
+| 6 | GOLDEN BELLE | 7,3 | 9,2 | M.VELON | 27/28/62/122 |
+| 5 | TIGER ROCK | 7,8 | 8,1 | M. BRUNELLI | 125/35/48/89 |
