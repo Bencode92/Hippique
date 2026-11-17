@@ -1,6 +1,6 @@
 # CONCEPCION — 17/11/2026
 
-6 courses (2 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+6 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -12,16 +12,16 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | ASTROAZURRO | – | JOSE MANUEL MOYA SEPULVEDA |
+| 1 | ASTROAZURRO | 1,6 | JOSE MANUEL MOYA SEPULVEDA |
+| 6 | LA JOSITA | 4,8 | LUIS EDUARDO ROJAS ARANGUREN |
+| 10 | SIMONE BULL | 4,8 | ANDRES  VEGA PEREZ JANS |
+| 5 | SONRIELE | 9,7 | GABRIEL  URZUA |
 | 2 | GRAN DREAMER | – | JUAN A. CAMPOS |
 | 3 | MISS SPRING | – | GERSON  PEREDA |
 | 4 | FLASH STREAK | – | MARTIN  URZUA |
-| 5 | SONRIELE | – | GABRIEL  URZUA |
-| 6 | LA JOSITA | – | LUIS EDUARDO ROJAS ARANGUREN |
 | 7 | DANGER IN RIO | – | JUAN P. TORRES |
 | 8 | LA RECAUDADORA | – | GUSTAVO VERA |
 | 9 | EL CATIMBA | – | VICENTE ALEXANDER MARDONES GONZA |
-| 10 | SIMONE BULL | – | ANDRES  VEGA PEREZ JANS |
 
 ### 2. 31§ ANIVERSARIO DE LA ESTRELLA
 
@@ -29,12 +29,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | CELTIC STORM | – | GERSON  PEREDA |
+| 3 | TIEMPO DE ROSAS | 1,1 | VICENTE ALEXANDER MARDONES GONZA |
+| 1 | CELTIC STORM | 8,6 | GERSON  PEREDA |
+| 6 | LIBRE PENSADOR | 8,6 | ALEXIS EDUARDO CORDERO MESIAS |
+| 5 | BOOGIN | 17 | JOSE MANUEL MOYA SEPULVEDA |
 | 2 | ALCAZAR DE SEVILLA | – | JUAN A. CAMPOS |
-| 3 | TIEMPO DE ROSAS | – | VICENTE ALEXANDER MARDONES GONZA |
 | 4 | FULKAR | – | GUSTAVO VERA |
-| 5 | BOOGIN | – | JOSE MANUEL MOYA SEPULVEDA |
-| 6 | LIBRE PENSADOR | – | ALEXIS EDUARDO CORDERO MESIAS |
 | 7 | ABIEL | – | JUAN A. INOSTROZA |
 | 8 | REY MANUEL | – | LUIS EDUARDO ROJAS ARANGUREN |
 
@@ -44,11 +44,11 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | WHITE SPIRIT | – | GABRIEL  URZUA |
-| 2 | LOCO Y DEMENTE | – | JOSE MANUEL MOYA SEPULVEDA |
-| 3 | BIG RED | – | LUIS EDUARDO ROJAS ARANGUREN |
-| 4 | COPAYAPU | – | ANYELO GERMAN SOTO GARCES |
-| 5 | PECADO INCONFESABLE | – | VICENTE ALEXANDER MARDONES GONZA |
+| 4 | COPAYAPU | 1,4 | ANYELO GERMAN SOTO GARCES |
+| 3 | BIG RED | 4,4 | LUIS EDUARDO ROJAS ARANGUREN |
+| 5 | PECADO INCONFESABLE | 7,2 | VICENTE ALEXANDER MARDONES GONZA |
+| 1 | WHITE SPIRIT | 20 | GABRIEL  URZUA |
+| 2 | LOCO Y DEMENTE | 20 | JOSE MANUEL MOYA SEPULVEDA |
 
 ### 4. LA PRENSA REGIONAL
 
@@ -56,18 +56,18 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | CHARMING STAR | – | JUAN A. CAMPOS | –/–/–/– |
+| 6 | FALLEN DREAMER | 1,8 | JOSE MANUEL MOYA SEPULVEDA | –/–/–/– |
+| 1 | CHARMING STAR | 4,6 | JUAN A. CAMPOS | –/–/–/– |
+| 12 | PRINCIPE DE ORO | 4,6 | MARTIN  URZUA | –/–/–/– |
+| 10 | SKY TROY | 9,2 | ANDRES  VEGA PEREZ JANS | –/–/–/– |
+| 5 | TEATRO GRIEGO | 18 | GUSTAVO VERA | –/–/–/– |
 | 2 | RANI | – | ANYELO GERMAN SOTO GARCES | –/–/–/– |
 | 3 | YERKO | – | VICENTE ALEXANDER MARDONES GONZA | –/–/–/– |
 | 4 | ESCAPE PLAN | – | JUAN A. INOSTROZA | –/–/–/– |
-| 5 | TEATRO GRIEGO | – | GUSTAVO VERA | –/–/–/– |
-| 6 | FALLEN DREAMER | – | JOSE MANUEL MOYA SEPULVEDA | –/–/–/– |
 | 7 | COMO TE EXTRANO | – | GERSON  PEREDA | –/–/–/– |
 | 8 | MALEFICO | – | BENJAMIN  DIAZ | –/–/–/– |
 | 9 | HERE I GO AGAIN | – | GABRIEL  URZUA | –/–/–/– |
-| 10 | SKY TROY | – | ANDRES  VEGA PEREZ JANS | –/–/–/– |
 | 11 | DEJAME A UNA | – | LUIS EDUARDO ROJAS ARANGUREN | –/–/–/– |
-| 12 | PRINCIPE DE ORO | – | MARTIN  URZUA | –/–/–/– |
 
 ### 5. DIARIO EL SUR 144 ANOS
 
@@ -75,13 +75,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 7 | NINA SAMARITANA | 1,7 | BENJAMIN  DIAZ |
-| 10 | CHARLY CHARLY | 1,7 | VICENTE ALEXANDER MARDONES GONZA |
-| 1 | JUDGE ROOM | – | LUIS EDUARDO ROJAS ARANGUREN |
-| 2 | LA VINAMARINA | – | JUAN P. TORRES |
+| 1 | JUDGE ROOM | 2,4 | LUIS EDUARDO ROJAS ARANGUREN |
+| 7 | NINA SAMARITANA | 2,4 | BENJAMIN  DIAZ |
+| 2 | LA VINAMARINA | 7,4 | JUAN P. TORRES |
+| 10 | CHARLY CHARLY | 7,4 | VICENTE ALEXANDER MARDONES GONZA |
+| 5 | EL TATUADO | 14 | JUAN A. CAMPOS |
 | 3 | MILTEO | – | MARTIN  URZUA |
 | 4 | YULITZKA | – | ANYELO GERMAN SOTO GARCES |
-| 5 | EL TATUADO | – | JUAN A. CAMPOS |
 | 6 | CORAZON PURO | – | GABRIEL  URZUA |
 | 8 | GOLDEN WARRIOR | – | ANDRES  VEGA PEREZ JANS |
 | 9 | SURICATA | – | GERSON  PEREDA |
@@ -91,17 +91,16 @@
 
 ### 6. EMPRESAS DIARIO EL SUR
 
-*23h15 · plat · 1100 m · 10 partants · cotes de l'extraction*
+*23h15 · plat · 1100 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 4 | SUENA EL DEMBOW | 1,7 | BENJAMIN  DIAZ |
-| 7 | NINO DEL SUR | 1,7 | JOSE MANUEL MOYA SEPULVEDA |
-| 1 | ROJO JAMAS | – | GERSON  PEREDA |
-| 2 | SPIRIT ROAD | – | GUSTAVO VERA |
-| 3 | QUE BONITO QUE SOY | – | LUIS EDUARDO ROJAS ARANGUREN |
-| 5 | PERTINAX | – | JUAN A. CAMPOS |
-| 6 | MI AGUS | – | MARTIN  URZUA |
-| 8 | ONKEL BRUNO | – | ANDRES  VEGA PEREZ JANS |
+| 1 | ROJO JAMAS | 2,1 | GERSON  PEREDA |
+| 7 | NINO DEL SUR | 4,2 | JOSE MANUEL MOYA SEPULVEDA |
+| 8 | ONKEL BRUNO | 6,3 | ANDRES  VEGA PEREZ JANS |
+| 2 | SPIRIT ROAD | 12 | GUSTAVO VERA |
+| 3 | QUE BONITO QUE SOY | 12 | LUIS EDUARDO ROJAS ARANGUREN |
+| 4 | SUENA EL DEMBOW | 12 | BENJAMIN  DIAZ |
+| 5 | PERTINAX | 25 | JUAN A. CAMPOS |
 | 9 | IRON STAR | – | GABRIEL  URZUA |
 | 10 | EL MANOLO | – | VICENTE ALEXANDER MARDONES GONZA |
