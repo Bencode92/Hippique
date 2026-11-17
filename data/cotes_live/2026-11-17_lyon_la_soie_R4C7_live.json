@@ -4,62 +4,62 @@
   "reunion": 4,
   "heure_depart": 1794942660000,
   "distance": 2400,
-  "scraped_at": "2026-11-17T19:53:51.683839+01:00",
-  "minutes_avant_depart": 17,
+  "scraped_at": "2026-11-17T19:56:31.239755+01:00",
+  "minutes_avant_depart": 14,
   "participants": [
     {
       "numPmu": 1,
       "nom": "BOOGIE",
-      "cote_live": 3.0,
+      "cote_live": 3.8,
       "cote_reference": 2.7,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1794941608000
+      "favoris": false,
+      "timestamp_cote": 1794941784000
     },
     {
       "numPmu": 2,
       "nom": "ARNAY LE DUC",
-      "cote_live": 6.2,
+      "cote_live": 2.8,
       "cote_reference": 6.7,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1794941608000
+      "favoris": true,
+      "timestamp_cote": 1794941784000
     },
     {
       "numPmu": 3,
       "nom": "I GOT RHYTHM",
-      "cote_live": 4.0,
+      "cote_live": 5.2,
       "cote_reference": 3.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794941608000
+      "timestamp_cote": 1794941784000
     },
     {
       "numPmu": 4,
       "nom": "COUPE D'EUROPE",
-      "cote_live": 7.1,
+      "cote_live": 8.7,
       "cote_reference": 8.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794941608000
+      "timestamp_cote": 1794941784000
     },
     {
       "numPmu": 5,
       "nom": "TIGER ROCK",
-      "cote_live": 7.8,
+      "cote_live": 8.4,
       "cote_reference": 9.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794941608000
+      "timestamp_cote": 1794941784000
     },
     {
       "numPmu": 6,
       "nom": "GOLDEN BELLE",
-      "cote_live": 7.3,
+      "cote_live": 9.3,
       "cote_reference": 7.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794941608000
+      "timestamp_cote": 1794941784000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -110,6 +110,18 @@
         "4": 7.1,
         "5": 7.8,
         "6": 7.3
+      }
+    },
+    {
+      "scraped_at": "2026-11-17T19:56:31.239755+01:00",
+      "minutes_avant_depart": 14.483303183333334,
+      "cotes": {
+        "1": 3.8,
+        "2": 2.8,
+        "3": 5.2,
+        "4": 8.7,
+        "5": 8.4,
+        "6": 9.3
       }
     }
   ]

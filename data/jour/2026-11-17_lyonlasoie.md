@@ -104,13 +104,13 @@
 
 ### 7. PRIX DE SAINT-PRIEST
 
-*20h11 · plat · 2400 m · 6 partants · cotes à T−17:08*
+*20h11 · plat · 2400 m · 6 partants · cotes à T−14:29*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 1 | BOOGIE | 3 | 3,7 | A.CRASTUS | 15/20/115/2754 |
-| 3 | I GOT RHYTHM | 4 | 5 | M.FAVRIAUX | 54/221/88/192 |
-| 2 | ARNAY LE DUC | 6,2 | 3 | H.BESNIER | 11/124/280/1733 |
-| 4 | COUPE D'EUROPE | 7,1 | 8,6 | X.BERGERON | 71/57/7/1681 |
-| 6 | GOLDEN BELLE | 7,3 | 9,2 | M.VELON | 27/28/62/122 |
-| 5 | TIGER ROCK | 7,8 | 8,1 | M. BRUNELLI | 125/35/48/89 |
+| 2 | ARNAY LE DUC | 2,8 | 3 | H.BESNIER | 11/124/280/1733 |
+| 1 | BOOGIE | 3,8 | 3,7 | A.CRASTUS | 15/20/115/2754 |
+| 3 | I GOT RHYTHM | 5,2 | 5 | M.FAVRIAUX | 54/221/88/192 |
+| 5 | TIGER ROCK | 8,4 | 8,1 | M. BRUNELLI | 125/35/48/89 |
+| 4 | COUPE D'EUROPE | 8,7 | 8,6 | X.BERGERON | 71/57/7/1681 |
+| 6 | GOLDEN BELLE | 9,3 | 9,2 | M.VELON | 27/28/62/122 |
