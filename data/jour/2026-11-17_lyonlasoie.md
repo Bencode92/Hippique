@@ -1,6 +1,6 @@
 # LYON LA SOIE — 17/11/2026
 
-7 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+7 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -59,35 +59,35 @@
 
 ### 4. PRIX DES PERVENCHES
 
-*18h34 · plat · 1800 m · 11 partants · cotes à T−7:49*
+*18h34 · plat · 1800 m · 11 partants · cotes à T−3:49*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 2 | BAILA NAK | 2,7 | 1,7 | H.BESNIER | 11/4/5/3040 |
-| 6 | BUKORISHIA | 3,5 | 4,9 | M.VELON | 27/1/9/63 |
-| 7 | KLEINE STER | 9,9 | 9,8 | A.CRASTUS | 15/50/951/4579 |
-| 4 | LATZIA | 10 | 19 | C. BILLARDELLO | 114/26/71/185 |
-| 1 | ALMUNECAR | 12 | 38 | E.PUILLET-RODA | 69/100/572/779 |
+| 6 | BUKORISHIA | 2,7 | 4,9 | M.VELON | 27/1/9/63 |
+| 2 | BAILA NAK | 3,7 | 1,7 | H.BESNIER | 11/4/5/3040 |
+| 7 | KLEINE STER | 8,3 | 9,8 | A.CRASTUS | 15/50/951/4579 |
+| 4 | LATZIA | 11 | 19 | C. BILLARDELLO | 114/26/71/185 |
+| 1 | ALMUNECAR | 13 | 38 | E.PUILLET-RODA | 69/100/572/779 |
 | 3 | CAPITAINE CHARLIE | 22 | 23 | M.FAVRIAUX | 54/177/210/400 |
-| 11 | CORRICELLA | 22 | 49 | M.WALDHAUSER | 45/226/415/1859 |
-| 9 | SUNSHINE DIVA | 25 | 22 | F.LEFEBVRE | 46/155/351/– |
-| 10 | MANUIA | 28 | 31 | B.FLANDRIN | 103/100/35/1758 |
-| 5 | AMORE BELLA | 30 | 35 | C. CARBONI | 111/26/34/407 |
-| 8 | DICTYNNA | 40 | 46 | M.BRUNELLI | 125/12/22/969 |
+| 11 | CORRICELLA | 23 | 49 | M.WALDHAUSER | 45/226/415/1859 |
+| 10 | MANUIA | 25 | 31 | B.FLANDRIN | 103/100/35/1758 |
+| 5 | AMORE BELLA | 26 | 35 | C. CARBONI | 111/26/34/407 |
+| 9 | SUNSHINE DIVA | 27 | 22 | F.LEFEBVRE | 46/155/351/– |
+| 8 | DICTYNNA | 38 | 46 | M.BRUNELLI | 125/12/22/969 |
 
 ### 5. PRIX DU HARAS DES CHATAIGNIERS
 
-*19h07 · plat · 1800 m · 7 partants · cotes de l'extraction*
+*19h07 · plat · 1800 m · 7 partants · cotes à T−29:48*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 2 | TOUESSROK | 2,5 | F. LEFEBVRE | 46/4/253/10 |
-| 7 | PAINTNAK | 5,1 | H.BESNIER | 11/4/5/12 |
-| 4 | KUTAY | 6,9 | M.FAVRIAUX | 54/191/681/4076 |
-| 5 | FLINTSH DU GROHO | 7,4 | M.VELON | 27/28/2637/4415 |
-| 3 | LINTERCEPTOR | 10 | C. CARBONI | 111/26/207/3332 |
-| 6 | PLEASANT RISK | 10 | A.CRASTUS | 15/26/767/617 |
-| 1 | CHERIMINE | 12 | M.BRUNELLI | 125/12/570/2381 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 7 | PAINTNAK | 1,9 | 5,1 | H.BESNIER | 11/4/5/12 |
+| 2 | TOUESSROK | 3,9 | 2,5 | F. LEFEBVRE | 46/4/253/10 |
+| 4 | KUTAY | 10 | 6,9 | M.FAVRIAUX | 54/191/681/4076 |
+| 3 | LINTERCEPTOR | 11 | 10 | C. CARBONI | 111/26/207/3332 |
+| 5 | FLINTSH DU GROHO | 11 | 7,4 | M.VELON | 27/28/2637/4415 |
+| 6 | PLEASANT RISK | 18 | 10 | A.CRASTUS | 15/26/767/617 |
+| 1 | CHERIMINE | 20 | 12 | M.BRUNELLI | 125/12/570/2381 |
 
 ### 6. PRIX MICHELINE LEURSON
 
