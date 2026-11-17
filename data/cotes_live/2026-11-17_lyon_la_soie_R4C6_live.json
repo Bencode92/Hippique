@@ -1,0 +1,80 @@
+{
+  "course": "PRIX MICHELINE LEURSON",
+  "numero": 6,
+  "reunion": 4,
+  "heure_depart": 1794940740000,
+  "distance": 3200,
+  "scraped_at": "2026-11-17T19:09:11.497876+01:00",
+  "minutes_avant_depart": 30,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "GWO KA",
+      "cote_live": 24.0,
+      "cote_reference": 24.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794938456000
+    },
+    {
+      "numPmu": 2,
+      "nom": "WATT OHM",
+      "cote_live": 11.0,
+      "cote_reference": 9.1,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794938456000
+    },
+    {
+      "numPmu": 3,
+      "nom": "ROOSTER CROWING",
+      "cote_live": 25.0,
+      "cote_reference": 19.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794938456000
+    },
+    {
+      "numPmu": 4,
+      "nom": "TREVOR SENORA",
+      "cote_live": 1.2,
+      "cote_reference": 1.2,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1794938456000
+    },
+    {
+      "numPmu": 5,
+      "nom": "NICK BOUTIQUE",
+      "cote_live": 7.4,
+      "cote_reference": 7.8,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794938456000
+    },
+    {
+      "numPmu": 6,
+      "nom": "QUEEN LAURIE",
+      "cote_live": 28.0,
+      "cote_reference": 28.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1794938456000
+    }
+  ],
+  "hippodrome": "LYON LA SOIE",
+  "releves": [
+    {
+      "scraped_at": "2026-11-17T19:09:11.497876+01:00",
+      "minutes_avant_depart": 29.815793933333335,
+      "cotes": {
+        "1": 24.0,
+        "2": 11.0,
+        "3": 25.0,
+        "4": 1.2,
+        "5": 7.4,
+        "6": 28.0
+      }
+    }
+  ]
+}

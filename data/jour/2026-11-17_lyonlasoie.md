@@ -1,6 +1,6 @@
 # LYON LA SOIE — 17/11/2026
 
-7 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+7 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -77,30 +77,30 @@
 
 ### 5. PRIX DU HARAS DES CHATAIGNIERS
 
-*19h07 · plat · 1800 m · 7 partants · cotes à T−9:49*
+*19h07 · plat · 1800 m · 7 partants · cotes à T−5:49*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 7 | PAINTNAK | 2,1 | 5,1 | H.BESNIER | 11/4/5/12 |
-| 2 | TOUESSROK | 4,9 | 2,5 | F. LEFEBVRE | 46/4/253/10 |
-| 4 | KUTAY | 7,3 | 6,9 | M.FAVRIAUX | 54/191/681/4076 |
-| 6 | PLEASANT RISK | 9,1 | 10 | A.CRASTUS | 15/26/767/617 |
+| 7 | PAINTNAK | 2,5 | 5,1 | H.BESNIER | 11/4/5/12 |
+| 2 | TOUESSROK | 4,1 | 2,5 | F. LEFEBVRE | 46/4/253/10 |
+| 4 | KUTAY | 6,2 | 6,9 | M.FAVRIAUX | 54/191/681/4076 |
+| 6 | PLEASANT RISK | 9,6 | 10 | A.CRASTUS | 15/26/767/617 |
 | 3 | LINTERCEPTOR | 10 | 10 | C. CARBONI | 111/26/207/3332 |
-| 5 | FLINTSH DU GROHO | 11 | 7,4 | M.VELON | 27/28/2637/4415 |
-| 1 | CHERIMINE | 24 | 12 | M.BRUNELLI | 125/12/570/2381 |
+| 5 | FLINTSH DU GROHO | 10 | 7,4 | M.VELON | 27/28/2637/4415 |
+| 1 | CHERIMINE | 21 | 12 | M.BRUNELLI | 125/12/570/2381 |
 
 ### 6. PRIX MICHELINE LEURSON
 
-*19h39 · plat · 3200 m · 6 partants · cotes de l'extraction*
+*19h39 · plat · 3200 m · 6 partants · cotes à T−29:49*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 4 | TREVOR SENORA | 1,8 | F.GUY | –/75/63/95 |
-| 5 | NICK BOUTIQUE | 3,6 | N.GUARNIERI | –/85/804/94 |
-| 2 | WATT OHM | 6,3 | L.LE GEAY | –/98/1157/1111 |
-| 6 | QUEEN LAURIE | 14 | A.FERLAND | –/35/1194/369 |
-| 1 | GWO KA | 17 | P.LOTOUT | –/176/1066/338 |
-| 3 | ROOSTER CROWING | 26 | D.TRUELLE | –/75/96/442 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 4 | TREVOR SENORA | 1,2 | 1,8 | F.GUY | –/75/63/95 |
+| 5 | NICK BOUTIQUE | 7,4 | 3,6 | N.GUARNIERI | –/85/804/94 |
+| 2 | WATT OHM | 11 | 6,3 | L.LE GEAY | –/98/1157/1111 |
+| 1 | GWO KA | 24 | 17 | P.LOTOUT | –/176/1066/338 |
+| 3 | ROOSTER CROWING | 25 | 26 | D.TRUELLE | –/75/96/442 |
+| 6 | QUEEN LAURIE | 28 | 14 | A.FERLAND | –/35/1194/369 |
 
 ### 7. PRIX DE SAINT-PRIEST
 
