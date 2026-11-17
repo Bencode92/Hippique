@@ -77,17 +77,17 @@
 
 ### 5. PRIX DU HARAS DES CHATAIGNIERS
 
-*19h07 · plat · 1800 m · 7 partants · cotes à T−12:29*
+*19h07 · plat · 1800 m · 7 partants · cotes à T−9:49*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 7 | PAINTNAK | 2,9 | 5,1 | H.BESNIER | 11/4/5/12 |
-| 2 | TOUESSROK | 4,1 | 2,5 | F. LEFEBVRE | 46/4/253/10 |
-| 4 | KUTAY | 5,3 | 6,9 | M.FAVRIAUX | 54/191/681/4076 |
-| 3 | LINTERCEPTOR | 8,7 | 10 | C. CARBONI | 111/26/207/3332 |
-| 6 | PLEASANT RISK | 9,2 | 10 | A.CRASTUS | 15/26/767/617 |
-| 5 | FLINTSH DU GROHO | 9,9 | 7,4 | M.VELON | 27/28/2637/4415 |
-| 1 | CHERIMINE | 25 | 12 | M.BRUNELLI | 125/12/570/2381 |
+| 7 | PAINTNAK | 2,1 | 5,1 | H.BESNIER | 11/4/5/12 |
+| 2 | TOUESSROK | 4,9 | 2,5 | F. LEFEBVRE | 46/4/253/10 |
+| 4 | KUTAY | 7,3 | 6,9 | M.FAVRIAUX | 54/191/681/4076 |
+| 6 | PLEASANT RISK | 9,1 | 10 | A.CRASTUS | 15/26/767/617 |
+| 3 | LINTERCEPTOR | 10 | 10 | C. CARBONI | 111/26/207/3332 |
+| 5 | FLINTSH DU GROHO | 11 | 7,4 | M.VELON | 27/28/2637/4415 |
+| 1 | CHERIMINE | 24 | 12 | M.BRUNELLI | 125/12/570/2381 |
 
 ### 6. PRIX MICHELINE LEURSON
 
