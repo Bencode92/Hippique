@@ -8,21 +8,21 @@
 
 ### 1. PRIX DE L'ANCIENNE BATTERIE
 
-*16h49 · plat · 2150 m · 11 partants · cotes à T−29:06*
+*16h49 · plat · 2150 m · 11 partants · cotes à T−27:27*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 7 | MASINDHAL | 3,5 | 4 | H.BESNIER | 11/100/244/755 |
-| 4 | COGOLIN | 5,7 | 10 | M.VELON | 27/176/413/338 |
-| 1 | KING MOTIF | 7,7 | 2,8 | A.BARON | 38/28/7/1524 |
-| 10 | MR HARPIN | 9 | 20 | A.CRASTUS | 15/26/44/379 |
+| 7 | MASINDHAL | 3,3 | 4 | H.BESNIER | 11/100/244/755 |
+| 4 | COGOLIN | 5,8 | 10 | M.VELON | 27/176/413/338 |
+| 1 | KING MOTIF | 7,8 | 2,8 | A.BARON | 38/28/7/1524 |
+| 10 | MR HARPIN | 9,6 | 20 | A.CRASTUS | 15/26/44/379 |
 | 5 | THREE DREAMS | 11 | – | A.ORANI | 5/162/786/282 |
-| 6 | BLUE OCEAN DREAM | 12 | 5 | M.FAVRIAUX | 54/163/1371/1064 |
 | 2 | SIR WALTER | 13 | – | F.LEFEBVRE | 46/155/829/1231 |
-| 3 | VINGT SEPT | 14 | – | E.PUILLET-RODA | 69/26/814/903 |
+| 6 | BLUE OCEAN DREAM | 13 | 5 | M.FAVRIAUX | 54/163/1371/1064 |
+| 3 | VINGT SEPT | 15 | – | E.PUILLET-RODA | 69/26/814/903 |
 | 8 | THE CHARMER | 17 | 10 | M.WALDHAUSER | 45/162/–/616 |
-| 9 | MOWGLI | 26 | 10 | B.FLANDRIN | 103/486/54/1382 |
-| 11 | FETE JOYEUSE | 31 | – | V.DUPONT | 92/226/1499/2558 |
+| 9 | MOWGLI | 25 | 10 | B.FLANDRIN | 103/486/54/1382 |
+| 11 | FETE JOYEUSE | 29 | – | V.DUPONT | 92/226/1499/2558 |
 
 ### 2. PRIX DE LA POSTE AUX CHEVAUX
 
