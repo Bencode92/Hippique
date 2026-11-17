@@ -91,16 +91,16 @@
 
 ### 6. PRIX MICHELINE LEURSON
 
-*19h39 · plat · 3200 m · 6 partants · cotes à T−3:09*
+*19h39 · plat · 3200 m · 6 partants · cotes à T−0:28*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 2 | WATT OHM | 1,8 | 6,3 | L.LE GEAY | –/98/1157/1111 |
-| 4 | TREVOR SENORA | 2,5 | 1,8 | F.GUY | –/75/63/95 |
-| 5 | NICK BOUTIQUE | 10 | 3,6 | N.GUARNIERI | –/85/804/94 |
-| 1 | GWO KA | 21 | 17 | P.LOTOUT | –/176/1066/338 |
-| 6 | QUEEN LAURIE | 31 | 14 | A.FERLAND | –/35/1194/369 |
-| 3 | ROOSTER CROWING | 39 | 26 | D.TRUELLE | –/75/96/442 |
+| 2 | WATT OHM | 2,1 | 6,3 | L.LE GEAY | –/98/1157/1111 |
+| 4 | TREVOR SENORA | 2,4 | 1,8 | F.GUY | –/75/63/95 |
+| 5 | NICK BOUTIQUE | 7,7 | 3,6 | N.GUARNIERI | –/85/804/94 |
+| 1 | GWO KA | 15 | 17 | P.LOTOUT | –/176/1066/338 |
+| 3 | ROOSTER CROWING | 27 | 26 | D.TRUELLE | –/75/96/442 |
+| 6 | QUEEN LAURIE | 30 | 14 | A.FERLAND | –/35/1194/369 |
 
 ### 7. PRIX DE SAINT-PRIEST
 
