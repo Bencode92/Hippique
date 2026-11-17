@@ -1,6 +1,6 @@
 # LYON LA SOIE — 17/11/2026
 
-7 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+7 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -59,21 +59,21 @@
 
 ### 4. PRIX DES PERVENCHES
 
-*18h34 · plat · 1800 m · 11 partants · cotes de l'extraction*
+*18h34 · plat · 1800 m · 11 partants · cotes à T−15:28*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 2 | BAILA NAK | 1,7 | H.BESNIER | 11/4/5/3040 |
-| 6 | BUKORISHIA | 4,9 | M.VELON | 27/1/9/63 |
-| 7 | KLEINE STER | 9,8 | A.CRASTUS | 15/50/951/4579 |
-| 4 | LATZIA | 19 | C. BILLARDELLO | 114/26/71/185 |
-| 9 | SUNSHINE DIVA | 22 | F.LEFEBVRE | 46/155/351/– |
-| 3 | CAPITAINE CHARLIE | 23 | M.FAVRIAUX | 54/177/210/400 |
-| 10 | MANUIA | 31 | B.FLANDRIN | 103/100/35/1758 |
-| 5 | AMORE BELLA | 35 | C. CARBONI | 111/26/34/407 |
-| 1 | ALMUNECAR | 38 | E.PUILLET-RODA | 69/100/572/779 |
-| 8 | DICTYNNA | 46 | M.BRUNELLI | 125/12/22/969 |
-| 11 | CORRICELLA | 49 | M.WALDHAUSER | 45/226/415/1859 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 2 | BAILA NAK | 2,4 | 1,7 | H.BESNIER | 11/4/5/3040 |
+| 6 | BUKORISHIA | 3 | 4,9 | M.VELON | 27/1/9/63 |
+| 7 | KLEINE STER | 9,8 | 9,8 | A.CRASTUS | 15/50/951/4579 |
+| 4 | LATZIA | 18 | 19 | C. BILLARDELLO | 114/26/71/185 |
+| 1 | ALMUNECAR | 20 | 38 | E.PUILLET-RODA | 69/100/572/779 |
+| 9 | SUNSHINE DIVA | 22 | 22 | F.LEFEBVRE | 46/155/351/– |
+| 3 | CAPITAINE CHARLIE | 27 | 23 | M.FAVRIAUX | 54/177/210/400 |
+| 5 | AMORE BELLA | 32 | 35 | C. CARBONI | 111/26/34/407 |
+| 8 | DICTYNNA | 33 | 46 | M.BRUNELLI | 125/12/22/969 |
+| 10 | MANUIA | 40 | 31 | B.FLANDRIN | 103/100/35/1758 |
+| 11 | CORRICELLA | 50 | 49 | M.WALDHAUSER | 45/226/415/1859 |
 
 ### 5. PRIX DU HARAS DES CHATAIGNIERS
 
