@@ -104,13 +104,13 @@
 
 ### 7. PRIX DE SAINT-PRIEST
 
-*20h11 · plat · 2400 m · 6 partants · cotes à T−9:49*
+*20h11 · plat · 2400 m · 6 partants · cotes à T−7:49*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
-| 2 | ARNAY LE DUC | 3 | 3 | H.BESNIER | 11/124/280/1733 |
-| 1 | BOOGIE | 4 | 3,7 | A.CRASTUS | 15/20/115/2754 |
-| 3 | I GOT RHYTHM | 5,7 | 5 | M.FAVRIAUX | 54/221/88/192 |
-| 6 | GOLDEN BELLE | 6,5 | 9,2 | M.VELON | 27/28/62/122 |
-| 4 | COUPE D'EUROPE | 8 | 8,6 | X.BERGERON | 71/57/7/1681 |
-| 5 | TIGER ROCK | 9,1 | 8,1 | M. BRUNELLI | 125/35/48/89 |
+| 1 | BOOGIE | 1,5 | 3,7 | A.CRASTUS | 15/20/115/2754 |
+| 2 | ARNAY LE DUC | 6,3 | 3 | H.BESNIER | 11/124/280/1733 |
+| 3 | I GOT RHYTHM | 10 | 5 | M.FAVRIAUX | 54/221/88/192 |
+| 6 | GOLDEN BELLE | 11 | 9,2 | M.VELON | 27/28/62/122 |
+| 4 | COUPE D'EUROPE | 12 | 8,6 | X.BERGERON | 71/57/7/1681 |
+| 5 | TIGER ROCK | 12 | 8,1 | M. BRUNELLI | 125/35/48/89 |
