@@ -4,35 +4,35 @@
   "reunion": 4,
   "heure_depart": 1794941340000,
   "distance": 3200,
-  "scraped_at": "2026-11-17T19:38:31.816530+01:00",
-  "minutes_avant_depart": 10,
+  "scraped_at": "2026-11-17T19:43:11.531336+01:00",
+  "minutes_avant_depart": 6,
   "participants": [
     {
       "numPmu": 1,
       "nom": "GWO KA",
-      "cote_live": 14.0,
+      "cote_live": 13.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794940699000
+      "timestamp_cote": 1794940963000
     },
     {
       "numPmu": 2,
       "nom": "WATT OHM",
-      "cote_live": 5.9,
+      "cote_live": 4.6,
       "cote_reference": 9.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794940699000
+      "timestamp_cote": 1794940963000
     },
     {
       "numPmu": 3,
       "nom": "ROOSTER CROWING",
-      "cote_live": 20.0,
+      "cote_live": 23.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794940699000
+      "timestamp_cote": 1794940963000
     },
     {
       "numPmu": 4,
@@ -41,25 +41,25 @@
       "cote_reference": 1.2,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1794940699000
+      "timestamp_cote": 1794940963000
     },
     {
       "numPmu": 5,
       "nom": "NICK BOUTIQUE",
-      "cote_live": 7.2,
+      "cote_live": 7.9,
       "cote_reference": 7.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794940699000
+      "timestamp_cote": 1794940963000
     },
     {
       "numPmu": 6,
       "nom": "QUEEN LAURIE",
-      "cote_live": 21.0,
+      "cote_live": 19.0,
       "cote_reference": 28.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1794940699000
+      "timestamp_cote": 1794940963000
     }
   ],
   "hippodrome": "LYON LA SOIE",
@@ -134,6 +134,18 @@
         "4": 1.5,
         "5": 7.2,
         "6": 21.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-17T19:43:11.531336+01:00",
+      "minutes_avant_depart": 5.815694616666667,
+      "cotes": {
+        "1": 13.0,
+        "2": 4.6,
+        "3": 23.0,
+        "4": 1.5,
+        "5": 7.9,
+        "6": 19.0
       }
     }
   ]

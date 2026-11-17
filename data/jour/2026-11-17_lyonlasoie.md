@@ -1,6 +1,6 @@
 # LYON LA SOIE — 17/11/2026
 
-7 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+7 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -91,26 +91,26 @@
 
 ### 6. PRIX MICHELINE LEURSON
 
-*19h39 · plat · 3200 m · 6 partants · cotes à T−10:28*
+*19h39 · plat · 3200 m · 6 partants · cotes à T−5:48*
 
 | n° | cheval | cote | matin | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|:--|--:|
 | 4 | TREVOR SENORA | 1,5 | 1,8 | F.GUY | –/75/63/95 |
-| 2 | WATT OHM | 5,9 | 6,3 | L.LE GEAY | –/98/1157/1111 |
-| 5 | NICK BOUTIQUE | 7,2 | 3,6 | N.GUARNIERI | –/85/804/94 |
-| 1 | GWO KA | 14 | 17 | P.LOTOUT | –/176/1066/338 |
-| 3 | ROOSTER CROWING | 20 | 26 | D.TRUELLE | –/75/96/442 |
-| 6 | QUEEN LAURIE | 21 | 14 | A.FERLAND | –/35/1194/369 |
+| 2 | WATT OHM | 4,6 | 6,3 | L.LE GEAY | –/98/1157/1111 |
+| 5 | NICK BOUTIQUE | 7,9 | 3,6 | N.GUARNIERI | –/85/804/94 |
+| 1 | GWO KA | 13 | 17 | P.LOTOUT | –/176/1066/338 |
+| 6 | QUEEN LAURIE | 19 | 14 | A.FERLAND | –/35/1194/369 |
+| 3 | ROOSTER CROWING | 23 | 26 | D.TRUELLE | –/75/96/442 |
 
 ### 7. PRIX DE SAINT-PRIEST
 
-*20h11 · plat · 2400 m · 6 partants · cotes de l'extraction*
+*20h11 · plat · 2400 m · 6 partants · cotes à T−29:49*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | BOOGIE | 1,6 | A.CRASTUS | 15/20/115/2754 |
-| 2 | ARNAY LE DUC | 7,3 | H.BESNIER | 11/124/280/1733 |
-| 5 | TIGER ROCK | 7,4 | M. BRUNELLI | 125/35/48/89 |
-| 6 | GOLDEN BELLE | 8,6 | M.VELON | 27/28/62/122 |
-| 3 | I GOT RHYTHM | 12 | M.FAVRIAUX | 54/221/88/192 |
-| 4 | COUPE D'EUROPE | 14 | X.BERGERON | 71/57/7/1681 |
+| n° | cheval | cote | matin | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|:--|--:|
+| 1 | BOOGIE | 2,7 | 1,6 | A.CRASTUS | 15/20/115/2754 |
+| 3 | I GOT RHYTHM | 3,6 | 12 | M.FAVRIAUX | 54/221/88/192 |
+| 2 | ARNAY LE DUC | 6,7 | 7,3 | H.BESNIER | 11/124/280/1733 |
+| 6 | GOLDEN BELLE | 7,8 | 8,6 | M.VELON | 27/28/62/122 |
+| 4 | COUPE D'EUROPE | 8,9 | 14 | X.BERGERON | 71/57/7/1681 |
+| 5 | TIGER ROCK | 9,4 | 7,4 | M. BRUNELLI | 125/35/48/89 |
