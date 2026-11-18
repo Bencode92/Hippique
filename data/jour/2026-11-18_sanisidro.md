@@ -1,0 +1,91 @@
+# SAN ISIDRO — 18/11/2026
+
+5 courses.
+
+*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+
+---
+
+### 7. PREMIO SCHERZO
+
+*21h15 · plat · 1100 m · 12 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | EL BIROMISTA | – | MARIO ENRIQUE FERNANDEZ |
+| 2 | EL CHENQUE | – | NON COMMUNIQUE |
+| 3 | QUE JAIMITO | – | TOMAS VALENTIN ROA |
+| 4 | REYDEN GOT | – | JOSE MAXIMILIANO SANCHEZ |
+| 5 | ROJO Y AZUL | – | AGUSTINA BELEN VALDEZ |
+| 6 | SUR Y VIENTO | – | ROMINA VILLEGAS DEL VALLE |
+| 7 | RAIJIN | – | MARTIN ANTONIO LA PALMA |
+| 8 | TESORO NACIONAL | – | LAUREANO VLADIMIR COLASSO |
+| 9 | CANTA JORGE | – | RAMON ARIEL AGUIRRE |
+| 10 | TIO LARGUIRUCHO | – | WILFREDO ANDRES TORRES MALDONADO |
+| 11 | WAN CONVERSADA | – | RAMIRO RODOLFO BARRUECO |
+| 12 | SILVER STACK | – | LEOPOLDO MATEO ARMOHA |
+
+### 8. PREMIO AHMAD
+
+*21h45 · plat · 1200 m · 7 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | ANGLE OF LIGHT | – | BRIAN RODRIGO ENRIQUE |
+| 2 | CALLADITO | – | KEVIN BANEGAS |
+| 3 | CONCORD | – | ADRIAN MAXIMILIANO GIANNETTI |
+| 4 | EL INTERVENTOR | – | PABLO DAMIAN CARRIZO |
+| 5 | HIRAN | – | WILSON ROSARIO MOREYRA |
+| 6 | RIO NEW | – | ROBERTO MANUEL TORRES |
+| 7 | DESPACITO | – | FACUNDO MARCELO CORIA |
+
+### 9. PREMIO POTRILLON
+
+*22h15 · plat · 1200 m · 12 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | EL DEL PURO | – | THIAGO EVER LARREA FRUTOS |
+| 2 | EMPERADOR DE TRENQUE | – | DIEGO NICOLAS CARDOZO |
+| 3 | EVO DORMILON | – | MARTIN MONTOYA |
+| 4 | JUBILEO | – | LUIS FERNANDO VAI |
+| 5 | MOLEDO | – | JUAN PABLO PAOLONI |
+| 6 | ROSASCO | – | BRIAN RODRIGO ENRIQUE |
+| 7 | GRAN RAYMOND | – | AXEL ADRIAN SOTO SEJAS |
+| 8 | SAFETY BELL | – | LEO NICOLAS ACUNA |
+| 9 | CHE SALTENO | – | MARTIN ANTONIO LA PALMA |
+| 10 | SIDNEY RIVER | – | LAUREANO VLADIMIR COLASSO |
+| 11 | YA LO DIJO CARLO | – | PABLO DAMIAN CARRIZO |
+| 12 | NOTABLE ROSADOR | – | RODRIGUEZ MAXIM ASERITO |
+
+### 10. PREMIO RIO NMACHI 2015
+
+*22h45 · plat · 1400 m · 10 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | ASIMILADA | – | JUAN PABLO PAOLONI |
+| 2 | BLESS VISION | – | GONZALO DAMIAN BORDA |
+| 3 | EXPRESS BEACH | – | THOMAS EMANUEL MIRANDA |
+| 4 | HELENA GLOBAL | – | CESAR LEONOR CUELLAR |
+| 5 | LEUCOTEA | – | LUCIANO MATIAS RECUERO |
+| 6 | MASK SECRET | – | LEO NICOLAS ACUNA |
+| 7 | GALLEZA | – | WILLIAM PEREYRA |
+| 8 | MUNECA MAKANUDA | – | RAMIRO EZEQUIEL SALAZAR |
+| 9 | AMAIA MASK | – | BRIAN RODRIGO ENRIQUE |
+| 10 | PHOENIX | – | ADRIAN MAXIMILIANO GIANNETTI |
+
+### 11. PREMIO PLEYEL
+
+*23h15 · plat · 1400 m · 8 partants · cotes de l'extraction*
+
+| n° | cheval | cote | jockey |
+|--:|:--|--:|:--|
+| 1 | ASUMO | – | LUCIANO MATIAS RECUERO |
+| 2 | BLONDIE HAT | – | LEO NICOLAS ACUNA |
+| 3 | CHE EXPLOSIVO | – | WILSON ROSARIO MOREYRA |
+| 4 | OJO MASTER | – | JOAQUIN ALEJANDRO ESCUDERO |
+| 5 | PUERTO ESMERALDA | – | MAXIMILIANO HERNAN MACHADO |
+| 6 | PURO VOLVER | – | RODRIGUEZ MAXIM ASERITO |
+| 7 | MACHO IBERICO | – | RODRIGO ALEJANDRO ORTIZ |
+| 8 | VENDIDO TRIGGER | – | LUCAS JESUS NORIEGA COBIAN |
