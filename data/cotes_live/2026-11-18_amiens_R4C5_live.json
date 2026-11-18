@@ -1,0 +1,120 @@
+{
+  "course": "PRIX DU NORD",
+  "numero": 5,
+  "reunion": 4,
+  "heure_depart": 1795025700000,
+  "distance": 2200,
+  "scraped_at": "2026-11-18T18:45:30.599781+01:00",
+  "minutes_avant_depart": 29,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "NESTORDELABARRIERE",
+      "cote_live": 9.1,
+      "cote_reference": 6.5,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795006600000
+    },
+    {
+      "numPmu": 2,
+      "nom": "ERA CHO",
+      "cote_live": 14.0,
+      "cote_reference": 18.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795006600000
+    },
+    {
+      "numPmu": 3,
+      "nom": "NAGANO",
+      "cote_live": 12.0,
+      "cote_reference": 9.1,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795006600000
+    },
+    {
+      "numPmu": 4,
+      "nom": "SYDNEY SUNSET",
+      "cote_live": 32.0,
+      "cote_reference": 30.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795006600000
+    },
+    {
+      "numPmu": 5,
+      "nom": "WISLAWA",
+      "cote_live": 2.9,
+      "cote_reference": 5.3,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795006600000
+    },
+    {
+      "numPmu": 6,
+      "nom": "NONNABELLA",
+      "cote_live": 2.6,
+      "cote_reference": 2.2,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1795006600000
+    },
+    {
+      "numPmu": 7,
+      "nom": "LIAH",
+      "cote_live": 12.0,
+      "cote_reference": 11.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795006600000
+    },
+    {
+      "numPmu": 8,
+      "nom": "STRIKE",
+      "cote_live": 25.0,
+      "cote_reference": 22.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795006600000
+    },
+    {
+      "numPmu": 9,
+      "nom": "PIETASPEAR FAL",
+      "cote_live": 64.0,
+      "cote_reference": 45.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795006600000
+    },
+    {
+      "numPmu": 10,
+      "nom": "PRISCA AS",
+      "cote_live": null,
+      "cote_reference": null,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": null
+    }
+  ],
+  "hippodrome": "AMIENS",
+  "releves": [
+    {
+      "scraped_at": "2026-11-18T18:45:30.599781+01:00",
+      "minutes_avant_depart": 29.493548266666668,
+      "cotes": {
+        "1": 9.1,
+        "2": 14.0,
+        "3": 12.0,
+        "4": 32.0,
+        "5": 2.9,
+        "6": 2.6,
+        "7": 12.0,
+        "8": 25.0,
+        "9": 64.0,
+        "10": null
+      }
+    }
+  ]
+}
