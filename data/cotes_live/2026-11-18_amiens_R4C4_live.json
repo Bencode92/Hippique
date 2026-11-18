@@ -1,0 +1,110 @@
+{
+  "course": "PRIX DE LA SOMME",
+  "numero": 4,
+  "reunion": 4,
+  "heure_depart": 1795023900000,
+  "distance": 2200,
+  "scraped_at": "2026-11-18T18:15:30.760414+01:00",
+  "minutes_avant_depart": 29,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "ANNALIGHT",
+      "cote_live": 28.0,
+      "cote_reference": 34.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795006490000
+    },
+    {
+      "numPmu": 2,
+      "nom": "MARANELLO",
+      "cote_live": 4.7,
+      "cote_reference": 6.6,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795006490000
+    },
+    {
+      "numPmu": 3,
+      "nom": "OCTOBRE ROSE",
+      "cote_live": 21.0,
+      "cote_reference": 23.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795006490000
+    },
+    {
+      "numPmu": 4,
+      "nom": "SPARKS OF LOVE",
+      "cote_live": 3.0,
+      "cote_reference": 2.9,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1795006490000
+    },
+    {
+      "numPmu": 5,
+      "nom": "WOODBRIDGE",
+      "cote_live": 57.0,
+      "cote_reference": 46.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795006490000
+    },
+    {
+      "numPmu": 6,
+      "nom": "BAVAROIS",
+      "cote_live": 4.1,
+      "cote_reference": 3.8,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795006490000
+    },
+    {
+      "numPmu": 7,
+      "nom": "SEGOVIA",
+      "cote_live": 6.8,
+      "cote_reference": 6.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795006490000
+    },
+    {
+      "numPmu": 8,
+      "nom": "LINDEN BLOSSOM",
+      "cote_live": 19.0,
+      "cote_reference": 15.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795006490000
+    },
+    {
+      "numPmu": 9,
+      "nom": "SAINT PHONIE",
+      "cote_live": 17.0,
+      "cote_reference": 17.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795006490000
+    }
+  ],
+  "hippodrome": "AMIENS",
+  "releves": [
+    {
+      "scraped_at": "2026-11-18T18:15:30.760414+01:00",
+      "minutes_avant_depart": 29.49364051666667,
+      "cotes": {
+        "1": 28.0,
+        "2": 4.7,
+        "3": 21.0,
+        "4": 3.0,
+        "5": 57.0,
+        "6": 4.1,
+        "7": 6.8,
+        "8": 19.0,
+        "9": 17.0
+      }
+    }
+  ]
+}
