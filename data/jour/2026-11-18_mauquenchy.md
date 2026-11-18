@@ -1,8 +1,8 @@
 # MAUQUENCHY — 18/11/2026
 
-8 courses.
+8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
@@ -12,21 +12,21 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KEMIA DU CHENE | – | B. ROCHARD |
-| 2 | ILEO PIERJI | – | A. BARRIER |
-| 3 | LIGHT MY FIRE | – | A. GUARATO |
-| 4 | HELIOS SI | – | S. HARDY |
-| 5 | LOULOU DE MYE | – | R.CH. LARUE |
-| 6 | IGUANE DE CAPONET | – | Y. LEBOURGEOIS |
-| 7 | HAMILTON DU HAM | – | CH. MARTENS |
-| 8 | IALTO D'HERTALS | – | THEO DUVALDESTIN |
-| 9 | ISOFOU DU CHENE | – | P.PH. PLOQUIN |
-| 10 | J'AIME LE FOOT | – | A. LHERETE |
-| 11 | HIDALGO DES NOES | – | J. TRAVERS |
-| 12 | JINGLE DU PONT | – | N. BAZIRE |
-| 13 | IDEAL DU ROCHER | – | CL. DUVALDESTIN |
-| 14 | HULYSSE DIGEO | – | J.W. HALLAIS |
-| 15 | JUSTIN BOLD | – | P.Y. VERVA |
+| 13 | IDEAL DU ROCHER | 3,3 | CL. DUVALDESTIN |
+| 1 | KEMIA DU CHENE | 4,6 | B. ROCHARD |
+| 9 | ISOFOU DU CHENE | 5,1 | P.PH. PLOQUIN |
+| 14 | HULYSSE DIGEO | 8,7 | J.W. HALLAIS |
+| 8 | IALTO D'HERTALS | 12 | THEO DUVALDESTIN |
+| 12 | JINGLE DU PONT | 19 | N. BAZIRE |
+| 3 | LIGHT MY FIRE | 29 | A. GUARATO |
+| 6 | IGUANE DE CAPONET | 32 | Y. LEBOURGEOIS |
+| 2 | ILEO PIERJI | 42 | A. BARRIER |
+| 10 | J'AIME LE FOOT | 73 | A. LHERETE |
+| 7 | HAMILTON DU HAM | 98 | CH. MARTENS |
+| 4 | HELIOS SI | 147 | S. HARDY |
+| 5 | LOULOU DE MYE | 147 | R.CH. LARUE |
+| 11 | HIDALGO DES NOES | 147 | J. TRAVERS |
+| 15 | JUSTIN BOLD | 147 | P.Y. VERVA |
 | 16 | JEROBOAM D'ERABLE | – | D. THOMAIN |
 | 17 | JEAN BALTHAZAR | – | P. CASTEL |
 | 18 | INA DU RIB | – | J.L.CL. DERSOIR |
@@ -37,22 +37,22 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 9 | KIMMAJO | 2 | S. LABOUTIQUE |
+| 8 | KING OF RACE | 5,6 | Mme B. GUENET |
+| 7 | JOKER DU DOLLAR | 7 | D. DUPRE |
+| 16 | ILLICO DE VAU | 9,4 | D. GRIMAULT |
+| 12 | KAMIKAZE | 14 | Mlle L. MATHIEU PAVARD |
+| 6 | JAVA DES BERTHES | 28 | L. HEUZE |
+| 11 | KAISER RIVER | 28 | M. BRIDAULT |
+| 13 | JUSTESS VIKING | 28 | L. BROHIER |
+| 14 | IL MIO | 28 | Mlle E. GOETZ |
 | 1 | KLASS D'ESPOIR | – | Q. CHAMPENOIS |
 | 2 | HOBBY DE L'EVRE | – | C. CHESNE |
 | 3 | JODLEUSE MAG | – | J. LAROCCA |
 | 4 | KAI LA SHA | – | F. BERTHAULT |
 | 5 | JADE THORIS | – | Mme C. CHAZAL |
-| 6 | JAVA DES BERTHES | – | L. HEUZE |
-| 7 | JOKER DU DOLLAR | – | D. DUPRE |
-| 8 | KING OF RACE | – | Mme B. GUENET |
-| 9 | KIMMAJO | – | S. LABOUTIQUE |
 | 10 | INKERMAN DE PLAY | – | Mlle F. AUBER |
-| 11 | KAISER RIVER | – | M. BRIDAULT |
-| 12 | KAMIKAZE | – | Mlle L. MATHIEU PAVARD |
-| 13 | JUSTESS VIKING | – | L. BROHIER |
-| 14 | IL MIO | – | Mlle E. GOETZ |
 | 15 | JET GIRL | – | F. TOUCHARD |
-| 16 | ILLICO DE VAU | – | D. GRIMAULT |
 
 ### 3. PRIX DE LA REGION NORMANDIE
 
@@ -60,13 +60,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | NICO DU CAIEU | – | F. OUVRIE |
-| 2 | NOUMEA LIGNERIES | – | E. RAFFIN |
-| 3 | NINA DU COJEUL | – | B. ROCHARD |
+| 3 | NINA DU COJEUL | 2,1 | B. ROCHARD |
+| 2 | NOUMEA LIGNERIES | 2,7 | E. RAFFIN |
+| 1 | NICO DU CAIEU | 6,5 | F. OUVRIE |
+| 5 | NENIGMA | 8,1 | P.PH. PLOQUIN |
+| 7 | NORMA JEANE | 32 | P.Y. VERVA |
 | 4 | NATURALE MAG | – | M. ABRIVARD |
-| 5 | NENIGMA | – | P.PH. PLOQUIN |
 | 6 | NISSA LA BELLA | – | J.G. VAN EECKHAUTE |
-| 7 | NORMA JEANE | – | P.Y. VERVA |
 
 ### 4. PRIX ANDRE PERDRIX
 
@@ -74,14 +74,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 4 | MYSTERE CERIZE | 2 | M. ABRIVARD |
+| 8 | MAGICO DE LOU | 3,4 | E. RAFFIN |
+| 6 | MARS COBBA | 5,6 | B. ROCHARD |
+| 2 | MURO | 8,9 | F. PRAT |
+| 3 | MARCUS BERRY | 12 | F. OUVRIE |
 | 1 | MONSIEUR WILLIAM | – | J. VANMEERBECK |
-| 2 | MURO | – | F. PRAT |
-| 3 | MARCUS BERRY | – | F. OUVRIE |
-| 4 | MYSTERE CERIZE | – | M. ABRIVARD |
 | 5 | MORETIME DU CAMPUS | – | CH. MARTENS |
-| 6 | MARS COBBA | – | B. ROCHARD |
 | 7 | MISSANDEI | – | P.PH. PLOQUIN |
-| 8 | MAGICO DE LOU | – | E. RAFFIN |
 
 ### 5. PRIX DU CONSEIL DEPARTEMENTAL DE SEINE-MARITIME
 
@@ -89,18 +89,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KARNA DES BAULTS | – | ALEXANDRE BODIN |
-| 2 | JAMES OF CARLY | – | Mme L. FAUCHON |
-| 3 | PATTON | – | M. MOTTIER |
+| 7 | KENYAN BLUES | 1,8 | B. ROCHARD |
+| 1 | KARNA DES BAULTS | 4,8 | ALEXANDRE BODIN |
+| 3 | PATTON | 4,8 | M. MOTTIER |
+| 11 | KANSAS DU HOCTI | 13 | M. DURVILLE |
+| 2 | JAMES OF CARLY | 26 | Mme L. FAUCHON |
+| 5 | KENTUCKY FIRST | 52 | M. LELIEVRE |
+| 9 | JAGUAR DJOB | 52 | P.PH. PLOQUIN |
+| 10 | HURLEVENT | 52 | Mme T. MATHIAS-MAISONNETTE |
+| 12 | HARRYBEAU DE COUET | 52 | CL. FRECELLE |
 | 4 | HATE YOU BEYLEV | – | L. PITON |
-| 5 | KENTUCKY FIRST | – | M. LELIEVRE |
 | 6 | HELLO DE LIGNY | – | G. GILARD |
-| 7 | KENYAN BLUES | – | B. ROCHARD |
 | 8 | ISSIA DE CHARLY | – | P.Y. VERVA |
-| 9 | JAGUAR DJOB | – | P.PH. PLOQUIN |
-| 10 | HURLEVENT | – | Mme T. MATHIAS-MAISONNETTE |
-| 11 | KANSAS DU HOCTI | – | M. DURVILLE |
-| 12 | HARRYBEAU DE COUET | – | CL. FRECELLE |
 
 ### 6. PRIX DE MAUQUENCHY
 
@@ -108,14 +108,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 8 | LEARN TO FLY | 1,6 | E. RAFFIN |
+| 5 | LAST DES BROUSSES | 2,8 | B. ROCHARD |
+| 6 | LORDIUS | 11 | TH. DROMIGNY |
+| 2 | LADY D'ELFE | 17 | G. GELORMINI |
+| 7 | LOUNA DU LOCHEUR | 34 | D. BROHIER |
 | 1 | LADY VICTORY | – | F. DUCROCQ |
-| 2 | LADY D'ELFE | – | G. GELORMINI |
 | 3 | LULU JIVE | – | J. VANMEERBECK |
 | 4 | LADY PRINCESS | – | L. PITON |
-| 5 | LAST DES BROUSSES | – | B. ROCHARD |
-| 6 | LORDIUS | – | TH. DROMIGNY |
-| 7 | LOUNA DU LOCHEUR | – | D. BROHIER |
-| 8 | LEARN TO FLY | – | E. RAFFIN |
 
 ### 7. PRIX DU PMU "LE MAINTENON" - SAINT-SAENS
 
@@ -123,20 +123,20 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | TOSCANA SOUTHWIND | – | P.Y. VERVA |
-| 2 | IMPERATUR AM | – | G. GELORMINI |
+| 14 | JAZZMAN | 2,3 | E. RAFFIN |
+| 2 | IMPERATUR AM | 3,5 | G. GELORMINI |
+| 4 | JOUEUSE DU MIREL | 8,8 | F. OUVRIE |
+| 9 | DIE HARD | 11 | F. LAGADEUC |
+| 1 | TOSCANA SOUTHWIND | 17 | P.Y. VERVA |
+| 8 | JOKER D'OCCAGNES | 17 | TH. DROMIGNY |
+| 6 | KASH KEEPER | 35 | M. MOTTIER |
+| 10 | JACK L'EVENTREUR | 35 | CEDRIC TERRY |
+| 12 | JACK DU CEBE | 35 | A. CHARRIE |
+| 13 | ICI PARIS EFJI | 35 | J. TRAVERS |
 | 3 | LORENZO BOKO | – | Y. LEBOURGEOIS |
-| 4 | JOUEUSE DU MIREL | – | F. OUVRIE |
 | 5 | IDEAL MOSSA | – | J. VANMEERBECK |
-| 6 | KASH KEEPER | – | M. MOTTIER |
 | 7 | JEUNE AMI | – | P.PH. PLOQUIN |
-| 8 | JOKER D'OCCAGNES | – | TH. DROMIGNY |
-| 9 | DIE HARD | – | F. LAGADEUC |
-| 10 | JACK L'EVENTREUR | – | CEDRIC TERRY |
 | 11 | LOOK OF LOVE | – | J. VAN DEN PUTTE JR. |
-| 12 | JACK DU CEBE | – | A. CHARRIE |
-| 13 | ICI PARIS EFJI | – | J. TRAVERS |
-| 14 | JAZZMAN | – | E. RAFFIN |
 
 ### 8. PRIX JEAN MAIZERET
 
@@ -144,21 +144,21 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KAPORAL DE VIETTE | – | F. OUVRIE |
+| 7 | KING OF THE WORLD | 3,1 | N. BAZIRE |
+| 12 | KAISER TURGOT | 3,1 | E. RAFFIN |
+| 1 | KAPORAL DE VIETTE | 5,2 | F. OUVRIE |
+| 6 | KANDERO BELLO | 15 | F. LAGADEUC |
+| 15 | KELLOU DES BRUMES | 15 | B. ROCHARD |
+| 16 | KALICO JACK | 15 | A. CHARRIE |
+| 17 | KID SMILE | 15 | P.PH. PLOQUIN |
+| 18 | KRUGER DU NORD | 15 | Y. LEBOURGEOIS |
 | 2 | KONG DODVILLE | – | CEDRIC TERRY |
 | 3 | KALIE DREAM | – | ARNAUD MORIN |
 | 4 | KINO DE LAUMIERE | – | J. TRAVERS |
 | 5 | KAELLE TURGOT | – | G. DONIO |
-| 6 | KANDERO BELLO | – | F. LAGADEUC |
-| 7 | KING OF THE WORLD | – | N. BAZIRE |
 | 8 | KAKINANI | – | ANTOINE TRIHOLLET |
 | 9 | KAID DES BOSC | – | L. GUILLEMIN |
 | 10 | KIDAM DU METZ | – | D. BROHIER |
 | 11 | KENENISA SKILL | – | CH. CUILLER |
-| 12 | KAISER TURGOT | – | E. RAFFIN |
 | 13 | KARAT COOL | – | J.F. MOQUET |
 | 14 | KEOPS DE JUMILLY | – | P.Y. VERVA |
-| 15 | KELLOU DES BRUMES | – | B. ROCHARD |
-| 16 | KALICO JACK | – | A. CHARRIE |
-| 17 | KID SMILE | – | P.PH. PLOQUIN |
-| 18 | KRUGER DU NORD | – | Y. LEBOURGEOIS |

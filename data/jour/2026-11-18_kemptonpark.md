@@ -1,8 +1,8 @@
 # KEMPTON PARK — 18/11/2026
 
-9 courses.
+9 courses (2 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -50,10 +50,10 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 4 | PAPER VIEW | 1,1 | DOUGIE COSTELLO | 426/292/–/– |
 | 1 | DIVINE WHISPER | – | TOBY MOORE | 302/450/–/– |
 | 2 | LADY BLANCHE | – | WILLIAM COX | –/34/–/79 |
 | 3 | CONCILIATE | – | M. P. SHEEHY | –/–/–/– |
-| 4 | PAPER VIEW | – | DOUGIE COSTELLO | 426/292/–/– |
 | 5 | NIGHTBLOOM | – | LAURA PEARSON | 453/384/–/79 |
 
 ### 4. HANDICAP C5
@@ -101,6 +101,7 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 9 | PALLADAS | 1,1 | CONNOR PLANAS | –/104/–/50 |
 | 1 | EBT'S GUARD | – | RHYS ELLIOTT | –/–/–/– |
 | 2 | CHANTILLY LACE | – | RHYS CLUTTERBUCK | 407/171/–/5182 |
 | 3 | HARD ENDEAVOR | – | SORIN MOLDOVEANU | –/668/–/3017 |
@@ -109,7 +110,6 @@
 | 6 | WISE PRINCE | – | TYLER HEARD | –/16/–/– |
 | 7 | TWO TEMPTING | – | TOM EAVES | 486/833/–/– |
 | 8 | TARKHAN | – | WILLIAM CARVER | –/–/–/– |
-| 9 | PALLADAS | – | CONNOR PLANAS | –/104/–/50 |
 | 10 | BRASIL POWER | – | MEGAN SMITH | –/450/–/– |
 | 11 | SHAFDAR | – | WILLIAM COX | –/620/–/– |
 | 12 | AALTO | – | DOUGIE COSTELLO | 426/620/–/– |
