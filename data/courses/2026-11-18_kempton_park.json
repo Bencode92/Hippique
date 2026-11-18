@@ -1,7 +1,7 @@
 {
   "hippodrome": "KEMPTON PARK",
   "type_reunion": "Plat",
-  "date_extraction": "2026-11-18T03:32:49.898424",
+  "date_extraction": "2026-11-18T16:20:09.086882",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/18112026/R5",
   "courses": [
     {
@@ -30,7 +30,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 17.0,
+          "cote_tendance": "",
+          "cote_reference": 33.0
         },
         {
           "n°": "2",
@@ -50,7 +53,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 4.8,
+          "cote_tendance": "",
+          "cote_reference": 16.0
         },
         {
           "n°": "3",
@@ -70,7 +76,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 17.0,
+          "cote_tendance": "",
+          "cote_reference": 33.0
         },
         {
           "n°": "4",
@@ -90,7 +99,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 53.0,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -110,7 +121,9 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 26.0,
+          "cote_tendance": ""
         },
         {
           "n°": "6",
@@ -130,7 +143,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 53.0,
+          "cote_tendance": "",
+          "cote_reference": 33.0
         },
         {
           "n°": "7",
@@ -150,27 +166,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
-          "n°": "8",
-          "cheval": "PLANET BLUEBIRD H.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MASSAAT et BIRD TO LOVE (DELEGATOR)",
-          "corde": "(Corde:10)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261118/KEM/1/20261118-KEM-1-8.png",
-          "propriétaire": "THE GOODRACING PARTNERSHIP",
-          "entraineur": "MARK USHER",
-          "éleveurs": "",
-          "jockey": "ROSE DAWES",
-          "poids": "58.5 kg",
-          "gains": "",
-          "musique": "0p",
-          "valeur": "58.5",
-          "equipement(s)": "",
-          "nb_courses": 1,
-          "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.8,
+          "cote_tendance": ""
         },
         {
           "n°": "9",
@@ -190,7 +188,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 1.6,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         },
         {
           "n°": "10",
@@ -230,7 +231,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 53.0,
+          "cote_tendance": ""
         },
         {
           "n°": "12",
@@ -253,6 +256,9 @@
           "nb_places": 0
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -281,7 +287,9 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 39.0,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -301,7 +309,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 39.0,
+          "cote_tendance": "",
+          "cote_reference": 31.0
         },
         {
           "n°": "3",
@@ -321,7 +332,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 39.0,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -361,7 +374,9 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 39.0,
+          "cote_tendance": ""
         },
         {
           "n°": "6",
@@ -401,7 +416,9 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 39.0,
+          "cote_tendance": ""
         },
         {
           "n°": "8",
@@ -441,7 +458,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 15.0
         },
         {
           "n°": "10",
@@ -501,9 +521,15 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 1.1,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -532,7 +558,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 5.6,
+          "cote_tendance": "",
+          "cote_reference": 3.5
         },
         {
           "n°": "2",
@@ -552,7 +581,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 1,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 7.0,
+          "cote_tendance": "",
+          "cote_reference": 3.5
         },
         {
           "n°": "3",
@@ -572,7 +604,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 3.5,
+          "cote_tendance": "",
+          "cote_reference": 7.0
         },
         {
           "n°": "4",
@@ -593,8 +628,9 @@
           "nb_courses": 9,
           "nb_victoires": 2,
           "nb_places": 1,
-          "cote": 1.1,
-          "cote_tendance": ""
+          "cote": 3.5,
+          "cote_tendance": "",
+          "cote_reference": 2.3
         },
         {
           "n°": "5",
@@ -614,9 +650,14 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 4.0,
+          "cote_tendance": ""
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -645,7 +686,9 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 11.0,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -665,7 +708,9 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 11.0,
+          "cote_tendance": ""
         },
         {
           "n°": "3",
@@ -705,7 +750,10 @@
           "equipement(s)": "A",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 5.7,
+          "cote_tendance": "",
+          "cote_reference": 5.2
         },
         {
           "n°": "5",
@@ -725,7 +773,9 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 11.0,
+          "cote_tendance": ""
         },
         {
           "n°": "6",
@@ -745,7 +795,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 5.2
         },
         {
           "n°": "7",
@@ -785,7 +838,9 @@
           "equipement(s)": "",
           "nb_courses": 11,
           "nb_victoires": 0,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 5.7,
+          "cote_tendance": ""
         },
         {
           "n°": "9",
@@ -805,7 +860,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.8,
+          "cote_tendance": "",
+          "cote_reference": 1.7
         },
         {
           "n°": "10",
@@ -825,7 +883,9 @@
           "equipement(s)": "A",
           "nb_courses": 5,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 11.0,
+          "cote_tendance": ""
         },
         {
           "n°": "11",
@@ -845,9 +905,15 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 5.2
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -876,7 +942,9 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 7.9,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -956,7 +1024,9 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 3.9,
+          "cote_tendance": ""
         },
         {
           "n°": "6",
@@ -976,7 +1046,9 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 3.9,
+          "cote_tendance": ""
         },
         {
           "n°": "7",
@@ -1016,7 +1088,9 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 7.9,
+          "cote_tendance": ""
         },
         {
           "n°": "9",
@@ -1056,7 +1130,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.9,
+          "cote_tendance": "",
+          "cote_reference": 1.7
         },
         {
           "n°": "11",
@@ -1096,7 +1173,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.9,
+          "cote_tendance": "",
+          "cote_reference": 1.7
         },
         {
           "n°": "13",
@@ -1139,6 +1219,9 @@
           "nb_places": 0
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -1167,7 +1250,9 @@
           "equipement(s)": "",
           "nb_courses": 41,
           "nb_victoires": 4,
-          "nb_places": 17
+          "nb_places": 17,
+          "cote": 11.0,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -1207,7 +1292,10 @@
           "equipement(s)": "",
           "nb_courses": 9,
           "nb_victoires": 1,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 3.5
         },
         {
           "n°": "4",
@@ -1328,8 +1416,9 @@
           "nb_courses": 3,
           "nb_victoires": 2,
           "nb_places": 0,
-          "cote": 1.1,
-          "cote_tendance": ""
+          "cote": 1.9,
+          "cote_tendance": "",
+          "cote_reference": 3.5
         },
         {
           "n°": "10",
@@ -1389,7 +1478,10 @@
           "equipement(s)": "",
           "nb_courses": 30,
           "nb_victoires": 4,
-          "nb_places": 8
+          "nb_places": 8,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 3.5
         },
         {
           "n°": "13",
@@ -1409,7 +1501,10 @@
           "equipement(s)": "A",
           "nb_courses": 31,
           "nb_victoires": 4,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 3.5
         },
         {
           "n°": "14",
@@ -1429,9 +1524,14 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 1,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 3.8,
+          "cote_tendance": ""
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -1500,7 +1600,9 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 2,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 6.1,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -1540,7 +1642,9 @@
           "equipement(s)": "",
           "nb_courses": 44,
           "nb_victoires": 7,
-          "nb_places": 16
+          "nb_places": 16,
+          "cote": 3.0,
+          "cote_tendance": ""
         },
         {
           "n°": "6",
@@ -1560,7 +1664,10 @@
           "equipement(s)": "A",
           "nb_courses": 24,
           "nb_victoires": 6,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 3.0,
+          "cote_tendance": "",
+          "cote_reference": 1.7
         },
         {
           "n°": "7",
@@ -1580,9 +1687,15 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 3.0,
+          "cote_tendance": "",
+          "cote_reference": 1.7
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -1611,7 +1724,10 @@
           "equipement(s)": "A",
           "nb_courses": 18,
           "nb_victoires": 4,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 1.4,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         },
         {
           "n°": "2",
@@ -1631,7 +1747,9 @@
           "equipement(s)": "",
           "nb_courses": 11,
           "nb_victoires": 2,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 9.4,
+          "cote_tendance": ""
         },
         {
           "n°": "3",
@@ -1651,7 +1769,9 @@
           "equipement(s)": "A",
           "nb_courses": 8,
           "nb_victoires": 2,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 47.0,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -1691,7 +1811,10 @@
           "equipement(s)": "A",
           "nb_courses": 58,
           "nb_victoires": 9,
-          "nb_places": 15
+          "nb_places": 15,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 30.0
         },
         {
           "n°": "6",
@@ -1734,46 +1857,6 @@
           "nb_places": 3
         },
         {
-          "n°": "8",
-          "cheval": "WINSTON'S WARRIOR H.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: CHURCHILL et KERENA (EXCEED AND EXCEL)",
-          "corde": "(Corde:14)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261118/KEM/8/20261118-KEM-8-8.png",
-          "propriétaire": "MR D J M REES",
-          "entraineur": "CHARLES HILLS",
-          "éleveurs": "",
-          "jockey": "DOUGIE COSTELLO",
-          "poids": "59.5 kg",
-          "gains": "2466700",
-          "musique": "6p2p6p5p8p",
-          "valeur": "59.5",
-          "equipement(s)": "",
-          "nb_courses": 16,
-          "nb_victoires": 2,
-          "nb_places": 5
-        },
-        {
-          "n°": "9",
-          "cheval": "MISTER BLUEBIRD H.PU. 8 a.",
-          "cheval_url": "",
-          "père_mère": "Par: OUTSTRIP et CHILDESPLAY (BYRON)",
-          "corde": "(Corde:12)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261118/KEM/8/20261118-KEM-8-9.png",
-          "propriétaire": "DAWN ALDHAM AND WETUMPKA RACING",
-          "entraineur": "HEATHER MAIN",
-          "éleveurs": "",
-          "jockey": "JACK DACE",
-          "poids": "59.5 kg",
-          "gains": "16172400",
-          "musique": "5p0p3p7p0p",
-          "valeur": "59.5",
-          "equipement(s)": "",
-          "nb_courses": 62,
-          "nb_victoires": 8,
-          "nb_places": 21
-        },
-        {
           "n°": "10",
           "cheval": "ENACTING H.PU. 4 a.",
           "cheval_url": "",
@@ -1811,7 +1894,10 @@
           "equipement(s)": "",
           "nb_courses": 46,
           "nb_victoires": 7,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 47.0,
+          "cote_tendance": "",
+          "cote_reference": 30.0
         },
         {
           "n°": "12",
@@ -1871,9 +1957,14 @@
           "equipement(s)": "A",
           "nb_courses": 14,
           "nb_victoires": 1,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 4.7,
+          "cote_tendance": ""
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_DROITE"
     },
     {
@@ -1962,7 +2053,10 @@
           "equipement(s)": "",
           "nb_courses": 15,
           "nb_victoires": 3,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 1.1,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         },
         {
           "n°": "5",
@@ -2002,7 +2096,9 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 1,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 31.0,
+          "cote_tendance": ""
         },
         {
           "n°": "7",
@@ -2022,7 +2118,9 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 1,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 31.0,
+          "cote_tendance": ""
         },
         {
           "n°": "8",
@@ -2062,7 +2160,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 31.0,
+          "cote_tendance": "",
+          "cote_reference": 29.0
         },
         {
           "n°": "10",
@@ -2145,6 +2246,9 @@
           "nb_places": 1
         }
       ],
+      "typePiste": "GAZON",
+      "terrain": "PSF STANDARD",
+      "penetrometre": "",
       "cordeCourse": "CORDE_DROITE"
     }
   ]
