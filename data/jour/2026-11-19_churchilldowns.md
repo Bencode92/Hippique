@@ -1,8 +1,8 @@
 # CHURCHILL DOWNS — 19/11/2026
 
-9 courses.
+9 courses (1 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -137,11 +137,11 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 3 | BLAZING SUNSET | 1,7 | Y ORTIZ, JR. |
+| 5 | BIT TIPSY | 1,7 | W A RODRIGUEZ |
 | 1 | COSMIC CREED | – | M GARCIA |
 | 2 | AVALON BEACH | – | L SAEZ |
-| 3 | BLAZING SUNSET | – | Y ORTIZ, JR. |
 | 4 | MIDWINTER | – | J ALVARADO |
-| 5 | BIT TIPSY | – | W A RODRIGUEZ |
 | 6 | SPEIGHTFUL MOON | – | A BESCHIZZA |
 | 7 | PARDI VIDA | – | J A TORRES |
 | 8 | KODERA GALE | – | L MACHADO |

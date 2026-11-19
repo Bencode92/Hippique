@@ -1,8 +1,8 @@
 # VINCENNES — 19/11/2026
 
-8 courses.
+8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
@@ -12,16 +12,16 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | NOPUS ONE | – | M. MOTTIER |
-| 2 | NARCISO D'EVA | – | B. ROCHARD |
+| 5 | NECTAR DE FAEL | 2,4 | V. SAUSSAYE |
+| 2 | NARCISO D'EVA | 3,2 | B. ROCHARD |
+| 8 | NARIO MESLINOIS | 4,8 | M. DURVILLE |
+| 1 | NOPUS ONE | 9,7 | M. MOTTIER |
+| 10 | NIRJHARA | 9,7 | A. COLLETTE |
 | 3 | NOUKAT PARC | – | P.PH. PLOQUIN |
 | 4 | NEVE LEMAN | – | F. POISSON |
-| 5 | NECTAR DE FAEL | – | V. SAUSSAYE |
 | 6 | NEVIS | – | Mlle E. CALLIER |
 | 7 | NAMOUR DU COGLAIS | – | D. BONNE |
-| 8 | NARIO MESLINOIS | – | M. DURVILLE |
 | 9 | NOBLE D'AVRIL | – | Mme T. MATHIAS-MAISONNETTE |
-| 10 | NIRJHARA | – | A. COLLETTE |
 | 11 | NEO SAINT LOUP | – | TH. DROMIGNY |
 
 ### 2. PRIX DE BRIANCON
@@ -30,23 +30,23 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 2 | MALIZIOSA | – | J. DUBOIS |
+| 5 | MARIYA HAUFOR | 3,5 | D. BONNE |
+| 17 | MA BIMBO | 5,2 | F. OUVRIE |
+| 2 | MALIZIOSA | 10 | J. DUBOIS |
+| 6 | MONZA SEMILLY | 10 | B. ROCHARD |
+| 7 | MA JOLIE BECO | 10 | M. BEZIER |
+| 8 | MIMI DU MESNIL | 10 | D. BROHIER |
+| 9 | MISS COCO | 10 | A. BARRIER |
+| 16 | MUSE PRIOR | 10 | AURELIEN DESMARRES |
+| 18 | MANILLE D'ERABLE | 10 | D. THOMAIN |
 | 3 | MUSE DU GOUTIER | – | A. LAMY |
 | 4 | MANSUETUDE | – | E. RAFFIN |
-| 5 | MARIYA HAUFOR | – | D. BONNE |
-| 6 | MONZA SEMILLY | – | B. ROCHARD |
-| 7 | MA JOLIE BECO | – | M. BEZIER |
-| 8 | MIMI DU MESNIL | – | D. BROHIER |
-| 9 | MISS COCO | – | A. BARRIER |
 | 10 | MELODY DE L'EPINE | – | A. COLLETTE |
 | 11 | MOST WANTED | – | M. ABRIVARD |
 | 12 | MADONE DES RACQUES | – | P.Y. VERVA |
 | 13 | MY FAVORITE THINGS | – | M. MOTTIER |
 | 14 | MARQUISE DELACOUR | – | P.PH. PLOQUIN |
 | 15 | MADISON DE MAHEY | – | F. GUERINEAU |
-| 16 | MUSE PRIOR | – | AURELIEN DESMARRES |
-| 17 | MA BIMBO | – | F. OUVRIE |
-| 18 | MANILLE D'ERABLE | – | D. THOMAIN |
 
 ### 3. PRIX DYNAMENE
 
@@ -54,12 +54,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 6 | KIKI DU ROC | 1,9 | J. MAILLARD |
+| 2 | KELMONDO BOY | 3,9 | L. CHEVROLLIER |
+| 5 | KIVIANA | 3,9 | L. OTT |
+| 3 | KAPITEN DU MELEUC | 7,9 | G. POU CRESPI |
 | 1 | KILLER SUN DRALIAM | – | F. POISSON |
-| 2 | KELMONDO BOY | – | L. CHEVROLLIER |
-| 3 | KAPITEN DU MELEUC | – | G. POU CRESPI |
 | 4 | KRACDARCHE | – | Mlle H. GODEY |
-| 5 | KIVIANA | – | L. OTT |
-| 6 | KIKI DU ROC | – | J. MAILLARD |
 | 7 | KETCHUP | – | Mlle L.A. LECOQ |
 | 8 | KADOR DELO | – | Mlle E. BOUCLET |
 | 9 | KALEDA DE LA COUR | – | Mlle H. FERNANDES RIOS |
@@ -71,22 +71,22 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MILO JO | – | B. VALLETTE |
-| 2 | MY HERO | – | A. BARRIER |
+| 4 | MIL'S DE BAILLE | 2,7 | M. MOTTIER |
+| 9 | MIMI DE VAL | 4,8 | E. RAFFIN |
+| 5 | MYSTIC HAUFOR | 6,4 | D. BONNE |
+| 2 | MY HERO | 9,7 | A. BARRIER |
+| 1 | MILO JO | 19 | B. VALLETTE |
+| 6 | MAESTRO D'ELFE | 19 | D. BROHIER |
+| 7 | MALANDRINO | 19 | ETIENNE DUBOIS |
+| 10 | MY LOVE JULMA | 19 | M. ABRIVARD |
+| 12 | MARIO DE LOU | 19 | JULIEN RAFFESTIN |
+| 16 | MILTON DU CHATELET | 19 | A. COLLETTE |
 | 3 | MANIGOD D'ELLE | – | B. ROCHARD |
-| 4 | MIL'S DE BAILLE | – | M. MOTTIER |
-| 5 | MYSTIC HAUFOR | – | D. BONNE |
-| 6 | MAESTRO D'ELFE | – | D. BROHIER |
-| 7 | MALANDRINO | – | ETIENNE DUBOIS |
 | 8 | MYTHE D'ERABLE | – | D. THOMAIN |
-| 9 | MIMI DE VAL | – | E. RAFFIN |
-| 10 | MY LOVE JULMA | – | M. ABRIVARD |
 | 11 | MAJOR DE LA BASLE | – | P.Y. VERVA |
-| 12 | MARIO DE LOU | – | JULIEN RAFFESTIN |
 | 13 | MILLESIME DARLING | – | K. VANDERSCHELDEN |
 | 14 | MILLESIME STAR | – | P.PH. PLOQUIN |
 | 15 | MENJOY QUICK | – | A. LAMY |
-| 16 | MILTON DU CHATELET | – | A. COLLETTE |
 
 ### 5. PRIX DE L'ILE D'OLERON
 
@@ -94,16 +94,16 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | IDEAL DU NOYER | – | A. GENDROT |
-| 2 | HEVA BLONDE | – | A. COLLETTE |
-| 3 | LAMBADA DU GOUTIER | – | P.PH. PLOQUIN |
-| 4 | KAYA DREAM | – | D. BONNE |
+| 10 | IMAGINE D'ATOUT | 2,5 | B. ROCHARD |
+| 1 | IDEAL DU NOYER | 4,5 | A. GENDROT |
+| 3 | LAMBADA DU GOUTIER | 4,5 | P.PH. PLOQUIN |
+| 9 | HANNAH | 7,6 | F. DESMIGNEUX |
+| 2 | HEVA BLONDE | 11 | A. COLLETTE |
+| 4 | KAYA DREAM | 22 | D. BONNE |
+| 7 | ILTON ROYAL | 22 | LILIAN BERTIN |
 | 5 | HAIDA SAUTONNE | – | M. MOTTIER |
 | 6 | IMPERIAL COGLAIS | – | F. POISSON |
-| 7 | ILTON ROYAL | – | LILIAN BERTIN |
 | 8 | JUPITER DE PLAY | – | A. ABRIVARD |
-| 9 | HANNAH | – | F. DESMIGNEUX |
-| 10 | IMAGINE D'ATOUT | – | B. ROCHARD |
 | 11 | KAPAULA DE L'EPINE | – | A. LAMY |
 
 ### 6. PRIX EURYNOME
@@ -112,13 +112,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | ONELLE LANDING | – | L. BAUDRON |
+| 6 | OLGAYA | 1,2 | CL. DUVALDESTIN |
+| 1 | ONELLE LANDING | 5,5 | L. BAUDRON |
+| 3 | ON THE BEACH | 8,3 | A. COLLETTE |
+| 7 | OPERA QUEEN | 16 | E. RAFFIN |
 | 2 | ODYSSEE DE MAI | – | R. CONGARD |
-| 3 | ON THE BEACH | – | A. COLLETTE |
 | 4 | OLYMPE DE BELINE | – | B. ROBIN |
 | 5 | ORFEE DANEPIERRE | – | A. LAMY |
-| 6 | OLGAYA | – | CL. DUVALDESTIN |
-| 7 | OPERA QUEEN | – | E. RAFFIN |
 | 8 | OLBIA CASTELETS | – | M. MOTTIER |
 | 9 | OLIVE D'ANSY | – | B. ROCHARD |
 | 10 | OPEN LETTER | – | A. REBECHE |
@@ -135,17 +135,17 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 6 | KADO DES MOLLES | 1,8 | A. BARRIER |
+| 7 | KALMIA QUICK | 6,1 | A. REBECHE |
+| 10 | KSAR VRIE | 9,2 | A. DE VAUGIRAUD |
+| 12 | KEZIO JOSSELYN | 9,2 | J. KOUBICHE |
+| 3 | KARMA QUICK | 18 | E. RAFFIN |
+| 4 | KING DE LARRE | 18 | A. COLLETTE |
+| 5 | KRAKEN CASTELETS | 18 | P.PH. PLOQUIN |
+| 11 | KING MAKER | 18 | M. ABRIVARD |
 | 2 | KLOE D'ARRY | – | D. BROHIER |
-| 3 | KARMA QUICK | – | E. RAFFIN |
-| 4 | KING DE LARRE | – | A. COLLETTE |
-| 5 | KRAKEN CASTELETS | – | P.PH. PLOQUIN |
-| 6 | KADO DES MOLLES | – | A. BARRIER |
-| 7 | KALMIA QUICK | – | A. REBECHE |
 | 8 | KADOR JOSSELYN | – | L. PITON |
 | 9 | KATIM DU GOUTIER | – | A. ABRIVARD |
-| 10 | KSAR VRIE | – | A. DE VAUGIRAUD |
-| 11 | KING MAKER | – | M. ABRIVARD |
-| 12 | KEZIO JOSSELYN | – | J. KOUBICHE |
 
 ### 8. PRIX TERCIDINA
 
@@ -153,19 +153,19 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 3 | NEW GRASS | 2,9 | E. RAFFIN |
+| 7 | NEWMARKET | 4,4 | A. ABRIVARD |
+| 6 | NATACHA CASTEL | 8,8 | M. MOTTIER |
+| 9 | NUITEE D'AMOUR | 8,8 | A. THOMAS |
+| 11 | NOBLE INTENTION | 8,8 | ETIENNE DUBOIS |
+| 12 | NALA LEALMANI | 8,8 | N. MARTINEAU |
+| 16 | NUT AND MONEY | 8,8 | F. DESMIGNEUX |
 | 1 | NYMPHADORA TONKS | – | A. BARRIER |
 | 2 | NESSY D'AR | – | ANDREA ROUSSEL |
-| 3 | NEW GRASS | – | E. RAFFIN |
 | 4 | NAGOYA DE LOU | – | M. PANTIC |
 | 5 | NOCE ROYALE | – | A. CHERADAME |
-| 6 | NATACHA CASTEL | – | M. MOTTIER |
-| 7 | NEWMARKET | – | A. ABRIVARD |
 | 8 | NINA D'EOL | – | A. GARANDEAU |
-| 9 | NUITEE D'AMOUR | – | A. THOMAS |
 | 10 | NIEBLITA | – | G. PORZIO |
-| 11 | NOBLE INTENTION | – | ETIENNE DUBOIS |
-| 12 | NALA LEALMANI | – | N. MARTINEAU |
 | 13 | NOVA DE CELLAND | – | M. ABRIVARD |
 | 14 | NESTOLA | – | A. REBECHE |
 | 15 | NORA D'ELCE | – | J. KOUBICHE |
-| 16 | NUT AND MONEY | – | F. DESMIGNEUX |
