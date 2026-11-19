@@ -1,6 +1,6 @@
 # SAINT-CLOUD — 19/11/2026
 
-10 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+10 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -204,23 +204,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 10. PRIX DE BAD GODESBERG
 
-*16h15 · plat · 2000 m · 16 partants · cotes de l'extraction*
+*16h15 · plat · 2000 m · 16 partants · cotes à T−2:39*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 9 | PORTUCALE | 4,4 | 4,96 | -11,4 % | M.VELON | 27/5/541/29 |
-| 11 | LA MAZZI GOGO | 4,4 | 4,96 | -11,4 % | B.MARIE | 63/49/339/961 |
-| 14 | PESTACLE | 4,4 | 4,60 | -4,4 % | A.LEMAITRE | 10/49/319/1174 |
-| 5 | INGEBORG | 6,6 | 7,93 | -16,8 % | H.BOUTIN | 17/47/265/432 |
-| 1 | VICTORY PACE | 13 | 15,02 | -13,4 % | A.MADAMET | 12/15/279/106 |
-| 2 | PIQUOISEAU | 13 | 15,40 | -15,6 % | S.PASQUIER | 20/48/1639/62 |
-| 3 | STARNBERG | 13 | 16,86 | -22,9 % | T.PICCONE | 9/5/22/17 |
-| 4 | METS LE FEU | 13 | 16,86 | -22,9 % | E.HARDOUIN | 30/26/52/67 |
-| 6 | TOP TOWN TELL TALE | – | – |  | T.BACHELOT | 16/23/207/459 |
-| 7 | ARTISTIC MAN | – | – |  | H.LEBOUC | 22/282/59/2431 |
-| 8 | SARASTRO | – | – |  | C.LECOEUVRE | 13/23/192/923 |
-| 10 | AQUILA VOLANTE | – | – |  | A.HAMELIN | 23/81/53/188 |
-| 12 | STAN LE GRAND | – | – |  | PC.BOUDOT | 7/84/22/17 |
-| 13 | NEUF DE PAQUES | – | – |  | L.ROUSSEL | 18/31/737/1434 |
-| 15 | SILVER REEL | – | – |  | D.PROVOST | 33/82/114/176 |
-| 16 | SIM CARD | – | – |  | M.GUYON 4e | 4/23/434/607 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 2 | PIQUOISEAU | 5 | 13 | 5,57 | -10,2 % | S.PASQUIER | 20/48/1639/62 |
+| 1 | VICTORY PACE | 5,3 | 13 | 5,44 | -2,6 % | A.MADAMET | 12/15/279/106 |
+| 4 | METS LE FEU | 9,1 | 13 | 11,25 | -19,1 % | E.HARDOUIN | 30/26/52/67 |
+| 16 | SIM CARD | 11 | – | 15,07 | -27,0 % | M.GUYON 4e | 4/23/434/607 |
+| 14 | PESTACLE | 13 | 4,4 | 13,73 | -5,4 % | A.LEMAITRE | 10/49/319/1174 |
+| 9 | PORTUCALE | 15 | 4,4 | 17,74 | -15,5 % | M.VELON | 27/5/541/29 |
+| 11 | LA MAZZI GOGO | 15 | 4,4 | 17,74 | -15,5 % | B.MARIE | 63/49/339/961 |
+| 12 | STAN LE GRAND | 17 | – | 22,85 | -25,6 % | PC.BOUDOT | 7/84/22/17 |
+| 5 | INGEBORG | 21 | 6,6 | 31,36 | -33,0 % | H.BOUTIN | 17/47/265/432 |
+| 3 | STARNBERG | 22 | 13 | 31,63 | -30,4 % | T.PICCONE | 9/5/22/17 |
+| 13 | NEUF DE PAQUES | 22 | – | 31,63 | -30,4 % | L.ROUSSEL | 18/31/737/1434 |
+| 10 | AQUILA VOLANTE | 23 | – | 26,51 | -13,2 % | A.HAMELIN | 23/81/53/188 |
+| 6 | TOP TOWN TELL TALE | 28 | – | 44,80 | -37,5 % | T.BACHELOT | 16/23/207/459 |
+| 7 | ARTISTIC MAN | 28 | – | 41,69 | -32,8 % | H.LEBOUC | 22/282/59/2431 |
+| 8 | SARASTRO | 39 | – | 60,46 | -35,5 % | C.LECOEUVRE | 13/23/192/923 |
+| 15 | SILVER REEL | 46 | – | 64,22 | -28,4 % | D.PROVOST | 33/82/114/176 |
