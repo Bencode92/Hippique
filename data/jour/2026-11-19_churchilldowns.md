@@ -1,6 +1,6 @@
 # CHURCHILL DOWNS — 19/11/2026
 
-9 courses (1 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+9 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -12,12 +12,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MR RANDY | – | J A TORRES |
-| 2 | PIED PIPER | – | Y ORTIZ, JR. |
-| 3 | RAMBLIN | – | W A RODRIGUEZ |
-| 4 | SUITED AND BOOTED | – | E MORALES |
-| 5 | UNCLE EVCO | – | L SAEZ |
-| 6 | GALLO DE FUEGO | – | T GAFFALIONE |
+| 6 | GALLO DE FUEGO | 1,3 | T GAFFALIONE |
+| 3 | RAMBLIN | 9,9 | W A RODRIGUEZ |
+| 4 | SUITED AND BOOTED | 10 | E MORALES |
+| 2 | PIED PIPER | 11 | Y ORTIZ, JR. |
+| 1 | MR RANDY | 17 | J A TORRES |
+| 5 | UNCLE EVCO | 17 | L SAEZ |
 
 ### 2. MAIDEN CLAIMING 1700
 
@@ -25,14 +25,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | GLAMOUR N GLITZ | – | Y ORTIZ, JR. |
-| 2 | DEVIOUS LADY | – | J A TORRES |
+| 2 | DEVIOUS LADY | 2,6 | J A TORRES |
+| 7 | BRIDE | 3,3 | M FERNANDEZ |
+| 8 | HIGH CLASS BROAD | 6,6 | A BURGOS |
+| 1 | GLAMOUR N GLITZ | 13 | Y ORTIZ, JR. |
+| 4 | DAGNY TAGGART | 13 | L SAEZ |
+| 5 | SOCK MONKEY | 13 | E ESQUIVEL |
+| 6 | MID AGE RAGE | 13 | W A RODRIGUEZ |
 | 3 | CURLIN'S COURT | – | F GEROUX |
-| 4 | DAGNY TAGGART | – | L SAEZ |
-| 5 | SOCK MONKEY | – | E ESQUIVEL |
-| 6 | MID AGE RAGE | – | W A RODRIGUEZ |
-| 7 | BRIDE | – | M FERNANDEZ |
-| 8 | HIGH CLASS BROAD | – | A BURGOS |
 
 ### 3. MAIDEN SPECIAL WEIGHT 1100
 
@@ -40,12 +40,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 6 | PRACTICAL PATSY | 1,1 | Y ORTIZ, JR. |
+| 2 | BUSH | 16 | L SAEZ |
+| 4 | LET ME ADORE YOU | 33 | F GEROUX |
 | 1 | TICK TOCK TECH | – | A BESCHIZZA |
-| 2 | BUSH | – | L SAEZ |
 | 3 | MIDNIGHT MONARCH | – | E MORALES |
-| 4 | LET ME ADORE YOU | – | F GEROUX |
 | 5 | TAJIN TIME | – | G CORRALES |
-| 6 | PRACTICAL PATSY | – | Y ORTIZ, JR. |
 | 7 | SING THE BLUES | – | D MACHADO |
 | 8 | D J ABS | – | J ALVARADO |
 | 9 | VERY ENHANCED | – | D CANNON |
@@ -53,35 +53,33 @@
 
 ### 4. MAIDEN SPECIAL WEIGHT 1100
 
-*20h27 · plat · 1100 m · 9 partants · cotes de l'extraction*
+*20h27 · plat · 1100 m · 8 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 9 | EPIC MAX | 3,2 | J A TORRES | –/–/–/– |
+| 4 | PSALM ONE EIGHTEEN | 4,8 | A JIMENEZ | –/–/–/706 |
+| 7 | VICTOR DOMINO | 4,8 | J ALVARADO | –/–/–/– |
+| 2 | ONCEORTWICEBEFORE | 9,7 | A CEDILLO | –/–/–/– |
+| 3 | SOAP NOTE | 9,7 | M GUTIERREZ | –/–/–/– |
+| 5 | BOOT SCOOTER | 9,7 | C A TORRES | –/–/–/– |
+| 8 | CITY OF ROME | 9,7 | Y ORTIZ, JR. | –/–/–/– |
 | 1 | BERGKAMP | – | E MORALES | –/–/–/– |
-| 2 | ONCEORTWICEBEFORE | – | A CEDILLO | –/–/–/– |
-| 3 | SOAP NOTE | – | M GUTIERREZ | –/–/–/– |
-| 4 | PSALM ONE EIGHTEEN | – | A JIMENEZ | –/–/–/706 |
-| 5 | BOOT SCOOTER | – | C A TORRES | –/–/–/– |
-| 6 | TIO COLOCHO | – | W A RODRIGUEZ | –/–/–/– |
-| 7 | VICTOR DOMINO | – | J ALVARADO | –/–/–/– |
-| 8 | CITY OF ROME | – | Y ORTIZ, JR. | –/–/–/– |
-| 9 | EPIC MAX | – | J A TORRES | –/–/–/– |
 
 ### 5. CLAIMING 1300
 
-*20h57 · plat · 1300 m · 10 partants · cotes de l'extraction*
+*20h57 · plat · 1300 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 4 | BLOODLINE | 1,1 | W A RODRIGUEZ |
+| 9 | EXCELLENT EMPIRE | 30 | B MARTINEZ |
 | 1 | HERE COMES BRAYLON | – | W ANTONGEORGI III |
 | 2 | CAMP DADDY | – | Y ORTIZ, JR. |
 | 3 | AMERICAN BEAR | – | D GRISALES RAVE |
-| 4 | BLOODLINE | – | W A RODRIGUEZ |
 | 5 | ONE COOL DUDE | – | I MONCADA |
 | 6 | LEAGUE OF LEGENDS | – | A CEDILLO |
-| 7 | STARGAZZERS DREAM | – | M FERNANDEZ |
 | 8 | SECURED LENDER | – | G CORRALES |
-| 9 | EXCELLENT EMPIRE | – | B MARTINEZ |
 | 10 | DOWNTOWN CONNECTOR | – | R BLANCHE |
 
 ### 6. CLAIMING 1600
@@ -90,12 +88,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | SPUN LEGACY | – | Y ORTIZ, JR. |
+| 1 | SPUN LEGACY | 1,1 | Y ORTIZ, JR. |
+| 6 | STASHU | 30 | A BENDEZU |
 | 2 | BOURBONKOMA | – | G CORRALES |
 | 3 | RULOOKINFORRAYRAY | – | E MORALES |
 | 4 | TODO MEN | – | D MACHADO |
 | 5 | CREATING HAVOC | – | J M ROMERO |
-| 6 | STASHU | – | A BENDEZU |
 | 7 | MI COMPADRE | – | E ESQUIVEL |
 | 8 | STORM BACK | – | A ACHARD |
 
@@ -105,14 +103,14 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | CAPITOLA | – | L SAEZ | –/–/–/– |
+| 8 | BOURBON NEAT | 1,8 | Y ORTIZ, JR. | –/–/–/– |
+| 1 | CAPITOLA | 3,3 | L SAEZ | –/–/–/– |
+| 6 | KASHVILLE | 3,3 | J A TORRES | –/–/–/– |
 | 2 | TAWALLA | – | A CEDILLO | –/–/–/– |
 | 3 | FAIR CHASE | – | T GAFFALIONE | –/–/–/– |
 | 4 | SHADDOCK | – | E ESQUIVEL | –/–/–/– |
 | 5 | CONLEY | – | E MORALES | –/–/–/– |
-| 6 | KASHVILLE | – | J A TORRES | –/–/–/– |
 | 7 | DAYTON | – | F GEROUX | –/–/–/– |
-| 8 | BOURBON NEAT | – | Y ORTIZ, JR. | –/–/–/– |
 
 ### 8. ALLOWANCE 1800
 
@@ -120,30 +118,29 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | LAKEN | – | Y ORTIZ, JR. |
+| 1 | LAKEN | 1,1 | Y ORTIZ, JR. |
+| 6 | GINGER ALE | 6 | L MACHADO |
+| 5 | NYCON | 18 | L SAEZ |
+| 8 | LEINANI | 36 | T GAFFALIONE |
 | 2 | IVORY AND EBONY | – | G CORRALES |
 | 3 | FEELING BEACHY | – | J A TORRES |
 | 4 | SHE'S OUR GIRL | – | B J HERNANDEZ, JR. |
-| 5 | NYCON | – | L SAEZ |
-| 6 | GINGER ALE | – | L MACHADO |
 | 7 | EPISIST | – | K J ASMUSSEN |
-| 8 | LEINANI | – | T GAFFALIONE |
 | 9 | LOBBY RENDEZVOUS | – | E ESQUIVEL |
 | 10 | CLASSIC GLIDE | – | J ALVARADO |
 
 ### 9. MAIDEN SPECIAL WEIGHT 1100
 
-*22h55 · plat · 1100 m · 10 partants · cotes de l'extraction*
+*22h55 · plat · 1100 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 3 | BLAZING SUNSET | 1,7 | Y ORTIZ, JR. |
-| 5 | BIT TIPSY | 1,7 | W A RODRIGUEZ |
+| 2 | AVALON BEACH | 1,1 | L SAEZ |
+| 3 | BLAZING SUNSET | 32 | Y ORTIZ, JR. |
+| 5 | BIT TIPSY | 32 | W A RODRIGUEZ |
+| 9 | R LAST LAUGH | 32 | T GAFFALIONE |
 | 1 | COSMIC CREED | – | M GARCIA |
-| 2 | AVALON BEACH | – | L SAEZ |
 | 4 | MIDWINTER | – | J ALVARADO |
 | 6 | SPEIGHTFUL MOON | – | A BESCHIZZA |
-| 7 | PARDI VIDA | – | J A TORRES |
 | 8 | KODERA GALE | – | L MACHADO |
-| 9 | R LAST LAUGH | – | T GAFFALIONE |
 | 10 | MARIGOLD RUN | – | C A TORRES |

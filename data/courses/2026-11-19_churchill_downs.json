@@ -1,7 +1,7 @@
 {
   "hippodrome": "CHURCHILL DOWNS",
   "type_reunion": "Plat",
-  "date_extraction": "2026-11-19T03:04:51.288070",
+  "date_extraction": "2026-11-19T16:27:16.304652",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/19112026/R5",
   "courses": [
     {
@@ -30,7 +30,9 @@
           "equipement(s)": "",
           "nb_courses": 13,
           "nb_victoires": 3,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 17.0,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -50,7 +52,9 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 2,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 11.0,
+          "cote_tendance": ""
         },
         {
           "n°": "3",
@@ -70,7 +74,9 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 1,
-          "nb_places": 9
+          "nb_places": 9,
+          "cote": 9.9,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -90,7 +96,10 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 1,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 32.0
         },
         {
           "n°": "5",
@@ -110,7 +119,9 @@
           "equipement(s)": "",
           "nb_courses": 25,
           "nb_victoires": 3,
-          "nb_places": 15
+          "nb_places": 15,
+          "cote": 17.0,
+          "cote_tendance": ""
         },
         {
           "n°": "6",
@@ -130,9 +141,13 @@
           "equipement(s)": "",
           "nb_courses": 19,
           "nb_victoires": 3,
-          "nb_places": 11
+          "nb_places": 11,
+          "cote": 1.3,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         }
       ],
+      "typePiste": "GAZON",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -161,7 +176,9 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 13.0,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -181,7 +198,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.6,
+          "cote_tendance": "",
+          "cote_reference": 1.9
         },
         {
           "n°": "3",
@@ -221,7 +241,9 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 13.0,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -241,7 +263,10 @@
           "equipement(s)": "",
           "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 9.7
         },
         {
           "n°": "6",
@@ -261,7 +286,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 9.7
         },
         {
           "n°": "7",
@@ -281,7 +309,10 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 0,
-          "nb_places": 4
+          "nb_places": 4,
+          "cote": 3.3,
+          "cote_tendance": "",
+          "cote_reference": 4.8
         },
         {
           "n°": "8",
@@ -301,9 +332,13 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 6.6,
+          "cote_tendance": "",
+          "cote_reference": 4.8
         }
       ],
+      "typePiste": "GAZON",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -352,7 +387,9 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 16.0,
+          "cote_tendance": ""
         },
         {
           "n°": "3",
@@ -392,7 +429,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 33.0,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -432,7 +471,10 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 1.1,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         },
         {
           "n°": "7",
@@ -515,6 +557,7 @@
           "nb_places": 0
         }
       ],
+      "typePiste": "HERBE",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -563,7 +606,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 9.7,
+          "cote_tendance": "",
+          "cote_reference": 2.6
         },
         {
           "n°": "3",
@@ -583,7 +629,9 @@
           "equipement(s)": "",
           "nb_courses": 3,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 9.7,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -603,7 +651,9 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 4.8,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -623,27 +673,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
-          "n°": "6",
-          "cheval": "TIO COLOCHO M.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: HIGHLY MOTIVATED et COVEY TRACE (STEVIE WONDERBOY)",
-          "corde": "(Corde:06)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261119/CHD/4/20261119-CHD-4-6.png",
-          "propriétaire": "ROGELIO LABRA AND RICARDO LABRA",
-          "entraineur": "R LABRA",
-          "éleveurs": "",
-          "jockey": "W A RODRIGUEZ",
-          "poids": "54 kg",
-          "gains": "322800",
-          "musique": "4p6p",
-          "valeur": "54.0",
-          "equipement(s)": "",
-          "nb_courses": 2,
-          "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 0,
+          "cote": 9.7,
+          "cote_tendance": ""
         },
         {
           "n°": "7",
@@ -663,7 +695,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 4.8,
+          "cote_tendance": ""
         },
         {
           "n°": "8",
@@ -683,7 +717,9 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 9.7,
+          "cote_tendance": ""
         },
         {
           "n°": "9",
@@ -703,9 +739,13 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 3.2,
+          "cote_tendance": "",
+          "cote_reference": 1.3
         }
       ],
+      "typePiste": "GAZON",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -794,7 +834,10 @@
           "equipement(s)": "",
           "nb_courses": 25,
           "nb_victoires": 6,
-          "nb_places": 11
+          "nb_places": 11,
+          "cote": 1.1,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         },
         {
           "n°": "5",
@@ -837,26 +880,6 @@
           "nb_places": 19
         },
         {
-          "n°": "7",
-          "cheval": "STARGAZZERS DREAM H.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: BUCCHERO et TEST MY LOVE (BELLAMY ROAD)",
-          "corde": "(Corde:07)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261119/CHD/5/20261119-CHD-5-7.png",
-          "propriétaire": "MICHELLE A. SHAW",
-          "entraineur": "M LOVELL",
-          "éleveurs": "",
-          "jockey": "M FERNANDEZ",
-          "poids": "52 kg",
-          "gains": "8580300",
-          "musique": "2p2p1p7p4p",
-          "valeur": "52.0",
-          "equipement(s)": "",
-          "nb_courses": 27,
-          "nb_victoires": 4,
-          "nb_places": 14
-        },
-        {
           "n°": "8",
           "cheval": "SECURED LENDER H.PU. 5 a.",
           "cheval_url": "",
@@ -894,7 +917,9 @@
           "equipement(s)": "",
           "nb_courses": 20,
           "nb_victoires": 6,
-          "nb_places": 11
+          "nb_places": 11,
+          "cote": 30.0,
+          "cote_tendance": ""
         },
         {
           "n°": "10",
@@ -917,6 +942,7 @@
           "nb_places": 30
         }
       ],
+      "typePiste": "GAZON",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -945,7 +971,10 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 1,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 1.1,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         },
         {
           "n°": "2",
@@ -1045,7 +1074,10 @@
           "equipement(s)": "",
           "nb_courses": 12,
           "nb_victoires": 1,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 30.0,
+          "cote_tendance": "",
+          "cote_reference": 29.0
         },
         {
           "n°": "7",
@@ -1088,6 +1120,7 @@
           "nb_places": 13
         }
       ],
+      "typePiste": "HERBE",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1116,7 +1149,10 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 3.3,
+          "cote_tendance": "",
+          "cote_reference": 2.6
         },
         {
           "n°": "2",
@@ -1216,7 +1252,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 3.3,
+          "cote_tendance": "",
+          "cote_reference": 2.6
         },
         {
           "n°": "7",
@@ -1256,9 +1295,13 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 1
+          "nb_places": 1,
+          "cote": 1.8,
+          "cote_tendance": "",
+          "cote_reference": 2.6
         }
       ],
+      "typePiste": "GAZON",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1287,7 +1330,10 @@
           "equipement(s)": "",
           "nb_courses": 5,
           "nb_victoires": 1,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 1.1,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         },
         {
           "n°": "2",
@@ -1367,7 +1413,10 @@
           "equipement(s)": "",
           "nb_courses": 8,
           "nb_victoires": 1,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 18.0,
+          "cote_tendance": "",
+          "cote_reference": 35.0
         },
         {
           "n°": "6",
@@ -1387,7 +1436,10 @@
           "equipement(s)": "",
           "nb_courses": 7,
           "nb_victoires": 1,
-          "nb_places": 6
+          "nb_places": 6,
+          "cote": 6.0,
+          "cote_tendance": "",
+          "cote_reference": 5.9
         },
         {
           "n°": "7",
@@ -1427,7 +1479,10 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 1,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 36.0,
+          "cote_tendance": "",
+          "cote_reference": 35.0
         },
         {
           "n°": "9",
@@ -1470,6 +1525,7 @@
           "nb_places": 7
         }
       ],
+      "typePiste": "GAZON",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1518,7 +1574,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 1.1,
+          "cote_tendance": "",
+          "cote_reference": 1.1
         },
         {
           "n°": "3",
@@ -1539,8 +1598,9 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 1.7,
-          "cote_tendance": ""
+          "cote": 32.0,
+          "cote_tendance": "",
+          "cote_reference": 32.0
         },
         {
           "n°": "4",
@@ -1581,8 +1641,9 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 1.7,
-          "cote_tendance": ""
+          "cote": 32.0,
+          "cote_tendance": "",
+          "cote_reference": 32.0
         },
         {
           "n°": "6",
@@ -1603,26 +1664,6 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 0
-        },
-        {
-          "n°": "7",
-          "cheval": "PARDI VIDA F.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: YAUPON et MOON OVER MAG BAY (MALIBU MOON)",
-          "corde": "(Corde:07)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261119/CHD/9/20261119-CHD-9-7.png",
-          "propriétaire": "BRIGGS STABLE (DEREK B. COLETT)",
-          "entraineur": "J SHARP",
-          "éleveurs": "",
-          "jockey": "J A TORRES",
-          "poids": "54 kg",
-          "gains": "699100",
-          "musique": "5p4p",
-          "valeur": "54.0",
-          "equipement(s)": "",
-          "nb_courses": 2,
-          "nb_victoires": 0,
-          "nb_places": 2
         },
         {
           "n°": "8",
@@ -1662,7 +1703,10 @@
           "equipement(s)": "",
           "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 2
+          "nb_places": 2,
+          "cote": 32.0,
+          "cote_tendance": "",
+          "cote_reference": 32.0
         },
         {
           "n°": "10",
@@ -1685,6 +1729,7 @@
           "nb_places": 1
         }
       ],
+      "typePiste": "HERBE",
       "cordeCourse": "CORDE_GAUCHE"
     }
   ]

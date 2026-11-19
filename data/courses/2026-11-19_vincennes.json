@@ -1,62 +1,116 @@
 {
   "hippodrome": "VINCENNES",
   "type_reunion": "MONTE",
-  "date_extraction": "2026-11-19T03:04:34.166738",
+  "date_extraction": "2026-11-19T16:27:01.275546",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/19112026/R3",
   "courses": [
     {
       "nom": "PRIX DE FERRIERES",
-      "horaire": "15h57",
+      "horaire": "15h58",
       "numero": "1",
       "type": "MONTE",
       "distance": "2700m",
       "url": "",
       "participants": [
         {
-          "n°": "1",
-          "cheval": "NOPUS ONE M.TR. 3 a.",
+          "n°": "8",
+          "cheval": "NARIO MESLINOIS H.TR. 3 a.",
           "cheval_url": "",
-          "père_mère": "Par: CHARLY DU NOYER et BEAUTY PRINCESS",
+          "père_mère": "Par: FADO DU CHENE et DIVA MESLINOISE",
           "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261119/VIN/1/20261119-VIN-1-1.png",
-          "propriétaire": "Ecurie D.M. MOTTIER",
-          "entraineur": "M. MOTTIER",
-          "éleveurs": "Ecurie D.M. MOTTIER",
-          "jockey": "M. MOTTIER",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261119/VIN/1/20261119-VIN-1-8.png",
+          "propriétaire": "B. CARPENTIER",
+          "entraineur": "B. CARPENTIER",
+          "éleveurs": "M. Louis CHESNEAU",
+          "jockey": "M. DURVILLE",
           "poids": "60 kg",
-          "gains": "",
-          "musique": "",
+          "gains": "940000",
+          "musique": "3m2m",
           "valeur": "60.0",
           "equipement(s)": "",
-          "nb_courses": 0,
+          "nb_courses": 2,
           "nb_victoires": 0,
-          "nb_places": 0,
-          "cote": 9.7,
+          "nb_places": 2,
+          "cote": 2.9,
           "cote_tendance": "",
-          "avis_entraineur": "NEUTRE"
+          "cote_reference": 3.6,
+          "avis_entraineur": "NEUTRE",
+          "arrivee": 1
         },
         {
-          "n°": "2",
-          "cheval": "NARCISO D'EVA M.TR. 3 a.",
+          "n°": "7",
+          "cheval": "NAMOUR DU COGLAIS H.TR. 3 a.",
           "cheval_url": "",
-          "père_mère": "Par: BILIBILI et SIERRA D'EVA",
+          "père_mère": "Par: UN AMOUR D'HAUFOR et DARLING DU COGLAIS",
           "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261119/VIN/1/20261119-VIN-1-2.png",
-          "propriétaire": "Ecurie Pierre PELLEROT",
-          "entraineur": "P. PELLEROT",
-          "éleveurs": "M. Franck PELLEROT",
-          "jockey": "B. ROCHARD",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261119/VIN/1/20261119-VIN-1-7.png",
+          "propriétaire": "Ecurie Christian BIGEON",
+          "entraineur": "CH. BIGEON",
+          "éleveurs": "M. Raymond MORAZIN",
+          "jockey": "D. BONNE",
           "poids": "60 kg",
-          "gains": "",
-          "musique": "Dm",
+          "gains": "364000",
+          "musique": "2a6aDa6a",
           "valeur": "60.0",
           "equipement(s)": "",
-          "nb_courses": 1,
+          "nb_courses": 4,
           "nb_victoires": 0,
-          "nb_places": 0,
-          "cote": 3.2,
+          "nb_places": 3,
+          "cote": 4.6,
           "cote_tendance": "",
-          "avis_entraineur": "NEUTRE"
+          "cote_reference": 5.2,
+          "avis_entraineur": "NEUTRE",
+          "arrivee": 2
+        },
+        {
+          "n°": "10",
+          "cheval": "NIRJHARA H.TR. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: BOLD EAGLE et BHAGYA",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261119/VIN/1/20261119-VIN-1-10.png",
+          "propriétaire": "J. SECHE",
+          "entraineur": "W. BIGEON",
+          "éleveurs": "S.C.E.A. MATHIEU",
+          "jockey": "A. COLLETTE",
+          "poids": "60 kg",
+          "gains": "1247500",
+          "musique": "2m7mDa(25)DaDaDa2a",
+          "valeur": "60.0",
+          "equipement(s)": "",
+          "nb_courses": 7,
+          "nb_victoires": 0,
+          "nb_places": 3,
+          "cote": 5.2,
+          "cote_tendance": "",
+          "cote_reference": 5.4,
+          "avis_entraineur": "NEUTRE",
+          "arrivee": 3
+        },
+        {
+          "n°": "9",
+          "cheval": "NOBLE D'AVRIL H.TR. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: GOUT BAROQUE et IRENE D'AVRIL",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261119/VIN/1/20261119-VIN-1-9.png",
+          "propriétaire": "Ecurie Thierry RAFFEGEAU",
+          "entraineur": "TH. RAFFEGEAU",
+          "éleveurs": "E.A.R.L VILLIERS",
+          "jockey": "Mme T. MATHIAS-MAISONNETTE",
+          "poids": "59 kg",
+          "gains": "1025000",
+          "musique": "Dm6mDm1m8mDm",
+          "valeur": "59.0",
+          "equipement(s)": "",
+          "nb_courses": 6,
+          "nb_victoires": 1,
+          "nb_places": 1,
+          "cote": 34.0,
+          "cote_tendance": "",
+          "cote_reference": 27.0,
+          "avis_entraineur": "NEUTRE",
+          "arrivee": 4
         },
         {
           "n°": "3",
@@ -77,6 +131,59 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 2,
+          "cote": 59.0,
+          "cote_tendance": "",
+          "cote_reference": 28.0,
+          "avis_entraineur": "NEUTRE",
+          "arrivee": 5
+        },
+        {
+          "n°": "2",
+          "cheval": "NARCISO D'EVA M.TR. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: BILIBILI et SIERRA D'EVA",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261119/VIN/1/20261119-VIN-1-2.png",
+          "propriétaire": "Ecurie Pierre PELLEROT",
+          "entraineur": "P. PELLEROT",
+          "éleveurs": "M. Franck PELLEROT",
+          "jockey": "B. ROCHARD",
+          "poids": "60 kg",
+          "gains": "",
+          "musique": "Dm",
+          "valeur": "60.0",
+          "equipement(s)": "",
+          "nb_courses": 1,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 21.0,
+          "cote_tendance": "",
+          "cote_reference": 8.8,
+          "avis_entraineur": "NEUTRE",
+          "arrivee": 6
+        },
+        {
+          "n°": "1",
+          "cheval": "NOPUS ONE M.TR. 3 a.",
+          "cheval_url": "",
+          "père_mère": "Par: CHARLY DU NOYER et BEAUTY PRINCESS",
+          "corde": "",
+          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261119/VIN/1/20261119-VIN-1-1.png",
+          "propriétaire": "Ecurie D.M. MOTTIER",
+          "entraineur": "M. MOTTIER",
+          "éleveurs": "Ecurie D.M. MOTTIER",
+          "jockey": "M. MOTTIER",
+          "poids": "60 kg",
+          "gains": "",
+          "musique": "",
+          "valeur": "60.0",
+          "equipement(s)": "",
+          "nb_courses": 0,
+          "nb_victoires": 0,
+          "nb_places": 0,
+          "cote": 7.4,
+          "cote_tendance": "",
+          "cote_reference": 7.4,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -98,6 +205,9 @@
           "nb_courses": 18,
           "nb_victoires": 0,
           "nb_places": 6,
+          "cote": 206.0,
+          "cote_tendance": "",
+          "cote_reference": 133.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -119,8 +229,9 @@
           "nb_courses": 6,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 2.4,
+          "cote": 15.0,
           "cote_tendance": "",
+          "cote_reference": 16.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -142,94 +253,9 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
-          "avis_entraineur": "NEUTRE"
-        },
-        {
-          "n°": "7",
-          "cheval": "NAMOUR DU COGLAIS H.TR. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: UN AMOUR D'HAUFOR et DARLING DU COGLAIS",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261119/VIN/1/20261119-VIN-1-7.png",
-          "propriétaire": "Ecurie Christian BIGEON",
-          "entraineur": "CH. BIGEON",
-          "éleveurs": "M. Raymond MORAZIN",
-          "jockey": "D. BONNE",
-          "poids": "60 kg",
-          "gains": "364000",
-          "musique": "2a6aDa6a",
-          "valeur": "60.0",
-          "equipement(s)": "",
-          "nb_courses": 4,
-          "nb_victoires": 0,
-          "nb_places": 3,
-          "avis_entraineur": "NEUTRE"
-        },
-        {
-          "n°": "8",
-          "cheval": "NARIO MESLINOIS H.TR. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: FADO DU CHENE et DIVA MESLINOISE",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261119/VIN/1/20261119-VIN-1-8.png",
-          "propriétaire": "B. CARPENTIER",
-          "entraineur": "B. CARPENTIER",
-          "éleveurs": "M. Louis CHESNEAU",
-          "jockey": "M. DURVILLE",
-          "poids": "60 kg",
-          "gains": "940000",
-          "musique": "3m2m",
-          "valeur": "60.0",
-          "equipement(s)": "",
-          "nb_courses": 2,
-          "nb_victoires": 0,
-          "nb_places": 2,
-          "cote": 4.8,
+          "cote": 35.0,
           "cote_tendance": "",
-          "avis_entraineur": "NEUTRE"
-        },
-        {
-          "n°": "9",
-          "cheval": "NOBLE D'AVRIL H.TR. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: GOUT BAROQUE et IRENE D'AVRIL",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261119/VIN/1/20261119-VIN-1-9.png",
-          "propriétaire": "Ecurie Thierry RAFFEGEAU",
-          "entraineur": "TH. RAFFEGEAU",
-          "éleveurs": "E.A.R.L VILLIERS",
-          "jockey": "Mme T. MATHIAS-MAISONNETTE",
-          "poids": "59 kg",
-          "gains": "1025000",
-          "musique": "Dm6mDm1m8mDm",
-          "valeur": "59.0",
-          "equipement(s)": "",
-          "nb_courses": 6,
-          "nb_victoires": 1,
-          "nb_places": 1,
-          "avis_entraineur": "NEUTRE"
-        },
-        {
-          "n°": "10",
-          "cheval": "NIRJHARA H.TR. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: BOLD EAGLE et BHAGYA",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261119/VIN/1/20261119-VIN-1-10.png",
-          "propriétaire": "J. SECHE",
-          "entraineur": "W. BIGEON",
-          "éleveurs": "S.C.E.A. MATHIEU",
-          "jockey": "A. COLLETTE",
-          "poids": "60 kg",
-          "gains": "1247500",
-          "musique": "2m7mDa(25)DaDaDa2a",
-          "valeur": "60.0",
-          "equipement(s)": "",
-          "nb_courses": 7,
-          "nb_victoires": 0,
-          "nb_places": 3,
-          "cote": 9.7,
-          "cote_tendance": "",
+          "cote_reference": 37.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -251,14 +277,18 @@
           "nb_courses": 10,
           "nb_victoires": 0,
           "nb_places": 7,
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 13.0,
           "avis_entraineur": "NEUTRE"
         }
       ],
-      "cordeCourse": "CORDE_GAUCHE"
+      "cordeCourse": "CORDE_GAUCHE",
+      "arrivee_definitive": true
     },
     {
       "nom": "PRIX DE BRIANCON",
-      "horaire": "16h33",
+      "horaire": "16h35",
       "numero": "2",
       "type": "ATTELE",
       "distance": "2700m",
@@ -283,8 +313,9 @@
           "nb_courses": 20,
           "nb_victoires": 2,
           "nb_places": 7,
-          "cote": 10.0,
+          "cote": 38.0,
           "cote_tendance": "",
+          "cote_reference": 59.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -306,6 +337,9 @@
           "nb_courses": 32,
           "nb_victoires": 2,
           "nb_places": 8,
+          "cote": 61.0,
+          "cote_tendance": "",
+          "cote_reference": 55.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -327,6 +361,9 @@
           "nb_courses": 18,
           "nb_victoires": 3,
           "nb_places": 6,
+          "cote": 6.7,
+          "cote_tendance": "",
+          "cote_reference": 5.8,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -348,8 +385,9 @@
           "nb_courses": 8,
           "nb_victoires": 2,
           "nb_places": 2,
-          "cote": 3.5,
+          "cote": 8.2,
           "cote_tendance": "",
+          "cote_reference": 8.9,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -371,8 +409,9 @@
           "nb_courses": 9,
           "nb_victoires": 1,
           "nb_places": 6,
-          "cote": 10.0,
+          "cote": 4.5,
           "cote_tendance": "",
+          "cote_reference": 3.8,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -394,8 +433,9 @@
           "nb_courses": 19,
           "nb_victoires": 1,
           "nb_places": 12,
-          "cote": 10.0,
+          "cote": 44.0,
           "cote_tendance": "",
+          "cote_reference": 40.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -417,8 +457,9 @@
           "nb_courses": 10,
           "nb_victoires": 3,
           "nb_places": 4,
-          "cote": 10.0,
+          "cote": 19.0,
           "cote_tendance": "",
+          "cote_reference": 22.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -440,8 +481,9 @@
           "nb_courses": 17,
           "nb_victoires": 1,
           "nb_places": 15,
-          "cote": 10.0,
+          "cote": 14.0,
           "cote_tendance": "",
+          "cote_reference": 12.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -463,6 +505,9 @@
           "nb_courses": 27,
           "nb_victoires": 0,
           "nb_places": 14,
+          "cote": 21.0,
+          "cote_tendance": "",
+          "cote_reference": 15.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -484,6 +529,9 @@
           "nb_courses": 15,
           "nb_victoires": 3,
           "nb_places": 6,
+          "cote": 24.0,
+          "cote_tendance": "",
+          "cote_reference": 27.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -505,6 +553,9 @@
           "nb_courses": 19,
           "nb_victoires": 2,
           "nb_places": 11,
+          "cote": 102.0,
+          "cote_tendance": "",
+          "cote_reference": 109.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -526,6 +577,9 @@
           "nb_courses": 14,
           "nb_victoires": 1,
           "nb_places": 8,
+          "cote": 27.0,
+          "cote_tendance": "",
+          "cote_reference": 35.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -547,6 +601,9 @@
           "nb_courses": 21,
           "nb_victoires": 1,
           "nb_places": 16,
+          "cote": 21.0,
+          "cote_tendance": "",
+          "cote_reference": 20.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -568,6 +625,9 @@
           "nb_courses": 17,
           "nb_victoires": 2,
           "nb_places": 8,
+          "cote": 29.0,
+          "cote_tendance": "",
+          "cote_reference": 61.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -589,8 +649,9 @@
           "nb_courses": 13,
           "nb_victoires": 3,
           "nb_places": 9,
-          "cote": 10.0,
+          "cote": 22.0,
           "cote_tendance": "",
+          "cote_reference": 20.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -612,8 +673,9 @@
           "nb_courses": 24,
           "nb_victoires": 2,
           "nb_places": 9,
-          "cote": 5.2,
+          "cote": 26.0,
           "cote_tendance": "",
+          "cote_reference": 28.0,
           "avis_entraineur": "POSITIF"
         },
         {
@@ -635,8 +697,9 @@
           "nb_courses": 17,
           "nb_victoires": 1,
           "nb_places": 9,
-          "cote": 10.0,
+          "cote": 6.2,
           "cote_tendance": "",
+          "cote_reference": 8.3,
           "avis_entraineur": "NEUTRE"
         }
       ],
@@ -669,6 +732,9 @@
           "nb_courses": 43,
           "nb_victoires": 2,
           "nb_places": 21,
+          "cote": 30.0,
+          "cote_tendance": "",
+          "cote_reference": 228.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -690,8 +756,9 @@
           "nb_courses": 32,
           "nb_victoires": 6,
           "nb_places": 15,
-          "cote": 3.9,
+          "cote": 12.0,
           "cote_tendance": "",
+          "cote_reference": 9.9,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -713,8 +780,9 @@
           "nb_courses": 55,
           "nb_victoires": 3,
           "nb_places": 25,
-          "cote": 7.9,
+          "cote": 43.0,
           "cote_tendance": "",
+          "cote_reference": 45.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -736,6 +804,9 @@
           "nb_courses": 41,
           "nb_victoires": 5,
           "nb_places": 27,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 19.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -757,8 +828,9 @@
           "nb_courses": 43,
           "nb_victoires": 2,
           "nb_places": 24,
-          "cote": 3.9,
+          "cote": 6.4,
           "cote_tendance": "",
+          "cote_reference": 4.4,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -780,8 +852,9 @@
           "nb_courses": 37,
           "nb_victoires": 4,
           "nb_places": 19,
-          "cote": 1.9,
+          "cote": 4.9,
           "cote_tendance": "",
+          "cote_reference": 4.1,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -803,6 +876,9 @@
           "nb_courses": 33,
           "nb_victoires": 8,
           "nb_places": 12,
+          "cote": 4.0,
+          "cote_tendance": "",
+          "cote_reference": 6.5,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -824,6 +900,9 @@
           "nb_courses": 50,
           "nb_victoires": 4,
           "nb_places": 27,
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 8.4,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -845,6 +924,9 @@
           "nb_courses": 48,
           "nb_victoires": 5,
           "nb_places": 11,
+          "cote": 6.5,
+          "cote_tendance": "",
+          "cote_reference": 8.1,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -866,6 +948,9 @@
           "nb_courses": 59,
           "nb_victoires": 6,
           "nb_places": 25,
+          "cote": 9.4,
+          "cote_tendance": "",
+          "cote_reference": 10.0,
           "avis_entraineur": "NEUTRE"
         }
       ],
@@ -898,8 +983,9 @@
           "nb_courses": 18,
           "nb_victoires": 1,
           "nb_places": 5,
-          "cote": 19.0,
+          "cote": 54.0,
           "cote_tendance": "",
+          "cote_reference": 69.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -921,8 +1007,9 @@
           "nb_courses": 17,
           "nb_victoires": 1,
           "nb_places": 8,
-          "cote": 9.7,
+          "cote": 8.8,
           "cote_tendance": "",
+          "cote_reference": 6.4,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -944,6 +1031,9 @@
           "nb_courses": 15,
           "nb_victoires": 2,
           "nb_places": 12,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 9.6,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -965,8 +1055,9 @@
           "nb_courses": 10,
           "nb_victoires": 2,
           "nb_places": 5,
-          "cote": 2.7,
+          "cote": 9.8,
           "cote_tendance": "",
+          "cote_reference": 7.6,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -988,8 +1079,9 @@
           "nb_courses": 11,
           "nb_victoires": 2,
           "nb_places": 3,
-          "cote": 6.4,
+          "cote": 5.3,
           "cote_tendance": "",
+          "cote_reference": 7.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1011,8 +1103,9 @@
           "nb_courses": 20,
           "nb_victoires": 2,
           "nb_places": 9,
-          "cote": 19.0,
+          "cote": 49.0,
           "cote_tendance": "",
+          "cote_reference": 34.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1034,8 +1127,9 @@
           "nb_courses": 17,
           "nb_victoires": 3,
           "nb_places": 5,
-          "cote": 19.0,
+          "cote": 30.0,
           "cote_tendance": "",
+          "cote_reference": 33.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1057,6 +1151,9 @@
           "nb_courses": 13,
           "nb_victoires": 1,
           "nb_places": 8,
+          "cote": 26.0,
+          "cote_tendance": "",
+          "cote_reference": 21.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1078,8 +1175,9 @@
           "nb_courses": 13,
           "nb_victoires": 3,
           "nb_places": 5,
-          "cote": 4.8,
+          "cote": 5.9,
           "cote_tendance": "",
+          "cote_reference": 6.7,
           "avis_entraineur": "POSITIF"
         },
         {
@@ -1101,8 +1199,9 @@
           "nb_courses": 12,
           "nb_victoires": 3,
           "nb_places": 2,
-          "cote": 19.0,
+          "cote": 9.4,
           "cote_tendance": "",
+          "cote_reference": 10.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1124,6 +1223,9 @@
           "nb_courses": 20,
           "nb_victoires": 1,
           "nb_places": 13,
+          "cote": 53.0,
+          "cote_tendance": "",
+          "cote_reference": 47.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1145,8 +1247,9 @@
           "nb_courses": 18,
           "nb_victoires": 2,
           "nb_places": 9,
-          "cote": 19.0,
+          "cote": 26.0,
           "cote_tendance": "",
+          "cote_reference": 24.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1168,6 +1271,9 @@
           "nb_courses": 9,
           "nb_victoires": 3,
           "nb_places": 2,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 51.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1189,6 +1295,9 @@
           "nb_courses": 27,
           "nb_victoires": 0,
           "nb_places": 17,
+          "cote": 37.0,
+          "cote_tendance": "",
+          "cote_reference": 40.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1210,6 +1319,9 @@
           "nb_courses": 18,
           "nb_victoires": 0,
           "nb_places": 15,
+          "cote": 78.0,
+          "cote_tendance": "",
+          "cote_reference": 63.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1231,8 +1343,9 @@
           "nb_courses": 18,
           "nb_victoires": 2,
           "nb_places": 9,
-          "cote": 19.0,
+          "cote": 11.0,
           "cote_tendance": "",
+          "cote_reference": 8.1,
           "avis_entraineur": "NEUTRE"
         }
       ],
@@ -1265,8 +1378,9 @@
           "nb_courses": 62,
           "nb_victoires": 5,
           "nb_places": 38,
-          "cote": 4.5,
+          "cote": 10.0,
           "cote_tendance": "",
+          "cote_reference": 14.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1288,8 +1402,9 @@
           "nb_courses": 101,
           "nb_victoires": 8,
           "nb_places": 42,
-          "cote": 11.0,
+          "cote": 27.0,
           "cote_tendance": "",
+          "cote_reference": 18.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1311,8 +1426,9 @@
           "nb_courses": 35,
           "nb_victoires": 6,
           "nb_places": 10,
-          "cote": 4.5,
+          "cote": 10.0,
           "cote_tendance": "",
+          "cote_reference": 8.6,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1334,8 +1450,9 @@
           "nb_courses": 46,
           "nb_victoires": 4,
           "nb_places": 14,
-          "cote": 22.0,
+          "cote": 50.0,
           "cote_tendance": "",
+          "cote_reference": 50.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1357,6 +1474,9 @@
           "nb_courses": 78,
           "nb_victoires": 14,
           "nb_places": 33,
+          "cote": 23.0,
+          "cote_tendance": "",
+          "cote_reference": 23.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1378,6 +1498,9 @@
           "nb_courses": 68,
           "nb_victoires": 9,
           "nb_places": 36,
+          "cote": 69.0,
+          "cote_tendance": "",
+          "cote_reference": 46.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1399,8 +1522,9 @@
           "nb_courses": 54,
           "nb_victoires": 10,
           "nb_places": 30,
-          "cote": 22.0,
+          "cote": 56.0,
           "cote_tendance": "",
+          "cote_reference": 48.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1422,6 +1546,9 @@
           "nb_courses": 47,
           "nb_victoires": 8,
           "nb_places": 20,
+          "cote": 9.2,
+          "cote_tendance": "",
+          "cote_reference": 12.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1443,8 +1570,9 @@
           "nb_courses": 107,
           "nb_victoires": 3,
           "nb_places": 66,
-          "cote": 7.6,
+          "cote": 19.0,
           "cote_tendance": "",
+          "cote_reference": 18.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1466,8 +1594,9 @@
           "nb_courses": 56,
           "nb_victoires": 17,
           "nb_places": 22,
-          "cote": 2.5,
+          "cote": 1.5,
           "cote_tendance": "",
+          "cote_reference": 1.5,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1489,6 +1618,9 @@
           "nb_courses": 69,
           "nb_victoires": 5,
           "nb_places": 34,
+          "cote": 32.0,
+          "cote_tendance": "",
+          "cote_reference": 35.0,
           "avis_entraineur": "NEUTRE"
         }
       ],
@@ -1521,8 +1653,9 @@
           "nb_courses": 3,
           "nb_victoires": 1,
           "nb_places": 1,
-          "cote": 5.5,
+          "cote": 17.0,
           "cote_tendance": "",
+          "cote_reference": 18.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1544,6 +1677,9 @@
           "nb_courses": 3,
           "nb_victoires": 1,
           "nb_places": 2,
+          "cote": 35.0,
+          "cote_tendance": "",
+          "cote_reference": 37.0,
           "avis_entraineur": "POSITIF"
         },
         {
@@ -1565,8 +1701,9 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 8.3,
+          "cote": 28.0,
           "cote_tendance": "",
+          "cote_reference": 20.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1588,6 +1725,9 @@
           "nb_courses": 7,
           "nb_victoires": 0,
           "nb_places": 4,
+          "cote": 23.0,
+          "cote_tendance": "",
+          "cote_reference": 33.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1609,6 +1749,9 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 3,
+          "cote": 39.0,
+          "cote_tendance": "",
+          "cote_reference": 63.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1630,8 +1773,9 @@
           "nb_courses": 3,
           "nb_victoires": 1,
           "nb_places": 2,
-          "cote": 1.2,
+          "cote": 2.3,
           "cote_tendance": "",
+          "cote_reference": 2.7,
           "avis_entraineur": "POSITIF"
         },
         {
@@ -1653,8 +1797,9 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 16.0,
+          "cote": 9.7,
           "cote_tendance": "",
+          "cote_reference": 7.5,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1676,6 +1821,9 @@
           "nb_courses": 7,
           "nb_victoires": 0,
           "nb_places": 4,
+          "cote": 36.0,
+          "cote_tendance": "",
+          "cote_reference": 31.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1697,6 +1845,9 @@
           "nb_courses": 3,
           "nb_victoires": 1,
           "nb_places": 2,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 10.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1718,6 +1869,9 @@
           "nb_courses": 5,
           "nb_victoires": 0,
           "nb_places": 2,
+          "cote": 65.0,
+          "cote_tendance": "",
+          "cote_reference": 47.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1739,6 +1893,9 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 2,
+          "cote": 21.0,
+          "cote_tendance": "",
+          "cote_reference": 15.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1760,6 +1917,9 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
+          "cote": 8.6,
+          "cote_tendance": "",
+          "cote_reference": 8.7,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1781,6 +1941,9 @@
           "nb_courses": 1,
           "nb_victoires": 0,
           "nb_places": 1,
+          "cote": 59.0,
+          "cote_tendance": "",
+          "cote_reference": 113.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1802,6 +1965,9 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 1,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 11.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1823,6 +1989,9 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 1,
+          "cote": 59.0,
+          "cote_tendance": "",
+          "cote_reference": 37.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1844,9 +2013,13 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 2,
+          "cote": 56.0,
+          "cote_tendance": "",
+          "cote_reference": 56.0,
           "avis_entraineur": "POSITIF"
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX TITAN",
@@ -1875,6 +2048,9 @@
           "nb_courses": 51,
           "nb_victoires": 2,
           "nb_places": 32,
+          "cote": 8.1,
+          "cote_tendance": "",
+          "cote_reference": 5.8,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1896,8 +2072,9 @@
           "nb_courses": 26,
           "nb_victoires": 8,
           "nb_places": 8,
-          "cote": 18.0,
+          "cote": 2.9,
           "cote_tendance": "",
+          "cote_reference": 3.3,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1919,8 +2096,9 @@
           "nb_courses": 60,
           "nb_victoires": 3,
           "nb_places": 27,
-          "cote": 18.0,
+          "cote": 9.8,
           "cote_tendance": "",
+          "cote_reference": 9.3,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -1942,32 +2120,10 @@
           "nb_courses": 42,
           "nb_victoires": 3,
           "nb_places": 26,
-          "cote": 18.0,
+          "cote": 6.8,
           "cote_tendance": "",
+          "cote_reference": 6.1,
           "avis_entraineur": "POSITIF"
-        },
-        {
-          "n°": "6",
-          "cheval": "KADO DES MOLLES H.TR. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: DOBERMAN et CARLA DES MOLLES",
-          "corde": "(Corde:06)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261119/VIN/7/20261119-VIN-7-6.png",
-          "propriétaire": "Mlle J.M. ABRIVARD",
-          "entraineur": "Pierrick LE MOEL",
-          "éleveurs": "SAS JLB MANAGEMENT",
-          "jockey": "A. BARRIER",
-          "poids": "",
-          "gains": "8536000",
-          "musique": "Da3a7a2a0a9a0a8a8a0a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 59,
-          "nb_victoires": 2,
-          "nb_places": 32,
-          "cote": 1.8,
-          "cote_tendance": "",
-          "avis_entraineur": "NEUTRE"
         },
         {
           "n°": "7",
@@ -1988,8 +2144,9 @@
           "nb_courses": 40,
           "nb_victoires": 5,
           "nb_places": 23,
-          "cote": 6.1,
+          "cote": 11.0,
           "cote_tendance": "",
+          "cote_reference": 8.7,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2011,6 +2168,9 @@
           "nb_courses": 41,
           "nb_victoires": 5,
           "nb_places": 13,
+          "cote": 42.0,
+          "cote_tendance": "",
+          "cote_reference": 81.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2032,6 +2192,9 @@
           "nb_courses": 49,
           "nb_victoires": 3,
           "nb_places": 27,
+          "cote": 7.1,
+          "cote_tendance": "",
+          "cote_reference": 6.4,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2053,8 +2216,9 @@
           "nb_courses": 41,
           "nb_victoires": 5,
           "nb_places": 17,
-          "cote": 9.2,
+          "cote": 33.0,
           "cote_tendance": "",
+          "cote_reference": 40.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2076,8 +2240,9 @@
           "nb_courses": 46,
           "nb_victoires": 1,
           "nb_places": 31,
-          "cote": 18.0,
+          "cote": 9.2,
           "cote_tendance": "",
+          "cote_reference": 22.0,
           "avis_entraineur": "NEGATIF"
         },
         {
@@ -2099,11 +2264,13 @@
           "nb_courses": 41,
           "nb_victoires": 7,
           "nb_places": 15,
-          "cote": 9.2,
+          "cote": 25.0,
           "cote_tendance": "",
+          "cote_reference": 27.0,
           "avis_entraineur": "NEUTRE"
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX TERCIDINA",
@@ -2132,6 +2299,9 @@
           "nb_courses": 10,
           "nb_victoires": 1,
           "nb_places": 4,
+          "cote": 7.8,
+          "cote_tendance": "",
+          "cote_reference": 7.8,
           "avis_entraineur": "POSITIF"
         },
         {
@@ -2153,6 +2323,9 @@
           "nb_courses": 11,
           "nb_victoires": 1,
           "nb_places": 6,
+          "cote": 48.0,
+          "cote_tendance": "",
+          "cote_reference": 43.0,
           "avis_entraineur": "POSITIF"
         },
         {
@@ -2176,6 +2349,7 @@
           "nb_places": 1,
           "cote": 2.9,
           "cote_tendance": "",
+          "cote_reference": 3.4,
           "avis_entraineur": "POSITIF"
         },
         {
@@ -2197,6 +2371,9 @@
           "nb_courses": 11,
           "nb_victoires": 1,
           "nb_places": 6,
+          "cote": 32.0,
+          "cote_tendance": "",
+          "cote_reference": 39.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2218,6 +2395,9 @@
           "nb_courses": 8,
           "nb_victoires": 1,
           "nb_places": 6,
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 27.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2239,8 +2419,9 @@
           "nb_courses": 10,
           "nb_victoires": 1,
           "nb_places": 7,
-          "cote": 8.8,
+          "cote": 9.5,
           "cote_tendance": "",
+          "cote_reference": 6.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2262,8 +2443,9 @@
           "nb_courses": 7,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 4.4,
+          "cote": 8.7,
           "cote_tendance": "",
+          "cote_reference": 7.3,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2285,6 +2467,9 @@
           "nb_courses": 10,
           "nb_victoires": 0,
           "nb_places": 6,
+          "cote": 22.0,
+          "cote_tendance": "",
+          "cote_reference": 39.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2306,8 +2491,9 @@
           "nb_courses": 11,
           "nb_victoires": 0,
           "nb_places": 9,
-          "cote": 8.8,
+          "cote": 9.1,
           "cote_tendance": "",
+          "cote_reference": 6.9,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2329,6 +2515,9 @@
           "nb_courses": 8,
           "nb_victoires": 1,
           "nb_places": 5,
+          "cote": 136.0,
+          "cote_tendance": "",
+          "cote_reference": 87.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2350,8 +2539,9 @@
           "nb_courses": 9,
           "nb_victoires": 1,
           "nb_places": 6,
-          "cote": 8.8,
+          "cote": 18.0,
           "cote_tendance": "",
+          "cote_reference": 25.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2373,8 +2563,9 @@
           "nb_courses": 12,
           "nb_victoires": 0,
           "nb_places": 7,
-          "cote": 8.8,
+          "cote": 97.0,
           "cote_tendance": "",
+          "cote_reference": 70.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2396,6 +2587,9 @@
           "nb_courses": 11,
           "nb_victoires": 0,
           "nb_places": 6,
+          "cote": 29.0,
+          "cote_tendance": "",
+          "cote_reference": 21.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2417,6 +2611,9 @@
           "nb_courses": 7,
           "nb_victoires": 0,
           "nb_places": 6,
+          "cote": 32.0,
+          "cote_tendance": "",
+          "cote_reference": 35.0,
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2438,6 +2635,8 @@
           "nb_courses": 4,
           "nb_victoires": 1,
           "nb_places": 1,
+          "cote": 61.0,
+          "cote_tendance": "",
           "avis_entraineur": "NEUTRE"
         },
         {
@@ -2459,11 +2658,13 @@
           "nb_courses": 9,
           "nb_victoires": 1,
           "nb_places": 7,
-          "cote": 8.8,
+          "cote": 35.0,
           "cote_tendance": "",
+          "cote_reference": 43.0,
           "avis_entraineur": "NEUTRE"
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     }
   ]
 }
