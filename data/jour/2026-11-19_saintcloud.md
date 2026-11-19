@@ -204,23 +204,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 10. PRIX DE BAD GODESBERG
 
-*16h15 · plat · 2000 m · 16 partants · cotes à T−2:39*
+*16h15 · plat · 2000 m · 16 partants · cotes à T−0:39*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | PIQUOISEAU | 5 | 13 | 5,57 | -10,2 % | S.PASQUIER | 20/48/1639/62 |
-| 1 | VICTORY PACE | 5,3 | 13 | 5,44 | -2,6 % | A.MADAMET | 12/15/279/106 |
-| 4 | METS LE FEU | 9,1 | 13 | 11,25 | -19,1 % | E.HARDOUIN | 30/26/52/67 |
-| 16 | SIM CARD | 11 | – | 15,07 | -27,0 % | M.GUYON 4e | 4/23/434/607 |
-| 14 | PESTACLE | 13 | 4,4 | 13,73 | -5,4 % | A.LEMAITRE | 10/49/319/1174 |
-| 9 | PORTUCALE | 15 | 4,4 | 17,74 | -15,5 % | M.VELON | 27/5/541/29 |
-| 11 | LA MAZZI GOGO | 15 | 4,4 | 17,74 | -15,5 % | B.MARIE | 63/49/339/961 |
-| 12 | STAN LE GRAND | 17 | – | 22,85 | -25,6 % | PC.BOUDOT | 7/84/22/17 |
-| 5 | INGEBORG | 21 | 6,6 | 31,36 | -33,0 % | H.BOUTIN | 17/47/265/432 |
-| 3 | STARNBERG | 22 | 13 | 31,63 | -30,4 % | T.PICCONE | 9/5/22/17 |
-| 13 | NEUF DE PAQUES | 22 | – | 31,63 | -30,4 % | L.ROUSSEL | 18/31/737/1434 |
-| 10 | AQUILA VOLANTE | 23 | – | 26,51 | -13,2 % | A.HAMELIN | 23/81/53/188 |
-| 6 | TOP TOWN TELL TALE | 28 | – | 44,80 | -37,5 % | T.BACHELOT | 16/23/207/459 |
-| 7 | ARTISTIC MAN | 28 | – | 41,69 | -32,8 % | H.LEBOUC | 22/282/59/2431 |
-| 8 | SARASTRO | 39 | – | 60,46 | -35,5 % | C.LECOEUVRE | 13/23/192/923 |
-| 15 | SILVER REEL | 46 | – | 64,22 | -28,4 % | D.PROVOST | 33/82/114/176 |
+| 1 | VICTORY PACE | 4,9 | 13 | 5,29 | -7,4 % | A.MADAMET | 12/15/279/106 |
+| 2 | PIQUOISEAU | 5,7 | 13 | 6,00 | -5,0 % | S.PASQUIER | 20/48/1639/62 |
+| 4 | METS LE FEU | 10 | 13 | 12,49 | -20,0 % | E.HARDOUIN | 30/26/52/67 |
+| 12 | STAN LE GRAND | 11 | – | 13,63 | -19,3 % | PC.BOUDOT | 7/84/22/17 |
+| 16 | SIM CARD | 12 | – | 16,59 | -27,7 % | M.GUYON 4e | 4/23/434/607 |
+| 14 | PESTACLE | 15 | 4,4 | 16,11 | -6,9 % | A.LEMAITRE | 10/49/319/1174 |
+| 11 | LA MAZZI GOGO | 16 | 4,4 | 19,01 | -15,8 % | B.MARIE | 63/49/339/961 |
+| 13 | NEUF DE PAQUES | 17 | – | 23,30 | -27,1 % | L.ROUSSEL | 18/31/737/1434 |
+| 9 | PORTUCALE | 18 | 4,4 | 21,79 | -17,4 % | M.VELON | 27/5/541/29 |
+| 10 | AQUILA VOLANTE | 20 | – | 22,45 | -10,9 % | A.HAMELIN | 23/81/53/188 |
+| 5 | INGEBORG | 23 | 6,6 | 34,62 | -33,6 % | H.BOUTIN | 17/47/265/432 |
+| 3 | STARNBERG | 25 | 13 | 36,41 | -31,3 % | T.PICCONE | 9/5/22/17 |
+| 8 | SARASTRO | 26 | – | 38,08 | -31,7 % | C.LECOEUVRE | 13/23/192/923 |
+| 7 | ARTISTIC MAN | 31 | – | 46,49 | -33,3 % | H.LEBOUC | 22/282/59/2431 |
+| 6 | TOP TOWN TELL TALE | 32 | – | 51,80 | -38,2 % | T.BACHELOT | 16/23/207/459 |
+| 15 | SILVER REEL | 49 | – | 68,39 | -28,3 % | D.PROVOST | 33/82/114/176 |
