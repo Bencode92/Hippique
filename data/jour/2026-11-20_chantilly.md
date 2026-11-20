@@ -1,6 +1,6 @@
 # CHANTILLY — 20/11/2026
 
-8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -116,25 +116,25 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE L'ARBRE A FOUGERES
 
-*16h03 · plat · 1400 m · 15 partants · cotes de l'extraction*
+*16h03 · plat · 1400 m · 15 partants · cotes à T−11:39*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 1 | TINMANDER | 4,9 | 6,33 | -22,6 % | T.TRULLIER | 24/71/8/486 |
-| 11 | STAR FIXX | 4,9 | 6,33 | -22,6 % | M.LERNER | 187/12/138/294 |
-| 14 | MISTY CITY | 4,9 | 5,84 | -16,1 % | L.GALLO | 47/21/89/229 |
-| 13 | MY GIRL MOLLY | 7,4 | 8,76 | -15,5 % | PC.BOUDOT 2e | 7/1/732/75 |
-| 15 | ROMAN BOY | 7,4 | 8,05 | -8,0 % | A.MADAMET | 12/282/21/242 |
-| 6 | HOLLIE WOOD | 14 | 18,50 | -24,3 % | L.PLOMMEE | 36/52/553/512 |
-| 7 | HELLO MASTER | 14 | 18,50 | -24,3 % | J.MOUTARD | 42/137/21/21 |
-| 8 | GRECIAN CONQUEST | 14 | 18,50 | -24,3 % | T.BACHELOT | 16/17/148/3569 |
-| 10 | SENA IULIA | 14 | 18,50 | -24,3 % | F.VALLE SKAR | 32/85/366/1896 |
-| 2 | DOLLAR DES BOIS | – | – |  | M.VELON | 27/63/1072/1942 |
-| 3 | LOFTY TALES | – | – |  | M.GUYON | 4/15/3793/65 |
-| 5 | DAR ES SALAAM | – | – |  | E.PUILLET-RODA | 69/26/–/772 |
-| 9 | SUGAR DADDY | – | – |  | A.LEMAITRE | 10/42/24/223 |
-| 12 | POWERLIST | – | – |  | P.BAZIRE | 57/177/751/1405 |
-| 16 | CHARLESTON DANCER | – | – |  | A.CRASTUS | 15/152/2369/4054 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 13 | MY GIRL MOLLY | 3,9 | 7,4 | 4,38 | -10,9 % | PC.BOUDOT 2e | 7/1/732/75 |
+| 11 | STAR FIXX | 4,8 | 4,9 | 5,31 | -9,7 % | M.LERNER | 187/12/138/294 |
+| 10 | SENA IULIA | 10 | 14 | 12,36 | -19,1 % | F.VALLE SKAR | 32/85/366/1896 |
+| 8 | GRECIAN CONQUEST | 14 | 14 | 18,36 | -23,7 % | T.BACHELOT | 16/17/148/3569 |
+| 1 | TINMANDER | 15 | 4,9 | 19,90 | -24,6 % | T.TRULLIER | 24/71/8/486 |
+| 14 | MISTY CITY | 16 | 4,9 | 19,59 | -18,3 % | L.GALLO | 47/21/89/229 |
+| 3 | LOFTY TALES | 17 | – | 21,02 | -19,1 % | M.GUYON | 4/15/3793/65 |
+| 6 | HOLLIE WOOD | 18 | 14 | 24,62 | -26,9 % | L.PLOMMEE | 36/52/553/512 |
+| 9 | SUGAR DADDY | 21 | – | 31,62 | -33,6 % | A.LEMAITRE | 10/42/24/223 |
+| 12 | POWERLIST | 21 | – | 31,62 | -33,6 % | P.BAZIRE | 57/177/751/1405 |
+| 5 | DAR ES SALAAM | 25 | – | 35,97 | -30,5 % | E.PUILLET-RODA | 69/26/–/772 |
+| 7 | HELLO MASTER | 25 | 14 | 35,97 | -30,5 % | J.MOUTARD | 42/137/21/21 |
+| 15 | ROMAN BOY | 25 | 7,4 | 32,77 | -23,7 % | A.MADAMET | 12/282/21/242 |
+| 16 | CHARLESTON DANCER | 28 | – | 43,99 | -36,3 % | A.CRASTUS | 15/152/2369/4054 |
+| 2 | DOLLAR DES BOIS | 31 | – | 41,81 | -25,9 % | M.VELON | 27/63/1072/1942 |
 
 ### 8. PRIX DE LA ROUTE DE L'ARBRE A FOUGERES
 
