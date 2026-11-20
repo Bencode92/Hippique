@@ -116,25 +116,25 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE L'ARBRE A FOUGERES
 
-*16h03 · plat · 1400 m · 15 partants · cotes à T−4:20*
+*16h03 · plat · 1400 m · 15 partants · cotes à T−1:40*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 13 | MY GIRL MOLLY | 4 | 7,4 | 4,59 | -12,9 % | PC.BOUDOT 2e | 7/1/732/75 |
-| 11 | STAR FIXX | 5,9 | 4,9 | 6,62 | -10,9 % | M.LERNER | 187/12/138/294 |
-| 15 | ROMAN BOY | 7,3 | 7,4 | 7,78 | -6,1 % | A.MADAMET | 12/282/21/242 |
-| 10 | SENA IULIA | 13 | 14 | 16,63 | -21,8 % | F.VALLE SKAR | 32/85/366/1896 |
-| 3 | LOFTY TALES | 15 | – | 17,96 | -16,5 % | M.GUYON | 4/15/3793/65 |
-| 6 | HOLLIE WOOD | 16 | 14 | 21,22 | -24,6 % | L.PLOMMEE | 36/52/553/512 |
-| 14 | MISTY CITY | 16 | 4,9 | 19,37 | -17,4 % | L.GALLO | 47/21/89/229 |
-| 1 | TINMANDER | 17 | 4,9 | 22,77 | -25,4 % | T.TRULLIER | 24/71/8/486 |
-| 8 | GRECIAN CONQUEST | 20 | 14 | 27,51 | -27,3 % | T.BACHELOT | 16/17/148/3569 |
-| 12 | POWERLIST | 23 | – | 34,72 | -33,8 % | P.BAZIRE | 57/177/751/1405 |
-| 9 | SUGAR DADDY | 24 | – | 36,47 | -34,2 % | A.LEMAITRE | 10/42/24/223 |
-| 5 | DAR ES SALAAM | 26 | – | 37,20 | -30,1 % | E.PUILLET-RODA | 69/26/–/772 |
-| 16 | CHARLESTON DANCER | 30 | – | 47,04 | -36,2 % | A.CRASTUS | 15/152/2369/4054 |
-| 2 | DOLLAR DES BOIS | 32 | – | 42,85 | -25,3 % | M.VELON | 27/63/1072/1942 |
-| 7 | HELLO MASTER | 34 | 14 | 50,38 | -32,5 % | J.MOUTARD | 42/137/21/21 |
+| 13 | MY GIRL MOLLY | 4 | 7,4 | 4,62 | -13,4 % | PC.BOUDOT 2e | 7/1/732/75 |
+| 11 | STAR FIXX | 5 | 4,9 | 5,54 | -9,7 % | M.LERNER | 187/12/138/294 |
+| 15 | ROMAN BOY | 6,3 | 7,4 | 6,62 | -4,9 % | A.MADAMET | 12/282/21/242 |
+| 10 | SENA IULIA | 12 | 14 | 15,25 | -21,3 % | F.VALLE SKAR | 32/85/366/1896 |
+| 6 | HOLLIE WOOD | 16 | 14 | 21,37 | -25,1 % | L.PLOMMEE | 36/52/553/512 |
+| 3 | LOFTY TALES | 17 | – | 20,93 | -18,8 % | M.GUYON | 4/15/3793/65 |
+| 14 | MISTY CITY | 17 | 4,9 | 20,93 | -18,8 % | L.GALLO | 47/21/89/229 |
+| 1 | TINMANDER | 19 | 4,9 | 26,11 | -27,2 % | T.TRULLIER | 24/71/8/486 |
+| 8 | GRECIAN CONQUEST | 23 | 14 | 32,56 | -29,4 % | T.BACHELOT | 16/17/148/3569 |
+| 12 | POWERLIST | 27 | – | 42,03 | -35,8 % | P.BAZIRE | 57/177/751/1405 |
+| 5 | DAR ES SALAAM | 28 | – | 40,76 | -31,3 % | E.PUILLET-RODA | 69/26/–/772 |
+| 9 | SUGAR DADDY | 28 | – | 43,81 | -36,1 % | A.LEMAITRE | 10/42/24/223 |
+| 16 | CHARLESTON DANCER | 35 | – | 56,35 | -37,9 % | A.CRASTUS | 15/152/2369/4054 |
+| 2 | DOLLAR DES BOIS | 37 | – | 50,74 | -27,1 % | M.VELON | 27/63/1072/1942 |
+| 7 | HELLO MASTER | 38 | 14 | 57,43 | -33,8 % | J.MOUTARD | 42/137/21/21 |
 
 ### 8. PRIX DE LA ROUTE DE L'ARBRE A FOUGERES
 
