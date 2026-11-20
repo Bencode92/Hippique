@@ -115,10 +115,10 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 6 | AWAB | 3,7 | SILVESTRE DE SOUSA | 181/–/–/57 |
-| 7 | JABAL JAIS | 5,7 | BERNARDO PINHEIRO | –/–/–/– |
-| 1 | GUN CARRIAGE | 6 | ANDREW SLATTERY | 457/481/–/– |
-| 5 | YASUP | 6,1 | CONNOR BEASLEY | –/–/–/– |
-| 2 | TEN CARAT HARRY | 6,8 | DANIEL TUDHOPE | 460/–/–/– |
-| 3 | POWER MODE | 8,6 | TADHG O'SHEA | –/–/–/– |
-| 4 | NYAAR | 9,5 | PATRICK DOBBS | –/–/–/– |
+| 2 | TEN CARAT HARRY | 3,2 | DANIEL TUDHOPE | 460/–/–/– |
+| 1 | GUN CARRIAGE | 4,4 | ANDREW SLATTERY | 457/481/–/– |
+| 4 | NYAAR | 5 | PATRICK DOBBS | –/–/–/– |
+| 5 | YASUP | 7,2 | CONNOR BEASLEY | –/–/–/– |
+| 7 | JABAL JAIS | 10 | BERNARDO PINHEIRO | –/–/–/– |
+| 3 | POWER MODE | 11 | TADHG O'SHEA | –/–/–/– |
+| 6 | AWAB | 13 | SILVESTRE DE SOUSA | 181/–/–/57 |
