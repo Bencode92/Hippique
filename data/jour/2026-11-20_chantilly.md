@@ -118,21 +118,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 13 | MY GIRL MOLLY | 4 | 3,8 | 4,62 | -13,4 % | PC.BOUDOT 2e | 7/1/732/75 |
-| 11 | STAR FIXX | 5 | 4,5 | 5,13 | -2,4 % | M.LERNER | 187/12/138/294 |
-| 15 | ROMAN BOY | 6,3 | 7,5 | 6,11 | **+3,1 %** | A.MADAMET | 12/282/21/242 |
-| 10 | SENA IULIA | 12 | 14 | 14,58 | -17,7 % | F.VALLE SKAR | 32/85/366/1896 |
-| 6 | HOLLIE WOOD | 16 | 18 | 21,37 | -25,1 % | L.PLOMMEE | 36/52/553/512 |
-| 3 | LOFTY TALES | 17 | 14 | 19,12 | -11,1 % | M.GUYON | 4/15/3793/65 |
-| 14 | MISTY CITY | 17 | 19 | 20,93 | -18,8 % | L.GALLO | 47/21/89/229 |
+| 13 | MY GIRL MOLLY | 4 | 4,2 | 4,62 | -13,4 % | PC.BOUDOT 2e | 7/1/732/75 |
+| 11 | STAR FIXX | 5 | 5,4 | 5,13 | -2,4 % | M.LERNER | 187/12/138/294 |
+| 15 | ROMAN BOY | 6,3 | 8 | 6,11 | **+3,1 %** | A.MADAMET | 12/282/21/242 |
+| 10 | SENA IULIA | 12 | 18 | 14,58 | -17,7 % | F.VALLE SKAR | 32/85/366/1896 |
+| 6 | HOLLIE WOOD | 16 | 15 | 21,37 | -25,1 % | L.PLOMMEE | 36/52/553/512 |
+| 14 | MISTY CITY | 17 | 21 | 20,93 | -18,8 % | L.GALLO | 47/21/89/229 |
+| 3 | LOFTY TALES | 17 | 10 | 19,12 | -11,1 % | M.GUYON | 4/15/3793/65 |
 | 1 | TINMANDER | 19 | 17 | 23,83 | -20,3 % | T.TRULLIER | 24/71/8/486 |
-| 8 | GRECIAN CONQUEST | 23 | 27 | 31,07 | -26,0 % | T.BACHELOT | 16/17/148/3569 |
-| 12 | POWERLIST | 27 | 26 | 42,03 | -35,8 % | P.BAZIRE | 57/177/751/1405 |
-| 5 | DAR ES SALAAM | 28 | 24 | 38,89 | -28,0 % | E.PUILLET-RODA | 69/26/–/772 |
-| 9 | SUGAR DADDY | 28 | 32 | 41,79 | -33,0 % | A.LEMAITRE | 10/42/24/223 |
-| 16 | CHARLESTON DANCER | 35 | 41 | 56,35 | -37,9 % | A.CRASTUS | 15/152/2369/4054 |
-| 2 | DOLLAR DES BOIS | 37 | 46 | 48,40 | -23,6 % | M.VELON | 27/63/1072/1942 |
-| 7 | HELLO MASTER | 38 | 40 | 54,78 | -30,6 % | J.MOUTARD | 42/137/21/21 |
+| 8 | GRECIAN CONQUEST | 23 | 23 | 31,07 | -26,0 % | T.BACHELOT | 16/17/148/3569 |
+| 12 | POWERLIST | 27 | 29 | 42,03 | -35,8 % | P.BAZIRE | 57/177/751/1405 |
+| 9 | SUGAR DADDY | 28 | 39 | 41,79 | -33,0 % | A.LEMAITRE | 10/42/24/223 |
+| 5 | DAR ES SALAAM | 28 | 23 | 38,89 | -28,0 % | E.PUILLET-RODA | 69/26/–/772 |
+| 16 | CHARLESTON DANCER | 35 | 46 | 56,35 | -37,9 % | A.CRASTUS | 15/152/2369/4054 |
+| 2 | DOLLAR DES BOIS | 37 | 55 | 48,40 | -23,6 % | M.VELON | 27/63/1072/1942 |
+| 7 | HELLO MASTER | 38 | 12 | 54,78 | -30,6 % | J.MOUTARD | 42/137/21/21 |
 
 ### 8. PRIX DE LA ROUTE DE L'ARBRE A FOUGERES
 
@@ -140,19 +140,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 12 | IMDALA | 5,7 | 6,86 | -16,9 % | L.PLOMMEE | 36/1/–/1 |
-| 2 | PERSIAN GRACE | 5,8 | 6,53 | -11,2 % | T.BACHELOT | 16/23/76/356 |
-| 14 | FILIGRANE | 9,7 | 11,86 | -18,2 % | J.CLAUDIC | 40/107/179/1848 |
-| 7 | ILIANNABELLA | 11 | 14,73 | -25,3 % | M.VELON | 27/5/3203/16 |
-| 6 | OSHIA | 12 | 13,94 | -13,9 % | T. PICCONE | 9/121/30/2887 |
-| 3 | LIBERTY AMOUR | 14 | 16,69 | -16,1 % | A.HAMELIN | 23/59/494/1005 |
-| 8 | VILLA MONCEAU | 14 | 16,67 | -16,0 % | A.MADAMET | 12/9/3446/291 |
-| 1 | ADONIDE | 16 | 22,90 | -30,1 % | S.PASQUIER | 20/40/22/448 |
-| 9 | SKY DREAM | 17 | 24,59 | -30,9 % | C.LECOEUVRE | 13/19/34/2759 |
-| 4 | WADI | 19 | 26,07 | -27,1 % | PC.BOUDOT 2e | 7/3/2717/1156 |
-| 5 | KYOTO SPIRIT | 21 | 24,36 | -13,8 % | M.GUYON | 4/7/2799/1222 |
-| 10 | ARAYA | 25 | 29,72 | -15,9 % | A.LEMAITRE | 10/36/30/22 |
-| 11 | BLANC CARAT | 27 | 39,06 | -30,9 % | J.MOUTARD | 42/445/456/1128 |
-| 15 | MARTINELLI | 28 | 35,38 | -20,9 % | A.CRASTUS | 15/41/343/552 |
-| 16 | EPI | 29 | 36,81 | -21,2 % | R.MANGIONE | 86/358/4231/635 |
-| 13 | FARFLIES | 48 | 70,72 | -32,1 % | E.VERHESTRAETEN | 50/13/3982/3027 |
+| 12 | IMDALA | 4,8 | 5,18 | -7,4 % | L.PLOMMEE | 36/1/–/1 |
+| 2 | PERSIAN GRACE | 5,6 | 6,23 | -10,1 % | T.BACHELOT | 16/23/76/356 |
+| 9 | SKY DREAM | 8 | 9,21 | -13,2 % | C.LECOEUVRE | 13/19/34/2759 |
+| 3 | LIBERTY AMOUR | 9,9 | 11,05 | -10,4 % | A.HAMELIN | 23/59/494/1005 |
+| 7 | ILIANNABELLA | 10 | 13,05 | -23,4 % | M.VELON | 27/5/3203/16 |
+| 4 | WADI | 13 | 15,18 | -14,4 % | PC.BOUDOT 2e | 7/3/2717/1156 |
+| 11 | BLANC CARAT | 15 | 17,94 | -16,4 % | J.MOUTARD | 42/445/456/1128 |
+| 6 | OSHIA | 21 | 27,73 | -24,3 % | T. PICCONE | 9/121/30/2887 |
+| 5 | KYOTO SPIRIT | 23 | 29,40 | -21,8 % | M.GUYON | 4/7/2799/1222 |
+| 15 | MARTINELLI | 25 | 32,34 | -22,7 % | A.CRASTUS | 15/41/343/552 |
+| 1 | ADONIDE | 27 | 39,74 | -32,1 % | S.PASQUIER | 20/40/22/448 |
+| 10 | ARAYA | 28 | 36,79 | -23,9 % | A.LEMAITRE | 10/36/30/22 |
+| 8 | VILLA MONCEAU | 31 | 39,37 | -21,3 % | A.MADAMET | 12/9/3446/291 |
+| 14 | FILIGRANE | 39 | 55,88 | -30,2 % | J.CLAUDIC | 40/107/179/1848 |
+| 16 | EPI | 43 | 56,63 | -24,1 % | R.MANGIONE | 86/358/4231/635 |
+| 13 | FARFLIES | 121 | 184,15 | -34,3 % | E.VERHESTRAETEN | 50/13/3982/3027 |
