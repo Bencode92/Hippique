@@ -8,25 +8,24 @@
 
 ### 1. BANI YAS SPONSORED BY AZIZI DEVELOPMENTS
 
-*14h30 · plat · 1400 m · 15 partants · cotes de l'extraction*
+*14h30 · plat · 1400 m · 14 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 4 | AA RX BURN | 3,5 | PATRICK DOBBS | –/–/–/– |
-| 5 | AMER BURN | 3,5 | TADHG O'SHEA | –/–/–/– |
-| 10 | MUTHABIR | 3,5 | DANIEL TUDHOPE | 460/–/–/– |
-| 15 | SIHRLAU | 3,5 | ABDUL AZIZ AL BALUSHI | –/–/–/– |
-| 1 | MUBEED | – | SILVESTRE DE SOUSA | 181/–/–/– |
-| 2 | DJAFAR | – | JULES MOBIAN | 213/–/–/– |
-| 3 | UPTOWN WALK THE LINE | – | SANDRO PAIVA | –/–/–/– |
-| 6 | AH TAHAN | – | BERNARDO PINHEIRO | –/–/–/– |
-| 7 | RB AFTERBURN | – | AMUR AL RASBI | –/–/–/– |
-| 8 | RB NASH BASH | – | SAIF AL BALUSHI | –/–/–/– |
-| 9 | KAYAAN SB | – | CONNOR BEASLEY | –/–/–/– |
-| 11 | RB MONEY MAKER | – | MARCELINO RODRIGUES | –/–/–/– |
-| 12 | DAWRAH | – | ANDREW SLATTERY | 457/–/–/1088 |
-| 13 | MASOUD AL KHALEDIAH | – | HAMED AL BUSAIDI | 419/–/–/– |
-| 14 | JAMRA SB | – | RICHARD MULLEN | –/–/–/– |
+| 1 | MUBEED | 2,3 | SILVESTRE DE SOUSA | 181/–/–/– |
+| 14 | JAMRA SB | 9 | RICHARD MULLEN | –/–/–/– |
+| 7 | RB AFTERBURN | 12 | AMUR AL RASBI | –/–/–/– |
+| 6 | AH TAHAN | 14 | BERNARDO PINHEIRO | –/–/–/– |
+| 4 | AA RX BURN | 14 | PATRICK DOBBS | –/–/–/– |
+| 9 | KAYAAN SB | 15 | CONNOR BEASLEY | –/–/–/– |
+| 3 | UPTOWN WALK THE LINE | 16 | SANDRO PAIVA | –/–/–/– |
+| 15 | SIHRLAU | 19 | ABDUL AZIZ AL BALUSHI | –/–/–/– |
+| 10 | MUTHABIR | 21 | DANIEL TUDHOPE | 460/–/–/– |
+| 8 | RB NASH BASH | 22 | SAIF AL BALUSHI | –/–/–/– |
+| 12 | DAWRAH | 23 | ANDREW SLATTERY | 457/–/–/1088 |
+| 11 | RB MONEY MAKER | 34 | MARCELINO RODRIGUES | –/–/–/– |
+| 2 | DJAFAR | 37 | JULES MOBIAN | 213/–/–/– |
+| 13 | MASOUD AL KHALEDIAH | 62 | HAMED AL BUSAIDI | 419/–/–/– |
 
 ### 2. AZIZI FLORENCE
 
@@ -34,14 +33,14 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 8 | NEVRA | 1,3 | BERNARDO PINHEIRO | –/–/–/– |
-| 1 | LA MAS BONITA | 2,6 | DANIEL TUDHOPE | 460/–/–/– |
-| 2 | BINT VEKOMA | – | SILVESTRE DE SOUSA | 181/–/–/– |
-| 3 | CORONETA | – | ANDREW SLATTERY | 457/–/–/– |
-| 4 | DOLAH | – | SAMUEL LEGRIX | 216/–/–/– |
-| 5 | HASHARAH | – | SAIF AL BALUSHI | –/–/–/– |
-| 6 | MISS TRICKSTER | – | PATRICK DOBBS | –/–/–/– |
-| 7 | MUKHEEFAH | – | CONNOR BEASLEY | –/–/–/– |
+| 6 | MISS TRICKSTER | 3 | PATRICK DOBBS | –/–/–/– |
+| 7 | MUKHEEFAH | 3,5 | CONNOR BEASLEY | –/–/–/– |
+| 8 | NEVRA | 4,4 | BERNARDO PINHEIRO | –/–/–/– |
+| 1 | LA MAS BONITA | 10 | DANIEL TUDHOPE | 460/–/–/– |
+| 3 | CORONETA | 10 | ANDREW SLATTERY | 457/–/–/– |
+| 2 | BINT VEKOMA | 17 | SILVESTRE DE SOUSA | 181/–/–/– |
+| 5 | HASHARAH | 33 | SAIF AL BALUSHI | –/–/–/– |
+| 4 | DOLAH | 44 | SAMUEL LEGRIX | 216/–/–/– |
 
 ### 3. AZIZI VENICE (BENCHMARK 85 HANDICAP)
 
@@ -49,18 +48,18 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 5 | DONDE FIRMO | 2,6 | DANIEL TUDHOPE | 460/–/–/– |
-| 8 | SPACETOWN | 2,6 | SILVESTRE DE SOUSA | 181/–/–/– |
-| 12 | ONIGHT | 2,6 | JAMIE POWELL | –/–/–/– |
-| 1 | STORMFORGED | – | PATRICK DOBBS | –/192/–/8 |
-| 2 | MESAAFI | – | JACK MITCHELL | 295/–/–/– |
-| 3 | ARIGATOU GOZAIMASU | – | BERNARDO PINHEIRO | –/–/–/– |
-| 4 | SIR HARMONY | – | CONNOR BEASLEY | –/–/–/– |
-| 6 | ALLAJAYN | – | JULES MOBIAN | 213/–/–/– |
-| 7 | SMART SYSTEM | – | SAMUEL LEGRIX | 216/–/–/– |
-| 9 | ALMUTANABBI | – | MUSTAFA MANAV | 499/–/–/– |
-| 10 | SPLIT THE PROFIT | – | HAMED AL BUSAIDI | 419/–/–/– |
-| 11 | KHAMSIN | – | SANDRO PAIVA | –/–/–/– |
+| 1 | STORMFORGED | 3,9 | PATRICK DOBBS | –/192/–/8 |
+| 3 | ARIGATOU GOZAIMASU | 4,5 | BERNARDO PINHEIRO | –/–/–/– |
+| 2 | MESAAFI | 5,5 | JACK MITCHELL | 295/–/–/– |
+| 5 | DONDE FIRMO | 8,2 | DANIEL TUDHOPE | 460/–/–/– |
+| 8 | SPACETOWN | 9,7 | SILVESTRE DE SOUSA | 181/–/–/– |
+| 4 | SIR HARMONY | 10 | CONNOR BEASLEY | –/–/–/– |
+| 6 | ALLAJAYN | 22 | JULES MOBIAN | 213/–/–/– |
+| 7 | SMART SYSTEM | 23 | SAMUEL LEGRIX | 216/–/–/– |
+| 10 | SPLIT THE PROFIT | 29 | HAMED AL BUSAIDI | 419/–/–/– |
+| 9 | ALMUTANABBI | 67 | MUSTAFA MANAV | 499/–/–/– |
+| 12 | ONIGHT | 74 | JAMIE POWELL | –/–/–/– |
+| 11 | KHAMSIN | 93 | SANDRO PAIVA | –/–/–/– |
 
 ### 4. AZIZI RIVIERA
 
@@ -68,19 +67,19 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 10 | MAJD AL LEITH | 2,6 | DANIEL TUDHOPE | 460/–/–/428 |
-| 11 | MISTAKE | 2,6 | TADHG O'SHEA | –/–/–/84 |
-| 12 | MOODY GG | 2,6 | SILVESTRE DE SOUSA | 181/–/–/1222 |
-| 1 | AASER | – | BERNARDO PINHEIRO | –/–/–/– |
-| 2 | AL LEITH SPIRIT | – | PATRICK DOBBS | –/–/–/428 |
-| 3 | ANAHONA | – | OISIN MURPHY | 124/44/–/510 |
-| 4 | BRAVE VEKOMA | – | RICHARD MULLEN | –/–/–/– |
-| 5 | CORNICHE CROWN | – | JULES MOBIAN | 213/–/–/– |
-| 6 | DECLARATION DAY | – | SAIF AL BALUSHI | –/–/–/– |
-| 7 | DESERT ARMY | – | CONNOR BEASLEY | –/–/–/– |
-| 8 | GOLDEN PERFORMANCE | – | JAMIE POWELL | –/–/–/– |
-| 9 | GYROSCOPE | – | ANDREW SLATTERY | 457/–/–/– |
-| 13 | MOSHRIF | – | JACK MITCHELL | 295/44/–/510 |
+| 3 | ANAHONA | 5,2 | OISIN MURPHY | 124/44/–/510 |
+| 10 | MAJD AL LEITH | 5,7 | DANIEL TUDHOPE | 460/–/–/428 |
+| 12 | MOODY GG | 6,4 | SILVESTRE DE SOUSA | 181/–/–/1222 |
+| 13 | MOSHRIF | 8,7 | JACK MITCHELL | 295/44/–/510 |
+| 11 | MISTAKE | 9,7 | TADHG O'SHEA | –/–/–/84 |
+| 1 | AASER | 11 | BERNARDO PINHEIRO | –/–/–/– |
+| 2 | AL LEITH SPIRIT | 16 | PATRICK DOBBS | –/–/–/428 |
+| 7 | DESERT ARMY | 18 | CONNOR BEASLEY | –/–/–/– |
+| 6 | DECLARATION DAY | 21 | SAIF AL BALUSHI | –/–/–/– |
+| 9 | GYROSCOPE | 22 | ANDREW SLATTERY | 457/–/–/– |
+| 8 | GOLDEN PERFORMANCE | 25 | JAMIE POWELL | –/–/–/– |
+| 4 | BRAVE VEKOMA | 29 | RICHARD MULLEN | –/–/–/– |
+| 5 | CORNICHE CROWN | 29 | JULES MOBIAN | 213/–/–/– |
 
 ### 5. THUNDER SNOW HANDICAP SPONSORED BY AZIZI DEVELOPMENTS
 
@@ -88,29 +87,28 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | KILLER COLLECT | 2,6 | RICHARD MULLEN | –/–/–/804 |
-| 6 | ELYABRI | 2,6 | SILVESTRE DE SOUSA | 181/–/–/– |
-| 8 | ELUSIVE TREVOR | 2,6 | TADHG O'SHEA | –/–/–/– |
-| 1 | SUBSANADOR | – | DANIEL TUDHOPE | 460/192/–/8 |
-| 3 | ARLAN | – | PATRICK DOBBS | –/–/–/– |
-| 4 | LOCAL DYNASTY | – | OISIN MURPHY | 124/–/–/– |
-| 5 | MEGALODON | – | CONNOR BEASLEY | –/–/–/– |
+| 6 | ELYABRI | 3,4 | SILVESTRE DE SOUSA | 181/–/–/– |
+| 1 | SUBSANADOR | 3,8 | DANIEL TUDHOPE | 460/192/–/8 |
+| 5 | MEGALODON | 5,4 | CONNOR BEASLEY | –/–/–/– |
+| 3 | ARLAN | 6 | PATRICK DOBBS | –/–/–/– |
+| 8 | ELUSIVE TREVOR | 11 | TADHG O'SHEA | –/–/–/– |
+| 2 | KILLER COLLECT | 12 | RICHARD MULLEN | –/–/–/804 |
+| 4 | LOCAL DYNASTY | 14 | OISIN MURPHY | 124/–/–/– |
 | 7 | SWING VOTE | – | JACK MITCHELL | 295/44/–/– |
 
 ### 6. THE DUBAI CREEK MILE SPONSORED BY AZIZI DEVELOPMENTS
 
-*17h25 · plat · 1600 m · 8 partants · cotes de l'extraction*
+*17h25 · plat · 1600 m · 7 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
 | 2 | MENDELSSOHN BAY | 2,6 | RICHARD MULLEN | –/–/–/– |
-| 5 | DIAMOND DEALER | 2,6 | TADHG O'SHEA | –/–/–/956 |
-| 7 | ZANDVOORT | 2,6 | JULES MOBIAN | 213/–/–/– |
-| 1 | MEYDAAN | – | OISIN MURPHY | 124/44/–/510 |
-| 3 | MASMAK | – | BERNARDO PINHEIRO | –/–/–/– |
-| 4 | HEART OF HONOR | – | PATRICK DOBBS | –/–/–/– |
-| 6 | PRAGUE | – | SILVESTRE DE SOUSA | 181/481/–/– |
-| 8 | STRATEGIC FOCUS | – | CONNOR BEASLEY | –/–/–/– |
+| 7 | ZANDVOORT | 4 | JULES MOBIAN | 213/–/–/– |
+| 5 | DIAMOND DEALER | 5,7 | TADHG O'SHEA | –/–/–/956 |
+| 4 | HEART OF HONOR | 7,1 | PATRICK DOBBS | –/–/–/– |
+| 8 | STRATEGIC FOCUS | 11 | CONNOR BEASLEY | –/–/–/– |
+| 3 | MASMAK | 14 | BERNARDO PINHEIRO | –/–/–/– |
+| 6 | PRAGUE | 28 | SILVESTRE DE SOUSA | 181/481/–/– |
 
 ### 7. BURJ AZIZI
 
@@ -118,10 +116,10 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 3 | POWER MODE | 2,6 | TADHG O'SHEA | –/–/–/– |
-| 4 | NYAAR | 2,6 | PATRICK DOBBS | –/–/–/– |
-| 6 | AWAB | 2,6 | SILVESTRE DE SOUSA | 181/–/–/57 |
-| 1 | GUN CARRIAGE | – | ANDREW SLATTERY | 457/481/–/– |
-| 2 | TEN CARAT HARRY | – | DANIEL TUDHOPE | 460/–/–/– |
-| 5 | YASUP | – | CONNOR BEASLEY | –/–/–/– |
-| 7 | JABAL JAIS | – | BERNARDO PINHEIRO | –/–/–/– |
+| 4 | NYAAR | 4,3 | PATRICK DOBBS | –/–/–/– |
+| 1 | GUN CARRIAGE | 4,9 | ANDREW SLATTERY | 457/481/–/– |
+| 2 | TEN CARAT HARRY | 4,9 | DANIEL TUDHOPE | 460/–/–/– |
+| 3 | POWER MODE | 5,4 | TADHG O'SHEA | –/–/–/– |
+| 5 | YASUP | 5,7 | CONNOR BEASLEY | –/–/–/– |
+| 7 | JABAL JAIS | 10 | BERNARDO PINHEIRO | –/–/–/– |
+| 6 | AWAB | 18 | SILVESTRE DE SOUSA | 181/–/–/57 |
