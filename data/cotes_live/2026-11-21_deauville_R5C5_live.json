@@ -4,53 +4,53 @@
   "reunion": 5,
   "heure_depart": 1795285500000,
   "distance": 1900,
-  "scraped_at": "2026-11-21T19:19:59.365656+01:00",
-  "minutes_avant_depart": 5,
+  "scraped_at": "2026-11-21T19:22:39.599490+01:00",
+  "minutes_avant_depart": 2,
   "participants": [
     {
       "numPmu": 2,
       "nom": "CIRCO MASSIMO",
-      "cote_live": 5.6,
+      "cote_live": 4.6,
       "cote_reference": 4.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795285179000
+      "timestamp_cote": 1795285347000
     },
     {
       "numPmu": 5,
       "nom": "HIGHFIELD HEIRESS",
-      "cote_live": 3.3,
+      "cote_live": 3.6,
       "cote_reference": 7.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1795285179000
+      "timestamp_cote": 1795285347000
     },
     {
       "numPmu": 6,
       "nom": "DIEGO D'ARTOIS",
-      "cote_live": 6.8,
+      "cote_live": 7.2,
       "cote_reference": 2.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795285179000
+      "timestamp_cote": 1795285347000
     },
     {
       "numPmu": 7,
       "nom": "JOAO",
-      "cote_live": 4.0,
+      "cote_live": 4.2,
       "cote_reference": 5.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795285179000
+      "timestamp_cote": 1795285347000
     },
     {
       "numPmu": 8,
       "nom": "BOKEN",
-      "cote_live": 9.2,
+      "cote_live": 8.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795285179000
+      "timestamp_cote": 1795285347000
     },
     {
       "numPmu": 11,
@@ -59,16 +59,16 @@
       "cote_reference": 20.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795285179000
+      "timestamp_cote": 1795285347000
     },
     {
       "numPmu": 13,
       "nom": "MADDOX",
-      "cote_live": 13.0,
+      "cote_live": 14.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795285179000
+      "timestamp_cote": 1795285347000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -175,6 +175,58 @@
         "8": 9.2,
         "11": 13.0,
         "13": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-21T19:20:39.344226+01:00",
+      "minutes_avant_depart": 4.346136216666666,
+      "cotes": {
+        "2": 5.5,
+        "5": 3.4,
+        "6": 6.5,
+        "7": 4.0,
+        "8": 9.2,
+        "11": 13.0,
+        "13": 12.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-21T19:21:19.269584+01:00",
+      "minutes_avant_depart": 3.679467766666667,
+      "cotes": {
+        "2": 4.5,
+        "5": 3.6,
+        "6": 7.1,
+        "7": 4.1,
+        "8": 9.7,
+        "11": 12.0,
+        "13": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-21T19:21:59.359946+01:00",
+      "minutes_avant_depart": 3.012799333333333,
+      "cotes": {
+        "2": 4.5,
+        "5": 3.6,
+        "6": 7.2,
+        "7": 4.1,
+        "8": 8.8,
+        "11": 12.0,
+        "13": 13.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-21T19:22:39.599490+01:00",
+      "minutes_avant_depart": 2.342268466666667,
+      "cotes": {
+        "2": 4.6,
+        "5": 3.6,
+        "6": 7.2,
+        "7": 4.2,
+        "8": 8.0,
+        "11": 13.0,
+        "13": 14.0
       }
     }
   ]
