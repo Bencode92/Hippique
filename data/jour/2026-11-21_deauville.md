@@ -55,19 +55,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX DE LA BRIQUETERIE
 
-*18h53 · plat · 1900 m · 9 partants · cotes à T−5:01*
+*18h53 · plat · 1900 m · 9 partants · cotes à T−2:21*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 4 | ARMSTRONG GLORY | 4,2 | 5,7 | 5,19 | -19,0 % | T.BACHELOT | 16/65/506/721 |
-| 5 | FILLETTE DU HOULEY | 4,4 | 2,7 | 4,65 | -5,4 % | H.JOURNIAC | 41/9/252/667 |
-| 1 | PRIMA LUCE | 5,4 | 3,9 | 5,82 | -7,2 % | M.GRONDIN | 148/15/13/241 |
-| 10 | JOUR DE COEUR | 8,4 | 12 | 9,25 | -9,2 % | B.MARIE | 63/625/874/– |
-| 6 | GRAND MARRAKCHI | 9,9 | 16 | 11,20 | -11,6 % | A.VILCHIEN | 98/395/45/3623 |
-| 7 | CAPITOL HILL | 10 | 11 | 11,33 | -11,7 % | H.BOUTIN | 17/21/107/454 |
-| 8 | ALTIA | 10 | 19 | 12,12 | -17,5 % | F.LEFEBVRE | 46/28/577/675 |
-| 9 | TCHIKITA | 17 | 21 | 22,57 | -24,7 % | L.GALLO | 47/21/40/21 |
-| 2 | NO LIMIT PRECIEUSE | 32 | 34 | 43,37 | -26,2 % | P.REMOUE | 35/212/263/227 |
+| 1 | PRIMA LUCE | 3,1 | 3,9 | 3,58 | -13,4 % | M.GRONDIN | 148/15/13/241 |
+| 4 | ARMSTRONG GLORY | 4,3 | 5,7 | 4,65 | -7,5 % | T.BACHELOT | 16/65/506/721 |
+| 5 | FILLETTE DU HOULEY | 5,6 | 2,7 | 6,09 | -8,0 % | H.JOURNIAC | 41/9/252/667 |
+| 10 | JOUR DE COEUR | 8,9 | 12 | 9,94 | -10,4 % | B.MARIE | 63/625/874/– |
+| 6 | GRAND MARRAKCHI | 11 | 16 | 12,72 | -13,5 % | A.VILCHIEN | 98/395/45/3623 |
+| 7 | CAPITOL HILL | 11 | 11 | 12,72 | -13,5 % | H.BOUTIN | 17/21/107/454 |
+| 8 | ALTIA | 14 | 19 | 18,07 | -22,5 % | F.LEFEBVRE | 46/28/577/675 |
+| 9 | TCHIKITA | 23 | 21 | 32,17 | -28,5 % | L.GALLO | 47/21/40/21 |
+| 2 | NO LIMIT PRECIEUSE | 45 | 34 | 63,54 | -29,2 % | P.REMOUE | 35/212/263/227 |
 
 ### 5. PRIX DE CLOTURE
 
