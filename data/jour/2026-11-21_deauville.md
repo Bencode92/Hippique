@@ -1,6 +1,6 @@
 # DEAUVILLE — 21/11/2026
 
-8 courses. 6 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 7 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -85,33 +85,33 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DES ROUGES BARRES
 
-*19h57 · plat · 1900 m · 8 partants · cotes à T−2:40*
+*19h57 · plat · 1900 m · 8 partants · cotes à T−0:01*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | PETITE ABEILLE | 1,9 | 3,9 | 1,97 | -3,6 % | M.VELON | 27/28/1874/505 |
-| 1 | PLAY THE GAME | 4,8 | 12 | 4,93 | -2,7 % | A. MADAMET | 12/82/184/21 |
-| 4 | TOMOE GOZEN | 8,8 | 3,1 | 10,46 | -15,9 % | H.BOUTIN | 17/33/21/2790 |
-| 3 | AREV | 9,7 | 10 | 12,24 | -20,7 % | L.GROSSO | 134/124/413/2741 |
-| 7 | TANA MA | 10 | 6,4 | 12,68 | -21,2 % | G.MEURY | 73/25/22/195 |
-| 6 | DARYOZA | 20 | 18 | 27,89 | -28,3 % | S.TISON | 108/137/398/598 |
-| 5 | ALINKA | 30 | 12 | 42,33 | -29,1 % | L.GALLO | 47/21/42/2388 |
-| 8 | VOGUE A L'AME | 36 | 10 | 51,92 | -30,7 % | C.CARBONI | 111/152/199/1823 |
+| 2 | PETITE ABEILLE | 2,4 | 3,9 | 2,34 | **+2,6 %** | M.VELON | 27/28/1874/505 |
+| 4 | TOMOE GOZEN | 4,9 | 3,1 | 5,28 | -7,1 % | H.BOUTIN | 17/33/21/2790 |
+| 1 | PLAY THE GAME | 6,1 | 12 | 6,33 | -3,7 % | A. MADAMET | 12/82/184/21 |
+| 3 | AREV | 7,5 | 10 | 8,91 | -15,8 % | L.GROSSO | 134/124/413/2741 |
+| 7 | TANA MA | 9,5 | 6,4 | 11,76 | -19,2 % | G.MEURY | 73/25/22/195 |
+| 5 | ALINKA | 20 | 12 | 27,47 | -27,2 % | L.GALLO | 47/21/42/2388 |
+| 6 | DARYOZA | 20 | 18 | 27,47 | -27,2 % | S.TISON | 108/137/398/598 |
+| 8 | VOGUE A L'AME | 42 | 10 | 60,69 | -30,8 % | C.CARBONI | 111/152/199/1823 |
 
 ### 7. PRIX DE LA RUE EGALITE
 
-*20h29 · plat · 2500 m · 8 partants · cotes de l'extraction*
+*20h29 · plat · 2500 m · 8 partants · cotes à T−29:40*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 5 | KEEP AWAY | 1,6 | 1,85 | -13,7 % | B.MARIE | 63/589/1727/2266 |
-| 7 | FEELINGNUIT | 5,3 | 6,18 | -14,3 % | J.MOUTARD | 42/107/1077/115 |
-| 3 | LA DO RE | 12 | 13,45 | -10,8 % | L.BOISSEAU | 37/147/258/2963 |
-| 8 | GOT FLOWER | 13 | 16,83 | -22,7 % | M.PROTTI | 29/28/69/405 |
-| 11 | COMBERMERE | 14 | 19,21 | -27,1 % | A.CRASTUS | 15/400/1068/242 |
-| 9 | EASTERN STAR | 16 | 20,15 | -20,6 % | J.CLAUDIC | 40/23/22/3522 |
-| 6 | QUARTZDARGENT | 19 | 28,13 | -32,5 % | C.PACAUT | 44/470/244/1307 |
-| 4 | DSCHINGIS POWER | 52 | 81,13 | -35,9 % | P.CHEYER | 101/585/76/2210 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 5 | KEEP AWAY | 3,1 | 1,6 | 3,69 | -15,9 % | B.MARIE | 63/589/1727/2266 |
+| 7 | FEELINGNUIT | 3,5 | 5,3 | 3,59 | -2,4 % | J.MOUTARD | 42/107/1077/115 |
+| 8 | GOT FLOWER | 4,8 | 13 | 5,40 | -11,0 % | M.PROTTI | 29/28/69/405 |
+| 9 | EASTERN STAR | 12 | 16 | 14,67 | -18,2 % | J.CLAUDIC | 40/23/22/3522 |
+| 3 | LA DO RE | 13 | 12 | 14,37 | -9,6 % | L.BOISSEAU | 37/147/258/2963 |
+| 6 | QUARTZDARGENT | 14 | 19 | 19,16 | -26,9 % | C.PACAUT | 44/470/244/1307 |
+| 11 | COMBERMERE | 14 | 14 | 18,70 | -25,1 % | A.CRASTUS | 15/400/1068/242 |
+| 4 | DSCHINGIS POWER | 30 | 52 | 43,07 | -30,3 % | P.CHEYER | 101/585/76/2210 |
 
 ### 8. PRIX DU QUESNE
 
