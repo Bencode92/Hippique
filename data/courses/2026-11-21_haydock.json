@@ -1,7 +1,7 @@
 {
   "hippodrome": "HAYDOCK",
   "type_reunion": "STEEPLECHASE",
-  "date_extraction": "2026-11-21T16:45:05.348764",
+  "date_extraction": "2026-11-21T18:04:24.858948",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/21112026/R7",
   "courses": [
     {
@@ -1146,7 +1146,8 @@
           "nb_places": 11,
           "cote": 3.7,
           "cote_tendance": "",
-          "cote_reference": 6.0
+          "cote_reference": 6.0,
+          "arrivee": 4
         },
         {
           "n°": "4",
@@ -1168,7 +1169,8 @@
           "nb_victoires": 4,
           "nb_places": 5,
           "cote": 16.0,
-          "cote_tendance": ""
+          "cote_tendance": "",
+          "arrivee": 5
         },
         {
           "n°": "8",
@@ -1197,7 +1199,7 @@
       "terrain": "Bon",
       "penetrometre": "3,0",
       "cordeCourse": "CORDE_DROITE",
-      "arrivee_definitive": false
+      "arrivee_definitive": true
     }
   ]
 }

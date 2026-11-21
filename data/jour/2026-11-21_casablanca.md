@@ -8,20 +8,21 @@
 
 ### 6. GRAND PRIX DE SA MAJESTE LE ROI MOHAMMED VI - DEFI DU GALOP
 
-*17h10 · plat · 2400 m · 13 partants · cotes de l'extraction*
+*17h10 · plat · 2400 m · 14 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 3 | IF NOT NOW | 5,2 | JANACEK VACLAV | –/–/–/– |
-| 2 | DEVIL'S BAY | 5,6 | GUEDJ-GAY GUILLAUME | –/–/–/– |
-| 9 | ILE SAINT LOUIS | 6,6 | MOUHIYDDINE AHMED | –/–/–/– |
-| 8 | FREENESS | 7,4 | LAFRAM MOHCINE | –/–/–/– |
-| 17 | VIRGI CHOPE | 7,7 | EL KANDOUSSI ABDELKADER | –/–/–/– |
-| 10 | INSANDIE | 8,4 | MADIHI ZOUHAIR | –/–/–/– |
-| 7 | ANOTHERMINE | 14 | FADDOUL ABDERRAHIM | –/–/–/– |
-| 5 | O MEIGO | 26 | LAKJAL OMAR | –/–/–/– |
-| 11 | LATHRAEA | 30 | BOUKHARSSA ABDELKARIM | –/–/–/– |
-| 12 | MARFISA | 37 | JBILOU KHALID | –/–/–/– |
-| 14 | NOOTKA AL ASIL | 46 | MOUGHAT AMINE | –/–/–/– |
-| 15 | NUIT DE GALA | 46 | ZABOUT MOURAD | –/–/–/– |
-| 16 | TIMENIK FAL | 46 | AMENAI RACHID | –/–/–/35 |
+| 2 | DEVIL'S BAY | 2,8 | GUEDJ-GAY GUILLAUME | –/–/–/– |
+| 6 | WINE PALACE | 5,3 | LEBOUC HUGO | –/–/–/– |
+| 9 | ILE SAINT LOUIS | 6,3 | MOUHIYDDINE AHMED | –/–/–/– |
+| 10 | INSANDIE | 7,5 | MADIHI ZOUHAIR | –/–/–/– |
+| 3 | IF NOT NOW | 9,4 | JANACEK VACLAV | –/–/–/– |
+| 17 | VIRGI CHOPE | 14 | EL KANDOUSSI ABDELKADER | –/–/–/– |
+| 5 | O MEIGO | 36 | LAKJAL OMAR | –/–/–/– |
+| 7 | ANOTHERMINE | 45 | FADDOUL ABDERRAHIM | –/–/–/– |
+| 8 | FREENESS | 46 | LAFRAM MOHCINE | –/–/–/– |
+| 12 | MARFISA | 61 | JBILOU KHALID | –/–/–/– |
+| 14 | NOOTKA AL ASIL | 67 | MOUGHAT AMINE | –/–/–/– |
+| 11 | LATHRAEA | 72 | BOUKHARSSA ABDELKARIM | –/–/–/– |
+| 16 | TIMENIK FAL | 157 | AMENAI RACHID | –/–/–/35 |
+| 15 | NUIT DE GALA | 183 | ZABOUT MOURAD | –/–/–/– |
