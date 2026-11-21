@@ -100,18 +100,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE LA RUE EGALITE
 
-*20h29 · plat · 2500 m · 8 partants · cotes à T−13:40*
+*20h29 · plat · 2500 m · 8 partants · cotes à T−9:41*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 5 | KEEP AWAY | 3,7 | 1,6 | 4,43 | -16,6 % | B.MARIE | 63/589/1727/2266 |
-| 7 | FEELINGNUIT | 3,9 | 5,3 | 4,00 | -2,4 % | J.MOUTARD | 42/107/1077/115 |
-| 8 | GOT FLOWER | 4,7 | 13 | 5,26 | -10,7 % | M.PROTTI | 29/28/69/405 |
-| 6 | QUARTZDARGENT | 8,8 | 19 | 11,06 | -20,4 % | C.PACAUT | 44/470/244/1307 |
-| 9 | EASTERN STAR | 10 | 16 | 11,82 | -15,4 % | J.CLAUDIC | 40/23/22/3522 |
-| 3 | LA DO RE | 12 | 12 | 13,07 | -8,2 % | L.BOISSEAU | 37/147/258/2963 |
-| 11 | COMBERMERE | 12 | 14 | 15,57 | -22,9 % | A.CRASTUS | 15/400/1068/242 |
-| 4 | DSCHINGIS POWER | 32 | 52 | 46,23 | -30,8 % | P.CHEYER | 101/585/76/2210 |
+| 5 | KEEP AWAY | 4 | 1,6 | 5,36 | -25,4 % | B.MARIE | 63/589/1727/2266 |
+| 7 | FEELINGNUIT | 4,3 | 5,3 | 4,42 | -2,6 % | J.MOUTARD | 42/107/1077/115 |
+| 8 | GOT FLOWER | 5 | 13 | 5,62 | -11,0 % | M.PROTTI | 29/28/69/405 |
+| 6 | QUARTZDARGENT | 6,4 | 19 | 7,93 | -19,2 % | C.PACAUT | 44/470/244/1307 |
+| 9 | EASTERN STAR | 9,8 | 16 | 11,50 | -14,8 % | J.CLAUDIC | 40/23/22/3522 |
+| 3 | LA DO RE | 9,9 | 12 | 10,42 | -5,0 % | L.BOISSEAU | 37/147/258/2963 |
+| 11 | COMBERMERE | 14 | 14 | 18,60 | -24,7 % | A.CRASTUS | 15/400/1068/242 |
+| 4 | DSCHINGIS POWER | 29 | 52 | 41,24 | -29,7 % | P.CHEYER | 101/585/76/2210 |
 
 ### 8. PRIX DU QUESNE
 
