@@ -2,55 +2,55 @@
   "course": "PRIX DE LA RUE EGALITE",
   "numero": 7,
   "reunion": 5,
-  "heure_depart": 1795289340000,
+  "heure_depart": 1795289460000,
   "distance": 2500,
-  "scraped_at": "2026-11-21T20:12:39.765772+01:00",
-  "minutes_avant_depart": 16,
+  "scraped_at": "2026-11-21T20:17:19.524670+01:00",
+  "minutes_avant_depart": 14,
   "participants": [
     {
       "numPmu": 3,
       "nom": "LA DO RE",
-      "cote_live": 13.0,
+      "cote_live": 12.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795288347000
+      "timestamp_cote": 1795288627000
     },
     {
       "numPmu": 4,
       "nom": "DSCHINGIS POWER",
-      "cote_live": 34.0,
+      "cote_live": 32.0,
       "cote_reference": 32.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795288347000
+      "timestamp_cote": 1795288627000
     },
     {
       "numPmu": 5,
       "nom": "KEEP AWAY",
-      "cote_live": 3.5,
+      "cote_live": 3.7,
       "cote_reference": 3.3,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1795288347000
+      "timestamp_cote": 1795288627000
     },
     {
       "numPmu": 6,
       "nom": "QUARTZDARGENT",
-      "cote_live": 10.0,
+      "cote_live": 8.8,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795288347000
+      "timestamp_cote": 1795288627000
     },
     {
       "numPmu": 7,
       "nom": "FEELINGNUIT",
-      "cote_live": 3.7,
+      "cote_live": 3.9,
       "cote_reference": 3.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795288347000
+      "timestamp_cote": 1795288627000
     },
     {
       "numPmu": 8,
@@ -59,7 +59,7 @@
       "cote_reference": 4.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795288347000
+      "timestamp_cote": 1795288627000
     },
     {
       "numPmu": 9,
@@ -68,7 +68,7 @@
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795288347000
+      "timestamp_cote": 1795288627000
     },
     {
       "numPmu": 11,
@@ -77,7 +77,7 @@
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795288347000
+      "timestamp_cote": 1795288627000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -133,6 +133,20 @@
         "5": 3.5,
         "6": 10.0,
         "7": 3.7,
+        "8": 4.7,
+        "9": 10.0,
+        "11": 12.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-21T20:17:19.524670+01:00",
+      "minutes_avant_depart": 13.679295999999999,
+      "cotes": {
+        "3": 12.0,
+        "4": 32.0,
+        "5": 3.7,
+        "6": 8.8,
+        "7": 3.9,
         "8": 4.7,
         "9": 10.0,
         "11": 12.0
