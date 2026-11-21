@@ -1,0 +1,110 @@
+{
+  "course": "PRIX DU CROISE-LAROCHE",
+  "numero": 3,
+  "reunion": 5,
+  "heure_depart": 1795281540000,
+  "distance": 1900,
+  "scraped_at": "2026-11-21T17:49:31.564095+01:00",
+  "minutes_avant_depart": 29,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "DORIANELLO",
+      "cote_live": 6.3,
+      "cote_reference": 6.3,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795279751000
+    },
+    {
+      "numPmu": 2,
+      "nom": "FIREMAN",
+      "cote_live": 14.0,
+      "cote_reference": 14.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795279751000
+    },
+    {
+      "numPmu": 4,
+      "nom": "WOFF",
+      "cote_live": 6.1,
+      "cote_reference": 6.1,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795279751000
+    },
+    {
+      "numPmu": 5,
+      "nom": "READY KING",
+      "cote_live": 6.7,
+      "cote_reference": 6.7,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795279751000
+    },
+    {
+      "numPmu": 6,
+      "nom": "RIDE ON",
+      "cote_live": 9.8,
+      "cote_reference": 9.8,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795279751000
+    },
+    {
+      "numPmu": 7,
+      "nom": "ZOLIA",
+      "cote_live": 13.0,
+      "cote_reference": 13.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795279751000
+    },
+    {
+      "numPmu": 8,
+      "nom": "BENIMARU",
+      "cote_live": 5.3,
+      "cote_reference": 5.3,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1795279751000
+    },
+    {
+      "numPmu": 10,
+      "nom": "GRAN HABANO",
+      "cote_live": 11.0,
+      "cote_reference": 11.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795279751000
+    },
+    {
+      "numPmu": 13,
+      "nom": "TERESA MENDOZA",
+      "cote_live": 6.7,
+      "cote_reference": 6.7,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795279751000
+    }
+  ],
+  "hippodrome": "DEAUVILLE",
+  "releves": [
+    {
+      "scraped_at": "2026-11-21T17:49:31.564095+01:00",
+      "minutes_avant_depart": 29.47613726666667,
+      "cotes": {
+        "1": 6.3,
+        "2": 14.0,
+        "4": 6.1,
+        "5": 6.7,
+        "6": 9.8,
+        "7": 13.0,
+        "8": 5.3,
+        "10": 11.0,
+        "13": 6.7
+      }
+    }
+  ]
+}
