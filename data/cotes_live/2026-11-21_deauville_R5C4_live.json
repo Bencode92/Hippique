@@ -4,44 +4,44 @@
   "reunion": 5,
   "heure_depart": 1795283580000,
   "distance": 1900,
-  "scraped_at": "2026-11-21T18:35:59.611890+01:00",
-  "minutes_avant_depart": 17,
+  "scraped_at": "2026-11-21T18:40:39.368713+01:00",
+  "minutes_avant_depart": 12,
   "participants": [
     {
       "numPmu": 1,
       "nom": "PRIMA LUCE",
-      "cote_live": 4.3,
+      "cote_live": 4.6,
       "cote_reference": 3.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795282549000
+      "timestamp_cote": 1795282813000
     },
     {
       "numPmu": 2,
       "nom": "NO LIMIT PRECIEUSE",
-      "cote_live": 41.0,
+      "cote_live": 31.0,
       "cote_reference": 30.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795282549000
+      "timestamp_cote": 1795282813000
     },
     {
       "numPmu": 4,
       "nom": "ARMSTRONG GLORY",
-      "cote_live": 5.7,
+      "cote_live": 5.3,
       "cote_reference": 5.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795282549000
+      "timestamp_cote": 1795282813000
     },
     {
       "numPmu": 5,
       "nom": "FILLETTE DU HOULEY",
-      "cote_live": 3.4,
+      "cote_live": 3.6,
       "cote_reference": 3.0,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1795282549000
+      "timestamp_cote": 1795282813000
     },
     {
       "numPmu": 6,
@@ -50,7 +50,7 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795282549000
+      "timestamp_cote": 1795282813000
     },
     {
       "numPmu": 7,
@@ -59,7 +59,7 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795282549000
+      "timestamp_cote": 1795282813000
     },
     {
       "numPmu": 8,
@@ -68,16 +68,16 @@
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795282549000
+      "timestamp_cote": 1795282813000
     },
     {
       "numPmu": 9,
       "nom": "TCHIKITA",
-      "cote_live": 22.0,
+      "cote_live": 19.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795282549000
+      "timestamp_cote": 1795282813000
     },
     {
       "numPmu": 10,
@@ -86,7 +86,7 @@
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795282549000
+      "timestamp_cote": 1795282813000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -148,6 +148,21 @@
         "7": 9.3,
         "8": 12.0,
         "9": 22.0,
+        "10": 10.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-21T18:40:39.368713+01:00",
+      "minutes_avant_depart": 12.346254416666666,
+      "cotes": {
+        "1": 4.6,
+        "2": 31.0,
+        "4": 5.3,
+        "5": 3.6,
+        "6": 11.0,
+        "7": 9.3,
+        "8": 12.0,
+        "9": 19.0,
         "10": 10.0
       }
     }
