@@ -71,17 +71,17 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DE CLOTURE
 
-*19h25 · plat · 1900 m · 7 partants · cotes à T−9:00*
+*19h25 · plat · 1900 m · 7 partants · cotes à T−5:01*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 6 | DIEGO D'ARTOIS | 4,2 | 1,6 | 4,92 | -14,7 % | G.SEIGNEUL | 172/803/3590/4940 |
-| 2 | CIRCO MASSIMO | 5 | 9,1 | 5,18 | -3,5 % | A. HAMELIN | 23/594/4201/2338 |
-| 5 | HIGHFIELD HEIRESS | 5 | 9,5 | 5,00 | **0,0 %** | M.FAVRIAUX | 54/237/741/1107 |
-| 7 | JOAO | 5,3 | 6,6 | 5,74 | -7,7 % | P.CHEYER | 101/585/1500/2210 |
-| 8 | BOKEN | 8 | 15 | 9,60 | -16,6 % | B.MARIE | 63/664/4/5202 |
-| 13 | MADDOX | 9,2 | 23 | 9,54 | -3,6 % | J.CLAUDIC | 40/474/896/558 |
-| 11 | TIGRE DORE | 12 | 18 | 15,15 | -20,8 % | A.CRASTUS | 15/400/82/242 |
+| 5 | HIGHFIELD HEIRESS | 3,3 | 9,5 | 3,34 | -1,1 % | M.FAVRIAUX | 54/237/741/1107 |
+| 7 | JOAO | 4 | 6,6 | 4,22 | -5,2 % | P.CHEYER | 101/585/1500/2210 |
+| 2 | CIRCO MASSIMO | 5,6 | 9,1 | 6,34 | -11,7 % | A. HAMELIN | 23/594/4201/2338 |
+| 6 | DIEGO D'ARTOIS | 6,8 | 1,6 | 7,29 | -6,8 % | G.SEIGNEUL | 172/803/3590/4940 |
+| 8 | BOKEN | 9,2 | 15 | 11,28 | -18,4 % | B.MARIE | 63/664/4/5202 |
+| 11 | TIGRE DORE | 13 | 18 | 16,61 | -21,7 % | A.CRASTUS | 15/400/82/242 |
+| 13 | MADDOX | 13 | 23 | 14,21 | -8,5 % | J.CLAUDIC | 40/474/896/558 |
 
 ### 6. PRIX DES ROUGES BARRES
 

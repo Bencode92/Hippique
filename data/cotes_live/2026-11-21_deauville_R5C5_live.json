@@ -4,71 +4,71 @@
   "reunion": 5,
   "heure_depart": 1795285500000,
   "distance": 1900,
-  "scraped_at": "2026-11-21T19:15:59.590247+01:00",
-  "minutes_avant_depart": 9,
+  "scraped_at": "2026-11-21T19:19:59.365656+01:00",
+  "minutes_avant_depart": 5,
   "participants": [
     {
       "numPmu": 2,
       "nom": "CIRCO MASSIMO",
-      "cote_live": 5.0,
+      "cote_live": 5.6,
       "cote_reference": 4.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795284937000
+      "timestamp_cote": 1795285179000
     },
     {
       "numPmu": 5,
       "nom": "HIGHFIELD HEIRESS",
-      "cote_live": 5.0,
+      "cote_live": 3.3,
       "cote_reference": 7.5,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1795284937000
+      "favoris": true,
+      "timestamp_cote": 1795285179000
     },
     {
       "numPmu": 6,
       "nom": "DIEGO D'ARTOIS",
-      "cote_live": 4.2,
+      "cote_live": 6.8,
       "cote_reference": 2.7,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1795284937000
+      "favoris": false,
+      "timestamp_cote": 1795285179000
     },
     {
       "numPmu": 7,
       "nom": "JOAO",
-      "cote_live": 5.3,
+      "cote_live": 4.0,
       "cote_reference": 5.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795284937000
+      "timestamp_cote": 1795285179000
     },
     {
       "numPmu": 8,
       "nom": "BOKEN",
-      "cote_live": 8.0,
-      "cote_reference": 11.0,
-      "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1795284937000
-    },
-    {
-      "numPmu": 11,
-      "nom": "TIGRE DORE",
-      "cote_live": 12.0,
-      "cote_reference": 20.0,
-      "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1795284937000
-    },
-    {
-      "numPmu": 13,
-      "nom": "MADDOX",
       "cote_live": 9.2,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795284937000
+      "timestamp_cote": 1795285179000
+    },
+    {
+      "numPmu": 11,
+      "nom": "TIGRE DORE",
+      "cote_live": 13.0,
+      "cote_reference": 20.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795285179000
+    },
+    {
+      "numPmu": 13,
+      "nom": "MADDOX",
+      "cote_live": 13.0,
+      "cote_reference": 11.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795285179000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -149,6 +149,32 @@
         "8": 8.0,
         "11": 12.0,
         "13": 9.2
+      }
+    },
+    {
+      "scraped_at": "2026-11-21T19:19:19.830482+01:00",
+      "minutes_avant_depart": 5.671712183333333,
+      "cotes": {
+        "2": 5.1,
+        "5": 3.2,
+        "6": 6.4,
+        "7": 4.9,
+        "8": 8.5,
+        "11": 12.0,
+        "13": 12.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-21T19:19:59.365656+01:00",
+      "minutes_avant_depart": 5.012804316666666,
+      "cotes": {
+        "2": 5.6,
+        "5": 3.3,
+        "6": 6.8,
+        "7": 4.0,
+        "8": 9.2,
+        "11": 13.0,
+        "13": 13.0
       }
     }
   ]
