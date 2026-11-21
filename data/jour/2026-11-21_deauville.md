@@ -1,6 +1,6 @@
 # DEAUVILLE — 21/11/2026
 
-8 courses. 7 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 8 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -100,30 +100,30 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX DE LA RUE EGALITE
 
-*20h29 · plat · 2500 m · 8 partants · cotes à T−4:20*
+*20h29 · plat · 2500 m · 8 partants · cotes à T−1:40*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 5 | KEEP AWAY | 4,2 | 1,6 | 5,66 | -25,8 % | B.MARIE | 63/589/1727/2266 |
-| 8 | GOT FLOWER | 4,5 | 13 | 5,00 | -10,0 % | M.PROTTI | 29/28/69/405 |
+| 5 | KEEP AWAY | 3,4 | 1,6 | 4,04 | -15,8 % | B.MARIE | 63/589/1727/2266 |
 | 7 | FEELINGNUIT | 5,5 | 5,3 | 6,25 | -12,0 % | J.MOUTARD | 42/107/1077/115 |
-| 6 | QUARTZDARGENT | 6,4 | 19 | 7,92 | -19,2 % | C.PACAUT | 44/470/244/1307 |
-| 9 | EASTERN STAR | 8 | 16 | 8,34 | -4,1 % | J.CLAUDIC | 40/23/22/3522 |
-| 3 | LA DO RE | 8,3 | 12 | 8,87 | -6,4 % | L.BOISSEAU | 37/147/258/2963 |
-| 11 | COMBERMERE | 15 | 14 | 20,17 | -25,6 % | A.CRASTUS | 15/400/1068/242 |
-| 4 | DSCHINGIS POWER | 27 | 52 | 38,01 | -29,0 % | P.CHEYER | 101/585/76/2210 |
+| 8 | GOT FLOWER | 5,6 | 13 | 6,38 | -12,2 % | M.PROTTI | 29/28/69/405 |
+| 3 | LA DO RE | 6,8 | 12 | 7,06 | -3,7 % | L.BOISSEAU | 37/147/258/2963 |
+| 6 | QUARTZDARGENT | 7 | 19 | 8,80 | -20,4 % | C.PACAUT | 44/470/244/1307 |
+| 9 | EASTERN STAR | 9,1 | 16 | 10,55 | -13,7 % | J.CLAUDIC | 40/23/22/3522 |
+| 11 | COMBERMERE | 20 | 14 | 26,94 | -25,8 % | A.CRASTUS | 15/400/1068/242 |
+| 4 | DSCHINGIS POWER | 23 | 52 | 31,65 | -27,3 % | P.CHEYER | 101/585/76/2210 |
 
 ### 8. PRIX DU QUESNE
 
-*20h59 · plat · 2500 m · 8 partants · cotes de l'extraction*
+*20h59 · plat · 2500 m · 8 partants · cotes à T−29:40*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 5 | WINGS OF FIRE | 2,3 | 2,42 | -4,8 % | A.CRASTUS | 15/400/200/242 |
-| 4 | LA CRACK PRECIEUSE | 6,6 | 6,64 | -0,5 % | P.REMOUE | 35/212/263/227 |
-| 2 | MISTER POWER | 7,5 | 7,67 | -2,2 % | J.MOUTARD | 42/428/437/1010 |
-| 7 | KIROZ | 8,9 | 11,83 | -24,7 % | P.CHEYER | 101/435/3109/1066 |
-| 8 | NATH SHOW | 8,9 | 8,95 | -0,6 % | J.CLAUDIC | 40/147/40/1676 |
-| 1 | ASHIANAS KING | 13 | 15,15 | -14,2 % | L.WOLFF | 142/920/3820/5359 |
-| 10 | SOHO VICKY | 13 | 16,51 | -21,3 % | C.CARBONI | 111/400/303/242 |
-| 9 | L'ENNEMI | 16 | 19,30 | -17,1 % | A.DUQUESNOY | 122/206/10/4549 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 5 | WINGS OF FIRE | 4,5 | 2,3 | 6,13 | -26,5 % | A.CRASTUS | 15/400/200/242 |
+| 4 | LA CRACK PRECIEUSE | 4,6 | 6,6 | 4,58 | **+0,4 %** | P.REMOUE | 35/212/263/227 |
+| 2 | MISTER POWER | 6,5 | 7,5 | 6,71 | -3,1 % | J.MOUTARD | 42/428/437/1010 |
+| 7 | KIROZ | 7,4 | 8,9 | 8,63 | -14,2 % | P.CHEYER | 101/435/3109/1066 |
+| 8 | NATH SHOW | 8,1 | 8,9 | 7,93 | **+2,1 %** | J.CLAUDIC | 40/147/40/1676 |
+| 10 | SOHO VICKY | 8,4 | 13 | 10,19 | -17,6 % | C.CARBONI | 111/400/303/242 |
+| 9 | L'ENNEMI | 9,1 | 16 | 9,06 | **+0,4 %** | A.DUQUESNOY | 122/206/10/4549 |
+| 1 | ASHIANAS KING | 15 | 13 | 17,67 | -15,1 % | L.WOLFF | 142/920/3820/5359 |

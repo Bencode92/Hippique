@@ -1,0 +1,100 @@
+{
+  "course": "PRIX DU QUESNE",
+  "numero": 8,
+  "reunion": 5,
+  "heure_depart": 1795291140000,
+  "distance": 2500,
+  "scraped_at": "2026-11-21T20:29:19.601250+01:00",
+  "minutes_avant_depart": 30,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "ASHIANAS KING",
+      "cote_live": 15.0,
+      "cote_reference": 13.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795288552000
+    },
+    {
+      "numPmu": 2,
+      "nom": "MISTER POWER",
+      "cote_live": 6.5,
+      "cote_reference": 6.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795288552000
+    },
+    {
+      "numPmu": 4,
+      "nom": "LA CRACK PRECIEUSE",
+      "cote_live": 4.6,
+      "cote_reference": 4.8,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795288552000
+    },
+    {
+      "numPmu": 5,
+      "nom": "WINGS OF FIRE",
+      "cote_live": 4.5,
+      "cote_reference": 4.8,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1795288552000
+    },
+    {
+      "numPmu": 7,
+      "nom": "KIROZ",
+      "cote_live": 7.4,
+      "cote_reference": 8.1,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795288552000
+    },
+    {
+      "numPmu": 8,
+      "nom": "NATH SHOW",
+      "cote_live": 8.1,
+      "cote_reference": 7.3,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795288552000
+    },
+    {
+      "numPmu": 9,
+      "nom": "L'ENNEMI",
+      "cote_live": 9.1,
+      "cote_reference": 8.8,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795288552000
+    },
+    {
+      "numPmu": 10,
+      "nom": "SOHO VICKY",
+      "cote_live": 8.4,
+      "cote_reference": 9.3,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795288552000
+    }
+  ],
+  "hippodrome": "DEAUVILLE",
+  "releves": [
+    {
+      "scraped_at": "2026-11-21T20:29:19.601250+01:00",
+      "minutes_avant_depart": 29.674695583333335,
+      "cotes": {
+        "1": 15.0,
+        "2": 6.5,
+        "4": 4.6,
+        "5": 4.5,
+        "7": 7.4,
+        "8": 8.1,
+        "9": 9.1,
+        "10": 8.4
+      }
+    }
+  ]
+}
