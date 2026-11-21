@@ -40,19 +40,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX DU CROISE-LAROCHE
 
-*18h19 · plat · 1900 m · 9 partants · cotes à T−25:28*
+*18h19 · plat · 1900 m · 9 partants · cotes à T−21:28*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 8 | BENIMARU | 5,1 | 6,3 | 5,94 | -14,1 % | M. FAVRIAUX | 54/153/18/979 |
-| 4 | WOFF | 6,6 | 5,3 | 7,74 | -14,7 % | W.LEVESQUE | 88/96/1/167 |
-| 1 | DORIANELLO | 6,8 | 7,7 | 6,81 | -0,1 % | J.MOUTARD | 42/33/539/21 |
-| 13 | TERESA MENDOZA | 7 | 9,3 | 7,33 | -4,5 % | B.MARIE | 63/235/45/2927 |
-| 5 | READY KING | 7,3 | 4,4 | 8,20 | -11,0 % | L.BAILS | 85/360/23/651 |
-| 6 | RIDE ON | 9,6 | 8,5 | 10,98 | -12,6 % | A.MADAMET | 12/159/151/2948 |
-| 2 | FIREMAN | 10 | 10 | 12,33 | -18,9 % | F.LEFEBVRE | 46/517/22/1584 |
-| 10 | GRAN HABANO | 11 | 10 | 11,33 | -2,9 % | J. CLAUDIC | 40/474/170/558 |
-| 7 | ZOLIA | 12 | 40 | 14,26 | -15,9 % | K.CLIJMANS | 329/382/4/742 |
+| 1 | DORIANELLO | 3,5 | 7,7 | 3,55 | -1,3 % | J.MOUTARD | 42/33/539/21 |
+| 8 | BENIMARU | 6 | 6,3 | 5,87 | **+2,2 %** | M. FAVRIAUX | 54/153/18/979 |
+| 13 | TERESA MENDOZA | 7,8 | 9,3 | 8,23 | -5,2 % | B.MARIE | 63/235/45/2927 |
+| 5 | READY KING | 8 | 4,4 | 9,05 | -11,6 % | L.BAILS | 85/360/23/651 |
+| 4 | WOFF | 8,2 | 5,3 | 9,46 | -13,3 % | W.LEVESQUE | 88/96/1/167 |
+| 2 | FIREMAN | 11 | 10 | 13,68 | -19,6 % | F.LEFEBVRE | 46/517/22/1584 |
+| 6 | RIDE ON | 12 | 8,5 | 13,51 | -11,2 % | A.MADAMET | 12/159/151/2948 |
+| 7 | ZOLIA | 14 | 40 | 16,94 | -17,4 % | K.CLIJMANS | 329/382/4/742 |
+| 10 | GRAN HABANO | 14 | 10 | 14,86 | -5,8 % | J. CLAUDIC | 40/474/170/558 |
 
 ### 4. PRIX DE LA BRIQUETERIE
 
