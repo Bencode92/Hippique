@@ -1,6 +1,6 @@
 # DEAUVILLE — 21/11/2026
 
-8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -71,17 +71,17 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DE CLOTURE
 
-*19h25 · plat · 1900 m · 7 partants · cotes de l'extraction*
+*19h25 · plat · 1900 m · 7 partants · cotes à T−29:41*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 6 | DIEGO D'ARTOIS | 1,6 | 1,77 | -9,6 % | G.SEIGNEUL | 172/803/3590/4940 |
-| 7 | JOAO | 6,6 | 7,46 | -11,5 % | P.CHEYER | 101/585/1500/2210 |
-| 2 | CIRCO MASSIMO | 9,1 | 10,83 | -16,0 % | A. HAMELIN | 23/594/4201/2338 |
-| 5 | HIGHFIELD HEIRESS | 9,5 | 10,04 | -5,3 % | M.FAVRIAUX | 54/237/741/1107 |
-| 8 | BOKEN | 15 | 19,47 | -23,0 % | B.MARIE | 63/664/4/5202 |
-| 11 | TIGRE DORE | 18 | 24,71 | -27,2 % | A.CRASTUS | 15/400/82/242 |
-| 13 | MADDOX | 23 | 27,93 | -17,7 % | J.CLAUDIC | 40/474/896/558 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 6 | DIEGO D'ARTOIS | 2,6 | 1,6 | 2,93 | -11,4 % | G.SEIGNEUL | 172/803/3590/4940 |
+| 2 | CIRCO MASSIMO | 4,2 | 9,1 | 4,31 | -2,6 % | A. HAMELIN | 23/594/4201/2338 |
+| 7 | JOAO | 5,8 | 6,6 | 6,38 | -9,1 % | P.CHEYER | 101/585/1500/2210 |
+| 5 | HIGHFIELD HEIRESS | 7,5 | 9,5 | 7,58 | -1,0 % | M.FAVRIAUX | 54/237/741/1107 |
+| 13 | MADDOX | 11 | 23 | 11,78 | -6,7 % | J.CLAUDIC | 40/474/896/558 |
+| 8 | BOKEN | 12 | 15 | 14,85 | -19,2 % | B.MARIE | 63/664/4/5202 |
+| 11 | TIGRE DORE | 22 | 18 | 30,89 | -28,8 % | A.CRASTUS | 15/400/82/242 |
 
 ### 6. PRIX DES ROUGES BARRES
 
