@@ -1,6 +1,6 @@
 # DEAUVILLE — 21/11/2026
 
-8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -10,18 +10,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 1. GRAND PRIX DE MARCQ-EN-BAROEUL
 
-*17h02 · plat · 1900 m · 8 partants · cotes de l'extraction*
+*17h02 · plat · 1900 m · 8 partants · cotes à T−12:28*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 9 | CLIMATE CHANGE | 3,4 | 3,71 | -8,3 % | T.BACHELOT | 16/17/230/646 |
-| 8 | PRINCIPE | 4,4 | 4,89 | -10,0 % | L.WOLFF | 142/168/1371/1386 |
-| 4 | DRUMARD | 5,1 | 5,13 | -0,7 % | I.MENDIZABAL | 31/63/81/301 |
-| 5 | SABROSO | 6,4 | 6,61 | -3,1 % | G. MEURY | 73/25/71/41 |
-| 10 | SEDANO | 7,2 | 9,11 | -21,0 % | A.MADAMET | 12/160/140/592 |
-| 7 | WANDERLUST | 13 | 17,08 | -23,9 % | A.HAMELIN | 23/–/2829/– |
-| 2 | WINDFANG | 27 | 39,93 | -32,4 % | E.CRUBLET | 137/856/–/– |
-| 6 | GALAGHER | 43 | 63,02 | -31,8 % | J.CLAUDIC | 40/23/4/1211 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 9 | CLIMATE CHANGE | 2,9 | 3,4 | 3,16 | -8,3 % | T.BACHELOT | 16/17/230/646 |
+| 4 | DRUMARD | 5,5 | 5,1 | 5,58 | -1,4 % | I.MENDIZABAL | 31/63/81/301 |
+| 5 | SABROSO | 5,6 | 6,4 | 5,69 | -1,6 % | G. MEURY | 73/25/71/41 |
+| 8 | PRINCIPE | 6,2 | 4,4 | 6,89 | -10,0 % | L.WOLFF | 142/168/1371/1386 |
+| 10 | SEDANO | 7,2 | 7,2 | 9,11 | -21,0 % | A.MADAMET | 12/160/140/592 |
+| 7 | WANDERLUST | 16 | 13 | 21,80 | -26,6 % | A.HAMELIN | 23/–/2829/– |
+| 2 | WINDFANG | 17 | 27 | 21,37 | -20,5 % | E.CRUBLET | 137/856/–/– |
+| 6 | GALAGHER | 43 | 43 | 63,03 | -31,8 % | J.CLAUDIC | 40/23/4/1211 |
 
 ### 2. PRIX DU CENTRE EQUESTRE
 
