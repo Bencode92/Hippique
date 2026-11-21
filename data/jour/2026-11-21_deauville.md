@@ -10,18 +10,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 1. GRAND PRIX DE MARCQ-EN-BAROEUL
 
-*17h02 · plat · 1900 m · 8 partants · cotes à T−7:48*
+*17h02 · plat · 1900 m · 8 partants · cotes à T−5:08*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 9 | CLIMATE CHANGE | 3,2 | 3,4 | 3,47 | -7,7 % | T.BACHELOT | 16/17/230/646 |
-| 4 | DRUMARD | 4,7 | 5,1 | 4,67 | **+0,6 %** | I.MENDIZABAL | 31/63/81/301 |
-| 10 | SEDANO | 6,1 | 7,2 | 7,46 | -18,2 % | A.MADAMET | 12/160/140/592 |
-| 5 | SABROSO | 6,3 | 6,4 | 6,45 | -2,3 % | G. MEURY | 73/25/71/41 |
-| 8 | PRINCIPE | 8,4 | 4,4 | 9,72 | -13,6 % | L.WOLFF | 142/168/1371/1386 |
-| 7 | WANDERLUST | 12 | 13 | 15,44 | -22,3 % | A.HAMELIN | 23/–/2829/– |
-| 2 | WINDFANG | 16 | 27 | 19,78 | -19,1 % | E.CRUBLET | 137/856/–/– |
-| 6 | GALAGHER | 33 | 43 | 42,52 | -22,4 % | J.CLAUDIC | 40/23/4/1211 |
+| 9 | CLIMATE CHANGE | 3,2 | 3,4 | 3,48 | -8,1 % | T.BACHELOT | 16/17/230/646 |
+| 4 | DRUMARD | 4,7 | 5,1 | 4,69 | **+0,1 %** | I.MENDIZABAL | 31/63/81/301 |
+| 5 | SABROSO | 6,3 | 6,4 | 6,48 | -2,8 % | G. MEURY | 73/25/71/41 |
+| 10 | SEDANO | 6,5 | 7,2 | 8,08 | -19,5 % | A.MADAMET | 12/160/140/592 |
+| 8 | PRINCIPE | 8,4 | 4,4 | 9,77 | -14,0 % | L.WOLFF | 142/168/1371/1386 |
+| 7 | WANDERLUST | 11 | 13 | 12,83 | -14,3 % | A.HAMELIN | 23/–/2829/– |
+| 2 | WINDFANG | 14 | 27 | 17,02 | -17,7 % | E.CRUBLET | 137/856/–/– |
+| 6 | GALAGHER | 34 | 43 | 44,20 | -23,1 % | J.CLAUDIC | 40/23/4/1211 |
 
 ### 2. PRIX DU CENTRE EQUESTRE
 
