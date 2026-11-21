@@ -25,18 +25,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 2. PRIX DU CENTRE EQUESTRE
 
-*17h44 · plat · 1900 m · 8 partants · cotes à T−5:08*
+*17h44 · plat · 1900 m · 8 partants · cotes à T−2:28*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 5 | INDIAN BELLE | 2,5 | 2,6 | 3,04 | -17,8 % | G.TROLLEY DE PREVAUX | 43/46/87/323 |
-| 7 | EGERIA | 5,8 | 14 | 6,20 | -6,5 % | A.HAMELIN | 23/505/3327/1478 |
-| 1 | MIA RARE | 5,9 | 5,5 | 6,73 | -12,4 % | M.PROTTI | 29/137/1084/1928 |
-| 8 | JISIR | 5,9 | 5,7 | 6,58 | -10,3 % | T.BACHELOT | 16/453/3816/5470 |
-| 2 | ULTIMO MINUTO | 10 | 7,4 | 12,13 | -17,5 % | L.BOISSEAU | 37/186/34/154 |
-| 6 | OLYMPE DU QUESTEL | 13 | 12 | 14,44 | -9,9 % | P.BAZIRE | 57/69/4011/5201 |
-| 12 | LADY DANAE | 24 | 28 | 32,15 | -25,4 % | B.MARIE | 63/159/2401/164 |
-| 11 | SAINT JIMMY | 33 | 11 | 51,91 | -36,4 % | A.DUQUESNOY | 122/206/1159/1063 |
+| 8 | JISIR | 2,6 | 5,7 | 2,96 | -12,0 % | T.BACHELOT | 16/453/3816/5470 |
+| 5 | INDIAN BELLE | 3 | 2,6 | 3,30 | -9,2 % | G.TROLLEY DE PREVAUX | 43/46/87/323 |
+| 1 | MIA RARE | 7,4 | 5,5 | 9,48 | -22,0 % | M.PROTTI | 29/137/1084/1928 |
+| 7 | EGERIA | 7,5 | 14 | 8,29 | -9,6 % | A.HAMELIN | 23/505/3327/1478 |
+| 2 | ULTIMO MINUTO | 13 | 7,4 | 16,46 | -21,0 % | L.BOISSEAU | 37/186/34/154 |
+| 6 | OLYMPE DU QUESTEL | 21 | 12 | 25,08 | -16,3 % | P.BAZIRE | 57/69/4011/5201 |
+| 12 | LADY DANAE | 36 | 28 | 55,65 | -35,3 % | B.MARIE | 63/159/2401/164 |
+| 11 | SAINT JIMMY | 53 | 11 | 87,28 | -39,3 % | A.DUQUESNOY | 122/206/1159/1063 |
 
 ### 3. PRIX DU CROISE-LAROCHE
 
