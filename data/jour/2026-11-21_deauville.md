@@ -1,6 +1,6 @@
 # DEAUVILLE — 21/11/2026
 
-8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 6 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -85,18 +85,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DES ROUGES BARRES
 
-*19h57 · plat · 1900 m · 8 partants · cotes de l'extraction*
+*19h57 · plat · 1900 m · 8 partants · cotes à T−29:40*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 4 | TOMOE GOZEN | 3,1 | 3,63 | -14,6 % | H.BOUTIN | 17/33/21/2790 |
-| 2 | PETITE ABEILLE | 3,9 | 3,94 | -1,0 % | M.VELON | 27/28/1874/505 |
-| 7 | TANA MA | 6,4 | 7,49 | -14,6 % | G.MEURY | 73/25/22/195 |
-| 3 | AREV | 10 | 12,62 | -20,8 % | L.GROSSO | 134/124/413/2741 |
-| 8 | VOGUE A L'AME | 10 | 11,79 | -15,2 % | C.CARBONI | 111/152/199/1823 |
-| 1 | PLAY THE GAME | 12 | 15,27 | -21,4 % | A. MADAMET | 12/82/184/21 |
-| 5 | ALINKA | 12 | 13,98 | -14,1 % | L.GALLO | 47/21/42/2388 |
-| 6 | DARYOZA | 18 | 24,56 | -26,7 % | S.TISON | 108/137/398/598 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 2 | PETITE ABEILLE | 3,2 | 3,9 | 3,52 | -9,2 % | M.VELON | 27/28/1874/505 |
+| 4 | TOMOE GOZEN | 4,1 | 3,1 | 4,35 | -5,8 % | H.BOUTIN | 17/33/21/2790 |
+| 1 | PLAY THE GAME | 6,5 | 12 | 6,81 | -4,5 % | A. MADAMET | 12/82/184/21 |
+| 7 | TANA MA | 8 | 6,4 | 9,61 | -16,8 % | G.MEURY | 73/25/22/195 |
+| 3 | AREV | 9,8 | 10 | 12,20 | -19,7 % | L.GROSSO | 134/124/413/2741 |
+| 6 | DARYOZA | 13 | 18 | 15,19 | -14,4 % | S.TISON | 108/137/398/598 |
+| 5 | ALINKA | 15 | 12 | 17,96 | -16,5 % | L.GALLO | 47/21/42/2388 |
+| 8 | VOGUE A L'AME | 15 | 10 | 18,77 | -20,1 % | C.CARBONI | 111/152/199/1823 |
 
 ### 7. PRIX DE LA RUE EGALITE
 
