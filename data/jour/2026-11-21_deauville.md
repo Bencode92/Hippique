@@ -1,6 +1,6 @@
 # DEAUVILLE — 21/11/2026
 
-8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -55,19 +55,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 4. PRIX DE LA BRIQUETERIE
 
-*18h53 · plat · 1900 m · 9 partants · cotes de l'extraction*
+*18h53 · plat · 1900 m · 9 partants · cotes à T−29:41*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 5 | FILLETTE DU HOULEY | 2,7 | 3,24 | -16,6 % | H.JOURNIAC | 41/9/252/667 |
-| 1 | PRIMA LUCE | 3,9 | 4,12 | -5,3 % | M.GRONDIN | 148/15/13/241 |
-| 4 | ARMSTRONG GLORY | 5,7 | 6,37 | -10,6 % | T.BACHELOT | 16/65/506/721 |
-| 7 | CAPITOL HILL | 11 | 12,76 | -13,8 % | H.BOUTIN | 17/21/107/454 |
-| 10 | JOUR DE COEUR | 12 | 14,13 | -15,1 % | B.MARIE | 63/625/874/– |
-| 6 | GRAND MARRAKCHI | 16 | 19,76 | -19,0 % | A.VILCHIEN | 98/395/45/3623 |
-| 8 | ALTIA | 19 | 25,89 | -26,6 % | F.LEFEBVRE | 46/28/577/675 |
-| 9 | TCHIKITA | 21 | 29,07 | -27,8 % | L.GALLO | 47/21/40/21 |
-| 2 | NO LIMIT PRECIEUSE | 34 | 46,77 | -27,3 % | P.REMOUE | 35/212/263/227 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 5 | FILLETTE DU HOULEY | 2,9 | 2,7 | 3,43 | -15,4 % | H.JOURNIAC | 41/9/252/667 |
+| 1 | PRIMA LUCE | 4 | 3,9 | 4,17 | -4,0 % | M.GRONDIN | 148/15/13/241 |
+| 4 | ARMSTRONG GLORY | 5,6 | 5,7 | 6,15 | -8,9 % | T.BACHELOT | 16/65/506/721 |
+| 7 | CAPITOL HILL | 11 | 11 | 12,55 | -12,4 % | H.BOUTIN | 17/21/107/454 |
+| 10 | JOUR DE COEUR | 11 | 12 | 12,55 | -12,4 % | B.MARIE | 63/625/874/– |
+| 6 | GRAND MARRAKCHI | 15 | 16 | 18,03 | -16,8 % | A.VILCHIEN | 98/395/45/3623 |
+| 8 | ALTIA | 18 | 19 | 23,92 | -24,7 % | F.LEFEBVRE | 46/28/577/675 |
+| 9 | TCHIKITA | 23 | 21 | 31,76 | -27,6 % | L.GALLO | 47/21/40/21 |
+| 2 | NO LIMIT PRECIEUSE | 32 | 34 | 43,02 | -25,6 % | P.REMOUE | 35/212/263/227 |
 
 ### 5. PRIX DE CLOTURE
 

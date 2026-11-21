@@ -1,0 +1,110 @@
+{
+  "course": "PRIX DE LA BRIQUETERIE",
+  "numero": 4,
+  "reunion": 5,
+  "heure_depart": 1795283580000,
+  "distance": 1900,
+  "scraped_at": "2026-11-21T18:23:19.493646+01:00",
+  "minutes_avant_depart": 30,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "PRIMA LUCE",
+      "cote_live": 4.0,
+      "cote_reference": 3.9,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795281343000
+    },
+    {
+      "numPmu": 2,
+      "nom": "NO LIMIT PRECIEUSE",
+      "cote_live": 32.0,
+      "cote_reference": 30.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795281343000
+    },
+    {
+      "numPmu": 4,
+      "nom": "ARMSTRONG GLORY",
+      "cote_live": 5.6,
+      "cote_reference": 5.7,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795281343000
+    },
+    {
+      "numPmu": 5,
+      "nom": "FILLETTE DU HOULEY",
+      "cote_live": 2.9,
+      "cote_reference": 3.0,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1795281343000
+    },
+    {
+      "numPmu": 6,
+      "nom": "GRAND MARRAKCHI",
+      "cote_live": 15.0,
+      "cote_reference": 14.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795281343000
+    },
+    {
+      "numPmu": 7,
+      "nom": "CAPITOL HILL",
+      "cote_live": 11.0,
+      "cote_reference": 10.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795281343000
+    },
+    {
+      "numPmu": 8,
+      "nom": "ALTIA",
+      "cote_live": 18.0,
+      "cote_reference": 17.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795281343000
+    },
+    {
+      "numPmu": 9,
+      "nom": "TCHIKITA",
+      "cote_live": 23.0,
+      "cote_reference": 21.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795281343000
+    },
+    {
+      "numPmu": 10,
+      "nom": "JOUR DE COEUR",
+      "cote_live": 11.0,
+      "cote_reference": 11.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795281343000
+    }
+  ],
+  "hippodrome": "DEAUVILLE",
+  "releves": [
+    {
+      "scraped_at": "2026-11-21T18:23:19.493646+01:00",
+      "minutes_avant_depart": 29.67963908333333,
+      "cotes": {
+        "1": 4.0,
+        "2": 32.0,
+        "4": 5.6,
+        "5": 2.9,
+        "6": 15.0,
+        "7": 11.0,
+        "8": 18.0,
+        "9": 23.0,
+        "10": 11.0
+      }
+    }
+  ]
+}
