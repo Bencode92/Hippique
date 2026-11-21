@@ -4,80 +4,80 @@
   "reunion": 5,
   "heure_depart": 1795287600000,
   "distance": 1900,
-  "scraped_at": "2026-11-21T19:54:39.514317+01:00",
-  "minutes_avant_depart": 5,
+  "scraped_at": "2026-11-21T19:57:19.659934+01:00",
+  "minutes_avant_depart": 3,
   "participants": [
     {
       "numPmu": 1,
       "nom": "PLAY THE GAME",
-      "cote_live": 4.3,
+      "cote_live": 4.8,
       "cote_reference": 6.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795287269000
+      "timestamp_cote": 1795287431000
     },
     {
       "numPmu": 2,
       "nom": "PETITE ABEILLE",
-      "cote_live": 3.8,
+      "cote_live": 1.9,
       "cote_reference": 3.2,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1795287269000
+      "timestamp_cote": 1795287431000
     },
     {
       "numPmu": 3,
       "nom": "AREV",
-      "cote_live": 6.6,
+      "cote_live": 9.7,
       "cote_reference": 9.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795287269000
+      "timestamp_cote": 1795287431000
     },
     {
       "numPmu": 4,
       "nom": "TOMOE GOZEN",
-      "cote_live": 5.6,
+      "cote_live": 8.8,
       "cote_reference": 4.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795287269000
+      "timestamp_cote": 1795287431000
     },
     {
       "numPmu": 5,
       "nom": "ALINKA",
-      "cote_live": 20.0,
+      "cote_live": 30.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795287269000
+      "timestamp_cote": 1795287431000
     },
     {
       "numPmu": 6,
       "nom": "DARYOZA",
-      "cote_live": 12.0,
+      "cote_live": 20.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795287269000
+      "timestamp_cote": 1795287431000
     },
     {
       "numPmu": 7,
       "nom": "TANA MA",
-      "cote_live": 7.0,
+      "cote_live": 10.0,
       "cote_reference": 8.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795287269000
+      "timestamp_cote": 1795287431000
     },
     {
       "numPmu": 8,
       "nom": "VOGUE A L'AME",
-      "cote_live": 21.0,
+      "cote_live": 36.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795287269000
+      "timestamp_cote": 1795287431000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -192,6 +192,62 @@
         "6": 12.0,
         "7": 7.0,
         "8": 21.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-21T19:55:19.363744+01:00",
+      "minutes_avant_depart": 4.679362299999999,
+      "cotes": {
+        "1": 3.5,
+        "2": 3.9,
+        "3": 7.2,
+        "4": 6.0,
+        "5": 20.0,
+        "6": 13.0,
+        "7": 7.9,
+        "8": 24.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-21T19:55:59.956773+01:00",
+      "minutes_avant_depart": 4.002959716666667,
+      "cotes": {
+        "1": 3.5,
+        "2": 3.8,
+        "3": 7.2,
+        "4": 6.0,
+        "5": 20.0,
+        "6": 12.0,
+        "7": 8.0,
+        "8": 23.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-21T19:56:39.277184+01:00",
+      "minutes_avant_depart": 3.3460249,
+      "cotes": {
+        "1": 3.3,
+        "2": 3.7,
+        "3": 7.3,
+        "4": 6.5,
+        "5": 20.0,
+        "6": 14.0,
+        "7": 8.5,
+        "8": 25.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-21T19:57:19.659934+01:00",
+      "minutes_avant_depart": 2.6793559333333334,
+      "cotes": {
+        "1": 4.8,
+        "2": 1.9,
+        "3": 9.7,
+        "4": 8.8,
+        "5": 30.0,
+        "6": 20.0,
+        "7": 10.0,
+        "8": 36.0
       }
     }
   ]
