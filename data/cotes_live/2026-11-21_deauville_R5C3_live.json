@@ -4,17 +4,17 @@
   "reunion": 5,
   "heure_depart": 1795281540000,
   "distance": 1900,
-  "scraped_at": "2026-11-21T17:57:31.755136+01:00",
-  "minutes_avant_depart": 21,
+  "scraped_at": "2026-11-21T18:01:32.018057+01:00",
+  "minutes_avant_depart": 17,
   "participants": [
     {
       "numPmu": 1,
       "nom": "DORIANELLO",
-      "cote_live": 3.5,
+      "cote_live": 3.7,
       "cote_reference": 6.3,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1795280235000
+      "timestamp_cote": 1795280477000
     },
     {
       "numPmu": 2,
@@ -23,25 +23,25 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795280235000
+      "timestamp_cote": 1795280477000
     },
     {
       "numPmu": 4,
       "nom": "WOFF",
-      "cote_live": 8.2,
+      "cote_live": 7.8,
       "cote_reference": 6.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795280235000
+      "timestamp_cote": 1795280477000
     },
     {
       "numPmu": 5,
       "nom": "READY KING",
-      "cote_live": 8.0,
+      "cote_live": 7.4,
       "cote_reference": 6.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795280235000
+      "timestamp_cote": 1795280477000
     },
     {
       "numPmu": 6,
@@ -50,25 +50,25 @@
       "cote_reference": 9.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795280235000
+      "timestamp_cote": 1795280477000
     },
     {
       "numPmu": 7,
       "nom": "ZOLIA",
-      "cote_live": 14.0,
+      "cote_live": 15.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795280235000
+      "timestamp_cote": 1795280477000
     },
     {
       "numPmu": 8,
       "nom": "BENIMARU",
-      "cote_live": 6.0,
+      "cote_live": 5.7,
       "cote_reference": 5.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795280235000
+      "timestamp_cote": 1795280477000
     },
     {
       "numPmu": 10,
@@ -77,16 +77,16 @@
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795280235000
+      "timestamp_cote": 1795280477000
     },
     {
       "numPmu": 13,
       "nom": "TERESA MENDOZA",
-      "cote_live": 7.8,
+      "cote_live": 7.2,
       "cote_reference": 6.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795280235000
+      "timestamp_cote": 1795280477000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -134,6 +134,21 @@
         "8": 6.0,
         "10": 14.0,
         "13": 7.8
+      }
+    },
+    {
+      "scraped_at": "2026-11-21T18:01:32.018057+01:00",
+      "minutes_avant_depart": 17.469222666666667,
+      "cotes": {
+        "1": 3.7,
+        "2": 11.0,
+        "4": 7.8,
+        "5": 7.4,
+        "6": 12.0,
+        "7": 15.0,
+        "8": 5.7,
+        "10": 14.0,
+        "13": 7.2
       }
     }
   ]
