@@ -4,71 +4,71 @@
   "reunion": 5,
   "heure_depart": 1795287420000,
   "distance": 1900,
-  "scraped_at": "2026-11-21T19:31:59.367038+01:00",
-  "minutes_avant_depart": 25,
+  "scraped_at": "2026-11-21T19:35:59.564784+01:00",
+  "minutes_avant_depart": 21,
   "participants": [
     {
       "numPmu": 1,
       "nom": "PLAY THE GAME",
-      "cote_live": 6.3,
+      "cote_live": 6.0,
       "cote_reference": 6.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795285893000
+      "timestamp_cote": 1795286135000
     },
     {
       "numPmu": 2,
       "nom": "PETITE ABEILLE",
-      "cote_live": 3.0,
+      "cote_live": 3.2,
       "cote_reference": 3.2,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1795285893000
+      "timestamp_cote": 1795286135000
     },
     {
       "numPmu": 3,
       "nom": "AREV",
-      "cote_live": 9.8,
+      "cote_live": 10.0,
       "cote_reference": 9.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795285893000
+      "timestamp_cote": 1795286135000
     },
     {
       "numPmu": 4,
       "nom": "TOMOE GOZEN",
-      "cote_live": 4.6,
+      "cote_live": 4.3,
       "cote_reference": 4.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795285893000
+      "timestamp_cote": 1795286135000
     },
     {
       "numPmu": 5,
       "nom": "ALINKA",
-      "cote_live": 15.0,
+      "cote_live": 17.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795285893000
+      "timestamp_cote": 1795286135000
     },
     {
       "numPmu": 6,
       "nom": "DARYOZA",
-      "cote_live": 13.0,
+      "cote_live": 11.0,
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795285893000
+      "timestamp_cote": 1795286135000
     },
     {
       "numPmu": 7,
       "nom": "TANA MA",
-      "cote_live": 7.4,
+      "cote_live": 7.5,
       "cote_reference": 8.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795285893000
+      "timestamp_cote": 1795286135000
     },
     {
       "numPmu": 8,
@@ -77,7 +77,7 @@
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795285893000
+      "timestamp_cote": 1795286135000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -107,6 +107,20 @@
         "5": 15.0,
         "6": 13.0,
         "7": 7.4,
+        "8": 16.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-21T19:35:59.564784+01:00",
+      "minutes_avant_depart": 21.010189766666667,
+      "cotes": {
+        "1": 6.0,
+        "2": 3.2,
+        "3": 10.0,
+        "4": 4.3,
+        "5": 17.0,
+        "6": 11.0,
+        "7": 7.5,
         "8": 16.0
       }
     }
