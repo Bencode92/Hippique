@@ -10,18 +10,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 1. GRAND PRIX DE MARCQ-EN-BAROEUL
 
-*17h00 · plat · 1900 m · 8 partants · cotes de l'extraction*
+*17h02 · plat · 1900 m · 8 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 8 | PRINCIPE | 2,9 | 3,29 | -11,9 % | L.WOLFF | 142/168/1371/1386 |
-| 5 | SABROSO | 5 | 5,07 | -1,5 % | C.LECOEUVRE | 13/25/71/41 |
-| 9 | CLIMATE CHANGE | 5,1 | 4,99 | **+2,2 %** | T.BACHELOT | 16/17/230/646 |
-| 4 | DRUMARD | 5,2 | 5,09 | **+2,1 %** | I.MENDIZABAL | 31/63/81/301 |
-| 10 | SEDANO | 10 | 13,57 | -26,3 % | A.MADAMET | 12/160/140/592 |
-| 7 | WANDERLUST | 14 | 18,00 | -22,2 % | A.HAMELIN | 23/–/2829/– |
-| 2 | WINDFANG | 34 | 52,35 | -35,1 % | E.CRUBLET | 137/856/–/– |
-| 6 | GALAGHER | 38 | 50,59 | -24,9 % | J.CLAUDIC | 40/23/4/1211 |
+| 9 | CLIMATE CHANGE | 3,4 | 3,71 | -8,3 % | T.BACHELOT | 16/17/230/646 |
+| 8 | PRINCIPE | 4,4 | 4,89 | -10,0 % | L.WOLFF | 142/168/1371/1386 |
+| 4 | DRUMARD | 5,1 | 5,13 | -0,7 % | I.MENDIZABAL | 31/63/81/301 |
+| 5 | SABROSO | 6,4 | 6,61 | -3,1 % | G. MEURY | 73/25/71/41 |
+| 10 | SEDANO | 7,2 | 9,11 | -21,0 % | A.MADAMET | 12/160/140/592 |
+| 7 | WANDERLUST | 13 | 17,08 | -23,9 % | A.HAMELIN | 23/–/2829/– |
+| 2 | WINDFANG | 27 | 39,93 | -32,4 % | E.CRUBLET | 137/856/–/– |
+| 6 | GALAGHER | 43 | 63,02 | -31,8 % | J.CLAUDIC | 40/23/4/1211 |
 
 ### 2. PRIX DU CENTRE EQUESTRE
 
@@ -29,14 +29,14 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 5 | INDIAN BELLE | 2,1 | 2,23 | -6,0 % | G.TROLLEY DE PREVAUX | 43/46/87/323 |
-| 8 | JISIR | 5,8 | 6,32 | -8,2 % | T.BACHELOT | 16/453/3816/5470 |
-| 2 | ULTIMO MINUTO | 7,8 | 8,88 | -12,1 % | L.BOISSEAU | 37/186/34/154 |
-| 1 | MIA RARE | 8,6 | 11,11 | -22,6 % | M.PROTTI | 29/137/1084/1928 |
-| 11 | SAINT JIMMY | 10 | 12,16 | -17,8 % | A.DUQUESNOY | 122/206/1159/1063 |
-| 6 | OLYMPE DU QUESTEL | 16 | 17,98 | -11,0 % | P.BAZIRE | 57/69/4011/5201 |
-| 7 | EGERIA | 18 | 23,62 | -23,8 % | A.HAMELIN | 23/505/3327/1478 |
-| 12 | LADY DANAE | 36 | 54,65 | -34,1 % | B.MARIE | 63/159/2401/164 |
+| 5 | INDIAN BELLE | 2,6 | 3,15 | -17,5 % | G.TROLLEY DE PREVAUX | 43/46/87/323 |
+| 1 | MIA RARE | 5,5 | 6,20 | -11,4 % | M.PROTTI | 29/137/1084/1928 |
+| 8 | JISIR | 5,7 | 6,32 | -9,8 % | T.BACHELOT | 16/453/3816/5470 |
+| 2 | ULTIMO MINUTO | 7,4 | 8,52 | -13,1 % | L.BOISSEAU | 37/186/34/154 |
+| 11 | SAINT JIMMY | 11 | 13,88 | -20,7 % | A.DUQUESNOY | 122/206/1159/1063 |
+| 6 | OLYMPE DU QUESTEL | 12 | 13,13 | -8,6 % | P.BAZIRE | 57/69/4011/5201 |
+| 7 | EGERIA | 14 | 18,80 | -25,5 % | A.HAMELIN | 23/505/3327/1478 |
+| 12 | LADY DANAE | 28 | 38,25 | -26,8 % | B.MARIE | 63/159/2401/164 |
 
 ### 3. PRIX DU CROISE-LAROCHE
 
@@ -44,15 +44,15 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 4 | WOFF | 5,3 | 6,95 | -23,7 % | W.LEVESQUE | 88/96/1/167 |
-| 5 | READY KING | 5,5 | 5,91 | -7,0 % | L.BAILS | 85/360/23/651 |
-| 1 | DORIANELLO | 5,6 | 5,68 | -1,4 % | J.MOUTARD | 42/33/539/21 |
-| 8 | BENIMARU | 6,6 | 6,55 | **+0,8 %** | T.TRULLIER | 24/153/18/979 |
-| 6 | RIDE ON | 8,1 | 8,97 | -9,7 % | A.MADAMET | 12/159/151/2948 |
-| 13 | TERESA MENDOZA | 9,3 | 10,12 | -8,1 % | B.MARIE | 63/235/45/2927 |
-| 2 | FIREMAN | 10 | 12,27 | -18,5 % | F.LEFEBVRE | 46/517/22/1584 |
-| 10 | GRAN HABANO | 10 | 10,10 | -1,0 % | K.VANDERBEKE | 192/474/170/558 |
-| 7 | ZOLIA | 61 | 98,02 | -37,8 % | K.CLIJMANS | 329/382/4/742 |
+| 5 | READY KING | 4,4 | 4,96 | -11,3 % | L.BAILS | 85/360/23/651 |
+| 4 | WOFF | 5,3 | 6,03 | -12,2 % | W.LEVESQUE | 88/96/1/167 |
+| 8 | BENIMARU | 6,3 | 6,26 | **+0,7 %** | M. FAVRIAUX | 54/153/18/979 |
+| 1 | DORIANELLO | 7,7 | 7,85 | -1,9 % | J.MOUTARD | 42/33/539/21 |
+| 6 | RIDE ON | 8,5 | 9,55 | -11,0 % | A.MADAMET | 12/159/151/2948 |
+| 13 | TERESA MENDOZA | 9,3 | 10,19 | -8,7 % | B.MARIE | 63/235/45/2927 |
+| 2 | FIREMAN | 10 | 12,35 | -19,0 % | F.LEFEBVRE | 46/517/22/1584 |
+| 10 | GRAN HABANO | 10 | 10,17 | -1,7 % | J. CLAUDIC | 40/474/170/558 |
+| 7 | ZOLIA | 40 | 56,79 | -29,6 % | K.CLIJMANS | 329/382/4/742 |
 
 ### 4. PRIX DE LA BRIQUETERIE
 
@@ -60,15 +60,15 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 1 | PRIMA LUCE | 2,5 | 2,87 | -12,8 % | M.GRONDIN | 148/15/13/241 |
-| 5 | FILLETTE DU HOULEY | 3 | 3,22 | -6,8 % | H.JOURNIAC | 41/9/252/667 |
-| 4 | ARMSTRONG GLORY | 6 | 6,63 | -9,6 % | T.BACHELOT | 16/65/506/721 |
-| 7 | CAPITOL HILL | 12 | 13,87 | -13,5 % | H.BOUTIN | 17/21/107/454 |
-| 6 | GRAND MARRAKCHI | 17 | 20,82 | -18,3 % | A.VILCHIEN | 98/395/45/3623 |
-| 10 | JOUR DE COEUR | 18 | 24,37 | -26,1 % | B.MARIE | 63/625/874/– |
-| 8 | ALTIA | 46 | 69,02 | -33,4 % | F.LEFEBVRE | 46/28/577/675 |
-| 2 | NO LIMIT PRECIEUSE | 65 | 93,09 | -30,2 % | P.REMOUE | 35/212/263/227 |
-| 9 | TCHIKITA | 65 | 100,14 | -35,1 % | L.GALLO | 47/21/40/21 |
+| 5 | FILLETTE DU HOULEY | 2,2 | 2,31 | -4,8 % | H.JOURNIAC | 41/9/252/667 |
+| 1 | PRIMA LUCE | 3,7 | 3,85 | -4,0 % | M.GRONDIN | 148/15/13/241 |
+| 4 | ARMSTRONG GLORY | 8,6 | 11,01 | -21,9 % | T.BACHELOT | 16/65/506/721 |
+| 7 | CAPITOL HILL | 10 | 11,27 | -11,2 % | H.BOUTIN | 17/21/107/454 |
+| 10 | JOUR DE COEUR | 16 | 21,35 | -25,1 % | B.MARIE | 63/625/874/– |
+| 6 | GRAND MARRAKCHI | 22 | 30,90 | -28,8 % | A.VILCHIEN | 98/395/45/3623 |
+| 9 | TCHIKITA | 25 | 35,05 | -28,7 % | L.GALLO | 47/21/40/21 |
+| 8 | ALTIA | 26 | 36,66 | -29,1 % | F.LEFEBVRE | 46/28/577/675 |
+| 2 | NO LIMIT PRECIEUSE | 36 | 49,22 | -26,9 % | P.REMOUE | 35/212/263/227 |
 
 ### 5. PRIX DE CLOTURE
 
@@ -76,13 +76,13 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 7 | JOAO | 2,4 | 2,52 | -4,8 % | P.CHEYER | 101/585/1500/2210 |
-| 5 | HIGHFIELD HEIRESS | 6,5 | 6,74 | -3,5 % | M.FAVRIAUX | 54/237/741/1107 |
-| 2 | CIRCO MASSIMO | 6,8 | 8,00 | -15,0 % | K.VANDERBEKE | 192/594/4201/2338 |
-| 13 | MADDOX | 8 | 8,18 | -2,2 % | J.CLAUDIC | 40/474/896/558 |
-| 11 | TIGRE DORE | 8,5 | 10,18 | -16,5 % | A.CRASTUS | 15/400/82/242 |
-| 8 | BOKEN | 10 | 12,57 | -20,4 % | B.MARIE | 63/664/4/5202 |
-| 6 | DIEGO D'ARTOIS | 11 | 12,87 | -14,5 % | G.SEIGNEUL | 172/803/3590/4940 |
+| 7 | JOAO | 2,6 | 3,14 | -17,3 % | P.CHEYER | 101/585/1500/2210 |
+| 5 | HIGHFIELD HEIRESS | 5,5 | 5,61 | -1,9 % | M.FAVRIAUX | 54/237/741/1107 |
+| 2 | CIRCO MASSIMO | 6,2 | 7,22 | -14,1 % | A. HAMELIN | 23/594/4201/2338 |
+| 6 | DIEGO D'ARTOIS | 8,9 | 10,09 | -11,8 % | G.SEIGNEUL | 172/803/3590/4940 |
+| 11 | TIGRE DORE | 8,9 | 10,78 | -17,5 % | A.CRASTUS | 15/400/82/242 |
+| 8 | BOKEN | 9,9 | 12,46 | -20,5 % | B.MARIE | 63/664/4/5202 |
+| 13 | MADDOX | 9,9 | 10,50 | -5,7 % | J.CLAUDIC | 40/474/896/558 |
 
 ### 6. PRIX DES ROUGES BARRES
 
@@ -90,14 +90,14 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 2 | PETITE ABEILLE | 3,9 | 4,33 | -9,8 % | M.VELON | 27/28/1874/505 |
-| 7 | TANA MA | 4,5 | 5,19 | -13,3 % | G.MEURY | 73/25/22/195 |
-| 3 | AREV | 5,8 | 6,63 | -12,5 % | L.GROSSO | 134/124/413/2741 |
-| 8 | VOGUE A L'AME | 6,5 | 7,09 | -8,3 % | C.CARBONI | 111/152/199/1823 |
-| 4 | TOMOE GOZEN | 7 | 7,90 | -11,4 % | H.BOUTIN | 17/33/21/2790 |
-| 6 | DARYOZA | 12 | 13,84 | -13,3 % | S.TISON | 108/137/398/598 |
-| 1 | PLAY THE GAME | 15 | 19,65 | -23,7 % | A.DAIFI | 209/82/184/21 |
-| 5 | ALINKA | 20 | 27,48 | -27,2 % | L.GALLO | 47/21/42/2388 |
+| 2 | PETITE ABEILLE | 4 | 4,59 | -12,9 % | M.VELON | 27/28/1874/505 |
+| 7 | TANA MA | 5,3 | 6,00 | -11,7 % | G.MEURY | 73/25/22/195 |
+| 4 | TOMOE GOZEN | 5,5 | 6,02 | -8,6 % | H.BOUTIN | 17/33/21/2790 |
+| 3 | AREV | 7,1 | 8,39 | -15,3 % | L.GROSSO | 134/124/413/2741 |
+| 8 | VOGUE A L'AME | 8,2 | 9,29 | -11,7 % | C.CARBONI | 111/152/199/1823 |
+| 1 | PLAY THE GAME | 10 | 11,21 | -10,8 % | A.DAIFI | 209/82/184/21 |
+| 5 | ALINKA | 12 | 13,87 | -13,5 % | L.GALLO | 47/21/42/2388 |
+| 6 | DARYOZA | 12 | 13,87 | -13,5 % | S.TISON | 108/137/398/598 |
 
 ### 7. PRIX DE LA RUE EGALITE
 
@@ -105,14 +105,14 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 7 | FEELINGNUIT | 3,9 | 4,40 | -11,5 % | J.MOUTARD | 42/107/1077/115 |
-| 3 | LA DO RE | 5,9 | 6,00 | -1,6 % | L.BOISSEAU | 37/147/258/2963 |
-| 11 | COMBERMERE | 6,2 | 6,58 | -5,8 % | A.CRASTUS | 15/400/1068/242 |
-| 8 | GOT FLOWER | 6,6 | 7,36 | -10,3 % | M.PROTTI | 29/28/69/405 |
-| 5 | KEEP AWAY | 7,8 | 9,53 | -18,2 % | B.MARIE | 63/589/1727/2266 |
-| 9 | EASTERN STAR | 9,1 | 10,51 | -13,4 % | J.CLAUDIC | 40/23/22/3522 |
-| 6 | QUARTZDARGENT | 9,9 | 12,62 | -21,6 % | C.PACAUT | 44/470/244/1307 |
-| 4 | DSCHINGIS POWER | 15 | 20,10 | -25,4 % | P.CHEYER | 101/585/76/2210 |
+| 7 | FEELINGNUIT | 3,6 | 4,03 | -10,6 % | J.MOUTARD | 42/107/1077/115 |
+| 11 | COMBERMERE | 6,2 | 6,55 | -5,4 % | A.CRASTUS | 15/400/1068/242 |
+| 3 | LA DO RE | 6,3 | 6,42 | -1,9 % | L.BOISSEAU | 37/147/258/2963 |
+| 8 | GOT FLOWER | 6,9 | 7,71 | -10,5 % | M.PROTTI | 29/28/69/405 |
+| 5 | KEEP AWAY | 7,3 | 8,78 | -16,8 % | B.MARIE | 63/589/1727/2266 |
+| 6 | QUARTZDARGENT | 9,8 | 12,40 | -21,0 % | C.PACAUT | 44/470/244/1307 |
+| 9 | EASTERN STAR | 9,8 | 11,40 | -14,1 % | J.CLAUDIC | 40/23/22/3522 |
+| 4 | DSCHINGIS POWER | 18 | 24,75 | -27,3 % | P.CHEYER | 101/585/76/2210 |
 
 ### 8. PRIX DU QUESNE
 
@@ -120,11 +120,11 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 4 | LA CRACK PRECIEUSE | 4,5 | 5,14 | -12,4 % | P.REMOUE | 35/212/263/227 |
-| 5 | WINGS OF FIRE | 5 | 5,73 | -12,8 % | A.CRASTUS | 15/400/200/242 |
-| 2 | MISTER POWER | 5,5 | 5,56 | -1,1 % | J.MOUTARD | 42/428/437/1010 |
-| 8 | NATH SHOW | 7,6 | 7,37 | **+3,1 %** | J.CLAUDIC | 40/147/40/1676 |
-| 10 | SOHO VICKY | 7,6 | 9,06 | -16,1 % | C.CARBONI | 111/400/303/242 |
-| 7 | KIROZ | 8 | 9,44 | -15,3 % | P.CHEYER | 101/435/3109/1066 |
-| 9 | L'ENNEMI | 12 | 12,46 | -3,7 % | A.DUQUESNOY | 122/206/10/4549 |
-| 1 | ASHIANAS KING | 14 | 16,29 | -14,1 % | L.WOLFF | 142/920/3820/5359 |
+| 4 | LA CRACK PRECIEUSE | 4,4 | 5,02 | -12,3 % | P.REMOUE | 35/212/263/227 |
+| 5 | WINGS OF FIRE | 5,1 | 5,87 | -13,1 % | A.CRASTUS | 15/400/200/242 |
+| 2 | MISTER POWER | 6,3 | 6,48 | -2,8 % | J.MOUTARD | 42/428/437/1010 |
+| 8 | NATH SHOW | 6,3 | 5,98 | **+5,3 %** | J.CLAUDIC | 40/147/40/1676 |
+| 10 | SOHO VICKY | 7,5 | 8,93 | -16,0 % | C.CARBONI | 111/400/303/242 |
+| 7 | KIROZ | 8,8 | 11,52 | -23,6 % | P.CHEYER | 101/435/3109/1066 |
+| 9 | L'ENNEMI | 12 | 12,48 | -3,8 % | A.DUQUESNOY | 122/206/10/4549 |
+| 1 | ASHIANAS KING | 13 | 14,96 | -13,1 % | L.WOLFF | 142/920/3820/5359 |
