@@ -1,6 +1,6 @@
 # DEAUVILLE — 21/11/2026
 
-8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -25,18 +25,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 2. PRIX DU CENTRE EQUESTRE
 
-*17h44 · plat · 1900 m · 8 partants · cotes de l'extraction*
+*17h44 · plat · 1900 m · 8 partants · cotes à T−29:48*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 5 | INDIAN BELLE | 2,6 | 3,15 | -17,5 % | G.TROLLEY DE PREVAUX | 43/46/87/323 |
-| 1 | MIA RARE | 5,5 | 6,20 | -11,4 % | M.PROTTI | 29/137/1084/1928 |
-| 8 | JISIR | 5,7 | 6,32 | -9,8 % | T.BACHELOT | 16/453/3816/5470 |
-| 2 | ULTIMO MINUTO | 7,4 | 8,52 | -13,1 % | L.BOISSEAU | 37/186/34/154 |
-| 11 | SAINT JIMMY | 11 | 13,88 | -20,7 % | A.DUQUESNOY | 122/206/1159/1063 |
-| 6 | OLYMPE DU QUESTEL | 12 | 13,13 | -8,6 % | P.BAZIRE | 57/69/4011/5201 |
-| 7 | EGERIA | 14 | 18,80 | -25,5 % | A.HAMELIN | 23/505/3327/1478 |
-| 12 | LADY DANAE | 28 | 38,25 | -26,8 % | B.MARIE | 63/159/2401/164 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 5 | INDIAN BELLE | 3 | 2,6 | 3,61 | -17,0 % | G.TROLLEY DE PREVAUX | 43/46/87/323 |
+| 1 | MIA RARE | 5,5 | 5,5 | 6,16 | -10,7 % | M.PROTTI | 29/137/1084/1928 |
+| 8 | JISIR | 6,1 | 5,7 | 6,77 | -9,9 % | T.BACHELOT | 16/453/3816/5470 |
+| 2 | ULTIMO MINUTO | 7,3 | 7,4 | 8,32 | -12,3 % | L.BOISSEAU | 37/186/34/154 |
+| 7 | EGERIA | 7,3 | 14 | 7,98 | -8,6 % | A.HAMELIN | 23/505/3327/1478 |
+| 6 | OLYMPE DU QUESTEL | 12 | 12 | 13,03 | -7,9 % | P.BAZIRE | 57/69/4011/5201 |
+| 11 | SAINT JIMMY | 17 | 11 | 25,14 | -32,4 % | A.DUQUESNOY | 122/206/1159/1063 |
+| 12 | LADY DANAE | 18 | 28 | 22,86 | -21,3 % | B.MARIE | 63/159/2401/164 |
 
 ### 3. PRIX DU CROISE-LAROCHE
 
