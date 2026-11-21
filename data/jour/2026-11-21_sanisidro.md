@@ -1,8 +1,8 @@
 # SAN ISIDRO — 21/11/2026
 
-6 courses.
+6 courses (2 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -12,10 +12,10 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | GIVE IT ALL | – | KEVIN BANEGAS |
+| 1 | GIVE IT ALL | 1,7 | KEVIN BANEGAS |
+| 4 | DONA TAIFA | 1,7 | NON COMMUNIQUE 1 |
 | 2 | PLAYA CLARA | – | IVAN MONASTEROLO |
 | 3 | RAIN TRIGGER | – | WILLIAM PEREYRA |
-| 4 | DONA TAIFA | – | NON COMMUNIQUE 1 |
 | 5 | SEISENA FRANK | – | BRIAN RODRIGO ENRIQUE |
 | 6 | ECOUTE MOI | – | LAUTARO EMMANUEL BALMACEDA |
 | 7 | THE GREAT WAR | – | ANIBAL JOSE CABRERA |
@@ -87,6 +87,9 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 11 | GIAPONESE | 2,6 | CRISTIAN ERNESTO VELAZQUEZ |
+| 12 | DON LABRADOR | 2,6 | BRIAN RODRIGO ENRIQUE |
+| 14 | SIMPLE RULE | 2,6 | NON COMMUNIQUE |
 | 1 | EXCELLENT CHAMP | – | IVAN MONASTEROLO |
 | 2 | GO PETER GO | – | JORGE MARCELINO ORTIZ |
 | 3 | HI MOHMIX | – | JORGE LUIS PERALTA |
@@ -97,7 +100,4 @@
 | 8 | TIGRE DE BENGALA | – | LEO NICOLAS ACUNA |
 | 9 | CASINO JACK | – | FRANCISCO LEANDRO FERNANDES GONC |
 | 10 | TOTTENHAM | – | FACUNDO MARCELO CORIA |
-| 11 | GIAPONESE | – | CRISTIAN ERNESTO VELAZQUEZ |
-| 12 | DON LABRADOR | – | BRIAN RODRIGO ENRIQUE |
 | 13 | YOUNG SEA | – | PABLO DAMIAN CARRIZO |
-| 14 | SIMPLE RULE | – | NON COMMUNIQUE |
