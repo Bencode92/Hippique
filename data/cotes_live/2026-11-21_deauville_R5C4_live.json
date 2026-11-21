@@ -4,62 +4,62 @@
   "reunion": 5,
   "heure_depart": 1795283580000,
   "distance": 1900,
-  "scraped_at": "2026-11-21T18:44:39.475781+01:00",
-  "minutes_avant_depart": 8,
+  "scraped_at": "2026-11-21T18:47:59.359982+01:00",
+  "minutes_avant_depart": 5,
   "participants": [
     {
       "numPmu": 1,
       "nom": "PRIMA LUCE",
-      "cote_live": 5.2,
+      "cote_live": 5.4,
       "cote_reference": 3.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795283055000
+      "timestamp_cote": 1795283253000
     },
     {
       "numPmu": 2,
       "nom": "NO LIMIT PRECIEUSE",
-      "cote_live": 31.0,
+      "cote_live": 32.0,
       "cote_reference": 30.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795283055000
+      "timestamp_cote": 1795283253000
     },
     {
       "numPmu": 4,
       "nom": "ARMSTRONG GLORY",
-      "cote_live": 4.5,
+      "cote_live": 4.2,
       "cote_reference": 5.7,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1795283055000
+      "favoris": true,
+      "timestamp_cote": 1795283253000
     },
     {
       "numPmu": 5,
       "nom": "FILLETTE DU HOULEY",
-      "cote_live": 4.1,
+      "cote_live": 4.4,
       "cote_reference": 3.0,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1795283055000
+      "favoris": false,
+      "timestamp_cote": 1795283253000
     },
     {
       "numPmu": 6,
       "nom": "GRAND MARRAKCHI",
-      "cote_live": 10.0,
+      "cote_live": 9.9,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795283055000
+      "timestamp_cote": 1795283253000
     },
     {
       "numPmu": 7,
       "nom": "CAPITOL HILL",
-      "cote_live": 9.8,
+      "cote_live": 10.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795283055000
+      "timestamp_cote": 1795283253000
     },
     {
       "numPmu": 8,
@@ -68,25 +68,25 @@
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795283055000
+      "timestamp_cote": 1795283253000
     },
     {
       "numPmu": 9,
       "nom": "TCHIKITA",
-      "cote_live": 18.0,
+      "cote_live": 17.0,
       "cote_reference": 21.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795283055000
+      "timestamp_cote": 1795283253000
     },
     {
       "numPmu": 10,
       "nom": "JOUR DE COEUR",
-      "cote_live": 9.4,
+      "cote_live": 8.4,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795283055000
+      "timestamp_cote": 1795283253000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -179,6 +179,36 @@
         "8": 10.0,
         "9": 18.0,
         "10": 9.4
+      }
+    },
+    {
+      "scraped_at": "2026-11-21T18:47:19.428733+01:00",
+      "minutes_avant_depart": 5.679568033333334,
+      "cotes": {
+        "1": 5.3,
+        "2": 32.0,
+        "4": 4.4,
+        "5": 4.3,
+        "6": 10.0,
+        "7": 10.0,
+        "8": 10.0,
+        "9": 17.0,
+        "10": 8.6
+      }
+    },
+    {
+      "scraped_at": "2026-11-21T18:47:59.359982+01:00",
+      "minutes_avant_depart": 5.0129004,
+      "cotes": {
+        "1": 5.4,
+        "2": 32.0,
+        "4": 4.2,
+        "5": 4.4,
+        "6": 9.9,
+        "7": 10.0,
+        "8": 10.0,
+        "9": 17.0,
+        "10": 8.4
       }
     }
   ]
