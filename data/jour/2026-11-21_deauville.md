@@ -85,18 +85,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DES ROUGES BARRES
 
-*19h57 · plat · 1900 m · 8 partants · cotes à T−8:21*
+*19h57 · plat · 1900 m · 8 partants · cotes à T−5:20*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | PETITE ABEILLE | 3,9 | 3,9 | 4,33 | -10,0 % | M.VELON | 27/28/1874/505 |
-| 1 | PLAY THE GAME | 4,7 | 12 | 4,76 | -1,3 % | A. MADAMET | 12/82/184/21 |
-| 4 | TOMOE GOZEN | 5,1 | 3,1 | 5,52 | -7,7 % | H.BOUTIN | 17/33/21/2790 |
-| 3 | AREV | 6,5 | 10 | 7,56 | -14,1 % | L.GROSSO | 134/124/413/2741 |
-| 7 | TANA MA | 7,1 | 6,4 | 8,38 | -15,3 % | G.MEURY | 73/25/22/195 |
-| 6 | DARYOZA | 14 | 18 | 16,59 | -15,6 % | S.TISON | 108/137/398/598 |
-| 5 | ALINKA | 17 | 12 | 20,80 | -18,3 % | L.GALLO | 47/21/42/2388 |
-| 8 | VOGUE A L'AME | 17 | 10 | 21,76 | -21,9 % | C.CARBONI | 111/152/199/1823 |
+| 2 | PETITE ABEILLE | 3,8 | 3,9 | 4,22 | -9,9 % | M.VELON | 27/28/1874/505 |
+| 1 | PLAY THE GAME | 4,3 | 12 | 4,33 | -0,7 % | A. MADAMET | 12/82/184/21 |
+| 4 | TOMOE GOZEN | 5,6 | 3,1 | 6,14 | -8,7 % | H.BOUTIN | 17/33/21/2790 |
+| 3 | AREV | 6,6 | 10 | 7,70 | -14,3 % | L.GROSSO | 134/124/413/2741 |
+| 7 | TANA MA | 7 | 6,4 | 8,25 | -15,1 % | G.MEURY | 73/25/22/195 |
+| 6 | DARYOZA | 12 | 18 | 13,87 | -13,5 % | S.TISON | 108/137/398/598 |
+| 5 | ALINKA | 20 | 12 | 27,54 | -27,4 % | L.GALLO | 47/21/42/2388 |
+| 8 | VOGUE A L'AME | 21 | 10 | 27,81 | -24,5 % | C.CARBONI | 111/152/199/1823 |
 
 ### 7. PRIX DE LA RUE EGALITE
 
