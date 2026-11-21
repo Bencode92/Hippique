@@ -115,15 +115,15 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DU QUESNE
 
-*20h59 · plat · 2500 m · 8 partants · cotes à T−29:40*
+*20h59 · plat · 2500 m · 8 partants · cotes à T−25:00*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 5 | WINGS OF FIRE | 4,5 | 2,3 | 6,13 | -26,5 % | A.CRASTUS | 15/400/200/242 |
-| 4 | LA CRACK PRECIEUSE | 4,6 | 6,6 | 4,58 | **+0,4 %** | P.REMOUE | 35/212/263/227 |
-| 2 | MISTER POWER | 6,5 | 7,5 | 6,71 | -3,1 % | J.MOUTARD | 42/428/437/1010 |
-| 7 | KIROZ | 7,4 | 8,9 | 8,63 | -14,2 % | P.CHEYER | 101/435/3109/1066 |
-| 8 | NATH SHOW | 8,1 | 8,9 | 7,93 | **+2,1 %** | J.CLAUDIC | 40/147/40/1676 |
-| 10 | SOHO VICKY | 8,4 | 13 | 10,19 | -17,6 % | C.CARBONI | 111/400/303/242 |
-| 9 | L'ENNEMI | 9,1 | 16 | 9,06 | **+0,4 %** | A.DUQUESNOY | 122/206/10/4549 |
-| 1 | ASHIANAS KING | 15 | 13 | 17,67 | -15,1 % | L.WOLFF | 142/920/3820/5359 |
+| 5 | WINGS OF FIRE | 4,6 | 2,3 | 6,02 | -23,6 % | A.CRASTUS | 15/400/200/242 |
+| 4 | LA CRACK PRECIEUSE | 5 | 6,6 | 4,82 | **+3,8 %** | P.REMOUE | 35/212/263/227 |
+| 2 | MISTER POWER | 5,9 | 7,5 | 6,01 | -1,8 % | J.MOUTARD | 42/428/437/1010 |
+| 8 | NATH SHOW | 7,8 | 8,9 | 7,59 | **+2,8 %** | J.CLAUDIC | 40/147/40/1676 |
+| 9 | L'ENNEMI | 8,2 | 16 | 8,03 | **+2,1 %** | A.DUQUESNOY | 122/206/10/4549 |
+| 7 | KIROZ | 8,6 | 8,9 | 10,27 | -16,2 % | P.CHEYER | 101/435/3109/1066 |
+| 10 | SOHO VICKY | 9,8 | 13 | 12,20 | -19,7 % | C.CARBONI | 111/400/303/242 |
+| 1 | ASHIANAS KING | 11 | 13 | 11,26 | -2,3 % | L.WOLFF | 142/920/3820/5359 |
