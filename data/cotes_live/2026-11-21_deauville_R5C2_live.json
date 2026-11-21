@@ -4,80 +4,80 @@
   "reunion": 5,
   "heure_depart": 1795279440000,
   "distance": 1900,
-  "scraped_at": "2026-11-21T17:14:11.610970+01:00",
-  "minutes_avant_depart": 30,
+  "scraped_at": "2026-11-21T17:18:12.008025+01:00",
+  "minutes_avant_depart": 26,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MIA RARE",
-      "cote_live": 5.5,
+      "cote_live": 9.8,
       "cote_reference": 7.2,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795276849000
+      "timestamp_cote": 1795277865000
     },
     {
       "numPmu": 2,
       "nom": "ULTIMO MINUTO",
-      "cote_live": 7.3,
+      "cote_live": 8.7,
       "cote_reference": 7.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795276849000
+      "timestamp_cote": 1795277865000
     },
     {
       "numPmu": 5,
       "nom": "INDIAN BELLE",
-      "cote_live": 3.0,
+      "cote_live": 2.8,
       "cote_reference": 3.3,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1795276849000
+      "timestamp_cote": 1795277865000
     },
     {
       "numPmu": 6,
       "nom": "OLYMPE DU QUESTEL",
-      "cote_live": 12.0,
+      "cote_live": 14.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795276849000
+      "timestamp_cote": 1795277865000
     },
     {
       "numPmu": 7,
       "nom": "EGERIA",
-      "cote_live": 7.3,
+      "cote_live": 4.9,
       "cote_reference": 7.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795276849000
+      "timestamp_cote": 1795277865000
     },
     {
       "numPmu": 8,
       "nom": "JISIR",
-      "cote_live": 6.1,
+      "cote_live": 6.2,
       "cote_reference": 5.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795276849000
+      "timestamp_cote": 1795277865000
     },
     {
       "numPmu": 11,
       "nom": "SAINT JIMMY",
-      "cote_live": 17.0,
+      "cote_live": 16.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795276849000
+      "timestamp_cote": 1795277865000
     },
     {
       "numPmu": 12,
       "nom": "LADY DANAE",
-      "cote_live": 18.0,
+      "cote_live": 14.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795276849000
+      "timestamp_cote": 1795277865000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -94,6 +94,20 @@
         "8": 6.1,
         "11": 17.0,
         "12": 18.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-21T17:18:12.008025+01:00",
+      "minutes_avant_depart": 25.802028216666667,
+      "cotes": {
+        "1": 9.8,
+        "2": 8.7,
+        "5": 2.8,
+        "6": 14.0,
+        "7": 4.9,
+        "8": 6.2,
+        "11": 16.0,
+        "12": 14.0
       }
     }
   ]
