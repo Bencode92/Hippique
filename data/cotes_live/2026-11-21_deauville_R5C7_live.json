@@ -4,8 +4,8 @@
   "reunion": 5,
   "heure_depart": 1795289340000,
   "distance": 2500,
-  "scraped_at": "2026-11-21T20:03:59.589238+01:00",
-  "minutes_avant_depart": 25,
+  "scraped_at": "2026-11-21T20:08:39.693058+01:00",
+  "minutes_avant_depart": 20,
   "participants": [
     {
       "numPmu": 3,
@@ -14,25 +14,25 @@
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795287819000
+      "timestamp_cote": 1795288105000
     },
     {
       "numPmu": 4,
       "nom": "DSCHINGIS POWER",
-      "cote_live": 31.0,
+      "cote_live": 33.0,
       "cote_reference": 32.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795287819000
+      "timestamp_cote": 1795288105000
     },
     {
       "numPmu": 5,
       "nom": "KEEP AWAY",
-      "cote_live": 3.3,
+      "cote_live": 3.4,
       "cote_reference": 3.3,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1795287819000
+      "timestamp_cote": 1795288105000
     },
     {
       "numPmu": 6,
@@ -41,43 +41,43 @@
       "cote_reference": 13.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795287819000
+      "timestamp_cote": 1795288105000
     },
     {
       "numPmu": 7,
       "nom": "FEELINGNUIT",
-      "cote_live": 3.6,
+      "cote_live": 3.5,
       "cote_reference": 3.4,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795287819000
+      "timestamp_cote": 1795288105000
     },
     {
       "numPmu": 8,
       "nom": "GOT FLOWER",
-      "cote_live": 4.6,
+      "cote_live": 4.9,
       "cote_reference": 4.7,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795287819000
+      "timestamp_cote": 1795288105000
     },
     {
       "numPmu": 9,
       "nom": "EASTERN STAR",
-      "cote_live": 11.0,
+      "cote_live": 10.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795287819000
+      "timestamp_cote": 1795288105000
     },
     {
       "numPmu": 11,
       "nom": "COMBERMERE",
-      "cote_live": 14.0,
+      "cote_live": 12.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795287819000
+      "timestamp_cote": 1795288105000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -108,6 +108,20 @@
         "8": 4.6,
         "9": 11.0,
         "11": 14.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-21T20:08:39.693058+01:00",
+      "minutes_avant_depart": 20.34598736666667,
+      "cotes": {
+        "3": 13.0,
+        "4": 33.0,
+        "5": 3.4,
+        "6": 12.0,
+        "7": 3.5,
+        "8": 4.9,
+        "9": 10.0,
+        "11": 12.0
       }
     }
   ]
