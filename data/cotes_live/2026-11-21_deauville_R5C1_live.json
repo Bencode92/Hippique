@@ -4,80 +4,80 @@
   "reunion": 5,
   "heure_depart": 1795277040000,
   "distance": 1900,
-  "scraped_at": "2026-11-21T17:04:11.558321+01:00",
-  "minutes_avant_depart": 0,
+  "scraped_at": "2026-11-21T17:06:51.563017+01:00",
+  "minutes_avant_depart": -3,
   "participants": [
     {
       "numPmu": 2,
       "nom": "WINDFANG",
-      "cote_live": 26.0,
+      "cote_live": 27.0,
       "cote_reference": 26.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795277045000
+      "timestamp_cote": 1795277205000
     },
     {
       "numPmu": 4,
       "nom": "DRUMARD",
-      "cote_live": 3.9,
+      "cote_live": 4.4,
       "cote_reference": 5.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795277045000
+      "timestamp_cote": 1795277205000
     },
     {
       "numPmu": 5,
       "nom": "SABROSO",
-      "cote_live": 5.3,
+      "cote_live": 4.3,
       "cote_reference": 6.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795277045000
+      "timestamp_cote": 1795277205000
     },
     {
       "numPmu": 6,
       "nom": "GALAGHER",
-      "cote_live": 54.0,
+      "cote_live": 53.0,
       "cote_reference": 49.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795277045000
+      "timestamp_cote": 1795277205000
     },
     {
       "numPmu": 7,
       "nom": "WANDERLUST",
-      "cote_live": 13.0,
+      "cote_live": 11.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795277045000
+      "timestamp_cote": 1795277205000
     },
     {
       "numPmu": 8,
       "nom": "PRINCIPE",
-      "cote_live": 8.6,
+      "cote_live": 7.3,
       "cote_reference": 3.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795277045000
+      "timestamp_cote": 1795277205000
     },
     {
       "numPmu": 9,
       "nom": "CLIMATE CHANGE",
-      "cote_live": 3.6,
+      "cote_live": 3.9,
       "cote_reference": 3.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1795277045000
+      "timestamp_cote": 1795277205000
     },
     {
       "numPmu": 10,
       "nom": "SEDANO",
-      "cote_live": 5.7,
+      "cote_live": 6.8,
       "cote_reference": 7.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795277045000
+      "timestamp_cote": 1795277205000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -248,6 +248,62 @@
         "8": 8.6,
         "9": 3.6,
         "10": 5.7
+      }
+    },
+    {
+      "scraped_at": "2026-11-21T17:04:52.173060+01:00",
+      "minutes_avant_depart": -0.8657707499999999,
+      "cotes": {
+        "2": 26.0,
+        "4": 4.1,
+        "5": 5.2,
+        "6": 59.0,
+        "7": 12.0,
+        "8": 8.2,
+        "9": 3.5,
+        "10": 5.9
+      }
+    },
+    {
+      "scraped_at": "2026-11-21T17:05:31.579370+01:00",
+      "minutes_avant_depart": -1.5237361999999999,
+      "cotes": {
+        "2": 25.0,
+        "4": 4.3,
+        "5": 4.7,
+        "6": 63.0,
+        "7": 12.0,
+        "8": 7.5,
+        "9": 3.6,
+        "10": 6.3
+      }
+    },
+    {
+      "scraped_at": "2026-11-21T17:06:11.551351+01:00",
+      "minutes_avant_depart": -2.1904049333333333,
+      "cotes": {
+        "2": 27.0,
+        "4": 4.3,
+        "5": 4.4,
+        "6": 60.0,
+        "7": 12.0,
+        "8": 7.4,
+        "9": 3.8,
+        "10": 6.4
+      }
+    },
+    {
+      "scraped_at": "2026-11-21T17:06:51.563017+01:00",
+      "minutes_avant_depart": -2.8570735,
+      "cotes": {
+        "2": 27.0,
+        "4": 4.4,
+        "5": 4.3,
+        "6": 53.0,
+        "7": 11.0,
+        "8": 7.3,
+        "9": 3.9,
+        "10": 6.8
       }
     }
   ]
