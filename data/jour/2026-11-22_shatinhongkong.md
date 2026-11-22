@@ -1,8 +1,8 @@
 # SHA TIN (HONG KONG) — 22/11/2026
 
-6 courses.
+6 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -12,20 +12,20 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | CROSSBORDERPEGASUS | – | ATZENI A. |
-| 2 | PI LEGEND | – | TEETAN K. |
-| 3 | PAKISTAN LEGACY | – | ORMAN J. |
-| 4 | GALACTIC VOYAGE | – | MCMONAGLE D.B. |
-| 5 | LEADING ADVANTAGE | – | HO C.Y. |
-| 6 | AUTUMN KING | – | CHAU C.L. |
-| 7 | ROMANTIC GLADIATOR | – | MCDONALD J. |
-| 8 | SILENT FORGE | – | OSBORNE S. |
-| 9 | SO YOU IMAGINE | – | BADEL A. |
-| 10 | DASHING MARS | – | CHADWICK M. |
-| 11 | GOUKEN | – | LEUNG K.C. |
-| 12 | IT IS YOU | – | HEWITSON L. |
-| 13 | SCORCHING LEGEND | – | BENTLEY H. |
-| 14 | COME FAST FAY FAY | – | KINGSCOTE R. |
+| 1 | CROSSBORDERPEGASUS | 3,9 | ATZENI A. |
+| 6 | AUTUMN KING | 4,2 | CHAU C.L. |
+| 2 | PI LEGEND | 4,8 | TEETAN K. |
+| 9 | SO YOU IMAGINE | 5,9 | BADEL A. |
+| 3 | PAKISTAN LEGACY | 15 | ORMAN J. |
+| 4 | GALACTIC VOYAGE | 15 | MCMONAGLE D.B. |
+| 13 | SCORCHING LEGEND | 24 | BENTLEY H. |
+| 5 | LEADING ADVANTAGE | 25 | HO C.Y. |
+| 8 | SILENT FORGE | 28 | OSBORNE S. |
+| 7 | ROMANTIC GLADIATOR | 32 | MCDONALD J. |
+| 11 | GOUKEN | 46 | LEUNG K.C. |
+| 12 | IT IS YOU | 54 | HEWITSON L. |
+| 14 | COME FAST FAY FAY | 61 | KINGSCOTE R. |
+| 10 | DASHING MARS | 120 | CHADWICK M. |
 
 ### 6. BOC CREDIT CARD HANDICAP
 
@@ -33,18 +33,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | BRAVEFIELD | – | PURTON Z. |
-| 2 | KINGSFIELD | – | MCDONALD J. |
-| 3 | LIVEANDLETLIVE | – | TEETAN K. |
-| 4 | SERAPH GABRIEL | – | MCMONAGLE D.B. |
-| 5 | POCKETING | – | AVDULLA B. |
-| 6 | ENTHUSIUM | – | ATZENI A. |
-| 7 | BIG RETURN | – | BADEL A. |
-| 8 | FAMILY JEWEL | – | FERRARIS L. |
-| 9 | MIGHTY STRENGTH | – | YUEN H.Y. |
-| 10 | THE AUSPICIOUS | – | YEUNG M.L. |
-| 11 | FORTUNE BOY | – | BENTLEY H. |
-| 12 | SUPER GOLDENDRAGON | – | OSBORNE S. |
+| 12 | SUPER GOLDENDRAGON | 4 | OSBORNE S. |
+| 4 | SERAPH GABRIEL | 4,8 | MCMONAGLE D.B. |
+| 6 | ENTHUSIUM | 5,5 | ATZENI A. |
+| 7 | BIG RETURN | 5,8 | BADEL A. |
+| 1 | BRAVEFIELD | 9 | PURTON Z. |
+| 5 | POCKETING | 14 | AVDULLA B. |
+| 2 | KINGSFIELD | 15 | MCDONALD J. |
+| 3 | LIVEANDLETLIVE | 19 | TEETAN K. |
+| 11 | FORTUNE BOY | 22 | BENTLEY H. |
+| 8 | FAMILY JEWEL | 38 | FERRARIS L. |
+| 9 | MIGHTY STRENGTH | 47 | YUEN H.Y. |
+| 10 | THE AUSPICIOUS | 64 | YEUNG M.L. |
 
 ### 7. THE BOCHK PRIVATE BANKING JOCKEY CLUB SPRINT
 
@@ -52,12 +52,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KA YING RISING | – | PURTON Z. |
-| 2 | RAGING BLIZZARD | – | AVDULLA B. |
-| 3 | BOTTOMUPTOGETHER | – | BADEL A. |
-| 4 | CRIMSON FLASH | – | ATZENI A. |
-| 5 | KA YING ATTACK | – | POON M.F. |
-| 6 | SING DRAGON | – | CHADWICK M. |
+| 1 | KA YING RISING | 1,05 | PURTON Z. |
+| 2 | RAGING BLIZZARD | 63 | AVDULLA B. |
+| 5 | KA YING ATTACK | 88 | POON M.F. |
+| 4 | CRIMSON FLASH | 108 | ATZENI A. |
+| 3 | BOTTOMUPTOGETHER | 147 | BADEL A. |
+| 6 | SING DRAGON | 224 | CHADWICK M. |
 
 ### 8. THE BOCHK PRIVATE WEALTH JOCKEY CLUB MILE
 
@@ -65,15 +65,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MY WISH | – | PURTON Z. |
-| 2 | HELIOS EXPRESS | – | ATZENI A. |
-| 3 | GALAXY PATCH | – | TEETAN K. |
-| 4 | COPARTNER PRANCE | – | MCMONAGLE D.B. |
-| 5 | BEAUTY JOY | – | OSBORNE S. |
-| 6 | PATCH OF THETA | – | POON M.F. |
-| 7 | LIGHT YEARS CHARM | – | CHAU C.L. |
-| 8 | LITTLE PARADISE | – | MCDONALD J. |
-| 9 | STORMY GROVE | – | LEUNG K.C. |
+| 1 | MY WISH | 2,8 | PURTON Z. |
+| 3 | GALAXY PATCH | 3,8 | TEETAN K. |
+| 8 | LITTLE PARADISE | 4,8 | MCDONALD J. |
+| 7 | LIGHT YEARS CHARM | 10 | CHAU C.L. |
+| 4 | COPARTNER PRANCE | 10 | MCMONAGLE D.B. |
+| 2 | HELIOS EXPRESS | 11 | ATZENI A. |
+| 6 | PATCH OF THETA | 20 | POON M.F. |
+| 9 | STORMY GROVE | 31 | LEUNG K.C. |
+| 5 | BEAUTY JOY | 50 | OSBORNE S. |
 
 ### 9. THE BOCHK JOCKEY CLUB CUP
 
@@ -81,15 +81,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | VOYAGE BUBBLE | – | ORMAN J. |
-| 2 | NUMBERS | – | LEUNG K.C. |
-| 4 | ENSUED | – | MCMONAGLE D.B. |
-| 5 | ROMANTIC THOR | – | POON M.F. |
-| 6 | WINNING WING | – | CHAU C.L. |
-| 7 | KA YING GENERATION | – | ATZENI A. |
-| 8 | GENTLEMEN LEGACY | – | BADEL A. |
-| 9 | MASSIVE SOVEREIGN | – | PURTON Z. |
-| 10 | SILVERY BREEZE | – | FERRARIS L. |
+| 9 | MASSIVE SOVEREIGN | 3 | PURTON Z. |
+| 2 | NUMBERS | 3,6 | LEUNG K.C. |
+| 6 | WINNING WING | 6,1 | CHAU C.L. |
+| 8 | GENTLEMEN LEGACY | 6,5 | BADEL A. |
+| 1 | VOYAGE BUBBLE | 8,3 | ORMAN J. |
+| 4 | ENSUED | 18 | MCMONAGLE D.B. |
+| 7 | KA YING GENERATION | 19 | ATZENI A. |
+| 10 | SILVERY BREEZE | 23 | FERRARIS L. |
+| 5 | ROMANTIC THOR | 52 | POON M.F. |
 
 ### 10. BOCHK BOC PAY+ HANDICAP
 
@@ -97,17 +97,17 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | CHILL BUDDY | – | CHAU C.L. |
-| 2 | INSPIRED LEGEND | – | WONG E.C.W. |
-| 3 | NYX GLUCK | – | PURTON Z. |
-| 4 | ENTERPRISE TRIUMPH | – | TEETAN K. |
-| 5 | CONTINENT EXPRESS | – | ORMAN J. |
-| 6 | SUPER STRONG KID | – | KINGSCOTE R. |
-| 7 | BEAUTY OF POWER | – | BADEL A. |
-| 8 | SILK MASTER | – | ATZENI A. |
-| 9 | STAY COSMIC | – | MO H.T. |
-| 10 | KING OF THE SKY | – | LEUNG K.C. |
-| 11 | LEATHER HERO | – | OSBORNE S. |
-| 12 | NEGENTROPY | – | CHADWICK M. |
-| 13 | GREAT LEGEND | – | POON M.F. |
-| 14 | ZHUANG YUAN GLORY | – | YEUNG M.L. |
+| 3 | NYX GLUCK | 1,8 | PURTON Z. |
+| 8 | SILK MASTER | 5,1 | ATZENI A. |
+| 1 | CHILL BUDDY | 8,4 | CHAU C.L. |
+| 7 | BEAUTY OF POWER | 16 | BADEL A. |
+| 12 | NEGENTROPY | 16 | CHADWICK M. |
+| 6 | SUPER STRONG KID | 17 | KINGSCOTE R. |
+| 5 | CONTINENT EXPRESS | 21 | ORMAN J. |
+| 4 | ENTERPRISE TRIUMPH | 34 | TEETAN K. |
+| 10 | KING OF THE SKY | 49 | LEUNG K.C. |
+| 9 | STAY COSMIC | 59 | MO H.T. |
+| 2 | INSPIRED LEGEND | 74 | MCMONAGLE D.B. |
+| 11 | LEATHER HERO | 80 | OSBORNE S. |
+| 14 | ZHUANG YUAN GLORY | 118 | YEUNG M.L. |
+| 13 | GREAT LEGEND | 173 | POON M.F. |

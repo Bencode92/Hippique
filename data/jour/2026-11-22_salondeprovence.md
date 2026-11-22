@@ -1,8 +1,8 @@
 # SALON DE PROVENCE — 22/11/2026
 
-7 courses.
+7 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
@@ -12,18 +12,18 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | NAGELE DE L'ETOILE | – | L. GOETZ |
-| 2 | NEPTUNE BLEU | – | N. CORMY |
-| 3 | NEVADA DE BEYLEV | – | F. BROUST |
-| 4 | NO LIMIT SMILE | – | NICOLAS GERMAIN LEFEVRE |
-| 5 | NINO DU CAP | – | N. ENSCH |
-| 6 | NEMESIA FLEURY | – | Y.A. BRIAND |
-| 7 | NOISETTE | – | N. JULIEN |
-| 8 | NAFISA MENUET | – | TH. BRIAND |
-| 9 | NOTHING GEKA | – | E. GOUT |
-| 10 | NO DOUBT DU SAPTEL | – | J.CH. FERON |
-| 11 | NOEMIE RIDGEHEAD | – | D. BEKAERT |
-| 12 | NAMTSO DU VALO | – | O. MERLE |
+| 1 | NAGELE DE L'ETOILE | 5 | L. GOETZ |
+| 11 | NOEMIE RIDGEHEAD | 5,6 | D. BEKAERT |
+| 2 | NEPTUNE BLEU | 6,1 | N. CORMY |
+| 8 | NAFISA MENUET | 6,7 | TH. BRIAND |
+| 7 | NOISETTE | 7,4 | N. JULIEN |
+| 10 | NO DOUBT DU SAPTEL | 10 | J.CH. FERON |
+| 5 | NINO DU CAP | 15 | N. ENSCH |
+| 12 | NAMTSO DU VALO | 21 | O. MERLE |
+| 4 | NO LIMIT SMILE | 25 | NICOLAS GERMAIN LEFEVRE |
+| 6 | NEMESIA FLEURY | 33 | Y.A. BRIAND |
+| 9 | NOTHING GEKA | 43 | E. GOUT |
+| 3 | NEVADA DE BEYLEV | 50 | F. BROUST |
 
 ### 2. PRIX DE LA METROPOLE
 
@@ -31,20 +31,20 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | MAJOR CHANTEREINE | – | TH. BRIAND |
-| 2 | MACUMBA DESBOIS | – | N. MORTAGNE |
-| 3 | MELIA DE MONGOCHY | – | G. TOURON |
-| 4 | MONA DU FER | – | L. GOETZ |
-| 5 | MOOREA | – | TH. GOUT |
-| 6 | MADGIC STRYCK | – | S. STEFANO |
-| 7 | MISS MARGOT | – | F. TUGEND |
-| 8 | MYSTERE TURGOT | – | Y.A. BRIAND |
-| 9 | MAMBA DES DURIEZ | – | R. GOUT |
-| 10 | MAMBO DE CAHOT | – | MICKAEL CORMY |
-| 11 | MUSE DU VALLON | – | N. ENSCH |
-| 12 | MAFIOSO DREAM | – | H. SOREL |
-| 13 | MENHIR | – | X. BOVAY |
-| 14 | MISTER DES LOYAUX | – | D. BEKAERT |
+| 14 | MISTER DES LOYAUX | 2,4 | D. BEKAERT |
+| 13 | MENHIR | 4,9 | X. BOVAY |
+| 1 | MAJOR CHANTEREINE | 5,8 | TH. BRIAND |
+| 4 | MONA DU FER | 9,5 | L. GOETZ |
+| 2 | MACUMBA DESBOIS | 19 | N. MORTAGNE |
+| 10 | MAMBO DE CAHOT | 22 | MICKAEL CORMY |
+| 6 | MADGIC STRYCK | 22 | S. STEFANO |
+| 11 | MUSE DU VALLON | 23 | N. ENSCH |
+| 7 | MISS MARGOT | 35 | F. TUGEND |
+| 8 | MYSTERE TURGOT | 60 | Y.A. BRIAND |
+| 5 | MOOREA | 85 | TH. GOUT |
+| 3 | MELIA DE MONGOCHY | 154 | G. TOURON |
+| 9 | MAMBA DES DURIEZ | 182 | R. GOUT |
+| 12 | MAFIOSO DREAM | 236 | H. SOREL |
 
 ### 3. PRIX HUBERT SARRAZIN
 
@@ -52,17 +52,17 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | KOOL ANGOT | – | TH. GOUT |
-| 2 | KING DES FONTAINES | – | A. CURY |
-| 3 | KOCKTAIL | – | E. BRIAND |
-| 4 | KINGSTON SPORT | – | C. TRIBOLET |
-| 5 | KYLIO DE BERTRANGE | – | L. AUDEBERT |
-| 6 | KARMA KILY | – | Mme CH. MASSELON |
-| 7 | KAISER DU PERSIL | – | M. CINIER |
-| 8 | KEL COPAIN | – | H. SOREL |
-| 9 | KURLING ATOUT | – | N. CINIER |
-| 10 | KACY AND GEPE | – | G. TUGEND |
-| 11 | KYRIELLE D'ALBRET | – | M. DEMISSY |
+| 3 | KOCKTAIL | 2,8 | E. BRIAND |
+| 10 | KACY AND GEPE | 5,5 | G. TUGEND |
+| 8 | KEL COPAIN | 7,8 | H. SOREL |
+| 7 | KAISER DU PERSIL | 7,8 | M. CINIER |
+| 9 | KURLING ATOUT | 8,3 | N. CINIER |
+| 11 | KYRIELLE D'ALBRET | 13 | M. DEMISSY |
+| 4 | KINGSTON SPORT | 13 | C. TRIBOLET |
+| 2 | KING DES FONTAINES | 33 | A. CURY |
+| 5 | KYLIO DE BERTRANGE | 37 | L. AUDEBERT |
+| 6 | KARMA KILY | 81 | Mme CH. MASSELON |
+| 1 | KOOL ANGOT | 175 | TH. GOUT |
 
 ### 4. PRIX DE SAULT
 
@@ -70,20 +70,20 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | LASCO DE BERTRANGE | – | L. AUDEBERT |
-| 2 | LOULOU CEMAX | – | A. CINGLAND |
-| 3 | LITTLE KING ELEVEN | – | C. TOUSSAINT |
-| 4 | LINEA DE CRENNES | – | Mlle C. THONNEL |
-| 5 | LOULOU DU SABLIER | – | ST. CORBIN |
-| 6 | LINGFIELD | – | A. CURY |
-| 7 | LASER QUICK | – | E. BRIAND |
-| 8 | LA QUICK | – | N. CORMY |
-| 9 | LEADER WINNER | – | TH. GOUT |
-| 10 | LEIKA HIGHLAND | – | M. CINIER |
-| 11 | LOUNA D'AUVILLIER | – | M. DEMISSY |
-| 12 | LEXKI DU GERS | – | C. TRIBOLET |
-| 13 | LAVINIA DES ILES | – | H. SOREL |
-| 14 | LOLA DU CHERISAY | – | G. TUGEND |
+| 9 | LEADER WINNER | 3,6 | TH. GOUT |
+| 14 | LOLA DU CHERISAY | 4 | G. TUGEND |
+| 2 | LOULOU CEMAX | 8,3 | A. CINGLAND |
+| 13 | LAVINIA DES ILES | 8,4 | H. SOREL |
+| 12 | LEXKI DU GERS | 10 | C. TRIBOLET |
+| 10 | LEIKA HIGHLAND | 14 | M. CINIER |
+| 7 | LASER QUICK | 16 | E. BRIAND |
+| 5 | LOULOU DU SABLIER | 21 | ST. CORBIN |
+| 6 | LINGFIELD | 29 | A. CURY |
+| 8 | LA QUICK | 46 | N. CORMY |
+| 11 | LOUNA D'AUVILLIER | 47 | M. DEMISSY |
+| 4 | LINEA DE CRENNES | 72 | Mlle C. THONNEL |
+| 1 | LASCO DE BERTRANGE | 102 | L. AUDEBERT |
+| 3 | LITTLE KING ELEVEN | 141 | C. TOUSSAINT |
 
 ### 5. PRIX DE CAVAILLON
 
@@ -91,15 +91,15 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | JOKER DE L'ETRE | – | D. BENHAMOU |
-| 2 | KRUNCH BOCNEUF | – | Mlle G. AMBROGIO |
-| 3 | JORDANA | – | S. TRIOMPHE |
-| 4 | JIMI'S BLUES | – | TH. CLAIRET |
-| 5 | HARMONICA | – | H. LAKHRISSI |
-| 6 | KEEP COOL | – | Mlle S. BLANCHETIERE |
-| 7 | JUAN PERRINE | – | PH. TERME |
-| 8 | HARMONIA THE BEST | – | Mme V. BOUDIER-CORMY |
-| 9 | GAETAN | – | J.J. BOUQUET |
+| 2 | KRUNCH BOCNEUF | 2,7 | Mlle G. AMBROGIO |
+| 6 | KEEP COOL | 3,3 | Mlle S. BLANCHETIERE |
+| 4 | JIMI'S BLUES | 8,2 | TH. CLAIRET |
+| 8 | HARMONIA THE BEST | 9,4 | Mme V. BOUDIER-CORMY |
+| 3 | JORDANA | 9,8 | S. TRIOMPHE |
+| 5 | HARMONICA | 20 | H. LAKHRISSI |
+| 7 | JUAN PERRINE | 24 | PH. TERME |
+| 9 | GAETAN | 24 | J.J. BOUQUET |
+| 1 | JOKER DE L'ETRE | 75 | D. BENHAMOU |
 
 ### 6. PRIX DE BEL AIR
 
@@ -107,20 +107,20 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | JOKERO BELLO | – | P. REPICHET |
-| 2 | JOLI CHARMEUR | – | H. SOREL |
-| 3 | JURITI | – | NICOLAS GERMAIN LEFEVRE |
-| 4 | KASHMIR DU GERS | – | TH. BRIAND |
-| 5 | ICARE DE MONTFORT | – | E. GOUT |
-| 6 | HATOUT DE CONNEE | – | D. BEKAERT |
-| 7 | ISA DE TOUCHYVON | – | J.CH. FERON |
-| 8 | KIEFFER D'OURVILLE | – | F. TUGEND |
-| 9 | KHEOPS AIREMME | – | L. LAMAZIERE |
-| 10 | IXIXELLE | – | Mme G. HERITIER |
-| 11 | JAZZY JOSSELYN | – | N. ENSCH |
-| 12 | KOOL CRISTAL | – | E. BRIAND |
-| 13 | JEEK D'ACADIE | – | G. TUGEND |
-| 14 | INDIC | – | S. STEFANO |
+| 8 | KIEFFER D'OURVILLE | 4,9 | F. TUGEND |
+| 4 | KASHMIR DU GERS | 5,4 | TH. BRIAND |
+| 11 | JAZZY JOSSELYN | 6 | N. ENSCH |
+| 12 | KOOL CRISTAL | 6,1 | E. BRIAND |
+| 9 | KHEOPS AIREMME | 9,3 | L. LAMAZIERE |
+| 6 | HATOUT DE CONNEE | 10 | D. BEKAERT |
+| 14 | INDIC | 17 | S. STEFANO |
+| 7 | ISA DE TOUCHYVON | 32 | J.CH. FERON |
+| 13 | JEEK D'ACADIE | 35 | G. TUGEND |
+| 5 | ICARE DE MONTFORT | 41 | E. GOUT |
+| 1 | JOKERO BELLO | 50 | P. REPICHET |
+| 2 | JOLI CHARMEUR | 50 | H. SOREL |
+| 10 | IXIXELLE | 50 | Mme G. HERITIER |
+| 3 | JURITI | 77 | NICOLAS GERMAIN LEFEVRE |
 
 ### 7. PRIX PHILIPPE MILLAN
 
@@ -128,13 +128,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | JALENCIO FLAC | – | L. DE GROOTE |
-| 2 | KAREN D'IRAI | – | D. PAULEAU |
-| 3 | KITUS DE BERTRANGE | – | N. RIZZO |
-| 4 | KASHMIR'S FELLA | – | J.M. LESAINT |
+| 9 | IMPRESARIO | 1,4 | Mlle S. BLANCHETIERE |
+| 7 | JIOSCO DE SAUZETTE | 7,9 | PH. TERME |
+| 1 | JALENCIO FLAC | 9,6 | L. DE GROOTE |
+| 8 | JUSTAGIGOLO SALLAZ | 16 | Mlle G. AMBROGIO |
+| 6 | IDAHODARCHE | 19 | L. LIGOT |
+| 10 | JAPON DAIRPET | 22 | M. BESNARD |
+| 3 | KITUS DE BERTRANGE | 26 | N. RIZZO |
+| 4 | KASHMIR'S FELLA | 26 | J.M. LESAINT |
+| 2 | KAREN D'IRAI | 134 | D. PAULEAU |
 | 5 | JOIE DE RENKA | – | J. MONTELEON |
-| 6 | IDAHODARCHE | – | L. LIGOT |
-| 7 | JIOSCO DE SAUZETTE | – | PH. TERME |
-| 8 | JUSTAGIGOLO SALLAZ | – | Mlle G. AMBROGIO |
-| 9 | IMPRESARIO | – | Mlle S. BLANCHETIERE |
-| 10 | JAPON DAIRPET | – | M. BESNARD |

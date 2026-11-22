@@ -1,14 +1,14 @@
 # BUNBURY AUSTRALIE — 22/11/2026
 
-3 courses.
+3 courses (2 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
 ### 5. DUNCAN EQUINE GROUP MAIDEN (1695 METRES)
 
-*09h19 · plat · 1695 m · 12 partants · cotes de l'extraction*
+*09h19 · plat · 1695 m · 10 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
@@ -16,31 +16,28 @@
 | 2 | KAIKALI | – | JORDAN TURNER |
 | 3 | BRAGGING RIGHTS | – | PAUL HARVEY |
 | 4 | SWEETER | – | JOEY AZZOPARDI |
-| 5 | ZALI'S GIFT | – | JARRAD NOSKE |
 | 6 | TABLE TALK | – | TROY TURNER |
 | 7 | DANCING SPIRIT | – | BRAYDEN GAERTH |
 | 8 | ARRESTEDEVELOPMENT | – | STEVEN PARNHAM |
 | 9 | SHE'S DA VAL | – | AUSTIN GALATI |
 | 10 | MONEY MANZIEL | – | HOLLY WATSON |
-| 11 | KASHMIRA | – | SHAUN O'DONNELL |
 | 12 | ANGEL CRAFT | – | JADE MCNAUGHT |
 
 ### 6. DG AIR SOUTH WEST HANDICAP (1695 METRES)
 
-*09h51 · plat · 1695 m · 10 partants · cotes de l'extraction*
+*09h51 · plat · 1695 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | FINAL CALL | – | JOEY AZZOPARDI |
-| 2 | BONDI KNIGHT | – | HOLLY WATSON |
-| 3 | BRODA | – | AUSTIN GALATI |
-| 4 | SIR TUA | – | CLINT JOHNSTON-PORTER |
-| 5 | SPIRITART | – | JADE MCNAUGHT |
-| 6 | OUR DEGREE | – | JESSICA GRAY |
-| 7 | SWING DANCER | – | LUCY FIORE |
-| 8 | ASTONISHER | – | NATASHA FAITHFULL |
-| 9 | BELLA VIOLETTA | – | SHAUN O'DONNELL |
-| 10 | SANDY CHEEKS | – | ZEPHEN JOHNSTON-PORTER |
+| 3 | BRODA | 1,9 | AUSTIN GALATI |
+| 2 | BONDI KNIGHT | 7,6 | HOLLY WATSON |
+| 9 | BELLA VIOLETTA | 8,1 | SHAUN O'DONNELL |
+| 7 | SWING DANCER | 9 | LUCY FIORE |
+| 4 | SIR TUA | 9,2 | CLINT JOHNSTON-PORTER |
+| 1 | FINAL CALL | 12 | JOEY AZZOPARDI |
+| 5 | SPIRITART | 14 | JADE MCNAUGHT |
+| 8 | ASTONISHER | 37 | NATASHA FAITHFULL |
+| 6 | OUR DEGREE | 60 | LOUIS BRANDON |
 
 ### 7. SWAN DRAUGHT HANDICAP (1400 METRES)
 
@@ -48,15 +45,15 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | GOLDEN DORE | – | SHARNI WEBSTER | –/–/–/– |
-| 2 | MAJOR MARIO | – | CLINT JOHNSTON-PORTER | –/–/–/– |
-| 3 | SEVEN CANDLES | – | TROY TURNER | –/–/–/– |
-| 5 | NATURE'S RECKONING | – | VICTORIA CORVER | –/–/–/– |
-| 6 | QUEEN ARIA | – | NATASHA FAITHFULL | –/–/–/– |
-| 7 | ELEGANT RULER | – | JOEY AZZOPARDI | –/–/–/– |
-| 8 | SAVORSKI | – | JORDAN TURNER | –/–/–/– |
-| 9 | ZOUCONI | – | JEFFERSON TSANG | –/–/–/– |
-| 10 | APPARATUS | – | SHAUN O'DONNELL | –/–/–/– |
-| 11 | COSMIC TREAT | – | LUCY FIORE | –/–/–/– |
-| 12 | FEARLESS TALK | – | BRAYDEN GAERTH | –/456/–/– |
-| 13 | RUN PATTIE RUN | – | CHLOE AZZOPARDI | –/–/–/– |
+| 5 | NATURE'S RECKONING | 4,3 | VICTORIA CORVER | –/–/–/– |
+| 11 | COSMIC TREAT | 5,6 | LUCY FIORE | –/–/–/– |
+| 7 | ELEGANT RULER | 7,9 | JOEY AZZOPARDI | –/–/–/– |
+| 6 | QUEEN ARIA | 8,4 | NATASHA FAITHFULL | –/–/–/– |
+| 12 | FEARLESS TALK | 8,6 | BRAYDEN GAERTH | –/456/–/– |
+| 2 | MAJOR MARIO | 9 | CLINT JOHNSTON-PORTER | –/–/–/– |
+| 9 | ZOUCONI | 11 | JEFFERSON TSANG | –/–/–/– |
+| 13 | RUN PATTIE RUN | 14 | CHLOE AZZOPARDI | –/–/–/– |
+| 3 | SEVEN CANDLES | 17 | TROY TURNER | –/–/–/– |
+| 10 | APPARATUS | 19 | SHAUN O'DONNELL | –/–/–/– |
+| 1 | GOLDEN DORE | 41 | SHARNI WEBSTER | –/–/–/– |
+| 8 | SAVORSKI | 114 | JORDAN TURNER | –/–/–/– |

@@ -1,8 +1,8 @@
 # KYOTO JAPON — 22/11/2026
 
-1 courses.
+1 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
@@ -12,21 +12,21 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | ERDENALI | – | MICKAEL BARZALONA | 1/1/–/– |
-| 2 | EMBROIDERY | – | CHRISTOPHE LEMAIRE | 205/–/–/– |
-| 3 | DRAGON BOOST | – | SUGURU HAMANAKA | –/–/–/– |
-| 4 | SIXPENCE | – | ALEXIS POUCHIN | 6/852/–/5078 |
-| 5 | ADMIRE ZOOM | – | YUTAKA TAKE | 399/844/–/5532 |
-| 6 | PIKO ROSE | – | KOSEI MIURA | –/–/–/– |
-| 7 | COCONUTS BROWN | – | YUICHI KITAMURA | 247/–/–/– |
-| 8 | RODEO DRIVE | – | JOAO MOREIRA | 421/–/–/5191 |
-| 9 | JUNE TAKE | – | YUGA KAWADA | –/–/–/– |
-| 10 | WATER LICHT | – | HIDEAKI MIYUKI | –/895/–/– |
-| 11 | GAIA FORCE | – | ATSUYA NISHIMURA | –/–/–/– |
-| 12 | WORLD'S END | – | CRISTIAN DEMURO | 2/–/–/5078 |
-| 13 | RESERVATION | – | KANTA TAGUCHI | –/–/–/– |
-| 14 | STAR ANISE | – | KOHEI MATSUYAMA | –/–/–/5191 |
-| 15 | ECORO BLOOM | – | RYUSEI SAKAI | –/–/–/– |
+| 1 | ERDENALI | 2 | MICKAEL BARZALONA | 1/1/–/– |
+| 8 | RODEO DRIVE | 5,4 | JOAO MOREIRA | 421/–/–/5191 |
+| 14 | STAR ANISE | 7,6 | KOHEI MATSUYAMA | –/–/–/5191 |
+| 2 | EMBROIDERY | 9,8 | CHRISTOPHE LEMAIRE | 205/–/–/– |
+| 11 | GAIA FORCE | 20 | ATSUYA NISHIMURA | –/–/–/– |
+| 12 | WORLD'S END | 22 | CRISTIAN DEMURO | 2/–/–/5078 |
+| 5 | ADMIRE ZOOM | 33 | YUTAKA TAKE | 399/844/–/5532 |
+| 17 | AMPADU | 37 | MIRAI IWATA | 363/–/–/50 |
+| 7 | COCONUTS BROWN | 71 | YUICHI KITAMURA | 247/–/–/– |
+| 18 | OFF TRAIL | 76 | AKIRA SUGAWARA | 206/–/–/50 |
+| 4 | SIXPENCE | 83 | ALEXIS POUCHIN | 6/852/–/5078 |
+| 13 | RESERVATION | 111 | KANTA TAGUCHI | –/–/–/– |
+| 15 | ECORO BLOOM | 123 | RYUSEI SAKAI | –/–/–/– |
+| 6 | PIKO ROSE | 162 | KOSEI MIURA | –/–/–/– |
+| 3 | DRAGON BOOST | 287 | SUGURU HAMANAKA | –/–/–/– |
+| 10 | WATER LICHT | 340 | HIDEAKI MIYUKI | –/895/–/– |
 | 16 | SUZU KHALOM | – | TAKASHI FUJIKAKE | –/–/–/– |
-| 17 | AMPADU | – | MIRAI IWATA | 363/–/–/50 |
-| 18 | OFF TRAIL | – | AKIRA SUGAWARA | 206/–/–/50 |
+| 9 | JUNE TAKE | – | YUGA KAWADA | –/–/–/– |
