@@ -54,10 +54,10 @@
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
 | 1 | NECTAR VERGOIGNAN | – | C.GUITRAUD | 131/151/778/2006 |
-| 2 | NIRANO DE PALMA | – | M.GUYON | 4/129/108/356 |
+| 2 | NIRANO DE PALMA | – | M.GUYON 5e | 4/129/108/356 |
 | 3 | NICKEL COMET | – | C.GROSBOIS | 26/194/498/875 |
 | 4 | NOCTALI | – | A.CHESNEAU | 251/507/785/1501 |
-| 5 | NITRO FOREZ | – | J.CLAUDIC 5e | 40/26/865/2753 |
+| 5 | NITRO FOREZ | – | J.CLAUDIC | 40/26/865/2753 |
 | 6 | NIAGARA DU SEUIL | – | PC.BOUDOT | 7/75/360/2886 |
 
 ### 4. PRIX CHLORIS
