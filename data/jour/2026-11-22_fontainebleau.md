@@ -140,20 +140,20 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DU BELVEDERE DES DRUIDES
 
-*15h32 · plat · 3000 m · 13 partants · cotes à T−25:44*
+*15h32 · plat · 3000 m · 13 partants · cotes à T−21:04*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 10 | BRIGHTON SPORT | 4,7 | 5,86 | -19,7 % | B.MARIE | 63/166/452/1538 |
-| 2 | VAN BLUTCH | 6,7 | 7,74 | -13,4 % | T.PICCONE | 9/13/45/114 |
-| 6 | DARK ROCKSTER | 7,9 | 9,60 | -17,7 % | C.LECOEUVRE | 13/17/1382/32 |
-| 1 | AGILE | 10 | 13,55 | -26,2 % | M.VELON | 27/215/3473/– |
-| 7 | LA GUERCHE | 10 | 11,14 | -10,2 % | A.LEMAITRE | 10/42/1017/223 |
-| 14 | KING KARA | 11 | 15,17 | -27,5 % | J.CLAUDIC | 40/116/1666/1891 |
-| 4 | NABAB ' K | 12 | 15,30 | -21,5 % | A.MOLINS | 28/93/510/1789 |
-| 5 | GUINESS STAR | 13 | 16,20 | -19,8 % | O.ANDIGNE | 77/76/1300/141 |
-| 3 | WEEMAGATEE | 17 | 23,62 | -28,0 % | M.GRANDIN | 3/56/395/283 |
-| 9 | RECOLETTY | 20 | 22,75 | -12,1 % | E.HARDOUIN | 30/96/171/265 |
-| 8 | LORD SINCLAIR | 21 | 24,06 | -12,7 % | F.VALLE SKAR | 32/169/22/549 |
-| 11 | EDEN ROC | 26 | 37,57 | -30,8 % | C.GROSBOIS | 26/424/3233/986 |
-| 12 | ANDOUINS | 38 | 46,94 | -19,0 % | L.PLOMMEE | 36/90/42/967 |
+| 10 | BRIGHTON SPORT | 4,8 | 6,01 | -20,1 % | B.MARIE | 63/166/452/1538 |
+| 2 | VAN BLUTCH | 6,9 | 8,01 | -13,9 % | T.PICCONE | 9/13/45/114 |
+| 6 | DARK ROCKSTER | 8,4 | 10,33 | -18,6 % | C.LECOEUVRE | 13/17/1382/32 |
+| 7 | LA GUERCHE | 9,6 | 10,63 | -9,7 % | A.LEMAITRE | 10/42/1017/223 |
+| 1 | AGILE | 10 | 13,57 | -26,3 % | M.VELON | 27/215/3473/– |
+| 4 | NABAB ' K | 11 | 13,83 | -20,4 % | A.MOLINS | 28/93/510/1789 |
+| 14 | KING KARA | 11 | 15,19 | -27,6 % | J.CLAUDIC | 40/116/1666/1891 |
+| 5 | GUINESS STAR | 13 | 16,22 | -19,9 % | O.ANDIGNE | 77/76/1300/141 |
+| 3 | WEEMAGATEE | 17 | 23,65 | -28,1 % | M.GRANDIN | 3/56/395/283 |
+| 8 | LORD SINCLAIR | 19 | 21,47 | -11,5 % | F.VALLE SKAR | 32/169/22/549 |
+| 9 | RECOLETTY | 21 | 24,09 | -12,8 % | E.HARDOUIN | 30/96/171/265 |
+| 11 | EDEN ROC | 28 | 40,93 | -31,6 % | C.GROSBOIS | 26/424/3233/986 |
+| 12 | ANDOUINS | 31 | 37,47 | -17,3 % | L.PLOMMEE | 36/90/42/967 |
