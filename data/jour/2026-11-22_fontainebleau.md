@@ -2,7 +2,9 @@
 
 8 courses.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+**Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
+La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
+Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classements ci-dessus.
 
 ---
 
@@ -138,20 +140,20 @@
 
 ### 8. PRIX DU BELVEDERE DES DRUIDES
 
-*15h32 · plat · 3000 m · 13 partants · cotes de l'extraction*
+*15h32 · plat · 3000 m · 13 partants · cotes à T−29:44*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 1 | AGILE | – | M.VELON | 27/215/3473/– |
-| 2 | VAN BLUTCH | – | T.PICCONE | 9/13/45/114 |
-| 3 | WEEMAGATEE | – | M.GRANDIN | 3/56/395/283 |
-| 4 | NABAB ' K | – | A.MOLINS | 28/93/510/1789 |
-| 5 | GUINESS STAR | – | O.ANDIGNE | 77/76/1300/141 |
-| 6 | DARK ROCKSTER | – | C.LECOEUVRE | 13/17/1382/32 |
-| 7 | LA GUERCHE | – | A.LEMAITRE | 10/42/1017/223 |
-| 8 | LORD SINCLAIR | – | F.VALLE SKAR | 32/169/22/549 |
-| 9 | RECOLETTY | – | E.HARDOUIN | 30/96/171/265 |
-| 10 | BRIGHTON SPORT | – | B.MARIE | 63/166/452/1538 |
-| 11 | EDEN ROC | – | C.GROSBOIS | 26/424/3233/986 |
-| 12 | ANDOUINS | – | L.PLOMMEE | 36/90/42/967 |
-| 14 | KING KARA | – | J.CLAUDIC | 40/116/1666/1891 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 10 | BRIGHTON SPORT | 4,3 | 5,29 | -18,7 % | B.MARIE | 63/166/452/1538 |
+| 2 | VAN BLUTCH | 6,4 | 7,33 | -12,6 % | T.PICCONE | 9/13/45/114 |
+| 6 | DARK ROCKSTER | 8,2 | 10,01 | -18,0 % | C.LECOEUVRE | 13/17/1382/32 |
+| 1 | AGILE | 10 | 13,52 | -26,1 % | M.VELON | 27/215/3473/– |
+| 7 | LA GUERCHE | 10 | 11,11 | -10,0 % | A.LEMAITRE | 10/42/1017/223 |
+| 4 | NABAB ' K | 12 | 15,26 | -21,4 % | A.MOLINS | 28/93/510/1789 |
+| 5 | GUINESS STAR | 13 | 16,17 | -19,6 % | O.ANDIGNE | 77/76/1300/141 |
+| 14 | KING KARA | 14 | 20,14 | -30,5 % | J.CLAUDIC | 40/116/1666/1891 |
+| 3 | WEEMAGATEE | 17 | 23,57 | -27,9 % | M.GRANDIN | 3/56/395/283 |
+| 9 | RECOLETTY | 21 | 24,01 | -12,5 % | E.HARDOUIN | 30/96/171/265 |
+| 11 | EDEN ROC | 23 | 32,59 | -29,4 % | C.GROSBOIS | 26/424/3233/986 |
+| 8 | LORD SINCLAIR | 24 | 27,97 | -14,2 % | F.VALLE SKAR | 32/169/22/549 |
+| 12 | ANDOUINS | 40 | 49,58 | -19,3 % | L.PLOMMEE | 36/90/42/967 |
