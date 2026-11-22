@@ -139,20 +139,20 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DU BELVEDERE DES DRUIDES
 
-*15h33 · plat · 3000 m · 13 partants · cotes à T−17:04*
+*15h34 · plat · 3000 m · 13 partants · cotes à T−17:04*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 10 | BRIGHTON SPORT | 5 | 5 | 6,26 | -20,1 % | B.MARIE | 63/166/452/1538 |
-| 2 | VAN BLUTCH | 6,8 | 5,7 | 7,84 | -13,3 % | T.PICCONE | 9/13/45/114 |
-| 6 | DARK ROCKSTER | 8,4 | 8 | 10,27 | -18,2 % | C.LECOEUVRE | 13/17/1382/32 |
-| 7 | LA GUERCHE | 9,7 | 10 | 10,71 | -9,4 % | A.LEMAITRE | 10/42/1017/223 |
-| 1 | AGILE | 10 | 11 | 13,49 | -25,9 % | M.VELON | 27/215/3473/– |
-| 5 | GUINESS STAR | 11 | 12 | 13,27 | -17,1 % | O.ANDIGNE | 77/76/1300/141 |
-| 14 | KING KARA | 11 | 11 | 15,11 | -27,2 % | J.CLAUDIC | 40/116/1666/1891 |
-| 4 | NABAB ' K | 12 | 12 | 15,23 | -21,2 % | A.MOLINS | 28/93/510/1789 |
-| 3 | WEEMAGATEE | 17 | 18 | 23,52 | -27,7 % | M.GRANDIN | 3/56/395/283 |
-| 8 | LORD SINCLAIR | 21 | 21 | 23,96 | -12,4 % | F.VALLE SKAR | 32/169/22/549 |
-| 9 | RECOLETTY | 22 | 23 | 25,27 | -12,9 % | E.HARDOUIN | 30/96/171/265 |
-| 11 | EDEN ROC | 26 | 25 | 37,43 | -30,5 % | C.GROSBOIS | 26/424/3233/986 |
-| 12 | ANDOUINS | 31 | 31 | 33,98 | -8,8 % | L.PLOMMEE | 36/90/42/967 |
+| 10 | BRIGHTON SPORT | 5 | 4,5 | 6,26 | -20,1 % | B.MARIE | 63/166/452/1538 |
+| 2 | VAN BLUTCH | 6,8 | 5,2 | 7,84 | -13,3 % | T.PICCONE | 9/13/45/114 |
+| 6 | DARK ROCKSTER | 8,4 | 6 | 10,27 | -18,2 % | C.LECOEUVRE | 13/17/1382/32 |
+| 7 | LA GUERCHE | 9,7 | 21 | 10,71 | -9,4 % | A.LEMAITRE | 10/42/1017/223 |
+| 1 | AGILE | 10 | 19 | 13,49 | -25,9 % | M.VELON | 27/215/3473/– |
+| 5 | GUINESS STAR | 11 | 10 | 13,27 | -17,1 % | O.ANDIGNE | 77/76/1300/141 |
+| 14 | KING KARA | 11 | 14 | 15,11 | -27,2 % | J.CLAUDIC | 40/116/1666/1891 |
+| 4 | NABAB ' K | 12 | 19 | 15,23 | -21,2 % | A.MOLINS | 28/93/510/1789 |
+| 3 | WEEMAGATEE | 17 | 16 | 23,52 | -27,7 % | M.GRANDIN | 3/56/395/283 |
+| 8 | LORD SINCLAIR | 21 | 47 | 23,96 | -12,4 % | F.VALLE SKAR | 32/169/22/549 |
+| 9 | RECOLETTY | 22 | 32 | 25,27 | -12,9 % | E.HARDOUIN | 30/96/171/265 |
+| 11 | EDEN ROC | 26 | 12 | 37,43 | -30,5 % | C.GROSBOIS | 26/424/3233/986 |
+| 12 | ANDOUINS | 31 | 19 | 33,98 | -8,8 % | L.PLOMMEE | 36/90/42/967 |

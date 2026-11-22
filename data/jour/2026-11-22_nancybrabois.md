@@ -81,42 +81,42 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 3 | PALAZZO | 2,6 | 3,03 | -14,1 % | J.MOUTARD | 42/142/10/1852 |
-| 1 | LE CHAT BOTTE | 6,5 | 7,86 | -17,3 % | C.COLLET-VIDAL | 107/146/472/1272 |
-| 4 | LOVELY TESS | 7,9 | 7,83 | **+0,9 %** | M.BETL | –/294/713/1593 |
-| 8 | LADY ACE | 8,6 | 9,21 | -6,7 % | C.CARBONI | 111/209/179/1635 |
-| 5 | GO FOR IT | 9 | 10,31 | -12,7 % | L.GROSSO | 134/538/1209/1837 |
-| 2 | TRIPTAJIKA | 12 | 15,08 | -20,4 % | P.CHEYER | 101/80/86/96 |
-| 6 | THE WASP | 12 | 15,08 | -20,4 % | M.YENI | –/311/4238/465 |
-| 7 | ATREUS | 15 | 18,74 | -19,9 % | M.MALACOVA | 255/294/3785/5093 |
-| 9 | EMPRESS STAR | 35 | 45,18 | -22,5 % | M.RIEHL | 346/388/528/792 |
+| 3 | PALAZZO | 2,7 | 3,15 | -14,2 % | J.MOUTARD | 42/142/10/1852 |
+| 1 | LE CHAT BOTTE | 6,2 | 7,47 | -16,9 % | C.COLLET-VIDAL | 107/146/472/1272 |
+| 4 | LOVELY TESS | 7 | 6,85 | **+2,2 %** | M.BETL | –/294/713/1593 |
+| 8 | LADY ACE | 8,9 | 9,62 | -7,5 % | C.CARBONI | 111/209/179/1635 |
+| 5 | GO FOR IT | 9,2 | 10,61 | -13,3 % | L.GROSSO | 134/538/1209/1837 |
+| 2 | TRIPTAJIKA | 12 | 15,13 | -20,7 % | P.CHEYER | 101/80/86/96 |
+| 6 | THE WASP | 13 | 16,62 | -21,8 % | M.YENI | –/311/4238/465 |
+| 7 | ATREUS | 14 | 17,34 | -19,3 % | M.MALACOVA | 255/294/3785/5093 |
+| 9 | EMPRESS STAR | 33 | 42,44 | -22,2 % | M.RIEHL | 346/388/528/792 |
 
 ### 6. PRIX NINA, UN RAYON DE SOLEIL (MYRTILLES)
 
-*15h40 · plat · 3000 m · 10 partants · cotes de l'extraction*
+*15h45 · plat · 3000 m · 10 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 3 | LAZHER | 3,3 | 3,51 | -5,9 % | MAX .DENUAULT | –/241/524/1671 |
-| 2 | MILORD DU LEMO | 3,5 | 3,88 | -9,9 % | F.GUY | –/393/566/2947 |
-| 9 | SUCCESS STORY | 5 | 5,71 | -12,4 % | C.THELIER-MELE | –/35/15/369 |
-| 1 | JOEY UP | 8,3 | 10,23 | -18,9 % | N.GUARNIERI | –/506/307/1400 |
-| 4 | DIANA | 10 | 12,74 | -21,5 % | J.SIXT | –/497/4106/3433 |
-| 5 | JUWEL | 20 | 26,96 | -25,8 % | A.ROUSSEL | –/294/29/1593 |
-| 8 | L'ESTERELLE | 26 | 36,45 | -28,7 % | C.LEVALLOIS | –/800/2935/– |
-| 7 | MASTER LIGHT | 34 | 45,91 | -25,9 % | T.LUTZ | –/201/906/308 |
-| 6 | LARWA | 60 | 91,86 | -34,7 % | J.FRANQUART | –/213/99/1008 |
-| 10 | JUPITER DES ROCS | 80 | 115,57 | -30,8 % | M.BRANDT | –/530/1065/1727 |
+| 2 | MILORD DU LEMO | 4 | 4,87 | -17,9 % | F.GUY | –/393/566/2947 |
+| 3 | LAZHER | 4,2 | 4,19 | **+0,3 %** | MAX .DENUAULT | –/241/524/1671 |
+| 9 | SUCCESS STORY | 4,2 | 4,67 | -10,0 % | C.THELIER-MELE | –/35/15/369 |
+| 5 | JUWEL | 7,6 | 7,92 | -4,1 % | A.ROUSSEL | –/294/29/1593 |
+| 1 | JOEY UP | 9 | 11,14 | -19,2 % | N.GUARNIERI | –/506/307/1400 |
+| 4 | DIANA | 12 | 15,63 | -23,2 % | J.SIXT | –/497/4106/3433 |
+| 7 | MASTER LIGHT | 22 | 25,31 | -13,1 % | T.LUTZ | –/201/906/308 |
+| 6 | LARWA | 38 | 50,38 | -24,6 % | J.FRANQUART | –/213/99/1008 |
+| 10 | JUPITER DES ROCS | 91 | 130,79 | -30,4 % | M.BRANDT | –/530/1065/1727 |
+| 8 | L'ESTERELLE | 91 | 134,16 | -32,2 % | C.LEVALLOIS | –/800/2935/– |
 
 ### 7. PRIX DE TOMBLAINE (PRIX HENRI DORY)
 
-*16h10 · plat · 3000 m · 6 partants · cotes de l'extraction*
+*16h15 · plat · 3000 m · 6 partants · cotes de l'extraction*
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 2 | NINO DE BEAUCHENE | 2,8 | 3,12 | -10,3 % | P.REMOUE | 35/375/2067/1834 |
-| 3 | SPIRIT DE CHARNIE | 3,5 | 3,86 | -9,4 % | P.BAZIRE | 57/373/3992/477 |
-| 5 | MADAME TEMPLAR | 4,6 | 4,99 | -7,8 % | B.FLANDRIN | 103/26/–/3538 |
-| 6 | PEURDERIEN | 8,5 | 10,23 | -16,9 % | J.MOUTARD | 42/268/349/809 |
-| 4 | NIRVANA JULIA | 9,9 | 13,09 | -24,4 % | L.GROSSO | 134/574/415/2135 |
-| 1 | NABAB DE SIVOLA | 14 | 18,39 | -23,9 % | J.DOUMEN | 428/819/2741/5001 |
+| 3 | SPIRIT DE CHARNIE | 2,2 | 2,30 | -4,2 % | P.BAZIRE | 57/373/3992/477 |
+| 5 | MADAME TEMPLAR | 4,5 | 5,27 | -14,7 % | B.FLANDRIN | 103/26/–/3538 |
+| 2 | NINO DE BEAUCHENE | 5,1 | 5,71 | -10,6 % | P.REMOUE | 35/375/2067/1834 |
+| 6 | PEURDERIEN | 6 | 6,86 | -12,5 % | J.MOUTARD | 42/268/349/809 |
+| 4 | NIRVANA JULIA | 17 | 23,74 | -28,4 % | L.GROSSO | 134/574/415/2135 |
+| 1 | NABAB DE SIVOLA | 18 | 23,64 | -23,9 % | J.DOUMEN | 428/819/2741/5001 |
