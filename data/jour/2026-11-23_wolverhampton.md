@@ -48,8 +48,8 @@
 | 12 | QUEEN OF CHRISTMAS | 6,6 | CLIFFORD LEE | 250/34/–/107 |
 | 8 | CASTING COACH | 7,1 | CALLUM RODRIGUEZ | 214/307/–/– |
 | 4 | INCANDESCENCE | 12 | FINLEY MARSH | –/–/–/– |
-| 1 | DESHAIES | 17 | LUKE MORRIS | 256/468/–/– |
 | 2 | FRONTIER RUN | 17 | KIERAN SHOEMARK | 279/468/–/2666 |
+| 1 | DESHAIES | 17 | LUKE MORRIS | 256/468/–/– |
 | 9 | GIRL FROM HAVANA | 36 | JACK DOUGHTY | 485/672/–/– |
 | 11 | PURIST | 41 | STEVIE DONOHOE | –/307/–/– |
 | 6 | MAGGIE'S FAITH | 43 | DOUGIE COSTELLO | 426/–/–/– |
@@ -62,16 +62,16 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 7 | FANCY DANCER | 3,2 | LUKE MORRIS | 256/–/–/– |
-| 8 | CABEZA DE LLAVE | 5,6 | ALISTAIR RAWLINSON | –/–/–/– |
-| 10 | BEACH PARTEE | 7,3 | KIERAN O'NEILL | 373/–/–/– |
-| 1 | OUR PLANET | 8 | KIERAN SHOEMARK | 279/288/–/– |
-| 9 | STASH THE CASH | 9,3 | CHARLES BISHOP | –/–/–/– |
-| 5 | BOLD RETURN | 9,7 | CLIFFORD LEE | 250/–/–/– |
-| 4 | BESSIE WALLIS | 15 | JAMES GLENNON | –/–/–/– |
-| 3 | KISS DON'T TELL | 17 | KYLE MCHUGH | –/596/–/– |
-| 11 | PIPERSTOWN | 30 | MATTHEW LLOYD SLATER | –/–/–/– |
-| 2 | GUSTAV GRAVES | 48 | JACK DOUGHTY | 485/–/–/– |
+| 1 | OUR PLANET | 1,8 | KIERAN SHOEMARK | 279/288/–/– |
+| 7 | FANCY DANCER | 6,7 | LUKE MORRIS | 256/–/–/– |
+| 8 | CABEZA DE LLAVE | 8,3 | ALISTAIR RAWLINSON | –/–/–/– |
+| 9 | STASH THE CASH | 15 | CHARLES BISHOP | –/–/–/– |
+| 2 | GUSTAV GRAVES | 16 | JACK DOUGHTY | 485/–/–/– |
+| 3 | KISS DON'T TELL | 16 | KYLE MCHUGH | –/596/–/– |
+| 10 | BEACH PARTEE | 21 | KIERAN O'NEILL | 373/–/–/– |
+| 4 | BESSIE WALLIS | 28 | JAMES GLENNON | –/–/–/– |
+| 11 | PIPERSTOWN | 31 | MATTHEW LLOYD SLATER | –/–/–/– |
+| 5 | BOLD RETURN | 49 | CLIFFORD LEE | 250/–/–/– |
 
 ### 5. MIDNITE HANDICAP (CLASS 5)
 
@@ -79,17 +79,17 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 12 | MAGICIAN OF RIGA | 4,3 | SEAN LEVEY | 277/292/–/– |
-| 2 | KAARANAH | 5,7 | DAVID EGAN | 330/–/–/– |
-| 9 | BARACHIEL | 7,4 | ROBERT HAVLIN | 493/–/–/– |
-| 4 | SEVENTY | 8,6 | KIERAN SHOEMARK | 279/–/–/– |
-| 5 | DANCE TIME | 8,6 | LAURA PEARSON | 453/867/–/– |
-| 6 | SAXOPHONIST | 8,6 | CALLUM RODRIGUEZ | 214/841/–/– |
-| 3 | CHARLIE'S CHOICE | 10 | TARYN LANGLEY | –/–/–/– |
-| 7 | HELGA | 17 | GEORGE BASS | 367/884/–/1079 |
-| 1 | SPIRIT OF JURA | 26 | CALLUM SHEPHERD | 189/101/–/– |
-| 10 | ALEEN | 26 | LUKE MORRIS | 256/–/–/1076 |
-| 11 | THREE DONS | 52 | MOLLY GUNN | –/–/–/– |
+| 9 | BARACHIEL | 3,7 | ROBERT HAVLIN | 493/–/–/– |
+| 6 | SAXOPHONIST | 4,4 | CALLUM RODRIGUEZ | 214/841/–/– |
+| 2 | KAARANAH | 7,2 | DAVID EGAN | 330/–/–/– |
+| 3 | CHARLIE'S CHOICE | 8,1 | TARYN LANGLEY | –/–/–/– |
+| 4 | SEVENTY | 8,3 | KIERAN SHOEMARK | 279/–/–/– |
+| 12 | MAGICIAN OF RIGA | 11 | SEAN LEVEY | 277/292/–/– |
+| 10 | ALEEN | 16 | LUKE MORRIS | 256/–/–/1076 |
+| 5 | DANCE TIME | 17 | LAURA PEARSON | 453/867/–/– |
+| 1 | SPIRIT OF JURA | 36 | CALLUM SHEPHERD | 189/101/–/– |
+| 7 | HELGA | 41 | GEORGE BASS | 367/884/–/1079 |
+| 11 | THREE DONS | 109 | MOLLY GUNN | –/–/–/– |
 
 ### 6. AWC SEASON 14 HAS BEGUN HANDICAP (CLASS 6) - DIV 1
 
@@ -97,17 +97,17 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 11 | ON KEY | 3,5 | KIERAN O'NEILL | 373/–/–/– |
-| 12 | MONTPELLIER GREEN | 4,6 | EDWARD GREATREX | 436/620/–/– |
-| 1 | GIORGIO M | 4,9 | HOPE REGAN | –/–/–/– |
-| 3 | BECAUSE WE | 6,6 | CLIFFORD LEE | 250/–/–/– |
-| 5 | DARK MANDATE | 6,6 | CHARLES BISHOP | –/550/–/– |
-| 7 | RIDGER | 11 | STEVIE DONOHOE | –/307/–/– |
-| 2 | STATE OF MADNESS | 29 | LUKE MORRIS | 256/–/–/– |
-| 4 | CHIFA | 59 | FINLEY MARSH | –/–/–/– |
-| 6 | SPIRIT OF JENNY | – | DOUGIE COSTELLO | 426/–/–/– |
-| 8 | LESSAY | – | PADDY BRADLEY | –/–/–/– |
-| 10 | PUNCHBOWL FLYER | – | ALEXANDRA EGAN | –/–/–/– |
+| 12 | MONTPELLIER GREEN | 3,8 | EDWARD GREATREX | 436/620/–/– |
+| 7 | RIDGER | 4,6 | STEVIE DONOHOE | –/307/–/– |
+| 5 | DARK MANDATE | 5 | CHARLES BISHOP | –/550/–/– |
+| 3 | BECAUSE WE | 6,3 | CLIFFORD LEE | 250/–/–/– |
+| 1 | GIORGIO M | 16 | HOPE REGAN | –/–/–/– |
+| 8 | LESSAY | 18 | PADDY BRADLEY | –/–/–/– |
+| 11 | ON KEY | 19 | KIERAN O'NEILL | 373/–/–/– |
+| 2 | STATE OF MADNESS | 22 | LUKE MORRIS | 256/–/–/– |
+| 6 | SPIRIT OF JENNY | 25 | DOUGIE COSTELLO | 426/–/–/– |
+| 10 | PUNCHBOWL FLYER | 34 | ALEXANDRA EGAN | –/–/–/– |
+| 4 | CHIFA | 45 | FINLEY MARSH | –/–/–/– |
 
 ### 7. AWC SEASON 14 HAS BEGUN HANDICAP (CLASS 6) - DIV 2
 
@@ -115,17 +115,17 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 5 | JAMIE SOMMERS | 2,7 | HOLLIE DOYLE | 336/867/–/– |
-| 10 | GOOD KARMA | 3,2 | ETHAN TINDALL | –/–/–/– |
-| 1 | YEHUDI | 7,2 | JONNY PEATE | –/–/–/– |
-| 6 | CHAPMAN'S PEAK | 12 | KAIYA FRASER | 434/323/–/– |
-| 2 | MONSIEUR PATAT | 18 | FINLEY MARSH | –/–/–/– |
-| 3 | BEAUZON | 18 | RYAN KAVANAGH | –/620/–/– |
-| 4 | PROFIT STREET | 18 | TARYN LANGLEY | –/–/–/– |
-| 7 | GIRLS ALLOWED | 36 | DYLAN HOGAN | –/–/–/– |
-| 8 | MR TONY | 36 | WILLIAM CARSON | –/–/–/– |
-| 11 | ROMANOVICH | 36 | CONNOR PLANAS | –/–/–/– |
-| 12 | LHEBAYEB | – | ROSE DAWES | –/–/–/– |
+| 5 | JAMIE SOMMERS | 5,2 | HOLLIE DOYLE | 336/867/–/– |
+| 7 | GIRLS ALLOWED | 5,8 | DYLAN HOGAN | –/–/–/– |
+| 1 | YEHUDI | 6,1 | JONNY PEATE | –/–/–/– |
+| 2 | MONSIEUR PATAT | 7,1 | FINLEY MARSH | –/–/–/– |
+| 6 | CHAPMAN'S PEAK | 7,5 | KAIYA FRASER | 434/323/–/– |
+| 10 | GOOD KARMA | 11 | ETHAN TINDALL | –/–/–/– |
+| 4 | PROFIT STREET | 13 | TARYN LANGLEY | –/–/–/– |
+| 12 | LHEBAYEB | 16 | ROSE DAWES | –/–/–/– |
+| 11 | ROMANOVICH | 19 | CONNOR PLANAS | –/–/–/– |
+| 8 | MR TONY | 19 | WILLIAM CARSON | –/–/–/– |
+| 3 | BEAUZON | 80 | RYAN KAVANAGH | –/620/–/– |
 
 ### 8. AWC TRIALS DAY - LINGFIELD 2ND JANUARY 2027 HANDICAP (CLASS 4) (2ND)
 
@@ -133,16 +133,16 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 3 | MONARCH'S GOLD | 1,7 | ROWAN SCOTT | 509/384/–/79 |
-| 11 | FOLLOW YOUR HEART | 7,1 | LUKE MORRIS | 256/–/–/– |
-| 2 | THE WATCHER | 8,1 | CLIFFORD LEE | 250/34/–/– |
-| 6 | PIETRO | 8,1 | DANIEL MUSCUTT | 450/602/–/– |
-| 5 | DRIFTS AWAY | 12 | KIERAN SHOEMARK | 279/–/–/– |
-| 1 | SHAH | 19 | CHARLES BISHOP | –/456/–/– |
-| 8 | RECIPROCATED | 28 | HOLLIE DOYLE | 336/867/–/5232 |
-| 7 | JEZ BOMB | 57 | JONNY PEATE | –/–/–/– |
-| 4 | TREASURE TIME | – | MARCO GHIANI | 333/964/–/– |
-| 9 | CITY CYCLONE | – | WILLIAM CARSON | –/–/–/– |
+| 2 | THE WATCHER | 4,8 | CLIFFORD LEE | 250/34/–/– |
+| 3 | MONARCH'S GOLD | 7 | ROWAN SCOTT | 509/384/–/79 |
+| 1 | SHAH | 7,7 | CHARLES BISHOP | –/456/–/– |
+| 8 | RECIPROCATED | 8,2 | HOLLIE DOYLE | 336/867/–/5232 |
+| 9 | CITY CYCLONE | 8,6 | WILLIAM CARSON | –/–/–/– |
+| 5 | DRIFTS AWAY | 8,9 | KIERAN SHOEMARK | 279/–/–/– |
+| 6 | PIETRO | 9,3 | DANIEL MUSCUTT | 450/602/–/– |
+| 11 | FOLLOW YOUR HEART | 10 | LUKE MORRIS | 256/–/–/– |
+| 7 | JEZ BOMB | 17 | JONNY PEATE | –/–/–/– |
+| 4 | TREASURE TIME | 22 | MARCO GHIANI | 333/964/–/– |
 
 ### 9. AWC SEASON 14 HANDICAP (CLASS 5)
 
@@ -150,13 +150,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 6 | SOVEREIGN BAY | 1,7 | JASON WATSON | 369/288/–/– |
-| 10 | PIPILY | 5,4 | CLIFFORD LEE | 250/–/–/– |
-| 7 | SHADOWMERE | 8,1 | CALLUM SHEPHERD | 189/480/–/– |
-| 3 | HE'S A GENTLEMAN | 16 | DAVID EGAN | 330/230/–/– |
-| 4 | LAW SUPREME | 16 | EDWARD GREATREX | 436/620/–/– |
-| 1 | GALBA | 21 | MATTHEW LLOYD SLATER | –/–/–/– |
-| 5 | ECCLEFECHAN | 26 | KIERAN O'NEILL | 373/–/–/– |
-| 2 | HITCHED | 32 | LUKE MORRIS | 256/–/–/– |
-| 8 | GALILEO ISLAND | 65 | SEAN LEVEY | 277/–/–/– |
+| 6 | SOVEREIGN BAY | 3,3 | JASON WATSON | 369/288/–/– |
+| 1 | GALBA | 4,7 | MATTHEW LLOYD SLATER | –/–/–/– |
+| 10 | PIPILY | 5,2 | CLIFFORD LEE | 250/–/–/– |
+| 2 | HITCHED | 8,8 | LUKE MORRIS | 256/–/–/– |
+| 7 | SHADOWMERE | 10 | CALLUM SHEPHERD | 189/480/–/– |
+| 4 | LAW SUPREME | 13 | EDWARD GREATREX | 436/620/–/– |
+| 5 | ECCLEFECHAN | 13 | KIERAN O'NEILL | 373/–/–/– |
+| 3 | HE'S A GENTLEMAN | 19 | DAVID EGAN | 330/230/–/– |
+| 8 | GALILEO ISLAND | 47 | SEAN LEVEY | 277/–/–/– |
 | 9 | CLATFORD | – | CHRISTIAN HOWARTH | –/–/–/– |
