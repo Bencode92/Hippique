@@ -51,7 +51,7 @@
 |--:|:--|--:|:--|--:|
 | 1 | LUCKY VOWS | – | C.COLLET-VIDAL | 107/146/1040/910 |
 | 2 | ALPSEE | – | A.LEMAITRE | 10/5/23/30 |
-| 3 | PETIT GENIE | – | M.GUYON 5e | 4/36/89/815 |
+| 3 | PETIT GENIE | – | M.GUYON | 4/36/89/815 |
 | 4 | NEW EVE | – | PC.BOUDOT 3e | 7/128/26/4050 |
 | 5 | LILY ANGEL | – | H.JOURNIAC | 41/174/1381/3597 |
 | 6 | ALPHA LEPORIS | – | T.PICCONE | 9/25/1706/612 |
@@ -68,7 +68,7 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | CHAMPAGNE SUNSET | – | M.GUYON 5e | 4/10/301/2899 |
+| 1 | CHAMPAGNE SUNSET | – | M.GUYON | 4/10/301/2899 |
 | 2 | GOLDEN RUN | – | A.MADAMET | 12/82/177/21 |
 | 3 | SAXEEN | – | H.JOURNIAC | 41/9/41/– |
 | 4 | JEMAA EL FNA | – | A.HAMELIN | 23/5/4/17 |
@@ -150,7 +150,7 @@
 | 8 | VADAZAL | – | D.PROVOST | 33/75/4229/2343 |
 | 9 | SHE'S A LADY | – | PC.BOUDOT 3e | 7/1/417/– |
 | 10 | BELLE HARMONIE | – | C.LECOEUVRE | 13/15/847/1674 |
-| 11 | BELLE OF GEORGIA | – | M.GUYON 5e | 4/45/–/1898 |
+| 11 | BELLE OF GEORGIA | – | M.GUYON | 4/45/–/1898 |
 | 12 | LATE NIGHT | – | F.VALLE SKAR | 32/603/192/529 |
 | 13 | BIRDY SUN | – | S.AKARI-SOUIDANE | 120/530/1718/1727 |
 | 14 | DREAMFORFUTURE | – | A.HAMELIN | 23/419/979/2493 |
