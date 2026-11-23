@@ -133,16 +133,16 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 2 | THE WATCHER | 4,8 | CLIFFORD LEE | 250/34/–/– |
-| 3 | MONARCH'S GOLD | 7 | ROWAN SCOTT | 509/384/–/79 |
-| 1 | SHAH | 7,7 | CHARLES BISHOP | –/456/–/– |
-| 8 | RECIPROCATED | 8,2 | HOLLIE DOYLE | 336/867/–/5232 |
-| 9 | CITY CYCLONE | 8,6 | WILLIAM CARSON | –/–/–/– |
-| 5 | DRIFTS AWAY | 8,9 | KIERAN SHOEMARK | 279/–/–/– |
-| 6 | PIETRO | 9,3 | DANIEL MUSCUTT | 450/602/–/– |
-| 11 | FOLLOW YOUR HEART | 10 | LUKE MORRIS | 256/–/–/– |
-| 7 | JEZ BOMB | 17 | JONNY PEATE | –/–/–/– |
-| 4 | TREASURE TIME | 22 | MARCO GHIANI | 333/964/–/– |
+| 3 | MONARCH'S GOLD | 3,6 | ROWAN SCOTT | 509/384/–/79 |
+| 2 | THE WATCHER | 5,1 | CLIFFORD LEE | 250/34/–/– |
+| 6 | PIETRO | 5,6 | DANIEL MUSCUTT | 450/602/–/– |
+| 5 | DRIFTS AWAY | 6,7 | KIERAN SHOEMARK | 279/–/–/– |
+| 8 | RECIPROCATED | 8,8 | HOLLIE DOYLE | 336/867/–/5232 |
+| 1 | SHAH | 13 | CHARLES BISHOP | –/456/–/– |
+| 7 | JEZ BOMB | 21 | JONNY PEATE | –/–/–/– |
+| 9 | CITY CYCLONE | 23 | WILLIAM CARSON | –/–/–/– |
+| 4 | TREASURE TIME | 30 | MARCO GHIANI | 333/964/–/– |
+| 11 | FOLLOW YOUR HEART | 32 | LUKE MORRIS | 256/–/–/– |
 
 ### 9. AWC SEASON 14 HANDICAP (CLASS 5)
 
@@ -150,13 +150,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 6 | SOVEREIGN BAY | 3,3 | JASON WATSON | 369/288/–/– |
+| 6 | SOVEREIGN BAY | 4,2 | JASON WATSON | 369/288/–/– |
+| 2 | HITCHED | 4,5 | LUKE MORRIS | 256/–/–/– |
 | 1 | GALBA | 4,7 | MATTHEW LLOYD SLATER | –/–/–/– |
-| 10 | PIPILY | 5,2 | CLIFFORD LEE | 250/–/–/– |
-| 2 | HITCHED | 8,8 | LUKE MORRIS | 256/–/–/– |
+| 10 | PIPILY | 9,1 | CLIFFORD LEE | 250/–/–/– |
 | 7 | SHADOWMERE | 10 | CALLUM SHEPHERD | 189/480/–/– |
-| 4 | LAW SUPREME | 13 | EDWARD GREATREX | 436/620/–/– |
-| 5 | ECCLEFECHAN | 13 | KIERAN O'NEILL | 373/–/–/– |
-| 3 | HE'S A GENTLEMAN | 19 | DAVID EGAN | 330/230/–/– |
-| 8 | GALILEO ISLAND | 47 | SEAN LEVEY | 277/–/–/– |
-| 9 | CLATFORD | – | CHRISTIAN HOWARTH | –/–/–/– |
+| 3 | HE'S A GENTLEMAN | 12 | DAVID EGAN | 330/230/–/– |
+| 4 | LAW SUPREME | 12 | EDWARD GREATREX | 436/620/–/– |
+| 5 | ECCLEFECHAN | 18 | KIERAN O'NEILL | 373/–/–/– |
+| 9 | CLATFORD | 27 | CHRISTIAN HOWARTH | –/–/–/– |
+| 8 | GALILEO ISLAND | 56 | SEAN LEVEY | 277/–/–/– |
