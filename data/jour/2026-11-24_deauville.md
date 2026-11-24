@@ -1,6 +1,6 @@
 # DEAUVILLE — 24/11/2026
 
-8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -150,22 +150,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DU CONSERVATOIRE DE LA DENTELLE
 
-*18h00 · plat · 2500 m · 15 partants · cotes de l'extraction*
+*18h00 · plat · 2500 m · 15 partants · cotes à T−3:16*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 5 | RHIPPER | 3 | 3,60 | -16,6 % | T.BREBION | 84/335/540/780 |
-| 2 | LETTYT FIGHT | 3,2 | 3,26 | -1,7 % | M.GRANDIN | 3/96/171/361 |
-| 12 | LOOK OF CECCA | 7,2 | 7,81 | -7,8 % | F.VALLE SKAR | 32/142/647/1025 |
-| 4 | CATHERINE'S GIFT | 12 | 15,47 | -22,5 % | T.PICCONE | 9/42/57/1559 |
-| 8 | BECQUANIENTE | 12 | 12,43 | -3,5 % | C.PACAUT | 44/125/567/1239 |
-| 15 | ARGYRON | 12 | 16,58 | -27,6 % | A.MENARD-LEDAUPHIN | 159/229/138/1469 |
-| 7 | ZAKARIIA | 18 | 26,04 | -30,9 % | M.MARQUETTE | 51/15/3335/57 |
-| 1 | LADY ACHILLIA | 36 | 54,99 | -34,5 % | C.BELMONT | 146/81/1082/211 |
-| 9 | BIALYSTOK | 36 | 54,99 | -34,5 % | A.NICCO | 158/213/168/4297 |
-| 3 | PAPILLE D'ARGENT | – | – |  | E.GAY LE BRETON | 383/170/–/1974 |
-| 6 | NEVER COME BACK | – | – |  | L.ROUSSEL | 18/117/48/757 |
-| 10 | HISTOIREDEMARS | – | – |  | C.GROSBOIS | 26/45/1260/3552 |
-| 11 | HAPPY HARRY | – | – |  | M.JUSTUM | 87/326/39/538 |
-| 13 | ALMAGRO | – | – |  | J.CLAUDIC | 40/117/138/757 |
-| 14 | ZILCOVER | – | – |  | L.BOISSEAU | 37/452/–/964 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 4 | CATHERINE'S GIFT | 6,2 | 12 | 7,00 | -11,4 % | T.PICCONE | 9/42/57/1559 |
+| 14 | ZILCOVER | 6,3 | – | 8,36 | -24,6 % | L.BOISSEAU | 37/452/–/964 |
+| 2 | LETTYT FIGHT | 7 | 3,2 | 8,68 | -19,3 % | M.GRANDIN | 3/96/171/361 |
+| 12 | LOOK OF CECCA | 7,2 | 7,2 | 8,97 | -19,7 % | F.VALLE SKAR | 32/142/647/1025 |
+| 5 | RHIPPER | 7,4 | 3 | 10,09 | -26,6 % | T.BREBION | 84/335/540/780 |
+| 8 | BECQUANIENTE | 8,9 | 12 | 10,11 | -11,9 % | C.PACAUT | 44/125/567/1239 |
+| 11 | HAPPY HARRY | 12 | – | 19,10 | -37,2 % | M.JUSTUM | 87/326/39/538 |
+| 6 | NEVER COME BACK | 14 | – | 21,35 | -34,4 % | L.ROUSSEL | 18/117/48/757 |
+| 15 | ARGYRON | 15 | 12 | 24,84 | -39,6 % | A.MENARD-LEDAUPHIN | 159/229/138/1469 |
+| 9 | BIALYSTOK | 20 | 36 | 32,32 | -38,1 % | A.NICCO | 158/213/168/4297 |
+| 7 | ZAKARIIA | 23 | 18 | 39,70 | -42,1 % | M.MARQUETTE | 51/15/3335/57 |
+| 3 | PAPILLE D'ARGENT | 25 | – | 41,72 | -40,1 % | E.GAY LE BRETON | 383/170/–/1974 |
+| 1 | LADY ACHILLIA | 28 | 36 | 47,43 | -41,0 % | C.BELMONT | 146/81/1082/211 |
+| 10 | HISTOIREDEMARS | 32 | – | 43,72 | -26,8 % | C.GROSBOIS | 26/45/1260/3552 |
+| 13 | ALMAGRO | 44 | – | 68,16 | -35,4 % | J.CLAUDIC | 40/117/138/757 |
