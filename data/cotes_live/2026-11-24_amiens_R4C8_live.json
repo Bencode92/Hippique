@@ -4,17 +4,17 @@
   "reunion": 4,
   "heure_depart": 1795549500000,
   "distance": 2400,
-  "scraped_at": "2026-11-24T20:40:05.135025+01:00",
-  "minutes_avant_depart": 5,
+  "scraped_at": "2026-11-24T20:42:44.832256+01:00",
+  "minutes_avant_depart": 2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "INDY FOUTEAU",
-      "cote_live": 4.6,
+      "cote_live": 4.8,
       "cote_reference": 7.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795549197000
+      "timestamp_cote": 1795549351000
     },
     {
       "numPmu": 2,
@@ -23,79 +23,79 @@
       "cote_reference": 9.3,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1795549197000
+      "timestamp_cote": 1795549351000
     },
     {
       "numPmu": 3,
       "nom": "HIJO MOKO",
-      "cote_live": 25.0,
+      "cote_live": 28.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795549197000
+      "timestamp_cote": 1795549351000
     },
     {
       "numPmu": 4,
       "nom": "IBRA DE LOU",
-      "cote_live": 5.8,
+      "cote_live": 4.6,
       "cote_reference": 3.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795549197000
+      "timestamp_cote": 1795549351000
     },
     {
       "numPmu": 5,
       "nom": "HELLO CAUVELLIERE",
-      "cote_live": 5.6,
+      "cote_live": 5.9,
       "cote_reference": 4.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795549197000
+      "timestamp_cote": 1795549351000
     },
     {
       "numPmu": 6,
       "nom": "INSTIGATEUR",
-      "cote_live": 13.0,
+      "cote_live": 15.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795549197000
+      "timestamp_cote": 1795549351000
     },
     {
       "numPmu": 7,
       "nom": "IROKO DU NORD",
-      "cote_live": 20.0,
+      "cote_live": 17.0,
       "cote_reference": 29.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795549197000
+      "timestamp_cote": 1795549351000
     },
     {
       "numPmu": 8,
       "nom": "JACKARY D'OCQUE",
-      "cote_live": 22.0,
+      "cote_live": 25.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795549197000
+      "timestamp_cote": 1795549351000
     },
     {
       "numPmu": 9,
       "nom": "HASHTAG DU LION",
-      "cote_live": 10.0,
+      "cote_live": 11.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795549197000
+      "timestamp_cote": 1795549351000
     },
     {
       "numPmu": 11,
       "nom": "JOKER MADRIK",
-      "cote_live": 22.0,
+      "cote_live": 26.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795549197000
+      "timestamp_cote": 1795549351000
     }
   ],
   "hippodrome": "AMIENS",
@@ -226,6 +226,70 @@
         "8": 22.0,
         "9": 10.0,
         "11": 22.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-24T20:40:44.765938+01:00",
+      "minutes_avant_depart": 4.25579645,
+      "cotes": {
+        "1": 4.6,
+        "2": 4.5,
+        "3": 25.0,
+        "4": 5.5,
+        "5": 5.7,
+        "6": 13.0,
+        "7": 19.0,
+        "8": 22.0,
+        "9": 10.0,
+        "11": 22.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-24T20:41:24.690008+01:00",
+      "minutes_avant_depart": 3.5891277500000003,
+      "cotes": {
+        "1": 4.8,
+        "2": 4.5,
+        "3": 27.0,
+        "4": 5.1,
+        "5": 5.6,
+        "6": 14.0,
+        "7": 17.0,
+        "8": 23.0,
+        "9": 10.0,
+        "11": 24.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-24T20:42:04.732586+01:00",
+      "minutes_avant_depart": 2.9224589666666665,
+      "cotes": {
+        "1": 4.9,
+        "2": 4.6,
+        "3": 26.0,
+        "4": 4.9,
+        "5": 5.4,
+        "6": 15.0,
+        "7": 18.0,
+        "8": 24.0,
+        "9": 10.0,
+        "11": 25.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-24T20:42:44.832256+01:00",
+      "minutes_avant_depart": 2.25578945,
+      "cotes": {
+        "1": 4.8,
+        "2": 4.4,
+        "3": 28.0,
+        "4": 4.6,
+        "5": 5.9,
+        "6": 15.0,
+        "7": 17.0,
+        "8": 25.0,
+        "9": 11.0,
+        "11": 26.0
       }
     }
   ]
