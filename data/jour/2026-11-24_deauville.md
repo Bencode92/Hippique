@@ -150,22 +150,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DU CONSERVATOIRE DE LA DENTELLE
 
-*18h00 · plat · 2500 m · 15 partants · cotes à T−3:16*
+*18h00 · plat · 2500 m · 15 partants · cotes à T−0:36*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 4 | CATHERINE'S GIFT | 6,2 | 12 | 7,00 | -11,4 % | T.PICCONE | 9/42/57/1559 |
-| 14 | ZILCOVER | 6,3 | – | 8,36 | -24,6 % | L.BOISSEAU | 37/452/–/964 |
-| 2 | LETTYT FIGHT | 7 | 3,2 | 8,68 | -19,3 % | M.GRANDIN | 3/96/171/361 |
-| 12 | LOOK OF CECCA | 7,2 | 7,2 | 8,97 | -19,7 % | F.VALLE SKAR | 32/142/647/1025 |
-| 5 | RHIPPER | 7,4 | 3 | 10,09 | -26,6 % | T.BREBION | 84/335/540/780 |
-| 8 | BECQUANIENTE | 8,9 | 12 | 10,11 | -11,9 % | C.PACAUT | 44/125/567/1239 |
-| 11 | HAPPY HARRY | 12 | – | 19,10 | -37,2 % | M.JUSTUM | 87/326/39/538 |
-| 6 | NEVER COME BACK | 14 | – | 21,35 | -34,4 % | L.ROUSSEL | 18/117/48/757 |
-| 15 | ARGYRON | 15 | 12 | 24,84 | -39,6 % | A.MENARD-LEDAUPHIN | 159/229/138/1469 |
-| 9 | BIALYSTOK | 20 | 36 | 32,32 | -38,1 % | A.NICCO | 158/213/168/4297 |
-| 7 | ZAKARIIA | 23 | 18 | 39,70 | -42,1 % | M.MARQUETTE | 51/15/3335/57 |
-| 3 | PAPILLE D'ARGENT | 25 | – | 41,72 | -40,1 % | E.GAY LE BRETON | 383/170/–/1974 |
-| 1 | LADY ACHILLIA | 28 | 36 | 47,43 | -41,0 % | C.BELMONT | 146/81/1082/211 |
-| 10 | HISTOIREDEMARS | 32 | – | 43,72 | -26,8 % | C.GROSBOIS | 26/45/1260/3552 |
-| 13 | ALMAGRO | 44 | – | 68,16 | -35,4 % | J.CLAUDIC | 40/117/138/757 |
+| 5 | RHIPPER | 6,8 | 3 | 7,77 | -12,5 % | T.BREBION | 84/335/540/780 |
+| 4 | CATHERINE'S GIFT | 7,1 | 12 | 9,61 | -26,1 % | T.PICCONE | 9/42/57/1559 |
+| 12 | LOOK OF CECCA | 7,2 | 7,2 | 8,96 | -19,7 % | F.VALLE SKAR | 32/142/647/1025 |
+| 8 | BECQUANIENTE | 7,6 | 12 | 8,43 | -9,8 % | C.PACAUT | 44/125/567/1239 |
+| 2 | LETTYT FIGHT | 7,8 | 3,2 | 9,84 | -20,7 % | M.GRANDIN | 3/96/171/361 |
+| 14 | ZILCOVER | 8,5 | – | 11,87 | -28,4 % | L.BOISSEAU | 37/452/–/964 |
+| 15 | ARGYRON | 12 | 12 | 19,10 | -37,2 % | A.MENARD-LEDAUPHIN | 159/229/138/1469 |
+| 11 | HAPPY HARRY | 13 | – | 20,99 | -38,1 % | M.JUSTUM | 87/326/39/538 |
+| 6 | NEVER COME BACK | 14 | – | 21,34 | -34,4 % | L.ROUSSEL | 18/117/48/757 |
+| 7 | ZAKARIIA | 15 | 18 | 24,19 | -38,0 % | M.MARQUETTE | 51/15/3335/57 |
+| 9 | BIALYSTOK | 21 | 36 | 34,18 | -38,6 % | A.NICCO | 158/213/168/4297 |
+| 1 | LADY ACHILLIA | 24 | 36 | 39,82 | -39,7 % | C.BELMONT | 146/81/1082/211 |
+| 10 | HISTOIREDEMARS | 26 | – | 34,66 | -25,0 % | C.GROSBOIS | 26/45/1260/3552 |
+| 3 | PAPILLE D'ARGENT | 27 | – | 45,51 | -40,7 % | E.GAY LE BRETON | 383/170/–/1974 |
+| 13 | ALMAGRO | 38 | – | 58,07 | -34,6 % | J.CLAUDIC | 40/117/138/757 |
