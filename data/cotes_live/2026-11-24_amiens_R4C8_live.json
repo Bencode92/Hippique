@@ -4,26 +4,26 @@
   "reunion": 4,
   "heure_depart": 1795549500000,
   "distance": 2400,
-  "scraped_at": "2026-11-24T20:33:25.244135+01:00",
-  "minutes_avant_depart": 12,
+  "scraped_at": "2026-11-24T20:40:05.135025+01:00",
+  "minutes_avant_depart": 5,
   "participants": [
     {
       "numPmu": 1,
       "nom": "INDY FOUTEAU",
-      "cote_live": 4.5,
+      "cote_live": 4.6,
       "cote_reference": 7.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795548779000
+      "timestamp_cote": 1795549197000
     },
     {
       "numPmu": 2,
       "nom": "IDEAL D'AUCHY",
-      "cote_live": 4.1,
+      "cote_live": 4.4,
       "cote_reference": 9.3,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1795548779000
+      "timestamp_cote": 1795549197000
     },
     {
       "numPmu": 3,
@@ -32,70 +32,70 @@
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795548779000
+      "timestamp_cote": 1795549197000
     },
     {
       "numPmu": 4,
       "nom": "IBRA DE LOU",
-      "cote_live": 4.9,
+      "cote_live": 5.8,
       "cote_reference": 3.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795548779000
+      "timestamp_cote": 1795549197000
     },
     {
       "numPmu": 5,
       "nom": "HELLO CAUVELLIERE",
-      "cote_live": 4.9,
+      "cote_live": 5.6,
       "cote_reference": 4.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795548779000
+      "timestamp_cote": 1795549197000
     },
     {
       "numPmu": 6,
       "nom": "INSTIGATEUR",
-      "cote_live": 19.0,
+      "cote_live": 13.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795548779000
+      "timestamp_cote": 1795549197000
     },
     {
       "numPmu": 7,
       "nom": "IROKO DU NORD",
-      "cote_live": 25.0,
+      "cote_live": 20.0,
       "cote_reference": 29.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795548779000
+      "timestamp_cote": 1795549197000
     },
     {
       "numPmu": 8,
       "nom": "JACKARY D'OCQUE",
-      "cote_live": 27.0,
+      "cote_live": 22.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795548779000
+      "timestamp_cote": 1795549197000
     },
     {
       "numPmu": 9,
       "nom": "HASHTAG DU LION",
-      "cote_live": 18.0,
+      "cote_live": 10.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795548779000
+      "timestamp_cote": 1795549197000
     },
     {
       "numPmu": 11,
       "nom": "JOKER MADRIK",
-      "cote_live": 20.0,
+      "cote_live": 22.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795548779000
+      "timestamp_cote": 1795549197000
     }
   ],
   "hippodrome": "AMIENS",
@@ -178,6 +178,54 @@
         "8": 27.0,
         "9": 18.0,
         "11": 20.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-24T20:38:04.721525+01:00",
+      "minutes_avant_depart": 6.922471166666667,
+      "cotes": {
+        "1": 4.7,
+        "2": 4.2,
+        "3": 29.0,
+        "4": 5.4,
+        "5": 5.1,
+        "6": 13.0,
+        "7": 24.0,
+        "8": 20.0,
+        "9": 15.0,
+        "11": 19.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-24T20:39:24.756394+01:00",
+      "minutes_avant_depart": 5.5891332333333335,
+      "cotes": {
+        "1": 4.5,
+        "2": 4.4,
+        "3": 29.0,
+        "4": 5.8,
+        "5": 5.5,
+        "6": 14.0,
+        "7": 22.0,
+        "8": 22.0,
+        "9": 10.0,
+        "11": 21.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-24T20:40:05.135025+01:00",
+      "minutes_avant_depart": 4.9218642,
+      "cotes": {
+        "1": 4.6,
+        "2": 4.4,
+        "3": 25.0,
+        "4": 5.8,
+        "5": 5.6,
+        "6": 13.0,
+        "7": 20.0,
+        "8": 22.0,
+        "9": 10.0,
+        "11": 22.0
       }
     }
   ]
