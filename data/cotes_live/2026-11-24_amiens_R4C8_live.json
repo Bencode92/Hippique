@@ -4,98 +4,98 @@
   "reunion": 4,
   "heure_depart": 1795549500000,
   "distance": 2400,
-  "scraped_at": "2026-11-24T20:25:24.912004+01:00",
-  "minutes_avant_depart": 20,
+  "scraped_at": "2026-11-24T20:29:25.138395+01:00",
+  "minutes_avant_depart": 16,
   "participants": [
     {
       "numPmu": 1,
       "nom": "INDY FOUTEAU",
-      "cote_live": 4.8,
+      "cote_live": 4.7,
       "cote_reference": 7.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795548317000
+      "timestamp_cote": 1795548559000
     },
     {
       "numPmu": 2,
       "nom": "IDEAL D'AUCHY",
-      "cote_live": 5.5,
+      "cote_live": 4.5,
       "cote_reference": 9.3,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795548317000
+      "timestamp_cote": 1795548559000
     },
     {
       "numPmu": 3,
       "nom": "HIJO MOKO",
-      "cote_live": 19.0,
-      "cote_reference": 17.0,
-      "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1795548317000
-    },
-    {
-      "numPmu": 4,
-      "nom": "IBRA DE LOU",
-      "cote_live": 3.8,
-      "cote_reference": 3.3,
-      "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1795548317000
-    },
-    {
-      "numPmu": 5,
-      "nom": "HELLO CAUVELLIERE",
-      "cote_live": 5.4,
-      "cote_reference": 4.3,
-      "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1795548317000
-    },
-    {
-      "numPmu": 6,
-      "nom": "INSTIGATEUR",
-      "cote_live": 15.0,
-      "cote_reference": 11.0,
-      "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1795548317000
-    },
-    {
-      "numPmu": 7,
-      "nom": "IROKO DU NORD",
-      "cote_live": 26.0,
-      "cote_reference": 29.0,
-      "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1795548317000
-    },
-    {
-      "numPmu": 8,
-      "nom": "JACKARY D'OCQUE",
       "cote_live": 21.0,
       "cote_reference": 17.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795548317000
+      "timestamp_cote": 1795548559000
+    },
+    {
+      "numPmu": 4,
+      "nom": "IBRA DE LOU",
+      "cote_live": 4.2,
+      "cote_reference": 3.3,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1795548559000
+    },
+    {
+      "numPmu": 5,
+      "nom": "HELLO CAUVELLIERE",
+      "cote_live": 6.0,
+      "cote_reference": 4.3,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795548559000
+    },
+    {
+      "numPmu": 6,
+      "nom": "INSTIGATEUR",
+      "cote_live": 17.0,
+      "cote_reference": 11.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795548559000
+    },
+    {
+      "numPmu": 7,
+      "nom": "IROKO DU NORD",
+      "cote_live": 25.0,
+      "cote_reference": 29.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795548537000
+    },
+    {
+      "numPmu": 8,
+      "nom": "JACKARY D'OCQUE",
+      "cote_live": 23.0,
+      "cote_reference": 17.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795548537000
     },
     {
       "numPmu": 9,
       "nom": "HASHTAG DU LION",
-      "cote_live": 20.0,
-      "cote_reference": 15.0,
-      "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1795548317000
-    },
-    {
-      "numPmu": 11,
-      "nom": "JOKER MADRIK",
       "cote_live": 19.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795548317000
+      "timestamp_cote": 1795548537000
+    },
+    {
+      "numPmu": 11,
+      "nom": "JOKER MADRIK",
+      "cote_live": 18.0,
+      "cote_reference": 15.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795548537000
     }
   ],
   "hippodrome": "AMIENS",
@@ -146,6 +146,22 @@
         "8": 21.0,
         "9": 20.0,
         "11": 19.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-24T20:29:25.138395+01:00",
+      "minutes_avant_depart": 15.589166233333334,
+      "cotes": {
+        "1": 4.7,
+        "2": 4.5,
+        "3": 21.0,
+        "4": 4.2,
+        "5": 6.0,
+        "6": 17.0,
+        "7": 25.0,
+        "8": 23.0,
+        "9": 19.0,
+        "11": 18.0
       }
     }
   ]
