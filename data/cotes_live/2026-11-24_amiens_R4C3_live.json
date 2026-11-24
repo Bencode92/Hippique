@@ -4,35 +4,35 @@
   "reunion": 4,
   "heure_depart": 1795540500000,
   "distance": 2400,
-  "scraped_at": "2026-11-24T18:00:24.731724+01:00",
-  "minutes_avant_depart": 15,
+  "scraped_at": "2026-11-24T18:05:04.626561+01:00",
+  "minutes_avant_depart": 10,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MIKONOS DU ROSAY",
-      "cote_live": 9.6,
+      "cote_live": 10.0,
       "cote_reference": 26.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795539602000
+      "timestamp_cote": 1795539888000
     },
     {
       "numPmu": 2,
       "nom": "MOULINSART",
-      "cote_live": 13.0,
+      "cote_live": 12.0,
       "cote_reference": 19.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795539602000
+      "timestamp_cote": 1795539888000
     },
     {
       "numPmu": 3,
       "nom": "MEDOC DES GLENAN",
-      "cote_live": 3.4,
+      "cote_live": 3.6,
       "cote_reference": 4.3,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1795539602000
+      "timestamp_cote": 1795539888000
     },
     {
       "numPmu": 4,
@@ -41,97 +41,97 @@
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795539602000
+      "timestamp_cote": 1795539888000
     },
     {
       "numPmu": 5,
       "nom": "MADE IN MOIRE",
-      "cote_live": 8.9,
+      "cote_live": 9.3,
       "cote_reference": 7.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795539602000
+      "timestamp_cote": 1795539888000
     },
     {
       "numPmu": 6,
       "nom": "MILLESIME TIKELOLE",
-      "cote_live": 8.3,
+      "cote_live": 7.5,
       "cote_reference": 5.9,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795539602000
+      "timestamp_cote": 1795539888000
     },
     {
       "numPmu": 7,
       "nom": "MILOR DES CAILLONS",
-      "cote_live": 52.0,
+      "cote_live": 53.0,
       "cote_reference": 33.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795539602000
+      "timestamp_cote": 1795539888000
     },
     {
       "numPmu": 8,
       "nom": "MATRERO",
-      "cote_live": 11.0,
+      "cote_live": 12.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795539602000
+      "timestamp_cote": 1795539888000
     },
     {
       "numPmu": 9,
       "nom": "MILORD DU COJEUL",
-      "cote_live": 91.0,
+      "cote_live": 89.0,
       "cote_reference": 46.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795539602000
+      "timestamp_cote": 1795539888000
     },
     {
       "numPmu": 10,
       "nom": "MAESTRO DE FERFAY",
-      "cote_live": 66.0,
+      "cote_live": 55.0,
       "cote_reference": 29.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795539602000
+      "timestamp_cote": 1795539888000
     },
     {
       "numPmu": 11,
       "nom": "MUSIKER",
-      "cote_live": 9.4,
+      "cote_live": 8.6,
       "cote_reference": 8.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795539602000
+      "timestamp_cote": 1795539888000
     },
     {
       "numPmu": 12,
       "nom": "MY WAY D'ALB",
-      "cote_live": 38.0,
+      "cote_live": 41.0,
       "cote_reference": 32.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795539602000
+      "timestamp_cote": 1795539888000
     },
     {
       "numPmu": 13,
       "nom": "MARIO DU CAIEU",
-      "cote_live": 23.0,
+      "cote_live": 22.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795539602000
+      "timestamp_cote": 1795539888000
     },
     {
       "numPmu": 14,
       "nom": "MAESTRO DES NOES",
-      "cote_live": 21.0,
+      "cote_live": 22.0,
       "cote_reference": 14.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795539602000
+      "timestamp_cote": 1795539888000
     }
   ],
   "hippodrome": "AMIENS",
@@ -174,6 +174,26 @@
         "12": 38.0,
         "13": 23.0,
         "14": 21.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-24T18:05:04.626561+01:00",
+      "minutes_avant_depart": 9.931379633333334,
+      "cotes": {
+        "1": 10.0,
+        "2": 12.0,
+        "3": 3.6,
+        "4": 12.0,
+        "5": 9.3,
+        "6": 7.5,
+        "7": 53.0,
+        "8": 12.0,
+        "9": 89.0,
+        "10": 55.0,
+        "11": 8.6,
+        "12": 41.0,
+        "13": 22.0,
+        "14": 22.0
       }
     }
   ]
