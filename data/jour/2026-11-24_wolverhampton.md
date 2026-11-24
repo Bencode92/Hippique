@@ -49,15 +49,15 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 9 | ZAJAL | 1,2 | BILLY LOUGHNANE | 223/104/–/50 |
-| 3 | MANITOBA | 11 | LUKE CATTON | –/16/–/50 |
-| 6 | SON OF VEGA | 11 | LUKE MORRIS | 256/–/–/– |
-| 4 | MANOLIN | 15 | CALLUM HUTCHINSON | –/72/–/13 |
-| 5 | RADIO BAR | 21 | KIERAN SHOEMARK | 279/114/–/– |
-| 2 | FORT MCHENRY | 24 | PADDY BRADLEY | –/662/–/– |
-| 8 | THE GREAT KAROO | 65 | KAIYA FRASER | 434/602/–/– |
-| 7 | THAI BOXER | 197 | FINLEY MARSH | –/–/–/– |
-| 1 | FINAL CONQUEST | – | DANIEL MUSCUTT | 450/491/–/– |
+| 9 | ZAJAL | 1,5 | BILLY LOUGHNANE | 223/104/–/50 |
+| 3 | MANITOBA | 5,4 | LUKE CATTON | –/16/–/50 |
+| 4 | MANOLIN | 8,6 | CALLUM HUTCHINSON | –/72/–/13 |
+| 6 | SON OF VEGA | 19 | LUKE MORRIS | 256/–/–/– |
+| 2 | FORT MCHENRY | 28 | PADDY BRADLEY | –/662/–/– |
+| 8 | THE GREAT KAROO | 29 | KAIYA FRASER | 434/602/–/– |
+| 5 | RADIO BAR | 51 | KIERAN SHOEMARK | 279/114/–/– |
+| 1 | FINAL CONQUEST | 65 | DANIEL MUSCUTT | 450/491/–/– |
+| 7 | THAI BOXER | 82 | FINLEY MARSH | –/–/–/– |
 
 ### 4. EBF MAIDEN STAKES (CLASS 3) (DIV II)
 
@@ -65,14 +65,14 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 8 | TRUE KNIGHT | 1,7 | HOLLIE DOYLE | 336/323/–/– |
-| 2 | HALDON FIRE | 5,3 | CALLUM HUTCHINSON | –/72/–/5149 |
-| 3 | MODERNIST | 10 | COLIN KEANE | 150/16/–/– |
-| 4 | MYTHICAL TALE | 10 | BILLY LOUGHNANE | 223/104/–/50 |
+| 3 | MODERNIST | 2,2 | COLIN KEANE | 150/16/–/– |
+| 4 | MYTHICAL TALE | 4,7 | BILLY LOUGHNANE | 223/104/–/50 |
+| 2 | HALDON FIRE | 5,2 | CALLUM HUTCHINSON | –/72/–/5149 |
+| 7 | TOP SCHOLAR | 8,2 | CIEREN FALLON | 258/29/–/– |
 | 1 | CARLETTO | 13 | KIERAN SHOEMARK | 279/114/–/56 |
-| 7 | TOP SCHOLAR | 13 | CIEREN FALLON | 258/29/–/– |
-| 6 | SARFRAJ | 26 | ROB HORNBY | 441/833/–/– |
-| 5 | NAVAL WARRIOR | 53 | JONNY PEATE | –/602/–/– |
+| 8 | TRUE KNIGHT | 27 | HOLLIE DOYLE | 336/323/–/– |
+| 6 | SARFRAJ | 28 | ROB HORNBY | 441/833/–/– |
+| 5 | NAVAL WARRIOR | 37 | JONNY PEATE | –/602/–/– |
 
 ### 5. HANDICAP (CLASS 4)
 
@@ -80,9 +80,9 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | HAPPY LOVE | 2,2 | BILLY LOUGHNANE | 223/101/–/– |
-| 2 | NATIONAL PRIDE | 2,7 | CIEREN FALLON | 258/29/–/– |
-| 3 | HIGH CALIBRE | 3 | JOE LEAVY | –/292/–/– |
+| 1 | HAPPY LOVE | 1,9 | BILLY LOUGHNANE | 223/101/–/– |
+| 2 | NATIONAL PRIDE | 2,9 | CIEREN FALLON | 258/29/–/– |
+| 3 | HIGH CALIBRE | 3,7 | JOE LEAVY | –/292/–/– |
 
 ### 6. HANDICAP (CLASS 3)
 
@@ -90,15 +90,15 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 7 | SILENT STRIKE | 1,5 | CALLUM HUTCHINSON | –/72/–/101 |
-| 3 | DANDANA | 6,7 | CALLUM RODRIGUEZ | 214/44/–/– |
+| 7 | SILENT STRIKE | 3,7 | CALLUM HUTCHINSON | –/72/–/101 |
+| 4 | ANOTHER ABBOT | 3,8 | CIEREN FALLON | 258/29/–/– |
+| 3 | DANDANA | 8,4 | CALLUM RODRIGUEZ | 214/44/–/– |
+| 8 | PUROSANGUE | 8,7 | BILLY LOUGHNANE | 223/851/–/– |
+| 1 | DESERT FALCON | 8,8 | RYAN SEXTON | –/–/–/– |
+| 5 | ALFA KELLENIC | 9,4 | LUKE MORRIS | 256/–/–/– |
 | 2 | BOLO NEIGHS | 10 | RHYS CLUTTERBUCK | 407/171/–/– |
-| 5 | ALFA KELLENIC | 10 | LUKE MORRIS | 256/–/–/– |
-| 4 | ANOTHER ABBOT | 20 | CIEREN FALLON | 258/29/–/– |
-| 8 | PUROSANGUE | 20 | BILLY LOUGHNANE | 223/851/–/– |
-| 10 | ONE AND GONE | 20 | RYAN KAVANAGH | –/620/–/– |
-| 1 | DESERT FALCON | – | RYAN SEXTON | –/–/–/– |
-| 6 | HARRY THREE | – | KIERAN SHOEMARK | 279/528/–/– |
+| 10 | ONE AND GONE | 21 | RYAN KAVANAGH | –/620/–/– |
+| 6 | HARRY THREE | 52 | KIERAN SHOEMARK | 279/528/–/– |
 
 ### 7. FILLIES' HANDICAP (CLASS 4)
 
@@ -106,16 +106,16 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 6 | UM WADI | 2,2 | BILLY LOUGHNANE | 223/450/–/– |
-| 8 | NANOSCIENCE | 4,4 | CALLUM HUTCHINSON | –/72/–/1076 |
-| 2 | GHISA | 8,8 | PADDY BRADLEY | –/662/–/– |
-| 3 | INSIDE STORY | 8,8 | CLIFFORD LEE | 250/855/–/1533 |
-| 4 | MERRY | 8,8 | DANIEL MUSCUTT | 450/491/–/– |
-| 11 | ENOLA GREY | 8,8 | LAURA COUGHLAN | –/–/–/– |
-| 1 | ICE SOVEREIGNS | – | SHANE GRAY | 463/–/–/1545 |
-| 7 | QUEEN TAMARA | – | CALLUM RODRIGUEZ | 214/876/–/5023 |
-| 9 | MALDEVIOUS | – | HARRY RUSSELL | –/424/–/– |
-| 10 | QUEUE DOS | – | ALEXANDRA EGAN | –/–/–/– |
+| 6 | UM WADI | 4,4 | BILLY LOUGHNANE | 223/450/–/– |
+| 2 | GHISA | 6 | PADDY BRADLEY | –/662/–/– |
+| 8 | NANOSCIENCE | 7,6 | CALLUM HUTCHINSON | –/72/–/1076 |
+| 9 | MALDEVIOUS | 7,9 | HARRY RUSSELL | –/424/–/– |
+| 1 | ICE SOVEREIGNS | 9,1 | SHANE GRAY | 463/–/–/1545 |
+| 3 | INSIDE STORY | 9,6 | CLIFFORD LEE | 250/855/–/1533 |
+| 4 | MERRY | 9,9 | DANIEL MUSCUTT | 450/491/–/– |
+| 10 | QUEUE DOS | 13 | ALEXANDRA EGAN | –/–/–/– |
+| 7 | QUEEN TAMARA | 19 | CALLUM RODRIGUEZ | 214/876/–/5023 |
+| 11 | ENOLA GREY | 19 | LAURA COUGHLAN | –/–/–/– |
 
 ### 8. HANDICAP (CLASS 4)
 
@@ -123,15 +123,15 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 8 | FLAGBEARER | 1,3 | CIEREN FALLON | 258/29/–/8 |
-| 5 | QUEBELLA | 10 | CALLUM RODRIGUEZ | 214/289/–/– |
-| 6 | WONDER | 11 | GEORGE WOOD | –/602/–/– |
-| 3 | YAA MIN | 15 | DARRAGH KEENAN | 195/–/–/– |
-| 2 | SENOR CORTEZ | 22 | HOLLIE DOYLE | 336/–/–/– |
-| 7 | MUST BELIEVE | 22 | BILLY LOUGHNANE | 223/480/–/– |
-| 4 | ONEFORTHEGUTTER | 45 | LUKE MORRIS | 256/620/–/– |
-| 1 | CODIAK | – | OISIN ORR | –/239/–/– |
-| 9 | MIDNIGHT RUMBLE | – | JOE LEAVY | –/–/–/– |
+| 8 | FLAGBEARER | 2,8 | CIEREN FALLON | 258/29/–/8 |
+| 7 | MUST BELIEVE | 6,9 | BILLY LOUGHNANE | 223/480/–/– |
+| 2 | SENOR CORTEZ | 7,3 | HOLLIE DOYLE | 336/–/–/– |
+| 6 | WONDER | 7,6 | GEORGE WOOD | –/602/–/– |
+| 5 | QUEBELLA | 9,1 | CALLUM RODRIGUEZ | 214/289/–/– |
+| 3 | YAA MIN | 10 | DARRAGH KEENAN | 195/–/–/– |
+| 4 | ONEFORTHEGUTTER | 14 | LUKE MORRIS | 256/620/–/– |
+| 1 | CODIAK | 15 | OISIN ORR | –/239/–/– |
+| 9 | MIDNIGHT RUMBLE | 28 | JOE LEAVY | –/–/–/– |
 
 ### 9. HANDICAP (CLASS 5)
 
@@ -139,12 +139,12 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | MOE'S LEGACY | 3,3 | CIEREN FALLON | 258/–/–/– |
-| 9 | RYE | 3,3 | HOLLIE DOYLE | 336/–/–/– |
-| 5 | MAHARAJAS EXPRESS | 4,4 | BILLY LOUGHNANE | 223/620/–/– |
-| 8 | TRULY GLAMOROUS | 6,6 | GINA MANGAN | –/–/–/– |
-| 10 | SHOWTIME MAHOMES | 6,6 | LAURA PEARSON | 453/–/–/– |
+| 8 | TRULY GLAMOROUS | 2,9 | GINA MANGAN | –/–/–/– |
+| 3 | CAMPENAERTS | 5 | ROB HORNBY | 441/833/–/– |
+| 5 | MAHARAJAS EXPRESS | 5,8 | BILLY LOUGHNANE | 223/620/–/– |
+| 9 | RYE | 7 | HOLLIE DOYLE | 336/–/–/– |
+| 1 | MOE'S LEGACY | 8,8 | CIEREN FALLON | 258/–/–/– |
+| 4 | GRANDLAD | 17 | DANIEL MUSCUTT | 450/491/–/– |
+| 6 | BURDETT ESTATE | 17 | KIERAN SHOEMARK | 279/–/–/– |
+| 10 | SHOWTIME MAHOMES | 17 | LAURA PEARSON | 453/–/–/– |
 | 2 | BEAUMADIER | – | HOPE REGAN | –/–/–/– |
-| 3 | CAMPENAERTS | – | ROB HORNBY | 441/833/–/– |
-| 4 | GRANDLAD | – | DANIEL MUSCUTT | 450/491/–/– |
-| 6 | BURDETT ESTATE | – | KIERAN SHOEMARK | 279/–/–/– |
