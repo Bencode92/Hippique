@@ -1,6 +1,6 @@
 # VALPARAISO — 25/11/2026
 
-4 courses (1 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+4 courses (2 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -49,9 +49,9 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 3 | COMPOSTELANA | 1,1 | SEBASTIAN EDUARDO GONZALEZ |
 | 1 | RAMSES | – | PIERO IGNACIO REYES PODESTA |
 | 2 | RUBATO | – | ALEJANDRO ISAIAS MAUREIRA |
-| 3 | COMPOSTELANA | – | SEBASTIAN EDUARDO GONZALEZ |
 | 4 | JARUM | – | NICOLAS ALEJANDRO RAMIREZ MUNOZ |
 | 5 | TONADA VIEJA | – | MOISES ABRAHAM DONOSO |
 | 6 | JOYA DEL LITORAL | – | NELSON ANDRES ROJAS |
@@ -66,14 +66,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | ANDREI BOLKONSKY | 3,5 | GUILLERMO ANTONIO PEREZ ASTUDILL |
-| 2 | DALE ISI | 3,5 | RAFAEL FRANCISCO CISTERNAS AYALA |
-| 7 | BOM BOM ASESINO | 3,5 | CARLOS ALEJANDRO ORTEGA TAPIA |
-| 9 | GUAPA PORTENA | 3,5 | ALEJANDRO ISAIAS MAUREIRA |
+| 1 | ANDREI BOLKONSKY | 4,4 | GUILLERMO ANTONIO PEREZ ASTUDILL |
+| 2 | DALE ISI | 4,4 | RAFAEL FRANCISCO CISTERNAS AYALA |
+| 6 | SOUL QUEEN | 4,4 | JOSE MATIAS EYZAGUIRRE CEPEDA |
+| 7 | BOM BOM ASESINO | 4,4 | CARLOS ALEJANDRO ORTEGA TAPIA |
+| 9 | GUAPA PORTENA | 4,4 | ALEJANDRO ISAIAS MAUREIRA |
 | 3 | ROSITA DEL PUERTO | – | OSCAR ALEJANDRO ULLOA PEREZ |
 | 4 | CUANDO VUELVES | – | MATIAS ANDRES CARO AVILES |
 | 5 | LA CARMELA | – | MOISES ABRAHAM DONOSO |
-| 6 | SOUL QUEEN | – | JOSE MATIAS EYZAGUIRRE CEPEDA |
 | 8 | BAD BUNNY | – | JAIME ADOLFO MINO FICA |
 | 10 | LATIGUERA | – | GERALD ANDRES RODRIGUEZ SEPULVED |
 | 11 | SENORA BERNI | – | JOSE DANIEL VILLAGRAN |

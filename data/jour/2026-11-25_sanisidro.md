@@ -1,6 +1,6 @@
 # SAN ISIDRO — 25/11/2026
 
-4 courses (1 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+4 courses (2 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -27,11 +27,11 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 2 | IGALA FRANK | 1,7 | LEOPOLDO MATEO ARMOHA |
+| 5 | RUBIA COMPADRONA | 1,7 | FRANCISCO LEANDRO FERNANDES GONC |
 | 1 | HOTTEST | – | LUCRECIA MARIANA CARABAJAL |
-| 2 | IGALA FRANK | – | LEOPOLDO MATEO ARMOHA |
 | 3 | LIT A BOMB | – | JEREMIAS RAUL VELIZ |
 | 4 | AMOR ETERNO | – | OSVALDO ADRIAN ALDERETE |
-| 5 | RUBIA COMPADRONA | – | FRANCISCO LEANDRO FERNANDES GONC |
 | 6 | DOS RISAS | – | PABLO DAMIAN CARRIZO |
 
 ### 11. VICTORIA REGIA
@@ -58,8 +58,8 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 12 | GALAXY | 1,1 | ARIEL CARLOS FUENTES | –/–/–/– |
-| 1 | HAPPY FRANK | – | RODRIGUEZ MAXIM ASERITO | –/–/–/– |
+| 1 | HAPPY FRANK | 1,7 | RODRIGUEZ MAXIM ASERITO | –/–/–/– |
+| 12 | GALAXY | 1,7 | ARIEL CARLOS FUENTES | –/–/–/– |
 | 2 | LA DADA | – | LUCAS JESUS NORIEGA COBIAN | –/–/–/– |
 | 3 | LAGUNA VITEL | – | WILFREDO ANDRES TORRES MALDONADO | –/–/–/– |
 | 4 | ALMA MISIONERA | – | non communique | –/–/–/– |

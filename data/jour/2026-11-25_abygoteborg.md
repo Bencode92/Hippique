@@ -1,8 +1,8 @@
 # ABY GOTEBORG — 25/11/2026
 
-9 courses.
+9 courses (2 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
 ---
 
@@ -12,11 +12,11 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 5 | GIOVANNA Z. | 1,1 | O. OSTRE |
 | 1 | BELUGA RHYME | – | J. RYDBERG |
 | 2 | CRUISE H.H. | – | K. OSCARSSON |
 | 3 | HAVANA MOON S. | – | H. CREBAS |
 | 4 | RAINBOW BROS | – | J. UNTERSTEINER |
-| 5 | GIOVANNA Z. | – | O. OSTRE |
 | 6 | TIP TAP TILDA | – | M. JAKOBSSON |
 | 7 | BIANCA BALDRIDGE | – | P. LINDEROTH |
 | 8 | MISTER IDHAIR | – | C. JEPSON |
@@ -47,6 +47,7 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 8 | DYNAMITE BORE | 1,1 | V. BRODIN |
 | 1 | RED MADONNA | – | J. JUEL |
 | 2 | ALEXA'S GENIUS | – | T. KARLSTEDT |
 | 3 | SHANGO | – | P. LINDEROTH |
@@ -54,7 +55,6 @@
 | 5 | GRANSAL JET | – | K. LINDBERG |
 | 6 | ROCKWOOD SILVIO | – | J. UNTERSTEINER |
 | 7 | VIKENS BREAKDEALER | – | C.J. JEPSON |
-| 8 | DYNAMITE BORE | – | V. BRODIN |
 | 9 | KING OF RATZEPUTZ | – | G. JOHANSSON |
 
 ### 4. PRIX MISS DES BESACES                   SUEDE
