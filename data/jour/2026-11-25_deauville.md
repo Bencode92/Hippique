@@ -1,6 +1,6 @@
 # DEAUVILLE — 25/11/2026
 
-8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -157,23 +157,23 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DE L'AUBERGE DES PEINTRES
 
-*18h00 · plat · 1300 m · 16 partants · cotes de l'extraction*
+*18h00 · plat · 1300 m · 16 partants · cotes à T−15:20*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 5 | DAISY DAISY | 3,6 | 4,07 | -11,6 % | A.MADAMET | 12/31/3731/933 |
-| 3 | TIZIAN | 4,4 | 4,49 | -1,9 % | M.GRANDIN | 3/41/518/1579 |
-| 2 | REGALIEN | 7,9 | 9,40 | -16,0 % | T.PICCONE | 9/86/42/1485 |
-| 1 | CITY BABE | 9,9 | 12,25 | -19,2 % | A.VILCHIEN | 98/17/123/32 |
-| 7 | GOLDEN HIND | 9,9 | 10,95 | -9,6 % | A.LEMAITRE | 10/50/213/110 |
-| 11 | SBIKHA | 9,9 | 12,79 | -22,6 % | A.MOLINS | 28/41/299/725 |
-| 8 | NOFIX | 13 | 16,89 | -23,0 % | L.ROUSSEL | 18/31/1/29 |
-| 15 | GOLDEN KNIGHT | 13 | 16,46 | -21,0 % | H.JOURNIAC | 41/172/1651/1092 |
-| 6 | TORPEN | 39 | 59,73 | -34,7 % | T.TRULLIER | 24/723/2702/3647 |
-| 13 | MELLOW YELLOW | 39 | 54,36 | -28,3 % | A.HAMELIN | 23/17/34/32 |
-| 4 | SIMPLY LOVELY | – | – |  | F.LEFEBVRE | 46/215/792/343 |
-| 9 | BARGING THRU | – | – |  | S.TISON | 108/382/571/742 |
-| 10 | BEAU GARS | – | – |  | M.VELON | 27/87/69/– |
-| 12 | TYSON | – | – |  | T.BACHELOT | 16/96/26/1512 |
-| 14 | ITAEWON | – | – |  | A.DUQUESNOY | 122/33/203/51 |
-| 16 | DESERT ROSE | – | – |  | B.MARIE | 63/306/86/468 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 8 | NOFIX | 3,9 | 13 | 4,53 | -13,9 % | L.ROUSSEL | 18/31/1/29 |
+| 1 | CITY BABE | 10 | 9,9 | 12,85 | -22,2 % | A.VILCHIEN | 98/17/123/32 |
+| 2 | REGALIEN | 10 | 7,9 | 12,85 | -22,2 % | T.PICCONE | 9/86/42/1485 |
+| 5 | DAISY DAISY | 12 | 3,6 | 15,52 | -22,7 % | A.MADAMET | 12/31/3731/933 |
+| 3 | TIZIAN | 13 | 4,4 | 15,99 | -18,7 % | M.GRANDIN | 3/41/518/1579 |
+| 4 | SIMPLY LOVELY | 14 | – | 17,43 | -19,7 % | F.LEFEBVRE | 46/215/792/343 |
+| 11 | SBIKHA | 14 | 9,9 | 19,95 | -29,8 % | A.MOLINS | 28/41/299/725 |
+| 7 | GOLDEN HIND | 15 | 9,9 | 18,41 | -18,5 % | A.LEMAITRE | 10/50/213/110 |
+| 10 | BEAU GARS | 18 | – | 25,61 | -29,7 % | M.VELON | 27/87/69/– |
+| 12 | TYSON | 19 | – | 24,87 | -23,6 % | T.BACHELOT | 16/96/26/1512 |
+| 14 | ITAEWON | 20 | – | 27,16 | -26,4 % | A.DUQUESNOY | 122/33/203/51 |
+| 6 | TORPEN | 22 | 39 | 32,32 | -31,9 % | T.TRULLIER | 24/723/2702/3647 |
+| 16 | DESERT ROSE | 23 | – | 36,54 | -37,1 % | B.MARIE | 63/306/86/468 |
+| 9 | BARGING THRU | 25 | – | 37,42 | -33,2 % | S.TISON | 108/382/571/742 |
+| 13 | MELLOW YELLOW | 25 | 39 | 34,09 | -26,7 % | A.HAMELIN | 23/17/34/32 |
+| 15 | GOLDEN KNIGHT | 43 | 13 | 66,93 | -35,8 % | H.JOURNIAC | 41/172/1651/1092 |
