@@ -1,7 +1,7 @@
 {
   "hippodrome": "SOLVALLA",
   "type_reunion": "ATTELE",
-  "date_extraction": "2026-11-25T04:50:55.537553",
+  "date_extraction": "2026-11-25T17:57:37.881975",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/25112026/R5",
   "courses": [
     {
@@ -12,26 +12,6 @@
       "distance": "2140m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "ILLIANA EAGRA F.TR. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: S.J.'S CAVIAR et NOVELTY AS",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261125/SOL/1/20261125-SOL-1-1.png",
-          "propriétaire": "BRANDEL JOHAN",
-          "entraineur": "J. BRANDEL",
-          "éleveurs": "",
-          "jockey": "J. BRANDEL",
-          "poids": "",
-          "gains": "246400",
-          "musique": "8a7a4a0a0a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
-        },
         {
           "n°": "2",
           "cheval": "RICH'S QUEEN F.TR. 3 a.",
@@ -50,7 +30,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.4,
+          "cote_tendance": "",
+          "cote_reference": 5.5
         },
         {
           "n°": "3",
@@ -70,7 +53,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 5.7,
+          "cote_tendance": "",
+          "cote_reference": 6.7
         },
         {
           "n°": "4",
@@ -90,27 +76,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
-          "n°": "5",
-          "cheval": "DEVILS LANE M.TR. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: LUCIFER LANE et FANCY NANCY",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261125/SOL/1/20261125-SOL-1-5.png",
-          "propriétaire": "LAURSEN SAGA",
-          "entraineur": "K. AURELL LAURSEN",
-          "éleveurs": "",
-          "jockey": "Mme S. LAURSEN",
-          "poids": "",
-          "gains": "283000",
-          "musique": "5a5a2a0a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 51.0,
+          "cote_tendance": ""
         },
         {
           "n°": "6",
@@ -130,7 +98,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 8.1
         },
         {
           "n°": "7",
@@ -150,7 +121,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 16.0,
+          "cote_tendance": "",
+          "cote_reference": 14.0
         },
         {
           "n°": "8",
@@ -170,7 +144,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 8.3
         },
         {
           "n°": "9",
@@ -190,7 +167,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 16.0,
+          "cote_tendance": "",
+          "cote_reference": 29.0
         },
         {
           "n°": "10",
@@ -210,7 +190,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 4.6,
+          "cote_tendance": "",
+          "cote_reference": 4.0
         },
         {
           "n°": "11",
@@ -230,7 +213,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 18.0,
+          "cote_tendance": "",
+          "cote_reference": 8.7
         },
         {
           "n°": "12",
@@ -250,7 +236,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 10.0
         }
       ],
       "cordeCourse": "CORDE_GAUCHE"
@@ -273,7 +262,7 @@
           "propriétaire": "WRIGMAR MALIN",
           "entraineur": "M. WRIGMAR",
           "éleveurs": "",
-          "jockey": "Mme J. BRUNZELL",
+          "jockey": "K. GUST",
           "poids": "",
           "gains": "2166300",
           "musique": "4a0a1a5a5a",
@@ -281,7 +270,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 18.0,
+          "cote_tendance": "",
+          "cote_reference": 7.9
         },
         {
           "n°": "2",
@@ -301,7 +293,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.3,
+          "cote_tendance": "",
+          "cote_reference": 3.9
         },
         {
           "n°": "3",
@@ -362,8 +357,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 1.1,
-          "cote_tendance": ""
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 3.9
         },
         {
           "n°": "6",
@@ -383,7 +379,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.6,
+          "cote_tendance": ""
         },
         {
           "n°": "7",
@@ -395,7 +393,7 @@
           "propriétaire": "RORGEMOEN HENRY",
           "entraineur": "H. RORGEMOEN",
           "éleveurs": "",
-          "jockey": "Mme J.A. BJORK",
+          "jockey": "N. MELBERG",
           "poids": "",
           "gains": "3084600",
           "musique": "0a2a0a7a",
@@ -403,7 +401,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 12.0,
+          "cote_tendance": "",
+          "cote_reference": 7.9
         },
         {
           "n°": "8",
@@ -423,7 +424,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.4,
+          "cote_tendance": "",
+          "cote_reference": 3.9
         },
         {
           "n°": "9",
@@ -443,7 +447,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 18.0,
+          "cote_tendance": ""
         },
         {
           "n°": "10",
@@ -463,9 +469,13 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 18.0,
+          "cote_tendance": "",
+          "cote_reference": 7.9
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX DE LA TERRE                        SUEDE",
@@ -533,7 +543,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 5.8,
+          "cote_tendance": "",
+          "cote_reference": 2.6
         },
         {
           "n°": "4",
@@ -553,7 +566,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.8,
+          "cote_tendance": "",
+          "cote_reference": 2.6
         },
         {
           "n°": "5",
@@ -573,7 +589,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 17.0,
+          "cote_tendance": ""
         },
         {
           "n°": "6",
@@ -593,7 +611,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 17.0,
+          "cote_tendance": ""
         },
         {
           "n°": "7",
@@ -633,7 +653,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.8,
+          "cote_tendance": ""
         },
         {
           "n°": "9",
@@ -665,7 +687,7 @@
           "propriétaire": "STALL A'LIR KB",
           "entraineur": "A. LOVDAL",
           "éleveurs": "",
-          "jockey": "A. LOVDAL",
+          "jockey": "L. LONN",
           "poids": "",
           "gains": "737300",
           "musique": "0a3aDa3a2a",
@@ -693,7 +715,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 1.6,
+          "cote_tendance": "",
+          "cote_reference": 2.6
         },
         {
           "n°": "12",
@@ -715,7 +740,8 @@
           "nb_victoires": 0,
           "nb_places": 0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX DES PLANETES                       SUEDE",
@@ -743,7 +769,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 4.4,
+          "cote_tendance": "",
+          "cote_reference": 1.7
         },
         {
           "n°": "2",
@@ -763,7 +792,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.8,
+          "cote_tendance": ""
         },
         {
           "n°": "3",
@@ -823,7 +854,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 4.4,
+          "cote_tendance": ""
         },
         {
           "n°": "6",
@@ -863,7 +896,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 4.4,
+          "cote_tendance": ""
         },
         {
           "n°": "8",
@@ -883,27 +918,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
-          "n°": "9",
-          "cheval": "LEONARDO DA BOKO M.TR. 8 a.",
-          "cheval_url": "",
-          "père_mère": "Par: CANTAB HALL et ELIDA BOKO",
-          "corde": "(Corde:09)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261125/SOL/4/20261125-SOL-4-9.png",
-          "propriétaire": "ASD TRAV & JURIDIK HB",
-          "entraineur": "G. JANSSON",
-          "éleveurs": "",
-          "jockey": "Mme N. GRADLING",
-          "poids": "",
-          "gains": "3054800",
-          "musique": "4a0a0a6a4a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.8,
+          "cote_tendance": "",
+          "cote_reference": 3.5
         },
         {
           "n°": "10",
@@ -923,7 +941,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.8,
+          "cote_tendance": "",
+          "cote_reference": 3.5
         },
         {
           "n°": "11",
@@ -935,7 +956,7 @@
           "propriétaire": "STALL ESCAPADE AB",
           "entraineur": "P. NORMAN",
           "éleveurs": "",
-          "jockey": "A. NORDEMO",
+          "jockey": "J. VON KRUSENSTIERNA",
           "poids": "",
           "gains": "2761700",
           "musique": "Da7a0aDa0a",
@@ -943,7 +964,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.8,
+          "cote_tendance": ""
         },
         {
           "n°": "12",
@@ -965,7 +988,8 @@
           "nb_victoires": 0,
           "nb_places": 0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX LUNE                               SUEDE",
@@ -1033,7 +1057,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.7,
+          "cote_tendance": "",
+          "cote_reference": 1.2
         },
         {
           "n°": "4",
@@ -1053,7 +1080,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.4,
+          "cote_tendance": "",
+          "cote_reference": 11.0
         },
         {
           "n°": "5",
@@ -1094,8 +1124,9 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 1.1,
-          "cote_tendance": ""
+          "cote": 4.2,
+          "cote_tendance": "",
+          "cote_reference": 3.8
         },
         {
           "n°": "7",
@@ -1115,7 +1146,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.4,
+          "cote_tendance": ""
         },
         {
           "n°": "8",
@@ -1131,26 +1164,6 @@
           "poids": "",
           "gains": "14752700",
           "musique": "0a4a0a6a1a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
-          "n°": "9",
-          "cheval": "POWER DOC M.TR. 8 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MUSCLE MASSIVE et ULRIKA KARSK",
-          "corde": "",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261125/SOL/5/20261125-SOL-5-9.png",
-          "propriétaire": "OLOF BRODIN MARINEAB",
-          "entraineur": "M. SVEDBERG",
-          "éleveurs": "",
-          "jockey": "M.B. SVEDBERG",
-          "poids": "",
-          "gains": "32230300",
-          "musique": "4a1a(25)1a1a1a",
           "valeur": "",
           "equipement(s)": "",
           "nb_courses": 0,
@@ -1178,7 +1191,7 @@
           "propriétaire": "RORGEMOEN HENRY",
           "entraineur": "H. RORGEMOEN",
           "éleveurs": "",
-          "jockey": "Mme J. BRUNZELL",
+          "jockey": "K. GUST",
           "poids": "",
           "gains": "7102800",
           "musique": "4a0a7a0a2a",
@@ -1186,7 +1199,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 7.0
         },
         {
           "n°": "2",
@@ -1226,7 +1242,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.0,
+          "cote_tendance": "",
+          "cote_reference": 7.0
         },
         {
           "n°": "4",
@@ -1246,7 +1265,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 1.5,
+          "cote_tendance": "",
+          "cote_reference": 2.3
         },
         {
           "n°": "5",
@@ -1258,7 +1280,7 @@
           "propriétaire": "EASY KB",
           "entraineur": "I. RIESTERER",
           "éleveurs": "",
-          "jockey": "Mme J.A. BJORK",
+          "jockey": "N. MELBERG",
           "poids": "",
           "gains": "6429400",
           "musique": "5a5a1a8a3a",
@@ -1286,27 +1308,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
-          "n°": "7",
-          "cheval": "ABERAMA GOLD H.TR. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: PROPULSION et BREAK ON THROUGH",
-          "corde": "(Corde:07)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261125/SOL/6/20261125-SOL-6-7.png",
-          "propriétaire": "STALL ZET",
-          "entraineur": "D. REDÉN",
-          "éleveurs": "",
-          "jockey": "Mme J. PERSSON",
-          "poids": "",
-          "gains": "5921000",
-          "musique": "4a1a0a2a2a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 7.0
         },
         {
           "n°": "8",
@@ -1326,7 +1331,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 14.0,
+          "cote_tendance": "",
+          "cote_reference": 7.0
         },
         {
           "n°": "9",
@@ -1366,9 +1374,13 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.0,
+          "cote_tendance": "",
+          "cote_reference": 7.0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX VENUS                              SUEDE",
@@ -1439,26 +1451,6 @@
           "nb_places": 0
         },
         {
-          "n°": "4",
-          "cheval": "LILLA LUDDE H.TR. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: KADETT C.D. et LILLA LOTTA",
-          "corde": "(Corde:04)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261125/SOL/7/20261125-SOL-7-4.png",
-          "propriétaire": "SODERSTROM ANDREAS",
-          "entraineur": "J. SODERSTROM",
-          "éleveurs": "",
-          "jockey": "B. GOOP",
-          "poids": "",
-          "gains": "957500",
-          "musique": "6a5aDa2a4a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
           "n°": "5",
           "cheval": "FIFTH AMENDMENT H.TR. 6 a.",
           "cheval_url": "",
@@ -1496,7 +1488,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 1.6,
+          "cote_tendance": "",
+          "cote_reference": 1.2
         },
         {
           "n°": "7",
@@ -1516,7 +1511,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 13.0,
+          "cote_tendance": "",
+          "cote_reference": 9.7
         },
         {
           "n°": "8",
@@ -1536,7 +1534,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 4.4,
+          "cote_tendance": "",
+          "cote_reference": 9.7
         },
         {
           "n°": "9",
@@ -1576,7 +1577,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 13.0,
+          "cote_tendance": ""
         },
         {
           "n°": "11",
@@ -1596,7 +1599,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 6.6,
+          "cote_tendance": "",
+          "cote_reference": 9.7
         },
         {
           "n°": "12",
@@ -1618,7 +1624,8 @@
           "nb_victoires": 0,
           "nb_places": 0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX NEPTUNE                            SUEDE",
@@ -1646,7 +1653,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.9,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -1686,7 +1695,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.9,
+          "cote_tendance": "",
+          "cote_reference": 1.3
         },
         {
           "n°": "4",
@@ -1706,7 +1718,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 3.9,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -1766,7 +1780,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.6,
+          "cote_tendance": "",
+          "cote_reference": 2.6
         },
         {
           "n°": "8",
@@ -1848,7 +1865,8 @@
           "nb_victoires": 0,
           "nb_places": 0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX MARS                               SUEDE",
@@ -1936,7 +1954,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 1.4,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -1976,7 +1996,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 11.0,
+          "cote_tendance": "",
+          "cote_reference": 2.6
         },
         {
           "n°": "7",
@@ -1996,7 +2019,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 22.0,
+          "cote_tendance": "",
+          "cote_reference": 5.2
         },
         {
           "n°": "8",
@@ -2016,7 +2042,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 3.5
         },
         {
           "n°": "9",
@@ -2056,7 +2085,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 9.1,
+          "cote_tendance": "",
+          "cote_reference": 10.0
         },
         {
           "n°": "11",
@@ -2076,29 +2108,13 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
-        },
-        {
-          "n°": "12",
-          "cheval": "NUNCHITA F.TR. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: NUNCIO et ZANDRA WIN",
-          "corde": "(Corde:12)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261125/SOL/9/20261125-SOL-9-12.png",
-          "propriétaire": "LOVES ULRICA",
-          "entraineur": "P. NORDLUND",
-          "éleveurs": "",
-          "jockey": "R.N. SKOGLUND",
-          "poids": "",
-          "gains": "2619800",
-          "musique": "1a1aDa3a8a",
-          "valeur": "",
-          "equipement(s)": "",
-          "nb_courses": 0,
-          "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 7.6,
+          "cote_tendance": "",
+          "cote_reference": 5.2
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     },
     {
       "nom": "PRIX SATURNE                            SUEDE",
@@ -2146,7 +2162,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.3,
+          "cote_tendance": ""
         },
         {
           "n°": "3",
@@ -2166,7 +2184,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 10.0,
+          "cote_tendance": "",
+          "cote_reference": 2.2
         },
         {
           "n°": "4",
@@ -2186,7 +2207,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 30.0,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -2226,7 +2249,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 15.0,
+          "cote_tendance": "",
+          "cote_reference": 4.4
         },
         {
           "n°": "7",
@@ -2246,7 +2272,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 30.0,
+          "cote_tendance": ""
         },
         {
           "n°": "8",
@@ -2266,7 +2294,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 8.8,
+          "cote_tendance": "",
+          "cote_reference": 2.9
         },
         {
           "n°": "9",
@@ -2286,7 +2317,10 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 2.9,
+          "cote_tendance": "",
+          "cote_reference": 8.8
         },
         {
           "n°": "10",
@@ -2306,7 +2340,9 @@
           "equipement(s)": "",
           "nb_courses": 0,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 30.0,
+          "cote_tendance": ""
         },
         {
           "n°": "11",
@@ -2318,7 +2354,7 @@
           "propriétaire": "GRAF EDMOND",
           "entraineur": "S. TINTER",
           "éleveurs": "",
-          "jockey": "Mme S. TINTER",
+          "jockey": "A. KELM",
           "poids": "",
           "gains": "7352800",
           "musique": "0a8a0aDa",
@@ -2328,7 +2364,8 @@
           "nb_victoires": 0,
           "nb_places": 0
         }
-      ]
+      ],
+      "cordeCourse": "CORDE_GAUCHE"
     }
   ]
 }
