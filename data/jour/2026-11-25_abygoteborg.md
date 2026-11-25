@@ -12,14 +12,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 4 | RAINBOW BROS | 2,9 | J. UNTERSTEINER |
-| 1 | BELUGA RHYME | 4,5 | J. RYDBERG |
-| 6 | TIP TAP TILDA | 5,4 | M. JAKOBSSON |
-| 5 | GIOVANNA Z. | 5,7 | O. OSTRE |
+| 4 | RAINBOW BROS | 2,3 | J. UNTERSTEINER |
+| 2 | CRUISE H.H. | 5,4 | K. OSCARSSON |
+| 6 | TIP TAP TILDA | 7,2 | M. JAKOBSSON |
+| 1 | BELUGA RHYME | 8,3 | J. RYDBERG |
 | 8 | MISTER IDHAIR | 10 | C. JEPSON |
-| 2 | CRUISE H.H. | 22 | K. OSCARSSON |
-| 7 | BIANCA BALDRIDGE | 22 | P. LINDEROTH |
-| 9 | RAFFIN BOKO | 22 | Mme S. OLSSON JACOBSEN |
+| 7 | BIANCA BALDRIDGE | 11 | P. LINDEROTH |
+| 5 | GIOVANNA Z. | 21 | O. OSTRE |
+| 9 | RAFFIN BOKO | 25 | Mme S. OLSSON JACOBSEN |
 
 ### 2. PRIX ROXANE GRIFF                       SUEDE
 
@@ -27,34 +27,33 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | LICORICE | 3,2 | V. ROSLEFF |
-| 4 | GLOBAL HEARTBREAK | 3,2 | P. UNTERSTEINER |
-| 8 | PANAMA RIVER | 4,8 | O.J. OSTRE |
-| 2 | STENS DIAMANT | 9,7 | J. UNTERSTEINER |
-| 5 | FABULOUS KAGAN | 9,7 | J. CORDEAU |
-| 7 | RED NUN | 9,7 | C. PERSSON |
-| 3 | POWERWITHLOVE | – | C.J. JEPSON |
-| 6 | O.M.NIMBLESTEP | – | P. LINDEROTH |
-| 9 | SWEET JET EAGLE | – | P. KARLSSON |
-| 10 | HEARTBEAT ESTER | – | M. JAKOBSSON |
-| 11 | FORTHELOVEOFMONEY | – | J. JUEL |
-| 12 | RIKENS BOKO | – | T. DALBORG |
+| 4 | GLOBAL HEARTBREAK | 4,7 | P. UNTERSTEINER |
+| 3 | POWERWITHLOVE | 4,7 | C.J. JEPSON |
+| 11 | FORTHELOVEOFMONEY | 5,1 | J. JUEL |
+| 2 | STENS DIAMANT | 5,5 | J. UNTERSTEINER |
+| 5 | FABULOUS KAGAN | 7,5 | J. CORDEAU |
+| 9 | SWEET JET EAGLE | 16 | K. OSCARSSON |
+| 7 | RED NUN | 23 | C. PERSSON |
+| 10 | HEARTBEAT ESTER | 38 | M. JAKOBSSON |
+| 6 | O.M.NIMBLESTEP | 40 | P. LINDEROTH |
+| 8 | PANAMA RIVER | 55 | O.J. OSTRE |
+| 12 | RIKENS BOKO | 58 | T. DALBORG |
+| 1 | LICORICE | 68 | V. ROSLEFF |
 
 ### 3. PRIX FLAMME DE GOUTIER                  SUEDE
 
-*19h15 · attelé · 2140 m · 9 partants · cotes de l'extraction*
+*19h15 · attelé · 2140 m · 8 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 6 | ROCKWOOD SILVIO | 2,6 | J. UNTERSTEINER |
-| 5 | GRANSAL JET | 3,5 | K. LINDBERG |
-| 7 | VIKENS BREAKDEALER | 5,2 | C.J. JEPSON |
+| 7 | VIKENS BREAKDEALER | 2,6 | C.J. JEPSON |
+| 6 | ROCKWOOD SILVIO | 3,5 | J. UNTERSTEINER |
+| 5 | GRANSAL JET | 4,9 | K. LINDBERG |
 | 4 | O.M.LEWIS | 10 | K. OSCARSSON |
-| 8 | DYNAMITE BORE | 10 | V. BRODIN |
-| 9 | KING OF RATZEPUTZ | 10 | G. JOHANSSON |
-| 1 | RED MADONNA | – | J. JUEL |
-| 2 | ALEXA'S GENIUS | – | T. KARLSTEDT |
-| 3 | SHANGO | – | P. LINDEROTH |
+| 1 | RED MADONNA | 11 | J. JUEL |
+| 3 | SHANGO | 27 | P. LINDEROTH |
+| 9 | KING OF RATZEPUTZ | 37 | G. JOHANSSON |
+| 8 | DYNAMITE BORE | 40 | V. BRODIN |
 
 ### 4. PRIX MISS DES BESACES                   SUEDE
 
@@ -62,17 +61,17 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 5 | MR GAAGAA | 3,5 | C. PERSSON |
-| 6 | PAUL MCCARTNEY | 3,5 | Mme W. KARLSSON |
-| 10 | ECRAM | 3,5 | J.M. OSCARSSON |
-| 11 | FIRST CLASS FLIGHT | 3,5 | M. HANDFAST |
+| 3 | DYNAMITE ON TIME | 3,6 | V. BRODIN |
+| 9 | WIENER SANGERKNABE | 4 | F. NILSSON |
+| 5 | MR GAAGAA | 6 | C. PERSSON |
+| 6 | PAUL MCCARTNEY | 6 | Mme W. KARLSSON |
+| 10 | ECRAM | 12 | J.M. OSCARSSON |
+| 2 | ANSE MACQUEREAU | 18 | N. NILSSON |
+| 7 | MR WEASLEY | 18 | A. CHRISTIANSSON |
+| 4 | MAJORS XANTE | 36 | Mme J. GARCIA |
+| 8 | I CHOOSE YOU | 36 | Mme J. SVART |
+| 11 | FIRST CLASS FLIGHT | 36 | M. HANDFAST |
 | 1 | HANKYPANKY SLANDER | – | P. STROMBERG |
-| 2 | ANSE MACQUEREAU | – | N. NILSSON |
-| 3 | DYNAMITE ON TIME | – | V. BRODIN |
-| 4 | MAJORS XANTE | – | Mme J. GARCIA |
-| 7 | MR WEASLEY | – | A. CHRISTIANSSON |
-| 8 | I CHOOSE YOU | – | Mme J. SVART |
-| 9 | WIENER SANGERKNABE | – | F. NILSSON |
 
 ### 5. PRIX LIONHEART                          SUEDE
 
@@ -80,16 +79,16 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | PEREZ MORA BOKO | 2,3 | K. SVEDLUND |
-| 4 | HAVSNYMFEN | 7 | J. UNTERSTEINER |
-| 7 | I LET YOU KNOW | 7 | P. UNTERSTEINER |
-| 8 | ELECTRA FACE | 7 | A. KOLGJINI |
-| 9 | MIDNIGHT RHYME | 7 | C.J. JEPSON |
-| 10 | CORNELIA PALEMA | 7 | H. CREBAS |
-| 2 | DORITO PELLINI | – | P. LINDEROTH |
-| 3 | JANICA ZET | – | A. SVANSTEDT |
-| 5 | BOPPERSTREETGIRL | – | S. DYHRBERG |
-| 6 | SANCTUAIRE | – | E. RENNESVIK |
+| 1 | PEREZ MORA BOKO | 2,1 | K. SVEDLUND |
+| 5 | BOPPERSTREETGIRL | 7,4 | S. DYHRBERG |
+| 6 | SANCTUAIRE | 7,4 | E. RENNESVIK |
+| 2 | DORITO PELLINI | 9,9 | P. LINDEROTH |
+| 9 | MIDNIGHT RHYME | 9,9 | C.J. JEPSON |
+| 8 | ELECTRA FACE | 14 | A. KOLGJINI |
+| 3 | JANICA ZET | 29 | A. SVANSTEDT |
+| 4 | HAVSNYMFEN | 29 | J. UNTERSTEINER |
+| 7 | I LET YOU KNOW | 29 | P. UNTERSTEINER |
+| 10 | CORNELIA PALEMA | 29 | H. CREBAS |
 
 ### 6. PRIX MACK DE BLARY                      SUEDE
 
@@ -97,14 +96,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 5 | MARTIN PALEMA | 3 | C.J. JEPSON |
-| 1 | DEAR P.G.GAR | 6,1 | V. ROSLEFF |
-| 4 | KINKY SIMONI | 6,1 | V. PREVOST |
-| 6 | EYE CANDY FACE | 6,1 | A. KOLGJINI |
-| 7 | ASSAR WIBB | 6,1 | H. CREBAS |
-| 9 | SOBEL LADY CAVIAR | 6,1 | G. JOHANSSON |
-| 2 | ENTERTAINMENT | – | J. JUEL |
-| 3 | JE T'AIME LE VERT | – | J. CORDEAU |
+| 9 | SOBEL LADY CAVIAR | 1,5 | G. JOHANSSON |
+| 5 | MARTIN PALEMA | 7,2 | C.J. JEPSON |
+| 6 | EYE CANDY FACE | 7,2 | A. KOLGJINI |
+| 1 | DEAR P.G.GAR | 18 | V. ROSLEFF |
+| 3 | JE T'AIME LE VERT | 18 | J. CORDEAU |
+| 2 | ENTERTAINMENT | 36 | J. JUEL |
+| 4 | KINKY SIMONI | 36 | V. PREVOST |
+| 7 | ASSAR WIBB | 36 | H. CREBAS |
 | 8 | HOUSTON BORE | – | V. BRODIN |
 | 10 | DO YOU WANNA DANCE | – | M. JAKOBSSON |
 | 11 | M.K.DREAM | – | S. DYHRBERG |
@@ -115,12 +114,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 7 | KAGAN COYS | 2,7 | C.J. JEPSON |
-| 8 | VULCAN TILE | 3,1 | J. UNTERSTEINER |
-| 2 | MARIUS MAY | 5,3 | E. RENNESVIK |
-| 9 | VALENCIUS B.B. | 5,3 | O.J. OSTRE |
-| 10 | STRAUSS | 11 | G. JOHANSSON |
-| 3 | MESSI HILL | – | J. JUEL |
+| 7 | KAGAN COYS | 3,4 | C.J. JEPSON |
+| 8 | VULCAN TILE | 3,7 | J. UNTERSTEINER |
+| 10 | STRAUSS | 4,2 | G. JOHANSSON |
+| 2 | MARIUS MAY | 6,7 | E. RENNESVIK |
+| 9 | VALENCIUS B.B. | 6,7 | O.J. OSTRE |
+| 3 | MESSI HILL | 21 | J. JUEL |
 | 4 | DANIEL NEGREANU | – | T. KARLSTEDT |
 | 5 | MARCHUS K. | – | M. SODERLIND |
 | 6 | GOLDEN JUBILEE S. | – | C. ERIKSSON |
@@ -131,17 +130,17 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 6 | J.C. | 1,3 | T. DALBORG |
-| 11 | VINCI NICE | 9,7 | J. UNTERSTEINER |
-| 4 | CROSS LANE | 14 | C. ERIKSSON |
-| 5 | YANTRA SLAVE CAL | 14 | J.M. OSCARSSON |
-| 9 | J.KAGAN BRICK | 14 | C.J. JEPSON |
-| 10 | GUDRID FACE | 14 | A. KOLGJINI |
+| 6 | J.C. | 1,5 | T. DALBORG |
+| 11 | VINCI NICE | 5,9 | J. UNTERSTEINER |
+| 10 | GUDRID FACE | 10 | A. KOLGJINI |
+| 4 | CROSS LANE | 20 | C. ERIKSSON |
+| 5 | YANTRA SLAVE CAL | 20 | J.M. OSCARSSON |
+| 7 | FLY EQUOS JET | 20 | J. JUEL |
+| 8 | CROWN WISE AS | 20 | P. LINDEROTH |
+| 9 | J.KAGAN BRICK | 20 | C.J. JEPSON |
 | 1 | CRIZZY | – | M. JAKOBSSON |
 | 2 | SHALLOW | – | V. ROSLEFF |
 | 3 | MIYAGI | – | O.J. OSTRE |
-| 7 | FLY EQUOS JET | – | J. JUEL |
-| 8 | CROWN WISE AS | – | P. LINDEROTH |
 
 ### 9. PRIX IGUSKI SAUTONNE                    SUEDE
 
@@ -149,13 +148,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 11 | MASTERS DUNDERBEDA | 2,4 | C.J. JEPSON |
-| 2 | DARK PHOTON FACE | 4,8 | A. KOLGJINI |
-| 3 | MISTER GARRINCHA | 4,8 | V. ROSLEFF |
-| 10 | MONDO DIABLO | 4,8 | P. UNTERSTEINER |
-| 9 | STEADY KING | 9,7 | J. UNTERSTEINER |
+| 9 | STEADY KING | 2,9 | J. UNTERSTEINER |
+| 11 | MASTERS DUNDERBEDA | 3,7 | C.J. JEPSON |
+| 2 | DARK PHOTON FACE | 7,4 | A. KOLGJINI |
+| 3 | MISTER GARRINCHA | 7,4 | V. ROSLEFF |
+| 4 | HEAVENLY FLAVOURS | 7,4 | J. CORDEAU |
+| 10 | MONDO DIABLO | 7,4 | P. UNTERSTEINER |
 | 1 | NYRAS DAENKER | – | C. ERIKSSON |
-| 4 | HEAVENLY FLAVOURS | – | J. CORDEAU |
 | 5 | MADE BY LOVE | – | T. DALBORG |
 | 6 | GLOBAL FLASHBACK | – | G. JOHANSSON |
 | 7 | RUN CHAMP RUN | – | O. OSTRE |

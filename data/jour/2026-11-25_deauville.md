@@ -156,21 +156,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 *18h00 · plat · 1300 m · 16 partants · cotes à T−2:41*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 8 | NOFIX | 3,5 | 3,97 | -11,8 % | L.ROUSSEL | 18/31/1/29 |
-| 1 | CITY BABE | 9,7 | 12,16 | -20,2 % | A.VILCHIEN | 98/17/123/32 |
-| 5 | DAISY DAISY | 10 | 11,26 | -11,2 % | A.MADAMET | 12/31/3731/933 |
-| 2 | REGALIEN | 11 | 13,48 | -18,4 % | T.PICCONE | 9/86/42/1485 |
-| 3 | TIZIAN | 12 | 13,07 | -8,2 % | M.GRANDIN | 3/41/518/1579 |
-| 11 | SBIKHA | 14 | 19,57 | -28,5 % | A.MOLINS | 28/41/299/725 |
-| 7 | GOLDEN HIND | 17 | 20,90 | -18,6 % | C. LECOEUVRE | 13/50/213/110 |
-| 4 | SIMPLY LOVELY | 19 | 23,30 | -18,5 % | F.LEFEBVRE | 46/215/792/343 |
-| 12 | TYSON | 20 | 25,89 | -22,8 % | T.BACHELOT | 16/96/26/1512 |
-| 16 | DESERT ROSE | 21 | 32,28 | -34,9 % | B.MARIE | 63/306/86/468 |
-| 6 | TORPEN | 23 | 33,38 | -31,1 % | T.TRULLIER | 24/723/2702/3647 |
-| 10 | BEAU GARS | 23 | 33,38 | -31,1 % | M.VELON | 27/87/69/– |
-| 14 | ITAEWON | 25 | 32,87 | -23,9 % | A.DUQUESNOY | 122/33/203/51 |
-| 9 | BARGING THRU | 28 | 41,79 | -33,0 % | S.TISON | 108/382/571/742 |
-| 13 | MELLOW YELLOW | 33 | 43,69 | -24,5 % | A.HAMELIN | 23/17/34/32 |
-| 15 | GOLDEN KNIGHT | 48 | 74,14 | -35,3 % | H.JOURNIAC | 41/172/1651/1092 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 8 | NOFIX | 3,5 | 3,1 | 3,97 | -11,8 % | L.ROUSSEL | 18/31/1/29 |
+| 1 | CITY BABE | 9,7 | 10 | 12,16 | -20,2 % | A.VILCHIEN | 98/17/123/32 |
+| 5 | DAISY DAISY | 10 | 9,8 | 11,26 | -11,2 % | A.MADAMET | 12/31/3731/933 |
+| 2 | REGALIEN | 11 | 13 | 13,48 | -18,4 % | T.PICCONE | 9/86/42/1485 |
+| 3 | TIZIAN | 12 | 10 | 13,07 | -8,2 % | M.GRANDIN | 3/41/518/1579 |
+| 11 | SBIKHA | 14 | 14 | 19,57 | -28,5 % | A.MOLINS | 28/41/299/725 |
+| 7 | GOLDEN HIND | 17 | 23 | 20,90 | -18,6 % | C. LECOEUVRE | 13/50/213/110 |
+| 4 | SIMPLY LOVELY | 19 | 24 | 23,30 | -18,5 % | F.LEFEBVRE | 46/215/792/343 |
+| 12 | TYSON | 20 | 10 | 25,89 | -22,8 % | T.BACHELOT | 16/96/26/1512 |
+| 16 | DESERT ROSE | 21 | 28 | 32,28 | -34,9 % | B.MARIE | 63/306/86/468 |
+| 6 | TORPEN | 23 | 28 | 33,38 | -31,1 % | T.TRULLIER | 24/723/2702/3647 |
+| 10 | BEAU GARS | 23 | 30 | 33,38 | -31,1 % | M.VELON | 27/87/69/– |
+| 14 | ITAEWON | 25 | 29 | 32,87 | -23,9 % | A.DUQUESNOY | 122/33/203/51 |
+| 9 | BARGING THRU | 28 | 42 | 41,79 | -33,0 % | S.TISON | 108/382/571/742 |
+| 13 | MELLOW YELLOW | 33 | 47 | 43,69 | -24,5 % | A.HAMELIN | 23/17/34/32 |
+| 15 | GOLDEN KNIGHT | 48 | 49 | 74,14 | -35,3 % | H.JOURNIAC | 41/172/1651/1092 |
