@@ -62,19 +62,19 @@
 
 ### 5. CLAIMING 1600
 
-*19h14 · plat · 1600 m · 9 partants · cotes de l'extraction*
+*19h16 · plat · 1600 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 9 | PRECIOUS MEDLEY | 3,7 | L REYES |
-| 6 | TERRIMENDOUS | 5,8 | J E MORELOS |
-| 4 | GETAHOLDAYOURSELF | 6,8 | D A HERRERA |
-| 8 | DEL MAR SUNRISE | 7,1 | M MENESES |
-| 1 | TESOURO DE PIRATA | 8,6 | P LOPEZ |
-| 5 | CELESTIAL EXPRESS | 9,1 | W HENRY |
-| 10 | ROMELIA | 10 | S LEON |
-| 2 | DERRY GIRL | 21 | E J ZAYAS |
-| 3 | STARSHIP ELATION | 22 | J OCASIO |
+| 9 | PRECIOUS MEDLEY | 3,1 | L REYES |
+| 1 | TESOURO DE PIRATA | 4,3 | P LOPEZ |
+| 4 | GETAHOLDAYOURSELF | 5,5 | D A HERRERA |
+| 8 | DEL MAR SUNRISE | 6,6 | M MENESES |
+| 6 | TERRIMENDOUS | 9,1 | J E MORELOS |
+| 2 | DERRY GIRL | 14 | E J ZAYAS |
+| 5 | CELESTIAL EXPRESS | 30 | W HENRY |
+| 10 | ROMELIA | 33 | S LEON |
+| 3 | STARSHIP ELATION | 58 | J OCASIO |
 
 ### 6. CLAIMING 1670
 
@@ -82,11 +82,11 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 7 | WALLEY WORLD | 2,9 | R HUGHES |
-| 2 | IRON HAND | 3,7 | Y TORRES |
-| 4 | EDITOR | 5,3 | D A HERRERA |
-| 5 | SPIRITINTHENIGHT | 5,7 | N JUAREZ |
-| 6 | OUR SOUPER HERO | 6,2 | S LEON |
+| 7 | WALLEY WORLD | 1,7 | R HUGHES |
+| 6 | OUR SOUPER HERO | 5,3 | S LEON |
+| 2 | IRON HAND | 6,4 | Y TORRES |
+| 4 | EDITOR | 6,4 | D A HERRERA |
+| 5 | SPIRITINTHENIGHT | 15 | N JUAREZ |
 
 ### 7. CLAIMING 1600
 
@@ -94,11 +94,11 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 6 | MAJESTIC DELIGHT | 2 | M J HUSBANDS |
-| 2 | RUDI | 3,9 | D A HERRERA |
-| 3 | GIVE ME OPTIONS | 4,5 | M A VASQUEZ |
-| 8 | ONE BID | 9,7 | E PEREZ |
-| 7 | PROJECT | 13 | J E MORELOS |
+| 7 | PROJECT | 2,1 | J E MORELOS |
+| 3 | GIVE ME OPTIONS | 2,7 | M A VASQUEZ |
+| 2 | RUDI | 6,4 | D A HERRERA |
+| 6 | MAJESTIC DELIGHT | 11 | M J HUSBANDS |
+| 8 | ONE BID | 21 | E PEREZ |
 
 ### 8. ALLOWANCE OPTIONAL CLAIMING 1600
 
@@ -106,12 +106,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | WOODSTER | 1,8 | Y TORRES |
-| 5 | LURE HIM IN | 4,7 | E GONZALEZ |
-| 4 | SNEAK PREVIEW | 6,4 | L REYES |
-| 2 | ARABIA WILD | 7,2 | J E MORELOS |
-| 3 | MIAMI FRANK | 23 | P LOPEZ |
-| 7 | ALL TO WIN | 23 | A THOMAS |
+| 1 | WOODSTER | 3,2 | Y TORRES |
+| 4 | SNEAK PREVIEW | 4,8 | L REYES |
+| 2 | ARABIA WILD | 5,6 | J E MORELOS |
+| 5 | LURE HIM IN | 5,9 | E GONZALEZ |
+| 3 | MIAMI FRANK | 6,9 | P LOPEZ |
+| 7 | ALL TO WIN | 7,7 | A THOMAS |
 
 ### 9. WAIT A WHILE S.
 
@@ -119,13 +119,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 8 | CASABLANCA QUEEN | 1,1 | M A VASQUEZ | –/–/–/– |
-| 5 | ROYAL COMPANION | 9 | P LOPEZ | –/–/–/– |
-| 1 | TOUCH OF HONOR | 18 | J M RIOS | –/–/–/– |
-| 2 | HAMMY | – | M MENESES | –/–/–/– |
-| 3 | SMOKE | – | D A HERRERA | –/–/–/– |
-| 4 | ATTACHMENT | – | E J ZAYAS | –/–/–/3268 |
-| 6 | MEDINAH | – | S LEON | –/–/–/– |
-| 9 | NOTGONNACATCHHER | – | S CAMACHO | –/–/–/– |
+| 8 | CASABLANCA QUEEN | 2,6 | M A VASQUEZ | –/–/–/– |
+| 6 | MEDINAH | 4,5 | S LEON | –/–/–/– |
+| 9 | NOTGONNACATCHHER | 4,9 | S CAMACHO | –/–/–/– |
+| 5 | ROYAL COMPANION | 9,9 | P LOPEZ | –/–/–/– |
+| 1 | TOUCH OF HONOR | 12 | J M RIOS | –/–/–/– |
+| 11 | SASSY SOF | 12 | J.G. TORREALBA | –/–/–/– |
+| 3 | SMOKE | 24 | D A HERRERA | –/–/–/– |
+| 2 | HAMMY | 49 | M MENESES | –/–/–/– |
+| 4 | ATTACHMENT | 49 | E J ZAYAS | –/–/–/3268 |
 | 10 | GOLDEN PALM | – | L REYES | –/–/–/– |
-| 11 | SASSY SOF | – | J.G. TORREALBA | –/–/–/– |
