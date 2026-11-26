@@ -12,15 +12,15 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 *12h17 · plat · 1600 m · 7 partants · cotes de l'extraction*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 7 | PIANISTE | 1,1 | M.GUYON | 4/3/1/2 |
-| 4 | PARZIVAL | 12 | M.PROTTI | 29/6/241/1130 |
-| 1 | TISSLAM | 34 | H.BOUTIN | 17/1/–/174 |
-| 5 | KORSAKOV | 136 | A.MADAMET | 12/25/18/12 |
-| 2 | THE PIERCING STAR | – | F.LEFEBVRE | 46/319/801/516 |
-| 3 | GRUISSAN | – | P.BAZIRE | 57/69/98/2612 |
-| 6 | PITCHOU | – | T.TRULLIER | 24/92/49/1114 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 7 | PIANISTE | 1,1 | 1,43 | -22,8 % | M.GUYON | 4/3/1/2 |
+| 4 | PARZIVAL | 9,9 | 12,13 | -18,4 % | M.PROTTI | 29/6/241/1130 |
+| 1 | TISSLAM | 37 | 52,35 | -29,3 % | H.BOUTIN | 17/1/–/174 |
+| 5 | KORSAKOV | 49 | 71,46 | -31,4 % | A.MADAMET | 12/25/18/12 |
+| 3 | GRUISSAN | 149 | 244,51 | -39,1 % | P.BAZIRE | 57/69/98/2612 |
+| 2 | THE PIERCING STAR | – | – |  | F.LEFEBVRE | 46/319/801/516 |
+| 6 | PITCHOU | – | – |  | T.TRULLIER | 24/92/49/1114 |
 
 ### 2. PRIX DU CARREFOUR DE MAHIEU VILAIN
 
@@ -44,20 +44,20 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 *13h27 · plat · 1600 m · 12 partants · cotes de l'extraction*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 12 | STARMONEY | 1,1 | M.GUYON | 4/7/1/2 |
-| 1 | AL AZIZIYAH | 8,9 | S.PASQUIER | 20/7/3425/775 |
-| 3 | GAZIZA | 35 | H.BOUTIN | 17/1/–/18 |
-| 8 | ECLIPSEOFTHEHEART | 53 | A.LEMAITRE | 10/10/2799/994 |
-| 2 | PONTE AZZURRA | – | C.BELMONT | 146/128/459/861 |
-| 4 | OCEAN DRIVE | – | M.MARQUETTE | 51/15/86/2679 |
-| 5 | ORAHIA | – | T.BACHELOT | 16/23/881/2382 |
-| 6 | INVADE MY HEART | – | M.GRANDIN | 3/15/990/231 |
-| 7 | MALU | – | A.MADAMET | 12/25/83/41 |
-| 9 | SWEET AROMA | – | C.LECOEUVRE | 13/19/30/22 |
-| 10 | TIERCELET | – | T.TRULLIER | 24/40/16/1473 |
-| 11 | PASSIONE | – | G.MEURY | 73/71/80/1808 |
+| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|:--|--:|
+| 12 | STARMONEY | 1,1 | 1,43 | -23,2 % | M.GUYON | 4/7/1/2 |
+| 1 | AL AZIZIYAH | 9 | 10,27 | -12,3 % | S.PASQUIER | 20/7/3425/775 |
+| 3 | GAZIZA | 36 | 51,38 | -29,9 % | H.BOUTIN | 17/1/–/18 |
+| 8 | ECLIPSEOFTHEHEART | 54 | 86,47 | -37,5 % | A.LEMAITRE | 10/10/2799/994 |
+| 5 | ORAHIA | 108 | 166,51 | -35,1 % | T.BACHELOT | 16/23/881/2382 |
+| 2 | PONTE AZZURRA | – | – |  | C.BELMONT | 146/128/459/861 |
+| 4 | OCEAN DRIVE | – | – |  | M.MARQUETTE | 51/15/86/2679 |
+| 6 | INVADE MY HEART | – | – |  | M.GRANDIN | 3/15/990/231 |
+| 7 | MALU | – | – |  | A.MADAMET | 12/25/83/41 |
+| 9 | SWEET AROMA | – | – |  | C.LECOEUVRE | 13/19/30/22 |
+| 10 | TIERCELET | – | – |  | T.TRULLIER | 24/40/16/1473 |
+| 11 | PASSIONE | – | – |  | G.MEURY | 73/71/80/1808 |
 
 ### 4. PRIX JACKIE TAILLARD
 
@@ -66,9 +66,9 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
 | 6 | MIDNIGHT MAGIC | 1,1 | M.PROTTI | 29/31/1419/2940 |
-| 2 | VERNON | 10 | A.VILCHIEN | 98/9/11/5 |
-| 4 | ST MARKSMAN | 10 | L.PLOMMEE | 36/106/145/53 |
-| 1 | CAUDRY | – | B.LABATE | 106/26/294/– |
+| 1 | CAUDRY | 11 | B.LABATE | 106/26/294/– |
+| 2 | VERNON | 11 | A.VILCHIEN | 98/9/11/5 |
+| 4 | ST MARKSMAN | 11 | L.PLOMMEE | 36/106/145/53 |
 | 3 | DELIRE D'AMOUR | – | G.MEURY | 73/306/19/468 |
 | 5 | PRAIRIE LION | – | C.CARBONI | 111/455/4173/– |
 | 7 | SITULA | – | A.DUQUESNOY | 122/52/120/250 |
@@ -103,14 +103,14 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 4 | ALLURRE | 1,9 | 2,08 | -8,8 % | D.PROVOST | 33/79/99/620 |
-| 1 | LEOPARDUCCIO | 5,7 | 5,81 | -1,9 % | F.VALLE SKAR | 32/95/1049/2091 |
-| 9 | CHEVALDOR | 7,6 | 9,73 | -21,9 % | M.GUYON | 4/63/899/1295 |
-| 3 | KING THISTLE | 11 | 14,06 | -21,7 % | G.SEIGNEUL | 172/54/837/169 |
-| 5 | MARLOWE | 11 | 12,35 | -10,9 % | L.GALLO | 47/21/184/489 |
-| 2 | ZACAPO | 22 | 31,63 | -30,4 % | H.BOUTIN | 17/21/1371/21 |
-| 6 | EAGLEHAWK | 22 | 31,63 | -30,4 % | C.LECOEUVRE | 13/15/557/1618 |
-| 7 | GEOPOLITICAL | 22 | 33,97 | -35,2 % | L.PLOMMEE | 36/19/56/1782 |
+| 4 | ALLURRE | 1,7 | 1,94 | -12,2 % | D.PROVOST | 33/79/99/620 |
+| 1 | LEOPARDUCCIO | 6,1 | 6,36 | -4,0 % | F.VALLE SKAR | 32/95/1049/2091 |
+| 9 | CHEVALDOR | 8,2 | 10,79 | -24,0 % | M.GUYON | 4/63/899/1295 |
+| 3 | KING THISTLE | 12 | 15,80 | -24,1 % | G.SEIGNEUL | 172/54/837/169 |
+| 5 | MARLOWE | 12 | 13,87 | -13,5 % | L.GALLO | 47/21/184/489 |
+| 2 | ZACAPO | 24 | 35,45 | -32,3 % | H.BOUTIN | 17/21/1371/21 |
+| 6 | EAGLEHAWK | 24 | 35,45 | -32,3 % | C.LECOEUVRE | 13/15/557/1618 |
+| 7 | GEOPOLITICAL | 24 | 38,09 | -37,0 % | L.PLOMMEE | 36/19/56/1782 |
 | 8 | GITANO | – | – |  | M.GRANDIN | 3/96/329/2075 |
 | 10 | BLUE HUNT | – | – |  | N.BOUVRY | 261/387/417/1102 |
 
@@ -120,16 +120,16 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 4 | CALLA FONDA | 3,1 | 3,58 | -13,4 % | A.DUQUESNOY | 122/126/14/965 |
-| 3 | TAKE ME I'M YOURS | 3,4 | 3,46 | -1,7 % | T.PICCONE | 9/237/298/889 |
-| 15 | ROUVRAY | 4,9 | 5,48 | -10,6 % | H.BOUTIN | 17/343/8/1158 |
-| 1 | COMTE NOIR | 11 | 12,28 | -10,4 % | A.NICCO | 158/213/190/191 |
-| 8 | TWARAB | 17 | 25,02 | -32,1 % | A.LEMAITRE | 10/149/19/3206 |
-| 11 | JACK OF TRADES | 17 | 25,02 | -32,1 % | A.MADAMET | 12/360/4149/651 |
-| 9 | INKIOSTRO | 34 | 45,01 | -24,5 % | D.SANTIAGO | 19/376/17/729 |
-| 12 | CRACKNELL | 34 | 45,01 | -24,5 % | T.BACHELOT | 16/387/702/4421 |
-| 13 | HARTWOOD MAN | 34 | 51,62 | -34,1 % | C.LECOEUVRE | 13/141/779/228 |
-| 14 | RIVER QUARTZ | 34 | 51,62 | -34,1 % | R.MANGIONE | 86/341/287/578 |
+| 4 | CALLA FONDA | 3,4 | 3,99 | -14,7 % | A.DUQUESNOY | 122/126/14/965 |
+| 3 | TAKE ME I'M YOURS | 3,7 | 3,81 | -2,9 % | T.PICCONE | 9/237/298/889 |
+| 15 | ROUVRAY | 5,4 | 6,19 | -12,8 % | H.BOUTIN | 17/343/8/1158 |
+| 11 | JACK OF TRADES | 9,4 | 12,60 | -25,4 % | A.MADAMET | 12/360/4149/651 |
+| 1 | COMTE NOIR | 12 | 13,78 | -12,9 % | A.NICCO | 158/213/190/191 |
+| 8 | TWARAB | 18 | 27,11 | -33,6 % | A.LEMAITRE | 10/149/19/3206 |
+| 12 | CRACKNELL | 18 | 22,08 | -18,5 % | T.BACHELOT | 16/387/702/4421 |
+| 13 | HARTWOOD MAN | 18 | 25,25 | -28,7 % | C.LECOEUVRE | 13/141/779/228 |
+| 9 | INKIOSTRO | 37 | 50,08 | -26,1 % | D.SANTIAGO | 19/376/17/729 |
+| 14 | RIVER QUARTZ | 37 | 57,45 | -35,6 % | R.MANGIONE | 86/341/287/578 |
 | 2 | JUDICIOUS GAME | – | – |  | D.PROVOST | 33/41/326/472 |
 | 5 | ART PIECE | – | – |  | G.TROLLEY DE PREVAUX | 43/403/87/868 |
 | 6 | LOVE THE STARS | – | – |  | L.GALLO | 47/126/1448/239 |
@@ -142,18 +142,18 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 5 | HAVANA SIX | 2,3 | 2,32 | -0,9 % | J.MOUTARD | 42/15/317/119 |
-| 10 | JOYEUSE SAGE | 3 | 3,32 | -9,8 % | F.VALLE SKAR | 32/152/496/1673 |
-| 15 | NEUSCHWANSTEIN | 6,1 | 7,16 | -14,8 % | M.GUYON 4e | 4/141/655/52 |
-| 11 | KIEVSKY | 15 | 19,29 | -22,2 % | E.HARDOUIN | 30/271/376/313 |
-| 12 | HIGH VIOLET | 15 | 17,98 | -16,6 % | M.VELON | 27/566/3320/2085 |
-| 1 | KALAFA | 30 | 41,60 | -27,9 % | C.LECOEUVRE | 13/45/2/1529 |
-| 4 | J'AURAIS DU | 30 | 45,69 | -34,3 % | H.BOUTIN | 17/33/21/51 |
-| 9 | AZ ZEIVA | 30 | 45,69 | -34,3 % | D.SANTIAGO | 19/150/666/5 |
+| 5 | HAVANA SIX | 2,4 | 2,40 | **+0,2 %** | J.MOUTARD | 42/15/317/119 |
+| 10 | JOYEUSE SAGE | 3,1 | 3,42 | -9,3 % | F.VALLE SKAR | 32/152/496/1673 |
+| 15 | NEUSCHWANSTEIN | 6,3 | 7,39 | -14,7 % | M.GUYON 4e | 4/141/655/52 |
+| 11 | KIEVSKY | 15 | 19,18 | -21,8 % | E.HARDOUIN | 30/271/376/313 |
+| 12 | HIGH VIOLET | 15 | 17,88 | -16,1 % | M.VELON | 27/566/3320/2085 |
+| 1 | KALAFA | 31 | 42,93 | -27,8 % | C.LECOEUVRE | 13/45/2/1529 |
+| 4 | J'AURAIS DU | 31 | 47,16 | -34,3 % | H.BOUTIN | 17/33/21/51 |
+| 8 | EMINENCE GRISE | 31 | 47,16 | -34,3 % | T.PICCONE | 9/251/899/3631 |
+| 9 | AZ ZEIVA | 31 | 47,16 | -34,3 % | D.SANTIAGO | 19/150/666/5 |
 | 2 | WHIPSTAFF | – | – |  | P.BAZIRE | 57/157/–/135 |
 | 3 | SAINT FLORENT | – | – |  | L.BOISSEAU | 37/146/40/209 |
 | 6 | ELUSIVE GLORY | – | – |  | A.LEMAITRE | 10/284/7/401 |
 | 7 | MELANIES JOY | – | – |  | T.BACHELOT | 16/23/3246/528 |
-| 8 | EMINENCE GRISE | – | – |  | T.PICCONE | 9/251/899/3631 |
 | 13 | DEW POINT | – | – |  | M.GRANDIN | 3/264/586/284 |
 | 14 | WICKBURY | – | – |  | T.TRULLIER | 24/162/280/1427 |
