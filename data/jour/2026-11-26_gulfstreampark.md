@@ -1,41 +1,38 @@
 # GULFSTREAM PARK — 26/11/2026
 
-9 courses.
+9 courses (8 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
-*Le PMU n'a pas encore publié les cotes de cette réunion : ni cote, ni cote juste, ni Optimale. Reviens plus tard dans la matinée.*
+*Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
 ---
 
 ### 1. MAIDEN OPTIONAL CLAIMING 1000
 
-*17h18 · plat · 1000 m · 10 partants · cotes de l'extraction*
+*17h18 · plat · 1000 m · 8 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | BAMA JAMMA | – | J E MORELOS |
-| 2 | PHILLY GIRL | – | L REYES |
-| 3 | ROSE BY A NOSE | – | M A VASQUEZ |
-| 4 | KYOTO ROSE | – | D A HERRERA |
-| 5 | ZACARRA | – | H FIGUEROA |
-| 6 | LA LEAL | – | E PEREZ |
-| 7 | EMPRESS RULER | – | E GONZALEZ |
-| 8 | STARSHIP DIPLOMAT | – | Y TORRES |
-| 9 | GIN GINS FIREWORK | – | P LOPEZ |
-| 10 | PAN HANDLE MICK | – | S LEON |
+| 6 | LA LEAL | 3,5 | E PEREZ |
+| 9 | GIN GINS FIREWORK | 4,8 | P LOPEZ |
+| 1 | BAMA JAMMA | 5,9 | J E MORELOS |
+| 3 | ROSE BY A NOSE | 6,7 | M A VASQUEZ |
+| 4 | KYOTO ROSE | 7,6 | D A HERRERA |
+| 2 | PHILLY GIRL | 10 | L REYES |
+| 5 | ZACARRA | 15 | H FIGUEROA |
+| 7 | EMPRESS RULER | 22 | E GONZALEZ |
 
 ### 2. CLAIMING 1600
 
-*17h47 · plat · 1600 m · 7 partants · cotes de l'extraction*
+*17h47 · plat · 1600 m · 6 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | DADDY'S LOVE | – | G HUAYAS |
-| 2 | HIPPY HIPPY SHAKE | – | F VASQUEZ, JR. |
-| 3 | MISS VALENTINA | – | E PEREZ |
-| 4 | SHEDOO KITTEN | – | D BORACO |
-| 5 | JUST MAJESTIC | – | N JUAREZ |
-| 6 | TRILL | – | H FIGUEROA |
-| 7 | MINE STRIKE | – | P LOPEZ |
+| 3 | MISS VALENTINA | 2,8 | E PEREZ |
+| 6 | TRILL | 4 | H FIGUEROA |
+| 5 | JUST MAJESTIC | 5,2 | N JUAREZ |
+| 7 | MINE STRIKE | 7 | P LOPEZ |
+| 2 | HIPPY HIPPY SHAKE | 7,9 | F VASQUEZ, JR. |
+| 4 | SHEDOO KITTEN | 12 | D BORACO |
 
 ### 3. MAIDEN CLAIMING 1400
 
@@ -43,13 +40,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | EXPERT WITNESS | – | L REYES |
-| 2 | HOLY COW | – | J M RIOS |
-| 3 | SIMO AT THE BIG A | – | D A HERRERA |
+| 2 | HOLY COW | 2 | J M RIOS |
+| 5 | WORDSOFINSPIRATION | 4,6 | E PEREZ |
+| 7 | TOO BAD | 6,9 | M A VASQUEZ |
+| 1 | EXPERT WITNESS | 7,6 | L REYES |
+| 3 | SIMO AT THE BIG A | 9,8 | D A HERRERA |
+| 6 | FIRST CLASS WINK | 17 | P LOPEZ |
 | 4 | CHING CHING | – | E GONZALEZ |
-| 5 | WORDSOFINSPIRATION | – | E PEREZ |
-| 6 | FIRST CLASS WINK | – | P LOPEZ |
-| 7 | TOO BAD | – | M A VASQUEZ |
 | 8 | EL SANTIAGUERO | – | C MARTINEZ |
 
 ### 4. CLAIMING 1000
@@ -58,76 +55,69 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | GARUDA | – | F VASQUEZ, JR. | –/–/–/– |
-| 2 | MORETASTIC | – | S CAMACHO | –/–/–/– |
-| 3 | FIRE ON THE WIRE | – | E J ZAYAS | –/–/–/– |
-| 4 | MISPRINT | – | E GONZALEZ | –/–/–/– |
-| 5 | MUSICAL DESIGN | – | P LOPEZ | –/–/–/– |
-| 6 | FREE TO ROAM | – | M MENESES | –/–/–/– |
+| 1 | GARUDA | 2 | F VASQUEZ, JR. | –/–/–/– |
+| 5 | MUSICAL DESIGN | 4,4 | P LOPEZ | –/–/–/– |
+| 3 | FIRE ON THE WIRE | 7 | E J ZAYAS | –/–/–/– |
+| 6 | FREE TO ROAM | 8,3 | M MENESES | –/–/–/– |
+| 2 | MORETASTIC | 8,8 | S CAMACHO | –/–/–/– |
+| 4 | MISPRINT | 18 | E GONZALEZ | –/–/–/– |
 
 ### 5. CLAIMING 1600
 
-*19h14 · plat · 1600 m · 10 partants · cotes de l'extraction*
+*19h14 · plat · 1600 m · 9 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | TESOURO DE PIRATA | – | P LOPEZ |
-| 2 | DERRY GIRL | – | E J ZAYAS |
-| 3 | STARSHIP ELATION | – | J OCASIO |
-| 4 | GETAHOLDAYOURSELF | – | D A HERRERA |
-| 5 | CELESTIAL EXPRESS | – | W HENRY |
+| 8 | DEL MAR SUNRISE | 2,2 | M MENESES |
+| 1 | TESOURO DE PIRATA | 3,3 | P LOPEZ |
+| 4 | GETAHOLDAYOURSELF | 8,3 | D A HERRERA |
+| 5 | CELESTIAL EXPRESS | 8,8 | W HENRY |
+| 2 | DERRY GIRL | 9,3 | E J ZAYAS |
+| 9 | PRECIOUS MEDLEY | 25 | L REYES |
+| 3 | STARSHIP ELATION | 50 | J OCASIO |
 | 6 | TERRIMENDOUS | – | J E MORELOS |
-| 7 | POWER DANCE | – | C MARTINEZ |
-| 8 | DEL MAR SUNRISE | – | M MENESES |
-| 9 | PRECIOUS MEDLEY | – | L REYES |
 | 10 | ROMELIA | – | S LEON |
 
 ### 6. CLAIMING 1670
 
-*19h43 · plat · 1670 m · 7 partants · cotes de l'extraction*
+*19h43 · plat · 1670 m · 5 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | DREAM DANCER | – | L REYES |
-| 2 | IRON HAND | – | Y TORRES |
-| 3 | MOUNTAIN BEAR | – | M MENESES |
+| 7 | WALLEY WORLD | 2,2 | R HUGHES |
+| 2 | IRON HAND | 2,3 | Y TORRES |
+| 5 | SPIRITINTHENIGHT | 5,2 | N JUAREZ |
+| 6 | OUR SOUPER HERO | 12 | S LEON |
 | 4 | EDITOR | – | D A HERRERA |
-| 5 | SPIRITINTHENIGHT | – | N JUAREZ |
-| 6 | OUR SOUPER HERO | – | S LEON |
-| 7 | WALLEY WORLD | – | R HUGHES |
 
 ### 7. CLAIMING 1600
 
-*20h12 · plat · 1600 m · 8 partants · cotes de l'extraction*
+*20h12 · plat · 1600 m · 5 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | INHERENT PROMISE | – | P LOPEZ |
-| 2 | RUDI | – | D A HERRERA |
-| 3 | GIVE ME OPTIONS | – | M A VASQUEZ |
-| 4 | CHALKY WHITE | – | Y TORRES |
-| 5 | GIURO | – | S LEON |
-| 6 | MAJESTIC DELIGHT | – | M J HUSBANDS |
-| 7 | PROJECT | – | J E MORELOS |
-| 8 | ONE BID | – | E PEREZ |
+| 6 | MAJESTIC DELIGHT | 1,7 | M J HUSBANDS |
+| 2 | RUDI | 5,2 | D A HERRERA |
+| 3 | GIVE ME OPTIONS | 5,2 | M A VASQUEZ |
+| 7 | PROJECT | 10 | J E MORELOS |
+| 8 | ONE BID | 11 | E PEREZ |
 
 ### 8. ALLOWANCE OPTIONAL CLAIMING 1600
 
-*20h41 · plat · 1600 m · 7 partants · cotes de l'extraction*
+*20h41 · plat · 1600 m · 6 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | WOODSTER | – | Y TORRES |
-| 2 | ARABIA WILD | – | J E MORELOS |
-| 3 | MIAMI FRANK | – | P LOPEZ |
-| 4 | SNEAK PREVIEW | – | L REYES |
-| 5 | LURE HIM IN | – | E GONZALEZ |
-| 6 | RADICAL RHETORIC | – | C CEDENO |
-| 7 | ALL TO WIN | – | A THOMAS |
+| 1 | WOODSTER | 1,6 | Y TORRES |
+| 4 | SNEAK PREVIEW | 5,4 | L REYES |
+| 5 | LURE HIM IN | 6,8 | E GONZALEZ |
+| 2 | ARABIA WILD | 7,2 | J E MORELOS |
+| 3 | MIAMI FRANK | 19 | P LOPEZ |
+| 7 | ALL TO WIN | 39 | A THOMAS |
 
 ### 9. WAIT A WHILE S.
 
-*21h10 · plat · 1500 m · 11 partants · cotes de l'extraction*
+*21h10 · plat · 1500 m · 10 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
@@ -137,8 +127,7 @@
 | 4 | ATTACHMENT | – | E J ZAYAS | –/–/–/3268 |
 | 5 | ROYAL COMPANION | – | P LOPEZ | –/–/–/– |
 | 6 | MEDINAH | – | S LEON | –/–/–/– |
-| 7 | KAROLINA PHAROAH | – | E GONZALEZ | –/–/–/– |
 | 8 | CASABLANCA QUEEN | – | M A VASQUEZ | –/–/–/– |
 | 9 | NOTGONNACATCHHER | – | S CAMACHO | –/–/–/– |
 | 10 | GOLDEN PALM | – | L REYES | –/–/–/– |
-| 11 | SASSY SOF | – | RESERVISTE | –/–/–/– |
+| 11 | SASSY SOF | – | J.G. TORREALBA | –/–/–/– |
