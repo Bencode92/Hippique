@@ -157,26 +157,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DE VERTOU
 
-*17h13 · plat · 3100 m · 16 partants · cotes à T−5:32*
+*17h13 · plat · 3100 m · 16 partants · cotes à T−2:52*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 14 | COCO LIGHT | 3,6 | 4,1 | 4,34 | -17,0 % | M.FLEURY | 126/328/559/760 |
-| 3 | LORENZO DE MEDICI | 7,9 | – | 9,59 | -17,7 % | F.LEFEBVRE | 46/447/2254/1438 |
-| 2 | UN JOUR POUR MOI | 8,2 | 6,1 | 9,20 | -10,8 % | Y.ROUSSET | 56/241/791/2847 |
-| 9 | KEEN LADY | 9 | 12 | 10,25 | -12,2 % | L.BOISSEAU | 37/62/15/25 |
-| 1 | SHALOHA | 13 | – | 15,12 | -14,0 % | L.POGGIONOVO | 75/285/462/1443 |
-| 4 | DICX | 15 | – | 17,87 | -16,1 % | H.LEBOUC | 22/28/815/1208 |
-| 8 | SERPENTAR | 16 | 2,4 | 23,61 | -32,2 % | A.SUBIAS | 102/90/74/2379 |
-| 16 | PLUIE D'ARAIZE | 16 | – | 22,00 | -27,3 % | L.PLOMMEE | 36/116/2430/1117 |
-| 5 | MARACAMAYA | 17 | – | 18,87 | -9,9 % | C.GROSBOIS | 26/241/949/3656 |
-| 6 | LEMPIRA | 24 | 4,1 | 30,76 | -22,0 % | D.PROVOST | 33/123/200/2200 |
-| 7 | BYGOUDINE | 26 | – | 35,17 | -26,1 % | L.ROUSSEL | 18/202/1462/307 |
-| 15 | SABOR DAZ | 36 | – | 48,61 | -25,9 % | T.BREBION | 84/368/715/3261 |
-| 10 | RUE DAGUERRE | 39 | – | 48,36 | -19,3 % | M.JUSTUM | 87/203/186/1485 |
-| 12 | DIONYSOS FORLONGE | 45 | – | 71,37 | -36,9 % | J.CLAUDIC | 40/202/1615/2088 |
-| 11 | COOL HEART | 55 | – | 77,30 | -28,8 % | M.MARQUETTE | 51/500/228/1060 |
-| 13 | KATARAFINA | 77 | – | 136,43 | -43,6 % | S.JUST | 153/116/1847/124 |
+| 14 | COCO LIGHT | 4,4 | 4,1 | 5,57 | -21,0 % | M.FLEURY | 126/328/559/760 |
+| 9 | KEEN LADY | 7,7 | 12 | 8,54 | -9,8 % | L.BOISSEAU | 37/62/15/25 |
+| 2 | UN JOUR POUR MOI | 9,4 | 6,1 | 10,77 | -12,7 % | Y.ROUSSET | 56/241/791/2847 |
+| 3 | LORENZO DE MEDICI | 9,5 | – | 11,90 | -20,2 % | F.LEFEBVRE | 46/447/2254/1438 |
+| 4 | DICX | 9,6 | – | 10,60 | -9,5 % | H.LEBOUC | 22/28/815/1208 |
+| 6 | LEMPIRA | 11 | 4,1 | 12,43 | -11,5 % | D.PROVOST | 33/123/200/2200 |
+| 8 | SERPENTAR | 14 | 2,4 | 20,15 | -30,5 % | A.SUBIAS | 102/90/74/2379 |
+| 1 | SHALOHA | 15 | – | 17,85 | -15,9 % | L.POGGIONOVO | 75/285/462/1443 |
+| 16 | PLUIE D'ARAIZE | 18 | – | 25,22 | -28,6 % | L.PLOMMEE | 36/116/2430/1117 |
+| 5 | MARACAMAYA | 20 | – | 22,73 | -12,0 % | C.GROSBOIS | 26/241/949/3656 |
+| 7 | BYGOUDINE | 22 | – | 29,01 | -24,2 % | L.ROUSSEL | 18/202/1462/307 |
+| 12 | DIONYSOS FORLONGE | 36 | – | 55,69 | -35,4 % | J.CLAUDIC | 40/202/1615/2088 |
+| 15 | SABOR DAZ | 42 | – | 57,58 | -27,1 % | T.BREBION | 84/368/715/3261 |
+| 10 | RUE DAGUERRE | 47 | – | 59,26 | -20,7 % | M.JUSTUM | 87/203/186/1485 |
+| 11 | COOL HEART | 66 | – | 93,78 | -29,6 % | M.MARQUETTE | 51/500/228/1060 |
+| 13 | KATARAFINA | 105 | – | 187,43 | -44,0 % | S.JUST | 153/116/1847/124 |
 
 ### 9. PRIX DE NANTES
 
