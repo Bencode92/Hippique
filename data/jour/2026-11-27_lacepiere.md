@@ -1,6 +1,6 @@
 # LA CEPIERE — 27/11/2026
 
-8 courses (5 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+8 courses (6 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
 *Trot : France Galop ne classe ni les drivers ni les chevaux d'attelage. Cotes seules.*
 
@@ -35,6 +35,7 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 12 | MICKEY MICHETTUDE | 1,1 | R. THONNERIEUX |
 | 1 | MALIN GERSOIS | – | M. CATHERINE-PEZET |
 | 2 | MARIO DE LA CRIERE | – | Mme L. MAGNENAT |
 | 3 | MAC TYSON | – | J. ASSELIE |
@@ -46,7 +47,6 @@
 | 9 | MAKAO DE LA BESVRE | – | J.Y. RICART |
 | 10 | MINIE CAUSSANEL | – | Mme L. REGNIER |
 | 11 | MENTION GRAVE | – | W. DERSOIR-HABIB |
-| 12 | MICKEY MICHETTUDE | – | R. THONNERIEUX |
 
 ### 3. PRIX DU TAILLON
 
@@ -99,8 +99,8 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 11 | MADISON DE NIMES | 1,1 | M.X. CHARLOT |
-| 1 | MALVERN DE GUEZ | – | M. CRIADO |
+| 1 | MALVERN DE GUEZ | 1,3 | M. CRIADO |
+| 11 | MADISON DE NIMES | 2,6 | M.X. CHARLOT |
 | 2 | MIAMI DREAM | – | TH. PRUDHON |
 | 3 | MASH POOK | – | N.R. BROSSARD |
 | 4 | MAGIQUE GWENOL | – | Y. LACOMBE |
@@ -121,9 +121,10 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 2 | MATCH OF THE DAY | 1,5 | PIERRICK LE MOEL |
-| 10 | MERLOT GALIUS | 3 | M. CATHERINE-PEZET |
-| 13 | MISS ROC | 6,1 | F. MARTY |
+| 2 | MATCH OF THE DAY | 1,9 | PIERRICK LE MOEL |
+| 10 | MERLOT GALIUS | 3,9 | M. CATHERINE-PEZET |
+| 11 | MAC DUEM | 3,9 | P. GESRET |
+| 13 | MISS ROC | 7,9 | F. MARTY |
 | 1 | MARKUS DES AGETS | – | J.F. SENET |
 | 3 | MASCARET DEFF | – | TH. DUCOS |
 | 4 | MANON DU LUPIN | – | J. CHAVATTE |
@@ -132,7 +133,6 @@
 | 7 | MORGANE DE TOI | – | F. GENCE |
 | 8 | MONIE EFJI | – | M. GERGOUIL |
 | 9 | MIA DE CHENU | – | M. CRIADO |
-| 11 | MAC DUEM | – | P. GESRET |
 | 12 | MAG DE LOIRON | – | D. LAISIS |
 | 14 | MISSIS DE BENAC | – | C. GAZENGEL |
 
