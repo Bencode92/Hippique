@@ -176,22 +176,22 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 9. PRIX DE NANTES
 
-*17h48 · plat · 1700 m · 15 partants · cotes à T−29:32*
+*17h55 · plat · 1700 m · 15 partants · cotes à T−29:32*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 12 | AURORA BOREALIS | 4,9 | 4,9 | 6,36 | -23,0 % | T.BACHELOT | 16/112/10/2240 |
-| 2 | WONDER BOY | 5,8 | 5,8 | 6,77 | -14,3 % | L.ROUSSEL | 18/31/10/489 |
-| 3 | GREAT ART | 10 | 10 | 11,24 | -11,0 % | H.LEBOUC | 22/47/108/1807 |
-| 10 | QUIET SEA | 10 | 10 | 12,77 | -21,7 % | A.MOLINS | 28/93/9/296 |
-| 9 | GOLFEUR | 11 | 11 | 12,56 | -12,4 % | C.GROSBOIS | 26/45/1/1073 |
-| 16 | JORDAN BAKER | 11 | 10 | 13,07 | -15,9 % | D.SANTIAGO | 19/356/19/628 |
-| 4 | GRIGNETTE | 15 | 15 | 18,03 | -16,8 % | D.PROVOST | 33/123/51/148 |
-| 1 | MY QUEEN | 17 | 16 | 21,75 | -21,8 % | W.LEVESQUE | 88/158/1161/861 |
-| 8 | NIPPE DE STAR | 22 | 22 | 29,31 | -24,9 % | L.DENUAULT | 151/47/2667/778 |
-| 13 | POMME SURETTE | 22 | 22 | 29,31 | -24,9 % | H.JOURNIAC | 41/47/348/1245 |
-| 6 | INDIAN STREAK | 23 | 23 | 33,85 | -32,1 % | A.MADAMET | 12/309/2438/1260 |
-| 14 | YELLOW HAWK | 24 | 25 | 38,19 | -37,2 % | A.SUBIAS | 102/278/36/357 |
-| 5 | MARSIHO | 25 | 25 | 33,93 | -26,3 % | M.JUSTUM | 87/130/72/2219 |
-| 11 | CHESTER SKY | 32 | 32 | 46,21 | -30,8 % | A.BERNARD | 95/145/211/388 |
-| 15 | LAKES DANCER | 34 | 35 | 52,77 | -35,6 % | O.ANDIGNE | 77/47/49/1900 |
+| 12 | AURORA BOREALIS | 4,9 | 6,3 | 6,36 | -23,0 % | T.BACHELOT | 16/112/10/2240 |
+| 2 | WONDER BOY | 5,8 | 9,3 | 6,77 | -14,3 % | L.ROUSSEL | 18/31/10/489 |
+| 10 | QUIET SEA | 10 | 4,9 | 12,77 | -21,7 % | A.MOLINS | 28/93/9/296 |
+| 3 | GREAT ART | 10 | 7,3 | 11,24 | -11,0 % | H.LEBOUC | 22/47/108/1807 |
+| 9 | GOLFEUR | 11 | 10 | 12,56 | -12,4 % | C.GROSBOIS | 26/45/1/1073 |
+| 16 | JORDAN BAKER | 11 | 27 | 13,07 | -15,9 % | D.SANTIAGO | 19/356/19/628 |
+| 4 | GRIGNETTE | 15 | 30 | 18,03 | -16,8 % | D.PROVOST | 33/123/51/148 |
+| 1 | MY QUEEN | 17 | 22 | 21,75 | -21,8 % | W.LEVESQUE | 88/158/1161/861 |
+| 8 | NIPPE DE STAR | 22 | 11 | 29,31 | -24,9 % | L.DENUAULT | 151/47/2667/778 |
+| 13 | POMME SURETTE | 22 | 26 | 29,31 | -24,9 % | H.JOURNIAC | 41/47/348/1245 |
+| 6 | INDIAN STREAK | 23 | 14 | 33,85 | -32,1 % | A.MADAMET | 12/309/2438/1260 |
+| 14 | YELLOW HAWK | 24 | 26 | 38,19 | -37,2 % | A.SUBIAS | 102/278/36/357 |
+| 5 | MARSIHO | 25 | 44 | 33,93 | -26,3 % | M.JUSTUM | 87/130/72/2219 |
+| 11 | CHESTER SKY | 32 | 22 | 46,21 | -30,8 % | A.BERNARD | 95/145/211/388 |
+| 15 | LAKES DANCER | 34 | 52 | 52,77 | -35,6 % | O.ANDIGNE | 77/47/49/1900 |
