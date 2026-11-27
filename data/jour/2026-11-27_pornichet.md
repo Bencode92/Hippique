@@ -1,6 +1,6 @@
 # PORNICHET — 27/11/2026
 
-9 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+9 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -157,46 +157,46 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DE VERTOU
 
-*17h13 · plat · 3100 m · 16 partants · cotes à T−2:52*
+*17h13 · plat · 3100 m · 16 partants · cotes à T−0:12*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
 | 14 | COCO LIGHT | 4,4 | 4,1 | 5,57 | -21,0 % | M.FLEURY | 126/328/559/760 |
-| 9 | KEEN LADY | 7,7 | 12 | 8,54 | -9,8 % | L.BOISSEAU | 37/62/15/25 |
-| 2 | UN JOUR POUR MOI | 9,4 | 6,1 | 10,77 | -12,7 % | Y.ROUSSET | 56/241/791/2847 |
-| 3 | LORENZO DE MEDICI | 9,5 | – | 11,90 | -20,2 % | F.LEFEBVRE | 46/447/2254/1438 |
-| 4 | DICX | 9,6 | – | 10,60 | -9,5 % | H.LEBOUC | 22/28/815/1208 |
-| 6 | LEMPIRA | 11 | 4,1 | 12,43 | -11,5 % | D.PROVOST | 33/123/200/2200 |
-| 8 | SERPENTAR | 14 | 2,4 | 20,15 | -30,5 % | A.SUBIAS | 102/90/74/2379 |
-| 1 | SHALOHA | 15 | – | 17,85 | -15,9 % | L.POGGIONOVO | 75/285/462/1443 |
-| 16 | PLUIE D'ARAIZE | 18 | – | 25,22 | -28,6 % | L.PLOMMEE | 36/116/2430/1117 |
-| 5 | MARACAMAYA | 20 | – | 22,73 | -12,0 % | C.GROSBOIS | 26/241/949/3656 |
-| 7 | BYGOUDINE | 22 | – | 29,01 | -24,2 % | L.ROUSSEL | 18/202/1462/307 |
-| 12 | DIONYSOS FORLONGE | 36 | – | 55,69 | -35,4 % | J.CLAUDIC | 40/202/1615/2088 |
-| 15 | SABOR DAZ | 42 | – | 57,58 | -27,1 % | T.BREBION | 84/368/715/3261 |
-| 10 | RUE DAGUERRE | 47 | – | 59,26 | -20,7 % | M.JUSTUM | 87/203/186/1485 |
-| 11 | COOL HEART | 66 | – | 93,78 | -29,6 % | M.MARQUETTE | 51/500/228/1060 |
-| 13 | KATARAFINA | 105 | – | 187,43 | -44,0 % | S.JUST | 153/116/1847/124 |
+| 4 | DICX | 8 | – | 8,58 | -6,8 % | H.LEBOUC | 22/28/815/1208 |
+| 3 | LORENZO DE MEDICI | 8,4 | – | 10,29 | -18,4 % | F.LEFEBVRE | 46/447/2254/1438 |
+| 9 | KEEN LADY | 8,8 | 12 | 9,96 | -11,7 % | L.BOISSEAU | 37/62/15/25 |
+| 2 | UN JOUR POUR MOI | 9,5 | 6,1 | 10,89 | -12,8 % | Y.ROUSSET | 56/241/791/2847 |
+| 6 | LEMPIRA | 12 | 4,1 | 13,75 | -12,7 % | D.PROVOST | 33/123/200/2200 |
+| 8 | SERPENTAR | 14 | 2,4 | 20,14 | -30,5 % | A.SUBIAS | 102/90/74/2379 |
+| 1 | SHALOHA | 15 | – | 17,84 | -15,9 % | L.POGGIONOVO | 75/285/462/1443 |
+| 16 | PLUIE D'ARAIZE | 17 | – | 23,58 | -27,9 % | L.PLOMMEE | 36/116/2430/1117 |
+| 7 | BYGOUDINE | 21 | – | 27,48 | -23,6 % | L.ROUSSEL | 18/202/1462/307 |
+| 5 | MARACAMAYA | 24 | – | 27,99 | -14,2 % | C.GROSBOIS | 26/241/949/3656 |
+| 10 | RUE DAGUERRE | 37 | – | 45,54 | -18,8 % | M.JUSTUM | 87/203/186/1485 |
+| 12 | DIONYSOS FORLONGE | 50 | – | 79,93 | -37,4 % | J.CLAUDIC | 40/202/1615/2088 |
+| 15 | SABOR DAZ | 51 | – | 71,14 | -28,3 % | T.BREBION | 84/368/715/3261 |
+| 11 | COOL HEART | 71 | – | 101,23 | -29,9 % | M.MARQUETTE | 51/500/228/1060 |
+| 13 | KATARAFINA | 105 | – | 187,35 | -44,0 % | S.JUST | 153/116/1847/124 |
 
 ### 9. PRIX DE NANTES
 
-*17h48 · plat · 1700 m · 16 partants · cotes de l'extraction*
+*17h48 · plat · 1700 m · 16 partants · cotes à T−29:32*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 12 | AURORA BOREALIS | 1,7 | 2,02 | -15,9 % | T.BACHELOT | 16/112/10/2240 |
-| 2 | WONDER BOY | 6,1 | 7,24 | -15,7 % | L.ROUSSEL | 18/31/10/489 |
-| 9 | GOLFEUR | 6,1 | 6,43 | -5,1 % | C.GROSBOIS | 26/45/1/1073 |
-| 1 | MY QUEEN | 12 | 14,62 | -17,9 % | W.LEVESQUE | 88/158/1161/861 |
-| 3 | GREAT ART | 12 | 14,03 | -14,5 % | H.LEBOUC | 22/47/108/1807 |
-| 6 | INDIAN STREAK | 12 | 15,99 | -25,0 % | A.MADAMET | 12/309/2438/1260 |
-| 4 | GRIGNETTE | – | – |  | D.PROVOST | 33/123/51/148 |
-| 5 | MARSIHO | – | – |  | M.JUSTUM | 87/130/72/2219 |
-| 7 | FLEUR DE SEL | – | – |  | T.BLANCHOUIN | 89/90/22/1282 |
-| 8 | NIPPE DE STAR | – | – |  | L.DENUAULT | 151/47/2667/778 |
-| 10 | QUIET SEA | – | – |  | A.MOLINS | 28/93/9/296 |
-| 11 | CHESTER SKY | – | – |  | A.BERNARD | 95/145/211/388 |
-| 13 | POMME SURETTE | – | – |  | H.JOURNIAC | 41/47/348/1245 |
-| 14 | YELLOW HAWK | – | – |  | A.SUBIAS | 102/278/36/357 |
-| 15 | LAKES DANCER | – | – |  | O.ANDIGNE | 77/47/49/1900 |
-| 16 | JORDAN BAKER | – | – |  | D.SANTIAGO | 19/356/19/628 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 12 | AURORA BOREALIS | 4,9 | 1,7 | 6,36 | -23,0 % | T.BACHELOT | 16/112/10/2240 |
+| 2 | WONDER BOY | 5,8 | 6,1 | 6,77 | -14,3 % | L.ROUSSEL | 18/31/10/489 |
+| 3 | GREAT ART | 10 | 12 | 11,24 | -11,0 % | H.LEBOUC | 22/47/108/1807 |
+| 10 | QUIET SEA | 10 | – | 12,77 | -21,7 % | A.MOLINS | 28/93/9/296 |
+| 9 | GOLFEUR | 11 | 6,1 | 12,56 | -12,4 % | C.GROSBOIS | 26/45/1/1073 |
+| 16 | JORDAN BAKER | 11 | – | 13,07 | -15,9 % | D.SANTIAGO | 19/356/19/628 |
+| 4 | GRIGNETTE | 15 | – | 18,03 | -16,8 % | D.PROVOST | 33/123/51/148 |
+| 1 | MY QUEEN | 17 | 12 | 21,75 | -21,8 % | W.LEVESQUE | 88/158/1161/861 |
+| 8 | NIPPE DE STAR | 22 | – | 29,31 | -24,9 % | L.DENUAULT | 151/47/2667/778 |
+| 13 | POMME SURETTE | 22 | – | 29,31 | -24,9 % | H.JOURNIAC | 41/47/348/1245 |
+| 6 | INDIAN STREAK | 23 | 12 | 33,85 | -32,1 % | A.MADAMET | 12/309/2438/1260 |
+| 14 | YELLOW HAWK | 24 | – | 38,19 | -37,2 % | A.SUBIAS | 102/278/36/357 |
+| 5 | MARSIHO | 25 | – | 33,93 | -26,3 % | M.JUSTUM | 87/130/72/2219 |
+| 11 | CHESTER SKY | 32 | – | 46,21 | -30,8 % | A.BERNARD | 95/145/211/388 |
+| 15 | LAKES DANCER | 34 | – | 52,77 | -35,6 % | O.ANDIGNE | 77/47/49/1900 |
+| 7 | FLEUR DE SEL | – | – | – |  | T.BLANCHOUIN | 89/90/22/1282 |
