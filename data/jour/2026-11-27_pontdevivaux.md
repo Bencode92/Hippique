@@ -87,46 +87,46 @@
 
 ### 5. PRIX DU PRADO
 
-*19h15 · attelé · 2650 m · 13 partants · cotes de l'extraction*
+*19h17 · attelé · 2650 m · 13 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 7 | LENNON | 3,4 | E. BRIAND |
-| 3 | LIBRIS EX BOURBON | 5,4 | L. GOETZ |
-| 11 | LOOK D'HERMES | 6,1 | K. DEVIENNE |
-| 10 | LASKO DES FORGES | 10 | N. MORTAGNE |
-| 2 | LUCKY ARCTIC | 11 | TH. BRIAND |
-| 12 | LAKARA | 14 | J.CH. FERON |
-| 4 | LUTECE SMART | 15 | N. CINIER |
-| 8 | LUCIFER | 18 | S. STEFANO |
-| 6 | LA BELLE MISS | 27 | K. THONNERIEUX |
-| 9 | LAWMAN | 29 | N. ENSCH |
-| 1 | LE GRAND FLAC | 40 | CH. MARTENS |
-| 5 | LA HORSE | 62 | Y.A. BRIAND |
-| 13 | LORKY RED | 88 | B. GOETZ |
+| 7 | LENNON | 2,2 | E. BRIAND |
+| 3 | LIBRIS EX BOURBON | 2,9 | L. GOETZ |
+| 11 | LOOK D'HERMES | 8,2 | K. DEVIENNE |
+| 2 | LUCKY ARCTIC | 8,9 | TH. BRIAND |
+| 8 | LUCIFER | 23 | S. STEFANO |
+| 6 | LA BELLE MISS | 43 | K. THONNERIEUX |
+| 4 | LUTECE SMART | 48 | N. CINIER |
+| 12 | LAKARA | 91 | J.CH. FERON |
+| 13 | LORKY RED | 138 | B. GOETZ |
+| 10 | LASKO DES FORGES | 143 | N. MORTAGNE |
+| 1 | LE GRAND FLAC | 151 | CH. MARTENS |
+| 9 | LAWMAN | 199 | N. ENSCH |
+| 5 | LA HORSE | 221 | Y.A. BRIAND |
 
 ### 6. PRIX DES CAMOINS
 
-*19h50 · attelé · 2650 m · 16 partants · cotes de l'extraction*
+*19h52 · attelé · 2650 m · 16 partants · cotes de l'extraction*
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 6 | MEFIANCE DU NOYER | 3,3 | TH. BRIAND |
-| 16 | MISSION ROYALE | 5,6 | D. BEKAERT |
-| 11 | MY STAR HIGHLAND | 10 | S. CINGLAND |
+| 16 | MISSION ROYALE | 2,1 | D. BEKAERT |
+| 6 | MEFIANCE DU NOYER | 4,6 | TH. BRIAND |
 | 4 | MOOVE ON JULRY | 11 | J.CH. FERON |
-| 12 | MOON ROCQ PIERJI | 13 | K. THONNERIEUX |
-| 5 | MUSE JULRY | 15 | N. PACHA |
-| 3 | MALADETTA DE LOU | 17 | J.CH. SOREL |
-| 10 | MASSILIA ENJOY | 18 | J. GUELPA |
-| 14 | MILADY D'ALEX | 20 | S. STEFANO |
-| 9 | MARGUERITE QUICK | 21 | CH. MARTENS |
-| 13 | MICHIKO | 23 | L. GOETZ |
-| 15 | MAM'ZELLE LARZIZ | 28 | K. DEVIENNE |
-| 7 | MONEYPENNY PAN | 43 | B. GOETZ |
-| 1 | MISS FLEUR | 60 | G. TOURON |
-| 2 | MOONSTONE | 101 | Y.A. BRIAND |
-| 8 | MEDAL OF HONOR | 101 | D. CINIER |
+| 3 | MALADETTA DE LOU | 12 | J.CH. SOREL |
+| 12 | MOON ROCQ PIERJI | 22 | K. THONNERIEUX |
+| 10 | MASSILIA ENJOY | 26 | J. GUELPA |
+| 8 | MEDAL OF HONOR | 26 | D. CINIER |
+| 14 | MILADY D'ALEX | 27 | S. STEFANO |
+| 15 | MAM'ZELLE LARZIZ | 27 | K. DEVIENNE |
+| 11 | MY STAR HIGHLAND | 40 | S. CINGLAND |
+| 5 | MUSE JULRY | 54 | N. PACHA |
+| 7 | MONEYPENNY PAN | 56 | B. GOETZ |
+| 13 | MICHIKO | 81 | L. GOETZ |
+| 2 | MOONSTONE | 129 | Y.A. BRIAND |
+| 9 | MARGUERITE QUICK | 195 | CH. MARTENS |
+| 1 | MISS FLEUR | 358 | G. TOURON |
 
 ### 7. PRIX DE GRAVELLES
 
@@ -134,11 +134,11 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 7 | JOIE DE LA COTE | 3,7 | Q. SEGUIN |
-| 5 | IMPERIAL KEY | 4,4 | CH. BOUTEILLER |
-| 4 | HARRY DU LYS | 5,8 | M. GRUMETZ |
-| 8 | INSTANT GRAVE | 6,6 | Mme A. VAUTIER |
-| 6 | GOUTIER CELESTE | 9 | O. PLACIER |
-| 1 | JO DE CAZOULENE | 10 | Mme LAETITIA GOUT |
-| 2 | ILLYTRASS | 13 | Mme L. LECOQ |
-| 3 | HAVRE DE PAIX | 23 | W. BAUDY |
+| 7 | JOIE DE LA COTE | 3,8 | Q. SEGUIN |
+| 8 | INSTANT GRAVE | 4,5 | Mme A. VAUTIER |
+| 5 | IMPERIAL KEY | 4,8 | CH. BOUTEILLER |
+| 4 | HARRY DU LYS | 8,3 | M. GRUMETZ |
+| 6 | GOUTIER CELESTE | 8,3 | O. PLACIER |
+| 1 | JO DE CAZOULENE | 11 | Mme LAETITIA GOUT |
+| 2 | ILLYTRASS | 14 | Mme L. LECOQ |
+| 3 | HAVRE DE PAIX | 19 | W. BAUDY |
