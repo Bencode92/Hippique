@@ -1,6 +1,6 @@
 # PORNICHET — 27/11/2026
 
-9 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+9 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -157,26 +157,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 8. PRIX DE VERTOU
 
-*17h13 · plat · 3100 m · 16 partants · cotes de l'extraction*
+*17h13 · plat · 3100 m · 16 partants · cotes à T−15:32*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 8 | SERPENTAR | 2,4 | 2,66 | -9,8 % | A.SUBIAS | 102/90/74/2379 |
-| 6 | LEMPIRA | 4,1 | 4,12 | -0,4 % | D.PROVOST | 33/123/200/2200 |
-| 14 | COCO LIGHT | 4,1 | 4,86 | -15,6 % | M.FLEURY | 126/328/559/760 |
-| 2 | UN JOUR POUR MOI | 6,1 | 6,58 | -7,3 % | Y.ROUSSET | 56/241/791/2847 |
-| 9 | KEEN LADY | 12 | 14,42 | -16,8 % | L.BOISSEAU | 37/62/15/25 |
-| 1 | SHALOHA | – | – |  | L.POGGIONOVO | 75/285/462/1443 |
-| 3 | LORENZO DE MEDICI | – | – |  | F.LEFEBVRE | 46/447/2254/1438 |
-| 4 | DICX | – | – |  | H.LEBOUC | 22/28/815/1208 |
-| 5 | MARACAMAYA | – | – |  | C.GROSBOIS | 26/241/949/3656 |
-| 7 | BYGOUDINE | – | – |  | L.ROUSSEL | 18/202/1462/307 |
-| 10 | RUE DAGUERRE | – | – |  | M.JUSTUM | 87/203/186/1485 |
-| 11 | COOL HEART | – | – |  | M.MARQUETTE | 51/500/228/1060 |
-| 12 | DIONYSOS FORLONGE | – | – |  | J.CLAUDIC | 40/202/1615/2088 |
-| 13 | KATARAFINA | – | – |  | S.JUST | 153/116/1847/124 |
-| 15 | SABOR DAZ | – | – |  | T.BREBION | 84/368/715/3261 |
-| 16 | PLUIE D'ARAIZE | – | – |  | L.PLOMMEE | 36/116/2430/1117 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 14 | COCO LIGHT | 4,7 | 4,1 | 6,03 | -22,1 % | M.FLEURY | 126/328/559/760 |
+| 9 | KEEN LADY | 7,6 | 12 | 8,45 | -10,1 % | L.BOISSEAU | 37/62/15/25 |
+| 3 | LORENZO DE MEDICI | 8,4 | – | 10,35 | -18,8 % | F.LEFEBVRE | 46/447/2254/1438 |
+| 2 | UN JOUR POUR MOI | 8,9 | 6,1 | 10,15 | -12,3 % | Y.ROUSSET | 56/241/791/2847 |
+| 1 | SHALOHA | 12 | – | 13,82 | -13,2 % | L.POGGIONOVO | 75/285/462/1443 |
+| 16 | PLUIE D'ARAIZE | 13 | – | 17,31 | -24,9 % | L.PLOMMEE | 36/116/2430/1117 |
+| 4 | DICX | 15 | – | 17,94 | -16,4 % | H.LEBOUC | 22/28/815/1208 |
+| 5 | MARACAMAYA | 15 | – | 16,38 | -8,5 % | C.GROSBOIS | 26/241/949/3656 |
+| 8 | SERPENTAR | 15 | 2,4 | 21,97 | -31,7 % | A.SUBIAS | 102/90/74/2379 |
+| 6 | LEMPIRA | 19 | 4,1 | 23,60 | -19,5 % | D.PROVOST | 33/123/200/2200 |
+| 7 | BYGOUDINE | 23 | – | 30,68 | -25,0 % | L.ROUSSEL | 18/202/1462/307 |
+| 15 | SABOR DAZ | 29 | – | 38,28 | -24,2 % | T.BREBION | 84/368/715/3261 |
+| 10 | RUE DAGUERRE | 38 | – | 47,15 | -19,4 % | M.JUSTUM | 87/203/186/1485 |
+| 11 | COOL HEART | 41 | – | 56,34 | -27,2 % | M.MARQUETTE | 51/500/228/1060 |
+| 12 | DIONYSOS FORLONGE | 44 | – | 69,87 | -37,0 % | J.CLAUDIC | 40/202/1615/2088 |
+| 13 | KATARAFINA | 65 | – | 114,53 | -43,2 % | S.JUST | 153/116/1847/124 |
 
 ### 9. PRIX DE NANTES
 
