@@ -1,0 +1,90 @@
+{
+  "course": "PRIX GREY DAWN",
+  "numero": 7,
+  "reunion": 4,
+  "heure_depart": 1795888920000,
+  "distance": 1300,
+  "scraped_at": "2026-11-28T18:32:08.417917+01:00",
+  "minutes_avant_depart": 30,
+  "participants": [
+    {
+      "numPmu": 1,
+      "nom": "MAIAKOVSKA",
+      "cote_live": 4.7,
+      "cote_reference": 4.6,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795887125000
+    },
+    {
+      "numPmu": 2,
+      "nom": "PALM BEACH",
+      "cote_live": 12.0,
+      "cote_reference": 12.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795887125000
+    },
+    {
+      "numPmu": 3,
+      "nom": "JUST KEN",
+      "cote_live": 3.6,
+      "cote_reference": 3.6,
+      "tendance": "",
+      "favoris": true,
+      "timestamp_cote": 1795887125000
+    },
+    {
+      "numPmu": 4,
+      "nom": "GOUYAR",
+      "cote_live": 5.1,
+      "cote_reference": 5.1,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795887125000
+    },
+    {
+      "numPmu": 5,
+      "nom": "EN CHANTANT",
+      "cote_live": 10.0,
+      "cote_reference": 10.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795887125000
+    },
+    {
+      "numPmu": 6,
+      "nom": "SEVENSIX",
+      "cote_live": 11.0,
+      "cote_reference": 11.0,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795887125000
+    },
+    {
+      "numPmu": 7,
+      "nom": "COMEDY CEN",
+      "cote_live": 5.3,
+      "cote_reference": 5.3,
+      "tendance": "",
+      "favoris": false,
+      "timestamp_cote": 1795887125000
+    }
+  ],
+  "hippodrome": "DEAUVILLE",
+  "releves": [
+    {
+      "scraped_at": "2026-11-28T18:32:08.417917+01:00",
+      "minutes_avant_depart": 29.870256916666666,
+      "cotes": {
+        "1": 4.7,
+        "2": 12.0,
+        "3": 3.6,
+        "4": 5.1,
+        "5": 10.0,
+        "6": 11.0,
+        "7": 5.3
+      }
+    }
+  ]
+}

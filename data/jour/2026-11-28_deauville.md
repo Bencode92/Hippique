@@ -1,6 +1,6 @@
 # DEAUVILLE — 28/11/2026
 
-8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 5 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -133,17 +133,17 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX GREY DAWN
 
-*19h02 · plat · 1300 m · 7 partants · cotes de l'extraction*
+*19h02 · plat · 1300 m · 7 partants · cotes à T−29:52*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 3 | JUST KEN | 2,4 | 2,53 | -5,3 % | S.PASQUIER | 20/46/678/1370 |
-| 4 | GOUYAR | 2,8 | 2,90 | -3,5 % | M.MARQUETTE | 51/15/3234/739 |
-| 7 | COMEDY CEN | 8,1 | 10,56 | -23,3 % | A.LEMAITRE | 10/61/23/23 |
-| 1 | MAIAKOVSKA | 10 | 13,55 | -26,2 % | A.MADAMET | 12/9/18/12 |
-| 2 | PALM BEACH | 14 | 17,97 | -22,1 % | C.LECOEUVRE | 13/69/14/– |
-| 5 | EN CHANTANT | 14 | 19,27 | -27,4 % | M.PROTTI | 29/6/4/708 |
-| 6 | SEVENSIX | 55 | 88,68 | -38,0 % | H.BOUTIN | 17/52/3260/431 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 3 | JUST KEN | 3,6 | 2,4 | 4,21 | -14,6 % | S.PASQUIER | 20/46/678/1370 |
+| 1 | MAIAKOVSKA | 4,7 | 10 | 5,17 | -9,0 % | A.MADAMET | 12/9/18/12 |
+| 4 | GOUYAR | 5,1 | 2,8 | 5,76 | -11,4 % | M.MARQUETTE | 51/15/3234/739 |
+| 7 | COMEDY CEN | 5,3 | 8,1 | 5,90 | -10,2 % | A.LEMAITRE | 10/61/23/23 |
+| 5 | EN CHANTANT | 10 | 14 | 13,43 | -25,5 % | M.PROTTI | 29/6/4/708 |
+| 6 | SEVENSIX | 11 | 55 | 12,85 | -14,4 % | H.BOUTIN | 17/52/3260/431 |
+| 2 | PALM BEACH | 12 | 14 | 14,87 | -19,3 % | C.LECOEUVRE | 13/69/14/– |
 
 ### 8. PRIX DE BAGNOLES DE L'ORNE
 
