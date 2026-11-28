@@ -4,89 +4,89 @@
   "reunion": 4,
   "heure_depart": 1795878540000,
   "distance": 1900,
-  "scraped_at": "2026-11-28T16:04:03.632327+01:00",
-  "minutes_avant_depart": 5,
+  "scraped_at": "2026-11-28T16:06:43.299649+01:00",
+  "minutes_avant_depart": 2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "OUEST DONC DENUO",
-      "cote_live": 8.1,
+      "cote_live": 9.4,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795878227000
+      "timestamp_cote": 1795878381000
     },
     {
       "numPmu": 2,
       "nom": "SPIRITUELLE AGUA",
-      "cote_live": 2.4,
+      "cote_live": 2.8,
       "cote_reference": 2.8,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1795878227000
+      "timestamp_cote": 1795878381000
     },
     {
       "numPmu": 3,
       "nom": "SHUWAIB",
-      "cote_live": 3.6,
+      "cote_live": 2.9,
       "cote_reference": 2.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795878227000
+      "timestamp_cote": 1795878381000
     },
     {
       "numPmu": 4,
       "nom": "JAMINUS",
-      "cote_live": 39.0,
+      "cote_live": 49.0,
       "cote_reference": 61.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795878227000
+      "timestamp_cote": 1795878381000
     },
     {
       "numPmu": 5,
       "nom": "WISH ME LUCK",
-      "cote_live": 7.5,
+      "cote_live": 6.2,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795878227000
+      "timestamp_cote": 1795878381000
     },
     {
       "numPmu": 6,
       "nom": "GOLEM",
-      "cote_live": 11.0,
+      "cote_live": 13.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795878227000
+      "timestamp_cote": 1795878381000
     },
     {
       "numPmu": 7,
       "nom": "OSMOSE PRECIEUSE",
-      "cote_live": 49.0,
+      "cote_live": 64.0,
       "cote_reference": 33.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795878227000
+      "timestamp_cote": 1795878381000
     },
     {
       "numPmu": 8,
       "nom": "IT'S ONLY LOVE",
-      "cote_live": 24.0,
+      "cote_live": 26.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795878227000
+      "timestamp_cote": 1795878381000
     },
     {
       "numPmu": 9,
       "nom": "STRONG CROWN",
-      "cote_live": 43.0,
+      "cote_live": 42.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795878227000
+      "timestamp_cote": 1795878381000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -134,6 +134,66 @@
         "7": 49.0,
         "8": 24.0,
         "9": 43.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-28T16:04:43.327637+01:00",
+      "minutes_avant_depart": 4.281508016666667,
+      "cotes": {
+        "1": 8.0,
+        "2": 2.6,
+        "3": 3.6,
+        "4": 39.0,
+        "5": 6.8,
+        "6": 10.0,
+        "7": 48.0,
+        "8": 23.0,
+        "9": 41.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-28T16:05:23.505976+01:00",
+      "minutes_avant_depart": 3.6148396000000003,
+      "cotes": {
+        "1": 8.9,
+        "2": 2.6,
+        "3": 3.6,
+        "4": 44.0,
+        "5": 5.9,
+        "6": 11.0,
+        "7": 51.0,
+        "8": 23.0,
+        "9": 40.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-28T16:06:03.715946+01:00",
+      "minutes_avant_depart": 2.9399544333333334,
+      "cotes": {
+        "1": 8.5,
+        "2": 2.4,
+        "3": 4.0,
+        "4": 44.0,
+        "5": 5.7,
+        "6": 11.0,
+        "7": 52.0,
+        "8": 23.0,
+        "9": 38.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-28T16:06:43.299649+01:00",
+      "minutes_avant_depart": 2.2815026166666663,
+      "cotes": {
+        "1": 9.4,
+        "2": 2.8,
+        "3": 2.9,
+        "4": 49.0,
+        "5": 6.2,
+        "6": 13.0,
+        "7": 64.0,
+        "8": 26.0,
+        "9": 42.0
       }
     }
   ]
