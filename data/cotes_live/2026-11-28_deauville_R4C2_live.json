@@ -4,8 +4,8 @@
   "reunion": 4,
   "heure_depart": 1795878540000,
   "distance": 1900,
-  "scraped_at": "2026-11-28T16:09:23.629045+01:00",
-  "minutes_avant_depart": 0,
+  "scraped_at": "2026-11-28T16:12:03.547841+01:00",
+  "minutes_avant_depart": -3,
   "participants": [
     {
       "numPmu": 1,
@@ -14,16 +14,16 @@
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795878558000
+      "timestamp_cote": 1795878590000
     },
     {
       "numPmu": 2,
       "nom": "SPIRITUELLE AGUA",
-      "cote_live": 4.6,
+      "cote_live": 5.2,
       "cote_reference": 2.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795878558000
+      "timestamp_cote": 1795878590000
     },
     {
       "numPmu": 3,
@@ -32,61 +32,61 @@
       "cote_reference": 2.5,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1795878558000
+      "timestamp_cote": 1795878590000
     },
     {
       "numPmu": 4,
       "nom": "JAMINUS",
-      "cote_live": 67.0,
+      "cote_live": 75.0,
       "cote_reference": 61.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795878558000
+      "timestamp_cote": 1795878590000
     },
     {
       "numPmu": 5,
       "nom": "WISH ME LUCK",
-      "cote_live": 5.8,
+      "cote_live": 5.3,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795878558000
+      "timestamp_cote": 1795878590000
     },
     {
       "numPmu": 6,
       "nom": "GOLEM",
-      "cote_live": 15.0,
+      "cote_live": 12.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795878558000
+      "timestamp_cote": 1795878590000
     },
     {
       "numPmu": 7,
       "nom": "OSMOSE PRECIEUSE",
-      "cote_live": 71.0,
+      "cote_live": 86.0,
       "cote_reference": 33.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795878558000
+      "timestamp_cote": 1795878590000
     },
     {
       "numPmu": 8,
       "nom": "IT'S ONLY LOVE",
-      "cote_live": 29.0,
+      "cote_live": 34.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795878558000
+      "timestamp_cote": 1795878590000
     },
     {
       "numPmu": 9,
       "nom": "STRONG CROWN",
-      "cote_live": 37.0,
+      "cote_live": 43.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795878558000
+      "timestamp_cote": 1795878590000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -254,6 +254,66 @@
         "7": 71.0,
         "8": 29.0,
         "9": 37.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-28T16:10:03.331511+01:00",
+      "minutes_avant_depart": -1.0518399166666665,
+      "cotes": {
+        "1": 9.2,
+        "2": 5.2,
+        "3": 2.0,
+        "4": 75.0,
+        "5": 5.3,
+        "6": 12.0,
+        "7": 86.0,
+        "8": 34.0,
+        "9": 43.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-28T16:10:43.244275+01:00",
+      "minutes_avant_depart": -1.7185084000000002,
+      "cotes": {
+        "1": 9.2,
+        "2": 5.2,
+        "3": 2.0,
+        "4": 75.0,
+        "5": 5.3,
+        "6": 12.0,
+        "7": 86.0,
+        "8": 34.0,
+        "9": 43.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-28T16:11:23.406063+01:00",
+      "minutes_avant_depart": -2.385177233333333,
+      "cotes": {
+        "1": 9.2,
+        "2": 5.2,
+        "3": 2.0,
+        "4": 75.0,
+        "5": 5.3,
+        "6": 12.0,
+        "7": 86.0,
+        "8": 34.0,
+        "9": 43.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-28T16:12:03.547841+01:00",
+      "minutes_avant_depart": -3.051845716666667,
+      "cotes": {
+        "1": 9.2,
+        "2": 5.2,
+        "3": 2.0,
+        "4": 75.0,
+        "5": 5.3,
+        "6": 12.0,
+        "7": 86.0,
+        "8": 34.0,
+        "9": 43.0
       }
     }
   ]

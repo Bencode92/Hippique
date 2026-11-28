@@ -1,6 +1,6 @@
 # DEAUVILLE — 28/11/2026
 
-8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -49,26 +49,26 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 3. PRIX DU PONT DE TANCARVILLE
 
-*16h42 · plat · 1900 m · 16 partants · cotes de l'extraction*
+*16h42 · plat · 1900 m · 16 partants · cotes à T−29:56*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 5 | CHARMING CECILIA | 2,4 | 2,33 | **+3,1 %** | F.VALLE SKAR | 32/103/761/1479 |
-| 8 | ON THE DOUBLE | 4,8 | 5,22 | -8,0 % | C.LECOEUVRE | 13/55/990/231 |
-| 1 | INVENTER | 9,7 | 11,69 | -17,1 % | L.PLOMMEE | 36/79/222/1316 |
-| 2 | UTXA | 9,7 | 11,69 | -17,1 % | M.FAVRIAUX | 54/54/3277/169 |
-| 7 | BLANQUETTE | 9,7 | 11,69 | -17,1 % | A.BARON | 38/93/386/902 |
-| 13 | NAZGUL BLOU | 9,7 | 10,72 | -9,5 % | S.PASQUIER | 20/40/988/448 |
-| 15 | LIGHTASS FAL | 9,7 | 10,72 | -9,5 % | A.LEMAITRE | 10/243/31/35 |
-| 3 | DIVO | – | – |  | J.CLAUDIC | 40/296/550/566 |
-| 4 | MAINE DE BIRAN | – | – |  | J.MOUTARD | 42/48/175/3820 |
-| 6 | AMILA | – | – |  | P.BAZIRE | 57/36/276/1324 |
-| 9 | FRANCQUEVILLE | – | – |  | D.PROVOST | 33/9/14/123 |
-| 10 | MY LOVE SONG | – | – |  | P.LE DIGABEL | 113/120/2799/224 |
-| 11 | DJAVERIA | – | – |  | M.CALBRIX | 105/178/2/2054 |
-| 12 | NOVA DU CHENET | – | – |  | O.ANDIGNE | 77/76/204/141 |
-| 14 | PADOVA | – | – |  | R.THOMAS | 68/128/98/165 |
-| 16 | BIG RED SOLO | – | – |  | G.TROLLEY DE PREVAUX | 43/73/4141/3834 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 7 | BLANQUETTE | 7,1 | 9,7 | 7,04 | **+0,8 %** | A.BARON | 38/93/386/902 |
+| 12 | NOVA DU CHENET | 7,6 | – | 8,94 | -15,0 % | O.ANDIGNE | 77/76/204/141 |
+| 14 | PADOVA | 8,3 | – | 10,59 | -21,6 % | R.THOMAS | 68/128/98/165 |
+| 5 | CHARMING CECILIA | 9,2 | 2,4 | 10,24 | -10,2 % | F.VALLE SKAR | 32/103/761/1479 |
+| 9 | FRANCQUEVILLE | 10 | – | 12,32 | -18,8 % | D.PROVOST | 33/9/14/123 |
+| 1 | INVENTER | 11 | 9,7 | 13,78 | -20,2 % | L.PLOMMEE | 36/79/222/1316 |
+| 2 | UTXA | 13 | 9,7 | 16,78 | -22,5 % | M.FAVRIAUX | 54/54/3277/169 |
+| 16 | BIG RED SOLO | 13 | – | 17,98 | -27,7 % | G.TROLLEY DE PREVAUX | 43/73/4141/3834 |
+| 8 | ON THE DOUBLE | 14 | 4,8 | 18,30 | -23,5 % | C.LECOEUVRE | 13/55/990/231 |
+| 10 | MY LOVE SONG | 21 | – | 26,76 | -21,5 % | P.LE DIGABEL | 113/120/2799/224 |
+| 4 | MAINE DE BIRAN | 22 | – | 33,27 | -33,9 % | J.MOUTARD | 42/48/175/3820 |
+| 15 | LIGHTASS FAL | 22 | 9,7 | 28,23 | -22,1 % | A.LEMAITRE | 10/243/31/35 |
+| 3 | DIVO | 23 | – | 32,60 | -29,4 % | J.CLAUDIC | 40/296/550/566 |
+| 13 | NAZGUL BLOU | 29 | 9,7 | 38,67 | -25,0 % | S.PASQUIER | 20/40/988/448 |
+| 6 | AMILA | 60 | – | 85,98 | -30,2 % | P.BAZIRE | 57/36/276/1324 |
+| 11 | DJAVERIA | 108 | – | 173,97 | -37,9 % | M.CALBRIX | 105/178/2/2054 |
 
 ### 4. PRIX DU PONT SUR LE GRAND CANAL DU HAVRE
 
