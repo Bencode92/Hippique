@@ -133,17 +133,17 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 7. PRIX GREY DAWN
 
-*19h02 · plat · 1300 m · 7 partants · cotes à T−29:52*
+*19h02 · plat · 1300 m · 7 partants · cotes à T−25:52*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | JUST KEN | 3,6 | 2,4 | 4,21 | -14,6 % | S.PASQUIER | 20/46/678/1370 |
-| 1 | MAIAKOVSKA | 4,7 | 10 | 5,17 | -9,0 % | A.MADAMET | 12/9/18/12 |
-| 4 | GOUYAR | 5,1 | 2,8 | 5,76 | -11,4 % | M.MARQUETTE | 51/15/3234/739 |
-| 7 | COMEDY CEN | 5,3 | 8,1 | 5,90 | -10,2 % | A.LEMAITRE | 10/61/23/23 |
-| 5 | EN CHANTANT | 10 | 14 | 13,43 | -25,5 % | M.PROTTI | 29/6/4/708 |
-| 6 | SEVENSIX | 11 | 55 | 12,85 | -14,4 % | H.BOUTIN | 17/52/3260/431 |
-| 2 | PALM BEACH | 12 | 14 | 14,87 | -19,3 % | C.LECOEUVRE | 13/69/14/– |
+| 4 | GOUYAR | 4 | 2,8 | 5,08 | -21,2 % | M.MARQUETTE | 51/15/3234/739 |
+| 3 | JUST KEN | 4,1 | 2,4 | 4,38 | -6,3 % | S.PASQUIER | 20/46/678/1370 |
+| 7 | COMEDY CEN | 4,9 | 8,1 | 5,43 | -9,7 % | A.LEMAITRE | 10/61/23/23 |
+| 1 | MAIAKOVSKA | 5,9 | 10 | 6,69 | -11,8 % | A.MADAMET | 12/9/18/12 |
+| 6 | SEVENSIX | 9,8 | 55 | 11,27 | -13,0 % | H.BOUTIN | 17/52/3260/431 |
+| 2 | PALM BEACH | 10 | 14 | 12,59 | -20,6 % | C.LECOEUVRE | 13/69/14/– |
+| 5 | EN CHANTANT | 12 | 14 | 15,98 | -24,9 % | M.PROTTI | 29/6/4/708 |
 
 ### 8. PRIX DE BAGNOLES DE L'ORNE
 
