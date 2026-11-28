@@ -1,6 +1,6 @@
 # DEAUVILLE — 28/11/2026
 
-8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 4 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -117,19 +117,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DE LA FORET D'ANDAIGNE
 
-*18h27 · plat · 1300 m · 9 partants · cotes de l'extraction*
+*18h27 · plat · 1300 m · 9 partants · cotes à T−29:31*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 1 | KALLISTE | 2,8 | 3,15 | -11,2 % | A.MADAMET | 12/3/3/6 |
-| 8 | VALLARIA | 6,4 | 7,15 | -10,5 % | A.LEMAITRE | 10/54/3206/169 |
-| 7 | PETITE VAGABONDE | 6,7 | 8,38 | -20,0 % | P.BAZIRE | 57/107/1143/115 |
-| 5 | WONDER BAILEYS | 7,6 | 8,36 | -9,1 % | E.VERHESTRAETEN | 50/13/131/1162 |
-| 2 | HISTORI CHOPE | 8,4 | 10,46 | -19,7 % | T.BREBION | 84/45/6/397 |
-| 3 | RISCAL | 11 | 14,04 | -21,6 % | C.LECOEUVRE | 13/19/27/244 |
-| 4 | YOU OR ME | 11 | 14,37 | -23,5 % | M.MARQUETTE | 51/15/57/87 |
-| 9 | OLYMPIC FILLY | 35 | 48,77 | -28,2 % | L.ROUSSEL | 18/426/1731/1459 |
-| 6 | FINACRA FAL | 37 | 51,89 | -28,7 % | M.PROTTI | 29/243/31/35 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 1 | KALLISTE | 3 | 2,8 | 3,36 | -10,7 % | A.MADAMET | 12/3/3/6 |
+| 7 | PETITE VAGABONDE | 5 | 6,7 | 5,50 | -9,2 % | P.BAZIRE | 57/107/1143/115 |
+| 8 | VALLARIA | 7,1 | 6,4 | 8,01 | -11,4 % | A.LEMAITRE | 10/54/3206/169 |
+| 2 | HISTORI CHOPE | 8,5 | 8,4 | 10,55 | -19,4 % | T.BREBION | 84/45/6/397 |
+| 3 | RISCAL | 8,5 | 11 | 10,31 | -17,5 % | C.LECOEUVRE | 13/19/27/244 |
+| 5 | WONDER BAILEYS | 8,8 | 7,6 | 9,85 | -10,7 % | E.VERHESTRAETEN | 50/13/131/1162 |
+| 4 | YOU OR ME | 15 | 11 | 20,61 | -27,2 % | M.MARQUETTE | 51/15/57/87 |
+| 9 | OLYMPIC FILLY | 35 | 35 | 48,52 | -27,9 % | L.ROUSSEL | 18/426/1731/1459 |
+| 6 | FINACRA FAL | 37 | 37 | 51,62 | -28,3 % | M.PROTTI | 29/243/31/35 |
 
 ### 7. PRIX GREY DAWN
 
