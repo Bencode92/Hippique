@@ -14,15 +14,15 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 1 | LAZZAR | 3 | 3,59 | -16,4 % | A.ORANI 5e | 5/11/16/18 |
-| 4 | THURY HARCOURT | 5,4 | 6,09 | -11,4 % | H.BESNIER | 11/4/128/5 |
-| 3 | DWIGHT | 5,7 | 6,90 | -17,3 % | T.PICCONE | 9/50/32/52 |
-| 8 | HEAVEN CAN WAIT | 5,7 | 6,48 | -12,0 % | T.BACHELOT | 16/57/20/10 |
-| 9 | KENCARLO | 7,1 | 8,90 | -20,2 % | T.TRULLIER | 24/5/4/– |
-| 2 | MONDELLO | 19 | 26,45 | -28,2 % | A.MOLINS | 28/77/1336/1560 |
-| 6 | SLEDGEHAMMER | 28 | 41,32 | -32,2 % | A.HAMELIN | 23/56/28/1106 |
-| 7 | HOLYGLEN | 28 | 44,41 | -36,9 % | M.GRANDIN | 3/5/7/16 |
-| 5 | BIG STRIKE | 114 | 186,44 | -38,9 % | J.NICOLEAU | 112/5/4174/963 |
+| 1 | LAZZAR | 3,2 | 3,87 | -17,2 % | A.ORANI 5e | 5/11/16/18 |
+| 3 | DWIGHT | 5,9 | 7,24 | -18,5 % | T.PICCONE | 9/50/32/52 |
+| 4 | THURY HARCOURT | 5,9 | 6,80 | -13,2 % | H.BESNIER | 11/4/128/5 |
+| 8 | HEAVEN CAN WAIT | 6,5 | 7,60 | -14,5 % | T.BACHELOT | 16/57/20/10 |
+| 9 | KENCARLO | 7,7 | 9,88 | -22,1 % | T.TRULLIER | 24/5/4/– |
+| 2 | MONDELLO | 10 | 12,57 | -20,4 % | A.MOLINS | 28/77/1336/1560 |
+| 7 | HOLYGLEN | 18 | 26,91 | -33,1 % | M.GRANDIN | 3/5/7/16 |
+| 6 | SLEDGEHAMMER | 26 | 38,33 | -32,2 % | A.HAMELIN | 23/56/28/1106 |
+| 5 | BIG STRIKE | 43 | 67,39 | -36,2 % | J.NICOLEAU | 112/5/4174/963 |
 
 ### 2. PRIX MARINA JACQUIN
 
@@ -30,13 +30,13 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 7 | ALTOSTRATUS | 1,2 | 1,53 | -21,5 % | A.ORANI 5e | 5/11/571/8 |
-| 2 | WINDFLOWER | 5 | 5,61 | -10,9 % | H.BESNIER | 11/4/46/102 |
-| 3 | UN INSTANT | 22 | 27,51 | -20,0 % | A.CRASTUS | 15/20/75/10 |
-| 5 | PLEASEMAN | 22 | 29,54 | -25,5 % | T.PICCONE | 9/155/215/1493 |
-| 4 | MANEKI | 90 | 158,48 | -43,2 % | T.BACHELOT | 16/11/226/184 |
-| 1 | SAINT MARTIN | 180 | 306,60 | -41,3 % | M.GRANDIN | 3/5/163/17 |
-| 6 | MARTAGNY | 180 | 284,85 | -36,8 % | M.WALDHAUSER | 45/11/11/5 |
+| 7 | ALTOSTRATUS | 1,3 | 1,63 | -20,1 % | A.ORANI 5e | 5/11/571/8 |
+| 2 | WINDFLOWER | 3,9 | 4,44 | -12,1 % | H.BESNIER | 11/4/46/102 |
+| 3 | UN INSTANT | 11 | 12,79 | -14,0 % | A.CRASTUS | 15/20/75/10 |
+| 5 | PLEASEMAN | 25 | 35,54 | -29,7 % | T.PICCONE | 9/155/215/1493 |
+| 1 | SAINT MARTIN | 103 | 183,14 | -43,8 % | M.GRANDIN | 3/5/163/17 |
+| 4 | MANEKI | 103 | 188,18 | -45,3 % | T.BACHELOT | 16/11/226/184 |
+| 6 | MARTAGNY | 103 | 170,18 | -39,5 % | M.WALDHAUSER | 45/11/11/5 |
 
 ### 3. PRIX FLORENCE FORNERON
 
@@ -59,19 +59,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 10 | SUN SONG | 1,8 | 2,00 | -10,1 % | A.ORANI 5e | 5/20/68/10 |
-| 2 | I'M A BELIEVER | 5,9 | 6,04 | -2,4 % | M.VELON | 27/5/750/29 |
-| 5 | SWEEP AWAY | 7,9 | 8,42 | -6,2 % | M.GRANDIN | 3/49/473/304 |
-| 13 | BAWE ISLAND | 7,9 | 8,99 | -12,1 % | M.PIEN | 155/21/19/43 |
-| 3 | LE TOLIER | 23 | 35,78 | -35,7 % | T.TRULLIER | 24/20/900/488 |
-| 6 | ATAVAMADA | 23 | 29,09 | -20,9 % | T.PICCONE | 9/268/1269/2511 |
-| 8 | JOYEUSE DE ROMAY | 23 | 33,31 | -30,9 % | N.ASTIER | 164/49/1902/794 |
-| 11 | AMORE MIA | 23 | 33,31 | -30,9 % | J.NICOLEAU | 112/5/35/42 |
+| 10 | SUN SONG | 2,4 | 2,52 | -4,9 % | A.ORANI 5e | 5/20/68/10 |
+| 13 | BAWE ISLAND | 3,9 | 4,10 | -4,8 % | M.PIEN | 155/21/19/43 |
+| 2 | I'M A BELIEVER | 6,3 | 6,51 | -3,3 % | M.VELON | 27/5/750/29 |
+| 5 | SWEEP AWAY | 7,9 | 8,43 | -6,3 % | M.GRANDIN | 3/49/473/304 |
+| 8 | JOYEUSE DE ROMAY | 15 | 20,29 | -26,1 % | N.ASTIER | 164/49/1902/794 |
+| 3 | LE TOLIER | 31 | 50,39 | -38,5 % | T.TRULLIER | 24/20/900/488 |
+| 6 | ATAVAMADA | 31 | 40,89 | -24,2 % | T.PICCONE | 9/268/1269/2511 |
+| 11 | AMORE MIA | 31 | 46,87 | -33,9 % | J.NICOLEAU | 112/5/35/42 |
+| 12 | MAPLE GIRL | 31 | 42,67 | -27,4 % | A.CRASTUS | 15/180/193/992 |
 | 1 | KENZAL | – | – |  | M.WALDHAUSER | 45/49/7/660 |
 | 4 | REUX | – | – |  | H.BESNIER | 11/99/275/327 |
 | 7 | DENGIE | – | – |  | A.D'JJI | 248/20/7/409 |
 | 9 | THAT'S LIFE | – | – |  | B.FLANDRIN | 103/482/213/1375 |
-| 12 | MAPLE GIRL | – | – |  | A.CRASTUS | 15/180/193/992 |
 
 ### 5. PRIX DENIS BENSUSSAN
 
