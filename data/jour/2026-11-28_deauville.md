@@ -99,21 +99,21 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 13 | TOCOA | 4,4 | 6,3 | 4,74 | -7,2 % | C.LECOEUVRE | 13/66/200/2302 |
-| 2 | CRACKON | 5,2 | 10 | 5,67 | -8,3 % | G.MEURY | 73/25/1471/1018 |
-| 15 | ELUSIVE WAY | 6 | 5,2 | 7,22 | -16,9 % | A.MADAMET | 12/62/15/25 |
-| 16 | GARIGA | 13 | 12 | 16,71 | -22,2 % | F.VALLE SKAR | 32/85/86/1839 |
-| 7 | VELOURS | 15 | 12 | 21,20 | -29,2 % | H.JOURNIAC | 41/9/10/1267 |
-| 12 | THE TINKER | 15 | 12 | 19,76 | -24,1 % | S.PASQUIER | 20/84/1132/– |
-| 4 | IL MAGISTERO | 16 | 12 | 20,35 | -21,4 % | L.PLOMMEE | 36/79/166/1316 |
-| 14 | PARVAGE | 16 | 14 | 21,31 | -24,9 % | D.PROVOST | 33/9/76/1037 |
-| 11 | MARASI DRIVE | 20 | 14 | 24,05 | -16,8 % | A.LEMAITRE | 10/50/404/1317 |
-| 10 | STELA TREZY | 23 | 20 | 28,24 | -18,6 % | L.BRECHET | 58/67/132/59 |
-| 8 | NEPETA | 25 | 15 | 34,09 | -26,7 % | H.LEBOUC | 22/47/1080/2821 |
-| 9 | OCALA | 29 | 33 | 38,55 | -24,8 % | J.CLAUDIC | 40/584/179/185 |
-| 6 | ARANYANI | 34 | 25 | 43,93 | -22,6 % | H.BOUTIN | 17/87/3282/615 |
-| 1 | PERSIAN IMP CEN | 45 | 43 | 62,79 | -28,3 % | R.MANGIONE | 86/739/23/3967 |
-| 3 | NAGIKHTAAL | 68 | 36 | 93,26 | -27,1 % | X.BERGERON | 71/212/901/1386 |
+| 13 | TOCOA | 4,4 | 3,6 | 4,74 | -7,2 % | C.LECOEUVRE | 13/66/200/2302 |
+| 2 | CRACKON | 5,2 | 5 | 5,67 | -8,3 % | G.MEURY | 73/25/1471/1018 |
+| 15 | ELUSIVE WAY | 6 | 6,6 | 7,22 | -16,9 % | A.MADAMET | 12/62/15/25 |
+| 16 | GARIGA | 13 | 17 | 16,71 | -22,2 % | F.VALLE SKAR | 32/85/86/1839 |
+| 7 | VELOURS | 15 | 16 | 21,20 | -29,2 % | H.JOURNIAC | 41/9/10/1267 |
+| 12 | THE TINKER | 15 | 18 | 19,76 | -24,1 % | S.PASQUIER | 20/84/1132/– |
+| 14 | PARVAGE | 16 | 17 | 21,31 | -24,9 % | D.PROVOST | 33/9/76/1037 |
+| 4 | IL MAGISTERO | 16 | 13 | 20,35 | -21,4 % | L.PLOMMEE | 36/79/166/1316 |
+| 11 | MARASI DRIVE | 20 | 26 | 24,05 | -16,8 % | A.LEMAITRE | 10/50/404/1317 |
+| 10 | STELA TREZY | 23 | 21 | 28,24 | -18,6 % | L.BRECHET | 58/67/132/59 |
+| 8 | NEPETA | 25 | 31 | 34,09 | -26,7 % | H.LEBOUC | 22/47/1080/2821 |
+| 9 | OCALA | 29 | 37 | 38,55 | -24,8 % | J.CLAUDIC | 40/584/179/185 |
+| 6 | ARANYANI | 34 | 45 | 43,93 | -22,6 % | H.BOUTIN | 17/87/3282/615 |
+| 1 | PERSIAN IMP CEN | 45 | 55 | 62,79 | -28,3 % | R.MANGIONE | 86/739/23/3967 |
+| 3 | NAGIKHTAAL | 68 | 43 | 93,26 | -27,1 % | X.BERGERON | 71/212/901/1386 |
 
 ### 6. PRIX DE LA FORET D'ANDAIGNE
 
@@ -121,29 +121,29 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 3 | RISCAL | 3,1 | 11 | 3,48 | -11,0 % | C.LECOEUVRE | 13/19/27/244 |
-| 1 | KALLISTE | 4,9 | 2,8 | 5,09 | -3,7 % | A.MADAMET | 12/3/3/6 |
-| 7 | PETITE VAGABONDE | 6,1 | 6,7 | 6,91 | -11,8 % | P.BAZIRE | 57/107/1143/115 |
-| 8 | VALLARIA | 6,2 | 6,4 | 6,88 | -9,9 % | A.LEMAITRE | 10/54/3206/169 |
-| 5 | WONDER BAILEYS | 8,7 | 7,6 | 9,76 | -10,9 % | E.VERHESTRAETEN | 50/13/131/1162 |
-| 2 | HISTORI CHOPE | 13 | 8,4 | 17,48 | -25,6 % | T.BREBION | 84/45/6/397 |
-| 4 | YOU OR ME | 16 | 11 | 22,31 | -28,3 % | M.MARQUETTE | 51/15/57/87 |
-| 6 | FINACRA FAL | 43 | 37 | 61,17 | -29,7 % | M.PROTTI | 29/243/31/35 |
-| 9 | OLYMPIC FILLY | 51 | 35 | 80,93 | -37,0 % | L.ROUSSEL | 18/426/1731/1459 |
+| 3 | RISCAL | 3,1 | 2,9 | 3,48 | -11,0 % | C.LECOEUVRE | 13/19/27/244 |
+| 1 | KALLISTE | 4,9 | 6,1 | 5,28 | -7,3 % | A.MADAMET | 12/3/3/6 |
+| 7 | PETITE VAGABONDE | 6,1 | 6,7 | 7,50 | -18,7 % | P.BAZIRE | 57/107/1143/115 |
+| 8 | VALLARIA | 6,2 | 5,2 | 7,17 | -13,6 % | A.LEMAITRE | 10/54/3206/169 |
+| 5 | WONDER BAILEYS | 8,7 | 6,8 | 10,63 | -18,2 % | E.VERHESTRAETEN | 50/13/131/1162 |
+| 2 | HISTORI CHOPE | 13 | 15 | 17,48 | -25,6 % | T.BREBION | 84/45/6/397 |
+| 4 | YOU OR ME | 16 | 18 | 23,36 | -31,5 % | M.MARQUETTE | 51/15/57/87 |
+| 6 | FINACRA FAL | 43 | 60 | 67,17 | -36,0 % | M.PROTTI | 29/243/31/35 |
+| 9 | OLYMPIC FILLY | 51 | 61 | 77,17 | -33,9 % | L.ROUSSEL | 18/426/1731/1459 |
 
 ### 7. PRIX GREY DAWN
 
-*19h02 · plat · 1300 m · 7 partants · cotes à T−11:12*
+*19h04 · plat · 1300 m · 7 partants · cotes à T−11:12*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 7 | COMEDY CEN | 3,4 | 8,1 | 4,06 | -16,3 % | A.LEMAITRE | 10/61/23/23 |
-| 3 | JUST KEN | 4,4 | 2,4 | 4,72 | -6,8 % | S.PASQUIER | 20/46/678/1370 |
-| 4 | GOUYAR | 4,8 | 2,8 | 5,40 | -11,1 % | M.MARQUETTE | 51/15/3234/739 |
-| 1 | MAIAKOVSKA | 6,5 | 10 | 7,47 | -13,0 % | A.MADAMET | 12/9/18/12 |
-| 2 | PALM BEACH | 8,9 | 14 | 10,98 | -19,0 % | C.LECOEUVRE | 13/69/14/– |
-| 6 | SEVENSIX | 11 | 55 | 12,90 | -14,8 % | H.BOUTIN | 17/52/3260/431 |
-| 5 | EN CHANTANT | 15 | 14 | 20,80 | -27,9 % | M.PROTTI | 29/6/4/708 |
+| 7 | COMEDY CEN | 3,4 | 3,3 | 4,06 | -16,3 % | A.LEMAITRE | 10/61/23/23 |
+| 3 | JUST KEN | 4,4 | 4,2 | 4,91 | -10,3 % | S.PASQUIER | 20/46/678/1370 |
+| 4 | GOUYAR | 4,8 | 5 | 5,40 | -11,1 % | M.MARQUETTE | 51/15/3234/739 |
+| 1 | MAIAKOVSKA | 6,5 | 6,8 | 7,79 | -16,5 % | A.MADAMET | 12/9/18/12 |
+| 2 | PALM BEACH | 8,9 | 8,7 | 10,08 | -11,7 % | C.LECOEUVRE | 13/69/14/– |
+| 6 | SEVENSIX | 11 | 12 | 14,09 | -21,9 % | H.BOUTIN | 17/52/3260/431 |
+| 5 | EN CHANTANT | 15 | 16 | 20,80 | -27,9 % | M.PROTTI | 29/6/4/708 |
 
 ### 8. PRIX DE BAGNOLES DE L'ORNE
 
@@ -151,9 +151,9 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 | n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|:--|--:|
-| 1 | LUCHO | 1,3 | 1,63 | -20,5 % | H.BOUTIN | 17/1/3/6 |
-| 2 | STORM RUN | 7 | 9,18 | -23,8 % | A.MADAMET | 12/82/1235/21 |
-| 4 | SAN ROQUE | 11 | 13,98 | -21,3 % | C.LECOEUVRE | 13/25/83/41 |
-| 5 | SPEEDBOAT | 12 | 15,49 | -22,5 % | E.VERHESTRAETEN | 50/13/1874/– |
-| 3 | FOREIGN MINISTER | 18 | 26,71 | -32,6 % | M.PROTTI | 29/6/303/425 |
-| 6 | NYMPHENBURG | 21 | 29,74 | -29,4 % | J.CLAUDIC | 40/86/121/42 |
+| 2 | STORM RUN | 2,6 | 3,12 | -16,6 % | A.MADAMET | 12/82/1235/21 |
+| 1 | LUCHO | 2,7 | 3,05 | -11,4 % | H.BOUTIN | 17/1/3/6 |
+| 5 | SPEEDBOAT | 6,4 | 6,95 | -7,9 % | E.VERHESTRAETEN | 50/13/1874/– |
+| 3 | FOREIGN MINISTER | 10 | 13,60 | -26,5 % | M.PROTTI | 29/6/303/425 |
+| 4 | SAN ROQUE | 10 | 12,15 | -17,7 % | C.LECOEUVRE | 13/25/83/41 |
+| 6 | NYMPHENBURG | 20 | 27,34 | -26,8 % | J.CLAUDIC | 40/86/121/42 |
