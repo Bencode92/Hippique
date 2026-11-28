@@ -1,6 +1,6 @@
 # DEAUVILLE — 28/11/2026
 
-8 courses. 2 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
+8 courses. 3 ont un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -95,25 +95,25 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DU PONT DE NORMANDIE
 
-*17h53 · plat · 1900 m · 15 partants · cotes de l'extraction*
+*17h53 · plat · 1900 m · 15 partants · cotes à T−19:32*
 
-| n° | cheval | cote | juste | espérance | jockey | jk/ent/él/pr |
-|--:|:--|--:|--:|--:|:--|--:|
-| 15 | ELUSIVE WAY | 5,2 | 6,62 | -21,5 % | A.MADAMET | 12/62/15/25 |
-| 13 | TOCOA | 6,3 | 7,24 | -12,9 % | C.LECOEUVRE | 13/66/200/2302 |
-| 2 | CRACKON | 10 | 13,26 | -24,6 % | G.MEURY | 73/25/1471/1018 |
-| 4 | IL MAGISTERO | 12 | 15,35 | -21,8 % | L.PLOMMEE | 36/79/166/1316 |
-| 7 | VELOURS | 12 | 16,45 | -27,1 % | H.JOURNIAC | 41/9/10/1267 |
-| 12 | THE TINKER | 12 | 15,35 | -21,8 % | S.PASQUIER | 20/84/1132/– |
-| 16 | GARIGA | 12 | 15,35 | -21,8 % | F.VALLE SKAR | 32/85/86/1839 |
-| 11 | MARASI DRIVE | 14 | 16,81 | -16,7 % | A.LEMAITRE | 10/50/404/1317 |
-| 14 | PARVAGE | 14 | 18,40 | -23,9 % | D.PROVOST | 33/9/76/1037 |
-| 8 | NEPETA | 15 | 19,95 | -24,8 % | H.LEBOUC | 22/47/1080/2821 |
-| 10 | STELA TREZY | 20 | 25,43 | -21,3 % | L.BRECHET | 58/67/132/59 |
-| 6 | ARANYANI | 25 | 32,84 | -23,9 % | H.BOUTIN | 17/87/3282/615 |
-| 9 | OCALA | 33 | 49,38 | -33,2 % | J.CLAUDIC | 40/584/179/185 |
-| 3 | NAGIKHTAAL | 36 | 49,53 | -27,3 % | X.BERGERON | 71/212/901/1386 |
-| 1 | PERSIAN IMP CEN | 43 | 60,27 | -28,7 % | R.MANGIONE | 86/739/23/3967 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 13 | TOCOA | 5,2 | 6,3 | 5,80 | -10,4 % | C.LECOEUVRE | 13/66/200/2302 |
+| 15 | ELUSIVE WAY | 5,5 | 5,2 | 6,66 | -17,5 % | A.MADAMET | 12/62/15/25 |
+| 2 | CRACKON | 11 | 10 | 15,00 | -26,7 % | G.MEURY | 73/25/1471/1018 |
+| 16 | GARIGA | 11 | 12 | 14,00 | -21,4 % | F.VALLE SKAR | 32/85/86/1839 |
+| 7 | VELOURS | 12 | 12 | 16,62 | -27,8 % | H.JOURNIAC | 41/9/10/1267 |
+| 12 | THE TINKER | 12 | 12 | 15,51 | -22,6 % | S.PASQUIER | 20/84/1132/– |
+| 4 | IL MAGISTERO | 14 | 12 | 18,59 | -24,7 % | L.PLOMMEE | 36/79/166/1316 |
+| 8 | NEPETA | 14 | 15 | 18,59 | -24,7 % | H.LEBOUC | 22/47/1080/2821 |
+| 11 | MARASI DRIVE | 15 | 14 | 18,40 | -18,5 % | A.LEMAITRE | 10/50/404/1317 |
+| 14 | PARVAGE | 15 | 14 | 20,16 | -25,6 % | D.PROVOST | 33/9/76/1037 |
+| 10 | STELA TREZY | 19 | 20 | 24,21 | -21,5 % | L.BRECHET | 58/67/132/59 |
+| 6 | ARANYANI | 23 | 25 | 30,16 | -23,7 % | H.BOUTIN | 17/87/3282/615 |
+| 9 | OCALA | 32 | 33 | 48,17 | -33,6 % | J.CLAUDIC | 40/584/179/185 |
+| 1 | PERSIAN IMP CEN | 40 | 43 | 56,21 | -28,8 % | R.MANGIONE | 86/739/23/3967 |
+| 3 | NAGIKHTAAL | 41 | 36 | 57,75 | -29,0 % | X.BERGERON | 71/212/901/1386 |
 
 ### 6. PRIX DE LA FORET D'ANDAIGNE
 
