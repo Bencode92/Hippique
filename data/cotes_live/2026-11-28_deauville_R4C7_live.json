@@ -4,71 +4,71 @@
   "reunion": 4,
   "heure_depart": 1795888920000,
   "distance": 1300,
-  "scraped_at": "2026-11-28T18:40:08.762773+01:00",
-  "minutes_avant_depart": 22,
+  "scraped_at": "2026-11-28T18:44:47.987793+01:00",
+  "minutes_avant_depart": 17,
   "participants": [
     {
       "numPmu": 1,
       "nom": "MAIAKOVSKA",
-      "cote_live": 6.1,
+      "cote_live": 6.2,
       "cote_reference": 4.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795887587000
+      "timestamp_cote": 1795887873000
     },
     {
       "numPmu": 2,
       "nom": "PALM BEACH",
-      "cote_live": 9.3,
+      "cote_live": 10.0,
       "cote_reference": 12.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795887587000
+      "timestamp_cote": 1795887873000
     },
     {
       "numPmu": 3,
       "nom": "JUST KEN",
-      "cote_live": 4.7,
+      "cote_live": 3.9,
       "cote_reference": 3.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795887587000
+      "timestamp_cote": 1795887873000
     },
     {
       "numPmu": 4,
       "nom": "GOUYAR",
-      "cote_live": 4.3,
+      "cote_live": 4.4,
       "cote_reference": 5.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795887587000
+      "timestamp_cote": 1795887873000
     },
     {
       "numPmu": 5,
       "nom": "EN CHANTANT",
-      "cote_live": 14.0,
+      "cote_live": 17.0,
       "cote_reference": 10.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795887587000
+      "timestamp_cote": 1795887873000
     },
     {
       "numPmu": 6,
       "nom": "SEVENSIX",
-      "cote_live": 10.0,
+      "cote_live": 13.0,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795887587000
+      "timestamp_cote": 1795887873000
     },
     {
       "numPmu": 7,
       "nom": "COMEDY CEN",
-      "cote_live": 3.9,
+      "cote_live": 3.8,
       "cote_reference": 5.3,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1795887587000
+      "timestamp_cote": 1795887873000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -110,6 +110,19 @@
         "5": 14.0,
         "6": 10.0,
         "7": 3.9
+      }
+    },
+    {
+      "scraped_at": "2026-11-28T18:44:47.987793+01:00",
+      "minutes_avant_depart": 17.203555833333333,
+      "cotes": {
+        "1": 6.2,
+        "2": 10.0,
+        "3": 3.9,
+        "4": 4.4,
+        "5": 17.0,
+        "6": 13.0,
+        "7": 3.8
       }
     }
   ]
