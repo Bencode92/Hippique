@@ -95,25 +95,25 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 5. PRIX DU PONT DE NORMANDIE
 
-*17h53 · plat · 1900 m · 15 partants · cotes à T−14:52*
+*17h53 · plat · 1900 m · 15 partants · cotes à T−10:52*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 13 | TOCOA | 5,3 | 6,3 | 5,88 | -9,9 % | C.LECOEUVRE | 13/66/200/2302 |
-| 15 | ELUSIVE WAY | 5,6 | 5,2 | 6,75 | -17,0 % | A.MADAMET | 12/62/15/25 |
-| 2 | CRACKON | 10 | 10 | 13,29 | -24,7 % | G.MEURY | 73/25/1471/1018 |
-| 16 | GARIGA | 11 | 12 | 13,89 | -20,8 % | F.VALLE SKAR | 32/85/86/1839 |
-| 12 | THE TINKER | 12 | 12 | 15,38 | -22,0 % | S.PASQUIER | 20/84/1132/– |
-| 7 | VELOURS | 13 | 12 | 18,12 | -28,2 % | H.JOURNIAC | 41/9/10/1267 |
-| 4 | IL MAGISTERO | 14 | 12 | 18,44 | -24,1 % | L.PLOMMEE | 36/79/166/1316 |
-| 8 | NEPETA | 14 | 15 | 18,44 | -24,1 % | H.LEBOUC | 22/47/1080/2821 |
-| 14 | PARVAGE | 15 | 14 | 19,99 | -25,0 % | D.PROVOST | 33/9/76/1037 |
-| 11 | MARASI DRIVE | 16 | 14 | 18,79 | -14,9 % | A.LEMAITRE | 10/50/404/1317 |
-| 10 | STELA TREZY | 20 | 20 | 25,48 | -21,5 % | L.BRECHET | 58/67/132/59 |
-| 6 | ARANYANI | 25 | 25 | 32,91 | -24,0 % | H.BOUTIN | 17/87/3282/615 |
-| 9 | OCALA | 26 | 33 | 34,44 | -24,5 % | J.CLAUDIC | 40/584/179/185 |
-| 1 | PERSIAN IMP CEN | 37 | 43 | 51,16 | -27,7 % | R.MANGIONE | 86/739/23/3967 |
-| 3 | NAGIKHTAAL | 47 | 36 | 63,46 | -25,9 % | X.BERGERON | 71/212/901/1386 |
+| 13 | TOCOA | 4,9 | 6,3 | 5,34 | -8,3 % | C.LECOEUVRE | 13/66/200/2302 |
+| 15 | ELUSIVE WAY | 5,4 | 5,2 | 6,41 | -15,8 % | A.MADAMET | 12/62/15/25 |
+| 2 | CRACKON | 8,5 | 10 | 10,86 | -21,7 % | G.MEURY | 73/25/1471/1018 |
+| 12 | THE TINKER | 12 | 12 | 15,23 | -21,2 % | S.PASQUIER | 20/84/1132/– |
+| 16 | GARIGA | 12 | 12 | 15,23 | -21,2 % | F.VALLE SKAR | 32/85/86/1839 |
+| 14 | PARVAGE | 14 | 14 | 18,25 | -23,3 % | D.PROVOST | 33/9/76/1037 |
+| 7 | VELOURS | 15 | 12 | 21,23 | -29,3 % | H.JOURNIAC | 41/9/10/1267 |
+| 8 | NEPETA | 17 | 15 | 22,91 | -25,8 % | H.LEBOUC | 22/47/1080/2821 |
+| 4 | IL MAGISTERO | 18 | 12 | 23,38 | -23,0 % | L.PLOMMEE | 36/79/166/1316 |
+| 11 | MARASI DRIVE | 18 | 14 | 21,33 | -15,6 % | A.LEMAITRE | 10/50/404/1317 |
+| 10 | STELA TREZY | 20 | 20 | 25,23 | -20,7 % | L.BRECHET | 58/67/132/59 |
+| 9 | OCALA | 25 | 33 | 32,62 | -23,4 % | J.CLAUDIC | 40/584/179/185 |
+| 6 | ARANYANI | 27 | 25 | 35,58 | -24,1 % | H.BOUTIN | 17/87/3282/615 |
+| 1 | PERSIAN IMP CEN | 37 | 43 | 50,68 | -27,0 % | R.MANGIONE | 86/739/23/3967 |
+| 3 | NAGIKHTAAL | 46 | 36 | 61,43 | -25,1 % | X.BERGERON | 71/212/901/1386 |
 
 ### 6. PRIX DE LA FORET D'ANDAIGNE
 
