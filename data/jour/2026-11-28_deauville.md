@@ -33,19 +33,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 2. PRIX THE WONDER
 
-*16h07 · plat · 1900 m · 9 partants · cotes à T−9:36*
+*16h07 · plat · 1900 m · 9 partants · cotes à T−4:56*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | SPIRITUELLE AGUA | 1,9 | 7 | 2,19 | -13,1 % | A.MADAMET | 12/4/57/16 |
-| 3 | SHUWAIB | 3,9 | 7 | 4,61 | -15,4 % | H.BOUTIN | 17/1/–/174 |
-| 5 | WISH ME LUCK | 9 | 1,2 | 11,26 | -20,1 % | C.LECOEUVRE | 13/42/96/3334 |
-| 1 | OUEST DONC DENUO | 9,4 | 14 | 11,85 | -20,7 % | H.LEBOUC | 22/47/1441/3284 |
-| 6 | GOLEM | 16 | – | 22,15 | -27,8 % | L.ROUSSEL | 18/28/1006/108 |
-| 8 | IT'S ONLY LOVE | 31 | – | 47,42 | -34,6 % | M.FAVRIAUX | 54/178/178/608 |
-| 4 | JAMINUS | 39 | – | 65,91 | -40,8 % | J.CLAUDIC | 40/86/3742/1737 |
-| 7 | OSMOSE PRECIEUSE | 44 | – | 70,01 | -37,2 % | F.VALLE SKAR | 32/212/263/227 |
-| 9 | STRONG CROWN | 44 | – | 70,01 | -37,2 % | C.PACAUT | 44/157/571/135 |
+| 2 | SPIRITUELLE AGUA | 2,4 | 7 | 2,64 | -9,1 % | A.MADAMET | 12/4/57/16 |
+| 3 | SHUWAIB | 3,6 | 7 | 4,18 | -13,9 % | H.BOUTIN | 17/1/–/174 |
+| 5 | WISH ME LUCK | 7,5 | 1,2 | 8,98 | -16,4 % | C.LECOEUVRE | 13/42/96/3334 |
+| 1 | OUEST DONC DENUO | 8,1 | 14 | 9,82 | -17,5 % | H.LEBOUC | 22/47/1441/3284 |
+| 6 | GOLEM | 11 | – | 14,07 | -21,8 % | L.ROUSSEL | 18/28/1006/108 |
+| 8 | IT'S ONLY LOVE | 24 | – | 34,99 | -31,4 % | M.FAVRIAUX | 54/178/178/608 |
+| 4 | JAMINUS | 39 | – | 65,10 | -40,1 % | J.CLAUDIC | 40/86/3742/1737 |
+| 9 | STRONG CROWN | 43 | – | 67,43 | -36,2 % | C.PACAUT | 44/157/571/135 |
+| 7 | OSMOSE PRECIEUSE | 49 | – | 77,79 | -37,0 % | F.VALLE SKAR | 32/212/263/227 |
 
 ### 3. PRIX DU PONT DE TANCARVILLE
 
