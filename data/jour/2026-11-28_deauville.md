@@ -117,19 +117,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 6. PRIX DE LA FORET D'ANDAIGNE
 
-*18h27 · plat · 1300 m · 9 partants · cotes à T−12:12*
+*18h27 · plat · 1300 m · 9 partants · cotes à T−8:12*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 1 | KALLISTE | 3,9 | 2,8 | 4,41 | -11,6 % | A.MADAMET | 12/3/3/6 |
-| 3 | RISCAL | 4,6 | 11 | 4,74 | -3,0 % | C.LECOEUVRE | 13/19/27/244 |
-| 8 | VALLARIA | 6,4 | 6,4 | 7,12 | -10,1 % | A.LEMAITRE | 10/54/3206/169 |
-| 7 | PETITE VAGABONDE | 6,5 | 6,7 | 7,42 | -12,4 % | P.BAZIRE | 57/107/1143/115 |
-| 5 | WONDER BAILEYS | 8 | 7,6 | 8,83 | -9,4 % | E.VERHESTRAETEN | 50/13/131/1162 |
-| 2 | HISTORI CHOPE | 10 | 8,4 | 12,79 | -21,8 % | T.BREBION | 84/45/6/397 |
-| 4 | YOU OR ME | 12 | 11 | 15,86 | -24,4 % | M.MARQUETTE | 51/15/57/87 |
-| 9 | OLYMPIC FILLY | 31 | 35 | 42,40 | -26,9 % | L.ROUSSEL | 18/426/1731/1459 |
-| 6 | FINACRA FAL | 45 | 37 | 64,15 | -29,8 % | M.PROTTI | 29/243/31/35 |
+| 1 | KALLISTE | 4,4 | 2,8 | 5,19 | -15,3 % | A.MADAMET | 12/3/3/6 |
+| 3 | RISCAL | 4,7 | 11 | 4,86 | -3,2 % | C.LECOEUVRE | 13/19/27/244 |
+| 8 | VALLARIA | 5,2 | 6,4 | 5,64 | -7,7 % | A.LEMAITRE | 10/54/3206/169 |
+| 7 | PETITE VAGABONDE | 6,2 | 6,7 | 7,03 | -11,8 % | P.BAZIRE | 57/107/1143/115 |
+| 5 | WONDER BAILEYS | 8,1 | 7,6 | 8,97 | -9,7 % | E.VERHESTRAETEN | 50/13/131/1162 |
+| 2 | HISTORI CHOPE | 9,9 | 8,4 | 12,65 | -21,8 % | T.BREBION | 84/45/6/397 |
+| 4 | YOU OR ME | 13 | 11 | 17,45 | -25,5 % | M.MARQUETTE | 51/15/57/87 |
+| 9 | OLYMPIC FILLY | 32 | 35 | 43,98 | -27,2 % | L.ROUSSEL | 18/426/1731/1459 |
+| 6 | FINACRA FAL | 47 | 37 | 73,94 | -36,4 % | M.PROTTI | 29/243/31/35 |
 
 ### 7. PRIX GREY DAWN
 
