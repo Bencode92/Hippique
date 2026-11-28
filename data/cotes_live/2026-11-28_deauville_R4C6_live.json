@@ -4,35 +4,35 @@
   "reunion": 4,
   "heure_depart": 1795886820000,
   "distance": 1300,
-  "scraped_at": "2026-11-28T18:10:09.298152+01:00",
-  "minutes_avant_depart": 17,
+  "scraped_at": "2026-11-28T18:14:48.369174+01:00",
+  "minutes_avant_depart": 12,
   "participants": [
     {
       "numPmu": 1,
       "nom": "KALLISTE",
-      "cote_live": 3.7,
+      "cote_live": 3.9,
       "cote_reference": 3.0,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1795885802000
+      "timestamp_cote": 1795886066000
     },
     {
       "numPmu": 2,
       "nom": "HISTORI CHOPE",
-      "cote_live": 9.7,
+      "cote_live": 10.0,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795885802000
+      "timestamp_cote": 1795886066000
     },
     {
       "numPmu": 3,
       "nom": "RISCAL",
-      "cote_live": 4.7,
+      "cote_live": 4.6,
       "cote_reference": 8.6,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795885802000
+      "timestamp_cote": 1795886066000
     },
     {
       "numPmu": 4,
@@ -41,43 +41,43 @@
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795885802000
+      "timestamp_cote": 1795886066000
     },
     {
       "numPmu": 5,
       "nom": "WONDER BAILEYS",
-      "cote_live": 7.7,
+      "cote_live": 8.0,
       "cote_reference": 8.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795885802000
+      "timestamp_cote": 1795886066000
     },
     {
       "numPmu": 6,
       "nom": "FINACRA FAL",
-      "cote_live": 49.0,
+      "cote_live": 45.0,
       "cote_reference": 37.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795885802000
+      "timestamp_cote": 1795886066000
     },
     {
       "numPmu": 7,
       "nom": "PETITE VAGABONDE",
-      "cote_live": 6.2,
+      "cote_live": 6.5,
       "cote_reference": 5.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795885802000
+      "timestamp_cote": 1795886066000
     },
     {
       "numPmu": 8,
       "nom": "VALLARIA",
-      "cote_live": 7.0,
+      "cote_live": 6.4,
       "cote_reference": 7.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795885802000
+      "timestamp_cote": 1795886066000
     },
     {
       "numPmu": 9,
@@ -86,7 +86,7 @@
       "cote_reference": 35.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795885802000
+      "timestamp_cote": 1795886066000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -148,6 +148,21 @@
         "6": 49.0,
         "7": 6.2,
         "8": 7.0,
+        "9": 31.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-28T18:14:48.369174+01:00",
+      "minutes_avant_depart": 12.203640166666666,
+      "cotes": {
+        "1": 3.9,
+        "2": 10.0,
+        "3": 4.6,
+        "4": 12.0,
+        "5": 8.0,
+        "6": 45.0,
+        "7": 6.5,
+        "8": 6.4,
         "9": 31.0
       }
     }
