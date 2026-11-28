@@ -4,89 +4,89 @@
   "reunion": 4,
   "heure_depart": 1795886820000,
   "distance": 1300,
-  "scraped_at": "2026-11-28T18:26:07.998790+01:00",
-  "minutes_avant_depart": 1,
+  "scraped_at": "2026-11-28T18:28:48.153354+01:00",
+  "minutes_avant_depart": -2,
   "participants": [
     {
       "numPmu": 1,
       "nom": "KALLISTE",
-      "cote_live": 4.2,
+      "cote_live": 6.1,
       "cote_reference": 3.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795886762000
+      "timestamp_cote": 1795886910000
     },
     {
       "numPmu": 2,
       "nom": "HISTORI CHOPE",
-      "cote_live": 11.0,
+      "cote_live": 15.0,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795886762000
+      "timestamp_cote": 1795886910000
     },
     {
       "numPmu": 3,
       "nom": "RISCAL",
-      "cote_live": 3.6,
+      "cote_live": 2.9,
       "cote_reference": 8.6,
       "tendance": "",
       "favoris": true,
-      "timestamp_cote": 1795886762000
+      "timestamp_cote": 1795886910000
     },
     {
       "numPmu": 4,
       "nom": "YOU OR ME",
-      "cote_live": 15.0,
+      "cote_live": 18.0,
       "cote_reference": 15.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795886762000
+      "timestamp_cote": 1795886910000
     },
     {
       "numPmu": 5,
       "nom": "WONDER BAILEYS",
-      "cote_live": 9.3,
+      "cote_live": 6.8,
       "cote_reference": 8.8,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795886762000
+      "timestamp_cote": 1795886910000
     },
     {
       "numPmu": 6,
       "nom": "FINACRA FAL",
-      "cote_live": 43.0,
+      "cote_live": 60.0,
       "cote_reference": 37.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795886762000
+      "timestamp_cote": 1795886910000
     },
     {
       "numPmu": 7,
       "nom": "PETITE VAGABONDE",
-      "cote_live": 6.4,
+      "cote_live": 6.7,
       "cote_reference": 5.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795886762000
+      "timestamp_cote": 1795886910000
     },
     {
       "numPmu": 8,
       "nom": "VALLARIA",
-      "cote_live": 6.3,
+      "cote_live": 5.2,
       "cote_reference": 7.1,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795886762000
+      "timestamp_cote": 1795886910000
     },
     {
       "numPmu": 9,
       "nom": "OLYMPIC FILLY",
-      "cote_live": 44.0,
+      "cote_live": 61.0,
       "cote_reference": 35.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795886762000
+      "timestamp_cote": 1795886910000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -299,6 +299,66 @@
         "7": 6.4,
         "8": 6.3,
         "9": 44.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-28T18:26:48.386520+01:00",
+      "minutes_avant_depart": 0.19917753333333332,
+      "cotes": {
+        "1": 4.9,
+        "2": 13.0,
+        "3": 3.1,
+        "4": 16.0,
+        "5": 8.7,
+        "6": 43.0,
+        "7": 6.1,
+        "8": 6.2,
+        "9": 51.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-28T18:27:27.973547+01:00",
+      "minutes_avant_depart": -0.46306291666666666,
+      "cotes": {
+        "1": 4.9,
+        "2": 14.0,
+        "3": 3.2,
+        "4": 18.0,
+        "5": 8.8,
+        "6": 49.0,
+        "7": 6.4,
+        "8": 5.1,
+        "9": 54.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-28T18:28:08.122438+01:00",
+      "minutes_avant_depart": -1.12973195,
+      "cotes": {
+        "1": 4.5,
+        "2": 16.0,
+        "3": 3.4,
+        "4": 18.0,
+        "5": 7.4,
+        "6": 55.0,
+        "7": 6.7,
+        "8": 5.2,
+        "9": 62.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-28T18:28:48.153354+01:00",
+      "minutes_avant_depart": -1.7964004333333332,
+      "cotes": {
+        "1": 6.1,
+        "2": 15.0,
+        "3": 2.9,
+        "4": 18.0,
+        "5": 6.8,
+        "6": 60.0,
+        "7": 6.7,
+        "8": 5.2,
+        "9": 61.0
       }
     }
   ]
