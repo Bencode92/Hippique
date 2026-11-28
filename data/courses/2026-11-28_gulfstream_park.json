@@ -1,7 +1,7 @@
 {
   "hippodrome": "GULFSTREAM PARK",
   "type_reunion": "Plat",
-  "date_extraction": "2026-11-28T16:16:16.035539",
+  "date_extraction": "2026-11-28T17:29:23.722482",
   "url_source": "https://online.turfinfo.api.pmu.fr/rest/client/61/programme/28112026/R8",
   "courses": [
     {
@@ -12,26 +12,6 @@
       "distance": "1600m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "FIB F.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: FROSTED et FAMILY MYTH (ARTIE SCHILLER)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261128/GPD/1/20261128-GPD-1-1.png",
-          "propriétaire": "D. J. STABLE, LLC (LEONARD GREEN",
-          "entraineur": "J F ORSENO",
-          "éleveurs": "",
-          "jockey": "M GUTIERREZ",
-          "poids": "54.5 kg",
-          "gains": "692500",
-          "musique": "3p4p6p",
-          "valeur": "54.5",
-          "equipement(s)": "",
-          "nb_courses": 3,
-          "nb_victoires": 0,
-          "nb_places": 2
-        },
         {
           "n°": "2",
           "cheval": "EIGHT ROSE'S F.PU. 2 a.",
@@ -51,9 +31,9 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 4.8,
+          "cote": 4.3,
           "cote_tendance": "",
-          "cote_reference": 3.1
+          "cote_reference": 3.0
         },
         {
           "n°": "3",
@@ -74,7 +54,7 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 7.7,
+          "cote": 5.6,
           "cote_tendance": "",
           "cote_reference": 6.7
         },
@@ -96,7 +76,9 @@
           "equipement(s)": "",
           "nb_courses": 6,
           "nb_victoires": 0,
-          "nb_places": 3
+          "nb_places": 3,
+          "cote": 22.0,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -117,7 +99,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 1.6,
+          "cote": 2.3,
           "cote_tendance": "",
           "cote_reference": 4.5
         },
@@ -140,7 +122,7 @@
           "nb_courses": 0,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 7.7,
+          "cote": 7.5,
           "cote_tendance": "",
           "cote_reference": 3.3
         },
@@ -183,7 +165,7 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 15.0,
+          "cote": 7.5,
           "cote_tendance": "",
           "cote_reference": 6.7
         },
@@ -208,7 +190,9 @@
           "nb_places": 0
         }
       ],
-      "typePiste": "HERBE",
+      "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -238,7 +222,7 @@
           "nb_courses": 14,
           "nb_victoires": 2,
           "nb_places": 11,
-          "cote": 3.3,
+          "cote": 3.1,
           "cote_tendance": "",
           "cote_reference": 3.6
         },
@@ -261,7 +245,7 @@
           "nb_courses": 12,
           "nb_victoires": 2,
           "nb_places": 5,
-          "cote": 4.5,
+          "cote": 5.0,
           "cote_tendance": "",
           "cote_reference": 4.1
         },
@@ -284,7 +268,7 @@
           "nb_courses": 23,
           "nb_victoires": 2,
           "nb_places": 15,
-          "cote": 23.0,
+          "cote": 15.0,
           "cote_tendance": ""
         },
         {
@@ -306,7 +290,7 @@
           "nb_courses": 19,
           "nb_victoires": 2,
           "nb_places": 14,
-          "cote": 23.0,
+          "cote": 10.0,
           "cote_tendance": "",
           "cote_reference": 21.0
         },
@@ -329,7 +313,7 @@
           "nb_courses": 25,
           "nb_victoires": 2,
           "nb_places": 16,
-          "cote": 5.2,
+          "cote": 6.9,
           "cote_tendance": "",
           "cote_reference": 4.8
         },
@@ -352,7 +336,7 @@
           "nb_courses": 11,
           "nb_victoires": 2,
           "nb_places": 6,
-          "cote": 5.8,
+          "cote": 5.2,
           "cote_tendance": "",
           "cote_reference": 5.4
         },
@@ -375,7 +359,7 @@
           "nb_courses": 11,
           "nb_victoires": 2,
           "nb_places": 4,
-          "cote": 7.8,
+          "cote": 10.0,
           "cote_tendance": "",
           "cote_reference": 7.2
         },
@@ -398,12 +382,14 @@
           "nb_courses": 10,
           "nb_victoires": 2,
           "nb_places": 6,
-          "cote": 23.0,
+          "cote": 31.0,
           "cote_tendance": "",
           "cote_reference": 21.0
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -432,7 +418,9 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 9.2,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -453,7 +441,7 @@
           "nb_courses": 2,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 4.3,
+          "cote": 5.7,
           "cote_tendance": "",
           "cote_reference": 3.5
         },
@@ -475,7 +463,9 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 18.0,
+          "cote_tendance": ""
         },
         {
           "n°": "4",
@@ -495,7 +485,9 @@
           "equipement(s)": "",
           "nb_courses": 1,
           "nb_victoires": 0,
-          "nb_places": 0
+          "nb_places": 0,
+          "cote": 18.0,
+          "cote_tendance": ""
         },
         {
           "n°": "5",
@@ -516,7 +508,7 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 3.9,
+          "cote": 5.2,
           "cote_tendance": "",
           "cote_reference": 3.1
         },
@@ -539,7 +531,7 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 2.2,
+          "cote": 2.5,
           "cote_tendance": "",
           "cote_reference": 2.7
         },
@@ -562,7 +554,7 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 3,
-          "cote": 6.9,
+          "cote": 9.2,
           "cote_tendance": "",
           "cote_reference": 11.0
         },
@@ -585,12 +577,14 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 13.0,
+          "cote": 18.0,
           "cote_tendance": "",
           "cote_reference": 11.0
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -619,7 +613,9 @@
           "equipement(s)": "",
           "nb_courses": 21,
           "nb_victoires": 1,
-          "nb_places": 12
+          "nb_places": 12,
+          "cote": 13.0,
+          "cote_tendance": ""
         },
         {
           "n°": "2",
@@ -640,7 +636,7 @@
           "nb_courses": 8,
           "nb_victoires": 1,
           "nb_places": 5,
-          "cote": 4.0,
+          "cote": 4.3,
           "cote_tendance": "",
           "cote_reference": 2.3
         },
@@ -663,7 +659,7 @@
           "nb_courses": 11,
           "nb_victoires": 1,
           "nb_places": 8,
-          "cote": 8.4,
+          "cote": 9.0,
           "cote_tendance": "",
           "cote_reference": 14.0
         },
@@ -686,7 +682,7 @@
           "nb_courses": 5,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 25.0,
+          "cote": 27.0,
           "cote_tendance": "",
           "cote_reference": 14.0
         },
@@ -709,7 +705,7 @@
           "nb_courses": 13,
           "nb_victoires": 1,
           "nb_places": 9,
-          "cote": 50.0,
+          "cote": 54.0,
           "cote_tendance": "",
           "cote_reference": 29.0
         },
@@ -732,7 +728,7 @@
           "nb_courses": 3,
           "nb_victoires": 1,
           "nb_places": 0,
-          "cote": 1.8,
+          "cote": 1.9,
           "cote_tendance": "",
           "cote_reference": 3.6
         },
@@ -755,7 +751,7 @@
           "nb_courses": 12,
           "nb_victoires": 1,
           "nb_places": 7,
-          "cote": 8.4,
+          "cote": 9.0,
           "cote_tendance": "",
           "cote_reference": 4.9
         },
@@ -778,12 +774,14 @@
           "nb_courses": 13,
           "nb_victoires": 1,
           "nb_places": 6,
-          "cote": 25.0,
+          "cote": 27.0,
           "cote_tendance": "",
           "cote_reference": 14.0
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -833,9 +831,9 @@
           "nb_courses": 4,
           "nb_victoires": 0,
           "nb_places": 1,
-          "cote": 1.4,
+          "cote": 1.3,
           "cote_tendance": "",
-          "cote_reference": 2.6
+          "cote_reference": 2.1
         },
         {
           "n°": "3",
@@ -856,9 +854,9 @@
           "nb_courses": 6,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 7.5,
+          "cote": 6.6,
           "cote_tendance": "",
-          "cote_reference": 4.6
+          "cote_reference": 3.7
         },
         {
           "n°": "4",
@@ -899,9 +897,9 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 0,
-          "cote": 6.4,
+          "cote": 5.7,
           "cote_tendance": "",
-          "cote_reference": 3.9
+          "cote_reference": 3.1
         },
         {
           "n°": "6",
@@ -922,32 +920,9 @@
           "nb_courses": 9,
           "nb_victoires": 0,
           "nb_places": 2,
-          "cote": 22.0,
+          "cote": 20.0,
           "cote_tendance": "",
-          "cote_reference": 13.0
-        },
-        {
-          "n°": "7",
-          "cheval": "HIT MUSIC F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MACLEAN'S MUSIC et INVITATION (GALILEO)",
-          "corde": "(Corde:07)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261128/GPD/5/20261128-GPD-5-7.png",
-          "propriétaire": "WESLEY HENRY, SR.",
-          "entraineur": "W HENRY, SR.",
-          "éleveurs": "",
-          "jockey": "F VASQUEZ, JR.",
-          "poids": "50 kg",
-          "gains": "278500",
-          "musique": "6p5p6p7p4p",
-          "valeur": "50.0",
-          "equipement(s)": "",
-          "nb_courses": 8,
-          "nb_victoires": 0,
-          "nb_places": 2,
-          "cote": 7.5,
-          "cote_tendance": "",
-          "cote_reference": 4.6
+          "cote_reference": 11.0
         },
         {
           "n°": "8",
@@ -968,29 +943,11 @@
           "nb_courses": 3,
           "nb_victoires": 0,
           "nb_places": 2
-        },
-        {
-          "n°": "9",
-          "cheval": "ADSILA F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: INDEPENDENCE HALL et PLATINUM SONG (MY GOLDEN SONG)",
-          "corde": "(Corde:09)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261128/GPD/5/20261128-GPD-5-9.png",
-          "propriétaire": "DANIEL C. HURTAK",
-          "entraineur": "D C HURTAK",
-          "éleveurs": "",
-          "jockey": "P LOPEZ",
-          "poids": "55.5 kg",
-          "gains": "2212500",
-          "musique": "5p(25)2p2p3p",
-          "valeur": "55.5",
-          "equipement(s)": "",
-          "nb_courses": 6,
-          "nb_victoires": 0,
-          "nb_places": 6
         }
       ],
-      "typePiste": "HERBE",
+      "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1020,29 +977,6 @@
           "nb_courses": 15,
           "nb_victoires": 3,
           "nb_places": 6
-        },
-        {
-          "n°": "2",
-          "cheval": "SWIRVIN H.PU. 6 a.",
-          "cheval_url": "",
-          "père_mère": "Par: GIRVIN et CARA SORELLA (BROTHER DEREK)",
-          "corde": "(Corde:02)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261128/GPD/6/20261128-GPD-6-2.png",
-          "propriétaire": "TURF EXPRESS RACING, INC. AND SH",
-          "entraineur": "S A JOSEPH, JR.",
-          "éleveurs": "",
-          "jockey": "R HUGHES",
-          "poids": "55.5 kg",
-          "gains": "24560000",
-          "musique": "8p1p1p(25)6p",
-          "valeur": "55.5",
-          "equipement(s)": "",
-          "nb_courses": 20,
-          "nb_victoires": 6,
-          "nb_places": 9,
-          "cote": 1.9,
-          "cote_tendance": "",
-          "cote_reference": 2.1
         },
         {
           "n°": "3",
@@ -1083,9 +1017,9 @@
           "nb_courses": 17,
           "nb_victoires": 5,
           "nb_places": 7,
-          "cote": 4.0,
+          "cote": 1.9,
           "cote_tendance": "",
-          "cote_reference": 3.7
+          "cote_reference": 1.9
         },
         {
           "n°": "5",
@@ -1106,35 +1040,14 @@
           "nb_courses": 46,
           "nb_victoires": 16,
           "nb_places": 23,
-          "cote": 3.4,
+          "cote": 1.6,
           "cote_tendance": "",
-          "cote_reference": 3.1
-        },
-        {
-          "n°": "6",
-          "cheval": "ROCKETEER M.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: CURLIN et THIRTEEN ARROWS (INDIAN CHARLIE)",
-          "corde": "(Corde:06)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261128/GPD/6/20261128-GPD-6-6.png",
-          "propriétaire": "AMATY RACING STABLES, INC. (DENN",
-          "entraineur": "J A GALLEGOS",
-          "éleveurs": "",
-          "jockey": "L REYES",
-          "poids": "55.5 kg",
-          "gains": "19886900",
-          "musique": "4p1p4p3p4p",
-          "valeur": "55.5",
-          "equipement(s)": "",
-          "nb_courses": 20,
-          "nb_victoires": 3,
-          "nb_places": 12,
-          "cote": 12.0,
-          "cote_tendance": "",
-          "cote_reference": 11.0
+          "cote_reference": 1.6
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1184,9 +1097,9 @@
           "nb_courses": 5,
           "nb_victoires": 3,
           "nb_places": 2,
-          "cote": 1.2,
+          "cote": 1.1,
           "cote_tendance": "",
-          "cote_reference": 1.2
+          "cote_reference": 1.1
         },
         {
           "n°": "3",
@@ -1209,26 +1122,6 @@
           "nb_places": 10
         },
         {
-          "n°": "4",
-          "cheval": "BRENNA F.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: CONNECT et TSCHUDI'S GIRL (KANTHAROS)",
-          "corde": "(Corde:04)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261128/GPD/7/20261128-GPD-7-4.png",
-          "propriétaire": "ROGER B. STERLING",
-          "entraineur": "S PULGARIN",
-          "éleveurs": "",
-          "jockey": "M A VASQUEZ",
-          "poids": "54.5 kg",
-          "gains": "7587200",
-          "musique": "1p5p2p5p5p",
-          "valeur": "54.5",
-          "equipement(s)": "",
-          "nb_courses": 22,
-          "nb_victoires": 4,
-          "nb_places": 15
-        },
-        {
           "n°": "5",
           "cheval": "FULLY ENTITLED F.PU. 5 a.",
           "cheval_url": "",
@@ -1247,32 +1140,9 @@
           "nb_courses": 19,
           "nb_victoires": 5,
           "nb_places": 11,
-          "cote": 8.2,
+          "cote": 6.5,
           "cote_tendance": "",
-          "cote_reference": 8.2
-        },
-        {
-          "n°": "6",
-          "cheval": "BODACIOUS QUEEN F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MUNNINGS et WITH DIGNITY (DECLARATION OF WAR)",
-          "corde": "(Corde:06)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261128/GPD/7/20261128-GPD-7-6.png",
-          "propriétaire": "BLACK HORSE BLOODSTOCK, LLC",
-          "entraineur": "T MOUBARAK",
-          "éleveurs": "",
-          "jockey": "D A HERRERA",
-          "poids": "53.5 kg",
-          "gains": "3316500",
-          "musique": "2p1p6p5p3p",
-          "valeur": "53.5",
-          "equipement(s)": "",
-          "nb_courses": 10,
-          "nb_victoires": 1,
-          "nb_places": 6,
-          "cote": 4.1,
-          "cote_tendance": "",
-          "cote_reference": 4.1
+          "cote_reference": 6.5
         },
         {
           "n°": "7",
@@ -1316,6 +1186,8 @@
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1345,32 +1217,9 @@
           "nb_courses": 2,
           "nb_victoires": 1,
           "nb_places": 1,
-          "cote": 10.0,
+          "cote": 7.9,
           "cote_tendance": "",
-          "cote_reference": 6.0
-        },
-        {
-          "n°": "2",
-          "cheval": "EARLY SPARK F.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: EARLY VOTING et DUNGEON DRAGON (DIALED IN)",
-          "corde": "(Corde:02)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261128/GPD/8/20261128-GPD-8-2.png",
-          "propriétaire": "M AND M RACING STABLE LLC AND RI",
-          "entraineur": "A DE LA CERDA",
-          "éleveurs": "",
-          "jockey": "D A HERRERA",
-          "poids": "54.5 kg",
-          "gains": "5570000",
-          "musique": "2p2p1p4p3p",
-          "valeur": "54.5",
-          "equipement(s)": "",
-          "nb_courses": 5,
-          "nb_victoires": 1,
-          "nb_places": 4,
-          "cote": 9.5,
-          "cote_tendance": "",
-          "cote_reference": 5.5
+          "cote_reference": 3.5
         },
         {
           "n°": "3",
@@ -1411,32 +1260,9 @@
           "nb_courses": 4,
           "nb_victoires": 2,
           "nb_places": 1,
-          "cote": 20.0,
+          "cote": 15.0,
           "cote_tendance": "",
-          "cote_reference": 12.0
-        },
-        {
-          "n°": "5",
-          "cheval": "GIRVY GIRL F.PU. 2 a.",
-          "cheval_url": "",
-          "père_mère": "Par: GIRVIN et COLORFUL CURLS (CURLIN)",
-          "corde": "(Corde:05)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261128/GPD/8/20261128-GPD-8-5.png",
-          "propriétaire": "JAMES F. SCHURMAN, PAUL BRAVERMA",
-          "entraineur": "S A JOSEPH, JR.",
-          "éleveurs": "",
-          "jockey": "R HUGHES",
-          "poids": "54.5 kg",
-          "gains": "2850000",
-          "musique": "6p6p1p",
-          "valeur": "54.5",
-          "equipement(s)": "",
-          "nb_courses": 3,
-          "nb_victoires": 1,
-          "nb_places": 0,
-          "cote": 5.9,
-          "cote_tendance": "",
-          "cote_reference": 3.4
+          "cote_reference": 7.0
         },
         {
           "n°": "6",
@@ -1457,9 +1283,9 @@
           "nb_courses": 6,
           "nb_victoires": 2,
           "nb_places": 1,
-          "cote": 5.2,
+          "cote": 3.9,
           "cote_tendance": "",
-          "cote_reference": 3.0
+          "cote_reference": 1.7
         },
         {
           "n°": "7",
@@ -1480,9 +1306,9 @@
           "nb_courses": 3,
           "nb_victoires": 2,
           "nb_places": 1,
-          "cote": 20.0,
+          "cote": 15.0,
           "cote_tendance": "",
-          "cote_reference": 12.0
+          "cote_reference": 7.0
         },
         {
           "n°": "8",
@@ -1503,11 +1329,13 @@
           "nb_courses": 3,
           "nb_victoires": 1,
           "nb_places": 2,
-          "cote": 2.0,
+          "cote": 1.5,
           "cote_tendance": ""
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1537,9 +1365,9 @@
           "nb_courses": 10,
           "nb_victoires": 1,
           "nb_places": 9,
-          "cote": 23.0,
+          "cote": 11.0,
           "cote_tendance": "",
-          "cote_reference": 14.0
+          "cote_reference": 10.0
         },
         {
           "n°": "2",
@@ -1560,9 +1388,9 @@
           "nb_courses": 17,
           "nb_victoires": 2,
           "nb_places": 11,
-          "cote": 4.5,
+          "cote": 2.2,
           "cote_tendance": "",
-          "cote_reference": 2.8
+          "cote_reference": 2.0
         },
         {
           "n°": "3",
@@ -1583,9 +1411,9 @@
           "nb_courses": 26,
           "nb_victoires": 3,
           "nb_places": 13,
-          "cote": 7.8,
+          "cote": 3.8,
           "cote_tendance": "",
-          "cote_reference": 4.9
+          "cote_reference": 3.5
         },
         {
           "n°": "4",
@@ -1608,49 +1436,6 @@
           "nb_places": 4
         },
         {
-          "n°": "5",
-          "cheval": "STRIKING FINALE F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: HARD SPUN et SOUPER STRIKING (BRILLIANT SPEED)",
-          "corde": "(Corde:05)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261128/GPD/9/20261128-GPD-9-5.png",
-          "propriétaire": "DAUGHERTY RACING LLC AND KELLY R",
-          "entraineur": "N RAMSEY",
-          "éleveurs": "",
-          "jockey": "J E MORELOS",
-          "poids": "54.5 kg",
-          "gains": "15314000",
-          "musique": "6p1p1p2p1p",
-          "valeur": "54.5",
-          "equipement(s)": "",
-          "nb_courses": 13,
-          "nb_victoires": 3,
-          "nb_places": 7,
-          "cote": 2.2,
-          "cote_tendance": "",
-          "cote_reference": 29.0
-        },
-        {
-          "n°": "6",
-          "cheval": "LAILA BELLA GIRL F.PU. 5 a.",
-          "cheval_url": "",
-          "père_mère": "Par: GIRVIN et LIBBY KNOWS (MARK VALESKI)",
-          "corde": "(Corde:06)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261128/GPD/9/20261128-GPD-9-6.png",
-          "propriétaire": "CHAMPION EQUINE, LLC (MICHAEL SU",
-          "entraineur": "J D BRADDY",
-          "éleveurs": "",
-          "jockey": "M MENESES",
-          "poids": "55.5 kg",
-          "gains": "14353500",
-          "musique": "4p4p2p4p1p",
-          "valeur": "55.5",
-          "equipement(s)": "",
-          "nb_courses": 20,
-          "nb_victoires": 2,
-          "nb_places": 12
-        },
-        {
           "n°": "7",
           "cheval": "LA CANTERA F.PU. 4 a.",
           "cheval_url": "",
@@ -1669,32 +1454,9 @@
           "nb_courses": 22,
           "nb_victoires": 4,
           "nb_places": 13,
-          "cote": 7.8,
+          "cote": 3.8,
           "cote_tendance": "",
-          "cote_reference": 4.9
-        },
-        {
-          "n°": "8",
-          "cheval": "LOVE AND GRACE F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: INTO MISCHIEF et ZOFELLE (ZOFFANY)",
-          "corde": "(Corde:08)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261128/GPD/9/20261128-GPD-9-8.png",
-          "propriétaire": "HEIDER FAMILY RACING",
-          "entraineur": "B P WALSH",
-          "éleveurs": "",
-          "jockey": "P LOPEZ",
-          "poids": "54.5 kg",
-          "gains": "2687500",
-          "musique": "8p(25)1p6p",
-          "valeur": "54.5",
-          "equipement(s)": "",
-          "nb_courses": 3,
-          "nb_victoires": 1,
-          "nb_places": 0,
-          "cote": 5.8,
-          "cote_tendance": "",
-          "cote_reference": 3.6
+          "cote_reference": 3.5
         },
         {
           "n°": "9",
@@ -1706,7 +1468,7 @@
           "propriétaire": "DONA LICHA STABLES LLC (OSCAR PE",
           "entraineur": "V BARBOZA, JR.",
           "éleveurs": "",
-          "jockey": "M GUTIERREZ",
+          "jockey": "P LOPEZ",
           "poids": "55.5 kg",
           "gains": "919000",
           "musique": "6p0p8p4p(25)",
@@ -1714,7 +1476,9 @@
           "equipement(s)": "",
           "nb_courses": 14,
           "nb_victoires": 3,
-          "nb_places": 5
+          "nb_places": 5,
+          "cote": 11.0,
+          "cote_tendance": ""
         },
         {
           "n°": "10",
@@ -1757,7 +1521,9 @@
           "nb_places": 2
         }
       ],
-      "typePiste": "HERBE",
+      "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1945,6 +1711,8 @@
         }
       ],
       "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     },
     {
@@ -1955,49 +1723,6 @@
       "distance": "1700m",
       "url": "",
       "participants": [
-        {
-          "n°": "1",
-          "cheval": "LADY RIVER LILY F.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: LORD NELSON et MOSCOW RIVER (HARD SPUN)",
-          "corde": "(Corde:01)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261128/GPD/11/20261128-GPD-11-1.png",
-          "propriétaire": "DOUGLAS J. SEYLER",
-          "entraineur": "D J SEYLER",
-          "éleveurs": "",
-          "jockey": "S BRIDGMOHAN",
-          "poids": "56.5 kg",
-          "gains": "7986100",
-          "musique": "8p5p7p7p0p",
-          "valeur": "56.5",
-          "equipement(s)": "",
-          "nb_courses": 27,
-          "nb_victoires": 2,
-          "nb_places": 8
-        },
-        {
-          "n°": "2",
-          "cheval": "SUNFISH F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MIDSHIPMAN et NEVERGOINBACKAGAIN (EXAGGERATOR)",
-          "corde": "(Corde:02)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261128/GPD/11/20261128-GPD-11-2.png",
-          "propriétaire": "DAVID S. ROMANIK",
-          "entraineur": "M LERMAN",
-          "éleveurs": "",
-          "jockey": "P LOPEZ",
-          "poids": "55.5 kg",
-          "gains": "4304000",
-          "musique": "2p1p8p2p4p",
-          "valeur": "55.5",
-          "equipement(s)": "",
-          "nb_courses": 6,
-          "nb_victoires": 1,
-          "nb_places": 3,
-          "cote": 3.2,
-          "cote_tendance": "",
-          "cote_reference": 2.6
-        },
         {
           "n°": "3",
           "cheval": "MORE APPLAUSE F.PU. 3 a.",
@@ -2017,7 +1742,7 @@
           "nb_courses": 9,
           "nb_victoires": 1,
           "nb_places": 5,
-          "cote": 5.1,
+          "cote": 3.0,
           "cote_tendance": ""
         },
         {
@@ -2039,32 +1764,9 @@
           "nb_courses": 8,
           "nb_victoires": 1,
           "nb_places": 3,
-          "cote": 10.0,
+          "cote": 6.1,
           "cote_tendance": "",
-          "cote_reference": 8.5
-        },
-        {
-          "n°": "5",
-          "cheval": "NEW LIFE F.PU. 3 a.",
-          "cheval_url": "",
-          "père_mère": "Par: AUTHENTIC et POOF TOO (DISTORTED HUMOR)",
-          "corde": "(Corde:05)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261128/GPD/11/20261128-GPD-11-5.png",
-          "propriétaire": "LEAN ENTERTAINMENT, LLC (LEANDRA",
-          "entraineur": "V BARBOZA, JR.",
-          "éleveurs": "",
-          "jockey": "L REYES",
-          "poids": "55.5 kg",
-          "gains": "8725000",
-          "musique": "2p2p2p1p1p",
-          "valeur": "55.5",
-          "equipement(s)": "",
-          "nb_courses": 10,
-          "nb_victoires": 3,
-          "nb_places": 6,
-          "cote": 6.8,
-          "cote_tendance": "",
-          "cote_reference": 5.6
+          "cote_reference": 4.4
         },
         {
           "n°": "6",
@@ -2085,9 +1787,9 @@
           "nb_courses": 7,
           "nb_victoires": 1,
           "nb_places": 6,
-          "cote": 3.4,
+          "cote": 2.0,
           "cote_tendance": "",
-          "cote_reference": 2.8
+          "cote_reference": 1.4
         },
         {
           "n°": "7",
@@ -2108,9 +1810,9 @@
           "nb_courses": 16,
           "nb_victoires": 3,
           "nb_places": 9,
-          "cote": 10.0,
+          "cote": 6.1,
           "cote_tendance": "",
-          "cote_reference": 8.5
+          "cote_reference": 4.4
         },
         {
           "n°": "8",
@@ -2131,29 +1833,11 @@
           "nb_courses": 4,
           "nb_victoires": 1,
           "nb_places": 1
-        },
-        {
-          "n°": "9",
-          "cheval": "OLIVIA VALENTINA F.PU. 4 a.",
-          "cheval_url": "",
-          "père_mère": "Par: MALIBU MOON et TIAMARIA (HARLAN'S HOLIDAY)",
-          "corde": "(Corde:09)",
-          "couleurs": "https://assets.racingdata.pmu.fr/silks/20261128/GPD/11/20261128-GPD-11-9.png",
-          "propriétaire": "REVERON RACING, INC. (ROBERT A.",
-          "entraineur": "C L PEREZ",
-          "éleveurs": "",
-          "jockey": "J TORREALBA",
-          "poids": "56.5 kg",
-          "gains": "7041400",
-          "musique": "7p5p4p3p2p",
-          "valeur": "56.5",
-          "equipement(s)": "",
-          "nb_courses": 14,
-          "nb_victoires": 1,
-          "nb_places": 9
         }
       ],
-      "typePiste": "HERBE",
+      "typePiste": "GAZON",
+      "terrain": "PSF RAPIDE",
+      "penetrometre": "",
       "cordeCourse": "CORDE_GAUCHE"
     }
   ]
