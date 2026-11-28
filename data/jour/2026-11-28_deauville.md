@@ -33,19 +33,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 2. PRIX THE WONDER
 
-*16h07 · plat · 1900 m · 9 partants · cotes à T−2:17*
+*16h07 · plat · 1900 m · 9 partants · cotes à T−0:17*
 
 | n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
 |--:|:--|--:|--:|--:|--:|:--|--:|
-| 2 | SPIRITUELLE AGUA | 2,8 | 7 | 3,53 | -20,7 % | A.MADAMET | 12/4/57/16 |
-| 3 | SHUWAIB | 2,9 | 7 | 3,32 | -12,8 % | H.BOUTIN | 17/1/–/174 |
-| 5 | WISH ME LUCK | 6,2 | 1,2 | 7,14 | -13,2 % | C.LECOEUVRE | 13/42/96/3334 |
-| 1 | OUEST DONC DENUO | 9,4 | 14 | 11,60 | -18,9 % | H.LEBOUC | 22/47/1441/3284 |
-| 6 | GOLEM | 13 | – | 16,99 | -23,5 % | L.ROUSSEL | 18/28/1006/108 |
-| 8 | IT'S ONLY LOVE | 26 | – | 38,04 | -31,6 % | M.FAVRIAUX | 54/178/178/608 |
-| 9 | STRONG CROWN | 42 | – | 65,19 | -35,6 % | C.PACAUT | 44/157/571/135 |
-| 4 | JAMINUS | 49 | – | 83,02 | -41,0 % | J.CLAUDIC | 40/86/3742/1737 |
-| 7 | OSMOSE PRECIEUSE | 64 | – | 102,86 | -37,8 % | F.VALLE SKAR | 32/212/263/227 |
+| 3 | SHUWAIB | 2,1 | 7 | 2,34 | -10,1 % | H.BOUTIN | 17/1/–/174 |
+| 2 | SPIRITUELLE AGUA | 4,3 | 7 | 5,03 | -14,4 % | A.MADAMET | 12/4/57/16 |
+| 5 | WISH ME LUCK | 6,2 | 1,2 | 7,14 | -13,1 % | C.LECOEUVRE | 13/42/96/3334 |
+| 1 | OUEST DONC DENUO | 9,4 | 14 | 11,59 | -18,9 % | H.LEBOUC | 22/47/1441/3284 |
+| 6 | GOLEM | 14 | – | 18,52 | -24,4 % | L.ROUSSEL | 18/28/1006/108 |
+| 8 | IT'S ONLY LOVE | 26 | – | 38,02 | -31,6 % | M.FAVRIAUX | 54/178/178/608 |
+| 9 | STRONG CROWN | 35 | – | 53,21 | -34,2 % | C.PACAUT | 44/157/571/135 |
+| 4 | JAMINUS | 67 | – | 116,11 | -42,3 % | J.CLAUDIC | 40/86/3742/1737 |
+| 7 | OSMOSE PRECIEUSE | 69 | – | 111,33 | -38,0 % | F.VALLE SKAR | 32/212/263/227 |
 
 ### 3. PRIX DU PONT DE TANCARVILLE
 

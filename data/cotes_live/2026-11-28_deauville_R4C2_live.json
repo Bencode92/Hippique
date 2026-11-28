@@ -4,89 +4,89 @@
   "reunion": 4,
   "heure_depart": 1795878540000,
   "distance": 1900,
-  "scraped_at": "2026-11-28T16:06:43.299649+01:00",
-  "minutes_avant_depart": 2,
+  "scraped_at": "2026-11-28T16:09:23.629045+01:00",
+  "minutes_avant_depart": 0,
   "participants": [
     {
       "numPmu": 1,
       "nom": "OUEST DONC DENUO",
-      "cote_live": 9.4,
+      "cote_live": 9.2,
       "cote_reference": 11.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795878381000
+      "timestamp_cote": 1795878558000
     },
     {
       "numPmu": 2,
       "nom": "SPIRITUELLE AGUA",
-      "cote_live": 2.8,
+      "cote_live": 4.6,
       "cote_reference": 2.8,
       "tendance": "",
-      "favoris": true,
-      "timestamp_cote": 1795878381000
+      "favoris": false,
+      "timestamp_cote": 1795878558000
     },
     {
       "numPmu": 3,
       "nom": "SHUWAIB",
-      "cote_live": 2.9,
+      "cote_live": 2.0,
       "cote_reference": 2.5,
       "tendance": "",
-      "favoris": false,
-      "timestamp_cote": 1795878381000
+      "favoris": true,
+      "timestamp_cote": 1795878558000
     },
     {
       "numPmu": 4,
       "nom": "JAMINUS",
-      "cote_live": 49.0,
+      "cote_live": 67.0,
       "cote_reference": 61.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795878381000
+      "timestamp_cote": 1795878558000
     },
     {
       "numPmu": 5,
       "nom": "WISH ME LUCK",
-      "cote_live": 6.2,
+      "cote_live": 5.8,
       "cote_reference": 8.5,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795878381000
+      "timestamp_cote": 1795878558000
     },
     {
       "numPmu": 6,
       "nom": "GOLEM",
-      "cote_live": 13.0,
+      "cote_live": 15.0,
       "cote_reference": 18.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795878381000
+      "timestamp_cote": 1795878558000
     },
     {
       "numPmu": 7,
       "nom": "OSMOSE PRECIEUSE",
-      "cote_live": 64.0,
+      "cote_live": 71.0,
       "cote_reference": 33.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795878381000
+      "timestamp_cote": 1795878558000
     },
     {
       "numPmu": 8,
       "nom": "IT'S ONLY LOVE",
-      "cote_live": 26.0,
+      "cote_live": 29.0,
       "cote_reference": 23.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795878381000
+      "timestamp_cote": 1795878558000
     },
     {
       "numPmu": 9,
       "nom": "STRONG CROWN",
-      "cote_live": 42.0,
+      "cote_live": 37.0,
       "cote_reference": 24.0,
       "tendance": "",
       "favoris": false,
-      "timestamp_cote": 1795878381000
+      "timestamp_cote": 1795878558000
     }
   ],
   "hippodrome": "DEAUVILLE",
@@ -194,6 +194,66 @@
         "7": 64.0,
         "8": 26.0,
         "9": 42.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-28T16:07:23.340314+01:00",
+      "minutes_avant_depart": 1.6148342,
+      "cotes": {
+        "1": 8.9,
+        "2": 3.3,
+        "3": 2.5,
+        "4": 55.0,
+        "5": 6.4,
+        "6": 13.0,
+        "7": 63.0,
+        "8": 27.0,
+        "9": 32.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-28T16:08:03.327019+01:00",
+      "minutes_avant_depart": 0.9481657,
+      "cotes": {
+        "1": 9.3,
+        "2": 4.2,
+        "3": 1.9,
+        "4": 65.0,
+        "5": 7.4,
+        "6": 14.0,
+        "7": 73.0,
+        "8": 32.0,
+        "9": 35.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-28T16:08:43.336353+01:00",
+      "minutes_avant_depart": 0.28149719999999995,
+      "cotes": {
+        "1": 9.4,
+        "2": 4.3,
+        "3": 2.1,
+        "4": 67.0,
+        "5": 6.2,
+        "6": 14.0,
+        "7": 69.0,
+        "8": 26.0,
+        "9": 35.0
+      }
+    },
+    {
+      "scraped_at": "2026-11-28T16:09:23.629045+01:00",
+      "minutes_avant_depart": -0.3918889333333333,
+      "cotes": {
+        "1": 9.2,
+        "2": 4.6,
+        "3": 2.0,
+        "4": 67.0,
+        "5": 5.8,
+        "6": 15.0,
+        "7": 71.0,
+        "8": 29.0,
+        "9": 37.0
       }
     }
   ]
