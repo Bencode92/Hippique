@@ -1,6 +1,6 @@
 # DEAUVILLE — 28/11/2026
 
-8 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+8 courses. 1 a un relevé live — l'instant est donné sous chaque course. Les autres portent les cotes de l'extraction.
 
 **Lecture.** L'ordre est la cote croissante : c'est aussi l'Optimale, qui ne retient plus que le prix.
 La *cote juste* est la cote que le cheval mériterait ; l'espérance en gras est un PLAY (≥ 0).
@@ -33,19 +33,19 @@ Les rangs sont jockey / entraîneur / éleveur / propriétaire dans les classeme
 
 ### 2. PRIX THE WONDER
 
-*16h07 · plat · 1900 m · 9 partants · cotes de l'extraction*
+*16h07 · plat · 1900 m · 9 partants · cotes à T−9:36*
 
-| n° | cheval | cote | jockey | jk/ent/él/pr |
-|--:|:--|--:|:--|--:|
-| 5 | WISH ME LUCK | 1,2 | C.LECOEUVRE | 13/42/96/3334 |
-| 2 | SPIRITUELLE AGUA | 7 | A.MADAMET | 12/4/57/16 |
-| 3 | SHUWAIB | 7 | H.BOUTIN | 17/1/–/174 |
-| 1 | OUEST DONC DENUO | 14 | H.LEBOUC | 22/47/1441/3284 |
-| 4 | JAMINUS | – | J.CLAUDIC | 40/86/3742/1737 |
-| 6 | GOLEM | – | L.ROUSSEL | 18/28/1006/108 |
-| 7 | OSMOSE PRECIEUSE | – | F.VALLE SKAR | 32/212/263/227 |
-| 8 | IT'S ONLY LOVE | – | M.FAVRIAUX | 54/178/178/608 |
-| 9 | STRONG CROWN | – | C.PACAUT | 44/157/571/135 |
+| n° | cheval | cote | matin | juste | espérance | jockey | jk/ent/él/pr |
+|--:|:--|--:|--:|--:|--:|:--|--:|
+| 2 | SPIRITUELLE AGUA | 1,9 | 7 | 2,19 | -13,1 % | A.MADAMET | 12/4/57/16 |
+| 3 | SHUWAIB | 3,9 | 7 | 4,61 | -15,4 % | H.BOUTIN | 17/1/–/174 |
+| 5 | WISH ME LUCK | 9 | 1,2 | 11,26 | -20,1 % | C.LECOEUVRE | 13/42/96/3334 |
+| 1 | OUEST DONC DENUO | 9,4 | 14 | 11,85 | -20,7 % | H.LEBOUC | 22/47/1441/3284 |
+| 6 | GOLEM | 16 | – | 22,15 | -27,8 % | L.ROUSSEL | 18/28/1006/108 |
+| 8 | IT'S ONLY LOVE | 31 | – | 47,42 | -34,6 % | M.FAVRIAUX | 54/178/178/608 |
+| 4 | JAMINUS | 39 | – | 65,91 | -40,8 % | J.CLAUDIC | 40/86/3742/1737 |
+| 7 | OSMOSE PRECIEUSE | 44 | – | 70,01 | -37,2 % | F.VALLE SKAR | 32/212/263/227 |
+| 9 | STRONG CROWN | 44 | – | 70,01 | -37,2 % | C.PACAUT | 44/157/571/135 |
 
 ### 3. PRIX DU PONT DE TANCARVILLE
 
