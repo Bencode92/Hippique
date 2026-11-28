@@ -1,6 +1,6 @@
 # GULFSTREAM PARK — 28/11/2026
 
-11 courses (1 avec cotes). Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
+11 courses. Cotes de l'extraction : la boucle pré-course n'a pas encore relevé. Rafraîchis à l'approche du départ.
 
 *Pas de cote juste ici : elle n'est calibrée que sur le plat français.*
 
@@ -12,14 +12,14 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 5 | GOLDEN VERDICT | 1,6 | M J HUSBANDS | –/–/–/76 |
+| 2 | EIGHT ROSE'S | 4,8 | L REYES | –/–/–/– |
+| 3 | SUCKER FOR LOOKS | 7,7 | D A HERRERA | –/–/–/– |
+| 6 | JUST BE COOL | 7,7 | E PEREZ | –/–/–/– |
+| 8 | ABOVE ALL ODDS | 15 | P LOPEZ | –/–/–/– |
 | 1 | FIB | – | M GUTIERREZ | –/–/–/– |
-| 2 | EIGHT ROSE'S | – | L REYES | –/–/–/– |
-| 3 | SUCKER FOR LOOKS | – | D A HERRERA | –/–/–/– |
 | 4 | LUCKY LOLLIPOP | – | M A VASQUEZ | –/–/–/– |
-| 5 | GOLDEN VERDICT | – | M J HUSBANDS | –/–/–/76 |
-| 6 | JUST BE COOL | – | E PEREZ | –/–/–/– |
 | 7 | DANCING IZZY | – | R HUGHES | –/–/–/– |
-| 8 | ABOVE ALL ODDS | – | P LOPEZ | –/–/–/– |
 | 9 | STARSHIP EXPEDIENT | – | Y TORRES | –/–/–/– |
 
 ### 2. CLAIMING 1600
@@ -28,14 +28,14 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
-| 1 | SOMERSET MIA | – | L REYES | –/–/–/– |
-| 2 | SONNY'S GOLDENLADY | – | J SANTOS | 245/–/–/– |
-| 3 | DOROTEA DREAM | – | H FIGUEROA | –/–/–/– |
-| 4 | LA CYBER | – | P LOPEZ | –/–/–/– |
-| 5 | AWESOMELY WILD | – | E PEREZ | –/–/–/– |
-| 6 | SEEKING A PRAYER | – | M MENESES | –/–/–/– |
-| 7 | QUEEN KWAINA | – | J OCASIO | –/–/–/– |
-| 8 | CUDDLE THE KITTEN | – | J E FELIX | –/–/–/– |
+| 1 | SOMERSET MIA | 3,3 | L REYES | –/–/–/– |
+| 2 | SONNY'S GOLDENLADY | 4,5 | J SANTOS | 245/–/–/– |
+| 5 | AWESOMELY WILD | 5,2 | E PEREZ | –/–/–/– |
+| 6 | SEEKING A PRAYER | 5,8 | M MENESES | –/–/–/– |
+| 7 | QUEEN KWAINA | 7,8 | J OCASIO | –/–/–/– |
+| 3 | DOROTEA DREAM | 23 | H FIGUEROA | –/–/–/– |
+| 4 | LA CYBER | 23 | P LOPEZ | –/–/–/– |
+| 8 | CUDDLE THE KITTEN | 23 | J E FELIX | –/–/–/– |
 
 ### 3. MAIDEN CLAIMING 1100
 
@@ -43,14 +43,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 6 | LILY'S REVENGE | 2,2 | M A VASQUEZ |
+| 5 | NORTHERN CROWN | 3,9 | H FIGUEROA |
+| 2 | DAMA DU SUCRE | 4,3 | D A HERRERA |
+| 7 | PARDON MY DOLLY | 6,9 | E PEREZ |
+| 8 | SIENA BELLE | 13 | J E MORELOS |
 | 1 | BAYERN IT | – | L REYES |
-| 2 | DAMA DU SUCRE | – | D A HERRERA |
 | 3 | HOWARD CREEK | – | P LOPEZ |
 | 4 | RUBI CUBE | – | C CEDENO |
-| 5 | NORTHERN CROWN | – | H FIGUEROA |
-| 6 | LILY'S REVENGE | – | M A VASQUEZ |
-| 7 | PARDON MY DOLLY | – | E PEREZ |
-| 8 | SIENA BELLE | – | J E MORELOS |
 
 ### 4. CLAIMING 1100
 
@@ -58,14 +58,14 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 6 | BOLTOUTTATHEBLUE | 1,8 | J E MORELOS | –/–/–/– |
+| 2 | ENGLISH HARBOUR | 4 | H FIGUEROA | –/–/–/– |
+| 3 | ROCKYTA | 8,4 | N JUAREZ | –/–/–/– |
+| 7 | PHOEBEINWONDERLAND | 8,4 | J M RIOS | –/–/–/– |
+| 4 | VALIANT GIRL | 25 | L REYES | –/–/–/– |
+| 8 | SHE'S LIT | 25 | J SANTOS | 245/–/–/– |
+| 5 | ROLE PLAY | 50 | P LOPEZ | –/–/–/– |
 | 1 | J J MONET | – | A THOMAS | –/690/–/– |
-| 2 | ENGLISH HARBOUR | – | H FIGUEROA | –/–/–/– |
-| 3 | ROCKYTA | – | N JUAREZ | –/–/–/– |
-| 4 | VALIANT GIRL | – | L REYES | –/–/–/– |
-| 5 | ROLE PLAY | – | P LOPEZ | –/–/–/– |
-| 6 | BOLTOUTTATHEBLUE | – | J E MORELOS | –/–/–/– |
-| 7 | PHOEBEINWONDERLAND | – | J M RIOS | –/–/–/– |
-| 8 | SHE'S LIT | – | J SANTOS | 245/–/–/– |
 
 ### 5. MAIDEN CLAIMING 1600
 
@@ -73,13 +73,13 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 2 | SIRIUS PURSUIT | 1,4 | J E MORELOS | –/–/–/– |
+| 5 | SHAMROCK QUEEN | 6,4 | L REYES | –/–/–/– |
+| 3 | OF ALL THINGS | 7,5 | M A VASQUEZ | –/–/–/– |
+| 7 | HIT MUSIC | 7,5 | F VASQUEZ, JR. | –/–/–/– |
+| 6 | SOLITARY PASSION | 22 | J SANTOS | 245/–/–/– |
 | 1 | SISTER SLEW | – | C CEDENO | –/–/–/– |
-| 2 | SIRIUS PURSUIT | – | J E MORELOS | –/–/–/– |
-| 3 | OF ALL THINGS | – | M A VASQUEZ | –/–/–/– |
 | 4 | VICTORIOUS SECRET | – | D A HERRERA | –/–/–/– |
-| 5 | SHAMROCK QUEEN | – | L REYES | –/–/–/– |
-| 6 | SOLITARY PASSION | – | J SANTOS | 245/–/–/– |
-| 7 | HIT MUSIC | – | F VASQUEZ, JR. | –/–/–/– |
 | 8 | SISTA SOL | – | I VILLALOBOS | –/–/–/– |
 | 9 | ADSILA | – | P LOPEZ | –/–/–/– |
 
@@ -89,12 +89,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 2 | SWIRVIN | 1,9 | R HUGHES |
+| 5 | MISH | 3,4 | P LOPEZ |
+| 4 | PROUD AMERICAN | 4 | M A VASQUEZ |
+| 6 | ROCKETEER | 12 | L REYES |
 | 1 | GRIM REAPER | – | D A HERRERA |
-| 2 | SWIRVIN | – | R HUGHES |
 | 3 | MAKE IT BIG | – | C CEDENO |
-| 4 | PROUD AMERICAN | – | M A VASQUEZ |
-| 5 | MISH | – | P LOPEZ |
-| 6 | ROCKETEER | – | L REYES |
 
 ### 7. STARTER OPTIONAL CLAIMING 1200
 
@@ -102,12 +102,12 @@
 
 | n° | cheval | cote | jockey | jk/ent/él/pr |
 |--:|:--|--:|:--|--:|
+| 2 | SKY OVER KINGSTON | 1,2 | P LOPEZ | –/–/–/– |
+| 6 | BODACIOUS QUEEN | 4,1 | D A HERRERA | –/–/–/– |
+| 5 | FULLY ENTITLED | 8,2 | M J HUSBANDS | –/–/–/– |
 | 1 | SLEW DIVA | – | M MENESES | –/–/–/– |
-| 2 | SKY OVER KINGSTON | – | P LOPEZ | –/–/–/– |
 | 3 | FROSTY BELLE | – | J SANTOS | 245/–/–/– |
 | 4 | BRENNA | – | M A VASQUEZ | –/–/–/– |
-| 5 | FULLY ENTITLED | – | M J HUSBANDS | –/–/–/– |
-| 6 | BODACIOUS QUEEN | – | D A HERRERA | –/–/–/– |
 | 7 | ROXY | – | C CEDENO | –/–/–/– |
 | 8 | MAJOR PRYCE | – | J OCASIO | –/–/–/– |
 
@@ -117,14 +117,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | R ISLAND JEWEL | – | M J HUSBANDS |
-| 2 | EARLY SPARK | – | D A HERRERA |
+| 8 | CLASSIC GENES | 2 | J E MORELOS |
+| 6 | LIBERTY RINGS | 5,2 | M A VASQUEZ |
+| 5 | GIRVY GIRL | 5,9 | R HUGHES |
+| 2 | EARLY SPARK | 9,5 | D A HERRERA |
+| 1 | R ISLAND JEWEL | 10 | M J HUSBANDS |
+| 4 | PANDA LISTEN | 20 | P LOPEZ |
+| 7 | MY BESTIE | 20 | S BRIDGMOHAN |
 | 3 | CIPRESA | – | L REYES |
-| 4 | PANDA LISTEN | – | P LOPEZ |
-| 5 | GIRVY GIRL | – | R HUGHES |
-| 6 | LIBERTY RINGS | – | M A VASQUEZ |
-| 7 | MY BESTIE | – | S BRIDGMOHAN |
-| 8 | CLASSIC GENES | – | J E MORELOS |
 
 ### 9. ALLOWANCE OPTIONAL CLAIMING 1600
 
@@ -132,14 +132,14 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 1 | GUM | – | D A HERRERA |
-| 2 | STARSHIP MELODY | – | Y TORRES |
-| 3 | STARTS NOW | – | M J HUSBANDS |
+| 5 | STRIKING FINALE | 2,2 | J E MORELOS |
+| 2 | STARSHIP MELODY | 4,5 | Y TORRES |
+| 8 | LOVE AND GRACE | 5,8 | P LOPEZ |
+| 3 | STARTS NOW | 7,8 | M J HUSBANDS |
+| 7 | LA CANTERA | 7,8 | M A VASQUEZ |
+| 1 | GUM | 23 | D A HERRERA |
 | 4 | FORGET ABOUT YOU | – | L REYES |
-| 5 | STRIKING FINALE | – | J E MORELOS |
 | 6 | LAILA BELLA GIRL | – | M MENESES |
-| 7 | LA CANTERA | – | M A VASQUEZ |
-| 8 | LOVE AND GRACE | – | P LOPEZ |
 | 9 | AMAZONKA | – | M GUTIERREZ |
 | 10 | LITTLE TORCH | – | E PEREZ |
 | 11 | CRYINGINTHERAIN | – | J TORREALBA |
@@ -150,13 +150,13 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
+| 2 | TEOTIHUACAN | 3,1 | M MENESES |
+| 3 | CONVICTION | 3,3 | M J HUSBANDS |
+| 7 | ARABIAN CROWN | 3,3 | D A HERRERA |
+| 6 | MODONDAY | 6,7 | R HUGHES |
+| 5 | FIRST TO ENGAGE | 13 | K DAVIS |
 | 1 | STICK TALK | – | L REYES |
-| 2 | TEOTIHUACAN | – | M MENESES |
-| 3 | CONVICTION | – | M J HUSBANDS |
 | 4 | CARIBBEAN COMET | – | J TORREALBA |
-| 5 | FIRST TO ENGAGE | – | K DAVIS |
-| 6 | MODONDAY | – | R HUGHES |
-| 7 | ARABIAN CROWN | – | D A HERRERA |
 | 8 | DON'T TELL MEG | – | M A VASQUEZ |
 
 ### 11. STARTER OPTIONAL CLAIMING 1700
@@ -165,12 +165,12 @@
 
 | n° | cheval | cote | jockey |
 |--:|:--|--:|:--|
-| 2 | SUNFISH | 1,7 | P LOPEZ |
-| 6 | LONDON | 1,7 | D A HERRERA |
+| 2 | SUNFISH | 3,2 | P LOPEZ |
+| 6 | LONDON | 3,4 | D A HERRERA |
+| 3 | MORE APPLAUSE | 5,1 | J E MORELOS |
+| 5 | NEW LIFE | 6,8 | L REYES |
+| 4 | FINCH | 10 | M J HUSBANDS |
+| 7 | ROGUE RUNNER | 10 | M A VASQUEZ |
 | 1 | LADY RIVER LILY | – | S BRIDGMOHAN |
-| 3 | MORE APPLAUSE | – | J E MORELOS |
-| 4 | FINCH | – | M J HUSBANDS |
-| 5 | NEW LIFE | – | L REYES |
-| 7 | ROGUE RUNNER | – | M A VASQUEZ |
 | 8 | COVERED IN CRYSTAL | – | N JUAREZ |
 | 9 | OLIVIA VALENTINA | – | J TORREALBA |
